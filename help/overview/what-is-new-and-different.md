@@ -2,7 +2,7 @@
 title: Nouveautés et différences - Adobe Experience Manager en tant que service Cloud
 description: 'Nouveautés et différences - Adobe Experience Manager (AEM) en tant que service Cloud. '
 translation-type: tm+mt
-source-git-commit: b9a32b3ac4c296f4bb02e9a590c1b3e22d53f562
+source-git-commit: 38503961d0d7437511533d122ac1f4e7c8f9f042
 
 ---
 
@@ -136,7 +136,7 @@ Cloud Manager est :
 
 Plus précisément, le nombre et le type de programmes AEM pouvant être créés à partir de Cloud Manager sont dérivés de :
 
-* du contrat de licence client, [Shankari - nous ne pouvons pas mentionner les crédits]
+* du contrat de licence client,
 
 * provenant d’acteurs internes lorsque AEM en tant que service Cloud est utilisé pour l’activation ou la formation,
 
