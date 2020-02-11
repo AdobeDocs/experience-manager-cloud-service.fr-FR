@@ -2,7 +2,7 @@
 title: Prise en charge IMS d’Adobe Experience Manager en tant que service Cloud
 description: 'Prise en charge IMS d’Adobe Experience Manager en tant que service Cloud '
 translation-type: tm+mt
-source-git-commit: 7ece752a5f59966e0c6be638c37bcaaf238b629a
+source-git-commit: bef17376f0b7de79511f9ad6ceb00e9f084f45d2
 
 ---
 
@@ -26,7 +26,7 @@ AEM as a Cloud Service offre la prise en charge de l’authentification IMS uniq
 
 ## Architecture {#architecture}
 
-L’authentification IMS fonctionne à l’aide du protocole OAuth entre AEM et le point de fin IMS Adobe. Une fois qu’un utilisateur a été ajouté à IMS et possède une identité Adobe, il peut se connecter aux instances AEM Managed Services à l’aide des informations d’identification IMS.
+L’authentification IMS fonctionne à l’aide du protocole OAuth entre AEM et le point de fin IMS Adobe. Une fois qu’un utilisateur a été ajouté à IMS et qu’il possède une identité Adobe, il peut se connecter au service de création AEM à l’aide des informations d’identification IMS.
 
 Le flux d’identifiant de connexion utilisateur est indiqué ci-dessous, l’utilisateur sera redirigé vers IMS et éventuellement vers le fournisseur d’identité client pour la SSO, puis redirigé vers AEM.
 
