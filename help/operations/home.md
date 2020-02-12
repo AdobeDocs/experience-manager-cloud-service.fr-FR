@@ -2,7 +2,7 @@
 title: Exploitation et maintenance d’Adobe Experience Manager en tant que service Cloud
 description: Adobe Experience Manager en tant que service Cloud ; ressources d’aide personnelle de maintenance et liens vers la documentation
 translation-type: tm+mt
-source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
+source-git-commit: 3e379236fb663160209ec973f299cf85f6e3d42e
 
 ---
 
@@ -16,7 +16,6 @@ Cette page répertorie les ressources d’aide autonome sur les opérations et l
 * [Réplication du contenu](replication.md)
 * [Tâches de maintenance](maintenance.md)
 * [Sauvegarde et restauration](backup.md)
-* [Indexation](indexing.md)
 
 ## Experience Manager en tant que guides du service Cloud {#aem-guides}
 
