@@ -2,7 +2,7 @@
 title: Répartiteur dans le Cloud
 description: 'Répartiteur dans le Cloud '
 translation-type: tm+mt
-source-git-commit: 64475ec492863f713a7cefaedc4c0782014682ae
+source-git-commit: ddc1b21dd14dcded72465e727ce740d481520170
 
 ---
 
@@ -697,45 +697,89 @@ Félicitations ! Si le programme de validation ne signale plus aucun problème e
 
 ## Répartiteur et CDN {#dispatcher-cdn}
 
+La diffusion du contenu du service de publication comprend :
+
+* CDN (généralement géré par Adobe)
+* Répartiteur AEM
+* Publication AEM
+
 Le flux de données est le suivant :
 
-1. URL placée dans le navigateur
-2. Demande effectuée sur le CDN mappée dans le DNS à ce domaine
-3. Si le contenu est entièrement mis en cache sur le CDN, le CDN l’affiche dans le navigateur.
-4. Si le contenu n’est pas entièrement mis en cache, le CDN appelle (proxy inverse) le répartiteur.
-5. Si le contenu est entièrement mis en cache sur le répartiteur, le répartiteur le sert sur le CDN
-6. Si le contenu n’est pas entièrement mis en cache, le répartiteur appelle (proxy inverse) la publication AEM.
-7. Contenu généré par le navigateur
+1. L’URL est ajoutée dans le navigateur.
+1. Demande effectuée sur le CDN mappée dans le DNS à ce domaine
+1. Si le contenu est entièrement mis en cache sur le CDN, le CDN l’affiche dans le navigateur.
+1. Si le contenu n’est pas entièrement mis en cache, le CDN appelle (proxy inverse) le répartiteur.
+1. Si le contenu est entièrement mis en cache sur le répartiteur, le répartiteur le sert sur le CDN
+1. Si le contenu n’est pas entièrement mis en cache, le répartiteur appelle (proxy inverse) la publication AEM.
+1. Le contenu est rendu par le navigateur, qui peut également le mettre en cache, selon les en-têtes
+
+La plupart du contenu est défini pour expirer au bout de cinq minutes, un seuil que respectent le cache du répartiteur et le CDN. Lors des redéploiements du service de publication, le cache du répartiteur est effacé puis réchauffé avant que les nouveaux noeuds de publication n’acceptent le trafic.
+
+Les sections ci-dessous fournissent des informations plus détaillées sur la diffusion de contenu, notamment la configuration CDN et la mise en cache du répartiteur.
+
+Des informations sur la réplication du service d’auteur au service de publication sont disponibles [ici](/help/operations/replication.md).
+
+>[!NOTE]
+>Le trafic passe par un serveur Web Apache, qui prend en charge les modules, y compris le répartiteur. Le répartiteur est principalement utilisé comme cache pour limiter le traitement sur les noeuds de publication afin d’améliorer les performances.
 
 ### CDN {#cdn}
 
-AEM offre deux options :
+AEM offre trois options :
 
-1. CDN géré - CDN prêt à l’emploi d’AEM.
-2. CDN non géré - Le client apporte son propre CDN et est entièrement responsable de sa gestion.
+1. Adobe Managed CDN - CDN prêt à l’emploi d’AEM. Il s’agit de l’option recommandée car elle est complètement intégrée.
+1. CDN géré par le client - Le client apporte son propre CDN et est entièrement responsable de sa gestion.
+1. Pointez sur le CDN géré par Adobe : le client pointe un CDN vers le CDN prêt à l’emploi d’AEM.
 
-La première option est vivement recommandée et Adobe n’est pas responsable de toute erreur de configuration lors de l’utilisation de la seconde option.
+>[!CAUTION]
+>La première option est vivement recommandée. Adobe ne peut pas être tenu responsable du résultat d’une mauvaise configuration si vous choisissez la deuxième option.
 
-#### CDN géré {#managed-cdn}
+Les deuxième et troisième options seront autorisées au cas par cas. Cela implique de répondre à certaines conditions préalables, notamment, mais sans s’y limiter, à l’intégration héritée du client avec son fournisseur CDN, ce qui est difficile à annuler.
 
-Une fois le CDN configuré par Adobe, vous devez créer un CNAME, qui associe les domaines de votre application à un domaine contrôlé par Adobe hébergé sur le domaine CDN géré.
+#### Adobe Managed CDN {#adobe-managed-cdn}
 
-Le CDN agit comme un pare-feu d’application Web de couche 7, qui nécessite une terminaison SSL. Il aura donc besoin d’un certificat SSL signé par le client. Pendant la phase de pré-version, vous devez fournir le certificat à Adobe par le biais de processus manuels.
+La préparation de la diffusion de contenu à l’aide du CDN prêt à l’emploi d’Adobe est simple, comme décrit ci-dessous :
 
-Au moment de la présentation, vous devez télécharger le certificat vers Cloud Manager, qui le téléchargera ensuite vers le CDN. Lorsque les certificats SSL expirent, vous en serez averti afin que vous puissiez les actualiser dans Cloud Manager.
+1. Vous fournirez le certificat SSL et la clé secrète signés à Adobe en partageant un lien vers un formulaire sécurisé contenant ces informations. Coordonnez cette tâche avec le service clientèle.
+Remarque : Aem as a Cloud Service ne prend pas en charge les certificats DV (Domain Validated).
+1. Le service clientèle coordonnera alors avec vous le timing d’un enregistrement DNS CNAME, en pointant son nom de domaine complet vers `adobe-aem.map.fastly.net`.
+1. Vous serez averti(e) lorsque les certificats SSL arriveront à expiration afin de pouvoir soumettre à nouveau les nouveaux certificats SSL.
 
-#### CDN non géré {#unmanaged-cdn}
+Par défaut, dans le cas d’une configuration CDN gérée par Adobe, tout le trafic public peut se diriger vers le service de publication, tant pour les environnements de production que pour les environnements de non production (développement et étape). Si vous souhaitez limiter le trafic au service de publication pour un environnement donné (par exemple, en limitant l’évaluation par une plage d’adresses IP), vous devez travailler avec le service à la clientèle pour configurer ces restrictions.
+
+#### CDN géré par le client {#customer-managed-cdn}
 
 Vous pouvez gérer votre propre CDN, à condition que :
 
 1. Vous disposez d’un CDN existant.
-2. Vous allez le gérer.
-3. Votre application n’effectue pas d’appels d’API étendus vers le CDN qui ne sont pas encore pris en charge dans l’architecture AEM.
-4. AEM en tant que service Cloud est en mesure d’établir que le système de bout en bout fonctionne correctement.
-5. Vous devez fournir à Adobe la liste blanche des URL CDN pour que cette autorisation soit activée.
+1. Il doit s’agir d’un CDN pris en charge. Actuellement, Akamai est pris en charge. Si votre entreprise souhaite gérer un réseau de diffusion de contenu non pris en charge, contactez le service clientèle.
+1. Vous allez le gérer.
+1. Vous devez être en mesure de configurer CDN pour travailler avec Aem en tant que service Cloud. Reportez-vous aux instructions de configuration ci-dessous.
+1. Vous avez des experts en ingénierie de CDN qui sont sur appel au cas où des problèmes liés à l&#39;ingénierie se poseraient.
+1. Vous devez fournir des listes blanches des noeuds CDN à Cloud Manager, comme décrit dans les instructions de configuration.
+1. Vous devez effectuer et réussir un test de charge avant d’accéder à la production.
 
-Adobe fournira une URL AEM Cloud à utiliser comme source de votre réseau de diffusion de contenu.
+Instructions de configuration :
 
+1. Fournissez la liste blanche du fournisseur de CDN à Adobe en appelant l’API de création/mise à jour d’environnement avec une liste de CIDR en liste blanche.
+1. Définissez l’ `X-Forwarded-Host` en-tête avec le nom de domaine.
+1. Définissez l’en-tête Host avec le domaine d’origine, qui est Aem as a Cloud Service Input. La valeur doit provenir d’Adobe.
+1. Envoyez l’en-tête SNI à l’origine. L’en-tête sni doit être le domaine d’origine.
+1. Définissez la `X-Edge-Key` valeur requise pour acheminer correctement le trafic vers les serveurs AEM. La valeur doit provenir d’Adobe.
+
+Avant d’accepter le trafic en direct, vous devez vérifier auprès du service à la clientèle d’Adobe que le routage du trafic de bout en bout fonctionne correctement.
+
+#### Pointer vers Adobe Managed CDN {#point-to-point-CDN}
+
+Pris en charge si vous souhaitez utiliser votre CDN existant, mais ne pouvez pas satisfaire aux exigences d’un CDN géré par le client. Dans ce cas, vous gérez votre propre CDN, mais pointez sur le CDN géré par Adobe.
+
+Les clients doivent effectuer et réussir un test de charge avant d’accéder à la production.
+
+Instructions de configuration :
+
+1. Définissez l’ `X-Forwarded-Host` en-tête avec le nom de domaine.
+1. Définissez l’en-tête de l’hôte avec le domaine d’origine, qui est l’entrée CDN d’Adobe. La valeur doit provenir d’Adobe.
+1. Envoyez l’en-tête SNI à l’origine. Comme l’en-tête Host, l’en-tête sni doit être le domaine d’origine.
+1. Définissez le `X-Edge-Key`, qui est nécessaire pour acheminer correctement le trafic vers les serveurs AEM. La valeur doit provenir d’Adobe.
 
 #### Invalidation du cache CDN {#CDN-cache-invalidation}
 
@@ -745,27 +789,36 @@ L’invalidation du cache suit les règles suivantes :
 * Les bibliothèques clientes (JavaScript et CSS) sont mises en cache indéfiniment à l’aide du paramètre de contrôle du cache défini sur immutable ou sur 30 jours pour les navigateurs plus anciens qui ne respectent pas la valeur immuable. Notez que les bibliothèques client sont servies sur un chemin unique qui change si les bibliothèques client changent. En d’autres termes, du code HTML faisant référence aux bibliothèques clientes sera produit au besoin afin que vous puissiez découvrir un nouveau contenu au fur et à mesure de sa publication.
 * Par défaut, les images ne sont pas mises en cache.
 
+Avant d’accepter le trafic en direct, les clients doivent vérifier auprès de l’assistance clientèle d’Adobe que le routage de bout en bout fonctionne correctement.
+
 ## Invalidation explicite du cache du répartiteur {#explicit-invalidation}
+
+Comme indiqué précédemment, le trafic passe par un serveur Web Apache, qui prend en charge les modules, y compris le répartiteur. Le répartiteur est principalement utilisé comme cache pour limiter le traitement sur les noeuds de publication afin d’améliorer les performances.
+
+En général, il n’est pas nécessaire d’invalider manuellement le contenu dans le répartiteur, mais cela est possible si nécessaire, comme décrit ci-dessous.
 
 Avant AEM en tant que service Cloud, il existait deux manières d’invalider le cache du répartiteur.
 
-1. Appeler l’API de réplication, en spécifiant l’agent de vidage du répartiteur de publication
+1. Appeler l’agent de réplication, en spécifiant l’agent de vidage du répartiteur de publication
 2. Appel direct de l’ `invalidate.cache` API (par exemple, POST /dispatcher/invalidate.cache)
 
 L’ `invalidate.cache` approche ne sera plus prise en charge puisqu’elle ne concerne qu’un noeud de répartiteur spécifique.
 AEM en tant que service Cloud fonctionne au niveau du service, et non au niveau du noeud individuel. Par conséquent, les instructions d’invalidation figurant dans la documentation d’aide [du](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) répartiteur ne sont plus exactes.
-L’approche API de réplication doit être utilisée. [La documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) API est disponible et pour un exemple de vidage du cache, consultez l&#39;exemple de page [d&#39;](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) API et plus particulièrement l&#39;exemple CustomStep qui émet une action de réplication de type ACTIVATE pour tous les agents disponibles.
+L&#39;agent de vidage de réplication doit être utilisé. Vous pouvez le faire à l&#39;aide de l&#39;API de réplication. La documentation de l&#39;API de réplication est disponible [ici](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) et pour un exemple de vidage du cache, reportez-vous à l&#39;exemple de page [de l&#39;](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) API en particulier à l&#39; `CustomStep` exemple d&#39;émission d&#39;une action de réplication de type ACTIVATE pour tous les agents disponibles. Le point de fin de l’agent de vidage n’est pas configurable, mais il est préconfiguré pour pointer vers le répartiteur, en correspondance avec le service de publication exécutant l’agent de vidage. L&#39;agent de vidage peut généralement être déclenché par des événements OSGi ou des flux de travail.
 
 Le diagramme ci-dessous illustre cela.
 
-<!-- [CDN](assets/cdn.png "CDN") -->
+![](assets/cdn.png "CDNCDN")
 
-<!-- See [Apache and Dispatcher Configuration and Testing](../developing/introduction/developer-experience.md#apache-and-dispatcher-configuration-and-testing) for instructions on how a developer can configure apache and the dispatcher module. -->
+Si vous pensez que le cache du répartiteur n’est pas effacé, contactez le service à la clientèle qui peut vider le cache du répartiteur si nécessaire.
+
+Le CDN géré par Adobe respecte les TTL et il n’est donc pas nécessaire qu’il soit vidé. Si un problème est suspecté, contactez le service à la clientèle qui peut vider un cache CDN géré par Adobe si nécessaire.
 
 ### Invalidation du cache du répartiteur pendant l’activation/la désactivation {#cache-activation-deactivation}
 
-Cette invalidation déclenchée par la publication est la même que le démarrage rapide :
-Lorsque l’instance de publication reçoit une nouvelle version d’une page ou d’un fichier de l’auteur (via la file d’attente de réplication et de pipeline), elle utilise l’agent de vidage pour invalider les chemins appropriés sur son répartiteur. Le chemin d’accès mis à jour est supprimé du cache du répartiteur, ainsi que de ses parents, jusqu’à un niveau que vous pouvez configurer avec le niveau [statfileslevel](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level).
+Comme les versions précédentes d’AEM, la publication ou l’annulation de publication des pages effacera le contenu du cache du répartiteur. Si un problème de mise en cache est suspecté, les clients doivent republier les pages en question.
+
+Lorsque l’instance de publication reçoit une nouvelle version d’une page ou d’un fichier de l’auteur, elle utilise l’agent de vidage pour invalider les chemins appropriés sur son répartiteur. Le chemin d’accès mis à jour est supprimé du cache du répartiteur, ainsi que de ses parents, jusqu’à un niveau (vous pouvez le configurer avec le niveau [statfileslevel](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
 
 ### Actualité du contenu et cohérence de la version {#content-consistency}
 
