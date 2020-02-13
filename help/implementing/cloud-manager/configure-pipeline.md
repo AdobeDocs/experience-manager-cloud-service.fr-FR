@@ -2,7 +2,7 @@
 title: Configuration du pipeline CI/CD - Services Cloud
 description: Configuration du pipeline CI/CD - Services Cloud
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 ---
 
@@ -88,7 +88,7 @@ Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle c
 
    Vous pouvez également configurer le déclencheur de déploiement et le comportement en cas d’échec important dans les options du pipeline.
 
-   ![](assets/set-up-pipeline7.png)
+   ![](assets/non-prod-pipe1.png)
 
 1. Click **Save** and the pipeline is shown on the card on the home screen with three actions, as shown below:
 
@@ -97,8 +97,6 @@ Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle c
    * **Modifier** : permet de modifier les paramètres du pipeline.
    * **Génération** : permet d’accéder à la page d’exécution, à partir de laquelle le pipeline peut être exécuté.
    * **Gérer Git** : permet à l’utilisateur d’obtenir les informations nécessaires pour accéder au référentiel Git Cloud Manager.
-
-
 
 ## Étapes suivantes {#the-next-steps}
 
