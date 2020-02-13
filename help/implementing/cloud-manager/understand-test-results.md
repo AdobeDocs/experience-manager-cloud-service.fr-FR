@@ -2,7 +2,7 @@
 title: Comprendre vos résultats de test - Services Cloud
 description: Comprendre les résultats des tests - Services Cloud
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: a0630410d281913f35caa5ba33807496e612ef3d
 
 ---
 
@@ -117,7 +117,7 @@ Dans ce fichier JAR, les noms de classe des tests réels à exécuter doivent se
 
 Par exemple, une classe nommée `com.myco.tests.aem.ExampleIT` serait exécutée, mais pas une classe nommée `com.myco.tests.aem.ExampleTest` .
 
-Les classes de test doivent être des tests JUnit normaux. L’infrastructure de test est conçue et configurée pour être compatible avec les conventions utilisées par la bibliothèque de tests aem-testing-clients. Les développeurs sont fortement encouragés à utiliser cette bibliothèque et à suivre ses meilleures pratiques.
+Les classes de test doivent être des tests JUnit normaux. L’infrastructure de test est conçue et configurée pour être compatible avec les conventions utilisées par la bibliothèque de tests aem-testing-clients. Les développeurs sont fortement encouragés à utiliser cette bibliothèque et à suivre ses meilleures pratiques. Refer to [Git Link](https://github.com/adobe/aem-testing-clients) for more details.
 
 ## Test fonctionnel personnalisé {#custom-functional-test}
 
@@ -126,7 +126,7 @@ L’étape de test fonctionnel personnalisé du pipeline est toujours présente 
 Cependant, si aucun fichier JAR de test n’est généré par la version, le test est transmis par défaut. Cette étape est en cours immédiatement après le déploiement de l’étape.
 
 > Remarque :
->Le bouton **Télécharger le journal** permet d’accéder à un fichier ZIP contenant les journaux du formulaire détaillé d’exécution du test. Ces journaux n’incluent pas les journaux du processus d’exécution réel d’AEM. Ils sont accessibles à l’aide de la fonctionnalité de téléchargement ou de journaux de queue décrite ci-dessus.
+>Le bouton **Télécharger le journal** permet d’accéder à un fichier ZIP contenant les journaux du formulaire détaillé d’exécution du test. Ces journaux n’incluent pas les journaux du processus d’exécution réel d’AEM : ils sont accessibles à l’aide de la fonctionnalité normale de téléchargements ou de journaux de queue. Pour plus d&#39;informations, reportez-vous à la section [Accès et gestion des journaux](/help/implementing/cloud-manager/manage-logs.md) .
 
 ## Exécution locale du test {#local-test-execution}
 
