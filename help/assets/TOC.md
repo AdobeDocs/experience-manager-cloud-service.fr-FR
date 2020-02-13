@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 2b53420aeb1358f8475902648b1a49a4c5bdd207
 
 ---
 
@@ -47,6 +47,7 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
    + [Facettes de recherche](search-facets.md)
    + [Étendre l’éditeur de fichiers](extend-asset-editor.md)
    + [API HTTP Assets](mac-api-assets.md)
+   + [Ressources connectées](use-assets-across-connected-assets-instances.md)
    + [Rapports de ressources](asset-reports.md)
    + [Métadonnées en cascade](cascading-metadata.md)
    + [Métadonnées XMP](xmp-metadata.md)
