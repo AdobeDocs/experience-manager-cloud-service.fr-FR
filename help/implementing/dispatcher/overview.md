@@ -2,7 +2,7 @@
 title: Répartiteur dans le Cloud
 description: 'Répartiteur dans le Cloud '
 translation-type: tm+mt
-source-git-commit: 2ab8a4fb492b85c1a9b42442d868cdbc329756cf
+source-git-commit: a56198a4ca7764d146cb064dd346403c7a5a2c65
 
 ---
 
@@ -806,9 +806,9 @@ L’ `invalidate.cache` approche ne sera plus prise en charge puisqu’elle ne c
 AEM en tant que service Cloud fonctionne au niveau du service, et non au niveau du noeud individuel. Par conséquent, les instructions d’invalidation figurant dans la documentation d’aide [du](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) répartiteur ne sont plus exactes.
 L&#39;agent de vidage de réplication doit être utilisé. Vous pouvez le faire à l&#39;aide de l&#39;API de réplication. La documentation de l&#39;API de réplication est disponible [ici](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) et pour un exemple de vidage du cache, reportez-vous à l&#39;exemple de page [de l&#39;](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) API en particulier à l&#39; `CustomStep` exemple d&#39;émission d&#39;une action de réplication de type ACTIVATE pour tous les agents disponibles. Le point de fin de l’agent de vidage n’est pas configurable, mais il est préconfiguré pour pointer vers le répartiteur, en correspondance avec le service de publication exécutant l’agent de vidage. L&#39;agent de vidage peut généralement être déclenché par des événements OSGi ou des flux de travail.
 
-<!--The diagram below illustrates this.
+Le diagramme ci-dessous illustre cela.
 
-![CDN](assets/cdn.png "CDN")-->
+![](assets/cdnb.png "CDNCDN")
 
 Si vous pensez que le cache du répartiteur n’est pas effacé, contactez le service à la clientèle qui peut vider le cache du répartiteur si nécessaire.
 
