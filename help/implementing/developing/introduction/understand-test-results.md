@@ -2,12 +2,12 @@
 title: Comprendre vos résultats de test - Services Cloud
 description: Comprendre les résultats des tests - Services Cloud
 translation-type: tm+mt
-source-git-commit: c34137ba6f49785304ab21355eaad75798f26267
+source-git-commit: e1504c73e443d449f8fc9d5fbad433ea1a298843
 
 ---
 
 
-# Understanding your Test Results {#understand-test-results}
+# Présentation des résultats de tests {#understand-test-results}
 
 Les exécutions du pipeline Cloud Manager for Cloud Services prennent en charge l’exécution de tests exécutés par rapport à l’environnement d’évaluation. Cela contraste avec les tests exécutés pendant l’étape de création et de test unitaire qui sont exécutés hors ligne, sans accès à aucun environnement AEM en cours d’exécution.
 Il existe deux types de tests exécutés dans ce contexte :
@@ -125,7 +125,7 @@ L’étape de test fonctionnel personnalisé du pipeline est toujours présente 
 
 Cependant, si aucun fichier JAR de test n’est généré par la version, le test est transmis par défaut. Cette étape est en cours immédiatement après le déploiement de l’étape.
 
-> Remarque :
+>[!NOTE]
 >Le bouton **Télécharger le journal** permet d’accéder à un fichier ZIP contenant les journaux du formulaire détaillé d’exécution du test. Ces journaux n’incluent pas les journaux du processus d’exécution réel d’AEM : ils sont accessibles à l’aide de la fonctionnalité normale de téléchargements ou de journaux de queue. Pour plus d&#39;informations, reportez-vous à la section [Accès et gestion des journaux](/help/implementing/cloud-manager/manage-logs.md) .
 
 ## Exécution locale du test {#local-test-execution}
