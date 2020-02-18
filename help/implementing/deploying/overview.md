@@ -2,7 +2,7 @@
 title: Déploiement sur AEM en tant que service Cloud
 description: 'Déploiement sur AEM en tant que service Cloud '
 translation-type: tm+mt
-source-git-commit: 6bf4d9d106a35ead10be235237986a60f2bf1148
+source-git-commit: 5e12f1a0a39b1c60ced583f248aff49bdffc24e5
 
 ---
 
@@ -48,7 +48,7 @@ Comme pour les versions existantes d’AEM hors cloud, un développement local h
 > [!REMARQUE}
 >Il existe des différences opérationnelles subtiles entre le comportement de l’application sur un ordinateur local et celui d’Adobe Cloud. Ces différences architecturales doivent être respectées lors du développement local et peuvent entraîner un comportement différent lors du déploiement sur l’infrastructure de cloud. En raison de ces différences, il est important d’effectuer des tests exhaustifs sur les environnements de développement et d’évaluation avant de déployer un nouveau code personnalisé en production.
 
-Afin de développer du code personnalisé pour une version interne, vous devez télécharger et installer la version appropriée du SDK [d’](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) AEM en tant que service cloud. Pour plus d’informations sur l’utilisation des outils de répartiteur de services en tant que cloud, voir [cette page](/help/implementing/dispatcher/overview.md).
+Afin de développer du code personnalisé pour une version interne, vous devez télécharger et installer la version appropriée du SDK [d’](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) AEM en tant que service cloud. Pour plus d’informations sur l’utilisation d’AEM en tant qu’outil de répartiteur de services Cloud, voir [cette page](/help/implementing/dispatcher/overview.md).
 
 ## Déploiement de packs de contenu via Cloud Manager et Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
