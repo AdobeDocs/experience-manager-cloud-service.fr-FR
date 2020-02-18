@@ -2,7 +2,7 @@
 title: Déploiement de votre code - Services Cloud
 description: Déploiement de votre code - Services Cloud
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 7758c6df49583dafdf2bf262eae8db466bb3c504
 
 ---
 
@@ -39,15 +39,15 @@ Une fois que vous avez configuré le **pipeline** (référentiel, environnement 
 
    * Validation : cette étape permet de s’assurer que le pipeline est configuré pour utiliser les ressources actuellement disponibles ; par exemple, la branche configurée existe, les environnements sont disponibles, etc.
    * Test de création et d’unité : cette étape exécute un processus de création en conteneur. Pour plus d’informations sur l’environnement de création, voir [Création d’un projet d’application AEM](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md).
-   * Analyse du code : cette étape évalue la qualité du code de votre application. Pour plus d’informations sur le processus de test, voir [Comprendre vos résultats de test](understand-test-results.md).
+   * Analyse du code : cette étape évalue la qualité du code de votre application. Pour plus d’informations sur le processus de test, voir [Comprendre vos résultats de test](/help/implementing/developing/introduction/understand-test-results.md).
    * Créer des images : Cette étape comporte un fichier journal du processus utilisé pour créer des images. Ce processus est responsable de la transformation du contenu et des paquets de répartiteurs produits par l&#39;étape de création en images Docker et configuration Kubernetes.
    * Déploiement en environnement intermédiaire.
 
       ![](assets/stage-deployment.png)
    The **Stage testing**, involves the following steps:
 
-   * Test fonctionnel du produit : Les exécutions du pipeline Cloud Manager prennent en charge l’exécution de tests exécutés par rapport à l’environnement d’évaluation. Pour plus d’informations sur le processus de test, voir [Comprendre vos résultats de test](understand-test-results.md).
-   * Tests fonctionnels personnalisés : Cette étape du pipeline est toujours présente et ne peut pas être ignorée. Cependant, si aucun fichier JAR de test n’est généré par la version, le test est transmis par défaut. Pour plus d’informations sur le processus de test, voir [Comprendre vos résultats de test](understand-test-results.md).
+   * Test fonctionnel du produit : Les exécutions du pipeline Cloud Manager prennent en charge l’exécution de tests exécutés par rapport à l’environnement d’évaluation. Pour plus d’informations sur le processus de test, voir [Comprendre vos résultats de test](/help/implementing/developing/introduction/understand-test-results.md).
+   * Tests fonctionnels personnalisés : Cette étape du pipeline est toujours présente et ne peut pas être ignorée. Cependant, si aucun fichier JAR de test n’est généré par la version, le test est transmis par défaut. Pour plus d’informations sur le processus de test, voir [Comprendre vos résultats de test](/help/implementing/developing/introduction/understand-test-results.md).
 
       ![](assets/stage-testing.png)
 
