@@ -1,19 +1,23 @@
 ---
-title: Déploiement sur AEM en tant que service Cloud
-description: 'Déploiement sur AEM en tant que service Cloud '
+title: Déploiement sur AEM en tant que Cloud Service
+description: 'Déploiement sur AEM en tant que Cloud Service '
 translation-type: tm+mt
-source-git-commit: 5e12f1a0a39b1c60ced583f248aff49bdffc24e5
+source-git-commit: 3cf5d17eab937c99c8bcaeb0ed8074672e71650f
 
 ---
 
 
-# Déploiement sur AEM en tant que service Cloud {#deploying-to-aem-as-a-cloud-service}
+# Déploiement sur AEM en tant que Cloud Service {#deploying-to-aem-as-a-cloud-service}
 
 ## Présentation {#introduction}
 
 Les fondamentaux du développement du code sont similaires dans AEM en tant que service Cloud par rapport aux solutions AEM On Premise et Managed Services. Les développeurs écrivent du code et le testent localement, qui est ensuite envoyé vers AEM distant en tant qu’environnements de service Cloud. Cloud Manager, qui était un outil de diffusion de contenu facultatif pour les services gérés, est requis. Il s’agit désormais du seul mécanisme permettant de déployer du code vers AEM en tant qu’environnements de service Cloud.
 
 La mise à jour de la version AEM est toujours un événement de déploiement distinct de la publication de code personnalisé. D’une autre manière, les versions de code personnalisé doivent être testées par rapport à la version d’AEM en cours de production, car c’est ce dont elles seront déployées par-dessus. Les mises à jour de version d’AEM qui se produisent après cette date, qui seront fréquentes par rapport aux services gérés aujourd’hui, sont automatiquement appliquées. Ils sont censés être rétrocompatibles avec le code client déjà déployé.
+
+La vidéo suivante présente un aperçu général du déploiement du code vers AEM en tant que service Cloud :
+
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 Le reste de ce document décrit la manière dont les développeurs doivent adapter leurs pratiques afin qu’ils travaillent avec AEM en tant que mises à jour de version du service Cloud et mises à jour client.
 
@@ -45,7 +49,7 @@ Pour les solutions AEM précédentes, la version la plus récente d’AEM a rare
 
 Comme pour les versions existantes d’AEM hors cloud, un développement local hors ligne basé sur un démarrage rapide spécifique sera pris en charge et devrait être l’outil de choix pour le débogage dans la plupart des cas.
 
-> [!REMARQUE}
+>[!NOTE]
 >Il existe des différences opérationnelles subtiles entre le comportement de l’application sur un ordinateur local et celui d’Adobe Cloud. Ces différences architecturales doivent être respectées lors du développement local et peuvent entraîner un comportement différent lors du déploiement sur l’infrastructure de cloud. En raison de ces différences, il est important d’effectuer des tests exhaustifs sur les environnements de développement et d’évaluation avant de déployer un nouveau code personnalisé en production.
 
 Afin de développer du code personnalisé pour une version interne, vous devez télécharger et installer la version appropriée du SDK [d’](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) AEM en tant que service cloud. Pour plus d’informations sur l’utilisation d’AEM en tant qu’outil de répartiteur de services Cloud, voir [cette page](/help/implementing/dispatcher/overview.md).
@@ -107,7 +111,8 @@ Après le passage à la nouvelle version de l’application :
 
 Il est possible de limiter l’installation de contenu modifiable à la création ou à la publication en incorporant des packages dans un dossier install.author ou install.publish sous `/apps`. Informations détaillées sur la restructuration de projet recommandée dans la documentation [d’](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html) AEM.
 
->[!NOTE] Les packages de contenu sont déployés sur tous les types d’environnement (développement, étape, prod). Il n’est pas possible de limiter le déploiement à un environnement spécifique. Cette limitation est en place pour garantir l&#39;option d&#39;une série de tests d&#39;exécution automatisée. Le contenu spécifique à un environnement nécessite une installation manuelle via Package Manager.
+>[!NOTE]
+> Les packages de contenu sont déployés sur tous les types d’environnement (développement, étape, prod). Il n’est pas possible de limiter le déploiement à un environnement spécifique. Cette limitation est en place pour garantir l&#39;option d&#39;une série de tests d&#39;exécution automatisée. Le contenu spécifique à un environnement nécessite une installation manuelle via Package Manager.
 
 En outre, il n’existe aucun mécanisme permettant d’annuler les modifications du package de contenu modifiable après leur application. Si les clients détectent un problème, ils peuvent choisir de le résoudre dans leur prochaine version de code ou, en dernier recours, restaurer l’ensemble du système à un moment donné avant le déploiement.
 
@@ -123,7 +128,8 @@ Dans les cas suivants, il est préférable d’utiliser l’approche du codage m
 * Créer/supprimer des groupes
 * Créer/supprimer des utilisateurs
 * Ajout d’ACL
-   > [!NOTE] La définition des listes de contrôle d’accès requiert que les structures de noeud soient déjà présentes. Par conséquent, il peut être nécessaire de créer des instructions de chemin avant.
+   > [!NOTE]
+   > La définition des listes de contrôle d’accès requiert que les structures de noeud soient déjà présentes. Par conséquent, il peut être nécessaire de créer des instructions de chemin avant.
 * Ajouter un chemin (par exemple pour les structures de dossiers racine)
 * Ajout de CND (définitions de type de noeud)
 
