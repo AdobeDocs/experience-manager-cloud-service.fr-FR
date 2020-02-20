@@ -2,12 +2,12 @@
 title: Diffusion d’images optimisées pour un site réactif
 description: Découvrez comment utiliser la fonctionnalité de code réactif pour diffuser des images optimisées.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
 
-# Delivering optimized images for a responsive site {#delivering-optimized-images-for-a-responsive-site}
+# Diffusion d’images optimisées pour un site réactif {#delivering-optimized-images-for-a-responsive-site}
 
 Utilisez la fonctionnalité de code réactif lorsque vous souhaitez partager le code de diffusion réactive avec votre développeur web. You copy the responsive (**[!UICONTROL RESS]**) code to the clipboard so you can share it with the web developer.
 
@@ -44,4 +44,4 @@ Voir aussi [Liaison d’URL à une application web.](linking-urls-to-yourwebappl
 
 HTTP/2 est le nouveau protocole web qui améliore la manière dont les serveurs et les navigateurs communiquent. Il permet un transfert rapide d’informations et réduit la puissance de traitement nécessaire. La diffusion de ressources Dynamic Media est prise en charge via HTTP/2 pour améliorer les temps de réponse et de chargement.
 
-Voir [Diffusion du contenu sur HTTP/2](http2.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.
+Voir [Diffusion du contenu sur HTTP/2](http2faq.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.
