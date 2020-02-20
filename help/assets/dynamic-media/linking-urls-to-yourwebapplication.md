@@ -1,13 +1,13 @@
 ---
-title: Intégration d’URL à votre application web
+title: Liaison d’URL à une application web
 description: Comment lier des URL à votre application web dans les médias dynamiques
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
 
-# Intégration d’URL à votre application web {#linking-urls-to-your-web-application}
+# Liaison d’URL à une application web {#linking-urls-to-your-web-application}
 
 Vos sites Web et applications accèdent aux services Contenu multimédia dynamique par le biais d’appels d’URL. Une fois que vous avez publié une ressource, Dynamic Media active une chaîne d’URL qui fait référence à la ressource. Vous pouvez coller ces URL dans un navigateur web à des fins de test.
 
@@ -205,4 +205,4 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
 HTTP/2 est le nouveau protocole web qui améliore la manière dont les serveurs et les navigateurs communiquent. Il permet un transfert rapide d’informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media peuvent désormais être diffusées sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
 
-Voir [Diffusion du contenu sur HTTP/2](http2.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.
+Voir [Diffusion du contenu sur HTTP/2](http2faq.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.
