@@ -4,7 +4,7 @@ description: Découvrez comment rechercher les ressources souhaitées dans AEM �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: dfa9b099eaf7f0d155986bbab7d56901876d98f6
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
@@ -221,7 +221,7 @@ La fonctionnalité de recherche AEM prend en charge la recherche de collections 
 
 Le sélecteur de ressources vous permet de rechercher, filtrer et parcourir les ressources DAM d’une manière spéciale. Le sélecteur de ressources est disponible à l’adresse `https://[aem_server]:[port]/aem/assetpicker.html`. Vous pouvez récupérer les métadonnées des fichiers que vous sélectionnez à l’aide du sélecteur de fichiers. Vous pouvez le lancer avec les paramètres de requête pris en charge, tels que le type de fichier (image, vidéo, texte) et le mode de sélection (sélections simples ou multiples). Ces paramètres définissent le contexte du sélecteur de ressources pour une instance de recherche particulière et restent inchangés tout au long de la sélection.
 
-Le sélecteur de ressources utilise le message HTML5 Window.postMessage pour envoyer les données de la ressource sélectionnée au destinataire. Le sélecteur de ressources utilise le vocabulaire d’interface foundation picker de Granite. Par défaut, le sélecteur de ressources fonctionne en mode Navigation.
+The asset selector uses the HTML5 `Window.postMessage` message to send data for the selected asset to the recipient. Le sélecteur de ressources utilise le vocabulaire d’interface foundation picker de Granite. Par défaut, le sélecteur de ressources fonctionne en mode Navigation.
 
 Vous pouvez transmettre les paramètres de requête suivants dans une URL pour démarrer le sélecteur de ressources dans un contexte spécifique :
 
