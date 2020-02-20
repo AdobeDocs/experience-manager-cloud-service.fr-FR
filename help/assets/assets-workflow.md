@@ -3,24 +3,24 @@ title: Application de processus à des ressources
 description: Découvrez comment appliquer des processus aux ressources, aux dossiers et aux collections dans Adobe Experience Manager Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
 
-# Application de workflows aux ressources {#applying-workflows-to-assets}
+# Application de processus à des ressources {#applying-workflows-to-assets}
 
-L’application de workflow aux ressources numériques est identique à l’application de workflow aux pages d’un site web. Utilisez les workflow dans les ressources numériques pour activer les ressources ou créer des filigranes. La plupart des workflow destinés aux ressources sont automatiquement activés, comme le workflow permettant de créer automatiquement un rendu après la modification d’une image.
+Vous utilisez des processus dans des ressources numériques pour activer la ressource ou créer des filigranes. Certains flux de travaux des ressources sont configurés pour s’exécuter automatiquement en fonction de certaines conditions. Par exemple, le processus qui crée automatiquement un rendu est automatiquement exécuté après la modification d’une image.
 
 ## Apply a workflow to an AEM asset {#apply-a-workflow-to-an-aem-asset}
 
-For details of applying a workflow to an AEM asset, see [Start a workflow on an asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset).
+Pour plus d’informations, voir [Démarrage d’un flux de travail sur une ressource](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset).
 
-## Apply a workflow to multiple assets {#apply-a-workflow-to-multiple-assets}
+Pour appliquer un processus à plusieurs ressources, procédez comme suit :
 
 1. Dans la console Ressources, accédez à l’emplacement des ressources pour lesquelles vous souhaitez démarrer un workflow, puis sélectionnez les ressources.
-1. Click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu to display the timeline.
-1. Click the **Actions** (arrow) icon at the bottom.
+1. Click the AEM icon and choose **[!UICONTROL Timeline]** from the menu to display the timeline.
+1. Cliquez sur l’icône Actions dans la partie inférieure.
 1. Cliquez sur **[!UICONTROL Démarrer le processus]**.
 1. Dans la section **[!UICONTROL Démarrer le workflow]**, sélectionnez un modèle de workflow dans la liste.
 1. (Facultatif) Spécifiez le titre du workflow, qui peut permettre de référencer l’instance du workflow.
@@ -28,8 +28,8 @@ For details of applying a workflow to an AEM asset, see [Start a workflow on an 
 
 ## Apply a workflow to multiple folders {#applying-a-workflow-to-multiple-folders}
 
-La procédure à suivre pour appliquer un workflow à plusieurs dossiers est similaire à celle observée permettant d’appliquer un workflow à plusieurs ressources. Select the folders in the Assets console, and perform steps 2-7 of the procedure [Apply a workflow to multiple assets](#apply-a-workflow-to-multiple-assets).
+La procédure à suivre pour appliquer un workflow à plusieurs dossiers est similaire à celle observée permettant d’appliquer un workflow à plusieurs ressources. Sélectionnez les dossiers dans la console Ressources et procédez comme suit.
 
-## Application d’un workflow à une collection {#applying-a-workflow-to-a-collection}
+## Apply a workflow to a collection {#applying-a-workflow-to-a-collection}
 
-For details of applying a workflow to a collection, see [Execute a workflow on a collection](/help/assets/manage-collections.md#run-a-workflow-on-a-collection).
+Pour plus d’informations, voir [comment appliquer un processus à une collection](/help/assets/manage-collections.md#run-a-workflow-on-a-collection).
