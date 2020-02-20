@@ -2,7 +2,7 @@
 title: Ajout de ressources Dynamic Media aux pages
 description: Comment ajouter des composants Dynamic Media à une page dans AEM
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
@@ -301,7 +301,7 @@ Si le paramètre prédéfini de la visionneuse que vous recherchez n’est pas v
 
 HTTP/2 est le nouveau protocole web qui améliore la manière dont les serveurs et les navigateurs communiquent. Il permet un transfert rapide d’informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media peuvent désormais être diffusées sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
 
-Voir [Diffusion du contenu sur HTTP/2](/help/assets/dynamic-media/http2.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.
+Voir [Diffusion du contenu sur HTTP/2](/help/assets/dynamic-media/http2faq.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.
 
 >[!MORELIKETHIS]
 >
