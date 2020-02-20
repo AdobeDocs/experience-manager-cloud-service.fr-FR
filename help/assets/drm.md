@@ -3,7 +3,7 @@ title: Gestion des droits numériques dans Adobe Experience Manager Assets
 description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
@@ -32,9 +32,9 @@ Vous pouvez afficher l’état d’expiration d’un fichier aux emplacements su
 
 Vous pouvez rechercher des ressources arrivées à expiration, y compris les sous-ressources expirées dans le panneau de recherche.
 
-1. Dans la console Ressources, cliquez sur l’icône Rechercher dans la barre d’outils pour afficher la zone Recherche Omni.
+1. Dans la console Ressources, cliquez sur l&#39;icône Rechercher dans la barre d&#39;outils pour afficher le champ Omnisearch.
 
-1. Lorsque le curseur se trouve dans la zone Omni Search, appuyez sur la touche Entrée pour afficher la page des résultats de la recherche.
+1. Avec le curseur dans la zone Omnisearch, appuyez sur la touche Entrée pour afficher la page des résultats de la recherche.
 
 1. Cliquez sur l’icône de navigation globale pour afficher le panneau Recherche.
 
@@ -42,13 +42,13 @@ Vous pouvez rechercher des ressources arrivées à expiration, y compris les sou
 
 1. Sélectionnez **[!UICONTROL Expiré]**. Les ressources arrivées à expiration sont visibles dans les résultats de la recherche.
 
-When you choose the **Expired** option, the Assets console only displays the expired assets and subassets that are referenced by compound assets. Les ressources composites qui référencent des sous-ressources expirées ne s’affichent pas immédiatement une fois que les sous-ressources arrivent à expiration. En réalité, elles sont affichées lorsque AEM Assets détecte qu’elles référencent des sous-ressources expirées, à la prochaine exécution du planificateur.
+When you choose the **[!UICONTROL Expired]** option, the Assets console only displays the expired assets and subassets that are referenced by compound assets. Les ressources composites qui référencent des sous-ressources expirées ne s’affichent pas immédiatement une fois que les sous-ressources arrivent à expiration. En réalité, elles sont affichées lorsque AEM Assets détecte qu’elles référencent des sous-ressources expirées, à la prochaine exécution du planificateur.
 
 Si vous modifiez la date d’expiration d’une ressource publiée à une date antérieure au cycle du planificateur en cours, la planification détecte toujours cette ressource en tant que ressource expirée lors de sa prochaine exécution et elle reflète son état en conséquence.
 
 En outre, si un problème ou une erreur empêche le planificateur de détecter les ressources expirées dans le cycle en cours, le planificateur réexamine ces ressources lors du cycle suivant et identifie leur statut expiré.
 
-To enable the Assets console to display the referencing compound assets along with the expired subassets, configure an **Adobe CQ DAM Expiry Notification** workflow in AEM Configuration Manager.
+To enable the Assets console to display the referencing compound assets along with the expired subassets, configure an **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in AEM Configuration Manager.
 
 1. Ouvrez AEM Configuration Manager.
 1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. By default, **[!UICONTROL Time based Scheduler]** is selected, which schedules a job to check at a specific time whether an asset has expired subassets. Une fois la tâche terminée, les ressources qui possèdent des sous-ressources expirées et des ressources référencées sont affichées à l’état expiré dans les résultats de la recherche.
@@ -90,7 +90,7 @@ La console Ressources d’Adobe Experience Manager (AEM) Assets peut afficher di
 
 1. To search for assets based on their status, click/tap the **[!UICONTROL Search]** icon to display the Omnisearch bar.
 
-1. Hit the Return key and then click/tap the **[!UICONTROL GlobalNav]** icon to display the Search panel.
+1. Appuyez sur la touche Entrée, puis cliquez/appuyez sur l’icône AEM pour afficher le panneau Rechercher.
 1. In the Search panel, tap/click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in AEM Assets.
 
 1. Tap/click **[!UICONTROL Approval Status]** and click the appropriate option to search for approved or rejected assets.
