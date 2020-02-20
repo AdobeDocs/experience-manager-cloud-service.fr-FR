@@ -4,12 +4,12 @@ description: Découvrez les différentes méthodes de gestion et de modification
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
 
-# Manage assets {#manag-assets}
+# Manage assets {#manage-assets}
 
 Cet article explique comment gérer et modifier des ressources dans les ressources Adobe Experience Manager (AEM). Pour gérer les fragments de contenu, reportez-vous à la section Fichiers [de fragments](content-fragments/content-fragments.md) de contenu.
 
@@ -32,32 +32,7 @@ Les caractères suivants (liste de ceux-ci séparés par des espaces) ne sont pa
 
 ## Upload assets {#uploading-assets}
 
-Voir [Ajout de ressources numériques à Experience Manager](add-assets.md).
-
-### Transferts en continu {#streamed-uploads}
-
-Si vous transférez de nombreux fichiers vers AEM, les demandes d’E/S vers le serveur augmentent considérablement, ce qui réduit l’efficacité du transfert et peut même entraîner l’expiration de certaines tâches de transfert. AEM Assets prend en charge le transfert en continu de ressources. Le transfert en flux continu réduit les E/S disque pendant l’opération de transfert en évitant le stockage des ressources dans un dossier temporaire sur le serveur avant de le copier dans le référentiel. Au lieu de cela, les données sont transférées directement vers le référentiel. Cela permet à la fois d’accélérer le transfert de ressources volumineuses et de réduire les risques d’expiration. Le transfert en continu est activé par défaut dans AEM Assets.
-
->[!NOTE]
->
->Le téléchargement en flux continu est désactivé pour AEM s’exécutant sur le serveur JEE avec une version servlet-api inférieure à 3.1.
-
-### Extraction d’une archive ZIP contenant des ressources {#extractzip}
-
-Vous pouvez télécharger des archives ZIP comme tout autre ressource prise en charge. Les mêmes règles de nom de fichier s’appliquent aux fichiers ZIP. AEM vous permet d’extraire une archive ZIP vers un emplacement DAM. Si les fichiers d’archives ne contiennent pas d’extension ZIP, activez la détection de type de fichier à l’aide du contenu.
-
-Sélectionnez une archive ZIP à la fois, cliquez sur **[!UICONTROL Extraire l’archive]**, puis sélectionnez un dossier de destination. Sélectionnez une option pour gérer les conflits, le cas échéant. Si les ressources du fichier ZIP existent déjà dans le dossier de destination, vous pouvez sélectionner l’une des options suivantes : ignorer l’extraction, remplacer les fichiers existants, conserver les deux fichiers en attribuant un nouveau nom ou créer une nouvelle version.
-
-Une fois l’extraction terminée, AEM vous avertit dans la zone de notification. Lorsqu’AEM extrait le fichier ZIP, vous pouvez reprendre votre travail sans interrompre l’extraction.
-
-![Notification de l’extraction zip](assets/zip_extract_notification.png)
-
-La fonctionnalité présente certaines limites :
-
-* Si un dossier portant le même nom existe à la destination, les ressources du fichier ZIP sont extraites dans le dossier existant.
-* Si vous annulez l’extraction, les ressources déjà extraites ne sont pas supprimées.
-* Vous ne pouvez pas sélectionner deux fichiers ZIP simultanément et les extraire. Vous pouvez seulement extraire une archive ZIP à la fois.
-* Lors du téléchargement d’une archive ZIP, si la boîte de dialogue de téléchargement affiche un message d’erreur de serveur 500, réessayez après avoir installé le dernier Service Pack.
+Voir [Ajout de ressources numériques à Experience Manager](add-assets.md)pour en savoir plus.
 
 ## Aperçu des fichiers {#previewing-assets}
 
@@ -94,19 +69,13 @@ Pour prévisualiser un fichier, procédez comme suit.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. Sélectionnez une ou plusieurs balises dans le champ **[!UICONTROL Balises]**. Pour ajouter une balise personnalisée, saisissez son nom dans la zone appropriée et appuyez ensuite sur Entrée. La nouvelle balise est enregistrée dans AEM.
+1. Sélectionnez une ou plusieurs balises dans le champ **[!UICONTROL Balises]**. Pour ajouter une balise personnalisée, saisissez le nom de la balise dans la zone et appuyez sur la touche Entrée. La nouvelle balise est enregistrée dans AEM.
 
    YouTube requiert que les balises soient publiées et comportent un lien vers YouTube (si un lien approprié peut être trouvé).
 
    >[!NOTE]
    >
-   >Pour créer des balises, vous devez disposer d’une autorisation d’écriture `/content/cq:tags/default` dans le référentiel CRX.
-
-1. Pour obtenir une évaluation de la ressource, appuyez/cliquez sur l’onglet **[!UICONTROL Avancé]**, puis appuyez/cliquez sur l’étoile à l’emplacement approprié pour affecter l’évaluation de votre choix.
-
-   ![évaluations](assets/ratings.png)
-
-   Le score d’évaluation que vous affectez à la ressource s’affiche sous **[!UICONTROL Vos évaluations]**. Le score d’évaluation moyen que la ressource a reçu des utilisateurs qui ont évalué la ressource s’affiche sous **[!UICONTROL Évaluation]**. De plus, la répartition des scores d’évaluation contribuant au score d’évaluation moyen s’affiche sous **[!UICONTROL Ventilation d’évaluation]**. Vous pouvez rechercher des ressources en fonction de leur score d’évaluation moyen.
+   >Pour créer des balises, vous devez disposer d’une autorisation d’écriture sur le `/content/cq:tags/default` chemin d’accès dans le référentiel CRX.
 
 1. To view usage usage statistics for the asset, click/tap the **[!UICONTROL Insights]** tab.
 
@@ -118,7 +87,8 @@ Pour prévisualiser un fichier, procédez comme suit.
    Pour plus d’informations, reportez-vous à la section [Informations sur les ressources](assets-insights.md).
 
 1. Appuyez/cliquez sur **[!UICONTROL Enregistrer et fermer]**.
-1. Accédez à l’interface utilisateur Ressources. Les propriétés des métadonnées modifiées, notamment le titre, la description et les évaluations, sont affichées sur la carte des ressources en mode Carte et dans les colonnes pertinentes en mode Liste.
+
+1. Accédez à l’interface utilisateur Ressources. Les propriétés de métadonnées modifiées, y compris le titre, la description et les balises, sont affichées sur la carte de ressources en mode Carte et sous les colonnes appropriées en mode Liste.
 
 ## Copie de fichiers {#copying-assets}
 
@@ -238,28 +208,6 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
    >[!NOTE]
    >
    >Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acceptent les formats vidéo compatibles avec HTML5. Selon le navigateur, différents formats vidéo sont en outre pris en charge.
-
-### View subassets {#viewing-subassets}
-
-Dans AEM, il est possible de générer des sous-ressources pour des ressources dont le format multi-pages est pris en charge telles que PDF, AI, PowerPoint/Apple Keynote et InDesign. Ces sous-ressources sont comparables à des ressources normales, à la différence qu’elles sont liées à leur ressource parent et qu’elles permettent un affichage multi-pages dans l’interface utilisateur tactile.
-
-La génération de sous-ressources est désactivée par défaut. To enable subasset generation, add the **[!UICONTROL Create Sub Asset]** step to the DAM Update Asset workflow.
-
-For Word documents, the DAM Parse Word Documents workflow generates a `cq:Page` component from the contents of the Word document. The images extracted from the document are referenced from the `cq:Page` component. Elles sont extraites même si la génération des sous-ressources est désactivée.
-
-1. Pour afficher des sous-ressources, accédez à l’emplacement de la ressource et ouvrez la page Ressource correspondante.
-
-1. Tap/click the GlobalNav icon, and choose **[!UICONTROL Subassets]** from the list
-
-   ![chlimage_1-223](assets/chlimage_1-223.png)
-
-   >[!NOTE]
-   >
-   >L’option **Sous-ressources** ne s’affiche que si des sous-ressources sont disponibles ou ont été générées pour la ressource.
-
-   Lorsque vous sélectionnez **Sous-ressources** dans la liste, la page **Sous-ressources** affiche les sous-ressources liées à la ressource parent.
-
-   ![chlimage_1-224](assets/chlimage_1-224.png)
 
 ## Supprimer des ressources {#delete-assets}
 
@@ -564,43 +512,11 @@ Pour imprimer les annotations et l’état de révision, cliquez/appuyez sur l�
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-   >[!NOTE]
-   >
-   >Si la ressource contient des sous-ressources, vous pouvez imprimer ces dernières avec leurs annotations spécifiques.
-
    Pour modifier l’aspect du fichier PDF généré (la couleur, la taille et le style de la police, la couleur d’arrière-plan des commentaires et des états, par exemple), ouvrez la **[!UICONTROL configuration du PDF d’annotation]** dans Configuration Manager et modifiez ensuite les options souhaitées. Par exemple, pour modifier la couleur d’affichage de l’état approuvé, modifiez le code couleur dans le champ correspondant. Pour plus d’informations sur la modification de la couleur de police des annotations, voir [Annotations](/help/assets/manage-digital-assets.md#annotating).
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
    Revenez au fichier PDF généré et actualisez-le. Le fichier PDF actualisé affiche désormais les modifications que vous avez effectuées.
-
-Si une ressource contient des annotations dans des langues étrangères (en particulier dans des langues non latines), vous devez d’abord configurer le service Font Manager CQ-DAM-Handler-Gibson sur le serveur AEM pour pouvoir les imprimer. Lorsque vous configurez ce service, indiquez le chemin d’accès aux polices à utiliser pour ces langues.
-
-1. Ouvrez la page de configuration du service CQ-DAM-Handler-Gibson Font Manager à partir de l’URL `https://[aem_server]:[port]/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl`.
-1. Pour configurer le service Font Manager CQ-DAM-Handler-Gibson, effectuez l’une des opérations suivantes :
-
-   * Dans Répertoire des polices système, indiquez le chemin d’accès complet au répertoire des polices sur votre système. Par exemple, si vous utilisez un Mac, vous pouvez indiquer */Library/Fonts*. AEM récupère les polices dans ce répertoire.
-   * Create a directory named `fonts` inside the ``crx-quickstart`` folder. CQ-DAM-Handler-Gibson Font Manager Service automatically fetches the fonts at the location `crx-quickstart/fonts`. Vous pouvez remplacer ce chemin d’accès par défaut dans l’option Répertoire des polices Adobe Server.
-
-   * Créez un dossier pour les polices sur votre système et stockez-y les polices de votre choix. Indiquez ensuite le chemin d’accès complet à ce dossier sous Répertoire des polices du client.
-
-1. Accédez à la configuration Annotation PDF à partir de l’URL `https://[aem_server]:[4502]/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig`.
-1. Configurez le PDF d’annotation avec le jeu correct de famille de polices en procédant comme suit :
-
-   * Incluez la chaîne `<font_family_name_of_custom_font, sans-serif>` dans l’option font-family. For example, if you want to print annotations in CJK (Chinese, Japanese and Korean), include the string `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` in the font-family option. Si vous souhaitez imprimer des annotations en hindi, téléchargez la police appropriée et configurez la famille de polices comme Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
-
-1. Redémarrez l’instance AEM.
-
-Voici un exemple de configuration d’AEM en vue d’imprimer des annotations en chinois, en japonais et en coréen (CJC) :
-
-1. Téléchargez les polices Google Noto CJK à partir des liens ci-dessous et enregistrez-les dans le répertoire des polices configuré dans le service Font Manager.
-
-   * All In One Super CJK font: [https://www.google.com/get/noto/help/cjk/](https://www.google.com/get/noto/help/cjk/)
-   * Noto Sans (for European languages): [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
-   * Noto fonts for a language of your choice: [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
-
-1. Configure the annotation PDF file by setting the font-family parameter to `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Cette configuration est disponible par défaut et fonctionne pour l’ensemble des langues européennes, ainsi que pour le chinois, le japonais et le coréen (CJC).
-1. Si la langue de votre choix est différente de celles mentionnées à l’étape 2, ajoutez une entrée appropriée (séparée par des virgules) à la famille de polices par défaut.
 
 ## Asset versioning {#asset-versioning}
 
