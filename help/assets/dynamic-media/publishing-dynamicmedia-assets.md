@@ -2,7 +2,7 @@
 title: Publication de ressources Dynamic Media
 description: Découvrez comment publier des ressources Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
 
 ---
 
@@ -39,5 +39,5 @@ Pour plus d’informations sur la publication d’une visionneuse ou d’une res
 
 AEM prend à présent en charge la diffusion de tout le contenu Dynamic Media (images et vidéo) sur HTTP/2. En d’autres termes, une URL publiée ou un code intégré pour l’image ou la vidéo peut être intégré dans toute application acceptant une ressource hébergée. Cette ressource publiée est alors distribuée par le biais du protocole HTTP/2. Cette méthode de distribution améliore la communication entre les navigateurs et les serveurs, ce qui permet d’améliorer les temps de réponse et de chargement de toutes vos ressources Dynamic Media.
 
-See [HTTP/2 delivery of content frequently asked questions](/help/assets/dynamic-media/scene7-http2faq.md) to learn more.
+See [HTTP/2 delivery of content frequently asked questions](/help/assets/dynamic-media/http2faq.md) to learn more.
 <!--this md file used to reside under sites-administering-->
