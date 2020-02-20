@@ -4,12 +4,12 @@ description: Présentation du concept de collection dans AEM Assets. Découvrez 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3291f4f5de8c5333013850dad71630689cae7565
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
 
-# Manage collections {#manage-collections}
+# Gestion des collections {#manage-collections}
 
 Une collection est un ensemble de ressources dans Adobe Experience Manager (AEM) Assets. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs.
 
@@ -102,7 +102,7 @@ Vous pouvez ajouter des ressources à une collection qui comporte une liste de r
 Smart collections are built by saving a search so you can alter their content by modifying the search parameters of the [saved search](#saved-searches).
 
 1. In the Assets user interface, tap/click the **[!UICONTROL Search]** icon from the toolbar.
-1. Avec le curseur dans la zone Omnisearch, appuyez sur la touche Retour.
+1. Avec le curseur dans la zone Omnisearch, appuyez sur la touche Entrée.
 1. Appuyez/cliquez sur l’icône de navigation globale pour afficher le panneau Filtres.
 1. Dans la liste **[!UICONTROL Recherches enregistrées]**, sélectionnez la collection dynamique que vous souhaitez modifier. Le panneau de recherche affiche les filtres configurés pour la recherche enregistrée.
 1. Dans la liste **[!UICONTROL Fichiers et dossiers]**, sélectionnez **[!UICONTROL Fichiers]**.
@@ -225,7 +225,7 @@ Vous pouvez ajouter une collection à une autre collection, créant ainsi une co
 
 Dans l’interface utilisateur Ressources, vous pouvez rechercher ou filtrer des ressources en fonction de certaines règles, critères de recherche ou facettes de recherche personnalisées. If you save these as **[!UICONTROL Saved Searches]**, you can access them later from the **[!UICONTROL Saved Searches]** list in the Filter panel. La création d’une recherche enregistrée entraîne celle d’une collection dynamique.
 
-Les recherches enregistrées sont créées lorsque vous créez une collection dynamique. Les collections dynamiques sont automatiquement ajoutées à la liste Recherches **** enregistrées. The Saved Searches query for the collection is saved in the `dam:query` property in CRXDE at the relative location `/content/dam/collections/`.
+Les recherches enregistrées sont créées lorsque vous créez une collection dynamique. Les collections dynamiques sont automatiquement ajoutées à la liste Recherches **** enregistrées. The Saved Searches query for the collection is saved in the `dam:query` property in CRX at the relative location `/content/dam/collections/`.
 
 >[!NOTE]
 >
