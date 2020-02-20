@@ -3,7 +3,7 @@ title: Téléchargement de ressources à partir d’AEM
 description: Découvrez comment télécharger des ressources à partir d’AEM et activer ou désactiver la fonctionnalité de téléchargement.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
@@ -26,7 +26,7 @@ Vous trouverez ci-dessous les options d’exportation/de téléchargement dispon
 
 | Options d’exportation ou de téléchargement | Descriptions |
 |---|---|
-| [!UICONTROL Ressources] | Sélectionnez cette option pour télécharger la ressource dans son format d’origine sans aucun rendu. |
+| [!UICONTROL Assets] | Sélectionnez cette option pour télécharger la ressource dans son format d’origine sans aucun rendu. |
 | [!UICONTROL Rendus] | Un rendu est une représentation binaire d’une ressource. Les ressources possèdent une représentation principale, à savoir celle du fichier transféré. Elles peuvent avoir un nombre illimité de représentations. <br> Avec cette option, vous pouvez sélectionner les rendus que vous souhaitez télécharger. Les rendus disponibles dépendent de la ressource sélectionnée. |
 | [!UICONTROL Rendus dynamiques] | Un rendu dynamique génère d’autres rendus à la volée. Lorsque vous sélectionnez cette option, vous sélectionnez également les rendus que vous souhaitez créer dynamiquement en effectuant une sélection dans la liste des paramètres d’image prédéfinis. De plus, vous pouvez sélectionner la taille, l’unité de mesure, le format, l’espace colorimétrique, la résolution, ainsi que les éventuels modificateurs d’image (pour inverser l’image, par exemple). |
 | [!UICONTROL Courriel] | Une notification électronique est envoyée à l’utilisateur. Les modèles standard de courrier électronique sont disponibles aux emplacements suivants :<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> Les modèles que vous personnalisez lors du déploiement doivent se trouver à ces emplacements : <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul>Vous pouvez stocker des modèles personnalisés spécifiques au client à ces emplacements :<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> |
@@ -61,8 +61,6 @@ The `Asset Download Servlet` can be disabled on an AEM Publish instances by upda
 1. Pour bloquer les requêtes de téléchargement de ressources via une configuration de Dispatcher, modifiez la configuration `dispatcher.any` et ajoutez une nouvelle règle à la [section /filter](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter).
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
-
-1. You can manually disable the OSGi component on a Publish instance, by navigating to the OSGi Console at `<aem-host>/system/console/components`. Locate `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` and click **[!UICONTROL Disable]**.
 
 >[!MORELIKETHIS]
 >
