@@ -3,14 +3,14 @@ title: Application de processus à des ressources
 description: Découvrez comment appliquer des processus aux ressources, aux dossiers et aux collections dans Adobe Experience Manager Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 ---
 
 
 # Application de processus à des ressources {#applying-workflows-to-assets}
 
-Vous utilisez des processus dans des ressources numériques pour activer la ressource ou créer des filigranes. Certains flux de travaux des ressources sont configurés pour s’exécuter automatiquement en fonction de certaines conditions. Par exemple, le processus qui crée automatiquement un rendu est automatiquement exécuté après la modification d’une image.
+Vous utilisez des processus dans les ressources numériques pour activer la ressource. Certains flux de travaux des ressources sont configurés pour s’exécuter automatiquement en fonction de certaines conditions. Par exemple, le processus qui crée automatiquement un rendu est automatiquement exécuté après la modification d’une image.
 
 ## Apply a workflow to an AEM asset {#apply-a-workflow-to-an-aem-asset}
 
