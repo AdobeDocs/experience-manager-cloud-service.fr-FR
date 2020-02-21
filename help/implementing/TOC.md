@@ -2,37 +2,37 @@
 sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementing for AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: c34137ba6f49785304ab21355eaad75798f26267
+source-git-commit: 1ca6ab990e403e069d52c6a70d95a5ae31449463
 
 ---
 
 
-# Implementing {#implementing}
+# Implémentation {#implementing}
 
-+ [Implémentation d’applications pour AEM en tant que service Cloud](/help/implementing/home.md)
-+ Utilisation de Cloud Manager {#using-cloud-manager}
++ [Implémentation d’applications pour AEM en tant que Cloud Service](/help/implementing/home.md)
++ Utilisation de Cloud Manager {#using-cloud-manager}
    + [Gestion des environnements](cloud-manager/manage-environments.md)
-   + [Configuration du pipeline CI/CD](cloud-manager/configure-pipeline.md)
+   + [Configuration de votre pipeline CI/CD](cloud-manager/configure-pipeline.md)
    + [Déploiement de votre code](cloud-manager/deploy-code.md)
    + [Présentation des règles de qualité du code personnalisé](cloud-manager/custom-code-quality-rules.md)
-   + [Accès et gestion des journaux](cloud-manager/manage-logs.md)
+   + [Accès aux journaux et leur gestion](cloud-manager/manage-logs.md)
    + [Présentation des notifications](cloud-manager/notifications.md)
 + Gestion de votre code {#managing-code}
    + [Gestion des versions du projet Maven](cloud-manager/project-version-handling.md)
    + [Accès à Git](cloud-manager/accessing-git.md)
-   + [Intégration de Git à Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
-+ Développement pour AEM en tant que service cloud {#developing}
-   + [Structure du package de projet AEM](developing/introduction/aem-project-content-package-structure.md)
-   + [Développement d’un package de structure de référentiel](developing/introduction/repository-structure-package.md)
+   + [Intégration de Git à Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
++ Développement pour AEM en tant que Cloud Service {#developing}
+   + [Structure d’un module de projet AEM](developing/introduction/aem-project-content-package-structure.md)
+   + [Développement d’un module de structure de référentiel](developing/introduction/repository-structure-package.md)
    + [AEM en tant que SDK de service cloud](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [Recherche et indexation de contenu](/help/operations/indexing.md)
-   + [AEM en tant que directives de développement de service Cloud](developing/introduction/development-guidelines.md)
-   + [Prise en main du développement de sites AEM – Tutoriel WKND](developing/introduction/develop-wknd-tutorial.md)
-   + [AEM en tant qu’API de service cloud](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [Conseils de développement pour AEM en tant que Cloud Service](developing/introduction/development-guidelines.md)
+   + [Prise en main du développement d’AEM Sites – Tutoriel WKND](developing/introduction/develop-wknd-tutorial.md)
+   + [API d’AEM en tant que Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Présentation des résultats de tests](/help/implementing/developing/introduction/understand-test-results.md)
-+ Extension d’AEM en tant que service Cloud {#extending}
-   + [Fragments d’expérience](developing/extending/experience-fragments.md)
-+ Déploiement sur AEM en tant que service Cloud {#deploying}
-   + [Déploiement sur AEM en tant que service Cloud](deploying/overview.md)
-+ Répartiteur dans le Cloud {#dispatcher}
-   + [Répartiteur dans le Cloud](dispatcher/overview.md)
++ Configuring and Extending AEM as a Cloud Service {#configuring-and-extending}
+   + [Extension des fragments d’expérience](developing/extending/experience-fragments.md)
++ Déploiement sur AEM en tant que Cloud Service {#deploying}
+   + [Déploiement sur AEM en tant que Cloud Service](deploying/overview.md)
++ Dispatcher en mode cloud {#dispatcher}
+   + [Dispatcher en mode cloud](dispatcher/overview.md)
