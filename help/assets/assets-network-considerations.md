@@ -3,7 +3,7 @@ title: Considérations relatives au réseau de ressources
 description: Décrit les considérations concernant le réseau lors de la conception d’un déploiement d’AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 ---
 
@@ -87,11 +87,9 @@ Voici quelques éléments à vérifier :
 
 * Lecture/écriture différée des métadonnées XMP
 * Activation et réplication automatiques
-* Application d’un filigrane
 * Assimilation de sous-ressources/Extraction de pages
 * Chevauchement des workflow.
 
 Voici un exemple de client pour la définition d’un workflow de ressource.
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
-
