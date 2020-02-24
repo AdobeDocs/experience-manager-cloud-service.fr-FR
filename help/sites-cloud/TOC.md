@@ -1,7 +1,7 @@
 ---
 sub-product: Authoring Content in AEM as a Cloud Service
 user-guide-title: Authoring Content in AEM as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,14 +9,14 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # Sites {#sites}
 
-+ [Sites AEM en tant que service cloud](/help/sites-cloud/home.md)
-+ [Modifications notables des sites AEM dans le service AEM Cloud](sites-cloud-changes.md)
++ [AEM Sites en tant que Cloud Service](/help/sites-cloud/home.md)
++ [Modifications notables d’AEM Sites dans AEM Cloud Service](sites-cloud-changes.md)
 + Création {#authoring}
    + Prise en main {#getting-started}
-      + [Guide de démarrage rapide sur la création de pages](authoring/getting-started/quick-start.md)
+      + [Guide rapide pour la création de pages](authoring/getting-started/quick-start.md)
       + [Concepts de création](authoring/getting-started/concepts.md)
       + [Manipulation de base](authoring/getting-started/basic-handling.md)
-      + [Rechercher](authoring/getting-started/search.md)
+      + [Recherche](authoring/getting-started/search.md)
       + [Configuration de l’environnement du compte](authoring/getting-started/account-environment.md)
       + [Votre boîte de réception](authoring/getting-started/inbox.md)
       + [Raccourcis clavier](authoring/getting-started/keyboard-shortcuts.md)
@@ -25,15 +25,15 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       + [Ajout d’annotations de page](authoring/fundamentals/annotations.md)
       + [Création et organisation des pages](authoring/fundamentals/organizing-pages.md)
       + [Modification du contenu de la page](authoring/fundamentals/editing-content.md)
-      + [Editeur de texte enrichi](authoring/fundamentals/rich-text-editor.md)
+      + [Éditeur de texte enrichi](authoring/fundamentals/rich-text-editor.md)
       + [Propriétés de page](authoring/fundamentals/page-properties.md)
       + [Publication de pages](authoring/fundamentals/publishing-pages.md)
       + [Fragments de contenu](authoring/fundamentals/content-fragments.md)
       + [Fragments d’expérience](authoring/fundamentals/experience-fragments.md)
-      + [Exporter au format CSV](authoring/fundamentals/csv-export.md)
+      + [Exportation au format CSV](authoring/fundamentals/csv-export.md)
       + [Composants](authoring/fundamentals/components.md)
       + [Création pour périphériques mobiles](authoring/fundamentals/mobile.md)
-      + [Contenu accessible (conformité WCAG 2.0)](authoring/fundamentals/accessible-content.md)
+      + [Création d’un contenu accessible (conformité WCAG 2.0)](authoring/fundamentals/accessible-content.md)
       + [Résolution des incidents](authoring/fundamentals/troubleshooting.md)
       + [Raccourcis clavier](authoring/fundamentals/keyboard-shortcuts.md)
    + Fonctions de création {#features}
@@ -45,9 +45,9 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       + [Mise en page réactive](authoring/features/responsive-layout.md)
       + [Utilisation des balises](authoring/features/tags.md)
    + Projets {#projects}
-      + [Utilisation de projets](authoring/projects/overview.md)
+      + [Utilisation des projets](authoring/projects/overview.md)
       + [Gestion de projets](authoring/projects/managing.md)
-      + [Utilisation de tâches](authoring/projects/tasks.md)
+      + [Utilisation des tâches](authoring/projects/tasks.md)
       + [Utilisation des workflows de projet](authoring/projects/workflows.md)
    + Lancements {#launches}
       + [Utilisation des lancements](authoring/launches/overview.md)
@@ -68,6 +68,6 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       + [Gestion des audiences](authoring/personalization/audiences.md)
       + [Création et gestion d’offres](authoring/personalization/offers.md)
       + [Compréhension de la segmentation](authoring/personalization/segmentation.md)
-+ Intégration d’AEM en tant que service Cloud {#integrations}
-   + [Intégration à Adobe Analytics](integrating/adobe-analytics.md)
++ Intégration d’AEM en tant que Cloud Service {#integrations}
+   + [Intégration à Adobe Analytics](integrating/adobe-analytics.md)
    + [Intégration à Adobe Target](integrating/adobe-target.md)
