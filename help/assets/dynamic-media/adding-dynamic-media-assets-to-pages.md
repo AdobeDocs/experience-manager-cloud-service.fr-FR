@@ -2,7 +2,7 @@
 title: Ajout de ressources Dynamic Media aux pages
 description: Comment ajouter des composants Dynamic Media à une page dans AEM
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: 454f4c9585b575ae0d904292ddd659148393db0b
 
 ---
 
@@ -199,6 +199,8 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
    Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360 ° ou de supports variés.
 
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
+
+* **[!UICONTROL Activer la correspondance]** des proportions: correspond au format de l&#39;image d&#39;origine lorsque vous sélectionnez un rendu de recadrage dynamique.
 
 * **[!UICONTROL Titre]**(Title): modifiez le titre de l&#39;image de recadrage dynamique.
 
