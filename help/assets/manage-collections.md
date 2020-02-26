@@ -1,20 +1,19 @@
 ---
-title: Gestion des collections de fichiers
-description: Présentation du concept de collection dans AEM Assets. Découvrez comment créer, gérer, modifier et partager des collections avec d’autres utilisateurs.
+title: Gestion des collections de ressources numériques
+description: Comprenez le concept de collecte dans Adobe Experience Manager Assets. Découvrez comment créer, gérer, modifier et partager des collections avec d’autres utilisateurs.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: 8aa693387183e65434da300ccf08f394b48ed9ba
 
 ---
 
 
 # Gestion des collections {#manage-collections}
 
-Une collection est un ensemble de ressources dans Adobe Experience Manager (AEM) Assets. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs.
+Une collection est un ensemble de ressources dans les ressources d’Adobe Experience Manager. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs. Le jeu peut être une collection statique ou dynamique basée sur les résultats de la recherche.
 
-* Une collection peut comporter des ressources provenant de différents emplacements.
-* Vous pouvez partager des ressources avec plusieurs utilisateurs dont les niveaux de privilèges sont différents (modification, affichage, etc.).
+Contrairement aux dossiers, une collection peut inclure des fichiers provenant de différents emplacements. Vous pouvez partager des ressources avec plusieurs utilisateurs dont les niveaux de privilèges sont différents (modification, affichage, etc.).
 
 Vous pouvez partager plusieurs collections avec un utilisateur. Chaque collection contient des références aux ressources. L’intégrité du référentiel des ressources est préservées dans les collections.
 
@@ -24,12 +23,11 @@ Selon la façon dont elles rassemblent les ressources, les collections sont des 
 
 * Collection dynamique qui comprend dynamiquement des ressources en fonction de critères de recherche.
 
-## Navigate the collections console {#navigate-the-collections-console}
+## Accès à la console des collections {#navigate-the-collections-console}
 
 Pour ouvrir la console **[!UICONTROL Collections]**, procédez comme suit :
 
-1. Appuyez ou cliquez sur le logo AEM.
-1. From the Navigation page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**. La console **[!UICONTROL Collections]** s’affiche.
+Pour ouvrir les **[!UICONTROL collections]**, appuyez ou cliquez sur le logo d’Experience Manager. From the navigation page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
 
 ## Création d’une collection {#create-a-collection}
 
@@ -42,36 +40,36 @@ Vous pouvez créer une collection avec des références statiques, par exemple, 
 1. Accédez à la console **[!UICONTROL Collections]**.
 1. From the toolbar, tap/click **[!UICONTROL Create]**.
 1. Sur la page **[!UICONTROL Créer une collection]**, saisissez un titre et une description facultative pour la collection.
-1. Ajoutez des membres à la collection et attribuez les autorisations appropriées. Vous pouvez également sélectionner **[!UICONTROL Collection publique]** pour permettre à tous les utilisateurs d’accéder à la collection.
+1. Ajoutez des membres à la collection et affectez les autorisations appropriées. Vous pouvez également sélectionner **[!UICONTROL Collection publique]** pour permettre à tous les utilisateurs d’accéder à la collection.
 
    >[!NOTE]
    >
    >Pour permettre aux membres de partager des collections avec d’autres utilisateurs, vous devez accorder les autorisations de lecture au groupe `dam-users` dans le chemin `home/users`. Give permission to the users at `/content/dam/collections` location to allow the users to view the Collections in pop up lists. Vous pouvez également intégrer l’utilisateur au groupe `dam-users`.
 
 1. (Facultatif) Ajoutez une image de miniature pour la collection.
-1. Tap/click **[!UICONTROL Create]**, and then tap/click **[!UICONTROL OK]** to close the dialog. Une collection avec le titre et les propriétés spécifiés s’ouvre dans la console Collections.
+1. Appuyez/cliquez sur **[!UICONTROL Créer]**, puis sur **[!UICONTROL OK]** pour fermer la boîte de dialogue. Une collection avec le titre et les propriétés spécifiés s’ouvre dans la console Collections.
 
    >[!NOTE]
    >
-   >AEM Assets vous permet de créer des tâches de révision pour une collection de la même façon que vous créez des tâches de révision pour un dossier de ressources.
+   >Experience Manager Assets vous permet de créer des tâches de révision pour une collection, comme vous le faites pour créer des tâches de révision pour un dossier de ressources.
 
    Pour ajouter des ressources à la collection, accédez à l’interface utilisateur Assets. For details, see [Add assets to a collection](#add-assets-to-a-collection).
 
-### Création de collections à l’aide de la zone de dépôt {#create-collections-using-dropzone}
+### Create collections using dropzone {#create-collections-using-dropzone}
 
 Vous pouvez faire glisser des ressources de l’interface utilisateur Assets jusqu’à une collection. Vous pouvez également créer une copie d’une collection et faire glisser les ressources jusqu’à celle-ci.
 
-1. Dans l’IU Assets, sélectionnez les ressources à ajouter à une collection.
+1. Dans l’interface utilisateur Ressources, sélectionnez les ressources à ajouter à une collection.
 1. Drag the assets to the **[!UICONTROL Drop in Collection]** zone. Vous pouvez également appuyer/cliquer sur l’icône **[!UICONTROL À la collection]** de la barre d’outils.
-1. In the **[!UICONTROL Add To Collection]** page, tap/click the **[!UICONTROL Create Collection]** icon from the toolbar. Si vous souhaitez ajouter les ressources à une collection existante, sélectionnez cette dernière dans la page Sélectionner, puis appuyez/cliquez sur **[!UICONTROL Ajouter]**. Par défaut, la collection mise le plus récemment à jour est sélectionnée.
-1. Dans la boîte de dialogue **[!UICONTROL Créer une collection]**, indiquez un nom pour la collection. Si vous souhaitez que la collection soit accessible à tous les utilisateurs, sélectionnez **[!UICONTROL Collection publique]**.
+1. Sur la page **[!UICONTROL Ajouter à la collection]**, appuyez/cliquez sur l’icône **[!UICONTROL Créer une collection]** de la barre d’outils. Si vous souhaitez ajouter les ressources à une collection existante, sélectionnez-la dans la page, puis appuyez/cliquez sur **[!UICONTROL Ajouter]**. Par défaut, la collection la plus récemment mise à jour est sélectionnée.
+1. Dans la boîte de dialogue **[!UICONTROL Créer une collection]**, indiquez le nom de la collection. Si vous souhaitez que la collection soit accessible à tous les utilisateurs, sélectionnez **[!UICONTROL Collection publique]**.
 1. Tap/click **[!UICONTROL Continue]** to create the collection.
 
 ### Création d’une collection dynamique {#create-a-smart-collection}
 
 Une collection dynamique utilise des critères de recherche pour rassembler les ressources de manière dynamique. Vous pouvez créer une collection dynamique en utilisant uniquement des fichiers ou en utilisant des fichiers et des dossiers.
 
-1. Navigate to the Assets UI, and tap/click the **[!UICONTROL Search]** icon.
+1. Accédez à l’interface utilisateur d’Assets, puis appuyez/cliquez sur l’icône **[!UICONTROL Rechercher]**.
 1. Saisissez le mot-clé dans la boîte de dialogue d’omni-recherche et appuyez sur entrée. Appuyez/cliquez sur l’icône GlobalNav pour afficher le panneau Filtres et pour appliquer un filtre de recherche à partir du panneau Recherche.
 1. Dans la liste **[!UICONTROL Fichiers et dossiers]**, sélectionnez **[!UICONTROL Fichiers]**.
 1. Appuyez/cliquez sur **[!UICONTROL Enregistrer la collection dynamique]**.
@@ -81,8 +79,8 @@ Une collection dynamique utilise des critères de recherche pour rassembler les
    >
    >If you select **[!UICONTROL Public]**, the smart collection becomes available to everyone with the Owner role after you create it. Si vous désactivez la case à cocher **[!UICONTROL Public]**, le groupe Utilisateurs DAM n’est plus associé à la collection dynamique.
 
-1. Tap/click **[!UICONTROL Save]** to create the smart collection, and then close the message box to complete the process. The new smart collection is also added to the **[!UICONTROL Saved Searches]** list.
-The label of the **[!UICONTROL Create Smart Selection]** button changes to **[!UICONTROL Edit Smart Selection]**. To edit the settings of the smart collection, select **[!UICONTROL Files]** from the **[!UICONTROL Files &amp; Folders]** list. Then, tap/click the **[!UICONTROL Edit Smart Selection]** button.
+1. Appuyez/cliquez sur **[!UICONTROL Enregistrer]** pour créer la collection dynamique, puis fermez la boîte de message pour terminer le processus. La nouvelle collection dynamique est également ajoutée à la liste **[!UICONTROL Recherches enregistrées]**.
+Le libellé du bouton **[!UICONTROL Créer une sélection intelligente]** devient **[!UICONTROL Modifier la sélection intelligente]**. Pour modifier les paramètres de la collecte dynamique, sélectionnez **[!UICONTROL Fichiers]** dans la liste **[!UICONTROL Fichiers et dossiers]**. Appuyez/cliquez ensuite sur le bouton **[!UICONTROL Modifier la sélection intelligente]**.
 
 ## Add assets to a collection {#add-assets-to-a-collection}
 
@@ -104,7 +102,7 @@ Smart collections are built by saving a search so you can alter their content by
 1. In the Assets user interface, tap/click the **[!UICONTROL Search]** icon from the toolbar.
 1. Avec le curseur dans la zone Omnisearch, appuyez sur la touche Entrée.
 1. Appuyez/cliquez sur l’icône de navigation globale pour afficher le panneau Filtres.
-1. Dans la liste **[!UICONTROL Recherches enregistrées]**, sélectionnez la collection dynamique que vous souhaitez modifier. Le panneau de recherche affiche les filtres configurés pour la recherche enregistrée.
+1. Dans la liste **[!UICONTROL Recherches enregistrées]**, sélectionnez la collection dynamique à modifier. Le panneau Rechercher affiche les filtres configurés pour la recherche enregistrée.
 1. Dans la liste **[!UICONTROL Fichiers et dossiers]**, sélectionnez **[!UICONTROL Fichiers]**.
 1. Modifiez un ou plusieurs filtres selon vos besoins. Tap/click **[!UICONTROL Edit Smart Collection]**. Vous pouvez également modifier le nom de la collection dynamique.
 1. Appuyez/cliquez sur **[!UICONTROL Enregistrer]**. La boîte de dialogue **[!UICONTROL Modif. collection dynam.]** s’affiche.
@@ -116,7 +114,7 @@ Smart collections are built by saving a search so you can alter their content by
 Les métadonnées de collection incluent les données sur la collection, notamment toute balise qui est ajoutée.
 
 1. From the Collections console, select a collection and tap/click the **[!UICONTROL Properties]** icon from the toolbar.
-1. In the **[!UICONTROL Collection Metadata]** page, view the collection metadata from the **[!UICONTROL Basic]** and **Advanced** tabs.
+1. Dans la page **[!UICONTROL Métadonnées de la collection]**, affichez les métadonnées de la collection à partir des onglets **[!UICONTROL Simple]** et **Avancé**.
 1. Modify the metadata, as necessary, and then tap/click **[!UICONTROL Save &amp; Close]** from the toolbar to save the changes.
 
 ### Edit collection metadata in bulk {#edit-collection-metadata-in-bulk}
@@ -125,13 +123,13 @@ Vous pouvez modifier simultanément les métadonnées de plusieurs collections. 
 
 1. Dans la console Collections, sélectionnez au moins deux collections dont vous souhaitez modifier les métadonnées.
 1. From the toolbar, tap/click the **[!UICONTROL Properties]** icon.
-1. In the **[!UICONTROL Collection Metadata]** page, edit the metadata under the **[!UICONTROL Basic]** and **[!UICONTROL Advanced]** tabs, as necessary.
+1. Dans la page **[!UICONTROL Métadonnées de collection]**, modifiez les métadonnées sous les onglets **[!UICONTROL Simple]** et **[!UICONTROL Avancé]**, si nécessaire.
 1. Tap/click **[!UICONTROL Save &amp; Close]** from the toolbar, and then close the confirmation dialog to complete the process.
-1. Pour ajouter les nouvelles métadonnées aux métadonnées existantes, sélectionnez **[!UICONTROL Mode d’ajout]**. Si vous ne sélectionnez pas cette option, les nouvelles métadonnées remplacent les métadonnées existantes dans les champs. Tap/click **[!UICONTROL Submit]**.
+1. Pour ajouter les nouvelles métadonnées avec les métadonnées existantes, sélectionnez le mode **[!UICONTROL Ajouter]**. Si vous ne sélectionnez pas cette option, les nouvelles métadonnées remplacent les métadonnées existantes dans les champs. Appuyez/cliquez sur **[!UICONTROL Envoyer]**.
 
    >[!NOTE]
    >
-   >Le mode d’ajout fonctionne uniquement avec les champs pouvant contenir plusieurs valeurs. Pour les champs ne pouvant contenir qu’une seule valeur, les nouvelles métadonnées ne sont pas ajoutées à la valeur existante dans le champ, même si vous sélectionnez **[!UICONTROL Mode d’ajout]**.
+   >Le mode d’ajout fonctionne uniquement pour les champs qui peuvent contenir plusieurs valeurs. Pour les champs qui ne peuvent contenir qu’une seule valeur, les nouvelles métadonnées ne sont pas ajoutées à la valeur existante dans le champ, même si vous sélectionnez le mode **[!UICONTROL Ajouter]**.
 
 ## Recherche {#searching}
 
@@ -154,7 +152,7 @@ Dans une collection, la recherche se limite aux ressources (ainsi qu’aux balis
 Vous pouvez modifier les paramètres d’une collection, tels que le titre et la description, ou ajouter des membres à une collection.
 
 1. Select a collection, and tap/click the **[!UICONTROL Settings]** icon in the toolbar. Vous pouvez également utiliser l’action rapide **[!UICONTROL Paramètres]** à partir de la miniature de la collection.
-1. Modify the collection settings in the **[!UICONTROL Collection Settings]** page. For example, modify the collection title, descriptions, members, and permissions as discussed in [Add collections](#create-a-collection).
+1. Modifiez les paramètres de la collection dans la page **[!UICONTROL Paramètres de la collection]**. Par exemple, modifiez le titre, les descriptions, les membres et les autorisations de la collection, comme expliqué dans la section [Ajouter des collections](#create-a-collection).
 1. Tap/click **[!UICONTROL Save]** to save the changes.
 
 ## Suppression d’une collection {#delete-a-collection}
@@ -208,7 +206,7 @@ To customize the metadata [!UICONTROL Properties] page, including adding, modify
 
 Vous pouvez ajouter une collection à une autre collection, créant ainsi une collection imbriquée.
 
-1. From the Collections console, select the desired collection or group of collections, and tap or click the **[!UICONTROL To Collection]** icon in the toolbar.
+1. From the Collections console, select the desired collection or group of collections, and tap or click **[!UICONTROL To Collection]** in the toolbar.
 1. Sur la page **[!UICONTROL Ajouter à la collection]**, sélectionnez la collection à laquelle vous souhaitez ajouter la collection.
 
    >[!NOTE]
@@ -223,9 +221,9 @@ Vous pouvez ajouter une collection à une autre collection, créant ainsi une co
 
 ## Recherches enregistrées {#saved-searches}
 
-Dans l’interface utilisateur Ressources, vous pouvez rechercher ou filtrer des ressources en fonction de certaines règles, critères de recherche ou facettes de recherche personnalisées. If you save these as **[!UICONTROL Saved Searches]**, you can access them later from the **[!UICONTROL Saved Searches]** list in the Filter panel. La création d’une recherche enregistrée entraîne celle d’une collection dynamique.
+L’interface utilisateur d’Assets vous permet de rechercher ou de filtrer des ressources en fonction de règles, de critères de recherche ou de facettes de recherche personnalisées. Si vous les enregistrez en tant que **[!UICONTROL recherches enregistrées]**, vous pourrez y accéder ultérieurement à partir de la liste **[!UICONTROL Recherches enregistrées]** du panneau Filtre. La création d’une recherche enregistrée crée également une collection dynamique.
 
-Les recherches enregistrées sont créées lorsque vous créez une collection dynamique. Les collections dynamiques sont automatiquement ajoutées à la liste Recherches **** enregistrées. The Saved Searches query for the collection is saved in the `dam:query` property in CRX at the relative location `/content/dam/collections/`.
+Les recherches enregistrées sont créées lorsque vous créez une collection dynamique. Les collections dynamiques sont automatiquement ajoutées à la liste **[!UICONTROL Recherches enregistrées]**. La requête Recherches enregistrées pour la collection est enregistrée dans la `dam:query` propriété CRXDE à l’emplacement relatif `/content/dam/collections/`.
 
 >[!NOTE]
 >
@@ -235,22 +233,23 @@ La modification des recherches enregistrées est identique à celle des collecti
 
 Pour supprimer des recherches enregistrées, procédez comme suit :
 
-1. Navigate to the Assets user interface, and tap/click **[!UICONTROL Search]** on the toolbar.
-1. Avec le curseur dans la zone Omnisearch, appuyez sur la touche Retour.
+1. Dans l’interface utilisateur Ressources, appuyez/cliquez sur l’icône de recherche dans la barre d’outils.
+
+1. Avec le curseur dans le champ Omnisearch, appuyez sur la touche Entrée.
 1. Appuyez ou cliquez sur l’icône de navigation globale afin d’afficher le panneau Filtres.
-1. From the **[!UICONTROL Saved Searches]** list, tap/click **[!UICONTROL Delete]** next to the smart collection you want to delete.
+1. Dans la liste **[!UICONTROL Recherches enregistrées]**, appuyez/cliquez sur **[!UICONTROL Supprimer]** en regard de la collecte dynamique à supprimer.
 1. In the dialog, tap/click **[!UICONTROL Delete]** to delete the saved search.
 
-## Run a workflow on a collection {#run-a-workflow-on-a-collection}
+## Execute a workflow on a collection {#run-a-workflow-on-a-collection}
 
 Vous pouvez exécuter un processus pour les ressources d’une collection. Si la collection contient des collections imbriquées, le processus s’exécute également sur les ressources de ces dernières. Toutefois, si la collection et les collections imbriquées contiennent des ressources en double, le processus ne s’exécute qu’une seule fois pour ces ressources.
 
 1. Dans la console Collections, sélectionnez une collection sur laquelle exécuter un processus.
-1. Tap/click the GlobalNav icon, and choose **Timeline** from the list.
-1. Dans la chronologie, cliquez ou appuyez sur l’icône en forme de signe d’insertion en bas, puis appuyez/cliquez sur **Démarrer le processus**.
-1. Dans la section **Démarrer le processus**, sélectionnez un modèle de processus dans la liste. Sélectionnez par exemple le modèle **Ressources de mise à jour de gestion des actifs numériques**.
-1. Saisissez un titre pour le workflow, puis appuyez/cliquez sur **Démarrer**.
-1. Dans la boîte de dialogue, appuyez/cliquez sur **Poursuivre**. Le processus s’exécute sur toutes les ressources de la collection.
+1. Tap/click the GlobalNav icon, and choose **[!UICONTROL Timeline]** from the list.
+1. Dans le journal, cliquez ou appuyez sur l’icône en forme de signe circonflexe située en bas, puis appuyez/cliquez sur **[!UICONTROL Démarrer le processus]**.
+1. Dans la section **[!UICONTROL Démarrer le processus]**, sélectionnez un modèle de processus dans la liste. Par exemple, sélectionnez le modèle **[!UICONTROL Ressources de mise à jour de DAM]**.
+1. Saisissez un titre pour le workflow, puis appuyez/cliquez sur **[!UICONTROL Démarrer]**.
+1. Dans la boîte de dialogue, appuyez/cliquez sur **[!UICONTROL Poursuivre]**. Le processus s’exécute sur toutes les ressources de la collection.
 
 >[!MORELIKETHIS]
 >
