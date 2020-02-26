@@ -2,18 +2,32 @@
 title: Configuration des formulaires de recherche
 description: Configuration de Search Forms pour Adobe Experience Manager en tant que service Cloud.
 translation-type: tm+mt
-source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
+source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
 
 ---
 
 
 # Configuration des formulaires de recherche {#configuring-search-forms}
 
-Utilisez **les formulaires** de recherche pour personnaliser les facettes et filtres de recherche disponibles dans les différents panneaux de recherche de l’environnement de création. La personnalisation de ces panneaux permet d’adapter la fonctionnalité de recherche à vos besoins.
+Adobe Experience Manager en tant que service Cloud est fourni avec un puissant mécanisme de [recherche](/help/sites-cloud/authoring/getting-started/search.md) .
 
-Une [plage de prédicats](#predicates-and-their-settings) prête à l’emploi est disponible.
+Il existe également un ensemble d’options prédéfinies pour vous aider à filtrer votre contenu. Elles contiennent des facettes prédéfinies, telles que Date **de** modification, État **de** publication ou État **** de la bibliothèque, pour vous aider à accéder rapidement aux ressources dont vous avez besoin.
 
-Vous pouvez [configurer les formulaires de recherche](#configuring-your-search-forms) utilisés dans différentes consoles et l’explorateur des ressources (lors de la modification des pages). Les [boîtes de dialogue de configuration de ces formulaires](#configuring-your-search-forms) sont accessibles en sélectionnant :
+![recherche et utilisation des filtres](assets/csf-usage.png)
+
+Ensemble, ces mesures visent à vous aider à localiser rapidement et facilement votre contenu à partir de :
+
+* [Rechercher et filtrer](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
+* [Sélecteur de rail](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+* Navigateur [des](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) ressources (lors de la modification des pages)
+
+>[!NOTE]
+>
+>Vous pouvez configurer le service [Content Search and Indexing](/help/operations/indexing.md) sous-jacent.
+
+A l’aide de **Search Forms**, vous pouvez personnaliser et étendre ces panneaux en fonction de vos besoins spécifiques.
+
+Les formulaires de **recherche** fournissent une sélection prête à l’emploi de [prédicats](#predicates-and-their-settings) que vous pouvez combiner et définir. Les [boîtes de dialogue de configuration de ces formulaires](#configuring-your-search-forms) sont accessibles en sélectionnant :
 
 * **Outils**
 
@@ -21,73 +35,48 @@ Vous pouvez [configurer les formulaires de recherche](#configuring-your-search-f
 
       * **Formulaires de recherche**
 
-Lorsque vous accédez à cette console pour la première fois, vous pouvez constater que toutes les configurations comportent un symbole de cadenas. Cela signifie que la configuration appropriée est la configuration par défaut (prête à l’emploi) et qu’elle ne peut pas être supprimée. Une fois que vous avez personnalisé la configuration, le cadenas disparaît sauf si vous [supprimez la configuration personnalisée](#deleting-a-configuration-to-reinstate-the-default), auquel cas la valeur par défaut (et le symbole de cadenas) est rétablie.
+## Formulaires par défaut {#default-forms}
+
+When you first access the **Search Forms** console you can see that all the configurations have a padlock symbol. Cela indique que la configuration correspondante est la configuration par défaut (prête à l’emploi) et ne peut pas être supprimée. Une fois que vous avez personnalisé et enregistré une configuration, le verrou disparaît. Il réapparaîtra lorsque vous [supprimerez votre configuration](#deleting-a-configuration-to-reinstate-the-default)personnalisée, auquel cas la valeur par défaut (et l’indicateur de cadenas) seront rétablies.
 
 ![configuration des formulaires de recherche présentation](assets/csf-overview.png)
-
-## Configurations {#configurations}
 
 Les configurations par défaut (classées par ordre alphabétique) disponibles sont les suivantes :
 
 * **Rail de recherche d’administrateurs de ressources:**
 
-   Cette configuration définit les options de recherche disponibles pour l’utilisateur lors de l’utilisation de la console Ressources.
-
 * **Éditeur de page (recherche de documents):**
-
-   Cette configuration définit les options disponibles lors de la recherche de documents dans l’explorateur de ressources (lors de la modification d’une page).
 
 * **Éditeur de page (recherche des fragments expérience):**
 
-   Cette configuration définit les options disponibles lors de la recherche de fragments d’expérience dans l’explorateur de ressources (lors de la modification d’une page).
-
 * **Éditeur de page (recherche d’images):**
-
-   Cette configuration définit les options disponibles lors de la recherche d’images dans l’explorateur de ressources (lors de la modification d’une page).
 
 * **Éditeur de page (recherche de manuscrits):**
 
-   Cette configuration définit les options disponibles lors de la recherche de manuscrits dans l’explorateur de ressources (lors de la modification d’une page).
-
 * **Éditeur de page (recherche de pages):**
-
-   Cette configuration définit les options disponibles lors de la recherche de pages dans l’explorateur d’actifs (lors de la modification d’une page).
 
 * **Éditeur de page (recherche de paragraphes):**
 
-   Cette configuration définit les options disponibles lors de la recherche de paragraphes dans l’explorateur d’actifs (lors de la modification d’une page).
-
 * **Éditeur de page (recherche de produits):**
-
-   Cette configuration définit les options disponibles lors de la recherche de produits dans l’explorateur de ressources (lors de la modification d’une page).
 
 * **Éditeur de page (recherche Scene7)**:
 
-   Cette configuration définit les options disponibles lors de la recherche de ressources Scene7 dans l’explorateur de ressources (lors de la modification d’une page).
-
 * **Éditeur de page (recherche de vidéos)**:
-
-   Cette configuration définit les options disponibles lors de la recherche de vidéos dans le navigateur de ressources (lors de la modification d’une page).
 
 * **Rail de recherche d’administrateurs de projets:**
 
-   Cette configuration définit les options de recherche disponibles pour l’utilisateur lors de la recherche de projets.
-
 * **Rail de recherche de traduction de projets:**
-
-   Cette configuration définit les options de recherche disponibles pour l’utilisateur lors de la recherche de traductions de projet.
 
 * **Rail de recherche d’administration de site**:
 
-   Cette configuration définit les options de recherche disponibles pour l&#39;utilisateur lors de l&#39;utilisation du rail de recherche de la console Sites.
-
 * **Rail de recherche d’administrateurs de fragments de code**:
-
-   Cette configuration définit les options de recherche disponibles pour l’utilisateur lors de la recherche d’extraits de code.
 
 * **Rail de recherche d’administrateurs Stock**:
 
-   Cette configuration définit les options de recherche disponibles pour l’utilisateur lors de la recherche de stock.
+>[!NOTE]
+>
+> Pour plus d’informations sur les formulaires de recherche liés aux ressources, voir [Ressources - Facettes de recherche.](/help/assets/search-facets.md)
+
 
 ## Prédicats et paramètres associés {#predicates-and-their-settings}
 
@@ -181,7 +170,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>État d’expiration</td>
-   <td>Recherche de fichiers en fonction de l’état d’expiration.</td>
+   <td>Rechercher des ressources en fonction de l’état d’expiration.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -191,7 +180,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Taille de fichier</td>
-   <td>Recherchez des fichiers en fonction de leur taille.</td>
+   <td>Filtrez les ressources en fonction de leur taille.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -205,7 +194,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
    <td>Recherchez des ressources en fonction du type de fichier/MIME.</td>
    <td>
     <ul>
-     <li>Libellé du champ</li>
+     <li>Libellé du champ</li> 
      <li>Nom de la propriété*</li>
      <li>Chemin de type MIME</li>
      <li>Description</li>
@@ -214,7 +203,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Texte intégral</td>
-   <td>Prédicat de recherche pour les recherches en texte intégral..</td>
+   <td>Prédicat de recherche pour les recherches en texte intégral.. Il est mappé avec l’opérateur "jcr:contains".</td>
    <td>
     <ul>
      <li>Espace réservé</li>
@@ -304,7 +293,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Page État</td>
-   <td>Rechercher des pages en fonction de leur état.</td>
+   <td>Filtrez les pages en fonction de leur état.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -315,7 +304,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Chemin</td>
-   <td>Rechercher des fichiers situés sous un chemin spécifique.</td>
+   <td>Filtrer selon un chemin spécifique. Vous pouvez définir plusieurs chemins comme options.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -325,7 +314,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Chemin Navigateur</td>
-   <td>Fournissez un navigateur de chemins pour la recherche.</td>
+   <td>Fournissez un navigateur de chemins pour effectuer une recherche sous un chemin racine prédéfini.</td>
    <td>
     <ul>
      <li>Espace réservé</li>
@@ -360,7 +349,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>État de publication</td>
-   <td>Recherche de fichiers en fonction de leur état de publication</td>
+   <td>Filtrez les ressources en fonction de leur état de publication.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -380,7 +369,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Évaluation</td>
-   <td>Recherchez des ressources en fonction de leur évaluation.<br /> </td>
+   <td>Rechercher des ressources en fonction de leur note moyenne.<br /> </td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -391,7 +380,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Date relative</td>
-   <td>Search assets based on the relative date of their creation<br /> </td>
+   <td>Filtrez les ressources en fonction de la date relative de leur création. Par exemple, il y a 1 semaine, 1 mois.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -497,23 +486,24 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
 -->
 
-<!--
 >[!NOTE]
 >
->* The common search predicates are defined in:
->  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+>* Les prédicats de recherche courants sont définis dans :
+   >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
 >
+Ces informations sont proposées à des fins de référence seulement. Vous ne devez pas apporter de modifications au répertoire `/libs`.
+
+<!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
 > `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * These are deprecated and only available for backward compatibility.
 >
->This information is for reference only, you must not make changes to `/libs`.
 -->
 
 ### Paramètres de prédicat {#predicate-settings}
 
-En fonction du prédicat, une sélection de paramètres est disponible pour la configuration :
+Selon le prédicat, une sélection de paramètres est disponible pour la configuration, notamment :
 
 * **Libellé du champ**
 
@@ -659,22 +649,19 @@ L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle util
 
    * `jcr:title` : libellé de champ à afficher dans le champ de recherche
    * `value` : valeur de la propriété à rechercher
+   ![Définition des attributs](assets/csf-options-predicate-01.png)
 
-<!--
-   ![chlimage_1-379](assets/chlimage_1-379.png)
--->
-
->[!NOTE]
->
->You ***must*** not change anything in the `/libs` path.
->
->This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
->
->La méthode recommandée pour la configuration et d’autres modifications est la suivante :
->
->1. Recreate the required item, as it exists in `/libs`, under `/apps`. Dans ce cas dans :
->1. `/libs/cq/gui/content/common/options/predicates`
->1. Make any changes within `/apps.`
+   >[!NOTE]
+   >
+   >You ***must*** not change anything in the `/libs` path.
+   >
+   >This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
+   >
+   >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
+   >
+   >1. Recreate the required item, as it exists in `/libs`, under `/apps`. Dans ce cas dans :
+   >1. `/libs/cq/gui/content/common/options/predicates`
+   >1. Make any changes within `/apps.`
 
 
 1. Ouvrez la console **Formulaires de recherche** et sélectionnez la configuration à mettre à jour. Par exemple, le **rail de recherche d’administrateurs de sites**.
@@ -695,16 +682,13 @@ L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle util
       Sélectionnez le chemin vers lequel vos options sont conservées. Par exemple :
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
-
-<!--
-   ![chlimage_1-380](assets/chlimage_1-380.png)
--->
+   ![Prédicats d’option](assets/csf-options-predicate-02.png)
 
 1. Sélectionnez **Terminé** pour enregistrer la configuration.
-1. Accédez à la console appropriée (dans cet exemple, **Sites**) et ouvrez le rail **Rechercher**. Les formulaires de recherche qui viennent d’être définis, ainsi que les différentes options, sont visibles. Sélectionnez l’option nécessaire pour afficher les résultats de la recherche :
+1. Accédez à la console appropriée (dans cet exemple, **Sites**) et ouvrez le rail **Rechercher**. Les formulaires de recherche qui viennent d’être définis, ainsi que les différentes options, sont visibles. Sélectionnez l’option requise pour afficher les résultats de la recherche.
 
 <!--
-   ![chlimage_1-381](assets/chlimage_1-381.png)
+   ![options being used](assets/csf-options-usage.png)
 -->
 
 ## Autorisations d’utilisateur {#user-permissions}
