@@ -2,7 +2,7 @@
 title: Présentation des types de programmes et de programmes
 description: Présentation des types de programmes et de programmes - Services Cloud
 translation-type: tm+mt
-source-git-commit: 1129188c06d893bbeb8f8861b6fae25052605f12
+source-git-commit: 14da491cf09ed46ea425a8d65670d8b851aef388
 
 ---
 
@@ -10,6 +10,10 @@ source-git-commit: 1129188c06d893bbeb8f8861b6fae25052605f12
 # Présentation des programmes et des types de programmes {#understanding-programs}
 
 Dans Cloud Manager, vous avez l’entité Tenant tout en haut qui peut comporter plusieurs programmes.  Chaque programme ne peut pas contenir plus d’un environnement de production et plusieurs environnements de non production.
+
+Le diagramme suivant montre la hiérarchie des entités dans Cloud Manager.
+
+![image](assets/program-types1.png)
 
 ## Types de programmes {#program-types}
 
