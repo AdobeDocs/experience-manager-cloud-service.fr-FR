@@ -2,12 +2,12 @@
 title: 'Ajout d’utilisateurs et de rôles : éléments requis'
 description: 'Ajout d’utilisateurs et de rôles : éléments requis'
 translation-type: tm+mt
-source-git-commit: 1d2d39ba3dd84b79420da94c985b00aa1bb5b806
+source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
 
 ---
 
 
-# Ajout d’utilisateurs et de rôles : éléments requis {#add-users-roles}
+# Ajout d’utilisateurs et de rôles {#add-users-roles}
 
 
 La plupart des fonctionnalités de [!UICONTROL Cloud Manager] nécessitent des autorisations spécifiques. Par exemple, seuls certains utilisateurs sont autorisés à définir les indicateurs de performance clés (IPC) d’un programme. Ces autorisations sont regroupées de manière logique en rôles.
