@@ -664,9 +664,7 @@ L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle util
    >1. Make any changes within `/apps.`
 
 
-1. Ouvrez la console **Formulaires de recherche** et sélectionnez la configuration à mettre à jour. Par exemple, le **rail de recherche d’administrateurs de sites**.
-
-   Ensuite, cliquez/appuyez sur l’icône **Modifier des formulaires de recherche**.
+1. Ouvrez la console **Formulaires de recherche** et sélectionnez la configuration à mettre à jour. Par exemple, le **rail de recherche d’administrateurs de sites**. Sélectionnez ensuite **Modifier**.
 
 1. En fonction de la configuration, ajoutez des **options** ou une **propriété d’options** à la configuration.
 1. Mettez à jour les champs, en particulier :
@@ -685,11 +683,10 @@ L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle util
    ![Prédicats d’option](assets/csf-options-predicate-02.png)
 
 1. Sélectionnez **Terminé** pour enregistrer la configuration.
-1. Accédez à la console appropriée (dans cet exemple, **Sites**) et ouvrez le rail **Rechercher**. Les formulaires de recherche qui viennent d’être définis, ainsi que les différentes options, sont visibles. Sélectionnez l’option requise pour afficher les résultats de la recherche.
+1. Navigate to the appropriate console (in this example, **Sites**) and open the **Search - Filters** rail. Les formulaires de recherche qui viennent d’être définis, ainsi que les différentes options, sont visibles. Sélectionnez l’option requise pour afficher les résultats de la recherche.
 
-<!--
-   ![options being used](assets/csf-options-usage.png)
--->
+   ![options utilisées](assets/csf-options-usage.png)
+
 
 ## Autorisations d’utilisateur {#user-permissions}
 
