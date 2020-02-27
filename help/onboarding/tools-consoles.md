@@ -15,7 +15,7 @@ Ces consoles sont accessibles à partir du [panneau Outils de la navigation glob
 
 >[!NOTE]
 >
->As the cards in the UI provide details about the purpose of each option, this table simply provides quick reference as to the location of features in the Tools panel.
+>Comme les cartes de l’interface fournissent des détails sur l’objectif de chaque option, ce tableau fournit simplement une référence rapide sur l’emplacement des fonctionnalités du panneau Outils.
 
 <table>
  <tbody>
