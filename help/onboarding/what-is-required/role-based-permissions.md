@@ -2,7 +2,7 @@
 title: Autorisations basées sur les rôles
 description: Autorisations basées sur les rôles
 translation-type: tm+mt
-source-git-commit: e59fe55c255d5239a561a9fb878faa81d17b4b48
+source-git-commit: 6cae9b2b719dab687f601a0596d37f99afded9ab
 
 ---
 
@@ -17,19 +17,29 @@ Chacun des rôles dispose d’autorisations spécifiques, de tâches préconfigu
 
 | Autorisation | Description | Propriétaire de l’entreprise | Responsable de déploiement | Responsable de programme | Développeur |
 |--- |--- |--- |--- |--- |--- |
-| Ajouter le programme | Ajouter un nouveau programme. | x | x | x | x |
-| Lecture de l’application | Lisez les IPC du programme. | x | x | x | x |
-| Écriture de l’application | Configuration ou modification du programme. | x |  |  |  |  |
-| Lecture de l’environnement | Voir les détails de l’environnement. | x | x | x | x |
-| Création de l’exécution | Démarrage du pipeline. | x | x | x |  |
-| Lecture de l’exécution | Voir le statut de l’exécution. | x | x | x | x |
-| Relancer l’exécution | Relance l’exécution lorsqu’elle est en pause. | x | x | x |  | x |
-| Approbation de l’exécution du déploiement en production | Fournit l’approbation de GoLive. | x | x | x |  |  |
-| Planning d’exécution du déploiement en production | Planning du déploiement en production. | x | x | x |
-| Annuler l’exécution | Annuler l’exécution actuelle. | x | x | x |  |
-| Contourner les échecs du point de contrôle de qualité | Approuver des échecs importants du point de contrôle qualité. | x | x | x |  |
-| Création d’un pipeline | Configurer/modifier un pipeline. |  | x |  |  |
-| Lecture d’un pipeline | Voir les détails du pipeline. | x | x | x | x |
-| Écriture d’un pipeline | Configurer/modifier un pipeline. |  | x |  |  |
-| Approbation de la modification d’un pipeline | Permet la modification de l’option Propriétaire de l’entreprise. |  | x |  |  |
-| Lecture de l’étape | Voir les résultats des mesures de qualité de l’étape. | x | x | x | x |
+| Créer un client | Créer un client. |  |  |  |  |
+| Mettre à jour le client | Mettre à jour le client. |  |  |  |  |
+| Ajouter le programme | Ajouter un nouveau programme. | x |  |  |  |
+| Créer un environnement | Créez Des Environnements Prod+Stage, Dev, Playground. | x | x |  |  |
+| Configuration des variables d’environnement | Configuration des variables d’environnement et des secrets. |  | x |  | x |
+| Ajouter ou supprimer un nom de domaine personnalisé, télécharger ou mettre à jour le certificat SSL | Ajouter/Supprimer un nom de domaine personnalisé, Télécharger/Mettre à jour le certificat SSL. | x | x |  |  |
+| Mettre à jour l’environnement | Mettez à jour les environnements Prod+Stage, Dev, Playground. | x | x |  |  |
+| Supprimer l’environnement | Supprimez Les Environnements Non-Prod, Dev, Playground. | x | x |  |  |
+| Supprimer l’environnement | Supprimer l’environnement Prod+Stage. |  |  |  |  |
+| Environnement d’hibernation | Hibernate Non-prod, Dev, Environnements Playground. | x | x |  |  |
+| Configuration du programme | Configuration du programme (y compris les IPC). | x |  |  |  |
+| Configuration du programme | Configuration des stratégies de mise à l’échelle (Général : configuration du nombre maximal de niveaux et de l’échelle horizontale à la demande : souscription). | x |  |  |  |
+| Configuration du programme | Obtenez L’Accès De Validation. |  | x |  | x |
+| Configuration du pipeline | Configuration ou modification du pipeline. |  | x |  |  |
+| Exécution du pipeline | Démarrez le pipeline. | x | x |  |  |
+| Exécution du pipeline | Rejeter/Approuver les échecs importants à trois niveaux. | x | x | x |  |
+| Exécution du pipeline | Fournit l’approbation de GoLive. | x | x | x |  |
+| Exécution du pipeline | Planning du déploiement en production. | x | x | x |  |
+| Exécution du pipeline | Reprendre le pipeline de production. |  |  |  |  |
+| Inscription (ou désinscription) à l&#39;approvisionnement | Ouverture à la demande Approvisionnement horizontal à partir de l’écran Configuration du programme. Configurez le nombre maximal de segments P-D &quot;autorisés&quot; pouvant être mis à l&#39;échelle horizontalement dans les environnements PROD et non PROD. | x |  |  |  |
+| Gérer l’environnement | Ajoutez le segment Publier-Répartiteur à partir de l’écran Gérer l’environnement. | x | x |  |  |  |
+| Mise à jour du produit | La carte de mise à jour AEM est visible et conduit l’utilisateur à l’Assistant de mise à jour. | x | x | x | x |
+| Mise à jour du produit | L&#39;Assistant Mise à jour de produit peut être activé. | x | x |  |  |
+| Mise à jour Push | Démarrez Push Update Pipeline. |  |  |  |  |
+| Générer un jeton d’accès personnel | Générer un jeton d’accès personnel. |  | x |  | x |
+
