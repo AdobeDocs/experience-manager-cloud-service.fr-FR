@@ -3,7 +3,7 @@ title: Découvrez comment les microservices de ressources peuvent traiter vos re
 description: Traitez vos ressources numériques à l’aide de microservices de traitement des ressources natifs et évolutifs en mode cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
 
 ---
 
@@ -26,7 +26,7 @@ Les microservices de ressources offrent un traitement évolutif et résilient de
 * Amélioration de la résilience du traitement des ressources. Les problèmes potentiels liés à la gestion de fichiers atypiques, tels que des fichiers corrompus ou des fichiers extrêmement volumineux, n’affectent plus les performances du déploiement.
 * Configuration simplifiée du traitement des ressources pour les administrateurs.
 * La configuration du traitement des ressources est gérée et gérée par Adobe afin de fournir la configuration la plus connue pour la gestion des rendus, des métadonnées et de l’extraction de texte pour divers types de fichiers.
-* Les services natifs de traitement de fichiers Adobe sont utilisés le cas échéant, ce qui permet une sortie haute fidélité et une gestion efficace des formats propriétaires Adobe.
+* Les services natifs de traitement de fichiers Adobe sont utilisés le cas échéant, ce qui permet une sortie haute fidélité et une gestion [efficace des formats](file-format-support.md)propriétaires Adobe.
 * Possibilité de configurer le processus de post-traitement pour ajouter des actions et des intégrations spécifiques à l’utilisateur.
 
 Les microservices de ressources permettent d’éviter la nécessité d’outils de rendu tiers (tels que ImageMagick) et de simplifier la configuration du système, tout en fournissant des fonctionnalités prêtes à l’emploi pour les types de fichiers courants.
@@ -82,7 +82,7 @@ Adobe Experience Manager peut être configuré pour déclencher automatiquement 
 
 >[!MORELIKETHIS]
 >
->* [Commencer à utiliser les microservices de ressources](asset-microservices-configure-and-use.md)
+>* [Prise en main des microservices de ressources](asset-microservices-configure-and-use.md)
 >* [Formats de fichiers pris en charge](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [Application de bureau AEM](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)
