@@ -9,7 +9,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # Sites {#sites}
 
-+ [AEM Sites en tant que Cloud Service](/help/sites-cloud/home.md)
++ [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
 + [Modifications notables d’AEM Sites dans AEM Cloud Service](sites-cloud-changes.md)
 + Création {#authoring}
    + Prise en main {#getting-started}
@@ -58,7 +58,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       + [Utilisation des workflows](authoring/workflows/overview.md)
       + [Application de workflows aux pages](authoring/workflows/applying.md)
       + [Participation aux workflows](authoring/workflows/participating.md)
-   + Personnalisation  {#personalization}
+   + Personnalisation   {#personalization}
       + [Présentation de la personnalisation](authoring/personalization/overview.md)
       + [Aperçu des pages à l’aide des données ContextHub](authoring/personalization/contexthub.md)
       + [Création de contenu ciblé en mode Ciblage](authoring/personalization/targeted-content.md)
@@ -68,6 +68,6 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       + [Gestion des audiences](authoring/personalization/audiences.md)
       + [Création et gestion d’offres](authoring/personalization/offers.md)
       + [Compréhension de la segmentation](authoring/personalization/segmentation.md)
-+ Intégration d’AEM en tant que Cloud Service {#integrations}
++ Intégration d’AEM as a Cloud Service {#integrations}
    + [Intégration à Adobe Analytics](integrating/adobe-analytics.md)
    + [Intégration à Adobe Target](integrating/adobe-target.md)
