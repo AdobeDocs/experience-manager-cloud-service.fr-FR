@@ -3,7 +3,7 @@ title: Utilisation des ressources connectées pour partager des ressources DAM d
 description: Utilisez les ressources disponibles sur un déploiement distant d’Adobe Experience Manager Assets lors de la création de vos pages Web sur un autre déploiement de site Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 45371da5617a0d87105dbf2f574de15bf0698d98
+source-git-commit: 70ac4bdc284f14012f2e0730f52fb932d04e2a0e
 
 ---
 
@@ -27,9 +27,9 @@ Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points 
 * utilisateurs faisant partie de groupes d’utilisateurs appropriés sur chaque déploiement.
 * Pour les types de déploiement d’Adobe Experience Manager, l’un des critères pris en charge est satisfait.
 
-   |  | Sites AEM en tant que service cloud | Sites AEM 6.5 sur AMS | Sites AEM 6.5 sur site |
+   |  | AEM Sites as a Cloud Service | Sites AEM 6.5 sur AMS | Sites AEM 6.5 sur site |
    |---|---|---|---|
-   | **AEM Assets as a Cloud Service** | Pris en charge | Pris en charge | Pris en charge |
+   | **AEM Assets as a Cloud Service** | Pris en charge | Pris en charge | Pris en charge |
    | **Ressources AEM 6.5 sur AMS** | pas de prise en charge | Pris en charge | Pris en charge |
    | **Ressources AEM 6.5 sur site** | pas de prise en charge | pas de prise en charge | pas de prise en charge |
 
@@ -37,14 +37,10 @@ Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points 
 
 Les auteurs peuvent rechercher des images et les types de documents suivants dans l’Outil de recherche de contenu et utiliser les ressources recherchées dans l’éditeur de page. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components.
 
-* Microsoft Word (DOC et DOCX)
-* Microsoft Excel (XLS et XLSX)
-* Microsoft PowerPoint (PPT et PPTX)
-* Adobe PDF (PDF)
-* OpenDocument Text (ODT)
-* Rich Text Format (RTF)
-* Texte brut (TXT)
-* Pages Web (HTML)
+La liste des formats pris en charge est la suivante :
+
+* **Formats** d’image : Les formats d’image pris en charge par le composant [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Image sont pris en charge. Les composants de média dynamique ne sont pas pris en charge.
+* **Formats** de document : Voir Formats [de document pris en charge par les ressources](file-format-support.md#supported-document-formats)connectées.
 
 ### Utilisateurs et groupes concernés {#users-and-groups-involved}
 
