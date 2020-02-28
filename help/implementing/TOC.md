@@ -1,7 +1,7 @@
 ---
 sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementing for AEM as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 080508907f27533a6e749c9ab7b493f13b5bd99f
 
 ---
@@ -9,7 +9,7 @@ source-git-commit: 080508907f27533a6e749c9ab7b493f13b5bd99f
 
 # Implémentation {#implementing}
 
-+ [Implémentation d’applications pour AEM en tant que Cloud Service](/help/implementing/home.md)
++ [Implémentation d’applications pour AEM as a Cloud Service](/help/implementing/home.md)
 + Utilisation de Cloud Manager {#using-cloud-manager}
    + [Gestion des environnements](cloud-manager/manage-environments.md)
    + [Configuration de votre pipeline CI/CD](cloud-manager/configure-pipeline.md)
@@ -21,19 +21,19 @@ source-git-commit: 080508907f27533a6e749c9ab7b493f13b5bd99f
    + [Gestion des versions du projet Maven](cloud-manager/project-version-handling.md)
    + [Accès à Git](cloud-manager/accessing-git.md)
    + [Intégration de Git à Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
-+ Développement pour AEM en tant que Cloud Service {#developing}
++ Développement pour AEM as a Cloud Service {#developing}
    + [Structure d’un module de projet AEM](developing/introduction/aem-project-content-package-structure.md)
    + [Développement d’un module de structure de référentiel](developing/introduction/repository-structure-package.md)
-   + [AEM en tant que SDK de service cloud](developing/introduction/aem-as-a-cloud-service-sdk.md)
+   + [SDK AEM as a Cloud Service](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [Recherche et indexation de contenu](/help/operations/indexing.md)
-   + [Conseils de développement pour AEM en tant que Cloud Service](developing/introduction/development-guidelines.md)
+   + [Conseils de développement pour AEM as a Cloud Service](developing/introduction/development-guidelines.md)
    + [Prise en main du développement d’AEM Sites – Tutoriel WKND](developing/introduction/develop-wknd-tutorial.md)
-   + [API d’AEM en tant que Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [API d’AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Présentation des résultats de tests](/help/implementing/developing/introduction/understand-test-results.md)
-+ Configuring and Extending AEM as a Cloud Service {#configuring-and-extending}
++ Configuration et extension d’AEM as a Cloud Service {#configuring-and-extending}
    + [Extension des fragments d’expérience](developing/extending/experience-fragments.md)
    + [Configuration des formulaires de recherche](developing/extending/search-forms.md)
-+ Déploiement sur AEM en tant que Cloud Service {#deploying}
-   + [Déploiement sur AEM en tant que Cloud Service](deploying/overview.md)
++ Déploiement sur AEM as a Cloud Service {#deploying}
+   + [Déploiement sur AEM as a Cloud Service](deploying/overview.md)
 + Dispatcher en mode cloud {#dispatcher}
    + [Dispatcher en mode cloud](dispatcher/overview.md)
