@@ -3,26 +3,18 @@ title: Formats de fichiers et types MIME pris en charge par Experience Manager A
 description: Formats de fichier et types MIME pris en charge par Experience Manager Assets en tant que service Cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
 
 ---
 
 
 # Assets supported file formats {#supported-file-formats}
 
-Adobe Experience Manager as a Cloud Service prend en charge les fonctionnalités de base de gestion de contenu (stockage, gestion des métadonnées en ligne, gestion des versions, téléchargement et téléchargement, etc.) pour tout fichier binaire, quel que soit son format. En outre, pour les formats de fichier courants, tels que image, propriétaire Adobe, document et vidéo, il offre une prise en charge étendue pour générer des aperçus et des rendus et extraire des métadonnées et du texte pour l’indexation en texte intégral. Cette prise en charge étendue est assurée à l’aide de microservices [de](asset-microservices-configure-and-use.md)ressources.
+Adobe Experience Manager en tant que service Cloud prend en charge les fonctionnalités de base de la gestion de contenu — stockage, gestion des métadonnées en ligne, gestion des versions, téléchargement et téléchargement, etc. — pour tout fichier binaire, quel que soit son format. Adobe Experience Manager Assets prend en charge un large éventail de formats de fichier et chaque fonctionnalité de produit prend en charge différents formats.
 
-Voici quelques points saillants des formats de fichier avec prise en charge étendue :
+En outre, Experience Manager Assets offre une prise en charge étendue pour générer des aperçus et des rendus et extraire des métadonnées et du texte pour l’indexation en texte intégral. Cette prise en charge étendue est assurée à l’aide de microservices [de](asset-microservices-configure-and-use.md)ressources.
 
-* Formats [de fichiers](#adobe-formats) Adobe clés générés par les applications et services Adobe, notamment Adobe Photoshop, InDesign, Illustrator, XD, Dimension et Acrobat / PDF.
-* Formats de fichier [d’imagerie clés](#image-formats)
-* [Formats](#camera-raw-formats) de fichiers Camera Raw pour un large éventail d’appareils photo, dont Canon, Nikon, Fujifilm, Olympus et d’autres fabricants (optimisés par Adobe Camera Raw)
-* Formats [de](#document-formats)document courants, y compris les formats [Microsoft Office](#microsoft-office-formats) (Word, Excel, PowerPoint) et [Open Document](#opendocument-formats)
-* Large éventail de formats [vidéo](#video-formats) et [audio](#audio-formats)
-
-## Légende pour des informations d&#39;assistance détaillées {#legend-for-detailed-support-information}
-
-La légende suivante décrit le niveau de prise en charge d’une fonction :
+La légende suivante décrit le niveau de prise en charge.
 
 | Niveau de prise en charge | Description |
 | ------------------------------------------------------------ | --------------------------- |
@@ -30,7 +22,17 @@ La légende suivante décrit le niveau de prise en charge d’une fonction :
 | * | Voir les remarques ci-dessous. |
 | - | Non applicable |
 
-Les colonnes des tableaux de prise en charge fournissent les informations suivantes :
+## Conversion de ressources à l’aide de microservices de ressources {#asset-microservices-supported-formats}
+
+En voici un aperçu :
+
+* Formats [de fichiers](#adobe-formats) Adobe clés générés par les applications et services Adobe, notamment Adobe Photoshop, InDesign, Illustrator, XD, Dimension et Acrobat / PDF.
+* Formats [de fichiers](#image-formats)d’imagerie clés.
+* [Formats](#camera-raw-formats) de fichiers Camera Raw pour un large éventail d’appareils photo, dont Canon, Nikon, Fujifilm, Olympus et d’autres fabricants (optimisés par Adobe Camera Raw).
+* Formats [de](#document-formats)document courants, y compris les formats [Microsoft Office](#microsoft-office-formats) (Word, Excel, PowerPoint) et [Open Document](#opendocument-formats) .
+* Large éventail de formats [vidéo](#video-formats) et [audio.](#audio-formats)
+
+Les colonnes des tableaux suivants fournissent les informations suivantes :
 
 | Colonne | Description |
 | ------------ | --------------------------------------------------------------- |
@@ -42,11 +44,7 @@ Les colonnes des tableaux de prise en charge fournissent les informations suivan
 | TXT | Extraction de texte du document pour indexation |
 | Largeur/Hauteur | Prise en charge de la définition de la largeur et de la hauteur d’un rendu (pixels) |
 
-<!-- Adding this checkmark icon ✓ does not look good in table. The icon's shade and size has to be toned down for good readability and less clutter.
-@gklebus: I suggest using a checkmark character, either U+2713 ✓ CHECK MARK or U+2714 ✔ HEAVY CHECK MARK
--->
-
-## Formats Adobe {#adobe-formats}
+### Formats Adobe {#adobe-formats}
 
 | Format de fichier | GIF | JPEG | PNG | TXT | XMP | Largeur/Hauteur |
 | ----------- | --- | ---- | --- | --- | --- | ------------ |
@@ -64,7 +62,7 @@ Les colonnes des tableaux de prise en charge fournissent les informations suivan
 
 \* Pour les fichiers INDD (InDesign), la taille du rendu est déterminée par l’aperçu incorporé dans le fichier INDD. Configurez les préférences dans InDesign (**[!UICONTROL Préférences > Gestion des fichiers > Toujours enregistrer les images d’aperçu avec les documents, Taille]** d’aperçu) pour incorporer un rendu plus grand.
 
-## Formats d’image {#image-formats}
+### Formats d’image {#image-formats}
 
 | Format de fichier | GIF | JPEG | PNG | XMP | Largeur/Hauteur |
 | ----------- | --- | ---- | --- | --- | ------------ |
@@ -76,8 +74,7 @@ Les colonnes des tableaux de prise en charge fournissent les informations suivan
 | SVG | - | - | - | ✓ | - |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-
-## Format Camera RAW {#camera-raw-formats}
+### Format Camera RAW {#camera-raw-formats}
 
 | Format de fichier | GIF | JPEG | PNG | XMP | Largeur/Hauteur |
 | ----------- | --- | ---- | --- | --- | ------------ |
@@ -109,7 +106,7 @@ Les colonnes des tableaux de prise en charge fournissent les informations suivan
 | SRW | ✓ | ✓ | ✓ | ✓ | ✓ |
 | X3F | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## Formats de document {#document-formats}
+### Formats de document {#document-formats}
 
 | Format de fichier | TXT | XMP |
 | ----------- | --- | --- |
@@ -120,7 +117,7 @@ Les colonnes des tableaux de prise en charge fournissent les informations suivan
 | TEXTE | ✓ | - |
 | XML | ✓ | - |
 
-## Formats Microsoft Office {#microsoft-office-formats}
+### Formats Microsoft Office {#microsoft-office-formats}
 
 | Format de fichier | GIF | JPEG | PNG | TEXTE | Largeur/Hauteur |
 | ----------- | --- | ---- | --- | ---- | ------------ |
@@ -128,7 +125,7 @@ Les colonnes des tableaux de prise en charge fournissent les informations suivan
 | PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## Formats OpenDocument {#opendocument-formats}
+### Formats OpenDocument {#opendocument-formats}
 
 | Format de fichier | GIF | JPEG | PNG | TEXTE | Hauteur |
 | ----------- | --- | ---- | --- | ---- | ------ |
@@ -139,7 +136,7 @@ Les colonnes des tableaux de prise en charge fournissent les informations suivan
 | ODS | ✓ | ✓ | ✓ | ✓ | ✓ |
 | ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## Formats vidéo {#video-formats}
+### Formats vidéo {#video-formats}
 
 | Format de fichier | GIF | JPEG | PNG | XMP | Largeur/Hauteur |
 | ----------- | --- | ---- | --- | --- | ------------ |
@@ -166,15 +163,27 @@ Les colonnes des tableaux de prise en charge fournissent les informations suivan
 | WEBM | ✓ | ✓ | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## Formats audio {#audio-formats}
+### Formats audio {#audio-formats}
 
 Assets as a Cloud Service fournit une prise en charge XMP des formats audio suivants : AIF, ASF, M4A, MP3, WAV et WMA.
 
-<!-- TBD: Some items from https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-formats.html#SupportedinputvideoformatsforDynamicMediatranscoding may be applicable.
+## Formats de document pris en charge {#doc-formats}
 
-Bring more parity with https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-formats.html#SupportedMIMEtypes.
-https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-formats.html#Supportedmultimediaformats
--->
+Les formats de document pris en charge pour les fonctionnalités de gestion des ressources sont les suivants :
+
+| Format de fichier | [Ressources connectées](use-assets-across-connected-assets-instances.md) |
+|---|---|
+| DOC | ✓ |
+| DOCX | ✓ |
+| ODT | ✓ |
+| PDF | ✓ |
+| HTML | ✓ |
+| RTF | ✓ |
+| TXT | ✓ |
+| XLS | ✓ |
+| XLSX | ✓ |
+| PPT | ✓ |
+| PPTX | ✓ |
 
 >[!MORELIKETHIS]
 >
