@@ -3,7 +3,7 @@ title: Référence des schémas de métadonnées
 description: 'Découvrez les conventions standard permettant de décrire les métadonnées des ressources, y compris Dublin Core, IPTC et d’autres schémas de métadonnées. '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -48,7 +48,7 @@ Outre le DCMES, il existe d’autres éléments de métadonnées créés par le 
   </tr>
   <tr>
    <td>format</td> 
-   <td>Format de fichier, support physique ou dimensions de la ressource. AEM uses <code>dc:format</code> to denote the mime-type of the asset.<br /> </td> 
+   <td>Format de fichier, support physique ou dimensions de la ressource. AEM utilise <code>dc:format</code> pour indiquer le type MIME de la ressource.<br /> </td> 
   </tr>
   <tr>
    <td>formulaire</td> 
