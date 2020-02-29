@@ -3,12 +3,12 @@ title: Configuration et utilisation des microservices de ressources pour le trai
 description: Découvrez comment configurer et utiliser les microservices de ressources natifs du cloud pour traiter les ressources à l’échelle.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
 
-# Commencer à utiliser les microservices de ressources {#get-started-using-asset-microservices}
+# Prise en main des microservices de ressources {#get-started-using-asset-microservices}
 
 <!--
 
@@ -114,7 +114,7 @@ Une fois des profils de traitement supplémentaires créés, ils doivent être a
 Il existe deux méthodes pour que les profils de traitement soient appliqués aux dossiers :
 
 * Les administrateurs peuvent sélectionner une définition de profil de traitement dans **[!UICONTROL Outils > Ressources > Profils]** de traitement et utiliser l’action **[!UICONTROL Appliquer le profil au dossier(s)]** . Il ouvre un navigateur de contenu qui vous permet de naviguer vers des dossiers spécifiques, de les sélectionner et de confirmer l’application du profil.
-* Les utilisateurs peuvent sélectionner un dossier dans l’interface utilisateur Ressources, utiliser l’action **[!UICONTROL Propriétés]** pour ouvrir l’écran des propriétés du dossier, cliquer sur l’onglet Profils **[!UICONTROL de]** traitement et, dans la liste déroulante, sélectionner le profil de traitement approprié pour ce dossier. Le choix sera enregistré lors de l’action **[!UICONTROL Enregistrer et fermer]** .
+* Les utilisateurs peuvent sélectionner un dossier dans l’interface utilisateur Ressources, utiliser l’action **[!UICONTROL Propriétés]** pour ouvrir l’écran des propriétés du dossier, cliquer sur l’onglet **[!UICONTROL Profils de traitement]** et, dans la liste déroulante, sélectionner le profil de traitement approprié pour ce dossier. Le choix sera enregistré lors de l’action **[!UICONTROL Enregistrer et fermer]**.
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Après l’application d’un profil de traitement à un dossier, toutes les nou
 >
 >Lorsque des fichiers sont téléchargés dans un dossier, Experience Manager recherche un profil de traitement dans les propriétés du dossier contenant. Si aucun profil n’est appliqué, il remonte dans l’arborescence de dossiers jusqu’à ce qu’il trouve un profil de traitement appliqué et l’utilise pour le fichier. Cela signifie qu’un profil de traitement appliqué à un dossier fonctionne pour l’arborescence entière, mais qu’il peut être remplacé par un autre profil appliqué à un sous-dossier.
 
-Les utilisateurs peuvent vérifier que le traitement a eu lieu en ouvrant une ressource nouvellement chargée pour laquelle le traitement est terminé, en ouvrant l’aperçu de la ressource et en cliquant sur la vue **[!UICONTROL Rendus]** du rail de gauche. Les rendus spécifiques dans le profil de traitement, pour lesquels le type de ressource spécifique correspond aux règles d’inclusion du type MIME, doivent être visibles et accessibles.
+Les utilisateurs peuvent vérifier que le traitement a eu lieu en ouvrant une ressource nouvellement chargée pour laquelle le traitement est terminé, en ouvrant l’aperçu de la ressource et en cliquant sur la vue **[!UICONTROL Rendus]** du rail de gauche. Les rendus spécifiques dans le profil de traitement, pour lesquels le type de ressource spécifique correspond aux règles d’inclusion de type MIME, doivent être visibles et accessibles.
 
 ![additional-renditions](assets/renditions-additional-renditions.png)*Figure : Exemple de deux rendus supplémentaires générés par un profil de traitement appliqué au dossier parent*
 
