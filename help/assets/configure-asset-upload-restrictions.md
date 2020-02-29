@@ -3,7 +3,7 @@ title: Configuration des restrictions de chargement des ressources
 description: Découvrez comment configurer Adobe Experience Manager (AEM) Assets de sorte que le type de ressources (fichiers) que les utilisateurs peuvent télécharger soit limité.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -17,9 +17,8 @@ Vous pouvez configurer Adobe Experience Manager (AEM) Assets de sorte que le 
 
    ![chlimage_1-378](assets/chlimage_1-378.png)
 
-1. To restrict users to upload files of certain MIME types only, unselect the **[!UICONTROL llow all MIME]** option and specify allowed MIME types in the **[!UICONTROL Allowed Asset MIMEs (regex)]** fields using regular expressions.
+1. Pour empêcher les utilisateurs de charger des fichiers de certains types MIME uniquement, désélectionnez l’option **[!UICONTROL Autoriser tous les types MIME]** et spécifiez les types MIME autorisés dans les champs **[!UICONTROL Types MIME autorisés pour les ressources (regex)]** à l’aide d’expressions régulières.
 
    ![chlimage_1-379](assets/chlimage_1-379.png)
 
-1. Click/tap **[!UICONTROL Save]** to save the changes. Si vous spécifiez des chaînes MIME pour les types MIME autorisés, l’opération de chargement échoue pour toute ressource de type MIME qui ne correspond pas aux chaînes MIME configurées dans ces champs.
-
+1. Cliquez/appuyez sur **[!UICONTROL Enregistrer]** pour enregistrer les modifications. Si vous spécifiez des chaînes MIME pour les types MIME autorisés, l’opération de transfert échoue pour tout fichier dont le type MIME ne correspond pas aux chaînes MIME configurées dans ces champs.
