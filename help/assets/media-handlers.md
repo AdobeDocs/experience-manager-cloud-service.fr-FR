@@ -3,7 +3,7 @@ title: Traiter les fichiers à l’aide des gestionnaires de médias et des proc
 description: En savoir plus sur les différents gestionnaires de médias et sur la façon de les utiliser dans les processus afin d’effectuer des tâches sur les ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -116,7 +116,7 @@ AEM comporte des processus par défaut pour le traitement des ressources. To vie
 
 Les processus existants peuvent être étendus et de nouveaux processus peuvent être créés pour gérer les ressources en fonction d’exigences spécifiques.
 
-The following example shows how to enhance the **[!UICONTROL AEM Assets Synchronization]** workflow so that sub-assets are generated for all assets except PDF documents.
+L’exemple suivant montre comment améliorer le processus de **[!UICONTROL synchronisation AEM Assets]** afin que des sous-ressources soient générées pour toutes les ressources, à l’exception des documents PDF.
 
 ### Désactivation/activation d’un gestionnaire de médias {#disabling-enabling-a-media-handler}
 
@@ -151,10 +151,10 @@ Voici un exemple de modèle :
 
 L’interface et les classes sont les suivantes :
 
-* `com.day.cq.dam.api.handler.AssetHandler` interface : Cette interface décrit le service qui ajoute la prise en charge de types MIME spécifiques. L’ajout d’un nouveau type MIME requiert l’implémentation de cette interface. L’interface contient des méthodes pour importer et exporter les documents spécifiques, pour créer des miniatures et extraire des métadonnées.
+* `com.day.cq.dam.api.handler.AssetHandler` interface : Cette interface décrit le service qui ajoute la prise en charge de types MIME spécifiques. L’ajout d’un nouveau type MIME nécessite l’implémentation de cette interface. L’interface contient des méthodes pour importer et exporter les documents spécifiques, pour créer des miniatures et extraire des métadonnées.
 * `com.day.cq.dam.core.AbstractAssetHandler` class : Cette classe sert de base à toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités courantes utilisées.
-* `com.day.cq.dam.core.AbstractSubAssetHandler` catégorie:
-   * Cette classe sert de base à toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités utilisées communes ainsi que des fonctionnalités utilisées courantes pour l’extraction de sous-ressources.
+* Classe `com.day.cq.dam.core.AbstractSubAssetHandler` :
+   * Cette classe sert de base à toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités couramment utilisées ainsi que des fonctionnalités couramment utilisées pour l’extraction de sous-ressources.
    * La meilleure façon de démarrer une implémentation est d’hériter d’une implémentation abstraite fournie qui prend en charge l’essentiel du traitement et qui fournit un comportement par défaut raisonnable : à savoir la classe com.day.cq.dam.core.AbstractAssetHandler.
    * Cette classe fournit déjà un descripteur de service abstrait. Donc, si vous héritez de cette classe et que vous utilisez le plug-in maven-sling-plugin, assurez-vous que vous avez défini l’indicateur inherit sur true.
 
@@ -170,7 +170,7 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component hérite=&quot
 
 L’interface et les classes sont les suivantes :
 
-* `com.day.cq.dam.api.handler.AssetHandler` interface : Cette interface décrit le service qui ajoute la prise en charge de types MIME spécifiques. L’ajout d’un nouveau type MIME requiert l’implémentation de cette interface. L’interface contient des méthodes pour importer et exporter les documents spécifiques, pour créer des miniatures et extraire des métadonnées.
+* `com.day.cq.dam.api.handler.AssetHandler` interface : Cette interface décrit le service qui ajoute la prise en charge de types MIME spécifiques. L’ajout d’un nouveau type MIME nécessite l’implémentation de cette interface. L’interface contient des méthodes pour importer et exporter les documents spécifiques, pour créer des miniatures et extraire des métadonnées.
 * `com.day.cq.dam.core.AbstractAssetHandler` class : Cette classe sert de base à toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités courantes utilisées.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` class :Cette classe sert de base à toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités utilisées communes ainsi que des fonctionnalités utilisées courantes pour l’extraction de sous-ressources.
 
@@ -391,7 +391,7 @@ Les conversions suivantes peuvent être automatiquement exécutées et stockées
 
 The `CommandLineProcess` process performs the following operations in the order they are listed:
 
-* Filtre le fichier en fonction des types MIME indiqués, le cas échéant.
+* Filtre le fichier selon des types MIME spécifiques, le cas échéant.
 * Crée un répertoire temporaire sur le disque hébergeant le serveur AEM.
 * Envoie le fichier d’origine en continu vers le répertoire temporaire.
 * Exécute la commande définie par les arguments de l’étape. La commande est en cours d’exécution dans le répertoire temporaire avec les autorisations de l’utilisateur exécutant AEM.
@@ -421,7 +421,7 @@ Installez d’abord ImageMagick sur le disque hébergeant le serveur AEM :
 
    Une image inversée est ajoutée au répertoire.
 
-Then, add the command line process step to the **[!UICONTROL DAM Update Asset]** workflow:
+Ajoutez ensuite l’étape de processus de ligne de commande au processus **[!UICONTROL Ressources de mise à jour de DAM]** :
 
 1. Go to the **[!UICONTROL Workflow]** console.
 1. In the **[!UICONTROL Models]** tab, edit the **[!UICONTROL DAM Update Asset]** model.
@@ -441,7 +441,7 @@ Pour tester le flux de travaux modifié, ajoutez une ressource à `/content/dam`
 
 #### Configuration de l’étape du processus CommandLineProcess {#configuring-the-commandlineprocess-process-step}
 
-Cette section décrit la procédure à suivre pour définir les **Arguments du processus** de **CommandLineProcess**.
+Cette section décrit la manière de définir les **arguments du processus** de **CommandLineProcess**.
 
 The values of the **Process Arguments** must be separated by a comma and must not start with a whitespace.
 
@@ -453,7 +453,7 @@ The values of the **Process Arguments** must be separated by a comma and must no
   </tr>
   <tr>
    <td> mime:&lt;mime-type&gt;</td>
-   <td><p>Argument facultatif. Le processus est appliqué si la ressource a le même type MIME que celui de l’argument.</p> <p>Plusieurs types MIME peuvent être définis.</p> </td>
+   <td><p>Argument facultatif. Le processus est appliqué si le fichier a le même type MIME que celui de l’argument.</p> <p>Plusieurs types MIME peuvent être définis.</p> </td>
   </tr>
   <tr>
    <td> tn:&lt;largeur&gt;:&lt;hauteur&gt;</td>
@@ -461,7 +461,7 @@ The values of the **Process Arguments** must be separated by a comma and must no
   </tr>
   <tr>
    <td> cmd : &lt;command&gt;</td>
-   <td><p>Définit la commande qui sera exécutée. La syntaxe dépend de l’outil de ligne de commande.</p> <p>Une seule commande peut être définie.</p> <p>Vous pouvez utiliser les variables suivantes pour créer la commande :<br/></p> <p><code>${filename}</code>: nom du fichier d’entrée, par exemple original.jpg<br/><code>${file}</code>: nom complet du chemin d’accès du fichier d’entrée, par ex. /tmp/cqdam0816.tmp/original.jpg<br/><code>${directory}</code>: du fichier d’entrée, par ex. /tmp/cqdam0816.tmp.<br/> <code>${basename}</code>: nom du fichier d’entrée sans son extension, par exemple original<br/><code>${extension}</code>: extension du fichier d’entrée, par exemple jpg<br/></p></td>
+   <td><p>Définit la commande qui sera exécutée. La syntaxe dépend de l’outil de ligne de commande.</p> <p>Une seule commande peut être définie.</p> <p>Vous pouvez utiliser les variables suivantes pour créer la commande :<br/></p> <p><code>${filename}</code>: nom du fichier d’entrée, par exemple `original.jpg`<br/><code>${file}</code>: nom du chemin d’accès complet du fichier d’entrée, par exemple, "/tmp/cqdam0816.tmp/original.jpg`<br/><code>${directory}</code>: du fichier d’entrée, par exemple "/tmp/cqdam0816.tmp".<br/> <code>${basename}</code>: nom du fichier d’entrée sans son extension, par exemple original<br/><code>${extension}</code>: extension du fichier d’entrée, par exemple JPG<br/></p></td>
   </tr>
  </tbody>
 </table>
