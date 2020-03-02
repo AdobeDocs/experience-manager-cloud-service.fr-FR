@@ -2,16 +2,16 @@
 title: Ajout de ressources Dynamic Media aux pages
 description: Comment ajouter des composants Dynamic Media à une page dans AEM
 translation-type: tm+mt
-source-git-commit: 454f4c9585b575ae0d904292ddd659148393db0b
+source-git-commit: 8464d5fa5dd1b8a8a2d5ce47321e1062b536408b
 
 ---
 
 
 # Ajout de ressources Dynamic Media aux pages{#adding-dynamic-media-assets-to-pages}
 
-Pour ajouter la fonction de média dynamique aux ressources que vous utilisez sur des sites web, vous pouvez ajouter le composant **Dynamic Media**, **Interactive Media**, **Panoramic Media**, ou **Video 360 Media** directement à la page. Pour ce faire, vous devez activer le mode Mise en page et activer les composants Dynamic Media. Vous pouvez alors ajouter ces composants à la page et ajouter des ressources au composant. Les composants Dynamic Media sont intelligents : ils détectent si vous ajoutez une image ou une vidéo et les options de configuration disponibles changent en conséquence.
+Pour ajouter la fonctionnalité Dynamic Media aux ressources que vous utilisez sur vos sites web, vous pouvez ajouter le composant **Dynamic Media**, **Interactive Media**, **Panoramic Media** ou **Video 360 Media** directement sur la page. Pour ce faire, accédez au mode Disposition et activez les composants de Dynamic Media. Vous pouvez ensuite ajouter ces composants à la page et ajouter des ressources au composant. Les composants Dynamic Media sont intelligents : ils savent si vous ajoutez une image ou une vidéo, et les options de configuration disponibles changent en conséquence.
 
-Vous ajoutez directement des ressources de contenu multimédia dynamique à la page si vous utilisez AEM comme gestion de contenu Web. Si vous utilisez un système de gestion de contenu web tiers, vous devez [lier](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ou [incorporer](/help/assets/dynamic-media/embed-code.md) vos ressources. Pour obtenir un site web tiers réactif, voir [Diffusion d’images optimisées pour un site réactif](/help/assets/dynamic-media/responsive-site.md).
+Vous ajoutez directement des ressources Dynamic Media à la page si vous utilisez AEM comme gestion de contenu web. Si vous faites appel à un tiers pour votre gestion de contenu web, [liez](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ou [incorporez](/help/assets/dynamic-media/embed-code.md) vos ressources. Pour un site web tiers réactif, reportez-vous à la section [Diffusion d’images optimisées sur un site réactif](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
@@ -54,11 +54,11 @@ L’ajout d’un composant Dynamic Media, Interactive Media, Panoramic Media ou 
 
 Vous pouvez rechercher les composants Dynamic Media de deux façons :
 
-* Within a web page in Sites, open **[!UICONTROL Properties]** and select the **[!UICONTROL Advanced]** tab. Choisissez la langue souhaitée pour la localisation.
+* Dans une page web de Sites, ouvrez **[!UICONTROL Propriétés]** et sélectionnez l’onglet **[!UICONTROL Avancé]**. Sélectionnez la langue souhaitée.
 
    ![chlimage_1-172](assets/chlimage_1-538.png)
 
-* Depuis le sélecteur de site, sélectionnez la page ou le groupe de pages souhaité. Tap **[!UICONTROL Properties]** and select the **[!UICONTROL Advanced]** tab. Choisissez la langue souhaitée pour la localisation.
+* Depuis le sélecteur de site, sélectionnez la page ou le groupe de pages souhaité. Tap **[!UICONTROL Properties]** and select the **[!UICONTROL Advanced]** tab. Sélectionnez la langue souhaitée.
 
    >[!NOTE]
    >
@@ -70,7 +70,7 @@ Les composants Dynamic Media sont disponibles lorsque vous appuyez sur l’icôn
 
 Les composants Dynamic Media disponibles comprennent les suivants :
 
-* **** Média dynamique : s’utilise pour les actifs tels que les images, les vidéos, les eCatalogs et les visionneuses à 360°.
+* **[!UICONTROL Dynamic Media :]** à utiliser pour des fichiers tels que des images, des vidéos, des catalogues électroniques et des visionneuses à 360°.
 * **[!UICONTROL Contenu multimédia]** interactif : à utiliser pour toutes les ressources interactives, telles que les vidéos interactives, les images interactives ou les visionneuses de carrousel.
 * **[!UICONTROL Média]** panoramique - A utiliser pour les fichiers d&#39;image panoramique ou d&#39;image panoramique VR.
 * **[!UICONTROL Vidéo 360 Media]** - Utilisation pour les fichiers vidéo 360 et 360 VR.
@@ -113,7 +113,7 @@ You can edit the following Dynamic Media Settings by tapping the **[!UICONTROL E
 
 >[!NOTE]
 >
->Par défaut, le composant d’image Dynamic Media est adaptatif. Si vous souhaitez lui donner une taille fixe, définissez-la sous l’onglet **[!UICONTROL Avancé]** du composant, grâce aux options **[!UICONTROL Largeur]** et **[!UICONTROL Hauteur]**.
+>Par défaut, le composant d’image Dynamic Media est adaptatif. Si vous souhaitez faire en sorte qu’il ait une taille fixe, définissez-la dans le composant de l’onglet **[!UICONTROL Avancé]** à l’aide des options **[!UICONTROL Largeur]** et **[!UICONTROL Hauteur]**.
 
 * **[!UICONTROL Paramètre prédéfini]** de la visionneuse (Viewer preset): sélectionnez un paramètre prédéfini existant dans le menu déroulant. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devrez le rendre visible. Voir Gestion des paramètres prédéfinis de visionneuse. Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
 
@@ -192,7 +192,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
 >[!NOTE]
 >
->Par défaut, le composant d’image Dynamic Media est adaptatif. Si vous souhaitez lui donner une taille fixe, définissez-la sous l’onglet **[!UICONTROL Avancé]** du composant, grâce aux options **[!UICONTROL Largeur]** et **[!UICONTROL Hauteur]**.
+>Par défaut, le composant d’image Dynamic Media est adaptatif. Si vous souhaitez faire en sorte qu’il ait une taille fixe, définissez-la dans le composant de l’onglet **[!UICONTROL Avancé]** à l’aide des options **[!UICONTROL Largeur]** et **[!UICONTROL Hauteur]**.
 
 * **[!UICONTROL Modificateurs]** d’image : vous pouvez appliquer des effets d’image en fournissant des commandes d’image supplémentaires. Ces commandes sont décrites dans les sections Paramètres prédéfinis d’image et Command reference (Référence de commande).
 
@@ -200,7 +200,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
-* **[!UICONTROL Activer la correspondance]** des proportions: correspond au format de l&#39;image d&#39;origine lorsque vous sélectionnez un rendu de recadrage dynamique.
+* **[!UICONTROL Activer la correspondance]** des proportions: sélectionnez cette option pour permettre à Contenu multimédia dynamique de sélectionner un rendu de recadrage dynamique avec un format qui correspond le mieux aux proportions de l&#39;image d&#39;origine.
 
 * **[!UICONTROL Titre]**(Title): modifiez le titre de l&#39;image de recadrage dynamique.
 
@@ -261,7 +261,7 @@ Le composant de média panoramique est destiné aux ressources qui sont des imag
 * Un rapport d’aspect de 2:1.
 * Avec les mots-clés `equirectangular` ou (`spherical` + `panorama`) ou (`spherical` + `panoramic`). Voir [Utilisation des balises](/help/sites-cloud/authoring/features/tags.md).
 
-Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the **[!UICONTROL Panoramic Media]** WCM component.
+Les critères de format et de mot-clé s’appliquent aux ressources panoramiques pour la page de détails des ressources et le composant de gestion de contenu web **[!UICONTROL Médias panoramiques]**.
 
 >[!NOTE]
 >
@@ -271,7 +271,7 @@ Both the aspect ratio and keyword criteria apply to panoramic assets for the ass
 >* Chaque instance utilise le même type d’actif.
 >
 >
-Be aware that assigning a different viewer preset to each **[!UICONTROL Panoramic Media]** component on that page is not supported.
+N’oubliez pas que l’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant de **[!UICONTROL média panoramique]** de cette page n’est pas prise en charge.
 >
 >Vous pouvez toutefois utiliser le même paramètre prédéfini de visionneuse pour tous les composants de média panoramique qui utilisent des éléments du même type, dans la page.
 
