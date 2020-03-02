@@ -2,7 +2,7 @@
 title: Autorisations basées sur les rôles
 description: Autorisations basées sur les rôles
 translation-type: tm+mt
-source-git-commit: 645c1e72adeafe437851930a68c9cf905ef0539f
+source-git-commit: 1765cc81bcd6b3404642efbd3ddde27047583f85
 
 ---
 
@@ -17,12 +17,8 @@ Chacun des rôles dispose d’autorisations spécifiques, de tâches préconfigu
 
 | Autorisation | Description | Propriétaire de l’entreprise | Responsable de déploiement | Responsable de programme | Développeur |
 |--- |--- |--- |--- |--- |--- |
-| Créer un client | Créer un client. |  |  |  |  |
-| Mettre à jour le client | Mettre à jour le client. |  |  |  |  |
 | Ajouter le programme | Ajouter un nouveau programme. | x |  |  |  |
 | Créer un environnement | Créez Des Environnements Prod+Stage, Dev, Playground. | x | x |  |  |
-| Configuration des variables d’environnement | Configuration des variables d’environnement et des secrets. |  | x |  | x |
-| Ajouter ou supprimer un nom de domaine personnalisé, télécharger ou mettre à jour le certificat SSL | Ajouter/Supprimer un nom de domaine personnalisé, Télécharger/Mettre à jour le certificat SSL. | x | x |  |  |
 | Mettre à jour l’environnement | Mettez à jour les environnements Prod+Stage, Dev, Playground. | x | x |  |  |
 | Supprimer l’environnement | Supprimez Les Environnements Non-Prod, Dev, Playground. | x | x |  |  |
 | Supprimer l’environnement | Supprimer l’environnement Prod+Stage. |  |  |  |  |
