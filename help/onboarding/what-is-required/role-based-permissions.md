@@ -2,7 +2,7 @@
 title: Autorisations basées sur les rôles
 description: Autorisations basées sur les rôles
 translation-type: tm+mt
-source-git-commit: 6cae9b2b719dab687f601a0596d37f99afded9ab
+source-git-commit: 645c1e72adeafe437851930a68c9cf905ef0539f
 
 ---
 
@@ -26,9 +26,7 @@ Chacun des rôles dispose d’autorisations spécifiques, de tâches préconfigu
 | Mettre à jour l’environnement | Mettez à jour les environnements Prod+Stage, Dev, Playground. | x | x |  |  |
 | Supprimer l’environnement | Supprimez Les Environnements Non-Prod, Dev, Playground. | x | x |  |  |
 | Supprimer l’environnement | Supprimer l’environnement Prod+Stage. |  |  |  |  |
-| Environnement d’hibernation | Hibernate Non-prod, Dev, Environnements Playground. | x | x |  |  |
 | Configuration du programme | Configuration du programme (y compris les IPC). | x |  |  |  |
-| Configuration du programme | Configuration des stratégies de mise à l’échelle (Général : configuration du nombre maximal de niveaux et de l’échelle horizontale à la demande : souscription). | x |  |  |  |
 | Configuration du programme | Obtenez L’Accès De Validation. |  | x |  | x |
 | Configuration du pipeline | Configuration ou modification du pipeline. |  | x |  |  |
 | Exécution du pipeline | Démarrez le pipeline. | x | x |  |  |
@@ -36,10 +34,7 @@ Chacun des rôles dispose d’autorisations spécifiques, de tâches préconfigu
 | Exécution du pipeline | Fournit l’approbation de GoLive. | x | x | x |  |
 | Exécution du pipeline | Planning du déploiement en production. | x | x | x |  |
 | Exécution du pipeline | Reprendre le pipeline de production. |  |  |  |  |
-| Inscription (ou désinscription) à l&#39;approvisionnement | Ouverture à la demande Approvisionnement horizontal à partir de l’écran Configuration du programme. Configurez le nombre maximal de segments P-D &quot;autorisés&quot; pouvant être mis à l&#39;échelle horizontalement dans les environnements PROD et non PROD. | x |  |  |  |
 | Gérer l’environnement | Ajoutez le segment Publier-Répartiteur à partir de l’écran Gérer l’environnement. | x | x |  |  |  |
-| Mise à jour du produit | La carte de mise à jour AEM est visible et conduit l’utilisateur à l’Assistant de mise à jour. | x | x | x | x |
-| Mise à jour du produit | L&#39;Assistant Mise à jour de produit peut être activé. | x | x |  |  |
 | Mise à jour Push | Démarrez Push Update Pipeline. |  |  |  |  |
 | Générer un jeton d’accès personnel | Générer un jeton d’accès personnel. |  | x |  | x |
 
