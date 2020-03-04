@@ -2,7 +2,7 @@
 title: Autorisations basées sur les rôles
 description: Autorisations basées sur les rôles
 translation-type: tm+mt
-source-git-commit: 1765cc81bcd6b3404642efbd3ddde27047583f85
+source-git-commit: a1b4feced2dd8becc74383fe8a3b835bde7159d2
 
 ---
 
@@ -23,7 +23,7 @@ Chacun des rôles dispose d’autorisations spécifiques, de tâches préconfigu
 | Supprimer l’environnement | Supprimez Les Environnements Non-Prod, Dev, Playground. | x | x |  |  |
 | Supprimer l’environnement | Supprimer l’environnement Prod+Stage. |  |  |  |  |
 | Configuration du programme | Configuration du programme (y compris les IPC). | x |  |  |  |
-| Configuration du programme | Obtenez L’Accès De Validation. |  | x |  | x |
+| Configuration du programme | Obtenez L’Accès De Confirmation. |  | x |  | x |
 | Configuration du pipeline | Configuration ou modification du pipeline. |  | x |  |  |
 | Exécution du pipeline | Démarrez le pipeline. | x | x |  |  |
 | Exécution du pipeline | Rejeter/Approuver les échecs importants à trois niveaux. | x | x | x |  |
@@ -32,5 +32,5 @@ Chacun des rôles dispose d’autorisations spécifiques, de tâches préconfigu
 | Exécution du pipeline | Reprendre le pipeline de production. |  |  |  |  |
 | Gérer l’environnement | Ajoutez le segment Publier-Répartiteur à partir de l’écran Gérer l’environnement. | x | x |  |  |  |
 | Mise à jour Push | Démarrez Push Update Pipeline. |  |  |  |  |
-| Générer un jeton d’accès personnel | Générer un jeton d’accès personnel. |  | x |  | x |
+| Générer un jeton d’accès personnel | Accéder à Git. |  | x |  | x |
 
