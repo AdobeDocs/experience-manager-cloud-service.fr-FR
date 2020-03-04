@@ -26,7 +26,7 @@ L’ajout d’un composant Dynamic Media, Interactive Media, Panoramic Media ou 
 1. Dans AEM, ouvrez la page où vous souhaitez ajouter le composant Dynamic Media.
 1. In the left pane, tap the **[!UICONTROL Components]** icon, then filter for Dynamic Media.
 
-   Si aucun composant Contenu multimédia dynamique n’est disponible, vous devez activer ou activer les composants Contenu multimédia dynamique. Voir [Modification des modèles - Auteurs](/help/sites-cloud/authoring/features/templates.md) de modèles pour plus d’informations.
+   Si aucun composant Contenu multimédia dynamique n’est disponible, vous devez activer ou activer les composants Contenu multimédia dynamique. Pour plus d’informations, voir [Modification de modèles - Auteurs](/help/sites-cloud/authoring/features/templates.md) de modèles.
 
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
@@ -115,7 +115,7 @@ You can edit the following Dynamic Media Settings by tapping the **[!UICONTROL E
 >
 >Par défaut, le composant d’image Dynamic Media est adaptatif. Si vous souhaitez faire en sorte qu’il ait une taille fixe, définissez-la dans le composant de l’onglet **[!UICONTROL Avancé]** à l’aide des options **[!UICONTROL Largeur]** et **[!UICONTROL Hauteur]**.
 
-* **[!UICONTROL Paramètre prédéfini]** de la visionneuse (Viewer preset): sélectionnez un paramètre prédéfini existant dans le menu déroulant. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devrez le rendre visible. Voir Gestion des paramètres prédéfinis de visionneuse. Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
+* **[!UICONTROL Paramètre]** prédéfini de visionneuse (Viewer preset): sélectionnez un paramètre prédéfini de visionneuse existant dans le menu déroulant. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devrez le rendre visible. Voir Gestion des paramètres prédéfinis de visionneuse. Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
 
    Il s’agit de la seule option disponible si vous affichez des visionneuses d’images, à 360° ou de supports variés. Les paramètres prédéfinis de visionneuse sont également dynamiques : seuls les paramètres pertinents s’affichent.
 
@@ -202,7 +202,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
 * **[!UICONTROL Activer la correspondance]** des proportions: sélectionnez cette option pour permettre à Contenu multimédia dynamique de sélectionner un rendu de recadrage dynamique avec un format qui correspond le mieux aux proportions de l&#39;image d&#39;origine.
 
-* **[!UICONTROL Titre]**(Title): modifiez le titre de l&#39;image de recadrage dynamique.
+* **[!UICONTROL Titre]**(Title): permet de modifier le titre de l&#39;image de recadrage dynamique.
 
 * **[!UICONTROL Texte]** de remplacement (Alt Text): ajoutez un titre à l&#39;image de recadrage dynamique pour les utilisateurs dont les graphiques sont désactivés.
 
@@ -238,7 +238,7 @@ Prenez en compte le fait que l’affectation d’un paramètre prédéfini de vi
 
 You can edit the following **[!UICONTROL General]** settings by tapping **[!UICONTROL Edit]** in the component.
 
-* **[!UICONTROL Paramètre prédéfini]** de la visionneuse (Viewer preset): sélectionnez un paramètre prédéfini existant dans le menu déroulant. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devrez le rendre visible. Les paramètres de visionneuse prédéfinis doivent être publiés avant de pouvoir être utilisés. Voir Gestion des paramètres prédéfinis de visionneuse.
+* **[!UICONTROL Paramètre]** prédéfini de visionneuse (Viewer preset): sélectionnez un paramètre prédéfini de visionneuse existant dans le menu déroulant. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devrez le rendre visible. Les paramètres de visionneuse prédéfinis doivent être publiés avant de pouvoir être utilisés. Voir Gestion des paramètres prédéfinis de visionneuse.
 
 * **[!UICONTROL Titre]**(Title): permet de modifier le titre de la vidéo.
 
