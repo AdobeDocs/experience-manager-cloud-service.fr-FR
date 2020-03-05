@@ -3,7 +3,7 @@ title: Utilisation des ressources connectées pour partager des ressources DAM d
 description: Utilisez les ressources disponibles sur un déploiement distant d’Adobe Experience Manager Assets lors de la création de vos pages Web sur un autre déploiement de site Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b638539dcaee3df8676176c22e1dd0c900b9b65
+source-git-commit: 1bf3f14b5ef1f971997ec8b19ea7bb300dbaaf24
 
 ---
 
@@ -30,7 +30,7 @@ Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points 
    |  | AEM Sites as a Cloud Service | Sites AEM 6.5 sur AMS | Sites AEM 6.5 sur site |
    |---|---|---|---|
    | **AEM Assets as a Cloud Service** | Pris en charge | Pris en charge | Pris en charge |
-   | **Ressources AEM 6.5 sur AMS** | pas de prise en charge | Pris en charge | Pris en charge |
+   | **Ressources AEM 6.5 sur AMS** | Pris en charge | Pris en charge | Pris en charge |
    | **Ressources AEM 6.5 sur site** | pas de prise en charge | pas de prise en charge | pas de prise en charge |
 
 ### Formats de fichiers pris en charge {#mimetypes}
@@ -46,7 +46,7 @@ Les différents rôles impliqués pour configurer et utiliser la fonctionnalité
 
 | Rôle | Portée | Groupe d’utilisateurs | Nom d’utilisateur dans la présentation | Condition requise |
 |----------------------------------|--------|------------------------------------------------------------------------------|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Administrateur AEM Sites | Local | Administrateur AEM | `admin` | Configurez AEM, ainsi que l’intégration au déploiement Assets distant. |
+| Administrateur des sites AEM | Local | Administrateur AEM | `admin` | Configurez AEM, ainsi que l’intégration au déploiement Assets distant. |
 | Utilisateur DAM | Local | Création | `ksaner` | Used to view and duplicate the fetched assets at `/content/DAM/connectedassets/`. |
 | Auteur AEM Sites | Local | Auteur (avec les droits d’accès en lecture sur l’instance DAM distante et l’accès en tant qu’auteur sur les l’instance Sites locale) | `ksaner` | Les utilisateurs finaux sont des auteurs Sites qui utilisent cette intégration pour améliorer leur vélocité de contenu. Les auteurs recherchent et parcourent des ressources dans un système de gestion des actifs numériques distant à l’aide de l’outil de recherche de contenu et des images requises dans les pages Web locales. The credentials of `ksaner` DAM user are used. |
 | Administrateur AEM Assets | distant | Administrateur AEM | `admin` sur AEM distant | Configurez le partage des ressources cross-origin (CORS). |
@@ -169,7 +169,7 @@ Les ressources récupérées peuvent être utilisées comme n’importe quel aut
 
 **Configuration et licence**
 
-* Le déploiement des ressources AEM sur AMS est pris en charge.
+* Le déploiement d’AEM Assets sur AMS est pris en charge.
 * AEM Sites peut se connecter à un seul référentiel AEM Assets à la fois.
 * Une licence AEM Assets s’exécutant en tant que référentiel distant.
 * Une ou plusieurs licences d’AEM Sites s’exécutant comme un déploiement de création local.
