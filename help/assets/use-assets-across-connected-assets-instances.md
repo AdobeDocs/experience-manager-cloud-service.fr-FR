@@ -3,7 +3,7 @@ title: Utilisation des ressources connectées pour partager des ressources DAM d
 description: Utilisez les ressources disponibles sur un déploiement distant d’Adobe Experience Manager Assets lors de la création de vos pages Web sur un autre déploiement de site Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1bf3f14b5ef1f971997ec8b19ea7bb300dbaaf24
+source-git-commit: 64aab464c2d5de0c837ee465a088107a78ba9374
 
 ---
 
@@ -37,7 +37,7 @@ Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points 
 
 Les auteurs peuvent rechercher des images et les types de documents suivants dans l’Outil de recherche de contenu et utiliser les ressources recherchées dans l’éditeur de page. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components. Les listes des formats pris en charge sont les suivantes :
 
-* **Formats** d’image : Les formats d’image pris en charge par le composant [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Image sont pris en charge. Les composants de média dynamique ne sont pas pris en charge.
+* **Formats** d’image : Les formats d’image pris en charge par le composant [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Image sont pris en charge. Les images de médias dynamiques ne sont pas prises en charge.
 * **Formats** de document : Voir Formats [de document pris en charge par les ressources](file-format-support.md#supported-document-formats)connectées.
 
 ### Utilisateurs et groupes concernés {#users-and-groups-involved}
