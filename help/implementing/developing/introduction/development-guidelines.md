@@ -1,13 +1,39 @@
 ---
-title: AEM en tant que directives de développement de service Cloud
+title: Conseils de développement pour AEM as a Cloud Service
 description: 'À terminer '
 translation-type: tm+mt
-source-git-commit: 13c0a670330532f574c2b38823b8a924c609e8e4
+source-git-commit: 9777dd5772ab443b5b3dabbc74ed0d362e52df60
 
 ---
 
 
-# AEM en tant que directives de développement de service Cloud {#aem-as-a-cloud-service-development-guidelines}
+# Conseils de développement pour AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
+
+Le code s’exécutant dans AEM en tant que service Cloud doit être conscient du fait qu’il s’exécute toujours dans une grappe. Cela signifie qu’il y a toujours plusieurs instances en cours d’exécution. Le code doit être résilient, d’autant plus qu’une instance peut être arrêtée à tout moment.
+
+Lors de la mise à jour d’AEM en tant que service Cloud, il y aura des instances où l’ancien et le nouveau code s’exécuteront en parallèle. Par conséquent, l’ancien code ne doit pas rompre avec le contenu créé par le nouveau code et le nouveau code doit pouvoir traiter l’ancien contenu.
+<!--
+
+>[!NOTE]
+> All of the best practices mentioned here hold true for on-premise deployments of AEM, if not stated otherwise. An instance can always stop due to various reasons. However, with Skyline it is more likely to happen therefore an instance stopping is the rule not an exception.
+
+-->
+
+S’il est nécessaire d’identifier le maître dans la grappe, l’API Apache Sling Discovery peut être utilisée pour le détecter.
+
+## État en mémoire {#state-in-memory}
+
+L’état ne doit pas être conservé dans la mémoire mais conservé dans le référentiel. Sinon, cet état peut se perdre si une instance est arrêtée.
+
+## État sur le système de fichiers {#state-on-the-filesystem}
+
+Le système de fichiers de l’instance ne doit pas être utilisé dans AEM en tant que service Cloud. Le disque est éphémère et sera effacé lorsque les instances sont recyclés. L&#39;utilisation limitée du système de fichiers pour le stockage temporaire relatif au traitement des demandes uniques est possible, mais ne doit pas être abusée pour des fichiers énormes. Cela est dû au fait qu’il peut avoir un impact négatif sur le quota d’utilisation des ressources et être soumis à des limitations de disque.
+
+Par exemple, lorsque l’utilisation du système de fichiers n’est pas prise en charge, le niveau Publication doit s’assurer que toutes les données qui doivent être conservées sont expédiées vers un service externe pour un stockage à plus long terme.
+
+## Observation {#observation}
+
+Tout ce qui se passe de manière asynchrone comme l&#39;action sur des événements d&#39;observation ne peut pas être exécuté localement et doit donc être utilisé avec soin. Cela est vrai pour les événements JCR et les événements de ressources Sling. Au moment d’un changement, l’instance peut être supprimée et remplacée par une autre instance. Les autres instances de la topologie actives à ce moment pourront réagir à cet événement. Dans ce cas, cependant, il ne s&#39;agira pas d&#39;un événement local et il se pourrait même qu&#39;il n&#39;y ait pas de chef actif dans le cas d&#39;une élection de chef en cours au moment de l&#39;événement.
 
 ## Tâches en arrière-plan et tâches à long terme {#background-tasks-and-long-running-jobs}
 
@@ -29,7 +55,29 @@ Les alternatives connues pour fonctionner, mais qui peuvent nécessiter de fourn
 
 * [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) et/ou [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (fournie par AEM)
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (non recommandé car obsolète et remplacé par la version 4.x)
-* [OK Http](OK Http (non fourni par AEM)) (non fourni par AEM)
+* [OK Http](https://square.github.io/okhttp/) (non fourni par AEM)
+
+## Aucune personnalisation classique de l’interface utilisateur {#no-classic-ui-customizations}
+
+AEM en tant que service Cloud ne prend en charge que l’interface utilisateur tactile pour le code client tiers. L’interface utilisateur classique n’est pas disponible pour la personnalisation.
+
+## Eviter les binaires natifs {#avoid-native-binaries}
+
+Le code ne pourra pas télécharger de fichiers binaires au moment de l’exécution ni les modifier. Par exemple, il ne sera pas en mesure de décompresser `jar` ou `tar` les fichiers.
+
+## Pas de liaison en flux continu via AEM en tant que service Cloud {#no-streaming-binaries}
+
+Les binaires doivent être accessibles via le CDN, qui diffusera des binaires en dehors des services AEM principaux.
+
+Par exemple, n’utilisez pas `asset.getOriginal().getStream()`, ce qui déclenche le téléchargement d’un fichier binaire sur le disque éphémère du service AEM.
+
+## Aucun agent de réplication inverse {#no-reverse-replication-agents}
+
+La réplication inverse de Publier vers Auteur n’est pas prise en charge dans AEM en tant que service Cloud. Si une telle stratégie est nécessaire, vous pouvez utiliser un magasin de persistance externe qui est partagé entre la batterie d’instances Publication et potentiellement la grappe Auteur.
+
+## Transfert des agents de réplication {#forward-replication-agents}
+
+Le contenu est répliqué de l’auteur à la publication au moyen d’un pub-sous-mécanisme. Les agents de réplication personnalisés ne sont pas pris en charge.
 
 ## Surveillance et débogage {#monitoring-and-debugging}
 
@@ -44,19 +92,19 @@ Les alternatives connues pour fonctionner, mais qui peuvent nécessiter de fourn
 
 Les vidages de threads dans les environnements Cloud sont collectés en permanence, mais ne peuvent pas être téléchargés en libre-service pour le moment. Dans l’intervalle, contactez le support AEM si des virements de threads sont nécessaires pour déboguer un problème, en spécifiant la fenêtre de temps exacte.
 
-### CRX/DE Lite et console système {#crxde-lite-and-system-console}
+## CRX/DE Lite et console système {#crxde-lite-and-system-console}
 
-## Développement local {#local-development}
+### Développement local {#local-development}
 
 Pour le développement local, les développeurs ont un accès complet à CRXDE Lite (`/crx/de`) et à la console Web AEM (`/system/console`).
 
 Notez qu’en cas de développement local (à l’aide du démarrage rapide prêt pour le cloud), `/apps` et `/libs` peuvent être écrits directement, ce qui est différent des environnements Cloud dans lesquels ces dossiers de niveau supérieur sont immuables.
 
-## AEM en tant qu’outils de développement de service cloud {#aem-as-a-cloud-service-development-tools}
+### AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
 
-Les clients peuvent accéder à CRXDE Lite sur l’environnement de développement, mais pas sur l’étape ou la production. Le référentiel immuable (`/libs`, `/apps`) ne peut pas être écrit au moment de l’exécution. Toute tentative de ce type entraînera des erreurs.
+Les clients peuvent accéder à CRXDE Lite sur l’environnement de développement, mais pas sur l’étape ou la production. Le référentiel immuable (`/libs`, `/apps`) ne peut pas être écrit au moment de l’exécution. Toute tentative de ce type entraînera donc des erreurs.
 
-Un ensemble d’outils pour le débogage d’AEM en tant qu’environnements de développement de services Cloud est disponible dans la Console de développement pour les environnements de développement, d’évaluation et de production. L’URL peut être déterminée en ajustant les URL du service d’auteur ou de publication comme suit :
+Un ensemble d’outils pour le débogage d’AEM en tant qu’environnements de développement de services Cloud est disponible dans la Console de développement pour les environnements de développement, d’évaluation et de production. L’URL peut être déterminée en ajustant les URL du service Auteur ou Publier comme suit :
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -78,14 +126,14 @@ Comme illustré ci-dessous, les développeurs peuvent résoudre les dépendances
 
 ![Console de développement 3](/help/implementing/developing/introduction/assets/devconsole3.png)
 
-Également utile pour le débogage, la console de développement comporte un lien vers l’outil Requête d’explication :
+Également utile pour le débogage, la console Développeur dispose d’un lien vers l’outil Requête d’explication :
 
-![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
+![Console de développement 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-**Service de test et de production AEM**
+### Service de test et de production AEM {#aem-staging-and-production-service}
 
 Les clients n’auront pas accès aux outils de développement pour les environnements de test et de production.
 
-### Diagnostics {#diagnostics}
+### Surveillance des performances {#performance-monitoring}
 
-La console système est disponible pour les environnements de développement. Toutefois, les vidages de diagnostic pour l’évaluation et la production ne sont pas disponibles.
+Adobe surveille les performances de l’application et prend des mesures pour remédier à cette détérioration. Actuellement, il n’est pas possible d’observer les mesures d’application.
