@@ -2,7 +2,7 @@
 title: Recherche et indexation de contenu
 description: 'Recherche et indexation de contenu '
 translation-type: tm+mt
-source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
+source-git-commit: cec331a8737d8807062046b20f792b1c73e6b22e
 
 ---
 
@@ -11,9 +11,9 @@ source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
 
 ## Modifications d’AEM en tant que service Cloud {#changes-in-aem-as-a-cloud-service}
 
-Avec AEM en tant que service Cloud, Adobe s’éloigne d’un modèle centré sur les instances AEM pour passer à une vue basée sur les services avec les conteneurs AEM n-x, pilotés par les pipelines CI/CD dans Cloud Manager. Au lieu de configurer et de gérer les index sur des instances AEM uniques, la configuration de l’index doit être spécifiée avant un déploiement. Les changements de configuration dans la production enfreignent clairement les politiques de CI/CD. Il en va de même pour les changements d&#39;index, car ils peuvent avoir un impact sur la stabilité et les performances du système si elles ne sont pas spécifiées et réindexées avant leur mise en production.
+Avec AEM en tant que service Cloud, Adobe abandonne un modèle centré sur les instances AEM à un basé sur les services avec un AEM n-x, piloté par les pipelines CI/CD dans Cloud Manager. Au lieu de configurer et de gérer les index sur des instances AEM uniques, la configuration de l’index doit être spécifiée avant un déploiement. Les changements de configuration dans la production enfreignent clairement les politiques de CI/CD. Il en va de même pour les changements d&#39;index, car ils peuvent avoir un impact sur la stabilité et les performances du système si elles ne sont pas spécifiées et réindexées avant leur mise en production.
 
-Vous trouverez ci-dessous une liste des principales modifications par rapport à AEM 6.5 et aux versions antérieures :
+Vous trouverez ci-dessous un  des principales modifications par rapport à AEM 6.5 et aux versions antérieures :
 
 1. Les utilisateurs n’auront plus accès au gestionnaire d’index d’une instance AEM unique pour déboguer, configurer ou gérer l’indexation. Il est uniquement utilisé pour le développement local et les déploiements sur site.
 
@@ -21,7 +21,7 @@ Vous trouverez ci-dessous une liste des principales modifications par rapport à
 
 1. En général, les changements d’index sont amorcés avant de commencer la production afin de ne pas contourner les passerelles de qualité dans les pipelines CI/CD de Cloud Manager et de ne pas affecter les IPC commerciaux en production.
 
-1. Toutes les mesures connexes, y compris les performances de recherche en production, seront disponibles pour les clients au moment de l’exécution afin de fournir une vue globale des sujets de recherche et d’indexation.
+1. Toutes les mesures connexes, y compris les performances de recherche en production, seront disponibles pour les clients au moment de l’exécution afin de fournir un holistique sur les sujets de recherche et d’indexation.
 
 1. Les clients pourront configurer des alertes en fonction de leurs besoins.
 
@@ -35,7 +35,7 @@ La version de l’index utilisée est configurée à l’aide d’indicateurs da
 
 1. Les clients peuvent déterminer si la tâche d’indexation est terminée sur la page de création de Cloud Manager et recevront une notification lorsque la nouvelle version sera prête à recevoir du trafic.
 
-1. Restrictions : actuellement, la gestion des index sur AEM en tant que service Cloud est uniquement prise en charge pour les index de type lucene.
+1. Limites : actuellement, la gestion des index sur AEM en tant que service Cloud est uniquement prise en charge pour les index de type lucene.
 
 <!-- ## Sizing Considerations {#sizing-considerations}
 
@@ -53,15 +53,15 @@ La définition d’index peut comprendre les trois cas d’utilisation suivants 
 1. Mise à jour d’une définition d’index existante. Cela signifie en effet l’ajout d’une nouvelle version d’une définition d’index existante.
 1. Suppression d’un index existant redondant ou obsolète.
 
-Pour les points 1 et 2 ci-dessus, vous devez créer une nouvelle définition d’index dans le cadre de votre base de code personnalisé dans le calendrier de publication de Cloud Manager correspondant. Pour plus d’informations, voir la documentation [](/help/implementing/deploying/overview.md)Déploiement sur AEM en tant que service Cloud.
+Pour les points 1 et 2 ci-dessus, vous devez créer une nouvelle définition d’index dans le cadre de votre base de code personnalisé dans le calendrier de publication de Cloud Manager correspondant. Pour plus d’informations, reportez-vous à la documentation [](/help/implementing/deploying/overview.md)Déploiement sur AEM en tant que service Cloud.
 
 ### Préparation de la nouvelle définition d’index {#preparing-the-new-index-definition}
 
-Vous devez préparer un nouveau package de définition d’index contenant la définition d’index réelle, en suivant le modèle de dénomination suivant :
+Vous devez préparer un nouveau package de définition d’index qui contient la définition d’index réelle, en suivant le modèle de dénomination suivant :
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-qui doit ensuite passer sous `ui.content/src/main/content/jcr_root`. Les dossiers sous-racine ne sont pas pris en charge à partir de maintenant.
+qui doit ensuite passer sous `ui.apps/src/main/content/jcr_root`. Les dossiers sous-racine ne sont pas pris en charge à partir de maintenant.
 
 <!-- need to review and link info on naming convention from https://wiki.corp.adobe.com/display/WEM/Merging+Customer+and+OOTB+Index+Changes?focusedCommentId=1784917629#comment-1784917629 -->
 
@@ -71,9 +71,9 @@ Le package de l’exemple ci-dessus est généré comme `com.adobe.granite:new-i
 
 Les définitions d’index sont désormais marquées comme personnalisées et avec version :
 
-* La définition d’index elle-même (par exemple `/oak:index/ntBaseLucene-custom-1`) qui est un contenu MUTABLE
+* La définition d’index elle-même (par exemple `/oak:index/ntBaseLucene-custom-1`)
 
-Par conséquent, pour déployer un index, la définition d’index (`/oak:index/definitionname`) doit être fournie via le package **** muable, généralement `ui.content` via Git et le processus de déploiement de Cloud Manager.
+Par conséquent, pour déployer un index, la définition d’index (`/oak:index/definitionname`) doit être fournie via `ui.apps` Git et le processus de déploiement de Cloud Manager.
 
 Une fois la nouvelle définition d’index ajoutée, la nouvelle application doit être déployée via Cloud Manager. Au moment du déploiement, deux tâches sont démarrées, chargées d’ajouter (et de fusionner si nécessaire) les définitions d’index à MongoDB et Azure Segment Store pour l’auteur et la publication, respectivement. Les référentiels sous-jacents sont réindexés avec les nouvelles définitions d&#39;index, avant que le commutateur Bleu-Vert n&#39;ait lieu.
 
@@ -81,7 +81,7 @@ Une fois la nouvelle définition d’index ajoutée, la nouvelle application doi
 
 ### Qu’est-ce que la gestion des index ? {#what-is-index-management}
 
-La gestion des index consiste à ajouter, supprimer et modifier des index. Changer la *définition* d’un index est rapide, mais l’application de la modification (souvent appelée &quot;création d’un index&quot; ou, pour les index existants, &quot;réindexation&quot;) nécessite du temps. Ce n&#39;est pas instantané : le référentiel doit être analysé pour que les données soient indexées.
+La gestion des index consiste à ajouter, supprimer et modifier des index. Changer la *définition* d’un index est rapide, mais l’application de la modification (souvent appelée &quot;création d’un index&quot; ou, pour les index existants, &quot;réindexation&quot;) nécessite du temps. Elle n&#39;est pas instantanée : le référentiel doit être analysé pour que les données soient indexées.
 
 ### Qu&#39;est-ce que le déploiement bleu-vert ? {#what-is-blue-green-deployment}
 
@@ -129,7 +129,7 @@ Le numéro de version est incrémenté chaque fois que l’index est modifié. P
 
 ### Modifications des index prêts à l’emploi {#changes-to-out-of-the-box-indexes}
 
-Une fois qu’Adobe a modifié un index prêt à l’emploi tel que &quot;damAssetLucene&quot; ou &quot;cqPageLucene&quot;, un nouvel index nommé `damAssetLucene-2` ou `cqPageLucene-2` est créé ou, si l’index a déjà été personnalisé, la définition d’index personnalisé est fusionnée avec les modifications de l’index prêt à l’emploi, comme illustré ci-dessous. La fusion des modifications se produit automatiquement. Cela signifie que vous n’avez rien à faire si un index prêt à l’emploi change. Il est toutefois possible de personnaliser l’index ultérieurement.
+Une fois qu’Adobe a modifié un index prêt à l’emploi tel que &quot;damAssetLucene&quot; ou &quot;cqPageLucene&quot;, un nouvel index nommé `damAssetLucene-2` ou `cqPageLucene-2` est créé ou, si l’index a déjà été personnalisé, la définition d’index personnalisé est fusionnée avec les modifications de l’index prêt à l’emploi, comme illustré ci-dessous. La fusion des modifications se produit automatiquement. Cela signifie que vous n’avez rien à faire en cas de modification d’un index prêt à l’emploi. Il est toutefois possible de personnaliser l’index ultérieurement.
 
 | Index | Index prêt à l&#39;emploi | Utilisation dans la version 2 | Utilisation dans la version 3 |
 |---|---|---|---|
