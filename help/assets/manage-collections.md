@@ -4,14 +4,14 @@ description: Comprenez le concept de collecte dans Adobe Experience Manager Asse
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8aa693387183e65434da300ccf08f394b48ed9ba
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
 
 # Gestion des collections {#manage-collections}
 
-Une collection est un ensemble de ressources dans les ressources d’Adobe Experience Manager. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs. Le jeu peut être une collection statique ou dynamique basée sur les résultats de la recherche.
+Une collection est un ensemble de ressources dans les ressources d’Adobe Experience Manager. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs. Il peut s’agir d’une collection statique ou d’une collection dynamique basée sur les résultats de la recherche.
 
 Contrairement aux dossiers, une collection peut inclure des fichiers provenant de différents emplacements. Vous pouvez partager des ressources avec plusieurs utilisateurs dont les niveaux de privilèges sont différents (modification, affichage, etc.).
 
@@ -19,7 +19,7 @@ Vous pouvez partager plusieurs collections avec un utilisateur. Chaque collectio
 
 Selon la façon dont elles rassemblent les ressources, les collections sont des types suivants :
 
-* Collection contenant une liste de référence statique de ressources, de dossiers et d’autres collections.
+* Collection qui contient un de référence statique de ressources, de dossiers et d’autres collections.
 
 * Collection dynamique qui comprend dynamiquement des ressources en fonction de critères de recherche.
 
@@ -51,7 +51,7 @@ Vous pouvez créer une collection avec des références statiques, par exemple, 
 
    >[!NOTE]
    >
-   >Experience Manager Assets vous permet de créer des tâches de révision pour une collection, comme vous le faites pour créer des tâches de révision pour un dossier de ressources.
+   >Experience Manager Assets vous permet de créer un de révision pour une collection similaire à la manière dont vous créez des  de révision pour un dossier de ressources.
 
    Pour ajouter des ressources à la collection, accédez à l’interface utilisateur Assets. For details, see [Add assets to a collection](#add-assets-to-a-collection).
 
@@ -135,7 +135,7 @@ Vous pouvez modifier simultanément les métadonnées de plusieurs collections. 
 
 The Search feature within Collections supports both [Search for collections](#search-collections) and [Search for assets within a Collection](#search-within-collections).
 
-### Rechercher des collections {#search-collections}
+### Recherche de collections {#search-collections}
 
 Vous pouvez effectuer des recherches dans des collections à partir de la console Collections. Lorsque vous effectuez des recherches avec des mots-clés dans la zone Omnisearch, AEM Assets recherche les noms des collections, les métadonnées et les balises ajoutées aux collections.
 
@@ -170,13 +170,13 @@ Lorsque vous téléchargez une collection, l’intégralité de la hiérarchie d
 
 1. Dans la console Collections, sélectionnez une ou plusieurs collections à télécharger.
 1. Dans la barre d’outils, appuyez/cliquez sur l’icône de téléchargement.
-1. Dans la boîte de dialogue **[!UICONTROL Télécharger]**, appuyez/cliquez sur **[!UICONTROL Télécharger]**. Si vous souhaitez télécharger les rendus des ressources dans la collection, sélectionnez **[!UICONTROL Rendus]**. Sélectionnez l’option **[!UICONTROL Courrier électronique]** pour envoyer une notification électronique au propriétaire de la collection.
+1. Dans la boîte de dialogue **[!UICONTROL Télécharger]**, appuyez/cliquez sur **[!UICONTROL Télécharger]**. Si vous souhaitez télécharger les rendus des ressources dans la collection, sélectionnez **[!UICONTROL Rendus]**. <!-- Select the **[!UICONTROL Email]** option to send an email notification to the owner of the collection. -->
 
    Lorsque vous sélectionnez une collection à télécharger, l’ensemble de la hiérarchie de dossiers sous cette collection est téléchargé. To include each collection you download (including assets in child collections nested under the parent collection) in an individual folder, select **[!UICONTROL Create separate folder for each asset]**.
 
 ## Edit metadata properties of multiple collections {#editing-metadata-properties-of-multiple-collections}
 
-Les ressources d’Adobe Enterprise Manager (AEM) vous permettent de modifier en bloc les métadonnées de nombreuses collections. Utilisez la page [!UICONTROL Propriétés] pour effectuer des modifications de métadonnées sur plusieurs collections, par exemple pour modifier les propriétés des métadonnées en une valeur commune ou ajouter ou modifier des balises.
+Les ressources d’Adobe Enterprise Manager (AEM) vous permettent de modifier en bloc les métadonnées de nombreuses collections. Utilisez la page [!UICONTROL Propriétés] pour effectuer des modifications de métadonnées sur plusieurs collections, par exemple pour modifier les propriétés des métadonnées en une valeur commune ou pour ajouter ou modifier des balises.
 
 To customize the metadata [!UICONTROL Properties] page, including adding, modifying, deleting metadata properties, use the Schema editor.
 
@@ -245,7 +245,7 @@ Pour supprimer des recherches enregistrées, procédez comme suit :
 Vous pouvez exécuter un processus pour les ressources d’une collection. Si la collection contient des collections imbriquées, le processus s’exécute également sur les ressources de ces dernières. Toutefois, si la collection et les collections imbriquées contiennent des ressources en double, le processus ne s’exécute qu’une seule fois pour ces ressources.
 
 1. Dans la console Collections, sélectionnez une collection sur laquelle exécuter un processus.
-1. Tap/click the GlobalNav icon, and choose **[!UICONTROL Timeline]** from the list.
+1. Appuyez/cliquez sur l’icône de navigation globale, puis sélectionnez **[!UICONTROL Chronologie]** dans la liste.
 1. Dans le journal, cliquez ou appuyez sur l’icône en forme de signe circonflexe située en bas, puis appuyez/cliquez sur **[!UICONTROL Démarrer le processus]**.
 1. Dans la section **[!UICONTROL Démarrer le processus]**, sélectionnez un modèle de processus dans la liste. Par exemple, sélectionnez le modèle **[!UICONTROL Ressources de mise à jour de DAM]**.
 1. Saisissez un titre pour le workflow, puis appuyez/cliquez sur **[!UICONTROL Démarrer]**.
