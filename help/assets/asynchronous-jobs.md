@@ -3,7 +3,7 @@ title: Opérations asynchrones
 description: AEM Assets optimise les performances en exécutant certaines tâches consommatrices de ressources de manière asynchrone.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
@@ -29,11 +29,11 @@ You can view the status of asynchronous jobs from the **[!UICONTROL Async Job St
 
 ## Surveillance de l’état des opérations asynchrones {#monitoring-the-status-of-asynchronous-operations}
 
-Chaque fois qu’AEM Assets traite une opération asynchrone, vous recevez une notification dans votre boîte de réception et par courrier électronique.
+Whenever AEM Assets processes an operation asynchronously, you receive a notification at your inbox <!-- and through email -->.
 
 To view the status of the asynchronous operations in detail, navigate to the **[!UICONTROL Async Job Status]** page.
 
-1. Appuyez/cliquez sur le logo AEM et accédez à **[!UICONTROL Assets]** > **[!UICONTROL Tâches]**.
+1. Appuyez/cliquez sur le logo AEM, puis sélectionnez **[!UICONTROL Ressources]** > **[!UICONTROL Tâches]**.
 1. In the **[!UICONTROL Async Job Status]** page, review the details of the operations.
 
    ![job_status](assets/job_status.png)
@@ -44,7 +44,7 @@ To view the status of the asynchronous operations in detail, navigate to the **[
 
    **[!UICONTROL Réussite]** : l’opération est terminée.
 
-   **[!UICONTROL Échec]** ou **[!UICONTROL Erreur]** : l’opération n’a pas pu être traitée.
+   **[!UICONTROL Échec]** ou **[!UICONTROL erreur]** : impossible de traiter l’opération.
 
    **[!UICONTROL Planifié]** : l’opération est planifiée à une date ultérieure.
 
@@ -72,7 +72,7 @@ AEM Assets exécute une tâche de purge quotidienne à 1 h 00 du matin afin d
 
 Vous pouvez modifier la planification de la tâche de purge et la durée de conservation des détails des tâches terminées avant leur suppression. Vous pouvez également configurer le nombre maximal de tâches terminées pour lesquelles les détails sont conservés à un moment donné dans le temps.
 
-1. Appuyez/cliquez sur le logo AEM, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
+1. Appuyez/cliquez sur le logo AEM, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
 1. Open the **[!UICONTROL Adobe CQ DAM Async Jobs Purge Scheduled]** job.
 1. Indiquez le nombre limite de jours après la suppression des tâches terminées et le nombre maximal de tâches pour lesquelles les détails sont conservés dans l’historique.
 
@@ -89,7 +89,7 @@ Vous pouvez configurer le nombre seuil de ressources ou de références pour AEM
 
 Si le nombre de ressources ou de dossiers à supprimer dépasse le nombre seuil, l’opération de suppression est effectuée de façon asynchrone.
 
-1. Appuyez/cliquez sur le logo AEM, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
+1. Appuyez/cliquez sur le logo AEM, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
 1. From the web console, open the **[!UICONTROL Async Delete Operation Job Processing]** configuration.
 1. In the **[!UICONTROL Threshold number of assets]** box, specify the threshold number of assets/folders for asynchronous processing of delete operations.
 
@@ -101,7 +101,7 @@ Si le nombre de ressources ou de dossiers à supprimer dépasse le nombre seuil,
 
 Si le nombre de ressources/dossiers ou de références à déplacer dépasse le nombre seuil, l’opération de déplacement est effectuée de façon asynchrone.
 
-1. Appuyez/cliquez sur le logo AEM, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
+1. Appuyez/cliquez sur le logo AEM, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
 1. From the web console, open the **[!UICONTROL Async Move Operation Job Processing]** configuration.
 1. In the **[!UICONTROL Threshold number of assets/references]** box, specify the threshold number of assets/folders or references for asynchronous processing of move operations.
 
