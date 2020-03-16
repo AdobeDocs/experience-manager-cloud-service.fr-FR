@@ -2,7 +2,7 @@
 title: Conseils de développement pour AEM as a Cloud Service
 description: 'À terminer '
 translation-type: tm+mt
-source-git-commit: 9777dd5772ab443b5b3dabbc74ed0d362e52df60
+source-git-commit: a95944055d74a14b2b35649105f284df6afc7e7b
 
 ---
 
@@ -27,23 +27,23 @@ L’état ne doit pas être conservé dans la mémoire mais conservé dans le r�
 
 ## État sur le système de fichiers {#state-on-the-filesystem}
 
-Le système de fichiers de l’instance ne doit pas être utilisé dans AEM en tant que service Cloud. Le disque est éphémère et sera effacé lorsque les instances sont recyclés. L&#39;utilisation limitée du système de fichiers pour le stockage temporaire relatif au traitement des demandes uniques est possible, mais ne doit pas être abusée pour des fichiers énormes. Cela est dû au fait qu’il peut avoir un impact négatif sur le quota d’utilisation des ressources et être soumis à des limitations de disque.
+Le système de fichiers de l’instance ne doit pas être utilisé dans AEM en tant que service Cloud. Le disque est éphémère et sera effacé lorsque les instances sont recyclés. L&#39;utilisation limitée du système de fichiers pour les  temporaires  liés au traitement des demandes uniques est possible, mais ne devrait pas être abusée pour des fichiers énormes. Cela est dû au fait qu’il peut avoir un impact négatif sur le quota d’utilisation des ressources et être soumis à des limitations de disque.
 
-Par exemple, lorsque l’utilisation du système de fichiers n’est pas prise en charge, le niveau Publication doit s’assurer que toutes les données qui doivent être conservées sont expédiées vers un service externe pour un stockage à plus long terme.
+Si l’utilisation du système de fichiers n’est pas prise en charge, le niveau Publier doit s’assurer que toutes les données qui doivent être conservées sont expédiées vers un service externe pour un   plus long terme.
 
 ## Observation {#observation}
 
-Tout ce qui se passe de manière asynchrone comme l&#39;action sur des événements d&#39;observation ne peut pas être exécuté localement et doit donc être utilisé avec soin. Cela est vrai pour les événements JCR et les événements de ressources Sling. Au moment d’un changement, l’instance peut être supprimée et remplacée par une autre instance. Les autres instances de la topologie actives à ce moment pourront réagir à cet événement. Dans ce cas, cependant, il ne s&#39;agira pas d&#39;un événement local et il se pourrait même qu&#39;il n&#39;y ait pas de chef actif dans le cas d&#39;une élection de chef en cours au moment de l&#39;événement.
+Tout ce qui se passe de manière asynchrone, comme l&#39;action sur les d&#39;observation, ne peut pas être garanti qu&#39;il sera exécuté localement et doit donc être utilisé avec soin. Cela est vrai pour les  JCR et pour les  de ressources Sling. Au moment d’un changement, l’instance peut être supprimée et remplacée par une autre instance. D’autres instances de la topologie actives à ce moment-là pourront réagir à cette . Dans ce cas, cependant, il ne s&#39;agira pas d&#39;un  local et il se pourrait même qu&#39;il n&#39;y ait pas de chef actif dans le cas d&#39;une élection de chef en cours au moment de l&#39;émission de la  de.
 
-## Tâches en arrière-plan et tâches à long terme {#background-tasks-and-long-running-jobs}
+##  en arrière-plan et tâches à long terme {#background-tasks-and-long-running-jobs}
 
-Le code exécuté en tant que tâches en arrière-plan doit supposer que l’instance dans laquelle il est exécuté peut être supprimée à tout moment. Par conséquent, le code doit être résilient et la plupart des importations doivent pouvoir être reproduites. Cela signifie que si le code est réexécuté, il ne doit pas recommencer à partir du début mais plutôt à partir de l’endroit où il a été abandonné. Bien qu’il ne s’agisse pas d’une nouvelle exigence pour ce type de code, dans AEM en tant que service Cloud, il est plus probable qu’une suppression d’instance se produise.
+Le code exécuté en tant que d’arrière-plan doit supposer que l’instance dans laquelle il s’exécute peut être supprimée à tout moment. Par conséquent, le code doit être résilient et la plupart des importations doivent pouvoir être reproduites. Cela signifie que si le code est exécuté de nouveau, il ne doit pas s’ à partir du début, mais plutôt à partir de l’endroit où il s’est arrêté. Bien qu’il ne s’agisse pas d’une nouvelle exigence pour ce type de code, dans AEM en tant que service Cloud, il est plus probable qu’une suppression d’instance se produise.
 
-Afin de minimiser les problèmes, il est nécessaire d’éviter les emplois à long terme si possible, et de pouvoir les reprendre au minimum. Pour exécuter de telles tâches, utilisez Sling Jobs, qui dispose d’une garantie au moins une fois ; par conséquent, si elles sont interrompues, elles seront réexécutées dès que possible. Mais ils ne devraient probablement pas recommencer depuis le début. Pour planifier de telles tâches, il est préférable d’utiliser le planificateur des tâches [](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) Sling, car il s’agit à nouveau de l’exécution au moins une fois.
+Afin de minimiser les problèmes, il est nécessaire d’éviter les emplois à long terme si possible, et de pouvoir les reprendre au minimum. Pour exécuter de telles tâches, utilisez Sling Jobs, qui dispose d’une garantie au moins une fois ; par conséquent, si elles sont interrompues, elles seront réexécutées dès que possible. Mais ils ne devraient probablement plus  depuis le début. Pour la planification de telles tâches, il est préférable d’utiliser le Tâches [](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) Sling car il s’agit à nouveau de l’exécution au moins une fois.
 
-Le planificateur Sling Commons ne doit pas être utilisé pour la planification, car l’exécution ne peut pas être garantie. Il est tout simplement plus probable qu&#39;elle soit programmée.
+Le Sling Commons ne doit pas être utilisé pour la planification, car l’exécution ne peut être garantie. Il est tout simplement plus probable qu&#39;elle soit programmée.
 
-De même, avec tout ce qui se passe de manière asynchrone, comme agir sur des événements d’observation (c’est-à-dire des événements JCR ou des événements de ressources Sling), il n’est pas garanti qu’ils soient exécutés et doivent donc être utilisés avec soin. C’est déjà le cas pour les déploiements d’AEM dans le présent.
+De même, avec tout ce qui se passe de manière asynchrone, comme agir sur les d&#39;observation, (en tant que JCR oude ressource Sling), ne peut être garanti d&#39;être exécuté et doit donc être utilisé avec soin. C’est déjà le cas pour les déploiements d’AEM dans le présent.
 
 ## Connexions HTTP sortantes {#outgoing-http-connections}
 
@@ -83,14 +83,37 @@ Le contenu est répliqué de l’auteur à la publication au moyen d’un pub-so
 
 ### Journaux {#logs}
 
-* Pour le développement local, les entrées de journaux sont écrites dans des fichiers locaux.
-   * `./crx-quickstart/logs`
-* Dans les environnements Cloud, les développeurs peuvent télécharger les journaux via Cloud Manager ou utiliser un outil de ligne de commande pour les faire disparaître. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
-* Pour modifier les niveaux de journal des environnements Cloud, il est nécessaire de modifier la configuration OSGI Sling Logging, suivie d’un redéploiement complet. Comme il ne s’agit pas d’une opération instantanée, soyez prudent lorsque vous activez les journaux en détail sur les environnements de production qui reçoivent beaucoup de trafic. Dans le futur, il est possible qu&#39;il y ait des mécanismes pour changer plus rapidement le niveau du journal.
+Pour le développement local, les entrées de journaux sont écrites dans les fichiers locaux du `/crx-quickstart/logs` dossier.
+
+Sur le Cloud  , les développeurs peuvent télécharger les journaux via Cloud Manager ou utiliser un outil de ligne de commande pour les fermer. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+
+**Définition du niveau de journal**
+
+Pour modifier les niveaux de journal pour Cloud  , la configuration OSGI Sling Logging doit être modifiée, suivie d’un redéploiement complet. Comme il ne s’agit pas d’une opération instantanée, veillez à activer les journaux de synthèse sur les  de production  qui reçoivent beaucoup de trafic. Dans le futur, il est possible qu&#39;il y ait des mécanismes pour changer plus rapidement le niveau du journal.
+
+**Activation du niveau de journalisation DEBUG**
+
+Le niveau de journalisation par défaut est INFO, ce qui signifie que les messages DEBUG ne sont pas consignés.
+Pour activer le niveau de journalisation DEBUG, utilisez l’explorateur CRX afin de définir
+
+``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
+
+la propriété à corriger. Ne laissez pas le journal au niveau de débogage DEBUG plus longtemps que nécessaire, car cela génère un grand nombre de journaux.
+Une ligne dans le fichier de débogage commence généralement par DEBUG, puis fournit le niveau de journalisation, l’action d’installation et le message du journal. Par exemple :
+
+``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
+
+Les niveaux de journalisation sont les suivants :
+
+| 0 | Erreur fatale | L&#39;action a échoué et le programme d&#39;installation ne peut pas continuer. |
+|---|---|---|
+| 1 | Erreur | L&#39;action a échoué. L’installation se poursuit, mais une partie de CRX n’a pas été installée correctement et ne fonctionnera pas. |
+| 2 | Avertissement | L&#39;action a réussi mais a rencontré des problèmes. CRX risque de ne pas fonctionner correctement. |
+| 3 | Informations | L&#39;action a réussi. |
 
 ### Thread Dumps {#thread-dumps}
 
-Les vidages de threads dans les environnements Cloud sont collectés en permanence, mais ne peuvent pas être téléchargés en libre-service pour le moment. Dans l’intervalle, contactez le support AEM si des virements de threads sont nécessaires pour déboguer un problème, en spécifiant la fenêtre de temps exacte.
+Les vidages de threads dans Cloud  les  sont collectés de façon continue, mais ne peuvent pas être téléchargés en libre-service pour le moment. Dans l’intervalle, contactez le support AEM si des virements de threads sont nécessaires pour déboguer un problème, en spécifiant la fenêtre de temps exacte.
 
 ## CRX/DE Lite et console système {#crxde-lite-and-system-console}
 
@@ -98,17 +121,17 @@ Les vidages de threads dans les environnements Cloud sont collectés en permanen
 
 Pour le développement local, les développeurs ont un accès complet à CRXDE Lite (`/crx/de`) et à la console Web AEM (`/system/console`).
 
-Notez qu’en cas de développement local (à l’aide du démarrage rapide prêt pour le cloud), `/apps` et `/libs` peuvent être écrits directement, ce qui est différent des environnements Cloud dans lesquels ces dossiers de niveau supérieur sont immuables.
+Notez que lors du développement local (à l’aide du démarrage rapide prêt pour le cloud), `/apps` et `/libs` peut être écrit directement, ce qui est différent du  Cloud  où ces dossiers de niveau supérieur sont immuables.
 
 ### AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
 
-Les clients peuvent accéder à CRXDE Lite sur l’environnement de développement, mais pas sur l’étape ou la production. Le référentiel immuable (`/libs`, `/apps`) ne peut pas être écrit au moment de l’exécution. Toute tentative de ce type entraînera donc des erreurs.
+Les clients peuvent accéder à CRXDE Lite sur le  de développement  mais pas sur l’étape ou la production. Le référentiel immuable (`/libs`, `/apps`) ne peut pas être écrit au moment de l’exécution. Toute tentative de ce type entraînera donc des erreurs.
 
-Un ensemble d’outils pour le débogage d’AEM en tant qu’environnements de développement de services Cloud est disponible dans la Console de développement pour les environnements de développement, d’évaluation et de production. L’URL peut être déterminée en ajustant les URL du service Auteur ou Publier comme suit :
+Un ensemble d’outils pour le débogage d’AEM en tant que développeur de service Cloud  de sont disponibles dans la console de développement pour le développement, l’étape et la production de  de de développement. L’URL peut être déterminée en ajustant les URL du service Auteur ou Publier comme suit :
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
-Vous pouvez, à titre de raccourci, utiliser la commande d’interface de ligne de commande Cloud Manager suivante pour lancer la console de développement en fonction d’un paramètre d’environnement décrit ci-dessous :
+En guise de raccourci, vous pouvez utiliser la commande d’interface de ligne de commande Cloud Manager suivante pour lancer la console de développement en fonction d’un paramètre   de décrit ci-dessous :
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
@@ -126,13 +149,13 @@ Comme illustré ci-dessous, les développeurs peuvent résoudre les dépendances
 
 ![Console de développement 3](/help/implementing/developing/introduction/assets/devconsole3.png)
 
-Également utile pour le débogage, la console Développeur dispose d’un lien vers l’outil Requête d’explication :
+Utile également pour le débogage, la console Développeur dispose d’un lien vers l’outil  d’explication :
 
 ![Console de développement 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
 ### Service de test et de production AEM {#aem-staging-and-production-service}
 
-Les clients n’auront pas accès aux outils de développement pour les environnements de test et de production.
+Les clients n’auront pas accès à l’outil de développement pour l’évaluation et la production  .
 
 ### Surveillance des performances {#performance-monitoring}
 
