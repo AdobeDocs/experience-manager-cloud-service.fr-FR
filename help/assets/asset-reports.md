@@ -3,7 +3,7 @@ title: Rapports de ressources
 description: Cet article décrit les différents rapports relatifs aux ressources dans AEM Assets et comment les générer.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
@@ -18,7 +18,7 @@ La structure de création de rapports dans AEM Assets exploite des tâches Sli
 
 L’interface de gestion de rapports est intuitive et inclut des options et des commandes précises pour accéder aux rapports archivés, ainsi qu’afficher les états d’exécution des rapports (réussite, échec et en file d’attente).
 
-Si un rapport est généré, vous êtes averti par un courrier électronique (facultatif) et une notification dans la boîte de réception. Vous pouvez afficher, télécharger ou supprimer un rapport de la page de liste des rapports, où tous les rapports précédemment générés sont affichés.
+Lorsqu’un rapport est généré, vous êtes averti par <!-- through an email (optional) and --> une notification de boîte de réception. Vous pouvez afficher, télécharger ou supprimer un rapport de la page de liste des rapports, où tous les rapports précédemment générés sont affichés.
 
 ## Génération de rapports {#generate-reports}
 
@@ -36,7 +36,7 @@ AEM Assets génère les rapports standard suivants :
 
 Les administrateurs d’AEM peuvent facilement générer et personnaliser ces rapports pour votre implémentation. Un administrateur peut procéder comme suit pour générer un rapport :
 
-1. Tap/click the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
+1. Appuyez/cliquez sur le logo AEM, puis sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
 
    ![navigation](assets/navigation.png)
 
@@ -47,7 +47,7 @@ Les administrateurs d’AEM peuvent facilement générer et personnaliser ces ra
 
    >[!NOTE]
    >
-   >Avant de générer un rapport **[!UICONTROL Ressource téléchargée]**, assurez-vous que le service de téléchargement de ressources est activé. From the web console (`https://[aem_server]:[port]/system/console/configMgr`), open the **[!UICONTROL Day CQ DAM Event Recorder]** configuration, and select the **[!UICONTROL Asset Downloaded (DOWNLOADED)]** option in Event Types if not already selected.
+   >Avant de pouvoir générer un rapport **[!UICONTROL Ressource téléchargée]**, assurez-vous que le service de téléchargement de ressources est activé. Dans la console web (`https://[aem_server]:[port]/system/console/configMgr`), ouvrez la configuration **[!UICONTROL Enregistreur d’événement Day CQ DAM]**, puis sélectionnez l’option **[!UICONTROL Ressource téléchargée (TÉLÉCHARGÉE)]** dans Types d’événements si elle n’est pas déjà sélectionnée.
 
    >[!NOTE]
    >
@@ -79,9 +79,9 @@ Les administrateurs d’AEM peuvent facilement générer et personnaliser ces ra
 
    ![files_report](assets/files_report.png)
 
-   Le rapport **[!UICONTROL Partage de liens]** affiche les URL des ressources qui sont partagées avec des utilisateurs externes à partir d’AEM Assets. Il inclut les adresses électroniques des utilisateurs ayant partagé les ressources et de ceux avec lesquels les ressources sont partagées, ainsi que la date de partage et la date d’expiration du lien. Les colonnes ne sont pas personnalisables.
+   Le rapport **[!UICONTROL Partage de liens]** affiche des URL vers des ressources partagées avec des utilisateurs externes à partir d’AEM Assets. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> Les colonnes ne sont pas personnalisables.
 
-   The **[!UICONTROL Link Share]** report, does not include options for subfolders and renditions because it merely publishes the shared URLs that appear under */var/dam/share*.
+   Le rapport **[!UICONTROL Partage de liens]** n’inclut pas d’options pour les sous-dossiers et les rendus, car il publie simplement les URL partagées qui apparaissent sous */var/dam/share*.
 
    ![link_share](assets/link_share.png)
 
@@ -96,7 +96,7 @@ Les administrateurs d’AEM peuvent facilement générer et personnaliser ces ra
    ![custom_columns](assets/custom_columns.png)
 
 1. Tap/click **[!UICONTROL Create]** from the toolbar. Un message indique que la génération du rapport a été lancée.
-1. Dans la page Rapports sur les ressources, l’état de génération du rapport dépend de l’état actuel de la tâche du rapport, par exemple Succès, Echec, En file d’attente ou Planifié. Le même état apparaît dans la boîte de réception des notifications.
+1. Dans la page Rapports sur les ressources, l’état de génération du rapport est basé sur l’état actuel de la tâche du rapport, par exemple Succès, Echec, En file d’attente ou Planifié. Le même état apparaît dans la boîte de réception des notifications.
 
    Pour afficher la page du rapport, appuyez/cliquez sur le lien du rapport. Vous pouvez également sélectionner le rapport et appuyez/cliquez sur l’icône Afficher de la barre d’outils.
 
@@ -116,13 +116,13 @@ Vous pouvez ajouter des colonnes personnalisées aux rapports suivants pour affi
 * Publier sur Brand Portal
 * Fichiers
 
-1. Tap/click the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
+1. Appuyez/cliquez sur le logo AEM, puis sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
 1. In the Asset Reports page, tap/click **[!UICONTROL Create]** from the toolbar.
 
 1. Sur la page **[!UICONTROL Créer un rapport]**, sélectionnez le rapport que vous souhaitez créer, puis appuyez/cliquez sur **[!UICONTROL Suivant]**.
 1. Configurez les détails du rapport, tels que le titre, la description, la miniature, le chemin du dossier, la période, et ainsi de suite.
 
-1. Pour afficher une colonne personnalisée, spécifiez son nom sous **[!UICONTROL Colonnes personnalisées]**.
+1. Pour afficher une colonne personnalisée, spécifiez le nom de la colonne dans la section **[!UICONTROL Colonnes personnalisées]**.
 
    ![custom_columns-1](assets/custom_columns-1.png)
 
