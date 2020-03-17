@@ -2,7 +2,7 @@
 title: Conseils de développement pour AEM as a Cloud Service
 description: 'À terminer '
 translation-type: tm+mt
-source-git-commit: a95944055d74a14b2b35649105f284df6afc7e7b
+source-git-commit: 7f4e27d10da1b9cb074223c1c43fc7798942dbe4
 
 ---
 
@@ -91,10 +91,14 @@ Sur le Cloud  , les développeurs peuvent télécharger les journaux via Cloud M
 
 Pour modifier les niveaux de journal pour Cloud  , la configuration OSGI Sling Logging doit être modifiée, suivie d’un redéploiement complet. Comme il ne s’agit pas d’une opération instantanée, veillez à activer les journaux de synthèse sur les  de production  qui reçoivent beaucoup de trafic. Dans le futur, il est possible qu&#39;il y ait des mécanismes pour changer plus rapidement le niveau du journal.
 
+> [!NOTE]
+> 
+> Pour effectuer les modifications de configuration répertoriées ci-dessous, vous devez les créer sur un de développement local  puis les transmettre à AEM en tant qu’instance de service Cloud. Pour plus d’informations sur la procédure à suivre, voir [Déploiement sur AEM en tant que service](/help/implementing/deploying/overview.md)Cloud.
+
 **Activation du niveau de journalisation DEBUG**
 
 Le niveau de journalisation par défaut est INFO, ce qui signifie que les messages DEBUG ne sont pas consignés.
-Pour activer le niveau de journalisation DEBUG, utilisez l’explorateur CRX afin de définir
+Pour activer le niveau du journal DEBUG, définissez la variable
 
 ``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
 
