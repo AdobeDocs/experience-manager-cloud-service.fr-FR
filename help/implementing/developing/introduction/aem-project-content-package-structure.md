@@ -2,7 +2,7 @@
 title: Structure du projet AEM
 description: Découvrez comment définir des structures de packages pour le déploiement vers le service Adobe Experience Manager Cloud.
 translation-type: tm+mt
-source-git-commit: a6efcbb85949e65167ebab0e2a8dae06eaeaa07f
+source-git-commit: fb398147c5a2635f58250b8de886159b4ace2943
 
 ---
 
@@ -394,7 +394,7 @@ Dans la section `ui.apps/pom.xml` et tout autre `pom.xml` qui déclare un packag
         <repositoryStructurePackages>
           <repositoryStructurePackage>
               <groupId>${project.groupId}</groupId>
-              <artifactId>repository-structure-pkg</artifactId>
+              <artifactId>ui.apps.structure</artifactId>
               <version>${project.version}</version>
           </repositoryStructurePackage>
         </repositoryStructurePackages>
