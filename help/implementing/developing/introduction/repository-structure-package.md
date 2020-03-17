@@ -1,15 +1,15 @@
 ---
-title: 'Développement d’un package de structure de référentiel   '
+title: 'Package de structure du référentiel de projet AEM  '
 description: Les projets Adobe Experience Manager en tant que Maven de service Cloud nécessitent une définition de sous-package de structure de référentiel dont le seul objectif est de définir les racines du référentiel JCR dans lesquelles les sous-packages Code du projet sont déployés.
 translation-type: tm+mt
-source-git-commit: 46d556fdf28267a08e5021f613fbbea75872ef21
+source-git-commit: a6efcbb85949e65167ebab0e2a8dae06eaeaa07f
 
 ---
 
 
-# Développement d’un package de structure de référentiel
+# Package de structure du référentiel de projet AEM
 
-Les projets Maven pour Adobe Experience Manager en tant que service Cloud nécessitent une définition de sous-package de structure de référentiel dont le seul objectif est de définir les racines du référentiel JCR dans lesquelles les sous-packages de code du projet sont déployés. Cela permet de s’assurer que l’installation des packs dans Experience Manager en tant que service Cloud est automatiquement commandée par les dépendances des ressources JCR. Les dépendances manquantes peuvent conduire à des scénarios où des sous-structures seraient installées avant leurs structures parents et seraient donc supprimées de manière inattendue, ce qui interromprait le déploiement.
+Les projets Maven pour Adobe Experience Manager en tant que service Cloud nécessitent une définition de sous-package de structure de référentiel dont le seul objectif est de définir les racines du référentiel JCR dans lesquelles les sous-packages de code du projet sont déployés. Cela permet de s’assurer que l’installation des packs dans Experience Manager en tant que service Cloud est automatiquement commandée par les dépendances des ressources JCR. Les dépendances manquantes peuvent conduire à des scénarios dans lesquels des sous-structures seraient installées avant leurs structures parents et seraient donc supprimées de manière inattendue, ce qui interromprait le déploiement.
 
 Si votre package de code se déploie dans un emplacement **non couvert** par le package de code, toutes les ressources ancêtres (ressources JCR plus proches de la racine JCR) doivent être énumérées dans le package de structure du référentiel pour établir ces dépendances.
 
@@ -31,7 +31,7 @@ Pour créer un package de structure de référentiel pour votre projet Maven, cr
 
 Mettez à jour le pour inclure toutes les racines du chemin d’accès au référentiel JCR dans lesquelles vos packages de code sont déployés. `<filters>`
 
-Veillez à ajouter ce nouveau sous-projet Maven à la liste des projets parents `<modules>` .
+Veillez à ajouter ce nouveau sous-projet Maven au `<modules>` de projets parent.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -157,7 +157,7 @@ Si les packages de structure de référentiel ne sont pas correctement configur�
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-Cela indique que le package de code de saut n’a pas `<repositoryStructurePackage>` de liste `/apps/some/path` dans sa liste de filtres.
+Cela indique que le package de code de saut n’a pas de  `<repositoryStructurePackage>` qui  `/apps/some/path` dans son de filtres.
 
 ## Ressources supplémentaires
 
