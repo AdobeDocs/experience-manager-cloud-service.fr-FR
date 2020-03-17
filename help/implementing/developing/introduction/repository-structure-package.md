@@ -2,14 +2,14 @@
 title: 'Package de structure du référentiel de projet AEM  '
 description: Les projets Adobe Experience Manager en tant que Maven de service Cloud nécessitent une définition de sous-package de structure de référentiel dont le seul objectif est de définir les racines du référentiel JCR dans lesquelles les sous-packages Code du projet sont déployés.
 translation-type: tm+mt
-source-git-commit: a6efcbb85949e65167ebab0e2a8dae06eaeaa07f
+source-git-commit: fb398147c5a2635f58250b8de886159b4ace2943
 
 ---
 
 
 # Package de structure du référentiel de projet AEM
 
-Les projets Maven pour Adobe Experience Manager en tant que service Cloud nécessitent une définition de sous-package de structure de référentiel dont le seul objectif est de définir les racines du référentiel JCR dans lesquelles les sous-packages de code du projet sont déployés. Cela permet de s’assurer que l’installation des packs dans Experience Manager en tant que service Cloud est automatiquement commandée par les dépendances des ressources JCR. Les dépendances manquantes peuvent conduire à des scénarios dans lesquels des sous-structures seraient installées avant leurs structures parents et seraient donc supprimées de manière inattendue, ce qui interromprait le déploiement.
+Les projets Maven pour Adobe Experience Manager en tant que service Cloud nécessitent une définition de sous-package de structure de référentiel dont le seul objectif est de définir les racines du référentiel JCR dans lesquelles les sous-packages de code du projet sont déployés. Cela permet de s’assurer que l’installation des packs dans Experience Manager en tant que service Cloud est automatiquement ordonnée par les dépendances des ressources JCR. Les dépendances manquantes peuvent conduire à des scénarios dans lesquels des sous-structures seraient installées avant leurs structures parents et seraient donc supprimées de manière inattendue, ce qui interromprait le déploiement.
 
 Si votre package de code se déploie dans un emplacement **non couvert** par le package de code, toutes les ressources ancêtres (ressources JCR plus proches de la racine JCR) doivent être énumérées dans le package de structure du référentiel pour établir ces dépendances.
 
@@ -51,9 +51,9 @@ Veillez à ajouter ce nouveau sous-projet Maven au `<modules>` de projets parent
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>my-app.repository-structure</artifactId>
+    <artifactId>ui.apps.structure</artifactId>
     <packaging>content-package</packaging>
-    <name>My App - Adobe Experience Manager Repository Structure Package</name>
+    <name>UI Apps Structure - Repository Structure Package for /apps</name>
 
     <description>
         Empty package that defines the structure of the Adobe Experience Manager repository the code packages in this project deploy into.
@@ -66,6 +66,10 @@ Veillez à ajouter ce nouveau sous-projet Maven au `<modules>` de projets parent
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>filevault-package-maven-plugin</artifactId>
                 <extensions>true</extensions>
+                <properties>
+                    <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
+                    <cloudManagerTarget>none</cloudManagerTarget>
+                </properties>
                 <configuration>
                     <properties>
                         <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
@@ -76,14 +80,29 @@ Veillez à ajouter ce nouveau sous-projet Maven au `<modules>` de projets parent
                         <!-- /apps root -->
                         <filter><root>/apps</root></filter>
 
-                        <!-- Common overlay roots -->
-                        <filter><root>/apps/sling</root></filter>
-                        <filter><root>/apps/cq</root></filter>
-                        <filter><root>/apps/dam</root></filter>
-                        <filter><root>/apps/wcm</root></filter>
+                        <!--
+                        Examples of complex roots
 
-                        <!-- Immutable context-aware configurations -->
+
+                        Overlays of /libs typically require defining the overlayed structure, at each level here.
+
+                        For example, adding a new section to the main AEM Tools navigation, necessitates the following rules:
+
+                        <filter><root>/apps/cq</root></filter>
+                        <filter><root>/apps/cq/core</root></filter>
+                        <filter><root>/apps/cq/core/content</root></filter>
+                        <filter><root>/apps/cq/core/content/nav/</root></filter>
+                        <filter><root>/apps/cq/core/content/nav/tools</root></filter>
+
+
+                        Any /apps level Context-aware configurations need to enumerated here. 
+                        
+                        For example, providing email templates under `/apps/settings/notification-templates/com.day.cq.replication` necessitates the following rules:
+
                         <filter><root>/apps/settings</root></filter>
+                        <filter><root>/apps/settings/notification-templates</root></filter>
+                        <filter><root>/apps/settings/notification-templates/com.day.cq.replication</root></filter>
+                        -->
 
                     </filters>
                 </configuration>
@@ -112,7 +131,7 @@ Dans le module `ui.apps/pom.xml`de code et tout autre module `pom.xml`de code, a
         <repositoryStructurePackages>
           <repositoryStructurePackage>
               <groupId>${project.groupId}</groupId>
-              <artifactId>my-app.repository-structure</artifactId>
+              <artifactId>ui.apps.structure</artifactId>
               <version>${project.version}</version>
           </repositoryStructurePackage>
         </repositoryStructurePackages>
@@ -124,7 +143,7 @@ Dans le module `ui.apps/pom.xml`de code et tout autre module `pom.xml`de code, a
     <!-- Add the dependency for the repository structure package so it resolves -->
     <dependency>
         <groupId>${project.groupId}</groupId>
-        <artifactId>my-app.repository-structure</artifactId>
+        <artifactId>ui.apps.structure</artifactId>
         <version>${project.version}</version>
         <type>zip</type>
     </dependency>
