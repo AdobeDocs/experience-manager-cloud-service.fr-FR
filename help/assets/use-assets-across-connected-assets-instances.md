@@ -3,7 +3,7 @@ title: Utilisation des ressources connectées pour partager des ressources DAM d
 description: Utilisez les ressources disponibles sur un déploiement distant d’Adobe Experience Manager Assets lors de la création de vos pages Web sur un autre déploiement de site Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e3835cd4363a01fdf773831aa6f145a62dda6ae3
+source-git-commit: 77494565596f3d7ac04613c057f0fccc8be71eab
 
 ---
 
@@ -164,7 +164,7 @@ Les ressources récupérées peuvent être utilisées comme n’importe quel aut
 * Les schémas de métadonnées ne sont pas récupérés.
 * Tous les auteurs Sites disposent de droits d’accès en lecture sur les copies récupérées, même s’ils n’en n’ont pas sur le déploiement DAM distant.
 * Il n’existe aucune prise en charge API pour personnaliser l’intégration.
-* Cette fonctionnalité permet de rechercher et d’utiliser aisément des ressources distantes. Pour rendre de nombreuses ressources distantes disponibles sur le déploiement local en une fois, envisagez de migrer les ressources. Voir le [guide de migration des ressources](assets-migration-guide.md).
+* Cette fonctionnalité permet de rechercher et d’utiliser aisément des ressources distantes. Pour rendre de nombreuses ressources distantes disponibles sur le déploiement local en une fois, envisagez de migrer les ressources.
 * Il n’est pas possible d’utiliser une ressource distante comme miniature pour une page Web dans l’onglet [!UICONTROL Miniature] des Propriétés [!UICONTROL de la] page en cliquant sur [!UICONTROL Sélectionner l’image].
 
 **Configuration et licence**
