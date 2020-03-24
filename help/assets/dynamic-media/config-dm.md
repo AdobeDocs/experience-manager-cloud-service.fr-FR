@@ -2,7 +2,7 @@
 title: Configuration de Dynamic Media Cloud Service
 description: Informations sur la configuration de Dynamic Media dans Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 91f1a7c89b3c3122a0d1cd3fde4a45c16bcff317
+source-git-commit: 4b9630dfdc8dfc3a621f307f53c48dec415618e5
 
 ---
 
@@ -65,28 +65,32 @@ Pour configurer les Services cloud Dynamic Media :
 
    * **[!UICONTROL Chemin d’accès au dossier racine de l’entreprise]**
 
-   * **[!UICONTROL Publier les ressources]** : l’option **[!UICONTROL Immédiatement]** signifie que lorsque les ressources sont chargées, le système les assimile et fournit instantanément l’URL/le code intégré. Aucune intervention n’est nécessaire de la part de l’utilisateur pour publier des ressources. L’option **[!UICONTROL Lors de l’activation]** (par défaut) signifie que vous devez publier explicitement la ressource avant qu’un lien URL/code intégré ne soit fourni.
+   * **[!UICONTROL Publication de fichiers]** : vous pouvez choisir parmi les trois options suivantes :
+      * **[!UICONTROL Immédiatement]** , cela signifie que lorsque des fichiers sont téléchargés, le système les ingère et fournit instantanément l’URL/l’incorporation. Aucune intervention n’est nécessaire de la part de l’utilisateur pour publier des ressources.
+      * **[!UICONTROL Upon Activation]** (Lors de l’activation) : signifie que vous devez publier explicitement la ressource avant qu’un lien URL/code intégré ne soit fourni.
+<!--       * **[!UICONTROL Selective Publish]** means that assets are auto published for secure preview only and can be explicitly published to AEM without publishing to DMS7 for delivery in the public domain. In the future, Adobe will enhance this option to publish assets to AEM and publish assets to Dynamic Media, mutually exclusive of each other. That is, you can publish assets to DMS7 so you can use features such a Smart Crop or dynamic renditions. Or, you can publish assets exclusively in AEM for previewing; those same assets are not published in DMS7 for delivery in the public domain. -->
 
-   * **[!UICONTROL Serveur d’aperçu sécurisé]** : permet de définir le chemin URL de votre serveur d’aperçu des rendus sécurisé. En d’autres termes, une fois les rendus générés, AEM peut accéder de manière sécurisée aux rendus Dynamic Media distants et en afficher un aperçu (aucune donnée binaire n’est renvoyée à l’instance AEM).
-À moins que vous ayez pris des dispositions spéciales pour utiliser le serveur de votre propre société ou un serveur spécial, Adobe Systems vous conseille de conserver ce paramètre tel que spécifié.
+    * **[!UICONTROL Serveur]de sécurisé*** - vous permet de spécifier le chemin d’URL vers votre serveur de de rendus sécurisés. En d’autres termes, une fois les rendus générés, AEM peut accéder de manière sécurisée aux rendus Dynamic Media distants et en afficher un aperçu (aucune donnée binaire n’est renvoyée à l’instance AEM).
+    À moins que vous ayez pris des dispositions spéciales pour utiliser le serveur de votre propre société ou un serveur spécial, Adobe Systems vous conseille de conserver ce paramètre tel que spécifié.
+    
+    * **[!UICONTROL Synchroniser tout le contenu]** - Sélectionné par défaut. Désélectionnez cette option si vous souhaitez inclure ou exclure des ressources de la synchronisation avec Dynamic Media. La désélection de cette option vous permet de choisir l’un des deux modes de synchronisation Dynamic Media :
+    
+    * **Mode[!UICONTROL de synchronisation des médias]dynamiques**
+    * **[!UICONTROL Activé par défaut]** - La configuration est appliquée par défaut à tous les dossiers, sauf si vous marquez un dossier spécifiquement à des fins d’exclusion. &lt;!— vous pouvez alors désélectionner les dossiers auxquels vous ne souhaitez pas que la configuration soit appliquée.-->
+    * **[!UICONTROL Disabled by default]** - The configuration is not applied to any folder until you explicitly mark a selected folder for sync to Dynamic Media.
+    Pour marquer un dossier sélectionné pour synchronisation avec Dynamic Media, ouvrez la page Propriétés de votre dossier de ressources. Appuyez sur l’onglet **[!UICONTROL Détails]**, puis dans la liste déroulante [!UICONTROL Mode de synchronisation dynamique des médias]**, choisissez l’une des trois options suivantes, puis appuyez sur **[!UICONTROL Enregistrer]**.
+    * **[!UICONTROL Hérité]** - Aucune valeur de synchronisation explicite sur le dossier ; au lieu de cela, le dossier hérite de la valeur de synchronisation de l’un de ses dossiers ancêtres ou du mode par défaut dans la configuration du cloud. Le statut détaillé de l’héritage s’affiche par le biais d’une info-bulle.
+    * **[!UICONTROL Activer pour les sous-dossiers]** - Inclure tout ce qui se trouve dans cette sous-arborescence pour la synchronisation avec Contenu multimédia dynamique. Les paramètres propres au dossier remplacent le mode par défaut dans la configuration du cloud.
+    * **[!UICONTROL Désactivé pour les sous-dossiers]** - Excluez tout ce qui se trouve dans cette sous-arborescence de la synchronisation vers Contenu multimédia dynamique.
 
-   * **[!UICONTROL Synchroniser tout le contenu]** : sélectionné par défaut. Désélectionnez cette option si vous souhaitez inclure ou exclure des ressources de la synchronisation avec Dynamic Media. La désélection de cette option vous permet de choisir l’un des deux modes de synchronisation Dynamic Media :
+>[!NOTE]
+>
+>Le contrôle de version n’est pas pris en charge dans Dynamic Media. En outre, l’activation différée ne s’applique que si l’option **[!UICONTROL Publier des ressources]** dans la page de configuration de Dynamic Media est définie sur **[!UICONTROL Dès l’activation]**, puis uniquement jusqu’à la première activation de la ressource.
+>
+>
+>Une fois qu’une ressource est activée, toutes les mises à jour sont immédiatement publiées en direct sur la livraison S7.
 
-   * **[!UICONTROL Mode de synchronisation Dynamic Media]**
-      * **[!UICONTROL Activé par défaut]** : la configuration s’applique par défaut à tous les dossiers, sauf si vous marquez un dossier spécifiquement à des fins d’exclusion. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
-      * **[!UICONTROL Désactivé par défaut]** : la configuration n’est appliquée à aucun dossier tant que vous ne marquez pas explicitement un dossier sélectionné pour synchronisation avec Dynamic Media.
-Pour marquer un dossier sélectionné pour synchronisation avec Dynamic Media, ouvrez la page Propriétés de votre dossier de ressources. Appuyez sur l’onglet **[!UICONTROL Détails]**, puis dans la liste déroulante **[!UICONTROL Mode de synchronisation Dynamic Media]**, choisissez l’une des trois options suivantes, enfin appuyez sur **[!UICONTROL Enregistrer]**.
-         * **[!UICONTROL Hérité]** : aucune valeur de synchronisation explicite sur le dossier ; au lieu de cela, le dossier hérite de la valeur de synchronisation de l’un de ses dossiers ancêtres ou du mode par défaut dans la configuration du cloud. Le statut détaillé de l’héritage s’affiche par le biais d’une info-bulle.
-         * **[!UICONTROL Activé pour les sous-dossiers]** : incluez tous les éléments de cette sous-arborescence dans la synchronisation avec Dynamic Media. Les paramètres propres au dossier remplacent le mode par défaut dans la configuration du cloud.
-         * **[!UICONTROL Désactivé pour les sous-dossiers]** : excluez tous les éléments de cette sous-arborescence de la synchronisation avec Dynamic Media.
-   >[!NOTE]
-   >
-   >Le contrôle de version n’est pas pris en charge dans Dynamic Media. En outre, l’activation différée ne s’applique que si l’option **[!UICONTROL Publier des ressources]** dans la page de configuration de Dynamic Media est définie sur **[!UICONTROL Dès l’activation]**, puis uniquement jusqu’à la première activation de la ressource.
-   >
-   >
-   >Une fois qu’une ressource est activée, toutes les mises à jour sont immédiatement publiées en direct sur la livraison S7.
-
-   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
+![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. Appuyez sur **[!UICONTROL Enregistrer]**.
 1. Pour afficher l’aperçu du contenu Dynamic Media en toute sécurité avant qu’il ne soit modifié, vous aurez besoin de placer en liste blanche l’instance d’auteur AEM à connecter à Dynamic Media :
