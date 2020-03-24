@@ -2,7 +2,7 @@
 title: Publication de ressources Dynamic Media
 description: Découvrez comment publier des ressources Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
+source-git-commit: c8f8598e3e476af529a87b056e66ddb619a2da0a
 
 ---
 
@@ -11,15 +11,15 @@ source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
 
 You publish your Dynamic Media assets by selecting the assets and tapping **[!UICONTROL Publish]**. Une fois vos fichiers de médias dynamiques publiés, vous pouvez les inclure dans une page Web par URL ou par incorporation.
 
-Vous pouvez également publier instantanément des fichiers que vous téléchargez, sans intervention de l’utilisateur. Voir [Configuration de Dynamic Media](config-dm.md).
+Vous pouvez également publier instantanément des fichiers que vous téléchargez, sans intervention de l’utilisateur. Vous pouvez également publier ces fichiers de manière sélective. Voir [Configuration de Dynamic Media](config-dm.md).
 
-In the **[!UICONTROL Card View]**, a small globe icon appears directly below an asset&#39;s name to indicate that it is published. In the **[!UICONTROL List View]**, a **[!UICONTROL Published]** column indicates which assets are published or which are not.
+Dans le **[!UICONTROL mode Carte]**, une petite icône en forme de globe apparaît directement sous le nom d’un fichier pour indiquer qu’il est publié. En **[!UICONTROL mode Liste]**, une colonne **[!UICONTROL Publié]** indique les fichiers publiés ou non.
 
 >[!NOTE]
 >
 >Si un fichier est déjà publié, vous utilisez AEM pour déplacer le fichier vers un autre dossier et le republier depuis son nouvel emplacement, l’emplacement du fichier publié d’origine est toujours disponible, ainsi que le fichier récemment republié. La ressource publiée d’origine est toutefois &quot;perdue&quot; pour AEM et ne peut pas être annulée. Par conséquent, il est recommandé d’annuler la publication des fichiers avant de les déplacer vers un autre dossier.
 
-Si vous prévoyez de publier des fichiers vidéo immédiatement après leur codage, assurez-vous que le codage est terminé. Lorsque les vidéos sont toujours codées, le système vous informe qu’un processus de traitement vidéo est en cours. Une fois le codage vidéo effectué, vous devez pouvoir prévisualiser les rendus vidéo. A ce stade, vous pouvez publier les vidéos en toute sécurité sans générer d’erreurs de publication.
+Si vous prévoyez de publier des fichiers vidéo immédiatement après leur codage, assurez-vous que le codage est terminé. Lorsque les vidéos sont toujours codées, le système vous informe qu’un processus de traitement vidéo est en cours. Une fois le codage vidéo effectué, vous devez être en mesure de  les rendus vidéo. A ce stade, vous pouvez publier les vidéos en toute sécurité sans générer d’erreurs de publication.
 
 Reportez-vous également à la section [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md).
 
