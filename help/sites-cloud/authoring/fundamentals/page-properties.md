@@ -2,7 +2,7 @@
 title: Modification des propriétés de page
 description: Définissez les propriétés requises pour une page
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
 
 ---
 
@@ -24,7 +24,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Balises**
 
-   * Vous pouvez y ajouter ou supprimer des balises de la page en mettant à jour la liste dans la zone de sélection.
+   * Vous pouvez y ajouter ou supprimer des balises de la page en mettant à jour le dans la zone de sélection.
    * La balise sélectionnée est alors répertoriée sous la zone de sélection. Vous pouvez supprimer une balise de cette liste à l’aide du symbole x.
    * Vous pouvez saisir une nouvelle balise en entrant son nom dans une zone de sélection vide.
       * La nouvelle balise est créée lorsque vous appuyez sur Entrée.
@@ -99,7 +99,7 @@ Les propriétés sont réparties sur plusieurs onglets.
    * Indique un alias à utiliser avec cette page.
    >[!NOTE]
    >
-   >L’alias définit la `sling:alias` propriété pour définir un nom d’alias pour la ressource (cela n’affecte que la ressource, et non le chemin).
+   >L’alias définit la `sling:alias` propriété pour définir un nom d’alias pour la ressource (cela n’affecte que la ressource et non le chemin d’accès).
    >
    >Par exemple : si vous définissez un alias de `latin-lang` pour le noeud `/content/we-retail/spanish` de noeud, cette page est accessible via `/content/we-retail/latin-language`
    >
@@ -172,7 +172,7 @@ Affiche l’image de la miniature de la page. Vous pouvez :
 
    * Définissez les propriétés des services cloud. <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).-->
 
-### Personnalisation  {#personalization}
+### Personnalisation   {#personalization}
 
 * **Configurations ContextHub**
 
@@ -181,6 +181,8 @@ Affiche l’image de la miniature de la page. Vous pouvez :
 * **Configuration du ciblage**
 
    * Sélectionnez [une marque pour spécifier la portée du ciblage](/help/sites-cloud/authoring/personalization/targeted-content.md).
+   >[!NOTE]
+   >Cette option nécessite que le compte utilisateur soit dans le `Target Adminstrators`groupe.
 
 ### Autorisations {#permissions}
 
@@ -215,8 +217,8 @@ Affiche l’image de la miniature de la page. Vous pouvez :
    * Clicking or tapping **Properties**
       * Pour une seule page
       * Pour plusieurs pages (un seul sous-ensemble des propriétés est disponible pour la modification en masse)
-* À partir de l’éditeur de page :
-   * Using **Page Information** (then **Open Properties**)
+* Dans l’éditeur de page :
+   * À l’aide de l’option **Informations sur la page** (puis **Ouvrir les propriétés**)
 
 ### À partir de la console Sites – Une seule page {#from-the-sites-console-single-page}
 
@@ -224,7 +226,7 @@ Cliquez ou appuyez sur **Propriétés** pour définir les propriétés de la pag
 
 1. Dans la console **Sites**, accédez à l’emplacement de la page pour laquelle afficher et modifier les propriétés.
 1. Select the **Properties** option for the required page using either:
-   * [actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
+   * [Actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
    * Les propriétés de la page affichées dans les onglets appropriés.
 1. Affichez ou modifiez les propriétés selon les besoins. 
@@ -236,14 +238,14 @@ Lorsque vous modifiez une page, utilisez les **Informations sur la page** pour d
 
 1. Ouvrez la page pour laquelle vous souhaitez modifier les propriétés.
 1. Sélectionnez l’icône **Informations sur la page** pour ouvrir le menu de sélection :
-1. Select **Open Properties** and a dialog will open allowing you to edit the properties, sorted by the appropriate tab. Les boutons suivants sont également disponibles à droite de la barre d’outils :
+1. Sélectionnez **Ouvrir les propriétés** ; une boîte de dialogue apparaît pour vous permettre de modifier les propriétés, triées selon l’onglet approprié. Les boutons suivants sont également disponibles à droite de la barre d’outils :
    * **Annuler**
    * **Enregistrer et fermer**
 1. Utilisez le bouton **Enregistrer et fermer** pour enregistrer les modifications.
 
 ### À partir de la console Sites – Plusieurs pages {#from-the-sites-console-multiple-pages}
 
-Dans la console **Sites**, vous pouvez sélectionner plusieurs pages, puis utiliser l’option **Afficher les propriétés** pour afficher et/ou modifier les propriétés de la page ; on parle alors de modification en masse des propriétés de page.
+Dans la console **Sites**, vous pouvez sélectionner plusieurs pages, puis utiliser **Afficher les propriétés** pour afficher et/ou modifier les propriétés de la page. On parle alors de modification en masse des propriétés de la page.
 
 >[!NOTE]
 >
@@ -261,7 +263,7 @@ Vous pouvez sélectionner plusieurs pages en vue d’une modification en masse d
 * Lors de l’exploration de la console **Sites**
 * Après avoir utilisé la fonction **Rechercher** pour localiser un ensemble de pages
 
-After selecting the pages and then clicking or tapping the **Properties option**, the bulk properties will be shown:
+Après avoir sélectionné les pages, puis cliqué ou appuyé sur l’option **Propriétés**, les propriétés en bloc s’affichent :
 
 ![Modification en masse des propriétés d’une page](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
 
