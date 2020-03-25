@@ -2,14 +2,14 @@
 title: ' de contenu'
 description: ' de contenu '
 translation-type: tm+mt
-source-git-commit: d1c953e1caf440f18e488f07a32bcf5bc3880f67
+source-git-commit: 91005209eaf0fe1728940c414e28e24960df9e7f
 
 ---
 
 
 #  de contenu dans AEM en tant que service Cloud {#content-delivery}
 
-Le de contenu du service de publication comprend :
+La page actuelle détaille le de contenu du service de publication dans AEM en tant que service Cloud. Le de contenu du service de publication comprend :
 
 * CDN (généralement géré par Adobe)
 * Répartiteur AEM
