@@ -4,7 +4,7 @@ description: Découvrez les différentes méthodes de gestion et de modification
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 913339d0892b37814df1bd04bc352cfadf32b3e6
+source-git-commit: a5853626d61e6e7ea34514f4a5797ae47ce121bf
 
 ---
 
@@ -420,198 +420,199 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
 <!--
 1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
+-->
 
-   >[!NOTE]
-   >
-   >For a non-administrator user, suggestions appear only if the user has Read permissions at `/home` in CRXDE.
+>[!NOTE]
+>
+>For a non-administrator user, suggestions appear only if the user has Read permissions at `/home` in CRXDE.
 
-   ![chlimage_1-235](assets/chlimage_1-235.png)
+![chlimage_1-235](assets/chlimage_1-235.png)
 
-1. After adding the annotation, click **[!UICONTROL Add]** to save it. A notification for the annotation is sent to Aaron.
+1. Après avoir ajouté l’annotation, cliquez sur **[!UICONTROL Ajouter]** pour l’enregistrer. Une notification relative à l’annotation est envoyée à Aaron.
 
    ![chlimage_1-236](assets/chlimage_1-236.png)
 
    >[!NOTE]
    >
-   >You can add multiple annotations, before you save them.
+   >Vous pouvez ajouter plusieurs annotations avant de les enregistrer.
 
-1. Tap/click **[!UICONTROL Close]** to exit from the Annotation mode.
-1. To view the notification, log in to AEM Assets with Aaron MacDonald's credentials and click the **[!UICONTROL Notifications]** icon to view the notification.
+1. Appuyez/cliquez sur **[!UICONTROL Fermer]** pour quitter le mode Annotation.
+1. Pour afficher la notification, connectez-vous à AEM Assets avec les informations d’identification d’Aaron MacDonald et cliquez ensuite sur l’icône **[!UICONTROL Notifications]**.
 
    >[!NOTE]
    >
-   >Annotations can also be added to video assets. While annotating videos, the player pauses to let you annotate on a frame. For details, see [managing video assets](manage-video-assets.md).
+   >Vous pouvez ajouter des annotations à des ressources vidéo. Lorsque vous annotez des vidéos, le lecteur se met en pause pour vous permettre d’ajouter une annotation sur une image. Pour plus d’informations, voir [Gestion de ressources vidéo](manage-video-assets.md).
 
-1. To choose a different color so you can differentiate between users, click/tap the Profile icon and click/tap **[!UICONTROL My Preferences]**.
+1. Pour sélectionner une autre couleur afin de différencier les utilisateurs, cliquez/appuyez sur l’icône Profil et ensuite sur **[!UICONTROL Mes préférences]**.
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
 
-   Specify the desired color in the **[!UICONTROL Annotation Color]** box and then click/tap **[!UICONTROL Accept]**.
+   Indiquez la couleur de votre choix dans la zone **[!UICONTROL Couleur de l’annotation]**, puis cliquez/appuyez sur **[!UICONTROL Accepter]**.
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
 >[!NOTE]
 >
->You can also add annotations to a collection. However, if a collection contains child collections, you can add annotations/comments to the parent collection only. The Annotate option is not available for child collections.
+>Vous pouvez également ajouter des annotations à une collection. Cependant, si une collection contient des collections enfants, vous ne pouvez ajouter des annotations/commentaires qu’à la collection parent. L’option Annoter n’est pas disponible pour les collections enfants.
 
-### View saved annotations {#viewing-saved-annotations}
+### Affichage des annotations enregistrées {#viewing-saved-annotations}
 
-1. To view saved annotations for an asset, navigate to the location of the asset and open the asset page for the asset.
+1. Pour afficher les annotations enregistrées pour une ressource, accédez à l’emplacement de la ressource et ouvrez la page de la ressource.
 
-1. Tap/click the GlobalNav icon, and choose **[!UICONTROL Timeline]** from the list.
+1. Appuyez/cliquez sur l’icône de navigation globale, puis sélectionnez **[!UICONTROL Chronologie]** dans la liste.
 
    ![chlimage_1-239](assets/chlimage_1-239.png)
 
-1. From the **[!UICONTROL Show All]** list in the timeline, select **[!UICONTROL Comments]** to filter the results based on annotations.
+1. Dans la liste **[!UICONTROL Tout afficher]** de la chronologie, sélectionnez **[!UICONTROL Commentaires]** pour filtrer les résultats selon les annotations.
 
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
-   Tap/click a comment in the **[!UICONTROL Timeline]** panel to view the corresponding annotation on the image.
+   Dans le panneau **[!UICONTROL Chronologie]**, appuyez/cliquez sur un commentaire pour afficher l’annotation correspondante sur l’image.
 
    ![chlimage_1-241](assets/chlimage_1-241.png)
 
-   Tap/click **[!UICONTROL Delete]**, to delete a particular comment.
+   Pour supprimer un commentaire spécifique, appuyez/cliquez sur **[!UICONTROL Supprimer]**.
 
-### Print annotations {#printing-annotations}
+### Impression des annotations {#printing-annotations}
 
-If an asset has annotations or it has been subjected to a review workflow, you can print the asset along with annotations and review status as a PDF file for offline review.
+Si une ressource comporte des annotations ou si elle a fait l’objet d’un workflow de révision, vous pouvez l’imprimer avec les annotations et l’état de révision sous la forme d’un fichier PDF en vue d’effectuer une révision hors ligne.
 
-You can also choose to print only the annotations or review status.
+Vous pouvez également choisir de n’imprimer que les annotations ou l’état de révision.
 
-To print the annotations and review status, tap/click the **[!UICONTROL Print]** icon and follow the instructions in the wizard. The **[!UICONTROL Print]** icon appears in the toolbar only when the asset has at least one annotation or review status assigned to it.
+Pour imprimer les annotations et l’état de révision, cliquez/appuyez sur l’icône **[!UICONTROL Imprimer]** et suivez les instructions de l’assistant. L’icône **[!UICONTROL Imprimer]** ne s’affiche dans la barre d’outils que lorsque la ressource est associée à au moins une annotation ou un état de révision.
 
-1. From the Assets UI, open the preview page for an asset.
-1. Do one of the following:
+1. Ouvrez la page d’aperçu d’une ressource à partir de l’interface utilisateur d’Assets.
+1. Utilisez l’une des méthodes suivantes :
 
-    * To print all the annotations and the review status, skip step 3 and directly go to step 4.
-    * To print specific annotations and review status, open the [timeline](/help/assets/manage-digital-assets.md#timeline) and then go to step 3.
+   * Pour imprimer toutes les annotations et l’état de révision, ignorez l’étape 3 et passez directement à l’étape 4.
+   * Pour imprimer des annotations et un état de révision spécifiques, ouvrez la [chronologie](/help/assets/manage-digital-assets.md#timeline), puis passez à l’étape 3.
 
-1. To print specific annotations, select the annotations from the timeline.
+1. Pour imprimer des annotations spécifiques, sélectionnez-les dans la chronologie.
 
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
-   To print the review status only, select it from the timeline.
+   Pour n’imprimer que l’état de révision, sélectionnez-le dans la chronologie.
 
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
-1. Tap/click the **[!UICONTROL Print]** icon from the toolbar.
+1. Appuyez/cliquez sur l’icône **[!UICONTROL Imprimer]** dans la barre d’outils.
 
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
-1. From the Print dialog, choose the position you want the annotations/review status to be displayed on the PDF. For example, if you want the annotations/status to be printed at the top-right of the page that contains the printed image, use the **Top-Left** setting. It is selected by default.
+1. Dans la boîte de dialogue Imprimer, sélectionnez la position dans laquelle vous souhaitez afficher les annotations/l’état de révision dans le fichier PDF. Par exemple, si vous souhaitez que les annotations ou l’état de révision soient imprimés dans le coin supérieur droit de la page qui contient l’image imprimée, sélectionnez le paramètre **Haut et gauche**. Ce paramètre est sélectionné par défaut.
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 
-   You can choose other settings depending on the position where you want the annotations/status to appear in the printed PDF. If you want the annotations/status to appear in a page that is separate from the printed asset, choose **[!UICONTROL Next Page]**.
+   Vous pouvez choisir d’autres paramètres selon la position à laquelle vous souhaitez que les annotations ou l’état de révision apparaissent dans le document PDF imprimé. Si vous souhaitez que les annotations ou l’état de révision apparaissent sur une page différente de la ressource imprimée, sélectionnez **[!UICONTROL Page suivante]**.
 
    >[!NOTE]
    >
-   >Lengthy annotations may not render properly in the PDF file. For optimal rendering, Adobe recommends that you limit annotations to 50 words.
+   >Il se peut que les annotations trop longues ne s’affichent pas correctement dans le fichier PDF. Pour un rendu optimal, Adobe recommande de limiter la taille des annotations à 50 mots.
 
-1. Tap/click **[!UICONTROL Print]**. Depending upon the option you choose in step 2, the generated PDF displays the annotations/status at the specified position. For example, if you choose to print both annotations and the review status using the **Top-Left** setting, the generated output resembles the PDF file depicted here.
+1. Appuyez/cliquez sur **[!UICONTROL Imprimer]**. En fonction de l’option sélectionnée à l’étape 2, le fichier PDF généré affiche les annotations/l’état de révision à l’emplacement spécifié. Par exemple, si vous choisissez d’imprimer à la fois les annotations et l’état de révision à l’aide du paramètre **Haut et gauche**, vous obtiendrez un fichier PDF comparable à l’illustration ci-dessous.
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
-1. Download or print the PDF using the options at the top-right.
+1. Téléchargez ou imprimez le fichier PDF à l’aide des options situées dans le coin supérieur droit.
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-   To modify the appearance of the rendered PDF file, for example the font color, size, and style, background color of the comments and statuses, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/manage-digital-assets.md#annotating).
+   Pour modifier l’aspect du fichier PDF généré (la couleur, la taille et le style de la police, la couleur d’arrière-plan des commentaires et des états, par exemple), ouvrez la **[!UICONTROL configuration du PDF d’annotation]** dans Configuration Manager et modifiez ensuite les options souhaitées. Par exemple, pour modifier la couleur d’affichage de l’état approuvé, modifiez le code couleur dans le champ correspondant. Pour plus d’informations sur la modification de la couleur de police des annotations, voir [Annotations](/help/assets/manage-digital-assets.md#annotating).
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
-   Return to the rendered PDF file and refresh it. The refreshed PDF reflects the changes you made.
+   Revenez au fichier PDF généré et actualisez-le. Le fichier PDF actualisé affiche désormais les modifications que vous avez effectuées.
 
-## Asset versioning {#asset-versioning}
+## Contrôle de version des ressources {#asset-versioning}
 
-Versioning creates a snapshot of digital assets at a specific point in time. Versioning helps restore assets to a previous state at a later time. For example, if you want to undo a change that you made to an asset, restore the unedited version of the asset.
+Le contrôle de version permet de créer un instantané des ressources numériques à un moment donné. De plus, il aide à restaurer ultérieurement des ressources dans leur état précédent. Par exemple, si vous souhaitez annuler une modification apportée à une ressource, restaurez la version non modifiée de la ressource.
 
-The following are scenarios where you create versions:
+Voici quelques scénarios de création de versions :
 
-* You modify an image in a different application and upload to AEM Assets. A version of the image is created so your original image is not overwritten.
-* You edit the metadata of an asset.
-* You use AEM desktop app to checkout an existing asset and save your changes. A new version is created everytime the asset is saved.
+* Vous modifiez une image dans une autre application et la téléchargez vers AEM Assets. Une version de l’image est créée afin que votre image d’origine ne soit pas remplacée.
+* Vous modifiez les métadonnées d’une ressource.
+* Vous utilisez l’application de bureau AEM pour extraire une ressource existante et enregistrer vos changements. Une version est créée chaque fois que la ressource est enregistrée.
 
-You can also enable automatic versioning through a workflow. When you create a version for an asset, the metadata and renditions are saved along with the version. Renditions are rendered alternatives of the same images, for example, a PNG rendition of an uploaded JPEG file.
+Vous pouvez également activer le contrôle de version automatique à l’aide d’un workflow. Lorsque vous créez une version d’une ressource, les métadonnées et les rendus sont enregistrés avec la version. Les rendus sont d’autres affichages d’une même image (un rendu PNG d’un fichier JPEG téléchargé, par exemple).
 
-The versioning functionality lets you do the following:
+La création de versions permet d’effectuer les opérations suivantes :
 
-* Create a version of an asset.
-* View the current revision for an asset.
-* Restore the asset to a previous version.
+* créer une version d’une ressource ;
+* afficher la révision actuelle d’une ressource ;
+* restaurer une version précédente de la ressource.
 
-1. Navigate to the location of the asset for which you want to create a version, and tap/click it to open its asset page.
+1. Accédez à l’emplacement de la ressource pour laquelle vous souhaitez créer une version et appuyez/cliquez dessus pour afficher la page Ressource correspondante.
 
-1. Tap/click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu.
+1. Appuyez/cliquez sur l’icône de navigation globale, puis sélectionnez **[!UICONTROL Chronologie]** dans le menu.
 
-   ![timeline](assets/timeline.png)
+   ![chronologie](assets/timeline.png)
 
-1. Tap/click the **[!UICONTROL Actions]** (arrow) icon at the bottom to view the available actions you can perform on the asset.
+1. Appuyez/cliquez sur l’icône **[!UICONTROL Actions]** (flèche) dans la partie inférieure pour afficher les actions disponibles que vous pouvez effectuer sur la ressource.
 
    ![chlimage_1-249](assets/chlimage_1-249.png)
 
-1. Tap/click **[!UICONTROL Save as Version]** to create a version for the asset.
+1. Appuyez/cliquez sur **[!UICONTROL Enregistrer comme version]** pour créer une version de la ressource.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. Add a label and comment, and then click **[!UICONTROL Create]** to create a version. Alternatively, tap/click **Cancel** to exit the operation.
+1. Ajoutez un libellé et un commentaire, puis cliquez sur **[!UICONTROL Créer]** pour créer une version. Sinon, appuyez/cliquez sur **Annuler** pour quitter l’opération.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. To view the new version, open the **[!UICONTROL Show All]** list in the timeline from the asset details page or the Assets UI, and choose **[!UICONTROL Versions]**. All versions created for an asset are listed under the timeline tab. You can filter the list to show Versions, by clicking the drop arrow and selecting **[!UICONTROL Versions]** from the list.
+1. Pour afficher la version qui vient d’être créée, ouvrez la liste **[!UICONTROL Tout afficher]** dans la chronologie à partir de la page de détails de la ressource ou de l’interface utilisateur d’Assets et sélectionnez **[!UICONTROL Versions]**. Toutes les versions créées pour une ressource sont répertoriées sous l’onglet Chronologie. Pour filtrer la liste afin d’afficher les versions, cliquez sur la flèche pointant vers le bas et sélectionnez **[!UICONTROL Versions]** dans la liste.
 
    ![versions_option](assets/versions_option.png)
 
-1. Select a specific version for the asset to preview it or enable it to appear in the Assets UI.
+1. Sélectionnez une version spécifique de la ressource pour la prévisualiser ou lui permettre de s’afficher dans l’interface utilisateur d’Assets.
 
    ![select_version](assets/select_version.png)
 
-1. Add a label and comment for the version to revert to the particular version in the Assets UI.
+1. Ajoutez un libellé et un commentaire pour la version afin de rétablir la version spécifique dans l’interface utilisateur d’Assets.
 
    ![save_version](assets/save_version.png)
 
-1. To generate a preview for the version, tap/click **[!UICONTROL Preview Version]**.
-1. To display this version in the Assets UI, select **[!UICONTROL Revert to this Version]**.
-1. To compare between two versions, go to asset page of the asset and tap/click the version to be compared with the current version.
+1. Pour générer un aperçu de la version, appuyez/cliquez sur **[!UICONTROL Aperçu de la version]**.
+1. Pour afficher cette version dans l’interface utilisateur d’Assets, sélectionnez **[!UICONTROL Revenir à cette version]**.
+1. Pour comparer deux versions, accédez à la page de la ressource et appuyez/cliquez sur la version à comparer à la version actuelle.
 
    ![select_version_tocompare](assets/select_version_tocompare.png)
 
-1. From the timeline, select the version you want to compare and drag the slider to the left to superimpose this version over the current version and compare.
+1. Dans la chronologie, sélectionnez la version à comparer, puis faites glisser le curseur vers la gauche pour superposer cette version sur la version actuelle à comparer.
 
    ![compare_versions](assets/compare_versions.png)
 
-### Starte a workflow on an asset {#starting-a-workflow-on-an-asset}
+### Démarrage d’un workflow sur une ressource {#starting-a-workflow-on-an-asset}
 
-1. Navigate to the location of the asset for which you want to start a workflow, and tap/click the asset to open the asset page.
-1. Tap/click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu to display the timeline.
+1. Accédez à l’emplacement de la ressource pour laquelle vous souhaitez commencer un workflow et appuyez/cliquez sur la ressource pour afficher la page Ressource.
+1. Appuyez/cliquez sur l’icône de navigation globale et sélectionnez **[!UICONTROL Chronologie]** dans le menu pour afficher la chronologie.
 
-   ![timeline-1](assets/timeline-1.png)
+   ![chronologie-1](assets/timeline-1.png)
 
-1. Tap/click the **[!UICONTROL Actions]** (arrow) icon at the bottom to open the list of actions available for the asset.
+1. Appuyez/cliquez sur l’icône **[!UICONTROL Actions]** (flèche) dans la partie inférieure pour afficher la liste des actions disponibles pour la ressource.
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
 
-1. Tap/click **[!UICONTROL Start Workflow]** from the list.
+1. Appuyez/cliquez sur **[!UICONTROL Démarrer le processus]** dans la liste.
 
    ![chlimage_1-253](assets/chlimage_1-253.png)
 
-1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
+1. Dans la section **[!UICONTROL Démarrer le processus]**, sélectionnez un modèle de workflow dans la liste.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
-1. (Optional) Specify a title for the workflow, which can be used to reference the workflow instance.
+1. (Facultatif) Spécifiez le titre du workflow, qui peut permettre de référencer l’instance du workflow.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Tap/click **[!UICONTROL Start]** and then tap/click **[!UICONTROL Proceed]** in the dialog to confirm. Each step of workflow is displayed in the timeline as an event.
+1. Appuyez/cliquez sur **[!UICONTROL Démarrer]**, puis cliquez sur **[!UICONTROL Continuer]** dans la boîte de dialogue pour confirmer. Chaque étape du workflow s’affiche en tant qu’événement dans la chronologie.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
 ## Collections {#collections}
 
-A collection is an ordered set of assets. Use collections to share assets between users.
+Une collection est un ensemble de ressources classées. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs.
 
-* A collection can include assets from different locations because they only contain references to these assets. Each collection maintains the referential integrity of assets.
-* You can share collections with multiple users with different privilege levels, including editing, viewing, and so on.
+* Une collection peut comporter des ressources provenant de différents emplacements, car elle ne contient que les références à ces ressources. Chaque collection préserve l’intégrité du référentiel des ressources.
+* Vous pouvez partager des ressources avec plusieurs utilisateurs dont les niveaux de privilèges sont différents (modification, affichage, etc.).
 
-See [Managing Collections](/help/assets/manage-collections.md) for details on collection management.
+Pour plus d’informations sur la gestion des collections, voir [Gestion des collections](/help/assets/manage-collections.md).
