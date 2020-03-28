@@ -3,7 +3,7 @@ title: API HTTP Assets
 description: Découvrez l’implémentation, le modèle de données et les fonctions de l’API Assets HTTP. Utilisez l’API Assets HTTP pour effectuer diverses tâches avec les ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
 
 ---
 
@@ -21,7 +21,7 @@ Pour accéder à l’API, procédez comme suit :
 
 La réponse API est un fichier JSON pour certains types MIME et un code de réponse pour tous les types MIME. La réponse JSON est facultative et peut ne pas être disponible, par exemple pour les fichiers PDF. Vous pouvez faire appel au code de réponse pour d’autres analyses ou actions.
 
-Après l’heure [!UICONTROL de]désactivation, une ressource et ses rendus ne sont pas disponibles via l’interface Web Ressources ou via l’API HTTP. L’API renvoie un message d’erreur 404 si l’heure  d’activation est dans le futur ou si l’heure [!UICONTROL d’] arrêt est dans le passé.
+Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne sont plus disponibles via l’interface web Ressources ou via l’API HTTP. L’API renvoie un message d’erreur 404 si l’heure  d’activation est dans le futur ou si l’heure [!UICONTROL d’] arrêt est dans le passé.
 
 >[!NOTE]
 >
