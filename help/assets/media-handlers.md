@@ -1,16 +1,16 @@
 ---
-title: Traiter les fichiers à l’aide des gestionnaires de médias et des processus
+title: Traiter les fichiers à l’aide des gestionnaires de médias et des  de
 description: En savoir plus sur les différents gestionnaires de médias et sur la façon de les utiliser dans les processus afin d’effectuer des tâches sur les ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
 
 ---
 
 
 # Process assets Using Media Handlers and Workflows {#processing-assets-using-media-handlers-and-workflows}
 
-Les ressources Adobe Experience Manager (AEM) sont fournies avec un ensemble de processus par défaut et de gestionnaires de médias pour traiter les ressources. Le processus définit les tâches générales à exécuter sur les ressources, puis délègue les tâches spécifiques aux gestionnaires de médias, par exemple la génération de miniatures ou l’extraction de métadonnées.
+Les ressources Adobe Experience Manager (AEM) sont fournies avec un ensemble de  par défaut et de gestionnaires de médias pour traiter les ressources. Le processus définit les tâches générales à exécuter sur les ressources, puis délègue les tâches spécifiques aux gestionnaires de médias, par exemple la génération de miniatures ou l’extraction de métadonnées.
 
 Vous pouvez définir un processus qui doit s’exécuter automatiquement lorsqu’une ressource d’un type particulier est téléchargée sur le serveur. Les étapes de traitement sont définies en termes d’une série de gestionnaires de médias AEM Assets. AEM provides some [built in handlers,](#default-media-handlers) and additional ones can be either [custom developed](#creating-a-new-media-handler) or defined by delegating the process to a [command line tool](#command-line-based-media-handler).
 
@@ -18,7 +18,7 @@ Les gestionnaires de médias sont des services au sein des ressources AEM qui ex
 
 >[!NOTE]
 >
->Please refer to the [Assets supported formats](file-format-support.md) page for a description of all the formats supported by AEM Assets as well as features supported for each format.
+>See [Assets supported file formats](file-format-support.md) article for a description of all the formats supported by AEM Assets as well as the features supported for each format.
 
 ## Gestionnaires de médias par défaut {#default-media-handlers}
 
@@ -82,7 +82,7 @@ Les gestionnaires de médias suivants sont disponibles dans AEM Assets et gèren
   <tr>
    <td>OpenOfficeHandler</td>
    <td>com.day.cq.dam.handler.standard.ooxml.OpenOfficeHandler</td>
-   <td>application/vnd.openxmlformats-officedocument.wordprocessingml.document<br /> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet<br /> application/vnd.openxmlformats-officedocument.presentationml.overview<br /><br /> </td>
+   <td>application/vnd.openxmlformats-officedocument.wordprocessingml.<br /> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet<br /> application/vnd.openxmlformats-officedocument.presentationml.overview<br /><br /> </td>
   </tr>
   <tr>
    <td>EPubHandler</td>
@@ -125,7 +125,7 @@ Les gestionnaires de médias peuvent être désactivés ou activés par le biais
 Pour activer/désactiver un gestionnaire de médias :
 
 1. In your browser, navigate to `https://<host>:<port>/system/console/components`.
-1. Cliquez sur **[!UICONTROL Désactiver]** en regard du nom du gestionnaire de médias. Par exemple: `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
+1. Cliquez sur **[!UICONTROL Désactiver]** en regard du nom du gestionnaire de médias. Par exemple : `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
 1. Actualisez la page : une icône s’affiche en regard du gestionnaire de médias pour indiquer qu’il est désactivé.
 1. To enable the media handler, click **[!UICONTROL Enable]** next to the name of the media handler.
 
@@ -172,7 +172,7 @@ L’interface et les classes sont les suivantes :
 
 * `com.day.cq.dam.api.handler.AssetHandler` interface : Cette interface décrit le service qui ajoute la prise en charge de types MIME spécifiques. L’ajout d’un nouveau type MIME nécessite l’implémentation de cette interface. L’interface contient des méthodes pour importer et exporter les documents spécifiques, pour créer des miniatures et extraire des métadonnées.
 * `com.day.cq.dam.core.AbstractAssetHandler` class : Cette classe sert de base à toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités courantes utilisées.
-* `com.day.cq.dam.core.AbstractSubAssetHandler` class :Cette classe sert de base à toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités utilisées communes ainsi que des fonctionnalités utilisées courantes pour l’extraction de sous-ressources.
+* `com.day.cq.dam.core.AbstractSubAssetHandler` class : Cette classe sert de base à toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités utilisées communes ainsi que des fonctionnalités utilisées courantes pour les  de sous-ressources .
 
 <!--
 #### Example: create a specific Text Handler {#example-create-a-specific-text-handler}
@@ -391,7 +391,7 @@ Les conversions suivantes peuvent être automatiquement exécutées et stockées
 
 The `CommandLineProcess` process performs the following operations in the order they are listed:
 
-* Filtre le fichier selon des types MIME spécifiques, le cas échéant.
+* le fichier selon des types MIME spécifiques, le cas échéant.
 * Crée un répertoire temporaire sur le disque hébergeant le serveur AEM.
 * Envoie le fichier d’origine en continu vers le répertoire temporaire.
 * Exécute la commande définie par les arguments de l’étape. La commande est en cours d’exécution dans le répertoire temporaire avec les autorisations de l’utilisateur exécutant AEM.
@@ -407,7 +407,7 @@ Pour ce faire, vous utiliserez ImageMagick. ImageMagick est une suite logicielle
 
 Installez d’abord ImageMagick sur le disque hébergeant le serveur AEM :
 
-1. Install ImageMagick: please refer to the [ImageMagick documentation](https://www.imagemagick.org/script/download.php).
+1. Installer ImageMagick : Voir la documentation [d’ImageMagick](https://www.imagemagick.org/script/download.php).
 1. Configurez l’outil pour pouvoir exécuter la conversion sur la ligne de commande.
 1. To see if the tool is installed properly, run the following command `convert -h` on the command line.
 
@@ -461,7 +461,7 @@ The values of the **Process Arguments** must be separated by a comma and must no
   </tr>
   <tr>
    <td> cmd : &lt;command&gt;</td>
-   <td><p>Définit la commande qui sera exécutée. La syntaxe dépend de l’outil de ligne de commande.</p> <p>Une seule commande peut être définie.</p> <p>Vous pouvez utiliser les variables suivantes pour créer la commande :<br/></p> <p><code>${filename}</code>: nom du fichier d’entrée, par exemple `original.jpg`<br/><code>${file}</code>: nom du chemin d’accès complet du fichier d’entrée, par exemple, "/tmp/cqdam0816.tmp/original.jpg`<br/><code>${directory}</code>: du fichier d’entrée, par exemple "/tmp/cqdam0816.tmp".<br/> <code>${basename}</code>: nom du fichier d’entrée sans son extension, par exemple original<br/><code>${extension}</code>: extension du fichier d’entrée, par exemple JPG<br/></p></td>
+   <td><p>Définit la commande qui sera exécutée. La syntaxe dépend de l’outil de ligne de commande.</p> <p>Une seule commande peut être définie.</p> <p>Vous pouvez utiliser les variables suivantes pour créer la commande :<br/></p> <p><code>${filename}</code>: nom du fichier d’entrée, par exemple `original.jpg`<br/><code>${file}</code>: nom complet du chemin d’accès du fichier d’entrée, par exemple, "/tmp/cqdam0816.tmp/original.jpg`<br/><code>${directory}</code>: du fichier d’entrée, par exemple "/tmp/cqdam0816.tmp".<br/> <code>${basename}</code>: nom du fichier d’entrée sans son extension, par exemple original<br/><code>${extension}</code>: extension du fichier d’entrée, par exemple JPG<br/></p></td>
   </tr>
  </tbody>
 </table>
