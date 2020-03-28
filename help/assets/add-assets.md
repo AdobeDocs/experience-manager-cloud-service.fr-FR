@@ -1,23 +1,23 @@
 ---
-title: Ajout de vos ressources numériques à Adobe Experience Manager
-description: Ajout de vos ressources numériques à Adobe Experience Manager en tant que service Cloud
+title: Ajouter vos ressources numériques dans Adobe Experience Manager
+description: Ajouter vos ressources numériques dans Adobe Experience Manager en tant que service Cloud
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
 
 ---
 
 
-# Ajout de ressources numériques à Adobe Experience Manager {#add-assets-to-experience-manager}
+# Ajouter de ressources numériques dans Adobe Experience Manager {#add-assets-to-experience-manager}
 
 Le téléchargement de vos fichiers numériques vers Adobe Experience Manager enrichit le contenu binaire du fichier avec des métadonnées enrichies, des balises intelligentes, des rendus et d’autres services de gestion des actifs numériques (DAM). Vous pouvez télécharger divers types de fichiers (images, fichiers PDF, fichiers bruts, etc.) depuis votre dossier local ou un lecteur réseau vers Experience Manager Assets.
 
-Plusieurs méthodes de téléchargement sont fournies. Outre le téléchargement de navigateur le plus souvent utilisé, il existe d’autres méthodes pour ajouter des ressources au référentiel Experience Manager, notamment des clients de bureau, tels qu’Adobe Asset Link ou l’application de bureau Experience Manager, des scripts de téléchargement et d’assimilation que les clients créeraient et des intégrations d’assimilation automatisées ajoutées en tant qu’extensions AEM.
+Un certain nombre de méthodes de téléchargement sont fournies. Outre le téléchargement de navigateur le plus souvent utilisé, il existe d’autres méthodes pour ajouter des ressources au référentiel Experience Manager, notamment des clients de bureau, tels qu’Adobe Asset Link ou l’application de bureau Experience Manager, des scripts de téléchargement et d’assimilation que les clients créeraient et des intégrations d’assimilation automatisées ajoutées en tant qu’extensions AEM.
 
 Nous allons nous concentrer sur les méthodes de téléchargement pour les utilisateurs finaux ici et fournir des liens vers des articles décrivant les aspects techniques du transfert et de l’assimilation de ressources à l’aide des API et des SDK Experience Manager.
 
-Bien que vous puissiez télécharger et gérer n’importe quel fichier binaire dans Experience Manager, les formats de fichier les plus courants prennent en charge des services supplémentaires, tels que l’extraction de métadonnées ou la génération d’aperçus/rendus. Pour plus d’informations, reportez-vous aux formats [de fichier](file-format-support.md) pris en charge.
+Bien que vous puissiez télécharger et gérer n’importe quel fichier binaire dans Experience Manager, les formats de fichier les plus couramment utilisés prennent en charge des services supplémentaires, tels que les métadonnées   ou la génération de/rendus. Pour plus d’informations, reportez-vous aux formats [de fichier](file-format-support.md) pris en charge.
 
-Vous pouvez également choisir d’effectuer un traitement supplémentaire sur les fichiers téléchargés. Un certain nombre de profils de traitement de fichiers peuvent être configurés sur le dossier, dans lequel les fichiers sont téléchargés, pour ajouter des métadonnées, des rendus ou des services de traitement d’images spécifiques. Voir Traitement [supplémentaire](#additional-processing) ci-dessous pour plus d’informations.
+Vous pouvez également choisir d’effectuer un traitement supplémentaire sur les fichiers téléchargés. Il est possible de configurer un certain nombre de de traitement des fichiers sur le dossier, dans lequel les fichiers sont téléchargés, afin d’ajouter des métadonnées, des rendus ou des services de traitement d’images spécifiques. Pour plus d’informations, voir Traitement [supplémentaire](#additional-processing) ci-dessous.
 
 > [!NOTE]
 >
@@ -25,7 +25,7 @@ Vous pouvez également choisir d’effectuer un traitement supplémentaire sur l
 >
 > Le code de téléchargement personnalisé ou étendu par les équipes techniques des clients doit utiliser les nouvelles API et les nouveaux protocoles de téléchargement.
 
-## Upload assets {#upload-assets}
+## Chargement des ressources {#upload-assets}
 
 Pour télécharger un fichier (ou plusieurs fichiers), vous pouvez les sélectionner sur votre bureau et les faire glisser dans l’interface utilisateur (navigateur Web) vers le dossier de destination. Vous pouvez également lancer le téléchargement à partir de l’interface utilisateur.
 
@@ -64,7 +64,7 @@ Pour télécharger un fichier (ou plusieurs fichiers), vous pouvez les sélectio
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
 
-<!-- #ENGCHECK assuming this is not relevant? please remove after confirming#
+<!-- #ENGCHECK assuming this is not relevant? remove after confirming#
    During the upload operation, AEM saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, AEM consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
@@ -77,7 +77,7 @@ De plus, l’interface utilisateur Assets affiche la ressource la plus récente 
 
 > [!NOTE]
 >
-> Si vous devez télécharger des hiérarchies de dossiers imbriqués vers AEM, reportez-vous à la section Téléchargement [en masse des ressources](#bulk-upload)
+> Pour télécharger des hiérarchies de dossiers imbriqués vers AEM, reportez-vous à la page Téléchargement [en masse de ressources](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -110,7 +110,7 @@ Vous pouvez choisir de remplacer une ressource existante, de créer une autre ve
 >
 >Si l’option Statistiques des ressources est activée pour effectuer le suivi des impressions/clics avec Adobe Analytics, l’ID de ressource régénéré invalide les données capturées pour la ressource sur Analytics.
 
-Pour conserver la ressource en double dans les ressources AEM, appuyez/cliquez sur **[!UICONTROL Conserver]**. Pour supprimer le fichier en double que vous avez téléchargé, appuyez/cliquez sur **[!UICONTROL Supprimer]**.
+Pour conserver la ressource  dans AEM Assets, appuyez/cliquez sur **[!UICONTROL Conserver]**. Pour supprimer le fichier  que vous avez téléchargé, appuyez/cliquez sur **[!UICONTROL Supprimer]**.
 
 ### Gestion des noms de fichier et caractères interdits {#filename-handling}
 
@@ -138,24 +138,24 @@ Pour télécharger un plus grand nombre de fichiers, notamment s’ils existent 
 
 Outre l’interface utilisateur du navigateur Web, Experience Manager prend en charge d’autres clients sur le bureau. Ils fournissent également une expérience de téléchargement sans avoir à accéder au navigateur Web.
 
-* [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) permet d’accéder aux ressources d’AEM dans les applications de bureau Adobe Photoshop, Adobe Illustrator et Adobe InDesign. Vous pouvez télécharger le document actuellement ouvert dans AEM directement depuis l’interface utilisateur d’Adobe Asset Link depuis ces applications de bureau.
-* [L’application](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) de bureau Experience Manager simplifie l’utilisation des ressources sur le bureau, indépendamment du type de fichier ou de l’application native qui les gère. Il est particulièrement utile de télécharger des fichiers dans des hiérarchies de dossiers imbriqués à partir de votre système de fichiers local, car le téléchargement de navigateur ne prend en charge que le téléchargement de listes de fichiers plats.
+* [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) permet d’accéder aux ressources d’AEM dans les applications de bureau Adobe Photoshop, Adobe Illustrator et Adobe InDesign. Vous pouvez télécharger le  actuellement ouvert dans AEM directement depuis l’interface utilisateur d’Adobe Asset Link depuis ces applications de bureau.
+* [L’application](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) de bureau Experience Manager simplifie l’utilisation des ressources sur le bureau, indépendamment du type de fichier ou de l’application native qui les gère. Il est particulièrement utile de télécharger des fichiers dans des hiérarchies de dossiers imbriqués à partir de votre système de fichiers local, car le téléchargement de navigateur ne prend en charge que le téléchargement de  de fichiers plats.
 
 ## Traitement supplémentaire {#additional-processing}
 
-Pour effectuer un traitement supplémentaire sur les fichiers téléchargés, vous pouvez utiliser les profils de traitement des fichiers sur le dossier, dans lequel les fichiers sont téléchargés. Ils sont disponibles dans la boîte de dialogue **[!UICONTROL Propriétés]** du dossier.
+Pour effectuer un traitement supplémentaire sur les ressources téléchargées, vous pouvez utiliser le de traitement des ressources  le du dossier dans lequel les ressources sont téléchargées. Ils sont disponibles dans la boîte de dialogue **[!UICONTROL Propriétés]** du dossier.
 
 ![assets-folder-properties](assets/assets-folder-properties.png)
 
-Les profils suivants sont disponibles :
+Les  suivantes sont disponibles :
 
-* [Les profils](metadata-profiles.md) de métadonnées vous permettent d’appliquer des propriétés de métadonnées par défaut aux fichiers téléchargés dans ce dossier.
-* [Les profils](asset-microservices-configure-and-use.md#processing-profiles) de traitement vous permettent d’appliquer le traitement des rendus et de générer des rendus en plus des rendus par défaut.
+* [Le](metadata-profiles.md) de métadonnées vous permet d’appliquer les propriétés de métadonnées par défaut aux fichiers téléchargés dans ce dossier.
+* [Le](asset-microservices-configure-and-use.md#processing-profiles) de traitement vous permet d’appliquer le traitement des rendus et de générer des rendus en plus des rendus par défaut.
 
-De plus, si Contenu multimédia dynamique est activé dans votre environnement :
+De plus, si le module Contenu multimédia dynamique est activé dans votre   :
 
-* [Les profils](dynamic-media/image-profiles.md) d’image vous permettent d’appliquer un recadrage spécifique (**[!UICONTROL recadrage]** dynamique et recadrage de pixels) et une configuration d’accentuation aux fichiers téléchargés.
-* [Les profils](dynamic-media/video-profiles.md) vidéo vous permettent d’appliquer des profils de codage vidéo spécifiques (résolution, format, paramètres).
+* [Les profils d’image](dynamic-media/image-profiles.md) vous permettent d’appliquer un recadrage spécifique (**[!UICONTROL recadrage intelligent]** et recadrage de pixels) et une configuration d’accentuation aux fichiers téléchargés.
+* [Le](dynamic-media/video-profiles.md) vidéo vous permet d’appliquer un de codage vidéo spécifique (résolution, format, paramètres).
 
 > [!NOTE]
 >
