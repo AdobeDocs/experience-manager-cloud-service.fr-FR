@@ -3,12 +3,12 @@ title: 'API Ressources pour la gestion des ressources numériques dans Adobe Exp
 description: Les API Ressources permettent aux opérations de base de création-lecture-mise à jour-suppression (CRUD) de gérer les ressources, notamment les fichiers binaires, les métadonnées, les rendus, les commentaires et les fragments de contenu.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: ab79c3dabb658e242df08ed065ce99499c9b7357
 
 ---
 
 
-# Ressources en tant qu’API de service Cloud {#assets-cloud-service-apis}
+# Assets as a Cloud Service APIs {#assets-cloud-service-apis}
 
 <!-- 
 Give a list of and overview of all reference information available.
@@ -20,11 +20,11 @@ Give a list of and overview of all reference information available.
 
 ## Transfert de ressources {#asset-upload-technical}
 
-Experience Manager en tant que service cloud offre une nouvelle méthode de transfert des ressources vers le référentiel : le transfert binaire direct vers le stockage binaire en mode cloud. Cette section présente son aperçu technique.
+Experience Manager en tant que service cloud offre une nouvelle méthode de téléchargement des ressources vers le référentiel : le transfert binaire direct vers le cloud binaire  le. Cette section présente son aperçu technique.
 
 ### Présentation du téléchargement binaire direct {#overview-binary-upload}
 
-L’algorithme de haut niveau pour télécharger un fichier binaire est :
+L’algorithme de haut niveau pour télécharger un fichier binaire est le suivant :
 
 1. Envoyez une requête HTTP informant AEM de l’intention de télécharger un nouveau binaire.
 1. Publiez le contenu du binaire sur un ou plusieurs URI fournis par la demande d’initialisation.
@@ -34,8 +34,8 @@ L’algorithme de haut niveau pour télécharger un fichier binaire est :
 
 Les différences importantes par rapport aux versions antérieures d’AEM sont les suivantes :
 
-* Les binaires ne passent pas par AEM, qui coordonne simplement le processus de téléchargement avec le stockage binaire cloud configuré pour le déploiement
-* Le stockage dans le cloud binaire est orienté par un réseau de diffusion de contenu (CDN, Edge Network), qui rapproche le point de fin de transfert du client, ce qui contribue à améliorer les performances de transfert et l’expérience utilisateur, en particulier pour les équipes distribuées qui téléchargent des fichiers
+* Les binaires ne passent pas par AEM, qui se contente maintenant de coordonner le processus de téléchargement avec le cloud binaire  le  configuré pour le déploiement
+* Le de cloud binaire   est dirigé par un réseau Content (CDN, Edge Network), qui rapproche le point de fin de transfert du client, ce qui contribue à améliorer les performances de transfert et l’expérience utilisateur, en particulier pour les équipes distribuées qui téléchargent des ressources.
 
 Cette approche doit permettre une gestion plus évolutive et plus performante des transferts de ressources.
 
@@ -44,7 +44,7 @@ Pour consulter le code client qui implémente cette approche, reportez-vous à l
 
 ### Lancer le transfert {#initiate-upload}
 
-La première étape consiste à envoyer une requête HTTP POST au dossier où la ressource doit être créée ou mise à jour ; incluez le sélecteur `.initiateUpload.json` pour indiquer que la requête doit commencer un téléchargement binaire. Par exemple, le chemin d’accès au dossier dans lequel le fichier doit être créé est `/assets/folder`:
+La première étape consiste à envoyer une requête HTTP POST au dossier dans lequel la ressource doit être créée ou mise à jour ; incluez le sélecteur `.initiateUpload.json` pour indiquer que la requête doit commencer un téléchargement binaire. Par exemple, le chemin d’accès au dossier dans lequel le fichier doit être créé est `/assets/folder`:
 
 ```
 POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
@@ -76,13 +76,13 @@ En cas de succès, la requête répondra avec un code d’état 201 et un corps 
 }
 ````
 
-* `(string) completeURI`: URI qui doit être appelé lorsque le chargement du binaire est terminé. Il peut s’agir d’un URI absolu ou relatif, et les clients doivent pouvoir gérer l’un ou l’autre. Par exemple, la valeur peut être `"https://author.acme.com/content/dam.completeUpload.json"` ou `"/content/dam.completeUpload.json"` (voir Téléchargement [complet](#complete-upload)).
+* `(string) completeURI`: URI qui doit être appelé lorsque le téléchargement du binaire est terminé. Il peut s’agir d’un URI absolu ou relatif, et les clients doivent pouvoir gérer l’un ou l’autre. Par exemple, la valeur peut être `"https://author.acme.com/content/dam.completeUpload.json"` ou `"/content/dam.completeUpload.json"` (voir Téléchargement [complet](#complete-upload)).
 * `(string) folderPath`: Chemin d’accès complet au dossier dans lequel le fichier binaire est téléchargé.
-* `(array) (files)`: Liste des éléments dont la longueur et l’ordre correspondent à la longueur et à l’ordre de la liste des informations binaires fournies dans la demande de lancement.
+* `(array) (files)`: d’éléments dont la longueur et l’ordre correspondent à la longueur et à l’ordre du d’informations binaires fournies dans la demande de lancement.
 * `(string) fileName`: Nom du binaire correspondant, tel qu’il est fourni dans la demande de lancement. Cette valeur doit être incluse dans la requête complète.
 * `(string) mimeType`: Type MIME du binaire correspondant, tel qu’il est fourni dans la requête de lancement in. Cette valeur doit être incluse dans la requête complète.
 * `(string) uploadToken`: Jeton de téléchargement pour le binaire correspondant. Cette valeur doit être incluse dans la requête complète.
-* `(array) uploadURIs`: Liste des chaînes dont les valeurs sont des URI complets vers lesquels le contenu du binaire doit être téléchargé (voir [Téléchargement du binaire](#upload-binary)).
+* `(array) uploadURIs`: de chaînes dont les valeurs sont des URI complets vers lesquels le contenu du binaire doit être téléchargé (voir [Téléchargement du binaire](#upload-binary)).
 * `(number) minPartSize`: Longueur minimale, en octets, des données pouvant être fournies à l’un des URI de téléchargement, s’il existe plusieurs URI.
 * `(number) maxPartSize`: Longueur maximale, en octets, des données pouvant être fournies à l’un des URI de téléchargement, s’il existe plusieurs URI.
 
@@ -93,8 +93,8 @@ La sortie du déclenchement d’un transfert comprend une ou plusieurs valeurs U
 Pour ce faire, il est possible de calculer la taille de la pièce en fonction du nombre d’URI de téléchargement fournis par l’API. Exemple supposant que la taille totale du fichier binaire est de 20 000 octets et que le nombre d’URI de téléchargement est de 2 :
 
 * Calculez la taille d’une pièce en divisant la taille totale par le nombre d’URI : 20 000 / 2 = 10 000
-* plage d’octets POST 0-9,999 du binaire au premier URI de la liste des URI de téléchargement
-* La plage d’octets POST est comprise entre 10 000 et 19 999 entre le binaire et le second URI dans la liste des URI de transfert.
+* La plage d’octets POST est comprise entre 0 et 9 999 du binaire et correspond au premier URI du des URI de téléchargement
+* La plage d’octets POST est comprise entre 10 000 et 19 999 entre le binaire et le second URI dans le des URI de téléchargement
 
 En cas de succès, le serveur répond à chaque requête avec un code d’ `201` état.
 
@@ -108,7 +108,7 @@ Une fois toutes les parties d’un fichier binaire téléchargées, l’étape f
 * `(bool) createVersion`: Facultatif. S’il existe déjà une ressource portant le nom spécifié et si elle est vraie, l’instance crée une nouvelle version de la ressource.
 * `(string) versionLabel`: Facultatif. Si une nouvelle version est créée, le libellé qui sera associé à la version.
 * `(string) versionComment`: Facultatif. Si une nouvelle version est créée, les commentaires qui seront associés à la version.
-* `(bool) replace`:Facultatif : Si la valeur est true et qu’un fichier portant le nom spécifié existe déjà, l’instance supprime le fichier, puis le recrée.
+* `(bool) replace`: Facultatif : Si la valeur est true et qu’un fichier portant le nom spécifié existe déjà, l’instance supprime le fichier, puis le recrée.
 
 >!![NOTE]
 >
@@ -129,7 +129,7 @@ Pour en savoir plus sur les algorithmes de téléchargement ou pour créer vos p
 
 ### API de transfert de ressources obsolètes {#deprecated-asset-upload-api}
 
-<!-- #ENGCHECK please review / update the list of deprecated APIs below -->
+<!-- #ENGCHECK review / update the list of deprecated APIs below -->
 
 >[!NOTE]
 Pour Experience Manager en tant que service Cloud, seules les nouvelles API de téléchargement sont prises en charge. Les API d’Experience Manager 6.5 sont obsolètes.
@@ -144,20 +144,20 @@ Les méthodes liées au téléchargement ou à la mise à jour de ressources ou 
 * [Outil de ligne de commande Open Source](https://github.com/adobe/aio-cli-plugin-aem)
 
 
-## Processus de traitement et de post-traitement des ressources {#post-processing-workflows}
+##  de traitement et de post-traitement des ressources {#post-processing-workflows}
 
-La plupart du traitement des ressources est exécuté en fonction de la configuration des profils **[!UICONTROL de]** traitement par des microservices [de](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)ressources et ne nécessite pas d’extensions de développeur.
+La plupart du traitement des ressources est exécuté en fonction de la configuration du **[!UICONTROL de]** traitement par des microservices [de](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)ressources et ne nécessite pas d’extensions de développeur.
 
-Pour la configuration du processus de post-traitement, les processus AEM standard avec extensions (par exemple, des étapes personnalisées peuvent être utilisées). Consultez la sous-section suivante pour comprendre quelles étapes de processus peuvent être utilisées dans les processus de post-traitement des ressources.
+Pour la configuration du processus de post-traitement,  AEM standard avec des extensions (par exemple, des étapes personnalisées peuvent être utilisées). Consultez la sous-section suivante pour comprendre quelles étapes de flux de travail peuvent être utilisées dans le  de post-traitement des ressources.
 
 ### Étapes du flux de travail dans le processus de post-traitement {#post-processing-workflows-steps}
 
 >[!NOTE]
 Cette section s’applique principalement aux clients qui effectuent une mise à jour vers AEM en tant que service Cloud à partir des versions précédentes d’AEM.
 
-En raison d’un nouveau modèle de déploiement introduit avec Experience Manager en tant que service Cloud, certaines étapes de flux de travaux utilisées dans le `DAM Update Asset` flux de travaux avant l’introduction de microservices de ressources peuvent ne plus être prises en charge pour les processus de post-traitement. Notez que la plupart d’entre elles sont remplacées par une configuration et une utilisation beaucoup plus simples des microservices de ressources.
+En raison d’un nouveau modèle de déploiement introduit avec Experience Manager en tant que service Cloud, certaines étapes de flux de travaux utilisées dans le `DAM Update Asset` flux de travaux avant l’introduction de microservices de ressources peuvent ne plus être prises en charge pour les  de post-traitement. Notez que la plupart d’entre elles sont remplacées par une configuration et une utilisation beaucoup plus simples des microservices de ressources.
 
-Vous trouverez ci-dessous une liste des modèles de flux de travaux techniques et de leur niveau de prise en charge dans AEM as a Cloud Service :
+Voici un  de modèles de flux de travaux techniques et de leur niveau de prise en charge dans AEM as a Cloud Service :
 
 ### Etapes de processus prises en charge {#supported-workflow-steps}
 
