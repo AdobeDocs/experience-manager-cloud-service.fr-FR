@@ -3,16 +3,16 @@ title: Formats de fichiers et types MIME pris en charge par Experience Manager A
 description: Formats de fichier et types MIME pris en charge par Experience Manager Assets en tant que service Cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9a7d2cff969a7920eb4fa3597846c11aa16392d9
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
 
 # Assets supported file formats {#supported-file-formats}
 
-Adobe Experience Manager en tant que service Cloud prend en charge les fonctionnalités de base de la gestion de contenu — stockage, gestion des métadonnées en ligne, gestion des versions, téléchargement et téléchargement, etc. — pour tout fichier binaire, quel que soit son format. Adobe Experience Manager Assets prend en charge un large éventail de formats de fichier et chaque fonctionnalité de produit prend en charge différents formats.
+Adobe Experience Manager en tant que service Cloud prend en charge les fonctionnalités de base des  de base —  , gestion des métadonnées en ligne, gestion des versions, téléchargement et téléchargement, etc. — pour tout fichier binaire, quel que soit son format. Adobe Experience Manager Assets prend en charge un large éventail de formats de fichier et chaque fonctionnalité de produit prend en charge différents formats.
 
-En outre, Experience Manager Assets offre une prise en charge étendue pour générer des aperçus et des rendus et extraire des métadonnées et du texte pour l’indexation en texte intégral. Cette prise en charge étendue est assurée à l’aide de microservices [de](asset-microservices-configure-and-use.md)ressources.
+En outre, Experience Manager Assets offre une prise en charge étendue pour générer des  et des rendus et pour extraire des métadonnées et du texte pour l’indexation en texte intégral. Cette prise en charge étendue est assurée à l’aide de microservices [de](asset-microservices-configure-and-use.md)ressources.
 
 La légende suivante décrit le niveau de prise en charge.
 
@@ -27,9 +27,9 @@ La légende suivante décrit le niveau de prise en charge.
 En voici un aperçu :
 
 * Formats [de fichiers](#adobe-formats) Adobe clés générés par les applications et services Adobe, notamment Adobe Photoshop, InDesign, Illustrator, XD, Dimension et Acrobat / PDF.
-* Formats [de fichiers](#image-formats)d’imagerie clés.
+* Formats [de fichier](#image-formats)d’image clés.
 * [Formats](#camera-raw-formats) de fichiers Camera Raw pour un large éventail d’appareils photo, dont Canon, Nikon, Fujifilm, Olympus et d’autres fabricants (optimisés par Adobe Camera Raw).
-* Formats [de](#document-formats)document courants, y compris les formats [Microsoft Office](#microsoft-office-formats) (Word, Excel, PowerPoint) et [Open Document](#opendocument-formats) .
+* Formats [de](#document-formats)courants, y compris les formats [Microsoft Office](#microsoft-office-formats) (Word, Excel, PowerPoint) et [Open](#opendocument-formats) .
 * Large éventail de formats [vidéo](#video-formats) et [audio.](#audio-formats)
 
 Les colonnes des tableaux suivants fournissent les informations suivantes :
@@ -40,8 +40,8 @@ Les colonnes des tableaux suivants fournissent les informations suivantes :
 | GIF | Format GIF pour la génération de rendu |
 | JPEG | Format JPEG pour la génération de rendu |
 | PNG | Format PNG pour la génération de rendu |
-| XMP | Extraction des métadonnées du fichier binaire d’origine |
-| TXT | Extraction de texte du document pour indexation |
+| XMP |   de métadonnées du binaire d’origine |
+| TXT |   de texte de l’ pour l’indexation |
 | Largeur/Hauteur | Prise en charge de la définition de la largeur et de la hauteur d’un rendu (pixels) |
 
 ### Formats Adobe {#adobe-formats}
@@ -60,7 +60,7 @@ Les colonnes des tableaux suivants fournissent les informations suivantes :
 | PSD | ✓ | ✓ | ✓ | - | ✓ | ✓ |
 | XD | ✓ | ✓ | ✓ | - | ✓ | ✓ |
 
-\* Pour les fichiers INDD (InDesign), la taille du rendu est déterminée par l’aperçu incorporé dans le fichier INDD. Configurez les préférences dans InDesign (**[!UICONTROL Préférences > Gestion des fichiers > Toujours enregistrer les images d’aperçu avec les documents, Taille]** d’aperçu) pour incorporer un rendu plus grand.
+\* Dans le cas des fichiers INDD (InDesign), la taille du rendu est déterminée par le  incorporé dans le fichier INDD. Configurez les préférences dans InDesign (**[!UICONTROL Préférences > Gestion des fichiers > Toujours enregistrer les images de  avec des  de, taille]** de la) pour incorporer un rendu plus grand.
 
 ### Formats d’image {#image-formats}
 
@@ -74,7 +74,7 @@ Les colonnes des tableaux suivants fournissent les informations suivantes :
 | SVG | - | - | - | ✓ | - |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-### Format Camera RAW {#camera-raw-formats}
+### Formats Camera RAW {#camera-raw-formats}
 
 | Format de fichier | GIF | JPEG | PNG | XMP | Largeur/Hauteur |
 | ----------- | --- | ---- | --- | --- | ------------ |
@@ -106,7 +106,7 @@ Les colonnes des tableaux suivants fournissent les informations suivantes :
 | SRW | ✓ | ✓ | ✓ | ✓ | ✓ |
 | X3F | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-### Formats de document {#document-formats}
+### Format de {#document-formats}
 
 | Format de fichier | TXT | XMP |
 | ----------- | --- | --- |
@@ -169,7 +169,7 @@ Assets as a Cloud Service fournit une prise en charge XMP des formats audio suiv
 
 ## Formats de document pris en charge {#doc-formats}
 
-Les formats de document pris en charge pour les fonctionnalités de gestion des ressources sont les suivants :
+Les formats de  pris en charge pour les fonctionnalités de gestion des ressources sont les suivants.
 
 | Format de fichier | Stockage | Gestion des métadonnées | [Ressources connectées](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|
