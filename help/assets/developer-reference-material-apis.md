@@ -3,7 +3,7 @@ title: 'API Ressources pour la gestion des ressources numériques dans Adobe Exp
 description: Les API Ressources permettent aux opérations de base de création-lecture-mise à jour-suppression (CRUD) de gérer les ressources, notamment les fichiers binaires, les métadonnées, les rendus, les commentaires et les fragments de contenu.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ab79c3dabb658e242df08ed065ce99499c9b7357
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
@@ -55,9 +55,7 @@ Le type de contenu du corps de la requête doit être des données `application/
 * `(string) fileName`: Requis. Nom du fichier tel qu’il apparaîtra dans l’instance.
 * `(number) fileSize`: Requis. Longueur totale, en octets, du binaire à télécharger.
 
-Notez qu’une seule requête peut être utilisée pour lancer des téléchargements pour plusieurs binaires, tant que chaque binaire contient les champs obligatoires.
-
-En cas de succès, la requête répondra avec un code d’état 201 et un corps contenant des données JSON au format suivant :
+Une seule requête peut être utilisée pour lancer des téléchargements pour plusieurs binaires, tant que chaque binaire contient les champs obligatoires. En cas de succès, la requête répond par un code d’état et un corps contenant des données JSON au format suivant : `201`
 
 ```
 {
@@ -74,17 +72,17 @@ En cas de succès, la requête répondra avec un code d’état 201 et un corps 
         }
     ]
 }
-````
+```
 
-* `(string) completeURI`: URI qui doit être appelé lorsque le téléchargement du binaire est terminé. Il peut s’agir d’un URI absolu ou relatif, et les clients doivent pouvoir gérer l’un ou l’autre. Par exemple, la valeur peut être `"https://author.acme.com/content/dam.completeUpload.json"` ou `"/content/dam.completeUpload.json"` (voir Téléchargement [complet](#complete-upload)).
-* `(string) folderPath`: Chemin d’accès complet au dossier dans lequel le fichier binaire est téléchargé.
-* `(array) (files)`: d’éléments dont la longueur et l’ordre correspondent à la longueur et à l’ordre du d’informations binaires fournies dans la demande de lancement.
-* `(string) fileName`: Nom du binaire correspondant, tel qu’il est fourni dans la demande de lancement. Cette valeur doit être incluse dans la requête complète.
-* `(string) mimeType`: Type MIME du binaire correspondant, tel qu’il est fourni dans la requête de lancement in. Cette valeur doit être incluse dans la requête complète.
-* `(string) uploadToken`: Jeton de téléchargement pour le binaire correspondant. Cette valeur doit être incluse dans la requête complète.
-* `(array) uploadURIs`: de chaînes dont les valeurs sont des URI complets vers lesquels le contenu du binaire doit être téléchargé (voir [Téléchargement du binaire](#upload-binary)).
-* `(number) minPartSize`: Longueur minimale, en octets, des données pouvant être fournies à l’un des URI de téléchargement, s’il existe plusieurs URI.
-* `(number) maxPartSize`: Longueur maximale, en octets, des données pouvant être fournies à l’un des URI de téléchargement, s’il existe plusieurs URI.
+* `completeURI` (chaîne) : Appelez cet URI lorsque le chargement du fichier binaire est terminé. L&#39;URI peut être un URI absolu ou relatif et les clients doivent pouvoir gérer l&#39;un ou l&#39;autre. En d’autres termes, la valeur peut être `"https://author.acme.com/content/dam.completeUpload.json"` ou `"/content/dam.completeUpload.json"` voir le téléchargement [](#complete-upload)complet.
+* `folderPath` (chaîne) : Chemin d’accès complet au dossier dans lequel le fichier binaire est téléchargé.
+* `(files)` (tableau) : d’éléments dont la longueur et l’ordre correspondent à la longueur et à l’ordre du d’informations binaires fournies dans la demande de lancement.
+* `fileName` (chaîne) : Nom du binaire correspondant, tel qu’il est fourni dans la demande de lancement. Cette valeur doit être incluse dans la requête complète.
+* `mimeType` (chaîne) : Type MIME du binaire correspondant, tel qu’il est fourni dans la requête de lancement in. Cette valeur doit être incluse dans la requête complète.
+* `uploadToken` (chaîne) : Jeton de téléchargement pour le binaire correspondant. Cette valeur doit être incluse dans la requête complète.
+* `uploadURIs` (tableau) : de chaînes dont les valeurs sont des URI complets vers lesquels le contenu du binaire doit être téléchargé (voir [Téléchargement du binaire](#upload-binary)).
+* `minPartSize` (nombre) : Longueur minimale, en octets, des données pouvant être fournies à l’un des URI de téléchargement, s’il existe plusieurs URI.
+* `maxPartSize` (nombre) : Longueur maximale, en octets, des données pouvant être fournies à l’un des URI de téléchargement, s’il existe plusieurs URI.
 
 ### Télécharger le fichier binaire {#upload-binary}
 
