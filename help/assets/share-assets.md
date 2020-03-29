@@ -3,20 +3,20 @@ title: Partage de fichiers, de dossiers et de collections sous forme de lien
 description: Cet article décrit le partage de fichiers, de dossiers et de collections dans les ressources d’Experience Manager sous forme d’hyperlien.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
 
 # Partage et distribution de fichiers gérés dans Experience Manager {#share-assets-from-aem}
 
-Les ressources d’Adobe Experience Manager (AEM) vous permettent de partager des ressources, des dossiers et des collections avec des membres de votre organisation et des entités externes, y compris des partenaires et des fournisseurs. Vous pouvez utiliser les méthodes suivantes pour partager des ressources à partir des ressources Experience Manager en tant que service Cloud :
+Les ressources d’Adobe Experience Manager (AEM) vous permettent de partager des ressources, des dossiers et des collections avec des membres de votre organisation et des entités externes, y compris des partenaires et des fournisseurs. Utilisez les méthodes suivantes pour partager des ressources à partir des ressources Experience Manager en tant que service Cloud :
 
-* Partager en tant que lien
-* Téléchargement de ressources
-* Partager via l’application de bureau AEM
-* Partager via Adobe Asset Link
-* (Fonctionnalité à venir) Partage à l’aide de Brand Portal
+* Partager en tant que lien.
+* Téléchargez des ressources et partagez-les séparément.
+* Partager via l’application de bureau AEM.
+* Partager via Adobe Asset Link.
+* (Fonctionnalité à venir) Partagez à l’aide de Brand Portal.
 
 ## Partage de ressources en tant que lien {#sharelink}
 
@@ -33,7 +33,7 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
 
    >[!NOTE]
    >
-   >Si une ressource partagée est déplacée vers un autre emplacement, son lien cesse de fonctionner. Recréez le lien et partagez-le de nouveau avec les utilisateurs.
+   >Si une ressource partagée est déplacée vers un autre emplacement, son lien cesse de fonctionner. Recréez ce lien et partagez-le de nouveau avec les utilisateurs.
 
 <!--
 ## Share assets as a link {#sharelink}
@@ -110,11 +110,13 @@ Les utilisateurs peuvent télécharger certains fichiers et les partager en deho
 
 Les spécialistes du marketing et les utilisateurs de la ligne d’entreprise peuvent facilement partager des ressources approuvées avec leurs créatifs à l’aide de la fonction
 
-* **Application** de bureau AEM : L’application fonctionne sous Windows et Mac. Reportez-vous à la page Présentation [des applications de](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)bureau. Pour savoir comment un utilisateur de bureau autorisé peut facilement accéder aux ressources partagées, voir [Parcourir, Rechercher et  ressources](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Les utilisateurs de bureau peuvent créer de nouveaux fichiers et les partager avec leurs homologues qui sont des utilisateurs d’AEM, par exemple en téléchargeant de nouvelles images. Voir [Téléchargement de fichiers à l’aide d’une application](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)de bureau.
+* **Application** de bureau AEM : L’application fonctionne sous Windows et Mac. Reportez-vous à la page Présentation [des applications de](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)bureau. Pour savoir comment un utilisateur de bureau autorisé peut facilement accéder aux ressources partagées, voir [Parcourir, Rechercher et  ressources](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Les utilisateurs de bureau peuvent créer des fichiers et les partager avec leurs homologues qui sont des utilisateurs d’AEM, par exemple en téléchargeant de nouvelles images. Voir [Téléchargement de fichiers à l’aide d’une application](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)de bureau.
 
 * **Lien vers** Adobe Asset : Les professionnels de la création peuvent rechercher et utiliser des fichiers directement depuis Adobe InDesign, Adobe Illustrator et Adobe Photoshop.
 
 ## Configuration du partage de ressources {#configure-sharing}
+
+Les différentes options de partage des ressources nécessitent une configuration spécifique et des conditions préalables spécifiques.
 
 ### Configuration du partage de liens de ressources {#asset-link-sharing}
 
@@ -162,7 +164,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Activer les actions de bureau à utiliser avec l’application de bureau {#desktop-actions}
 
-À partir de l’interface utilisateur Assets ouverte dans un navigateur, vous pouvez explorer l’emplacement des ressources ou extraire et ouvrir une ressource pour la modifier dans votre application de bureau. Ces options sont appelées Actions sur le bureau. Si elles ne sont pas activées, reportez-vous à la page [Activation des actions sur le bureau dans l’interface](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)Web d’AEM.
+À partir de l’interface utilisateur Assets ouverte dans un navigateur, vous pouvez explorer l’emplacement des ressources ou extraire et ouvrir une ressource pour la modifier dans votre application de bureau. Ces options sont appelées actions de bureau et pour les activer, voir [Activer les actions de bureau dans l’interface](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)Web d’AEM.
 
 ![Activer les actions de bureau à utiliser comme raccourci lorsque vous travaillez avec une application de bureau](assets/enable_desktop_actions.png)
 
