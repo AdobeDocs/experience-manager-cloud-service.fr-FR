@@ -3,7 +3,7 @@ title: Configuration et utilisation des microservices de ressources pour le trai
 description: Découvrez comment configurer et utiliser les microservices de ressources natifs du cloud pour traiter les ressources à l’échelle.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 45810a3bc5bb333b03d63d56e170388f0a1c082e
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
@@ -11,7 +11,6 @@ source-git-commit: 45810a3bc5bb333b03d63d56e170388f0a1c082e
 # Prise en main des microservices de ressources {#get-started-using-asset-microservices}
 
 <!--
-
 * Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
 * How to access the microservices. UI. API. Is extending possible right now?
 * Detailed list of what file formats and what processing is supported by which workflows/workers process.
@@ -19,14 +18,13 @@ source-git-commit: 45810a3bc5bb333b03d63d56e170388f0a1c082e
 * How to create new config or request for new provisioning/purchase.
 
 * [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
-
 -->
 
-Les microservices de ressources offrent un traitement évolutif et résilient des ressources à l’aide des services cloud, qui sont gérés par Adobe pour une gestion optimale des différents types de ressources et des différentes options de traitement.
+Les microservices de ressources offrent un traitement évolutif et résilient des ressources à l’aide des services cloud. Adobe gère les services pour une gestion optimale des différents types de ressources et des options de traitement.
 
-Le traitement des ressources est effectué en fonction de la configuration du **[!UICONTROL de]** traitement, qui fournit une configuration par défaut et permet à l’administrateur d’ajouter une configuration de traitement des ressources plus spécifique. Pour permettre l’extensibilité et la personnalisation complète, le traitement des ressources permet une configuration facultative des  de post-traitement, qui sont ensuite créées et gérées par l’administrateur.
+Le traitement des ressources dépend de la configuration du **[!UICONTROL de]** traitement, qui fournit une configuration par défaut et permet à un administrateur d’ajouter une configuration de traitement des ressources plus spécifique. Les administrateurs peuvent créer et gérer les configurations des  de post-traitement, y compris la personnalisation facultative. La personnalisation des  de permet l’extensibilité et la personnalisation complète.
 
-Vous trouverez ci-dessous un flux de haut niveau pour le traitement des ressources dans Experience Manager en tant que service Cloud.
+Un flux de haut niveau pour le traitement des ressources est en dessous.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -37,7 +35,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
-> Pour les clients qui effectuent une mise à jour à partir des versions précédentes d’Experience Manager - le traitement des ressources décrit dans cette section remplace le modèle de flux de travaux &quot;Mise à jour des ressources de gestion des actifs numériques&quot; utilisé pour le traitement de l’assimilation des ressources auparavant. La plupart des étapes standard de génération de rendu et liées aux métadonnées sont remplacées par le traitement des microservices de ressources, et les étapes restantes, le cas échéant, peuvent être remplacées par la configuration du processus de post-traitement.
+> Le traitement des ressources décrit ici remplace le modèle de `DAM Update Asset` flux de travail existant dans les versions précédentes d’Experience Manager. La plupart des étapes standard de génération de rendu et liées aux métadonnées sont remplacées par le traitement des microservices de ressources, et les étapes restantes, le cas échéant, peuvent être remplacées par la configuration du processus de post-traitement.
 
 ## Prise en main du traitement des ressources {#get-started}
 
@@ -77,17 +75,18 @@ Des  de traitement supplémentaires peuvent être ajoutées à l’aide de l’a
 
 Chaque configuration de  de traitement inclut un de rendus. Pour chaque rendu, vous pouvez spécifier les éléments suivants :
 
-* nom du rendu
-* format de rendu (JPEG, PNG ou GIF sont pris en charge)
-* largeur et hauteur du rendu en pixels (si elles ne sont pas spécifiées, la taille totale en pixels de l’original est prise en compte)
-* qualité du rendu (pour JPEG) en pourcentage
-* Les types MIME inclus et exclus définissent les types de ressource auxquels le de traitement s’applique.
+* Nom du rendu.
+* Format de rendu pris en charge, tel que JPEG, PNG ou GIF.
+* Largeur et hauteur du rendu en pixels. S’il n’est pas spécifié, la taille totale en pixels de l’image d’origine est utilisée.
+* Qualité du rendu JPEG en pourcentage.
+* Types MIME inclus et exclus pour définir l’applicabilité d’un  de.
 
 ![traitement--ajout](assets/processing-profiles-adding.png)
 
-Lorsqu’un nouveau de traitement est enregistré, il est ajouté au de l’ de traitement configuré. Ces  de traitement peuvent ensuite être appliquées aux dossiers dans la hiérarchie de dossiers afin de les rendre efficaces pour les transferts de ressources et les ressources y effectuées.
+Lorsque vous créez et enregistrez un nouveau de traitement  il est ajouté au de l’ de traitement configuré. Vous pouvez appliquer ces  de traitement aux dossiers dans la hiérarchie de dossiers afin de les rendre efficaces pour le transfert de fichiers et le traitement de fichiers.
 
-![traitement---](assets/processing-profiles-list.png)
+<!-- Removed per cqdoc-15624 request by engineering.
+ ![processing-profiles-list](assets/processing-profiles-list.png) -->
 
 #### Largeur et hauteur du rendu {#rendition-width-height}
 
