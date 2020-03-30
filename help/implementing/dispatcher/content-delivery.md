@@ -2,7 +2,7 @@
 title: ' de contenu'
 description: ' de contenu '
 translation-type: tm+mt
-source-git-commit: 0284a23051bf10cd0b6455492a709f1b9d2bd8c7
+source-git-commit: 00912ea1085da2c50ec79ac35bd53d36fd8a9509
 
 ---
 
@@ -27,20 +27,20 @@ Le flux de données est le suivant :
 
 Le type de contenu HTML/texte est défini pour expirer après 300 s (5 minutes) au niveau de la couche du répartiteur, seuil que le cache du répartiteur et le CDN respectent tous deux. Lors des redéploiements du service de publication, le cache du répartiteur est effacé puis réchauffé avant que les nouveaux noeuds de publication n’acceptent le trafic.
 
-Les sections ci-dessous fournissent des informations plus détaillées sur les  de contenu, notamment la configuration CDN et la mise en cache du répartiteur.
+Les sections ci-dessous fournissent des informations plus détaillées sur les  de contenu, notamment la configuration du CDN et la mise en cache.
 
 Des informations sur la réplication du service d’auteur au service de publication sont disponibles [ici](/help/operations/replication.md).
 
 ## Réseau de diffusion de contenu {#cdn}
 
-Le service AEM as Cloud est fourni avec un CDN par défaut. Son principal objectif est de réduire la latence en diffusant du contenu pouvant être mis en cache à partir des noeuds CDN au bord, près du navigateur. Il est entièrement géré et configuré pour des performances optimales des applications AEM.
+Le service AEM as Cloud est fourni avec un CDN intégré. Son principal objectif est de réduire la latence en diffusant du contenu pouvant être mis en cache à partir des noeuds CDN au bord, près du navigateur. Il est entièrement géré et configuré pour des performances optimales des applications AEM.
 
 Au total, AEM   deux options :
 
 1. CDN géré AEM - CDN prêt à l’emploi d’AEM. Il s’agit d’une option étroitement intégrée qui ne nécessite pas un investissement client important pour prendre en charge l’intégration CDN avec AEM.
 1. Le CDN géré par le client pointe vers le CDN géré AEM - le client pointe son propre CDN vers le CDN prêt à l’emploi d’AEM. Le client devra toujours gérer son propre CDN, mais l’investissement dans l’intégration avec AEM est modéré.
 
-La première option doit répondre à la plupart des exigences de performances et de sécurité du client. De plus, il nécessite le moins d&#39;investissement client et la maintenance continue.
+La première option doit répondre à la plupart des exigences de performances et de sécurité du client. De plus, cela demande un effort client minimal.
 
 La deuxième option sera autorisée au cas par cas. La décision est basée sur la satisfaction de certaines conditions préalables, y compris, mais sans s’y limiter, le client ayant une intégration héritée avec son fournisseur CDN difficile à abandonner.
 
@@ -53,7 +53,7 @@ Vous trouverez ci-dessous une matrice de décision pour comparer les deux option
 | **expertise CDN** | Aucun | Nécessite au moins une ressource d&#39;ingénierie à temps partiel avec une connaissance approfondie du réseau de diffusion de contenu capable de configurer le réseau de diffusion de contenu du client. |
 | **Sécurité** | Géré par Adobe. | Géré par Adobe (et éventuellement par le client sur son propre CDN). |
 | **Les performances** | Optimisé par Adobe. | Bénéficiera de certaines fonctionnalités de CDN AEM, mais peut-être d’un faible accès aux performances en raison du saut supplémentaire. **Remarque**: Des sauts de CDN client à Fast CDN susceptibles d&#39;être efficaces). |
-| **Mise en cache** | Prend en charge les en-têtes de cache appliqués au niveau du répartiteur. | Prend en charge les en-têtes de cache appliqués au niveau du répartiteur. |
+| **Mise en cache** | Prend en charge les en-têtes de cache appliqués au répartiteur. | Prend en charge les en-têtes de cache appliqués au répartiteur. |
 | **Fonctions de compression d’images et de vidéos** | Peut fonctionner avec Adobe Dynamic Media. | Peut fonctionner avec Adobe Dynamic Media ou avec la solution d’image/vidéo CDN gérée par le client. |
 
 ### CDN géré AEM {#aem-managed-cdn}
@@ -62,6 +62,9 @@ La préparation du de contenu à l’aide du CDN prêt à l’emploi d’Adobe e
 
 1. Vous fournirez le certificat SSL et la clé secrète signés à Adobe en partageant un lien vers un formulaire sécurisé contenant ces informations. Veuillez vous coordonner avec le service clientèle sur ce .
    **Remarque :** Aem as a Cloud Service ne prend pas en charge les certificats DV (Domain Validated).
+1. Vous devez informer le service clientèle :
+   * quel domaine personnalisé doit être associé à un   donné, tel que défini par l’ID de et l’ID de.
+   * si une liste blanche d’adresses IP est nécessaire pour limiter le trafic à un   donné.
 1. Le service clientèle coordonnera alors avec vous le timing d’un enregistrement DNS CNAME, en pointant son nom de domaine complet vers `adobe-aem.map.fastly.net`.
 1. Vous serez averti(e) lorsque les certificats SSL arriveront à expiration afin de pouvoir soumettre à nouveau les nouveaux certificats SSL.
 
@@ -90,9 +93,9 @@ Instructions de configuration :
 
 Avant d’accepter le trafic en direct, vous devez vérifier auprès de l’assistance clientèle d’Adobe que le de trafic de bout en bout fonctionne correctement.
 
-### Mise en cache {#caching}
+## Mise en cache {#caching}
 
-Le processus de mise en cache suit les règles présentées ci-dessous.
+La mise en cache sur le CDN peut être configurée à l’aide des règles du répartiteur. Notez que le répartiteur respecte également les en-têtes d’expiration du cache qui en résultent si `enableTTL` est activé dans la configuration du répartiteur, ce qui implique qu’il actualisera un contenu spécifique même en dehors du contenu en cours de republication.
 
 ### HTML/Texte {#html-text}
 
@@ -106,15 +109,15 @@ Vous devez vous assurer qu’un fichier sous `src/conf.dispatcher.d/cache` compo
 { /glob "*" /type "allow" }
 ```
 
-* peut être remplacé par des directives apache mod_headers à un niveau plus fin. Par exemple :
+* peuvent être remplacées à un niveau de grains plus fin par les directives apache mod_headers suivantes :
 
 ```
 <LocationMatch "\.(html)$">
-        Header set Cache-Control "max-age=200 s-maxage=200"
+        Header set Cache-Control "max-age=200"
 </LocationMatch>
 ```
 
-Vous devez vous assurer qu’un fichier sous `src/conf.dispatcher.d/cache` comporte la règle suivante :
+Vous devez vous assurer qu’un fichier sous `src/conf.dispatcher.d/cache` comporte la règle suivante (qui se trouve dans la configuration par défaut) :
 
 ```
 /0000
@@ -128,32 +131,41 @@ Vous devez vous assurer qu’un fichier sous `src/conf.dispatcher.d/cache` compo
 * en utilisant la structure de bibliothèque côté client d’AEM, le code JavaScript et CSS est généré de manière à ce que les navigateurs puissent le mettre en cache indéfiniment, puisque toute modification se manifeste sous la forme de nouveaux fichiers avec un chemin d’accès unique.  En d’autres termes, du code HTML faisant référence aux bibliothèques clientes sera produit au besoin afin que les clients puissent découvrir un nouveau contenu au fur et à mesure de sa publication. Le contrôle du cache est défini sur &quot;immuable&quot; ou 30 jours pour les navigateurs plus anciens qui ne respectent pas la valeur &quot;immuable&quot;.
 * voir la section Bibliothèques côté [client et cohérence](#content-consistency) des versions pour en savoir plus.
 
-### Images {#images}
+### Images et tout contenu suffisamment volumineux pour être stockés dans l’objet blob  {#images}
 
-* non mis en cache
-
-### Autres types de contenu {#other-content}
-
-* aucune mise en cache par défaut
-* peut être remplacé par apache `mod_headers`. Par exemple :
+* par défaut, non mis en cache
+* peuvent être définies à un niveau de granularité plus fin par les directives apache `mod_headers` suivantes :
 
 ```
-<LocationMatch "\.(css|js)$">
-    Header set Cache-Control "max-age=500 s-maxage=500"
+<LocationMatch "^.*.jpeg$">
+    Header set Cache-Control "max-age=222"
 </LocationMatch>
 ```
 
-*D&#39;autres méthodes de définition des en-têtes de cache peuvent également fonctionner
+Il est nécessaire de s’assurer qu’un fichier sous src/conf.dispatcher.d/cache comporte la règle suivante (qui se trouve dans la configuration par défaut) :
 
-Avant d’accepter le trafic en direct, les clients doivent vérifier auprès de l’assistance clientèle d’Adobe que le de trafic de bout en bout fonctionne correctement.
+```
+/0000
+{ /glob "*" /type "allow" }
+```
 
-## Répartiteur {#disp}
+Assurez-vous que les ressources destinées à être conservées en privé plutôt que mises en cache ne font pas partie du  de directive LocationMatch.
+
+* Notez que d’autres méthodes, y compris le projet [](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)dispatcher-ttl AEM ACS Commons, ne remplaceront pas les valeurs.
+
+### Autres types de fichiers de contenu dans le magasin de noeuds {#other-content}
+
+* aucune mise en cache par défaut
+* default ne peut pas être défini avec la `EXPIRATION_TIME` variable utilisée pour les types de fichiers html/texte
+* l’expiration du cache peut être définie avec la même stratégie LocationMatch décrite dans la section html/texte en spécifiant l’expression regex appropriée.
+
+## Dispatcher {#disp}
 
 Le trafic passe par un serveur Web Apache, qui prend en charge les modules, y compris le répartiteur. Le répartiteur est principalement utilisé comme cache pour limiter le traitement sur les noeuds de publication afin d’améliorer les performances.
 
-Le contenu de type HTML/texte est défini avec des en-têtes de cache correspondant à une expiration de 300 s (5 minutes).
+Comme décrit dans la section de mise en cache du CDN, des règles peuvent être appliquées à la configuration du répartiteur pour modifier les paramètres d’expiration du cache par défaut.
 
-Le reste de cette section décrit les considérations liées à l’invalidation du cache du répartiteur.
+Le reste de cette section décrit les considérations liées à l’invalidation du cache du répartiteur. Pour la plupart des clients, il ne doit pas être nécessaire d’invalider le cache du répartiteur, mais plutôt de compter sur le répartiteur pour actualiser son cache lors de la republication du contenu et sur le CDN pour respecter les en-têtes d’expiration du cache.
 
 ### Invalidation du cache Dispatcher pendant l’activation/la désactivation {#cache-activation-deactivation}
 
