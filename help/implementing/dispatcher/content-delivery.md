@@ -2,7 +2,7 @@
 title: ' de contenu'
 description: ' de contenu '
 translation-type: tm+mt
-source-git-commit: 149b7dd07ff06a0053eae3c9b6c22ea612fdb4e3
+source-git-commit: 663d3c35f9b7f01d5036e852a5afb61a032bd964
 
 ---
 
@@ -187,7 +187,7 @@ L&#39;agent de purge de réplication doit être utilisé. Vous pouvez le faire �
 
 Le diagramme présenté ci-dessous illustre cette situation.
 
-![](assets/cdnc.png "CDNCDN")
+![](assets/cdnd.png "CDNCDN")
 
 Si le cache du répartiteur n’est pas effacé, contactez le service à la [clientèle](https://helpx.adobe.com/support.ec.html) qui peut vider le cache du répartiteur si nécessaire.
 
