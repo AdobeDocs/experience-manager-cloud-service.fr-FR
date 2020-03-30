@@ -2,7 +2,7 @@
 title: ' de contenu'
 description: ' de contenu '
 translation-type: tm+mt
-source-git-commit: 663d3c35f9b7f01d5036e852a5afb61a032bd964
+source-git-commit: b1666e7715e8f5715be7a88001869c1042c6c994
 
 ---
 
@@ -101,14 +101,6 @@ La mise en cache sur le CDN peut être configurée à l’aide des règles du r�
 
 * par défaut, mis en cache par le navigateur pendant cinq minutes, en fonction de l’en-tête de contrôle du cache émis par le calque apache. Le CDN respecte également cette valeur.
 * peut être remplacé pour tout le contenu HTML/texte en définissant la `EXPIRATION_TIME` variable dans `global.vars` l’utilisation d’AEM en tant qu’outil de répartiteur de SDK de service cloud.
-
-Vous devez vous assurer qu’un fichier sous `src/conf.dispatcher.d/cache` comporte la règle suivante :
-
-```
-/0000
-{ /glob "*" /type "allow" }
-```
-
 * peuvent être remplacées à un niveau de grains plus fin par les directives apache mod_headers suivantes :
 
 ```
