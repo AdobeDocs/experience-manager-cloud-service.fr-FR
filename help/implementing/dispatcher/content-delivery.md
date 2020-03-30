@@ -2,7 +2,7 @@
 title: ' de contenu'
 description: ' de contenu '
 translation-type: tm+mt
-source-git-commit: 00912ea1085da2c50ec79ac35bd53d36fd8a9509
+source-git-commit: 149b7dd07ff06a0053eae3c9b6c22ea612fdb4e3
 
 ---
 
@@ -221,7 +221,7 @@ Le contrôle de version strict de clientlib est activé par défaut dans tous le
 
 Pour activer le contrôle de version strict de clientlib dans le kit SDK Quickstart local, effectuez les actions suivantes :
 
-1. Accédez au gestionnaire de configuration OSGi <host>/system/console/configMgr
+1. Navigate to the OSGi Configuration manager `<host>/system/console/configMgr`
 1. Recherchez la configuration OSGi pour le Gestionnaire de bibliothèques HTML Granite d’Adobe :
    * Cochez la case pour activer le contrôle de version strict.
    * Dans le champ intitulé Clé de cache côté client à long terme, saisissez la valeur de /.*;hachage
