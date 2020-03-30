@@ -2,7 +2,7 @@
 title: Recherche et indexation de contenu
 description: 'Recherche et indexation de contenu '
 translation-type: tm+mt
-source-git-commit: 687d85287769a4b9f6324822efcc7662c3e6c213
+source-git-commit: 7bcd55570cb6996315046865264b39d1a4dc671a
 
 ---
 
@@ -31,7 +31,7 @@ Vous trouverez ci-dessous un  des principales modifications par rapport à AEM 6
 
 1. A un niveau élevé sur AEM en tant que service cloud, avec l’introduction du modèle [de déploiement](#index-management-using-blue-green-deployments) bleu-vert, deux jeux d’index existeront : l’un est défini pour l’ancienne version (bleu) et l’autre pour la nouvelle version (vert).
 
-La version de l’index utilisée est configurée à l’aide d’indicateurs dans les définitions d’index via l’ `useIfExist` indicateur. Un index ne peut être utilisé que dans une seule version de l’application (par exemple, bleu ou vert uniquement) ou dans les deux versions. La documentation détaillée est disponible dans [Index Management à l’aide de Blue-Green Deployments](#index-management-using-blue-green-deployments).
+<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
 
 1. Les clients peuvent déterminer si la tâche d’indexation est terminée sur la page de création de Cloud Manager et recevront une notification lorsque la nouvelle version sera prête à recevoir du trafic.
 
@@ -45,7 +45,7 @@ AS NOTE: the above is internal for now.
 
 -->
 
-## Procédure d’utilisation {#how-to-use}
+## Utilisation {#how-to-use}
 
 La définition d’index peut comprendre les trois cas d’utilisation suivants :
 
