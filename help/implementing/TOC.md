@@ -2,7 +2,7 @@
 sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementing for AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: a6efcbb85949e65167ebab0e2a8dae06eaeaa07f
+source-git-commit: 2e092f80aef985afa7541a9fe1573b3ee9b55346
 
 ---
 
@@ -37,3 +37,4 @@ source-git-commit: a6efcbb85949e65167ebab0e2a8dae06eaeaa07f
    + [Déploiement sur AEM as a Cloud Service](deploying/overview.md)
 + Dispatcher en mode cloud {#dispatcher}
    + [Dispatcher en mode cloud](dispatcher/overview.md)
+   + [de contenu dans AEM en tant que service Cloud](dispatcher/content-delivery.md)
