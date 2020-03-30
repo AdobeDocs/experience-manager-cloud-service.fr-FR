@@ -1,34 +1,34 @@
 ---
-title: Répartiteur dans le Cloud
-description: 'Répartiteur dans le Cloud '
+title: Dispatcher en mode cloud
+description: 'Dispatcher en mode cloud '
 translation-type: tm+mt
-source-git-commit: a56198a4ca7764d146cb064dd346403c7a5a2c65
+source-git-commit: 00912ea1085da2c50ec79ac35bd53d36fd8a9509
 
 ---
 
 
-# Répartiteur dans le Cloud {#Dispatcher-in-the-cloud}
+# Dispatcher en mode cloud {#Dispatcher-in-the-cloud}
 
-## Configuration et test d’Apache et du répartiteur {#apache-and-dispatcher-configuration-and-testing}
+## Configuration et test d’Apache et de Dispatcher {#apache-and-dispatcher-configuration-and-testing}
 
-Cette section décrit la structure d’AEM en tant que configurations d’Apache et de répartiteur de services Cloud, ainsi que la manière de valider et d’exécuter le service localement avant son déploiement dans les environnements Cloud. Il décrit également le débogage dans les environnements Cloud. Pour plus d’informations sur le répartiteur, consultez la documentation [du répartiteur](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)AEM.
+Cette section décrit comment structurer les configurations Apache et Dispatcher d’AEM as a Cloud Service. Elle explique également comment valider et exécuter le service localement avant son déploiement dans les environnements cloud. Elle présente en outre le débogage dans les environnements cloud. Pour plus d’informations sur Dispatcher, consultez la [documentation d’AEM Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html).
 
 >[!NOTE]
->Les utilisateurs de Windows devront utiliser Windows 10 Professional ou d&#39;autres distributions prenant en charge Docker. Il s’agit d’un prérequis pour l’exécution et le débogage du répartiteur sur un ordinateur local. Les sections ci-dessous incluent des commandes utilisant les versions Mac ou Linux du SDK, mais le SDK Windows peut être utilisé de la même manière.
+>Les utilisateurs de Windows devront utiliser Windows 10 Professionnel ou d’autres distributions prenant en charge Docker. Il s’agit d’un prérequis pour l’exécution et le débogage de Dispatcher sur un ordinateur local. Les sections ci-dessous incluent des commandes utilisant les versions Mac ou Linux du SDK, mais le SDK Windows peut être utilisé de la même manière.
 
-## Outils du répartiteur {#dispatcher-sdk}
+## Outils Dispatcher {#dispatcher-sdk}
 
-Les outils du répartiteur font partie du kit SDK global d’AEM en tant que service cloud et fournissent les éléments suivants :
+Les outils Dispatcher font partie du SDK global d’AEM as a Cloud Service et fournissent les éléments suivants :
 
-* une structure de fichiers vanille contenant les fichiers de configuration à inclure dans un projet maven pour le répartiteur;
-* Outils permettant aux clients de valider localement une configuration de répartiteur ;
-* Image du Docker qui affiche le répartiteur localement.
+* Une structure de fichiers clasique contenant les fichiers de configuration à inclure dans un projet maven pour Dispatcher
+* Les outils permettant aux clients de valider localement une configuration de Dispatcher
+* Une image du Docker qui rend Dispatcher accessible localement
 
 ## Téléchargement et extraction des outils {#extracting-the-sdk}
 
-Les outils du répartiteur peuvent être téléchargés depuis un fichier zip sur le portail de distribution [de](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) logiciels . Notez que l’accès aux listes de SDK est limité aux environnements avec les services gérés AEM ou AEM en tant qu’environnements de services Cloud. Toute nouvelle configuration disponible dans cette nouvelle version des outils du répartiteur peut être utilisée pour le déploiement dans les environnements Cloud exécutant cette version d’AEM dans le Cloud ou une version ultérieure.
+Les outils Dispatcher peuvent être téléchargés à partir d’un fichier ZIP sur le portail [Distribution logicielle](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html). Notez que l’accès aux listes de SDK est limité aux environnements AEM Managed Services ou AEM as a Cloud Service. Toute nouvelle configuration disponible dans cette nouvelle version des outils Dispatcher peut être utilisée pour le déploiement dans les environnements cloud exécutant cette version d’AEM en mode cloud ou une version ultérieure.
 
-**Pour macOS et Linux**, téléchargez le script shell dans un dossier de votre ordinateur, rendez-le exécutable et exécutez-le. Il extrait automatiquement les fichiers des outils du répartiteur sous le répertoire dans lequel vous l&#39;avez stocké (où `version` est la version des outils du répartiteur).
+**Pour macOS et Linux**, téléchargez le script shell dans un dossier de votre ordinateur, rendez-le exécutable et exécutez-le. Il extrait automatiquement les fichiers des outils Dispatcher au sein du répertoire dans lequel vous l’avez stocké (où `version` est la version des outils Dispatcher).
 
 ```bash
 $ chmod +x DispatcherSDKv<version>.sh
@@ -37,11 +37,11 @@ Verifying archive integrity...  100%   All good.
 Uncompressing DispatcherSDKv<version>  100% 
 ```
 
-**Pour Windows**, téléchargez l’archive zip et extrayez-la.
+**Pour Windows**, téléchargez l’archive ZIP et extrayez-la.
 
-## Structure du fichier {#file-structure}
+## Structure de fichier {#file-structure}
 
-La structure du sous-dossier du répartiteur du projet est décrite ci-dessous et doit être copiée dans le dossier du répartiteur de projet expert :
+La structure du sous-dossier dispatcher du projet est décrite ci-dessous et doit être copiée dans le dossier dispatcher du projet maven :
 
 ```bash
 ./
@@ -82,116 +82,116 @@ La structure du sous-dossier du répartiteur du projet est décrite ci-dessous e
         └── virtualhosts.any
 ```
 
-Vous trouverez ci-dessous une explication des fichiers notables qui peuvent être modifiés :
+Vous trouverez ci-dessous une explication des principaux fichiers qui peuvent être modifiés :
 
 **Fichiers personnalisables**
 
-Les fichiers suivants sont personnalisables et seront transférés vers votre instance Cloud au moment du déploiement :
+Les fichiers suivants sont personnalisables et seront transférés vers votre instance cloud au moment du déploiement :
 
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-Vous pouvez avoir un ou plusieurs de ces fichiers. Ils contiennent `<VirtualHost>` des entrées qui correspondent aux noms d’hôtes et permettent à Apache de gérer chaque trafic de domaine avec des règles différentes. Les fichiers sont créés dans le `available_vhosts` répertoire et activés avec un lien symbolique dans le `enabled_vhosts` répertoire. A partir des `.vhost` fichiers, d&#39;autres fichiers tels que les réécritures et les variables seront inclus.
+Vous pouvez avoir un ou plusieurs de ces fichiers. Ils contiennent des entrées `<VirtualHost>` qui correspondent aux noms d’hôtes et permettent à Apache de gérer chaque trafic de domaine avec des règles différentes. Les fichiers sont créés dans le répertoire `available_vhosts` et activés avec un lien symbolique dans le répertoire `enabled_vhosts`. À partir des fichiers `.vhost`, d’autres fichiers tels que les réécritures (rewrites) et les variables seront inclus.
 
 * `conf.d/rewrites/rewrite.rules`
 
-Ce fichier est inclus dans vos `.vhost` fichiers. Il a un ensemble de règles de réécriture pour `mod_rewrite`.
+Ce fichier est inclus dans vos fichiers `.vhost`. Il contient un ensemble de règles de réécriture pour `mod_rewrite`.
 
 >[!NOTE]
 >
->Actuellement, un seul fichier de réécriture doit être utilisé au lieu de fichiers spécifiques au site. Cette taille de fichier doit être inférieure à 1 Mo.
+>Actuellement, un seul fichier de réécriture doit être utilisé au lieu de fichiers spécifiques au site. Ce fichier doit présenter une taille inférieure à 1 Mo.
 
 * `conf.d/variables/custom.vars`
 
-Ce fichier est inclus dans vos `.vhost` fichiers. Vous pouvez y placer des définitions pour les variables Apache.
+Ce fichier est inclus dans vos fichiers `.vhost`. Vous pouvez y placer des définitions pour les variables Apache.
 
 * `conf.d/variables/global.vars`
 
-Ce fichier est inclus dans le `dispatcher_vhost.conf` fichier. Vous pouvez modifier votre répartiteur et réécrire le niveau du journal dans ce fichier.
+Ce fichier est inclus dans le fichier `dispatcher_vhost.conf`. Vous pouvez modifier votre Dispatcher et le niveau du journal des réécritures dans ce fichier.
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-Vous pouvez avoir un ou plusieurs de ces fichiers, qui contiennent des fermes pour correspondre aux noms d’hôtes et permettre au module répartiteur de gérer chaque batterie avec des règles différentes. Les fichiers sont créés dans le `available_farms` répertoire et activés avec un lien symbolique dans le `enabled_farms` répertoire. A partir des `.farm` fichiers, d&#39;autres fichiers tels que les filtres, les règles de cache et d&#39;autres seront inclus.
+Vous pouvez avoir un ou plusieurs de ces fichiers. Ils contiennent des fermes correspondant aux noms d’hôtes et permettant au module Dispatcher de gérer chaque ferme avec des règles différentes. Les fichiers sont créés dans le répertoire `available_farms` et activés avec un lien symbolique dans le répertoire `enabled_farms`. À partir des fichiers `.farm`, d’autres fichiers tels que les filtres, les règles de cache et d’autres seront inclus.
 
 * `conf.dispatcher.d/cache/rules.any`
 
-Ce fichier est inclus dans vos `.farm` fichiers. Il spécifie les préférences de mise en cache.
+Ce fichier est inclus dans vos fichiers `.farm`. Il spécifie les préférences de cache.
 
 * `conf.dispatcher.d/clientheaders/clientheaders.any`
 
-Ce fichier est inclus dans vos `.farm` fichiers. Il spécifie les en-têtes de requête à transférer au serveur principal.
+Ce fichier est inclus dans vos fichiers `.farm`. Il spécifie les en-têtes de requête à transférer au serveur principal.
 
 * `conf.dispatcher.d/filters/filters.any`
 
-Ce fichier est inclus dans vos `.farm` fichiers. Il comporte un ensemble de règles qui modifient le trafic qui doit être filtré et ne pas le rendre sur le serveur principal.
+Ce fichier est inclus dans vos fichiers `.farm`. Il comporte un ensemble de règles qui indiquent le trafic qui doit être filtré et ne doit pas atteindre le serveur principal.
 
 * `conf.dispatcher.d/virtualhosts/virtualhosts.any`
 
-Ce fichier est inclus dans vos `.farm` fichiers. Il dispose d’une liste de noms d’hôtes ou de chemins d’URI à mettre en correspondance par correspondance glob. Détermine le serveur principal à utiliser pour diffuser une requête.
+Ce fichier est inclus dans vos fichiers `.farm`. Il comporte une liste de noms d’hôtes ou de chemins d’URI à mettre en correspondance glob. Cela détermine le serveur principal à utiliser pour diffuser une requête.
 
-Les fichiers ci-dessus font référence aux fichiers de configuration immuables répertoriés ci-dessous. Les modifications apportées aux fichiers immuables ne seront pas traitées par les répartiteurs dans les environnements Cloud.
+Les fichiers ci-dessus font référence aux fichiers de configuration non modifiables répertoriés ci-dessous. Les modifications apportées aux fichiers non modifiables ne seront pas traitées par les Dispatchers dans les environnements cloud.
 
 **Fichiers de configuration non modifiables**
 
-Ces fichiers font partie du cadre de base et font respecter les normes et les meilleures pratiques. Les fichiers sont considérés comme immuables, car la modification ou la suppression locale de ces fichiers n’aura aucun impact sur votre déploiement, car ils ne seront pas transférés vers votre instance Cloud.
+Ces fichiers font partie du framework de base. Ils respectent les normes et les bonnes pratiques. Les fichiers sont considérés comme non modifiables, car leur modification ou suppression locale n’aura aucun impact sur votre déploiement ; ils ne seront pas transférés vers votre instance cloud.
 
-Il est recommandé que les fichiers ci-dessus fassent référence aux fichiers immuables répertoriés ci-dessous, suivis de toute instruction ou remplacement supplémentaire. Lorsque la configuration du répartiteur est déployée dans un environnement cloud, la dernière version des fichiers immuables est utilisée, quelle que soit la version utilisée dans le développement local.
+Il est recommandé que les fichiers ci-dessus fassent référence aux fichiers non modifiables répertoriés ci-dessous, suivis de toute instruction ou remplacement supplémentaire. Lorsque la configuration Dispatcher est déployée dans un environnement cloud, la dernière version des fichiers non modifiables est utilisée, quelle que soit la version utilisée dans le développement local.
 
 * `conf.d/available_vhosts/default.vhost`
 
-Contient un exemple d’hôte virtuel. Pour votre propre hôte virtuel, créez une copie de ce fichier, personnalisez-le, accédez à `conf.d/enabled_vhosts` et créez un lien symbolique vers votre copie personnalisée.
+Contient un exemple d’hôte virtuel. Pour votre propre hôte virtuel, créez une copie de ce fichier, personnalisez-la, accédez à `conf.d/enabled_vhosts` et créez un lien symbolique vers votre copie personnalisée.
 
 * `conf.d/dispatcher_vhost.conf`
 
-Partie du cadre de base, utilisée pour illustrer la manière dont vos hôtes virtuels et vos variables globales sont inclus.
+Élément du framework de base, utilisé pour illustrer la manière dont vos hôtes virtuels et vos variables globales sont inclus.
 
 * `conf.d/rewrites/default_rewrite.rules`
 
-Règles de réécriture par défaut adaptées à un projet standard. Si vous avez besoin de personnalisation, modifiez `rewrite.rules`. Dans votre personnalisation, vous pouvez toujours inclure les règles par défaut en premier, si elles répondent à vos besoins.
+Règles de réécriture par défaut adaptées à un projet standard. Si une personnalisation est nécessaire, modifiez `rewrite.rules`. Dans votre personnalisation, vous pouvez toujours inclure les règles par défaut en premier, si elles répondent à vos besoins.
 
 * `conf.dispatcher.d/available_farms/default.farm`
 
-Contient un exemple de batterie de répartiteurs. Pour votre propre batterie, créez une copie de ce fichier, personnalisez-le, accédez à `conf.d/enabled_farms` et créez un lien symbolique vers votre copie personnalisée.
+Contient un exemple de ferme Dispatcher. Pour votre propre ferme, créez une copie de ce fichier, personnalisez-la, accédez à `conf.d/enabled_farms` et créez un lien symbolique vers votre copie personnalisée.
 
 * `conf.dispatcher.d/cache/default_invalidate.any`
 
-Une partie de la structure de base est générée au démarrage. Vous devez **inclure** ce fichier dans chaque batterie de serveurs définie, dans la `cache/allowedClients` section.
+Élément du framework de base, généré au démarrage. Vous **devez** inclure ce fichier dans chaque ferme définie, au niveau de la section `cache/allowedClients`.
 
 * `conf.dispatcher.d/cache/default_rules.any`
 
-Règles de cache par défaut adaptées à un projet standard. Si vous avez besoin de personnalisation, modifiez `conf.dispatcher.d/cache/rules.any`. Dans votre personnalisation, vous pouvez toujours inclure les règles par défaut en premier, si elles répondent à vos besoins.
+Règles de cache par défaut adaptées à un projet standard. Si une personnalisation est nécessaire, modifiez `conf.dispatcher.d/cache/rules.any`. Dans votre personnalisation, vous pouvez toujours inclure les règles par défaut en premier, si elles répondent à vos besoins.
 
 * `conf.dispatcher.d/clientheaders/default_clientheaders.any`
 
-En-têtes de requête par défaut à transférer vers le serveur principal, adapté à un projet standard. Si vous avez besoin de personnalisation, modifiez `clientheaders.any`. Dans votre personnalisation, vous pouvez toujours inclure d’abord les en-têtes de requête par défaut, s’ils répondent à vos besoins.
+En-têtes de requête par défaut à transférer vers le serveur principal, adaptés à un projet standard. Si une personnalisation est nécessaire, modifiez `clientheaders.any`. Dans votre personnalisation, vous pouvez toujours inclure d’abord les en-têtes de requête par défaut, s’ils répondent à vos besoins.
 
 * `conf.dispatcher.d/dispatcher.any`
 
-Partie du cadre de base, utilisée pour illustrer la manière dont vos fermes de répartiteurs sont incluses.
+Élément du framework de base, utilisé pour illustrer la manière dont vos fermes de Dispatcher sont incluses.
 
 * `conf.dispatcher.d/filters/default_filters.any`
 
-Filtres par défaut adaptés à un projet standard. Si vous avez besoin de personnalisation, modifiez `filters.any`. Dans votre personnalisation, vous pouvez toujours inclure d’abord les filtres par défaut, s’ils répondent à vos besoins.
+Filtres par défaut adaptés à un projet standard. Si une personnalisation est nécessaire, modifiez `filters.any`. Dans votre personnalisation, vous pouvez toujours inclure d’abord les filtres par défaut, s’ils répondent à vos besoins.
 
 * `conf.dispatcher.d/renders/default_renders.any`
 
-Dans le cadre de base, ce fichier est généré au démarrage. Vous devez **inclure** ce fichier dans chaque batterie de serveurs définie, dans la `renders` section.
+Élément du framework de base, ce fichier est généré au démarrage. Vous **devez** inclure ce fichier dans chaque ferme définie, au niveau de la section `renders`.
 
 * `conf.dispatcher.d/virtualhosts/default_virtualhosts.any`
 
-Interpolation d’hôte par défaut adaptée à un projet standard. Si vous avez besoin de personnalisation, modifiez `virtualhosts.any`. Dans votre personnalisation, vous ne devez pas inclure la globalisation des hôtes par défaut, car elle correspond à **chaque** requête entrante.
+Extension métacaractère d’hôte par défaut adaptée à un projet standard. Si une personnalisation est nécessaire, modifiez `virtualhosts.any`. Dans votre personnalisation, vous ne devez pas inclure l’extension métacaractère d’hôte par défaut, car elle correspond à **chaque** requête entrante.
 
 >[!NOTE]
->L’archétype du maven de service cloud AEM génère la même structure de fichiers de configuration du répartiteur.
+>L’archétype maven d’AEM as a Cloud Service génère la même structure de fichiers de configuration Dispatcher.
 
-Les sections ci-dessous décrivent comment valider localement la configuration afin qu’elle puisse transmettre la grille de qualité associée dans Cloud Manager lors du déploiement d’une version interne.
+Les sections ci-dessous décrivent comment valider localement la configuration afin qu’elle puisse franchir le niveau de qualité associé dans Cloud Manager lors du déploiement d’une version interne.
 
-## Validation locale de la configuration du répartiteur {#local-validation-of-dispatcher-configuration}
+## Validation locale d’une configuration Dispatcher {#local-validation-of-dispatcher-configuration}
 
-L’outil de validation est disponible dans le SDK sous `bin/validator` forme de fichier binaire Mac OS, Linux ou Windows, ce qui permet aux clients d’exécuter la même validation que celle que Cloud Manager effectuera lors de la création et du déploiement d’une version.
+L’outil de validation est disponible dans le SDK à l’emplacement `bin/validator` sous forme de fichier binaire Mac OS, Linux ou Windows, ce qui permet aux clients d’exécuter la même validation que celle effectuée par Cloud Manager lors de la création et du déploiement d’une version.
 
-Il est appelé comme suit : `validator full [-d folder] [-w whitelist] zip-file | src folder`
+Il est appelé comme suit : `validator full [-d folder] [-w whitelist] zip-file | src folder`
 
-L&#39;outil valide la configuration d&#39;Apache et du répartiteur. Il analyse tous les fichiers avec un modèle `conf.d/enabled_vhosts/*.vhost` et vérifie que seules les directives mises en liste blanche sont utilisées. Les directives autorisées dans les fichiers de configuration Apache peuvent être répertoriées en exécutant la commande de liste blanche du validateur :
+L’outil valide la configuration d’Apache et Dispatcher. Il analyse tous les fichiers avec un motif `conf.d/enabled_vhosts/*.vhost` et vérifie que seules les directives mises en liste blanche sont utilisées. Les directives autorisées dans les fichiers de configuration Apache peuvent être répertoriées en exécutant la commande de liste blanche du validateur :
 
 ```
 $ validator whitelist
@@ -203,7 +203,7 @@ Whitelisted directives:
   
 ```
 
-Le tableau ci-dessous présente les modules Apache pris en charge :
+Le tableau ci-dessous présente les modules Apache pris en charge :
 
 | Nom du module | Page de référence |
 |---|---|
@@ -230,16 +230,16 @@ Le tableau ci-dessous présente les modules Apache pris en charge :
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-Les clients ne peuvent pas ajouter de modules arbitraires, mais des modules supplémentaires peuvent être envisagés pour inclusion dans le produit à l’avenir. Les clients peuvent trouver la liste des directives disponibles pour une version de Répartiteur donnée en exécutant la &quot;liste blanche des validateurs&quot; dans le SDK, comme décrit dans la documentation des outils Répartiteur.
+Les clients ne peuvent pas ajouter de modules arbitraires, mais des modules supplémentaires peuvent être envisagés pour inclusion dans le produit à l’avenir. Les clients peuvent trouver la liste des directives disponibles pour une version de Dispatcher donnée en exécutant « validator whitelist » dans le SDK, tel que décrit dans la documentation des outils Dispatcher.
 
-La liste blanche contient une liste des directives Apache autorisées dans une configuration client. Si une directive n&#39;est pas mise en liste blanche, l&#39;outil enregistre une erreur et renvoie un code de sortie non nul. Si aucune liste blanche n’est fournie sur la ligne de commande (c’est-à-dire de la manière dont elle doit être appelée), l’outil utilise une liste blanche par défaut que Cloud Manager utilisera pour la validation avant de procéder au déploiement dans les environnements Cloud.
+La liste blanche contient la liste des directives Apache autorisées dans une configuration client. Si une directive n’est pas mise en liste blanche, l’outil consigne une erreur et renvoie un code de sortie non nul. Si aucune liste blanche n’est fournie sur la ligne de commande (c’est-à-dire de la manière dont elle doit être appelée), l’outil utilise une liste blanche par défaut que Cloud Manager utilisera pour la validation avant de procéder au déploiement dans les environnements cloud.
 
-Il analyse également tous les fichiers avec un modèle `conf.dispatcher.d/enabled_farms/*.farm` et vérifie que :
+Il analyse également tous les fichiers présentant le motif `conf.dispatcher.d/enabled_farms/*.farm` et vérifie les éléments suivants :
 
-* Il n’existe aucune règle de filtre qui utilise l’opérateur allow via `/glob` (voir [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) pour plus d’informations).
-* Aucune fonction d’administration n’est affichée. Par exemple, l’accès aux chemins tels que `/crx/de or /system/console`.
+* Absence de règle de filtre utilisant l’opérateur allow via `/glob` (voir [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) pour plus d’informations)
+* Aucune fonction d’administration n’est exposée. Par exemple, l’accès aux chemins tels que `/crx/de or /system/console`.
 
-Lorsqu’il est exécuté sur votre artefact maven ou votre `dispatcher/src` sous-répertoire, il signale les échecs de validation :
+Lorsqu’il est exécuté sur votre artefact maven ou votre sous-répertoire `dispatcher/src`, il signale les échecs de validation :
 
 ```
 $ validator full dispatcher/src
@@ -250,23 +250,26 @@ Cloud manager validator 1.0.4
  conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
 ```
 
-Notez que l&#39;outil de validation ne rapporte que l&#39;utilisation interdite des directives Apache qui n&#39;ont pas été mises sur liste blanche. Il ne signale aucun problème de syntaxe ou de sémantique avec votre configuration Apache, car ces informations ne sont disponibles que pour les modules Apache dans un environnement en cours d&#39;exécution.
+Notez que l’outil de validation ne rapporte que l’utilisation interdite des directives Apache qui n’ont pas été mises sur liste blanche. Il ne signale aucun problème de syntaxe ni de sémantique dans votre configuration Apache, car ces informations ne sont disponibles que pour les modules Apache dans un environnement en cours d’exécution.
 
 Si aucun échec de validation n’est signalé, votre configuration est prête pour le déploiement.
 
-Les techniques de dépannage présentées ci-dessous permettent de déboguer les erreurs de validation courantes qui sont générées par l’outil :
+Les techniques de dépannage présentées ci-dessous permettent de déboguer les erreurs de validation courantes qui sont générées par l’outil :
 
-**impossible de localiser un`conf.dispatcher.d`sous-dossier dans l&#39;archive**
+**unable to locate a`conf.dispatcher.d`subfolder in the archive**
 
-Votre archive doit contenir des dossiers `conf.d` et `conf.dispatcher.d`. Notez que vous ne devez **pas** utiliser le préfixe `etc/httpd` dans votre archive.
+Votre archive doit contenir les dossiers `conf.d` et `conf.dispatcher.d`. Notez que vous ne devez **pas**
+utiliser le préfixe `etc/httpd` dans votre archive.
 
-**impossible de trouver une ferme dans`conf.dispatcher.d/enabled_farms`**
+**unable to find any farm in`conf.dispatcher.d/enabled_farms`**
 
-Vos fermes activées doivent se trouver dans le sous-dossier mentionné.
+Vos fermes doivent se trouver dans le sous-dossier mentionné.
 
-**fichier inclus (...) doit être nommé :...**
+**file included (...) must be named: ...**
 
-Deux sections de la configuration de votre batterie de serveurs **doivent** inclure un fichier spécifique : `/renders` et `/allowedClients` dans la `/cache` section. Les choix doivent se présenter comme suit :
+Deux sections de la configuration de votre ferme **doivent** inclure
+un fichier spécifique : `/renders` et `/allowedClients` dans la section `/cache`. Ces
+sections doivent se présenter comme suit :
 
 ```
 /renders {
@@ -274,7 +277,7 @@ Deux sections de la configuration de votre batterie de serveurs **doivent** incl
 }
 ```
 
-et:
+et :
 
 ```
 /allowedClients {
@@ -282,11 +285,11 @@ et:
 }
 ```
 
-**fichier inclus à un emplacement inconnu :...**
+**file included at unknown location: ...**
 
-La configuration de votre batterie de serveurs comporte quatre sections où vous pouvez inclure votre propre fichier : `/clientheaders`, `filters`, `/rules` dans la section et `/cache` `/virtualhosts`. Les fichiers inclus doivent être nommés comme suit :
+Votre configuration de ferme comporte quatre sections où vous pouvez inclure votre propre fichier : `/clientheaders`, `filters`, `/rules` dans la section `/cache` et `/virtualhosts`. Les fichiers inclus doivent être nommés comme suit :
 
-| Section | Inclure le nom du fichier |
+| Section | Nom du fichier d’inclusion |
 |------------------|--------------------------------------|
 | `/clientheaders` | `../clientheaders/clientheaders.any` |
 | `/filters` | `../filters/filters.any` |
@@ -295,9 +298,9 @@ La configuration de votre batterie de serveurs comporte quatre sections où vous
 
 Vous pouvez également inclure la version **par défaut** de ces fichiers, dont les noms sont précédés du mot `default_`, par ex. `../filters/default_filters.any`.
 
-**include à (...), en dehors de tout emplacement connu :...**
+**include statement at (...), outside any known location: ...**
 
-Outre les six sections mentionnées dans les paragraphes ci-dessus, vous n’êtes pas autorisé à utiliser l’ `$include` instruction ; par exemple, les éléments suivants généreraient cette erreur :
+Outre les six sections mentionnées dans les paragraphes ci-dessus, vous n’êtes pas autorisé à utiliser l’instruction `$include` ; par exemple, les éléments suivants généreraient cette erreur :
 
 ```
 /invalidate {
@@ -305,13 +308,14 @@ Outre les six sections mentionnées dans les paragraphes ci-dessus, vous n’êt
 }
 ```
 
-**les clients/rendus autorisés ne sont pas inclus dans :...**
+**allowed clients/renders are not included from: ...**
 
-Cette erreur est générée lorsque vous ne spécifiez pas d’inclusion pour `/renders` et `/allowedClients` dans la `/cache` section. **Voir le** fichier inclus (...) doit être nommé :... pour plus d’informations.
+Cette erreur est générée lorsque vous ne spécifiez pas d’inclusion pour `/renders` et `/allowedClients` dans la section `/cache`. Voir la section
+**file included (...) must be named: ...** pour plus d’informations.
 
-**Le filtre ne doit pas utiliser de modèle glob pour autoriser les requêtes**
+**filter must not use glob pattern to allow requests**
 
-Il n’est pas sûr d’autoriser les requêtes avec une règle de `/glob` style, qui est mise en correspondance avec la ligne de requête complète, par exemple.
+Il n’est pas sûr d’autoriser les requêtes avec une règle de style `/glob`, qui est mise en correspondance avec la ligne de requête complète, par exemple :
 
 ```
 /0100 {
@@ -319,32 +323,34 @@ Il n’est pas sûr d’autoriser les requêtes avec une règle de `/glob` style
 }
 ```
 
-Cette instruction est destinée à autoriser les requêtes de `css` fichiers, mais elle permet également aux requêtes de **toute** ressource suivie de la chaîne de requête `?a=.css`. Il est donc interdit d’utiliser de tels filtres (voir aussi CVE-2016-0957).
+Cette instruction est destinée à autoriser les requêtes de fichiers `css`, mais elle permet également les requêtes de **n’importe quelle** ressource suivie de la chaîne de requête `?a=.css`. Il est donc interdit d’utiliser de tels filtres (voir aussi CVE-2016-0957).
 
-**fichier inclus (...) ne correspond à aucun fichier connu**
+**included file (...) does not match any known file**
 
-Il existe deux types de fichiers dans la configuration de l’hôte virtuel Apache qui peuvent être spécifiés, tels que : réécrit et variables.
-Les fichiers inclus doivent être nommés comme suit :
+Il existe deux types de fichiers dans la configuration de l’hôte virtuel Apache qui peuvent être spécifiés sous la forme d’inclusions : les réécritures et les variables.
+Les fichiers inclus doivent être nommés comme suit :
 
-| Type | Inclure le nom du fichier |
+| Type | Nom du fichier d’inclusion |
 |-----------|---------------------------------|
-| Réécrit | `conf.d/rewrites/rewrite.rules` |
+| Réécritures | `conf.d/rewrites/rewrite.rules` |
 | Variables | `conf.d/variables/custom.vars` |
 
 Vous pouvez également inclure la version **par défaut** des règles de réécriture, dont le nom est `conf.d/rewrites/default_rewrite.rules`.
 Notez qu’il n’existe pas de version par défaut des fichiers de variables.
 
-**Mise en page de configuration obsolète détectée, activation du mode de compatibilité**
+**Deprecated configuration layout detected, enabling compatibility mode**
 
-Ce message indique que votre configuration a la mise en page de la version 1 déconseillée, contenant une configuration complète d’Apache et des fichiers avec `ams_` des préfixes. Bien que cette fonctionnalité soit toujours prise en charge pour la rétrocompatibilité, vous devez passer à la nouvelle mise en page.
+Ce message indique que votre configuration présente la disposition version 1 obsolète, contenant une
+configuration Apache complète et des fichiers avec des préfixes `ams_`. Bien que cette fonctionnalité soit toujours prise en charge
+pour la rétrocompatibilité, vous devez passer à la nouvelle mise en page.
 
 ## Test local de votre configuration Apache et Dispatcher {#testing-apache-and-dispatcher-configuration-locally}
 
-Il est également possible de tester localement votre configuration Apache et Dispatcher. Il nécessite que Docker soit installé localement et que votre configuration réussisse la validation comme décrit ci-dessus.
+Il est également possible de tester localement votre configuration Apache et Dispatcher. Cela nécessite que Docker soit installé localement et que votre configuration réussisse la validation comme décrit ci-dessus.
 
-En utilisant le paramètre &quot;`-d`&quot;, le programme de validation génère un dossier contenant tous les fichiers de configuration nécessaires au répartiteur.
+Avec le paramètre « `-d` », le programme de validation génère un dossier contenant tous les fichiers de configuration requis par Dispatcher.
 
-Ensuite, le `docker_run.sh` script peut pointer vers ce dossier, en démarrant le conteneur avec votre configuration.
+Ensuite, le script `docker_run.sh` peut pointer vers ce dossier, en démarrant le conteneur avec votre configuration.
 
 ```
 $ validator full -d out src/dispatcher
@@ -359,13 +365,13 @@ Starting httpd server
 ...
 ```
 
-Le répartiteur démarre alors dans un conteneur avec son serveur principal pointant vers une instance AEM s’exécutant sur votre ordinateur Mac OS local au port 4503.
+Dispatcher démarre alors dans un conteneur avec son serveur principal pointant vers une instance AEM s’exécutant sur votre ordinateur Mac OS local au port 4503.
 
-## Débogage de la configuration d’Apache et du répartiteur {#debugging-apache-and-dispatcher-configuration}
+## Débogage de la configuration Apache et Dispatcher {#debugging-apache-and-dispatcher-configuration}
 
-La stratégie suivante peut être utilisée pour augmenter la sortie du journal pour le module répartiteur et voir le résultat de l&#39; `RewriteRule` évaluation dans les environnements locaux et Cloud.
+La stratégie suivante peut être utilisée afin d’augmenter la sortie du journal pour le module Dispatcher et voir le résultat de l’évaluation `RewriteRule` dans les environnements locaux et cloud.
 
-Les niveaux de journalisation de ces modules sont définis par les variables `DISP_LOG_LEVEL` et `REWRITE_LOG_LEVEL`. Ils peuvent être définis dans le fichier `conf.d/variables/global.vars`. Sa partie pertinente est la suivante :
+Les niveaux de journal de ces modules sont définis par les variables `DISP_LOG_LEVEL` et `REWRITE_LOG_LEVEL`. Ils peuvent être définis dans le fichier `conf.d/variables/global.vars`. Sa partie pertinente est la suivante :
 
 ```
 # Log level for the dispatcher
@@ -389,15 +395,15 @@ Les niveaux de journalisation de ces modules sont définis par les variables `DI
 # Define REWRITE_LOG_LEVEL Warn
 ```
 
-Lors de l’exécution locale du répartiteur, les journaux sont également directement imprimés sur la sortie du terminal. La plupart du temps, ces journaux doivent être dans DEBUG, ce qui peut être accompli en transmettant le niveau de débogage comme paramètre lors de l&#39;exécution du Docker. Par exemple :
+Lors de l’exécution locale de Dispatcher, les journaux sont également directement imprimés dans la sortie du terminal. La plupart du temps, ces journaux doivent être en mode DEBUG, ce qui peut être effectué en transmettant le niveau Debug comme paramètre lors de l’exécution de Docker. Par exemple :
 
 `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
 
-Les journaux des environnements cloud seront exposés par le biais du service de journalisation disponible dans Cloud Manager.
+Les journaux des environnements cloud seront exposés par le biais du service de journalisation disponible dans Cloud Manager.
 
-## Différentes configurations de répartiteur par environnement {#different-dispatcher-configurations-per-environment}
+## Différentes configurations Dispatcher par environnement {#different-dispatcher-configurations-per-environment}
 
-Actuellement, la même configuration de répartiteur est appliquée à tous AEM en tant qu’environnements de service Cloud. Le runtime comporte une variable d&#39;environnement `ENVIRONMENT_TYPE` qui contient le mode d&#39;exécution actuel (dev, stage ou prod) ainsi qu&#39;une définition. La définition peut être `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE` ou `ENVIRONMENT_PROD`. Dans la configuration Apache, la variable peut être utilisée directement dans une expression. Vous pouvez également utiliser la définition pour créer une logique :
+Actuellement, la même configuration Dispatcher est appliquée à tous les environnements AEM as a Cloud Service. Le composant d’exécution comporte une variable d’environnement `ENVIRONMENT_TYPE` qui contient le mode d’exécution actuel (dev, stage ou prod) ainsi qu’une définition. La définition peut être `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE` ou `ENVIRONMENT_PROD`. Dans la configuration Apache, la variable peut être utilisée directement dans une expression. Vous pouvez également utiliser la définition pour créer une logique :
 
 ```
 # Simple usage of the environment variable
@@ -414,7 +420,7 @@ ServerName ${ENVIRONMENT_TYPE}.company.com
 </IfDefine>
 ```
 
-Dans la configuration du répartiteur, la même variable d’environnement est disponible. Si davantage de logique est nécessaire, définissez les variables comme illustré dans l’exemple ci-dessus, puis utilisez-les dans la section Configuration du répartiteur :
+Dans la configuration Dispatcher, la même variable d’environnement est disponible. Si davantage de logique est nécessaire, définissez les variables comme illustré dans l’exemple ci-dessus, puis utilisez-les dans la section de configuration Dispatcher :
 
 ```
 /virtualhosts {
@@ -422,20 +428,20 @@ Dans la configuration du répartiteur, la même variable d’environnement est d
 }
 ```
 
-Lors du test local de votre configuration, vous pouvez simuler différents types d’environnement en transmettant directement la variable `DISP_RUN_MODE` au `docker_run.sh` script :
+Lors du test local de votre configuration, vous pouvez simuler différents types d’environnements en transmettant directement la variable `DISP_RUN_MODE` au script `docker_run.sh` :
 
 ```
 $ DISP_RUN_MODE=stage docker_run.sh out docker.for.mac.localhost:4503 8080
 ```
 
-Le mode d’exécution par défaut lorsque vous ne transmettez pas de valeur pour DISP_RUN_MODE est &quot;dev&quot;.
-Pour obtenir la liste complète des options et variables disponibles, exécutez le script `docker_run.sh` sans arguments.
+Le mode d’exécution par défaut lorsque vous ne transmettez pas de valeur pour DISP_RUN_MODE est « dev ».
+Pour obtenir la liste complète des options et variables disponibles, exécutez le script `docker_run.sh` sans argument.
 
-## Affichage de la configuration du répartiteur utilisée par votre conteneur Docker {#viewing-dispatcher-configuration-in-use-by-docker-container}
+## Affichage de la configuration Dispatcher utilisée par votre conteneur Docker {#viewing-dispatcher-configuration-in-use-by-docker-container}
 
-Avec des configurations spécifiques à l’environnement, il peut s’avérer difficile de déterminer à quoi ressemble la configuration réelle du répartiteur. Après avoir démarré votre conteneur de docker avec `docker_run.sh` celui-ci, vous pouvez le vider comme suit :
+Avec les configurations spécifiques à l’environnement, il peut s’avérer difficile de déterminer à quoi ressemble la configuration Dispatcher. Après avoir démarré votre conteneur Docker avec `docker_run.sh`, vous pouvez le vider comme suit :
 
-* Déterminez l’ID de conteneur du dossier utilisé :
+* Déterminez l’identifiant de conteneur Docker utilisé :
 
 ```
 $ docker ps
@@ -443,7 +449,7 @@ CONTAINER ID       IMAGE
 d75fbd23b29        adobe/aem-ethos/dispatcher-publish:...
 ```
 
-* Exécutez la ligne de commande suivante avec cet ID de conteneur :
+* Exécutez la ligne de commande suivante avec cet identifiant de conteneur :
 
 ```
 $ docker exec d75fbd23b29 httpd-test
@@ -454,37 +460,41 @@ $ docker exec d75fbd23b29 httpd-test
 ...
 ```
 
-## Principales différences entre le répartiteur AMS et AEM en tant que service Cloud {#main-differences-between-ams-dispatcher-configuration-and-aem-as-a-cloud-service}
+## Principales différences entre AMS Dispatcher et AEM as a Cloud Service {#main-differences-between-ams-dispatcher-configuration-and-aem-as-a-cloud-service}
 
-Comme décrit dans la page de référence ci-dessus, la configuration d’Apache et du répartiteur dans AEM en tant que service Cloud est assez similaire à celle d’AMS. Les principales différences sont les suivantes :
+Comme décrit dans la page de référence ci-dessus, la configuration Apache et Dispatcher dans AEM as a Cloud Service est assez similaire à celle d’AMS. Les principales différences sont :
 
-* Dans AEM en tant que service Cloud, certaines directives Apache peuvent ne pas être utilisées (par exemple `Listen` ou `LogLevel`)
-* Dans AEM en tant que service Cloud, seules certaines parties de la configuration du répartiteur peuvent être placées dans les fichiers d’inclusion et leur attribution de noms est importante. Par exemple, les règles de filtre que vous souhaitez réutiliser sur différents hôtes doivent être placées dans un fichier appelé `filters/filters.any`. Consultez la page de référence pour en savoir plus.
-* Dans AEM en tant que service Cloud, il existe une validation supplémentaire pour interdire les règles de filtrage écrites à l’aide `/glob` de la protection. Puisque `deny *` sera utilisé plutôt que `allow *` (ce qui ne peut pas être utilisé), les clients bénéficieront de l&#39;exécution du répartiteur localement et de la réalisation d&#39;essais et d&#39;erreurs, en examinant les journaux pour savoir exactement quels chemins les filtres du répartiteur bloquent pour pouvoir les ajouter.
+* Dans AEM as a Cloud Service, certaines directives Apache peuvent ne pas être utilisées (par exemple, `Listen` ou `LogLevel`)
+* Dans AEM as a Cloud Service, seules certaines parties de la configuration Dispatcher peuvent être placées dans les fichiers d’inclusion et les noms qui leur sont donnés sont importants. Par exemple, les règles de filtrage que vous souhaitez réutiliser sur différents hôtes doivent être placées dans un fichier nommé `filters/filters.any`. Consultez la page de référence pour plus d’informations.
+* Dans AEM as a Cloud Service, il existe une validation supplémentaire pour interdire les règles de filtrage écrites avec `/glob` de façon à éviter les problèmes de sécurité. Puisque `deny *` sera utilisé plutôt que `allow *` (qui ne peut pas être utilisé), les clients auront avantage à exécuter Dispatcher localement et à procéder par tâtonnements, en examinant les journaux pour savoir exactement quels chemins sont bloqués par les filtres Dispatcher afin de pouvoir les ajouter.
 
-## Instructions relatives à la migration de la configuration du répartiteur d’AMS vers AEM en tant que service Cloud
+## Instructions relatives à la migration de la configuration Dispatcher d’AMS vers AEM as a Cloud Service
 
-La structure de configuration du répartiteur présente des différences entre les services gérés et AEM en tant que service Cloud. Vous trouverez ci-dessous un guide détaillé sur la migration de la configuration du répartiteur AMS version 2 vers AEM en tant que service Cloud.
+La structure de configuration Dispatcher présente des différences entre Managed Services et AEM as a Cloud Service. Vous trouverez ci-dessous un guide détaillé sur la migration de la configuration Dispatcher d’AMS version 2 vers AEM as a Cloud Service.
 
-## Comment convertir un fichier AMS en AEM en configuration de répartiteur de services Cloud
+## Comment convertir une configuration Dispatcher AMS en AEM as a Cloud Service
 
-La section suivante fournit des instructions étape par étape sur la conversion d’une configuration AMS. Il suppose que vous disposez d’une archive avec une structure similaire à celle décrite dans la configuration du répartiteur de [Cloud Manager.](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
+La section suivante fournit des instructions étape par étape pour convertir une configuration AMS. Elle suppose
+que vous disposez d’une archive avec une structure similaire à celle décrite dans la [configuration Dispatcher Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html).
 
-### Extraire l’archive et supprimer un préfixe éventuel
+### Extraire l’archive et supprimer tout préfixe
 
-Extrayez l’archive dans un dossier et assurez-vous que les sous-dossiers immédiats commencent par `conf`, `conf.d``conf.dispatcher.d` et `conf.modules.d`. S&#39;ils ne le font pas, déplacez-les dans la hiérarchie.
+Extrayez l’archive dans un dossier et assurez-vous que les noms des sous-dossiers immédiats commencent par `conf`, `conf.d`,
+`conf.dispatcher.d` et `conf.modules.d`. Si tel n’est pas le cas, déplacez-les dans la hiérarchie.
 
 ### Supprimer les sous-dossiers et fichiers non utilisés
 
-Supprimez les sous-dossiers `conf` et `conf.modules.d`, ainsi que les fichiers correspondants `conf.d/*.conf`.
+Supprimez les sous-dossiers `conf` et `conf.modules.d`, ainsi que les fichiers correspondants à `conf.d/*.conf`.
 
-### Débarrassez-vous de tous les hôtes virtuels non publiés
+### Supprimer tous les hôtes virtuels non publiés
 
-Supprimez tout fichier hôte virtuel dans `conf.d/enabled_vhosts` qui a `author`, `unhealthy`, `health`,`lc` ou `flush` son nom. Tous les fichiers d&#39;hôtes virtuels dans `conf.d/available_vhosts` lesquels aucun lien n&#39;est établi peuvent également être supprimés.
+Supprimez tout fichier d’hôte virtuel dans `conf.d/enabled_vhosts` dont le nom inclut `author`, `unhealthy`, `health`,
+`lc` ou `flush`. Tous les fichiers d’hôtes virtuels dans `conf.d/available_vhosts` non
+liés peuvent également être supprimés.
 
-### Supprimez ou commentez les sections de l&#39;hôte virtuel qui ne font pas référence au port 80.
+### Supprimer ou commenter les sections d’hôte virtuel qui ne font pas référence au port 80
 
-Si des sections de vos fichiers d&#39;hôtes virtuels se rapportent exclusivement à d&#39;autres ports que le port 80, par ex.
+Si des sections de vos fichiers d’hôtes virtuels font encore référence exclusivement à d’autres ports que le port 80, par exemple :
 
 ```
 <VirtualHost *:443>
@@ -492,100 +502,126 @@ Si des sections de vos fichiers d&#39;hôtes virtuels se rapportent exclusivemen
 </VirtualHost>
 ```
 
-supprimez-les ou commentez-les. Les instructions de ces sections ne seront pas traitées, mais si vous les conservez, vous pourriez tout de même finir par les modifier sans effet, ce qui est déroutant.
+supprimez-les ou commentez-les. Les instructions de ces sections ne seront pas traitées, mais si vous
+les conservez, vous pourriez tout de même finir par les modifier sans effet, ce qui peut porter à confusion.
 
 ### Vérifier les réécritures
 
-Enter directory `conf.d/rewrites`.
+Entrez dans le répertoire `conf.d/rewrites`.
 
-Supprimez tout fichier nommé `base_rewrite.rules` et `xforwarded_forcessl_rewrite.rules` et souvenez-vous de supprimer `Include` les instructions des fichiers hôtes virtuels qui y font référence.
+Supprimez tout fichier nommé `base_rewrite.rules` et `xforwarded_forcessl_rewrite.rules`, et n’oubliez pas de
+supprimer les instructions `Include` dans les fichiers d’hôtes virtuels qui y font référence.
 
-Si `conf.d/rewrites` maintenant contient un seul fichier, il doit être renommé `rewrite.rules` et n&#39;oubliez pas d&#39;adapter également les `Include` instructions se rapportant à ce fichier dans les fichiers hôtes virtuels.
+Si `conf.d/rewrites` contient maintenant un seul fichier, il doit être renommé `rewrite.rules`.
+De plus, veillez à adapter également les instructions `Include` se rapportant à ce fichier dans les fichiers d’hôtes virtuels.
 
-Si le dossier contient toutefois plusieurs fichiers spécifiques à l&#39;hôte virtuel, leur contenu doit être placé dans l&#39; `Include` instruction qui y fait référence dans les fichiers hôtes virtuels.
+Si le dossier contient toutefois plusieurs fichiers spécifiques à l’hôte virtuel, leur contenu doit être
+placé dans l’instruction `Include` qui y fait référence dans les fichiers d’hôtes virtuels.
 
 ### Vérifier les variables
 
-Enter directory `conf.d/variables`.
+Entrez dans le répertoire `conf.d/variables`.
 
-Supprimez tout fichier nommé `ams_default.vars` et n’oubliez pas de supprimer `Include` les instructions des fichiers virtualhost qui y font référence.
+Supprimez tout fichier nommé `ams_default.vars` et n’oubliez pas de supprimer les instructions `Include` des fichiers d’hôtes
+virtuels qui y font référence.
 
-Si `conf.d/variables` maintenant contient un seul fichier, il doit être renommé `custom.vars` et n&#39;oubliez pas d&#39;adapter également les `Include` instructions se rapportant à ce fichier dans les fichiers hôtes virtuels.
+Si `conf.d/variables` contient maintenant un seul fichier, il doit être renommé `custom.vars`.
+De plus, veillez à adapter également les instructions `Include` se rapportant à ce fichier dans les fichiers d’hôtes virtuels.
 
-Si le dossier contient toutefois plusieurs fichiers spécifiques à l&#39;hôte virtuel, leur contenu doit être placé dans l&#39; `Include` instruction qui y fait référence dans les fichiers hôtes virtuels.
+Si le dossier contient toutefois plusieurs fichiers spécifiques à l’hôte virtuel, leur contenu doit être
+placé dans l’instruction `Include` qui y fait référence dans les fichiers d’hôtes virtuels.
 
-### Suppression des listes blanches
+### Supprimer les listes blanches
 
-Supprimez le dossier `conf.d/whitelists` et `Include` les instructions des fichiers hôtes virtuels faisant référence à un fichier de ce sous-dossier.
+Supprimez le dossier `conf.d/whitelists` et les instructions `Include` des fichiers d’hôtes virtuels faisant référence à
+un fichier de ce sous-dossier.
 
-### Remplace toute variable qui n’est plus disponible
+### Remplacer toute variable qui n’est plus disponible
 
-Dans tous les fichiers hôtes virtuels :
+Dans tous les fichiers d’hôtes virtuels :
 
-Renommez `PUBLISH_DOCROOT` en `DOCROOT`supprimant les sections faisant référence à des variables nommées `DISP_ID`, `PUBLISH_FORCE_SSL` ou `PUBLISH_WHITELIST_ENABLED`
+Renommez `PUBLISH_DOCROOT` en `DOCROOT`
+Supprimez les sections faisant référence à des variables nommées `DISP_ID`, `PUBLISH_FORCE_SSL` ou `PUBLISH_WHITELIST_ENABLED`
 
-### Vérifiez votre état en exécutant le programme de validation
+### Vérifier votre état en exécutant le programme de validation
 
-Exécutez le programme de validation du répartiteur dans votre répertoire, avec la `httpd` sous-commande :
+Exécutez le programme de validation Dispatcher dans votre répertoire, avec la sous-commande `httpd` :
 
 ```
 $ validator httpd .
 ```
 
-Si des erreurs s’affichent au sujet des fichiers d’inclusion manquants, vérifiez si vous les avez correctement renommés.
+Si des erreurs s’affichent au sujet de fichiers d’inclusion manquants, vérifiez si vous avez correctement renommé
+les fichiers en question.
 
-Si vous voyez des directives Apache qui ne sont pas mises sur liste blanche, supprimez-les.
+Si vous voyez des directives Apache qui ne sont pas placées sur liste blanche, supprimez-les.
 
 ### Supprimer toutes les fermes non publiées
 
-Supprimez tout fichier de batterie dans `conf.dispatcher.d/enabled_farms` lequel `author`, `unhealthy`, `health`,`lc` ou `flush` figure son nom. Tous les fichiers de batterie dans `conf.dispatcher.d/available_farms` qui ne sont pas liés peuvent également être supprimés.
+Supprimez tout fichier de ferme dans `conf.dispatcher.d/enabled_farms` dont le nom inclut `author`, `unhealthy`, `health`,
+`lc` ou `flush`. Tous les fichiers de fermes dans `conf.dispatcher.d/available_farms` non
+liés peuvent également être supprimés.
 
-### Renommer les fichiers de batterie
+### Renommer les fichiers de fermes
 
-Toutes les fermes dans `conf.d/enabled_farms` doivent être renommées pour correspondre au modèle `*.farm`. Par exemple, le fichier d’ferme appelé `customerX_farm.any` doit être renommé `customerX.farm`.
+Toutes les fermes dans `conf.d/enabled_farms` doivent être renommées afin de correspondre au motif `*.farm`.
+Par exemple, le fichier de ferme appelé `customerX_farm.any` doit être renommé `customerX.farm`.
 
 ### Vérifier le cache
 
-Enter directory `conf.dispatcher.d/cache`.
+Entrez dans le répertoire `conf.dispatcher.d/cache`.
 
-Supprimez tout fichier préfixe `ams_`.
+Supprimez tout fichier portant le préfixe `ams_`.
 
-Si `conf.dispatcher.d/cache` est maintenant vide, copiez le fichier `conf.dispatcher.d/cache/rules.any`de la configuration du répartiteur standard dans ce dossier. La configuration standard du répartiteur se trouve dans le dossier `src` de ce SDK. N&#39;oubliez pas d&#39;adapter également les`$include` instructions faisant référence aux fichiers de `ams_*_cache.any` règles dans les fichiers de la batterie.
+Si `conf.dispatcher.d/cache` est maintenant vide, copiez le fichier `conf.dispatcher.d/cache/rules.any`
+de la configuration Dispatcher standard dans ce dossier. La configuration Dispatcher
+standard se trouve dans le dossier `src` de ce SDK. N’oubliez pas d’adapter également les
+instructions `$include` faisant référence aux fichiers de règles `ams_*_cache.any` dans les
+fichiers de fermes.
 
-Si, au lieu de `conf.dispatcher.d/cache` maintenant, il contient un seul fichier avec le suffixe `_cache.any`, il doit être renommé `rules.any` et n&#39;oubliez pas d&#39;adapter également les `$include` instructions qui font référence à ce fichier dans les fichiers de batterie.
+En revanche, si `conf.dispatcher.d/cache` contient maintenant un seul fichier portant le suffixe `_cache.any`,
+il doit être renommé en `rules.any`. De plus, veillez à adapter les instructions `$include`
+se rapportant à ce fichier dans les fichiers de fermes.
 
-Si le dossier contient toutefois plusieurs fichiers spécifiques à la batterie avec ce modèle, leur contenu doit être copié dans l’ `$include` instruction qui y fait référence dans les fichiers de batterie.
+Si le dossier contient toutefois plusieurs fichiers spécifiques à la ferme avec ce motif, leur contenu
+doit être copié dans l’instruction `$include` qui y fait référence dans les fichiers de fermes.
 
-Supprimez tout fichier contenant le suffixe `_invalidate_allowed.any`.
+Supprimez tout fichier portant le suffixe `_invalidate_allowed.any`.
 
-Copiez le fichier `conf.dispatcher.d/cache/default_invalidate_any` de defaultAEM dans la configuration du répartiteur de cloud vers cet emplacement.
+Copiez le fichier `conf.dispatcher.d/cache/default_invalidate_any` de la configuration
+Dispatcher AEM en mode cloud par défaut vers cet emplacement.
 
-Dans chaque fichier de batterie, supprimez tout contenu de la `cache/allowedClients` section et remplacez-le par :
+Dans chaque fichier de ferme, supprimez tout contenu de la section `cache/allowedClients` et
+remplacez-le par :
 
 ```
 $include "../cache/default_invalidate.any"
 ```
 
-### Vérification des en-têtes client
+### Vérifier les en-têtes de client
 
-Enter directory `conf.dispatcher.d/clientheaders`.
+Entrez dans le répertoire `conf.dispatcher.d/clientheaders`.
 
-Supprimez tout fichier préfixe `ams_`.
+Supprimez tout fichier portant le préfixe `ams_`.
 
-Si `conf.dispatcher.d/clientheaders` maintenant contient un seul fichier avec le suffixe `_clientheaders.any`, il doit être renommé `clientheaders.any` et n&#39;oubliez pas d&#39;adapter également les `$include` instructions se rapportant à ce fichier dans les fichiers de la batterie.
+Si `conf.dispatcher.d/clientheaders` contient maintenant un seul fichier portant le suffixe `_clientheaders.any`,
+il doit être renommé `clientheaders.any`. De plus, veillez à adapter également les instructions `$include`
+se rapportant à ce fichier dans les fichiers de fermes.
 
-Si le dossier contient toutefois plusieurs fichiers spécifiques à la batterie avec ce modèle, leur contenu doit être copié dans l’ `$include` instruction qui y fait référence dans les fichiers de batterie.
+Si le dossier contient toutefois plusieurs fichiers spécifiques à la ferme avec ce motif, leur contenu
+doit être copié dans l’instruction `$include` qui y fait référence dans les fichiers de fermes.
 
-Copiez le fichier `conf.dispatcher/clientheaders/default_clientheaders.any` de la configuration du répartiteur de service Cloud par défaut AEM vers cet emplacement.
+Copiez le fichier `conf.dispatcher/clientheaders/default_clientheaders.any` de la configuration
+Dispatcher AEM as a Cloud Service par défaut vers cet emplacement.
 
-Dans chaque fichier de batterie, remplacez les instructions clientheader include qui se présentent comme suit :
+Dans chaque fichier de ferme, remplacez les instructions d’inclusion clientheader qui se présentent comme suit :
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_publish_clientheaders.any"
 $include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_common_clientheaders.any"
 ```
 
-par la déclaration suivante:
+par l’instruction suivante :
 
 ```
 $include "../clientheaders/default_clientheaders.any"
@@ -593,23 +629,26 @@ $include "../clientheaders/default_clientheaders.any"
 
 ### Vérifier le filtre
 
-Enter directory `conf.dispatcher.d/filters`.
+Entrez dans le répertoire `conf.dispatcher.d/filters`.
 
-Supprimez tout fichier préfixe `ams_`.
+Supprimez tout fichier portant le préfixe `ams_`.
 
-Si `conf.dispatcher.d/filters` maintenant contient un seul fichier, il doit être renommé`filters.any` et n&#39;oubliez pas d&#39;adapter également les `$include` instructions se rapportant à ce fichier dans les fichiers de batterie.
+Si `conf.dispatcher.d/filters` contient maintenant un seul fichier, il doit être renommé
+`filters.any`. De plus, veillez à adapter également les instructions `$include` se rapportant à ce fichier dans les fichiers de fermes.
 
-Si le dossier contient toutefois plusieurs fichiers spécifiques à la batterie avec ce modèle, leur contenu doit être copié dans l’ `$include` instruction qui y fait référence dans les fichiers de batterie.
+Si le dossier contient toutefois plusieurs fichiers spécifiques à la ferme avec ce motif, leur contenu
+doit être copié dans l’instruction `$include` qui y fait référence dans les fichiers de fermes.
 
-Copiez le fichier `conf.dispatcher/filters/default_filters.any` de la configuration du répartiteur de service Cloud par défaut AEM vers cet emplacement.
+Copiez le fichier `conf.dispatcher/filters/default_filters.any` de la configuration
+Dispatcher AEM as a Cloud Service par défaut vers cet emplacement.
 
-Dans chaque fichier de batterie, remplacez les instructions d’inclusion de filtre qui se présentent comme suit :
+Dans chaque fichier de ferme, remplacez les instructions d’inclusion de filtre qui se présentent comme suit :
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/filters/ams_publish_filters.any"
 ```
 
-par la déclaration suivante:
+par l’instruction suivante :
 
 ```
 $include "../filters/default_filters.any"
@@ -617,212 +656,93 @@ $include "../filters/default_filters.any"
 
 ### Vérifier les rendus
 
-Enter directory `conf.dispatcher.d/renders`.
+Entrez dans le répertoire `conf.dispatcher.d/renders`.
 
 Supprimez tous les fichiers de ce dossier.
 
-Copiez le fichier `conf.dispatcher.d/renders/default_renders.any` de la configuration du répartiteur de service Cloud par défaut AEM vers cet emplacement.
+Copiez le fichier `conf.dispatcher.d/renders/default_renders.any` de la configuration
+Dispatcher AEM as a Cloud Service par défaut vers cet emplacement.
 
-Dans chaque fichier de batterie, supprimez tout contenu de la `renders` section et remplacez-le par :
+Dans chaque fichier de ferme, supprimez tout contenu de la section `renders` et
+remplacez-le par :
 
 ```
 $include "../renders/default_renders.any"
 ```
 
-### Vérification des hôtes virtuels
+### Vérifier les hôtes virtuels
 
-Renommez le répertoire `conf.dispatcher.d/vhosts` en `conf.dispatcher.d/virtualhosts` puis saisissez-le.
+Renommez le répertoire `conf.dispatcher.d/vhosts` en `conf.dispatcher.d/virtualhosts` puis entrez dedans.
 
-Supprimez tout fichier préfixe `ams_`.
+Supprimez tout fichier portant le préfixe `ams_`.
 
-Si `conf.dispatcher.d/virtualhosts` maintenant contient un seul fichier, il doit être renommé`virtualhosts.any` et n&#39;oubliez pas d&#39;adapter également les `$include` instructions se rapportant à ce fichier dans les fichiers de batterie.
+Si `conf.dispatcher.d/virtualhosts` contient maintenant un seul fichier, il doit être renommé
+`virtualhosts.any`. De plus, veillez à adapter également les instructions `$include` se rapportant à ce fichier dans les fichiers de fermes.
 
-Si le dossier contient toutefois plusieurs fichiers spécifiques à la batterie avec ce modèle, leur contenu doit être copié dans l’ `$include` instruction qui y fait référence dans les fichiers de batterie.
+Si le dossier contient toutefois plusieurs fichiers spécifiques à la ferme avec ce motif, leur contenu
+doit être copié dans l’instruction `$include` qui y fait référence dans les fichiers de fermes.
 
-Copiez le fichier `conf.dispatcher/virtualhosts/default_virtualhosts.any` de la configuration du répartiteur de service Cloud par défaut AEM vers cet emplacement.
+Copiez le fichier `conf.dispatcher/virtualhosts/default_virtualhosts.any` de la configuration
+Dispatcher AEM as a Cloud Service par défaut vers cet emplacement.
 
-Dans chaque fichier de batterie, remplacez les instructions d’inclusion de filtre qui se présentent comme suit :
+Dans chaque fichier de ferme, remplacez les instructions d’inclusion de filtre qui se présentent comme suit :
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/vhosts/ams_publish_vhosts.any"
 ```
 
-par la déclaration suivante:
+par l’instruction suivante :
 
 ```
 $include "../virtualhosts/default_virtualhosts.any"
 ```
 
-### Vérifiez votre état en exécutant le programme de validation
+### Vérifier votre état en exécutant le programme de validation
 
-Exécutez AEM en tant que validateur du répartiteur de services Cloud dans votre répertoire, avec la `dispatcher` sous-commande :
+Exécutez le programme de validation Dispatcher AEM as a Cloud Service dans votre répertoire, avec la sous-commande `dispatcher` :
 
 ```
 $ validator dispatcher .
 ```
 
-Si des erreurs s’affichent au sujet des fichiers d’inclusion manquants, vérifiez si vous les avez correctement renommés.
+Si des erreurs s’affichent au sujet de fichiers d’inclusion manquants, vérifiez si vous avez correctement renommé
+les fichiers en question.
 
 Si des erreurs s’affichent concernant une variable non définie `PUBLISH_DOCROOT`, renommez-la `DOCROOT`.
 
-Pour toute autre erreur, consultez la section Dépannage de la documentation de l’outil de validation.
+Pour toute autre erreur, consultez la section Dépannage de la documentation
+du programme de validation.
 
-### Testez votre configuration avec un déploiement local (installation du Docker requise)
+### Tester votre configuration avec un déploiement local (installation de Docker requise)
 
-En utilisant le script `docker_run.sh` dans AEM en tant qu’outils du répartiteur de services Cloud, vous pouvez tester que votre configuration ne contient aucune autre erreur qui s’afficherait uniquement dans le déploiement :
+Avec le script `docker_run.sh` dans les outils Dispatcher AEM as a Cloud Service, vous pouvez tester si
+votre configuration ne contient aucune autre erreur qui s’afficherait uniquement
+dans le déploiement :
 
-### Étape 1 : Générer des informations de déploiement avec le validateur
+### Étape 1 : générer des informations de déploiement avec le programme de validation
 
 ```
 validator full -d out .
 ```
 
-Ceci valide la configuration complète et génère des informations de déploiement dans `out`
+Cela valide la configuration complète et génère des informations de déploiement dans `out`
 
-### Étape 2 : Démarrez le répartiteur dans une image de dossier avec ces informations de déploiement
+### Étape 2 : démarrer Dispatcher dans une image Docker avec ces informations de déploiement
 
-Avec votre serveur de publication AEM s’exécutant sur votre ordinateur macOS, en écoutant sur le port 4503, vous pouvez lancer le répartiteur devant ce serveur comme suit :
+Avec votre serveur de publication AEM en exécution sur votre ordinateur macOS et écoutant le port 4503,
+vous pouvez lancer Dispatcher devant ce serveur comme suit :
 
 ```
 $ docker_run.sh out docker.for.mac.localhost:4503 8080
 ```
 
-Cela démarrera le conteneur et exposera Apache sur le port local 8080.
+Cela démarrera le conteneur et exposera Apache sur le port local 8080.
 
-### Utiliser votre nouvelle configuration de répartiteur
+### Utiliser votre nouvelle configuration Dispatcher
 
-Félicitations ! Si le programme de validation ne signale plus aucun problème et que le conteneur de docker démarre sans erreur ni avertissement, vous êtes prêt à déplacer votre configuration vers un `dispatcher/src` sous-répertoire de votre référentiel git.
+Félicitations ! Si le programme de validation ne signale plus aucun problème et
+que le conteneur Docker démarre sans erreur ni avertissement, vous êtes
+prêt à déplacer votre configuration vers un sous-répertoire `dispatcher/src`
+de votre référentiel git.
 
-**Les clients qui utilisent la version 1 de la configuration du répartiteur AMS doivent contacter le service clientèle pour les aider à migrer de la version 1 à la version 2 afin que les instructions ci-dessus puissent être suivies.**
-
-## Répartiteur et CDN {#dispatcher-cdn}
-
-La diffusion du contenu du service de publication comprend :
-
-* CDN (généralement géré par Adobe)
-* Répartiteur AEM
-* Publication AEM
-
-Le flux de données est le suivant :
-
-1. L’URL est ajoutée dans le navigateur.
-1. Demande effectuée sur le CDN mappée dans le DNS à ce domaine
-1. Si le contenu est entièrement mis en cache sur le CDN, le CDN l’affiche dans le navigateur.
-1. Si le contenu n’est pas entièrement mis en cache, le CDN appelle (proxy inverse) le répartiteur.
-1. Si le contenu est entièrement mis en cache sur le répartiteur, le répartiteur le sert sur le CDN
-1. Si le contenu n’est pas entièrement mis en cache, le répartiteur appelle (proxy inverse) la publication AEM.
-1. Le contenu est rendu par le navigateur, qui peut également le mettre en cache, selon les en-têtes
-
-La plupart du contenu est défini pour expirer au bout de cinq minutes, un seuil que respectent le cache du répartiteur et le CDN. Lors des redéploiements du service de publication, le cache du répartiteur est effacé puis réchauffé avant que les nouveaux noeuds de publication n’acceptent le trafic.
-
-Les sections ci-dessous fournissent des informations plus détaillées sur la diffusion de contenu, notamment la configuration CDN et la mise en cache du répartiteur.
-
-Des informations sur la réplication du service d’auteur au service de publication sont disponibles [ici](/help/operations/replication.md).
-
->[!NOTE]
->Le trafic passe par un serveur Web Apache, qui prend en charge les modules, y compris le répartiteur. Le répartiteur est principalement utilisé comme cache pour limiter le traitement sur les noeuds de publication afin d’améliorer les performances.
-
-### CDN {#cdn}
-
-AEM offre trois options :
-
-1. Adobe Managed CDN - CDN prêt à l’emploi d’AEM. Il s’agit de l’option recommandée car elle est complètement intégrée.
-1. CDN géré par le client - Le client apporte son propre CDN et est entièrement responsable de sa gestion.
-1. Pointez sur le CDN géré par Adobe : le client pointe un CDN vers le CDN prêt à l’emploi d’AEM.
-
->[!CAUTION]
->La première option est vivement recommandée. Adobe ne peut pas être tenu responsable du résultat d’une mauvaise configuration si vous choisissez la deuxième option.
-
-Les deuxième et troisième options seront autorisées au cas par cas. Cela implique de répondre à certaines conditions préalables, notamment, mais sans s’y limiter, à l’intégration héritée du client avec son fournisseur CDN, ce qui est difficile à annuler.
-
-#### Adobe Managed CDN {#adobe-managed-cdn}
-
-La préparation de la diffusion de contenu à l’aide du CDN prêt à l’emploi d’Adobe est simple, comme décrit ci-dessous :
-
-1. Vous fournirez le certificat SSL et la clé secrète signés à Adobe en partageant un lien vers un formulaire sécurisé contenant ces informations. Coordonnez cette tâche avec le service clientèle.
-Remarque : Aem as a Cloud Service ne prend pas en charge les certificats DV (Domain Validated).
-1. Le service clientèle coordonnera alors avec vous le timing d’un enregistrement DNS CNAME, en pointant son nom de domaine complet vers `adobe-aem.map.fastly.net`.
-1. Vous serez averti(e) lorsque les certificats SSL arriveront à expiration afin de pouvoir soumettre à nouveau les nouveaux certificats SSL.
-
-Par défaut, dans le cas d’une configuration CDN gérée par Adobe, tout le trafic public peut se diriger vers le service de publication, tant pour les environnements de production que pour les environnements de non production (développement et étape). Si vous souhaitez limiter le trafic au service de publication pour un environnement donné (par exemple, en limitant l’évaluation par une plage d’adresses IP), vous devez travailler avec le service à la clientèle pour configurer ces restrictions.
-
-#### CDN géré par le client {#customer-managed-cdn}
-
-Vous pouvez gérer votre propre CDN, à condition que :
-
-1. Vous disposez d’un CDN existant.
-1. Il doit s’agir d’un CDN pris en charge. Actuellement, Akamai est pris en charge. Si votre entreprise souhaite gérer un réseau de diffusion de contenu non pris en charge, contactez le service clientèle.
-1. Vous allez le gérer.
-1. Vous devez être en mesure de configurer CDN pour travailler avec Aem en tant que service Cloud. Reportez-vous aux instructions de configuration ci-dessous.
-1. Vous avez des experts en ingénierie de CDN qui sont sur appel au cas où des problèmes liés à l&#39;ingénierie se poseraient.
-1. Vous devez fournir des listes blanches des noeuds CDN à Cloud Manager, comme décrit dans les instructions de configuration.
-1. Vous devez effectuer et réussir un test de charge avant d’accéder à la production.
-
-Instructions de configuration :
-
-1. Fournissez la liste blanche du fournisseur de CDN à Adobe en appelant l’API de création/mise à jour d’environnement avec une liste de CIDR en liste blanche.
-1. Définissez l’ `X-Forwarded-Host` en-tête avec le nom de domaine.
-1. Définissez l’en-tête Host avec le domaine d’origine, qui est Aem as a Cloud Service Input. La valeur doit provenir d’Adobe.
-1. Envoyez l’en-tête SNI à l’origine. L’en-tête sni doit être le domaine d’origine.
-1. Définissez la `X-Edge-Key` valeur requise pour acheminer correctement le trafic vers les serveurs AEM. La valeur doit provenir d’Adobe.
-
-Avant d’accepter le trafic en direct, vous devez vérifier auprès du service à la clientèle d’Adobe que le routage du trafic de bout en bout fonctionne correctement.
-
-#### Pointer vers Adobe Managed CDN {#point-to-point-CDN}
-
-Pris en charge si vous souhaitez utiliser votre CDN existant, mais ne pouvez pas satisfaire aux exigences d’un CDN géré par le client. Dans ce cas, vous gérez votre propre CDN, mais pointez sur le CDN géré par Adobe.
-
-Les clients doivent effectuer et réussir un test de charge avant d’accéder à la production.
-
-Instructions de configuration :
-
-1. Définissez l’ `X-Forwarded-Host` en-tête avec le nom de domaine.
-1. Définissez l’en-tête de l’hôte avec le domaine d’origine, qui est l’entrée CDN d’Adobe. La valeur doit provenir d’Adobe.
-1. Envoyez l’en-tête SNI à l’origine. Comme l’en-tête Host, l’en-tête sni doit être le domaine d’origine.
-1. Définissez le `X-Edge-Key`, qui est nécessaire pour acheminer correctement le trafic vers les serveurs AEM. La valeur doit provenir d’Adobe.
-
-#### Invalidation du cache CDN {#CDN-cache-invalidation}
-
-L’invalidation du cache suit les règles suivantes :
-
-* En général, le contenu HTML est mis en cache dans le CDN pendant 5 minutes, en fonction de l’en-tête de contrôle du cache émis par le répartiteur.
-* Les bibliothèques clientes (JavaScript et CSS) sont mises en cache indéfiniment à l’aide du paramètre de contrôle du cache défini sur immutable ou sur 30 jours pour les navigateurs plus anciens qui ne respectent pas la valeur immuable. Notez que les bibliothèques client sont servies sur un chemin unique qui change si les bibliothèques client changent. En d’autres termes, du code HTML faisant référence aux bibliothèques clientes sera produit au besoin afin que vous puissiez découvrir un nouveau contenu au fur et à mesure de sa publication.
-* Par défaut, les images ne sont pas mises en cache.
-
-Avant d’accepter le trafic en direct, les clients doivent vérifier auprès de l’assistance clientèle d’Adobe que le routage de bout en bout fonctionne correctement.
-
-## Invalidation explicite du cache du répartiteur {#explicit-invalidation}
-
-Comme indiqué précédemment, le trafic passe par un serveur Web Apache, qui prend en charge les modules, y compris le répartiteur. Le répartiteur est principalement utilisé comme cache pour limiter le traitement sur les noeuds de publication afin d’améliorer les performances.
-
-En général, il n’est pas nécessaire d’invalider manuellement le contenu dans le répartiteur, mais cela est possible si nécessaire, comme décrit ci-dessous.
-
-Avant AEM en tant que service Cloud, il existait deux manières d’invalider le cache du répartiteur.
-
-1. Appeler l’agent de réplication, en spécifiant l’agent de vidage du répartiteur de publication
-2. Appel direct de l’ `invalidate.cache` API (par exemple, POST /dispatcher/invalidate.cache)
-
-L’ `invalidate.cache` approche ne sera plus prise en charge puisqu’elle ne concerne qu’un noeud de répartiteur spécifique.
-AEM en tant que service Cloud fonctionne au niveau du service, et non au niveau du noeud individuel. Par conséquent, les instructions d’invalidation figurant dans la documentation d’aide [du](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) répartiteur ne sont plus exactes.
-L&#39;agent de vidage de réplication doit être utilisé. Vous pouvez le faire à l&#39;aide de l&#39;API de réplication. La documentation de l&#39;API de réplication est disponible [ici](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) et pour un exemple de vidage du cache, reportez-vous à l&#39;exemple de page [de l&#39;](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) API en particulier à l&#39; `CustomStep` exemple d&#39;émission d&#39;une action de réplication de type ACTIVATE pour tous les agents disponibles. Le point de fin de l’agent de vidage n’est pas configurable, mais il est préconfiguré pour pointer vers le répartiteur, en correspondance avec le service de publication exécutant l’agent de vidage. L&#39;agent de vidage peut généralement être déclenché par des événements OSGi ou des flux de travail.
-
-Le diagramme ci-dessous illustre cela.
-
-![](assets/cdnb.png "CDNCDN")
-
-Si vous pensez que le cache du répartiteur n’est pas effacé, contactez le service à la clientèle qui peut vider le cache du répartiteur si nécessaire.
-
-Le CDN géré par Adobe respecte les TTL et il n’est donc pas nécessaire qu’il soit vidé. Si un problème est suspecté, contactez le service à la clientèle qui peut vider un cache CDN géré par Adobe si nécessaire.
-
-### Invalidation du cache du répartiteur pendant l’activation/la désactivation {#cache-activation-deactivation}
-
-Comme les versions précédentes d’AEM, la publication ou l’annulation de publication des pages effacera le contenu du cache du répartiteur. Si un problème de mise en cache est suspecté, les clients doivent republier les pages en question.
-
-Lorsque l’instance de publication reçoit une nouvelle version d’une page ou d’un fichier de l’auteur, elle utilise l’agent de vidage pour invalider les chemins appropriés sur son répartiteur. Le chemin d’accès mis à jour est supprimé du cache du répartiteur, ainsi que de ses parents, jusqu’à un niveau (vous pouvez le configurer avec le niveau [statfileslevel](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
-
-### Actualité du contenu et cohérence de la version {#content-consistency}
-
-* Les pages sont composées de code HTML, JavaScript, CSS et d’images.
-* Vous êtes invité à tirer parti de la structure clientlibs pour importer des ressources JavaScript et CSS dans des pages HTML, en tenant compte des dépendances entre les bibliothèques JS.
-* La gestion automatique des versions est fournie, ce qui signifie que les développeurs peuvent archiver les modifications apportées aux bibliothèques JS dans le contrôle de code source. La dernière version sera alors disponible lorsqu’une version est publiée. Sans cela, les développeurs devraient modifier manuellement le code HTML avec des références à la nouvelle version de la bibliothèque, ce qui est particulièrement onéreux si de nombreux modèles HTML partagent la même bibliothèque.
-* Lorsque les nouvelles versions des bibliothèques sont publiées en production, les pages HTML de référence sont mises à jour avec de nouveaux liens vers ces versions de bibliothèque mises à jour. Une fois que le cache du navigateur a expiré pour une page HTML donnée, il n’est plus possible que les anciennes bibliothèques soient chargées à partir du cache du navigateur, car la page actualisée (à partir d’AEM) est désormais garantie de référencer les nouvelles versions des bibliothèques. En d’autres termes, une page HTML actualisée comprend toutes les dernières versions de la bibliothèque.
+**Les clients qui utilisent la version 1 de la configuration AMS Dispatcher doivent contacter le service clientèle pour les aider à migrer à la version 2 afin de pouvoir suivre les instructions ci-dessus.**
