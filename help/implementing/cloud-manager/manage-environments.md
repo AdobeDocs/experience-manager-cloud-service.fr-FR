@@ -1,55 +1,58 @@
 ---
-title: Gestion des environnements - Service Cloud
-description: Gestion des environnements - Service Cloud
+title: Gestion des environnements - Cloud Service
+description: Gestion des environnements - Cloud Service
 translation-type: tm+mt
-source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+source-git-commit: 81c5112cd72ff3713690a49978f1b6e991d15c3b
 
 ---
 
 
 # Gestion des environnements {#manage-environments}
 
-La section suivante décrit les types d’environnement qu’un utilisateur peut créer et comment il peut créer un environnement.
+La section suivante décrit les types d’environnement qu’un utilisateur peut créer et comment cet utilisateur peut créer un environnement.
 
 ## Types d’environnement {#environment-types}
 
 Un utilisateur disposant des autorisations requises peut créer les types d’environnement suivants (dans les limites de ce qui est disponible pour le client spécifique).
 
-* **Environnement** de production et d’étape :La production et la scène sont disponibles en tant que duo et sont utilisées à des fins de test et de production.
+* **Environnement de production et de test** : les environnements de production et de test sont disponibles en duo et sont utilisés à des fins de test et de production.
 
-* **Développement**: Un environnement de développement peut être créé à des fins de développement et de test et sera associé uniquement aux pipelines qui ne sont pas en production.
+* **Développement** : un environnement de développement peut être créé à des fins de développement et de test et sera associé uniquement aux pipelines qui ne sont pas en production.
 
    >[!NOTE]
-   >Un environnement de développement créé automatiquement dans un programme Sandbox sera configuré pour inclure les solutions Sites et Ressources.
+   >Un environnement de développement créé automatiquement dans un programme Sandbox sera configuré pour inclure les solutions Sites et Assets.
 
-   Le tableau suivant récapitule les types d’environnement et leurs attributs :
+   Le tableau suivant récapitule les types d’environnement et leurs attributs :
 
-   | Nom | Niveau d’auteur | Publier le niveau | L’utilisateur peut créer | L’utilisateur peut supprimer | Pipeline pouvant être associé à l&#39;environnement |
+   | Nom | Niveau de création | Niveau de publication | L’utilisateur peut créer | L’utilisateur peut supprimer | Pipeline pouvant être associé à l’environnement |
    |--- |--- |--- |--- |---|---|
-   | Production | Oui | Oui si Sites inclus | Oui | Non | Gazoduc de production |
-   | Scène | Oui | Oui si Sites inclus | Oui | Non | Gazoduc de production |
-   | Développement | Oui | Oui si Sites inclus | Oui | Oui | Pipeline hors production |
+   | Production | Oui | Oui si Sites est inclus | Oui | Non | Pipeline de production |
+   | Scène | Oui | Oui si Sites est inclus | Oui | Non | Pipeline de production |
+   | Développement | Oui | Oui si Sites est inclus | Oui | Oui | Pipeline hors production |
 
    >[!NOTE]
-   >La production et la scène sont disponibles en tant que duo et sont utilisées à des fins de test et de production.  L’utilisateur ne pourra pas créer uniquement un environnement de production ou de phase.
+   >La production et le test sont disponibles en duo et sont utilisés à des fins de test et de production. L’utilisateur ne pourra pas créer uniquement un environnement de production ou de test.
 
 ## Ajout d’un environnement {#adding-environments}
 
 
 1. L’utilisateur clique sur le bouton **Ajouter un environnement** pour ajouter un environnement.
 
+   >[!NOTE]
+   >Ce bouton est également accessible à partir de la page  du  ou de la carte de . En tant qu’utilisateur, vous ne verrez cette option que si vous disposez des autorisations requises. Contactez votre représentant Adobe si vous avez des questions.
+
    ![](assets/add-environment.png)
 
-1. La boîte de dialogue **Ajouter un environnement** s’affiche. L’utilisateur doit envoyer des détails tels que le type **d’** environnement et le nom **de l’** **environnement et la description de l’environnement (selon l’objectif de l’utilisateur lors de la création de l’environnement dans les limites de ce qui est disponible pour le client spécifique).**
+1. La boîte de dialogue **Ajouter un environnement** s’affiche. L’utilisateur doit ajouter des détails tels que le **type d’environnement**, **nom de l’environnement** et la **description de l’environnement** (selon l’objectif de l’utilisateur lors de la création de l’environnement dans les limites de ce qui est disponible pour le client spécifique).
 
    ![](assets/add-environment2.png)
 
    >[!NOTE]
-   >Lors de la création d’un environnement, une ou plusieurs *intégrations* sont créées dans les E/S Adobe. Elles sont visibles par les utilisateurs clients qui ont accès à la console d’E/S Adobe et ne doivent pas être supprimées. Ceci est déconseillé dans la description de la console d’E/S Adobe.
+   >Lors de la création d’un environnement, une ou plusieurs *intégrations* sont créées dans les E/S Adobe. Elles sont visibles par les utilisateurs clients qui ont accès à la console d’E/S Adobe et ne doivent pas être supprimées. Cette suppression est déconseillée dans la description de la console d’E/S Adobe.
 
    ![](assets/add-environment-image1.png)
 
-1. Cliquez sur **Enregistrer** pour ajouter un environnement avec les critères renseignés.  Désormais, l’écran *Aperçu* affiche la carte d’où vous pouvez configurer votre pipeline.
+1. Cliquez sur **Enregistrer** pour ajouter un environnement avec les critères renseignés. Désormais, l’écran *Aperçu* affiche la carte à partir de laquelle vous pouvez configurer votre pipeline.
 
    >[!NOTE]
    >Si vous n’avez pas encore configuré votre pipeline hors production, l’écran *Aperçu* affiche la carte d’où vous pouvez créer votre pipeline hors production.
@@ -57,9 +60,9 @@ Un utilisateur disposant des autorisations requises peut créer les types d’en
 
 ## Mise à jour de l’environnement {#updating-dev-environment}
 
-Les mises à jour des environnements Stage et Production sont gérées automatiquement par Adobe.
+Les mises à jour des environnements Test et Production sont gérées automatiquement par Adobe.
 
-Les mises à jour des environnements de développement sont gérées par les utilisateurs du programme. Lorsqu’un environnement n’exécute pas la dernière version d’AEM disponible pour le public, l’état de la carte Environments sur l’écran d’accueil affiche **UPDATE DISPONIBLE**.
+Les mises à jour des environnements de développement sont gérées par les utilisateurs du programme. Lorsqu’un environnement n’exécute pas la dernière version d’AEM disponible pour le public, l’état de la carte Environnements sur l’écran d’accueil affiche **MISE À JOUR DISPONIBLE**.
 
 ![](assets/manage-environments2.png)
 )
