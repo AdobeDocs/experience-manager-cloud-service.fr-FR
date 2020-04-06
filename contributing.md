@@ -1,11 +1,11 @@
 ---
-source-git-commit: 3dd012e70e467be458523ad4a2be4610743e9980
+source-git-commit: 190577c9143b02e0c3184231de50fb461156c2d9
 translation-type: tm+mt
 
 ---
 # Contribution à la documentation du service Adobe Experience Manager Cloud
 
-Merci d’avoir choisi de contribuer à la documentation du service Adobe Experience Manager Cloud ! Nous somme ouverts aux contributions de contenu de toute notre communauté de lecteurs ainsi que de nos collègues employés d’Adobe.
+Thank you for choosing to contribute to [!UICONTROL Adobe Experience Manager] Cloud Service documentation! Nous sommes ouverts aux contributions de notre communauté et des employés d’Adobe en dehors des équipes de documentation.
 
 Ce fichier décrit comment contribuer à la documentation ainsi que les directives à suivre lors de l’apport de vos contributions.
 
@@ -14,48 +14,75 @@ Ce fichier décrit comment contribuer à la documentation ainsi que les directiv
 Ce projet a adopté le [Code de conduite Adobe Open Source](code-of-conduct.md). En contribuant à la documentation AEM, vous acceptez de respecter ce code de conduite. Veuillez signaler tout comportement inacceptable à
 [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
-## Directives pour les contributions
+## Instructions pour contribuer à la documentation AEM
 
-Bien que nous nous réjouissions de toute contribution à l’amélioration de la documentation d’AEM, nous demandons que les contributions respectent, dans la mesure du possible, certaines directives et normes. Pour plus d’informations, voir les [Instructions relatives à la contribution à la documentation](guidelines.md) AEM.
+Bien que nous nous réjouissions de toute contribution à l’amélioration de la documentation du service AEM Cloud, nous demandons que les contributions respectent certaines directives et normes. Pour plus d’informations, voir les [Instructions relatives à la contribution à la documentation](guidelines.md) AEM.
 
 ## Comment contribuer
 
-Nous souhaitons faciliter au maximum la soumission de vos contributions. Vous pouvez contribuer de deux manières :
+Votre contribution dépend de votre rôle et du type de modification que vous souhaitez effectuer :
 
-* [Création d’un problème](#create-an-issue)
-* [Création d’une demande d’extraction](#create-a-pull-request)
+<!--
+We want to make it as easy as possible to submit your contributions. You can contribute in two ways:
+--- master
+-->
 
-La méthode que vous choisissez dépend du confort avec lequel vous modifiez vous-même la documentation dans GitHub.
+### Création d’une demande
 
->[!NOTE]
->
->Les contributions que vous soumettez sont couvertes par les conditions d’utilisation d’ [Adobe.](https://www.adobe.com/legal/terms.html)
+Vous avez une suggestion, une observation à propos des documents actuels ou une question sur la manière dont un élément est décrit ? Créez une demande. Les demandes sont également excellentes si vous souhaitez apporter votre contribution, mais que vous n’êtes pas habitué à modifier les documents ou à générer vous-même une demande de tirage.
 
-### Création d’une demande {#create-an-issue}
+### Modifications mineures
 
-Vous avez une suggestion, une observation à propos des documents actuels ou une question sur la manière dont un élément est décrit ? Créez ensuite un problème. Les questions sont également excellentes si vous avez quelque chose à contribuer, mais ne vous sentez pas à l&#39;aise de modifier les documents ou de faire vous-même une demande d&#39;extraction.
+Pour soumettre des mises à jour mineures, cliquez sur le lien **Edit** (Modifier) dans un article afin d’ouvrir l’article source dans GitHub. Utilisez l’interface utilisateur de GitHub pour effectuer vos mises à jour. Voir le [Guide du contributeur de la documentation Adobe](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) pour plus d’informations.
 
-Les problèmes vous permettent de décrire facilement votre idée d’amélioration aux documents et un membre de l’équipe AEM Docs peut la consulter. Il suffit de cliquer sur le lien **Journal d’une publication** en haut du panneau de navigation de droite sur une page pour créer une publication.
+Les corrections mineures ou les clarifications que vous soumettez pour la documentation et les exemples de code dans ce référentiel sont couverts par les conditions d’utilisation d’Adobe.
 
-### Création d’une requête d’extraction {#create-a-pull-request}
+### Modifications majeures ou nouveaux articles provenant de membres de la communauté
 
-Si vous rencontrez un problème et savez exactement comment le résoudre, envisagez de créer une requête d’extraction. Les requêtes Pull vous permettent d’apporter vos propres modifications à la documentation, qui sont ensuite examinées pour inclusion par un membre de l’équipe AEM Docs. Il vous suffit de cliquer sur le lien **Modifier cette page** en haut du panneau de navigation de droite sur n’importe quelle page pour apporter les modifications suggérées et créer la demande d’extraction.
+Si vous faites partie de la communauté Adobe et souhaitez créer un article ou envoyer des modifications importantes, cliquez sur l’onglet **Issues** (Demandes) du référentiel GitHub pour soumettre une demande. Cette soumission ouvre une discussion avec l’équipe de documentation. Vous devrez collaborer avec l’auteur (ou un autre employé d’Adobe) pour publier du nouveau contenu.
 
-Toutes les demandes d&#39;extraction doivent être accompagnées d&#39;un accord de licence signé avec un [contributeur ou d&#39;un CLA.](https://opensource.adobe.com/cla.html)  permettant d’&#39;autoriser Adobe à redistribuer vos contributions
-dans le cadre du projet. Vous n’avez besoin de soumettre un CLA Adobe qu’une seule fois. Par conséquent, si vous l’avez déjà soumis, vous n’avez rien à faire.
+Si vous soumettez une demande d’extraction avec des modifications importantes de la documentation et des exemples de code, un message apparaît dans la demande d’extraction, vous demandant de soumettre un contrat de licence de contribution en ligne (CLA). Vous devez compléter le formulaire en ligne avant de pouvoir vérifier votre demande d’extraction.
 
-### Présentation rapide des vidéos
+<!--
+If you see a problem and know exactly how to fix it, consider creating a pull request. Pull requests allow you to make your own edits to the documentation, which are then reviewed for inclusion by an AEM Docs Team member. Simply click on the **Edit this page** link at the top of the right navigation panel on any page to make your suggested changes and create the pull request.
+--master
+-->
 
-Regardez la vidéo suivante pour un aperçu rapide de la création de problèmes et de l’extraction de requêtes.
+### Modifications majeures par des employés d’Adobe
 
->[!VIDEO](https://video.tv.adobe.com/v/27069)
+Si vous êtes rédacteur technique, chef de programme ou développeur de l’équipe produit d’une solution Adobe Experience Cloud et que votre rôle est de rédiger des articles techniques ou d’y contribuer, vous devriez utiliser le référentiel privé à l’adresse `https://git.corp.adobe.com/AdobeDocs`.
 
-### Contributions des employés Adobe
+Les employés d’Adobe ayant un autre profil doivent utiliser le référentiel public pour des mises à jour mineures.
 
-Si vous êtes un employé d’Adobe et avez une contribution, utilisez l’ `AdobeDocs` organisation dans le git d’entreprise.
+## Contrat de licence du contributeur
 
-Nous sommes évidemment heureux de toute contribution et examinerons votre contribution si elle est effectuée dans le référentiel public. Toutefois, les demandes d’extraction des employés Adobe sont plus faciles à traiter et peuvent être approuvées plus rapidement dans le référentiel d’entreprise. Assurez-vous que toute information de propriété exclusive ne soit discutée que sur le repo de l&#39;entreprise.
+Toutes les contributions de tiers à ce projet doivent être accompagnées d’un contrat de licence de contributeur
+signé. Cela donne à Adobe l’autorisation de redistribuer vos contributions
+dans le cadre du projet. [Signez notre contrat de licence du contributeur.](https://opensource.adobe.com/cla.html)Vous n’avez besoin de soumettre un CLA Adobe qu’une seule fois. Par conséquent, si vous l’avez déjà soumis, vous n’avez rien à faire.
 
-## Informations supplémentaires
 
-Pour plus d’informations sur l’utilisation de la plateforme de création GitHub, consultez le Guide [des contributeurs d’](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) Adobe Docs.
+## Outils et configuration
+
+Les contributeurs de la communauté peuvent utiliser l’interface utilisateur de GitHub pour les modifications de base ou dupliquer (fork) le référentiel pour apporter des contributions majeures.
+
+<!--
+If you are an Adobe employee and have a contribution, please use the `AdobeDocs` org in the corporate git.
+We of course are happy for any contribution and will review your contribution if it is made on the public repository, however pull requests from Adobe employees are easier to process and can be approved faster on the corporate repo. Please make sure that any proprietary information is only discussed on the corporate repo.
+---master
+-->
+
+See the [Adobe Docs Contributor Guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) for an overview of how to use the GitHub authoring platform.
+
+## Utilisation du langage Markdown pour mettre en forme votre sujet
+
+Tous les articles de ce référentiel utilisent le langage Markdown adapté pour GitHub. Si vous n’êtes pas familiarisé avec Markdown, voir :
+
+* [Notions de base du langage Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+* [Aide-mémoire du langage Markdown à imprimer](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+
+## Étiquettes
+
+Dans le référentiel public, des étiquettes automatisées sont attribuées aux demandes d’extraction afin de nous aider à gérer le processus de demande d’extraction et de vous informer du statut de votre demande d’extraction :
+
+* **Modification envoyée à l’auteur** : l’auteur a été informé de la demande d’extraction en attente.
+* **prêt à fusionner** : prêt à être examiné par notre équipe de vérification des demandes d’extraction.
