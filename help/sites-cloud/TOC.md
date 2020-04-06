@@ -1,15 +1,14 @@
 ---
-sub-product: Authoring Content in AEM as a Cloud Service
-user-guide-title: Authoring Content in AEM as a Cloud Service
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+sub-product: Création de contenu dans AEM en tant que service Cloud
+user-guide-title: Création de contenu dans AEM en tant que service Cloud
+translation-type: tm+mt
+source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
 
 ---
 
 
 # Sites {#sites}
 
-+ [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
 + [Modifications notables d’AEM Sites dans AEM Cloud Service](sites-cloud-changes.md)
 + Création {#authoring}
    + Prise en main {#getting-started}
@@ -56,12 +55,12 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       + [Conversion de lancements](authoring/launches/promoting.md)
    + Workflows {#workflows}
       + [Utilisation des workflows](authoring/workflows/overview.md)
-      + [Application de workflows aux pages](authoring/workflows/applying.md)
-      + [Participation aux workflows](authoring/workflows/participating.md)
+      + [Application de workflows aux pages  ](authoring/workflows/applying.md)
+      + [Participation aux workflows  ](authoring/workflows/participating.md)
    + Personnalisation   {#personalization}
       + [Présentation de la personnalisation](authoring/personalization/overview.md)
-      + [Aperçu des pages à l’aide des données ContextHub](authoring/personalization/contexthub.md)
-      + [Création de contenu ciblé en mode Ciblage](authoring/personalization/targeted-content.md)
+      + [Aperçu des pages à l’aide des données ContextHub ](authoring/personalization/contexthub.md)
+      + [Création de contenu ciblé en mode Ciblage   ](authoring/personalization/targeted-content.md)
       + [Utilisation de contenu ciblé sur plusieurs sites](authoring/personalization/multisite-targeted-content.md)
       + [Structuration de la gestion multisite du contenu ciblé](authoring/personalization/multisite-structure.md)
       + [Gestion des activités](authoring/personalization/activities.md)
