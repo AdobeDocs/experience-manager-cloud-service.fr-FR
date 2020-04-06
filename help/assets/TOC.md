@@ -1,15 +1,14 @@
 ---
-sub-product: AEM Assets as a Cloud Service
-user-guide-title: AEM Assets as a Cloud Service
+sub-product: AEM Assets as a Cloud Service
+user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: d872d78feb6cab972282979ec67bf3196c56febf
+source-git-commit: 733b63785113cdff05876c50d9c66325760e1fae
 
 ---
 
 
-# Assets {#assets}
+# Ressources {#assets}
 
-+ [AEM Assets as a Cloud Service](/help/assets/home.md)
 + [Présentation et nouveautés](overview.md)
 + [Modifications notables d’AEM Assets as a Cloud Service](assets-cloud-changes.md)
 + [Architecture](architecture.md)
@@ -40,8 +39,8 @@ source-git-commit: d872d78feb6cab972282979ec67bf3196c56febf
    + [Gestion des droits numériques des ressources](drm.md)
 + Configuration, administration et extension d’Assets {#admin}
    + [API et supports de référence](developer-reference-material-apis.md)
+   + [Configuration du partage de ressources](configure-asset-sharing.md)
    + [Schéma de métadonnées de dossier](folder-metadata-schema.md)
-   + [Profils de traitement](/help/assets/dynamic-media/processing-profiles.md)
    + [Ressources multilingues et traduction des ressources](translate-assets.md)
    + [Facettes de recherche](search-facets.md)
    + [Extension de l’éditeur de ressources](extend-asset-editor.md)
@@ -52,6 +51,9 @@ source-git-commit: d872d78feb6cab972282979ec67bf3196c56febf
    + [Métadonnées XMP](xmp-metadata.md)
    + [Fonctionnalités de MediaLibrary](medialibrary.md)
    + [Importation et exportation des métadonnées des ressources](metadata-import-export.md)
++ Partage et distribution de fichiers {#brandportal}
+   + [Configuration d’AEM Assets avec Brand Portal](configure-aem-assets-with-brand-portal.md)
+   + [Publication des ressources AEM vers le portail de marque](publish-to-brand-portal.md)
 + Fragments de contenu {#content-fragments}
    + [Utilisation de fragments de contenu](content-fragments/content-fragments.md)
    + [Gestion des fragments de contenu](content-fragments/content-fragments-managing.md)
