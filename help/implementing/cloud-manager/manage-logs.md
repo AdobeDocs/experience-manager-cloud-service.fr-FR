@@ -1,47 +1,47 @@
 ---
-title: Gérer les journaux - Service Cloud
-description: Gérer les journaux - Service Cloud
+title: Gérer les journaux - Cloud Service
+description: Gérer les journaux - Cloud Service
 translation-type: tm+mt
-source-git-commit: 5913151c4e2bebb84bd68377d64f43e07caaf2dd
+source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
 
 ---
 
 
-# Accès aux journaux et leur gestion {#manage-logs}
+# Accès aux journaux et gestion {#manage-logs}
 
-Les utilisateurs peuvent accéder à un de fichiers journaux disponibles pour l’ sélectionné à l’aide de la carte de.  Les utilisateurs peuvent accéder à un de fichiers journaux disponibles pour l’ de sélectionné.
+Les utilisateurs peuvent accéder à la liste des fichiers journaux disponibles pour l’environnement sélectionné à l’aide de la carte d’environnement. Les utilisateurs peuvent accéder à la liste des fichiers journaux disponibles pour l’environnement sélectionné.
 
-Ces fichiers peuvent être téléchargés via l’interface utilisateur, soit à partir de la page **Aperçu** .
+Ces fichiers peuvent être téléchargés soit par le biais de l’interface utilisateur, soit à partir de la page **Aperçu**.
 
 ![](assets/manage-logs1.png)
 
-Ou bien, la page de **du** :
+Ou encore à partir de la page **Environnements** :
 
 ![](assets/manage-logs2.png)
 
->[!Note]
->Quel que soit l’emplacement d’ouverture, la même boîte de dialogue s’affiche et permet de télécharger un fichier journal individuel.
+>[!NNote]
+>Quel que soit l’emplacement d’ouverture, la même boîte de dialogue s’affiche et permet de télécharger un fichier journal.
 
 ![](assets/manage-logs3.png)
 
 
-## Connexion à l’API {#logs-thorugh-api}
+## Journaux disponibles via l’API {#logs-thorugh-api}
 
-Outre le téléchargement de journaux via l’interface utilisateur, les journaux seront disponibles via l’API et l’interface de ligne de commande.
+Outre le téléchargement de journaux par le biais l’interface utilisateur, les journaux seront disponibles via l’API et l’interface de ligne de commande.
 
-Par exemple, pour télécharger les fichiers journaux d’un  de  spécifique, la commande serait quelque chose d’unique avec les lignes de
+Par exemple, pour télécharger les fichiers journaux d’un environnement spécifique, la commande pourrait ressembler à ceci :
 
 ```java
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-La commande suivante permet de tailler les journaux :
+La commande suivante permet de retailler les journaux :
 
 ```java
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-Pour obtenir l’ID de  (1884 dans ce cas) et les options de service ou de nom de journal disponibles, vous pouvez utiliser :
+Pour obtenir l’ID d’environnement (1884 dans ce cas) et les options de service ou de nom de journal disponibles, vous pouvez utiliser :
 
 ```java
 $ aio cloudmanager:list-environments
@@ -64,12 +64,5 @@ Environment Id Service    Name
 1884           dispatcher httpdaccess
 ```
 
->[!Note]
->Tandis que l’option **Téléchargement de journaux** est disponible via l’interface utilisateur et l’API, l’option **Suivi de journaux** est uniquement disponible via API/CLI.
-
-### Ressources supplémentaires {#resources}
-
-Reportez-vous aux ressources supplémentaires suivantes pour en savoir plus sur l’API Cloud Manager et l’interface de ligne de commande des E/S Adobe :
-
-* [Documentation de l’API Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [Interface de ligne de commande des E/S Adobe](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+>[!NNote]
+>Alors que **les téléchargements de journaux** seront disponibles par le biais de l’interface utilisateur et de l’API, **** la fonction d’envoi de journaux est disponible uniquement sur l’API/CLI.
