@@ -1,15 +1,14 @@
 ---
-sub-product: Implementing for AEM as a Cloud Service
-user-guide-title: Implementing for AEM as a Cloud Service
+sub-product: Mise en oeuvre pour AEM en tant que service Cloud
+user-guide-title: Mise en oeuvre pour AEM en tant que service Cloud
 translation-type: tm+mt
-source-git-commit: 2e092f80aef985afa7541a9fe1573b3ee9b55346
+source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
 
 ---
 
 
 # Implémentation {#implementing}
 
-+ [Implémentation d’applications pour AEM as a Cloud Service](/help/implementing/home.md)
 + Utilisation de Cloud Manager {#using-cloud-manager}
    + [Gestion des environnements](cloud-manager/manage-environments.md)
    + [Configuration de votre pipeline CI/CD](cloud-manager/configure-pipeline.md)
@@ -22,11 +21,12 @@ source-git-commit: 2e092f80aef985afa7541a9fe1573b3ee9b55346
    + [Accès à Git](cloud-manager/accessing-git.md)
    + [Intégration de Git à Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
 + Développement pour AEM as a Cloud Service {#developing}
-   + [Structure du projet AEM](developing/introduction/aem-project-content-package-structure.md)
-   + [Package de structure du référentiel de projet AEM](developing/introduction/repository-structure-package.md)
+   + [Structure d’un module de projet AEM](developing/introduction/aem-project-content-package-structure.md)
+   + [Développement d’un module de structure de référentiel](developing/introduction/repository-structure-package.md)
    + [SDK AEM as a Cloud Service](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [Recherche et indexation de contenu](/help/operations/indexing.md)
    + [Conseils de développement pour AEM as a Cloud Service](developing/introduction/development-guidelines.md)
+   + [Journalisation](/help/implementing/developing/introduction/logging.md)
    + [Prise en main du développement d’AEM Sites – Tutoriel WKND](developing/introduction/develop-wknd-tutorial.md)
    + [API d’AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Présentation des résultats de tests](/help/implementing/developing/introduction/understand-test-results.md)
@@ -37,4 +37,3 @@ source-git-commit: 2e092f80aef985afa7541a9fe1573b3ee9b55346
    + [Déploiement sur AEM as a Cloud Service](deploying/overview.md)
 + Dispatcher en mode cloud {#dispatcher}
    + [Dispatcher en mode cloud](dispatcher/overview.md)
-   + [de contenu dans AEM en tant que service Cloud](dispatcher/content-delivery.md)
