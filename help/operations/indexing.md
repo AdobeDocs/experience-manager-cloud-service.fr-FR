@@ -2,7 +2,7 @@
 title: Recherche et indexation de contenu
 description: 'Recherche et indexation de contenu '
 translation-type: tm+mt
-source-git-commit: 7bcd55570cb6996315046865264b39d1a4dc671a
+source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
 
 ---
 
@@ -31,7 +31,7 @@ Vous trouverez ci-dessous un  des principales modifications par rapport à AEM 6
 
 1. A un niveau élevé sur AEM en tant que service cloud, avec l’introduction du modèle [de déploiement](#index-management-using-blue-green-deployments) bleu-vert, deux jeux d’index existeront : l’un est défini pour l’ancienne version (bleu) et l’autre pour la nouvelle version (vert).
 
-<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
+La version de l’index utilisée est configurée à l’aide d’indicateurs dans les définitions d’index via l’ `useIfExist` indicateur. Un index ne peut être utilisé que dans une seule version de l’application (par exemple, bleu ou vert uniquement) ou dans les deux versions. La documentation détaillée est disponible dans [Index Management à l’aide de Blue-Green Deployments](#index-management-using-blue-green-deployments).
 
 1. Les clients peuvent déterminer si la tâche d’indexation est terminée sur la page de création de Cloud Manager et recevront une notification lorsque la nouvelle version sera prête à recevoir du trafic.
 
@@ -61,7 +61,7 @@ Vous devez préparer un nouveau package de définition d’index qui contient la
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-qui doit ensuite passer sous `ui.apps/src/main/content/jcr_root`. Les dossiers sous-racine ne sont pas pris en charge à partir de maintenant.
+qui doit ensuite passer sous `ui.content/src/main/content/jcr_root`. Les dossiers sous-racine ne sont pas pris en charge à partir de maintenant.
 
 <!-- need to review and link info on naming convention from https://wiki.corp.adobe.com/display/WEM/Merging+Customer+and+OOTB+Index+Changes?focusedCommentId=1784917629#comment-1784917629 -->
 
@@ -69,15 +69,11 @@ Le package de l’exemple ci-dessus est généré comme `com.adobe.granite:new-i
 
 ### Déploiement des définitions d’index {#deploying-index-definitions}
 
-> [!NOTE]
->
-> Il existe un problème connu avec Jackrabbit Filevault Maven Package Plugin version **1.1.0** qui ne vous permet pas d&#39;ajouter `oak:index` aux modules de `<packageType>application</packageType>`. Pour contourner ce problème, utilisez la version **1.0.4**.
-
 Les définitions d’index sont désormais marquées comme personnalisées et avec version :
 
-* La définition d’index elle-même (par exemple `/oak:index/ntBaseLucene-custom-1`)
+* La définition d’index elle-même (par exemple `/oak:index/ntBaseLucene-custom-1`) qui est un contenu MUTABLE
 
-Par conséquent, pour déployer un index, la définition d’index (`/oak:index/definitionname`) doit être fournie via `ui.apps` Git et le processus de déploiement de Cloud Manager.
+Par conséquent, pour déployer un index, la définition d’index (`/oak:index/definitionname`) doit être fournie via le package **** muable, généralement `ui.content` via Git et le processus de déploiement de Cloud Manager.
 
 Une fois la nouvelle définition d’index ajoutée, la nouvelle application doit être déployée via Cloud Manager. Au moment du déploiement, deux tâches sont démarrées, chargées d’ajouter (et de fusionner si nécessaire) les définitions d’index à MongoDB et Azure Segment Store pour l’auteur et la publication, respectivement. Les référentiels sous-jacents sont réindexés avec les nouvelles définitions d&#39;index, avant que le commutateur Bleu-Vert n&#39;ait lieu.
 
