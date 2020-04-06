@@ -2,7 +2,7 @@
 title: Modification des propriétés de page
 description: Définissez les propriétés requises pour une page
 translation-type: tm+mt
-source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
+source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
@@ -24,7 +24,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Balises**
 
-   * Vous pouvez y ajouter ou supprimer des balises de la page en mettant à jour le dans la zone de sélection.
+   * Vous pouvez ajouter des balises sur la page, ou en supprimer, en mettant à jour la liste dans la zone de sélection.
    * La balise sélectionnée est alors répertoriée sous la zone de sélection. Vous pouvez supprimer une balise de cette liste à l’aide du symbole x.
    * Vous pouvez saisir une nouvelle balise en entrant son nom dans une zone de sélection vide.
       * La nouvelle balise est créée lorsque vous appuyez sur Entrée.
@@ -55,30 +55,30 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Heure d’activation**
 
-   * Date et heure auxquelles la page publiée sera activée. Une fois publiée, cette page restera dormante jusqu’à l’heure indiquée. 
+   * Date et heure auxquelles la page publiée sera activée. Une fois publiée, cette page restera dormante jusqu’à l’heure indiquée.
    * Ne complétez pas ces champs pour les pages que vous souhaitez publier immédiatement (scénario normal).
 
 * **Heure de désactivation**
 
    * Heure à laquelle la page publiée sera désactivée.
-   * Laissez ces champs vides pour une action immédiate.
+   * Ne renseignez pas ces champs pour une action immédiate.
 
 * **URL Vanity**
 
    * Permet de saisir une URL Vanity pour cette page. Vous pouvez ainsi disposer d’une URL plus courte et/ou plus explicite.
-   * For example, if the Vanity URL is set to `welcome` to the page identified by the path `/v1.0/startpage` for the website `http://example.com`, then `http://example.com/welcome` would be the vanity URL of `http://example.com/content/v1.0/startpage`
+   * Par exemple, si l’URL de redirection est définie sur `welcome` sur la page identifiée par le chemin `/v1.0/startpage` pour le site web `http://example.com`, `http://example.com/welcome` sera l’URL de redirection de `http://example.com/content/v1.0/startpage`
    >[!CAUTION]
    >
-   >L’URL Vanity :
+   >L’URL de redirection :
    >
-   >* doit être unique. Vous devez donc veiller à ce que la valeur ne soit pas déjà utilisée par une autre page
+   >* doit être unique. Vous devez donc veiller à ce que la valeur ne soit pas déjà utilisée par une autre page.
    >* ne prend pas en charge les modèles d’expression régulière.
-   >* Ne doit pas être définie sur une page existante.
+   >* ne doit pas être définie sur une page existante.
 
 
 * **Rediriger l’URL Vanity**
 
-   * Indique si vous souhaitez que la page utilise l’URL Vanity.
+   * Indique si vous souhaitez que la page utilise l’URL de redirection.
 
 ### Avancé {#advanced}
 
@@ -99,11 +99,11 @@ Les propriétés sont réparties sur plusieurs onglets.
    * Indique un alias à utiliser avec cette page.
    >[!NOTE]
    >
-   >L’alias définit la `sling:alias` propriété pour définir un nom d’alias pour la ressource (cela n’affecte que la ressource et non le chemin d’accès).
+   >L’alias définit la propriété `sling:alias` afin de définir un nom d’alias pour la ressource (cela n’affecte que la ressource, et non le chemin).
    >
-   >Par exemple : si vous définissez un alias de `latin-lang` pour le noeud `/content/we-retail/spanish` de noeud, cette page est accessible via `/content/we-retail/latin-language`
+   >Par exemple, si vous définissez l’alias `latin-lang` pour le nœud `/content/we-retail/spanish`, cette page est accessible via `/content/we-retail/latin-language`.
    >
-   >Pour plus d’informations, voir Noms de page localisés sous Optimisation du référencement et bonnes pratiques de gestion des URL.
+   >Pour plus d’informations, voir Noms de page localisés sous Bonnes pratiques relatives à la gestion des URL et à l’optimisation du moteur de recherche.
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
@@ -135,7 +135,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    * Indiquez une configuration d’exportation.
 
-### Miniature {#thumbnail}
+### Miniature   {#thumbnail}
 
 Affiche l’image de la miniature de la page. Vous pouvez :
 
@@ -164,11 +164,11 @@ Affiche l’image de la miniature de la page. Vous pouvez :
    * **Activer le partage utilisateur pour Facebook**
    * **Activer le partage utilisateur pour Pinterest**
    * **Variation de fragment d’expérience préférée**
-      * Définition de la variation de fragment d’expérience utilisée pour générer des métadonnées pour la page
+      * Définit la variation de fragment d’expérience utilisée pour générer les métadonnées de la page.
 
-### Services cloud {#cloud-services}
+### Cloud Services {#cloud-services}
 
-* **Services cloud**
+* **Cloud Services**
 
    * Définissez les propriétés des services cloud. <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).-->
 
@@ -180,9 +180,7 @@ Affiche l’image de la miniature de la page. Vous pouvez :
 
 * **Configuration du ciblage**
 
-   * Sélectionnez [une marque pour spécifier la portée du ciblage](/help/sites-cloud/authoring/personalization/targeted-content.md).
-   >[!NOTE]
-   >Cette option nécessite que le compte utilisateur soit dans le `Target Adminstrators`groupe.
+   * Sélectionnez une [marque pour spécifier la portée du ciblage](/help/sites-cloud/authoring/personalization/targeted-content.md).
 
 ### Autorisations {#permissions}
 
@@ -199,46 +197,46 @@ Affiche l’image de la miniature de la page. Vous pouvez :
    * Définissez les propriétés d’une page Blueprint dans le cadre de la gestion multi-site. <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
    * Détermine les circonstances dans lesquelles les modifications seront diffusées à Live Copy.
 
-### Live Copy {#live-copy}
+### Live Copy   {#live-copy}
 
-* **Live Copy**
+* **Live Copy**
 
-   * Définissez les propriétés d’une page Live Copy dans le cadre de la gestion multi-site. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
+   * Définissez les propriétés d’une page Live Copy dans le cadre de la gestion multi-site. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * Détermine les circonstances dans lesquelles les modifications seront diffusées à partir du plan directeur.
 
-### Structure du site {#site-structure}
+### Structure du site   {#site-structure}
 
-* Diffusez des liens d’accès aux pages qui fournissent les fonctionnalités à l’échelle du site, comme la **page d’inscription** et la page **en mode hors ligne**, entre autres. 
+* Diffusez des liens d’accès aux pages qui fournissent les fonctionnalités à l’échelle du site, comme la **page d’inscription** et la page **en mode hors ligne**, entre autres.
 
 ## Modification des propriétés de page {#editing-page-properties-1}
 
 * Dans la console **Sites** :
    * [En créant une page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) (sous-ensemble des propriétés)
-   * Clicking or tapping **Properties**
+   * En cliquant ou en appuyant sur **Propriétés**
       * Pour une seule page
       * Pour plusieurs pages (un seul sous-ensemble des propriétés est disponible pour la modification en masse)
 * Dans l’éditeur de page :
-   * À l’aide de l’option **Informations sur la page** (puis **Ouvrir les propriétés**)
+   * En sélectionnant **Informations sur la page** (puis **Ouvrir les propriétés**)
 
 ### À partir de la console Sites – Une seule page {#from-the-sites-console-single-page}
 
 Cliquez ou appuyez sur **Propriétés** pour définir les propriétés de la page :
 
 1. Dans la console **Sites**, accédez à l’emplacement de la page pour laquelle afficher et modifier les propriétés.
-1. Select the **Properties** option for the required page using either:
+1. Sélectionnez l’option **Propriétés** pour la page requise, en utilisant :
    * [Actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
    * Les propriétés de la page affichées dans les onglets appropriés.
-1. Affichez ou modifiez les propriétés selon les besoins. 
+1. Affichez ou modifiez les propriétés selon les besoins.
 1. Puis cliquez sur **Enregistrer** pour enregistrer vos modifications et sur **Fermer** pour revenir à la console.
 
 ### Lors de la modification d’une page {#when-editing-a-page}
 
 Lorsque vous modifiez une page, utilisez les **Informations sur la page** pour définir ses propriétés :
 
-1. Ouvrez la page pour laquelle vous souhaitez modifier les propriétés.
+1. Ouvrez la page dont vous souhaitez modifier les propriétés.
 1. Sélectionnez l’icône **Informations sur la page** pour ouvrir le menu de sélection :
-1. Sélectionnez **Ouvrir les propriétés** ; une boîte de dialogue apparaît pour vous permettre de modifier les propriétés, triées selon l’onglet approprié. Les boutons suivants sont également disponibles à droite de la barre d’outils :
+1. Sélectionnez **Ouvrir les propriétés**. Une boîte de dialogue s’ouvre alors pour vous permettre de modifier les propriétés, triées selon l’onglet approprié. Les boutons suivants sont également disponibles à droite de la barre d’outils :
    * **Annuler**
    * **Enregistrer et fermer**
 1. Utilisez le bouton **Enregistrer et fermer** pour enregistrer les modifications.
@@ -251,7 +249,7 @@ Dans la console **Sites**, vous pouvez sélectionner plusieurs pages, puis utili
 >
 >La modification en masse des propriétés est également disponible pour les ressources. La procédure est très semblable. Seuls quelques points sont différents. Pour plus d’informations, voir Modification des propriétés de plusieurs ressources.
 >
->Il existe également un outil de modification en masse qui vous permet de rechercher du contenu provenant de plusieurs pages à l’aide du langage GQL (Google Query Language), puis de le modifier directement avant d’enregistrer les modifications dans les pages d’origine.
+>Il existe également un éditeur en bloc qui vous permet de rechercher du contenu provenant de plusieurs pages à l’aide du langage GQL (Google Query Language), puis de le modifier directement avant d’enregistrer les modifications dans les pages d’origine.
 <!--
 >Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for details.
 >
@@ -263,17 +261,17 @@ Vous pouvez sélectionner plusieurs pages en vue d’une modification en masse d
 * Lors de l’exploration de la console **Sites**
 * Après avoir utilisé la fonction **Rechercher** pour localiser un ensemble de pages
 
-Après avoir sélectionné les pages, puis cliqué ou appuyé sur l’option **Propriétés**, les propriétés en bloc s’affichent :
+Sélectionnez les pages et cliquez ou appuyez ensuite sur l’option **Propriétés** pour afficher les propriétés en bloc :
 
-![Modification en masse des propriétés d’une page](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
+![Modification groupée des propriétés de page](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
 
-Vous ne pouvez modifier en masse que des pages qui
+Vous ne pouvez modifier en masse que des pages qui :
 
-* partagent le même type de ressource
-* ne font pas partie d’une Live Copy.
+* Partagent le même type de ressource.
+* Ne font pas partie d’une Live Copy.
    * Si l’une de ces pages fait partie d’une Live Copy, un message s’affiche lorsque les propriétés sont ouvertes.
 
-Une fois le mode de modification en masse activé, vous pouvez effectuer les opérations suivantes :
+Une fois le mode de modification en bloc activé, vous pouvez effectuer les opérations suivantes :
 
 * **Mode**
 
@@ -294,11 +292,11 @@ Une fois le mode de modification en masse activé, vous pouvez effectuer les op
    * Vous pouvez mettre à jour les valeurs dans les champs disponibles.
       * Les nouvelles valeurs sont appliquées à toutes les pages sélectionnées lorsque vous appuyez sur **Terminé**.
       * Lorsque le champ comporte plusieurs valeurs (Balises, par exemple), vous pouvez ajouter une valeur ou supprimer une valeur commune.
-   * Fields that are common, but have different values across the various pages will be indicated with a special value such as the text `<Mixed Entries>`. Vous devez être prudent lors de la modification de ces champs afin d’éviter toute perte de données.
+   * Les champs qui sont communs, mais pour lesquels des valeurs différentes sont renseignées dans les différentes pages, sont signalés par une valeur spéciale, par exemple par le texte `<Mixed Entries>`. Vous devez être prudent lors de la modification de ces champs afin d’éviter toute perte de données.
 
 >[!NOTE]
 >
->Le composant de page peut être configuré pour spécifier les champs disponibles en vue de la modification en masse. Reportez-vous à la section Configuration de votre page en vue de la modification en masse des propriétés.
+>Le composant de page peut être configuré pour spécifier les champs disponibles en vue de la modification en bloc. Reportez-vous à la section Configuration de votre page en vue de la modification en masse des propriétés.
 <!--
 >The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/help/sites-developing/bulk-editing.md).
 -->
