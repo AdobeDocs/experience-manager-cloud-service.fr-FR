@@ -10,12 +10,12 @@ topic-tags: brand-portal
 content-type: reference
 discoiquuid: null
 translation-type: tm+mt
-source-git-commit: 7e0375b6ebdf0959dbe50ad3ae2cd0b77709b4c1
+source-git-commit: abc98974f5507c71e75cdd864a98281f7cdba7f3
 
 ---
 
 
-# Publish AEM Assets to Brand Portal {#publish-aem-assets-to-brand-portal}
+# Publication de fichiers, de dossiers et de collections sur Brand Portal {#publish-aem-assets-to-brand-portal}
 
 En tant qu’administrateur des ressources d’Adobe Experience Manager (AEM), vous pouvez publier des fichiers, des dossiers et des collections sur l’instance du portail de marques AEM Assets. Vous pouvez également planifier le processus de publication d’un fichier ou d’un dossier à une date ou une heure ultérieure. Une fois publiée, les utilisateurs du portail de marque peuvent accéder aux fichiers, dossiers et collections et les distribuer à d’autres utilisateurs.
 
