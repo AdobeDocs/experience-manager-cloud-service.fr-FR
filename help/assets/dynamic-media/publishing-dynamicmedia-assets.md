@@ -1,27 +1,27 @@
 ---
-title: Publication de ressources Dynamic Media
-description: Découvrez comment publier des ressources Dynamic Media.
+title: Publication de ressources Dynamic Media
+description: Découvrez comment publier des ressources Dynamic Media.
 translation-type: tm+mt
-source-git-commit: c8f8598e3e476af529a87b056e66ddb619a2da0a
+source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
 
 ---
 
 
-# Publication de ressources Dynamic Media {#publishing-dynamic-media-assets}
+# Publication de ressources Dynamic Media   {#publishing-dynamic-media-assets}
 
-You publish your Dynamic Media assets by selecting the assets and tapping **[!UICONTROL Publish]**. Une fois vos fichiers de médias dynamiques publiés, vous pouvez les inclure dans une page Web par URL ou par incorporation.
+Pour publier vos ressources Dynamic Media, sélectionnez-les en appuyant sur l’icône **[!UICONTROL Publier]**. Une fois les ressources Dynamic Media publiées, vous pouvez les inclure dans une page web via une URL ou une incorporation.
 
-Vous pouvez également publier instantanément des fichiers que vous téléchargez, sans intervention de l’utilisateur. Vous pouvez également publier ces fichiers de manière sélective. Voir [Configuration de Dynamic Media](config-dm.md).
+Vous pouvez également publier immédiatement les ressources que vous téléchargez, sans intervention de l’utilisateur. Voir [Configuration de Dynamic Media](config-dm.md).
 
-Dans le **[!UICONTROL mode Carte]**, une petite icône en forme de globe apparaît directement sous le nom d’un fichier pour indiquer qu’il est publié. En **[!UICONTROL mode Liste]**, une colonne **[!UICONTROL Publié]** indique les fichiers publiés ou non.
+En **[!UICONTROL mode Carte]** une petite icône en forme de globe apparaît directement sous le nom d’une ressource pour indiquer que celle-ci est publiée. En mode **[!UICONTROL Liste]**, une colonne **[!UICONTROL Publié]** indique les ressources qui sont publiées et celles qui ne le sont pas.
 
 >[!NOTE]
 >
->Si un fichier est déjà publié, vous utilisez AEM pour déplacer le fichier vers un autre dossier et le republier depuis son nouvel emplacement, l’emplacement du fichier publié d’origine est toujours disponible, ainsi que le fichier récemment republié. La ressource publiée d’origine est toutefois &quot;perdue&quot; pour AEM et ne peut pas être annulée. Par conséquent, il est recommandé d’annuler la publication des fichiers avant de les déplacer vers un autre dossier.
+>Si une ressource est déjà publiée et que vous utilisez AEM pour la déplacer vers un autre dossier et la republier à partir du nouvel emplacement, l’emplacement d’origine de la ressource publiée est toujours disponible, avec la ressource republiée. La ressource d’origine publiée est toutefois « perdue » pour AEM et sa publication ne peut pas être annulée. Il est par conséquent recommandé d’annuler la publication des ressources avant de les déplacer vers un autre dossier.
 
-Si vous prévoyez de publier des fichiers vidéo immédiatement après leur codage, assurez-vous que le codage est terminé. Lorsque les vidéos sont toujours codées, le système vous informe qu’un processus de traitement vidéo est en cours. Une fois le codage vidéo effectué, vous devez être en mesure de  les rendus vidéo. A ce stade, vous pouvez publier les vidéos en toute sécurité sans générer d’erreurs de publication.
+Si vous envisagez de publier des ressources vidéo immédiatement après les avoir codées, vérifiez que le codage est entièrement terminé. Lorsque des vidéos sont en cours de codage, le système vous informe qu’un workflow de traitement vidéo est en cours. Lorsque le codage vidéo est terminé, vous êtes en mesure de prévisualiser les rendus vidéo. À ce stade, vous pouvez publier les vidéos sans rencontrer d’erreurs de publication.
 
-Reportez-vous également à la section [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md).
+Voir aussi [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md).
 
 Voir aussi [Incorporation de la visionneuse de vidéos dans une page web.](embed-code.md)
 
@@ -35,9 +35,9 @@ Voir aussi [Incorporation de la visionneuse de vidéos dans une page web.](embed
 
 Pour plus d’informations sur la publication d’une visionneuse ou d’une ressource, reportez-vous à la section [Publication de ressources.](/help/assets/manage-digital-assets.md)
 
-## Diffusion de ressources Dynamic Media via HTTP/2 {#http-delivery-of-dynamic-media-assets}
+## Diffusion de ressources Dynamic Media via HTTP/2   {#http-delivery-of-dynamic-media-assets}
 
-AEM prend à présent en charge la diffusion de tout le contenu Dynamic Media (images et vidéo) sur HTTP/2. En d’autres termes, une URL publiée ou un code intégré pour l’image ou la vidéo peut être intégré dans toute application acceptant une ressource hébergée. Cette ressource publiée est alors distribuée par le biais du protocole HTTP/2. Cette méthode de distribution améliore la communication entre les navigateurs et les serveurs, ce qui permet d’améliorer les temps de réponse et de chargement de toutes vos ressources Dynamic Media.
+AEM prend à présent en charge la diffusion de tout le contenu Dynamic Media (images et vidéo) sur HTTP/2. En d’autres termes, une URL publiée ou un code intégré pour l’image ou la vidéo peut être intégré dans toute application acceptant une ressource hébergée. Cette ressource publiée est alors distribuée par le biais du protocole HTTP/2. Cette méthode de distribution améliore la communication entre les navigateurs et les serveurs, ce qui permet d’améliorer les temps de réponse et de chargement de toutes vos ressources Dynamic Media.
 
-See [HTTP/2 delivery of content frequently asked questions](/help/assets/dynamic-media/http2faq.md) to learn more.
+Pour en savoir plus, reportez-vous aux [Questions fréquentes sur la diffusion de contenu HTTP/2](/help/assets/dynamic-media/http2faq.md).
 <!--this md file used to reside under sites-administering-->
