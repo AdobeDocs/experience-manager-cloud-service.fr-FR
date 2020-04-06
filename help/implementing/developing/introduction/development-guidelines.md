@@ -2,7 +2,7 @@
 title: Conseils de développement pour AEM as a Cloud Service
 description: 'À terminer '
 translation-type: tm+mt
-source-git-commit: 7f4e27d10da1b9cb074223c1c43fc7798942dbe4
+source-git-commit: 3d2705262d9c82a1486e460247b468259d5ed600
 
 ---
 
@@ -35,26 +35,26 @@ Si l’utilisation du système de fichiers n’est pas prise en charge, le nivea
 
 Tout ce qui se passe de manière asynchrone, comme l&#39;action sur les d&#39;observation, ne peut pas être garanti qu&#39;il sera exécuté localement et doit donc être utilisé avec soin. Cela est vrai pour les  JCR et pour les  de ressources Sling. Au moment d’un changement, l’instance peut être supprimée et remplacée par une autre instance. D’autres instances de la topologie actives à ce moment-là pourront réagir à cette . Dans ce cas, cependant, il ne s&#39;agira pas d&#39;un  local et il se pourrait même qu&#39;il n&#39;y ait pas de chef actif dans le cas d&#39;une élection de chef en cours au moment de l&#39;émission de la  de.
 
-##  en arrière-plan et tâches à long terme {#background-tasks-and-long-running-jobs}
+## Tâches en arrière-plan et tâches à long terme {#background-tasks-and-long-running-jobs}
 
-Le code exécuté en tant que d’arrière-plan doit supposer que l’instance dans laquelle il s’exécute peut être supprimée à tout moment. Par conséquent, le code doit être résilient et la plupart des importations doivent pouvoir être reproduites. Cela signifie que si le code est exécuté de nouveau, il ne doit pas s’ à partir du début, mais plutôt à partir de l’endroit où il s’est arrêté. Bien qu’il ne s’agisse pas d’une nouvelle exigence pour ce type de code, dans AEM en tant que service Cloud, il est plus probable qu’une suppression d’instance se produise.
+Le code exécuté en tant que tâches en arrière-plan doit prendre en compte le fait que l’instance dans laquelle il est exécuté peut être supprimée à tout moment. Par conséquent, le code doit être résilient et la plupart des importations doivent pouvoir être reproduites. Cela signifie que si le code est réexécuté, il ne doit pas recommencer à partir du début, mais plutôt à partir de l’endroit où il a été abandonné. Bien que cette exigence ne soit pas nouvelle pour ce type de code, il est plus probable qu’une suppression d’instance se produise dans AEM as a Cloud Service.
 
-Afin de minimiser les problèmes, il est nécessaire d’éviter les emplois à long terme si possible, et de pouvoir les reprendre au minimum. Pour exécuter de telles tâches, utilisez Sling Jobs, qui dispose d’une garantie au moins une fois ; par conséquent, si elles sont interrompues, elles seront réexécutées dès que possible. Mais ils ne devraient probablement plus  depuis le début. Pour la planification de telles tâches, il est préférable d’utiliser le Tâches [](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) Sling car il s’agit à nouveau de l’exécution au moins une fois.
+Afin de limiter les problèmes, il est nécessaire d’éviter les tâches à long terme autant que possible, et de faire en sorte qu’elles puissent autant que possible être reprises après avoir été interrompues. Pour exécuter de telles tâches, utilisez les tâches Sling qui offrent la garantie qu’elles redémarreront au moins une fois si elles sont interrompues, et qu’elles seront donc réexécutées dès que possible. Elles ne doivent cependant probablement pas recommencer depuis le début. Pour planifier de telles tâches, il est préférable d’utiliser le planificateur de [tâches Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing), car il permet également l’exécution au moins une fois.
 
-Le Sling Commons ne doit pas être utilisé pour la planification, car l’exécution ne peut être garantie. Il est tout simplement plus probable qu&#39;elle soit programmée.
+Le planificateur Sling Commons ne doit pas être utilisé pour la planification, car l’exécution ne peut pas être garantie. Il permet simplement d’augmenter la probabilité de la programmation.
 
-De même, avec tout ce qui se passe de manière asynchrone, comme agir sur les d&#39;observation, (en tant que JCR oude ressource Sling), ne peut être garanti d&#39;être exécuté et doit donc être utilisé avec soin. C’est déjà le cas pour les déploiements d’AEM dans le présent.
+De même, avec tout ce qui se passe de manière asynchrone, comme les actions sur des événements d’observation (c’est-à-dire des événements JCR ou des événements de ressources Sling), il n’est pas garanti qu’ils soient exécutés et doivent donc être utilisés avec soin. C’est déjà le cas actuellement pour les déploiements d’AEM.
 
 ## Connexions HTTP sortantes {#outgoing-http-connections}
 
-Il est vivement recommandé que toute connexion HTTP sortante définisse des délais d’attente raisonnables pour la connexion et la lecture. Pour le code qui n’applique pas ces délais d’expiration, les instances AEM s’exécutant sur AEM en tant que service Cloud appliqueront un délai d’expiration global. Ces valeurs de délai d’expiration sont de 10 secondes pour les appels de connexion et de 60 secondes pour les appels de lecture pour les connexions utilisés par les bibliothèques Java populaires suivantes :
+Il est vivement recommandé que toute connexion HTTP sortante définisse des délais d’attente raisonnables pour la connexion et la lecture. Pour le code qui n’applique pas ces délais d’expiration, les instances AEM s’exécutant sur AEM as a Cloud Service appliqueront un délai d’expiration global. Ces valeurs de délai d’expiration sont de 10 secondes pour les appels de connexion et de 60 secondes pour les appels de lecture pour les connexions utilisées par les principales bibliothèques Java suivantes :
 
-Adobe recommande l’utilisation de la bibliothèque [](https://hc.apache.org/httpcomponents-client-ga/) Apache HttpComponents Client 4.x fournie pour établir des connexions HTTP.
+Adobe recommande l’utilisation de la bibliothèque [Apache HttpComponents Client 4.x](https://hc.apache.org/httpcomponents-client-ga/) fournie pour établir les connexions HTTP.
 
-Les alternatives connues pour fonctionner, mais qui peuvent nécessiter de fournir la dépendance vous-même sont les suivantes :
+Les alternatives connues et qui fonctionnent, mais qui peuvent nécessiter de fournir la dépendance vous-même, sont les suivantes :
 
-* [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) et/ou [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (fournie par AEM)
-* [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (non recommandé car obsolète et remplacé par la version 4.x)
+* [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) ou [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (fournies par AEM)
+* [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (non recommandées, car obsolètes et remplacées par la version 4.x)
 * [OK Http](https://square.github.io/okhttp/) (non fourni par AEM)
 
 ## Aucune personnalisation classique de l’interface utilisateur {#no-classic-ui-customizations}
@@ -83,83 +83,53 @@ Le contenu est répliqué de l’auteur à la publication au moyen d’un pub-so
 
 ### Journaux {#logs}
 
-Pour le développement local, les entrées de journaux sont écrites dans les fichiers locaux du `/crx-quickstart/logs` dossier.
+For more information on how to work with logs, see the [Logging documentation](/help/implementing/developing/introduction/logging.md).
 
-Sur le Cloud  , les développeurs peuvent télécharger les journaux via Cloud Manager ou utiliser un outil de ligne de commande pour les fermer. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+### Images mémoire de threads {#thread-dumps}
 
-**Définition du niveau de journal**
+Les images mémoire de threads dans les environnements Cloud sont collectés en permanence, mais ne peuvent pas être téléchargées en libre-service pour le moment. En attendant, contactez l’assistance AEM si des images mémoire de threads sont nécessaires pour déboguer un problème, en spécifiant la fenêtre de temps exacte.
 
-Pour modifier les niveaux de journal pour Cloud  , la configuration OSGI Sling Logging doit être modifiée, suivie d’un redéploiement complet. Comme il ne s’agit pas d’une opération instantanée, veillez à activer les journaux de synthèse sur les  de production  qui reçoivent beaucoup de trafic. Dans le futur, il est possible qu&#39;il y ait des mécanismes pour changer plus rapidement le niveau du journal.
-
-> [!NOTE]
-> 
-> Pour effectuer les modifications de configuration répertoriées ci-dessous, vous devez les créer sur un de développement local  puis les transmettre à AEM en tant qu’instance de service Cloud. Pour plus d’informations sur la procédure à suivre, voir [Déploiement sur AEM en tant que service](/help/implementing/deploying/overview.md)Cloud.
-
-**Activation du niveau de journalisation DEBUG**
-
-Le niveau de journalisation par défaut est INFO, ce qui signifie que les messages DEBUG ne sont pas consignés.
-Pour activer le niveau du journal DEBUG, définissez la variable
-
-``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
-
-la propriété à corriger. Ne laissez pas le journal au niveau de débogage DEBUG plus longtemps que nécessaire, car cela génère un grand nombre de journaux.
-Une ligne dans le fichier de débogage commence généralement par DEBUG, puis fournit le niveau de journalisation, l’action d’installation et le message du journal. Par exemple :
-
-``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
-
-Les niveaux de journalisation sont les suivants :
-
-| 0 | Erreur fatale | L&#39;action a échoué et le programme d&#39;installation ne peut pas continuer. |
-|---|---|---|
-| 1 | Erreur | L&#39;action a échoué. L’installation se poursuit, mais une partie de CRX n’a pas été installée correctement et ne fonctionnera pas. |
-| 2 | Avertissement | L&#39;action a réussi mais a rencontré des problèmes. CRX risque de ne pas fonctionner correctement. |
-| 3 | Informations | L&#39;action a réussi. |
-
-### Thread Dumps {#thread-dumps}
-
-Les vidages de threads dans Cloud  les  sont collectés de façon continue, mais ne peuvent pas être téléchargés en libre-service pour le moment. Dans l’intervalle, contactez le support AEM si des virements de threads sont nécessaires pour déboguer un problème, en spécifiant la fenêtre de temps exacte.
-
-## CRX/DE Lite et console système {#crxde-lite-and-system-console}
+## Consoles CRX/DE Lite et système {#crxde-lite-and-system-console}
 
 ### Développement local {#local-development}
 
-Pour le développement local, les développeurs ont un accès complet à CRXDE Lite (`/crx/de`) et à la console Web AEM (`/system/console`).
+Pour le développement local, les développeurs ont un accès complet à CRXDE Lite (`/crx/de`) et à la console web AEM (`/system/console`).
 
-Notez que lors du développement local (à l’aide du démarrage rapide prêt pour le cloud), `/apps` et `/libs` peut être écrit directement, ce qui est différent du  Cloud  où ces dossiers de niveau supérieur sont immuables.
+Notez qu’en cas de développement local (à l’aide du démarrage rapide disponible pour le cloud), les `/apps` et `/libs` peuvent être modifiés directement, ce qui diffère des environnements Cloud dans lesquels ces dossiers de niveau supérieur sont immuables.
 
-### AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
+### Outils de développement AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
-Les clients peuvent accéder à CRXDE Lite sur le  de développement  mais pas sur l’étape ou la production. Le référentiel immuable (`/libs`, `/apps`) ne peut pas être écrit au moment de l’exécution. Toute tentative de ce type entraînera donc des erreurs.
+Les clients peuvent accéder à CRXDE Lite sur l’environnement de développement, mais pas sur l’étape ou la production. Le référentiel immuable (`/libs`, `/apps`) ne peut pas être modifié au moment de l’exécution. Toute tentative de ce type entraînera des erreurs.
 
-Un ensemble d’outils pour le débogage d’AEM en tant que développeur de service Cloud  de sont disponibles dans la console de développement pour le développement, l’étape et la production de  de de développement. L’URL peut être déterminée en ajustant les URL du service Auteur ou Publier comme suit :
+Un ensemble d’outils pour le débogage des environnements de développeur d’AEM as a Cloud Service est disponible dans la Console de développement pour les environnements de développement, d’évaluation et de production. L’URL peut être déterminée en ajustant les URL du service Auteur ou Publier comme suit :
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
-En guise de raccourci, vous pouvez utiliser la commande d’interface de ligne de commande Cloud Manager suivante pour lancer la console de développement en fonction d’un paramètre   de décrit ci-dessous :
+Vous pouvez utiliser comme raccourci la commande d’interface de ligne de commande Cloud Manager suivante pour lancer la console de développement, en fonction du paramètre d’environnement décrit ci-dessous :
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
-See [this page](/help/release-notes/home.md) for more information.
+Pour plus d’informations, consultez [cette page](/help/release-notes/home.md).
 
 Les développeurs peuvent générer des informations d’état et résoudre diverses ressources.
 
-Comme illustré ci-dessous, les informations d’état disponibles incluent l’état des lots, des composants, des configurations OSGI, des index de chêne, des services OSGI et des tâches Sling.
+Comme illustré ci-dessous, les informations d’état disponibles incluent l’état des lots, des composants, des configurations OSGI, des index Oak, des services OSGI et des tâches Sling.
 
-![Console de développement 1](/help/implementing/developing/introduction/assets/devconsole1.png)
+![Console de développement 1](/help/implementing/developing/introduction/assets/devconsole1.png)
 
-Comme illustré ci-dessous, les développeurs peuvent résoudre les dépendances des packages et les servlets :
+Comme illustré ci-dessous, les développeurs peuvent résoudre les dépendances des packages et les servlets :
 
-![Console de développement 2](/help/implementing/developing/introduction/assets/devconsole2.png)
+![Console de développement 2](/help/implementing/developing/introduction/assets/devconsole2.png)
 
-![Console de développement 3](/help/implementing/developing/introduction/assets/devconsole3.png)
+![Console de développement 3](/help/implementing/developing/introduction/assets/devconsole3.png)
 
-Utile également pour le débogage, la console Développeur dispose d’un lien vers l’outil  d’explication :
+Également utile pour le débogage, la console de développement comprend un lien vers l’outil Requête d’explication :
 
-![Console de développement 4](/help/implementing/developing/introduction/assets/devconsole4.png)
+![Console de développement 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
 ### Service de test et de production AEM {#aem-staging-and-production-service}
 
-Les clients n’auront pas accès à l’outil de développement pour l’évaluation et la production  .
+Les clients n’auront pas accès aux outils de développement pour les environnements de test et de production.
 
 ### Surveillance des performances {#performance-monitoring}
 
