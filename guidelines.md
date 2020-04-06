@@ -1,5 +1,5 @@
 ---
-source-git-commit: b5380858e0887da017657c653b05529066d95fd8
+source-git-commit: 190577c9143b02e0c3184231de50fb461156c2d9
 translation-type: tm+mt
 
 ---
@@ -17,7 +17,7 @@ Dans l’intérêt d’une amélioration continue de la documentation AEM, la co
 
 ## Normes de la documentation
 
-Bien que nous soyons heureux de recevoir des contributions à notre documentation, toute contribution à la documentation AEM, sous la forme d’une demande d’extraction ou d’un problème, doit être conforme à nos normes de contribution et de documentation.
+Bien que nous apprécions les contributions à notre documentation, toute contribution à la documentation d’AEM, sous la forme d’une requête d’extraction ou d’un problème, doit être conforme à nos normes de contribution et de documentation.
 
 Les contributions qui ne satisfont pas à ces normes peuvent être rejetées.
 
@@ -33,9 +33,9 @@ Les exceptions à cette règle s’appliquent aux notes de mise à jour où des 
 
 ### Les contributions à la documentation ne sont pas destinées à répondre aux questions techniques.
 
-Toute opinion susceptible d’améliorer la documentation AEM est la bienvenue sous forme de contributions. Toutefois, les commentaires, les problèmes et les requêtes d’extraction sont destinés uniquement aux *contributions*. Elles ne sont pas destinées à être utilisées pour répondre à vos questions sur l’utilisation d’AEM, la mise en oeuvre de votre projet AEM ou la résolution de problèmes techniques.
+Toute opinion susceptible d’améliorer la documentation AEM est la bienvenue sous forme de contributions. Toutefois, les commentaires, les problèmes et les requêtes d’extraction sont destinés uniquement aux *contributions*. Ils ne sont pas censés être utilisés pour répondre à vos questions sur l’utilisation d’AEM ou pour résoudre des problèmes techniques.
 
-Any questions about the usage of AEM or technical errors you may have should be reported through the normal support process via the [Experience Cloud Enterprise Support portal](https://helpx.adobe.com/contact/enterprise-support.ec.html) or discussed in the [Experience Manager community](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager).
+Any questions about the usage of AEM or technical errors you may have should be reported through the normal support process via the [Experience Cloud Enterprise Support portal](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html) or discussed in the [Experience Manager community](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager).
 
 ***Les contributions à la documentation d’AEM ne remplacent pas celles du service à la clientèle*** d’Adobe et toute contribution de ce type demandant des réponses à des questions d’assistance sera rejetée.
 
@@ -43,13 +43,13 @@ Any questions about the usage of AEM or technical errors you may have should be 
 
 Si vous créez un problème pour suggérer des améliorations à la documentation, vous devez inclure des liens vers les pages concernées. Si vous créez un problème à l’aide du lien **Modifier cette page** sur une page de documentation, le problème sera créé automatiquement avec un lien vers la page.
 
-Cela ne s’applique pas aux demandes d’extraction, car les demandes d’extraction par nature référencent la ou les pages concernées.
+Cela ne s’applique pas aux requêtes d’extraction puisque les requêtes d’extraction incluent les pages affectées par définition.
 
 ## Directives relatives à la documentation
 
 Nous demandons que toutes les contributions à notre documentation suivent certaines directives de style.
 
-Suivre ces directives facilite la révision et l’intégration rapide de votre contribution dans notre documentation.
+Suivre ces directives facilite la révision et l’intégration rapide de votre contribution dans notre documentation. Cependant, la non-conformité ou la conformité incomplète à ces consignes ne signifie pas que la contribution sera refusée.
 
 ### Langue et style
 
