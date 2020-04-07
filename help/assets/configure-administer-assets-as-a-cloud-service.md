@@ -3,7 +3,7 @@ title: Configuration et administration des ressources Adobe Experience Manager
 description: Connaître les tâches de configuration et d’administration requises pour Assets as a Cloud Service
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -12,7 +12,8 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 Cet article répertorie les tâches de configuration ou d’administration de niveau supérieur requises pour commencer à utiliser Adobe Experience Manager Assets as a Cloud Service.
 
-<!-- 
+<!-- SCOPE 
+
 Top-level page for all administrative tasks specific to Assets as a Cloud Service.
 Backlink to Sites administering content where required.
 Some idea is at https://helpx.adobe.com/experience-manager/6-5/assets/using/assets.html though not complete and not so accurate.
@@ -25,7 +26,9 @@ Some idea is at https://helpx.adobe.com/experience-manager/6-5/assets/using/asse
 * Configure search index and visual search's separate index.
 * Cloud Manager usage, if any that’s relevant here.
 * Steps to integrate with Adobe and third-party solutions. Analytics, Launch, Creative Cloud, etc.
+-->
 
+<!-- 
 ## Work with search indices {#search-index-for-assets-cloud-service}
 
 * Link to this topic for information about Experience Manager's common index https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service-prerelease.en/blob/master/help/sites/operations/indexing.html
