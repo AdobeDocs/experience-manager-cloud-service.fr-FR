@@ -1,5 +1,5 @@
 ---
-source-git-commit: 8bdcc1798b2b788c5252e89750ad6ccb86cda333
+source-git-commit: b0abce7f1d911123da37ba279a565c7608e5a4c5
 translation-type: tm+mt
 
 ---
@@ -20,25 +20,7 @@ Bien que toute contribution visant à améliorer la documentation d’AEM soit l
 
 ## Comment contribuer
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; EN-TÊTE&lt;&lt;&lt;&lt;&lt;&lt;&lt; EN-TÊTE&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; EN-TÊTE&lt;&lt;&lt;&lt;&lt;&lt; EN-TÊTE) Nous souhaitons faciliter autant que possible l&#39;envoi de vos contributions. Vous pouvez contribuer de deux manières :
-=======
-=======
->>>>>>>>>>parent de f6e5291... Fusionnez la branche &#39;staging&#39; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en dans l’environnement d’évaluation========parent de f6e5291... Fusionnez la branche &#39;staging&#39; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en dans l’environnement d’évaluation========parent de 190577c... Fusionner le &quot;maître&quot; de la branche dans l&#39;évaluationLa manière dont vous contribuez dépend de qui vous êtes et du type de changements que vous souhaitez apporter :
-
-
-
-
-
-> 
-
-### Création d’une demande
->>>>>>>parent de f6e5291... Fusionner la branche &quot;intermédiaire&quot; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en dans l’environnement d’évaluation
-
-
-
-
-
-
+Nous souhaitons faciliter au maximum la soumission de vos contributions. Vous pouvez contribuer de deux manières :
 
 * [Création d’une demande](#create-an-issue)
 * [Création d’une demande d’extraction](#create-a-pull-request)
@@ -46,7 +28,8 @@ Bien que toute contribution visant à améliorer la documentation d’AEM soit l
 La méthode que vous choisissez dépend de votre aptitude à modifier vous-même la documentation dans GitHub.
 
 >[!NOTE]
-Les contributions que vous soumettez sont couvertes par les [Conditions d’utilisation d’Adobe](https://www.adobe.com/fr/legal/terms.html).
+>
+>Les contributions que vous soumettez sont couvertes par les [Conditions d’utilisation d’Adobe](https://www.adobe.com/fr/legal/terms.html).
 
 ### Création d’une demande {#create-an-issue}
 
@@ -56,24 +39,7 @@ Les demandes vous permettent de décrire facilement votre idée d’amélioratio
 
 ### Création d’une demande d’extraction {#create-a-pull-request}
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; EN-TÊTE&lt;&lt;&lt;&lt;&lt;&lt;&lt; EN-TÊTE&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; EN-TÊTE&lt;&lt;&lt;&lt;&lt; EN-TÊTE&lt;&lt;&lt;&lt;&lt;&lt; EN-TÊTE&lt;&lt;&lt;&lt;&lt; EN-TÊTE&lt;&lt;&lt;&lt;&lt; EN-TÊTE&lt;&lt;&lt;&lt;&lt; EN-TÊTE&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; EN-TÂCHE >&lt;&lt;&lt;&lt;&lt;&lt; EN-TÂCHE&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; EN-TÂCHE >&lt;&lt; EN-TÊTE >&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; EN-TÂCHE >&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; EN TÊTE >&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; EN TÊTE >&lt; EN TÂCHE >&lt;&lt; EN TÊTE >&lt;&lt; Les demandes d’extraction vous permettent d’apporter vos propres modifications à la documentation, qui sont ensuite examinées pour inclusion par un membre de l’équipe AEM Docs. Il vous suffit de cliquer sur le lien **Edit this page** (Modifier cette page) en haut du panneau de navigation de droite sur n’importe quelle page pour apporter les modifications suggérées et créer la demande d’extraction.
-=======
->=======>
->>>>>>>>parent de f6e5291... Fusionnez la branche &#39;staging&#39; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en dans l’environnement d’évaluation========parent de f6e5291... Fusionnez la branche &#39;staging&#39; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en dans l’environnement d’évaluation========parent de 190577c... Fusionner la branche &quot;maître&quot; dans l’environnement d’évaluation
-
-
-
-
->> 
-
-### Modifications majeures par des employés d’Adobe
->>>>>>>parent de f6e5291... Fusionner la branche &quot;intermédiaire&quot; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en dans l’environnement d’évaluation
-
-
-
-
-
-
+Si vous rencontrez un problème et savez exactement comment le résoudre, envisagez de créer une requête d’extraction. Les demandes d’extraction vous permettent d’apporter vos propres modifications à la documentation, qui sont ensuite examinées pour inclusion par un membre de l’équipe AEM Docs. Il vous suffit de cliquer sur le lien **Edit this page** (Modifier cette page) en haut du panneau de navigation de droite sur n’importe quelle page pour apporter les modifications suggérées et créer la demande d’extraction.
 
 Toutes les demandes d’extraction doivent être accompagnées d’un [accord de licence de contributeur ou d’un CLA signé.](https://opensource.adobe.com/cla.html)  Cela donne à Adobe l’autorisation de redistribuer vos contributions dans le cadre du projet. Vous n’avez besoin de soumettre un CLA Adobe qu’une seule fois. Par conséquent, si vous l’avez déjà soumis, vous n’avez rien à faire.
 
@@ -83,45 +49,11 @@ Regardez la vidéo suivante pour un aperçu rapide de la création de demandes e
 
 >[!VIDEO](https://video.tv.adobe.com/v/27069)
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 ### Contributions des employés d’Adobe
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-If you are an Adobe employee and have a contribution, please use the `AdobeDocs` org in the corporate git.
+Si vous êtes un employé d’Adobe et souhaitez effectuer une demande d’extraction, utilisez le référentiel privé à l’adresse `https://git.corp.adobe.com/AdobeDocs`.
 
-Nous apprécions évidemment toute contribution et examinerons votre contribution si elle est effectuée dans le référentiel public. Toutefois, les demandes d’extraction des employés d’Adobe sont plus faciles à traiter et peuvent être approuvées plus rapidement dans le référentiel d’entreprise. Veillez à ce que toute information de propriété exclusive ne soit discutée que sur le référentiel de l’entreprise.
-=======
->=======>
->>>>>>>>parent de f6e5291... Fusionnez la branche &#39;staging&#39; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en dans l’environnement d’évaluation========parent de f6e5291... Fusionnez la branche &#39;staging&#39; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en dans l’environnement d’évaluation========parent de 190577c... Fusionner la branche &quot;maître&quot; dans l’environnement d’évaluation
-
-
-
-
->> 
-
-## Outils et configuration
-
-Les contributeurs de la communauté peuvent utiliser l’interface utilisateur de GitHub pour les modifications de base ou dupliquer (fork) le référentiel pour apporter des contributions majeures.
-
-See the [Adobe Docs Contributor Guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) for an overview of how to use the GitHub authoring platform.
-
-## Utilisation du langage Markdown pour mettre en forme votre sujet
-
-Tous les articles de ce référentiel utilisent le langage Markdown adapté pour GitHub. Si vous n’êtes pas familiarisé avec Markdown, voir :
-
-* [Notions de base du langage Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [Aide-mémoire du langage Markdown à imprimer](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-
-## Étiquettes
->>>>>>>parent de f6e5291... Fusionner la branche &quot;intermédiaire&quot; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en dans l’environnement d’évaluation
-
-
-
-
-
-
+Pour tout problème, n&#39;hésitez pas à utiliser les référentiels publics.
 
 ## Informations supplémentaires
 
