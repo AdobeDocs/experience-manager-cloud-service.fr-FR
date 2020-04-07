@@ -2,14 +2,14 @@
 title: Ajout de vos ressources numériques à Adobe Experience Manager
 description: Ajout de vos ressources numériques à Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
 # Ajout de ressources numériques à Adobe Experience Manager {#add-assets-to-experience-manager}
 
-Le chargement de vos fichiers numériques vers Adobe Experience Manager améliore leur contenu binaire à l’aide de métadonnées enrichies, de balises intelligentes, de rendus et d’autres services de gestion des ressources numériques (DAM). Vous pouvez transférer différents types de fichiers (dont des images, des fichiers PDF, des fichiers bruts, etc.) de votre dossier local ou d’un lecteur réseau vers Experience Manager Assets.
+Adobe Experience Manager enrichit le contenu binaire des fichiers numériques téléchargés avec des métadonnées enrichies, des balises intelligentes, des rendus et d’autres services de gestion des actifs numériques (DAM). Vous pouvez télécharger divers types de fichiers, tels que des images, des  de et des fichiers d’images brutes, depuis votre dossier local ou un lecteur réseau vers Experience Manager Assets.
 
 Plusieurs méthodes de chargement sont fournies. Outre la méthode la plus courante qui consiste à utiliser le navigateur, il existe d’autres méthodes pour ajouter des ressources au référentiel Experience Manager : clients de bureau, comme Adobe Asset Link ou l’application de bureau Experience Manager, scripts de chargement et d’ingestion créés par les clients, ou encore intégrations d’ingestion automatisées ajoutées sous la forme d’extensions AEM.
 
@@ -64,7 +64,7 @@ Pour charger un ou plusieurs fichiers, vous pouvez les sélectionner sur votre b
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
 
-<!-- #ENGCHECK assuming this is not relevant? please remove after confirming#
+<!-- #ENGCHECK assuming this is not relevant? remove after confirming#
    During the upload operation, AEM saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, AEM consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
@@ -77,7 +77,7 @@ De plus, l’interface utilisateur d’Assets affiche la ressource la plus réce
 
 > [!NOTE]
 >
-> Si vous devez charger des hiérarchies de dossiers imbriqués vers AEM, reportez-vous à la section [Chargement massif de ressources](#bulk-upload).
+> Pour télécharger des hiérarchies de dossiers imbriqués vers AEM, reportez-vous à la page Téléchargement [en masse de ressources](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
