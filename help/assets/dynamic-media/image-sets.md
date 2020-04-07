@@ -2,7 +2,7 @@
 title: Visionneuses d’images
 description: Découvrez comment utiliser des visionneuses d’images dans Dynamic Media
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -78,7 +78,9 @@ Si vous rencontrez des problèmes lors de la création des visionneuses, voir Im
 
 ## Chargement de ressources dans les visionneuses d’images {#uploading-assets-in-image-sets}
 
-Commencez par télécharger les images pour les visionneuses d’images. Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse d’images, tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2000 pixels dans leur dimension la plus grande. Les visionneuses d’images prennent en charge de nombreux formats de fichier image mais les formats sans perte TIFF, PNG et EPS sont recommandés.
+Commencez par télécharger les images pour les visionneuses d’images. Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse d’images, tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images ont une dimension de 2 000 pixels minimum pour un zoom optimal. Contenu multimédia dynamique peut générer des images jusqu’à 25 mégapixels chacune. Par exemple, vous pouvez utiliser une image de 5 000 x 5 000 mégapixels ou toute autre combinaison de taille pouvant atteindre 25 mégapixels.
+
+Les visionneuses d’images prennent en charge de nombreux formats de fichier image mais les formats sans perte TIFF, PNG et EPS sont recommandés.
 
 Vous pouvez charger des images pour les visionneuses d’images comme vous le feriez pour [charger une autre ressource dans AEM Assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
