@@ -3,7 +3,7 @@ title: Rapports de ressources
 description: Cet article décrit les différents rapports relatifs aux ressources dans AEM Assets et comment les générer.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -18,7 +18,7 @@ La structure de création de rapports dans AEM Assets exploite des tâches Sli
 
 L’interface de gestion de rapports est intuitive et inclut des options et des commandes précises pour accéder aux rapports archivés, ainsi qu’afficher les états d’exécution des rapports (réussite, échec et en file d’attente).
 
-Si un rapport est généré, vous êtes averti par un courrier électronique (facultatif) et une notification dans la boîte de réception. Vous pouvez afficher, télécharger ou supprimer un rapport de la page de liste des rapports, où tous les rapports précédemment générés sont affichés.
+Lorsqu’un rapport est généré, vous êtes averti par <!-- through an email (optional) and --> une notification de boîte de réception. Vous pouvez afficher, télécharger ou supprimer un rapport de la page de liste des rapports, où tous les rapports précédemment générés sont affichés.
 
 ## Génération de rapports {#generate-reports}
 
@@ -79,7 +79,7 @@ Les administrateurs d’AEM peuvent facilement générer et personnaliser ces ra
 
    ![files_report](assets/files_report.png)
 
-   Le rapport **[!UICONTROL Partage de liens]** affiche des URL vers des ressources partagées avec des utilisateurs externes à partir d’AEM Assets. Celui-ci comprend les ID de courrier électronique de l’utilisateur qui a partagé les ressources, les ID de courrier électronique des utilisateurs avec lesquels les ressources sont partagées, la date de partage et la date d’expiration du lien. Les colonnes ne sont pas personnalisables.
+   Le rapport **[!UICONTROL Partage de liens]** affiche des URL vers des ressources partagées avec des utilisateurs externes à partir d’AEM Assets. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> Les colonnes ne sont pas personnalisables.
 
    Le rapport **[!UICONTROL Partage de liens]** n’inclut pas d’options pour les sous-dossiers et les rendus, car il publie seulement les URL partagées qui apparaissent sous */var/dam/share*.
 
