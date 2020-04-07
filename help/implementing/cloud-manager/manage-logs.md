@@ -2,7 +2,7 @@
 title: Gérer les journaux - Cloud Service
 description: Gérer les journaux - Cloud Service
 translation-type: tm+mt
-source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -66,3 +66,10 @@ Environment Id Service    Name
 
 >[!NNote]
 >Alors que **les téléchargements de journaux** seront disponibles par le biais de l’interface utilisateur et de l’API, **** la fonction d’envoi de journaux est disponible uniquement sur l’API/CLI.
+
+### Ressources supplémentaires {#resources}
+
+Reportez-vous aux ressources supplémentaires suivantes pour en savoir plus sur l’API Cloud Manager et l’interface de ligne de commande des E/S Adobe :
+
+* [Documentation de l’API Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
+* [Interface de ligne de commande des E/S Adobe](https://github.com/adobe/aio-cli-plugin-cloudmanager)
