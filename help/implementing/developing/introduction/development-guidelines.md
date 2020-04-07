@@ -2,7 +2,7 @@
 title: Conseils de développement pour AEM as a Cloud Service
 description: 'À terminer '
 translation-type: tm+mt
-source-git-commit: 3d2705262d9c82a1486e460247b468259d5ed600
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -83,7 +83,37 @@ Le contenu est répliqué de l’auteur à la publication au moyen d’un pub-so
 
 ### Journaux {#logs}
 
-For more information on how to work with logs, see the [Logging documentation](/help/implementing/developing/introduction/logging.md).
+Pour le développement en local, les entrées de journaux sont écrites dans des fichiers locaux. dans le `/crx-quickstart/logs` dossier.
+
+Dans les environnements Cloud, les développeurs peuvent télécharger les journaux via Cloud Manager ou utiliser un outil de ligne de commande pour les retailler. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+
+**Définition du niveau de journal**
+
+Pour modifier les niveaux de journal des environnements Cloud, il est nécessaire de modifier la configuration d’enregistreur OSGI Sling, suivi d’un redéploiement complet. Comme il ne s’agit pas d’une opération instantanée, soyez prudent lorsque vous activez les journaux en détail sur les environnements de production qui reçoivent beaucoup de trafic. Dans le futur, il est possible que des mécanismes soient ajoutés pour pouvoir modifier plus rapidement le niveau du journal.
+
+> [!NOTE]
+> 
+> Pour effectuer les modifications de configuration répertoriées ci-dessous, vous devez les créer sur un de développement local  puis les transmettre à AEM en tant qu’instance de service Cloud. Pour plus d’informations sur la procédure à suivre, voir [Déploiement sur AEM en tant que service](/help/implementing/deploying/overview.md)Cloud.
+
+**Activation du niveau de journalisation DEBUG**
+
+Le niveau de journalisation par défaut est INFO, ce qui signifie que les messages DEBUG ne sont pas consignés.
+Pour activer le niveau du journal DEBUG, définissez la variable
+
+``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
+
+la propriété à corriger. Ne laissez pas le journal au niveau de débogage DEBUG plus longtemps que nécessaire, car cela génère un grand nombre de journaux.
+Une ligne dans le fichier de débogage commence généralement par DEBUG, puis fournit le niveau de journalisation, l’action d’installation et le message du journal. Par exemple :
+
+``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
+
+Les niveaux de journalisation sont les suivants :
+
+| 0 | Erreur fatale | L&#39;action a échoué et le programme d&#39;installation ne peut pas continuer. |
+|---|---|---|
+| 1 | Erreur | L&#39;action a échoué. L’installation se poursuit, mais une partie de CRX n’a pas été installée correctement et ne fonctionnera pas. |
+| 2 | Avertissement | L&#39;action a réussi mais a rencontré des problèmes. CRX risque de ne pas fonctionner correctement. |
+| 3 | Informations | L&#39;action a réussi. |
 
 ### Images mémoire de threads {#thread-dumps}
 
