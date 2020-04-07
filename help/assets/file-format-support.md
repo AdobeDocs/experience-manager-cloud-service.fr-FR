@@ -3,7 +3,7 @@ title: Formats de fichiers et types MIME pris en charge par Experience Manager 
 description: Formats de fichier et types MIME pris en charge par Experience Manager Assets as a Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9a7d2cff969a7920eb4fa3597846c11aa16392d9
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
