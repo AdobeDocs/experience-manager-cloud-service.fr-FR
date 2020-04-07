@@ -3,7 +3,7 @@ title: Configuration et utilisation des microservices de ressources pour le trai
 description: Découvrez comment configurer et utiliser les microservices de ressources basés sur le cloud pour traiter des ressources à grande échelle.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -11,7 +11,6 @@ source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 # Prise en main des microservices de ressources {#get-started-using-asset-microservices}
 
 <!--
-
 * Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
 * How to access the microservices. UI. API. Is extending possible right now?
 * Detailed list of what file formats and what processing is supported by which workflows/workers process.
@@ -19,14 +18,13 @@ source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 * How to create new config or request for new provisioning/purchase.
 
 * [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
-
 -->
 
-Les microservices de ressources permettent un traitement évolutif et résilient des ressources à l’aide des Cloud Services. Ces derniers sont gérés par Adobe pour garantir un traitement optimal des différents types de ressources et options de traitement.
+Les microservices de ressources offrent un traitement évolutif et résilient des ressources à l’aide des services cloud. Adobe gère les services pour une gestion optimale des différents types de ressources et des options de traitement.
 
-Le traitement des ressources est effectué sur la base de la configuration définie dans les **[!UICONTROL Profils de traitement]**. Ces profils fournissent une configuration par défaut et permettent à l’administrateur d’ajouter une configuration plus précise pour le traitement des ressources. Pour garantir une parfaite extensibilité et une personnalisation complète, le traitement des ressources autorise une configuration facultative des workflows de post-traitement, dont la création et la gestion sont ensuite confiées à l’administrateur.
+Asset processing depends on the configuration in **[!UICONTROL Processing Profiles]**, which provide a default set up, and allow an administrator to add more specific asset processing configuration. Les administrateurs peuvent créer et gérer les configurations des  de post-traitement, y compris la personnalisation facultative. La personnalisation des  de permet l’extensibilité et la personnalisation complète.
 
-Vous trouverez, ci-dessous, un flux de haut niveau pour le traitement des ressources dans Experience Manager as a Cloud Service.
+Un flux de haut niveau pour le traitement des ressources est en dessous.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -37,7 +35,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
-> Pour les clients qui effectuent une mise à jour à partir des versions précédentes d’Experience Manager, le traitement des ressources décrit dans cette section remplace le modèle de workflow « Ressources de mise à jour de gestion des actifs numériques » qui était utilisé auparavant pour le traitement de l’ingestion des ressources. La plupart des étapes standard liées aux métadonnées et à la génération du rendu sont remplacées par le traitement des microservices de ressources, tandis que les étapes restantes, le cas échéant, peuvent être remplacées par la configuration du workflow de post-traitement.
+> Le traitement des ressources décrit ici remplace le modèle de `DAM Update Asset` flux de travail existant dans les versions précédentes d’Experience Manager. La plupart des étapes standard liées aux métadonnées et à la génération du rendu sont remplacées par le traitement des microservices de ressources, tandis que les étapes restantes, le cas échéant, peuvent être remplacées par la configuration du workflow de post-traitement.
 
 ## Prise en main du traitement des ressources {#get-started}
 
@@ -56,9 +54,9 @@ Pour configurer des microservices de ressources, les administrateurs peuvent uti
 
 ### Configuration par défaut {#default-config}
 
-Avec la configuration par défaut, seul le profil de traitement [!UICONTROL standard] est configuré. Il s’agit d’un profil intégré qui ne peut pas être modifié. Il est toujours exécuté pour s’assurer que toutes les opérations de traitement requises par l’application sont effectuées.
+Avec la configuration par défaut, seul le profil de traitement standard est configuré. Le  de traitement standard n’est pas visible dans l’interface utilisateur et vous ne pouvez pas le modifier. Il s’exécute toujours pour traiter les fichiers téléchargés. Un de traitement standard permet de s’assurer que tout le traitement de base requis par Experience Manager est terminé sur toutes les ressources.
 
-![profils-traitement-standard](assets/processing-profiles-standard.png)
+<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png) -->
 
 Le profil de traitement standard fournit la configuration de traitement suivante :
 
@@ -77,17 +75,18 @@ Vous pouvez ajouter des profils de traitement à l’aide de l’action **[!UICO
 
 Chaque configuration de profil de traitement comprend une liste de rendus. Pour chaque rendu, vous pouvez spécifier les éléments suivants :
 
-* Nom du rendu
-* Format du rendu (JPEG, PNG et GIF sont pris en charge)
-* Largeur et hauteur du rendu en pixels (si ces valeurs ne sont pas spécifiées, la taille totale en pixels de l’original est utilisée par défaut)
-* Qualité du rendu (pour le format JPEG), exprimée en pourcentage
-* Les types MIME inclus et exclus définissent les types de ressource auxquels s’applique le profil de traitement
+* Nom du rendu.
+* Format de rendu pris en charge, tel que JPEG, PNG ou GIF.
+* Largeur et hauteur du rendu en pixels. S’il n’est pas spécifié, la taille totale en pixels de l’image d’origine est utilisée.
+* Qualité du rendu JPEG en pourcentage.
+* Types MIME inclus et exclus pour définir l’applicabilité d’un  de.
 
 ![ajout-profils-traitement](assets/processing-profiles-adding.png)
 
-Lorsqu’un nouveau profil de traitement est enregistré, il est ajouté à la liste des profils configurés. Ces profils de traitement peuvent ensuite être appliqués à des dossiers de la hiérarchie afin de les rendre opérationnels pour les transferts de ressources et les ressources qui y sont exécutés.
+Lorsque vous créez et enregistrez un nouveau de traitement  il est ajouté au de l’ de traitement configuré. Vous pouvez appliquer ces  de traitement aux dossiers dans la hiérarchie de dossiers afin de les rendre efficaces pour le transfert de fichiers et le traitement de fichiers.
 
-![liste-profils-traitement](assets/processing-profiles-list.png)
+<!-- Removed per cqdoc-15624 request by engineering.
+ ![processing-profiles-list](assets/processing-profiles-list.png) -->
 
 #### Largeur et hauteur du rendu {#rendition-width-height}
 
@@ -103,13 +102,13 @@ Dans le cas contraire, le type MIME est vérifié par rapport au type MIME inclu
 
 #### Rendu FPO spécial {#special-fpo-rendition}
 
-Le profil de traitement peut inclure un « rendu FPO » spécial qui est utilisé lorsqu’[Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) est associé à Adobe InDesign pour placer des liens directs vers des ressources d’Experience Manager dans des documents InDesign.
+Lorsque vous importez des fichiers de grande taille d’AEM dans le Adobe InDesign, un professionnel de la création doit attendre longtemps avant de [placer un fichier](https://helpx.adobe.com/fr/indesign/using/placing-graphics.html). En attendant, l’utilisateur ne peut pas utiliser InDesign. Cela interrompt le flux créatif et a un impact négatif sur l’expérience utilisateur. Adobe permet de commencer par le placement temporaire de rendus de petite taille dans le InDesign, qui peut être remplacé ultérieurement par des ressources à la demande en pleine résolution. Experience Manager fournit des rendus utilisés uniquement pour les emplacements (FPO). Ces rendus FPO ont une taille de fichier réduite, mais ont les mêmes proportions.
 
-Consultez la [documentation](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html) d’Adobe Asset Link pour savoir si vous devez l’activer pour votre profil de traitement.
+Le de traitement peut inclure un rendu FPO (pour placement uniquement). See Adobe Asset Link [documentation](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html) to understand if you need to turn it on for your processing profile. Pour plus d’informations, voir la documentation [complète d’](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html)Adobe Asset Link.
 
 ## Utilisation de microservices de ressources pour traiter des ressources {#use-asset-microservices}
 
-Une fois créés, les profils de traitement supplémentaires doivent être appliqués à des dossiers spécifiques pour qu’Experience Manager les utilise dans le cadre du traitement des ressources qui y sont chargées ou mises à jour. Le profil de traitement standard intégré est toujours exécuté.
+Créez et appliquez le de traitement personnalisé supplémentaire aux dossiers spécifiques pour Experience Manager afin de traiter les fichiers téléchargés ou mis à jour dans ces dossiers. Le de traitement standard intégré par défaut est toujours exécuté, mais il n’est pas visible dans l’interface utilisateur. Si vous ajoutez un  de personnalisé, les deux  de sont utilisées pour traiter les ressources téléchargées.
 
 Pour que les profils de traitement soient appliqués aux dossiers, deux méthodes sont possibles :
 
@@ -149,15 +148,15 @@ L’ajout d’une configuration de workflow de post-traitement à Experience Man
 * La dernière étape d’un tel modèle doit être `DAM Update Asset Workflow Completed Process`. Elle est nécessaire pour s’assurer qu’AEM sait que le traitement a pris fin et que la ressource peut désormais être marquée comme traitée (« Nouveau »).
 * Création d’une configuration pour le service d’exécution de workflow personnalisé, lequel permet de configurer l’exécution d’un modèle de workflow de post-traitement selon le chemin d’accès (emplacement du dossier) ou une expression régulière.
 
-### Création de modèles de workflow de post-traitement
+### Création de modèles de processus de post-traitement {#create-post-processing-workflow-models}
 
-Les modèles de workflow de post-traitement sont des modèles AEM standard. Vous devez en créer d’autres si un autre traitement doit être exécuté pour différents emplacements de référentiel ou types de ressource.
+Les modèles de workflow de post-traitement sont des modèles AEM standard. Créez différents modèles si vous avez besoin d’un traitement différent pour différents emplacements de référentiel ou types de ressources.
 
-Les étapes de traitement doivent être ajoutées en fonction des besoins. Vous pouvez utiliser toutes les étapes par défaut qui sont prises en charge, ainsi que toutes les étapes de workflow implémentées sur mesure.
+Les étapes de traitement doivent être ajoutées en fonction des besoins. Vous pouvez utiliser toutes les étapes prises en charge disponibles, ainsi que toutes les étapes de processus implémentées sur mesure.
 
-La dernière étape de chacun des workflows de post-traitement doit être `DAM Update Asset Workflow Completed Process`. Cela permet de s’assurer que la ressource est marquée avec le statut « traitement terminé ».
+Assurez-vous que la dernière étape de chaque  de post-traitement est `DAM Update Asset Workflow Completed Process`. La dernière étape permet de s’assurer qu’Experience Manager sait quand le traitement des ressources est terminé.
 
-### Configuration de l’exécution du workflow de post-traitement
+### Configuration de l’exécution du processus de post-traitement {#configure-post-processing-workflow-execution}
 
 Pour configurer les modèles du workflow de post-traitement à exécuter pour les ressources chargées ou mises à jour dans le système une fois le traitement des microservices de ressources terminé, il convient de configurer le service d’exécution de workflow personnalisé.
 
@@ -171,4 +170,4 @@ Ce service (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunne
 >La configuration du service d’exécution de workflow personnalisé est la configuration d’un service OSGi. Pour en savoir plus sur le déploiement d’une configuration OSGi, voir [Déploiement sur Experience Manager](/help/implementing/deploying/overview.md).
 > Contrairement aux déploiements des Managed Services et On-Premise Services d’AEM, la console Web OSGi n’est pas directement disponible dans les déploiements de Cloud Service.
 
-Pour plus d’informations sur les étapes de workflow standard pouvant être utilisées dans le workflow de post-traitement, reportez-vous à la section [Étapes du workflow de post-traitement](developer-reference-material-apis.md#post-processing-workflows-steps) (en anglais) dans la documentation de référence du développeur.
+For details about which standard workflow step can be used in the post-processing workflow, see [workflow steps in post-processing workflow](developer-reference-material-apis.md#post-processing-workflows-steps) in the developer reference.
