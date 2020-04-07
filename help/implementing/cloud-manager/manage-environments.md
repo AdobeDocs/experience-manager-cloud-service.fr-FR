@@ -2,7 +2,7 @@
 title: Gestion des environnements - Cloud Service
 description: Gestion des environnements - Cloud Service
 translation-type: tm+mt
-source-git-commit: 81c5112cd72ff3713690a49978f1b6e991d15c3b
+source-git-commit: 1fe2fea86f933e7cffabf67fda09a2850a5d5730
 
 ---
 
@@ -37,9 +37,6 @@ Un utilisateur disposant des autorisations requises peut créer les types d’en
 
 
 1. L’utilisateur clique sur le bouton **Ajouter un environnement** pour ajouter un environnement.
-
-   >[!NOTE]
-   >Ce bouton est également accessible à partir de la page  du  ou de la carte de . En tant qu’utilisateur, vous ne verrez cette option que si vous disposez des autorisations requises. Contactez votre représentant Adobe si vous avez des questions.
 
    ![](assets/add-environment.png)
 
