@@ -3,7 +3,7 @@ title: 'API Assets pour la gestion des ressources numériques dans Adobe Experie
 description: Les API Assets permettent d’effectuer des opérations CRUD (création, lecture, mise à jour, suppression) de base afin de gérer des ressources, y compris des fichiers binaires, des métadonnées, des rendus, des commentaires et des fragments de contenu.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -55,9 +55,7 @@ Le corps de la requête doit être constitué de données de formulaire `applica
 * `(string) fileName` : obligatoire. Nom de la ressource tel qu’il apparaîtra dans l’instance.
 * `(number) fileSize` : obligatoire. Longueur totale, en octets, du fichier binaire à charger.
 
-Notez qu’une seule requête peut être utilisée pour lancer des chargements pour plusieurs fichiers binaires, à condition que chaque binaire contienne les champs obligatoires.
-
-En cas de succès, la requête renverra un code d’état 201 et un corps contenant des données JSON au format suivant :
+Une seule requête peut être utilisée pour lancer des téléchargements pour plusieurs binaires, tant que chaque binaire contient les champs obligatoires. If successful, the request responds with a `201` status code and a body containing JSON data in the following format:
 
 ```
 {
@@ -74,17 +72,17 @@ En cas de succès, la requête renverra un code d’état 201 et un corps conte
         }
     ]
 }
-````
+```
 
-* `(string) completeURI` : URI qui doit être appelé lorsque le chargement du fichier binaire est terminé. Il peut s’agir d’un URI absolu ou relatif, et les clients doivent être en mesure de gérer l’un ou l’autre. En d’autres termes, la valeur peut être `"https://author.acme.com/content/dam.completeUpload.json"` ou `"/content/dam.completeUpload.json"` (voir [Fin du chargement](#complete-upload)).
-* `(string) folderPath` : chemin d’accès complet au dossier dans lequel le fichier binaire est chargé.
-* `(array) (files)` : liste des éléments dont la longueur et l’ordre correspondent à la longueur et à l’ordre de la liste des informations binaires fournies dans la requête de lancement.
-* `(string) fileName` : nom du binaire correspondant, tel qu’il est fourni dans la requête de lancement. Cette valeur doit être incluse dans la requête de fin.
-* `(string) mimeType` : type MIME du binaire correspondant, tel qu’il est fourni dans la requête de lancement. Cette valeur doit être incluse dans la requête de fin.
-* `(string) uploadToken` : jeton de chargement pour le binaire correspondant. Cette valeur doit être incluse dans la requête de fin.
-* `(array) uploadURIs` : liste des chaînes dont les valeurs sont des URI complets vers lesquels le contenu du binaire doit être chargé (voir [Chargement d’un binaire](#upload-binary)).
-* `(number) minPartSize` : longueur minimale, en octets, des données pouvant être fournies à l’un des URI de chargement, s’il en existe plusieurs.
-* `(number) maxPartSize` : longueur maximale, en octets, des données pouvant être fournies à l’un des URI de chargement, s’il en existe plusieurs.
+* `completeURI` (chaîne) : Appelez cet URI lorsque le chargement du fichier binaire est terminé. L&#39;URI peut être un URI absolu ou relatif et les clients doivent pouvoir gérer l&#39;un ou l&#39;autre. En d’autres termes, la valeur peut être `"https://author.acme.com/content/dam.completeUpload.json"` ou `"/content/dam.completeUpload.json"` voir le téléchargement [](#complete-upload)complet.
+* `folderPath` (chaîne) : Chemin d’accès complet au dossier dans lequel le fichier binaire est téléchargé.
+* `(files)` (tableau) : d’éléments dont la longueur et l’ordre correspondent à la longueur et à l’ordre du d’informations binaires fournies dans la demande de lancement.
+* `fileName` (chaîne) : Nom du binaire correspondant, tel qu’il est fourni dans la demande de lancement. Cette valeur doit être incluse dans la requête de fin.
+* `mimeType` (chaîne) : Type MIME du binaire correspondant, tel qu’il est fourni dans la requête de lancement in. Cette valeur doit être incluse dans la requête de fin.
+* `uploadToken` (chaîne) : Jeton de téléchargement pour le binaire correspondant. Cette valeur doit être incluse dans la requête de fin.
+* `uploadURIs` (tableau) : de chaînes dont les valeurs sont des URI complets vers lesquels le contenu du binaire doit être téléchargé (voir [Téléchargement du binaire](#upload-binary)).
+* `minPartSize` (nombre) : Longueur minimale, en octets, des données pouvant être fournies à l’un des URI de téléchargement, s’il existe plusieurs URI.
+* `maxPartSize` (nombre) : Longueur maximale, en octets, des données pouvant être fournies à l’un des URI de téléchargement, s’il existe plusieurs URI.
 
 ### Chargement d’un binaire {#upload-binary}
 
@@ -129,7 +127,7 @@ Pour en savoir plus sur les algorithmes de chargement ou pour créer vos propres
 
 ### API de chargement de ressources obsolètes {#deprecated-asset-upload-api}
 
-<!-- #ENGCHECK please review / update the list of deprecated APIs below -->
+<!-- #ENGCHECK review / update the list of deprecated APIs below -->
 
 >[!NOTE]
 Pour Experience Manager as a Cloud Service, seules les nouvelles API de chargement sont prises en charge. Les API d’Experience Manager 6.5 sont obsolètes.
