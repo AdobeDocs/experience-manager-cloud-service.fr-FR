@@ -3,14 +3,14 @@ title: Utilisation des ressources connectées pour partager des ressources DAM d
 description: Utilisez les ressources disponibles sur un déploiement distant d’Adobe Experience Manager Assets lors de la création de vos pages Web sur un autre déploiement de site Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 188917fe677a88142c702b9637600db872853974
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
 # Utilisation des ressources connectées pour partager des ressources DAM dans AEM Sites {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-Dans les grandes entreprises, l’infrastructure requise pour créer des sites web peut être distribuée. Il arrive que les fonctionnalités et les ressources numériques de création de sites web permettant de créer ces sites web se trouvent dans différents déploiements. Les raisons peuvent être : des instances géographiquement dispersées nécessaires pour travailler en tandem ; des acquisitions entraînant une infrastructure hétérogène que la société mère souhaite consolider ; une croissance entraînant la nécessité d’une instance dédiée pour la gestion des ressources.
+Dans les grandes entreprises, l’infrastructure requise pour créer des sites web peut être distribuée. Il arrive que les fonctionnalités et les ressources numériques de création de sites web permettant de créer ces sites web se trouvent dans différents déploiements. Il est possible de répartir géographiquement les déploiements existants qui sont nécessaires pour travailler en tandem ou les acquisitions menant à une infrastructure hétérogène que le parent  vouloir utiliser ensemble.
 
 AEM Sites offre des fonctionnalités pour créer des pages web. AEM Assets est le système de gestion des actifs numériques (DAM) qui fournit les ressources requises pour les sites web. AEM prend désormais en charge le cas d’utilisation ci-dessus en intégrant AEM Sites et AEM Assets.
 
@@ -18,7 +18,7 @@ AEM Sites offre des fonctionnalités pour créer des pages web. AEM Assets est l
 
 Lors de la publication des pages dans l’Éditeur, les auteurs peuvent facilement rechercher, parcourir et intégrer les ressources d’un autre déploiement AEM Assets. Pour créer un administrateur AEM, intégrez de manière unique un déploiement local AEM Sites à un autre déploiement (distant) AEM Assets.
 
-Pour les auteurs de sites, les ressources distantes sont disponibles en tant que ressources locales en lecture seule. Cette fonctionnalité permet de rechercher et d’utiliser aisément plusieurs ressources distantes à la fois. Envisagez de migrer en vrac de nombreuses ressources distantes pour les rendre disponibles sur le déploiement local en une seule fois. Voir le [guide de migration des ressources](/help/assets/assets-migration-guide.md).
+Pour les auteurs de sites, les ressources distantes sont disponibles en tant que ressources locales en lecture seule. Cette fonctionnalité permet de rechercher et d’utiliser aisément plusieurs ressources distantes à la fois. Envisagez de migrer en vrac de nombreuses ressources distantes pour les rendre disponibles sur le déploiement local en une seule fois.
 
 ### Conditions préalables et déploiements pris en charge {#prerequisites}
 
@@ -164,7 +164,7 @@ Les ressources récupérées peuvent être utilisées comme n’importe quel aut
 * Les schémas de métadonnées ne sont pas récupérés.
 * Tous les auteurs Sites disposent de droits d’accès en lecture sur les copies récupérées, même s’ils n’en n’ont pas sur le déploiement DAM distant.
 * Il n’existe aucune prise en charge API pour personnaliser l’intégration.
-* Cette fonctionnalité permet de rechercher et d’utiliser aisément des ressources distantes. Pour rendre de nombreuses ressources distantes disponibles sur le déploiement local en une fois, envisagez de migrer les ressources. Voir le [guide de migration des ressources](assets-migration-guide.md).
+* Cette fonctionnalité permet de rechercher et d’utiliser aisément des ressources distantes. Pour rendre de nombreuses ressources distantes disponibles sur le déploiement local en une fois, envisagez de migrer les ressources.
 * Il n’est pas possible d’utiliser une ressource distante comme miniature pour une page Web dans l’onglet [!UICONTROL Miniature] des Propriétés [!UICONTROL de la] page en cliquant sur [!UICONTROL Sélectionner l’image].
 
 **Configuration et licence**
