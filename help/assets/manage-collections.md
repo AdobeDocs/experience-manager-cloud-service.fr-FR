@@ -4,7 +4,7 @@ description: Comprenez le concept de collecte dans Adobe Experience Manager Asse
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8aa693387183e65434da300ccf08f394b48ed9ba
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -170,7 +170,7 @@ Lorsque vous téléchargez une collection, la hiérarchie complète des ressourc
 
 1. Dans la console Collections, sélectionnez une ou plusieurs collections à télécharger.
 1. Dans la barre d’outils, appuyez/cliquez sur l’icône de téléchargement.
-1. Dans la boîte de dialogue **[!UICONTROL Télécharger]**, appuyez/cliquez sur **[!UICONTROL Télécharger]**. Si vous souhaitez télécharger les rendus des ressources dans la collection, sélectionnez **[!UICONTROL Rendus]**. Sélectionnez l’option **[!UICONTROL Courrier électronique]** pour envoyer une notification électronique au propriétaire de la collection.
+1. Dans la boîte de dialogue **[!UICONTROL Télécharger]**, appuyez/cliquez sur **[!UICONTROL Télécharger]**. Si vous souhaitez télécharger les rendus des ressources dans la collection, sélectionnez **[!UICONTROL Rendus]**. <!-- Select the **[!UICONTROL Email]** option to send an email notification to the owner of the collection. -->
 
    Lorsque vous sélectionnez une collection à télécharger, l’ensemble de la hiérarchie de dossiers sous cette collection est téléchargé. Pour inclure chaque collection que vous téléchargez (y compris les ressources figurant dans des collections enfant imbriquées dans la collection parent) dans un dossier individuel, sélectionnez **[!UICONTROL Créer un dossier distinct pour chaque ressource]**.
 
