@@ -3,7 +3,7 @@ title: Opérations asynchrones
 description: AEM Assets optimise les performances en exécutant certaines tâches consommatrices de ressources de manière asynchrone.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -29,7 +29,7 @@ Vous pouvez afficher l’état des tâches asynchrones à partir de la page **[!
 
 ## Surveillance de l’état des opérations asynchrones {#monitoring-the-status-of-asynchronous-operations}
 
-Chaque fois qu’AEM Assets traite une opération asynchrone, vous recevez une notification dans votre boîte de réception et par courrier électronique.
+Whenever AEM Assets processes an operation asynchronously, you receive a notification at your inbox <!-- and through email -->.
 
 Pour afficher l’état des opérations asynchrones en détail, accédez à la page **[!UICONTROL État des tâches asynchrones]**.
 
