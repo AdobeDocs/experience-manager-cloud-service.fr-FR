@@ -51,7 +51,8 @@ This Code of Conduct is adapted from the [Contributor Covenant](https://contribu
 This Code of Conduct is adapted from the [Contributor Covenant](https://contributor-covenant.org), version 1.4,available at [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
 &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
->>>>>>>>>>parent de f6e5291... Fusionnez la branche &#39;staging&#39; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en dans l’environnement d’évaluation========parent de f6e5291... Fusionnez la branche &#39;staging&#39; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en dans l’environnement d’évaluation========parent de f6e5291... Fusionner la branche &quot;intermédiaire&quot; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en dans l’environnement d’évaluation
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+>>>>>>>>>>parent de f6e5291... Fusionnez la branche &#39;staging&#39; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en dans l’environnement d’évaluation========parent de f6e5291... Fusionnez la branche &#39;staging&#39; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en dans l’environnement d’évaluation========parent de f6e5291... Fusionnez la branche &#39;staging&#39; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en dans l’environnement d’évaluation========parent de 190577c... Fusionner la branche &quot;maître&quot; dans l’environnement d’évaluation
 
 
 
