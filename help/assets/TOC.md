@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: c56df26fc1bb1da36d268b08276a555a7c0d03ac
+source-git-commit: 5fe598192f80496bd176804796dbce96c35fc67e
 
 ---
 
@@ -52,17 +52,24 @@ source-git-commit: c56df26fc1bb1da36d268b08276a555a7c0d03ac
    + [Métadonnées XMP](xmp-metadata.md)
    + [Fonctionnalités de MediaLibrary](medialibrary.md)
    + [Importation et exportation des métadonnées des ressources](metadata-import-export.md)
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD==============
-+ Partage et distribution des ressources {#brandportal}
-   + [Configuration d’AEM Assets avec Brand Portal](configure-aem-assets-with-brand-portal.md)
-   + [Publication des ressources AEM vers le portail de marque](publish-to-brand-portal.md)
->>>>>>>>>>parent de 733b637... update toc========parent de da6a8ae... Configuration du portail de marque avec AEM Assets sur Cloud========parent de da6a8ae... Configuration du portail de marque avec AEM Assets sur Cloud
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt; HEAD=============================================
+>>>>>>>>>>parent de 733b637... mettre à jour la table des matières
 
 
 
 
 
 > 
++ Partage et distribution des ressources {#brandportal}
+   + [Configuration d’AEM Assets avec Brand Portal](configure-aem-assets-with-brand-portal.md)
+   + [Publication des ressources AEM vers le portail de marque](publish-to-brand-portal.md)
+>>>>>>>parent de 733b637... update toc========parent de da6a8ae... Configuration du portail de marque avec AEM Assets sur Cloud========parent de da6a8ae... Configuration du portail de marque avec AEM Assets sur Cloud
+
+
+
+
+
+
 + Fragments de contenu {#content-fragments}
    + [Utilisation de fragments de contenu](content-fragments/content-fragments.md)
    + [Gestion des fragments de contenu](content-fragments/content-fragments-managing.md)
