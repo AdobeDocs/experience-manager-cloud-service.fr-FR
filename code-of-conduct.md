@@ -1,5 +1,5 @@
 ---
-source-git-commit: 69fb4368528343eb5a85f89df9db73d72d36e4b2
+source-git-commit: 8bdcc1798b2b788c5252e89750ad6ccb86cda333
 translation-type: tm+mt
 
 ---
@@ -48,8 +48,9 @@ Les responsables de projet qui ne suivent pas ou n’appliquent pas le code de c
 &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 This Code of Conduct is adapted from the [Contributor Covenant](https://contributor-covenant.org), version 1.4, available at [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/).
 =======
-Le présent ce code de conduite est une adaptation de la [Charte du contributeur](https://contributor-covenant.org), version 1.4, disponible à l’adresse [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
->>>>>>>>>>parent de f6e5291... Fusionner la branche &quot;intermédiaire&quot; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en dans l’environnement d’évaluation
+This Code of Conduct is adapted from the [Contributor Covenant](https://contributor-covenant.org), version 1.4,available at [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+>>>>>>>>>>parent de f6e5291... Fusionnez la branche &#39;staging&#39; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en dans l’environnement d’évaluation========parent de f6e5291... Fusionner la branche &quot;intermédiaire&quot; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en dans l’environnement d’évaluation
 
 
 
