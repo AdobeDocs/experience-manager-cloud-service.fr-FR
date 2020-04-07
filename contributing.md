@@ -1,5 +1,5 @@
 ---
-source-git-commit: b0abce7f1d911123da37ba279a565c7608e5a4c5
+source-git-commit: e11c6c58cd97f8c52fada14d9a6b6981d7a399c4
 translation-type: tm+mt
 
 ---
@@ -39,7 +39,7 @@ Les demandes vous permettent de décrire facilement votre idée d’amélioratio
 
 ### Création d’une demande d’extraction {#create-a-pull-request}
 
-Si vous rencontrez un problème et savez exactement comment le résoudre, envisagez de créer une requête d’extraction. Les demandes d’extraction vous permettent d’apporter vos propres modifications à la documentation, qui sont ensuite examinées pour inclusion par un membre de l’équipe AEM Docs. Il vous suffit de cliquer sur le lien **Edit this page** (Modifier cette page) en haut du panneau de navigation de droite sur n’importe quelle page pour apporter les modifications suggérées et créer la demande d’extraction.
+Si vous rencontrez un problème et savez exactement comment le résoudre, envisagez de créer une demande d’extraction. Les demandes d’extraction vous permettent d’apporter vos propres modifications à la documentation, qui sont ensuite examinées pour inclusion par un membre de l’équipe AEM Docs. Il vous suffit de cliquer sur le lien **Edit this page** (Modifier cette page) en haut du panneau de navigation de droite sur n’importe quelle page pour apporter les modifications suggérées et créer la demande d’extraction.
 
 Toutes les demandes d’extraction doivent être accompagnées d’un [accord de licence de contributeur ou d’un CLA signé.](https://opensource.adobe.com/cla.html)  Cela donne à Adobe l’autorisation de redistribuer vos contributions dans le cadre du projet. Vous n’avez besoin de soumettre un CLA Adobe qu’une seule fois. Par conséquent, si vous l’avez déjà soumis, vous n’avez rien à faire.
 
@@ -51,9 +51,9 @@ Regardez la vidéo suivante pour un aperçu rapide de la création de demandes e
 
 ### Contributions des employés d’Adobe
 
-Si vous êtes un employé d’Adobe et souhaitez effectuer une demande d’extraction, utilisez le référentiel privé à l’adresse `https://git.corp.adobe.com/AdobeDocs`.
+Si vous êtes un employé d’Adobe et souhaitez faire une contribution, utilisez l’organisation `AdobeDocs` dans notre référentiel git d’entreprise.
 
-Pour tout problème, n&#39;hésitez pas à utiliser les référentiels publics.
+Nous apprécions évidemment toute contribution et examinerons votre contribution si elle est effectuée dans le référentiel public. Toutefois, les demandes d’extraction des employés d’Adobe sont plus faciles à traiter et peuvent être approuvées plus rapidement dans le référentiel d’entreprise. Veillez à ce que toute information de propriété exclusive ne soit discutée que sur le référentiel de l’entreprise.
 
 ## Informations supplémentaires
 
