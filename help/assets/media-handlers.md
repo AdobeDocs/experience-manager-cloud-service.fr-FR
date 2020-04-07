@@ -3,7 +3,7 @@ title: Traitement des ressources à l’aide des workflows et des gestionnaires 
 description: En savoir plus sur les différents gestionnaires de médias et sur la façon de les utiliser dans les workflows afin d’effectuer des tâches sur les ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -18,7 +18,7 @@ Les gestionnaires de médias sont des services d’AEM Assets qui effectuent des
 
 >[!NOTE]
 >
->Reportez-vous à la page [Formats pris en charge par Assets](file-format-support.md) pour une description de tous les formats pris en charge par AEM Assets, ainsi que des fonctionnalités prises en charge pour chaque format.
+>See [Assets supported file formats](file-format-support.md) article for a description of all the formats supported by AEM Assets as well as the features supported for each format.
 
 ## Gestionnaires de médias par défaut {#default-media-handlers}
 
@@ -407,7 +407,7 @@ Pour ce faire, vous utiliserez ImageMagick. ImageMagick est une suite logicielle
 
 Installez d’abord ImageMagick sur le disque hébergeant le serveur AEM :
 
-1. Installez ImageMagick : reportez-vous à la [documentation d’ImageMagick](https://www.imagemagick.org/script/download.php).
+1. Installer ImageMagick : Voir la documentation [d’ImageMagick](https://www.imagemagick.org/script/download.php).
 1. Configurez l’outil afin de pouvoir exécuter convert sur la ligne de commande.
 1. Pour vérifier si cet outil est installé correctement, exécutez la commande `convert -h` sur la ligne de commande.
 
