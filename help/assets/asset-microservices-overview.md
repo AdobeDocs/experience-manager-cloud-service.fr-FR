@@ -3,7 +3,7 @@ title: Découvrez comment les microservices de ressources peuvent traiter vos re
 description: Traitez vos ressources numériques à l’aide de microservices de traitement des ressources évolutifs et natifs en mode cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -13,10 +13,9 @@ source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
 <!--
 First half of content at https://git.corp.adobe.com/aklimets/project-nui/blob/master/docs/Project-Nui-Asset-Compute-Service.md is useful for this article.
 TBD: Post-GA we will provide detailed information at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all information is added, in short, in this article.
-
 -->
 
-Adobe Experience Manager as a Cloud Service permet d’exploiter, en mode natif, les applications et fonctionnalités d’Experience Manager. L’ingestion et le traitement des ressources, basés sur la technologie des microservices de ressources, constituent deux points forts de cette nouvelle architecture.
+Adobe Experience Manager en tant que service Cloud offre un moyen natif du cloud d’exploiter les applications et les fonctionnalités d’Experience Manager. L’ingestion et le traitement des ressources, basés sur la technologie des microservices de ressources, constituent deux points forts de cette nouvelle architecture.
 
 Les microservices de ressources permettent un traitement évolutif et résilient des ressources à l’aide des Cloud Services. Ces derniers sont gérés par Adobe pour garantir un traitement optimal des différents types de ressources et options de traitement. Les principaux avantages sont les suivants :
 
@@ -51,23 +50,23 @@ Les principales étapes de l’ingestion et du traitement des ressources à l’
 * Les résultats du traitement, tels que les rendus, sont stockés dans cet espace.
 * Experience Manager est informé de la fin du traitement, avec des pointeurs directs vers les binaires générés (rendus) qui sont ensuite disponibles dans Experience Manager pour la ressource chargée.
 
-Il s’agit du flux d’ingestion et de traitement de base des ressources. Si cela est configuré, Experience Manager peut également démarrer le modèle de workflow du client pour effectuer le post-traitement de la ressource ; par exemple, pour exécuter certaines étapes personnalisées spécifiques à l’environnement du client, comme récupérer dans les systèmes d’entreprise du client des informations à ajouter aux propriétés de la ressource.
+Il s’agit du flux d’ingestion et de traitement de base des ressources. S’il est configuré, Experience Manager peut également le modèle de flux de travail du client à effectuer le post-traitement de la ressource, par exemple, pour exécuter certaines étapes personnalisées spécifiques à l’ client, comme la récupération des informations des systèmes d’entreprise du client à ajouter aux propriétés de la ressource.
 
-Le flux d’ingestion et de traitement présente quelques concepts clés utilisés par l’architecture des microservices de ressources pour Experience Manager :
+Le flux d’assimilation et de traitement sont des concepts clés de l’architecture des microservices de ressources pour Experience Manager.
 
-* **Accès binaire direct** : les ressources sont transportées (et chargées) dans l’espace de stockage des binaires, une fois la configuration effectuée pour les environnements Experience Manager. Elles sont ensuite chargées dans AEM, puis dans les microservices de ressources. Enfin, les clients y ont accès directement pour mener à bien leur travail. Cela réduit la charge sur les réseaux et la duplication des binaires stockés.
-* **Traitement externalisé** : le traitement des ressources s’effectue en dehors de l’environnement AEM, d’où une économie des ressources (processeur et mémoire), afin de fournir des fonctionnalités de gestion des ressources numériques essentielles et de permettre aux utilisateurs finaux d’effectuer des tâches interactives sur le système.
+* **Accès** binaire direct : Les ressources sont transportées (et téléchargées) vers le magasin binaire Cloud une fois configurées pour Experience Manager  les , puis AEM, les microservices de ressources et enfin les clients ont un accès direct à ces ressources pour accomplir leur travail. Cela réduit la charge sur les réseaux et la duplication des binaires stockés.
+* **Traitement** externe : Le traitement des ressources s’effectue en dehors du  AEM  et enregistre ses ressources (processeur, mémoire) pour fournir des fonctionnalités clés de gestion des ressources numériques et prendre en charge le travail interactif avec le système pour les utilisateurs finaux.
 
 ## Transfert de ressources avec accès binaire direct {#asset-upload-with-direct-binary-access}
 
-Les clients Experience Manager, qui font partie de l’offre de produit, prennent tous en charge le chargement avec un accès binaire direct par défaut. Cela comprend notamment le chargement au moyen de l’interface web, d’Adobe Asset Link et de l’application de bureau AEM.
+Les clients Experience Manager, qui font partie de l’offre de produit, prennent tous en charge le téléchargement avec un accès binaire direct par défaut. Cela comprend notamment le chargement au moyen de l’interface web, d’Adobe Asset Link et de l’application de bureau AEM.
 
-Vous pouvez utiliser des outils de téléchargement personnalisés qui fonctionnent directement avec les API HTTP AEM. Vous pouvez soit utiliser directement ces API, soit utiliser et étendre les projets Open Source suivants qui implémentent le protocole de chargement :
+Vous pouvez utiliser des outils de téléchargement personnalisés qui fonctionnent directement avec les API HTTP AEM. Vous pouvez utiliser ces API directement ou utiliser et étendre les projets open source suivants qui implémentent le protocole de transfert :
 
 * [Bibliothèque de chargement Open Source](https://github.com/adobe/aem-upload)
-* [Outil de ligne de commande Open Source](https://github.com/adobe/aio-cli-plugin-aem)
+* [Outil de ligne de commande Open Source](https://github.com/adobe/aio-cli-plugin-aem)
 
-Pour plus d’informations, voir [Chargement de ressources](add-assets.md).
+For more information, see [upload assets](add-assets.md).
 
 ## Ajout d’une méthode de post-traitement des ressources personnalisée {#add-custom-asset-post-processing}
 
