@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 2097a49b20225dea01b1ef3b5d0dd79a62e04f68
+source-git-commit: 574b297cf3b9a416d2941c88f24494943b60499b
 
 ---
 
@@ -52,25 +52,6 @@ source-git-commit: 2097a49b20225dea01b1ef3b5d0dd79a62e04f68
    + [Métadonnées XMP](xmp-metadata.md)
    + [Fonctionnalités de MediaLibrary](medialibrary.md)
    + [Importation et exportation des métadonnées des ressources](metadata-import-export.md)
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt; HEAD=======================================
->>>>>>>>>>parent de 733b637... update toc========parent de 733b637... mettre à jour la table des matières
-
-
-
-
-
-> 
-+ Partage et distribution des ressources {#brandportal}
-   + [Configuration d’AEM Assets avec Brand Portal](configure-aem-assets-with-brand-portal.md)
-   + [Publication des ressources AEM vers le portail de marque](publish-to-brand-portal.md)
->>>>>>>parent de 733b637... update toc=========
->>>>>>> parent de da6a8ae... Configuration du portail de marque avec AEM Assets sur Cloud========parent de da6a8ae... Configuration du portail de marque avec AEM Assets sur Cloud
-
-
-
-
-
-
 + Fragments de contenu {#content-fragments}
    + [Utilisation de fragments de contenu](content-fragments/content-fragments.md)
    + [Gestion des fragments de contenu](content-fragments/content-fragments-managing.md)
