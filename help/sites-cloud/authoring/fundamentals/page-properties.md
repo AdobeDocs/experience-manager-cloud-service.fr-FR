@@ -2,7 +2,7 @@
 title: Modification des propriétés de page
 description: Définissez les propriétés requises pour une page
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -181,6 +181,8 @@ Affiche l’image de la miniature de la page. Vous pouvez :
 * **Configuration du ciblage**
 
    * Sélectionnez une [marque pour spécifier la portée du ciblage](/help/sites-cloud/authoring/personalization/targeted-content.md).
+   >[!NOTE]
+   >Cette option nécessite que le compte utilisateur soit dans le `Target Adminstrators`groupe.
 
 ### Autorisations {#permissions}
 
