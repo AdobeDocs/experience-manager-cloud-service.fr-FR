@@ -2,7 +2,7 @@
 title: Notes de mise à jour de la version 2020.3.0
 description: Notes de mise à jour de la version 2020.3.0
 translation-type: tm+mt
-source-git-commit: 55abc080701134c5067598dd39fe825048e077d4
+source-git-commit: 27225bf4b918f39892ac9ab6f46deb97479f08e8
 
 ---
 
@@ -11,11 +11,14 @@ source-git-commit: 55abc080701134c5067598dd39fe825048e077d4
 
 La section suivante décrit les Notes de mise à jour générales d’Experience Manager en tant que service Cloud 2020.3.0.
 
+
+## Date de publication {#release-date}
+
+La date de publication pour Experience Manager en tant que service Cloud 2020.3.0 est le 05 mars 2020.
+
 ## Cloud Manager {#cloud-manager}
 
-La date de publication de la version 2020.3.0 de Cloud Manager est le 05 mars 2020.
-
-Suivez cette section pour en savoir plus sur les nouveautés et les mises à jour de Cloud Manager version 2020.3.0.
+Suivez cette section pour en savoir plus sur les nouveautés et les mises à jour de Cloud Manager dans AEM as a Cloud Service Release 2020.3.0.
 
 ### Nouveautés {#what-is-new}
 
