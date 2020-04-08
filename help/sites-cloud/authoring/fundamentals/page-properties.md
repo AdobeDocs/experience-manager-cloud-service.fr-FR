@@ -2,7 +2,7 @@
 title: Modification des propriétés de page
 description: Définissez les propriétés requises pour une page
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
@@ -104,6 +104,7 @@ Les propriétés sont réparties sur plusieurs onglets.
    >Par exemple, si vous définissez l’alias `latin-lang` pour le nœud `/content/we-retail/spanish`, cette page est accessible via `/content/we-retail/latin-language`.
    >
    >Pour plus d’informations, voir Noms de page localisés sous Bonnes pratiques relatives à la gestion des URL et à l’optimisation du moteur de recherche.
+
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
@@ -170,13 +171,17 @@ Affiche l’image de la miniature de la page. Vous pouvez :
 
 * **Cloud Services**
 
-   * Définissez les propriétés des services cloud. <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).-->
+   * Définissez les propriétés des services cloud.
+   <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
+  -->
 
 ### Personnalisation   {#personalization}
 
 * **Configurations ContextHub**
 
-   * Sélectionnez la configuration ContextHub et le chemin d’accès aux segments. <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).-->
+   * Sélectionnez la configuration ContextHub et le chemin d’accès aux segments.
+   <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
+  -->
 
 * **Configuration du ciblage**
 
@@ -188,16 +193,24 @@ Affiche l’image de la miniature de la page. Vous pouvez :
 
 * **Autorisations**
 
-   * Ajouter des autorisations <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
-   * Modifier le groupe d’utilisateurs fermé <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
-   * Afficher les autorisations effectives <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
+   * Ajouter des autorisations
+   * Modifier le groupe d’utilisateurs fermé
+   * Afficher les autorisations effectives
+   <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
+
+   <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
+
+   <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
 
 ### Blueprint {#blueprint}
 
 * **Blueprint**
 
-   * Définissez les propriétés d’une page Blueprint dans le cadre de la gestion multi-site. <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+   * Définissez les propriétés d’une page Blueprint dans le cadre de la gestion multi-site.
+   <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+
    * Détermine les circonstances dans lesquelles les modifications seront diffusées à Live Copy.
+
 
 ### Live Copy   {#live-copy}
 
@@ -252,6 +265,7 @@ Dans la console **Sites**, vous pouvez sélectionner plusieurs pages, puis utili
 >La modification en masse des propriétés est également disponible pour les ressources. La procédure est très semblable. Seuls quelques points sont différents. Pour plus d’informations, voir Modification des propriétés de plusieurs ressources.
 >
 >Il existe également un éditeur en bloc qui vous permet de rechercher du contenu provenant de plusieurs pages à l’aide du langage GQL (Google Query Language), puis de le modifier directement avant d’enregistrer les modifications dans les pages d’origine.
+
 <!--
 >Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for details.
 >
@@ -299,6 +313,7 @@ Une fois le mode de modification en bloc activé, vous pouvez effectuer les opé
 >[!NOTE]
 >
 >Le composant de page peut être configuré pour spécifier les champs disponibles en vue de la modification en bloc. Reportez-vous à la section Configuration de votre page en vue de la modification en masse des propriétés.
+
 <!--
 >The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/help/sites-developing/bulk-editing.md).
 -->
