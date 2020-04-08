@@ -2,7 +2,7 @@
 title: Journalisation
 description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou apprenez à demander la journalisation des données.
 translation-type: tm+mt
-source-git-commit: 73813dd87e3eebfe26673640125ea64916e14789
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -122,13 +122,13 @@ Les autres paires suivent la configuration standard :
 
 Pour modifier les niveaux de journal des environnements Cloud, il est nécessaire de modifier la configuration d’enregistreur OSGI Sling, suivi d’un redéploiement complet. Comme il ne s’agit pas d’une opération instantanée, soyez prudent lorsque vous activez les journaux en détail sur les environnements de production qui reçoivent beaucoup de trafic. Dans le futur, il est possible que des mécanismes soient ajoutés pour pouvoir modifier plus rapidement le niveau du journal.
 
-> [!NOTE]
-> 
+>[!NOTE]
+>
 > Pour effectuer les modifications de configuration répertoriées ci-dessous, vous devez les créer sur un de développement local  puis les transmettre à AEM en tant qu’instance de service Cloud. Pour plus d’informations sur la procédure à suivre, voir [Déploiement sur AEM en tant que service](/help/implementing/deploying/overview.md)Cloud.
 
 ### Activation du niveau de journalisation DEBUG {#activating-the-debug-log-level}
 
-> [!WARNING]
+>[!WARNING]
 >
 > L&#39;activation globale du niveau du journal DEBUG génère une grande quantité d&#39;informations qui seront difficiles à analyser. Il est recommandé de ne l’activer que pour les services nécessitant un débogage. Pour plus d’informations, voir [Journaux et Ecrivains pour les services](logging.md#loggers-and-writers-for-individual-services)individuels.
 
