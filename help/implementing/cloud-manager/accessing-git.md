@@ -4,7 +4,7 @@ seo-title: Accès à Git
 description: Cette page vous explique comment accéder au référentiel Git et le gérer.
 seo-description: Consultez cette page pour découvrir comment accéder à votre référentiel Git et le gérer.
 translation-type: tm+mt
-source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -32,13 +32,14 @@ Utilisez le bouton **Gérer Git** disponible dans l’interface utilisateur de C
 
 ![](assets/manage-git3.png)
 
-Les points importants à prendre en compte pour gérer votre Git dans Cloud Manager sont les suivants :
+Les points importants à prendre en compte pour gérer votre Git dans Cloud Manager sont les suivants :
 
-* **URL**: URL du référentiel
-* **Nom d&#39;utilisateur**: Nom d’utilisateur
-* **Mot de passe**: Valeur affichée lorsque vous cliquez sur le bouton **Générer un mot de passe** .
+* **URL** : URL du référentiel
+* **Nom d’utilisateur** : nom d’utilisateur
+* **Mot de passe** : valeur affichée lorsque vous cliquez sur le bouton **Générer un mot de passe** .
 
 
-> [!NOTE]
-> Un utilisateur peut extraire une copie de son code et effectuer des modifications dans le référentiel de code local. Une fois prêt, l’utilisateur peut valider les modifications de code dans le référentiel de code distant dans Cloud Manager.
+>[!NOTE]
+>
+>Un utilisateur peut extraire une copie de son code et effectuer des modifications dans le référentiel de code local. Une fois prêt, l’utilisateur peut valider les modifications de code dans le référentiel de code distant dans Cloud Manager.
 
