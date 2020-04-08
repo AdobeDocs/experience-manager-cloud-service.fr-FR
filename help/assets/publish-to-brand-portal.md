@@ -3,7 +3,7 @@ title: Publication de fichiers, de dossiers et de collections sur Brand Portal
 description: Publiez des fichiers, des dossiers et des collections sur le portail de marque.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 4194f089f87deeb62095703614947a295235edbf
+source-git-commit: c2088896eacfc1f0e4c5b7a1f566ce3c8f99388b
 
 ---
 
@@ -23,7 +23,7 @@ Si vous apportez des modifications ultérieures à la ressource, au dossier ou �
 >[!NOTE]
 >
 >Adobe recommande la publication décalée, de préférence en dehors des heures de pointe, de sorte que l’auteur AEM n’utilise pas une quantité excessive de ressources.
->
+
 
 ## Publication de ressources sur Brand Portal {#publish-assets-to-bp}
 
@@ -132,7 +132,7 @@ Vous pouvez publier ou annuler la publication des dossiers de fichiers immédiat
 
 Vous pouvez supprimer tout dossier de ressources publié sur le portail de marque en l’annulant de l’instance AEM Assets. Une fois le dossier d’origine dépublié, sa copie n’est plus disponible pour les utilisateurs du portail de marque.
 
-Vous pouvez annuler immédiatement la publication des dossiers de fichiers depuis le portail de marque ou programmer une date et une heure ultérieures.
+Vous pouvez annuler immédiatement la publication des dossiers de fichiers de Brand Portal ou programmer une date et une heure ultérieures.
 
 Pour annuler la publication de dossiers de ressources sur Brand Portal :
 
