@@ -2,7 +2,7 @@
 title: Notes de mise à jour de la version 2020.4.0
 description: Notes de mise à jour de la version 2020.4.0
 translation-type: tm+mt
-source-git-commit: 77163877bea36f854ac8ea6fbc78cbcf4d58ccc0
+source-git-commit: c6c0e93d881762a2b501abb3d8c8356046a5f082
 
 ---
 
@@ -10,6 +10,10 @@ source-git-commit: 77163877bea36f854ac8ea6fbc78cbcf4d58ccc0
 # Notes de mise à jour d’AEM en tant que service Cloud 2020.4.0 {#release-notes}
 
 La section suivante décrit les Notes de mise à jour générales d’Experience Manager en tant que service Cloud 2020.4.0.
+
+## Date de publication {#release-date}
+
+La date de publication pour Experience Manager en tant que service Cloud 2020.4.0 est le 9 avril 2020.
 
 ## Ressources {#assets}
 
