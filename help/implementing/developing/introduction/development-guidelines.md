@@ -1,8 +1,8 @@
 ---
 title: Conseils de développement pour AEM as a Cloud Service
-description: 'À terminer '
+description: À terminer
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -91,9 +91,9 @@ Dans les environnements Cloud, les développeurs peuvent télécharger les journ
 
 Pour modifier les niveaux de journal des environnements Cloud, il est nécessaire de modifier la configuration d’enregistreur OSGI Sling, suivi d’un redéploiement complet. Comme il ne s’agit pas d’une opération instantanée, soyez prudent lorsque vous activez les journaux en détail sur les environnements de production qui reçoivent beaucoup de trafic. Dans le futur, il est possible que des mécanismes soient ajoutés pour pouvoir modifier plus rapidement le niveau du journal.
 
-> [!NOTE]
-> 
-> Pour effectuer les modifications de configuration répertoriées ci-dessous, vous devez les créer sur un de développement local  puis les transmettre à AEM en tant qu’instance de service Cloud. Pour plus d’informations sur la procédure à suivre, voir [Déploiement sur AEM en tant que service](/help/implementing/deploying/overview.md)Cloud.
+>[!NOTE]
+>
+>Pour effectuer les modifications de configuration répertoriées ci-dessous, vous devez les créer sur un de développement local  puis les transmettre à AEM en tant qu’instance de service Cloud. Pour plus d’informations sur la procédure à suivre, voir [Déploiement sur AEM en tant que service](/help/implementing/deploying/overview.md)Cloud.
 
 **Activation du niveau de journalisation DEBUG**
 
