@@ -1,8 +1,8 @@
 ---
 title: Recherche et indexation de contenu
-description: 'Recherche et indexation de contenu '
+description: Recherche et indexation de contenu
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -39,7 +39,7 @@ Vous trouverez ci-dessous un  des principales modifications par rapport à AEM 6
 
 <!-- ## Sizing Considerations {#sizing-considerations}
 
-AEM as a Cloud Service comes with a default capacity model to provide sufficient performance for average web applications. This "average" measure relates to the repository size and even more relevant to the indexing size. If we have reasons to believe that we need extended capacity for a specific customer project, an evaluation with SREs and Engineering will take place to determine the required capacity settings. 
+AEM as a Cloud Service comes with a default capacity model to provide sufficient performance for average web applications. This "average" measure relates to the repository size and even more relevant to the indexing size. If we have reasons to believe that we need extended capacity for a specific customer project, an evaluation with SREs and Engineering will take place to determine the required capacity settings.
 
 AS NOTE: the above is internal for now.
 
@@ -69,7 +69,7 @@ Le package de l’exemple ci-dessus est généré comme `com.adobe.granite:new-i
 
 ### Déploiement des définitions d’index {#deploying-index-definitions}
 
-> [!NOTE]
+>[!NOTE]
 >
 > Il existe un problème connu avec Jackrabbit Filevault Maven Package Plugin version **1.1.0** qui ne vous permet pas d&#39;ajouter `oak:index` aux modules de `<packageType>application</packageType>`. Pour contourner ce problème, utilisez la version **1.0.4**.
 
@@ -118,7 +118,8 @@ Avec des déploiements bleu-vert, il n&#39;y a pas de temps d&#39;arrêt. Toutef
 Le tableau suivant présente 5 définitions d’index : index `cqPageLucene` est utilisé dans les deux versions alors que index `damAssetLucene-custom-1` est utilisé uniquement dans la version 2.
 
 
-> [!NOTE]
+>[!NOTE]
+>
 > `<indexName>-custom-<customerVersionNumber>` est nécessaire pour qu’AEM en tant que service Cloud puisse marquer ceci comme un remplacement pour un index existant.
 
 | Index | Index prêt à l&#39;emploi | Utilisation dans la version 1 | Utilisation dans la version 2 |
