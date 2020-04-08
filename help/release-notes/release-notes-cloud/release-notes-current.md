@@ -1,38 +1,45 @@
 ---
-title: Notes de mise à jour de la version 2020.4.0
-description: Notes de mise à jour de la version 2020.4.0
+title: Notes de mise à jour d’Adobe Experience Manager en tant que service Cloud pour la version 2020.4.0
+description: Notes de mise à jour d’Experience Manager pour la version 2020.4.0
 translation-type: tm+mt
-source-git-commit: c6c0e93d881762a2b501abb3d8c8356046a5f082
+source-git-commit: b05fe7e9150649b49fc5dae2e33955afc6a1acab
 
 ---
 
 
-# Notes de mise à jour d’AEM en tant que service Cloud 2020.4.0 {#release-notes}
+# Release Notes for Adobe Experience Manager as a Cloud Service 2020.4.0 {#release-notes}
 
-La section suivante décrit les Notes de mise à jour générales d’Experience Manager en tant que service Cloud 2020.4.0.
+La section suivante décrit les notes de mise à jour générales de [!DNL Experience Manager] as a Cloud Service 2020.4.0.
 
 ## Date de publication {#release-date}
 
-La date de publication pour Experience Manager en tant que service Cloud 2020.4.0 est le 9 avril 2020.
+La date de publication de [!DNL Experience Manager] as a Cloud Service 2020.4.0 est le 9 avril 2020.
 
-## Ressources {#assets}
+## What&#39;s New in Assets {#assets}
 
-Suivez cette section pour en savoir plus sur les nouveautés et les mises à jour des ressources Experience Manager et des médias dynamiques dans AEM as a Cloud Service Release 2020.4.0.
+Découvrez les nouvelles fonctionnalités, les améliorations et les correctifs pour [!DNL Experience Manager Assets] et [!DNL Dynamic Media] dans la version actuelle.
 
-### Nouveautés {#assets-what-is-new}
+* [Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) prend en charge les cas d’utilisation de la distribution des ressources pour les ressources Experience Manager. [!DNL Brand Portal] aide les organisationsentreprises à répondre à leurs besoins marketing en distribuant en toute sécurité des ressources de marque et de produit approuvées à des agences extérieures, partenaires, équipes internes et revendeurs en vue de leur téléchargement.
+   * [!DNL Brand Portal] est effectuée via [!DNL Adobe I/O] la console.
+   * L’approvisionnement en ressources dans [!DNL Brand Portal] n’est pas encore pris en charge avec [!DNLEExperience Manager] en tant que service Cloud.
 
-* [Le portail](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) de marque est disponible pour AEM en tant que ressources de service Cloud, ce qui prend en charge les cas d’utilisation de la distribution des ressources. Brand Portal aide les entreprises à répondre à leurs besoins marketing en distribuant, en toute sécurité, des ressources de marque et de produit approuvées à des agences extérieures, partenaires, équipes internes et revendeurs en vue de leur téléchargement.
-   * La configuration du portail de marque s’effectue via la console d’E/S Adobe.
-   * La source de ressources dans Brand Portal n’est pas encore prise en charge avec AEM en tant que service Cloud.
-* La nouvelle version d’ [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) 2.0 est prise en charge avec AEM en tant que service Cloud. Adobe Asset Link simplifie la collaboration entre les créatifs et les marketeurs dans le processus de création de contenu en connectant AEM Assets aux applications de bureau Creative Cloud Photoshop, Illustrator et InDesign via le panneau de lien d’actif intégré.
-   * AEM en tant que service Cloud est préconfiguré pour Adobe Asset Link, ce qui entraîne une configuration [](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)simplifiée.
-   * Asset Link prend désormais en charge un sélecteur [de](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink)AEM, ce qui permet aux utilisateurs créatifs de se connecter plus facilement à différents environnements AEM (par exemple, dans le cas des concepteurs d’agences travaillant avec plusieurs clients avec des actifs AEM).
-* Les  de automatique pour les tâches [de](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) post-traitement peuvent être configurées dans l’interface utilisateur Propriétés du dossier pour des hiérarchies de dossiers spécifiques.
-   * L’interface utilisateur des propriétés du dossier a été simplifiée, grâce au nouvel onglet Traitement des ressources qui contient le de métadonnées, le de traitement et la nouvelle configuration de flux de travail de l’ detraitement automatique.
-* La boîte de dialogue de retraitement des ressources permet de sélectionner un de traitement spécifique et de décider de le retraiter dans des sous-dossiers.
-* Contenu multimédia dynamique : Ajout d’une configuration de publication sélective, ce qui signifie que les ressources sont publiées automatiquement pour les  sécurisées uniquement et peuvent être publiées explicitement dans AEM sans publication dans DMS7 pour les  de dans le domaine public.
+* [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) v2.0 fonctionne avec [!DNL Experience Manager] comme un service Cloud. [!DNL Adobe Asset Link] simplifie la collaboration entre les créatifs et les marketeurs dans le processus de création de contenu en établissant une connexion [!DNL Experience Manager Assets] avec les applications de [!DNL Creative Cloud] bureau [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]et [!DNL Adobe InDesign] via le [!DNL Asset Link] panneau intégré à l’application.
+   * [!DNL Experience Manager] est préconfigurée pour [!DNL Adobe Asset Link], ce qui permet une configuration [](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html) facile et un déploiement plus rapide pour les professionnels de la création.
+   * [!DNL Asset Link] prend désormais en charge un sélecteur [de  de](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) Experience Manager qui permet aux utilisateurs créatifs de se connecter facilement à un autre [!DNL Experience Manager] de. Cette fonctionnalité est utile, par exemple, pour les concepteurs d’agences qui travaillent avec plusieurs clients utilisant différents [!DNL Experience Manager Assets] déploiements.
 
-### Correctifs  {#assets-bug-fixes}
+* Les utilisateurs peuvent configurer le post-traitement [en  de automatique dans l’interface utilisateur des](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) propriétés  du dossier pour les hiérarchies de dossiers spécifiques.
+   * L’interface utilisateur des [!UICONTROL propriétés] du dossier est simplifiée, grâce au nouvel onglet Traitement [!UICONTROL des] ressources qui contient les  de métadonnées, les  de traitement et la nouvelle configuration de flux de travail de l’ de traitement et de l’automatique desressources.
+   * La boîte de dialogue de retraitement des ressources permet de sélectionner un de traitement spécifique et de décider de le retraiter dans des sous-dossiers.
+   * [!DNL Dynamic Media]: Ajout d’une configuration de publication sélective afin que les ressources soient publiées automatiquement pour les  sécurisés uniquement. En outre, les ressources peuvent être publiées explicitement dans Experience Manager sans être publiées dans DMS7 pour des  de dans le domaine public.
 
-* Correctifs dans le traitement des ressources
-* Correctifs dans la configuration de Contenu multimédia dynamique et publication de fichiers vers le service  de Contenu multimédia dynamique
+* Les questions suivantes ont été abordées :
+   * Correctifs des problèmes de traitement des ressources.
+   * Correctifs dans [!DNL Dynamic Media] la configuration et la publication des ressources vers le service de  [!DNL Dynamic Media] .
+
+>[!MORELIKETHIS]
+>
+>* [A propos d’Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [Configuration du portail des marques](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
+>* [Configuration d’Experience Manager pour une utilisation avec Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
+>* [Création d’un flux de travail dans Experience Manager à l’aide de microservices de ressources](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+
