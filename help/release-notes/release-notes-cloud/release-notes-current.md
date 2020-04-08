@@ -2,7 +2,7 @@
 title: Notes de mise à jour d’Adobe Experience Manager en tant que service Cloud pour la version 2020.4.0
 description: Notes de mise à jour d’Experience Manager pour la version 2020.4.0
 translation-type: tm+mt
-source-git-commit: b05fe7e9150649b49fc5dae2e33955afc6a1acab
+source-git-commit: 57df03fe198564a6c02e54e19ef059e46064d163
 
 ---
 
@@ -32,7 +32,7 @@ Découvrez les nouvelles fonctionnalités, les améliorations et les correctifs 
    * La boîte de dialogue de retraitement des ressources permet de sélectionner un de traitement spécifique et de décider de le retraiter dans des sous-dossiers.
    * [!DNL Dynamic Media]: Ajout d’une configuration de publication sélective afin que les ressources soient publiées automatiquement pour les  sécurisés uniquement. En outre, les ressources peuvent être publiées explicitement dans Experience Manager sans être publiées dans DMS7 pour des  de dans le domaine public.
 
-* Les questions suivantes ont été abordées :
+* Les questions suivantes sont abordées :
    * Correctifs des problèmes de traitement des ressources.
    * Correctifs dans [!DNL Dynamic Media] la configuration et la publication des ressources vers le service de  [!DNL Dynamic Media] .
 
