@@ -2,7 +2,7 @@
 title: Rechercher
 description: Retrouvez votre contenu plus rapidement grâce à de puissantes options de recherche
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
 
@@ -19,13 +19,13 @@ La recherche est disponible dans la barre d’outils supérieure :
 
 Avec le rail de recherche, vous pouvez accomplir ce qui suit :
 
-* Recherchez un mot-clé, un chemin ou une balise
-* Filtrez selon des critères spécifiques aux ressources, dates de modification, état de la page, taille du fichier, etc.
-* Définissez et utilisez une [recherche enregistrée](#saved-searches) sur la base des critères ci-dessus
+* Rechercher un mot-clé, un chemin ou une balise
+* Filtrer selon des critères spécifiques aux ressources, dates de modification, état de la page, taille du fichier, etc.
+* Définir et utiliser une [recherche enregistrée](#saved-searches) sur la base des critères ci-dessus
 
 >[!NOTE]
 >
->Search can also be invoked by using the hotkey `/` (forward slash) whenever the search rail is visible.
+>Vous pouvez également accéder à la fonction de recherche en appuyant sur la touche `/` (barre oblique) lorsque le rail de recherche est visible.
 
 ## Rechercher et filtrer {#search-and-filter}
 
@@ -50,14 +50,14 @@ Pour rechercher et filtrer vos ressources :
 
    ![Bouton Rail](/help/sites-cloud/authoring/assets/rail-button.png)
 
-   En fonction du type de ressource, la recherche affichera une sélection prédéfinie de critères de recherche/filtre.
+   Selon le type de ressource, la fonction de recherche présente une sélection prédéfinie de critères de recherche et de filtrage.
 
    Dans le panneau latéral, vous pouvez sélectionner :
 
    * Recherches enregistrées
    * Répertoire de recherche
    * Balises
-   * Critères de recherche, par exemple Dates modifiées, État de publication, État de LiveCopy
+   * Critères de recherche, par exemple, les dates de modification, l’état de publication, l’état LiveCopy
    >[!NOTE]
    >
    >Les critères de recherche peuvent varier :
@@ -65,15 +65,16 @@ Pour rechercher et filtrer vos ressources :
    >* Selon le type de ressource sélectionné, les critères Assets et Communities sont spécialisés, ce qui est logique.
    >* Votre instance comme les formulaires de recherche peuvent être personnalisés (approprié selon l’emplacement dans AEM).
 
+
 <!--
   >* Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).
   -->
 
-![Panneau latéral Recherche](/help/sites-cloud/authoring/assets/search-side-panel.png)
+![Panneau latéral de recherche](/help/sites-cloud/authoring/assets/search-side-panel.png)
 
-1. Vous pouvez également ajouter des termes de recherche supplémentaires.
+1. Vous pouvez également ajouter des termes de recherche.
 
-1. Fermez la fonction de **recherche** en cliquant sur la **croix** (en haut à droite).
+1. Fermez **Rechercher** à l’aide du **X** (en haut à droite).
 
 >[!NOTE]
 >
@@ -81,7 +82,7 @@ Pour rechercher et filtrer vos ressources :
 >
 >Lorsque vous sélectionnez un élément sur la page de résultats de recherche et lorsque vous revenez à la page de recherche après avoir utilisé le bouton Précédent du navigateur, les critères de recherche restent inchangés.
 
-## Saved Searches {#saved-searches}
+## Recherches enregistrées {#saved-searches}
 
 Outre la recherche selon diverses facettes, vous pouvez également enregistrer une configuration de recherche particulière pour la récupérer et la réutiliser ultérieurement :
 
@@ -102,6 +103,6 @@ Outre la recherche selon diverses facettes, vous pouvez également enregistrer u
    * Cliquer sur la **croix** (à côté du nom de la recherche enregistrée) pour lancer une nouvelle requête (la recherche enregistrée elle-même ne sera pas supprimée).
    * **Modifier la recherche enregistrée**, modifier les critères de recherche, puis **enregistrer** la recherche une nouvelle fois.
 
-Vous pouvez modifier une recherche enregistrée en la sélectionnant, puis en cliquant sur **Modifier la recherche** en bas du panneau de recherche.
+Les recherches enregistrées peuvent être modifiées en sélectionnant la recherche enregistrée et en cliquant sur **Modifier la recherche enregistrée** au bas du panneau de recherche.
 
 ![Modification d’une recherche enregistrée](/help/sites-cloud/authoring/assets/saved-searches-modify.png)
