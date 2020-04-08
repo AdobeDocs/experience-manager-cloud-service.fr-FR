@@ -2,7 +2,7 @@
 title: Ajout de vos ressources numériques à Adobe Experience Manager
 description: Ajout de vos ressources numériques à Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -19,7 +19,7 @@ Experience Manager vous permet de charger et de gérer n’importe quel fichier 
 
 Vous pouvez également choisir d’effectuer un traitement supplémentaire sur les fichiers chargés. Plusieurs profils de traitement de ressources peuvent être configurés sur le dossier dans lequel les ressources sont chargées, afin d’ajouter des services de traitement des images, des rendus ou des métadonnées spécifiques. Pour plus d’informations, voir [Traitement supplémentaire](#additional-processing) ci-dessous.
 
-> [!NOTE]
+>[!NOTE]
 >
 > Avec Experience Manager as a Cloud Service, vous disposez d’une nouvelle méthode de chargement de ressources appelée chargement binaire direct. Cette méthode est prise en charge par défaut par les clients et fonctionnalités standard du produit, comme l’interface utilisateur d’AEM, Adobe Asset Link et l’application de bureau AEM. Elle est donc transparente pour les utilisateurs finaux.
 >
@@ -75,7 +75,7 @@ Pour charger un ou plusieurs fichiers, vous pouvez les sélectionner sur votre b
 
 De plus, l’interface utilisateur d’Assets affiche la ressource la plus récente que vous avez chargée ou le dossier que vous avez créé en premier.
 
-> [!NOTE]
+>[!NOTE]
 >
 > Pour télécharger des hiérarchies de dossiers imbriqués vers AEM, reportez-vous à la page Téléchargement [en masse de ressources](#bulk-upload).
 
@@ -130,7 +130,7 @@ Pour charger un plus grand nombre de fichiers, en particulier s’ils existent d
 * Utilisez un script ou un outil de chargement personnalisé qui exploite des [API de chargement de ressources](developer-reference-material-apis.md#asset-upload-technical). Un tel outil personnalisé peut donner lieu à un traitement supplémentaire des ressources (comme la traduction des métadonnées ou l’affectation de nouveaux noms aux fichiers).
 * Utilisez l’[application de bureau Experience Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/using.html) pour charger des hiérarchies de dossiers imbriqués.
 
-> [!NOTE]
+>[!NOTE]
 >
 > Pour effectuer un téléchargement massif dans le cadre de la migration de contenu à partir d’autres systèmes lors de la configuration et du déploiement vers Experience Manager, la planification et le choix des outils doivent faire l’objet d’une attention particulière. Consultez le [guide de déploiement](/help/implementing/deploying/overview.md) pour en savoir plus sur les méthodes de migration de contenu.
 
@@ -157,7 +157,7 @@ De plus, si Dynamic Media est activé dans votre environnement :
 * Les [profils d’image](dynamic-media/image-profiles.md) vous permettent d’appliquer un recadrage spécifique (**[!UICONTROL Recadrage intelligent]** et recadrage de pixels) et une configuration d’accentuation aux fichiers chargés.
 * Les [profils vidéo](dynamic-media/video-profiles.md) vous permettent d’appliquer des profils de codage vidéo spécifiques (résolution, format, paramètres).
 
-> [!NOTE]
+>[!NOTE]
 >
 > Le recadrage Dynamic Media et les autres opérations effectuées sur les ressources ne sont pas destructifs. En d’autres termes, ce type d’opération ne modifie pas l’élément original chargé, mais fournit des paramètres de recadrage ou de transformation des médias à effectuer lors de la diffusion des ressources.
 
