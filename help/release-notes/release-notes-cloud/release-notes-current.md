@@ -2,7 +2,7 @@
 title: Notes de mise à jour d’Adobe Experience Manager en tant que service Cloud pour la version 2020.4.0
 description: Notes de mise à jour d’Experience Manager pour la version 2020.4.0
 translation-type: tm+mt
-source-git-commit: 49137535f4f6a6b62e697de6a7a9934f5b861bbc
+source-git-commit: 2258cc72d10fa85d89832b63016ccb393f453bff
 
 ---
 
@@ -21,7 +21,7 @@ Découvrez les nouvelles fonctionnalités, les améliorations et les correctifs 
 
 * [Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) prend en charge les cas d’utilisation de la distribution des ressources pour les ressources Experience Manager. [!DNL Brand Portal] aide les organisationsentreprises à répondre à leurs besoins marketing en distribuant en toute sécurité des ressources de marque et de produit approuvées à des agences extérieures, partenaires, équipes internes et revendeurs en vue de leur téléchargement.
    * [!DNL Brand Portal] est effectuée via [!DNL Adobe I/O] la console.
-   * L’approvisionnement en ressources dans [!DNL Brand Portal] n’est pas encore pris en charge avec [!DNLEExperience Manager] en tant que service Cloud.
+   * L’approvisionnement en ressources dans [!DNL Brand Portal] n’est pas encore pris en charge [!DNL Experience Manager] en tant que service Cloud.
 
 * [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) v2.0 fonctionne avec [!DNL Experience Manager] comme un service Cloud. [!DNL Adobe Asset Link] simplifie la collaboration entre les créatifs et les marketeurs dans le processus de création de contenu en établissant une connexion [!DNL Experience Manager Assets] avec les applications de [!DNL Creative Cloud] bureau [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]et [!DNL Adobe InDesign] via le [!DNL Asset Link] panneau intégré à l’application.
    * [!DNL Experience Manager] est préconfigurée pour [!DNL Adobe Asset Link], ce qui permet une configuration [](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html) facile et un déploiement plus rapide pour les professionnels de la création.
