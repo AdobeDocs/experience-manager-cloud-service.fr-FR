@@ -2,7 +2,7 @@
 title: Notes de mise à jour d’Adobe Experience Manager en tant que service Cloud pour la version 2020.4.0
 description: Notes de mise à jour d’Experience Manager pour la version 2020.4.0
 translation-type: tm+mt
-source-git-commit: 57df03fe198564a6c02e54e19ef059e46064d163
+source-git-commit: 031e2de3b3e1d7a5d57dbdaf16a96800927e98f2
 
 ---
 
@@ -43,3 +43,25 @@ Découvrez les nouvelles fonctionnalités, les améliorations et les correctifs 
 >* [Configuration d’Experience Manager pour une utilisation avec Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
 >* [Création d’un flux de travail dans Experience Manager à l’aide de microservices de ressources](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
+
+## Mises à jour de Cloud Manager {#cloud-manager}
+
+## Nouveautés de Cloud Manager {#whats-new-cloud-manager}
+
+* Les URL de l’éditeur sont désormais disponibles à partir de la page  du  dans l’interface utilisateur de Cloud Manager.
+* Modifications de la navigation pour permettre à l’utilisateur de modifier, de changer ou d’ajouter un  à partir de la page d’aperçu de Cloud Manager.
+* Modifications permettant à l’utilisateur de modifier des  à partir de la carte  sur la  de Cloud Manager.
+* Nouvel état du pipeline **Pipeline En cours d’exécution** s’affichait par rapport au  auquel il est associé.
+* Améliorations de la lisibilité de la page d&#39;exécution du pipeline. Ceci inclut l&#39;affichage du nom et du type du pipeline (non-production du pipeline uniquement) et un badge pour indiquer si l&#39;état du pipeline est En cours/Annulé/Échec.
+* Cette section contient des info-bulles destinées à améliorer l’expérience utilisateur et la compréhension de la raison pour laquelle Ajouter bouton / de/ est désactivé.
+* Les  de ayant échoué peuvent désormais être supprimés via l’interface utilisateur et l’API.
+* Le processus utilisé pour générer les mots de passe Git a été rendu plus résistant aux problèmes de la couche de service sous-jacente.
+
+## Correctifs {#bug-fixes-cloud-manager}
+
+* Les liens vers l’étape  le  sur la page des détails de l’exécution du pipeline ne se rendaient pas toujours à l’emplacement correct.
+* Les étapes individuelles du processus de création de  de  expireraient plus tôt que nécessaire, provoquant l’échec du processus.
+* La configuration Maven utilisée dans le de génération a été mise à jour afin d’éviter les blocages lors du téléchargement des métadonnées d’artefact.
+* Dans certains cas, l’étape de création d’image ne parvient pas à télécharger les packs clients.
+* Certaines conditions peu fréquentes empêcheraient   d’être supprimées.
+* Les notifications Experience Cloud n’ont pas été reçues de manière cohérente.
