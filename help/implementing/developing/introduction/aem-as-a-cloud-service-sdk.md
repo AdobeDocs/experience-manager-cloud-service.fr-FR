@@ -2,7 +2,7 @@
 title: SDK AEM as a Cloud Service
 description: À terminer
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: f15d5087a1bcb7691e159db1a595f6cc20f2b2c6
 
 ---
 
@@ -56,7 +56,7 @@ En outre, certains clients qui ont déjà été déployés avec AEM 6.5 ou des 
 </repository>
 ```
 
-## Actualisation d’un projet local avec une nouvelle version du SDK {#refreshing-a-local-prokect-with-a-new-skd-version}
+## Actualisation d’un projet local avec une nouvelle version du SDK {#refreshing-a-local-project-with-a-new-skd-version}
 
 Quand est-il recommandé d’actualiser le projet local avec un nouveau SDK ?
 
@@ -92,5 +92,5 @@ Pour pouvoir réutiliser des modules de contenu contenant les valeurs chiffrées
 
 * Lorsque vous démarrez le fichier quickstart.jar local, veillez à ajouter le paramètre ci-dessous : « `-Dcom.adobe.granite.crypto.file.disable=true` ». Il est recommandé de toujours l’ajouter, bien qu’il soit facultatif.
 * La toute première fois que vous démarrez une instance, créez un module contenant un filtre pour la racine « `/etc/key` ». Le secret sera alors réutilisé dans tous les environnements pour lesquels vous souhaitez qu’il le soit.
-* Exportez tout contenu modifiable contenant des secrets, ou recherchez les valeurs chiffrées via `/crx/de` pour les ajouter au module qui sera réutilisé dans toutes les installations.
+* Export any mutable content containing secrets, or look up the encrypted values via `/crx/de` to add it to the package that will be reused across installations
 * Chaque fois que vous créez une instance (pour remplacer une instance par une nouvelle version ou parce que plusieurs environnements de développement doivent partager les informations d’identification pour les tests), installez le module généré aux étapes 2 et 3 afin de pouvoir réutiliser le contenu sans avoir à reconfigurer manuellement. C’est parce que la clé de chiffrement est maintenant synchronisée.
