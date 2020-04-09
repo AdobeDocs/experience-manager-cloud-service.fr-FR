@@ -3,7 +3,7 @@ title: Configuration du service cloud AEM Assets avec Brand Portal
 description: Configurez le service cloud AEM Assets avec Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 8dc3270b355e9e855179f6b41602a3c28202a5b7
+source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
 
 ---
 
@@ -204,8 +204,6 @@ Effectuez les étapes suivantes pour créer la configuration du service cloud de
    Un agent de distribution contient deux files d&#39;attente :
    * File d’attente de traitement pour la distribution des ressources vers le portail de marque.
    * File d’attente d’erreurs pour les ressources dont la distribution a échoué.
-   Vous pouvez tester des files d’attente individuelles ou la configuration globale.
-
    ![](assets/test-bpconfig3.png)
 
 1. Pour vérifier la connexion entre AEM Assets et Brand Portal, cliquez sur **[!UICONTROL Tester la connexion]**.
@@ -218,11 +216,20 @@ Effectuez les étapes suivantes pour créer la configuration du service cloud de
    >
    >Evitez de désactiver l’agent de distribution, car cela peut entraîner l’échec de la distribution des ressources (en cours d’exécution).
 
-Le portail de marque est correctement configuré avec votre instance cloud AEM Assets. Vous pouvez maintenant :
+
+Une fois que le portail de marque a été correctement configuré avec votre instance cloud AEM Assets, vous pouvez :
 
 * [Publication de fichiers depuis AEM Assets vers Brand Portal](publish-to-brand-portal.md)
 * [Publication de dossiers depuis AEM Assets vers Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Publication de collections depuis AEM Assets vers Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+
+Outre ce qui précède, vous pouvez également publier des  de métadonnées, des paramètres d’image prédéfinis, des facettes de recherche et des balises d’AEM Assets sur le portail de marque.
+
+* [Publication de paramètres prédéfinis, de  et de facettes sur Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publication de balises sur Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+
+
+See, [Brand Portal documentation](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) for more information.
 
 
 ## Journaux de distribution {#distribution-logs}
@@ -233,7 +240,7 @@ Par exemple, nous avons publié un fichier d’AEM Assets sur Brand Portal pour 
 
 1. Suivez les étapes (Étape 1 à 4) comme indiqué dans **[!UICONTROL Test Connection]** et accédez à la page de l&#39;agent de distribution.
 
-1. Sélectionnez la file d&#39;attente de distribution **[!UICONTROL queue-bpdistributionagent0]** et cliquez sur **[!UICONTROL Journaux]** pour les journaux de distribution.
+1. Cliquez sur **[!UICONTROL Journaux]** pour les journaux de distribution. Vous pouvez consulter les journaux de traitement et d’erreur ici.
 
    ![](assets/test-bpconfig5.png)
 
@@ -254,12 +261,9 @@ Lors de la publication du fichier, les journaux de requête et de réponse suiva
 
 Dans l’exemple ci-dessus, une requête et une réponse supplémentaires sont déclenchées. Le système n’a pas pu trouver le dossier parent (alias chemin d’accès Ajouter) dans le portail de marque, car la ressource a été publiée pour la première fois. Par conséquent, déclenche une demande supplémentaire pour créer un dossier parent portant le même nom dans le portail de marque où la ressource est publiée.
 
-Si le dossier parent du même nom existe (alias. Chemin d’accès Ajouter) dans Brand Portal, une requête supplémentaire n’est pas déclenchée.
-
 >[!NOTE]
+>>Une requête supplémentaire est générée au cas où le dossier parent n’existerait pas dans Brand Portal (dans l’exemple ci-dessus) ou si le dossier parent avait été modifié dans AEM Assets.
 >
->Pour  les journaux d’erreurs, sélectionnez la file d’attente de distribution **[!UICONTROL error-queue-bpdistributionagent0]** et cliquez sur **[!UICONTROL Journaux]**.
-
 
 ## Informations complémentaires {#additional-information}
 
@@ -274,6 +278,7 @@ Accédez à `/system/console/slingmetrics` la section pour obtenir des statistiq
    * sling: `mac_sync_distribution_duration`
    * sling: `mac_sync_enqueue_package_duration`
    * sling: `mac_sync_setup_request_duration`
+
 
 
 <!--
