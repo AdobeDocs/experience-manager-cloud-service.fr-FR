@@ -3,7 +3,7 @@ title: Publication de fichiers, de dossiers et de collections sur Brand Portal
 description: Publiez des fichiers, des dossiers et des collections sur le portail de marque.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: c2088896eacfc1f0e4c5b7a1f566ce3c8f99388b
+source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
 
 ---
 
@@ -132,7 +132,7 @@ Vous pouvez publier ou annuler la publication des dossiers de fichiers immédiat
 
 Vous pouvez supprimer tout dossier de ressources publié sur le portail de marque en l’annulant de l’instance AEM Assets. Une fois le dossier d’origine dépublié, sa copie n’est plus disponible pour les utilisateurs du portail de marque.
 
-Vous pouvez annuler immédiatement la publication des dossiers de fichiers de Brand Portal ou programmer une date et une heure ultérieures.
+Vous pouvez annuler immédiatement la publication des dossiers de fichiers depuis le portail de marque ou programmer une date et une heure ultérieures.
 
 Pour annuler la publication de dossiers de ressources sur Brand Portal :
 
@@ -221,8 +221,13 @@ Vous trouverez ci-dessous les étapes pour annuler la publication d’une collec
 1. In the dialog, click **[!UICONTROL Unpublish]**.
 1. Fermez le message de confirmation. La collection est supprimée de l’interface de Brand Portal.
 
-Voir la documentation [du portail](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) de marque pour plus d’informations sur la distribution de fichiers, de dossiers et de collections aux utilisateurs finaux.
+Outre ce qui précède, vous pouvez également publier des  de métadonnées, des paramètres d’image prédéfinis, des facettes de recherche et des balises d’AEM Assets sur le portail de marque.
 
+* [Publication de paramètres prédéfinis, de  et de facettes sur Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publication de balises sur Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+
+
+See, [Brand Portal documentation](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) for more information.
 
 
 <!--
