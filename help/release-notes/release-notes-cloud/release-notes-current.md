@@ -2,7 +2,7 @@
 title: Notes de mise à jour d’Adobe Experience Manager en tant que service Cloud pour la version 2020.4.0
 description: Notes de mise à jour d’Experience Manager pour la version 2020.4.0
 translation-type: tm+mt
-source-git-commit: 031e2de3b3e1d7a5d57dbdaf16a96800927e98f2
+source-git-commit: 85079ad7ef660a3282540e2cad744fc6d65ad512
 
 ---
 
@@ -44,8 +44,6 @@ Découvrez les nouvelles fonctionnalités, les améliorations et les correctifs 
 >* [Création d’un flux de travail dans Experience Manager à l’aide de microservices de ressources](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
-## Mises à jour de Cloud Manager {#cloud-manager}
-
 ## Nouveautés de Cloud Manager {#whats-new-cloud-manager}
 
 * Les URL de l’éditeur sont désormais disponibles à partir de la page  du  dans l’interface utilisateur de Cloud Manager.
@@ -57,7 +55,7 @@ Découvrez les nouvelles fonctionnalités, les améliorations et les correctifs 
 * Les  de ayant échoué peuvent désormais être supprimés via l’interface utilisateur et l’API.
 * Le processus utilisé pour générer les mots de passe Git a été rendu plus résistant aux problèmes de la couche de service sous-jacente.
 
-## Correctifs {#bug-fixes-cloud-manager}
+### Correctifs {#bug-fixes-cloud-manager}
 
 * Les liens vers l’étape  le  sur la page des détails de l’exécution du pipeline ne se rendaient pas toujours à l’emplacement correct.
 * Les étapes individuelles du processus de création de  de  expireraient plus tôt que nécessaire, provoquant l’échec du processus.
