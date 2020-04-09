@@ -3,7 +3,7 @@ title: Configuration du service cloud AEM Assets avec Brand Portal
 description: Configurez le service cloud AEM Assets avec Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
+source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
 
 ---
 
@@ -163,7 +163,7 @@ Effectuez les étapes suivantes pour créer la configuration du service cloud de
 
 1. Connexion à votre instance cloud AEM Assets
 
-1. Dans le panneau **Outils** ![Outils](assets/tools.png) , accédez à Services **[!UICONTROL Cloud > Portail]** de marque AEM.
+1. Dans le panneau **Outils** ![Outils](assets/tools.png) , accédez à Services **** Cloud > Portail de marque **[!UICONTROL AEM.]**
 
    La page Configurations du portail de marque s’ouvre.
 
@@ -217,7 +217,7 @@ Effectuez les étapes suivantes pour créer la configuration du service cloud de
    >Evitez de désactiver l’agent de distribution, car cela peut entraîner l’échec de la distribution des ressources (en cours d’exécution).
 
 
-Une fois que le portail de marque a été correctement configuré avec votre instance cloud AEM Assets, vous pouvez :
+Votre instance cloud AEM Assets a été correctement configurée avec le portail de marque. Vous pouvez maintenant :
 
 * [Publication de fichiers depuis AEM Assets vers Brand Portal](publish-to-brand-portal.md)
 * [Publication de dossiers depuis AEM Assets vers Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
@@ -262,8 +262,9 @@ Lors de la publication du fichier, les journaux de requête et de réponse suiva
 Dans l’exemple ci-dessus, une requête et une réponse supplémentaires sont déclenchées. Le système n’a pas pu trouver le dossier parent (alias chemin d’accès Ajouter) dans le portail de marque, car la ressource a été publiée pour la première fois. Par conséquent, déclenche une demande supplémentaire pour créer un dossier parent portant le même nom dans le portail de marque où la ressource est publiée.
 
 >[!NOTE]
->>Une requête supplémentaire est générée au cas où le dossier parent n’existerait pas dans Brand Portal (dans l’exemple ci-dessus) ou si le dossier parent avait été modifié dans AEM Assets.
 >
+>Une requête supplémentaire est générée au cas où le dossier parent n’existerait pas dans le portail de marque (dans l’exemple ci-dessus) ou si le dossier parent avait été modifié dans les ressources AEM.
+
 
 ## Informations complémentaires {#additional-information}
 
