@@ -2,7 +2,7 @@
 title: Journalisation
 description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou apprenez à demander la journalisation des données.
 translation-type: tm+mt
-source-git-commit: 1b10561af9349059aaee97e4f42d2e339f629700
+source-git-commit: 95511543b3393d422e2cfa23f9af246365d3a993
 
 ---
 
@@ -13,7 +13,7 @@ AEM en tant que service Cloud  vous  la possibilité de configurer :
 
 * les paramètres généraux du service de journalisation central ;
 * la journalisation des données de requête (une configuration de journalisation spécialisée pour les informations de requête) :
-* des paramètres spécifiques pour les services individuels (par exemple, un fichier journal individuel et un format pour les messages de journaux).
+* paramètres spécifiques pour les services individuels
 
 For local development, logs entries are written to local files in the `/crx-quickstart/logs` folder.
 
@@ -55,23 +55,27 @@ Ces éléments sont liés par les paramètres suivants pour les éléments appro
 
    Définissez le ou les services qui génèrent les messages.
 
-* **Fichier journal (Journalisation)**
+<!-- * **Log File (Logging Logger)**
 
-   Définissez le fichier physique pour le stockage des messages du journal.
+  Define the physical file for storing the log messages.
 
-   Ceci est utilisé pour lier un enregistreur de journalisation à un rédacteur de journalisation. La valeur doit être identique au même paramètre de la configuration du rédacteur de journalisation pour que la connexion s’effectue.
+  This is used to link a Logging Logger with a Logging Writer. The value must be identical to the same parameter in the Logging Writer configuration for the connection to be made.
 
-* **Fichier journal (enregistreur de journal)**
+* **Log File (Logging Writer)**
 
-   Définissez le fichier physique dans lequel les messages du journal seront écrits.
+  Define the physical file that the log messages will be written to.
 
-   La valeur doit être identique au même paramètre de la configuration du rédacteur de journalisation, sinon la correspondance ne s’effectue pas. En l’absence de correspondance, un rédacteur implicite est créé avec la configuration par défaut (rotation quotidienne du journal).
+  This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
+-->
 
 ### Enregistreurs et rédacteurs standard {#standard-loggers-and-writers}
 
+> [!IMPORTANT]
+> Ceux-ci peuvent être personnalisés si nécessaire, bien que la configuration standard convienne à la plupart des installations. Si, toutefois, vous devez personnaliser les configurations de journalisation standard, veillez à ne le faire que sur   de. `dev`
+
 Certains journaux et écrivains sont inclus dans une installation standard d’AEM en tant que service Cloud.
 
-Le premier est un cas particulier car il contrôle à la fois les fichiers `request.log`et `access.log` :
+The first is a special case as it controls both the `request` and `access` logs:
 
 * L’enregistreur :
 
@@ -88,8 +92,6 @@ Le premier est un cas particulier car il contrôle à la fois les fichiers `requ
       (org.apache.sling.engine.impl.log.RequestLogger)
 
    * Writes the messages to either `request.log` or `access.log`.
-
-Ceux-ci peuvent être personnalisés si nécessaire, bien que la configuration standard convienne à la plupart des installations.
 
 Les autres paires suivent la configuration standard :
 
@@ -114,6 +116,56 @@ Les autres paires suivent la configuration standard :
    * Écrit `Warning` des messages à `../logs/error.log` pour le service `org.apache.pdfbox`.
 
 * N’est pas lié à un rédacteur spécifique, et crée et utilise donc un rédacteur implicite avec une configuration par défaut (rotation quotidienne du journal).
+
+Outre les trois types de journaux présents sur une instance AEM en tant qu’instance de service Cloud (`request`, `access` et `error` journaux), il existe un autre journal utilisé pour le débogage des problèmes du répartiteur. Pour plus d’informations, voir [Débogage de votre configuration](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/dispatcher/overview.html#debugging-apache-and-dispatcher-configuration)Apache et Répartiteur.
+
+En ce qui concerne les pratiques de pointe, il est recommandé d’aligner les configurations existantes dans AEM en tant qu’archétype de service cloud. Ils définissent différents paramètres et niveaux de journal pour des types de  de  spécifiques :
+
+* pour `local dev` et  , définissez la journalisation sur le niveau `dev` DEBUG **** sur `error.log`
+* pour `stage`, définissez le journal sur **Niveau WARN** sur le paramètre `error.log`
+* pour `prod`, définissez logger sur le niveau **ERROR** sur `error.log`
+
+Veuillez trouver ci-dessous des exemples pour chaque configuration :
+
+* `dev`   :
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+    org.apache.sling.commons.log.file="logs/error.log"
+    org.apache.sling.commons.log.level="debug"
+    org.apache.sling.commons.log.names="[${package}]"
+    org.apache.sling.commons.log.additiv="true"
+    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+```
+
+
+* `stage`   :
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+    org.apache.sling.commons.log.file="logs/error.log"
+    org.apache.sling.commons.log.level="warn"
+    org.apache.sling.commons.log.names="[${package}]"
+    org.apache.sling.commons.log.additiv="true"
+    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+```
+
+* `prod`   :
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+    org.apache.sling.commons.log.file="logs/error.log"
+    org.apache.sling.commons.log.level="error"
+    org.apache.sling.commons.log.names="[${package}]"
+    org.apache.sling.commons.log.additiv="true"
+    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+```
 
 ## Définition du niveau de journal {#setting-the-log-level}
 
@@ -153,7 +205,6 @@ Vous pouvez définir votre propre paire Enregistrer/Rédacteur :
 
 1. Créez une nouvelle instance de la configuration d’usine [Apache Sling Logging Logger Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
 
-   1. Définissez le fichier journal.
    1. Définissez l’enregistreur.
 
 <!-- 1. Create a new instance of the Factory Configuration [Apache Sling Logging Writer Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
@@ -167,7 +218,7 @@ Vous pouvez définir votre propre paire Enregistrer/Rédacteur :
 >
 >Lorsque vous travaillez avec Adobe Experience Manager, il existe plusieurs méthodes pour gérer les paramètres de configuration de ces services.
 
-Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un niveau de journalisation différent. Vous pouvez le faire depuis le référentiel en procédant comme suit :
+Dans certains cas, vous pouvez créer un journal personnalisé avec un niveau de journal différent. Vous pouvez le faire depuis le référentiel en procédant comme suit :
 
 1. If not already existing, create a new configuration folder ( `sling:Folder`) for your project `/apps/<*project-name*>/config`.
 1. Under `/apps/<*project-name*>/config`, create a node for the new Apache Sling Logging Logger Configuration:
