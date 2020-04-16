@@ -2,7 +2,7 @@
 title: Notes de mise à jour d’Adobe Experience Manager (AEM) as a Cloud Service.
 description: 'Notes de mise à jour d’Adobe Experience Manager (AEM) as a Cloud Service. '
 translation-type: tm+mt
-source-git-commit: c92578526bd02944ece86ec0771d6707401163fe
+source-git-commit: 650f6dbc50934f2989a7b9ed51623e80a9202af2
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: c92578526bd02944ece86ec0771d6707401163fe
 
 ## Principales informations sur les versions {#key-articles}
 
-* [Notes de mise à jour actuelles](/help/release-notes/release-notes-cloud/release-notes-2020-2-0.md)
+* [Notes de mise à jour actuelles](/help/release-notes/release-notes-cloud/release-notes-current.md)
 * [Nouveautés](what-is-new.md)
 * [Modifications notables](aem-cloud-changes.md)
 * [Problèmes connus](known-issues.md)
