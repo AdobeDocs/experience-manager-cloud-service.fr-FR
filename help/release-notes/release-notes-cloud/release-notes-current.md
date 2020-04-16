@@ -2,7 +2,7 @@
 title: Notes de mise à jour d’Adobe Experience Manager en tant que service Cloud pour la version 2020.4.0
 description: Notes de mise à jour d’Experience Manager pour la version 2020.4.0
 translation-type: tm+mt
-source-git-commit: 2258cc72d10fa85d89832b63016ccb393f453bff
+source-git-commit: 98de3a6674aaef5228e96e0bf72e67de861f858e
 
 ---
 
@@ -20,7 +20,7 @@ La date de publication de [!DNL Experience Manager] as a Cloud Service 2020.4.0 
 Découvrez les nouvelles fonctionnalités, les améliorations et les correctifs pour [!DNL Experience Manager Assets] et [!DNL Dynamic Media] dans la version actuelle.
 
 * [Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) prend en charge les cas d’utilisation de la distribution des ressources pour les ressources Experience Manager. [!DNL Brand Portal] aide les organisationsentreprises à répondre à leurs besoins marketing en distribuant en toute sécurité des ressources de marque et de produit approuvées à des agences extérieures, partenaires, équipes internes et revendeurs en vue de leur téléchargement.
-   * [!DNL Brand Portal] est effectuée via [!DNL Adobe I/O] la console.
+   * [!DNL Brand Portal] est effectuée via [!DNL Adobe I/O] la console. Voir [Configuration du portail des marques](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html).
    * L’approvisionnement en ressources dans [!DNL Brand Portal] n’est pas encore pris en charge [!DNL Experience Manager] en tant que service Cloud.
 
 * [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) v2.0 fonctionne avec [!DNL Experience Manager] comme un service Cloud. [!DNL Adobe Asset Link] simplifie la collaboration entre les créatifs et les marketeurs dans le processus de création de contenu en établissant une connexion [!DNL Experience Manager Assets] avec les applications de [!DNL Creative Cloud] bureau [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]et [!DNL Adobe InDesign] via le [!DNL Asset Link] panneau intégré à l’application.
@@ -29,7 +29,13 @@ Découvrez les nouvelles fonctionnalités, les améliorations et les correctifs 
 
 * Les utilisateurs peuvent configurer le post-traitement [en  de automatique dans l’interface utilisateur des](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) propriétés  du dossier pour les hiérarchies de dossiers spécifiques.
    * L’interface utilisateur des [!UICONTROL propriétés] du dossier est simplifiée, grâce au nouvel onglet Traitement [!UICONTROL des] ressources qui contient les  de métadonnées, les  de traitement et la nouvelle configuration de flux de travail de l’ de traitement et de l’automatique desressources.
-   * La boîte de dialogue de retraitement des ressources permet de sélectionner un de traitement spécifique et de décider de le retraiter dans des sous-dossiers.
+
+      ![Le de traitement peut facilement être appliqué aux dossiers et tous les fichiers téléchargés dans les dossiers sont traités à l’aide de ces](/help/assets/assets/asset-processing-folder-properties.png)
+
+   * L’option de retraitement des fichiers permet de sélectionner un de traitement spécifique pour retraiter les fichiers sélectionnés par l’utilisateur dans des sous-dossiers.
+
+      ![Retraiter les fichiers sélectionnés à l’aide d’un de traitement spécifique](/help/assets/assets/fpo-existing-asset-reprocess.gif)
+
    * [!DNL Dynamic Media]: Ajout d’une configuration de publication sélective afin que les ressources soient publiées automatiquement pour les  sécurisés uniquement. En outre, les ressources peuvent être publiées explicitement dans Experience Manager sans être publiées dans DMS7 pour des  de dans le domaine public.
 
 ### Correctifs {#assets-bug-fixes}
@@ -49,18 +55,18 @@ Découvrez les nouvelles fonctionnalités, les améliorations et les correctifs 
 
 * Les URL de l’éditeur sont désormais disponibles à partir de la page  du  dans l’interface utilisateur de Cloud Manager.
 * Modifications de la navigation pour permettre à l’utilisateur de modifier, de changer ou d’ajouter un  à partir de la page d’aperçu de Cloud Manager.
-* Modifications permettant à l’utilisateur de modifier des  à partir de la carte  sur la  de Cloud Manager.
-* Nouvel état du pipeline **Pipeline En cours d’exécution** s’affichait par rapport au  auquel il est associé.
-* Améliorations de la lisibilité de la page d&#39;exécution du pipeline. Ceci inclut l&#39;affichage du nom et du type du pipeline (non-production du pipeline uniquement) et un badge pour indiquer si l&#39;état du pipeline est En cours/Annulé/Échec.
+* Modifications permettant à l’utilisateur de modifier un programme à partir de la carte de programme sur la page d’entrée de Cloud Manager.
+* Nouveau statut du pipeline **Exécution de pipeline** affiché au niveau de l’environnement auquel il est associé.
+* Améliorations de la lisibilité de la page d’exécution de pipeline. Ceci inclut l&#39;affichage du nom et du type du pipeline (non-production du pipeline uniquement) et un badge pour indiquer si l&#39;état du pipeline est En cours/Annulé/Échec.
 * Cette section contient des info-bulles destinées à améliorer l’expérience utilisateur et la compréhension de la raison pour laquelle Ajouter bouton / de/ est désactivé.
 * Les  de ayant échoué peuvent désormais être supprimés via l’interface utilisateur et l’API.
-* Le processus utilisé pour générer les mots de passe Git a été rendu plus résistant aux problèmes de la couche de service sous-jacente.
+* Le processus utilisé pour générer les mots de passe Git est maintenant plus résilient face aux problèmes de la couche de service sous-jacente.
 
 ### Correctifs {#bug-fixes-cloud-manager}
 
 * Les liens vers l’étape  le  sur la page des détails de l’exécution du pipeline ne se rendaient pas toujours à l’emplacement correct.
 * Les étapes individuelles du processus de création de  de  expireraient plus tôt que nécessaire, provoquant l’échec du processus.
-* La configuration Maven utilisée dans le de génération a été mise à jour afin d’éviter les blocages lors du téléchargement des métadonnées d’artefact.
+* La configuration Maven utilisée dans le conteneur de build a été mise à jour afin d’éviter les blocages lors du téléchargement des métadonnées d’artefact.
 * Dans certains cas, l’étape de création d’image ne parvient pas à télécharger les packs clients.
 * Certaines conditions peu fréquentes empêcheraient   d’être supprimées.
-* Les notifications Experience Cloud n’ont pas été reçues de manière cohérente.
+* Les notifications Experience Cloud n’étaient pas toujours reçues.
