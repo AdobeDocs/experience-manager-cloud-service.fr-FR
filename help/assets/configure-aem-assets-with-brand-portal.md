@@ -3,7 +3,7 @@ title: Configuration du service cloud AEM Assets avec Brand Portal
 description: Configurez le service cloud AEM Assets avec Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: f57731e4ab30af1bfcd93a12b2cf80e63efdac79
+source-git-commit: d644fc348ff6d62c03100941b96c03049f345763
 
 ---
 
@@ -24,7 +24,7 @@ Pour configurer AEM Assets avec Brand Portal, vous devez disposer des élémen
 
 ## Création d’une configuration {#create-new-configuration}
 
-Vous pouvez créer une nouvelle configuration sur les E/S Adobe pour configurer votre instance cloud AEM Assets avec Brand Portal.
+Vous pouvez créer une configuration sur les E/S Adobe pour configurer votre instance cloud AEM Assets avec Brand Portal.
 
 Effectuez les étapes suivantes dans la séquence répertoriée :
 1. [Obtention d’un certificat public](#public-certificate)
@@ -46,7 +46,7 @@ La configuration IMS comprend deux étapes :
 
 Le certificat public vous permet d’authentifier vos  d’sur les E/S Adobe.
 
-1. Connexion à votre instance cloud AEM Assets
+1. Connectez-vous à votre instance cloud AEM Assets.
 
 1. Dans le panneau **Outils** ![Outils](assets/tools.png) , accédez à **[!UICONTROL Sécurité]** > Configurations **[!UICONTROL Adobe IMS.]**
 
@@ -152,16 +152,17 @@ Vérifiez que vous avez effectué les étapes suivantes :
 
 >[!CAUTION]
 >
->Créez une seule configuration IMS valide.
+>Vous ne devez avoir qu’une seule configuration IMS qui réussit le contrôle d’intégrité. Ne créez pas plusieurs configurations IMS.
 >
-> Assurez-vous que la configuration est saine. Au cas où la configuration serait malsaine, supprimez-la et créez une nouvelle configuration saine.
+>Si la configuration ne réussit pas le contrôle d&#39;intégrité, il n&#39;est pas valide. Vous devez le supprimer et créer une nouvelle configuration valide.
+
 
 
 ### Configure cloud service {#configure-the-cloud-service}
 
 Effectuez les étapes suivantes pour créer la configuration du service cloud de Portal de marque :
 
-1. Connexion à votre instance cloud AEM Assets
+1. Connectez-vous à votre instance cloud AEM Assets.
 
 1. Dans le panneau **Outils** ![Outils](assets/tools.png) , accédez à Services **** Cloud > Portail de marque **[!UICONTROL AEM.]**
 
@@ -202,8 +203,13 @@ Effectuez les étapes suivantes pour créer la configuration du service cloud de
 1. La page de l&#39;agent de distribution s&#39;ouvre. Par défaut, l’onglet **[!UICONTROL État]** s’ouvre, ce qui remplit les files d’attente de distribution.
 
    Un agent de distribution contient deux files d&#39;attente :
-   * File d’attente de traitement pour la distribution des ressources vers le portail de marque.
-   * File d’attente d’erreurs pour les ressources dont la distribution a échoué.
+   * **processing-queue**: pour la distribution des ressources sur le portail de marque.
+
+   * **error-queue**: pour les ressources dont la distribution a échoué.
+   >[!NOTE]
+   >
+   >Il est recommandé de revoir les échecs et de supprimer régulièrement la file d’attente **des** erreurs.
+
    ![](assets/test-bpconfig3.png)
 
 1. Pour vérifier la connexion entre AEM Assets et Brand Portal, cliquez sur **[!UICONTROL Tester la connexion]**.
@@ -238,7 +244,7 @@ Vous pouvez consulter les journaux pour obtenir des informations détaillées su
 
 Par exemple, nous avons publié un fichier d’AEM Assets sur Brand Portal pour vérifier la configuration.
 
-1. Suivez les étapes (Étape 1 à 4) comme indiqué dans **[!UICONTROL Test Connection]** et accédez à la page de l&#39;agent de distribution.
+1. Suivez les étapes (étapes 1 à 4), comme indiqué dans **[!UICONTROL Test Connection]** , puis accédez à la page de l&#39;agent de distribution.
 
 1. Cliquez sur **[!UICONTROL Journaux]** pour les journaux de distribution. Vous pouvez consulter les journaux de traitement et d’erreur ici.
 
@@ -246,14 +252,14 @@ Par exemple, nous avons publié un fichier d’AEM Assets sur Brand Portal pour 
 
 L’agent de distribution génère les journaux suivants :
 
-* INFO : Il s&#39;agit d&#39;un journal généré par le système et déclenché lors d&#39;une configuration réussie qui active l&#39;agent de distribution.
-* DSTRQ1 (Demande 1) : Rogné sur la connexion test.
+* INFO : Il s&#39;agit d&#39;un journal généré par le système qui se déclenche lors d&#39;une configuration réussie qui active l&#39;agent de distribution.
+* DSTRQ1 (Demande 1) : Déclencheurs sur la connexion test.
 
 Lors de la publication du fichier, les journaux de requête et de réponse suivants sont générés :
 
 **Demande** de l&#39;agent de distribution :
 * DSTRQ2 (Demande 2) : La demande de publication de fichier est déclenchée.
-* DSTRQ3 (Demande 3) : Le système déclenche une autre requête pour publier le dossier dans lequel le fichier existe et le répliquera dans le portail de marque.
+* DSTRQ3 (Demande 3) : Le système déclenche une autre demande pour publier le dossier dans lequel la ressource existe et répliquera le dossier dans le portail de marque.
 
 **Réponse** de l&#39;agent de distribution :
 * queue-bpdistributionagent0 (DSTRQ2) : Le fichier est publié sur le portail de marque.
@@ -266,21 +272,24 @@ Dans l’exemple ci-dessus, une requête et une réponse supplémentaires sont d
 >Une requête supplémentaire est générée au cas où le dossier parent n’existerait pas dans le portail de marque (dans l’exemple ci-dessus) ou si le dossier parent avait été modifié dans les ressources AEM.
 
 
-## Informations complémentaires {#additional-information}
 
-Accédez à `/system/console/slingmetrics` la section pour obtenir des statistiques relatives au contenu distribué :
+<!--
 
-1. **Mesures de compteur**
+## Additional information {#additional-information}
+
+Go to `/system/console/slingmetrics` for statistics related to the distributed content:
+
+1. **Counter metrics**
    * sling: `mac_sync_request_failure`
    * sling: `mac_sync_request_received`
    * sling: `mac_sync_request_success`
 
-1. **Mesures temporelles**
+1. **Time metrics**
    * sling: `mac_sync_distribution_duration`
    * sling: `mac_sync_enqueue_package_duration`
    * sling: `mac_sync_setup_request_duration`
 
-
+-->
 
 <!--
    Comment Type: draft
