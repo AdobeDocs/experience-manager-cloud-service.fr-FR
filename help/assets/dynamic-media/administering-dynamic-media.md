@@ -1,15 +1,15 @@
 ---
-title: Configuration de Dynamic Media
-description: Pour configurer Dynamic Media, vous devez configurer un média dynamique et gérer les paramètres prédéfinis d’image et de visionneuse.
-translation-type: tm+mt
+title: Configuration de Dynamic Media
+description: Pour configurer Dynamic Media, vous devez configurer un média dynamique et gérer les paramètres prédéfinis d’image et de visionneuse.
+translation-type: ht
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ---
 
 
-# Configuration de Dynamic Media {#setting-up-dynamic-media}
+# Configuration de Dynamic Media   {#setting-up-dynamic-media}
 
-Grâce à [Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html), vous gérez les ressources en diffusant à la demande des supports visuels de commercialisation et de marketing qui sont automatiquement dimensionnés, lors de leur diffusion sur des sites web, des appareils mobiles et les réseaux sociaux. À partir d’un ensemble de ressources de référence, Dynamic Media génère et diffuse, en temps réel, plusieurs variantes d’un même contenu enrichi au moyen de son réseau mondial et évolutif, aux performances optimisées.
+Grâce à [Dynamic Media](https://www.adobe.com/fr/marketing/experience-manager-assets/dynamic-media.html), vous gérez les ressources en diffusant à la demande des supports visuels de commercialisation et de marketing qui sont automatiquement dimensionnés lors de leur diffusion sur les sites web, les appareils mobiles et les réseaux sociaux. À partir d’un ensemble de ressources marketing, Dynamic Media génère et diffuse, en temps réel, plusieurs variantes d’un même contenu enrichi au moyen de son réseau mondial et évolutif, aux performances optimisées.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -21,12 +21,12 @@ Grâce à [Dynamic Media](https://www.adobe.com/solutions/web-experience-managem
 
 -->
 
-Si vous administrez Contenu multimédia dynamique, les rubriques suivantes présentent un intérêt :
+Si vous administrez Dynamic Media, les rubriques suivantes peuvent vous intéresser :
 
-* [Configuration de Dynamic Media](config-dm.md)
+* [Configuration de Dynamic Media](config-dm.md)
 * [Gestion des paramètres d’image prédéfinis](managing-image-presets.md)
-* [Gestion des paramètres prédéfinis de la visionneuse](managing-viewer-presets.md)
-* [Résolution des problèmes liés aux médias dynamiques](troubleshoot-dm.md)
+* [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md)
+* [Résolution des problèmes liés à Dynamic Media](troubleshoot-dm.md)
 
 Voir aussi les rubriques suivantes :
 
@@ -35,6 +35,6 @@ Voir aussi les rubriques suivantes :
 
 >[!NOTE]
 >
->**Si vous effectuez une mise à niveau :**
+>**Si vous effectuez une mise à niveau :**
 >
->* Une fois AEM installé et en cours d’exécution, les fichiers que vous téléchargez sont automatiquement activés dans Contenu multimédia dynamique (sauf s’ils ont été explicitement désactivés par votre administrateur système). Si vous utilisez une instance mise à niveau d’AEM et que vous découvrez Contenu multimédia dynamique, vous devrez peut-être retraiter vos fichiers pour les rendre compatibles avec Contenu multimédia dynamique.
+>* Après la mise en service d’AEM, toutes les ressources que vous chargez sont automatiquement activées pour Dynamic Media (à moins que cela n’ait été explicitement désactivé par votre administrateur système). Si vous utilisez une instance mise à niveau d’AEM et que Dynamic Media est nouveau pour vous, vous devrez peut-être retraiter vos ressources pour les rendre compatibles avec Dynamic Media.
