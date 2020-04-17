@@ -1,50 +1,50 @@
 ---
-title: Étendre les options et fonctionnalités de recherche dans Adobe Experience Manager Assets
-description: Étendre les fonctionnalités de recherche des ressources.
+title: Étendre les options et fonctionnalités de recherche dans Adobe Experience Manager Assets
+description: Étendre les fonctionnalités de recherche d’Assets.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
 
-# Étendre la recherche de fichiers {#extend-assets-search}
+# Étendre la recherche de ressources{#extend-assets-search}
 
-Vous pouvez étendre les fonctionnalités de recherche des ressources d’Adobe Experience Manager (AEM). AEM Assets propose des recherches prêtes à l’emploi de ressources par chaînes.
+Vous pouvez étendre la recherche dans Adobe Experience Manager (AEM) Assets. AEM Assets propose des recherches prêtes à l’emploi de ressources par chaînes.
 
-La recherche est effectuée par le biais de l’interface QueryBuilder, de sorte qu’elle puisse être personnalisée avec plusieurs prédicats. You can overlay the default set of predicates in the following directory: `/apps/dam/content/search/searchpanel/facets`.
+La recherche est effectuée par le biais de l’interface QueryBuilder, de sorte qu’elle puisse être personnalisée avec plusieurs prédicats. Vous pouvez remplacer l’ensemble des prédicats par défaut dans le répertoire suivant : `/apps/dam/content/search/searchpanel/facets`.
 
-Vous pouvez également ajouter d’autres onglets au panneau d’administration AEM Assets.
+Vous pouvez également ajouter des onglets supplémentaires au panneau d’administration d’AEM Assets.
 
 ## Incrustation {#overlay}
 
-To overlay the preconfigured predicates, copy the `facets` node from `/libs/dam/content/search/searchpanel` to `/apps/dam/content/search/searchpanel/` or specify another `facetURL` property in the searchpanel configuration (the default is to `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
+Pour remplacer les prédicats préconfigurés, copiez le nœud `facets` du répertoire `/libs/dam/content/search/searchpanel` dans le répertoire `/apps/dam/content/search/searchpanel/` ou spécifiez une autre propriété `facetURL` dans la configuration du panneau de recherche (la valeur par défaut est `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
 
 >[!NOTE]
 >
->By default, the directory structure under `/apps` does not exist and needs to be created. Assurez-vous que les types de nœuds correspondent à ceux existant sous `/libs`.
+>Par défaut, la structure de répertoire sous `/apps` n’existe pas et doit être créée. Assurez-vous que les types de nœuds correspondent à ceux existant sous `/libs`.
 
 ### Ajouter des onglets {#add-tabs}
 
-Vous pouvez ajouter d’autres onglets de recherche en les configurant dans l’administrateur des ressources AEM. Pour créer des onglets supplémentaires, procédez comme suit :
+Vous pouvez ajouter des onglets de recherche supplémentaires en les configurant dans le panneau d’administration d’AEM Assets. Pour créer des onglets supplémentaires, procédez comme suit :
 
-1. Create the folder structure `/apps/wcm/core/content/damadmin/tabs,`if it does not already exist, and copy the `tabs` node from `/libs/wcm/core/content/damadmin` and paste it.
+1. Créez la structure de dossiers `/apps/wcm/core/content/damadmin/tabs,`si elle n’existe pas encore, puis copiez le nœud `tabs` dans le répertoire `/libs/wcm/core/content/damadmin` et collez-le.
 1. Créez et configurez le second onglet, le cas échéant.
 
    >[!NOTE]
    >
-   >When you create a second `siteadminsearchpanel`, be sure to set an `id` property in order to prevent form conflicts.
+   >Lorsque vous créez un second nœud `siteadminsearchpanel`, assurez-vous de définir une propriété `id` afin d’éviter tout conflit de formulaire.
 
 ### Création de prédicats personnalisés {#create-custom-predicates}
 
-AEM Assets est fourni avec un ensemble de prédicats prédéfinis qui peuvent être utilisés pour personnaliser une page de partage de ressources.
+AEM Assets est fourni avec un ensemble de prédicats prédéfinis qui peuvent être utilisés pour personnaliser une page de partage de ressources.
 <!-- In addition to using pre-existing predicates, AEM developers can also create their own predicates using the [Query Builder API](/help/sites-developing/querybuilder-api.md). -->
 
 La création de prédicats personnalisés nécessite des connaissances de base sur la [structure des widgets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
 La pratique recommandée consiste à copier un prédicat existant, puis à le modifier. Des exemples de prédicats sont disponibles dans le répertoire **/libs/cq/search/components/predicates**.
 
-#### Exemple : création d’un prédicat de propriété simple {#example-build-a-simple-property-predicate}
+#### Exemple : création d’un prédicat de propriété simple   {#example-build-a-simple-property-predicate}
 
 Pour créer un prédicat de propriété, procédez comme suit :
 
@@ -128,7 +128,7 @@ Pour créer un prédicat de propriété, procédez comme suit :
    </script>
    ```
 
-1. Pour rendre un composant disponible, vous devez être en mesure de le modifier. Pour rendre un composant modifiable, dans CRXDE, ajoutez un nœud **cq:editConfig** du type principal **cq:EditConfig**. Afin de pouvoir supprimer des paragraphes, ajoutez une propriété à valeurs multiples **cq:actions** avec une valeur unique de **DELETE**.
+1. Pour rendre le composant accessible, vous devez être en mesure de le modifier. Pour rendre un composant modifiable, dans CRXDE, ajoutez un nœud **cq:editConfig** du type principal **cq:EditConfig**. Afin de pouvoir supprimer des paragraphes, ajoutez une propriété à valeurs multiples **cq:actions** avec une valeur unique de **DELETE**.
 1. Accédez à votre navigateur puis, sur votre exemple de page (par exemple **press.html**), basculez en mode de conception et activez votre nouveau composant pour le système de paragraphes de prédicats (par exemple **left**).
 
 1. En mode d’**édition**, le nouveau composant est désormais disponible dans le sidekick (accessible dans le groupe **Recherche**). Insérez le composant dans la colonne **Prédicats** et saisissez un mot de recherche, par exemple **Diamant**, puis cliquez sur la loupe pour lancer la recherche.
@@ -240,7 +240,7 @@ Pour créer un prédicat de groupe, procédez comme suit :
 
 Les prédicats suivants sont disponibles en tant que widgets ExtJS préconfigurés.
 
-#### FulltextPredicate {#fulltextpredicate}
+#### FulltextPredicate   {#fulltextpredicate}
 
 <table>
  <tbody>
@@ -250,14 +250,14 @@ Les prédicats suivants sont disponibles en tant que widgets ExtJS préconfigur�
    <td><strong>Description</strong></td>
   </tr>
   <tr>
-   <td>preateName</td>
+   <td>predicateName</td>
    <td>Chaîne</td>
-   <td>Nom du prédicat. Valeur par défaut : "texte intégral"</td>
+   <td>Nom du prédicat. Par défaut : « fulltext »</td>
   </tr>
   <tr>
    <td>searchCallback</td>
    <td>Fonction</td>
-   <td>Rappel pour déclencher une recherche sur l’événement "keyup". Valeur par défaut : CQ.wcm.SiteAdmin.doSearch</td>
+   <td>Rappel pour déclencher une recherche sur l’événement « keyup ». Par défaut : « CQ.wcm.SiteAdmin.doSearch »</td>
   </tr>
  </tbody>
 </table>
@@ -272,14 +272,14 @@ Les prédicats suivants sont disponibles en tant que widgets ExtJS préconfigur�
    <td><strong>Description</strong></td>
   </tr>
   <tr>
-   <td>preateName</td>
+   <td>predicateName</td>
    <td>Chaîne</td>
    <td>Nom du prédicat. La valeur par défaut est 'propriété'</td>
   </tr>
   <tr>
    <td>propertyName</td>
    <td>Chaîne </td>
-   <td>Nom de la propriété JCR. Valeur par défaut : jcr:title</td>
+   <td>Nom de la propriété JCR. Par défaut : « jcr:title »</td>
   </tr>
   <tr>
    <td>defaultValue<br /> </td>
@@ -299,24 +299,24 @@ Les prédicats suivants sont disponibles en tant que widgets ExtJS préconfigur�
    <td><strong>Description</strong></td>
   </tr>
   <tr>
-   <td>preateName</td>
+   <td>predicateName</td>
    <td>Chaîne</td>
-   <td>Nom du prédicat. Par défaut, "path"</td>
+   <td>Nom du prédicat. Par défaut : « path »</td>
   </tr>
   <tr>
    <td>rootPath</td>
    <td>Chaîne </td>
-   <td>Chemin racine du prédicat. Valeur par défaut : "/content/dam"</td>
+   <td>Chemin racine du prédicat. Par défaut : « /content/dam »</td>
   </tr>
   <tr>
    <td>pathFieldPredicateName</td>
    <td>Chaîne</td>
-   <td>Par défaut, "dossier"</td>
+   <td>Par défaut : « folder »</td>
   </tr>
   <tr>
    <td>showFlatOption</td>
-   <td>Booléen  </td>
-   <td>Indicateur pour afficher la case à cocher "Rechercher dans les sous-dossiers". La valeur par défaut est « true ».</td>
+   <td>Booléen</td>
+   <td>Indicateur permettant d’afficher la case à cocher « Rechercher dans les sous-dossiers ». La valeur par défaut est « true ».</td>
   </tr>
  </tbody>
 </table>
@@ -331,14 +331,14 @@ Les prédicats suivants sont disponibles en tant que widgets ExtJS préconfigur�
    <td><strong>Description</strong></td>
   </tr>
   <tr>
-   <td>preateName</td>
+   <td>predicateName</td>
    <td>Chaîne</td>
-   <td>Nom du prédicat. Par défaut, "daterange"</td>
+   <td>Nom du prédicat. Par défaut : « daterange »</td>
   </tr>
   <tr>
    <td>propertyName</td>
    <td>Chaîne</td>
-   <td>Nom de la propriété JCR. Valeur par défaut : jcr:content/jcr:lastModified</td>
+   <td>Nom de la propriété JCR. Par défaut : « jcr:content/jcr:lastModified »</td>
   </tr>
   <tr>
    <td>defaultValue </td>
@@ -363,34 +363,34 @@ Les prédicats suivants sont disponibles en tant que widgets ExtJS préconfigur�
    <td>Ajoute un titre supérieur supplémentaire </td>
   </tr>
   <tr>
-   <td>preateName</td>
+   <td>predicateName</td>
    <td>Chaîne</td>
-   <td>Nom du prédicat. Par défaut, "daterange"</td>
+   <td>Nom du prédicat. Par défaut : « daterange »</td>
   </tr>
   <tr>
    <td>propertyName</td>
    <td>Chaîne</td>
-   <td>Nom de la propriété JCR. Valeur par défaut : jcr:content/metadata/cq:tags</td>
+   <td>Nom de la propriété JCR. Par défaut : « jcr:content/metadata/cq:tags »</td>
   </tr>
   <tr>
-   <td>effondrement</td>
+   <td>collapse</td>
    <td>Chaîne</td>
-   <td>Réduire le niveau. Par défaut, "level1"</td>
+   <td>Réduire par niveau. Par défaut : « level1 »</td>
   </tr>
   <tr>
    <td>triggerSearch</td>
-   <td>Booléen   </td>
-   <td>Indicateur de déclenchement de la recherche lors de la vérification. La valeur par défaut est false.</td>
+   <td>Booléen </td>
+   <td>Indicateur de déclenchement de la recherche lors de la vérification. Par défaut : « false »</td>
   </tr>
   <tr>
    <td>searchCallback</td>
    <td>Fonction</td>
-   <td>Rappel pour déclencher la recherche. Par défaut : CQ.wcm.SiteAdmin.doSearch</td>
+   <td>Rappel pour déclencher la recherche. Par défaut : « CQ.wcm.SiteAdmin.doSearch »</td>
   </tr>
   <tr>
    <td>searchTimeoutTime</td>
    <td>Nombre</td>
-   <td>Délai d’expiration avant le déclenchement de searchCallback. Valeur par défaut : 800 ms</td>
+   <td>Délai d’expiration avant le déclenchement de searchCallback. Valeur par défaut : 800 ms</td>
   </tr>
  </tbody>
 </table>
