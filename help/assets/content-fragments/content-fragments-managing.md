@@ -1,7 +1,7 @@
 ---
 title: Gestion des fragments de contenu
 description: Les fragments de contenu sont stockés en tant que ressources, et ils sont donc principalement gérés par l’intermédiaire de la console Ressources.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ---
@@ -15,7 +15,7 @@ Les fragments de contenu sont stockés en tant que **Ressources**, et ils sont d
 >
 >Les fragments de contenu sont ensuite utilisés avec les pages de création ; voir [Création de page avec des fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
-## Création de fragments de contenu {#creating-content-fragments}
+## Création de fragments de contenu   {#creating-content-fragments}
 
 ### Création d’un modèle de contenu {#creating-a-content-model}
 
@@ -44,13 +44,13 @@ La méthode de création de fragments de contenu est (fondamentalement) la même
 
       * un modèle, par exemple, un **Fragment simple** ;<!-- [Template](/help/sites-developing/content-fragment-templates.md) - for example **Simple Fragment** -->
 
-      * [Modèle](/help/assets/content-fragments/content-fragments-models.md) - utilisé pour créer un fragment qui requiert un contenu structuré ; par exemple, le modèle **Aéroports**
+      * un [modèle](/help/assets/content-fragments/content-fragments-models.md) utilisé pour créer un fragment qui nécessite du contenu structuré, par exemple, le modèle **Airports**.
    * Tous les modèles disponibles sont affichés.
    Après la sélection, cliquez ou appuyez sur **Suivant** pour continuer.
 
    ![base du fragment](assets/cfm-managing-01.png)
 
-4. In the **Properties** step specify:
+4. Dans l’étape **Propriétés**, spécifiez :
 
    * **De base**
 
@@ -67,9 +67,9 @@ La méthode de création de fragments de contenu est (fondamentalement) la même
 
       * **Nom**
 
-         Le nom; sera utilisé pour former l’URL.
+         Nom utilisé pour former l’URL.
 
-         Obligatoire, il sera dérivé automatiquement à partir du titre, mais il peut être mis à jour.
+         Obligatoire, il sera dérivé automatiquement du titre, mais il peut être modifié.
 
 
 5. Sélectionnez **Créer** pour terminer l’action, puis **ouvrez** le fragment en mode d’édition ou revenez à la console en sélectionnant **Terminé**.
@@ -83,7 +83,7 @@ Dans la console **Ressources**, différentes actions sont disponibles pour vos f
 
 ![actions](assets/cfm-managing-02.png)
 
-Sélectionnez le fragment pour afficher la barre d’outils avec les actions applicables : 
+Sélectionnez le fragment pour afficher la barre d’outils avec les actions applicables :
 
 * **Créer**
 * **Téléchargement**
@@ -97,7 +97,7 @@ Sélectionnez le fragment pour afficher la barre d’outils avec les actions app
 
 * **Modifier**
 
-   * Allows you to [open the fragment for editing content](/help/assets/content-fragments/content-fragments-variations.md) together with its elements, variations, associated content and metadata.
+   * Permet [d’ouvrir le fragment afin d’en modifier le contenu](/help/assets/content-fragments/content-fragments-variations.md) ainsi que ses variations, contenu, métadonnées et éléments associés.
 
 * **Gérer les balises**
 * **À la collection**
@@ -114,7 +114,7 @@ Sélectionnez le fragment pour afficher la barre d’outils avec les actions app
 
 >[!NOTE]
 >
->Many of these are [standard actions for Assets](/help/assets/manage-digital-assets.md) and/or the [AEM desktop app](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
+>La plupart de ces actions sont [standard pour Assets](/help/assets/manage-digital-assets.md) et/ou l’[application de bureau AEM](https://helpx.adobe.com/fr/experience-manager/desktop-app/aem-desktop-app.html).
 
 ## Ouverture de l’éditeur de fragments {#opening-the-fragment-editor}
 
@@ -134,22 +134,24 @@ Pour ouvrir votre fragment à des fins de modification :
 2. Ouvrez le fragment en mode édition, en effectuant l’une des opérations suivantes :
 
    * Cliquez/appuyez sur le fragment ou le lien de fragment (selon l’affichage console).
-   * Selecting the fragment, then **Edit** from the toolbar.
+   * Sélectionnez le fragment, puis cliquez sur **Modifier** dans la barre d’outils.
    L’éditeur de fragment s’ouvre alors :
 
-   ![éditeur de fragments](assets/cfm-managing-03.png)
+   ![éditeur de fragment](assets/cfm-managing-03.png)
 
    >[!NOTE]
    >
    >1. Un message s’affiche si le fragment est déjà référencé dans une page de contenu.
-   >
-   >
-   >2. Le panneau latéral peut être masqué/affiché en appuyant sur l’icône **Activer/désactiver le panneau latéral**.
+      >
+      >
+      >
+
+   2. Le panneau latéral peut être masqué/affiché en appuyant sur l’icône **Activer/désactiver le panneau latéral**.
 
 
 3. Naviguez parmi les trois modes à l’aide des icônes du panneau latéral :
 
-   * Variations : [ Modification du contenu](#editing-the-content-of-your-fragment) et [Gestion des variations](#creating-and-managing-variations-within-your-fragment) 
+   * Variations : [ Modification du contenu](#editing-the-content-of-your-fragment) et [Gestion des variations](#creating-and-managing-variations-within-your-fragment)
 
    * [Annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
    * [Contenu associé](#associating-content-with-your-fragment)
@@ -162,7 +164,7 @@ Pour ouvrir votre fragment à des fins de modification :
    >
    >Les options **Enregistrer** et **Annuler** ont pour effet de fermer l’éditeur. Reportez-vous à [Enregistrer, Annuler et Versions](#save-cancel-and-versions) pour obtenir des informations complètes sur la façon dont les options fonctionnent sur les fragments de contenu.
 
-## Enregistrer, Annuler et Versions {#save-cancel-and-versions}
+## Enregistrer, Annuler et Versions   {#save-cancel-and-versions}
 
 >[!NOTE]
 >
@@ -201,7 +203,7 @@ L’éditeur possède deux options :
 
 Lorsque vous modifiez votre fragment de contenu, AEM crée automatiquement des versions pour que le contenu précédent puisse être restauré si vous **annulez** les modifications :
 
-1. When a content fragment is opened for editing AEM checks for the existence of the cookie-based token that indicates whether an *editing session* exists:
+1. Lorsqu’un fragment de contenu est ouvert pour modification, AEM vérifie l’existence d’un jeton basé sur les cookies indiquant s’il existe une *session de modification* :
 
    1. Si ce jeton est trouvé, le fragment est considéré comme faisant partie de la session de modification existante.
    2. Si le jeton *n’est pas* disponible et que l’utilisateur commence à modifier le contenu, une version est créée et un jeton est envoyé au client pour cette nouvelle session de modification, où il est enregistré dans un cookie.
@@ -210,42 +212,42 @@ Lorsque vous modifiez votre fragment de contenu, AEM crée automatiquement des v
 
    >[!NOTE]
    >
-   >The auto save interval is configurable using the `/conf` mechanism.
+   >L’intervalle d’enregistrement automatique est configurable à l’aide du mécanisme `/conf`.
    >
    >Valeur par défaut, voir :
    >  `/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
-3. If the user selects to **Cancel** the edit, the version created at the start of the editing session is restored and the token is removed to end the editing session.
-4. If the user selects to **Save** the edits, the updated elements/variations are persisted and the token is removed to end the editing session.
+3. Si l’utilisateur choisit d’**annuler** la modification, la version créée au début de la session de modification est restaurée et le jeton est supprimé afin de mettre fin à la session de modification.
+4. Si l’utilisateur choisit d’**enregistrer** les modifications apportées, les éléments/variations mis à jour sont conservés et le jeton est supprimé pour mettre fin à la session de modification.
 
 ## Modification du contenu du fragment {#editing-the-content-of-your-fragment}
 
 Une fois que vous avez ouvert le fragment, vous pouvez utiliser l’onglet [Variations](/help/assets/content-fragments/content-fragments-variations.md) pour créer votre contenu.
 
-## Création et gestion de variations dans un fragment {#creating-and-managing-variations-within-your-fragment}
+## Création et gestion de variations dans un fragment   {#creating-and-managing-variations-within-your-fragment}
 
 Une fois que vous avez créé le contenu maître, vous pouvez créer et gérer des [Variations](/help/assets/content-fragments/content-fragments-variations.md) de ce contenu.
 
-## Association de contenu au fragment {#associating-content-with-your-fragment}
+## Association de contenu au fragment   {#associating-content-with-your-fragment}
 
 Vous pouvez également [associer du contenu](/help/assets/content-fragments/content-fragments-assoc-content.md) à un fragment. Cela fournit une liaison pour que les ressources (c’est-à-dire les images) puissent éventuellement être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu.
 
-## Affichage et modification des métadonnées (propriétés) du fragment {#viewing-and-editing-the-metadata-properties-of-your-fragment}
+## Affichage et modification des métadonnées (propriétés) du fragment   {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
 Vous pouvez afficher et modifier les propriétés d’un fragment à l’aide de l’onglet [Métadonnées](/help/assets/content-fragments/content-fragments-metadata.md).
 
-## Chronologie pour les fragments de contenu {#timeline-for-content-fragments}
+## Chronologie pour les fragments de contenu   {#timeline-for-content-fragments}
 
 Outre les options standard, la [Chronologie](/help/assets/manage-digital-assets.md#timeline) fournit les informations et les actions spécifiques aux fragments de contenu :
 
 * Affichage des informations sur les versions, commentaires et annotations
 * Actions pour les versions
 
-   * **[Restaurer vers cette version](#reverting-to-a-version)**(sélectionner un fragment existant, puis une version spécifique)
+   * **[Revenir à cette version](#reverting-to-a-version)**(sélectionner un fragment existant, puis une version spécifique)
 
-   * **[Comparer à la version actuelle](#comparing-fragment-versions)**(sélectionner un fragment existant, puis une version spécifique)
+   * **[Comparer à actuel](#comparing-fragment-versions)**(sélectionner un fragment existant, puis une version spécifique)
 
-   * Ajouter un **libellé** et/ou **commentaire** (sélectionner un fragment existant, puis une version spécifique).
+   * Ajouter un **libellé** et/ou un **commentaire** (sélectionner un fragment existant, puis une version spécifique)
 
    * **Enregistrer comme version** (sélectionner un fragment existant, puis la flèche du haut au bas de la chronologie)
 
@@ -275,9 +277,9 @@ L’action de **comparer à la version actuelle** est disponible dans la [chrono
 
 Cette opération va ouvrir :
 
-* la version **actuelle** (la plus récente) (à gauche)
+* la version **actuelle** (la plus récente) (à gauche) ;
 
-* la version sélectionnée **v&lt;*x.y*>** (à droite)
+* la version sélectionnée **v&lt;*x.y*>** (à droite).
 
 Elles seront affichées côte à côte, où :
 
@@ -296,15 +298,15 @@ Vous ne pouvez pas modifier le contenu du fragment lors de la comparaison des fr
 
 ![comparaison](assets/cfm-managing-06.png)
 
-## Restauration vers une version spécifique  {#reverting-to-a-version}
+## Restauration vers une version spécifique {#reverting-to-a-version}
 
 Vous pouvez restaurer vers une version spécifique de votre fragment :
 
 * Directement à partir de la [chronologie](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
-   Sélectionnez la version requise, puis l’action **Restaurer vers cette version**.
+   Sélectionnez la version requise, puis l’action **Revenir à cette version**.
 
-* Lors [de la comparaison d’une version à la version actuelle](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions), vous pouvez **restaurer** vers la version sélectionnée.
+* Lors de la [comparaison d’une version à la version actuelle](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions), vous pouvez **restaurer** la version sélectionnée.
 
 ## Publication et référencement d’un fragment {#publishing-and-referencing-a-fragment}
 
@@ -318,7 +320,7 @@ Les fragments de contenu doivent être publiés pour être utilisés dans l’en
 * Lorsque vous [publiez une page qui utilise le fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), celui-ci est répertorié dans les références de la page.
 
 >[!CAUTION]
-Une fois qu’un fragment a été publié et/ou référencé, AEM affiche un avertissement lorsqu’un auteur ouvre à nouveau ce fragment en mode d’édition. Il s’agit de signaler que les modifications apportées au fragment seront répercutées sur les pages référencées.
+Une fois qu’un fragment a été publié et/ou référencé, AEM affiche un avertissement lorsqu’un auteur ouvre à nouveau ce fragment en mode d’édition. Il s’agit de signaler que les modifications apportées au fragment seront également répercutées sur les pages référencées.
 
 ## Suppression d’un fragment {#deleting-a-fragment}
 
@@ -334,4 +336,4 @@ Pour supprimer un fragment :
 4. Confirmez l’action **Supprimer**.
 
    >[!CAUTION]
-   If the fragment is already referenced in a page you will then see a warning message and be required to confirm that you want to proceed with a **Force Delete**. Le fragment et son composant de fragment de contenu seront supprimés de toutes les pages de contenu. 
+   Si le fragment est déjà référencé dans une page, un message d’avertissement vous demande de confirmer que vous souhaitez poursuivre et **forcer la suppression**. Le fragment et son composant de fragment de contenu seront supprimés de toutes les pages de contenu.
