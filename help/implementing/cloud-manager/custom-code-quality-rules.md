@@ -1,13 +1,13 @@
 ---
-title: Règles de qualité du code personnalisé - Services Cloud
-description: Règles de qualité du code personnalisé - Services Cloud
-translation-type: tm+mt
+title: Règles de qualité du code personnalisé - Cloud Services
+description: Règles de qualité du code personnalisé - Cloud Services
+translation-type: ht
 source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
 
 ---
 
 
-# Understanding Custom Code Quality Rules {#custom-code-quality-rules}
+# Présentation des règles de qualité du code personnalisé {#custom-code-quality-rules}
 
 
 Cette page décrit les règles de qualité du code personnalisé exécutées par Cloud Manager qui sont créées selon les bonnes pratiques en matière d’ingénierie AEM.
@@ -30,7 +30,7 @@ La section suivante met en évidence les règles SonarQube :
 
 **Depuis** : version 2018.4.0
 
-Les méthodes ***Thread.stop()*** et ***Thread.interrupt()*** peuvent produire des problèmes difficiles à reproduire et, dans certains cas, des vulnérabilités de sécurité. Leur utilisation doit être minutieusement surveillée et validée. En règle générale, la transmission de messages est une méthode plus sûre pour atteindre des objectifs similaires.
+Les méthodes ***Thread.stop()*** et ***Thread.interrupt()*** peuvent générer des problèmes difficiles à reproduire et, dans certains cas, des vulnérabilités en matière de sécurité. Leur utilisation doit être minutieusement surveillée et validée. En règle générale, la transmission de messages est une méthode plus sûre pour atteindre des objectifs similaires.
 
 #### Code non conforme {#non-compliant-code}
 
@@ -191,7 +191,7 @@ public void orDoThis() {
 
 L’API AEM contient des classes et interfaces Java qui sont censées être utilisées, mais pas implémentées, par du code personnalisé. Par exemple, l’interface *com.day.cq.wcm.api.Page* est conçue pour être implémentée par ***AEM uniquement***.
 
-Lorsque de nouvelles méthodes sont ajoutées à ces interfaces, celles-ci n’ont aucun impact sur le code existant qui utilise ces interfaces et, par conséquent, l’ajout de nouvelles méthodes à ces interfaces est considéré comme rétrocompatible. Cependant, si le code personnalisé ***implémente*** l’une de ces interfaces, il a introduit un risque de rétrocompatibilité pour le client.
+Lorsque de nouvelles méthodes sont ajoutées à ces interfaces, celles-ci n’ont aucun impact sur le code existant qui utilise ces interfaces et, par conséquent, l’ajout de nouvelles méthodes à ces interfaces est considéré comme rétrocompatible. Cependant, si le code personnalisé ***implémente*** l’une de ces interfaces, il introduit un risque de rétrocompatibilité pour le client.
 
 Les interfaces (et les classes) destinées uniquement à être implémentées par AEM sont annotées de *org.osgi.annotation.version.ProviderType* (ou, dans certains cas, une annotation héritée similaire *aqute.bnd.annotation.providertype*). Cette règle identifie les cas où une telle interface est implémentée (ou une classe est étendue) par code personnalisé.
 
@@ -260,7 +260,7 @@ public void orDoThis(Session session) throws Exception {
 
 **Depuis** : version 2018.4.0
 
-As described in the [Sling documentation](http://sling.apache.org/documentation/the-sling-engine/servlets.html), bindings servlets by paths is discouraged. Les servlets liés au chemin ne peuvent pas utiliser les contrôles d’accès JCR standard et, par conséquent, nécessitent une rigueur de sécurité supplémentaire. Plutôt que d’utiliser des servlets liés au chemin d’accès, il est recommandé de créer des nœuds dans le référentiel et d’enregistrer les servlets par type de ressource.
+Comme décrit dans la [documentation Sling](http://sling.apache.org/documentation/the-sling-engine/servlets.html), il est déconseillé de lier les servlets aux chemins. Les servlets liés au chemin ne peuvent pas utiliser les contrôles d’accès JCR standard et, par conséquent, nécessitent une rigueur de sécurité supplémentaire. Plutôt que d’utiliser des servlets liés au chemin d’accès, il est recommandé de créer des nœuds dans le référentiel et d’enregistrer les servlets par type de ressource.
 
 #### Code non conforme {#non-compliant-code-5}
 
@@ -347,7 +347,7 @@ public void doThis() throws Exception {
 }
 ```
 
-### Évitez de journaliser les informations lors de la gestion des demandes GET ou HEAD. {#avoid-logging-at-info-when-handling-get-or-head-requests}
+### Évitez de journaliser les informations lors de la gestion des requêtes GET ou HEAD. {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 **Clé** : CQRules:CQBP-44---LogInfoInGetOrHeadRequests
 
@@ -355,7 +355,7 @@ public void doThis() throws Exception {
 
 **Gravité** : mineure
 
-En règle général, le niveau de journal Informations doit être utilisé pour délimiter les actions importantes et, par défaut, AEM est configuré pour le journal au niveau Information ou au-dessus. Les méthodes GET et HEAD ne doivent jamais être en lecture seule et ne constituent donc pas des actions importantes. La journalisation au niveau d’Informations en réponse aux demandes GET ou HEAD est susceptible de créer un bruit journal significatif, rendant ainsi plus difficile l’identification des informations utiles dans les fichiers journaux. La journalisation lors de la gestion des demandes GET ou HEAD doit être soit aux niveaux d’avertissement ou d’erreur lorsque quelque chose est erroné, soit aux niveaux DEBUG ou TRACE si des informations de dépannage plus approfondies seraient utiles.
+En règle générale, le niveau de journal Informations doit être utilisé pour délimiter les actions importantes et, par défaut, AEM est configuré pour le journal au niveau Information ou au-dessus. Les méthodes GET et HEAD ne doivent jamais être en lecture seule et ne constituent donc pas des actions importantes. La journalisation au niveau d’Informations en réponse aux demandes GET ou HEAD est susceptible de créer un bruit journal significatif, rendant ainsi plus difficile l’identification des informations utiles dans les fichiers journaux. La journalisation lors de la gestion des demandes GET ou HEAD doit être soit au niveau d’avertissement ou d’erreur lorsque quelque chose est erroné, soit aux niveaux DEBUG ou TRACE si des informations de dépannage plus approfondies étaient utiles.
 
 >[!CAUTION]
 >
@@ -387,7 +387,7 @@ public void doGet() throws Exception {
 
 **Depuis** : version 2018.4.0
 
-Il est recommandé que les messages de journal fournissent des informations contextuelles sur l’emplacement d’une exception dans l’application. Bien que le contexte puisse également être déterminé par l’utilisation des arborescences des appels de procédure, il est généralement plus facile de lire et de comprendre le message du journal. Par conséquent, lors de la journalisation d’une exception, il est déconseillé d’utiliser le message de l’exception comme message du journal : le message d’exception contiendra ce qu’il s’est passé, alors que le message du journal doit servir à indiquer à un lecteur ce que faisait l’application lorsque l’exception s’est produite. Le message d’exception sera toujours consigné ; en spécifiant votre propre message, les journaux seront simplement plus faciles à comprendre.
+Il est recommandé que les messages de journal fournissent des informations contextuelles sur l’emplacement d’une exception dans l’application. Bien que le contexte puisse également être déterminé par l’utilisation des arborescences des appels de procédure, il est généralement plus facile de lire et de comprendre le message du journal. Par conséquent, lors de la journalisation d’une exception, il est déconseillé d’utiliser le message de l’exception comme message du journal : le message d’exception contiendra ce qu’il s’est passé, alors que le message du journal doit servir à indiquer à un lecteur ce que faisait l’application lorsque l’exception s’est produite. Le message d’exception sera toujours consigné ; en spécifiant votre propre message, les journaux seront simplement plus faciles à comprendre.
 
 #### Code non conforme {#non-compliant-code-9}
 
@@ -567,7 +567,7 @@ Vous trouverez ci-dessous les vérifications OakPAL exécutées par Cloud Manag
 
 **Depuis** : version 2019.6.0
 
-Il a été établi depuis longtemps que l’arborescence de contenu /libs dans le référentiel de contenu AEM doit être considéré comme étant en lecture seule par les clients. La modification des nœuds et des propriétés sous */libs* crée un risque significatif pour les mises à jour majeures et mineures. Les modifications apportées à */libs* ne doivent être effectuées que par Adobe par le biais de canaux officiels.
+Il a été établi depuis longtemps que l’arborescence de contenu /libs dans le référentiel de contenu AEM doit être considérée comme étant en lecture seule par les clients. La modification des nœuds et des propriétés sous */libs* crée un risque significatif pour les mises à jour majeures et mineures. Les modifications apportées à */libs* ne doivent être effectuées que par Adobe par le biais de canaux officiels.
 
 ### Les packages ne doivent pas contenir de configurations OSGi en double {#oakpal-package-osgi}
 
@@ -579,7 +579,7 @@ Il a été établi depuis longtemps que l’arborescence de contenu /libs dans l
 
 **Depuis** : version 2019.6.0
 
-Le fait qu’un même composant OSGi soit configuré plusieurs fois est un problème courant qui se produit sur les projets complexes. Cela crée une ambiguïté quant à la configuration qui sera exploitable. Cette règle est « compatible avec le mode d&#39;exécution » en ce qu’elle identifie uniquement les problèmes où le même composant est configuré plusieurs fois dans le même mode d&#39;exécution (ou combinaison de modes d’exécution).
+Le fait qu’un même composant OSGi soit configuré plusieurs fois est un problème courant qui se produit sur les projets complexes. Cela crée une ambiguïté quant à la configuration qui sera exploitable. Cette règle est « compatible avec le mode d’exécution » en ce qu’elle identifie uniquement les problèmes où le même composant est configuré plusieurs fois dans le même mode d’exécution (ou combinaison de modes d’exécution).
 
 #### Code non conforme {#non-compliant-code-osgi}
 
