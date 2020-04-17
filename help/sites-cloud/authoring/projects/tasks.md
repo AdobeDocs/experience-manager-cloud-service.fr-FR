@@ -1,7 +1,7 @@
 ---
 title: Utilisation de tâches
 description: Les tâches représentent les éléments de travail à effectuer sur le contenu. Elles sont utilisées dans les projets pour déterminer le niveau de réalisation des tâches en cours
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -13,17 +13,17 @@ Les tâches représentent des éléments de travail à effectuer sur le contenu.
 
 Les tâches sont également utilisées dans les projets pour déterminer le niveau de réalisation des tâches en cours, y compris des tâches de worfklow.
 
-## Suivi de la progression du projet {#tracking-project-progress}
+## Suivi de la progression du projet   {#tracking-project-progress}
 
 Vous pouvez surveiller l’état d’avancement de votre projet en examinant les tâches actives/terminées au sein du projet, représentées par la mosaïque **Tâches**. L’état d’avancement de votre projet peut être déterminé par les éléments suivants :
 
-* **** Mosaïque de tâche : La progression générale du projet est décrite dans le volet Tâche disponible sur la page des détails du projet.
+* **Mosaïque Tâches :** un état d’avancement global du projet est présenté dans la mosaïque Tâches disponible sur la page des détails du projet.
 
-* **** Liste des tâches : Lorsque vous cliquez sur le volet Tâche, une liste des tâches s’affiche. Cette liste comporte des informations détaillées sur toutes les tâches liées au projet.
+* **Liste Tâches :** lorsque vous cliquez sur la mosaïque Tâches, la liste des tâches s’affiche. Cette liste comporte des informations détaillées sur toutes les tâches liées au projet.
 
 Ces deux éléments répertorient les tâches de worfklow, ainsi que les tâches que vous créez directement dans la mosaïque **Tâches**.
 
-### Mosaïque Tâches {#task-tile}
+### Mosaïque Tâches   {#task-tile}
 
 Si un projet contient des tâches associées, une mosaïque Tâches s’affiche au sein du projet. La mosaïque Tâches affiche l’état actuel du projet. Cet état inclut les tâches existantes dans le worfklow et ne contient aucune tâche générée ultérieurement à mesure que se déroule le worfklow. La mosaïque Tâches contient les informations suivantes :
 
@@ -31,13 +31,13 @@ Si un projet contient des tâches associées, une mosaïque Tâches s’affiche 
 * Pourcentage de tâches actives
 * Pourcentage de tâches en retard
 
-![Volet Tâche](/help/sites-cloud/authoring/assets/projects-tasks.png)
+![Mosaïque Tâches](/help/sites-cloud/authoring/assets/projects-tasks.png)
 
 ### Affichage ou modification des tâches dans un projet {#viewing-or-modifying-the-tasks-in-a-project}
 
 Outre le suivi de l’avancée du projet, vous pouvez également afficher plus d’informations sur le projet ou le modifier.
 
-#### Liste Tâches {#task-list}
+#### Liste de tâches   {#task-list}
 
 Cliquez sur les points de suspension (...) dans la mosaïque Tâches pour afficher la liste des tâches liées au projet. Les tâches sont divisées par worfklow parent. Les détails de la tâche s’affichent avec les métadonnées, comme la date d’échéance, le cessionnaire, la priorité et l’état.
 
@@ -45,7 +45,7 @@ Cliquez sur les points de suspension (...) dans la mosaïque Tâches pour affich
 
 #### Détails de la tâche {#task-details}
 
-Pour plus d’informations sur une tâche particulière, dans la liste des tâches, appuyez/cliquez sur la tâche et **Détails de la tâche **ouvrez.
+Pour plus d’informations sur une tâche particulière, dans la liste Tâches, cliquez/appuyez sur la tâche pour ouvrir la fenêtre **Détails de la tâche**.
 
 ![Détails de la tâche](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
@@ -68,7 +68,7 @@ Pour ajouter une tâche :
 
 1. Cliquez/appuyez sur **Créer**.
 
-## Utilisation des tâches dans la boîte de réception {#working-with-tasks-in-the-inbox}
+## Utilisation des tâches dans la boîte de réception   {#working-with-tasks-in-the-inbox}
 
 Un autre moyen d’accéder aux tâches consiste à passer par la boîte de réception. Vous pouvez ouvrir le contenu à partir de la boîte de réception afin d’appliquer les modifications requises. Une fois cette opération effectuée, définissez l’état de la tâche sur « Terminé ». Les tâches s’affichent également dans votre boîte de réception lorsqu’elles sont affectées à un groupe d’utilisateurs auquel vous appartenez. Dans ce cas, tout membre du groupe peut effectuer le travail et accomplir la tâche.
 
