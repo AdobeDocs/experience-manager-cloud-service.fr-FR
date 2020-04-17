@@ -1,15 +1,15 @@
 ---
 title: Aperçu des ressources
-description: Découvrez comment prévisualiser des fichiers dans Contenu multimédia dynamique
-translation-type: tm+mt
+description: Découvrez comment prévisualiser des ressources dans Dynamic Media
+translation-type: ht
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ---
 
 
-# Previewing assets{#previewing-assets}
+# Aperçu des ressources{#previewing-assets}
 
-Vous pouvez utiliser la fonction Aperçu pour voir à quoi ressemble un fichier numérique que vous avez téléchargé lorsqu’il est affiché par un client dans son propre navigateur Web. La visionneuse par défaut incorporée inter-périphérique affectée à la ressource est utilisée pour l’aperçu.
+Vous pouvez utiliser la fonction Aperçu pour afficher une ressource numérique que vous avez chargée telle qu’elle sera présentée au client dans son navigateur web. La visionneuse par défaut incorporée inter-périphérique affectée à la ressource est utilisée pour l’aperçu.
 
 Une visionneuse est un ensemble de paramètres ou de « paramètres prédéfinis », tels que la taille d’affichage de la visionneuse, le comportement du zoom, les modèles de couleurs, les bordures et les polices, qui déterminent la manière dont les utilisateurs voient le contenu multimédia enrichi sur leurs écrans d’ordinateur et appareils mobiles.
 
@@ -22,12 +22,12 @@ En plus de la fonction Aperçu dédiée aux vidéos, aux visionneuses à 360° e
 >
 >Lorsque vous vous trouvez sur une page web (Sites) dans AEM, vous ne pouvez pas prévisualiser les ressources en mode d’**édition**. Activez le mode d’**aperçu** en cliquant sur **Aperçu** dans le coin supérieur droit.
 
-To enable or disable viewer presets in the user interface, see [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-presets.md).
+Pour activer ou désactiver les paramètres prédéfinis de visionneuse dans l’interface utilisateur, voir [Gestion des paramètres prédéfinis de visionneuse](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-**Pour prévisualiser des fichiers**
+**Prévisualisation d’une ressource**
 
-1. From **[!UICONTROL Adobe Experience Manager**, on the **[!UICONTROL Navigation** page, tap **[!UICONTROL Assets]**, then **[!UICONTROL Files]** to access assets.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL List View]**.
+1. Dans **Adobe Experience Manager**, sur la page **Navigation**, appuyez sur **[!UICONTROL Ressources]**, puis sur **[!UICONTROL Fichiers]** pour accéder aux ressources.
+1. Dans le coin supérieur droit de la page, dans la liste déroulante **[!UICONTROL Afficher]**, appuyez sur **[!UICONTROL Mode Liste]**.
 1. (Facultatif) Utilisez la colonne **[!UICONTROL Type]** pour trier les ressources en fonction du type que vous souhaitez prévisualiser.
 1. Sous la colonne **[!UICONTROL Titre]**, cliquez sur le nom du titre (et non sur l’image miniature) de la ressource à prévisualiser.
 1. Selon le type de ressource sur lequel vous avez cliqué, procédez de l’une des manières suivantes :
@@ -58,7 +58,7 @@ To enable or disable viewer presets in the user interface, see [Managing Viewer 
       <td><p><strong>Pour prévisualiser une ressource dans un rendu particulier</strong></p>
         <ul>
         <li>En haut à gauche de la page, cliquez sur l’icône pour afficher la liste déroulante. Cliquez sur <strong>Rendus</strong> dans la liste, puis sélectionnez un rendu spécifique à prévisualiser.</li>
-        </ul> <p>Si vous sélectionnez un rendu vidéo haute résolution à prévisualiser, la vidéo risque d’être tronquée. En effet, l’aperçu du rendu vous montre la résolution exacte que vos clients verront, tout cela dans le contexte de la visionneuse intégrée utilisée pour l’aperçu.</p> <p>Lorsque vous prévisualisez une visionneuse de vidéos adaptative au niveau du fichier, les rendus sont regroupés en une seule expérience de lecture. That is, the adaptive video is sized properly for viewing and played back using the best resolution in the context of your viewing device and connection speed.<br /> </p> <p><strong>Pour prévisualiser une ressource dans une visionneuse particulière</strong></p>
+        </ul> <p>La vidéo peut apparaître tronquée si vous sélectionnez une résolution plus élevée pour le rendu vidéo. En effet, l’aperçu du rendu vous indique la résolution exacte que vos clients verront, le tout dans le contexte de la visionneuse incorporée utilisée pour l’aperçu.</p> <p>Lorsque vous prévisualisez un ensemble de vidéos adaptables au niveau des ressources, les rendus sont regroupés en une seule lecture. C’est-à-dire que la vidéo adaptable est dimensionnée de manière appropriée pour le visionnage et est lue avec la meilleure résolution possible pour l’appareil de visionnage et la vitesse de connexion utilisés.<br /> </p> <p><strong>Pour prévisualiser une ressource dans une visionneuse particulière</strong></p>
         <ul>
         <li>En haut à gauche de la page, cliquez sur l’icône pour afficher la liste déroulante. Cliquez sur <strong>Visionneuses</strong> dans la liste, puis sélectionnez une visionneuse à appliquer à la ressource.</li>
         </ul> </td>
