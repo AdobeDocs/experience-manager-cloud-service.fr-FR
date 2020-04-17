@@ -1,7 +1,7 @@
 ---
-title: Notifications - Service Cloud
-description: Notifications - Service Cloud
-translation-type: tm+mt
+title: Notifications - Cloud Service
+description: Notifications - Cloud Service
+translation-type: ht
 source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
 
 ---
@@ -9,13 +9,15 @@ source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
 
 # Présentation des notifications {#notifications}
 
-[!UICONTROL Cloud Manager] permet à l’utilisateur de recevoir des notifications lorsque le pipeline de production démarre et se termine (avec succès ou non), au début d’un déploiement de production. Ces notifications sont envoyées via le système de notification Adobe [!UICONTROL Experience Cloud].
+[!UICONTROL Cloud Manager] permet à l’utilisateur de recevoir des notifications lorsque le pipeline de production démarre et se termine (avec succès ou non), au début d’un déploiement de production. Ces notifications sont envoyées via le système de notification Adobe [!UICONTROL Experience Cloud].
 
 >[!NOTE]
 >
 >Les notifications Approbation et Planifié sont envoyées uniquement aux utilisateurs ayant les rôles Propriétaire de l’entreprise, Responsable de programme et Responsable de déploiement.
 
-Les notifications s’affichent dans une barre latérale dans l’IU (interface utilisateur) de [!UICONTROL Cloud Manager] et dans Adobe [!UICONTROL Experience Cloud].
+Les notifications s’affichent dans une barre latérale dans l’IU (interface utilisateur) de [!UICONTROL Cloud Manager] et dans Adobe [!UICONTROL Experience Cloud].
+
+
 ![](assets/notify-1.png)
 
 Cliquez sur l’icône représentant une cloche dans l’en-tête pour ouvrir la barre latérale et afficher les notifications, comme illustré dans la figure suivante :
