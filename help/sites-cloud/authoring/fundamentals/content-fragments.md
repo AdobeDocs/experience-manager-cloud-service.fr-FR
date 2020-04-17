@@ -1,7 +1,7 @@
 ---
 title: Fragments de contenu
-description: Adobe Experience Manager en tant que fragments de contenu de service Cloud vous permet de concevoir, créer, traiter et utiliser du contenu indépendant des pages.
-translation-type: tm+mt
+description: Les fragments de contenu d’Adobe Experience Manager as a Cloud Service vous permettent de concevoir, de créer, d’organiser et d’utiliser du contenu indépendant des pages
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -13,25 +13,25 @@ Les fragments de contenu d’Adobe Experience Manager (AEM) [sont créés et gé
 
 Ils vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variations (éventuellement spécifiques aux canaux). Vous pouvez ensuite utiliser ces fragments et leurs variantes lors de la création de vos pages de contenu.
 
-En même temps que l’outil d’exportation JSON mis à jour, les fragments de contenu structuré peuvent également être utilisés pour livrer du contenu AEM via Content Services à des canaux autres que des pages AEM.
+En même temps que l’outil d’exportation JSON mis à jour, les fragments de contenu structuré peuvent également être utilisés pour diffuser du contenu AEM via Content Services à des canaux autres que des pages AEM.
 
 >[!NOTE]
 >
 >Les **fragments de contenu** et les **[fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**représentent deux fonctions distinctes d’AEM :
 >
 >* Les **fragments de contenu** sont des contenus éditoriaux, composés essentiellement de texte et des images associées. Il s’agit exclusivement de contenu, sans aucun élément de conception ni de mise en page.
->* **Les fragments** d’expérience sont entièrement disposés sur le contenu et, par conséquent, sur les fragments d’une page Web.
+>* Les **fragments d’expérience** désignent un contenu entièrement mis en page et donc les fragments d’une page web.
 >
 >
 Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
 
 >[!CAUTION]
 >
->This page must be read in conjunction with [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md) (and related pages) as it introduces basic terminology and concepts, together with creating and managing fragments.
+>Cette page doit être consultée en complément de la page [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md) (et des pages annexes), car elle présente la terminologie et les concepts de base, ainsi que la création et la gestion de fragments.
 
 Grâce aux fragments de contenu :
 
-* **Stratégie de marketing et de campagne** 
+* **Stratégie de marketing et de campagne**
    * Examen du contenu via des fragments de contenu gérés de manière centralisée.
 * **Designer pro**
    * Suivi des ressources de création via les collections associées à des fragments de contenu.
@@ -42,24 +42,24 @@ Grâce aux fragments de contenu :
    * Peuvent utiliser la création de version/les workflows.
    * Peuvent partager un fragment de contenu.
    * Peuvent gérer les traductions de manière centralisée.
-* **Producteurs et responsable parcours** 
+* **Producteurs et responsable parcours**
    * Font leur choix parmi des fragments et des variations prédéfinis pour créer du contenu dans AEM.
    * Peuvent compter sur une actualisation continue des fragments et du contenu associé à mesure que les rédacteurs et les designers modifient les fragments et les ressources gérés de manière centralisée.
    * Peuvent se fier à du contenu multimédia associé toujours pertinent.
    * Peuvent créer des variations de contenu ad hoc à la volée tout en garantissant leur gestion centralisée dans le fragment.
 
-## Ajout d’un fragment de contenu à une page {#adding-a-content-fragment-to-your-page}
+## Ajout d’un fragment de contenu à une page   {#adding-a-content-fragment-to-your-page}
 
 1. Ouvrez la page à modifier.
 2. Ajoutez le composant **Fragment de contenu** à partir du navigateur **Composants** ou **Insérer un nouveau composant**.
 3. Vous pouvez :
-   * Open the **Assets** browser and filter for **Content Fragments** (the default is Images). Faites ensuite glisser le fragment en question sur l’instance du composant.
+   * Ouvrir l’explorateur de **ressources** et filtrer sur **Fragments de contenu** (la valeur par défaut est Images). Faites ensuite glisser le fragment en question sur l’instance du composant.
    * Sélectionner le composant de fragment de contenu, puis **Configurer** dans la barre d’outils. Dans la boîte de dialogue, vous pouvez ouvrir la boîte de dialogue de sélection afin de rechercher et de sélectionner le **fragment de contenu** requis.
    >[!NOTE]
    >
-   >L’autre méthode consiste à faire glisser un fragment de contenu directement sur la page. Le composant associé est ainsi automatiquement créé (Fragment de contenu). 
+   >L’autre méthode consiste à faire glisser un fragment de contenu directement sur la page. Le composant associé est ainsi automatiquement créé (Fragment de contenu).
 
-4. Initially the content from the **Main** Element and **Master** (variation) will be shown. Vous pouvez [sélectionner d’autres éléments et/ou variantes](#selecting-the-element-or-variation) en fonction de vos besoins.
+4. Au début, le contenu des éléments **Principal** et **Maître** (variation) est affiché. Vous pouvez [sélectionner d’autres éléments et/ou variantes](#selecting-the-element-or-variation) en fonction de vos besoins.
 
    ![Fragments de contenu dans l’explorateur de ressources](/help/sites-cloud/authoring/assets/content-fragments.png)
 
@@ -82,7 +82,7 @@ Dans la boîte de dialogue de configuration appropriée, vous pouvez sélectionn
 * **Mode d’affichage** :
    * **Un seul élément texte**
    * **Plusieurs éléments**
-* **Elément**
+* **Élément**
    * Le type **Principal** par défaut est toujours disponible.
    * Une sélection est disponible si le fragment a été créé avec le modèle approprié.
    >[!NOTE]
@@ -94,19 +94,19 @@ Dans la boîte de dialogue de configuration appropriée, vous pouvez sélectionn
    * Une sélection est disponible si des variations ont été créées pour le fragment.
 * **Paragraphes** : indiquez la plage de paragraphes à inclure :
    * **Tous**
-   * **Plage**: par exemple, `1`, `3-5`, `9-*`
+   * **Plage** : par exemple, `1`, `3-5`, `9-*`
       * **Gérer les en-têtes comme leurs propres paragraphes**
 * **Gérer les en-têtes comme leurs propres paragraphes**
 
-### Connexion rapide à l’éditeur de fragment {#quick-connection-to-fragment-editor}
+### Connexion rapide à l’éditeur de fragment   {#quick-connection-to-fragment-editor}
 
-Vous pouvez ouvrir la source du fragment à modifier (la ressource) à l’aide de l’icône **Edition** située dans la barre d’outils du composant. Vous pourrez ainsi [modifier et gérer le fragment de contenu](/help/assets/content-fragments/content-fragments.md). 
+Vous pouvez ouvrir la source du fragment à modifier (la ressource) à l’aide de l’icône **Modifier** située dans la barre d’outils du composant. Vous pourrez ainsi [modifier et gérer le fragment de contenu](/help/assets/content-fragments/content-fragments.md).
 
 >[!CAUTION]
 >
 >Comme toujours, la modification de la source du fragment affectera toutes les pages qui font référence à ce fragment de contenu.
 
-### Ajout de contenu intermédiaire {#adding-in-between-content}
+### Ajout de contenu intermédiaire   {#adding-in-between-content}
 
 Lorsqu’un fragment de contenu particulier est ajouté à la page, un espace réservé **Faire glisser les composants ici** est présent entre chaque paragraphe HTML (en haut/en bas) du fragment.
 
@@ -116,11 +116,11 @@ Dans le cas du contenu intermédiaire, plusieurs possibilités vous sont offerte
 
 * Ajouter des composants à partir de l’[explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
 * Ajouter des ressources à partir de l’[explorateur de ressources](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser).
-* Use [Associated Content](#using-associated-content) as a source for in-between content.
+* Utiliser du [contenu associé](#using-associated-content) comme source de contenu intermédiaire.
 
 >[!CAUTION]
 >
->Le contenu intermédiaire est un contenu de la page. Il n’est pas stocké dans le fragment de contenu.
+>Le contenu intermédiaire est du contenu de page. Il n’est pas stocké dans le fragment de contenu.
 
 ![Insérer le composant](/help/sites-cloud/authoring/assets/content-fragments-insert.png)
 
@@ -134,14 +134,14 @@ Dans le cas du contenu intermédiaire, plusieurs possibilités vous sont offerte
 >
 >Une fois le contenu intermédiaire ajouté à un fragment de votre page, la modification de la structure du fragment de contenu sous-jacent (c’est-à-dire dans l’éditeur de fragment de contenu) risque de donner lieu à des résultats erronés/inattendus.
 >
->Dans ce cas, le contenu intermédiaire est conservé tel quel :
+>Si cela se produit, le contenu intermédiaire est conservé tel quel :
 >
 >* Les composants intermédiaires occupent une position absolue dans la séquence de composants du flux de fragments. Cette position ne varie pas, même en cas de modification du contenu des paragraphes dans le fragment.
    >  Cela peut donner l’impression que le positionnement relatif a changé, dans la mesure où les paragraphes intermédiaires n’ont aucune relation contextuelle avec les paragraphes (de fragment) près desquels ils sont placés.
 >* À moins que ces deux structures de paragraphes ne soient en conflit ; dans ce cas, le contenu intermédiaire n’est pas affiché, (bien qu’il soit toujours présent en interne).
 
 
-### Utilisation de contenu associé {#using-associated-content}
+### Utilisation de contenu associé   {#using-associated-content}
 
 Si vous avez [associé du contenu](/help/assets/content-fragments/content-fragments-assoc-content.md) au [fragment de contenu](/help/assets/content-fragments/content-fragments.md), ces ressources sont disponibles à partir du sidekick (une fois que vous avez placé votre fragment sur la page de contenu). Le contenu associé est en fait une source spéciale de [contenu intermédiaire](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
@@ -155,18 +155,18 @@ Si vous avez [associé du contenu](/help/assets/content-fragments/content-fragme
 
 Une fois que vous avez ajouté un fragment avec du contenu associé à votre page, un nouvel onglet (**Contenu associé**) est ouvert dans le panneau latéral.
 
-Dans cet onglet, vous pouvez faire glisser les ressources vers l’emplacement souhaité (un composant existant ou une position où le composant adéquat sera créé) : 
+Dans cet onglet, vous pouvez faire glisser les ressources vers l’emplacement souhaité (un composant existant ou une position où le composant adéquat sera créé) :
 
 ![Insertion d’une image](/help/sites-cloud/authoring/assets/content-fragments-image.png)
 
-### Ressources insérées dans le fragment{#assets-inserted-into-the-fragment} 
+### Ressources insérées dans le fragment {#assets-inserted-into-the-fragment}
 
 Si des ressources (des images, par exemple) ont été insérées dans le fragment proprement dit, les options permettant de les modifier dans l’éditeur de page sont limitées.
 
-Par exemple, pour une image, vous pouvez
+Dans le cas d’une image, par exemple, vous pouvez effectuer les opérations suivantes :
 
 * Recadrer, faire pivoter ou retourner l’image.
-* Ajouter un titre ou un texte de remplacement.
+* Ajouter un titre ou un texte secondaire.
 * Spécifier une taille.
 * Vous pouvez également configurer la mise en page.
 
@@ -174,7 +174,7 @@ Les autres modifications (déplacement, copie, suppression, etc.) doivent être 
 
 ### Publication {#publishing}
 
-Les fragments doivent être publiés pour pouvoir être utilisés dans des pages web publiées :
+Les fragments doivent être publiés pour pouvoir être utilisés dans les pages web que vous avez publiées :
 
 * Un fragment peut être publié une fois [qu’il a été créé dans la console Ressources](/help/assets/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment).
 * Si un *fragment non publié* est utilisé dans une page en cours de publication, le fragment peut également être publié à ce moment.
