@@ -1,7 +1,7 @@
 ---
 title: Console des composants
 description: La console Composants vous permet de parcourir tous les composants définis pour votre instance.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,19 +9,19 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # Console des composants {#components-console}
 
-La console Composants vous permet de parcourir tous les composants définis pour votre instance et d&#39;afficher les informations clés de chaque composant.
+La console des composants vous permet de parcourir tous les composants définis pour votre instance et d’afficher les informations clés pour chacun d’eux.
 
-It can be accessed from **Tools ->** **General ->** **Components**. Comme il n’existe pas de structure d’arborescence pour les composants, seule la vue Liste est disponible.
+Elle est accessible via **Outils** -> **Général** -> **Composants**. En l’absence d’arborescence, seul l’aperçu en liste est disponible.
 
-![La console Composants](/help/sites-cloud/authoring/assets/components-console.png)
+![Console Composants](/help/sites-cloud/authoring/assets/components-console.png)
 
 >[!NOTE]
 >
->La console Composants affiche tous les composants du système. L’[Explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) affiche les composants qui sont disponibles pour les auteurs et masque tous les groupes de composants qui commencent par un point ( `.`).
+>La console des composants affiche tous les composants du système. L’[Explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) affiche les composants qui sont disponibles pour les auteurs et masque tous les groupes de composants qui commencent par un point ( `.`).
 
 ## Recherche {#search-field}
 
-Avec l’icône **Contenu uniquement** (en haut à gauche), vous pouvez ouvrir le panneau de **recherche** pour rechercher et/ou filtrer les composants : 
+Avec l’icône **Contenu uniquement** (en haut à gauche), vous pouvez ouvrir le panneau de **recherche** pour rechercher et/ou filtrer les composants :
 
 ![Recherche dans la console des composants](/help/sites-cloud/authoring/assets/components-console-search.png)
 
@@ -42,7 +42,7 @@ Pour afficher les détails correspondant à un composant spécifique, appuyez/cl
       * Cliquez sur le type de super-ressource pour accéder à ce composant.
    >[!NOTE]
    >
-   >Because `/apps` is not editable at runtime, the Components Console is read-only.
+   >Étant donné que les `/apps` ne sont pas modifiables à l’exécution, la console Composants est en lecture seule.
 
 * **Stratégies**
 
@@ -54,7 +54,7 @@ Pour afficher les détails correspondant à un composant spécifique, appuyez/cl
 
    >[!CAUTION]
    >
-   >En raison de la nature des informations collectées pour cette vue, la collecte/l’affichage de ces informations peut nécessiter un certain temps. 
+   >En raison de la nature des informations collectées pour cette vue, la collecte/l’affichage de ces informations peut nécessiter un certain temps.
 
 * **Documentation**
 
