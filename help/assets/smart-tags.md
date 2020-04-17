@@ -2,7 +2,7 @@
 title: Balises intelligentes améliorées
 description: Appliquez des balises commerciales contextuelles et descriptives à l’aide du service AI et ML d’Adobe Sensei afin d’améliorer la découverte de ressources et la vitesse du contenu.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dfa9b099eaf7f0d155986bbab7d56901876d98f6
 
 ---
@@ -10,49 +10,49 @@ source-git-commit: dfa9b099eaf7f0d155986bbab7d56901876d98f6
 
 # Balisez intelligemment vos ressources {#smart-tag-assets}
 
-## Overview of Smart Tags {#overview-of-enhanced-smart-tags}
+## Présentation des balises intelligentes améliorées {#overview-of-enhanced-smart-tags}
 
 Les entreprises qui traitent les ressources numériques utilisent de plus en plus le vocabulaire contrôlé par taxonomie dans les métadonnées des ressources. Il comprend essentiellement une liste des mots-clés que les employés, les partenaires et les clients utilisent fréquemment pour mentionner et rechercher des ressources numériques d’une classe particulière. Le balisage des ressources avec vocabulaire contrôlé par taxonomie permet de s’assurer que les ressources peuvent être facilement identifiées et récupérées par des recherches reposant sur les balises.
 
 Comparé aux vocabulaires des langages naturels, le balisage des ressources numériques basé sur la taxonomie métier aide à les aligner avec les activités d’une entreprise et à assurer que les ressources les mieux adaptées apparaissent dans les recherches. Par exemple, un constructeur de voitures peut baliser les images de voitures avec les noms de modèles afin d’afficher uniquement les images appropriées lors de recherches d’images de différents modèles pour concevoir une campagne de promotion.
 
-In the background, the Smart Content Service uses AI framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes.
+En arrière-plan, le service de contenu dynamique utilise le framework d’intelligence artificielle d’[Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) pour entraîner son algorithme de reconnaissance d’image sur votre structure de balises et votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes.
 
 >[!NOTE]
 >
->Les services de contenu dynamique ne s’appliquent qu’aux clients d’Assets. Smart Content Service est disponible à l’achat en tant que module complémentaire d’Experience Manager.
+>Les services de contenu dynamique ne s’appliquent qu’aux clients d’Assets. Le service de contenu dynamique est disponible à l’achat en tant que module complémentaire d’Experience Manager.
 
 <!-- ![flowchart](assets/flowchart.gif) -->
 
-## Gestion des balises dynamiques et des recherches {#manage-smart-tags-and-searches}
+## Gestion des balises intelligentes et des recherches {#manage-smart-tags-and-searches}
 
-Vous pouvez traiter les balises actives pour supprimer les balises inexactes qui ont pu être attribuées aux images de votre marque afin que seules les balises les plus pertinentes soient affichées.
+Vous pouvez organiser les balises intelligentes pour supprimer toute balise non pertinente qui pourrait avoir été attribuée à vos images de marque, afin que seules les balises les plus pertinentes s’affichent.
 
 La modération de balises intelligentes contribue également à affiner les résultats des recherches d’images basées sur des balises, en garantissant que votre image apparaisse dans les résultats de la recherche pour les balises les plus pertinentes. Essentiellement, cela réduit les risques que des images non pertinentes apparaissent dans les résultats de la recherche.
 
-Vous pouvez également affecter un rang supérieur à une balise pour en accroître la pertinence par rapport à une image. La promotion d’une balise pour une image augmente les risques qu’une image apparaisse dans les résultats de la recherche lorsqu’une recherche est basée sur cette balise.
+Vous pouvez également attribuer un rang supérieur à une balise afin d’accroître son degré de pertinence par rapport à une image. La promotion d’une balise pour une image augmente les risques qu’une image apparaisse dans les résultats de la recherche lorsqu’une recherche est basée sur cette balise.
 
-1. Dans la zone Omnisearch, recherchez des ressources basées sur une balise .
+1. Dans l’encadré Omnisearch, recherchez des ressources sur la base d’une balise.
 1. Examinez les résultats de la recherche pour identifier une image que vous ne trouvez pas pertinente.
 1. Sélectionnez l’image, puis cliquez/appuyez sur l’icône **[!UICONTROL Gérer les balises]** dans la barre d’outils.
-1. Examinez les balises sur la page **[!UICONTROL Gérer les balises]**. Si vous ne souhaitez pas que la recherche de l’image soit basée sur une balise spécifique, sélectionnez la balise, puis cliquez/appuyez sur l’icône Supprimer de la barre d’outils. Alternatively, click/tap `X` symbol that appears beside the label.
-1. Pour attribuer un rang supérieur à une balise, sélectionnez-la et cliquez/appuyez sur l’icône de promotion dans la barre d’outils. La balise faisant l’objet d’une conversion est déplacée dans la section **[!UICONTROL Balises]**.
-1. Click/tap **[!UICONTROL Save]**, and then click/tap **[!UICONTROL OK]** to close the Success dialog.
+1. Examinez les balises sur la page **[!UICONTROL Gérer les balises]**. Si vous ne souhaitez pas que l’image puisse être recherchée sur la base d’une balise spécifique, sélectionnez la balise, puis cliquez/appuyez sur l’icône Supprimer dans la barre d’outils. Sinon, cliquez/appuyez sur le symbole `X` qui apparaît en face du libellé.
+1. Pour attribuer un rang supérieur à une balise, sélectionnez-la, puis cliquez/appuyez sur l’icône Convertir dans la barre d’outils. La balise faisant l’objet d’une conversion est déplacée dans la section **[!UICONTROL Balises]**.
+1. Cliquez/appuyez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL OK]** pour fermer la boîte de dialogue de réussite.
 1. Accédez à la page Propriétés de l’image. Remarquez que la balise que vous avez convertie se voit attribuer une pertinence élevée et apparaît donc plus haut dans les résultats de la recherche.
 
-### Comprendre les résultats de recherche AEM avec des balises dynamiques {#understandsearch}
+### Comprendre les résultats de recherche AEM avec des balises dynamiques   {#understandsearch}
 
-By default, AEM search combines the search terms with an `AND` clause. L’utilisation de balises dynamiques ne modifie pas ce comportement par défaut. Using smart tags adds an additional `OR` clause to find any of the search terms in the applies smart tags. For example, consider searching for `woman running`. Assets with just `woman` or just `running` keyword in the metadata do not appear in the search results by default. However, an asset tagged with either `woman` or `running` using smart tags appears in such a search query. Les résultats de la recherche sont donc une combinaison de
+Par défaut, la recherche AEM associe les termes de recherche avec une clause `AND`. L’utilisation de balises intelligentes ne modifie pas ce comportement par défaut. Elle ajoute une clause `OR` supplémentaire pour trouver l’un des termes de recherche dans les balises intelligentes. Par exemple, pour la recherche de `woman running`. Les ressources avec les mots-clés `woman` ou `running` uniquement dans les métadonnées n’apparaissent pas dans les résultats de recherche par défaut. Toutefois, une ressource balisée avec `woman` ou `running` à l’aide de balises intelligentes apparaît dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de
 
-* assets with `woman` and `running` keywords in the metadata.
+* ressources avec les mots-clés `woman` et `running` dans les métadonnées.
 
 * ressources avec balise dynamique avec l’un des mots-clés.
 
 Les résultats de recherche qui correspondent à tous les termes de recherche dans les champs de métadonnées s’affichent en premier, suivis des résultats de recherche correspondant à l’un des termes de recherche des balises dynamiques. Dans l’exemple ci-dessus, l’ordre approximatif de l’affichage des résultats de recherche est le suivant :
 
-1. matches of `woman running` in the various metadata fields.
-1. correspondances de `woman running` dans les balises actives.
-1. matches of `woman` or of `running` in smart tags.
+1. correspondances de `woman running` dans les différents champs de métadonnées.
+1. correspondances de `woman running` dans les balises intelligentes.
+1. correspondances de `woman` ou de `running` dans des balises intelligentes.
 
 <!-- 
 
