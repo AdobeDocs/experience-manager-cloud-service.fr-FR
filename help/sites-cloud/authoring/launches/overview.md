@@ -1,7 +1,7 @@
 ---
 title: Lancements
-description: Lancements vous permettent de développer efficacement du contenu pour une prochaine version. Les lancements permettent de préparer les modifications pour une publication à venir, tout en conservant vos pages actuelles.
-translation-type: tm+mt
+description: Les lancements   vous permettent de développer efficacement du contenu en vue d’une publication ultérieure. Les lancements permettent de préparer les modifications pour une publication à venir, tout en conservant vos pages actuelles.
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -22,10 +22,10 @@ Par exemple, les pages de produits saisonniers de votre boutique en ligne sont m
 
 Les lancements peuvent également être :
 
-* Créés pour plusieurs branches racine. Même si vous pouvez créer un lancement pour le site dans son intégralité (et y apporter des modifications), cette méthode n’est pas pratique puisque l’ensemble du site doit être copié. Lorsque des centaines, voire des milliers, de pages sont utilisées, les configurations et les performances du système dépendent de l’action de copie et ultérieurement des comparaisons nécessaires pour les tâches de conversion.
+* Créés pour plusieurs branches racine. Même si vous pouvez créer un lancement pour le site dans son intégralité (et y apporter des modifications), cette méthode n’est pas pratique puisque l’ensemble du site doit être copié. Lorsque des centaines, voire des milliers de pages sont utilisées, les configurations et les performances du système dépendent de l’action de copie et ultérieurement des comparaisons nécessaires pour les tâches de conversion.
 * Imbriqués (un lancement dans un lancement). Vous pouvez ainsi créer un lancement à partir d’un lancement existant pour que les développeurs de contenu exploitent les modifications déjà apportées, au lieu de répercuter ces mêmes modifications à plusieurs reprises pour chaque lancement.
 
-This section describes how to create, edit and promote (and if necessary [delete](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) launch pages from within the Sites console or [the Launches console](#the-launches-console):
+Cette section explique comment créer, modifier et convertir (et, le cas échéant, [supprimer](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) les pages de lancement de la console Sites ou de la console [Lancements](#the-launches-console) :
 
 * [Création de lancements](/help/sites-cloud/authoring/launches/creating.md)
 * [Modification de lancements](/help/sites-cloud/authoring/launches/editing.md)
@@ -52,7 +52,7 @@ La fonction Lancements vous permet de :
       * Modifiez le contenu des pages source (après les avoir à nouveau converties).
       * Convertissez toutes les pages ou uniquement celles qui ont été modifiées.
    * Automatiquement, ce qui implique les étapes suivantes : 
-      * Le champ **Date de** **lancement** (**En direct**) : ce paramètre peut être défini lors de la création ou de la modification d’un lancement.
+      * Le champ **Date de** **lancement** (**En direct**) : ce paramètre peut être défini lors de la création ou de la modification du lancement.
       * L’indicateur **Prêt pour la production** : cette option n’est sélectionnable que lors de la modification d’un lancement.
       * Si l’indicateur **Prêt pour la production** est défini, le lancement sera automatiquement converti en pages de production à la date de **lancement** (**En direct**) spécifiée ****. Une fois la conversion faite, les pages de production sont automatiquement publiées.\
          Si aucune date n’a été définie, l’indicateur n’a aucun effet.
@@ -72,7 +72,7 @@ La fonction Lancements vous permet de :
 
 >[!NOTE]
 >
->Creating and editing launches requires access rights to `/content/launches` - as with the default group `content-authors`.
+>La création et la modification de lancements exigent des droits d’accès à `/content/launches`, comme avec le groupe par défaut `content-authors`.
 >
 >Si vous rencontrez des difficultés, contactez votre administrateur système. 
 
@@ -82,7 +82,7 @@ La console de lancements fournit un aperçu de vos lancements et permet d’appl
 
 * La console **Outils** : **Outils**, **Sites**, **Lancements**.
 
-* Ou directement avec `https://<host>:<port>/libs/launches/content/launches.html`
+* Ou directement avec `https://<host>:<port>/libs/launches/content/launches.html`.
 
 ## Lancements dans les références (console de sites) {#launches-in-references-sites-console}
 
