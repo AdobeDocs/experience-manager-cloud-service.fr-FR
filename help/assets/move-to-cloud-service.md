@@ -1,19 +1,19 @@
 ---
-title: Migration vers le service Cloud à partir d’Adobe Experience Manager 6.x
-description: Migration vers le service Cloud à partir d’Adobe Experience Manager 6.x
+title: Migration vers Cloud Service à partir d’Adobe Experience Manager 6.x
+description: Migration vers Cloud Service à partir d’Adobe Experience Manager 6.x
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
 
-# Déplacement vers Adobe Experience Manager Assets as a Cloud Service {#move-to-assets-cloud-service}
+# Migration vers Adobe Experience Manager Assets as a Cloud Service {#move-to-assets-cloud-service}
 
 <!-- About the need to move from previous AEM deployment to a cloud service deployment. And how does Adobe help do it OOTB?
 -->
 
-## A propos de l’outil de migration {#migration-tool}
+## À propos de l’outil de migration {#migration-tool}
 
 <!-- 
 Link back to information about the tool in the Experience Manager as a Cloud Service docs if the tool works the same for Sites and Assets. Document the Assets-specific information here.
@@ -25,17 +25,17 @@ Link back to information about the tool in the Experience Manager as a Cloud Ser
 
 -->
 
-L’outil de migration permet d’effectuer les opérations suivantes :
+L’outil de migration permet d’effectuer les opérations suivantes :
 
-* Convertissez les modèles de processus existants en profils de traitement qui fonctionnent avec le service de calcul des ressources.
-* Supprimez les étapes non prises en charge des modèles de processus.
-* Désactivez les lanceurs de processus.
-* Fusionnez les configurations, après confirmation/validation de l’utilisateur, dans le code source existant.
+* Convertir les modèles de workflows existants en profils de traitement qui fonctionnent avec le service de calcul des ressources.
+* Supprimer les étapes non prises en charge des modèles de workflow.
+* Désactiver les lanceurs de workflow.
+* Fusionner les configurations, après confirmation et validation de l’utilisateur, dans le code source existant.
 
-L’outil de migration crée des profils de traitement dans un module expert que les utilisateurs peuvent utiliser de deux manières :
+L’outil de migration crée des profils de traitement dans un module Maven que les utilisateurs peuvent utiliser de deux manières :
 
-* Fusion dans l’un de leurs projets existants.
-* Ajoutez le module en tant que nouveau sous-module.
+* En le fusionnant à l’un de leurs projets existants
+* En ajoutant le module en tant que nouveau sous-module
 
 L’outil de migration fournit un rapport sur les modifications qu’il a apportées et des informations sur les modifications.
 
