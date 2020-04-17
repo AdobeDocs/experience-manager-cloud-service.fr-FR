@@ -2,7 +2,7 @@
 title: Ajout de zones cliquables
 description: Découvrez comment ajouter des zones cliquables avec liens hypertexte aux ressources d’images.
 contentOwner: asgupta
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
