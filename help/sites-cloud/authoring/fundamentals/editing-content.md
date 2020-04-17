@@ -1,7 +1,7 @@
 ---
 title: Modification du contenu de la page
 description: Une fois votre page créée, vous pouvez modifier le contenu pour effectuer les mises à jour dont vous avez besoin.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -17,24 +17,24 @@ Le contenu est ajouté à l’aide de [composants](/help/sites-cloud/authoring/f
 >
 >Vous devez disposer des droits d’accès et des autorisations appropriés sur votre compte pour modifier les pages.
 >
->En cas de problèmes, contactez votre administrateur système.
+>En cas de problème, contactez votre administrateur système.
 <!--
 >Your account needs the [appropriate access rights](/help/sites-administering/security.md) and [permissions](/help/sites-administering/security.md#permissions) to edit pages.
 -->
 
 >[!NOTE]
 >
->If your page and/or template has been appropriately set up, then you can use [responsive layout](/help/sites-cloud/authoring/features/responsive-layout.md) when editing.
+>Si votre page et/ou modèle ont été configurés correctement, vous pouvez utiliser la [mise en page réactive](/help/sites-cloud/authoring/features/responsive-layout.md) lors de la modification.
 
 >[!TIP]
 >
->When in **Edit** mode, links in your content are visible, but **not accessible**. Use [Preview mode](#previewing-pages) if you want to navigate using the links in your content.
+>En mode **Édition**, les liens dans votre contenu sont visibles, mais ils ne sont **pas accessibles**. Utilisez le [mode Aperçu](#previewing-pages) pour naviguer en suivant les liens.
 
 ## Barre d’outils Page {#page-toolbar}
 
 La barre d’outils Page permet d’accéder à la fonctionnalité appropriée, en fonction de la configuration de la page.
 
-![Barre d’outils de la page](/help/sites-cloud/authoring/assets/editing-page-toolbar.png)
+![Barre d’outils Page](/help/sites-cloud/authoring/assets/editing-page-toolbar.png)
 
 La barre d’outils vous donne accès à de nombreuses options. La disponibilité de certaines options dépend du contexte et de la configuration en cours.
 
@@ -54,13 +54,13 @@ La barre d’outils vous donne accès à de nombreuses options. La disponibilit�
 
    Active/désactive la [barre d’outils de l’émulateur](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate), utilisée pour simuler l’aspect de la page sur un autre périphérique. Cette option est automatiquement désactivée dans le mode Mise en page.
 
-   ![Emulateur, bouton](/help/sites-cloud/authoring/assets/emulator.png)
+   ![Bouton Émulateur](/help/sites-cloud/authoring/assets/emulator.png)
 
 * **ContextHub**
 
    Ouvre [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md). Uniquement disponible en mode Aperçu.
 
-   ![Context Hub, bouton](/help/sites-cloud/authoring/assets/context-hub.png)
+   ![Bouton ContextHub](/help/sites-cloud/authoring/assets/context-hub.png)
 
 * **Titre de la page**
 
@@ -72,7 +72,7 @@ La barre d’outils vous donne accès à de nombreuses options. La disponibilit�
 
    Affiche le [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) en cours et vous permet d’en sélectionner un autre, tel que Édition, Mise en page, Timewarp ou Ciblage.
 
-   ![Sélecteur de mode, bouton](/help/sites-cloud/authoring/assets/mode-selector.png)
+   ![Bouton Sélecteur de mode](/help/sites-cloud/authoring/assets/mode-selector.png)
 
 * **Aperçu**
 
@@ -88,9 +88,9 @@ La barre d’outils vous donne accès à de nombreuses options. La disponibilit�
 
 ### Notification d’état {#status-notification}
 
-If a page is part of a [workflow](/help/sites-cloud/authoring/workflows/overview.md) or multiple workflows, this information is shown in a notification bar at the top of the screen when editing the page.
+Si la page fait partie d’un ou de plusieurs [workflows](/help/sites-cloud/authoring/workflows/overview.md), ces informations s’affichent dans une barre de notification située en haut de l’écran lorsque vous la modifiez.
 
-![Notification de flux de travail](/help/sites-cloud/authoring/assets/editing-workflow-notification.png)
+![Notification de workflow](/help/sites-cloud/authoring/assets/editing-workflow-notification.png)
 
 >[!NOTE]
 >
@@ -98,15 +98,15 @@ If a page is part of a [workflow](/help/sites-cloud/authoring/workflows/overview
 
 La notification indique le workflow exécuté sur la page. Si l’utilisateur prend part à l’étape actuelle du workflow, des options [affectant l’état du workflow](/help/sites-cloud/authoring/workflows/participating.md) et permettant d’obtenir plus d’informations sur le workflow sont également disponibles, à savoir :
 
-* **Terminer** - Ouvre la boîte de dialogue **Terminer l&#39;élément** de travail
-* **Délégué** - Ouvre la boîte de dialogue **Terminer l&#39;élément** de travail
-* **Afficher les détails** - Ouvre la fenêtre **Détails** du processus
+* **Terminer** : ouvre la boîte de dialogue **Terminer l’élément de travail**
+* **Déléguer** : ouvre la boîte de dialogue **Terminer l’élément de travail**
+* **Afficher les détails** : ouvre la fenêtre **Détails** du workflow
 
-Completing and delegating workflow steps via the notification bar works as it does when [participating in workflows](/help/sites-cloud/authoring/workflows/participating.md) from the Notification inbox.
+L’utilisation de la barre de notification pour terminer et déléguer des étapes de workflow fonctionne de la même manière que la [participation à des workflows](/help/sites-cloud/authoring/workflows/participating.md) depuis la boîte de réception de notifications.
 
 Si la page est soumise à plusieurs workflows, leur nombre est indiqué à droite de la notification, avec des chevrons, pour vous permettre de les parcourir.
 
-![Notifications de processus multiples](/help/sites-cloud/authoring/assets/editing-workflow-notification-multiple.png)
+![Notifications de workflows multiples](/help/sites-cloud/authoring/assets/editing-workflow-notification-multiple.png)
 
 ## Espace réservé du composant {#component-placeholder}
 
@@ -126,7 +126,7 @@ L’espace réservé du composant est un indicateur qui signale où sera positio
 
 Vous pouvez ajouter un nouveau composant à l’aide de l’[explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). L’[espace réservé du composant](#component-placeholder) indique où le composant va être positionné :
 
-1. Assurez-vous que votre page est en [**mode Édition **](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
+1. Assurez-vous que votre page est en mode [**Édition **](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Ouvrez l’[explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
 1. Faites glisser le composant jusqu’à la [position requise](#component-placeholder).
 1. [Modifiez](#edit-content) le composant.
@@ -139,22 +139,22 @@ Vous pouvez ajouter un nouveau composant à l’aide de l’[explorateur de comp
 
 Vous pouvez ajouter un nouveau composant à l’aide de la case **Faire glisser les composants ici** du système de paragraphes :
 
-1. Assurez-vous que votre page est en [**mode Édition **](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
+1. Assurez-vous que votre page est en mode [**Édition **](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Pour sélectionner et ajouter un nouveau composant à partir du système de paragraphes, deux méthodes peuvent être utilisées :
 
    * Sélectionnez l’option **Insérer le composant** (+) à partir de la barre d’outils d’un composant existant ou de la zone **Faire glisser les composants ici**.
 
       ![Insertion d’un composant](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
-   * If you are on a desktop device you can double-click on the **Drag components here** box.
+   * Si vous utilisez un ordinateur de bureau, vous pouvez double-cliquer sur la zone **Faire glisser les composants ici**.
 
    * La boîte de dialogue **Insérer un nouveau composant** s’affiche pour vous permettre de sélectionner le composant nécessaire :
 
-      ![Insérer un nouveau composant, boîte de dialogue](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
+      ![Boîte de dialogue Insérer un nouveau composant](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
 1. Le composant sélectionné est alors ajouté au bas de la page. [Modifiez](#edit-content) le composant selon les besoins.
 
-### Insertion d’un composant à partir de l’Explorateur de ressources {#inserting-a-component-using-the-assets-browser}
+### Insertion d’un composant à partir de l’Explorateur de ressources    {#inserting-a-component-using-the-assets-browser}
 
 Vous pouvez également ajouter un nouveau composant à la page en faisant glisser un élément depuis l’[explorateur de ressources](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). Un nouveau composant du type approprié (et contenant l’élément) est ainsi créé automatiquement.
 
@@ -162,7 +162,7 @@ Ce comportement peut être configuré pour votre installation. Pour plus d’inf
 
 Pour créer un composant en faisant glisser l’un des types de ressources ci-dessus, suivez ces étapes :
 
-1. Assurez-vous que votre page est en [**mode Édition **](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
+1. Assurez-vous que votre page est en mode [**Édition **](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Ouvrez l’[explorateur de ressources](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser).
 1. Faites glisser la ressource jusqu’à la position requise. L’[espace réservé du composant](#component-placeholder) indique où le composant va être positionné.
 
@@ -176,7 +176,7 @@ Pour créer un composant en faisant glisser l’un des types de ressources ci-de
 
 Si, lors de l’exploration des ressources, vous estimez qu’il est nécessaire d’apporter une modification rapide à l’une d’elles, vous pouvez lancer directement l’éditeur de ressources à partir du navigateur en cliquant sur l’icône d’édition située en regard de son nom. <!--If when browsing the assets you find that you need to make a quick change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the browser by clicking the edit icon next to the asset's name.-->
 
-![Bouton Modifier un fichier](/help/sites-cloud/authoring/assets/asset-edit-button.png)
+![Bouton Modifier la ressource](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
 ## Barre d’outils des composants {#component-toolbar}
 
@@ -188,13 +188,13 @@ Les actions disponibles pour l’utilisateur sont affichées comme il convient 
 
 * **Modifier**
 
-   [Selon le type](/help/sites-cloud/authoring/fundamentals/components.md) de composant, cela vous permettra de [modifier le contenu du composant](#edit-content). Une barre d’outils est souvent disponible.
+   [En fonction du type de composant](/help/sites-cloud/authoring/fundamentals/components.md), vous pouvez [en modifier le contenu](#edit-content). Une barre d’outils est souvent disponible.
 
-   Bouton ![Modifier](/help/sites-cloud/authoring/assets/editing-component-toolbar-edit.png)
+   ![Bouton Modifier](/help/sites-cloud/authoring/assets/editing-component-toolbar-edit.png)
 
 * **Configurer**
 
-   [Selon le type](/help/sites-cloud/authoring/fundamentals/components.md) de composant, vous pourrez modifier et configurer les propriétés du composant. En général, une boîte de dialogue s’ouvre.
+   [En fonction du type de composant](/help/sites-cloud/authoring/fundamentals/components.md), vous pouvez modifier et configurer ses propriétés. En général, une boîte de dialogue s’ouvre.
 
    ![Bouton Configurer](/help/sites-cloud/authoring/assets/editing-component-toolbar-configure.png)
 
@@ -214,7 +214,7 @@ Les actions disponibles pour l’utilisateur sont affichées comme il convient 
 
    Vous devez confirmer cette opération avant que le composant ne soit supprimé de la page.
 
-   ![Bouton de suppression](/help/sites-cloud/authoring/assets/editing-component-toolbar-delete.png)
+   ![Bouton Supprimer](/help/sites-cloud/authoring/assets/editing-component-toolbar-delete.png)
 
 * **Insérer le composant**
 
@@ -243,7 +243,7 @@ Les actions disponibles pour l’utilisateur sont affichées comme il convient 
 
 * **Parent**
 
-   Cela vous permet de sélectionner le composant parent du composant sélectionné.
+   Permet de sélectionner le composant parent du composant sélectionné.
 
    ![Bouton Parent](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
 
@@ -251,13 +251,13 @@ Les actions disponibles pour l’utilisateur sont affichées comme il convient 
 
    Cette option vous permet de modifier la [mise en page](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) du composant sélectionné. Cela s’applique uniquement au composant sélectionné et n’active pas le [mode Mise en page](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) de la page entière.
 
-   ![Bouton Disposition](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
+   ![Bouton Mise en page](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 * **Convertir en variation de fragment d’expérience**
 
    Permet de créer un [fragment d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) à partir du composant sélectionné ou de l’ajouter à un fragment d’expérience existant.
 
-   ![Bouton Convertir en fragment d’expérience](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
+   ![Bouton Convertir en variation de fragment d’expérience](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
 ## Modifier le contenu {#edit-content}
 
@@ -266,7 +266,7 @@ Deux méthodes permettent d’ajouter et/ou de modifier le contenu dans les comp
 * Ouvrez la [boîte de dialogue de composant pour l’édition](#component-edit-dialog).
 * [Faites glisser et déposez un élément](#drag-and-drop-assets-into-component) depuis l’explorateur de ressources pour ajouter directement du contenu.
 
-### Boîte de dialogue d’édition de composant {#component-edit-dialog}
+### Boîte de dialogue d’édition de composant    {#component-edit-dialog}
 
 Vous pouvez ouvrir un composant pour modifier le contenu à l’aide de l’[icône Modifier (crayon) de la barre d’outils Composant](#component-toolbar).
 
@@ -274,7 +274,7 @@ Les options de modification disponibles dépendent du composant. Pour certains c
 
 * Composant textuel
 
-   ![Barre d’outils du composant de texte](/help/sites-cloud/authoring/assets/editing-text-component-toolbar.png)
+   ![Barre d’outils du composant textuel](/help/sites-cloud/authoring/assets/editing-text-component-toolbar.png)
 
 * Composant d’image
 
@@ -284,33 +284,33 @@ Les options de modification disponibles dépendent du composant. Pour certains c
    >
    >L’édition ne fonctionne pas sur un composant d’image vide.
    >
-   >Vous devez faire glisser ou télécharger une image vers le composant avant de pouvoir commencer à la modifier.
+   >Vous devez faire glisser ou charger une image (à l’aide de l’option Configurer) avant de commencer à la modifier.
 
 * Composant image – Plein écran
 
    L’[activation du mode Plein écran](#edit-content-full-screen-mode) pour le composant d’image permet de disposer de davantage d’espace pour modifier l’image. Cela permet également d’afficher des options d’édition supplémentaires, telles que **Lancer une Map** et **Réinitialiser le zoom**. Le mode Plein écran permet, en outre, de sélectionner des paramètres de recadrage prédéfinis.
 
-   ![Mode plein écran du composant d’image](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
+   ![Mode Plein écran du composant d’image](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
-* Les composants créés à partir de plusieurs composants de base vous demandent d’abord de confirmer l’ensemble d’options de modification que vous souhaitez :
+* Les composants construits à partir de plusieurs composants de base vous demandent tout d’abord de confirmer à quel jeu d’options de modification vous souhaitez accéder :
 
 ### Faire glisser et déposer des éléments dans des composants {#drag-and-drop-assets-into-component}
 
-Pour des types de composants spécifiques (tels que les images), vous pouvez faire glisser des fichiers depuis l’explorateur de ressources directement dans le composant pour mettre à jour le contenu.
+Pour certains types de composants (comme les images), vous pouvez faire glisser et déposer des éléments depuis l’explorateur de ressources directement dans le composant pour mettre à jour le contenu.
 
-## Edit Content in Full Screen Mode {#edit-content-full-screen-mode}
+## Modifier le contenu en mode Plein écran {#edit-content-full-screen-mode}
 
-Pour tous les composants, vous pouvez accéder au mode plein écran (ou le quitter) avec :
+Pour tous les composants, vous pouvez accéder au mode Plein écran (ou le quitter) avec :
 
 ![Bouton Plein écran](/help/sites-cloud/authoring/assets/editing-full-screen.png)
 
 Par exemple, le composant **textuel** :
 
-![Composant de texte en plein écran](/help/sites-cloud/authoring/assets/editing-text-full-screen.png)
+![Composant textuel en plein écran](/help/sites-cloud/authoring/assets/editing-text-full-screen.png)
 
 >[!NOTE]
 >
->Pour certains composants, le mode plein écran aura plus d’options que l’éditeur statique de base.
+>Pour certains composants, le mode Plein écran dispose d’un plus grand nombre d’options disponibles que l’éditeur en place de base.
 
 ## Déplacement d’un composant {#moving-a-component}
 
@@ -331,13 +331,13 @@ Pour déplacer un composant de paragraphe :
 
 Au lieu de basculer à plusieurs reprises entre les modes d’édition et de [mise en page](/help/sites-cloud/authoring/features/responsive-layout.md) pour ajuster un composant, vous pouvez sélectionner l’action **Mise en page** pour un composant afin d’en modifier la mise en page. Cela vous évite de devoir quitter le mode d’édition, ce qui se traduit par un gain de temps.
 
-1. When in **Edit** mode of the sites console, selecting a component reveals the component&#39;s toolbar.
+1. Lorsque le mode **Édition** de la console Sites est actif, la sélection d’un composant déclenche l’affichage de sa barre d’outils.
 
-   ![Barre d’outils de composant d’un composant de page](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
+   ![Barre d’outils d’un composant de page](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
 
-   Click or tap the **Layout** action to adjust the layout of the component.
+   Cliquez ou appuyez sur l’action **Mise en page** pour ajuster la mise en page du composant.
 
-   ![Bouton Disposition de la barre d’outils des composants](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
+   ![Bouton Mise en page de la barre d’outils d’un composant](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 1. Une fois cette action sélectionnée :
 
@@ -346,26 +346,26 @@ Au lieu de basculer à plusieurs reprises entre les modes d’édition et de [mi
    * Les actions de mise en page sont affichées dans la barre d’outils du composant, au lieu des actions d’édition standard.
    ![Un composant en mode de mise en page](/help/sites-cloud/authoring/assets/editing-layout-mode.png)
 
-   You can now modify the layout of the component as you would in [layout mode](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
+   Vous pouvez à présent modifier la mise en page du composant, comme vous le feriez dans le [mode de mise en page](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
 
-1. After making the necessary layout changes, click the **Close** button in the component action menu to stop modifying the layout of the component. La barre d’outils du composant revient à son état d’édition normal.
+1. Après avoir effectué les modifications nécessaires au niveau de la mise en page, cliquez sur le bouton **Fermer** dans le menu des actions du composant pour arrêter la session de modification. La barre d’outils du composant revient à son état d’édition normal.
 
-   ![Barre d’outils de composant d’un composant de page](/help/sites-cloud/authoring/assets/editing-layout-exit.png)
+   ![Barre d’outils d’un composant de page](/help/sites-cloud/authoring/assets/editing-layout-exit.png)
 
 >[!TIP]
 >
->L’action de mise en page est limitée au composant sélectionné. Par exemple, si vous modifiez la mise en page d’un composant puis cliquez sur un autre composant, la barre d’outils de modification standard (et non la barre d’outils de mise en page) s’affiche pour le nouveau composant sélectionné et les poignées de redimensionnement ainsi que la barre d’outils de l’émulateur disparaissent.
+>L’action de mise en page est limitée au composant sélectionné. Par exemple, si vous modifiez la mise en page d’un composant, puis cliquez sur un autre composant, la barre d’outils d’édition standard (et non la barre d’outils de mise en page) s’affiche pour le nouveau composant sélectionné, tandis que les poignées de redimensionnement et la barre d’outils de l’émulateur disparaissent.
 >
 >Si vous devez modifier la mise en page globale de la page et affecter ainsi plusieurs composants, basculez vers le [mode de mise en page](/help/sites-cloud/authoring/features/responsive-layout.md).
 
 ## Composants hérités {#inherited-components}
 
-L’héritage est le mécanisme par lequel le contenu peut être automatiquement envoyé d’un composant à un autre. Les composants hérités peuvent être le produit de divers scénarios, notamment :
+L’héritage est le mécanisme par lequel le contenu peut être automatiquement envoyé d’un composant vers un autre. Les composants hérités peuvent être le produit de divers scénarios, notamment :
 
 * Gestion de plusieurs sites <!--[Multi site management](/help/sites-administering/msm.md)-->
 * [Lancements](/help/sites-cloud/authoring/launches/overview.md) (quand basé sur une Live Copy).
 
-Vous pouvez annuler (puis réactiver) l’héritage. Selon le composant, cette option peut être disponible à partir de la barre d’outils du composant, si le composant se trouve sur une page faisant partie d’une copie dynamique ou d’un lancement (en fonction d’une copie dynamique).
+Vous pouvez annuler (puis réactiver) l’héritage. Selon le composant, cette option peut être disponible à partir de la barre d’outils du composant, s’il se trouve sur une page faisant partie d’une Live Copy ou d’un lancement (en fonction d’une Live Copy).
 
 ![Barre d’outils de composant montrant la relation d’héritage](/help/sites-cloud/authoring/assets/editing-component-toolbar-inheritance.png)
 
@@ -379,13 +379,13 @@ Par exemple :
 
    ![Bouton Réactiver l’héritage](/help/sites-cloud/authoring/assets/editing-reenable-inheritance.png)
 
-* L’action de déploiement est également disponible dans le plan directeur ou la source Live Copy.
+* L’action de déploiement est également disponible dans le plan directeur ou la source Live Copy.
 
-   ![Bouton Déploiement](/help/sites-cloud/authoring/assets/editing-rollout.png)
+   ![Bouton Déployer](/help/sites-cloud/authoring/assets/editing-rollout.png)
 
 ## Modification du modèle de page {#editing-the-page-template}
 
-Vous pouvez facilement passer à l’éditeur [de](/help/sites-cloud/authoring/features/templates.md#editing-templates-template-authors) modèles en sélectionnant **Modifier le modèle** dans le menu [Informations sur la](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)page.
+Vous pouvez facilement passer à l’[éditeur de modèles](/help/sites-cloud/authoring/features/templates.md#editing-templates-template-authors) en sélectionnant **Modifier le modèle** dans le menu [Informations sur la page](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information).
 
 Vous pouvez déterminer facilement le modèle sur lequel la page est basée en sélectionnant cette dernière en mode [Colonnes](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) ou [Liste](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view).
 
@@ -398,13 +398,13 @@ Le [mode de page État de Live Copy](/help/sites-cloud/authoring/fundamentals/en
 
 Par exemple :
 
-![Exemple d’affichage de l’état de la copie dynamique](/help/sites-cloud/authoring/assets/editing-live-copy-status.png)
+![Exemple d’affichage de l’état de Live Copy](/help/sites-cloud/authoring/assets/editing-live-copy-status.png)
 
 ## Ajout d’annotations {#adding-annotations}
 
 Les [Annotations](/help/sites-cloud/authoring/fundamentals/annotations.md) permettent aux réviseurs et aux autres créateurs de fournir des commentaires sur votre contenu. Elles sont souvent utilisées à des fins de révision et de validation.
 
-## Aperçu des pages {#previewing-pages}
+## Aperçu des pages    {#previewing-pages}
 
 Deux options sont disponibles pour prévisualiser une page :
 
@@ -415,12 +415,12 @@ Deux options sont disponibles pour prévisualiser une page :
 >
 >* Les liens dans le contenu sont visibles, mais inaccessibles en mode Édition.
 >* Si vous souhaitez naviguer à l’aide des liens, utilisez l’une des options d’aperçu.
->* Use the [keyboard shortcut](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` to switch between preview and the last selected mode.
+>* Utilisez le [raccourci clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` pour basculer entre le mode Aperçu et le dernier mode sélectionné.
 
 
 >[!NOTE]
 >
->Le cookie Mode WCM est défini pour les deux options d’aperçu.
+>Le cookie de mode WCM est défini pour les deux options d’aperçu.
 
 ### Mode Aperçu {#preview-mode}
 
@@ -434,11 +434,11 @@ Lors de la création, le mode Aperçu est accessible par l’intermédiaire de l
 
 ![Bouton Aperçu](/help/sites-cloud/authoring/assets/preview.png)
 
-### Afficher comme publié(e){#view-as-published}
+### Afficher comme publié(e) {#view-as-published}
 
 L’option **Afficher comme publié(e)** est disponible dans le menu [Informations sur la page](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information). La page s’affiche sur un nouvel onglet, actualise le contenu et affiche la page telle qu’elle se présentera dans l’environnement de publication.
 
-## Verrouillage d’une page {#locking-a-page}
+## Verrouillage d’une page    {#locking-a-page}
 
 AEM vous permet de verrouiller une page, de sorte que personne d’autre ne puisse en modifier le contenu. Cela s’avère utile lorsque vous apportez de nombreuses modifications à une page spécifique ou lorsque vous devez figer une page pendant quelque temps.
 
@@ -471,7 +471,7 @@ Une fois la page verrouillée, les informations d’affichage de la console sont
 
 ## Déverrouillage d’une page {#unlocking-a-page}
 
-Unlocking a page is very similar to [locking the page](#locking-a-page). Once the page is locked the lock options are replaced by unlock actions.
+Le déverrouillage d’une page est une procédure très similaire au [verrouillage de la page](#locking-a-page) : une fois la page verrouillée, les options de verrouillage sont remplacées par des actions de déverrouillage.
 
 Dans le menu Informations sur la page, **Déverrouiller** est répertorié comme une option et l’icône Verrouiller dans la console Sites est remplacée par l’icône **Déverrouiller**.
 
@@ -486,7 +486,7 @@ Dans le menu Informations sur la page, **Déverrouiller** est répertorié comme
 >Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
 -->
 
-## Undoing and Redoing Page Edits {#undoing-and-redoing-page-edits}
+## Annulation et rétablissement des modifications de page {#undoing-and-redoing-page-edits}
 
 Les icônes suivantes permettent d’annuler ou de rétablir une opération. Celles-ci s’affichent dans la barre d’outils le cas échéant :
 
@@ -494,23 +494,23 @@ Les icônes suivantes permettent d’annuler ou de rétablir une opération. Cel
 
 >[!TIP]
 >
->* The [keyboard shortcut](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Z` is also available to undo page edit actions.
->* The keyboard shortcut `Ctrl-Y` is also available to redo page edit actions.
+>* Le [raccourci clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Z` est également disponible pour annuler les actions d’édition de la page.
+>* Le raccourci clavier `Ctrl-Y` est également disponible pour annuler les actions d’édition de la page.
 
 
 >[!NOTE]
 >
->Voir [Annulation et rétablissement des modifications de page – Théorie](#undoing-and-redoing-page-edits-the-theory) pour en savoir plus sur ce qu’il est possible de faire lorsque vous annulez ou rétablissez des modifications de page.
+>Voir [Annulation et rétablissement des modifications de page : la théorie](#undoing-and-redoing-page-edits-the-theory) pour en savoir plus sur ce qu’il est possible de faire lorsque vous annulez ou rétablissez des modifications de page.
 
-## Undoing and Redoing Page Edits - The Theory {#undoing-and-redoing-page-edits-the-theory}
+## Annulation et rétablissement des modifications de page : la théorie {#undoing-and-redoing-page-edits-the-theory}
 
 AEM stocke un historique des actions que vous réalisez, ainsi que la séquence selon laquelle vous les réalisez, de sorte que vous puissiez annuler plusieurs actions dans l’ordre dans lequel vous les avez réalisées. Vous pouvez également les rétablir pour appliquer à nouveau une ou plusieurs de ces actions.
 
 Si un élément de la page de contenu est sélectionné (un composant de texte, par exemple), les commandes Annuler et Rétablir s’appliquent à celui-ci.
 
-Le comportement des commandes Annuler et Rétablir est similaire à celui des autres logiciels. Utilisez les commandes pour restaurer l’état récent de votre page Web lorsque vous prenez des décisions sur le contenu. Par exemple, si vous repositionnez un paragraphe de texte sur la page, vous pouvez utiliser la commande Annuler pour le remettre à son emplacement initial. Si vous estimez ensuite que la position précédente était préférable, utilisez la commande Rétablir pour « annuler l’annulation ».
+Le comportement des commandes Annuler et Rétablir est similaire à celui des autres logiciels. Utilisez ces commandes pour restaurer l’état récent de votre page web lorsque vous prenez des décisions sur le contenu. Par exemple, si vous repositionnez un paragraphe de texte sur la page, vous pouvez utiliser la commande Annuler pour le remettre à son emplacement initial. Si vous estimez ensuite que la position précédente était préférable, utilisez la commande Rétablir pour « annuler l’annulation ».
 
-Par exemple, vous pouvez :
+Par exemple, vous pouvez effectuer les actions suivantes :
 
 * Rétablir des opérations pour autant qu’aucune modification de page n’ait été effectuée depuis la dernière utilisation de la commande Annuler.
 * Annuler jusqu’à 20 opérations de modification (paramètre par défaut).
