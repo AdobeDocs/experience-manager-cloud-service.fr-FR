@@ -1,28 +1,28 @@
 ---
 title: Configuration de votre environnement de compte
 description: AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Configuration de votre environnement de compte {#configuring-your-account-environment}
+# Configuration de votre environnement de compte   {#configuring-your-account-environment}
 
 AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
 
 Grâce à l’option [Utilisateur](#user-settings) dans l’[en-tête](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header) et à la boîte de dialogue associée [Mes préférences](#my-preferences), vous pouvez modifier vos options utilisateur.
 
-Begin by accessing the [User](#user-settings) option in the header.
+Accédez tout d’abord à l’option [Utilisateur](#user-settings) dans l’en-tête.
 
 ## Paramètres utilisateur {#user-settings}
 
 La boîte de dialogue **Paramètres utilisateur** donne accès aux options suivantes :
 
 * Se faire passer pour
-   * With the Impersonate as functionality, a user can work on behalf of another user. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
-* Profile
-   * Offers a convenient link to your user settings <!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
+   * La fonction Se faire passer pour permet à un utilisateur de travailler au nom d’un autre. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
+* Profil
+   * Offre un lien pratique vers vos paramètres utilisateur<!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->.
 * [Mes préférences](#my-preferences)
    * Spécifiez les différents paramètres uniques à votre utilisateur.
 
