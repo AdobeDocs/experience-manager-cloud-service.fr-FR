@@ -2,13 +2,13 @@
 title: Activation des statistiques sur les ressources via DTM
 description: Découvrez comment utiliser la gestion dynamique des balises Adobe pour activer les statistiques sur les ressources.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
 
-# Activation des statistiques sur les ressources via DTM {#enable-asset-insights-through-dtm}
+# Activation des statistiques sur les ressources via DTM   {#enable-asset-insights-through-dtm}
 
 La gestion dynamique des balises Adobe est un outil permettant d’activer vos outils de marketing numérique. Il est fourni gratuitement aux clients d’Adobe Analytics.
 
