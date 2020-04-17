@@ -1,7 +1,7 @@
 ---
 title: Fragments de contenu - Considérations sur la suppression
 description: Fragments de contenu - Considérations sur la suppression
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ---
@@ -13,23 +13,23 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 Pouvoir supprimer du contenu est une capacité puissante, mais potentiellement sensible. Pour cette raison, de nombreux secteurs d’activité doivent limiter et contrôler la manière dont ces privilèges sont distribués.
 
-En ce qui concerne les autorisations de suppression, les fragments de contenu doivent être considérés à deux niveaux :
+En ce qui concerne les autorisations de suppression, les fragments de contenu doivent être pris en compte à deux niveaux :
 
 1. **Le fragment de contenu en tant qu’entité unique.**
 
-   * **Cas d’utilisation** : un utilisateur qui a besoin de modifier/mettre à jour un fragment de contenu - **et de supprimer un fragment entier**.
-   * **Autorisations** : l’autorisation Supprimer peut être affectée via la gestion des utilisateurs et/ou des groupes. <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
+   * **Cas d’utilisation** : un utilisateur qui a besoin de modifier/mettre à jour un fragment de contenu **et de supprimer un fragment entier**.
+   * **Autorisations** : l’autorisation Supprimer peut être affectée via la gestion des utilisateurs et/ou des groupes.<!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
 2. **Les multiples sous-entités qui constituent un fragment de contenu ; par exemple, les variantes, les sous-nœuds.**
 
    Le fonctionnement de base de l’éditeur de fragment de contenu nécessite que ces sous-éléments transitoires puissent être supprimés. Par exemple, lors de la manipulation des variantes ; également lors de la modification de métadonnées ou de la gestion du contenu associé.
 
-   * **Cas d’utilisation** : un utilisateur qui a besoin de modifier/mettre à jour un fragment de contenu - **sans être autorisé à supprimer un fragment entier**.
+   * **Cas d’utilisation** : un utilisateur qui a besoin de modifier/mettre à jour un fragment de contenu, **sans être autorisé à supprimer un fragment entier**.
    * **Autorisations** : voir Autorisations requises pour la fonctionnalité d’éditeur uniquement. <!-- See [Permissions Required for Editor Functionality Only](/help/assets/content-fragments-delete.md#permissions-required-for-editor-functionality-only). -->
 
 >[!NOTE]
 >
->Lorsqu’un utilisateur ne dispose d’aucune autorisation Supprimer, l’éditeur de fragment de contenu fonctionne en mode *lecture seule.*<!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
+>Lorsqu’un utilisateur ne dispose d’aucune autorisation Supprimer, l’éditeur de fragment de contenu fonctionne en mode *lecture seule*. <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Par exemple, lors de la manipulation des variantes ; également lors de la modi
 >
 >Les autorisations de suppression, requises pour modifier/mettre à jour un fragment de contenu, sont incluses dans l’autorisation Supprimer<!-- The delete permissions, required to edit/update a Content Fragment, are included in the Delete permission [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). --> affectée via la gestion des utilisateurs et/ou des groupes. 
 
-The permissions needed to edit/update a fragment need to be applied to either the node containing the content fragment, or an appropriate parent node (at any level under `/content/dam`). Lorsqu’elles sont affectées à un tel nœud parent, les autorisations sont appliquées à tous les nœuds figurant dans cette branche.
+Les autorisations nécessaires à la modification/mise à jour d’un fragment doivent être appliquées au nœud contenant le fragment de contenu ou à un nœud parent approprié (à n’importe quel niveau sous `/content/dam`/). Lorsqu’elles sont affectées à un tel nœud parent, les autorisations sont appliquées à tous les nœuds figurant dans cette branche.
 
 Par exemple, un dossier allant contenir tous les fragments de contenu, tels que :
 
@@ -53,7 +53,7 @@ Par exemple, un dossier allant contenir tous les fragments de contenu, tels que�
 
 >[!CAUTION]
 >
->Setting the permissions on `/content/dam` is also possible, as all content fragments are stored here.
+>La définition des autorisations sur `/content/dam` est également possible, car tous les fragments de contenu y sont stockés.
 >
 >Toutefois, cette action applique les mêmes autorisations de suppression à *tous* les autres types de ressources également.
 
@@ -67,13 +67,13 @@ Les conditions requises pour autoriser un utilisateur et/ou un groupe spécifiqu
 
    * `jcr:addChildNodes`, `jcr:modifyProperties`
 
-* For the `jcr:content`node of all Content Fragments:
+* Pour le nœud `jcr:content` de tous les fragments de contenu :
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` and `jcr:removeChildNodes`
+   * `jcr:addChildNodes`, `jcr:modifyProperties` et `jcr:removeChildNodes`
 
-* For all nodes below `jcr:content` of all Content Fragments:
+* Pour tous les nœuds situés sous `jcr:content` de tous les fragments de contenu :
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` and `jcr:removeChildNodes`, `jcr:removeNode`
+   * `jcr:addChildNodes`, `jcr:modifyProperties` et `jcr:removeChildNodes`, `jcr:removeNode`
 
 <!-- There is no CRXDE Lite -->
 
