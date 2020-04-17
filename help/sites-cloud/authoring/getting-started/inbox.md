@@ -1,29 +1,29 @@
 ---
 title: Votre boîte de réception
 description: Gestion de vos tâches à l’aide de la boîte de réception
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Votre boîte de réception {#your-inbox}
+# Votre boîte de réception   {#your-inbox}
 
-Vous pouvez recevoir des notifications de différentes zones d’AEM, y compris des processus et des projets. Par exemple, vous pouvez recevoir des notifications concernant :
+Vous pouvez recevoir des notifications de diverses sections d’AEM, y compris des workflows et des projets. Ces notifications peuvent par exemple concerner les éléments suivants :
 
 * Tâches :
-   * These can also be created at various points within the AEM UI, for example, under **Projects**.
-   * These can be the product of a workflow **Create Task** or **Create Project Task** step.
-* Les workflows :
-   * Éléments de travail représentant les actions que vous devez effectuer sur le contenu de la page
-      * These are the product of workflow **Participant** steps.
-   * Éléments d’échec, pour permettre aux administrateurs de relancer l’étape d’échec
+   * Elles peuvent également être créées à différents endroits de l’interface utilisateur d’AEM (par exemple, sous **Projets**).
+   * Elles peuvent être générées par l’étape **Créer une tâche** ou **Créer une tâche de projet** d’un workflow.
+* Workflows :
+   * Éléments de travail correspondant à des opérations que vous devez exécuter sur le contenu de la page.
+      * Ils sont générés par l’étape **Participant** du workflow.
+   * Éléments d’échec, pour permettre aux administrateurs de relancer l’étape qui a échoué.
 
 Vous recevez ces notifications dans votre propre boîte de réception où vous pouvez les visualiser et effectuer des actions.
 
 >[!NOTE]
 >
->Pour plus d’informations sur les types d’élément, voir aussi :
+>Pour plus d’informations sur les types d’éléments, voir aussi :
 >
 >* [Projets](/help/sites-cloud/authoring/projects/overview.md)
 >* [Projets – Utilisation des tâches](/help/sites-cloud/authoring/projects/tasks.md)
@@ -34,13 +34,13 @@ Vous recevez ces notifications dans votre propre boîte de réception où vous p
 
 Dans les deux consoles, le nombre actuel d’éléments présents dans votre boîte de réception est indiqué dans l’en-tête. Vous pouvez également ouvrir l’indicateur pour accéder rapidement aux pages nécessitant une ou plusieurs opérations ou pour accéder à la boîte de réception :
 
-![Présentation de la boîte de réception dans l’en-tête](/help/sites-cloud/authoring/assets/inbox-header.png)
+![Aperçu de la boîte de réception dans l’en-tête](/help/sites-cloud/authoring/assets/inbox-header.png)
 
 >[!NOTE]
 >
 >Certaines opérations sont également répertoriées en [mode Carte de la ressource appropriée](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view).
 
-## Ouverture de la boîte de réception {#opening-the-inbox}
+## Ouverture de la boîte de réception   {#opening-the-inbox}
 
 Pour ouvrir la boîte de réception des notifications AEM :
 
@@ -49,34 +49,34 @@ Pour ouvrir la boîte de réception des notifications AEM :
 1. Sélectionnez **Afficher tout**. La **boîte de réception AEM** s’ouvre. La boîte de réception affiche les éléments des workflows, des projets et des tâches.
 1. Le mode par défaut est le [mode Liste](#inbox-list-view), mais vous pouvez également basculer vers le [mode Calendrier](#inbox-calendar-view). Cette opération s’effectue à l’aide du sélecteur d’affichage (barre d’outils, en haut à droite).
 
-   For both views you can also define [View Settings](#inbox-view-settings). The options available are dependent on the current view.
+   Vous pouvez également définir les [paramètres d’affichage](#inbox-view-settings) pour ces deux modes ; les options disponibles dépendent du mode actif.
 
-   ![Paramètres de la vue Boîte de réception](/help/sites-cloud/authoring/assets/inbox-view-settings.png)
+   ![Paramètres d’affichage de la boîte de réception](/help/sites-cloud/authoring/assets/inbox-view-settings.png)
 
 >[!NOTE]
 >
->The Inbox operates as a console, so use [Global Navigation](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) or [Search](/help/sites-cloud/authoring/getting-started/search.md) to navigate to another location when you are finished.
+>La boîte de réception fonctionne comme une console. Vous pouvez ainsi utiliser la [navigation globale](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) ou la fonction de [recherche](/help/sites-cloud/authoring/getting-started/search.md) pour accéder à un autre emplacement lorsque vous avez terminé.
 
 ### Boîte de réception – Mode Liste {#inbox-list-view}
 
-Cette vue répertorie tous les éléments, ainsi que les informations pertinentes :
+Ce mode affiche tous les éléments, ainsi que des informations importantes :
 
-![Affichage de la liste des boîtes de réception](/help/sites-cloud/authoring/assets/inbox-list-view.png)
+![Boîte de réception – Mode Liste](/help/sites-cloud/authoring/assets/inbox-list-view.png)
 
 ### Boîte de réception – Mode Calendrier {#inbox-calendar-view}
 
-Cet affichage présente les éléments en fonction de leur position dans le calendrier :
+Ce mode affiche les éléments en fonction de leur position dans le calendrier :
 
-![Affichage du calendrier des boîtes de réception](/help/sites-cloud/authoring/assets/inbox-calendar-view.png)
+![Boîte de réception – Mode Calendrier](/help/sites-cloud/authoring/assets/inbox-calendar-view.png)
 
 Vous pouvez :
 
-* Select a specific view: **Timeline**, **Column**, **List**
-* Specify the tasks to display according to **Schedule**: **All**, **Planned**, **In Progress**, **Due Soon**, **Past Due**
-* Recherche d’informations plus détaillées sur un élément
-* Sélectionnez une plage de dates pour mettre la vue au point :
+* sélectionner un mode d’affichage spécifique (**Chronologie**, **Colonnes**, **Liste**) ;
+* spécifier les tâches selon **Planification** : **Tous**, **Planifiés**, **En cours**, **Échéance proche** et **Échéance dépassée** ;
+* descendre dans la hiérarchie pour obtenir plus d’informations sur un élément ;
+* sélectionner une période sur laquelle cibler la vue :
 
-![Période d’affichage du calendrier de réception](/help/sites-cloud/authoring/assets/inbox-calendar-range.png)
+![Boîte de réception – Période d’affichage du calendrier](/help/sites-cloud/authoring/assets/inbox-calendar-range.png)
 
 ### Boîte de réception – Paramètres d’affichage {#inbox-view-settings}
 
@@ -88,8 +88,8 @@ Vous pouvez définir des paramètres d’affichage pour les deux modes (Liste et
 
    * **Regrouper par**
    * **Planification** ou **Aucun**
-   * **Taille des cartes** 
-   ![Paramètres d’affichage du calendrier de réception](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
+   * **Taille des cartes**
+   ![Boîte de réception – Paramètres d’affichage du calendrier](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
 
 * **Mode Liste**
 
@@ -97,27 +97,27 @@ Vous pouvez définir des paramètres d’affichage pour les deux modes (Liste et
 
    * **Tri par**
    * **Ordre de tri**
-   ![Paramètres d’affichage de la liste des entrées](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
+   ![Boîte de réception – Paramètres du mode Liste](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-   Vous pouvez également déléguer votre calendrier à d&#39;autres fins, demander la délégation d&#39;autres utilisateurs et gérer vos délégations.
+   Vous pouvez également déléguer votre calendrier à d’autres fins, demander la délégation à d’autres utilisateurs ou encore gérer vos délégations.
 
-   ![Paramètres de délégation de la vue Liste des entrées](/help/sites-cloud/authoring/assets/inbox-delegation.png)
+   ![Boîte de réception – Paramètres de délégation du mode Liste](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
 ## Action sur un élément {#taking-action-on-an-item}
 
 1. Pour agir sur un élément, sélectionnez la miniature de l’élément souhaité. Les icônes des actions applicables à cet élément apparaissent dans la barre d’outils :
 
-   ![Sélectionner un élément de boîte de réception](/help/sites-cloud/authoring/assets/inbox-select-item.png)
+   ![Sélection d’un élément de la boîte de réception](/help/sites-cloud/authoring/assets/inbox-select-item.png)
 
    Les actions disponibles varient selon l’élément et incluent les opérations suivantes :
 
    * **Terminer** l’action
    * **Déléguer** un élément
-   * **Ouvrez** un élément, selon le type d’élément que cette action peut :
+   * **Ouvrir** un élément ; selon le type d’élément, cette action permet d’effectuer les opérations suivantes :
 
       * Afficher les propriétés de l’élément
-      * Ouvrez un tableau de bord ou un assistant approprié pour une action ultérieure.
-      * Ouvrir la documentation connexe
+      * Ouvrir un tableau de bord ou un assistant pour effectuer d’autres actions
+      * Ouvrir la documentation associée
    * **Revenir** à une étape précédente
    * Afficher la charge utile pour un workflow
    * Créer un projet à partir de l’élément
@@ -125,23 +125,23 @@ Vous pouvez définir des paramètres d’affichage pour les deux modes (Liste et
    >
    >Pour plus d’informations, voir :
    >
-   >* Éléments de workflow –[Participation aux workflows](/help/sites-cloud/authoring/workflows/participating.md)
+   >* Éléments de workflow – [Participation aux workflows](/help/sites-cloud/authoring/workflows/participating.md)
 
 
-1. En fonction de l’élément sélectionné, une action sera lancée, par exemple :
+1. Une action démarre en fonction de l’élément sélectionné, par exemple :
 
-   * Une boîte de dialogue correspondant à l’opération s’ouvre
-   * Un assistant d&#39;action va démarrer
+   * Une boîte de dialogue correspondant à l’opération s’ouvre.
+   * Un assistant d’action démarre.
    * Une page de documentation s’ouvre.
-   For example, **Delegate** will open a dialog:
+   Par exemple, **Déléguer** ouvre une boîte de dialogue :
 
    ![Déléguer la tâche de boîte de réception](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
 
    Selon qu’une boîte de dialogue, une page de documentation ou un assistant a été ouvert, vous pouvez :
 
-   * Confirmez l’action appropriée, par exemple réaffecter.
+   * Confirmer l’action appropriée, par exemple Réaffecter.
    * Annuler l’action
-   * Sélectionnez la flèche arrière pour revenir à la boîte de réception. Par exemple, si un assistant d’action ou une page de documentation a été ouvert, vous pouvez revenir à la boîte de réception.
+   * Sélectionner la flèche vers l’arrière pour revenir à la boîte de réception ; par exemple, si une page de documentation ou un assistant d’action a été ouvert, vous pouvez revenir à la boîte de réception.
 
 
 ## Création d’une tâche {#creating-a-task}
@@ -149,23 +149,23 @@ Vous pouvez définir des paramètres d’affichage pour les deux modes (Liste et
 Vous pouvez créer des tâches directement à partir de la boîte de réception :
 
 1. Sélectionnez **Créer**, puis **Tâche**.
-1. Complete the necessary fields in the **Basic** and **Advanced** tabs (only the **Title** is mandatory, all others are optional):
+1. Renseignez les champs nécessaires dans les onglets **De base** et **Avancé** (seul le champ **Titre** est obligatoire, tous les autres sont facultatifs) :
 
-   * **De base**:
+   * **De base** :
 
       * **Titre**
       * **Projet**
       * **Cessionnaire**
-      * **Contenu**, similaire à Payload, il s’agit d’une référence de la tâche à un emplacement du référentiel.
+      * **Contenu** : similaire à Charge utile ; il s’agit d’une référence de la tâche à un emplacement dans le référentiel
       * **Description**
       * **Priorité de la tâche**
       * **Date de début**
       * **Échéance**
-   ![Tâche d’ajout de boîte de réception](/help/sites-cloud/authoring/assets/inbox-create-task.png)
+   ![Tâche d’ajout de la boîte de réception](/help/sites-cloud/authoring/assets/inbox-create-task.png)
 
    * **Avancé**
 
-      * **Nom**: il sera utilisé pour former l’URL et, s’il est vide, il sera basé sur le **Titre**.
+      * **Nom** : ce champ est utilisé pour former l’URL ; s’il est vide, le nom est basé sur le champ **Titre**.
    ![Options avancées de la tâche d’ajout de boîte de réception](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
 1. Sélectionnez **Envoyer**.
@@ -178,9 +178,9 @@ Pour certaines tâches, vous pouvez créer un [projet](/help/sites-cloud/authori
 
    >[!NOTE]
    >
-   >Only tasks created using the **Create** option of the **Inbox** can be used to create a project.
+   >Seules les tâches créées à l’aide de l’option **Créer** de la **boîte de réception** peuvent être utilisées pour créer un projet.
    >
-   >Les tâches (issues d’un processus) ne peuvent pas être utilisées pour créer un projet.
+   >Les éléments de travail (d’un workflow) ne peuvent pas être utilisés pour créer un projet.
 
 1. Sélectionnez **Créer un projet** dans la barre d’outils pour ouvrir l’assistant.
 1. Sélectionnez le modèle approprié, puis **Suivant**.
@@ -212,10 +212,10 @@ Vous pouvez filtrer les éléments répertoriés :
 
    ![Recherche dans les boîtes de réception](/help/sites-cloud/authoring/assets/inbox-search.png)
 
-1. Vous pouvez filtrer les éléments répertoriés selon une plage de critères, dont beaucoup peuvent être affinés.Par exemple :
+1. Vous pouvez filtrer les éléments répertoriés en fonction d’une série de critères, pouvant pour la plupart être affinés. Par exemple :
 
-   ![Filtre de recherche de boîte de réception](/help/sites-cloud/authoring/assets/inbox-search-filter.png)
+   ![Filtre de recherche dans les boîtes de réception](/help/sites-cloud/authoring/assets/inbox-search-filter.png)
 
    >[!NOTE]
    >
-   >En [mode Liste](#inbox-list-view), vous pouvez également configurer l’ordre de tri dans les [paramètres d’affichage](#inbox-view-settings).
+   >En [mode Liste](#inbox-view-settings), vous pouvez également configurer l’ordre de tri dans les [paramètres d’affichage](#inbox-list-view).
