@@ -1,20 +1,20 @@
 ---
 title: Raccourcis clavier pour les consoles
 description: Utilisez ces raccourcis clavier pour gagner du temps lors de la création
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Raccourcis clavier pour les consoles {#keyboard-shortcuts-for-consoles}
+# Raccourcis clavier pour les consoles   {#keyboard-shortcuts-for-consoles}
 
 Les raccourcis suivants sont disponibles pour les consoles Sites, Assets, Utilisateurs, Groupes, Projets et Fragments d’expérience.
 
 | Emplacement | Raccourci | Description |
 |---|---|---|
 | Général | `Ctrl+Click` | Sélection multiple |
-| Console - Affichage des colonnes et Affichage du contenu | `Right Arrow` | Naviguer vers le bas de la structure du site web/développer le nœud d’arborescence |
+| Console : vue Colonnes et Contenu | `Right Arrow` | Naviguer vers le bas de la structure du site web/développer le nœud d’arborescence |
 |  | `Left Arrow` | Naviguer vers le haut de la structure de l’arborescence/réduire le nœud d’arborescence |
 |  | `Down Arrow` | Se déplacer vers le bas d’une liste de pages au même niveau |
 |  | `Up Arrow` | Se déplacer vers le haut d’une liste de pages au même niveau |
@@ -22,7 +22,7 @@ Les raccourcis suivants sont disponibles pour les consoles Sites, Assets, Utilis
 |  | `Esc` | Se déplacer vers le haut d’une liste de pages au même niveau |
 | Consoles | `?` | Aide des raccourcis clavier |
 |  | `/` | Appeler la [recherche](/help/sites-cloud/authoring/getting-started/search.md) |
-|  | `Alt+`&lt;`Number`> | Toggle which [rail selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) option to view |
+|  | `Alt+`&lt;`Number`> | Choisir l’option de [sélecteur de rail](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) à afficher |
 |  | ` | Masquer le rail |
 |  | `e` | Modifier |
 |  | `p` | Propriétés |
@@ -74,7 +74,7 @@ Vous pouvez désactiver les raccourcis clavier à deux emplacements :
 
 >[!NOTE]
 >
->Les touches de raccourci de navigation du mode Colonnes et de l’arborescence du contenu sont toujours actives. 
+>Les touches de raccourci de navigation du mode Colonnes et de l’arborescence du contenu sont toujours actives.
 
 ## Raccourcis clavier pour l’éditeur de page {#keyboard-shortcuts-for-the-page-editor}
 
