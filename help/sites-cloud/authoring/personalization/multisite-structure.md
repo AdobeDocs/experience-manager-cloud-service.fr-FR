@@ -1,7 +1,7 @@
 ---
 title: Structuration de la gestion multisite du contenu ciblé
 description: Un diagramme indique comment la prise en charge multisite du contenu ciblé est structurée.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -11,7 +11,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 Le diagramme suivant indique comment est structurée la prise en charge multisite du contenu ciblé.
 
-Areas appear underneath **/content/campaigns/&lt;brand>** and by default each brand has a master area, which is created automatically. Chaque zone contient son propre ensemble d’activités, d’expériences et d’offres.
+Les zones apparaissent sous **/content/campaigns/&lt;marque>** et par défaut chaque marque comporte une zone maître, qui est créée automatiquement. Chaque zone contient son propre ensemble d’activités, d’expériences et d’offres.
 
 ![Structure multi-site](/help/sites-cloud/authoring/assets/multisite-structure.png)
 
