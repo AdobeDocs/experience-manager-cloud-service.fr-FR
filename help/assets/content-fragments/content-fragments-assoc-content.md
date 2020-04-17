@@ -1,7 +1,7 @@
 ---
 title: Contenu associé
 description: Le contenu associé fournit la connexion afin que les ressources puissent (éventuellement) être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ---
@@ -17,9 +17,9 @@ Le contenu associé fournit la connexion afin que les ressources puissent (éven
 >
 >Différentes méthodes permettent d’ajouter des [ressources visuelles (des images, par exemple)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
 
-Pour effectuer l’association, vous devez d’abord [ajouter les ressources multimédias à une collection](/help/assets/manage-collections.md). Après cela, vous pouvez :
+Pour effectuer l’association, vous devez d’abord [ajouter les ressources multimédias à une collection](/help/assets/manage-collections.md). Une fois l’ajout effectué, vous pouvez réaliser les étapes suivantes :
 
-1. Open your fragment and select **Associated Content** from the side panel.
+1. Ouvrez votre fragment et sélectionnez ensuite **Contenu associé** dans le panneau latéral.
 
    ![Contenu associé](assets/cfm-assoc-content-01.png)
 
@@ -28,7 +28,7 @@ Pour effectuer l’association, vous devez d’abord [ajouter les ressources mul
 
    Si vous le souhaitez, vous pouvez ajouter le fragment à la collection sélectionnée, car cela facilite le suivi.
 
-   ![Sélectionner une collection](assets/cfm-assoc-content-02.png)
+   ![Sélectionner la collection](assets/cfm-assoc-content-02.png)
 
 4. Confirmez (en cochant). La collection sera répertoriée comme associée.
 
