@@ -2,7 +2,7 @@
 title: Métadonnées en cascade
 description: Cet article décrit comment définir des métadonnées en cascade pour des ressources.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
@@ -19,11 +19,11 @@ Voici quelques cas d’utilisation pour lesquels vous pouvez définir des métad
 * Lorsque l’emplacement de l’utilisateur est requis, afficher les noms de ville pertinents en fonction du choix de pays et d’état de l’utilisateur.
 * Charger les noms de marques pertinents dans une liste en fonction du choix de catégorie de produits de l’utilisateur.
 * Activer/désactiver la visibilité d’un champ spécifique en fonction de la valeur spécifiée dans un autre champ. Par exemple, afficher des champs d’adresse d’expédition distincts si l’utilisateur souhaite la livraison à une autre adresse.
-* Désignez un champ comme obligatoire en fonction de la valeur spécifiée dans un autre champ.
+* Désigner un champ comme obligatoire en fonction de la valeur spécifiée dans un autre champ.
 * Modifier les options affichées pour un champ particulier en fonction de la valeur spécifiée dans un autre champ.
 * Définir la valeur de métadonnées par défaut dans un domaine spécifique en fonction de la valeur spécifiée dans un autre champ.
 
-## Configuration des métadonnées en cascade dans AEM {#configure-cascading-metadata-in-aem}
+## Configuration des métadonnées en cascade dans AEM   {#configure-cascading-metadata-in-aem}
 
 Supposons que vous souhaitiez afficher les métadonnées en cascade en fonction du type de ressource sélectionné. Quelques exemples
 
@@ -39,7 +39,7 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
 1. (Facultatif) Dans l’éditeur de schéma de métadonnées, créez un champ pour l’application de conditions. Spécifiez un nom et un chemin de propriété sous l’onglet **[!UICONTROL Paramètres.]**
 
-   To create a new tab, tap/click `+` to add a tab and then add a metadata field.
+   Pour créer un onglet, appuyez/cliquez sur `+` afin d’ajouter un onglet, puis ajoutez un champ de métadonnées.
 
    ![add_tab](assets/add_tab.png)
 
@@ -62,13 +62,13 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
    >[!NOTE]
    >
-   >Lors de l’ajout de choix, si vous cliquez sur le champ contextuel, l’interface est déformée et l’icône de suppression des choix ne fonctionne plus. Ne cliquez pas sur la liste déroulante tant que vous n’avez pas enregistré les modifications. Si vous rencontrez ce problème, enregistrez le schéma et rouvrez-le pour poursuivre l’édition.
+   >Lorsque vous ajoutez des choix, si vous cliquez sur le champ de liste déroulante, l’interface se déforme et l’icône de suppression des choix cesse de fonctionner. Ne cliquez pas sur la liste déroulante tant que vous n’avez pas enregistré les modifications. Si vous rencontrez ce problème, enregistrez le schéma et rouvrez-le pour poursuivre l’édition.
 
 1. (Facultatif) Ajoutez les autres champs requis ; par exemple, le format, le codec et la durée de la ressource de type vidéo.
 
-   De la même façon, ajoutez des champs dépendants pour les autres types de ressources. Par exemple, ajoutez le nombre de pages et l’auteur des champs pour les ressources du document, telles que les fichiers PDF et Word.
+   De la même façon, ajoutez des champs dépendants pour les autres types de ressources. Par exemple, ajoutez des champs Nombre de pages et Auteur pour les ressources de documents, tels que des fichiers PDF et Word.
 
-   ![video_bound_fields](assets/video_dependent_fields.png)
+   ![video_dependent_fields](assets/video_dependent_fields.png)
 
 1. Pour créer une dépendance entre le champ de type de ressource et d’autres champs, sélectionnez le champ dépendant et ouvrez l’onglet **[!UICONTROL Règles]**.
 
@@ -77,34 +77,34 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 1. Sous **[!UICONTROL Condition requise]**, sélectionnez l’option **[!UICONTROL Requis, d’après la nouvelle règle]**.
 1. Appuyez/cliquez sur **[!UICONTROL Ajouter une règle]**, puis sélectionnez le champ **[!UICONTROL Type de ressource]** pour créer une dépendance. Sélectionnez également la valeur de champ sur laquelle vous voulez créer la dépendance. Dans ce cas, sélectionnez **[!UICONTROL Vidéo]**. Appuyez/cliquez sur **[!UICONTROL Terminé]** pour enregistrer vos modifications.
 
-   ![defined_rule](assets/define_rule.png)
+   ![define_rule](assets/define_rule.png)
 
    >[!NOTE]
    >
    >Le menu déroulant contenant des valeurs prédéfinies manuellement peut être utilisé avec des règles. Les menus déroulants avec le chemin d’accès JSON configuré ne peuvent pas être utilisés avec des règles qui utilisent des valeurs prédéfinies pour appliquer des conditions. Si les valeurs sont chargées à partir de JSON au moment de l’exécution, il n’est pas possible d’appliquer une règle prédéfinie.
 
-1. Under **[!UICONTROL Visibility]**, choose the **[!UICONTROL Visible, based on new rule]** option.
+1. Sous **[!UICONTROL Visibilité]**, sélectionnez l’option **[!UICONTROL Visible, d’après la nouvelle règle]**.
 
 1. Appuyez/cliquez sur **[!UICONTROL Ajouter une règle]**, puis sélectionnez le champ **[!UICONTROL Type de ressource]** pour créer une dépendance. Sélectionnez également la valeur de champ sur laquelle vous voulez créer la dépendance. Dans ce cas, sélectionnez **[!UICONTROL Vidéo]**. Appuyez/cliquez sur **[!UICONTROL Terminé]** pour enregistrer vos modifications.
 
-   ![defined_visibilityrule](assets/define_visibilityrule.png)
+   ![define_visibilityrule](assets/define_visibilityrule.png)
 
    >[!CAUTION]
    >
-   >Pour réinitialiser les valeurs, cliquez ou appuyez sur l’espace blanc ou n’importe où dans l’interface autre que les valeurs. Si les valeurs sont réinitialisées, sélectionnez-les à nouveau.
+   >Pour réinitialiser les valeurs, cliquez ou appuyez sur un espace vide ou ailleurs sur l’interface (mais pas sur les valeurs). Si les valeurs sont réinitialisées, vous devez les sélectionner à nouveau.
 
    >[!NOTE]
    >
    >Vous pouvez appliquer les conditions **[!UICONTROL Condition requise]** et **[!UICONTROL Visibilité]** indépendamment l’une de l’autre.
 
-1. De même, créez une dépendance entre la valeur Vidéo dans le champ Type de fichier et d’autres champs, tels que Codec et Durée.
-1. Repeat the steps to create dependency between document assets (PDF and Word) in the [!UICONTROL Asset Type] field and fields such as [!UICONTROL Page Count] and [!UICONTROL Author].
+1. De la même façon, créez une dépendance entre la valeur Vidéo dans le champ Type de ressource et d’autres champs, tels que Codec et Durée.
+1. Répétez les étapes pour créer une dépendance entre les ressources de documents (PDF, Word) dans le champ [!UICONTROL Type de ressource] et des champs tels que [!UICONTROL Nombre de pages] et [!UICONTROL Auteur].
 1. Cliquez sur **[!UICONTROL Enregistrer]**. Appliquez le schéma de métadonnées à un dossier.
 
 1. Accédez au dossier auquel vous avez appliqué le schéma de métadonnées et ouvrez la page des propriétés d’une ressource. En fonction de votre choix dans le champ Type de ressource, les champs de métadonnées en cascade pertinents sont affichés.
 
    ![Métadonnées en cascade pour une ressource vidéo](assets/video_asset.png)
-   *Figure : Métadonnées en cascade pour une ressource vidéo*
+   *Figure : Métadonnées en cascade pour une ressource vidéo*
 
    ![Métadonnées en cascade pour une ressource de document](assets/doc_type_fields.png)
-   *Figure : Métadonnées en cascade pour le fichier de document*
+   *Figure : Métadonnées en cascade pour une ressource de document*
