@@ -1,13 +1,13 @@
 ---
 title: Images panoramiques
 description: Découvrez comment utiliser les images panoramiques dans Dynamic Media.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ---
 
 
-# Panoramic images{#panoramic-images}
+# Images panoramiques{#panoramic-images}
 
 Cette section décrit comment utiliser la visionneuse d’images panoramiques pour le rendu d’images panoramiques sphériques afin de profiter d’une expérience de visionnage immersive à 360° d’une pièce, d’une propriété, d’un lieu ou d’un paysage.
 
@@ -22,11 +22,11 @@ Pour qu’une ressource téléchargée soit une image panoramique sphérique uti
 * Un rapport d’aspect de 2.
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* Avec les mots-clés `equirectangular`, ou `spherical`et `panorama`, ou `spherical` et `panoramic`. Voir [Utilisation des balises](/help/sites-cloud/authoring/features/tags.md).
+* Avec les mots-clés `equirectangular`, ou `spherical` et `panorama`, ou `spherical` et `panoramic`. Voir [Utilisation des balises](/help/sites-cloud/authoring/features/tags.md).
 
-Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the `Panoramic Media` WCM component.
+Les critères de format et de mots-clés s’appliquent tous deux aux ressources panoramiques pour la page des détails des ressources et le composant WCM `Panoramic Media`.
 
-Pour télécharger des ressources à utiliser avec la visionneuse d’images panoramiques, voir [Téléchargement de ressources](/help/assets/manage-digital-assets.md#uploading-assets).
+Pour télécharger des ressources à utiliser avec la visionneuse d’images panoramiques, consultez [Téléchargement de ressources](/help/assets/manage-digital-assets.md#uploading-assets).
 
 <!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 
@@ -75,6 +75,6 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 Voir aussi [Aperçu des ressources](/help/assets/dynamic-media/previewing-assets.md).
 
-## Publication des images panoramiques {#publishing-panoramic-images}
+## Publication des images panoramiques   {#publishing-panoramic-images}
 
 Voir [Publication de ressources](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
