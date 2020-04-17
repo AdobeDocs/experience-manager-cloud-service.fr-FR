@@ -1,13 +1,13 @@
 ---
 title: Exporter au format CSV
 description: Exportez les informations relatives à vos pages vers un fichier CSV situé sur votre système local
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Exporter au format CSV {#export-to-csv}
+# Exporter au format CSV   {#export-to-csv}
 
 L’option **Créer une exportation CSV** vous permet d’exporter les informations relatives à vos pages vers un fichier CSV situé sur votre système local.
 
@@ -27,7 +27,7 @@ L’assistant **Créer une exportation CSV** vous permet de sélectionner les é
       * Modifié
       * Publié
       * Modèle
-      * Processus
+      * Workflow
    * Traduction
       * Traduit
    * Analyse
@@ -42,15 +42,15 @@ L’assistant **Créer une exportation CSV** vous permet de sélectionner les é
 
 Vous pouvez ouvrir le fichier `export.csv` obtenu dans Excel (ou toute autre application compatible).
 
-Pour créer une exportation CSV : 
+Pour créer une exportation CSV :
 
 1. Ouvrez la console **Sites**, puis, le cas échéant, accédez à l’emplacement requis.
-   * L’option Créer un rapport **** CSV est disponible lorsque vous parcourez la console **Sites** (en mode Liste).
-   * Il s’agit d’une option du menu déroulant **Créer** :
+   * L’option **Créer un rapport CSV** est disponible lorsque vous parcourez la console **Sites** (en mode Liste).
+   * Il s’agit d’une option du menu déroulant **Créer** :
 
-      ![Option Créer un fichier CSV](/help/sites-cloud/authoring/assets/csv-create.png)
+      ![option Créer un fichier CSV](/help/sites-cloud/authoring/assets/csv-create.png)
 
-1. From the toolbar, select **Create** then **CSV Report** to open the wizard:
+1. Dans la barre d’outils, sélectionnez **Créer** puis **Rapport CSV** pour ouvrir l’assistant :
 
    ![Options d’exportation CSV](/help/sites-cloud/authoring/assets/csv-options.png)
 
