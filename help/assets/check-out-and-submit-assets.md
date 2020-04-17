@@ -2,21 +2,21 @@
 title: Archivage et extraction de fichiers dans AEM Assets
 description: Découvrez comment extraire les ressources pour modification et les archiver à nouveau une fois les modifications effectuées.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
 
-# Fichiers d&#39;arrivée et de départ dans Ressources {#check-in-and-check-out-files-in-assets}
+# Archivage et extraction de fichiers dans AEM Assets {#check-in-and-check-out-files-in-assets}
 
-Adobe Experience Manager (AEM) Assets permet d’extraire des ressources pour les modifier et de les archiver après avoir apporté les modifications. Après avoir extrait une ressource, vous seul pouvez la modifier, l’annoter, la publier, la déplacer ou la supprimer. Le fait d’extraire une ressource entraîne son verrouillage. Les autres utilisateurs ne peuvent effectuer aucune de ces opérations sur la ressource tant que vous ne l’avez pas archivée dans AEM Assets. Toutefois, ils peuvent modifier les métadonnées de la ressource verrouillée.
+Adobe Experience Manager (AEM) Assets permet d’extraire des ressources pour les modifier et de les archiver après avoir apporté les modifications. Après avoir extrait une ressource, vous seul pouvez la modifier, l’annoter, la publier, la déplacer ou la supprimer. Le fait d’extraire une ressource entraîne son verrouillage. Les autres utilisateurs ne peuvent effectuer aucune de ces opérations sur la ressource tant que vous ne l’avez pas archivée dans AEM Assets. Toutefois, ils peuvent modifier les métadonnées de la ressource verrouillée.
 
 Vous avez besoin d’un accès en écriture à ces ressources pour être en mesure de les extraire ou de les archiver.
 
-Cette caractéristique permet d’empêcher les autres utilisateurs d’écraser les modifications apportées par un auteur lorsque plusieurs utilisateurs issus de plusieurs équipes collaborent à la modification des workflow.
+Cette caractéristique permet d’empêcher les autres utilisateurs d’écraser les modifications apportées par un auteur lorsque plusieurs utilisateurs issus de plusieurs équipes collaborent à la modification des workflows.
 
-## Extraction de ressources {#checking-out-assets}
+## Extraction de ressources   {#checking-out-assets}
 
 1. Dans l’interface utilisateur d’Assets, sélectionnez la ressource que vous souhaitez extraire. Vous pouvez également sélectionner plusieurs ressources à extraire.
 
@@ -54,7 +54,7 @@ Cette caractéristique permet d’empêcher les autres utilisateurs d’écraser
 
    ![chlimage_1-475](assets/chlimage_1-475.png)
 
-   La ressource modifiée est archivée dans AEM Assets et est disponible pour que d’autres utilisateurs la modifie.
+   La ressource modifiée est archivée dans AEM Assets et peut être modifiée par les autres utilisateurs.
 
 ## Archivage forcé {#forced-check-in}
 
