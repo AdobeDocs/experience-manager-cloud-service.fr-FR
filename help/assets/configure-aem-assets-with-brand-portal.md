@@ -3,7 +3,7 @@ title: Configuration du service cloud AEM Assets avec Brand Portal
 description: Configurez le service cloud AEM Assets avec Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: d644fc348ff6d62c03100941b96c03049f345763
+source-git-commit: bbb3327d4bc7cef8eede3169bc14a1d247ee2bdc
 
 ---
 
@@ -152,9 +152,9 @@ Vérifiez que vous avez effectué les étapes suivantes :
 
 >[!CAUTION]
 >
->Vous ne devez avoir qu’une seule configuration IMS qui réussit le contrôle d’intégrité. Ne créez pas plusieurs configurations IMS.
+>Vous ne devez avoir qu’une seule configuration IMS. Ne créez pas plusieurs configurations IMS.
 >
->Si la configuration ne réussit pas le contrôle d&#39;intégrité, il n&#39;est pas valide. Vous devez le supprimer et créer une nouvelle configuration valide.
+>Assurez-vous que la configuration IMS réussit le contrôle d’intégrité. Si la configuration ne réussit pas le contrôle d&#39;intégrité, il n&#39;est pas valide. Vous devez le supprimer et créer une nouvelle configuration valide.
 
 
 
