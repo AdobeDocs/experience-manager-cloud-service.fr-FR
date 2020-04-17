@@ -2,7 +2,7 @@
 title: Partage de dossiers privés
 description: Apprenez à créer un dossier privé dans Adobe Experience Manager (AEM) Assets, à le partager avec d’autres utilisateurs et à attribuer à ces derniers différents privilèges.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
@@ -10,18 +10,18 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 # Partage de dossiers privés {#private-folder-sharing}
 
-Vous pouvez créer dans l’interface utilisateur d’Adobe Experience Manager (AEM) Assets un dossier privé qui n’est disponible que pour vous. Vous pouvez partager ce dossier privé avec d’autres utilisateurs auxquels vous attribuez différents droits. Selon le niveau de privilège que vous affectez, les utilisateurs peuvent effectuer différentes tâches dans le dossier, par exemple consulter des ressources du dossier ou les modifier.
+Vous pouvez créer dans l’interface utilisateur d’Adobe Experience Manager (AEM) Assets un dossier privé qui n’est disponible que pour vous. Vous pouvez partager ce dossier privé avec d’autres utilisateurs auxquels vous attribuez différents droits. Selon le niveau de privilège que vous affectez, les utilisateurs peuvent effectuer différentes tâches dans le dossier, par exemple consulter des ressources du dossier ou les modifier.
 
-1. In the Assets console, tap/click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Folder]** from the menu.
+1. Dans la console Ressources, appuyez ou cliquez sur **[!UICONTROL Créer]** dans la barre d’outils, puis choisissez **[!UICONTROL Dossier]** dans le menu.
 1. Dans la boîte de dialogue **[!UICONTROL Ajouter un dossier]**, entrez un titre et un nom pour le dossier (facultatif), puis sélectionnez **[!UICONTROL Privé]**.
 1. Cliquez/appuyez sur **[!UICONTROL Créer]**. Un dossier privé est alors créé dans l’interface utilisateur.
 1. Pour partager le dossier avec d’autres utilisateurs et leur attribuer des privilèges, sélectionnez le dossier, puis cliquez ou appuyez sur l’icône **[!UICONTROL Propriétés]** de la barre d’outils.
 
    >[!NOTE]
    >
-   >Le dossier n’est visible par aucun autre utilisateur tant que vous ne l’avez pas partagé.
+   >Le dossier n’est pas visible par les autres utilisateurs tant qu’il n’est pas partagé.
 
-1. In the Folder Properties page, select a user from the **[!UICONTROL Add User]** list, assign a role to the user on your private folder, and click **[!UICONTROL Add]**.
+1. Sélectionnez un utilisateur dans la liste **[!UICONTROL Ajouter un utilisateur]** de la page Propriétés du dossier, attribuez-lui un rôle dans le dossier privé, puis cliquez sur **[!UICONTROL Ajouter]**.
 
    >[!NOTE]
    >
