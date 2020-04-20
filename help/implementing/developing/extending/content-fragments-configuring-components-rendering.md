@@ -2,7 +2,7 @@
 title: Fragments de contenu Configuration des composants pour le rendu
 description: Fragments de contenu Configuration des composants pour le rendu
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 
 ---
 
@@ -18,7 +18,7 @@ Ces informations sont requises lorsque :
 * Vous devez mettre en oeuvre votre propre composant basé sur les fragments de contenu,
 * Et il faut utiliser les services avancés.
 
-Il est toutefois recommandé d’utiliser les composants principaux.
+Il est recommandé d’utiliser les composants principaux.
 
 >[!CAUTION]
 >
