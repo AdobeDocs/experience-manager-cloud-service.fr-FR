@@ -2,7 +2,7 @@
 title: Personnalisation et extension des fragments de contenu
 description: Un fragment de contenu étend une ressource standard.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 5f266358ed824d3783abb9ba591789ba47d7a521
 
 ---
 
@@ -293,11 +293,9 @@ Il convient de noter les éléments suivants :
 
 * Tâches qui peuvent nécessiter des efforts supplémentaires :
 
-   * Creating/removing new elements will not update the data structure of simple fragments (based on the **Simple Fragment** template).
-
    * Créez de nouvelles variations `ContentFragment` pour mettre à jour la structure des données.
 
-   * La suppression des variations existantes ne met pas à jour la structure de données.
+   * La suppression des variations existantes par l’intermédiaire d’un élément `ContentElement.removeVariation()`, à l’aide de ce paramètre, ne met pas à jour les structures de données globales affectées à la variation. Pour vous assurer que ces structures de données restent synchronisées, utilisez `ContentFragment.removeVariation()` plutôt, ce qui supprime une variation globalement.
 
 ## L’API de gestion des fragments de contenu – côté client {#the-content-fragment-management-api-client-side}
 
@@ -315,84 +313,18 @@ Reportez-vous aux informations suivantes :
 
 ## Sessions de modification {#edit-sessions}
 
-Une session de modification est lancée lorsque l’utilisateur ouvre un fragment de contenu dans l’une des pages de l’éditeur. La session de modification est terminée lorsque l’utilisateur quitte l’éditeur en sélectionnant **Enregistrer** ou **Annuler**.
+>[!CAUTION]
+>
+>Veuillez tenir compte de ces informations générales. Vous n&#39;êtes pas censés changer quoi que ce soit ici (car il est marqué comme une zone ** privée dans le référentiel), mais cela peut aider dans certains cas à comprendre comment les choses fonctionnent sous le capot.
 
-### Conditions requises {#requirements}
+La modification d’un fragment de contenu, qui peut couvrir plusieurs  de (= pages HTML), est atomique. Les fonctionnalités d’édition de  multi-atomique ne sont donc pas un concept AEM classique, les fragments de contenu utilisent ce qu’on appelle une session *d’*&#x200B;édition.
 
-Les conditions pour contrôler une session de modification sont les suivantes :
+Une session de modification est ouverte lorsque l’utilisateur ouvre un fragment de contenu dans l’éditeur. La session de modification est terminée lorsque l’utilisateur quitte l’éditeur en sélectionnant **Enregistrer** ou **Annuler**.
 
-* La modification d’un fragment de contenu, qui peut s’étendre sur plusieurs  de (= pages HTML), doit être atomique.
+Techniquement, toutes les modifications sont effectuées sur du contenu *en direct* , tout comme pour toutes les autres modifications AEM. Lorsque la session de modification est lancée, une version de l’état actuel non modifié est créée. Si un utilisateur annule une modification, cette version est restaurée. Si l’utilisateur clique sur **Enregistrer**, rien de spécifique n’est fait, car toutes les modifications ont été exécutées sur du contenu *en direct* . Par conséquent, toutes les modifications sont déjà conservées. En outre, un clic sur **Enregistrer** déclenchera un certain traitement en arrière-plan (comme la création d’informations de recherche de texte intégral et/ou la gestion de fichiers multimédias).
 
-* La modification doit également être *transactionnelle* ; à la fin de la session de modification, les modifications doivent être validées (enregistrées) ou restaurées (annulées).
-
-* Les cas limites doivent être traités correctement. Il peut s’agir de situations telles qu’un utilisateur quittant la page en saisissant une URL manuellement ou en utilisant la navigation globale.
-
-* Un enregistrement automatique récurrent (toutes les x minutes) doit être disponible pour éviter toute perte de données.
-
-* Si un fragment de contenu est modifié par deux utilisateurs simultanément, l’un ne doit pas écraser les modifications de l’autre.
-
-<!--
-#### Processes {#processes}
-
-The processes involved are:
-
-* Starting a session
-
-  * A new version of the content fragment is created.
-
-  * Auto save is started.
-
-  * Cookies are set; these define the currently edited fragment and that there is an edit session open.
-
-* Finishing a session
-
-  * Auto save is stopped.
-
-  * Upon commit:
-
-    * The last modified information is updated.
-
-    * Cookies are removed.
-
-  * Upon rollback:
-
-    * The version of the content fragment that was created when the edit session was started is restored.
-
-    * Cookies are removed.
-
-* Editing
-
-  * All changes (auto save included) are done on the active content fragment - not in a separated, protected area.
-
-  * Therefore, those changes are reflected immediately on AEM pages that reference the respective content fragment
-
-#### Actions {#actions}
-
-The possible actions are:
-
-* Entering a page
-
-  * Check if an editing session is already present; by checking the respective cookie.
-
-    * If one exists, verify that the editing session was started for the content fragment that is currently being edited
-
-      * If the current fragment, reestablish the session.
-
-      * If not, try to cancel editing for the previously edited content fragment and remove cookies (no editing session present afterwards).
-
-    * If no edit session exists, wait for the first change made by the user (see below).
-
-  * Check if the content fragment is already referenced on a page and display appropriate information if so.
-
-* Content change
-
-  * Whenever the user changes content and there is no edit session present, a new edit session is created (see [Starting a session](#processes)).
-
--->
-
-* Sortie d’une page
-
-   * Si une session de modification est présente, et si les modifications n’ont pas été conservées, une boîte de dialogue de confirmation modale s’affiche pour avertir l’utilisateur de la perte potentielle de contenu et pour lui permettre de rester sur la page.
+Il existe des mesures de sécurité pour les armatures; par exemple, si l’utilisateur tente de quitter l’éditeur sans enregistrer ou annuler la session de modification. En outre, un enregistrement automatique périodique est disponible pour empêcher la perte de données.
+Notez que deux utilisateurs peuvent modifier le même fragment de contenu simultanément et peuvent donc écraser les modifications les unes des autres. Pour éviter cela, le fragment de contenu doit être verrouillé en appliquant l’action *d’extraction* de l’administration DAM sur le fragment.
 
 ## Exemples {#examples}
 
