@@ -2,7 +2,7 @@
 title: Prise en charge des fragments de contenu d’Adobe Experience Manager en tant que service Cloud dans l’API HTTP Assets
 description: Découvrez Adobe Experience Manager en tant que prise en charge des fragments de contenu de service Cloud dans l’API HTTP Assets.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 
 ---
 
@@ -32,6 +32,7 @@ While [AEM Core Components](https://docs.adobe.com/content/help/en/experience-ma
 C’est le cas lorsque l’API REST Assets peut être utilisée. Il permet aux développeurs d’accéder directement aux ressources (images et fragments de contenu, par exemple), sans avoir à les incorporer d’abord dans une page, et de diffuser leur contenu au format JSON sérialisé.
 
 >[!NOTE]
+>
 >Il n’est pas possible de personnaliser la sortie JSON à partir de l’API REST Ressources.
 
 L’API REST Assets permet également aux développeurs de modifier du contenu, en créant, en mettant à jour ou en supprimant des ressources, des fragments de contenu et des dossiers.
