@@ -2,7 +2,7 @@
 title: Personnalisation et extension des fragments de contenu
 description: Un fragment de contenu étend une ressource standard.
 translation-type: tm+mt
-source-git-commit: 5f266358ed824d3783abb9ba591789ba47d7a521
+source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 
 ---
 
@@ -40,7 +40,7 @@ Selon le type de fragment, les modèles ou le modèle de fragment **simple** son
    * Les fonctions pour ajouter des variations, etc., doivent mettre à jour le fragment en conséquence.
    >[!NOTE]
    >
-   >Pour afficher/rendre un fragment de contenu, votre compte doit disposer d’autorisations de lecture pour le modèle.
+   >Pour afficher/rendre un fragment de contenu, votre compte doit disposer `read` des autorisations pour le modèle.
 
    >[!CAUTION]
    >
