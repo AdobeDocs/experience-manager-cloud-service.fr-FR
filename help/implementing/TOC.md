@@ -2,7 +2,7 @@
 sub-product: Mise en oeuvre pour AEM en tant que service Cloud
 user-guide-title: Mise en oeuvre pour AEM en tant que service Cloud
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 7bd9c97d4e8c46aa8644560ecbddf24df96325e4
 
 ---
 
@@ -32,6 +32,8 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
    + [Présentation des résultats de tests](/help/implementing/developing/introduction/understand-test-results.md)
 + Configuration et extension d’AEM as a Cloud Service {#configuring-and-extending}
    + [Extension des fragments d’expérience](developing/extending/experience-fragments.md)
+   + [Personnalisation et extensions de fragments de contenu](developing/extending/content-fragments-customizing.md)
+   + [Fragments de contenu Configuration des composants pour le rendu](developing/extending/content-fragments-configuring-components-rendering.md)
    + [Configuration des formulaires de recherche](developing/extending/search-forms.md)
 + Déploiement sur AEM as a Cloud Service {#deploying}
    + [Déploiement sur AEM as a Cloud Service](deploying/overview.md)
