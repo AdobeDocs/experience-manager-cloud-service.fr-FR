@@ -3,7 +3,7 @@ title: API HTTP Assets
 description: Découvrez l’implémentation, le modèle de données et les fonctions de l’API Assets HTTP. Utilisez l’API Assets HTTP pour effectuer diverses tâches avec les ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ## Présentation {#overview}
 
-L’API HTTP Assets permet d’effectuer des opérations CRUD (créer, lire, mettre à jour, supprimer) sur les ressources, y compris les fichiers binaires, les métadonnées, les rendus et les commentaires, avec du contenu structuré à l’aide de fragments de contenu AEM. Elle est exposée sous `/api/assets` et est implémentée en tant qu’API REST. Elle inclut [la prise en charge des fragments de contenu](content-fragments/content-fragments.md).
+L’API HTTP Assets permet d’effectuer des opérations CRUD (créer, lire, mettre à jour, supprimer) sur les ressources, y compris les fichiers binaires, les métadonnées, les rendus et les commentaires, avec du contenu structuré à l’aide de fragments de contenu AEM. Elle est exposée sous `/api/assets` et est implémentée en tant qu’API REST. Elle inclut [la prise en charge des fragments de contenu](assets-api-content-fragments.md).
 
 Pour accéder à l’API, procédez comme suit :
 
@@ -31,13 +31,13 @@ Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne 
 
 Un [fragment de contenu](content-fragments/content-fragments.md) est un type de ressource spécial. Il permet d’accéder aux données structurées, telles que les textes, les nombres, les dates, etc. Comme il existe plusieurs différences de ressources `standard` (telles que les images ou les documents), certaines règles supplémentaires s’appliquent pour gérer les fragments de contenu.
 
-Pour plus d’informations, voir [Prise en charge de fragments de contenu dans l’API HTTP Assets d’AEM](content-fragments/content-fragments.md).
+Pour plus d’informations, voir [Prise en charge de fragments de contenu dans l’API HTTP Assets d’AEM](assets-api-content-fragments.md).
 
 ## Modèle de données {#data-model}
 
 L’API HTTP Assets présente deux éléments principaux : des dossiers et des ressources (pour les ressources standard).
 
-Il expose également des éléments plus détaillés pour les modèles de données personnalisés décrivant le contenu structuré dans les fragments de contenu. Pour plus d’informations, voir [Modèles de données de fragments de contenu](content-fragments/content-fragments.md).
+Il expose également des éléments plus détaillés pour les modèles de données personnalisés décrivant le contenu structuré dans les fragments de contenu. Pour plus d’informations, voir [Modèles de données de fragments de contenu](assets-api-content-fragments.md#content-models-and-content-fragments).
 
 ### Dossiers {#folders}
 
@@ -66,7 +66,7 @@ Dans AEM, une ressource contient les éléments suivants :
 * Plusieurs rendus tels que le rendu d’origine (qui est la ressource transférée initialement), une vignette et divers autres rendus. Les rendus supplémentaires peuvent être des images de tailles différentes, différents codages vidéo ou des pages extraites de PDF ou InDesign.
 * Commentaires facultatifs
 
-Pour plus d’informations sur les éléments dans les fragments de contenu, voir [Prise en charge des fragments de contenu dans l’API HTTP Assets d’AEM](content-fragments/content-fragments.md).
+Pour plus d’informations sur les éléments dans les fragments de contenu, voir [Prise en charge des fragments de contenu dans l’API HTTP Assets d’AEM](assets-api-content-fragments.md).
 
 Dans AEM, un dossier comprend les composants suivants :
 
