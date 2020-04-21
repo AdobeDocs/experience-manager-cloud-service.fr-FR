@@ -1,13 +1,13 @@
 ---
-title: Fragments de contenu - Considérations sur la suppression
-description: Fragments de contenu - Considérations sur la suppression
-translation-type: ht
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+title: Fragments de contenu – considérations sur la suppression
+description: Fragments de contenu – considérations sur la suppression
+translation-type: tm+mt
+source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
 
 ---
 
 
-# Fragments de contenu - Considérations sur la suppression{#content-fragments-delete-considerations}
+# Fragments de contenu – considérations sur la suppression{#content-fragments-delete-considerations}
 
 ## Autorisations - Supprimer ou ne pas supprimer {#permissions-delete-or-not-delete}
 
@@ -25,7 +25,7 @@ En ce qui concerne les autorisations de suppression, les fragments de contenu do
    Le fonctionnement de base de l’éditeur de fragment de contenu nécessite que ces sous-éléments transitoires puissent être supprimés. Par exemple, lors de la manipulation des variantes ; également lors de la modification de métadonnées ou de la gestion du contenu associé.
 
    * **Cas d’utilisation** : un utilisateur qui a besoin de modifier/mettre à jour un fragment de contenu, **sans être autorisé à supprimer un fragment entier**.
-   * **Autorisations** : voir Autorisations requises pour la fonctionnalité d’éditeur uniquement. <!-- See [Permissions Required for Editor Functionality Only](/help/assets/content-fragments-delete.md#permissions-required-for-editor-functionality-only). -->
+   * **Autorisations**[ : voir Autorisations requises pour la fonctionnalité d’éditeur uniquement](#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ En ce qui concerne les autorisations de suppression, les fragments de contenu do
 
 ## Autorisations requises pour la fonctionnalité d’éditeur uniquement {#permissions-required-for-editor-functionality-only}
 
-Pour les utilisateurs qui doivent modifier/mettre à jour un fragment de contenu, **sans leur permettre de supprimer un fragment entier**, des autorisations spécifiques doivent être attribuées, car le fonctionnement de base de l’éditeur de fragment de contenu nécessite que les sous-éléments transitoires puissent être supprimés.
+Dans le cas des utilisateurs qui doivent modifier/mettre à jour un fragment de contenu, **sans leur permettre de supprimer l’intégralité d’un fragment**, des autorisations spécifiques doivent être attribuées, car l’opération de base de l’éditeur de fragment de contenu nécessite la possibilité de supprimer des sous-éléments transitoires.
 
 Par exemple, lors de la manipulation des variantes ; également lors de la modification de métadonnées ou de la gestion du contenu associé.
 
