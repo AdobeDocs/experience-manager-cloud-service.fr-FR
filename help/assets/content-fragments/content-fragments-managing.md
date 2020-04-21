@@ -1,13 +1,13 @@
 ---
-title: Gestion des fragments de contenu
+title: 'Gestion des fragments de contenu   '
 description: Les fragments de contenu sont stockés en tant que ressources, et ils sont donc principalement gérés par l’intermédiaire de la console Ressources.
-translation-type: ht
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+translation-type: tm+mt
+source-git-commit: 42271e25dc9f0a29962c4c9c587af29319f1f9df
 
 ---
 
 
-# Gestion des fragments de contenu{#managing-content-fragments}
+# Gestion des fragments de contenu{#managing-content-fragments}   
 
 Les fragments de contenu sont stockés en tant que **Ressources**, et ils sont donc principalement gérés par l’intermédiaire de la console **Ressources**.
 
@@ -24,25 +24,19 @@ Les [modèles de fragments de contenu](/help/assets/content-fragments/content-fr
 
 >[!NOTE]
 >
->Voir Développement de fragments de contenu pour plus d’informations sur les modèles ; utilisés pour les fragments de contenu simples.
-
-<!--
->[!NOTE]
->
->See [Developing Content Fragments](/help/sites-developing/customizing-content-fragments.md) for further information on templates; used for simple content fragments.
--->
+>Voir [Développement de fragments de contenu](/help/implementing/developing/extending/content-fragments-customizing.md) pour plus d’informations sur les modèles ; utilisés pour les fragments de contenu simples.
 
 ### Création d’un fragment de contenu {#creating-a-content-fragment}
 
 La méthode de création de fragments de contenu est (fondamentalement) la même pour les fragments simples et structurés :
 
-1. Accédez au dossier de **ressources** dans lequel vous souhaitez créer le fragment.
+1. Accédez au dossier **Ressources** dans lequel vous souhaitez créer le fragment.
 2. Pour ouvrir l’assistant, sélectionnez **Créer**, puis **Fragment de contenu**.
-3. La première étape de l’assistant nécessite que vous spécifiiez la base du nouveau fragment.
+3. La première étape de l’assistant nécessite de spécifier la base du nouveau fragment.
 
    * Cela peut être :
 
-      * un modèle, par exemple, un **Fragment simple** ;<!-- [Template](/help/sites-developing/content-fragment-templates.md) - for example **Simple Fragment** -->
+      * un modèle, par exemple, un **Fragment simple** ;
 
       * un [modèle](/help/assets/content-fragments/content-fragments-models.md) utilisé pour créer un fragment qui nécessite du contenu structuré, par exemple, le modèle **Airports**.
    * Tous les modèles disponibles sont affichés.
@@ -120,11 +114,9 @@ Sélectionnez le fragment pour afficher la barre d’outils avec les actions app
 
 Pour ouvrir votre fragment à des fins de modification :
 
-<!--
 >[!CAUTION]
 >
->To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues.
--->
+>Pour modifier un fragment de contenu, vous devez disposer des [autorisations appropriées](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si vous rencontrez des problèmes, contactez votre administrateur système.
 
 >[!CAUTION]
 >
@@ -155,14 +147,14 @@ Pour ouvrir votre fragment à des fins de modification :
 
    * [Annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
    * [Contenu associé](#associating-content-with-your-fragment)
-   * [Métadonnées](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+   * [Métadonnées  ](#viewing-and-editing-the-metadata-properties-of-your-fragment)
    ![modes](assets/cfm-managing-04.png)
 
 4. Après avoir effectué les modifications, utilisez **Enregistrer** ou **Annuler** selon le cas.
 
    >[!NOTE]
    >
-   >Les options **Enregistrer** et **Annuler** ont pour effet de fermer l’éditeur. Reportez-vous à [Enregistrer, Annuler et Versions](#save-cancel-and-versions) pour obtenir des informations complètes sur la façon dont les options fonctionnent sur les fragments de contenu.
+   >Les options **Enregistrer** et **Annuler** vous font quitter l’éditeur. Pour plus d’informations sur le fonctionnement des deux options avec les fragments de contenu, voir [Enregistrer, Annuler et Versions](#save-cancel-and-versions).
 
 ## Enregistrer, Annuler et Versions   {#save-cancel-and-versions}
 
@@ -178,13 +170,7 @@ L’éditeur possède deux options :
 
    >[!CAUTION]
    >
-   >Pour modifier un fragment de contenu, vous devez disposer des autorisations appropriées. Si vous rencontrez des problèmes, contactez votre administrateur système.
-
-   <!-- 
-  >[!CAUTION]
-  >
-  >To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues. 
-  -->
+   >Pour modifier un fragment de contenu, vous devez disposer des [autorisations appropriées](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si vous rencontrez des problèmes, contactez votre administrateur système.
 
    >[!NOTE]
    >
