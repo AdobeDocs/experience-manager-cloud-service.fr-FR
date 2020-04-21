@@ -1,8 +1,8 @@
 ---
 title: Utilisation de fragments de contenu
 description: Découvrez comment les fragments de contenu vous permettent de concevoir, de créer, d’organiser et d’utiliser du contenu indépendant des pages.
-translation-type: ht
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+translation-type: tm+mt
+source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
 
 ---
 
@@ -145,7 +145,7 @@ Les ressources peuvent être utilisées avec un fragment de contenu de plusieurs
    * Sont disponibles et pratiques (en tant que contenu intermédiaire) lorsque vous utilisez le fragment sur une page.
    * Voir [Contenu associé](/help/assets/content-fragments/content-fragments-assoc-content.md) pour plus d’informations.
 
-* Ressources disponibles dans le **navigateur de ressources** de l’éditeur de page
+* Ressources disponibles dans le **navigateur Ressources** de l’éditeur de page
 
    * Permet une flexibilité totale pour la sélection d’une ressource.
    * Permet une certaine souplesse de positionnement.
@@ -163,7 +163,7 @@ Les actifs de fragment de contenu se composent des parties suivantes (directemen
    * Pour les fragments simples :
 
       * Le contenu est conservé dans un ou plusieurs champs de texte multiligne ou éléments.
-      * Les éléments sont définis dans le modèle de fragment (ils ne peuvent pas être définis lors de la création du fragment, voir Modèles de fragments de contenu). <!--    * The elements are defined in the fragment template (cannot be defined when authoring the fragment, see [Content Fragment Templates](/help/sites-developing/content-fragment-templates.md)). -->
+      * Les éléments sont définis dans le modèle de fragment (il n’est pas possible de les définir lors de la création du fragment).
 
 * **Paragraphes de fragment**
 
@@ -171,7 +171,7 @@ Les actifs de fragment de contenu se composent des parties suivantes (directemen
 
       * séparés par des espaces verticaux (retour chariot) ;
       * dans des éléments de texte multiligne ; au sein de fragments simples ou structurés.
-   * En modes [texte enrichi](/help/assets/content-fragments/content-fragments-variations.md#rich-text) et [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown), un paragraphe peut être mis en forme comme un en-tête, auquel cas il est regroupé avec le paragraphe suivant.
+   * Dans les modes [Texte enrichi](/help/assets/content-fragments/content-fragments-variations.md#rich-text) et [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown), un paragraphe peut être formaté en tant qu’en-tête, auquel cas celui-ci et le paragraphe suivant sont considérés comme une unité.
 
    * Activent le contrôle du contenu lors de la création de la page.
 
@@ -265,8 +265,8 @@ Pour créer, modifier et utiliser des fragments de contenu, vous aurez égalemen
 * **Modèle de fragment**
 
    * Obligatoire pour [créer un fragment simple](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
-   * Généralement développé pendant la mise en œuvre d’un projet ; il ne peut pas être établi lors de la création. <!--  * Usually [developed during project implementation](/help/sites-developing/content-fragment-templates.md); cannot be created when authoring. -->
-   * Définit les propriétés de base d’un fragment simple (titre, nombre d’éléments de texte et définitions de balises).
+   * Généralement développé pendant la mise en œuvre d’un projet ; il ne peut pas être établi lors de la création.
+   * Définit les propriétés de base d’un fragment simple (titre, nombre d’éléments de texte, définitions de balises).
    * Les définitions de modèles requièrent un titre et un élément de texte ; tous les autres attributs sont facultatifs. En outre, le modèle définit une portée minimale du fragment et du contenu par défaut, le cas échéant. Les auteurs peuvent ultérieurement étendre un fragment au-delà de ce qui a été défini dans le modèle.
 
 * **Composant de fragment de contenu**
