@@ -2,7 +2,7 @@
 title: Utilisation de fragments de contenu
 description: Découvrez comment les fragments de contenu vous permettent de concevoir, de créer, d’organiser et d’utiliser du contenu indépendant des pages.
 translation-type: tm+mt
-source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
+source-git-commit: ac071eb00660a06ee3e0502a381c35adece6c87a
 
 ---
 
@@ -93,13 +93,19 @@ Les fragments d’expérience peuvent être composés de contenu sous la forme d
 
 Les fragments de contenu peuvent être comme suit :
 
-* Des fragments simples
-Ils n’ont pas de structure prédéfinie. Ils contiennent uniquement du texte et des images.
-These are based on the **Simple Fragment** template.
+* Fragments simples
 
-* Des fragments présentant du contenu structuré
-Ils sont basés sur un [modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md), qui prédéfinit une structure pour le fragment résultant.
-Ils peuvent également être utilisés pour réaliser des Content Services à l’aide de l’exportateur JSON.
+   * Ils n&#39;ont pas de structure prédéfinie.
+
+   * Ils contiennent uniquement du texte et des images.
+
+   * These are based on the **Simple Fragment** template.
+
+* Fragments contenant du contenu structuré
+
+   * These are based on a [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md), which predefines a structure for the resulting fragment.
+
+   * Ils peuvent également être utilisés pour réaliser des Content Services à l’aide de l’exportateur JSON.
 
 ## Type de contenu {#content-type}
 
