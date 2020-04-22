@@ -2,7 +2,7 @@
 title: Utilisation de fragments de contenu
 description: Découvrez comment les fragments de contenu vous permettent de concevoir, de créer, d’organiser et d’utiliser du contenu indépendant des pages.
 translation-type: tm+mt
-source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
+source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 ---
 
@@ -95,7 +95,7 @@ Les fragments de contenu peuvent être comme suit :
 
 * Des fragments simples
 Ils n’ont pas de structure prédéfinie. Ils contiennent uniquement du texte et des images.
-Ils sont basés sur le modèle de fragment simple.
+These are based on the **Simple Fragment** template.
 
 * Des fragments présentant du contenu structuré
 Ils sont basés sur un [modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md), qui prédéfinit une structure pour le fragment résultant.
@@ -163,7 +163,7 @@ Les actifs de fragment de contenu se composent des parties suivantes (directemen
    * Pour les fragments simples :
 
       * Le contenu est conservé dans un ou plusieurs champs de texte multiligne ou éléments.
-      * Les éléments sont définis dans le modèle de fragment (il n’est pas possible de les définir lors de la création du fragment).
+      * Les éléments sont définis dans le modèle Fragment **simple** .
 
 * **Paragraphes de fragment**
 
@@ -199,7 +199,7 @@ Les actifs de fragment de contenu se composent des parties suivantes (directemen
    * Les ressources individuelles de la collection peuvent être utilisées avec le fragment dans l’éditeur de page, lorsqu’il est ajouté à une page. Cela signifie qu’elles sont facultatives, en fonction des exigences du canal spécifique.
    * Les ressources sont [associées aux fragments via des collections](/help/assets/content-fragments/content-fragments-assoc-content.md) ; les collections associées permettent à l’auteur de déterminer les ressources à utiliser lors de la création d’une page.
 
-      * Les collections peuvent être associées à des fragments à l’aide de modèles, en tant que contenu par défaut, ou par les auteurs lors de la création du fragment.
+      * Les collections peuvent être associées aux fragments en tant que contenu par défaut ou par les auteurs lors de la création de fragments.
       * Les [Collections de ressources (DAM)](/help/assets/manage-collections.md) servent de base au contenu associé des fragments.
    * Vous pouvez également ajouter le fragment lui-même à une collection pour en faciliter le suivi.
 
@@ -231,7 +231,7 @@ Les actifs de fragment de contenu se composent des parties suivantes (directemen
 
    * Il s’agit de rendus de texte de fragment spécifiques à fin éditoriale. Les variations peuvent être associées au canal, sans que cela soit obligatoire, et elles peuvent également servir à des modifications locales ad hoc.
    * Sont créées en tant que copies de l’instance **maître**, mais peuvent ensuite être modifiées si besoin. Il existe généralement un chevauchement de contenu entre les différentes variations.
-   * Peuvent être définies lors de la création du fragment ou être prédéfinies dans les modèles de fragment.
+   * Peut être défini lors de la création de fragments.
    * Stockées dans le fragment, afin d’éviter l’éparpillement des copies de contenu.
    * Les variantes peuvent être [synchronisées](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) avec l’instance maître si son contenu a été mis à jour.
    * Peuvent être [résumées](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) afin de tronquer rapidement le texte sur une longueur prédéfinie.
@@ -264,10 +264,8 @@ Pour créer, modifier et utiliser des fragments de contenu, vous aurez égalemen
 
 * **Modèle de fragment**
 
-   * Obligatoire pour [créer un fragment simple](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
-   * Généralement développé pendant la mise en œuvre d’un projet ; il ne peut pas être établi lors de la création.
+   * Le modèle Fragment **simple** est requis pour [créer un fragment](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)simple.
    * Définit les propriétés de base d’un fragment simple (titre, nombre d’éléments de texte, définitions de balises).
-   * Les définitions de modèles requièrent un titre et un élément de texte ; tous les autres attributs sont facultatifs. En outre, le modèle définit une portée minimale du fragment et du contenu par défaut, le cas échéant. Les auteurs peuvent ultérieurement étendre un fragment au-delà de ce qui a été défini dans le modèle.
 
 * **Composant de fragment de contenu**
 
