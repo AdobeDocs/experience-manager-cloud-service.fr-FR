@@ -2,7 +2,7 @@
 title: 'Gestion des fragments de contenu   '
 description: Les fragments de contenu sont stockés en tant que ressources, et ils sont donc principalement gérés par l’intermédiaire de la console Ressources.
 translation-type: tm+mt
-source-git-commit: 42271e25dc9f0a29962c4c9c587af29319f1f9df
+source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 ---
 
@@ -22,10 +22,6 @@ Les fragments de contenu sont stockés en tant que **Ressources**, et ils sont d
 
 Les [modèles de fragments de contenu](/help/assets/content-fragments/content-fragments-models.md) peuvent être activés et créés, avant de créer des fragments de contenu avec le contenu structuré.
 
->[!NOTE]
->
->Voir [Développement de fragments de contenu](/help/implementing/developing/extending/content-fragments-customizing.md) pour plus d’informations sur les modèles ; utilisés pour les fragments de contenu simples.
-
 ### Création d’un fragment de contenu {#creating-a-content-fragment}
 
 La méthode de création de fragments de contenu est (fondamentalement) la même pour les fragments simples et structurés :
@@ -34,12 +30,13 @@ La méthode de création de fragments de contenu est (fondamentalement) la même
 2. Pour ouvrir l’assistant, sélectionnez **Créer**, puis **Fragment de contenu**.
 3. La première étape de l’assistant nécessite de spécifier la base du nouveau fragment.
 
-   * Cela peut être :
+   * Il peut s’agir de :
 
-      * un modèle, par exemple, un **Fragment simple** ;
+      * le modèle **Simple Fragment**
 
       * un [modèle](/help/assets/content-fragments/content-fragments-models.md) utilisé pour créer un fragment qui nécessite du contenu structuré, par exemple, le modèle **Airports**.
-   * Tous les modèles disponibles sont affichés.
+
+         * Tous les modèles disponibles s’affichent.
    Après la sélection, cliquez ou appuyez sur **Suivant** pour continuer.
 
    ![base du fragment](assets/cfm-managing-01.png)
