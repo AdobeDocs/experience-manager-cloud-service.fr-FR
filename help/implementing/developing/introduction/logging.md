@@ -2,7 +2,7 @@
 title: Journalisation
 description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou apprenez à demander la journalisation des données.
 translation-type: tm+mt
-source-git-commit: f7c518d7af321052799888894c40d67e24c5abda
+source-git-commit: a99f6aba99b4f203b8458c69b98a88d4bd7ee4a2
 
 ---
 
@@ -96,7 +96,7 @@ Toutes les demandes d’accès à la gestion du contenu web d’AEM et au réfé
 
 Exemple de sortie:
 
-**Journalisation des accès aux demandes et aux réponses HTTP AEM**
+**Journalisation des accès aux demandes et réponses HTTP AEM**
 
 Chaque demande d’accès est enregistrée ici en même temps que la réponse.
 
