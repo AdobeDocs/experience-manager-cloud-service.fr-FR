@@ -2,7 +2,7 @@
 title: Recherche et indexation de contenu
 description: Recherche et indexation de contenu
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: 0d83e1d956d65fe27b1cf7bce758fc7fa8adf6b2
 
 ---
 
@@ -116,7 +116,6 @@ Lors du développement ou de l’utilisation sur site d’installations, les ind
 Avec des déploiements bleu-vert, il n&#39;y a pas de temps d&#39;arrêt. Toutefois, pour la gestion des index, les index ne sont utilisés que par certaines versions de l’application. Par exemple, lorsque vous ajoutez un index dans la version 2 de l’application, vous ne souhaitez pas qu’il soit encore utilisé par la version 1 de l’application. L’inverse est le cas lorsqu’un index est supprimé : un index supprimé dans la version 2 est toujours nécessaire dans la version 1. Lors de la modification d’une définition d’index, nous voulons que l’ancienne version de l’index soit uniquement utilisée pour la version 1 et la nouvelle version de l’index uniquement pour la version 2.
 
 Le tableau suivant présente 5 définitions d’index : index `cqPageLucene` est utilisé dans les deux versions alors que index `damAssetLucene-custom-1` est utilisé uniquement dans la version 2.
-
 
 >[!NOTE]
 >
