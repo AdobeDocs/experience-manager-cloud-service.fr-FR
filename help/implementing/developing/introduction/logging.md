@@ -2,12 +2,28 @@
 title: Journalisation
 description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou apprenez à demander la journalisation des données.
 translation-type: tm+mt
-source-git-commit: 95511543b3393d422e2cfa23f9af246365d3a993
+source-git-commit: 75c36cf877501cbf0d97512fd56605348534b4a0
 
 ---
 
 
 # Journalisation{#logging}
+
+AEM as a Cloud Service est une plateforme permettant aux clients d’inclure du code personnalisé afin de créer des expériences uniques pour leur base de clients. Dans cet esprit, la journalisation est une fonction essentielle pour déboguer le code personnalisé sur le de  cloud et plus particulièrement pour le de développement  local.
+
+
+<!-- ## Global Logging {#global-logging}
+
+[Apache Sling Logging Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based) is used to configure the root logger. This defines the global settings for logging in AEM as a Cloud Service:
+
+* the logging level
+* the location of the central log file
+* the number of versions to be kept
+* version rotation; either maximum size or a time interval
+* the format to be used when writing the log messages
+-->
+
+## AEM as a Cloud Service Logging {#aem-as-a-cloud-service-logging}
 
 AEM en tant que service Cloud  vous  la possibilité de configurer :
 
@@ -23,50 +39,7 @@ Dans les environnements Cloud, les développeurs peuvent télécharger les journ
 >
 >La connexion à AEM en tant que service Cloud repose sur les principes Sling. Pour plus d’informations, voir [Journalisation Sling](https://sling.apache.org/site/logging.html).
 
-<!-- ## Global Logging {#global-logging}
-
-[Apache Sling Logging Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based) is used to configure the root logger. This defines the global settings for logging in AEM as a Cloud Service:
-
-* the logging level
-* the location of the central log file
-* the number of versions to be kept
-* version rotation; either maximum size or a time interval
-* the format to be used when writing the log messages
--->
-
-## Enregistreurs et rédacteurs pour les services individuels {#loggers-and-writers-for-individual-services}
-
-Outre les paramètres de journalisation globaux, AEM en tant que service Cloud vous permet de configurer des paramètres spécifiques pour un service individuel :
-
-* le niveau de journalisation spécifique
-* l’enregistreur (le service OSGi fournissant les messages de journal)
-
-Cela vous permet de canaliser les messages de journal pour un seul service dans un fichier distinct. Cela peut être particulièrement utile pendant le développement ou les tests, par exemple, si vous avez besoin d’un niveau de journalisation accru pour un service spécifique.
-
-AEM as a Cloud Service utilise les éléments suivants pour écrire des messages de journal dans un fichier :
-
-1. Un **service OSGi**(enregistreur) écrit un message de journal.
-1. Un **enregistreur de journalisation** met en forme ce message selon vos spécifications.
-1. Un **rédacteur de journalisation** rédige tous ces messages dans le fichier physique que vous avez défini.
-
-Ces éléments sont liés par les paramètres suivants pour les éléments appropriés :
-
-* **Journalisation (Journalisation)**
-
-   Définissez le ou les services qui génèrent les messages.
-
-<!-- * **Log File (Logging Logger)**
-
-  Define the physical file for storing the log messages.
-
-  This is used to link a Logging Logger with a Logging Writer. The value must be identical to the same parameter in the Logging Writer configuration for the connection to be made.
-
-* **Log File (Logging Writer)**
-
-  Define the physical file that the log messages will be written to.
-
-  This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
--->
+## Journalisation Java d’AEM en tant que service Cloud {#aem-as-a-cloud-service-java-logging}
 
 ### Enregistreurs et rédacteurs standard {#standard-loggers-and-writers}
 
@@ -117,7 +90,25 @@ Les autres paires suivent la configuration standard :
 
 * N’est pas lié à un rédacteur spécifique, et crée et utilise donc un rédacteur implicite avec une configuration par défaut (rotation quotidienne du journal).
 
-Outre les trois types de journaux présents sur une instance AEM en tant qu’instance de service Cloud (`request`, `access` et `error` journaux), il existe un autre journal utilisé pour le débogage des problèmes du répartiteur. Pour plus d’informations, voir [Débogage de votre configuration](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/dispatcher/overview.html#debugging-apache-and-dispatcher-configuration)Apache et Répartiteur.
+### Journalisation des requêtes HTTP AEM en tant que service Cloud {#request-logging}
+
+Toutes les demandes d’accès à la gestion du contenu web d’AEM et au référentiel sont enregistrées ici.
+
+Exemple de sortie:
+
+### Journalisation des accès aux demandes et aux réponses HTTP AEM {#access-logging}
+
+Chaque demande d’accès est enregistrée ici en même temps que la réponse.
+
+Exemple de sortie:
+
+### Journalisation du serveur Web Apache / Répartiteur {#dispatcher-logging}
+
+Il s’agit d’un journal utilisé pour le débogage des problèmes du répartiteur. Pour plus d’informations, voir [Débogage de votre configuration](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/)Apache et Répartiteur.
+
+<!-- Besides the three types of logs present on an AEM as a Cloud Service instance (`request`, `access` and `error` logs) there is another dispatcher/overview.html#debugging-apache-and-dispatcher-configuration.
+
+leftover text from the last breakaway chunk (re dispatcher) -->
 
 En ce qui concerne les pratiques de pointe, il est recommandé d’aligner les configurations existantes dans AEM en tant qu’archétype de service cloud. Ils définissent différents paramètres et niveaux de journal pour des types de  de  spécifiques :
 
@@ -133,11 +124,8 @@ Veuillez trouver ci-dessous des exemples pour chaque configuration :
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-    org.apache.sling.commons.log.file="logs/error.log"
     org.apache.sling.commons.log.level="debug"
-    org.apache.sling.commons.log.names="[${package}]"
-    org.apache.sling.commons.log.additiv="true"
-    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+    org.apache.sling.commons.log.names="[com.mycompany.myapp]" />
 ```
 
 
@@ -147,11 +135,8 @@ Veuillez trouver ci-dessous des exemples pour chaque configuration :
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-    org.apache.sling.commons.log.file="logs/error.log"
     org.apache.sling.commons.log.level="warn"
-    org.apache.sling.commons.log.names="[${package}]"
-    org.apache.sling.commons.log.additiv="true"
-    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+    org.apache.sling.commons.log.names="[com.mycompany.myapp]" />
 ```
 
 * `prod`   :
@@ -160,12 +145,43 @@ Veuillez trouver ci-dessous des exemples pour chaque configuration :
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-    org.apache.sling.commons.log.file="logs/error.log"
     org.apache.sling.commons.log.level="error"
-    org.apache.sling.commons.log.names="[${package}]"
-    org.apache.sling.commons.log.additiv="true"
-    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+    org.apache.sling.commons.log.names="[com.mycompany.myapp]" />
 ```
+
+### Enregistreurs et rédacteurs pour les services individuels {#loggers-and-writers-for-individual-services}
+
+Outre les paramètres de journalisation globaux, AEM en tant que service Cloud vous permet de configurer des paramètres spécifiques pour un service individuel :
+
+* le niveau de journalisation spécifique
+* l’enregistreur (le service OSGi fournissant les messages de journal)
+
+Cela vous permet de canaliser les messages de journal pour un seul service dans un fichier distinct. Cela peut être particulièrement utile pendant le développement ou les tests, par exemple, si vous avez besoin d’un niveau de journalisation accru pour un service spécifique.
+
+AEM as a Cloud Service utilise les éléments suivants pour écrire des messages de journal dans un fichier :
+
+1. Un **service OSGi**(enregistreur) écrit un message de journal.
+1. Un **enregistreur de journalisation** met en forme ce message selon vos spécifications.
+1. Un **rédacteur de journalisation** rédige tous ces messages dans le fichier physique que vous avez défini.
+
+Ces éléments sont liés par les paramètres suivants pour les éléments appropriés :
+
+* **Journalisation (Journalisation)**
+
+   Définissez le ou les services qui génèrent les messages.
+
+<!-- * **Log File (Logging Logger)**
+
+  Define the physical file for storing the log messages.
+
+  This is used to link a Logging Logger with a Logging Writer. The value must be identical to the same parameter in the Logging Writer configuration for the connection to be made.
+
+* **Log File (Logging Writer)**
+
+  Define the physical file that the log messages will be written to.
+
+  This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
+-->
 
 ## Définition du niveau de journal {#setting-the-log-level}
 
@@ -403,3 +419,70 @@ Dans certains cas, vous pouvez créer un journal personnalisé avec un niveau de
    The log file created by this example will be `../crx-quickstart/logs/myLogFile.log`. -->
 
 The Felix Console also provides information about Sling Log Support at `../system/console/slinglog`; for example `https://localhost:4502/system/console/slinglog`.draf
+
+## Accès aux journaux et gestion {#manage-logs}
+
+Les utilisateurs peuvent accéder à la liste des fichiers journaux disponibles pour l’environnement sélectionné à l’aide de la carte d’environnement. Les utilisateurs peuvent accéder à la liste des fichiers journaux disponibles pour l’environnement sélectionné.
+
+Ces fichiers peuvent être téléchargés soit par le biais de l’interface utilisateur, soit à partir de la page **Aperçu**.
+
+![](assets/manage-logs1.png)
+
+Ou encore à partir de la page **Environnements** :
+
+![](assets/manage-logs2.png)
+
+>[!NNote]
+>Quel que soit l’emplacement d’ouverture, la même boîte de dialogue s’affiche et permet de télécharger un fichier journal.
+
+![](assets/manage-logs3.png)
+
+
+### Journaux disponibles via l’API {#logs-thorugh-api}
+
+Outre le téléchargement de journaux par le biais l’interface utilisateur, les journaux seront disponibles via l’API et l’interface de ligne de commande.
+
+Par exemple, pour télécharger les fichiers journaux d’un environnement spécifique, la commande pourrait ressembler à ceci :
+
+```java
+$ aio cloudmanager:download-logs --programId 5 1884 author aemerror
+```
+
+La commande suivante permet de retailler les journaux :
+
+```java
+$ aio cloudmanager:tail-log --programId 5 1884 author aemerror
+```
+
+Pour obtenir l’ID d’environnement (1884 dans ce cas) et les options de service ou de nom de journal disponibles, vous pouvez utiliser :
+
+```java
+$ aio cloudmanager:list-environments
+Environment Id Name                     Type  Description                          
+1884           FoundationInternal_dev   dev   Foundation Internal Dev environment  
+1884           FoundationInternal_stage stage Foundation Internal STAGE environment
+1884           FoundationInternal_prod  prod  Foundation Internal Prod environment
+ 
+ 
+$ aio cloudmanager:list-available-log-options 1884
+Environment Id Service    Name         
+1884           author     aemerror     
+1884           author     aemrequest   
+1884           author     aemaccess    
+1884           publish    aemerror     
+1884           publish    aemrequest   
+1884           publish    aemaccess    
+1884           dispatcher httpderror   
+1884           dispatcher aemdispatcher
+1884           dispatcher httpdaccess
+```
+
+>[!NNote]
+>Alors que **les téléchargements de journaux** seront disponibles par le biais de l’interface utilisateur et de l’API, **** la fonction d’envoi de journaux est disponible uniquement sur l’API/CLI.
+
+### Ressources supplémentaires {#resources}
+
+Reportez-vous aux ressources supplémentaires suivantes pour en savoir plus sur l’API Cloud Manager et l’interface de ligne de commande des E/S Adobe :
+
+* [Documentation de l’API Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
+* [Interface de ligne de commande des E/S Adobe](https://github.com/adobe/aio-cli-plugin-cloudmanager)
