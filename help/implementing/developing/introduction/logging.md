@@ -2,7 +2,7 @@
 title: Journalisation
 description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou apprenez à demander la journalisation des données.
 translation-type: tm+mt
-source-git-commit: a99f6aba99b4f203b8458c69b98a88d4bd7ee4a2
+source-git-commit: 8a6207596c42c4e1cf85dcccdbd1a1e9501c9073
 
 ---
 
@@ -88,7 +88,7 @@ Les autres paires suivent la configuration standard :
 
    * Écrit `Warning` des messages à `../logs/error.log` pour le service `org.apache.pdfbox`.
 
-* N’est pas lié à un rédacteur spécifique, et crée et utilise donc un rédacteur implicite avec une configuration par défaut (rotation quotidienne du journal).
+* N’est pas lié à un Ecrivain spécifique ; il crée et utilise donc un Ecrivain implicite avec une configuration par défaut.
 
 **Journalisation des requêtes HTTP AEM en tant que service Cloud**
 
@@ -96,7 +96,7 @@ Toutes les demandes d’accès à la gestion du contenu web d’AEM et au réfé
 
 Exemple de sortie:
 
-**Journalisation des accès aux demandes et réponses HTTP AEM**
+**AEM en tant que service Cloud Demande HTTP / Journalisation de l’accès aux réponses**
 
 Chaque demande d’accès est enregistrée ici en même temps que la réponse.
 
@@ -183,7 +183,7 @@ Ces éléments sont liés par les paramètres suivants pour les éléments appro
   This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
 -->
 
-## Définition du niveau de journal {#setting-the-log-level}
+### Définition du niveau de journal {#setting-the-log-level}
 
 Pour modifier les niveaux de journal des environnements Cloud, il est nécessaire de modifier la configuration d’enregistreur OSGI Sling, suivi d’un redéploiement complet. Comme il ne s’agit pas d’une opération instantanée, soyez prudent lorsque vous activez les journaux en détail sur les environnements de production qui reçoivent beaucoup de trafic. Dans le futur, il est possible que des mécanismes soient ajoutés pour pouvoir modifier plus rapidement le niveau du journal.
 
@@ -191,7 +191,7 @@ Pour modifier les niveaux de journal des environnements Cloud, il est nécessair
 >
 > Pour effectuer les modifications de configuration répertoriées ci-dessous, vous devez les créer sur un de développement local  puis les transmettre à AEM en tant qu’instance de service Cloud. Pour plus d’informations sur la procédure à suivre, voir [Déploiement sur AEM en tant que service](/help/implementing/deploying/overview.md)Cloud.
 
-### Activation du niveau de journalisation DEBUG {#activating-the-debug-log-level}
+**Activation du niveau de journalisation DEBUG**
 
 >[!WARNING]
 >
