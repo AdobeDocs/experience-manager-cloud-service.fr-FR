@@ -2,7 +2,7 @@
 title: Journalisation
 description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou apprenez à demander la journalisation des données.
 translation-type: tm+mt
-source-git-commit: 75c36cf877501cbf0d97512fd56605348534b4a0
+source-git-commit: f7c518d7af321052799888894c40d67e24c5abda
 
 ---
 
@@ -90,19 +90,19 @@ Les autres paires suivent la configuration standard :
 
 * N’est pas lié à un rédacteur spécifique, et crée et utilise donc un rédacteur implicite avec une configuration par défaut (rotation quotidienne du journal).
 
-### Journalisation des requêtes HTTP AEM en tant que service Cloud {#request-logging}
+**Journalisation des requêtes HTTP AEM en tant que service Cloud**
 
 Toutes les demandes d’accès à la gestion du contenu web d’AEM et au référentiel sont enregistrées ici.
 
 Exemple de sortie:
 
-### Journalisation des accès aux demandes et aux réponses HTTP AEM {#access-logging}
+**Journalisation des accès aux demandes et aux réponses HTTP AEM**
 
 Chaque demande d’accès est enregistrée ici en même temps que la réponse.
 
 Exemple de sortie:
 
-### Journalisation du serveur Web Apache / Répartiteur {#dispatcher-logging}
+**Journalisation du serveur Web Apache / Répartiteur**
 
 Il s’agit d’un journal utilisé pour le débogage des problèmes du répartiteur. Pour plus d’informations, voir [Débogage de votre configuration](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/)Apache et Répartiteur.
 
