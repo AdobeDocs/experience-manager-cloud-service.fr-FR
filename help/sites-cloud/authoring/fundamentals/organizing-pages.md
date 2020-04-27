@@ -1,8 +1,8 @@
 ---
 title: Création et organisation des pages
 description: Comment créer et organiser des pages avec AEM
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: 42b614a120a564e15ff0a9643ab1a0ca0148b3df
 
 ---
 
@@ -235,7 +235,7 @@ Après avoir créé une page ou accédé à une page existante (dans la console)
 1. Accédez à la page que vous souhaitez modifier.
 1. Sélectionnez votre page à l’aide de l’une des fonctionnalités suivantes :
 
-   * [actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
+   * [Actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * le [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) et la barre d’outils
    Sélectionnez ensuite l’icône **Modifier** :
 
@@ -254,23 +254,25 @@ Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplace
 1. Dans la console **Sites**, accédez à la page que vous souhaitez copier.
 1. Sélectionnez votre page à l’aide de l’une des options suivantes :
 
-   * [actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
+   * [Actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * le [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) et la barre d’outils
    Sélectionnez ensuite l’icône de page **Copier** :
 
-   ![Bouton Copier](/help/sites-cloud/authoring/assets/copy.png)
+   ![Copier](/help/sites-cloud/authoring/assets/copy.png)
 
    >[!NOTE]
    >
    >En mode de sélection, cette page est fermée dès qu’elle est copiée.
 
 1. Accédez à l’emplacement destiné à la nouvelle copie de la page.
-1. Utilisez l’icône de page **Coller** :
+1. L’icône **Coller** est disponible avec une flèche déroulante directement à droite :
 
-   ![Bouton Coller](/help/sites-cloud/authoring/assets/paste.png)
+   ![Coller](/help/sites-cloud/authoring/assets/paste.png)
 
-   Une copie de la page originale et de toutes les sous-pages est créée à cet emplacement.
+   Vous pouvez :
 
+   1. Sélectionnez l’icône de page **Coller** : Une copie de la page d’origine et de toutes les pages enfants sera créée à cet emplacement.
+   1. Sélectionnez la flèche de liste déroulante pour afficher l’option **Coller sans enfants** . Une copie de la page d&#39;origine sera créée à cet emplacement ; les pages enfants ne seront pas copiées.
    >[!NOTE]
    >
    >Si vous copiez la page à un emplacement où il existe une page du même nom que l’original, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `beach` existe déjà, une nouvelle page portant le nom `beach` deviendra `beach1`.
@@ -288,7 +290,7 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
 1. Accédez à la page que vous souhaitez déplacer.
 1. Sélectionnez votre page à l’aide de l’une des options suivantes :
 
-   * [actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
+   * [Actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * le [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) et la barre d’outils
    Sélectionnez ensuite l’icône de page **Déplacer** :
 
@@ -339,7 +341,7 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
 
 >[!NOTE]
 >
->Si la page a déjà été publiée, le déplacement de la page en annule automatiquement la publication. Par défaut, la page est republiée une fois le déplacement terminé, mais ce comportement peut être modifié en désélectionnant le champ **Republier** de l’étape **Ajuster/republier**.
+>Si la page a déjà été publiée, le déplacement de la page annule automatiquement la publication. Par défaut, la page est republiée une fois le déplacement terminé, mais ce comportement peut être modifié en désélectionnant le champ **Republier** de l’étape **Ajuster/republier**.
 
 >[!NOTE]
 >
@@ -365,7 +367,7 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
 
    >[!NOTE]
    >
-   >Par mesure de sécurité, l’icône de page **Supprimer** n’est pas disponible en tant qu’action rapide.
+   >Par mesure de sécurité, l’icône **Supprimer la page** n’est pas disponible en tant qu’action rapide.
 
 1. Une boîte de dialogue de confirmation s’affiche. Utilisez :
 
