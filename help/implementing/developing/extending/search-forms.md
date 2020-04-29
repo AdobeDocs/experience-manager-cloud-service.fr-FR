@@ -2,7 +2,7 @@
 title: Configuration des formulaires de recherche
 description: Configuration de Search Forms pour Adobe Experience Manager en tant que service Cloud.
 translation-type: tm+mt
-source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
+source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 
 ---
 
@@ -15,7 +15,7 @@ Il existe également un ensemble d’options prédéfinies pour vous aider à fi
 
 ![recherche et utilisation des filtres](assets/csf-usage.png)
 
-Ensemble, ces mesures visent à vous aider à localiser rapidement et facilement votre contenu à partir de :
+Ensemble, ces mesures visent à vous aider à localiser rapidement et facilement votre contenu à partir des éléments suivants :
 
 * [Rechercher et filtrer](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
 * [Sélecteur de rail](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
@@ -93,7 +93,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Analyse</td>
-   <td>Fonctionnalités de recherche/filtrage dans le navigateur Sites lors de l’affichage des données optimisées par Analytics. Les filtres de recherche Analytics se chargent jusqu’à correspondre aux colonnes d’analyses personnalisées mappées.</td>
+   <td>Fonctionnalités de recherche/filtrage dans le navigateur Sites lors de l’affichage des données optimisées par Analytics. Le de recherche Analytics se charge jusqu’à  pour correspondre aux colonnes d’analyses personnalisées mappées.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -156,7 +156,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Date Plage</td>
+   <td>Date    Plage</td>
    <td>Recherchez les ressources créées dans une plage spécifiée pour une propriété de date. Dans le panneau Rechercher, vous pouvez spécifier des dates de début et de fin.</td>
    <td>
     <ul>
@@ -221,7 +221,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Filtre masqué</td>
+   <td>Masqué Filtrer</td>
    <td>Filtre sur la propriété et la valeur, invisible pour l’utilisateur.</td>
    <td>
     <ul>
@@ -279,7 +279,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Options, propriété</td>
+   <td>Options Propriétés</td>
    <td>Recherchez une ou plusieurs propriétés de l’option.</td>
    <td>
     <ul>
@@ -303,7 +303,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Chemin</td>
+   <td>Chemin   </td>
    <td>Filtrer selon un chemin spécifique. Vous pouvez définir plusieurs chemins comme options.</td>
    <td>
     <ul>
@@ -313,7 +313,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Chemin Navigateur</td>
+   <td>Chemin    Navigateur</td>
    <td>Fournissez un navigateur de chemins pour effectuer une recherche sous un chemin racine prédéfini.</td>
    <td>
     <ul>
@@ -324,7 +324,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
    </td>
   </tr>
   <tr>
-   <td>Chemin Masqué</td>
+   <td>Chemin    Masqué</td>
    <td>Filtre sur le chemin, invisible pour l’utilisateur.</td>
    <td>
     <ul>
@@ -415,11 +415,11 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
    <td>Recherche basée sur des balises.</td>
    <td>
     <ul>
-     <li>Champ</li>
+     <li>Lavelle de champ</li>
      <li>Espace réservé</li>
      <li>Nom de la propriété*</li>
      <li>Option d’affichage de correspondance de toutes les balises</li>
-     <li>Chemin des balises racine</li>
+     <li>Chemin d’accès aux balises racine</li>
      <li>Description</li>
     </ul> </td>
   </tr>
@@ -519,7 +519,7 @@ Selon le prédicat, une sélection de paramètres est disponible pour la configu
 
 * **Nom de la propriété**
 
-   Propriété à rechercher. It uses a relative path and the wildcards `*/*/*` specify the depth of the property relative to the `jcr:content` node (each asterisk represents one node level).
+   Propriété sur laquelle effectuer la recherche. It uses a relative path and the wildcards `*/*/*` specify the depth of the property relative to the `jcr:content` node (each asterisk represents one node level).
 
    If you want to search only on a first level child node of the resource that has the `x` property on the `jcr:content` node use `*/jcr:content/x`
 
@@ -600,11 +600,11 @@ Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs para
 
 1. Sélectionnez l’icône Aperçu :
 
-   ![icône d’aperçu](assets/csf-preview-icon.png)
+   ![Icône](assets/csf-preview-icon.png)
 
 1. Les formulaires de recherche s’affichent tels qu’ils apparaissent (totalement développés) dans la colonne Rechercher de la console appropriée.
 
-   ![formulaire d’aperçu](assets/csf-preview-form.png)
+   ![Formulaire](assets/csf-preview-form.png)
 
 1. **Fermez** l’aperçu pour terminer la configuration.
 
@@ -671,7 +671,7 @@ L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle util
 
    * **Nom de la propriété**
 
-      Spécifiez la propriété de noeud à rechercher sur les noeuds cible. Par exemple :
+      Définissez la propriété de noeud à rechercher sur les noeuds  de. Par exemple :
 
       `jcr:content/cq:template`
 
@@ -693,11 +693,13 @@ L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle util
 Le tableau ci-dessous répertorie les autorisations nécessaires à la modification, à la suppression et à l’aperçu dans des formulaires de recherche.
 
 <table>
- <tbody>
+ <thead>
   <tr>
    <td><strong>Action</strong></td>
-   <td><strong>Permissions</strong></td>
+   <td><strong>Autorisations</strong></td>
   </tr>
+ </thead>
+ <tbody>
   <tr>
    <td>Modifier </td>
    <td>Autorisations de lecture et d’écriture sur le <code>/apps </code>noeud.</td>
