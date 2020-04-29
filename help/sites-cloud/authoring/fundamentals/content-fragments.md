@@ -1,15 +1,15 @@
 ---
 title: Fragments de contenu
 description: Les fragments de contenu d’Adobe Experience Manager as a Cloud Service vous permettent de concevoir, de créer, d’organiser et d’utiliser du contenu indépendant des pages
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
 
 ---
 
 
 # Fragments de contenu {#content-fragments}
 
-Les fragments de contenu d’Adobe Experience Manager (AEM) [sont créés et gérés sous forme de ressources indépendantes de la page](/help/assets/content-fragments/content-fragments.md).
+Les fragments de contenu dans Adobe Experience Manager (AEM) en tant que service Cloud sont [créés et gérés en tant que ressources](/help/assets/content-fragments/content-fragments.md)indépendantes de la page.
 
 Ils vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variations (éventuellement spécifiques aux canaux). Vous pouvez ensuite utiliser ces fragments et leurs variantes lors de la création de vos pages de contenu.
 
@@ -90,7 +90,7 @@ Dans la boîte de dialogue de configuration appropriée, vous pouvez sélectionn
    >Les éléments disponibles dépendent du modèle utilisé.
 
 * **Variation**
-   * Le type **Maître** par défaut est toujours disponible.
+   * Le **maître** par défaut sera toujours disponible.
    * Une sélection est disponible si des variations ont été créées pour le fragment.
 * **Paragraphes** : indiquez la plage de paragraphes à inclure :
    * **Tous**
@@ -143,7 +143,7 @@ Dans le cas du contenu intermédiaire, plusieurs possibilités vous sont offerte
 
 ### Utilisation de contenu associé   {#using-associated-content}
 
-Si vous avez [associé du contenu](/help/assets/content-fragments/content-fragments-assoc-content.md) au [fragment de contenu](/help/assets/content-fragments/content-fragments.md), ces ressources sont disponibles à partir du sidekick (une fois que vous avez placé votre fragment sur la page de contenu). Le contenu associé est en fait une source spéciale de [contenu intermédiaire](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+Si vous avez [associé du contenu](/help/assets/content-fragments/content-fragments-assoc-content.md) au [fragment de contenu](/help/assets/content-fragments/content-fragments.md), ces ressources seront disponibles à partir du panneau latéral (après avoir placé le fragment sur la page de contenu). Le contenu associé est en fait une source spéciale de contenu pour le [contenu intermédiaire](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >
