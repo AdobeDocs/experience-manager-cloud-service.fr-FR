@@ -2,7 +2,7 @@
 title: Consoles Outils
 description: Découvrez les différentes consoles Outils disponibles dans AEM.
 translation-type: tm+mt
-source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
+source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 
 ---
 
@@ -18,11 +18,13 @@ Ces consoles sont accessibles à partir du [panneau Outils de la navigation glob
 >Comme les cartes de l’interface fournissent des détails sur l’objectif de chaque option, ce tableau fournit simplement une référence rapide sur l’emplacement des fonctionnalités du panneau Outils.
 
 <table>
- <tbody>
+ <thead>
   <tr>
    <td>Section</td>
    <td>Option</td>
   </tr>
+ </thead>
+ <tbody>
   <tr>
    <td>Général</td>
    <td> </td>
@@ -60,7 +62,7 @@ Ces consoles sont accessibles à partir du [panneau Outils de la navigation glob
    <td>Tâches</td>
   </tr>
   <tr>
-   <td>Processus</td>
+   <td>Workflow</td>
    <td> </td>
   </tr>
   <tr>
@@ -108,7 +110,7 @@ Ces consoles sont accessibles à partir du [panneau Outils de la navigation glob
    <td>Vérificateur de lien externe<br /> </td>
   </tr>
   <tr>
-   <td>Assets</td>
+   <td>Ressources</td>
    <td> </td>
   </tr>
   <tr>
@@ -121,7 +123,7 @@ Ces consoles sont accessibles à partir du [panneau Outils de la navigation glob
   </tr>
   <tr>
    <td> </td>
-   <td>Schémas de métadonnées</td>
+   <td>Schémas de métadonnées   </td>
   </tr>
   <tr>
    <td> </td>
@@ -189,7 +191,7 @@ Ces consoles sont accessibles à partir du [panneau Outils de la navigation glob
   </tr>
   <tr>
    <td> </td>
-   <td>Permissions</td>
+   <td>Autorisations</td>
   </tr>
   <tr>
    <td> </td>
@@ -208,7 +210,7 @@ Ces consoles sont accessibles à partir du [panneau Outils de la navigation glob
    <td>Configurations d’Adobe IMS</td>
   </tr>
   <tr>
-   <td>Services cloud<br /> </td>
+   <td>Cloud Services<br /> </td>
    <td> </td>
   </tr>
   <tr>
