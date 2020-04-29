@@ -1,15 +1,15 @@
 ---
 title: Utilisation de fragments de contenu
-description: Découvrez comment les fragments de contenu vous permettent de concevoir, de créer, d’organiser et d’utiliser du contenu indépendant des pages.
+description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) en tant que service Cloud vous permettent de concevoir, créer, traiter et utiliser du contenu indépendant des pages.
 translation-type: tm+mt
-source-git-commit: ac071eb00660a06ee3e0502a381c35adece6c87a
+source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
 
 ---
 
 
 # Utilisation de fragments de contenu{#working-with-content-fragments}
 
-Les fragments de contenu d’Adobe Experience Manager (AEM) permettent de concevoir, de créer, d’organiser et de [publier du contenu indépendant des pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Ils permettent de préparer du contenu prêt à l’emploi pour de multiples emplacements et canaux.
+With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate and [publish page-independent content](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Ils permettent de préparer du contenu prêt à l’emploi pour de multiples emplacements et canaux.
 
 Les fragments de contenu peuvent également être livrés au format JSON, à l’aide des fonctions d’exportation Sling Model (JSON) des composants de base AEM. Cette forme de livraison :
 
