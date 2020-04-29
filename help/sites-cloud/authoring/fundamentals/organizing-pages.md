@@ -2,7 +2,7 @@
 title: Création et organisation des pages
 description: Comment créer et organiser des pages avec AEM
 translation-type: tm+mt
-source-git-commit: 42b614a120a564e15ff0a9643ab1a0ca0148b3df
+source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
 
 ---
 
@@ -369,8 +369,13 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
    >
    >Par mesure de sécurité, l’icône **Supprimer la page** n’est pas disponible en tant qu’action rapide.
 
-1. Une boîte de dialogue de confirmation s’affiche. Utilisez :
+1. Une boîte de dialogue vous demandera de confirmer.
 
+   ![Supprimer, boîte de dialogue](/help/sites-cloud/authoring/assets/delete-page.png)
+
+   * **Voulez-vous archiver les pages avant la suppression ?** - Si cette option est cochée, les versions des pages sélectionnées pour suppression seront créées lors de la suppression.
+      * [Les versions peuvent être restaurées ultérieurement.](/help/sites-cloud/authoring/features/page-versions.md)
+      * Les pages supprimées sans les versions précédentes ne peuvent pas être restaurées.
    * **Annuler** pour abandonner l’action
    * **Supprimer** pour confirmer l’action :
 
