@@ -2,7 +2,7 @@
 sub-product: Intégration à AEM as a Cloud Service
 user-guide-title: Intégration à AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 720f45a50591ee9d1d0b95bce04f1bb73ef9cb31
 
 ---
 
@@ -25,4 +25,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
    + [Préparation d’AEM aux réglementations sur la protection et la confidentialité des données](data-privacy-and-protection-readiness/aem-readiness.md)
    + [Préparation d’AEM Foundation aux réglementations sur la protection et la confidentialité des données](data-privacy-and-protection-readiness/foundation-readiness.md)
    + [Préparation d’AEM Sites aux réglementations sur la protection et la confidentialité des données](data-privacy-and-protection-readiness/sites-readiness.md)
++ Accessibilité {#accessibility}
+   + [AEM en tant que service Cloud et directives d’accessibilité Web](accessibility/web-accessibility.md)
+   + [Guide rapide de WCAG 2.1](accessibility/quick-guide-wcag.md)
 + [Présentation des consoles des outils](tools-consoles.md)
