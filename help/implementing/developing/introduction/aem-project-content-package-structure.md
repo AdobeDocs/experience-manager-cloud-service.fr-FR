@@ -2,7 +2,7 @@
 title: Structure du projet AEM
 description: Découvrez comment définir des structures de packages pour le déploiement vers le service Adobe Experience Manager Cloud.
 translation-type: tm+mt
-source-git-commit: 57a5b6b80097938dd63a73734676ff374db3ecce
+source-git-commit: 94182b95cb00923d3e055cb3c2e1d943db70c7a9
 
 ---
 
@@ -69,15 +69,13 @@ La structure de déploiement d’application recommandée est la suivante :
          + Groupes
          + Listes de contrôle d’accès (autorisations)
             + N’importe quel `rep:policy` chemin (mutant ou non modifiable)
-+ The `ui.content` package, or Content Package, contains all content and configuration. Voici un aperçu des éléments courants du module `ui.content` :
++ The `ui.content` package, or Content Package, contains all content and configuration. Le package de contenu contient tout ce qui ne se trouve pas dans le `ui.apps` package, ou en d’autres termes, tout ce qui ne se trouve pas dans `/apps` ou `/oak:index`. Voici un aperçu des éléments courants du module `ui.content` :
    + Configurations basées sur le contexte
       + `/conf`
    + Structures de contenu requises et complexes (c.-à-d. Elargissement de contenu basé sur les structures de contenu de ligne de base définies dans l&#39;initialisation de redirection et qui s&#39;étend au-delà de ces structures.
       + `/content`, `/content/dam`, etc.
    + Taxonomies du balisage régies
       + `/content/cq:tags`
-   + Index Oak
-      + `/oak:index`
    + Nœuds hérités, etc.
       + `/etc`
 + `all` est un module conteneur qui inclut UNIQUEMENT les modules `ui.apps` et `ui.content` en tant qu’éléments incorporés. Le module `all` ne doit pas avoir de **contenu** propre. En revanche, il doit déléguer tout le déploiement sur le référentiel à ses sous-modules.
