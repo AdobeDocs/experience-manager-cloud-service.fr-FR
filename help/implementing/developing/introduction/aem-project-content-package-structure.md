@@ -2,7 +2,7 @@
 title: Structure du projet AEM
 description: Découvrez comment définir des structures de packages pour le déploiement vers le service Adobe Experience Manager Cloud.
 translation-type: tm+mt
-source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
+source-git-commit: 57a5b6b80097938dd63a73734676ff374db3ecce
 
 ---
 
@@ -69,7 +69,7 @@ La structure de déploiement d’application recommandée est la suivante :
          + Groupes
          + Listes de contrôle d’accès (autorisations)
             + N’importe quel `rep:policy` chemin (mutant ou non modifiable)
-+ The `ui.apps` package, or Code Package, contains all the code to be deployed and only deploys to `/apps`. Common elements of the `ui.apps` package include, but are not limited to: <!-- GRANITE-29128 -->
++ The `ui.content` package, or Content Package, contains all content and configuration. Voici un aperçu des éléments courants du module `ui.content` :
    + Configurations basées sur le contexte
       + `/conf`
    + Structures de contenu requises et complexes (c.-à-d. Elargissement de contenu basé sur les structures de contenu de ligne de base définies dans l&#39;initialisation de redirection et qui s&#39;étend au-delà de ces structures.
