@@ -1,28 +1,25 @@
 ---
 title: Modifications notables d’Adobe Experience Manager Assets as a Cloud Service
-description: Modifications notables apportées aux ressources Adobe Experience Manager dans le service AEM Cloud par rapport à Adobe Experience Manager 6.5.
+description: Changements notables des ressources Adobe Experience Manager dans AEM Cloud Service par rapport à Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
 
 # Modifications notables d’Experience Manager Assets as a Cloud Service {#notable-changes}
 
-Adobe Experience Manager as a Cloud Service offre de nombreuses nouvelles fonctionnalités et possibilités de gestion pour vos projets AEM. Cependant, il existe de nombreuses différences entre les ressources Experience Manager sur site ou dans Adobe Managed Service par rapport à Experience Manager en tant que service Cloud. Ce document met en lumière les différences importantes.
-
->[!NOTE]
->
->Ce document met en évidence les modifications notables apportées à Experience Manager Assets as a Cloud Service. Consultez les [modifications génériques apportées à Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
+Adobe Experience Manager as a Cloud Service offre de nombreuses nouvelles fonctionnalités et possibilités de gestion pour vos projets AEM. Cependant, il existe de nombreuses différences entre les ressources Experience Manager sur site ou dans Adobe Managed Service par rapport à Experience Manager en tant que service Cloud. Ce document met en évidence les différences importantes entre les fonctionnalités Ressources. For other changes, see the generic [changes to Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
 Les principales différences par rapport à Experience Manager 6.5 se situent dans les domaines suivants :
 
-* [L’importation de ressources](#asset-ingestion)
-* [Suppression de l’interface utilisateur de la version classique](#classic-ui)
+* [Importation et transfert](#asset-ingestion)de ressources.
+* [Microservices de ressources pour le traitement](#asset-microservices)cloud.
+* [Suppression de l’interface utilisateur de la version classique](#classic-ui).
 
-## Importation de ressources {#asset-ingestion}
+## Importation et transfert de ressources {#asset-ingestion}
 
-Le transfert des ressources a été optimisé pour plus d’efficacité en permettant une meilleure mise à l’échelle de l’assimilation des ressources et des téléchargements plus rapides. Les fonctionnalités du produit (interfaces utilisateur web, clients de bureau) ont été mises à jour. Cela peut toutefois avoir un impact sur une certaine personnalisation existante.
+Le transfert des ressources a été optimisé pour plus d’efficacité en permettant une meilleure mise à l’échelle de l’assimilation des ressources et des téléchargements plus rapides. Les fonctionnalités du produit (interfaces utilisateur web, clients de bureau) ont été mises à jour. Cependant, cela peut avoir un impact sur certaines personnalisations existantes.
 
 * Experience Manager applique le principe d’accès binaire direct pour le transfert et le téléchargement et les microservices de ressources pour le traitement des ressources. Consultez la [Présentation de l’assimilation de ressources](/help/assets/asset-microservices-overview.md).
    * Transfert de ressources [avec accès binaire direct](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access).
@@ -34,12 +31,14 @@ Le transfert des ressources a été optimisé pour plus d’efficacité en perme
 
 Les rendus standard générés avec les microservices de ressources sont stockés de manière rétrocompatible dans les nœuds du référentiel de ressources (conventions d’affectation de noms identiques).
 
-## Développement et test de microservices de ressources {#developing-testing-asset-microservices}
+## Développement et test de microservices de ressources {#asset-microservices}
 
-Les microservices de ressources sont un Cloud Service natif qui est automatiquement mis en service et connecté à Experience Manager dans les programmes et environnements clients gérés dans Cloud Manager. Les développeurs qui travaillent à étendre Experience Manager ou à permettre sa personnalisation peuvent utiliser le contenu existant (ou les ressources dont les rendus sont générés dans un environnement cloud) pour tester et valider leur code à l’aide, de l’affichage et du téléchargement des ressources.
+Les microservices de ressources offrent un traitement évolutif et résilient des ressources à l’aide des services cloud. Adobe gère les services cloud pour une gestion optimale des différents types de ressources et des différentes options de traitement. Les microservices de ressources permettent d’éviter la nécessité d’utiliser des outils et méthodes de rendu tiers (tels que le transcodage ImageMagick et FFmpeg) et de simplifier les configurations, tout en offrant des fonctionnalités prêtes à l’emploi pour les types de fichiers courants. Actuellement, l’intégration ImageMagick et le transcodage FFMmpeg ne sont pas disponibles dans le service Cloud.
 
-Pour effectuer une validation de bout en bout du code et du processus, y compris l’assimilation et le traitement des ressources, déployez les modifications de code dans un environnement de développement cloud à l’aide du pipeline et testez-les avec l’exécution complète du traitement des microservices de ressources.
+Asset microservices est un service natif au cloud qui est automatiquement mis en service et câblé vers Experience Manager dans les programmes et environnements clients gérés dans Cloud Manager. Pour étendre ou personnaliser Experience Manager, les développeurs peuvent utiliser le contenu ou les ressources existants avec des rendus générés dans un environnement cloud, afin de tester et de valider leur code à l’aide, de l’affichage et du téléchargement de ressources.
+
+To do an end-to-end validation of the code and process including asset ingestion and processing, deploy the code changes to a cloud-dev environment using [the pipeline](/help/implementing/cloud-manager/configure-pipeline.md) and test with full execution of asset microservices processing.
 
 ## Suppression de l’interface utilisateur de la version classique {#classic-ui}
 
-L’interface utilisateur Classic n’est plus disponible dans Experience Manager as a Cloud Service.
+L’interface utilisateur Classic n’est plus disponible dans Experience Manager as a Cloud Service. L’interface standard est l’interface utilisateur tactile.
