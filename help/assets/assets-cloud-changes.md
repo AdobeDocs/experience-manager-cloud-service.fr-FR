@@ -2,7 +2,7 @@
 title: Modifications notables d’Adobe Experience Manager Assets as a Cloud Service
 description: Changements notables des ressources Adobe Experience Manager dans AEM Cloud Service par rapport à Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 37ff6912837ba78c90526e8f8322b9002e9a4304
 
 ---
 
@@ -33,7 +33,7 @@ Les rendus standard générés avec les microservices de ressources sont stocké
 
 ## Développement et test de microservices de ressources {#asset-microservices}
 
-Les microservices de ressources offrent un traitement évolutif et résilient des ressources à l’aide des services cloud. Adobe gère les services cloud pour une gestion optimale des différents types de ressources et des différentes options de traitement. Les microservices de ressources permettent d’éviter la nécessité d’utiliser des outils et méthodes de rendu tiers (tels que le transcodage ImageMagick et FFmpeg) et de simplifier les configurations, tout en offrant des fonctionnalités prêtes à l’emploi pour les types de fichiers courants. Actuellement, l’intégration ImageMagick et le transcodage FFMmpeg ne sont pas disponibles dans le service Cloud.
+Les microservices de ressources offrent un traitement évolutif et résilient des ressources à l’aide des services cloud. Adobe gère les services cloud pour une gestion optimale des différents types de ressources et des différentes options de traitement. Les microservices de ressources permettent d’éviter la nécessité d’utiliser des outils et méthodes de rendu tiers (tels que ImageMagick) et de simplifier les configurations, tout en offrant des fonctionnalités prêtes à l’emploi pour les types de fichiers courants. Vous pouvez désormais traiter un [large éventail de types](/help/assets/file-format-support.md) de fichiers couvrant davantage de formats prêts à l’emploi que les versions précédentes d’Experience Manager. Par exemple, l’extraction de miniatures des formats PSD et PSB est désormais possible, car elle nécessitait auparavant des solutions tierces telles que ImageMagick. Vous ne pouvez pas utiliser les configurations complexes d’ImageMagick pour la configuration des Profils [!UICONTROL de] traitement. Utilisez également [!DNL Dynamic Media] pour le transcodage Fmpeg des vidéos.
 
 Asset microservices est un service natif au cloud qui est automatiquement mis en service et câblé vers Experience Manager dans les programmes et environnements clients gérés dans Cloud Manager. Pour étendre ou personnaliser Experience Manager, les développeurs peuvent utiliser le contenu ou les ressources existants avec des rendus générés dans un environnement cloud, afin de tester et de valider leur code à l’aide, de l’affichage et du téléchargement de ressources.
 
