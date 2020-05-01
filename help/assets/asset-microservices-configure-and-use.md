@@ -3,7 +3,7 @@ title: Configuration et utilisation des microservices de ressources pour le trai
 description: Découvrez comment configurer et utiliser les microservices de ressources basés sur le cloud pour traiter des ressources à grande échelle.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -22,20 +22,20 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 Les microservices de ressources offrent un traitement évolutif et résilient des ressources à l’aide des services cloud. Adobe gère les services pour une gestion optimale des différents types de ressources et des options de traitement.
 
-Asset processing depends on the configuration in **[!UICONTROL Processing Profiles]**, which provide a default set up, and allow an administrator to add more specific asset processing configuration. Les administrateurs peuvent créer et gérer les configurations des  de post-traitement, y compris la personnalisation facultative. La personnalisation des  de permet l’extensibilité et la personnalisation complète.
+Asset processing depends on the configuration in **[!UICONTROL Processing Profiles]**, which provide a default set up, and allow an administrator to add more specific asset processing configuration. Les administrateurs peuvent créer et gérer les configurations des workflows de post-traitement, y compris la personnalisation facultative. La personnalisation des workflows permet l&#39;extensibilité et la personnalisation complète.
 
-Un flux de haut niveau pour le traitement des ressources est en dessous.
+Les microservices de ressources vous permettent de traiter un [large éventail de types](/help/assets/file-format-support.md) de fichiers couvrant davantage de formats prêts à l’emploi que les versions précédentes d’Experience Manager, par exemple l’extraction de miniatures des formats PSD et PSB qui nécessitaient auparavant des solutions tierces telles que ImageMagick.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
-![asset-microservices-flow](assets/asset-microservices-flow.png)
+![vue de haut niveau du](assets/asset-microservices-flow.png "traitement des actifsvue de haut niveau du traitement des actifs")
 
 >[!NOTE]
 >
-> Le traitement des ressources décrit ici remplace le modèle de `DAM Update Asset` flux de travail existant dans les versions précédentes d’Experience Manager. La plupart des étapes standard liées aux métadonnées et à la génération du rendu sont remplacées par le traitement des microservices de ressources, tandis que les étapes restantes, le cas échéant, peuvent être remplacées par la configuration du workflow de post-traitement.
+> Le traitement des ressources décrit ici remplace le modèle de `DAM Update Asset` processus qui existe dans les versions précédentes d’Experience Manager. La plupart des étapes standard liées aux métadonnées et à la génération du rendu sont remplacées par le traitement des microservices de ressources, tandis que les étapes restantes, le cas échéant, peuvent être remplacées par la configuration du workflow de post-traitement.
 
 ## Prise en main du traitement des ressources {#get-started}
 
@@ -54,7 +54,7 @@ Pour configurer des microservices de ressources, les administrateurs peuvent uti
 
 ### Configuration par défaut {#default-config}
 
-Avec la configuration par défaut, seul le profil de traitement standard est configuré. Le  de traitement standard n’est pas visible dans l’interface utilisateur et vous ne pouvez pas le modifier. Il s’exécute toujours pour traiter les fichiers téléchargés. Un de traitement standard permet de s’assurer que tout le traitement de base requis par Experience Manager est terminé sur toutes les ressources.
+Avec la configuration par défaut, seul le profil de traitement standard est configuré. Le profil de traitement standard n’est pas visible dans l’interface utilisateur et vous ne pouvez pas le modifier. Il s’exécute toujours pour traiter les fichiers téléchargés. Un profil de traitement standard permet de s’assurer que tous les traitements de base requis par Experience Manager sont terminés sur toutes les ressources.
 
 <!-- ![processing-profiles-standard](assets/processing-profiles-standard.png) -->
 
@@ -77,13 +77,13 @@ Chaque configuration de profil de traitement comprend une liste de rendus. Pour 
 
 * Nom du rendu.
 * Format de rendu pris en charge, tel que JPEG, PNG ou GIF.
-* Largeur et hauteur du rendu en pixels. S’il n’est pas spécifié, la taille totale en pixels de l’image d’origine est utilisée.
+* Largeur et hauteur du rendu en pixels. Si elle n’est pas spécifiée, la taille en pixels de l’image d’origine est utilisée.
 * Qualité du rendu JPEG en pourcentage.
-* Types MIME inclus et exclus pour définir l’applicabilité d’un  de.
+* Types MIME inclus et exclus pour définir l&#39;applicabilité d&#39;un profil.
 
 ![ajout-profils-traitement](assets/processing-profiles-adding.png)
 
-Lorsque vous créez et enregistrez un nouveau de traitement  il est ajouté au de l’ de traitement configuré. Vous pouvez appliquer ces  de traitement aux dossiers dans la hiérarchie de dossiers afin de les rendre efficaces pour le transfert de fichiers et le traitement de fichiers.
+Lorsque vous créez et enregistrez un nouveau profil de traitement, il est ajouté à la liste des profils de traitement configurés. Vous pouvez appliquer ces profils de traitement aux dossiers de la hiérarchie de dossiers afin de les rendre efficaces pour le transfert de fichiers et le traitement de fichiers.
 
 <!-- Removed per cqdoc-15624 request by engineering.
  ![processing-profiles-list](assets/processing-profiles-list.png) -->
@@ -98,17 +98,17 @@ Une valeur vide signifie que le traitement des ressources utilise, par défaut, 
 
 Lorsqu’un fichier avec un type MIME spécifique est traité, le type MIME est d’abord vérifié par rapport à la valeur des types MIME exclus pour la spécification de rendu. En cas de correspondance avec cette liste, ce rendu spécifique n’est pas généré pour la ressource (il est mis sur liste noire ou « blacklisté »).
 
-Dans le cas contraire, le type MIME est vérifié par rapport au type MIME inclus. S’il correspond au  du, le rendu est généré (&quot;liste blanche&quot;).
+Sinon, le type MIME est vérifié par rapport au type MIME inclus et s&#39;il correspond à la liste, le rendu est généré (&quot;liste blanche&quot;).
 
 #### Rendu FPO spécial {#special-fpo-rendition}
 
-Lorsque vous importez des fichiers de grande taille d’AEM dans le Adobe InDesign, un professionnel de la création doit attendre longtemps avant de [placer un fichier](https://helpx.adobe.com/fr/indesign/using/placing-graphics.html). En attendant, l’utilisateur ne peut pas utiliser InDesign. Cela interrompt le flux créatif et a un impact négatif sur l’expérience utilisateur. Adobe permet de commencer par le placement temporaire de rendus de petite taille dans le InDesign, qui peut être remplacé ultérieurement par des ressources à la demande en pleine résolution. Experience Manager fournit des rendus utilisés uniquement pour les emplacements (FPO). Ces rendus FPO ont une taille de fichier réduite, mais ont les mêmes proportions.
+Lorsque vous importez des ressources de grande taille d’AEM dans les documents Adobe InDesign, un professionnel de la création doit attendre longtemps avant de [placer une ressource](https://helpx.adobe.com/fr/indesign/using/placing-graphics.html). En attendant, l’utilisateur ne peut pas utiliser InDesign. Cela interrompt le flux créatif et a un impact négatif sur l’expérience de l’utilisateur. Adobe permet de commencer par le placement temporaire de rendus de petite taille dans les documents InDesign, qui peuvent être remplacés par des ressources à la demande en résolution intégrale. Experience Manager fournit des rendus qui sont utilisés uniquement pour les emplacements (FPO). Ces rendus FPO ont une petite taille de fichier mais ont les mêmes proportions.
 
-Le de traitement peut inclure un rendu FPO (pour placement uniquement). See Adobe Asset Link [documentation](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html) to understand if you need to turn it on for your processing profile. Pour plus d’informations, voir la documentation [complète d’](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html)Adobe Asset Link.
+Le profil de traitement peut inclure un rendu FPO (pour l’emplacement uniquement). See Adobe Asset Link [documentation](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html) to understand if you need to turn it on for your processing profile. Pour plus d’informations, voir la documentation [complète d’](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html)Adobe Asset Link.
 
 ## Utilisation de microservices de ressources pour traiter des ressources {#use-asset-microservices}
 
-Créez et appliquez le de traitement personnalisé supplémentaire aux dossiers spécifiques pour Experience Manager afin de traiter les fichiers téléchargés ou mis à jour dans ces dossiers. Le de traitement standard intégré par défaut est toujours exécuté, mais il n’est pas visible dans l’interface utilisateur. Si vous ajoutez un  de personnalisé, les deux  de sont utilisées pour traiter les ressources téléchargées.
+Créez et appliquez des profils de traitement personnalisés supplémentaires à des dossiers spécifiques pour Experience Manager afin de traiter les fichiers téléchargés ou mis à jour dans ces dossiers. Le profil de traitement standard intégré par défaut est toujours exécuté mais n’est pas visible dans l’interface utilisateur. Si vous ajoutez un profil personnalisé, les deux profils sont utilisés pour traiter les fichiers téléchargés.
 
 Pour que les profils de traitement soient appliqués aux dossiers, deux méthodes sont possibles :
 
@@ -125,7 +125,7 @@ Une fois qu’un profil de traitement a été appliqué à un dossier, toutes le
 >
 >Lorsque des ressources sont chargées dans un dossier, Experience Manager recherche un profil de traitement dans les propriétés du dossier conteneur. Si aucun profil de traitement n’est appliqué, la recherche se poursuit vers le haut de l’arborescence de dossiers jusqu’à ce qu’un profil appliqué soit trouvé. Celui-ci est alors utilisé pour la ressource. Cela signifie qu’un profil de traitement appliqué à un dossier fonctionne pour l’ensemble de l’arborescence, mais qu’il peut être remplacé par un autre qui est appliqué à un sous-dossier.
 
-Les utilisateurs peuvent vérifier que le traitement a bien eu lieu en ouvrant une ressource récemment chargée dont le traitement est terminé, en ouvrant l’aperçu de la ressource et en cliquant sur la vue **[!UICONTROL Rendus]** du rail de gauche. Les rendus spécifiques dans le de traitement, pour lesquels le type de ressource spécifique correspond aux règles d’inclusion de type MIME, doivent être visibles et accessibles.
+Les utilisateurs peuvent vérifier que le traitement a bien eu lieu en ouvrant une ressource récemment chargée dont le traitement est terminé, en ouvrant l’aperçu de la ressource et en cliquant sur la vue **[!UICONTROL Rendus]** du rail de gauche. Les rendus spécifiques dans le profil de traitement, pour lesquels le type de ressource spécifique correspond aux règles d’inclusion de type MIME, doivent être visibles et accessibles.
 
 ![rendus-supplémentaires](assets/renditions-additional-renditions.png)*Figure : Exemple de deux rendus supplémentaires générés par un profil de traitement appliqué au dossier parent*
 
@@ -154,7 +154,7 @@ Les modèles de workflow de post-traitement sont des modèles AEM standard. Cré
 
 Les étapes de traitement doivent être ajoutées en fonction des besoins. Vous pouvez utiliser toutes les étapes prises en charge disponibles, ainsi que toutes les étapes de processus implémentées sur mesure.
 
-Assurez-vous que la dernière étape de chaque  de post-traitement est `DAM Update Asset Workflow Completed Process`. La dernière étape permet de s’assurer qu’Experience Manager sait quand le traitement des ressources est terminé.
+Assurez-vous que la dernière étape de chaque workflows de post-traitement est `DAM Update Asset Workflow Completed Process`. La dernière étape permet de s’assurer qu’Experience Manager sait quand le traitement des ressources est terminé.
 
 ### Configuration de l’exécution du processus de post-traitement {#configure-post-processing-workflow-execution}
 
