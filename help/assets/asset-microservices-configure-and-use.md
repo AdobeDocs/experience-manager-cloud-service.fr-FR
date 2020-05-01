@@ -3,7 +3,7 @@ title: Configuration et utilisation des microservices de ressources pour le trai
 description: Découvrez comment configurer et utiliser les microservices de ressources basés sur le cloud pour traiter des ressources à grande échelle.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 37ff6912837ba78c90526e8f8322b9002e9a4304
 
 ---
 
@@ -24,7 +24,7 @@ Les microservices de ressources offrent un traitement évolutif et résilient de
 
 Asset processing depends on the configuration in **[!UICONTROL Processing Profiles]**, which provide a default set up, and allow an administrator to add more specific asset processing configuration. Les administrateurs peuvent créer et gérer les configurations des workflows de post-traitement, y compris la personnalisation facultative. La personnalisation des workflows permet l&#39;extensibilité et la personnalisation complète.
 
-Les microservices de ressources vous permettent de traiter un [large éventail de types](/help/assets/file-format-support.md) de fichiers couvrant davantage de formats prêts à l’emploi que les versions précédentes d’Experience Manager, par exemple l’extraction de miniatures des formats PSD et PSB qui nécessitaient auparavant des solutions tierces telles que ImageMagick.
+Les microservices de ressources vous permettent de traiter un [large éventail de types](/help/assets/file-format-support.md) de fichiers couvrant davantage de formats prêts à l’emploi que les versions précédentes d’Experience Manager. Par exemple, l’extraction de miniatures des formats PSD et PSB est désormais possible, car elle nécessitait auparavant des solutions tierces telles que ImageMagick.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
