@@ -3,7 +3,7 @@ title: Découvrez comment les microservices de ressources peuvent traiter vos re
 description: Traitez vos ressources numériques à l’aide de microservices de traitement des ressources évolutifs et natifs en mode cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -15,9 +15,7 @@ First half of content at https://git.corp.adobe.com/aklimets/project-nui/blob/ma
 TBD: Post-GA we will provide detailed information at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all information is added, in short, in this article.
 -->
 
-Adobe Experience Manager en tant que service Cloud offre un moyen natif du cloud d’exploiter les applications et les fonctionnalités d’Experience Manager. L’ingestion et le traitement des ressources, basés sur la technologie des microservices de ressources, constituent deux points forts de cette nouvelle architecture.
-
-Les microservices de ressources permettent un traitement évolutif et résilient des ressources à l’aide des Cloud Services. Ces derniers sont gérés par Adobe pour garantir un traitement optimal des différents types de ressources et options de traitement. Les principaux avantages sont les suivants :
+Adobe Experience Manager as a Cloud Service fournit une méthode native de cloud pour exploiter les applications et les fonctionnalités d’Experience Manager. L’ingestion et le traitement des ressources, basés sur la technologie des microservices de ressources, constituent deux points forts de cette nouvelle architecture. Les microservices de ressources offrent un traitement évolutif et résilient des ressources à l’aide des services cloud. Adobe gère les services cloud pour une gestion optimale des différents types de ressources et des différentes options de traitement. Les principaux avantages des microservices de ressources natifs au cloud sont les suivants :
 
 * Architecture évolutive qui permet un traitement transparent pour les opérations gourmandes en ressources.
 * Indexation et extractions de texte efficaces qui n’affectent pas les performances de vos environnements Experience Manager.
@@ -28,7 +26,7 @@ Les microservices de ressources permettent un traitement évolutif et résilient
 * Native Adobe file processing services are used where applicable, providing high-fidelity output and [efficient handling of Adobe proprietary formats](file-format-support.md).
 * Possibilité de configurer le workflow de post-traitement de manière à ajouter des actions et des intégrations spécifiques à l’utilisateur.
 
-L’utilisation des microservices de ressources permet de se passer d’outils de rendu tiers (comme ImageMagick) et de simplifier la configuration du système, tout en fournissant des fonctionnalités prêtes à l’emploi pour les types de fichiers courants.
+Les microservices de ressources permettent d’éviter la nécessité d’utiliser des outils et méthodes de rendu tiers (tels que le transcodage ImageMagick et FFmpeg) et de simplifier les configurations, tout en offrant des fonctionnalités prêtes à l’emploi pour les types de fichiers courants.
 
 ## Architecture de haut niveau {#asset-microservices-architecture}
 
@@ -45,26 +43,26 @@ Les principales étapes de l’ingestion et du traitement des ressources à l’
 
 * Les clients, tels que les navigateurs web ou Adobe Asset Link, envoient une requête de chargement à Experience Manager et commencent directement le transfert du binaire vers l’espace de stockage cloud.
 * Une fois le chargement terminé, le client en informe Experience Manager.
-* Experience Manager envoie une requête de traitement aux microservices de ressources. Le contenu de la requête dépend de la configuration des profils de traitement dans Experience Manager, lesquels indiquent les rendus à générer.
+* Experience Manager envoie une requête de traitement aux microservices de ressources. Le contenu de la requête dépend de la configuration des profils de traitement dans Experience Manager qui indique quels rendus générer.
 * Le serveur back-end des microservices de ressources reçoit la requête et, en fonction de cette dernière, la transmet à un ou plusieurs microservices. Chaque microservice accède directement au fichier binaire d’origine depuis l’espace de stockage cloud des binaires.
 * Les résultats du traitement, tels que les rendus, sont stockés dans cet espace.
-* Experience Manager est informé de la fin du traitement, avec des pointeurs directs vers les binaires générés (rendus) qui sont ensuite disponibles dans Experience Manager pour la ressource chargée.
+* Experience Manager est averti que le traitement est terminé avec des pointeurs directs vers les binaires générés (rendus). Les rendus générés sont disponibles dans Experience Manager pour la ressource téléchargée.
 
-Il s’agit du flux d’ingestion et de traitement de base des ressources. S’il est configuré, Experience Manager peut également le modèle de flux de travail du client à effectuer le post-traitement de la ressource, par exemple, pour exécuter certaines étapes personnalisées spécifiques à l’ client, comme la récupération des informations des systèmes d’entreprise du client à ajouter aux propriétés de la ressource.
+Il s’agit du flux d’ingestion et de traitement de base des ressources. S’il est configuré, Experience Manager peut également début un modèle de processus personnalisé pour effectuer le post-traitement de la ressource. Par exemple, exécutez des étapes personnalisées spécifiques à votre environnement, telles que récupérer des informations d’un système d’entreprise et les ajouter aux propriétés de la ressource.
 
 Le flux d’assimilation et de traitement sont des concepts clés de l’architecture des microservices de ressources pour Experience Manager.
 
-* **Accès** binaire direct : Les ressources sont transportées (et téléchargées) vers le magasin binaire Cloud une fois configurées pour Experience Manager  les , puis AEM, les microservices de ressources et enfin les clients ont un accès direct à ces ressources pour accomplir leur travail. Cela réduit la charge sur les réseaux et la duplication des binaires stockés.
-* **Traitement** externe : Le traitement des ressources s’effectue en dehors du  AEM  et enregistre ses ressources (processeur, mémoire) pour fournir des fonctionnalités clés de gestion des ressources numériques et prendre en charge le travail interactif avec le système pour les utilisateurs finaux.
+* **Accès** binaire direct : Les ressources sont transportées (et téléchargées) dans le magasin binaire Cloud une fois configurées pour les environnements d’Experience Manager, puis AEM, les microservices de ressources et enfin les clients ont un accès direct à ces ressources pour effectuer leur travail. Cela réduit la charge sur les réseaux et la duplication des binaires stockés.
+* **Traitement** externe : Le traitement des ressources s’effectue en dehors de l’environnement AEM et enregistre ses ressources (CPU, mémoire) pour fournir les fonctionnalités clés de la gestion des ressources numériques et prendre en charge le travail interactif avec le système pour les utilisateurs finaux.
 
 ## Transfert de ressources avec accès binaire direct {#asset-upload-with-direct-binary-access}
 
-Les clients Experience Manager, qui font partie de l’offre de produit, prennent tous en charge le téléchargement avec un accès binaire direct par défaut. Cela comprend notamment le chargement au moyen de l’interface web, d’Adobe Asset Link et de l’application de bureau AEM.
+Les clients Experience Manager, qui font partie de l’offre de produits, prennent tous en charge le téléchargement avec un accès binaire direct par défaut. Cela comprend notamment le chargement au moyen de l’interface web, d’Adobe Asset Link et de l’application de bureau AEM.
 
-Vous pouvez utiliser des outils de téléchargement personnalisés qui fonctionnent directement avec les API HTTP AEM. Vous pouvez utiliser ces API directement ou utiliser et étendre les projets open source suivants qui implémentent le protocole de transfert :
+Vous pouvez utiliser des outils de téléchargement personnalisés qui fonctionnent directement avec les API HTTP AEM. Vous pouvez utiliser ces API directement ou utiliser et étendre les projets open source suivants qui implémentent le protocole de téléchargement :
 
 * [Bibliothèque de chargement Open Source](https://github.com/adobe/aem-upload)
-* [Outil de ligne de commande Open Source](https://github.com/adobe/aio-cli-plugin-aem)
+* [Outil de ligne de commande open-source](https://github.com/adobe/aio-cli-plugin-aem)
 
 For more information, see [upload assets](add-assets.md).
 
