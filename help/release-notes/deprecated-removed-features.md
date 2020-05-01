@@ -1,8 +1,8 @@
 ---
 title: Fonctionnalités obsolètes et supprimées
 description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et supprimées dans Adobe Experience Manager as a Cloud Service.
-translation-type: ht
-source-git-commit: b31ae32285080075d2531edd2c4976cf801d1c89
+translation-type: tm+mt
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -24,11 +24,12 @@ Cette section répertorie les fonctionnalités qui ont été marquées comme obs
 
 Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionnalité dans leur déploiement actuel et de prévoir la modification de leur mise en œuvre de façon à utiliser l’alternative proposée.
 
-| Zone | Fonctionnalité | Remplacement |
+| Fonctions | Fonction obsolète | Remplacement |
 | ------------ | ------------------ | ----------- |
-| Ressources | L’assimilation et le traitement des ressources n’utilisent plus le workflow `DAM Asset Update` | L’assimilation de ressources utilise maintenant les [microservices de ressources](/help/assets/asset-microservices-overview.md). |
-| Ressources | Transfert direct de ressources vers AEM : consultez [API de téléchargement de ressources obsolètes](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api) | [Le transfert binaire direct](/help/assets/add-assets.md) est utilisé dans Experience Manager as a Cloud Service. Pour plus d’informations techniques, consultez [API de transfert direct](/help/assets/developer-reference-material-apis.md#overview-binary-upload). |
-| Ressources | [Certaines étapes de workflow ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) dans le workflow `DAM Asset Update` ne sont pas prises en charge, notamment l’appel d’outils de ligne de commande tels que ImageMagick. | [Les microservices de ressources](/help/assets/asset-microservices-overview.md) remplacent de nombreux workflows. Pour le traitement personnalisé, utilisez des [workflows de post-traitement](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
+| Ressources | `DAM Asset Update` flux de travail pour traiter les images imbriquées. | L’assimilation de ressources utilise maintenant les [microservices de ressources](/help/assets/asset-microservices-overview.md). |
+| Ressources | Upload assets directly to AEM. See [deprecated asset upload APIs](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Utilisez le téléchargement [binaire](/help/assets/add-assets.md)direct. Pour plus d’informations techniques, consultez [API de transfert direct](/help/assets/developer-reference-material-apis.md#overview-binary-upload). |
+| Ressources | [Certaines étapes de workflow ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) dans le workflow `DAM Asset Update` ne sont pas prises en charge, notamment l’appel d’outils de ligne de commande tels que ImageMagick.. | [Les microservices de ressources](/help/assets/asset-microservices-overview.md) remplacent de nombreux workflows. Pour le traitement personnalisé, utilisez des [workflows de post-traitement](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
+| Ressources | Transcodage FFmpeg des vidéos. | Pour la génération de miniatures FFmpeg, utilisez les microservices [](/help/assets/asset-microservices-overview.md)Asset. Pour le transcodage Fmpeg, utilisez [Contenu multimédia](/help/assets/manage-video-assets.md)dynamique. |
 
 ## Fonctionnalités supprimées {#removed-features}
 
