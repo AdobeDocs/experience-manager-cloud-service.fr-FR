@@ -1,8 +1,8 @@
 ---
 title: Vidéo
 description: Découvrez comment utiliser la vidéo dans Dynamic Media
-translation-type: ht
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+translation-type: tm+mt
+source-git-commit: acdad463a188387a7c39c1061191c7472e8295dd
 
 ---
 
@@ -35,7 +35,7 @@ Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapide
       * [Application d’un profil vidéo à des dossiers](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
       * En savoir plus sur les [bonnes pratiques relatives à l’organisation des ressources numériques en vue de l’utilisation de profils de traitement](/help/assets/dynamic-media/best-practices-for-file-management.md).
       * En savoir plus sur l’[organisation des ressources numériques](/help/assets/organize-assets.md).
-   * Téléchargez les vidéos originales dans les dossiers. Vous pouvez transférer des fichiers vidéo d’une taille de 20 Go chacune au maximum. Lorsque vous ajoutez des vidéos au dossier, elles sont codées selon le profil de traitement vidéo affecté au dossier.
+   * Téléchargez les vidéos originales dans les dossiers. Vous pouvez transférer des fichiers vidéo d’une taille de 15 Go chacune au maximum. Lorsque vous ajoutez des vidéos au dossier, elles sont codées selon le profil de traitement vidéo affecté au dossier.
 
       * [Chargement des vidéos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
       * En savoir plus sur les [formats de fichiers d’entrée pris en charge](/help/assets/file-format-support.md).
@@ -419,13 +419,13 @@ Lorsque vous ignorez le profil de traitement vidéo et que vous effectuez direct
 
 Pour garantir une authentification serveur à serveur sécurisée avec YouTube, la publication des vidéos sur les serveurs YouTube implique les tâches suivantes :
 
-1. [Configuration des paramètres de Google Cloud](#configuring-google-cloud-settings)
+1. [Configuration des paramètres de Google Cloud   ](#configuring-google-cloud-settings)
 1. [Création d’une chaîne YouTube](#creating-a-youtube-channel)
 1. [Ajout de balises pour la publication](#adding-tags-for-publishing)
 1. [Activation de l’agent de réplication de publication YouTube](#enabling-the-youtube-publish-replication-agent)
-1. [Configuration de YouTube dans AEM](#setting-up-youtube-in-aem)
+1. [Configuration de YouTube dans AEM   ](#setting-up-youtube-in-aem)
 1. [(Facultatif) Automatisation de la définition des propriétés YouTube par défaut pour vos vidéos chargées](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
-1. [Publication de vidéos sur votre chaîne YouTube](#publishing-videos-to-your-youtube-channel)
+1. [Publication de vidéos sur votre chaîne YouTube   ](#publishing-videos-to-your-youtube-channel)
 1. [(Facultatif) Vérification de la vidéo publiée sur YouTube](/help/assets/dynamic-media/video.md#optional-verifying-the-published-video-on-youtube)
 1. [Liaison d’URL YouTube à une application web](#linking-youtube-urls-to-your-web-application)
 
@@ -451,7 +451,7 @@ Pour configurer les paramètres de Google Cloud, procédez comme suit :
    Si vous disposez déjà d’un compte Google, passez à l’étape suivante.
 
 1. Accédez à [https://cloud.google.com/](https://cloud.google.com/).
-1. Sur la page Google Cloud, en haut à droite, cliquez sur **[!UICONTROL Console]**.
+1. Dans la page Google Cloud, près du coin supérieur droit, cliquez sur **[!UICONTROL Console]**.
 
    Si nécessaire, vous devrez peut-être vous **[!UICONTROL connecter]** à l’aide des informations d’identification de votre compte Google pour voir l’option **[!UICONTROL Console]**.
 
@@ -512,7 +512,7 @@ Pour configurer les paramètres de Google Cloud, procédez comme suit :
    **Remarque :** L’exemple du chemin ci-dessus est fourni uniquement à titre illustratif.
 
 1. Cliquez sur **[!UICONTROL Créer un ID de client OAuth]**.
-1. Sur la page **[!UICONTROL Ajouter des informations d’identification à votre projet]**, à l’étape 3, sous l’en-tête **[!UICONTROL Configuration de l’écran du consentement OAuth 2.0]**, sélectionnez l’adresse e-mail Gmail que vous utilisez actuellement.
+1. Sur la page **[!UICONTROL Ajouter des informations d’identification à votre projet]**, à l’étape 3, sous l’en-tête **[!UICONTROL Configuration de l’écran de consentement OAuth 2.0]**, sélectionnez l’adresse électronique Gmail que vous utilisez actuellement.
 
    ![6_5_googleaccount-apis-createcredentials-consentscreen](assets/6_5_googleaccount-apis-createcredentials-consentscreen.png)
 
@@ -575,9 +575,9 @@ Après avoir activé l’agent de réplication de publication YouTube, si vous s
 
 ### Configuration de YouTube dans AEM    {#setting-up-youtube-in-aem}
 
-À partir d’AEM 6.4, une nouvelle méthode d’interface utilisateur tactile a été ajoutée pour configurer la publication YouTube dans AEM. En fonction de l’instance installée d’AEM que vous utilisez, effectuez l’une des opérations suivantes :
+À partir d’AEM 6.4, une nouvelle méthode d’interface utilisateur tactile a été ajoutée pour configurer la publication YouTube dans AEM. Selon l’instance installée d’AEM que vous utilisez, effectuez l’une des opérations suivantes :
 
-* Pour configurer YouTube dans AEM avant la version 6.4, reportez-vous à [Configuration de YouTube dans AEM avant la version 6.4](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before).
+* Pour configurer YouTube dans une version d’AEM antérieure à 6.4, voir [Configuration de YouTube dans une version d’AEM antérieure à 6.4](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before).
 * Pour configurer YouTube dans AEM 6.4 ou versions ultérieures, reportez-vous à [Configuration de YouTube dans AEM 6.4 et versions ultérieures](#setting-up-youtube-in-aem-and-later).
 
 #### Configuration de YouTube dans AEM 6.4 et versions ultérieures    {#setting-up-youtube-in-aem-and-later}
@@ -587,7 +587,7 @@ Après avoir activé l’agent de réplication de publication YouTube, si vous s
 1. Appuyez sur **[!UICONTROL global]** (sans sélectionner cette option).
 
 1. Dans le coin supérieur droit de la page Global, appuyez sur **[!UICONTROL Créer]**.
-1. Sur la page Créer une configuration YouTube, sous Paramètres de la plate-forme Google Cloud, dans le champ **[!UICONTROL Nom de l’application]**, saisissez l’ID de projet Google.
+1. Sur la page Créer une configuration YouTube, sous Paramètres de plateforme Google Cloud, dans le champ **[!UICONTROL Nom de l’application]**, saisissez l’ID de projet Google.
 
    Vous avez spécifié l’ID de projet lorsque vous avez précédemment configuré les paramètres de Google Cloud.
 Laissez la boîte de dialogue Créer une configuration YouTube ouverte, car vous y reviendrez dans quelques instants.
@@ -596,7 +596,7 @@ Laissez la boîte de dialogue Créer une configuration YouTube ouverte, car vous
 
 1. À l’aide d’un éditeur de texte brut, ouvrez le fichier JSON que vous avez téléchargé et enregistré au cours de la tâche [Configuration des paramètres de Google Cloud](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings).
 1. Sélectionnez l’intégralité du texte JSON et copiez-le.
-1. Retournez dans la boîte de dialogue Paramètres de compte YouTube. Dans le champ **[!UICONTROL Configuration JSON]**, collez le texte JSON.
+1. Revenez à la boîte de dialogue Paramètres du compte YouTube. Dans le champ **[!UICONTROL Configuration JSON]**, collez le texte JSON.
 1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer]**.
 
    Vous devez maintenant configurer les chaînes YouTube dans AEM.
@@ -634,20 +634,20 @@ Laissez la boîte de dialogue Créer une configuration YouTube ouverte, car vous
 1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Déploiement]** > **[!UICONTROL Services Cloud]**.
 1. Sous le titre Services tiers, appuyez sur **[!UICONTROL Configurer maintenant]** sous YouTube.
 1. Dans la boîte de dialogue Créer une configuration, saisissez un titre (obligatoire) et un nom (facultatif) dans les champs correspondants.
-1. Appuyez sur **[!UICONTROL Créer]**.
-1. Dans la boîte de dialogue Paramètres de compte YouTube, saisissez l’ID de projet Google dans le champ **[!UICONTROL Nom d’application]**.
+1. Appuyez sur **[!UICONTROL Create]** (Créer). 
+1. Dans la boîte de dialogue Paramètres du compte YouTube, dans le champ **[!UICONTROL Nom de l’application]**, saisissez l’ID de projet Google.
 
    Vous avez spécifié l’ID de projet lorsque vous avez précédemment [configuré les paramètres de Google Cloud](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings).
 Laissez cette boîte de dialogue ouverte. Vous y retournerez dans quelques instants.
 
 1. À l’aide d’un éditeur de texte brut, ouvrez le fichier JSON que vous avez téléchargé et enregistré au cours de la tâche Configuration des paramètres de Google Cloud.
 1. Sélectionnez l’intégralité du texte JSON et copiez-le.
-1. Retournez dans la boîte de dialogue Paramètres de compte YouTube. Dans le champ **[!UICONTROL Configuration JSON]**, collez le texte JSON.
+1. Revenez à la boîte de dialogue Paramètres du compte YouTube. Dans le champ **[!UICONTROL Configuration JSON]**, collez le texte JSON.
 1. Appuyez sur **[!UICONTROL OK]**.
 
    Vous devez maintenant configurer les chaînes YouTube dans AEM.
 
-1. À droite de l’option **[!UICONTROL Chaînes disponibles]**, appuyez sur **+** (icône représentant un signe plus).
+1. À droite des **[!UICONTROL Canaux disponibles]**, appuyez sur **+** (plus l’icône de signe).
 1. Dans la boîte de dialogue Paramètres de chaîne YouTube, dans le champ Titre, saisissez le nom de la chaîne que vous avez créée lors de la tâche **[!UICONTROL Ajout d’une ou plusieurs chaînes YouTube]** précédemment.
 
    Vous pouvez éventuellement ajouter une description.
@@ -677,7 +677,7 @@ Laissez cette boîte de dialogue ouverte. Vous y retournerez dans quelques insta
 
 Vous pouvez si vous le souhaitez automatiser la définition des propriétés YouTube lors du transfert de vos vidéos. À cet effet, créez un profil de traitement des métadonnées dans AEM.
 
-Pour créer le profil de traitement des métadonnées, vous commencez par copier les valeurs des champs **[!UICONTROL Libellé du champ]**, **[!UICONTROL Associer à la propriété]** et **[!UICONTROL Choix]**, qui sont tous disponibles dans les schémas de métadonnées vidéo. Ensuite, vous allez créer votre propre profil de traitement des métadonnées vidéo YouTube en y ajoutant ces valeurs.
+Pour créer le profil de traitement des métadonnées, vous allez d’abord copier les valeurs des champs **[!UICONTROL Étiquette de champ]**, **[!UICONTROL Associer à la propriété]** et **[!UICONTROL Choix]**, tous situés dans les schémas de métadonnées pour la vidéo. Ensuite, vous allez créer votre propre profil de traitement des métadonnées vidéo YouTube en y ajoutant ces valeurs.
 
 Pour automatiser la définition des propriétés YouTube par défaut pour vos vidéos transférées :
 
@@ -731,7 +731,7 @@ Collez la valeur copiée dans l’éditeur de texte ouvert. Par la suite, vous a
    * Cliquez sur **[!UICONTROL Libellé du champ]** pour sélectionner le composant.
    * Dans la partie droite de la page, sous l’onglet Paramètres, collez les valeurs de publication YouTube (valeur Libellé du champ et Associer à la propriété) copiées précédemment, dans les champs respectifs du formulaire. Collez la valeur Choix dans le champ Valeur par défaut.
 
-1. Dans le coin supérieur droit de la page, cliquez sur **[!UICONTROL Enregistrer]**.
+1. Près du coin supérieur droit de la page, cliquez sur **[!UICONTROL Enregistrer]**.
 1. Appliquez le profil des métadonnées de publication YouTube aux dossiers dans lesquels vous allez transférer des vidéos. Vous devez avoir configuré le profil des métadonnées et le profil vidéo.
 
    Voir [Profils de métadonnées](/help/assets/metadata-profiles.md) et [Profils vidéo](/help/assets/dynamic-media/video-profiles.md).
@@ -857,7 +857,7 @@ Pour surveiller la progression (notamment l’échec du codage ou de la publicat
    >    * Gestionnaire des tâches du processus externe de processus Adobe Granite
    >    * File d’attente des délais d’attente des processus Granite
    >
-   >Vous pouvez régler les propriétés des **[!UICONTROL nouvelles tentatives]**, du **[!UICONTROL délai de tentative]**, ainsi que du **[!UICONTROL délai d’attente]** dans ces configurations.
+   >Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
 
 1. Pour les workflows en cours, consultez les instances de workflows disponibles sous **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Instances]**.
 
@@ -873,7 +873,7 @@ Pour surveiller la progression (notamment l’échec du codage ou de la publicat
 
    Depuis la section Instances de workflows, vous pouvez également suspendre, arrêter ou renommer les workflows. Voir [Administration des workflows](/help/sites-cloud/authoring/workflows/overview.md) pour plus d’informations.
 
-1. Pour les tâches qui ont échoué, consultez la section Échecs des processus disponible sous **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Échecs]**. Les listes des **[!UICONTROL Échecs de processus]** répertorient toutes les activités de processus qui ont échoué.
+1. Pour les tâches qui ont échoué, consultez la section Échecs des processus disponible sous **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Échecs]**. L’**[!UICONTROL échec du processus]** répertorie toutes les activités du processus ayant échoué.
 
    >[!NOTE]
    >
@@ -892,7 +892,7 @@ Pour surveiller la progression (notamment l’échec du codage ou de la publicat
    >    * File d’attente des délais d’attente des processus Granite
    >
    >
-   >Vous pouvez régler les propriétés des **[!UICONTROL nouvelles tentatives]**, du **[!UICONTROL délai de tentative]**, ainsi que du **[!UICONTROL délai d’attente]** dans ces configurations.
+   >Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
 
 1. Pour les workflows terminés, consultez l’archive de workflow sous **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Archive]**. La liste **[!UICONTROL Archive de workflow]** répertorie toutes les activités de workflow qui ont réussi.
 
@@ -1013,7 +1013,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 Pour afficher des rapports vidéo qui reposent sur une visionneuse de vidéos créée à l&#39;aide du kit Scene7 HTML5 Viewer SDK, procédez comme suit :
 
 1. Accédez à une ressource vidéo publiée.
-1. Dans le coin supérieur gauche de la page de la ressource, dans la liste déroulante, sélectionnez **[!UICONTROL Visionneuses]**.
+1. Près du coin supérieur gauche de la page du fichier, sélectionnez **[!UICONTROL Visionneuses]** dans la liste déroulante.
 1. Sélectionnez un paramètre prédéfini de visionneuse de vidéos et copiez le code intégré.
 1. Dans le code intégré, recherchez la ligne suivante :
 
@@ -1106,7 +1106,7 @@ Pour plus d’informations sur l’utilisation de la fonction JSON dans une URL,
 
 1. Utilisez l’une des méthodes suivantes :
 
-   * Pour une expérience de visionneuse de vidéos contextuelle, appuyez sur **[!UICONTROL URL]**. Dans la boîte de dialogue URL, sélectionnez L’URL et copiez-la dans le Presse-papiers, puis collez-la dans un éditeur de texte simple. Ajoutez l’URL copiée de la vidéo avec la syntaxe suivante :
+   * Pour une expérience de visionneuse de vidéos pop-up, appuyez sur **[!UICONTROL URL]**. Dans la boîte de dialogue URL, sélectionnez L’URL et copiez-la dans le Presse-papiers, puis collez-la dans un éditeur de texte simple. Ajoutez l’URL copiée de la vidéo avec la syntaxe suivante :
 
       `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
