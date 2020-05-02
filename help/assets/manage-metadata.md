@@ -4,7 +4,7 @@ description: Découvrez les types de métadonnées et comment [ ! DNL Adobe Expe
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 07ebe0588944fff40157119e658aca00eaed6ec3
 
 ---
 
@@ -161,7 +161,7 @@ Les schémas de métadonnées pris en charge sont répertoriés ci-dessous.
 
 ### Standard metadata {#standard-metadata}
 
-* dc - [!DNL Dublin Core] is the most important and widely used set of metadata.
+* DC - [!DNL Dublin Core] est un ensemble important et largement utilisé de métadonnées.
 * DICOM - Digital Imaging and Communications in Medicine.
 * Iptc4xmpCore et iptc4xmpExt - International Press Communications Standard contient de nombreuses métadonnées spécifiques à un sujet.
 * rdf - Resource Description Framework : pour les métadonnées web de sémantique générique.
@@ -173,45 +173,45 @@ Les schémas de métadonnées pris en charge sont répertoriés ci-dessous.
 Les métadonnées propres à l’application comprennent des métadonnées techniques et descriptives. Si vous utilisez ces métadonnées, d’autres applications risquent de ne pas pouvoir les utiliser. Par exemple, si vous disposez d’un fichier contenant des métadonnées et qu’une autre application de rendu d’image tente d’accéder aux métadonnées, il se peut qu’elle ne puisse pas accéder aux métadonnées. [!DNL Adobe Photoshop] Si vos fichiers contiennent de nombreuses métadonnées spécifiques à l’application, vous pouvez créer une étape de flux de travail qui transforme une propriété spécifique à l’application en propriété standard.
 
 * ACDSee - Metadata managed by the [!DNL ACDSee] program. Voir [www.acdsee.com/](https://www.acdsee.com/).
-* album - [!DNL Adobe Photoshop Album].
-* cq - Used by [!DNL Experience Manager Assets].
-* dam - Used by [!DNL Experience Manager Assets].
-* dex - Optima SC Description Explorer.
-* crs - Adobe Photoshop Camera Raw.
-* lr - [!DNL Adobe Lightroom].
-* mediapro - IView MediaPro.
+* Album - [!DNL Adobe Photoshop Album].
+* CQ - Used by [!DNL Experience Manager Assets].
+* DAM - Used by [!DNL Experience Manager Assets].
+* DEX - [Optima SC Description explorer](http://www.optimasc.com/products/dex/index.html) est une collection d&#39;outils pour la gestion des métadonnées et des fichiers pour les systèmes d&#39;exploitation Windows.
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
+* LR - [!DNL Adobe Lightroom].
+* MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto et MP - Microsoft Photo.
-* pdf et pdfx.
-* photoshop &amp; psAux - [!DNL Adobe Photoshop].
+* PDF &amp; PDF/X.
+* Photoshop et psAux - [!DNL Adobe Photoshop].
 
 ### Digital Rights Management metadata {#digital-rights-management-metadata}
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
-* plus - [Picture Licensing Universal System](https://www.useplus.com).
-* prism - https://www.idealliance.org/prism-metadata de publication DPS pour les métadonnées standard du secteur.
+* PLUS - [Picture Licensing Universal System](https://www.useplus.com).
+* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata).
 * PRL - PRISM Rights Language.
 * PUR - Droits d’utilisation de PRISM.
-* xmpPlus - Intégration de PLUS avec XMP.
+* `xmpPlus` - Intégration de PLUS avec XMP.
 
 ### Photography-specific metadata {#photography-specific-metadata}
 
 * Exif - Informations techniques de la caméra, y compris la position GPS.
 * CRS - [!DNL Camera Raw] schéma.
-* Iptc4xmpCore et iptc4xmpExt.
+* `iptc4xmpCore` et `iptc4xmpExt`.
 * TIFF - métadonnées d’image (pas seulement pour les images TIFF).
 
 ### Print-specific metadata {#print-specific-metadata}
 
-* pdf et pdfx - Adobe PDF et applications tierces.
-* prism - [www.prismstandard.org](https://www.prismstandard.org) Publishing Requirements for Industry Standard Metadata.
+* PDF et PDF/X - Adobe PDF et applications tierces.
+* PRISM - [www.prismstandard.org](https://www.prismstandard.org) Publishing Requirements for Industry Standard Metadata.
 * XMP.
-* xmpPG - Métadonnées XMP pour le texte paginé.
+* `xmpPG` - Métadonnées XMP pour le texte paginé.
 
 ### Métadonnées multimédias {#multimedia-specific-metadata}
 
-* xmpDM - [!DNL Dynamic Media].
-* xmpMM - Gestion des médias.
+* `xmpDM` - [!DNL Dynamic Media].
+* `xmpMM` - Gestion des médias.
 
 ## Processus pilotés par les métadonnées {#metadata-driven-workflows}
 
