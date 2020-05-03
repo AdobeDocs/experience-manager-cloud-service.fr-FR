@@ -1,9 +1,9 @@
 ---
-title: Importation et exportation des métadonnées de fichier par lot
+title: 'Importation et exportation des métadonnées de fichier par lot  '
 description: Cet article explique comment importer et exporter des métadonnées par lot.
 contentOwner: AG
-translation-type: ht
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+translation-type: tm+mt
+source-git-commit: 823925be9d0777f7d501d9a64e84937172b1028d
 
 ---
 
@@ -22,7 +22,7 @@ L’importation de métadonnées est asynchrone et ne nuit pas aux performances 
 
 1. Accédez à l’IU Assets et appuyez/cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
 1. Dans le menu, sélectionnez **[!UICONTROL Métadonnées]**.
-1. Dans la page **[!UICONTROL Importation des métadonnées]**, appuyez/cliquez sur **[!UICONTROL Sélectionner un fichier]**. Sélectionnez le fichier CSV contenant les métadonnées.
+1. Dans la page **[!UICONTROL Importation des métadonnées]**, appuyez/cliquez sur **[!UICONTROL Sélectionner un fichier]**. Sélectionnez le fichier CSV contenant les métadonnées.
 1. Spécifiez les paramètres suivants :
 
    | Paramètre | Description |
@@ -34,6 +34,12 @@ L’importation de métadonnées est asynchrone et ne nuit pas aux performances 
    | Nom de colonne du chemin d’accès à la ressource | Définit le nom de la colonne du fichier CSV avec des ressources. |
 
 1. Appuyez/cliquez sur **[!UICONTROL Importer]** dans la barre d’outils. Une fois les métadonnées importées, une notification est envoyée à votre boîte de réception de notifications. Accédez à la page de propriété des ressources et vérifiez que les valeurs des métadonnées sont correctement importées pour les ressources.
+
+Pour ajouter une date et un horodatage lors de l’importation de métadonnées, utilisez `YYYY-MM-DDThh:mm:ss.fff-00:00` le format de date et d’heure. La date et l’heure sont séparées par `T`, `hh` correspond aux heures au format 24 heures, `fff` aux nanosecondes et `-00:00` au décalage du fuseau horaire. Par exemple, `2020-03-26T11:26:00.000-07:00` est le 26 mars 2020 à 11h26:00.000 heure du Pacifique.
+
+>[!CAUTION]
+>
+>Si le format de date ne correspond pas `YYYY-MM-DDThh:mm:ss.fff-00:00`, les valeurs de date ne sont pas définies. Les formats de date du fichier CSV de métadonnées exporté sont au format `YYYY-MM-DDThh:mm:ss-00:00`. Si vous souhaitez l’importer, convertissez-la au format acceptable en ajoutant la valeur nanosecondes indiquée par `fff`.
 
 ## Exportation des métadonnées {#export-metadata}
 
@@ -56,7 +62,7 @@ Voici quelques cas d’utilisation pour l’exportation de métadonnées par lot
 1. Dans le champ **[!UICONTROL Propriétés à exporter]**, indiquez si vous voulez exporter toutes les propriétés ou certaines propriétés. Si vous choisissez Propriétés sélectives à exporter, ajoutez les propriétés souhaitées.
 
 1. Dans la barre d’outils, appuyez/cliquez sur **[!UICONTROL Exporter]**. Un message confirme que les métadonnées ont été exportées. Fermez le message.
-1. Ouvrez la notification de boîte de réception pour la tâche d’exportation. Sélectionnez la tâche et cliquez sur **[!UICONTROL Ouvrir]** dans la barre d’outils. Pour télécharger le fichier CSV contenant les métadonnées, appuyez/cliquez sur **[!UICONTROL Téléchargement CSV]** dans la barre d’outils. Cliquez sur **[!UICONTROL Fermer]**.
+1. Ouvrez la notification de la boîte de réception pour la tâche d’exportation. Sélectionnez la tâche et cliquez sur **[!UICONTROL Ouvrir]** dans la barre d’outils. Pour télécharger le fichier CSV avec les métadonnées, appuyez/cliquez sur **[!UICONTROL Téléchargement CSV]** dans la barre d’outils. Cliquez sur **[!UICONTROL Fermer]**.
 
    ![Boîte de dialogue de téléchargement du fichier CSV contenant les métadonnées exportées en bloc](assets/csv_download.png)
    *Image : boîte de dialogue de téléchargement du fichier CSV contenant les métadonnées exportées en bloc*
