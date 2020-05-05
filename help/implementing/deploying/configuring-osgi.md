@@ -2,7 +2,7 @@
 title: Configuration d’OSGi pour AEM en tant que service Cloud
 description: 'Configuration OSGi avec des valeurs secrètes et des valeurs spécifiques aux Environnements '
 translation-type: tm+mt
-source-git-commit: 743a8b4c971bf1d3f22ef12b464c9bb0158d96c0
+source-git-commit: c5339a74f948af4c05ecf29bddfe9c0b11722d61
 
 ---
 
@@ -336,3 +336,204 @@ config.dev
 
 L’intention est que la valeur de la propriété OSGI diffère pour l’étape, la prod et pour chacun des 3 environnements de développement. `my_var1` L’API de Cloud Manager devra donc être appelée pour définir la valeur de `my_var1` chaque fichier de développement.
 
+<table>
+<tr>
+<td>
+<b>Folder</b>
+</td>
+<td>
+<b>Contenu de myfile.cfg.json</b>
+</td>
+</tr>
+<tr>
+<td>
+config.stage
+</td>
+<td>
+<pre>
+{ "my_var1": "val1", "my_var2" : "abc", "my_var3" : 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.prod
+</td>
+<td>
+<pre>
+{ "my_var1": "val2", "my_var2" : "abc", "my_var3" : 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ "my_var1" : "$[env:my_var1]" "my_var2" : "abc", "my_var3" : 500}
+</pre>
+</td>
+</tr>
+</table>
+
+**Exemple 3**
+
+L&#39;intention est que la valeur de la propriété OSGi soit la même pour l&#39;étape, la production et un seul des environnements de développement, mais qu&#39;elle soit différente pour les deux autres environnements de développement. `my_var1` Dans ce cas, l’API Cloud Manager devra être appelée pour définir la valeur de `my_var1` pour chacun des environnements de développement, y compris pour l’environnement de développement qui doit avoir la même valeur que l’étape et la production. Il n&#39;héritera pas de la valeur définie dans la **configuration** du dossier.
+
+<table>
+<tr>
+<td>
+<b>Folder</b>
+</td>
+<td>
+<b>Contenu de myfile.cfg.json</b>
+</td>
+</tr>
+<tr>
+<td>
+config
+</td>
+<td>
+<pre>
+{ "my_var1": "val1", "my_var2" : "abc", "my_var3" : 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ "my_var1" : "$[env:my_var1]" "my_var2" : "abc", "my_var3" : 500}
+</pre>
+</td>
+</tr>
+</table>
+
+Pour ce faire, vous pouvez également définir une valeur par défaut pour le jeton de remplacement dans le dossier config.dev, de sorte qu’elle soit identique à celle du dossier **config** .
+
+<table>
+<tr>
+<td>
+<b>Folder</b>
+</td>
+<td>
+<b>Contenu de myfile.cfg.json</b>
+</td>
+</tr>
+<tr>
+<td>
+config
+</td>
+<td>
+<pre>
+{ "my_var1": "val1", "my_var2" : "abc", "my_var3" : 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ "my_var1": "$[env:my_var1;default=val1]" "my_var2" : "abc", "my_var3" : 500}
+</pre>
+</td>
+</tr>
+</table>
+
+## Format de l’API de Cloud Manager pour la définition des propriétés {#cloud-manager-api-format-for-setting-properties}
+
+### Définition de valeurs via l’API {#setting-values-via-api}
+
+L’appel de l’API déploie les nouvelles variables et valeurs sur un environnement Cloud, comme dans un pipeline de déploiement du code client classique. Les services d’auteur et de publication sont redémarrés et référencent les nouvelles valeurs, généralement en quelques minutes.
+
+```
+PATCH /program/{programId}/environment/{environmentId}/variables
+```
+
+```
+]
+        {
+                "name" : "MY_VAR1",
+                "value" : "plaintext value",
+                "type" : "string"  <---default
+        },
+        {
+                "name" : "MY_VAR2",
+                "value" : "<secret value>",
+                "type" : "secretString"
+        }
+]
+```
+
+Notez que les variables par défaut ne sont pas définies via l’API, mais dans la propriété OSGi elle-même.
+
+Pour plus d’informations, consultez [cette page](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables).
+
+### Obtention de valeurs via l’API {#getting-values-via-api}
+
+```
+GET /program/{programId}/environment/{environmentId}/variables
+```
+
+Pour plus d’informations, consultez [cette page](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/getEnvironmentVariables).
+
+### Suppression de valeurs par API {#deleting-values-via-api}
+
+```
+PATCH /program/{programId}/environment/{environmentId}/variables
+```
+
+Pour supprimer une variable, incluez-la avec une valeur vide.
+
+Pour plus d’informations, consultez [cette page](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables).
+
+### Obtention de valeurs via la ligne de commande {#getting-values-via-cli}
+
+```bash
+$ aio cloudmanager:list-environment-variables ENVIRONMENT_ID
+Name     Type         Value
+MY_VAR1  string       plaintext value 
+MY_VAR2  secretString ****
+```
+
+
+### Définition de valeurs via la ligne de commande {#setting-values-via-cli}
+
+```bash
+$ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --variable MY_VAR1 "plaintext value" --secret MY_VAR2 "some secret value"
+```
+
+### Suppression de valeurs par le biais de la ligne de commande {#deleting-values-via-cli}
+
+```bash
+$ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_VAR2
+```
+
+> [!NOTE]
+>
+> Voir [cette page](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) pour plus d’informations sur la configuration des valeurs à l’aide du plug-in Cloud Manager pour l’interface de ligne de commande des E/S d’Adobe.
+
+### Nombre de variables {#number-of-variables}
+
+Vous pouvez déclarer jusqu’à 20 variables.
+
+## Considérations relatives au déploiement pour les valeurs de configuration spécifiques aux Environnements et aux secrets {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
+
+Etant donné que les valeurs de configuration spécifiques au secret et à l’environnement résident en dehors de Git, et par conséquent ne font pas partie des mécanismes de déploiement officiels d’AEM en tant que service Cloud, le client doit gérer, gouverner et intégrer AEM en tant que processus de déploiement de service Cloud.
+
+Comme mentionné ci-dessus, l’appel de l’API déploie les nouvelles variables et valeurs sur les environnements Cloud, comme dans un pipeline de déploiement du code client classique. Les services d’auteur et de publication sont redémarrés et référencent les nouvelles valeurs, généralement en quelques minutes. Notez que les barrières de qualité et les tests exécutés par Cloud Manager lors d’un déploiement régulier du code ne sont pas effectués pendant ce processus.
+
+En règle générale, les clients appellent l’API pour définir des variables d’environnement avant de déployer le code qui en dépend dans Cloud Manager. Dans certains cas, vous pouvez modifier une variable existante après le déploiement du code.
+
+Notez que l’API peut ne pas réussir lorsqu’un pipeline est en cours d’utilisation, qu’il s’agisse d’une mise à jour AEM ou d’un déploiement de clients, selon la partie du pipeline de bout en bout exécutée à ce moment. La réponse à l&#39;erreur indique que la demande a échoué, bien qu&#39;elle n&#39;indique pas la raison précise.
+
+Il peut y avoir des scénarios où un déploiement planifié du code client repose sur des variables existantes pour avoir de nouvelles valeurs, ce qui ne serait pas approprié avec le code actuel. S&#39;il s&#39;agit d&#39;un problème, il est recommandé d&#39;apporter des modifications variables de façon additive. Pour ce faire, créez de nouveaux noms de variable au lieu de simplement modifier la valeur des anciennes variables afin que l’ancien code ne fasse jamais référence à la nouvelle valeur. Ensuite, lorsque la nouvelle version du client semble stable, vous pouvez choisir de supprimer les anciennes valeurs.
+
+De même, comme les valeurs d’une variable ne sont pas versionnées, une annulation de code peut la faire référence à des valeurs plus récentes qui posent problème. La stratégie de variable additive mentionnée ci-dessus pourrait également y contribuer.
+
+Cette stratégie d&#39;ajout de variables est également utile pour les scénarios de reprise après sinistre où, si le code de plusieurs jours auparavant devait être redéployé, les noms et valeurs de variables auxquels elle fait référence restent inchangés. Cela repose sur une stratégie dans laquelle un client attend quelques jours avant de supprimer ces variables plus anciennes, sinon l’ancien code n’aurait pas de variables appropriées à référencer.
