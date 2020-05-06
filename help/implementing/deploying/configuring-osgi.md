@@ -2,9 +2,9 @@
 title: Configuration d’OSGi pour AEM en tant que service Cloud
 description: 'Configuration OSGi avec des valeurs secrètes et des valeurs spécifiques aux Environnements '
 translation-type: tm+mt
-source-git-commit: 6643bc74dcf23e147f011fbe4f72a29bcd52ec18
+source-git-commit: 3647715c2c2356657dfb84b71e1447b3124c9923
 workflow-type: tm+mt
-source-wordcount: '2317'
+source-wordcount: '2311'
 ht-degree: 5%
 
 ---
@@ -34,7 +34,7 @@ un fichier de configuration OSGi est défini à l’adresse suivante :
 
 `/apps/example/config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 
-suivant le format [de configuration]OSGi decfg.json (suivant le format de configuration OSGi de cfg.json).
+suivant le format de configuration OSGi de cfg.json.
 
 > [!NOTE]
 >
