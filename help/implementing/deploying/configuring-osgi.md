@@ -2,10 +2,10 @@
 title: Configuration d’OSGi pour AEM en tant que service Cloud
 description: 'Configuration OSGi avec des valeurs secrètes et des valeurs spécifiques aux Environnements '
 translation-type: tm+mt
-source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+source-git-commit: 48a19fb1bb7657d34f31605a3b4a85e656393918
 workflow-type: tm+mt
-source-wordcount: '2509'
-ht-degree: 7%
+source-wordcount: '2214'
+ht-degree: 4%
 
 ---
 
@@ -127,34 +127,34 @@ AEM en tant que service Cloud requiert l’utilisation de configurations spécif
 
 Utilisez des configurations secrètes spécifiques à un environnement pour stocker la valeur des secrets sur tous les environnements de service AEM en tant qu’ de service Cloud, y compris Stage et Production.
 
-### Ajout d’une nouvelle configuration au référentiel {#adding-a-new-configuration-to-the-repository}
+<!-- ### Adding a New Configuration to the Repository {#adding-a-new-configuration-to-the-repository}
 
-#### Ce que vous devez savoir {#what-you-need-to-know}
+#### What You Need to Know {#what-you-need-to-know}
 
-Pour ajouter une nouvelle configuration au référentiel, vous devez connaître ou savoir ce qui suit :
+To add a new configuration to the repository you need to know the following:
 
 1. The **Persistent Identity** (PID) of the service.
 
    Reference the **Configurations** field in the Web console. The name is shown in brackets after the bundle name (or in the **Configuration Information** towards the bottom of the page).
 
-   Par exemple, créez un noeud `com.day.cq.wcm.core.impl.VersionManagerImpl.` pour configurer **AEM WCM Version Manager**.
+   For example, create a node `com.day.cq.wcm.core.impl.VersionManagerImpl.` to configure **AEM WCM Version Manager**.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. Indique si un mode d’exécution spécifique est requis. Créez le dossier :
+1. Whether a specific runmode is required. Create the folder:
 
-   * `config` - pour tous les modes d&#39;exécution
-   * `config.author` - pour l&#39;environnement auteur
-   * `config.publish` - pour l&#39;environnement de publication
-   * `config.<run-mode>` - le cas échéant
+    * `config` - for all run modes
+    * `config.author` - for the author environment
+    * `config.publish` - for the publish environment
+    * `config.<run-mode>` - as appropriate
 
 1. Whether a **Configuration** or **Factory Configuration** is necessary.
-1. Les paramètres individuels à configurer y compris les définitions de paramètres existantes qui devront être recréées.
+1. The individual parameters to be configured; including any existing parameter definitions that will need to be recreated.
 
-   Référencez le champ des paramètres individuels dans la console web. Le nom s’affiche entre parenthèses pour chaque paramètre.
+   Reference the individual parameter field in the Web console. The name is shown in brackets for each parameter.
 
-   Par exemple, créez une propriété.
-   `versionmanager.createVersionOnActivation` pour configurer **Créer une version sur Activation**.
+   For example, create a property
+   `versionmanager.createVersionOnActivation` to configure **Create Version on Activation**.
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -162,29 +162,31 @@ Pour ajouter une nouvelle configuration au référentiel, vous devez connaître 
 
    `select * from sling:OsgiConfig`
 
-   Si tel est le cas, cette configuration peut être copiée dans ` /apps/<yourProject>/`, puis personnalisée dans le nouvel emplacement.
+   If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location.
 
-## Création de la configuration dans le référentiel {#creating-the-configuration-in-the-repository}
+## Creating the Configuration in the Repository {#creating-the-configuration-in-the-repository}
 
-Pour ajouter la nouvelle configuration au référentiel :
+To actually add the new configuration to the repository:
 
-1. Dans votre projet ui.apps, créez un `/apps/…/config.xxx` dossier en fonction du mode d’exécution utilisé.
+1. In your ui.apps project, create a `/apps/…/config.xxx` folder as needed based on the runmode you are using
 
-1. Créez un nouveau fichier JSON avec le nom du PID et ajoutez l’ `.cfg.json` extension.
+1. Create a new JSON file with the name of the PID and add the `.cfg.json` extension
 
 
-1. Renseigner le fichier JSON avec les paires clé-valeur de configuration OSGi
+1. Populate the JSON file with the OSGi configuration key value pairs
 
    >[!NOTE]
    >
-   >Si vous configurez un service OSGi prêt à l’emploi, vous pouvez rechercher les noms des propriétés OSGi via `/system/console/configMgr`
+   >If you are configuring an out of the box OSGi service, you can look up the OSGi property names via `/system/console/configMgr`
 
 
-1. Enregistrez le fichier JSON dans votre projet.
+1. Save the JSON file to your project. -->
 
 ## Format de la propriété de configuration dans le contrôle de code source {#configuration-property-format-in-source-control}
 
-La création d’une nouvelle propriété de configuration OSGI est décrite dans la section [Ajout d’une nouvelle configuration au référentiel](#creating-the-configuration-in-the-repository) ci-dessus. Suivez ces étapes et modifiez la syntaxe comme indiqué dans les sous-sections ci-dessous :
+<!-- Creating a new OSGI configuration property is described in the [Adding a new configuration to the repository](#creating-the-configuration-in-the-repository) section above. -->
+
+Suivez ces étapes et modifiez la syntaxe comme indiqué dans les sous-sections ci-dessous :
 
 ### Valeurs intégrées {#inline-values}
 
