@@ -1,8 +1,11 @@
 ---
-sub-product: Mise en oeuvre pour AEM en tant que service Cloud
-user-guide-title: Mise en oeuvre pour AEM en tant que service Cloud
+sub-product: Implémentation pour AEM as a Cloud Service
+user-guide-title: Implémentation pour AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 61263c10257606040d5d42c4b6a6f9bc6eeb7c4a
+source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+workflow-type: tm+mt
+source-wordcount: '181'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 61263c10257606040d5d42c4b6a6f9bc6eeb7c4a
    + [Accès à Git](cloud-manager/accessing-git.md)
    + [Intégration de Git à Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
 + Développement pour AEM as a Cloud Service {#developing}
-   + [Structure du projet AEM](developing/introduction/aem-project-content-package-structure.md)
+   + [Structure de projet AEM](developing/introduction/aem-project-content-package-structure.md)
    + [Package de structure du référentiel de projet AEM](developing/introduction/repository-structure-package.md)
    + [SDK AEM as a Cloud Service](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [Conseils de développement pour AEM as a Cloud Service](developing/introduction/development-guidelines.md)
@@ -32,10 +35,11 @@ source-git-commit: 61263c10257606040d5d42c4b6a6f9bc6eeb7c4a
 + Configuration et extension d’AEM as a Cloud Service {#configuring-and-extending}
    + [Extension des fragments d’expérience](developing/extending/experience-fragments.md)
    + [Personnalisation et extensions de fragments de contenu](developing/extending/content-fragments-customizing.md)
-   + [Fragments de contenu Configuration des composants pour le rendu](developing/extending/content-fragments-configuring-components-rendering.md)
+   + [Fragments de contenu – Configuration des composants pour le rendu](developing/extending/content-fragments-configuring-components-rendering.md)
    + [Configuration des formulaires de recherche](developing/extending/search-forms.md)
 + Déploiement sur AEM as a Cloud Service {#deploying}
    + [Déploiement sur AEM as a Cloud Service](deploying/overview.md)
+   + [Configuration d’OSGi pour AEM en tant que service Cloud](deploying/configuring-osgi.md)
 + Dispatcher en mode cloud {#dispatcher}
    + [Dispatcher en mode cloud](dispatcher/overview.md)
-   + [de contenu dans AEM en tant que service Cloud](dispatcher/content-delivery.md)
+   + [Diffusion de contenu dans AEM as a Cloud Service](dispatcher/content-delivery.md)
