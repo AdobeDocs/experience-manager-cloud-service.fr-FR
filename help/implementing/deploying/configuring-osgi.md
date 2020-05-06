@@ -2,12 +2,15 @@
 title: Configuration d’OSGi pour AEM en tant que service Cloud
 description: 'Configuration OSGi avec des valeurs secrètes et des valeurs spécifiques aux Environnements '
 translation-type: tm+mt
-source-git-commit: e23813aa5d55a9ae6550ff473b030177e37ffffb
+source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+workflow-type: tm+mt
+source-wordcount: '2509'
+ht-degree: 7%
 
 ---
 
 
-# OSGi Configurations {#osgi-configurations}
+# Configuration d’OSGi pour AEM en tant que service Cloud {#configuring-osgi-for-aem-as-a-cloud-service}
 
 [OSGi est un élément fondamental de la pile technologique d’Adobe Experience Manager (AEM). ](https://www.osgi.org/) Il est utilisé pour contrôler les lots composites d’AEM et ses configurations.
 
@@ -95,7 +98,7 @@ Il existe trois types de valeurs de configuration OSGi qui peuvent être utilis�
 
 Le cas le plus courant pour OSGi utilise des valeurs de configuration OSGi intégrées. Les configurations spécifiques à un Environnement ne sont utilisées que pour des cas d’utilisation spécifiques où une valeur diffère d’un environnement de développement à l’autre.
 
-![](assets/choose-configuration-value-type.png)
+![](assets/choose-configuration-value-type_res1.png)
 
 Les configurations spécifiques à l’Environnement étendent les configurations OSGi traditionnelles définies de manière statique, qui contiennent des valeurs insérées, ce qui permet de gérer les valeurs de configuration OSGi de manière externe via l’API Cloud Manager. Il est important de comprendre quand l&#39;approche commune et traditionnelle consistant à définir les valeurs insérées et à les stocker dans Git doit être utilisée, plutôt que de les abstraire dans des configurations spécifiques à l&#39;environnement.
 
@@ -165,50 +168,19 @@ Pour ajouter une nouvelle configuration au référentiel, vous devez connaître 
 
 Pour ajouter la nouvelle configuration au référentiel :
 
-1. Utilisez CRXDE Lite pour accéder à :
+1. Dans votre projet ui.apps, créez un `/apps/…/config.xxx` dossier en fonction du mode d’exécution utilisé.
 
-   ` /apps/<yourProject>`
+1. Créez un nouveau fichier JSON avec le nom du PID et ajoutez l’ `.cfg.json` extension.
 
-1. If not already existing, create the `config` folder ( `sling:Folder`):
 
-   * `config` : applicable à tous les modes d’exécution
-   * `config.<run-mode>` - spécifique à un mode d&#39;exécution particulier
+1. Renseigner le fichier JSON avec les paires clé-valeur de configuration OSGi
 
-1. Sous ce dossier; créez un nœud :
-
-   * Type : `sling:OsgiConfig`
-   * Nom : l&#39;identité persistante (PID);
-
-      par exemple, pour l’utilisation du gestionnaire de versions d’AEM WCM `com.day.cq.wcm.core.impl.VersionManagerImpl`
    >[!NOTE]
    >
-   >When making a Factory Configuration append `-<identifier>` to the name.
-   >
-   >Comme dans : `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
-   >
-   >Where `<identifier>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information); for example:
-   >
-   >`org.apache.sling.commons.log.LogManager.factory.config-MINE`
+   >Si vous configurez un service OSGi prêt à l’emploi, vous pouvez rechercher les noms des propriétés OSGi via `/system/console/configMgr`
 
-1. Pour chaque paramètre que vous souhaitez configurer, créez une propriété sur ce nœud :
 
-   * Nom : nom du paramètre tel qu’il apparaît dans la console web. Il est indiqué entre parenthèses à la fin de la description du champ. Par exemple, pour une `Create Version on Activation` utilisation `versionmanager.createVersionOnActivation`
-   * Type : selon le cas.
-   * Valeur : selon les besoins.
-   Il vous suffit de créer des propriétés pour les paramètres que vous voulez configurer. Les autres prendront toujours les valeurs par défaut définies par AEM.
-
-1. Enregistrez toutes les modifications.
-
-   Les modifications sont appliquées dès que le nœud est mis à jour en redémarrant le service (comme avec les modifications apportées dans la console web).
-
->[!CAUTION]
->
->Vous ne devez rien modifier dans le chemin `/libs`.
-
->[!CAUTION]
->
->Le chemin complet d’une configuration doit être correct pour être lu au démarrage.
-
+1. Enregistrez le fichier JSON dans votre projet.
 
 ## Format de la propriété de configuration dans le contrôle de code source {#configuration-property-format-in-source-control}
 
