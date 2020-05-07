@@ -1,8 +1,11 @@
 ---
 title: Règles de qualité du code personnalisé - Cloud Services
 description: Règles de qualité du code personnalisé - Cloud Services
-translation-type: ht
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+translation-type: tm+mt
+source-git-commit: 4b79f7dd3a55e140869985faa644f7da1f62846c
+workflow-type: tm+mt
+source-wordcount: '2254'
+ht-degree: 78%
 
 ---
 
@@ -549,6 +552,35 @@ public void doThis(Resource resource) {
 }
 ```
 
+### Le Planificateur Sling ne doit pas être utilisé {#sonarqube-sling-scheduler}
+
+**Clé**: CQRules:AMSCORE-554
+
+**Type** : code Smell
+
+**Gravité** : mineure
+
+**Depuis** : version 2020.5.0
+
+Le Planificateur Sling ne doit pas être utilisé pour les tâches qui nécessitent une exécution garantie. Sling Scheduled Jobs garantit l’exécution et convient mieux aux environnements organisés en grappes et non en grappes.
+
+Reportez-vous à [Apache Sling Eging et Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) pour en savoir plus sur la façon dont les tâches Sling sont gérées dans des environnements organisés en grappes.
+
+### Les API AEM obsolètes ne doivent pas être utilisées {#sonarqube-aem-deprecated}
+
+**Clé**: AMSCORE-553
+
+**Type** : code Smell
+
+**Gravité** : mineure
+
+**Depuis** : version 2020.5.0
+
+La surface de l’API AEM est constamment revue pour identifier les API pour lesquelles l’utilisation est découragée et donc considérée comme obsolète.
+
+Dans de nombreux cas, ces API sont abandonnées à l’aide de l’annotation standard Java *@Deprecated* et, en tant que telles, identifiées par `squid:CallToDeprecatedMethod`.
+
+Cependant, il arrive qu’une API soit déconseillée dans le contexte d’AEM, mais qu’elle ne l’soit pas dans d’autres contextes. Cette règle identifie cette seconde classe.
 
 ## Règles de contenu OakPAL {#oakpal-rules}
 
@@ -644,3 +676,62 @@ Un problème courant est l’utilisation de nœuds nommés `config` dans les bo�
 **Depuis** : version 2019.6.0
 
 Tout comme *Les packages ne doivent pas contenir de configurations OSGi en double*, il s’agit d’un problème courant sur les projets complexes où le même chemin de nœud est écrit par plusieurs packages de contenu distincts. Bien que l’utilisation des dépendances des packages de contenu puisse servir à garantir un résultat cohérent, il est préférable d’éviter tout chevauchement.
+
+### Le mode de création par défaut ne doit pas être une interface utilisateur classique {#oakpal-default-authoring}
+
+**Clé**: ClassicUIAuthoringMode
+
+**Type** : code Smell
+
+**Gravité** : mineure
+
+**Depuis** : version 2020.5.0
+
+La configuration OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` définit le mode de création par défaut dans AEM. Comme l’interface utilisateur classique a été abandonnée depuis AEM 6.4, un problème survient maintenant lorsque le mode de création par défaut est configuré sur l’interface utilisateur classique.
+
+### Les Composants Comportant Des Boîtes De Dialogue Doivent Avoir Des Boîtes D&#39;Interface Utilisateur Touchées {#oakpal-components-dialogs}
+
+**Clé**: ComponentWithOnlyClassicUIDialog
+
+**Type** : code Smell
+
+**Gravité** : mineure
+
+**Depuis** : version 2020.5.0
+
+Les composants AEM disposant d’une boîte de dialogue d’interface utilisateur classique doivent toujours avoir une boîte de dialogue d’interface utilisateur tactile correspondante, afin de fournir une expérience de création optimale et d’être compatibles avec le modèle de déploiement du service Cloud, où l’interface utilisateur classique n’est pas prise en charge. Cette règle vérifie les scénarios suivants :
+
+* Un composant avec une boîte de dialogue d’interface utilisateur classique (c’est-à-dire un noeud enfant dialog) doit avoir une boîte de dialogue d’interface utilisateur tactile correspondante (c’est-à-dire un noeud `cq:dialog` enfant).
+* Un composant doté d’une boîte de dialogue de conception d’interface utilisateur classique (c’est-à-dire un noeud design_dialog) doit avoir une boîte de dialogue de conception d’interface utilisateur tactile correspondante (c’est-à-dire un noeud `cq:design_dialog` enfant).
+* Un composant avec une boîte de dialogue d’interface utilisateur classique et une boîte de dialogue de conception d’interface utilisateur classique doit comporter à la fois une boîte de dialogue d’interface utilisateur tactile correspondante et une boîte de dialogue de conception d’interface utilisateur tactile correspondante.
+
+La documentation des outils de modernisation d’AEM fournit de la documentation et des outils pour convertir les composants de l’interface utilisateur classique en interface utilisateur tactile. Consultez [les outils](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) de modernisation d’AEM pour en savoir plus.
+
+### Les packages ne doivent pas mélanger du contenu mutable et immuable {#oakpal-packages-immutable}
+
+**Clé**: ImmutableMutableMixedPackage
+
+**Type** : code Smell
+
+**Gravité** : mineure
+
+**Depuis** : version 2020.5.0
+
+Pour être compatible avec le modèle de déploiement du service Cloud, les packages de contenu individuels doivent contenir soit du contenu pour les zones immuables du référentiel (c’est-à-dire qu’ils ne `/apps and /libs, although /libs` doivent pas être modifiés par le code client et provoqueront une violation distincte), soit la zone modifiable (c’est-à-dire tout le reste), mais pas les deux. Par exemple, un package qui inclut les deux `/apps/myco/components/text and /etc/clientlibs/myco` est incompatible avec le service Cloud et provoquera la génération de rapports d’un problème.
+
+Pour plus d’informations, reportez-vous à Structure [de projet](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEM.
+
+### Les agents de réplication inverse ne doivent pas être utilisés {#oakpal-reverse-replication}
+
+**Clé**: Réplication inverse
+
+**Type** : code Smell
+
+**Gravité** : mineure
+
+**Depuis** : version 2020.5.0
+
+La prise en charge de la réplication inverse n’est pas disponible dans les déploiements du service Cloud, comme décrit dans les Notes de [mise à jour : Suppression des agents](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)de réplication.
+
+Les clients qui utilisent la réplication inverse doivent contacter Adobe pour obtenir d’autres solutions.
+
