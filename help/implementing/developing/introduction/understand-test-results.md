@@ -1,20 +1,23 @@
 ---
-title: Comprendre vos résultats de test - Services Cloud
-description: Comprendre les résultats des tests - Services Cloud
+title: Présentation des résultats de test - Cloud Services
+description: Présentation des résultats de test - Cloud Services
 translation-type: tm+mt
-source-git-commit: e1504c73e443d449f8fc9d5fbad433ea1a298843
+source-git-commit: 4b79f7dd3a55e140869985faa644f7da1f62846c
+workflow-type: tm+mt
+source-wordcount: '999'
+ht-degree: 98%
 
 ---
 
 
-# Présentation des résultats de tests {#understand-test-results}
+# Présentation des résultats de test {#understand-test-results}
 
-Les exécutions du pipeline Cloud Manager for Cloud Services prennent en charge l’exécution de tests exécutés par rapport à l’environnement d’évaluation. Cela contraste avec les tests exécutés pendant l’étape de création et de test unitaire qui sont exécutés hors ligne, sans accès à aucun environnement AEM en cours d’exécution.
-Il existe deux types de tests exécutés dans ce contexte :
+Les exécutions du pipeline Cloud Manager for Cloud Services prennent en charge l’exécution de tests sur l’environnement d’évaluation. Cela contraste avec les tests exécutés dans le cadre de l’étape Test de création et d’unité, qui sont réalisés hors ligne, sans aucun accès à un environnement AEM actif.
+Deux types de tests sont exécutés dans ce contexte :
 * Tests écrits par le client
 * Tests écrits par Adobe
 
-Les deux types de tests sont exécutés dans une infrastructure conteneurisée conçue pour exécuter ces types de tests.
+Ces deux types de tests sont exécutés dans une infrastructure en conteneur conçue à cet effet.
 
 
 ## Test de qualité du code {#code-quality-testing}
@@ -26,17 +29,18 @@ Dans le cadre du pipeline, le code source est analysé afin de garantir que les 
 | Cote de sécurité | A = 0 vulnérabilité <br/>B = au moins 1 vulnérabilité mineure<br/> C = au moins 1 vulnérabilité majeure <br/>D = au moins 1 vulnérabilité critique <br/>E = au moins 1 vulnérabilité de blocage | Critique | &lt; B |
 | Cote de fiabilité | A = 0 bogue <br/>B = au moins 1 bogue mineur <br/>C = au moins 1 bogue majeur <br/>D = au moins 1 bogue critique E = au moins 1 bogue bloqueur | Important | &lt; C |
 | Évaluation de maintenabilité | Le coût de correction en suspens pour les smells du code est : <br/><ul><li>&lt;=5% du temps qui s’est déjà écoulé dans l’application, la note est A </li><li>entre 6 et 10 % la note est B </li><li>entre 11 et 20 % la note est C </li><li>entre 21 et 50 % la note est D</li><li>tout ce qui dépasse 50 % est E</li></ul> | Important | &lt; A |
-| Couverture | Combinaison de couverture de ligne de tests unitaires et de couverture de condition utilisant cette formule : <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`<br/>  où : CT = conditions qui ont été évaluées comme « vrai » au moins une fois lors de l’exécution de tests unitaires <br/>CF = conditions qui ont été évaluées comme « faux » au moins une fois <br/>LC = lignes couvertes = lines_ to_ cover - uncover_ lines <br/><br/> B = nombre total de conditions <br/>EL = nombre total de lignes exécutables (lines_to_cover) | Important | &lt; 50% |
+| Couverture | Combinaison de couverture de ligne de tests unitaires et de couverture de condition utilisant cette formule : <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`<br/> où : CT = conditions qui ont été évaluées comme « vrai » au moins une fois lors de l’exécution de tests unitaires <br/>CF = conditions qui ont été évaluées comme « faux » au moins une fois <br/>LC = lignes couvertes = lines_ to_ cover - uncover_ lines <br/><br/> B = nombre total de conditions <br/>EL = nombre total de lignes exécutables (lines_to_cover) | Important | &lt; 50% |
 | Tests unitaires ignorés | Nombre de tests unitaires ignorés. | Infos | > 1 |
-| Problèmes en cours | Types de problèmes généraux - Vulnérabilités, bogues et smells de code | Infos | > 1 |
+| Problèmes en cours | Types de problèmes généraux - Vulnérabilités, bogues et smells de code | Infos | > 0 |
 | Lignes dupliquées | Nombre de lignes impliquées dans des blocs dupliqués. <br/>Pour qu’un bloc de code soit considéré comme dupliqué : <br/><ul><li>**Projets non Java :**</li><li>Il doit y avoir au moins 100 jetons successifs et dupliqués.</li><li>Ces jetons doivent être répartis au moins sur : </li><li>30 lignes de code pour COBOL </li><li>20 lignes de code pour ABAP </li><li>10 lignes de code pour d’autres langages</li><li>**Projets Java :**</li><li> Il devrait y avoir au moins 10 instructions successives et dupliquées, quel que soit le nombre de jetons et de lignes.</li></ul> <br/>Les différences dans la mise en retrait ainsi que dans les littéraux de chaîne sont ignorées lors de la détection des doublons. | Infos | > 1% |
+| Compatibilité du service Cloud | Nombre de problèmes de compatibilité des services Cloud identifiés. | Infos | > 0 |
 
 
 >[!NOTE]
 >
 >Pour des définitions plus détaillées, consultez [Définitions des mesures](https://docs.sonarqube.org/display/SONAR/Metric+Definitions).
 
-Vous pouvez télécharger la liste des règles ici : [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-Rules-new-one.xlsx).
+Vous pouvez télécharger la liste des règles ici : [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx).
 
 >[!NOTE]
 >
@@ -76,11 +80,11 @@ La bonne solution consiste alors à supprimer le mot de passe codé en dur.
 >
 >Bien qu’il soit préférable de rendre l’annotation `@SuppressWarnings` aussi précise que possible, c’est-à-dire de n’annoter que l’énoncé ou le bloc qui cause le problème, il est tout de même possible de le faire à un niveau qui se rapporte à la classe.
 
-## Ecriture de tests fonctionnels {#writing-functional-tests}
+## Écriture de tests fonctionnels {#writing-functional-tests}
 
-Les tests fonctionnels écrits par le client doivent être compressés en tant que fichier JAR distinct généré par la même version de Maven que les artefacts à déployer dans AEM. En général, il s&#39;agit d&#39;un module Maven distinct. Le fichier JAR résultant doit contenir toutes les dépendances requises et il est généralement créé à l’aide du maven-assembly-plugin à l’aide du descripteur jar-with-dependencies.
+Les tests fonctionnels écrits par le client doivent être placés dans un fichier JAR distinct produit par la même version de Maven que les artefacts à déployer dans AEM. En règle générale, il s’agit d’un module Maven distinct. Le fichier JAR obtenu doit contenir toutes les dépendances requises. Il est généralement créé avec le plug-in Assembly de Maven à l’aide du descripteur jar-with-dependencies.
 
-En outre, l’en-tête de manifeste Cloud-Manager-TestType doit être défini sur integration-test pour le fichier JAR. A l’avenir, d’autres valeurs d’en-tête seront prises en charge. Voici un exemple de configuration pour maven-assembly-plugin :
+En outre, l’en-tête de manifeste Cloud-Manager-TestType du fichier JAR doit être défini sur integration-test. Il est prévu que d’autres valeurs d’en-tête soient prises en charge à l’avenir. Voici un exemple de configuration pour le plug-in Assembly de Maven :
 
 ```java
 <build>
@@ -113,28 +117,28 @@ En outre, l’en-tête de manifeste Cloud-Manager-TestType doit être défini su
     </plugins>
 ```
 
-Dans ce fichier JAR, les noms de classe des tests réels à exécuter doivent se terminer dans le service informatique.
+Dans ce fichier JAR, les noms de classe des tests à exécuter doivent se terminer par IT.
 
-Par exemple, une classe nommée `com.myco.tests.aem.ExampleIT` serait exécutée, mais pas une classe nommée `com.myco.tests.aem.ExampleTest` .
+Par exemple, une classe nommée `com.myco.tests.aem.ExampleIT` sera exécutée, mais pas une classe nommée `com.myco.tests.aem.ExampleTest`.
 
-Les classes de test doivent être des tests JUnit normaux. L’infrastructure de test est conçue et configurée pour être compatible avec les conventions utilisées par la bibliothèque de tests aem-testing-clients. Les développeurs sont fortement encouragés à utiliser cette bibliothèque et à suivre ses meilleures pratiques. Refer to [Git Link](https://github.com/adobe/aem-testing-clients) for more details.
+Les classes de test doivent être des tests JUnit normaux. L’infrastructure de test est conçue et configurée pour être compatible avec les conventions utilisées par la bibliothèque de tests aem-testing-clients. Les développeurs sont vivement encouragés à utiliser cette bibliothèque et à suivre les bonnes pratiques en vigueur. Pour plus d’informations, voir [Lien Git](https://github.com/adobe/aem-testing-clients).
 
-## Test fonctionnel personnalisé {#custom-functional-test}
+## Tests fonctionnels personnalisés {#custom-functional-test}
 
-L’étape de test fonctionnel personnalisé du pipeline est toujours présente et ne peut pas être ignorée.
+L’étape des tests fonctionnels personnalisés du pipeline est toujours présente et ne peut pas être ignorée.
 
-Cependant, si aucun fichier JAR de test n’est généré par la version, le test est transmis par défaut. Cette étape est en cours immédiatement après le déploiement de l’étape.
+Cependant, si aucun fichier JAR de test n’est généré par la compilation, le test réussit par défaut. Actuellement, cette étape est effectuée immédiatement après le déploiement intermédiaire.
 
 >[!NOTE]
->Le bouton **Télécharger le journal** permet d’accéder à un fichier ZIP contenant les journaux du formulaire détaillé d’exécution du test. Ces journaux n’incluent pas les journaux du processus d’exécution réel d’AEM : ils sont accessibles à l’aide de la fonctionnalité normale de téléchargements ou de journaux de queue. Pour plus d&#39;informations, reportez-vous à la section [Accès et gestion des journaux](/help/implementing/cloud-manager/manage-logs.md) .
+>le bouton **Télécharger le journal** permet d’accéder à un fichier ZIP contenant les journaux du formulaire détaillé d’exécution du test. Ces journaux ne contiennent pas les journaux du processus d’exécution AEM proprement dit. Vous pouvez y accéder à l’aide de la fonctionnalité de téléchargement standard ou d’affichage des dernières lignes des journaux. Pour plus d’informations, reportez-vous à la section [Accès et gestion des journaux](/help/implementing/cloud-manager/manage-logs.md).
 
 ## Exécution locale du test {#local-test-execution}
 
-Les classes de test étant des tests JUnit, elles peuvent être exécutées à partir d’IDE Java grand public tels que Eclipse, IntelliJ, NetBeans, etc.
+Les classes de test étant des tests JUnit, elles peuvent être exécutées à partir d’IDE Java standard comme Eclipse, IntelliJ, NetBeans, etc.
 
-Toutefois, lorsque ces tests sont exécutés, il est nécessaire de définir diverses propriétés système attendues par les clients aem-testing (et les clients Sling sous-jacents).
+Cependant, lors de l’exécution de ces tests, il est nécessaire de définir diverses propriétés système attendues par aem-testing-clients (et les clients de test Sling sous-jacents).
 
-Les propriétés du système sont les suivantes :
+Les propriétés système sont les suivantes :
 
 * `sling.it.instances - should be set to 2`
 * `sling.it.instance.url.1 - should be set to the author URL, for example, http://localhost:4502`
