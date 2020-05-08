@@ -2,7 +2,7 @@
 title: Référence des schémas de métadonnées
 description: 'Découvrez les conventions standard permettant de décrire les métadonnées des ressources, y compris Dublin Core, IPTC et d’autres schémas de métadonnées. '
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
@@ -18,7 +18,7 @@ La métadonnée Dublin Core fournit un ensemble de conventions normalisé pour d
 
 Le DCMES (Dublin Core Metadata Element Set) contient 15 éléments de métadonnées qui sont répertoriés dans le tableau ci-après. Chaque élément Dublin Core est facultatif et peut être utilisé plusieurs fois. Vous pouvez ajouter ou supprimer des informations de métadonnées Dublin Core comme vous le feriez pour les métadonnées spécifiques au type de média.
 
-Outre le DCMES, il existe d’autres éléments de métadonnées créés par le Dublin Core Initiative. Pour plus d’informations, voir [Dublin Core Initiative](https://dublincore.org/).
+Outre le DCMES, il existe d’autres éléments de métadonnées créés par le Dublin Core Initiative. Pour plus d’informations, consultez [Dublin Core Initiative](https://dublincore.org/). 
 
 <table>
  <tbody>
@@ -28,14 +28,14 @@ Outre le DCMES, il existe d’autres éléments de métadonnées créés par le 
   </tr>
   <tr>
    <td>contributor</td> 
-   <td>Personne ou entreprise chargée d'apporter des contributions au contenu.</td> 
+   <td>Personne ou entreprise chargée d’apporter des contributions au contenu.</td> 
   </tr>
   <tr>
-   <td>coverage (couverture)</td> 
+   <td>coverage</td> 
    <td>Emplacement géographique ou période que couvre la ressource.<br /> </td> 
   </tr>
   <tr>
-   <td>creator (créateur)</td> 
+   <td>creator</td> 
    <td>Personne ou entreprise chargée de la création du contenu.</td> 
   </tr>
   <tr>
@@ -48,18 +48,18 @@ Outre le DCMES, il existe d’autres éléments de métadonnées créés par le 
   </tr>
   <tr>
    <td>format</td> 
-   <td>Format de fichier, support physique ou dimensions de la ressource. AEM utilise <code>dc:format</code> pour indiquer le type MIME de la ressource.<br /> </td> 
+   <td>Format de fichier, support physique ou dimensions de la ressource. AEM utilise <code>dc:format</code> pour représenter le type MIME de la ressource.<br /> </td> 
   </tr>
   <tr>
-   <td>formulaire</td> 
+   <td>identifier</td> 
    <td>Référence unique à la ressource.</td> 
   </tr>
   <tr>
    <td>language</td> 
-   <td>Langue de la ressource ("en" pour l'anglais, par exemple).</td> 
+   <td>Langue de la ressource (« en » pour l’anglais, par exemple).</td> 
   </tr>
   <tr>
-   <td>publisher (éditeur)</td> 
+   <td>publisher</td> 
    <td>Personne ou entreprise chargée de rendre la ressource disponible.</td> 
   </tr>
   <tr>
@@ -67,7 +67,7 @@ Outre le DCMES, il existe d’autres éléments de métadonnées créés par le 
    <td>Ressource connexe.</td> 
   </tr>
   <tr>
-   <td>rights (droits)</td> 
+   <td>rights</td> 
    <td>Informations sur la personne qui dispose des droits sur cette ressource.</td> 
   </tr>
   <tr>
@@ -75,15 +75,15 @@ Outre le DCMES, il existe d’autres éléments de métadonnées créés par le 
    <td>Ressource connexe à partir de laquelle la ressource est dérivée.</td> 
   </tr>
   <tr>
-   <td>subject (objet)</td> 
+   <td>subject</td> 
    <td>Objet de la ressource.<br /> </td> 
   </tr>
   <tr>
-   <td>titre</td> 
+   <td>title</td> 
    <td>Nom de la ressource.</td> 
   </tr>
   <tr>
-   <td>Type</td> 
+   <td>type</td> 
    <td>Nature ou genre de la ressource.</td> 
   </tr>
  </tbody>
