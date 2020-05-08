@@ -1,7 +1,7 @@
 ---
 title: 'Création d’une page pour les appareils mobiles '
 description: Lors de la création pour les périphériques mobiles, vous pouvez basculer entre plusieurs émulateurs pour voir ce que l’utilisateur final voit.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
