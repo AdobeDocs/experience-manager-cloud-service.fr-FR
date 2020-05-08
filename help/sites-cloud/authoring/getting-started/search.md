@@ -1,7 +1,7 @@
 ---
 title: Rechercher
 description: Retrouvez votre contenu plus rapidement grâce à de puissantes options de recherche
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
