@@ -1,19 +1,19 @@
 ---
-title: 'Application de workflows aux pages  '
+title: Application de workflows aux pages
 description: Lors de la création de pages, vous avez la possibilité d’utiliser des workflows pour exécuter des actions sur vos pages. Il est possible d’appliquer plusieurs workflows.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
 
-# Application de workflows aux pages   {#applying-workflows-to-pages}
+# Application de workflows aux pages  {#applying-workflows-to-pages}
 
 Lors de la création de pages, vous avez la possibilité d’utiliser des workflows pour exécuter des actions sur vos pages. Il est possible d’appliquer plusieurs workflows.
 
 Lorsque vous appliquez le workflow, vous spécifiez les informations suivantes :
 
-* Processus à appliquer.
+* Workflow à appliquer.
    * Vous pouvez appliquer n’importe quel workflow (auquel vous avez accès, selon les affectations réalisées par votre administrateur AEM).
 * Éventuellement, un titre permettant d’identifier l’instance de workflow dans la boîte de réception d’un utilisateur.
 * La charge utile du workflow. Cela peut concerner une ou plusieurs pages.
@@ -55,19 +55,19 @@ Dans les deux cas, vous aurez besoin d’effectuer les opérations suivantes :
 
 * [Spécifier les détails du workflow dans l’assistant Créer un workflow](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Démarrage d’un workflow à partir de la barre d’outils Sites   {#starting-a-workflow-from-the-sites-toolbar}
+### Démarrage d’un workflow à partir de la barre d’outils Sites  {#starting-a-workflow-from-the-sites-toolbar}
 
 Vous pouvez démarrer un workflow à partir de la barre d’outils de la console **Sites** :
 
 1. Recherchez et sélectionnez la page voulue.
 
-1. À partir de l’option **Créer** de la barre d’outils, vous pouvez maintenant sélectionner **Worfklow**.
+1. À partir de l’option **Créer** de la barre d’outils, vous pouvez maintenant sélectionner **Workflow**.
 
    ![Création d’un workflow à partir de la barre d’outils](/help/sites-cloud/authoring/assets/workflows-create-from-toolbar.png)
 
 1. L’assistant **Créer un workflow** vous aidera à [spécifier les détails du workflow](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Démarrage d’un workflow à partir de la chronologie   {#starting-a-workflow-from-the-timeline}
+### Démarrage d’un workflow à partir de la chronologie  {#starting-a-workflow-from-the-timeline}
 
 Dans la **Chronologie**, vous pouvez démarrer un workflow à appliquer à la ressource sélectionnée.
 
@@ -78,7 +78,7 @@ Dans la **Chronologie**, vous pouvez démarrer un workflow à appliquer à la re
 
 1. L’assistant **Créer un workflow** vous aidera à [spécifier les détails du workflow](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Spécification des détails du workflow dans l’assistant Créer un workflow   {#specifying-workflow-details-in-the-create-workflow-wizard}
+### Spécification des détails du workflow dans l’assistant Créer un workflow  {#specifying-workflow-details-in-the-create-workflow-wizard}
 
 L’assistant **Créer un workflow** vous permet de sélectionner le workflow et d’en spécifier les détails.
 
@@ -136,7 +136,7 @@ Vous pouvez spécifier les détails du workflow :
 
 1. Utilisez l’option **Créer** pour fermer l’assistant et créer l’instance du workflow. Une notification s’affiche dans la console Sites.
 
-## Démarrage d’un workflow à partir de l’éditeur de page   {#starting-a-workflow-from-the-page-editor}
+## Démarrage d’un workflow à partir de l’éditeur de page  {#starting-a-workflow-from-the-page-editor}
 
 Lors de la modification d’une page, vous pouvez sélectionner **Informations sur la page** dans la barre d’outils. Le menu déroulant contient l’option **Démarrer dans le workflow**. Cette option ouvre une boîte de dialogue dans laquelle vous pouvez spécifier le workflow requis, ainsi qu’un titre si nécessaire :
 
