@@ -1,7 +1,7 @@
 ---
 title: Notes de mise à jour d’Adobe Experience Manager (AEM) as a Cloud Service.
 description: 'Notes de mise à jour d’Adobe Experience Manager (AEM) as a Cloud Service. '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 650f6dbc50934f2989a7b9ed51623e80a9202af2
 
 ---
@@ -9,7 +9,7 @@ source-git-commit: 650f6dbc50934f2989a7b9ed51623e80a9202af2
 
 # Informations sur la version {#release-information}
 
-| Produit | Adobe Experience Manager en tant que service Cloud |
+| Produit | Adobe Experience Manager as a Cloud Service |
 |---|---|
 | Version | 2020.04.0 |
 | Type | Mise à jour continue |
@@ -43,7 +43,7 @@ source-git-commit: 650f6dbc50934f2989a7b9ed51623e80a9202af2
 
 * [Documentation Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentation HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
-* [Documentation sur les composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [Documentation sur les composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 * [Documentation Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriels sur Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
