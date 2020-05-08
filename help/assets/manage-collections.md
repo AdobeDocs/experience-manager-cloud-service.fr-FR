@@ -1,9 +1,9 @@
 ---
 title: Gestion des collections de ressources numériques
-description: Comprenez le concept de collecte dans Adobe Experience Manager Assets. Découvrez comment créer, gérer, modifier et partager des collections avec d’autres utilisateurs.
+description: Découvrez le concept de collection dans Adobe Experience Manager Assets. Apprenez à créer, gérer, modifier et partager des collections avec d’autres utilisateurs.
 contentOwner: AG
 mini-toc-levels: 1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
@@ -11,9 +11,9 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 # Gestion des collections {#manage-collections}
 
-Une collection est un ensemble de ressources dans les ressources d’Adobe Experience Manager. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs. Il peut s’agir d’une collection statique ou d’une collection dynamique basée sur les résultats de la recherche.
+Une collection est un ensemble de ressources dans Adobe Experience Manager Assets. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs. Il peut s’agir d’une collection statique ou dynamique basée sur les résultats de la recherche.
 
-Contrairement aux dossiers, une collection peut inclure des fichiers provenant de différents emplacements. Vous pouvez partager des ressources avec plusieurs utilisateurs dont les niveaux de privilèges sont différents (modification, affichage, etc.).
+Contrairement aux dossiers, une collection peut comporter des ressources provenant de différents emplacements. Vous pouvez partager des ressources avec plusieurs utilisateurs dont les niveaux de privilèges sont différents (modification, affichage, etc.).
 
 Vous pouvez partager plusieurs collections avec un utilisateur. Chaque collection contient des références aux ressources. L’intégrité du référentiel des ressources est préservée dans les collections.
 
@@ -21,13 +21,13 @@ Selon la façon dont elles rassemblent les ressources, les collections sont des 
 
 * Collection contenant une liste de référence statique de ressources, dossiers et autres collections
 
-* Collection dynamique qui comprend dynamiquement des ressources en fonction de critères de recherche.
+* Collection dynamique qui rassemble de manière dynamique des ressources selon des critères de recherche
 
-## Access the collections console {#navigate-the-collections-console}
+## Accès à la console Collections {#navigate-the-collections-console}
 
 Pour ouvrir la console **[!UICONTROL Collections]**, procédez comme suit :
 
-Pour ouvrir les **[!UICONTROL collections]**, appuyez ou cliquez sur le logo d’Experience Manager. From the navigation page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
+Pour ouvrir la console **[!UICONTROL Collections]**, appuyez ou cliquez sur le logo d’Experience Manager. Sur la page de navigation, accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Collections]**.
 
 ## Création d’une collection {#create-a-collection}
 
@@ -51,15 +51,15 @@ Vous pouvez créer une collection avec des références statiques, par exemple, 
 
    >[!NOTE]
    >
-   >Experience Manager Assets vous permet de créer un de révision pour une collection similaire à la manière dont vous créez des  de révision pour un dossier de ressources.
+   >Experience Manager Assets vous permet de créer des tâches de révision pour une collection de la même façon que vous créez des tâches de révision pour un dossier de ressources.
 
    Pour ajouter des ressources à la collection, accédez à l’interface utilisateur Assets. Pour plus d’informations, voir [Ajout de ressources à une collection](#add-assets-to-a-collection).
 
-### Create collections using dropzone {#create-collections-using-dropzone}
+### Création de collections à l’aide de la zone de dépôt {#create-collections-using-dropzone}
 
 Vous pouvez faire glisser des ressources de l’interface utilisateur Assets jusqu’à une collection. Vous pouvez également créer une copie d’une collection et faire glisser les ressources jusqu’à celle-ci.
 
-1. Dans l’interface utilisateur Ressources, sélectionnez les ressources à ajouter à une collection.
+1. Dans l’interface utilisateur Assets, sélectionnez les ressources à ajouter à une collection.
 1. Faites glisser les ressources jusqu’à la zone **[!UICONTROL Déposer dans la collection]**. Vous pouvez également appuyer/cliquer sur l’icône **[!UICONTROL À la collection]** de la barre d’outils.
 1. Sur la page **[!UICONTROL Ajouter à la collection]**, appuyez/cliquez sur l’icône **[!UICONTROL Créer une collection]** dans la barre d’outils. Si vous souhaitez ajouter les ressources à une collection existante, sélectionnez-la dans la page, puis appuyez/cliquez sur **[!UICONTROL Ajouter]**. Par défaut, la collection la plus récemment mise à jour est sélectionnée.
 1. Dans la boîte de dialogue **[!UICONTROL Créer une collection]**, indiquez le nom de la collection. Si vous souhaitez que la collection soit accessible à tous les utilisateurs, sélectionnez **[!UICONTROL Collection publique]**.
@@ -99,8 +99,8 @@ Vous pouvez ajouter des ressources à une collection qui comporte une liste de r
 
 Les collections dynamiques sont créées en enregistrant une recherche afin que vous puissiez modifier leur contenu en changeant les paramètres de recherche de la [recherche enregistrée](#saved-searches).
 
-1. Dans l’IU d’Assets, appuyez/cliquez sur l’icône **[!UICONTROL Rechercher]** de la barre d’outils.
-1. Avec le curseur dans la zone Omnisearch, appuyez sur la touche Entrée.
+1. Dans l’interface utilisateur Assets, appuyez/cliquez sur l’icône de **[!UICONTROL recherche]** de la barre d’outils.
+1. Placez le curseur dans la zone Omni-recherche et appuyez sur la touche Entrée.
 1. Appuyez/cliquez sur l’icône de navigation globale pour afficher le panneau Filtres.
 1. Dans la liste **[!UICONTROL Recherches enregistrées]**, sélectionnez la collection dynamique que vous souhaitez modifier. Le panneau de recherche affiche les filtres configurés pour la recherche enregistrée.
 1. Dans la liste **[!UICONTROL Fichiers et dossiers]**, sélectionnez **[!UICONTROL Fichiers]**.
@@ -206,7 +206,7 @@ Pour personnaliser la page [!UICONTROL Propriétés] de métadonnées, notamment
 
 Vous pouvez ajouter une collection à une autre collection, créant ainsi une collection imbriquée.
 
-1. From the Collections console, select the desired collection or group of collections, and tap or click **[!UICONTROL To Collection]** in the toolbar.
+1. Dans la console Collections, sélectionnez la collection ou le groupe de collections désiré, et appuyez ou cliquez sur **[!UICONTROL À la collection]** dans la barre d’outils.
 1. Sur la page **[!UICONTROL Ajouter à la collection]**, sélectionnez la collection à laquelle vous souhaitez ajouter la collection.
 
    >[!NOTE]
@@ -219,7 +219,7 @@ Vous pouvez ajouter une collection à une autre collection, créant ainsi une co
 >
 >Les collections dynamiques ne peuvent pas être imbriquées. En d’autres termes, elles ne peuvent pas comporter d’autres collections.
 
-## Recherches enregistrées    {#saved-searches}
+## Recherches enregistrées  {#saved-searches}
 
 Dans l’interface utilisateur d’Assets, vous pouvez rechercher ou filtrer des ressources selon des règles, critères de recherche ou facettes de recherche personnalisées. Si vous enregistrez ces éléments en tant que **[!UICONTROL recherches enregistrées]**, vous pouvez y accéder ultérieurement à partir de la liste **[!UICONTROL Recherches enregistrées]** du panneau Filtrer. La création d’une recherche enregistrée entraîne celle d’une collection dynamique.
 
@@ -233,14 +233,14 @@ La modification des recherches enregistrées est identique à celle des collecti
 
 Pour supprimer des recherches enregistrées, procédez comme suit :
 
-1. Dans l’interface utilisateur Ressources, appuyez/cliquez sur l’icône de recherche dans la barre d’outils.
+1. Dans l’interface utilisateur Assets, appuyez/cliquez sur l’icône de recherche de la barre d’outils.
 
-1. Avec le curseur dans le champ Omnisearch, appuyez sur la touche Entrée.
+1. Placez le curseur dans le champ Omni-recherche et appuyez sur la touche Entrée.
 1. Appuyez ou cliquez sur l’icône de navigation globale afin d’afficher le panneau Filtres.
 1. Dans la liste **[!UICONTROL Recherches enregistrées]**, appuyez/cliquez sur l’icône **[!UICONTROL Supprimer]** en regard de la collection dynamique à supprimer.
 1. Dans la boîte de dialogue, appuyez/cliquez sur **[!UICONTROL Supprimer]** pour supprimer la recherche enregistrée.
 
-## Execute a workflow on a collection {#run-a-workflow-on-a-collection}
+## Exécution d’un workflow sur une collection {#run-a-workflow-on-a-collection}
 
 Vous pouvez exécuter un workflow pour les ressources d’une collection. Si la collection contient des collections imbriquées, le workflow s’exécute également sur les ressources de ces dernières. Toutefois, si la collection et les collections imbriquées contiennent des ressources en double, le workflow ne s’exécute qu’une seule fois pour ces ressources.
 
