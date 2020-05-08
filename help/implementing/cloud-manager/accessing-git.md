@@ -3,7 +3,7 @@ title: Accès à Git
 seo-title: Accès à Git
 description: Cette page vous explique comment accéder au référentiel Git et le gérer.
 seo-description: Consultez cette page pour découvrir comment accéder à votre référentiel Git et le gérer.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
