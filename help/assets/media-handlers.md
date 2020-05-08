@@ -2,7 +2,7 @@
 title: Traitement des ressources à l’aide des workflows et des gestionnaires de médias
 description: En savoir plus sur les différents gestionnaires de médias et sur la façon de les utiliser dans les workflows afin d’effectuer des tâches sur les ressources.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
@@ -18,7 +18,7 @@ Les gestionnaires de médias sont des services d’AEM Assets qui effectuent des
 
 >[!NOTE]
 >
->See [Assets supported file formats](file-format-support.md) article for a description of all the formats supported by AEM Assets as well as the features supported for each format.
+>Reportez-vous à l’article [Formats pris en charge par Assets](file-format-support.md) pour une description de tous les formats pris en charge par AEM Assets, ainsi que les fonctionnalités prises en charge pour chaque format.
 
 ## Gestionnaires de médias par défaut {#default-media-handlers}
 
@@ -133,7 +133,7 @@ Pour activer/désactiver un gestionnaire de médias :
 
 Pour prendre en charge un nouveau type de médias ou exécuter des tâches spécifiques sur une ressource, il est nécessaire de créer un gestionnaire de médias. Cette section décrit la procédure à suivre.
 
-#### Classes et interfaces importantes   {#important-classes-and-interfaces}
+#### Classes et interfaces importantes  {#important-classes-and-interfaces}
 
 La meilleure façon de démarrer une implémentation est d’hériter d’une implémentation abstraite fournie qui prend en charge l’essentiel du traitement et qui fournit un comportement par défaut raisonnable : à savoir la classe `com.day.cq.dam.core.AbstractAssetHandler`.
 
@@ -151,7 +151,7 @@ Voici un exemple de modèle :
 
 L’interface et les classes sont les suivantes :
 
-* `com.day.cq.dam.api.handler.AssetHandler` interface : Cette interface décrit le service qui ajoute la prise en charge de types MIME spécifiques. L’ajout d’un nouveau type MIME nécessite l’implémentation de cette interface. L’interface contient des méthodes pour importer et exporter les documents spécifiques, pour créer des miniatures et extraire des métadonnées.
+* `com.day.cq.dam.api.handler.AssetHandler` : cette interface décrit le service qui ajoute la prise en charge de types MIME spécifiques. L’ajout d’un nouveau type MIME requiert l’implémentation de cette interface. L’interface contient des méthodes pour importer et exporter les documents spécifiques, pour créer des miniatures et extraire des métadonnées.
 * `com.day.cq.dam.core.AbstractAssetHandler` : cette classe sert de base pour toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités communes.
 * Classe `com.day.cq.dam.core.AbstractSubAssetHandler` :
    * Cette classe sert de base pour toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités communes, ainsi que la fonctionnalité commune d’extraction de sous-ressources.
@@ -162,7 +162,7 @@ Les méthodes suivantes doivent être implémentées :
 
 * `extractMetadata()` : cette méthode extrait toutes les métadonnées disponibles.
 * `getThumbnailImage()` : cette méthode crée une miniature de la ressource transmise.
-* `getMimeTypes()`: cette méthode renvoie le ou les types MIME de ressource.
+* `getMimeTypes()` : cette méthode renvoie le ou les types MIME de la ressource.
 
 Voici un exemple de modèle :
 
@@ -170,7 +170,7 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
 
 L’interface et les classes sont les suivantes :
 
-* `com.day.cq.dam.api.handler.AssetHandler` interface : Cette interface décrit le service qui ajoute la prise en charge de types MIME spécifiques. L’ajout d’un nouveau type MIME nécessite l’implémentation de cette interface. L’interface contient des méthodes pour importer et exporter les documents spécifiques, pour créer des miniatures et extraire des métadonnées.
+* `com.day.cq.dam.api.handler.AssetHandler` : cette interface décrit le service qui ajoute la prise en charge de types MIME spécifiques. L’ajout d’un nouveau type MIME requiert l’implémentation de cette interface. L’interface contient des méthodes pour importer et exporter les documents spécifiques, pour créer des miniatures et extraire des métadonnées.
 * `com.day.cq.dam.core.AbstractAssetHandler` : cette classe sert de base pour toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités communes.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` : cette classe sert de base pour toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités communes, ainsi que la fonctionnalité commune d’extraction de sous-ressources.
 
@@ -391,7 +391,7 @@ Les conversions suivantes peuvent être automatiquement exécutées et stockées
 
 Le processus `CommandLineProcess` effectue les opérations suivantes par ordre d’apparition dans la liste :
 
-* le fichier selon des types MIME spécifiques, le cas échéant.
+* Filtre le fichier en fonction des types MIME indiqués, le cas échéant.
 * Crée un répertoire temporaire sur le disque hébergeant le serveur AEM.
 * Diffuse le fichier d’origine vers le répertoire temporaire.
 * Exécute la commande définie par les arguments de l’étape. La commande est exécutée dans le répertoire temporaire avec les autorisations de l’utilisateur exécutant AEM.
@@ -399,7 +399,7 @@ Le processus `CommandLineProcess` effectue les opérations suivantes par ordre d
 * Supprime le répertoire temporaire.
 * Crée des miniatures basées sur ces rendus, si spécifié. Le nombre et les dimensions des miniatures sont définis par les arguments de l’étape.
 
-### Exemple utilisant ImageMagick   {#an-example-using-imagemagick}
+### Exemple utilisant ImageMagick  {#an-example-using-imagemagick}
 
 L’exemple suivant montre comment configurer l’étape de processus de ligne de commande de sorte qu’à chaque fois qu’une ressource de type MIME gif ou tiff est ajoutée à /content/dam sur le serveur AEM, une image inversée de l’original est créée avec trois miniatures supplémentaires (140x100, 48x48 et 10x250).
 
@@ -407,7 +407,7 @@ Pour ce faire, vous utiliserez ImageMagick. ImageMagick est une suite logicielle
 
 Installez d’abord ImageMagick sur le disque hébergeant le serveur AEM :
 
-1. Installer ImageMagick : Voir la documentation [d’ImageMagick](https://www.imagemagick.org/script/download.php).
+1. Installez ImageMagick : Voir la [documentation d’ImageMagick](https://www.imagemagick.org/script/download.php).
 1. Configurez l’outil afin de pouvoir exécuter convert sur la ligne de commande.
 1. Pour vérifier si cet outil est installé correctement, exécutez la commande `convert -h` sur la ligne de commande.
 
@@ -453,7 +453,7 @@ Les valeurs des **Arguments du processus** doivent être séparées par une virg
   </tr>
   <tr>
    <td> mime:&lt;mime-type&gt;</td>
-   <td><p>Argument facultatif. Le processus est appliqué si le fichier a le même type MIME que celui de l’argument.</p> <p>Plusieurs types MIME peuvent être définis.</p> </td>
+   <td><p>Argument facultatif. Le processus est appliqué si la ressource présente le même type MIME que celui de l’argument.</p> <p>Plusieurs types MIME peuvent être définis.</p> </td>
   </tr>
   <tr>
    <td> tn:&lt;width&gt;:&lt;height&gt;</td>
@@ -461,7 +461,7 @@ Les valeurs des **Arguments du processus** doivent être séparées par une virg
   </tr>
   <tr>
    <td> cmd: &lt;command&gt;</td>
-   <td><p>Définit la commande qui sera exécutée. La syntaxe dépend de l’outil de ligne de commande.</p> <p>Une seule commande peut être définie.</p> <p>Les variables suivantes permettent de créer la commande :<br/></p> <p><code>${filename}</code>: name of the input file, for example `original.jpg`<br/><code>${file}</code>: full path name of the input file, for example, `/tmp/cqdam0816.tmp/original.jpg`<br/><code>${directory}</code>: directory of the input file, for example `/tmp/cqdam0816.tmp`.<br/> <code>${basename}</code>: nom du fichier d’entrée sans son extension, par exemple original<br/><code>${extension}</code>: extension du fichier d’entrée, par exemple JPG<br/></p></td>
+   <td><p>Définit la commande qui sera exécutée. La syntaxe dépend de l’outil de ligne de commande.</p> <p>Une seule commande peut être définie.</p> <p>Les variables suivantes permettent de créer la commande :<br/></p> <p><code>${filename}</code>nom du fichier d’entrée ; par exemple, original.jpg<br/><code>${file}</code> : chemin d’accès complet au fichier d’entrée ; par exemple, /tmp/cqdam0816.tmp/original.jpg<br/><code>${directory}</code> : répertoire du fichier d’entrée ; par exemple, /tmp/cqdam0816.tmp.<br/> <code>${basename}</code> : nom du fichier d’entrée sans son extension ; par exemple, original<br/> <code>${extension}</code> : extension du fichier d’entrée ; par exemple, JPG<br/></p></td>
   </tr>
  </tbody>
 </table>
