@@ -1,14 +1,14 @@
 ---
-title: Digital Rights Management dans Adobe Experience Manager Assets
+title: Gestion des droits numériques dans Adobe Experience Manager Assets
 description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans AEM.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
-# Digital Rights Management dans Adobe Experience Manager Assets {#digital-rights-management-in-assets}
+# Gestion des droits numériques dans Experience Manager Assets {#digital-rights-management-in-assets}
 
 Les ressources numériques sont souvent associées à une licence qui prévoit les conditions et la durée de leur utilisation. Dans la mesure où Adobe Experience Manager (AEM) Assets est entièrement intégré à la plate-forme AEM, vous pouvez contrôler efficacement les informations sur l’expiration et l’état des ressources. Vous pouvez également associer des informations de licence à des ressources.
 
@@ -32,9 +32,9 @@ Vous pouvez consulter l’état d’expiration d’une ressource aux emplacement
 
 Vous pouvez rechercher des ressources arrivées à expiration, y compris les sous-ressources expirées dans le panneau de recherche.
 
-1. Dans la console Ressources, cliquez sur l&#39;icône Rechercher dans la barre d&#39;outils pour afficher le champ Omnisearch.
+1. Dans la console Assets, cliquez sur l’icône de recherche de la barre d’outils pour afficher le champ Omni-recherche.
 
-1. Avec le curseur dans la zone Omnisearch, appuyez sur la touche Entrée pour afficher la page des résultats de la recherche.
+1. Avec le curseur dans la zone Omni-recherche, appuyez sur la touche Entrée pour afficher la page des résultats de la recherche.
 
 1. Cliquez sur l’icône de navigation globale pour afficher le panneau Recherche.
 
@@ -92,7 +92,7 @@ La console Ressources d’Adobe Experience Manager (AEM) Assets peut afficher di
 
 1. Pour rechercher des ressources en fonction de leur état, cliquez/appuyez sur l’icône **[!UICONTROL Rechercher]** afin d’afficher la barre Omni-recherche.
 
-1. Appuyez sur la touche Entrée, puis cliquez/appuyez sur l’icône AEM pour afficher le panneau Rechercher.
+1. Appuyez sur la touche Entrée et cliquez/appuyez sur l’icône d’AEM pour afficher le panneau de recherche.
 1. Dans le panneau de recherche, appuyez/cliquez sur **[!UICONTROL État de publication]** et sélectionnez ensuite **[!UICONTROL Publié]** pour rechercher des ressources publiées dans AEM Assets.
 
 1. Appuyez/cliquez sur **[!UICONTROL État d’approbation]**, puis sur l’option appropriée pour rechercher des ressources approuvées ou rejetées.
@@ -101,7 +101,7 @@ La console Ressources d’Adobe Experience Manager (AEM) Assets peut afficher di
 
 1. Vous pouvez également rechercher des éléments en fonction de plusieurs états, sous diverses facettes de recherche. Par exemple, vous pouvez rechercher les ressources publiées qui ont été approuvées dans une tâche de révision et qui n’ont pas encore expiré, en sélectionnant les options correspondantes dans les facettes de recherche.
 
-## Digital Rights Management dans Adobe Experience Manager Assets {#digital-rights-management-in-assets-1}
+## Gestion des droits numériques dans Experience Manager Assets {#digital-rights-management-in-assets-1}
 
 Cette fonction force l’acceptation du contrat de licence avant le téléchargement d’une ressource sous licence à partir du composant Adobe Experience Manager (AEM) Assets.
 
@@ -123,7 +123,7 @@ Une ressource est considérée comme protégée si l’une des conditions suivan
 ### Téléchargement de ressources DRM {#downloading-drm-assets}
 
 1. Dans l’affichage en mode Carte, sélectionnez les ressources à télécharger et cliquez ensuite sur l’icône **[!UICONTROL Télécharger]**.
-1. Dans la page **[!UICONTROL Gestion des droits d’auteur]**, sélectionnez le fichier à télécharger dans la liste.
+1. Dans la page **[!UICONTROL Gestion des droits d’auteur]**, sélectionnez la ressource à télécharger dans la liste.
 1. Dans le volet Licence, sélectionnez **[!UICONTROL Accepter]**. Une marque de sélection apparaît en regard de la ressource dont vous avez accepté le contrat de licence. Appuyez/cliquez sur le bouton **[!UICONTROL Télécharger]**.
 
    >[!NOTE]
