@@ -1,7 +1,7 @@
 ---
-sub-product: Notes de mise à jour d’AEM en tant que service Cloud
-user-guide-title: Notes de mise à jour d’AEM en tant que service Cloud
-translation-type: tm+mt
+sub-product: Notes de mise à jour d’AEM as a Cloud Service
+user-guide-title: Notes de mise à jour d’AEM as a Cloud Service
+translation-type: ht
 source-git-commit: 55abc080701134c5067598dd39fe825048e077d4
 
 ---
