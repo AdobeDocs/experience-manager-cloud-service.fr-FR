@@ -2,7 +2,7 @@
 title: Partage de ressources, de dossiers et de collections sous forme de lien
 description: Cet article décrit le partage de ressources, de dossiers et de collections dans les ressources d’Experience Manager sous forme de lien hypertexte.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
@@ -10,17 +10,17 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 # Partage et distribution de ressources gérées dans Experience Manager {#share-assets-from-aem}
 
-Adobe Experience Manager (AEM) Assets vous permet de partager des ressources, des dossiers et des collections avec des membres de votre entreprise et des tiers, notamment des partenaires et des fournisseurs. Utilisez les méthodes suivantes pour partager des ressources à partir des ressources Experience Manager en tant que service Cloud :
+Adobe Experience Manager (AEM) Assets vous permet de partager des ressources, des dossiers et des collections avec des membres de votre entreprise et des tiers, notamment des partenaires et des fournisseurs. Procédez comme suit pour partager des ressources à partir d’Experience Manager Assets as a Cloud Service :
 
 * Partager des ressources sous la forme d’un lien.
-* Téléchargez des ressources et partagez-les séparément.
+* Télécharger des ressources et les partager séparément.
 * Partager via l’application de bureau AEM.
 * Partager via Adobe Asset Link.
-* (Fonctionnalité à venir) Partager à l’aide de Brand Portal.
+* (Fonctionnalité à venir) Partager à l’aide de Brand Portal.
 
 ## Partage de ressources en tant que lien {#sharelink}
 
-Pour générer une URL pour les ressources que vous souhaitez partager avec des utilisateurs, utilisez la boîte de dialogue Partage de lien. Les utilisateurs disposant de privilèges d’administrateur ou avec des autorisations de lecture à l’emplacement `/var/dam/share` peuvent afficher les liens partagés avec eux. Le partage de ressources au moyen d’un lien est très pratique dans la mesure où il permet à des tiers d’y accéder sans avoir besoin de se connecter au préalable à AEM Assets.
+Pour générer une URL pour les ressources que vous souhaitez partager avec des utilisateurs, utilisez la boîte de dialogue Partage de lien. Les utilisateurs disposant de privilèges d’administrateur ou avec des autorisations de lecture à l’emplacement `/var/dam/share` peuvent afficher les liens partagés avec eux. Le partage de ressources au moyen d’un lien est très pratique dans la mesure où il permet à des tiers d’y accéder sans avoir besoin de se connecter au préalable à AEM Assets.
 
 >[!NOTE]
 >
@@ -110,13 +110,13 @@ Les utilisateurs peuvent télécharger certaines ressources et les partager en d
 
 Les spécialistes marketing et les utilisateurs de services dédiés peuvent facilement partager des ressources approuvées avec des professionnels de la création à l’aide des solutions suivantes :
 
-* **Application de bureau AEM** : cette application fonctionne sous Windows et Mac. Voir [Vue d’ensemble de l’appli de bureau AEM](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html). Pour savoir comment un utilisateur autorisé peut facilement accéder aux ressources partagées, voir [Parcourir, rechercher et prévisualiser des ressources](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Les utilisateurs de bureau peuvent créer des fichiers et les partager avec leurs homologues qui sont des utilisateurs d’AEM, par exemple en téléchargeant de nouvelles images. Voir [Chargement de ressources à l’aide de l’application de bureau](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/using.html).
+* **Application de bureau AEM** : cette application fonctionne sous Windows et Mac. Voir [Vue d’ensemble de l’appli de bureau AEM](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html). Pour savoir comment un utilisateur autorisé peut facilement accéder aux ressources partagées, voir [Parcourir, rechercher et prévisualiser des ressources](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Les utilisateurs peuvent créer des ressources et les repartager avec leurs collaborateurs qui sont des utilisateurs d’AEM (par exemple, en chargeant de nouvelles images). Voir [Chargement de ressources à l’aide de l’application de bureau](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/using.html).
 
 * **Adobe Asset Link** : les professionnels de la création peuvent rechercher et utiliser des ressources directement dans Adobe InDesign, Adobe Illustrator et Adobe Photoshop.
 
 ## Configuration du partage de ressources {#configure-sharing}
 
-Les différentes options de partage des ressources nécessitent une configuration spécifique et des conditions préalables spécifiques.
+Les différentes options de partage des ressources nécessitent une configuration spécifique et sont soumises à des conditions préalables spécifiques.
 
 ### Configuration du partage de liens de ressources {#asset-link-sharing}
 
@@ -149,30 +149,30 @@ Before you can share assets as links, configure the email service.
 1. Click/tap **[!UICONTROL Save]**.
 -->
 
-### Configuration de la taille maximale des données   {#maxdatasize}
+### Configuration de la taille maximale des données  {#maxdatasize}
 
-Lorsque vous téléchargez des ressources via le lien partagé avec la fonction de partage de lien, AEM compresse l’intégralité de la hiérarchie de cette ressource depuis le référentiel et renvoie la ressource sous forme de fichier ZIP. Toutefois, en l’absence de limite à la quantité de données pouvant être compressées dans un fichier ZIP, il est possible que des volumes de données considérables à compresser entraînent des erreurs d’insuffisance de mémoire dans JVM. Pour protéger le système d’une attaque par déni de service potentielle en raison de cette situation, vous pouvez configurer la taille maximale des fichiers téléchargés. Si la taille non compressée de la ressource dépasse la valeur configurée, les demandes de téléchargement sont rejetées. La valeur par défaut est de 100 Mo.
+Lorsque vous téléchargez des ressources via le lien partagé avec la fonction de partage de lien, AEM compresse l’intégralité de la hiérarchie de cette ressource depuis le référentiel et renvoie la ressource sous forme de fichier ZIP. Toutefois, en l’absence de limite à la quantité de données pouvant être compressées dans un fichier ZIP, il est possible que des volumes de données considérables à compresser entraînent des erreurs d’insuffisance de mémoire dans JVM. Dans ce cas, pour protéger le système d’une attaque par déni de service potentielle, vous pouvez configurer la taille maximale des fichiers téléchargés. Si la taille non compressée de la ressource dépasse la valeur configurée, les demandes de téléchargement sont rejetées. La valeur par défaut est de 100 Mo.
 
 1. Cliquez ou appuyez sur le logo AEM puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
 1. Dans la console web, recherchez la configuration **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]**.
-1. Open the configuration in edit mode, and modify the value of the **[!UICONTROL Max Content Size (uncompressed)]** parameter.
+1. Ouvrez la configuration en mode d’édition, puis modifiez la valeur du paramètre **[!UICONTROL Taille max. de contenu (sans compression)]**.
 1. Enregistrez les modifications.
 
 <!--
 Add content or link about how to configure sharing via BP, DA, AAL, etc.
 -->
 
-### Activer les actions de bureau à utiliser avec l’application de bureau {#desktop-actions}
+### Activation des actions de bureau à utiliser avec l’application de bureau {#desktop-actions}
 
-À partir de l’interface utilisateur Assets ouverte dans un navigateur, vous pouvez explorer l’emplacement des ressources ou extraire et ouvrir une ressource pour la modifier dans votre application de bureau. Ces options sont appelées actions de bureau et pour les activer, voir [Activer les actions de bureau dans l’interface](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)Web d’AEM.
+À partir de l’interface utilisateur Assets ouverte dans un navigateur, vous pouvez explorer l’emplacement des ressources ou extraire et ouvrir une ressource pour la modifier dans votre application de bureau. Ces options sont appelées actions de bureau ; pour les activer, voir [Activation des actions de bureau dans l’interface web AEM](https://docs.adobe.com/help/fr-FR/experience-manager-desktop-app/using/using.html#desktopactions-v2).
 
-![Activer les actions de bureau à utiliser comme raccourci lorsque vous travaillez avec une application de bureau](assets/enable_desktop_actions.png)
+![Activation des actions de bureau à utiliser comme raccourci dans une application de bureau](assets/enable_desktop_actions.png)
 
 ### Configurations pour utiliser Adobe Asset Link {#configure-asset-link}
 
-Adobe Asset Link simplifie la collaboration entre les créatifs et les marketeurs dans le processus de création de contenu. Il connecte les ressources Adobe Experience Manager (AEM) aux applications de bureau Creative Cloud Adobe InDesign, Adobe Photoshop et Adobe Illustrator. Le panneau Adobe Asset Link permet aux créatifs d’accéder au contenu stocké dans AEM Assets et de le modifier sans quitter les applications de création qui leur sont les plus familières.
+Adobe Asset Link simplifie la collaboration entre les créatifs et les spécialistes du marketing dans le processus de création de contenu. Il connecte Adobe Experience Manager (AEM) Assets aux applications de bureau Creative Cloud Adobe InDesign, Adobe Photoshop et Adobe Illustrator. Le panneau Adobe Asset Link permet aux créatifs d’accéder au contenu stocké dans AEM Assets et de le modifier sans quitter les applications de création qui leur sont les plus familières.
 
-Découvrez [comment configurer AEM pour une utilisation avec Adobe Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
+Découvrez [comment configurer AEM pour l’utiliser avec Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/configure-aem-assets-for-asset-link.html).
 
 ## Bonnes pratiques et résolution des problèmes {#bestpractices}
 
