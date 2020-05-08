@@ -1,7 +1,7 @@
 ---
 title: Modification des propriétés de page
 description: Définissez les propriétés requises pour une page
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
@@ -136,7 +136,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    * Indiquez une configuration d’exportation.
 
-### Miniature   {#thumbnail}
+### Miniature  {#thumbnail}
 
 Affiche l’image de la miniature de la page. Vous pouvez :
 
@@ -175,7 +175,7 @@ Affiche l’image de la miniature de la page. Vous pouvez :
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
 
-### Personnalisation   {#personalization}
+### Personnalisation  {#personalization}
 
 * **Configurations ContextHub**
 
@@ -187,7 +187,7 @@ Affiche l’image de la miniature de la page. Vous pouvez :
 
    * Sélectionnez une [marque pour spécifier la portée du ciblage](/help/sites-cloud/authoring/personalization/targeted-content.md).
    >[!NOTE]
-   >Cette option nécessite que le compte utilisateur soit dans le `Target Adminstrators`groupe.
+   >Cette option nécessite que le compte utilisateur figure dans le groupe `Target Adminstrators`.
 
 ### Autorisations {#permissions}
 
@@ -206,20 +206,20 @@ Affiche l’image de la miniature de la page. Vous pouvez :
 
 * **Blueprint**
 
-   * Définissez les propriétés d’une page Blueprint dans le cadre de la gestion multi-site.
+   * Définissez les propriétés d’une page de plan directeur dans le cadre de la gestion multi-site.
    <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
 
-   * Détermine les circonstances dans lesquelles les modifications seront diffusées à Live Copy.
+   * Détermine les circonstances dans lesquelles les modifications seront diffusées à la Live Copy.
 
 
-### Live Copy   {#live-copy}
+### Live Copy  {#live-copy}
 
 * **Live Copy**
 
    * Définissez les propriétés d’une page Live Copy dans le cadre de la gestion multi-site. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
-   * Détermine les circonstances dans lesquelles les modifications seront diffusées à partir du plan directeur.
+   * Détermine les circonstances dans lesquelles les modifications seront propagées à partir du plan directeur.
 
-### Structure du site   {#site-structure}
+### Structure du site  {#site-structure}
 
 * Diffusez des liens d’accès aux pages qui fournissent les fonctionnalités à l’échelle du site, comme la **page d’inscription** et la page **en mode hors ligne**, entre autres.
 
