@@ -1,7 +1,7 @@
 ---
-title: Déploiement de votre code - Services Cloud
-description: Déploiement de votre code - Services Cloud
-translation-type: tm+mt
+title: Déploiement de votre code - Cloud Services
+description: Déploiement de votre code - Cloud Services
+translation-type: ht
 source-git-commit: 7758c6df49583dafdf2bf262eae8db466bb3c504
 
 ---
@@ -40,14 +40,14 @@ Une fois que vous avez configuré le **pipeline** (référentiel, environnement 
    * Validation : cette étape permet de s’assurer que le pipeline est configuré pour utiliser les ressources actuellement disponibles ; par exemple, la branche configurée existe, les environnements sont disponibles, etc.
    * Test de création et d’unité : cette étape exécute un processus de création en conteneur. Pour plus d’informations sur l’environnement de création, voir [Création d’un projet d’application AEM](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md).
    * Analyse du code : cette étape évalue la qualité du code de votre application. Pour plus d’informations sur le processus de test, voir [Comprendre vos résultats de test](/help/implementing/developing/introduction/understand-test-results.md).
-   * Créer des images : Cette étape comporte un fichier journal du processus utilisé pour créer des images. Ce processus est responsable de la transformation du contenu et des paquets de répartiteurs produits par l&#39;étape de création en images Docker et configuration Kubernetes.
-   * Déploiement en environnement intermédiaire.
+   * Compiler des images : cette étape comprend un fichier journal du processus utilisé pour compiler des images. Ce processus est responsable de la transformation du contenu et des modules du Dispatcher générés par l’étape de compilation en images Docker et en configuration Kubernetes.
+   * Déploiement dans l’environnement d’évaluation.
 
       ![](assets/stage-deployment.png)
-   The **Stage testing**, involves the following steps:
+   Le **test dans l’environnement intermédiaire** comprend les étapes suivantes :
 
-   * Test fonctionnel du produit : Les exécutions du pipeline Cloud Manager prennent en charge l’exécution de tests exécutés par rapport à l’environnement d’évaluation. Pour plus d’informations sur le processus de test, voir [Comprendre vos résultats de test](/help/implementing/developing/introduction/understand-test-results.md).
-   * Tests fonctionnels personnalisés : Cette étape du pipeline est toujours présente et ne peut pas être ignorée. Cependant, si aucun fichier JAR de test n’est généré par la version, le test est transmis par défaut. Pour plus d’informations sur le processus de test, voir [Comprendre vos résultats de test](/help/implementing/developing/introduction/understand-test-results.md).
+   * Tests fonctionnels du produit : les exécutions du pipeline Cloud Manager prennent en charge l’exécution de tests sur l’environnement d’évaluation. Pour plus d’informations sur le processus de test, voir [Comprendre vos résultats de test](/help/implementing/developing/introduction/understand-test-results.md).
+   * Tests fonctionnels personnalisés : cette étape du pipeline est toujours présente et ne peut pas être ignorée. Cependant, si aucun fichier JAR de test n’est généré par la compilation, le test réussit par défaut. Pour plus d’informations sur le processus de test, voir [Comprendre vos résultats de test](/help/implementing/developing/introduction/understand-test-results.md).
 
       ![](assets/stage-testing.png)
 
@@ -56,13 +56,13 @@ Une fois que vous avez configuré le **pipeline** (référentiel, environnement 
 
 
 >Attention :
->Les sections suivantes doivent être mises à jour pour Cloud Manager pour les services cloud AEM et sont en cours d’exécution.
+>les sections suivantes doivent être mises à jour pour Cloud Manager for AEM Cloud Services. Cette opération est en cours.
 
 ## Processus de déploiement {#deployment-process}
 
-La section suivante décrit le déploiement des packages AEM et dispatcher dans les phases intermédiaire et de production.
+La section suivante décrit le déploiement des packages AEM et dispatcher dans les phases intermédiaires et de production.
 
-Cloud Manager télécharge tous les fichiers target/*.zip générés par le processus de création vers un emplacement de stockage.  Ces artefacts sont récupérés à partir de cet emplacement pendant les phases de déploiement du pipeline.
+Cloud Manager télécharge tous les fichiers target/*.zip générés par le processus de création vers un emplacement de stockage. Ces artefacts sont récupérés à partir de cet emplacement pendant les phases de déploiement du pipeline.
 
 Lorsque Cloud Manager se déploie sur des topologies autres que de production, l’objectif est de réaliser le déploiement aussi rapidement que possible ; les artefacts sont donc déployés simultanément sur tous les nœuds, comme suit :
 
@@ -87,7 +87,7 @@ Lorsque Cloud Manager se déploie sur des topologies autres que de production, 
 
    1. Les configurations actuelles sont sauvegardées et copiées vers un emplacement temporaire.
    1. Toutes les configurations sont supprimées, à l’exception des fichiers non modifiables. Pour plus d’informations, consultez la section Gestion des configurations du Dispatcher. Cela permet de vider les répertoires pour qu’aucun fichier orphelin ne soit abandonné.
-   1. L’artefact est extrait dans le répertoire httpd.  Les fichiers non modifiables ne sont pas remplacés. Toute modification apportée aux fichiers non modifiables dans votre référentiel git sera ignorée au moment du déploiement.  Ces fichiers sont essentiels à la structure du dispatcher AMS et ne peuvent pas être modifiés.
+   1. L’artefact est extrait dans le répertoire httpd. Les fichiers non modifiables ne sont pas remplacés. Toute modification apportée aux fichiers non modifiables dans votre référentiel git sera ignorée au moment du déploiement.  Ces fichiers sont essentiels à la structure du dispatcher AMS et ne peuvent pas être modifiés.
    1. Apache effectue un test de configuration. Si aucune erreur n’est trouvée, le service est rechargé. Si une erreur se produit, les configurations sont restaurées à partir de la sauvegarde, le service est rechargé et l’erreur est renvoyée à Cloud Manager.
    1. Chaque chemin spécifié dans la configuration de pipeline est invalidé ou purgé du cache du dispatcher.
    >[!NOTE]
