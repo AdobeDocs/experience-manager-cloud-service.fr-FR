@@ -2,7 +2,7 @@
 title: Téléchargement de ressources à partir d’AEM
 description: Découvrez comment télécharger des ressources à partir d’AEM et activer ou désactiver la fonctionnalité de téléchargement.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
