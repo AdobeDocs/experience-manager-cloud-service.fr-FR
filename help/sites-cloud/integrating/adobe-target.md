@@ -1,7 +1,7 @@
 ---
 title: Intégration à Adobe Target
 description: 'Intégration à Adobe Target '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
@@ -29,9 +29,9 @@ Pour assurer l’intégration à Target, effectuez les tâches suivantes :
 
 * Experience Platform Launch est l’outil par défaut permettant d’instrumenter un site AEM avec des fonctionnalités Target (bibliothèques JS). Par conséquent, l’intégration d’AEM as a Cloud Service avec Launch et Adobe Target s’effectue de façon conjointe (voir les liens ci-dessous).
 
-   * [Intégration à Adobe Target à l’aide des E/S Adobe](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html)
+   * [Intégration à Adobe Target à l’aide d’Adobe I/O](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html)
    * [Intégrer Experience Platform Launch](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
-   * [Intégration d’AEM à Experience Platform Launch par le biais des E/S Adobe](https://helpx.adobe.com/fr/experience-manager/using/aem_launch_adobeio_integration.html)
+   * [Intégration d’AEM à Adobe Launch par le biais d’Adobe I/O](https://helpx.adobe.com/fr/experience-manager/using/aem_launch_adobeio_integration.html)
    * [Présentation de l’intégration d’AEM à Experience Platform Launch, Analytics et Target](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
 
 >[!NOTE]
@@ -42,7 +42,7 @@ Pour assurer l’intégration à Target, effectuez les tâches suivantes :
 
 >[!CAUTION]
 >
->Dans AEM en tant que service Cloud, l’agent de réplication qui synchronise   et  de  d’AEM vers le Adobe est désactivé par défaut. Contactez l’équipe d’assistance [](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html#experience-manager) Adobe si vous devez réactiver l’agent de réplication.
+>Dans AEM as a Cloud Service, l’agent de réplication qui synchronise les offres et les activités d’AEM vers Adobe Target est désactivé par défaut. Contactez l’équipe d’[assistance Adobe](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html#experience-manager) si vous devez le réactiver.
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ Une fois l’intégration terminée, vous pouvez [créer du contenu ciblé](http
 >
 >Lorsque vous ciblez un composant dans le mode Auteur AEM, il effectue une série d’appels côté serveur vers Adobe Target afin d’enregistrer la campagne, de configurer des offres et de récupérer des segments Adobe Target (si cela est configuré). Aucun appel côté serveur n’est effectué depuis la publication AEM vers Adobe Target.
 
-## Sources d’informations en arrière-plan   {#background-information-sources}
+## Sources d’informations sur le contexte  {#background-information-sources}
 
 Intégrer AEM as a Cloud Service à Adobe Target nécessite des connaissances sur Adobe Target, la gestion des activités AEM et la gestion des audiences AEM. Vous devez connaître les éléments suivants :
 
