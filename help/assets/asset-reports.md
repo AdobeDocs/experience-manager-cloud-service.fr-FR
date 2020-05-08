@@ -2,13 +2,13 @@
 title: Rapports de ressources
 description: Cet article décrit les différents rapports relatifs aux ressources dans AEM Assets et comment les générer.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
-# Rapports de ressources   {#asset-reports}
+# Rapports de ressources  {#asset-reports}
 
 La création de rapports de ressources est un outil essentiel pour évaluer l’utilité de votre déploiement Adobe Experience Manager (AEM) Assets. Avec AEM Assets, vous pouvez générer divers rapports concernant vos ressources numériques. Les rapports fournissent des informations utiles concernant votre utilisation du système, la façon dont les utilisateurs interagissent avec les ressources et la façon dont les ressources sont téléchargées et partagées.
 
@@ -104,7 +104,7 @@ Les administrateurs d’AEM peuvent facilement générer et personnaliser ces ra
 
    Appuyez/cliquez sur l’icône Télécharger de la barre d’outils pour télécharger le rapport au format CSV.
 
-## Ajout de colonnes personnalisées   {#add-custom-columns}
+## Ajout de colonnes personnalisées  {#add-custom-columns}
 
 Vous pouvez ajouter des colonnes personnalisées aux rapports suivants pour afficher davantage de données en fonction de vos besoins :
 
