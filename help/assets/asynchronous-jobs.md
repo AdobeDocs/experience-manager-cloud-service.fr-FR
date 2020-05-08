@@ -2,7 +2,7 @@
 title: Opérations asynchrones
 description: AEM Assets optimise les performances en exécutant certaines tâches consommatrices de ressources de manière asynchrone.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
@@ -29,7 +29,7 @@ Vous pouvez afficher l’état des tâches asynchrones à partir de la page **[!
 
 ## Surveillance de l’état des opérations asynchrones {#monitoring-the-status-of-asynchronous-operations}
 
-Whenever AEM Assets processes an operation asynchronously, you receive a notification at your inbox <!-- and through email -->.
+Chaque fois qu’AEM Assets traite une opération asynchrone, vous recevez une notification dans votre boîte de réception <!-- and through email -->.
 
 Pour afficher l’état des opérations asynchrones en détail, accédez à la page **[!UICONTROL État des tâches asynchrones]**.
 
@@ -66,7 +66,7 @@ Pour afficher l’état des opérations asynchrones en détail, accédez à la p
    >
    >Vous ne pouvez pas supprimer une tâche si son état est Actif ou Placé en file d’attente.
 
-## Purge de tâches terminées   {#purging-completed-jobs}
+## Purge de tâches terminées  {#purging-completed-jobs}
 
 AEM Assets exécute une tâche de purge quotidienne à 1 h 00 du matin afin de supprimer les tâches asynchrones terminées depuis plus d’un jour.
 
@@ -81,7 +81,7 @@ Vous pouvez modifier la planification de la tâche de purge et la durée de cons
 
 1. Enregistrez les modifications.
 
-## Configuration des seuils pour traitement asynchrone   {#configuring-thresholds-for-asynchronous-processing}
+## Configuration des seuils pour traitement asynchrone  {#configuring-thresholds-for-asynchronous-processing}
 
 Vous pouvez configurer le nombre seuil de ressources ou de références pour AEM Assets afin de traiter une opération spécifique de façon asynchrone.
 
@@ -97,7 +97,7 @@ Si le nombre de ressources ou de dossiers à supprimer dépasse le nombre seuil,
 
 1. Enregistrez les modifications.
 
-### Configuration des seuils pour les opérations de déplacement asynchrones   {#configuring-thresholds-for-asynchronous-move-operations}
+### Configuration des seuils pour les opérations de déplacement asynchrones  {#configuring-thresholds-for-asynchronous-move-operations}
 
 Si le nombre de ressources/dossiers ou de références à déplacer dépasse le nombre seuil, l’opération de déplacement est effectuée de façon asynchrone.
 
