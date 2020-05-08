@@ -1,13 +1,13 @@
 ---
-title: 'Package de structure du référentiel de projet AEM  '
-description: Les projets Maven Adobe Experience Manager as a Cloud Service nécessitent une définition de sous-package de structure de référentiel dont le seul objectif est de définir les racines du référentiel JCR dans lesquelles les sous-packages de code du projet sont déployés.
-translation-type: tm+mt
+title: 'Module de structure du référentiel de projet AEM  '
+description: Les projets Maven Adobe Experience Manager as a Cloud Service nécessitent une définition de sous-module de structure de référentiel dont le seul objectif est de définir les racines du référentiel JCR dans lesquelles les sous-modules de code du projet sont déployés.
+translation-type: ht
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
-# Package de structure du référentiel de projet AEM
+# Module de structure du référentiel de projet AEM
 
 Les projets Maven pour Adobe Experience Manager as a Cloud Service nécessitent une définition de sous-package de structure de référentiel dont le seul objectif est de définir les racines du référentiel JCR dans lesquelles les sous-packages de code du projet sont déployés. Cela permet de s’assurer que l’installation des packs dans Experience Manager as a Cloud Service est automatiquement commandée par les dépendances des ressources JCR. Les dépendances manquantes peuvent conduire à des scénarios où des sous-structures seraient installées avant leurs structures parents et seraient donc supprimées de manière inattendue, ce qui interromprait le déploiement.
 
