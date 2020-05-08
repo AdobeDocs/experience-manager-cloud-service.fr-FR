@@ -3,7 +3,7 @@ title: Gestion de vos ressources numériques dans Experience Manager
 description: Découvrez les différentes méthodes de gestion et de modification des ressources.
 contentOwner: AG
 mini-toc-levels: 1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
@@ -20,7 +20,7 @@ Lorsque vous organisez une collection de ressources, comme toutes les images `Na
 >[!NOTE]
 >
 >* Le partage d’un dossier de ressources du type `sling:OrderedFolder` n’est pas pris en charge lors du partage vers Marketing Cloud. Si vous souhaitez partager un dossier, ne sélectionnez pas [!UICONTROL Ordonné] lors de la création du dossier.
->* Experience Manager n’autorise pas l’utilisation de `subassets` mot comme nom d’un dossier. Il s’agit d’un mot-clé réservé au noeud qui contient des sous-ressources pour les ressources composées.
+>* Experience Manager n’autorise pas l’utilisation du mot `subassets` comme nom de dossier. Il s’agit d’un mot-clé réservé au nœud qui contient des sous-ressources pour les ressources composites.
 
 
 1. Dans le dossier Ressources numériques, accédez à l’emplacement où vous souhaitez créer un dossier. Dans le menu, cliquez sur **[!UICONTROL Créer]**. Sélectionnez **[!UICONTROL Nouveau dossier]**.
@@ -34,7 +34,7 @@ Les caractères suivants (liste de ceux-ci séparés par des espaces) ne sont pa
 
 ## Chargement des ressources {#uploading-assets}
 
-Pour plus d’informations, voir [Ajout d’actifs numériques à Experience Manager](add-assets.md).
+Pour plus d’informations, voir [Ajout de ressources numériques à Experience Manager](add-assets.md).
 
 ## Aperçu des ressources {#previewing-assets}
 
@@ -71,13 +71,13 @@ Pour prévisualiser une ressource, procédez comme suit.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. Sélectionnez une ou plusieurs balises dans le champ **[!UICONTROL Balises]**. Pour ajouter une balise personnalisée, saisissez le nom de la balise dans la zone et appuyez sur la touche Entrée. La nouvelle balise est enregistrée dans AEM.
+1. Sélectionnez une ou plusieurs balises dans le champ **[!UICONTROL Balises]**. Pour ajouter une balise personnalisée, saisissez son nom dans la zone appropriée et appuyez ensuite sur la touche Entrée. La nouvelle balise est enregistrée dans AEM.
 
    YouTube requiert que les balises soient publiées et comportent un lien vers YouTube (si un lien approprié peut être trouvé).
 
    >[!NOTE]
    >
-   >Pour créer des balises, vous devez disposer d’une autorisation d’écriture sur le `/content/cq:tags/default` chemin d’accès dans le référentiel CRX.
+   >Pour créer des balises, vous devez disposer d’une autorisation d’écriture sur le chemin d’accès `/content/cq:tags/default` dans le référentiel CRX.
 
 1. Pour afficher les statistiques d’utilisation de la ressource, cliquez/appuyez sur l’onglet **[!UICONTROL Statistiques]**.
 
@@ -90,7 +90,7 @@ Pour prévisualiser une ressource, procédez comme suit.
 
 1. Appuyez/cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 
-1. Accédez à l’interface utilisateur d’Assets. Les propriétés de métadonnées modifiées, y compris le titre, la description et les balises, s’affichent sur la carte de ressources dans le  Carte et sous les colonnes appropriées dans le  de.
+1. Accédez à l’interface utilisateur d’Assets. Les propriétés des métadonnées modifiées, notamment le titre, la description et les balises, sont affichées sur la carte des ressources en mode Carte et dans les colonnes pertinentes en mode Liste.
 
 ## Copie de ressources {#copying-assets}
 
@@ -98,7 +98,7 @@ Lorsque vous copiez une ressource ou un dossier, l’intégralité de la ressour
 
 Quelques attributs uniques à une copie spécifique d’une ressource ne sont pas reportés. Voici quelques exemples :
 
-* ID du fichier, date et heure de création, versions et historique des versions. Some of these properties are indicated by the properties `jcr:uuid`, `jcr:created`, and `cq:name`.
+* ID de la ressource, date et heure de création, versions et historique des versions. Certaines de ces propriétés sont indiquées par les propriétés `jcr:uuid`, `jcr:created` et `cq:name`.
 
 * L’heure de création et les chemins référencés sont uniques pour chaque ressource et chaque rendu.
 
@@ -315,7 +315,7 @@ Les groupes d’utilisateurs fermés constituent un moyen supplémentaire de lim
 1. Publiez le dossier, puis tentez d’y accéder à partir de l’instance de publication. Un écran de connexion s’affiche.
 1. Si vous êtes membre d’un groupe d’utilisateurs fermé, saisissez vos informations d’identification de sécurité. Le dossier s’affiche après qu’AEM vous a authentifié.
 
-## Recherche de ressources    {#search-assets}
+## Recherche de ressources  {#search-assets}
 
 La recherche de ressources est essentielle pour l’utilisation d’un système de gestion des ressources numériques, que ce soit pour une utilisation plus poussée par les créatifs, pour une gestion robuste des ressources par les utilisateurs et spécialistes marketing ou pour l’administration par les administrateurs DAM.
 
@@ -411,7 +411,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 1. Appuyez/cliquez sur l’icône **[!UICONTROL Annoter]** à partir de l’une des options suivantes :
 
    * [Actions rapides](#quick-actions)
-   * Dans la barre d’outils, après avoir sélectionné la ressource    ou avoir accédé à la page de la ressource
+   * Dans la barre d’outils, après avoir sélectionné la ressource  ou avoir accédé à la page de la ressource
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
 1. Ajoutez un commentaire dans la zone **[!UICONTROL Commentaire]** en bas de la chronologie. Une autre solution consiste à marquer une zone de l’image et à ajouter une annotation dans la boîte de dialogue **[!UICONTROL Ajouter une annotation]**.
@@ -424,7 +424,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
 >[!NOTE]
 >
->For a non-administrator user, suggestions appear only if the user has Read permissions at `/home` in CRXDE.
+>Si l’utilisateur ne dispose pas des droits d’administration, les suggestions s’affichent uniquement s’il dispose de droits de lecture sur `/home` dans CRXDE.
 
 ![chlimage_1-235](assets/chlimage_1-235.png)
 
