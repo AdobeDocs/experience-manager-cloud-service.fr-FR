@@ -1,7 +1,7 @@
 ---
 title: Ajout de vos ressources numériques à Adobe Experience Manager
 description: Ajout de vos ressources numériques à Adobe Experience Manager as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
@@ -9,7 +9,7 @@ source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 # Ajout de ressources numériques à Adobe Experience Manager {#add-assets-to-experience-manager}
 
-Adobe Experience Manager enrichit le contenu binaire des fichiers numériques téléchargés avec des métadonnées enrichies, des balises intelligentes, des rendus et d’autres services de gestion des actifs numériques (DAM). Vous pouvez télécharger divers types de fichiers, tels que des images, des  de et des fichiers d’images brutes, depuis votre dossier local ou un lecteur réseau vers Experience Manager Assets.
+Adobe Experience Manager enrichit le contenu binaire des fichiers numériques chargés avec des métadonnées enrichies, des balises intelligentes, des rendus et autres services de gestion des ressources numériques (DAM). Vous pouvez charger divers types de fichiers, tels que des images, des documents et des fichiers d’images brutes, depuis votre dossier local ou un lecteur réseau vers Experience Manager Assets.
 
 Plusieurs méthodes de chargement sont fournies. Outre la méthode la plus courante qui consiste à utiliser le navigateur, il existe d’autres méthodes pour ajouter des ressources au référentiel Experience Manager : clients de bureau, comme Adobe Asset Link ou l’application de bureau Experience Manager, scripts de chargement et d’ingestion créés par les clients, ou encore intégrations d’ingestion automatisées ajoutées sous la forme d’extensions AEM.
 
@@ -77,7 +77,7 @@ De plus, l’interface utilisateur d’Assets affiche la ressource la plus réce
 
 >[!NOTE]
 >
-> Pour télécharger des hiérarchies de dossiers imbriqués vers AEM, reportez-vous à la page Téléchargement [en masse de ressources](#bulk-upload).
+> Pour charger des hiérarchies de dossiers imbriqués vers AEM, reportez-vous à la section concernant le [téléchargement massif de ressources](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
