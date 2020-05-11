@@ -7,7 +7,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 ---
 
 
-#  Diffusion de contenu dans AEM as a Cloud Service {#content-delivery}
+# Diffusion de contenu dans AEM as a Cloud Service {#content-delivery}
 
 La page actuelle détaille la diffusion du contenu du service de publication dans AEM as a Cloud Service. La diffusion du contenu du service de publication comprend :
 
