@@ -1,8 +1,11 @@
 ---
-title: 'Diffusion de contenu'
+title: Diffusion de contenu
 description: 'Diffusion de contenu '
 translation-type: ht
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: ht
+source-wordcount: '2264'
+ht-degree: 100%
 
 ---
 
