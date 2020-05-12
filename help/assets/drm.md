@@ -3,9 +3,9 @@ title: Gestion des droits numériques [!DNL Adobe Experience Manager Assets] en 
 description: Learn how to manage asset expiration states and information for licensed assets in [!DNL Experience Manager] as a Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 31b8db4403dff1934033e1ed93651a076dba7a1a
+source-git-commit: 45dd1e4e038f15840329fedc549f245360594e49
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1351'
 ht-degree: 62%
 
 ---
@@ -47,7 +47,7 @@ Vous pouvez rechercher des ressources arrivées à expiration, y compris les sou
 
 When you choose the **[!UICONTROL Expired]** option, the [!DNL Assets] console only displays the expired assets and subassets that are referenced by compound assets. Les ressources composites qui référencent des sous-ressources expirées ne s’affichent pas immédiatement une fois que les sous-ressources arrivent à expiration. Instead, they are displayed after [!DNL Experience Manager] detects that they reference expired subassets the next time the scheduler runs.
 
-Si vous modifiez la date d’expiration d’une ressource publiée à une date antérieure au cycle du planificateur en cours, la planification détecte toujours cette ressource en tant que ressource expirée lors de sa prochaine exécution et elle reflète son état en conséquence.
+Si vous modifiez la date d’expiration d’une ressource publiée à une date antérieure au cycle du planificateur en cours, la planification détecte toujours cette ressource en tant que ressource expirée lors de sa prochaine exécution et elle reflète son état en conséquence. La date d’expiration d’un fichier s’affiche différemment pour les utilisateurs de différents fuseaux horaires.
 
 En outre, si un problème ou une erreur empêche le planificateur de détecter les ressources expirées dans le cycle en cours, le planificateur réexamine ces ressources lors du cycle suivant et identifie leur statut expiré.
 
