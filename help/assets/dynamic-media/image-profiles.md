@@ -1,8 +1,11 @@
 ---
 title: Profils d’image Dynamic Media
 description: Créez des profils d’image qui contiennent des paramètres pour le masquage flou et le recadrage intelligent ou l’échantillon intelligent, ou les deux, puis appliquez le profil à un dossier de ressources d’images.
-translation-type: ht
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+translation-type: tm+mt
+source-git-commit: 937b06829f290b1e5a2108c456a759100c450a14
+workflow-type: tm+mt
+source-wordcount: '2652'
+ht-degree: 97%
 
 ---
 
@@ -14,6 +17,10 @@ Lorsque vous chargez des images, vous pouvez les recadrer automatiquement en app
 ## Options de recadrage {#crop-options}
 
 Vous avez le choix entre deux options de recadrage d’image, ainsi qu’une option permettant d’automatiser la création des échantillons de couleur et d’image.
+
+>[!IMPORTANT]
+>
+>Gardez à l’esprit que chaque génération de recadrage dynamique créée nécessite un traitement supplémentaire. Par exemple, l’ajout de plus de cinq proportions de recadrage intelligent peut entraîner un taux d’assimilation des ressources lent. Il peut également augmenter la charge sur les systèmes. Etant donné que vous pouvez appliquer une recadrage dynamique au niveau des dossiers, Adobe recommande de l’utiliser *uniquement* dans les dossiers où cela est nécessaire.
 
 <table>
  <tbody>
@@ -98,7 +105,7 @@ Consultez également la section [Bonnes pratiques pour organiser vos ressources 
 
    Il est parfois utile d’utiliser un nom de profil spécifique à sa finalité prévue. Par exemple, si vous souhaitez créer un profil qui génère des échantillons uniquement (en d’autres termes, le recadrage intelligent est désactivé, et l’échantillon de couleurs et d’images est activé), vous pouvez utiliser le nom de profil « Échantillons intelligents ».
 
-   Voir aussi [Options de recadrage intelligent et d’échantillon intelligent](#crop-options) et [Masquage flou](#unsharp-mask).
+   Voir aussi [Options de recadrage intelligent et d’échantillonnage intelligent](#crop-options) et [Accentuation](#unsharp-mask).
 
    ![recadrer](assets/crop.png)
 
@@ -129,7 +136,7 @@ Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un prof
 
 ### Application de profils d’image Dynamic Media à des dossiers spécifiques {#applying-image-profiles-to-specific-folders}
 
-Vous pouvez appliquer un profil d’image à un dossier à partir du menu **[!UICONTROL Outils]**, ou si vous êtes dans le dossier, via **[!UICONTROL Propriétés]**. Cette section décrit comment appliquer des profils d’image aux dossiers en utilisant les deux procédures.
+Vous pouvez appliquer un profil d’image à un dossier à partir du menu **[!UICONTROL Outils]**, ou si vous êtes dans le dossier, via **[!UICONTROL Propriétés]**. Cette section décrit comment appliquer des profils d’image aux dossiers de deux manières.
 
 Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
