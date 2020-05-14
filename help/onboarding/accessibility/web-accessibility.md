@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service et directives d’accessibilité web
 seo-title: Adobe Experience Manager as a Cloud Service et directives d’accessibilité web
 translation-type: tm+mt
-source-git-commit: 710365f7934a63710a9158c010d6fac1ca390044
+source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 87%
@@ -24,7 +24,7 @@ La création de sites web et de contenu accessibles avec AEM as a Cloud Service 
 
 * Les développeurs de modèles doivent également être conscients de ces problèmes lors de la mise en œuvre de la conception du site web.
 
-Adobe Experience Manager as a Cloud Service fonctionne selon les [directives](#wcag-accessibility-guideslines) fournies par le [World Wide Web Consortium](#world-wide-web-consortium).
+Adobe Experience Manager as a Cloud Service fonctionne selon les [directives](#wcag-accessibility-guidelines) fournies par le [World Wide Web Consortium](#world-wide-web-consortium).
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Adobe Experience Manager as a Cloud Service fonctionne selon les [directives](
 
 Le [World Wide Web Consortium (W3C)](https://www.w3.org/) est une communauté internationale dédiée aux normes web. Son initiative [WAI (Web Accessibility Initiative)](https://www.w3.org/WAI/) publie les [directives d’accessibilité du contenu web](#wcag-accessibility-guidelines).
 
-## Web Content Accessibility Guidelines (WCAG) 2.1 {#wcag-accessibility-guideslines}
+## Web Content Accessibility Guidelines (WCAG) 2.1 {#wcag-accessibility-guidelines}
 
 Pour aider les concepteurs et les développeurs web à produire des sites web accessibles, l’initiative [WAI (Web Accessibility Initiative)](https://www.w3.org/WAI/) a publié en juin 2018 le document [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/).
 
