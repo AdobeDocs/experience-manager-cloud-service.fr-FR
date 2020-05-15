@@ -3,15 +3,18 @@ title: Gestion de vos ressources numériques dans Experience Manager
 description: Découvrez les différentes méthodes de gestion et de modification des ressources.
 contentOwner: AG
 mini-toc-levels: 1
-translation-type: ht
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+translation-type: tm+mt
+source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+workflow-type: tm+mt
+source-wordcount: '4284'
+ht-degree: 98%
 
 ---
 
 
 # Gestion des ressources {#manage-assets}
 
-Cet article explique comment gérer et modifier les ressources dans Adobe Experience Manager (AEM) Assets. Pour gérer les fragments de contenu, voir les ressources [Fragments de contenu](content-fragments/content-fragments.md).
+Cet article décrit comment gérer et modifier des ressources dans Adobe Experience Manager Assets. Pour gérer les fragments de contenu, voir les ressources [Fragments de contenu](content-fragments/content-fragments.md).
 
 ## Création de dossiers {#creating-folders}
 
@@ -183,7 +186,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    **Suppression d’un rendu**
 
-   Sélectionnez un rendu dans le panneau **[!UICONTROL Rendus]**, puis appuyez/cliquez sur l’icône **[!UICONTROL Supprimer le rendu]** de la barre d’outils.
+   Sélectionnez un rendu dans le panneau **[!UICONTROL Rendus]**, puis appuyez/cliquez sur l’icône **[!UICONTROL Supprimer le rendu]** de la barre d’outils. Les rendus ne peuvent pas être supprimés en bloc une fois le traitement des ressources terminé. Pour les fichiers individuels, vous pouvez supprimer des rendus manuellement de l’interface utilisateur. Pour plusieurs fichiers, vous pouvez personnaliser [!DNL Experience Manager] la suppression de rendus spécifiques ou supprimer les fichiers et télécharger à nouveau les fichiers supprimés.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
