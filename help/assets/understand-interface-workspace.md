@@ -2,8 +2,11 @@
 title: Comprendre l’interface utilisateur d’Experience Manager Assets as a Cloud Service
 description: Familiarisez-vous avec l’espace de travail, l’interface et les éléments d’interface d’Assets as a Cloud Service.
 contentOwner: AG
-translation-type: ht
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+translation-type: tm+mt
+source-git-commit: e399c9f372aa8995abf5cddfbc41d1cfe2b0aa22
+workflow-type: tm+mt
+source-wordcount: '37'
+ht-degree: 100%
 
 ---
 
@@ -14,13 +17,16 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 TBD: Removing this article for now from TOC.
 Need to rewrite this getting started content post-GA.
 
--->
-
-Présentation de l’expérience de la page d’accueil.
-Certaines parties de l’interface utilisateur qui mènent à différentes fonctionnalités sont accessibles ici.
-Comment atteindre l’interface utilisateur spécifique aux ressources et où chercher à effectuer des tâches spécifiques à la gestion des ressources numériques.
-Comment naviguer, où rechercher, trouver des workflows, effectuer des configurations, vérifier des rapports, etc.
-Comment trouver des liens d’assistance et de documentation, des informations de profil, etc.
+Topics to be covered:
+* Overview of the home page experience.
+* Parts of the UI that lead to different capabilities accessible from here.
+* How to reach Assets specific UI and where to look to do DAM specific tasks.
+* How to navigate, where to search, find workflows, do configurations, check reports, etc.
+* How to find support and docs links, profile info, etc.
+* Embed videos from Tech Mktg, if any.
+* Look for videos on YT and blog posts on the Internet for introductions to AEMaaCS Assets.
 
 >[!MORELIKETHIS]
-
+>
+>* [Basic handling for Sites]
+-->
