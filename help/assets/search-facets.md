@@ -1,8 +1,11 @@
 ---
 title: Facettes de recherche
 description: Cet article décrit comment créer, modifier et utiliser les facettes de recherche dans AEM.
-translation-type: ht
-source-git-commit: dfa9b099eaf7f0d155986bbab7d56901876d98f6
+translation-type: tm+mt
+source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
+workflow-type: tm+mt
+source-wordcount: '2387'
+ht-degree: 100%
 
 ---
 
@@ -80,7 +83,7 @@ La propriété de valeur d’un type de fichier, telle que vue dans CRXDE, est u
 
 Au lieu de créer manuellement une structure de nœud pour les options du référentiel CRX, vous pouvez définir les options d’un fichier JSON en spécifiant les paires clé-valeur correspondantes. Spécifiez le chemin du fichier JSON dans le champ **[!UICONTROL Nom de la propriété]**. Par exemple, vous pouvez définir les paires clé-valeur `image/bmp`, `image/gif`, `image/jpeg` et `image/png`, puis spécifier leurs valeurs comme illustré dans l’échantillon de fichier JSON ci-dessous. Dans le champ **[!UICONTROL Nom de la propriété]**, vous pouvez spécifier le chemin d’accès CRX de ce fichier.
 
-```
+```json
 {
     "options" :
  [
@@ -124,7 +127,7 @@ Le prédicat `Multi Value Property` vous permet de rechercher plusieurs valeurs 
 1. Sur la page Formulaires de recherche, sélectionnez **[!UICONTROL Rail de recherche d’administrateurs de ressources]**, puis appuyez sur **Modifier** ![aemassets_edit](assets/aemassets_edit.png).
 1. Sur la page Modifier le formulaire de recherche, faites glisser **[!UICONTROL Prédicat de propriété à plusieurs valeurs]** de l’onglet **[!UICONTROL Sélectionner le prédicat]** jusqu’au volet principal.
 1. Dans l’onglet **[!UICONTROL Paramètres]**, saisissez un libellé et un texte d’espace réservé pour le prédicat. Indiquez le nom de la propriété sur laquelle sera axée la recherche dans le champ de propriété ; `jcr:content/metadata/dc:value`, par exemple. Vous pouvez également utiliser la boîte de dialogue de sélection pour sélectionner un nœud.
-1. Assurez-vous que l’option **[!UICONTROL Prise en charge des délimiteurs]** est sélectionnée. Dans le champ **[!UICONTROL Délimiteurs d’entrée]**, spécifiez les délimiteurs à utiliser pour séparer les différentes valeurs. Par défaut, la virgule est définie comme délimiteur. Vous pouvez spécifier un autre délimiteur.
+1. Assurez-vous que l’option **[!UICONTROL Prise en charge des délimiteurs]** est sélectionnée. Dans le champ **[!UICONTROL Délimiteurs d’entrée]**, spécifiez des délimiteurs pour séparer les valeurs individuelles. Par défaut, la virgule est spécifiée comme séparateur. Vous pouvez spécifier un autre délimiteur.
 1. Dans le champ **Description**, saisissez une description facultative, puis appuyez sur **[!UICONTROL Terminé]**.
 1. Accédez au panneau Filtres dans l’interface utilisateur d’Assets. Le prédicat **[!UICONTROL Propriété à plusieurs valeurs]** est ajouté au panneau.
 1. Indiquez plusieurs valeurs dans le champ Valeur multiple, en les séparant par des délimiteurs, puis effectuez la recherche. Le prédicat récupère une correspondance de texte exacte pour les valeurs que vous avez spécifiées.
@@ -172,7 +175,7 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
     </ul> </td>
   </tr>
   <tr>
-   <td>Chemin    Navigateur</td>
+   <td>Chemin  Navigateur</td>
    <td>Prédicat de recherche permettant de rechercher des ressources dans des dossiers et des sous-dossiers à un chemin d’accès racine préconfiguré.</td>
    <td>
     <ul>
@@ -182,7 +185,7 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Chemin</p> </td>
+   <td><p>Chemin </p> </td>
    <td><p>Utilisez-le pour filtrer les résultats selon l’emplacement. Vous pouvez spécifier différents chemins d’accès sous la forme d’options.</p> </td>
    <td>
     <ul>
@@ -222,7 +225,7 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Date    Plage</p> </td>
+   <td><p>Date  Plage</p> </td>
    <td><p>Prédicat de recherche permettant de rechercher des ressources créées pendant une période spécifiée pour une propriété de date. Vous pouvez spécifier des dates de début et de fin dans le panneau Rechercher à l’aide des sélecteurs de date.</p> </td>
    <td>
     <ul>
