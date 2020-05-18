@@ -2,8 +2,11 @@
 title: Extension de l’Éditeur de ressources
 description: Découvrez comment étendre les fonctionnalités de l’Éditeur de ressources avec des composants personnalisés.
 contentOwner: AG
-translation-type: ht
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+translation-type: tm+mt
+source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
+workflow-type: tm+mt
+source-wordcount: '713'
+ht-degree: 100%
 
 ---
 
@@ -40,7 +43,7 @@ Dans la plupart des cas, la copie de l’exemple existant de `init.jsp` (`/apps/
 
 Certains composants d’AEM Assets nécessitent des fonctions JS définies dans le fichier `component.js`. Copiez ce fichier dans votre répertoire de composants et liez-le.
 
-```xml
+```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
@@ -50,7 +53,7 @@ Cet exemple charge cette source JavaScript dans `head.jsp` (`/apps/geometrixx/co
 
 Certains composants d’AEM Assets utilisent la bibliothèque de widgets d’AEM. Pour que le rendu soit effectué correctement dans le contexte du contenu, une feuille de style supplémentaire doit être chargée. Le composant d’action de balise nécessite une feuille de style supplémentaire.
 
-```xml
+```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
@@ -73,7 +76,7 @@ Les exemples de gestionnaires dans `head.jsp` (`/apps/geometrixx/components/asse
 * Si une ressource est chargée, ils désactivent le mode de gestion du contenu web, car le parsys ne peut être modifié que sur une page de formulaire simple.
 * Si une ressource est chargée, ils utilisent son titre au lieu de celui sur la page de formulaire.
 
-```java
+```javascript
  List<Resource> resources = FormsHelper.getFormEditResources(slingRequest);
     if (resources != null) {
         if (resources.size() == 1) {
@@ -113,7 +116,7 @@ Les exemples de gestionnaires dans `head.jsp` (`/apps/geometrixx/components/asse
 
 Dans la partie HTML, utilisez l’ensemble de titre précédent (titre de la ressource ou de la page) :
 
-```xml
+```html
 <title><%= title %></title>
 ```
 
@@ -136,7 +139,7 @@ Cet exemple illustre comment créer un composant qui affiche les métadonnées d
 
 1. Ajoutez `samplemeta.jsp` avec le fragment de code suivant :
 
-   ```xml
+   ```javascript
    <%--
    
      Sample metadata field comopnent
@@ -196,7 +199,7 @@ Cet exemple illustre comment créer un composant qui affiche les métadonnées d
 
 1. Accédez à votre navigateur puis, sur votre exemple de page (par exemple, `asseteditor.html`), basculez en mode de conception et activez votre nouveau composant pour le système de paragraphes.
 
-1. En mode d’**édition**, le nouveau composant (par exemple, **Exemple de métadonnées**) est désormais disponible dans le sidekick (qui se trouve dans le groupe **Éditeur de ressources**). Insérez le composant. Pour pouvoir stocker les métadonnées, il doit être ajouté au formulaire de métadonnées.
+1. En mode d’**édition**, le nouveau composant (par exemple, **Exemple de métadonnées**) est désormais disponible dans le sidekick (qui se trouve dans le groupe **Éditeur de ressources**). Insérez le composant. Pour pouvoir stocker les métadonnées, celles-ci doivent être ajoutées au formulaire de métadonnées.
 
 ## Modification des options de métadonnées   {#modifying-metadata-options}
 
