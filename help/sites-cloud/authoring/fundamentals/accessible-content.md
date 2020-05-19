@@ -2,9 +2,9 @@
 title: Création de contenu accessible pour Adobe Experience Manager en tant que service Cloud (conformité WCAG 2.1)
 description: Utiliser AEM en tant que service Cloud pour aider à rendre le contenu Web accessible et utilisable par les personnes handicapées
 translation-type: tm+mt
-source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
+source-git-commit: 84b69fb72b2fe28617417fd5a70c5ad1428c3535
 workflow-type: tm+mt
-source-wordcount: '13943'
+source-wordcount: '13955'
 ht-degree: 46%
 
 ---
@@ -1162,7 +1162,7 @@ Suivez les lignes directrices sous [Comment répondre aux critères de réussite
 
 #### Objectif - Identification des erreurs (3.3.1) {#purpose-error-identification}
 
-Ce critère de réussite vise à s’assurer que les utilisateurs sont conscients qu’une erreur s’est produite et qu’ils peuvent déterminer ce qui ne va pas. Le message d’erreur doit être aussi précis que possible. Dans le cas d’un envoi de formulaire infructueux, la réaffichage du formulaire et l’indication des champs en erreur ne suffisent pas pour certains utilisateurs à percevoir qu’une erreur s’est produite. Les utilisateurs de lecteurs d’écran, par exemple, ne sauront pas qu’une erreur s’est produite tant qu’ils n’ont pas trouvé l’un des indicateurs. Ils peuvent abandonner complètement le formulaire avant de rencontrer l’indicateur d’erreur, pensant que la page n’est tout simplement pas fonctionnelle. Selon la définition de WCAG 2.0, une &quot;erreur d&#39;entrée&quot; est une information fournie par l&#39;utilisateur qui n&#39;est pas acceptée. Cela inclut :
+Ce critère de réussite vise à s’assurer que les utilisateurs sont conscients qu’une erreur s’est produite et qu’ils peuvent déterminer ce qui ne va pas. Le message d’erreur doit être aussi précis que possible. Dans le cas d’un envoi de formulaire infructueux, la réaffichage du formulaire et l’indication des champs en erreur ne suffisent pas pour certains utilisateurs à percevoir qu’une erreur s’est produite. Les utilisateurs de lecteurs d’écran, par exemple, ne sauront pas qu’une erreur s’est produite tant qu’ils n’ont pas trouvé l’un des indicateurs. Ils peuvent abandonner complètement le formulaire avant de rencontrer l’indicateur d’erreur, pensant que la page n’est tout simplement pas fonctionnelle. Selon la définition dans WCAG, une erreur [d’](https://www.w3.org/TR/WCAG/#dfn-input-error) entrée est une information fournie par l’utilisateur qui n’est pas acceptée. Cela inclut :
 
 les informations requises par la page Web mais omises par l’utilisateur, ou les informations fournies par l’utilisateur mais qui ne sont pas conformes au format de données requis ou aux valeurs autorisées.
 Par exemple :
@@ -1243,7 +1243,7 @@ Dans les formulaires simples avec des fonctionnalités très limitées, un bouto
 
 #### Objectif - Suggestion d&#39;erreur (3.3.3) {#purpose-error-suggestion}
 
-Ce critère de réussite vise à s’assurer que les utilisateurs reçoivent les suggestions appropriées pour corriger une erreur d’entrée si possible. La définition WCAG 2.0 de &quot;erreur d&#39;entrée&quot; indique que c&#39;est &quot;l&#39;information fournie par l&#39;utilisateur qui n&#39;est pas acceptée&quot; par le système. Parmi les exemples d’informations non acceptées, citons les informations requises mais omises par l’utilisateur et les informations fournies par l’utilisateur, mais qui ne respectent pas le format de données requis ou les valeurs autorisées.
+Ce critère de réussite vise à s’assurer que les utilisateurs reçoivent les suggestions appropriées pour corriger une erreur d’entrée si possible. La définition WCAG de l&#39;erreur [d&#39;](https://www.w3.org/TR/WCAG/#dfn-input-error) entrée indique que c&#39;est &quot;l&#39;information fournie par l&#39;utilisateur qui n&#39;est pas acceptée&quot; par le système. Parmi les exemples d’informations non acceptées, citons les informations requises mais omises par l’utilisateur et les informations fournies par l’utilisateur, mais qui ne respectent pas le format de données requis ou les valeurs autorisées.
 
 Critère de réussite 3.3.1 prévoit la notification des erreurs. Cependant, les personnes ayant des limitations cognitives peuvent avoir du mal à comprendre comment corriger les erreurs. Les personnes ayant des déficiences visuelles peuvent ne pas être en mesure de trouver exactement comment corriger l&#39;erreur. Dans le cas d’un envoi de formulaire infructueux, les utilisateurs peuvent abandonner le formulaire parce qu’ils peuvent ne pas savoir comment corriger l’erreur, même s’ils savent qu’elle s’est produite.
 
