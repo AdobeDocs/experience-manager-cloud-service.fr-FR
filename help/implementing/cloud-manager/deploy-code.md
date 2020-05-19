@@ -1,8 +1,11 @@
 ---
 title: Déploiement de votre code - Cloud Services
 description: Déploiement de votre code - Cloud Services
-translation-type: ht
-source-git-commit: 7758c6df49583dafdf2bf262eae8db466bb3c504
+translation-type: tm+mt
+source-git-commit: c1301dbe9641a6a35b639628e3f2d3f0c6b3f0d3
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 96%
 
 ---
 
@@ -98,7 +101,7 @@ Lorsque Cloud Manager se déploie sur des topologies autres que de production, 
 
    >[!NOTE]
    >
-   >Vous pouvez ignorer les modifications de l’équilibreur de charge dans les déploiements de développement et en environnement intermédiaire, c’est-à-dire, détacher et attacher des étapes dans les deux pipelines hors production, pour les environnements de développement et le pipeline de production, pour les environnements intermédiaires.
+   >Vous pouvez ignorer les modifications de l’équilibrage de charge dans le développement et les déploiements d’étape, c’est-à-dire, détacher et attacher des étapes dans les deux pipelines hors production, pour les environnements de développement et le pipeline de production, pour les environnements d’étape.
 
 ### Phase de déploiement en production {#deployment-production-phase}
 
