@@ -1,8 +1,11 @@
 ---
 title: Configuration de Dynamic Media Cloud Service
 description: Informations sur la configuration de Dynamic Media dans Adobe Experience Manager Cloud Service.
-translation-type: ht
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+translation-type: tm+mt
+source-git-commit: 73d14016beabfbdb127fe9e4d91fb20d4c17918e
+workflow-type: tm+mt
+source-wordcount: '5120'
+ht-degree: 97%
 
 ---
 
@@ -458,9 +461,24 @@ Lorsque la visionneuse à 360° est téléchargée et publiée, vous activez le 
 
 Pour garantir la bonne exécution de Dynamic Media <!--(with `dynamicmedia_scene7` run mode)-->, Adobe recommande les actions suivantes permettant d’optimiser les performances/l’évolutivité de la synchronisation :
 
-* Mettez à jour les threads de traitement de file d’attente de workflows Granite prédéfinis (ressources vidéo).
-* Mettez à jour les threads de traitement de file d’attente de workflows Granite prédéfinis (images et ressources non vidéo).
-* Mettez à jour le nombre maximal de connexions de chargement au serveur Dynamic Media Classic.
+* Mise à jour des paramètres de tâche prédéfinis pour le traitement de différents formats de fichier.
+* Mise à jour des threads de travail de file d’attente du processus Granite prédéfini (ressources vidéo).
+* Mise à jour des threads de travail en file d’attente du flux de travail transitoire Granite prédéfini (images et ressources non vidéo).
+* Mise à jour du nombre maximal de connexions de téléchargement vers le serveur Dynamic Media Classic.
+
+#### Mise à jour des paramètres de tâche prédéfinis pour le traitement de différents formats de fichier
+
+Vous pouvez régler les paramètres de tâche pour accélérer le traitement des fichiers lors du téléchargement. Par exemple, si vous téléchargez des fichiers PSD mais que vous ne souhaitez pas les traiter en tant que modèles, vous pouvez définir l’extraction du calque sur false (désactivé). Dans ce cas, le paramètre de tâche affiné apparaîtra comme `process=None&createTemplate=false`.
+
+Adobe recommande d’utiliser les paramètres de tâche &quot;affinés&quot; suivants pour les fichiers PDF, Postscript et PSD :
+
+| Type de fichier | Paramètres de tâche recommandés |
+| ---| ---|
+| PDF | `pdfprocess=Rasterize&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` |
+| Postscript | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
+| PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
+
+Pour mettre à jour l’un de ces paramètres, suivez les étapes de la section [Activation de la prise en charge](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)des paramètres de tâche de téléchargement des fichiers/fichiers dynamiques de type MIME Classic.
 
 #### Mise à jour de la file d’attente de workflows transitoires Granite {#updating-the-granite-transient-workflow-queue}
 
