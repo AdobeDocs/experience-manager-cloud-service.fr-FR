@@ -2,7 +2,10 @@
 title: Gestion des environnements - Cloud Service
 description: Gestion des environnements - Cloud Service
 translation-type: tm+mt
-source-git-commit: 1fe2fea86f933e7cffabf67fda09a2850a5d5730
+source-git-commit: 1b788b10ab8ea7c5e2aa0d628f10a42737752d34
+workflow-type: tm+mt
+source-wordcount: '595'
+ht-degree: 78%
 
 ---
 
@@ -36,9 +39,16 @@ Un utilisateur disposant des autorisations requises peut créer les types d’en
 ## Ajout d’un environnement {#adding-environments}
 
 
-1. L’utilisateur clique sur le bouton **Ajouter un environnement** pour ajouter un environnement.
+1. Cliquez sur **Ajouter Environnement** pour ajouter un environnement. Ce bouton sera accessible à partir de l&#39;écran **Environnements** .
+   ![](assets/no-environment-2.png)
 
-   ![](assets/add-environment.png)
+
+   L&#39;option Environnement **** Ajouter sera également disponible sur la carte des **Environnements** lorsqu&#39;il n&#39;y a aucun environnement dans le programme.
+
+   ![](assets/no-environments.png)
+
+   >[!REMARQUE)
+   >L’option Environnement **** Ajoutersera désactivée en raison d’un manque d’autorisations ou de ce qui peut être contracté.
 
 1. La boîte de dialogue **Ajouter un environnement** s’affiche. L’utilisateur doit ajouter des détails tels que le **type d’environnement**, **nom de l’environnement** et la **description de l’environnement** (selon l’objectif de l’utilisateur lors de la création de l’environnement dans les limites de ce qui est disponible pour le client spécifique).
 
@@ -71,3 +81,15 @@ Lorsque cet état est affiché, l’option **Mettre à jour** est disponible dan
 Si vous sélectionnez cette option dans le menu déroulant, un gestionnaire de déploiement pourra mettre à jour le pipeline associé à cet environnement vers la dernière version, puis exécuter le pipeline.
 
 Si le pipeline a déjà été mis à jour, l’utilisateur est invité à exécuter le pipeline.
+
+## Suppression d’un Environnement {#deleting-environment}
+
+L’utilisateur disposant des autorisations requises peut supprimer un environnement de développement.
+
+Delete option will be available from the dropdown menu, both on the **Environments** Card and the **Manage** menu if you click on Details from the **ENVIRONMENTS** card.
+
+![](assets/deleting-environment1.png)
+
+>[!NOTE]
+Cette fonction n’est pas disponible pour l’environnement de production/étape défini dans un programme normal configuré à des fins de production. Cette fonction est toutefois disponible pour les environnements de production/d’étape dans un programme de sandbox.
+
