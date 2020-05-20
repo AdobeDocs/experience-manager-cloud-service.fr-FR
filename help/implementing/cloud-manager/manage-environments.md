@@ -2,10 +2,10 @@
 title: Gestion des environnements - Cloud Service
 description: Gestion des environnements - Cloud Service
 translation-type: tm+mt
-source-git-commit: a19ffdd0afa484343096cb09c47219e3fdb13fb7
+source-git-commit: 1f72e8c935dc6cfe1124afd9f1a0fe37a97ded34
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 78%
+source-wordcount: '629'
+ht-degree: 68%
 
 ---
 
@@ -43,7 +43,7 @@ Un utilisateur disposant des autorisations requises peut créer les types d’en
    ![](assets/no-environment-2.png)
 
 
-   L&#39;option Environnement **** Ajouter sera également disponible sur la carte des **Environnements** lorsqu&#39;il n&#39;y a aucun environnement dans le programme.
+   L&#39;option Environnement **** Ajouter est également disponible sur la carte **Environnements** lorsqu&#39;il n&#39;y a aucun environnement dans le programme.
 
    ![](assets/no-environments.png)
 
@@ -64,7 +64,6 @@ Un utilisateur disposant des autorisations requises peut créer les types d’en
    >[!NOTE]
    >Si vous n’avez pas encore configuré votre pipeline hors production, l’écran *Aperçu* affiche la carte d’où vous pouvez créer votre pipeline hors production.
 
-
 ## Mise à jour de l’environnement {#updating-dev-environment}
 
 Les mises à jour des environnements Test et Production sont gérées automatiquement par Adobe.
@@ -72,11 +71,12 @@ Les mises à jour des environnements Test et Production sont gérées automatiqu
 Les mises à jour des environnements de développement sont gérées par les utilisateurs du programme. Lorsqu’un environnement n’exécute pas la dernière version d’AEM disponible pour le public, l’état de la carte Environnements sur l’écran d’accueil affiche **MISE À JOUR DISPONIBLE**.
 
 ![](assets/manage-environments2.png)
-)
 
-Lorsque cet état est affiché, l’option **Mettre à jour** est disponible dans le menu déroulant, à la fois dans la carte Environnements et dans le menu **Gérer** si vous cliquez sur **Détails** de la carte **ENVIRONNEMENTS.**
 
-![](assets/add-environment4.png)
+L’option **Mettre à jour** est disponible dans le menu déroulant de la carte **Environnements** .
+Cette option est également disponible à partir du bouton **Gérer** si vous cliquez sur **Détails** dans la carte **Environnements** .
+
+![](assets/update-environment2.png)
 
 Si vous sélectionnez cette option dans le menu déroulant, un gestionnaire de déploiement pourra mettre à jour le pipeline associé à cet environnement vers la dernière version, puis exécuter le pipeline.
 
@@ -86,10 +86,19 @@ Si le pipeline a déjà été mis à jour, l’utilisateur est invité à exécu
 
 L’utilisateur disposant des autorisations requises peut supprimer un environnement de développement.
 
-Delete option will be available from the dropdown menu, both on the **Environments** Card and the **Manage** menu if you click on Details from the **ENVIRONMENTS** card.
+L’option **Supprimer** est disponible dans le menu déroulant de la carte **Environnements** .
+Cette option est également disponible à partir du bouton **Gérer** si vous cliquez sur **Détails** dans la carte **Environnements** .
 
 ![](assets/deleting-environment1.png)
 
 >[!NOTE]
 Cette fonction n’est pas disponible pour l’environnement de production/étape défini dans un programme normal configuré à des fins de production. Cette fonction est toutefois disponible pour les environnements de production/d’étape dans un programme de sandbox.
+
+## Accès à la Console développeur {#accessing-developer-console}
+
+Sélectionnez Console **** développeur dans le menu déroulant de la carte **Environnements** .
+
+![](assets/dev-console1.png)
+
+Vous pouvez également sélectionner cette option à partir du bouton **Gérer** si vous cliquez sur **Détails** dans la carte **Environnements** .
 
