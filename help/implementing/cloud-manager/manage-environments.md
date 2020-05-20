@@ -2,9 +2,9 @@
 title: Gestion des environnements - Cloud Service
 description: Gestion des environnements - Cloud Service
 translation-type: tm+mt
-source-git-commit: 1b788b10ab8ea7c5e2aa0d628f10a42737752d34
+source-git-commit: a19ffdd0afa484343096cb09c47219e3fdb13fb7
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '594'
 ht-degree: 78%
 
 ---
@@ -47,7 +47,7 @@ Un utilisateur disposant des autorisations requises peut créer les types d’en
 
    ![](assets/no-environments.png)
 
-   >[!REMARQUE)
+   >[!NOTE]
    >L’option Environnement **** Ajoutersera désactivée en raison d’un manque d’autorisations ou de ce qui peut être contracté.
 
 1. La boîte de dialogue **Ajouter un environnement** s’affiche. L’utilisateur doit ajouter des détails tels que le **type d’environnement**, **nom de l’environnement** et la **description de l’environnement** (selon l’objectif de l’utilisateur lors de la création de l’environnement dans les limites de ce qui est disponible pour le client spécifique).
