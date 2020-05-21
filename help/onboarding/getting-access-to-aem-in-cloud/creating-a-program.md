@@ -38,7 +38,7 @@ Pour créer un programme de sandbox, procédez comme suit :
 
 1. Dans l’assistant de création de programme, sélectionnez **Configurer une démonstration**. L’utilisateur envoie le nom du programme avant de sélectionner **Créer**.
 
-   ![](assets/create-program-setupdemo.png)
+   ![](assets/create-sandbox.png)
 
 1. L’utilisateur voit la nouvelle carte de programme sandbox sur le landing page et peut la survoler pour sélectionner l’icône Cloud Manager et accéder à la page d’aperçu de Cloud Manager. La carte informe l&#39;utilisateur de l&#39;état de la configuration automatique du programme de sandbox nouvellement créé. L&#39;utilisateur verra la progression.
 
