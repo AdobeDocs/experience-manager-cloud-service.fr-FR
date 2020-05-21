@@ -2,10 +2,10 @@
 title: Programmes Sandbox - Service Cloud
 description: Programmes Sandbox - Service Cloud
 translation-type: tm+mt
-source-git-commit: 168b3d28a36e4ec5258b2d2f391af25c466be6c6
+source-git-commit: e25e22c5d61defb3402e51b97c1d5364465e1027
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 0%
+source-wordcount: '939'
+ht-degree: 1%
 
 ---
 
@@ -41,7 +41,7 @@ Les Programmes Sandbox ont les attributs suivants :
 
 Un assistant de création de programme vous permet de créer un Programme Sandbox.
 
-Pour savoir comment créer un Programme Sandbox, consultez [Création d’un Programme](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-demo-program)Sandbox.
+Pour savoir comment créer un Programme Sandbox, reportez-vous à la section.
 
 ### Création d’Environnements de sandbox {#creating-sandbox-environments}
 
@@ -51,7 +51,7 @@ Le jeu d&#39;environnements de la phase de production peut être ajouté manuell
 
 Pour savoir comment créer manuellement un environnement, voir [Ajout d’Environnements](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) pour plus d’informations.
 
-### Suppression d&#39;Environnements de sandbox  {#deleting-sandbox-environments}
+### Suppression d&#39;Environnements de sandbox {#deleting-sandbox-environments}
 
 L’utilisateur disposant des autorisations requises peut supprimer un ou plusieurs environnements de développement ou de production/étape.
 
@@ -87,9 +87,16 @@ Suivez les étapes ci-dessous pour mettre en veille prolongée manuellement vos 
 1. Accédez à la Console ****développeur.
 Consultez [Accès à la Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) développeur pour savoir comment accéder à la Console **** développeur à partir de la carte **Environnements** .
 
-1. Cliquez sur Mettre en veille prolongée, comme illustré dans la figure ci-dessous.
+1. Click **Hibernate**, as shown in the figure below:
 
    ![](assets/hibernate-1.png)
+
+   Ou,
+
+   Cliquez sur **Mettre en veille prolongée** dans la liste des Environnements, comme illustré dans la figure ci-dessous :
+
+   ![](assets/hibernate-1b.png)
+
 1. Cliquez sur **Mettre en veille prolongée** pour confirmer l’étape.
 
    ![](assets/hibernate-2.png)
@@ -97,14 +104,6 @@ Consultez [Accès à la Console](https://docs.adobe.com/content/help/en/experien
 1. Une fois l’hibernation terminée, vous verrez la notification complète du processus d’hibernation pour votre environnement dans l’écran Console **** développeur.
 
    ![](assets/hibernate-4.png)
-
-#### Accès à un Environnement mis en veille prolongée {#accessing-hibernated-environment}
-
-Lors de toute requête de navigateur à l’encontre de la couche d’auteur ou de publication d’un environnement en hibernation, l’utilisateur rencontre un landing page décrivant l’état en hibernation de l’environnement, comme illustré ci-dessous :
-
-Un utilisateur disposant de **Cloud Manager - Developer Role** peut cliquer sur le bouton Developer Console pour accéder à la console de développement et annuler la mise en veille prolongée de l’environnement. Vous trouverez des informations sur la définition des rôles dans la documentation de Cloud Manager.
-
-Si un utilisateur d’une organisation ne peut pas cliquer sur le bouton Console développeur pour accéder à la Console développeur, il est probable qu’il lui faille se voir attribuer le &quot;Rôle développeur de Cloud Manager&quot;.
 
 
 ### Déhibernation {#de-hibernation-introduction}
@@ -119,6 +118,13 @@ Consultez [Accès à la Console](https://docs.adobe.com/content/help/en/experien
 
    ![](assets/de-hibernation-img1.png)
 
+   Ou,
+
+   Cliquez sur **Déhiberner** dans la liste des **Environnements** , comme le montre la figure ci-dessous :
+
+   ![](assets/de-hibernate-1b.png)
+
+
 1. Cliquez sur **De Hibernate** pour confirmer l’étape.
 
    ![](assets/de-hibernation-img2.png)
@@ -131,15 +137,25 @@ Consultez [Accès à la Console](https://docs.adobe.com/content/help/en/experien
 
    ![](assets/de-hibernation-img4.png)
 
+#### Accès à un Environnement mis en veille prolongée {#accessing-hibernated-environment}
+
+Lors de toute requête de navigateur à l’encontre de la couche d’auteur ou de publication d’un environnement mis en veille prolongée, l’utilisateur rencontre un landing page décrivant l’état mis en veille prolongée de l’environnement, comme indiqué dans la figure ci-dessous :
+
+![](assets/de-hibernation-img5.png)
+
+
+Un utilisateur disposant du rôle **** Développeur de **Cloud Manager peut cliquer sur la Console** développeur pour accéder à la Console développeur et annuler la mise en veille prolongée de l’environnement.
+
+>[!NOTE]
+> La plupart des fonctionnalités de Cloud Manager nécessitent des autorisations spécifiques. Pour en savoir plus sur les rôles des utilisateurs qui régissent la disponibilité de fonctionnalités spécifiques, reportez-vous[à la section Ajout d’utilisateurs et de rôles](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
 
 ## Mises à jour d’AEM vers les Environnements Sandbox {#aem-updates-sandbox}
 
+Refer to [AEM version updates](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) for more details.
 
-Reportez-vous aux mises à jour [de la version](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) AEM pour plus d’informations.
+Un utilisateur peut appliquer manuellement les mises à jour AEM aux environnements d’un Programme Sandbox.
 
-Un utilisateur peut appliquer manuellement les mises à jour AEM aux environnements d’un Programme Sandbox (voir la figure ci-dessous). Vous pouvez effectuer cette opération lorsque l’état affiché est **MISE À JOUR DISPONIBLE**.
-
-L’option Mettre à jour est disponible dans le menu déroulant de la carte **Environnements** . Cette option est également disponible à partir du bouton **Gérer** si vous cliquez sur **Détails** dans la carte **Environnements** .
+Reportez-vous à [Mise à jour de l’Environnement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) pour savoir comment mettre à jour un environnement.
 
 >[!NOTE]
 >Un pipeline *de* non-production déployé dans l&#39;environnement de développement intéressant doit être configuré pour qu&#39;un pipeline de mise à jour manuelle puisse être lancé.
