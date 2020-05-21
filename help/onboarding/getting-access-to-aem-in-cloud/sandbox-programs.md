@@ -2,9 +2,9 @@
 title: Programmes Sandbox - Service Cloud
 description: Programmes Sandbox - Service Cloud
 translation-type: tm+mt
-source-git-commit: e7cad0cd67f04eac5627e72339ccb1c4f54cc8c8
+source-git-commit: 168b3d28a36e4ec5258b2d2f391af25c466be6c6
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Un sandbox est généralement créé pour servir à la formation, à l’exécut
 
 Les programmes de sandbox comprennent les sites et les ressources et sont automatiquement renseignés avec une branche Git qui comprend un exemple de code, un environnement de développement et un pipeline hors production.
 
-Pour plus d&#39;informations sur les types de programme, consultez [Présentation des Programmes et des types](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html)de Programme.
+Consultez la section [Présentation des Programmes et des types](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) de Programme pour en savoir plus sur les types de Programme.
 
 ### Attributs des Programmes Sandbox {#attributes-sandbox}
 
@@ -86,9 +86,17 @@ Suivez les étapes ci-dessous pour mettre en veille prolongée manuellement vos 
 
 1. Accédez à la Console ****développeur.
 Consultez [Accès à la Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) développeur pour savoir comment accéder à la Console **** développeur à partir de la carte **Environnements** .
-1. Cliquez sur Mettre en veille prolongée, comme illustré dans la figure ci-dessous :
+
+1. Cliquez sur Mettre en veille prolongée, comme illustré dans la figure ci-dessous.
+
+   ![](assets/hibernate-1.png)
 1. Cliquez sur **Mettre en veille prolongée** pour confirmer l’étape.
-1. Lorsque l’hibernation est réussie, l’écran suivant s’affiche.
+
+   ![](assets/hibernate-2.png)
+
+1. Une fois l’hibernation terminée, vous verrez la notification complète du processus d’hibernation pour votre environnement dans l’écran Console **** développeur.
+
+   ![](assets/hibernate-4.png)
 
 #### Accès à un Environnement mis en veille prolongée {#accessing-hibernated-environment}
 
