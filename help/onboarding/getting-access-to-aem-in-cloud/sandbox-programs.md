@@ -2,9 +2,9 @@
 title: Programmes Sandbox - Service Cloud
 description: Programmes Sandbox - Service Cloud
 translation-type: tm+mt
-source-git-commit: e25e22c5d61defb3402e51b97c1d5364465e1027
+source-git-commit: 17e0c4fb87e67b369cf465b65df973a170fb8ed6
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '1045'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Un programme Sandbox est l’un des deux types de programmes disponibles dans le
 
 Un sandbox est généralement créé pour servir à la formation, à l’exécution de démonstrations, à l’activation ou au BAT de concept (POC). Ils ne sont pas destinés à transporter du trafic réel.
 
-Les programmes de sandbox comprennent les sites et les ressources et sont automatiquement renseignés avec une branche Git qui comprend un exemple de code, un environnement de développement et un pipeline hors production.
+Les programmes de sandbox comprennent les sites et les ressources et sont automatiquement renseignés avec un référentiel Git, un environnement de développement et un pipeline de non-production.  Le référentiel Git est renseigné avec un exemple de projet basé sur l’archétype du projet AEM.
 
 Consultez la section [Présentation des Programmes et des types](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) de Programme pour en savoir plus sur les types de Programme.
 
@@ -41,7 +41,7 @@ Les Programmes Sandbox ont les attributs suivants :
 
 Un assistant de création de programme vous permet de créer un Programme Sandbox.
 
-Pour savoir comment créer un Programme Sandbox, reportez-vous à la section.
+Pour savoir comment créer un Programme Sandbox, consultez [Création d’un Programme](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-sandbox-program) Sandbox pour plus d’informations.
 
 ### Création d’Environnements de sandbox {#creating-sandbox-environments}
 
@@ -74,6 +74,9 @@ L’hibernation est classée comme suit :
 * **Les environnements de Programme de sandbox automatiques** sont automatiquement mis en veille prolongée après huit heures d’inactivité, ce qui signifie que ni l’auteur ni les services de publication ne reçoivent de demande.
 
 * **Manuel**: En tant qu’utilisateur, vous pouvez mettre en veille prolongée manuellement un environnement de Programme Sandbox, bien qu’il n’y ait aucune obligation de le faire, car l’hibernation se produit automatiquement après une certaine période (huit heures) d’inactivité.
+
+>[!CAUTION]
+>Dans la dernière version, la création de liens vers la Console développeur de Cloud Manager ne vous permet pas de mettre en veille prolongée l’environnement de Programme Sandbox.
 
 #### Utilisation de la mise en veille prolongée manuelle {#using-manual-hibernation}
 
@@ -149,6 +152,17 @@ Un utilisateur disposant du rôle **** Développeur de **Cloud Manager peut cliq
 >[!NOTE]
 > La plupart des fonctionnalités de Cloud Manager nécessitent des autorisations spécifiques. Pour en savoir plus sur les rôles des utilisateurs qui régissent la disponibilité de fonctionnalités spécifiques, reportez-vous[à la section Ajout d’utilisateurs et de rôles](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
 
+#### Points importants {#important-considerations}
+
+Peu de considérations clés liées aux environnements en hibernation et en hibernation sont les suivantes :
+
+* Un utilisateur peut utiliser un pipeline pour déployer du code personnalisé sur des environnements mis en veille prolongée. L’environnement reste en hibernation et le nouveau code apparaît dans l’environnement une fois déshiberné.
+
+* Les mises à niveau d’AEM peuvent être appliquées aux environnements mis en veille prolongée, que les clients peuvent déclencher manuellement à partir de Cloud Manager. L’environnement reste en hibernation et la nouvelle version apparaît dans l’environnement une fois l’hibernation terminée.
+
+>[!NOTE]
+>Actuellement, Cloud Manager n’indique pas si un environnement est mis en veille prolongée.
+
 ## Mises à jour d’AEM vers les Environnements Sandbox {#aem-updates-sandbox}
 
 Refer to [AEM version updates](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) for more details.
@@ -158,13 +172,9 @@ Un utilisateur peut appliquer manuellement les mises à jour AEM aux environneme
 Reportez-vous à [Mise à jour de l’Environnement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) pour savoir comment mettre à jour un environnement.
 
 >[!NOTE]
->Un pipeline *de* non-production déployé dans l&#39;environnement de développement intéressant doit être configuré pour qu&#39;un pipeline de mise à jour manuelle puisse être lancé.
+>* Une mise à jour manuelle ne peut être exécutée que si l&#39;environnement ciblé dispose d&#39;un pipeline correctement configuré.
+>* Une mise à jour manuelle de *Production* ou de l’environnement *Stage* met automatiquement à jour l’autre. Le jeu d’environnements Production+Phase doit se trouver dans la même version d’AEM.
 
->[!NOTE]
->Un pipeline ** de production doit être configuré pour qu&#39;un pipeline de mise à jour manuelle vers l&#39;environnement Production+Phase soit lancé.
-
->[!NOTE]
->La mise à jour manuelle de *Production* ou de l&#39;environnement *Stage* met automatiquement à jour l&#39;autre. Le jeu d’environnements Production+Phase doit se trouver dans la même version d’AEM.
 
 
 
