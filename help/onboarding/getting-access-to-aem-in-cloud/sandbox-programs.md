@@ -4,7 +4,7 @@ description: Programmes Sandbox - Service Cloud
 translation-type: tm+mt
 source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1228'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Un programme Sandbox est l’un des deux types de programmes disponibles dans le service AEM Cloud, l’autre étant un programme régulier.
 
-Un sandbox est généralement créé pour servir à la formation, à l’exécution de démonstrations, à l’activation ou au BAT de concept (POC). Ils ne sont pas destinés à transporter du trafic réel. Ils ne sont pas soumis aux engagements [de service](https://www.adobe.com/legal/service-commitments.html)AEM en tant que service Cloud.
+Un sandbox est généralement créé pour servir à la formation, à l’exécution de démonstrations, à l’activation ou au BAT de concept (POC). Ils ne sont pas destinés à transporter du trafic réel. Ils ne sont pas soumis aux engagements [de service d’](https://www.adobe.com/legal/service-commitments.html)AEM en tant que cloud.
 
 Les environnements créés dans un Sandbox ne sont pas configurés pour la mise à l’échelle automatique. Par conséquent, ils ne conviennent pas aux tests de performances ou de charge.
 
