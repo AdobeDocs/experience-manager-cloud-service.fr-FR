@@ -2,9 +2,9 @@
 title: Programmes Sandbox - Service Cloud
 description: Programmes Sandbox - Service Cloud
 translation-type: tm+mt
-source-git-commit: 17e0c4fb87e67b369cf465b65df973a170fb8ed6
+source-git-commit: 4539744f8574bfa925d40cf685d02e4bc7ad4416
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1192'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ Pour savoir comment créer un Programme Sandbox, consultez [Création d’un Pro
 
 ### Création d’Environnements de sandbox {#creating-sandbox-environments}
 
-Les Programmes Sandbox reçoivent un environnement de développement au moment de la création du programme de manière automatique. L’environnement de développement comprend par défaut un niveau d’auteur et de publication.
+Les Programmes Sandbox sont livrés à un environnement de développement au moment de la création du programme de manière automatique. L’environnement de développement comprend par défaut un niveau d’auteur et de publication.
 
 Le jeu d&#39;environnements de la phase de production peut être ajouté manuellement au Programme Sandbox lorsque l&#39;utilisateur est prêt à configurer un pipeline de production.
 
@@ -71,12 +71,12 @@ La mise en veille prolongée peut se produire automatiquement ou manuellement. L
 
 L’hibernation est classée comme suit :
 
-* **Les environnements de Programme de sandbox automatiques** sont automatiquement mis en veille prolongée après huit heures d’inactivité, ce qui signifie que ni l’auteur ni les services de publication ne reçoivent de demande.
+* **Les environnements de Programme de sandbox automatiques** sont automatiquement mis en veille prolongée après huit heures d’inactivité, ce qui signifie que ni les services d’auteur ni de publication ne reçoivent de demandes.
 
 * **Manuel**: En tant qu’utilisateur, vous pouvez mettre en veille prolongée manuellement un environnement de Programme Sandbox, bien qu’il n’y ait aucune obligation de le faire, car l’hibernation se produit automatiquement après une certaine période (huit heures) d’inactivité.
 
 >[!CAUTION]
->Dans la dernière version, la création de liens vers la Console développeur de Cloud Manager ne vous permet pas de mettre en veille prolongée l’environnement de Programme Sandbox.
+>Dans la dernière version, la création de liens vers la Console développeur directement à partir de Cloud Manager ne vous permet pas d’hiberner un environnement de Programme Sandbox. La solution consiste à ajouter le modèle suivant à la fin de l’URL `#release-cm-p1234-e5678 where 1234` 1234 correspond à votre ID *de* Programme et 5678 à votre ID *d’* Environnement.
 
 #### Utilisation de la mise en veille prolongée manuelle {#using-manual-hibernation}
 
@@ -89,6 +89,8 @@ Suivez les étapes ci-dessous pour mettre en veille prolongée manuellement vos 
 
 1. Accédez à la Console ****développeur.
 Consultez [Accès à la Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) développeur pour savoir comment accéder à la Console **** développeur à partir de la carte **Environnements** .
+   >[!NOTE]
+   >la liaison directe à la Console développeur depuis Cloud Manager ne vous permet pas d’hiberner un environnement de Programme Sandbox. La solution consiste à ajouter le modèle suivant à la fin de l’URL `#release-cm-p1234-e5678 where 1234` 1234 correspond à votre ID *de* Programme et 5678 à votre ID *d’* Environnement.
 
 1. Click **Hibernate**, as shown in the figure below:
 
@@ -96,7 +98,7 @@ Consultez [Accès à la Console](https://docs.adobe.com/content/help/en/experien
 
    Ou,
 
-   Cliquez sur **Mettre en veille prolongée** dans la liste des Environnements, comme illustré dans la figure ci-dessous :
+   Cliquez sur le lien **Environnements** en haut à gauche pour vue de la liste des environnements, puis cliquez sur **Mettre en veille prolongée**, comme illustré dans la figure ci-dessous :
 
    ![](assets/hibernate-1b.png)
 
@@ -114,6 +116,9 @@ Consultez [Accès à la Console](https://docs.adobe.com/content/help/en/experien
 1. Accédez à la Console ****développeur.
 Consultez [Accès à la Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) développeur pour savoir comment accéder à la Console **** développeur à partir de la carte **Environnements** .
 
+   >[!NOTE]
+   >Vous pouvez également accéder à la Console **** développeur pour annuler la mise en veille prolongée en essayant d’accéder au service d’auteur ou de publication d’un environnement déjà mis en veille prolongée ; dans ce cas, un landing page s’affiche avec un lien vers la Console développeur. Voir la section Accès à un Environnement mis en veille prolongée ci-dessous.
+
    >[!IMPORTANT]
    >L’accès à la Console développeur est défini par le rôle **Développeur de** Cloud Manager dans la Console **d’** administration. Un utilisateur disposant d’une autorisation de rôle de développeur peut désactiver la mise en veille prolongée d’un environnement de Programme Sandbox.
 
@@ -123,7 +128,7 @@ Consultez [Accès à la Console](https://docs.adobe.com/content/help/en/experien
 
    Ou,
 
-   Cliquez sur **Déhiberner** dans la liste des **Environnements** , comme le montre la figure ci-dessous :
+   Cliquez sur le lien **Environnements** en haut à gauche pour vue de la liste des environnements, puis cliquez sur **Déhibernate**, comme illustré dans la figure ci-dessous.
 
    ![](assets/de-hibernate-1b.png)
 
@@ -152,7 +157,7 @@ Un utilisateur disposant du rôle **** Développeur de **Cloud Manager peut cliq
 >[!NOTE]
 > La plupart des fonctionnalités de Cloud Manager nécessitent des autorisations spécifiques. Pour en savoir plus sur les rôles des utilisateurs qui régissent la disponibilité de fonctionnalités spécifiques, reportez-vous[à la section Ajout d’utilisateurs et de rôles](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
 
-#### Points importants {#important-considerations}
+### Points importants {#important-considerations}
 
 Peu de considérations clés liées aux environnements en hibernation et en hibernation sont les suivantes :
 
