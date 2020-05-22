@@ -2,10 +2,10 @@
 title: Notes de mise à jour d’Adobe Experience Manager as a Cloud Service version 2020.5.0
 description: Notes de mise à jour d’Experience Manager version 2020.5.0
 translation-type: tm+mt
-source-git-commit: 94a732f56929ad4af23855152e258f82ad61ee2c
+source-git-commit: 8fe1f6f1c7c6a608ee1ca42836ee91e83487428d
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 29%
+source-wordcount: '374'
+ht-degree: 18%
 
 ---
 
@@ -14,7 +14,22 @@ ht-degree: 29%
 
 La section suivante décrit les notes de mise à jour générales d’Experience Manager Sites as a Cloud Service 2020.5.0.
 
-## Cloud Manager {#cloud-manager}
+## Date de publication {#release-date}
+
+The release date for [!DNL Experience Manager] as a Cloud Service 2020.5.0 is May 07, 2020.
+
+## What&#39;s New in AEM Sites {#aem-sites}
+
+Suivez cette section pour en savoir plus sur les nouveautés et les mises à jour des sites AEM dans AEM as a Cloud Service Release 2020.5.0.
+
+* Des informations détaillées sur la tâche sont désormais disponibles après le traitement des déplacements et déploiements de pages en vrac en tant que tâches asynchrones.
+* Lors de la copie/collage d’une arborescence de page, vous pouvez désormais choisir entre coller uniquement la page racine ou les sous-pages de l’arborescence.
+* Les fragments d’expérience AEM exportés vers les espaces de travail Adobe Cible apparaissent désormais sous la forme de types d’offre uniques et de sources d’offre dans Cible.
+* MSM : l’utilisation du déclencheur de *publication* permet désormais d’annuler les événements de suppression des composants de la source de copie dynamique, c’est-à-dire la suppression des composants d’une copie dynamique qui ont été supprimés de la source de copie dynamique.
+* MSM - Les composants de la copie dynamique sont maintenant renommés en *_msm_move* après le déploiement du même composant à partir de la source de la copie dynamique.
+
+
+## Nouveautés de Cloud Manager {#cloud-manager}
 
 Suivez cette section pour en savoir plus sur les nouveautés et les mises à jour de Cloud Manager dans AEM as a Cloud Service 2020.5.0.
 
