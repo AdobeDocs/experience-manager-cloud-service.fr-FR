@@ -1,11 +1,11 @@
 ---
 title: Diffusion de contenu
 description: 'Diffusion de contenu '
-translation-type: ht
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
-workflow-type: ht
-source-wordcount: '2264'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: a07de761dd9aedb3469f256e08ecf05b2102889d
+workflow-type: tm+mt
+source-wordcount: '2268'
+ht-degree: 99%
 
 ---
 
@@ -55,7 +55,7 @@ Vous trouverez ci-dessous une matrice de décision pour comparer les deux option
 | **Conditions préalables** | Aucune | Réseau de diffusion de contenu existant onéreux à remplacer. Doit démontrer un test de charge réussi avant sa mise en opération. |
 | **Expertise dans le réseau de diffusion de contenu** | Aucune | Nécessite au moins un ingénieur à temps partiel ayant des connaissances approfondies du réseau de diffusion de contenu et capable de configurer le réseau de diffusion de contenu du client. |
 | **Sécurité** | Géré par Adobe. | Géré par Adobe (et éventuellement par le client sur son propre réseau de diffusion de contenu). |
-| **Performances** | Optimisé par Adobe. | Bénéficiera de certaines fonctionnalités du réseau de diffusion de contenu AEM, mais potentiellement un faible gain en performances en raison du saut supplémentaire. **Remarque** : Sauts du réseau de diffusion de contenu client à un réseau de diffusion de contenu Fastly probablement efficaces. |
+| **Performances** | Optimisé par Adobe. | Bénéficiera de certaines fonctionnalités du réseau de diffusion de contenu AEM, mais potentiellement un faible gain en performances en raison du saut supplémentaire. **Remarque**: Des sauts entre le CDN du client et le CDN prêt à l’emploi d’Adobe (susceptibles d’être efficaces). |
 | **Mise en cache** | Prend en charge les en-têtes de cache appliqués au Dispatcher. | Prend en charge les en-têtes de cache appliqués au Dispatcher. |
 | **Fonctionnalités de compression d’images et de vidéos** | Peut fonctionner avec Adobe Dynamic Media. | Peut fonctionner avec Adobe Dynamic Media ou avec la solution d’image/vidéo du réseau de diffusion de contenu géré par le client. |
 
@@ -68,7 +68,7 @@ La préparation de la diffusion de contenu à l’aide du réseau de diffusion d
 1. Vous devez indiquer au service clientèle les informations suivantes :
    * Quel domaine personnalisé doit être associé à un environnement donné, tel que défini par l’ID de programme et l’ID d’environnement.
    * Si une liste blanche d’adresses IP est nécessaire pour limiter le trafic à destination d’un environnement donné.
-1. Le service clientèle coordonnera alors avec vous le timing d’un enregistrement DNS CNAME, en pointant son nom de domaine complet vers `adobe-aem.map.fastly.net`.
+1. Le service clientèle coordonnera alors avec vous le timing d’un enregistrement DNS CNAME, en pointant son nom de domaine complet vers `cdn.adobeaemcloud.com`.
 1. Vous serez averti lorsque les certificats SSL arriveront à expiration afin que vous puissiez soumettre à nouveau les nouveaux certificats SSL.
 
 **Limitation du trafic**
