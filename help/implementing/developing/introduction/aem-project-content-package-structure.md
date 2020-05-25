@@ -1,19 +1,22 @@
 ---
-title: Structure du projet AEM
-description: Découvrez comment définir des structures de packages pour le déploiement vers le service Adobe Experience Manager Cloud.
+title: Structure de projet AEM
+description: Découvrez comment définir des structures de package en vue d’un déploiement sur Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 94182b95cb00923d3e055cb3c2e1d943db70c7a9
+source-git-commit: 9a8d47db7f8ab90748d24c646bd5a8844cf24448
+workflow-type: tm+mt
+source-wordcount: '2352'
+ht-degree: 94%
 
 ---
 
 
-# Structure du projet AEM
+# Structure de projet AEM
 
 >[!TIP]
 >
 >L’[archétype de projet AEM](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) et le [plug-in Maven FileVault Content](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html) font partie des thèmes abordés dans cet article. Vous êtes donc invité à vous familiariser avec ces concepts.
 
-Cet article décrit les modifications requises pour que les projets Maven Adobe Experience Manager soient compatibles avec AEM Cloud Service, en veillant à ce qu’ils respectent la division entre contenu modifiable et non modifiable, à ce que les dépendances requises soient établies pour créer des déploiements déterministes non conflictuels et à ce qu’ils soient regroupés dans une structure déployable.
+Cet article décrit les modifications requises pour que les projets Maven Adobe Experience Manager soient compatibles avec AEM Cloud Service, en veillant à ce qu’ils respectent la division entre contenu modifiable et non modifiable, à ce que les dépendances requises soient établies pour créer des déploiements déterministes non conflictuels et à ce qu’ils soient mis en package dans une structure déployable.
 
 Les déploiements d’applications AEM doivent être constitués d’un seul module AEM. Ce module doit, à son tour, contenir des sous-modules qui comprennent tout ce dont l’application a besoin pour fonctionner, y compris le code, la configuration et tout contenu de base nécessaire.
 
@@ -29,7 +32,7 @@ La structure de module décrite dans ce document est compatible avec les déploi
 
 `/apps` et `/libs` sont considérées comme des zones **non modifiables** d’AEM, car elles ne peuvent faire l’objet d’aucune modification (création, mise à jour ou suppression) après le démarrage d’AEM (c’est-à-dire lors de l’exécution). Toute tentative de modification d’une zone de ce type au moment de l’exécution sera vouée à l’échec.
 
-Everything else in the repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc. peuvent, en revanche, être **modifiées** au moment de l’exécution.
+Toutes les autres zones du référentiel (`/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc.) peuvent, en revanche, être **modifiées** au moment de l’exécution.
 
 >[!WARNING]
 >
@@ -37,13 +40,13 @@ Everything else in the repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:in
 
 ## Structure de module recommandée {#recommended-package-structure}
 
-![Structure de module du projet Experience Manager](assets/content-package-organization.png)
+![Structure de package de projet Experience Manager](assets/content-package-organization.png)
 
 Ce diagramme présente un aperçu de la structure de projet recommandée et des artefacts de déploiement du module.
 
 La structure de déploiement d’application recommandée est la suivante :
 
-+ The `ui.apps` package, or Code Package, contains all the code to be deployed and only deploys to `/apps`. Voici un aperçu des éléments courants du module `ui.apps` :
++ Le module `ui.apps`, ou module de code, contient tout le code à déployer. Il est déployé uniquement sur `/apps`. Voici un aperçu des éléments courants du module `ui.apps` :
    + Bundles OSGi
       + `/apps/my-app/install`
    + Configurations OSGi
@@ -58,9 +61,9 @@ La structure de déploiement d’application recommandée est la suivante :
       + `/apps/settings`
    + Listes de contrôle d’accès (autorisations)
       + Tout `rep:policy` pour tout chemin d’accès sous `/apps`
-   + Instructions de configuration OSGi Repo Init (et scripts associés)
-      + [Repo Init](#repo-init) est la méthode recommandée pour déployer du contenu (mutable) qui fait logiquement partie de l’application AEM. Repo Init doit être utilisé pour définir :
-         + Structures de contenu de référence
+   + Instructions de configuration OSGi de Repo Init (et scripts associés)
+      + [Repo Init](#repo-init) est la méthode recommandée pour déployer du contenu (mutable) faisant logiquement partie de l’application AEM. Repo Init doit être utilisé pour définir les aspects suivants :
+         + Structures de contenu de base
             + `/conf/my-app`
             + `/content/my-app`
             + `/content/dam/my-app`
@@ -68,11 +71,11 @@ La structure de déploiement d’application recommandée est la suivante :
          + Utilisateurs du service
          + Groupes
          + Listes de contrôle d’accès (autorisations)
-            + N’importe quel `rep:policy` chemin (mutant ou non modifiable)
-+ The `ui.content` package, or Content Package, contains all content and configuration. Le package de contenu contient tout ce qui ne se trouve pas dans le `ui.apps` package, ou en d’autres termes, tout ce qui ne se trouve pas dans `/apps` ou `/oak:index`. Voici un aperçu des éléments courants du module `ui.content` :
+            + `rep:policy` ou chemin quelconque (modifiable ou non)
++ Le module `ui.content`, ou module de contenu, comprend l’ensemble du contenu et de la configuration. Le package de contenu contient tout ce qui ne se trouve pas dans le package `ui.apps`, ou en d’autres termes, tout ce qui ne se trouve pas dans `/apps` ou `/oak:index`. Voici un aperçu des éléments courants du module `ui.content` :
    + Configurations basées sur le contexte
       + `/conf`
-   + Structures de contenu requises et complexes (c.-à-d. Elargissement de contenu basé sur les structures de contenu de ligne de base définies dans l&#39;initialisation de redirection et qui s&#39;étend au-delà de ces structures.
+   + Structures de contenu requises et complexes (c.-à-d., déploiement de contenu basé sur et étendant les structures de contenu de base passées définies dans Repo Init)
       + `/content`, `/content/dam`, etc.
    + Taxonomies du balisage régies
       + `/content/cq:tags`
@@ -82,7 +85,7 @@ La structure de déploiement d’application recommandée est la suivante :
 
    Les modules sont désormais inclus à l’aide de la [configuration intégrée du plug-in FileVault Package Maven](#embeddeds) au lieu de la configuration `<subPackages>`.
 
-   Pour les déploiements Experience Manager complexes, il peut être souhaitable de créer plusieurs projets/modules `ui.apps` et `ui.content` représentant des clients ou des sites spécifiques dans AEM. Dans ce cas, assurez-vous que la division entre contenu modifiable et non modifiable est respectée, et que les modules de contenu requis sont ajoutés sous la forme de sous-modules dans le module conteneur `all`.
+   Pour les déploiements Experience Manager complexes, il peut être souhaitable de créer plusieurs projets/packages `ui.apps` et `ui.content` représentant des clients ou des sites spécifiques dans AEM. Dans ce cas, assurez-vous que la division entre contenu modifiable et non modifiable est respectée, et que les modules de contenu requis sont ajoutés sous la forme de sous-modules dans le module conteneur `all`.
 
    Une structure complexe d’un module de contenu de déploiement peut, par exemple, se présenter comme suit :
 
@@ -115,34 +118,34 @@ Par défaut, Adobe Cloud Manager collecte tous les modules générés par la ver
 >
 >Pour obtenir un fragment de code complet, reportez-vous à la section [Fragments de code XML POM](#pom-xml-snippets) ci-dessous.
 
-## Repo Init{#repo-init}
+## Repo Init{#repo-init}
 
-Repo Init fournit des instructions, ou scripts, qui définissent les structures JCR, allant des structures de noeud courantes comme les arborescences de dossiers, aux utilisateurs, aux utilisateurs de service, aux groupes et à la définition d’ACL.
+Repo Init fournit des instructions, ou scripts, qui définissent les structures JCR, allant des structures de nœud courantes comme les arborescences de dossiers, aux utilisateurs, aux utilisateurs de service, aux groupes et à la définition d’ACL.
 
-Les principaux avantages de Repo Init sont qu&#39;ils disposent d&#39;autorisations implicites pour exécuter toutes les actions définies par leurs scripts et sont appelés au début du cycle de vie du déploiement pour s&#39;assurer que toutes les structures JCR requises existent au moment de l&#39;exécution du code temporel.
+Les principaux avantages de Repo Init sont que ce dernier comporte des autorisations implicites pour exécuter toutes les actions définies par ses scripts et qu’il est appelé au début du cycle de vie du déploiement pour s’assurer que toutes les structures JCR requises existent au moment de l’exécution du code temporel.
 
-Bien que les scripts Repo Init vivent eux-mêmes dans le `ui.apps` projet en tant que scripts, ils peuvent et doivent être utilisés pour définir les structures mutables suivantes :
+Bien que les scripts Repo Init résident eux-mêmes dans le projet `ui.apps` en tant que scripts, ils peuvent et doivent être utilisés pour définir les structures mutables suivantes :
 
-+ Structures de contenu de référence
-   + Examples: `/content/my-app`, `/content/dam/my-app`, `/conf/my-app/settings`
++ Structures de contenu de base
+   + Exemples : `/content/my-app`, `/content/dam/my-app`, `/conf/my-app/settings`
 + Utilisateurs du service
 + Utilisateurs
 + Groupes
 + Listes ACL
 
-Les scripts Repo Init sont stockés en tant qu’ `scripts` entrées des configurations d’usine `RepositoryInitializer` OSGi. Ils peuvent donc être implicitement ciblés par le mode d’exécution, ce qui permet d’établir des différences entre les scripts Repo Init d’AEM Author et d’AEM Publish Services, voire entre les scripts Envs (Dev, Stage et Prod).
+Repo Init scripts are stored as `scripts` entries of `RepositoryInitializer` OSGi factory configurations, and thus, can be implicitly targeted by runmode, allowing for differences between AEM Author and AEM Publish Services&#39; Repo Init scripts, or even between Envs (Dev, Stage and Prod).
 
-Notez que lors de la définition d’utilisateurs et de groupes, seuls les groupes sont considérés comme faisant partie de l’application et qu’ils font partie intégrante de sa fonction doivent être définis ici. Les utilisateurs et groupes d’organisation doivent toujours être définis au moment de l’exécution dans AEM ; par exemple, si un flux de travail personnalisé affecte du travail à un groupe nommé, ce groupe doit être défini via Repo Init dans l’application AEM. Toutefois, si le regroupement est simplement organisationnel, comme &quot;Wendy&#39;s Team&quot; et &quot;Sean&#39;s Team&quot;, il est préférable de les définir et de les gérer au moment de l’exécution dans AEM.
-
->[!TIP]
->
->Les scripts Repo Init *doivent* être définis dans le `scripts` champ intégré et la `references` configuration ne fonctionne pas.
-
-Le vocabulaire complet des scripts Repo Init est disponible dans la documentation [d&#39;](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)Apache Sling Repo Init.
+Notez que lors de la définition d’utilisateurs et de groupes, seuls les groupes considérés comme faisant partie de l’application, et essentiels à son fonctionnement, doivent être définis ici. Dans les organisations, les utilisateurs et les groupes doivent toujours être définis au moment de l’exécution dans AEM ; par exemple, si un workflow personnalisé affecte du travail à un groupe nommé, ce groupe doit être défini via Repo Init dans l’application AEM. Toutefois, si le regroupement est simplement organisationnel, comme « Équipe de Jean » et « Équipe de Valérie », le groupe sera défini et géré plus efficacement lors de l’exécution dans AEM.
 
 >[!TIP]
 >
->See the [Repo Init Snippets](#snippet-repo-init) section below for a complete snippet.
+>Les scripts Repo Init *doivent* être définis dans le champ `scripts` intégré et la configuration `references` ne fonctionnera pas.
+
+Le vocabulaire complet des scripts Repo Init est disponible dans la [documentation d’Apache Sling Repo Init](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language).
+
+>[!TIP]
+>
+>Pour obtenir un fragment de code complet, reportez-vous à la section [Fragments de code Repo Init](#snippet-repo-init) ci-dessous.
 
 ## Module de structure du référentiel {#repository-structure-package}
 
@@ -188,8 +191,8 @@ Analyse de cette structure de dossiers :
 + Le dossier de troisième niveau doit être
    `application` ou `content`
    + Le dossier `application` contient des modules de code.
-   + Le dossier `content` comprend des modules de contenu.
-Ce nom de dossier doit correspondre aux [types](#package-types) des modules qu’il contient.
+   + The `content` folder holds content packages
+This folder name must correspond to the [package types](#package-types) of the packages it contains.
 + Le dossier de quatrième niveau contient les sous-modules. Il doit s’agir de l’un des dossiers suivants :
    + `install` pour effectuer une installation sur AEM Author **et** AEM Publish
    + `install.author` pour effectuer une installation **uniquement** sur AEM Author
@@ -220,7 +223,7 @@ Il vous suffit d’ajouter les entrées `<filter root="/apps/<my-app>-packages"/
 
 ## Incorporation de modules tiers {#embedding-3rd-party-packages}
 
-Tous les modules doivent être disponibles via le [référentiel d’artefacts Maven public d’Adobe](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) ou un référentiel d’artefacts Maven tiers accessible au public pouvant être référencé.
+All packages must be available via the [Adobe&#39;s public Maven artifact repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) or an accessible public, referenceable 3rd party Maven artifact repository.
 
 Si les modules tiers se trouvent dans le **référentiel d’artefacts Maven public d’Adobe**, aucune configuration supplémentaire n’est nécessaire pour qu’Adobe Cloud Manager puisse résoudre les artefacts.
 
@@ -335,7 +338,7 @@ Dans le fichier `ui.content/pom.xml`, la directive de configuration de version `
 
 ### Marquage de modules en vue d’un déploiement par Adobe Cloud Manager {#cloud-manager-target}
 
-Dans chaque projet générant un module, **à l’exception** du projet conteneur (`all`), ajoutez `<cloudManagerTarget>none</cloudManagerTarget>` à la configuration `<properties>` de la déclaration du plug-in `filevault-package-maven-plugin` pour vous assurer que le déploiement n’est **pas** effectué par Adobe Cloud Manager. Le module conteneur (`all`) doit être le module unique déployé via Cloud Manager qui, à son tour, incorpore tous les modules de code et de contenu requis.
+Dans chaque projet générant un module, **à l’exception** du projet conteneur (`all`), ajoutez `<cloudManagerTarget>none</cloudManagerTarget>` à la configuration `<properties>` de la déclaration du plug-in `filevault-package-maven-plugin` pour vous assurer que le déploiement n’est **pas** effectué par Adobe Cloud Manager. The container (`all`) package should be the singular package deployed via Cloud Manager, which in turn embeds all required code and content packages.
 
 ```xml
 ...
@@ -355,11 +358,11 @@ Dans chaque projet générant un module, **à l’exception** du projet conteneu
     ...
 ```
 
-### Repo Init{#snippet-repo-init}
+### Repo Init{#snippet-repo-init}
 
-Les scripts Repo Init qui contiennent les scripts Repo Init sont définis dans la configuration d’usine OSGi via la `RepositoryInitializer` `scripts` propriété. Notez que puisque ces scripts sont définis dans les configurations OSGi, ils peuvent être facilement mis en plage par le mode d’exécution à l’aide de la sémantique habituelle des `../config.<runmode>` dossiers.
+Les scripts Repo Init sont définis dans la configuration d’usine OSGi `RepositoryInitializer` via la propriété `scripts`. Puisque ces scripts sont définis dans les configurations OSGi, ils peuvent être facilement définis par le mode d’exécution à l’aide de la sémantique de dossier `../config.<runmode>` habituelle.
 
-Notez que, comme les scripts sont généralement des déclarations multilignes, il est plus facile de les définir dans le `.config` fichier que dans le `sling:OsgiConfig` format des bases XML.
+Parce que les scripts sont généralement des déclarations multilignes, il est plus facile de les définir dans le fichier `.config` que dans le format `sling:OsgiConfig` des bases XML.
 
 `/apps/my-app/config.author/org.apache.sling.jcr.repoinit.RepositoryInitializer-author.config`
 
@@ -375,7 +378,7 @@ scripts=["
 "]
 ```
 
-La propriété `scripts` OSGi contient des directives définies par le langage [Repo Init d&#39;](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)Apache Sling.
+La propriété OSGi `scripts` contient des directives définies par le [langage Repo Init d’Apache Sling](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language).
 
 ### Module de structure du référentiel {#xml-repository-structure-package}
 
@@ -487,7 +490,7 @@ Si plusieurs `/apps/*-packages` sont utilisés dans les cibles incorporées, ils
 ### Référentiels Maven tiers {#xml-3rd-party-maven-repositories}
 
 >[!WARNING]
-> L&#39;ajout d&#39;autres référentiels Maven peut allonger le temps de création de maven, car d&#39;autres référentiels Maven seront contrôlés pour détecter les dépendances.
+> L&#39;ajout d&#39;autres référentiels Maven peut allonger les délais de création de maven, car d&#39;autres référentiels Maven seront contrôlés pour vérifier s&#39;ils sont dépendants.
 
 Dans le fichier `pom.xml` du projet Reactor, ajoutez toute directive de référentiel Maven public tierce qui s’avère nécessaire. La configuration `<repository>` complète doit être disponible auprès du fournisseur de référentiels tiers.
 
