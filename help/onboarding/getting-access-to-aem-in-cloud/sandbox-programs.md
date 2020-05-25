@@ -4,7 +4,7 @@ description: Programmes Sandbox - Service Cloud
 translation-type: tm+mt
 source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1276'
 ht-degree: 1%
 
 ---
@@ -91,8 +91,8 @@ Suivez les étapes ci-dessous pour mettre en veille prolongée manuellement vos 
 
 1. Accédez à la Console ****développeur.
 Consultez [Accès à la Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) développeur pour savoir comment accéder à la Console **** développeur à partir de la carte **Environnements** .
-   >[!NOTE]
-   >la liaison directe à la Console développeur depuis Cloud Manager ne vous permet pas d’hiberner un environnement de Programme Sandbox. La solution consiste à ajouter le modèle suivant à la fin de l’URL `#release-cm-p1234-e5678 where 1234` 1234 correspond à votre ID *de* Programme et 5678 à votre ID *d’* Environnement.
+   >[!IMPORTANT]
+   >La création d’un lien vers la Console **** développeur directement à partir de Cloud Manager ne vous permet pas de mettre en veille prolongée un environnement de Programme Sandbox. La solution consiste à ajouter le modèle suivant à la fin de l’URL `#release-cm-p1234-e5678 where 1234` 1234 correspond à votre ID *de* Programme et 5678 à votre ID *d’* Environnement.
 
 1. Click **Hibernate**, as shown in the figure below:
 
@@ -117,6 +117,9 @@ Consultez [Accès à la Console](https://docs.adobe.com/content/help/en/experien
 
 1. Accédez à la Console ****développeur.
 Consultez [Accès à la Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) développeur pour savoir comment accéder à la Console **** développeur à partir de la carte **Environnements** .
+
+   >[!IMPORTANT]
+   >La création d’un lien vers la Console **** développeur directement à partir de Cloud Manager ne vous permet pas de désactiver l’option de dé-hibernation d’un environnement de Programme Sandbox. La solution consiste à ajouter le modèle suivant à la fin de l’URL `#release-cm-p1234-e5678 where 1234` 1234 correspond à votre ID *de* Programme et 5678 à votre ID *d’* Environnement.
 
    >[!NOTE]
    >Vous pouvez également accéder à la Console **** développeur pour annuler la mise en veille prolongée en essayant d’accéder au service d’auteur ou de publication d’un environnement déjà mis en veille prolongée ; dans ce cas, un landing page s’affiche avec un lien vers la Console développeur. Voir la section Accès à un Environnement mis en veille prolongée ci-dessous.
