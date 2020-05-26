@@ -1,8 +1,11 @@
 ---
 title: Manipulation de base
 description: Se familiariser avec la navigation dans AEM et l’utilisation des fonctionnalités de base
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
+workflow-type: tm+mt
+source-wordcount: '2864'
+ht-degree: 96%
 
 ---
 
@@ -59,6 +62,8 @@ Les options disponibles dans ces panneaux sont décrites ci-dessous.
 Panneau de navigation :
 
 ![Panneau de navigation](/help/sites-cloud/authoring/assets/navigation.png)
+
+Le titre de l’onglet du navigateur est mis à jour pour refléter votre emplacement lorsque vous naviguez dans les consoles et le contenu.
 
 Les consoles suivantes sont disponibles à partir du panneau de navigation :
 
@@ -149,6 +154,14 @@ L’en-tête est toujours affiché en haut de l’écran. La plupart des options
    >[!NOTE]
    >
    >L’option **Paramètres** est disponible uniquement en **Mode Liste**.
+
+* Navigation au clavier
+
+   Vous pouvez naviguer sur un site Web à l’aide du clavier uniquement. Cela utilise la fonctionnalité de navigateur standard de la touche **TAB** (ou **OPT+TAB**) pour vous déplacer entre les éléments de la page pouvant être activés.
+
+   Dans la console **Sites** , vous pouvez ajouter l’option **Passer au contenu** principal. Cela devient visible lorsque vous passez d’une option d’en-tête à une autre et accélère votre navigation en vous permettant d’ignorer les éléments standard de la barre d’outils (produit) et de vous diriger directement vers le contenu principal.
+
+   ![Passer au contenu principal](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
 
 ## Accès à l’aide {#accessing-help}
 
