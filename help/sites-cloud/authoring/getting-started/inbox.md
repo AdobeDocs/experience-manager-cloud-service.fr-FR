@@ -1,8 +1,11 @@
 ---
-title: Votre boîte de réception
+title: 'Votre boîte de réception  '
 description: Gestion de vos tâches à l’aide de la boîte de réception
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: 672f1483c017d791365173c91b0bee5c44c33535
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 97%
 
 ---
 
@@ -47,7 +50,7 @@ Pour ouvrir la boîte de réception des notifications AEM :
 1. Cliquez/appuyez sur l’indicateur dans la barre d’outils.
 
 1. Sélectionnez **Afficher tout**. La **boîte de réception AEM** s’ouvre. La boîte de réception affiche les éléments des workflows, des projets et des tâches.
-1. Le mode par défaut est le [mode Liste](#inbox-list-view), mais vous pouvez également basculer vers le [mode Calendrier](#inbox-calendar-view). Cette opération s’effectue à l’aide du sélecteur d’affichage (barre d’outils, en haut à droite).
+1. La vue par défaut est [Liste](#inbox-list-view), mais vous pouvez également passer à la [Vue Calendrier](#inbox-calendar-view). Pour ce faire, utilisez le sélecteur de vue (barre d’outils, en haut à droite).
 
    Vous pouvez également définir les [paramètres d’affichage](#inbox-view-settings) pour ces deux modes ; les options disponibles dépendent du mode actif.
 
@@ -82,7 +85,7 @@ Vous pouvez :
 
 Vous pouvez définir des paramètres d’affichage pour les deux modes (Liste et Calendrier) :
 
-* **Mode Calendrier**
+* **Vue Calendrier**
 
    Pour le **mode Calendrier**, vous pouvez configurer les paramètres suivants :
 
@@ -104,6 +107,10 @@ Vous pouvez définir des paramètres d’affichage pour les deux modes (Liste et
    ![Boîte de réception – Paramètres de délégation du mode Liste](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
 ## Action sur un élément {#taking-action-on-an-item}
+
+>[!NOTE]
+>
+>Bien qu’il soit possible de sélectionner plusieurs éléments, des actions ne peuvent être entreprises que sur un seul élément à la fois.
 
 1. Pour agir sur un élément, sélectionnez la miniature de l’élément souhaité. Les icônes des actions applicables à cet élément apparaissent dans la barre d’outils :
 
@@ -128,7 +135,7 @@ Vous pouvez définir des paramètres d’affichage pour les deux modes (Liste et
    >* Éléments de workflow – [Participation aux workflows](/help/sites-cloud/authoring/workflows/participating.md)
 
 
-1. Une action démarre en fonction de l’élément sélectionné, par exemple :
+2. Une action démarre en fonction de l’élément sélectionné, par exemple :
 
    * Une boîte de dialogue correspondant à l’opération s’ouvre.
    * Un assistant d’action démarre.
@@ -182,7 +189,7 @@ Pour certaines tâches, vous pouvez créer un [projet](/help/sites-cloud/authori
    >
    >Les éléments de travail (d’un workflow) ne peuvent pas être utilisés pour créer un projet.
 
-1. Sélectionnez **Créer un projet** dans la barre d’outils pour ouvrir l’assistant.
+1. Sélectionnez **Créer un projet** depuis la barre d’outils pour ouvrir l’assistant.
 1. Sélectionnez le modèle approprié, puis **Suivant**.
 1. Spécifiez les propriétés requises :
 
