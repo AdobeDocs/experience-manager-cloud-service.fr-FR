@@ -1,13 +1,16 @@
 ---
-title: 'Gestion des fragments de contenu   '
+title: Gestion des fragments de contenu
 description: Les fragments de contenu sont stockés en tant que ressources, et ils sont donc principalement gérés par l’intermédiaire de la console Ressources.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
+workflow-type: ht
+source-wordcount: '1470'
+ht-degree: 100%
 
 ---
 
 
-# Gestion des fragments de contenu{#managing-content-fragments}   
+# Gestion des fragments de contenu{#managing-content-fragments}
 
 Les fragments de contenu sont stockés en tant que **Ressources**, et ils sont donc principalement gérés par l’intermédiaire de la console **Ressources**.
 
@@ -15,7 +18,7 @@ Les fragments de contenu sont stockés en tant que **Ressources**, et ils sont d
 >
 >Les fragments de contenu sont ensuite utilisés avec les pages de création ; voir [Création de page avec des fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
-## Création de fragments de contenu   {#creating-content-fragments}
+## Création de fragments de contenu  {#creating-content-fragments}
 
 ### Création d’un modèle de contenu {#creating-a-content-model}
 
@@ -30,9 +33,9 @@ La méthode de création de fragments de contenu est (fondamentalement) la même
 2. Pour ouvrir l’assistant, sélectionnez **Créer**, puis **Fragment de contenu**.
 3. La première étape de l’assistant nécessite de spécifier la base du nouveau fragment.
 
-   * Il peut s’agir de :
+   * Il peut s’agir des éléments suivants :
 
-      * le modèle **Simple Fragment**
+      * le modèle **Fragment simple** ;
 
       * un [modèle](/help/assets/content-fragments/content-fragments-models.md) utilisé pour créer un fragment qui nécessite du contenu structuré, par exemple, le modèle **Airports**.
 
@@ -144,7 +147,7 @@ Pour ouvrir votre fragment à des fins de modification :
 
    * [Annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
    * [Contenu associé](#associating-content-with-your-fragment)
-   * [Métadonnées  ](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+   * [Métadonnées](#viewing-and-editing-the-metadata-properties-of-your-fragment)
    ![modes](assets/cfm-managing-04.png)
 
 4. Après avoir effectué les modifications, utilisez **Enregistrer** ou **Annuler** selon le cas.
@@ -153,7 +156,7 @@ Pour ouvrir votre fragment à des fins de modification :
    >
    >Les options **Enregistrer** et **Annuler** vous font quitter l’éditeur. Pour plus d’informations sur le fonctionnement des deux options avec les fragments de contenu, voir [Enregistrer, Annuler et Versions](#save-cancel-and-versions).
 
-## Enregistrer, Annuler et Versions   {#save-cancel-and-versions}
+## Enregistrer, Annuler et Versions  {#save-cancel-and-versions}
 
 >[!NOTE]
 >
@@ -207,19 +210,19 @@ Lorsque vous modifiez votre fragment de contenu, AEM crée automatiquement des v
 
 Une fois que vous avez ouvert le fragment, vous pouvez utiliser l’onglet [Variations](/help/assets/content-fragments/content-fragments-variations.md) pour créer votre contenu.
 
-## Création et gestion de variations dans un fragment   {#creating-and-managing-variations-within-your-fragment}
+## Création et gestion de variations dans un fragment  {#creating-and-managing-variations-within-your-fragment}
 
 Une fois que vous avez créé le contenu maître, vous pouvez créer et gérer des [Variations](/help/assets/content-fragments/content-fragments-variations.md) de ce contenu.
 
-## Association de contenu au fragment   {#associating-content-with-your-fragment}
+## Association de contenu au fragment  {#associating-content-with-your-fragment}
 
 Vous pouvez également [associer du contenu](/help/assets/content-fragments/content-fragments-assoc-content.md) à un fragment. Cela fournit une liaison pour que les ressources (c’est-à-dire les images) puissent éventuellement être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu.
 
-## Affichage et modification des métadonnées (propriétés) du fragment   {#viewing-and-editing-the-metadata-properties-of-your-fragment}
+## Affichage et modification des métadonnées (propriétés) du fragment  {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
 Vous pouvez afficher et modifier les propriétés d’un fragment à l’aide de l’onglet [Métadonnées](/help/assets/content-fragments/content-fragments-metadata.md).
 
-## Chronologie pour les fragments de contenu   {#timeline-for-content-fragments}
+## Chronologie pour les fragments de contenu  {#timeline-for-content-fragments}
 
 Outre les options standard, la [Chronologie](/help/assets/manage-digital-assets.md#timeline) fournit les informations et les actions spécifiques aux fragments de contenu :
 
