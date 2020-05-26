@@ -2,10 +2,10 @@
 title: Programmes Sandbox - Service Cloud
 description: Programmes Sandbox - Service Cloud
 translation-type: tm+mt
-source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
+source-git-commit: 22c6a79e68bbcd7329c7b1774d8445c216cdf8a8
 workflow-type: tm+mt
-source-wordcount: '1276'
-ht-degree: 1%
+source-wordcount: '1269'
+ht-degree: 0%
 
 ---
 
@@ -150,17 +150,17 @@ Consultez [Accès à la Console](https://docs.adobe.com/content/help/en/experien
 
    ![](assets/de-hibernation-img4.png)
 
+#### Autorisations de déshibernation {#permissions-de-hibernate}
+
+Tout utilisateur disposant d’un profil de produit qui lui donne accès à AEM en tant que service Cloud doit pouvoir accéder à la Console **** développeur, ce qui lui permet de dé-hiberner l’environnement.
+
+Reportez-vous à la section Utilisateurs et rôles [](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) Ajouter dans Cloud Manager au sujet de la configuration des autorisations d’utilisateur.
+
 #### Accès à un Environnement mis en veille prolongée {#accessing-hibernated-environment}
 
 Lors de toute requête de navigateur à l’encontre de la couche d’auteur ou de publication d’un environnement mis en veille prolongée, l’utilisateur rencontre un landing page décrivant l’état mis en veille prolongée de l’environnement, comme indiqué dans la figure ci-dessous :
 
 ![](assets/de-hibernation-img5.png)
-
-
-Un utilisateur disposant du rôle **** Développeur de **Cloud Manager peut cliquer sur la Console** développeur pour accéder à la Console développeur et annuler la mise en veille prolongée de l’environnement.
-
->[!NOTE]
-> La plupart des fonctionnalités de Cloud Manager nécessitent des autorisations spécifiques. Pour en savoir plus sur les rôles des utilisateurs qui régissent la disponibilité de fonctionnalités spécifiques, reportez-vous[à la section Ajout d’utilisateurs et de rôles](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
 
 ### Points importants {#important-considerations}
 
