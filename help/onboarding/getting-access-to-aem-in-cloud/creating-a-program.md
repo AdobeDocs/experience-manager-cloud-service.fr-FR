@@ -2,7 +2,7 @@
 title: Création d’un Programme - Service Cloud
 description: Création d’un Programme - Service Cloud
 translation-type: tm+mt
-source-git-commit: 89da3b16c133a423f4c4aa630c8e1dd7d008fb17
+source-git-commit: 7c611cdedaba7f21b88fbafdb207160817e20320
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Dans le événement de l’accès initial à Cloud Manager ou si aucun programme
 
 En fonction de l’objectif de l’utilisateur de créer le programme dans les limites de ce qui est disponible pour le client/l’organisation spécifique, un assistant de création de programme demande à l’utilisateur d’envoyer un ou plusieurs détails.
 
-![](assets/create-program-2.png)
+![](assets/create-sandbox.png)
 
 >[!NOTE]
 >If a program already exists, then you will see **Add Program** on the top right of the landing page, as shown in the figure below.
@@ -36,7 +36,7 @@ En fonction de l’objectif de l’utilisateur de créer le programme dans les l
 
 Pour créer un programme de sandbox, procédez comme suit :
 
-1. Dans l’assistant de création de programme, sélectionnez **Configurer une démonstration**. L’utilisateur envoie le nom du programme avant de sélectionner **Créer**.
+1. Dans l’assistant de création de programme, sélectionnez **Configurer un sandbox**. L’utilisateur envoie le nom du programme avant de sélectionner **Créer**.
 
    ![](assets/create-sandbox.png)
 
