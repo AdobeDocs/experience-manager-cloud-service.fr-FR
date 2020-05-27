@@ -2,10 +2,10 @@
 title: Structure de projet AEM
 description: Découvrez comment définir des structures de package en vue d’un déploiement sur Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 9a8d47db7f8ab90748d24c646bd5a8844cf24448
+source-git-commit: 60093232710426d919a45742b1775239944d266d
 workflow-type: tm+mt
-source-wordcount: '2352'
-ht-degree: 94%
+source-wordcount: '2417'
+ht-degree: 91%
 
 ---
 
@@ -239,7 +239,9 @@ L’ajout de dépendances Maven suivant les pratiques Maven standard et l’inco
 
 Pour assurer l’installation correcte des modules, il est recommandé d’établir des dépendances entre les modules.
 
-La règle est que les modules contenant du contenu modifiable (`ui.content`) doivent dépendre du contenu non modifiable (`ui.apps`) qui prend en charge le rendu et l’utilisation du contenu modifiable.
+The general rule is packages containing mutable content (`ui.content`) should depend on the immutable code (`ui.apps`) that supports the rendering and use of the mutable content.
+
+Une exception notable à cette règle générale est que le package de code immuable (`ui.apps` ou tout autre) contient __uniquement__ des lots OSGi. Si tel est le cas, aucun package AEM ne doit déclarer une dépendance à son égard. Ceci est dû au fait que les packages de code immuables __contenant uniquement__ des lots OSGi ne sont pas enregistrés auprès d’AEM Package Manager et que, par conséquent, tout package AEM dépendant d’il aura une dépendance insatisfaite et ne pourra pas être installé.
 
 >[!TIP]
 >
@@ -490,7 +492,7 @@ Si plusieurs `/apps/*-packages` sont utilisés dans les cibles incorporées, ils
 ### Référentiels Maven tiers {#xml-3rd-party-maven-repositories}
 
 >[!WARNING]
-> L&#39;ajout d&#39;autres référentiels Maven peut allonger les délais de création de maven, car d&#39;autres référentiels Maven seront contrôlés pour vérifier s&#39;ils sont dépendants.
+> Ajouter plus de référentiels Maven peut allonger les délais de création de maven, car d&#39;autres référentiels Maven seront contrôlés pour vérifier s&#39;ils sont dépendants.
 
 Dans le fichier `pom.xml` du projet Reactor, ajoutez toute directive de référentiel Maven public tierce qui s’avère nécessaire. La configuration `<repository>` complète doit être disponible auprès du fournisseur de référentiels tiers.
 
