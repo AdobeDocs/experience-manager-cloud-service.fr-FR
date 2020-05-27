@@ -3,9 +3,9 @@ title: Configuration du service cloud AEM Assets avec Brand Portal
 description: Configurez le service cloud AEM Assets avec Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 6627f6454430d25f29bc743ad2f81e89f932219f
+source-git-commit: a67acc6b3204d0b590f5eec86e0a9476aeccb0b3
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '1806'
 ht-degree: 38%
 
 ---
@@ -17,7 +17,7 @@ Les ressources d’Adobe Experience Manager (AEM) sont configurées avec Brand P
 
 **Comment fonctionne la configuration ?**
 
-La configuration d’une instance de cloud AEM Assets avec votre client (organisation) du portail de marque est un processus à plusieurs étapes qui nécessite des configurations à la fois dans l’instance de cloud AEM Assets et dans Adobe Developer Console.
+La configuration de l’instance de cloud AEM Assets avec un client (organisation) du portail de marque nécessite des configurations à la fois dans l’instance de cloud AEM Assets et dans Adobe Developer Console.
 
 1. Dans l’instance cloud AEM Assets, créez un compte IMS et générez un certificat public (clé publique).
 1. Dans Adobe Developer Console, créez un projet pour votre client (organisation) du portail de marque.
@@ -28,9 +28,11 @@ La configuration d’une instance de cloud AEM Assets avec votre client (organis
 1. Testez la configuration en publiant une ressource de l’instance cloud AEM Assets sur Brand Portal.
 
 >[!NOTE]
-&quot;Un client du portail de marques doit uniquement être configuré avec une seule instance de cloud AEM Assets.
-&quot;Ne configurez pas un client du portail de marques avec plusieurs instances cloud AEM Assets.
 >
+>Un client du portail de marques doit uniquement être configuré avec une seule instance de cloud AEM Assets.
+>
+>Ne configurez pas un client du portail de marques avec plusieurs instances de cloud AEM Assets.
+
 
 ## Conditions préalables {#prerequisites}
 
