@@ -2,8 +2,11 @@
 title: Configuration du service cloud AEM Assets avec Brand Portal
 description: Configurez le service cloud AEM Assets avec Brand Portal.
 contentOwner: Vishabh Gupta
-translation-type: ht
-source-git-commit: bbb3327d4bc7cef8eede3169bc14a1d247ee2bdc
+translation-type: tm+mt
+source-git-commit: 00e37e9493bc3dde8a4d83c562a889a67587ada0
+workflow-type: tm+mt
+source-wordcount: '1336'
+ht-degree: 99%
 
 ---
 
@@ -20,7 +23,7 @@ Pour configurer AEM Assets avec Brand Portal, vous devez disposer des élémen
 * URL du client Brand Portal
 * Un utilisateur disposant de droits d’administrateur système sur l’organisation IMS du client Brand Portal
 
-**Contactez l’assistance** si vous avez d’autres questions.
+**Contactez le service à la clientèle** pour obtenir d’autres requêtes.
 
 ## Création d’une configuration {#create-new-configuration}
 
