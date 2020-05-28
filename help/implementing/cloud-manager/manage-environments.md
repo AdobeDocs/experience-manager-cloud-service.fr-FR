@@ -2,10 +2,10 @@
 title: Gestion des environnements - Cloud Service
 description: Gestion des environnements - Cloud Service
 translation-type: tm+mt
-source-git-commit: 1f72e8c935dc6cfe1124afd9f1a0fe37a97ded34
+source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 68%
+source-wordcount: '702'
+ht-degree: 61%
 
 ---
 
@@ -39,16 +39,16 @@ Un utilisateur disposant des autorisations requises peut créer les types d’en
 ## Ajout d’un environnement {#adding-environments}
 
 
-1. Cliquez sur **Ajouter Environnement** pour ajouter un environnement. Ce bouton sera accessible à partir de l&#39;écran **Environnements** .
+1. Cliquez sur **Ajouter un Environnement** pour ajouter un environnement. Ce bouton sera accessible à partir de l&#39;écran **Environnements** .
    ![](assets/no-environment-2.png)
 
 
-   L&#39;option Environnement **** Ajouter est également disponible sur la carte **Environnements** lorsqu&#39;il n&#39;y a aucun environnement dans le programme.
+   L&#39;option **Ajouter l&#39;Environnement** est également disponible sur la carte **Environnements** lorsqu&#39;il n&#39;y a aucun environnement dans le programme.
 
    ![](assets/no-environments.png)
 
    >[!NOTE]
-   >L’option Environnement **** Ajoutersera désactivée en raison d’un manque d’autorisations ou de ce qui peut être contracté.
+   >L’option **Ajouter l’Environnement** sera désactivée en raison d’un manque d’autorisations ou de ce qui peut être contracté.
 
 1. La boîte de dialogue **Ajouter un environnement** s’affiche. L’utilisateur doit ajouter des détails tels que le **type d’environnement**, **nom de l’environnement** et la **description de l’environnement** (selon l’objectif de l’utilisateur lors de la création de l’environnement dans les limites de ce qui est disponible pour le client spécifique).
 
@@ -96,7 +96,12 @@ Cette fonction n’est pas disponible pour l’environnement de production/étap
 
 ## Accès à la Console développeur {#accessing-developer-console}
 
-Sélectionnez Console **** développeur dans le menu déroulant de la carte **Environnements** .
+Sélectionnez Console **** développeur dans le menu déroulant de la carte **Environnements** . Un nouvel onglet s&#39;ouvre alors dans votre navigateur, avec la page de connexion à **Developer Console**.
+
+Seul un utilisateur du rôle Développeur aura accès à **Developer Console**. L’exception concerne les Programmes Sandbox, où tout utilisateur ayant accès au Programme Cloud Manager Sandbox aura accès à **Developer Console**.
+
+Pour plus d’informations, consultez Environnements [](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) d’hibernation et de déshibernation de Sandbox.
+
 
 ![](assets/dev-console1.png)
 
