@@ -1,8 +1,11 @@
 ---
 title: Bonnes pratiques de gestion des URL et de l’optimisation pour les moteurs de recherche pour Adobe Experience Manager Sites as a Cloud Service
 seo-title: Bonnes pratiques de gestion des URL et de l’optimisation pour les moteurs de recherche pour Adobe Experience Manager Sites as a Cloud Service
-translation-type: ht
-source-git-commit: 70e76205e82b491fa77f65cd4257a79dda17b882
+translation-type: tm+mt
+source-git-commit: c8759ba41813a891664c1cf2d12eaeddbd4aabeb
+workflow-type: tm+mt
+source-wordcount: '3124'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +26,7 @@ Il existe des meilleures pratiques généralement acceptées en ce qui concerne 
 
 Dans votre projet AEM, lors de l’évaluation des URL, posez-vous la question suivante :
 
-« Si un utilisateur voyait cette URL, mais aucun des éléments de contenu de la page, pourrait-il décrire ce qu’est cette page ? »
+*« Si un utilisateur voyait cette URL, mais aucun des éléments de contenu de la page, pourrait-il décrire ce qu’est cette page ? »*
 
 Si la réponse est oui, il est probable que l’URL fonctionne pour un moteur de recherche.
 
