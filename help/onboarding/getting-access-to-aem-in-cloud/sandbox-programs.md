@@ -2,9 +2,9 @@
 title: Programmes Sandbox - Service Cloud
 description: Programmes Sandbox - Service Cloud
 translation-type: tm+mt
-source-git-commit: 22c6a79e68bbcd7329c7b1774d8445c216cdf8a8
+source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1285'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Les Programmes Sandbox sont livrés à un environnement de développement au mom
 
 Le jeu d&#39;environnements de la phase de production peut être ajouté manuellement au Programme Sandbox lorsque l&#39;utilisateur est prêt à configurer un pipeline de production.
 
-Pour savoir comment créer manuellement un environnement, voir [Ajout d’Environnements](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) pour plus d’informations.
+Pour savoir comment créer manuellement un environnement, reportez-vous à la section [Ajouter des Environnements](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) pour plus de détails.
 
 ### Suppression d&#39;Environnements de sandbox {#deleting-sandbox-environments}
 
@@ -86,6 +86,9 @@ Vous pouvez mettre en veille prolongée manuellement votre Programme Sandbox à 
 
 * Écran des détails de l&#39;Environnement
 * Ecran de liste des Environnements
+
+>[!NOTE]
+>Tout utilisateur de Cloud Manager peut accéder à Developer Console pour un Programme Sandbox.
 
 Suivez les étapes ci-dessous pour mettre en veille prolongée manuellement vos environnements de Programme Sandbox :
 
@@ -154,7 +157,7 @@ Consultez [Accès à la Console](https://docs.adobe.com/content/help/en/experien
 
 Tout utilisateur disposant d’un profil de produit qui lui donne accès à AEM en tant que service Cloud doit pouvoir accéder à la Console **** développeur, ce qui lui permet de dé-hiberner l’environnement.
 
-Reportez-vous à la section Utilisateurs et rôles [](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) Ajouter dans Cloud Manager au sujet de la configuration des autorisations d’utilisateur.
+Reportez-vous à la section [Ajouter les utilisateurs et les rôles](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) dans Cloud Manager au sujet de la configuration des autorisations d’utilisateur.
 
 #### Accès à un Environnement mis en veille prolongée {#accessing-hibernated-environment}
 
