@@ -1,11 +1,11 @@
 ---
 title: Déploiement sur AEM as a Cloud Service
 description: 'Déploiement sur AEM as a Cloud Service '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3512'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ La mise à jour de la version d’AEM est toujours un événement de déploiemen
 
 La vidéo suivante présente un aperçu général du déploiement du code vers AEM as a Cloud Service :
 
->[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9&captions=fre_fr)
 
 Le reste de ce document décrit la manière dont les développeurs doivent adapter leurs pratiques afin de s’adapter aux mises à jour de version d’AEM as a Cloud Service et aux mises à jour client.
 
@@ -84,7 +84,7 @@ Comme mentionné ci-dessus, la configuration OSGI doit être validée dans le co
 * Apporter les modifications nécessaires à l’environnement AEM local du développeur avec le gestionnaire de configuration de la console web AEM, puis exporter les résultats vers le projet AEM sur le système de fichiers local
 * Créer manuellement la configuration OSGI dans le projet AEM sur le système de fichiers local et faire référence au gestionnaire de configuration de la console AEM pour les noms de propriétés
 
-Pour plus d’informations sur la configuration d’OSGI, voir [Configuration d’OSGi pour AEM en tant que service](/help/implementing/deploying/configuring-osgi.md)Cloud.
+Pour plus d’informations sur la configuration d’OSGI, voir la section [Configuration d’OSGi pour AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 
 ## Contenu modifiable {#mutable-content}
 
@@ -284,7 +284,7 @@ Dans les solutions AEM existantes, les clients peuvent exécuter des instances a
 
 AEM as a Cloud Service, en revanche, est plus précis sur les modes d’exécution disponibles et sur la manière dont les lots OSGI et la configuration OSGI peuvent être mappés sur ces modes :
 
-* Les modes d’exécution de configuration OSGI doivent faire référence au développement, à l’évaluation et à la production pour l’environnement, ou à l’auteur et à la publication pour le service. La combinaison de `<service>.<environment_type>``author.dev` est prise en charge alors qu’elle doit être utilisée dans cet ordre particulier (par exemple,  ou `publish.prod`). Les jetons OSGI doivent être référencés directement à partir du code plutôt que d’utiliser la méthode `getRunModes`, qui n’inclut plus `environment_type` au moment de l’exécution. Pour plus d’informations, voir [Configuration d’OSGi pour AEM en tant que service](/help/implementing/deploying/configuring-osgi.md)Cloud.
+* Les modes d’exécution de configuration OSGI doivent faire référence au développement, à l’évaluation et à la production pour l’environnement, ou à l’auteur et à la publication pour le service. La combinaison de `<service>.<environment_type>` est prise en charge dans cet ordre particulier (par exemple, `author.dev` ou `publish.prod`). Les jetons OSGI doivent être référencés directement à partir du code plutôt que d’utiliser la méthode `getRunModes`, qui n’inclut plus `environment_type` au moment de l’exécution. Pour plus d’informations, voir [Configuration d’OSGi pour AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 * Les modes d’exécution des lots OSGI sont limités au service (auteur et publication). Les lots OSGI par mode d’exécution doivent être installés dans le module de contenu sous `install/author` ou `install/publish`.
 
 Comme les solutions AEM existantes, il n’existe aucun moyen d’utiliser les modes d’exécution en vue d’installer le contenu uniquement pour des environnements ou services spécifiques. S’il était nécessaire d’amorcer un environnement de développement avec des données ou du code HTML qui n’est pas en évaluation ni en production, le gestionnaire de modules pourrait être utilisé.
@@ -306,7 +306,7 @@ Les configurations de mode d’exécution prises en charge sont les suivantes :
 
 La configuration OSGI qui possède le plus grand nombre de modes d’exécution correspondants est utilisée.
 
-Lors du développement local, un paramètre de démarrage en mode d’exécution peut être transmis pour indiquer la configuration OSGI en mode d’exécution à utiliser.
+Pour le développement local, un paramètre de démarrage en mode d’exécution peut être transmis de façon à indiquer la configuration OSGI de mode d’exécution à utiliser.
 
 <!-- ### Performance Monitoring {#performance-monitoring}
 
