@@ -1,11 +1,11 @@
 ---
 title: Présentation des résultats de test - Cloud Services
 description: Présentation des résultats de test - Cloud Services
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4b79f7dd3a55e140869985faa644f7da1f62846c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '999'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Dans le cadre du pipeline, le code source est analysé afin de garantir que les 
 | Tests unitaires ignorés | Nombre de tests unitaires ignorés. | Infos | > 1 |
 | Problèmes en cours | Types de problèmes généraux - Vulnérabilités, bogues et smells de code | Infos | > 0 |
 | Lignes dupliquées | Nombre de lignes impliquées dans des blocs dupliqués. <br/>Pour qu’un bloc de code soit considéré comme dupliqué : <br/><ul><li>**Projets non Java :**</li><li>Il doit y avoir au moins 100 jetons successifs et dupliqués.</li><li>Ces jetons doivent être répartis au moins sur : </li><li>30 lignes de code pour COBOL </li><li>20 lignes de code pour ABAP </li><li>10 lignes de code pour d’autres langages</li><li>**Projets Java :**</li><li> Il devrait y avoir au moins 10 instructions successives et dupliquées, quel que soit le nombre de jetons et de lignes.</li></ul> <br/>Les différences dans la mise en retrait ainsi que dans les littéraux de chaîne sont ignorées lors de la détection des doublons. | Infos | > 1% |
-| Compatibilité du service Cloud | Nombre de problèmes de compatibilité des services Cloud identifiés. | Infos | > 0 |
+| Compatibilité Cloud Service | Nombre de problèmes de compatibilité Cloud Services identifiés. | Infos | > 0 |
 
 
 >[!NOTE]
