@@ -1,15 +1,18 @@
 ---
 title: Fragments de contenu
 description: Les fragments de contenu d’Adobe Experience Manager as a Cloud Service vous permettent de concevoir, de créer, d’organiser et d’utiliser du contenu indépendant des pages
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
+workflow-type: ht
+source-wordcount: '1154'
+ht-degree: 100%
 
 ---
 
 
 # Fragments de contenu {#content-fragments}
 
-Les fragments de contenu dans Adobe Experience Manager (AEM) en tant que service Cloud sont [créés et gérés en tant que ressources](/help/assets/content-fragments/content-fragments.md)indépendantes de la page.
+Les fragments de contenu d’Adobe Experience Manager (AEM) as a Cloud Service sont [créés et gérés en tant que ressources indépendantes de la page](/help/assets/content-fragments/content-fragments.md).
 
 Ils vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variations (éventuellement spécifiques aux canaux). Vous pouvez ensuite utiliser ces fragments et leurs variantes lors de la création de vos pages de contenu.
 
@@ -48,11 +51,11 @@ Grâce aux fragments de contenu :
    * Peuvent se fier à du contenu multimédia associé toujours pertinent.
    * Peuvent créer des variations de contenu ad hoc à la volée tout en garantissant leur gestion centralisée dans le fragment.
 
-## Ajout d’un fragment de contenu à une page   {#adding-a-content-fragment-to-your-page}
+## Ajout d’un fragment de contenu à une page  {#adding-a-content-fragment-to-your-page}
 
 1. Ouvrez la page à modifier.
 2. Ajoutez le composant **Fragment de contenu** à partir du navigateur **Composants** ou **Insérer un nouveau composant**.
-3. Vous pouvez :
+3. Vous pouvez effectuer l’une des actions suivantes :
    * Ouvrir l’explorateur de **ressources** et filtrer sur **Fragments de contenu** (la valeur par défaut est Images). Faites ensuite glisser le fragment en question sur l’instance du composant.
    * Sélectionner le composant de fragment de contenu, puis **Configurer** dans la barre d’outils. Dans la boîte de dialogue, vous pouvez ouvrir la boîte de dialogue de sélection afin de rechercher et de sélectionner le **fragment de contenu** requis.
    >[!NOTE]
@@ -106,7 +109,7 @@ Vous pouvez ouvrir la source du fragment à modifier (la ressource) à l’aide 
 >
 >Comme toujours, la modification de la source du fragment affectera toutes les pages qui font référence à ce fragment de contenu.
 
-### Ajout de contenu intermédiaire   {#adding-in-between-content}
+### Ajout de contenu intermédiaire  {#adding-in-between-content}
 
 Lorsqu’un fragment de contenu particulier est ajouté à la page, un espace réservé **Faire glisser les composants ici** est présent entre chaque paragraphe HTML (en haut/en bas) du fragment.
 
@@ -138,10 +141,10 @@ Dans le cas du contenu intermédiaire, plusieurs possibilités vous sont offerte
 >
 >* Les composants intermédiaires occupent une position absolue dans la séquence de composants du flux de fragments. Cette position ne varie pas, même en cas de modification du contenu des paragraphes dans le fragment.
    >  Cela peut donner l’impression que le positionnement relatif a changé, dans la mesure où les paragraphes intermédiaires n’ont aucune relation contextuelle avec les paragraphes (de fragment) près desquels ils sont placés.
->* À moins que ces deux structures de paragraphes ne soient en conflit ; dans ce cas, le contenu intermédiaire n’est pas affiché, (bien qu’il soit toujours présent en interne).
+>* À moins que ces deux structures de paragraphes ne soient en conflit ; dans ce cas, le contenu intermédiaire n’est pas affiché (bien qu’il soit toujours présent en interne).
 
 
-### Utilisation de contenu associé   {#using-associated-content}
+### Utilisation de contenu associé  {#using-associated-content}
 
 Si vous avez [associé du contenu](/help/assets/content-fragments/content-fragments-assoc-content.md) au [fragment de contenu](/help/assets/content-fragments/content-fragments.md), ces ressources seront disponibles à partir du panneau latéral (après avoir placé le fragment sur la page de contenu). Le contenu associé est en fait une source spéciale de contenu pour le [contenu intermédiaire](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
