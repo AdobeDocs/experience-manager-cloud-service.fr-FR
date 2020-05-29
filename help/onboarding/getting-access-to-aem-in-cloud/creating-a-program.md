@@ -2,7 +2,7 @@
 title: Création d’un Programme - Service Cloud
 description: Création d’un Programme - Service Cloud
 translation-type: tm+mt
-source-git-commit: 7c611cdedaba7f21b88fbafdb207160817e20320
+source-git-commit: 9dd6cd0661cceb680f36a382aec16fad7c281301
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Pour créer un programme normal, procédez comme suit :
 
 1. Sélectionnez **Configurer pour la production** dans l’assistant Créer un Programme pour créer un programme normal. L’utilisateur peut accepter le nom de programme par défaut ou le modifier avant de sélectionner **Continuer**.
 
-   ![](assets/set-up-prod1.png)
+   ![](assets/create-prod1.png)
 
 1. L&#39;utilisateur sélectionne les solutions à inclure dans le programme de l&#39;écran qui seront présentées après l&#39;écran ci-dessus.
 
