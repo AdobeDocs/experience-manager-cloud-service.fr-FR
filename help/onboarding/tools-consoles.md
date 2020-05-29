@@ -1,8 +1,11 @@
 ---
 title: Consoles Outils
 description: Découvrez les différentes consoles Outils disponibles dans AEM.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
+workflow-type: ht
+source-wordcount: '189'
+ht-degree: 100%
 
 ---
 
@@ -15,7 +18,7 @@ Ces consoles sont accessibles à partir du [panneau Outils de la navigation glob
 
 >[!NOTE]
 >
->Comme les cartes de l’interface fournissent des détails sur l’objectif de chaque option, ce tableau fournit simplement une référence rapide sur l’emplacement des fonctionnalités du panneau Outils.
+>Comme les cartes de l’interface utilisateur fournissent des détails sur la fonction de chaque option, ce tableau fournit simplement une référence rapide quant à l’emplacement des fonctionnalités dans le panneau Outils.
 
 <table>
  <thead>
@@ -123,7 +126,7 @@ Ces consoles sont accessibles à partir du [panneau Outils de la navigation glob
   </tr>
   <tr>
    <td> </td>
-   <td>Schémas de métadonnées   </td>
+   <td>Schémas de métadonnées</td>
   </tr>
   <tr>
    <td> </td>
@@ -203,7 +206,7 @@ Ces consoles sont accessibles à partir du [panneau Outils de la navigation glob
   </tr>
   <tr>
    <td> </td>
-   <td>TrustStore</td>
+   <td>Trust Store</td>
   </tr>
   <tr>
    <td> </td>
@@ -215,11 +218,11 @@ Ces consoles sont accessibles à partir du [panneau Outils de la navigation glob
   </tr>
   <tr>
    <td> </td>
-   <td>Services cloud hérités</td>
+   <td>Cloud Services hérités</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Services cloud de traduction</td>
+   <td>Cloud Services de traduction</td>
   </tr>
   <tr>
    <td> </td>
@@ -227,7 +230,7 @@ Ces consoles sont accessibles à partir du [panneau Outils de la navigation glob
   </tr>
   <tr>
    <td> </td>
-   <td>Configuration de média dynamique</td>
+   <td>Configuration de Dynamic Media</td>
   </tr>
   <tr>
    <td> </td>
