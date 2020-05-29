@@ -1,8 +1,11 @@
 ---
 title: Profils vidéo
 description: Dynamic Media est fourni avec un profil prédéfini de codage vidéo adaptatif. Les paramètres de ce profil prêt à l’emploi sont optimisés pour offrir à vos clients la meilleure expérience de visionnage possible. Vous pouvez également ajouter un recadrage intelligent à vos vidéos.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 207f99b9b53188178c6137bb94a184f306b17f96
+workflow-type: ht
+source-wordcount: '3676'
+ht-degree: 100%
 
 ---
 
@@ -51,7 +54,7 @@ Le tableau ci-après identifie les profils de codage recommandés pour la diffus
    <td><strong>Débit vidéo (kbit/s)</strong></td>
    <td><strong>Taux de rafraîchissement vidéo (i/s)</strong></td>
    <td><strong>Codec audio</strong></td>
-   <td><strong>Débit audio    (kbit/s)</strong></td>
+   <td><strong>Débit audio  (kbit/s)</strong></td>
   </tr>
   <tr>
    <td><p>MP4 H.264 (mp4)</p> </td>
@@ -130,7 +133,7 @@ Pour tous les paramètres prédéfinis de codage vidéo MP4 H.264 du profil, les
 
 * Codec de format vidéo - MP4 H.264 (.mp4)
 * Codec audio
-* Débit audio   
+* Débit audio
 * Conserver les proportions
 * Codage à deux passages
 * Débit constant
@@ -171,8 +174,8 @@ Appuyez sur l’icône d’information en regard de chaque option pour accéder 
 
 1. (Facultatif) Pour ajouter un recadrage intelligent aux vidéos auxquelles ce profil sera appliqué, procédez comme suit :
    * Sur la page Modifier le profil vidéo, à droite de l’en-tête Smart Crop Ratio, appuyez sur **[!UICONTROL Ajouter]**.
-   * Dans le champ Nom, entrez le nom du taux de recadrage qui vous aidera à l’identifier facilement.
-   * From the **[!UICONTROL Crop Ratio]** drop-down list, select the ratio you want to use.
+   * Dans le champ Nom, entrez un nom qui vous aidera à identifier facilement le rapport de recadrage.
+   * Dans la liste déroulante **[!UICONTROL Rapport de recadrage]**, sélectionnez le rapport à utiliser.
 
 1. Utilisez l’une des méthodes suivantes :
 
@@ -224,8 +227,8 @@ Appuyez sur l’icône d’information en regard de chaque option pour accéder 
 1. (Facultatif) Pour ajouter un recadrage intelligent aux vidéos auxquelles ce profil sera appliqué, procédez comme suit :
 
    * Sur la page Modifier le profil vidéo, à droite de l’en-tête Smart Crop Ratio, appuyez sur **[!UICONTROL Ajouter]**.
-   * Dans le champ Nom, entrez le nom du taux de recadrage qui vous aidera à l’identifier facilement.
-   * From the **[!UICONTROL Crop Ratio]** drop-down list, select the ratio you want to use.
+   * Dans le champ Nom, entrez un nom qui vous aidera à identifier facilement le rapport de recadrage.
+   * Dans la liste déroulante **[!UICONTROL Rapport de recadrage]**, sélectionnez le rapport à utiliser.
 
 1. Utilisez l’une des méthodes suivantes :
 
@@ -348,7 +351,7 @@ Appuyez sur l’icône d’information pour obtenir une description de la diffus
 1. Dans la barre d’outils, appuyez sur **[!UICONTROL Supprimer]**.
 1. Appuyez sur **[!UICONTROL OK]**.
 
-## Application d’un profil vidéo à des dossiers    {#applying-a-video-profile-to-folders}
+## Application d’un profil vidéo à des dossiers  {#applying-a-video-profile-to-folders}
 
 Lorsque vous affectez un profil vidéo à un dossier, tout sous-dossier hérite automatiquement du profil de son dossier parent. Cela signifie que vous ne pouvez affecter qu’un seul profil vidéo à un dossier. Nous vous conseillons donc de choisir avec la plus grande attention la structure du dossier dans lequel vous transférez, stockez, utilisez et archivez des ressources.
 
