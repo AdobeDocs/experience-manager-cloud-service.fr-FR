@@ -1,15 +1,18 @@
 ---
 title: Journalisation
 description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou apprenez à demander la journalisation des données.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
+workflow-type: ht
+source-wordcount: '1097'
+ht-degree: 100%
 
 ---
 
 
 # Journalisation{#logging}
 
-AEM as a Cloud Service est une plateforme permettant aux clients d’inclure du code personnalisé afin de créer des expériences uniques pour leur base de clients. Dans cet esprit, la journalisation est une fonction essentielle pour déboguer le code personnalisé sur le de  cloud et plus particulièrement pour le de développement  local.
+La plate-forme AEM as a Cloud Service permet aux clients d’inclure du code personnalisé destiné à créer des expériences incomparables pour leurs propres bases de clients. Dans ce contexte, la journalisation est une fonction essentielle pour déboguer le code personnalisé dans les environnements de cloud, et plus particulièrement, pour les environnements de développement locaux.
 
 
 <!-- ## Global Logging {#global-logging}
@@ -23,32 +26,32 @@ AEM as a Cloud Service est une plateforme permettant aux clients d’inclure du 
 * the format to be used when writing the log messages
 -->
 
-## AEM as a Cloud Service Logging {#aem-as-a-cloud-service-logging}
+## Journalisation d’AEM as a Cloud Service {#aem-as-a-cloud-service-logging}
 
-AEM en tant que service Cloud  vous  la possibilité de configurer :
+AEM as a Cloud Service vous offre la possibilité de configurer :
 
 * les paramètres généraux du service de journalisation central ;
 * la journalisation des données de requête (une configuration de journalisation spécialisée pour les informations de requête) :
-* paramètres spécifiques pour les services individuels
+* les paramètres spécifiques des services individuels
 
-For local development, logs entries are written to local files in the `/crx-quickstart/logs` folder.
+Pour le développement en local, les entrées de journaux sont écrites dans des fichiers locaux dans le dossier `/crx-quickstart/logs`.
 
-Dans les environnements Cloud, les développeurs peuvent télécharger les journaux via Cloud Manager ou utiliser un outil de ligne de commande pour les retailler.
+Dans les environnements cloud, les développeurs peuvent télécharger les journaux via Cloud Manager ou utiliser un outil de ligne de commande pour en afficher les dernières lignes.
 
 >[!NOTE]
 >
->La connexion à AEM en tant que service Cloud repose sur les principes Sling. Pour plus d’informations, voir [Journalisation Sling](https://sling.apache.org/site/logging.html).
+>La connexion à AEM as a Cloud Service repose sur les principes Sling. Pour plus d’informations, voir [Journalisation Sling](https://sling.apache.org/site/logging.html).
 
-## Journalisation Java d’AEM en tant que service Cloud {#aem-as-a-cloud-service-java-logging}
+## Journalisation Java d’AEM as a Cloud Service {#aem-as-a-cloud-service-java-logging}
 
 ### Enregistreurs et rédacteurs standard {#standard-loggers-and-writers}
 
 > [!IMPORTANT]
-> Ceux-ci peuvent être personnalisés si nécessaire, bien que la configuration standard convienne à la plupart des installations. Si, toutefois, vous devez personnaliser les configurations de journalisation standard, veillez à ne le faire que sur   de. `dev`
+> Ceux-ci peuvent être personnalisés si nécessaire, bien que la configuration standard convienne à la plupart des installations. Si, toutefois, vous devez personnaliser les configurations de journalisation standard, veillez à ne le faire que sur les environnements `dev`.
 
-Certains journaux et écrivains sont inclus dans une installation standard d’AEM en tant que service Cloud.
+Certains enregistreurs et rédacteurs sont inclus dans une installation standard d’AEM as a Cloud Service.
 
-The first is a special case as it controls both the `request` and `access` logs:
+Le premier est un cas particulier, car il contrôle à la fois les journaux `request` et `access` :
 
 * L’enregistreur :
 
@@ -64,7 +67,7 @@ The first is a special case as it controls both the `request` and `access` logs:
 
       (org.apache.sling.engine.impl.log.RequestLogger)
 
-   * Writes the messages to either `request.log` or `access.log`.
+   * Écrit les messages dans `request.log` ou `access.log`.
 
 Les autres paires suivent la configuration standard :
 
@@ -74,7 +77,7 @@ Les autres paires suivent la configuration standard :
 
       (org.apache.sling.commons.log.LogManager.factory.config)
 
-   * Écrit `Information` des messages à `logs/error.log`.
+   * Écrit des messages `Information` sur `logs/error.log`.
 
 * Est lié au rédacteur :
 
@@ -86,39 +89,39 @@ Les autres paires suivent la configuration standard :
 
    * Apache Sling Logging Logger Configuration (org.apache.sling.commons.log.LogManager.factory.config.649d51b7-6425-45c9-81e6-2697a03d6be7)
 
-   * Écrit `Warning` des messages à `../logs/error.log` pour le service `org.apache.pdfbox`.
+   * Écrit des messages `Warning` sur `../logs/error.log` pour le service `org.apache.pdfbox`.
 
-* N’est pas lié à un Ecrivain spécifique ; il crée et utilise donc un Ecrivain implicite avec une configuration par défaut.
+* N’est pas lié à un rédacteur spécifique, et crée et utilise donc un rédacteur implicite avec une configuration par défaut.
 
-**Journalisation des requêtes HTTP AEM en tant que service Cloud**
+**Journalisation des requêtes HTTP d’AEM as a Cloud Service**
 
 Toutes les demandes d’accès à la gestion du contenu web d’AEM et au référentiel sont enregistrées ici.
 
-Exemple de sortie:
+Exemple de sortie :
 
-**AEM en tant que service Cloud Demande HTTP / Journalisation de l’accès aux réponses**
+**AEM as a Cloud Service : journalisation des requêtes HTTP/des accès aux réponses**
 
 Chaque demande d’accès est enregistrée ici en même temps que la réponse.
 
-Exemple de sortie:
+Exemple de sortie :
 
-**Journalisation du serveur Web Apache / Répartiteur**
+**Serveur web Apache/Journalisation de Dispatcher**
 
-Il s’agit d’un journal utilisé pour le débogage des problèmes du répartiteur. Pour plus d’informations, voir [Débogage de votre configuration](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/)Apache et Répartiteur.
+Il s’agit d’un journal utilisé pour le débogage des problèmes de Dispatcher. Pour plus d’informations, voir [Débogage de la configuration Apache et Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/).
 
 <!-- Besides the three types of logs present on an AEM as a Cloud Service instance (`request`, `access` and `error` logs) there is another dispatcher/overview.html#debugging-apache-and-dispatcher-configuration.
 
 leftover text from the last breakaway chunk (re dispatcher) -->
 
-En ce qui concerne les pratiques de pointe, il est recommandé d’aligner les configurations existantes dans AEM en tant qu’archétype de service cloud. Ils définissent différents paramètres et niveaux de journal pour des types de  de  spécifiques :
+En termes de bonnes pratiques, il est recommandé de s’aligner sur les configurations existantes dans l’archétype Maven AEM as a Cloud Service. Ces configurations définissent différents paramètres et niveaux de journal pour des types d’environnements spécifiques :
 
-* pour `local dev` et  , définissez la journalisation sur le niveau `dev` DEBUG **** sur `error.log`
-* pour `stage`, définissez le journal sur **Niveau WARN** sur le paramètre `error.log`
-* pour `prod`, définissez logger sur le niveau **ERROR** sur `error.log`
+* pour les environnements `local dev` et `dev`, définissez l’enregistreur sur le niveau **DEBUG** sur le journal `error.log`
+* pour `stage`, définissez l’enregistreur sur le niveau **WARN** au niveau du journal `error.log`
+* pour `prod`, définissez l’enregistreur sur le niveau **ERROR** au niveau du journal `error.log`
 
-Veuillez trouver ci-dessous des exemples pour chaque configuration :
+Voici des exemples pour chaque configuration :
 
-* `dev`   :
+* Environnements `dev` :
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -129,7 +132,7 @@ Veuillez trouver ci-dessous des exemples pour chaque configuration :
 ```
 
 
-* `stage`   :
+* Environnements `stage` :
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -139,7 +142,7 @@ Veuillez trouver ci-dessous des exemples pour chaque configuration :
     org.apache.sling.commons.log.names="[com.mycompany.myapp]" />
 ```
 
-* `prod`   :
+* Environnements `prod` :
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -151,14 +154,14 @@ Veuillez trouver ci-dessous des exemples pour chaque configuration :
 
 ### Enregistreurs et rédacteurs pour les services individuels {#loggers-and-writers-for-individual-services}
 
-Outre les paramètres de journalisation globaux, AEM en tant que service Cloud vous permet de configurer des paramètres spécifiques pour un service individuel :
+En plus des paramètres de journalisation globale, AEM as a Cloud Service permet de configurer des paramètres spécifiques pour un service individuel :
 
 * le niveau de journalisation spécifique
 * l’enregistreur (le service OSGi fournissant les messages de journal)
 
 Cela vous permet de canaliser les messages de journal pour un seul service dans un fichier distinct. Cela peut être particulièrement utile pendant le développement ou les tests, par exemple, si vous avez besoin d’un niveau de journalisation accru pour un service spécifique.
 
-AEM as a Cloud Service utilise les éléments suivants pour écrire des messages de journal dans un fichier :
+AEM as a Cloud Service utilise les éléments suivants pour écrire des messages de journal dans un fichier :
 
 1. Un **service OSGi**(enregistreur) écrit un message de journal.
 1. Un **enregistreur de journalisation** met en forme ce message selon vos spécifications.
@@ -166,7 +169,7 @@ AEM as a Cloud Service utilise les éléments suivants pour écrire des messages
 
 Ces éléments sont liés par les paramètres suivants pour les éléments appropriés :
 
-* **Journalisation (Journalisation)**
+* **Enregistreur (enregistreur de journalisation)**
 
    Définissez le ou les services qui génèrent les messages.
 
@@ -183,22 +186,22 @@ Ces éléments sont liés par les paramètres suivants pour les éléments appro
   This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
 -->
 
-### Définition du niveau de journal {#setting-the-log-level}
+### Définition du niveau de journalisation {#setting-the-log-level}
 
 Pour modifier les niveaux de journal des environnements Cloud, il est nécessaire de modifier la configuration d’enregistreur OSGI Sling, suivi d’un redéploiement complet. Comme il ne s’agit pas d’une opération instantanée, soyez prudent lorsque vous activez les journaux en détail sur les environnements de production qui reçoivent beaucoup de trafic. Dans le futur, il est possible que des mécanismes soient ajoutés pour pouvoir modifier plus rapidement le niveau du journal.
 
 >[!NOTE]
 >
-> Pour effectuer les modifications de configuration répertoriées ci-dessous, vous devez les créer sur un de développement local  puis les transmettre à AEM en tant qu’instance de service Cloud. Pour plus d’informations sur la procédure à suivre, voir [Déploiement sur AEM en tant que service](/help/implementing/deploying/overview.md)Cloud.
+> Pour effectuer les modifications de configuration répertoriées ci-dessous, vous devez les créer dans un environnement de développement local, puis les transmettre à une instance AEM as a Cloud Service. Pour plus d’informations sur la procédure à suivre, voir [Déploiement sur AEM as a Cloud Service](/help/implementing/deploying/overview.md).
 
 **Activation du niveau de journalisation DEBUG**
 
 >[!WARNING]
 >
-> L&#39;activation globale du niveau du journal DEBUG génère une grande quantité d&#39;informations qui seront difficiles à analyser. Il est recommandé de ne l’activer que pour les services nécessitant un débogage. Pour plus d’informations, voir [Journaux et Ecrivains pour les services](logging.md#loggers-and-writers-for-individual-services)individuels.
+> L’activation globale du niveau de journalisation DEBUG génère une grande quantité d’informations qui seront difficiles à analyser. Il est recommandé de n’activer ce niveau que pour les services nécessitant un débogage. Pour plus d’informations, voir [Enregistreurs et rédacteurs pour les services individuels](logging.md#loggers-and-writers-for-individual-services).
 
 Le niveau de journalisation par défaut est INFO, ce qui signifie que les messages DEBUG ne sont pas consignés.
-Pour activer le niveau du journal DEBUG, définissez la variable
+Pour activer le niveau de journalisation DEBUG, définissez
 
 ``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
 
@@ -209,11 +212,11 @@ Une ligne dans le fichier de débogage commence généralement par DEBUG, puis f
 
 Les niveaux de journalisation sont les suivants :
 
-| 0 | Erreur fatale | L&#39;action a échoué et le programme d&#39;installation ne peut pas continuer. |
+| 0 | Erreur fatale | L’action a échoué et le programme d’installation ne peut pas continuer. |
 |---|---|---|
-| 1 | Erreur | L&#39;action a échoué. L’installation se poursuit, mais une partie de CRX n’a pas été installée correctement et ne fonctionnera pas. |
-| 2 | Avertissement | L&#39;action a réussi mais a rencontré des problèmes. CRX risque de ne pas fonctionner correctement. |
-| 3 | Informations | L&#39;action a réussi. |
+| 1 | Erreur | L’action a échoué. L’installation se poursuit, mais une partie de CRX n’a pas été installée correctement et ne fonctionnera pas. |
+| 2 | Avertissement | L’action a réussi, mais a rencontré des problèmes. CRX risque de ne pas fonctionner correctement. |
+| 3 | Informations | L’action a réussi. |
 
 ### Création de vos propres enregistreurs et rédacteurs {#creating-your-own-loggers-and-writers}
 
@@ -228,27 +231,27 @@ Vous pouvez définir votre propre paire Enregistrer/Rédacteur :
     1. Specify the Log File - this must match that specified for the Logger.
     1. Configure the other parameters as required. -->
 
-### Configure Logging {#configure-logging}
+### Configuration de la journalisation {#configure-logging}
 
 >[!NOTE]
 >
->Lorsque vous travaillez avec Adobe Experience Manager, il existe plusieurs méthodes pour gérer les paramètres de configuration de ces services.
+>Lorsque vous utilisez Adobe Experience Manager, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services.
 
-Dans certains cas, vous pouvez créer un journal personnalisé avec un niveau de journal différent. Vous pouvez le faire depuis le référentiel en procédant comme suit :
+Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un niveau de journalisation différent. Vous pouvez le faire depuis le référentiel en procédant comme suit :
 
-1. If not already existing, create a new configuration folder ( `sling:Folder`) for your project `/apps/<*project-name*>/config`.
-1. Under `/apps/<*project-name*>/config`, create a node for the new Apache Sling Logging Logger Configuration:
+1. S’il n’existe pas déjà, créez un dossier de configuration (`sling:Folder`) pour votre projet `/apps/<*project-name*>/config`.
+1. Sous `/apps/<*project-name*>/config`, créez un nœud pour la nouvelle configuration de l’enregistreur de journaux Apache Sling :
 
-   * Nom : `org.apache.sling.commons.log.LogManager.factory.config-<*identifier*>` (comme il s’agit d’un journal)
+   * Nom : `org.apache.sling.commons.log.LogManager.factory.config-<*identifier*>` (s’agissant d’un enregistreur)
 
-      Where `<*identifier*>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information).
+      Où `<*identifier*>` est remplacé par du texte libre que vous devez entrer pour l’instance (vous ne pouvez pas omettre cette information).
 
       Par exemple, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
-   * Type: `sling:OsgiConfig`
+   * Type : `sling:OsgiConfig`
    >[!NOTE]
    >
-   >Although not a technical requirement, it is advisable to make `<*identifier*>` unique.
+   >Bien que cela ne constitue pas une exigence technique, il est recommandé de rendre `<*identifier*>` unique.
 
 <!-- 1. Set the following properties on this node:
 
@@ -418,8 +421,8 @@ Dans certains cas, vous pouvez créer un journal personnalisé avec un niveau de
 
    The log file created by this example will be `../crx-quickstart/logs/myLogFile.log`. -->
 
-The Felix Console also provides information about Sling Log Support at `../system/console/slinglog`; for example `https://localhost:4502/system/console/slinglog`.draf
+La console Felix fournit également des informations sur la prise en charge du journal Sling à l’adresse `../system/console/slinglog` ; par exemple, `https://localhost:4502/system/console/slinglog`.draft.
 
-## Accès aux journaux et gestion {#manage-logs}
+## Accès aux journaux et leur gestion {#manage-logs}
 
-Pour plus d’informations sur l’accès et la gestion des journaux, voir la documentation [de](/help/implementing/cloud-manager/manage-logs.md)Cloud Manager.
+Pour plus d’informations sur l’accès aux journaux et leur gestion, voir la [documentation de Cloud Manager](/help/implementing/cloud-manager/manage-logs.md).
