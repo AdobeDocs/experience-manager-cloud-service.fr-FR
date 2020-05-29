@@ -1,8 +1,11 @@
 ---
-title: Prise en charge des fragments de contenu d’Adobe Experience Manager en tant que service Cloud dans l’API HTTP Assets
-description: Découvrez Adobe Experience Manager en tant que prise en charge des fragments de contenu de service Cloud dans l’API HTTP Assets.
-translation-type: tm+mt
+title: Prise en charge des fragments de contenu d’Adobe Experience Manager as a Cloud Service dans l’API Assets HTTP
+description: Découvrez la prise en charge des fragments de contenu Adobe Experience Manager as a Cloud Service dans l’API HTTP Assets.
+translation-type: ht
 source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
+workflow-type: ht
+source-wordcount: '1892'
+ht-degree: 100%
 
 ---
 
@@ -19,21 +22,21 @@ source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 >* y compris la prise en charge des fragments de contenu
 >
 >
-L’implémentation actuelle de l’API HTTP Ressources est basée sur le style architectural [REST](https://fr.wikipedia.org/wiki/Representational_state_transfer) .
+L’implémentation actuelle de l’API HTTP Assets est basée sur le style architectural [REST](https://fr.wikipedia.org/wiki/Representational_state_transfer).
 
-L’API [REST](/help/assets/mac-api-assets.md) Assets permet aux développeurs d’Adobe Experience Manager en tant que service Cloud d’accéder au contenu (stocké dans AEM) directement via l’API HTTP, via des opérations CRUD (Création, Lecture, Mise à jour, Suppression).
+L’[API REST Assets](/help/assets/mac-api-assets.md) permet aux développeurs d’Adobe Experience Manager as a Cloud Service d’accéder au contenu (stocké dans AEM) directement via l’API HTTP, via des opérations CRUD (création, lecture, mise à jour et suppression).
 
-L’API vous permet d’utiliser Adobe Experience Manager en tant que service Cloud en tant que CMS (système de ) sans en-tête en fournissant Content Services à une application frontale JavaScript. Ou toute autre application pouvant exécuter des requêtes HTTP et gérer les réponses JSON.
+L’API permet d’utiliser Adobe Experience Manager as a Cloud Service en tant que système de gestion de contenu (CMS) sans interface utilisateur en fournissant des services de contenu à une application frontale JavaScript. Ou toute autre application pouvant exécuter des requêtes HTTP et gérer les réponses JSON.
 
 Par exemple, les applications monopages, basées sur la structure ou personnalisées, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
 
-While [AEM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) provide a very comprehensive, flexible and customizable API that can serve required Read operations for this purpose, and whose JSON output can be customized, they do require AEM WCM (Web Content Management) know-how for implementation as they must be hosted in pages that are based on dedicated AEM templates. Tous les organismes de développement de l&#39;APS n&#39;ont pas accès directement à ces connaissances.
+Bien que les [composants de base AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) fournissent une API très complète, flexible et personnalisable pouvant traiter les opérations de lecture requises à cette fin, et dont la sortie JSON peut être personnalisée, ils ne nécessitent pas de connaissances sur AEM WCM (Web Content Management) pour la mise en œuvre, car ils doivent être hébergés sur des pages reposant sur des modèles AEM dédiés. Les entreprises de développement d’applications monopages n’ont pas toutes accès à ces connaissances.
 
-C’est le cas lorsque l’API REST Assets peut être utilisée. Il permet aux développeurs d’accéder directement aux ressources (images et fragments de contenu, par exemple), sans avoir à les incorporer d’abord dans une page, et de diffuser leur contenu au format JSON sérialisé.
+Dans ce cas, l’API REST Assets peut être utilisée. Elle permet aux développeurs d’accéder à des ressources (par exemple, des images et des fragments de contenu) directement, sans devoir d’abord les intégrer dans une page puis diffuser leur contenu au format JSON sérialisé.
 
 >[!NOTE]
 >
->Il n’est pas possible de personnaliser la sortie JSON à partir de l’API REST Ressources.
+>Il est impossible de personnaliser la sortie JSON de l’API REST Assets.
 
 L’API REST Assets permet également aux développeurs de modifier du contenu, en créant, en mettant à jour ou en supprimant des ressources, des fragments de contenu et des dossiers.
 
@@ -45,33 +48,33 @@ L’API REST Assets :
 
 ## Conditions préalables {#prerequisites}
 
-L’API REST Ressources est disponible pour chaque installation prête à l’emploi d’une version récente d’Adobe Experience Manager en tant que version de service Cloud.
+L’API REST Assets est disponible pour chaque installation prête à l’emploi d’une version récente d’Adobe Experience Manager as a Cloud Service.
 
 ## Concepts clés {#key-concepts}
 
 L’API REST Assets offre un accès de type [REST](https://fr.wikipedia.org/wiki/Representational_state_transfer) aux ressources stockées dans une instance AEM.
 
-It uses the `/api/assets` endpoint and requires the path of the asset to access it (without the leading `/content/dam`).
+Elle utilise le point d’entrée `/api/assets` et requiert le chemin d’accès de la ressource pour y accéder (sans `/content/dam` qui précède).
 
-* Cela signifie que pour accéder à la ressource à l’adresse suivante :
+* Cela signifie que pour accéder à la ressource à l’adresse suivante :
    * `/content/dam/path/to/asset`
-* Vous devez demander :
+* Vous devez demander :
    * `/api/assets/path/to/asset`
 
 Par exemple, pour accéder à `/content/dam/wknd/en/adventures/cycling-tuscany`, demandez `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 >[!NOTE]
->Accès par :
->* `/api/assets` **n’a pas** besoin de l’utilisation du `.model` sélecteur.
->* `/content/assets` **ne nécessite** pas l’utilisation du `.model` sélecteur.
+>Accès via :
+>* `/api/assets` **ne nécessite pas** l’utilisation du sélecteur `.model`.
+>* `/content/assets` **nécessite** l’utilisation du sélecteur `.model`.
 
 
 La méthode HTTP détermine l’opération à exécuter :
 
-* **GET** - pour récupérer une représentation JSON d’un fichier ou d’un dossier
-* **POST** - Création de fichiers ou de dossiers
-* **PUT** - pour mettre à jour les propriétés d’un fichier ou d’un dossier
-* **SUPPRIMER** - pour supprimer un fichier ou un dossier
+* **GET** : pour récupérer une représentation JSON d’une ressource ou d’un dossier
+* **POST** : pour créer des ressources ou des dossiers
+* **PUT** : pour mettre à jour les propriétés d’une ressource ou d’un dossier
+* **DELETE** : pour supprimer une ressource ou un dossier
 
 >[!NOTE]
 >
@@ -109,11 +112,11 @@ Cela signifie que les requêtes suivantes (`write`) ne peuvent pas être combin�
    <td>Lecture seule.</td>
   </tr>
   <tr>
-   <td>Accédez à l’adresse</td>
-   <td><p>Accessible directement.</p> <p>Uses the <code>/api/assets </code>endpoint, mapped to <code>/content/dam</code> (in the repository).</p> 
-   <p>Voici un exemple de chemin : <code>/api/assets/wknd/en/adventures/cycling-tuscany.json</code></p>
+   <td>Accès</td>
+   <td><p>Accessible directement.</p> <p>Utilise le point d’entrée <code>/api/assets </code>, mappé sur <code>/content/dam</code> (dans le référentiel).</p> 
+   <p>Voici un exemple de chemin : <code>/api/assets/wknd/en/adventures/cycling-tuscany.json</code></p>
    </td>
-    <td><p>Doit être référencé via un composant AEM sur une page AEM.</p> <p>Uses the <code>.model</code> selector to create the JSON representation.</p> <p>Voici un exemple de chemin :<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
+    <td><p>Doit être référencé via un composant AEM sur une page AEM.</p> <p>Utilise le sélecteur <code>.model</code> pour créer la représentation JSON.</p> <p>Voici un exemple de chemin :<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
    </td>
   </tr>
   <tr>
@@ -142,8 +145,8 @@ Si l’API REST Assets est utilisée dans un environnement sans conditions d’a
 >
 >Pour plus d’informations, voir :
 >
->* [CORS/AEM expliqué](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
->* [Vidéo - Développement pour CORS et AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+>* [CORS/AEM expliqué](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
+>* [Vidéo - Développement pour CORS et AEM](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
 >
 
 
@@ -156,17 +159,17 @@ Les fragments de contenu sont un type spécifique de ressource ; voir [Utilisat
 
 Pour plus d’informations sur les fonctions disponibles dans l’API, voir :
 
-* The [Assets REST API](/help/assets/mac-api-assets.md)
-* [Types](/help/assets/assets-api-content-fragments.md#entity-types)d’entité, où sont expliquées les fonctionnalités propres à chaque type pris en charge (en fonction des fragments de contenu).
+* L’[API REST Assets](/help/assets/mac-api-assets.md)
+* [Types d’entité](/help/assets/assets-api-content-fragments.md#entity-types), où sont expliquées les fonctionnalités propres à chaque type pris en charge (en fonction des fragments de contenu).
 
 ### Pagination {#paging}
 
 L’API REST Assets prend en charge la pagination (pour les requêtes GET) via les paramètres d’URL :
 
-* `offset` - nombre de premières entités (enfants) à extraire
-* `limit` - nombre maximal d’entités renvoyées
+* `offset` : nombre de premières entités (enfants) à extraire
+* `limit` : nombre maximal d’entités renvoyées
 
-The response will contain paging information as part of the `properties` section of the SIREN output. This `srn:paging` property contains the total number of (child) entities ( `total`), the offset and the limit ( `offset`, `limit`) as specified in the request.
+La réponse contiendra les informations de pagination dans la section `properties` de la sortie SIREN. Cette propriété `srn:paging` contient le nombre d’entités (enfants) (`total`), le décalage et la limite (`offset`, `limit`) tels que spécifiés dans la requête.
 
 >[!NOTE]
 >
@@ -196,40 +199,40 @@ The response will contain paging information as part of the `properties` section
 
 Les dossiers servent de conteneurs pour les ressources et d’autres dossiers. Ils reflètent la structure du référentiel de contenu AEM.
 
-L’API REST Assets expose l’accès aux propriétés d’un dossier (par exemple, son nom, son titre, etc.). Les ressources sont exposées sous la forme d’entités enfants de dossiers et de sous-dossiers.
+L’API REST Assets expose l’accès aux propriétés d’un dossier (par exemple, son nom, son titre, etc.). Les ressources sont exposées en tant qu’entités enfants de dossiers et de sous-dossiers.
 
 >[!NOTE]
 >
->Selon le type de ressource des fichiers et dossiers enfants, le  des entités enfants peut déjà contenir l’ensemble complet des propriétés qui définit l’entité enfant correspondante. Une autre possibilité consiste à afficher uniquement un jeu limité de propriétés pour une entité dans cette liste d’entités enfants.
+>Selon le type des ressources et des dossiers enfants, la liste des entités enfants peut déjà contenir l’ensemble complet de propriétés qui définissent l’entité enfant respective. Une autre possibilité consiste à afficher uniquement un jeu limité de propriétés pour une entité dans cette liste d’entités enfants.
 
 ### Ressources {#assets}
 
-Si un fichier est demandé, la réponse renvoie ses métadonnées ; comme le titre, le nom et d’autres informations telles que définies par le de ressources respectif.
+Si une ressource est demandée, la réponse renvoie ses métadonnées, telles que le titre, le nom et les autres informations, comme défini par le schéma des ressources respectives.
 
-The binary data of an asset is exposed as a SIREN link of type `content` (also known as the `rel attribute`).
+Les données binaires d’une ressource sont exposées sous la forme d’un lien SIREN de type `content` (également appelé `rel attribute`).
 
-Les ressources peuvent comporter plusieurs rendus. These are typically exposed as child entities, one exception being a thumbnail rendition, which is exposed as a link of type `thumbnail` ( `rel="thumbnail"`).
+Les ressources peuvent comporter plusieurs rendus. Elles sont généralement exposées en tant qu’entités enfants, à l’exception du rendu de miniature, qui est exposé sous la forme d’un lien de type `thumbnail` (`rel="thumbnail"`).
 
 ### Fragments de contenu {#content-fragments}
 
-Un [fragment de contenu](/help/assets/content-fragments/content-fragments.md) est un type de ressource spécial. Ils peuvent être utilisés pour accéder à des données structurées, telles que des textes, des numéros, des dates, etc.
+Un [fragment de contenu](/help/assets/content-fragments/content-fragments.md) est un type de ressource spécial. Il permet d’accéder aux données structurées, telles que les textes, les nombres, les dates, etc.
 
 Comme il existe plusieurs différences au sein des ressources *standard* (telles que les images ou le son), certaines règles supplémentaires s’appliquent pour les gérer.
 
-#### Représentation {#representation}
+#### Représentation  {#representation}
 
 Les fragments de contenu :
 
 * N’exposent aucune donnée binaire.
-* Are completely contained in the JSON output (within the `properties` property).
+* Sont entièrement contenus dans la sortie JSON (dans la propriété `properties`).
 
 * Sont également considérés comme atomiques, c’est-à-dire que les éléments et les variations sont exposés dans les propriétés du fragment et non pas en tant que liens ou entités enfants. Cela permet un accès efficace à la charge utile d’un fragment.
 
-#### Modèles de contenu et fragments de contenu {#content-models-and-content-fragments}
+#### Modèles et fragments de contenu  {#content-models-and-content-fragments}
 
 Actuellement, les modèles qui définissent la structure d’un fragment de contenu ne sont pas exposés via une API HTTP. Par conséquent, le *consommateur* doit disposer d’informations sur le modèle d’un fragment (au moins un minimum), bien que la plupart des informations puissent être déduites de la charge utile (par exemple, les types de données, etc.). Font partie de la définition.
 
-Pour créer un fragment de contenu, le chemin d’accès (référentiel interne) du modèle doit être fourni.
+Pour créer un fragment de contenu, le chemin (référentiel interne) du modèle doit être indiqué.
 
 #### Contenu associé {#associated-content}
 
@@ -258,7 +261,7 @@ L’utilisation peut varier selon que vous utilisez un environnement d’auteur 
 
 ### Lecture/Diffusion {#read-delivery}
 
-Utilisation via :
+Mode d’utilisation :
 
 `GET /{cfParentPath}/{cfName}.json`
 
@@ -271,19 +274,19 @@ La réponse est un JSON sérialisé avec le contenu structuré comme dans le fra
 Deux types d’opérations de lecture sont possibles :
 
 * Lecture d’un fragment de contenu spécifique par chemin, ce qui renvoie la représentation JSON du fragment de contenu.
-* Lecture d’un dossier de fragments de contenu par chemin d’accès : renvoie les représentations JSON de tous les fragments de contenu du dossier.
+* Lecture d’un dossier de fragments de contenu par chemin : cela renvoie les représentations JSON de tous les fragments de contenu du dossier.
 
 ### Créer {#create}
 
-Utilisation via :
+Mode d’utilisation :
 
 `POST /{cfParentPath}/{cfName}`
 
-Le corps doit contenir une représentation JSON du fragment de contenu à créer, notamment tout contenu initial devant être défini sur les éléments de fragment de contenu. It is mandatory to set the `cq:model` property and it must point to a valid content fragment model. Sans cela, il se produira une erreur. It is also necessary to add a header `Content-Type` which is set to `application/json`.
+Le corps doit contenir une représentation JSON du fragment de contenu à créer, notamment tout contenu initial devant être défini sur les éléments de fragment de contenu. Il est obligatoire de définir la propriété `cq:model`, qui doit pointer vers un modèle de fragment de contenu valide. Sans cela, il se produira une erreur. Il est également nécessaire d’ajouter un en-tête `Content-Type`, défini sur `application/json`.
 
 ### Mettre à jour {#update}
 
-Utilisation via
+Mode d’utilisation :
 
 `PUT /{cfParentPath}/{cfName}`
 
@@ -291,9 +294,9 @@ Le corps doit contenir une représentation JSON de ce qui doit être mis à jour
 
 Il peut simplement s’agir du titre ou de la description d’un fragment de contenu, d’un élément unique ou de toutes les valeurs et/ou métadonnées d’un élément.
 
-### Supprimez {#delete}
+### Supprimer {#delete}
 
-Utilisation via :
+Mode d’utilisation :
 
 `DELETE /{cfParentPath}/{cfName}`
 
@@ -301,10 +304,10 @@ Utilisation via :
 
 Il existe quelques restrictions :
 
-* **Les variantes ne peuvent pas être écrites et mises à jour.** Si ces variantes sont ajoutées à une charge utile (par exemple, pour les mises à jour), elles seront ignorées. Toutefois, la variante sera traitée via la diffusion ( `GET`).
+* **Les variantes ne peuvent pas être écrites et mises à jour.** Si ces variantes sont ajoutées à une charge utile (par exemple, pour les mises à jour), elles seront ignorées. Toutefois, la variante sera traitée via la diffusion (`GET`).
 
 * **Les modèles de fragment de contenu ne sont actuellement pas pris en charge** : ils ne peuvent pas être lus ni créés. Pour pouvoir créer un fragment de contenu, ou en mettre un existant à jour, les développeurs doivent connaître le chemin correct vers le modèle de fragment de contenu. Actuellement, l’interface utilisateur d’administration est le seul moyen d’obtenir un aperçu des modèles de fragment de contenu.
-* **Les références sont ignorées**. Il n’existe actuellement aucune vérification pour savoir si un fragment de contenu existant est référencé ou non. Par conséquent, la suppression d’un fragment de contenu peut entraîner des problèmes sur une page qui contient une référence au fragment de contenu supprimé.
+* **Les références sont ignorées**. Il n’existe actuellement aucune vérification pour savoir si un fragment de contenu existant est référencé ou non. Par conséquent, la suppression d’un fragment de contenu, par exemple, peut entraîner des problèmes sur une page contenant une référence au fragment de contenu en question.
 
 ## Codes d’état et messages d’erreur {#status-codes-and-error-messages}
 
@@ -314,15 +317,15 @@ Les codes d’état suivants s’affichent dans les circonstances pertinentes :
 
    Affiché dans le scénario suivant :
 
-   * requesting a content fragment via `GET`
+   * demande d’un fragment de contenu via `GET`
 
-   * successfully updating a content fragment via `PUT`
+   * mise à jour réussie d’un fragment de contenu via `PUT`
 
 1. 201 (Créé)
 
    Affiché dans le scénario suivant :
 
-   * successfully creating a content fragment via `POST`
+   * création réussie d’un fragment de contenu via `POST`
 
 1. 404 (Introuvable)
 
@@ -343,7 +346,7 @@ Les codes d’état suivants s’affichent dans les circonstances pertinentes :
    L’exemple suivant répertorie les scénarios courants dans lesquels ce statut d’erreur est renvoyé, avec le message d’erreur (espacement fixe) généré :
 
    * Le dossier parent n’existe pas (lors de la création d’un fragment de contenu via `POST`)
-   * Aucun modèle de fragment de contenu n’est fourni (cq:model est manquant), ne peut pas être lu (en raison d’un chemin d’accès non valide ou d’un problème d’autorisation) ou il n’existe aucun modèle/modèle de fragment valide :
+   * Aucun modèle de fragment de contenu n’est fourni (cq:model est manquant) ou ne peut être lu (en raison d’un chemin d’accès non valide ou d’un problème d’autorisation) ou il n’existe aucun modèle de fragment/modèle valide :
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
@@ -376,9 +379,9 @@ Les codes d’état suivants s’affichent dans les circonstances pertinentes :
    }
    ```
 
-## Référence d’API {#api-reference}
+## Référence d’API  {#api-reference}
 
-Voir ici pour connaître les références d’API détaillées :
+Pour accéder aux références d’API détaillées :
 <!--
 * [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 -->
@@ -392,5 +395,5 @@ Voir ici pour connaître les références d’API détaillées :
 Pour plus d’informations, voir :
 
 * [Documentation de l’API HTTP Assets](/help/assets/mac-api-assets.md)
-* [Session AEM Gem : OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [Session AEM Gem : OAuth](https://helpx.adobe.com/fr/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
 
