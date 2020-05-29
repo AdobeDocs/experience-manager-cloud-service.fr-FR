@@ -1,8 +1,11 @@
 ---
 title: Fonctionnalités obsolètes et supprimées
 description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et supprimées dans Adobe Experience Manager as a Cloud Service.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+workflow-type: ht
+source-wordcount: '504'
+ht-degree: 100%
 
 ---
 
@@ -26,10 +29,10 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 
 | Fonctions | Fonction obsolète | Remplacement |
 | ------------ | ------------------ | ----------- |
-| Ressources | `DAM Asset Update` flux de travail pour traiter les images imbriquées. | L’assimilation de ressources utilise maintenant les [microservices de ressources](/help/assets/asset-microservices-overview.md). |
-| Ressources | Upload assets directly to AEM. See [deprecated asset upload APIs](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Utilisez le téléchargement [binaire](/help/assets/add-assets.md)direct. Pour plus d’informations techniques, consultez [API de transfert direct](/help/assets/developer-reference-material-apis.md#overview-binary-upload). |
+| Ressources | Workflow `DAM Asset Update` pour traiter les images ingérées. | L’assimilation de ressources utilise maintenant les [microservices de ressources](/help/assets/asset-microservices-overview.md). |
+| Ressources | Chargement direct de ressources vers AEM. Voir [API de chargement de ressources obsolètes](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Utilisez le [chargement de binaire direct](/help/assets/add-assets.md). Pour plus d’informations techniques, consultez [API de transfert direct](/help/assets/developer-reference-material-apis.md#overview-binary-upload). |
 | Ressources | [Certaines étapes de workflow ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) dans le workflow `DAM Asset Update` ne sont pas prises en charge, notamment l’appel d’outils de ligne de commande tels que ImageMagick.. | [Les microservices de ressources](/help/assets/asset-microservices-overview.md) remplacent de nombreux workflows. Pour le traitement personnalisé, utilisez des [workflows de post-traitement](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
-| Ressources | Transcodage FFmpeg des vidéos. | Pour la génération de miniatures FFmpeg, utilisez les microservices [](/help/assets/asset-microservices-overview.md)Asset. Pour le transcodage Fmpeg, utilisez [Contenu multimédia](/help/assets/manage-video-assets.md)dynamique. |
+| Ressources | Transcodage FFmpeg des vidéos. | Pour la génération de miniatures FFmpeg, utilisez les [microservices de ressources](/help/assets/asset-microservices-overview.md). Pour le transcodage FFmpeg, utilisez [Dynamic Media](/help/assets/manage-video-assets.md). |
 
 ## Fonctionnalités supprimées {#removed-features}
 
@@ -40,5 +43,5 @@ Cette section répertorie les capacités et fonctionnalités qui ont été suppr
 | Interface utilisateur | Bien que certaines boîtes de dialogue de l’interface utilisateur classique restent pour l’instant réservées à quelques fonctionnalités sélectionnées, telles que le vérificateur de liens, la purge de version et certaines configurations du Cloud Service, l’accès à l’interface utilisateur classique en général a été supprimé dans l’interface utilisateur du produit AEM. | Interface utilisateur standard |
 | Dynamic Media | Les intégrations précédentes avec [Dynamic Media Classic (Scene7)](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/scene7.html) et le mode [hybride de médias](https://helpx.adobe.com/fr/experience-manager/6-5/assets/using/config-dynamic.html) dynamiques ne sont pas disponibles dans AEM as a Cloud Service. | Utilisez [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) fourni avec Experience Manager as a Cloud Service. |
 | Sites | Composant Portal Director et Portlet | Ces fonctionnalités ont été abandonnées dans AEM 6.4 et ont été supprimées d’AEM. |
-| Sites | Importateur de conception | Cette fonctionnalité a été supprimée, car les sections immuables du référentiel AEM ne sont pas accessibles au moment de l’exécution. |
+| Sites | Importateur de conception | Cette fonctionnalité a été supprimée, car les sections non modifiables du référentiel AEM ne sont pas accessibles au moment de l’exécution. |
 | Ressources | [Le partage d’AEM Assets avec le service principal Marketing Cloud Assets et les services Creative Cloud](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/configure-assets-cc-integration.html) n’est pas disponible. | Pour l’intégration à Creative Cloud, utilisez [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html). |
