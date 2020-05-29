@@ -1,8 +1,11 @@
 ---
 title: Création et organisation des pages
 description: Comment créer et organiser des pages avec AEM
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
+workflow-type: ht
+source-wordcount: '2357'
+ht-degree: 100%
 
 ---
 
@@ -247,7 +250,7 @@ Après avoir créé une page ou accédé à une page existante (dans la console)
 >
 >L’accès à d’autres pages à partir de l’Éditeur de page n’est possible qu’en mode Aperçu, car les liens ne sont pas actifs dans le mode d’édition.
 
-### Copie et collage d’une page    {#copying-and-pasting-a-page}
+### Copier et coller une page  {#copying-and-pasting-a-page}
 
 Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplacement :
 
@@ -265,14 +268,14 @@ Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplace
    >En mode de sélection, cette page est fermée dès qu’elle est copiée.
 
 1. Accédez à l’emplacement destiné à la nouvelle copie de la page.
-1. L’icône **Coller** est disponible avec une flèche déroulante directement à droite :
+1. L’icône **Coller** est disponible avec une flèche déroulante directement à droite :
 
    ![Coller](/help/sites-cloud/authoring/assets/paste.png)
 
-   Vous pouvez :
+   Vous pouvez effectuer l’une des actions suivantes :
 
-   1. Sélectionnez l’icône de page **Coller** : Une copie de la page d’origine et de toutes les pages enfants sera créée à cet emplacement.
-   1. Sélectionnez la flèche de liste déroulante pour afficher l’option **Coller sans enfants** . Une copie de la page d&#39;origine sera créée à cet emplacement ; les pages enfants ne seront pas copiées.
+   1. Sélectionner l’icône de page **Coller** : une copie de la page d’origine et de toutes les pages enfants sera créée à cet emplacement.
+   1. Sélectionner la flèche déroulante pour afficher l’option **Coller sans enfants**. Une copie de la page d’origine sera créée à cet emplacement ; les pages enfants ne seront pas copiées.
    >[!NOTE]
    >
    >Si vous copiez la page à un emplacement où il existe une page du même nom que l’original, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `beach` existe déjà, une nouvelle page portant le nom `beach` deviendra `beach1`.
@@ -369,12 +372,12 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
    >
    >Par mesure de sécurité, l’icône **Supprimer la page** n’est pas disponible en tant qu’action rapide.
 
-1. Une boîte de dialogue vous demandera de confirmer.
+1. Une boîte de dialogue de confirmation s’affiche.
 
-   ![Supprimer, boîte de dialogue](/help/sites-cloud/authoring/assets/delete-page.png)
+   ![Boîte de dialogue Supprimer](/help/sites-cloud/authoring/assets/delete-page.png)
 
-   * **Voulez-vous archiver les pages avant la suppression ?** - Si cette option est cochée, les versions des pages sélectionnées pour suppression seront créées lors de la suppression.
-      * [Les versions peuvent être restaurées ultérieurement.](/help/sites-cloud/authoring/features/page-versions.md)
+   * **Voulez-vous archiver les pages avant la suppression ?** – Si cette case est cochée, les versions des pages sélectionnées pour suppression seront créées lors de la suppression.
+      * [Il est possible de restaurer les versions ultérieurement.](/help/sites-cloud/authoring/features/page-versions.md)
       * Les pages supprimées sans les versions précédentes ne peuvent pas être restaurées.
    * **Annuler** pour abandonner l’action
    * **Supprimer** pour confirmer l’action :
