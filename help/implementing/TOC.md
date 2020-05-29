@@ -1,11 +1,11 @@
 ---
 sub-product: Implémentation pour AEM as a Cloud Service
 user-guide-title: Implémentation pour AEM as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '181'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 95%
 + Développement pour AEM as a Cloud Service {#developing}
    + [Structure de projet AEM](developing/introduction/aem-project-content-package-structure.md)
    + [Package de structure du référentiel de projet AEM](developing/introduction/repository-structure-package.md)
-   + [SDK AEM as a Cloud Service](developing/introduction/aem-as-a-cloud-service-sdk.md)
+   + [SDK AEM as a Cloud Service](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [Conseils de développement pour AEM as a Cloud Service](developing/introduction/development-guidelines.md)
    + [Prise en main du développement d’AEM Sites – Tutoriel WKND](developing/introduction/develop-wknd-tutorial.md)
    + [API d’AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
@@ -39,7 +39,7 @@ ht-degree: 95%
    + [Configuration des formulaires de recherche](developing/extending/search-forms.md)
 + Déploiement sur AEM as a Cloud Service {#deploying}
    + [Déploiement sur AEM as a Cloud Service](deploying/overview.md)
-   + [Configuration d’OSGi pour AEM en tant que service Cloud](deploying/configuring-osgi.md)
+   + [Configuration d’OSGi pour AEM as a Cloud Service](deploying/configuring-osgi.md)
 + Dispatcher en mode cloud {#dispatcher}
    + [Dispatcher en mode cloud](dispatcher/overview.md)
    + [Diffusion de contenu dans AEM as a Cloud Service](dispatcher/content-delivery.md)
