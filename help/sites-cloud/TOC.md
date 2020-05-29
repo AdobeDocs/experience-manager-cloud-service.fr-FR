@@ -1,8 +1,11 @@
 ---
-sub-product: Création de contenu dans AEM en tant que service Cloud
-user-guide-title: Création de contenu dans AEM en tant que service Cloud
-translation-type: tm+mt
+sub-product: Création de contenu dans AEM as a Cloud Service
+user-guide-title: Création de contenu dans AEM as a Cloud Service
+translation-type: ht
 source-git-commit: 18d6079ca7ac3fe41f9126b3d0b6e42487076807
+workflow-type: ht
+source-wordcount: '200'
+ht-degree: 100%
 
 ---
 
@@ -33,7 +36,7 @@ source-git-commit: 18d6079ca7ac3fe41f9126b3d0b6e42487076807
       + [Exportation au format CSV](authoring/fundamentals/csv-export.md)
       + [Composants](authoring/fundamentals/components.md)
       + [Création pour périphériques mobiles](authoring/fundamentals/mobile.md)
-      + [Création d’un contenu accessible (conformité WCAG 2.1) ](authoring/fundamentals/accessible-content.md)
+      + [Création d’un contenu accessible (conformité WCAG 2.1)](authoring/fundamentals/accessible-content.md)
       + [Résolution des incidents](authoring/fundamentals/troubleshooting.md)
       + [Raccourcis clavier](authoring/fundamentals/keyboard-shortcuts.md)
    + Fonctions de création {#features}
@@ -57,11 +60,11 @@ source-git-commit: 18d6079ca7ac3fe41f9126b3d0b6e42487076807
    + Workflows {#workflows}
       + [Utilisation des workflows](authoring/workflows/overview.md)
       + [Application de workflows aux pages ](authoring/workflows/applying.md)
-      + [Participation aux workflows  ](authoring/workflows/participating.md)
-   + Personnalisation   {#personalization}
+      + [Participation aux workflows](authoring/workflows/participating.md)
+   + Personnalisation  {#personalization}
       + [Présentation de la personnalisation](authoring/personalization/overview.md)
-      + [Aperçu des pages à l’aide des données ContextHub ](authoring/personalization/contexthub.md)
-      + [Création de contenu ciblé en mode Ciblage   ](authoring/personalization/targeted-content.md)
+      + [Aperçu des pages à l’aide des données ContextHub](authoring/personalization/contexthub.md)
+      + [Création de contenu ciblé en mode Ciblage](authoring/personalization/targeted-content.md)
       + [Utilisation de contenu ciblé sur plusieurs sites](authoring/personalization/multisite-targeted-content.md)
       + [Structuration de la gestion multisite du contenu ciblé](authoring/personalization/multisite-structure.md)
       + [Gestion des activités](authoring/personalization/activities.md)
