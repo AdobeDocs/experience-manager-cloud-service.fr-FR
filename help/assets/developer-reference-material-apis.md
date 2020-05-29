@@ -2,13 +2,16 @@
 title: 'API Assets pour la gestion des ressources numériques dans Adobe Experience Manager as a Cloud Service '
 description: Les API Assets permettent d’effectuer des opérations CRUD (création, lecture, mise à jour, suppression) de base afin de gérer des ressources, y compris des fichiers binaires, des métadonnées, des rendus, des commentaires et des fragments de contenu.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 27e72bbc0d852eb2c2eb059967c91e6108613965
+workflow-type: ht
+source-wordcount: '1249'
+ht-degree: 100%
 
 ---
 
 
-# API Assets as a Cloud Service{#assets-cloud-service-apis}
+# API Assets as a Cloud Service {#assets-cloud-service-apis}
 
 <!-- 
 Give a list of and overview of all reference information available.
@@ -40,7 +43,7 @@ Voici un aperçu des différences importantes par rapport aux versions antérieu
 Cette méthode doit permettre une gestion plus évolutive et plus performante des chargements de ressources.
 
 > !![NOTE]
-To review client code that implements this approach, refer to the open-source [aem-upload library](https://github.com/adobe/aem-upload)
+Pour examiner le code client qui implémente cette méthode, reportez-vous à la bibliothèque Open Source [aem-upload](https://github.com/adobe/aem-upload).
 
 ### Lancement du chargement {#initiate-upload}
 
@@ -55,7 +58,7 @@ Le corps de la requête doit être constitué de données de formulaire `applica
 * `(string) fileName` : obligatoire. Nom de la ressource tel qu’il apparaîtra dans l’instance.
 * `(number) fileSize` : obligatoire. Longueur totale, en octets, du fichier binaire à charger.
 
-Une seule requête peut être utilisée pour lancer des téléchargements pour plusieurs binaires, à condition que chaque binaire contienne les champs requis. If successful, the request responds with a `201` status code and a body containing JSON data in the following format:
+Une seule requête peut être utilisée afin de lancer des chargements pour plusieurs fichiers binaires, à condition que chaque binaire contienne les champs obligatoires. En cas de succès, la requête renverra un code d’état `201` et un corps contenant des données JSON au format suivant :
 
 ```
 {
@@ -74,17 +77,17 @@ Une seule requête peut être utilisée pour lancer des téléchargements pour p
 }
 ```
 
-* `completeURI` (chaîne) : Appelez cet URI lorsque le téléchargement du fichier binaire est terminé. L&#39;URI peut être un URI absolu ou relatif et les clients doivent pouvoir gérer l&#39;un ou l&#39;autre. En d’autres termes, la valeur peut être `"https://author.acme.com/content/dam.completeUpload.json"` ou `"/content/dam.completeUpload.json"` Voir téléchargement [](#complete-upload)complet.
-* `folderPath` (chaîne) : Chemin d’accès complet au dossier dans lequel le fichier binaire est téléchargé.
-* `(files)` (tableau) : liste d’éléments dont la longueur et l’ordre correspondent à la longueur et à l’ordre de la liste des informations binaires fournies dans la demande d’ouverture.
-* `fileName` (chaîne) : Nom du binaire correspondant, tel qu’il est fourni dans la demande de lancement. Cette valeur doit être incluse dans la requête de fin.
-* `mimeType` (chaîne) : Type MIME du binaire correspondant, tel qu’il est fourni dans la demande de lancement en cours. Cette valeur doit être incluse dans la requête de fin.
-* `uploadToken` (chaîne) : Jeton de téléchargement pour le binaire correspondant. Cette valeur doit être incluse dans la requête de fin.
-* `uploadURIs` (tableau) : liste de chaînes dont les valeurs sont des URI complets vers lesquels le contenu du binaire doit être téléchargé (voir [Télécharger le binaire](#upload-binary)).
-* `minPartSize` (nombre) : Longueur minimale, en octets, des données pouvant être fournies à l’un des URI de téléchargement, s’il existe plusieurs URI.
-* `maxPartSize` (nombre) : Longueur maximale, en octets, des données pouvant être fournies à l’un des URI de téléchargement, s’il existe plusieurs URI.
+* `completeURI` (chaîne) : appelez cet URI lorsque le chargement du fichier binaire est terminé. Il peut s’agir d’un URI absolu ou relatif, et les clients doivent être en mesure de gérer l’un ou l’autre. En d’autres termes, la valeur peut être `"https://author.acme.com/content/dam.completeUpload.json"` ou `"/content/dam.completeUpload.json"` ; voir [Fin du chargement](#complete-upload).
+* `folderPath` (chaîne) : chemin d’accès complet au dossier dans lequel le fichier binaire est chargé.
+* `(files)` (tableau) : liste des éléments dont la longueur et l’ordre correspondent à la longueur et à l’ordre de la liste des informations binaires fournies dans la requête de lancement.
+* `fileName` (chaîne) : nom du fichier binaire correspondant, tel qu’il est fourni dans la requête de lancement. Cette valeur doit être incluse dans la requête de fin.
+* `mimeType` (chaîne) : type MIME du fichier binaire correspondant, tel qu’il est fourni dans la requête de lancement. Cette valeur doit être incluse dans la requête de fin.
+* `uploadToken` (chaîne) : jeton de chargement du fichier binaire correspondant. Cette valeur doit être incluse dans la requête de fin.
+* `uploadURIs` (tableau) : liste des chaînes dont les valeurs sont des URI complets vers lesquels le contenu du fichier binaire doit être chargé (voir [Chargement d’un fichier binaire](#upload-binary)).
+* `minPartSize` (nombre) : longueur minimale, en octets, des données pouvant être fournies à l’un des URI de chargement, s’il en existe plusieurs.
+* `maxPartSize` (nombre) : longueur maximale, en octets, des données pouvant être fournies à l’un des URI de chargement, s’il en existe plusieurs.
 
-### Chargement d’un binaire {#upload-binary}
+### Chargement d’un fichier binaire {#upload-binary}
 
 La sortie de lancement d’un chargement comprend une ou plusieurs valeurs d’URI de chargement. Si plusieurs URI sont fournis, il est de la responsabilité du client de « diviser » le binaire en plusieurs parties et de publier (requête POST) chacune d’elles, dans l’ordre, vers chaque URI. Tous les URI doivent être utilisés, et la taille de chaque partie doit être supérieure à la taille minimale et inférieure à la taille maximale spécifiée dans la réponse de lancement. Ces requêtes seront traitées par les nœuds de périphérie du réseau CDN pour accélérer le chargement des binaires.
 
@@ -98,21 +101,21 @@ En cas de succès, le serveur répond à chaque requête avec un code d’état 
 
 ### Fin du chargement {#complete-upload}
 
-Après avoir téléchargé toutes les parties d’un fichier binaire, envoyez une requête HTTP POST à l’URI complet fourni par les données d’initialisation. The content type of the request body should be `application/x-www-form-urlencoded` form data, containing the following fields.
+Après avoir téléchargé toutes les parties d’un fichier binaire, envoyez une requête HTTP POST à l’URI complet fourni par les données d’initialisation. Le corps de la requête doit être constitué de données de formulaire `application/x-www-form-urlencoded`, contenant les champs suivants.
 
-| Champs | Type | Obligatoire ou non | Description |
+| Champs | Type | Requis ou non | Description |
 |---|---|---|---|
 | `fileName` | Chaîne | Requis | Nom de la ressource, tel qu’il est fourni par les données de lancement. |
 | `mimeType` | Chaîne | Requis | Type de contenu HTTP du binaire, tel qu’il est fourni par les données de lancement. |
 | `uploadToken` | Chaîne | Requis | Jeton de chargement du binaire, tel qu’il est fourni par les données de lancement. |
-| `createVersion` | Booléen | Facultatif | If `True` and an asset with the specified name already exists, then Experience Manager creates a new version of the asset. |
-| `versionLabel` | Chaîne | Facultatif | Si une nouvelle version est créée, l’étiquette associée à la nouvelle version d’un fichier. |
-| `versionComment` | Chaîne | Facultatif | Si une nouvelle version est créée, les commentaires associés à la version. |
-| `replace` | Booléen | Facultatif | Si `True` et qu’un fichier portant le nom spécifié existe déjà, Experience Manager supprime le fichier, puis le recrée. |
+| `createVersion` | Booléen | Facultatif | Si la valeur est définie sur `True` et qu’il existe déjà une ressource portant le nom spécifié, Experience Manager crée une nouvelle version de la ressource. |
+| `versionLabel` | Chaîne | Facultatif | Si une version est créée, le libellé associé à la nouvelle version d’une ressource. |
+| `versionComment` | Chaîne | Facultatif | Si une version est créée, les commentaires associés à la version. |
+| `replace` | Booléen | Facultatif | Si `True` et qu’une ressource portant le nom spécifié existe déjà, Experience Manager supprime la ressource, puis la recrée. |
 
 >!![NOTE]
 >
-> If the asset already exists and neither `createVersion` nor `replace` is specified, then Experience Manager updates the asset&#39;s current version with the new binary.
+> Si la ressource existe déjà et que les champs `createVersion` et `replace` ne sont ni l’un ni l’autre spécifiés, l’instance met à jour la version actuelle de la ressource avec le nouveau fichier binaire.
 
 Comme c’est le cas pour le processus de lancement, les données de la requête de fin peuvent contenir des informations pour plusieurs fichiers.
 
@@ -122,36 +125,36 @@ En cas de succès, le serveur répond avec un code d’état `200`.
 
 ### Bibliothèque de chargement Open Source {#open-source-upload-library}
 
-Pour en savoir plus sur les algorithmes de téléchargement ou pour créer vos propres scripts et outils de téléchargement, Adobe fournit des bibliothèques et des outils open source comme point de départ :
+Pour en savoir plus sur les algorithmes de chargement ou pour créer vos propres scripts et outils de chargement, Adobe fournit des bibliothèques et des outils Open Source comme point de départ :
 
-* [Bibliothèque de téléchargement aem open-source](https://github.com/adobe/aem-upload)
-* [Outil de ligne de commande open-source](https://github.com/adobe/aio-cli-plugin-aem)
+* [Bibliothèque de chargement AEM Open Source](https://github.com/adobe/aem-upload)
+* [Outil de ligne de commande Open Source](https://github.com/adobe/aio-cli-plugin-aem)
 
 ### API de chargement de ressources obsolètes {#deprecated-asset-upload-api}
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-Pour Adobe Experience Manager en tant que service Cloud, seules les nouvelles API de téléchargement sont prises en charge. Les API d’Adobe Experience Manager 6.5 sont obsolètes. Les méthodes liées au téléchargement ou à la mise à jour des ressources ou des rendus (tout transfert binaire) sont déconseillées dans les API suivantes :
+Pour Adobe Experience Manager as a Cloud Service, seules les nouvelles API de chargement sont prises en charge. Les API d’Adobe Experience Manager 6.5 sont obsolètes. Les méthodes liées au chargement ou à la mise à jour de ressources ou de rendus (tout chargement de binaires) sont obsolètes dans les API suivantes :
 
 * [API HTTP AEM Assets](mac-api-assets.md)
 * API Java `AssetManager`, comme `AssetManager.createAsset(..)`
 
 >[!MORELIKETHIS]
-* [Bibliothèque](https://github.com/adobe/aem-upload)de téléchargement aem open source.
-* [Outil](https://github.com/adobe/aio-cli-plugin-aem)de ligne de commande open-source.
+* [Bibliothèque de chargement AEM Open Source](https://github.com/adobe/aem-upload).
+* [Outil de ligne de commande Open Source](https://github.com/adobe/aio-cli-plugin-aem).
 
 
 ## Workflows de traitement et de post-traitement des ressources {#post-processing-workflows}
 
-Dans Experience Manager, le traitement des ressources est basé sur la configuration des Profils **[!UICONTROL de]** traitement qui utilise des microservices [de](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)ressources. Le traitement ne nécessite pas d’extensions développeur.
+Dans Experience Manager, le traitement des ressources est basé sur la configuration des **[!UICONTROL Profils de traitement]** qui utilise des [microservices de ressources](asset-microservices-configure-and-use.md#get-started-using-asset-microservices). Le traitement ne nécessite pas d’extensions de développeur.
 
-Pour la configuration du processus de post-traitement, utilisez les workflows standard avec des extensions avec des étapes personnalisées.
+Pour la configuration du workflow de post-traitement, utilisez les workflows standard avec des extensions pour les étapes personnalisées.
 
-## Prise en charge des étapes du processus dans le processus de post-traitement {#post-processing-workflows-steps}
+## Prise en charge des étapes d’un workflow de post-traitement {#post-processing-workflows-steps}
 
-Les clients qui effectuent la mise à niveau vers Experience Manager en tant que service Cloud à partir des versions précédentes d’Experience Manager peuvent utiliser des microservices de ressources pour le traitement des ressources. Les microservices de ressources natifs au cloud sont beaucoup plus simples à configurer et à utiliser. Certaines étapes de processus utilisées dans le processus de mise à jour des ressources [!UICONTROL de] gestion des actifs dans la version précédente ne sont pas prises en charge.
+Les clients qui effectuent la mise à niveau vers Experience Manager as a Cloud Service à partir des versions précédentes d’Experience Manager peuvent utiliser des microservices pour le traitement des ressources. Les microservices de ressources natifs en mode cloud sont beaucoup plus simples à configurer et à utiliser. Certaines étapes appliquées dans le workflow [!UICONTROL Ressource de mise à jour de la gestion des actifs numériques] de la version précédente ne sont pas prises en charge.
 
-Les étapes de processus suivantes sont prises en charge dans Experience Manager en tant que service Cloud.
+Les étapes de workflow suivantes sont prises en charge dans Experience Manager as a Cloud Service.
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
