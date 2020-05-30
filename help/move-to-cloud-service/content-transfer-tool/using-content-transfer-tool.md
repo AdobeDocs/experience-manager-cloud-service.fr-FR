@@ -2,9 +2,9 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: f154ffacbeeee1993a9cc3bd3bd274be33dca7a7
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1527'
 ht-degree: 3%
 
 ---
@@ -20,6 +20,8 @@ Suivez la section ci-dessous pour comprendre les points importants à prendre en
 
 * Si vous utilisez un Environnement ** Sandbox, veillez à ce que votre environnement soit mis à niveau vers la version du 29 mai 2020 ou une version ultérieure. Si vous utilisez un Environnement *de* production, il est automatiquement mis à jour.
 
+* Pour utiliser l’outil de transfert de contenu, vous devez être un utilisateur administrateur sur votre instance source et appartenir au groupe d’administration dans l’instance de service Cloud à laquelle vous transférez du contenu. Les utilisateurs non privilégiés ne pourront pas récupérer le jeton d&#39;accès pour utiliser l’outil de transfert de contenu.
+
 * Pendant la phase d’extraction, l’outil de transfert de contenu est exécuté sur une instance source AEM active.
 
 * La phase ** d&#39;importation pour l&#39;auteur réduira le déploiement de l&#39;auteur dans son ensemble. Cela signifie que l’auteur AEM ne sera pas disponible pendant l’ensemble du processus d’assimilation.
@@ -29,7 +31,7 @@ Suivez la section ci-dessous pour comprendre les points importants à prendre en
 L&#39;outil de transfert de contenu peut être téléchargé dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le package via Package Manager sur votre instance source Adobe Experience Manager (AEM).
 
 >[!NOTE]
->Consultez [Accès à AEM en tant que SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html#accessing-the-aem-as-a-cloud-service-sdk) de service Cloud pour plus d’informations.
+>Téléchargez l’outil de transfert de contenu depuis [Adobe Experience Cloud](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 ## Exécution de l’outil de transfert de contenu {#running-tool}
 
@@ -120,7 +122,8 @@ Pour extraire votre jeu de migration de l’outil de transfert de contenu, proc�
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/extract-4.png)
 
    >[!NOTE]
-   > Vous devrez actualiser la page pour mettre en vue l’état mis à jour.
+   >Vous devrez actualiser la page pour mettre en vue l’état mis à jour.
+   >Lorsque la phase d’extraction est lancée, un verrou d’écriture est créé et libéré après *60 secondes*. Donc, si une extraction est arrêtée, vous devez attendre une minute pour que le verrou soit relâché avant de recommencer l&#39;extraction.
 
 #### Extraction supérieure {#top-up-extraction-process}
 
@@ -250,10 +253,12 @@ Les fichiers créés dans *OUT_DIR* spécifiés ci-dessus pour assurer la cohér
 
 En tant qu’utilisateur, vous pouvez constater les changements de comportement suivants dans l’interface utilisateur de l’outil de transfert de contenu :
 
-1. L’utilisateur crée un jeu de migration pour une URL d’auteur (Développement/Etape/Production) et effectue correctement l’extraction et l’assimilation.
+* L’utilisateur crée un jeu de migration pour une URL d’auteur (Développement/Etape/Production) et effectue correctement l’extraction et l’assimilation.
 
-1. L’utilisateur crée ensuite un jeu de migration pour la même URL d’auteur et effectue l’extraction et l’assimilation sur le nouveau jeu de migration. L’interface utilisateur indique que l’état d’assimilation du premier jeu de migration devient **ÉCHOUÉ** et qu’aucun journal n’est disponible.
+* L’utilisateur crée ensuite un jeu de migration pour la même URL d’auteur et effectue l’extraction et l’assimilation sur le nouveau jeu de migration. L’interface utilisateur indique que l’état d’assimilation du premier jeu de migration devient **ÉCHOUÉ** et qu’aucun journal n’est disponible.
 
-1. Cela ne signifie pas que l’assimilation du premier jeu de migration a échoué. Ce comportement est visible car lorsqu’une nouvelle tâche d’assimilation est lancée, elle supprime la tâche d’assimilation précédente. Par conséquent, l’état des modifications sur le premier jeu de migration doit être ignoré.
+* Cela ne signifie pas que l’assimilation du premier jeu de migration a échoué. Ce comportement est visible car lorsqu’une nouvelle tâche d’assimilation est lancée, elle supprime la tâche d’assimilation précédente. Par conséquent, l’état des modifications sur le premier jeu de migration doit être ignoré.
+
+* Les icônes de l’interface utilisateur de l’outil de transfert de contenu peuvent sembler différentes des captures d’écran affichées dans ce guide ou ne s’affichent pas du tout selon la version de l’instance AEM source.
 
 
