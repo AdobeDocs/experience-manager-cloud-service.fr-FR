@@ -1,8 +1,11 @@
 ---
 title: Prévisualisation de fichiers 3D
 description: Découvrez comment prévisualiser des fichiers 3D
-translation-type: ht
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+translation-type: tm+mt
+source-git-commit: e8b6f7e80c1a19c645e1c848a6bfe5c082935d21
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 100%
 
 ---
 
@@ -12,6 +15,8 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 Experience Manager prend en charge le téléchargement, la diffusion et l’aperçu interactif des ressources 3D dans le cadre du processus de création.
 
 La visionneuse 3D interactive est disponible sur la page de détails de la ressource dans AEM. La visionneuse comprend, entre autres, un ensemble de contrôles de caméra interactifs qui permettent d’orbiter, de zoomer et de faire un panoramique sur la ressource 3D.
+
+<!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
 ## Formats pris en charge pour l’aperçu 3D{#supported-3d-previewing-assets}
 
