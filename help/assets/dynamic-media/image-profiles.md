@@ -2,10 +2,10 @@
 title: Profils d’image Dynamic Media
 description: Créez des profils d’image qui contiennent des paramètres pour le masquage flou et le recadrage intelligent ou l’échantillon intelligent, ou les deux, puis appliquez le profil à un dossier de ressources d’images.
 translation-type: tm+mt
-source-git-commit: 937b06829f290b1e5a2108c456a759100c450a14
+source-git-commit: 16fa9a9783f42d0a9dcf541613aedb890cb41158
 workflow-type: tm+mt
-source-wordcount: '2652'
-ht-degree: 97%
+source-wordcount: '2655'
+ht-degree: 94%
 
 ---
 
@@ -16,11 +16,11 @@ Lorsque vous chargez des images, vous pouvez les recadrer automatiquement en app
 
 ## Options de recadrage {#crop-options}
 
-Vous avez le choix entre deux options de recadrage d’image, ainsi qu’une option permettant d’automatiser la création des échantillons de couleur et d’image.
+<!-- CQDOC-16069 -->Smart Crop coordinates are aspect ratio dependent. That is, for the various smart crop settings in an image profile, if the aspect ratio is the same for the added dimensions that are in the image profile, then the same aspect ratio is sent to Dynamic media. Because of this, Adobe recommends that you use the same crop area. Doing so will ensure that there is no impact to different dimensions used in the image profile.
 
->[!IMPORTANT]
->
->Gardez à l’esprit que chaque génération de recadrage dynamique créée nécessite un traitement supplémentaire. Par exemple, l’ajout de plus de cinq proportions de recadrage intelligent peut entraîner un taux d’assimilation des ressources lent. Il peut également augmenter la charge sur les systèmes. Etant donné que vous pouvez appliquer une recadrage dynamique au niveau des dossiers, Adobe recommande de l’utiliser *uniquement* dans les dossiers où cela est nécessaire.
+Gardez à l’esprit que chaque génération de recadrage dynamique créée nécessite un traitement supplémentaire. Par exemple, l’ajout de plus de cinq proportions de recadrage intelligent peut entraîner un taux d’assimilation des ressources lent. Il peut également augmenter la charge sur les systèmes. Etant donné que vous pouvez appliquer une recadrage dynamique au niveau des dossiers, Adobe vous recommande de l’utiliser *uniquement* dans les dossiers où cela est nécessaire.
+
+Vous avez le choix entre deux options de recadrage d’image. Vous avez également la possibilité d’automatiser la création de nuances de couleurs et d’images.
 
 <table>
  <tbody>
@@ -39,7 +39,7 @@ Vous avez le choix entre deux options de recadrage d’image, ainsi qu’une opt
      <li>Point de départ du recadrage : la gauche est X et le haut est Y</li>
      <li>Calcul horizontal : dimension horizontale en pixels de l’image originale moins la gauche puis moins la droite.</li>
      <li>Calcul vertical : hauteur verticale en pixels moins le haut puis moins le bas.</li>
-    </ul> <p>Prenons l’exemple d’une image de 4 000 x 3 000 pixels. On utilise les valeurs : haut=250 ; bas=500 ; gauche=300 ; droite=700.</p> <p>À partir du coin supérieur gauche (300,250), recadrez l’image en utilisant l’espace de remplissage de (4000-300-700, 3000-250-500 ou 3000,2250).</p> </td>
+    </ul> <p>Prenons l’exemple d’une image de 4 000 x 3 000 pixels. Vous utilisez des valeurs : Haut=250, Bas=500, Gauche=300, Droite=700.</p> <p>À partir du coin supérieur gauche (300,250), recadrez l’image en utilisant l’espace de remplissage de (4000-300-700, 3000-250-500 ou 3000,2250).</p> </td>
   </tr>
   <tr>
    <td>Recadrage intelligent</td>
@@ -62,7 +62,7 @@ Sélectionnez l’option **[!UICONTROL Accentuation]** pour affiner l’effet d�
 
 >[!NOTE]
 >
->Le masque flou est appliqué uniquement aux rendus réduits au sein du PTIFF (pyramid tiff), dont la résolution est réduite de plus de 50 %. Cela signifie que les rendus de taille plus grande à l’intérieur du ptiff ne sont pas affectés par le masque flou tandis que les rendus de plus petite taille, comme les vignettes, sont altérés (et affichent le masque flou).
+>Le masque flou est appliqué uniquement aux rendus réduits au sein du PTIFF (pyramid tiff), dont la résolution est réduite de plus de 50 %. Cela signifie que les rendus de la plus grande taille au sein du tiff ne sont pas affectés par le masquage flou alors que les rendus de la plus petite taille, tels que les miniatures, sont modifiés (et montreront le masque flou).
 
 L’option **[!UICONTROL Accentuation]** propose les options de filtre suivantes :
 
@@ -195,7 +195,7 @@ Voir aussi [Modification du recadrage intelligent ou de l’échantillon intelli
 
 1. Appuyez sur le dossier pour ouvrir son contenu.
 1. Appuyez sur l’image dont vous voulez ajuster le recadrage intelligent ou l’échantillon intelligent.
-1. Dans la barre d’outils, appuyez sur **[!UICONTROL Recadrage intelligent]**.
+1. In the toolbar, tap **[!UICONTROL Smart Crop]**.
 
 1. Procédez de l’une des manières suivantes :
 
@@ -274,6 +274,6 @@ Vous pouvez supprimer un profil d’image appliqué à un dossier dans le menu *
 1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Ressources]**, puis au dossier duquel vous souhaitez supprimer un profil d’image.
 1. Dans le dossier, appuyez sur la coche pour le sélectionner, puis sur **[!UICONTROL Propriétés]**.
 1. Sélectionnez l’onglet **[!UICONTROL Profils d’image]**.
-1. Dans le menu déroulant **[!UICONTROL Nom du profil]**, sélectionnez **[!UICONTROL Aucun]**, puis appuyez sur **[!UICONTROL Enregistrer et fermer]**.
+1. From the **[!UICONTROL Profile Name]** drop-down list, select **[!UICONTROL None]**, then tap **[!UICONTROL Save &amp; Close]**.
 
    Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
