@@ -2,10 +2,10 @@
 title: Profils d’image Dynamic Media
 description: Créez des profils d’image qui contiennent des paramètres pour le masquage flou et le recadrage intelligent ou l’échantillon intelligent, ou les deux, puis appliquez le profil à un dossier de ressources d’images.
 translation-type: tm+mt
-source-git-commit: 39c4bb1fe5af9746ee824677f3de018d8ec36641
+source-git-commit: 59dacf83fd3df03bf9cc62d7816b8b7d7ee5ab9b
 workflow-type: tm+mt
-source-wordcount: '2663'
-ht-degree: 94%
+source-wordcount: '2736'
+ht-degree: 91%
 
 ---
 
@@ -20,7 +20,9 @@ Lorsque vous chargez des images, vous pouvez les recadrer automatiquement en app
 
 ## Options de recadrage {#crop-options}
 
-<!-- CQDOC-16069 -->Smart Crop coordinates are aspect ratio dependent. That is, for the various smart crop settings in an image profile, if the aspect ratio is the same for the added dimensions that are in the image profile, then the same aspect ratio is sent to Dynamic media. Because of this, Adobe recommends that you use the same crop area. Doing so will ensure that there is no impact to different dimensions used in the image profile.
+<!-- CQDOC-16069 for the paragraph directly below -->
+
+Les coordonnées de recadrage intelligent dépendent du rapport L/H. En d’autres termes, pour les différents paramètres de recadrage intelligent d’un profil d’image, si le format est le même pour les dimensions ajoutées dans le profil d’image, le même format est envoyé au support dynamique. C’est pourquoi Adobe vous recommande d’utiliser la même zone de récolte. Cela permet de s’assurer qu’il n’y a pas d’impact sur les différentes dimensions utilisées dans le profil d’image.
 
 Gardez à l’esprit que chaque génération de recadrage dynamique créée nécessite un traitement supplémentaire. Par exemple, l’ajout de plus de cinq proportions de recadrage intelligent peut entraîner un taux d’assimilation des ressources lent. Il peut également augmenter la charge sur les systèmes. Etant donné que vous pouvez appliquer une recadrage dynamique au niveau des dossiers, Adobe vous recommande de l’utiliser *uniquement* dans les dossiers où cela est nécessaire.
 
