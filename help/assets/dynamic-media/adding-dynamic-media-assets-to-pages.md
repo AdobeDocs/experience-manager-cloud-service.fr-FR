@@ -2,10 +2,10 @@
 title: Ajout de ressources Dynamic Media aux pages
 description: Comment ajouter des composants Dynamic Media à une page dans AEM
 translation-type: tm+mt
-source-git-commit: 5bcde6d1ec97b159405416fa07953100cf7bf5a3
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
 workflow-type: tm+mt
-source-wordcount: '3132'
-ht-degree: 92%
+source-wordcount: '3137'
+ht-degree: 91%
 
 ---
 
@@ -22,7 +22,7 @@ Si vous utilisez AEM comme système de gestion de contenu web, vous pouvez ajout
 
 ## Ajout d’un composant Dynamic Media à une page  {#adding-a-dynamic-media-component-to-a-page}
 
-L’ajout d’un composant Dynamic Media, Interactive Media, Panoramic Media ou Video 360 Media à une page est identique à l’ajout d’un composant sur n’importe quelle page. Les composants Dynamic Media sont décrits dans les sections suivantes.
+Ajouter un composant Média 3D, Contenu multimédia dynamique, Contenu multimédia interactif, Contenu multimédia panoramique, Vidéo de recadrage dynamique ou Vidéo 360 sur une page revient à ajouter un composant à une page. Les composants Dynamic Media sont décrits dans les sections suivantes.
 
 **Ajout d’un composant Dynamic Media à une page**
 
@@ -51,7 +51,7 @@ L’ajout d’un composant Dynamic Media, Interactive Media, Panoramic Media ou 
 
    Composant Dynamic Media Média vidéo 360.
 
-1. Une fois que vous avez terminé, près du coin supérieur droit de la boîte de dialogue, appuyez sur la coche pour enregistrer vos modifications.
+1. Lorsque vous avez terminé, dans le coin supérieur droit de la boîte de dialogue, cochez la case pour enregistrer vos modifications.
 
 ### Enabling Dynamic Media components {#enabling-dynamic-media-components}
 
