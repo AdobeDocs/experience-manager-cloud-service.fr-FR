@@ -2,25 +2,25 @@
 title: Prévisualisation de fichiers 3D
 description: Découvrez comment prévisualiser des fichiers 3D
 translation-type: tm+mt
-source-git-commit: e8b6f7e80c1a19c645e1c848a6bfe5c082935d21
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 100%
+source-wordcount: '566'
+ht-degree: 90%
 
 ---
 
 
-# Prévisualisation de fichiers 3D{#previewing-3d-assets}
+# Prévisualisation de fichiers 3D dans AEM{#previewing-3d-assets}
 
-Experience Manager prend en charge le téléchargement, la diffusion et l’aperçu interactif des ressources 3D dans le cadre du processus de création.
+Adobe Experience Manager prend en charge le transfert, la diffusion et la prévisualisation interactive des ressources 3D dans le cadre du processus de création.
 
 La visionneuse 3D interactive est disponible sur la page de détails de la ressource dans AEM. La visionneuse comprend, entre autres, un ensemble de contrôles de caméra interactifs qui permettent d’orbiter, de zoomer et de faire un panoramique sur la ressource 3D.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Formats pris en charge pour l’aperçu 3D{#supported-3d-previewing-assets}
+## Formats pris en charge pour la prévisualisation 3D dans AEM{#supported-3d-previewing-assets}
 
-L’aperçu 3D interactif prend en charge les formats de fichier suivants :
+La prévisualisation 3D interactive dans AEM prend en charge les formats de fichier suivants :
 
 | Extension de fichier 3D | Format de fichier | Type MIME | Notes |
 |---|---|---|---|
@@ -40,13 +40,13 @@ L’aperçu 3D interactif prend en charge les formats de fichier suivants :
     material_0_baseColor.jpeg
     material_0_normal.jpeg
 
-## Considérations de performance lors de la prévisualisation de ressources 3D{#performance-3d-previewing-assets}
+## Performance considerations when you preview 3D assets in AEM{#performance-3d-previewing-assets}
 
 Le temps d’ouverture d’un fichier 3D dans la page d’affichage des détails du fichier dépend de plusieurs facteurs, tels que la bande passante, la complexité de l’image et les latences sur le serveur.
 
 De plus, les capacités de l’ordinateur client, par exemple un poste de travail, un ordinateur portable ou un appareil mobile tactile, doivent être prises en compte lorsque vous manipulez la caméra de manière interactive. Un système relativement puissant avec de bonnes capacités graphiques peut rendre l’expérience interactive d’affichage en 3D plus fluide et plus favorable.
 
-**Pour prévisualiser des ressources 3D**
+**Pour prévisualisation de fichiers 3D dans AEM**
 
 1. Assurez-vous d’avoir chargé des ressources 3D dans AEM.
 Consultez [Formats pris en charge pour la prévisualisation 3D](#supported-3d-previewing-assets) et [Téléchargement de ressources](/help/assets/manage-digital-assets.md#uploading-assets).
