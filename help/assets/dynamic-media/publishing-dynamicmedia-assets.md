@@ -1,19 +1,23 @@
 ---
 title: Publication de ressources Dynamic Media
 description: Découvrez comment publier des ressources Dynamic Media.
-translation-type: ht
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+contentOwner: Rick Brough
+translation-type: tm+mt
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+workflow-type: tm+mt
+source-wordcount: '436'
+ht-degree: 77%
 
 ---
 
 
 # Publication de ressources Dynamic Media  {#publishing-dynamic-media-assets}
 
-Pour publier vos ressources Dynamic Media, sélectionnez-les en appuyant sur l’icône **[!UICONTROL Publier]**. Une fois les ressources Dynamic Media publiées, vous pouvez les inclure dans une page web via une URL ou une incorporation.
+Pour publier vos fichiers Contenu multimédia dynamique, sélectionnez les fichiers que vous avez déjà téléchargés et appuyez sur **[!UICONTROL Publier]** ou Publication **** rapide. Une fois vos fichiers Contenu multimédia dynamique publiés, vous pouvez les inclure dans une page Web au moyen d’une URL ou en incorporant du code sur la page.
 
 Vous pouvez également publier immédiatement les ressources que vous téléchargez, sans intervention de l’utilisateur. Vous pouvez également publier ces ressources de manière sélective. Voir [Configuration de Dynamic Media](config-dm.md).
 
-En **[!UICONTROL mode Carte]** une petite icône en forme de globe apparaît directement sous le nom d’une ressource pour indiquer que celle-ci est publiée. En mode **[!UICONTROL Liste]**, une colonne **[!UICONTROL Publié]** indique les ressources qui sont publiées et celles qui ne le sont pas.
+Dans la Vue **** Carte, une petite icône en forme de globe apparaît directement sous le nom d’un fichier et à gauche de la date et de l’heure pour indiquer qu’il est publié. En mode **[!UICONTROL Liste]**, une colonne **[!UICONTROL Publié]** indique les ressources qui sont publiées et celles qui ne le sont pas.
 
 >[!NOTE]
 >
@@ -23,7 +27,7 @@ Si vous envisagez de publier des ressources vidéo immédiatement après les avo
 
 Voir aussi [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md).
 
-Voir aussi [Incorporation de la visionneuse de vidéos dans une page web.](embed-code.md)
+See also [Embedding the Dynamic Media Video viewer or Image viewer on a web page.](embed-code.md)
 
 >[!NOTE]
 >
