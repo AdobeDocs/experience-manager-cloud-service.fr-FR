@@ -2,10 +2,10 @@
 title: Navigation
 description: Navigation - Service Cloud
 translation-type: tm+mt
-source-git-commit: b2549ac13f996449bc41ac18ba6afbf22e116597
+source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 2%
+source-wordcount: '492'
+ht-degree: 1%
 
 ---
 
@@ -18,20 +18,44 @@ Une fois votre connexion établie, vous serez dirigé vers le landing page de Cl
 
 ![](assets/first_timelogin1.png)
 
-## Accès SysAdmin {#sysadmin-access}
+## Tâches SysAdmin {#sysadmin-tasks}
 
-Un utilisateur du rôle Administrateur système dispose d’un accès en un clic à l’emplacement dans la console d’administration à partir duquel les rôles utilisateur ou les autorisations de Cloud Manager sont gérés.
+Un utilisateur du rôle Administrateur système peut désormais accéder directement à la console d’administration pour gérer les rôles et autorisations et accéder aux instances AEM.
 
 ### Gestion des rôles {#manage-roles}
 
-En tant qu’utilisateur dans l’administrateur système, une option **Gérer les rôles** est disponible sur le landing page en regard du Programme **de** Ajoute. Vous pouvez ainsi accéder en un clic à l’emplacement dans la Console d’administration à partir duquel les rôles utilisateur ou les autorisations de Cloud Manager peuvent être gérés.
+En tant qu’utilisateur du rôle Administrateur système, vous disposez d’un accès en un clic à l’emplacement dans la console **d’** administration à partir duquel les rôles utilisateur ou les autorisations de Cloud Manager sont gérés.
 
-Reportez-vous à [Accès à Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) pour en savoir plus sur la façon d’ajouter des utilisateurs à un profil Reportez-vous à Accès à Cloud Managerpour en savoir plus sur la façon d’ajouter des utilisateurs à un .
+Consultez [Accès à Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) pour en savoir plus sur la manière d’ajouter des utilisateurs à un profil.
 
-### Gestion de l’accès à AEM {#manage-access-aem}
+>[!NOTE]
+>Pour certaines organisations qui ont eu accès à AEM en tant que service Cloud avant janvier 2020, celles-ci seront transférées vers la console d’administration Adobe et le Profil Produit et Environnement devra être sélectionné.
 
-En tant qu’utilisateur de l’administrateur système, vous disposez d’un accès d’un simple clic à l’instance d’auteur directement à partir de Cloud Manager.
+1. Accédez au landing page de Cloud Manager et cliquez sur **Gérer l’accès**.
+
+   ![](assets/sys-admin1.png)
+
+1. Cliquez sur **Gérer l’accès** pour accéder à la console **d’** administration à partir de laquelle vous pouvez gérer les rôles utilisateur ou les autorisations de Cloud Manager.
+
+   ![](assets/sys-admin2.png)
+
+### Gestion de l’accès à l’instance d’auteur {#manage-access-aem}
+
+En tant qu’utilisateur du rôle Administrateur système, vous disposez d’un accès en un clic à la console **d’** administration à partir de laquelle vous pouvez accéder directement à l’instance d’auteur et gérer l’accès.
+
+>[!NOTE]
+>Pour certaines organisations qui ont eu accès à AEM en tant que service Cloud avant janvier 2020, celles-ci seront transférées vers la console d’administration Adobe et le Profil Produit et Environnement devra être sélectionné.
+
 Pour plus d’informations, voir [Accès à une instance dans AEM en tant que service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) Cloud.
+
+1. Accédez à la carte **Environnements** à partir de la page *Aperçu* ou de la page **Environnements** pour utiliser l’option **Gérer l’accès, comme illustré dans la figure ci-dessous.**
+
+   ![](assets/manage-access1.png)
+
+1. Cliquez sur **Gérer l’accès** pour accéder à la console **** d’administration à partir de laquelle vous avez accès à l’instance d’auteur d’un environnement.
+
+   ![](assets/sys-admin3.png)
+
 
 ## Pour les clients AMS existants {#existing-aem}
 
