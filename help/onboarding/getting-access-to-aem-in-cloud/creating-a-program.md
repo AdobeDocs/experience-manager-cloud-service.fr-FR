@@ -2,9 +2,9 @@
 title: Création d’un Programme - Service Cloud
 description: Création d’un Programme - Service Cloud
 translation-type: tm+mt
-source-git-commit: b2549ac13f996449bc41ac18ba6afbf22e116597
+source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,19 @@ Pour créer un programme de sandbox, procédez comme suit :
 
 Un utilisateur de Programme Sandbox dans le rôle Propriétaire ** d’entreprise ou *Deployment Manager* dans Cloud Manager peut supprimer son jeu d’environnements de production et d’étape via l’interface utilisateur de Cloud Manager.
 
-L’option de suppression est disponible à partir de la carte d’Environnement sur la page *Aperçu* ainsi que de la page **Environnements** . La sélection de l’option de suppression sur Production ou Stage supprime également l’autre dans l’ensemble.
+>[!NOTE]
+>La sélection de l’option de suppression sur Production ou Stage supprime également l’autre dans l’ensemble.
+
+L’option de suppression est disponible à partir du landing page, comme illustré ci-dessous :
+
+![](assets/delete-sandbox1.png)
+
+Ou,
+
+Sélectionnez **Supprimer le Programme** dans la page *Aperçu* pour supprimer votre Programme Sandbox.
+
+![](assets/delete-sandbox2.png)
+
 
 ## Création d’un Programme régulier {#create-regular-program}
 
