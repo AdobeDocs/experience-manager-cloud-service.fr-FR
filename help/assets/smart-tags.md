@@ -3,15 +3,15 @@ title: Balisez les images avec des services artificiellement intelligents.
 description: Balisez des images avec des services artificiellement intelligents qui appliquent des balises commerciales contextuelles et descriptives à l’aide des services Adobe Sensei.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2400'
 ht-degree: 34%
 
 ---
 
 
-# Balisez vos images à l’aide de services dynamiques. {#smart-tag-assets}
+# Formation du service Smart Tag et balisage de vos images {#train-service-tag-assets}
 
 Les entreprises qui traitent les ressources numériques utilisent de plus en plus le vocabulaire contrôlé par taxonomie dans les métadonnées des ressources. Il comprend essentiellement une liste de mots-clés que les employés, les partenaires et les clients utilisent couramment pour se référer à leurs ressources numériques et les rechercher. Le balisage des actifs avec un vocabulaire contrôlé par taxonomie permet d’identifier et de récupérer facilement les actifs par des recherches basées sur les balises.
 
@@ -25,7 +25,7 @@ In the background, the Smart Tags uses an artificial intelligence framework of [
 
 Pour utiliser le balisage intelligent, effectuez les tâches suivantes :
 
-* [Intégration d’Experience Manager avec les E/S](#integrate-aem-with-aio)Adobe.
+* [Intégration d’Experience Manager à Adobe Developer Console](#integrate-aem-with-aio).
 * [Comprendre les modèles de balises et les directives](#understand-tag-models-guidelines).
 * [Entraînez le modèle](#train-model).
 * [Balisez vos ressources](#tag-assets)numériques.
@@ -35,11 +35,11 @@ Les balises actives ne s’appliquent qu’aux [!DNL Adobe Experience Manager As
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
 
-## Intégration [!DNL Experience Manager] des E/S Adobe {#integrate-aem-with-aio}
+## Intégration [!DNL Experience Manager] à Adobe Developer Console {#integrate-aem-with-aio}
 
-You can integrate [!DNL Adobe Experience Manager] with the Smart Tags using Adobe I/O. Use this configuration to access the Smart Tags service from within [!DNL Experience Manager].
+Vous pouvez intégrer [!DNL Adobe Experience Manager] des balises actives à l’aide de Adobe Developer Console. Utilisez cette configuration pour accéder au service de balises intelligentes depuis [!DNL Experience Manager].
 
-Voir [Configuration d’Experience Manager pour le balisage intelligent des ressources](smart-tags-configuration.md) pour les tâches de configuration des balises actives. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe I/O gateway before forwarding your request to the Smart Tags service.
+Voir [Configuration d’Experience Manager pour le balisage intelligent des ressources](smart-tags-configuration.md) pour les tâches de configuration des balises actives. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Tags service.
 
 ## Comprendre les modèles de balises et les directives {#understand-tag-models-guidelines}
 
