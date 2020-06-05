@@ -2,9 +2,9 @@
 title: Création d’un Programme - Service Cloud
 description: Création d’un Programme - Service Cloud
 translation-type: tm+mt
-source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
+source-git-commit: 5658b2cc853ff7e6222a7f35e56527577d2c7324
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ L’option de suppression est disponible à partir du landing page, comme illust
 
 Ou,
 
-Sélectionnez **Supprimer le Programme** dans la page *Aperçu* pour supprimer votre Programme Sandbox.
+Sélectionnez **Supprimer le Programme** dans la page Aperçu **du** Programme pour supprimer votre Programme Sandbox.
 
 ![](assets/delete-sandbox2.png)
 
