@@ -1,30 +1,165 @@
 ---
-title: Balises intelligentes améliorées
-description: Appliquez des balises commerciales contextuelles et descriptives à l’aide du service AI et ML d’Adobe Sensei afin d’améliorer la découverte de ressources et la vitesse du contenu.
+title: Balisez les images avec des services artificiellement intelligents.
+description: Balisez des images avec des services artificiellement intelligents qui appliquent des balises commerciales contextuelles et descriptives à l’aide des services Adobe Sensei.
 contentOwner: AG
-translation-type: ht
-source-git-commit: dfa9b099eaf7f0d155986bbab7d56901876d98f6
+translation-type: tm+mt
+source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
+workflow-type: tm+mt
+source-wordcount: '2398'
+ht-degree: 34%
 
 ---
 
 
-# Balisez intelligemment vos ressources {#smart-tag-assets}
+# Balisez vos images à l’aide de services dynamiques. {#smart-tag-assets}
 
-## Présentation des balises intelligentes améliorées {#overview-of-enhanced-smart-tags}
+Les entreprises qui traitent les ressources numériques utilisent de plus en plus le vocabulaire contrôlé par taxonomie dans les métadonnées des ressources. Il comprend essentiellement une liste de mots-clés que les employés, les partenaires et les clients utilisent couramment pour se référer à leurs ressources numériques et les rechercher. Le balisage des actifs avec un vocabulaire contrôlé par taxonomie permet d’identifier et de récupérer facilement les actifs par des recherches basées sur les balises.
 
-Les entreprises qui traitent les ressources numériques utilisent de plus en plus le vocabulaire contrôlé par taxonomie dans les métadonnées des ressources. Il comprend essentiellement une liste des mots-clés que les employés, les partenaires et les clients utilisent fréquemment pour mentionner et rechercher des ressources numériques d’une classe particulière. Le balisage des ressources avec vocabulaire contrôlé par taxonomie permet de s’assurer que les ressources peuvent être facilement identifiées et récupérées par des recherches reposant sur les balises.
+Par rapport aux vocabulaires de langue naturelle, le balisage basé sur la taxonomie métier permet d’aligner les actifs avec une société et de s’assurer que les actifs les plus pertinents apparaissent dans les recherches. Par exemple, un fabricant de voiture peut baliser des images de voiture avec des noms de modèle afin que seules les images pertinentes s’affichent lors de la recherche pour concevoir une campagne de promotion.
 
-Comparé aux vocabulaires des langages naturels, le balisage des ressources numériques basé sur la taxonomie métier aide à les aligner avec les activités d’une entreprise et à assurer que les ressources les mieux adaptées apparaissent dans les recherches. Par exemple, un constructeur de voitures peut baliser les images de voitures avec les noms de modèles afin d’afficher uniquement les images appropriées lors de recherches d’images de différents modèles pour concevoir une campagne de promotion.
+In the background, the Smart Tags uses an artificial intelligence framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes.
 
-En arrière-plan, le service de contenu dynamique utilise le framework d’intelligence artificielle d’[Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) pour entraîner son algorithme de reconnaissance d’image sur votre structure de balises et votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes.
+<!-- TBD: Create a similar flowchart for how training works in CS.
+![flowchart](assets/flowchart.gif) 
+-->
+
+Pour utiliser le balisage intelligent, effectuez les tâches suivantes :
+
+* [Intégration d’Experience Manager avec les E/S](#integrate-aem-with-aio)Adobe.
+* [Comprendre les modèles de balises et les directives](#understand-tag-models-guidelines).
+* [Entraînez le modèle](#train-model).
+* [Balisez vos ressources](#tag-assets)numériques.
+* [Gérez les balises et les recherches](#manage-smart-tags-and-searches).
+
+Les balises actives ne s’appliquent qu’aux [!DNL Adobe Experience Manager Assets] clients. Les balises actives sont disponibles à l’achat en tant que module complémentaire à [!DNL Experience Manager].
+
+<!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
+
+## Intégration [!DNL Experience Manager] des E/S Adobe {#integrate-aem-with-aio}
+
+You can integrate [!DNL Adobe Experience Manager] with the Smart Tags using Adobe I/O. Use this configuration to access the Smart Tags service from within [!DNL Experience Manager].
+
+Voir [Configuration d’Experience Manager pour le balisage intelligent des ressources](smart-tags-configuration.md) pour les tâches de configuration des balises actives. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe I/O gateway before forwarding your request to the Smart Tags service.
+
+## Comprendre les modèles de balises et les directives {#understand-tag-models-guidelines}
+
+Un modèle de balise est un groupe de balises connexes qui sont associées à un aspect visuel de l’image. Par exemple, une collection de chaussures peut avoir des balises différentes mais toutes les balises sont liées à des chaussures et peuvent appartenir au même modèle de balise. Les balises ne peuvent concerner que les aspects visuels distinctement différents des images. Pour comprendre la représentation du contenu d’un modèle de formation dans [!DNL Experience Manager], visualisez un modèle de formation en tant qu’entité de niveau supérieur composée d’un groupe de balises ajoutées manuellement et d’exemples d’images pour chaque balise. Chaque balise peut être appliquée exclusivement à une image.
+
+Les balises qui ne peuvent pas être gérées de manière réaliste sont liées à :
+
+* Aspects non visuels et abstraits, tels que l&#39;année ou la saison de la sortie d&#39;un produit, l&#39;humeur ou l&#39;émotion évoquée par une image.
+* Des différences visuelles fines dans des produits tels que des chemises avec ou sans colliers ou de petits logos de produits incorporés sur des produits.
+
+Avant de créer un modèle de balise et de former le service, identifiez un ensemble de balises uniques qui décrivent le mieux les objets des images dans le contexte de votre entreprise. Ensure that the assets in your curated set conform to [the training guidelines](#training-guidelines).
+
+### Directives de formation {#training-guidelines}
+
+Les images de votre visionneuse de formations doivent respecter les consignes suivantes :
+
+**Quantité et taille :** 10 images au minimum et 50 images au maximum par balise.
+
+**Cohérence** : les images pour une balise doivent être visuellement similaires. Il est préférable d’additionner les balises portant sur les mêmes aspects visuels (tels que le même type d’objets dans une image) dans un modèle de balise unique. For example, it is not a good idea to tag all of these images as `my-party` (for training) because they are not visually similar.
+
+![Images d’illustration donnant un exemple d’instructions d’entraînement](assets/do-not-localize/coherence.png)
+
+**Couverture** : les images d’entraînement doivent être suffisamment variées. L’idée est de fournir quelques exemples raisonnablement différents pour apprendre à AEM à se concentrer sur les bons éléments. Si vous appliquez la même balise sur des images visuellement différentes, incluez au moins cinq exemples de chaque type. Par exemple, pour la balise *pose-tête-baissée-mannequin*, incluez davantage d’images d’entraînement similaires à l’image mise en évidence ci-dessous pour que le service reconnaisse les images similaires avec plus de précision lors du balisage.
+
+![Images d’illustration donnant un exemple d’instructions d’entraînement](assets/do-not-localize/coverage_1.png)
+
+**Distraction/obstruction** : l’entraînement du service donne de meilleurs résultats sur les images qui ont moins de distractions (telles que des arrière-plans importants ou des objets/personnes sans lien avec le sujet principal). Par exemple, pour la balise *chaussure-décontractée*, la seconde image n’est pas un bon candidat pour l’entraînement.
+
+![Images d’illustration donnant un exemple d’instructions d’entraînement](assets/do-not-localize/distraction.png)
+
+**Complétude :** si une image est admissible pour plusieurs balises, ajoutez toutes les balises applicables avant d’inclure l’image à des fins de formation. Par exemple, pour les balises telles que *raincoat* et *model-side-view*, ajoutez les deux balises sur la ressource éligible avant de l’inclure pour la formation.
+
+![Images d’illustration donnant un exemple d’instructions d’entraînement](assets/do-not-localize/completeness.png)
+
+**Nombre de balises**: Adobe recommande de former un modèle à l’aide d’au moins deux balises distinctes et d’au moins 10 images différentes pour chaque balise. Dans un modèle de balise unique, n’ajoutez pas plus de 50 balises.
+
+**Nombre d&#39;exemples**: Pour chaque balise, ajoutez au moins 10 exemples. Cependant, Adobe recommande environ 30 exemples. 50 exemples au maximum par balise sont pris en charge.
+
+**Empêcher les faux positifs et les conflits**: Adobe recommande de créer un modèle de balise unique pour un aspect visuel unique. Organisez les modèles de balises de manière à éviter le chevauchement des balises entre les modèles. Par exemple, n’utilisez pas de balises communes comme `sneakers` dans deux noms de modèles de balises différents `shoes` et `footwear`. Le processus de formation remplace un modèle de balise entraîné par l’autre pour un mot-clé commun.
+
+**Exemples**: Voici d&#39;autres exemples d&#39;orientation :
+
+* Créez un modèle de balise qui inclut,
+   * uniquement les balises relatives aux modèles de voiture.
+   * uniquement les balises liées aux couleurs des chemises.
+   * seulement les étiquettes relatives aux vestes pour les femmes et les hommes.
+* Ne pas créer,
+   * un modèle de balise qui inclut les modèles de voiture publiés en 2019 et 2020.
+   * plusieurs modèles de balises qui incluent les mêmes quelques modèles de voiture.
+
+**Images utilisées pour la formation**: Vous pouvez utiliser les mêmes images pour former différents modèles de balises. Cependant, elles n’associent pas une image à plusieurs balises dans un modèle de balise. Il est donc possible de baliser la même image avec des balises différentes appartenant à différents modèles de balises.
+
+Vous ne pouvez pas annuler la formation. Les directives ci-dessus doivent vous aider à choisir les bonnes images à former.
+
+## Formation du modèle pour vos balises personnalisées {#train-model}
+
+Pour créer et former un modèle pour vos balises spécifiques à votre entreprise, procédez comme suit :
+
+1. Créez les balises nécessaires et la structure de balises appropriée. Téléchargez les images appropriées dans le référentiel DAM.
+1. Dans [!DNL Experience Manager] l’interface utilisateur, accédez à **[!UICONTROL Ressources]** > Modèle **** de formation.
+1. Cliquez sur **[!UICONTROL Créer]**. Fournissez un **[!UICONTROL titre]**, **[!UICONTROL description]**.
+1. Recherchez et sélectionnez les balises existantes dans `cq:tags` lesquelles vous souhaitez former le modèle. Cliquez sur **[!UICONTROL Suivant]**.
+1. Dans la boîte de dialogue **[!UICONTROL Sélectionner les ressources]** , cliquez sur **[!UICONTROL Ajouter les ressources]** par rapport à chaque balise. Recherchez dans le référentiel DAM ou parcourez le référentiel pour sélectionner au moins 10 et au plus 50 images. Sélectionnez des fichiers et non le dossier. Une fois les images sélectionnées, cliquez sur **[!UICONTROL Sélectionner]**.
+1. Pour prévisualisation des miniatures des images sélectionnées, cliquez sur l’accordéon devant une balise . Vous pouvez modifier votre sélection en cliquant sur **[!UICONTROL Ajouter les ressources]**. Une fois la sélection effectuée, cliquez sur **[!UICONTROL Envoyer]**. L’interface utilisateur affiche une notification au bas de la page indiquant que la formation est lancée.
+1. Vérifiez l’état de la formation dans la colonne **[!UICONTROL État]** pour chaque modèle de balise. Les états possibles sont [!UICONTROL En attente], [!UICONTROL Formation]et [!UICONTROL Echec].
+
+![Processus de formation du modèle de balisage pour le balisage intelligent](assets/smart-tag-model-training-flow.png)
+
+*Figure : Etapes du processus de formation pour former le modèle de balisage.*
+
+### État et rapport de la formation à la Vue {#training-status}
+
+Pour vérifier si le service Balises intelligentes est formé à vos balises dans l’ensemble de ressources d’identification, consultez le rapport de processus d’identification dans la console Rapports.
+
+1. Dans [!DNL Experience Manager] l’interface, accédez à **[!UICONTROL Outils > Ressources > Rapports]**.
+1. In the **[!UICONTROL Asset Reports]** page, click **[!UICONTROL Create]**.
+1. Select the **[!UICONTROL Smart Tags Training]** report, and then click **[!UICONTROL Next]** from the toolbar.
+1. Indiquez un titre et une description pour le rapport. Sous **[!UICONTROL Planifier le rapport]**, laissez l’option **[!UICONTROL Maintenant]** sélectionnée. Si vous souhaitez planifier le rapport pour une date ultérieure, sélectionnez **[!UICONTROL Plus tard]** et spécifiez une date et une heure. Then, click **[!UICONTROL Create]** from the toolbar.
+1. Dans la page **[!UICONTROL Rapports de ressources]**, sélectionnez le rapport que vous avez généré. To view the report, click **[!UICONTROL View]** from the toolbar.
+1. Passez en revue les détails du rapport. Le rapport affiche l’état d’identification des balises que vous avez formées. The green color in the **[!UICONTROL Training Status]** column indicates that the Smart Tags service is trained for the tag. La couleur jaune indique que le service n’est pas complètement entraîné pour une balise particulière. Dans ce cas, ajoutez d’autres images avec la balise particulière et exécutez le processus d’entraînement pour l’entraînement complet du service sur la balise. Si vos balises ne s’affichent pas dans ce rapport, réexécutez le processus de formation pour ces balises.Balises
+1. To download the report, select it from the list, and click **[!UICONTROL Download]** from the toolbar. Le rapport est téléchargé sous forme de feuille de calcul Microsoft Excel.
+
+## Marquer des ressources {#tag-assets}
+
+Après avoir formé le service Balises dynamiques, vous pouvez déclencher le processus de balisage afin d’appliquer automatiquement les balises appropriées à un ensemble différent de ressources similaires. Vous pouvez appliquer le processus de balisage régulièrement ou à tout moment. Le processus de balisage s’applique à la fois aux fichiers et aux dossiers.
+
+### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
+
+1. Dans l’interface d’Experience Manager, accédez à **[!UICONTROL Outils > Processus > Modèles]**.
+1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Smart Tags Assets]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
+
+   ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
+
+1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder containing assets on which you want to apply your tags automatically.
+1. Indiquez un titre pour le workflow et un commentaire facultatif. Cliquez sur **[!UICONTROL Exécuter]**.
+
+   ![tagging_dialog](assets/tagging_dialog.png)
+
+   Accédez au dossier Fichiers et passez en revue les balises pour vérifier si vos ressources sont correctement balisées. For details, see [manage smart tags](#manage-smart-tags-and-searches).
+
+### Tag assets from the timeline {#tagging-assets-from-the-timeline}
+
+1. Depuis l’interface utilisateur Assets, sélectionnez le dossier contenant les ressources ou des ressources spécifiques auxquelles vous souhaitez appliquer des balises intelligentes.
+1. Dans le coin supérieur gauche, ouvrez le **[!UICONTROL journal]**.
+1. Ouvrez les actions dans la partie inférieure de la barre latérale gauche et cliquez sur Processus **[!UICONTROL de]** Début.
+
+   ![début_workflow](assets/start_workflow.png)
+
+1. Sélectionnez le workflow **[!UICONTROL Balisage intelligent des ressources (gestion des actifs numériques)]** et spécifiez un titre pour le workflow.
+1. Cliquez sur **[!UICONTROL Démarrer]**. Le workflow applique vos balises sur les ressources. Accédez au dossier Fichiers et passez en revue les balises pour vérifier si vos fichiers sont correctement balisés. For details, see [manage smart tags](#manage-smart-tags-and-searches).
 
 >[!NOTE]
 >
->Les services de contenu dynamique ne s’appliquent qu’aux clients d’Assets. Le service de contenu dynamique est disponible à l’achat en tant que module complémentaire d’Experience Manager.
+>Lors des cycles de balisage suivants, seules les ressources modifiées sont à nouveau balisées avec des balises nouvellement entraînées. Cependant, même les ressources non altérées sont balisées si l’écart entre le dernier cycle de balisage et le cycle de balisage actuel pour le processus de balisage dépasse 24 heures. Pour les workflows de balisage périodiques, les ressources non modifiées sont balisées lorsque l’intervalle de temps dépasse 6 mois.
 
-<!-- ![flowchart](assets/flowchart.gif) -->
+### Marquer les fichiers téléchargés {#tag-uploaded-assets}
 
-## Gestion des balises intelligentes et des recherches {#manage-smart-tags-and-searches}
+Experience Manager peut automatiquement baliser les ressources que les utilisateurs téléchargent vers DAM. Pour ce faire, les administrateurs configurent un flux de travail afin d’ajouter une étape disponible de la section aux ressources des balises actives. Voir [comment activer le balisage intelligent pour les fichiers](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)téléchargés.
+
+## Manage smart tags and image searches {#manage-smart-tags-and-searches}
 
 Vous pouvez organiser les balises intelligentes pour supprimer toute balise non pertinente qui pourrait avoir été attribuée à vos images de marque, afin que seules les balises les plus pertinentes s’affichent.
 
@@ -34,10 +169,10 @@ Vous pouvez également attribuer un rang supérieur à une balise afin d’accro
 
 1. Dans l’encadré Omnisearch, recherchez des ressources sur la base d’une balise.
 1. Examinez les résultats de la recherche pour identifier une image que vous ne trouvez pas pertinente.
-1. Sélectionnez l’image, puis cliquez/appuyez sur l’icône **[!UICONTROL Gérer les balises]** dans la barre d’outils.
-1. Examinez les balises sur la page **[!UICONTROL Gérer les balises]**. Si vous ne souhaitez pas que l’image puisse être recherchée sur la base d’une balise spécifique, sélectionnez la balise, puis cliquez/appuyez sur l’icône Supprimer dans la barre d’outils. Sinon, cliquez/appuyez sur le symbole `X` qui apparaît en face du libellé.
-1. Pour attribuer un rang supérieur à une balise, sélectionnez-la, puis cliquez/appuyez sur l’icône Convertir dans la barre d’outils. La balise faisant l’objet d’une conversion est déplacée dans la section **[!UICONTROL Balises]**.
-1. Cliquez/appuyez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL OK]** pour fermer la boîte de dialogue de réussite.
+1. Select the image, and then click the **[!UICONTROL Manage Tags]** icon from the toolbar.
+1. Examinez les balises sur la page **[!UICONTROL Gérer les balises]**. Si vous ne souhaitez pas que l’image soit recherchée en fonction d’une balise spécifique, sélectionnez la balise, puis cliquez sur l’icône Supprimer de la barre d’outils. Alternatively, click `X` symbol that appears beside the label.
+1. Pour attribuer un rang supérieur à une balise, sélectionnez-la et cliquez sur l’icône Promouvoir dans la barre d’outils. La balise faisant l’objet d’une conversion est déplacée dans la section **[!UICONTROL Balises]**.
+1. Click **[!UICONTROL Save]**, and then click **[!UICONTROL OK]** to close the Success dialog.
 1. Accédez à la page Propriétés de l’image. Remarquez que la balise que vous avez convertie se voit attribuer une pertinence élevée et apparaît donc plus haut dans les résultats de la recherche.
 
 ### Comprendre les résultats de recherche AEM avec des balises dynamiques   {#understandsearch}
@@ -54,151 +189,23 @@ Les résultats de recherche qui correspondent à tous les termes de recherche da
 1. correspondances de `woman running` dans les balises intelligentes.
 1. correspondances de `woman` ou de `running` dans des balises intelligentes.
 
-<!-- 
+### Limites du balisage {#limitations}
 
-## Training the Smart Content Service {#training-the-smart-content-service}
+Les balises intelligentes améliorées sont basées sur des modèles d’apprentissage d’images de marque et de leurs balises. Ces modèles ne sont pas toujours parfaits pour identifier les balises. La version actuelle des balises actives présente les restrictions suivantes :
 
-For the Smart Content Service to recognize your business taxonomy, run it on a set of assets that already include tags that are relevant to your business. After training, the service can apply the same taxonomy on a similar set of assets.
+* Impossibilité d’identifier des différences subtiles dans les images. Par exemple, les chemises à l&#39;état mince ou les chemises à l&#39;état normal.
+* Impossibilité d’identifier des balises basées sur des motifs/éléments minuscules d’une image. Par exemple, des logos sur des T-shirts.
+* Le balisage est pris en charge dans les paramètres régionaux gérés par AEM. For a list of languages, see [Smart Tags release notes](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html).
 
-You can train the service multiple times to improve its ability to apply relevant tags. After each training cycle, run a tagging workflow and check whether your assets are tagged appropriately.
-
-You can train the Smart Content Service periodically or on requirement basis.
-
->[!NOTE]
->
->The training workflow runs on folders only.
-
-### Periodic training {#periodic-training}
-
-You can enable the Smart Content Service to train periodically on the assets and associated tags within a folder. Open the properties page of your asset folder, select **[!UICONTROL Enable Smart Tags]** under the **[!UICONTROL Details]** tab, and save the changes.
-
-Once this option is selected for a folder, AEM runs a training workflow automatically to train the Smart Content Service on the folder assets and their tags. By default, the training workflow runs on a weekly basis at 12:30 AM on Saturdays.
-
-### On-demand training {#on-demand-training}
-
-You can train the Smart Content Service whenever required from the Workflow console.
-
-1. Tap/click the AEM logo, and go to **[!UICONTROL Tools > Workflow > Models]**.
-1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL Smart Tags Training]** workflow and then tap/click **[!UICONTROL Start Workflow]** from the toolbar.
-1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder that includes the tagged assets for training the service.
-1. Specify a title for the workflow and a add a comment. Then, tap/click **[!UICONTROL Run]**. The assets and tags are submitted for training.
+Pour rechercher des ressources avec des balises actives (régulières ou améliorées), utilisez la fonction Ressources Omnisearch (recherche de texte intégral). Il n’y a aucun prédicat de recherche distinct pour les balises intelligentes.
 
 >[!NOTE]
 >
->Once the assets in a folder are processed for training, only the modified assets are processed in subsequent training cycles.
+>La capacité des balises actives à apprendre à utiliser vos balises et à les appliquer à d’autres images dépend de la qualité des images que vous utilisez pour la formation.
+>Pour obtenir des résultats optimaux, Adobe recommande d’utiliser des images visuellement similaires afin d’entraîner le service pour chaque balise.
 
-### Viewing training reports {#viewing-training-reports}
-
-To check whether the Smart Content Service is trained on your tags in the training set of assets, review the training workflow report from the Reports console.
-
-1. Tap/click the AEM logo, and go to **[!UICONTROL Tools > Assets > Reports]**.
-1. In the **[!UICONTROL Asset Reports]** page, tap/click **[!UICONTROL Create]**.
-1. Select the **[!UICONTROL Smart Tags Training]** report, and then tap/click **[!UICONTROL Next]** from the toolbar.
-1. Specify a title and description for the report. Under **[!UICONTROL Schedule Report]**, leave the **[!UICONTROL Now]** option selected. If you want to schedule the report for later, select **[!UICONTROL Later]** and specify a date and time. Then, tap/click **[!UICONTROL Create]** from the toolbar.
-1. In the **[!UICONTROL Asset Reports]** page, select the report you generated. To view the report, tap/click the **[!UICONTROL View]** icon from the toolbar.
-1. Review the details of the report.
-
-   The report displays the training status for the tags you trained. The green color in the **[!UICONTROL Training Status]** column indicates that the Smart Content Service is trained for the tag. Yellow color indicates that the service is not completely trained for a particular tag. In this case, add more images with the particular tag and run the training workflow to train the service completely on the tag.
-
-   If you do not see your tags in this report, run the training workflow again for these tags.
-
-1. To download the report, select it from the list, and tap/click the **[!UICONTROL Download]** icon from the toolbar. The report downloads as an Excel file.
-
-## Tagging assets automatically {#tagging-assets-automatically}
-
-After you have trained the Smart Content Service, you can trigger the tagging workflow to automatically apply appropriate tags on a different set of similar assets.
-
-You can run the tagging workflow periodically or whenever required.
-
->[!NOTE]
+>[!MORELIKETHIS]
 >
->The tagging workflow runs on both assets and folders.
+>* [Configuration d’Experience Manager pour le balisage intelligent](smart-tags-configuration.md)
+>* [Comprendre comment les balises actives aident à gérer les ressources](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
 
-### Periodic tagging {#periodic-tagging}
-
-You can enable the Smart Content Service to periodically tag assets within a folder. Open the properties page of your asset folder, select **[!UICONTROL Enable Smart Tags]** under the **[!UICONTROL Details]** tab, and save the changes.
-
-Once this option is selected for a folder, the Smart Content Service automatically tags the assets within the folder. By default, the tagging workflow runs every day at 12:00 AM.
-
-### On-demand tagging {#on-demand-tagging}
-
-You can trigger the tagging workflow from the following to instantly tag your assets:
-
-* Workflow console
-* Timeline
-
->[!NOTE]
->
->If you run the tagging workflow from the timeline, you can apply tags on a maximum of 15 assets at a time.
-
-#### Tagging assets from the Workflow console {#tagging-assets-from-the-workflow-console}
-
-1. Tap/click the AEM logo, and go to **[!UICONTROL Tools > Workflow > Models]**.
-1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Smart Tags Assets]** workflow and then tap/click **[!UICONTROL Start Workflow]** from the toolbar.
-1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder containing assets on which you want to apply your tags automatically.
-1. Specify a title for the workflow and an optional comment. Then, tap/click **[!UICONTROL Run]**.
-
-Navigate to the asset folder and review the tags to verify whether the Smart Content Service tagged your assets properly. For details, see [Managing Smart Tags](manage-smart-tags.md).
-
-#### Tagging assets from the timeline {#tagging-assets-from-the-timeline}
-
-1. From the Assets user interface, select the folder containing assets or specific assets to which you want to apply smart tags.
-1. Tap/click the GlobalNav icon and open the timeline.
-1. Tap/click the arrow at the bottom, and then tap/click **[!UICONTROL Start Workflow]**.
-1. Select the **[!UICONTROL DAM Smart Tag Assets]** workflow, and specify a title for the workflow.
-1. Tap/click **[!UICONTROL Start]**. The workflow applies your tags on assets. Navigate to the asset folder and review the tags to verify whether the Smart Content Service tagged your assets properly. For details, see [Managing Smart Tags](manage-smart-tags.md).
-
->[!NOTE]
->
->In the subsequent tagging cycles, only the modified assets are tagged again with newly-trained tags.
->
->However, even unaltered assets are tagged if the gap between the last and current tagging cycles for the tagging workflow exceeds 24 hours.
->
->For periodic tagging workflows, unaltered assets are tagged when the gap exceeds 6 months.
-
-
-## Smart Content Service Training Guidelines {#smart-content-service-training-guidelines}
-
-To be able to effectively tag your brand images, the Smart Content Service requires that the training images conform to certain guidelines. For best results, images in your training set should conform to the following guidelines:
-
-**Quantity and size:** Minimum 30 images per tag. Minimum of 500 pixels on the longer side.
-
-**Coherence**: Images for a tag should be visually similar.
-
-For example, it is not a good idea to tag all of these images as `my-party` (for training) because they are not visually similar.
-
-![Illustrative images to exemplify the guidelines for training](assets/do-not-localize/coherence.png)
-
-**Coverage**: There should be sufficient variety in the images in the training. The idea is to supply a few but reasonably diverse examples so that AEM learns to focus on the right things. If you're applying the same tag on visually dissimilar images, include at least five examples of each kind.
-
-For example, for the tag *model-down-pose*, include more training images similar to the highlighted image below for the service to identify similar images more accurately during tagging.
-
-![Illustrative images to exemplify the guidelines for training](assets/do-not-localize/coverage_1.png)
-
-**Distraction/obstruction**: The service trains better on images that have less distraction (prominent backgrounds, unrelated accompaniments, such as objects/persons with the main subject).
-
-For example, for the tag *casual-shoe*, the second image is not a good training candidate.
-
-![Illustrative images to exemplify the guidelines for training](assets/do-not-localize/distraction.png)
-
-**Completeness:** If an image qualifies for more than one tag, add all applicable tags before including the image for training. For example, for tags, such as *raincoat* and *model-side-view*, add both the tags on the eligible asset before including it for training.
-
-![Illustrative images to exemplify the guidelines for training](assets/do-not-localize/completeness.png)
-
-### Training limitations {#limitations}
-
-Enhanced smart tags are based on learning models of brand images and their tags. These models are not always perfect at identifying tags. The current version of the Smart Content Service has the following limitations:
-
-* Inability to recognize subtle differences in images. For example, slim versus regular fitted shirts.
-* Inability to identify tags based on tiny patterns/parts of an image. For example, logos on T-shirts.
-* Tagging is supported in the locales that AEM is supported in. For a list of languages, see [Smart Content Services release notes](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html).
-
-To search for assets with smart tags (regular or enhanced), use the Assets Omnisearch (full-text search). There is no separate search predicate for smart tags. 
-
->[!NOTE]
->
->The ability of the Smart Content Service to train on your tags and apply them on other images depends on the quality of images you use for training. 
->
->For best results, Adobe recommends that you use visually similar images to train the service for each tag.
-
--->
