@@ -1,17 +1,20 @@
 ---
-title: Utilisation de l’éditeur de texte enrichi pour créer du contenu
-description: Utilisation de l’éditeur de texte enrichi pour créer du contenu
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+title: Utilisez l’éditeur de texte enrichi d’Adobe Experience Manager pour créer du contenu.
+description: Utilisez l’éditeur de texte enrichi d’Experience Manager pour créer du contenu.
+translation-type: tm+mt
+source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 48%
 
 ---
 
 
-# Utilisation de l’éditeur de texte enrichi pour créer du contenu {#use-rich-text-editor-to-author-content}
+# Use the Rich Text Editor to author content {#use-rich-text-editor-to-author-content}
 
 L’éditeur de texte enrichi est une composante essentielle à la saisie de contenu texte dans AEM. Il constitue la base de divers composants.
 
-## Édition statique {#in-place-editing}
+## In-place editing {#in-place-editing}
 
 Si vous sélectionnez un composant textuel en cliquant/appuyant une seule fois dessus, il s’affiche dans la [barre d’outils de composant](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar), comme pour n’importe quel composant.
 
@@ -23,19 +26,17 @@ Si vous cliquez/appuyez à nouveau sur le composant ou si vous l’avez sélecti
 
 Cette barre d’outils propose les options suivantes :
 
-* **Format** : permet de définir les styles Gras, Italique et Souligné.
-* **Listes** : permet de créer des listes à puces ou numérotées, ou de définir une mise en retrait.
-* **Lien hypertexte**
-* **Dissocier**
-* **Plein écran**
-* **Fermer**
-* **Enregistrer**
+* **Format**: Mettez le texte en gras ou en italique ou soulignez-le.
+* **Listes**: Créez des listes à puces ou numérotées et définissez le retrait.
+* **Hyperlien**: Créez des liens.
+* **Dissocier**: Supprimez l’hyperlien.
+* **Plein écran**: Ouvrez l’éditeur en mode plein écran.
+* **Fermer**: Arrêtez de modifier.
+* **Enregistrer**: Enregistrez les modifications.
 
-## Modification en plein écran{#full-screen-editing}
+## Modification en plein écran {#full-screen-editing}
 
-Dans le cas des composants texte, si vous sélectionnez le mode Plein écran dans la [barre d’outils](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar), l’éditeur de texte enrichi s’ouvre et le reste du contenu de la page est masqué.
-
-![Bouton Plein écran de l’éditeur de texte enrichi](/help/sites-cloud/authoring/assets/editing-full-screen.png)
+Pour les composants basés sur du texte, appuyez sur le bouton ![plein écran Mode](/help/sites-cloud/authoring/assets/editing-full-screen.png) RTE de la barre d’outils [](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) pour ouvrir l’éditeur de texte enrichi et masquer le reste du contenu de la page.
 
 Le mode Plein écran affiche toutes les options configurées que vous pouvez utiliser pour la création. La disponibilité des options dépend de la configuration. <!--Full screen mode displays all the configured options that you can use for authoring. The availability of options [depends on the configuration](/help/sites-administering/rich-text-editor.md).-->
 
@@ -43,15 +44,15 @@ Le mode Plein écran affiche toutes les options configurées que vous pouvez uti
 
 Les options supplémentaires de l’éditeur de texte enrichi sont les suivantes :
 
-* **Ancre** : crée une ancre dans le texte grâce à laquelle vous pourrez ensuite établir un lien ou créer une référence.
+* **Ancrage**: Créez une ancre dans le texte à laquelle vous pourrez ultérieurement lier ou créer une référence.
 * **Aligner le texte à gauche**
 * **Texte centré**
 * **Aligner le texte à droite**
 
-Pour fermer le mode Plein écran, cliquez sur l’icône Réduire.
+Cliquez sur Réduire pour fermer le mode plein écran.
 
 ![Bouton de réduction de l’éditeur de texte enrichi](/help/sites-cloud/authoring/assets/rte-minimize.png)
 
->[!NOTE]
+>[!Tip]
 >
->La copie de listes imbriquées depuis Microsoft Word dans l’éditeur de texte enrichi peut donner des résultats incohérents et peut nécessiter un ajustement manuel après avoir collé le texte dans l’éditeur de texte enrichi.
+>La copie de listes imbriquées de Microsoft Word dans RTE peut donner des résultats incohérents. Au lieu de cela, collez le texte et effectuez un ajustement manuel.
