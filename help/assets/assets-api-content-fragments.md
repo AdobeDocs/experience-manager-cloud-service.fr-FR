@@ -1,11 +1,11 @@
 ---
 title: Prise en charge des fragments de contenu d’Adobe Experience Manager as a Cloud Service dans l’API Assets HTTP
 description: Découvrez la prise en charge des fragments de contenu Adobe Experience Manager as a Cloud Service dans l’API HTTP Assets.
-translation-type: ht
-source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: d4a377e963f088f72b34f01103a3877cd699ccb2
+workflow-type: tm+mt
 source-wordcount: '1892'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -20,6 +20,7 @@ ht-degree: 100%
 >
 >* l’API REST Assets,
 >* y compris la prise en charge des fragments de contenu
+
 >
 >
 L’implémentation actuelle de l’API HTTP Assets est basée sur le style architectural [REST](https://fr.wikipedia.org/wiki/Representational_state_transfer).
@@ -147,6 +148,7 @@ Si l’API REST Assets est utilisée dans un environnement sans conditions d’a
 >
 >* [CORS/AEM expliqué](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [Vidéo - Développement pour CORS et AEM](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
@@ -313,7 +315,7 @@ Il existe quelques restrictions :
 
 Les codes d’état suivants s’affichent dans les circonstances pertinentes :
 
-1. 200 (OK)
+* **200** (OK)
 
    Affiché dans le scénario suivant :
 
@@ -321,19 +323,19 @@ Les codes d’état suivants s’affichent dans les circonstances pertinentes :
 
    * mise à jour réussie d’un fragment de contenu via `PUT`
 
-1. 201 (Créé)
+* **201** (créé)
 
    Affiché dans le scénario suivant :
 
    * création réussie d’un fragment de contenu via `POST`
 
-1. 404 (Introuvable)
+* **404** (introuvable)
 
    Affiché dans le scénario suivant :
 
    * le fragment de contenu demandé n’existe pas
 
-1. 500 (Erreur interne du serveur)
+* **** 500 (Erreur interne du serveur)
 
    >[!NOTE]
    >
@@ -364,6 +366,7 @@ Les codes d’état suivants s’affichent dans les circonstances pertinentes :
 
       * `Could not update content element`
       * `Could not update fragment data of element`
+
    Les messages d’erreur détaillés sont généralement renvoyés de la façon suivante :
 
    ```xml
