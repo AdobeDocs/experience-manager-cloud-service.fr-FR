@@ -2,9 +2,9 @@
 title: Notes de mise à jour d’Adobe Experience Manager as a Cloud Service version 2020.6.0
 description: Notes de mise à jour d’Experience Manager version 2020.6.0
 translation-type: tm+mt
-source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1843'
 ht-degree: 11%
 
 ---
@@ -120,17 +120,12 @@ Former des balises intelligentes améliorées pour une formation plus intuitive 
 
 **Prise en charge de l&#39;assimilation, de la prévisualisation et de la diffusion du contenu 3D**
 
-Les entreprises peuvent désormais stocker et utiliser des fichiers 3D dans AEM Assets. L’utilisateur peut télécharger, prévisualisation et exploiter divers fichiers 3D de base, notamment des fichiers .obj, .stl, .gltf et .glb. Avec l’ajout d’ [!DNL Dynamic Media]expériences 3D, les expériences 3D peuvent être configurées et livrées par le biais d’URL ou de visionneuses agnostiques. Cela inclut une visionneuse d’expérience [!DNL Dynamic Media] 3D, un composant Visionneuse 3D Sites et la possibilité de diffuser des fichiers 3D via [!DNL Dynamic Media] (AR/VR).
-
-<!-- TBD: Add link to the DM help article, if any. -->
+Les entreprises peuvent désormais stocker et utiliser des fichiers 3D dans AEM Assets. L’utilisateur peut télécharger, prévisualisation et exploiter divers fichiers 3D de base, notamment des fichiers .obj, .stl, .gltf et .glb. Avec l’ajout d’ [!DNL Dynamic Media]expériences 3D, les expériences 3D peuvent être configurées et livrées par le biais d’URL ou de visionneuses agnostiques. Cela inclut une visionneuse d’expérience [!DNL Dynamic Media] 3D, un composant Visionneuse 3D Sites et la possibilité de diffuser des fichiers 3D via [!DNL Dynamic Media] (AR/VR). Voir [Utilisation de fichiers 3D dans Contenu multimédia](/help/assets/dynamic-media/assets-3d.md)dynamique.
 
 <!-- Hiding this as the GA is at a later date. 
-TBD: Add link to the AAL help article. 
-
 **Adobe Asset Link support for Adobe XD**
 
-With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application.
-
+With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application. See [Adobe Asset Link documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
 -->
 
 **Améliorations de l’accessibilité**
@@ -141,18 +136,15 @@ With the latest release, [!DNL Experience Manager Assets] provides support for a
 * Les éléments, les contrôles et les champs de formulaire d’entrée de l’interface utilisateur sont accessibles à l’aide du clavier.
 * Changement de couleur ou de contraste de certains éléments d&#39;interface pour les rendre plus reconnaissables par les utilisateurs avec une vision limitée et sans perception de la couleur. Par exemple, les ressources présentent désormais un contraste approprié dans les icônes d’évaluation des étoiles de la page [!UICONTROL Propriétés] et de la vue des cartes.
 
-<!-- TBD: Add link to the a11y help article if created. Else add it post-GA. -->
-
 **Autres améliorations**
 
 Cette version comprend les améliorations supplémentaires suivantes :
 
-* Améliorations de l’accessibilité de l’interface utilisateur Ressources.
 * Possibilité de retraiter des ressources avec des profils de traitement des ressources, ce qui permet aux utilisateurs de contrôler entièrement le processus (exécuter le traitement complet des ressources, appliquer un profil de traitement spécifique et décider si le processus de post-traitement doit être exécuté).
 * Les requêtes de recherche renvoient les résultats plus rapidement maintenant que l’instance de grappe sous-jacente a été redémarrée en arrière-plan (l’exécution de recherche initiale pourrait durer plus longtemps dans ce cas auparavant).
-* Trier par &quot;Nom&quot; lorsque vous affichez des ressources dans la vue de listes dans l’interface Ressources et dans les résultats de la recherche.
-* Trier sur &quot;Créé&quot; (Date) lors de l’affichage des ressources dans la vue de liste dans l’interface Ressources et dans les résultats de la recherche.
-* Prise en charge de la conversion des fichiers EPS en images.
+* Trier par &quot;Nom&quot; lorsque vous affichez des ressources dans la vue de listes dans l’interface Ressources et dans les résultats de la recherche. Voir Fichiers [](/help/assets/search-assets.md#sort)de recherche.
+* Trier sur &quot;Créé&quot; (Date) lors de l’affichage des ressources dans la vue de liste dans l’interface Ressources et dans les résultats de la recherche. Voir Fichiers [](/help/assets/search-assets.md#sort)de recherche.
+* Prise en charge de la conversion de fichiers EPS en images à l’aide de microservices de ressources.
 
 ### Correctifs {#assets-bug-fixes}
 
@@ -161,7 +153,7 @@ Seek DM bug fixes if any.
 Add Nui update as shared on Slack: https://git.corp.adobe.com/nui/app/releases/tag/22
 -->
 
-Outre les nouvelles fonctionnalités ci-dessus, la version actuelle fournit les améliorations et correctifs suivants en fonction des commentaires des clients sur [!DNL Assets]la page.
+En plus des nouvelles fonctionnalités ci-dessus, la version actuelle fournit les améliorations et correctifs suivants en fonction des commentaires des clients pour [!DNL Assets].
 
 * Pour les fichiers de musique MP3, le bouton de lecture affiché sur la miniature dans la prévisualisation DAM ne fonctionne pas. (CQ-4294731)
 * Placer le pointeur sur la vue de la carte permet de faire défiler l’écran lorsque l’utilisateur se concentre (automatiquement) sur les actions rapides disponibles dans la carte. (GRANITE-26895)
