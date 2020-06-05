@@ -2,8 +2,11 @@
 title: Utilisation de ressources numériques Adobe Stock dans AEM Assets
 description: Vous pouvez rechercher, récupérer, acquérir sous licence et gérer des ressources Adobe Stock dans Experience Manager. Traitez les ressources sous licence comme n’importe quelle autre ressource Experience Manager.
 contentOwner: AG
-translation-type: ht
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+translation-type: tm+mt
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
+workflow-type: tm+mt
+source-wordcount: '1132'
+ht-degree: 97%
 
 ---
 
@@ -24,11 +27,11 @@ Pour permettre à AEM et Adobe Stock de communiquer, créez une configuration I
 
 ### Création d’une configuration d’IMS   {#create-an-ims-configuration}
 
-1. Cliquez sur le logo AEM. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Configurations d’Adobe IMS]**. Cliquez sur **[!UICONTROL Créer]** et sélectionnez ensuite **[!UICONTROL Solution cloud]** > **[!UICONTROL Adobe Stock]**.
+1. Cliquez sur le logo AEM. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Configurations d’Adobe IMS]**. Cliquez sur **[!UICONTROL Créer]**, puis sélectionnez **[!UICONTROL Solution Cloud]** > **[!UICONTROL Adobe Stock]**.
 1. Réutilisez un certificat existant ou sélectionnez **[!UICONTROL Créer un certificat]**.
 1. Cliquez sur **[!UICONTROL Créer un certificat]**. Une fois le certificat créé, téléchargez la clé publique. Cliquez sur **[!UICONTROL Suivant]**.
-1. Saisissez les valeurs appropriées dans les champs intitulés **[!UICONTROL Titre]**, **[!UICONTROL Serveur d’autorisation]**, **[!UICONTROL Clé API]**, **[!UICONTROL Secret du client]** et **[!UICONTROL Charge utile]**. Pour savoir comment récupérer ces valeurs à partir d’Adobe I/O, voir [JWT authentication quick start](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) (Guide de démarrage rapide de l’authentification JWT).
-1. Ajoutez la clé publique téléchargée à votre compte de service Adobe I/O.
+1. Indiquez les valeurs appropriées dans les champs intitulés **[!UICONTROL Titre]**, **[!UICONTROL Serveur d’autorisation]**, **[!UICONTROL Clé API]**, **[!UICONTROL Secret client]** et **[!UICONTROL Charge]**. See [JWT authentication quick start](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md), for detailed information to fetch these values from Adobe Developer Console.
+1. Ajoutez la clé publique téléchargée sur votre compte de service Adobe Developer Console.
 
 ### Création d’une configuration Adobe Stock dans AEM   {#create-adobe-stock-configuration-in-aem}
 
@@ -65,7 +68,7 @@ Vous pouvez également commencer à saisir `Location: Adobe Stock` dans la barre
 
 >[!NOTE]
 >
->Les ressources recherchées dans Adobe Stock sont simplement affichées dans AEM. Les ressources Adobe Stock ne sont pas récupérées ni stockées dans le référentiel AEM tant qu’un utilisateur n’a pas [enregistré une ressource](/help/assets/aem-assets-adobe-stock.md#saveassets) ou [acquis une ressource sous licence](/help/assets/aem-assets-adobe-stock.md#licenseassets). Les ressources qui sont déjà stockées dans AEM sont affichées et mises en évidence pour que vous puissiez les référencer et y accéder facilement. En outre, ces ressources sont enregistrées avec quelques métadonnées supplémentaires pour indiquer la source comme étant Adobe Stock.
+>Les ressources recherchées dans Adobe Stock sont simplement affichées dans AEM. Les ressources Adobe Stock ne sont pas récupérées ni stockées dans le référentiel AEM tant qu’un utilisateur n’a pas [enregistré une ressource](/help/assets/aem-assets-adobe-stock.md#saveassets) ou [acquis une ressource sous licence](/help/assets/aem-assets-adobe-stock.md#licenseassets). Les ressources déjà stockées dans AEM sont affichées et mises en surbrillance pour simplifier leur référencement et leur accès. Ces fichiers sont également enregistrés avec des métadonnées supplémentaires pour indiquer la source en tant qu’Adobe Stock.
 
 ![Filtres de recherche dans AEM et ressources Adobe Stock mises en surbrillance dans les résultats de recherche](assets/aem-search-filters2.jpg)
 *Figure : Filtres de recherche dans AEM et ressources Adobe Stock mises en surbrillance dans les résultats de recherche*
