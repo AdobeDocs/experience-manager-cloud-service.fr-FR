@@ -4,17 +4,17 @@ description: Découvrez les différentes méthodes de gestion et de modification
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+source-git-commit: d4b4b5fbbd07851485d216b502c66037cccef134
 workflow-type: tm+mt
-source-wordcount: '4284'
-ht-degree: 98%
+source-wordcount: '4419'
+ht-degree: 95%
 
 ---
 
 
 # Gestion des ressources {#manage-assets}
 
-Cet article décrit comment gérer et modifier des ressources dans Adobe Experience Manager Assets. Pour gérer les fragments de contenu, voir les ressources [Fragments de contenu](content-fragments/content-fragments.md).
+Cet article décrit comment gérer et modifier des ressources dans les ressources Adobe Experience Manager. Pour gérer les fragments de contenu, voir les ressources [Fragments de contenu](content-fragments/content-fragments.md).
 
 ## Création de dossiers {#creating-folders}
 
@@ -37,7 +37,19 @@ Les caractères suivants (liste de ceux-ci séparés par des espaces) ne sont pa
 
 ## Chargement des ressources {#uploading-assets}
 
-Pour plus d’informations, voir [Ajout de ressources numériques à Experience Manager](add-assets.md).
+Voir [Ajout de ressources numériques à Experience Manager](add-assets.md).
+
+## Détecter les ressources de duplicata {#detect-duplicate-assets}
+
+<!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
+
+Si un utilisateur DAM télécharge un ou plusieurs actifs qui existent déjà dans le référentiel, [!DNL Experience Manager] détecte la duplication et en informe l’utilisateur. La détection de Duplicata est désactivée par défaut car elle peut avoir un impact sur les performances en fonction de la taille du référentiel et du nombre de ressources téléchargées. Pour activer cette fonctionnalité, configurez le [!UICONTROL détecteur]de duplication de ressources AEM Cloud pour Adobe. Découvrez [comment effectuer des configurations](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)OSGi. La détection de duplication est basée sur la `dam:sha1` valeur unique stockée dans `jcr:content/metadata/dam:sha1`. Cela signifie que les ressources de duplicata sont détectées même si les noms de fichier sont différents.
+
+![Détecter la configuration OSGi des ressources de duplicata](assets/duplicate-detection.png)
+
+Une fois activé, Experience Manager envoie des notifications des ressources de duplicata à la boîte de réception. Il s’agit d’un résultat global pour plusieurs duplicata. Les utilisateurs peuvent choisir de supprimer les fichiers en fonction des résultats.
+
+![Notification de boîte de réception pour les ressources de duplicata](assets/duplicate-detect-inbox-notification.png)
 
 ## Aperçu des ressources {#previewing-assets}
 
@@ -89,6 +101,7 @@ Pour prévisualiser une ressource, procédez comme suit.
    * Le nombre de fois que la ressource a été visualisée ou téléchargée.
    * Les canaux/périphériques via lesquels la ressource a été utilisée.
    * Des solutions de création où la ressource a été récemment utilisée.
+
    Pour plus d’informations, reportez-vous à la section [Informations sur les ressources](assets-insights.md).
 
 1. Appuyez/cliquez sur **[!UICONTROL Enregistrer et fermer]**.
@@ -160,6 +173,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
    * Appuyez/cliquez sur **[!UICONTROL Précédent]** pour revenir à l’écran **[!UICONTROL Sélectionner la destination]**.
 
    * Appuyez/cliquez sur **[!UICONTROL Annuler]** pour abandonner l’opération de déplacement.
+
    Si vous ne mettez pas à jour les références, elles continuent à pointer vers le chemin précédent de la ressource. Si vous adaptez les références, elles sont mises à jour avec le nouveau chemin de la ressource.
 
 ### Gestion des rendus {#managing-renditions}
@@ -233,6 +247,7 @@ De plus, désactivez le bouton Forcer la suppression à l’aide d’un recouvre
 
       * Si la ressource ne comporte aucune référence, elle est supprimée.
       * Si la ressource comporte des références, un message d’erreur vous informe qu’**une ou plusieurs ressources sont référencées.** Vous pouvez sélectionner **[!UICONTROL Forcer la suppression]** ou **[!UICONTROL Annuler]**.
+
    >[!NOTE]
    >
    >Pour pouvoir supprimer une ressource, vous devez disposer des autorisations appropriées dans la gestion des actifs numériques/ressource. Si vous disposez uniquement d’autorisations de modification, vous pourrez seulement modifier les métadonnées de la ressource et ajouter des annotations à cette dernière. Toute suppression s’avérera impossible.
@@ -292,6 +307,7 @@ Voir [Téléchargement de ressources à partir d’AEM](/help/assets/download-as
 
    * **[!UICONTROL Annuler]** pour arrêter l’action
    * **[!UICONTROL Annuler la publication]** pour confirmer l’annulation de la publication des ressources (elles ne sont plus disponibles dans l’environnement de publication) à la date indiquée.
+
    >[!NOTE]
    >
    >Lors de l’annulation de la publication d’une ressource complexe, annulez uniquement la publication de la ressource en question. Évitez d’annuler la publication des références, car elles peuvent être référencées par d’autres ressources publiées.
@@ -344,6 +360,7 @@ Les outils de modification de l’interface d’AEM Assets permettent d’effec
    * Sélectionnez la ressource, puis cliquez/appuyez sur l’icône **[!UICONTROL Modifier]** de la barre d’outils.
    * Appuyez/cliquez sur l’icône **[!UICONTROL Modifier]** qui s’affiche sur une ressource en mode Carte.
    * Sur la page Ressource, appuyez/cliquez sur l’icône **[!UICONTROL Modifier]** de la barre d’outils.
+
    ![edit_icon](assets/edit_icon.png)
 
 1. Pour recadrer l’image, appuyez/cliquez sur l’icône **Recadrer**.
@@ -415,6 +432,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
    * [Actions rapides](#quick-actions)
    * Dans la barre d’outils, après avoir sélectionné la ressource  ou avoir accédé à la page de la ressource
+
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
 1. Ajoutez un commentaire dans la zone **[!UICONTROL Commentaire]** en bas de la chronologie. Une autre solution consiste à marquer une zone de l’image et à ajouter une annotation dans la boîte de dialogue **[!UICONTROL Ajouter une annotation]**.
