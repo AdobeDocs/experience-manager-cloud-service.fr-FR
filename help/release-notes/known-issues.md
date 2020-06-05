@@ -1,8 +1,11 @@
 ---
 title: Problèmes connus
 description: Notes de mise à jour spécifiques aux problèmes connus avec Adobe Experience Manager as a Cloud Service
-translation-type: ht
-source-git-commit: ce82d7c9ca1fd8fe3d6f61213cfee360fc6496fd
+translation-type: tm+mt
+source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 96%
 
 ---
 
@@ -31,13 +34,12 @@ Voici quelques problèmes connus :
 
 Quelques fonctionnalités des ressources Adobe Experience Manager qui dépendent des fonctionnalités de base, qui ne sont pas encore disponibles dans Experience Manager en tant qu’architecture de déploiement Cloud Service, devraient être activées ultérieurement :
 
-* La fonctionnalité améliorée de balisage intelligent utilisant les services d’Adobe I/O n’est pas disponible pour l’instant.
 * Ces fonctionnalités ne sont pas activées à ce stade en raison d’une dépendance aux API de framework d’intégration de commerce :
    * Modèles de workflow de séance photo.
    * Onglet d’informations sur les produits de l’interface utilisateur des propriétés des ressources non renseigné
 * Ces fonctionnalités ne sont pas activées à ce stade en raison d’une dépendance vis-à-vis de l’intégration d’InDesign Server :
    * Modèles de ressources et catalogues de ressources
-   * Aperçu de plusieurs pages de fichiers InDesign
+   * prévisualisation de plusieurs pages de fichiers Adobe InDesign.
 
 >[!MORELIKETHIS]
 >
