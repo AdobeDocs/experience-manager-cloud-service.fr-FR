@@ -3,10 +3,10 @@ title: Balises intelligentes améliorées
 description: Appliquez des balises commerciales contextuelles et descriptives à l’aide du service AI et ML d’Adobe Sensei afin d’améliorer la découverte de ressources et la vitesse du contenu.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 49%
+source-wordcount: '1005'
+ht-degree: 22%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 49%
 
 Le balisage des actifs avec un vocabulaire contrôlé par taxonomie permet d’identifier et de récupérer facilement les actifs par des recherches basées sur les balises. Adobe fournit des balises intelligentes qui utilisent l’intelligence artificielle et des algorithmes d’apprentissage automatique pour former des images. Smart Tags utilise un cadre d’intelligence artificielle de [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) pour former son algorithme de reconnaissance d’image à la structure de vos balises et à la taxonomie de votre entreprise.
 
-La fonctionnalité Balises dynamiques est disponible à l’achat en tant que module complémentaire à [!DNL Experience Manager]. Après l’achat, un courrier électronique est envoyé à l’administrateur de votre organisation avec un lien vers les E/S Adobe. L’administrateur accède au lien pour intégrer les balises actives à [!DNL Experience Manager] l’aide des E/S Adobe.
+La fonctionnalité Balises dynamiques est disponible à l’achat en tant que module complémentaire à [!DNL Experience Manager]. Après l’achat, un courrier électronique est envoyé à l’administrateur de votre organisation avec un lien vers Adobe Developer Console. L’administrateur accède au lien pour intégrer les balises actives à [!DNL Experience Manager] l’aide d’Adobe Developer Console.
 
 <!-- TBD: 
 1. Can a similar flowchart be created about how training works in CS? ![flowchart](assets/flowchart.gif)
@@ -24,45 +24,35 @@ La fonctionnalité Balises dynamiques est disponible à l’achat en tant que mo
 4. Post-GA, if time permits, create a video.
 -->
 
-## Intégration des E/S Adobe {#aio-integration}
+## Intégration d’Adobe Developer Console {#aio-integration}
 
-Avant de pouvoir marquer les images à l’aide de SCS, intégrez-les [!DNL Adobe Experience Manager] au service Balises dynamiques à l’aide des E/S Adobe. À l’arrière-plan, le [!DNL Experience Manager] serveur authentifie vos informations d’identification de service auprès de la passerelle d’E/S Adobe avant de transférer votre demande au service.
+Avant de pouvoir marquer les images à l’aide de SCS, intégrez-les [!DNL Adobe Experience Manager] au service Smart Tags à l’aide de Adobe Developer Console. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the service.
 
 * Créez une configuration dans [!DNL Experience Manager] pour générer une clé publique. Obtention d’un certificat public pour l’intégration OAuth.
-* Création d’une intégration dans Adobe I/O et téléchargement de la clé publique générée.
-* Configure your [!DNL Experience Manager] instance using the API key and other credentials from Adobe I/O.
+* Créez une intégration dans Adobe Developer Console et téléchargez la clé publique générée.
+* Configure your [!DNL Experience Manager] instance using the API key and other credentials from Adobe Developer Console.
 * Facultativement, activation du balisage automatique lors du téléchargement de ressources.
 
-### Conditions préalables à l&#39;intégration E/S Adobe {#prerequisite-for-aio-integration}
+### Conditions préalables à l’intégration de Adobe Developer Console {#prerequisite-for-aio-integration}
 
-Avant de pouvoir utiliser les balises actives, vérifiez les éléments suivants pour créer une intégration sur les E/S Adobe :
+Avant d’utiliser les balises actives, assurez-vous que les éléments suivants sont nécessaires pour créer une intégration dans Adobe Developer Console :
 
 * L’organisation doit disposer d’un compte Adobe ID pourvu de droits d’administrateur.
 * Les balises actives sont activées pour votre organisation.
 
 ### Obtain a public certificate {#obtain-public-certificate}
 
-Un certificat public permet d’authentifier votre profil sur Adobe I/O.
+Un certificat public vous permet d’authentifier votre profil sur Adobe Developer Console. Vous créez un certificat à partir de [!DNL Experience Manager].
 
-1. Dans l’interface [!DNL Experience Manager] utilisateur, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Legacy Cloud Services]**.
+1. Dans l’interface [!DNL Experience Manager] utilisateur, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > Configurations **[!UICONTROL IMS]** Adobe.
 
-1. On the Cloud Services page, click **[!UICONTROL Configure Now]** under **[!UICONTROL Assets Smart Tags]**.
+1. Dans la page Configurations [!UICONTROL IMS] Adobe, cliquez sur **[!UICONTROL Créer]**. Dans le menu Solution **** Cloud, sélectionnez Balises **** dynamiques.
 
-1. Dans la boîte de dialogue **[!UICONTROL Créer une configuration]**, spécifiez un titre et un nom pour la configuration de balises intelligentes. Cliquez sur **[!UICONTROL Créer]**.
+1. Select **[!UICONTROL Create new certificate]**. Indiquez un nom et cliquez sur **[!UICONTROL Créer un certificat]**. Cliquez sur **[!UICONTROL OK]**.
 
-1. Dans la boîte de dialogue **[!UICONTROL Service de contenu dynamique AEM]**, utilisez les valeurs suivantes :
+1. Click **[!UICONTROL Download Public Key]**.
 
-   **[!UICONTROL URL du service]**: `https://mc.adobe.io/marketingcloud/smartcontent`
-
-   **[!UICONTROL Serveur d’autorisation]**: `https://ims-na1.adobelogin.com`
-
-   Laissez les autres champs vides pour l’instant (pour les remplir ultérieurement). Cliquez sur **[!UICONTROL OK]**.
-
-   ![Boîte de dialogue Experience Manager Smart Content Service permettant de fournir l’URL du service de contenu](assets/aem_scs.png)
-
-1. Click **[!UICONTROL Download Public Certificate for OAuth Integration]**, and download the public certificate file `AEM-SmartTags.crt`.
-
-   ![Paramètres créés pour le service de balisage intelligent](assets/download_link.png)
+   ![Les balises dynamiques Experience Manager créent une clé publique](assets/aem_smarttags-config1.png)
 
 ### Reconfigurer si un certificat expire {#certrenew}
 
@@ -77,47 +67,43 @@ Lorsque le certificat expire, il n’est plus approuvé. Pour ajouter un nouveau
 
    *Figure : Supprimez l’`similaritysearch`entrée existante dans Keystore pour ajouter un nouveau certificat de sécurité.*
 
-1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Ancienne version de Cloud Services]**. Cliquez sur **[!UICONTROL Balises dynamiques de ressources]** > **[!UICONTROL Afficher la configuration]** > **[!UICONTROL Configurations disponibles]**. Cliquez sur la configuration requise.
+1. Dans l’interface [!DNL Experience Manager] utilisateur, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > Configurations **[!UICONTROL IMS]** Adobe. Ouvrez la configuration des balises actives disponible. To download a public certificate, click **[!UICONTROL Download Public Certificate]**.
 
-1. Pour télécharger un certificat public, cliquez sur **[!UICONTROL Télécharger le certificat public pour l’intégration Oauth]**.
-
-1. Accédez à [https://console.adobe.io](https://console.adobe.io) et accédez au service existant dans le projet. Téléchargez le nouveau certificat. Pour plus d’informations, reportez-vous aux instructions de la section [Création de l’intégration Adobe I/O](#create-aio-integration).
+1. Accédez à [https://console.adobe.io](https://console.adobe.io) et accédez au service existant dans le projet. Téléchargez le nouveau certificat et configurez-le. Pour plus d’informations sur la configuration, voir les instructions de la section [Création de l’intégration](#create-aio-integration)de la Console développeur Adobe.
 
 ### Création d’une intégration {#create-aio-integration}
 
-Pour utiliser les API Balises intelligentes, créez une intégration dans les E/S Adobe pour générer la clé d’API, l’ID de compte technique, l’ID d’organisation et la clé secrète client.
+Pour utiliser les balises actives, créez une intégration dans Adobe Developer Console afin de générer une clé d’API, un ID de compte technique, un ID d’organisation et une clé secrète client.
 
-1. Accédez à [https://console.adobe.io](https://console.adobe.io/).
-1. Sélectionnez le compte approprié et vérifiez que le rôle d’organisation associé est un administrateur système. Créez un projet ou ouvrez un projet existant. Dans la page du projet, cliquez sur **[!UICONTROL Ajouter l’API]**.
-1. Sur la page **[!UICONTROL Ajouter une API]** , sélectionnez **[!UICONTROL Experience Cloud]** et sélectionnez Contenu **** intelligent. Cliquez sur **[!UICONTROL Continuer]**.
-1. Sur la page suivante, sélectionnez **[!UICONTROL Nouvelle intégration]**. Cliquez sur **[!UICONTROL Continuer]**.
-1. Sur la page **[!UICONTROL Informations concernant l’intégration]**, indiquez un nom pour la passerelle d’intégration et ajoutez une description.
-1. Dans **[!UICONTROL Certificats de clés publiques]**, chargez le fichier `AEM-SmartTags.crt` que vous avez téléchargé ci-dessus.
-1. Cliquez sur **[!UICONTROL Créer une intégration]**.
-1. To view the integration information, click **[!UICONTROL Continue to integration details]**.
+1. Accédez à [https://console.adobe.io](https://console.adobe.io/) dans un navigateur. Sélectionnez le compte approprié et vérifiez que le rôle d’organisation associé est un administrateur système.
+1. Créez un projet avec le nom de votre choix. Cliquez sur **[!UICONTROL Ajouter l’API]**.
+1. Sur la page **[!UICONTROL Ajouter une API]** , sélectionnez **[!UICONTROL Experience Cloud]** et sélectionnez Contenu **** intelligent. Cliquez sur **[!UICONTROL Suivant]**.
+1. Sélectionnez **[!UICONTROL Télécharger votre clé]** publique. Fournissez le fichier de certificat téléchargé à partir de [!DNL Experience Manager]. Un message indiquant que les clés [!UICONTROL publiques chargées avec succès] s’affichent. Cliquez sur **[!UICONTROL Suivant]**.
+1. [!UICONTROL Créer une nouvelle page d’informations d’identification] de compte de service (JWT) affiche la clé publique du compte de service qui vient d’être configuré. Cliquez sur **[!UICONTROL Suivant]**.
+1. Dans la page **[!UICONTROL Sélectionner des profils]** de produits, sélectionnez **[!UICONTROL Smart Content Services]**. Cliquez sur **[!UICONTROL Enregistrer l’API]** configurée. Une page affiche plus d’informations sur la configuration. Gardez cette page ouverte pour copier et ajouter ces valeurs dans Experience Manager lors de la configuration ultérieure des balises actives dans [!DNL Experience Manager].
 
    ![Dans l’onglet Aperçu, vous pouvez consulter les informations fournies pour l’intégration.](assets/integration_details.png)
 
 ### Configuration des balises actives {#configure-smart-content-service}
 
-Pour configurer l’intégration, utilisez les valeurs des champs Identifiant de compte technique, Identifiant d’organisation, Secret du client, Serveur d’autorisation et Clé API de l’intégration Adobe I/O. Creating a Smart Tags cloud configuration allows authentication of API requests from the [!DNL Experience Manager] instance.
+Pour configurer l’intégration, utilisez les valeurs des champs Charge, Clé client, Serveur d’autorisation et Clé d’API de l’intégration Adobe Developer Console.
 
-1. In [!DNL Experience Manager], navigate to **[!UICONTROL Tools > Cloud Service > Legacy Cloud Services]** to open the [!UICONTROL Cloud Services] console.
-1. Sous **[!UICONTROL Ressources – Balises intelligentes]**, ouvrez la configuration créée ci-dessus. Sur la page de paramètres du service, cliquez sur **[!UICONTROL Modifier]**.
-1. Dans la boîte de dialogue **[!UICONTROL Service de contenu dynamique AEM]**, utilisez les valeurs préremplies pour les champs **[!UICONTROL URL de service]** et **[!UICONTROL Serveur d’autorisation]**.
-1. Pour les champs **[!UICONTROL Clé API]**, **[!UICONTROL ID de compte technique]**, **[!UICONTROL ID d’organisation]** et **[!UICONTROL Client secret]**, utilisez les valeurs générées ci-dessus.
+1. Dans l’interface [!DNL Experience Manager] utilisateur, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > Configurations **[!UICONTROL IMS]** Adobe.
+1. Accédez à la page Configuration **[!UICONTROL du compte technique]** Adobe IMS **[!UICONTROL , fournissez un]** titresouhaité.
+1. Dans le champ **[!UICONTROL Authorization Server]** , indiquez `https://ims-na1.adobelogin.com` URL.
+1. Dans le champ Clé **** d’API, indiquez l’ID **** du client à partir du [!DNL Adobe Developer Console].
+1. Dans le champ **[!UICONTROL Clé secrète]** client, fournissez la clé secrète **** client à partir du [!DNL Adobe Developer Console]. Cliquez sur l’option **[!UICONTROL Récupérer la clé secrète]** du client pour l’afficher.
+1. Dans [!DNL Adobe Developer Console]votre projet, cliquez sur **[!UICONTROL Compte de service (JWT)]** dans la marge de gauche. Cliquez sur **[!UICONTROL l’onglet Générer JWT]** . Cliquez sur **[!UICONTROL Copier]** pour copier la charge **** JWT affichée. Indiquez cette valeur dans le champ **[!UICONTROL Charge]** de [!DNL Experience Manager]. Cliquez sur **[!UICONTROL Créer]**.
 
 ### Valider la configuration {#validate-the-configuration}
 
-Une fois la configuration terminée, vous pouvez utiliser un MBean JMX pour valider la configuration. Pour procéder à la validation, suivez ces étapes.
+Une fois la configuration terminée, procédez comme suit pour la valider.
 
-1. Accédez à votre [!DNL Experience Manager] serveur à `https://[aem_server]:[port]`.
+1. Dans l’interface [!DNL Experience Manager] utilisateur, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > Configurations **[!UICONTROL IMS]** Adobe.
 
-1. Accédez à **[!UICONTROL Outils > Opérations > Console Web]** pour ouvrir la console OSGi. Cliquez sur **[!UICONTROL Principal > JMX]**.
-1. Cliquez sur **[!UICONTROL com.day.cq.dam.similaritysearch.internal.impl]**. Les **[!UICONTROL tâches relatives à SimilaritySearch]** s’ouvrent alors..
-1. Cliquez sur **[!UICONTROL validateConfigs()]**. In the **[!UICONTROL Validate Configurations]** dialog, click **[!UICONTROL Invoke]**.
+1. Sélectionnez la configuration des balises actives. Cliquez sur **[!UICONTROL Vérifier l’intégrité]** dans la barre d’outils. Cliquez sur **[!UICONTROL Vérifier]**. Une boîte de dialogue contenant un message de configuration  saine confirme que la configuration fonctionne.
 
-   Le résultat de la validation s’affiche dans la même boîte de dialogue.
+![Validation de la configuration des balises actives](assets/smart-tag-config-validation.png)
 
 ## Activer le balisage intelligent pour les ressources nouvellement transférées (facultatif) {#enable-smart-tagging-for-uploaded-assets}
 
