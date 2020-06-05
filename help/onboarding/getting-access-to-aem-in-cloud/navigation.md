@@ -2,10 +2,10 @@
 title: Navigation
 description: Navigation - Service Cloud
 translation-type: tm+mt
-source-git-commit: 289c0dc65b16b486d6ea75c5c78f999ec2f353c6
+source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '505'
+ht-degree: 1%
 
 ---
 
@@ -59,6 +59,8 @@ Pour plus d’informations, voir [Accès à une instance dans AEM en tant que se
    ![](assets/sys-admin4.png)
 
 1. Une fois que vous avez cliqué sur **Gérer l’accès**, vous accédez à la console **** d’administration à partir de laquelle vous avez accès à l’instance d’auteur de l’environnement.
+
+   ![](assets/sys-admin-2.png)
 
 ## Pour les clients AMS existants {#existing-aem}
 
