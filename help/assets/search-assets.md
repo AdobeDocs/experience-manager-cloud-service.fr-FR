@@ -3,8 +3,11 @@ title: Recherche d’images et de ressources numériques dans AEM
 description: Découvrez comment rechercher les ressources souhaitées dans AEM à l’aide du panneau Filtres et comment utiliser les ressources affichées dans la recherche.
 contentOwner: AG
 mini-toc-levels: 1
-translation-type: ht
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+translation-type: tm+mt
+source-git-commit: 7317a5db6ed348f99b2290d72ddf6e540fae5456
+workflow-type: tm+mt
+source-wordcount: '4529'
+ht-degree: 99%
 
 ---
 
@@ -108,7 +111,7 @@ Vous pouvez améliorer la pertinence des mots-clés pour des ressources données
 
 Vous pouvez l’utiliser à votre avantage en améliorant le classement de certaines ressources dans les résultats de recherche du mot-clé ciblé. Voir la vidéo d’exemple ci-dessous. Pour plus d’informations, voir [Recherche dans AEM](https://helpx.adobe.com/fr/experience-manager/kt/help/assets/search-feature-video-use.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Découvrez comment les résultats de recherche sont classés et comment le classement peut être influencé.*
 
@@ -312,10 +315,6 @@ Exemple d’utilisation d’un caractère générique (point d’interrogation) 
 
 Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [indexing](/help/operations/indexing.md).
 
-### Sort on Name column {#sortbyname}
-
-In list view, you can sort the search results just as you can sort assets in any folder. Sorting does not work on the `Name` column by default. To sort by the `Name` column, overlay `/libs/dam/gui/content/commons/availablecolumns` and change the value of sortable to `True`.
-
 <!--
 ### Visual or similarity search {#configvisualsearch}
 
@@ -351,8 +350,8 @@ Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After config
 For related information, see [understand smart tags in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/smart-tags-feature-video-understand.html) and [how to manage smart tags](/help/assets/smart-tags.md).
 
 -->
-<!--
 
+<!--
 ### Mandatory metadata {#mandatorymetadata}
 
 Business users, administrators, or DAM librarians can define some metadata as mandatory metadata that is a must for the business processes to work. For various reasons, some assets may be missing this metadata, such as legacy assets or assets migrated in bulk. Assets with missing or invalid metadata are detected and reported based on the indexed metadata property. To configure it, see [mandatory metadata](/help/assets/metadata-schemas.md#defining-mandatory-metadata).
@@ -401,13 +400,13 @@ Une fois que vous voyez des ressources recherchées qui correspondent à vos cri
 * Utiliser les actions de bureau pour ouvrir ces ressources dans l’application de bureau
 * Créer des collections dynamiques
 
-### Tri des résultats de recherche {#sort}
+### Trier les résultats de la recherche {#sort}
 
-Le tri des résultats de recherche vous permet de trouver plus rapidement les ressources requises. Le tri des résultats de recherche fonctionne en mode Liste et uniquement lorsque vous sélectionnez **[!UICONTROL [Fichiers](#searchui)]**dans le panneau**[!UICONTROL  Filtres ]**. AEM Assets utilise le tri côté serveur pour trier rapidement toutes les ressources (quel que soit leur nombre) dans un dossier ou les résultats d’une requête. Le tri côté serveur fournit des résultats plus rapides et plus précis que le tri côté client.
+Le tri des résultats de recherche vous permet de trouver plus rapidement les ressources requises. Le tri des résultats de recherche fonctionne en mode Liste et uniquement lorsque vous sélectionnez **[!UICONTROL [Fichiers](#searchui)]**dans le panneau**[!UICONTROL  Filtres ]**.[!DNL Assets]utilise le tri côté serveur pour trier rapidement toutes les ressources (quel que soit leur nombre) dans un dossier ou les résultats d’une requête. Le tri côté serveur fournit des résultats plus rapides et plus précis que le tri côté client.
 
-En mode Liste, vous pouvez trier les résultats de recherche tout comme vous pouvez trier les ressources de n’importe quel dossier. Le tri fonctionne sur ces colonnes : Titre, État, Dimensions, Taille, Évaluation, Utilisation, (Date de) modification, (Date de) publication, Workflow et Extraits.
+En mode Liste, vous pouvez trier les résultats de recherche tout comme vous pouvez trier les ressources de n’importe quel dossier. Le tri fonctionne sur ces colonnes — Nom, Titre, État, Dimensions, Taille, Évaluation, Utilisation, (Date) Créée, (Date) Modifiée, (Date) Publiée, Workflow et Extrait.
 
-Voir [Configuration du tri sur la colonne Nom](#sortbyname). Pour connaître les restrictions de la fonctionnalité de tri, voir [Restrictions](#limitations).
+Pour connaître les restrictions de la fonctionnalité de tri, voir [Restrictions](#limitations).
 
 ### Consultation des informations détaillées d’une ressource {#checkinfo}
 
