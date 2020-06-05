@@ -2,7 +2,7 @@
 title: Navigation
 description: Navigation - Service Cloud
 translation-type: tm+mt
-source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
+source-git-commit: 072c93eb367a4497d94b73d7f9e54bda862605fa
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 1%
@@ -33,11 +33,9 @@ Consultez [Accès à Cloud Manager](https://docs.adobe.com/content/help/en/exper
 
 1. Accédez au landing page de Cloud Manager et cliquez sur **Gérer l’accès**.
 
-   ![](assets/sys-admin1.png)
+   ![](assets/sys-admin5.png)
 
 1. Cliquez sur **Gérer l’accès** pour accéder à la console **d’** administration à partir de laquelle vous pouvez gérer les rôles utilisateur ou les autorisations de Cloud Manager.
-
-   ![](assets/sys-admin2.png)
 
 ### Gestion de l’accès à l’instance d’auteur {#manage-access-aem}
 
@@ -48,14 +46,17 @@ En tant qu’utilisateur du rôle Administrateur système, vous disposez d’un 
 
 Pour plus d’informations, voir [Accès à une instance dans AEM en tant que service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) Cloud.
 
-1. Accédez à la carte **Environnements** à partir de la page *Aperçu* ou de la page **Environnements** pour utiliser l’option **Gérer l’accès, comme illustré dans la figure ci-dessous.**
+1. Accédez à la carte **Environnements** à partir de la page Aperçu **du** Programme.
 
-   ![](assets/manage-access1.png)
+   ![](assets/sys-admin6.png)
+
+   Ou,
+
+   Cliquez sur **Détails** dans la carte **Environnements** pour ouvrir la page Environnements. Cliquez sur **Gérer** -> **Gérer l’accès**.
+
+   ![](assets/sys-admin4.png)
 
 1. Cliquez sur **Gérer l’accès** pour accéder à la console **** d’administration à partir de laquelle vous avez accès à l’instance d’auteur d’un environnement.
-
-   ![](assets/sys-admin3.png)
-
 
 ## Pour les clients AMS existants {#existing-aem}
 
