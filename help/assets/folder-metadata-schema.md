@@ -2,8 +2,11 @@
 title: Schéma de métadonnées de dossier
 description: Découvrez comment créer des schémas de métadonnées pour des dossiers de ressources dans AEM Assets
 contentOwner: AG
-translation-type: ht
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+translation-type: tm+mt
+source-git-commit: 2394ce2b5ebbd3e0e7229a98b5f500312b82dbd7
+workflow-type: tm+mt
+source-wordcount: '1040'
+ht-degree: 97%
 
 ---
 
@@ -107,7 +110,7 @@ Les valeurs admises pour cette propriété sont les suivantes :
 
 * `./jcr:content/metadata/dc:title` : stocke la valeur dans le nœud de métadonnées du dossier en tant que propriété `dc:title`.
 
-* `./jcr:created` : affiche la propriété JCR au niveau du nœud du dossier. Si vous configurez ces propriétés dans CRXDE, Adobe recommande de les marquer avec l’état Désactiver la modification, car elles sont protégées. Dans le cas contraire, l’erreur « `Asset(s) failed to modify` » se produit lorsque vous enregistrez les propriétés de la ressource.
+* `./jcr:created`: Stocke la date et l’heure de création d’une ressource. Il s’agit d’une propriété protégée. Si vous configurez ces propriétés, Adobe vous recommande de les marquer comme [!UICONTROL Désactiver la modification].
 
 Pour vous assurer que le composant est affiché correctement dans le formulaire de schéma de métadonnées, n’insérez pas d’espace dans le chemin de propriété.
 
