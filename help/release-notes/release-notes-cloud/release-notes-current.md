@@ -2,9 +2,9 @@
 title: Notes de mise à jour d’Adobe Experience Manager as a Cloud Service version 2020.6.0
 description: Notes de mise à jour d’Experience Manager version 2020.6.0
 translation-type: tm+mt
-source-git-commit: a725e5729d1086aba64ec59ed909577f25219aa9
+source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
 workflow-type: tm+mt
-source-wordcount: '1700'
+source-wordcount: '1833'
 ht-degree: 11%
 
 ---
@@ -21,6 +21,15 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.6.0 is Ju
 ## What&#39;s New in AEM Sites {#aem-sites}
 
 Suivez cette section pour en savoir plus sur les nouveautés et les mises à jour des sites AEM dans AEM as a Cloud Service Release 2020.6.0.
+
+### Nouveautés {#whats-new-2020.6.0}
+
+La version 2.9.0 des composants [](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) principaux est désormais disponible dans le cadre des sites AEM, notamment :
+
+* Intégration entre la couche [de données du client](https://github.com/adobe/adobe-client-data-layer) Adobe et les composants principaux
+* Attributs d’ID HTML configurables pour tous les composants
+* Un nouveau composant de barre de progression
+* Plusieurs correctifs
 
 ### Correctifs {#sites-bug-fixes}
 
@@ -53,19 +62,27 @@ Suivez cette section pour en savoir plus sur les nouveautés et les mises à jou
 
 * Un utilisateur du rôle Propriétaire ** d’entreprise dans Cloud Manager peut désormais supprimer un Programme Sandbox du landing page (par le biais d’un bouton d’action rapide sur la carte de Programme) ou du programme.
 
-* Un utilisateur de Programme Sandbox dans le rôle Propriétaire ** d’entreprise ou *Deployment Manager* dans Cloud Manager peut désormais supprimer son jeu d’environnements de production et d’étape via l’interface utilisateur de Cloud Manager. L’option de suppression est désormais disponible à partir de la carte d’Environnement sur la page d’aperçu et de la page Environnements. La sélection de l’option de suppression sur Production ou Stage supprime également l’autre dans l’ensemble.
+   Pour plus d&#39;informations, reportez-vous à la section [Suppression d&#39;un Programme](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) Sandbox.
+
+* Un utilisateur de Programme Sandbox dans le rôle Propriétaire ** d’entreprise ou *Deployment Manager* dans Cloud Manager peut désormais supprimer son jeu d’environnements de production et d’étape via l’interface utilisateur de Cloud Manager. L’option de suppression est désormais disponible à partir de la carte d’Environnement sur la page Aperçu **des** Programmes ainsi que sur la page **Environnements** . La sélection de l’option de suppression sur Production ou Stage supprime également l’autre dans l’ensemble.
+
+   Pour plus d&#39;informations, reportez-vous à la section [Suppression d&#39;un Programme](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) Sandbox.
 
 * Repères sur la page d’entrée pour informer l’utilisateur sur la navigation de base.
 
-* Coach marks sur la page *Aperçu* pour informer et informer l’utilisateur sur la navigation de base dans Cloud Manager afin de le faire démarrer.
+* Coach marks sur la page Aperçu **du** Programme pour informer et informer l’utilisateur sur la navigation de base dans Cloud Manager afin de le faire démarrer.
 
 * Une page **APPRENDRE** est désormais disponible dans Cloud Manager, accessible par le biais de la navigation supérieure. Cette page comprend des ressources destinées à aider les utilisateurs à en savoir plus sur les workflows les plus fréquemment utilisés en fonction du rôle qui leur est attribué dans Cloud Manager.
 
-* Les Programmes Sandbox sont maintenant identifiés au moyen d’un badge **Sandbox** qui s’affichera sur la carte de programme sur le landing page, ainsi qu’en regard du nom du programme dans la page *Aperçu* .
+* Les Programmes Sandbox sont maintenant identifiés au moyen d’un badge **Sandbox** qui s’affichera sur la carte de programme sur le landing page, ainsi qu’en regard du nom du programme dans la page Aperçu **du** Programme.
 
-* Un utilisateur du rôle *SysAdmin* dispose désormais d’un accès en un clic à l’emplacement dans la console d’administration à partir duquel les rôles utilisateur ou les autorisations de Cloud Manager peuvent être gérés. Un bouton **Gérer les rôles** sera disponible sur le landing page en regard du bouton **Ajouter le Programme** .
+* Un utilisateur du rôle Administrateur système dispose désormais d’un accès en un clic à l’emplacement dans la console d’administration à partir duquel les rôles utilisateur ou les autorisations de Cloud Manager peuvent être gérés. Un bouton **Gérer l’accès** est désormais disponible sur le landing page en regard du bouton **Ajouter le Programme** .
 
-* Un utilisateur du rôle Administrateur système dispose désormais d’un accès en un clic à l’instance Auteur directement à partir de CM.
+   Pour plus d&#39;informations, reportez-vous aux Tâches [](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) SysAdmin.
+
+* Un utilisateur du rôle SysAdmin dispose désormais d’un accès en un clic à l’instance d’auteur directement à partir de Cloud Manager.
+
+   Pour plus d’informations, voir [Gestion de l’accès à l’instance](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) d’auteur.
 
 * Le journal de génération inclut désormais la liste des artefacts détectés, y compris les packages de contenu ignorés.
 
@@ -77,7 +94,7 @@ Suivez cette section pour en savoir plus sur les nouveautés et les mises à jou
 
 * Dans certains cas, les icônes de la boîte de dialogue **Créer un Programme** n’étaient pas alignées.
 
-* L’identifiant de publication AEM n’était pas affiché de manière cohérente sur la page *Aperçu* .
+* L’identifiant de publication AEM n’était pas affiché de manière cohérente sur la page Aperçu **des** Programmes.
 
 * When configuring the production pipeline, the **Scheduled Deployment** option was not visible for some customers.
 
@@ -144,7 +161,7 @@ Seek DM bug fixes if any.
 Add Nui update as shared on Slack: https://git.corp.adobe.com/nui/app/releases/tag/22
 -->
 
-En plus des nouvelles fonctionnalités ci-dessus, la version actuelle fournit les améliorations et correctifs suivants en fonction des commentaires des clients pour [!DNL Assets].
+Outre les nouvelles fonctionnalités ci-dessus, la version actuelle fournit les améliorations et correctifs suivants en fonction des commentaires des clients sur [!DNL Assets]la page.
 
 * Pour les fichiers de musique MP3, le bouton de lecture affiché sur la miniature dans la prévisualisation DAM ne fonctionne pas. (CQ-4294731)
 * Placer le pointeur sur la vue de la carte permet de faire défiler l’écran lorsque l’utilisateur se concentre (automatiquement) sur les actions rapides disponibles dans la carte. (GRANITE-26895)
