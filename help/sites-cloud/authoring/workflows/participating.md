@@ -1,8 +1,11 @@
 ---
 title: Participation aux workflows
 description: Les workflows incluent généralement les étapes qu’une personne doit suivre pour réaliser une activité sur une page ou sur une ressource.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1545'
+ht-degree: 100%
 
 ---
 
@@ -20,7 +23,7 @@ Les workflows incluent généralement les étapes qu’une personne doit suivre 
 
 ## Notifications d’actions de workflow disponibles   {#notifications-of-available-workflow-actions}
 
-Lorsqu’un élément de travail vous est attribué (par exemple, **Approuver le contenu**), différentes alertes et/ou notifications s’affichent :
+Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**), diverses alertes et/ou notifications s’affichent :
 
 * Votre indicateur de [notification](/help/sites-cloud/authoring/getting-started/inbox.md) (barre d’outils) sera incrémenté :
 
