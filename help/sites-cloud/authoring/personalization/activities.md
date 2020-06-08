@@ -1,8 +1,11 @@
 ---
-title: Gestion des activités
+title: 'Gestion des activités  '
 description: 'La console Activités vous permet de créer, d’organiser et de gérer les activités marketing de vos marques :'
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1989'
+ht-degree: 100%
 
 ---
 
@@ -72,19 +75,19 @@ Quand vous créez une marque avec la console Activités, elle apparaît égaleme
 Ajoutez une activité ou modifiez une activité existante pour concentrer vos efforts marketing sur certaines audiences. Lorsque vous créez/modifiez une activité, vous spécifiez les informations suivantes :
 
 * **Nom :** nom de l’activité.
-* **Moteur de ciblage :**[ AEM](/help/sites-cloud/authoring/personalization/overview.md#aem) ou [Adobe Target](/help/sites-cloud/authoring/personalization/overview.md#adobe-target) comme moteur de recherche de contenu ciblé.
-* **Sélectionner une configuration cible :** (Adobe Target uniquement) configuration de cloud que cette activité doit utiliser pour se connecter à Adobe Target. Cette option s’affiche uniquement si Adobe Target est sélectionné comme moteur de ciblage.
+* **Moteur de ciblage :**[AEM](/help/sites-cloud/authoring/personalization/overview.md#aem) ou [Adobe Target](/help/sites-cloud/authoring/personalization/overview.md#adobe-target) comme moteur du contenu ciblé.
+* **Sélectionnez une configuration Target :** (Adobe Target uniquement) Configuration du cloud que cette activité doit utiliser pour se connecter à Adobe Target. Cette option s’affiche uniquement lorsque Adobe Target est sélectionné pour le moteur de ciblage.
 * **Type d’activité :** test A/B ou ciblage de l’expérience.
-* **Intention :** description de l’activité (facultatif).
-* **Expériences :** mappages entre les noms des audiences et les segments marketing que vous ciblez.
+* **Objectif :** (facultatif) description de l’activité.
+* **Expériences :** correspond aux noms d’audience et aux segments marketing que vous ciblez.
 * **Pourcentages de trafic :** si Test A/B est sélectionné, vous pouvez modifier le volume de trafic (en pourcentage) affecté à chaque expérience.
-* **Durée :** période pendant laquelle l’activité est appliquée.
-* **Priorité :** priorité relative de l’activité. Lorsque les activités fournissent du contenu pour les mêmes segments d’utilisateur, l’activité présentant la priorité la plus élevée est prioritaire.
-* **Mesure de l’objectif :** si Adobe Target est sélectionné comme moteur de ciblage, vous pouvez ajouter des mesures de succès à l’activité. Une mesure de réussite est nécessaire.
+* **Durée :** période d’application de l’activité.
+* **Priorité :** priorité relative de l’activité. Lorsque les activités fournissent du contenu pour les mêmes segments d’utilisateurs, l’activité de priorité supérieure est prioritaire.
+* **Mesure de l’objectif :** si Adobe Target est sélectionné comme moteur de ciblage, vous pouvez ajouter des mesures de succès à l’activité. Une mesure de succès est requise.
 
 >[!NOTE]
 >
->Les nouvelles activités Adobe Target doivent être *créées* dans l’éditeur de contenu ciblé, et non dans la console **Activités**, sinon la synchronisation avec Adobe Target échouera.
+>Les nouvelles activités Adobe Target doivent être *créées* dans l’éditeur de contenu ciblé et non dans la console **Activités**, car la synchronisation avec Adobe Target échouera.
 >
 >Vous pouvez toutefois modifier les activités existantes d’Adobe Target dans la console.
 
@@ -97,7 +100,7 @@ Pour ajouter une activité :
    * Si vous avez sélectionné Adobe Target comme moteur de ciblage, sélectionnez/modifiez la configuration de cloud à utiliser pour se connecter à Adobe Target. (Veillez à ne pas sélectionner une structure que vous avez créée pour la configuration de cloud.)
    * L’objectif ou une description de l’activité (facultatif).
    * Sélectionnez le type d’activité.
-1. Ajoutez une ou plusieurs expériences à l’activité. Appuyez ou cliquez sur **Ajouter une expérience**.
+1. Ajoutez une ou plusieurs expériences à l’activité. Cliquez ou appuyez sur **Ajouter une expérience**.
 1. Si vous utilisez le ciblage AEM ou le ciblage d’expérience Adobe Target :
    1. Cliquez ou appuyez sur **Sélectionner l’audience** et sélectionnez le segment ciblé par votre expérience.
    1. Appuyez ou cliquez sur **Ajouter une expérience**, saisissez un nom, puis appuyez ou cliquez sur **OK**.
@@ -109,7 +112,7 @@ Si vous utilisez le test A/B Adobe Target :
    1. Appuyez ou cliquez sur **Suivant**.
 1. Pour indiquer le moment où l’activité commence, utilisez le menu déroulant **Démarrer** pour sélectionner l’une des valeurs suivantes :
    * **Après activation :** l’activité commence lorsque la page contenant le contenu ciblé est activée.
-   * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, appuyez ou cliquez sur l’icône de calendrier, sélectionnez une date, puis spécifiez l’heure de début de l’activité.
+   * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, cliquez ou appuyez sur l’icône du calendrier, sélectionnez une date et indiquez l’heure de début de l’activité.
 1. Pour spécifier le moment où l’activité se termine, utilisez le menu déroulant Fin pour sélectionner l’une des valeurs suivantes :
    * **Si désactivés** : l’activité s’arrête lorsque la page contenant le contenu ciblé est désactivée.
    * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, appuyez ou cliquez sur l’icône de calendrier, sélectionnez une date, puis spécifiez l’heure de fin de l’activité.
@@ -163,6 +166,7 @@ Pour afficher les performances des activités et convertir les expériences gagn
 
    * Elle désactive l’activité en cours.
    * Elle modifie toutes les pages et remplace le contenu ciblé par le contenu de l’expérience gagnante. Le contenu de l’expérience gagnante devient une partie de la page normale **sans** ciblage.
+
    ![Conversion de l’expérience gagnante](/help/sites-cloud/authoring/assets/activities-reports.png)
 
    L’expérience gagnante est celle qui génère la meilleure progression dans les rapports, en fonction des taux de conversion.
