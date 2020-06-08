@@ -1,9 +1,9 @@
 ---
 title: Gestion des fragments de contenu
 description: Les fragments de contenu sont stockés en tant que ressources, et ils sont donc principalement gérés par l’intermédiaire de la console Ressources.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 100%
 
@@ -40,6 +40,7 @@ La méthode de création de fragments de contenu est (fondamentalement) la même
       * un [modèle](/help/assets/content-fragments/content-fragments-models.md) utilisé pour créer un fragment qui nécessite du contenu structuré, par exemple, le modèle **Airports**.
 
          * Tous les modèles disponibles s’affichent.
+
    Après la sélection, cliquez ou appuyez sur **Suivant** pour continuer.
 
    ![base du fragment](assets/cfm-managing-01.png)
@@ -127,6 +128,7 @@ Pour ouvrir votre fragment à des fins de modification :
 
    * Cliquez/appuyez sur le fragment ou le lien de fragment (selon l’affichage console).
    * Sélectionnez le fragment, puis cliquez sur **Modifier** dans la barre d’outils.
+
    L’éditeur de fragment s’ouvre alors :
 
    ![éditeur de fragment](assets/cfm-managing-03.png)
@@ -134,9 +136,11 @@ Pour ouvrir votre fragment à des fins de modification :
    >[!NOTE]
    >
    >1. Un message s’affiche si le fragment est déjà référencé dans une page de contenu.
-   >
-   >
-   >2. Le panneau latéral peut être masqué/affiché en appuyant sur l’icône **Activer/désactiver le panneau latéral**.
+      >
+      >
+      >
+
+   2. Le panneau latéral peut être masqué/affiché en appuyant sur l’icône **Activer/désactiver le panneau latéral**.
 
 
 3. Naviguez parmi les trois modes à l’aide des icônes du panneau latéral :
@@ -146,6 +150,7 @@ Pour ouvrir votre fragment à des fins de modification :
    * [Annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
    * [Contenu associé](#associating-content-with-your-fragment)
    * [Métadonnées](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+
    ![modes](assets/cfm-managing-04.png)
 
 4. Après avoir effectué les modifications, utilisez **Enregistrer** ou **Annuler** selon le cas.
