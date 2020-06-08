@@ -2,8 +2,11 @@
 title: Métadonnées XMP
 description: Découvrez la norme de métadonnées XMP (Extensible Metadata Platform) pour la gestion des métadonnées. Elle est utilisée par AEM comme format normalisé pour la création, le traitement et l’échange de métadonnées.
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '1456'
+ht-degree: 100%
 
 ---
 
@@ -28,7 +31,7 @@ Dans la norme XMP, les métadonnées sont constituées d’un ensemble de propri
 
 XMP définit un modèle de [métadonnées](https://fr.wikipedia.org/wiki/Métadonnée) exploitable avec n’importe quel ensemble défini d’éléments de métadonnées. XMP définit également des [schémas](https://en.wikipedia.org/wiki/XML_schema) spécifiques pour des propriétés de base utiles pour consigner l’historique d’une ressource lorsqu’elle passe par diverses étapes de traitement, de la photographie, en passant par la [numérisation](https://fr.wikipedia.org/wiki/Scanner_(informatique)) ou la création en tant que texte, à travers des étapes de retouche photo (comme le [recadrage](https://fr.wikipedia.org/wiki/Recadrage_(image)) ou l’ajustement de couleur), pour former une image finale. XMP permet à chaque programme ou appareil d’ajouter ses propres informations à une ressource numérique. Ces informations peuvent être ensuite conservées dans le fichier numérique final.
 
-XMP est le plus souvent sérialisé et stocké à l’aide d’un sous-ensemble du [Resource Description Framework](https://fr.wikipedia.org/wiki/Resource_Description_Framework) (RDF) [W3C](https://fr.wikipedia.org/wiki/World_Wide_Web_Consortium), qui est à son tour exprimé en langage [XML](https://fr.wikipedia.org/wiki/Extensible_Markup_Language).
+XMP est le plus souvent sérialisé et stocké à l’aide d’un sous-ensemble du [W3C](https://fr.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://fr.wikipedia.org/wiki/Resource_Description_Framework) (RDF), exprimé à son tour en format [XML](https://fr.wikipedia.org/wiki/Extensible_Markup_Language).
 
 ### Avantages du mode XMP   {#advantages-of-xmp}
 
@@ -113,7 +116,7 @@ Pour que la fonction Écriture différée XMP propage les métadonnées aux min
    ![step_properties](assets/step_properties.png)
 
 1. Enregistrez les modifications.
-1. Afin de régénérer les rendus Pyramid TIFF pour les images Dynamic Media avec les nouveaux attributs, ajoutez l’étape **[!UICONTROL Ressources d’image-processus de média dynamique]** au workflow Écriture différée des métadonnées de gestion des actifs numériques. Les rendus PTIFF sont uniquement créés et stockés localement, dans une implémentation Dynamic Media hybride.
+1. Afin de régénérer les rendus Pyramid TIFF pour les images Dynamic Media avec les nouveaux attributs, ajoutez l’étape **[!UICONTROL Ressources d’image-processus de média dynamique]** au workflow Écriture différée des métadonnées de gestion des actifs numériques. Les rendus PTIFF sont uniquement créés et conservés localement dans une implémentation hybride Dynamic Media.
 
 1. Enregistrez le workflow.
 
