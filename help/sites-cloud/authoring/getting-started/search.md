@@ -1,8 +1,11 @@
 ---
 title: Rechercher
 description: Retrouvez votre contenu plus rapidement grâce à de puissantes options de recherche
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+workflow-type: tm+mt
+source-wordcount: '494'
+ht-degree: 100%
 
 ---
 
@@ -58,6 +61,7 @@ Pour rechercher et filtrer vos ressources :
    * Répertoire de recherche
    * Balises
    * Critères de recherche, par exemple, les dates de modification, l’état de publication, l’état LiveCopy
+
    >[!NOTE]
    >
    >Les critères de recherche peuvent varier :
