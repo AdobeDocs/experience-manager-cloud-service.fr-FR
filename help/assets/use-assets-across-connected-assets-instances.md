@@ -2,9 +2,9 @@
 title: Utilisez des ressources connectées pour partager des ressources DAM dans un workflow de création  [!DNL Adobe Experience Manager Sites] .
 description: Utilisez des ressources disponibles pour un déploiement  [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites]  à distance.
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 5e89a44cb727547af9db783662e035c4e2102a4e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2049'
 ht-degree: 100%
 
@@ -92,6 +92,7 @@ Pour configurer la connectivité des ressources connectées et des [!DNL Sites] 
    1. Sélectionnez le lanceur de workflow puis cliquez sur **[!UICONTROL Propriétés]** dans la barre d’actions.
 
    1. Dans l’assistant [!UICONTROL Propriétés], modifiez les champs **[!UICONTROL Chemin]** en fonction des mappages suivants pour mettre à jour leurs expressions régulières afin d’exclure le point de montage **[!UICONTROL connectedassets]**.
+
    | Avant | Après |
    | ------------------------------------------------------- | -------------------------------------------------------------------------- |
    | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
