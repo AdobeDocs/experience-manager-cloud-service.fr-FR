@@ -1,8 +1,11 @@
 ---
 title: Création de lancements
 description: Vous pouvez créer un lancement afin de permettre la mise à jour d’une nouvelle version des pages web existantes en vue d’une activation future.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1000'
+ht-degree: 100%
 
 ---
 
@@ -33,15 +36,17 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
    * **Sites** :
       1. Sélectionnez **Créer** dans la barre d’outils pour ouvrir la zone de sélection.
       1. Dans cette zone, sélectionnez **Créer un lancement** pour ouvrir l’assistant.
+
    >[!NOTE]
    >
-   >Dans la console **Sites**, vous pouvez également utiliser le [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) pour sélectionner une page avant de sélectionner **Créer**.
+   >Dans la console **Sites**, vous pouvez également utiliser le [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) pour choisir une page avant de sélectionner **Créer**.
    >
    >La page sélectionnée sera alors utilisée comme page source initiale.
 
 1. À l’étape **Sélectionner la source**, vous devez **Ajouter des pages**. Vous pouvez sélectionner plusieurs pages en spécifiant un chemin pour chacune d’elles :
    * Accédez à l’emplacement qui vous intéresse.
    * Sélectionnez la ou les pages sources et confirmez (coche).
+
    Recommencez l’étape selon vos besoins.
 
    ![Sélection de la source de lancement](/help/sites-cloud/authoring/assets/launches-select-source.png)
@@ -57,6 +62,7 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
    * **Inclure les sous-pages**:
 
       * Indiquez si vous souhaitez créer le lancement avec ou sans les pages enfants.  Par défaut, ces sous-pages sont intégrées.
+
    Poursuivez en cliquant sur **Suivant**.
 
    ![Sélection de la source de lancement](/help/sites-cloud/authoring/assets/launches-select-source-2.png)
@@ -68,6 +74,7 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
    * **en utilisant un nouveau modèle pour remplacer la page** : voir [Création d’un lancement avec un nouveau modèle](#create-launch-with-new-template) pour plus de détails.
    * **Hériter des données actives de la page source** : sélectionnez cette option pour mettre automatiquement à jour le contenu des pages de lancement lors de la modification des pages source. Cette option transforme le lancement en Live Copy. Par défaut, cette option est sélectionnée. <!--Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md). By default, this option is selected.-->
    * **Date de lancement** : date et heure d’activation de la copie de lancement (selon l’indicateur **Prêt pour la production**. Voir [Lancements - Ordre des événements](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
+
    ![Propriétés de lancement](/help/sites-cloud/authoring/assets/launches-properties.png)
 
 1. Cliquez sur **Créer** pour terminer le processus et créer le lancement. La boîte de dialogue de confirmation vous invite à ouvrir le lancement immédiatement :
