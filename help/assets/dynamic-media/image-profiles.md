@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 59dacf83fd3df03bf9cc62d7816b8b7d7ee5ab9b
 workflow-type: tm+mt
 source-wordcount: '2736'
-ht-degree: 91%
+ht-degree: 93%
 
 ---
 
@@ -24,7 +24,7 @@ Lorsque vous chargez des images, vous pouvez les recadrer automatiquement en app
 
 Les coordonnées de recadrage intelligent dépendent du rapport L/H. En d’autres termes, pour les différents paramètres de recadrage intelligent d’un profil d’image, si le format est le même pour les dimensions ajoutées dans le profil d’image, le même format est envoyé au support dynamique. C’est pourquoi Adobe vous recommande d’utiliser la même zone de récolte. Cela permet de s’assurer qu’il n’y a pas d’impact sur les différentes dimensions utilisées dans le profil d’image.
 
-Gardez à l’esprit que chaque génération de recadrage dynamique créée nécessite un traitement supplémentaire. Par exemple, l’ajout de plus de cinq proportions de recadrage intelligent peut entraîner un taux d’assimilation des ressources lent. Il peut également augmenter la charge sur les systèmes. Etant donné que vous pouvez appliquer une recadrage dynamique au niveau des dossiers, Adobe vous recommande de l’utiliser *uniquement* dans les dossiers où cela est nécessaire.
+Gardez à l’esprit que chaque génération de recadrage dynamique créée nécessite un traitement supplémentaire. Par exemple, l’ajout de plus de cinq proportions de recadrage intelligent peut ralentir le taux d’assimilation des ressources. Cet ajout peut également augmenter la charge des systèmes. Étant donné que le recadrage intelligent s’applique aux dossiers, Adobe vous recommande de l’utiliser *uniquement* pour les dossiers où cela est nécessaire.
 
 Vous avez le choix entre deux options de recadrage d’image. Vous avez également la possibilité d’automatiser la création de nuances de couleurs et d’images.
 
@@ -84,7 +84,7 @@ L’option **[!UICONTROL Accentuation]** propose les options de filtre suivantes
   </tr>
   <tr>
    <td>Rayon</td>
-   <td>Détermine le nombre de pixels entourant les pixels de contour qui affectent l’accentuation. Pour les images à haute résolution, entrez une valeur comprise entre 1 et 2. Une valeur faible accentue uniquement les pixels de contour ; une valeur élevée accentue une bande plus large de pixels. La valeur appropriée dépend de la taille de l’image. La valeur par défaut est 0,2.    La plage est 0 à 250.</td>
+   <td>Détermine le nombre de pixels entourant les pixels de contour qui affectent l’accentuation. Pour les images à haute résolution, entrez une valeur comprise entre 1 et 2. Une valeur faible accentue uniquement les pixels de contour ; une valeur élevée accentue une bande plus large de pixels. La valeur appropriée dépend de la taille de l’image. La valeur par défaut est 0,2.  La plage est 0 à 250.</td>
   </tr>
   <tr>
    <td>Seuil</td>
@@ -243,12 +243,14 @@ Vous pouvez exécuter à nouveau le recadrage intelligent pour générer des rec
 
       * Si l’image comporte un recadrage intelligent ou un échantillon intelligent uniquement, faites glisser sur celle-ci la poignée de l’angle de la zone de recadrage pour ajuster la taille de la zone visible du recadrage.
       * Si l’image comporte à la fois un recadrage intelligent et un échantillon intelligent, faites glisser sur celle-ci la poignée de l’angle de la zone de recadrage pour ajuster la taille de la zone visible du recadrage. Ou, appuyez ou cliquez sur l’échantillon intelligent sous l’image (les échantillons de couleurs sont statiques), puis faites glisser la poignée de l’angle de la zone de recadrage pour ajuster la taille de la zone visible de l’échantillon.
+
       ![Redimensionnement du recadrage intelligent d’une image.](assets/edit_smart_crops-resize.png)
 
    * Déplacez la zone de recadrage intelligent. Effectuez l’une des opérations suivantes :
 
       * Si l’image comporte un recadrage intelligent ou un échantillon intelligent uniquement, faites glisser sur celle-ci la zone de recadrage vers un nouvel emplacement.
       * Si l’image comporte à la fois un recadrage intelligent et un échantillon intelligent, faites glisser sur celle-ci la zone de recadrage intelligent vers un nouvel emplacement. Vous pouvez également appuyer ou cliquer sur l’échantillon intelligent sous l’image (les échantillons de couleurs sont statiques), puis faire glisser la zone de recadrage intelligent de l’échantillon vers un nouvel emplacement.
+
       ![edit_smart_crops-move](assets/edit_smart_crops-move.png)
 
    * Annulez toutes vos modifications et rétablissez le recadrage intelligent ou l’échantillon intelligent d’origine (s’applique à la session de modification active uniquement).
