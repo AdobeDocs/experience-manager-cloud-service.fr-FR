@@ -2,8 +2,11 @@
 title: Modification ou ajout de métadonnées
 description: Découvrez les métadonnées des ressources dans AEM Assets et les différentes façons de les modifier.
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '426'
+ht-degree: 100%
 
 ---
 
@@ -23,6 +26,7 @@ Pour modifier des métadonnées, procédez comme suit :
    * Dans l’interface utilisateur d’Assets, sélectionnez la ressource et cliquez/appuyez sur l’icône **[!UICONTROL Afficher les propriétés]** dans la barre d’outils.
    * À partir de la miniature de la ressource, sélectionnez l’action rapide **[!UICONTROL Afficher les propriétés]**.
    * Sur la page de la ressource, cliquez/appuyez sur **[!UICONTROL Afficher les propriétés]** dans la barre d’outils.
+
    La page de la ressource affiche toutes les métadonnées de celle-ci. Ces métadonnées sont automatiquement extraites lorsqu’elles sont chargées (assimilées) dans AEM Assets.
 
 1. Apportez des modifications aux métadonnées dans les différents onglets, le cas échéant. Une fois que vous avez terminé, cliquez/appuyez sur **[!UICONTROL Enregistrer]** dans la barre d’outils pour enregistrer vos modifications. Cliquez/appuyez sur **[!UICONTROL Fermer]** pour revenir à l’interface web d’Assets.
