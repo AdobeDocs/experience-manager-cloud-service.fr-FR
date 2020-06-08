@@ -1,8 +1,11 @@
 ---
-title: Lancements
-description: Les lancements   vous permettent de développer efficacement du contenu en vue d’une publication ultérieure. Les lancements permettent de préparer les modifications pour une publication à venir, tout en conservant vos pages actuelles.
-translation-type: ht
+title: 'Les lancements  '
+description: La fonction Lancements permet de développer efficacement du contenu en vue d’une publication ultérieure. Les lancements permettent de préparer les modifications pour une publication à venir, tout en conservant vos pages actuelles.
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '806'
+ht-degree: 100%
 
 ---
 
@@ -37,13 +40,14 @@ La fonction Lancements vous permet de développer efficacement le contenu en vue
 
 La fonction Lancements vous permet de :
 
-* Créer une copie de vos pages source :
-   * La copie correspond au lancement.
-   * Les pages source de niveau supérieur s’appellent des **pages de production**.
+* Créez une copie de vos pages source :
+   * La copie est votre lancement.
+   * Les pages source de niveau supérieur sont connues sous le nom de **Production**.
       * Les pages source peuvent être extraites de plusieurs branches (distinctes).
+
    ![Ordre de fonctionnement des lancements](/help/sites-cloud/authoring/assets/launches-order.png)
 
-* Modifier la configuration des lancements :
+* Modifier la configuration de lancement :
    * Ajoutez ou supprimez des pages et/ou des branches vers/à partir du lancement.
    * Modifiez des propriétés de lancement, comme le **titre**, la **date de lancement** et l’indicateur **Prêt pour la production**. 
 * Vous pouvez convertir et modifier le contenu manuellement ou automatiquement :
@@ -54,16 +58,18 @@ La fonction Lancements vous permet de :
    * Automatiquement, ce qui implique les étapes suivantes : 
       * Le champ **Date de** **lancement** (**En direct**) : ce paramètre peut être défini lors de la création ou de la modification du lancement.
       * L’indicateur **Prêt pour la production** : cette option n’est sélectionnable que lors de la modification d’un lancement.
-      * Si l’indicateur **Prêt pour la production** est défini, le lancement sera automatiquement converti en pages de production à la date de **lancement** (**En direct**) spécifiée ****. Une fois la conversion faite, les pages de production sont automatiquement publiées.\
+      * Si l’indicateur **Prêt pour la production** est défini, le lancement sera automatiquement converti en pages de production à la date de **lancement** (**En direct**) spécifiée ****. Après la promotion, les pages de production sont automatiquement publiées.\
          Si aucune date n’a été définie, l’indicateur n’a aucun effet.
 * Mettez à jour vos pages source et de lancement en parallèle :
    * Les modifications apportées aux pages source sont automatiquement appliquées à la copie de lancement (si elle a été configurée avec un héritage, c’est-à-dire comme Live Copy). 
    * Les modifications apportées à la copie de lancement peuvent l’être sans interrompre les mises à jour automatiques ou modifier les pages source. 
+
    ![Actions en parallèle](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
 * [Créer un lancement imbriqué](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) (lancement dans un lancement) :
    * La source est un lancement existant.
    * Vous pouvez [promouvoir un lancement imbriqué](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) dans n’importe quelle cible. Il peut s’agir d’un lancement parent ou des pages source de niveau supérieur (production).
+
    ![Lancement imbriqué](/help/sites-cloud/authoring/assets/launches-nested.png)
 
    >[!CAUTION]
