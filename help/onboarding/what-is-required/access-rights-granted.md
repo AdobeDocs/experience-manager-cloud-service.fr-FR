@@ -1,8 +1,11 @@
 ---
-title: Droits d’accès accordés - Ce qui est requis
-description: Droits d’accès accordés - Ce qui est requis
+title: Droits d'accès accordés - Ce qui est requis
+description: Droits d'accès accordés - Ce qui est requis
 translation-type: tm+mt
 source-git-commit: 1511e24cbc4a845b1d7673438b8b7c4171d173e6
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 65%
 
 ---
 
@@ -17,6 +20,6 @@ Pour commencer à utiliser un Adobe ID, consultez la page [Gérer les types d’
 
 ## Utilisateurs et rôles {#users-and-roles}
 
-Une fois qu’Adobe a créé une organisation pour votre entreprise, l’administrateur désigné sera ajouté en tant que premier membre à cette organisation. The administrator will be granted the administrator permissions by default, and assigned the [!UICONTROL AEM Managed Services] **Product**, and one or more [!UICONTROL Cloud Manager] **Product Profiles**. Consultez la section [Ajout d’utilisateurs et de rôles](add-users-roles.md) pour en savoir plus sur la configuration et la gestion des utilisateurs de votre équipe à l’aide d’Admin Console.
+Une fois qu’Adobe a créé une organisation pour votre entreprise, l’administrateur désigné sera ajouté en tant que premier membre à cette organisation. Par défaut, l’administrateur se verra octroyer les autorisations d’administrateur et attribuer le **produit** [!UICONTROL AEM Managed Services] et un ou plusieurs **profils de produits** [!UICONTROL Cloud Manager]. Consultez la section [Ajout d’utilisateurs et de rôles](add-users-roles.md) pour en savoir plus sur la configuration et la gestion des utilisateurs de votre équipe à l’aide d’Admin Console.
 
 Avec ces droits, votre administrateur dispose maintenant d’une authentification unique (à l’aide de l’Adobe ID) pour accéder aux services [!UICONTROL Experience Cloud], se connecter à vos environnements cloud AEM et utiliser [!UICONTROL Cloud Manager].
