@@ -1,8 +1,11 @@
 ---
 title: Fragments d’expérience
 description: Utilisez des fragments d’expérience Adobe Experience Manager as a Cloud Service pour rendre vos expériences réutilisables et flexibles.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: b7a2e86de27dbfcdecaf3a2bc1984678b7b69375
+workflow-type: tm+mt
+source-wordcount: '1492'
+ht-degree: 100%
 
 ---
 
@@ -48,9 +51,9 @@ Si vous rencontrez des problèmes, contactez votre administrateur système.
 Les fragments d’expérience doivent être utilisés dans les cas suivants :
 
 * Chaque fois que vous souhaitez réutiliser des expériences.
-   * Expériences qui seront réutilisées avec un contenu identique ou similaire
+   * Expériences qui seront réutilisées avec un contenu identique ou similaire.
 * Lorsque vous utilisez AEM en tant que plate-forme de diffusion de contenu à des tiers.
-   * Toute solution qui souhaite utiliser AEM comme plate-forme de diffusion de contenu
+   * Toute solution qui souhaite utiliser AEM comme plate-forme de diffusion de contenu.
    * Intégration de contenu dans des points de contact tiers.
 * Si l’une de vos expériences se décline en plusieurs variations ou rendus.
    * Variations spécifiques à un canal ou contexte particulier.
@@ -221,11 +224,12 @@ Vous pouvez créer des variations du fragment d’expérience, selon vos besoins
 
 1. Définissez les propriétés requises :
 
-   * **Modèle**
+   * **Template (Modèle)**
    * **Titre**
    * **Nom** : si rien n’est indiqué dans ce champ, le nom est déduit du titre
    * **Description**
    * **Balises de variation**
+
    Par exemple :
 
    ![Propriétés de la variation](/help/sites-cloud/authoring/assets/xf-07.png)
@@ -244,6 +248,7 @@ Vous pouvez désormais utiliser le fragment d’expérience lors de la création
 
    * Faites glisser le fragment requis sur le composant depuis l’Explorateur de ressources.
    * Sélectionnez **Configurer** dans la barre d’outils du composant et indiquez le fragment à utiliser. Confirmez en cliquant sur **Terminé**.
+
    >[!NOTE]
    >
    >L’option Modifier disponible dans la barre d’outils du composant sert de raccourci pour ouvrir le fragment dans l’éditeur de fragments.
