@@ -1,8 +1,11 @@
 ---
 title: Modèles de fragment de contenu
 description: Les modèles de fragment de contenu sont utilisés pour créer des fragments de contenu avec du contenu structuré.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 100%
 
 ---
 
@@ -91,9 +94,9 @@ Le modèle de fragment de contenu définit la structure des fragments de contenu
 
    >[!NOTE]
    Pour le type données **texte multiligne**, il est possible de définir le **type par défaut** en tant que :
-   * **Texte enrichi** ;
-   * **Texte (Markdown)** ;
-   * **Texte brut**.
+   * **Texte enrichi**
+   * **Texte (Markdown)**
+   * **Texte brut**
    Si elle n’est pas spécifiée, la valeur par défaut **Texte enrichi** est utilisée pour ce champ.
    La modification du **type par défaut** dans un modèle de fragment de contenu prend effet uniquement sur un fragment de contenu existant et lié après l’ouverture et l’enregistrement du fragment dans l’éditeur.
 
