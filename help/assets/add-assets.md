@@ -1,8 +1,11 @@
 ---
 title: Ajout de vos ressources numériques à Adobe Experience Manager
 description: Ajout de vos ressources numériques à Adobe Experience Manager as a Cloud Service
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+workflow-type: tm+mt
+source-wordcount: '1354'
+ht-degree: 100%
 
 ---
 
@@ -34,6 +37,7 @@ Pour charger un ou plusieurs fichiers, vous pouvez les sélectionner sur votre b
 
    * Appuyez sur l’icône **[!UICONTROL Créer]** de la barre d’outils. Ensuite, dans le menu, appuyez sur **[!UICONTROL Fichiers]**. Au besoin, vous pouvez renommer le fichier dans la boîte de dialogue affichée.
    * Dans un navigateur prenant en charge HTML5, faites glisser directement les ressources dans l’interface utilisateur d’Assets. La boîte de dialogue permettant de renommer les fichiers n’est pas affichée.
+
    ![create_menu](assets/create_menu.png)
 
    Pour sélectionner plusieurs fichiers, appuyez sur la touche Ctrl ou Commande et sélectionnez les ressources dans la boîte de dialogue de sélecteur de fichiers. Si vous utilisez un iPad, vous ne pouvez sélectionner qu’un seul fichier à la fois.
