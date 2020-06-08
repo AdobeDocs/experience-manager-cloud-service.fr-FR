@@ -1,8 +1,11 @@
 ---
 title: Guide de démarrage rapide pour la création de pages
 description: Guide de haut niveau conçu pour vous aider à commencer à créer rapidement du contenu de page
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1585'
+ht-degree: 100%
 
 ---
 
@@ -40,7 +43,7 @@ Avant d’entamer la lecture de ce guide de démarrage rapide, nous vous proposo
    * **Les liens ne sont pas disponibles pour la navigation** lorsque vous êtes en mode d’**édition**. Pour naviguer à l’aide de liens, vous devez [afficher un aperçu de la page](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) à l’aide de l’une des fonctionnalités suivantes :
 
       * [Mode Aperçu](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)
-      * [Afficher comme publié(e)](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
+      * [Afficher comme publié(e) ](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 
 * Les versions ne sont pas lancées/créées à partir de l’éditeur de pages. Cette opération s’effectue dans la console **Sites** (via l’option **Créer** ou [Chronologie](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) pour une ressource sélectionnée).
 
@@ -74,7 +77,7 @@ Il existe plusieurs moyens de rechercher une page. Vous pouvez soit naviguer, so
 
 Pour [créer une page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) :
 
-1. [Accédez à l’emplacement](#finding-your-page) où créer la page.
+1. [Accédez à l’emplacement où créer la page.](#finding-your-page)
 1. Cliquez sur l’icône **Créer** et sélectionnez **Page** dans la liste :
 
    ![Bouton Créer](/help/sites-cloud/authoring/assets/create.png)
@@ -102,6 +105,7 @@ La méthode de sélection d’une page dépend du mode d’affichage dans la con
       * Sur un appareil mobile : appuyez de manière prolongée sur la carte
       * Sur un ordinateur de bureau : utilisez l’[action rapide](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) représentée par l’icône illustrant une coche :
    * Une coche apparaît sur la carte afin d’indiquer que la page a été sélectionnée.
+
    ![Exemple de carte](/help/sites-cloud/authoring/assets/card.png)
 
 ### Actions rapides (mode Carte/Bureau seulement) {#quick-actions-card-view-desktop-only}
@@ -134,6 +138,7 @@ Pour modifier votre page :
       * Ouvrez le panneau latéral.
       * Sélectionnez l’onglet des composants (l’[explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)).
       * Faites glisser le composant requis sur la page.
+
       Vous pouvez ouvrir (et fermer) le panneau latéral en cliquant sur l’icône suivante :
 
       ![Bouton bascule du panneau latéral](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
@@ -171,6 +176,7 @@ Pour modifier votre page :
 
       * Sélectionnez **Aperçu** dans la barre d’outils.
    * Revenez au mode d’édition (ou sélectionnez un autre mode) à l’aide du sélecteur déroulant **Modifier**.
+
    >[!NOTE]
    >
    >Pour naviguer en suivant les liens figurant dans le contenu, vous devez utiliser le [mode Aperçu](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode).
@@ -186,6 +192,7 @@ Vous pouvez [modifier les propriétés de page](/help/sites-cloud/authoring/fund
 
       * [Actions rapides (mode Carte/Bureau uniquement)](#quick-actions-card-view-desktop-only) pour la ressource appropriée.
       * La barre d’outils [une fois la page sélectionnée](#selecting-your-page-for-further-action).
+
       ![Bouton Propriétés](/help/sites-cloud/authoring/assets/properties.png)
 
    1. Les propriétés de la page s’affichent. Vous pouvez effectuer des mises à jour selon les besoins, puis les enregistrer à l’aide de la fonction Enregistrer.
@@ -209,6 +216,7 @@ Il existe deux méthodes principales pour [publier une page](/help/sites-cloud/a
 
       * [Actions rapides (mode Carte/Bureau uniquement)](#quick-actions-card-view-desktop-only) pour la ressource appropriée.
       * La barre d’outils, [une fois votre page sélectionnée](#selecting-your-page-for-further-action) (permet également d’accéder à l’option [Publier ultérieurement](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)).
+
       ![Bouton Publication rapide](/help/sites-cloud/authoring/assets/quick-publish.png)
 
 
@@ -217,7 +225,7 @@ Il existe deux méthodes principales pour [publier une page](/help/sites-cloud/a
    1. Ouvrez le menu **Informations sur la page**.
    1. Sélectionnez **Publier la page**.
 
-* Il n’est possible d’annuler la publication d’une page à partir de la console que via l’option **Gérer la publication**, qui est uniquement accessible dans la barre d’outils (pas par le biais des actions rapides).
+* L’annulation de la publication d’une page à partir de la console ne peut se faire que par l’intermédiaire de l’option **Gérer la publication**, disponible uniquement sur la barre d’outils (et non via les actions rapides).
 
    ![Bouton Gérer la publication](/help/sites-cloud/authoring/assets/manage-publication.png)
 
@@ -230,10 +238,11 @@ Il existe deux méthodes principales pour [publier une page](/help/sites-cloud/a
 Ces actions peuvent être déclenchées en procédant comme suit :
 
 1. [Accédez à la page](#finding-your-page) à déplacer, à copier-coller ou à supprimer.
-1. Sélectionnez l’icône Copier (puis Coller), Déplacer ou Supprimer comme requis, en utilisant :
+1. Sélectionnez l’icône de copie (puis de collage), de déplacement ou de suppression selon vos besoins à l’aide de l’une des méthodes suivantes :
 
    * Les [actions rapides (mode Carte/Bureau seulement)](#quick-actions-card-view-desktop-only) pour la ressource appropriée.
    * La barre d’outils [une fois la page sélectionnée](#selecting-your-page-for-further-action).
+
    Ensuite, en fonction de l’action sélectionnée :
 
    * Copier :
@@ -251,7 +260,7 @@ Ces actions peuvent être déclenchées en procédant comme suit :
 
 ### Verrouillage d’une page (puis déverrouillage) {#locking-your-page-then-unlocking}
 
-[Verrouillez une page](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) pour empêcher d’autres auteurs de la modifier en même temps que vous. L’icône/le bouton Verrouiller (et Déverrouiller) est accessible :
+Le [verrouillage d’une page](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) empêche d’autres auteurs de travailler dessus en même temps que vous. L’icône/le bouton Verrouiller (et Déverrouiller) est accessible :
 
 * La barre d’outils [une fois la page sélectionnée](#selecting-your-page-for-further-action).
 * Dans le [menu déroulant Informations sur la page](#editing-the-page-properties) lors de la modification d’une page.
