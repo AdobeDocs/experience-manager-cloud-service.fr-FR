@@ -2,8 +2,11 @@
 title: Archivage et extraction de fichiers dans AEM Assets
 description: Découvrez comment extraire les ressources pour modification et les archiver à nouveau une fois les modifications effectuées.
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '407'
+ht-degree: 100%
 
 ---
 
@@ -50,7 +53,7 @@ Cette caractéristique permet d’empêcher les autres utilisateurs d’écraser
 
    Vous pouvez également choisir d’annoter ou de publier la ressource.
 
-1. Sélectionnez la ressource modifiée dans l’interface utilisateur d’Assets, puis cliquez/appuyez sur l’icône **[!UICONTROL Archivage]** dans la barre d’outils.
+1. Sélectionnez la ressource modifiée dans l’interface utilisateur d’Assets, puis cliquez/appuyez sur l’icône **[!UICONTROL Archiver]** dans la barre d’outils.
 
    ![chlimage_1-475](assets/chlimage_1-475.png)
 
