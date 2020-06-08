@@ -1,16 +1,16 @@
 ---
-title: 'Votre boîte de réception  '
+title: Votre boîte de réception
 description: Gestion de vos tâches à l’aide de la boîte de réception
 translation-type: tm+mt
 source-git-commit: 672f1483c017d791365173c91b0bee5c44c33535
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Votre boîte de réception   {#your-inbox}
+# Votre boîte de réception  {#your-inbox}
 
 Vous pouvez recevoir des notifications de diverses sections d’AEM, y compris des workflows et des projets. Ces notifications peuvent par exemple concerner les éléments suivants :
 
@@ -43,7 +43,7 @@ Dans les deux consoles, le nombre actuel d’éléments présents dans votre bo�
 >
 >Certaines opérations sont également répertoriées en [mode Carte de la ressource appropriée](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view).
 
-## Ouverture de la boîte de réception   {#opening-the-inbox}
+## Ouverture de la boîte de réception  {#opening-the-inbox}
 
 Pour ouvrir la boîte de réception des notifications AEM :
 
@@ -92,6 +92,7 @@ Vous pouvez définir des paramètres d’affichage pour les deux modes (Liste et
    * **Regrouper par**
    * **Planification** ou **Aucun**
    * **Taille des cartes**
+
    ![Boîte de réception – Paramètres d’affichage du calendrier](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
 
 * **Mode Liste**
@@ -100,6 +101,7 @@ Vous pouvez définir des paramètres d’affichage pour les deux modes (Liste et
 
    * **Tri par**
    * **Ordre de tri**
+
    ![Boîte de réception – Paramètres du mode Liste](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
    Vous pouvez également déléguer votre calendrier à d’autres fins, demander la délégation à d’autres utilisateurs ou encore gérer vos délégations.
@@ -128,6 +130,7 @@ Vous pouvez définir des paramètres d’affichage pour les deux modes (Liste et
    * **Revenir** à une étape précédente
    * Afficher la charge utile pour un workflow
    * Créer un projet à partir de l’élément
+
    >[!NOTE]
    >
    >Pour plus d’informations, voir :
@@ -140,6 +143,7 @@ Vous pouvez définir des paramètres d’affichage pour les deux modes (Liste et
    * Une boîte de dialogue correspondant à l’opération s’ouvre.
    * Un assistant d’action démarre.
    * Une page de documentation s’ouvre.
+
    Par exemple, **Déléguer** ouvre une boîte de dialogue :
 
    ![Déléguer la tâche de boîte de réception](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
@@ -168,11 +172,13 @@ Vous pouvez créer des tâches directement à partir de la boîte de réception�
       * **Priorité de la tâche**
       * **Date de début**
       * **Échéance**
+
    ![Tâche d’ajout de la boîte de réception](/help/sites-cloud/authoring/assets/inbox-create-task.png)
 
    * **Avancé**
 
       * **Nom** : ce champ est utilisé pour former l’URL ; s’il est vide, le nom est basé sur le champ **Titre**.
+
    ![Options avancées de la tâche d’ajout de boîte de réception](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
 1. Sélectionnez **Envoyer**.
