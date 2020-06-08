@@ -1,8 +1,11 @@
 ---
 title: Fragments d’expérience
 description: Extension des fragments d’expérience Adobe Experience Manager as a Cloud Service.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 625e56efdab2f41026988fb90b72c31ff876db57
+workflow-type: tm+mt
+source-wordcount: '1660'
+ht-degree: 100%
 
 ---
 
@@ -94,8 +97,9 @@ Pour créer un modèle de fragment d’expérience détecté par l’assistant *
    1. Et le nom du modèle doit commencer par :
       `experience-fragments`
 Cela permet aux utilisateurs de créer des fragments d’expérience dans /content/experience-fragments, étant donné que la propriété `cq:allowedTemplates` de ce dossier inclut tous les modèles dont le nom commence par `experience-fragment`. Les clients peuvent mettre à jour cette propriété afin d’inclure leur propre schéma d’affectation de noms ou emplacement de modèle.
+Les [modèles autorisés](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) peuvent être configurés dans la console des fragments d’expérience.
 
-1. Les [modèles autorisés](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) peuvent être configurés dans la console des fragments d’expérience.
+1. Composants des fragments d’expérience {#components-for-experience-fragments}](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder)
 
 <!--
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
@@ -106,11 +110,11 @@ Cela permet aux utilisateurs de créer des fragments d’expérience dans /conte
 >[Allowed templates](/help/sites-authoring/experience-fragments.md#configuring-allowed-templates) can be configured in the Experience Fragments console.
 -->
 
-## Composants des fragments d’expérience {#components-for-experience-fragments}
-
-Le développement de composants à utiliser avec/dans les fragments d’expérience est conforme aux pratiques standard.
+## Le développement de composants à utiliser avec/dans les fragments d’expérience est conforme aux pratiques standard.{#components-for-experience-fragments}
 
 La seule configuration supplémentaire consiste à s’assurer que les composants sont autorisés sur le modèle. Pour ce faire, la stratégie de contenu est utilisée.
+
+Fournisseur de réécriture de liens de fragments d’expérience - HTML {#the-experience-fragment-link-rewriter-provider-html}
 
 <!--
 [Developing components](/help/sites-developing/components.md) for use with/in Experience Fragments follow standard practices.
@@ -118,78 +122,79 @@ La seule configuration supplémentaire consiste à s’assurer que les composant
 The only additional configuration is to ensure that the components are [allowed on the template, this is achieved with the Content Policy](/help/sites-developing/page-templates-editable.md#content-policies).
 -->
 
-## Fournisseur de réécriture de liens de fragments d’expérience - HTML {#the-experience-fragment-link-rewriter-provider-html}
+## Dans AEM, vous avez la possibilité de créer des fragments d’expérience. Un fragment d’expérience :{#the-experience-fragment-link-rewriter-provider-html}
 
-Dans AEM, vous avez la possibilité de créer des fragments d’expérience. Un fragment d’expérience :
+est constitué d’un groupe de composants avec une mise en page ;
 
-* est constitué d’un groupe de composants avec une mise en page ;
 * peut exister indépendamment d’une page AEM.
+* De tels groupes sont notamment utilisés pour incorporer du contenu dans des points de contact tiers, tels qu’Adobe Target.
 
-De tels groupes sont notamment utilisés pour incorporer du contenu dans des points de contact tiers, tels qu’Adobe Target.
+Réécriture de liens par défaut {#default-link-rewriting}
 
-### Réécriture de liens par défaut {#default-link-rewriting}
+### La fonction Exporter vers Target vous permet :{#default-link-rewriting}
 
 <!--Using the [Export to Target](/help/sites-administering/experience-fragments-target.md) feature, you can:
 -->
 
-La fonction Exporter vers Target vous permet :
+de créer un fragment d’expérience ,
 
-* de créer un fragment d’expérience ,
 * d’y ajouter des composants ;
 * de l’exporter ensuite en tant qu’offre Adobe Target, au format HTML ou JSON.
+* Cette fonction peut être activée sur une instance de création d’AEM. Elle nécessite une configuration Adobe Target valide, ainsi que des configurations pour l’externaliseur de liens.
 
-Cette fonction peut être activée sur une instance de création d’AEM. Elle nécessite une configuration Adobe Target valide, ainsi que des configurations pour l’externaliseur de liens.
+L’externaliseur de liens sert à déterminer les URL appropriées qui sont nécessaires lors de la création de la version HTML de l’offre Target, qui est ensuite envoyée à Adobe Target. Cela s’avère nécessaire dans la mesure où Adobe Target exige que tous les liens de l’offre HTML Target soient accessibles au public ; cela signifie que les ressources auxquelles les liens font référence et le fragment d’expérience proprement dit doivent être publiés avant d’être utilisés.
 
 <!--
 This feature can be [enabled on an author instance of AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). It requires a valid Adobe Target Configuration, and configurations for the Link Externalizer.
 -->
 
-L’externaliseur de liens sert à déterminer les URL appropriées qui sont nécessaires lors de la création de la version HTML de l’offre Target, qui est ensuite envoyée à Adobe Target. Cela s’avère nécessaire dans la mesure où Adobe Target exige que tous les liens de l’offre HTML Target soient accessibles au public ; cela signifie que les ressources auxquelles les liens font référence et le fragment d’expérience proprement dit doivent être publiés avant d’être utilisés.
-
 Par défaut, lorsque vous créez une offre HTML Target, une requête est envoyée à un sélecteur Sling personnalisé dans AEM. Ce sélecteur est appelé `.nocloudconfigs.html`. Comme son nom l’indique, il crée un rendu HTML brut d’un fragment d’expérience, mais n’inclut pas de configurations cloud (qui seraient des informations superflues).
 
-Une fois la page HTML générée, le pipeline Sling Rewriter apporte des modifications à la sortie :
+Une fois la page HTML générée, le pipeline Sling Rewriter apporte des modifications à la sortie :`.nocloudconfigs.html`
 
-1. Les éléments `html`, `head` et `body` sont remplacés par des éléments `div`. Les éléments `meta`, `noscript` et `title` sont supprimés (il s’agit d’éléments enfants de l’élément `head` d’origine et ils ne sont pas pris en compte lorsque celui-ci est remplacé par l’élément `div`).
+Les éléments `html`, `head` et `body` sont remplacés par des éléments `div`. Les éléments `meta`, `noscript` et `title` sont supprimés (il s’agit d’éléments enfants de l’élément `head` d’origine et ils ne sont pas pris en compte lorsque celui-ci est remplacé par l’élément `div`).
 
-   Cela permet de s’assurer que l’offre Target HTML peut être incluse dans les activités Target.
+1. Cela permet de s’assurer que l’offre Target HTML peut être incluse dans les activités Target.`html``head``body``div``meta``noscript``title``head``div`
 
-2. AEM modifie les liens internes présents dans le code HTML afin qu’ils pointent vers une ressource publiée.
+   AEM modifie les liens internes présents dans le code HTML afin qu’ils pointent vers une ressource publiée.
 
-   Pour identifier les liens à modifier, AEM suit ce modèle pour les attributs d’éléments HTML :
+2. Pour identifier les liens à modifier, AEM suit ce modèle pour les attributs d’éléments HTML :
 
-   1. Attributs `src`
-   2. Attributs `href`
-   3. Attributs `*-src` (comme data-src, custom-src, etc.)
-   4. Attributs `*-href` (comme `data-href`, `custom-href`, `img-href`, etc.)
-   >[!NOTE]
+   Attributs `src`
+
+   1. Attributs `href`
+   2. Attributs `*-src` (comme data-src, custom-src, etc.)
+   3. Attributs `*-href` (comme `data-href`, `custom-href`, `img-href`, etc.)
+   4. [!NOTE]`data-href``custom-href``img-href`
+
+   >[!NOTE]Dans la plupart des cas, les liens internes du code HTML sont des liens relatifs, mais il peut arriver que des composants personnalisés fournissent des URL complètes dans le code HTML. Par défaut, AEM ignore ces URL complètes et n’effectue aucune modification.
    >
-   >Dans la plupart des cas, les liens internes du code HTML sont des liens relatifs, mais il peut arriver que des composants personnalisés fournissent des URL complètes dans le code HTML. Par défaut, AEM ignore ces URL complètes et n’effectue aucune modification.
+   >Les liens de ces attributs sont exécutés via l’externaliseur de liens AEM `publishLink()` afin de recréer l’URL comme si elle se trouvait sur une instance publiée et, de ce fait, accessible au public.
 
-   Les liens de ces attributs sont exécutés via l’externaliseur de liens AEM `publishLink()` afin de recréer l’URL comme si elle se trouvait sur une instance publiée et, de ce fait, accessible au public.
+   Lors de l’utilisation d’une implémentation prête à l’emploi, le processus décrit ci-dessus doit être suffisant pour générer l’offre Target à partir du fragment d’expérience, puis l’exporter vers Adobe Target. Toutefois, certains cas d’utilisation ne sont pas pris en compte dans ce processus, à savoir :`publishLink()`
 
-Lors de l’utilisation d’une implémentation prête à l’emploi, le processus décrit ci-dessus doit être suffisant pour générer l’offre Target à partir du fragment d’expérience, puis l’exporter vers Adobe Target. Toutefois, certains cas d’utilisation ne sont pas pris en compte dans ce processus, à savoir :
+Mappage Sling disponible uniquement sur l’instance de publication
 
-* Mappage Sling disponible uniquement sur l’instance de publication
 * Redirections du Dispatcher
+* Pour ces cas d’utilisation, AEM propose l’interface du fournisseur de réécriture de liens.
 
-Pour ces cas d’utilisation, AEM propose l’interface du fournisseur de réécriture de liens.
+Interface du fournisseur de réécriture de liens {#link-rewriter-provider-interface}
 
-### Interface du fournisseur de réécriture de liens {#link-rewriter-provider-interface}
+### Pour les cas plus complexes, non couverts par le [paramètre par défaut](#default-link-rewriting), AEM propose l’interface du fournisseur de réécriture de liens. Il s’agit d’une interface `ConsumerType` que vous pouvez implémenter dans vos bundles sous la forme d’un service. Elle ignore les modifications qu’AEM effectue sur les liens internes d’une offre HTML telle qu’elle est générée à partir d’un fragment d’expérience. Cette interface vous permet de personnaliser le processus de réécriture des liens HTML internes afin de l’adapter aux besoins de votre entreprise.
 
-Pour les cas plus complexes, non couverts par le [paramètre par défaut](#default-link-rewriting), AEM propose l’interface du fournisseur de réécriture de liens. Il s’agit d’une interface `ConsumerType` que vous pouvez implémenter dans vos bundles sous la forme d’un service. Elle ignore les modifications qu’AEM effectue sur les liens internes d’une offre HTML telle qu’elle est générée à partir d’un fragment d’expérience. Cette interface vous permet de personnaliser le processus de réécriture des liens HTML internes afin de l’adapter aux besoins de votre entreprise.
+Voici quelques exemples d’implémentation de cette interface en tant que service :[](#default-link-rewriting)`ConsumerType`
 
-Voici quelques exemples d’implémentation de cette interface en tant que service :
+Les mappages Sling sont activés sur les instances de publication, mais pas sur l’instance de création.
 
-* Les mappages Sling sont activés sur les instances de publication, mais pas sur l’instance de création.
 * Un Dispatcher ou une technologie semblable est utilisé pour rediriger les URL en interne.
 * Il existe des `sling:alias mechanisms` pour les ressources.
+* [!NOTE]
 
->[!NOTE]
+>[!NOTE]Cette interface traite uniquement les liens HTML internes de l’offre Target générée.
 >
->Cette interface traite uniquement les liens HTML internes de l’offre Target générée.
+>L’interface du fournisseur de réécriture de liens (`ExperienceFragmentLinkRewriterProvider`) se présente comme suit :
 
-L’interface du fournisseur de réécriture de liens (`ExperienceFragmentLinkRewriterProvider`) se présente comme suit :
+Utilisation de l’interface du fournisseur de réécriture de liens {#how-to-use-the-link-rewriter-provider-interface}
 
 ```java
 public interface ExperienceFragmentLinkRewriterProvider {
@@ -203,13 +208,13 @@ public interface ExperienceFragmentLinkRewriterProvider {
 }
 ```
 
-### Utilisation de l’interface du fournisseur de réécriture de liens {#how-to-use-the-link-rewriter-provider-interface}
-
-Avant d’utiliser cette interface, vous devez créer un bundle contenant un nouveau composant de service qui l’implémente.
+### Avant d’utiliser cette interface, vous devez créer un bundle contenant un nouveau composant de service qui l’implémente.{#how-to-use-the-link-rewriter-provider-interface}
 
 Ce service sera utilisé pour se connecter à la réécriture Exporter vers Target du fragment d’expérience afin d’avoir accès aux différents liens.
 
 Par exemple, `ComponentService` :
+
+Pour que le service fonctionne, trois méthodes doivent à présent être implémentées en interne :`ComponentService`
 
 ```java
 import com.adobe.cq.xf.ExperienceFragmentLinkRewriterProvider;
@@ -239,22 +244,22 @@ public class GeneralLinkRewriter implements ExperienceFragmentLinkRewriterProvid
 }
 ```
 
-Pour que le service fonctionne, trois méthodes doivent à présent être implémentées en interne :
+` [shouldRewrite](#shouldrewrite)`
 
-* ` [shouldRewrite](#shouldrewrite)`
 * ` [rewriteLink](#rewritelink)`
+* `rewriteLinkExample2`
 
-   * `rewriteLinkExample2`
+   * ` [getPriority](#priorities-getpriority)`
 
-* ` [getPriority](#priorities-getpriority)`
+* shouldRewrite {#shouldrewrite}
 
-#### shouldRewrite {#shouldrewrite}
-
-Vous devez indiquer au système s’il doit ou non réécrire les liens lorsqu’un appel est effectué pour Exporter vers Target sur une variation donnée du fragment d’expérience. Pour ce faire, implémentez la méthode suivante :
+#### Vous devez indiquer au système s’il doit ou non réécrire les liens lorsqu’un appel est effectué pour Exporter vers Target sur une variation donnée du fragment d’expérience. Pour ce faire, implémentez la méthode suivante :{#shouldrewrite}
 
 `shouldRewrite(ExperienceFragmentVariation experienceFragment);`
 
-Par exemple :
+`shouldRewrite(ExperienceFragmentVariation experienceFragment);`Par exemple :
+
+Cette méthode reçoit, en tant que paramètre, la variation du fragment d’expérience qui est actuellement réécrite par le système Exporter vers Target.
 
 ```java
 @Override
@@ -263,55 +268,56 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 }
 ```
 
-Cette méthode reçoit, en tant que paramètre, la variation du fragment d’expérience qui est actuellement réécrite par le système Exporter vers Target.
-
 Dans l’exemple ci-dessus, nous souhaitons réécrire les éléments suivants :
 
-* Les liens présents dans `src`
+Les liens présents dans `src`
 
 * Uniquement les attributs `href`
 
-* Pour un fragment d’expérience spécifique :
-   `/content/experience-fragment/master`
+* `href`Pour un fragment d’expérience spécifique :
 
-Les autres fragments d’expérience transitant par le système Exporter vers la cible sont ignorés et ne sont pas affectés par les modifications implémentées dans ce service.
 
-#### rewriteLink {#rewritelink}
+* `/content/experience-fragment/master`   `/content/experience-fragment/master`Les autres fragments d’expérience transitant par le système Exporter vers la cible sont ignorés et ne sont pas affectés par les modifications implémentées dans ce service.
 
-S’agissant de la variation du fragment d’expérience concernée par le processus de réécriture, elle se poursuit pour permettre au service de traiter la réécriture du lien. Chaque fois qu’un lien est rencontré dans le code HTML interne, la méthode suivante est appelée :
+rewriteLink {#rewritelink}
+
+#### S’agissant de la variation du fragment d’expérience concernée par le processus de réécriture, elle se poursuit pour permettre au service de traiter la réécriture du lien. Chaque fois qu’un lien est rencontré dans le code HTML interne, la méthode suivante est appelée :{#rewritelink}
 
 `rewriteLink(String link, String tag, String attribute)`
 
-En entrée, la méthode reçoit les paramètres suivants :
+`rewriteLink(String link, String tag, String attribute)`En entrée, la méthode reçoit les paramètres suivants :
 
-* `link`
+`link`
 Représentation `String` du lien en cours de traitement. Il s’agit généralement d’une URL relative pointant vers la ressource sur l’instance de création.
 
 * `tag`
 Nom de l’élément HTML en cours de traitement.
-
-* `attribute`
+`attribute`
 Nom exact de l’attribut.
 
-Si, par exemple, le système Exporter vers Target traite actuellement cet élément, vous pouvez définir `CSSInclude` en tant que :
+* Si, par exemple, le système Exporter vers Target traite actuellement cet élément, vous pouvez définir `CSSInclude` en tant que :
+
+* L’appel de la `rewriteLink()` méthode est effectué à l’aide des paramètres suivants :
+
+Lorsque vous créez le service, vous pouvez prendre des décisions en fonction de l’entrée indiquée, puis réécrire le lien en conséquence.`CSSInclude`
 
 ```java
 <link rel="stylesheet" href="/etc.clientlibs/foundation/clientlibs/main.css" type="text/css">
 ```
 
-L’appel de la `rewriteLink()` méthode est effectué à l’aide des paramètres suivants :
+Dans notre exemple, nous souhaitons supprimer la partie `/etc.clientlibs` de l’URL et ajouter le domaine externe approprié. Pour simplifier les choses, nous partons du principe que nous avons accès à un résolveur de ressources pour le service, comme dans `rewriteLinkExample2` :
 
 ```java
 rewriteLink(link="/etc.clientlibs/foundation/clientlibs/main.css", tag="link", attribute="href" )
 ```
 
-Lorsque vous créez le service, vous pouvez prendre des décisions en fonction de l’entrée indiquée, puis réécrire le lien en conséquence.
+[!NOTE]
 
-Dans notre exemple, nous souhaitons supprimer la partie `/etc.clientlibs` de l’URL et ajouter le domaine externe approprié. Pour simplifier les choses, nous partons du principe que nous avons accès à un résolveur de ressources pour le service, comme dans `rewriteLinkExample2` :
+Pour plus d’informations sur l’obtention d’un résolveur de ressources par le biais d’un utilisateur des services, voir Utilisateurs des services dans AEM.`/etc.clientlibs``rewriteLinkExample2`
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’obtention d’un résolveur de ressources par le biais d’un utilisateur des services, voir Utilisateurs des services dans AEM.
+>Si la méthode ci-dessus renvoie `null`, le système Exporter vers Target laisse le lien tel quel, c’est-à-dire un lien relatif vers une ressource.
 
 <!--
 >For more information on how to get a resource resolver through a service user see [Service Users in AEM](/help/sites-administering/security-service-users.md).
@@ -342,16 +348,16 @@ public String rewriteLink(String link, String tag, String attribute) {
 }
 ```
 
->[!NOTE]
+>Priorités - getPriority {#priorities-getpriority}
 >
->Si la méthode ci-dessus renvoie `null`, le système Exporter vers Target laisse le lien tel quel, c’est-à-dire un lien relatif vers une ressource.
+>Il n’est pas rare de devoir utiliser plusieurs services pour traiter différents types de fragments d’expérience, voire de disposer d’un service générique qui gère l’externalisation et le mappage pour tous les fragments d’expérience. Dans ce cas, des conflits peuvent survenir au niveau du service à utiliser. Aussi, AEM permet-il de définir des **priorités** pour différents services. Les priorités sont spécifiées en utilisant la méthode suivante :
 
-#### Priorités - getPriority {#priorities-getpriority}
-
-Il n’est pas rare de devoir utiliser plusieurs services pour traiter différents types de fragments d’expérience, voire de disposer d’un service générique qui gère l’externalisation et le mappage pour tous les fragments d’expérience. Dans ce cas, des conflits peuvent survenir au niveau du service à utiliser. Aussi, AEM permet-il de définir des **priorités** pour différents services. Les priorités sont spécifiées en utilisant la méthode suivante :
-
-* `getPriority()`
+#### `getPriority()`
 
 Cette méthode permet d’utiliser plusieurs services pour lesquels la méthode `shouldRewrite()` renvoie la valeur « true » pour le même fragment d’expérience. Le service qui renvoie la valeur la plus élevée à partir de sa méthode `getPriority()` est celui qui traite la variation du fragment d’expérience.
 
-Par exemple, un `GenericLinkRewriterProvider` peut gérer le mappage de base pour tous les fragments d’expérience et lorsque la méthode `shouldRewrite()` renvoie `true` pour toutes les variations du fragment d’expérience. Pour plusieurs fragments d’expérience spécifiques, une gestion spéciale peut être souhaitable. Dans ce cas, vous pouvez donc fournir un `SpecificLinkRewriterProvider` pour lequel la méthode `shouldRewrite()` ne renvoie la valeur « true » que pour certaines variations du fragment d’expérience. Pour s’assurer que `SpecificLinkRewriterProvider` est choisi pour traiter ces variations du fragment d’expérience, il doit renvoyer dans sa méthode `getPriority()` un nombre supérieur à `GenericLinkRewriterProvider.`
+* Par exemple, un `GenericLinkRewriterProvider` peut gérer le mappage de base pour tous les fragments d’expérience et lorsque la méthode `shouldRewrite()` renvoie `true` pour toutes les variations du fragment d’expérience. Pour plusieurs fragments d’expérience spécifiques, une gestion spéciale peut être souhaitable. Dans ce cas, vous pouvez donc fournir un `SpecificLinkRewriterProvider` pour lequel la méthode `shouldRewrite()` ne renvoie la valeur « true » que pour certaines variations du fragment d’expérience. Pour s’assurer que `SpecificLinkRewriterProvider` est choisi pour traiter ces variations du fragment d’expérience, il doit renvoyer dans sa méthode `getPriority()` un nombre supérieur à `GenericLinkRewriterProvider.`
+
+This method allows the use of several services where the `shouldRewrite()` method returns true for the same Experience Fragment. The service that returns the highest number from its `getPriority()`method is the service that handles the Experience Fragment Variation.
+
+As an example, you can have a `GenericLinkRewriterProvider` that handles the basic mapping for all Experience Fragments and when the `shouldRewrite()` method returns `true` for all Experience Fragment Variations. For several specific Experience Fragments, you may want special handling, so in this case, you can provide a `SpecificLinkRewriterProvider` for which the `shouldRewrite()` method returns true only for some Experience Fragment Variations. To make sure that `SpecificLinkRewriterProvider` is chosen to handle those Experience Fragment Variations, it must return in its `getPriority()` method a higher number than `GenericLinkRewriterProvider.`
