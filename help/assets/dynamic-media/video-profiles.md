@@ -1,9 +1,9 @@
 ---
 title: Profils vidéo
 description: Dynamic Media est fourni avec un profil prédéfini de codage vidéo adaptatif. Les paramètres de ce profil prêt à l’emploi sont optimisés pour offrir à vos clients la meilleure expérience de visionnage possible. Vous pouvez également ajouter un recadrage intelligent à vos vidéos.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 207f99b9b53188178c6137bb94a184f306b17f96
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3676'
 ht-degree: 100%
 
