@@ -1,8 +1,11 @@
 ---
 title: Concepts de base d’Adobe Experience Manager as a Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation sur les concepts de base d’Adobe Experience Manager as a Cloud Service
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: b7f0896adbfad31597ea8224f1daaa12a2f40180
+workflow-type: tm+mt
+source-wordcount: '338'
+ht-degree: 100%
 
 ---
 
@@ -34,7 +37,7 @@ Cette page répertorie les ressources d’aide autonome qui présentent les conc
 
 * [Documentation Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentation HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
-* [Documentation sur les composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [Documentation sur les composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 * [Documentation Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriels sur Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
