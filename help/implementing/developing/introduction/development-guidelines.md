@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 8e8863d390132ff8df943548b04e9d7c636c4248
 workflow-type: tm+mt
 source-wordcount: '1588'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Le code ne pourra pas télécharger de fichiers binaires au moment de l’exécu
 
 ## Pas de fichiers binaires de diffusion via AEM as a Cloud Service {#no-streaming-binaries}
 
-Les fichiers binaires doivent être accessibles via le réseau CDN, qui diffusera des fichiers binaires en dehors des services AEM principaux.
+Les fichiers binaires doivent être accessibles via le réseau de diffusion de contenu, qui diffusera des fichiers binaires en dehors des services AEM principaux.
 
 Par exemple, n’utilisez pas `asset.getOriginal().getStream()`, qui déclenche le téléchargement d’un fichier binaire sur le disque éphémère du service AEM.
 
@@ -86,7 +86,7 @@ Le contenu est répliqué de l’instance d’auteur vers l’instance de public
 
 ### Journaux {#logs}
 
-Pour le développement en local, les entrées de journaux sont écrites dans des fichiers locaux  dans le dossier `/crx-quickstart/logs`.
+Pour le développement en local, les entrées de journaux sont écrites dans des fichiers locaux   dans le dossier `/crx-quickstart/logs`.
 
 Dans les environnements cloud, les développeurs peuvent télécharger les journaux via Cloud Manager ou utiliser un outil de ligne de commande pour en afficher les dernières lignes. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
@@ -146,7 +146,7 @@ Pour plus d’informations, consultez [cette page](/help/release-notes/home.md).
 
 Les développeurs peuvent générer des informations d’état et résoudre diverses ressources.
 
-Comme illustré ci-dessous, les informations d’état disponibles incluent l’état des lots, des composants, des configurations OSGI, des index Oak, des services OSGI et des tâches Sling.
+Comme illustré ci-dessous, les informations d’état disponibles incluent l’état des bundles, des composants, des configurations OSGI, des index Oak, des services OSGI et des tâches Sling.
 
 ![Console de développement 1](/help/implementing/developing/introduction/assets/devconsole1.png)
 
@@ -160,7 +160,7 @@ Comme illustré ci-dessous, les développeurs peuvent résoudre les dépendances
 
 ![Console de développement 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Pour les programmes réguliers, l’accès à la Console développeur est défini par le &quot;Cloud Manager - Developer Role&quot; dans la Console d’administration, tandis que pour les programmes de sandbox, la Console développeur est disponible pour tout utilisateur disposant d’un profil de produit qui lui permet d’accéder à AEM en tant que service Cloud. Pour plus d’informations sur la configuration des autorisations d’utilisateur, voir Documentation [de](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)Cloud Manager.
+Pour les programmes normaux, l’accès à la Console développeur est défini par la mention « Cloud Manager - Rôle de développeur » dans l’Admin Console. Pour les programmes Sandbox, la Console développeur est disponible pour tout utilisateur disposant d’un profil de produit lui permettant d’accéder à AEM as a Cloud Service. Pour plus d’informations sur la configuration des autorisations des utilisateurs, voir la section [Documentation de Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 
 
