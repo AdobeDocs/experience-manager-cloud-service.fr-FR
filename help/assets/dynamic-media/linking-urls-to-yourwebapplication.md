@@ -1,8 +1,11 @@
 ---
 title: Liaison d’URL à une application web
 description: Comment lier des URL à votre application web dans les médias dynamiques
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+workflow-type: tm+mt
+source-wordcount: '1270'
+ht-degree: 100%
 
 ---
 
@@ -155,6 +158,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 1. Sur la page **[!UICONTROL Paramètres Dynamic Media Cloud Services]**, procédez comme suit :
 
    * Sous **[!UICONTROL URL du service vidéo]**, copiez le chemin d’URL entier. Vous aurez besoin de l’URL copiée dans ces étapes. Par exemple, le chemin URL est similaire au suivant :
+
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
    (Le chemin ci-dessus est donné à titre d’illustration uniquement ; il ne s’agit pas de celui que vous allez copier.)
