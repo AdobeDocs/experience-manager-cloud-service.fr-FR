@@ -1,8 +1,11 @@
 ---
 title: Compréhension de la segmentation
 description: La segmentation est un élément clé lors de la création d’une campagne.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '540'
+ht-degree: 96%
 
 ---
 
@@ -45,7 +48,7 @@ Lors de la discussion de la segmentation, la terminologie suivante est utilisée
    * État civil
    * Sexe
    * Emplacement
-* **Caractéristiques dérivées**   - Certaines caractéristiques démographiques sont difficiles à déterminer sans inscription, mais peuvent être extraites en combinant les caractéristiques comportementales et démographiques.
+* **Caractéristiques** dérivées - Certaines caractéristiques démographiques sont difficiles à déterminer sans enregistrement, mais peuvent être dérivées en combinant des caractéristiques comportementales et démographiques.
    * Par exemple, la combinaison de l’URL de référence (en tant que caractéristique comportementale) avec des données démographiques (acquises à partir d’outils tels que [Google Ad Planner](https://www.google.com/adplanner/)) permet aux propriétaires du site d’extraire les caractéristiques comportementales de leurs visiteurs.
 * **Sous-segment** : un segment peut être divisé en plusieurs sous-segments. Ceci s’effectue en définissant des caractéristiques supplémentaires.
 * **Page de teaser** : une page de teaser est conçue à l’intention d’une audience spécifique. Elle contient du contenu réutilisable qui peut être utilisé dans le paragraphe de teaser.
