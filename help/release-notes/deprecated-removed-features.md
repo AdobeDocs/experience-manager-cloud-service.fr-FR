@@ -1,9 +1,9 @@
 ---
 title: Fonctionnalités obsolètes et supprimées
 description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et supprimées dans Adobe Experience Manager as a Cloud Service.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 100%
 
