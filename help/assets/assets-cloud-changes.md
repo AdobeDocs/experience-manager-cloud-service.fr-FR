@@ -1,9 +1,9 @@
 ---
 title: Modifications notables d’Adobe Experience Manager Assets as a Cloud Service
 description: Modifications notables d’Adobe Experience Manager Assets dans AEM Cloud Service par rapport à Adobe Experience Manager 6.5.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 37ff6912837ba78c90526e8f8322b9002e9a4304
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 100%
 
