@@ -1,8 +1,11 @@
 ---
 title: Images interactives
 description: Découvrir comment utiliser les images interactives dans Dynamic Media
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '4238'
+ht-degree: 100%
 
 ---
 
@@ -60,6 +63,7 @@ Si vous utilisez un gestionnaire de contenu web (WCM) tiers, vous devez intégre
 >
 >* Vous souhaitez ajouter de l’interactivité à votre image en déclenchant des aperçus rapides.
 >* Votre mise en œuvre d’AEM n’utilise *pas* de framework d’intégration de commerce électronique pour extraire des données de produit dans AEM à partir d’une solution de commerce électronique, comme IBM WebSphere Commerce, Elastic Path, Hybris ou Intershop.
+
 >
 >
 Si votre mise en œuvre d’AEM utilise eCommerce, vous pouvez ignorer cette tâche et passer à la tâche suivante.
@@ -181,12 +185,12 @@ Une fois que vous avez enregistré le paramètre prédéfini de visionneuse, il 
 
    Titre qui apparaîtra dans la page de liste Paramètres prédéfinis de la visionneuse après l’enregistrement.
 
-1. Dans le menu déroulant Type de contenu multimédia enrichi, sélectionnez **[!UICONTROL Image interactive]**.
-1. Appuyez sur **[!UICONTROL Créer]**.
+1. Dans le menu déroulant Type de média enrichi, sélectionnez **[!UICONTROL Image interactive]**.
+1. Appuyez sur **[!UICONTROL Créer]**. 
 1. Sur la page Modifier le paramètre prédéfini de la visionneuse, appuyez sur l’onglet **[!UICONTROL Aspect]**.
 1. Utilisez l’une des méthodes suivantes :
 
-   * Pour charger votre propre image de zone réactive, appuyez sur l’icône Sélecteur de ressources. Dans la page Sélectionner le contenu, accédez à l’image de zone réactive que vous souhaitez utiliser, sélectionnez-la, puis appuyez sur l’icône en forme de coche dans le coin supérieur droit.
+   * Pour télécharger votre propre image de zone réactive, appuyez sur l’icône Sélecteur de ressources. Dans la page Sélectionner le contenu, accédez à l’image de zone réactive que vous souhaitez utiliser, sélectionnez-la, puis appuyez sur l’icône en forme de coche dans le coin supérieur droit.
    * Pour sélectionner une image de zone réactive prédéfinie, appuyez sur l’icône Galerie de zones réactives. Dans la palette de la galerie de zones réactives, appuyez sur l’image de zone réactive que vous souhaitez utiliser.
 
 1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer]**.
@@ -251,11 +255,11 @@ Reportez-vous à la section [(Facultatif) Aperçu des images interactives ](#opt
 
    * Appuyez sur l’image pour l’ouvrir dans la page d’affichage des détails. Dans la barre d’outils, appuyez sur **[!UICONTROL Modifier]**.
 
-1. Dans le coin supérieur gauche de la page, appuyez sur **[!UICONTROL Ajouter une zone réactive]**. (Icône « toucher effectué à l’aide d’un doigt ») pour ouvrir la page de gestion des zones réactives.
+1. Près du coin supérieur gauche de la page, appuyez sur **[!UICONTROL Ajouter une zone réactive]** (icône d’appui à l’aide du doigt) pour ouvrir la page de gestion des zones réactives.
 1. Dans le coin supérieur gauche de la page, appuyez sur **[!UICONTROL Zone réactive]**.
 
 1. Dans le coin supérieur gauche de la page de gestion des zones réactives, appuyez sur **[!UICONTROL Zone réactive]**.
-1. Sur l’image, appuyez sur un emplacement où vous souhaitez que la zone réactive apparaisse. Si nécessaire, faites glisser la zone réactive pour régler son emplacement.
+1. Sur l’image, appuyez sur un emplacement où vous souhaitez que la zone réactive s’affiche. Si nécessaire, faites glisser la zone réactive pour en ajuster l’emplacement.
 1. Ajoutez des zones réactives supplémentaires si nécessaire en répétant les étapes a et b.
 1. (Facultatif) Pour supprimer une zone réactive, sélectionnez-la sur l’image, puis appuyez sur **[!UICONTROL Supprimer]** (icône poubelle) sous l’en-tête **[!UICONTROL Zone réactive]**.
 
@@ -272,8 +276,9 @@ Reportez-vous à la section [(Facultatif) Aperçu des images interactives ](#opt
          * (Facultatif) S’il existe d’autres variables dans l’aperçu rapide dont vous avez besoin pour identifier un produit, appuyez sur **[!UICONTROL Ajouter la variable générique]**. Dans le champ de texte, spécifiez une variable supplémentaire. Par exemple, `category=Mens` est une variable ajoutée.
    * Appuyez sur **[!UICONTROL Lien hypertexte]**.
 
-      * Si vous êtes un client AEM Sites, appuyez ou cliquez sur l’icône de sélecteur de site (dossier) pour accéder à une URL. Notez que la méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages AEM Sites.
+      * Si vous êtes un client AEM Sites, appuyez ou cliquez sur l’icône de sélecteur de site (dossier) pour accéder à une URL. Notez que la méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages AEM Sites.
       * Si vous êtes un client autonome, dans le champ de texte HREF, spécifiez l’URL complète vers une page web liée.
+
    Veillez à spécifier si vous souhaitez ouvrir le lien dans un nouvel onglet du navigateur (paramètre par défaut recommandé) ou dans le même onglet.
 
    Pour plus d’informations, reportez-vous à la section [Utilisation de sélecteurs](/help/assets/dynamic-media/working-with-selectors.md).
