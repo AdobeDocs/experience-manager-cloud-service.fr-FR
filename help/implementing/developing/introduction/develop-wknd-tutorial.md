@@ -1,8 +1,11 @@
 ---
 title: Prise en main du développement de sites AEM – Tutoriel WKND
 description: Vous découvrez le développement dans AEM ? Vous avez besoin d’une mise à niveau sur les meilleures pratiques ? Voici l’endroit idéal pour bien commencer ! L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur qui découvre AEM comment implémenter un site web dans AEM en utilisant les normes et les technologies les plus récentes.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 100%
 
 ---
 
