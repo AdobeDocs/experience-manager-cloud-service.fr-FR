@@ -1,13 +1,16 @@
 ---
-title: Gestion des paramètres d’image prédéfinis
+title: 'Gestion des paramètres d’image prédéfinis   '
 description: Découvrez les paramètres d’image prédéfinis, et comment les créer, les modifier et les gérer.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+workflow-type: tm+mt
+source-wordcount: '3657'
+ht-degree: 100%
 
 ---
 
 
-# Gestion des paramètres d’image prédéfinis{#managing-image-presets}
+# Gestion des paramètres d’image prédéfinis   {#managing-image-presets}
 
 Les paramètres d’image prédéfinis permettent à AEM Assets d’afficher des images selon des tailles et des formats différents, ou avec d’autres propriétés d’image générées dynamiquement. Chaque paramètre d’image prédéfini représente un ensemble prédéfini de commandes de dimensionnement et de mise en forme pour l’affichage des images. Lorsque vous créez un paramètre d’image prédéfini, vous choisissez une taille pour la diffusion de l’image. Vous pouvez également choisir des commandes de mise en forme pour optimiser l’aspect de l’image lors de la diffusion de l’image.
 
@@ -172,7 +175,7 @@ Les scripts suivants sont utilisés par l’intégration de Dynamic Media :
 
 Vous pouvez définir la taille des miniatures en configurant ces paramètres dans le workflow **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]**. Le workflow comprend deux étapes au cours desquelles vous pouvez configurer la taille de miniature des ressources d’images. Bien qu’un composant (**[!UICONTROL Ressources d’image du processus de média dynamique]**) soit utilisé pour les ressources d’images dynamiques et que l’autre (**[!UICONTROL Miniatures des processus]**) soit exécuté pour la génération des miniatures statiques ou lorsqu’aucun autre processus ne parvient à générer des miniatures, *tous deux* doivent posséder les mêmes paramètres.
 
-Avec l’étape **[!UICONTROL Ressources d’image du processus de média dynamique]**, les miniatures sont générées par le serveur d’images et cette configuration est indépendante de celle appliquée à l’étape **[!UICONTROL Miniatures des processus]**. La génération de miniatures en passant par l’étape **[!UICONTROL Miniatures des processus]** constitue la méthode la plus lente et la plus gourmande en mémoire.
+Avec l’étape **[!UICONTROL Ressources d’image du processus Dynamic Media]**, les miniatures sont générées par le serveur d’images et cette configuration est indépendante de la configuration appliquée à l’étape des **[!UICONTROL miniatures de processus]**. La génération de miniatures en passant par l’étape **[!UICONTROL Miniatures des processus]** constitue la méthode la plus lente et la plus gourmande en mémoire.
 
 Le dimensionnement des miniatures est défini au format suivant : **[!UICONTROL width:height:center]** (largeur:hauteur:centrer), par exemple *80:80:false*. La largeur et la hauteur déterminent la taille en pixels de la miniature. La valeur « centrer » est soit false soit true. Si elle est définie sur true, elle indique que la miniature a exactement la taille spécifiée dans la configuration. Si l’image redimensionnée est plus petite, elle est centrée dans la miniature.
 
@@ -182,6 +185,7 @@ Le dimensionnement des miniatures est défini au format suivant : **[!UICONTROL
    >
    >
 * La taille des miniatures pour les vidéos est configurée à l’étape **[!UICONTROL Miniatures FFmpeg]**, dans l’onglet **[!UICONTROL Processus]** sous **[!UICONTROL Arguments]**.
+
 >
 
 
@@ -197,7 +201,7 @@ Le dimensionnement des miniatures est défini au format suivant : **[!UICONTROL
 
    >[!NOTE]
    >
-   >Les valeurs définies dans l’argument des miniatures à l’étape **[!UICONTROL Miniatures des processus]** doivent correspondre à celles de l’argument de l’étape **[!UICONTROL Ressources d’image du processus de média dynamique]**.
+   >Les valeurs de l’argument des miniatures de l’étape **[!UICONTROL Miniatures des processus]** doivent correspondre à l’argument des miniatures de l’étape **[!UICONTROL Ressources d’image du processus Dynamic Media]**.
 
 1. Appuyez sur **[!UICONTROL Enregistrer]** pour enregistrer les modifications apportées au workflow.
 
@@ -243,7 +247,7 @@ Voir [Format de fichier InDesign (INDD)](#indesign-indd-file-format).
 
    >[!NOTE]
    >
-   >Pour rendre ce paramètre d’image prédéfini réactif, effacez les valeurs dans les champs **[!UICONTROL Largeur]** et **[!UICONTROL Hauteur]** et laissez-les vides.
+   >Pour rendre ce paramètre d’image prédéfini réactif, effacez les valeurs des champs **[!UICONTROL largeur]** et **[!UICONTROL hauteur]** et laissez-les vides.
 
 1. Saisissez des valeurs dans les onglets **[!UICONTROL De base]** et **[!UICONTROL Avancé]** suivant les besoins (y compris un nom). Les options sont décrites à la section [Options des paramètres d’image prédéfinis](#image-preset-options). Les paramètres prédéfinis s’affichent dans le volet de gauche et peuvent être utilisés à la volée avec d’autres ressources.
 
@@ -269,7 +273,7 @@ Lorsque ces valeurs sont vides, AEM détermine que ce paramètre d’image préd
 
 Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous disposez des options décrites dans cette section. En outre, Adobe recommande les options suivantes (correspondant aux « bonnes pratiques ») pour commencer :
 
-* **Format** (onglet **[!UICONTROL De base]**) : sélectionnez **[!UICONTROL JPEG]** ou un autre format qui répond à vos besoins. Tous les navigateurs web prennent en charge le format d’image JPEG ; il offre un bon équilibre entre la taille des fichiers et la qualité des images. Toutefois, les images au format JPEG utilisent un modèle de compression avec perte qui peut introduire des artefacts d’image indésirables si le paramètre de compression est trop faible. C’est pourquoi Adobe recommande de définir la qualité de compression sur 75. Ce réglage offre un bon compromis entre la qualité de l’image et la petite taille de fichier.
+* **Format** (onglet **[!UICONTROL De base]**) : sélectionnez **[!UICONTROL JPEG]** ou un autre format qui répond à vos besoins. Tous les navigateurs web prennent en charge le format d’image JPEG ; il offre un bon équilibre entre la taille des fichiers et la qualité des images. Toutefois, les images au format JPEG utilisent un modèle de compression avec perte qui peut introduire des artefacts d’image indésirables si le paramètre de compression est trop faible. C’est pourquoi Adobe recommande de définir la qualité de compression sur 75. Ce paramètre offre un bon équilibre entre la qualité d’image et la taille de fichier réduite.
 
 * **[!UICONTROL Activer l’accentuation simple]** : ne sélectionnez pas l’option **[!UICONTROL Activer l’accentuation simple]** (ce filtre d’accentuation est moins précis que les paramètres Accentuation).
 
