@@ -5,233 +5,234 @@ translation-type: tm+mt
 source-git-commit: f154ffacbeeee1993a9cc3bd3bd274be33dca7a7
 workflow-type: tm+mt
 source-wordcount: '1527'
-ht-degree: 3%
+ht-degree: 91%
 
 ---
 
 
 # Utilisation de l’outil de transfert de contenu {#using-content-transfer-tool}
 
-## Considérations importantes concernant l’utilisation de l’outil de transfert de contenu {#pre-reqs}
+## Points importants concernant l’utilisation de l’outil de transfert de contenu {#pre-reqs}
 
-Suivez la section ci-dessous pour comprendre les points importants à prendre en compte lors de l’exécution de l’outil de transfert de contenu :
+Consultez la section ci-dessous pour comprendre les points importants à prendre en compte pour l’exécution de l’outil de transfert de contenu :
 
-* La configuration minimale requise pour l’outil de transfert de contenu est AEM 6.3 + et JAVA 8. Si vous utilisez une version AEM inférieure, vous devrez mettre à niveau votre référentiel de contenu vers AEM 6.5 pour utiliser l’outil de transfert de contenu.
+* La configuration minimale requise pour l’outil de transfert de contenu est AEM 6.3 + et JAVA 8. Si vous utilisez une version antérieure d’AEM, vous devrez mettre à niveau votre référentiel de contenu à la version AEM 6.5 pour utiliser l’outil de transfert de contenu.
 
-* Si vous utilisez un Environnement ** Sandbox, veillez à ce que votre environnement soit mis à niveau vers la version du 29 mai 2020 ou une version ultérieure. Si vous utilisez un Environnement *de* production, il est automatiquement mis à jour.
+* Si vous utilisez un *environnement Sandbox*, veillez à ce qu’il soit mis à niveau à la version du 29 mai 2020, ou à une version postérieure. Si vous utilisez un *environnement de production*, il est automatiquement mis à jour.
 
 * Pour utiliser l’outil de transfert de contenu, vous devez être un utilisateur administrateur sur votre instance source et appartenir au groupe d’administration dans l’instance de service Cloud à laquelle vous transférez du contenu. Les utilisateurs non privilégiés ne pourront pas récupérer le jeton d&#39;accès pour utiliser l’outil de transfert de contenu.
 
 * Pendant la phase d’extraction, l’outil de transfert de contenu est exécuté sur une instance source AEM active.
 
-* La phase ** d&#39;importation pour l&#39;auteur réduira le déploiement de l&#39;auteur dans son ensemble. Cela signifie que l’auteur AEM ne sera pas disponible pendant l’ensemble du processus d’assimilation.
+* La *phase d’assimilation* de l’auteur réduira l’ensemble du déploiement de l’auteur. L’auteur AEM ne sera donc pas disponible pendant la totalité du processus d’assimilation.
 
 ## Disponibilité {#availability}
 
-L&#39;outil de transfert de contenu peut être téléchargé dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le package via Package Manager sur votre instance source Adobe Experience Manager (AEM).
+Il est possible de télécharger l’outil de transfert de contenu dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le module par le biais de Package Manager sur votre instance source Adobe Experience Manager (AEM).
 
 >[!NOTE]
 >Téléchargez l’outil de transfert de contenu depuis [Adobe Experience Cloud](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 ## Exécution de l’outil de transfert de contenu {#running-tool}
 
-Suivez cette section pour savoir comment utiliser l’outil de transfert de contenu pour migrer le contenu vers AEM as a Cloud Service (Auteur/Publier) :
+Consultez cette section pour effectuer une migration du contenu vers AEM as a Cloud Service (création/publication) à l’aide de l’outil de transfert de contenu :
 
-1. Sélectionnez Adobe Experience Manager et accédez aux outils -> **Opérations** -> Transfert **de** contenu.
+1. Sélectionnez Adobe Experience Manager et accédez aux outils -> **Opérations** -> **Transfert de contenu**.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content1.png)
 
-1. Cliquez sur **Créer un jeu** de migration pour créer un jeu de migration. Les détails **du jeu de** migrations de contenu s’affichent.
+1. Cliquez sur **Créer un jeu de migration** pour créer un jeu de migration. L’écran **Détails du jeu de migration de contenu** s’affiche.
 
    >[!NOTE]
-   >Vous allez vue les jeux de migration existants sur cet écran avec leur état actuel.
+   >Vous voyez s’afficher dans cet écran les jeux de migration existants, avec leur état actuel.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img4.png)
 
-1. Renseignez les champs de l’écran Détails **du jeu de** migration de contenu, comme décrit ci-dessous.
+1. Renseignez les champs de l’écran **Détails du jeu de migration de contenu**, comme décrit ci-dessous.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-3.png)
 
 
-   1. **Nom**: Entrez le nom du jeu de migration.
+   1. **Nom** : renseignez le nom du jeu de migration.
       >[!NOTE]
-      >Aucun caractère spécial n’est autorisé pour le nom du jeu de migration.
+      >Aucun caractère spécial n’est autorisé pour la saisie de ce nom.
 
-   1. **Configuration** du service cloud : Saisissez la destination AEM en tant qu’URL d’auteur du service Cloud.
+   1. **Configuration du service cloud** : renseignez l’URL de destination d’auteur AEM as a Cloud Service.
 
       >[!NOTE]
       >Vous pouvez créer et gérer un maximum de quatre jeux de migration à la fois pendant l’activité de transfert de contenu.
-      >En outre, vous devez créer une migration distincte pour chacun des environnements spécifiques - *Phase*, *Développement* ou *Production*.
+      >En outre, vous devez créer une migration distincte pour chacun des environnements spécifiques - *Évaluation*, *Développement* ou *Production*.
 
-   1. **Jeton d&#39;accès**: Entrez le jeton d&#39;accès.
+   1. **Jeton d’accès** : renseignez le jeton d’accès.
 
       >[!NOTE]
-      >Vous pouvez récupérer le jeton d&#39;accès de l’instance d’auteur en accédant à `/libs/granite/migration/token.json`.
+      >Vous pouvez récupérer le jeton d’accès de l’instance d’auteur en accédant à `/libs/granite/migration/token.json`.
 
-   1. **Paramètres**: Sélectionnez les paramètres suivants pour créer le jeu de migration :
+   1. **Paramètres** : sélectionnez les paramètres suivants pour créer le jeu de migration :
 
-      1. **Inclure la version**: Sélectionnez les options requises.
+      1. **Inclure la version** : sélectionnez les options requises.
 
-      1. **Chemins à inclure**: Utilisez le navigateur de chemins pour sélectionner les chemins à migrer.
+      1. **Chemins à inclure** : utilisez le navigateur de chemins pour sélectionner les chemins objets de la migration.
 
          >[!IMPORTANT]
-         >Les chemins suivants sont restreints lors de la création d’un jeu de migration :
+         >Les chemins suivants sont restreints lors de la création d’un jeu de migration :
          >* `/apps`
          >* `/libs`
          >* `/home`
          >* `/etc`
 
 
-1. Cliquez sur **Enregistrer** une fois que vous avez rempli tous les champs de l’écran Détails **de la visionneuse de migrations de** contenu.
+1. Cliquez sur **Enregistrer** après avoir complété tous les champs de l’écran **Détails du jeu de migration de contenu**.
 
-1. Vous allez vue votre jeu de migration dans la page *Aperçu* .
+1. Vous voyez alors le jeu de migration défini dans la page *Aperçu*.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img4.png)
 
-   Tous les jeux de migration existants sur cet écran s’affichent sur la page *Aperçu* avec leurs informations d’état et d’état actuelles.
+   Tous les jeux de migration existants de cet écran s’affichent sur la page *Aperçu* avec leurs informations d’état et d’état actuel.
 
-   * Un nuage ** rouge indique que vous ne pouvez pas terminer le processus d’extraction.
-   * Un nuage ** vert indique que vous pouvez terminer la procédure d’extraction.
-   * Une icône ** jaune indique que vous n’avez pas créé le jeu de migration existant et que celui-ci est créé par un autre utilisateur de la même instance.
+   * Un *nuage de couleur rouge* indique que vous ne pouvez pas terminer le processus d’extraction.
+   * Un *nuage de couleur verte* indique que vous pouvez terminer le processus d’extraction.
+   * Une *icône de couleur jaune* indique que vous n’avez pas créé le jeu de migration existant et que celui ainsi indiqué a été créé par un autre utilisateur de la même instance.
 
-1. Sélectionnez un jeu de migration dans la page d’aperçu et cliquez sur **Propriétés** pour vue ou modifier les propriétés du jeu de migration.
+1. Sélectionnez un jeu de migration dans la page d’aperçu, puis cliquez sur **Propriétés** pour voir ou modifier les propriétés du jeu de migration.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img6.png)
 
-### Processus d’Extraction dans le transfert de contenu {#extraction-process}
+### Processus d’extraction au cours du transfert de contenu {#extraction-process}
 
-Pour extraire votre jeu de migration de l’outil de transfert de contenu, procédez comme suit :
+Pour extraire votre jeu de migration de l’outil de transfert de contenu, procédez comme suit :
 
-1. Sélectionnez un jeu de migration dans la page *Aperçu* et cliquez sur **Extraire** vers l’extraction d’début.
+1. Pour démarrer l’extraction, sélectionnez un jeu de migration dans la page *Aperçu*, puis cliquez sur **Extraire**.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/extraction-img1.png)
 
-1. La boîte de dialogue extraction **du jeu de** migration s’affiche et cliquez sur **Extraction** pour terminer la phase d’extraction.
+1. La boîte de dialogue **Extraction du jeu de migration** s’affiche. Cliquez sur **Extraire** pour terminer la phase d’extraction.
 
    >[!NOTE]
    >Vous avez la possibilité de remplacer le conteneur d’évaluation pendant la phase d’extraction.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/extract-2.png)
 
-1. Le champ **EXTRACTION** affiche désormais l’état **EN COURS** pour le processus d’extraction en cours.
+1. Le champ **EXTRACTION** affiche l’état **EN COURS** pour le processus d’extraction en cours.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/extract-3.png)
 
-   Une fois l’extraction terminée, l’état du jeu de migration se met à jour sur **FINI** et une icône de nuage vert ** plein s’affiche sous le champ **INFO** .
+   Une fois l’extraction terminée, l’état du jeu de migration est mis à jour sur **TERMINÉ** et une icône représentant un nuage *vert uni* s’affiche sous le champ **INFO**.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/extract-4.png)
 
    >[!NOTE]
-   >Vous devrez actualiser la page pour mettre en vue l’état mis à jour.
+   >Vous devrez actualiser la page pour voir l’état après mise à jour.
    >Lorsque la phase d’extraction est lancée, un verrou d’écriture est créé et libéré après *60 secondes*. Donc, si une extraction est arrêtée, vous devez attendre une minute pour que le verrou soit relâché avant de recommencer l&#39;extraction.
 
-#### Extraction supérieure {#top-up-extraction-process}
+#### Extraction de complément {#top-up-extraction-process}
 
-L’outil de transfert de contenu comporte une fonctionnalité qui prend en charge le supplément de contenu différentiel où il est possible de transférer uniquement les modifications effectuées depuis l’activité précédente de transfert de contenu.
+L’outil de transfert de contenu comporte une fonctionnalité pour traiter un complément de contenu différentiel. Dans ce cas, seules les modifications effectuées depuis l’activité de transfert de contenu précédente sont transférées.
 
 >[!NOTE]
->Après le transfert initial de contenu, il est recommandé d’effectuer de fréquents ajouts différentiels de contenu afin de raccourcir la période de gel de contenu pour le transfert différentiel final de contenu avant de passer en ligne sur le service Cloud.
+>Suite au transfert initial d’un contenu, il est recommandé d’effectuer fréquemment des compléments différentiels pour réduire la période de gel du transfert final de contenu différentiel avant de passer en ligne sur le service cloud.
 
-Une fois le processus d’extraction terminé, vous pouvez transférer le contenu delta à l’aide de la méthode d’extraction de transfert. Suivez les étapes ci-dessous :
+Une fois le processus d’extraction terminé, vous pouvez transférer le contenu différentiel à l’aide de la méthode d’extraction de complément. Suivez les étapes ci-dessous :
 
-1. Accédez à la page *Aperçu* et sélectionnez l’ensemble de migration pour lequel vous souhaitez effectuer l’extraction supérieure.
+1. Accédez à la page *Aperçu* et sélectionnez le jeu de migration pour lequel vous souhaitez effectuer l’extraction de complément.
 
-1. Cliquez sur **Extraction** pour début de l’extraction supérieure.
+1. Cliquez sur **Extraire** pour démarrer l’extraction de complément.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/extraction-img1.png)
 
-1. La boîte de dialogue extraction **du jeu de** migration s’affiche.
+1. La boîte de dialogue **Extraction du jeu de migration** s’affiche.
 
    >[!IMPORTANT]
-   >Désactivez l’option **Remplacer le conteneur d’évaluation pendant l’extraction** .
+   >Il est préférable de désactiver l’option **Remplacer le conteneur d’évaluation pendant l’extraction**.
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/extract-topup-1.png)
 
-### Processus d&#39;importation dans le transfert de contenu {#ingestion-process}
+### Processus d’assimilation au cours du transfert de contenu {#ingestion-process}
 
-Suivez les étapes ci-dessous pour assimiler votre jeu de migration à partir de l’outil de transfert de contenu :
+Pour assimiler le jeu de migration obtenu à l’aide de l’outil de transfert de contenu, procédez comme suit :
 
-1. Sélectionnez un jeu de migration dans la page *Aperçu* , puis cliquez sur **Assimiler** à l’extraction d’début.
+1. Pour démarrer l’extraction, sélectionnez un jeu de migration dans la page *Aperçu*, puis cliquez sur **Assimiler**.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-1.png)
 
-1. La boîte de dialogue d’assimilation **d’une visionneuse de** migration s’affiche.
+1. La boîte de dialogue **Assimilation du jeu de migration** s’affiche.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-2.png)
 
-   À des fins de démonstration, l’option **Envoi de contenu à l’instance** d’auteur est désactivée. Il est possible d’assimiler du contenu à l’auteur et à la publication en même temps.
+   Pour une démonstration, l’option **Assimiler du contenu avec l’instance d’auteur** est désactivée. Il est possible d’assimiler en même temps du contenu avec l’instance d’auteur et de publication.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-3.png)
 
-   Cliquez sur **Récupérer** pour terminer la phase d&#39;assimilation.
+   Cliquez sur **Assimiler** pour terminer la phase d’assimilation.
 
-1. Une fois l&#39;assimilation terminée, le statut du champ INGESTION **** AUTEUR est mis à jour pour **FINI** et une icône de nuage vert plein s&#39;affiche sous l&#39; **INFO**.
+1. Une fois l’assimilation terminée, l’état du champ **ASSIMILATION AVEC L’AUTEUR** est mis à jour sur **TERMINÉ** et une icône en forme de nuage vert uni s’affiche sous la mention **INFO**.
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-4.png)
 
    >[!NOTE]
-   > Vous devrez actualiser la page pour mettre en vue l’état mis à jour.
+   > Vous devrez actualiser la page pour voir l’état après mise à jour.
 
-#### Ingestion globale {#top-up-ingestion-process}
+#### Assimilation de complément {#top-up-ingestion-process}
 
-L’outil de transfert de contenu est doté d’une fonctionnalité qui prend en charge le *supplément* de contenu différentiel, où il est possible de transférer uniquement les modifications effectuées depuis l’activité précédente de transfert de contenu.
+L’outil de transfert de contenu comporte une fonctionnalité pour traiter un *complément* de contenu différentiel. Dans ce cas, seules les modifications effectuées depuis l’activité de transfert de contenu précédente sont transférées.
 
 >[!NOTE]
->Après le transfert initial de contenu, il est recommandé d’effectuer de fréquents ajouts différentiels de contenu afin de raccourcir la période de gel de contenu pour le transfert différentiel final de contenu avant de passer en ligne sur le service Cloud.
+>Suite au transfert initial d’un contenu, il est recommandé d’effectuer fréquemment des compléments différentiels pour réduire la période de gel du transfert final de contenu différentiel avant de passer en ligne sur le service cloud.
 
-Une fois le processus d’assimilation terminé, vous pouvez utiliser le contenu delta, en utilisant la méthode d’assimilation supérieure. Suivez les étapes ci-dessous :
+Une fois le processus d’assimilation terminé, vous pouvez utiliser le contenu différentiel à l’aide de la méthode d’assimilation de complément. Suivez les étapes ci-dessous :
 
-1. Accédez à la page *Aperçu* et sélectionnez le jeu de migration pour lequel vous souhaitez exécuter l’assimilation de la partie supérieure.
+1. Accédez à la page *Aperçu* et sélectionnez le jeu de migration pour lequel vous souhaitez effectuer l’assimilation de complément.
 
-1. Cliquez sur **Inviter** pour début de l’extraction supérieure.
+1. Cliquez sur **Assimiler** pour démarrer l’extraction de complément.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-1.png)
 
-1. La boîte de dialogue **Migration Set Ingestion** (Ingestion de la visionneuse de migration) s&#39;affiche.
+1. La boîte de dialogue **Assimilation du jeu de migration** s’affiche.
 
    >[!NOTE]
-   >Désactivez l’option *Balayer* pour empêcher la suppression du contenu existant de l’activité d’assimilation précédente.
+   >Désactivez l’option *Effacer* pour éviter la suppression du contenu existant de l’activité d’assimilation précédente.
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-topup-1.png)
 
-### Affichage des journaux d’une visionneuse de migration {#viewing-logs-migration-set}
+### Affichage des journaux d’un jeu de migration {#viewing-logs-migration-set}
 
-Vous pouvez vue des journaux pour un jeu de migration existant à partir de la page *Aperçu* .
+Vous pouvez afficher les journaux d’un jeu de migration existant à l’aide de la page *Aperçu*.
 Suivez les étapes ci-dessous :
 
-1. Accédez à la page *Aperçu* et sélectionnez le jeu de migration à supprimer, puis cliquez sur Journal **des** Vues dans la barre d’actions.
+1. Accédez à la page *Aperçu*, sélectionnez le jeu de migration à supprimer, puis cliquez sur l’option **Afficher le journal** dans la barre d’actions.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/view-log1.png)
 
-1. La boîte de dialogue **Journaux** s&#39;affiche. Cliquez sur Journaux **** d’Extraction pour vue les journaux dans un nouvel onglet.
+1. La boîte de dialogue **Journaux** s’affiche. Cliquez sur **Journaux d’extraction** pour voir les journaux dans un nouvel onglet.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/view-log2.png)Or,
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/view-log2.png)
+ou,
 
-   Vous pouvez également vue les journaux de votre jeu de migration depuis l’écran *Aperçu* . Sélectionnez le jeu de migration et cliquez sur l’état sous le champ **EXTRACTION** . Dans ce cas, cliquez sur **TERMINÉ** pour accéder aux journaux de vue dans un nouvel onglet.
+   Vous pouvez également voir les journaux de votre jeu de migration à l’aide de l’écran *Aperçu*. Sélectionnez le jeu de migration et cliquez sur l’état sous le champ **EXTRACTION**. Dans ce cas, cliquez sur **TERMINÉ** pour voir les journaux dans un nouvel onglet.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/view-log3.png)
 
-### Suppression d’une visionneuse de migration {#deleting-migration-set}
+### Suppression d’un jeu de migration {#deleting-migration-set}
 
-Vous pouvez supprimer le jeu de migration de la page *Aperçu* .
+Vous pouvez supprimer le jeu de migration de la page *Aperçu*.
 Suivez les étapes ci-dessous :
 
-1. Accédez à la page *Aperçu* et sélectionnez le jeu de migration à supprimer, puis cliquez sur **Supprimer** dans la barre d’actions.
+1. Accédez à la page *Aperçu*, sélectionnez le jeu de migration à supprimer, puis cliquez sur **Supprimer** dans la barre d’actions.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/delete-1.png)
 
-1. Cliquez sur **Supprimer** de la boîte de dialogue **Supprimer le jeu** de migration pour confirmer la suppression.
+1. Cliquez sur **Supprimer** dans la boîte de dialogue **Supprimer le jeu de migration** pour confirmer la suppression.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/delete-3.png)
 
 ## Résolution des incidents {#troubleshooting}
 
-### ID d’objet blob manquants {#missing-blobs}
+### ID d’objets blob manquants {#missing-blobs}
 
-S’il manque des identifiants blob signalés, comme indiqué ci-dessous, il est nécessaire d’exécuter une vérification de cohérence dans le référentiel existant et de restaurer les lobs manquants.
+Si l’absence d’ID d’objets blob est signalée, comme indiqué ci-dessous, il est nécessaire d’exécuter une vérification de cohérence du référentiel existant et de restaurer les blobs manquants.
 `ERROR o.a.j.o.p.b.AbstractSharedCachingDataStore - Error retrieving record [ba45c53f8b687e7056c85dceebf8156a0e6abc7e]`
 
-La commande suivante est exécutée :
+La commande suivante est exécutée
 
 >[!NOTE]
-> `--verbose` est requis pour signaler les chemins d’accès aux noeuds à partir desquels les objets blob sont référencés.
+> `--verbose` (indicateur) est nécessaire pour signaler les chemins d’accès aux nœuds permettant de référencer les objets blob.
 
 **Pour les référentiels AEM 6.5 (Oak 1.8 et versions antérieures)**
 
@@ -245,19 +246,19 @@ java -jar oak-run.jar datastorecheck --consistency --store [<SEGMENT_STORE_PATH>
 java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO_URI>] --[s3ds|fds|azureds] <DATASTORE_CFG> --out-dir <OUT_DIR> --work-dir <TEMP_DIR> --verbose
 ```
 
-Pour plus d&#39;informations, reportez-vous à [Oak Runnable Jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) .
+Pour plus d’informations, voir la section [Fichier jar exécutable Oak](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run).
 
-Les fichiers créés dans *OUT_DIR* spécifiés ci-dessus pour assurer la cohérence peuvent ensuite être vérifiés pour détecter les chemins manquants de binaires et les actions appropriées prises comme la restauration à partir d&#39;une sauvegarde, la suppression des chemins, la réindexation, etc.
+Les fichiers créés dans *OUT_DIR*, spécifiés ci-dessus pour assurer la cohérence, peuvent ensuite être vérifiés pour détecter les chemins manquants de binaires et les actions appropriées mises en œuvre (restauration à partir d’une sauvegarde, suppression des chemins, réindexation, etc.).
 
 ### Comportement de l’interface utilisateur {#ui-behavior}
 
-En tant qu’utilisateur, vous pouvez constater les changements de comportement suivants dans l’interface utilisateur de l’outil de transfert de contenu :
+En tant qu’utilisateur, il est possible que vous constatiez les changements de comportement suivants dans l’interface utilisateur de l’outil de transfert de contenu :
 
-* L’utilisateur crée un jeu de migration pour une URL d’auteur (Développement/Etape/Production) et effectue correctement l’extraction et l’assimilation.
+* L’utilisateur crée un jeu de migration pour une URL d’auteur (Développement/Évaluation/Production) et effectue avec succès l’extraction et l’assimilation.
 
-* L’utilisateur crée ensuite un jeu de migration pour la même URL d’auteur et effectue l’extraction et l’assimilation sur le nouveau jeu de migration. L’interface utilisateur indique que l’état d’assimilation du premier jeu de migration devient **ÉCHOUÉ** et qu’aucun journal n’est disponible.
+* L’utilisateur crée ensuite un jeu de migration pour la même URL d’auteur et effectue l’extraction et l’assimilation sur le nouveau jeu de migration. L’interface utilisateur indique que l’état d’assimilation du premier jeu de migration devient **ÉCHEC** et qu’aucun journal n’est disponible.
 
-* Cela ne signifie pas que l’assimilation du premier jeu de migration a échoué. Ce comportement est visible car lorsqu’une nouvelle tâche d’assimilation est lancée, elle supprime la tâche d’assimilation précédente. Par conséquent, l’état des modifications sur le premier jeu de migration doit être ignoré.
+* Cela ne signifie pas que l’assimilation du premier jeu de migration a échoué. Ce comportement apparaît car lorsqu’une nouvelle tâche d’assimilation est lancée, elle supprime la tâche d’assimilation précédente. L’état des modifications du premier jeu de migration doit donc être ignoré.
 
 * Les icônes de l’interface utilisateur de l’outil de transfert de contenu peuvent sembler différentes des captures d’écran affichées dans ce guide ou ne s’affichent pas du tout selon la version de l’instance AEM source.
 
