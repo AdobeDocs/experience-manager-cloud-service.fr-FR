@@ -1,8 +1,11 @@
 ---
 title: Application de workflows aux pages
 description: Lors de la création de pages, vous avez la possibilité d’utiliser des workflows pour exécuter des actions sur vos pages. Il est possible d’appliquer plusieurs workflows.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+workflow-type: tm+mt
+source-wordcount: '662'
+ht-degree: 100%
 
 ---
 
@@ -95,6 +98,7 @@ Vous pouvez spécifier les détails du workflow :
    * **Titre du workflow**
 
       * Vous pouvez spécifier un titre pour cette instance pour vous permettre de l’identifier ultérieurement.
+
    En fonction du modèle de workflow, les options suivantes sont également disponibles. Elles permettent de conserver le module créé comme charge utile une fois le workflow terminé.
 
    * **Conserver le module de workflow**
@@ -125,9 +129,11 @@ Vous pouvez spécifier les détails du workflow :
          * Inclure seulement les enfants immédiats.
          * Inclure seulement les pages modifiées.
          * Inclure seulement les pages déjà publiées.
+
          Tous les enfants spécifiés seront ajoutés à la liste de ressources auquel le workflow s’appliquera.
 
       * **Supprimer la sélection** pour supprimer la ressource du workflow.
+
    ![Définir la portée du workflow](/help/sites-cloud/authoring/assets/workflows-scope.png)
 
    >[!NOTE]
