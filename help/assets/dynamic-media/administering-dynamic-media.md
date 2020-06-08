@@ -1,8 +1,11 @@
 ---
 title: Configuration de Dynamic Media
 description: Pour configurer Dynamic Media, vous devez configurer un média dynamique et gérer les paramètres prédéfinis d’image et de visionneuse.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '172'
+ht-degree: 100%
 
 ---
 
@@ -24,7 +27,7 @@ Grâce à [Dynamic Media](https://www.adobe.com/fr/marketing/experience-manager
 Si vous administrez Dynamic Media, les rubriques suivantes peuvent vous intéresser :
 
 * [Configuration de Dynamic Media](config-dm.md)
-* [Gestion des paramètres d’image prédéfinis](managing-image-presets.md)
+* [Gestion des paramètres d’image prédéfinis   ](managing-image-presets.md)
 * [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md)
 * [Résolution des problèmes liés à Dynamic Media](troubleshoot-dm.md)
 
