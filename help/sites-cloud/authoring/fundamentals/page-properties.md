@@ -1,8 +1,11 @@
 ---
 title: Modification des propriétés de page
 description: Définissez les propriétés requises pour une page
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+workflow-type: tm+mt
+source-wordcount: '1523'
+ht-degree: 100%
 
 ---
 
@@ -67,6 +70,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    * Permet de saisir une URL Vanity pour cette page. Vous pouvez ainsi disposer d’une URL plus courte et/ou plus explicite.
    * Par exemple, si l’URL de redirection est définie sur `welcome` sur la page identifiée par le chemin `/v1.0/startpage` pour le site web `http://example.com`, `http://example.com/welcome` sera l’URL de redirection de `http://example.com/content/v1.0/startpage`
+
    >[!CAUTION]
    >
    >L’URL de redirection :
@@ -172,6 +176,7 @@ Affiche l’image de la miniature de la page. Vous pouvez :
 * **Cloud Services**
 
    * Définissez les propriétés des services cloud.
+
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
 
@@ -180,6 +185,7 @@ Affiche l’image de la miniature de la page. Vous pouvez :
 * **Configurations ContextHub**
 
    * Sélectionnez la configuration ContextHub et le chemin d’accès aux segments.
+
    <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
   -->
 
@@ -196,6 +202,7 @@ Affiche l’image de la miniature de la page. Vous pouvez :
    * Ajouter des autorisations
    * Modifier le groupe d’utilisateurs fermé
    * Afficher les autorisations effectives
+
    <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
 
    <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
@@ -207,6 +214,7 @@ Affiche l’image de la miniature de la page. Vous pouvez :
 * **Blueprint**
 
    * Définissez les propriétés d’une page de plan directeur dans le cadre de la gestion multi-site.
+
    <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
 
    * Détermine les circonstances dans lesquelles les modifications seront diffusées à la Live Copy.
