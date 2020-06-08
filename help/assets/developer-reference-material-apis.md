@@ -2,9 +2,9 @@
 title: 'API Assets pour la gestion des ressources numériques dans Adobe Experience Manager as a Cloud Service '
 description: Les API Assets permettent d’effectuer des opérations CRUD (création, lecture, mise à jour, suppression) de base afin de gérer des ressources, y compris des fichiers binaires, des métadonnées, des rendus, des commentaires et des fragments de contenu.
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 27e72bbc0d852eb2c2eb059967c91e6108613965
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1249'
 ht-degree: 100%
 
