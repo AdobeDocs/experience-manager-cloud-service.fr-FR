@@ -1,8 +1,11 @@
 ---
-title: Création et gestion d’offres
+title: 'Création et gestion d’offres  '
 description: Utilisez la console Offres pour créer des offres que vous pourrez utiliser dans le cadre d’expériences associées à des activités
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '875'
+ht-degree: 100%
 
 ---
 
@@ -22,7 +25,7 @@ Créez une marque à laquelle vos offres sont associées. Ouvrez une marque dans
 
 Lorsque vous créez une marque à l’aide de la console Offres, elle s’affiche également dans la console [Activités](/help/sites-cloud/authoring/personalization/activities.md) où vous pouvez ajouter et gérer des activités relatives à la marque.
 
-1. Dans la console Navigation, cliquez ou appuyez sur **Personnalisation** > **Offres**.
+1. Dans la console de navigation, cliquez ou appuyez sur **Personnalisation** > **Offres**.
 
    ![Accès à la console Offres](/help/sites-cloud/authoring/assets/offers-navigation.png)
 
