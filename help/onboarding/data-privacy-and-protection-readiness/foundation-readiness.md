@@ -1,8 +1,11 @@
 ---
-title: Règles relatives à la protection des données et à la confidentialité des données - Adobe Experience Manager en tant que solution de base du service Cloud
-description: 'Découvrez Adobe Experience Manager en tant que support de Cloud Service Foundation pour les différentes réglementations sur la protection des données et la confidentialité des données ; y compris le règlement général de protection des données (RDPC) de l’UE, la loi sur la protection des renseignements personnels des consommateurs de Californie et la façon de s’y conformer lors de la mise en oeuvre d’un nouveau projet AEM en tant que service cloud. '
+title: Règlement sur la protection des données et la confidentialité des données - Adobe Experience Manager en tant que base de données Cloud Service
+description: 'Découvrez Adobe Experience Manager en tant que support de Cloud Service Foundation pour les différentes réglementations sur la protection des données et la confidentialité des données ; notamment le règlement général de l’UE sur la protection des données (RGPD), la loi sur la protection des renseignements personnels des consommateurs de Californie et la manière de se conformer lors de la mise en oeuvre d’un nouveau projet AEM as a Cloud Service. '
 translation-type: tm+mt
 source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
+workflow-type: tm+mt
+source-wordcount: '506'
+ht-degree: 32%
 
 ---
 
@@ -11,17 +14,17 @@ source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
 
 >[!WARNING]
 >
->Le contenu de ce document ne constitue pas un avis juridique et ne se substitue pas à un avis juridique.
+>Le contenu de ce document ne constitue pas un conseil juridique et ne se substitue pas à un conseil juridique.
 >
->Veuillez consulter le service juridique de votre entreprise pour obtenir des conseils concernant les règles de protection des données et de confidentialité des données.
+>Veuillez consulter le service juridique de votre société pour obtenir des conseils sur les réglementations relatives à la protection des données et à la confidentialité des données.
 
 >[!NOTE]
 >
->Pour plus d’informations sur la réponse d’Adobe aux problèmes de confidentialité et sur ce que cela signifie pour vous en tant que client Adobe, consultez le Centre [de confidentialité d’](https://www.adobe.com/privacy.html)Adobe.
+>Pour plus d&#39;informations sur la réponse Adobe aux problèmes de confidentialité et sur ce que cela signifie pour vous en tant que client Adobe, consultez le Centre [de confidentialité](https://www.adobe.com/privacy.html)Adobe.
 
-## Prise en charge de la confidentialité et de la protection des données d’AEM Foundation {#aem-foundation-data-privacy-and-protection-support}
+## Prise en charge de la protection et de la confidentialité des données AEM Foundation {#aem-foundation-data-privacy-and-protection-support}
 
-Au niveau d’AEM Foundation, les données personnelles stockées sont conservées dans le profil utilisateur. Par conséquent, les informations de cet article portent principalement sur la manière d’accéder aux profils utilisateur et de les supprimer, afin de répondre respectivement aux demandes d’accès et de suppression.
+Au niveau d’AEM Foundation, les données personnelles stockées sont conservées dans le Profil utilisateur. Par conséquent, les informations contenues dans cet article portent principalement sur la manière d’accéder aux profils d’utilisateurs et de les supprimer, afin de répondre respectivement aux demandes d’accès et de suppression.
 
 ## Accès à un profil utilisateur {#accessing-a-user-profile}
 
@@ -62,7 +65,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 **Récupération des données utilisateur:**
 
-Utilisation du chemin de noeud de la propriété home de la charge JSON renvoyée par la commande ci-dessus :
+Utilisation du chemin d’accès au noeud à partir de la propriété home de la charge utile JSON renvoyée par la commande ci-dessus :
 
 ```shell
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile.-1.json'
@@ -83,9 +86,9 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![désactiver le compte](assets/dpp-foundation-03.png)
 
-4. Enfin, confirmez l’action.
+4. Enfin, confirmez l&#39;action.
 
-   L’interface utilisateur indique alors que le compte utilisateur a été désactivé en grisé et en ajoutant un verrou à la carte de profil :
+   L’interface utilisateur indique ensuite que le compte utilisateur a été désactivé en grincant et en ajoutant un verrou à la carte de profil :
 
    ![compte désactivé](assets/dpp-foundation-04.png)
 
@@ -93,11 +96,11 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 >[!NOTE]
 >
-> Pour AEM en tant que service Cloud, il n’existe aucune procédure manuelle disponible dans l’interface utilisateur pour la suppression d’un profil utilisateur, car CRXDE n’est pas accessible.
+> Pour AEM en tant que service Cloud, aucune procédure manuelle n’est disponible à partir de l’interface utilisateur pour la suppression d’un profil utilisateur, car CRXDE n’est pas accessible.
 
 ### API HTTP {#http-api-1}
 
-The following procedures use the `curl` command line tool to illustrate how to disable the user with the **[!UICONTROL cavery]** `userId` and delete her profiles available at the default location.
+Les procédures suivantes utilisent l’outil de ligne de commande `curl` pour illustrer comment désactiver l’utilisateur **[!UICONTROL cavery]** `userId` et supprimer ses profils disponibles à l’emplacement par défaut.
 
 **Découverte du répertoire de base (home) des utilisateurs :**
 
@@ -108,7 +111,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 **Désactivation de l’utilisateur:**
 
-Utilisation du chemin de noeud de la propriété home de la charge JSON renvoyée par la commande ci-dessus :
+Utilisation du chemin d’accès au noeud à partir de la propriété home de la charge utile JSON renvoyée par la commande ci-dessus :
 
 ```shell
 curl -X POST -u user:password -FdisableUser="describe the reasons for disabling this user (Data Privacy in this case)" 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN.rw.userprops.html'
@@ -116,7 +119,7 @@ curl -X POST -u user:password -FdisableUser="describe the reasons for disabling 
 
 **Suppression du ou des profils utilisateur**
 
-Utilisation du chemin d’accès au noeud à partir de la propriété home de la charge utile JSON renvoyée par la commande de découverte de compte et des emplacements de noeud de profil prêts à l’emploi connus :
+Utilisation du chemin d’accès au noeud à partir de la propriété home de la charge utile JSON renvoyée par la commande de détection de compte et des emplacements de noeud de profil prêts à l’emploi connus :
 
 ```shell
 curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'
