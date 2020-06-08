@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 60093232710426d919a45742b1775239944d266d
 workflow-type: tm+mt
 source-wordcount: '2417'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -133,7 +133,7 @@ Bien que les scripts Repo Init résident eux-mêmes dans le projet `ui.apps` en
 + Groupes
 + Listes ACL
 
-Repo Init scripts are stored as `scripts` entries of `RepositoryInitializer` OSGi factory configurations, and thus, can be implicitly targeted by runmode, allowing for differences between AEM Author and AEM Publish Services&#39; Repo Init scripts, or even between Envs (Dev, Stage and Prod).
+Les scripts Repo Init sont stockés en tant qu’entrées `scripts` des configurations d’usine OSGi `RepositoryInitializer`. Ils peuvent donc être implicitement ciblés par le mode d’exécution, ce qui permet d’établir des différences entre les scripts Repo Init des services d’auteur et de publication AEM, voire entre les environnements (développement, évaluation et production).
 
 Notez que lors de la définition d’utilisateurs et de groupes, seuls les groupes considérés comme faisant partie de l’application, et essentiels à son fonctionnement, doivent être définis ici. Dans les organisations, les utilisateurs et les groupes doivent toujours être définis au moment de l’exécution dans AEM ; par exemple, si un workflow personnalisé affecte du travail à un groupe nommé, ce groupe doit être défini via Repo Init dans l’application AEM. Toutefois, si le regroupement est simplement organisationnel, comme « Équipe de Jean » et « Équipe de Valérie », le groupe sera défini et géré plus efficacement lors de l’exécution dans AEM.
 
@@ -184,6 +184,7 @@ Analyse de cette structure de dossiers :
    + `/apps/my-app-packages`
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
+
    >[!WARNING]
    >
    >Par convention, le suffixe `-packages` est ajouté au nom des dossiers dans lesquels sont incorporés des sous-modules. Cela permet de s’assurer que les modules de contenu et de code du déploiement ne sont **pas** déployés dans le(s) dossier(s) cible(s) d’un sous-module `/apps/<app-name>/...`, ce qui provoque un comportement d’installation cyclique destructeur.
@@ -191,8 +192,8 @@ Analyse de cette structure de dossiers :
 + Le dossier de troisième niveau doit être
    `application` ou `content`
    + Le dossier `application` contient des modules de code.
-   + The `content` folder holds content packages
-This folder name must correspond to the [package types](#package-types) of the packages it contains.
+   + Le dossier `content` comprend des modules de contenu.
+Ce nom de dossier doit correspondre aux [types](#package-types) des modules qu’il contient.
 + Le dossier de quatrième niveau contient les sous-modules. Il doit s’agir de l’un des dossiers suivants :
    + `install` pour effectuer une installation sur AEM Author **et** AEM Publish
    + `install.author` pour effectuer une installation **uniquement** sur AEM Author
@@ -223,7 +224,7 @@ Il vous suffit d’ajouter les entrées `<filter root="/apps/<my-app>-packages"/
 
 ## Incorporation de modules tiers {#embedding-3rd-party-packages}
 
-All packages must be available via the [Adobe&#39;s public Maven artifact repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) or an accessible public, referenceable 3rd party Maven artifact repository.
+Tous les modules doivent être disponibles via le [référentiel d’artefacts Maven public d’Adobe](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) ou un référentiel d’artefacts Maven tiers accessible au public pouvant être référencé.
 
 Si les modules tiers se trouvent dans le **référentiel d’artefacts Maven public d’Adobe**, aucune configuration supplémentaire n’est nécessaire pour qu’Adobe Cloud Manager puisse résoudre les artefacts.
 
@@ -239,9 +240,9 @@ L’ajout de dépendances Maven suivant les pratiques Maven standard et l’inco
 
 Pour assurer l’installation correcte des modules, il est recommandé d’établir des dépendances entre les modules.
 
-The general rule is packages containing mutable content (`ui.content`) should depend on the immutable code (`ui.apps`) that supports the rendering and use of the mutable content.
+La règle est que les modules contenant du contenu modifiable (`ui.content`) doivent dépendre du code non modifiable (`ui.apps`) qui prend en charge le rendu et l’utilisation du contenu modifiable.
 
-Une exception notable à cette règle générale est que le package de code immuable (`ui.apps` ou tout autre) contient __uniquement__ des lots OSGi. Si tel est le cas, aucun package AEM ne doit déclarer une dépendance à son égard. Ceci est dû au fait que les packages de code immuables __contenant uniquement__ des lots OSGi ne sont pas enregistrés auprès d’AEM Package Manager et que, par conséquent, tout package AEM dépendant d’il aura une dépendance insatisfaite et ne pourra pas être installé.
+Une exception notable à cette règle générale est que le module de code non modifiable (`ui.apps` ou autre) contient __uniquement__ des bundles OSGi. Si tel est le cas, aucun module AEM ne doit déclarer une dépendance à son égard. En effet, les modules de code non modifiables contenant __uniquement__ des bundles OSGi ne sont pas enregistrés auprès d’AEM Package Manager. Dans ce cas, un module AEM dépendant de celui-ci aura une dépendance insatisfaite et ne pourra pas être installé.
 
 >[!TIP]
 >
@@ -340,7 +341,7 @@ Dans le fichier `ui.content/pom.xml`, la directive de configuration de version `
 
 ### Marquage de modules en vue d’un déploiement par Adobe Cloud Manager {#cloud-manager-target}
 
-Dans chaque projet générant un module, **à l’exception** du projet conteneur (`all`), ajoutez `<cloudManagerTarget>none</cloudManagerTarget>` à la configuration `<properties>` de la déclaration du plug-in `filevault-package-maven-plugin` pour vous assurer que le déploiement n’est **pas** effectué par Adobe Cloud Manager. The container (`all`) package should be the singular package deployed via Cloud Manager, which in turn embeds all required code and content packages.
+Dans chaque projet générant un module, **à l’exception** du projet conteneur (`all`), ajoutez `<cloudManagerTarget>none</cloudManagerTarget>` à la configuration `<properties>` de la déclaration du plug-in `filevault-package-maven-plugin` pour vous assurer que le déploiement n’est **pas** effectué par Adobe Cloud Manager. Le module conteneur (`all`) doit être le module unique déployé via Cloud Manager qui, à son tour, incorpore tous les modules de code et de contenu requis.
 
 ```xml
 ...
@@ -492,7 +493,7 @@ Si plusieurs `/apps/*-packages` sont utilisés dans les cibles incorporées, ils
 ### Référentiels Maven tiers {#xml-3rd-party-maven-repositories}
 
 >[!WARNING]
-> Ajouter plus de référentiels Maven peut allonger les délais de création de maven, car d&#39;autres référentiels Maven seront contrôlés pour vérifier s&#39;ils sont dépendants.
+> L’ajout d’autres référentiels Maven peut rallonger les délais de création, car d’autres référentiels Maven seront vérifiés pour en déterminer les dépendances.
 
 Dans le fichier `pom.xml` du projet Reactor, ajoutez toute directive de référentiel Maven public tierce qui s’avère nécessaire. La configuration `<repository>` complète doit être disponible auprès du fournisseur de référentiels tiers.
 
