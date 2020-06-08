@@ -1,9 +1,9 @@
 ---
 title: Déploiement sur AEM as a Cloud Service
 description: 'Déploiement sur AEM as a Cloud Service '
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3512'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ La mise à jour de la version d’AEM est toujours un événement de déploiemen
 
 La vidéo suivante présente un aperçu général du déploiement du code vers AEM as a Cloud Service :
 
->[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 Le reste de ce document décrit la manière dont les développeurs doivent adapter leurs pratiques afin de s’adapter aux mises à jour de version d’AEM as a Cloud Service et aux mises à jour client.
 
