@@ -2,8 +2,11 @@
 title: Rapports de ressources
 description: Cet article décrit les différents rapports relatifs aux ressources dans AEM Assets et comment les générer.
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '982'
+ht-degree: 100%
 
 ---
 
