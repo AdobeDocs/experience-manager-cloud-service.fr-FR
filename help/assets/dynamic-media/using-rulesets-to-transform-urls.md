@@ -1,8 +1,11 @@
 ---
-title: Utilisation d’ensemble de règles pour transformer les URL
+title: Utilisation de jeux de règles de transformation d’URL
 description: Vous pouvez déployer des ensembles de règles dans Dynamic Media pour transformer les URL. Les ensembles de règles sont des ensembles d’instructions écrites dans un langage de scripts (comme JavaScript) qui évaluent des données XML et déclenchent certaines actions si ces données remplissent des conditions spécifiques.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '805'
+ht-degree: 100%
 
 ---
 
