@@ -2,8 +2,11 @@
 title: Publication de ressources, de dossiers et de collections sur Brand Portal
 description: Publiez des ressources, des dossiers et des collections sur Brand Portal.
 contentOwner: Vishabh Gupta
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
+workflow-type: tm+mt
+source-wordcount: '1160'
+ht-degree: 100%
 
 ---
 
@@ -107,6 +110,7 @@ Vous pouvez publier ou annuler la publication de dossiers de ressources immédia
          Cliquez sur **Suivant.**
 
       1. Confirmez votre sélection dans **[!UICONTROL Portée]** et cliquez sur **[!UICONTROL Publier sur Brand Portal]**.
+
    Un message indique que le dossier a été placé en file d’attente pour publication sur Brand Portal. Connectez-vous à l’interface Brand Portal pour voir le dossier publié.
 
 1. **Publication ultérieure de dossiers**
