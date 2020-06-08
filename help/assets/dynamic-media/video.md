@@ -1,9 +1,9 @@
 ---
 title: Vidéo
 description: Découvrez comment utiliser la vidéo dans Dynamic Media
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: acdad463a188387a7c39c1061191c7472e8295dd
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '10160'
 ht-degree: 100%
 
@@ -23,6 +23,7 @@ Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapide
 >Avant d’utiliser des vidéos dans Dynamic Media, vérifiez que l’administrateur AEM a activé et configuré les Cloud Services Dynamic Media.
 >
 >* Voir [Configuration des Cloud Services Dynamic Media](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) dans Configuration de Dynamic Media et [Dépannage de Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md).
+
 >
 
 
@@ -473,6 +474,7 @@ Pour configurer les paramètres de Google Cloud, procédez comme suit :
 
    * Dans le tableau de bord de votre projet, dans la carte Prise en main, appuyez sur **[!UICONTROL Explorer et activer les API]**.
    * Dans le tableau de bord de votre projet, dans la carte API, appuyez sur **[!UICONTROL Accéder à la présentation des API]**.
+
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. En haut de la page API &amp; services, appuyez sur **[!UICONTROL Activer les API et les services]**.
@@ -492,6 +494,7 @@ Pour configurer les paramètres de Google Cloud, procédez comme suit :
    * Depuis la liste déroulante **[!UICONTROL Depuis où appellerez-vous l’API ?]**, sélectionnez **[!UICONTROL Serveur web (par exemple, node.js, Tomcat)]**
 
    * Dans la liste déroulante **[!UICONTROL À quelles données aurez-vous accès ?]**, appuyez sur **[!UICONTROL Données utilisateur]**.
+
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
 1. Appuyez sur **[!UICONTROL De quels identifiants ai-je besoin ?]**
@@ -837,9 +840,11 @@ Pour surveiller la progression (notamment l’échec du codage ou de la publicat
 1. Consultez la progression du codage vidéo dans votre dossier de ressources :
 
    * En mode Carte, la progression du codage vidéo s’affiche sur la ressource en pourcentage. Si une erreur se produit, ces informations s’affichent également sur cette ressource.
+
    ![chlimage_1-429](assets/chlimage_1-429.png)
 
    * En mode Liste, la progression du codage vidéo s’affiche dans la colonne **[!UICONTROL État du traitement]**. Si une erreur se produit, le message suivant s’affiche dans la même colonne.
+
    ![chlimage_1-430](assets/chlimage_1-430.png)
 
    Cette colonne ne s’affiche pas par défaut. Pour activer la colonne, sélectionnez l’option **[!UICONTROL Paramètres d’affichage]** dans le menu contextuel des affichages et ajoutez la colonne **[!UICONTROL État du traitement]** et appuyez ou cliquez sur **[!UICONTROL Mettre à jour]**.
@@ -859,6 +864,7 @@ Pour surveiller la progression (notamment l’échec du codage ou de la publicat
    >    * Configuration de la file d’attente des tâches Apache Sling
    >    * Gestionnaire des tâches du processus externe de processus Adobe Granite
    >    * File d’attente des délais d’attente des processus Granite
+
    >
    >Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
 
@@ -893,6 +899,7 @@ Pour surveiller la progression (notamment l’échec du codage ou de la publicat
    >    * Configuration de la file d’attente des tâches Apache Sling
    >    * Gestionnaire des tâches du processus externe de processus Adobe Granite
    >    * File d’attente des délais d’attente des processus Granite
+
    >
    >
    >Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
@@ -991,6 +998,7 @@ Vous ne devez utiliser la commande d’actualisation que si la date de fin du ra
 
    * Dans le coin supérieur droit, appuyez sur l’icône **[UICONTROL Sélecteur de date]**.
 Indiquez la période de début et de fin pour laquelle vous souhaitez obtenir les données vidéo, puis appuyez sur **[!UICONTROL Exécuter le rapport]**.
+
    Le groupe Mesures principales identifie diverses mesures agrégées pour toutes les vidéos publiées sur votre site.
 
 1. Dans le tableau qui répertorie les principales vidéos publiées, appuyez sur le nom d’une vidéo pour la lire et afficher également le rapport sur la rétention de l’audience (taux de déperdition) de celle-ci.
