@@ -1,8 +1,11 @@
 ---
 title: Contenu associé
 description: Le contenu associé fournit la connexion afin que les ressources puissent (éventuellement) être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '218'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +26,7 @@ Pour effectuer l’association, vous devez d’abord [ajouter les ressources mul
 
    ![Contenu associé](assets/cfm-assoc-content-01.png)
 
-2. Sélectionnez **Associer le contenu** ou **Associer la collection** (le cas échéant, selon que des collections ont été associées ou non).
+2. Sélectionnez **Associer le contenu** ou **Associer la collection** (selon le cas, si des collections ont déjà été associées ou non).
 3. Sélectionnez la collection requise.
 
    Si vous le souhaitez, vous pouvez ajouter le fragment à la collection sélectionnée, car cela facilite le suivi.
