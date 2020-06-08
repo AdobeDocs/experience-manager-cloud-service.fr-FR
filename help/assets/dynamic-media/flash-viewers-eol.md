@@ -1,8 +1,11 @@
 ---
 title: Notification de fin de prise en charge de la visionneuse Flash
 description: À compter du 31 janvier 2017, Adobe Scene7 mettra officiellement fin à la prise en charge de la plate-forme de la visionneuse Flash.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '70'
+ht-degree: 100%
 
 ---
 
