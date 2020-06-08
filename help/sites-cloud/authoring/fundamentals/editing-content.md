@@ -1,8 +1,11 @@
 ---
 title: Modification du contenu de la page
 description: Une fois votre page créée, vous pouvez modifier le contenu pour effectuer les mises à jour dont vous avez besoin.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '2974'
+ht-degree: 100%
 
 ---
 
@@ -229,6 +232,7 @@ Les actions disponibles pour l’utilisateur sont affichées comme il convient 
    * Vous pouvez coller le composant sur la même page ou sur une autre.
    * L’élément est collé au-dessus de celui dans lequel vous sélectionnez l’opération de collage.
    * L’opération de collage ne s’affiche que s’il y a du contenu dans le presse-papiers.
+
    ![Bouton Coller](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
 
    >[!NOTE]
@@ -288,7 +292,7 @@ Les options de modification disponibles dépendent du composant. Pour certains c
 
 * Composant image – Plein écran
 
-   L’[activation du mode Plein écran](#edit-content-full-screen-mode) pour le composant d’image permet de disposer de davantage d’espace pour modifier l’image. Cela permet également d’afficher des options d’édition supplémentaires, telles que **Lancer une Map** et **Réinitialiser le zoom**. Le mode Plein écran permet, en outre, de sélectionner des paramètres de recadrage prédéfinis.
+   [Le passage en mode plein écran](#edit-content-full-screen-mode) pour le composant d’image permet de libérer de l’espace pour modifier l’image et d’afficher des options de modification supplémentaires, telles que **Lancer une Map** et **Réinitialiser le zoom**. En outre, le mode plein écran permet de sélectionner les paramètres prédéfinis de recadrage.
 
    ![Mode Plein écran du composant d’image](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
@@ -344,6 +348,7 @@ Au lieu de basculer à plusieurs reprises entre les modes d’édition et de [mi
    * Les poignées de redimensionnement du composant s’affichent.
    * La barre d’outils de l’émulateur est affichée en haut de l’écran.
    * Les actions de mise en page sont affichées dans la barre d’outils du composant, au lieu des actions d’édition standard.
+
    ![Un composant en mode de mise en page](/help/sites-cloud/authoring/assets/editing-layout-mode.png)
 
    Vous pouvez à présent modifier la mise en page du composant, comme vous le feriez dans le [mode de mise en page](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
@@ -438,7 +443,7 @@ Lors de la création, le mode Aperçu est accessible par l’intermédiaire de l
 
 L’option **Afficher comme publié(e)** est disponible dans le menu [Informations sur la page](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information). La page s’affiche sur un nouvel onglet, actualise le contenu et affiche la page telle qu’elle se présentera dans l’environnement de publication.
 
-## Verrouillage d’une page    {#locking-a-page}
+## Verrouillage d’une page {#locking-a-page}
 
 AEM vous permet de verrouiller une page, de sorte que personne d’autre ne puisse en modifier le contenu. Cela s’avère utile lorsque vous apportez de nombreuses modifications à une page spécifique ou lorsque vous devez figer une page pendant quelque temps.
 
