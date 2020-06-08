@@ -1,8 +1,11 @@
 ---
 title: Utilisation de Dynamic Media
 description: Découvrez comment utiliser Dynamic Media pour diffuser des ressources pour une utilisation sur le web, les appareils mobiles et les réseaux sociaux.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '415'
+ht-degree: 100%
 
 ---
 
@@ -27,7 +30,7 @@ Les fonctionnalités uniquement incluses dans Dynamic Media sont les suivantes�
 * [Visionneuses d’images](image-sets.md)
 * [Images interactives](interactive-images.md)
 * [Vidéos interactives](interactive-videos.md)
-* [Visionneuses de supports variés](mixed-media-sets.md)
+* [Visionneuses de médias mixtes](mixed-media-sets.md)
 * [Images panoramiques](panoramic-images.md)
 
 * [Visionneuses à 360°](spin-sets.md)
