@@ -1,13 +1,16 @@
 ---
-title: Texte (Markdown)
+title: 'Texte (Markdown) '
 description: Lors du processus de création, l’éditeur de fragments de contenu utilise la syntaxe markdown pour vous permettre d’écrire aisément du contenu.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '521'
+ht-degree: 100%
 
 ---
 
 
-# Texte (Markdown){#markdown}
+# Texte (Markdown) {#markdown}
 
 Lors du processus de [création](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l’éditeur de fragments de contenu utilise la syntaxe *markdown* pour vous permettre d’écrire aisément du contenu :
 
