@@ -1,8 +1,11 @@
 ---
-title: Création de modèles de page
+title: 'Création de modèles de page   '
 description: Le modèle définit la structure de la page créée et, à l’aide de l’éditeur de modèles, les tâches de création et de gestion des modèles ne sont plus réservées aux développeurs.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '4554'
+ht-degree: 100%
 
 ---
 
@@ -11,7 +14,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 Lors de la création d’une page, vous devez sélectionner un modèle. C’est la base pour la création de la page. Le modèle définit la structure de la page créée, le contenu initial et les composants pouvant être utilisés.
 
-Grâce à l’**éditeur de modèles**, les tâches de création et de gestion des modèles ne sont plus réservées aux développeurs. Un type d’utilisateur expérimenté, appelé **créateur de modèles**, peut également être impliqué. Les développeurs doivent continuer à configurer l’environnement, créer les bibliothèques clientes ainsi que les composants à utiliser, mais une fois ces éléments fondamentaux en place, le **créateur de modèles** a la possibilité de créer et de configurer des modèles sans projet de développement.
+Grâce à **Éditeur de modèles**, la création et la maintenance de modèles ne sont plus des tâches réservées aux développeurs. Un type d’utilisateur avancé, appelé **auteur de modèles**, peut également être impliqué. Les développeurs doivent encore configurer l’environnement, créer des bibliothèques clientes et créer les composants à utiliser. Cependant, une fois ces bases en place, l’**auteur de modèles** peut créer et configurer des modèles sans projet de développement.
 
 La **console de modèles** permet aux créateurs de modèles :
 
@@ -30,7 +33,7 @@ Pour obtenir des informations détaillées sur le fonctionnement des modèles mo
 
 >[!NOTE]
 >
->L’**éditeur de modèles** ne prend pas en charge le ciblage directement au niveau du modèle. Les pages créées à partir d’un modèle modifiable peuvent être ciblées, mais les modèles eux-mêmes ne le peuvent pas.
+>L’**éditeur de modèles** ne prend pas en charge le ciblage directement au niveau du modèle. Les pages créées à partir d’un modèle modifiable peuvent être ciblées, mais pas les modèles eux-mêmes.
 
 ## Avant de commencer {#before-you-start}
 
@@ -42,7 +45,7 @@ Avant de commencer, il est important de tenir compte du fait que la création d�
 
 ### Rôles {#roles}
 
-La création d’un modèle à l’aide de la **console de modèles** et de l’**éditeur de modèles** requiert une collaboration entre les rôles suivants :
+La création d’un modèle à l’aide de la **console Modèles** et de l’**éditeur de modèles** exige une collaboration entre les rôles suivants :
 
 * **Administrateur** :
    * La création d’un dossier pour les modèles nécessite des droits `admin`.
@@ -455,7 +458,7 @@ Dans l’onglet **Composants par défaut**, vous définissez les composants qui 
 
 Cliquez ou appuyez sur **Ajouter le mappage** pour ajouter un nouveau composant et un mappage de type MIME.
 
-Sélectionnez un composant dans la liste, puis cliquez ou appuyez sur **Ajouter un type** pour ajouter un type MIME supplémentaire à un composant déjà mappé. Cliquez sur l’icône **Supprimer** pour supprimer un type MIME.
+Sélectionnez un composant dans la liste, puis cliquez ou appuyez sur **Ajouter un type** pour ajouter un type MIME à un composant déjà mappé. Cliquez sur l’icône **Supprimer** pour supprimer un type MIME.
 
 ![Onglet Composants par défaut](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
@@ -477,13 +480,13 @@ Lorsqu’un composant a été déverrouillé :
 
 ![Bouton Verrouiller le composant](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
 
-Cela inclut le déverrouillage des composants de conteneur, afin de pouvoir ajouter d’autres composants en mode **Contenu initial** ou dans des pages créées. Si vous avez déjà ajouté des composants/du contenu au conteneur avant de le déverrouiller, ceux-ci n’apparaîtront plus en mode **Structure**, mais s’afficheront en mode **Contenu initial**. En mode **Structure**, seul le composant de conteneur est affiché avec sa liste de **Composants autorisés**.
+Cela comprend le déverrouillage des composants de conteneur afin que d’autres composants puissent être ajoutés, soit en mode **Contenu initial**, soit sur les pages résultantes. Si vous avez déjà ajouté des composants/du contenu au conteneur avant de le déverrouiller, ceux-ci ne s’afficheront plus en mode **Structure**, mais en mode **Contenu initial**. En mode **Structure**, seul le composant de conteneur est affiché avec sa liste de **Composants autorisés**.
 
 ![Composants autorisés](/help/sites-cloud/authoring/assets/templates-allowed-components.png)
 
 Pour économiser de l’espace, le conteneur de mises en page ne se développe pas pour s’adapter à la liste des composants autorisés. À la place, le conteneur devient une liste déroulante.
 
-Les composants configurables sont affichés avec une icône **Stratégie** sur laquelle vous pouvez appuyer ou cliquer pour modifier la stratégie et les propriétés de ce composant.
+Les composants configurables s’affichent avec une icône **Règle**, sur laquelle vous pouvez appuyer ou cliquer pour modifier la règle et les propriétés de ce composant.
 
 ![Icône de composant configurable](/help/sites-cloud/authoring/assets/templates-configurable-component.png)
 
@@ -547,6 +550,7 @@ Pour accéder à la boîte de dialogue **Stratégie de page** :
 
    * La moitié gauche définit les [stratégies de page](#page-policies).
    * La moitié droite définit les [propriétés de page](#page-properties).
+
    ![Conception de page](/help/sites-cloud/authoring/assets/templates-page-design.png)
 
 #### Stratégies de page {#page-policies}
@@ -635,6 +639,7 @@ Lors de la création de modèles, vous devez prendre en compte :
 
       * est réservé à la structure, auquel cas elles sont appliquées immédiatement.
       * contient le contenu initial, auquel cas elles ne sont appliquées qu’aux pages créées après les modifications.
+
    Soyez particulièrement prudent lors du :
 
    * verrouillage ou déverrouillage des composants sur des modèles activés.
@@ -642,6 +647,7 @@ Lors de la création de modèles, vous devez prendre en compte :
 
       * Le déverrouillage des composants (qui ont été verrouillés) est manquant dans les pages existantes.
       * Le verrouillage des composants (modifiables) empêche l’affichage de ce contenu dans les pages.
+
    >[!NOTE]
    >
    >AEM génère des avertissements explicites lors de la modification du statut de verrouillage des composants dans les modèles qui ne sont plus des brouillons.
