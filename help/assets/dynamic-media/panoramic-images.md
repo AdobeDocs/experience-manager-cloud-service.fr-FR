@@ -1,8 +1,11 @@
 ---
 title: Images panoramiques
 description: Découvrez comment utiliser les images panoramiques dans Dynamic Media.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '147'
+ht-degree: 100%
 
 ---
 
@@ -20,6 +23,7 @@ Voir également [Gestion des paramètres prédéfinis de visionneuse](/help/asse
 Pour qu’une ressource téléchargée soit une image panoramique sphérique utilisable avec la visionneuse d’images panoramiques, la ressource doit présenter l’une ou l’autre des caractéristiques suivantes, ou les deux :
 
 * Un rapport d’aspect de 2.
+
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
 * Avec les mots-clés `equirectangular`, ou `spherical` et `panorama`, ou `spherical` et `panoramic`. Voir [Utilisation des balises](/help/sites-cloud/authoring/features/tags.md).
