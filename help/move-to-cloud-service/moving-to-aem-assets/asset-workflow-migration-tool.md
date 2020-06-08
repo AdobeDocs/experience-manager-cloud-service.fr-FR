@@ -1,25 +1,25 @@
 ---
-title: Outil de migration de flux de travaux de ressources
-description: 'Outil de migration de flux de travaux de ressources '
+title: Outil de migration des workflows de ressources
+description: 'Outil de migration des workflows de ressources '
 translation-type: tm+mt
 source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
 workflow-type: tm+mt
 source-wordcount: '109'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Outil de migration de flux de travaux de ressources {#asset-workflow-migration}
+# Outil de migration des workflows de ressources {#asset-workflow-migration}
 
-L’outil de migration de flux de travaux des ressources permet de migrer automatiquement les workflows de traitement des ressources des déploiements sur site ou AMS d’AEM vers les profils de traitement et les configurations OSGi en vue de les utiliser dans AEM Assets en tant que service Cloud.
+L’outil de migration des workflows de ressources permet d’effectuer automatiquement la migration des workflows de traitement de ressources, entre des déploiements d’AEM on-premise ou sur AMS et le traitement de profils et de configurations OSGi destinés à être utilisés dans AEM Assets as a Cloud Service.
 
 ## Présentation {#introduction}
 
-Cette section décrit les ressources et les détails d’implémentation de l’outil de migration de flux de travaux d’actifs.
+Cette section décrit les ressources et les détails de la mise en œuvre de l’outil de migration des workflows de ressources.
 
-Cet utilitaire permet aux développeurs AEM de migrer les workflows de traitement des ressources AEM vers AEM en tant que service Cloud.
+Grâce à cet utilitaire, les développeurs AEM peuvent effectuer la migration des workflows de traitement de ressources vers AEM as a Cloud Service.
 
-## Installation de l’outil de migration de flux de travaux des ressources {#installing-tool}
+## Installation de l’outil de migration des workflows de ressources {#installing-tool}
 
-Reportez-vous à la ressource **[Git : AEM Assets as a Cloud Service - Migration](https://github.com/adobe/aem-cloud-migration)**de processus pour en savoir plus sur l’installation et la création de code à partir de la source.
+Pour en savoir plus sur l’installation et la création de code à partir de la source, voir la section **[Ressource Git : AEM Assets as a Cloud Service - Migration des workflows](https://github.com/adobe/aem-cloud-migration)**.
