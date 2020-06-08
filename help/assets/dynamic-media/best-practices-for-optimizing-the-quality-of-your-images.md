@@ -1,8 +1,11 @@
 ---
 title: Bonnes pratiques relatives à l’optimisation de la qualité des images
 description: Découvrez les bonnes pratiques relatives à l’optimisation de la qualité des images dans Dynamic Media
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 21b2541b6a3c5011b6eca7edf85299291c361147
+workflow-type: tm+mt
+source-wordcount: '1490'
+ht-degree: 100%
 
 ---
 
@@ -57,7 +60,7 @@ Il existe deux méthodes d’accentuation des images que vous pouvez utiliser :
 
       * **[!UICONTROL seuil]** (0 à 255, sensibilité de l’effet)
 
-         Ce paramètre définit l’écart recherché entre les pixels accentués et la zone environnante avant qu’ils ne soient considérés comme des pixels de contour et que le filtre les accentue. Le paramètre **[!UICONTROL seuil]** permet d’éviter les zones à l’accentuation excessive avec des couleurs similaires, telles que les tons chair. Par exemple, une valeur de seuil de 12 ignore les variations légères de luminosité du ton de peau afin d’éviter d’ajouter du « bruit » tout en ajoutant un contraste de contour aux zones fortement contrastées, par exemple à l’emplacement où les cils rejoignent la peau.
+         Ce paramètre définit l’écart recherché entre les pixels accentués et la zone environnante avant qu’ils ne soient considérés comme des pixels de contour et que le filtre les accentue. Le paramètre **[!UICONTROL seuil]** permet d’éviter les zones à l’accentuation excessive avec des couleurs similaires, telles que les tons chair. Par exemple, une valeur de seuil de 12 permet d’ignorer les légères variations de la luminosité de la peau pour éviter d’ajouter du « bruit », tout en ajoutant un contraste sur les bords dans les zones à fort contraste, comme l’endroit où les cils rencontrent la peau.
       Pour plus d’informations sur la façon de définir ces trois paramètres, y compris les bonnes pratiques à appliquer avec le filtre, reportez-vous aux ressources suivantes :
 
       Rubrique d’aide d’AEM sur l’accentuation d’une image.
