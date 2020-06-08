@@ -1,13 +1,16 @@
 ---
 title: Concepts de création
 description: Concepts de création dans AEM
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 100%
 
 ---
 
 
-# Création   Concepts {#authoring-concepts}
+# Concepts de création {#authoring-concepts}
 
 Une installation AEM se compose généralement d’au moins deux environnements :
 
