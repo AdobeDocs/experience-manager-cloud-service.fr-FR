@@ -339,11 +339,11 @@ Les auteurs qui utilisent AEM pour créer du contenu en japonais peuvent appliqu
 Pour créer le style que les auteurs peuvent appliquer au texte japonais, procédez comme suit :
 
 1. Créez un nœud sous le nœud styles. Consultez [spécification d’un nouveau style](#stylesindropdown).
-   * Nom: `jpn-word-wrap`
+   * Nom (name) : `jpn-word-wrap`
    * Type : `nt:unstructure
 
 1. Ajoutez la propriété `cssName` au nœud pour référencer la classe CSS. Ce nom de classe est un nom réservé pour la fonction japonaise de retour automatique à la ligne.
-   * Nom: `cssName`
+   * Nom (name) : `cssName`
    * Type : `String`
    * Valeur : `jpn-word-wrap` (sans précédent `.`)
 
@@ -665,7 +665,7 @@ In your component, navigate to the node `<rtePlugins-node>/keys`. Créez les nœ
 Within your component navigate to the node `<rtePlugins-node>/lists`. Créez ces nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
 
 1. On the `lists` node create the `identSize` parameter:](#activateplugin)
-1. **Nom**: `identSize`
+1. **Name** (Nom) : `identSize`
 
    * **Type**: `Long`
    * **Valeur** Nombre de pixels nécessaires pour la marge en retrait.`Long`
