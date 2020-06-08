@@ -1,8 +1,11 @@
 ---
 title: Projets
 description: Les projets vous permettent de regrouper des ressources dans une seule entité dont l’environnement commun et partagé facilite la gestion de vos projets.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1269'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +28,7 @@ En tant qu’utilisateur, vous pouvez effectuer les opérations suivantes :
 Reportez-vous aux rubriques supplémentaires suivantes :
 
 * [Gestion de projets](/help/sites-cloud/authoring/projects/managing.md)
-* [Utilisation de tâches](/help/sites-cloud/authoring/projects/tasks.md)
+* [Utilisation des tâches](/help/sites-cloud/authoring/projects/tasks.md)
 * [Utilisation des workflows de projet](/help/sites-cloud/authoring/projects/workflows.md)
 
 ## Console Projets {#projects-console}
@@ -47,17 +50,17 @@ Dans la console Projets, vous devez associer différents types d’informations 
 Vous pouvez associer les mosaïques suivantes à votre projet. Chacune d’elles est décrite dans les sections ci-après :
 
 * Ressources et collections de ressources
-* Expériences
+* Expériences  
 * Liens
 * Informations sur le projet
 * Équipe
 * Pages d’entrée
 * Courriels
-* Workflows
+* Workflows   
 * Lancements
 * Tâches
 
-### Ressources   {#assets}
+### Ressources {#assets}
 
 Dans la mosaïque **Ressources**, vous pouvez regrouper tous les éléments dont vous avez besoin pour un projet particulier.
 
@@ -73,15 +76,15 @@ Comme avec les ressources, vous pouvez ajouter des collections de ressources dir
 
 ![Collection de ressources](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
 
-Ajoutez une collection en cliquant sur **Ajouter une collection** et en sélectionnant une collection dans la liste.
+Ajoutez une collection en cliquant sur **Ajouter une collection** et en sélectionnant la collection appropriée dans la liste.
 
-### Expériences   {#experiences}
+### Expériences {#experiences}
 
 La mosaïque **Expériences** permet d’ajouter au projet une application mobile, un site web ou une publication.
 
 ![Expériences](/help/sites-cloud/authoring/assets/project-experiences.png)
 
-Les icônes indiquent le type d’expérience qui est représenté : site web, application mobile ou publication. Ajoutez des expériences en cliquant sur le signe + ou en cliquant sur **Ajouter une expérience** et en sélectionnant le type d’expérience.
+Les icônes indiquent le type d’expérience représenté : site web, application mobile ou publication. Ajoutez des expériences en cliquant sur le signe + ou en cliquant sur **Ajouter une expérience** et en sélectionnant le type d’expérience.
 
 ![Ajout d’une expérience](/help/sites-cloud/authoring/assets/projects-add-experience.png)
 
@@ -176,4 +179,4 @@ Pour vous permettre de gérer les autorisations de sécurité et de contrôle, t
 
 >[!NOTE]
 >
->Lorsque vous créez un projet et ajoutez des utilisateurs pour les différents rôles, des groupes liés au projet sont automatiquement créés pour gérer les autorisations correspondantes. Par exemple, un projet nommé Monprojet serait associé à trois groupes **Propriétaires Monprojet**, **Editeurs Monprojet**, **Observateurs Monprojet**. Cependant, si le projet est supprimé, ces groupes ne le sont pas automatiquement. Un administrateur doit supprimer manuellement les groupes dans **Outils** > **Sécurité** > **Groupes**.
+>Lorsque vous créez le projet et ajoutez des utilisateurs aux différents rôles, les groupes associés au projet sont automatiquement créés pour gérer les autorisations associées. Par exemple, un projet appelé Myproject aurait trois groupes **Myproject Owners**, **Myproject Editors**, **Myproject Observators**. Toutefois, si le projet est supprimé, ces groupes ne sont pas automatiquement supprimés. Un administrateur doit supprimer manuellement les groupes dans **Outils** > **Sécurité** > **Groupes**.
