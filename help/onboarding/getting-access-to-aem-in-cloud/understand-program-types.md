@@ -1,24 +1,27 @@
 ---
-title: Présentation des types de programmes et de programmes
-description: Présentation des types de programmes et de programmes - Services Cloud
+title: Présentation des types de Programme et de Programme
+description: Présentation des types de Programme et de Programme - Services Cloud
 translation-type: tm+mt
 source-git-commit: 14da491cf09ed46ea425a8d65670d8b851aef388
+workflow-type: tm+mt
+source-wordcount: '151'
+ht-degree: 3%
 
 ---
 
 
 # Présentation des programmes et des types de programmes {#understanding-programs}
 
-Dans Cloud Manager, vous avez l’entité Tenant tout en haut qui peut comporter plusieurs programmes.  Chaque programme ne peut pas contenir plus d’un environnement de production et plusieurs environnements de non production.
+Dans Cloud Manager, l’entité locataire se trouve tout en haut de l’écran et peut comporter plusieurs Programmes.  Chaque Programme ne peut pas contenir plus d’un environnement de production et plusieurs environnements non productifs.
 
-Le diagramme suivant montre la hiérarchie des entités dans Cloud Manager.
+Le diagramme suivant présente la hiérarchie des entités dans Cloud Manager.
 
 ![image](assets/program-types1.png)
 
-## Types de programmes {#program-types}
+## Types de Programme {#program-types}
 
 Un utilisateur peut créer un **Sandbox** ou un programme **régulier** .
 
-Une *sandbox* est généralement créée pour répondre aux besoins de la formation, de l’exécution des démos, de l’activation, des points de vue ou de la documentation. Il n&#39;est pas destiné à transporter du trafic en direct et il y aura des restrictions qu&#39;un programme régulier ne fera pas. Elle inclura des sites et des ressources et sera générée automatiquement avec une branche Git qui inclut un exemple de code, un environnement Dev et un pipeline de non-production.
+Un *sandbox* est généralement créé à des fins de formation, d’exécution de démonstrations, d’activation, de contenu de conférence ou de documentation. Il n&#39;est pas destiné à transporter du trafic réel et aura des restrictions qu&#39;un programme ordinaire ne fera pas. Il comprendra des sites et des ressources et sera livré automatiquement avec une branche Git comprenant un exemple de code, un environnement Dev et un pipeline non productif.
 
-Un programme ** régulier est créé pour activer le trafic en direct au moment approprié dans le futur.
+Un programme ** régulier est créé pour activer le trafic actif au moment approprié dans le futur.
