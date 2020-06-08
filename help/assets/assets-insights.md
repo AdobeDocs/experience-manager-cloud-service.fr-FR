@@ -2,8 +2,11 @@
 title: Statistiques sur les ressources
 description: Découvrez comment la fonction Statistiques sur les ressources permet d’effectuer le suivi des évaluations des utilisateurs et des statistiques d’utilisation des images utilisées dans les sites web tiers, les campagnes marketing et les solutions de création d’Adobe.
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 100%
 
 ---
 
@@ -40,6 +43,7 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
    * **[!UICONTROL Web et mobile]** : nombre de fois où la ressource faisait partie de sites web et d’applications.
    * **[!UICONTROL Social]** : nombre de fois où la ressource a été utilisée dans des solutions, comme Adobe Social et Adobe Campaign.
    * **[!UICONTROL Email]** : nombre de fois où la ressource a été utilisée dans des campagnes par email.
+
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
