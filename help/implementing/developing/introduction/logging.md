@@ -1,9 +1,9 @@
 ---
 title: Journalisation
 description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou apprenez à demander la journalisation des données.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1097'
 ht-degree: 100%
 
