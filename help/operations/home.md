@@ -1,8 +1,11 @@
 ---
 title: Opérations Exploitation et maintenance d’Adobe Experience Manager as a Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation sur l’exploitation et la maintenance d’Adobe Experience Manager as a Cloud Service
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 3e379236fb663160209ec973f299cf85f6e3d42e
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 100%
 
 ---
 
