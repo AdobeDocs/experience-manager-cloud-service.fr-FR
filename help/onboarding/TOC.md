@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 9dda30b0ea72329e26b820b19aeeb6a03f863751
 workflow-type: tm+mt
 source-wordcount: '133'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 93%
    + [Référentiel de code source](what-is-required/source-code-repository.md)
 + Accès à AEM en mode cloud {#getting-access}
    + [Accès à Experience Manager as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
-   + Programmes du service Cloud {#cloud-service-programs}
+   + Programmes Cloud Service {#cloud-service-programs}
       + [Accès aux programmes](getting-access-to-aem-in-cloud/first-time-login.md)
       + [Présentation des programmes et des types de programmes](getting-access-to-aem-in-cloud/understand-program-types.md)
       + [Création d’un programme](getting-access-to-aem-in-cloud/creating-a-program.md)
@@ -34,5 +34,5 @@ ht-degree: 93%
    + [AEM as a Cloud Service et directives d’accessibilité web](accessibility/web-accessibility.md)
    + [Guide rapide relatif à WCAG 2.1](accessibility/quick-guide-wcag.md)
 + Bonnes pratiques {#best-practices}
-   + [Gestion du référencement et des URL](best-practices/seo-and-url-management.md)
+   + [Gestion de l’optimisation et des URL](best-practices/seo-and-url-management.md)
 + [Présentation des consoles des outils](tools-consoles.md)
