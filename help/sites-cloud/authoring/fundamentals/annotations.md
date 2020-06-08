@@ -1,8 +1,11 @@
 ---
 title: Ajout d’annotations de page
 description: De nombreux composants directement liés au contenu permettent d’ajouter une annotation.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '623'
+ht-degree: 100%
 
 ---
 
