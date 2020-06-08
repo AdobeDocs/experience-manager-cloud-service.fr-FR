@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
 workflow-type: tm+mt
 source-wordcount: '670'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Les types de ressources Visionneuses d’images, Visionneuses à 360°, Visionne
 
 ![Options disponibles lors du téléchargement de ressources à partir d’AEM Assets](assets/asset_download_dialog.png)
 
-*Figure : Options disponibles lors du téléchargement de ressources à partir d’AEM Assets.*
+*Figure : Options disponibles lors du téléchargement de ressources à partir d’AEM Assets.*
 
 Vous trouverez ci-dessous les options d’exportation/de téléchargement disponibles. Les rendus dynamiques sont propres à Dynamic Media et vous permettent de générer des rendus à la volée, en plus de la ressource que vous avez sélectionnée (cette option est uniquement disponible lorsque Dynamic Media est activé).
 
