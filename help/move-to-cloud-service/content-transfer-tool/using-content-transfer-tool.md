@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: f154ffacbeeee1993a9cc3bd3bd274be33dca7a7
+source-git-commit: 7a0fa12198c69791caf7e44bfbfe7d71e389a984
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 91%
+source-wordcount: '1538'
+ht-degree: 90%
 
 ---
 
@@ -66,7 +66,7 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
    1. **Jeton d’accès** : renseignez le jeton d’accès.
 
       >[!NOTE]
-      >Vous pouvez récupérer le jeton d’accès de l’instance d’auteur en accédant à `/libs/granite/migration/token.json`.
+      >Vous pouvez récupérer le jeton d’accès de l’instance d’auteur en accédant à `/libs/granite/migration/token.json`. Le jeton d&#39;accès est récupéré à partir de l’instance d’auteur du service Cloud.
 
    1. **Paramètres** : sélectionnez les paramètres suivants pour créer le jeu de migration :
 
