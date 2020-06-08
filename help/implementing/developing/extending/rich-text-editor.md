@@ -128,7 +128,7 @@ Le tableau ci-dessous répertorie les modules externes actuels et indique les in
 >
 >Do not name the node under `cq:inplaceEditing` as `config`. On `cq:inplaceEditing` node, define the following properties:
 >
->* **Nom**: `configPath`
+>* **Name** (Nom) : `configPath`
 >* **Type**: `String`
 >* **Valeur** : chemin du nœud qui contient la configuration proprement dite.
 
