@@ -1,8 +1,11 @@
 ---
 title: Utilisation de contenu ciblé sur plusieurs sites
-description: Si vous devez gérer du contenu ciblé, tel que des activités, des expériences et des offres sur vos différents sites, vous pouvez profiter de la prise en charge de sites multiples intégrée à AEM pour le contenu ciblé.
-translation-type: ht
+description: Si vous devez gérer du contenu ciblé, tel que des activités, des expériences et des offres sur vos différents sites, vous pouvez profiter de la prise en charge de sites multiples intégrée à AEM pour le contenu ciblé
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '2900'
+ht-degree: 100%
 
 ---
 
@@ -49,6 +52,7 @@ Un site ou une Live Copy présente un lien vers une zone contenant les activité
 >
 >* Lorsque vous utilisez des déploiements ou des Live Copies, une licence MSM est requise.
 >* Lorsque vous utilisez la synchronisation avec Adobe Target, une licence Adobe Target est requise.
+
 >
 
 
@@ -147,7 +151,7 @@ Les zones peuvent couvrir les activités et les offres. Après avoir créé une 
 
 >[!NOTE]
 >
->La zone par défaut, appelée « zone maître », est réduite par défaut lorsque vous appuyez ou cliquez sur le nom d’une marque **jusqu’à ce que** vous créiez une autre zone. Ensuite, lorsque vous sélectionnez une marque dans la console **Activité** ou **Offres**, la console **Zone** s’affiche.
+>La zone par défaut appelée Zone principale est réduite par défaut lorsque vous appuyez ou cliquez sur le nom d’une marque **jusqu’à ce que** vous en créiez une autre. Ensuite, lorsque vous sélectionnez une marque dans la console **Activité** ou **Offres**, la console **Zone** s’affiche.
 
 Pour créer une zone :
 
@@ -236,6 +240,7 @@ Une activité qui hérite d’un autre site comporte une marque verte en regard 
 >
 >* Vous pouvez uniquement suspendre ou désolidariser des Live Copies dans une activité.
 >* Vous n’avez pas besoin de suspendre ou de désolidariser des Live Copies pour étendre une activité héritée. Vous pouvez toujours créer de **nouvelles** expériences et offres locales pour cette activité. Si vous souhaitez modifier une activité existante, il vous faut suspendre l’héritage.
+
 >
 
 
@@ -250,6 +255,7 @@ Pour suspendre ou désolidariser l’héritage du contenu ciblé dans une activi
 
    1. Sélectionnez un élément de l’activité, tel que le public. AEM affiche automatiquement une fenêtre de confirmation Suspendre la Live Copy. (Vous pouvez suspendre la Live Copy en appuyant ou en cliquant sur n’importe quel élément du processus de ciblage.)
    1. Sélectionnez **Suspendre la Live Copy** dans le menu déroulant de la barre d’outils.
+
    ![Suspendre la Live Copy](/help/sites-cloud/authoring/assets/multisite-suspend-livecopy.png)
 
 1. Appuyez ou cliquez sur **Suspendre** pour suspendre l’activité. Les activités suspendues apparaissent en rouge.
@@ -262,7 +268,7 @@ Pour rompre l’héritage du contenu ciblé dans une activité :
 
 1. Accédez à la page sur laquelle vous souhaitez désolidariser la Live Copy du gabarit et appuyez ou cliquez sur **Ciblage** dans le menu déroulant de mode.
 1.  Si votre page est liée à une zone qui est une Live Copy, vous pouvez voir l’état d’héritage. Appuyez ou cliquez sur **Commencer le ciblage**.
-1. Sélectionnez **Désolidariser une Live Copy** dans le menu déroulant de la barre d’outils. AEM confirme que vous souhaitez désolidariser la Live Copy.
+1. Sélectionnez **Désolidariser une Live Copy** dans le menu déroulant de la barre d’outils. AEM confirme que vous souhaitez détacher la Live Copy.
 1. Appuyez ou cliquez sur **Désolidariser** pour désolidariser la Live Copy de l’activité. Une fois la désolidarisation effectuée, le menu déroulant relatif à l’héritage disparaît. L’activité est maintenant une activité locale.
 
    ![Activité locale](/help/sites-cloud/authoring/assets/multisite-winter.png)
