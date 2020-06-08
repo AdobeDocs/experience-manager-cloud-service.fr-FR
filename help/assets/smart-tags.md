@@ -3,9 +3,9 @@ title: Balisez les images avec des services artificiellement intelligents.
 description: Balisez des images avec des services artificiellement intelligents qui appliquent des balises commerciales contextuelles et descriptives à l’aide des services Adobe Sensei.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
+source-git-commit: cc24b16cf17f146e773e7974c649adae1bd10ddf
 workflow-type: tm+mt
-source-wordcount: '2400'
+source-wordcount: '2401'
 ht-degree: 34%
 
 ---
@@ -99,7 +99,7 @@ Vous ne pouvez pas annuler la formation. Les directives ci-dessus doivent vous a
 Pour créer et former un modèle pour vos balises spécifiques à votre entreprise, procédez comme suit :
 
 1. Créez les balises nécessaires et la structure de balises appropriée. Téléchargez les images appropriées dans le référentiel DAM.
-1. Dans [!DNL Experience Manager] l’interface utilisateur, accédez à **[!UICONTROL Ressources]** > Modèle **** de formation.
+1. Dans [!DNL Experience Manager] l’interface utilisateur, accédez à **[!UICONTROL Ressources]** > Formation **[!UICONTROL aux balises]** dynamiques.
 1. Cliquez sur **[!UICONTROL Créer]**. Fournissez un **[!UICONTROL titre]**, **[!UICONTROL description]**.
 1. Recherchez et sélectionnez les balises existantes dans `cq:tags` lesquelles vous souhaitez former le modèle. Cliquez sur **[!UICONTROL Suivant]**.
 1. Dans la boîte de dialogue **[!UICONTROL Sélectionner les ressources]** , cliquez sur **[!UICONTROL Ajouter les ressources]** par rapport à chaque balise. Recherchez dans le référentiel DAM ou parcourez le référentiel pour sélectionner au moins 10 et au plus 50 images. Sélectionnez des fichiers et non le dossier. Une fois les images sélectionnées, cliquez sur **[!UICONTROL Sélectionner]**.
