@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
 workflow-type: tm+mt
 source-wordcount: '1285'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -157,7 +157,7 @@ Consultez [Accès à la Console](https://docs.adobe.com/content/help/en/experien
 
 Tout utilisateur disposant d’un profil de produit qui lui donne accès à AEM en tant que service Cloud doit pouvoir accéder à la Console **** développeur, ce qui lui permet de dé-hiberner l’environnement.
 
-Reportez-vous à la section [Ajouter les utilisateurs et les rôles](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) dans Cloud Manager au sujet de la configuration des autorisations d’utilisateur.
+Reportez-vous à la section [Ajouter les utilisateurs et les rôles](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) dans Cloud Manager au sujet de la configuration des autorisations d’utilisateur.
 
 #### Accès à un Environnement mis en veille prolongée {#accessing-hibernated-environment}
 
