@@ -1,8 +1,11 @@
 ---
 title: Utilisation des versions de page
 description: Création, comparaison et restauration des versions d’une page
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1091'
+ht-degree: 100%
 
 ---
 
@@ -131,7 +134,7 @@ Timewarp est un [mode](/help/sites-cloud/authoring/fundamentals/environment-tool
 
    ![Mode Timewarp](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 
-1. Dans la boîte de dialogue, définissez une date et une heure cibles ou appuyez sur **Définir la date**. Si aucune heure n’est définie, elle sera configurée sur l’heure actuelle par défaut.
+1. Dans la boîte de dialogue, définissez une date et une heure cibles, puis cliquez ou appuyez sur **Définir la date**. Si vous ne sélectionnez pas d’heure, l’heure actuelle est utilisée par défaut.
 
    ![Date cible du mode Timewarp](/help/sites-cloud/authoring/assets/versions-timewarp-target.png)
 
