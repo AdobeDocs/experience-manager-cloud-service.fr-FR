@@ -46,7 +46,7 @@ En tant qu&#39;utilisateur du rôle Administrateur système, vous disposez d&#39
 >[!NOTE]
 >Pour certaines organisations qui ont eu accès à AEM en tant que service Cloud avant janvier 2020, celles-ci seront transférées vers la console d’administration Adobe et le Profil Produit et Environnement devra être sélectionné.
 
-Pour plus d’informations, voir [Accès à une instance dans AEM en tant que service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) Cloud.
+Refer to [Accessing an Instance in AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) for more details.
 
 1. Accédez à la carte **Environnements** à partir de la page Aperçu **du** Programme et cliquez sur **Gérer l’accès**.
 
