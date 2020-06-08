@@ -10,7 +10,7 @@ content-type: reference
 translation-type: tm+mt
 source-git-commit: 08736e38f9dde46997484ccd4807de0ba2f67b2f
 workflow-type: tm+mt
-source-wordcount: '2107'
+source-wordcount: '2099'
 ht-degree: 13%
 
 ---
@@ -144,8 +144,7 @@ Voir aussi [Prévisualisation de fichiers à l’aide de l’interface](/help/as
 
    * Près de l’angle supérieur droit de la page, cliquez sur **[!UICONTROL Prévisualisation]** pour passer en mode **[!UICONTROL Prévisualisation]** .
    * Supprimez `/editor.html` de l’URL de la page dans le navigateur.
-
-Un fichier 3D entièrement interactif tel qu’il est affiché dans    ![Ressource 3D affichée dans le composant](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)Média 3D Ressource 3D entièrement interactive telle qu’elle s’affiche en mode **[!UICONTROL Prévisualisation]** .
+   ![Ressource 3D affichée dans le composant](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)Média 3D Ressource 3D entièrement interactive telle qu’elle s’affiche en mode **[!UICONTROL Prévisualisation]** .
 
 1. En mode **[!UICONTROL Prévisualisation]** , effectuez l’une des opérations suivantes :
 
@@ -275,7 +274,6 @@ Voir aussi [Publication de pages](/help/sites-cloud/authoring/fundamentals/publi
    * Le fichier 3D est un format pris en charge (GLB, OBJ, STL et USDZ).
    * Le fichier 3D a été assimilé au système IPS (Dynamic Media Image Production System).
    * Le fichier 3D est publié.
-
    ![3d-asset-url](/help/assets/dynamic-media/assets/3d-asset-urla.png)
 
 1. Appuyez sur **[!UICONTROL URL]** pour afficher l’URL de production du fichier 3D.
