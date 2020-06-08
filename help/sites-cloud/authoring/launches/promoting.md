@@ -1,8 +1,11 @@
 ---
 title: Conversion de lancements
 description: 'Vous devez convertir les pages de lancement pour redéplacer le contenu vers la source (production) avant de le publier. '
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '771'
+ht-degree: 100%
 
 ---
 
@@ -36,6 +39,7 @@ Vous devez convertir les pages de lancement pour redéplacer le contenu vers la 
 >
 >* [Conversion d’un lancement imbriqué](#promoting-a-nested-launch) lorsqu’il existe plusieurs lancements dans la structure.
 >* [Lancements - Ordre des événements](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) pour en savoir plus sur la conversion et la publication automatiques.
+
 >
 
 
@@ -59,6 +63,7 @@ Vous pouvez convertir des lancements à partir de la console de **sites** ou de 
       * **Promouvoir les pages modifiées**
       * **Convertir la page active**
       * **Convertir la page active et les sous-pages**
+
       Par exemple, lorsque vous sélectionnez l’option visant à convertir uniquement les pages modifiées :
 
       ![Convertir le lancement](/help/sites-cloud/authoring/assets/launches-promote.png)
@@ -100,6 +105,7 @@ Après avoir créé un lancement imbriqué, vous pouvez le convertir en pages so
       * **Promouvoir les pages modifiées**
       * **Convertir la page active**
       * **Convertir la page active et les sous-pages**
+
    ![Convertir les paramètres de lancement](/help/sites-cloud/authoring/assets/launches-promote-settings.png)
 
 1. Sélectionnez **Suivant**.
