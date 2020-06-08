@@ -2,8 +2,11 @@
 title: Profils de métadonnées
 description: Découvrez les profils de métadonnées pour les ressources. Apprenez à créer un profil de métadonnées et à l’appliquer aux ressources d’un dossier.
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '1246'
+ht-degree: 100%
 
 ---
 
@@ -76,7 +79,7 @@ Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un prof
 
 ### Application de profils de métadonnées à des dossiers spécifiques {#applying-metadata-profiles-to-specific-folders}
 
-Vous pouvez appliquer un profil de métadonnées à un dossier à partir du menu **[!UICONTROL Outils]** ou, si vous êtes dans le dossier, à partir de **[!UICONTROL Propriétés]**. Cette section explique comment appliquer des profils de métadonnées à des dossiers de deux manières différentes.
+Vous pouvez appliquer un profil de métadonnées à un dossier à partir du menu **[!UICONTROL Outils]** ou, si vous êtes dans le dossier, à partir de **[!UICONTROL Propriétés]**. Cette section décrit comment appliquer des profils de métadonnées aux dossiers des deux manières.
 
 Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
@@ -110,7 +113,7 @@ Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un prof
 
 Lorsque vous supprimez un profil de métadonnées d’un dossier, tout sous-dossier hérite automatiquement de la suppression du profil de son dossier parent. Cependant, le traitement des fichiers qui s’est produit dans les dossiers reste intact.
 
-Vous pouvez supprimer un profil de métadonnées d’un dossier à partir du menu **Outils** ou, si vous êtes dans le dossier, à partir de **Propriétés**. Cette section explique comment supprimer des profils de métadonnées des dossiers de deux manières différentes.
+Vous pouvez supprimer un profil de métadonnées d’un dossier à partir du menu **Outils** ou, si vous êtes dans le dossier, à partir de **Propriétés**. Cette section décrit comment supprimer des profils de métadonnées des dossiers des deux manières.
 
 ### Suppression de profils de métadonnées d’un dossier via l’interface utilisateur des profils   {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
