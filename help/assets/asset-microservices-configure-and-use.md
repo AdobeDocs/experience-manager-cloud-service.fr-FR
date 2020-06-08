@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
 workflow-type: tm+mt
 source-wordcount: '1870'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -27,14 +27,14 @@ Les microservices de ressources offrent un traitement évolutif et résilient de
 
 Le traitement des ressources dépend de la configuration définie dans les **[!UICONTROL Profils de traitement]**. Ceux-ci fournissent une configuration par défaut et permettent à l’administrateur d’ajouter une configuration plus précise pour le traitement des ressources. Les administrateurs peuvent créer et gérer les configurations des workflows de post-traitement, y compris la personnalisation facultative. La personnalisation des workflows autorise une extensibilité et une personnalisation complète.
 
-Les microservices de ressources vous permettent de traiter un [large éventail de types](/help/assets/file-format-support.md) de fichiers couvrant davantage de formats prêts à l’emploi que les versions précédentes d’Experience Manager. Par exemple, l’extraction de miniatures des formats PSD et PSB est désormais possible, car elle nécessitait auparavant des solutions tierces telles que ImageMagick.
+Les microservices de ressources vous permettent de traiter un [large éventail de types de fichiers](/help/assets/file-format-support.md), dans des formats prêts à l’emploi plus nombreux que les versions précédentes d’Experience Manager. Par exemple, l’extraction de miniatures des formats PSD et PSB est désormais possible, car elle nécessitait auparavant des solutions tierces telles qu’ImageMagick.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
-![vue de haut niveau du](assets/asset-microservices-flow.png "traitement des actifsvue de haut niveau du traitement des actifs")
+![Une vue de haut niveau du traitement des ressources](assets/asset-microservices-flow.png "Une vue de haut niveau du traitement des ressources")
 
 >[!NOTE]
 >
@@ -171,10 +171,10 @@ Ce service (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunne
 >[!NOTE]
 >
 >La configuration du service d’exécution de workflow personnalisé est la configuration d’un service OSGi. Pour en savoir plus sur le déploiement d’une configuration OSGi, voir [Déploiement sur Experience Manager](/help/implementing/deploying/overview.md).
-> Contrairement aux déploiements des Managed Services et On-Premise Services d’AEM, la console Web OSGi n’est pas directement disponible dans les déploiements de Cloud Service.
+> Contrairement aux déploiements des Managed Services et On-Premise Services d’AEM, la console web OSGi n’est pas directement disponible dans les déploiements Cloud Service.
 
 Pour plus d’informations sur les étapes de workflow standard pouvant être utilisées dans le workflow de post-traitement, voir [Étapes du workflow de post-traitement](developer-reference-material-apis.md#post-processing-workflows-steps) (en anglais) dans la documentation de référence du développeur.
 
-## Best practices and limitations {#best-practices-limitations-tips}
+## Bonnes pratiques et restrictions {#best-practices-limitations-tips}
 
-* Tenez compte de vos besoins pour tous les types de rendus lors de la conception de workflows. Si vous ne prévoyez pas la nécessité d’un rendu à l’avenir, supprimez l’étape de création du flux de travail. Les rendus ne peuvent pas être supprimés en bloc par la suite. Les rendus non désirés peuvent prendre beaucoup d’espace d’enregistrement après une utilisation prolongée de [!DNL Experience Manager]. Pour les fichiers individuels, vous pouvez supprimer des rendus manuellement de l’interface utilisateur. Pour plusieurs fichiers, vous pouvez soit personnaliser [!DNL Experience Manager] la suppression de rendus spécifiques, soit supprimer les fichiers et les télécharger à nouveau.
+* Pour la conception des workflows, prenez en compte vos besoins pour tous les types de rendus. Si vous ne prévoyez pas la nécessité d’un rendu futur, supprimez son étape de création dans le workflow. Il est impossible par la suite de supprimer les rendus en masse. Les rendus non souhaités peuvent occuper beaucoup d’espace de stockage suite à une utilisation prolongée d’[!DNL Experience Manager]. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Si plusieurs ressources sont concernées, vous pouvez, au choix, personnaliser [!DNL Experience Manager] pour supprimer des rendus spécifiques, ou supprimer les ressources et les charger à nouveau.
