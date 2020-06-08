@@ -1,13 +1,16 @@
 ---
-title: FAQ sur la fin de vie de la visionneuse DHTML
+title: FAQ sur la fin de prise en charge de la visionneuse DHTML
 description: À compter du 31 janvier 2014, la plate-forme de la visionneuse DHTML de Scene7 aura officiellement atteint sa fin de vie. Cette notification vous fournit les réponses aux questions fréquentes pour que vous puissiez vous préparer à cette transition vers la nouvelle plate-forme de notre visionneuse HTML5.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '1615'
+ht-degree: 100%
 
 ---
 
 
-# FAQ sur la fin de vie de la visionneuse DHTML{#dhtml-viewer-end-of-life-faqs}
+# FAQ sur la fin de prise en charge de la visionneuse DHTML{#dhtml-viewer-end-of-life-faqs}
 
 À compter du 31 janvier 2014, la plate-forme de la visionneuse DHTML de Scene7 aura officiellement atteint sa fin de vie. Cette notification vous fournit les réponses aux questions fréquentes pour que vous puissiez vous préparer à cette transition vers la nouvelle plate-forme de notre visionneuse HTML5.
 
@@ -120,4 +123,4 @@ Bien que vous puissiez encore rester en production avec les visionneuses DHTML, 
 
 **Qui dois-je contacter pour plus d’informations ?**
 
-Si cette FAQ n’a pas répondu à toutes vos questions, veuillez contacter le support ([s7support@adobe.com](mailto:s7support@adobe.com)) ou votre responsable de compte Adobe.
+Si cette FAQ ne répond pas à toutes vos questions, contactez l’assistance ([s7support@adobe.com](mailto:s7support@adobe.com)) ou votre gestionnaire de compte Adobe.
