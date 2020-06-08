@@ -2,8 +2,11 @@
 title: Application de workflows à des ressources
 description: Découvrez comment appliquer des workflows aux ressources, aux dossiers et aux collections dans Adobe Experience Manager Assets.
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
+workflow-type: tm+mt
+source-wordcount: '242'
+ht-degree: 100%
 
 ---
 
