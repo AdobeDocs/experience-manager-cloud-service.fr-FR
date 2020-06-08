@@ -1,8 +1,11 @@
 ---
 title: Vidéos interactives
 description: Découvrez comment utiliser des vidéos interactives et Shoppable dans Dynamic Media
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '6010'
+ht-degree: 100%
 
 ---
 
@@ -125,7 +128,7 @@ Lorsque la surveillance de réseau est activée dans le navigateur, déclenchez 
 
 Vous trouvez maintenant l’URL Ajax d’aperçu rapide dans le journal réseau. Copiez l’URL enregistrée pour l’analyse ultérieure. Dans la plupart des cas, lorsque vous déclenchez l’aperçu rapide, plusieurs requêtes sont envoyées au serveur. En règle générale, l’URL Ajax d’aperçu rapide est l’une des premières dans la liste. Elle possède une partie de chaîne de requête complexe ou un chemin d’accès, et son type de réponse MIME est `text/html`, `text/xml` ou `text/javascript`.
 
-Au cours de ce processus, il est important de parcourir différentes zones de votre site web, avec différentes catégories et types de produits. C’est pourquoi les URL d’aperçu rapide peuvent avoir des parties communes pour une catégorie de site web donnée, mais ne changent que si vous visitez une autre zone du site Web.
+Au cours de ce processus, il est important de parcourir différentes zones de votre site web, avec différentes catégories et types de produits. C’est pourquoi les URL d’aperçu rapide peuvent avoir des parties communes pour une catégorie de site web donnée, mais ne changent que si vous visitez une autre zone du site web.
 
 Dans le cas le plus simple, la seule partie variable dans l’URL de l’aperçu rapide est le SKU du produit. Dans ce cas, la valeur de SKU du produit est la seule donnée requise pour ajouter des vignettes sur un segment temporel dans la vidéo interactive dans AEM.
 
@@ -410,7 +413,7 @@ Pour ajouter de l’interactivité à votre vidéo :
       <td>Pour associer l’image miniature sélectionnée à un lien hypertexte</td> 
       <td><p>Sous Type d’action, appuyez sur <strong>Lien hypertexte</strong>, puis procédez de l’une des manières suivantes :</p> 
        <ul> 
-       <li>Si vous êtes client AEM Sites, appuyez sur l’icône Sélecteur de site (dossier) pour accéder à une page web. Notez que la méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages AEM Sites.</li> 
+       <li>Si vous êtes client AEM Sites, appuyez sur l’icône Sélecteur de site (dossier) pour accéder à une page web. Notez que la méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages AEM Sites.</li> 
        <li>Si vous êtes un client Dynamic Media autonome, dans le champ de texte HREF, spécifiez le chemin URL complet vers une page web liée.</li> 
        </ul> <p>Veillez à spécifier si vous souhaitez ouvrir le lien dans un nouvel onglet du navigateur ou sur l’onglet actif.</p> </td> 
       </tr> 
@@ -418,7 +421,7 @@ Pour ajouter de l’interactivité à votre vidéo :
       <td>Pour associer l’image miniature sélectionnée à un fragment d’expérience</td> 
       <td><p>Sous Type d’action, appuyez sur <strong>Fragment d’expérience</strong>, puis effectuez les actions suivantes :<p> 
        <ul> 
-       <li>Si vous êtes un client AEM Sites, appuyez ou cliquez sur l’icône Rechercher (loupe) afin d’ouvrir la page Fragment d’expérience. Appuyez ou cliquez sur le fragment d’expérience à utiliser, puis appuyez sur <strong>Sélectionner</strong> dans le coin supérieur droit de la page pour revenir au panneau Actions de la page précédente.<br />Voir <a href="/help/sites-cloud/authoring/fundamentals/experience-fragments.md">Fragments d’expérience</a>.</li> 
+       <li>Si vous êtes client AEM Sites, appuyez ou cliquez sur l’icône Rechercher (loupe) afin d’ouvrir la page Fragment d’expérience. Appuyez ou cliquez sur le fragment d’expérience à utiliser, puis appuyez sur <strong>Sélectionner</strong> dans le coin supérieur droit de la page pour revenir au panneau Actions de la page précédente.<br /> Voir <a href="/help/sites-cloud/authoring/fundamentals/experience-fragments.md">Fragments d’expérience</a>.</li> 
       </ul> 
        <ul> 
        <li>Indiquez la largeur et la hauteur du fragment d’expérience tel qu’il apparaît dans la vidéo.</li>
@@ -749,7 +752,7 @@ Le dernier site web de démonstration avec la vidéo interactive totalement int�
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)
 
-## Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées  {#using-quickviews-to-create-custom-pop-ups}
+## Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées {#using-quickviews-to-create-custom-pop-ups}
 
 Voir [Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées](/help/assets/dynamic-media/custom-pop-ups.md).
 -->
