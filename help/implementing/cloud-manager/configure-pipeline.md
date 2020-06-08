@@ -1,8 +1,11 @@
 ---
 title: Configuration du pipeline CI/CD - Cloud Services
 description: Configuration du pipeline CI/CD - Cloud Services
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
+workflow-type: tm+mt
+source-wordcount: '577'
+ht-degree: 100%
 
 ---
 
@@ -56,6 +59,7 @@ Pour configurer le comportement et les préférences de votre pipeline, procéde
 
    * **Manuel** : l’utilisation de l’interface lance le pipeline manuellement.
    * **Lors des modifications Git** : démarre le pipeline CI/CD chaque fois que des validations sont ajoutées à la branche git configurée. Même si vous sélectionnez cette option, vous pouvez toujours démarrer le pipeline manuellement.
+
    Lors de la configuration ou de la modification du pipeline, le responsable de déploiement peut définir le comportement du pipeline en cas d’échec important à l’un des points de contrôle qualité.
 
    Cela s’avère utile pour les clients qui souhaitent davantage de processus automatisés. Les options disponibles sont les suivantes :
