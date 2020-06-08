@@ -1,8 +1,11 @@
 ---
 title: Vidéo 360/VR
 description: Découvrez comment utiliser les vidéos à 360° et de réalité virtuelle (VR) dans Dynamic Media.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '961'
+ht-degree: 100%
 
 ---
 
@@ -60,6 +63,7 @@ Les ressources vidéo 360 qui sont chargées dans AEM sont considérées comme 
       * Largeur=auto ; hauteur=1080 ; bitrate=5000 Kbit/s
       * Largeur=auto ; hauteur=1440 ; bitrate=6600 Kbit/s
    * Traitez le contenu vidéo 360 dans un dossier destiné exclusivement aux ressources vidéo 360.
+
    N’oubliez pas que cette approche augmente les demandes sur le réseau et le processeur de l’utilisateur final.
 
 1. [Téléchargez votre vidéo dans le dossier](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
@@ -113,6 +117,7 @@ Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages.](/help
 
    * Faites glisser le pointeur de la souris sur la vidéo pour modifier l’angle de vue de la scène statique.
    * Appuyez sur le bouton **[!UICONTROL Lecture]** de la vidéo pour commencer la lecture ; pendant la lecture de la vidéo, faites glisser le pointeur de la souris sur la vidéo pour modifier l’angle de vue.
+
    ![6_5_360video-preview-video360-social](assets/6_5_360video-preview-video360-social.png)*Capture d’écran d’une vidéo 360.*
 
    * Dans la liste des visionneuses, appuyez sur **[!UICONTROL Video360VR]**.
