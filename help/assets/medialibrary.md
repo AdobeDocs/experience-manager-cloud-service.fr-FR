@@ -1,9 +1,12 @@
 ---
 title: Différence entre AEM Assets et AEM Media Library
-description: Forum aux questions concernant AEM Assets et AEM Media Library, y compris les différences entre les deux.
+description: Questions fréquentes concernant AEM Assets et AEM Media Library, y compris les différences entre les deux.
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+workflow-type: tm+mt
+source-wordcount: '699'
+ht-degree: 100%
 
 ---
 
