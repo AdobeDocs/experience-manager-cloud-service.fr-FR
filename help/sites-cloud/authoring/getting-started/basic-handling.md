@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
 workflow-type: tm+mt
 source-wordcount: '2864'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Une fois connecté, vous accédez au [panneau de navigation](#navigation-panel).
 
 La console **Sites** est utilisée dans ce document pour garantir une bonne compréhension de l’utilisation de base d’AEM. Cliquez ou appuyez sur **Sites** pour commencer.
 
-## Navigation dans le produit    {#product-navigation}
+## Navigation dans le produit  {#product-navigation}
 
 La première fois que vous accédez à une console, un didacticiel de navigation du produit démarre. Prenez quelques instants pour cliquer ou appuyer sur divers éléments afin de vous familiariser avec le fonctionnement de base d’AEM.
 
@@ -52,12 +52,12 @@ Vous pouvez fermer le panneau de navigation globale en cliquant ou en appuyant s
 
 La navigation globale se compose de deux panneaux, représentés par des icônes dans la marge gauche de l’écran :
 
-* **[Navigation](#navigation-panel)** : représenté par une boussole    et le panneau par défaut lorsque vous vous connectez à AEM
+* **[Navigation](#navigation-panel)** : représenté par une boussole  et le panneau par défaut lorsque vous vous connectez à AEM
 * **[Outils](#tools-panel)** : représenté par un marteau
 
 Les options disponibles dans ces panneaux sont décrites ci-dessous.
 
-### Panneau de navigation    {#navigation-panel}
+### Panneau de navigation  {#navigation-panel}
 
 Panneau de navigation :
 
@@ -157,9 +157,9 @@ L’en-tête est toujours affiché en haut de l’écran. La plupart des options
 
 * Navigation au clavier
 
-   Vous pouvez naviguer sur un site Web à l’aide du clavier uniquement. Cela utilise la fonctionnalité de navigateur standard de la touche **TAB** (ou **OPT+TAB**) pour vous déplacer entre les éléments de la page pouvant être activés.
+   Vous pouvez naviguer sur un site web en utilisant exclusivement le clavier. Ce processus s’appuie sur la fonctionnalité de la touche **TAB** (tabulation) dans un navigateur standard (ou **OPT+TAB**) pour vous déplacer entre les éléments de la page pouvant recevoir le focus.
 
-   Dans la console **Sites** , vous pouvez ajouter l’option **Passer au contenu** principal. Cela devient visible lorsque vous passez d’une option d’en-tête à une autre et accélère votre navigation en vous permettant d’ignorer les éléments standard de la barre d’outils (produit) et de vous diriger directement vers le contenu principal.
+   Dans la console **Sites**, vous pouvez ajouter l’option **Passer au contenu principal**. Cette option apparaît lorsque vous passez d’une option d’en-tête à une autre. Elle permet d’accélérer la navigation en ignorant les éléments standard de la barre d’outils (produit) et en accédant directement au contenu principal.
 
    ![Passer au contenu principal](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
 
@@ -195,6 +195,7 @@ Plusieurs ressources d’aide sont disponibles :
 
    * **Documentation** : affichez la documentation de Web Experience Management.
    * **Ressources pour les développeurs** : ressources et téléchargements pour les développeurs.
+
    >[!NOTE]
    >
    >Vous pouvez accéder à un aperçu des raccourcis clavier disponibles à tout moment à l’aide de la touche `?` (point d’interrogation) lorsque vous vous trouvez dans une console.
@@ -225,7 +226,7 @@ En raison des restrictions d’espace dans certaines fenêtres, la barre d’out
 >
 >Les icônes individuelles disponibles sont documentées par rapport à la console, à la fonction ou au scénario approprié.
 
-## Actions rapides    {#quick-actions}
+## Actions rapides  {#quick-actions}
 
 Dans le [mode Carte](#card-view), certaines actions, en plus d’être disponibles dans la barre d’outils, le sont également sous la forme d’icônes d’actions rapides. Les icônes d’actions rapides sont disponibles pour un seul élément à la fois et évitent d’avoir à présélectionner l’action.
 
@@ -247,7 +248,7 @@ Vous pouvez afficher, parcourir et sélectionner (pour effectuer d’autres opé
 >
 >Par défaut, AEM Assets n’affiche pas les rendus d’origine des ressources dans l’interface utilisateur sous la forme de miniatures, et ce, quel que soit le mode. Si vous êtes administrateur, vous pouvez utiliser des incrustations pour configurer AEM Assets afin d’afficher les rendus d’origine sous la forme de miniatures.
 
-### Sélection de ressources    {#selecting-resources}
+### Sélection de ressources  {#selecting-resources}
 
 La sélection d’une ressource en particulier dépend de la combinaison du mode et de l’appareil :
 
@@ -309,6 +310,7 @@ La sélection d’une ressource dans la colonne de gauche affiche les ressources
    * Une fois la ressource sélectionnée, une coche s’affiche au-dessus de la miniature et le nom de la ressource est également mis en surbrillance.
    * Les détails de la ressource sélectionnée sont affichés dans la dernière colonne.
    * La barre d’outils Action est alors activée.
+
    Lorsqu’une page est sélectionnée en mode Colonne, elle est affichée dans la dernière colonne avec les informations suivantes :
 
    * Titre de la page
