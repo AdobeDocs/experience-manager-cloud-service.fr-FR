@@ -1,8 +1,11 @@
 ---
 title: Utilisation des workflows de projet
 description: Plusieurs workflows de projet sont directement disponibles.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '546'
+ht-degree: 100%
 
 ---
 
