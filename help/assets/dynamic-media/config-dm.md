@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: bc0852120580065a93923e7fe730485012afba6e
 workflow-type: tm+mt
 source-wordcount: '5123'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -84,6 +84,7 @@ Pour marquer un dossier sélectionné pour synchronisation avec Dynamic Media, 
          * **[!UICONTROL Hérité]** : aucune valeur de synchronisation explicite sur le dossier ; au lieu de cela, le dossier hérite de la valeur de synchronisation de l’un de ses dossiers ancêtres ou du mode par défaut dans la configuration du cloud. Le statut détaillé de l’héritage s’affiche par le biais d’une info-bulle.
          * **[!UICONTROL Activé pour les sous-dossiers]** : incluez tous les éléments de cette sous-arborescence dans la synchronisation avec Dynamic Media. Les paramètres propres au dossier remplacent le mode par défaut dans la configuration du cloud.
          * **[!UICONTROL Désactivé pour les sous-dossiers]** : excluez tous les éléments de cette sous-arborescence de la synchronisation avec Dynamic Media.
+
    >[!NOTE]
    >
    >Le contrôle de version n’est pas pris en charge dans Dynamic Media. En outre, l’activation différée ne s’applique que si l’option **[!UICONTROL Publier des ressources]** dans la page de configuration de Dynamic Media est définie sur **[!UICONTROL Dès l’activation]**, puis uniquement jusqu’à la première activation de la ressource.
@@ -136,7 +137,7 @@ Les tâches d’installation et de configuration incluent :
 * [Ajout de types MIME personnalisés pour les formats non pris en charge](#adding-custom-mime-types-for-unsupported-formats)
 * [Création de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360°](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
-#### Configuration de la publication pour Image Server  {#publishing-setup-for-image-server}
+#### Configuration de la publication pour Image Server   {#publishing-setup-for-image-server}
 
 Les paramètres de configuration de la publication déterminent comment les ressources sont diffusées par défaut à partir de Dynamic Media. Si aucun paramètre n’est spécifié, Dynamic Media diffuse une ressource selon les paramètres par défaut définis dans Configuration de la publication. Par exemple, une requête de diffusion d’image qui ne comporte pas d’attribut de résolution produit une image avec le paramètre de résolution d’objet par défaut.
 
@@ -455,22 +456,22 @@ Lorsque la visionneuse à 360° est téléchargée et publiée, vous activez le 
 1. Dans le panneau Détails, cliquez sur **[!UICONTROL Enregistrer]**.
 1. Cliquez sur **[!UICONTROL Actif]** en regard du nom du nouveau paramètre prédéfini.
 
-   L’activation du paramètre prédéfini garantit que, lorsque vous chargez des ressources vers Dynamic Media, le paramètre prédéfini d’ensemble par lot est appliqué pour générer la visionneuse.
+   L’activation du paramètre prédéfini garantit que, lorsque vous cha z des ressources vers Dynamic Media, le paramètre prédéfini d’ensemble par lot est appliqué pour générer la visionneuse.
 
 ### (Facultatif) Optimisation des performances de Dynamic Media{#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
 Pour garantir la bonne exécution de Dynamic Media <!--(with `dynamicmedia_scene7` run mode)-->, Adobe recommande les actions suivantes permettant d’optimiser les performances/l’évolutivité de la synchronisation :
 
 * Mise à jour des paramètres de tâche prédéfinis pour le traitement de différents formats de fichier.
-* Mise à jour des threads de travail de file d’attente du processus Granite prédéfini (ressources vidéo).
-* Mise à jour des threads de travail en file d’attente du flux de travail transitoire Granite prédéfini (images et ressources non vidéo).
-* Mise à jour du nombre maximal de connexions de téléchargement vers le serveur Dynamic Media Classic.
+* Mise à jour des threads de traitement de file d’attente de workflows Granite prédéfinis (ressources vidéo).
+* Mise à jour des threads de traitement de file d’attente de workflows Granite prédéfinis (images et ressources non vidéo).
+* Mise à jour du nombre maximal de connexions de chargement au serveur Dynamic Media Classic.
 
 #### Mise à jour des paramètres de tâche prédéfinis pour le traitement de différents formats de fichier
 
-Vous pouvez régler les paramètres de tâche pour accélérer le traitement des fichiers lors du téléchargement. Par exemple, si vous téléchargez des fichiers PSD mais que vous ne souhaitez pas les traiter en tant que modèles, vous pouvez définir l’extraction du calque sur false (désactivé). Dans ce cas, le paramètre de tâche affiné apparaîtra comme `process=None&createTemplate=false`.
+Vous pouvez régler les paramètres de tâche pour accélérer le traitement des fichiers lors du téléchargement. Par exemple, si vous téléchargez des fichiers PSD mais que vous ne souhaitez pas les traiter en tant que modèles, vous pouvez définir l’extraction du calque sur false (désactivé). Dans ce cas, le paramètre de tâche affiné apparaîtra sous la forme `process=None&createTemplate=false`.
 
-Adobe recommande d’utiliser les paramètres de tâche &quot;affinés&quot; suivants pour les fichiers PDF, Postscript et PSD :
+Adobe recommande d’utiliser les paramètres de tâche « affiné » suivants pour les fichiers PDF, Postscript et PSD :
 
 | Type de fichier | Paramètres de tâche recommandés |
 | ---| ---|
@@ -478,7 +479,7 @@ Adobe recommande d’utiliser les paramètres de tâche &quot;affinés&quot; sui
 | Postscript | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
 | PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
-Pour mettre à jour l’un de ces paramètres, suivez les étapes de la section [Activation de la prise en charge](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)des paramètres de tâche de téléchargement des fichiers/fichiers dynamiques de type MIME Classic.
+Pour mettre à jour l’un de ces paramètres, procédez comme indiqué dans la section [Activation de la prise en charge du paramètre de tâche de téléchargement Assets/Dynamic Media Classic basé sur le type MIME](#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
 
 #### Mise à jour de la file d’attente de workflows transitoires Granite {#updating-the-granite-transient-workflow-queue}
 
