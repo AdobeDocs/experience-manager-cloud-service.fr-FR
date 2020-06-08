@@ -1,8 +1,11 @@
 ---
 title: Gestion des audiences
 description: La console Audiences vous permet de créer, d’organiser et de gérer les audiences associées à votre compte Adobe Target ou de gérer des segments pour ContextHub.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '976'
+ht-degree: 100%
 
 ---
 
@@ -68,7 +71,7 @@ Pour créer une audience Adobe Target :
 
 1. Dans la boîte de dialogue **Configuration d’Adobe Target**, choisissez la configuration cible et cliquez ou appuyez sur **OK**.
 1. Dans la zone Règle nº 1, cliquez ou appuyez sur le type d’attribut et entrez les informations d’attribut dans les champs disponibles. Lorsque vous avez terminé, cochez la case située à droite de l’attribut pour l’enregistrer. Voir [Attributs et leurs options](#attributes-and-their-options) pour plus d’informations sur tous les attributs.
-1. Cliquez sur **Ajouter une règle** pour ajouter une autre règle. Entrez autant de règles que vous le souhaitez. Les règles sont combinées avec l’opérateur booléen ET, ce qui signifie que l’audience doit répondre à tous les critères de chaque règle pour être candidate à une activité.
+1. Cliquez sur **Ajouter une règle** pour ajouter une autre règle. Entrez autant de règles que nécessaire. Les règles sont combinées avec l’opérateur booléen ET, ce qui signifie que l’audience doit répondre à toutes les exigences de chaque règle pour être éligible à une activité.
 1. Cliquez ou appuyez sur **Suivant**.
 1. Saisissez le nom de l’audience et cliquez ou appuyez sur le bouton **Enregistrer**.
 1. Cliquez ou appuyez sur **Enregistrer**. Votre audience est répertoriée dans la liste des audiences.
