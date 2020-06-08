@@ -1,8 +1,11 @@
 ---
-title: Création de contenu ciblé en mode Ciblage
+title: 'Création de contenu ciblé en mode Ciblage   '
 description: Le mode Ciblage et le composant cible fournissent des outils permettant de créer du contenu pour les expériences.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '5351'
+ht-degree: 100%
 
 ---
 
@@ -137,7 +140,7 @@ Après avoir [commencé la procédure de ciblage](#the-targeting-process-create-
 >
 >Une offre est le contenu d’un composant ciblé.
 
-Les expériences sont affichées dans le volet Audiences. Dans l’exemple ci-dessous, les expériences sont **Par défaut**, **Femme**, **Femme âgée de plus de 30 ans** et **Femme âgée de moins de 30 ans**. Cet exemple affiche l’offre Par défaut d’un composant **Image** ciblé.
+Les expériences s’affichent dans le volet Audiences. Dans l’exemple ci-dessous, les expériences sont **Par défaut**, **Femme**, **Femme âgée de plus de 30 ans** et **Femme âgée de moins de 30 ans**. Cet exemple affiche l’offre Par défaut d’un composant **Image** ciblé.
 
 ![Composant d’image ciblé](/help/sites-cloud/authoring/assets/targeted-image-component.png)
 
@@ -145,7 +148,7 @@ Lorsqu’une autre expérience est sélectionnée, le composant Image affiche l�
 
 ![Composant d’image ciblé modifié](/help/sites-cloud/authoring/assets/targeted-image-different.png)
 
-Lorsqu’une expérience est sélectionnée et que le composant ciblé ne comporte pas d’offre pour cette expérience, le composant affiche la mention **Ajouter une offre** superposée sur l’offre Par défaut en semi-transparence. Lorsqu’aucune offre n’a été créée pour une expérience, l’offre **Par défaut** s’affiche pour le segment mappé sur l’expérience.
+Lorsqu’une expérience est sélectionnée et que le composant ciblé n’inclut pas d’offre pour cette expérience, le composant affiche l’option **Ajouter une offre** superposée à l’offre par défaut semi-transparente. Lorsqu’aucune offre n’a été créée pour une expérience, l’offre **Par défaut** s’affiche pour le segment mappé à l’expérience.
 
 ![Ajouter une offre](/help/sites-cloud/authoring/assets/targeted-add-offer.png)
 
@@ -467,7 +470,7 @@ Pour configurer les paramètres si vous utilisez le ciblage d’AEM :
 1. Pour indiquer le moment où l’activité commence, utilisez le menu déroulant **Démarrer** pour sélectionner l’une des valeurs suivantes :
 
    * **Après activation** : l’activité commence lorsque la page contenant le contenu ciblé est activée.
-   * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, appuyez ou cliquez sur l’icône de calendrier, sélectionnez une date, puis spécifiez l’heure de début de l’activité.
+   * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, cliquez ou appuyez sur l’icône du calendrier, sélectionnez une date et indiquez l’heure de début de l’activité.
 
 1. Pour spécifier le moment où l’activité se termine, utilisez le menu déroulant **Fin** pour sélectionner l’une des valeurs suivantes :
 
@@ -483,7 +486,7 @@ Pour configurer les objectifs et les paramètres si vous utilisez Adobe Target 
 1. Pour indiquer le moment où l’activité commence, utilisez le menu déroulant **Démarrer** pour sélectionner l’une des valeurs suivantes :
 
    * **Après activation** : l’activité commence lorsque la page contenant le contenu ciblé est activée.
-   * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, appuyez ou cliquez sur l’icône de calendrier, sélectionnez une date, puis spécifiez l’heure de début de l’activité.
+   * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, cliquez ou appuyez sur l’icône du calendrier, sélectionnez une date et indiquez l’heure de début de l’activité.
 
 1. Pour spécifier le moment où l’activité se termine, utilisez le menu déroulant **Fin** pour sélectionner l’une des valeurs suivantes :
 
@@ -491,13 +494,13 @@ Pour configurer les objectifs et les paramètres si vous utilisez Adobe Target 
    * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, appuyez ou cliquez sur l’icône de calendrier, sélectionnez une date, puis spécifiez l’heure de fin de l’activité.
 
 1. Pour spécifier la priorité de l’activité, utilisez le curseur pour choisir **Faible**, **Normale** ou **Élevée**.
-1. Si vous avez configuré Adobe Analytics avec votre compte Adobe Target, le menu déroulant de la **source de création de rapports** s’affiche. Sélectionnez **Adobe Target** ou **Adobe Analytics** comme source.
+1. Si vous avez configuré Adobe Analytics avec votre compte Adobe Target, le menu déroulant de la **source de création de rapports** s’affiche. Sélectionnez **Adobe Target** ou **Adobe Analytics** en tant que source.
 
    Si vous avez sélectionné **Adobe Analytics**, sélectionnez la société et une suite de rapports. Si vous sélectionnez **Adobe Target**, aucune action n’est nécessaire.
 
    ![Source de création de rapports](/help/sites-cloud/authoring/assets/targeted-reporting-source.png)
 
-1. Dans la zone **Mesure de l’objectif**, sous **Mon principal objectif**, sélectionnez la mesure de réussite que vous souhaitez suivre (Conversion, Revenu, Engagement) et indiquez comment cette mesure est mesurée (ou l’action effectuée par l’audience pour indiquer qu’un objectif a été atteint). Reportez-vous à la définition des mesures d’objectif dans le tableau précédent et reportez-vous à la section relative aux mesures de réussite de la [Documentation d’Adobe Target](https://marketing.adobe.com/resources/help/fr_FR/target/target/r_success_metrics.html).
+1. Dans la zone **Mesure d’objectif**, sous **Mon objectif principal**, sélectionnez la mesure de succès dont vous souhaitez effectuer le suivi (Conversion, Chiffre d’affaires, Engagement) et saisissez la manière dont cette mesure est évaluée (ou l’action entreprise par l’audience pour indiquer qu’un objectif a été atteint). Consultez la définition des mesures d’objectif dans le tableau précédent et la [documentation d’Adobe Target](https://marketing.adobe.com/resources/help/fr_FR/target/target/r_success_metrics.html) sur les mesures de succès.
 
    Vous pouvez renommer l’objectif en cliquant sur le bouton de sélection dans le coin supérieur droit et en sélectionnant **Renommer**.
 
