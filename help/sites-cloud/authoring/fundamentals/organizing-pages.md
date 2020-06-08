@@ -1,9 +1,9 @@
 ---
 title: Création et organisation des pages
 description: Comment créer et organiser des pages avec AEM
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2357'
 ht-degree: 100%
 
@@ -189,6 +189,7 @@ Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du conten
    * Sélectionnez le modèle à utiliser pour créer la page, puis cliquez ou appuyez sur **Suivant** pour poursuivre.
 
    * Cliquez/appuyez sur **Annuler** pour interrompre le processus.
+
    ![Sélection d’un modèle pour une nouvelle page](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 
 1. À l’étape finale de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
@@ -196,6 +197,7 @@ Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du conten
    * Utilisez les trois onglets pour accéder aux [propriétés de la page](/help/sites-cloud/authoring/fundamentals/page-properties.md) à attribuer à la nouvelle page, puis cliquez ou appuyez sur **Créer** pour réellement créer la page.
 
    * Cliquez ou appuyez sur **Précédent** pour revenir au choix du modèle.
+
    Les champs clés sont les suivants :
 
    * **Titre** :
@@ -206,6 +208,7 @@ Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du conten
       * Il est utilisé pour générer l’URI. Si le nom n’est pas spécifié, il est dérivé du titre.
       * Si vous indiquez un **nom** de page lors de la création d’une page, AEM valide le nom en fonction des conventions imposées par AEM et JCR. <!--If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
       * Vous **ne pouvez pas utiliser de caractères non valides** dans le champ **Nom**. Lorsque AEM détecte des caractères non valides, le champ est mis en surbrillance et un message d’explication s’affiche et indique les caractères à supprimer/remplacer.
+
    >[!TIP]
    >
    >Voir [Conventions de dénomination des pages](#page-naming-conventions).
@@ -240,6 +243,7 @@ Après avoir créé une page ou accédé à une page existante (dans la console)
 
    * [Actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * le [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) et la barre d’outils
+
    Sélectionnez ensuite l’icône **Modifier** :
 
    ![Bouton Modifier](/help/sites-cloud/authoring/assets/edit.png)
@@ -259,6 +263,7 @@ Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplace
 
    * [Actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * le [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) et la barre d’outils
+
    Sélectionnez ensuite l’icône de page **Copier** :
 
    ![Copier](/help/sites-cloud/authoring/assets/copy.png)
@@ -276,6 +281,7 @@ Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplace
 
    1. Sélectionner l’icône de page **Coller** : une copie de la page d’origine et de toutes les pages enfants sera créée à cet emplacement.
    1. Sélectionner la flèche déroulante pour afficher l’option **Coller sans enfants**. Une copie de la page d’origine sera créée à cet emplacement ; les pages enfants ne seront pas copiées.
+
    >[!NOTE]
    >
    >Si vous copiez la page à un emplacement où il existe une page du même nom que l’original, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `beach` existe déjà, une nouvelle page portant le nom `beach` deviendra `beach1`.
@@ -295,6 +301,7 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
 
    * [Actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * le [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) et la barre d’outils
+
    Sélectionnez ensuite l’icône de page **Déplacer** :
 
    ![Bouton Déplacer](/help/sites-cloud/authoring/assets/move.png)
@@ -305,6 +312,7 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
 
    * Spécifiez le nom à attribuer à la page après son déplacement et cliquez/appuyez sur **Suivant** pour poursuivre.
    * Cliquez/appuyez sur **Annuler** pour interrompre le processus.
+
    ![Déplacer et renommer la page](/help/sites-cloud/authoring/assets/move-page-rename.png)
 
    Le nom de la page peut être conservé si vous déplacez uniquement la page.
@@ -320,6 +328,7 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
       * Sélectionnez la destination en cliquant sur sa miniature.
       * Cliquez sur **Suivant** pour continuer.
    * Utilisez la commande **Précédent** pour revenir à l’étape de spécification du nom de la page.
+
    >[!NOTE]
    >
    >Par défaut, le parent de la page que vous déplacez/renommez est sélectionné comme destination.
