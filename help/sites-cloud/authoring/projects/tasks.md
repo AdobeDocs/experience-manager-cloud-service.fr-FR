@@ -1,8 +1,11 @@
 ---
 title: Utilisation de tâches
 description: Les tâches représentent les éléments de travail à effectuer sur le contenu. Elles sont utilisées dans les projets pour déterminer le niveau de réalisation des tâches en cours
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '580'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +22,7 @@ Vous pouvez surveiller l’état d’avancement de votre projet en examinant les
 
 * **Mosaïque Tâches :** un état d’avancement global du projet est présenté dans la mosaïque Tâches disponible sur la page des détails du projet.
 
-* **Liste Tâches :** lorsque vous cliquez sur la mosaïque Tâches, la liste des tâches s’affiche. Cette liste comporte des informations détaillées sur toutes les tâches liées au projet.
+* **Liste Tâches :** lorsque vous cliquez sur la mosaïque Tâches, la liste des tâches s’affiche. Cette liste contient des informations détaillées sur toutes les tâches liées au projet.
 
 Ces deux éléments répertorient les tâches de worfklow, ainsi que les tâches que vous créez directement dans la mosaïque **Tâches**.
 
@@ -61,7 +64,7 @@ Vous pouvez ajouter de nouvelles tâches aux projets. Ces tâches apparaissent a
 
 Pour ajouter une tâche :
 
-1. Dans le projet, dans la mosaïque **Tâches**, cliquez/appuyez sur l’icône +. La fenêtre **Ajouter une tâche** s’affiche.
+1. Dans le projet, accédez à la mosaïque **Tâches** et appuyez/cliquez sur l’icône +. La fenêtre **Ajouter une tâche** s’affiche.
 1. Entrez les informations relatives à la tâche. Le titre de la tâche et le groupe auquel elle est affectée sont obligatoires. Les informations complémentaires (par exemple, le chemin d’accès au contenu, la description, la priorité de la tâche et la date d’échéance) sont facultatives. En outre, vous pouvez utiliser l’onglet **Avancé** pour saisir le nom de la tâche, qui est utilisé pour nommer l’URL.
 
    ![Ajouter une tâche](/help/sites-cloud/authoring/assets/projects-add-task.png)
