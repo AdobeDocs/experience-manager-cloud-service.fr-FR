@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
 workflow-type: tm+mt
 source-wordcount: '770'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -31,7 +31,7 @@ Vous trouverez ci-dessous une matrice de décision pour comparer les deux option
 | **Conditions préalables** | Aucune | Réseau de diffusion de contenu existant onéreux à remplacer. Doit démontrer un test de charge réussi avant sa mise en opération. |
 | **Expertise dans le réseau de diffusion de contenu** | Aucune | Nécessite au moins un ingénieur à temps partiel ayant des connaissances approfondies du réseau de diffusion de contenu et capable de configurer le réseau de diffusion de contenu du client. |
 | **Sécurité** | Géré par Adobe. | Géré par Adobe (et éventuellement par le client sur son propre réseau de diffusion de contenu). |
-| **Performances** | Optimisé par Adobe. | Bénéficiera de certaines fonctionnalités du réseau de diffusion de contenu AEM, mais potentiellement un faible gain en performances en raison du saut supplémentaire. **Remarque**: Des houblons du CDN du client à l&#39;Adobe sortis de la boîte (CDN susceptible d&#39;être efficace). |
+| **Performances** | Optimisé par Adobe. | Bénéficiera de certaines fonctionnalités du réseau de diffusion de contenu AEM, mais potentiellement un faible gain en performances en raison du saut supplémentaire. **Remarque** : les sauts entre le réseau de diffusion de contenu client et le réseau de diffusion de contenu prêt à l’emploi d’Adobe peuvent être efficaces. |
 | **Mise en cache** | Prend en charge les en-têtes de cache appliqués au Dispatcher. | Prend en charge les en-têtes de cache appliqués au Dispatcher. |
 | **Fonctionnalités de compression d’images et de vidéos** | Peut fonctionner avec Adobe Dynamic Media. | Peut fonctionner avec Adobe Dynamic Media ou avec la solution d’image/vidéo du réseau de diffusion de contenu géré par le client. |
 
