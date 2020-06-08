@@ -1,8 +1,11 @@
 ---
 title: Implémentation d’Adobe Experience Manager as a Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation sur l’implémentation d’Adobe Experience Manager as a Cloud Service
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 1ca6ab990e403e069d52c6a70d95a5ae31449463
+workflow-type: tm+mt
+source-wordcount: '369'
+ht-degree: 100%
 
 ---
 
