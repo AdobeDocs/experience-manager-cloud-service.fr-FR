@@ -1,8 +1,11 @@
 ---
 title: Implémentation d’un connecteur AEM
 description: Implémentation d’un connecteur AEM
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 629de3a9f55d2e4c52ef91c9e0bb5d439aebe84f
+workflow-type: tm+mt
+source-wordcount: '964'
+ht-degree: 100%
 
 ---
 
