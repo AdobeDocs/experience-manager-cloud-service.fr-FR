@@ -3,11 +3,14 @@ title: Projet d’application AEM - Service Cloud
 description: Projet d’application AEM - Service Cloud
 translation-type: tm+mt
 source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+workflow-type: tm+mt
+source-wordcount: '1184'
+ht-degree: 92%
 
 ---
 
 
-# Creating an AEM Application Project {#aem-application-project}
+# Création d’un projet d’application AEM {#aem-application-project}
 
 ## Utilisation de l’assistant pour créer un projet d’application AEM {#using-wizard-to-create-an-aem-application-project}
 
@@ -20,18 +23,18 @@ Suivez les étapes ci-dessous pour créer un projet d’application AEM dans Clo
 
    ![](assets/create-wizard1.png)
 
-1. Cliquez sur **Créer** pour accéder à l’écran **Créer une branche et un projet** .
+1. Cliquez sur **Créer** pour accéder à l’écran **Créer une branche et un projet**.
 
    ![](assets/create-wizard2.png)
 
-1. La mosaïque Création de **projet en cours** s’affiche dans l’écran Présentation *du* programme.
+1. La mosaïque Création de **projet en cours** s’affiche dans l’écran Présentation *du* Programme.
 
    ![](assets/create-wizard3.png)
 
-1. Une fois la création du programme terminée, le volet **Ajouter un environnement** apparaît sur la page Aperçu *du* programme.
+1. Une fois la création du programme terminée, la mosaïque **Ajouter un environnement** apparaît sur la page *Aperçu du programme*.
    ![](assets/create-wizard4.png)
 
-   Reportez-vous à [Gestion de vos environnements](/help/implementing/cloud-manager/manage-environments.md) pour savoir comment ajouter ou gérer des environnements.
+   Consultez [Gestion de vos Environnements](/help/implementing/cloud-manager/manage-environments.md) pour savoir comment ajouter ou gérer des environnements.
 
 ## Configuration du projet {#setting-up-your-project}
 
@@ -95,7 +98,7 @@ Pour la prise en charge, Cloud Manager ajoute ces variables d’environnement s
 
 ### Variables d’environnement personnalisées {#custom-environ-variables}
 
-Dans certains cas, le processus de génération d’un client peut dépendre de variables de configuration spécifiques qu’il serait inadéquat de placer dans le référentiel git. Cloud Manager permet à un représentant Adobe de configurer ces variables client par client. Ces variables sont stockées à un emplacement de stockage sécurisé et ne sont visibles que dans le conteneur de génération pour le client spécifique. Les clients qui souhaitent utiliser cette fonctionnalité doivent contacter leur représentant Adobe pour configurer leurs variables.
+Dans certains cas, le processus de génération d’un client peut dépendre de variables de configuration spécifiques qu’il serait inadéquat de placer dans le référentiel git. Cloud Manager permet à ces variables d’être configurées par un représentant Adobe client par client. Ces variables sont stockées à un emplacement de stockage sécurisé et ne sont visibles que dans le conteneur de génération pour le client spécifique. Les clients qui souhaitent utiliser cette fonctionnalité doivent contacter leur représentant Adobe pour configurer leurs variables.
 
 Une fois configurées, ces variables seront disponibles en tant que variables d’environnement. Pour les utiliser comme propriétés Maven, vous pouvez les référencer dans votre fichier pom.xml, éventuellement dans un profil, comme décrit ci-dessus :
 
