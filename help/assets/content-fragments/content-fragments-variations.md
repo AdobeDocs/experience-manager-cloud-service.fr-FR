@@ -1,13 +1,16 @@
 ---
-title: Variations – création de contenu de fragment
+title: Variations – création de contenu de fragment
 description: Les variations permettent de créer du contenu pour le fragment, puis de créer des variations de ce contenu selon l’objectif recherché (si nécessaire).
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
+workflow-type: tm+mt
+source-wordcount: '1710'
+ht-degree: 100%
 
 ---
 
 
-# Variations – création de contenu de fragment{#variations-authoring-fragment-content}
+# Variations – création de contenu de fragment{#variations-authoring-fragment-content}
 
 Les [variations](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sont une fonction importante des fragments de contenu, car elles permettent de créer et de modifier des copies du contenu maître pour une utilisation sur des canaux spécifiques et/ou dans des cas spécifiques.
 
@@ -130,7 +133,7 @@ Le texte brut permet de saisir du contenu de manière rapide, sans formatage ni 
 
 >[!CAUTION]
 >
->Si vous sélectionnez **Texte brut**, vous risquez de perdre la mise en forme, le texte (Markdown) et/ou les ressources que vous avez insérés dans **Texte enrichi** ou **Texte (Markdown)**.
+>Si vous sélectionnez **Texte brut**, vous risquez de perdre le formatage, les annotations et/ou les fichiers que vous avez insérés dans du **texte enrichi** ou dans **Markdown**.
 
 ### Texte (Markdown) {#markdown}
 
@@ -207,6 +210,7 @@ D’autres langues sont disponibles en tant que modules de modèle de langues da
    * Toutes les phrases à éliminer sont biffées en rouge.
    * Cliquez sur n’importe quelle phrase en surbrillance pour la conserver dans le contenu résumé.
    * Cliquez sur n’importe quelle phrase qui ne figure pas en surbrillance pour l’éliminer.
+
    ![comparaison des résumés](assets/cfm-variations-06.png)
 
 6. Sélectionnez **Résumer** pour confirmer les modifications.
@@ -227,7 +231,7 @@ Pour annoter un fragment :
 
 ### Affichage, modification et suppression d’annotations {#viewing-editing-deleting-annotations}
 
-Les annotations :
+Annotations:
 
 * Sont mise en surbrillance sur le texte, en mode plein écran et en mode normal de l’éditeur. Les détails complets d’une annotation peuvent être affichés, modifiés et/ou supprimés en cliquant sur le texte mis en surbrillance, ce qui rouvre la boîte de dialogue.
 
@@ -264,14 +268,15 @@ Il existe différentes méthodes pour ajouter des [images](/help/assets/content-
 
    * Accéder à la ressource souhaitée dans la gestion des actifs numériques
    * Rechercher la ressource dans la gestion des actifs numériques
+
    Une fois la ressource souhaitée localisée, sélectionnez-la en cliquant sur la miniature.
 
-4. Utilisez **Sélectionner** pour ajouter la ressource au système de paragraphe de votre fragment de contenu à la position actuelle.
+4. Utilisez **Sélectionner** pour ajouter le fichier au système de paragraphes de votre fragment de contenu à l’emplacement actuel.
 
    >[!CAUTION]
-   Si, après avoir ajouté une ressource, vous définissez le format sur :
-   * **Texte brut** : la ressource est complètement effacée du fragment.
-   * **Texte (Markdown)** : la ressource n’est pas visible, mais elle est toujours présente lorsque vous revenez au paramètre **Texte enrichi**.
+   Si, après l’ajout d’un fichier, vous modifiez le format en :
+   * **Texte brut** : le fichier sera complètement perdu du fragment.
+   * **Markdown** : le fichier ne sera pas visible, mais il sera toujours présent lorsque vous reviendrez au **texte enrichi**.
 
 
 ## Gestion des variations   {#managing-variations}
@@ -285,7 +290,7 @@ Pour créer une variation, procédez comme suit :
 1. Ouvrez votre fragment et assurez-vous que le panneau latéral est visible.
 1. Sélectionnez **Variations** dans la barre d’icônes du panneau latéral.
 1. Sélectionnez **Créer une variation**.
-1. Une boîte de dialogue s’ouvre alors. Indiquez le **Titre** et la **Description** de la nouvelle variation.
+1. Une boîte de dialogue s’ouvre. Spécifiez le **titre** et la **description** correspondant à la nouvelle variante.
 1. Sélectionnez **Ajouter** et le **Gabarit**[ du fragment sera copié dans la nouvelle variation, qui est maintenant ouverte pour modification](#editing-a-variation).
 
    >[!NOTE]
@@ -335,7 +340,7 @@ Le **Maître** fait partie intégrante d’un fragment de contenu et, par défin
 Lors de la modification d’une variation, vous pouvez accéder à l’action de synchronisation de l’élément actuel de la variation avec le maître. Vous pouvez ainsi copier automatiquement les modifications apportées au Maître sur la variation requise.
 
 >[!CAUTION]
-La synchronisation permet seulement de copier les modifications *du **Maître**vers la variation*.
+La synchronisation n’est disponible que pour copier les modifications *du **gabarit**dans la variation*.
 Seul l’élément actuel de la variation est synchronisé.
 La synchronisation fonctionne uniquement sur le type de données **Plusieurs lignes de texte**.
 Le transfert des modifications n’est pas proposé *entre une variation et le **Maître ***.
@@ -352,6 +357,7 @@ Le transfert des modifications n’est pas proposé *entre une variation et le *
    * le contenu ajouté figure en vert   (ajouté à la variation) ;
    * le contenu supprimé (de la variation) figure en rouge.
    * le texte remplacé apparaît en bleu
+
    ![Synchronisation avec le gabarit](assets/cfm-variations-11.png)
 
 1. Sélectionnez **Synchroniser**. La variation est alors mise à jour et affichée.
