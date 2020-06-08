@@ -1,8 +1,11 @@
 ---
 title: Environnement et outils de création
 description: L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '2163'
+ht-degree: 100%
 
 ---
 
@@ -33,7 +36,7 @@ Vous pouvez modifier une page dans l’éditeur de page. Par exemple :
 >
 >Vous pouvez ignorer cette présentation ou la revoir à tout moment en la sélectionnant dans le menu **Informations sur la page**.
 
-## Accès à l’Aide    {#accessing-help}
+## Accès à l’aide {#accessing-help}
 
 Lorsque vous modifiez une page, l’**Aide** est accessible depuis :
 
@@ -79,11 +82,13 @@ L’aspect et la gestion de l’explorateur dépendent du type d’appareil util
    * Icône ou abréviation
       * Les icônes de composants standard sont monochromes.
       * Les abréviations correspondent toujours aux deux premiers caractères du nom du composant.
+
    Dans la barre d’outils supérieure de l’explorateur de **composants**, vous pouvez effectuer les opérations suivantes :
 
    * Filtrer les composants par nom
    * Restreindre l’affichage à un groupe spécifique à l’aide de la liste déroulante
-   Pour une description plus détaillée du composant, vous pouvez cliquer ou appuyer sur l’icône d’informations affichée en regard du composant dans l’Explorateur de **composants** (si disponible). Par exemple, pour le **fragment de contenu** :
+
+   Pour obtenir une description plus détaillée du composant, vous pouvez cliquer ou appuyer sur l’icône d’informations en regard du composant dans le navigateur **Composants** (le cas échéant). Par exemple, pour le **fragment de contenu** :
 
    ![Informations de l’explorateur de composants](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
@@ -249,7 +254,7 @@ L’icône Informations sur la page (icône d’égaliseur) ouvre un menu qui fo
 * [Publier la page](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-pages-1)
 * [Annuler la publication de la page](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)
 * [Modifier le modèle](/help/sites-cloud/authoring/features/templates.md)
-* [Afficher comme publié(e)](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
+* [Afficher comme publié(e) ](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 * [Afficher en administrateur](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
 * [Aide](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)
 * [Convertir le lancement](/help/sites-cloud/authoring/launches/promoting.md) (uniquement si la page correspond à un lancement)
@@ -278,6 +283,7 @@ Vous pouvez accéder à ces modes en cliquant sur les icônes dans le coin supé
 >* L’accès à certains modes implique que vous disposiez des droits ou autorisations appropriés.
 >* Le mode Développeur n’est pas accessible sur les appareils mobiles en raison de restrictions d’espace.
 >* Utilisez le [raccourci clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) pour permuter entre l’**Aperçu** et le mode actuellement sélectionné (par ex. **Modifier**, **Mise en page**, etc.).
+
 >
 
 
@@ -307,7 +313,7 @@ L’explorateur de chemins d’accès est organisé de la même façon que le [m
 ![Explorateur de chemins d’accès](/help/sites-cloud/authoring/assets/path-browser.png)
 
 * Lorsqu’une ressource est sélectionnée, le bouton **Sélectionner** situé en haut à droit de la boîte de dialogue devient actif. Cliquez ou appuyez dessus pour confirmer la sélection, ou sur **Annuler** pour annuler.
-* Si le contexte permet la sélection de plusieurs ressources, la sélection d’une ressource active également le bouton **Sélectionner**, mais ajoute également le nombre de ressources sélectionnées en haut à droite de la fenêtre. Cliquez sur **X** à côté du nombre pour annuler la sélection de toutes les ressources sélectionnées.
+* Si le contexte permet la sélection de plusieurs ressources, la sélection d’une ressource active également le bouton **Sélectionner**, mais ajoute également le nombre de ressources sélectionnées en haut à droite de la fenêtre. Cliquez sur le **X** en regard du nombre pour tout désélectionner.
 * Lorsque vous parcourez l’arborescence, votre emplacement est reflété dans le chemin de navigation de la boîte de dialogue. Ces chemins de navigation peuvent être utilisés pour passer rapidement d’une ressource à une autre dans la hiérarchie des ressources.
 * Vous pouvez à tout moment utiliser le champ de recherche situé en haut de la boîte de dialogue. Cliquez sur **X** dans le champ de recherche pour effacer la recherche.
 * Pour affiner votre recherche, vous pouvez afficher les options de filtre et filtrer vos résultats en fonction du chemin d’accès.
