@@ -1,8 +1,11 @@
 ---
 title: Utilisation de Dynamic Media
 description: Dynamic Media aide à diffuser des ressources de marketing et de merchandising à la demande, mises automatiquement à l’échelle pour une consommation sur le web, le mobile et les sites de réseaux sociaux. À l’aide d’un ensemble de ressources marketing, Dynamic Media génère et diffuse plusieurs variantes de contenu riche en temps réel au moyen de son réseau mondial évolutif et performant.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '166'
+ht-degree: 100%
 
 ---
 
