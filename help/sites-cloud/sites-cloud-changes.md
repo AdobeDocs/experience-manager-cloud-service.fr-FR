@@ -1,8 +1,11 @@
 ---
 title: Modifications notables d’AEM Sites dans AEM Cloud Service
 description: 'Modifications notables d’AEM Sites dans AEM Cloud Service '
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 100%
 
 ---
 
