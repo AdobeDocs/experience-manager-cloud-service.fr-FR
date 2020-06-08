@@ -1,8 +1,11 @@
 ---
 title: Meilleures pratiques d’organisation des ressources numériques pour l’utilisation de profils
 description: Conseils et meilleures pratiques pour nommer, organiser et gérer les métadonnées des fichiers de ressources numériques.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '486'
+ht-degree: 100%
 
 ---
 
