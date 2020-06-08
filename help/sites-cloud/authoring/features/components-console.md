@@ -1,8 +1,11 @@
 ---
 title: Console des composants
 description: La console Composants vous permet de parcourir tous les composants définis pour votre instance.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '275'
+ht-degree: 100%
 
 ---
 
@@ -40,6 +43,7 @@ Pour afficher les détails correspondant à un composant spécifique, appuyez/cl
       * Cliquez sur la source de l’icône pour accéder à ce composant.
    * Affichez le **Type de ressource** et le **Type de super-ressource** (s’il est défini) du composant.
       * Cliquez sur le type de super-ressource pour accéder à ce composant.
+
    >[!NOTE]
    >
    >Étant donné que les `/apps` ne sont pas modifiables à l’exécution, la console Composants est en lecture seule.
