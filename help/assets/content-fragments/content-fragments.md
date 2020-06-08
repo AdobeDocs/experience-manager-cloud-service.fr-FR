@@ -1,9 +1,9 @@
 ---
 title: Utilisation de fragments de contenu
 description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1936'
 ht-degree: 100%
 
@@ -70,6 +70,7 @@ Associé aux fonctionnalités d’exportation JSON des composants de base AEM, 
 >Les **fragments de contenu** et les **[fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**représentent deux fonctions distinctes d’AEM :
 >* Les **fragments de contenu** sont des contenus éditoriaux, composés essentiellement de texte et des images associées. Il s’agit exclusivement de contenu, sans aucun élément de conception ni de mise en page.
 >* Les **fragments d’expérience** désignent un contenu parfaitement mis en page : un fragment de page web.
+
 >
 >
 Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
@@ -143,6 +144,7 @@ Les ressources peuvent être utilisées avec un fragment de contenu de plusieurs
    * Font partie intégrante du fragment (voir [Parties constituantes d’un fragment de contenu](#constituent-parts-of-a-content-fragment)).
    * Définissent la position de la ressource.
    * Voir [Insertion de ressources dans votre fragment](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) dans l’éditeur de fragment pour plus d’informations.
+
    >[!NOTE]
    >
    >Les ressources visuelles insérées dans le fragment de contenu sont liées au paragraphe précédent. Lorsque le fragment est ajouté à une page, ces ressources sont déplacées avec le paragraphe en question lorsque du contenu intermédiaire est ajouté.
@@ -194,6 +196,7 @@ Les actifs de fragment de contenu se composent des parties suivantes (directemen
    * Peuvent uniquement être ajoutées, supprimées ou déplacées dans un fragment en utilisant le format [texte enrichi de l’éditeur de fragment](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
    * Peuvent uniquement être ajoutées aux éléments de texte multiligne (tout type de fragment).
    * Sont liées au texte précédent (paragraphe).
+
    >[!CAUTION]
    >
    >Peuvent être supprimées (par inadvertance) d’un fragment lors du passage au format texte brut.
@@ -222,6 +225,7 @@ Les actifs de fragment de contenu se composent des parties suivantes (directemen
 
          * Lors de l’affichage/de la modification des **propriétés** de fragment dans la console
          * Lors de la modification des **métadonnées** dans l’éditeur de fragment
+
    >[!CAUTION]
    >
    >Les profils de traitement de métadonnées ne s’appliquent pas aux fragments de contenu.
