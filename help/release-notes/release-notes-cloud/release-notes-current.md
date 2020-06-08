@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
 source-wordcount: '1843'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -18,9 +18,9 @@ La section suivante décrit les notes de mise à jour générales d’Experience
 
 The release date for [!DNL Experience Manager] as a Cloud Service 2020.6.0 is June 04, 2020.
 
-## What&#39;s New in AEM Sites {#aem-sites}
+## Nouveautés d’AEM Sites {#aem-sites}
 
-Suivez cette section pour en savoir plus sur les nouveautés et les mises à jour des sites AEM dans AEM as a Cloud Service Release 2020.6.0.
+Consultez cette section pour en savoir plus sur les nouveautés et les mises à jour d’AEM Sites dans AEM as a Cloud Service 2020.6.0.
 
 ### Nouveautés {#whats-new-2020.6.0}
 
@@ -54,9 +54,9 @@ Les délais de création du projet AEM s’améliorent en supprimant toutes les 
 
 Le Jar API AEM as a Cloud Service SDK, qui était auparavant hébergé à cet emplacement, se trouve désormais dans Maven Central, qui est le référentiel d’artefacts par défaut de Maven.
 
-## Nouveautés de Cloud Manager {#cloud-manager}
+## Nouveautés de Cloud Manager {#cloud-manager}
 
-Suivez cette section pour en savoir plus sur les nouveautés et les mises à jour de Cloud Manager dans AEM as a Cloud Service 2020.6.0.
+Consultez cette section pour en savoir plus sur les nouveautés et les mises à jour de Cloud Manager dans AEM as a Cloud Service 2020.6.0.
 
 ### Nouveautés {#what-is-new-cloud-manager}
 
