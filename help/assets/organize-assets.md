@@ -2,8 +2,11 @@
 title: Organisation des ressources numériques
 description: Organisez vos ressources numériques à l’aide de diverses méthodes fournies dans Adobe Experience Manager Assets.
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '452'
+ht-degree: 100%
 
 ---
 
@@ -14,7 +17,7 @@ L’ensemble des ressources numériques, des métadonnées et du contenu des doc
 
 AEM Assets prend en charge plusieurs manières d’organiser le contenu. Vous pouvez l’organiser de façon hiérarchique à l’aide de dossiers ou de manière ad hoc, non classée à l’aide de balises. Les utilisateurs peuvent modifier les balises dans l’éditeur de ressources de gestion des actifs numériques où les sous-ressources, rendus et métadonnées sont affichés.
 
-## Création de dossiers   {#create-folders}
+## Création de dossiers {#create-folders}
 
 Lorsque vous organisez une collection de ressources, comme toutes les images *Nature*, vous pouvez créer des dossiers pour les conserver ensemble. Vous pouvez utiliser des dossiers pour classer et organiser vos ressources. AEM Assets ne nécessite pas de classer les ressources dans des dossiers pour mieux fonctionner.
 
