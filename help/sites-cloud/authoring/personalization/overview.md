@@ -1,8 +1,11 @@
 ---
 title: Personnalisation et ciblage de contenu
 description: Découvrez comment AEM peut créer du contenu personnalisé
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '518'
+ht-degree: 100%
 
 ---
 
