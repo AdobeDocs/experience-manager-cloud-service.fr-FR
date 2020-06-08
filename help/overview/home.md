@@ -1,8 +1,11 @@
 ---
 title: Présentation d’Adobe Experience Manager as a Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation présentant Adobe Experience Manager as a Cloud Service
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 1e49306fb89cffa286c8723758618ce7a5d1e8b9
+workflow-type: tm+mt
+source-wordcount: '342'
+ht-degree: 100%
 
 ---
 
@@ -36,7 +39,7 @@ Cette page répertorie les ressources d’aide autonome qui fournissent une intr
 
 * [Documentation Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentation HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
-* [Documentation sur les composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [Documentation sur les composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 * [Documentation Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriels sur Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
