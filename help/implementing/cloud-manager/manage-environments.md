@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
@@ -39,16 +39,16 @@ Un utilisateur disposant des autorisations requises peut créer les types d’en
 ## Ajout d’un environnement {#adding-environments}
 
 
-1. Cliquez sur **Ajouter un Environnement** pour ajouter un environnement. Ce bouton sera accessible à partir de l&#39;écran **Environnements** .
+1. Cliquez sur **Ajouter un environnement** pour ajouter un environnement. Ce bouton sera accessible à l’aide de l’écran **Environnements**.
    ![](assets/no-environment-2.png)
 
 
-   L&#39;option **Ajouter l&#39;Environnement** est également disponible sur la carte **Environnements** lorsqu&#39;il n&#39;y a aucun environnement dans le programme.
+   L’option **Ajouter un environnement** est également disponible sur la carte **Environnements** lorsqu’il n’y a aucun environnement dans le programme.
 
    ![](assets/no-environments.png)
 
    >[!NOTE]
-   >L’option **Ajouter l’Environnement** sera désactivée en raison d’un manque d’autorisations ou de ce qui peut être contracté.
+   >L’option **Ajouter un environnement** sera désactivée en raison de l’absence d’autorisations ou de conditions contractuelles.
 
 1. La boîte de dialogue **Ajouter un environnement** s’affiche. L’utilisateur doit ajouter des détails tels que le **type d’environnement**, **nom de l’environnement** et la **description de l’environnement** (selon l’objectif de l’utilisateur lors de la création de l’environnement dans les limites de ce qui est disponible pour le client spécifique).
 
@@ -73,8 +73,8 @@ Les mises à jour des environnements de développement sont gérées par les uti
 ![](assets/manage-environments2.png)
 
 
-L’option **Mettre à jour** est disponible dans le menu déroulant de la carte **Environnements** .
-Cette option est également disponible à partir du bouton **Gérer** si vous cliquez sur **Détails** dans la carte **Environnements** .
+L’option **Mettre à jour** est disponible dans le menu déroulant de la carte **Environnements**.
+Cette option est également disponible à partir du bouton **Gérer** si vous cliquez sur **Détails** dans la carte **Environnements**.
 
 ![](assets/update-environment2.png)
 
@@ -82,28 +82,28 @@ Si vous sélectionnez cette option dans le menu déroulant, un gestionnaire de d
 
 Si le pipeline a déjà été mis à jour, l’utilisateur est invité à exécuter le pipeline.
 
-## Suppression d’un Environnement {#deleting-environment}
+## Suppression d’un environnement {#deleting-environment}
 
-L’utilisateur disposant des autorisations requises peut supprimer un environnement de développement.
+Un utilisateur disposant des autorisations requises peut supprimer un environnement de développement.
 
-L’option **Supprimer** est disponible dans le menu déroulant de la carte **Environnements** .
-Cette option est également disponible à partir du bouton **Gérer** si vous cliquez sur **Détails** dans la carte **Environnements** .
+L’option **Supprimer** est disponible dans le menu déroulant de la carte **Environnements**.
+Cette option est également disponible à partir du bouton **Gérer** si vous cliquez sur **Détails** dans la carte **Environnements**.
 
 ![](assets/deleting-environment1.png)
 
 >[!NOTE]
-Cette fonction n’est pas disponible pour l’environnement de production/étape défini dans un programme normal configuré à des fins de production. Cette fonction est toutefois disponible pour les environnements de production/d’étape dans un programme de sandbox.
+Cette fonction n’est pas disponible pour l’environnement de production/d’évaluation défini dans un programme normal, configuré à des fins de production. Cette fonction est toutefois disponible pour les environnements de production/d’évaluation dans un programme Sandbox.
 
 ## Accès à la Console développeur {#accessing-developer-console}
 
-Sélectionnez Console **** développeur dans le menu déroulant de la carte **Environnements** . Un nouvel onglet s&#39;ouvre alors dans votre navigateur, avec la page de connexion à **Developer Console**.
+Sélectionnez **Console développeur** dans le menu déroulant de la carte **Environnements**. Un nouvel onglet s’ouvre alors dans votre navigateur, contenant la page de connexion à la **Console développeur**.
 
-Seul un utilisateur du rôle Développeur aura accès à **Developer Console**. L’exception concerne les Programmes Sandbox, où tout utilisateur ayant accès au Programme Cloud Manager Sandbox aura accès à **Developer Console**.
+Seul un utilisateur possédant le rôle de développeur aura accès à la **Console développeur**. L’exception concerne les programmes Sandbox, où tout utilisateur ayant accès au programme Cloud Manager Sandbox aura accès à la **Console développeur**.
 
-Pour plus d’informations, consultez Environnements [](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) d’hibernation et de déshibernation de Sandbox.
+Pour plus d’informations, consultez la section [Mise en hibernation et déshibernation des environnements Sandbox](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction).
 
 
 ![](assets/dev-console1.png)
 
-Vous pouvez également sélectionner cette option à partir du bouton **Gérer** si vous cliquez sur **Détails** dans la carte **Environnements** .
+Vous pouvez également sélectionner cette option à partir du bouton **Gérer** en cliquant sur **Détails** dans la carte **Environnements**.
 
