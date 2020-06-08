@@ -1,8 +1,11 @@
 ---
 title: Gestion de projets
 description: La console Projets vous permet d’organiser un projet en regroupant les ressources dans une seule entité à laquelle vous pouvez accéder et que vous pouvez gérer.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '919'
+ht-degree: 100%
 
 ---
 
@@ -26,9 +29,9 @@ Sans configuration supplémentaire, AEM propose les modèles suivants pour crée
 * Projet de séance photo du produit
 * Projet de traduction
 
-Les étapes de création d’un projet sont identiques d’un projet à l’autre. La différence entre les types de projets porte sur les [rôles utilisateur](/help/sites-cloud/authoring/projects/overview.md) et les [workflows](/help/sites-cloud/authoring/projects/workflows.md) disponibles.  Pour créer un projet, procédez comme suit :
+Les étapes de création d’un projet sont identiques d’un projet à l’autre. La différence entre les types de projets porte sur les [rôles utilisateur](/help/sites-cloud/authoring/projects/overview.md) et les [workflows](/help/sites-cloud/authoring/projects/workflows.md) disponibles.  Pour créer un projet :
 
-1. Dans la console **Projets**, cliquez/appuyez sur **Créer** pour ouvrir l’assistant **Créer un projet** :
+1. Dans **Projets**, appuyez/cliquez sur **Créer** pour ouvrir l’assistant **Créer un projet** :
 1. Sélectionnez le modèle, puis cliquez sur **Suivant**.
 
    ![Création d’un projet](/help/sites-cloud/authoring/assets/projects-create.png)
@@ -72,7 +75,7 @@ La méthode permettant de supprimer un projet à partir de la console est la mê
 
 >[!NOTE]
 >
->Lorsque vous créez un projet et ajoutez des utilisateurs pour les différents rôles, des groupes liés au projet sont automatiquement créés pour gérer les autorisations correspondantes. Par exemple, un projet nommé Monprojet serait associé à trois groupes **Propriétaires Monprojet**, **Editeurs Monprojet**, **Observateurs Monprojet**. Cependant, si le projet est supprimé, ces groupes ne le sont pas automatiquement. Un administrateur doit supprimer manuellement les groupes dans **Outils** > **Sécurité** > **Groupes**.
+>Lorsque vous créez le projet et ajoutez des utilisateurs aux différents rôles, les groupes associés au projet sont automatiquement créés pour gérer les autorisations associées. Par exemple, un projet appelé Myproject aurait trois groupes **Myproject Owners**, **Myproject Editors**, **Myproject Observators**. Toutefois, si le projet est supprimé, ces groupes ne sont pas automatiquement supprimés. Un administrateur doit supprimer manuellement les groupes dans **Outils** > **Sécurité** > **Groupes**.
 
 ### Ajout d’éléments à une mosaïque {#adding-items-to-a-tile}
 
