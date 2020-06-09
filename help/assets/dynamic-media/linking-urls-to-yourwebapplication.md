@@ -2,10 +2,10 @@
 title: Liaison d’URL à une application web
 description: Comment lier des URL à votre application web dans les médias dynamiques
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
 workflow-type: tm+mt
-source-wordcount: '1270'
-ht-degree: 100%
+source-wordcount: '1272'
+ht-degree: 98%
 
 ---
 
@@ -84,6 +84,7 @@ Il existe différents moyens d’obtenir une chaîne URL. Néanmoins, les étape
 
 Dynamic Media prend en charge le déploiement de ressources statiques, qui sont des ressources supplémentaires au-delà des images et de la vidéo. Les formats de ressources statiques pris en charge pour la diffusion comprennent les formats suivants :
 
+* Fichiers 3D
 * GIF animé
 * Fichiers audio
 * CSS
@@ -108,7 +109,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
          Par exemple, `https://aem.com/is/content/adobe/image.gif`.
-   * Cliquez sur **[!UICONTROL Ressource > Rendu(s) dynamique(s)]**, appuyez sur le rendu dynamique de la ressource statique, puis copiez l’URL.
+   * Tap **[!UICONTROL Asset > Dynamic Renditions]**, then tap a dynamic rendition of the static asset and copy the URL.
 
       Modifiez l’URL copiée afin d’utiliser `is/content` au lieu de `is/image/` dans le chemin d’accès.
 
@@ -158,7 +159,6 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 1. Sur la page **[!UICONTROL Paramètres Dynamic Media Cloud Services]**, procédez comme suit :
 
    * Sous **[!UICONTROL URL du service vidéo]**, copiez le chemin d’URL entier. Vous aurez besoin de l’URL copiée dans ces étapes. Par exemple, le chemin URL est similaire au suivant :
-
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
    (Le chemin ci-dessus est donné à titre d’illustration uniquement ; il ne s’agit pas de celui que vous allez copier.)
