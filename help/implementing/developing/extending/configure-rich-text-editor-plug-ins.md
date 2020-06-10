@@ -349,11 +349,11 @@ Pour créer le style que les auteurs peuvent appliquer au texte japonais, procé
 
 1. Ajoutez la propriété text au même nœud. La valeur est le nom du style que les auteurs voient lors de la sélection du style.
    * Name: `text`
-*Type: `String`
-Valeur: `Japanese word-wrap`
-   * Créez une feuille de style et spécifiez son chemin d’accès. Consultez [spécification de l’emplacement de la feuille de style](#locationofstylesheet). Ajoutez le contenu suivant à la feuille de style. Modifiez la couleur d’arrière-plan selon vos besoins.
+*Type: 
+`String`
+   * Valeur: `Japanese word-wrap`
 
-1. ![Feuille de style pour rendre la fonction japonaise de retour automatique à la ligne disponible pour les auteurs](assets/rte_jpwordwrap_stylesheet.jpg)
+1. Créez une feuille de style et spécifiez son chemin d’accès. Consultez [spécification de l’emplacement de la feuille de style](#locationofstylesheet). Ajoutez le contenu suivant à la feuille de style. Modifiez la couleur d’arrière-plan selon vos besoins.
 
    ```css
    .text span.jpn-word-wrap {
@@ -364,151 +364,156 @@ Valeur: `Japanese word-wrap`
    }
    ```
 
-   Configuration des formats de paragraphe {#paraformats}](assets/rte_jpwordwrap_stylesheet.jpg)
+   ![Feuille de style pour rendre la fonction japonaise de retour automatique à la ligne disponible pour les auteurs](assets/rte_jpwordwrap_stylesheet.jpg)
 
-## Tout texte saisi dans l’éditeur de texte enrichi est placé dans une balise block dont la valeur par défaut est `<p>`. By enabling the `paraformat` plug-in, you specify additional block tags that can be assigned to paragraphs, using a drop-down selection list. Les formats de paragraphe déterminent le type de paragraphe en affectant la balise block appropriée. L’auteur peut les sélectionner et les affecter à l’aide du sélecteur Format. Les balises block comprennent, par exemple, le paragraphe standard &lt;p> et les titres standard &lt;h1>, &lt;h2> et ainsi de suite.
+## Configuration des formats de paragraphe {#paraformats}
 
-[!CAUTION]`paraformat`
+Tout texte saisi dans l’éditeur de texte enrichi est placé dans une balise block dont la valeur par défaut est `<p>`. By enabling the `paraformat` plug-in, you specify additional block tags that can be assigned to paragraphs, using a drop-down selection list. Les formats de paragraphe déterminent le type de paragraphe en affectant la balise block appropriée. L’auteur peut les sélectionner et les affecter à l’aide du sélecteur Format. Les balises block comprennent, par exemple, le paragraphe standard &lt;p> et les titres standard &lt;h1>, &lt;h2> et ainsi de suite.
 
->[!CAUTION]Ce module externe n’est pas adapté au contenu présentant une structure complexe, tel que les listes et les tableaux.
+>[!CAUTION]
 >
+>Ce module externe n’est pas adapté au contenu présentant une structure complexe, tel que les listes et les tableaux.
+
 >[!NOTE]
-
->[!NOTE]Si une balise block, par exemple une balise &lt;hr>, ne peut pas être affectée à un paragraphe, ce n’est pas un cas d’utilisation valide pour un module externe paraformat.
 >
->Lorsque le module externe Formats des paragraphes est activé pour la première fois, aucun format de paragraphe n’est disponible par défaut. La liste contextuelle est vide. Pour fournir des formats de paragraphes aux auteurs, procédez comme suit :
+>Si une balise block, par exemple une balise &lt;hr>, ne peut pas être affectée à un paragraphe, ce n’est pas un cas d’utilisation valide pour un module externe paraformat.
 
-Activez la liste de sélection déroulante Format.
+Lorsque le module externe Formats des paragraphes est activé pour la première fois, aucun format de paragraphe n’est disponible par défaut. La liste contextuelle est vide. Pour fournir des formats de paragraphes aux auteurs, procédez comme suit :
 
+* Activez la liste de sélection déroulante Format.
 * Spécifiez les balises block qui peuvent être sélectionnées dans la liste déroulante.
-* Pour les configurations ultérieures, par exemple, afin d’ajouter davantage de formats, suivez uniquement la partie correspondante des instructions.
 
-Activation du sélecteur de liste déroulante Format {#formatselectorlist}
+Pour les configurations ultérieures, par exemple, afin d’ajouter davantage de formats, suivez uniquement la partie correspondante des instructions.
 
-### Commencez d’abord par activer le module externe paraformat :{#formatselectorlist}
+### Activation du sélecteur de liste déroulante Format {#formatselectorlist}
 
-In your component, navigate to the node `<rtePlugins-node>/paraformat`. Créez les nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
+Commencez d’abord par activer le module externe paraformat :
 
-1. Create the `features` property on the `paraformat` node:](#activateplugin)
-1. **Nom** `features`
+1. In your component, navigate to the node `<rtePlugins-node>/paraformat`. Créez les nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
+1. Create the `features` property on the `paraformat` node:
 
+   * **Nom** `features`
    * **Type** `String`
    * **Valeur** `*` (astérisque)
-   * [!NOTE]**`*`
 
->[!NOTE]Si le module externe n’est pas configuré davantage, les formats par défaut suivants sont activés :
-Paragraphe ( `<p>`)
+>[!NOTE]
+Si le module externe n’est pas configuré davantage, les formats par défaut suivants sont activés :
+* Paragraphe ( `<p>`)
 * En-tête 1 ( `<h1>`)
 * En-tête 2 ( `<h2>`)
 * En-tête 3 ( `<h3>`)
-* [!CAUTION]
 
 
 
->Lors de la configuration des formats de paragraphe de l’éditeur de texte enrichi, ne supprimez pas la balise de paragraphe &lt;p> comme option de mise en forme. If the `<p>` tag is removed, then the content author can not select the **Paragraph formats** option even if there are additional formats configured.
-Spécification des formats de paragraphe disponibles {#paraformatsindropdown}****
+>[!CAUTION]
+Lors de la configuration des formats de paragraphe de l’éditeur de texte enrichi, ne supprimez pas la balise de paragraphe &lt;p> comme option de mise en forme. If the `<p>` tag is removed, then the content author can not select the **Paragraph formats** option even if there are additional formats configured.
 
-### Les formats de paragraphe peuvent être mis à disposition pour être sélectionnés :{#paraformatsindropdown}
+### Spécification des formats de paragraphe disponibles {#paraformatsindropdown}
 
-In the component definition, navigate to the node `<rtePlugins-node>/paraformat`, as created in [Enabling the format drop-down selector](#styleselectorlist).
+Les formats de paragraphe peuvent être mis à disposition pour être sélectionnés :
 
-1. Sous le nœud `paraformat`, créez un nœud destiné à contenir la liste de formats :[](#styleselectorlist)
-1. **Nom** `formats`
+1. In the component definition, navigate to the node `<rtePlugins-node>/paraformat`, as created in [Enabling the format drop-down selector](#styleselectorlist).
+1. Sous le nœud `paraformat`, créez un nœud destiné à contenir la liste de formats :
 
+   * **Nom** `formats`
    * **Type** `cq:WidgetCollection`
-   * Créez un nœud sous le nœud `formats`, qui contient les détails pour un format spécifique :**`cq:WidgetCollection`
 
-1. **Nom**, vous pouvez spécifier le nom, mais il doit être adapté au format (par exemple, myparagraph, myheading1).
+1. Créez un nœud sous le nœud `formats`, qui contient les détails pour un format spécifique :
 
+   * **Nom**, vous pouvez spécifier le nom, mais il doit être adapté au format (par exemple, myparagraph, myheading1).
    * **Type** `nt:unstructured`
-   * **Sur ce nœud, ajoutez la propriété pour définir la balise block utilisée :**`nt:unstructured`
 
-1. **Nom** `tag`
+1. Sur ce nœud, ajoutez la propriété pour définir la balise block utilisée :
 
+   * **Nom** `tag`
    * **Type** `String`
-   * **Valeur** La balise block pour le format, par exemple : p, h1, h2, etc.`String`
-   * **Vous n’avez pas besoin de saisir les crochets de séparation.**
+   * **Valeur** La balise block pour le format, par exemple : p, h1, h2, etc.
 
-      Sur le même nœud, ajoutez une autre propriété pour que le texte descriptif s’affiche dans la liste déroulante :
+      Vous n’avez pas besoin de saisir les crochets de séparation.
 
-1. **Nom** `description`
+1. Sur le même nœud, ajoutez une autre propriété pour que le texte descriptif s’affiche dans la liste déroulante :
 
+   * **Nom** `description`
    * **Type** `String`
-   * **Valeur** Texte descriptif pour ce format, par exemple, paragraphe, titre 1, titre 2, etc. Ce texte s’affiche dans la liste de sélection Format.`String`
-   * **Enregistrez les modifications.**
+   * **Valeur** Texte descriptif pour ce format, par exemple, paragraphe, titre 1, titre 2, etc. Ce texte s’affiche dans la liste de sélection Format.
 
-1. Répétez la procédure pour chaque format requis.
+1. Enregistrez les modifications.
 
-   [!CAUTION]
+   Répétez la procédure pour chaque format requis.
 
->If you define custom formats, the default formats (`<p>`, `<h1>`, `<h2>`, and `<h3>`) are removed. Re-create `<p>` format as it is the default format.
-Configuration des caractères spéciaux {#spchar}`<h1>``<h2>``<h3>``<p>`
+>[!CAUTION]
+If you define custom formats, the default formats (`<p>`, `<h1>`, `<h2>`, and `<h3>`) are removed. Re-create `<p>` format as it is the default format.
 
-## Dans une installation AEM standard, lorsque le module externe `misctools` est activé pour les caractères spéciaux (`specialchars`), une sélection par défaut est disponible immédiatement. Par exemple, les symboles de copyright et de marque.
+## Configuration des caractères spéciaux {#spchar}
 
-Vous pouvez configurer l’éditeur de texte enrichi de manière à mettre à disposition votre propre sélection de caractères, en définissant des caractères distincts ou une séquence entière.`misctools``specialchars`
+Dans une installation AEM standard, lorsque le module externe `misctools` est activé pour les caractères spéciaux (`specialchars`), une sélection par défaut est disponible immédiatement. Par exemple, les symboles de copyright et de marque.
 
-[!CAUTION]
+Vous pouvez configurer l’éditeur de texte enrichi de manière à mettre à disposition votre propre sélection de caractères, en définissant des caractères distincts ou une séquence entière.
 
->[!CAUTION]Si vous ajoutez vos propres caractères spéciaux, ils remplacent la sélection par défaut. Si nécessaire, définissez ou redéfinissez ces caractères dans votre sélection.
-Définition d’un caractère unique {#definesinglechar}
+>[!CAUTION]
+Si vous ajoutez vos propres caractères spéciaux, ils remplacent la sélection par défaut. Si nécessaire, définissez ou redéfinissez ces caractères dans votre sélection.
 
-### In your component, navigate to the node `<rtePlugins-node>/misctools`. Créez les nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
+### Définition d’un caractère unique {#definesinglechar}
 
-1. Create the `features` property on the `misctools` node:](#activateplugin)
-1. **Nom** `features`
+1. In your component, navigate to the node `<rtePlugins-node>/misctools`. Créez les nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
+1. Create the `features` property on the `misctools` node:
 
+   * **Nom** `features`
    * **Type** `String[]`
    * **Valeur** `specialchars`
-   *     (or `String / *` if applying all features for this plug-in)**`specialchars`
 
-      Sous `misctools`, créez un nœud destiné à contenir les configurations de caractères spéciaux :
+          (or `String / *` if applying all features for this plug-in)
 
-1. **Nom** `specialCharsConfig`
+1. Sous `misctools`, créez un nœud destiné à contenir les configurations de caractères spéciaux :
 
+   * **Nom** `specialCharsConfig`
    * **Type** `nt:unstructured`
-   * Sous `specialCharsConfig`, créez un autre nœud destiné à contenir la liste de caractères :**`nt:unstructured`
 
-1. **Nom** `chars`
+1. Sous `specialCharsConfig`, créez un autre nœud destiné à contenir la liste de caractères :
 
+   * **Nom** `chars`
    * **Type** `nt:unstructured`
-   * Sous `chars`, ajoutez un nouveau nœud destiné à contenir une définition de caractère individuel :**`nt:unstructured`
 
-1. **Nom** Vous pouvez spécifier le nom, mais il doit être refléter le caractère, par exemple, « moitié ».
+1. Sous `chars`, ajoutez un nouveau nœud destiné à contenir une définition de caractère individuel :
 
+   * **Nom** Vous pouvez spécifier le nom, mais il doit être refléter le caractère, par exemple, « moitié ».
    * **Type** `nt:unstructured`
-   * **À ce nœud, ajoutez la propriété suivante :**`nt:unstructured`
 
-1. **Nom** `entity`
+1. À ce nœud, ajoutez la propriété suivante :
 
+   * **Nom** `entity`
    * **Type** `String`
    * **Valeur** de la représentation HTML du caractère requis ; par exemple, `&189;` pour la fraction moitié.
-   * **Enregistrez les modifications.**`&189;`
 
-1. Dans CRXDE, une fois la propriété enregistrée, le caractère représenté s’affiche. Voir ci-dessous sous l’exemple du caractère demi. Répétez les étapes ci-dessus pour rendre plus de caractères spéciaux disponibles aux auteurs.
+1. Enregistrez les modifications.
+
+Dans CRXDE, une fois la propriété enregistrée, le caractère représenté s’affiche. Voir ci-dessous sous l’exemple du caractère demi. Répétez les étapes ci-dessus pour rendre plus de caractères spéciaux disponibles aux auteurs.
 
 ![Dans CRXDE, ajoutez un caractère unique à rendre disponible dans la barre d’](assets/chlimage_1-106.png "outils RTEDans CRXDE, ajoutez un caractère unique à rendre disponible dans la barre d’outils RTE.")
 
-Définition d’une série de caractères {#definerangechar}](assets/chlimage_1-106.png "")
+### Définition d’une série de caractères {#definerangechar}
 
-### Utilisez les étapes 1 à 3 de la section [Définition d’un caractère unique](#definingasinglecharacter).
+1. Utilisez les étapes 1 à 3 de la section [Définition d’un caractère unique](#definingasinglecharacter).
+1. Sous `chars`, ajoutez un nouveau nœud destiné à contenir la définition de la plage de caractères :
 
-1. Sous `chars`, ajoutez un nouveau nœud destiné à contenir la définition de la plage de caractères :](#definingasinglecharacter)
-1. **Nom** Vous pouvez spécifier le nom, mais il doit refléter la plage de caractères, par exemple, « crayons ».
-
+   * **Nom** Vous pouvez spécifier le nom, mais il doit refléter la plage de caractères, par exemple, « crayons ».
    * **Type** `nt:unstructured`
-   * **Sous ce nœud (nommé en fonction de votre plage de caractères spéciaux), ajoutez les deux propriétés suivantes :**`nt:unstructured`
 
-1. **Nom** `rangeStart`
+1. Sous ce nœud (nommé en fonction de votre plage de caractères spéciaux), ajoutez les deux propriétés suivantes :
 
+   * **Nom** `rangeStart`
 
-   * **Type** `Long`
-      **Valeur** de la représentation [Unicode[#$tu253] (décimale) du premier caractère de la plage      
+      **Type** `Long`
+      **Valeur** de la représentation [Unicode](https://unicode.org/) (décimale) du premier caractère de la plage
 
-   * **Type** `Long`
-      **Valeur** de la représentation [Unicode[#$tu257] (décimale) du dernier caractère de la plage      
+   * **Nom** `rangeEnd`
 
-1. Par exemple, la définition d’une série de 9998 à 10000 vous permet de bénéficier des caractères suivants.
+      **Type** `Long`
+      **Valeur** de la représentation [Unicode](https://unicode.org/) (décimale) du dernier caractère de la plage
+
+1. Enregistrez les modifications.
+
+   Par exemple, la définition d’une série de 9998 à 10000 vous permet de bénéficier des caractères suivants.
 
    ![Définition dans CRXDE d’une série de caractères à rendre disponible dans l’éditeur de texte enrichi](assets/chlimage_1-107.png)
 
@@ -516,261 +521,259 @@ Définition d’une série de caractères {#definerangechar}](assets/chlimage_1-
 
    ![Les caractères spéciaux disponibles dans RTE sont affichés aux auteurs dans une](assets/rtepencil.png "fenêtre contextuelleLes caractères spéciaux disponibles dans RTE sont affichés aux auteurs dans une fenêtre contextuelle")
 
-   Configuration des styles de tableau {#tablestyles}](assets/rtepencil.png "")
+## Configuration des styles de tableau {#tablestyles}
 
-## Les styles sont généralement appliqués au texte, mais un jeu de styles distinct peut également être appliqué à un tableau ou à certaines cellules de tableau. Ces styles sont à la disposition des auteurs au niveau de la boîte du sélecteur de style dans la boîte de dialogue de propriétés de la cellule ou du tableau. Les styles sont disponibles lors de la modification d’un tableau dans un composant Texte (ou dérivé), et non dans le composant Tableau standard.{#tablestyles}
+Les styles sont généralement appliqués au texte, mais un jeu de styles distinct peut également être appliqué à un tableau ou à certaines cellules de tableau. Ces styles sont à la disposition des auteurs au niveau de la boîte du sélecteur de style dans la boîte de dialogue de propriétés de la cellule ou du tableau. Les styles sont disponibles lors de la modification d’un tableau dans un composant Texte (ou dérivé), et non dans le composant Tableau standard.
 
-[!NOTE]
+>[!NOTE]
+Vous pouvez définir des styles pour les tableaux et les cellules uniquement pour l’IU classique.
 
->[!NOTE]Vous pouvez définir des styles pour les tableaux et les cellules uniquement pour l’IU classique.
-[!NOTE]
+>[!NOTE]
+La copie et le collage de tableaux dans ou à partir d’un composant d’éditeur de texte enrichi dépendent du navigateur. Ils ne sont pas pris en charge nativement pour tous les navigateurs. Vous pouvez obtenir des résultats variables selon la structure du tableau et le navigateur. Par exemple, lorsque vous copiez et collez un tableau dans un composant RTE dans Mozilla Firefox dans l’interface utilisateur classique et l’interface utilisateur tactile, la disposition du tableau n’est pas conservée.
 
->[!NOTE]La copie et le collage de tableaux dans ou à partir d’un composant d’éditeur de texte enrichi dépendent du navigateur. Ils ne sont pas pris en charge nativement pour tous les navigateurs. Vous pouvez obtenir des résultats variables selon la structure du tableau et le navigateur. Par exemple, lorsque vous copiez et collez un tableau dans un composant RTE dans Mozilla Firefox dans l’interface utilisateur classique et l’interface utilisateur tactile, la disposition du tableau n’est pas conservée.
-Within your component navigate to the node `<rtePlugins-node>/table`. Créez les nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
+1. Within your component navigate to the node `<rtePlugins-node>/table`. Créez les nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
+1. Create the `features` property on the `table` node:
 
-1. Create the `features` property on the `table` node:](#activateplugin)
-1. **Nom** `features`
-
+   * **Nom** `features`
    * **Type** `String`
    * **Valeur** `*`
-   * [!NOTE]**`*`
 
-   >Si vous ne souhaitez pas activer toutes les fonctionnalités de tableau, vous pouvez créer la propriété `features`, comme suit :
-   **Type** `String[]`
-   * **Valeurs** Un ou deux des éléments ci-dessous, au besoin :`String[]`
+   >[!NOTE]
+   Si vous ne souhaitez pas activer toutes les fonctionnalités de tableau, vous pouvez créer la propriété `features`, comme suit :
+   * **Type** `String[]`
 
-   * `table` pour permettre de modifier les propriétés du tableau, dont les styles.**
+   * **Valeurs** Un ou deux des éléments ci-dessous, au besoin :
+      * `table` pour permettre de modifier les propriétés du tableau, dont les styles.
       * `cellprops` pour autoriser la modification des propriétés des cellules, y compris les styles.
-      * Définissez l’emplacement des feuilles de style CSS pour y faire référence. Voir [Spécification de l’emplacement d’une feuille de style](#locationofstylesheet), car il s’agit de la même procédure que lorsque vous définissez des [styles de texte](#textstyles). L’emplacement peut être défini si vous avez défini d’autres styles.
 
 
-1. Sous le nœud `table`, créez les nœuds suivants (au besoin) :](#locationofstylesheet)[](#textstyles)
-1. Pour définir des styles pour le tableau entier (disponibles sous **Propriétés du tableau**) :
+1. Définissez l’emplacement des feuilles de style CSS pour y faire référence. Voir [Spécification de l’emplacement d’une feuille de style](#locationofstylesheet), car il s’agit de la même procédure que lorsque vous définissez des [styles de texte](#textstyles). L’emplacement peut être défini si vous avez défini d’autres styles.
+1. Sous le nœud `table`, créez les nœuds suivants (au besoin) :
 
-   * **Nom** `tableStyles`
+   * Pour définir des styles pour le tableau entier (disponibles sous **Propriétés du tableau**) :
 
+      * **Nom** `tableStyles`
       * **Type** `cq:WidgetCollection`
-      * Pour définir des styles pour des cellules individuelles (disponibles sous **Propriétés de la cellule**) :`cq:WidgetCollection`
-   * **Nom** `cellStyles`
+   * Pour définir des styles pour des cellules individuelles (disponibles sous **Propriétés de la cellule**) :
 
+      * **Nom** `cellStyles`
       * **Type** `cq:WidgetCollection`
-      * Create a new node (under the `tableStyles` or `cellStyles` node as appropriate) to represent an individual style:`cq:WidgetCollection`
 
 
-1. **Nom** vous pouvez spécifier le nom, mais il doit refléter le style.
+1. Create a new node (under the `tableStyles` or `cellStyles` node as appropriate) to represent an individual style:
 
+   * **Nom** vous pouvez spécifier le nom, mais il doit refléter le style.
    * **Type** `nt:unstructured`
-   * **Sur ce nœud, créez les propriétés :**`nt:unstructured`
 
-1. Pour définir le style CSS à référencer
+1. Sur ce nœud, créez les propriétés :
 
-   * **Nom** `cssName`
+   * Pour définir le style CSS à référencer
 
+      * **Nom** `cssName`
       * **Type** `String`
       * **Valeur** du nom de la classe CSS (sans précédent `.`, par exemple, `cssClass` au lieu de `.cssClass`)
-      * **Pour définir un texte descriptif à afficher dans le sélecteur de liste déroulante**`.``cssClass``.cssClass`
-   * **Nom** `text`
+   * Pour définir un texte descriptif à afficher dans le sélecteur de liste déroulante
 
+      * **Nom** `text`
       * **Type** `String`
-      * **Valeur** Texte à afficher dans la liste de sélection`String`
-      * **Enregistrez toutes les modifications.**
+      * **Valeur** Texte à afficher dans la liste de sélection
 
 
-1. Répétez les étapes ci-dessus pour chaque style requis.
+1. Enregistrez toutes les modifications.
 
-Configuration d’en-têtes masquées dans les tableaux pour l’accessibilité {#hiddenheader}
+Répétez les étapes ci-dessus pour chaque style requis.
 
-### Dans certains cas, vous pouvez créer des tableaux de données sans texte visuel dans un en-tête de colonne en supposant que l’objectif de l’en-tête est induit par la relation visuelle de la colonne avec d’autres colonnes. Dans ce cas, il est nécessaire d’indiquer un texte masqué à l’intérieur de la cellule d’en-tête pour permettre aux lecteurs d’écran et aux autres dispositifs d’assistance d’aider les utilisateurs, indépendamment de leur validité, à comprendre l’objectif de la colonne.{#hiddenheader}
+### Configuration d’en-têtes masquées dans les tableaux pour l’accessibilité {#hiddenheader}
+
+Dans certains cas, vous pouvez créer des tableaux de données sans texte visuel dans un en-tête de colonne en supposant que l’objectif de l’en-tête est induit par la relation visuelle de la colonne avec d’autres colonnes. Dans ce cas, il est nécessaire d’indiquer un texte masqué à l’intérieur de la cellule d’en-tête pour permettre aux lecteurs d’écran et aux autres dispositifs d’assistance d’aider les utilisateurs, indépendamment de leur validité, à comprendre l’objectif de la colonne.
 
 Pour améliorer l’accessibilité dans de telles situations, l’éditeur de texte enrichi prend en charge les cellules d’en-tête masquées. De plus, il fournit des paramètres de configuration associés aux en-têtes masqués dans les tableaux. Ces paramètres vous permettent d’appliquer des styles CSS aux en-têtes masqués en mode de modification et de prévisualisation. Pour aider les créateurs à identifier les en-têtes masqués en mode modification, incluez les paramètres ci-dessous dans votre code :
 
-`hiddenHeaderEditingCSS`: Indique le nom de la classe CSS appliquée à la cellule d’en-tête masqué, lorsque RTE est modifié.
-
+* `hiddenHeaderEditingCSS`: Indique le nom de la classe CSS appliquée à la cellule d’en-tête masqué, lorsque RTE est modifié.
 * `hiddenHeaderEditingStyle`: Indique une chaîne Style appliquée à la cellule d’en-tête masqué lorsque RTE est modifié.
-* `hiddenHeaderEditingStyle`Si vous spécifiez la chaîne CSS et la chaîne Style dans le code, la classe CSS prévaut sur la chaîne Style et peut remplacer les modifications apportées à la configuration en raison de la chaîne Style.
+
+Si vous spécifiez la chaîne CSS et la chaîne Style dans le code, la classe CSS prévaut sur la chaîne Style et peut remplacer les modifications apportées à la configuration en raison de la chaîne Style.
 
 Pour aider les auteurs à appliquer des CSS aux en-têtes masqués en mode prévisualisation, vous pouvez inclure les paramètres suivants dans votre code :
 
-`hiddenHeaderClassName` : spécifie le nom de la classe CSS appliquée à la cellule d’en-tête masqué en mode aperçu.
-
+* `hiddenHeaderClassName` : spécifie le nom de la classe CSS appliquée à la cellule d’en-tête masqué en mode aperçu.
 * `hiddenHeaderStyle` : spécifie une chaîne Style appliquée à la cellule d’en-tête masqué en mode aperçu.
-* `hiddenHeaderStyle`Si vous spécifiez la chaîne CSS et la chaîne Style dans le code, la classe CSS prévaut sur la chaîne Style et peut remplacer les modifications apportées à la configuration en raison de la chaîne Style.
 
-Ajout de dictionnaires au vérificateur orthographique {#adddict}
+Si vous spécifiez la chaîne CSS et la chaîne Style dans le code, la classe CSS prévaut sur la chaîne Style et peut remplacer les modifications apportées à la configuration en raison de la chaîne Style.
 
-## Lorsque le module externe Contrôle d’orthographe est activé, l’éditeur de texte enrichi utilise les dictionnaires de chaque langue appropriée. Ils sont sélectionnés en fonction de la langue du site web, d’après la propriété language de la sous-arborescence ou à partir de la langue de l’adresse URL, par exemple. the `/en/` branch is checked as English, the `/de/` branch as German.
+## Ajout de dictionnaires au vérificateur orthographique {#adddict}
 
-[!NOTE]`/de/`
+Lorsque le module externe Contrôle d’orthographe est activé, l’éditeur de texte enrichi utilise les dictionnaires de chaque langue appropriée. Ils sont sélectionnés en fonction de la langue du site web, d’après la propriété language de la sous-arborescence ou à partir de la langue de l’adresse URL, par exemple. the `/en/` branch is checked as English, the `/de/` branch as German.
 
->[!NOTE]Le message « Échec de la vérification orthographique » s’affiche si le système tenter d’effectuer une vérification pour une langue non installée.
+>[!NOTE]
+Le message « Échec de la vérification orthographique » s’affiche si le système tenter d’effectuer une vérification pour une langue non installée.
+
 Une installation AEM standard comprend les dictionnaires pour les langues suivantes :
 
-Anglais américain (en_us)
-
+* Anglais américain (en_us)
 * Anglais britannique (en_gb)
-* [!NOTE]
 
->The standard dictionaries are located at `/libs/cq/spellchecker/dictionaries`, along with the appropriate readme files. Ne modifiez pas les fichiers.
-Pour ajouter d’autres dictionnaires, si nécessaire, procédez comme suit.`/libs/cq/spellchecker/dictionaries`
+>[!NOTE]
+The standard dictionaries are located at `/libs/cq/spellchecker/dictionaries`, along with the appropriate readme files. Ne modifiez pas les fichiers.
 
-Accédez à la page [https://extensions.openoffice.org/[#$tu323].
+Pour ajouter d’autres dictionnaires, si nécessaire, procédez comme suit.
 
-1. 
-1. [!CAUTION]
+1. Accédez à la page [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
+1. Sélectionnez la langue de votre choix et téléchargez le fichier ZIP contenant les définitions de l’orthographe. Extrayez le contenu de l’archive dans votre système de fichiers.
 
-   >Seuls les dictionnaires au format `MySpell` for OpenOffice.org v2.0.1 ou version inférieure, sont pris en charge. Comme les dictionnaires sont désormais des fichiers archives, il est recommandé de les vérifier après les avoir téléchargés.
-   Recherchez les fichiers .aff et.dic. Conservez le nom en lettres minuscules. Par exemple, `de_de.aff` et `de_de.dic`.
+   >[!CAUTION]
+   Seuls les dictionnaires au format `MySpell` for OpenOffice.org v2.0.1 ou version inférieure, sont pris en charge. Comme les dictionnaires sont désormais des fichiers archives, il est recommandé de les vérifier après les avoir téléchargés.
 
-1. Load the .aff and .dic files in the repository at `/apps/cq/spellchecker/dictionaries`.`de_de.dic`
-1. [!NOTE]
+1. Recherchez les fichiers .aff et.dic. Conservez le nom en lettres minuscules. Par exemple, `de_de.aff` et `de_de.dic`.
+1. Load the .aff and .dic files in the repository at `/apps/cq/spellchecker/dictionaries`.
 
->[!NOTE]Le vérificateur orthographique de l’éditeur de texte enrichi est disponible sur demande. Il n’est pas exécuté automatiquement lorsque vous commencez à saisir du texte.
+>[!NOTE]
+Le vérificateur orthographique de l’éditeur de texte enrichi est disponible sur demande. Il n’est pas exécuté automatiquement lorsque vous commencez à saisir du texte.
 Pour exécuter le vérificateur orthographique, appuyez/cliquez sur le bouton Vérificateur orthographique de la barre d’outils. L’éditeur de texte enrichi vérifie l’orthographe des mots et souligne les mots mal orthographiés.
 Si vous incorporez des modifications que le vérificateur orthographique suggère, l’état des modifications apportées au texte et les mots mal orthographiés n’est plus mis en surbrillance. Pour exécuter la vérification orthographique, appuyez/cliquez de nouveau sur le bouton Vérificateur orthographique.
-Configuration de la taille de l’historique pour les actions d’annulation et de rétablissement {#undohistory}
 
-## L’éditeur de texte enrichi permet aux auteurs d’annuler ou de rétablir quelques-unes des dernières modifications. Par défaut, 50 modifications sont stockées dans l’historique. Vous pouvez configurer cette valeur, au besoin.{#undohistory}
+## Configuration de la taille de l’historique pour les actions d’annulation et de rétablissement {#undohistory}
 
-Within your component navigate to the node `<rtePlugins-node>/undo`. Créez ces nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
+L’éditeur de texte enrichi permet aux auteurs d’annuler ou de rétablir quelques-unes des dernières modifications. Par défaut, 50 modifications sont stockées dans l’historique. Vous pouvez configurer cette valeur, au besoin.
 
-1. Sur le nœud `undo`, créez la propriété :[](#activateplugin)
-1. **Nom** `maxUndoSteps`
+1. Within your component navigate to the node `<rtePlugins-node>/undo`. Créez ces nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
+1. Sur le nœud `undo`, créez la propriété :
 
+   * **Nom** `maxUndoSteps`
    * **Type** `Long`
    * **Valeur** Nombre d’étapes annulées à enregistrer dans l’historique. La valeur par défaut est de 50. Utilisez `0` pour désactiver complètement l&#39;annulation/la restauration.
-   * **Enregistrez les modifications.**`0`
 
-1. Configuration de la taille de tabulation {#tabsize}
+1. Enregistrez les modifications.
 
-## Lorsque le caractère de tabulation est activé dans un texte, un nombre prédéfini d’espaces est inséré. Par défaut, il s’agit de trois espaces insécables et d’un espace.{#tabsize}
+## Configuration de la taille de tabulation {#tabsize}
+
+Lorsque le caractère de tabulation est activé dans un texte, un nombre prédéfini d’espaces est inséré. Par défaut, il s’agit de trois espaces insécables et d’un espace.
 
 Pour définir la taille de la tabulation :
 
-In your component, navigate to the node `<rtePlugins-node>/keys`. Créez les nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
+1. In your component, navigate to the node `<rtePlugins-node>/keys`. Créez les nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
+1. Sur le nœud `keys`, créez la propriété :
 
-1. Sur le nœud `keys`, créez la propriété :[](#activateplugin)
-1. **Nom** `tabSize`
-
+   * **Nom** `tabSize`
    * **Type** `String`
-   * **Valeur** Nombre d’espaces à utiliser pour le tabulateur.`String`
-   * **Enregistrez les modifications.**
+   * **Valeur** Nombre d’espaces à utiliser pour le tabulateur.
 
-1. Définition de la marge de retrait {#indentmargin}
+1. Enregistrez les modifications.
 
-## Lorsque la mise en retrait est activée (par défaut), vous pouvez définir la taille du retrait :{#indentmargin}
+## Définition de la marge de retrait {#indentmargin}
 
-[!NOTE]
+Lorsque la mise en retrait est activée (par défaut), vous pouvez définir la taille du retrait :
 
->[!NOTE]Cette taille de retrait n’est appliquée qu’aux paragraphes (blocs) de texte. Elle n’affecte pas la mise en retrait des listes réelles.
-Within your component navigate to the node `<rtePlugins-node>/lists`. Créez ces nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
+>[!NOTE]
+Cette taille de retrait n’est appliquée qu’aux paragraphes (blocs) de texte. Elle n’affecte pas la mise en retrait des listes réelles.
 
-1. On the `lists` node create the `identSize` parameter:](#activateplugin)
-1. **Name** (Nom) : `identSize`
+1. Within your component navigate to the node `<rtePlugins-node>/lists`. Créez ces nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
+1. On the `lists` node create the `identSize` parameter:
 
+   * **Name** (Nom) : `identSize`
    * **Type**: `Long`
-   * **Valeur** Nombre de pixels nécessaires pour la marge en retrait.`Long`
-   * Configuration de la hauteur de l’espace modifiable {#editablespace}**
+   * **Valeur** Nombre de pixels nécessaires pour la marge en retrait.
 
-## [!NOTE]
+## Configuration de la hauteur de l’espace modifiable {#editablespace}
 
->[!NOTE]Ceci s’applique uniquement lors de l’utilisation de l’ETC dans une boîte de dialogue (sans modification statique dans l’interface utilisateur classique).
+>[!NOTE]
+Ceci s’applique uniquement lors de l’utilisation de l’ETC dans une boîte de dialogue (sans modification statique dans l’interface utilisateur classique).
+
 Vous pouvez définir la hauteur de l’espace modifiable affiché dans la boîte de dialogue du composant :
 
-On the `../items/text` node in the dialog definition for the component, create a new property:
+1. On the `../items/text` node in the dialog definition for the component, create a new property:
 
-1. **Nom** `height`
-
+   * **Nom** `height`
    * **Type** `Long`
-   * **Valeur** Hauteur du canevas de publication, exprimée en pixels.`Long`
-   * [!NOTE]**
+   * **Valeur** Hauteur du canevas de publication, exprimée en pixels.
 
-   >[!NOTE]Cette opération ne modifie pas la hauteur de la fenêtre de la boîte de dialogue.
-   Enregistrez les modifications.
+   >[!NOTE]
+   Cette opération ne modifie pas la hauteur de la fenêtre de la boîte de dialogue.
 
-1. Configuration des styles et des protocoles pour les liens {#linkstyles}
+1. Enregistrez les modifications.
 
-## Lorsque vous ajoutez des liens dans AEM, vous pouvez définir les éléments suivants :{#linkstyles}
+## Configuration des styles et des protocoles pour les liens {#linkstyles}
 
-Styles CSS à utiliser
+Lorsque vous ajoutez des liens dans AEM, vous pouvez définir les éléments suivants :
 
+* Styles CSS à utiliser
 * Protocoles admis automatiquement
-* Pour configurer la façon dont les liens sont ajoutés dans AEM à partir d’un autre programme, définissez des règles HTML.
 
-À l’aide de CRXDE Lite, cherchez le composant Texte pour votre projet.
+Pour configurer la façon dont les liens sont ajoutés dans AEM à partir d’un autre programme, définissez des règles HTML.
 
+1. À l’aide de CRXDE Lite, cherchez le composant Texte pour votre projet.
 1. Create a new node at the same level as `<rtePlugins-node>`, that is, create the node under the parent node of `<rtePlugins-node>`:
-1. **Nom** `htmlRules`
 
+   * **Nom** `htmlRules`
    * **Type** `nt:unstructured`
-   * [!NOTE]**`nt:unstructured`
 
-   >The `../items/text` node has the property:
-   **Nom** `xtype`
+   >[!NOTE]
+   The `../items/text` node has the property:
+   * **Nom** `xtype`
    * **Type** `String`
    * **Valeur** `richtext`
-   * The location of the `../items/text` node can vary, depending on the structure of your dialog; two examples include:**`richtext`
 
-   `/apps/myProject>/components/text/dialog/items/text`
+   The location of the `../items/text` node can vary, depending on the structure of your dialog; two examples include:
+   * `/apps/myProject>/components/text/dialog/items/text`
    * `/apps/<myProject>/components/text/dialog/items/panel/items/text`
-   * Sous `htmlRules`, créez un nœud.
 
 
-1. **Nom** `links`
+1. Sous `htmlRules`, créez un nœud.
 
+   * **Nom** `links`
    * **Type** `nt:unstructured`
-   * Sous le nœud `links`, définissez les propriétés, au besoin :**`nt:unstructured`
 
-1. Style CSS pour les liens internes :`links`
+1. Sous le nœud `links`, définissez les propriétés, au besoin :
 
-   * **Nom** `cssInternal`
+   * Style CSS pour les liens internes :
 
+      * **Nom** `cssInternal`
       * **Type** `String`
       * **Valeur** Nom de la classe CSS (non précédé d’un point « . ». ; for example, `cssClass` instead of `.cssClass`)
-      * **Style CSS pour les liens externes**`cssClass``.cssClass`
-   * **Nom** `cssExternal`
+   * Style CSS pour les liens externes
 
+      * **Nom** `cssExternal`
       * **Type** `String`
       * **Valeur** Nom de la classe CSS (non précédé d’un point « . ». ; for example, `cssClass` instead of `.cssClass`)
-      * Array of valid **protocols** (including https://, https:// file://, mailto:, amongst others)`cssClass``.cssClass`
-   * **Nom** `protocols`
+   * Array of valid **protocols** (including https://, https:// file://, mailto:, amongst others)
 
+      * **Nom** `protocols`
       * **Type** `String[]`
-      * **Valeurs** Un ou plusieurs protocoles`String[]`
-      * **defaultProtocol** (propriété de type **String**) : protocole à utiliser si l’utilisateur n’en a pas spécifié un explicitement.
-   * **Nom** `defaultProtocol`**
+      * **Valeurs** Un ou plusieurs protocoles
+   * **defaultProtocol** (propriété de type **String**) : protocole à utiliser si l’utilisateur n’en a pas spécifié un explicitement.
 
+      * **Nom** `defaultProtocol`
       * **Type** `String`
-      * **Valeurs** Un ou plusieurs protocoles par défaut`String`
-      * **Définition de la gestion de l’attribut cible d’un lien. Créez un nœud :**
-   * **Nom** `targetConfig`
+      * **Valeurs** Un ou plusieurs protocoles par défaut
+   * Définition de la gestion de l’attribut cible d’un lien. Créez un nœud :
 
+      * **Nom** `targetConfig`
       * **Type** `nt:unstructured`
-      * Sur le nœud `targetConfig` : définissez les propriétés nécessaires :**`nt:unstructured`
 
-      Spécifiez le mode cible :`targetConfig`
+      Sur le nœud `targetConfig` : définissez les propriétés nécessaires :
 
-      * **Nom** `mode`
+      * Spécifiez le mode cible :
 
+         * **Nom** `mode`
          * **Type** `String`)
-         * **Valeurs** :`String`
-         * `auto`: signifie qu&#39;une cible automatique est choisie**
+         * **Valeurs** :
 
-            * (spécifié par la `targetExternal` propriété pour les liens externes ou `targetInternal` pour les liens internes).
+            * `auto`: signifie qu&#39;une cible automatique est choisie
 
-               `manual` : non applicable dans ce contexte`targetInternal`
+               (spécifié par la `targetExternal` propriété pour les liens externes ou `targetInternal` pour les liens internes).
 
+            * `manual` : non applicable dans ce contexte
             * `blank` : non applicable dans ce contexte
-            * `blank`Cible des liens internes :
-      * **Nom** `targetInternal`
+      * Cible des liens internes :
 
+         * **Nom** `targetInternal`
          * **Type** `String`
          * **Valeur** de la cible pour les liens internes (à utiliser uniquement lorsque le &quot;mode&quot; est `auto`)
-         * **Cible des liens externes :**`auto`
-      * **Nom** `targetExternal`
+      * Cible des liens externes :
 
+         * **Nom** `targetExternal`
          * **Type** `String`
          * **Valeur** Cible des liens externes (utilisé uniquement lorsque le mode est `auto`).
-         * **Enregistrez toutes les modifications.**`auto`
 
 
 
@@ -779,4 +782,4 @@ Styles CSS à utiliser
 
 
 
-1. Save all changes.
+1. Enregistrez toutes les modifications.
