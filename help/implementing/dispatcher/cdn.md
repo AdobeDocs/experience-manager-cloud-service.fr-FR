@@ -2,10 +2,10 @@
 title: CDN dans AEM en tant que service Cloud
 description: CDN dans AEM en tant que service Cloud
 translation-type: tm+mt
-source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 97%
+source-wordcount: '889'
+ht-degree: 80%
 
 ---
 
@@ -31,20 +31,22 @@ Vous trouverez ci-dessous une matrice de décision pour comparer les deux option
 | **Conditions préalables** | Aucune | Réseau de diffusion de contenu existant onéreux à remplacer. Doit démontrer un test de charge réussi avant sa mise en opération. |
 | **Expertise dans le réseau de diffusion de contenu** | Aucune | Nécessite au moins un ingénieur à temps partiel ayant des connaissances approfondies du réseau de diffusion de contenu et capable de configurer le réseau de diffusion de contenu du client. |
 | **Sécurité** | Géré par Adobe. | Géré par Adobe (et éventuellement par le client sur son propre réseau de diffusion de contenu). |
-| **Performances** | Optimisé par Adobe. | Bénéficiera de certaines fonctionnalités du réseau de diffusion de contenu AEM, mais potentiellement un faible gain en performances en raison du saut supplémentaire. **Remarque** : les sauts entre le réseau de diffusion de contenu client et le réseau de diffusion de contenu prêt à l’emploi d’Adobe peuvent être efficaces. |
+| **Performances** | Optimisé par Adobe. | Bénéficiera de certaines fonctionnalités du réseau de diffusion de contenu AEM, mais potentiellement un faible gain en performances en raison du saut supplémentaire. **Remarque** : Les sauts entre le réseau de diffusion de contenu client et le réseau de diffusion de contenu prêt à l’emploi d’Adobe peuvent être efficaces. |
 | **Mise en cache** | Prend en charge les en-têtes de cache appliqués au Dispatcher. | Prend en charge les en-têtes de cache appliqués au Dispatcher. |
 | **Fonctionnalités de compression d’images et de vidéos** | Peut fonctionner avec Adobe Dynamic Media. | Peut fonctionner avec Adobe Dynamic Media ou avec la solution d’image/vidéo du réseau de diffusion de contenu géré par le client. |
 
 ## Réseau de diffusion de contenu géré par AEM {#aem-managed-cdn}
 
-La préparation de la diffusion de contenu à l’aide du réseau de diffusion de contenu prêt à l’emploi d’Adobe est simple, comme décrit ci-dessous :
+Suivez ces instructions pour préparer la diffusion du contenu en utilisant le CDN prêt à l’emploi Adobe :
 
 1. Vous fournirez le certificat SSL signé et la clé secrète à Adobe en partageant un lien vers un formulaire sécurisé contenant ces informations. Veuillez coordonner cette tâche avec le service clientèle.
    **Remarque :** AEM as a Cloud Service ne prend pas en charge les certificats DV (Domain Validated, domaines validés).
 1. Vous devez indiquer au service clientèle les informations suivantes :
-   * Quel domaine personnalisé doit être associé à un environnement donné, tel que défini par l’ID de programme et l’ID d’environnement.
+   * Quel domaine personnalisé doit être associé à un environnement donné, tel que défini par l’ID de programme et l’ID d’environnement. Notez que les domaines personnalisés côté auteur ne sont pas pris en charge.
    * Si une liste blanche d’adresses IP est nécessaire pour limiter le trafic à destination d’un environnement donné.
-1. Le service clientèle coordonnera alors avec vous le timing d’un enregistrement DNS CNAME, en pointant son nom de domaine complet vers `cdn.adobeaemcloud.com`.
+1. Vous devez coordonner votre travail avec le service clientèle sur le timing des modifications nécessaires apportées aux enregistrements DNS. Les instructions sont différentes selon qu’un enregistrement apex est nécessaire ou non :
+   * si aucun enregistrement apex n’est nécessaire, les clients doivent définir l’enregistrement DNS CNAME pour qu’il pointe leur nom de domaine complet sur `cdn.adobeaemcloud.com`.
+   * si un enregistrement apex est nécessaire, créez un enregistrement A pointant vers les adresses IP suivantes : 151.101.3.10, 151.101.67.10, 151.101.131.10, 151.101.195.10. Les clients ont besoin d&#39;un enregistrement apex si le nom de domaine complet correspond à la zone DNS. Vous pouvez le tester en utilisant la commande dig Unix pour vérifier si la valeur SOA de la sortie correspond au domaine. Par exemple, la commande `dig anything.dev.adobeaemcloud.com` renvoie un SOA (Début d&#39;autorité, c&#39;est-à-dire la zone) de `dev.adobeaemcloud.com` sorte qu&#39;il ne s&#39;agisse pas d&#39;un enregistrement APEX, alors que `dig dev.adobeaemcloud.com` renvoie un SOA de `dev.adobeaemcloud.com` sorte qu&#39;il s&#39;agit d&#39;un enregistrement apex.
 1. Vous serez averti lorsque les certificats SSL arriveront à expiration afin que vous puissiez soumettre à nouveau les nouveaux certificats SSL.
 
 **Limitation du trafic**
