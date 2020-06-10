@@ -2,17 +2,20 @@
 title: Mise en cache dans AEM en tant que service Cloud
 description: 'Mise en cache dans AEM en tant que service Cloud '
 translation-type: tm+mt
-source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 98%
+source-wordcount: '1358'
+ht-degree: 85%
 
 ---
 
 
 # Présentation {#intro}
 
-La mise en cache sur le réseau de diffusion de contenu peut être configurée à l’aide des règles du Dispatcher. Notez que le Dispatcher respecte également les en-têtes d’expiration de cache qui en résultent si `enableTTL` est activé dans sa configuration, ce qui implique qu’il actualisera un contenu spécifique même en dehors du contenu en cours de republication.
+Le trafic passe par le CDN à une couche de serveur Web apache, qui prend en charge les modules, y compris le répartiteur. Afin d’améliorer les performances, le répartiteur est principalement utilisé comme cache pour limiter le traitement sur les noeuds de publication.
+Des règles peuvent être appliquées à la configuration du répartiteur pour modifier les paramètres d’expiration du cache par défaut, ce qui entraîne la mise en cache sur le CDN. Note that dispatcher also respects the resulting cache expiration headers if `enableTTL` is enabled in the dispatcher configuration, implying that it will refresh specific content even outside of content being republished.
+
+Cette page décrit également comment le cache du répartiteur est invalidé, ainsi que le fonctionnement de la mise en cache au niveau du navigateur en ce qui concerne les bibliothèques côté client.
 
 ## Mise en cache {#caching}
 
@@ -33,6 +36,14 @@ Vous devez vous assurer qu’un fichier sous `src/conf.dispatcher.d/cache` compo
 ```
 /0000
 { /glob "*" /type "allow" }
+```
+
+* Pour empêcher la mise en cache d’un contenu spécifique, définissez l’en-tête Cache-Control sur &quot;private&quot;. Par exemple, les éléments suivants empêcheraient la mise en cache du contenu html situé sous un répertoire nommé &quot;myfolder&quot; :
+
+```
+<LocationMatch "\/myfolder\/.*\.(html)$">.  // replace with the right regex
+    Header set Cache-Control “private”
+</LocationMatch>
 ```
 
 * Notez que d’autres méthodes, y compris le [projet ACS Commons AEM dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), ne remplaceront pas les valeurs.
@@ -70,13 +81,9 @@ Assurez-vous que les ressources destinées à être conservées en privé plutô
 * La valeur par défaut ne peut pas être définie avec la variable `EXPIRATION_TIME` utilisée pour les types de fichiers html/texte.
 * L’expiration du cache peut être définie avec la même stratégie LocationMatch décrite dans la section html/texte en spécifiant l’expression régulière appropriée.
 
-## Dispatcher {#disp}
+## Invalidation du cache du répartiteur {#disp}
 
-Le trafic passe par un serveur web apache, qui prend en charge les modules, y compris le Dispatcher. Le Dispatcher est principalement utilisé comme cache pour limiter le traitement sur les nœuds de publication afin d’améliorer les performances.
-
-Comme décrit dans la section de mise en cache du réseau de diffusion de contenu, des règles peuvent être appliquées à la configuration du Dispatcher pour modifier les paramètres d’expiration de cache par défaut.
-
-Le reste de cette section décrit les considérations liées à l’invalidation du cache du Dispatcher. Pour la plupart des clients, il ne doit pas être nécessaire d’invalider le cache du Dispatcher, mais plutôt de laisser le Dispatcher actualiser son cache lors de la republication du contenu, et le réseau de diffusion de contenu respecter les en-têtes d’expiration du cache.
+En général, il ne doit pas être nécessaire d&#39;invalider le cache du répartiteur. Vous devez plutôt vous fier au répartiteur qui actualise son cache lorsque le contenu est republié et au CDN qui respecte les en-têtes d’expiration du cache.
 
 ### Invalidation du cache du Dispatcher pendant l’activation/la désactivation {#cache-activation-deactivation}
 
