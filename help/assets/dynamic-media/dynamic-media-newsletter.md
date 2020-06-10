@@ -2,10 +2,10 @@
 description: 'La newsletter Dynamic Media d’Experience League est un bulletin d’information mensuel. Il est conçu pour vous aider à vous familiariser avec Dynamic Media et Dynamic Media Classic afin que vous puissiez commencer à en tirer parti immédiatement. De précieuses ressources d’acquisition de connaissances sont disponibles dans cette newsletter, notamment des informations sur la façon de réaliser des vidéos, des aperçus des solutions et des présentations de certaines fonctionnalités importantes telles que les paramètres d’image prédéfinis, les paramètres prédéfinis de la visionneuse, les profils vidéo, etc. '
 title: Newsletter Dynamic Media
 translation-type: tm+mt
-source-git-commit: 1ee8cd31a83850d0d6c90cb5452015a57ee728ef
+source-git-commit: 6eb9f2fd6f692df26e4bd1b56cbc18db84b2f53f
 workflow-type: tm+mt
-source-wordcount: '1200'
-ht-degree: 100%
+source-wordcount: '1283'
+ht-degree: 93%
 
 ---
 
@@ -22,6 +22,21 @@ Dans cette newsletter, découvrez des ressources précieuses pour développer vo
 
 ## Vous avez raté un numéro de la newsletter Dynamic Media ?
 
+* **[Mai 2020, numéro 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
+
+   Dans ce numéro :
+
+   * Ce que la continuité d&#39;activité signifie en périodes incertaines.
+   * Principaux points à retenir du premier sommet Adobe entièrement numérique.
+   * Doit surveiller les sessions de sous-traitance d’Experience Manager.
+   * Points phares du client du sommet : Sous blindés.
+   * Ne manquez jamais un webinaire Experience Insider.
+   * Les points phares du secteur public : Le besoin urgent d&#39;inscription numérique.
+   * Découvrez les nouveautés d’Experience Manager Innovation.
+   * Créez vos compétences Experience Manager *en direct* avec les professionnels Adobe.
+   * Connectez-vous à la communauté Adobe Experience Manager.
+   * Effectuez un suivi rapide de votre expertise Adobe avec Adobe Experience League.
+
 * **[Avril 2020, numéro 3](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@DRPFipWV_3bgH_oxl1monOhd4auNDxFVTBWB-uKB6lM_BixlVqja2E5Ml7DbtOy6pARL78LPxljqgxEEAr7RBsRp8WOyn-Zw6hQ8MNoFn9i9WMXm.html)**
 
    Dans ce numéro :
@@ -32,6 +47,7 @@ Dans cette newsletter, découvrez des ressources précieuses pour développer vo
    * Regardez les sessions Dynamic Media du sommet Adobe en ligne 2020.
    * En savoir plus sur nos audits Dynamic Media Classic gratuits.
    * Faites la connaissance de John Monroe, responsable de programme senior pour les services de la réussite client.
+
    >[!IMPORTANT]
    >
    >Nous voulons nous assurer que nous n’envoyons la newsletter Dynamic Media qu’à ceux qui veulent la recevoir. Pour continuer à recevoir la newsletter après ce numéro, inscrivez-vous [ici](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0).
