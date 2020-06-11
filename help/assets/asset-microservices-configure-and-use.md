@@ -3,10 +3,10 @@ title: Configuration et utilisation des microservices de ressources pour le trai
 description: Découvrez comment configurer et utiliser les microservices de ressources basés sur le cloud pour traiter des ressources à grande échelle.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '1870'
-ht-degree: 100%
+source-wordcount: '1872'
+ht-degree: 97%
 
 ---
 
@@ -99,9 +99,9 @@ Une valeur vide signifie que le traitement des ressources utilise, par défaut, 
 
 #### Règles d’inclusion du type MIME {#mime-type-inclusion-rules}
 
-Lors du traitement d’une ressource avec un type MIME spécifique, ce dernier est d’abord comparé à la valeur des types MIME exclus pour la spécification de rendu. En cas de correspondance avec cette liste, ce rendu spécifique n’est pas généré pour la ressource (il est mis sur liste noire ou « blacklisté »).
+Lors du traitement d’une ressource avec un type MIME spécifique, ce dernier est d’abord comparé à la valeur des types MIME exclus pour la spécification de rendu. S’il correspond à cette liste, ce rendu spécifique n’est pas généré pour la ressource (liste bloquée).
 
-Dans le cas contraire, le type MIME est comparé au type MIME inclus et, si une correspondance est trouvée, le rendu est généré (il est alors mis sur liste blanche ou « whitelisté »).
+Sinon, le type MIME est vérifié par rapport au type MIME inclus et s&#39;il correspond à la liste, le rendu est généré (liste autorisée).
 
 #### Rendu FPO spécial {#special-fpo-rendition}
 
@@ -177,4 +177,4 @@ Pour plus d’informations sur les étapes de workflow standard pouvant être ut
 
 ## Bonnes pratiques et restrictions {#best-practices-limitations-tips}
 
-* Pour la conception des workflows, prenez en compte vos besoins pour tous les types de rendus. Si vous ne prévoyez pas la nécessité d’un rendu futur, supprimez son étape de création dans le workflow. Il est impossible par la suite de supprimer les rendus en masse. Les rendus non souhaités peuvent occuper beaucoup d’espace de stockage suite à une utilisation prolongée d’[!DNL Experience Manager]. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Si plusieurs ressources sont concernées, vous pouvez, au choix, personnaliser [!DNL Experience Manager] pour supprimer des rendus spécifiques, ou supprimer les ressources et les charger à nouveau.
+* Pour la conception des workflows, prenez en compte vos besoins pour tous les types de rendus. Si vous ne prévoyez pas la nécessité d’un rendu futur, supprimez son étape de création dans le workflow. Il est impossible par la suite de supprimer les rendus en masse. Les rendus superflus peuvent occuper beaucoup d’espace de stockage suite à une utilisation prolongée d’[!DNL Experience Manager]. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Si plusieurs ressources sont concernées, vous pouvez, au choix, personnaliser [!DNL Experience Manager] pour supprimer des rendus spécifiques, ou supprimer les ressources et les charger à nouveau.
