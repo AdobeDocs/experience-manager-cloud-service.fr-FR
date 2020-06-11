@@ -4,10 +4,10 @@ description: Bonnes pratiques pour intégrer une instance AEM à Adobe Creative
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '3300'
-ht-degree: 100%
+source-wordcount: '3302'
+ht-degree: 97%
 
 ---
 
@@ -173,7 +173,7 @@ AEM Assets prend en charge deux types d’utilisateurs selon leur accès au dé
 
 #### Utilisateurs créatifs avec un accès direct à la gestion des ressources numériques    {#creative-users-with-direct-access-to-dam}
 
-En règle générale, les équipes créatives internes, de même que les agences et les professionnels de la création intégrés au réseau interne ont accès à l’instance DAM, et peuvent se connecter à AEM. AEM et l’infrastructure réseau peuvent être configurés afin d’autoriser un accès direct aux parties externes (généralement, des entreprises de confiance telles que des agences travaillant pour un client) pour disposer d’un accès à AEM via le réseau (par le biais de la liste blanche des adresses IP ou d’un VPN, par exemple).
+En règle générale, les équipes créatives internes, de même que les agences et les professionnels de la création intégrés au réseau interne ont accès à l’instance DAM, et peuvent se connecter à AEM. AEM et l’infrastructure réseau peuvent être configurés pour permettre un accès direct à des parties externes - généralement des organisations approuvées telles que des agences travaillant pour un client - pour avoir accès à AEM via un réseau, par exemple via un VPN ou une liste IP autorisée.
 
 Dans ce cas, Adobe Asset Link ou l’application de bureau AEM permet d’accéder facilement aux ressources finales/approuvées et d’enregistrer les ressources préparées par les créatifs dans la gestion des ressources numériques.
 
@@ -186,7 +186,7 @@ Utilisez les stratégies suivantes pour fournir un accès aux ressources finales
 * Utilisez l’application de bureau si Asset Link ne fonctionne pas.
 * Utilisez [AEM Assets Brand Portal](https://helpx.adobe.com/fr/experience-manager/brand-portal/user-guide.html) pour distribuer les ressources en toute sécurité aux partenaires externes.
 * Utilisez une implémentation personnalisée d’un portail de distribution et de source basé sur [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* Utilisez la configuration du contrôle d’accès dans AEM et l’infrastructure réseau nécessaire (mise en liste blanche d’adresses IP et VPN, par exemple) pour permettre aux parties externes d’accéder à une zone de contenu dédiée dans DAM. Ils peuvent utiliser l’interface utilisateur web d’AEM pour obtenir des ressources et télécharger du nouveau contenu dans DAM.
+* Utilisez le Contrôle d&#39;accès configuré dans AEM et l’infrastructure réseau nécessaire (par exemple, VPN et IP autorisés à l’énumération) pour permettre à des tiers externes d’accéder à une zone de contenu dédiée dans votre DAM. Ils peuvent utiliser l’interface utilisateur web d’AEM pour obtenir des ressources et télécharger du nouveau contenu dans DAM.
 
 #### Travail en cours sur les ressources d’AEM {#work-in-progress-on-assets-from-aem}
 
