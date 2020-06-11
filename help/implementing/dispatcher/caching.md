@@ -2,7 +2,7 @@
 title: Mise en cache dans AEM en tant que service Cloud
 description: 'Mise en cache dans AEM en tant que service Cloud '
 translation-type: tm+mt
-source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
+source-git-commit: 18c2f70acd33c83a0d98ccb658d3e9be18b34c8b
 workflow-type: tm+mt
 source-wordcount: '1358'
 ht-degree: 85%
@@ -83,7 +83,7 @@ Assurez-vous que les ressources destinées à être conservées en privé plutô
 
 ## Invalidation du cache du répartiteur {#disp}
 
-En général, il ne doit pas être nécessaire d&#39;invalider le cache du répartiteur. Vous devez plutôt vous fier au répartiteur qui actualise son cache lorsque le contenu est republié et au CDN qui respecte les en-têtes d’expiration du cache.
+En général, il n&#39;est pas nécessaire d&#39;invalider le cache du répartiteur. Vous devez plutôt vous fier au répartiteur qui actualise son cache lorsque le contenu est republié et au CDN qui respecte les en-têtes d’expiration du cache.
 
 ### Invalidation du cache du Dispatcher pendant l’activation/la désactivation {#cache-activation-deactivation}
 
