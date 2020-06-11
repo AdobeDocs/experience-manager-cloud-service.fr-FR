@@ -3,10 +3,10 @@ title: Métadonnées XMP
 description: Découvrez la norme de métadonnées XMP (Extensible Metadata Platform) pour la gestion des métadonnées. Elle est utilisée par AEM comme format normalisé pour la création, le traitement et l’échange de métadonnées.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '1456'
-ht-degree: 100%
+source-wordcount: '1483'
+ht-degree: 86%
 
 ---
 
@@ -132,11 +132,11 @@ Les modifications apportées aux métadonnées sont propagées aux rendus thumbn
 
 ### Filtrage des métadonnées XMP {#filtering-xmp-metadata}
 
-AEM Assets prend en charge le filtrage par liste noire et par liste blanche de propriétés/nœuds pour les métadonnées XMP qui sont lues à partir de binaires de ressources et stockées dans JCR quand les ressources sont assimilées.
+AEM Assets prend en charge le filtrage des propriétés/noeuds pour les métadonnées XMP lues à partir des fichiers binaires et stockées dans le JCR lorsque des fichiers sont ingérés. Le filtrage est possible via une liste bloquée et une liste autorisée.
 
-Le filtrage par liste noire vous permet d’importer toutes les propriétés des métadonnées XMP, à l’exception des propriétés spécifiées pour l’exclusion. Cependant, pour les types de ressources tels que les fichiers INDD comportant un très grand nombre de métadonnées XMP (par exemple 1 000 nœuds avec 10 000 propriétés), les noms des nœuds à filtrer ne sont pas toujours connus à l’avance. Si le filtrage par liste noire permet l’importation d’un grand nombre de ressources avec de nombreuses métadonnées XMP, l’instance/cluster AEM peut rencontrer des problèmes de stabilité, par exemple des files d’attente d’observation bloquées.
+Le filtrage à l’aide d’une liste bloquée permet d’importer toutes les propriétés de métadonnées XMP, à l’exception des propriétés spécifiées pour l’exclusion. Cependant, pour les types de ressources tels que les fichiers INDD comportant un très grand nombre de métadonnées XMP (par exemple 1 000 nœuds avec 10 000 propriétés), les noms des nœuds à filtrer ne sont pas toujours connus à l’avance. Si le filtrage à l’aide d’une liste bloquée permet l’importation d’un grand nombre de fichiers avec de nombreuses métadonnées XMP, l’instance/la grappe AEM peut rencontrer des problèmes de stabilité, par exemple des files d’attente d’observation bloquées.
 
-Le filtrage par liste blanche des métadonnées XMP résout le problème en vous permettant de définir les propriétés XMP à importer. De cette façon, les autres propriétés XMP ou les propriétés XMP inconnues sont ignorées. Vous pouvez ajouter certaines de ces propriétés au filtre par liste noire à des fins de compatibilité descendante.
+Le filtrage des métadonnées XMP via la liste autorisée résout ce problème en vous permettant de définir les propriétés XMP à importer. De cette façon, les autres propriétés XMP ou les propriétés XMP inconnues sont ignorées. Pour une compatibilité ascendante, vous pouvez ajouter certaines de ces propriétés au filtre qui utilise une liste bloquée.
 
 >[!NOTE]
 >
@@ -144,16 +144,17 @@ Le filtrage par liste blanche des métadonnées XMP résout le problème en vous
 
 1. Pour ouvrir Configuration Manager, accédez à `https://[aem_server]:[port]/system/console/configMgr`.
 1. Ouvrez la configuration **[!UICONTROL Filtre XMP de gestion des actifs numériques Adobe CQ]**.
-1. Pour appliquer un filtrage par liste blanche, sélectionnez **[!UICONTROL Appliquer la liste blanche aux propriétés XMP]**, puis spécifiez les propriétés à importer dans la zone **[!UICONTROL Noms XML sur liste blanche pour le filtrage XMP]**.
+1. To apply filtering via an allowed list, select **[!UICONTROL Apply Whitelist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Whitelisted XML Names for XMP filtering]** box.
 
-1. Pour filtrer les propriétés XMP sur liste noire après avoir appliqué le filtrage par liste blanche, spécifiez-les dans la zone **[!UICONTROL Noms XML sur liste noire pour le filtrage XMP]**.
+1. To filter out blocked XMP properties after applying filtering via allowed list, specify them in the **[!UICONTROL Blacklisted XML Names for XMP filtering]** box.
 
    >[!NOTE]
    >
-   >L’option **[!UICONTROL Appliquer la liste noire aux propriétés XMP]** est sélectionnée par défaut. Autrement dit, le filtrage par liste noire est activé par défaut. Pour désactiver le filtrage par liste noire, désélectionnez l’option **[!UICONTROL Appliquer la liste noire aux propriétés XMP]**.
+   >L’option **[!UICONTROL Appliquer la liste noire aux propriétés XMP]** est sélectionnée par défaut. En d’autres termes, le filtrage à l’aide d’une liste bloquée est activé par défaut. To disable such filtering, deselect the **[!UICONTROL Apply Blacklist to XMP Properties]** option.
 
 1. Enregistrez les modifications.
 
 >[!MORELIKETHIS]
 >
 >* [Spécification XMP par Adobe](https://www.adobe.com/devnet/xmp.html)
+
