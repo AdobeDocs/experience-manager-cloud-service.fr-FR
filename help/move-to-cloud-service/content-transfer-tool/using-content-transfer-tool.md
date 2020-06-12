@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: f2a6b67e3673bf6dfeb63d445074f6d1e05971cf
+source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
 workflow-type: tm+mt
-source-wordcount: '1543'
-ht-degree: 88%
+source-wordcount: '1582'
+ht-degree: 86%
 
 ---
 
@@ -18,13 +18,15 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * La configuration minimale requise pour l’outil de transfert de contenu est AEM 6.3+ et JAVA 8. Si vous utilisez une version antérieure d’AEM, vous devrez mettre à niveau votre référentiel de contenu à la version AEM 6.5 pour utiliser l’outil de transfert de contenu.
 
-* If you are using a *Sandbox Environment* , ensure that your environment is upgraded to June 10, 2020 Release or later. Si vous utilisez un *environnement de production*, il est automatiquement mis à jour.
+* If you are using a *Sandbox Environment*, ensure that your environment is upgraded to June 10 2020 Release or later. Si vous utilisez un *environnement de production*, il est automatiquement mis à jour.
 
 * Pour utiliser l’outil de transfert de contenu, vous devez être un utilisateur administrateur sur votre instance source et appartenir au groupe d’administrateurs AEM dans l’instance de service Cloud à laquelle vous transférez du contenu. Les utilisateurs non privilégiés ne pourront pas récupérer le jeton d&#39;accès pour utiliser l’outil de transfert de contenu.
 
 * Pendant la phase d’extraction, l’outil de transfert de contenu est exécuté sur une instance source AEM active.
 
 * La *phase d’ingestion* de l’auteur réduira l’ensemble du déploiement de l’auteur. L’auteur AEM ne sera donc pas disponible pendant la totalité du processus d’ingestion.
+
+* La limite supérieure recommandée pour la taille du référentiel que l’outil de transfert de contenu peut prendre en charge à la fois est de 20 Go.
 
 ## Disponibilité {#availability}
 
@@ -208,6 +210,8 @@ ou,
    Vous pouvez également voir les journaux de votre jeu de migration à l’aide de l’écran *Aperçu*. Sélectionnez le jeu de migration et cliquez sur l’état sous le champ **EXTRACTION**. Dans ce cas, cliquez sur **TERMINÉ** pour voir les journaux dans un nouvel onglet.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/view-log3.png)
+
+1. Pour fermer les journaux sans utiliser l’interface utilisateur, vous pouvez SSH dans votre environnement AEM source et faire une queue dans le `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`.
 
 ### Suppression d’un jeu de migration {#deleting-migration-set}
 
