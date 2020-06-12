@@ -2,10 +2,10 @@
 title: Présentation de l’outil de transfert de contenu
 description: Présentation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: f2a6b67e3673bf6dfeb63d445074f6d1e05971cf
+source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 100%
+source-wordcount: '636'
+ht-degree: 82%
 
 ---
 
@@ -54,3 +54,11 @@ Consultez la section ci-dessous pour accéder aux conseils et connaître les bon
 * Lors de la phase d’ingestion, il est recommandé d’exécuter l’ingestion en activant le mode d’*effacement*. Dans ce cas, le référentiel existant (auteur ou publication) de l’environnement AEM Cloud Service cible sera complètement supprimé, puis mis à jour à l’aide des données du jeu de migration. Ce mode est beaucoup plus rapide que le mode sans effacement, où le jeu de migration est appliqué par-dessus le contenu existant.
 
 * Une fois l’activité de transfert de contenu terminée, une structure de projet appropriée est nécessaire dans l’environnement Cloud Service pour s’assurer que le contenu s’affiche correctement.
+
+* Avant d’exécuter l’outil de transfert de contenu, vous devez vous assurer que l’espace disque disponible dans le `crx-quickstart` sous-répertoire de l’instance AEM source est suffisant. Cela est dû au fait que l’outil de transfert de contenu crée une copie locale du référentiel qui est ultérieurement téléchargée dans le jeu de migration.
+La formule générale pour calculer l&#39;espace disque disponible requis est la suivante :
+   *taille de stockage des données + taille de stockage des noeuds * 1,5*
+
+   * Pour la taille *de la banque de* données, l’outil de transfert de contenu utilise 64 Go, même si la taille de la banque de données réelle est plus importante.
+   * La taille *de stockage de* noeuds est la taille du répertoire de stockage de segments ou la taille de la base de données MongoDB.
+Par conséquent, pour une taille de stockage de segments de 20 Go, l’espace disque disponible requis est de 94 Go.
