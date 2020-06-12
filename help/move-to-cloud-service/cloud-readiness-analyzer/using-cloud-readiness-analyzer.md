@@ -2,10 +2,10 @@
 title: Utilisation de Cloud Readiness Analyzer
 description: Utilisation de Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 47773a56f8bb24342281068a8c4d03d6edfb9277
+source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 5%
+source-wordcount: '506'
+ht-degree: 4%
 
 ---
 
@@ -35,42 +35,54 @@ Suivez cette section pour savoir comment exécuter Cloud Readiness Analyzer :
 
 1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Cloud Readiness Analyzer**.
 
-### Affichage des résultats {#viewing-the-results}
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
+
+1. Une fois que vous avez cliqué sur **Cloud Readiness Analyzer**, l’outil début la génération du rapport et, après quelques minutes, vous verrez le rapport généré.
+
+   >[!NOTE]
+   >Vous devrez faire défiler la page vers le bas pour vue au rapport complet.
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
+
+### Affichage des résultats dans le rapport de synthèse {#viewing-the-results}
 
 >[!IMPORTANT]
 >Les rapports générés à partir de Cloud Readiness Analyzer sont basés sur les détecteurs de schémas. Consultez Détecteurs [de](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html) schémas pour plus d’informations.
 
-Il existe deux façons de vue de la sortie à partir de Cloud Readiness Analyzer :
+Une fois que vous avez fait défiler la page jusqu&#39;à la vue du rapport de synthèse complet, vous pouvez voir les informations suivantes pour chacune des catégories surlignées dans le rapport :
 
-1. **Utilisation du rapport organisé**
+1. **Niveau d’importance**
 
-   >[!NOTE]
-   >Le rapport organisé est disponible sur AEM version 6.3 et ultérieure.
+   Le tableau suivant décrit la signification des différents niveaux d’importance du Détecteur de schémas et de l’Analyseur de l’état de préparation du cloud.
 
-   Ou,
+   | Niveau d’importance | Description |
+   |--- |--- |
+   | INFO/0 | Cette conclusion est fournie à titre d&#39;information. |
+   | CONSEILLER/1 | Cette recherche peut poser un problème de mise à niveau. Il est recommandé d&#39;approfondir l&#39;enquête. |
+   | MAJOR/2 | Il est probable que cette découverte soit un problème de mise à niveau qui devrait être résolu. |
+   | CRITIQUE/3 | Il est très probable que cette découverte soit un problème de mise à niveau qui doit être résolu pour éviter toute perte de fonction ou de performances. |
 
-1. **Voir la sortie de l&#39;ARC**
+1. **Description** La description fournit des informations sur la catégorie rapportée.
 
-   Suivez les étapes ci-dessous pour vue de la sortie de Cloud Readiness Analyzer :
+1. **URL** de la documentation L’URL de la documentation vous permet de vue de la documentation technique pour le type associé.
 
-   >[!NOTE]
-   >Les étapes ci-dessous s’appliquent à AEM version 6.1 et ultérieure.
+1. **Message** Description de la recherche dans un seul message.
 
-   1. Accédez à la console **Web** AEM à l’aide de `https://serveraddress:serverport/system/console/configMgr`.
+### Affichage des résultats au format CSV {#viewing-the-results-csv}
 
-   1. Select **Status - Pattern Detector** as shown in the figure below.
+Le rapport récapitulatif est disponible dans l’interface utilisateur d’AEM. Vous pouvez télécharger le rapport complet au format CSV (valeurs séparées par des virgules), ce qui s’avère utile lors du processus de refactorisation.
+
+Suivez les étapes ci-dessous pour générer un format CSV de votre rapport de synthèse :
+
+1. 
+   1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Cloud Readiness Analyzer**.
+
+1. Une fois votre rapport généré, cliquez sur **CSV** pour télécharger le rapport de synthèse complet au format CSV (valeurs séparées par des virgules), comme illustré dans la figure ci-dessous.
+
+![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+
 
 #### Affichage du rapport dans les instances AEM 6.1 {#aem-instances-report}
 
 Vous pouvez télécharger le rapport csv pour AEM 6.1.Ce rapport est en attente.
 
-#### Comprendre les niveaux d&#39;importance dans le rapport {#importance-levels}
-
-Le tableau suivant décrit la signification des différents niveaux d’importance du Détecteur de schémas et de l’Analyseur de l’état de préparation du cloud.
-
-| Niveau d’importance | Description |
-|--- |--- |
-| INFO/0 | Cette conclusion est fournie à titre d&#39;information. |
-| CONSEILLER/1 | Cette recherche peut poser un problème de mise à niveau. Il est recommandé d&#39;approfondir l&#39;enquête. |
-| MAJOR/2 | Il est probable que cette découverte soit un problème de mise à niveau qui devrait être résolu. |
-| CRITIQUE/3 | Il est très probable que cette découverte soit un problème de mise à niveau qui doit être résolu pour éviter toute perte de fonction ou de performances. |
