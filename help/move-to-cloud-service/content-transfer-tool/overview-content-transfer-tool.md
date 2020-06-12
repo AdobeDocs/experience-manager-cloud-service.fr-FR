@@ -2,10 +2,10 @@
 title: Présentation de l’outil de transfert de contenu
 description: Présentation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
+source-git-commit: 1ca9b2091befbafad0878d83fc7963c779146b2a
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 82%
+source-wordcount: '626'
+ht-degree: 83%
 
 ---
 
@@ -57,8 +57,8 @@ Consultez la section ci-dessous pour accéder aux conseils et connaître les bon
 
 * Avant d’exécuter l’outil de transfert de contenu, vous devez vous assurer que l’espace disque disponible dans le `crx-quickstart` sous-répertoire de l’instance AEM source est suffisant. Cela est dû au fait que l’outil de transfert de contenu crée une copie locale du référentiel qui est ultérieurement téléchargée dans le jeu de migration.
 La formule générale pour calculer l&#39;espace disque disponible requis est la suivante :
-   *taille de stockage des données + taille de stockage des noeuds * 1,5*
+   `data store size + node store size * 1.5`
 
-   * Pour la taille *de la banque de* données, l’outil de transfert de contenu utilise 64 Go, même si la taille de la banque de données réelle est plus importante.
-   * La taille *de stockage de* noeuds est la taille du répertoire de stockage de segments ou la taille de la base de données MongoDB.
+   * *taille* de la banque de données : l’outil de transfert de contenu utilise 64 Go, même si le stockage de données réel est plus volumineux.
+   * *Taille*de stockage des noeuds : taille du répertoire de stockage de segments ou taille de la base de données MongoDB.
 Par conséquent, pour une taille de stockage de segments de 20 Go, l’espace disque disponible requis est de 94 Go.
