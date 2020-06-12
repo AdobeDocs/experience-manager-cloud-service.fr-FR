@@ -2,9 +2,9 @@
 title: Présentation de Cloud Readiness Analyzer
 description: Présentation de Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 47773a56f8bb24342281068a8c4d03d6edfb9277
+source-git-commit: 64b685a7c9fbb105ed66dc4b3212b2bf91dee4af
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -12,21 +12,25 @@ ht-degree: 0%
 
 # Présentation {#overview-cloud-readiness-analyzer}
 
-L’analyseur de l’état de préparation de Cloud aide à évaluer la préparation au déplacement d’une instance AEM existante vers AEM en tant que service Cloud.
+Cloud Readiness Analyzer permet d’accélérer les processus d’évaluation de la préparation au passage d’un déploiement existant d’Adobe Experience Manager (AEM) à AEM en tant que service Cloud.
 
-Cet outil détermine les zones qui nécessitent une refactorisation, qui constitue la première étape du parcours de transition vers AEM en tant que service Cloud.
-
-L&#39;ARC détecte et signale les modèles qui :
-
-* Utiliser une fonctionnalité AEM 6.x qui n’est actuellement pas prise en charge sur AEM en tant que service Cloud
-
-* Violer certaines règles, configurations ou utilisations qui seront affectées par le déplacement vers AEM en tant que service Cloud
+Cet outil génère un rapport qui identifie les zones de refactorisation potentielle, qui constitue la première étape du parcours de transition vers AEM en tant que service Cloud.
 
 ## Rapport de synthèse dans Cloud Readiness Analyzer {#summary-report}
 
-Cloud Readiness Analyzer génère un rapport de synthèse qui peut être utilisé pour mieux comprendre l’état de préparation à la mise à niveau générale.
+Le rapport de synthèse de Cloud Readiness Analyzer permet de mieux comprendre la préparation générale à la mise à niveau. Le rapport comprend les conclusions, dans les catégories, des problèmes qui doivent être résolus avant un déploiement réussi vers AEM en tant que service Cloud.
 
-Le rapport organise les conclusions par catégories et sous-types dans ces catégories. Des informations complémentaires sur les catégories, les implications possibles et les solutions associées à ces catégories sont fournies par le biais de liens figurant dans le rapport de synthèse.
+Le rapport de synthèse comprend les catégories suivantes :
+
+* Fonctionnalités de l’application qui doivent être reconfigurées
+* Éléments du référentiel qui doivent être déplacés vers un emplacement pris en charge
+* Boîtes de dialogue et composants d’interface utilisateur hérités qui doivent être modernisés
+* Problèmes de déploiement et de configuration
+* Fonctionnalités d’AEM 6.x qui ont été remplacées par de nouvelles fonctionnalités ou qui ne sont actuellement pas prises en charge sur AEM en tant que service Cloud
+
+Des informations complémentaires sur les catégories, les implications possibles et les solutions associées à ces catégories sont fournies par le biais de liens figurant dans le rapport de synthèse.
 
 >[!NOTE]
->La sortie de Cloud Readiness Analyzer permet d’accélérer le processus d’estimation du temps et du coût requis pour passer à AEM en tant que service Cloud.
+>Le rapport Cloud Readiness Analyzer accélère le processus d’estimation du temps et du coût requis pour la transition d’AEM en tant que service Cloud en fournissant des informations qui autrement auraient dû être collectées et évaluées manuellement.
+
+Le rapport récapitulatif est disponible dans l’interface utilisateur d’AEM. Il existe une option pour télécharger le rapport complet au format CSV (valeurs séparées par des virgules) qui s’avère utile lors du processus de refactorisation.
