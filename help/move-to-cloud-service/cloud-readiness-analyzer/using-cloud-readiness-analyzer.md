@@ -2,9 +2,9 @@
 title: Utilisation de Cloud Readiness Analyzer
 description: Utilisation de Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: d72f02f76f9be61ef4c3eefd790ff8abbb23a3d8
+source-git-commit: 1ca9b2091befbafad0878d83fc7963c779146b2a
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1768'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Suivez la section ci-dessous pour comprendre les points importants à prendre en
 
 * Le rapport CRA est créé à l’aide de la sortie du [détecteur](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)de schémas Adobe Experience Manager (AEM). La version du détecteur de schémas utilisée par l&#39;ARC est incluse dans la trousse d&#39;installation de l&#39;ARC.
 
-* L&#39;ARC ne peut être exécutée que par l&#39; `admin` utilisateur ou un utilisateur du `Administrators` groupe.
+* L&#39;ARC ne peut être exécutée que par l&#39;utilisateur *administrateur* ou un utilisateur du groupe **Administrateurs** .
 
 * L’ARC est prise en charge sur les instances AEM avec les versions 6.1 et ultérieures.
 
@@ -57,30 +57,48 @@ Suivez cette section pour savoir comment exécuter Cloud Readiness Analyzer :
 
 Pour AEM 6.3 et versions ultérieures, la principale méthode d’exécution de Cloud Readiness Analyzer consiste à :
 
-1. Utilisez l’interface utilisateur d’Adobe Experience Manager pour accéder à Outils -> **Opérations** -> **Cloud Readiness Analyzer**.
+1. Sélectionnez l’instance Adobe Experience Manager et accédez aux outils -> **Opérations** -> **Cloud Readiness Analyzer**.
 
    >[!NOTE]
    >L&#39;ARC amorcera un processus de base pour produire le rapport dès que l&#39;outil sera ouvert. Elle indique que la génération du rapport est en cours jusqu’à ce que le rapport soit prêt. Vous pouvez fermer l&#39;onglet de votre navigateur et revenir ultérieurement à la vue du rapport une fois terminé.
 
-Une fois le rapport ARC généré et affiché, vous avez la possibilité de télécharger le rapport au format CSV (valeurs séparées par des virgules) en cliquant sur le bouton **CSV** dans le coin supérieur droit de la page d&#39;outils.
+1. Une fois que le rapport ARC est généré et affiché, vous avez la possibilité de télécharger le rapport en utilisant des valeurs séparées par des virgules (CSV). Cliquez sur **CSV** pour télécharger le rapport de synthèse complet au format CSV (valeurs séparées par des virgules), comme le montre la figure ci-dessous.
 
-Vous pouvez forcer l&#39;ARC à effacer son cache et à régénérer le rapport en cliquant sur le bouton &quot;Actualiser le rapport&quot; dans le coin supérieur gauche.
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+
+   >[!NOTE]
+   >Vous pouvez forcer l&#39;ARC à effacer son cache et à régénérer le rapport en cliquant sur le bouton **Actualiser le rapport** dans le coin supérieur gauche.
 
 ### AEM 6.2 et 6.1 {#aem-specific-versions}
 
-L’interface utilisateur de l’ARC est limitée dans AEM 6.2 à un lien qui génère et télécharge le rapport CSV. Pour AEM 6.1, l’interface utilisateur n’est pas fonctionnelle et seule l’interface HTTP peut être utilisée.
+L’interface utilisateur de Cloud Readiness Analyzer est limitée dans AEM 6.2 à un lien qui génère et télécharge le rapport CSV. Pour AEM 6.1, l’interface utilisateur n’est pas fonctionnelle et seule l’interface HTTP peut être utilisée.
 
-Dans toutes les versions, le Détecteur de schémas inclus peut être exécuté indépendamment.
+Dans toutes les versions, le Détecteur de schémas inclus peut s’exécuter indépendamment.
+
+Suivez les étapes ci-dessous pour télécharger le rapport CSV pour Adobe Experience Manager (AEM) 6.1 et 6.2 :
+
+1.Navigate to **Adobe Experience Manager Web Console
+Configuration** using `https://serveraddress:serverport/system/console/configMgr`.
+
+1. Sélectionnez l’onglet **Etat** et recherchez le Détecteur **de** schémas dans la liste déroulante, comme illustré dans la figure ci-dessous.
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
+
+1. Vous pouvez télécharger le rapport de synthèse dans un dossier zip ou au format JSON.
 
 ## Rapport récapitulatif de l&#39;ARC {#cra-summary-report}
 
-Lorsque l’ARC est exécutée dans l’interface utilisateur d’AEM, le rapport s’affiche sous forme de résultats dans la fenêtre d’outils. Le format du rapport est le suivant :
+Lorsque l’analyseur de l’état de préparation du cloud est exécuté dans l’interface utilisateur d’AEM, le rapport s’affiche en tant que résultats dans la fenêtre d’outils.
 
-* Aperçu du rapport : Informations sur le rapport lui-même, y compris sa date de génération.
-* Présentation du système : Informations sur le système AEM sur lequel l&#39;ARC a été exécutée.
-* Recherche de Catégories : Plusieurs sections qui traitent chacune d’une ou de plusieurs constatations de la même catégorie. Chaque section comprend les éléments suivants : Nom de la Catégorie, sous-types, nombre et importance de la recherche, résumé, lien vers la documentation de la catégorie et informations de recherche individuelles.
+Le format du rapport est le suivant :
 
-Un niveau d&#39;importance est attribué à chaque découverte pour indiquer une priorité absolue de l&#39;action. Les niveaux d&#39;importance utilisés sont les suivants :
+* *Aperçu* du rapport : Informations sur le rapport lui-même, y compris sa date de génération.
+* *Présentation* du système : Informations sur le système AEM sur lequel l&#39;ARC a été exécutée.
+* *Recherche de Catégories*: Plusieurs sections qui traitent chacune d’une ou de plusieurs constatations de la même catégorie. Chaque section comprend les éléments suivants : Nom de la Catégorie, sous-types, nombre et importance de la recherche, résumé, lien vers la documentation de la catégorie et informations de recherche individuelles.
+
+Un niveau d&#39;importance est attribué à chaque découverte pour indiquer une priorité absolue de l&#39;action.
+
+Suivez le tableau ci-dessous pour comprendre les niveaux d&#39;importance :
 
 | Importance | Description |
 |--- |--- |
@@ -91,16 +109,7 @@ Un niveau d&#39;importance est attribué à chaque découverte pour indiquer une
 
 ## Rapport CSV ARC {#crs-csv-report}
 
-Lorsque vous appuyez sur le bouton &quot;CSV&quot;, le format CSV du rapport ARC est généré à partir du cache de résultats et renvoyé à votre navigateur. Selon les paramètres du navigateur, ce rapport sera automatiquement téléchargé sous la forme d&#39;un fichier portant le nom `results.csv`par défaut. Si le cache a expiré, le rapport est régénéré avant la création et le téléchargement du fichier CSV.
-
-Suivez les étapes ci-dessous pour générer un format CSV du rapport de synthèse à partir de votre instance AEM :
-
-1. 
-   1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Cloud Readiness Analyzer**.
-
-1. Une fois le rapport disponible, cliquez sur **CSV** pour télécharger le rapport de synthèse complet au format CSV (valeurs séparées par des virgules), comme le montre la figure ci-dessous.
-
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+Lorsque vous cliquez sur l’option **CSV** de votre instance AEM, le format CSV du rapport Cloud Readiness Analyzer est créé à partir du cache de résultats et renvoyé à votre navigateur. Selon les paramètres du navigateur, ce rapport sera automatiquement téléchargé sous la forme d&#39;un fichier portant le nom `results.csv`par défaut. Si le cache a expiré, le rapport est régénéré avant la création et le téléchargement du fichier CSV.
 
 Le format CSV du rapport comprend des informations générées à partir de la sortie du détecteur de schémas, triées et organisées par type de catégorie, sous-type et niveau d’importance. Son format est adapté à l’affichage et à la modification dans une application telle que Microsoft Excel. Il vise à fournir toutes les informations de recherche sous une forme répétable qui peut s&#39;avérer utile lors de la comparaison des rapports au fil du temps pour mesurer les progrès.
 
@@ -133,8 +142,10 @@ L&#39;interface HTTP peut être utilisée de différentes manières.
 
 Une méthode simple consiste à ouvrir un onglet de navigateur dans le même navigateur dans lequel vous vous êtes déjà connecté à AEM en tant qu’administrateur. Vous pouvez entrer l’URL dans l’onglet du navigateur et afficher ou télécharger les résultats par le navigateur.
 
-Vous pouvez également utiliser un outil de ligne de commande tel que `curl` ou `wget` ainsi que toute application cliente HTTP. Lorsque vous n’utilisez pas un onglet de navigateur avec une session authentifiée, vous devez fournir un nom d’utilisateur et un mot de passe d’administration dans le cadre du commentaire. Voici un exemple de la façon de procéder :
-`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.csv' > result.csv`
+Vous pouvez également utiliser un outil de ligne de commande tel que `curl` ou `wget` ainsi que toute application cliente HTTP. Lorsque vous n’utilisez pas un onglet de navigateur avec une session authentifiée, vous devez fournir un nom d’utilisateur et un mot de passe d’administration dans le cadre du commentaire.
+
+Voici un exemple de la façon de procéder :
+`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.csv' > result.csv`.
 
 ### En-têtes et paramètres {#http-headers-and-parameters}
 
@@ -151,7 +162,7 @@ Les paramètres de requête HTTP suivants sont disponibles à titre de commodit�
 Si un en-tête HTTP et le paramètre de requête correspondant sont présents, le paramètre de requête est prioritaire.
 
 La commande suivante permet simplement de lancer la génération du rapport via l’interface HTTP :
-`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`
+`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
 
 Une fois qu&#39;une requête a été effectuée, le client n&#39;a pas besoin de rester actif pour que le rapport soit généré. La génération du rapport peut être lancée avec un client à l’aide d’une requête HTTP GET et, une fois le rapport généré, affiché à partir du cache d’un autre client ou de l’outil CSV dans l’interface utilisateur d’AEM.
 
@@ -175,17 +186,7 @@ La valeur de durée de vie du cache est stockée en tant que `maxCacheAge` propr
 
 La valeur de cette propriété est la durée de vie du cache en secondes. Un administrateur peut ajuster la durée de vie du cache à l’aide de l’interface CRX/DE Lite vers AEM.
 
-## Affichage du rapport dans les instances AEM 6.1 {#aem-instances-report}
 
-Suivez les étapes ci-dessous pour télécharger le rapport CSV pour Adobe Experience Manager (AEM) 6.1 :
 
-1.Navigate to **Adobe Experience Manager Web Console
-Configuration** using `https://serveraddress:serverport/system/console/configMgr`.
-
-1. Sélectionnez l’onglet **Etat** et recherchez le Détecteur **de** schémas dans la liste déroulante, comme illustré dans la figure ci-dessous.
-
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
-
-1. Vous pouvez télécharger le rapport de synthèse dans un dossier zip ou au format JSON.
 
 
