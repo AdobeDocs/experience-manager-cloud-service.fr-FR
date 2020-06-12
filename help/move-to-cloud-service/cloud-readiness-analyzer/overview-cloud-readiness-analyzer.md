@@ -2,9 +2,9 @@
 title: Présentation de Cloud Readiness Analyzer
 description: Présentation de Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 64b685a7c9fbb105ed66dc4b3212b2bf91dee4af
+source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ Des informations complémentaires sur les catégories, les implications possible
 >[!NOTE]
 >Le rapport Cloud Readiness Analyzer accélère le processus d’estimation du temps et du coût requis pour la transition d’AEM en tant que service Cloud en fournissant des informations qui autrement auraient dû être collectées et évaluées manuellement.
 
-Le rapport récapitulatif est disponible dans l’interface utilisateur d’AEM. Il existe une option pour télécharger le rapport complet au format CSV (valeurs séparées par des virgules) qui s’avère utile lors du processus de refactorisation.
+Vous pouvez également télécharger le rapport de synthèse à partir de l’interface utilisateur d’AEM. Consultez **Affichage des résultats au format** CSV pour plus de détails en attente.
