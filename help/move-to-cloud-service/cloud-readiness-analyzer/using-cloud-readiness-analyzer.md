@@ -2,10 +2,10 @@
 title: Utilisation de Cloud Readiness Analyzer
 description: Utilisation de Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
+source-git-commit: 1739f81d4894f3e04cc4119f344a3bea5bd042d8
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 4%
+source-wordcount: '556'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +37,7 @@ Suivez cette section pour savoir comment exécuter Cloud Readiness Analyzer :
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. Une fois que vous avez cliqué sur **Cloud Readiness Analyzer**, l’outil début la génération du rapport et, après quelques minutes, vous verrez le rapport généré.
+1. Une fois que vous avez cliqué sur **Cloud Readiness Analyzer**, l’outil début la génération du rapport et, après quelques minutes, le rapport récapitulatif est disponible sur votre instance AEM.
 
    >[!NOTE]
    >Vous devrez faire défiler la page vers le bas pour vue au rapport complet.
@@ -77,12 +77,22 @@ Suivez les étapes ci-dessous pour générer un format CSV de votre rapport de s
 1. 
    1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Cloud Readiness Analyzer**.
 
-1. Une fois votre rapport généré, cliquez sur **CSV** pour télécharger le rapport de synthèse complet au format CSV (valeurs séparées par des virgules), comme illustré dans la figure ci-dessous.
+1. Une fois le rapport disponible, cliquez sur **CSV** pour télécharger le rapport de synthèse complet au format CSV (valeurs séparées par des virgules), comme le montre la figure ci-dessous.
 
 ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
 
 
 #### Affichage du rapport dans les instances AEM 6.1 {#aem-instances-report}
 
-Vous pouvez télécharger le rapport csv pour AEM 6.1.Ce rapport est en attente.
+Suivez les étapes ci-dessous pour télécharger le rapport CSV pour Adobe Experience Manager (AEM) 6.1 :
+
+1.Navigate to **Adobe Experience Manager Web Console
+Configuration** using `https://serveraddress:serverport/system/console/configMgr`.
+
+1. Sélectionnez l’onglet **Etat** et recherchez le Détecteur **de** schémas dans la liste déroulante, comme illustré dans la figure ci-dessous.
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
+
+1. Vous pouvez télécharger le rapport de synthèse dans un dossier zip ou au format JSON.
+
 
