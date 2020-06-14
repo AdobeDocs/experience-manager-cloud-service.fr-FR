@@ -4,10 +4,10 @@ description: Apprenez à configurer les modules externes d’éditeur de texte e
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b5af8cad55c8644ba613370cf65b6a04b3abf9ed
+source-git-commit: 78f1e6427d5918639e56a89ca1f94fc402e34fee
 workflow-type: tm+mt
 source-wordcount: '4348'
-ht-degree: 76%
+ht-degree: 75%
 
 ---
 
@@ -493,7 +493,7 @@ Dans CRXDE, une fois la propriété enregistrée, le caractère représenté s�
 
 ### Définition d’une série de caractères {#definerangechar}
 
-1. Utilisez les étapes 1 à 3 de la section [Définition d’un caractère unique](#definingasinglecharacter).
+1. Use steps 1 to 3 from [Define a single character](#definesinglechar).
 1. Sous `chars`, ajoutez un nouveau nœud destiné à contenir la définition de la plage de caractères :
 
    * **Nom** Vous pouvez spécifier le nom, mais il doit refléter la plage de caractères, par exemple, « crayons ».
