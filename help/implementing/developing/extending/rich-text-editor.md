@@ -3,10 +3,10 @@ title: Configurez l’éditeur de texte enrichi pour créer du contenu dans Adob
 description: Configurez l’éditeur de texte enrichi pour créer du contenu dans Adobe Experience Manager en tant que service Cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+source-git-commit: 6e0ba39fadcea5929f593bcb5077708656179f48
 workflow-type: tm+mt
-source-wordcount: '2078'
-ht-degree: 52%
+source-wordcount: '2061'
+ht-degree: 48%
 
 ---
 
@@ -40,13 +40,13 @@ Les auteurs peuvent créer et modifier du contenu textuel dans Experience Manage
 | Mode de modification | Zone de modification | Fonctions dont l’activation est recommandée |
 |--- |--- |--- |
 | En ligne | Modification en ligne pour des modifications rapides et mineures ; mettez en forme sans ouvrir une zone de dialogue | Fonctions minimales d’éditeur de texte enrichi |
-| Éditeur de texte enrichi en plein écran | Couvre la page entière | Toutes les fonctions requises d’éditeur de texte enrichi |
+| Plein écran RTE | Couvre la page entière | Toutes les fonctions requises d’éditeur de texte enrichi |
 | Boîte de dialogue | Boîte de dialogue située en haut du contenu de page sans couvrir la page entière | Activation judicieuse des fonctionnalités |
-| Boîte de dialogue plein écran | Identique au mode plein écran ; contient des champs de la boîte de dialogue à côté de l’éditeur de texte enrichi | Toutes les fonctions requises d’éditeur de texte enrichi |
+| Boîte de dialogue plein écran | Identique au mode plein écran ; contient les champs de la boîte de dialogue à côté de RTE | Toutes les fonctions requises d’éditeur de texte enrichi |
 
 >[!NOTE]
 >
->La fonction d’édition source n’est pas disponible en mode d’édition intégré. Vous ne pouvez pas faire glisser les images en mode plein écran. Toutes les autres fonctions sont utilisables dans tous les modes.
+>La fonction d’édition source n’est pas disponible en mode d’édition intégré. Vous ne pouvez pas faire glisser des images en mode plein écran. Toutes les autres fonctions sont utilisables dans tous les modes.
 
 ### Modification en ligne {#inline-editing}
 
@@ -56,11 +56,11 @@ Une fois ouvert (avec un doublon-clic lent), le contenu peut être modifié dans
 
 *Figure : Modification en ligne avec les options de base dans la barre d’outils.*
 
-### Modification en plein écran {#full-screen-editing}
+### Full-screen editing {#full-screen-editing}
 
-Les composants d’Experience Manager peuvent être ouverts dans une vue en plein écran qui masque le contenu de la page et occupe l’écran disponible. Considérez la modification en plein écran comme une version détaillée de la modification en ligne, car elle offre le plus grand nombre d’options de modification. It can be opened by clicking ![rte_fullscreen](assets/rte_fullscreen.png), from the compact toolbar when using the inline editing mode.
+Les composants d’Experience Manager peuvent être ouverts dans une vue plein écran qui masque le contenu de la page et occupe l’écran disponible. Envisagez de modifier en plein écran une version détaillée de l’édition intégrée, car elle offre les options d’édition les plus performantes. It can be opened by clicking ![rte_fullscreen](assets/rte_fullscreen.png), from the compact toolbar when using the inline editing mode.
 
-En mode de boîte de dialogue plein écran, outre une barre d’outils détaillée d’éditeur de texte enrichi, les options et les composants disponibles dans une boîte de dialogue sont également disponibles. Il s’applique seulement aux boîtes de dialogue qui contiennent l’éditeur de texte enrichi à côté d’autres composants.
+En mode plein écran de la boîte de dialogue, ainsi qu’une barre d’outils RTE détaillée, les options et les composants disponibles dans une boîte de dialogue sont également disponibles. Il s’applique seulement aux boîtes de dialogue qui contiennent l’éditeur de texte enrichi à côté d’autres composants.
 
 ![Barre d’outils RTE détaillée lors de la modification en mode plein écran](assets/rte-toolbar-full-screen-mode.png)
 
@@ -113,7 +113,7 @@ Le tableau ci-dessous répertorie les modules externes actuels et indique les in
 
 >[!NOTE]
 >
->Le module externe Plein écran n’est pas pris en charge en mode de boîte de dialogue. Use of the `dialogFullScreen` setting to configure the toolbar for full screen mode.
+>Le module externe plein écran n’est pas pris en charge en mode boîte de dialogue. Use of the `dialogFullScreen` setting to configure the toolbar for full-screen mode.
 
 ## Présentation des chemins et des emplacements de configuration {#understand-the-configuration-paths-and-locations}
 
@@ -131,7 +131,6 @@ Le tableau ci-dessous répertorie les modules externes actuels et indique les in
 >* **Name** (Nom) : `configPath`
 >* **Type**: `String`
 >* **Valeur** : chemin du nœud qui contient la configuration proprement dite.
-
 >
 >
 Ne donnez pas le nom `config` au nœud de configuration de l’éditeur de texte enrichi (RTE). Otherwise, the RTE configurations take effect for only the administrators and not for the users in the group `content-author`.
@@ -165,7 +164,6 @@ The [Core Components text component](https://docs.adobe.com/content/help/en/expe
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
-
 >
 >
 Pour créer votre propre composant textuel, copiez le composant ci-dessus au lieu de modifier ces composants.
@@ -215,13 +213,13 @@ Pour configurer la barre d’outils pour `dialogFullScreen`, utilisez l’exempl
 </uiSettings>
 ```
 
-Différents paramètres d’IU sont utilisés pour les modes en ligne et plein écran. La propriété toolbar est utilisée pour spécifier les boutons de la barre d’outils.
+Différents paramètres de l’interface utilisateur sont utilisés pour le mode intégré et le mode plein écran. La propriété toolbar spécifie l’option de la barre d’outils.
 
-For example, if the button is itself a feature (for example, `Bold`), it is specified as `PluginName#FeatureName` (for example, `links#modifylink`).
+For example, if the option is itself a feature (for example, `Bold`), it is specified as `PluginName#FeatureName` (for example, `links#modifylink`).
 
-If the button is a popover (containing some features of a plug-in), it is specified as `#PluginName` (for example, `#format`).
+If the option is a popover (containing some features of a plug-in), it is specified as `#PluginName` (for example, `#format`).
 
-Separators (`|`) between a group of buttons can be specified with `-`.
+Separators (`|`) between a group of option can be specified with `-`.
 
 Le nœud pop-up sous le mode en ligne ou plein écran contient la liste des éléments contextuels utilisés. Chaque nœud enfant sous le nœud « popovers » (éléments contextuels) est nommé en fonction du module externe (format, par exemple). Il possède des « éléments » de propriété contenant la liste des fonctions du module externe (format#bold, par exemple).
 
