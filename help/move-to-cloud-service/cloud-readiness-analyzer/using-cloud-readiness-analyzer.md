@@ -2,9 +2,9 @@
 title: Utilisation de Cloud Readiness Analyzer
 description: Utilisation de Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 1ca9b2091befbafad0878d83fc7963c779146b2a
+source-git-commit: daa281745540e6446adecd2501e26135d6000844
 workflow-type: tm+mt
-source-wordcount: '1768'
+source-wordcount: '1775'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Suivez la section ci-dessous pour comprendre les points importants à prendre en
 * L&#39;ARC peut s&#39;exécuter sur n&#39;importe quel environnement, mais il est préférable de l&#39;exécuter sur un environnement *d&#39;étape* .
 
    >[!NOTE]
-   >Afin d&#39;éviter un impact sur les instances critiques de l&#39;entreprise, il est recommandé d&#39;exécuter l&#39;ARC sur un environnement intermédiaire *Auteur* aussi proche que possible de l&#39;environnement de production dans les domaines des personnalisations, des configurations, du contenu et des applications utilisateur. Vous pouvez également l’exécuter sur un clone de l’ *environnement d’auteur* de production.
+   >Afin d&#39;éviter un impact sur les instances critiques de l&#39;entreprise, il est recommandé d&#39;exécuter l&#39;ARC sur un environnement intermédiaire d&#39;auteur aussi proche que possible de l&#39;environnement de production dans les domaines des personnalisations, des configurations, du contenu et des applications utilisateur. Vous pouvez également l’exécuter sur un clone de l’environnement d’auteur de production.
 
 * La production de rapports de l&#39;ARC peut prendre beaucoup de temps, de plusieurs minutes à quelques heures. La durée requise dépend largement de la taille et de la nature du contenu du référentiel AEM, de la version AEM et d’autres facteurs.
 
@@ -53,42 +53,9 @@ Suivez cette section pour savoir comment exécuter Cloud Readiness Analyzer :
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
 
-### AEM 6.3 et versions ultérieures {#aem-older-version}
+## Interprétation du rapport organisé de l’analyseur de l’état de préparation du cloud {#organized-report}
 
-Pour AEM 6.3 et versions ultérieures, la principale méthode d’exécution de Cloud Readiness Analyzer consiste à :
-
-1. Sélectionnez l’instance Adobe Experience Manager et accédez aux outils -> **Opérations** -> **Cloud Readiness Analyzer**.
-
-   >[!NOTE]
-   >L&#39;ARC amorcera un processus de base pour produire le rapport dès que l&#39;outil sera ouvert. Elle indique que la génération du rapport est en cours jusqu’à ce que le rapport soit prêt. Vous pouvez fermer l&#39;onglet de votre navigateur et revenir ultérieurement à la vue du rapport une fois terminé.
-
-1. Une fois que le rapport ARC est généré et affiché, vous avez la possibilité de télécharger le rapport en utilisant des valeurs séparées par des virgules (CSV). Cliquez sur **CSV** pour télécharger le rapport de synthèse complet au format CSV (valeurs séparées par des virgules), comme le montre la figure ci-dessous.
-
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
-
-   >[!NOTE]
-   >Vous pouvez forcer l&#39;ARC à effacer son cache et à régénérer le rapport en cliquant sur le bouton **Actualiser le rapport** dans le coin supérieur gauche.
-
-### AEM 6.2 et 6.1 {#aem-specific-versions}
-
-L’interface utilisateur de Cloud Readiness Analyzer est limitée dans AEM 6.2 à un lien qui génère et télécharge le rapport CSV. Pour AEM 6.1, l’interface utilisateur n’est pas fonctionnelle et seule l’interface HTTP peut être utilisée.
-
-Dans toutes les versions, le Détecteur de schémas inclus peut s’exécuter indépendamment.
-
-Suivez les étapes ci-dessous pour télécharger le rapport CSV pour Adobe Experience Manager (AEM) 6.1 et 6.2 :
-
-1.Navigate to **Adobe Experience Manager Web Console
-Configuration** using `https://serveraddress:serverport/system/console/configMgr`.
-
-1. Sélectionnez l’onglet **Etat** et recherchez le Détecteur **de** schémas dans la liste déroulante, comme illustré dans la figure ci-dessous.
-
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
-
-1. Vous pouvez télécharger le rapport de synthèse dans un dossier zip ou au format JSON.
-
-## Rapport récapitulatif de l&#39;ARC {#cra-summary-report}
-
-Lorsque l’analyseur de l’état de préparation du cloud est exécuté dans l’interface utilisateur d’AEM, le rapport s’affiche en tant que résultats dans la fenêtre d’outils.
+Lorsque l’analyseur de l’état de préparation du cloud est exécuté dans l’instance AEM, le rapport s’affiche en tant que résultats dans la fenêtre d’outils.
 
 Le format du rapport est le suivant :
 
@@ -107,7 +74,46 @@ Suivez le tableau ci-dessous pour comprendre les niveaux d&#39;importance :
 | MAJOR | Il est probable que cette découverte soit un problème de mise à niveau qui devrait être résolu. |
 | CRITIQUE | Il est très probable que cette découverte soit un problème de mise à niveau qui doit être résolu pour éviter toute perte de fonction ou de performances. |
 
-## Rapport CSV ARC {#crs-csv-report}
+### Adobe Experience Manager 6.3 et versions ultérieures {#aem-older-version}
+
+Pour AEM 6.3 et versions ultérieures, la principale méthode d’exécution de Cloud Readiness Analyzer consiste à :
+
+1. Sélectionnez l’instance Adobe Experience Manager et accédez aux outils -> **Opérations** -> **Cloud Readiness Analyzer**.
+
+   >[!NOTE]
+   >L&#39;ARC amorcera un processus de base pour produire le rapport dès que l&#39;outil sera ouvert. Elle indique que la génération du rapport est en cours jusqu’à ce que le rapport soit prêt. Vous pouvez fermer l&#39;onglet de votre navigateur et revenir ultérieurement à la vue du rapport une fois terminé.
+
+1. Une fois que le rapport ARC est généré et affiché, vous avez la possibilité de télécharger le rapport en utilisant des valeurs séparées par des virgules (CSV). Cliquez sur **CSV** pour télécharger le rapport de synthèse complet au format CSV (valeurs séparées par des virgules), comme le montre la figure ci-dessous.
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+
+   >[!NOTE]
+   >Vous pouvez forcer l&#39;ARC à effacer son cache et à régénérer le rapport en cliquant sur le bouton **Actualiser le rapport** dans le coin supérieur gauche.
+
+### Adobe Experience Manager 6.2 et 6.1 {#aem-specific-versions}
+
+Dans Adobe Experience Manager (AEM) 6.2, Cloud Readiness Analyzer est limité à un lien qui génère et télécharge le rapport CSV.
+
+>[!NOTE]
+>
+>* Pour Adobe Experience Manager 6.1, l’outil n’est pas fonctionnel et seule l’interface HTTP peut être utilisée.
+   >
+   >
+* Dans toutes les versions, le Détecteur de schémas inclus peut s’exécuter indépendamment.
+
+
+Suivez les étapes ci-dessous pour télécharger le rapport CSV pour Adobe Experience Manager (AEM) 6.1 et 6.2 :
+
+1.Navigate to **Adobe Experience Manager Web Console
+Configuration** using `https://serveraddress:serverport/system/console/configMgr`.
+
+1. Sélectionnez l’onglet **Etat** et recherchez le Détecteur **de** schémas dans la liste déroulante, comme illustré dans la figure ci-dessous.
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
+
+1. Vous pouvez télécharger le rapport de synthèse dans un dossier zip ou au format JSON.
+
+## Interprétation du rapport CSV de l’analyseur de l’état de préparation du cloud {#crs-csv-report}
 
 Lorsque vous cliquez sur l’option **CSV** de votre instance AEM, le format CSV du rapport Cloud Readiness Analyzer est créé à partir du cache de résultats et renvoyé à votre navigateur. Selon les paramètres du navigateur, ce rapport sera automatiquement téléchargé sous la forme d&#39;un fichier portant le nom `results.csv`par défaut. Si le cache a expiré, le rapport est régénéré avant la création et le téléchargement du fichier CSV.
 
@@ -129,7 +135,7 @@ La valeur &quot;\N&quot; dans une colonne pour une recherche individuelle indiqu
 
 ## Interface HTTP {#http-interface}
 
-L’ARC fournit une interface HTTP qui peut être utilisée comme alternative à l’interface utilisateur d’AEM. L’interface prend en charge les commandes HEAD et GET. Il peut être utilisé pour générer le rapport de l&#39;ARC et le renvoyer dans l&#39;un des trois formats suivants : JSON, CSV et valeurs séparées par des tabulations (TSV).
+L’ARC fournit une interface HTTP qui peut être utilisée comme alternative à l’instance AEM. L’interface prend en charge les commandes HEAD et GET. Il peut être utilisé pour générer le rapport de l&#39;ARC et le renvoyer dans l&#39;un des trois formats suivants : JSON, CSV et valeurs séparées par des tabulations (TSV).
 
 Les URL suivantes sont disponibles pour l&#39;accès HTTP, où `<host>` est le nom d&#39;hôte et le port si nécessaire du serveur sur lequel l&#39;ARC est installé :
 * `http://<host>/apps/readiness-analyzer/analysis/result.json` pour le format JSON
@@ -164,7 +170,7 @@ Si un en-tête HTTP et le paramètre de requête correspondant sont présents, l
 La commande suivante permet simplement de lancer la génération du rapport via l’interface HTTP :
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
 
-Une fois qu&#39;une requête a été effectuée, le client n&#39;a pas besoin de rester actif pour que le rapport soit généré. La génération du rapport peut être lancée avec un client à l’aide d’une requête HTTP GET et, une fois le rapport généré, affiché à partir du cache d’un autre client ou de l’outil CSV dans l’interface utilisateur d’AEM.
+Une fois qu&#39;une requête a été effectuée, le client n&#39;a pas besoin de rester actif pour que le rapport soit généré. La génération du rapport peut être lancée avec un client à l’aide d’une requête HTTP GET et, une fois le rapport généré, affiché à partir du cache d’un autre client ou de l’outil CSV dans l’instance AEM.
 
 ### Réponses (#http-response)
 
@@ -179,12 +185,12 @@ Les valeurs de réponse suivantes sont possibles :
 
 ## Réglage de la durée de vie du cache {#cache-adjustment}
 
-La durée de vie par défaut du cache de l&#39;ARC est de 24 heures. Avec l&#39;option permettant d&#39;actualiser un rapport et de régénérer le cache, à la fois dans l&#39;interface utilisateur et dans l&#39;interface HTTP, cette valeur par défaut est susceptible d&#39;être appropriée pour la plupart des utilisations de l&#39;ARC. Si le temps de génération du rapport est particulièrement long pour votre instance AEM, vous pouvez ajuster la durée de vie du cache afin de minimiser la régénération du rapport.
+La durée de vie par défaut du cache de l&#39;ARC est de 24 heures. Avec l’option permettant d’actualiser un rapport et de régénérer le cache, tant dans l’instance AEM que dans l’interface HTTP, cette valeur par défaut est susceptible d’être appropriée pour la plupart des utilisations de l’ARC. Si le temps de génération du rapport est particulièrement long pour votre instance AEM, vous pouvez ajuster la durée de vie du cache afin de minimiser la régénération du rapport.
 
 La valeur de durée de vie du cache est stockée en tant que `maxCacheAge` propriété sur le noeud de référentiel suivant :
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-La valeur de cette propriété est la durée de vie du cache en secondes. Un administrateur peut ajuster la durée de vie du cache à l’aide de l’interface CRX/DE Lite vers AEM.
+La valeur de cette propriété est la durée de vie du cache en secondes. Un administrateur peut ajuster la durée de vie du cache à l’aide de CRX/DE Lite.
 
 
 
