@@ -2,17 +2,17 @@
 title: Configuration de Dynamic Media
 description: Pour configurer Dynamic Media, vous devez configurer un média dynamique et gérer les paramètres prédéfinis d’image et de visionneuse.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 100%
+source-wordcount: '173'
+ht-degree: 69%
 
 ---
 
 
 # Configuration de Dynamic Media   {#setting-up-dynamic-media}
 
-Grâce à [Dynamic Media](https://www.adobe.com/fr/marketing/experience-manager-assets/dynamic-media.html), vous gérez les ressources en diffusant à la demande des supports visuels de commercialisation et de marketing qui sont automatiquement dimensionnés lors de leur diffusion sur les sites web, les appareils mobiles et les réseaux sociaux. À partir d’un ensemble de ressources marketing, Dynamic Media génère et diffuse, en temps réel, plusieurs variantes d’un même contenu enrichi au moyen de son réseau mondial et évolutif, aux performances optimisées.
+[Dynamic Media](https://www.adobe.com/fr/marketing/experience-manager-assets/dynamic-media.html) vous aide à gérer les ressources en fournissant des ressources visuelles de marchandisage et marketing à la demande, automatiquement mises à l’échelle pour être consommées sur des sites Web, mobiles et sociaux. Grâce à un ensemble de ressources sources principales, Dynamic Media génère et diffuse en temps réel de multiples variantes de contenu riche grâce à son réseau global, évolutif et optimisé pour les performances.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
