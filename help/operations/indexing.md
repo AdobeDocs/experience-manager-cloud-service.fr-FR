@@ -2,9 +2,9 @@
 title: Recherche et indexation de contenu
 description: Recherche et indexation de contenu
 translation-type: tm+mt
-source-git-commit: 0d83e1d956d65fe27b1cf7bce758fc7fa8adf6b2
+source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1450'
 ht-degree: 3%
 
 ---
@@ -83,6 +83,10 @@ Les définitions d’index sont désormais marquées comme personnalisées et av
 Par conséquent, pour déployer un index, la définition de l’index (`/oak:index/definitionname`) doit être fournie via `ui.apps` Git et le processus de déploiement de Cloud Manager.
 
 Une fois la nouvelle définition d’index ajoutée, la nouvelle application doit être déployée via Cloud Manager. Au moment du déploiement, deux tâches sont démarrées, chargées d&#39;ajouter (et de fusionner si nécessaire) les définitions d&#39;index à MongoDB et Azure Segment Store pour l&#39;auteur et la publication, respectivement. Les référentiels sous-jacents sont réindexés avec les nouvelles définitions d&#39;index, avant que le commutateur Blue-Green n&#39;ait lieu.
+
+>[!TIP]
+>
+>Pour plus d’informations sur la structure de package requise pour AEM en tant que service Cloud, voir la structure de projet [AEM document.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
 ## Gestion des index à l’aide de déploiements Blue-Green {#index-management-using-blue-green-deployments}
 
