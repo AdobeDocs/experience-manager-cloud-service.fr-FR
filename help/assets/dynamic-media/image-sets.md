@@ -2,10 +2,10 @@
 title: Visionneuses d’images
 description: Découvrez comment utiliser des visionneuses d’images dans Dynamic Media
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
 workflow-type: tm+mt
-source-wordcount: '2049'
-ht-degree: 100%
+source-wordcount: '2050'
+ht-degree: 99%
 
 ---
 
@@ -32,7 +32,7 @@ Par exemple, supposons que vous souhaitez présenter les images d’une casquett
 
 Pour démarrer rapidement :
 
-1. [Téléchargez les images maître pour plusieurs vues.](#uploading-assets-in-image-sets)
+1. [Téléchargez vos images source principales pour plusieurs vues.](#uploading-assets-in-image-sets)
 
    Commencez par télécharger les images pour les visionneuses d’images. Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse d’images, tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande. AEM Assets prend en charge de nombreux formats de fichier image, mais les formats sans perte TIFF, PNG et EPS sont recommandés.
 
