@@ -2,10 +2,10 @@
 title: Meilleures pratiques d’organisation des ressources numériques pour l’utilisation de profils
 description: Conseils et meilleures pratiques pour nommer, organiser et gérer les métadonnées des fichiers de ressources numériques.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 78e3f5f0324383578c8f4f91f7d07a2bd12f01d4
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 100%
+source-wordcount: '487'
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ Voici quelques conseils sur les bonnes pratiques relatives à l’organisation d
 
    * **Dossiers de développement** : contiennent les ressources numériques que vous utilisez actuellement.
    * **Dossiers de clients** : contiennent des ressources numériques en fonction des clients ou des noms de projet.
-   * **Dossiers d’originaux** : contiennent les ressources numériques sources originales.
+   * **Dossiers** source du Principal : contient des fichiers numériques source d’origine.
    * **Dossiers de rendus** : contiennent les rendus et les copies des ressources numériques sources originales.
    * **Dossiers de taille de fichier** : contiennent des ressources numériques en fonction des tailles de fichier petite, moyenne et volumineuse.
    * **Dossiers intermédiaires** : contiennent les ressources numériques qui sont prêtes à être publiées sur votre site web.
