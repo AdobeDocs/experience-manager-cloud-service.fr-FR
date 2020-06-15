@@ -2,10 +2,10 @@
 sub-product: Implémentation pour AEM as a Cloud Service
 user-guide-title: Implémentation pour AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 83c2b37f10b46c1a88e36e49b448b38137bda1c0
+source-git-commit: cd35b7b4dbdd434f367871ae5d6584b1ad1de341
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 85%
+source-wordcount: '213'
+ht-degree: 82%
 
 ---
 
@@ -43,6 +43,9 @@ ht-degree: 85%
 + Déploiement sur AEM as a Cloud Service {#deploying}
    + [Déploiement sur AEM as a Cloud Service](deploying/overview.md)
    + [Configuration d’OSGi pour AEM as a Cloud Service](deploying/configuring-osgi.md)
++ Niveau de création {#author-tier}
+   + [Accès au niveau Auteur](/help/implementing/author-tier/accessing-the-author-tier.md)
+   + [Sécurisation du niveau d’auteur](/help/implementing/author-tier/securing-the-author-tier.md)
 + Présentation de la Diffusion de contenu {#content-delivery}
    + [Flux de Diffusion de contenu](dispatcher/overview.md)
    + [Dispatcher en mode cloud](dispatcher/disp-overview.md)
