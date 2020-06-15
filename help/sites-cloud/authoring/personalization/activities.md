@@ -2,10 +2,10 @@
 title: 'Gestion des activités  '
 description: 'La console Activités vous permet de créer, d’organiser et de gérer les activités marketing de vos marques :'
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: dba848cb8d7bc42f37fb64131150c136e07dd24e
 workflow-type: tm+mt
-source-wordcount: '1989'
-ht-degree: 100%
+source-wordcount: '2002'
+ht-degree: 99%
 
 ---
 
@@ -130,7 +130,7 @@ Vous devez publier les activités afin de les rendre disponibles. À l’inverse
 
 >[!NOTE]
 >
->Lorsque vous annulez la publication d’une activité,
+>Lorsque vous annulez la publication d’une activité, l’état de l’activité ne change que si vous actualisez la page.
 
 Pour publier des activités ou annuler leur publication :
 
