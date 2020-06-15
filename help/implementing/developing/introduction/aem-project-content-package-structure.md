@@ -2,10 +2,10 @@
 title: Structure de projet AEM
 description: Découvrez comment définir des structures de package en vue d’un déploiement sur Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 60093232710426d919a45742b1775239944d266d
+source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
 workflow-type: tm+mt
-source-wordcount: '2417'
-ht-degree: 100%
+source-wordcount: '2522'
+ht-degree: 95%
 
 ---
 
@@ -37,6 +37,16 @@ Toutes les autres zones du référentiel (`/content`, `/conf`, `/var`, `/etc`, `
 >[!WARNING]
 >
 > Comme dans les versions précédentes d’AEM, `/libs` ne doit pas être modifié. Seul le code de produit AEM peut être déployé sur `/libs`.
+
+### Oak Indexes {#oak-indexes}
+
+Les index de chêne (`/oak:index`) sont gérés spécifiquement par le processus de déploiement d’AEM Cloud Service. Cela est dû au fait que Cloud Manager doit attendre le déploiement d’un nouvel index et le rétablissement complet de l’index avant de passer à la nouvelle image de code.
+
+Pour cette raison, bien que les index Oak puissent être mutés au moment de l&#39;exécution, ils doivent être déployés en tant que code afin de pouvoir être installés avant l&#39;installation de tous les packages modifiables. Par conséquent, `/oak:index` les configurations font partie du package de code et ne font pas partie du package de contenu [comme décrit ci-dessous.](#recommended-package-structure)
+
+>[!TIP]
+>
+>Pour plus d’informations sur l’indexation dans AEM en tant que service Cloud, reportez-vous à la section document [Content Search and Indexing (Recherche et indexation de contenu).](/help/operations/indexing.md)
 
 ## Structure de module recommandée {#recommended-package-structure}
 
@@ -242,7 +252,7 @@ Pour assurer l’installation correcte des modules, il est recommandé d’étab
 
 La règle est que les modules contenant du contenu modifiable (`ui.content`) doivent dépendre du code non modifiable (`ui.apps`) qui prend en charge le rendu et l’utilisation du contenu modifiable.
 
-Une exception notable à cette règle générale est que le module de code non modifiable (`ui.apps` ou autre) contient __uniquement__ des bundles OSGi. Si tel est le cas, aucun module AEM ne doit déclarer une dépendance à son égard. En effet, les modules de code non modifiables contenant __uniquement__ des bundles OSGi ne sont pas enregistrés auprès d’AEM Package Manager. Dans ce cas, un module AEM dépendant de celui-ci aura une dépendance insatisfaite et ne pourra pas être installé.
+Une exception notable à cette règle générale est que le module de code non modifiable (`ui.apps` ou autre) contient __uniquement__ des bundles OSGi. Si tel est le cas, aucun module AEM ne doit déclarer une dépendance à son égard. En effet, les modules de code non modifiables contenant __uniquement__ des bundles OSGi ne sont pas enregistrés auprès du gestionnaire de modules AEM. Dans ce cas, un module AEM dépendant de celui-ci aura une dépendance insatisfaite et ne pourra pas être installé.
 
 >[!TIP]
 >
