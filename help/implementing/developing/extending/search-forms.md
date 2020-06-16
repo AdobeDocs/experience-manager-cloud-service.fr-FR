@@ -159,7 +159,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Date   Plage</td>
+   <td>Date  Plage</td>
    <td>Recherchez des ressources créées dans une plage spécifiée pour une propriété de date. Dans le panneau Rechercher, vous pouvez spécifier des dates de début et de fin.</td>
    <td>
     <ul>
@@ -316,7 +316,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Chemin   Navigateur</td>
+   <td>Chemin  Navigateur</td>
    <td>Fournissez un navigateur de chemins d’accès pour effectuer une recherche sous un chemin racine prédéfini.</td>
    <td>
     <ul>
@@ -550,8 +550,7 @@ En fonction du prédicat, une sélection de paramètres est disponible pour la c
 
 * **Chemin d’accès au nœud d’options**
 Globalement identique à **Chemin d’accès aux options**, à la différence qu’il se trouve dans le champ de prédicat commun, tandis que l’autre est spécifique aux ressources.
-
-* **Sélection simple**
+**Sélection simple**
 Si cette case est cochée, les options sont présentées sous forme de cases à cocher qui ne permettent qu’une sélection simple. Si cette option est sélectionnée par erreur, vous pouvez désélectionner la case à cocher correspondante.
 
 * **Nom des propriétés de publication et Live Copy**
@@ -559,164 +558,167 @@ Libellés des cases à cocher Publication et Live Copy pour le prédicat spéci
 
 * L’astérisque (&amp;ast;) figurant dans les libellés de champ de l’onglet **Paramètres** désigne les champs obligatoires, pour lesquels un message d’erreur s’affiche s’ils ne sont pas renseignés.
 
-## Configuration des formulaires de recherche {#configuring-your-search-forms}
+* Configuration des formulaires de recherche {#configuring-your-search-forms}**
 
-### Création/ouverture d’une configuration personnalisée {#creating-opening-a-customized-configuration}
+## Création/ouverture d’une configuration personnalisée {#creating-opening-a-customized-configuration}
 
-1. Accédez à **Outils**, **Général**, **Formulaires de recherche**.
+### Accédez à **Outils**, **Général**, **Formulaires de recherche**.
 
-1. Sélectionnez la configuration que vous souhaitez personnaliser.
+1. Sélectionnez la configuration que vous souhaitez personnaliser.************
+
 1. Utilisez l’icône **Modifier** pour ouvrir la configuration pour la mise à jour.
 1. S’il s’agit d’une nouvelle personnalisation, vous allez probablement [ajouter de nouveaux champs de prédicat et définir les paramètres](#add-edit-a-predicate-field-and-define-field-settings) requis. S’il s’agit d’une personnalisation existante, vous pouvez sélectionner un champ existant et [mettre à jour les paramètres](#add-edit-a-predicate-field-and-define-field-settings).
-1. Sélectionnez **Terminé** pour enregistrer la configuration. Vos modifications seront visibles lors de la prochaine utilisation de la configuration.
+1. Sélectionnez **Terminé** pour enregistrer la configuration. Vos modifications seront visibles lors de la prochaine utilisation de la configuration.[](#add-edit-a-predicate-field-and-define-field-settings)
+1. [!NOTE]**
 
-   >[!NOTE]
+   >[!NOTE]Les configurations personnalisées sont enregistrées (de façon appropriée) sous :
    >
-   >Les configurations personnalisées sont enregistrées (de façon appropriée) sous :
+   >`/apps/cq/gui/content/facets/<option>`
    >
-   >* `/apps/cq/gui/content/facets/<option>`
    >* `/apps/commerce/gui/content/facets/<option>`
+   >* Ajout/modification d’un champ de prédicat et définition des paramètres de champ {#add-edit-a-predicate-field-and-define-field-settings}
 
 
-### Ajout/modification d’un champ de prédicat et définition des paramètres de champ {#add-edit-a-predicate-field-and-define-field-settings}
+### Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs paramètres :{#add-edit-a-predicate-field-and-define-field-settings}
 
-Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs paramètres :
+[Ouvrez la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
 
-1. [Ouvrez la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
 1. Si vous souhaitez ajouter un nouveau champ, ouvrez l’onglet **Sélectionner le prédicat** et faites glisser le prédicat souhaité vers l’emplacement souhaité. Par exemple, le **prédicat de plage de dates** :
+1. ![ajout d’un prédicat](assets/csf-add-predicate.png)****
 
-   ![ajout d’un prédicat](assets/csf-add-predicate.png)
+   ![Selon que :](assets/csf-add-predicate.png)
 
-1. Selon que :
+1. Vous ajoutiez ou non un nouveau champ :
 
-   * Vous ajoutiez ou non un nouveau champ :
+   * Après l’ajout du prédicat, l’onglet **Paramètres** s’ouvre et affiche les propriétés qui peuvent être définies.
 
-      Après l’ajout du prédicat, l’onglet **Paramètres** s’ouvre et affiche les propriétés qui peuvent être définies.
+      Vous souhaitiez ou non mettre à jour un prédicat existant :****
 
-   * Vous souhaitiez ou non mettre à jour un prédicat existant :
+   * Sélectionnez le champ de prédicat (à droite), puis ouvrez l’onglet **Paramètres**.
 
-      Sélectionnez le champ de prédicat (à droite), puis ouvrez l’onglet **Paramètres**.
-   Par exemple, les paramètres du **prédicat de plage de dates** :
-
+      Par exemple, les paramètres du **prédicat de plage de dates** :
    ![modifier le prédicat](assets/csf-modify-predicate.png)
 
-1. Apportez les modifications nécessaires et confirmez-les en cliquant sur **Terminé**. Vos modifications seront visibles lors de la prochaine utilisation de la configuration.
+   Apportez les modifications nécessaires et confirmez-les en cliquant sur **Terminé**. Vos modifications seront visibles lors de la prochaine utilisation de la configuration.
 
-### Aperçu de la configuration de recherche {#previewing-the-search-configuration}
+1. Aperçu de la configuration de recherche {#previewing-the-search-configuration}**
 
-1. Sélectionnez l’icône Aperçu :
+### Sélectionnez l’icône Aperçu :{#previewing-the-search-configuration}
 
-   ![icône d’aperçu](assets/csf-preview-icon.png)
+1. ![icône d’aperçu](assets/csf-preview-icon.png)
 
-1. Les formulaires de recherche s’affichent tels qu’ils apparaissent (totalement développés) dans la colonne Rechercher de la console appropriée.
+   ![Les formulaires de recherche s’affichent tels qu’ils apparaissent (totalement développés) dans la colonne Rechercher de la console appropriée.](assets/csf-preview-icon.png)
 
-   ![formulaire d’aperçu](assets/csf-preview-form.png)
+1. ![formulaire d’aperçu](assets/csf-preview-form.png)
 
-1. **Fermez** l’aperçu pour terminer la configuration.
+   **Fermez** l’aperçu pour terminer la configuration.
 
-### Suppression d’un champ de prédicat  {#deleting-a-predicate-field}
+1. Suppression d’un champ de prédicat  {#deleting-a-predicate-field}**
 
-1. [Ouvrez la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
+### [Ouvrez la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
+
 1. Sélectionnez le champ de prédicat (à droite), ouvrez l’onglet **Paramètres**, puis sélectionnez l’icône **Supprimer** (dans le coin inférieur gauche).
+1. ![icône de suppression](assets/csf-delete-icon.png)****
 
-   ![icône de suppression](assets/csf-delete-icon.png)
-
-1. Une boîte de dialogue vous invite à confirmer la suppression.
+   ![Une boîte de dialogue vous invite à confirmer la suppression.](assets/csf-delete-icon.png)
 
 1. Confirmez la suppression et les autres modifications en cliquant sur **Terminé**.
 
-### Suppression d’une configuration (pour rétablir la valeur par défaut) {#deleting-a-configuration-to-reinstate-the-default}
+1. Suppression d’une configuration (pour rétablir la valeur par défaut) {#deleting-a-configuration-to-reinstate-the-default}**
 
-Une fois que vous avez personnalisé une configuration, cette option remplace les valeurs par défaut. Vous pouvez rétablir la configuration par défaut en supprimant la configuration personnalisée.
+### Une fois que vous avez personnalisé une configuration, cette option remplace les valeurs par défaut. Vous pouvez rétablir la configuration par défaut en supprimant la configuration personnalisée.{#deleting-a-configuration-to-reinstate-the-default}
 
->[!NOTE]
+[!NOTE]
+
+>[!NOTE]Vous ne pouvez pas supprimer les configurations par défaut.
 >
->Vous ne pouvez pas supprimer les configurations par défaut.
+>Les configurations personnalisées doivent être supprimées à partir de la console :
 
-Les configurations personnalisées doivent être supprimées à partir de la console :
+Sélectionnez une configuration (par exemple, **Éditeur de page (Recherche sur des paragraphes)**), puis cliquez sur l’icône **Supprimer** de la barre d’outils :
 
-1. Sélectionnez une configuration (par exemple, **Éditeur de page (Recherche sur des paragraphes)**), puis cliquez sur l’icône **Supprimer** de la barre d’outils :
+1. ![restaurer les valeurs par défaut](assets/csf-restore-default.png)****
 
-   ![restaurer les valeurs par défaut](assets/csf-restore-default.png)
+   ![La configuration personnalisée est supprimée et la valeur par défaut est rétablie (le symbole de cadenas réapparaît dans la console).](assets/csf-restore-default.png)
 
-1. La configuration personnalisée est supprimée et la valeur par défaut est rétablie (le symbole de cadenas réapparaît dans la console).
+1. Ajout de prédicats d’options  {#adding-options-predicates}
 
-### Ajout de prédicats d’options  {#adding-options-predicates}
-
-Les prédicats d’options (options, propriété d’options) permettent de configurer un élément à rechercher. Ils servent généralement à rechercher un élément directement sous la page, par exemple, une propriété sur le nœud de page.
+### Les prédicats d’options (options, propriété d’options) permettent de configurer un élément à rechercher. Ils servent généralement à rechercher un élément directement sous la page, par exemple, une propriété sur le nœud de page.{#adding-options-predicates}
 
 L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle utilisé pour créer une page) illustre la procédure :
 
-1. Créez le nœud définissant la propriété à rechercher.
+Créez le nœud définissant la propriété à rechercher.
 
-   Vous avez besoin d’un nœud racine contenant les définitions des différentes options disponibles pour l’utilisateur.
+1. Vous avez besoin d’un nœud racine contenant les définitions des différentes options disponibles pour l’utilisateur.
 
    Les nœuds pour les différentes options ont besoin de propriétés :
 
-   * `jcr:title` : libellé de champ à afficher dans le champ de recherche
-   * `value` : valeur de la propriété à rechercher
-   ![Définition de prédicat](assets/csf-options-predicate-01.png)
+   `jcr:title` : libellé de champ à afficher dans le champ de recherche
 
-   >[!NOTE]
-   >
+   * `value` : valeur de la propriété à rechercher
+   * ![Définition de prédicat](assets/csf-options-predicate-01.png)
+
+   [!NOTE]](assets/csf-options-predicate-01.png)
+
    >Vous ne devez ***rien*** modifier dans le chemin `/libs`.
    >
-   >En effet, le contenu de `/libs` est remplacé dès que vous mettez à niveau votre instance (et risque de l’être si vous appliquez un correctif ou un Feature Pack).
+   >En effet, le contenu de `/libs` est remplacé dès que vous mettez à niveau votre instance (et risque de l’être si vous appliquez un correctif ou un Feature Pack).***`/libs`
    >
-   >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
+   >La méthode recommandée pour la configuration et d’autres modifications est la suivante :`/libs`
    >
-   >1. Recréez l’élément nécessaire, tel qu’il existe dans `/libs`, sous `/apps`. Dans ce cas dans :
-   >1. `/libs/cq/gui/content/common/options/predicates`
+   >Recréez l’élément nécessaire, tel qu’il existe dans `/libs`, sous `/apps`. Dans ce cas dans :
+   >
+   >1. `/libs/cq/gui/content/common/options/predicates``/apps`
    >1. Apportez les modifications désirées dans `/apps.`
+   >1. Ouvrez la console **Formulaires de recherche** et sélectionnez la configuration à mettre à jour. Par exemple, le **rail de recherche d’administrateurs de sites**. Sélectionnez ensuite **Modifier**.
 
 
-1. Ouvrez la console **Formulaires de recherche** et sélectionnez la configuration à mettre à jour. Par exemple, le **rail de recherche d’administrateurs de sites**. Sélectionnez ensuite **Modifier**.
+1. En fonction de la configuration, ajoutez des **options** ou une **propriété d’options** à la configuration.****
 
-1. En fonction de la configuration, ajoutez des **options** ou une **propriété d’options** à la configuration.
-1. Mettez à jour les champs, en particulier :
+1. Mettez à jour les champs, en particulier :********
+1. **Nom de la propriété**
 
-   * **Nom de la propriété**
-
-      Spécifique à la propriété du nœud à rechercher sur les nœuds cibles. Par exemple :
+   * **Spécifique à la propriété du nœud à rechercher sur les nœuds cibles. Par exemple :**
 
       `jcr:content/cq:template`
 
-   * **Chemin d’accès du nœud d’option**
+      **Chemin d’accès du nœud d’option**
 
-      Sélectionnez le chemin d’accès vers lequel vos options sont conservées. Par exemple :
+   * **Sélectionnez le chemin d’accès vers lequel vos options sont conservées. Par exemple :**
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
-   ![Prédicats Option](assets/csf-options-predicate-02.png)
 
-1. Sélectionnez **Terminé** pour enregistrer la configuration.
+      ![Prédicats Option](assets/csf-options-predicate-02.png)
+   Sélectionnez **Terminé** pour enregistrer la configuration.
+
 1. Accédez à la console appropriée (dans cet exemple, **Sites**) et ouvrez le rail **Recherche – Filtres**. Les formulaires de recherche qui viennent d’être définis, ainsi que les différentes options, sont visibles. Sélectionnez l’option nécessaire pour afficher les résultats de la recherche.
+1. ![options utilisées](assets/csf-options-usage.png)****
 
-   ![options utilisées](assets/csf-options-usage.png)
+   Autorisations d’utilisateur {#user-permissions}](assets/csf-options-usage.png)
 
 
-## Autorisations d’utilisateur {#user-permissions}
+## Le tableau ci-dessous répertorie les autorisations nécessaires à la modification, à la suppression et à l’aperçu dans des formulaires de recherche.{#user-permissions}
 
-Le tableau ci-dessous répertorie les autorisations nécessaires à la modification, à la suppression et à l’aperçu dans des formulaires de recherche.
+
 
 <table>
  <thead>
   <tr>
-   <td><strong>Action</strong></td>
-   <td><strong>Autorisations</strong></td>
+   </td>
+   </td>
   </tr>
  </thead>
  <tbody>
   <tr>
-   <td>Modifier </td>
-   <td>Autorisations de lecture et d’écriture sur le nœud <code>/apps </code>.</td>
+   </td>
+   </td>
   </tr>
   <tr>
-   <td>Supprimer</td>
-   <td>Autorisations de lecture, d’écriture et de suppression sur le nœud <code>/apps</code>.</td>
+   </td>
+   </td>
   </tr>
   <tr>
-   <td>Aperçu</td>
-   <td>Autorisations de lecture, d’écriture et de suppression sur le nœud <code>/var/dam/content</code>.<br /> Autorisations de lecture et d’écriture sur le nœud <code>/apps</code>.</td>
+   </td>
+   <td>Read, Write, Delete permissions on the <code>/var/dam/content</code> node.<br /> Read, Write permissions on the <code>/apps</code> node.</td>
   </tr>
  </tbody>
 </table>
