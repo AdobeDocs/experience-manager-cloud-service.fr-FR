@@ -1,11 +1,11 @@
 ---
 title: Diffusion de contenu
 description: 'Diffusion de contenu '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a07de761dd9aedb3469f256e08ecf05b2102889d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2268'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 99%
 
 La page actuelle détaille la diffusion du contenu du service de publication dans AEM as a Cloud Service. La diffusion du contenu du service de publication comprend :
 
-* CDN (généralement géré par Adobe)
+* Réseau de diffusion de contenu (généralement géré par Adobe)
 * AEM Dispatcher
 * Publication AEM
 
@@ -55,7 +55,7 @@ Vous trouverez ci-dessous une matrice de décision pour comparer les deux option
 | **Conditions préalables** | Aucune | Réseau de diffusion de contenu existant onéreux à remplacer. Doit démontrer un test de charge réussi avant sa mise en opération. |
 | **Expertise dans le réseau de diffusion de contenu** | Aucune | Nécessite au moins un ingénieur à temps partiel ayant des connaissances approfondies du réseau de diffusion de contenu et capable de configurer le réseau de diffusion de contenu du client. |
 | **Sécurité** | Géré par Adobe. | Géré par Adobe (et éventuellement par le client sur son propre réseau de diffusion de contenu). |
-| **Performances** | Optimisé par Adobe. | Bénéficiera de certaines fonctionnalités du réseau de diffusion de contenu AEM, mais potentiellement un faible gain en performances en raison du saut supplémentaire. **Remarque**: Des sauts entre le CDN du client et le CDN prêt à l’emploi d’Adobe (susceptibles d’être efficaces). |
+| **Performances** | Optimisé par Adobe. | Bénéficiera de certaines fonctionnalités du réseau de diffusion de contenu AEM, mais potentiellement un faible gain en performances en raison du saut supplémentaire. **Remarque** : Les sauts entre le réseau de diffusion de contenu client et le réseau de diffusion de contenu prêt à l’emploi d’Adobe peuvent être efficaces. |
 | **Mise en cache** | Prend en charge les en-têtes de cache appliqués au Dispatcher. | Prend en charge les en-têtes de cache appliqués au Dispatcher. |
 | **Fonctionnalités de compression d’images et de vidéos** | Peut fonctionner avec Adobe Dynamic Media. | Peut fonctionner avec Adobe Dynamic Media ou avec la solution d’image/vidéo du réseau de diffusion de contenu géré par le client. |
 
