@@ -24,7 +24,7 @@ Lorsque vous chargez des images, vous pouvez les recadrer automatiquement en app
 
 Les coordonnées de recadrage intelligent dépendent du rapport L/H. En d’autres termes, pour les différents paramètres de recadrage intelligent d’un profil d’image, si le format est le même pour les dimensions ajoutées dans le profil d’image, le même format est envoyé au support dynamique. C’est pourquoi Adobe vous recommande d’utiliser la même zone de récolte. Cela permet de s’assurer qu’il n’y a pas d’impact sur les différentes dimensions utilisées dans le profil d’image.
 
-Gardez à l’esprit que chaque génération de recadrage dynamique créée nécessite un traitement supplémentaire. Par exemple, l’ajout de plus de cinq proportions de recadrage intelligent peut ralentir le taux d’assimilation des ressources. Cet ajout peut également augmenter la charge des systèmes. Étant donné que le recadrage intelligent s’applique aux dossiers, Adobe vous recommande de l’utiliser *uniquement* pour les dossiers où cela est nécessaire.
+Gardez à l’esprit que chaque génération de recadrage dynamique créée nécessite un traitement supplémentaire. Par exemple, l’ajout de plus de cinq proportions de recadrage intelligent peut ralentir le taux d’ingestion des ressources. Cet ajout peut également augmenter la charge des systèmes. Étant donné que le recadrage intelligent s’applique aux dossiers, Adobe vous recommande de l’utiliser *uniquement* pour les dossiers où cela est nécessaire.
 
 Vous avez le choix entre deux options de recadrage d’image. Vous avez également la possibilité d’automatiser la création de nuances de couleurs et d’images.
 
@@ -64,7 +64,7 @@ Vous avez le choix entre deux options de recadrage d’image. Vous avez égaleme
 
 ## Accentuation {#unsharp-mask}
 
-Sélectionnez l’option **[!UICONTROL Accentuation]** pour affiner l’effet d’un filtre d’accentuation sur l’image finale à résolution réduite. Vous pouvez contrôler l’intensité de l’effet, son rayon (mesuré en pixels) , et un seuil de contraste qui seront ignorés. Cet effet utilise les mêmes options que le filtre Accentuation d’Adobe Photoshop.
+Sélectionnez l’option **[!UICONTROL Accentuation]** pour affiner l’effet d’un filtre d’accentuation sur l’image finale à résolution réduite. Vous pouvez contrôler l’intensité de l’effet, son rayon (mesuré en pixels), et un seuil de contraste qui seront ignorés. Cet effet utilise les mêmes options que le filtre Accentuation d’Adobe Photoshop.
 
 >[!NOTE]
 >
@@ -84,7 +84,7 @@ L’option **[!UICONTROL Accentuation]** propose les options de filtre suivantes
   </tr>
   <tr>
    <td>Rayon</td>
-   <td>Détermine le nombre de pixels entourant les pixels de contour qui affectent l’accentuation. Pour les images à haute résolution, entrez une valeur comprise entre 1 et 2. Une valeur faible accentue uniquement les pixels de contour ; une valeur élevée accentue une bande plus large de pixels. La valeur appropriée dépend de la taille de l’image. La valeur par défaut est 0,2.  La plage est 0 à 250.</td>
+   <td>Détermine le nombre de pixels entourant les pixels de contour qui affectent l’accentuation. Pour les images à haute résolution, entrez une valeur comprise entre 1 et 2. Une valeur faible accentue uniquement les pixels de contour ; une valeur élevée accentue une bande plus large de pixels. La valeur appropriée dépend de la taille de l’image. La valeur par défaut est 0,2.   La plage est 0 à 250.</td>
   </tr>
   <tr>
    <td>Seuil</td>
