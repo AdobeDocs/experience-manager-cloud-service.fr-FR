@@ -2,10 +2,10 @@
 title: Présentation de l’outil de transfert de contenu
 description: Présentation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: 1ca9b2091befbafad0878d83fc7963c779146b2a
+source-git-commit: bb5cedab9bb3f7413d323e21bb6112364a38b2bb
 workflow-type: tm+mt
 source-wordcount: '626'
-ht-degree: 83%
+ht-degree: 75%
 
 ---
 
@@ -49,7 +49,7 @@ Consultez la section ci-dessous pour accéder aux conseils et connaître les bon
 
 * Il est conseillé au préalable d’effectuer un compactage et de vérifier la cohérence des données stockées dans les référentiels pour détecter des problèmes potentiels, mais aussi réduire les informations inexploitables qu’ils contiennent.
 
-* Si le réseau de diffusion de contenu (CDN) de l’instance d’auteur AEM Cloud est configuré pour disposer d’une liste blanche d’adresses IP, il faut s’assurer que les adresses IP de l’environnement source sont aussi ajoutées à la liste blanche pour que l’environnement source et l’environnement AEM Cloud puissent communiquer entre eux.
+* Si la configuration du réseau CDN (AEM Cloud Author Content Diffusion Network) est configurée pour disposer d’une liste blanche des adresses IP, il faut s’assurer que les adresses IP de l’environnement source sont également ajoutées à la liste autorisée afin que l’environnement source et l’environnement AEM Cloud puissent communiquer entre eux.
 
 * Lors de la phase d’ingestion, il est recommandé d’exécuter l’ingestion en activant le mode d’*effacement*. Dans ce cas, le référentiel existant (auteur ou publication) de l’environnement AEM Cloud Service cible sera complètement supprimé, puis mis à jour à l’aide des données du jeu de migration. Ce mode est beaucoup plus rapide que le mode sans effacement, où le jeu de migration est appliqué par-dessus le contenu existant.
 
