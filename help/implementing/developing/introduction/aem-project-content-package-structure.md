@@ -46,7 +46,7 @@ Pour cette raison, bien que les index Oak puissent être mutés au moment de l&#
 
 >[!TIP]
 >
->Pour plus d’informations sur l’indexation dans AEM en tant que service Cloud, reportez-vous à la section document [Content Search and Indexing (Recherche et indexation de contenu).](/help/operations/indexing.md)
+>Pour plus d’informations sur l’indexation en tant que Cloud Service dans AEM, reportez-vous à la section Recherche et indexation de [contenu de document.](/help/operations/indexing.md)
 
 ## Structure de module recommandée {#recommended-package-structure}
 
