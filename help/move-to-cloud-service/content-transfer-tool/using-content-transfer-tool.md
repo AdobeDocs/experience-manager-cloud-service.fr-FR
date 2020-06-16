@@ -20,7 +20,7 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * If you are using a *Sandbox Environment*, ensure that your environment is upgraded to June 10 2020 Release or later. Si vous utilisez un *environnement de production*, il est automatiquement mis à jour.
 
-* Pour utiliser l’outil de transfert de contenu, vous devez être un utilisateur administrateur sur votre instance source et appartenir au groupe d’administrateurs AEM dans l’instance de service Cloud à laquelle vous transférez du contenu. Les utilisateurs non privilégiés ne pourront pas récupérer le jeton d&#39;accès pour utiliser l’outil de transfert de contenu.
+* Pour utiliser l’outil de transfert de contenu, vous devez être un utilisateur administrateur sur votre instance source et appartenir au groupe d’administrateurs AEM dans l’instance de Cloud Service à laquelle vous transférez du contenu. Les utilisateurs non privilégiés ne pourront pas récupérer le jeton d&#39;accès pour utiliser l’outil de transfert de contenu.
 
 * Pendant la phase d’extraction, l’outil de transfert de contenu est exécuté sur une instance source AEM active.
 
@@ -68,7 +68,7 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
    1. **Jeton d’accès** : renseignez le jeton d’accès.
 
       >[!NOTE]
-      >Vous pouvez récupérer le jeton d’accès de l’instance d’auteur en accédant à `/libs/granite/migration/token.json`. Le jeton d&#39;accès est récupéré à partir de l’instance d’auteur du service Cloud.
+      >Vous pouvez récupérer le jeton d’accès de l’instance d’auteur en accédant à `/libs/granite/migration/token.json`. Le jeton d&#39;accès est récupéré à partir de l’instance d’auteur du Cloud Service.
 
    1. **Paramètres** : sélectionnez les paramètres suivants pour créer le jeu de migration :
 
