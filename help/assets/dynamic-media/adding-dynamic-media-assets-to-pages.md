@@ -20,16 +20,16 @@ Si vous utilisez AEM comme système de gestion de contenu web, vous pouvez ajout
 >
 >Vous devez publier les ressources avant de les ajouter aux pages d’AEM. Voir [Publication de ressources Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-## Ajout d’un composant Dynamic Media à une page   {#adding-a-dynamic-media-component-to-a-page}
+## Ajout d’un composant Dynamic Media à une page  {#adding-a-dynamic-media-component-to-a-page}
 
-Ajouter un composant Média 3D, Contenu multimédia dynamique, Contenu multimédia interactif, Contenu multimédia panoramique, Vidéo de recadrage dynamique ou Vidéo 360 sur une page revient à ajouter un composant à une page. Les composants Dynamic Media sont décrits dans les sections suivantes.
+Ajouter un composant multimédia 3D, Dynamic Media, Interactive Media, Panoramic Media, Smart Crop Video ou Video 360 Media à une page revient à ajouter un composant à une page. Les composants Dynamic Media sont décrits dans les sections suivantes.
 
 **Ajout d’un composant Dynamic Media à une page**
 
-1. Dans AEM, ouvrez la page où vous souhaitez ajouter le composant Dynamic Media.
+1. Dans AEM, ouvrez la page où vous souhaitez ajouter le composant Dynamic Media.
 1. Dans le volet de gauche, appuyez sur l’icône **[!UICONTROL Composants]** puis définissez un filtre Dynamic Media.
 
-   Si aucune liste de composants Dynamic Media n’est disponible, vous devrez probablement activer ceux que vous souhaitez utiliser. Voir la section [Activation des composants Dynamic Media](#enabling-dynamic-media-components).
+   Si aucune liste de composants Dynamic Media n’est disponible, vous devrez probablement activer ceux que vous souhaitez utiliser. Voir [Activation des composants Dynamic Media](#enabling-dynamic-media-components).
 
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
@@ -128,7 +128,7 @@ Si vous ajoutez le composant Dynamic Media et si l’option **[!UICONTROL Param
 
 * L’image possède un fichier pyramid tiff. Les images importées avant l’activation de Dynamic Media ne possèdent pas de fichier pyramid tiff.
 
-#### En cas d’utilisation d’images   {#when-working-with-images}
+#### En cas d’utilisation d’images  {#when-working-with-images}
 
 Le composant Dynamic Media permet d’ajouter des images dynamiques, notamment des visionneuses d’images, à 360 ° et de supports variés. Vous pouvez effectuer un zoom avant et arrière, faire pivoter une image dans une visionneuse à 360° ou sélectionner une image dans un autre type de visionneuse.
 
