@@ -2,9 +2,9 @@
 title: Utilisation de Cloud Readiness Analyzer
 description: Utilisation de Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 2ba653988962ca7b9abf9dba3093d8c13720321a
+source-git-commit: f65580a4608167a869669b03cec5d8ab730a848a
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1749'
 ht-degree: 1%
 
 ---
@@ -158,7 +158,7 @@ Si un en-tête HTTP et le paramètre de requête correspondant sont présents, l
 La commande suivante permet simplement de lancer la génération du rapport via l’interface HTTP :
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
 
-Une fois qu&#39;une requête a été effectuée, le client n&#39;a pas besoin de rester actif pour que le rapport soit généré. La génération du rapport peut être lancée avec un client à l’aide d’une requête HTTP GET et, une fois le rapport généré, affiché à partir du cache d’un autre client ou de l’outil CSV dans l’instance AEM.
+Une fois qu&#39;une requête a été effectuée, le client n&#39;a pas besoin de rester actif pour que le rapport soit généré. La génération du rapport peut être lancée avec un client à l’aide d’une requête HTTP GET et, une fois le rapport généré, affiché à partir du cache d’un autre client ou de l’outil CSV dans l’interface utilisateur d’AEM.
 
 ### Réponses (#http-response)
 
