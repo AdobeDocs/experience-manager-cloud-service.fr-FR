@@ -2,9 +2,9 @@
 title: Déploiement de votre code - Cloud Services
 description: Déploiement de votre code - Cloud Services
 translation-type: tm+mt
-source-git-commit: c1301dbe9641a6a35b639628e3f2d3f0c6b3f0d3
+source-git-commit: 44e32343767878016a991f443e5911bfb2877a92
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '912'
 ht-degree: 100%
 
 ---
@@ -34,6 +34,7 @@ Une fois que vous avez configuré le **pipeline** (référentiel, environnement 
    1. Déploiement dans l’environnement intermédiaire
    1. Test dans l’environnement intermédiaire
    1. Déploiement dans l’environnement de production
+
    >[!NOTE]
    >
    >En outre, vous pouvez examiner les étapes de divers processus de déploiement en affichant les journaux ou en examinant les résultats pour les critères de test.
@@ -58,7 +59,7 @@ Une fois que vous avez configuré le **pipeline** (référentiel, environnement 
 
 
 
->Attention :
+>[!IMPORTANT]:
 >les sections suivantes doivent être mises à jour pour Cloud Manager for AEM Cloud Services. Cette opération est en cours.
 
 ## Processus de déploiement {#deployment-process}
@@ -93,6 +94,7 @@ Lorsque Cloud Manager se déploie sur des topologies autres que de production, 
    1. L’artefact est extrait dans le répertoire httpd. Les fichiers non modifiables ne sont pas remplacés. Toute modification apportée aux fichiers non modifiables dans votre référentiel git sera ignorée au moment du déploiement.  Ces fichiers sont essentiels à la structure du dispatcher AMS et ne peuvent pas être modifiés.
    1. Apache effectue un test de configuration. Si aucune erreur n’est trouvée, le service est rechargé. Si une erreur se produit, les configurations sont restaurées à partir de la sauvegarde, le service est rechargé et l’erreur est renvoyée à Cloud Manager.
    1. Chaque chemin spécifié dans la configuration de pipeline est invalidé ou purgé du cache du dispatcher.
+
    >[!NOTE]
    >
    >Cloud Manager exige que l’artefact du dispatcher contienne le jeu de fichiers complet.  Tous les fichiers de configuration du dispatcher doivent être présents dans le référentiel git. Les fichiers ou dossiers manquants entraînent l’échec du déploiement.
@@ -101,7 +103,7 @@ Lorsque Cloud Manager se déploie sur des topologies autres que de production, 
 
    >[!NOTE]
    >
-   >Vous pouvez ignorer les modifications de l’équilibreur de charge dans les déploiements de développement et en environnement intermédiaire, c’est-à-dire, détacher et attacher des étapes dans les deux pipelines hors production, pour les environnements de développement et le pipeline de production, pour les environnements intermédiaires.
+   >Vous pouvez ignorer les modifications de l’équilibreur de charge dans les déploiements de développement et d’évaluation, c’est-à-dire, détacher et attacher des étapes dans les deux pipelines hors production, pour les environnements de développement et le pipeline de production, pour les environnements d’évaluation.
 
 ### Phase de déploiement en production {#deployment-production-phase}
 
