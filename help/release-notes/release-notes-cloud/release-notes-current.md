@@ -24,7 +24,7 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 
 ### Nouveautés {#whats-new-2020.6.0}
 
-La version 2.9.0 des composants [](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) principaux est désormais disponible dans le cadre des sites AEM, notamment :
+La version 2.9.0 des composants [](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) principaux est maintenant disponible en AEM Sites, notamment :
 
 * Intégration entre la couche [de données du client](https://github.com/adobe/adobe-client-data-layer) Adobe et les composants principaux
 * Attributs d’ID HTML configurables pour tous les composants
@@ -48,11 +48,11 @@ La version 2.9.0 des composants [](https://docs.adobe.com/content/help/fr-FR/exp
 * Améliorations du lecteur d’écran.
 
 
-## Nouveautés des fondations dans AEM en tant que service Cloud {#foundations}
+## Nouveautés des fondations dans AEM en tant que Cloud Service {#foundations}
 
 Les délais de création du projet AEM s’améliorent en supprimant toutes les références du fichier pom.xml du projet AEM dans le référentiel distant `https://downloads.experiencecloud.adobe.com/content/maven/public`.
 
-Le Jar API AEM as a Cloud Service SDK, qui était auparavant hébergé à cet emplacement, se trouve désormais dans Maven Central, qui est le référentiel d’artefacts par défaut de Maven.
+AEM en tant que Jar API SDK Cloud Service, qui était auparavant hébergé à cet emplacement, se trouve désormais dans Maven Central, qui est le référentiel d’artefacts par défaut de Maven.
 
 ## Nouveautés de Cloud Manager {#cloud-manager}
 
@@ -76,7 +76,7 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 
 * Les Programmes Sandbox sont maintenant identifiés au moyen d’un badge **Sandbox** qui s’affichera sur la carte de programme sur le landing page, ainsi qu’en regard du nom du programme dans la page Aperçu **du** Programme.
 
-* Un utilisateur du rôle Administrateur système dispose désormais d’un accès en un clic à l’emplacement dans la console d’administration à partir duquel les rôles utilisateur ou les autorisations de Cloud Manager peuvent être gérés. Un bouton **Gérer l’accès** est désormais disponible sur le landing page en regard du bouton **Ajouter le Programme** .
+* Un utilisateur du rôle Administrateur système dispose désormais d’un accès d’un simple clic à l’emplacement dans Admin Console d’où peuvent être gérés les rôles utilisateur ou les autorisations d’accès à Cloud Manager. Un bouton **Gérer l’accès** est désormais disponible sur le landing page en regard du bouton **Ajouter le Programme** .
 
    Pour plus d&#39;informations, reportez-vous aux Tâches [](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) SysAdmin.
 
@@ -120,7 +120,7 @@ Former des balises intelligentes améliorées pour une formation plus intuitive 
 
 **Prise en charge de l&#39;assimilation, de la prévisualisation et de la diffusion du contenu 3D**
 
-Les entreprises peuvent désormais stocker et utiliser des fichiers 3D dans AEM Assets. L’utilisateur peut télécharger, prévisualisation et exploiter divers fichiers 3D de base, notamment des fichiers .obj, .stl, .gltf et .glb. Avec l’ajout d’ [!DNL Dynamic Media]expériences 3D, les expériences 3D peuvent être configurées et livrées par le biais d’URL ou de visionneuses agnostiques. Cela inclut une visionneuse d’expérience [!DNL Dynamic Media] 3D, un composant Visionneuse 3D Sites et la possibilité de diffuser des fichiers 3D via [!DNL Dynamic Media] (AR/VR). Voir [Utilisation de fichiers 3D dans Contenu multimédia](/help/assets/dynamic-media/assets-3d.md)dynamique.
+Les entreprises peuvent désormais stocker et utiliser des fichiers 3D en AEM Assets. L’utilisateur peut télécharger, prévisualisation et exploiter divers fichiers 3D de base, notamment des fichiers .obj, .stl, .gltf et .glb. Avec l’ajout d’ [!DNL Dynamic Media]expériences 3D, les expériences 3D peuvent être configurées et livrées par le biais d’URL ou de visionneuses agnostiques. Cela inclut une visionneuse d’expérience [!DNL Dynamic Media] 3D, un composant Visionneuse 3D Sites et la possibilité de diffuser des fichiers 3D via [!DNL Dynamic Media] (AR/VR). Voir [Utilisation de ressources 3D dans Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 **Prise en charge de Adobe Asset Link pour Adobe XD**
 
