@@ -2,10 +2,10 @@
 title: Dispatcher en mode cloud
 description: 'Dispatcher en mode cloud '
 translation-type: tm+mt
-source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
 workflow-type: tm+mt
-source-wordcount: '3916'
-ht-degree: 100%
+source-wordcount: '3913'
+ht-degree: 96%
 
 ---
 
@@ -197,7 +197,7 @@ L’outil de validation est disponible dans le SDK à l’emplacement `bin/valid
 
 Il est appelé comme suit : `validator full [-d folder] [-w whitelist] zip-file | src folder`
 
-L’outil valide la configuration d’Apache et Dispatcher. Il analyse tous les fichiers avec un motif `conf.d/enabled_vhosts/*.vhost` et vérifie que seules les directives mises en liste blanche sont utilisées. Les directives autorisées dans les fichiers de configuration Apache peuvent être répertoriées en exécutant la commande de liste blanche du validateur :
+L’outil valide la configuration d’Apache et Dispatcher. It scans all files with pattern `conf.d/enabled_vhosts/*.vhost` and checks that only allowlisted directives are used. Les directives autorisées dans les fichiers de configuration Apache peuvent être répertoriées en exécutant la commande de liste autorisée du validateur :
 
 ```
 $ validator whitelist
@@ -236,9 +236,9 @@ Le tableau ci-dessous présente les modules Apache pris en charge :
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-Les clients ne peuvent pas ajouter de modules arbitraires, mais des modules supplémentaires peuvent être envisagés pour inclusion dans le produit à l’avenir. Les clients peuvent trouver la liste des directives disponibles pour une version de Dispatcher donnée en exécutant « validator whitelist » dans le SDK, tel que décrit dans la documentation des outils Dispatcher.
+Les clients ne peuvent pas ajouter de modules arbitraires, mais des modules supplémentaires peuvent être envisagés pour inclusion dans le produit à l’avenir. Les clients peuvent trouver la liste des directives disponibles pour une version de Dispatcher donnée en exécutant la &quot;liste blanche de validation&quot; dans le SDK, comme décrit ci-dessus.
 
-La liste blanche contient la liste des directives Apache autorisées dans une configuration client. Si une directive n’est pas mise en liste blanche, l’outil consigne une erreur et renvoie un code de sortie non nul. Si aucune liste blanche n’est fournie sur la ligne de commande (c’est-à-dire de la manière dont elle doit être appelée), l’outil utilise une liste blanche par défaut que Cloud Manager utilisera pour la validation avant de procéder au déploiement dans les environnements cloud.
+La liste autorisée contient une liste de directives Apache autorisées dans une configuration client. Si une directive n&#39;est pas placée sur l&#39;liste autorisée, l&#39;outil enregistre une erreur et renvoie un code de sortie non nul. Si aucune liste autorisée n’est fournie sur la ligne de commande (c’est-à-dire de la manière dont elle doit être appelée), l’outil utilise une liste autorisée par défaut que Cloud Manager utilisera pour la validation avant le déploiement sur les environnements Cloud.
 
 Il analyse également tous les fichiers présentant le motif `conf.dispatcher.d/enabled_farms/*.farm` et vérifie les éléments suivants :
 
@@ -256,7 +256,7 @@ Cloud manager validator 1.0.4
  conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
 ```
 
-Notez que l’outil de validation ne rapporte que l’utilisation interdite des directives Apache qui n’ont pas été mises sur liste blanche. Il ne signale aucun problème de syntaxe ni de sémantique dans votre configuration Apache, car ces informations ne sont disponibles que pour les modules Apache dans un environnement en cours d’exécution.
+Notez que l&#39;outil de validation ne rapporte que l&#39;utilisation interdite des directives Apache qui n&#39;ont pas été placées sur l&#39;liste autorisée. Il ne signale aucun problème de syntaxe ni de sémantique dans votre configuration Apache, car ces informations ne sont disponibles que pour les modules Apache dans un environnement en cours d’exécution.
 
 Si aucun échec de validation n’est signalé, votre configuration est prête pour le déploiement.
 
@@ -537,7 +537,7 @@ De plus, veillez à adapter également les instructions `Include` se rapportant 
 Si le dossier contient toutefois plusieurs fichiers spécifiques à l’hôte virtuel, leur contenu doit être
 placé dans l’instruction `Include` qui y fait référence dans les fichiers d’hôtes virtuels.
 
-### Supprimer les listes blanches
+### Supprimer des listes autorisées
 
 Supprimez le dossier `conf.d/whitelists` et les instructions `Include` des fichiers d’hôtes virtuels faisant référence à
 un fichier de ce sous-dossier.
@@ -560,7 +560,7 @@ $ validator httpd .
 Si des erreurs s’affichent au sujet de fichiers d’inclusion manquants, vérifiez si vous avez correctement renommé
 les fichiers en question.
 
-Si vous voyez des directives Apache qui ne sont pas placées sur liste blanche, supprimez-les.
+Si vous voyez des directives Apache qui ne sont pas placées sur l&#39;liste autorisée, supprimez-les.
 
 ### Supprimer toutes les fermes non publiées
 
