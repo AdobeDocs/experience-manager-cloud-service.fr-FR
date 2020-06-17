@@ -3,7 +3,7 @@ title: Utilisation de ressources numériques Adobe Stock dans AEM Assets
 description: Vous pouvez rechercher, récupérer, acquérir sous licence et gérer des ressources Adobe Stock dans Experience Manager. Traitez les ressources sous licence comme n’importe quelle autre ressource Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
+source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 97%
@@ -32,6 +32,10 @@ Pour permettre à AEM et Adobe Stock de communiquer, créez une configuration I
 1. Cliquez sur **[!UICONTROL Créer un certificat]**. Une fois le certificat créé, téléchargez la clé publique. Cliquez sur **[!UICONTROL Suivant]**.
 1. Indiquez les valeurs appropriées dans les champs intitulés **[!UICONTROL Titre]**, **[!UICONTROL Serveur d’autorisation]**, **[!UICONTROL Clé API]**, **[!UICONTROL Secret client]** et **[!UICONTROL Charge]**. See [JWT authentication quick start](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md), for detailed information to fetch these values from Adobe Developer Console.
 1. Ajoutez la clé publique téléchargée sur votre compte de service Adobe Developer Console.
+
+<!--
+TBD: Update this instance when AIO updates their documentation publish URL.
+-->
 
 ### Création d’une configuration Adobe Stock dans AEM   {#create-adobe-stock-configuration-in-aem}
 
