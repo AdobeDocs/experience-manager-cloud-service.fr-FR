@@ -2,9 +2,9 @@
 title: Dispatcher en mode cloud
 description: 'Dispatcher en mode cloud '
 translation-type: tm+mt
-source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
+source-git-commit: 6951b6ff255513f5865e1f92a09c5ac439271a26
 workflow-type: tm+mt
-source-wordcount: '3913'
+source-wordcount: '3914'
 ht-degree: 96%
 
 ---
@@ -236,7 +236,7 @@ Le tableau ci-dessous présente les modules Apache pris en charge :
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-Les clients ne peuvent pas ajouter de modules arbitraires, mais des modules supplémentaires peuvent être envisagés pour inclusion dans le produit à l’avenir. Les clients peuvent trouver la liste des directives disponibles pour une version de Dispatcher donnée en exécutant la &quot;liste blanche de validation&quot; dans le SDK, comme décrit ci-dessus.
+Les clients ne peuvent pas ajouter de modules arbitraires, mais des modules supplémentaires peuvent être envisagés pour inclusion dans le produit à l’avenir. Les clients peuvent trouver la liste de directives disponible pour une version de Dispatcher donnée en exécutant la commande de liste autorisée du validateur dans le SDK, comme décrit ci-dessus.
 
 La liste autorisée contient une liste de directives Apache autorisées dans une configuration client. Si une directive n&#39;est pas placée sur l&#39;liste autorisée, l&#39;outil enregistre une erreur et renvoie un code de sortie non nul. Si aucune liste autorisée n’est fournie sur la ligne de commande (c’est-à-dire de la manière dont elle doit être appelée), l’outil utilise une liste autorisée par défaut que Cloud Manager utilisera pour la validation avant le déploiement sur les environnements Cloud.
 
