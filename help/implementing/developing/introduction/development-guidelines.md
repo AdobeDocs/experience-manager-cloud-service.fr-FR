@@ -2,10 +2,10 @@
 title: Conseils de développement pour AEM as a Cloud Service
 description: À terminer
 translation-type: tm+mt
-source-git-commit: 8e8863d390132ff8df943548b04e9d7c636c4248
+source-git-commit: 21fa1bab926aec2f013492a0f5f4a30c1744357c
 workflow-type: tm+mt
 source-wordcount: '1588'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ Lors de la mise à jour d’AEM as a Cloud Service, il y aura des instances où
 
 -->
 
-S’il est nécessaire d’identifier le maître dans la grappe, l’API Apache Sling Discovery peut être utilisée pour le détecter.
+S’il est nécessaire d’identifier le principal dans la grappe, l’API Apache Sling Discovery peut être utilisée pour le détecter.
 
 ## État en mémoire {#state-in-memory}
 
@@ -86,7 +86,7 @@ Le contenu est répliqué de l’instance d’auteur vers l’instance de public
 
 ### Journaux {#logs}
 
-Pour le développement en local, les entrées de journaux sont écrites dans des fichiers locaux   dans le dossier `/crx-quickstart/logs`.
+Pour le développement en local, les entrées de journaux sont écrites dans des fichiers locaux  dans le dossier `/crx-quickstart/logs`.
 
 Dans les environnements cloud, les développeurs peuvent télécharger les journaux via Cloud Manager ou utiliser un outil de ligne de commande pour en afficher les dernières lignes. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
@@ -160,7 +160,7 @@ Comme illustré ci-dessous, les développeurs peuvent résoudre les dépendances
 
 ![Console de développement 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Pour les programmes normaux, l’accès à la Console développeur est défini par la mention « Cloud Manager - Rôle de développeur » dans l’Admin Console. Pour les programmes Sandbox, la Console développeur est disponible pour tout utilisateur disposant d’un profil de produit lui permettant d’accéder à AEM as a Cloud Service. Pour plus d’informations sur la configuration des autorisations des utilisateurs, voir la section [Documentation de Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+Pour les programmes normaux, l’accès à Developer Console est défini par la mention « Cloud Manager – Rôle de développeur » dans l’Admin Console. Pour les programmes Sandbox, Developer Console est disponible pour tout utilisateur disposant d’un profil de produit lui permettant d’accéder à AEM as a Cloud Service. Pour plus d’informations sur la configuration des autorisations des utilisateurs, voir [Documentation de Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 
 
