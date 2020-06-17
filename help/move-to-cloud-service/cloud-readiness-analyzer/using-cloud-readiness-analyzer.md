@@ -2,9 +2,9 @@
 title: Utilisation de Cloud Readiness Analyzer
 description: Utilisation de Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 36faf20506a6a3e1a428d1da462f530aaf84d6a6
+source-git-commit: 7e169ccc09aab9e1646ad324f5b80c8af18cd4af
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1708'
 ht-degree: 1%
 
 ---
@@ -158,7 +158,7 @@ La commande suivante permet simplement de lancer la génération du rapport via 
 
 Une fois qu&#39;une requête a été effectuée, le client n&#39;a pas besoin de rester actif pour que le rapport soit généré. La génération du rapport peut être lancée avec un client à l’aide d’une requête HTTP GET et, une fois le rapport généré, affiché à partir du cache d’un autre client ou de l’outil CSV dans l’interface utilisateur d’AEM.
 
-### Réponses (#http-response)
+### Réponses {#http-responses}
 
 Les valeurs de réponse suivantes sont possibles :
 
