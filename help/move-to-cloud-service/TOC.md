@@ -2,10 +2,10 @@
 sub-product: Transition vers AEM as a Cloud Service
 user-guide-title: Transition vers AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: d269ed7dbc99480fa15aff30304b1c58a589d2f6
+source-git-commit: 3ad0b34d4804baa9605f13e2e4f4533399e1cb64
 workflow-type: tm+mt
-source-wordcount: '60'
-ht-degree: 100%
+source-wordcount: '68'
+ht-degree: 89%
 
 ---
 
@@ -21,6 +21,9 @@ ht-degree: 100%
    + Outil de transfert de contenu {#content-transfer-tool}
       + [Présentation](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [Utilisation de l’outil de transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
+   + Analyse de l’état de préparation du cloud {#cloud-readiness-analyzer}
+      + [Présentation](/help/move-to-cloud-service/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.md)
+      + [Utilisation de Cloud Readiness Analyzer](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md)
 + Outils de refactorisation du code {#refactoring-tools}
    + [Migration des workflows de ressources](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
    + [Convertisseur du Dispatcher AEM](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
