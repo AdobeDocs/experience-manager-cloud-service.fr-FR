@@ -2,10 +2,10 @@
 title: Notes de mise à jour d’Adobe Experience Manager as a Cloud Service version 2020.6.0
 description: Notes de mise à jour d’Experience Manager version 2020.6.0
 translation-type: tm+mt
-source-git-commit: 972e6322a313c9e6afcf09262290992272406491
+source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
 workflow-type: tm+mt
-source-wordcount: '1922'
-ht-degree: 12%
+source-wordcount: '1958'
+ht-degree: 11%
 
 ---
 
@@ -46,7 +46,6 @@ La version 2.9.0 des composants [](https://docs.adobe.com/content/help/fr-FR/exp
 * Ajouté un lien dans la navigation pour permettre aux utilisateurs d’accéder au contenu principal.
 
 * Améliorations du lecteur d’écran.
-
 
 ## Nouveautés des fondations dans AEM en tant que Cloud Service {#foundations}
 
@@ -106,17 +105,12 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 
 ## Nouveautés de la version  [!DNL Adobe Experience Manager Assets]{#aem-assets}
 
-<!-- 
-Assets RNs are being authored and are a work in progress.
-PM/EM review required before publishing.
--->
-
 **Expérience utilisateur guidée pour les balises actives optimisées, optimisée par Adobe Sensei**
 
 Les balises actives améliorées permettent aux entreprises de former des modèles de balisage intelligent pour reconnaître les images basées sur des balises commerciales spécifiques aux clients, en plus des balises actives génériques.
 
 Avec cette version, il existe une nouvelle expérience utilisateur guidée qui permet de configurer une formation sur les balises actives pour des ensembles de balises spécifiques au client et de les former à l’utilisation de ressources qui devront être reconnues et balisées avec elles à l’avenir. C&#39;est une expérience plus intuitive.
-Former des balises intelligentes améliorées pour une formation plus intuitive aux balises intelligentes. Voir [comment utiliser les balises](/help/assets/smart-tags.md) actives et [configurer le balisage](/help/assets/smart-tags-configuration.md)intelligent.
+Former des balises intelligentes améliorées pour une formation plus intuitive aux balises intelligentes. Voir [comment ajouter des balises actives aux ressources](/help/assets/smart-tags.md) et [configurer le balisage](/help/assets/smart-tags-configuration.md)intelligent.
 
 **Prise en charge de l&#39;assimilation, de la prévisualisation et de la diffusion du contenu 3D**
 
@@ -132,9 +126,49 @@ Grâce à cette version, les utilisateurs et les concepteurs de la création peu
 
 [!DNL Adobe Experience Manager Assets] est désormais plus accessible, conformément aux directives WCAG (Web Content Accessibility Guidelines) v2.1. L’accessibilité a été améliorée pour les cas d’utilisation ou les interfaces suivants :
 
-* Les éléments, commandes, pages et boîtes de dialogue de l’interface utilisateur sont faciles à lire.
-* Les éléments, les contrôles et les champs de formulaire d’entrée de l’interface utilisateur sont accessibles à l’aide du clavier.
-* Changement de couleur ou de contraste de certains éléments d&#39;interface pour les rendre plus reconnaissables par les utilisateurs avec une vision limitée et sans perception de la couleur. Par exemple, les ressources présentent désormais un contraste approprié dans les icônes d’évaluation des étoiles de la page [!UICONTROL Propriétés] et de la vue des cartes.
+Les éléments de l’interface utilisateur sont compatibles avec les lecteurs d’écran, sont accessibles à l’aide du clavier et présentent un meilleur contraste. Voici une liste détaillée des améliorations :
+
+* Les indicateurs de progression des [!UICONTROL options], de la [!UICONTROL portée]et des [!UICONTROL Workflows] de la page [!UICONTROL Gérer la publication ne sont pas lus par le lecteur d’écran comme des indicateurs de progression. ] Les utilisateurs de lecteurs d’écran perçoivent ces indicateurs d’état comme une liste d’onglets. (CQ-4273015)
+
+* Lors de l’ajout de balises dans la page [!UICONTROL Propriétés] d’une ressource, les utilisateurs naviguent dans une arborescence de balises. La structure de l’arborescence n’est pas accessible, car les utilisateurs de lecteurs d’écran n’entendent rien lors de leur navigation. (CQ-4272964)
+
+* Dans la boîte de dialogue de partage de liens, lorsque vous naviguez en mode de navigation, le lecteur d’écran,
+
+   * Indique les informations du tableau dès que la boîte de dialogue est chargée.
+   * ne peut pas accéder à toutes les suggestions automatiques répertoriées.
+   * ne décrit pas les suggestions automatiques affichées pour la zone combinée [!UICONTROL Ajouter l’adresse électronique/Rechercher] . (CQ-4294232)
+
+* La page Editeur [!UICONTROL de Schéma de] métadonnées et ses éléments sont désormais accessibles et faciles à lire. Les options peuvent être utilisées à l’aide du clavier. (CQ-4272953) Les utilisateurs peuvent faire glisser les composants à l’aide du clavier en mode de navigation NVDA. (CQ-4296326)
+
+* Dans l’interface utilisateur Ressources, les paramètres de vue ne sont pas accessibles par le clavier. (CQ-4289038)
+
+* Le rapport de luminosité est inférieur à 3:1 pour les icônes de classement de couleur jaune. Elle n’est pas utile aux utilisateurs ayant une vision limitée et sans perception de la couleur. Les étoiles d’évaluation s’affichent dans l’onglet de la ressource ou dans la vue de carte.
+
+* La couleur et le contraste de certains éléments de l’interface utilisateur sont mis à jour afin que les utilisateurs ayant une vision limitée ou les utilisateurs sans perception de la couleur puissent distinguer ces éléments de l’interface utilisateur. Par exemple, la couleur des icônes d’évaluation des étoiles dans la section [!UICONTROL Notation] de l’onglet [!UICONTROL Avancé] dans les [!UICONTROL propriétés] d’un fichier et dans la vue de carte est modifiée pour un contraste approprié. (CQ-4295106)
+
+* Le menu contextuel de la zone de liste de la zone combinée (dans divers champs sur différentes pages) affiche désormais les entrées en tant que liste d’options qui peuvent être annoncées par les lecteurs d’écran. (CQ-4294017)
+
+* Pour appliquer un flux de travail à une ressource, vous pouvez accéder à la flèche chevron du [!UICONTROL journal] à l’aide du clavier. (CQ-4289268)
+
+* Les utilisateurs peuvent supprimer les balises sélectionnées dans le champ [!UICONTROL Balises] de l’onglet [!UICONTROL Simple] de la page [!UICONTROL Propriétés] d’une ressource à l’aide d’un `x` symbole. Son objectif est maintenant annoncé par les lecteurs d’écran, ainsi que le nombre de balises sélectionnées (CQ-4273033).
+
+* Les champs de formulaire en lecture seule peuvent être utilisés avec le clavier. Par exemple, les champs désactivés dans l’onglet [!UICONTROL Réglages de base] de la page [!UICONTROL Propriétés] d’une ressource. (CQ-4273031)
+
+* Accédez maintenant aux options de filtrage des fichiers dans la barre latérale gauche à l’aide du clavier. (CQ-4273018)
+
+* Les lecteurs d’écran annoncent désormais correctement l’objectif de divers éléments de la zone de liste modifiable, tels que le champ Chemin et l’option d’ouverture de la boîte de dialogue Sélection dans l’onglet [!UICONTROL Réglages de base] de la page [!UICONTROL Propriétés] d’un fichier. (CQ-4273016)
+
+* Les commandes de volume des vidéos sont accessibles à l’aide du clavier. (CQ-4272696)
+
+* De nombreuses options exploitables dans l’interface utilisateur Ressources n’indiquent pas la cible d’action lors de l’utilisation du clavier. (CQ-4272694)
+
+* Les utilisateurs de lecteurs d’écran peuvent désormais savoir quand les lignes de la vue de liste peuvent être sélectionnées à l’aide du clavier. Les informations sont annoncées lorsque le pointeur est placé sur les lignes. (CQ-4271824)
+
+* Certains champs de formulaire, tels que les champs de nom d’utilisateur et de mot de passe sur la page de connexion, reposent sur des valeurs d’espace réservé pour donner une étiquette accessible. (CQ-4271716)
+
+* Les éléments interactifs de l’interface utilisateur, tels que les liens et les options telles que les options d’en-tête et de zoom des ressources, la page ou le dossier de navigation, sont désormais accessibles à l’aide du clavier. (CQ-4271412)
+
+* Les titres de toutes les pages consultées sur [!DNL Adobe Experience Manager] les ressources sont désormais uniques. (CQ-4271409)
 
 **Autres améliorations**
 
@@ -153,36 +187,11 @@ Seek DM bug fixes if any.
 Add Nui update as shared on Slack: https://git.corp.adobe.com/nui/app/releases/tag/22
 -->
 
-En plus des nouvelles fonctionnalités ci-dessus, la version actuelle fournit les améliorations et correctifs suivants en fonction des commentaires des clients pour [!DNL Assets].
+En plus des nouvelles fonctionnalités ci-dessus, la version actuelle fournit les correctifs de bogues suivants en fonction des commentaires des clients pour [!DNL Assets].
 
 * Pour les fichiers de musique MP3, le bouton de lecture affiché sur la miniature dans la prévisualisation DAM ne fonctionne pas. (CQ-4294731)
 * Placer le pointeur sur la vue de la carte permet de faire défiler l’écran lorsque l’utilisateur se concentre (automatiquement) sur les actions rapides disponibles dans la carte. (GRANITE-26895)
 * L’affichage d’un trop grand nombre d’images après le défilement d’un grand nombre de résultats de recherche provoque un blocage du navigateur. (GRANITE-26432)
-* Les indicateurs de progression des [!UICONTROL options], de la [!UICONTROL portée]et des [!UICONTROL Workflows] de la page [!UICONTROL Gérer la publication ne sont pas lus par le lecteur d’écran comme des indicateurs de progression. ] Les utilisateurs de lecteurs d’écran perçoivent ces indicateurs d’état comme une liste d’onglets. (CQ-4273015)
 * Lors du téléchargement d’un fichier, si l’option de messagerie est sélectionnée et même si un ID de messagerie valide est fourni, l’option de téléchargement n’est pas disponible. (CQ-4296535)
-
-* Lors de l’ajout de balises dans la page [!UICONTROL Propriétés] d’une ressource, les utilisateurs naviguent dans une arborescence de balises. La structure de l’arborescence n’est pas accessible, car les utilisateurs de lecteurs d’écran n’entendent rien lors de leur navigation. (CQ-4272964)
-* Dans la boîte de dialogue de partage de liens, lorsque vous naviguez en mode de navigation, le lecteur d’écran,
-
-   * Indique les informations du tableau dès que la boîte de dialogue est chargée.
-   * ne peut pas accéder à toutes les suggestions automatiques répertoriées.
-   * ne décrit pas les suggestions automatiques affichées pour la zone combinée [!UICONTROL Ajouter l’adresse électronique/Rechercher] . (CQ-4294232)
-
-* Les options de glissement ne fonctionnent pas avec le clavier en mode de navigation NVDA dans l’éditeur de schémas de métadonnées. (CQ-4296326)
-* Dans l’interface utilisateur Ressources, les paramètres de vue ne sont pas accessibles par le clavier. (CQ-4289038)
 * Les filtres personnalisés enregistrés en tant que collections dynamiques ne sont pas correctement appliqués aux ressources. (CQ-4294942)
 * Plusieurs améliorations de la recherche et de l’indexation et corrections de bogues ont été apportées pour améliorer les performances. (CQ-4286373)
-* Le rapport de luminosité est inférieur à 3:1 pour les icônes de classement de couleur jaune. Elle n’est pas utile aux utilisateurs ayant une vision limitée et sans perception de la couleur. Les étoiles d’évaluation s’affichent dans la section [!UICONTROL Évaluation] de l’onglet [!UICONTROL Avancé] dans [!UICONTROL Propriétés] de la ressource ou dans la vue de carte (CQ-4295106).
-* La liste déroulante de la zone de liste de la zone combinée (dans divers champs sur différentes pages) affiche désormais les entrées en tant que liste d’options qui peuvent être annoncées par les lecteurs d’écran. (CQ-4294017)
-* Impossible d&#39;accéder à la flèche du chevron vers le haut dans le [!UICONTROL journal] à l&#39;aide du clavier pour appliquer un flux de travail à une ressource. (CQ-4289268)
-* Les options (comportant [!UICONTROL x]) permettant de supprimer chacune des balises sélectionnées sous le champ [!UICONTROL Balises] de l’onglet [!UICONTROL Réglages de base] de [!UICONTROL Propriétés sont désormais accessibles aux lecteurs d’écran. ] (CQ-4273033)
-* Les champs de formulaire en lecture seule (par exemple, les champs désactivés dans l’onglet  Simple de [!UICONTROL Propriétés]de fichier) sont désormais activables à l’aide du clavier. (CQ-4273031)
-* L’option permettant d’ouvrir la barre latérale du filtre est désormais accessible à l’aide du clavier. (CQ-4273018)
-* L’objectif de divers éléments de la zone de liste modifiable (tels que le champ Chemin et l’option permettant d’ouvrir la boîte de dialogue Sélection dans l’onglet Elémentaire Propriétés du fichier) est maintenant correctement annoncé par les lecteurs d’écran. (CQ-4273016)
-* [!UICONTROL La page Editeur] de Schéma de métadonnées et ses éléments ne sont pas accessibles à l’aide du clavier et ne sont pas compatibles avec les lecteurs d’écran. (CQ-4272953)
-* Les commandes de volume de vidéo ne sont pas accessibles à l’aide du clavier. (CQ-4272696)
-* De nombreuses options exploitables dans l’interface utilisateur Ressources n’indiquent pas la cible d’action lors de l’utilisation du clavier. (CQ-4272694)
-* Les utilisateurs de lecteurs d’écran ne savent pas que les lignes de la vue de liste peuvent être sélectionnées lors de l’utilisation du clavier. Les informations ne sont annoncées que lorsque la souris survole les lignes. (CQ-4271824)
-* Certains champs de formulaire, tels que les champs de nom d’utilisateur et de mot de passe sur la page de connexion, reposent uniquement sur des valeurs d’espace réservé pour donner une étiquette accessible. (CQ-4271716)
-* Les éléments interactifs de l’interface utilisateur, tels que les liens et les options (sur les options d’en-tête et de zoom de la page de ressources, la navigation dans les dossiers), sont désormais accessibles à l’aide du clavier. (CQ-4271412)
-* Les titres de toutes les pages consultées sur [!DNL Adobe Experience Manager] les ressources sont désormais uniques. (CQ-4271409)
