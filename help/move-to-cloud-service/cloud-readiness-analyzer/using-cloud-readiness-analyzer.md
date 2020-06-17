@@ -2,9 +2,9 @@
 title: Utilisation de Cloud Readiness Analyzer
 description: Utilisation de Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
+source-git-commit: a53ab47fe954bd48dc34840968a9a47cdcc34556
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1715'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ L&#39;analyseur de l&#39;état de préparation du cloud peut être téléchargé
 
 ## Affichage du rapport Cloud Readiness Analyzer {#viewing-report}
 
-### Adobe Experience Manager 6.3 et versions ultérieures {#aem-later-versions}
+### Adobe Experience Manager 6.3.0 et versions ultérieures {#aem-later-versions}
 
 Suivez cette section pour savoir comment vue le rapport Cloud Readiness Analyzer :
 
@@ -64,7 +64,7 @@ Suivez cette section pour savoir comment vue le rapport Cloud Readiness Analyzer
 
 ### Adobe Experience Manager 6.2 et 6.1 {#aem-specific-versions}
 
-Dans l’Adobe Experience Manager 6.2, Cloud Readiness Analyzer est limité à un lien qui génère et télécharge le rapport CSV.
+L’outil Cloud Readiness Analyzer est limité dans l’Adobe Experience Manager 6.2 à un lien qui génère et télécharge le rapport CSV.
 
 Pour l’Adobe Experience Manager 6.1, l’outil n’est pas fonctionnel et seule l’interface HTTP peut être utilisée.
 
@@ -77,11 +77,11 @@ Lorsque l’outil Cloud Readiness Analyzer est exécuté dans l’instance AEM, 
 
 Le format du rapport est le suivant :
 
-* **Aperçu** du rapport : Informations sur le rapport lui-même et informations telles que :
-   * *Heure* du rapport : Lorsque le contenu du rapport a été généré et rendu disponible pour la première fois.
-   * *Heure* d&#39;expiration : Date d&#39;expiration du cache du contenu du rapport.
-   * *Période* de génération : Temps passé par le processus de génération du contenu du rapport.
-   * *Recherche du décompte*: Nombre total de constatations figurant dans le rapport.
+* **Aperçu** du rapport : Informations sur le rapport lui-même et comprennent les informations suivantes :
+   * **Heure** du rapport : Lorsque le contenu du rapport a été généré et rendu disponible pour la première fois.
+   * **Heure** d&#39;expiration : Date d&#39;expiration du cache du contenu du rapport.
+   * **Période** de génération : Temps passé par le processus de génération du contenu du rapport.
+   * **Recherche du décompte**: Nombre total de constatations figurant dans le rapport.
 * **Présentation** du système : Informations sur le système AEM sur lequel l&#39;ARC a été exécutée.
 * **Recherche de Catégories**: Plusieurs sections qui traitent chacune d’une ou de plusieurs constatations de la même catégorie. Chaque section comprend les éléments suivants : Nom de la Catégorie, sous-types, nombre et importance de la recherche, résumé, lien vers la documentation de la catégorie et informations de recherche individuelles.
 
