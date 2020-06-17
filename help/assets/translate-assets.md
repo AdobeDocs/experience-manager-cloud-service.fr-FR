@@ -3,7 +3,7 @@ title: Création et gestion de ressources numériques en plusieurs langues et ex
 description: Découvrez comment automatiser les workflows de traduction des ressources, y compris les fichiers binaires, les métadonnées et les balises, dans plusieurs langues.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
+source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
 workflow-type: tm+mt
 source-wordcount: '2612'
 ht-degree: 97%
@@ -22,7 +22,7 @@ Traduction humaine : les ressources traduites sont renvoyées et importées dan
 Traduction automatique : le service de traduction automatique traduit instantanément les métadonnées et les balises des ressources.
 
 <!--
-We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only 1 master article.
+We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
 
 https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/translation-projects.html
 https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/preparing-assets-for-translation.html
