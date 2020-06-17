@@ -1,16 +1,16 @@
 ---
-title: CDN dans AEM en tant que service Cloud
-description: CDN dans AEM en tant que service Cloud
+title: CDN dans AEM en tant que Cloud Service
+description: CDN dans AEM en tant que Cloud Service
 translation-type: tm+mt
-source-git-commit: a9bf697f65febcd9ba99539d8baa46f7a8d165e3
+source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
 workflow-type: tm+mt
 source-wordcount: '646'
-ht-degree: 42%
+ht-degree: 40%
 
 ---
 
 
-# CDN dans AEM en tant que service Cloud {#cdn}
+# CDN dans AEM en tant que Cloud Service {#cdn}
 
 AEM as a Cloud Service est fourni avec un réseau de diffusion de contenu intégré. Son principal objectif est de réduire la latence en fournissant du contenu pouvant être mis en cache à partir des nœuds CDN en périphérie, près du navigateur. Il est entièrement géré et configuré afin de permettre des performances optimales des applications AEM.
 
@@ -24,7 +24,7 @@ Suivez ces instructions pour préparer la diffusion du contenu en utilisant le C
    **Remarque :** AEM as a Cloud Service ne prend pas en charge les certificats DV (Domain Validated, domaines validés).
 1. Informer le service clientèle :
    * Quel domaine personnalisé doit être associé à un environnement donné, tel que défini par l’ID de programme et l’ID d’environnement. Notez que les domaines personnalisés côté auteur ne sont pas pris en charge.
-   * Si une liste blanche d’adresses IP est nécessaire pour limiter le trafic à destination d’un environnement donné.
+   * si une liste autorisée IP est nécessaire pour limiter le trafic à un environnement donné.
 1. Coordonner avec l’assistance clientèle les modifications nécessaires apportées aux enregistrements DNS. Les instructions sont différentes selon qu’un enregistrement apex est nécessaire ou non :
    * si aucun enregistrement apex n’est nécessaire, les clients doivent définir l’enregistrement DNS CNAME pour qu’il pointe leur nom de domaine complet sur `cdn.adobeaemcloud.com`.
    * si un enregistrement apex est nécessaire, créez un enregistrement A pointant vers les adresses IP suivantes : 151.101.3.10, 151.101.67.10, 151.101.131.10, 151.101.195.10. Les clients ont besoin d&#39;un enregistrement apex si le nom de domaine complet correspond à la zone DNS. Vous pouvez le tester en utilisant la commande dig Unix pour vérifier si la valeur SOA de la sortie correspond au domaine. Par exemple, la commande `dig anything.dev.adobeaemcloud.com` renvoie un SOA (Début d&#39;autorité, c&#39;est-à-dire la zone) de `dev.adobeaemcloud.com` sorte qu&#39;il ne s&#39;agisse pas d&#39;un enregistrement APEX, alors que `dig dev.adobeaemcloud.com` renvoie un SOA de `dev.adobeaemcloud.com` sorte qu&#39;il s&#39;agit d&#39;un enregistrement apex.
@@ -40,7 +40,7 @@ Si un client doit utiliser son réseau de diffusion de contenu existant, il peut
 
 * Le client doit disposer d’un CDN existant qui serait onéreux à remplacer.
 * Le client doit le gérer.
-* Le client doit être en mesure de configurer le CDN pour travailler avec AEM en tant que service Cloud - voir les instructions de configuration ci-dessous.
+* Le client doit être en mesure de configurer le CDN pour travailler avec AEM en tant que Cloud Service - voir les instructions de configuration ci-dessous.
 * Le client doit disposer d&#39;experts du réseau de diffusion de contenu d&#39;ingénierie qui sont à l&#39;écoute au cas où des problèmes se poseraient.
 * Le client doit effectuer et réussir un test de charge avant de passer en production.
 
