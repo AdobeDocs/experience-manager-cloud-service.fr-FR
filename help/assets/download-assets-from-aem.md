@@ -3,7 +3,7 @@ title: Téléchargement de ressources à partir d’AEM
 description: Découvrez comment télécharger des ressources à partir d’AEM et activer ou désactiver la fonctionnalité de téléchargement.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 748255ef2b3bae9ecca900cdfe7d3be594fb2552
+source-git-commit: 12575cd2f046d3a382786811dd28fec8df3be8bd
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 56%
@@ -29,7 +29,7 @@ Les types de ressources Visionneuses d’images, Visionneuses à 360°, Visionne
 1. Sélectionnez le dossier ou un ou plusieurs fichiers qu’il contient.
 1. On the toolbar, tap **[!UICONTROL Download]**.
 
-   ![Options disponibles lors du téléchargement de fichiers à partir de ressources Experience Manager](/help/assets/assets/asset-download.png)
+   ![Options disponibles lors du téléchargement de fichiers à partir de ressources Experience Manager](/help/assets/assets/asset-download1.png)
 
    *Options de la boîte de dialogue Télécharger.*
 
