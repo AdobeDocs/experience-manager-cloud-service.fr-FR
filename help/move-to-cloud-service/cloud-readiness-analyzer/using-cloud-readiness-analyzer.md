@@ -2,9 +2,9 @@
 title: Utilisation de Cloud Readiness Analyzer
 description: Utilisation de Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: f65580a4608167a869669b03cec5d8ab730a848a
+source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1713'
 ht-degree: 1%
 
 ---
@@ -36,11 +36,13 @@ Suivez la section ci-dessous pour comprendre les points importants à prendre en
 L&#39;analyseur de l&#39;état de préparation du cloud peut être téléchargé sous la forme d&#39;un fichier zip depuis le portail de distribution de logiciels. Vous pouvez installer le module par le biais du gestionnaire de modules sur votre instance source Adobe Experience Manager (AEM).
 
 >[!NOTE]
->Téléchargez Cloud Readiness Analyzer depuis le portail de distribution de logiciels *en attente*.
+>Téléchargez Cloud Readiness Analyzer sur le portail de distribution de logiciels.
 
-## Exécution de Cloud Readiness Analyzer {#running-tool}
+## Affichage du rapport Cloud Readiness Analyzer {#viewing-report}
 
-Suivez cette section pour savoir comment exécuter Cloud Readiness Analyzer :
+### Adobe Experience Manager 6.3 et versions ultérieures {#aem-later-versions}
+
+Suivez cette section pour savoir comment vue le rapport Cloud Readiness Analyzer :
 
 1. Sélectionnez Adobe Experience Manager et accédez aux outils -> **Opérations** -> **Cloud Readiness Analyzer**.
 
@@ -51,41 +53,11 @@ Suivez cette section pour savoir comment exécuter Cloud Readiness Analyzer :
    >[!NOTE]
    >Vous devrez faire défiler la page vers le bas pour vue au rapport complet.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
-
-## Interprétation du rapport Cloud Readiness Analyzer {#cra-report}
-
-Lorsque l’analyseur de l’état de préparation du cloud est exécuté dans l’instance AEM, le rapport s’affiche en tant que résultats dans la fenêtre d’outils.
-
-Le format du rapport est le suivant :
-
-* *Aperçu* du rapport : Informations sur le rapport lui-même, y compris sa date de génération.
-* *Présentation* du système : Informations sur le système AEM sur lequel l&#39;ARC a été exécutée.
-* *Recherche de Catégories*: Plusieurs sections qui traitent chacune d’une ou de plusieurs constatations de la même catégorie. Chaque section comprend les éléments suivants : Nom de la Catégorie, sous-types, nombre et importance de la recherche, résumé, lien vers la documentation de la catégorie et informations de recherche individuelles.
-
-Un niveau d&#39;importance est attribué à chaque découverte pour indiquer une priorité absolue de l&#39;action.
-
-Suivez le tableau ci-dessous pour comprendre les niveaux d&#39;importance :
-
-| Importance | Description |
-|--- |--- |
-| INFO | Cette conclusion est fournie à titre d&#39;information. |
-| CONSEILLER | Cette recherche peut poser un problème de mise à niveau. Il est recommandé d&#39;approfondir l&#39;enquête. |
-| MAJOR | Il est probable que cette découverte soit un problème de mise à niveau qui devrait être résolu. |
-| CRITIQUE | Il est très probable que cette découverte soit un problème de mise à niveau qui doit être résolu pour éviter toute perte de fonction ou de performances. |
-
-### Adobe Experience Manager 6.3 et versions ultérieures {#aem-older-version}
-
-Pour AEM 6.3 et versions ultérieures, la principale méthode d’exécution de Cloud Readiness Analyzer consiste à :
-
-1. Sélectionnez l’instance d’Adobe Experience Manager et accédez aux outils -> **Opérations** -> **Cloud Readiness Analyzer**.
-
-   >[!NOTE]
-   >L&#39;ARC amorcera un processus de base pour produire le rapport dès que l&#39;outil sera ouvert. Elle indique que la génération du rapport est en cours jusqu’à ce que le rapport soit prêt. Vous pouvez fermer l&#39;onglet de votre navigateur et revenir ultérieurement à la vue du rapport une fois terminé.
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
 
 1. Une fois que le rapport ARC est généré et affiché, vous avez la possibilité de télécharger le rapport en utilisant des valeurs séparées par des virgules (CSV). Cliquez sur **CSV** pour télécharger le rapport complet de l&#39;ARC au format CSV (valeurs séparées par des virgules), comme le montre la figure ci-dessous.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
 
    >[!NOTE]
    >Vous pouvez forcer l&#39;ARC à effacer son cache et à régénérer le rapport en cliquant sur **Actualiser le rapport**.
@@ -98,6 +70,32 @@ Pour l’Adobe Experience Manager 6.1, l’outil n’est pas fonctionnel et seul
 
 >[!NOTE]
 >Dans toutes les versions, le Détecteur de schémas inclus peut s’exécuter indépendamment.
+
+## Interprétation du rapport Cloud Readiness Analyzer {#cra-report}
+
+Lorsque l’outil Cloud Readiness Analyzer est exécuté dans l’instance AEM, le rapport s’affiche en tant que résultats dans la fenêtre de l’outil.
+
+Le format du rapport est le suivant :
+
+* **Aperçu** du rapport : Informations sur le rapport lui-même et informations telles que :
+   * *Heure* du rapport : Lorsque le contenu du rapport a été généré et rendu disponible pour la première fois.
+   * *Heure* d&#39;expiration : Date d&#39;expiration du cache du contenu du rapport.
+   * *Période* de génération : Temps passé par le processus de génération du contenu du rapport.
+   * *Recherche du décompte*: Nombre total de constatations figurant dans le rapport.
+* **Présentation** du système : Informations sur le système AEM sur lequel l&#39;ARC a été exécutée.
+* **Recherche de Catégories**: Plusieurs sections qui traitent chacune d’une ou de plusieurs constatations de la même catégorie. Chaque section comprend les éléments suivants : Nom de la Catégorie, sous-types, nombre et importance de la recherche, résumé, lien vers la documentation de la catégorie et informations de recherche individuelles.
+
+Un niveau d&#39;importance est attribué à chaque découverte pour indiquer une priorité absolue de l&#39;action.
+
+Suivez le tableau ci-dessous pour comprendre les niveaux d&#39;importance :
+
+| Importance | Description |
+|--- |--- |
+| INFO | Cette conclusion est fournie à titre d&#39;information. |
+| CONSEILLER | Cette recherche peut poser un problème de mise à niveau. Il est recommandé d&#39;approfondir l&#39;enquête. |
+| MAJOR | Il est probable que cette découverte soit un problème de mise à niveau qui devrait être résolu. |
+| CRITIQUE | Il est très probable que cette découverte soit un problème de mise à niveau qui doit être résolu pour éviter toute perte de fonction ou de performances. |
+
 
 ## Interprétation du rapport CSV de l’analyseur de l’état de préparation du cloud {#cra-csv-report}
 
