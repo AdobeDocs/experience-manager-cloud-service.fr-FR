@@ -2,10 +2,10 @@
 title: Présentation de l’outil de transfert de contenu
 description: Présentation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: bb5cedab9bb3f7413d323e21bb6112364a38b2bb
+source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 75%
+source-wordcount: '639'
+ht-degree: 69%
 
 ---
 
@@ -47,7 +47,7 @@ Lors de la phase d’ingestion, pour appliquer le contenu différentiel en plus 
 
 Consultez la section ci-dessous pour accéder aux conseils et connaître les bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu :
 
-* Il est conseillé au préalable d’effectuer un compactage et de vérifier la cohérence des données stockées dans les référentiels pour détecter des problèmes potentiels, mais aussi réduire les informations inexploitables qu’ils contiennent.
+* Il est conseillé d’exécuter des contrôles [de cohérence de](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/revision-cleanup.html) nettoyage [de révision et de stockage de](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) données sur le référentiel **source** afin d’identifier les problèmes potentiels et de réduire la taille du référentiel.
 
 * Si la configuration du réseau CDN (AEM Cloud Author Content Diffusion Network) est configurée pour disposer d’une liste blanche des adresses IP, il faut s’assurer que les adresses IP de l’environnement source sont également ajoutées à la liste autorisée afin que l’environnement source et l’environnement AEM Cloud puissent communiquer entre eux.
 
