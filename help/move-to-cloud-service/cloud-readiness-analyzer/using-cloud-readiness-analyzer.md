@@ -2,9 +2,9 @@
 title: Utilisation de Cloud Readiness Analyzer
 description: Utilisation de Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 1d5023e49288cfa922f8fff8264b857ac66ec97a
+source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1715'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ Suivez la section ci-dessous pour comprendre les points importants à prendre en
 L&#39;analyseur de l&#39;état de préparation du cloud peut être téléchargé sous la forme d&#39;un fichier zip depuis le portail de distribution de logiciels. Vous pouvez installer le module par le biais du gestionnaire de modules sur votre instance source Adobe Experience Manager (AEM).
 
 >[!NOTE]
->Téléchargez Cloud Readiness Analyzer sur le portail de distribution de logiciels.
+>Téléchargez Cloud Readiness Analyzer sur le portail de distribution [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) logiciels.
 
 ## Affichage du rapport Cloud Readiness Analyzer {#viewing-report}
 
