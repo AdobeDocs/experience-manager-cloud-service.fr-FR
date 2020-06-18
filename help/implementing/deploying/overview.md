@@ -2,10 +2,10 @@
 title: Déploiement sur AEM as a Cloud Service
 description: 'Déploiement sur AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+source-git-commit: 6fee9a7abd17615c607f01b869a9c1eaed5793a3
 workflow-type: tm+mt
-source-wordcount: '3512'
-ht-degree: 100%
+source-wordcount: '3523'
+ht-degree: 99%
 
 ---
 
@@ -150,7 +150,7 @@ Lorsque Cloud Manager déploie l’application, il exécute ces instructions, i
 
 Pour créer des instructions repoinit, procédez comme suit :
 
-1. Ajoutez une configuration OSGi pour PID `org.apache.sling.jcr.repoinit.RepositoryInitializer` dans un dossier de configuration du projet.
+1. Add OSGi configuration for factory PID `org.apache.sling.jcr.repoinit.RepositoryInitializer` in a configuration folder of the project. Utilisez un nom descriptif pour la configuration, tel que **org.apache.sling.jcr.repoinit.RepositoryInitializer~initstructure**.
 1. Ajoutez des instructions repoinit à la propriété de script de la configuration. La syntaxe et les options sont décrites dans la [documentation Sling](https://sling.apache.org/documentation/bundles/repository-initialization.html). Notez que vous devez créer explicitement un dossier parent avant leurs dossiers enfants. Par exemple, une création explicite de `/content` avant `/content/myfolder`, et avant `/content/myfolder/mysubfolder`. Pour que les listes de contrôle d’accès soient définies sur des structures de bas niveau, il est recommandé de les définir sur un niveau supérieur et de travailler avec une restriction `rep:glob`. Par exemple, `(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))`.
 1. Validez l’environnement de développement local au moment de l’exécution.
 
