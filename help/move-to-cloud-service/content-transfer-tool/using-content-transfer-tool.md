@@ -2,7 +2,7 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
+source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 86%
@@ -36,6 +36,8 @@ L&#39;outil de transfert de contenu peut être téléchargé dans un fichier zip
 >Téléchargez l’outil de transfert de contenu depuis le portail de distribution [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) logiciels.
 
 ## Exécution de l’outil de transfert de contenu {#running-tool}
+
+>[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
 Consultez cette section pour effectuer une migration du contenu vers AEM as a Cloud Service (auteur/publication) à l’aide de l’outil de transfert de contenu :
 
