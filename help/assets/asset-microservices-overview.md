@@ -3,7 +3,7 @@ title: Découvrez comment les microservices de ressources peuvent traiter vos re
 description: Traitez vos ressources numériques à l’aide de microservices de traitement des ressources évolutifs et natifs en mode cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 0c915b32d676ff225cbe276be075d3ae1a865f11
 workflow-type: tm+mt
 source-wordcount: '845'
 ht-degree: 100%
@@ -12,11 +12,6 @@ ht-degree: 100%
 
 
 # Présentation de l’ingestion et du traitement des ressources à l’aide des microservices de ressources {#asset-microservices-overview}
-
-<!--
-First half of content at https://git.corp.adobe.com/aklimets/project-nui/blob/master/docs/Project-Nui-Asset-Compute-Service.md is useful for this article.
-TBD: Post-GA we will provide detailed information at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all information is added, in short, in this article.
--->
 
 Adobe Experience Manager as a Cloud Service permet d’exploiter, en mode natif, les applications et fonctionnalités d’Experience Manager. L’ingestion et le traitement des ressources, basés sur la technologie des microservices de ressources, constituent deux points forts de cette nouvelle architecture. Les microservices de ressources offrent un traitement évolutif et résilient des ressources à l’aide des services cloud. Adobe gère les services cloud pour un traitement optimal des différents types de ressources et des options de traitement. Les principaux avantages des microservices de ressources, natifs dans le cloud, sont les suivants :
 
