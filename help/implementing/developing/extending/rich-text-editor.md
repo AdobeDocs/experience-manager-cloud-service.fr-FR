@@ -1,19 +1,19 @@
 ---
-title: Configurez l’éditeur de texte enrichi pour créer du contenu dans Adobe Experience Manager en tant que service Cloud.
-description: Configurez l’éditeur de texte enrichi pour créer du contenu dans Adobe Experience Manager en tant que service Cloud.
+title: Configurez l’éditeur de texte enrichi pour créer du contenu en Adobe Experience Manager en tant que Cloud Service.
+description: Configurez l’éditeur de texte enrichi pour créer du contenu en Adobe Experience Manager en tant que Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6e0ba39fadcea5929f593bcb5077708656179f48
+source-git-commit: ba7209cbb78a112b85e4d28cdc30d40ae9083c66
 workflow-type: tm+mt
-source-wordcount: '2061'
-ht-degree: 48%
+source-wordcount: '2045'
+ht-degree: 47%
 
 ---
 
 
 # Configuration de l’éditeur de texte enrichi {#configure-the-rich-text-editor}
 
-L’Editeur de texte enrichi (RTE) offre aux auteurs un large éventail de fonctionnalités pour modifier le contenu de texte. Les icônes, les boîtes de dialogue de sélection, la barre d’outils et les menus sont fournis pour une expérience WYSIWYG de la modification de texte. Les administrateurs configurent le RTE pour activer, désactiver et étendre les fonctionnalités disponibles dans les composants de création. Pour savoir comment utiliser les fonctions d’éditeur de texte enrichi pour la création, voir [Utilisation de l’éditeur de texte enrichi pour la création](rich-text-editor.md). Découvrez comment les auteurs [utilisent RTE pour créer](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) du contenu Web.
+L’Editeur de texte enrichi (RTE) offre aux auteurs un large éventail de fonctionnalités pour modifier le contenu de texte. Les icônes, les boîtes de dialogue de sélection, la barre d’outils et les menus sont fournis pour une expérience WYSIWYG de la modification de texte. Les administrateurs configurent le RTE pour activer, désactiver et étendre les fonctionnalités disponibles dans les composants de création. Découvrez comment les auteurs [utilisent RTE pour créer](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) du contenu Web.
 
 Les concepts et les étapes de configuration de l’ETC sont répertoriés ci-dessous.
 
@@ -31,11 +31,11 @@ L’interface RTE offre une conception [](/help/sites-cloud/authoring/features/r
 
 *Figure : Barre d’outils de l’éditeur de texte enrichi avec toutes les options disponibles activées.*
 
-La barre d’outils fournit les options de l’expérience de création WYSIWYG. Les administrateurs d’Experience Manager peuvent configurer les options disponibles dans la barre d’outils de l’interface. Un ensemble complet d’options de modification est disponible par défaut dans Experience Manager. Les développeurs peuvent personnaliser Experience Manager pour ajouter d’autres options d’édition.
+La barre d’outils fournit les options de l’expérience de création WYSIWYG. Les administrateurs de Experience Manager peuvent configurer les options disponibles dans la barre d’outils de l’interface. Un ensemble complet d’options de modification est disponible par défaut dans le Experience Manager. Les développeurs peuvent personnaliser les Experience Manager pour ajouter d’autres options d’édition.
 
 ## Différents modes de modification {#editingmodes}
 
-Les auteurs peuvent créer et modifier du contenu textuel dans Experience Manager à l’aide des différents modes de composants. Les options de la barre d’outils pour la création et la mise en forme du contenu, et l’expérience utilisateur des composants compatibles avec l’éditeur de texte enrichi dans différents modes de modification, varient en fonction des configurations d’éditeur de texte enrichi.
+Les auteurs peuvent créer et modifier du contenu textuel en Experience Manager en utilisant les différents modes de composants. Les options de la barre d’outils pour la création et la mise en forme du contenu, et l’expérience utilisateur des composants compatibles avec l’éditeur de texte enrichi dans différents modes de modification, varient en fonction des configurations d’éditeur de texte enrichi.
 
 | Mode de modification | Zone de modification | Fonctions dont l’activation est recommandée |
 |--- |--- |--- |
@@ -58,7 +58,7 @@ Une fois ouvert (avec un doublon-clic lent), le contenu peut être modifié dans
 
 ### Full-screen editing {#full-screen-editing}
 
-Les composants d’Experience Manager peuvent être ouverts dans une vue plein écran qui masque le contenu de la page et occupe l’écran disponible. Envisagez de modifier en plein écran une version détaillée de l’édition intégrée, car elle offre les options d’édition les plus performantes. It can be opened by clicking ![rte_fullscreen](assets/rte_fullscreen.png), from the compact toolbar when using the inline editing mode.
+Les composants du Experience Manager peuvent être ouverts dans une vue plein écran qui masque le contenu de la page et occupe l’écran disponible. Envisagez de modifier en plein écran une version détaillée de l’édition intégrée, car elle offre les options d’édition les plus performantes. It can be opened by clicking ![rte_fullscreen](assets/rte_fullscreen.png), from the compact toolbar when using the inline editing mode.
 
 En mode plein écran de la boîte de dialogue, ainsi qu’une barre d’outils RTE détaillée, les options et les composants disponibles dans une boîte de dialogue sont également disponibles. Il s’applique seulement aux boîtes de dialogue qui contiennent l’éditeur de texte enrichi à côté d’autres composants.
 
@@ -131,6 +131,7 @@ Le tableau ci-dessous répertorie les modules externes actuels et indique les in
 >* **Name** (Nom) : `configPath`
 >* **Type**: `String`
 >* **Valeur** : chemin du nœud qui contient la configuration proprement dite.
+
 >
 >
 Ne donnez pas le nom `config` au nœud de configuration de l’éditeur de texte enrichi (RTE). Otherwise, the RTE configurations take effect for only the administrators and not for the users in the group `content-author`.
@@ -164,6 +165,7 @@ The [Core Components text component](https://docs.adobe.com/content/help/en/expe
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
+
 >
 >
 Pour créer votre propre composant textuel, copiez le composant ci-dessus au lieu de modifier ces composants.
@@ -268,11 +270,11 @@ Vous trouverez, ci-dessous, un exemple de fragment de code pour associer la comm
 
 ## Limitations connues {#known-limitations}
 
-La fonctionnalité RTE d’Experience Manager présente les limites suivantes :
+La fonctionnalité RTE Experience Manager présente les limites suivantes :
 
-* Les fonctionnalités RTE sont uniquement prises en charge dans les boîtes de dialogue des composants d’Experience Manager. RTE n’est pas pris en charge sur les assistants ou les formulaires Foundation.
+* Les fonctionnalités RTE sont uniquement prises en charge dans les boîtes de dialogue des composants Experience Manager. RTE n’est pas pris en charge sur les assistants ou les formulaires Foundation.
 
-* Experience Manager ne fonctionne pas sur les périphériques hybrides. <!-- TBD: Check. This is not mentioned in Known Issue /help/release-notes/known-issues.md-->
+* Le Experience Manager ne fonctionne pas sur les périphériques hybrides. <!-- TBD: Check. This is not mentioned in Known Issue /help/release-notes/known-issues.md-->
 
 * Do not name the RTE configuration node `config`. Otherwise, the RTE configuration takes effect for only the administrators and not for the users in the group `content-author`.
 
