@@ -2,10 +2,10 @@
 title: Ajout de vos ressources numériques à Adobe Experience Manager
 description: Ajout de vos ressources numériques à Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
-source-wordcount: '1354'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -158,8 +158,8 @@ Les profils suivants sont disponibles :
 
 De plus, si Dynamic Media est activé dans votre environnement :
 
-* Les [profils d’image](dynamic-media/image-profiles.md) vous permettent d’appliquer un recadrage spécifique (**[!UICONTROL Recadrage intelligent]** et recadrage de pixels) et une configuration d’accentuation aux fichiers chargés.
-* Les [profils vidéo](dynamic-media/video-profiles.md) vous permettent d’appliquer des profils de codage vidéo spécifiques (résolution, format, paramètres).
+* [Les profils](dynamic-media/image-profiles.md) d’image Dynamic Media vous permettent d’appliquer une configuration de recadrage spécifique (recadrage **** intelligent et recadrage en pixels) et d’accentuation aux fichiers téléchargés.
+* [Les profils](dynamic-media/video-profiles.md) vidéo Dynamic Media vous permettent d’appliquer des profils de codage vidéo spécifiques (résolution, format, paramètres).
 
 >[!NOTE]
 >
