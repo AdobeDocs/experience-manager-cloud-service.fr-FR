@@ -1,18 +1,18 @@
 ---
 title: Profils d’image Dynamic Media
-description: Créez des profils d’image qui contiennent des paramètres pour le masquage flou et le recadrage intelligent ou l’échantillon intelligent, ou les deux, puis appliquez le profil à un dossier de ressources d’images.
+description: Créez des Profils d’image Dynamic Media qui contiennent des paramètres de masquage flou et de recadrage intelligent, ou d’échantillon dynamique, ou les deux, puis appliquez le profil à un dossier de fichiers d’image.
 translation-type: tm+mt
-source-git-commit: 59dacf83fd3df03bf9cc62d7816b8b7d7ee5ab9b
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
-source-wordcount: '2736'
-ht-degree: 93%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # Profils d’image Dynamic Media {#image-profiles}
 
-Lorsque vous chargez des images, vous pouvez les recadrer automatiquement en appliquant un profil d’image au dossier.
+Lorsque vous transférez des images, vous pouvez les recadrer automatiquement en appliquant un profil d’image au dossier.
 
 >[!IMPORTANT]
 >
@@ -22,7 +22,7 @@ Lorsque vous chargez des images, vous pouvez les recadrer automatiquement en app
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 
-Les coordonnées de recadrage intelligent dépendent du rapport L/H. En d’autres termes, pour les différents paramètres de recadrage intelligent d’un profil d’image, si le format est le même pour les dimensions ajoutées dans le profil d’image, le même format est envoyé au support dynamique. C’est pourquoi Adobe vous recommande d’utiliser la même zone de récolte. Cela permet de s’assurer qu’il n’y a pas d’impact sur les différentes dimensions utilisées dans le profil d’image.
+Les coordonnées de recadrage intelligent dépendent du rapport L/H. En d’autres termes, pour les différents paramètres de recadrage intelligent d’un Profil d’image, si le format est le même pour les dimensions ajoutées dans le Profil d’image, le même format est envoyé à Dynamic Media. C’est pourquoi Adobe vous recommande d’utiliser la même zone de récolte. Cela permet de s’assurer que les différentes dimensions utilisées dans le Profil d’images n’ont aucun impact.
 
 Gardez à l’esprit que chaque génération de recadrage dynamique créée nécessite un traitement supplémentaire. Par exemple, l’ajout de plus de cinq proportions de recadrage intelligent peut ralentir le taux d’ingestion des ressources. Cet ajout peut également augmenter la charge des systèmes. Étant donné que le recadrage intelligent s’applique aux dossiers, Adobe vous recommande de l’utiliser *uniquement* pour les dossiers où cela est nécessaire.
 
@@ -99,14 +99,14 @@ L’accentuation est décrite dans la section [Accentuation des images](/help/as
 
 Pour définir des paramètres de traitement avancés pour d’autres types de ressources, voir [Configuration du traitement des ressources](config-dm.md#configuring-asset-processing).
 
-Voir [Profils de traitement des métadonnées, des images et des vidéos](/help/assets/dynamic-media/processing-profiles.md).
+Voir [A propos des Profils d’image et des Profils](/help/assets/dynamic-media/about-image-video-profiles.md)vidéo Dynamic Media.
 
 Consultez également la section [Bonnes pratiques pour organiser vos ressources numériques en vue d’utiliser des profils de traitement](/help/assets/dynamic-media/best-practices-for-file-management.md).
 
 **Pour créer des profils d’image Dynamic Media**
 
 1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils d’image]**.
-1. Appuyez sur **[!UICONTROL Créer]** pour ajouter un nouveau profil d’image.
+1. Tap **[!UICONTROL Create]** to add a new Image Profile.
 1. Saisissez un nom de profil et les valeurs pour un masquage flou, un recadrage et/ou un échantillon.
 
    Il est parfois utile d’utiliser un nom de profil spécifique à sa finalité prévue. Par exemple, si vous souhaitez créer un profil qui génère des échantillons uniquement (en d’autres termes, le recadrage intelligent est désactivé, et l’échantillon de couleurs et d’images est activé), vous pouvez utiliser le nom de profil « Échantillons intelligents ».
@@ -120,58 +120,58 @@ Consultez également la section [Bonnes pratiques pour organiser vos ressources 
 ## Modification ou suppression de profils d’image Dynamic Media {#editing-or-deleting-image-profiles}
 
 1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils d’image]**.
-1. Sélectionnez le profil de l’image que vous souhaitez modifier ou supprimer. Pour le modifier, sélectionnez **[!UICONTROL Modifier le profil de traitement d’image]**. Pour le supprimer, sélectionnez **[!UICONTROL Supprimer le profil de traitement d’image]**.
+1. Select the Image Profile you want to edit or remove. To edit it, select **[!UICONTROL Edit Image Processing Profile]**. Pour le supprimer, sélectionnez **[!UICONTROL Supprimer le profil de traitement d’image]**.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
 1. En cas de modification, enregistrez les modifications ; en cas de suppression, confirmez la suppression du profil.
 
-## Application d’un profil d’image Dynamic Media aux dossiers {#applying-an-image-profile-to-folders}
+## Applying a Dynamic Media Image Profile to folders {#applying-an-image-profile-to-folders}
 
-Lorsque vous affectez un profil d’image à un dossier, tout sous-dossier hérite automatiquement du profil de son dossier parent. Cela signifie que vous ne pouvez affecter qu’un seul profil d’image à un dossier. Nous vous conseillons donc de choisir avec la plus grande attention la structure du dossier dans lequel vous transférez, stockez, utilisez et archivez des ressources.
+Lorsque vous affectez un Profil Image à un dossier, tous les sous-dossiers héritent automatiquement du profil de son dossier parent. Cela signifie que vous ne pouvez affecter qu’un seul Profil d’image à un dossier. Ainsi, réfléchissez soigneusement à la structure de dossiers de l’emplacement où vous téléchargez, stockez, utilisez et archivez les ressources.
 
-Si vous avez affecté un profil d’image différent à un dossier, le nouveau profil remplace le précédent. Les ressources du dossier précédent restent inchangées. Le nouveau profil sera appliqué aux ressources ajoutées ultérieurement au dossier.
+Si vous avez affecté un autre Profil d’image à un dossier, le nouveau profil remplace le profil précédent. Les fichiers de dossier existants n’ont pas changé. Le nouveau profil est appliqué aux ressources qui sont ajoutées ultérieurement au dossier.
 
 Les dossiers auxquels un profil est attribué sont indiqués dans l’interface utilisateur grâce au nom du profil qui apparaît sur la carte.
 
-<!-- When you add smart crop to an existing image profile, you need to re-trigger the [DAM Update Asset workflow](assets-workflow.md) if you want to generate crops for existing assets in your asset repository. -->
+<!-- When you add smart crop to an existing Image Profile, you need to re-trigger the [DAM Update Asset workflow](assets-workflow.md) if you want to generate crops for existing assets in your asset repository. -->
 
-Vous pouvez appliquer des profils d’image à des dossiers spécifiques, ou de façon globale à toutes les ressources.
+Vous pouvez appliquer des Profils d’image à des dossiers spécifiques ou globalement à tous les fichiers.
 
-Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un profil d’image que vous avez modifié. Voir [Retraitement des ressources dans un dossier après avoir modifié son profil de traitement](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets).
+Vous pouvez retraiter les fichiers d’un dossier contenant déjà un Profil d’images que vous avez modifié ultérieurement. Voir [Retraitement des ressources dans un dossier après avoir modifié son profil de traitement](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-### Application de profils d’image Dynamic Media à des dossiers spécifiques {#applying-image-profiles-to-specific-folders}
+### Applying Dynamic Media Image Profiles to specific folders {#applying-image-profiles-to-specific-folders}
 
-Vous pouvez appliquer un profil d’image à un dossier à partir du menu **[!UICONTROL Outils]**, ou si vous êtes dans le dossier, via **[!UICONTROL Propriétés]**. Cette section décrit comment appliquer des profils d’image aux dossiers de deux manières.
+You can apply an Image Profile to a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from **[!UICONTROL Properties]**. Cette section décrit comment appliquer des Profils d’image aux dossiers de deux manières.
 
 Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
-Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un profil vidéo que vous avez modifié. Voir [Retraitement des ressources dans un dossier après avoir modifié son profil de traitement](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets).
+Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un profil vidéo que vous avez modifié. Voir [Retraitement des ressources dans un dossier après avoir modifié son profil de traitement](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-#### Application de profils d’image Dynamic Media à des dossiers à partir de l’interface utilisateur Profils {#applying-image-profiles-to-folders-from-profiles-user-interface}
+#### Applying Dynamic Media Image Profiles to folders from Profiles user interface {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
 1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils d’image]**.
-1. Sélectionnez le profil d’image à appliquer à un ou plusieurs dossiers.
+1. Sélectionnez le Profil d’image à appliquer à un ou plusieurs dossiers.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
 1. Appuyez/cliquez sur **[!UICONTROL Appliquer le profil de traitement au(x) dossier(s)]** et sélectionnez le ou les dossiers que vous souhaitez utiliser pour recevoir les nouvelles ressources chargées, puis appuyez/cliquez sur **[!UICONTROL Appliquer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
-#### Application de profils d’image Dynamic Media aux dossiers à partir des propriétés {#applying-image-profiles-to-folders-from-properties}
+#### Applying Dynamic Media Image Profiles to folders from Properties {#applying-image-profiles-to-folders-from-properties}
 
-1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Ressources]**, puis au dossier auquel vous souhaitez appliquer un profil d’image.
+1. Tap the AEM logo and navigate to **[!UICONTROL Assets]** and then to the folder that you want to apply an Image Profile to.
 1. Dans le dossier, appuyez sur la coche pour la sélectionner, puis sur **[!UICONTROL Propriétés]**.
 1. Appuyez sur l’onglet **[!UICONTROL Profils d’image]**. Dans la liste déroulante **[!UICONTROL Nom du profil]**, sélectionnez le profil, puis appuyez sur **[!UICONTROL Enregistrer et fermer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
-### Application globale d’un profil d’image Dynamic Media {#applying-an-image-profile-globally}
+### Applying an Dynamic Media Image Profile globally {#applying-an-image-profile-globally}
 
 En plus d’appliquer un profil à un dossier, vous pouvez en appliquer un de façon globale, de sorte que tout contenu chargé dans AEM Assets soit traité par ce profil, indifféremment du dossier.
 
-Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un profil vidéo que vous avez modifié. Voir [Retraitement des ressources dans un dossier après avoir modifié son profil de traitement](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets).
+Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un profil vidéo que vous avez modifié. Voir [Retraitement des ressources dans un dossier après avoir modifié son profil de traitement](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-**Pour appliquer globalement un profil d’image Dynamic Media** :
+**Pour appliquer un Profil d’image Dynamic Media globalement**:
 
 1. Utilisez l’une des méthodes suivantes :
 
@@ -197,7 +197,7 @@ Voir aussi [Modification du recadrage intelligent ou de l’échantillon intelli
 
 **Pour modifier le recadrage intelligent ou l’échantillon intelligent d’une seule image** :
 
-1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Ressources]**, puis au dossier auquel est appliqué un profil d’image de recadrage intelligent ou d’échantillon intelligent.
+1. Tap the AEM logo and navigate to **[!UICONTROL Assets]**, then to the folder that has a smart crop or smart swatch Image Profile applied to it.
 
 1. Appuyez sur le dossier pour ouvrir son contenu.
 1. Appuyez sur l’image dont vous voulez ajuster le recadrage intelligent ou l’échantillon intelligent.
@@ -214,7 +214,7 @@ Voir aussi [Modification du recadrage intelligent ou de l’échantillon intelli
 
 ## Modification du recadrage intelligent ou de l’échantillon intelligent de plusieurs images {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
-Après avoir appliqué un profil d’image (contenant un recadrage intelligent) sur un dossier, un recadrage est appliqué à toutes les images de ce dossier. Si vous le souhaitez, vous pouvez réaligner ou redimensionner *manuellement* la fenêtre de recadrage intelligent dans plusieurs images pour affiner davantage leur point focal.
+Une fois que vous avez appliqué un Profil d’images (contenant une recadrage dynamique) à un dossier, un recadrage est appliqué à toutes les images qu’il contient. Si vous le souhaitez, vous pouvez réaligner ou redimensionner *manuellement* la fenêtre de recadrage intelligent dans plusieurs images pour affiner davantage leur point focal.
 
 Une fois que vous avez modifié et enregistré un recadrage intelligent, le changement est propagé partout où vous utilisez le recadrage des images spécifiques.
 
@@ -222,7 +222,7 @@ Vous pouvez exécuter à nouveau le recadrage intelligent pour générer des rec
 
 **Pour modifier le recadrage intelligent ou l’échantillon intelligent de plusieurs images** :
 
-1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Ressources]**, puis à un dossier auquel est appliqué un profil d’image de recadrage intelligent ou d’échantillon intelligent.
+1. Tap the AEM logo and navigate to **[!UICONTROL Assets]**, then to a folder that has a smart crop or smart swatch Image Profile applied to it.
 1. Sur le dossier, appuyez sur l’icône **[!UICONTROL Autres actions]** (...), puis sur **[!UICONTROL Recadrage intelligent]**.
 
 1. Sur la page **[!UICONTROL Modifier les recadrages intelligents]**, utilisez l’une des méthodes suivantes :
@@ -263,23 +263,23 @@ Vous pouvez exécuter à nouveau le recadrage intelligent pour générer des rec
 
 1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer]**. Ensuite, appuyez sur **[!UICONTROL Fermer]** pour revenir au dossier des ressources.
 
-## Suppression d’un profil d’image d’un dossier {#removing-an-image-profile-from-folders}
+## Removing an Image Profile from folders {#removing-an-image-profile-from-folders}
 
-Lorsque vous supprimez un profil d’image d’un dossier, tout sous-dossier hérite automatiquement de la suppression du profil de son dossier parent. Cependant, le traitement des fichiers qui s’est produit dans les dossiers reste intact.
+Lorsque vous supprimez un Profil Image d’un dossier, tous les sous-dossiers héritent automatiquement de la suppression du profil de son dossier parent. Cependant, tout traitement de fichiers effectué dans les dossiers reste intact.
 
-Vous pouvez supprimer un profil d’image appliqué à un dossier dans le menu **[!UICONTROL Outils]**, ou si vous êtes dans le dossier, via **[!UICONTROL Propriétés]**. Cette section décrit comment supprimer des profils d’image appliqués aux dossiers en utilisant les deux procédures.
+You can remove an Image Profile from a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from **[!UICONTROL Properties]**. Cette section décrit comment supprimer des Profils d’image des dossiers de deux manières.
 
-### Suppression d’un profil d’image Dynamic Media d’un dossier au moyen de l’interface utilisateur Profils {#removing-image-profiles-from-folders-via-profiles-user-interface}
+### Removing Dynamic Media Image Profiles from folders by way of Profiles user interface {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
 1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils d’image]**.
-1. Sélectionnez le profil d’image à supprimer d’un ou de plusieurs dossiers.
+1. Sélectionnez le Profil d’images à supprimer d’un ou de plusieurs dossiers.
 1. Appuyez sur **[!UICONTROL Supprimer le profil de traitement du ou des dossiers]**, sélectionnez le ou les dossiers desquels vous souhaitez supprimer le profil, et appuyez sur **[!UICONTROL Terminé]**.
 
-   Le fait que le nom du profil n’apparaît plus sous celui du dossier indique que le profil d’image n’est plus appliqué à un dossier.
+   Vous pouvez confirmer que le Profil d’image n’est plus appliqué à un dossier, car le nom n’apparaît plus sous le nom du dossier.
 
-### Suppression d’un profil d’image Dynamic Media d’un dossier au moyen des propriétés {#removing-image-profiles-from-folders-via-properties}
+### Removing Dynamic Media Image Profiles from folders by way of Properties {#removing-image-profiles-from-folders-via-properties}
 
-1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Ressources]**, puis au dossier duquel vous souhaitez supprimer un profil d’image.
+1. Tap the AEM logo and navigate **[!UICONTROL Assets]** and then to the folder that you want to remove an Image Profile from.
 1. Dans le dossier, appuyez sur la coche pour le sélectionner, puis sur **[!UICONTROL Propriétés]**.
 1. Sélectionnez l’onglet **[!UICONTROL Profils d’image]**.
 1. From the **[!UICONTROL Profile Name]** drop-down list, select **[!UICONTROL None]**, then tap **[!UICONTROL Save &amp; Close]**.
