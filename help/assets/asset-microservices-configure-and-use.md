@@ -3,10 +3,10 @@ title: Configuration et utilisation des microservices de ressources pour le trai
 description: Découvrez comment configurer et utiliser les microservices de ressources basés sur le cloud pour traiter des ressources à grande échelle.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
+source-git-commit: b63f62790973be59b1437a6406563638f63eeb28
 workflow-type: tm+mt
-source-wordcount: '1872'
-ht-degree: 97%
+source-wordcount: '1875'
+ht-degree: 90%
 
 ---
 
@@ -136,20 +136,18 @@ Les utilisateurs peuvent vérifier que le traitement a bien eu lieu en ouvrant u
 
 S’il s’avère qu’un traitement supplémentaire des ressources est nécessaire, mais qu’il ne peut pas être effectué à l’aide des profils de traitement, des workflows de post-traitement peuvent être ajoutés à la configuration. Cela permet d’ajouter un traitement entièrement personnalisé en plus du traitement configurable à l’aide des microservices de ressources.
 
-Les workflows de post-traitement, s’ils sont configurés, sont automatiquement exécutés par AEM une fois le traitement des microservices terminé. Il n’est pas nécessaire d’ajouter manuellement de lanceurs de workflows pour les déclencher.
+Les workflows de post-traitement, s’ils sont configurés, sont automatiquement exécutés par AEM une fois le traitement des microservices terminé. Il n’est pas nécessaire d’ajouter manuellement de lanceurs de workflows pour les déclencher. Voici quelques exemples :
 
-Voici quelques exemples :
-
-* Étapes de workflow personnalisées pour le traitement des ressources ; il s’agit, par exemple, du code Java à utiliser pour générer des rendus à partir de formats de fichiers propriétaires.
-* Intégrations pour ajouter des métadonnées ou des propriétés à des ressources provenant de systèmes externes, des informations sur des produits ou des processus, par exemple.
+* Procédure personnalisée de traitement des ressources.
+* Intégrations permettant d’ajouter des métadonnées ou des propriétés à des ressources provenant de systèmes externes, par exemple des informations sur les produits ou les processus.
 * Traitement supplémentaire effectué par des services externes.
 
 L’ajout d’une configuration de workflow de post-traitement à Experience Manager comprend les étapes suivantes :
 
-* Création d’un ou de plusieurs modèles de workflow. Nous les appellerons « modèles de workflow de post-traitement », mais il s’agit en fait de modèles de workflow AEM standard.
-* Ajout d’étapes de workflow spécifiques à ces modèles. Ces étapes seront exécutées sur les ressources en fonction de la configuration du modèle de workflow.
-* La dernière étape d’un tel modèle doit être `DAM Update Asset Workflow Completed Process`. Elle est nécessaire pour s’assurer qu’AEM sait que le traitement a pris fin et que la ressource peut désormais être marquée comme traitée (« Nouveau »).
-* Création d’une configuration pour le service d’exécution de workflow personnalisé, lequel permet de configurer l’exécution d’un modèle de workflow de post-traitement selon le chemin d’accès (emplacement du dossier) ou une expression régulière.
+* Créez un ou plusieurs modèles de processus. Les documents le mentionnent comme modèles *de processus de* post-traitement, mais il s’agit de modèles de processus Experience Manager réguliers.
+* Ajoutez des étapes de processus spécifiques à ces modèles. Les étapes sont exécutées sur les ressources en fonction d’une configuration de modèle de processus.
+* Ajouter l’étape de processus [!UICONTROL de mise à jour] DAM de la ressource terminée à la fin. Ajouter cette étape permet de s’assurer que le Experience Manager sait quand le traitement se termine et que l’actif peut être marqué comme traité, c’est-à-dire *Nouveau* s’affiche sur l’actif.
+* Créez une configuration pour le service d’exécution de flux de travail personnalisé qui permet de configurer l’exécution d’un modèle de processus de post-traitement soit par un chemin d’accès (emplacement de dossier), soit par une expression régulière.
 
 ### Création de modèles de workflow de post-traitement {#create-post-processing-workflow-models}
 
