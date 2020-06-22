@@ -2,9 +2,9 @@
 title: Notes de mise à jour d’Adobe Experience Manager as a Cloud Service version 2020.6.0
 description: Notes de mise à jour d’Experience Manager version 2020.6.0
 translation-type: tm+mt
-source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
+source-git-commit: fcae90c8e24dbd2994e8700daf22f5dff039b299
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1942'
 ht-degree: 11%
 
 ---
@@ -109,16 +109,16 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 
 Les balises actives améliorées permettent aux entreprises de former des modèles de balisage intelligent pour reconnaître les images basées sur des balises commerciales spécifiques aux clients, en plus des balises actives génériques.
 
-Avec cette version, il existe une nouvelle expérience utilisateur guidée qui permet de configurer une formation sur les balises actives pour des ensembles de balises spécifiques au client et de les former à l’utilisation de ressources qui devront être reconnues et balisées avec elles à l’avenir. C&#39;est une expérience plus intuitive.
+Avec cette version, il existe une nouvelle expérience utilisateur guidée qui permet de configurer une formation sur les balises actives pour des ensembles de balises spécifiques au client et de les former à l’utilisation de ressources qui devront être reconnues et balisées avec elles à l’avenir. L&#39;expérience est désormais plus intuitive.
 Former des balises intelligentes améliorées pour une formation plus intuitive aux balises intelligentes. Voir [comment ajouter des balises actives aux ressources](/help/assets/smart-tags.md) et [configurer le balisage](/help/assets/smart-tags-configuration.md)intelligent.
 
 **Prise en charge de l&#39;assimilation, de la prévisualisation et de la diffusion du contenu 3D**
 
-Les entreprises peuvent désormais stocker et utiliser des fichiers 3D en AEM Assets. L’utilisateur peut télécharger, prévisualisation et exploiter divers fichiers 3D de base, notamment des fichiers .obj, .stl, .gltf et .glb. Avec l’ajout d’ [!DNL Dynamic Media]expériences 3D, les expériences 3D peuvent être configurées et livrées par le biais d’URL ou de visionneuses agnostiques. Cela inclut une visionneuse d’expérience [!DNL Dynamic Media] 3D, un composant Visionneuse 3D Sites et la possibilité de diffuser des fichiers 3D via [!DNL Dynamic Media] (AR/VR). Voir [Utilisation de ressources 3D dans Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
+Les entreprises peuvent désormais stocker et utiliser des fichiers 3D en AEM Assets. L’utilisateur peut télécharger, prévisualisation et utiliser divers fichiers 3D de base, notamment des fichiers OBJ, STL, GLTF et GLB. Avec l’ajout de [!DNL Dynamic Media], vous pouvez configurer et diffuser des expériences 3D à l’aide d’URL ou de visionneuses agnostiques. Cela inclut une visionneuse d’expérience [!DNL Dynamic Media] 3D, un composant Visionneuse 3D Sites et la possibilité de diffuser des fichiers 3D via [!DNL Dynamic Media] (AR/VR). Voir [Utilisation de ressources 3D dans Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 **Prise en charge de Adobe Asset Link pour Adobe XD**
 
-Avec la dernière version, [!DNL Experience Manager Assets] fournit la prise en charge d’un nouveau [!DNL Adobe Asset Link] module externe publié avec [!DNL Adobe XD] la version v29.3. L’intégration permet aux concepteurs d’accéder aux ressources et de les utiliser à partir de [!DNL Experience Manager] leurs conceptions, sans avoir à quitter [!DNL Adobe XD] l’application. Voir [Adobe Asset Link pour consulter la documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html)Adobe XD.
+Avec la dernière version, [!DNL Experience Manager Assets] prend en charge un nouveau [!DNL Adobe Asset Link] module externe publié avec [!DNL Adobe XD] la version v29.3. L’intégration permet aux concepteurs d’accéder aux ressources et de les utiliser à partir de [!DNL Experience Manager] leurs conceptions, sans avoir à quitter [!DNL Adobe XD] l’application. Voir [Adobe Asset Link pour consulter la documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html)Adobe XD.
 
 Grâce à cette version, les utilisateurs et les concepteurs de la création peuvent désormais utiliser des ressources gérées à l’ [!DNL AEM Assets] aide [!DNL Adobe Asset Link] d’applications de bureau Creative Cloud, notamment [!DNL Adobe XD], [!DNL Photoshop][!DNL Illustrator], et [!DNL InDesign]diverses applications de bureau.
 
@@ -128,17 +128,17 @@ Grâce à cette version, les utilisateurs et les concepteurs de la création peu
 
 Les éléments de l’interface utilisateur sont compatibles avec les lecteurs d’écran, sont accessibles à l’aide du clavier et présentent un meilleur contraste. Voici une liste détaillée des améliorations :
 
-* Les indicateurs de progression des [!UICONTROL options], de la [!UICONTROL portée]et des [!UICONTROL Workflows] de la page [!UICONTROL Gérer la publication ne sont pas lus par le lecteur d’écran comme des indicateurs de progression. ] Les utilisateurs de lecteurs d’écran perçoivent ces indicateurs d’état comme une liste d’onglets. (CQ-4273015)
+* Les barres de progression [!UICONTROL Options], [!UICONTROL Portée]et [!UICONTROL Workflows] de la page [!UICONTROL Gérer la publication ne sont pas lues par le lecteur d’écran comme barre de progression. ] Les utilisateurs de lecteurs d’écran perçoivent ces indicateurs d’état comme une liste d’onglets. (CQ-4273015)
 
 * Lors de l’ajout de balises dans la page [!UICONTROL Propriétés] d’une ressource, les utilisateurs naviguent dans une arborescence de balises. La structure de l’arborescence n’est pas accessible, car les utilisateurs de lecteurs d’écran n’entendent rien lors de leur navigation. (CQ-4272964)
 
 * Dans la boîte de dialogue de partage de liens, lorsque vous naviguez en mode de navigation, le lecteur d’écran,
 
-   * Indique les informations du tableau dès que la boîte de dialogue est chargée.
-   * ne peut pas accéder à toutes les suggestions automatiques répertoriées.
-   * ne décrit pas les suggestions automatiques affichées pour la zone combinée [!UICONTROL Ajouter l’adresse électronique/Rechercher] . (CQ-4294232)
+   * Extrait les informations du tableau immédiatement au chargement de la boîte de dialogue.
+   * Ne peut pas accéder à toutes les suggestions automatiques répertoriées.
+   * Ne décrit pas les suggestions automatiques affichées pour la zone combinée [!UICONTROL Ajouter l’adresse électronique/Rechercher] . (CQ-4294232)
 
-* La page Editeur [!UICONTROL de Schéma de] métadonnées et ses éléments sont désormais accessibles et faciles à lire. Les options peuvent être utilisées à l’aide du clavier. (CQ-4272953) Les utilisateurs peuvent faire glisser les composants à l’aide du clavier en mode de navigation NVDA. (CQ-4296326)
+* La page Editeur [!UICONTROL de Schéma de] métadonnées et ses éléments sont désormais accessibles à l’aide du clavier et sont compatibles avec les lecteurs d’écran. (CQ-4272953) Les utilisateurs peuvent faire glisser les composants à l’aide du clavier en mode de navigation NVDA. (CQ-4296326)
 
 * Dans l’interface utilisateur Ressources, les paramètres de vue ne sont pas accessibles par le clavier. (CQ-4289038)
 
@@ -146,17 +146,17 @@ Les éléments de l’interface utilisateur sont compatibles avec les lecteurs d
 
 * La couleur et le contraste de certains éléments de l’interface utilisateur sont mis à jour afin que les utilisateurs ayant une vision limitée ou les utilisateurs sans perception de la couleur puissent distinguer ces éléments de l’interface utilisateur. Par exemple, la couleur des icônes d’évaluation des étoiles dans la section [!UICONTROL Notation] de l’onglet [!UICONTROL Avancé] dans les [!UICONTROL propriétés] d’un fichier et dans la vue de carte est modifiée pour un contraste approprié. (CQ-4295106)
 
-* Le menu contextuel de la zone de liste de la zone combinée (dans divers champs sur différentes pages) affiche désormais les entrées en tant que liste d’options qui peuvent être annoncées par les lecteurs d’écran. (CQ-4294017)
+* Les lecteurs d’écran peuvent désormais lire les entrées du menu contextuel de la zone de liste de la zone de liste modifiable (dans divers champs sur différentes pages) en tant que liste d’options. (CQ-4294017)
 
 * Pour appliquer un flux de travail à une ressource, vous pouvez accéder à la flèche chevron du [!UICONTROL journal] à l’aide du clavier. (CQ-4289268)
 
-* Les utilisateurs peuvent supprimer les balises sélectionnées dans le champ [!UICONTROL Balises] de l’onglet [!UICONTROL Simple] de la page [!UICONTROL Propriétés] d’une ressource à l’aide d’un `x` symbole. Son objectif est maintenant annoncé par les lecteurs d’écran, ainsi que le nombre de balises sélectionnées (CQ-4273033).
+* Les utilisateurs peuvent supprimer les balises sélectionnées dans le champ [!UICONTROL Balises] de l’onglet [!UICONTROL Simple] de la page [!UICONTROL Propriétés] d’une ressource à l’aide d’un `x` symbole. Les lecteurs d’écran annoncent maintenant l’objectif et le nombre de balises sélectionnées (CQ-4273033).
 
 * Les champs de formulaire en lecture seule peuvent être utilisés avec le clavier. Par exemple, les champs désactivés dans l’onglet [!UICONTROL Réglages de base] de la page [!UICONTROL Propriétés] d’une ressource. (CQ-4273031)
 
 * Accédez maintenant aux options de filtrage des fichiers dans la barre latérale gauche à l’aide du clavier. (CQ-4273018)
 
-* Les lecteurs d’écran annoncent désormais correctement l’objectif de divers éléments de la zone de liste modifiable, tels que le champ Chemin et l’option d’ouverture de la boîte de dialogue Sélection dans l’onglet [!UICONTROL Réglages de base] de la page [!UICONTROL Propriétés] d’un fichier. (CQ-4273016)
+* Le lecteur d’écran annonce l’objectif de divers éléments de zone de liste modifiable, tels que le champ Chemin et l’option d’ouverture de la boîte de dialogue Sélection dans l’onglet [!UICONTROL Réglages de base] de la page [!UICONTROL Propriétés] d’un fichier. (CQ-4273016)
 
 * Les commandes de volume des vidéos sont accessibles à l’aide du clavier. (CQ-4272696)
 
@@ -172,7 +172,7 @@ Les éléments de l’interface utilisateur sont compatibles avec les lecteurs d
 
 **Autres améliorations**
 
-Cette version comprend les améliorations supplémentaires suivantes :
+Cette version comprend les autres améliorations suivantes :
 
 * Possibilité de retraiter des ressources avec des profils de traitement des ressources, ce qui permet aux utilisateurs de contrôler entièrement le processus (exécuter le traitement complet des ressources, appliquer un profil de traitement spécifique et décider si le processus de post-traitement doit être exécuté).
 * Les requêtes de recherche renvoient les résultats plus rapidement maintenant que l’instance de grappe sous-jacente a été redémarrée en arrière-plan (l’exécution de recherche initiale pourrait durer plus longtemps dans ce cas auparavant).
@@ -191,7 +191,7 @@ En plus des nouvelles fonctionnalités ci-dessus, la version actuelle fournit le
 
 * Pour les fichiers de musique MP3, le bouton de lecture affiché sur la miniature dans la prévisualisation DAM ne fonctionne pas. (CQ-4294731)
 * Placer le pointeur sur la vue de la carte permet de faire défiler l’écran lorsque l’utilisateur se concentre (automatiquement) sur les actions rapides disponibles dans la carte. (GRANITE-26895)
-* L’affichage d’un trop grand nombre d’images après le défilement d’un grand nombre de résultats de recherche provoque un blocage du navigateur. (GRANITE-26432)
+* L’affichage d’un trop grand nombre d’images après le défilement de nombreux résultats de recherche provoque un blocage du navigateur. (GRANITE-26432)
 * Lors du téléchargement d’un fichier, si l’option de messagerie est sélectionnée et même si un ID de messagerie valide est fourni, l’option de téléchargement n’est pas disponible. (CQ-4296535)
 * Les filtres personnalisés enregistrés en tant que collections dynamiques ne sont pas correctement appliqués aux ressources. (CQ-4294942)
 * Plusieurs améliorations de la recherche et de l’indexation et corrections de bogues ont été apportées pour améliorer les performances. (CQ-4286373)
