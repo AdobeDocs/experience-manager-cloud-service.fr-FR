@@ -1,22 +1,22 @@
 ---
-title: Meilleures pratiques d’organisation des ressources numériques pour l’utilisation de profils
-description: Conseils et meilleures pratiques pour nommer, organiser et gérer les métadonnées des fichiers de ressources numériques.
+title: Recommandations relatives à l’organisation de vos ressources numériques pour l’utilisation de Profils d’images ou de Profils vidéo Dynamic Media
+description: Conseils et bonnes pratiques pour nommer, organiser et gérer les fichiers d’images et de vidéos Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 78e3f5f0324383578c8f4f91f7d07a2bd12f01d4
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Bonnes pratiques pour organiser les ressources numériques afin d’utiliser les profils {#best-practices-for-organizing-your-digital-assets-for-using-profiles}
+# Recommandations relatives à l’organisation de vos ressources numériques pour l’utilisation de profils d’images ou de profils vidéo{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
-Un élément à connaître lorsque l’on utilise les profils dans AEM est qu’ils sont attribués aux dossiers. Un profil contient des paramètres sous la forme de profils de métadonnées, avec des profils vidéo ou des profils d’image. Ces paramètres traitent le contenu d’un dossier et de tous ses sous-dossiers. Aussi, la façon dont vous nommez les fichiers ou les dossiers, organisez les sous-dossiers ou gérez les fichiers au sein des dossiers a un impact significatif sur le traitement des ressources par les profils.
+Un concept important concernant l’utilisation des Profils d’image ou des Profils vidéo Dynamic Media est qu’ils sont affectés à des dossiers. Un profil contient les paramètres d’une image ou d’une vidéo. Ces paramètres traitent le contenu d’un dossier et de tous ses sous-dossiers. Par conséquent, la manière dont vous nommez les fichiers et les dossiers, dont vous disposez les sous-dossiers et dont vous traitez les fichiers dans ces dossiers a un impact significatif sur la façon dont ces fichiers sont traités par le profil.
 
 Grâce à des stratégies d’attribution de nom aux fichiers et dossiers cohérentes et adéquates et à une bonne pratique en matière de métadonnées, vous pouvez tirer pleinement parti de votre collection de ressources numériques et vous assurer que les bons fichiers sont traités par le profil adéquat.
 
-Reportez-vous à la section [Profils pour le traitement des vidéos, des métadonnées et des images](processing-profiles.md).
+Voir [A propos des Profils d’images et des Profils](about-image-video-profiles.md)vidéo Dynamic Media.
 
 Voici quelques conseils sur les bonnes pratiques relatives à l’organisation des fichiers de ressources numériques.
 
