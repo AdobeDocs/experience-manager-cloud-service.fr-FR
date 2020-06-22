@@ -2,9 +2,9 @@
 title: Variations – création de contenu de fragment
 description: Les variations permettent de créer du contenu pour le fragment, puis de créer des variations de ce contenu selon l’objectif recherché (si nécessaire).
 translation-type: tm+mt
-source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
+source-git-commit: 5f332f247cc8a9baafb3e80a362a04410a9d036f
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1686'
 ht-degree: 100%
 
 ---
@@ -50,12 +50,6 @@ Lorsque vous ouvrez votre fragment de contenu pour le modifier, l’onglet **Var
    * accéder à un éventail d’[actions](#actions).
 
 Par exemple :
-
-* Modification d’un fragment simple
-
-   Un fragment simple se compose d’un champ de texte multiligne (les ressources visuelles peuvent être ajoutées à partir de l’éditeur plein écran).
-
-   ![fragment simple](assets/cfm-variations-01.png)
 
 * Modification d’un fragment avec du contenu structuré
 
@@ -210,7 +204,6 @@ D’autres langues sont disponibles en tant que modules de modèle de langues da
    * Toutes les phrases à éliminer sont biffées en rouge.
    * Cliquez sur n’importe quelle phrase en surbrillance pour la conserver dans le contenu résumé.
    * Cliquez sur n’importe quelle phrase qui ne figure pas en surbrillance pour l’éliminer.
-
    ![comparaison des résumés](assets/cfm-variations-06.png)
 
 6. Sélectionnez **Résumer** pour confirmer les modifications.
@@ -268,7 +261,6 @@ Il existe différentes méthodes pour ajouter des [images](/help/assets/content-
 
    * Accéder à la ressource souhaitée dans la gestion des actifs numériques
    * Rechercher la ressource dans la gestion des actifs numériques
-
    Une fois la ressource souhaitée localisée, sélectionnez-la en cliquant sur la miniature.
 
 4. Utilisez **Sélectionner** pour ajouter le fichier au système de paragraphes de votre fragment de contenu à l’emplacement actuel.
@@ -357,7 +349,6 @@ Le transfert des modifications n’est pas proposé *entre une variation et le *
    * le contenu ajouté figure en vert   (ajouté à la variation) ;
    * le contenu supprimé (de la variation) figure en rouge.
    * le texte remplacé apparaît en bleu
-
    ![Synchronisation avec le gabarit](assets/cfm-variations-11.png)
 
 1. Sélectionnez **Synchroniser**. La variation est alors mise à jour et affichée.
