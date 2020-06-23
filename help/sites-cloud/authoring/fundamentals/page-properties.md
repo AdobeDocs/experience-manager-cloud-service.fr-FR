@@ -2,10 +2,10 @@
 title: Modification des propriétés de page
 description: Définissez les propriétés requises pour une page
 translation-type: tm+mt
-source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 100%
+source-wordcount: '1538'
+ht-degree: 99%
 
 ---
 
@@ -39,6 +39,10 @@ Les propriétés sont réparties sur plusieurs onglets.
 * **Masquer dans la navigation**
 
    * Indique si la page doit être affichée ou masquée dans la navigation entre les pages du site qui en résulte.
+
+* **ID HTML**
+
+   * ID HTML à appliquer au composant.
 
 * **Titre de la page**
 
@@ -98,6 +102,10 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    * Indique la page vers laquelle cette page doit être automatiquement redirigée.
 
+* **Conception**
+
+   * Indique si la page doit être affichée ou masquée dans la navigation entre les pages du site qui en résulte.
+
 * **Alias**
 
    * Indique un alias à utiliser avec cette page.
@@ -113,9 +121,11 @@ Les propriétés sont réparties sur plusieurs onglets.
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-* **Hérité de &lt;*chemin*>**
+<!--
+* **Inherited from &lt;*path*&gt;**
 
-   * Indique si la page est héritée. et de qui.
+  * Indicates whether the page is inherited. and where from.
+-->
 
 * **Configuration du cloud**
 
@@ -173,7 +183,7 @@ Affiche l’image de la miniature de la page. Vous pouvez :
 
 ### Cloud Services {#cloud-services}
 
-* **Cloud Services**
+* **Configuration de Cloud Services**
 
    * Définissez les propriétés des services cloud.
 
