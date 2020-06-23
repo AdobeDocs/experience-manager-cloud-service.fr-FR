@@ -2,10 +2,10 @@
 title: Fragments de contenu
 description: Les fragments de contenu d’Adobe Experience Manager as a Cloud Service vous permettent de concevoir, de créer, d’organiser et d’utiliser du contenu indépendant des pages
 translation-type: tm+mt
-source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
+source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 100%
+source-wordcount: '1127'
+ht-degree: 98%
 
 ---
 
@@ -72,8 +72,8 @@ Grâce aux fragments de contenu :
    >
    >Pour plus d’informations sur les autres fonctionnalités d’édition, voir aussi :
    >
-   >    * [Mise en page réactive](/help/sites-cloud/authoring/features/responsive-layout.md)
-   >    * [Modification du contenu de la page](/help/sites-cloud/authoring/fundamentals/editing-content.md)
+   >* [Mise en page réactive](/help/sites-cloud/authoring/features/responsive-layout.md)
+   >* [Modification du contenu de la page](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 
 ### Sélection de l’élément ou de la variation {#selecting-the-element-or-variation}
@@ -88,8 +88,7 @@ Dans la boîte de dialogue de configuration appropriée, vous pouvez sélectionn
    * **Un seul élément texte**
    * **Plusieurs éléments**
 * **Élément**
-   * Le type **Principal** par défaut est toujours disponible.
-   * Une sélection est disponible si le fragment a été créé avec le modèle approprié.
+   * Une sélection sera disponible en fonction du modèle utilisé.
 
    >[!NOTE]
    >
@@ -98,11 +97,10 @@ Dans la boîte de dialogue de configuration appropriée, vous pouvez sélectionn
 * **Variation**
    * Le **maître** par défaut sera toujours disponible.
    * Une sélection est disponible si des variations ont été créées pour le fragment.
-* **Paragraphes** : indiquez la plage de paragraphes à inclure :
-   * **Tous**
-   * **Plage** : par exemple, `1`, `3-5`, `9-*`
-      * **Gérer les en-têtes comme leurs propres paragraphes**
-* **Gérer les en-têtes comme leurs propres paragraphes**
+
+* **ID**
+
+   * **Attribut d’identification HTML à appliquer au composant.**
 
 ### Connexion rapide à l’éditeur de fragment   {#quick-connection-to-fragment-editor}
 
