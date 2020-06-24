@@ -2,10 +2,10 @@
 title: Intégration à Adobe Target
 description: 'Intégration à Adobe Target '
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 100%
+source-wordcount: '743'
+ht-degree: 98%
 
 ---
 
@@ -53,7 +53,6 @@ Pour assurer l’intégration à Target, effectuez les tâches suivantes :
 >
 >* La version 3.x est configurée avec [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* Les API 4.x sont configurées avec [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
-
 >
 
 
@@ -74,7 +73,7 @@ Une fois l’intégration terminée, vous pouvez [créer du contenu ciblé](http
 
 Intégrer AEM as a Cloud Service à Adobe Target nécessite des connaissances sur Adobe Target, la gestion des activités AEM et la gestion des audiences AEM. Vous devez connaître les éléments suivants :
 
-* Adobe Target (consultez la [documentation sur Adobe Target](https://marketing.adobe.com/resources/help/fr_FR/target/)).
+* Adobe Target (consultez la [documentation sur Adobe Target](https://docs.adobe.com/content/help/en/target/using/target-home.html)).
 * Console des activités AEM (consultez [Gestion des activités](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html).
 * Audiences AEM (voir [Gestion des audiences](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/managing-audiences.html).
 
@@ -86,7 +85,6 @@ Intégrer AEM as a Cloud Service à Adobe Target nécessite des connaissances 
 >* 2 000 expériences
 >* 50 mesures
 >* 50 segments de création de rapports
-
 >
 
 
