@@ -2,10 +2,10 @@
 title: Profils d’image Dynamic Media
 description: Créez des Profils d’image Dynamic Media qui contiennent des paramètres de masquage flou et de recadrage intelligent, ou d’échantillon dynamique, ou les deux, puis appliquez le profil à un dossier de fichiers d’image.
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2732'
+ht-degree: 74%
 
 ---
 
@@ -93,7 +93,7 @@ L’option **[!UICONTROL Accentuation]** propose les options de filtre suivantes
  </tbody>
 </table>
 
-L’accentuation est décrite dans la section [Accentuation des images](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf.
+L’accentuation est décrite dans [Accentuation des images.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
 
 ## Création de profils d’image Dynamic Media {#creating-image-profiles}
 
