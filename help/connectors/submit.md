@@ -2,10 +2,10 @@
 title: Envoi d’un connecteur AEM
 description: Envoi d’un connecteur AEM
 translation-type: tm+mt
-source-git-commit: 629de3a9f55d2e4c52ef91c9e0bb5d439aebe84f
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 100%
+source-wordcount: '262'
+ht-degree: 98%
 
 ---
 
@@ -15,7 +15,7 @@ Envoi d’un connecteur AEM
 
 Les informations fournies ci-dessous sont utiles pour l’envoi des connecteurs AEM. Elles doivent être lues conjointement avec les articles sur l’[implémentation](implement.md) et la [maintenance](maintain.md) des connecteurs.
 
-Les connecteurs AEM sont répertoriés dans [Adobe Exchange](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace.html).
+Les connecteurs AEM sont répertoriés dans [Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
 
 Dans les solutions AEM précédentes, Package Manager était utilisé pour installer des connecteurs sur diverses instances AEM. Toutefois, avec AEM as a Cloud Service, les connecteurs sont déployés pendant le processus de CI/CD dans Cloud Manager. Pour que les connecteurs soient déployés, ils doivent être référencés dans le fichier pom.xml du projet Maven.
 
