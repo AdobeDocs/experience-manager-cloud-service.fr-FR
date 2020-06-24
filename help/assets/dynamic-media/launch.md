@@ -2,10 +2,10 @@
 title: Intégration des visionneuses Dynamic Media à Adobe Analytics et Adobe Launch
 description: L’extension Visionneuses Dynamic Media pour Adobe Launch, ainsi que la version 5.13 des Visionneuses Dynamic Media, permettent aux clients de Dynamic Media, Adobe Analytics et Adobe Launch d’utiliser des événements et des données spécifiques aux visionneuses Dynamic Media dans leur configuration Adobe Launch.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '6642'
-ht-degree: 100%
+source-wordcount: '6647'
+ht-degree: 99%
 
 ---
 
@@ -190,7 +190,7 @@ Lorsqu’il est sélectionné, l’éditeur d’éléments de données génère 
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-Pour obtenir la liste des événements pris en charge par chaque type de visionneuse, reportez-vous au [Guide de référence des visionneuses Dynamic Media](https://marketing.adobe.com/resources/help/fr_FR/s7/viewers_ref/c_html5_s7_aem_asset_viewers.html), accédez à la section spécifique à la visionneuse, puis cliquez sur la sous-section Prise en charge du suivi d’Adobe Analytics. À l’heure actuelle, le guide de référence des visionneuses Dynamic Media ne documente pas les arguments d’événement.
+Pour obtenir la liste des événements pris en charge par chaque type de visionneuse, reportez-vous au [Guide de référence des visionneuses Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html), accédez à la section spécifique à la visionneuse, puis cliquez sur la sous-section Prise en charge du suivi d’Adobe Analytics. À l’heure actuelle, le guide de référence des visionneuses Dynamic Media ne documente pas les arguments d’événement.
 
 Examinons à présent le cycle de vie de l’*élément de données* Visionneuses Dynamic Media. La valeur de cet élément de données est renseignée après que l’événement de visionneuse Dynamic Media correspondant a lieu sur la page. Par exemple, si l’élément de données pointe vers l’événement **[!UICONTROL LOAD]** et son argument « asset », la valeur de cet élément de données recevra des données valides une fois que la visionneuse aura exécuté l’événement LOAD pour la première fois. Si l’élément de données pointe vers l’événement **[!UICONTROL ZOOM]** et son argument « scale », la valeur de cet élément de données reste vide jusqu’à ce que la visionneuse envoie un événement **[!UICONTROL ZOOM]** pour la première fois.
 
@@ -740,99 +740,100 @@ La configuration d’AEM comprend les deux étapes principales suivantes :
 
    * **[!UICONTROL Titre]** : entrez un titre de compte descriptif.
    * **[!UICONTROL Serveur d’autorisation]** : revenez à la page Informations concernant l’intégration que vous avez ouverte précédemment. Cliquez sur l’onglet **[!UICONTROL JWT]**. Copiez le nom du serveur (sans le chemin d’accès), comme indiqué ci-dessous.
-Revenez à la page **[!UICONTROL Compte]**, puis collez le nom dans le champ correspondant.
+
+(l’exemple de nom de serveur est fourni à titre indicatif uniquement)   Revenez à la page **[!UICONTROL Compte]**, puis collez le nom dans le champ correspondant.
 Par exemple, `https://ims-na1.adobelogin.com/`
-(l’exemple de nom de serveur est fourni à titre d’illustration uniquement)   ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
-]**`https://ims-na1.adobelogin.com/`
+(l’exemple de nom de serveur est fourni à titre d’illustration uniquement)
 
-   _Page Informations concernant l’intégration – onglet JWT_   **[!UICONTROL Clé API]** : revenez à la page Informations concernant l’intégration. Cliquez sur l’onglet **[!UICONTROL Aperçu]**, puis sur **[!UICONTROL Copier]** à droite du champ **[!UICONTROL Clé API (ID client)]**._
+   ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
+   _Page Informations concernant l’intégration – onglet JWT_
 
-1. Revenez à la page **[!UICONTROL Compte]**, puis collez la clé dans le champ correspondant.************
+1. **[!UICONTROL Clé API]** : revenez à la page Informations concernant l’intégration. Cliquez sur l’onglet **[!UICONTROL Aperçu]**, puis sur **[!UICONTROL Copier]** à droite du champ **[!UICONTROL Clé API (ID client)]**.
+
+   Revenez à la page **[!UICONTROL Compte]**, puis collez la clé dans le champ correspondant.
 
    ![2019-07-25_14-35-333](assets/2019-07-25_14-35-333.png)
-]**
+   _Page Informations concernant l’intégration_
 
-   _Page Informations concernant l’intégration_   **[!UICONTROL Secret client]** : revenez à la page Informations concernant l’intégration. Dans l’onglet **[!UICONTROL Aperçu]**, cliquez sur **[!UICONTROL Récupérer le secret client]**. À droite du champ **[!UICONTROL Secret client]**, cliquez sur **[!UICONTROL Copier]**._
+1. **[!UICONTROL Secret client]** : revenez à la page Informations concernant l’intégration. Dans l’onglet **[!UICONTROL Aperçu]**, cliquez sur **[!UICONTROL Récupérer le secret client]**. À droite du champ **[!UICONTROL Secret client]**, cliquez sur **[!UICONTROL Copier]**.
 
-1. Revenez à la page **[!UICONTROL Compte]**, puis collez la clé dans le champ correspondant.****************
+   Revenez à la page **[!UICONTROL Compte]**, puis collez la clé dans le champ correspondant.
 
-   **[!UICONTROL Charge utile]** : revenez à la page Informations concernant l’intégration. Dans l’onglet **[!UICONTROL JWT]**, dans le champ Charge utile JWT, copiez le code d’objet JSON entier.
+1. **[!UICONTROL Charge utile]** : revenez à la page Informations concernant l’intégration. Dans l’onglet **[!UICONTROL JWT]**, dans le champ Charge utile JWT, copiez le code d’objet JSON entier.
 
-1. Revenez à la page **[!UICONTROL Compte]**, puis collez le code dans le champ correspondant.****
+   Revenez à la page **[!UICONTROL Compte]**, puis collez le code dans le champ correspondant.
 
    ![2019-07-25_21-59-12](assets/2019-07-25_21-59-12.png)
-]**
+   _Page Informations concernant l’intégration – onglet JWT_
 
-   _Page Informations concernant l’intégration – onglet JWT_   _La page Compte, avec tous les champs remplis, se présente comme suit :_
+   La page Compte, avec tous les champs remplis, se présente comme suit :
 
    ![2019-07-25_22-08-30](assets/2019-07-25_22-08-30.png)
 
-   Dans le coin supérieur droit de la page **[!UICONTROL Compte]**, cliquez sur **[!UICONTROL Créer]**.](assets/2019-07-25_22-08-30.png)
+1. Dans le coin supérieur droit de la page **[!UICONTROL Compte]**, cliquez sur **[!UICONTROL Créer]**.
 
-1. Avec AEM IMS configuré, vous disposez désormais d’un nouveau compte IMSAccount répertorié sous **[!UICONTROL Configurations d’Adobe IMS]**.****
+   Avec AEM IMS configuré, vous disposez désormais d’un nouveau compte IMSAccount répertorié sous **[!UICONTROL Configurations d’Adobe IMS]**.
 
-   ![image2019-7-15_14-17-54](assets/image2019-7-15_14-17-54.png)]**
+   ![image2019-7-15_14-17-54](assets/image2019-7-15_14-17-54.png)
 
-   Configuration du cloud Adobe Launch pour l’intégration {#configuring-adobe-launch-cloud-for-the-integration}](assets/image2019-7-15_14-17-54.png)
+## Configuration du cloud Adobe Launch pour l’intégration {#configuring-adobe-launch-cloud-for-the-integration}
 
-## Dans l’auteur AEM, près du coin supérieur gauche, cliquez sur l’icône Outils (en forme de marteau), puis sur **[!UICONTROL Cloud Services > Configurations d’Adobe Launch]**.
+1. Dans l’auteur AEM, près du coin supérieur gauche, cliquez sur l’icône Outils (en forme de marteau), puis sur **[!UICONTROL Cloud Services > Configurations d’Adobe Launch]**.
 
-1. ![26/07/2019_12-10-38](assets/2019-07-26_12-10-38.png)]**
+   ![26/07/2019_12-10-38](assets/2019-07-26_12-10-38.png)
 
-   Sur la page **[!UICONTROL Configurations d’Adobe Launch]**, dans le panneau de gauche, sélectionnez un AEM Site auquel appliquer la configuration d’Adobe Launch.](assets/2019-07-26_12-10-38.png)
+1. Sur la page **[!UICONTROL Configurations d’Adobe Launch]**, dans le panneau de gauche, sélectionnez un AEM Site auquel appliquer la configuration d’Adobe Launch.
 
-1. À titre d’illustration uniquement, le site **[!UICONTROL We.Retail]** est sélectionné dans la capture d’écran ci-dessous.
+   À titre d’illustration uniquement, le site **[!UICONTROL We.Retail]** est sélectionné dans la capture d’écran ci-dessous.
 
-   ![26/07/2019_12-20-06](assets/2019-07-26_12-20-06.png)]**
+   ![26/07/2019_12-20-06](assets/2019-07-26_12-20-06.png)
 
-   Dans le coin supérieur gauche de la page, cliquez sur **[!UICONTROL Créer]**.](assets/2019-07-26_12-20-06.png)
-
+1. Dans le coin supérieur gauche de la page, cliquez sur **[!UICONTROL Créer]**.
 1. Sur la page **[!UICONTROL Général]** (1/3 pages) de la fenêtre **[!UICONTROL Créer une configuration Adobe Launch]**, renseignez les champs suivants :
-1. **[!UICONTROL Titre]** : entrez un titre de configuration descriptif. Par exemple, `We.Retail Launch cloud configuration`.]**
+
+   * **[!UICONTROL Titre]** : entrez un titre de configuration descriptif. Par exemple, `We.Retail Launch cloud configuration`.
 
    * **[!UICONTROL Configuration Adobe IMS associée]** : sélectionnez la configuration IMS que vous avez créée précédemment dans [Configuration d’AEM IMS](#configuring-aem-ims).
 
-   * **[!UICONTROL Société]** : dans la liste déroulante **[!UICONTROL Société]**, sélectionnez votre société Experience Cloud. La liste est renseignée automatiquement.](#configuring-aem-ims)
+   * **[!UICONTROL Société]** : dans la liste déroulante **[!UICONTROL Société]**, sélectionnez votre société Experience Cloud. La liste est renseignée automatiquement.
 
-   * **[!UICONTROL Propriété]** : dans la liste déroulante Propriété, sélectionnez la propriété Adobe Launch que vous avez créée précédemment. La liste est renseignée automatiquement.****
+   * **[!UICONTROL Propriété]** : dans la liste déroulante Propriété, sélectionnez la propriété Adobe Launch que vous avez créée précédemment. La liste est renseignée automatiquement.
+   Après avoir rempli tous les champs, la page **[!UICONTROL Général]** se présente comme suit :
 
-   * Après avoir rempli tous les champs, la page **[!UICONTROL Général]** se présente comme suit :
-   ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)]**
+   ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
 
-   Près du coin supérieur gauche, cliquez sur **[!UICONTROL Suivant]**.](assets/image2019-7-15_14-34-23.png)
-
+1. Près du coin supérieur gauche, cliquez sur **[!UICONTROL Suivant]**.
 1. Sur la page **[!UICONTROL Évaluation]** (2/3 pages) de la fenêtre **[!UICONTROL Créer une configuration Adobe Launch]**, renseignez les champs suivants :
-1. Dans le champ **[!UICONTROL URI bibliothèque]**, vérifiez l’emplacement de la version d’évaluation de votre bibliothèque Adobe Launch. AEM renseigne ce champ automatiquement.****
 
-   À titre d’illustration uniquement, cette étape utilise les bibliothèques Adobe Launch déployées sur le réseau de diffusion de contenu Adobe.****
+   Dans le champ **[!UICONTROL URI bibliothèque]**, vérifiez l’emplacement de la version d’évaluation de votre bibliothèque Adobe Launch. AEM renseigne ce champ automatiquement.
 
-   [!NOTE]
+   À titre d’illustration uniquement, cette étape utilise les bibliothèques Adobe Launch déployées sur le réseau de diffusion de contenu Adobe.
 
-   >[!NOTE]Vérifiez que l’URI (Uniform Resource Identifier) de bibliothèque auto-renseigné n’est pas mal formé. Si nécessaire, corrigez-le de sorte qu’il soit relatif au protocole. C’est-à-dire qu’il commence par une double barre oblique.
+   >[!NOTE]
+   >
+   >Vérifiez que l’URI (Uniform Resource Identifier) de bibliothèque auto-renseigné n’est pas mal formé. Si nécessaire, corrigez-le de sorte qu’il soit relatif au protocole. C’est-à-dire qu’il commence par une double barre oblique.
+   >
    >
    >Par exemple : `//assets.adobetm.com/launch-xxxx`.
-   >
-   >
-   >Votre page **[!UICONTROL Évaluation]** doit ressembler à ce qui suit. Notez que les options **[!UICONTROL Archiver]** et **[!UICONTROL Charger la bibliothèque de manière asynchrone]** ne sont ***pas*** définies :
 
-   ![image2019-7-15_15-21-8](assets/image2019-7-15_15-21-8.png)]****************
+   Votre page **[!UICONTROL Évaluation]** doit ressembler à ce qui suit. Notez que les options **[!UICONTROL Archiver]** et **[!UICONTROL Charger la bibliothèque de manière asynchrone]** ne sont ***pas*** définies :
 
-   Près du coin supérieur droit, cliquez sur **[!UICONTROL Suivant]**.](assets/image2019-7-15_15-21-8.png)
+   ![image2019-7-15_15-21-8](assets/image2019-7-15_15-21-8.png)
 
+1. Près du coin supérieur droit, cliquez sur **[!UICONTROL Suivant]**.
 1. Sur la page **[!UICONTROL Production]** (3/3 pages) de la fenêtre **[!UICONTROL Créer une configuration Adobe Launch]**, si nécessaire, corrigez l’URI de production auto-renseigné de la même manière que sur la page **[!UICONTROL Évaluation]** précédente.
-1. Près du coin supérieur droit, cliquez sur **[!UICONTROL Créer]**.********
-1. Votre nouvelle configuration du cloud Adobe Launch est maintenant créée et répertoriée en regard de votre site web.****
+1. Près du coin supérieur droit, cliquez sur **[!UICONTROL Créer]**.
 
-   Sélectionnez votre nouvelle configuration du cloud Adobe Launch (une coche apparaît à gauche du titre de la configuration lorsqu’elle est sélectionnée). Dans la barre d’outils, cliquez sur **[!UICONTROL Publier]**.
+   Votre nouvelle configuration du cloud Adobe Launch est maintenant créée et répertoriée en regard de votre site web.
 
-1. ![image2019-7-15_15-47-6](assets/image2019-7-15_15-47-6.png)]**
+1. Sélectionnez votre nouvelle configuration du cloud Adobe Launch (une coche apparaît à gauche du titre de la configuration lorsqu’elle est sélectionnée). Dans la barre d’outils, cliquez sur **[!UICONTROL Publier]**.
 
-   ![À l’heure actuelle, l’auteur AEM ne prend pas en charge l’intégration des visionneuses Dynamic Media avec Adobe Launch.](assets/image2019-7-15_15-47-6.png)
+   ![image2019-7-15_15-47-6](assets/image2019-7-15_15-47-6.png)
+
+À l’heure actuelle, l’auteur AEM ne prend pas en charge l’intégration des visionneuses Dynamic Media avec Adobe Launch.
 
 Elle est toutefois prise en charge dans le nœud Publication AEM. Avec les paramètres par défaut de la configuration du cloud Adobe Launch, la publication AEM utilise l’environnement de production d’Adobe Launch. Par conséquent, il est nécessaire de transmettre les mises à jour de la bibliothèque Adobe Launch de l’environnement de développement vers celui de production chaque fois pendant le test.
 
 Il est possible de contourner cette limitation en spécifiant l’URL de développement ou d’évaluation de la bibliothèque Adobe Launch dans la configuration du cloud Adobe Launch pour la publication AEM ci-dessus. Ce faisant, le nœud Publication AEM utilise la version de développement ou d’évaluation de la bibliothèque Adobe Launch.
 
-Voir [Intégration d’AEM à Adobe Launch via Adobe I/O[#$tu398] pour plus d’informations sur la configuration du cloud Adobe Launch.
-
-See [Integrate AEM with Adobe Launch Via Adobe I/O-ERR:REF-NOT-FOUND- for more information about setting up Adobe Launch Cloud Configuration.
+Voir [Intégration d’AEM à Adobe Launch via Adobe I/O](https://helpx.adobe.com/fr/experience-manager/using/aem_launch_adobeio_integration.html) pour plus d’informations sur la configuration du cloud Adobe Launch.
