@@ -2,10 +2,10 @@
 title: Utilisation de jeux de règles de transformation d’URL
 description: Vous pouvez déployer des ensembles de règles dans Dynamic Media pour transformer les URL. Les ensembles de règles sont des ensembles d’instructions écrites dans un langage de scripts (comme JavaScript) qui évaluent des données XML et déclenchent certaines actions si ces données remplissent des conditions spécifiques.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 100%
+source-wordcount: '797'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Dans le cadre de Dynamic Media, les sites web qui utilisent un système XML pou
 >Utilisez les ensembles de règles avec prudence ; ceux-ci peuvent empêcher l’affichage du contenu Dynamic Media sur votre site.
 
 Il existe des exemples d’ensembles de règles disponibles afin de vous aider à créer votre propre ensemble de règles.
-Voir la section [Référence d’ensemble de règles](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/c_rule_set_reference.html).
+Voir la section [Référence d’ensemble de règles](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html).
 
 À l’instar de la création de tous les ensembles de règles, assurez-vous que votre fichier XML est valide avant de le charger à l’aide d’un programme de validation XML tel que xmlvalid.
 Voir également la section [Résolution des problèmes liés aux ensembles de règles](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html).
