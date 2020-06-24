@@ -1,16 +1,16 @@
 ---
-title: Règlement sur la protection des données et la confidentialité des données - Adobe Experience Manager en tant que site de services Cloud prêt
-description: 'Découvrez Adobe Experience Manager en tant que site de services Cloud prenant en charge les divers règlements sur la protection des données et la confidentialité des données ; notamment le règlement général de l’UE sur la protection des données (RGPD), la loi sur la protection des renseignements personnels des consommateurs de Californie et la manière de se conformer lors de la mise en oeuvre d’un nouveau projet AEM as a Cloud Service. '
+title: Règlement sur la protection des données et la confidentialité des données - Adobe Experience Manager en tant que site Cloud Service Prêt
+description: 'Découvrez comment l''Adobe Experience Manager en tant que site Cloud Service prend en charge les divers règlements sur la protection des données et la confidentialité des données ; notamment le règlement général de l’UE sur la protection des données (RGPD), la loi sur la protection des renseignements personnels des consommateurs de Californie et la manière de se conformer lors de la mise en oeuvre d’un nouveau projet AEM en tant que Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 1130e8a07bc3826380483a7560ebda7e8a17e238
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 44%
+source-wordcount: '1038'
+ht-degree: 43%
 
 ---
 
 
-# Adobe Experience Manager en tant que site de services Cloud Prêt pour la protection des données et la confidentialité des données {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager en tant que site Cloud Service Prêt pour la protection des données et la protection des données {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -22,13 +22,13 @@ ht-degree: 44%
 >
 >Pour plus d&#39;informations sur la réponse Adobe aux problèmes de confidentialité et sur ce que cela signifie pour vous en tant que client Adobe, consultez le Centre [de confidentialité](https://www.adobe.com/privacy.html)Adobe.
 
-Adobe Experience Manager en tant que sites de services Cloud est prêt à aider les clients à respecter leurs obligations en matière de confidentialité et de protection des données. Cette page guide les clients tout au long des procédures de traitement de ces requêtes dans les sites AEM. Elle décrit l’emplacement des données privées stockées et la procédure pour les supprimer manuellement ou à l’aide de code.
+Adobe Experience Manager en tant que site Cloud Service est prêt à aider les clients à respecter leurs obligations en matière de confidentialité et de protection des données. Cette page guide les clients tout au long des procédures de traitement de ces demandes en AEM Sites. Elle décrit l’emplacement des données privées stockées et la procédure pour les supprimer manuellement ou à l’aide de code.
 
 Pour plus d&#39;informations, consultez le Centre [de confidentialité](https://www.adobe.com/privacy.html)Adobe.
 
 >[!NOTE]
 >
->Pour plus d’informations, voir [Adobe Experience Manager as a Cloud Service Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) (en anglais).
+>Pour plus de détails, consultez la section [Adobe Experience Manager en tant que Cloud Service Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) (en anglais seulement).
 
 ## Niveau de création AEM {#aem-author-tier}
 
@@ -38,7 +38,7 @@ User accounts and UGC content on the author server are covered in the [AEM Found
 
 User accounts used to authenticate visitors on the site, and UGC content on the publish server are covered in the [AEM Foundation documentation](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md).
 
-Par défaut, les composants Sites AEM ne stockent pas les données de formulaire saisies par les visiteurs sur le serveur de publication. Il est recommandé de transférer les données vers un système tiers ou vers Adobe Campaign pour traitement ultérieur.
+Par défaut, les composants AEM Sites ne stockent pas les données de formulaire saisies par les visiteurs sur le serveur de publication. Il est recommandé de transférer les données vers un système tiers ou vers Adobe Campaign pour traitement ultérieur.
 
 ## Souscription/exclusion {#opt-in-opt-out}
 
@@ -46,14 +46,14 @@ Par défaut, les composants Sites AEM ne stockent pas les données de formulaire
 AEM has a [cookie opt-out service](/help/sites-developing/cookie-optout.md ) that can be used for managing the opt-in/opt-out for users.
 -->
 
-Adobe Experience Manager fait l’objet d’un service d’exclusion des cookies qui est utilisé pour gérer l’inclusion/exclusion des utilisateurs.
+L’Adobe Experience Manager est soumis à un service d’exclusion des cookies qui est utilisé pour la gestion de l’inclusion/exclusion pour les utilisateurs.
 
 Pour exclure :
 
 1. Accédez à:
    [Centre de traitement des données personnelles Adobe - Exclusion](https://www.adobe.com/privacy/opt-out.html)
 
-1. Faites défiler l’écran jusqu’à **Services** - Données **d’utilisation du service** Experience Cloud.
+1. Faites défiler l&#39;écran jusqu&#39;à **Services** - Données **d&#39;utilisation du service** Experience Cloud.
 
 1. Sélectionnez le lien référencé ; actuellement intitulé **ici**.
 
@@ -68,21 +68,25 @@ Pour exclure :
       Inscription - Incluez-moi dans l&#39;agrégation et l&#39;analyse des sessions de visiteur (n&#39;installez pas le cookie `amcglobal.sc.omtrdc.net` d&#39;exclusion) - Cliquez ici.
    Suivez les étapes ci-dessus pour accéder aux liens réels.
 
+   <!--
+    NOTE TO WRITER: Change link to https://www.adobe.com/legal/terms.html and edit note.
+    -->
+
    >[!NOTE]
    >
    > Il y a une autre description dans la section Politique **de** confidentialité des [Conditions d&#39;utilisation](https://marketing.adobe.com/resources/help/fr_FR/terms.html).
 
-## Analytics Foundation {#analytics-foundation}
+## Fondation Analytics {#analytics-foundation}
 
-Les sites AEM incluent une intégration facultative à Analytics Foundation qui utilise les fonctionnalités du service à la demande Adobe Analytics.
+Le AEM Sites inclut une intégration facultative avec Analytics Foundation qui utilise les fonctionnalités du service à la demande Adobe Analytics.
 
 For further information on managing data subject requests related to Adobe Analytics see [Adobe Analytics and Data Privacy](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html).
 
 ## Fondation de la personnalisation par Cible {#personalization-foundation-by-target}
 
-Les sites AEM incluent une intégration facultative à la base de personnalisation par Cible qui utilise les fonctionnalités du service à la demande de Cible Adobe.
+Les AEM Sites incluent une intégration facultative avec la base de personnalisation par Cible qui utilise les fonctionnalités du service à la demande d’Adobe Target.
 
-For further information on managing data subject requests related to Adobe Target see [Adobe Target - Privacy and General Data Protection Regulation](https://marketing.adobe.com/resources/help/fr_FR/target/target/privacy-and-general-data-protection-regulation.html).
+For further information on managing data subject requests related to Adobe Target see [Adobe Target - Privacy and General Data Protection Regulation](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 
@@ -173,7 +177,6 @@ Pour afficher un aperçu de la persistance utilisée par ContextHub, l’utilisa
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
-
       Le magasin ContextHub définit la couche de persistance utilisée pour afficher l’état actuel de la persistance. Toutes les couches devraient être cochées.
 
 
@@ -203,7 +206,6 @@ Pour afficher un aperçu de la persistance utilisée par ContextHub, l’utilisa
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
-
       Le magasin ContextHub définit la couche de persistance utilisée pour afficher l’état actuel de la persistance. Toutes les couches devraient être cochées.
 
 
