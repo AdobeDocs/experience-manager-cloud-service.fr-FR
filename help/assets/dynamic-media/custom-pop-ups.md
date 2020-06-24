@@ -2,10 +2,10 @@
 title: Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées
 description: L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles.
 translation-type: tm+mt
-source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '1121'
-ht-degree: 97%
+source-wordcount: '1023'
+ht-degree: 88%
 
 ---
 
@@ -129,9 +129,9 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 
    Pour en savoir plus sur la méthode `quickViewActivate`, rendez-vous sur la page suivante :
 
-   * Visionneuse d’images interactives : [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_interactive_image_event_callbacks.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_interactive_image_event_callbacks.html)
-   * Visionneuse vidéo interactive : [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_int_video_event_callbacks.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_int_video_event_callbacks.html)
-   * Prise en charge des données interactives dans la visionneuse Vidéo interactive :[ https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_int_video_int_data_support.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_int_video_int_data_support.html)
+   * Visionneuse d’images interactive - Rappels [Événement](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
+   * Visionneuse de vidéos interactive - Rappels [Événement](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
+   * Prise en charge des données interactives dans la visionneuse de vidéos interactives - Prise en charge des données [interactives](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
 
 1. Procédez comme suit :
 
@@ -207,8 +207,8 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 
    Pour en savoir plus sur la méthode `init()`, rendez-vous sur la page suivante :
 
-   * Visionneuse d’images interactives : [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_init.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_init.html)
-   * Visionneuse vidéo interactive : [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_init.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_init.html)
+   * Visionneuse d’images interactive - [init](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
+   * Visionneuse de vidéos interactive - [init](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
 
 1. Pour associer la fenêtre contextuelle (décrite dans les étapes précédentes) à la visionneuse, utilisez le code suivant :
 
