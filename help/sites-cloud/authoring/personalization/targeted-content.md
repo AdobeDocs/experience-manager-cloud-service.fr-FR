@@ -2,10 +2,10 @@
 title: 'Création de contenu ciblé en mode Ciblage   '
 description: Le mode Ciblage et le composant cible fournissent des outils permettant de créer du contenu pour les expériences.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '5351'
-ht-degree: 100%
+source-wordcount: '5348'
+ht-degree: 99%
 
 ---
 
@@ -337,12 +337,15 @@ Vous ne pouvez pas ajouter d’offres de bibliothèque à l’expérience par d�
    Le sélecteur d’offres permet de chercher ou de filtrer les offres. Lors de la recherche ou du filtrage, vous pouvez également trier les offres et modifier le mode d’affichage. Le nombre dans la partie supérieure droite indique le nombre d’offres disponibles dans la bibliothèque actuelle.
 
    * Cliquez ou appuyez sur **Parcourir** pour accéder à un autre dossier. Le volet de navigation s’affiche. Cliquez sur la flèche pour accéder aux dossiers. Cliquez ou appuyez sur **Parcourir** pour fermer le volet de navigation.
+
    ![Parcourir le contenu](/help/sites-cloud/authoring/assets/targeted-select-content-browse.png)
 
    * Cliquez ou appuyez sur **Filtrer** pour filtrer les offres selon les mots-clés et les balises. Vous saisissez des mots-clés et sélectionnez des balises dans le menu déroulant. Cliquez ou appuyez de nouveau sur **Filtrer** pour fermer le volet de filtrage.
+
    ![Filtrer le contenu](/help/sites-cloud/authoring/assets/targeted-filter.png)
 
    * Modifiez la façon dont vous triez les offres en cliquant ou en appuyant sur la flèche en regard de **Du plus récent au plus ancien**. Les offres peuvent être triées de la plus récente à la plus ancienne et inversement.
+
    ![Ordre de tri des filtres](/help/sites-cloud/authoring/assets/targeted-filter-sort.png)
 
    Cliquez ou appuyez sur l’icône en regard de **Afficher sous** pour afficher les offres sous forme de mosaïque ou de liste.
@@ -461,7 +464,7 @@ Utilisez les options avancées pour déterminer ce qui se passe **après** qu’
 | Incrémenter le décompte, libérer l’utilisateur et autoriser le retour | Sélectionnez l’expérience que voit le visiteur s’il entre de nouveau dans l’activité : Même contenu, Contenu aléatoire, Contenu non vu |
 | Incrémenter le décompte, libérer l’utilisateur et bloquer le retour | Déterminez ce que l’utilisateur voit au lieu du contenu de l’activité : Même contenu (sans suivi), Par défaut/autre contenu d’activité |
 
-Pour plus d’informations sur les mesures de réussite, reportez-vous à la section [Documentation d’Adobe Target](https://marketing.adobe.com/resources/help/fr_FR/target/target/r_success_metrics.html).
+Pour plus d’informations sur les mesures de réussite, reportez-vous à la section [Documentation d’Adobe Target](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html).
 
 ### Paramètres de configuration (ciblage d’AEM)    {#configuring-settings-aem-targeting}
 
@@ -500,13 +503,13 @@ Pour configurer les objectifs et les paramètres si vous utilisez Adobe Target 
 
    ![Source de création de rapports](/help/sites-cloud/authoring/assets/targeted-reporting-source.png)
 
-1. Dans la zone **Mesure d’objectif**, sous **Mon objectif principal**, sélectionnez la mesure de succès dont vous souhaitez effectuer le suivi (Conversion, Chiffre d’affaires, Engagement) et saisissez la manière dont cette mesure est évaluée (ou l’action entreprise par l’audience pour indiquer qu’un objectif a été atteint). Consultez la définition des mesures d’objectif dans le tableau précédent et la [documentation d’Adobe Target](https://marketing.adobe.com/resources/help/fr_FR/target/target/r_success_metrics.html) sur les mesures de succès.
+1. Dans la zone **Mesure d’objectif**, sous **Mon objectif principal**, sélectionnez la mesure de succès dont vous souhaitez effectuer le suivi (Conversion, Chiffre d’affaires, Engagement) et saisissez la manière dont cette mesure est évaluée (ou l’action entreprise par l’audience pour indiquer qu’un objectif a été atteint). Consultez la définition des mesures d’objectif dans le tableau précédent et la [documentation d’Adobe Target](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) sur les mesures de succès.
 
    Vous pouvez renommer l’objectif en cliquant sur le bouton de sélection dans le coin supérieur droit et en sélectionnant **Renommer**.
 
    Si vous devez supprimer tous les champs, cliquez sur le bouton de sélection dans le coin supérieur droit et sélectionnez **Effacer tous les champs**.
 
-   Toutes les mesures comportent également des paramètres avancés que vous pouvez définir. Sélectionnez **Paramètres avancés** pour y accéder. Reportez-vous à la définition de la comptabilisation des mesures de réussite dans le tableau précédent et à la [Documentation d’Adobe Target](https://marketing.adobe.com/resources/help/fr_FR/target/target/r_success_metrics.html).
+   Toutes les mesures comportent également des paramètres avancés que vous pouvez définir. Sélectionnez **Paramètres avancés** pour y accéder. Reportez-vous à la définition de la comptabilisation des mesures de réussite dans le tableau précédent et à la [Documentation d’Adobe Target](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html).
 
    >[!NOTE]
    >
