@@ -3,10 +3,10 @@ title: Formats de fichiers et types MIME pris en charge par Experience Manager 
 description: Formats de fichier et types MIME pris en charge par Experience Manager Assets as a Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2830c1cb2a9a0c06e6f8a4a765420706f5ceb093
+source-git-commit: b44e6a522b6f2363daa40c6c6f9640ba2fadd35e
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 100%
+source-wordcount: '821'
+ht-degree: 96%
 
 ---
 
@@ -86,6 +86,21 @@ Les sous-types suivants de formats de fichiers d’images pixellisées qui ne so
 * Fichiers PSD ayant une résolution binaire supérieure à 16.
 * Fichiers TIFF contenant des données à virgule flottante.
 * Fichiers TIFF dotés d’un espace colorimétrique Lab.
+
+## Formats 3D pris en charge {#support-3d-formats}
+
+La liste suivante de formats 3D est prise en charge.
+
+Voir [Utilisation de ressources 3D dans Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
+
+| Format | Stockage | Contrôle de version | Workflow | Publication | Contrôle d&#39;accès | prévisualisation de miniature | prévisualisation 3D | diffusion Dynamic Media |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ |  | ✓ |  | ✓ |  |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 
 ## Formats [!DNL Camera RAW] {#camera-raw-formats}
 
