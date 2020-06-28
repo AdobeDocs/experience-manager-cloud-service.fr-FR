@@ -2,9 +2,9 @@
 title: Utilisation de Cloud Readiness Analyzer
 description: Utilisation de Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
+source-git-commit: a0e58c626f94b778017f700426e960428b657806
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1871'
 ht-degree: 1%
 
 ---
@@ -18,9 +18,12 @@ Suivez la section ci-dessous pour comprendre les points importants à prendre en
 
 * Le rapport ARC est généré à l’aide de la sortie du détecteur [de](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)schémas d’Adobe Experience Manager (AEM). La version du détecteur de schémas utilisée par l&#39;ARC est incluse dans la trousse d&#39;installation de l&#39;ARC.
 
-* L&#39;ARC ne peut être exécutée que par l&#39;utilisateur **administrateur** ou un utilisateur du groupe **Administrateurs** .
+* L&#39;ARC ne peut être exécutée que par l&#39;utilisateur **administrateur** ou un utilisateur du groupe **administrateurs** .
 
 * L’ARC est prise en charge sur les instances AEM avec les versions 6.1 et ultérieures.
+
+   >[!NOTE]
+   > Consultez [Installation sur AEM 6.1](#installing-on-aem61) pour connaître les conditions particulières d’installation de CRA sur AEM 6.1.
 
 * L&#39;ARC peut s&#39;exécuter sur n&#39;importe quel environnement, mais il est préférable de l&#39;exécuter sur un environnement *d&#39;étape* .
 
@@ -33,7 +36,7 @@ Suivez la section ci-dessous pour comprendre les points importants à prendre en
 
 ## Disponibilité {#availability}
 
-L&#39;analyseur de l&#39;état de préparation du cloud peut être téléchargé sous la forme d&#39;un fichier zip depuis le portail de distribution de logiciels. Vous pouvez installer le module par le biais du gestionnaire de modules sur votre instance source Adobe Experience Manager (AEM).
+L&#39;analyseur de l&#39;état de préparation de Cloud peut être téléchargé sous la forme d&#39;un fichier zip depuis le portail de distribution de logiciels. Vous pouvez installer le module par le biais du gestionnaire de modules sur votre instance source Adobe Experience Manager (AEM).
 
 >[!NOTE]
 >Téléchargez Cloud Readiness Analyzer sur le portail de distribution [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) logiciels.
@@ -169,7 +172,9 @@ Les valeurs de réponse suivantes sont possibles :
 * `500 Internal Server Error`: Indique qu’une erreur de serveur interne s’est produite. Un message au format Détails du problème fournit plus de détails.
 * `503 Service Unavailable`: Indique que le serveur est occupé par une autre réponse et qu’il ne peut pas traiter cette demande en temps opportun. Cela n’est probable que lorsque des requêtes synchrones sont effectuées. Un message au format Détails du problème fournit plus de détails.
 
-## Réglage de la durée de vie du cache {#cache-adjustment}
+## Informations sur l’administrateur
+
+### Réglage de la durée de vie du cache {#cache-adjustment}
 
 La durée de vie par défaut du cache de l&#39;ARC est de 24 heures. Avec l’option permettant d’actualiser un rapport et de régénérer le cache, tant dans l’instance AEM que dans l’interface HTTP, cette valeur par défaut est susceptible d’être appropriée pour la plupart des utilisations de l’ARC. Si le temps de génération du rapport est particulièrement long pour votre instance AEM, vous pouvez ajuster la durée de vie du cache afin de minimiser la régénération du rapport.
 
@@ -178,7 +183,12 @@ La valeur de durée de vie du cache est stockée en tant que `maxCacheAge` propr
 
 La valeur de cette propriété est la durée de vie du cache en secondes. Un administrateur peut ajuster la durée de vie du cache à l’aide de CRX/DE Lite.
 
+### Installation sur AEM 6.1 {#installing-on-aem61}
 
+L&#39;ARC utilise un compte utilisateur de service système nommé `repository-reader-service` pour exécuter le Détecteur de schémas. Ce compte est disponible sur AEM 6.2 et versions ultérieures. Dans AEM 6.1, ce compte doit être créé *avant* l’installation de CRA en procédant comme suit :
 
+1. Suivez les instructions de la section [Création d’un utilisateur](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) de service pour créer un utilisateur. Définissez l’ID utilisateur sur `repository-reader-service` et laissez le chemin intermédiaire vide, puis cliquez sur la coche verte.
 
+2. Suivez les instructions de la section [Gestion des utilisateurs et des groupes](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security.html#managing-users-and-groups), en particulier les instructions pour Ajouter des utilisateurs à un groupe afin d’ajouter l’ `repository-reader-service` utilisateur au `administrators` groupe.
 
+3. Installez le package CRA via Package Manager sur votre instance AEM source. (Ceci ajoutera la modification de configuration nécessaire à la configuration ServiceUserMapper pour l&#39;utilisateur du service `repository-reader-service` système.)
