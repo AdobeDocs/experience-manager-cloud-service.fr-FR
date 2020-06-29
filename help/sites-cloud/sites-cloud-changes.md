@@ -2,10 +2,10 @@
 title: Modifications notables d’AEM Sites dans AEM Cloud Service
 description: 'Modifications notables d’AEM Sites dans AEM Cloud Service '
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 100%
+source-wordcount: '538'
+ht-degree: 91%
 
 ---
 
@@ -15,9 +15,15 @@ ht-degree: 100%
 AEM Sites as a Cloud Service offre des fonctionnalités de gestion de l’expérience intégrées de façon natives au cloud à la plate-forme AEM as a Cloud Service. Outre les principaux avantages d’AEM as a Cloud Service, tels que l’évolutivité native du cloud, le temps de disponibilité et la mise à jour permanente d’AEM Sites as a Cloud Service, vous pouvez également apporter un certain nombre de modifications et d’ajouts propres à AEM Sites.
 
 >[!NOTE]
->Ce document met en évidence les modifications notables apportées à AEM Sites. Pour les modifications générales d’AEM dans le Cloud, consultez :
+>Ce document met en évidence les modifications notables apportées à AEM Sites. Pour les modifications générales apportées à AEM en tant que Cloud Service et à d’autres modules, voir :
 >
->* [Modifications notables apportées à Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/aem-cloud-changes.md)
+>* [Présentation d’Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
+>* Présentation [d’AEM en tant que Cloud Service - Nouveautés et différences](/help/overview/what-is-new-and-different.md)
+>* [Architecture](/help/core-concepts/architecture.md) d’Adobe Experience Manager as a Cloud Service
+>* [Modifications notables apportées à AEM en tant que Cloud Service (notes de mise à jour)](/help/release-notes/aem-cloud-changes.md)
+>* [Modifications notables apportées à AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
+>* [Présentation du AEM Assets en tant que Cloud Service](/help/assets/overview.md)
+>* [Tutoriels sur Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 
 
 Les modifications et ajouts dans AEM Sites as a Cloud Service sont les suivants :
