@@ -2,23 +2,34 @@
 title: Modifications notables d’Adobe Experience Manager Assets as a Cloud Service
 description: Modifications notables d’Adobe Experience Manager Assets dans AEM Cloud Service par rapport à Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 37ff6912837ba78c90526e8f8322b9002e9a4304
+source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 100%
+source-wordcount: '619'
+ht-degree: 92%
 
 ---
 
 
 # Modifications notables d’Experience Manager Assets as a Cloud Service {#notable-changes}
 
-Adobe Experience Manager as a Cloud Service offre de nombreuses nouvelles fonctionnalités et possibilités de gestion pour vos projets AEM. Cependant, il existe de nombreuses différences entre les ressources Experience Manager Assets On-Premise ou dans Adobe Managed Service par rapport à Experience Manager as a Cloud Service. Ce document met en évidence les différences importantes entre les fonctionnalités d’Assets. Concernant les autres changements, consultez le document générique [Modifications apportées à Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
+Adobe Experience Manager as a Cloud Service offre de nombreuses nouvelles fonctionnalités et possibilités de gestion pour vos projets AEM. Cependant, il existe de nombreuses différences entre les ressources Experience Manager Assets On-Premise ou dans Adobe Managed Service par rapport à Experience Manager as a Cloud Service. Ce document met en évidence les différences importantes entre les fonctionnalités d’Assets.
 
 Les principales différences par rapport à Experience Manager 6.5 se situent dans les domaines suivants :
 
 * [Ingestion et chargement de ressources](#asset-ingestion).
 * [Microservices de ressources pour le traitement cloud](#asset-microservices).
 * [Suppression de l’interface utilisateur classique](#classic-ui).
+
+>[!NOTE]
+>Ce document souligne les changements notables apportés aux AEM Assets. Pour les modifications générales apportées à AEM en tant que Cloud Service et à d’autres modules, voir :
+>
+>* [Présentation d’Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
+>* Présentation [d’AEM en tant que Cloud Service - Nouveautés et différences](/help/overview/what-is-new-and-different.md)
+>* [Architecture](/help/core-concepts/architecture.md) d’Adobe Experience Manager as a Cloud Service
+>* [Modifications notables apportées à AEM en tant que Cloud Service (notes de mise à jour)](/help/release-notes/aem-cloud-changes.md)
+>* [Modifications notables d’AEM Sites en tant que as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+>* [Tutoriels sur Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+
 
 ## Ingestion et chargement de ressources {#asset-ingestion}
 
