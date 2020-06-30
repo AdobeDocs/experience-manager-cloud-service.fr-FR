@@ -2,10 +2,10 @@
 title: Incrustations pour Adobe Experience Manager en tant que Cloud Service
 description: AEM en tant que Cloud Service utilise le principe des incrustations pour vous permettre d’étendre et de personnaliser les consoles et d’autres fonctionnalités.
 translation-type: tm+mt
-source-git-commit: e9fa89753289563edd59e3d75413c90efe3ff0b2
+source-git-commit: 58440cb565039becd5b08333994b70f2ea77cc99
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 43%
+source-wordcount: '526'
+ht-degree: 39%
 
 ---
 
@@ -28,7 +28,7 @@ In a standard instance the predefined functionality is held under `/libs` and it
 
       * Reconstruct the appropriate `/libs` structure under `/apps`.
 
-         Cela ne nécessite aucune copie 1:1 ; [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) est utilisé pour effectuer des références croisées avec les définitions d’origine qui sont requises. Sling Resource Merger propose des services pour accéder à des ressources et les fusionner par le biais de mécanismes de différenciation (diff).
+         This does not require a 1:1 copy, as the [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) is used to cross-reference the original definitions that are required. Sling Resource Merger propose des services pour accéder à des ressources et les fusionner par le biais de mécanismes de différenciation (diff).
 
       * Make any changes under `/apps`.
    * Avantages
