@@ -2,10 +2,10 @@
 title: Utilisation de la fusion de ressources Sling en Adobe Experience Manager en tant que Cloud Service
 description: Sling Resource Merger propose des services pour accéder à des ressources et les fusionner.
 translation-type: tm+mt
-source-git-commit: 987d2cd91e0d1ab604ea7de755c5568e0c0a4295
+source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
 workflow-type: tm+mt
-source-wordcount: '1245'
-ht-degree: 53%
+source-wordcount: '1241'
+ht-degree: 48%
 
 ---
 
@@ -30,9 +30,9 @@ Avec Sling Resource Merger, les ressources et/ou propriétés incrustation/rempl
 
 >[!CAUTION]
 >
->Sling Resource Merger et les méthodes connexes ne peuvent être utilisées qu’avec [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Cela signifie également qu’ils ne sont adaptés qu’à l’interface utilisateur tactile standard ; les remplacements définis de cette manière, notamment, ne s’appliquent qu’à la boîte de dialogue tactile d’un composant.
+>Sling Resource Merger et les méthodes connexes ne peuvent être utilisées qu’avec [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Cela signifie également qu’il convient uniquement à l’interface utilisateur standard tactile ; en particulier, les remplacements définis de cette manière ne s&#39;appliquent qu&#39;à la boîte de dialogue tactile d&#39;un composant.
 >
->S’agissant des incrustations/remplacements relatifs à d’autres sections (y compris d’autres aspects d’un composant tactile ou de l’interface utilisateur classique), le nœud et la structure appropriés doivent être copiés à l’endroit où la personnalisation sera définie à partir de l’original.
+>Les recouvrements/remplacements pour d’autres zones (y compris d’autres aspects d’un composant tactile) impliquent la copie du noeud et de la structure appropriés de l’original à l’endroit où la personnalisation sera définie.
 
 ### Objectifs pour AEM {#goals-for-aem}
 
@@ -61,6 +61,7 @@ Sling Resource Merger est utilisé dans AEM pour deux raisons principales :
    >
    >
 1. Apportez les modifications désirées dans `/apps`
+
 >
 
 
@@ -209,6 +210,7 @@ Ces éléments, en liaison avec les fonctionnalités standard, vous permettent d
 
       * type: `String[]`
       * value: a list of the child nodes (as defined in `/libs`) to hide/ignore
+
       Le caractère générique &amp;ast; peut être utilisé pour masquer/ignorer tous les noeuds enfants.
 
 
