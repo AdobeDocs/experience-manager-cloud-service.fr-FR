@@ -2,10 +2,10 @@
 title: Structure de projet AEM
 description: Découvrez comment définir des structures de package en vue d’un déploiement sur Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
+source-git-commit: c2c6ee59849cbe041019e0a4395a499e81a671e0
 workflow-type: tm+mt
-source-wordcount: '2522'
-ht-degree: 95%
+source-wordcount: '2530'
+ht-degree: 100%
 
 ---
 
@@ -38,15 +38,15 @@ Toutes les autres zones du référentiel (`/content`, `/conf`, `/var`, `/etc`, `
 >
 > Comme dans les versions précédentes d’AEM, `/libs` ne doit pas être modifié. Seul le code de produit AEM peut être déployé sur `/libs`.
 
-### Oak Indexes {#oak-indexes}
+### Index Oak {#oak-indexes}
 
-Les index de chêne (`/oak:index`) sont gérés spécifiquement par le processus de déploiement d’AEM Cloud Service. Cela est dû au fait que Cloud Manager doit attendre le déploiement d’un nouvel index et le rétablissement complet de l’index avant de passer à la nouvelle image de code.
+Les index Oak (`/oak:index`) sont gérés spécifiquement par le processus de déploiement d’AEM Cloud Service. En effet, Cloud Manager doit attendre le déploiement d’un nouvel index et la réindexation complète avant de passer à la nouvelle image de code.
 
-Pour cette raison, bien que les index Oak puissent être mutés au moment de l&#39;exécution, ils doivent être déployés en tant que code afin de pouvoir être installés avant l&#39;installation de tous les packages modifiables. Par conséquent, `/oak:index` les configurations font partie du package de code et ne font pas partie du package de contenu [comme décrit ci-dessous.](#recommended-package-structure)
+Ainsi, bien que les index Oak soient modifiables au moment de l’exécution, ils doivent être déployés sous forme de code pour pouvoir être installés avant les modules modifiables. Les configurations `/oak:index` font donc partie du module de code, mais pas du module de contenu, [comme décrit ci-dessous.](#recommended-package-structure)
 
 >[!TIP]
 >
->Pour plus d’informations sur l’indexation en tant que Cloud Service dans AEM, reportez-vous à la section Recherche et indexation de [contenu de document.](/help/operations/indexing.md)
+>Pour plus d’informations sur l’indexation dans AEM as a Cloud Service, voir le document [Recherche et indexation de contenu.](/help/operations/indexing.md)
 
 ## Structure de module recommandée {#recommended-package-structure}
 
@@ -59,13 +59,13 @@ La structure de déploiement d’application recommandée est la suivante :
 + Le module `ui.apps`, ou module de code, contient tout le code à déployer. Il est déployé uniquement sur `/apps`. Voici un aperçu des éléments courants du module `ui.apps` :
    + Bundles OSGi
       + `/apps/my-app/install`
-   + Configurations OSGi
+   + [Configurations OSGi](/help/implementing/deploying/configuring-osgi.md)
       + `/apps/my-app/config`
-   + Scripts HTML
+   + [Scripts HTML](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
       + `/apps/my-app/components`
    + Code JavaScript et CSS (via les bibliothèques clientes)
       + `/apps/my-app/clientlibs`
-   + Incrustations de /libs
+   + [Incrustations de /libs](/help/implementing/developing/introduction/overlays.md)
       + `/apps/cq`, `/apps/dam/`, etc.
    + Configurations basées sur le contexte de secours
       + `/apps/settings`
@@ -194,7 +194,6 @@ Analyse de cette structure de dossiers :
    + `/apps/my-app-packages`
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
-
    >[!WARNING]
    >
    >Par convention, le suffixe `-packages` est ajouté au nom des dossiers dans lesquels sont incorporés des sous-modules. Cela permet de s’assurer que les modules de contenu et de code du déploiement ne sont **pas** déployés dans le(s) dossier(s) cible(s) d’un sous-module `/apps/<app-name>/...`, ce qui provoque un comportement d’installation cyclique destructeur.
