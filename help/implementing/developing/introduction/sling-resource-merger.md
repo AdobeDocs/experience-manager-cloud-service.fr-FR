@@ -2,10 +2,10 @@
 title: Utilisation de la fusion de ressources Sling en Adobe Experience Manager en tant que Cloud Service
 description: Sling Resource Merger propose des services pour accéder à des ressources et les fusionner.
 translation-type: tm+mt
-source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
+source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
 workflow-type: tm+mt
-source-wordcount: '1241'
-ht-degree: 48%
+source-wordcount: '1160'
+ht-degree: 46%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 48%
 
 Sling Resource Merger propose des services pour accéder à des ressources et les fusionner. Il fournit des mécanismes de différenciation (diff) pour les deux éléments suivants :
 
-* **[Incrustations](/help/implementing/developing/introduction/overlays.md)**de ressources à l’aide de[chemins de recherche configurés](/help/implementing/developing/introduction/overlays.md#configuring-the-search-paths).
+* **[Incrustations](/help/implementing/developing/introduction/overlays.md)**de ressources à l’aide des chemins[de](/help/implementing/developing/introduction/overlays.md#search-paths)recherche.
 
 * **Remplacements** de boîtes de dialogue de composant pour l’interface utilisateur tactile (`cq:dialog`), à l’aide de la hiérarchie des types de ressource (par le biais de la propriété `sling:resourceSuperType`).
 
@@ -30,9 +30,7 @@ Avec Sling Resource Merger, les ressources et/ou propriétés incrustation/rempl
 
 >[!CAUTION]
 >
->Sling Resource Merger et les méthodes connexes ne peuvent être utilisées qu’avec [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Cela signifie également qu’il convient uniquement à l’interface utilisateur standard tactile ; en particulier, les remplacements définis de cette manière ne s&#39;appliquent qu&#39;à la boîte de dialogue tactile d&#39;un composant.
->
->Les recouvrements/remplacements pour d’autres zones (y compris d’autres aspects d’un composant tactile) impliquent la copie du noeud et de la structure appropriés de l’original à l’endroit où la personnalisation sera définie.
+>La fusion des ressources Sling et les méthodes associées ne peuvent être utilisées qu’avec l’interface utilisateur tactile (qui est la seule interface utilisateur disponible pour AEM en tant que Cloud Service).
 
 ### Objectifs pour AEM {#goals-for-aem}
 
@@ -43,27 +41,17 @@ Sling Resource Merger est utilisé dans AEM pour deux raisons principales :
 
    When using the Sling Resource Merger it is not recommended to copy the entire structure from `/libs` as this would result in too much information being held in the customization (usually `/apps`). Dupliquer les informations augmente inutilement le risque que des problèmes surviennent lorsque le système est mis à niveau.
 
->[!NOTE]
->
->Les remplacements ne dépendent pas des chemins de recherche. Ils utilisent la propriété `sling:resourceSuperType` pour établir la connexion.
->
->However, overrides are often defined under `/apps`, as best practice in AEM is to define customizations under `/apps`; this is because you must not change anything under `/libs`.
-
 >[!CAUTION]
 >
 >Vous ne devez ***rien*** modifier dans le chemin `/libs`.
 >
->En effet, le contenu de `/libs` est remplacé dès que vous mettez à niveau votre instance (et risque de l’être si vous appliquez un correctif ou un Feature Pack).
+>Cela est dû au fait que le contenu de `/libs` peut être remplacé chaque fois que des mises à niveau sont appliquées à votre instance.
 >
->La méthode recommandée pour la configuration et d’autres modifications est la suivante :
->
->1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
+>* Les superpositions dépendent des chemins [de](/help/implementing/developing/introduction/overlays.md#search-paths)recherche.
    >
    >
-1. Apportez les modifications désirées dans `/apps`
-
->
-
+* Les remplacements ne dépendent pas des chemins de recherche. Ils utilisent la propriété `sling:resourceSuperType` pour établir la connexion.
+   >  However, overrides are often defined under `/apps`, as best practice in AEM as a Cloud Service is to define customizations under `/apps`; this is because you must not change anything under `/libs`.
 
 
 ### Propriétés {#properties}
