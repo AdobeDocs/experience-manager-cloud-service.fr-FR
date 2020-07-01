@@ -2,9 +2,9 @@
 title: Recherche et indexation de contenu
 description: Recherche et indexation de contenu
 translation-type: tm+mt
-source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
+source-git-commit: 093883d0afe62bf9d1d08f82180eccd3f75bca05
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1475'
 ht-degree: 3%
 
 ---
@@ -12,9 +12,9 @@ ht-degree: 3%
 
 # Recherche et indexation de contenu {#indexing}
 
-## Modifications d’AEM en tant que service Cloud {#changes-in-aem-as-a-cloud-service}
+## Changes in AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service}
 
-Avec AEM en tant que service Cloud, Adobe passe d’un modèle centré sur les instances AEM à une vue basée sur les services avec des Conteneurs AEM n-x, pilotés par les pipelines CI/CD dans Cloud Manager. Au lieu de configurer et de gérer les index sur des instances AEM uniques, la configuration de l’index doit être spécifiée avant un déploiement. Les changements de configuration dans la production enfreignent clairement les politiques de CI/CD. Il en va de même pour les changements d&#39;index, car ils peuvent avoir un impact sur la stabilité et les performances du système si elles ne sont pas spécifiées et réindexées avant leur mise en production.
+Avec AEM en tant qu’Cloud Service, Adobe passe d’un modèle centré sur les instances AEM à une vue basée sur les services avec des Conteneurs AEM n-x, pilotés par des pipelines CI/CD dans Cloud Manager. Au lieu de configurer et de gérer les index sur des instances AEM uniques, la configuration de l’index doit être spécifiée avant un déploiement. Les changements de configuration dans la production enfreignent clairement les politiques de CI/CD. Il en va de même pour les changements d&#39;index, car ils peuvent avoir un impact sur la stabilité et les performances du système si elles ne sont pas spécifiées et réindexées avant leur mise en production.
 
 Vous trouverez ci-dessous une liste des principales modifications par rapport à AEM 6.5 et aux versions antérieures :
 
@@ -32,13 +32,11 @@ Vous trouverez ci-dessous une liste des principales modifications par rapport à
 
 1. La configuration de l’index est modifiée par le biais de déploiements. Les modifications apportées à la définition de l’index sont configurées comme les autres modifications apportées au contenu.
 
-1. A un niveau élevé sur AEM en tant que service Cloud, avec l’introduction du modèle [de déploiement](#index-management-using-blue-green-deployments) Blue-Green, deux jeux d’index existent : l&#39;un pour l&#39;ancienne version (bleu), l&#39;autre pour la nouvelle version (vert).
-
-<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
+1. A un niveau élevé sur AEM en tant que Cloud Service, avec l’introduction du modèle [de déploiement](#index-management-using-blue-green-deployments) Blue-Green, deux jeux d’index existent : l&#39;un pour l&#39;ancienne version (bleu), l&#39;autre pour la nouvelle version (vert).
 
 1. Les clients peuvent déterminer si la tâche d’indexation est terminée sur la page de création de Cloud Manager et ils recevront une notification lorsque la nouvelle version sera prête à recevoir du trafic.
 
-1. Limites : actuellement, la gestion des index sur AEM en tant que service Cloud n’est prise en charge que pour les index de type lucene.
+1. Limites : actuellement, la gestion des index sur AEM en tant que Cloud Service est uniquement prise en charge pour les index de type lucene.
 
 <!-- ## Sizing Considerations {#sizing-considerations}
 
@@ -56,7 +54,7 @@ La définition d&#39;index peut comprendre les trois cas d&#39;utilisation suiva
 1. Mise à jour d’une définition d’index existante. Cela signifie en effet l’ajout d’une nouvelle version d’une définition d’index existante.
 1. Suppression d’un index existant redondant ou obsolète.
 
-Pour les points 1 et 2 ci-dessus, vous devez créer une nouvelle définition d’index dans le cadre de votre base de code personnalisé dans le calendrier de publication de Cloud Manager correspondant. Pour plus d’informations, voir la documentation [sur le](/help/implementing/deploying/overview.md)déploiement vers AEM en tant que service Cloud.
+Pour les points 1 et 2 ci-dessus, vous devez créer une nouvelle définition d’index dans le cadre de votre base de code personnalisé dans le calendrier de publication de Cloud Manager correspondant. Pour plus d’informations, reportez-vous à la documentation [](/help/implementing/deploying/overview.md)Déploiement dans AEM en tant que Cloud Service.
 
 ### Préparation de la nouvelle définition d&#39;index {#preparing-the-new-index-definition}
 
@@ -86,7 +84,7 @@ Une fois la nouvelle définition d’index ajoutée, la nouvelle application doi
 
 >[!TIP]
 >
->Pour plus d’informations sur la structure de package requise pour AEM en tant que service Cloud, voir la structure de projet [AEM document.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
+>Pour plus d’informations sur la structure de package requise pour AEM en tant que Cloud Service, voir la structure de projet [AEM document.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
 ## Gestion des index à l’aide de déploiements Blue-Green {#index-management-using-blue-green-deployments}
 
@@ -126,7 +124,7 @@ Le tableau suivant présente 5 définitions d’index : index `cqPageLucene` est
 
 >[!NOTE]
 >
-> `<indexName>-custom-<customerVersionNumber>` est nécessaire pour qu’AEM en tant que service Cloud puisse le marquer comme un remplacement d’un index existant.
+> `<indexName>-custom-<customerVersionNumber>` est nécessaire pour qu’AEM en tant que Cloud Service le marque comme remplacement d’un index existant.
 
 | Index | Index prêt à l&#39;emploi | Utilisation dans la version 1 | Utilisation dans la version 2 |
 |---|---|---|---|
@@ -161,7 +159,9 @@ Si un index doit être supprimé dans une version ultérieure de l’application
 
 Pour ajouter un index nommé &quot;/oak:index/acmeProduct-custom-1&quot; à utiliser dans une nouvelle version de l&#39;application et ultérieure, l&#39;index doit être configuré comme suit :
 
-`/oak:index/acmeProduct-custom-1`
+`*mk.*assetLuceneIndex-1-custom-1`
+
+Cette opération consiste à ajouter un identifiant personnalisé au nom de l’index, suivi d’un point (**.**). L&#39;identifiant doit être compris entre 1 et 4 caractères.
 
 Comme ci-dessus, cela permet de s’assurer que l’index n’est utilisé que par la nouvelle version de l’application.
 
