@@ -2,10 +2,10 @@
 title: Transition vers AEM as a Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation concernant la transition entre Adobe Experience Manager as a Cloud Service et AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: b00c837e0de6e3ca00c9bc637bc3c53e26fff156
+source-git-commit: ffdb0a39684f1ccc587bf1cc401811a7ca6d649d
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 76%
+source-wordcount: '510'
+ht-degree: 75%
 
 ---
 
@@ -47,7 +47,6 @@ Pour en savoir plus sur les différentes phases du parcours de transition vers C
 | [Intégration](/help/onboarding/home.md) | Ce guide résume la procédure à suivre pour commencer à utiliser Experience Manager as a Cloud Service, avec les informations d’accès et des informations importantes sur la protection des données. |
 | [Guide de l’utilisateur de Sites](/help/sites-cloud/home.md) | Comprendre comment créer et administrer des sites Experience Manager en tant que Cloud Service. |
 | [Guide de l’utilisateur d’Assets](/help/assets/home.md) | Comprendre comment utiliser et administrer les ressources du Experience Manager en tant que Cloud Service. |
-| [Guide de l’utilisateur pour la transition vers AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Découvrez le parcours de transition vers Cloud Service. |
 | [Guide de l’utilisateur relatif à l’implémentation](/help/implementing/home.md) | Découvrez comment personnaliser votre Experience Manager en tant que déploiement Cloud Service, y compris les rubriques de développement et de déploiement. |
 | [Guide de l’utilisateur des connecteurs](/help/connectors/home.md) | Découvrez comment intégrer Connectors au Experience Manager en tant que Cloud Service. |
 | [Guide de l’utilisateur relatif aux opérations](/help/operations/home.md) | Découvrez les opérations dorsales du Experience Manager en tant que Cloud Service, telles que l&#39;indexation et les tâches de maintenance. |
