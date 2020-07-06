@@ -1,18 +1,18 @@
 ---
-title: Configuration de Dynamic Media
+title: Configuration de Dynamic Media
 description: Pour configurer Dynamic Media, vous devez configurer un média dynamique et gérer les paramètres prédéfinis d’image et de visionneuse.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '173'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
 
-# Configuration de Dynamic Media   {#setting-up-dynamic-media}
+# Configuration de Dynamic Media  {#setting-up-dynamic-media}
 
-[Dynamic Media](https://www.adobe.com/fr/marketing/experience-manager-assets/dynamic-media.html) vous aide à gérer les ressources en fournissant des ressources visuelles de marchandisage et marketing à la demande, automatiquement mises à l’échelle pour être consommées sur des sites Web, mobiles et sociaux. Grâce à un ensemble de ressources sources principales, Dynamic Media génère et diffuse en temps réel de multiples variantes de contenu riche grâce à son réseau global, évolutif et optimisé pour les performances.
+[Dynamic Media](https://www.adobe.com/fr/marketing/experience-manager-assets/dynamic-media.html) facilite la gestion des ressources visuelles de marchandisage et de marketing à la demande, automatiquement dimensionnées pour une utilisation sur le web, les appareils mobiles et les réseaux sociaux. À partir d’un ensemble de ressources de sources originales, Dynamic Media génère et diffuse en temps réel plusieurs variantes d’un même contenu enrichi par le biais de son réseau mondial et évolutif, aux performances optimisées.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -26,8 +26,8 @@ ht-degree: 69%
 
 Si vous administrez Dynamic Media, les rubriques suivantes peuvent vous intéresser :
 
-* [Configuration de Dynamic Media](config-dm.md)
-* [Gestion des paramètres d’image prédéfinis   ](managing-image-presets.md)
+* [Configuration de Dynamic Media](config-dm.md)
+* [Gestion des paramètres d’image prédéfinis](managing-image-presets.md)
 * [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md)
 * [Résolution des problèmes liés à Dynamic Media](troubleshoot-dm.md)
 
