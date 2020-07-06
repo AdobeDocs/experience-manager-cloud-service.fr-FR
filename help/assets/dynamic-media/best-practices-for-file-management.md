@@ -4,8 +4,8 @@ description: Conseils et bonnes pratiques pour nommer, organiser et gérer les f
 translation-type: tm+mt
 source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '497'
+ht-degree: 76%
 
 ---
 
@@ -30,7 +30,7 @@ Voici quelques conseils sur les bonnes pratiques relatives à l’organisation d
 
    * **Dossiers de développement** : contiennent les ressources numériques que vous utilisez actuellement.
    * **Dossiers de clients** : contiennent des ressources numériques en fonction des clients ou des noms de projet.
-   * **Dossiers** source du Principal : contient des fichiers numériques source d’origine.
+   * **Dossiers des sources originales** : contiennent les ressources numériques sources originales.
    * **Dossiers de rendus** : contiennent les rendus et les copies des ressources numériques sources originales.
    * **Dossiers de taille de fichier** : contiennent des ressources numériques en fonction des tailles de fichier petite, moyenne et volumineuse.
    * **Dossiers intermédiaires** : contiennent les ressources numériques qui sont prêtes à être publiées sur votre site web.
