@@ -1,9 +1,9 @@
 ---
 title: SDK AEM as a Cloud Service
 description: À terminer
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: df6e6bc95b5f0489d0da034c27d8f3a4314a6e27
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1027'
 ht-degree: 100%
 
