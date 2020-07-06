@@ -1,11 +1,11 @@
 ---
 title: Présentation d’Adobe Experience Manager as a Cloud Service - Terminologie
 description: 'Présentation d’Adobe Experience Manager as a Cloud Service - Terminologie. '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 465172db5bbc3b1dc3b42164d759a45e0ff13a8e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '336'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Les termes suivants sont utilisés par rapport à Adobe Experience Manager (AE
 | Image AEM | Artefact déployable contenant le code de produit AEM, ainsi que le code du client. |
 | Microservices de ressources | Services de traitement des ressources numériques basés sur le cloud qui prennent en charge divers cas d’utilisation du traitement des ressources, tels que la génération de rendus, les workflows PDF, la gestion des sous-ressources, l’extraction de texte, etc. Pour plus d’informations, consultez l’[Aperçu sur les microservices de ressources](/help/assets/asset-microservices-overview.md). |
 | Référentiel Git de Cloud Manager | Emplacement où les clients stockent leur code et leurs paramètres de configuration. |
-| Fournisseur de cloud | AEM en tant que service Cloud prend actuellement en charge Azure. Le support AWS est un élément de feuille de route. |
+| Fournisseur de cloud | AEM as a Cloud Service prend actuellement en charge Azure. La prise en charge d’AWS est un élément de la feuille de route. |
 | CDN (Content Delivery Network) | AEM as Cloud Service est fourni avec un réseau CDN par défaut. Son principal objectif est de réduire la latence en fournissant du contenu pouvant être mis en cache à partir des nœuds CDN en périphérie, près du navigateur. Il est entièrement géré et configuré afin de permettre des performances optimales des applications AEM. |
 | Référentiel de contenu | Emplacement où le contenu persiste. |
 | Isolation d’entreprise | Chaque instance du service AEM as a Cloud Service est isolée des autres instances. |
