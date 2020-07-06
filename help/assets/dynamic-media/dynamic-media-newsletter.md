@@ -81,7 +81,7 @@ Dans cette newsletter, découvrez des ressources précieuses pour développer vo
    * Nouvelles fonctionnalités puissantes de sécurité.
    * Comment nous nous préparons pour vous préparer une période de fêtes réussie
    * Partagez la newsletter avec vos collègues pour développer l’expertise de votre équipe.
-   * Rencontre avec Aporva Gupta, responsable produit principal chez Dynamic Media
+   * Rencontre avec Apoorva Gupta, responsable produit principal chez Dynamic Media
 
 * **[Octobre 2019, numéro 10](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_10_2019_Oct.html)**
 
