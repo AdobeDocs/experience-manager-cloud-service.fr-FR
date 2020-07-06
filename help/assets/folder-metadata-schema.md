@@ -2,11 +2,11 @@
 title: Schéma de métadonnées de dossier
 description: Découvrez comment créer des schémas de métadonnées pour des dossiers de ressources dans AEM Assets
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2394ce2b5ebbd3e0e7229a98b5f500312b82dbd7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1040'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 Adobe Experience Manager (AEM) Assets vous permet de créer des schémas de métadonnées pour des dossiers de ressources. Ces schémas définissent la disposition et les métadonnées affichées dans les pages de propriétés des dossiers.
 
-## Ajout d’un formulaire de schéma de métadonnées de dossier   {#add-a-folder-metadata-schema-form}
+## Ajout d’un formulaire de schéma de métadonnées de dossier  {#add-a-folder-metadata-schema-form}
 
 Utilisez l’éditeur Formulaires de schéma de métadonnées de dossier pour créer et modifier des schémas de métadonnées pour les dossiers.
 
@@ -23,7 +23,7 @@ Utilisez l’éditeur Formulaires de schéma de métadonnées de dossier pour cr
 1. Sur la page Formulaires de schéma de métadonnées de dossier, appuyez/cliquez sur **[!UICONTROL Créer]**.
 1. Indiquez un nom pour le formulaire, puis appuyez/cliquez sur **[!UICONTROL Créer]**. Le nouveau formulaire de schéma est répertorié dans la page Formulaires de schéma.
 
-## Modification des formulaires de schéma de métadonnées de dossier   {#edit-folder-metadata-schema-forms}
+## Modification des formulaires de schéma de métadonnées de dossier  {#edit-folder-metadata-schema-forms}
 
 Vous pouvez modifier un formulaire de schéma de métadonnées nouveau ou existant comprenant les éléments suivants :
 
@@ -53,7 +53,7 @@ Vous pouvez associer ou configurer ces éléments de formulaire dans un champ au
 
 1. Appuyez/cliquez sur **[!UICONTROL Enregistrer]** dans la barre d’outils pour enregistrer les modifications.
 
-### Composants de création de formulaires   {#components-to-build-forms}
+### Composants de création de formulaires  {#components-to-build-forms}
 
 L’onglet **[!UICONTROL Créer le formulaire]** répertorie les éléments de formulaire que vous utilisez dans votre formulaire de schéma de métadonnées de dossier. L’onglet **[!UICONTROL Paramètres]** contient les attributs de chaque élément sélectionné dans l’onglet **[!UICONTROL Créer le formulaire]**. Voici la liste des éléments de formulaire disponibles dans l’onglet **[!UICONTROL Créer le formulaire]** :
 
@@ -110,7 +110,7 @@ Les valeurs admises pour cette propriété sont les suivantes :
 
 * `./jcr:content/metadata/dc:title` : stocke la valeur dans le nœud de métadonnées du dossier en tant que propriété `dc:title`.
 
-* `./jcr:created`: Stocke la date et l’heure de création d’une ressource. Il s’agit d’une propriété protégée. Si vous configurez ces propriétés, Adobe vous recommande de les marquer comme [!UICONTROL Désactiver la modification].
+* `./jcr:created` : stocke la date et l’heure de création d’une ressource. Il s’agit d’une propriété protégée. Si vous configurez ces propriétés, Adobe recommande de les marquer avec l’état [!UICONTROL Désactiver la modification].
 
 Pour vous assurer que le composant est affiché correctement dans le formulaire de schéma de métadonnées, n’insérez pas d’espace dans le chemin de propriété.
 
@@ -124,7 +124,7 @@ Pour vous assurer que le composant est affiché correctement dans le formulaire 
 
 **[!UICONTROL Classe]** : classe d’objets à laquelle la propriété est associée.
 
-## Suppression de formulaires de schéma de métadonnées de dossier   {#delete-folder-metadata-schema-forms}
+## Suppression de formulaires de schéma de métadonnées de dossier  {#delete-folder-metadata-schema-forms}
 
 Vous pouvez supprimer des formulaires de schéma de métadonnées de dossier sur la page Formulaires de schéma de métadonnées de dossier. Pour supprimer un formulaire, sélectionnez-le, puis appuyez/cliquez sur l’icône Supprimer dans la barre d’outils.
 
@@ -136,7 +136,7 @@ Vous pouvez affecter un schéma de métadonnées de dossier à un dossier à par
 
 Si vous configurez un schéma de métadonnées pour un dossier, le chemin d’accès au formulaire est stocké dans la propriété `folderMetadataSchema` du nœud de dossier sous .*/jcr:content*.
 
-### Affectation d’un schéma à partir de la page Schéma de métadonnées de dossier   {#assign-to-a-schema-from-the-folder-metadata-schema-page}
+### Affectation d’un schéma à partir de la page Schéma de métadonnées de dossier  {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
 1. Appuyez/cliquez sur le logo AEM, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées de dossier]**.
 1. Sur la page Formulaires de schéma de métadonnées de dossier, sélectionnez le formulaire à appliquer à un dossier.
