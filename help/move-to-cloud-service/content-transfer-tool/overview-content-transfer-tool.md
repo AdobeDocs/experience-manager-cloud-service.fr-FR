@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 69%
+ht-degree: 86%
 
 ---
 
@@ -55,10 +55,10 @@ Consultez la section ci-dessous pour accéder aux conseils et connaître les bon
 
 * Une fois l’activité de transfert de contenu terminée, une structure de projet appropriée est nécessaire dans l’environnement Cloud Service pour s’assurer que le contenu s’affiche correctement.
 
-* Avant d’exécuter l’outil de transfert de contenu, vous devez vous assurer que l’espace disque disponible dans le `crx-quickstart` sous-répertoire de l’instance AEM source est suffisant. Cela est dû au fait que l’outil de transfert de contenu crée une copie locale du référentiel qui est ultérieurement téléchargée dans le jeu de migration.
-La formule générale pour calculer l&#39;espace disque disponible requis est la suivante :
+* Avant d’exécuter l’outil de transfert de contenu, vous devez vous assurer que l’espace disque disponible dans le sous-répertoire `crx-quickstart` de l’instance AEM source est suffisant. En effet, l’outil de transfert de contenu crée une copie locale du référentiel, ultérieurement chargée dans le jeu de migration.
+La formule générale pour calculer l’espace disque disponible requis est la suivante :
    `data store size + node store size * 1.5`
 
-   * *taille* de la banque de données : l’outil de transfert de contenu utilise 64 Go, même si le stockage de données réel est plus volumineux.
-   * *Taille*de stockage des noeuds : taille du répertoire de stockage de segments ou taille de la base de données MongoDB.
-Par conséquent, pour une taille de stockage de segments de 20 Go, l’espace disque disponible requis est de 94 Go.
+   * *volume de stockage des données* : l’outil de transfert de contenu utilise 64 Go, même si l’entrepôt de données en question est plus volumineux.
+   * *volume de stockage des nœuds* : taille du répertoire de stockage des segments ou taille de la base de données MongoDB.
+Ainsi, pour un volume de stockage de segments de 20 Go, l’espace disque disponible requis est de 94 Go.
