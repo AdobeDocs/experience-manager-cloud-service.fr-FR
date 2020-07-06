@@ -1,18 +1,18 @@
 ---
 title: Prévisualisation de fichiers 3D
 description: Découvrez comment prévisualiser des fichiers 3D
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '566'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
-# Prévisualisation de fichiers 3D dans AEM{#previewing-3d-assets}
+# Prévisualisation de ressources 3D dans AEM{#previewing-3d-assets}
 
-Adobe Experience Manager prend en charge le transfert, la diffusion et la prévisualisation interactive des ressources 3D dans le cadre du processus de création.
+Adobe Experience Manager prend en charge le chargement, la diffusion et l’aperçu interactif des ressources 3D dans le cadre du processus de création.
 
 La visionneuse 3D interactive est disponible sur la page de détails de la ressource dans AEM. La visionneuse comprend, entre autres, un ensemble de contrôles de caméra interactifs qui permettent d’orbiter, de zoomer et de faire un panoramique sur la ressource 3D.
 
@@ -20,7 +20,7 @@ La visionneuse 3D interactive est disponible sur la page de détails de la ress
 
 ## Formats pris en charge pour la prévisualisation 3D dans AEM{#supported-3d-previewing-assets}
 
-La prévisualisation 3D interactive dans AEM prend en charge les formats de fichier suivants :
+L’aperçu 3D interactif prend en charge les formats de fichier suivants :
 
 | Extension de fichier 3D | Format de fichier | Type MIME | Notes |
 |---|---|---|---|
@@ -40,13 +40,13 @@ La prévisualisation 3D interactive dans AEM prend en charge les formats de fich
     material_0_baseColor.jpeg
     material_0_normal.jpeg
 
-## Performance considerations when you preview 3D assets in AEM{#performance-3d-previewing-assets}
+## Considérations de performance lors de la prévisualisation de ressources 3D dans AEM {#performance-3d-previewing-assets}
 
 Le temps d’ouverture d’un fichier 3D dans la page d’affichage des détails du fichier dépend de plusieurs facteurs, tels que la bande passante, la complexité de l’image et les latences sur le serveur.
 
 De plus, les capacités de l’ordinateur client, par exemple un poste de travail, un ordinateur portable ou un appareil mobile tactile, doivent être prises en compte lorsque vous manipulez la caméra de manière interactive. Un système relativement puissant avec de bonnes capacités graphiques peut rendre l’expérience interactive d’affichage en 3D plus fluide et plus favorable.
 
-**Pour prévisualisation de fichiers 3D dans AEM**
+**Pour prévisualiser des ressources 3D dans AEM**
 
 1. Assurez-vous d’avoir chargé des ressources 3D dans AEM.
 Consultez [Formats pris en charge pour la prévisualisation 3D](#supported-3d-previewing-assets) et [Téléchargement de ressources](/help/assets/manage-digital-assets.md#uploading-assets).
@@ -75,7 +75,7 @@ Consultez [Formats pris en charge pour la prévisualisation 3D](#supported-3d-pr
       * _Écran tactile_ : rapprocher les deux doigts.
    * **Recentrer** : recentrez l’angle de vue sur un point d’un objet de la scène 3D.
       * _Souris_ : double-cliquez.
-      * _Écran_ tactile : appuyez deux fois.
+      * _Écran tactile_ : appuyez deux fois.
    * **Réinitialiser** : près du coin inférieur droit de la page, appuyez sur l’icône Réinitialiser pour rétablir le point d’affichage cible au centre du fichier 3D. De plus, Réinitialiser rapproche ou éloigne l’angle de vue pour afficher la ressource dans son intégralité et à une taille raisonnable.
    * **Mode Plein écran** : pour passer en mode Plein écran, dans le coin inférieur droit de la page, appuyez sur l’icône Plein écran.
 
