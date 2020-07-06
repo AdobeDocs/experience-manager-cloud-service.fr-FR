@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 792e5f7ab7c64404e6c8e1bad956e328edb32044
 workflow-type: tm+mt
 source-wordcount: '406'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 96%
    + [API et supports de référence](developer-reference-material-apis.md)
    + [Schéma de métadonnées de dossier](folder-metadata-schema.md)
    + [A propos de l’utilisation des profils d’images et des profils vidéo](/help/assets/dynamic-media/about-image-video-profiles.md)
-   + [Configuration des balises actives](smart-tags-configuration.md)
+   + [Configuration des balises intelligentes](smart-tags-configuration.md)
    + [Ressources multilingues et traduction des ressources](translate-assets.md)
    + [Facettes de recherche](search-facets.md)
    + [Extension de l’éditeur de ressources](extend-asset-editor.md)
@@ -71,9 +71,9 @@ ht-degree: 96%
    + [Texte (Markdown)](content-fragments/content-fragments-markdown.md)
 + Dynamic Media {#dynamicmedia}
    + [Newsletter sur Dynamic Media par Experience League](dynamic-media/dynamic-media-newsletter.md)
-   + [Configuration de Dynamic Media](dynamic-media/administering-dynamic-media.md)
-   + [Utilisation de Dynamic Media](dynamic-media/dynamic-media.md)
-   + [Configuration de Dynamic Media](dynamic-media/config-dm.md)
+   + [Configuration de Dynamic Media](dynamic-media/administering-dynamic-media.md)
+   + [Utilisation de Dynamic Media](dynamic-media/dynamic-media.md)
+   + [Configuration de Dynamic Media](dynamic-media/config-dm.md)
    + [Résolution des problèmes liés à Dynamic Media](dynamic-media/troubleshoot-dm.md)
    + [Gestion des ressources Dynamic Media](dynamic-media/managing-assets.md)
    + [Bonnes pratiques relatives à l’optimisation de la qualité des images](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
