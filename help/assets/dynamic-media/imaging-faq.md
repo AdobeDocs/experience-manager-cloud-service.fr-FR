@@ -1,11 +1,11 @@
 ---
 title: Imagerie dynamique
 description: L’imagerie dynamique utilise les caractéristiques de visualisation uniques de chaque utilisateur pour diffuser automatiquement les images optimisées pour leur expérience, ce qui se traduit par des performances accrues et une meilleure interaction.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1720'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -90,7 +90,7 @@ Non. L’imagerie dynamique fonctionne parfaitement avec vos paramètres d’ima
 
 Voir également [Suis-je autorisé à utiliser l’imagerie dynamique ?](#am-i-eligible-to-use-smart-imaging) pour connaître les conditions préalables requises pour l’imagerie dynamique.
 
-## Smart Imaging fonctionne-t-il avec HTTPS ? Et qu’en est-il du protocole HTTP/2 ?  {#does-smart-imaging-working-with-https-how-about-http}
+## L’imagerie dynamique est-elle compatible avec le protocole HTTPS ? Et qu’en est-il du protocole HTTP/2 ?  {#does-smart-imaging-working-with-https-how-about-http}
 
 L’imagerie dynamique fonctionne avec les images diffusées sur HTTP ou HTTPS. Elle fonctionne également sur HTTP/2.
 
