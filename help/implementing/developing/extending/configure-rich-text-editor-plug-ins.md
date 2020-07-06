@@ -7,20 +7,20 @@ translation-type: tm+mt
 source-git-commit: 739dde6f9a6a7f4fe773e27e53f23a395f2881dc
 workflow-type: tm+mt
 source-wordcount: '4301'
-ht-degree: 60%
+ht-degree: 78%
 
 ---
 
 
-# Configuration des modules externes d’éditeur de texte enrichi {#configure-the-rich-text-editor-plug-ins}
+# Configuration des modules externes d’éditeur de texte enrichi  {#configure-the-rich-text-editor-plug-ins}
 
-Les fonctionnalités d’éditeur de texte enrichi sont rendues disponibles par l’intermédiaire d’une série de modules externes, chacun avec sa propriété features. Vous pouvez configurer la propriété features afin d’activer ou de désactiver une ou plusieurs fonctions de l’éditeur de texte enrichi. Cet article décrit comment configurer spécifiquement les modules externes RTE.
+Les fonctionnalités d’éditeur de texte enrichi sont rendues disponibles par l’intermédiaire d’une série de modules externes, chacun avec sa propriété features. Vous pouvez configurer la propriété features afin d’activer ou de désactiver une ou plusieurs fonctions de l’éditeur de texte enrichi. Cet article décrit comment configurer spécifiquement les modules externes d’éditeur de texte enrichi.
 
-For details about the other RTE configurations, see [configure Rich Text Editor](/help/implementing/developing/extending/rich-text-editor.md).
+Pour plus d’informations sur les autres configurations d’éditeur de texte enrichi, voir [Configuration de l’éditeur de texte enrichi](/help/implementing/developing/extending/rich-text-editor.md).
 
 >[!NOTE]
 >
->When working with CRXDE Lite, it is recommended to save the changes regularly using [!UICONTROL Save All] option.
+>Lorsque vous utilisez CRXDE Lite, il est conseillé d’enregistrer régulièrement les modifications à l’aide de l’option [!UICONTROL Tout enregistrer].
 
 ## Activation d’un module externe et configuration de la propriété features {#activateplugin}
 
@@ -30,17 +30,17 @@ By default, `format`, `link`, `list`, `justify`, and `control` plug-ins and all 
 
 >[!NOTE]
 >
->The respective `rtePlugins` node is referred to as `<rtePlugins-node>` to avoid duplication in this article.
+>Le nœud `rtePlugins` respectif est désigné sous le nom de `<rtePlugins-node>` pour éviter les doublons dans cet article.
 
 1. À l’aide de CRXDE Lite, cherchez le composant Texte pour votre projet.
-1. Create the parent node of `<rtePlugins-node>` if it does not exist, before configuring any RTE plug-ins:
+1. Créez le nœud parent `<rtePlugins-node>` s’il n’existe pas, avant de configurer tout module externe d’éditeur de texte enrichi :
 
-   * Selon votre composant, les noeuds parents sont les suivants :
+   * Selon votre composant, les nœuds parents sont les suivants :
 
       * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
-      * un nœud de configuration`.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig` alternatif: 
+      * un nœud de configuration alternatif : `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
       * `text: .../text/dialog/items/tab1/items/text`
-   * Are of type: **jcr:primaryType** `cq:Widget`
+   * Ils sont du type : **jcr:primaryType** `cq:Widget`
    * Possèdent tous deux les propriétés suivantes :
 
       * **Nom** `name`
@@ -48,27 +48,27 @@ By default, `format`, `link`, `list`, `justify`, and `control` plug-ins and all 
       * **Valeur** `./text`
 
 
-1. Depending on the interface you are configuring for, create a node `<rtePlugins-node>`, if it does not exist:
+1. Selon l’interface pour laquelle vous effectuez la configuration, créez un nœud `<rtePlugins-node>`, s’il n’existe pas :
 
    * **Nom** `rtePlugins`
    * **Type** `nt:unstructured`
 
-1. Ci-dessous, créez un noeud pour chaque module externe à activer :
+1. Voici comment créer un nœud pour chaque module externe à activer :
 
    * **Type** `nt:unstructured`
    * **Nom** ID du module externe requis
 
-After activating a plug-in, follow these guidelines to configure the `features` property.
+Après activation d’un module externe, suivez ces instructions pour configurer la propriété `features`.
 
 |  | Activer toutes les fonctions | Activer des fonctions spécifiques. | Désactiver toutes les fonctions. |
 |---|---|---|---|
-| Name (Nom) | features | features | features |
+| Nom | features | features | features |
 | Type | Chaîne | `String` (plusieurs chaînes ; définir le type sur `String` , puis cliquez `Multi` dans CRXDE Lite) | Chaîne |
 | Valeur | `*` (astérisque) | Définissez cette variable sur une ou plusieurs valeurs de fonction. | - |
 
 ## Compréhension du module externe findreplace {#findreplace}
 
-The `findreplace` plug-in does not need any configuration. Ça marche de la boîte.
+Le module externe `findreplace` n’a pas besoin de configuration. Il est prêt à l’emploi.
 
 Lors de l’utilisation de la fonctionnalité de remplacement, la chaîne à remplacer doit être saisie en même temps que la chaîne de recherche. Cependant, vous pouvez toujours cliquer sur Rechercher pour rechercher la chaîne avant de la remplacer. Si la chaîne de remplacement est saisie après avoir cliqué sur Rechercher, la recherche est réinitialisée au début du texte.
 
@@ -78,26 +78,26 @@ La boîte de dialogue de recherche et de remplacement devient transparente lorsq
 
 Lors de l’utilisation de l’éditeur de texte enrichi, les auteurs peuvent copier le contenu selon l’un des trois modes suivants :
 
-* **Mode Navigateur** : collage de texte avec la mise en œuvre de collage par défaut du navigateur. Il ne s’agit pas d’une méthode recommandée, car elle peut introduire des balises indésirables.
+* **Mode Navigateur** : collage de texte avec la mise en œuvre de collage par défaut du navigateur.  Il ne s’agit pas d’une méthode recommandée, car elle peut introduire des balises indésirables.
 
 * **Mode Texte brut** : collage du contenu du Presse-papiers en tant que texte brut. It strips all elements of style and formatting from the copied content before inserting in [!DNL Experience Manager] component.
 
 * **Mode MS Word** : collage du texte, y compris des tableaux, avec la mise en forme lors de la copie à partir de MS Word. La copie et le collage de texte depuis une autre source, telle qu’une page web ou MS Excel ne sont pas pris en charge et conservent uniquement une mise en forme partielle.
 
-### Configuration des options de collage disponibles sur la barre d’outils de l’éditeur de texte enrichi  {#configure-paste-options-available-on-the-rte-toolbar}
+### Configuration des options de collage disponibles sur la barre d’outils de l’éditeur de texte enrichi {#configure-paste-options-available-on-the-rte-toolbar}
 
 Les trois icônes ci-dessous peuvent être mises à la disposition des auteurs dans la barre d’outils de l’éditeur de texte enrichi :
 
 * **[!UICONTROL Coller (Ctrl + V)]** : peut être préconfigurée pour correspondre à l’un des trois modes de collage ci-dessus.
 
-* **[!UICONTROL Coller comme texte]**: Fournit une fonctionnalité de mode texte brut.
+* **[!UICONTROL Coller en tant que texte]** : fournit la fonctionnalité du mode Texte brut.
 
 * **[!UICONTROL Coller à partir de Word]** : fournit la fonctionnalité du mode MS Word.
 
-Pour configurer l’éditeur de texte enrichi pour qu’il affiche les icônes requises, procédez comme suit.
+Pour configurer l’éditeur de texte enrichi afin qu’il affiche les icônes requises, procédez comme suit.
 
 1. Accédez à votre composant, par exemple `/apps/<myProject>/components/text`.
-1. Navigate to the node `rtePlugins/edit`. Voir [Activation d’un module externe](#activateplugin) si le nœud n’existe pas.
+1. Accédez au nœud `rtePlugins/edit`. Voir [Activation d’un module externe](#activateplugin) si le nœud n’existe pas.
 1. Créez la propriété `features` sur le nœud `edit` et ajoutez une ou plusieurs des fonctions. Enregistrez toutes les modifications.
 
 ### Configuration du comportement de l’icône Coller (Ctrl + V) et du raccourci {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
@@ -106,13 +106,13 @@ Vous pouvez préconfigurer le comportement de l’icône **[!UICONTROL Coller (C
 
 Cette configuration permet trois scénarios d’utilisation, à savoir :
 
-* Collage de texte avec la mise en œuvre de collage par défaut du navigateur. Il ne s’agit pas d’une méthode recommandée, car elle peut introduire des balises indésirables. Configured using `browser` below.
+* Collage de texte avec la mise en œuvre de collage par défaut du navigateur. Il ne s’agit pas d’une méthode recommandée, car elle peut introduire des balises indésirables. Configuré à l’aide de `browser` ci-dessous.
 
-* Collage du contenu du Presse-papiers en tant que texte brut. It strips all elements of style and formatting from the copied content before inserting in [!DNL Experience Manager] component. Configured using `plaintext` below.
+* Collage du contenu du Presse-papiers en tant que texte brut. It strips all elements of style and formatting from the copied content before inserting in [!DNL Experience Manager] component. Configuré à l’aide de `plaintext` ci-dessous.
 
-* Collage du texte, y compris des tableaux, avec la mise en forme lors de la copie à partir de MS Word. La copie et le collage de texte depuis une autre source, telle qu’une page web ou MS Excel ne sont pas pris en charge et conservent uniquement une mise en forme partielle. Configured using `wordhtml` below.
+* Collage du texte, y compris des tableaux, avec la mise en forme lors de la copie à partir de MS Word. La copie et le collage de texte depuis une autre source, telle qu’une page web ou MS Excel ne sont pas pris en charge et conservent uniquement une mise en forme partielle. Configuré à l’aide de `wordhtml` ci-dessous.
 
-1. In your component, navigate to `<rtePlugins-node>/edit` node. Créez les noeuds si ceux-ci n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
+1. Dans votre composant, accédez au nœud `<rtePlugins-node>/edit`. Créez les noeuds si ceux-ci n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
 1. Dans le nœud `edit`, créez une propriété à l’aide des informations suivantes :
 
    * **Nom** `defaultPasteMode`
@@ -121,9 +121,9 @@ Cette configuration permet trois scénarios d’utilisation, à savoir :
 
 ### Configuration des formats autorisés lors du collage de contenu {#pasteformats}
 
-Le mode coller en tant que Microsoft-Word (`paste-wordhtml`) peut être configuré plus avant afin que vous puissiez explicitement autoriser quelques styles lors du collage [!DNL Experience Manager] depuis un autre programme, par exemple [!DNL Microsoft Word].
+The paste-as-Microsoft-Word (`paste-wordhtml`) mode can be further configured so that you can explicitly allow a few styles when pasting in [!DNL Experience Manager] from another program, such as [!DNL Microsoft Word].
 
-For example, if only bold formats and lists should be allowed when pasting in [!DNL Experience Manager], you can filter out the other formats. Il s’agit du filtrage du collage configurable, qui peut être effectué pour les deux types de filtrage :
+For example, if only bold formats and lists should be allowed when pasting in [!DNL Experience Manager], you can filter out the other formats. Il s’agit du filtrage du collage configurable, qui peut être effectué pour les deux types de filtrage :
 
 * [Texte](#pastemodes)
 * [Liens](#linkstyles)
@@ -132,7 +132,7 @@ Pour les liens, vous pouvez également définir les protocoles acceptés automat
 
 To configure which formats are allowed when pasting text into [!DNL Experience Manager] from another program:
 
-1. In your component, navigate to the node `<rtePlugins-node>/edit`. Créez les noeuds si le noeud n’existe pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
+1. Dans votre composant, accédez au nœud `<rtePlugins-node>/edit`. Créez les noeuds si le noeud n’existe pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
 1. Créez un nœud sous le nœud `edit` destiné à contenir les règles de collage HTML :
 
    * **Nom** `htmlPasteRules`
@@ -150,7 +150,7 @@ To configure which formats are allowed when pasting text into [!DNL Experience M
    * **Nom** `underline`
    * **Nom** `anchor` (pour les liens et les ancres nommées)
    * **Nom** `image`
-   All properties are of **Type** `Boolean`, so in the appropriate **Value** you can either select or remove the check mark to enable or disable the functionality.
+   Toutes les propriétés sont de **type** `Boolean`. Ainsi, dans la **valeur** appropriée, vous pouvez cocher ou désélectionner la case pour activer/désactiver les fonctionnalités.
 
    >[!NOTE]
    >
@@ -211,8 +211,8 @@ Pour les reconfigurations ultérieures, par exemple pour ajouter d’autres styl
 
 Cette opération et effectuée en activant le module externe Styles.
 
-1. In your component, navigate to the node `<rtePlugins-node>/styles`. Créez les noeuds si ceux-ci n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
-1. Create the `features` property on the `styles` node:
+1. Dans votre composant, accédez au nœud `<rtePlugins-node>/styles`. Créez les noeuds si ceux-ci n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
+1. Créez la propriété `features` sur le nœud `styles` :
 
    * **Nom** `features`
    * **Type** `String`
@@ -228,11 +228,11 @@ Cette opération et effectuée en activant le module externe Styles.
 
 Ensuite, spécifiez l’emplacement de la ou des feuilles de style à référencer :
 
-1. Navigate to the root node of your text component, for example `/apps/<myProject>/components/text`.
-1. Add the property `externalStyleSheets` to the parent node of `<rtePlugins-node>`:
+1. Accédez au nœud racine de votre composant Texte, par exemple. `/apps/<myProject>/components/text`
+1. Ajoutez la propriété `externalStyleSheets` au nœud parent de `<rtePlugins-node>` :
 
    * **Nom** `externalStyleSheets`
-   * **Type** `String[]` (plusieurs chaînes ; cliquez sur **Multi** dans CRXDE).
+   * **Type** `String[]` (multichaîne ; cliquez sur **Multi** dans CRXDE)
    * **Valeur(s)** Chemin d’accès et nom de fichier de chaque feuille de style à inclure. Utilisez les chemins de référentiel.
    >[!NOTE]
    >
@@ -258,7 +258,7 @@ L’Editeur de texte enrichi utilise un élément DOM conteneur doté d’un ID 
 
 ### Spécification des styles disponibles dans la liste contextuelle {#stylesindropdown}
 
-1. In the component definition, navigate to the node `<rtePlugins-node>/styles`, as created in [Enabling the style drop-down selector](#styleselectorlist).
+1. Dans la définition du composant, accédez au nœud `<rtePlugins-node>/styles` tel que créé dans [Activation du sélecteur de liste déroulante Style](#styleselectorlist).
 1. Under the node `styles`, create a node (also called `styles`) to hold the list being made available:
 
    * **Nom** `styles`
@@ -273,7 +273,7 @@ L’Editeur de texte enrichi utilise un élément DOM conteneur doté d’un ID 
 
    * **Nom** `cssName`
    * **Type** `String`
-   * **Valeur** Nom de la classe CSS (non précédé d’un point « . ». ; for example, `cssClass` instead of `.cssClass`)
+   * **Valeur** Nom de la classe CSS (non précédé d’un point « . » ; par exemple, `cssClass` au lieu de `.cssClass`)
 
 1. Ajoutez la propriété `text` au même nœud. Elle définit le texte affiché dans la boîte de dialogue de sélection :
 
@@ -285,27 +285,27 @@ L’Editeur de texte enrichi utilise un élément DOM conteneur doté d’un ID 
 
    Répétez les étapes ci-dessus pour chaque style requis.
 
-### Configuration de l’éditeur de texte enrichi pour des coupures de mots optimales en japonais {#jpwordwrap}
+### Configuration de l’éditeur de texte enrichi pour des coupures de mots optimales en japonais  {#jpwordwrap}
 
 Authors using [!DNL Experience Manager] to author Japanese language content can apply a style to characters to avoid line break where a break is not required. Les auteurs peuvent ainsi couper les phrases où ils le souhaitent. Le style de cette fonctionnalité repose sur la classe CSS prédéfinie dans la feuille de style CSS.
 
 Pour créer le style que les auteurs peuvent appliquer au texte japonais, procédez comme suit :
 
 1. Créez un noeud sous le noeud styles. See [specify a style](#stylesindropdown).
-   * Nom (name) : `jpn-word-wrap`
+   * Nom : `jpn-word-wrap`
    * Type : `nt:unstructure`
 
-1. Ajoutez la propriété `cssName` au nœud pour référencer la classe CSS. Ce nom de classe est un nom réservé pour la fonction japonaise de retour automatique à la ligne.
-   * Nom (name) : `cssName`
+1. Ajoutez la propriété `cssName` au nœud pour référencer la classe CSS. Ce nom de classe est un nom réservé pour la fonction de retour automatique à la ligne du japonais.
+   * Nom : `cssName`
    * Type : `String`
-   * Valeur : `jpn-word-wrap` (sans précédent `.`)
+   * Valeur : `jpn-word-wrap` (sans préfixe `.`)
 
 1. Ajoutez la propriété text au même nœud. La valeur est le nom du style que les auteurs voient lors de la sélection du style.
-   * Name: `text`
-*Type: `String`
+   * Nom : `text`
+*Type : `String`
    * `String`
 
-1. Valeur: `Japanese word-wrap`](#locationofstylesheet)
+1. Valeur : `Japanese word-wrap`](#locationofstylesheet)
 
    ```css
    .text span.jpn-word-wrap {
@@ -322,7 +322,7 @@ Pour créer le style que les auteurs peuvent appliquer au texte japonais, procé
 
 Configuration des formats de paragraphe {#paraformats}`paraformat`
 
->Tout texte saisi dans l’éditeur de texte enrichi est placé dans une balise block dont la valeur par défaut est `<p>`. By enabling the `paraformat` plug-in, you specify additional block tags that can be assigned to paragraphs, using a drop-down selection list. Les formats de paragraphe déterminent le type de paragraphe en affectant la balise block appropriée. L’auteur peut les sélectionner et les affecter à l’aide du sélecteur Format. Les balises block comprennent, par exemple, le paragraphe standard &lt;p> et les titres standard &lt;h1>, &lt;h2> et ainsi de suite.
+>Tout texte saisi dans l’éditeur de texte enrichi est placé dans une balise block dont la valeur par défaut est `<p>`. En activant le module externe `paraformat`, vous spécifiez d’autres balises block, qui peuvent être affectées à des paragraphes, à l’aide d’une liste déroulante de sélection. Les formats de paragraphe déterminent le type de paragraphe en affectant la balise block appropriée. L’auteur peut les sélectionner et les affecter à l’aide du sélecteur Format. Les balises block comprennent, par exemple, le paragraphe standard &lt;p> et les titres standard &lt;h1>, &lt;h2> et ainsi de suite.
 >
 >[!CAUTION]
 
@@ -339,12 +339,12 @@ Spécifiez les balises de bloc qui peuvent être sélectionnées en tant que for
 
 ### Pour les reconfigurations ultérieures, par exemple pour ajouter d&#39;autres formats, suivez uniquement la partie appropriée des instructions.{#formatselectorlist}
 
-Activation du sélecteur de liste déroulante Format {#formatselectorlist}
+Activation du sélecteur de liste déroulante Format  {#formatselectorlist}
 
 1. Pour activer le `paraformat` module externe, procédez comme suit :[](#activateplugin)
-1. In your component, navigate to the node `<rtePlugins-node>/paraformat`. Créez les noeuds si ceux-ci n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
+1. Dans votre composant, accédez au nœud `<rtePlugins-node>/paraformat`. Créez les noeuds si ceux-ci n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
 
-   * Create the `features` property on the `paraformat` node:`features`
+   * Créez la propriété `features` sur le nœud `paraformat` :`features`
    * **Nom** `features`
    * **Type** `String`
 
@@ -356,12 +356,12 @@ Activation du sélecteur de liste déroulante Format {#formatselectorlist}
 >
 >[!CAUTION]
 
-### Lors de la configuration des formats de paragraphe de l’éditeur de texte enrichi, ne supprimez pas la balise de paragraphe &lt;p> comme option de mise en forme. If the `<p>` tag is removed, then the content author can not select the [!UICONTROL Paragraph formats] option even if there are additional formats configured.
+### Lors de la configuration des formats de paragraphe de l’éditeur de texte enrichi, ne supprimez pas la balise de paragraphe &lt;p> comme option de mise en forme. Si la balise `<p>` est supprimée, l’auteur du contenu ne peut pas sélectionner l’option [!UICONTROL Formats des paragraphes], même si d’autres formats sont configurés.
 
 Spécification des formats de paragraphe disponibles {#paraformatsindropdown}
 
 1. Les formats de paragraphe sont disponibles pour la sélection en :`<rtePlugins-node>/paraformat`[](#styleselectorlist)
-1. In the component definition, navigate to the node `<rtePlugins-node>/paraformat`, as created in [Enabling the format drop-down selector](#styleselectorlist).
+1. Dans la définition du composant, accédez au nœud `<rtePlugins-node>/paraformat`, tel que créé dans [Activation du sélecteur de liste déroulante Format](#styleselectorlist).
 
    * Under the `paraformat` node create a node, to hold the list of formats:**`formats`
    * **Nom** `formats`
@@ -392,7 +392,7 @@ Spécification des formats de paragraphe disponibles {#paraformatsindropdown}
 >[!CAUTION]Répétez la procédure pour chaque format requis.
 [!CAUTION]`<h1>``<h2>``<h3>``<p>`
 
-## If you define custom formats, the default formats (`<p>`, `<h1>`, `<h2>`, and `<h3>`) are removed. Re-create `<p>` format as it is the default format.
+## Si vous définissez des formats personnalisés, les formats par défaut (`<p>`, `<h1>`, `<h2>` et `<h3>`) sont supprimés. Recréez le format `<p>`, car il s’agit du format par défaut.
 
 Configuration des caractères spéciaux {#spchar}`misctools``specialchars`
 
@@ -403,16 +403,16 @@ In a standard [!DNL Experience Manager] installation, when the `misctools` plug-
 
 ### Ajouter vos caractères spéciaux remplace la sélection par défaut. Si nécessaire, redéfinissez ces caractères dans votre sélection.{#definesinglechar}
 
-1. Définition d’un caractère unique {#definesinglechar}[](#activateplugin)
-1. In your component, navigate to the node `<rtePlugins-node>/misctools`. Créez les noeuds si ceux-ci n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
+1. Définition d’un caractère unique  {#definesinglechar}[](#activateplugin)
+1. Dans votre composant, accédez au nœud `<rtePlugins-node>/misctools`. Créez les noeuds si ceux-ci n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
 
-   * Create the `features` property on the `misctools` node:`features`
+   * Créez la propriété `features` sur le nœud `misctools` :`features`
    * **Nom** `features`
    * **Type** `String[]`
 
       **Valeur** `specialchars`
 
-1.     (or `String / *` if applying all features for this plug-in)
+1.     (ou `String / *` si toutes les fonctions sont appliquées pour ce module externe)
 
    * Sous `misctools`, créez un nœud destiné à contenir les configurations de caractères spéciaux :**`specialCharsConfig`
    * **Nom** `specialCharsConfig`
@@ -425,24 +425,24 @@ In a standard [!DNL Experience Manager] installation, when the `misctools` plug-
 1. **Type** `nt:unstructured`
 
    * Under `chars` add a node to hold an individual character definition:**
-   * **Nom** Vous pouvez spécifier le nom, mais il doit être refléter le caractère, par exemple, « moitié ».`nt:unstructured`
+   * **Nom** Vous pouvez spécifier le nom, mais il doit refléter le caractère, par exemple, « moitié ».`nt:unstructured`
 
 1. **Type** `nt:unstructured`
 
-   * **À ce nœud, ajoutez la propriété suivante :**`entity`
+   * **Ajoutez la propriété suivante à ce nœud :**`entity`
    * **Nom** `entity`
    * **Type** `String`
 
-1. **Valeur** de la représentation HTML du caractère requis ; par exemple, `&189;` pour la fraction moitié.
+1. **Valeur** Représentation HTML du caractère nécessaire, par exemple, `&189;` pour la fraction un demi.
 
 Enregistrez les modifications.
 
 ![Dans CRXDE, une fois la propriété enregistrée, le caractère représenté s’affiche. Voir ci-dessous sous l’exemple du caractère demi. Répétez les étapes ci-dessus pour rendre plus de caractères spéciaux disponibles aux auteurs.](assets/chlimage_1-106.png "")
 
-### ![Dans CRXDE, ajoutez un caractère unique à rendre disponible dans la barre d’](assets/chlimage_1-106.png "outils RTEDans CRXDE, ajoutez un caractère unique à rendre disponible dans la barre d’outils RTE.")
+### ![Dans CRXDE, ajoutez un caractère unique pour qu’il soit disponible dans la barre d’outils d’éditeur de texte enrichi](assets/chlimage_1-106.png " Dans CRXDE, ajoutez un caractère unique pour qu’il soit disponible dans la barre d’outils d’éditeur de texte enrichi")
 
 1. Définition d’une série de caractères {#definerangechar}](#definesinglechar)
-1. Use steps 1 to 3 from [Define a single character](#definesinglechar).
+1. Appliquez les étapes 1 à 3 de la section [Définition d’un caractère unique](#definesinglechar).
 
    * Under `chars` add a node to hold the definition of the character range:**
    * **Nom** Vous pouvez spécifier le nom, mais il doit refléter la plage de caractères, par exemple, « crayons ».`nt:unstructured`
@@ -465,11 +465,11 @@ Enregistrez les modifications.
 
    ![Par exemple, la définition d’une série de 9998 à 10000 vous permet de bénéficier des caractères suivants.](assets/chlimage_1-107.png)
 
-   ![Définition dans CRXDE d’une série de caractères à rendre disponible dans l’éditeur de texte enrichi](assets/chlimage_1-107.png)
+   ![Définition dans CRXDE d’une série de caractères pour qu’elle soit disponible dans l’éditeur de texte enrichi](assets/chlimage_1-107.png)
 
-   *Figure : Dans CRXDE, définissez une plage de caractères à rendre disponible dans RTE.*")
+   *Figure : Définition dans CRXDE d’une série de caractères pour qu’elle soit disponible dans l’éditeur de texte enrichi*")
 
-## ![Les caractères spéciaux disponibles dans RTE sont affichés aux auteurs dans une](assets/rtepencil.png "fenêtre contextuelleLes caractères spéciaux disponibles dans RTE sont affichés aux auteurs dans une fenêtre contextuelle")
+## ![Les caractères spéciaux disponibles dans l’éditeur de texte enrichi sont affichés pour les auteurs dans une fenêtre contextuelle](assets/rtepencil.png " Les caractères spéciaux disponibles dans l’éditeur de texte enrichi sont affichés pour les auteurs dans une fenêtre contextuelle")
 
 Configuration des styles de tableau {#tablestyles}
 
@@ -479,10 +479,10 @@ Configuration des styles de tableau {#tablestyles}
 >[!NOTE]Vous pouvez définir des styles pour les tableaux et les cellules uniquement pour l’IU classique.
 [!NOTE]
 
-1. La copie et le collage de tableaux dans ou à partir d’un composant d’éditeur de texte enrichi dépendent du navigateur. Ils ne sont pas pris en charge nativement pour tous les navigateurs. Vous pouvez obtenir des résultats variables selon la structure du tableau et le navigateur. Par exemple, lorsque vous copiez et collez un tableau dans un composant RTE dans Mozilla Firefox dans l’interface utilisateur classique et l’interface utilisateur tactile, la disposition du tableau n’est pas conservée.`<rtePlugins-node>/table`[](#activateplugin)
-1. Within your component navigate to the node `<rtePlugins-node>/table`. Créez les noeuds si ceux-ci n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
+1. La copie et le collage de tableaux dans ou à partir d’un composant d’éditeur de texte enrichi dépendent du navigateur. Ils ne sont pas pris en charge nativement pour tous les navigateurs. Vous pouvez obtenir des résultats variables selon la structure du tableau et le navigateur. Par exemple, lorsque vous copiez et collez un tableau dans un composant d’éditeur de texte enrichi dans Mozilla Firefox dans les IU classique et tactile, la mise en page du tableau n’est pas conservée.`<rtePlugins-node>/table`[](#activateplugin)
+1. Dans votre composant, recherchez le nœud `<rtePlugins-node>/table`. Créez les noeuds si ceux-ci n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
 
-   * Create the `features` property on the `table` node:`features`
+   * Créez la propriété `features` sur le nœud `table` :`features`
    * **Nom** `features`
    * **Type** `String`
    >**Valeur** `*`
@@ -494,7 +494,7 @@ Configuration des styles de tableau {#tablestyles}
       * `table` pour permettre de modifier les propriétés du tableau, dont les styles.
 
 
-1. `cellprops` pour autoriser la modification des propriétés des cellules, y compris les styles.](#locationofstylesheet)[](#textstyles)
+1. `cellprops` pour permettre de modifier les propriétés des cellules, dont les styles.](#locationofstylesheet)[](#textstyles)
 1. Définissez l’emplacement des feuilles de style CSS pour y faire référence. Voir [Spécification de l’emplacement d’une feuille de style](#locationofstylesheet), car il s’agit de la même procédure que lorsque vous définissez des [styles de texte](#textstyles). L’emplacement peut être défini si vous avez défini d’autres styles.
 
    * Under the `table` node create the following nodes as required:]**
@@ -510,7 +510,7 @@ Configuration des styles de tableau {#tablestyles}
 1. **Type** `cq:WidgetCollection`
 
    * Create a node (under the `tableStyles` or `cellStyles` node as appropriate) to represent an individual style,
-   * **Nom** vous pouvez spécifier le nom, mais il doit refléter le style.`nt:unstructured`
+   * **Nom** Vous pouvez spécifier le nom, mais il doit refléter le style.`nt:unstructured`
 
 1. **Type** `nt:unstructured`
 
@@ -519,7 +519,7 @@ Configuration des styles de tableau {#tablestyles}
       * **Pour définir le style CSS référencé,**`cssName`
       * **Nom** `cssName`
       * **Type** `String``cssClass``.cssClass`
-   * **Valeur** du nom de la classe CSS (sans précédent `.`, par exemple, `cssClass` au lieu de `.cssClass`)
+   * **Valeur** Nom de la classe CSS (sans préfixe `.`, par exemple, `cssClass` au lieu de `.cssClass`)
 
       * **Pour définir un texte descriptif à afficher dans le sélecteur contextuel,**`text`
       * **Nom** `text`
@@ -532,30 +532,30 @@ Enregistrez toutes les modifications.
 
 ### Répétez les étapes ci-dessus pour chaque style requis.{#hiddenheader}
 
-Configuration d’en-têtes masquées dans les tableaux pour l’accessibilité {#hiddenheader}
+Configuration d’en-têtes masqués dans les tableaux pour l’accessibilité  {#hiddenheader}
 
 Dans certains cas, vous pouvez créer des tableaux de données sans texte visuel dans un en-tête de colonne en supposant que l’objectif de l’en-tête est induit par la relation visuelle de la colonne avec d’autres colonnes. Dans ce cas, il est nécessaire d’indiquer un texte masqué à l’intérieur de la cellule d’en-tête pour permettre aux lecteurs d’écran et aux autres dispositifs d’assistance d’aider les utilisateurs, indépendamment de leur validité, à comprendre l’objectif de la colonne.
 
-* `hiddenHeaderEditingCSS`Pour améliorer l’accessibilité dans de telles situations, l’éditeur de texte enrichi prend en charge les cellules d’en-tête masquées. De plus, il fournit des paramètres de configuration associés aux en-têtes masqués dans les tableaux. Ces paramètres vous permettent d’appliquer des styles CSS aux en-têtes masqués en mode de modification et de prévisualisation. Pour aider les créateurs à identifier les en-têtes masqués en mode modification, incluez les paramètres ci-dessous dans votre code :
-* `hiddenHeaderEditingCSS`: Indique le nom de la classe CSS appliquée à la cellule d’en-tête masqué, lorsque RTE est modifié.
+* `hiddenHeaderEditingCSS`Pour améliorer l’accessibilité dans de telles situations, l’éditeur de texte enrichi prend en charge les cellules d’en-tête masquées. De plus, il fournit des paramètres de configuration associés aux en-têtes masqués dans les tableaux. Ces paramètres permettent d’appliquer des styles CSS à des en-têtes masqués en mode modification et aperçu. Pour aider les auteurs à identifier les en-têtes masqués en mode modification, incluez les paramètres ci-dessous dans votre code :
+* `hiddenHeaderEditingCSS` : spécifie le nom de la classe CSS appliquée à la cellule hidden-header lorsque l’éditeur de texte enrichi est modifié.
 
-`hiddenHeaderEditingStyle`: Indique une chaîne Style appliquée à la cellule d’en-tête masqué lorsque RTE est modifié.
+`hiddenHeaderEditingStyle` : spécifie une chaîne Style appliquée à la cellule hidden-header lorsque l’éditeur de texte enrichi est modifié.
 
 Si vous spécifiez la chaîne CSS et la chaîne Style dans le code, la classe CSS prévaut sur la chaîne Style et peut remplacer les modifications apportées à la configuration en raison de la chaîne Style.
 
-* `hiddenHeaderClassName`Pour aider les auteurs à appliquer des CSS aux en-têtes masqués en mode prévisualisation, vous pouvez inclure les paramètres suivants dans votre code :
+* `hiddenHeaderClassName`Pour aider les créateurs à appliquer la feuille de style CSS à des en-têtes masqués en mode aperçu, vous pouvez inclure les paramètres ci-dessous dans votre code :
 * `hiddenHeaderClassName` : spécifie le nom de la classe CSS appliquée à la cellule d’en-tête masqué en mode aperçu.
 
 `hiddenHeaderStyle` : spécifie une chaîne Style appliquée à la cellule d’en-tête masqué en mode aperçu.
 
 ## Si vous spécifiez la chaîne CSS et la chaîne Style dans le code, la classe CSS prévaut sur la chaîne Style et peut remplacer les modifications apportées à la configuration en raison de la chaîne Style.{#adddict}
 
-Ajout de dictionnaires au vérificateur orthographique {#adddict}`/de/`
+Ajout de dictionnaires au vérificateur orthographique  {#adddict}`/de/`
 
->Lorsque le module externe Contrôle d’orthographe est activé, l’éditeur de texte enrichi utilise les dictionnaires de chaque langue appropriée. Ils sont sélectionnés en fonction de la langue du site web, d’après la propriété language de la sous-arborescence ou à partir de la langue de l’adresse URL, par exemple. the `/en/` branch is checked as English, the `/de/` branch as German.
+>Lorsque le module externe Contrôle d’orthographe est activé, l’éditeur de texte enrichi utilise les dictionnaires de chaque langue appropriée. Ils sont sélectionnés en fonction de la langue du site web, d’après la propriété language de la sous-arborescence ou à partir de la langue de l’adresse URL, par exemple. Pour la branche `/en/`, la vérification est effectuée pour l’anglais ; pour la branche `/de/`, pour l’allemand.
 [!NOTE]
 
-Le message « Échec de la vérification orthographique » s’affiche si le système tenter d’effectuer une vérification pour une langue non installée.
+Le message « Échec de la vérification orthographique » s’affiche si le système tente d’effectuer une vérification pour une langue non installée.
 
 * Une installation de Experience Manager standard comprend les dictionnaires pour :
 * Anglais américain (en_us)
@@ -571,35 +571,35 @@ The standard dictionaries are located at `/libs/cq/spellchecker/dictionaries`, a
    >[!CAUTION]Sélectionnez la langue de votre choix et téléchargez le fichier ZIP contenant les définitions de l’orthographe. Extrayez le contenu de l’archive dans votre système de fichiers.
    [!CAUTION]
 
-1. Seuls les dictionnaires au format `MySpell` for OpenOffice.org v2.0.1 ou version inférieure, sont pris en charge. Comme les dictionnaires sont désormais des fichiers archives, il est recommandé de les vérifier après les avoir téléchargés.`de_de.dic`
+1. Seuls les dictionnaires au format `MySpell` pour OpenOffice.org v2.0.1 ou version inférieure, sont pris en charge. Comme les dictionnaires sont désormais des fichiers archives, il est recommandé de les vérifier après les avoir téléchargés.`de_de.dic`
 1. Recherchez les fichiers .aff et.dic. Conservez le nom en lettres minuscules. Par exemple, `de_de.aff` et `de_de.dic`.
 
->Load the .aff and .dic files in the repository at `/apps/cq/spellchecker/dictionaries`.
+>Chargez les fichiers .aff et.dic dans le référentiel à l’emplacement `/apps/cq/spellchecker/dictionaries`.
 [!NOTE]
 Le vérificateur orthographique de l’éditeur de texte enrichi est disponible sur demande. Il n’est pas exécuté automatiquement lorsque vous commencez à saisir du texte.
 Pour exécuter le vérificateur orthographique, appuyez/cliquez sur le bouton Vérificateur orthographique de la barre d’outils. L’éditeur de texte enrichi vérifie l’orthographe des mots et souligne les mots mal orthographiés.
 
-## Si vous incorporez des modifications que le vérificateur orthographique suggère, l’état des modifications apportées au texte et les mots mal orthographiés n’est plus mis en surbrillance. Pour exécuter la vérification orthographique, appuyez/cliquez de nouveau sur le bouton Vérificateur orthographique.{#undohistory}
+## Si vous incorporez des modifications que le vérificateur orthographique suggère, l’état des modifications apportées au texte et les mots mal orthographiés n’est plus mis en surbrillance. Pour exécuter le vérificateur orthographique, appuyez/cliquez de nouveau sur le bouton Vérificateur orthographique.{#undohistory}
 
 Configuration de la taille de l’historique pour les actions d’annulation et de rétablissement {#undohistory}
 
 1. L’éditeur de texte enrichi permet aux auteurs d’annuler ou de rétablir quelques-unes des dernières modifications. Par défaut, 50 modifications sont stockées dans l’historique. Vous pouvez configurer cette valeur, au besoin.`<rtePlugins-node>/undo`[](#activateplugin)
-1. Within your component navigate to the node `<rtePlugins-node>/undo`. Créez ces nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
+1. Dans votre composant, recherchez le nœud `<rtePlugins-node>/undo`. Créez ces nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
 
    * Sur le nœud `undo`, créez la propriété :**`maxUndoSteps`
    * **Nom** `maxUndoSteps`
    * **Type** `Long`
 
-1. **Valeur** Nombre d’étapes annulées à enregistrer dans l’historique. La valeur par défaut est de 50. Utilisez `0` pour désactiver complètement l&#39;annulation/la restauration.
+1. **Valeur** Nombre d’étapes annulées à enregistrer dans l’historique. La valeur par défaut est de 50. Utilisez `0` pour désactiver complètement l’annulation/le rétablissement.
 
 ## Enregistrez les modifications.{#tabsize}
 
-Configuration de la taille de tabulation {#tabsize}
+Configuration de la taille de tabulation  {#tabsize}
 
 Lorsque le caractère de tabulation est activé dans un texte, un nombre prédéfini d’espaces est inséré. Par défaut, il s’agit de trois espaces insécables et d’un espace.
 
 1. Pour définir la taille de la tabulation :`<rtePlugins-node>/keys`[](#activateplugin)
-1. In your component, navigate to the node `<rtePlugins-node>/keys`. Créez les noeuds si ceux-ci n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
+1. Dans votre composant, accédez au nœud `<rtePlugins-node>/keys`. Créez les noeuds si ceux-ci n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
 
    * Sur le nœud `keys`, créez la propriété :**`tabSize`
    * **Nom** `tabSize`
@@ -609,17 +609,17 @@ Lorsque le caractère de tabulation est activé dans un texte, un nombre prédé
 
 ## Enregistrez les modifications.{#indentmargin}
 
-Définition de la marge de retrait {#indentmargin}
+Définition de la marge de retrait  {#indentmargin}
 
 >[!NOTE]Lorsque la mise en retrait est activée (par défaut), vous pouvez définir la taille du retrait :
 [!NOTE]
 
-1. Cette taille de retrait n’est appliquée qu’aux paragraphes (blocs) de texte. Elle n’affecte pas la mise en retrait des listes réelles.`<rtePlugins-node>/lists`[](#activateplugin)
-1. Within your component navigate to the node `<rtePlugins-node>/lists`. Créez ces nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
+1. Cette taille de retrait n’est appliquée qu’aux paragraphes (blocs) de texte. Elle n’affecte pas la mise en retrait des listes.`<rtePlugins-node>/lists`[](#activateplugin)
+1. Dans votre composant, recherchez le nœud `<rtePlugins-node>/lists`. Créez ces nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
 
-   * On the `lists` node create the `identSize` parameter:`identSize`
-   * **Name** (Nom) : `identSize`
-   * **Type**: `Long`
+   * Sur le nœud `lists`, créez le paramètre `identSize` :`identSize`
+   * **Nom** : `identSize`
+   * **Type** : `Long`
 
 ## **Valeur** Nombre de pixels nécessaires pour la marge en retrait.
 
@@ -644,14 +644,14 @@ Configuration des styles et des protocoles pour les liens {#linkstyles}[!DNL Exp
    * **Nom** `htmlRules`
    >**Type** `nt:unstructured`
    [!NOTE]
-   * The `../items/text` node has the property:**`xtype`
+   * Le nœud `../items/text` possède la propriété :**`xtype`
    * **Nom** `xtype`
    * **Type** `String`
    **Valeur** `richtext`
 
 1. The location of the `../items/text` node can vary, depending on the structure of your dialog. Deux exemples sont `/apps/myProject>/components/text/dialog/items/text` et `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
-   * Sous `htmlRules`, créez un noeud.**`links`
+   * Under `htmlRules`, create a node.**`links`
    * **Nom** `links`
 
 1. **Type** `nt:unstructured`
@@ -661,12 +661,12 @@ Configuration des styles et des protocoles pour les liens {#linkstyles}[!DNL Exp
       * **Style CSS pour les liens internes :**`cssInternal`
       * **Nom** `cssInternal`
       * **Type** `String``.cssClass`
-   * **Valeur** Nom de la classe CSS (non précédé d’un point « . ». ; for example, `cssClass` instead of `.cssClass`)
+   * **Valeur** Nom de la classe CSS (non précédé d’un point « . »  ; par exemple, `cssClass` au lieu de `.cssClass`)
 
       * **Style CSS pour les liens externes**`cssExternal`
       * **Nom** `cssExternal`
       * **Type** `String``.cssClass`
-   * **Valeur** Nom de la classe CSS (non précédé d’un point « . ». ; for example, `cssClass` instead of `.cssClass`)`https://``https://``file://``mailto:`
+   * **Valeur** Nom de la classe CSS (non précédé d’un point « . »  ; par exemple, `cssClass` au lieu de `.cssClass`)`https://``https://``file://``mailto:`
 
       * Tableau de **[!UICONTROL protocoles]** valides, y compris `https://`, `https://`, `file://`, `mailto:`et autres,**
       * **Nom** `protocols`
@@ -690,16 +690,16 @@ Configuration des styles et des protocoles pour les liens {#linkstyles}[!DNL Exp
 
             * **Valeurs** :
 
-               `auto`: signifie qu&#39;une cible automatique est choisie`targetInternal`
+               `auto` : signifie qu’une cible automatique est choisie`targetInternal`
 
-            * (spécifié par la `targetExternal` propriété pour les liens externes ou `targetInternal` pour les liens internes).
+            * (spécifié par la propriété `targetExternal` pour les liens externes ou `targetInternal` pour les liens internes).
             * `manual` : non applicable dans ce contexte
       * `blank` : non applicable dans ce contexte
 
          * **Cible des liens internes :**`targetInternal`
          * **Nom** `targetInternal`
          * **Type** `String`
-      * **Valeur** de la cible pour les liens internes (à utiliser uniquement lorsque le &quot;mode&quot; est `auto`)
+      * **Valeur** Cible des liens internes (utilisé uniquement lorsque le mode est `auto`)
 
          * **Cible des liens externes :**`targetExternal`
          * **Nom** `targetExternal`
