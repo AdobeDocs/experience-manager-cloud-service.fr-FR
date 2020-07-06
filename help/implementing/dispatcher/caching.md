@@ -1,21 +1,21 @@
 ---
-title: Mise en cache dans AEM en tant que service Cloud
-description: 'Mise en cache dans AEM en tant que service Cloud '
-translation-type: tm+mt
+title: Mise en cache dans AEM as a Cloud Service
+description: 'Mise en cache dans AEM as a Cloud Service '
+translation-type: ht
 source-git-commit: 18c2f70acd33c83a0d98ccb658d3e9be18b34c8b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1358'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 
 # Présentation {#intro}
 
-Le trafic passe par le CDN à une couche de serveur Web apache, qui prend en charge les modules, y compris le répartiteur. Afin d’améliorer les performances, le répartiteur est principalement utilisé comme cache pour limiter le traitement sur les noeuds de publication.
-Des règles peuvent être appliquées à la configuration du répartiteur pour modifier les paramètres d’expiration du cache par défaut, ce qui entraîne la mise en cache sur le CDN. Note that dispatcher also respects the resulting cache expiration headers if `enableTTL` is enabled in the dispatcher configuration, implying that it will refresh specific content even outside of content being republished.
+Le trafic emprunte un réseau de diffusion de contenu pour parvenir à une couche de serveur web Apache, destinée à prendre en charge les modules, y compris le Dispatcher. Pour améliorer les performances, le Dispatcher sert essentiellement de cache pour limiter les traitements des nœuds de publication.
+Il est possible d’appliquer des règles à la configuration du Dispatcher pour modifier les paramètres d’expiration du cache par défaut, ce qui entraîne la mise en cache sur le réseau de diffusion de contenu. Notez que le Dispatcher respecte également les en-têtes d’expiration de cache qui en résultent si `enableTTL` est activé dans sa configuration, ce qui implique qu’il actualisera un contenu spécifique même en dehors du contenu en cours de republication.
 
-Cette page décrit également comment le cache du répartiteur est invalidé, ainsi que le fonctionnement de la mise en cache au niveau du navigateur en ce qui concerne les bibliothèques côté client.
+Cette page décrit également comment le cache du Dispatcher est invalidé, ainsi que le fonctionnement de la mise en cache du navigateur concernant les bibliothèques côté client.
 
 ## Mise en cache {#caching}
 
@@ -38,7 +38,7 @@ Vous devez vous assurer qu’un fichier sous `src/conf.dispatcher.d/cache` compo
 { /glob "*" /type "allow" }
 ```
 
-* Pour empêcher la mise en cache d’un contenu spécifique, définissez l’en-tête Cache-Control sur &quot;private&quot;. Par exemple, les éléments suivants empêcheraient la mise en cache du contenu html situé sous un répertoire nommé &quot;myfolder&quot; :
+* Pour empêcher la mise en cache d’un contenu spécifique, définissez l’en-tête Cache-Control sur « private ». Par exemple, les éléments suivants empêcheraient la mise en cache du contenu html situé sous un répertoire nommé « myfolder » :
 
 ```
 <LocationMatch "\/myfolder\/.*\.(html)$">.  // replace with the right regex
@@ -81,9 +81,9 @@ Assurez-vous que les ressources destinées à être conservées en privé plutô
 * La valeur par défaut ne peut pas être définie avec la variable `EXPIRATION_TIME` utilisée pour les types de fichiers html/texte.
 * L’expiration du cache peut être définie avec la même stratégie LocationMatch décrite dans la section html/texte en spécifiant l’expression régulière appropriée.
 
-## Invalidation du cache du répartiteur {#disp}
+## Invalidation du cache du Dispatcher {#disp}
 
-En général, il n&#39;est pas nécessaire d&#39;invalider le cache du répartiteur. Vous devez plutôt vous fier au répartiteur qui actualise son cache lorsque le contenu est republié et au CDN qui respecte les en-têtes d’expiration du cache.
+En général, il n’est pas nécessaire d’invalider le cache du Dispatcher. Vous devriez au contraire vous fier au Dispatcher qui actualise son cache lorsque le contenu est republié et au réseau de diffusion de contenu qui respecte les en-têtes d’expiration du cache.
 
 ### Invalidation du cache du Dispatcher pendant l’activation/la désactivation {#cache-activation-deactivation}
 
