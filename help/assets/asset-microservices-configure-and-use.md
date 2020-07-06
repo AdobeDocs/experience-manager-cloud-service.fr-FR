@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: b63f62790973be59b1437a6406563638f63eeb28
 workflow-type: tm+mt
 source-wordcount: '1875'
-ht-degree: 90%
+ht-degree: 92%
 
 ---
 
@@ -99,9 +99,9 @@ Une valeur vide signifie que le traitement des ressources utilise, par défaut, 
 
 #### Règles d’inclusion du type MIME {#mime-type-inclusion-rules}
 
-Lors du traitement d’une ressource avec un type MIME spécifique, ce dernier est d’abord comparé à la valeur des types MIME exclus pour la spécification de rendu. S’il correspond à cette liste, ce rendu spécifique n’est pas généré pour la ressource (liste bloquée).
+Lors du traitement d’une ressource avec un type MIME spécifique, ce dernier est d’abord comparé à la valeur des types MIME exclus pour la spécification de rendu. En cas de correspondance avec cette liste, ce rendu spécifique n’est pas généré pour la ressource (liste bloquée).
 
-Sinon, le type MIME est vérifié par rapport au type MIME inclus et s&#39;il correspond à la liste, le rendu est généré (liste autorisée).
+Dans le cas contraire, le type MIME est comparé au type MIME inclus et, si une correspondance est trouvée, le rendu est généré (liste autorisée).
 
 #### Rendu FPO spécial {#special-fpo-rendition}
 
