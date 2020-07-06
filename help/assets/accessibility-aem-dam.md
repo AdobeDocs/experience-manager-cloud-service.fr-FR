@@ -1,17 +1,17 @@
 ---
-title: Accessibilité dans la solution de gestion des actifs numériques Assets.
-description: Découvrez comment les fonctions d’accessibilité d’Adobe Experience Manager en tant que service Cloud aident les utilisateurs désactivés.
+title: Accessibilité pour la solution de gestion des ressources numériques Assets.
+description: Découvrez comment les fonctions d’accessibilité d’Adobe Experience Manager as a Cloud Service aident les utilisateurs en situation de handicap.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cbaa8161a87c765c9ec7581d41df5212f5eb7ffc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '80'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Accessibility in Adobe Experience Manager Assets as a Cloud Service {#accessibility-in-aem-assets}
+# Accessibilité pour Adobe Experience Manager Assets as a Cloud Service {#accessibility-in-aem-assets}
 
-Adobe fabrique des produits pour tous les utilisateurs, y compris les utilisateurs désactivés. Adobe Experience Manager est continuellement amélioré pour répondre aux besoins des utilisateurs désactivés. Adobe offre des informations de conformité pour ses produits qui détaillent les normes applicables et qui décrivent les caractéristiques d&#39;accessibilité.
-Pour plus d’informations, voir ACR d’AEMaaCS.
+Adobe crée des produits pour tous les utilisateurs, y compris les utilisateurs en situation de handicap. Adobe Experience Manager est continuellement amélioré pour répondre aux besoins des utilisateurs en situation de handicap. Adobe donne des informations de conformité pour ses produits en précisant les normes applicables et les caractéristiques d’accessibilité.
+Pour plus d’informations, voir les ACR d’AEMaaCS.
