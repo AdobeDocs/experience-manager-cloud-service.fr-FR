@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
 workflow-type: tm+mt
 source-wordcount: '1582'
-ht-degree: 86%
+ht-degree: 99%
 
 ---
 
@@ -18,22 +18,22 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * La configuration minimale requise pour l’outil de transfert de contenu est AEM 6.3+ et JAVA 8. Si vous utilisez une version antérieure d’AEM, vous devrez mettre à niveau votre référentiel de contenu à la version AEM 6.5 pour utiliser l’outil de transfert de contenu.
 
-* If you are using a *Sandbox Environment*, ensure that your environment is upgraded to June 10 2020 Release or later. Si vous utilisez un *environnement de production*, il est automatiquement mis à jour.
+* Si vous utilisez un *environnement Sandbox*, veillez à ce qu’il soit mis à niveau à la version du 10 juin 2020 ou à une version postérieure. Si vous utilisez un *environnement de production*, il est automatiquement mis à jour.
 
-* Pour utiliser l’outil de transfert de contenu, vous devez être un utilisateur administrateur sur votre instance source et appartenir au groupe d’administrateurs AEM dans l’instance de Cloud Service à laquelle vous transférez du contenu. Les utilisateurs non privilégiés ne pourront pas récupérer le jeton d&#39;accès pour utiliser l’outil de transfert de contenu.
+* Pour utiliser l’outil de transfert de contenu, vous devez être un utilisateur administrateur sur votre instance source et appartenir au groupe d’administrateurs AEM dans l’instance Cloud Service vers laquelle vous transférez du contenu. Les utilisateurs non privilégiés ne pourront pas récupérer le jeton d’accès pour utiliser l’outil de transfert de contenu.
 
 * Pendant la phase d’extraction, l’outil de transfert de contenu est exécuté sur une instance source AEM active.
 
 * La *phase d’ingestion* de l’auteur réduira l’ensemble du déploiement de l’auteur. L’auteur AEM ne sera donc pas disponible pendant la totalité du processus d’ingestion.
 
-* La limite supérieure recommandée pour la taille du référentiel que l’outil de transfert de contenu peut prendre en charge à la fois est de 20 Go.
+* La limite supérieure recommandée pour la taille du référentiel que l’outil de transfert de contenu peut prendre en charge à un moment donné est de 20 Go.
 
 ## Disponibilité {#availability}
 
-L&#39;outil de transfert de contenu peut être téléchargé dans un fichier zip (Content Transfer Tool v1.0.0) à partir du portail de distribution de logiciels. Vous pouvez installer le module par le biais du gestionnaire de modules sur votre instance source Adobe Experience Manager (AEM).
+Il est possible de télécharger l’outil de transfert de contenu dans un fichier zip (Content Transfer Tool v1.0.0) à partir du portail de distribution de logiciels. Vous pouvez installer le module par le biais du gestionnaire de modules sur votre instance source Adobe Experience Manager (AEM).
 
 >[!NOTE]
->Téléchargez l’outil de transfert de contenu depuis le portail de distribution [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) logiciels.
+>Download the Content Transfer Tool, from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
 
 ## Exécution de l’outil de transfert de contenu {#running-tool}
 
@@ -70,7 +70,7 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
    1. **Jeton d’accès** : renseignez le jeton d’accès.
 
       >[!NOTE]
-      >Vous pouvez récupérer le jeton d’accès de l’instance d’auteur en accédant à `/libs/granite/migration/token.json`. Le jeton d&#39;accès est récupéré à partir de l’instance d’auteur du Cloud Service.
+      >Vous pouvez récupérer le jeton d’accès de l’instance d’auteur en accédant à `/libs/granite/migration/token.json`. Le jeton d’accès est récupéré à partir de l’instance d’auteur de Cloud Service.
 
    1. **Paramètres** : sélectionnez les paramètres suivants pour créer le jeu de migration :
 
@@ -127,7 +127,7 @@ Pour extraire votre jeu de migration à partir de l’outil de transfert de cont
 
    >[!NOTE]
    >Vous devrez actualiser la page pour voir l’état après mise à jour.
-   >Lorsque la phase d’extraction est lancée, un verrou d’écriture est créé et libéré après *60 secondes*. Donc, si une extraction est arrêtée, vous devez attendre une minute pour que le verrou soit relâché avant de recommencer l&#39;extraction.
+   >Lorsque la phase d’extraction est lancée, un verrou d’écriture est créé et libéré au-delà de *60 secondes*. Si une extraction est arrêtée, vous devez donc attendre une minute pour que le verrou soit libéré avant de recommencer.
 
 #### Extraction de complément {#top-up-extraction-process}
 
@@ -213,7 +213,7 @@ ou,
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/view-log3.png)
 
-1. Pour fermer les journaux sans utiliser l’interface utilisateur, vous pouvez SSH dans votre environnement AEM source et faire une queue dans le `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`.
+1. Pour consulter les dernières lignes des journaux sans utiliser l’interface utilisateur, vous pouvez vous connecter à votre environnement AEM source via SSH et exécuter la commande tail sur le fichier `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`.
 
 ### Suppression d’un jeu de migration {#deleting-migration-set}
 
@@ -266,6 +266,6 @@ En tant qu’utilisateur, il est possible que vous constatiez les changements de
 
 * Cela ne signifie pas que l’ingestion du premier jeu de migration a échoué. Ce comportement apparaît, car lorsqu’une nouvelle tâche d’ingestion est lancée, elle supprime la tâche d’ingestion précédente. L’état des modifications du premier jeu de migration doit donc être ignoré.
 
-* Les icônes de l’interface utilisateur de l’outil de transfert de contenu peuvent sembler différentes des captures d’écran affichées dans ce guide ou ne s’affichent pas du tout selon la version de l’instance AEM source.
+* Selon la version de l’instance AEM source, les icônes de l’interface utilisateur de l’outil de transfert de contenu peuvent apparaître sous des formes différentes des captures d’écran de ce guide ou ne pas apparaître du tout.
 
 
