@@ -323,13 +323,13 @@ Les codes d’état suivants s’affichent dans les circonstances pertinentes :
 
    * mise à jour réussie d’un fragment de contenu via `PUT`
 
-* **201** (créé)
+* **** 201 (Créé)
 
    Affiché dans le scénario suivant :
 
    * création réussie d’un fragment de contenu via `POST`
 
-* **404** (introuvable)
+* **404** (Introuvable)
 
    Affiché dans le scénario suivant :
 
