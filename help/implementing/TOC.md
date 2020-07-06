@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
 workflow-type: tm+mt
 source-wordcount: '231'
-ht-degree: 75%
+ht-degree: 92%
 
 ---
 
@@ -40,16 +40,16 @@ ht-degree: 75%
    + [Fragments de contenu – Configuration des composants pour le rendu](developing/extending/content-fragments-configuring-components-rendering.md)
    + [Configuration des formulaires de recherche](developing/extending/search-forms.md)
    + [Configuration de l’éditeur de texte enrichi](/help/implementing/developing/extending/rich-text-editor.md)
-   + [Configuration des modules externes RTE](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
-   + [Configuration de RTE pour la création de sites accessibles](/help/implementing/developing/extending/rte-accessible-content.md)
+   + [Configuration des modules externes d’éditeur de texte enrichi](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
+   + [Configuration de l’éditeur de texte enrichi pour créer des sites accessibles](/help/implementing/developing/extending/rte-accessible-content.md)
 + Déploiement sur AEM as a Cloud Service {#deploying}
    + [Déploiement sur AEM as a Cloud Service](deploying/overview.md)
    + [Configuration d’OSGi pour AEM as a Cloud Service](deploying/configuring-osgi.md)
 + Niveau de création {#author-tier}
-   + [Accès au niveau Auteur](/help/implementing/author-tier/accessing-the-author-tier.md)
-   + [Sécurisation du niveau d’auteur](/help/implementing/author-tier/securing-the-author-tier.md)
-+ Présentation de la Diffusion de contenu {#content-delivery}
-   + [Flux de Diffusion de contenu](dispatcher/overview.md)
+   + [Accès au niveau de création](/help/implementing/author-tier/accessing-the-author-tier.md)
+   + [Sécurisation du niveau de création](/help/implementing/author-tier/securing-the-author-tier.md)
++ Présentation de la diffusion de contenu {#content-delivery}
+   + [Flux de diffusion de contenu](dispatcher/overview.md)
    + [Dispatcher en mode cloud](dispatcher/disp-overview.md)
-   + [CDN dans AEM en tant que Cloud Service](dispatcher/cdn.md)
-   + [Mise en cache dans AEM en tant que Cloud Service](dispatcher/caching.md)
+   + [Réseau de diffusion de contenu dans AEM as a Cloud Service](dispatcher/cdn.md)
+   + [Mise en cache dans AEM as a Cloud Service](dispatcher/caching.md)
