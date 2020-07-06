@@ -56,7 +56,7 @@ Procédez comme suit dans la séquence spécifiée pour configurer l’instance 
 
 ### Création de la configuration IMS {#create-ims-configuration}
 
-La configuration IMS authentifie votre locataire du portail de marque avec l’instance de cloud AEM Assets.
+La configuration IMS authentifie votre client Brand Portal avec l’instance cloud d’AEM Assets.
 
 La configuration IMS comprend deux étapes :
 
