@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
 workflow-type: tm+mt
 source-wordcount: '1132'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,19 +25,19 @@ Pour permettre à AEM et Adobe Stock de communiquer, créez une configuration I
 >
 >Seuls les administrateurs d’AEM et les administrateurs d’Admin Console d’une entreprise peuvent procéder à l’intégration, dans la mesure où cette opération requiert des privilèges d’administrateur.
 
-### Création d’une configuration d’IMS   {#create-an-ims-configuration}
+### Création d’une configuration d’IMS  {#create-an-ims-configuration}
 
 1. Cliquez sur le logo AEM. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Configurations d’Adobe IMS]**. Cliquez sur **[!UICONTROL Créer]**, puis sélectionnez **[!UICONTROL Solution Cloud]** > **[!UICONTROL Adobe Stock]**.
 1. Réutilisez un certificat existant ou sélectionnez **[!UICONTROL Créer un certificat]**.
 1. Cliquez sur **[!UICONTROL Créer un certificat]**. Une fois le certificat créé, téléchargez la clé publique. Cliquez sur **[!UICONTROL Suivant]**.
-1. Indiquez les valeurs appropriées dans les champs intitulés **[!UICONTROL Titre]**, **[!UICONTROL Serveur d’autorisation]**, **[!UICONTROL Clé API]**, **[!UICONTROL Secret client]** et **[!UICONTROL Charge]**. See [JWT authentication quick start](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md), for detailed information to fetch these values from Adobe Developer Console.
-1. Ajoutez la clé publique téléchargée sur votre compte de service Adobe Developer Console.
+1. Indiquez les valeurs appropriées dans les champs intitulés **[!UICONTROL Titre]**, **[!UICONTROL Serveur d’autorisation]**, **[!UICONTROL Clé API]**, **[!UICONTROL Secret du client]** et **[!UICONTROL Charge utile]**. Voir [Démarrage rapide de l’authentification JWT](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) pour obtenir des informations détaillées sur la récupération de ces valeurs à partir d’Adobe Developer Console.
+1. Ajoutez la clé publique téléchargée à votre compte de service Adobe Developer Console.
 
 <!--
 TBD: Update this instance when AIO updates their documentation publish URL.
 -->
 
-### Création d’une configuration Adobe Stock dans AEM   {#create-adobe-stock-configuration-in-aem}
+### Création d’une configuration Adobe Stock dans AEM  {#create-adobe-stock-configuration-in-aem}
 
 1. Dans l’interface utilisateur d’AEM, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
 1. Cliquez sur **[!UICONTROL Créer]** pour créer une configuration et l’associer à votre configuration IMS existante. Sélectionnez `PROD` comme paramètre d’environnement.
