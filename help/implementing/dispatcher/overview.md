@@ -1,16 +1,16 @@
 ---
-title: Présentation du flux de la Diffusion de contenu
-description: Présentation du flux de la Diffusion de contenu
-translation-type: tm+mt
+title: Présentation du flux de diffusion de contenu
+description: Présentation du flux de diffusion de contenu
+translation-type: ht
 source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '209'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 
-# Flux de Diffusion de contenu {#content-delivery}
+# Flux de diffusion de contenu {#content-delivery}
 
 La page actuelle détaille la diffusion du contenu du service de publication dans AEM as a Cloud Service. La diffusion du contenu du service de publication comprend :
 
@@ -28,7 +28,7 @@ Le flux de données est le suivant :
 1. Si le contenu n’est pas entièrement mis en cache, Dispatcher appelle la publication AEM (par proxy inverse).
 1. Le rendu du contenu est effectué par le navigateur, qui peut également le mettre en cache, selon les en-têtes
 
-Par défaut, le type de contenu HTML/texte est défini pour expirer après 300 s (5 minutes) au niveau du répartiteur, un seuil que respectent à la fois le cache du répartiteur et le CDN. Lors des redéploiements du service de publication, le cache du Dispatcher est effacé puis réchauffé avant que les nouveaux nœuds de publication n’acceptent le trafic.
+Par défaut, le type de contenu HTML/texte est défini pour expirer après 300 s (5 minutes) au niveau de la couche du Dispatcher, un seuil que le cache du Dispatcher et le réseau de diffusion de contenu respectent. Lors des redéploiements du service de publication, le cache du Dispatcher est effacé puis réchauffé avant que les nouveaux nœuds de publication n’acceptent le trafic.
 
 Les sections ci-dessous fournissent des informations plus détaillées sur la diffusion de contenu, notamment la configuration du CDN et la mise en cache.
 
