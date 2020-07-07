@@ -3,7 +3,7 @@ title: 'API Assets pour la gestion des ressources numériques dans Adobe Experie
 description: Les API Assets permettent d’effectuer des opérations CRUD (création, lecture, mise à jour, suppression) de base afin de gérer des ressources, y compris des fichiers binaires, des métadonnées, des rendus, des commentaires et des fragments de contenu.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 27e72bbc0d852eb2c2eb059967c91e6108613965
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1249'
 ht-degree: 100%
@@ -42,8 +42,9 @@ Voici un aperçu des différences importantes par rapport aux versions antérieu
 
 Cette méthode doit permettre une gestion plus évolutive et plus performante des chargements de ressources.
 
-> !![NOTE]
-Pour examiner le code client qui implémente cette méthode, reportez-vous à la bibliothèque Open Source [aem-upload](https://github.com/adobe/aem-upload).
+>[!NOTE]
+>
+>Pour examiner le code client qui implémente cette méthode, reportez-vous à la bibliothèque Open Source [aem-upload](https://github.com/adobe/aem-upload).
 
 ### Lancement du chargement {#initiate-upload}
 
@@ -114,8 +115,7 @@ Après avoir téléchargé toutes les parties d’un fichier binaire, envoyez un
 | `replace` | Booléen | Facultatif | Si `True` et qu’une ressource portant le nom spécifié existe déjà, Experience Manager supprime la ressource, puis la recrée. |
 
 >!![NOTE]
->
-> Si la ressource existe déjà et que les champs `createVersion` et `replace` ne sont ni l’un ni l’autre spécifiés, l’instance met à jour la version actuelle de la ressource avec le nouveau fichier binaire.
+Si la ressource existe déjà et que les champs `createVersion` et `replace` ne sont ni l’un ni l’autre spécifiés, l’instance met à jour la version actuelle de la ressource avec le nouveau fichier binaire.
 
 Comme c’est le cas pour le processus de lancement, les données de la requête de fin peuvent contenir des informations pour plusieurs fichiers.
 
