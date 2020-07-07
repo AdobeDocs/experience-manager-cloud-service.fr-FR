@@ -2,7 +2,7 @@
 title: Réplication
 description: Distribution et dépannage de la réplication.
 translation-type: tm+mt
-source-git-commit: 8fba31951276d7e0de1f3bd079e42e431edaff4e
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 4%
@@ -12,17 +12,17 @@ ht-degree: 4%
 
 # Réplication {#replication}
 
-Adobe Experience Manager as a Cloud Service utilise la fonctionnalité de diffusion [de contenu](https://sling.apache.org/documentation/bundles/content-distribution.html) Sling pour déplacer le contenu à répliquer vers un service de pipeline s’exécutant sur les E/S Adobe qui se trouvent en dehors de l’exécution d’AEM.
+Adobe Experience Manager en tant que Cloud Service utilise la fonctionnalité de distribution [de contenu](https://sling.apache.org/documentation/bundles/content-distribution.html) Sling pour déplacer le contenu à répliquer vers un service de pipeline s’exécutant sur les E/S Adobe qui se trouvent en dehors de l’exécution d’AEM.
 
 >[!NOTE]
 >
-> Consultez [Distribution](/help/core-concepts/architecture.md#content-distribution) pour en savoir plus.
+>Consultez [Distribution](/help/core-concepts/architecture.md#content-distribution) pour en savoir plus.
 
 ## Méthodes de publication de contenu {#methods-of-publishing-content}
 
 ### Désactivation/publication rapide - Annulation/publication planifiée {#publish-unpublish}
 
-Ces fonctionnalités standard d’AEM pour les auteurs ne changent pas avec le service AEM Cloud.
+Ces fonctionnalités standard d’AEM pour les auteurs ne changent pas avec AEM Cloud Service.
 
 ### Activation d’une arborescence {#tree-activation}
 
@@ -37,7 +37,7 @@ Pour exécuter une activation d&#39;arborescence :
 
 ## Résolution des incidents {#troubleshooting}
 
-Pour résoudre les problèmes de réplication, accédez aux files d’attente de réplication dans l’interface Web du service d’auteur AEM :
+Pour résoudre les problèmes de réplication, accédez aux files d&#39;attente de réplication dans l&#39;interface Web du service de AEM Author :
 
 1. Dans le menu Début AEM, accédez à **Outils > Déploiement > Distribution**
 2. Sélectionner la carte **forwardPublisher**
@@ -48,5 +48,5 @@ Pour résoudre les problèmes de réplication, accédez aux files d’attente de
 
 ![](assets/logs.png "JournauxJournaux")
 
-Si le contenu n’a pas pu être publié, l’intégralité de la publication est restaurée à partir du service de publication AEM.
+Si le contenu n&#39;a pas pu être publié, l&#39;ensemble de la publication est restauré à partir du service de AEM Publish.
 Dans ce cas, les files d&#39;attente doivent être examinées afin d&#39;identifier les éléments qui ont provoqué l&#39;annulation de la publication. En cliquant sur une file d&#39;attente présentant un état rouge, la file d&#39;attente avec des éléments en attente s&#39;affiche, à partir de laquelle un ou tous les éléments peuvent être effacés si nécessaire.
