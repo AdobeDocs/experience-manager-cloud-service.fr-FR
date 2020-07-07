@@ -2,7 +2,7 @@
 title: Journalisation
 description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou apprenez à demander la journalisation des données.
 translation-type: tm+mt
-source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1097'
 ht-degree: 100%
@@ -46,8 +46,9 @@ Dans les environnements cloud, les développeurs peuvent télécharger les journ
 
 ### Enregistreurs et rédacteurs standard {#standard-loggers-and-writers}
 
-> [!IMPORTANT]
-> Ceux-ci peuvent être personnalisés si nécessaire, bien que la configuration standard convienne à la plupart des installations. Si, toutefois, vous devez personnaliser les configurations de journalisation standard, veillez à ne le faire que sur les environnements `dev`.
+>[!IMPORTANT]
+>
+>Ceux-ci peuvent être personnalisés si nécessaire, bien que la configuration standard convienne à la plupart des installations. Si, toutefois, vous devez personnaliser les configurations de journalisation standard, veillez à ne le faire que sur les environnements `dev`.
 
 Certains enregistreurs et rédacteurs sont inclus dans une installation standard d’AEM as a Cloud Service.
 
@@ -192,13 +193,13 @@ Pour modifier les niveaux de journal des environnements Cloud, il est nécessair
 
 >[!NOTE]
 >
-> Pour effectuer les modifications de configuration répertoriées ci-dessous, vous devez les créer dans un environnement de développement local, puis les transmettre à une instance AEM as a Cloud Service. Pour plus d’informations sur la procédure à suivre, voir [Déploiement sur AEM as a Cloud Service](/help/implementing/deploying/overview.md).
+>Pour effectuer les modifications de configuration répertoriées ci-dessous, vous devez les créer dans un environnement de développement local, puis les transmettre à une instance AEM as a Cloud Service. Pour plus d’informations sur la procédure à suivre, voir [Déploiement sur AEM as a Cloud Service](/help/implementing/deploying/overview.md).
 
 **Activation du niveau de journalisation DEBUG**
 
 >[!WARNING]
 >
-> L’activation globale du niveau de journalisation DEBUG génère une grande quantité d’informations qui seront difficiles à analyser. Il est recommandé de n’activer ce niveau que pour les services nécessitant un débogage. Pour plus d’informations, voir [Enregistreurs et rédacteurs pour les services individuels](logging.md#loggers-and-writers-for-individual-services).
+>L’activation globale du niveau de journalisation DEBUG génère une grande quantité d’informations qui seront difficiles à analyser. Il est recommandé de n’activer ce niveau que pour les services nécessitant un débogage. Pour plus d’informations, voir [Enregistreurs et rédacteurs pour les services individuels](logging.md#loggers-and-writers-for-individual-services).
 
 Le niveau de journalisation par défaut est INFO, ce qui signifie que les messages DEBUG ne sont pas consignés.
 Pour activer le niveau de journalisation DEBUG, définissez
