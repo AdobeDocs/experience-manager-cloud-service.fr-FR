@@ -1,8 +1,8 @@
 ---
-title: Règlement sur la protection des données et la confidentialité des données - Adobe Experience Manager en tant que base de données Cloud Service
-description: 'Découvrez Adobe Experience Manager en tant que support de Cloud Service Foundation pour les différentes réglementations sur la protection des données et la confidentialité des données ; notamment le règlement général de l’UE sur la protection des données (RGPD), la loi sur la protection des renseignements personnels des consommateurs de Californie et la manière de se conformer lors de la mise en oeuvre d’un nouveau projet AEM as a Cloud Service. '
+title: Règlement sur la protection des données et la confidentialité des données - Adobe Experience Manager en tant que base Cloud Service
+description: 'Découvrez comment l''Adobe Experience Manager en tant que soutien de la Fondation Cloud Service pour les divers règlements sur la protection des données et la confidentialité des données ; notamment le règlement général de l’UE sur la protection des données (RGPD), la loi sur la protection des renseignements personnels des consommateurs de Californie et la manière de se conformer lors de la mise en oeuvre d’un nouveau projet AEM en tant que Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 32%
@@ -96,7 +96,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 >[!NOTE]
 >
-> Pour AEM en tant que service Cloud, aucune procédure manuelle n’est disponible à partir de l’interface utilisateur pour la suppression d’un profil utilisateur, car CRXDE n’est pas accessible.
+>Pour AEM en tant que Cloud Service, aucune procédure manuelle n’est disponible à partir de l’interface utilisateur pour la suppression d’un profil utilisateur, car CRXDE n’est pas accessible.
 
 ### API HTTP {#http-api-1}
 
