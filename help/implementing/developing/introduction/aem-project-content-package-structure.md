@@ -2,7 +2,7 @@
 title: Structure de projet AEM
 description: Découvrez comment définir des structures de package en vue d’un déploiement sur Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: c2c6ee59849cbe041019e0a4395a499e81a671e0
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2530'
 ht-degree: 100%
@@ -36,7 +36,7 @@ Toutes les autres zones du référentiel (`/content`, `/conf`, `/var`, `/etc`, `
 
 >[!WARNING]
 >
-> Comme dans les versions précédentes d’AEM, `/libs` ne doit pas être modifié. Seul le code de produit AEM peut être déployé sur `/libs`.
+>Comme dans les versions précédentes d’AEM, `/libs` ne doit pas être modifié. Seul le code de produit AEM peut être déployé sur `/libs`.
 
 ### Index Oak {#oak-indexes}
 
@@ -503,7 +503,8 @@ Si plusieurs `/apps/*-packages` sont utilisés dans les cibles incorporées, ils
 ### Référentiels Maven tiers {#xml-3rd-party-maven-repositories}
 
 >[!WARNING]
-> L’ajout d’autres référentiels Maven peut rallonger les délais de création, car d’autres référentiels Maven seront vérifiés pour en déterminer les dépendances.
+>
+>L’ajout d’autres référentiels Maven peut rallonger les délais de création, car d’autres référentiels Maven seront vérifiés pour en déterminer les dépendances.
 
 Dans le fichier `pom.xml` du projet Reactor, ajoutez toute directive de référentiel Maven public tierce qui s’avère nécessaire. La configuration `<repository>` complète doit être disponible auprès du fournisseur de référentiels tiers.
 
