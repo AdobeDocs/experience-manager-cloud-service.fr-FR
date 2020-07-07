@@ -2,7 +2,7 @@
 title: Configuration des formulaires de recherche
 description: Configuration des formulaires de recherche pour Adobe Experience Manager as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2030'
 ht-degree: 100%
@@ -78,7 +78,7 @@ Les configurations par défaut (classées dans l’ordre alphabétique) disponib
 
 >[!NOTE]
 >
-> Pour plus d’informations sur les formulaires de recherche liés aux ressources, voir [Ressources – Facettes de recherche](/help/assets/search-facets.md)
+>Pour plus d’informations sur les formulaires de recherche liés aux ressources, voir [Ressources – Facettes de recherche](/help/assets/search-facets.md)
 
 
 ## Prédicats et paramètres associés {#predicates-and-their-settings}
@@ -491,11 +491,10 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
 
 >[!NOTE]
 >
->* Les prédicats de recherche courants sont définis dans :
-   >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+>Les prédicats de recherche courants sont définis dans :
+>  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->
-Ces informations sont proposées à des fins de référence seulement. Vous ne devez pas apporter de modifications au répertoire `/libs`.
+>Ces informations sont proposées à des fins de référence seulement. Vous ne devez pas apporter de modifications au répertoire `/libs`.
 
 <!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
