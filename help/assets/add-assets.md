@@ -2,10 +2,10 @@
 title: Ajout de vos ressources numériques à Adobe Experience Manager
 description: Ajout de vos ressources numériques à Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1358'
+ht-degree: 97%
 
 ---
 
@@ -24,9 +24,9 @@ Vous pouvez également choisir d’effectuer un traitement supplémentaire sur l
 
 >[!NOTE]
 >
-> Avec Experience Manager as a Cloud Service, vous disposez d’une nouvelle méthode de chargement de ressources appelée chargement binaire direct. Cette méthode est prise en charge par défaut par les clients et fonctionnalités standard du produit, comme l’interface utilisateur d’AEM, Adobe Asset Link et l’application de bureau AEM. Elle est donc transparente pour les utilisateurs finaux.
+>Avec Experience Manager as a Cloud Service, vous disposez d’une nouvelle méthode de chargement de ressources appelée chargement binaire direct. Cette méthode est prise en charge par défaut par les clients et fonctionnalités standard du produit, comme l’interface utilisateur d’AEM, Adobe Asset Link et l’application de bureau AEM. Elle est donc transparente pour les utilisateurs finaux.
 >
-> Le code de chargement personnalisé ou étendu par les équipes techniques des clients doit utiliser les nouvelles API et les nouveaux protocoles de chargement.
+>Le code de chargement personnalisé ou étendu par les équipes techniques des clients doit utiliser les nouvelles API et les nouveaux protocoles de chargement.
 
 ## Chargement des ressources {#upload-assets}
 
@@ -81,7 +81,7 @@ De plus, l’interface utilisateur d’Assets affiche la ressource la plus réce
 
 >[!NOTE]
 >
-> Pour charger des hiérarchies de dossiers imbriqués vers AEM, reportez-vous à la section concernant le [téléchargement massif de ressources](#bulk-upload).
+>Pour charger des hiérarchies de dossiers imbriqués vers AEM, reportez-vous à la section concernant le [téléchargement massif de ressources](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -136,7 +136,7 @@ Pour charger un plus grand nombre de fichiers, en particulier s’ils existent d
 
 >[!NOTE]
 >
-> Pour effectuer un téléchargement massif dans le cadre de la migration de contenu à partir d’autres systèmes lors de la configuration et du déploiement vers Experience Manager, la planification et le choix des outils doivent faire l’objet d’une attention particulière. Consultez le [guide de déploiement](/help/implementing/deploying/overview.md) pour en savoir plus sur les méthodes de migration de contenu.
+>Pour effectuer un téléchargement massif dans le cadre de la migration de contenu à partir d’autres systèmes lors de la configuration et du déploiement vers Experience Manager, la planification et le choix des outils doivent faire l’objet d’une attention particulière. Consultez le [guide de déploiement](/help/implementing/deploying/overview.md) pour en savoir plus sur les méthodes de migration de contenu.
 
 ## Chargement de ressources à l’aide de clients pour ordinateur de bureau {#upload-assets-desktop-clients}
 
@@ -163,7 +163,7 @@ De plus, si Dynamic Media est activé dans votre environnement :
 
 >[!NOTE]
 >
-> Le recadrage Dynamic Media et les autres opérations effectuées sur les ressources ne sont pas destructifs. En d’autres termes, ce type d’opération ne modifie pas l’élément original chargé, mais fournit des paramètres de recadrage ou de transformation des médias à effectuer lors de la diffusion des ressources.
+>Le recadrage Dynamic Media et les autres opérations effectuées sur les ressources ne sont pas destructifs. En d’autres termes, ce type d’opération ne modifie pas l’élément original chargé, mais fournit des paramètres de recadrage ou de transformation des médias à effectuer lors de la diffusion des ressources.
 
 Pour les dossiers auxquels un profil de traitement est affecté, le nom du profil s’affiche sur la vignette en mode Carte. En mode Liste, le nom du profil s’affiche dans la colonne **[!UICONTROL Profil de traitement.]**
 
