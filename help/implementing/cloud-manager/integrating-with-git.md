@@ -2,7 +2,7 @@
 title: Intégration de Git
 description: Intégration de Git - Cloud Services
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 100%
@@ -30,7 +30,7 @@ La série vidéo suppose une connaissance de base de la gestion de Git et de la 
 
 >[!NOTE]
 >
-> Les étapes et les conventions d’attribution de noms décrites dans cette série vidéo représentent quelques bonnes pratiques pour travailler avec un référentiel Git géré par le client et Cloud Manager. On s’attend à ce que les conventions et les workflows décrits soient adaptés aux équipes de développement individuelles.
+>Les étapes et les conventions d’attribution de noms décrites dans cette série vidéo représentent quelques bonnes pratiques pour travailler avec un référentiel Git géré par le client et Cloud Manager. On s’attend à ce que les conventions et les workflows décrits soient adaptés aux équipes de développement individuelles.
 
 ## Synchronisation initiale {#initial-sync}
 
