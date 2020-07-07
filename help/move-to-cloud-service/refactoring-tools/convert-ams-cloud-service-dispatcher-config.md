@@ -1,8 +1,8 @@
 ---
-title: Conversion d’une configuration AMS en configuration de Dispatcher Experience Manager as a Cloud Service
-description: Conversion d’une configuration AMS en configuration de Dispatcher Experience Manager as a Cloud Service
+title: Conversion d’une configuration AMS en configuration de Dispatcher Adobe Experience Manager as a Cloud Service
+description: Conversion d’une configuration AMS en configuration de Dispatcher Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1342'
 ht-degree: 100%
@@ -17,13 +17,13 @@ ht-degree: 100%
 Cette section contient des instructions étape par étape pour convertir une configuration AMS.
 
 >[!NOTE]
->Elle suppose que vous disposiez d’une archive possédant une structure similaire à celle décrite dans la section [Gestion des configurations du Dispatcher](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html).
+>Elle suppose que vous disposiez d’une archive possédant une structure similaire à celle décrite dans [Gestion des configurations du Dispatcher](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html).
 
 ## Étapes de conversion d’une configuration AMS en configuration de Dispatcher Adobe Experience Manager (AEM) as a Cloud Service
 
 1. **Extraire l’archive et supprimer tout préfixe**
 
-   Extrayez l’archive dans un dossier et assurez-vous que les sous-dossiers directs commencent par conf, conf.d, conf.dispatcher.d et conf.modules.d. Si tel n’est pas le cas, déplacez-les dans la hiérarchie.
+   Extrayez l’archive dans un dossier et assurez-vous que les premiers sous-dossiers commencent par conf, conf.d, conf.dispatcher.d et conf.modules.d. Si tel n’est pas le cas, déplacez-les vers le haut de la hiérarchie.
 
 1. **Supprimer les sous-dossiers et fichiers non utilisés**
 
@@ -50,7 +50,7 @@ supprimez-les ou mettez-les en commentaires. Les instructions de ces sections ne
 
    * Supprimez les fichiers nommés base_rewrite.rules et xforwarded_forcessl_rewrite.rules, et veillez à supprimer les instructions Include dans les fichiers d’hôtes virtuels qui y font référence.
 
-   * Si conf.d/rewrites contient maintenant un seul fichier, il doit être renommé en rewrite.rules. De plus, veillez à adapter les instructions Include se rapportant à ce fichier dans les fichiers d’hôtes virtuels.
+   * Si conf.d/rewrites contient maintenant un seul fichier, il doit être renommé rewrite.rules. De plus, veillez à adapter les instructions Include se rapportant à ce fichier dans les fichiers d’hôtes virtuels.
 
    * Cependant, si le dossier contient plusieurs fichiers spécifiques à l’hôte virtuel, leur contenu doit être copié dans l’instruction Include qui y fait référence dans les fichiers d’hôtes virtuels.
 
@@ -100,7 +100,7 @@ Si des erreurs s’affichent au sujet de fichiers d’inclusion manquants, véri
 
    Si conf.dispatcher.d/cache est vide, copiez dans ce dossier le fichier conf.dispatcher.d/cache/rules.any de la configuration du Dispatcher. La configuration Dispatcher standard se trouve dans le dossier src de ce SDK. N’oubliez pas d’adapter également les instructions $include qui font référence aux fichiers de règles ams_*_cache.any dans les fichiers de fermes.
 
-   En revanche, si conf.dispatcher.d/cache contient maintenant un seul fichier portant le suffixe _cache.any, il doit être renommé en rules.any. De plus, veillez à adapter les instructions $include se rapportant à ce fichier dans les fichiers de fermes.
+   En revanche, si conf.dispatcher.d/cache contient maintenant un seul fichier portant le suffixe _cache.any, il doit être renommé rules.any. De plus, veillez à adapter les instructions $include se rapportant à ce fichier dans les fichiers de fermes.
 
    Toutefois, si le dossier contient plusieurs fichiers spécifiques à la ferme avec ce modèle, leur contenu doit être copié dans l’instruction $include qui y fait référence dans les fichiers de fermes.
 
@@ -118,7 +118,7 @@ Si des erreurs s’affichent au sujet de fichiers d’inclusion manquants, véri
 
    Supprimez tout fichier portant le préfixe ams_.
 
-   En revanche, si conf.dispatcher.d/clientheaders contient maintenant un seul fichier portant le suffixe _clientheaders.any, il doit être renommé en clientheaders.any. De plus, veillez à adapter les instructions $include se rapportant à ce fichier dans les fichiers de fermes.
+   En revanche, si conf.dispatcher.d/clientheaders contient maintenant un seul fichier portant le suffixe _clientheaders.any, il doit être renommé clientheaders.any. De plus, veillez à adapter les instructions $include se rapportant à ce fichier dans les fichiers de fermes.
 
    Toutefois, si le dossier contient plusieurs fichiers spécifiques à la ferme avec ce modèle, leur contenu doit être copié dans l’instruction $include qui y fait référence dans les fichiers de fermes.
 
@@ -140,7 +140,7 @@ Si des erreurs s’affichent au sujet de fichiers d’inclusion manquants, véri
 
    * Supprimez tout fichier portant le préfixe ams_.
 
-   * Si conf.dispatcher.d/filters contient maintenant un seul fichier, il doit être renommé en filters.any. De plus, veillez à adapter les instructions $include se rapportant à ce fichier dans les fichiers de fermes.
+   * Si conf.dispatcher.d/filters contient maintenant un seul fichier, il doit être renommé filters.any. De plus, veillez à adapter les instructions $include se rapportant à ce fichier dans les fichiers de fermes.
 
    * Toutefois, si le dossier contient plusieurs fichiers spécifiques à la ferme avec ce modèle, leur contenu doit être copié dans l’instruction $include qui y fait référence dans les fichiers de fermes.
 
@@ -171,7 +171,7 @@ avec l’instruction :
 
    * Supprimez tout fichier portant le préfixe `ams_`.
 
-   * Si conf.dispatcher.d/virtualhosts contient maintenant un seul fichier, il doit être renommé en virtualhosts.any. De plus, veillez à adapter les instructions $include se rapportant à ce fichier dans les fichiers de fermes.
+   * Si conf.dispatcher.d/virtualhosts contient maintenant un seul fichier, il doit être renommé virtualhosts.any. De plus, veillez à adapter les instructions $include se rapportant à ce fichier dans les fichiers de fermes.
 
    * Toutefois, si le dossier contient plusieurs fichiers spécifiques à la ferme avec ce modèle, leur contenu doit être copié dans l’instruction $include qui y fait référence dans les fichiers de fermes.
 
@@ -179,7 +179,8 @@ avec l’instruction :
 
    * Dans chaque fichier de ferme, remplacez les instructions d’inclusion de filtre qui se présentent comme suit :
 
-      `$include "/etc/httpd/conf.dispatcher.d/vhosts/ams_publish_vhosts.any"`par l’instruction suivante :
+      `$include "/etc/httpd/conf.dispatcher.d/vhosts/ams_publish_vhosts.any"`
+par l’instruction suivante :
 
       `$include "../virtualhosts/default_virtualhosts.any"`
 
@@ -192,21 +193,22 @@ avec l’instruction :
 
    * Si des erreurs s’affichent au sujet de fichiers d’inclusion manquants, vérifiez si vous avez correctement renommé les fichiers en question.
 
-   * Si des erreurs s’affichent concernant une variable `PUBLISH_DOCROOT` non définie, renommez-la en `DOCROOT`.
+   * Si des erreurs s’affichent concernant une variable `PUBLISH_DOCROOT` non définie, renommez-la `DOCROOT`.
 
    * Pour toute autre erreur, consultez la section Dépannage de la documentation du programme de validation.
 
 ## Test de votre configuration avec un déploiement local {#testing-config-local-deployment}
 
 >[!IMPORTANT]
-> Le test de votre configuration avec un déploiement local nécessite l’installation de Docker.
+>
+>Le test de votre configuration avec un déploiement local nécessite l’installation de Docker.
 
 Grâce au script `docker_run.sh` des outils Dispatcher, vous pouvez tester si votre configuration ne contient aucune autre erreur qui ne s’afficherait que lors du déploiement :
 
 1. générer des informations de déploiement avec le programme de validation
 
    `validator full -d out`
-Cette opération valide la configuration complète et génère des informations de déploiement en entrée et en sortie
+Cette opération valide la configuration complète et génère les informations de déploiement en sortie (out).
 
 1. démarrer Dispatcher dans une image Docker avec ces informations de déploiement
 
