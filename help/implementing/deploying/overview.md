@@ -2,7 +2,7 @@
 title: Déploiement sur AEM as a Cloud Service
 description: 'Déploiement sur AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 6fee9a7abd17615c607f01b869a9c1eaed5793a3
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '3523'
 ht-degree: 99%
@@ -34,7 +34,7 @@ Il est essentiel de comprendre qu’AEM sera fréquemment mis à jour, potentiel
 
 >[!NOTE]
 >
-> Si vous avez envoyé le code personnalisé pour évaluation, puis que vous l’avez rejeté, la prochaine mise à jour d’AEM supprimera ces modifications afin de refléter la balise git de la dernière version de production réussie du client.
+>Si vous avez envoyé le code personnalisé pour évaluation, puis que vous l’avez rejeté, la prochaine mise à jour d’AEM supprimera ces modifications afin de refléter la balise git de la dernière version de production réussie du client.
 
 Une version plus complète sera publiée régulièrement, en mettant l’accent sur les ajouts et les améliorations de fonctionnalités qui auront un impact plus important sur l’expérience client par rapport aux versions quotidiennes. Cette version est déclenchée non pas par le déploiement d’un jeu de modifications important, mais par l’activation d’un changement de version, activant le code qui s’est accumulé au cours des jours ou des semaines précédents lors des mises à jour quotidiennes.
 
@@ -133,8 +133,11 @@ Dans les cas suivants, il est préférable d’utiliser l’approche du codage m
 * Création/suppression de groupes
 * Création/suppression d’utilisateurs
 * Ajout de listes de contrôle d’accès
-   > [!NOTE]
+
+   >[!NOTE]
+   >
    >La définition des listes de contrôle d’accès requiert que les structures de nœud soient déjà présentes. Par conséquent, il peut être nécessaire de créer au préalable des instructions de chemin.
+
 * Ajout d’un chemin (par exemple, pour les structures de dossiers racine)
 * Ajout de CND (définitions de types de nœuds)
 
