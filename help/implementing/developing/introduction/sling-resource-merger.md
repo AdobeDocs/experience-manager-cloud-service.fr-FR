@@ -2,7 +2,7 @@
 title: Utilisation de la fusion de ressources Sling en Adobe Experience Manager en tant que Cloud Service
 description: Sling Resource Merger propose des services pour accéder à des ressources et les fusionner.
 translation-type: tm+mt
-source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 46%
@@ -51,8 +51,9 @@ Sling Resource Merger est utilisé dans AEM pour deux raisons principales :
    >
    >
 * Les remplacements ne dépendent pas des chemins de recherche. Ils utilisent la propriété `sling:resourceSuperType` pour établir la connexion.
-   >  However, overrides are often defined under `/apps`, as best practice in AEM as a Cloud Service is to define customizations under `/apps`; this is because you must not change anything under `/libs`.
-
+>
+>
+However, overrides are often defined under `/apps`, as best practice in AEM as a Cloud Service is to define customizations under `/apps`; this is because you must not change anything under `/libs`.
 
 ### Propriétés {#properties}
 
