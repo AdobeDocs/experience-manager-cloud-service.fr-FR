@@ -2,7 +2,7 @@
 title: Configuration d’OSGi pour AEM as a Cloud Service
 description: 'Configuration d’OSGi à l’aide de valeurs secrètes et spécifiques aux environnements '
 translation-type: tm+mt
-source-git-commit: 2ab998c7acedecbe0581afe869817a9a56ec5474
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2689'
 ht-degree: 100%
@@ -36,9 +36,9 @@ un fichier de configuration OSGi est défini à l’adresse suivante :
 
 selon le format de configuration OSGi de cfg.json.
 
-> [!NOTE]
+>[!NOTE]
 >
-> Les versions antérieures d’AEM prenaient en charge les fichiers de configuration OSGi à l’aide de différents formats de fichiers tels que .cfg., .config, ainsi que sous la forme de définitions de ressources XML sling:OsgiConfig. Ces formats sont remplacés par le format de configuration OSGi cfg.json.
+>Les versions antérieures d’AEM prenaient en charge les fichiers de configuration OSGi à l’aide de différents formats de fichiers tels que .cfg., .config, ainsi que sous la forme de définitions de ressources XML sling:OsgiConfig. Ces formats sont remplacés par le format de configuration OSGi cfg.json.
 
 ## Résolution du mode d’exécution {#runmode-resolution}
 
@@ -539,9 +539,9 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --variable MY_VAR1 "
 $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_VAR2
 ```
 
-> [!NOTE]
+>[!NOTE]
 >
-> Voir [cette page](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) pour plus d’informations sur la configuration des valeurs à l’aide du plug-in d’interface de ligne de commande Adobe I/O de Cloud Manager.
+>Voir [cette page](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) pour plus d’informations sur la configuration des valeurs à l’aide du plug-in d’interface de ligne de commande Adobe I/O de Cloud Manager.
 
 ### Nombre de variables {#number-of-variables}
 
