@@ -3,7 +3,7 @@ title: Publication de ressources, de dossiers et de collections sur Brand Porta
 description: Publiez des ressources, des dossiers et des collections sur Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 100%
@@ -26,7 +26,6 @@ Si vous apportez des modifications ultérieures à la ressource, au dossier ou �
 >[!NOTE]
 >
 >Adobe recommande la publication décalée, de préférence en dehors des heures de pointe, de sorte que l’auteur AEM n’utilise pas une quantité excessive de ressources.
-
 
 ## Publication de ressources sur Brand Portal {#publish-assets-to-bp}
 
@@ -187,7 +186,6 @@ Vous pouvez publier des collections ou en annuler la publication à partir de vo
 >Les fragments de contenu ne peuvent pas être publiés sur Brand Portal. Par conséquent, si vous sélectionnez un ou plusieurs fragments de contenu dans Assets AEM, l’action **[!UICONTROL Publier sur Brand Portal]** n’est pas disponible.
 >
 >Si des collections contenant des fragments de contenu sont publiées sur Brand Portal à partir d’AEM Assets, alors tout le contenu du dossier, à l’exception des fragments de contenu, est répliqué sur l’interface Brand Portal.
-
 
 ### Publication de collections {#publish-collections}
 
