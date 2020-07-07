@@ -2,7 +2,7 @@
 title: Dispatcher en mode cloud
 description: 'Dispatcher en mode cloud '
 translation-type: tm+mt
-source-git-commit: 6951b6ff255513f5865e1f92a09c5ac439271a26
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '3914'
 ht-degree: 96%
@@ -17,10 +17,12 @@ ht-degree: 96%
 Cette section décrit comment structurer les configurations Apache et Dispatcher d’AEM as a Cloud Service. Elle explique également comment valider et exécuter le service localement avant son déploiement dans les environnements cloud. Elle présente en outre le débogage dans les environnements cloud. Pour plus d’informations sur Dispatcher, consultez la [documentation d’AEM Dispatcher](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html).
 
 >[!NOTE]
+>
 >Les utilisateurs de Windows devront utiliser Windows 10 Professionnel ou d’autres distributions prenant en charge Docker. Il s’agit d’un prérequis pour l’exécution et le débogage de Dispatcher sur un ordinateur local. Les sections ci-dessous incluent des commandes utilisant les versions Mac ou Linux du SDK, mais le SDK Windows peut être utilisé de la même manière.
 
 >[!WARNING]
-> Utilisateurs de Windows : la version actuelle des outils Dispatcher locaux d’AEM as a Cloud Service (v2.0.20) est incompatible avec Windows. Contactez l’[assistance Adobe](https://daycare.day.com/home.html) pour recevoir des informations sur la compatibilité avec Windows.
+>
+>Utilisateurs de Windows : la version actuelle des outils Dispatcher locaux d’AEM as a Cloud Service (v2.0.20) est incompatible avec Windows. Contactez l’[assistance Adobe](https://daycare.day.com/home.html) pour recevoir des informations sur la compatibilité avec Windows.
 
 ## Outils Dispatcher {#dispatcher-sdk}
 
