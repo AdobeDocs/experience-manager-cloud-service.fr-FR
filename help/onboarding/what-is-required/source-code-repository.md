@@ -1,8 +1,8 @@
 ---
-title: Référentiel de code source - Services Cloud
-description: Référentiel de code source - Services Cloud
+title: Référentiel du code source - Cloud Service
+description: Référentiel du code source - Cloud Service
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 23%
@@ -26,4 +26,4 @@ $ git clone {URL}
 
 >[!NOTE]
 >
-> Un utilisateur peut extraire une copie de son code et effectuer des modifications dans le référentiel de code local. Une fois prêt, l’utilisateur peut valider les modifications de code dans le référentiel de code distant dans Cloud Manager.
+>Un utilisateur peut extraire une copie de son code et effectuer des modifications dans le référentiel de code local. Une fois prêt, l’utilisateur peut valider les modifications de code dans le référentiel de code distant dans Cloud Manager.
