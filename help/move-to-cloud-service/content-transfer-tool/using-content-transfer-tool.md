@@ -2,7 +2,7 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 99%
@@ -238,7 +238,8 @@ Si l’absence d’ID d’objets blob est signalée, comme indiqué ci-dessous, 
 La commande suivante est exécutée
 
 >[!NOTE]
-> `--verbose` (indicateur) est nécessaire pour signaler les chemins d’accès aux nœuds permettant de référencer les objets blob.
+>
+>`--verbose`(indicateur) est nécessaire pour signaler les chemins d’accès aux nœuds permettant de référencer les objets blob.
 
 **Pour les référentiels AEM 6.5 (Oak 1.8 et versions antérieures)**
 
