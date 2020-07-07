@@ -2,7 +2,7 @@
 title: Recherche et indexation de contenu
 description: Recherche et indexation de contenu
 translation-type: tm+mt
-source-git-commit: 093883d0afe62bf9d1d08f82180eccd3f75bca05
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1475'
 ht-degree: 3%
@@ -72,7 +72,7 @@ Le package de l&#39;exemple ci-dessus est créé comme `com.adobe.granite:new-in
 
 >[!NOTE]
 >
-> Il existe un problème connu avec Jackrabbit Filevault Maven Package Plugin version **1.1.0** qui ne vous permet pas d&#39;ajouter `oak:index` aux modules de `<packageType>application</packageType>`. Pour contourner ce problème, utilisez la version **1.0.4**.
+>Il existe un problème connu avec Jackrabbit Filevault Maven Package Plugin version **1.1.0** qui ne vous permet pas d&#39;ajouter `oak:index` aux modules de `<packageType>application</packageType>`. Pour contourner ce problème, utilisez la version **1.0.4**.
 
 Les définitions d’index sont désormais marquées comme personnalisées et avec version :
 
@@ -124,7 +124,7 @@ Le tableau suivant présente 5 définitions d’index : index `cqPageLucene` est
 
 >[!NOTE]
 >
-> `<indexName>-custom-<customerVersionNumber>` est nécessaire pour qu’AEM en tant que Cloud Service le marque comme remplacement d’un index existant.
+>`<indexName>-custom-<customerVersionNumber>` est nécessaire pour qu’AEM en tant que Cloud Service le marque comme remplacement d’un index existant.
 
 | Index | Index prêt à l&#39;emploi | Utilisation dans la version 1 | Utilisation dans la version 2 |
 |---|---|---|---|
