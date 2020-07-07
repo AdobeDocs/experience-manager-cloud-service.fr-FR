@@ -2,7 +2,7 @@
 title: Prise en charge IMS d’Adobe Experience Manager as a Cloud Service
 description: Prise en charge IMS d’Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: c03e219d8261451e1215cf95babcbd4c1862d321
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 100%
@@ -91,7 +91,7 @@ L’outil de synchronisation des utilisateurs est distribué via le référentie
 
 >[!NOTE]
 >
-> Une version préliminaire **2.4RC1** avec prise en charge de la création de groupe dynamique est disponible [ici](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1).
+>Une version préliminaire **2.4RC1** avec prise en charge de la création de groupe dynamique est disponible [ici](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1).
 
 Cette version a pour principales fonctionnalités la possibilité de mapper de manière dynamique les nouveaux groupes LDAP pour l’appartenance des utilisateurs à Admin Console, ainsi que la création dynamique de groupes d’utilisateurs.
 
@@ -159,7 +159,8 @@ Pour les autres utilisateurs, la connexion via IMS peut être utilisée une fois
 
 
 >[!NOTE]
-> Tout utilisateur peut être créé dans IMS à l’aide d’un Adobe ID ou d’un Federated ID. Si un utilisateur est configuré à l’aide d’un Adobe ID, il est authentifié lors de la connexion à l’aide du fournisseur d’identité de son entreprise.
+>
+>Tout utilisateur peut être créé dans IMS à l’aide d’un Adobe ID ou d’un Federated ID. Si un utilisateur est configuré à l’aide d’un Adobe ID, il est authentifié lors de la connexion à l’aide du fournisseur d’identité de son entreprise.
 
 Il est alors redirigé vers l’écran de connexion IMS et il doit saisir ses informations d’identification :
 
