@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service et directives d’accessibilité web
 description: Introduction à Adobe Experience Manager as a Cloud Service et directives d’accessibilité web
 translation-type: tm+mt
-source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 100%
@@ -28,7 +28,7 @@ Adobe Experience Manager as a Cloud Service fonctionne selon les [directives](
 
 >[!NOTE]
 >
-> Pour plus d’informations, consultez la section [Rapports de conformité à l’accessibilité pour les solutions Adobe](https://www.adobe.com/accessibility/compliance.html).
+>Pour plus d’informations, voir [Rapports de conformité à l’accessibilité pour les solutions Adobe](https://www.adobe.com/accessibility/compliance.html).
 
 ## World Wide Web Consortium {#world-wide-web-consortium}
 
@@ -49,7 +49,7 @@ En utilisant Adobe Experience Manager, les auteurs de contenu et/ou les propri
 * La section [Création de contenu accessible](/help/sites-cloud/authoring/fundamentals/accessible-content.md) détaille la manière dont ces aspects se rapportent à AEM.
 
 >[!NOTE]
-> 
+>
 >Lors de la création de votre site, vous devez déterminer à quel niveau général il doit se conformer.
 
 <!--
@@ -62,7 +62,7 @@ En utilisant Adobe Experience Manager, les auteurs de contenu et/ou les propri
   Adobe Experience Manager (AEM) includes a number of features and capabilities that enhance the usability of adaptive forms for users with different abilities. The solution also assists form authors in creating accessible adaptive forms.
 -->
 
-## L’accessibilité chez Adobe   {#accessibility-at-adobe}
+## L’accessibilité chez Adobe  {#accessibility-at-adobe}
 
 Pour plus d’informations, consultez le [Centre de ressources sur l’accessibilité Adobe](https://www.adobe.com/accessibility/).
 
