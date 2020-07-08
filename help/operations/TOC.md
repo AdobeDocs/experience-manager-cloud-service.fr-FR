@@ -2,10 +2,10 @@
 sub-product: Opérations et maintenance sur AEM as a Cloud Service
 user-guide-title: Opérations et maintenance sur AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 61263c10257606040d5d42c4b6a6f9bc6eeb7c4a
+source-git-commit: be817ff8265d9d45a80557c0e44949ba6562993c
 workflow-type: tm+mt
-source-wordcount: '40'
-ht-degree: 100%
+source-wordcount: '42'
+ht-degree: 95%
 
 ---
 
@@ -17,4 +17,4 @@ ht-degree: 100%
 + [Service de réplication de contenu](replication.md)
 + [Tâches de maintenance](maintenance.md)
 + [Sauvegarde et restauration](backup.md)
-
++ [Tâches asynchrones](asynchronous-jobs.md)
