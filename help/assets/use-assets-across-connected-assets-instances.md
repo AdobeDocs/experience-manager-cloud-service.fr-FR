@@ -3,7 +3,7 @@ title: Utilisez des ressources connectées pour partager des ressources DAM dans
 description: Utilisez des ressources disponibles pour un déploiement  [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites]  à distance.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5e89a44cb727547af9db783662e035c4e2102a4e
+source-git-commit: be817ff8265d9d45a80557c0e44949ba6562993c
 workflow-type: tm+mt
 source-wordcount: '2049'
 ht-degree: 100%
@@ -92,6 +92,7 @@ Pour configurer la connectivité des ressources connectées et des [!DNL Sites] 
    1. Sélectionnez le lanceur de workflow puis cliquez sur **[!UICONTROL Propriétés]** dans la barre d’actions.
 
    1. Dans l’assistant [!UICONTROL Propriétés], modifiez les champs **[!UICONTROL Chemin]** en fonction des mappages suivants pour mettre à jour leurs expressions régulières afin d’exclure le point de montage **[!UICONTROL connectedassets]**.
+
    | Avant | Après |
    | ------------------------------------------------------- | -------------------------------------------------------------------------- |
    | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
@@ -138,13 +139,13 @@ Utilisez la configuration ci-dessus pour découvrir l’expérience de création
 
    *Figure : Options de filtrage des types de documents et des images lors de la recherche de fichiers sur DAM distant.*
 
-1. Un auteur de site est informé de la récupération asynchrone d’une ressource et de l’échec d’une tâche de récupération. Les auteurs peuvent consulter les informations détaillées sur la récupération des tâches et des erreurs dans l’[interface utilisateur](/help/assets/asynchronous-jobs.md) des tâches asynchrones pendant, voire après la création.
+1. Un auteur de site est informé de la récupération asynchrone d’une ressource et de l’échec d’une tâche de récupération. Les auteurs peuvent consulter les informations détaillées sur la récupération des tâches et des erreurs dans l’[interface utilisateur](/help/operations/asynchronous-jobs.md) des tâches asynchrones pendant, voire après la création.
 
    ![Notification concernant la récupération asynchrone en arrière-plan des ressources.](assets/assets_async_transfer_fails.png)
 
    *Figure : Notification concernant la récupération asynchrone en arrière-plan des ressources.*
 
-1. [!DNL Experience Manager] affiche la liste complète des ressources utilisées sur une page lorsqu’elle est publiée. Veillez à bien récupérer les fichiers distants au moment de la publication. Pour vérifier l’état de chaque ressource récupérée, reportez-vous à l’interface utilisateur des [tâches asynchrones](/help/assets/asynchronous-jobs.md).
+1. [!DNL Experience Manager] affiche la liste complète des ressources utilisées sur une page lorsqu’elle est publiée. Veillez à bien récupérer les fichiers distants au moment de la publication. Pour vérifier l’état de chaque ressource récupérée, reportez-vous à l’interface utilisateur des [tâches asynchrones](/help/operations/asynchronous-jobs.md).
 
    >[!NOTE]
    >
@@ -188,4 +189,4 @@ Les ressources récupérées peuvent être utilisées comme n’importe quelle a
 Pour résoudre les problèmes liés aux scénarios d’erreur courants, procédez comme suit :
 
 * Si vous ne pouvez pas rechercher des ressources distantes à partir de l’[!UICONTROL outil de recherche de contenu], vérifiez à nouveau que les rôles et autorisations requis sont bien appliqués.
-* Une ressource récupérée sur un DAM distant risque de ne pas être publiée sur une page web pour les raisons suivantes : elle n’existe pas à distance, au même titre que les autorisations appropriées pour la récupérer ; une erreur réseau s’est produite. Veillez à ne pas supprimer la ressource du DAM distant, ni à modifier les autorisations. Assurez-vous également que les conditions préalables appropriées sont remplies. Réessayez d’ajouter cette ressource à la page et de la publier de nouveau. Recherchez dans la [liste des tâches asynchrones](/help/assets/asynchronous-jobs.md) les erreurs de récupération de ressources.
+* Une ressource récupérée sur un DAM distant risque de ne pas être publiée sur une page web pour les raisons suivantes : elle n’existe pas à distance, au même titre que les autorisations appropriées pour la récupérer ; une erreur réseau s’est produite. Veillez à ne pas supprimer la ressource du DAM distant, ni à modifier les autorisations. Assurez-vous également que les conditions préalables appropriées sont remplies. Réessayez d’ajouter cette ressource à la page et de la publier de nouveau. Recherchez dans la [liste des tâches asynchrones](/help/operations/asynchronous-jobs.md) les erreurs de récupération de ressources.
