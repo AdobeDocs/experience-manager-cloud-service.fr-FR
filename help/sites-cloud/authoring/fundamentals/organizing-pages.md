@@ -2,10 +2,10 @@
 title: Création et organisation des pages
 description: Comment créer et organiser des pages avec AEM
 translation-type: tm+mt
-source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
+source-git-commit: b9c7e476ad8efebeff44d88302484893edbf1469
 workflow-type: tm+mt
-source-wordcount: '2357'
-ht-degree: 100%
+source-wordcount: '2550'
+ht-degree: 92%
 
 ---
 
@@ -369,6 +369,27 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
 <!--
 >A page can only be moved to a location where the template upon which the page is based is allowed. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
 -->
+
+#### Actions asynchrones {#asynchronous-actions}
+
+Normalement, une action de déplacement ou de changement de nom de page est exécutée immédiatement. Ceci est considéré comme un traitement synchrone et toute action supplémentaire dans l’interface utilisateur est bloquée jusqu’à ce que l’action soit terminée.
+
+Cependant, si le nombre de pages affectées est supérieur à une limite définie, l’action est traitée de manière asynchrone, ce qui permet à l’utilisateur de continuer à créer dans l’interface utilisateur sans être entravé par l’action de déplacement ou de changement de nom de page.
+
+* Lorsque vous cliquez sur **Déplacer** à la dernière étape ci-dessus, AEM vérifie la limite configurée.
+* Si le nombre de pages affectées est inférieur à la limite, il effectue une opération synchrone.
+* Si le nombre de pages affectées est supérieur à la limite, il effectue une opération asynchrone.
+   * L’utilisateur doit définir quand l’opération asynchrone doit être effectuée.
+      * **Désormais** , l’exécution de la tâche asynchrone commence immédiatement.
+      * **Par la suite** , l’utilisateur peut définir le moment où la tâche asynchrone sera début.
+
+         ![Déplacement de page asynchrone](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
+
+L’état des tâches asynchrones peut être vérifié dans le tableau de bord [**État **des tâches](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)asynchrones à la navigation****globale ->** Outils **-> Opérations -> Tâches********
+
+>[!NOTE]
+>
+>Pour plus d’informations sur le traitement asynchrone des tâches et sur la manière de configurer la limite pour les actions de déplacement/changement de nom de page, consultez le document des tâches [](/help/operations/asynchronous-jobs.md) asynchrones dans le guide de l’utilisateur Opérations.
 
 ### Suppression d’une page {#deleting-a-page}
 
