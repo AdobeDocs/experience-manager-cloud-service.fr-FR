@@ -2,9 +2,9 @@
 title: Projet d’application AEM - Cloud Service
 description: Projet d’application AEM - Cloud Service
 translation-type: tm+mt
-source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
+source-git-commit: e3370b7a7f543ae93b25ead8c174796fd27067f2
 workflow-type: tm+mt
-source-wordcount: '1255'
+source-wordcount: '1251'
 ht-degree: 86%
 
 ---
@@ -94,16 +94,17 @@ Pour ce faire, dans le fichier pom.xml, ajoutez une `<plugin>` entrée qui resse
             <configuration>
                 <toolchains>
                     <jdk>
-                    <version>11</version>
-                    <vendor>oracle</vendor>
+                        <version>11</version>
+                        <vendor>oracle</vendor>
                     </jdk>
                 </toolchains>
             </configuration>
-        </plugin>
 ```
 
 >[!NOTE]
->Les fournisseurs pris en charge sont Oracle et Sun Microsystems et les versions prises en charge sont 1.8, 1.11 et 11.
+>* Les fournisseurs pris en charge sont `oracle` et `sun`.
+>* Les versions prises en charge sont `1.8`, `1.11`et `11`.
+
 
 ## Variables d’environnement {#environment-variables}
 
