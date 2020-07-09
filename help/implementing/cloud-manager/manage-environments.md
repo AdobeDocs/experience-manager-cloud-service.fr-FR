@@ -2,10 +2,10 @@
 title: Gestion des environnements - Cloud Service
 description: Gestion des environnements - Cloud Service
 translation-type: tm+mt
-source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
+source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 100%
+source-wordcount: '695'
+ht-degree: 95%
 
 ---
 
@@ -40,8 +40,7 @@ Un utilisateur disposant des autorisations requises peut créer les types d’en
 
 
 1. Cliquez sur **Ajouter un environnement** pour ajouter un environnement. Ce bouton sera accessible à l’aide de l’écran **Environnements**.
-   ![](assets/no-environment-2.png)
-
+   ![](assets/environments-tab.png)
 
    L’option **Ajouter un environnement** est également disponible sur la carte **Environnements** lorsqu’il n’y a aucun environnement dans le programme.
 
@@ -73,12 +72,12 @@ Les mises à jour des environnements de développement sont gérées par les uti
 ![](assets/manage-environments2.png)
 
 
-L’option **Mettre à jour** est disponible dans le menu déroulant de la carte **Environnements**.
+L’option **Mettre à jour** est disponible à partir de la **carte d’Environnements** .
 Cette option est également disponible à partir du bouton **Gérer** si vous cliquez sur **Détails** dans la carte **Environnements**.
 
-![](assets/update-environment2.png)
+![](assets/environments-screen-update.png)
 
-Si vous sélectionnez cette option dans le menu déroulant, un gestionnaire de déploiement pourra mettre à jour le pipeline associé à cet environnement vers la dernière version, puis exécuter le pipeline.
+La sélection de cette option permet à Deployment Manager de mettre à jour le pipeline associé à cet environnement vers la dernière version, puis d&#39;exécuter le pipeline.
 
 Si le pipeline a déjà été mis à jour, l’utilisateur est invité à exécuter le pipeline.
 
@@ -92,15 +91,15 @@ Cette option est également disponible à partir du bouton **Gérer** si vous cl
 ![](assets/deleting-environment1.png)
 
 >[!NOTE]
-Cette fonction n’est pas disponible pour l’environnement de production/d’évaluation défini dans un programme normal, configuré à des fins de production. Cette fonction est toutefois disponible pour les environnements de production/d’évaluation dans un programme Sandbox.
+Cette fonction n’est pas disponible pour l’environnement de production/d’évaluation défini dans une configuration de programme normale à des fins de production. Cette fonction est toutefois disponible pour les environnements de production/d’évaluation dans un programme Sandbox.
 
-## Accès à la Console développeur {#accessing-developer-console}
+## Accès à Developer Console {#accessing-developer-console}
 
-Sélectionnez **Console développeur** dans le menu déroulant de la carte **Environnements**. Un nouvel onglet s’ouvre alors dans votre navigateur, contenant la page de connexion à la **Console développeur**.
+Sélectionnez **Developer Console** dans le menu déroulant de la carte **Environnements**. Un nouvel onglet s’ouvre alors dans votre navigateur, contenant la page de connexion à **Developer Console**.
 
-Seul un utilisateur possédant le rôle de développeur aura accès à la **Console développeur**. L’exception concerne les programmes Sandbox, où tout utilisateur ayant accès au programme Cloud Manager Sandbox aura accès à la **Console développeur**.
+Seul un utilisateur possédant le rôle de développeur aura accès à **Developer Console**. L’exception concerne les programmes Sandbox, où tout utilisateur ayant accès au programme Cloud Manager Sandbox aura accès à **Developer Console**.
 
-Pour plus d’informations, consultez la section [Mise en hibernation et déshibernation des environnements Sandbox](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction).
+Pour plus d’informations, voir [Mise en hibernation et déshibernation des environnements Sandbox](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction).
 
 
 ![](assets/dev-console1.png)
