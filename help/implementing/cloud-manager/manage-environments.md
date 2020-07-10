@@ -2,10 +2,10 @@
 title: Gestion des environnements - Cloud Service
 description: Gestion des environnements - Cloud Service
 translation-type: tm+mt
-source-git-commit: 11ea429fefcb4b38aa8a89acb3a5a2da5c3ecaeb
+source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 91%
+source-wordcount: '753'
+ht-degree: 80%
 
 ---
 
@@ -73,7 +73,7 @@ Les mises à jour des environnements de développement sont gérées par les uti
 
 
 L’option **Mettre à jour** est disponible à partir de la **carte d’Environnements** .
-Cette option est également disponible à partir du bouton **Gérer** si vous cliquez sur **Détails** dans la carte **Environnements**.
+This option is also available, if you click on **Details** from the **Environments** card. La page **Environnements** s’ouvre et une fois que vous avez sélectionné l’environnement de développement, cliquez sur **...** et sélectionnez **Mettre à jour**, comme illustré dans la figure ci-dessous :
 
 ![](assets/environments-screen-update.png)
 
@@ -89,7 +89,7 @@ L’option **Supprimer** est disponible dans le menu déroulant de la carte **En
 
 ![](assets/environ-delete.png)
 
-Vous pouvez également supprimer un environnement si vous cliquez sur **Détails** dans la carte **Environnements** .
+L’option de suppression est également disponible si vous cliquez sur **Détails** dans la carte **Environnements** . La page **Environnements** s’ouvre et une fois que vous avez sélectionné l’environnement de développement, cliquez sur **...** et sélectionnez **Supprimer**, comme illustré dans la figure ci-dessous :
 
 ![](assets/environ-delete-2.png)
 
@@ -108,5 +108,5 @@ Pour plus d’informations, voir [Mise en hibernation et déshibernation des env
 
 ![](assets/environ-dev-console.png)
 
-Vous pouvez également sélectionner cette option à partir du bouton **Gérer** en cliquant sur **Détails** dans la carte **Environnements**.
+This option is also available, if you click on **Details** from the **Environments** card. La page **Environnements** s&#39;ouvre et une fois que vous avez sélectionné un environnement, cliquez sur **...** et sélectionnez Console **** développeur.
 
