@@ -2,9 +2,9 @@
 title: Règlement sur la protection des données et la confidentialité des données - Adobe Experience Manager en tant que site Cloud Service Prêt
 description: 'Découvrez comment l''Adobe Experience Manager en tant que site Cloud Service prend en charge les divers règlements sur la protection des données et la confidentialité des données ; notamment le règlement général de l’UE sur la protection des données (RGPD), la loi sur la protection des renseignements personnels des consommateurs de Californie et la manière de se conformer lors de la mise en oeuvre d’un nouveau projet AEM en tant que Cloud Service. '
 translation-type: tm+mt
-source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
+source-git-commit: 7b5a427853075054d56bc7ea6569d5d839e282a1
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1036'
 ht-degree: 43%
 
 ---
@@ -68,13 +68,9 @@ Pour exclure :
       Inscription - Incluez-moi dans l&#39;agrégation et l&#39;analyse des sessions de visiteur (n&#39;installez pas le cookie `amcglobal.sc.omtrdc.net` d&#39;exclusion) - Cliquez ici.
    Suivez les étapes ci-dessus pour accéder aux liens réels.
 
-   <!--
-    NOTE TO WRITER: Change link to https://www.adobe.com/legal/terms.html and edit note.
-    -->
-
    >[!NOTE]
    >
-   > Il y a une autre description dans la section Politique **de** confidentialité des [Conditions d&#39;utilisation](https://marketing.adobe.com/resources/help/fr_FR/terms.html).
+   > Le **2 contient une autre description. Confidentiel.** de la section Conditions d&#39;utilisation [générales de l&#39;](https://www.adobe.com/fr/legal/terms.html)Adobe.
 
 ## Fondation Analytics {#analytics-foundation}
 
@@ -177,6 +173,7 @@ Pour afficher un aperçu de la persistance utilisée par ContextHub, l’utilisa
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
+
       Le magasin ContextHub définit la couche de persistance utilisée pour afficher l’état actuel de la persistance. Toutes les couches devraient être cochées.
 
 
@@ -206,6 +203,7 @@ Pour afficher un aperçu de la persistance utilisée par ContextHub, l’utilisa
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
+
       Le magasin ContextHub définit la couche de persistance utilisée pour afficher l’état actuel de la persistance. Toutes les couches devraient être cochées.
 
 
