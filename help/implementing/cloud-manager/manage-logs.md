@@ -2,7 +2,7 @@
 title: Gérer les journaux - Cloud Service
 description: Gérer les journaux - Cloud Service
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 100%
@@ -20,7 +20,7 @@ Ces fichiers peuvent être téléchargés soit par le biais de l’interface uti
 
 Ou encore à partir de la page **Environnements** :
 
-![](assets/manage-logs2.png)
+![](assets/download-logs.png)
 
 >[!NNote]
 >Quel que soit l’emplacement d’ouverture, la même boîte de dialogue s’affiche et permet de télécharger un fichier journal.
