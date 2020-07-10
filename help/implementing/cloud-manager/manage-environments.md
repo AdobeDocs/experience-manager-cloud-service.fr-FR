@@ -2,10 +2,10 @@
 title: Gestion des environnements - Cloud Service
 description: Gestion des environnements - Cloud Service
 translation-type: tm+mt
-source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
+source-git-commit: 11ea429fefcb4b38aa8a89acb3a5a2da5c3ecaeb
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 95%
+source-wordcount: '702'
+ht-degree: 91%
 
 ---
 
@@ -69,7 +69,7 @@ Les mises à jour des environnements Test et Production sont gérées automatiqu
 
 Les mises à jour des environnements de développement sont gérées par les utilisateurs du programme. Lorsqu’un environnement n’exécute pas la dernière version d’AEM disponible pour le public, l’état de la carte Environnements sur l’écran d’accueil affiche **MISE À JOUR DISPONIBLE**.
 
-![](assets/manage-environments2.png)
+![](assets/update-environ-1.png)
 
 
 L’option **Mettre à jour** est disponible à partir de la **carte d’Environnements** .
@@ -85,10 +85,14 @@ Si le pipeline a déjà été mis à jour, l’utilisateur est invité à exécu
 
 Un utilisateur disposant des autorisations requises peut supprimer un environnement de développement.
 
-L’option **Supprimer** est disponible dans le menu déroulant de la carte **Environnements**.
-Cette option est également disponible à partir du bouton **Gérer** si vous cliquez sur **Détails** dans la carte **Environnements**.
+L’option **Supprimer** est disponible dans le menu déroulant de la carte **Environnements.** Cliquez sur **...** pour un environnement de développement que vous souhaitez supprimer.
 
-![](assets/deleting-environment1.png)
+![](assets/environ-delete.png)
+
+Vous pouvez également supprimer un environnement si vous cliquez sur **Détails** dans la carte **Environnements** .
+
+![](assets/environ-delete-2.png)
+
 
 >[!NOTE]
 Cette fonction n’est pas disponible pour l’environnement de production/d’évaluation défini dans une configuration de programme normale à des fins de production. Cette fonction est toutefois disponible pour les environnements de production/d’évaluation dans un programme Sandbox.
@@ -102,7 +106,7 @@ Seul un utilisateur possédant le rôle de développeur aura accès à **Develop
 Pour plus d’informations, voir [Mise en hibernation et déshibernation des environnements Sandbox](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction).
 
 
-![](assets/dev-console1.png)
+![](assets/environ-dev-console.png)
 
 Vous pouvez également sélectionner cette option à partir du bouton **Gérer** en cliquant sur **Détails** dans la carte **Environnements**.
 
