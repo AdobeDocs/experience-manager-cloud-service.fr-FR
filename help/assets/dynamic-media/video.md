@@ -2,10 +2,10 @@
 title: Vidéo
 description: Découvrez comment utiliser la vidéo dans Dynamic Media
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: d59b193730e2135390386eab8ef83abae5f7eac0
 workflow-type: tm+mt
-source-wordcount: '10146'
-ht-degree: 99%
+source-wordcount: '10058'
+ht-degree: 98%
 
 ---
 
@@ -426,7 +426,6 @@ Pour garantir une authentification serveur à serveur sécurisée avec YouTube, 
 1. [Configuration des paramètres de Google Cloud](#configuring-google-cloud-settings)
 1. [Création d’une chaîne YouTube](#creating-a-youtube-channel)
 1. [Ajout de balises pour la publication](#adding-tags-for-publishing)
-1. [Activation de l’agent de réplication de publication YouTube](#enabling-the-youtube-publish-replication-agent)
 1. [Configuration de YouTube dans AEM](#setting-up-youtube-in-aem)
 1. [(Facultatif) Automatisation de la définition des propriétés YouTube par défaut pour vos vidéos chargées](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
 1. [Publication de vidéos sur votre chaîne YouTube](#publishing-videos-to-your-youtube-channel)
@@ -565,19 +564,21 @@ Pour créer une chaîne YouTube :
 
 Pour publier vos vidéos sur YouTube, AEM associe des balises à une ou plusieurs chaînes YouTube. Pour ajouter des balises pour la publication, voir [Administration des balises](/help/sites-cloud/authoring/features/tags.md).
 
-Ou, si vous prévoyez d’utiliser les balises par défaut dans AEM, vous pouvez ignorer cette tâche et accéder à [Activation de l’agent de réplication de publication YouTube](#enabling-the-youtube-publish-replication-agent).
+Or, if you intend to use the default tags in AEM, you can skip this task and go to [Setting up YouTube in AEM](#setting-up-youtube-in-aem).
 
-### Activation de l’agent de réplication de publication YouTube {#enabling-the-youtube-publish-replication-agent}
+>[!NOTE]
+>
+>Une fois le service cloud configuré, aucune configuration supplémentaire n’est nécessaire pour activer l’agent de réplication de publication YouTube en tant que tel. La raison en est qu’elle a été activée lors de l’enregistrement de la configuration du service cloud.
 
-Après avoir activé l’agent de réplication de publication YouTube, si vous souhaitez tester la connexion au compte Google Cloud, appuyez sur **[!UICONTROL Tester la connexion]**. Un onglet de navigateur affiche les résultats de la connexion. Si vous avez ajouté des chaînes YouTube, une liste de ces chaînes s’affiche dans le cadre du test.
+<!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
-1. Dans l’angle supérieur gauche d’AEM, cliquez sur le logo AEM, puis dans le rail de gauche, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Réplication]** > **[!UICONTROL Agents sur l’auteur]**.
-1. Sur la page Agents sur auteur, cliquez sur **[!UICONTROL Publication YouTube (YouTube)]**.
-1. Dans la barre d’outils, à droite de Paramètres, cliquez sur **[!UICONTROL Modifier]**.
-1. Cochez la case **[!UICONTROL Activé]** pour activer l’agent de réplication.
-1. Cliquez sur **[!UICONTROL OK]**.
+After you enable the YouTube Publish replication agent, if you want to test the connection to the Google Cloud account, tap **[!UICONTROL Test Connection]**. A browser tab displays the connection results. If you have added YouTube Channels, then a listing of those is displayed as part of the test.
 
-   Vous allez maintenant installer YouTube dans AEM.
+1. In the upper-left corner of AEM, click the AEM logo, then in the left rail, click **[!UICONTROL Tools]** &gt; **[!UICONTROL Deployment]** &gt; **[!UICONTROL Replication]** &gt; **[!UICONTROL Agents on Author]**.
+1. On the Agents of Author page, click **[!UICONTROL YouTube Publish (youtube)]**.
+1. On the toolbar, to the right of Settings, click **[!UICONTROL Edit]**.
+1. Select the **[!UICONTROL Enabled]** checkbox to turn on the replication agent.
+1. Click **[!UICONTROL OK]**. -->
 
 ### Configuration de YouTube dans AEM  {#setting-up-youtube-in-aem}
 
@@ -750,17 +751,14 @@ Vous devez maintenant associer les balises que vous avez précédemment ajoutée
 >
 >Notez que la publication immédiate n’est pas automatiquement publiée sur YouTube. Lorsque Dynamic Media est configuré, il existe deux options de publication parmi lesquelles choisir : **[!UICONTROL Immédiatement]** ou **[!UICONTROL Lors de l’activation]**.
 >
->Dans le mode de publication **[!UICONTROL Immédiatement]**, la ressource téléchargée (une fois synchronisée avec IPS) est automatiquement publiée sur le système de diffusion. Cela vaut pour Dynamic Media, mais pas pour YouTube. Pour publier sur YouTube, vous devez publier par le biais d’AEM Author.
+>**[!UICONTROL Publier immédiatement]** signifie que la ressource téléchargée, après sa synchronisation avec IPS, est publiée automatiquement sur le système de diffusion. Cela vaut pour Dynamic Media, mais pas pour YouTube. Pour publier sur YouTube, vous devez publier par le biais d’AEM Author.
 
 >[!NOTE]
->
->Pour publier du contenu depuis YouTube, AEM utilise le workflow **[!UICONTROL Publier sur YouTube]**, qui vous permet de surveiller la progression et de consulter toutes les informations d’échec.
->
->Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
->
->Pour obtenir des informations de progression plus détaillées, vous pouvez surveiller le journal YouTube sous la réplication. Sachez toutefois que ce type de surveillance nécessite un accès administrateur.
+Pour publier du contenu depuis YouTube, AEM utilise le workflow **[!UICONTROL Publier sur YouTube]**, qui vous permet de surveiller la progression et de consulter toutes les informations d’échec.
+Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
+Pour obtenir des informations de progression plus détaillées, vous pouvez surveiller le journal YouTube sous la réplication. Sachez toutefois que cette surveillance nécessite un accès administrateur.
 
-Pour publier des vidéos sur votre chaîne YouTube, procédez comme suit :
+**Pour publier des vidéos sur votre canal** YouTube :
 
 1. Dans AEM, accédez à la ressource vidéo que vous souhaitez publier sur votre chaîne YouTube.
 1. Sélectionnez la ressource vidéo (visionneuse de vidéos adaptative).
@@ -793,8 +791,7 @@ Au bout de huit heures, si un message d’état indiquant **[!UICONTROL Téléch
 Une fois que vous avez publié la vidéo, une chaîne URL YouTube est générée par Dynamic Media. Lorsque vous copiez l’URL YouTube, elle est envoyée au Presse-Papiers dont vous pouvez coller le contenu, le cas échéant, sur les pages de votre site web ou de votre application.
 
 >[!NOTE]
->
->L’URL YouTube ne peut pas être copiée tant que vous n’avez pas publié la ressource vidéo sur YouTube.
+L’URL YouTube ne peut pas être copiée tant que vous n’avez pas publié la ressource vidéo sur YouTube.
 
 Pour lier les URL YouTube à votre application web, procédez comme suit :
 
@@ -811,14 +808,11 @@ Pour lier les URL YouTube à votre application web, procédez comme suit :
 Lorsque vous annulez la publication d’une ressource vidéo dans AEM, la vidéo est supprimée de YouTube.
 
 >[!CAUTION]
->
->Si vous supprimez une vidéo directement sur YouTube, AEM l’ignore et continue de se comporter comme si la vidéo était toujours publiée sur YouTube. Veillez toujours à annuler la publication d’une ressource vidéo sur YouTube via AEM.
+Si vous supprimez une vidéo directement sur YouTube, AEM l’ignore et continue de se comporter comme si la vidéo était toujours publiée sur YouTube. Veillez toujours à annuler la publication d’une ressource vidéo sur YouTube via AEM.
 
 >[!NOTE]
->
->Pour supprimer du contenu depuis YouTube, AEM utilise le processus **[!UICONTROL Annuler la publication sur YouTube]**, qui vous permet de surveiller la progression et de consulter toutes les informations d’échec.
->
->Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
+Pour supprimer du contenu depuis YouTube, AEM utilise le processus **[!UICONTROL Annuler la publication sur YouTube]**, qui vous permet de surveiller la progression et de consulter toutes les informations d’échec.
+Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 Pour annuler la publication de vidéos afin de les supprimer de YouTube, procédez comme suit :
 
@@ -858,21 +852,17 @@ Pour surveiller la progression (notamment l’échec du codage ou de la publicat
    Toutes les informations de workflow, telles que le codage, s’affichent dans la chronologie. Pour la publication YouTube, la chronologie du workflow comprend également le nom de la chaîne YouTube et l’URL de la vidéo YouTube. En outre, une fois la publication terminée, les notifications d’échec s’affichent dans la chronologie du workflow.
 
    >[!NOTE]
-   >
-   >L’enregistrement des messages d’erreur ou d’échec peut prendre un certain temps en raison des différentes configurations de workflows pour les **[!UICONTROL nouvelles tentatives]**, l’**[!UICONTROL intervalle entre deux tentatives]** et le **[!UICONTROL délai d’attente]** de [http://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), par exemple :
-   >
-   >    * Configuration de la file d’attente des tâches Apache Sling
-   >    * Gestionnaire des tâches du processus externe de processus Adobe Granite
-   >    * File d’attente des délais d’attente des processus Granite
+   L’enregistrement des messages d’erreur ou d’échec peut prendre un certain temps en raison des différentes configurations de workflows pour les **[!UICONTROL nouvelles tentatives]**, l’**[!UICONTROL intervalle entre deux tentatives]** et le **[!UICONTROL délai d’attente]** de [http://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), par exemple :
+   * Configuration de la file d’attente des tâches Apache Sling
+   * Gestionnaire des tâches du processus externe de processus Adobe Granite
+   * File d’attente des délais d’attente des processus Granite
 
-   >
-   >Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
+   Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
 
 1. Pour les workflows en cours, consultez les instances de workflows disponibles sous **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Instances]**.
 
    >[!NOTE]
-   >
-   >Vous aurez peut-être besoin de droits administratifs pour accéder au menu **[!UICONTROL Outils]**.
+   Vous aurez peut-être besoin de droits administratifs pour accéder au menu **[!UICONTROL Outils]**.
 
    ![chlimage_1-433](assets/chlimage_1-433.png)
 
@@ -885,30 +875,22 @@ Pour surveiller la progression (notamment l’échec du codage ou de la publicat
 1. Pour les tâches qui ont échoué, consultez la section Échecs des processus disponible sous **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Échecs]**. L’**[!UICONTROL échec du processus]** répertorie toutes les activités du processus ayant échoué.
 
    >[!NOTE]
-   >
-   >Vous aurez peut-être besoin de droits administratifs pour accéder au menu **[!UICONTROL Outils]**.
+   Vous aurez peut-être besoin de droits administratifs pour accéder au menu **[!UICONTROL Outils]**.
 
    ![chlimage_1-435](assets/chlimage_1-435.png)
 
    >[!NOTE]
-   >
-   >L’enregistrement du message d’erreur peut prendre un certain temps en raison des différentes configurations de workflows pour les **[!UICONTROL nouvelles tentatives]**, l’**[!UICONTROL intervalle entre deux tentatives]** et le **[!UICONTROL délai d’attente]** de [http://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), par exemple :
-   >
-   >
-   >
-   >    * Configuration de la file d’attente des tâches Apache Sling
-   >    * Gestionnaire des tâches du processus externe de processus Adobe Granite
-   >    * File d’attente des délais d’attente des processus Granite
+   L’enregistrement du message d’erreur peut prendre un certain temps en raison des différentes configurations de workflows pour les **[!UICONTROL nouvelles tentatives]**, l’**[!UICONTROL intervalle entre deux tentatives]** et le **[!UICONTROL délai d’attente]** de [http://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), par exemple :
+   * Configuration de la file d’attente des tâches Apache Sling
+   * Gestionnaire des tâches du processus externe de processus Adobe Granite
+   * File d’attente des délais d’attente des processus Granite
 
-   >
-   >
-   >Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
+   Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
 
 1. Pour les workflows terminés, consultez l’archive de workflow sous **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Archive]**. La liste **[!UICONTROL Archive de workflow]** répertorie toutes les activités de workflow qui ont réussi.
 
    >[!NOTE]
-   >
-   >Vous aurez peut-être besoin de droits administratifs pour accéder au menu **[!UICONTROL Outils]**.
+   Vous aurez peut-être besoin de droits administratifs pour accéder au menu **[!UICONTROL Outils]**.
 
    ![chlimage_1-436](assets/chlimage_1-436.png)
 
@@ -963,8 +945,7 @@ For YouTube publishing jobs, do the following:
 ## Affichage de rapports vidéo {#viewing-video-reports}
 
 >[!NOTE]
->
->Les rapports vidéo sont disponibles uniquement lorsque vous exécutez Dynamic Media en mode Hybride.
+Les rapports vidéo sont disponibles uniquement lorsque vous exécutez Dynamic Media en mode Hybride.
 
 Les rapports vidéo affichent plusieurs mesures agrégées sur une période spécifiée pour vous permettre de vérifier que les vidéos individuelles et agrégées publiées présentent les performances attendues. Les données des mesures principales suivantes sont agrégées pour toutes les vidéos publiées sur l’ensemble de votre site web :
 
@@ -981,8 +962,7 @@ Lorsque vous appuyez sur le nom d’une vidéo dans la liste, le rapport sur la 
 Si la vidéo a été codée en dehors d’Adobe Experience Manager Dynamic Media, le graphique sur la rétention de l’audience (taux de déperdition) et les données de pourcentage de lecture du tableau ne sont pas disponibles.
 
 >[!NOTE]
->
->Le suivi et les données de rapport reposent exclusivement sur l’utilisation du lecteur vidéo Dynamic Media et du paramètre de lecteur vidéo prédéfini associé. Vous ne pouvez donc pas effectuer le suivi et créer de rapports sur des vidéos qui sont lues par d’autres lecteurs vidéo.
+Le suivi et les données de rapport reposent exclusivement sur l’utilisation du lecteur vidéo Dynamic Media et du paramètre de lecteur vidéo prédéfini associé. Vous ne pouvez donc pas effectuer le suivi et créer de rapports sur des vidéos qui sont lues par d’autres lecteurs vidéo.
 
 Par défaut, la première fois que vous utilisez l’option Rapports vidéo, le rapport affiche des données vidéo du premier jour du mois en cours jusqu’à la date du mois en cours. Vous pouvez toutefois remplacer la période par défaut par la vôtre. La prochaine fois que vous utiliserez l’option Rapports vidéo, la période que vous avez spécifiée sera utilisée.
 
@@ -1077,8 +1057,7 @@ Vous pouvez étendre vos vidéos aux marchés mondiaux en ajoutant des sous-titr
 Les sous-titres offrent également une meilleure accessibilité en utilisant des sous-titres pour les sourds ou les malentendants.
 
 >[!NOTE]
->
->Le lecteur vidéo utilisé doit prendre en charge l’affichage des sous-titres.
+Le lecteur vidéo utilisé doit prendre en charge l’affichage des sous-titres.
 
 Dynamic Media peut convertir des fichiers de sous-titres au format JSON (JavaScript Object Notation). Cette conversion signifie que vous pouvez intégrer le texte JSON dans une page web sous forme de transcription masquée complète de la vidéo. Les moteurs de recherche peuvent ensuite analyser et indexer le contenu pour permettre de trouver plus facilement les vidéos et fournir aux utilisateurs des informations supplémentaires sur le contenu des vidéos.
 
@@ -1103,8 +1082,7 @@ Pour plus d’informations sur l’utilisation de la fonction JSON dans une URL,
    À présent, suivez les instructions à l’écran du site pour créer et enregistrer votre fichier WebVTT. Lorsque vous avez terminé, copiez le contenu du fichier de sous-titres et collez-le dans un éditeur de texte brut, puis enregistrez-le avec une extension de fichier .vtt.
 
    >[!NOTE]
-   >
-   >Pour une prise en charge internationale des sous-titres vidéo dans différentes langues, n’oubliez pas que la norme WebVTT implique de créer des fichiers .vtt distincts et des appels pour chaque langue à prendre en charge.
+   Pour une prise en charge internationale des sous-titres vidéo dans différentes langues, n’oubliez pas que la norme WebVTT implique de créer des fichiers .vtt distincts et des appels pour chaque langue à prendre en charge.
 
    En règle générale, vous devez attribuer au fichier de sous-titres VTT le même nom qu’au fichier vidéo et vous lui ajoutez l’indicateur de paramètres régionaux, comme -EN, -FR ou -DE, et ainsi de suite. Ainsi, vous pouvez automatiser aisément la génération des URL de vidéo avec le système de gestion de contenu web existant.
 
@@ -1134,8 +1112,7 @@ Pour plus d’informations sur l’utilisation de la fonction JSON dans une URL,
 Vous pouvez faciliter la lecture et le parcours de vos vidéos les plus longues en ajoutant des marqueurs de chapitre aux vidéos uniques ou aux visionneuses de vidéos adaptatives. Lorsqu’un utilisateur lit la vidéo, il peut cliquer sur les marqueurs de chapitre de la chronologie de la vidéo (également connue sous le nom de barre de progression) pour facilement atteindre un point d’intérêt particulier, ou passer immédiatement au nouveau contenu, à des démonstrations, à des tutoriels, etc.
 
 >[!NOTE]
->
->Le lecteur vidéo utilisé doit prendre en charge l’utilisation des marqueurs de chapitre. Les lecteurs vidéo Dynamic Media prennent en charge les marqueurs de chapitre, mais l’utilisation de lecteurs vidéo tiers ne le permet pas.
+Le lecteur vidéo utilisé doit prendre en charge l’utilisation des marqueurs de chapitre. Les lecteurs vidéo Dynamic Media prennent en charge les marqueurs de chapitre, mais l’utilisation de lecteurs vidéo tiers ne le permet pas.
 
 Si vous le souhaitez, vous pouvez créer votre propre visionneuse personnalisée, et lui donner le nom de votre marque, avec des chapitres au lieu d’utiliser le paramètre prédéfini de la visionneuse de vidéos. Pour obtenir des instructions sur la création de votre propre visionneuse HTML5 avec une navigation par chapitre, dans le Guide du SDK de la visionneuse d’Adobe Scene7, reportez-vous à la section « Personnalisation du comportement à l’aide de modificateurs » sous les classes `s7sdk.video.VideoPlayer` et `s7sdk.video.VideoScrubber`. Le SDK de la visionneuse d’Adobe Scene7 est disponible au téléchargement depuis [Adobe Developer Connection](https://help.adobe.com/fr_FR/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
 
