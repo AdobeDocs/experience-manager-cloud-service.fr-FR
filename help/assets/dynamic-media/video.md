@@ -2,7 +2,7 @@
 title: Vidéo
 description: Découvrez comment utiliser la vidéo dans Dynamic Media
 translation-type: tm+mt
-source-git-commit: d59b193730e2135390386eab8ef83abae5f7eac0
+source-git-commit: 591e33f255a82371dea6fbe07ed9c9b43764b12c
 workflow-type: tm+mt
 source-wordcount: '10058'
 ht-degree: 98%
@@ -568,7 +568,7 @@ Or, if you intend to use the default tags in AEM, you can skip this task and go 
 
 >[!NOTE]
 >
->Une fois le service cloud configuré, aucune configuration supplémentaire n’est nécessaire pour activer l’agent de réplication de publication YouTube en tant que tel. La raison en est qu’elle a été activée lors de l’enregistrement de la configuration du service cloud.
+>Une fois le service cloud configuré, aucune configuration supplémentaire n’est nécessaire pour activer l’agent de réplication de publication YouTube à ce stade. La raison en est qu’elle a été activée lors de l’enregistrement de la configuration du service cloud.
 
 <!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
