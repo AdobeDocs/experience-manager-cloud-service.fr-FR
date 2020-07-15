@@ -2,10 +2,10 @@
 title: Notes de mise à jour d’Adobe Experience Manager as a Cloud Service version 2020.7.0
 description: Notes de mise à jour d’Experience Manager version 2020.7.0
 translation-type: tm+mt
-source-git-commit: d800ffd57826251031206290405ec1dd5febede8
+source-git-commit: 22a025b49444e08d014e0459443751b5a3cfc7bf
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 32%
+source-wordcount: '363'
+ht-degree: 22%
 
 ---
 
@@ -49,3 +49,20 @@ La date de publication de la mise à jour 2020.7.0 de [!UICONTROL Cloud Manager
 * La validation des noms d&#39;environnement comportait une erreur &quot;off-by-one&quot;.
 
 * La page Environnements affichait parfois des segments de publication et de répartiteur lorsqu’aucun segment n’était présent.
+
+## Nouveautés de l’analyseur de l’état de préparation du cloud {#cloud-readiness-analyzer}
+
+Suivez cette section pour en savoir plus sur les nouveautés et les mises à jour de Cloud Readiness Analyzer.
+
+### Correctifs {#cra-bug-fixes}
+
+* La version antérieure de l&#39;ARC n&#39;a pas pu être exécutée sur l&#39;Adobe Experience Manager (AEM) 6.1. Un soutien explicite pour autoriser les utilisateurs du groupe d&#39;administrateurs a été ajouté.
+
+   Consultez la section [Installation de l’ARC sur AEM 6.1](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) pour plus d’informations.
+
+* L&#39;horodatage d&#39;expiration affiché sur le rapport récapitulatif était incorrect.
+
+* L&#39;ARC détectait les composants personnalisés de duplicata.
+
+* Dans AEM 6.1, l’inspection du contenu était terminée avant d’effectuer l’inspection complète. La gestion des exceptions a été ajoutée pour permettre à l&#39;inspecteur de sauter et de continuer jusqu&#39;à ce que l&#39;inspection complète soit terminée.
+
