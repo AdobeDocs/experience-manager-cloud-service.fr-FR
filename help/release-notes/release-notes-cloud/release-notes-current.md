@@ -2,10 +2,10 @@
 title: Notes de mise à jour d’Adobe Experience Manager as a Cloud Service version 2020.7.0
 description: Notes de mise à jour d’Experience Manager version 2020.7.0
 translation-type: tm+mt
-source-git-commit: 74abf1c4cc6ae449a81e3e40d073bfcb23b056e8
+source-git-commit: d800ffd57826251031206290405ec1dd5febede8
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 33%
+source-wordcount: '248'
+ht-degree: 32%
 
 ---
 
@@ -27,6 +27,8 @@ La date de publication de la mise à jour 2020.7.0 de [!UICONTROL Cloud Manager
 * La page environnements a été repensée.
 
 * Les environnements en veille prolongée affichent désormais un état discret dans Cloud Manager lorsqu’ils sont mis en veille prolongée.
+
+* Le nombre de variables d&#39;environnement par environnement a été porté à 200.
 
 * Le conteneur de création de Cloud Manager prend désormais en charge Java 8 et Java 11.
 
