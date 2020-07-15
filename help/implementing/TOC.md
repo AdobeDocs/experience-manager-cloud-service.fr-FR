@@ -2,9 +2,9 @@
 sub-product: Implémentation pour AEM as a Cloud Service
 user-guide-title: Implémentation pour AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
+source-git-commit: 69de631457966383b537fdf5aeddf9157adae73b
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '236'
 ht-degree: 92%
 
 ---
@@ -30,8 +30,10 @@ ht-degree: 92%
    + [SDK AEM as a Cloud Service](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [Conseils de développement pour AEM as a Cloud Service](developing/introduction/development-guidelines.md)
    + [Prise en main du développement d’AEM Sites – Tutoriel WKND](developing/introduction/develop-wknd-tutorial.md)
-   + [Incrustations dans AEM en tant que Cloud Service](developing/introduction/overlays.md)
+   + [Aide-mémoire pour Sling](developing/introduction/sling-cheatsheet.md)
+   + [Utilisation des adaptateurs Sling](developing/introduction/sling-adapters.md)
    + [Utilisation de la fusion de ressources Sling dans AEM en tant que Cloud Service](developing/introduction/sling-resource-merger.md)
+   + [Incrustations dans AEM en tant que Cloud Service](developing/introduction/overlays.md)
    + [API d’AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Présentation des résultats de tests](/help/implementing/developing/introduction/understand-test-results.md)
 + Configuration et extension d’AEM as a Cloud Service {#configuring-and-extending}
