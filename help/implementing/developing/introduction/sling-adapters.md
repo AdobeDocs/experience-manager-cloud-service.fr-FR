@@ -2,7 +2,7 @@
 title: Utilisation des adaptateurs Sling
 description: Sling propose un modèle Adaptateur permettant de convertir facilement les objets qui mettent en œuvre l’interface Adaptable.
 translation-type: tm+mt
-source-git-commit: 24e75871113d3dae903911cc28c0c2c8a994a04e
+source-git-commit: 4d41f18fea1984f64e85df6b06602426c3602efa
 workflow-type: tm+mt
 source-wordcount: '2083'
 ht-degree: 43%
@@ -10,7 +10,7 @@ ht-degree: 43%
 ---
 
 
-# Utilisation des adaptateurs Sling{#using-sling-adapters}
+# Utilisation des adaptateurs Sling {#using-sling-adapters}
 
 [Sling](https://sling.apache.org) propose un [modèle Adaptateur](https://sling.apache.org/site/adapters.html) permettant de convertir facilement les objets qui mettent en œuvre l’interface [Adaptable](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29). This interface provides a generic [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) method that will translate the object to the class type being passed as the argument.
 
