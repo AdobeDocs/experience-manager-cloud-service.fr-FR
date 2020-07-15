@@ -2,9 +2,9 @@
 title: Notes de mise à jour d’Adobe Experience Manager as a Cloud Service version 2020.7.0
 description: Notes de mise à jour d’Experience Manager version 2020.7.0
 translation-type: tm+mt
-source-git-commit: 22a025b49444e08d014e0459443751b5a3cfc7bf
+source-git-commit: 66f066fe55ef872b62d4dcee711d3c7077bfccd1
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '365'
 ht-degree: 22%
 
 ---
@@ -52,7 +52,7 @@ La date de publication de la mise à jour 2020.7.0 de [!UICONTROL Cloud Manager
 
 ## Nouveautés de l’analyseur de l’état de préparation du cloud {#cloud-readiness-analyzer}
 
-Suivez cette section pour en savoir plus sur les nouveautés et les mises à jour de Cloud Readiness Analyzer.
+Suivez cette section pour en savoir plus sur les nouveautés et les mises à jour de la version 1.0.2 de Cloud Readiness Analyzer.
 
 ### Correctifs {#cra-bug-fixes}
 
@@ -62,7 +62,7 @@ Suivez cette section pour en savoir plus sur les nouveautés et les mises à jou
 
 * L&#39;horodatage d&#39;expiration affiché sur le rapport récapitulatif était incorrect.
 
-* L&#39;ARC détectait les composants personnalisés de duplicata.
+* L&#39;ARC détectait des composants personnalisés duplicata.
 
 * Dans AEM 6.1, l’inspection du contenu était terminée avant d’effectuer l’inspection complète. La gestion des exceptions a été ajoutée pour permettre à l&#39;inspecteur de sauter et de continuer jusqu&#39;à ce que l&#39;inspection complète soit terminée.
 
