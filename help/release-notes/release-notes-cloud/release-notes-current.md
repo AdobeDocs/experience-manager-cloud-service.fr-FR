@@ -2,10 +2,10 @@
 title: Notes de mise à jour d’Adobe Experience Manager as a Cloud Service version 2020.7.0
 description: Notes de mise à jour d’Experience Manager version 2020.7.0
 translation-type: tm+mt
-source-git-commit: 66f066fe55ef872b62d4dcee711d3c7077bfccd1
+source-git-commit: 610e00a8669a7d81482d99685d200bd705b1848f
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 22%
+source-wordcount: '404'
+ht-degree: 31%
 
 ---
 
@@ -30,7 +30,7 @@ La date de publication de la mise à jour 2020.7.0 de [!UICONTROL Cloud Manager
 
 * Le nombre de variables d&#39;environnement par environnement a été porté à 200.
 
-* Le conteneur de création de Cloud Manager prend désormais en charge Java 8 et Java 11.
+* Le conteneur de création Cloud Manager prend désormais en charge Java 8 et Java 11.
 
 ### Correctifs {#bug-fixes-cm}
 
@@ -38,9 +38,9 @@ La date de publication de la mise à jour 2020.7.0 de [!UICONTROL Cloud Manager
 
 * Le lien vers la Console développeur directement à partir de Cloud Manager n’affichait pas l’option permettant de dé-hiberner/hiberner un environnement de Programme Sandbox.
 
-* Les options **Annuler** et **Enregistrer** sur la page de modification du pipeline hors production n’étaient pas toujours visibles.
+* The **Cancel** and **Save** options on the Non-Production Pipeline edit page were not always visible.
 
-* Certains échecs du processus de qualité du code peuvent entraîner la génération incorrecte du fichier journal.
+* Certaines erreurs liées au u processus de qualité du code peuvent entraîner la génération incorrecte du fichier journal.
 
 * Lors de la création d’un nouveau programme, le nom suggéré renvoyait parfois un duplicata de nom de programme existant.
 
@@ -49,6 +49,10 @@ La date de publication de la mise à jour 2020.7.0 de [!UICONTROL Cloud Manager
 * La validation des noms d&#39;environnement comportait une erreur &quot;off-by-one&quot;.
 
 * La page Environnements affichait parfois des segments de publication et de répartiteur lorsqu’aucun segment n’était présent.
+
+### Problèmes connus {#known-issues}
+
+* En raison d’un changement dans le mode de calcul de la couverture du code, la version _minimale_ du module externe Jacoco est désormais 0.7.5.201505241946 (publiée en mai 2015). Les clients référençant explicitement une ancienne version recevront un message d’erreur dans le processus de qualité du code.
 
 ## Nouveautés de l’analyseur de l’état de préparation du cloud {#cloud-readiness-analyzer}
 
