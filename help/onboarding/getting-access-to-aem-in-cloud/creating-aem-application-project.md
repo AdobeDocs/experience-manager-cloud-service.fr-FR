@@ -2,10 +2,10 @@
 title: Projet d’application AEM - Cloud Service
 description: Projet d’application AEM - Cloud Service
 translation-type: tm+mt
-source-git-commit: 528873fec97958646b2a0d7d64281c76ee1d021d
+source-git-commit: 610e00a8669a7d81482d99685d200bd705b1848f
 workflow-type: tm+mt
-source-wordcount: '1120'
-ht-degree: 88%
+source-wordcount: '1138'
+ht-degree: 92%
 
 ---
 
@@ -73,11 +73,14 @@ Cloud Manager crée et teste votre code à l&#39;aide d&#39;un environnement de 
 * Maven est toujours exécuté avec la commande : *mvn --batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package*.
 * Maven est configuré au niveau du système avec un fichier settings.xml qui inclut automatiquement le référentiel public Adobe **Artifact**. (Pour plus d’informations, consultez le [référentiel Maven public d’Adobe](https://repo.adobe.com/)).
 
-### Using Java 11 {#using-java-11}
+>[!NOTE]
+>Bien que Cloud Manager ne définisse pas de version spécifique du `jacoco-maven-plugin`logiciel, la version utilisée doit être au moins `0.7.5.201505241946`conforme.
 
-Cloud Manager prend désormais en charge la création de projets clients avec Java 8 et Java 11. Par défaut, les projets sont créés à l’aide de Java 8. Les clients qui ont l&#39;intention d&#39;utiliser Java 11 dans leurs projets peuvent le faire à l&#39;aide du module [Apache Maven Toolchain](https://maven.apache.org/plugins/maven-toolchains-plugin/).
+### Utilisation de Java 11 {#using-java-11}
 
-Pour ce faire, dans le fichier pom.xml, ajoutez une `<plugin>` entrée qui ressemble à celle-ci :
+Cloud Manager prend désormais en charge la création de projets clients avec Java 8 et Java 11. Par défaut, les projets sont créés à l’aide de Java 8. Les clients souhaitant utiliser Java 11 dans leurs projets peuvent le faire via le module [Apache Maven Toolchain](https://maven.apache.org/plugins/maven-toolchains-plugin/).
+
+À cet effet, dans le fichier pom.xml, ajoutez une `<plugin>` entrée du type suivant :
 
 ```xml
         <plugin>
@@ -103,7 +106,7 @@ Pour ce faire, dans le fichier pom.xml, ajoutez une `<plugin>` entrée qui resse
 ```
 
 >[!NOTE]
->Les `vendor` valeurs prises en charge sont `oracle` et `sun` et les `version` valeurs prises en charge sont `1.8`, `1.11`et `11`.
+>Les `vendor` valeurs prises en charge sont `oracle` et `sun`, et les `version` valeurs prises en charge sont `1.8`, `1.11`et `11`.
 
 ## Variables d’environnement {#environment-variables}
 
