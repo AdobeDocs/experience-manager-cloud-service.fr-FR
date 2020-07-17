@@ -2,10 +2,10 @@
 title: Utilisation de fragments de contenu
 description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages.
 translation-type: tm+mt
-source-git-commit: aefa7d6493ade255e06eaaa7676f8e018f311994
+source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 97%
+source-wordcount: '1828'
+ht-degree: 96%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 97%
 
 Les fragments de contenu d’Adobe Experience Manager (AEM) as a Cloud Service vous permettent de concevoir, créer, organiser et [publier du contenu indépendant des pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Ils permettent de préparer le contenu prêt à être utilisé dans des emplacements multiples/sur plusieurs canaux.
 
-Les fragments de contenu contiennent du contenu structuré :
+Les fragments de contenu contiennent du contenu structuré :
 
-* They are based on a [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md), which predefines a structure for the resulting fragment.
+* Ils sont basés sur un [modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md), servant à prédéfinir une structure pour le fragment résultant.
 
 Les fragments de contenu peuvent également être livrés au format JSON, à l’aide des fonctions d’exportation Sling Model (JSON) des composants de base AEM. Cette forme de livraison :
 
@@ -63,7 +63,7 @@ Ils assurent la diffusion du contenu aux canaux autres que les pages web AEM cl
 * des applications mobiles natives ;
 * d’autres canaux et points de contact externes à AEM.
 
-La Diffusion est effectuée au format JSON à l’aide de l’exportateur JSON.
+La diffusion est effectuée au format JSON à l’aide de l’outil d’exportation JSON.
 
 Les fragments de contenu AEM peuvent être utilisés pour décrire et gérer du contenu structuré. Le contenu structuré est défini dans des modèles pouvant contenir divers types de contenu, notamment du texte, des données numériques et booléennes, la date et l’heure, etc.
 
@@ -72,7 +72,7 @@ Associé aux fonctionnalités d’exportation JSON des composants de base AEM, 
 >[!NOTE]
 >
 >Les **fragments de contenu** et les **[fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**représentent deux fonctions distinctes d’AEM :
->* Les **fragments de contenu** sont des contenus éditoriaux, composés essentiellement de texte et des images associées. Il s’agit exclusivement de contenu, sans aucun élément de conception ni de mise en page.
+>* **Les fragments** de contenu sont du contenu éditorial, qui peut être utilisé pour accéder à des données structurées, y compris des textes, des chiffres et des dates, entre autres. Il s&#39;agit d&#39;un contenu pur, avec définition et structure, mais sans conception visuelle et/ou mise en page supplémentaires.
 >* Les **fragments d’expérience** désignent un contenu parfaitement mis en page : un fragment de page web.
 
 >
@@ -154,14 +154,11 @@ Les actifs de fragment de contenu se composent des parties suivantes (directemen
 
 * **Paragraphes de fragment**
 
-   * Des blocs de texte qui sont :
+   * Blocs de texte, souvent multilignes, délimités comme des entités individuelles.
 
-      * séparés par des espaces verticaux (retour chariot) ;
-      * dans les éléments de texte multilignes
    * Dans les modes [Texte enrichi](/help/assets/content-fragments/content-fragments-variations.md#rich-text) et [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown), un paragraphe peut être formaté en tant qu’en-tête, auquel cas celui-ci et le paragraphe suivant sont considérés comme une unité.
 
    * Activent le contrôle du contenu lors de la création de la page.
-
 
 * **Ressources insérées dans un fragment (fragments de supports variés)**
 
@@ -247,9 +244,12 @@ Pour créer, modifier et utiliser des fragments de contenu, vous aurez égalemen
 * **Modèle de contenu**
 
    * Il est [activé, puis créé à l’aide d’outils](/help/assets/content-fragments/content-fragments-models.md).
-   * Obligatoire pour [créer un fragment structuré](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
+   * Obligatoire pour [créer un fragment](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
    * Définit la structure d’un fragment (titre, éléments de contenu et définitions de balise).
-   * Les définitions de modèles de contenu requièrent un titre et un élément de données ; tous les autres attributs sont facultatifs. En outre, le modèle définit une portée minimale du fragment et du contenu par défaut, le cas échéant. Les auteurs ne peuvent pas modifier la structure définie lors de la création du contenu d’un fragment.
+   * Les définitions de modèles de contenu requièrent un titre et un élément de données ; tous les autres attributs sont facultatifs.
+   * Le modèle peut définir le contenu par défaut, le cas échéant.
+   * Les auteurs ne peuvent pas modifier la structure définie lors de la création du contenu d’un fragment.
+   * Les modifications apportées à un modèle après la création de fragments de contenu dépendants ont un impact sur ces fragments de contenu.
 
 * **Composant de fragment de contenu**
 
