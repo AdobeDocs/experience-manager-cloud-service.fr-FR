@@ -2,10 +2,10 @@
 title: Prise en charge des fragments de contenu d’Adobe Experience Manager as a Cloud Service dans l’API Assets HTTP
 description: Découvrez la prise en charge des fragments de contenu Adobe Experience Manager as a Cloud Service dans l’API HTTP Assets.
 translation-type: tm+mt
-source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
+source-git-commit: 0dbec9bde44780958332f6f4cd82c05b4ec9206d
 workflow-type: tm+mt
 source-wordcount: '1891'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -211,7 +211,7 @@ L’API REST Assets expose l’accès aux propriétés d’un dossier (par exemp
 
 Si une ressource est demandée, la réponse renvoie ses métadonnées, telles que le titre, le nom et les autres informations, comme défini par le schéma des ressources respectives.
 
-Les données binaires d’une ressource sont exposées sous la forme d’un lien SIREN de type `content` (également appelé `rel attribute`).
+The binary data of an asset is exposed as a SIREN link of type `content`.
 
 Les ressources peuvent comporter plusieurs rendus. Elles sont généralement exposées en tant qu’entités enfants, à l’exception du rendu de miniature, qui est exposé sous la forme d’un lien de type `thumbnail` (`rel="thumbnail"`).
 
@@ -244,7 +244,7 @@ Le contenu associé n’est actuellement pas exposé.
 
 L’utilisation peut varier selon que vous utilisez un environnement d’auteur ou de publication AEM dans votre cas d’utilisation spécifique.
 
-* La création est strictement liée à une instance d’auteur ([et il n’existe actuellement aucun moyen de répliquer un fragment pour publier à l’aide de cette API](/help/assets/assets-api-content-fragments.md#limitations)).
+* It is strongly recommended that creation is bound to an author instance ([and currently there is no means to replicate a fragment to publish using this API](/help/assets/assets-api-content-fragments.md#limitations)).
 * La diffusion est possible à partir des deux à la fois, car AEM traite le contenu demandé au format JSON uniquement.
 
    * Le stockage et la diffusion à partir d’une instance d’auteur AEM suffisent normalement pour les applications de bibliothèque multimédia opérant derrière le pare-feu.
