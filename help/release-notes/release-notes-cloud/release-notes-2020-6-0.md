@@ -2,10 +2,10 @@
 title: Notes de mise à jour d’Adobe Experience Manager as a Cloud Service version 2020.6.0
 description: Notes de mise à jour d’Experience Manager version 2020.6.0
 translation-type: tm+mt
-source-git-commit: 74abf1c4cc6ae449a81e3e40d073bfcb23b056e8
+source-git-commit: d25129d8e2ad5f1501aec3b8491f6327b91fcc53
 workflow-type: tm+mt
-source-wordcount: '1942'
-ht-degree: 70%
+source-wordcount: '1949'
+ht-degree: 99%
 
 ---
 
@@ -109,16 +109,16 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 
 Les balises intelligentes améliorées permettent aux entreprises d’entraîner des modèles de balisage intelligent pour reconnaître les images en fonction de balises commerciales spécifiques aux clients, en plus des balises intelligentes génériques.
 
-Cette version apporte une nouvelle expérience utilisateur assistée qui permet de configurer l’entraînement des balises intelligentes pour des ensembles de balises spécifiques au client, mais aussi de les entraîner sur des ressources qui devront être reconnues et balisées plus tard. L&#39;expérience est désormais plus intuitive.
-Former des balises intelligentes améliorées pour une formation plus intuitive aux balises intelligentes. Voir [comment ajouter des balises actives aux ressources](/help/assets/smart-tags.md) et [configurer le balisage](/help/assets/smart-tags-configuration.md)intelligent.
+Cette version apporte une nouvelle expérience utilisateur assistée qui permet de configurer l’entraînement des balises intelligentes pour des ensembles de balises spécifiques au client, mais aussi de les entraîner sur des ressources qui devront être reconnues et balisées plus tard. L’expérience est désormais plus intuitive.
+Entraînez des balises intelligentes améliorées pour un entraînement plus intuitif. Voir [comment ajouter des balises intelligentes aux ressources](/help/assets/smart-tags.md) et [configurer le balisage intelligent](/help/assets/smart-tags-configuration.md).
 
-**Prise en charge de l&#39;assimilation, de la prévisualisation et de la diffusion du contenu 3D**
+**Prise en charge de l’ingestion, de la prévisualisation et de la diffusion des contenus 3D**
 
-Les entreprises peuvent désormais stocker et utiliser des fichiers 3D dans AEM Assets. L’utilisateur peut télécharger, prévisualisation et utiliser divers fichiers 3D de base, notamment des fichiers OBJ, STL, GLTF et GLB. Avec l’ajout de [!DNL Dynamic Media], vous pouvez configurer et diffuser des expériences 3D à l’aide d’URL ou de visionneuses agnostiques. Il s’agit notamment de la visionneuse [!DNL Dynamic Media] 3D Experience, du composant Sites 3D Viewer et de la possibilité de diffuser des fichiers 3D à l’aide de [!DNL Dynamic Media] (réalité augmentée/réalité virtuelle). Voir [Utilisation de ressources 3D dans Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
+Les entreprises peuvent désormais stocker et utiliser des fichiers 3D dans AEM Assets. L’utilisateur peut charger, prévisualiser et utiliser différents fichiers 3D de base, notamment des fichiers OBJ, STL, GLTF et GLB. Avec l’ajout de [!DNL Dynamic Media], vous pouvez configurer et diffuser des expériences 3D à l’aide d’URL ou de visionneuses agnostiques. Il s’agit notamment de la visionneuse [!DNL Dynamic Media] 3D Experience, du composant Sites 3D Viewer et de la possibilité de diffuser des fichiers 3D à l’aide de [!DNL Dynamic Media] (réalité augmentée/réalité virtuelle). Voir [Utilisation de ressources 3D dans Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 **Prise en charge d’Adobe Asset Link pour Adobe XD**
 
-With the latest release, [!DNL Experience Manager Assets] supports a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29.3. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application. Voir [Adobe Asset Link pour Adobe XD](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link-for-xd.html).
+Avec la dernière version, [!DNL Experience Manager Assets] prend en charge un nouveau module externe [!DNL Adobe Asset Link] diffusé avec [!DNL Adobe XD] v29.3. L’intégration permet aux concepteurs d’accéder aux ressources d’[!DNL Experience Manager] et de les utiliser dans leurs projets, sans avoir à quitter l’application [!DNL Adobe XD]. Voir [Adobe Asset Link pour Adobe XD](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link-for-xd.html).
 
 Grâce à cette version, les utilisateurs créatifs et les concepteurs peuvent désormais utiliser des ressources gérées dans [!DNL AEM Assets] en utilisant [!DNL Adobe Asset Link] avec toute une gamme d’applications de bureau Creative Cloud, notamment [!DNL Adobe XD], [!DNL Photoshop], [!DNL Illustrator] et [!DNL InDesign].
 
@@ -126,53 +126,53 @@ Grâce à cette version, les utilisateurs créatifs et les concepteurs peuvent d
 
 [!DNL Adobe Experience Manager Assets] est désormais plus accessible, conformément aux directives WCAG (Web Content Accessibility Guidelines) v2.1. L’accessibilité a été améliorée pour les cas d’utilisation ou les interfaces suivants :
 
-Les éléments de l’interface utilisateur sont compatibles avec les lecteurs d’écran, sont accessibles à l’aide du clavier et présentent un meilleur contraste. Voici une liste détaillée des améliorations :
+Les éléments de l’interface utilisateur sont compatibles avec les lecteurs d’écran, sont accessibles à l’aide d’un clavier et offrent un meilleur contraste. Voici une liste détaillée des améliorations :
 
-* The [!UICONTROL Options], [!UICONTROL Scope], and [!UICONTROL Workflows] progress bars on [!UICONTROL Manage Publication] page are not read out by the screen-reader as progress bar. Les utilisateurs de lecteurs d’écran perçoivent plutôt ces indicateurs d’état comme une liste d’onglets. (CQ-4273015)
+* Les barres de progression [!UICONTROL Options], [!UICONTROL Portée] et [!UICONTROL Workflows] de la page [!UICONTROL Gérer la publication] ne sont pas lues par le lecteur d’écran comme des barres de progression. Les utilisateurs de lecteurs d’écran perçoivent plutôt ces indicateurs d’état comme une liste d’onglets. (CQ-4273015)
 
 * Lors de l’ajout de balises sur la page [!UICONTROL Propriétés] d’une ressource, les utilisateurs naviguent dans une arborescence de balises. La structure de l’arborescence n’est pas accessible, car les utilisateurs de lecteurs d’écran n’entendent rien lorsqu’ils la parcourent. (CQ-4272964)
 
 * Dans la boîte de dialogue de partage de liens, lorsque vous naviguez en mode de navigation, le lecteur d’écran :
 
-   * Extrait les informations du tableau immédiatement au chargement de la boîte de dialogue.
+   * Lit les informations du tableau immédiatement au chargement de la boîte de dialogue.
    * Ne peut pas accéder à toutes les suggestions automatiques répertoriées.
-   * Does not narrate the displayed auto-suggestions for the [!UICONTROL Add Email Address/Search] combo box. (CQ-4294232)
+   * Ne décrit pas les suggestions automatiques affichées pour la zone combinée [!UICONTROL Rechercher/ajouter l’adresse électronique]. (CQ-4294232)
 
-* The [!UICONTROL Metadata Schema Editor] page and its elements are now accessible using a keyboard and are screen reader friendly. (CQ-4272953) Les utilisateurs peuvent faire glisser les composants à l’aide du clavier en mode de navigation NVDA. (CQ-4296326)
+* La page [!UICONTROL Éditeur de schéma de métadonnées] et ses éléments sont désormais accessibles via un clavier et sont compatibles avec les lecteurs d’écran. (CQ-4272953) Les utilisateurs peuvent faire glisser les composants à l’aide du clavier dans le mode de navigation NVDA. (CQ-4296326)
 
 * Dans l’interface utilisateur Assets, les paramètres d’affichage ne sont pas accessibles au clavier. (CQ-4289038)
 
-* Le rapport de luminosité est inférieur à 3:1 pour les icônes de classement de couleur jaune. La fonction n’est pas utile pour les utilisateurs dont la vision est limitée ou ne percevant pas les couleurs. Les étoiles d’évaluation s’affichent dans l’onglet de la ressource ou dans la vue de carte.
+* Le rapport de luminosité est inférieur à 3:1 pour les icônes de classement de couleur jaune. La fonction n’est pas utile pour les utilisateurs dont la vision est limitée ou ne percevant pas les couleurs. Les étoiles d’évaluation s’affichent dans l’onglet en mode Carte ou Ressource.
 
-* La couleur et le contraste de certains éléments de l’interface utilisateur sont mis à jour afin que les utilisateurs ayant une vision limitée ou les utilisateurs sans perception de la couleur puissent distinguer ces éléments de l’interface utilisateur. Par exemple, la couleur des icônes d’évaluation des étoiles dans la section [!UICONTROL Notation] de l’onglet [!UICONTROL Avancé] dans les [!UICONTROL propriétés] d’un fichier et dans la vue de carte est modifiée pour un contraste approprié. (CQ-4295106)
+* La couleur et le contraste de certains éléments de l’interface utilisateur ont été mis à jour afin que les utilisateurs disposant d’une vision limitée ou qui ne perçoivent pas les couleurs puissent distinguer ces éléments de l’interface utilisateur. Par exemple, la couleur des icônes d’évaluation par étoiles dans la section [!UICONTROL Notation] de l’onglet [!UICONTROL Avancé] des [!UICONTROL Propriétés] dans les modes Ressource et Carte a été redéfinie sur un contraste approprié. (CQ-4295106)
 
-* Les lecteurs d’écran peuvent désormais lire les entrées du menu contextuel de la zone de liste de la zone de liste modifiable (dans divers champs sur différentes pages) en tant que liste d’options. (CQ-4294017)
+* Les lecteurs d’écran peuvent désormais lire les entrées du menu contextuel de zone de liste de la zone combinée (dans divers champs de différentes pages) en tant que liste d’options. (CQ-4294017)
 
-* Pour appliquer un flux de travail à une ressource, vous pouvez accéder à la flèche chevron du [!UICONTROL journal] à l’aide du clavier. (CQ-4289268)
+* Pour appliquer un workflow à une ressource, vous pouvez accéder à la flèche chevron de la [!UICONTROL chronologie] via le clavier. (CQ-4289268)
 
-* Les utilisateurs peuvent supprimer les balises sélectionnées dans le champ [!UICONTROL Balises] de l’onglet [!UICONTROL Simple] de la page [!UICONTROL Propriétés] d’une ressource à l’aide d’un `x` symbole. Les lecteurs d’écran annoncent maintenant l’objectif et le nombre de balises sélectionnées (CQ-4273033).
+* Les utilisateurs peuvent supprimer les balises sélectionnées dans le champ [!UICONTROL Balises] de l’onglet [!UICONTROL De base] de la page [!UICONTROL Propriétés] d’une ressource à l’aide du symbole `x`. Les lecteurs d’écran annoncent maintenant l’objectif des balises sélectionnées et leur nombre (CQ-4273033).
 
-* Les champs de formulaire en lecture seule peuvent être utilisés avec le clavier. Par exemple, les champs désactivés dans l’onglet [!UICONTROL Réglages de base] de la page [!UICONTROL Propriétés] d’une ressource. (CQ-4273031)
+* Les champs de formulaire en lecture seule peuvent être affichés avec le clavier. Par exemple, les champs désactivés de l’onglet [!UICONTROL De base] de la page [!UICONTROL Propriétés] d’une ressource. (CQ-4273031)
 
-* Accédez maintenant aux options de filtrage des fichiers dans la barre latérale gauche à l’aide du clavier. (CQ-4273018)
+* Accédez maintenant aux options de filtrage des ressources dans la barre latérale gauche à l’aide du clavier. (CQ-4273018)
 
-* Le lecteur d’écran annonce l’objectif de divers éléments de zone de liste modifiable, tels que le champ Chemin et l’option d’ouverture de la boîte de dialogue Sélection dans l’onglet [!UICONTROL Réglages de base] de la page [!UICONTROL Propriétés] d’un fichier. (CQ-4273016)
+* Le lecteur d’écran annonce l’objectif de divers éléments de zone combinée, tels que le champ Chemin et l’option d’ouverture de la boîte de dialogue Sélection dans l’onglet [!UICONTROL De base] de la page [!UICONTROL Propriétés] d’une ressource. (CQ-4273016)
 
-* Les commandes de volume des vidéos sont accessibles à l’aide du clavier. (CQ-4272696)
+* Les contrôles de volume des vidéos sont accessibles via le clavier. (CQ-4272696)
 
 * De nombreuses options exploitables dans l’interface utilisateur Assets n’indiquent pas le focus en cas d’utilisation du clavier. (CQ-4272694)
 
-* Les utilisateurs de lecteurs d’écran peuvent désormais savoir quand les lignes de la vue de liste peuvent être sélectionnées à l’aide du clavier. Les informations sont annoncées lorsque le pointeur est placé sur les lignes. (CQ-4271824)
+* Les utilisateurs de lecteurs d’écran peuvent désormais savoir quand les lignes en mode Liste peuvent être sélectionnées à l’aide du clavier. Les informations sont annoncées lorsque la souris survole les lignes. (CQ-4271824)
 
-* Certains champs de formulaire, tels que les champs de nom d’utilisateur et de mot de passe sur la page de connexion, reposent sur des valeurs d’espace réservé pour donner une étiquette accessible. (CQ-4271716)
+* Certains champs de formulaires, tels que les champs Nom d’utilisateur et Mot de passe de la page de connexion, reposent uniquement sur des valeurs d’espace réservé pour donner un libellé accessible. (CQ-4271716)
 
-* Les éléments interactifs de l’interface utilisateur, tels que les liens et les options telles que les options d’en-tête et de zoom des ressources, la page ou le dossier de navigation, sont désormais accessibles à l’aide du clavier. (CQ-4271412)
+* Les éléments interactifs de l’interface utilisateur, tels que les liens et les options (par exemple, dans les options d’en-tête et de zoom de la page de ressources, navigation dans les dossiers), sont désormais accessibles à l’aide du clavier. (CQ-4271412)
 
 * Les titres de toutes les pages consultées dans [!DNL Adobe Experience Manager] Assets sont désormais uniques. (CQ-4271409)
 
 **Autres améliorations**
 
-Cette version comprend les autres améliorations suivantes :
+Cette version comprend les autres améliorations suivantes :
 
 * Possibilité de retraiter des ressources avec des profils de traitement des ressources. Les utilisateurs peuvent ainsi contrôler entièrement le processus (effectuer le traitement complet des ressources, appliquer simplement un profil de traitement spécifique et décider si le workflow de post-traitement doit être exécuté).
 * Les requêtes de recherche renvoient maintenant les résultats plus rapidement, car l’instance de grappe associée a été redémarrée en arrière-plan (auparavant, l’exécution de la recherche initiale pouvait durer plus longtemps).
@@ -182,16 +182,12 @@ Cette version comprend les autres améliorations suivantes :
 
 ### Correctifs {#assets-bug-fixes}
 
-<!-- TBD: Add enhancements above and bug fixes below.
-Seek DM bug fixes if any.
-Add Nui update as shared on Slack: https://git.corp.adobe.com/nui/app/releases/tag/22
--->
-
-In addition to the above new features, the current release provides the following bug fixes based on customer feedback for [!DNL Assets].
+En plus des nouvelles fonctionnalités ci-dessus, la version actuelle apporte les correctifs suivants suite aux commentaires des clients sur [!DNL Assets].
 
 * Pour les fichiers de musique MP3, le bouton de lecture affiché sur la miniature dans l’aperçu DAM ne fonctionne pas. (CQ-4294731)
 * Le passage du pointeur en mode Carte permet de faire défiler l’écran suite à l’activation du focus (automatique) sur les actions rapides disponibles dans la carte. (GRANITE-26895)
-* L’affichage d’un trop grand nombre d’images après le défilement de nombreux résultats de recherche provoque un blocage du navigateur. (GRANITE-26432)
+* L’affichage d’un trop grand nombre d’images après le défilement d’un nombre important de résultats de recherche provoque un blocage du navigateur. (GRANITE-26432)
 * Lors du téléchargement d’une ressource, si l’option de courrier électronique est sélectionnée et même si une adresse électronique valide est fournie, l’option de téléchargement n’est pas disponible. (CQ-4296535)
 * Les filtres personnalisés enregistrés à titre de collections dynamiques ne sont pas correctement appliqués aux ressources. (CQ-4294942)
 * Différentes améliorations concernant la recherche et l’indexation, et des corrections de bogues, ont été réalisées pour obtenir des gains de performances. (CQ-4286373)
+* Les propriétés de dossier affichent une erreur de serveur interne de 500. (CQ-4295701)
