@@ -2,10 +2,10 @@
 title: Prise en charge des fragments de contenu d’Adobe Experience Manager as a Cloud Service dans l’API Assets HTTP
 description: Découvrez la prise en charge des fragments de contenu Adobe Experience Manager as a Cloud Service dans l’API HTTP Assets.
 translation-type: tm+mt
-source-git-commit: efbd21aa7d8aa5b32d0af720466e4ffe92a012dd
+source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
 workflow-type: tm+mt
 source-wordcount: '1891'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Par exemple, pour accéder à `/content/dam/wknd/en/adventures/cycling-tuscany`,
 >[!NOTE]
 >Accès via :
 >* `/api/assets` **ne nécessite pas** l’utilisation du sélecteur `.model`.
->* `/content/assets` **nécessite** l’utilisation du sélecteur `.model`.
+>* `/content/path/to/page` **nécessite** l’utilisation du sélecteur `.model`.
 
 
 La méthode HTTP détermine l’opération à exécuter :
@@ -348,7 +348,7 @@ Les codes d’état suivants s’affichent dans les circonstances pertinentes :
    L’exemple suivant répertorie les scénarios courants dans lesquels ce statut d’erreur est renvoyé, avec le message d’erreur (espacement fixe) généré :
 
    * Le dossier parent n’existe pas (lors de la création d’un fragment de contenu via `POST`)
-   * Aucun modèle de fragment de contenu n’est fourni (cq:model est manquant), ne peut pas être lu (en raison d’un chemin d’accès non valide ou d’un problème d’autorisation) ou aucun modèle de fragment valide :
+   * Aucun modèle de fragment de contenu n’est fourni (cq:model est manquant) ou ne peut être lu (en raison d’un chemin d’accès non valide ou d’un problème d’autorisation) ou il n’existe aucun modèle de fragment valide :
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
