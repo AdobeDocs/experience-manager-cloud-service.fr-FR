@@ -2,9 +2,9 @@
 title: Personnalisation et extensions de fragments de contenu
 description: Un fragment de contenu étend une ressource standard.
 translation-type: tm+mt
-source-git-commit: 33ed1ab1e8a4c4d7d61981270b0a6c959c8ba3a3
+source-git-commit: bfdb862f07dc37b540c07f267b2bdcc2100bcca2
 workflow-type: tm+mt
-source-wordcount: '1786'
+source-wordcount: '1849'
 ht-degree: 95%
 
 ---
@@ -26,7 +26,7 @@ Les [parties constituantes](/help/assets/content-fragments/content-fragments.md#
 * comportant un ou plusieurs *éléments de contenu*,
 * et qui peut avoir une ou plusieurs *variations de contenu*.
 
-Les fragments de contenu individuels sont basés sur les modèles de fragments de contenu :
+Les fragments de contenu individuels sont basés sur des modèles de fragment de contenu :
 
 * Les modèles de fragment de contenu définissent la structure d’un fragment de contenu lors de sa création.
 * Un fragment référençant le modèle, les modifications du modèle peuvent impacter tous les fragments dépendants.
@@ -53,11 +53,11 @@ Les fragments de contenu sont considérés comme une fonctionnalité de Sites po
 
 * Ils sont utilisés lors de la création de vos pages.
 
-#### Mapping Content Fragments to Assets {#mapping-content-fragments-to-assets}
+#### Mappage des fragments de contenu à Assets {#mapping-content-fragments-to-assets}
 
-![fragment de contenu vers des ressources](assets/content-fragment-to-assets.png)
+![fragment de contenu mappé à des ressources](assets/content-fragment-to-assets.png)
 
-Les fragments de contenu, basés sur un modèle de fragment de contenu, sont mappés à un seul fichier :
+Les fragments de contenu, basés sur un modèle de fragment de contenu, sont mappés à une ressource unique :
 
 * L’ensemble du contenu est stocké sous le nœud `jcr:content/data` de la ressource :
 
@@ -70,7 +70,7 @@ Les fragments de contenu, basés sur un modèle de fragment de contenu, sont map
 par exemple, le contenu de l’élément `text` est stocké en tant que propriété `text` sur `jcr:content/data/master`.
 
 * Les métadonnées et le contenu associé sont stockés sous `jcr:content/metadata`
-Hormis le titre et la description, qui ne sont pas considérés comme des métadonnées traditionnelles et sont stockés sur . 
+Hormis le titre et la description, qui ne sont pas considérés comme des métadonnées traditionnelles et sont stockés sur 
 `jcr:content`
 
 #### Emplacement des ressources  {#asset-location}
@@ -166,7 +166,7 @@ Les fragments de contenu peuvent être intégrés à :
 
 Vous pouvez utiliser l’API côté serveur pour accéder à vos fragments de contenu ; voir :
 
-[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/package-frame.html)
+[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -244,7 +244,9 @@ Ce qui suit peut être adapté :
 
 * `ContentElement` peut être adapté en :
 
-   * `ElementTemplate` pour accéder aux informations structurelles de l’élément.
+   * [`ElementTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) pour accéder aux informations structurelles de l’élément.
+
+* [`FragmentTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
 * `Resource` peut être adapté en :
 
@@ -258,7 +260,7 @@ Il convient de noter les éléments suivants :
 
 * Tâches qui peuvent nécessiter des efforts supplémentaires :
 
-   * Créez des variations de `ContentFragment` pour mettre la structure de données à jour.
+   * Il est fortement recommandé de créer de nouvelles variations à partir de `ContentFragment`. Cela permet de s’assurer que tous les éléments partagent cette variation et que les structures de données globales appropriées seront mises à jour si nécessaire afin de refléter la variation nouvellement créée dans la structure de contenu.
 
    * La suppression de variations existantes par l’intermédiaire d’un élément, à l’aide de `ContentElement.removeVariation()`, ne mettra pas à jour les structures de données globales affectées à la variation. Pour garantir le maintien de la synchronisation de ces structures, utilisez plutôt `ContentFragment.removeVariation()`, ce qui supprime globalement une variation.
 
@@ -313,14 +315,14 @@ if (fragmentResource != null) {
 
 ### Exemple : création d’un fragment de contenu  {#example-creating-a-new-content-fragment}
 
-To create a new content fragment programmatically, you need to use a
-`FragmentTemplate` adapted from a model resource.
+Pour créer un fragment de contenu par programmation, vous devez utiliser un
+modèle `FragmentTemplate` adapté d’une ressource de modèle.
 
 Par exemple :
 
 ```java
-Resource ModelRsc = resourceResolver.getResource("...");
-FragmentTemplate tpl = ModelRsc.adaptTo(FragmentTemplate.class);
+Resource modelRsc = resourceResolver.getResource("...");
+FragmentTemplate tpl = modelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
