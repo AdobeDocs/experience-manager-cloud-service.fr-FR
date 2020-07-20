@@ -7,9 +7,9 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS and AEM as a Cloud Service
 topic-tags: introduction
 content-type: reference
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: b44e6a522b6f2363daa40c6c6f9640ba2fadd35e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2276'
 ht-degree: 100%
 
