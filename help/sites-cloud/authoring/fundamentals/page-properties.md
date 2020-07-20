@@ -1,11 +1,11 @@
 ---
 title: Modification des propriétés de page
 description: Définissez les propriétés requises pour une page
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1538'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **ID HTML**
 
-   * ID HTML à appliquer au composant.
+   * Identification HTML à appliquer au composant.
 
 * **Titre de la page**
 
@@ -183,7 +183,7 @@ Affiche l’image de la miniature de la page. Vous pouvez :
 
 ### Cloud Services {#cloud-services}
 
-* **Configuration de Cloud Services**
+* **Configurations du service cloud**
 
    * Définissez les propriétés des services cloud.
 
