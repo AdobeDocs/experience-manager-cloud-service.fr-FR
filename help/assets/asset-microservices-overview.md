@@ -2,9 +2,9 @@
 title: Découvrez comment les microservices de ressources peuvent traiter vos ressources numériques dans le cloud
 description: Traitez vos ressources numériques à l’aide de microservices de traitement des ressources évolutifs et natifs en mode cloud.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0c915b32d676ff225cbe276be075d3ae1a865f11
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '845'
 ht-degree: 100%
 
