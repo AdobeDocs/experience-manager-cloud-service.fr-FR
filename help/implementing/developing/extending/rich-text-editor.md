@@ -1,12 +1,12 @@
 ---
-title: Configure the Rich Text Editor to author content in [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Configure Rich Text Editor to author content in [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Configurez l’éditeur de texte enrichi pour créer du contenu dans [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Configurez l’éditeur de texte enrichi pour créer du contenu dans [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 739dde6f9a6a7f4fe773e27e53f23a395f2881dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1981'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -31,15 +31,15 @@ L’interface de l’éditeur de texte enrichi s’appuie sur une approche de [r
 
 *Figure : Barre d’outils de l’éditeur de texte enrichi avec toutes les options disponibles activées.*
 
-La barre d’outils contient les options nécessaires pour une expérience de création WYSIWYG. [!DNL Experience Manager] les administrateurs peuvent configurer les options disponibles dans la barre d’outils de l’interface. Un ensemble complet d’options de modification est disponible par défaut dans [!DNL Experience Manager]. Developers can customize [!DNL Experience Manager] to add more editing options.
+La barre d’outils contient les options nécessaires pour une expérience de création WYSIWYG. Les administrateurs d’[!DNL Experience Manager] peuvent configurer les options disponibles dans la barre d’outils de l’interface. Un ensemble complet d’options de modification est disponible par défaut dans [!DNL Experience Manager]. Les développeurs peuvent personnaliser [!DNL Experience Manager] pour ajouter d’autres options de modification.
 
 ## Différents modes de modification {#editingmodes}
 
-Authors can create and edit textual content in [!DNL Experience Manager] using the different modes of components. Les options de la barre d’outils pour la création et la mise en forme du contenu, et l’expérience utilisateur des composants compatibles avec l’éditeur de texte enrichi dans différents modes de modification, varient en fonction des configurations d’éditeur de texte enrichi.
+Les auteurs peuvent créer et modifier du contenu textuel dans [!DNL Experience Manager] en utilisant les différents modes des composants. Les options de la barre d’outils pour la création et la mise en forme du contenu, et l’expérience utilisateur des composants compatibles avec l’éditeur de texte enrichi dans différents modes de modification, varient en fonction des configurations d’éditeur de texte enrichi.
 
 | Mode de modification | Zone de modification | Fonctions dont l’activation est recommandée |
 |--- |--- |--- |
-| En ligne | Modification en ligne pour des modifications rapides et mineures ; mettez en forme sans ouvrir une zone de dialogue. | Fonctions minimales d’éditeur de texte enrichi. |
+| En ligne | Modification en ligne pour des modifications rapides et mineures ; mettez en forme sans ouvrir une boîte de dialogue. | Fonctions minimales d’éditeur de texte enrichi. |
 | Éditeur de texte enrichi en plein écran | Couvre la page entière. | Toutes les fonctions requises d’éditeur de texte enrichi. |
 | Boîte de dialogue | Boîte de dialogue située en haut du contenu de page sans couvrir la page entière. | Activation judicieuse des fonctionnalités. |
 | Boîte de dialogue plein écran | Identique au mode plein écran ; contient des champs de la boîte de dialogue à côté de l’éditeur de texte enrichi. | Toutes les fonctions requises d’éditeur de texte enrichi. |
@@ -50,7 +50,7 @@ Authors can create and edit textual content in [!DNL Experience Manager] using t
 
 ### Modification en ligne {#inline-editing}
 
-Pour modifier le contenu d’une page, ouvrez-le avec un doublon-clic lent. Une barre d’outils compacte avec des options de base est présentée.
+Pour modifier le contenu d’une page, ouvrez-le en double-cliquant lentement dessus. Une barre d’outils compacte avec des options de base est présentée.
 
 ![Modification en ligne avec les options de base dans la barre d’outils](assets/inline-editing-mode-basic-options.png)
 
@@ -58,7 +58,7 @@ Pour modifier le contenu d’une page, ouvrez-le avec un doublon-clic lent. Une 
 
 ### Modification en plein écran {#full-screen-editing}
 
-[!DNL Experience Manager] les composants peuvent être ouverts dans une vue plein écran qui masque le contenu de la page et occupe l’écran disponible. Considérez la modification en plein écran comme une version détaillée de la modification en ligne, car elle offre le plus grand nombre d’options de modification. It can be opened by clicking ![Icon to open RTE in full-screen](assets/rte_fullscreen.png), from the compact toolbar when using the inline editing mode.
+Les composants [!DNL Experience Manager] peuvent être ouverts dans une vue plein écran qui masque le contenu de la page et occupe l’écran disponible. Considérez la modification en plein écran comme une version détaillée de la modification en ligne, car elle offre le plus grand nombre d’options de modification. Vous pouvez l’ouvrir en cliquant sur ![Icône d’ouverture de RTE en plein écran](assets/rte_fullscreen.png), dans la barre d’outils compacte lorsque vous utilisez le mode de modification en ligne.
 
 Dans le mode de boîte de dialogue plein écran, outre une barre d’outils détaillée d’éditeur de texte enrichi, les options et les composants disponibles dans une boîte de dialogue sont également disponibles. Il s’applique seulement aux boîtes de dialogue qui contiennent l’éditeur de texte enrichi à côté d’autres composants.
 
@@ -83,7 +83,7 @@ Cette fonctionnalité est mise à disposition par le biais d’une série de mod
    * utilisée afin d’activer ou désactiver une fonctionnalité de base pour ce module externe ;
    * configurée selon une procédure normalisée.
 
-* Le cas échéant, plus de propriétés et d&#39;options nécessitant une configuration spécialisée.
+* Le cas échéant, des propriétés et options supplémentaires nécessitant une configuration spécialisée.
 
 Les fonctions de base d’éditeur de texte enrichi sont activées, ou désactivées, par la valeur de la propriété `features` sur un nœud spécifique au module externe approprié.
 
@@ -103,12 +103,12 @@ Le tableau ci-dessous répertorie les modules externes actuels et indique les in
 | [justify](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | `justifyleft`, `justifycenter`, `justifyright` | Alignement de paragraphe. |
 | [links](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | `modifylink`, `unlink`, `anchor` | [Liens hypertextes et ancres](configure-rich-text-editor-plug-ins.md#linkstyles). |
 | [lists](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | `ordered`, `unordered`, `indent`, `outdent` | Ce module externe contrôle à la fois la [mise en retrait et les listes](configure-rich-text-editor-plug-ins.md#indentmargin), y compris les listes imbriquées. |
-| [misctools](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | `specialchars`, `sourceedit` | Miscellaneous tools let authors to enter [special characters](configure-rich-text-editor-plug-ins.md#spchar) or edit the HTML source. Also, you can add a [range of special characters](configure-rich-text-editor-plug-ins.md#definerangechar) if you want to define your own list. |
+| [misctools](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | `specialchars`, `sourceedit` | Divers outils permettent aux auteurs de saisir des [caractères spéciaux](configure-rich-text-editor-plug-ins.md#spchar) ou de modifier la source HTML. En outre, vous pouvez ajouter une [gamme de caractères spéciaux](configure-rich-text-editor-plug-ins.md#definerangechar) si vous voulez définir votre propre liste. |
 | Paraformat | `paraformat` | Les formats de paragraphe par défaut sont : Paragraphe, En-tête 1, En-tête 2 et En-tête 3 (`<p>`, `<h1>`, `<h2>` et `<h3>`). Vous pouvez [ajouter davantage de formats de paragraphe](configure-rich-text-editor-plug-ins.md#paraformats) ou prolonger la liste. |
 | spellcheck | `checktext` | [Vérificateur orthographique sensible à la langue](configure-rich-text-editor-plug-ins.md#adddict). |
 | styles | `styles` | Prise en charge de l’application d’un style en utilisant une classe CSS. [Ajoutez de nouveaux styles de texte](configure-rich-text-editor-plug-ins.md#textstyles) si vous voulez ajouter (ou étendre) votre propre gamme de styles utilisables avec du texte. |
-| subsuperscript | `subscript`, `superscript` | Extensions aux formats de base, ajout d’un sous-script et d’un super-script. |
-| table | `table`, `removetable`, `insertrow`, `removerow`, `insertcolumn`, `removecolumn`, `cellprops`, `mergecells`, `splitcell`, `selectrow`, `selectcolumns` | See [configure table styles](configure-rich-text-editor-plug-ins.md#tablestyles) to add your own styles for entire tables or individual cells. |
+| subsuperscript | `subscript`, `superscript` | Extensions des formats de base, en ajoutant l’indice et l’exposant. |
+| table | `table`, `removetable`, `insertrow`, `removerow`, `insertcolumn`, `removecolumn`, `cellprops`, `mergecells`, `splitcell`, `selectrow`, `selectcolumns` | Voir [Configuration des styles de tableau](configure-rich-text-editor-plug-ins.md#tablestyles) afin d’ajouter vos propres styles pour des tableaux entiers ou des cellules individuelles. |
 | undo | `undo`, `redo` | Taille de l’historique des opérations [d’annulation et de rétablissement](configure-rich-text-editor-plug-ins.md#undohistory). |
 
 >[!NOTE]
@@ -117,12 +117,12 @@ Le tableau ci-dessous répertorie les modules externes actuels et indique les in
 
 ## Présentation des chemins et des emplacements de configuration {#understand-the-configuration-paths-and-locations}
 
-The [mode of RTE editing and the interface](#editingmodes) that you provide for your authors decide the location for the configuration details when you are [activating the RTE plug-ins](configure-rich-text-editor-plug-ins.md#activateplugin). Les emplacements sont les suivants :
+[Mode de modification d’éditeur de texte enrichi et de l’interface](#editingmodes) que vous fournissez pour que les auteurs déterminent l’emplacement des informations de configuration lorsque vous [activez les modules externes d’éditeur de texte enrichi](configure-rich-text-editor-plug-ins.md#activateplugin). Les emplacements sont les suivants :
 
-* Inline mode: `cq:editConfig/cq:inplaceEditing`.
-* Mode Plein écran: `cq:editConfig/cq:inplaceEditing`.
-* Dialog mode: `cq:dialog`.
-* Full-screen dialog mode: `cq:dialog`.
+* Mode en ligne : `cq:editConfig/cq:inplaceEditing`.
+* Mode Plein écran : `cq:editConfig/cq:inplaceEditing`.
+* Mode Boîte de dialogue : `cq:dialog`.
+* Mode Boîte de dialogue plein écran : `cq:dialog`.
 
 >[!NOTE]
 >
@@ -138,11 +138,11 @@ Ne donnez pas le nom `config` au nœud de configuration de l’éditeur de texte
 
 Configurez les propriétés suivantes qui s’appliquent uniquement au mode de modification dans la boîte de dialogue :
 
-* `useFixedInlineToolbar`: Vous pouvez faire en sorte que la barre d’outils RTE soit fixe plutôt que flottante. Définissez cette propriété booléenne définie sur le noeud RTE avec sling:resourceType= `cq/gui/components/authoring/dialog/richtext` sur `True`. Lorsque cette propriété est définie sur `True`, la modification du texte enrichi est lancée sur le `foundation-contentloaded` événement. To prevent this, set the property `customStart` to `True` and trigger the `rte-start` event to start RTE editing. Lorsque cette propriété est définie sur `true`, RTE ne se début pas en cliquant et il s’agit du comportement par défaut.
+* `useFixedInlineToolbar` : vous pouvez faire en sorte que la barre d’outils de l’éditeur de texte enrichi soit fixe plutôt que flottante. Définissez cette propriété booléenne définie sur le nœud RTE avec sling:resourceType= `cq/gui/components/authoring/dialog/richtext` sur `True`. Lorsque cette propriété est définie sur `True`, la modification de texte enrichi est lancée sur l’événement `foundation-contentloaded`. Pour éviter cela, définissez la propriété `customStart` sur `True` et déclenchez l’événement `rte-start` afin de commencer la modification avec l’éditeur de texte enrichi. Lorsque cette propriété est définie sur `true`, l’éditeur de texte enrichi ne démarre pas sur un clic et il s’agit du comportement par défaut.
 
 * `customStart` : configurez cette propriété booléenne définie sur le nœud de l’éditeur de texte enrichi sur `True` pour contrôler à quel moment démarrer l’éditeur de texte enrichi en déclenchant l’événement `rte-start`.
 
-* `rte-start` : déclenchez cet événement sur l’élément `contenteditable-div` d’éditeur de texte enrichi lorsque vous commencez la modification avec l’éditeur de texte enrichi. It works only if `customStart` has been set to `true`.
+* `rte-start` : déclenchez cet événement sur l’élément `contenteditable-div` d’éditeur de texte enrichi lorsque vous commencez la modification avec l’éditeur de texte enrichi. Cette option ne fonctionne que si `customStart` a été défini sur `true`.
 
 Lorsque l’éditeur de texte enrichi est utilisé dans la boîte de dialogue tactile, définissez la propriété `useFixedInlineToolbar` sur `true` pour éviter les problèmes.
 
@@ -155,7 +155,7 @@ Pour consulter des configurations détaillées des modules externes de l’édit
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-The [Core Components text component](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) lets template editors to configure many RTE plug-ins using the user interface as content policies, eliminating the need for technical configuration. Les stratégies de contenu peuvent fonctionner avec les configurations d’interface utilisateur de l’éditeur de texte enrichi décrites dans ce document. Pour plus d’informations, voir [Création de modèles de page](/help/sites-cloud/authoring/features/templates.md) ainsi que la [Documentation destinée aux développeurs relatifs aux composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/developing.html).
+Le [composant textuel Core Components](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) permet aux éditeurs de modèle de configurer de nombreux modules externes de l’éditeur de texte enrichi en tant que stratégies de contenu dans l’interface utilisateur, rendant ainsi inutile toute configuration technique. Les stratégies de contenu peuvent fonctionner avec les configurations d’interface utilisateur de l’éditeur de texte enrichi décrites dans ce document. Pour plus d’informations, voir [Création de modèles de page](/help/sites-cloud/authoring/features/templates.md) ainsi que la [Documentation destinée aux développeurs relatifs aux composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/developing.html).
 
 >À titre de référence, les composants Texte par défaut (fournis dans le cadre d’une installation standard) se trouvent sous :
 >
@@ -168,7 +168,7 @@ Pour créer votre propre composant textuel, copiez le composant ci-dessus au lie
 
 ## Configuration de la barre d’outils de l’éditeur de texte enrichi  {#dialogfullscreen}
 
-[!DNL Experience Manager] vous permet de configurer l’interface de l’éditeur de texte enrichi différemment selon les différents modes de modification. Les paramètres par défaut sont fournis ci-dessous. Vous pouvez remplacer ces paramètres par défaut en fonction de vos besoins. Vous personnalisez uniquement les fonctionnalités de la barre d’outils que vous souhaitez fournir à vos auteurs. Vous n’avez pas besoin de définir toutes les configurations de barre d’outils.
+[!DNL Experience Manager] vous permet de configurer différemment l’interface de l’éditeur de texte enrichi pour les différents modes de modification. Les paramètres par défaut sont fournis ci-dessous. Vous pouvez remplacer ces paramètres par défaut en fonction de vos besoins. Vous personnalisez uniquement les fonctionnalités de la barre d’outils que vous souhaitez fournir à vos auteurs. Vous n’avez pas besoin de définir toutes les configurations de barre d’outils.
 
 Pour configurer la barre d’outils pour `dialogFullScreen`, utilisez l’exemple de configuration suivant.
 
@@ -215,11 +215,11 @@ Différents paramètres d’interface utilisateur sont utilisés pour le mode en
 
 Par exemple, si l’option est elle-même une fonctionnalité (par exemple, `Bold`), elle est spécifiée sous la forme `PluginName#FeatureName` (par exemple, `links#modifylink`).
 
-If the option is a pop over (containing some features of a plug-in), it is specified as `#PluginName` (for example, `#format`).
+Si l’option est un élément contextuel (contenant certaines fonctionnalités d’un module externe), il est spécifié sous la forme `#PluginName` (par exemple, `#format`).
 
 Les séparateurs (`|`) dans un groupe d’options peuvent être spécifiés par le signe `-`.
 
-Le noeud contextuel en mode intégré ou plein écran contient une liste des incrustations utilisées. Each child node under the `popovers` node is named after the plug-in (for example, format). Il possède des « éléments » de propriété contenant la liste des fonctions du module externe (format#bold, par exemple).
+Le nœud pop-up sous le mode en ligne ou plein écran contient la liste des éléments contextuels utilisés. Chaque nœud enfant sous le nœud `popovers` (éléments contextuels) est nommé en fonction du module externe (format, par exemple). Il possède des « éléments » de propriété contenant la liste des fonctions du module externe (format#bold, par exemple).
 
 ## Paramètres de l’interface utilisateur de l’éditeur de texte enrichi et stratégies de contenu  {#rtecontentpolicies}
 
@@ -242,7 +242,7 @@ Vous pouvez personnaliser l’association entre les icônes Coral affichées dan
 1. Sous ce nœud, créez des nœuds pour les différentes icônes.
 1. Sur chacun des nœuds d’icône, spécifiez une icône Coral et une commande à laquelle elle doit être associée.
 
-Below is a sample snippet to map the command `Bold` to the Coral icon named `textItalic`.
+Vous trouverez, ci-dessous, un exemple de fragment de code pour associer la commande `Bold` à l’icône Coral nommée `textItalic`.
 
 ```java
 <text jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/richtext" name="./text" useFixedInlineToolbar="{Boolean}true">
@@ -266,9 +266,9 @@ Below is a sample snippet to map the command `Bold` to the Coral icon named `tex
 
 ## Limitations connues {#known-limitations}
 
-[!DNL Experience Manager]La fonctionnalité RTE présente les limites suivantes :
+[!DNL Experience Manager]Les fonctionnalités de l’éditeur de texte enrichi présentent les limites suivantes :
 
-* RTE capabilities are supported only in [!DNL Experience Manager] component dialogs. L’éditeur de texte enrichi n’est pas pris en charge dans les assistants ou les formulaires Foundation.
+* Les fonctionnalités de l’éditeur de texte enrichi sont prises en charge uniquement dans les boîtes de dialogue des composants [!DNL Experience Manager]. L’éditeur de texte enrichi n’est pas pris en charge dans les assistants ni les formulaires Foundation.
 
 * [!DNL Experience Manager] ne fonctionne pas sur les dispositifs hybrides. <!-- TBD: Check. This is not mentioned in Known Issue /help/release-notes/known-issues.md-->
 
@@ -280,7 +280,7 @@ Below is a sample snippet to map the command `Bold` to the Coral icon named `tex
 
 * Pour une boîte de dialogue flottante, n’activez que les modules externes sans fenêtre contextuelle. Les modules externes sans fenêtre contextuelle sont plus petits et sont les mieux adaptés aux boîtes de dialogue flottantes.
 * Activez les modules externes avec une fenêtre contextuelle plus grande, comme le module externe `Paste`, uniquement en mode Boîte de dialogue plein écran ou en mode Plein écran. Les modules externes possédant une grande fenêtre contextuelle nécessitent davantage d’espace sur l’écran pour offrir une expérience de création optimale.
-* Si vous employez des modules externes personnalisés pour l’éditeur de texte enrichi CoralUI , utilisez la bibliothèque `rte.coralui3`3.
+* Si vous employez des modules externes personnalisés pour l’éditeur de texte enrichi CoralUI3, utilisez la bibliothèque `rte.coralui3`.
 
 >[!MORELIKETHIS]
 >
