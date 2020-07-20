@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1875'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -136,18 +136,18 @@ Les utilisateurs peuvent vérifier que le traitement a bien eu lieu en ouvrant u
 
 S’il s’avère qu’un traitement supplémentaire des ressources est nécessaire, mais qu’il ne peut pas être effectué à l’aide des profils de traitement, des workflows de post-traitement peuvent être ajoutés à la configuration. Cela permet d’ajouter un traitement entièrement personnalisé en plus du traitement configurable à l’aide des microservices de ressources.
 
-Les workflows de post-traitement, s’ils sont configurés, sont automatiquement exécutés par AEM une fois le traitement des microservices terminé. Il n’est pas nécessaire d’ajouter manuellement de lanceurs de workflows pour les déclencher. Voici quelques exemples :
+Les workflows de post-traitement, s’ils sont configurés, sont automatiquement exécutés par AEM une fois le traitement des microservices terminé. Il n’est pas nécessaire d’ajouter manuellement des lanceurs de workflows pour les déclencher. Voici quelques exemples :
 
-* Procédure personnalisée de traitement des ressources.
-* Intégrations permettant d’ajouter des métadonnées ou des propriétés à des ressources provenant de systèmes externes, par exemple des informations sur les produits ou les processus.
+* Étapes du workflow personnalisé de traitement des ressources.
+* Intégrations pour ajouter des métadonnées ou des propriétés à des ressources provenant de systèmes externes (par exemple, des informations sur des produits ou des processus).
 * Traitement supplémentaire effectué par des services externes.
 
 L’ajout d’une configuration de workflow de post-traitement à Experience Manager comprend les étapes suivantes :
 
-* Créez un ou plusieurs modèles de processus. Les documents le mentionnent comme modèles *de processus de* post-traitement, mais il s’agit de modèles de processus Experience Manager réguliers.
-* Ajoutez des étapes de processus spécifiques à ces modèles. Les étapes sont exécutées sur les ressources en fonction d’une configuration de modèle de processus.
-* Ajouter l’étape de processus [!UICONTROL de mise à jour] DAM de la ressource terminée à la fin. Ajouter cette étape permet de s’assurer que le Experience Manager sait quand le traitement se termine et que l’actif peut être marqué comme traité, c’est-à-dire *Nouveau* s’affiche sur l’actif.
-* Créez une configuration pour le service d’exécution de flux de travail personnalisé qui permet de configurer l’exécution d’un modèle de processus de post-traitement soit par un chemin d’accès (emplacement de dossier), soit par une expression régulière.
+* Création d’un ou de plusieurs modèles de workflow. Les documents parlent de *modèles de workflow de post-traitement*, mais il s’agit de modèles de workflow Experience Manager standard.
+* Ajout d’étapes de workflow spécifiques à ces modèles. Les étapes sont exécutées sur les ressources en fonction d’une configuration de modèle de workflow.
+* Ajoutez l’étape [!UICONTROL Processus terminé du workflow Ressource de mise à jour DAM] à la fin. En ajoutant cette étape, vous êtes certain que Experience Manager sait à quel moment le traitement se termine et la ressource peut être marquée comme traitée ; en d’autres termes, *Nouvelle* s’affiche sur la ressource.
+* Création d’une configuration pour le service d’exécution de workflow personnalisé, lequel permet de configurer l’exécution d’un modèle de workflow de post-traitement selon le chemin d’accès (emplacement du dossier) ou une expression régulière.
 
 ### Création de modèles de workflow de post-traitement {#create-post-processing-workflow-models}
 
