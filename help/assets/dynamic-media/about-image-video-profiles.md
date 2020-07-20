@@ -1,31 +1,31 @@
 ---
-title: A propos des Profils d’images et des Profils vidéo Dynamic Media
-description: Un Profil d’image ou un Profil vidéo permet de déterminer les options à appliquer aux fichiers que vous téléchargez dans un dossier. Par exemple, vous pouvez spécifier le codage vidéo à appliquer aux fichiers vidéo Dynamic Media que vous téléchargez. Ou, quel Profil d’image appliquer aux fichiers d’image Dynamic Media pour les faire recadrer correctement.
-translation-type: tm+mt
+title: À propos des profils d’image et vidéo Dynamic Media
+description: Un profil d’image ou vidéo permet de déterminer les options à appliquer aux ressources que vous chargez dans un dossier. Par exemple, vous pouvez spécifier le codage vidéo à appliquer aux ressources vidéo Dynamic Media que vous chargez, ou le profil d’image à appliquer aux ressources d’image Dynamic Media afin de les recadrer correctement.
+translation-type: ht
 source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1296'
+ht-degree: 100%
 
 ---
 
 
-# A propos des Profils d’images et des Profils vidéo Dynamic Media{#about-dm-image-video-profiles}
+# À propos des profils d’image et vidéo Dynamic Media{#about-dm-image-video-profiles}
 
-Un Profil d’image ou un Profil vidéo permet de déterminer les options à appliquer aux fichiers que vous téléchargez dans un dossier. Par exemple, vous pouvez spécifier le codage vidéo à appliquer aux fichiers vidéo Dynamic Media que vous téléchargez. Ou, quel Profil d’image appliquer aux fichiers d’image Dynamic Media pour les faire recadrer correctement.
+Un profil d’image ou vidéo permet de déterminer les options à appliquer aux ressources que vous chargez dans un dossier. Par exemple, vous pouvez spécifier le codage vidéo à appliquer aux ressources vidéo Dynamic Media que vous chargez, ou le profil d’image à appliquer aux ressources d’image Dynamic Media afin de les recadrer correctement.
 
-Dans Dynamic Media, vous pouvez créer deux types de profils, qui sont traités en détail dans les liens suivants :
+Dans Dynamic Media, vous pouvez créer deux types de profils, qui sont abordés en détail sous les liens suivants :
 
-* [profils d’image Dynamic Media](/help/assets/dynamic-media/image-profiles.md)
-* [profils vidéo Dynamic Media](/help/assets/dynamic-media/video-profiles.md)
+* [Profils d’image Dynamic Media](/help/assets/dynamic-media/image-profiles.md)
+* [Profils vidéo Dynamic Media](/help/assets/dynamic-media/video-profiles.md)
 
-See also [Metadata profiles](/help/assets/metadata-profiles.md).
+Voir également à [Profils de métadonnées](/help/assets/metadata-profiles.md).
 
-Vous devez disposer des droits d’administrateur pour créer, modifier et supprimer des Profils d’images Dynamic Media ou des Profils vidéo Dynamic Media.
+Vous devez disposer de droits d’administrateur pour créer, modifier et supprimer des profils d’images ou vidéo Dynamic Media.
 
-Après avoir créé votre Profil d’images ou votre Profil vidéo, vous l’affectez à un ou plusieurs dossiers que vous utilisez comme destination pour les fichiers Dynamic Media récemment téléchargés.
+Une fois votre profil d’image ou vidéo créé, vous pouvez l’affecter à un ou plusieurs dossiers utilisés comme destination des ressources Dynamic Media venant d’être chargées.
 
-See also [Best Practices for Organizing your Digital Assets for using Image Profiles or Video Profiles](/help/assets/dynamic-media/best-practices-for-file-management.md).
+Voir également [Bonnes pratiques relatives à l’organisation de vos ressources numériques pour utiliser des profils d’image ou vidéo](/help/assets/dynamic-media/best-practices-for-file-management.md).
 
 >[!NOTE]
 >
@@ -33,13 +33,13 @@ See also [Best Practices for Organizing your Digital Assets for using Image Prof
 >
 >C’est également le cas lorsque vous déplacez des ressources entre deux dossiers auxquels le même profil est affecté.
 
-## Retraitement des fichiers Dynamic Media dans un dossier {#reprocessing-assets}
+## Retraitement des ressources Dynamic Media dans un dossier {#reprocessing-assets}
 
-Vous pouvez retraiter des fichiers dans un dossier qui comporte déjà un Profil d’images Dynamic Media ou un Profil vidéo Dynamic Media que vous avez modifié ultérieurement.
+Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comporte déjà un profil d’image Dynamic Media ou un profil vidéo Dynamic Media que vous avez ensuite modifié.
 
-Supposons, par exemple, que vous ayez créé un Profil d’image Dynamic Media et l’ayez affecté à un dossier. Le Profil d’image était automatiquement appliqué aux fichiers pour tous les fichiers d’image téléchargés dans le dossier. Cependant, vous déciderez plus tard d’ajouter un nouveau rapport de recadrage intelligent au Profil d’images. Désormais, au lieu de devoir sélectionner et charger à nouveau les ressources dans le dossier, il vous suffit d’exécuter le workflow *Scene7 : Retraiter les ressources*.
+Supposons que vous ayez créé un profil d’image Dynamic Media et que vous l’ayez affecté à un dossier. Le profil d’image a été automatiquement appliqué aux ressources d’image que vous avez chargées dans le dossier. Cependant, vous décidez par la suite d’ajouter un nouveau rapport de recadrage intelligent au profil d’image. Désormais, au lieu de devoir sélectionner et charger à nouveau les ressources dans le dossier, il vous suffit d’exécuter le workflow *Scene7 : Retraiter les ressources*.
 
-Vous pouvez exécuter le workflow de retraitement sur une ressource pour laquelle le traitement a échoué la première fois. Ainsi, même si vous n’avez pas modifié un Profil d’images ou un profil vidéo, ou si vous avez déjà appliqué un Profil d’images ou un Profil vidéo, vous pouvez toujours exécuter le processus de retraitement sur un dossier de fichiers à tout moment.
+Vous pouvez exécuter le workflow de retraitement sur une ressource pour laquelle le traitement a échoué la première fois. Ainsi, même si vous n’avez pas modifié de profil d’image ou vidéo, ou si vous avez déjà appliqué un profil d’image ou vidéo, vous pouvez toujours exécuter le workflow de retraitement sur un dossier de ressources à tout moment.
 
 Vous pouvez, au besoin, régler la taille de lot du workflow de retraitement sur une valeur comprise entre 50 (valeur par défaut) et 1 000 ressources. Lorsque vous exécutez le workflow _Scene7 : Retraiter les ressources_ sur un dossier, les ressources sont regroupées par lots, puis envoyées au serveur Dynamic Media en vue du traitement. Après le traitement, les métadonnées de chaque ressource de l’ensemble du jeu de lots sont mises à jour dans AEM. Si la taille du lot est très importante, le traitement peut être retardé. Si le lot est trop petit, cela peut entraîner un trop grand nombre d’allers-retours avec le serveur Dynamic Media.
 
@@ -56,10 +56,10 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 -->
 
-**Pour retraiter les fichiers Dynamic Media dans un dossier**:
-1. In AEM, from the Assets page, navigate to a folder of Dynamic Media assets that has an Image Profile or a Video Profile assigned to it and for which you want to apply the **Scene7: Reprocess Asset** workflow,
+**Pour retraiter des ressources Dynamic Media dans un dossier** :
+1. Dans AEM, à partir de la page Assets, accédez à un dossier de ressources Dynamic Media auquel un profil d’image ou vidéo est affecté et pour lequel vous souhaitez appliquer le workflow **Scene7 : Retraiter les ressources**.
 
-   Les dossiers auxquels un Profil d’image ou un Profil vidéo est déjà affecté sont indiqués par l’affichage du nom du profil directement sous le nom du dossier dans la Vue Carte.
+   Dans le cas des dossiers auxquels un profil d’image ou vidéo est déjà affecté, le nom du profil est affiché directement sous celui du dossier en mode Carte.
 
 1. Sélectionnez un dossier.
 
