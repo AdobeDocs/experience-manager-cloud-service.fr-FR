@@ -1,11 +1,11 @@
 ---
 title: Système de style
 description: Le système de style permet à un auteur de modèles de définir des classes de style dans la stratégie de contenu d’un composant, de façon à pouvoir sélectionner ces classes lors de la modification du composant sur une page. Ces styles peuvent être des variantes visuelles d’un composant, le rendant ainsi plus flexible.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 130b372a9450c5c632715b098fd5c5ebf61bdf0d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1329'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -100,6 +100,7 @@ Si vous souhaitez utiliser le système de style pour vos propres composants, pro
    * **Les styles peuvent être combinés :** permet de sélectionner simultanément plusieurs styles au sein de ce groupe.
    * **Nom du style :** description du style que l’auteur de contenu verra pendant la configuration du style du composant.
    * **Classes CSS :** nom réel de la classe CSS associée au style.
+
    Utilisez les poignées pour définir l’ordre des groupes et des styles au sein des groupes. Utilisez les icônes d’ajout ou de suppression pour ajouter ou supprimer des groupes ou des styles dans les groupes.
 
 >[!CAUTION]
@@ -116,19 +117,19 @@ Les étapes suivantes ne sont nécessaires que pour activer le système de style
 
 ### Activer l’onglet Style dans la boîte de dialogue Conception {#enable-styles-tab-design}
 
-Pour qu’un composant fonctionne avec le système de style d’AEM et affiche l’onglet de style dans sa boîte de dialogue de conception, le développeur de composant doit inclure l’onglet de style avec les paramètres suivants sur le composant :
+Pour qu’un composant fonctionne avec le système de style d’AEM et affiche l’onglet Style dans sa boîte de dialogue de conception, le développeur de composants doit inclure cet onglet avec les paramètres suivants sur le composant :
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->Cette méthode utilise [des recouvrements](/help/implementing/developing/introduction/overlays.md)au moyen de la fusion [de ressources](/help/implementing/developing/introduction/sling-resource-merger.md)Sling.
+>Cette méthode utilise des [recouvrements](/help/implementing/developing/introduction/overlays.md) en faisant appel à [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 Une fois le composant configuré, les styles définis par les auteurs de pages seront automatiquement insérés par AEM sur l’élément de décoration qu’AEM ajoute automatiquement autour de chaque composant modifiable. Le composant lui-même n’a besoin d’effectuer aucune autre action pour que cela se produise.
 
 ### Activer l’onglet Styles dans la boîte de dialogue Modifier {#enable-styles-tab-edit}
 
-La boîte de dialogue Modifier comporte également un onglet facultatif Styles. Contrairement à l’onglet Boîte de dialogue de conception, l’onglet de la boîte de dialogue de modification n’est pas essentiel pour le fonctionnement du système de style, mais il s’agit d’une autre interface facultative permettant à un auteur de contenu de définir des styles.
+La boîte de dialogue Modifier comporte également un onglet facultatif Styles. Contrairement à l’onglet de la boîte de dialogue Conception, celui de la boîte de dialogue Modifier n’est pas essentiel pour le fonctionnement du système de style. Il s’agit d’une autre interface facultative, utilisable par un auteur de contenu pour définir des styles.
 
 L’onglet de la boîte de dialogue Modifier peut être inclus de la même manière que celui de la boîte de dialogue Conception :
 
@@ -136,7 +137,7 @@ L’onglet de la boîte de dialogue Modifier peut être inclus de la même mani�
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->Cette méthode utilise [des recouvrements](/help/implementing/developing/introduction/overlays.md)au moyen de la fusion [de ressources](/help/implementing/developing/introduction/sling-resource-merger.md)Sling.
+>Cette méthode utilise des [recouvrements](/help/implementing/developing/introduction/overlays.md) en faisant appel à [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 >[!NOTE]
 >
@@ -157,6 +158,7 @@ Cette propriété est définie sur le nœud `cq:Component`. Par exemple :
 >1. HTL est prioritaire sur tout le reste : `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. Ensuite, au sein de plusieurs styles actifs, le premier style de la liste des styles configurés dans la stratégie du composant est sélectionné.
 >1. Enfin, le nom `cq:htmlTag`/ `cq:tagName` du composant est considéré comme une valeur de repli.
+
 >
 
 
