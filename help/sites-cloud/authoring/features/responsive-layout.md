@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 workflow-type: tm+mt
 source-wordcount: '1765'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -97,145 +97,145 @@ Par exemple, lorsque vous sélectionnez l’appareil **iPhone 6 Plus** (défin
    La barre d’outils de l’émulateur affiche des options de mise en page supplémentaires :
 
    * **Rotation du périphérique** : permet de faire pivoter un appareil de l’orientation verticale (portrait) à l’orientation horizontale (paysage), et inversement.
-![Bouton Rotation du périphérique - Paysage](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
-   ![Bouton Rotation du périphérique - Portrait](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)   **Sélectionner un périphérique** : permet de sélectionner un appareil spécifique à émuler dans une liste (pour plus d’informations, voir l’étape suivante).
 
-   * ![Bouton Sélectionner un périphérique](/help/sites-cloud/authoring/assets/responsive-layout-select-device-button.png)
+   ![Bouton Rotation du périphérique - Paysage](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
+   ![Bouton Rotation du périphérique - Portrait](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)
 
-   ![Pour sélectionner un appareil spécifique à émuler, vous pouvez effectuer l’une des opérations suivantes :](/help/sites-cloud/authoring/assets/responsive-layout-select-device-button.png)
+   * **Sélectionner un périphérique** : permet de sélectionner un appareil spécifique à émuler dans une liste (pour plus d’informations, voir l’étape suivante).
 
-1. utiliser l’icône Sélectionner un périphérique et sélectionner l’appareil dans la liste déroulante ;
+   ![Bouton Sélectionner un périphérique](/help/sites-cloud/authoring/assets/responsive-layout-select-device-button.png)
 
+1. Pour sélectionner un appareil spécifique à émuler, vous pouvez effectuer l’une des opérations suivantes :
+
+   * utiliser l’icône Sélectionner un périphérique et sélectionner l’appareil dans la liste déroulante ;
    * appuyer ou cliquer sur l’indicateur de l’appareil dans la barre d’outils de l’émulateur.
-   * ![Menu déroulant Sélectionner un périphérique](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
-   ![Une fois un appareil spécifique sélectionné, vous pouvez visualiser les éléments suivants :](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
+   ![Menu déroulant Sélectionner un périphérique](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
-1. Marqueurs actifs de l’appareil sélectionné (**iPad**, par exemple).
+1. Une fois un appareil spécifique sélectionné, vous pouvez visualiser les éléments suivants :
 
+   * Marqueurs actifs de l’appareil sélectionné (**iPad**, par exemple).
    * Marqueurs actifs du [point d’arrêt](#layout-definitions-device-emulation-and-breakpoints) approprié (**Tablette**, par exemple).
    * La ligne pointillée bleue représente le *pli* pour l’appareil sélectionné (ici, **iPhone 6 Plus** en mode Paysage).
-   * ![Le pli](/help/sites-cloud/authoring/assets/responsive-layout-fold.png)****
 
-   Le pli peut également être considéré comme le saut de ligne dans la page (à ne pas confondre avec les [points d’arrêt](#layout-definitions-device-emulation-and-breakpoints)) pour le contenu. Il est affiché à titre de référence pour indiquer quelle partie du contenu l’utilisateur verra sur son appareil avant de faire défiler.
+   ![Le pli](/help/sites-cloud/authoring/assets/responsive-layout-fold.png)
 
-   * La ligne du pli ne s’affiche pas si la hauteur de l’appareil émulé est supérieure à la taille de l’écran.[](#layout-definitions-device-emulation-and-breakpoints)
+   * Le pli peut également être considéré comme le saut de ligne dans la page (à ne pas confondre avec les [points d’arrêt](#layout-definitions-device-emulation-and-breakpoints)) pour le contenu. Il est affiché à titre de référence pour indiquer quelle partie du contenu l’utilisateur verra sur son appareil avant de faire défiler.
+   * La ligne du pli ne s’affiche pas si la hauteur de l’appareil émulé est supérieure à la taille de l’écran.
    * Le pli est affiché pour faciliter le travail de l’auteur et n’apparaît pas sur la page publiée.
-   * Ajout d’un conteneur de mises en page et de son contenu (mode d’édition) {#adding-a-layout-container-and-its-content-edit-mode}
 
 
-## Un **conteneur de mises en page** est un système de paragraphes qui présente les caractéristiques suivantes :
+## Ajout d’un conteneur de mises en page et de son contenu (mode d’édition) {#adding-a-layout-container-and-its-content-edit-mode}
 
-Il contient d’autres composants.****
+Un **conteneur de mises en page** est un système de paragraphes qui présente les caractéristiques suivantes :
 
+* Il contient d’autres composants.
 * Il définit la mise en page.
 * Il est réactif face aux modifications.
-* [!NOTE]
 
+>[!NOTE]
+>
 >S’il n’est pas encore disponible, le **conteneur de mises en page** doit être explicitement activé pour un système de paragraphes ou une page. <!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
+
+1. Le **conteneur de mise en page** est disponible en tant que composant standard dans l’[explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). De là, vous pouvez le faire glisser vers l’emplacement souhaité sur la page, après lequel vous verrez l’espace réservé **Faire glisser les composants ici**.
+1. Vous pouvez ensuite ajouter des composants au conteneur de mises en page, qui contiendront le contenu proprement dit :
+
+   ![Conteneur de mises en page](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
+
+## Sélection et exécution d’une action sur un conteneur de mises en page (mode d’édition) {#selecting-and-taking-action-on-a-layout-container-edit-mode}
+
+À l’instar des autres composants, vous pouvez sélectionner un conteneur de mises en page, puis effectuer une opération (couper, copier, supprimer) sur ce dernier (en mode d’**édition**) :
+
+>[!CAUTION]
 >
->Le **conteneur de mise en page** est disponible en tant que composant standard dans l’[explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). De là, vous pouvez le faire glisser vers l’emplacement souhaité sur la page, après lequel vous verrez l’espace réservé **Faire glisser les composants ici**.
+>Un conteneur de mises en page étant un système de paragraphes, sa suppression entraîne celle de la grille de mise en page et de tous les composants (et de leur contenu) qu’il contient.
 
-1. Vous pouvez ensuite ajouter des composants au conteneur de mises en page, qui contiendront le contenu proprement dit :****[](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)****
-1. ![Conteneur de mises en page](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
+1. Si vous pointez ou appuyez sur l’espace réservé de la grille, le menu Action s’affiche.
 
-   Sélection et exécution d’une action sur un conteneur de mises en page (mode d’édition) {#selecting-and-taking-action-on-a-layout-container-edit-mode}](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
-
-## À l’instar des autres composants, vous pouvez sélectionner un conteneur de mises en page, puis effectuer une opération (couper, copier, supprimer) sur ce dernier (en mode d’**édition**) :
-
-[!CAUTION]**
-
->[!CAUTION]Un conteneur de mises en page étant un système de paragraphes, sa suppression entraîne celle de la grille de mise en page et de tous les composants (et de leur contenu) qu’il contient.
->
->Si vous pointez ou appuyez sur l’espace réservé de la grille, le menu Action s’affiche.
-
-1. ![Ajout au conteneur de mises en page](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
+   ![Ajout au conteneur de mises en page](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 
    Vous devez sélectionner l’option **Parent**.
 
    ![Bouton Parent](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
-   Si le composant de mise en page est imbriqué, sélectionnez l’option **Parent** pour afficher une liste déroulante et sélectionner le conteneur de mises en page imbriqué, ou son ou ses parents.
+1. Si le composant de mise en page est imbriqué, sélectionnez l’option **Parent** pour afficher une liste déroulante et sélectionner le conteneur de mises en page imbriqué, ou son ou ses parents.
 
-1. Lorsque vous pointez sur le nom d’un conteneur dans la liste déroulante, ses contours s’affichent sur la page.****
+   Lorsque vous pointez sur le nom d’un conteneur dans la liste déroulante, ses contours s’affichent sur la page.
 
-   Les contours du conteneur de mises en page imbriqué du plus bas niveau s’affichent en bleu.
-
+   * Les contours du conteneur de mises en page imbriqué du plus bas niveau s’affichent en bleu.
    * Les contours de chaque conteneur successif s’affichent dans une nuance de bleu plus claire.
-   * ![Conteneurs imbriqués](/help/sites-cloud/authoring/assets/responsive-layout-nested.png)
 
-   Cette opération sélectionne l’ensemble de la grille avec son contenu. La barre d’outils s’affiche. Vous pouvez alors sélectionner une action comme **Supprimer**.
+   ![Conteneurs imbriqués](/help/sites-cloud/authoring/assets/responsive-layout-nested.png)
 
-1. Définition des mises en page (mode Mise en page) {#defining-layouts-layout-mode}**
+1. Cette opération sélectionne l’ensemble de la grille avec son contenu. La barre d’outils s’affiche. Vous pouvez alors sélectionner une action comme **Supprimer**.
 
-## [!NOTE]
+## Définition des mises en page (mode Mise en page) {#defining-layouts-layout-mode}
 
->Vous pouvez définir une mise en page distincte pour chaque [point d’arrêt](#layout-definitions-device-emulation-and-breakpoints) (déterminée par l’orientation et le type d’appareil émulé).
+>[!NOTE]
 >
->Pour configurer la mise en page d’une grille réactive mise en œuvre avec le composant Conteneur de mises en page, vous devez utiliser le mode **Mise en page**.
+>Vous pouvez définir une mise en page distincte pour chaque [point d’arrêt](#layout-definitions-device-emulation-and-breakpoints) (déterminée par l’orientation et le type d’appareil émulé).
+
+Pour configurer la mise en page d’une grille réactive mise en œuvre avec le composant Conteneur de mises en page, vous devez utiliser le mode **Mise en page**.
 
 Le mode **Mise en page** peut être activé de deux façons.
 
-À l’aide du [menu de mode de la barre d’outils](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), en sélectionnant le mode **Mise en page**.
-
-* Sélectionnez le mode **Mise en page** de la même façon que vous passeriez en mode **Édition** ou en mode **Ciblage**.
-   * Le mode **Mise en page** est un mode persistant, ce qui signifie qu’il reste sélectionné jusqu’à ce que vous choisissiez un autre mode à l’aide du sélecteur de mode.********
-   * Lors de la [modification d’un composant individuel.](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)****
-* L’option **Mise en page** du menu Actions rapides du composant permet de passer au mode **Mise en page**.
+* À l’aide du [menu de mode de la barre d’outils](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), en sélectionnant le mode **Mise en page**.
+   * Sélectionnez le mode **Mise en page** de la même façon que vous passeriez en mode **Édition** ou en mode **Ciblage**.
+   * Le mode **Mise en page** est un mode persistant, ce qui signifie qu’il reste sélectionné jusqu’à ce que vous choisissiez un autre mode à l’aide du sélecteur de mode.****
+* Lors de la [modification d’un composant individuel.](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)
+   * L’option **Mise en page** du menu Actions rapides du composant permet de passer au mode **Mise en page**.
    * Le mode **Mise en page** persiste pendant la modification du composant et bascule vers le mode d’**édition** lorsqu’un autre composant est sélectionné.
-   * **Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses actions sur une grille :******
 
-Redimensionnez les composants de contenu à l’aide des points bleus. Le redimensionnement s’aligne toujours sur la grille. Lors du redimensionnement, la grille d’arrière-plan s’affiche pour faciliter l’alignement :
+Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses actions sur une grille :
 
-* ![Redimensionnement des composants](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
+* Redimensionnez les composants de contenu à l’aide des points bleus. Le redimensionnement s’aligne toujours sur la grille. Lors du redimensionnement, la grille d’arrière-plan s’affiche pour faciliter l’alignement :
 
-   [!NOTE]](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
+   ![Redimensionnement des composants](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
 
-   >Les proportions et les rapports sont conservés lorsque des composants, tels que des **images**, sont redimensionnés.
+   >[!NOTE]
    >
-   >Cliquez ou appuyez sur un composant de contenu. La barre d’outils propose les options suivantes :****
+   >Les proportions et les rapports sont conservés lorsque des composants, tels que des **images**, sont redimensionnés.
 
-* **Parent** : permet de sélectionner l’intégralité du composant Conteneur de mises en pages pour effectuer une opération.
+* Cliquez ou appuyez sur un composant de contenu. La barre d’outils propose les options suivantes :
+   * **Parent** : permet de sélectionner l’intégralité du composant Conteneur de mises en pages pour effectuer une opération.
    * **Flotter sur une nouvelle ligne** : le composant est déplacé vers une nouvelle ligne selon l’espace disponible dans la grille.
    * **Masquer le composant** : le composant devient invisible (il peut être restauré à partir de la barre d’outils du conteneur de mises en page).
-   * ![Masquer le composant](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-   En mode **Mise en page**, appuyez ou cliquez sur **Faire glisser les composants ici** pour sélectionner l’intégralité du composant. La barre d’outils pour ce mode s’affiche.
+   ![Masquer le composant](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* La barre d’outils propose des options différentes selon l’état du composant de mise en page et des composants associés. Par exemple :********
+* En mode **Mise en page**, appuyez ou cliquez sur **Faire glisser les composants ici** pour sélectionner l’intégralité du composant. La barre d’outils pour ce mode s’affiche.
 
-   **Parent** : permet de sélectionner le composant parent.
+   La barre d’outils propose des options différentes selon l’état du composant de mise en page et des composants associés. Par exemple :
 
-   * ![Bouton Parent](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
+   * **Parent** : permet de sélectionner le composant parent.
 
-      **Afficher les composants masqués** : affiche tous les composants ou des composants individuels. Le chiffre indique le nombre actuel de composants masqués. Le compteur indique le nombre de composants masqués.
+      ![Bouton Parent](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
-   * ![Bouton Afficher les composants masqués](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
+   * **Afficher les composants masqués** : affiche tous les composants ou des composants individuels. Le chiffre indique le nombre actuel de composants masqués. Le compteur indique le nombre de composants masqués.
 
-      **Rétablir la disposition du point d’arrêt** : rétablit la mise en page par défaut. Aucune mise en page personnalisée n’est donc imposée.
+      ![Bouton Afficher les composants masqués](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
 
-   * ![Bouton Rétablir la disposition du point d’arrêt](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
+   * **Rétablir la disposition du point d’arrêt** : rétablit la mise en page par défaut. Aucune mise en page personnalisée n’est donc imposée.
 
-      **Flotter sur une nouvelle ligne** : déplace le composant d’une position vers le haut si l’espace est suffisant.
+      ![Bouton Rétablir la disposition du point d’arrêt](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
 
-   * ![Bouton Flotter sur une nouvelle ligne](/help/sites-cloud/authoring/assets/responsive-layout-float-button.png)
+   * **Flotter sur une nouvelle ligne** : déplace le composant d’une position vers le haut si l’espace est suffisant.
 
-      **Masquer le composant** : masque le composant actif.
+      ![Bouton Flotter sur une nouvelle ligne](/help/sites-cloud/authoring/assets/responsive-layout-float-button.png)
 
-   * ![Bouton Masquer le composant](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
+   * **Masquer le composant** : masque le composant actif.
 
-      [!NOTE]](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
-   >[!NOTE]Dans l’exemple ci-dessus, les actions de flottement et de masquage sont disponibles, car ce conteneur de mises en page est imbriqué dans un conteneur de mises en page parent.
+      ![Bouton Masquer le composant](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
+   >[!NOTE]
    >
-   >**Afficher les composants**
-Sélectionnez les composants parents pour afficher la barre d’outils comportant l’option **Afficher les composants masqués**. Dans cet exemple, deux composants sont masqués.
+   >Dans l’exemple ci-dessus, les actions de flottement et de masquage sont disponibles, car ce conteneur de mises en page est imbriqué dans un conteneur de mises en page parent.
 
-   * ![Afficher les composants](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
-Si vous sélectionnez l’option **Afficher les composants masqués**, les composants actuellement masqués s’affichent en bleu à leur position initiale.
+   * **Afficher les composants** Sélectionnez les composants parents pour afficher la barre d&#39;outils d&#39;action avec la fonction 
+**Afficher l&#39;option de composants** masqués. Dans cet exemple, deux composants sont masqués.
 
-      ![Bouton Restaurer tout](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
+      ![Afficher les composants](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
+   Si vous sélectionnez l’option **Afficher les composants masqués**, les composants actuellement masqués s’affichent en bleu à leur position initiale.
+
+   ![Bouton Restaurer tout](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
+
    Sélectionnez **Restaurer tout** pour afficher tous les composants masqués.
-
-   ![Restore all button](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
-
-   Selecting **Restore all** will unhide all hidden components.
