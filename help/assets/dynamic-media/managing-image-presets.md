@@ -1,16 +1,16 @@
 ---
-title: 'Gestion des paramètres d’image prédéfinis   '
+title: Gestion des paramètres d’image prédéfinis
 description: Découvrez les paramètres d’image prédéfinis, et comment les créer, les modifier et les gérer.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3651'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# Gestion des paramètres d’image prédéfinis   {#managing-image-presets}
+# Gestion des paramètres d’image prédéfinis{#managing-image-presets}
 
 Les paramètres d’image prédéfinis permettent à AEM Assets d’afficher des images selon des tailles et des formats différents, ou avec d’autres propriétés d’image générées dynamiquement. Chaque paramètre d’image prédéfini représente un ensemble prédéfini de commandes de dimensionnement et de mise en forme pour l’affichage des images. Lorsque vous créez un paramètre d’image prédéfini, vous choisissez une taille pour la diffusion de l’image. Vous pouvez également choisir des commandes de mise en forme pour optimiser l’aspect de l’image lors de la diffusion de l’image.
 
@@ -34,7 +34,7 @@ Les images de taille réduite, lorsqu’elles sont diffusées dynamiquement, peu
 
 Les administrateurs peuvent créer des paramètres d’image prédéfinis. Vous pouvez créer un paramètre d’image prédéfini ou commencer par un paramètre d’image existant et l’enregistrer sous un nouveau nom.
 
-## Gestion des paramètres d’image prédéfinis    {#managing-image-presets-1}
+## Gestion des paramètres d’image prédéfinis  {#managing-image-presets-1}
 
 La gestion des paramètres d’image prédéfinis dans AEM s’effectue en appuyant ou en cliquant sur le logo AEM pour accéder à la console de navigation globale, puis en appuyant ou en cliquant sur l’icône Outils et en accédant à **[!UICONTROL Ressources > Paramètres d’image prédéfinis]**.
 
@@ -52,7 +52,7 @@ La gestion des paramètres d’image prédéfinis dans AEM s’effectue en appuy
 >
 >Le système affiche une grande variété de rendus lorsque vous sélectionnez **[!UICONTROL Rendus]** dans l’affichage des détails d’une ressource. Vous pouvez augmenter le nombre de paramètres d’image prédéfinis affichés. Voir [Augmentation du nombre de paramètres d’image prédéfinis affichés](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
-### Formats de fichiers Adobe Illustrator (AI), PostScript (EPS) et PDF    {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+### Formats de fichiers Adobe Illustrator (AI), PostScript (EPS) et PDF  {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
 Si vous avez l’intention de prendre en charge l’assimilation de fichiers AI, EPS et PDF de manière à pouvoir générer des rendus dynamiques de ces formats de fichiers, vous pouvez consulter les informations suivantes avant de créer des paramètres d’image prédéfinis.
 
@@ -77,7 +77,7 @@ Vous pouvez afficher les sous-ressources ou les pages lorsque vous ouvrez la res
 >
 >L’étape **[!UICONTROL Miniatures EPS]** du workflow Ressource de mise à jour de gestion des actifs numériques génère des miniatures pour les fichiers EPS.
 
-#### Propriétés des métadonnées de ressource PDF/AI/EPS    {#pdf-ai-eps-asset-metadata-properties}
+#### Propriétés des métadonnées de ressource PDF/AI/EPS  {#pdf-ai-eps-asset-metadata-properties}
 
 | **Propriété de métadonnées** | **Description** |
 |---|---|
@@ -130,7 +130,7 @@ Largeur max. et Hauteur max. limitent la résolution à laquelle la pixellisatio
 
 Une valeur maximale est définie pour le composant de processus `Rasterize PDF/AI Image Preview Rendition`, afin de s’assurer qu’il ne crée pas d’images exagérément grandes en mémoire. Ces images volumineuses peuvent, en effet, dépasser la capacité de mémoire allouée à la machine virtuelle Java (JVM). Il faut veiller à fournir suffisamment de mémoire à la machine virtuelle Java pour gérer le nombre configuré de workflows parallèles, de sorte que chacun d’eux soit en mesure de créer une image à la taille maximale configurée.
 
-### Format de fichier InDesign (INDD)    {#indesign-indd-file-format}
+### Format de fichier InDesign (INDD)  {#indesign-indd-file-format}
 
 Si vous avez l’intention de prendre en charge l’assimilation de fichiers INDD de manière à pouvoir générer le rendu dynamique de ce format de fichier, vous pouvez consulter les informations suivantes avant de créer des paramètres d’image prédéfinis.
 
@@ -205,7 +205,7 @@ Le dimensionnement des miniatures est défini au format suivant : **[!UICONTROL
 
 1. Appuyez sur **[!UICONTROL Enregistrer]** pour enregistrer les modifications apportées au workflow.
 
-### Augmentation ou diminution du nombre de paramètres d’image prédéfinis affichés    {#increasing-or-decreasing-the-number-of-image-presets-that-display}
+### Augmentation ou diminution du nombre de paramètres d’image prédéfinis affichés  {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
 Les paramètres d’image prédéfinis que vous créez sont disponibles sous la forme de rendus dynamiques lorsque vous prévisualisez des ressources. AEM affiche une grande variété de rendus dynamiques lors de l’affichage de ressources à partir de **[!UICONTROL Affichage des détails > Rendus]**. Vous pouvez augmenter ou diminuer la limite des rendus affichés.
 
@@ -394,7 +394,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
   </tr>
   <tr>
    <td><strong>Modificateur d’image</strong></td>
-   <td><p>Au-delà des paramètres d’image courants disponibles dans l’IU, Dynamic Media prend en charge de nombreuses modifications d’image avancées que vous pouvez spécifier dans le champ <strong>Modificateurs d’images</strong>. Ces paramètres sont définis dans la <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">référence des commandes du protocole de serveur d’images</a>.</p> <p>Important : La fonctionnalité suivante répertoriée dans l’API n’est pas prise en charge :</p>
+   <td><p>Au-delà des paramètres d’image courants disponibles dans l’IU, Dynamic Media prend en charge de nombreuses modifications d’image avancées que vous pouvez spécifier dans le champ <strong>Modificateurs d’images</strong>. Ces paramètres sont définis dans la <a href="https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">référence des commandes du protocole de serveur d’images</a>.</p> <p>Important : La fonctionnalité suivante répertoriée dans l’API n’est pas prise en charge :</p>
     <ul>
      <li>Commandes de base de création de modèles et de rendu de texte : <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> et <code>textPs=</code></li>
      <li>Commandes de localisation : <code>locale=</code> et <code>req=xlate</code></li>
@@ -468,7 +468,7 @@ Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l
 1. Sélectionnez un paramètre prédéfini, puis cliquez sur **[!UICONTROL Modifier]**. La fenêtre **[!UICONTROL Modifier le paramètre d’image prédéfini]** s’ouvre.
 1. Apportez des modifications, puis cliquez sur **[!UICONTROL Enregistrer]** pour les enregistrer ou sur **[!UICONTROL Annuler]** pour les annuler.
 
-### Publication des paramètres d’image prédéfinis    {#publishing-image-presets}
+### Publication des paramètres d’image prédéfinis  {#publishing-image-presets}
 
 Les paramètres d’image prédéfinis sont automatiquement publiés.
 
