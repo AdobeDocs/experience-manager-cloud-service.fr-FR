@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1e894b07de0f92c4cd96f2a309722aaadd146830
 workflow-type: tm+mt
 source-wordcount: '1631'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ Lors de la mise à jour d’AEM as a Cloud Service, il y aura des instances où
 
 -->
 
-S’il est nécessaire d’identifier le principal dans la grappe, l’API Apache Sling Discovery peut être utilisée pour le détecter.
+S’il est nécessaire d’identifier l’instance principale dans la grappe, l’API Apache Sling Discovery peut être utilisée pour le détecter.
 
 ## État en mémoire {#state-in-memory}
 
