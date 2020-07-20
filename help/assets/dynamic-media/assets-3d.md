@@ -7,11 +7,11 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS and AEM as a Cloud Service
 topic-tags: introduction
 content-type: reference
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b44e6a522b6f2363daa40c6c6f9640ba2fadd35e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2276'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -30,11 +30,11 @@ Aucune installation supplémentaire n’est nécessaire pour utiliser des ressou
 
 <!-- See also [Dynamic Media 3D Release Notes.](/help/release-notes/aem3d-release-notes.md) -->
 
-## Formats 3D pris en charge par Dynamic Media {#supported-three-d-file-formats-in-dm}
+## Formats 3D pris en charge par Dynamic Media {#supported-three-d-file-formats-in-dm}
 
-Dynamic Media prend en charge les formats de fichier 3D suivants.
+Dynamic Media prend en charge les formats de fichiers 3D suivants :
 
-Voir aussi Formats [3D pris en charge](/help/assets/file-format-support.md#supported-3d-formats)
+Voir aussi [Formats 3D pris en charge](/help/assets/file-format-support.md#supported-3d-formats)
 
 | Extension de fichier 3D | Format de fichier | Type MIME | Notes |
 |---|---|---|---|
