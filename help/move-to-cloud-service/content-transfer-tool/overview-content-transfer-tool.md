@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -48,9 +48,9 @@ Lors de la phase d’ingestion, pour appliquer le contenu différentiel en plus 
 
 Consultez la section ci-dessous pour accéder aux conseils et connaître les bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu :
 
-* Il est conseillé d’exécuter des contrôles [de cohérence de](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/revision-cleanup.html) nettoyage [de révision et de stockage de](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) données sur le référentiel **source** afin d’identifier les problèmes potentiels et de réduire la taille du référentiel.
+* Il est conseillé de procéder à un [nettoyage de révision](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/deploying/deploying/revision-cleanup.html) et à des [contrôles de cohérence de l’entrepôt de données](https://helpx.adobe.com/fr/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) sur le référentiel **source** pour identifier les problèmes potentiels et réduire la taille du référentiel.
 
-* Si la configuration du réseau CDN (AEM Cloud Author Content Diffusion Network) est configurée pour disposer d’une liste blanche des adresses IP, il faut s’assurer que les adresses IP de l’environnement source sont également ajoutées à la liste autorisée afin que l’environnement source et l’environnement AEM Cloud puissent communiquer entre eux.
+* Si le réseau de diffusion de contenu (CDN) de l’instance d’auteur AEM Cloud est configuré pour disposer d’une liste blanche d’adresses IP, il faut s’assurer que les adresses IP de l’environnement source sont aussi ajoutées à la liste autorisée pour que l’environnement source et l’environnement AEM Cloud puissent communiquer entre eux.
 
 * Lors de la phase d’ingestion, il est recommandé d’exécuter l’ingestion en activant le mode d’*effacement*. Dans ce cas, le référentiel existant (auteur ou publication) de l’environnement AEM Cloud Service cible sera complètement supprimé, puis mis à jour à l’aide des données du jeu de migration. Ce mode est beaucoup plus rapide que le mode sans effacement, où le jeu de migration est appliqué par-dessus le contenu existant.
 
