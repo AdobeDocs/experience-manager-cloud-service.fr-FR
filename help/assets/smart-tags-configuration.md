@@ -2,11 +2,11 @@
 title: Balises intelligentes améliorées
 description: Appliquez des balises commerciales contextuelles et descriptives à l’aide du service AI et ML d’Adobe Sensei afin d’améliorer la découverte de ressources et la vitesse du contenu.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c24fa22178914b1186b7f29bdab64d3bca765fe5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1009'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -23,15 +23,15 @@ La fonctionnalité est disponible à l’achat sous la forme d’un module compl
 3. Keystroke all steps and check all screenshots.
 -->
 
-## Intégration avec Adobe Developer Console {#aio-integration}
+## Intégration à Adobe Developer Console {#aio-integration}
 
 Avant de pouvoir baliser les images à l’aide de SCS, intégrez [!DNL Adobe Experience Manager] avec le service de balises intelligentes à l’aide d’Adobe Developer Console. En arrière-plan, le serveur [!DNL Experience Manager] authentifie vos informations d’identification du service auprès de la passerelle Adobe Developer Console avant de transférer votre demande au service de balises intelligentes.
 
-* Créez une configuration dans [!DNL Experience Manager] pour générer une clé publique. [Obtenez un certificat public pour l’intégration d’OAuth.](#obtain-public-certificate)
-* [Créez une intégration dans Adobe Developer Console et chargez la clé publique générée.](#create-aio-integration)
-* [Configurez les balises](#configure-smart-content-service) dynamiques dans votre [!DNL Experience Manager] instance à l’aide de la clé d’API et d’autres informations d’identification d’Adobe Developer Console.
+* Créez une configuration dans [!DNL Experience Manager] pour générer une clé publique. [Obtenez un certificat public](#obtain-public-certificate) pour l’intégration d’OAuth.
+* [Créez une intégration dans Adobe Developer Console](#create-aio-integration) et chargez la clé publique générée.
+* [Configurez des balises intelligentes](#configure-smart-content-service) dans votre instance [!DNL Experience Manager] en utilisant la clé API et d’autres informations d’identification d’Adobe Developer Console.
 * [Testez la configuration](#validate-the-configuration).
-* [Reconfigurer après l’expiration](#certrenew)du certificat.
+* [Reconfigurez après l’expiration du certificat](#certrenew).
 
 ### Conditions préalables pour l’intégration d’Adobe Developer Console {#prerequisite-for-aio-integration}
 
