@@ -1,11 +1,11 @@
 ---
 title: Gestion des fragments de contenu
 description: Les fragments de contenu sont stockés en tant que ressources, et ils sont donc principalement gérés par l’intermédiaire de la console Ressources.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5f332f247cc8a9baafb3e80a362a04410a9d036f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1454'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -26,13 +26,13 @@ Les [modèles de fragments de contenu](/help/assets/content-fragments/content-fr
 
 ### Création d’un fragment de contenu {#creating-a-content-fragment}
 
-La méthode de création d’un fragment de contenu est la suivante :
+La méthode de création d’un fragment de contenu est la suivante :
 
 1. Accédez au dossier **Ressources** dans lequel vous souhaitez créer le fragment.
 2. Pour ouvrir l’assistant, sélectionnez **Créer**, puis **Fragment de contenu**.
 3. La première étape de l’assistant nécessite de spécifier la base du nouveau fragment.
 
-   * [Modèle](/help/assets/content-fragments/content-fragments-models.md) - utilisé pour créer un fragment qui nécessite un contenu structuré ; par exemple le modèle **Aventure**
+   * [Modèle](/help/assets/content-fragments/content-fragments-models.md) : utilisé pour créer un fragment qui nécessite du contenu structuré, par exemple, le modèle **Adventure**.
 
       * Tous les modèles disponibles s’affichent.
 
@@ -222,7 +222,7 @@ Vous pouvez afficher et modifier les propriétés d’un fragment à l’aide de
 
 ## Chronologie pour les fragments de contenu  {#timeline-for-content-fragments}
 
-Outre les options standard, la [Chronologie](/help/assets/manage-digital-assets.md#timeline) fournit les informations et les actions spécifiques aux fragments de contenu :
+Outre les options standard, la [Chronologie](/help/assets/manage-digital-assets.md#timeline) fournit les informations et les actions spécifiques aux fragments de contenu :
 
 * Affichage des informations sur les versions, commentaires et annotations
 * Actions pour les versions
