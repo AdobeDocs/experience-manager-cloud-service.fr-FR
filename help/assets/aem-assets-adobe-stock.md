@@ -2,9 +2,9 @@
 title: Utilisation de ressources numériques Adobe Stock dans AEM Assets
 description: Vous pouvez rechercher, récupérer, acquérir sous licence et gérer des ressources Adobe Stock dans Experience Manager. Traitez les ressources sous licence comme n’importe quelle autre ressource Experience Manager.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1132'
 ht-degree: 100%
 
