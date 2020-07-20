@@ -1,9 +1,9 @@
 ---
 title: Variations – création de contenu de fragment
 description: Les variations permettent de créer du contenu pour le fragment, puis de créer des variations de ce contenu selon l’objectif recherché (si nécessaire).
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5f332f247cc8a9baafb3e80a362a04410a9d036f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1686'
 ht-degree: 100%
 
@@ -68,7 +68,7 @@ L’éditeur plein écran fournit :
 * l’accès à diverses [actions](#actions) ;
 * selon le [format](#formats), des options de mise en forme supplémentaires ([texte enrichi](#rich-text)).
 
-### Actions   {#actions}
+### Actions  {#actions}
 
 Les actions suivantes sont également disponibles (pour tous les [formats](#formats)) lorsque l’éditeur plein écran (c’est-à-dire pour le texte sur plusieurs lignes) est ouvert :
 
@@ -204,6 +204,7 @@ D’autres langues sont disponibles en tant que modules de modèle de langues da
    * Toutes les phrases à éliminer sont biffées en rouge.
    * Cliquez sur n’importe quelle phrase en surbrillance pour la conserver dans le contenu résumé.
    * Cliquez sur n’importe quelle phrase qui ne figure pas en surbrillance pour l’éliminer.
+
    ![comparaison des résumés](assets/cfm-variations-06.png)
 
 6. Sélectionnez **Résumer** pour confirmer les modifications.
@@ -224,7 +225,7 @@ Pour annoter un fragment :
 
 ### Affichage, modification et suppression d’annotations {#viewing-editing-deleting-annotations}
 
-Annotations:
+Les annotations :
 
 * Sont mise en surbrillance sur le texte, en mode plein écran et en mode normal de l’éditeur. Les détails complets d’une annotation peuvent être affichés, modifiés et/ou supprimés en cliquant sur le texte mis en surbrillance, ce qui rouvre la boîte de dialogue.
 
@@ -261,6 +262,7 @@ Il existe différentes méthodes pour ajouter des [images](/help/assets/content-
 
    * Accéder à la ressource souhaitée dans la gestion des actifs numériques
    * Rechercher la ressource dans la gestion des actifs numériques
+
    Une fois la ressource souhaitée localisée, sélectionnez-la en cliquant sur la miniature.
 
 4. Utilisez **Sélectionner** pour ajouter le fichier au système de paragraphes de votre fragment de contenu à l’emplacement actuel.
@@ -271,7 +273,7 @@ Il existe différentes méthodes pour ajouter des [images](/help/assets/content-
    * **Markdown** : le fichier ne sera pas visible, mais il sera toujours présent lorsque vous reviendrez au **texte enrichi**.
 
 
-## Gestion des variations   {#managing-variations}
+## Gestion des variations  {#managing-variations}
 
 ### Création d’une variation {#creating-a-variation}
 
@@ -288,7 +290,7 @@ Pour créer une variation, procédez comme suit :
    >[!NOTE]
    Lors de la création d’une variation, c’est toujours le **Maître** qui est copié et non pas la variation ouverte.
 
-### Modification d’une variation   {#editing-a-variation}
+### Modification d’une variation  {#editing-a-variation}
 
 Vous pouvez apporter des modifications au contenu de la variation après avoir :
 
@@ -312,7 +314,7 @@ Pour renommer une variation existante :
 >[!NOTE]
 Cette opération concerne uniquement le **Titre** de la variation.
 
-### Suppression d’une variation   {#deleting-a-variation}
+### Suppression d’une variation  {#deleting-a-variation}
 
 Pour supprimer une variation existante :
 
@@ -325,14 +327,14 @@ Pour supprimer une variation existante :
 >[!NOTE]
 Vous ne pouvez pas supprimer le **Maître**.
 
-### Synchronisation avec le gabarit {#synchronizing-with-master}
+### Synchronisation avec le maître {#synchronizing-with-master}
 
 Le **Maître** fait partie intégrante d’un fragment de contenu et, par définition, il contient la copie maître du contenu, tandis que les variations contiennent les versions individuelles et personnalisées de ce contenu. Lorsque le Maître est mis à jour, il est possible que ces modifications soient également liées aux variations et qu’elles doivent, par conséquent, être appliquées à celles-ci.
 
 Lors de la modification d’une variation, vous pouvez accéder à l’action de synchronisation de l’élément actuel de la variation avec le maître. Vous pouvez ainsi copier automatiquement les modifications apportées au Maître sur la variation requise.
 
 >[!CAUTION]
-La synchronisation n’est disponible que pour copier les modifications *du **gabarit**dans la variation*.
+La synchronisation n’est disponible que pour copier les modifications *du **Maître**dans la variation*.
 Seul l’élément actuel de la variation est synchronisé.
 La synchronisation fonctionne uniquement sur le type de données **Plusieurs lignes de texte**.
 Le transfert des modifications n’est pas proposé *entre une variation et le **Maître ***.
@@ -344,11 +346,12 @@ Le transfert des modifications n’est pas proposé *entre une variation et le *
 
    * de la barre d’outils de l’éditeur plein écran – **Synchroniser avec le gabarit**.
 
-1. Le Maître et la variation seront affichés côte à côte :
+1. Le maître et la variation seront affichés côte à côte :
 
-   * le contenu ajouté figure en vert   (ajouté à la variation) ;
+   * le contenu ajouté figure en vert  (ajouté à la variation) ;
    * le contenu supprimé (de la variation) figure en rouge.
    * le texte remplacé apparaît en bleu
-   ![Synchronisation avec le gabarit](assets/cfm-variations-11.png)
+
+   ![Synchronisation avec le maître](assets/cfm-variations-11.png)
 
 1. Sélectionnez **Synchroniser**. La variation est alors mise à jour et affichée.
