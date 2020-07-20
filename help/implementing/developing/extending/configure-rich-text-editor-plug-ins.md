@@ -3,9 +3,9 @@ title: Configuration des modules externes d’éditeur de texte enrichi dans [!D
 description: Découvrez comment configurer l’éditeur de texte enrichi [!DNL Adobe Experience Manager] .
 contentOwner: AG
 mini-toc-levels: 1
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 739dde6f9a6a7f4fe773e27e53f23a395f2881dc
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '4301'
 ht-degree: 100%
 
