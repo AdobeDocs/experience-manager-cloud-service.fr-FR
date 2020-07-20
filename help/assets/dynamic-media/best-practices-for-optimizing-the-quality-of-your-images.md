@@ -1,9 +1,9 @@
 ---
 title: Bonnes pratiques relatives à l’optimisation de la qualité des images
 description: Découvrez les bonnes pratiques relatives à l’optimisation de la qualité des images dans Dynamic Media
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1490'
 ht-degree: 100%
 
@@ -65,7 +65,7 @@ Il existe deux méthodes d’accentuation des images que vous pouvez utiliser :
 
       Rubrique d’aide d’AEM sur l’accentuation d’une image.
 
-      L’article technique des bonnes pratiques [Accentuation des images dans Adobe Scene7 Publishing System et sur le serveur d’images.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
+      L’article technique des bonnes pratiques [Accentuation des images dans Adobe Scene7 Publishing System et sur le serveur d’images.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
 
    * AEM permet également de contrôler un quatrième paramètre : monochrome (0,1). Ce paramètre détermine si le masquage flou est appliqué séparément à chaque composante de couleur en utilisant la valeur 0, ou à la luminosité/intensité de l’image en utilisant la valeur 1.
 
