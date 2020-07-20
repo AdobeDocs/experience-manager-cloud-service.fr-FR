@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1582'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 Il est possible de télécharger l’outil de transfert de contenu dans un fichier zip (Content Transfer Tool v1.0.0) à partir du portail de distribution de logiciels. Vous pouvez installer le module par le biais du gestionnaire de modules sur votre instance source Adobe Experience Manager (AEM).
 
 >[!NOTE]
->Download the Content Transfer Tool, from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
+>Téléchargez l’outil de transfert de contenu depuis le portail de [distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 ## Exécution de l’outil de transfert de contenu {#running-tool}
 
