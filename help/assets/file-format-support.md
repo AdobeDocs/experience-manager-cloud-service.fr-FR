@@ -2,11 +2,11 @@
 title: Formats de fichiers et types MIME pris en charge par Experience Manager Assets as a Cloud Service
 description: Formats de fichier et types MIME pris en charge par Experience Manager Assets as a Cloud Service.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c65a5ebf204e25e56d518db3b354b95aef631621
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '821'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -87,13 +87,13 @@ Les sous-types suivants de formats de fichiers d’images pixellisées qui ne so
 * Fichiers TIFF contenant des données à virgule flottante.
 * Fichiers TIFF dotés d’un espace colorimétrique Lab.
 
-## Formats 3D {#support-3d-formats}
+## Formats 3D {#support-3d-formats}
 
-La liste suivante de formats 3D est prise en charge.
+Les formats 3D de la liste suivante sont pris en charge.
 
-Voir aussi [Utilisation de ressources 3D dans Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
+Voir [Utilisation de ressources 3D dans Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
 
-| Format | Stockage | Contrôle de version | Workflow | Publication | Contrôle d&#39;accès | prévisualisation de miniature | prévisualisation 3D | diffusion Dynamic Media |
+| Format | Stockage | Contrôle de version | Workflow | Publication | Contrôle d’accès | Aperçu de miniature | Aperçu 3D | Diffusion Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
