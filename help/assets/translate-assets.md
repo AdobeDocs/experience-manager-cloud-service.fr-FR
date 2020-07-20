@@ -2,9 +2,9 @@
 title: Création et gestion de ressources numériques en plusieurs langues et exécution des workflows de traduction
 description: Découvrez comment automatiser les workflows de traduction des ressources, y compris les fichiers binaires, les métadonnées et les balises, dans plusieurs langues.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2612'
 ht-degree: 100%
 
