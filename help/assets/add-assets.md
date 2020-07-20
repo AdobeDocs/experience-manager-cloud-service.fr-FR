@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1358'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -158,8 +158,8 @@ Les profils suivants sont disponibles :
 
 De plus, si Dynamic Media est activé dans votre environnement :
 
-* [Les profils](dynamic-media/image-profiles.md) d’image Dynamic Media vous permettent d’appliquer une configuration de recadrage spécifique (recadrage **** intelligent et recadrage en pixels) et d’accentuation aux fichiers téléchargés.
-* [Les profils](dynamic-media/video-profiles.md) vidéo Dynamic Media vous permettent d’appliquer des profils de codage vidéo spécifiques (résolution, format, paramètres).
+* Les [profils d’image Dynamic Media](dynamic-media/image-profiles.md) vous permettent d’appliquer un recadrage spécifique (**[!UICONTROL Recadrage intelligent]** et recadrage de pixels) et une configuration d’accentuation aux ressources chargées.
+* Les [profils vidéo Dynamic Media](dynamic-media/video-profiles.md) vous permettent d’appliquer des profils de codage vidéo spécifiques (résolution, format, paramètres).
 
 >[!NOTE]
 >
