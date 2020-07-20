@@ -1,11 +1,11 @@
 ---
 title: Modifications notables apportées à Adobe Experience Manager (AEM) as a Cloud Service
 description: Modifications notables apportées à Adobe Experience Manager (AEM) as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e5e329f674f5e2817f6feb26e3a7720c8d26d333
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '861'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -15,12 +15,12 @@ ht-degree: 99%
 AEM Cloud Service offre une foule de nouvelles fonctionnalités et possibilités pour gérer vos projets AEM. Cependant, il existe plusieurs différences entre les ressources AEM Sites sur site ou dans Adobe Managed Service par rapport à AEM Cloud Service. Ce document met en lumière les différences importantes.
 
 >[!NOTE]
->Ce document met en évidence les modifications notables apportées à AEM dans son ensemble. Pour plus d’informations et de modifications spécifiques à une solution, voir :
+>Ce document met en évidence les modifications notables apportées à AEM dans son ensemble. Pour plus d’informations et connaître les changements spécifiques à une solution, voir :
 >
->* [Présentation d’Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
+>* [Introduction à Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
 >* [Nouveautés et différences](/help/overview/what-is-new-and-different.md) entre Adobe Experience Manager as a Cloud Service avec les versions précédentes
 >* [Architecture](/help/core-concepts/architecture.md) d’Adobe Experience Manager as a Cloud Service
->* [Modifications notables d’AEM Sites en tant que as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+>* [Modifications notables apportées à AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
 >* [Modifications notables apportées à AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 
 
@@ -36,7 +36,7 @@ Les principales différences sont les suivantes :
 
 * [Suppression des agents de réplication](#replication-agents)
 
-* [Suppression de l’interface utilisateur de la version classique](#classic-ui)
+* [Suppression de l’interface utilisateur classique](#classic-ui)
 
 * [Diffusion côté publication](#publish-side-delivery)
 
@@ -97,9 +97,9 @@ Dans AEM Cloud Service, le contenu est publié à l’aide du module [Sling Cont
 * Personnalisation des agents de réplication pour transformer le contenu
 * Utilisation de la réplication inverse pour ramener le contenu de la publication à l’auteur.
 
-## Suppression de l’interface utilisateur de la version classique {#classic-ui}
+## Suppression de l’interface utilisateur classique {#classic-ui}
 
-L’interface utilisateur de la version classique n’est plus disponible dans AEM Cloud Service.
+L’interface utilisateur classique n’est plus disponible dans AEM Cloud Service.
 
 ## Diffusion côté publication {#publish-side-delivery}
 
