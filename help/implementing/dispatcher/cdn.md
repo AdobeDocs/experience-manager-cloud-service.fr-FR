@@ -1,11 +1,11 @@
 ---
 title: Réseau de diffusion de contenu dans AEM as a Cloud Service
 description: Réseau de diffusion de contenu dans AEM as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '646'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Procédez comme suit pour préparer la diffusion de contenu à l’aide du rése
    **Remarque :** AEM as a Cloud Service ne prend pas en charge les certificats DV (Domain Validated, domaines validés).
 1. Donnez les informations suivantes au service clientèle :
    * Le domaine personnalisé qui doit être associé à un environnement donné, indiqué par l’ID de programme et l’ID d’environnement. Notez que les domaines personnalisés côté auteur ne sont pas pris en charge.
-   * si une liste autorisée IP est nécessaire pour limiter le trafic à un environnement donné.
+   * Une liste d’adresses IP autorisées éventuellement nécessaire pour limiter le trafic à destination d’un environnement donné.
 1. Coordination avec l’assistance clientèle concernant les délais des modifications nécessaires apportées aux enregistrements DNS. Les instructions sont différentes selon qu’un enregistrement apex est nécessaire ou non :
    * si aucun enregistrement apex n’est nécessaire, les clients doivent définir l’enregistrement CNAME DNS pour qu’il adresse leur nom de domaine complet (FQDN) sur `cdn.adobeaemcloud.com`.
    * si un enregistrement apex est nécessaire, créez un enregistrement A pointant vers les adresses IP suivantes : 151.101.3.10, 151.101.67.10, 151.101.131.10, 151.101.195.10. Les clients ont besoin d’un enregistrement apex si le FQDN correspond à la zone DNS. Vous pouvez le tester en utilisant la commande dig Unix pour vérifier si la valeur SOA de la sortie correspond au domaine. Par exemple, la commande `dig anything.dev.adobeaemcloud.com` renvoie un SOA (Start of Authority, c’est-à-dire la zone) `dev.adobeaemcloud.com`, et il ne s’agit donc pas d’un enregistrement APEX. Par contre, `dig dev.adobeaemcloud.com` renvoie un SOA `dev.adobeaemcloud.com` qui est un enregistrement APEX.
