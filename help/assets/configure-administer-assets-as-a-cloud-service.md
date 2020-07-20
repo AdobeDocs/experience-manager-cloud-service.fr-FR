@@ -2,9 +2,9 @@
 title: Configuration et administration des ressources Adobe Experience Manager as a Cloud Service
 description: Connaître les tâches de configuration et d’administration requises pour Assets as a Cloud Service
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0c915b32d676ff225cbe276be075d3ae1a865f11
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '55'
 ht-degree: 100%
 
