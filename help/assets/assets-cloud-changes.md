@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '619'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -22,13 +22,13 @@ Les principales différences par rapport à Experience Manager 6.5 se situent d
 
 >[!NOTE]
 >
->Ce document souligne les changements notables apportés aux AEM Assets. Pour les modifications générales apportées à AEM en tant que Cloud Service et à d’autres modules, voir :
+>Ce document met en évidence les modifications notables apportées à AEM Assets. Pour les modifications générales apportées à AEM as a Cloud Service et à d’autres modules, voir :
 >
->* [Présentation d’Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
->* Présentation [d’AEM en tant que Cloud Service - Nouveautés et différences](/help/overview/what-is-new-and-different.md)
+>* [Introduction à Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
+>* [Présentation d’AEM as a Cloud Service – Nouveautés et différences](/help/overview/what-is-new-and-different.md)
 >* [Architecture](/help/core-concepts/architecture.md) d’Adobe Experience Manager as a Cloud Service
->* [Modifications notables apportées à AEM en tant que Cloud Service (notes de mise à jour)](/help/release-notes/aem-cloud-changes.md)
->* [Modifications notables d’AEM Sites en tant que as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+>* [Modifications notables apportées à AEM as a Cloud Service (notes de mise à jour)](/help/release-notes/aem-cloud-changes.md)
+>* [Modifications notables apportées à AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
 >* [Tutoriels sur Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 
 
