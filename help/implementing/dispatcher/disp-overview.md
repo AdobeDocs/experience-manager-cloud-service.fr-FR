@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '3914'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -199,7 +199,7 @@ L’outil de validation est disponible dans le SDK à l’emplacement `bin/valid
 
 Il est appelé comme suit : `validator full [-d folder] [-w whitelist] zip-file | src folder`
 
-L’outil valide la configuration d’Apache et Dispatcher. It scans all files with pattern `conf.d/enabled_vhosts/*.vhost` and checks that only allowlisted directives are used. Les directives autorisées dans les fichiers de configuration Apache peuvent être répertoriées en exécutant la commande de liste autorisée du validateur :
+L’outil valide la configuration d’Apache et Dispatcher. Il analyse tous les fichiers avec un motif `conf.d/enabled_vhosts/*.vhost` et vérifie que seules les directives placées sur la liste autorisée sont utilisées. Les directives autorisées dans les fichiers de configuration Apache peuvent être répertoriées en exécutant la commande de liste autorisée du programme de validation :
 
 ```
 $ validator whitelist
@@ -238,9 +238,9 @@ Le tableau ci-dessous présente les modules Apache pris en charge :
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-Les clients ne peuvent pas ajouter de modules arbitraires, mais des modules supplémentaires peuvent être envisagés pour inclusion dans le produit à l’avenir. Les clients peuvent trouver la liste de directives disponible pour une version de Dispatcher donnée en exécutant la commande de liste autorisée du validateur dans le SDK, comme décrit ci-dessus.
+Les clients ne peuvent pas ajouter de modules arbitraires, mais des modules supplémentaires peuvent être envisagés pour inclusion dans le produit à l’avenir. Pour obtenir la liste des directives disponibles pour une version de Dispatcher donnée, les clients peuvent exécuter la commande de liste autorisée du programme de validation dans le SDK, comme décrit ci-dessus.
 
-La liste autorisée contient une liste de directives Apache autorisées dans une configuration client. Si une directive n&#39;est pas placée sur l&#39;liste autorisée, l&#39;outil enregistre une erreur et renvoie un code de sortie non nul. Si aucune liste autorisée n’est fournie sur la ligne de commande (c’est-à-dire de la manière dont elle doit être appelée), l’outil utilise une liste autorisée par défaut que Cloud Manager utilisera pour la validation avant le déploiement sur les environnements Cloud.
+La liste autorisée contient la liste des directives Apache autorisées dans une configuration client. Si une directive n’est pas placée sur la liste autorisée, l’outil consigne une erreur et renvoie un code de sortie non nul. Si aucune liste autorisée n’est fournie sur la ligne de commande (c’est-à-dire de la manière dont elle doit être appelée), l’outil utilise une liste autorisée par défaut que Cloud Manager utilisera pour la validation avant de procéder au déploiement dans les environnements cloud.
 
 Il analyse également tous les fichiers présentant le motif `conf.dispatcher.d/enabled_farms/*.farm` et vérifie les éléments suivants :
 
@@ -258,7 +258,7 @@ Cloud manager validator 1.0.4
  conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
 ```
 
-Notez que l&#39;outil de validation ne rapporte que l&#39;utilisation interdite des directives Apache qui n&#39;ont pas été placées sur l&#39;liste autorisée. Il ne signale aucun problème de syntaxe ni de sémantique dans votre configuration Apache, car ces informations ne sont disponibles que pour les modules Apache dans un environnement en cours d’exécution.
+Notez que l’outil de validation ne signale que l’utilisation interdite des directives Apache qui n’ont pas été placées sur la liste autorisée. Il ne signale aucun problème de syntaxe ni de sémantique dans votre configuration Apache, car ces informations ne sont disponibles que pour les modules Apache dans un environnement en cours d’exécution.
 
 Si aucun échec de validation n’est signalé, votre configuration est prête pour le déploiement.
 
@@ -562,7 +562,7 @@ $ validator httpd .
 Si des erreurs s’affichent au sujet de fichiers d’inclusion manquants, vérifiez si vous avez correctement renommé
 les fichiers en question.
 
-Si vous voyez des directives Apache qui ne sont pas placées sur l&#39;liste autorisée, supprimez-les.
+Si vous voyez des directives Apache qui ne sont pas placées sur la liste autorisée, supprimez-les.
 
 ### Supprimer toutes les fermes non publiées
 
