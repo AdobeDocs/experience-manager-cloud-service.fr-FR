@@ -2,11 +2,11 @@
 title: Profils de métadonnées
 description: Découvrez les profils de métadonnées pour les ressources. Apprenez à créer un profil de métadonnées et à l’appliquer aux ressources d’un dossier.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1246'
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ Les dossiers auxquels un profil est affecté sont indiqués dans l’interface u
 
 Vous pouvez appliquer des profils de métadonnées à des dossiers spécifiques ou à l’ensemble des ressources.
 
-Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un profil de métadonnées que vous avez modifié. <!-- See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
+Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comporte déjà un profil de métadonnées que vous avez modifié. <!-- See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
 ### Application de profils de métadonnées à des dossiers spécifiques {#applying-metadata-profiles-to-specific-folders}
 
@@ -77,7 +77,7 @@ Vous pouvez appliquer un profil de métadonnées à un dossier à partir du menu
 
 Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
-Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un profil vidéo que vous avez modifié ultérieurement. <!--See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
+Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comporte déjà un profil vidéo que vous avez modifié. <!--See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
 #### Application de profils de métadonnées à des dossiers à partir de l’interface utilisateur des profils {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
@@ -95,7 +95,7 @@ Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un prof
 
 En plus d’appliquer un profil à un dossier, vous pouvez en appliquer un de façon globale, de sorte que tout contenu chargé dans AEM Assets soit traité par ce profil, indifféremment du dossier.
 
-Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un profil de métadonnées que vous avez modifié ultérieurement. <!--See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
+Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comporte déjà un profil de métadonnées que vous avez modifié. <!--See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
 **Pour appliquer un profil de façon globale, effectuez l’une des opérations suivantes :**
 
@@ -109,7 +109,7 @@ Lorsque vous supprimez un profil de métadonnées d’un dossier, tout sous-doss
 
 Vous pouvez supprimer un profil de métadonnées d’un dossier à partir du menu **Outils** ou, si vous êtes dans le dossier, à partir de **Propriétés**. Cette section décrit comment supprimer des profils de métadonnées des dossiers des deux manières.
 
-### Suppression de profils de métadonnées d’un dossier via l’interface utilisateur des profils   {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
+### Suppression de profils de métadonnées d’un dossier via l’interface utilisateur des profils  {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
 1. Appuyez ou cliquez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**.
 1. Sélectionnez le profil de métadonnées à supprimer d’un ou de plusieurs dossiers.
