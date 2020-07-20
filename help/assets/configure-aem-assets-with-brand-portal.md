@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1762'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -314,7 +314,7 @@ Vous pouvez consulter les journaux pour obtenir des informations détaillées su
 
 Par exemple, nous avons publié une ressource d’AEM Assets sur Brand Portal pour valider la configuration.
 
-1. Follow the steps (from 1 to 4) as shown in the [Test Configuration](#test-configuration) section and navigate to the distribution agent page.
+1. Suivez les étapes (1 à 4), comme indiqué dans la section [Test de la configuration](#test-configuration), puis accédez à la page de l’agent de distribution.
 
 1. Cliquez sur **[!UICONTROL Journaux]** pour afficher les journaux de distribution. Vous pouvez afficher les journaux de traitement et d’erreur ici.
 
