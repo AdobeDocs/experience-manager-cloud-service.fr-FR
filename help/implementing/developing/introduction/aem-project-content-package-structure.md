@@ -61,11 +61,11 @@ La structure de déploiement d’application recommandée est la suivante :
       + `/apps/my-app/install`
    + [Configurations OSGi](/help/implementing/deploying/configuring-osgi.md)
       + `/apps/my-app/config`
-   + [Scripts HTML](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+   + [Scripts HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
       + `/apps/my-app/components`
    + Code JavaScript et CSS (via les bibliothèques clientes)
       + `/apps/my-app/clientlibs`
-   + [Incrustations de /libs](/help/implementing/developing/introduction/overlays.md)
+   + [Recouvrements](/help/implementing/developing/introduction/overlays.md) de /libs
       + `/apps/cq`, `/apps/dam/`, etc.
    + Configurations basées sur le contexte de secours
       + `/apps/settings`
