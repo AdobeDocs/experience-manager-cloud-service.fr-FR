@@ -1,9 +1,9 @@
 ---
 title: Déploiement de votre code - Cloud Services
 description: Déploiement de votre code - Cloud Services
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 44e32343767878016a991f443e5911bfb2877a92
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '912'
 ht-degree: 100%
 
@@ -59,7 +59,7 @@ Une fois que vous avez configuré le **pipeline** (référentiel, environnement 
 
 
 
->[!IMPORTANT]:
+>[!IMPORTANT] :
 >les sections suivantes doivent être mises à jour pour Cloud Manager for AEM Cloud Services. Cette opération est en cours.
 
 ## Processus de déploiement {#deployment-process}
