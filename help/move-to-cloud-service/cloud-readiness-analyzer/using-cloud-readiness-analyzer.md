@@ -1,11 +1,11 @@
 ---
 title: Utilisation de Cloud Readiness Analyzer
 description: Utilisation de Cloud Readiness Analyzer
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a0e58c626f94b778017f700426e960428b657806
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1871'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -14,21 +14,21 @@ ht-degree: 75%
 
 ## Points importants concernant l’utilisation de Cloud Readiness Analyzer {#imp-considerations}
 
-Suivez la section ci-dessous pour comprendre les points importants à prendre en compte pour l&#39;exécution de l&#39;outil Cloud Readiness Analyzer (CRA) :
+Consultez la section ci-dessous afin de comprendre les points importants à prendre en compte pour utiliser l’outil Cloud Readiness Analyzer (CRA) :
 
 * Les rapports CRA sont générés à l’aide des résultats obtenus par le [détecteur de motifs](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/deploying/upgrading/pattern-detector.html) d’Adobe Experience Manager (AEM). La version du détecteur de motifs utilisée par CRA se trouve dans le module d’installation CRA.
 
-* CRA may only be run by the **admin** user or a user in the **administrators** group.
+* L’outil CRA ne peut être exécuté que par un utilisateur **admin** ou un utilisateur figurant dans le groupe **administrateurs**.
 
 * L’outil est pris en charge sur les instances AEM avec la version 6.1 et versions ultérieures.
 
    >[!NOTE]
-   > Consultez [Installation sur AEM 6.1](#installing-on-aem61) pour connaître les conditions particulières d’installation de CRA sur AEM 6.1.
+   > Consultez [Installation sur AEM 6.1](#installing-on-aem61) pour connaître les conditions particulières d’installation de CRA sur AEM 6.1.
 
 * Il peut s’exécuter dans n’importe quel environnement, mais il est préférable de l’exécuter dans un environnement d’*évaluation*.
 
    >[!NOTE]
-   >In order to avoid an impact on business critical instances, it is recommended that you run CRA on an *Author* environment that is as close as possible to the *Production* environment in the areas of customizations, configurations, content and user applications. Vous pouvez également l’exécuter sur un clone de l’environnement de *création* de production.
+   >Pour éviter toute incidence sur les instances critiques de l’entreprise, il est recommandé d’exécuter CRA dans un environnement de *création* aussi proche que possible de l’environnement de *production* concernant la personnalisation, la configuration, les contenus et les applications utilisateur. Vous pouvez également l’exécuter sur un clone de l’environnement de *création* de production.
 
 * La génération du contenu des rapports CRA peut nécessiter un temps important, de plusieurs minutes à quelques heures. La durée nécessaire dépend largement de la taille et de la nature du contenu du référentiel AEM, de la version d’AEM et d’autres facteurs.
 
@@ -36,16 +36,16 @@ Suivez la section ci-dessous pour comprendre les points importants à prendre en
 
 ## Disponibilité {#availability}
 
-L&#39;analyseur de l&#39;état de préparation de Cloud peut être téléchargé sous la forme d&#39;un fichier zip depuis le portail de distribution de logiciels. Vous pouvez installer le module par le biais du gestionnaire de modules sur votre instance source Adobe Experience Manager (AEM).
+Il est possible de télécharger l’outil Cloud Readiness Analyzer dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le module par le biais du gestionnaire de modules sur votre instance source Adobe Experience Manager (AEM).
 
 >[!NOTE]
->Download the Cloud Readiness Analyzer from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
+>Téléchargez Cloud Readiness Analyzer depuis le portail de [distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
-## Viewing the Cloud Readiness Analyzer Report {#viewing-report}
+## Affichage du rapport Cloud Readiness Analyzer au format {#viewing-report}
 
-### Adobe Experience Manager 6.3.0, et versions ultérieures {#aem-later-versions}
+### Adobe Experience Manager 6.3.0 et versions ultérieures {#aem-later-versions}
 
-Suivez cette section pour savoir comment vue le rapport Cloud Readiness Analyzer :
+Consultez cette section pour savoir comment afficher le rapport Cloud Readiness Analyzer :
 
 1. Sélectionnez Adobe Experience Manager et accédez à Outils -> **Opérations** -> **Cloud Readiness Analyzer**.
 
@@ -58,7 +58,7 @@ Suivez cette section pour savoir comment vue le rapport Cloud Readiness Analyzer
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
 
-1. Une fois le rapport ARC généré et affiché, vous avez la possibilité de télécharger le rapport au format CSV (valeurs séparées par des virgules) en cliquant sur **CSV**, comme le montre la figure ci-dessous.
+1. Une fois le rapport CRA généré et affiché, vous avez la possibilité de télécharger le rapport au format CSV (valeurs séparées par une virgule) en cliquant sur **CSV**, comme le montre la figure ci-dessous.
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
 
@@ -67,7 +67,7 @@ Suivez cette section pour savoir comment vue le rapport Cloud Readiness Analyzer
 
 ### Adobe Experience Manager 6.2 et 6.1 {#aem-specific-versions}
 
-L’outil Cloud Readiness Analyzer est limité dans l’Adobe Experience Manager 6.2 à un lien qui génère et télécharge le rapport CSV.
+Dans l’outil Adobe Experience Manager 6.2, Cloud Readiness Analyzer est limité à un lien qui génère et télécharge le rapport CSV.
 
 Pour Adobe Experience Manager 6.1, l’outil n’est pas fonctionnel et seule l’interface HTTP peut être utilisée.
 
@@ -76,15 +76,15 @@ Pour Adobe Experience Manager 6.1, l’outil n’est pas fonctionnel et seule l
 
 ## Interprétation des rapports Cloud Readiness Analyzer {#cra-report}
 
-Lorsque l’outil Cloud Readiness Analyzer est exécuté dans l’instance AEM, le rapport s’affiche en tant que résultats dans la fenêtre de l’outil.
+Lorsque l’outil Cloud Readiness Analyzer est exécuté dans l’instance AEM, le rapport s’affiche sous la forme de résultats dans la fenêtre des outils.
 
 Le format du rapport est le suivant :
 
-* **Aperçu** du rapport : Informations sur le rapport lui-même qui incluent les informations suivantes :
-   * **Heure** du rapport : Lorsque le contenu du rapport a été généré et rendu disponible pour la première fois.
-   * **Heure** d&#39;expiration : Date d&#39;expiration du cache du contenu du rapport.
-   * **Période** de génération : Temps passé par le processus de génération du contenu du rapport.
-   * **Recherche du décompte**: Nombre total de constatations figurant dans le rapport.
+* **Report Overview** : informations sur le rapport lui-même qui incluent les informations suivantes :
+   * **Report Time** : heure à laquelle le contenu du rapport a été généré et rendu disponible pour la première fois.
+   * **Expiration Time** : heure d’expiration du cache du contenu du rapport.
+   * **Generation Time Period** : durée du processus de génération du contenu du rapport.
+   * **Finding Count** : nombre total de résultats figurant dans le rapport.
 * **System Overview** : informations sur le système AEM sur lequel CRA a été exécuté.
 * **Finding Categories** : différentes sections traitant chacune d’un ou plusieurs résultats pour une même catégorie. Chaque section comprend les éléments suivants : nom de la catégorie, sous-types, nombre et importance des résultats, résumé, lien vers la documentation de la catégorie et informations relatives à chaque résultat.
 
@@ -137,7 +137,7 @@ Il est possible d’utiliser l’interface HTTP de différentes manières.
 
 Une méthode simple consiste à ouvrir un onglet dans le même navigateur que celui utilisé pour vous connecter à AEM en tant qu’administrateur. Vous pouvez renseigner l’URL dans l’onglet du navigateur et afficher ou télécharger les résultats grâce au navigateur.
 
-Vous pouvez également utiliser un outil de ligne de commande tel que `curl` ou `wget`, mais aussi toute autre application cliente HTTP. Lorsque vous n’utilisez pas l’onglet du navigateur avec une session authentifiée, vous devez fournir un nom d’utilisateur et un mot de passe administratifs dans le cadre du commentaire.
+Vous pouvez également utiliser un outil de ligne de commande tel que `curl` ou `wget`, mais aussi toute autre application cliente HTTP. Si vous n’utilisez pas un onglet de navigateur avec une session authentifiée, vous devez fournir un nom d’utilisateur et un mot de passe d’administration en commentaire.
 
 À titre d’exemple, vous pouvez procéder comme suit :
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.csv' > result.csv`.
@@ -167,10 +167,10 @@ Les valeurs de réponses possibles sont les suivantes :
 
 * `200 OK` : la réponse contient les résultats du détecteur de motifs, générés pendant l’intervalle d’actualisation de la mémoire cache.
 * `202 Accepted, processing cache` : fourni pour les réponses asynchrones indiquant que le cache était obsolète et qu’une actualisation est en cours.
-* `400 Bad Request` : indique qu’une erreur s’est produite lors de la requête. A message in Problem Details format (see [RFC 7807](https://tools.ietf.org/html/rfc7807)) for more details.
+* `400 Bad Request` : indique qu’une erreur s’est produite lors de la requête. Un message au format Détails du problème (voir [RFC 7807](https://tools.ietf.org/html/rfc7807)) fournissant des détails supplémentaires.
 * `401 Unauthorized` : la requête n’a pas été autorisée.
 * `500 Internal Server Error` : indique qu’une erreur de serveur interne s’est produite. Un message au format Détails du problème donne des détails supplémentaires.
-* `503 Service Unavailable` : indique que le serveur est occupé par une autre réponse et qu’il ne peut pas traiter cette requête dans les délais impartis. Cela n’est probable que lorsque des requêtes synchrones sont effectuées. Un message au format Détails du problème donne des détails supplémentaires.
+* `503 Service Unavailable` : indique que le serveur est occupé par une autre réponse et qu’il ne peut pas traiter cette requête dans les délais impartis. Cela ne se produit probablement que pour les requêtes synchrones. Un message au format Détails du problème donne des détails supplémentaires.
 
 ## Informations sur l’administrateur
 
@@ -183,12 +183,12 @@ La durée de vie du cache est stockée dans la propriété `maxCacheAge` dans le
 
 La valeur de cette propriété est la durée de vie du cache en secondes. Un administrateur peut ajuster la durée de vie du cache à l’aide de CRX/DE Lite.
 
-### Installation sur AEM 6.1 {#installing-on-aem61}
+### Installation sur AEM 6.1 {#installing-on-aem61}
 
-L&#39;ARC utilise un compte utilisateur de service système nommé `repository-reader-service` pour exécuter le Détecteur de schémas. Ce compte est disponible sur AEM 6.2 et versions ultérieures. Dans AEM 6.1, ce compte doit être créé *avant* l’installation de CRA en procédant comme suit :
+CRA utilise un compte d’utilisateur de service système nommé `repository-reader-service` pour exécuter le détecteur de motifs. Ce compte est disponible dans AEM 6.2 et versions ultérieures. Dans AEM 6.1, ce compte doit être créé *avant* l’installation de CRA en procédant comme suit :
 
-1. Suivez les instructions de la section [Création d’un utilisateur](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) de service pour créer un utilisateur. Définissez l’ID utilisateur sur `repository-reader-service` et laissez le chemin intermédiaire vide, puis cliquez sur la coche verte.
+1. Suivez les instructions de la section [Création d’un utilisateur de service](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) pour créer un utilisateur. Définissez l’ID utilisateur sur `repository-reader-service` et laissez le champ Chemin intermédiaire vide, puis cliquez sur la coche verte.
 
-2. Suivez les instructions de la section [Gestion des utilisateurs et des groupes](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security.html#managing-users-and-groups), en particulier les instructions pour Ajouter des utilisateurs à un groupe afin d’ajouter l’ `repository-reader-service` utilisateur au `administrators` groupe.
+2. Suivez les instructions de la section [Gestion des utilisateurs et des groupes](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/security/security.html#managing-users-and-groups), en particulier les instructions d’ajout d’utilisateurs à un groupe afin d’ajouter l’utilisateur `repository-reader-service` au groupe `administrators`.
 
-3. Installez le package CRA via Package Manager sur votre instance AEM source. (Ceci ajoutera la modification de configuration nécessaire à la configuration ServiceUserMapper pour l&#39;utilisateur du service `repository-reader-service` système.)
+3. Installez le package CRA via Package Manager sur votre instance AEM source. (Cela a pour effet d’ajouter la modification de configuration nécessaire à la configuration ServiceUserMapper pour l’utilisateur du service système `repository-reader-service`.)
