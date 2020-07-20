@@ -1,11 +1,11 @@
 ---
 title: Intégration des visionneuses Dynamic Media à Adobe Analytics et Adobe Launch
 description: L’extension Visionneuses Dynamic Media pour Adobe Launch, ainsi que la version 5.13 des Visionneuses Dynamic Media, permettent aux clients de Dynamic Media, Adobe Analytics et Adobe Launch d’utiliser des événements et des données spécifiques aux visionneuses Dynamic Media dans leur configuration Adobe Launch.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6647'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -190,7 +190,7 @@ Lorsqu’il est sélectionné, l’éditeur d’éléments de données génère 
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-Pour obtenir la liste des événements pris en charge par chaque type de visionneuse, reportez-vous au [Guide de référence des visionneuses Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html), accédez à la section spécifique à la visionneuse, puis cliquez sur la sous-section Prise en charge du suivi d’Adobe Analytics. À l’heure actuelle, le guide de référence des visionneuses Dynamic Media ne documente pas les arguments d’événement.
+Pour obtenir la liste des événements pris en charge par chaque type de visionneuse, reportez-vous au [Guide de référence des visionneuses Dynamic Media](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html), accédez à la section spécifique à la visionneuse, puis cliquez sur la sous-section Prise en charge du suivi d’Adobe Analytics. À l’heure actuelle, le guide de référence des visionneuses Dynamic Media ne documente pas les arguments d’événement.
 
 Examinons à présent le cycle de vie de l’*élément de données* Visionneuses Dynamic Media. La valeur de cet élément de données est renseignée après que l’événement de visionneuse Dynamic Media correspondant a lieu sur la page. Par exemple, si l’élément de données pointe vers l’événement **[!UICONTROL LOAD]** et son argument « asset », la valeur de cet élément de données recevra des données valides une fois que la visionneuse aura exécuté l’événement LOAD pour la première fois. Si l’élément de données pointe vers l’événement **[!UICONTROL ZOOM]** et son argument « scale », la valeur de cet élément de données reste vide jusqu’à ce que la visionneuse envoie un événement **[!UICONTROL ZOOM]** pour la première fois.
 
@@ -741,7 +741,7 @@ La configuration d’AEM comprend les deux étapes principales suivantes :
    * **[!UICONTROL Titre]** : entrez un titre de compte descriptif.
    * **[!UICONTROL Serveur d’autorisation]** : revenez à la page Informations concernant l’intégration que vous avez ouverte précédemment. Cliquez sur l’onglet **[!UICONTROL JWT]**. Copiez le nom du serveur (sans le chemin d’accès), comme indiqué ci-dessous.
 
-(l’exemple de nom de serveur est fourni à titre indicatif uniquement)   Revenez à la page **[!UICONTROL Compte]**, puis collez le nom dans le champ correspondant.
+(l’exemple de nom de serveur est fourni à titre d’illustration uniquement)   Revenez à la page **[!UICONTROL Compte]**, puis collez le nom dans le champ correspondant.
 Par exemple, `https://ims-na1.adobelogin.com/`
 (l’exemple de nom de serveur est fourni à titre d’illustration uniquement)
 
