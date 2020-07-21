@@ -2,10 +2,10 @@
 title: Ajout de vos ressources numériques à Adobe Experience Manager
 description: Ajout de vos ressources numériques à Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 6a0568be09ece4b8b06c66c706bcffe2316bebc2
 workflow-type: tm+mt
-source-wordcount: '1358'
-ht-degree: 100%
+source-wordcount: '1356'
+ht-degree: 99%
 
 ---
 
@@ -81,7 +81,7 @@ De plus, l’interface utilisateur d’Assets affiche la ressource la plus réce
 
 >[!NOTE]
 >
->Pour charger des hiérarchies de dossiers imbriqués vers AEM, reportez-vous à la section concernant le [téléchargement massif de ressources](#bulk-upload).
+>To upload nested folder hierarchies to AEM, see [bulk upload assets](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -127,7 +127,7 @@ Toutefois, la liste de caractères suivante, séparée par des espaces, n’est 
 * Le nom du fichier de ressource ne doit pas contenir `* / : [ \\ ] | # % { } ? &`
 * Le nom du dossier de ressources ne doit pas contenir `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## Téléchargement massif de ressources {#bulk-upload}
+## Chargement en masse de ressources {#bulk-upload}
 
 Pour charger un plus grand nombre de fichiers, en particulier s’ils existent dans une hiérarchie de dossiers imbriqués sur le disque, vous pouvez utiliser les méthodes suivantes :
 
