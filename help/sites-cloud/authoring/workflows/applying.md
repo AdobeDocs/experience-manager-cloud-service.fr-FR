@@ -2,7 +2,7 @@
 title: Application de workflows aux pages
 description: Lors de la création de pages, vous avez la possibilité d’utiliser des workflows pour exécuter des actions sur vos pages. Il est possible d’appliquer plusieurs workflows.
 translation-type: tm+mt
-source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+source-git-commit: b551a0b0d85d264feabf78942a381c4239fdbadb
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 100%
@@ -23,8 +23,8 @@ Lorsque vous appliquez le workflow, vous spécifiez les informations suivantes 
 
 Vous pouvez démarrer les workflows :
 
-* [via la **console](#starting-a-workflow-from-the-sites-console)** Sites.
-* [lors de la modification d’une page, via **Informations sur la page **](#starting-a-workflow-from-the-page-editor).
+* [via la console](#starting-a-workflow-from-the-sites-console) Sites.
+* [lors de la modification d’une page, via Informations sur la page](#starting-a-workflow-from-the-page-editor).
 
 >[!NOTE]
 >
@@ -51,8 +51,8 @@ Vous pouvez démarrer les workflows :
 
 Vous pouvez démarrer un workflow des deux manières suivantes :
 
-* [Utiliser l’option **Créer** de la barre d’outils Sites](#starting-a-workflow-from-the-sites-toolbar).
-* [Utiliser le rail **Chronologie** de la console Sites](#starting-a-workflow-from-the-timeline).
+* [Utiliser l’option Créer de la barre d’outils Sites](#starting-a-workflow-from-the-sites-toolbar).
+* [Utiliser le rail Chronologie de la console Sites](#starting-a-workflow-from-the-timeline).
 
 Dans les deux cas, vous aurez besoin d’effectuer les opérations suivantes :
 
@@ -87,8 +87,8 @@ L’assistant **Créer un workflow** vous permet de sélectionner le workflow et
 
 Après avoir ouvert l’assistant **Créer un workflow** de l’une des façons suivantes :
 
-* [Utiliser l’option **Créer** de la barre d’outils Sites](#starting-a-workflow-from-the-sites-toolbar).
-* [Utiliser le rail **Chronologie** de la console Sites](#starting-a-workflow-from-the-timeline).
+* [Utiliser l’option Créer de la barre d’outils Sites](#starting-a-workflow-from-the-sites-toolbar).
+* [Utiliser le rail Chronologie de la console Sites](#starting-a-workflow-from-the-timeline).
 
 Vous pouvez spécifier les détails du workflow :
 
