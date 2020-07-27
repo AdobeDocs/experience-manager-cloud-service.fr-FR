@@ -2,10 +2,10 @@
 title: Conseils de développement pour AEM as a Cloud Service
 description: À terminer
 translation-type: tm+mt
-source-git-commit: 1e894b07de0f92c4cd96f2a309722aaadd146830
+source-git-commit: 0a2ae4e40cd342056fec9065d226ec064f8b2d1f
 workflow-type: tm+mt
-source-wordcount: '1631'
-ht-degree: 97%
+source-wordcount: '1940'
+ht-degree: 84%
 
 ---
 
@@ -86,7 +86,7 @@ Le contenu est répliqué de l’instance d’auteur vers l’instance de public
 
 ### Journaux {#logs}
 
-Pour le développement en local, les entrées de journaux sont écrites dans des fichiers locaux  dans le dossier `/crx-quickstart/logs`.
+Pour le développement en local, les entrées de journaux sont écrites dans des fichiers locaux   dans le dossier `/crx-quickstart/logs`.
 
 Dans les environnements cloud, les développeurs peuvent télécharger les journaux via Cloud Manager ou utiliser un outil de ligne de commande pour en afficher les dernières lignes. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
@@ -160,7 +160,7 @@ Comme illustré ci-dessous, les développeurs peuvent résoudre les dépendances
 
 ![Console de développement 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Pour les programmes normaux, l’accès à Developer Console est défini par la mention « Cloud Manager – Rôle de développeur » dans l’Admin Console. Pour les programmes Sandbox, Developer Console est disponible pour tout utilisateur disposant d’un profil de produit lui permettant d’accéder à AEM as a Cloud Service. Pour tous les programmes, &quot;Cloud Manager - Rôle du développeur&quot; est nécessaire pour les vidages d’état et les utilisateurs doivent également être définis dans le Profil de produit Utilisateurs d’AEM ou Administrateurs d’AEM sur les services de création et de publication afin de vue les données de vidage d’état des deux services. Pour plus d’informations sur la configuration des autorisations des utilisateurs, voir [Documentation de Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+Pour les programmes normaux, l’accès à Developer Console est défini par la mention « Cloud Manager – Rôle de développeur » dans l’Admin Console. Pour les programmes Sandbox, Developer Console est disponible pour tout utilisateur disposant d’un profil de produit lui permettant d’accéder à AEM as a Cloud Service. Pour tous les programmes, « Cloud Manager – Rôle de développeur » est nécessaire pour les vidages d’état. Les utilisateurs doivent également être définis dans le profil de produit Utilisateurs d’AEM ou Administrateurs d’AEM sur les services de création et de publication afin d’afficher les données de vidage d’état des deux services. Pour plus d’informations sur la configuration des autorisations des utilisateurs, voir [Documentation de Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 
 ### Service de test et de production AEM {#aem-staging-and-production-service}
@@ -170,3 +170,45 @@ Les clients n’auront pas accès aux outils de développement pour les environn
 ### Surveillance des performances {#performance-monitoring}
 
 Adobe surveille les performances de l’application et prend des mesures pour remédier à cette détérioration. Actuellement, il n’est pas possible d’observer les mesures d’application.
+
+## Adresse IP d&#39;entrée dédiée
+
+Sur demande, AEM en tant que Cloud Service fournit une adresse IP statique, dédiée, pour le trafic sortant HTTP (port 80) et HTTPS (port 443) programmé en code Java.
+
+### Avantages
+
+Cette adresse IP dédiée peut améliorer la sécurité lors de l’intégration avec les fournisseurs SaaS (comme un fournisseur de gestion de la relation client) ou d’autres intégrations en dehors d’AEM en tant qu’Cloud Service qui offre une liste autorisée d’adresses IP. En ajoutant l’adresse IP dédiée à la liste autorisée, elle garantit que seul le trafic provenant du Cloud Service AEM du client sera autorisé à circuler dans le service externe. Ceci s’ajoute au trafic provenant de toute autre adresse IP autorisée.
+
+Si la fonction d’adresse IP dédiée n’est pas activée, le trafic provenant d’AEM en tant que Cloud Service passe par un ensemble d’IP partagées avec d’autres clients.
+
+### Configuration
+
+Pour activer une adresse IP dédiée, envoyez une demande au service d’assistance clientèle, qui fournira les informations d’adresse IP. Une demande doit être faite pour chaque environnement, y compris pour les nouveaux environnements créés après la demande initiale.
+
+### Utilisation des fonctionnalités
+
+Cette fonction est compatible avec le code Java ou les bibliothèques qui génèrent du trafic sortant, à condition qu’ils utilisent les propriétés système Java standard pour les configurations de proxy. Dans la pratique, cela devrait inclure la plupart des bibliothèques courantes.
+
+Voici un exemple de code :
+
+```
+public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
+  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
+  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
+  URLConnection connection = finalUrl.openConnection();
+  connection.addRequestProperty("Accept", "application/json");
+  connection.addRequestProperty("X-API-KEY", apiKey);
+
+  try (InputStream responseStream = connection.getInputStream(); Reader responseReader = new BufferedReader(new InputStreamReader(responseStream, Charsets.UTF_8))) {
+    return new JSONObject(new JSONTokener(responseReader));
+  }
+}
+```
+
+La même adresse IP dédiée est appliquée à tous les programmes d’un client de son organisation Adobe et à tous les environnements de chacun de leurs programmes. Il s’applique aux services d’auteur et de publication.
+
+Seuls les ports HTTP et HTTPS sont pris en charge. Cela inclut HTTP/1.1, ainsi que HTTP/2 lorsqu’il est chiffré.
+
+### Considérations relatives au débogage
+
+Afin de vérifier que le trafic est effectivement sortant sur l’adresse IP dédiée attendue, vérifiez les journaux dans le service de destination, si disponible. Dans le cas contraire, il peut s’avérer utile d’appeler un service de débogage tel que [https://ifconfig.me/ip](https://ifconfig.me/ip), qui renverra l’adresse IP d’appel.
