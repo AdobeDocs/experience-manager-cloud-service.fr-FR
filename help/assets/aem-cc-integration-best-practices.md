@@ -1,13 +1,13 @@
 ---
 title: Bonnes pratiques d’intégration d’Adobe Experience Manager et d’Adobe Creative Cloud
-description: Bonnes pratiques pour intégrer une instance AEM à Adobe Creative Cloud de façon à rationaliser les workflows de transfert de ressources et à obtenir un maximum d’efficacité.
+description: Les meilleures pratiques intègrent un déploiement Experience Manager à Adobe Creative Cloud afin de rationaliser les workflows de transfert d’actifs et d’optimiser l’efficacité.
 contentOwner: AG
 mini-toc-levels: 1
-translation-type: ht
-source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
+workflow-type: tm+mt
 source-wordcount: '3302'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
