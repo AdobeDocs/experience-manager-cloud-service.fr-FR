@@ -1,18 +1,16 @@
 ---
-title: Facettes de recherche
+title: Facettes de recherche.
 description: Cet article décrit comment créer, modifier et utiliser les facettes de recherche dans AEM.
 translation-type: tm+mt
-source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
 workflow-type: tm+mt
-source-wordcount: '2387'
-ht-degree: 100%
+source-wordcount: '2371'
+ht-degree: 95%
 
 ---
 
 
 # Facettes de recherche {#search-facets}
-
-Découvrez comment créer, modifier et utiliser les facettes de recherche dans AEM.
 
 Un déploiement à l’échelle de l’entreprise d’Adobe Experience Manager (AEM) Assets permet de stocker des quantités importantes de ressources. Dans certains cas, la recherche de la bonne ressource peut être difficile et longue si vous utilisez uniquement les fonctionnalités de recherche génériques d’AEM.
 
@@ -35,34 +33,30 @@ Pour des recherches de texte intégral, ajoutez le prédicat `Fulltext` au formu
 
 1. Sur la page Modifier des formulaires de recherche, faites glisser un prédicat de l’onglet **[!UICONTROL Sélectionner le prédicat]** vers le volet principal. Faites glisser, par exemple, **[!UICONTROL Prédicat de la propriété]**.
 
-   ![Faites glisser un prédicat pour personnaliser les filtres de recherche](assets/drag_predicate.png)
+   ![Appuyez et déplacez un prédicat pour personnaliser les filtres de recherche.](assets/drag_predicate.png)
 
-   Faites glisser un prédicat pour personnaliser les filtres de recherche
+   *Figure : Appuyez et déplacez un prédicat pour personnaliser les filtres de recherche.*
 
-1. Sous l’onglet Paramètres, saisissez un libellé de champ, un texte d’espace réservé et une description pour le prédicat. Indiquez un nom valide pour la propriété de métadonnées que vous souhaitez associer au prédicat.
-
-   Le libellé d’en-tête de l’onglet Paramètres identifie le type de prédicat sélectionné.
+1. Sous l’onglet Paramètres, saisissez un libellé de champ, un texte d’espace réservé et une description pour le prédicat. Indiquez un nom valide pour la propriété de métadonnées que vous souhaitez associer au prédicat. Le libellé d’en-tête de l’onglet Paramètres identifie le type de prédicat sélectionné.
 
    ![Utilisez l’onglet Paramètres pour définir les options requises d’un prédicat](assets/settings.png)
 
-   Utilisez l’onglet Paramètres pour définir les options requises d’un prédicat
+   *Figure : Utilisez l’onglet Paramètres pour fournir les options requises d’un prédicat.*
 
-1. Dans le champ **[!UICONTROL Nom de la propriété]**, indiquez un nom valide pour la propriété de métadonnées que vous souhaitez associer au prédicat. Il s’agit du nom sur lequel la recherche se base. Par exemple, saisissez `jcr:content/metadata/dc:description` ou `./jcr:content/metadata/dc:description`.
-
-   Vous pouvez également sélectionner un nœud existant dans la boîte de dialogue de sélection.
+1. Dans le champ **[!UICONTROL Nom de la propriété]**, indiquez un nom valide pour la propriété de métadonnées que vous souhaitez associer au prédicat. Il s’agit du nom sur lequel la recherche se base. Par exemple, saisissez `jcr:content/metadata/dc:description` ou `./jcr:content/metadata/dc:description`. Vous pouvez également sélectionner un nœud existant dans la boîte de dialogue de sélection.
 
    ![Associez une propriété de métadonnées à un prédicat dans le champ Nom de propriété](assets/property_settings.png)
 
-   Associez une propriété de métadonnées à un prédicat dans le champ Nom de propriété
+   *Figure : Associez une propriété de métadonnées à un prédicat dans le champ Nom de la propriété.*
 
-1. Appuyez/cliquez sur **[!UICONTROL Aperçu]** ![aperçu](assets/preview.png) pour générer un aperçu du panneau Filtres tel qu’il apparaît une fois le prédicat ajouté.
+1. Click the **[!UICONTROL Preview]** ![preview](assets/preview.png) to generate a preview of the Filters panel as it appears after you add the predicate.
 1. Examinez la structure du prédicat en mode Aperçu.
 
    ![Aperçu du formulaire de recherche avant de soumettre les modifications](assets/preview-1.png)
 
    Aperçu du formulaire de recherche avant de soumettre les modifications
 
-1. Pour fermer l’aperçu, appuyez/cliquez sur l’icône **[!UICONTROL Fermer]** ![fermer](assets/do-not-localize/close_icon.png) dans le coin supérieur droit de l’aperçu.
+1. To close the preview, click the **[!UICONTROL Close]** ![close](assets/do-not-localize/close_icon.png) on the upper-right corner of the preview.
 1. Pour enregistrer les paramètres, appuyez sur **[!UICONTROL Terminé]**.
 1. Accédez au panneau Rechercher dans l’interface utilisateur d’Assets. Le prédicat Propriété est ajouté au panneau.
 1. Dans la zone de texte, saisissez une description de la ressource à rechercher. Saisissez par exemple « Adobe ». Lorsque vous effectuez une recherche, les ressources dont la description correspond à « Adobe » sont répertoriées dans les résultats de la recherche.
@@ -139,13 +133,11 @@ Le prédicat `Tags` vous permet de rechercher des ressources sur la base des bal
 1. Cliquez sur le logo AEM, puis sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Formulaires de recherche]**.
 1. Sur la page Formulaires de recherche, sélectionnez **[!UICONTROL Rail de recherche d’administrateurs de ressources]**, puis appuyez sur **Modifier** ![aemassets_edit](assets/aemassets_edit.png).
 1. Sur la page Modifier le formulaire de recherche, faites glisser **[!UICONTROL Prédicat de balises]** de l’onglet Sélectionner le prédicat jusqu’au volet principal.
-1. Dans l’onglet Paramètres, saisissez un texte d’espace réservé pour le prédicat. Indiquez le nom de la propriété sur laquelle sera axée la recherche dans le champ de propriété ; *jcr:content/metadata/cq:tags*, par exemple. Vous pouvez également sélectionner un nœud dans CRXDE à partir de la boîte de dialogue de sélection.
+1. Dans l’onglet Paramètres, saisissez un texte d’espace réservé pour le prédicat. Indiquez le nom de la propriété sur laquelle sera axée la recherche dans le champ de propriété ; `jcr:content/metadata/cq:tags`, par exemple. Vous pouvez également sélectionner un nœud dans CRXDE à partir de la boîte de dialogue de sélection.
 1. Configurez la propriété Chemin d’accès aux balises racines de ce prédicat pour renseigner les différentes balises dans la liste Balises.
 1. Sélectionnez **[!UICONTROL Option d’affichage de correspondance de toutes les balises]** pour rechercher les ressources qui contiennent toutes les balises que vous spécifiez.
 
    ![Paramètres standard du prédicat de balises](assets/tags_predicate.png)
-
-   Paramètres standard du prédicat de balises
 
 1. Dans le champ **[!UICONTROL Description]**, saisissez une description facultative, puis cliquez/appuyez sur **[!UICONTROL Terminé]**.
 1. Accédez au panneau Rechercher. Le prédicat **[!UICONTROL Balises]** est ajouté au panneau Rechercher.
@@ -330,28 +322,13 @@ Pour restaurer la facette de recherche par défaut, procédez comme suit :
 
 Si le rôle d’administrateur ne vous a pas été attribué, voici la liste des autorisations dont vous avez besoin pour réaliser des actions de modification, de suppression et d’affichage d’aperçu impliquant des facettes de recherche.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Action</strong></td>
-   <td><strong>Autorisations</strong></td>
-  </tr>
-  <tr>
-   <td>Modifier </td>
-   <td>Autorisations de lecture et d’écriture sur le nœud <code>/apps</code> dans CRX<br /> </td>
-  </tr>
-  <tr>
-   <td>Supprimer</td>
-   <td>Autorisations de lecture, d’écriture et de suppression sur le nœud <code>/apps</code> dans CRX</td>
-  </tr>
-  <tr>
-   <td>Aperçu</td>
-   <td>Autorisations de lecture, d’écriture et de suppression sur le nœud <code>/var/dam/content</code> dans CRX De même que les autorisations de lecture et d’écriture sur le nœud <code>/apps</code></td>
-  </tr>
- </tbody>
-</table>
+| Action | Autorisation |
+|---|---|
+| Modifier | Read and write permissions on the `/apps` node in CRX. |
+| Supprimer | Read, write, and delete permissions on the `/apps` node in CRX. |
+| Aperçu | Read, write, and delete permissions on the `/var/dam/content` node in CRX. Also, Read and write permissions on `/apps` node. |
 
 >[!MORELIKETHIS]
 >
->* [Recherche de ressources numériques](search-assets.md)
+>* [Recherche de ressources numériques](search-assets.md).
 
