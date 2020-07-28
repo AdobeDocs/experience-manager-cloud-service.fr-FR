@@ -2,7 +2,7 @@
 title: Phase d’exécution
 description: Phase d’exécution
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: 0dd05c1f6dc197daf154d4df6e6661e00455b233
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 100%
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Exécution {#execution-phase}
 
-Avant de démarrer la phase d’exécution, vous devez être intégré à Cloud Service. Vous devez également vous familiariser avec Cloud Manager car il s’agit du seul mécanisme de déploiement du code vers AEM Cloud Service.
+Avant de démarrer la phase d’exécution, vous devez être intégré à Cloud Service. Vous devez également vous familiariser avec Cloud Manager, car il s’agit du seul mécanisme de déploiement du code vers AEM Cloud Service.
 
 Cloud Manager permet aux entreprises de gérer elles-mêmes AEM dans le cloud. Il comprend une structure d’intégration et de diffusion continues (CI/CD) qui permet aux équipes informatiques et aux partenaires d’implémentation d’accélérer la diffusion des personnalisations ou des mises à jour sans compromettre les performances ou la sécurité.
 
@@ -40,12 +40,12 @@ Pour transférer du contenu entre votre instance AEM actuelle et l’instance Cl
 Il permet de spécifier le sous-ensemble de contenu que vous souhaitez transférer entre votre instance AEM source et l’instance AEM Cloud Service.
 
 >[!NOTE]
->Il est recommandé d’effectuer fréquemment des compléments différentiels pour réduire la période de gel du transfert final de contenu différentiel avant de passer en ligne sur le service cloud.
+>Il est recommandé d’effectuer fréquemment des compléments différentiels pour réduire la période de gel du transfert final de contenu différentiel avant de passer en ligne sur Cloud Service.
 
-Pour plus d’informations, voir la section [Outil de transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md).
+Pour plus d’informations, voir [Outil de transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md).
 
 >[!IMPORTANT]
->La configuration minimale requise pour l’outil de transfert de contenu est AEM 6.3 + et JAVA 8. Si vous utilisez une version antérieure d’AEM, vous devrez mettre à niveau votre référentiel de contenu à la version AEM 6.5 pour utiliser l’outil de transfert de contenu.
+>La configuration minimale requise pour l’outil de transfert de contenu est AEM 6.3+ et JAVA 8. Si vous utilisez une version antérieure d’AEM, vous devrez mettre à niveau votre référentiel de contenu à la version AEM 6.5 pour utiliser l’outil de transfert de contenu.
 
 ## Refactorisation du code {#code-refactor}
 
@@ -57,11 +57,11 @@ Certaines modifications sont nécessaires pour que les projets AEM Maven soient 
 
 * Toutes les autres zones du référentiel (`/content`, `/conf`, `/var`, `/home`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc.) peuvent, en revanche, être modifiées au moment de l’exécution.
 
-Pour plus d’informations, voir la section [Structure de module recommandée](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#recommended-package-structure).
+Pour plus d’informations, voir [Structure de module recommandée](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#recommended-package-structure).
 
 Il existe d’autres directives de développement à connaître concernant le développement sur AEM as a Cloud Service. Pour en savoir plus, consultez les [Conseils de développement pour AEM as a Cloud Service](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/development-guidelines.html).
 
-À partir de la phase de planification, vous devez disposer d’une liste des zones à reconfigurer pour qu’elles soient compatibles avec le service cloud. Vous devez également consulter les [Conseils de développement](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/development-guidelines.html) pour en savoir plus sur la refactorisation et l’optimisation du code nécessaires au passage vers le service cloud.
+À partir de la phase de planification, vous devez disposer d’une liste des zones à reconfigurer pour qu’elles soient compatibles avec Cloud Service. Vous devez également consulter les [Conseils de développement](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/development-guidelines.html) pour en savoir plus sur la refactorisation et l’optimisation du code nécessaires au passage vers Cloud Service.
 
 Pour accélérer certaines de vos tâches de refactorisation du code, vous pouvez utiliser les outils suivants :
 
@@ -69,19 +69,19 @@ Pour accélérer certaines de vos tâches de refactorisation du code, vous pouve
 * [Convertisseur du Dispatcher](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
 * [Outils de modernisation](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
 
-Il est recommandé de refactoriser et tester le code localement avant de le placer dans un environnement de service Cloud à l’aide de Cloud Manager Git.
+Il est recommandé de refactoriser et tester le code localement avant de le placer dans un environnement Cloud Service à l’aide de Cloud Manager Git.
 
 Pour en savoir plus, consultez la documentation du [SDK AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/deploying/overview.html#aem-as-a-cloud-service-sdk).
 
 Une liste contenant un certain nombre de ressources supplémentaires est proposée ci-dessous :
 
-* Regardez la vidéo relative à l’installation du SDK du Dispatcher pour comprendre comment procéder :
+* Regardez la vidéo relative à l’installation du SDK Dispatcher pour comprendre comment procéder :
 
-   > [!VIDEO](https://video.tv.adobe.com/v/30601)
+   >[!VIDEO](https://video.tv.adobe.com/v/30601)
 
-* Regardez la vidéo relative à la configuration du SDK du Dispatcher pour comprendre comment procéder :
+* Regardez la vidéo relative à la configuration du SDK Dispatcher pour comprendre comment procéder :
 
-   > [!VIDEO](https://video.tv.adobe.com/v/30602)
+   >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
 * Consultez la documentation relative à la [Configuration du développement local](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) pour configurer un environnement de développement local.
 
@@ -91,13 +91,13 @@ Pour gérer le développement continu de votre code sur votre AEM actif, ainsi q
 Une fois la restructuration du projet terminée, vous pouvez reprendre le développement du code à l’aide de la nouvelle structure. Les défaillances de pipeline de Cloud Manager seront ainsi réduites au cours du déploiement et du test du code.
 
 >[!NOTE]
->Les tâches de transfert de contenu et de refactorisation du code n’ont pas être effectuées séquentiellement, et peuvent être réalisées indépendamment les unes des autres. Toutefois, une structure de projet appropriée est requise pour que le contenu soit correctement rendu dans votre environnement Cloud Service.
+>Les tâches de transfert de contenu et de refactorisation du code n’ont pas à être effectuées séquentiellement, et peuvent être réalisées indépendamment les unes des autres. Toutefois, une structure de projet appropriée est requise pour que le contenu soit correctement rendu dans votre environnement Cloud Service.
 
 ## Bonnes pratiques de déploiement et de test du code {#best-practices}
 
 Les exécutions du pipeline Cloud Manager for Cloud Services prennent en charge l’exécution de tests sur l’environnement d’évaluation.
 
-Consultez la section [Test de qualité du code](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing) pour en savoir plus sur l’écriture de scripts de test et sur la couverture recommandée d’au moins 50 %.
+Consultez [Test de qualité du code](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing) pour en savoir plus sur l’écriture de scripts de test et sur la couverture recommandée d’au moins 50 %.
 
 Vous pouvez en outre consulter la section [Présentation des règles de qualité du code personnalisé](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/using-cloud-manager/custom-code-quality-rules.html) pour en savoir plus sur les règles de qualité du code personnalisé exécutées par Cloud Manager et créées conformément aux bonnes pratiques en matière d’ingénierie AEM.
 
