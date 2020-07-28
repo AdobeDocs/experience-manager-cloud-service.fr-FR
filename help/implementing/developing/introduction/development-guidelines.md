@@ -2,7 +2,7 @@
 title: Conseils de développement pour AEM as a Cloud Service
 description: À terminer
 translation-type: tm+mt
-source-git-commit: 171284a6f629dcf13d1fadfc6b7b5f0e69e41d84
+source-git-commit: eb2f944b4cc4311c6e0c10d34d02eafa6128f6aa
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 83%
@@ -171,21 +171,21 @@ Les clients n’auront pas accès aux outils de développement pour les environn
 
 Adobe surveille les performances de l’application et prend des mesures pour remédier à cette détérioration. Actuellement, il n’est pas possible d’observer les mesures d’application.
 
-## Adresse IP d&#39;entrée dédiée
+## Adresse IP d&#39;entrée dédiée {#dedicated-egress-ip-address}
 
 Sur demande, AEM en tant que Cloud Service fournira une adresse IP statique, dédiée, pour le trafic sortant HTTP (port 80) et HTTPS (port 443) programmé en code Java.
 
-### Avantages
+### Avantages {#benefits}
 
 Cette adresse IP dédiée peut améliorer la sécurité lors de l&#39;intégration avec les fournisseurs SaaS (comme un fournisseur de gestion de la relation client) ou d&#39;autres intégrations en dehors de l&#39;AEM en tant que Cloud Service qui offre une liste autorisée d&#39;adresses IP. En ajoutant l&#39;adresse IP dédiée à la liste autorisée, elle garantit que seul le trafic provenant de l&#39;Cloud Service AEM du client sera autorisé à circuler dans le service externe. Ceci s’ajoute au trafic provenant de toute autre adresse IP autorisée.
 
 Si la fonction d’adresse IP dédiée n’est pas activée, le trafic provenant d’AEM en tant que Cloud Service passe par un ensemble d’adresses IP partagées avec d’autres clients.
 
-### Configuration
+### Configuration {#configuration}
 
 Pour activer une adresse IP dédiée, envoyez une demande au service d’assistance clientèle, qui fournira les informations d’adresse IP. La demande doit spécifier chaque environnement et des demandes supplémentaires doivent être effectuées si de nouveaux environnements ont besoin de la fonction après la demande initiale. Les environnements de programme Sandbox ne sont pas pris en charge.
 
-### Utilisation des fonctionnalités
+### Utilisation des fonctionnalités {#feature-usage}
 
 Cette fonction est compatible avec le code Java ou les bibliothèques qui génèrent du trafic sortant, à condition qu’ils utilisent les propriétés système Java standard pour les configurations de proxy. Dans la pratique, cela devrait inclure la plupart des bibliothèques courantes.
 
@@ -209,6 +209,6 @@ La même adresse IP dédiée est appliquée à tous les programmes d&#39;un clie
 
 Seuls les ports HTTP et HTTPS sont pris en charge. Cela inclut HTTP/1.1, ainsi que HTTP/2 lorsqu’il est chiffré.
 
-### Considérations relatives au débogage
+### Considérations relatives au débogage {#debugging-considerations}
 
 Afin de vérifier que le trafic est effectivement sortant sur l’adresse IP dédiée attendue, vérifiez les journaux dans le service de destination, si disponible. Dans le cas contraire, il peut s’avérer utile d’appeler un service de débogage tel que [https://ifconfig.me/ip](https://ifconfig.me/ip), qui renverra l’adresse IP d’appel.
