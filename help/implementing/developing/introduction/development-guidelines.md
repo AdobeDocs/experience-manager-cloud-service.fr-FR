@@ -2,10 +2,10 @@
 title: Conseils de développement pour AEM as a Cloud Service
 description: À terminer
 translation-type: tm+mt
-source-git-commit: 0a2ae4e40cd342056fec9065d226ec064f8b2d1f
+source-git-commit: 171284a6f629dcf13d1fadfc6b7b5f0e69e41d84
 workflow-type: tm+mt
-source-wordcount: '1940'
-ht-degree: 84%
+source-wordcount: '1949'
+ht-degree: 83%
 
 ---
 
@@ -173,17 +173,17 @@ Adobe surveille les performances de l’application et prend des mesures pour re
 
 ## Adresse IP d&#39;entrée dédiée
 
-Sur demande, AEM en tant que Cloud Service fournit une adresse IP statique, dédiée, pour le trafic sortant HTTP (port 80) et HTTPS (port 443) programmé en code Java.
+Sur demande, AEM en tant que Cloud Service fournira une adresse IP statique, dédiée, pour le trafic sortant HTTP (port 80) et HTTPS (port 443) programmé en code Java.
 
 ### Avantages
 
-Cette adresse IP dédiée peut améliorer la sécurité lors de l’intégration avec les fournisseurs SaaS (comme un fournisseur de gestion de la relation client) ou d’autres intégrations en dehors d’AEM en tant qu’Cloud Service qui offre une liste autorisée d’adresses IP. En ajoutant l’adresse IP dédiée à la liste autorisée, elle garantit que seul le trafic provenant du Cloud Service AEM du client sera autorisé à circuler dans le service externe. Ceci s’ajoute au trafic provenant de toute autre adresse IP autorisée.
+Cette adresse IP dédiée peut améliorer la sécurité lors de l&#39;intégration avec les fournisseurs SaaS (comme un fournisseur de gestion de la relation client) ou d&#39;autres intégrations en dehors de l&#39;AEM en tant que Cloud Service qui offre une liste autorisée d&#39;adresses IP. En ajoutant l&#39;adresse IP dédiée à la liste autorisée, elle garantit que seul le trafic provenant de l&#39;Cloud Service AEM du client sera autorisé à circuler dans le service externe. Ceci s’ajoute au trafic provenant de toute autre adresse IP autorisée.
 
-Si la fonction d’adresse IP dédiée n’est pas activée, le trafic provenant d’AEM en tant que Cloud Service passe par un ensemble d’IP partagées avec d’autres clients.
+Si la fonction d’adresse IP dédiée n’est pas activée, le trafic provenant d’AEM en tant que Cloud Service passe par un ensemble d’adresses IP partagées avec d’autres clients.
 
 ### Configuration
 
-Pour activer une adresse IP dédiée, envoyez une demande au service d’assistance clientèle, qui fournira les informations d’adresse IP. Une demande doit être faite pour chaque environnement, y compris pour les nouveaux environnements créés après la demande initiale.
+Pour activer une adresse IP dédiée, envoyez une demande au service d’assistance clientèle, qui fournira les informations d’adresse IP. La demande doit spécifier chaque environnement et des demandes supplémentaires doivent être effectuées si de nouveaux environnements ont besoin de la fonction après la demande initiale. Les environnements de programme Sandbox ne sont pas pris en charge.
 
 ### Utilisation des fonctionnalités
 
@@ -205,7 +205,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 }
 ```
 
-La même adresse IP dédiée est appliquée à tous les programmes d’un client de son organisation Adobe et à tous les environnements de chacun de leurs programmes. Il s’applique aux services d’auteur et de publication.
+La même adresse IP dédiée est appliquée à tous les programmes d&#39;un client dans son organisation d&#39;Adobe et à tous les environnements de chacun de leurs programmes. Il s’applique aux services d’auteur et de publication.
 
 Seuls les ports HTTP et HTTPS sont pris en charge. Cela inclut HTTP/1.1, ainsi que HTTP/2 lorsqu’il est chiffré.
 
