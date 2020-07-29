@@ -2,10 +2,10 @@
 title: Journalisation
 description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou apprenez à demander la journalisation des données.
 translation-type: tm+mt
-source-git-commit: bbcadf29dbac89191a3a1ad31ee6721f8f57ef95
+source-git-commit: 68445e086aeae863520d14cb712f0cbebbffb5ab
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 10%
+source-wordcount: '1304'
+ht-degree: 8%
 
 ---
 
@@ -195,41 +195,18 @@ Ce journal est utile pour comprendre rapidement quelles requêtes HTTP sont envo
 
 ### Format du journal {#access-log-format}
 
-<table>
-<tbody>
-<tr>
-<td><b>AEM en tant qu’ID de noeud Cloud Service</b></td>
-<td><b>Adresse IP du client</b></td>
-<td><b>User</b></td>
-<td><b>Date et heure</b></td>
-<td><b>Vide</b></td>
-<td><b>Méthode HTTP</b></td>
-<td><b>URL</b></td>
-<td><b>Protocole</b></td>
-<td><b>Vide</b></td>
-<td><b>État de la réponse HTTP</b></td>
-<td><b>Temps de réponse HTTP en millisecondes</b></td>
-<td><b>Référent</b></td>
-<td><b>Agent utilisateur</b></td>
-</tr>
-<tr>
-<td>cm-p1235-e2644-aem-author-59555cb5b8-8kgr2</td>
-<td>-</td>
-<td>myuser@adobe.com</td>
-<td>30/avr/2020:17:37:14 +000</td>
-<td>"</td>
-<td>GET</td>
-<td>/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css</td>
-<td>HTTP/1.1</td>
-<td>"</td>
-<td>200</td>
-<td>1141</td>
-<td><code>"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"</code></td>
-<td>"Mozilla/5.0 (Macintosh ; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, comme Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
-</tr>
-</tbody>
-</table>
-
+| AEM en tant qu’ID de noeud Cloud Service | cm-p1234-e26813-aem-publish-5c787687c-lqlxr |
+|---|---|
+| Adresse IP du client | - |
+| User | myuser@adobe.com |
+| Date et heure | 30/avr/2020:17:37:14 +000 |
+| Méthode HTTP | GET |
+| URL | /libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css |
+| Protocole | HTTP/1.1 |
+| État de la réponse HTTP | 200 |
+| Temps de requête HTTP en millisecondes | 1141 |
+| Référent | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` |
+| Agent utilisateur | &quot;Mozilla/5.0 (Macintosh ; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, comme Gecko) Chrome/81.0.4044.122 Safari/537.36&quot; |
 
 **Exemple**
 
@@ -243,7 +220,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 
 Le journal d&#39;accès HTTP n&#39;est pas configurable dans AEM en tant que Cloud Service.
 
-## Serveur web Apache/Journalisation de Dispatcher {#dispatcher-logging}
+## Apache Web Server and Dispatcher Logging {#apache-web-server-and-dispatcher-logging}
 
 AEM en tant que Cloud Service fournit trois journaux pour les serveurs Web Apache et la couche de répartiteur sur la publication :
 
@@ -253,4 +230,74 @@ AEM en tant que Cloud Service fournit trois journaux pour les serveurs Web Apach
 
 Notez que ces journaux ne sont disponibles que pour le niveau Publication.
 
-Cet ensemble de journaux fournit des informations sur les requêtes HTTP à l’AEM en tant que niveau de publication Cloud Service avant que ces requêtes n’atteignent l’application AEM. Il est important de le comprendre, car, idéalement, la plupart des requêtes HTTP aux serveurs de la couche Publication sont servies par le contenu mis en cache par le serveur Web Apache HTTPD et l&#39;Dispatcher AEM, et n&#39;atteignent jamais l&#39;application AEM elle-même, de sorte qu&#39;il n&#39;y a pas d&#39;instructions de journal pour ces requêtes dans les journaux Java, Request ou Access.
+Cet ensemble de journaux fournit des informations sur les requêtes HTTP à l’AEM en tant que niveau de publication Cloud Service avant que ces requêtes n’atteignent l’application AEM. Il est important de le comprendre, car, idéalement, la plupart des requêtes HTTP envoyées aux serveurs de niveau Publication sont servies par du contenu mis en cache par le serveur Web Apache HTTPD et l’Dispatcher AEM, et n’atteignent jamais l’application AEM elle-même. Il n’existe donc aucune instruction de journal pour ces requêtes dans AEM journaux Java, Request ou Access.
+
+### Journal d&#39;accès du serveur Web Apache HTTPD {#apache-httpd-web-server-access-log}
+
+Le journal d&#39;accès Apache HTTP Web Server fournit des instructions pour chaque requête HTTP qui atteint le serveur Web/Dispatcher du niveau Publication. Notez que les requêtes diffusées à partir d’un CDN en amont ne sont pas reflétées dans ces journaux.
+
+Consultez les informations sur le format du journal des erreurs dans la documentation [](https://httpd.apache.org/docs/2.4/logs.html#accesslog)officielle d’Apache.
+
+**Format du journal**
+
+<!--blank until prod build finishes-->
+
+**Exemple**
+
+```
+cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/favicons/favicon-32.png HTTP/1.1" 200 715 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
+cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/favicons/favicon-512.png HTTP/1.1" 200 9631 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
+cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/country-flags/US.svg HTTP/1.1" 200 810 "https://publish-p6902-e30226.adobeaemcloud.com/content/wknd/us/en.html" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
+```
+
+### Configuration du journal d&#39;accès au serveur Web Apache HTTPD {#configuring-the-apache-httpd-webs-server-access-log}
+
+Ce journal n&#39;est pas configurable dans AEM en tant que Cloud Service.
+
+## Journal d’erreurs du serveur Web Apache HTTPD {#apache-httpd-web-server-error-log}
+
+Le journal des erreurs du serveur Web HTTP Apache fournit des instructions pour chaque erreur dans le serveur Web/Dispatcher du niveau Publication.
+
+Consultez les informations sur le format du journal des erreurs dans la documentation [](https://httpd.apache.org/docs/2.4/logs.html#errorlog)officielle d’Apache.
+
+**Format du journal**
+
+<!--placeholder-->
+
+**Exemple**
+
+```
+Fri Jul 17 02:19:48.093820 2020 [mpm_worker:notice] [pid 1:tid 140272153361288] [cm-p1234-e30226-aem-publish-b86c6b466-b9427] AH00292: Apache/2.4.43 (Unix) Communique/4.3.4-20200424 mod_qos/11.63 configured -- resuming normal operations
+Fri Jul 17 02:19:48.093874 2020 [core:notice] [pid 1:tid 140272153361288] [cm-p1234-e30226-aem-publish-b86c6b466-b9427] AH00094: Command line: 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D ENVIRONMENT_PROD'
+Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] [cm-p1234-e30226-aem-publish-b496f64bf-5vckp] AH00295: caught SIGTERM, shutting down
+```
+
+### Configuration du journal des erreurs du serveur Web Apache HTTPD {#configuring-the-apache-httpd-web-server-error-log}
+
+Les niveaux de journal mod_rewrite sont définis par la variable REWRITE_LOG_LEVEL dans le fichier `conf.d/variables/global.var`.
+
+Il peut être défini sur Error, Warn, Info, Debug et Trace1 - Trace8, avec la valeur par défaut Warn. Pour déboguer votre RewriteRules, il est recommandé de passer au niveau du journal Trace2.
+
+Pour plus d&#39;informations, consultez la documentation [du module](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) mod_rewrite.
+
+Pour définir le niveau de journal par environnement, utilisez la branche conditionnelle appropriée dans le fichier global.var, comme décrit ci-dessous :
+
+```
+Define REWRITE_LOG_LEVEL Debug
+  
+<IfDefine ENVIRONMENT_STAGE>
+  ...
+  Define REWRITE_LOG_LEVEL Warn
+  ...
+</IfDefine>
+<IfDefine ENVIRONMENT_PROD>
+  ...
+  Define REWRITE_LOG_LEVEL Error
+  ...
+</IfDefine>
+```
+
+## Journal des Dispatchers {#dispatcher-log}
+
+**Format du journal**
+
