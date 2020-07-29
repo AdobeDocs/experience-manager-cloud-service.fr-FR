@@ -2,7 +2,7 @@
 title: Dispatcher en mode cloud
 description: 'Dispatcher en mode cloud '
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: a6820eab30f2b318d62d2504cb17c12081a320a3
 workflow-type: tm+mt
 source-wordcount: '3914'
 ht-degree: 100%
@@ -253,9 +253,9 @@ Lorsqu’il est exécuté sur votre artefact maven ou votre sous-répertoire `di
 $ validator full dispatcher/src
 Cloud manager validator 1.0.4
 2019/06/19 15:41:37 Apache configuration uses non-whitelisted directives:
- conf.d/enabled_vhosts/aem_publish.vhost:46: LogLevel
+  conf.d/enabled_vhosts/aem_publish.vhost:46: LogLevel
 2019/06/19 15:41:37 Dispatcher configuration validation failed:
- conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
+  conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
 ```
 
 Notez que l’outil de validation ne signale que l’utilisation interdite des directives Apache qui n’ont pas été placées sur la liste autorisée. Il ne signale aucun problème de syntaxe ni de sémantique dans votre configuration Apache, car ces informations ne sont disponibles que pour les modules Apache dans un environnement en cours d’exécution.
@@ -500,7 +500,7 @@ Supprimez tout fichier d’hôte virtuel dans `conf.d/enabled_vhosts` dont le no
 `lc` ou `flush`. Tous les fichiers d’hôtes virtuels dans `conf.d/available_vhosts` non
 liés peuvent également être supprimés.
 
-### Supprimer ou commenter les sections d’hôte virtuel qui ne font pas référence au port 80
+### Supprimer ou mettre en commentaires les sections d’hôte virtuel qui ne font pas référence au port 80
 
 Si des sections de vos fichiers d’hôtes virtuels font encore référence exclusivement à d’autres ports que le port 80, par exemple :
 
@@ -716,7 +716,7 @@ $ validator dispatcher .
 Si des erreurs s’affichent au sujet de fichiers d’inclusion manquants, vérifiez si vous avez correctement renommé
 les fichiers en question.
 
-Si des erreurs s’affichent concernant une variable non définie `PUBLISH_DOCROOT`, renommez-la `DOCROOT`.
+Si des erreurs s’affichent concernant une variable `PUBLISH_DOCROOT` non définie, renommez-la `DOCROOT`.
 
 Pour toute autre erreur, consultez la section Dépannage de la documentation
 du programme de validation.
@@ -737,7 +737,7 @@ Cela valide la configuration complète et génère des informations de déploiem
 
 ### Étape 2 : démarrer Dispatcher dans une image Docker avec ces informations de déploiement
 
-Avec votre serveur de publication AEM en exécution sur votre ordinateur macOS et écoutant le port 4503,
+Avec votre serveur de publication AEM en exécution sur votre ordinateur macOS et en écoutant le port 4503,
 vous pouvez lancer Dispatcher devant ce serveur comme suit :
 
 ```
