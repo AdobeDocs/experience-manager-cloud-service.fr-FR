@@ -2,10 +2,10 @@
 title: Notes de mise à jour d’Adobe Experience Manager as a Cloud Service version 2020.7.0
 description: Notes de mise à jour d’Experience Manager version 2020.7.0
 translation-type: tm+mt
-source-git-commit: f96a9b89bb704b8b8b8eb94cdb5f94cc42890ec8
+source-git-commit: 9e27ff9510fda5ed238a25b2d63d1d9a3099a8b5
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 30%
+source-wordcount: '409'
+ht-degree: 100%
 
 ---
 
@@ -24,52 +24,50 @@ La date de publication de la mise à jour 2020.7.0 de [!UICONTROL Cloud Manager
 
 ### Nouveautés {#what-is-new-cloud-manager}
 
-* La page environnements a été repensée.
+* La page Environnements a été repensée.
 
-* Les environnements en veille prolongée affichent désormais un état discret dans Cloud Manager lorsqu’ils sont mis en veille prolongée.
+* Les environnements en veille prolongée affichent désormais un état discret dans Cloud Manager.
 
-* Le nombre de variables d&#39;environnement par environnement a été porté à 200.
-
-* Le conteneur de création Cloud Manager prend désormais en charge Java 8 et Java 11.
+* Le nombre de variables d’environnement par environnement a été porté à 200.
 
 * Les pipelines de Cloud Manager prennent désormais en charge les variables et les secrets définis par le client.
-Pour plus d&#39;informations, consultez Variables [de](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables) pipeline.
+Pour plus d’informations, consultez [Variables de pipeline](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables).
 
 ### Correctifs {#bug-fixes-cm}
 
-* Le lien entre Cloud Manager et la Console développeur était incorrectement actif avant la création complète des environnements.
+* Le lien entre Cloud Manager et Developer Console était actif avant la création complète des environnements alors qu’il ne devait pas l’être.
 
-* Le lien vers la Console développeur directement à partir de Cloud Manager n’affichait pas l’option permettant de dé-hiberner/hiberner un environnement de Programme Sandbox.
+* Le lien direct vers Developer Console à partir de Cloud Manager n’affichait pas l’option permettant de mettre en veille/réactiver un environnement de programme sandbox.
 
-* The **Cancel** and **Save** options on the Non-Production Pipeline edit page were not always visible.
+* Les options **Annuler** et **Enregistrer** sur la page Modification d’un pipeline hors production n’étaient pas toujours visibles.
 
 * Certaines erreurs liées au u processus de qualité du code peuvent entraîner la génération incorrecte du fichier journal.
 
-* Lors de la création d’un nouveau programme, le nom suggéré renvoyait parfois un duplicata de nom de programme existant.
+* Lors de la création d’un programme, le nom suggéré renvoyait parfois un duplicata de nom de programme existant.
 
 * Certains journaux d&#39;étape de pipeline volumineux n&#39;ont pas pu être téléchargés de manière cohérente via l&#39;interface utilisateur.
 
-* La validation des noms d&#39;environnement comportait une erreur &quot;off-by-one&quot;.
+* La validation des noms d’environnement comportait une erreur de décalage d’une unité.
 
-* La page Environnements affichait parfois des segments de publication et de répartiteur lorsqu’aucun segment n’était présent.
+* La page Environnements affichait parfois des segments de publication et de répartiteur alors qu’aucun segment n’était présent.
 
 ### Problèmes connus {#known-issues}
 
-* En raison d’un changement dans le mode de calcul de la couverture du code, la version _minimale_ du module externe Jacoco est désormais 0.7.5.201505241946 (publiée en mai 2015). Les clients référençant explicitement une ancienne version recevront un message d’erreur dans le processus de qualité du code.
+* En raison d’un changement dans le mode de calcul de la couverture du code, la version _minimale_ du module externe Jacoco est désormais 0.7.5.201505241946 (publiée en mai 2015). Les clients référençant explicitement une ancienne version recevront un message d’erreur dans le processus de qualité du code.
 
-## Nouveautés de l’analyseur de l’état de préparation du cloud {#cloud-readiness-analyzer}
+## Nouveautés de Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
-Suivez cette section pour en savoir plus sur les nouveautés et les mises à jour de la version 1.0.2 de Cloud Readiness Analyzer.
+Suivez cette section pour en savoir plus sur les nouveautés et les mises à jour de la version 1.0.2 de Cloud Readiness Analyzer.
 
 ### Correctifs {#cra-bug-fixes}
 
-* La version antérieure de l&#39;ARC n&#39;a pas pu être exécutée sur l&#39;Adobe Experience Manager (AEM) 6.1. Un soutien explicite pour autoriser les utilisateurs du groupe d&#39;administrateurs a été ajouté.
+* La version antérieure de CRA ne pouvait pas s’exécuter sur Adobe Experience Manager (AEM) 6.1. Nous avons ajouté la prise en charge explicite de l’autorisation des utilisateurs dans le groupe d’administrateurs.
 
-   Consultez la section [Installation de l’ARC sur AEM 6.1](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) pour plus d’informations.
+   Voir [Installation de CRA sur AEM 6.1](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) pour plus d’informations.
 
-* L&#39;horodatage d&#39;expiration affiché sur le rapport récapitulatif était incorrect.
+* L’horodatage d’expiration affiché sur le rapport résumé était incorrect.
 
-* L&#39;ARC détectait des composants personnalisés duplicata.
+* CRA détectait des doublons de composants personnalisés.
 
-* Dans AEM 6.1, l’inspection du contenu était terminée avant d’effectuer l’inspection complète. La gestion des exceptions a été ajoutée pour permettre à l&#39;inspecteur de sauter et de continuer jusqu&#39;à ce que l&#39;inspection complète soit terminée.
+* Dans AEM 6.1, l’inspection du contenu se terminait avant la fin de l’analyse complète. Nous avons ajouté la gestion des exceptions pour permettre à l’inspecteur d’ignorer et de continuer jusqu’à ce que l’inspection complète soit terminée.
 
