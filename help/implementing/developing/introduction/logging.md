@@ -2,9 +2,9 @@
 title: Journalisation
 description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou apprenez à demander la journalisation des données.
 translation-type: tm+mt
-source-git-commit: 68445e086aeae863520d14cb712f0cbebbffb5ab
+source-git-commit: 23f7b4b41abf9b909ec55a7f37b6b8e78c689b9b
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1305'
 ht-degree: 8%
 
 ---
@@ -195,19 +195,6 @@ Ce journal est utile pour comprendre rapidement quelles requêtes HTTP sont envo
 
 ### Format du journal {#access-log-format}
 
-| AEM en tant qu’ID de noeud Cloud Service | cm-p1234-e26813-aem-publish-5c787687c-lqlxr |
-|---|---|
-| Adresse IP du client | - |
-| User | myuser@adobe.com |
-| Date et heure | 30/avr/2020:17:37:14 +000 |
-| Méthode HTTP | GET |
-| URL | /libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css |
-| Protocole | HTTP/1.1 |
-| État de la réponse HTTP | 200 |
-| Temps de requête HTTP en millisecondes | 1141 |
-| Référent | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` |
-| Agent utilisateur | &quot;Mozilla/5.0 (Macintosh ; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, comme Gecko) Chrome/81.0.4044.122 Safari/537.36&quot; |
-
 **Exemple**
 
 ```
@@ -215,6 +202,55 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/customthumb/clientlibs.lc-60e4443805c37afa0c74b674b141f1df-lc.min.css HTTP/1.1" 200 809 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
+
+<table>
+<tbody>
+<tr>
+<td>AEM en tant qu’ID de noeud Cloud Service</td>
+<td>cm-p1235-e2644-aem-author-59555cb5b8-8kgr2</td>
+</tr>
+<tr>
+<td>Adresse IP du client</td>
+<td>-</td>
+</tr>
+<tr>
+<td>User</td>
+<td>myuser@adobe.com</td>
+</tr>
+<tr>
+<td>Date et heure</td>
+<td>30/avr/2020:17:37:14 +000</td>
+</tr>
+<tr>
+<td>Méthode HTTP</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css</td>
+</tr>
+<tr>
+<td>Protocole</td>
+<td>HTTP/1.1</td>
+</tr>
+<tr>
+<td>État de la réponse HTTP</td>
+<td>200</td>
+</tr>
+<tr>
+<td>Temps de requête HTTP en millisecondes</td>
+<td>1141</td>
+</tr>
+<tr>
+<td>Référent</td>
+<td><code>"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"</code></td>
+</tr>
+<tr>
+<td>Agent utilisateur</td>
+<td>"Mozilla/5.0 (Macintosh ; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, comme Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
+</tr>
+</tbody>
+</table>
 
 ### Configuration du journal d&#39;accès HTTP {#configuring-the-http-access-log}
 
