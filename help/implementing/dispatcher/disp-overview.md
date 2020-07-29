@@ -2,10 +2,10 @@
 title: Dispatcher en mode cloud
 description: 'Dispatcher en mode cloud '
 translation-type: tm+mt
-source-git-commit: a6820eab30f2b318d62d2504cb17c12081a320a3
+source-git-commit: 495332d7ea421133e29f73f8930bb069bb5b4ebd
 workflow-type: tm+mt
-source-wordcount: '3914'
-ht-degree: 100%
+source-wordcount: '3824'
+ht-degree: 99%
 
 ---
 
@@ -189,6 +189,7 @@ Filtres par défaut adaptés à un projet standard. Si une personnalisation est 
 Extension métacaractère d’hôte par défaut adaptée à un projet standard. Si une personnalisation est nécessaire, modifiez `virtualhosts.any`. Dans votre personnalisation, vous ne devez pas inclure l’extension métacaractère d’hôte par défaut, car elle correspond à **chaque** requête entrante.
 
 >[!NOTE]
+>
 >L’archétype maven d’AEM as a Cloud Service génère la même structure de fichiers de configuration Dispatcher.
 
 Les sections ci-dessous décrivent comment valider localement la configuration afin qu’elle puisse franchir le niveau de qualité associé dans Cloud Manager lors du déploiement d’une version interne.
@@ -377,37 +378,7 @@ Dispatcher démarre alors dans un conteneur avec son serveur principal pointant 
 
 ## Débogage de la configuration Apache et Dispatcher {#debugging-apache-and-dispatcher-configuration}
 
-La stratégie suivante peut être utilisée afin d’augmenter la sortie du journal pour le module Dispatcher et voir le résultat de l’évaluation `RewriteRule` dans les environnements locaux et cloud.
-
-Les niveaux de journal de ces modules sont définis par les variables `DISP_LOG_LEVEL` et `REWRITE_LOG_LEVEL`. Ils peuvent être définis dans le fichier `conf.d/variables/global.vars`. Sa partie pertinente est la suivante :
-
-```
-# Log level for the dispatcher
-#
-# Possible values are: Error, Warn, Info, Debug and Trace1
-# Default value: Warn
-#
-# Define DISP_LOG_LEVEL Warn
- 
-# Log level for mod_rewrite
-#
-# Possible values are: Error, Warn, Info, Debug and Trace1 - Trace8
-# Default value: Warn
-#
-# To debug your RewriteRules, it is recommended to raise your log
-# level to Trace2.
-#
-# More information can be found at:
-# https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging
-#
-# Define REWRITE_LOG_LEVEL Warn
-```
-
-Lors de l’exécution locale de Dispatcher, les journaux sont également directement imprimés dans la sortie du terminal. La plupart du temps, ces journaux doivent être en mode DEBUG, ce qui peut être effectué en transmettant le niveau Debug comme paramètre lors de l’exécution de Docker. Par exemple :
-
-`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
-
-Les journaux des environnements cloud seront exposés par le biais du service de journalisation disponible dans Cloud Manager.
+Les niveaux de journalisation sont définis par les variables `DISP_LOG_LEVEL` et `REWRITE_LOG_LEVEL` dans `conf.d/variables/global.var`s&quot;. See the [Logging documentation](/help/implementing/developing/introduction/logging.md) for more information.
 
 ## Différentes configurations Dispatcher par environnement {#different-dispatcher-configurations-per-environment}
 
