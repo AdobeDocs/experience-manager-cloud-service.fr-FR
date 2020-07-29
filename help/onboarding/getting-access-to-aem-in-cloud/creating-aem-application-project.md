@@ -1,11 +1,11 @@
 ---
-title: Projet d’application AEM - Cloud Service
-description: Projet d’application AEM - Cloud Service
+title: Projet de demande de AEM - Cloud Service
+description: Projet de demande de AEM - Cloud Service
 translation-type: tm+mt
-source-git-commit: 38be3237eb3245516d3ccf51d0718505ee5102f0
+source-git-commit: 9e27ff9510fda5ed238a25b2d63d1d9a3099a8b5
 workflow-type: tm+mt
-source-wordcount: '1482'
-ht-degree: 72%
+source-wordcount: '1414'
+ht-degree: 82%
 
 ---
 
@@ -76,37 +76,6 @@ Cloud Manager crée et teste votre code à l&#39;aide d&#39;un environnement de 
 >[!NOTE]
 >Bien que Cloud Manager ne définisse pas de version spécifique du `jacoco-maven-plugin`, la version utilisée doit être au moins `0.7.5.201505241946`.
 
-### Utilisation de Java 11 {#using-java-11}
-
-Cloud Manager prend désormais en charge la création de projets clients avec Java 8 et Java 11. Par défaut, les projets sont créés à l’aide de Java 8. Les clients souhaitant utiliser Java 11 dans leurs projets peuvent le faire via le module [Apache Maven Toolchain](https://maven.apache.org/plugins/maven-toolchains-plugin/).
-
-À cet effet, dans le fichier pom.xml, ajoutez une `<plugin>` entrée du type suivant :
-
-```xml
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-toolchains-plugin</artifactId>
-            <version>1.1</version>
-            <executions>
-                <execution>
-                    <goals>
-                        <goal>toolchain</goal>
-                    </goals>
-                </execution>
-            </executions>
-            <configuration>
-                <toolchains>
-                    <jdk>
-                        <version>11</version>
-                        <vendor>oracle</vendor>
-                    </jdk>
-                </toolchains>
-            </configuration>
-        </plugin>
-```
-
->[!NOTE]
->Les `vendor` valeurs prises en charge sont `oracle` et `sun`, et les `version` valeurs prises en charge sont `1.8`, `1.11`et `11`.
 
 ## Variables d’environnement {#environment-variables}
 
@@ -129,23 +98,23 @@ Pour la prise en charge, Cloud Manager ajoute ces variables d’environnement s
 | ARTIFACTS_VERSION | Pour un pipeline intermédiaire ou de production, version synthétique générée par Cloud Manager |
 | CM_AEM_PRODUCT_VERSION | Nom de la version |
 
-### Variables de tuyau {#pipeline-variables}
+### Variables de pipeline {#pipeline-variables}
 
-Dans certains cas, le processus de création d&#39;un client peut dépendre de variables de configuration spécifiques qui ne seraient pas appropriées pour être placées dans le référentiel Git ou qui doivent varier d&#39;une exécution de pipeline utilisant la même branche.
+Dans certains cas, le processus de génération d’un client peut dépendre de variables de configuration spécifiques qui ne seraient pas appropriées pour le référentiel Git ou qui doivent varier entre les exécutions de pipeline utilisant la même branche.
 
 Cloud Manager permet de configurer ces variables par le biais de l’API Cloud Manager ou de l’interface de ligne de commande de Cloud Manager pour chaque pipeline. Les variables peuvent être stockées en texte brut ou chiffrées au repos. Dans les deux cas, les variables sont disponibles dans l’environnement de génération en tant que variable d’environnement qui peut ensuite être référencée à partir du fichier `pom.xml` ou d’autres scripts de génération.
 
-Pour définir une variable à l’aide de l’interface de ligne de commande, exécutez une commande du type :
+Pour définir une variable à l’aide de l’interface de ligne de commande, exécutez une commande du type :
 
 `$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test`
 
-Les variables actives peuvent être répertoriées :
+Les variables actives peuvent être répertoriées :
 
 `$ aio cloudmanager:list-pipeline-variables PIPELINEID`
 
-Les noms de variable ne peuvent contenir que des caractères alphanumériques et des traits de soulignement (_). Par convention, les noms doivent être entièrement en majuscules. Il existe une limite de 200 variables par pipeline, chaque nom doit comporter moins de 100 caractères et chaque valeur doit être inférieure à 2 048 caractères.
+Les noms des variables ne peuvent contenir que des caractères alphanumériques et des caractères de soulignement (_). Par convention, les noms doivent être entièrement en majuscules. Il existe une limite de 200 variables par pipeline, chaque nom doit comporter moins de 100 caractères et chaque valeur doit être inférieure à 2 048 caractères.
 
-Lorsqu’elle est utilisée dans un `Maven pom.xml` fichier, il s’avère généralement utile de mapper ces variables aux propriétés Maven en utilisant une syntaxe similaire à celle-ci :
+En cas d’utilisation dans un fichier `Maven pom.xml`, il est généralement utile de mapper ces variables aux propriétés Maven en suivant une syntaxe similaire à celle-ci :
 
 ```xml
         <profile>
@@ -368,7 +337,7 @@ Cette même technique peut être utilisée pour installer des packages spécifiq
 
 >[!NOTE]
 >
->Installer un package système de cette manière ne l&#39;installe **pas** dans l&#39;environnement d&#39;exécution utilisé pour exécuter Adobe Experience Manager. Si vous avez besoin d’un package système installé sur l’environnement AEM, contactez votre représentant Adobe.
+>Installer un package système de cette manière ne l&#39;installe **pas** dans l&#39;environnement d&#39;exécution utilisé pour exécuter Adobe Experience Manager. Si vous avez besoin d&#39;un package système installé sur l&#39;environnement AEM, contactez votre représentant Adobe.
 
 ## Omission des modules de contenu{#skipping-content-packages}
 
