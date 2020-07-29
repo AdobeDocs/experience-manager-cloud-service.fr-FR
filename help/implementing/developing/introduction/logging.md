@@ -2,10 +2,10 @@
 title: Journalisation
 description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou apprenez à demander la journalisation des données.
 translation-type: tm+mt
-source-git-commit: 23f7b4b41abf9b909ec55a7f37b6b8e78c689b9b
+source-git-commit: 0bb5ff11762a4a3a158d211f8bba2ff77d1d3201
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 8%
+source-wordcount: '2053'
+ht-degree: 6%
 
 ---
 
@@ -27,7 +27,9 @@ La journalisation au niveau de l’application AEM est gérée par trois journau
 1. Journaux de requêtes HTTP, qui consignent les informations sur les requêtes HTTP et leurs réponses fournies par AEM
 1. Journaux d’accès HTTP, qui consignent les informations résumées et les requêtes HTTP diffusées par AEM
 
-Notez que les requêtes HTTP diffusées à partir du cache du Dispatcher du niveau Publication ou du réseau de diffusion de contenu en amont ne sont pas reflétées dans ces journaux.
+> [!NOTE]
+> 
+> Les requêtes HTTP diffusées à partir du cache Dispatcher du niveau Publication ou du réseau de diffusion de contenu en amont ne sont pas reflétées dans ces journaux.
 
 ## Journalisation Java AEM {#aem-java-logging}
 
@@ -97,10 +99,6 @@ Les niveaux de journalisation AEM sont définis par type d’environnement via l
 
 ### Format du journal {#log-format}
 
-| Date et heure | AEM en tant qu&#39;ID de dot Cloud Service | Niveau de journal | Thread | Classe Java | Message du journal |
-|---|---|---|---|---|---|
-| 29.04.2020 21:50:13.398 | `[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]` | `*DEBUG*` | qtp2130572036-1472 | com.example.approval.workflow.impl.CustomApprovalWorkflow | `No specified approver, defaulting to [ Creative Approvers user group ]` |
-
 **Exemple de sortie de journal**
 
 ```
@@ -110,6 +108,35 @@ Les niveaux de journalisation AEM sont définis par type d’environnement via l
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [FelixLogListener] org.apache.sling.i18n Service [5126, [java.util.ResourceBundle]] ServiceEvent REGISTERED
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *WARN* [73.91.59.34 [1592850810364] GET /libs/granite/core/content/login.html HTTP/1.1] libs.granite.core.components.login.login$jsp j_reason param value 'unknown' cannot be mapped to a valid reason message: ignoring
 ```
+
+<table>
+<tbody>
+<tr>
+<td>Date et heure</td>
+<td>29.04.2020 21:50:13.398</td>
+</tr>
+<tr>
+<td>AEM en tant qu’ID de noeud Cloud Service</td>
+<td>[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]</td>
+</tr>
+<tr>
+<td>Niveau de journalisation</td>
+<td>DEBUG</td>
+</tr>
+<tr>
+<td>Thread</td>
+<td>qtp2130572036-1472</td>
+</tr>
+<tr>
+<td>Classe Java</td>
+<td>com.example.approval.workflow.impl.CustomApprovalWorkflow</td>
+</tr>
+<tr>
+<td>Message du journal</td>
+<td>Aucun approbateur spécifié, par défaut [ groupe d’utilisateurs Approbateurs créatifs ]</td>
+</tr>
+</tbody>
+</table>
 
 ### Journaux de configuration {#configuration-loggers}
 
@@ -167,10 +194,6 @@ La clé pour comprendre ce journal est de mapper les paires requête et réponse
 
 ### Format du journal {#http-request-logging-format}
 
-| Date et heure | ID de paire de requêtes/réponses |  | Méthode HTTP | URL | Protocole | AEM en tant qu’ID de noeud Cloud Service |
-|---|---|---|---|---|---|---|
-| 29/avr/2020:19:14:21 +000 | `[137]` | -> | POST | /conf/global/settings/dam/adminui-extension/metadataprofile/ | HTTP/1.1 | `[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]` |
-
 **Exemple de journal**
 
 ```
@@ -182,6 +205,36 @@ La clé pour comprendre ce journal est de mapper les paires requête et réponse
 ...
 29/Apr/2020:19:14:22 +0000 [139] <- 200 text/html;charset=utf-8 637ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ```
+
+<table>
+<tbody>
+<tr>
+<td>Date et heure</td>
+<td>29/avr/2020:19:14:21 +000</td>
+</tr>
+<tr>
+<td>ID de paire de requêtes/réponses</td>
+<td><code>[137]</code></td>
+</tr>
+<tr>
+<td>Méthode HTTP</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>/conf/global/settings/dam/adminui-extension/metadataprofile/</td>
+</tr>
+<tr>
+<td>Protocole</td>
+<td>HTTP/1.1
+</td>
+</tr>
+<tr>
+<td>AEM en tant qu’ID de noeud Cloud Service</td>
+<td>[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]</td>
+</tr>
+</tbody>
+</table>
 
 ### Configuration du journal {#configuring-the-log}
 
@@ -335,5 +388,145 @@ Define REWRITE_LOG_LEVEL Debug
 
 ## Journal des Dispatchers {#dispatcher-log}
 
-**Format du journal**
+<!--de completat-->
 
+**Exemple**
+
+```
+[17/Jul/2020:23:48:06 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures.html" - 475ms [publishfarm/0] [action miss] "publish-p12904-e25628.adobeaemcloud.com"
+[17/Jul/2020:23:48:07 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures/climbing-new-zealand/_jcr_content/root/responsivegrid/carousel/item_1571266094599.coreimg.jpeg/1473680817282/sport-climbing.jpeg" 302 10ms [publishfarm/0] [action none] "publish-p12904-e25628.adobeaemcloud.com"
+[17/Jul/2020:23:48:07 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures/ski-touring-mont-blanc/_jcr_content/root/responsivegrid/carousel/item_1571168419252.coreimg.jpeg/1572047288089/adobestock-238230356.jpeg" 302 11ms [publishfarm/0] [action none] "publish-p12904-e25628.adobeaemcloud.com"
+```
+
+### Format du journal {#dispatcher-log-format}
+
+### Configuration du journal des erreurs du Dispatcher {#configuring-the-dispatcher-error-log}
+
+Les niveaux de journal du répartiteur sont définis par la variable DISP_LOG_LEVEL dans le fichier `conf.d/variables/global.var`.
+
+Il peut être défini sur Error, Warn, Info, Debug et Trace1, avec la valeur par défaut Warn.
+
+Bien que la journalisation des Dispatchers prenne en charge plusieurs autres niveaux de granularité de la journalisation, l’AEM en tant que Cloud Service recommande d’utiliser les niveaux décrits ci-dessous.
+
+Pour définir le niveau de journal par environnement, utilisez la branche conditionnelle appropriée dans le `global.var` fichier, comme décrit ci-dessous :
+
+```
+Define DISP_LOG_LEVEL Debug
+  
+<IfDefine ENVIRONMENT_STAGE>
+  ...
+  Define DISP_LOG_LEVEL Warn
+  ...
+</IfDefine>
+<IfDefine ENVIRONMENT_PROD>
+  ...
+  Define DISP_LOG_LEVEL Error
+  ...
+</IfDefine>
+```
+
+## Comment accéder aux journaux {#how-to-access-logs}
+
+### Environnements du cloud {#cloud-environments}
+
+AEM en tant que journaux Cloud Service pour les services cloud sont accessibles soit en téléchargeant via l’interface de Cloud Manager, soit en conservant les journaux sur la ligne de commande à l’aide de l’interface de ligne de commande E/S d’Adobe. Pour plus d’informations, voir la documentation [sur la journalisation de](/help/implementing/cloud-manager/manage-logs.md)Cloud Manager.
+
+### SDK local {#local-sdk}
+
+AEM en tant que SDK Cloud Service fournit des fichiers journaux pour la prise en charge du développement local.
+
+AEM journaux se trouvent dans le dossier `crx-quickstart/logs`, où vous pouvez afficher les journaux suivants :
+
+* Journal Java AEM : `error.log`
+* Journal des requêtes HTTP AEM : `request.log`
+* Journal d&#39;accès HTTP AEM : `access.log`
+
+Les journaux de couche Apache, y compris le répartiteur, se trouvent dans le conteneur Docker qui contient le Dispatcher. Consultez la documentation [du](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) Dispatcher pour savoir comment début du Dispatcher.
+
+Pour récupérer les journaux :
+
+1. Sur la ligne de commande, tapez `docker ps` pour liste vos conteneurs.
+1. Pour vous connecter au conteneur, tapez &quot;`docker exec -it <container> /bin/sh`&quot;, où `<container>` est l&#39;identifiant de conteneur du répartiteur de l&#39;étape précédente.
+1. Accédez à la racine du cache sous `/mnt/var/www/html`
+1. Les journaux sont sous `/etc/httpd/logs`
+1. Inspect the logs : ils sont accessibles sous le dossier XYZ, où vous pouvez afficher les journaux suivants :
+   * Journal d&#39;accès du serveur Web Apache HTTPD - `httpd_access.log`
+   * Journaux d&#39;erreur du serveur Web Apache HTTPD - `httpd_error.log`
+   * Journaux des Dispatchers - `dispatcher.log`
+
+Les journaux sont également directement imprimés sur le terminal. La plupart du temps, ces journaux doivent être DEBUG, ce qui peut être accompli en transmettant le niveau de débogage en tant que paramètre lors de l&#39;exécution de Docker. Par exemple :
+
+`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
+
+## Débogage de la production et de la phase {#debugging-production-and-stage}
+
+Dans des circonstances exceptionnelles, il est nécessaire de modifier les niveaux de journalisation pour qu’ils soient plus précis dans les environnements d’étape ou de production.
+
+Bien que cela soit possible, il nécessite des modifications des niveaux de journal dans les fichiers de configuration dans Git from Warn et Error to Debug, et l&#39;exécution d&#39;un déploiement sur AEM en tant que Cloud Service pour enregistrer ces modifications de configuration avec les environnements.
+
+Selon le trafic et la quantité de consignes écrites par Debug, cela peut avoir un impact négatif sur les performances de l&#39;environnement. Il est donc recommandé que les modifications apportées aux niveaux de débogage Stage et Production soient les suivantes :
+
+* Fait judicieusement, et uniquement lorsque cela est absolument nécessaire
+* Revenir aux niveaux appropriés et procéder au redéploiement le plus tôt possible
+
+## Journaux de bogue {#splunk-logs}
+
+Les clients disposant d&#39;un compte Splunk peuvent demander, via un ticket d&#39;assistance à la clientèle, que leurs journaux d&#39;Cloud Service d&#39;AEM soient transférés vers l&#39;index approprié. Les données de journalisation sont équivalentes à ce qui est disponible par le biais des téléchargements de journaux de Cloud Manager, mais les clients peuvent trouver pratique de tirer parti des fonctionnalités de requête disponibles dans le produit Splunk.
+
+La bande passante réseau associée aux journaux envoyés à Splunk est considérée comme faisant partie de l&#39;utilisation des E/S réseau du client.
+
+### Activation du transfert de blocs {#enabling-splunk-forwarding}
+
+Dans la demande d&#39;assistance, les clients doivent indiquer :
+
+* Hôte Splunk
+* Index Splunk
+* Le port Splunk
+* Jeton Splunk HEC. Pour plus d’informations, consultez [cette page](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples).
+
+Les propriétés ci-dessus doivent être spécifiées pour chaque combinaison de type programme/environnement appropriée.  Par exemple, si un client souhaite des environnements de développement, d’évaluation et de production, il doit fournir trois ensembles d’informations, comme indiqué ci-dessous.
+
+> [!NOTE]
+>
+> La redirection des blocs pour les environnements de programme sandbox n&#39;est pas prise en charge.
+
+Vous trouverez ci-dessous un exemple de demande d’assistance à la clientèle :
+
+Programme 123, Production Env
+
+* Hôte de socle : `splunk-hec-ext.acme.com`
+* Indice Splunk : acme_123prod (le client peut choisir la convention d’affectation de nom qu’il souhaite)
+* Port Splunk : 443
+* Jeton Splunk HEC : ABC123
+
+Programme 123, Stage Env
+
+* Hôte de socle : `splunk-hec-ext.acme.com`
+* Indice Splunk : acme_123stage
+* Port Splunk : 443
+* Jeton Splunk HEC : ABC123
+
+Programme 123, Dev Envs
+
+* Hôte de socle : `splunk-hec-ext.acme.com`
+* Indice Splunk : acme_123dev
+* Port Splunk : 443
+* Jeton Splunk HEC : ABC123
+
+Il peut suffire que le même index Splunk soit utilisé pour chaque environnement, auquel cas le champ peut être utilisé pour différencier les valeurs en fonction de l’évolution, de l’étape et de la prod. `aem_env_type` S’il existe plusieurs environnements de développement, le `aem_env_id` champ peut également être utilisé. Certaines organisations peuvent choisir un index distinct pour les journaux de l&#39;environnement de production si l&#39;index associé limite l&#39;accès à un ensemble réduit d&#39;utilisateurs Splunk.
+
+Voici un exemple d&#39;entrée de journal :
+
+```
+aem_env_id: 1242
+aem_env_type: dev
+aem_program_id: 12314
+aem_tier: author
+file_path: /var/log/aem/error.log
+host: 172.34.200.12 
+level: INFO
+msg: [FelixLogListener] com.adobe.granite.repository Service [5091, [org.apache.jackrabbit.oak.api.jmx.SessionMBean]] ServiceEvent REGISTERED
+orig_time: 16.07.2020 08:35:32.346
+pod_name: aemloggingall-aem-author-77797d55d4-74zvt
+splunk_customer: true
+```
