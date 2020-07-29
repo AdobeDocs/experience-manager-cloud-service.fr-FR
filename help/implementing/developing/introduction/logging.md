@@ -2,10 +2,10 @@
 title: Journalisation
 description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou apprenez à demander la journalisation des données.
 translation-type: tm+mt
-source-git-commit: 0bb5ff11762a4a3a158d211f8bba2ff77d1d3201
+source-git-commit: db0ea2367e8ecf645694a0f33b9f3b99010ec491
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 6%
+source-wordcount: '2212'
+ht-degree: 7%
 
 ---
 
@@ -97,8 +97,6 @@ Bien que la journalisation Java prenne en charge plusieurs autres niveaux de gra
 
 Les niveaux de journalisation AEM sont définis par type d’environnement via la configuration OSGi, qui à son tour est affectée à Git, et déployés via Cloud Manager pour AEM en tant que Cloud Service. C&#39;est pourquoi il est préférable de conserver des instructions de journal cohérentes et bien connues pour les types d&#39;environnements, afin de s&#39;assurer que les journaux disponibles par l&#39;intermédiaire d&#39;AEM comme Cloud Service sont disponibles au niveau de journal optimal sans avoir à redéployer l&#39;application avec la configuration de niveau de journal mise à jour.
 
-### Format du journal {#log-format}
-
 **Exemple de sortie de journal**
 
 ```
@@ -108,6 +106,8 @@ Les niveaux de journalisation AEM sont définis par type d’environnement via l
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [FelixLogListener] org.apache.sling.i18n Service [5126, [java.util.ResourceBundle]] ServiceEvent REGISTERED
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *WARN* [73.91.59.34 [1592850810364] GET /libs/granite/core/content/login.html HTTP/1.1] libs.granite.core.components.login.login$jsp j_reason param value 'unknown' cannot be mapped to a valid reason message: ignoring
 ```
+
+**Format du journal**
 
 <table>
 <tbody>
@@ -192,8 +192,6 @@ AEM en tant que Cloud Service de la journalisation des requêtes HTTP fournit de
 
 La clé pour comprendre ce journal est de mapper les paires requête et réponse HTTP selon leurs ID, identifiés par la valeur numérique entre crochets. Notez que souvent, les requêtes et leurs réponses correspondantes ont d&#39;autres requêtes HTTP et réponses interjonctées entre elles dans le journal.
 
-### Format du journal {#http-request-logging-format}
-
 **Exemple de journal**
 
 ```
@@ -205,6 +203,8 @@ La clé pour comprendre ce journal est de mapper les paires requête et réponse
 ...
 29/Apr/2020:19:14:22 +0000 [139] <- 200 text/html;charset=utf-8 637ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ```
+
+**Format du journal**
 
 <table>
 <tbody>
@@ -246,15 +246,15 @@ AEM en tant que journalisation d’accès HTTP Cloud Service affiche les requêt
 
 Ce journal est utile pour comprendre rapidement quelles requêtes HTTP sont envoyées à AEM, si elles réussissent en examinant le code d’état de la réponse HTTP qui l’accompagne et combien de temps la requête HTTP a duré. Ce journal peut également être utile pour déboguer une activité d’utilisateur spécifique en filtrant les entrées du journal par utilisateurs.
 
-### Format du journal {#access-log-format}
-
-**Exemple**
+**Exemple de sortie de journal**
 
 ```
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css HTTP/1.1" 200 1141 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/customthumb/clientlibs.lc-60e4443805c37afa0c74b674b141f1df-lc.min.css HTTP/1.1" 200 809 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
+
+**Format du journal**
 
 <table>
 <tbody>
@@ -327,17 +327,64 @@ Le journal d&#39;accès Apache HTTP Web Server fournit des instructions pour cha
 
 Consultez les informations sur le format du journal des erreurs dans la documentation [](https://httpd.apache.org/docs/2.4/logs.html#accesslog)officielle d’Apache.
 
-**Format du journal**
-
-<!--blank until prod build finishes-->
-
-**Exemple**
+**Exemple de sortie de journal**
 
 ```
 cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/favicons/favicon-32.png HTTP/1.1" 200 715 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
 cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/favicons/favicon-512.png HTTP/1.1" 200 9631 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
 cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/country-flags/US.svg HTTP/1.1" 200 810 "https://publish-p6902-e30226.adobeaemcloud.com/content/wknd/us/en.html" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
 ```
+
+**Format du journal**
+
+<table>
+<tbody>
+<tr>
+<td>AEM en tant qu’ID de noeud de service cloud</td>
+<td>cm-p1234-e26813-aem-publish-5c787687c-lqlxr</td>
+</tr>
+<tr>
+<td>Adresse IP du client</td>
+<td>-</td>
+</tr>
+<tr>
+<td>User</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Date et heure</td>
+<td>01/mai/2020:00:09:46 +000</td>
+</tr>
+<tr>
+<td>Méthode HTTP</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>/content/example.html</td>
+</tr>
+<tr>
+<td>Protocole</td>
+<td>HTTP/1.1</td>
+</tr>
+<tr>
+<td>État de la réponse HTTP</td>
+<td>200</td>
+</tr>
+<tr>
+<td>Taille</td>
+<td>310</td>
+</tr>
+<tr>
+<td>Référent</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Agent utilisateur</td>
+<td>"Mozilla/5.0 (Macintosh ; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, comme Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
+</tr>
+</tbody>
+</table>
 
 ### Configuration du journal d&#39;accès au serveur Web Apache HTTPD {#configuring-the-apache-httpd-webs-server-access-log}
 
@@ -349,17 +396,40 @@ Le journal des erreurs du serveur Web HTTP Apache fournit des instructions pour 
 
 Consultez les informations sur le format du journal des erreurs dans la documentation [](https://httpd.apache.org/docs/2.4/logs.html#errorlog)officielle d’Apache.
 
-**Format du journal**
-
-<!--placeholder-->
-
-**Exemple**
+**Exemple de sortie de journal**
 
 ```
 Fri Jul 17 02:19:48.093820 2020 [mpm_worker:notice] [pid 1:tid 140272153361288] [cm-p1234-e30226-aem-publish-b86c6b466-b9427] AH00292: Apache/2.4.43 (Unix) Communique/4.3.4-20200424 mod_qos/11.63 configured -- resuming normal operations
 Fri Jul 17 02:19:48.093874 2020 [core:notice] [pid 1:tid 140272153361288] [cm-p1234-e30226-aem-publish-b86c6b466-b9427] AH00094: Command line: 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D ENVIRONMENT_PROD'
 Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] [cm-p1234-e30226-aem-publish-b496f64bf-5vckp] AH00295: caught SIGTERM, shutting down
 ```
+
+**Format du journal**
+
+<table>
+<tbody>
+<tr>
+<td>Date et heure</td>
+<td>Vendredi 17 Juil 02:16:42.608913 2020</td>
+</tr>
+<tr>
+<td>Niveau de Événement</td>
+<td>[mpm_worker:notice]</td>
+</tr>
+<tr>
+<td>ID de processus</td>
+<td>[pid 1:tid 140715149343624]</td>
+</tr>
+<tr>
+<td>Nom de la capsule</td>
+<td>[cm-p1234-e56789-aem-publish-b86c6b466-qpfvp]</td>
+</tr>
+<tr>
+<td>Message</td>
+<td>AH00094 : Ligne de commande : 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUE -D </td>
+</tr>
+</tbody>
+</table>
 
 ### Configuration du journal des erreurs du serveur Web Apache HTTPD {#configuring-the-apache-httpd-web-server-error-log}
 
@@ -388,8 +458,6 @@ Define REWRITE_LOG_LEVEL Debug
 
 ## Journal des Dispatchers {#dispatcher-log}
 
-<!--de completat-->
-
 **Exemple**
 
 ```
@@ -398,7 +466,48 @@ Define REWRITE_LOG_LEVEL Debug
 [17/Jul/2020:23:48:07 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures/ski-touring-mont-blanc/_jcr_content/root/responsivegrid/carousel/item_1571168419252.coreimg.jpeg/1572047288089/adobestock-238230356.jpeg" 302 11ms [publishfarm/0] [action none] "publish-p12904-e25628.adobeaemcloud.com"
 ```
 
-### Format du journal {#dispatcher-log-format}
+**Format du journal**
+
+<table>
+<tbody>
+<tr>
+<td>Date et heure</td>
+<td>[17/juil/2020:23:48:16 +000]</td>
+</tr>
+<tr>
+<td>Nom de la capsule</td>
+<td>[cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr]</td>
+</tr>
+<tr>
+<td>Protocole</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/responsivegrid/image.coreimg.100.500.jpeg/1572236359031/ayo-ogunseinde-237739.jpeg</td>
+</tr>
+<tr>
+<td>Code d’état de réponse du Dispatcher</td>
+<td>/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/responsivegrid/image.coreimg.100.500.jpeg/1572236359031/ayo-ogunseinde-237739.jpeg</td>
+</tr>
+<tr>
+<td>Durée</td>
+<td>1949ms</td>
+</tr>
+<tr>
+<td>Ferme</td>
+<td>[publishbatterie/0]</td>
+</tr>
+<tr>
+<td>État du cache</td>
+<td>[action manquée]</td>
+</tr>
+<tr>
+<td>Hôte</td>
+<td>"publish-p12904-e25628.adobeaemcloud.com"</td>
+</tr>
+</tbody>
+</table>
 
 ### Configuration du journal des erreurs du Dispatcher {#configuring-the-dispatcher-error-log}
 
