@@ -2,10 +2,10 @@
 title: Journalisation
 description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou apprenez à demander la journalisation des données.
 translation-type: tm+mt
-source-git-commit: 1cee93310d84ea21b626f456163de6855056db5b
+source-git-commit: 161dc733d335fc62d7c3017647fe27c64a8dd26f
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 11%
+source-wordcount: '1077'
+ht-degree: 10%
 
 ---
 
@@ -51,7 +51,6 @@ Développement</td>
 DEBUG</td>
 <td>
 Décrit ce qui se passe dans l’application.<br>
-
 Lorsque la journalisation DEBUG est active, les instructions fournissant une image claire des activités survenues ainsi que les paramètres clés qui affectent le traitement sont consignées.</td>
 <td>
 <ul>
@@ -207,3 +206,19 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/customthumb/clientlibs.lc-60e4443805c37afa0c74b674b141f1df-lc.min.css HTTP/1.1" 200 809 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
+
+### Configuration du journal d&#39;accès HTTP {#configuring-the-http-access-log}
+
+Le journal d&#39;accès HTTP n&#39;est pas configurable dans AEM en tant que Cloud Service.
+
+## Serveur web Apache/Journalisation de Dispatcher {#dispatcher-logging}
+
+AEM en tant que Cloud Service fournit trois journaux pour les serveurs Web Apache et la couche de répartiteur sur la publication :
+
+* Journal d&#39;accès au serveur Web Apache HTTPD
+* Journal des erreurs du serveur Web Apache HTTPD
+* Journal des Dispatchers
+
+Notez que ces journaux ne sont disponibles que pour le niveau Publication.
+
+Cet ensemble de journaux fournit des informations sur les requêtes HTTP à l’AEM en tant que niveau de publication Cloud Service avant que ces requêtes n’atteignent l’application AEM. Il est important de le comprendre, car, idéalement, la plupart des requêtes HTTP aux serveurs de la couche Publication sont servies par le contenu mis en cache par le serveur Web Apache HTTPD et l&#39;Dispatcher AEM, et n&#39;atteignent jamais l&#39;application AEM elle-même, de sorte qu&#39;il n&#39;y a pas d&#39;instructions de journal pour ces requêtes dans les journaux Java, Request ou Access.
