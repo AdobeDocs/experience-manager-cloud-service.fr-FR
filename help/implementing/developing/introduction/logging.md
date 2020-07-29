@@ -2,7 +2,7 @@
 title: Journalisation
 description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou apprenez à demander la journalisation des données.
 translation-type: tm+mt
-source-git-commit: 436b4d05c88ba227144052fdd63ea78cbf1f03ba
+source-git-commit: 49bb443019edc6bdec22e24b8a8c7733abe54e35
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 17%
@@ -66,7 +66,6 @@ Scène</td>
 WARN</td>
 <td>
 Décrit les conditions susceptibles de devenir des erreurs.<br>
-
 Lorsque la journalisation WARN est active, seules les instructions indiquant les conditions qui approchent du sous-optimisme sont consignées.</td>
 <td>
 <ul>
@@ -82,8 +81,7 @@ Production</td>
 ERREUR</td>
 <td>
 Décrit les conditions qui indiquent un échec et doivent être résolues.<br>
-
-Lorsque la journalisation ERROR est active, seules les instructions indiquant des échecs sont consignées. Les relevés de journal d&#39;ERREUR indiquent un problème grave qui devrait être résolu le plus tôt possible.</td>
+Lorsque la journalisation ERROR est active, seules les instructions indiquant des échecs sont consignées. Les relevés de journal d'ERREUR indiquent un problème grave qui devrait être résolu le plus tôt possible.</td>
 <td>
 <ul>
 <li> Développement local</li>
