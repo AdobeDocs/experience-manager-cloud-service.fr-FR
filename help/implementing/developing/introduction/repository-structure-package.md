@@ -2,7 +2,7 @@
 title: 'Module de structure du référentiel de projet AEM  '
 description: Les projets Maven Adobe Experience Manager as a Cloud Service nécessitent une définition de sous-module de structure de référentiel dont le seul objectif est de définir les racines du référentiel JCR dans lesquelles les sous-modules de code du projet sont déployés.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a6820eab30f2b318d62d2504cb17c12081a320a3
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 100%
