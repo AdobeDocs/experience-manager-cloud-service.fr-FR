@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2020.7.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[ !Adobe Experience Manager DNL] en tant que notes de mise à jour Cloud Service pour la version 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: 5103d54bcb71d6c78894a30edafccf288a51368f
+source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 41%
+source-wordcount: '918'
+ht-degree: 40%
 
 ---
 
@@ -51,15 +51,15 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 ### Nouveautés {#what-is-new-core-components}
 
-La version 2.11.0 des [composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) est maintenant disponible dans AEM Sites, notamment :
+Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) is now available as part of AEM Sites including:
 
-* Introduction d’un nouveau composant de lecteur [PDF](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)
+* Introduction d’un nouveau composant [de lecteur](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)PDF.
 
-* [La prise en charge AMP (Accelerated Mobile Pages) des composants](https://docs.adobe.com/content/help/en/experience-manager-core-components/developing/amp.html) principaux permet de générer des expériences client plus rapides en rendant la transition de la page instantanée lors de l’accès au site à partir d’un résultat de recherche mobile Google, ce qui améliore l’engagement des utilisateurs et l’optimisation du référencement.
+* La prise en charge AMP (Accelerated Mobile Pages) des composants principaux permet de générer des expériences client plus rapides en rendant la transition de page instantanée lors de l’accès au site à partir d’un résultat de recherche mobile Google, ce qui améliore l’engagement des utilisateurs et l’optimisation du référencement.
 
-* Compatibilité avec la version 1.0.2 de la couche de données du client [Adobe](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)
+* Compatibilité avec la version 1.0.2 de la couche [de données du client](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)Adobe.
 
-* Correctifs de bogues et amélioration de la qualité du code
+* Correctifs de bogues et amélioration de la qualité du code.
 
 ## Cloud Manager {#cloud-manager}
 
