@@ -1,11 +1,11 @@
 ---
 title: Gestion des environnements - Cloud Service
 description: Gestion des environnements - Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '753'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -72,12 +72,12 @@ Les mises à jour des environnements de développement sont gérées par les uti
 ![](assets/update-environ-1.png)
 
 
-L’option **Mettre à jour** est disponible à partir de la **carte d’Environnements** .
-This option is also available, if you click on **Details** from the **Environments** card. La page **Environnements** s’ouvre et une fois que vous avez sélectionné l’environnement de développement, cliquez sur **...** et sélectionnez **Mettre à jour**, comme illustré dans la figure ci-dessous :
+L’option **Mettre à jour** est disponible à partir de la carte **Environnements**.
+Cette option est également disponible si vous cliquez sur **Détails** dans la carte **Environnements**. La page **Environnements** s’ouvre. Une fois que vous avez sélectionné l’environnement de développement, cliquez sur **...** et sélectionnez **Mettre à jour**, comme illustré dans la figure ci-dessous :
 
 ![](assets/environments-screen-update.png)
 
-La sélection de cette option permet à Deployment Manager de mettre à jour le pipeline associé à cet environnement vers la dernière version, puis d&#39;exécuter le pipeline.
+Si vous sélectionnez cette option, un gestionnaire de déploiement pourra mettre à jour le pipeline associé à cet environnement vers la dernière version, puis exécuter le pipeline.
 
 Si le pipeline a déjà été mis à jour, l’utilisateur est invité à exécuter le pipeline.
 
@@ -89,7 +89,7 @@ L’option **Supprimer** est disponible dans le menu déroulant de la carte **En
 
 ![](assets/environ-delete.png)
 
-L’option de suppression est également disponible si vous cliquez sur **Détails** dans la carte **Environnements** . La page **Environnements** s’ouvre et une fois que vous avez sélectionné l’environnement de développement, cliquez sur **...** et sélectionnez **Supprimer**, comme illustré dans la figure ci-dessous :
+L’option de suppression est également disponible si vous cliquez sur **Détails** dans la carte **Environnements**. La page **Environnements** s’ouvre. Une fois que vous avez sélectionné l’environnement de développement, cliquez sur **...** et sélectionnez **Supprimer**, comme illustré dans la figure ci-dessous :
 
 ![](assets/environ-delete-2.png)
 
@@ -108,5 +108,5 @@ Pour plus d’informations, voir [Mise en hibernation et déshibernation des env
 
 ![](assets/environ-dev-console.png)
 
-This option is also available, if you click on **Details** from the **Environments** card. La page **Environnements** s&#39;ouvre et une fois que vous avez sélectionné un environnement, cliquez sur **...** et sélectionnez Console **** développeur.
+Cette option est également disponible si vous cliquez sur **Détails** dans la carte **Environnements**. La page **Environnements** s’ouvre. Une fois que vous avez sélectionné un environnement, cliquez sur **...** et sélectionnez **Console développeur**.
 
