@@ -1,16 +1,16 @@
 ---
 title: Gérer les journaux - Cloud Service
 description: Gérer les journaux - Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '209'
 ht-degree: 100%
 
 ---
 
 
-# Accès aux journaux et gestion {#manage-logs}
+# Accès aux journaux et leur gestion {#manage-logs}
 
 Les utilisateurs peuvent accéder à la liste des fichiers journaux disponibles pour l’environnement sélectionné à l’aide de la carte d’environnement. Les utilisateurs peuvent accéder à la liste des fichiers journaux disponibles pour l’environnement sélectionné.
 
