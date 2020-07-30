@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 0dbec9bde44780958332f6f4cd82c05b4ec9206d
 workflow-type: tm+mt
 source-wordcount: '1891'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -211,7 +211,7 @@ L’API REST Assets expose l’accès aux propriétés d’un dossier (par exemp
 
 Si une ressource est demandée, la réponse renvoie ses métadonnées, telles que le titre, le nom et les autres informations, comme défini par le schéma des ressources respectives.
 
-The binary data of an asset is exposed as a SIREN link of type `content`.
+Les données binaires d’une ressource sont exposées sous la forme d’un lien SIREN de type `content`.
 
 Les ressources peuvent comporter plusieurs rendus. Elles sont généralement exposées en tant qu’entités enfants, à l’exception du rendu de miniature, qui est exposé sous la forme d’un lien de type `thumbnail` (`rel="thumbnail"`).
 
@@ -221,7 +221,7 @@ Un [fragment de contenu](/help/assets/content-fragments/content-fragments.md) es
 
 Comme il existe plusieurs différences au sein des ressources *standard* (telles que les images ou le son), certaines règles supplémentaires s’appliquent pour les gérer.
 
-#### Représentation  {#representation}
+#### Représentation   {#representation}
 
 Les fragments de contenu :
 
@@ -230,7 +230,7 @@ Les fragments de contenu :
 
 * Sont également considérés comme atomiques, c’est-à-dire que les éléments et les variations sont exposés dans les propriétés du fragment et non pas en tant que liens ou entités enfants. Cela permet un accès efficace à la charge utile d’un fragment.
 
-#### Modèles et fragments de contenu  {#content-models-and-content-fragments}
+#### Modèles et fragments de contenu   {#content-models-and-content-fragments}
 
 Actuellement, les modèles qui définissent la structure d’un fragment de contenu ne sont pas exposés via une API HTTP. Par conséquent, le *consommateur* doit disposer d’informations sur le modèle d’un fragment (au moins un minimum), bien que la plupart des informations puissent être déduites de la charge utile (par exemple, les types de données, etc.). Font partie de la définition.
 
@@ -244,7 +244,7 @@ Le contenu associé n’est actuellement pas exposé.
 
 L’utilisation peut varier selon que vous utilisez un environnement d’auteur ou de publication AEM dans votre cas d’utilisation spécifique.
 
-* It is strongly recommended that creation is bound to an author instance ([and currently there is no means to replicate a fragment to publish using this API](/help/assets/assets-api-content-fragments.md#limitations)).
+* Il est vivement recommandé de lier la création à une instance d’auteur ([et il n’existe actuellement aucun moyen de répliquer un fragment pour publier à l’aide de cette API](/help/assets/assets-api-content-fragments.md#limitations)).
 * La diffusion est possible à partir des deux à la fois, car AEM traite le contenu demandé au format JSON uniquement.
 
    * Le stockage et la diffusion à partir d’une instance d’auteur AEM suffisent normalement pour les applications de bibliothèque multimédia opérant derrière le pare-feu.
@@ -381,7 +381,7 @@ Les codes d’état suivants s’affichent dans les circonstances pertinentes :
    }
    ```
 
-## Référence d’API  {#api-reference}
+## Référence d’API   {#api-reference}
 
 Pour accéder aux références d’API détaillées :
 <!--
