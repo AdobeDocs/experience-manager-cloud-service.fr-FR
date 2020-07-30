@@ -1,24 +1,69 @@
 ---
-title: Notes de mise à jour d’Adobe Experience Manager as a Cloud Service version 2020.7.0
-description: Notes de mise à jour d’Experience Manager version 2020.7.0
+title: Notes de mise à jour de la version 2020.7.0 [!DNL Adobe Experience Manager] de Cloud Service.
+description: '[ !Adobe Experience Manager DNL] en tant que notes de mise à jour Cloud Service pour la version 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: 9e27ff9510fda5ed238a25b2d63d1d9a3099a8b5
+source-git-commit: 5103d54bcb71d6c78894a30edafccf288a51368f
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 100%
+source-wordcount: '925'
+ht-degree: 41%
 
 ---
 
 
-# Notes de mise à jour d’AEM as a Cloud Service 2020.7.0 {#release-notes}
+# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 {#release-notes}
 
 La section suivante décrit les notes de mise à jour générales d’Experience Manager as a Cloud Service 2020.7.0.
 
-## Nouveautés de Cloud Manager {#cloud-manager}
+## Date de publication {#release-date}
 
-Consultez cette section pour en savoir plus sur les nouveautés et les mises à jour de Cloud Manager dans AEM as a Cloud Service 2020.7.0.
+The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is July 30, 2020.
 
-### Date de publication {#release-date}
+## L&#39;Adobe Experience Manager Sites comme Cloud Service {#cloud-services-sites}
+
+### Nouveautés {#what-is-new-sites}
+
+[!DNL Experience Manager] en tant que connecteurs Cloud Service pour [!DNL Adobe Target] et [!DNL Adobe Analytics] sont améliorés de la manière suivante :
+
+* Une nouvelle implémentation de l’interface utilisateur remplace l’implémentation en fonction de l’interface utilisateur classique.
+
+* Simplification des boîtes de dialogue de l’interface utilisateur, laissant la création de la structure pour le mappage des variables et d’autres configurations à [!DNL Adobe Launch].
+
+* Les configurations sont désormais stockées dans `/conf` le référentiel du Experience Manager plutôt que `/etc/cloudsettings` dans celui-ci.
+
+## Adobe Experience Manager Assets as a Cloud Service {#assets}
+
+>[!NOTE]
+>Les AEM Assets en tant que Cloud Service seront mis en oeuvre dans les prochains jours.
+
+### Nouveautés {#what-is-new-assets}
+
+* [!DNL Asset Compute Service] est un service évolutif et extensible permettant de traiter les ressources. Les administrateurs peuvent configurer le Experience Manager pour qu’il appelle le travailleur personnalisé créé à l’aide du [!DNL Asset Compute Service]. Les développeurs peuvent utiliser ce service pour créer des agents personnalisés spécialisés qui répondent à des cas d’utilisation complexes. Ce service Web peut générer des miniatures pour différents types de fichiers, des rendus d&#39;images de haute qualité à partir de formats de fichiers Adobes, coder des vidéos (à venir), extraire des métadonnées, extraire du texte intégral comme précurseur de l&#39;indexation et exécuter un fichier par l&#39;intermédiaire de tous les services Sensei disponibles. voir [Utilisation des microservices de ressources et des profils](/help/assets/asset-microservices-configure-and-use.md)de traitement.
+
+* La configuration initiale de [!DNL Dynamic Media] en [!DNL Experience Manager] tant que Cloud Service est améliorée pour être plus robuste. Il fournit désormais aux administrateurs la progression des processus.
+
+* La publication des ressources vers [!DNL Dynamic Media] est simplifiée et rendue plus robuste en en faisant partie intégrante du processus de traitement global des ressources à l’aide de microservices de ressources et en améliorant le serveur principal de publication par lots.
+
+* Les étapes de flux de travaux qui ne sont pas compatibles avec un déploiement de Cloud Service sont désormais signalées par un avertissement dans l’éditeur de modèles [!UICONTROL de] flux de travaux. De plus, lors de l’exécution des workflows existants sur un environnement Cloud Service, les étapes de flux de travaux incompatibles sont ignorées.
+
+* Les modèles de flux de travaux créés par les clients qui sont déployés dans `/conf/global` le projet Git associé à l’environnement dans Cloud Manager sont automatiquement déployés dans `/var` et sont donc disponibles dans le Experience Manager. Les modèles de processus des produits sous `/libs` lesquels le client a modifié n’ont pas été automatiquement déployés dans `/var`.
+
+## Composants principaux {#core-components}
+
+### Nouveautés {#what-is-new-core-components}
+
+La version 2.11.0 des [composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) est maintenant disponible dans AEM Sites, notamment :
+
+* Introduction d’un nouveau composant de lecteur [PDF](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)
+
+* [La prise en charge AMP (Accelerated Mobile Pages) des composants](https://docs.adobe.com/content/help/en/experience-manager-core-components/developing/amp.html) principaux permet de générer des expériences client plus rapides en rendant la transition de la page instantanée lors de l’accès au site à partir d’un résultat de recherche mobile Google, ce qui améliore l’engagement des utilisateurs et l’optimisation du référencement.
+
+* Compatibilité avec la version 1.0.2 de la couche de données du client [Adobe](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)
+
+* Correctifs de bogues et amélioration de la qualité du code
+
+## Cloud Manager {#cloud-manager}
+
+### Date de publication {#release-date-cm}
 
 La date de publication de la mise à jour 2020.7.0 de [!UICONTROL Cloud Manager] est le 09 juillet 2020.
 
@@ -31,7 +76,8 @@ La date de publication de la mise à jour 2020.7.0 de [!UICONTROL Cloud Manager
 * Le nombre de variables d’environnement par environnement a été porté à 200.
 
 * Les pipelines de Cloud Manager prennent désormais en charge les variables et les secrets définis par le client.
-Pour plus d’informations, consultez [Variables de pipeline](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables).
+
+   Pour plus d’informations, consultez [Variables de pipeline](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables).
 
 ### Correctifs {#bug-fixes-cm}
 
@@ -53,9 +99,22 @@ Pour plus d’informations, consultez [Variables de pipeline](/help/onboarding/g
 
 ### Problèmes connus {#known-issues}
 
-* En raison d’un changement dans le mode de calcul de la couverture du code, la version _minimale_ du module externe Jacoco est désormais 0.7.5.201505241946 (publiée en mai 2015). Les clients référençant explicitement une ancienne version recevront un message d’erreur dans le processus de qualité du code.
+* En raison d’un changement dans le mode de calcul de la couverture du code, la version *minimale* du module externe Jacoco est désormais 0.7.5.201505241946 (publiée en mai 2015). Les clients référençant explicitement une ancienne version reçoivent un message d’erreur dans le processus de qualité du code.
 
-## Nouveautés de Cloud Readiness Analyzer {#cloud-readiness-analyzer}
+
+## Adobe Experience Manager as a Cloud Service Foundation {#cloud-foundation}
+
+### Nouveautés {#what-is-new-foundations}
+
+* [Les journaux peuvent être transférés vers des comptes](/help/implementing/developing/introduction/logging.md#splunk-logs)Splunk, ce qui permet aux entreprises d&#39;exploiter leur investissement Splunk.
+
+* [Une adresse](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) IP de sortie statique et dédiée peut être affectée au trafic sortant programmé en code Java, ce qui peut s’avérer utile pour certaines intégrations.
+
+* AEM l’interface utilisateur du service Cloud Analytics de l’interface utilisateur classique vers la nouvelle interface AEM. Déplacement également de l’emplacement du service Cloud Analytics dans AEM référentiel `/etc` vers `/conf`, afin de l’aligner sur d’autres AEM cloud services.
+
+* Interface utilisateur du service Cloud d’Cible d’ intégrée depuis l’interface utilisateur classique vers la nouvelle interface utilisateur AEM. Déplacement également de l’emplacement du service Cloud de Cible dans le référentiel AEM `/etc` vers `/conf`, afin de l’aligner sur d’autres AEM cloud services.
+
+## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
 Suivez cette section pour en savoir plus sur les nouveautés et les mises à jour de la version 1.0.2 de Cloud Readiness Analyzer.
 
@@ -70,4 +129,3 @@ Suivez cette section pour en savoir plus sur les nouveautés et les mises à jou
 * CRA détectait des doublons de composants personnalisés.
 
 * Dans AEM 6.1, l’inspection du contenu se terminait avant la fin de l’analyse complète. Nous avons ajouté la gestion des exceptions pour permettre à l’inspecteur d’ignorer et de continuer jusqu’à ce que l’inspection complète soit terminée.
-
