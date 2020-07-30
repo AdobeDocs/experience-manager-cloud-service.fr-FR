@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Utilisation de Sling Resource Merger dans AEM   as a Cloud Service{#using-the-sling-resource-merger-in-aem}
+# Utilisation de Sling Resource Merger dans AEM    as a Cloud Service{#using-the-sling-resource-merger-in-aem}
 
 ## Objectif {#purpose}
 
