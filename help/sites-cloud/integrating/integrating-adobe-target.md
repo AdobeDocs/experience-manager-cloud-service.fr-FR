@@ -2,7 +2,7 @@
 title: Intégration à Adobe Target
 description: 'Intégration à Adobe Target '
 translation-type: tm+mt
-source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
+source-git-commit: f2ed74afd2df43e31ff1002cd42a60f372d0b769
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 10%
@@ -26,12 +26,12 @@ Le lancement d’Adobe est nécessaire pour gérer les propriétés côté clien
 ## Création de la configuration de l&#39;Adobe Target {#create-configuration}
 
 1. Navigate to **Tools** → **Cloud Services**.
-   ![](assets/cloudservice.png "NavigationNavigation")
+   ![](assets/cloudservice1.png "NavigationNavigation")
 2. Sélectionnez **Adobe Target**.
 3. Select the **Create** button.
-   ![](assets/tenant.png "CreateCreate")
+   ![](assets/tenant1.png "CreateCreate")
 4. Renseignez les détails (voir ci-dessous), puis sélectionnez **Se connecter**.
-   ![](assets/open_screen.png "ConnectConnect")
+   ![](assets/open_screen1.png "ConnectConnect")
 
 ### Configuration IMS
 
@@ -44,7 +44,7 @@ Pour modifier la configuration de la Cible, procédez comme suit :
 1. Sélectionnez une configuration existante et cliquez sur **Propriétés**.
 2. Modifiez les propriétés.
 3. Select **Re-connect to Adobe Target**.
-   ![Re-](assets/edit_config_page.png "connectRe-connect")
+   ![Re-](assets/edit_config_page1.png "connectRe-connect")
 4. Sélectionnez **Enregistrer et fermer**.
 
 ### Ajouter une configuration à un site {#add-configuration}
@@ -75,7 +75,7 @@ Une propriété est un conteneur qui sera rempli d’extensions, de règles et d
 2. Attribuez un nom à votre propriété.
 3. Au fur et à mesure que le domaine entre l’adresse IP/l’hôte sur lequel vous souhaitez charger la bibliothèque de lancement.
 4. Sélectionnez le bouton **Enregistrer** .
-   ![](assets/properties_newproperty.png "LaunchpropertyLaunchproperty")
+   ![](assets/properties_newproperty1.png "LaunchpropertyLaunchproperty")
 
 ### Ajouter les extensions requises {#add-extension}
 
@@ -83,10 +83,10 @@ Une propriété est un conteneur qui sera rempli d’extensions, de règles et d
 
 1. Sélectionnez l’option Catalogue des extensions, puis recherchez la Cible dans le filtre.
 2. Sélectionnez **Adobe Target** at.js et cliquez sur l’option Installer.
-   ![Cible Recherche](assets/search_ext.png "SearchTarget")
+   ![Cible Recherche](assets/search_ext1.png "SearchTarget")
 3. Select the **Configure** button. Notez la fenêtre de configuration avec les informations d’identification du compte de Cible importées et la version at.js de cette extension.
 4. Sélectionnez **Enregistrer** pour ajouter l’Extension de l&#39;cible à votre propriété Launch. Vous devriez être en mesure de voir l’Extension de l&#39;cible répertoriée sous la liste Extensions **** installées.
-   ![Enregistrer](assets/configure_extension.png "l&#39;extensionEnregistrer l&#39;extension")
+   ![Enregistrer](assets/configure_extension1.png "l&#39;extensionEnregistrer l&#39;extension")
 5. Répétez les étapes ci-dessus pour rechercher l’extension **Adobe ContextHub** et l’installer (ceci est nécessaire pour l’intégration avec les paramètres contextuels, en fonction desquels le ciblage sera effectué).
 
 ### Création d’un élément de données {#data-element}
@@ -97,16 +97,16 @@ Une propriété est un conteneur qui sera rempli d’extensions, de règles et d
 2. Sélectionnez **Ajouter l’élément** de données.
 3. Fournissez le nom de l’élément de données et mappez-le à un paramètre de hub de contexte.
 4. sélectionnez **Enregistrer**.
-   ![Elément](assets/data_elem.png "DataElementData")
+   ![Elément](assets/data_elem1.png "DataElementData")
 
 ### Création d’une règle de page {#page-rule}
 
 En **règle** , nous définissons et ordonnons une séquence d’actions qui sera exécutée sur le site, pour atteindre le ciblage.
 
 1. Ajoutez un ensemble d’actions tel qu’illustré dans la capture d’écran.
-   ![](assets/rules.png "ActionsActions")
+   ![](assets/rules1.png "ActionsActions")
 2. Dans Ajouter les paramètres à toutes les mbox, ajoutez l’élément de données configuré précédemment (voir l’élément de données ci-dessus) au paramètre qui sera envoyé dans l’appel de mbox.
-   ![](assets/map_data.png "MboxActions")
+   ![](assets/map_data1.png "MboxActions")
 
 ### Création et publication {#build-publish}
 
