@@ -2,17 +2,17 @@
 title: Notes de mise à jour d’Adobe Experience Manager as a Cloud Service version 2020.4.0
 description: Notes de mise à jour d’Experience Manager version 2020.4.0
 translation-type: tm+mt
-source-git-commit: 94a732f56929ad4af23855152e258f82ad61ee2c
+source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 100%
+source-wordcount: '654'
+ht-degree: 98%
 
 ---
 
 
 # Notes de mise à jour d’Adobe Experience Manager as a Cloud Service version 2020.4.0 {#release-notes}
 
-La section suivante présente les notes de mise à jour générales d’[!DNL Experience Manager] as a Cloud Service version 2020.4.0.
+This page outlines the general release notes for [!DNL Experience Manager] as a Cloud Service 2020.4.0.
 
 ## Date de publication {#release-date}
 
@@ -54,7 +54,7 @@ Découvrez les nouvelles fonctionnalités, les améliorations et les correctifs 
 >* [Création d’un workflow dans Experience Manager à l’aide de microservices de ressources](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
-## Nouveautés de Cloud Manager {#whats-new-cloud-manager}
+## Nouveautés de Cloud Manager {#whats-new-cloud-manager}
 
 * Les URL de l’éditeur sont désormais disponibles à partir de la page Environnement de l’interface utilisateur Cloud Manager.
 * Modifications de la navigation pour permettre à l’utilisateur de modifier, de changer ou d’ajouter un programme à partir de la page d’aperçu de Cloud Manager.
