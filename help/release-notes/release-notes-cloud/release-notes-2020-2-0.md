@@ -2,17 +2,17 @@
 title: Notes de mise à jour de la version 2020.2.0
 description: Notes de mise à jour de la version 2020.2.0
 translation-type: tm+mt
-source-git-commit: 8796d4bcbfc4089e1e78bd18bdb253386a5f5b6d
+source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 100%
+source-wordcount: '197'
+ht-degree: 92%
 
 ---
 
 
 # Notes de mise à jour d’AEM as a Cloud Service 2020.2.0 {#release-notes}
 
-La section suivante décrit les notes de mise à jour générales d’Experience Manager Sites as a Cloud Service 2020.2.0.
+Cette page présente les Notes de mise à jour générales du Experience Manager en tant que Cloud Service 2020.2.0.
 
 ## Date de publication {#release-date}
 
