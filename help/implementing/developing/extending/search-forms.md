@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2030'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -159,7 +159,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Date  Plage</td>
+   <td>Date   Plage</td>
    <td>Recherchez des ressources créées dans une plage spécifiée pour une propriété de date. Dans le panneau Rechercher, vous pouvez spécifier des dates de début et de fin.</td>
    <td>
     <ul>
@@ -224,7 +224,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Masqué  Filtrer</td>
+   <td>Masqué   Filtrer</td>
    <td>Filtrez selon la propriété et la valeur, invisible pour l’utilisateur.</td>
    <td>
     <ul>
@@ -282,7 +282,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Options  Propriétés</td>
+   <td>Options  de la propriété</td>
    <td>Recherchez une ou plusieurs propriétés de l’option.</td>
    <td>
     <ul>
@@ -295,7 +295,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Page  État</td>
+   <td>Page   État</td>
    <td>Filtrez des pages en fonction de leur état.</td>
    <td>
     <ul>
@@ -316,7 +316,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Chemin  Navigateur</td>
+   <td>Chemin   Navigateur</td>
    <td>Fournissez un navigateur de chemins d’accès pour effectuer une recherche sous un chemin racine prédéfini.</td>
    <td>
     <ul>
@@ -327,7 +327,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
    </td>
   </tr>
   <tr>
-   <td>Chemin  Masqué</td>
+   <td>Chemin   Masqué</td>
    <td>Filtrez selon le chemin, invisible pour l’utilisateur.</td>
    <td>
     <ul>
@@ -337,7 +337,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
    </td>
   </tr>
   <tr>
-   <td>Propriétés</td>
+   <td>Propriété</td>
    <td>Effectuez une recherche sur une propriété spécifiée.</td>
    <td>
     <ul>
@@ -547,8 +547,9 @@ En fonction du prédicat, une sélection de paramètres est disponible pour la c
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **Options chemin d’accès** au noeud de manière efficace identique à la variable 
-**Chemin d’accès** aux options, il s’agit uniquement du champ de prédicat commun, l’autre est spécifique aux ressources.
+* **Chemin d’accès au nœud d’options**
+Dans la pratique, il est identique au 
+**Chemin d’accès aux options**, à la différence qu’il s’agit du champ de prédicat commun, l’autre étant spécifique aux ressources.
 
 * **Sélection simple**
 Si cette case est cochée, les options sont présentées sous forme de cases à cocher qui ne permettent qu’une sélection simple. Si cette option est sélectionnée par erreur, vous pouvez désélectionner la case à cocher correspondante.
@@ -613,7 +614,7 @@ Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs para
 
 1. **Fermez** l’aperçu pour terminer la configuration.
 
-### Suppression d’un champ de prédicat  {#deleting-a-predicate-field}
+### Suppression d’un champ de prédicat   {#deleting-a-predicate-field}
 
 1. [Ouvrez la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
 1. Sélectionnez le champ de prédicat (à droite), ouvrez l’onglet **Paramètres**, puis sélectionnez l’icône **Supprimer** (dans le coin inférieur gauche).
@@ -640,7 +641,7 @@ Les configurations personnalisées doivent être supprimées à partir de la con
 
 1. La configuration personnalisée est supprimée et la valeur par défaut est rétablie (le symbole de cadenas réapparaît dans la console).
 
-### Ajout de prédicats d’options  {#adding-options-predicates}
+### Ajout de prédicats d’options   {#adding-options-predicates}
 
 Les prédicats d’options (options, propriété d’options) permettent de configurer un élément à rechercher. Ils servent généralement à rechercher un élément directement sous la page, par exemple, une propriété sur le nœud de page.
 
