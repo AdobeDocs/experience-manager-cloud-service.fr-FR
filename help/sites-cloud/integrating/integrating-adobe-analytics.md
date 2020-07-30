@@ -2,9 +2,9 @@
 title: Intégration à Adobe Analytics
 description: 'Intégration à Adobe Analytics '
 translation-type: tm+mt
-source-git-commit: e5e199c4a457935119e3a02b87ced72d2f2de6cf
+source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '528'
 ht-degree: 12%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 12%
 L’intégration d’Adobe Analytics et d’AEM en tant que Cloud Service vous permet de suivre l’activité de votre page Web. L&#39;intégration requiert :
 
 * à l’aide de l’interface utilisateur tactile pour créer une configuration Analytics dans AEM en tant que Cloud Service.
-* ajout et configuration d’Adobe Analytics en tant qu’extension dans [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
+* ajout et configuration d’Adobe Analytics en tant qu’extension dans [Adobe Launch].(https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
 Par rapport aux versions précédentes d’AEM, la prise en charge de la structure n’est pas fournie dans la configuration Analytics de l’AEM en tant que Cloud Service. Au lieu de cela, elle est désormais réalisée par le lancement d&#39;Adobe, qui est l&#39;outil de facto pour instrumenter un site AEM avec les capacités Analytics (bibliothèques JS). Dans Adobe Launch, une propriété est créée où l’extension Adobe Analytics peut être configurée et des règles sont créées pour envoyer des données à Adobe Analytics. Le lancement d’Adobe a remplacé la tâche d’analyse fournie par sitecatalyst.
 
@@ -52,7 +52,7 @@ Pour appliquer une configuration d’interface utilisateur tactile à un site, a
 
 ## Intégration d’Adobe Analytics sur AEM sites à l’aide du lancement d’Adobe
 
-Adobe Analytics peut être ajouté en tant qu’extension dans la propriété Launch. Vous pouvez définir des règles pour effectuer le mappage et effectuer un appel post-Adobe Analytics.
+Adobe Analytics peut être ajouté en tant qu’extension dans la propriété Launch. Les règles peuvent être définies pour effectuer le mappage et effectuer un appel post-Adobe Analytics :
 
 * Regardez [cette vidéo](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html) pour savoir comment configurer l’extension Analytics dans Launch pour un site de base.
 
@@ -60,7 +60,7 @@ Adobe Analytics peut être ajouté en tant qu’extension dans la propriété La
 
 >[!NOTE]
 >
->Les structures existantes fonctionnent toujours, mais ne peuvent pas être configurées dans l’interface utilisateur tactile. Il est conseillé de recréer les configurations de mappage de variables dans Lancement.
+>Les structures existantes (héritées) fonctionnent toujours, mais ne peuvent pas être configurées dans l’interface utilisateur tactile. Il est conseillé de recréer les configurations de mappage de variables dans Lancement.
 
 >[!NOTE]
 >
