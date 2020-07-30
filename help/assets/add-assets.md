@@ -2,10 +2,10 @@
 title: Add your digital assets to [!DNL Adobe Experience Manager].
 description: Add your digital assets to [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
+source-git-commit: 3e9697d27337b39f5667cc94930de6ea7f0b68c5
 workflow-type: tm+mt
-source-wordcount: '1328'
-ht-degree: 77%
+source-wordcount: '1324'
+ht-degree: 76%
 
 ---
 
@@ -63,7 +63,6 @@ Pour télécharger un fichier (ou plusieurs fichiers), vous pouvez les sélectio
 
    If you cancel the upload operation before the files are uploaded, [!DNL Assets] stops uploading the current file and refreshes the content. Toutefois, les fichiers déjà téléchargés ne sont pas supprimés.
 
-
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
@@ -73,7 +72,6 @@ Pour télécharger un fichier (ou plusieurs fichiers), vous pouvez les sélectio
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
-
 
 1. The upload progress dialog in [!DNL Assets] displays the count of successfully uploaded files and the files that failed to upload.
 
@@ -154,7 +152,7 @@ Pour qu’un traitement supplémentaire soit réalisé sur les ressources charg�
 Les profils suivants sont disponibles :
 
 * Les [profils de métadonnées](metadata-profiles.md) vous permettent d’appliquer des propriétés de métadonnées par défaut aux ressources chargées dans ce dossier.
-* Les [profils de traitement](asset-microservices-configure-and-use.md#processing-profiles) vous permettent d’appliquer un traitement des rendus et de générer des rendus en plus des rendus par défaut.
+* [Les profils](asset-microservices-configure-and-use.md) de traitement vous permettent de générer plus de rendus que ce qui est possible par défaut.
 
 De plus, si Dynamic Media est activé dans votre environnement :
 
