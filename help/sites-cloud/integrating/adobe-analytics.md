@@ -1,8 +1,8 @@
 ---
-title: Intégration à Adobe Analytics
+title: 'Intégration à Adobe Analytics '
 description: 'Intégration à Adobe Analytics '
 translation-type: tm+mt
-source-git-commit: 6754693da488b0bc44a71aa9f0402fc1308b703a
+source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 100%
