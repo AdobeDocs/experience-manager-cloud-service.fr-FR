@@ -2,7 +2,7 @@
 title: Intégration à Adobe Analytics
 description: 'Intégration à Adobe Analytics '
 translation-type: tm+mt
-source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
+source-git-commit: f2ed74afd2df43e31ff1002cd42a60f372d0b769
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 12%
@@ -27,7 +27,7 @@ Par rapport aux versions précédentes d’AEM, la prise en charge de la structu
 
 1. Navigate to **Tools** → **Cloud Services**.
 2. Select **Adobe Analytics Configurations**.
-   ![Fenêtre](assets/analytics_screen.png "Fenêtre AnalyticsAnalytics")
+   ![Fenêtre](assets/analytics_screen1.png "Fenêtre AnalyticsAnalytics")
 3. Select the **Create** button.
 4. Renseignez les détails (voir ci-dessous), puis cliquez sur **Se connecter**.
 
@@ -35,7 +35,7 @@ Par rapport aux versions précédentes d’AEM, la prise en charge de la structu
 
 Les champs de configuration présents dans la fenêtre Configuration Adobe Analytics sont les suivants :
 
-![Paramètres](assets/properties_field.png "de configurationParamètres de configuration")
+![Paramètres](assets/properties_field1.png "de configurationParamètres de configuration")
 
 | Propriétés | Description |
 |---|---|
