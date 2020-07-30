@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1774'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -43,8 +43,8 @@ En d’autres termes, des consignes qui peuvent être appliquées à divers form
 Chaque consigne est écrite de manière à pouvoir être testée objectivement pour s’assurer qu’un groupe d’experts en accessibilité conviendrait de façon générale que la consigne a été respectée. L’un des défis des consignes d’accessibilité est que, alors que certaines peuvent être testées par des moyens techniques, d’autres requièrent un jugement humain afin de vérifier si la consigne a été respectée.
 
 * Permettent une **mise en œuvre contextuelle avec des priorités :**
-les consignes de WCAG 2.1 reçoivent des priorités en fonction de l’impact probable du manquement à cette consigne sur un groupe particulier de personnes en situation de handicap. Cela permet aux auteurs de prendre une décision éclairée sur les consignes les plus importantes pour leur situation donnée. En outre, la notion de 
-*l&#39;accessibilité prise en charge* est introduite. Cela permet aux auteurs de prendre des décisions sur la meilleure manière d’utiliser les technologies web qui peuvent ne pas présenter l’accessibilité totale, ou peut exiger des utilisateurs qu’ils disposent de technologies d’assistance et/ou de navigateurs spécifiques, permettant ainsi de tirer profit des fonctions d’accessibilité.
+les consignes de WCAG 2.1 reçoivent des priorités en fonction de l’impact probable du manquement à cette consigne sur un groupe particulier de personnes en situation de handicap. Cela permet aux auteurs de prendre une décision éclairée sur les consignes les plus importantes pour leur situation donnée. En outre, la notion d’ 
+*accessibilité prise en charge* est introduite. Cela permet aux auteurs de prendre des décisions sur la meilleure manière d’utiliser les technologies web qui peuvent ne pas présenter l’accessibilité totale, ou peut exiger des utilisateurs qu’ils disposent de technologies d’assistance et/ou de navigateurs spécifiques, permettant ainsi de tirer profit des fonctions d’accessibilité.
 
 Ces objectifs ont considérablement influencé la structure de WCAG 2.1.
 
