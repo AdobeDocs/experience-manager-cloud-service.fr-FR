@@ -3,11 +3,11 @@ title: Gestion des collections de ressources numériques
 description: Découvrez le concept de collection dans Adobe Experience Manager Assets. Apprenez à créer, gérer, modifier et partager des collections avec d’autres utilisateurs.
 contentOwner: AG
 mini-toc-levels: 1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 85f949e405ee3e7527f49d61c368b79ee2d0743b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2401'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -222,7 +222,7 @@ Vous pouvez ajouter une collection à une autre collection, créant ainsi une co
 >
 >Les collections dynamiques ne peuvent pas être imbriquées. En d’autres termes, elles ne peuvent pas comporter d’autres collections.
 
-## Recherches enregistrées  {#saved-searches}
+## Recherches enregistrées   {#saved-searches}
 
 Dans l’interface utilisateur d’Assets, vous pouvez rechercher ou filtrer des ressources selon des règles, critères de recherche ou facettes de recherche personnalisées. Si vous enregistrez ces éléments en tant que **[!UICONTROL recherches enregistrées]**, vous pouvez y accéder ultérieurement à partir de la liste **[!UICONTROL Recherches enregistrées]** du panneau Filtrer. La création d’une recherche enregistrée entraîne celle d’une collection dynamique.
 
