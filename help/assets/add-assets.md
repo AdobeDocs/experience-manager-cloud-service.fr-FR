@@ -14,7 +14,7 @@ ht-degree: 77%
 
 [!DNL Adobe Experience Manager] enrichit le contenu binaire des fichiers numériques chargés avec des métadonnées enrichies, des balises intelligentes, des rendus et autres services de gestion des ressources numériques (DAM). Vous pouvez charger divers types de fichiers, tels que des images, des documents et des fichiers d’images brutes, depuis votre dossier local ou un lecteur réseau vers [!DNL Experience Manager Assets].
 
-Plusieurs méthodes de chargement sont fournies. Outre le téléchargement de navigateur le plus courant, il existe d’autres méthodes d’ajout d’actifs au référentiel de Experience Manager, notamment des clients de bureau, tels que Adobe Asset Link ou l’application de bureau Experience Manager, des scripts de téléchargement et d’assimilation que les clients créeraient et des intégrations d’assimilation automatisées ajoutées en tant qu’extensions Experience Manager.
+Plusieurs méthodes de chargement sont fournies. Outre le téléchargement de navigateur le plus souvent utilisé, il existe d’autres méthodes d’ajout d’actifs au référentiel de Experience Manager, notamment des clients de bureau, tels que Adobe Asset Link ou l’application de bureau Experience Manager, le téléchargement et l’assimilation de scripts que les clients créeraient et des intégrations d’assimilation automatisées ajoutées en tant qu’extensions Experience Manager.
 
 Dans ce chapitre, nous nous focaliserons sur les méthodes de chargements destinées aux utilisateurs finaux. Nous vous proposerons également des liens vers des articles décrivant les aspects techniques du chargement et de l’ingestion de ressources à l’aide des kits SDK et des API d’Experience Manager.
 
