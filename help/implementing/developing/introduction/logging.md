@@ -2,7 +2,7 @@
 title: Journalisation
 description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou apprenez à demander la journalisation des données.
 translation-type: tm+mt
-source-git-commit: db0ea2367e8ecf645694a0f33b9f3b99010ec491
+source-git-commit: 86103b40e931ec00e0c15e9dbcbdf396c8eb05c9
 workflow-type: tm+mt
 source-wordcount: '2212'
 ht-degree: 7%
@@ -27,9 +27,9 @@ La journalisation au niveau de l’application AEM est gérée par trois journau
 1. Journaux de requêtes HTTP, qui consignent les informations sur les requêtes HTTP et leurs réponses fournies par AEM
 1. Journaux d’accès HTTP, qui consignent les informations résumées et les requêtes HTTP diffusées par AEM
 
-> [!NOTE]
-> 
-> Les requêtes HTTP diffusées à partir du cache Dispatcher du niveau Publication ou du réseau de diffusion de contenu en amont ne sont pas reflétées dans ces journaux.
+>[!NOTE]
+>
+>Les requêtes HTTP diffusées à partir du cache Dispatcher du niveau Publication ou du réseau de diffusion de contenu en amont ne sont pas reflétées dans ces journaux.
 
 ## Journalisation Java AEM {#aem-java-logging}
 
@@ -595,9 +595,9 @@ Dans la demande d&#39;assistance, les clients doivent indiquer :
 
 Les propriétés ci-dessus doivent être spécifiées pour chaque combinaison de type programme/environnement appropriée.  Par exemple, si un client souhaite des environnements de développement, d’évaluation et de production, il doit fournir trois ensembles d’informations, comme indiqué ci-dessous.
 
-> [!NOTE]
+>[!NOTE]
 >
-> La redirection des blocs pour les environnements de programme sandbox n&#39;est pas prise en charge.
+>La redirection des blocs pour les environnements de programme sandbox n&#39;est pas prise en charge.
 
 Vous trouverez ci-dessous un exemple de demande d’assistance à la clientèle :
 
