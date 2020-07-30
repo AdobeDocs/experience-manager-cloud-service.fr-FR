@@ -2,9 +2,9 @@
 title: Intégration à Adobe Target
 description: 'Intégration à Adobe Target '
 translation-type: tm+mt
-source-git-commit: 8063a41d079b8b959b903aa0f97068a42a22d840
+source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '857'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ Dans le cadre d’Adobe Marketing Cloud, Adobe Target vous permet d’amélio
 * à l’aide de l’interface utilisateur tactile pour créer une configuration Analytics dans AEM en tant que Cloud Service (configuration IMS requise).
 * ajout et configuration d’Adobe Analytics en tant qu’extension dans [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
-L’intégration avec le lancement est nécessaire pour le &quot;ciblage d’expérience&quot;. Pour l’exportation des fragments d’expérience vers la Cible, vous n’avez besoin que de la configuration de l’Adobe Target et d’IMS.
+Le lancement d’Adobe est nécessaire pour gérer les propriétés côté client pour Analytics et la Cible dans les pages AEM (bibliothèques/balises JS). Ceci dit, l’intégration avec le lancement est nécessaire pour le &quot;ciblage d’expérience&quot;. Pour l’exportation des fragments d’expérience vers la Cible, vous n’avez besoin que de la configuration de l’Adobe Target et d’IMS.
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ L’intégration avec le lancement est nécessaire pour le &quot;ciblage d’exp
 1. Navigate to **Tools** → **Cloud Services**.
    ![](assets/cloudservice.png "NavigationNavigation")
 2. Sélectionnez **Adobe Target**.
-3. Cliquez sur le bouton **Créer.**
+3. Select the **Create** button.
    ![](assets/tenant.png "CreateCreate")
 4. Renseignez les détails (voir ci-dessous), puis sélectionnez **Se connecter**.
    ![](assets/open_screen.png "ConnectConnect")
@@ -59,10 +59,6 @@ AEM offres et intégration immédiate avec l’Experience Platform Launch. En aj
 >
 >Les structures existantes (héritées) fonctionnent toujours, mais ne peuvent pas être configurées dans l’interface utilisateur tactile. Il est conseillé de recréer les configurations de mappage de variables dans Lancement.
 
->[!NOTE]
->
->Les structures existantes (héritées) fonctionnent toujours, mais ne peuvent pas être configurées dans l’interface utilisateur tactile. Il est conseillé de recréer les configurations de mappage de variables dans Lancement.
-
 En général, les étapes d’intégration sont les suivantes :
 
 1. Créer une propriété Launch
@@ -83,7 +79,7 @@ Une propriété est un conteneur qui sera rempli d’extensions, de règles et d
 
 ### Ajouter les extensions requises {#add-extension}
 
-Extensions est le conteneur qui gère les paramètres de bibliothèque principaux. L’extension Adobe Target prend en charge les implémentations côté client à l’aide du SDK JavaScript Cible pour le Web moderne at.js. Vous devez ajouter les extensions **Adobe Target** et **Adobe ContextHub** .
+**Les extensions** sont le conteneur qui gère les paramètres de bibliothèque principaux. L’extension Adobe Target prend en charge les implémentations côté client en utilisant le SDK JavaScript Cible pour le Web moderne at.js. Vous devez ajouter les extensions **Adobe Target** et **Adobe ContextHub** .
 
 1. Sélectionnez l’option Catalogue des extensions, puis recherchez la Cible dans le filtre.
 2. Sélectionnez **Adobe Target** at.js et cliquez sur l’option Installer.
@@ -95,7 +91,7 @@ Extensions est le conteneur qui gère les paramètres de bibliothèque principau
 
 ### Création d’un élément de données {#data-element}
 
-Les éléments de données sont des espaces réservés vers lesquels vous pouvez mapper les paramètres du hub contextuel.
+**Les éléments** de données sont des espaces réservés vers lesquels vous pouvez mapper les paramètres du hub de contexte.
 
 1. Sélectionnez Éléments **** de données.
 2. Sélectionnez **Ajouter l’élément** de données.
@@ -105,7 +101,7 @@ Les éléments de données sont des espaces réservés vers lesquels vous pouvez
 
 ### Création d’une règle de page {#page-rule}
 
-Dans Règle, nous définissons et ordonnons une séquence d’actions qui sera exécutée sur le site, pour atteindre le ciblage.
+En **règle** , nous définissons et ordonnons une séquence d’actions qui sera exécutée sur le site, pour atteindre le ciblage.
 
 1. Ajoutez un ensemble d’actions tel qu’illustré dans la capture d’écran.
    ![](assets/rules.png "ActionsActions")
