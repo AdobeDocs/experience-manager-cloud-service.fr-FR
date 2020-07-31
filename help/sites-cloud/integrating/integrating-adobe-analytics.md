@@ -2,9 +2,9 @@
 title: Intégration à Adobe Analytics
 description: 'Intégration à Adobe Analytics '
 translation-type: tm+mt
-source-git-commit: f2ed74afd2df43e31ff1002cd42a60f372d0b769
+source-git-commit: 96e1d775a98584f12e4571c708955a9ded57e3c4
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '530'
 ht-degree: 12%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 12%
 L’intégration d’Adobe Analytics et d’AEM en tant que Cloud Service vous permet de suivre l’activité de votre page Web. L&#39;intégration requiert :
 
 * à l’aide de l’interface utilisateur tactile pour créer une configuration Analytics dans AEM en tant que Cloud Service.
-* ajout et configuration d’Adobe Analytics en tant qu’extension dans [Adobe Launch].(https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
+* ajout et configuration d’Adobe Analytics en tant qu’extension dans [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
 Par rapport aux versions précédentes d’AEM, la prise en charge de la structure n’est pas fournie dans la configuration Analytics de l’AEM en tant que Cloud Service. Au lieu de cela, elle est désormais réalisée par le lancement d&#39;Adobe, qui est l&#39;outil de facto pour instrumenter un site AEM avec les capacités Analytics (bibliothèques JS). Dans Adobe Launch, une propriété est créée où l’extension Adobe Analytics peut être configurée et des règles sont créées pour envoyer des données à Adobe Analytics. Le lancement d’Adobe a remplacé la tâche d’analyse fournie par sitecatalyst.
 
@@ -23,11 +23,11 @@ Par rapport aux versions précédentes d’AEM, la prise en charge de la structu
 >
 >Les clients Adobe Experience Manager as a Cloud Service qui ne disposent pas d’un compte Analytics existant peuvent demander l’accès au package Analytics Foundation pour Experience Cloud. Ce package Foundation offre une utilisation limitée en volume d’Analytics.
 
-## Création de la configuration Analytics {#analytics-configuration}
+## Création de la configuration Adobe Analytics {#analytics-configuration}
 
 1. Navigate to **Tools** → **Cloud Services**.
-2. Select **Adobe Analytics Configurations**.
-   ![Fenêtre](assets/analytics_screen1.png "Fenêtre AnalyticsAnalytics")
+2. Select **Adobe Analytics**.
+   ![Adobe Analytics](assets/analytics_screen2.png "WindowAdobe Analytics Window")
 3. Select the **Create** button.
 4. Renseignez les détails (voir ci-dessous), puis cliquez sur **Se connecter**.
 
