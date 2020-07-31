@@ -3,10 +3,10 @@ title: Configuration et utilisation des microservices de ressources pour le trai
 description: Découvrez comment configurer et utiliser les microservices de ressources basés sur le cloud pour traiter des ressources à grande échelle.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 253231d2c9bafbba72696db36e9ed46b8011c9b3
+source-git-commit: f5ebd1ae28336e63d8f3a89d7519cf74b46a3bfd
 workflow-type: tm+mt
-source-wordcount: '2246'
-ht-degree: 56%
+source-wordcount: '2208'
+ht-degree: 57%
 
 ---
 
@@ -92,7 +92,7 @@ Pour créer un profil de traitement standard, procédez comme suit :
    * Qualité en pourcentage de chaque rendu JPEG.
    * Types MIME inclus et exclus pour définir l’applicabilité d’un profil.
 
-![processing-profiles-adding](assets/processing-profiles-adding.png)
+   ![processing-profiles-adding](assets/processing-profiles-adding.png)
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -106,23 +106,22 @@ La vidéo suivante montre l&#39;utilité et l&#39;utilisation du profil standard
 
 ## Cas d’utilisation et de profil personnalisés {#custom-config}
 
-**Éléments**&#x200B;à déterminer :
+<!-- **TBD items**:
 
-* Liens croisés globaux avec le contenu d’extensibilité.
-* Indiquez comment obtenir l’URL du collaborateur. URL du collaborateur pour les environnements Dev, Stage et Prod.
-* Mappage des mentions des paramètres de service. Lien vers un article de service de calcul.
-* Revue du flux partagé sur le ticket Jira.
+* Overall cross-linking with the extensibility content.
+* Mention how to get URL of worker. Worker URL for Dev, Stage, and Prod environments.
+* Mention mapping of service parameters. Link to compute service article.
+* Review from flow perspective shared in Jira ticket.
+-->
 
 Certains cas complexes d’utilisation du traitement des actifs ne peuvent pas être réalisés à l’aide de configurations par défaut, car les besoins des organisations sont variés. offres d&#39;Adobe [!DNL Asset Compute Service] pour de tels cas d&#39;utilisation. Il s’agit d’un service évolutif et extensible permettant de traiter des ressources numériques. Il peut transformer des formats d’image, de vidéo, de document et d’autres formats de fichier en différents rendus, y compris des miniatures, du texte extrait et des métadonnées et des archives.
 
-Les développeurs peuvent utiliser le service Asset Compute pour créer des agents personnalisés spécialisés qui répondent à des cas d’utilisation complexes et prédéfinis. [!DNL Experience Manager] peuvent appeler ces travailleurs personnalisés à partir de l’interface utilisateur en utilisant des profils personnalisés configurés par les administrateurs. [!DNL Asset Compute Service] prend en charge les cas d’utilisation suivants :
+Les développeurs peuvent utiliser le service Asset Compute pour créer des agents personnalisés spécialisés qui répondent à des cas d’utilisation complexes et prédéfinis. [!DNL Experience Manager] peuvent appeler ces travailleurs personnalisés à partir de l’interface utilisateur en utilisant des profils personnalisés configurés par les administrateurs. [!DNL Asset Compute Service] prend en charge les cas d’utilisation suivants d’appel de services externes :
 
-* Générez des balises actives personnalisées et améliorées pour les ressources numériques à l’aide de Adobe Sensei.
-* Générez le masque de recadrage d’un sujet à l’aide de l’Adobe Sensei.
-* Récupérez les informations de métadonnées de produit du système PIM et faites en sorte que les métadonnées fassent partie du fichier binaire lors de l’assimilation de la ressource.
-* Modifiez la couleur d’arrière-plan d’une image transparente à l’aide de [!DNL Adobe Photoshop] l’API.
-* Retouchez une image à l’aide de [!DNL Photoshop] l’API.
-* Désélectionnez une image à l’aide de [!DNL Adobe Lightroom] l’API.
+* Appelez [!DNL Adobe Photoshop] l’API de découpage d’image et enregistrez le résultat sous forme de rendu.
+* Appelez des systèmes tiers pour mettre à jour des données, par exemple un système PIM.
+* Utilisez [!DNL Photoshop] l’API pour générer divers rendus en fonction du modèle Photoshop.
+* Utilisez [!DNL Adobe Lightroom] l’API pour optimiser les ressources assimilées et les enregistrer en tant que rendus.
 
 >[!NOTE]
 >
@@ -216,3 +215,4 @@ Pour plus d’informations sur les étapes de workflow standard pouvant être ut
 ## Bonnes pratiques et restrictions {#best-practices-limitations-tips}
 
 * Pour la conception des workflows, prenez en compte vos besoins pour tous les types de rendus. Si vous ne prévoyez pas la nécessité d’un rendu futur, supprimez son étape de création dans le workflow. Il est impossible par la suite de supprimer les rendus en masse. Les rendus superflus peuvent occuper beaucoup d’espace de stockage suite à une utilisation prolongée d’[!DNL Experience Manager]. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Si plusieurs ressources sont concernées, vous pouvez, au choix, personnaliser [!DNL Experience Manager] pour supprimer des rendus spécifiques, ou supprimer les ressources et les charger à nouveau.
+* Actuellement, la prise en charge se limite à la génération de rendus. La génération de nouveaux actifs n’est pas prise en charge.
