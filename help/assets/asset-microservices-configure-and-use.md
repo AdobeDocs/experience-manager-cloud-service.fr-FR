@@ -3,10 +3,10 @@ title: Configuration et utilisation des microservices de ressources pour le trai
 description: Découvrez comment configurer et utiliser les microservices de ressources basés sur le cloud pour traiter des ressources à grande échelle.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f5ebd1ae28336e63d8f3a89d7519cf74b46a3bfd
+source-git-commit: a29b00ed6b216fb83f6a7c6bb7b34e1f317ffa57
 workflow-type: tm+mt
-source-wordcount: '2208'
-ht-degree: 57%
+source-wordcount: '2405'
+ht-degree: 46%
 
 ---
 
@@ -25,9 +25,9 @@ ht-degree: 57%
 
 Les microservices de ressources permettent un traitement évolutif et résilient des ressources à l’aide des services cloud. Adobe gère les services pour une gestion optimale des différents types de ressources et des options de traitement.
 
-Le traitement des ressources dépend de la configuration définie dans les **[!UICONTROL Profils de traitement]**. Ceux-ci fournissent une configuration par défaut et permettent à l’administrateur d’ajouter une configuration plus précise pour le traitement des ressources. Les administrateurs peuvent créer et gérer les configurations des workflows de post-traitement, y compris la personnalisation facultative. La personnalisation des workflows autorise une extensibilité et une personnalisation complète.
+Asset processing depends on the configuration in **[!UICONTROL Processing Profiles]**, which provide a default set up, and let an administrator to add more specific asset processing configuration. Les administrateurs peuvent créer et gérer les configurations des workflows de post-traitement, y compris la personnalisation facultative. La personnalisation des workflows autorise une extensibilité et une personnalisation complète.
 
-Les microservices de ressources vous permettent de traiter un [large éventail de types de fichiers](/help/assets/file-format-support.md), dans des formats prêts à l’emploi plus nombreux que les versions précédentes d’Experience Manager. Par exemple, l’extraction de miniatures des formats PSD et PSB est désormais possible, car elle nécessitait auparavant des solutions tierces telles qu’ImageMagick.
+Asset microservices lets you process a [broad range of file types](/help/assets/file-format-support.md) covering more formats out-of-the-box than what is possible with previous versions of Experience Manager. Par exemple, l’extraction de miniatures des formats PSD et PSB est désormais possible, car elle nécessitait auparavant des solutions tierces telles qu’ImageMagick.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -44,17 +44,18 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 Experience Manager permet d’effectuer les niveaux de traitement suivants.
 
-| Configuration | Description | Cas d’utilisation couverts |
+| Option | Description | Cas d’utilisation couverts |
 |---|---|---|
-| [Configuration par défaut](#default-config) | Il est disponible en l’état et ne peut pas être modifié. Cette configuration fournit une fonctionnalité de génération de rendu de base. | Miniatures standard utilisées par l’interface [!DNL Assets] utilisateur (48, 140 et 319 px); Grande prévisualisation (rendu Web - 1 280 px); extraction des métadonnées et du texte. |
-| [Configuration standard](#standard-config) | Configuré par les administrateurs via l’interface utilisateur uniquement. Fournit davantage d’options pour la génération de rendu que la configuration par défaut ci-dessus. | modifier le format et la résolution des images ; générer des rendus FPO. |
-| [Configuration personnalisée](#custom-config) | Configuré par les administrateurs via l’interface utilisateur pour appeler des travailleurs personnalisés qui prennent en charge des exigences plus complexes. Exploitation d’un cloud natif [!DNL Asset Compute Service]. | Voir les cas [d’utilisation](#custom-config)autorisés. |
+| [Configuration par défaut](#default-config) | Il est disponible en l’état et ne peut pas être modifié. Cette configuration fournit une fonctionnalité de génération de rendu de base. | <ul> <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 px) </li> <li> Aperçu grand format (rendu web : 1 280 pixels) </li><li> extraction des métadonnées et du texte.</li></ul> |
+| [Configuration personnalisée](#standard-config) | Configuré par les administrateurs via l’interface utilisateur. Fournit davantage d’options pour la génération de rendu en étendant l’option par défaut. Etendez le programme de travail prêt à l’emploi pour fournir différents formats et rendus. | <ul><li>Rendu FPO. </li> <li>Modification du format de fichier et de la résolution des images</li> <li> S’appliquer de manière conditionnelle aux types de fichiers configurés. </li> </ul> |
+| [profil personnalisé](#custom-config) | Configuré par les administrateurs via l’interface utilisateur pour utiliser du code personnalisé par l’intermédiaire de programmes de travail personnalisés pour appeler [!DNL Asset Compute Service]. Prend en charge des exigences plus complexes dans une méthode native de cloud et évolutive. | Voir les cas [d’utilisation](#custom-config)autorisés. |
 
-Pour créer des profils de traitement personnalisés répondant à des besoins spécifiques (pour les intégrer à d’autres systèmes, par exemple), reportez-vous à la section [Workflows de post-traitement](#post-processing-workflows).
+<!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
+-->
 
 ## Formats de fichiers pris en charge {#supported-file-formats}
 
-Les microservices de ressources prennent en charge un large éventail de formats de fichiers pour la génération de rendus ou l’extraction de métadonnées. Pour consulter la liste complète, voir [Formats de fichiers pris en charge](file-format-support.md).
+Les microservices de ressources prennent en charge un large éventail de formats de fichier pour traiter, générer des rendus ou extraire des métadonnées. Voir Formats [de fichiers](file-format-support.md) pris en charge pour la liste complète des types MIME et les fonctionnalités prises en charge pour chaque type.
 
 ## Configuration par défaut {#default-config}
 
@@ -65,7 +66,7 @@ Avec la configuration par défaut, seul le profil de traitement de base est conf
 <!-- ![processing-profiles-standard](assets/processing-profiles-standard.png)
 -->
 
-## profil standard {#standard-config}
+## Configuration standard {#standard-config}
 
 [!DNL Experience Manager] offrent des fonctionnalités permettant de générer des rendus plus spécifiques pour des formats courants en fonction des besoins de l’utilisateur. Un administrateur peut créer des Profils [!UICONTROL de] traitement supplémentaires pour faciliter la création de rendu. Les utilisateurs attribuent ensuite un ou plusieurs des profils disponibles à des dossiers spécifiques pour que le traitement supplémentaire soit terminé. Par exemple, le traitement supplémentaire peut générer des rendus pour le Web, les appareils mobiles et les tablettes. La vidéo suivante explique comment créer et appliquer des [!UICONTROL Profils de traitement] et comment accéder aux rendus qui ont été créés.
 
@@ -96,11 +97,14 @@ Pour créer un profil de traitement standard, procédez comme suit :
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
-La vidéo suivante montre l&#39;utilité et l&#39;utilisation du profil standard.
+<!-- TBD: Update the video link when a new video is available from Tech Marketing.
+
+The following video demonstrates the usefulness and usage of standard profile.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
+-->
 
-<!-- Removed per cqdoc-15624 request by engineering.
+<!-- This image was removed per cqdoc-15624, as requested by engineering.
  ![processing-profiles-list](assets/processing-profiles-list.png) 
  -->
 
@@ -114,14 +118,20 @@ La vidéo suivante montre l&#39;utilité et l&#39;utilisation du profil standard
 * Review from flow perspective shared in Jira ticket.
 -->
 
-Certains cas complexes d’utilisation du traitement des actifs ne peuvent pas être réalisés à l’aide de configurations par défaut, car les besoins des organisations sont variés. offres d&#39;Adobe [!DNL Asset Compute Service] pour de tels cas d&#39;utilisation. Il s’agit d’un service évolutif et extensible permettant de traiter des ressources numériques. Il peut transformer des formats d’image, de vidéo, de document et d’autres formats de fichier en différents rendus, y compris des miniatures, du texte extrait et des métadonnées et des archives.
+Il [!DNL Asset Compute Service] prend en charge divers cas d’utilisation, tels que le traitement par défaut, le traitement de formats spécifiques à l’Adobe, tels que les fichiers Photoshop, et l’implémentation de traitements personnalisés ou spécifiques à l’organisation. La personnalisation du processus de mise à jour des actifs de gestion des actifs de gestion des actifs requise par le passé est gérée par défaut ou via la configuration des profils de traitement sur l’interface utilisateur. Si ce traitement ne répond pas aux besoins de l’entreprise, l’Adobe recommande de développer et d’utiliser Asset Compute Service pour étendre les fonctionnalités par défaut.
 
-Les développeurs peuvent utiliser le service Asset Compute pour créer des agents personnalisés spécialisés qui répondent à des cas d’utilisation complexes et prédéfinis. [!DNL Experience Manager] peuvent appeler ces travailleurs personnalisés à partir de l’interface utilisateur en utilisant des profils personnalisés configurés par les administrateurs. [!DNL Asset Compute Service] prend en charge les cas d’utilisation suivants d’appel de services externes :
+>[!NOTE]
+>
+>Adobe recommande d’utiliser un intervenant personnalisé uniquement lorsque les besoins de l’entreprise ne peuvent pas être réalisés à l’aide des configurations par défaut ou du profil standard.
 
-* Appelez [!DNL Adobe Photoshop] l’API de découpage d’image et enregistrez le résultat sous forme de rendu.
+Il peut transformer des formats d’image, de vidéo, de document et d’autres formats de fichier en différents rendus, y compris des miniatures, du texte extrait et des métadonnées et des archives.
+
+Les développeurs peuvent utiliser le [!DNL Asset Compute Service] pour créer des travailleurs personnalisés spécialisés qui répondent à des cas d’utilisation prédéfinis. [!DNL Experience Manager] peuvent appeler ces travailleurs personnalisés à partir de l’interface utilisateur en utilisant des profils personnalisés configurés par les administrateurs. [!DNL Asset Compute Service] prend en charge les cas d’utilisation suivants d’appel de services externes :
+
+* Utilisez [!DNL Adobe Photoshop]l’API [](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) ImageCutout et enregistrez le résultat en tant que rendu.
 * Appelez des systèmes tiers pour mettre à jour des données, par exemple un système PIM.
 * Utilisez [!DNL Photoshop] l’API pour générer divers rendus en fonction du modèle Photoshop.
-* Utilisez [!DNL Adobe Lightroom] l’API pour optimiser les ressources assimilées et les enregistrer en tant que rendus.
+* Utilisez l’API [de Lightroom](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) Adobe pour optimiser les ressources assimilées et les enregistrer en tant que rendus.
 
 >[!NOTE]
 >
@@ -133,18 +143,30 @@ Pour créer un profil personnalisé, procédez comme suit :
 
 1. Les administrateurs ont accès à **[!UICONTROL Outils > Ressources > Profils]** de traitement. Cliquez sur **[!UICONTROL Créer]**.
 1. Click on **[!UICONTROL Custom]** tab. Click **[!UICONTROL Add New]**. Indiquez le nom de fichier souhaité pour le rendu.
-1. Fournissez les informations suivantes et cliquez sur **[!UICONTROL Enregistrer]**.
+1. Fournissez les informations suivantes.
 
    * Nom de fichier de chaque rendu et extension de fichier prise en charge.
    * URL de point de terminaison d’une application personnalisée Firefox. L’application doit provenir de la même organisation que le compte du Experience Manager.
-   * Ajoutez les paramètres du service si nécessaire.
+   * Ajoutez Paramètres [!UICONTROL du] service pour transmettre des informations ou des paramètres supplémentaires au programme de travail personnalisé.
    * Types MIME inclus et exclus pour définir l’applicabilité d’un profil.
 
-![profil de traitement personnalisé](assets/custom-processing-profile.png)
+   Cliquez sur **[!UICONTROL Enregistrer]**.
 
 >[!CAUTION]
 >
 >Si l’application et le [!DNL Experience Manager] compte Firefly ne proviennent pas de la même organisation, l’intégration ne fonctionne pas.
+
+### Exemple d’un profil personnalisé {#custom-profile-example}
+
+Pour illustrer l’utilisation des profils personnalisés, prenons un exemple d’utilisation pour appliquer du texte personnalisé aux images de campagne. Vous pouvez créer un profil de traitement qui utilise l’API Photoshop pour modifier les images.
+
+L’intégration du service Asset Compute permet au Experience Manager de transmettre ces paramètres au travailleur personnalisé à l’aide du champ Paramètres [!UICONTROL du] service. Le programme de travail personnalisé appelle ensuite l’API Photoshop et transmet ces valeurs à l’API. Par exemple, vous pouvez transmettre le nom de la police, la couleur du texte, le poids de texte et la taille du texte pour ajouter le texte personnalisé aux images de campagne.
+
+![profil de traitement personnalisé](assets/custom-processing-profile.png)
+
+*Figure : Utilisez le champ Paramètres[!UICONTROL du]service pour transmettre des informations supplémentaires aux paramètres prédéfinis générés dans le programme de travail personnalisé.*
+
+Lorsque des images de campagne sont téléchargées dans le dossier sur lequel ce profil de traitement est appliqué, les images sont mises à jour avec `Jumanji` du texte en `Arial-BoldMT` police.
 
 ## Utiliser des profils de traitement pour traiter des ressources {#use-profiles}
 
@@ -152,7 +174,7 @@ Créez les profils de traitement personnalisé supplémentaire et appliquez-les 
 
 Appliquez des profils de traitement aux dossiers en utilisant l’une des méthodes suivantes :
 
-* Les administrateurs peuvent sélectionner une définition de profil de traitement dans **[!UICONTROL Outils > Ressources > Profils de traitement]** et utiliser l’action **[!UICONTROL Appliquer le profil au(x) dossier(s)]**. Cette action ouvre un navigateur de contenu qui vous permet d’accéder à des dossiers spécifiques, de les sélectionner et de confirmer l’application du profil.
+* Administrators can select a processing profile definition in **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**, and use **[!UICONTROL Apply Profile to Folder(s)]** action. Cette action ouvre un navigateur de contenu qui vous permet d’accéder à des dossiers spécifiques, de les sélectionner et de confirmer l’application du profil.
 * Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the correct processing profile for that folder. Pour enregistrer les modifications, cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 
 >[!NOTE]
@@ -165,7 +187,7 @@ Une fois qu’un profil de traitement a été appliqué à un dossier, toutes le
 >
 >Un profil de traitement appliqué à un dossier fonctionne pour l’arborescence entière, mais peut être remplacé par un autre profil appliqué à un sous-dossier. Lorsque des ressources sont chargées dans un dossier, Experience Manager recherche un profil de traitement dans les propriétés du dossier conteneur. Si aucun dossier parent n’est appliqué, un dossier parent dans la hiérarchie est contrôlé pour qu’un profil de traitement s’applique.
 
-Les utilisateurs peuvent vérifier que le traitement a bien eu lieu en ouvrant une ressource récemment chargée dont le traitement est terminé, en ouvrant l’aperçu de la ressource et en cliquant sur la vue **[!UICONTROL Rendus]** du rail de gauche. Les rendus spécifiques situés dans le profil de traitement, pour lesquels le type de la ressource correspond aux règles d’inclusion du type MIME, doivent être visibles et accessibles.
+Tous les rendus générés sont disponibles dans la vue [!UICONTROL Rendus] du rail de gauche. Ouvrez la prévisualisation de ressources et ouvrez le rail de gauche pour accéder à la vue **[!UICONTROL Rendus]** . Les rendus spécifiques situés dans le profil de traitement, pour lesquels le type de la ressource correspond aux règles d’inclusion du type MIME, doivent être visibles et accessibles.
 
 ![rendus supplémentaires](assets/renditions-additional-renditions.png)
 
