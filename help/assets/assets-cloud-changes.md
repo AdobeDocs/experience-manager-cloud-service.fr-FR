@@ -2,10 +2,10 @@
 title: Modifications notables d’Adobe Experience Manager Assets as a Cloud Service
 description: Modifications notables d’Adobe Experience Manager Assets dans AEM Cloud Service par rapport à Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 60f11cd86ecfeb47a46f9809d8ae9f1c45a4a25f
 workflow-type: tm+mt
 source-wordcount: '619'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ Adobe Experience Manager as a Cloud Service offre de nombreuses nouvelles fon
 Les principales différences par rapport à Experience Manager 6.5 se situent dans les domaines suivants :
 
 * [Ingestion et chargement de ressources](#asset-ingestion).
-* [Microservices de ressources pour le traitement cloud](#asset-microservices).
+* [Microservices de ressources pour le traitement](#asset-microservices)natif du cloud.
 * [Suppression de l’interface utilisateur classique](#classic-ui).
 
 >[!NOTE]
