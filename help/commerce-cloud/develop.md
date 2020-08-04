@@ -2,7 +2,7 @@
 title: Développer le commerce AEM pour l'AEM en tant que Cloud Service
 description: Développer le commerce AEM pour l'AEM en tant que Cloud Service
 translation-type: tm+mt
-source-git-commit: 170a6f4f3aa07b9aa917014b7a682ead9ed595c1
+source-git-commit: e30086c546d9efcc1da07ac5862c012a0db02c09
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 12%
@@ -57,7 +57,7 @@ Pour le développement de Ajoutes CIF locales à l’aide de l’AEM en tant que
    ```
 
 3. Create a `crx-quickstart/install` folder
-4. Copiez le fichier d’archive des fonctionnalités Sling du module complémentaire CIF dans le `crx-quickstart/install` dossier.
+4. Copiez le fichier d’archive Sling Feature approprié du module complémentaire CIF dans le `crx-quickstart/install` dossier.
 
    Le fichier zip du module complémentaire CIF contient deux `.far` fichiers d’archives de la fonctionnalité Sling. Assurez-vous d’utiliser la version correcte pour le AEM Author ou le AEM Publish, en fonction de la manière dont vous envisagez d’exécuter l’AEM locale en tant que SDK Cloud Service.
 
@@ -67,13 +67,13 @@ Pour le développement de Ajoutes CIF locales à l’aide de l’AEM en tant que
 
    ```bash
    export COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
-   ````
+   ```
 
    Exemple de fenêtres :
 
    ```bash
    set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
-   ````
+   ```
 
    Cette variable doit également être configurée pour l’AEM en tant qu’environnement Cloud Service.
 
