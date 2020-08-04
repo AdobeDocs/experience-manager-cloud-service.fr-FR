@@ -2,7 +2,7 @@
 title: Prise en main de AEM Commerce en tant que Cloud Service
 description: Prise en main de AEM Commerce en tant que Cloud Service
 translation-type: tm+mt
-source-git-commit: 170a6f4f3aa07b9aa917014b7a682ead9ed595c1
+source-git-commit: 1fcdfa60c134491c781906e4a757a3a10399bde1
 workflow-type: tm+mt
 source-wordcount: '572'
 ht-degree: 6%
@@ -13,6 +13,8 @@ ht-degree: 6%
 # Prise en main de AEM Commerce en tant que Cloud Service {#start}
 
 Pour commencer à utiliser AEM Commerce en tant que Cloud Service, votre Experience Manager Cloud Service doit être configuré avec le module complémentaire CIF (Commerce Integration Framework). Le module complémentaire CIF est un module supplémentaire en plus des [AEM Sites en tant que Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/home.html).
+
+>[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
 ## Intégration {#onboarding}
 
