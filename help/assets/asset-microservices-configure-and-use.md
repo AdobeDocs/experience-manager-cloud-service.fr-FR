@@ -3,9 +3,9 @@ title: Configuration et utilisation des microservices de ressources pour le trai
 description: Découvrez comment configurer et utiliser les microservices de ressources basés sur le cloud pour traiter des ressources à grande échelle.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9bef70df01192161b3dcca479b9faafa876d561f
+source-git-commit: f51700dad918e5152c1af70686531d1ce5f544e7
 workflow-type: tm+mt
-source-wordcount: '2482'
+source-wordcount: '2501'
 ht-degree: 50%
 
 ---
@@ -146,8 +146,8 @@ Pour créer un profil personnalisé, procédez comme suit :
 1. Fournissez les informations suivantes.
 
    * Nom de fichier de chaque rendu et extension de fichier prise en charge.
-   * URL de point de terminaison d’une application personnalisée Firefox. L’application doit provenir de la même organisation que le compte du Experience Manager.
-   * Ajoutez Paramètres [!UICONTROL du] service pour transmettre des informations ou des paramètres supplémentaires au programme de travail personnalisé.
+   * [URL de point de terminaison d’une application](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-worker.html)personnalisée Firefox. L’application doit provenir de la même organisation que le compte du Experience Manager.
+   * Ajoutez Paramètres du service pour [transmettre des informations ou des paramètres supplémentaires au programme de travail](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html#pass-custom-parameters)personnalisé.
    * Types MIME inclus et exclus pour définir l’applicabilité d’un profil.
 
    Cliquez sur **[!UICONTROL Enregistrer]**.
