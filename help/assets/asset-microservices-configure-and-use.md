@@ -3,10 +3,10 @@ title: Configuration et utilisation des microservices de ressources pour le trai
 description: Découvrez comment configurer et utiliser les microservices de ressources basés sur le cloud pour traiter des ressources à grande échelle.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a29b00ed6b216fb83f6a7c6bb7b34e1f317ffa57
+source-git-commit: 9bef70df01192161b3dcca479b9faafa876d561f
 workflow-type: tm+mt
-source-wordcount: '2405'
-ht-degree: 46%
+source-wordcount: '2482'
+ht-degree: 50%
 
 ---
 
@@ -48,7 +48,7 @@ Experience Manager permet d’effectuer les niveaux de traitement suivants.
 |---|---|---|
 | [Configuration par défaut](#default-config) | Il est disponible en l’état et ne peut pas être modifié. Cette configuration fournit une fonctionnalité de génération de rendu de base. | <ul> <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 px) </li> <li> Aperçu grand format (rendu web : 1 280 pixels) </li><li> extraction des métadonnées et du texte.</li></ul> |
 | [Configuration personnalisée](#standard-config) | Configuré par les administrateurs via l’interface utilisateur. Fournit davantage d’options pour la génération de rendu en étendant l’option par défaut. Etendez le programme de travail prêt à l’emploi pour fournir différents formats et rendus. | <ul><li>Rendu FPO. </li> <li>Modification du format de fichier et de la résolution des images</li> <li> S’appliquer de manière conditionnelle aux types de fichiers configurés. </li> </ul> |
-| [profil personnalisé](#custom-config) | Configuré par les administrateurs via l’interface utilisateur pour utiliser du code personnalisé par l’intermédiaire de programmes de travail personnalisés pour appeler [!DNL Asset Compute Service]. Prend en charge des exigences plus complexes dans une méthode native de cloud et évolutive. | Voir les cas [d’utilisation](#custom-config)autorisés. |
+| [profil personnalisé](#custom-config) | Configuré par les administrateurs via l’interface utilisateur pour utiliser du code personnalisé par le biais de programmes de travail personnalisés pour appeler [Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). Prend en charge des exigences plus complexes dans une méthode native de cloud et évolutive. | Voir les cas [d’utilisation](#custom-config)autorisés. |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -118,7 +118,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 * Review from flow perspective shared in Jira ticket.
 -->
 
-Il [!DNL Asset Compute Service] prend en charge divers cas d’utilisation, tels que le traitement par défaut, le traitement de formats spécifiques à l’Adobe, tels que les fichiers Photoshop, et l’implémentation de traitements personnalisés ou spécifiques à l’organisation. La personnalisation du processus de mise à jour des actifs de gestion des actifs de gestion des actifs requise par le passé est gérée par défaut ou via la configuration des profils de traitement sur l’interface utilisateur. Si ce traitement ne répond pas aux besoins de l’entreprise, l’Adobe recommande de développer et d’utiliser Asset Compute Service pour étendre les fonctionnalités par défaut.
+Il [!DNL Asset Compute Service] prend en charge divers cas d’utilisation, tels que le traitement par défaut, le traitement de formats spécifiques à l’Adobe, tels que les fichiers Photoshop, et l’implémentation de traitements personnalisés ou spécifiques à l’organisation. La personnalisation du processus de mise à jour des actifs de gestion des actifs de gestion des actifs requise par le passé est gérée automatiquement ou via la configuration des profils de traitement. Si ces options de traitement ne répondent pas aux besoins de l&#39;entreprise, l&#39;Adobe recommande de développer et d&#39;utiliser [!DNL Asset Compute Service] pour étendre les fonctionnalités par défaut. Pour un aperçu, voir [comprendre l&#39;extensibilité et quand l&#39;utiliser](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Il [!DNL Asset Compute Service] prend en charge divers cas d’utilisation, tels
 
 Il peut transformer des formats d’image, de vidéo, de document et d’autres formats de fichier en différents rendus, y compris des miniatures, du texte extrait et des métadonnées et des archives.
 
-Les développeurs peuvent utiliser le [!DNL Asset Compute Service] pour créer des travailleurs personnalisés spécialisés qui répondent à des cas d’utilisation prédéfinis. [!DNL Experience Manager] peuvent appeler ces travailleurs personnalisés à partir de l’interface utilisateur en utilisant des profils personnalisés configurés par les administrateurs. [!DNL Asset Compute Service] prend en charge les cas d’utilisation suivants d’appel de services externes :
+Les développeurs peuvent utiliser le [!DNL Asset Compute Service] pour [créer des travailleurs](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html) personnalisés qui répondent aux cas d’utilisation pris en charge. [!DNL Experience Manager] peuvent appeler ces travailleurs personnalisés à partir de l’interface utilisateur en utilisant des profils personnalisés configurés par les administrateurs. [!DNL Asset Compute Service] prend en charge les cas d’utilisation suivants d’appel de services externes :
 
 * Utilisez [!DNL Adobe Photoshop]l’API [](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) ImageCutout et enregistrez le résultat en tant que rendu.
 * Appelez des systèmes tiers pour mettre à jour des données, par exemple un système PIM.
@@ -172,26 +172,26 @@ Lorsque des images de campagne sont téléchargées dans le dossier sur lequel c
 
 Créez les profils de traitement personnalisé supplémentaire et appliquez-les à des dossiers spécifiques pour qu’Experience Manager traite les ressources chargées ou mises à jour dans ces dossiers. Le profil de traitement standard intégré par défaut est toujours exécuté, mais il n’est pas visible dans l’interface utilisateur. Si vous ajoutez un profil personnalisé, les deux profils sont utilisés pour traiter les ressources chargées.
 
-Appliquez des profils de traitement aux dossiers en utilisant l’une des méthodes suivantes :
+Appliquez des profils de traitement aux dossiers en utilisant l’une des méthodes suivantes :
 
 * Administrators can select a processing profile definition in **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**, and use **[!UICONTROL Apply Profile to Folder(s)]** action. Cette action ouvre un navigateur de contenu qui vous permet d’accéder à des dossiers spécifiques, de les sélectionner et de confirmer l’application du profil.
-* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the correct processing profile for that folder. Pour enregistrer les modifications, cliquez sur **[!UICONTROL Enregistrer et fermer]**.
+* Les utilisateurs peuvent sélectionner un dossier dans l’interface utilisateur Assets, exécuter l’action **[!UICONTROL Propriétés]** pour ouvrir l’écran des propriétés du dossier, cliquer sur l’onglet **[!UICONTROL Profils de traitement]** puis, dans la liste déroulante, sélectionner le profil de traitement approprié pour ce dossier. Pour enregistrer les modifications, cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 
 >[!NOTE]
 >
 >Un seul profil de traitement peut être appliqué à chaque dossier. Pour générer davantage de rendus, ajoutez d’autres définitions de rendu au profil de traitement existant.
 
-Une fois qu’un profil de traitement a été appliqué à un dossier, toutes les nouvelles ressources chargées (ou mises à jour) dans ce dossier ou dans l’un de ses sous-dossiers sont traitées à l’aide du profil de traitement supplémentaire configuré. Ce traitement s’ajoute au profil par défaut standard. Si vous appliquez plusieurs profils à un dossier, les ressources chargées ou mises à jour sont traitées à l’aide de chacun d’eux.
+Une fois qu’un profil de traitement a été appliqué à un dossier, toutes les nouvelles ressources chargées (ou mises à jour) dans ce dossier ou dans l’un de ses sous-dossiers sont traitées à l’aide du profil de traitement supplémentaire configuré. Ce dernier s’ajoute au profil par défaut standard. Si vous appliquez plusieurs profils à un dossier, les ressources chargées ou mises à jour sont traitées à l’aide de chacun d’eux.
 
 >[!NOTE]
 >
->Un profil de traitement appliqué à un dossier fonctionne pour l’arborescence entière, mais peut être remplacé par un autre profil appliqué à un sous-dossier. Lorsque des ressources sont chargées dans un dossier, Experience Manager recherche un profil de traitement dans les propriétés du dossier conteneur. Si aucun dossier parent n’est appliqué, un dossier parent dans la hiérarchie est contrôlé pour qu’un profil de traitement s’applique.
+>Un profil de traitement appliqué à un dossier fonctionne pour l’ensemble de l’arborescence, mais il peut être remplacé par un autre qui est appliqué à un sous-dossier. Lorsque des ressources sont chargées dans un dossier, Experience Manager recherche un profil de traitement dans les propriétés du dossier conteneur. Si aucun dossier parent n’est appliqué, un dossier parent dans la hiérarchie est vérifié pour appliquer un profil de traitement.
 
 Tous les rendus générés sont disponibles dans la vue [!UICONTROL Rendus] du rail de gauche. Ouvrez la prévisualisation de ressources et ouvrez le rail de gauche pour accéder à la vue **[!UICONTROL Rendus]** . Les rendus spécifiques situés dans le profil de traitement, pour lesquels le type de la ressource correspond aux règles d’inclusion du type MIME, doivent être visibles et accessibles.
 
 ![rendus supplémentaires](assets/renditions-additional-renditions.png)
 
-*Figure : Exemple de deux rendus supplémentaires générés par un profil de traitement appliqué au dossier parent.*
+*Figure : Exemple de deux rendus supplémentaires générés par un profil de traitement appliqué au dossier parent.*
 
 ## Workflows de post-traitement {#post-processing-workflows}
 
@@ -238,3 +238,10 @@ Pour plus d’informations sur les étapes de workflow standard pouvant être ut
 
 * Pour la conception des workflows, prenez en compte vos besoins pour tous les types de rendus. Si vous ne prévoyez pas la nécessité d’un rendu futur, supprimez son étape de création dans le workflow. Il est impossible par la suite de supprimer les rendus en masse. Les rendus superflus peuvent occuper beaucoup d’espace de stockage suite à une utilisation prolongée d’[!DNL Experience Manager]. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Si plusieurs ressources sont concernées, vous pouvez, au choix, personnaliser [!DNL Experience Manager] pour supprimer des rendus spécifiques, ou supprimer les ressources et les charger à nouveau.
 * Actuellement, la prise en charge se limite à la génération de rendus. La génération de nouveaux actifs n’est pas prise en charge.
+
+>[!MORELIKETHIS]
+>
+>* [Présentation du service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)Asset Compute.
+>* [Comprendre l&#39;extensibilité et quand l&#39;utiliser](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
+>* [Comment créer des travailleurs](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html)personnalisés.
+
