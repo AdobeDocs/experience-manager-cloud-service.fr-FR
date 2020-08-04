@@ -2,7 +2,7 @@
 title: Personnalisation des composants principaux CIF
 description: Personnalisation des composants principaux CIF
 translation-type: tm+mt
-source-git-commit: dd6973085ae34dd6ea7296c36d0a14f699440269
+source-git-commit: c3cf472f5e207e7ca0788dc3e42105868d9bdf00
 workflow-type: tm+mt
 source-wordcount: '2520'
 ht-degree: 2%
@@ -149,7 +149,7 @@ Utilisez l&#39;IDE de votre choix pour [ouvrir le projet de démarrage télécha
    $ mvn -PautoInstallPackage clean install
    ```
 
-1. Dans le navigateur, revenez à la [page d&#39;accueil du magasin avant](http://localhost:4502/editor.html/content/acme/us/en.html) de l&#39;AEM. Actualisez et vous devriez voir qu’une &quot;nouvelle&quot; bannière s’affiche dans le coin supérieur droit du composant.
+1. Dans le navigateur, revenez à la [page d&#39;accueil du magasin avant](http://localhost:4502/editor.html/content/acme/us/en.html) dans AEM. Actualisez et vous devriez voir qu’une &quot;nouvelle&quot; bannière s’affiche dans le coin supérieur droit du composant.
 
    ![Nouvelle bannière étendue](/help/commerce-cloud/assets/customize-cif-components/new-banner-productteaser.png)
 
@@ -352,7 +352,7 @@ Les modèles Sling sont implémentés en tant que Java et se trouvent dans le mo
    -  data-sly-use.product="com.adobe.cq.commerce.core.components.models.productteaser.ProductTeaser"
    +  data-sly-use.product="com.acme.cif.core.models.MyProductTeaser"
       data-sly-use.actionsTpl="actions.html">
-       ...
+      ...
    ```
 
    Enregistrez les modifications dans `productteaser.html`.
