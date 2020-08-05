@@ -2,7 +2,7 @@
 title: Intégration à Adobe Target
 description: 'Intégration à Adobe Target '
 translation-type: tm+mt
-source-git-commit: 96e1d775a98584f12e4571c708955a9ded57e3c4
+source-git-commit: 7d3b5199333a60d69957819d874f8ce1bafdd797
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 10%
@@ -14,16 +14,16 @@ ht-degree: 10%
 
 Dans le cadre d’Adobe Marketing Cloud, Adobe Target vous permet d’améliorer la pertinence du contenu en effectuant un ciblage et des mesures sur tous les canaux. L&#39;intégration de l&#39;Adobe Target et de l&#39;AEM en tant que Cloud Service nécessite :
 
-* à l’aide de l’interface utilisateur tactile pour créer une configuration Analytics dans AEM en tant que Cloud Service (configuration IMS requise).
-* ajout et configuration de l&#39;Adobe Target en tant qu&#39;extension dans [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
+* à l’aide de l’interface utilisateur tactile pour créer une configuration de Cible dans AEM en tant que Cloud Service (configuration IMS requise).
+* ajout et configuration d’Adobe Target en tant qu’extension dans [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
-Le lancement d’Adobe est nécessaire pour gérer les propriétés côté client pour Analytics et la Cible dans les pages AEM (bibliothèques/balises JS). Ceci dit, l’intégration avec le lancement est nécessaire pour le &quot;ciblage d’expérience&quot;. Pour l’exportation des fragments d’expérience vers la Cible, vous n’avez besoin que de la configuration de l’Adobe Target et d’IMS.
+Le lancement d’Adobe est nécessaire pour gérer les propriétés côté client pour Analytics et la Cible dans les pages AEM (bibliothèques/balises JS). Ceci dit, l’intégration avec le lancement est nécessaire pour le &quot;ciblage d’expérience&quot;. Pour l’exportation des fragments d’expérience vers la Cible, vous n’avez besoin que de la configuration Adobe Target et IMS.
 
 >[!NOTE]
 >
 >Les clients Adobe Experience Manager as a Cloud Service qui ne disposent pas d’un compte Target existant peuvent demander l’accès au package Target Foundation pour Experience Cloud. Le package Foundation offre une utilisation limitée en volume de Target.
 
-## Création de la configuration de l&#39;Adobe Target {#create-configuration}
+## Création de la configuration Adobe Target {#create-configuration}
 
 1. Navigate to **Tools** → **Cloud Services**.
    ![](assets/cloudservice1.png "NavigationNavigation")
@@ -51,9 +51,9 @@ Pour modifier la configuration de la Cible, procédez comme suit :
 
 Pour appliquer une configuration d’interface utilisateur tactile à un site, accédez à : **Sites** → **Sélectionner n&#39;importe quelle page** du site → **Propriétés** → **Avancé** → Configuration → Sélectionner le client de configuration.****
 
-## Intégration de l&#39;Adobe Target sur les sites AEM à l&#39;aide du lancement d&#39;Adobe {#integrate-target-launch}
+## Intégration d’Adobe Target sur AEM sites à l’aide du lancement d’Adobe {#integrate-target-launch}
 
-AEM offres et intégration immédiate avec l’Experience Platform Launch. En ajoutant l&#39;extension d&#39;Adobe Target à l&#39;Experience Platform Launch, vous pouvez utiliser les fonctionnalités de l&#39;Adobe Target sur les pages Web AEM.Les bibliothèques de Cible ne seront rendues qu&#39;à l&#39;aide de Launch.
+AEM offres et intégration immédiate avec l’Experience Platform Launch. En ajoutant l&#39;extension Adobe Target à l&#39;Experience Platform Launch, vous pouvez utiliser les fonctionnalités de Adobe Target sur AEM page Web.Les bibliothèques de Cible ne seront rendues qu&#39;à l&#39;aide de Launch.
 
 >[!NOTE]
 >
