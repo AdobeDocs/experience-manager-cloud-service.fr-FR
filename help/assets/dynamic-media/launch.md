@@ -1,9 +1,9 @@
 ---
 title: Intégration des visionneuses Dynamic Media à Adobe Analytics et Adobe Launch
 description: L’extension Visionneuses Dynamic Media pour Adobe Launch, ainsi que la version 5.13 des Visionneuses Dynamic Media, permettent aux clients de Dynamic Media, Adobe Analytics et Adobe Launch d’utiliser des événements et des données spécifiques aux visionneuses Dynamic Media dans leur configuration Adobe Launch.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '6647'
 ht-degree: 100%
 
