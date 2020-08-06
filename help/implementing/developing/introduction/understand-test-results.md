@@ -176,7 +176,9 @@ La mesure Valeur de changement peut être l’une des mesures suivantes :
 #### Scores au niveau de la page {#page-level-scores}
 
 En analysant n’importe lequel des tests, vous obtenez des scores de niveau de page plus détaillés. L’utilisateur pourra voir comment les pages individuelles ont obtenu un score pour le test spécifique, ainsi que la variation par rapport à la précédente exécution du test.
-En cliquant sur les détails d&#39;une page donnée, vous obtiendrez des informations sur les éléments de la page qui ont été évalués et des conseils pour résoudre les problèmes en cas de détection d&#39;opportunités d&#39;amélioration. Les détails des tests et les conseils associés sont fournis par Google Lighthouse.
+
+Un clic sur les détails d&#39;une page donnée fournit des informations sur les éléments de la page qui ont été évalués et des conseils pour résoudre les problèmes si des opportunités d&#39;amélioration sont détectées. Les détails des tests et les conseils associés sont fournis par Google Lighthouse.
+
 ![](assets/page-level-scores.png)
 
 ## Exécution locale du test {#local-test-execution}
