@@ -2,7 +2,7 @@
 title: Présentation des résultats de test - Cloud Services
 description: Présentation des résultats de test - Cloud Services
 translation-type: tm+mt
-source-git-commit: 7f089e15deff87706e0ed3c38630b52832b277d4
+source-git-commit: 560c3436ae24e77e96ac3acd1987fe2f3dc3a9b5
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 66%
@@ -140,7 +140,7 @@ L’audit de contenu est une fonctionnalité disponible dans les oléoducs de pr
 
 Il valide le processus de déploiement et permet de s’assurer que les modifications sont déployées :
 
-1. Respecter les normes de base en matière de performances, d&#39;accessibilité, de bonnes pratiques, d&#39;optimisation du référencement (optimisation pour les moteurs de recherche) et de PWA (application Web progressive)
+1. Respectez les normes de base en matière de performances, d&#39;accessibilité, de bonnes pratiques, d&#39;optimisation du référencement (optimisation pour les moteurs de recherche) et de PWA (application Web progressive).
 
 1. N’incluez pas de régressions dans ces dimensions.
 
@@ -171,10 +171,13 @@ La mesure Valeur de changement peut être l’une des mesures suivantes :
 
 * **S/O** - aucun score précédent n’était disponible pour la comparaison
 
+   ![](assets/content-audit-test1.png)
+
 #### Scores au niveau de la page {#page-level-scores}
 
 En analysant n’importe lequel des tests, vous obtenez des scores de niveau de page plus détaillés. L’utilisateur pourra voir comment les pages individuelles ont obtenu un score pour le test spécifique, ainsi que la variation par rapport à la précédente exécution du test.
 En cliquant sur les détails d&#39;une page donnée, vous obtiendrez des informations sur les éléments de la page qui ont été évalués et des conseils pour résoudre les problèmes en cas de détection d&#39;opportunités d&#39;amélioration. Les détails des tests et les conseils associés sont fournis par Google Lighthouse.
+![](assets/page-level-scores.png)
 
 ## Exécution locale du test {#local-test-execution}
 
