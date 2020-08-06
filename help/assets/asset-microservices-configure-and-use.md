@@ -3,9 +3,9 @@ title: Configuration et utilisation des microservices de ressources pour le trai
 description: Découvrez comment configurer et utiliser les microservices de ressources basés sur le cloud pour traiter des ressources à grande échelle.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f51700dad918e5152c1af70686531d1ce5f544e7
+source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
 workflow-type: tm+mt
-source-wordcount: '2501'
+source-wordcount: '2522'
 ht-degree: 50%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 50%
 # Utiliser les microservices de ressources et les profils de traitement {#get-started-using-asset-microservices}
 
 <!--
-* Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
+* Current capabilities of asset microservices offered. If applications have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
 * How to access the microservices. UI. API. Is extending possible right now?
-* Detailed list of what file formats and what processing is supported by which workflows/workers process.
+* Detailed list of what file formats and what processing is supported by which workflows/application process.
 * How/where can admins check what's already configured and provisioned.
 * How to create new config or request for new provisioning/purchase.
 
@@ -47,8 +47,8 @@ Experience Manager permet d’effectuer les niveaux de traitement suivants.
 | Option | Description | Cas d’utilisation couverts |
 |---|---|---|
 | [Configuration par défaut](#default-config) | Il est disponible en l’état et ne peut pas être modifié. Cette configuration fournit une fonctionnalité de génération de rendu de base. | <ul> <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 px) </li> <li> Aperçu grand format (rendu web : 1 280 pixels) </li><li> extraction des métadonnées et du texte.</li></ul> |
-| [Configuration personnalisée](#standard-config) | Configuré par les administrateurs via l’interface utilisateur. Fournit davantage d’options pour la génération de rendu en étendant l’option par défaut. Etendez le programme de travail prêt à l’emploi pour fournir différents formats et rendus. | <ul><li>Rendu FPO. </li> <li>Modification du format de fichier et de la résolution des images</li> <li> S’appliquer de manière conditionnelle aux types de fichiers configurés. </li> </ul> |
-| [profil personnalisé](#custom-config) | Configuré par les administrateurs via l’interface utilisateur pour utiliser du code personnalisé par le biais de programmes de travail personnalisés pour appeler [Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). Prend en charge des exigences plus complexes dans une méthode native de cloud et évolutive. | Voir les cas [d’utilisation](#custom-config)autorisés. |
+| [Configuration personnalisée](#standard-config) | Configuré par les administrateurs via l’interface utilisateur. Fournit davantage d’options pour la génération de rendu en étendant l’option par défaut. Etendez l’option prête à l’emploi pour fournir différents formats et rendus. | <ul><li>Rendu FPO. </li> <li>Modification du format de fichier et de la résolution des images</li> <li> S’appliquer de manière conditionnelle aux types de fichiers configurés. </li> </ul> |
+| [profil personnalisé](#custom-config) | Configuré par les administrateurs via l’interface utilisateur pour utiliser du code personnalisé par le biais d’applications personnalisées afin d’appeler [Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). Prend en charge des exigences plus complexes dans une méthode native de cloud et évolutive. | Voir les cas [d’utilisation](#custom-config)autorisés. |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -113,7 +113,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 <!-- **TBD items**:
 
 * Overall cross-linking with the extensibility content.
-* Mention how to get URL of worker. Worker URL for Dev, Stage, and Prod environments.
+* Mention how to get URL of application. Application URL for Dev, Stage, and Prod environments.
 * Mention mapping of service parameters. Link to compute service article.
 * Review from flow perspective shared in Jira ticket.
 -->
@@ -122,11 +122,11 @@ Il [!DNL Asset Compute Service] prend en charge divers cas d’utilisation, tels
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser un intervenant personnalisé uniquement lorsque les besoins de l’entreprise ne peuvent pas être réalisés à l’aide des configurations par défaut ou du profil standard.
+>Adobe recommande d&#39;utiliser une application personnalisée uniquement lorsque les besoins de l&#39;entreprise ne peuvent pas être satisfaits à l&#39;aide des configurations par défaut ou du profil standard.
 
-Il peut transformer des formats d’image, de vidéo, de document et d’autres formats de fichier en différents rendus, y compris des miniatures, du texte extrait et des métadonnées et des archives.
+Il peut transformer des formats d’image, de vidéo, de document et d’autres formats de fichier en différents rendus, y compris des miniatures, du texte extrait, des métadonnées et des archives.
 
-Les développeurs peuvent utiliser le [!DNL Asset Compute Service] pour [créer des travailleurs](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html) personnalisés qui répondent aux cas d’utilisation pris en charge. [!DNL Experience Manager] peuvent appeler ces travailleurs personnalisés à partir de l’interface utilisateur en utilisant des profils personnalisés configurés par les administrateurs. [!DNL Asset Compute Service] prend en charge les cas d’utilisation suivants d’appel de services externes :
+Les développeurs peuvent utiliser le [!DNL Asset Compute Service] pour [créer des applications](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) personnalisées qui répondent aux cas d’utilisation pris en charge. [!DNL Experience Manager] peuvent appeler ces applications personnalisées à partir de l’interface utilisateur en utilisant des profils personnalisés configurés par les administrateurs. [!DNL Asset Compute Service] prend en charge les cas d’utilisation suivants d’appel de services externes :
 
 * Utilisez [!DNL Adobe Photoshop]l’API [](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) ImageCutout et enregistrez le résultat en tant que rendu.
 * Appelez des systèmes tiers pour mettre à jour des données, par exemple un système PIM.
@@ -135,22 +135,24 @@ Les développeurs peuvent utiliser le [!DNL Asset Compute Service] pour [créer 
 
 >[!NOTE]
 >
->Vous ne pouvez pas modifier les métadonnées standard à l’aide des travailleurs personnalisés. Vous pouvez uniquement modifier des métadonnées personnalisées.
+>Vous ne pouvez pas modifier les métadonnées standard à l’aide des applications personnalisées. Vous pouvez uniquement modifier des métadonnées personnalisées.
 
 ### Create a custom profile {#create-custom-profile}
 
 Pour créer un profil personnalisé, procédez comme suit :
 
 1. Les administrateurs ont accès à **[!UICONTROL Outils > Ressources > Profils]** de traitement. Cliquez sur **[!UICONTROL Créer]**.
-1. Click on **[!UICONTROL Custom]** tab. Click **[!UICONTROL Add New]**. Indiquez le nom de fichier souhaité pour le rendu.
+1. Cliquez sur l’onglet **[!UICONTROL Personnalisé]** . Click **[!UICONTROL Add New]**. Indiquez le nom de fichier souhaité pour le rendu.
 1. Fournissez les informations suivantes.
 
    * Nom de fichier de chaque rendu et extension de fichier prise en charge.
-   * [URL de point de terminaison d’une application](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-worker.html)personnalisée Firefox. L’application doit provenir de la même organisation que le compte du Experience Manager.
-   * Ajoutez Paramètres du service pour [transmettre des informations ou des paramètres supplémentaires au programme de travail](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html#pass-custom-parameters)personnalisé.
+   * [URL de point de terminaison d’une application](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html)personnalisée Firefox. L’application doit provenir de la même organisation que le compte du Experience Manager.
+   * Ajoutez Paramètres du service pour [transmettre des informations ou des paramètres supplémentaires à l’application](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)personnalisée.
    * Types MIME inclus et exclus pour définir l’applicabilité d’un profil.
 
    Cliquez sur **[!UICONTROL Enregistrer]**.
+
+L’application personnalisée récupère tous les fichiers fournis s’ils sont configurés avec un profil de traitement. L’application doit filtrer les fichiers.
 
 >[!CAUTION]
 >
@@ -160,11 +162,11 @@ Pour créer un profil personnalisé, procédez comme suit :
 
 Pour illustrer l’utilisation des profils personnalisés, prenons un exemple d’utilisation pour appliquer du texte personnalisé aux images de campagne. Vous pouvez créer un profil de traitement qui utilise l’API Photoshop pour modifier les images.
 
-L’intégration du service Asset Compute permet au Experience Manager de transmettre ces paramètres au travailleur personnalisé à l’aide du champ Paramètres [!UICONTROL du] service. Le programme de travail personnalisé appelle ensuite l’API Photoshop et transmet ces valeurs à l’API. Par exemple, vous pouvez transmettre le nom de la police, la couleur du texte, le poids de texte et la taille du texte pour ajouter le texte personnalisé aux images de campagne.
+L’intégration du service Asset Compute permet au Experience Manager de transmettre ces paramètres à l’application personnalisée à l’aide du champ Paramètres [!UICONTROL du] service. L’application personnalisée appelle ensuite l’API Photoshop et transmet ces valeurs à l’API. Par exemple, vous pouvez transmettre le nom de la police, la couleur du texte, le poids de texte et la taille du texte pour ajouter le texte personnalisé aux images de campagne.
 
 ![profil de traitement personnalisé](assets/custom-processing-profile.png)
 
-*Figure : Utilisez le champ Paramètres[!UICONTROL du]service pour transmettre des informations supplémentaires aux paramètres prédéfinis générés dans le programme de travail personnalisé.*
+*Figure : Utilisez le champ Paramètres[!UICONTROL du]service pour transmettre des informations supplémentaires aux paramètres prédéfinis générés dans l’application personnalisée.*
 
 Lorsque des images de campagne sont téléchargées dans le dossier sur lequel ce profil de traitement est appliqué, les images sont mises à jour avec `Jumanji` du texte en `Arial-BoldMT` police.
 
@@ -243,5 +245,5 @@ Pour plus d’informations sur les étapes de workflow standard pouvant être ut
 >
 >* [Présentation du service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)Asset Compute.
 >* [Comprendre l&#39;extensibilité et quand l&#39;utiliser](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
->* [Comment créer des travailleurs](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html)personnalisés.
+>* [Comment créer des applications](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html)personnalisées.
 
