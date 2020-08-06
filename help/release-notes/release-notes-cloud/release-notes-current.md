@@ -2,7 +2,7 @@
 title: Notes de mise à jour de la version 2020.8.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[ !DNL Adobe Experience Manager] en tant que notes de mise à jour Cloud Service pour la version 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: fe2439e506f84a191922416e9c99b496fd90016c
+source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 9%
@@ -28,7 +28,7 @@ La date de publication de la mise à jour 2020.8.0 de [!UICONTROL Cloud Manage
 
 * Les nouveaux environnements créés dans les programmes Ressources seront désormais automatiquement configurés avec Smart Content Services.
 
-* Les environnements en veille prolongée peuvent être désactivés à partir de la page d’aperçu de Cloud Manager.
+* Les environnements en veille prolongée peuvent être désactivés à partir de la page **Présentation** de Cloud Manager.
 
 * Les référentiels Maven privés liés à l’authentification sont désormais pris en charge.
 
@@ -52,7 +52,7 @@ La date de publication de la mise à jour 2020.8.0 de [!UICONTROL Cloud Manage
 
 * Il y avait une incohérence de couleur sur la page d&#39;aperçu.
 
-### Problèmes connus {#known-issues}
+### Problèmes connus {#known-issues-cm}
 
 * Les pages non valides sont incluses en plaçant la note moyenne d’audit du contenu en dessous de ce qu’elle devrait être.
 
