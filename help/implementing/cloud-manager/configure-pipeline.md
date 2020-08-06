@@ -2,10 +2,10 @@
 title: Configuration du pipeline CI/CD - Cloud Services
 description: Configuration du pipeline CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: 8d82bb8ee2b7aa234fc6b9b8efe23f04f4c66c87
+source-git-commit: 3b600d197b835dcd24dfc0c301de8d87d49b9fc5
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 97%
+source-wordcount: '676'
+ht-degree: 83%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 ## Présentation du flux {#understanding-the-flow}
 
-You can configure your production pipeline from the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
+Vous pouvez configurer votre pipeline à partir de la vignette **Paramètres du pipeline** dans l’interface utilisateur de [!UICONTROL Cloud Manager].
 
 Le responsable de déploiement est chargé de la configuration du pipeline. Pour ce faire, vous devez d’abord sélectionner une branche dans le **référentiel git**.
 
@@ -69,7 +69,14 @@ Pour configurer le comportement et les préférences de votre pipeline, procéde
    * **Continuer immédiatement** : si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Cette option émule essentiellement la validation manuelle de l’utilisateur à chaque échec.
 
 
-1. Cliquez sur **Suivant** pour accéder à l’onglet **Tests** et définir les critères de test du programme.
+1. Les paramètres du pipeline de production comprennent un troisième onglet intitulé Audit **de** contenu.
+
+   Cette option fournit un tableau pour les chemins d’URL qui doivent toujours être inclus dans l’audit de contenu. L’utilisateur peut saisir manuellement un chemin d’URL à inclure. 25 lignes au maximum peuvent être incluses. S&#39;il n&#39;y a pas de pages envoyées par l&#39;utilisateur dans cette section, la page d&#39;accueil du site sera incluse par défaut dans l&#39;audit de contenu.
+
+   >[!NOTE]
+   > Les pages configurées seront envoyées au service et évaluées en fonction des performances, de l&#39;accessibilité, de l&#39;optimisation du référencement (optimisation pour les moteurs de recherche), des bonnes pratiques et des tests de PWA (application Web progressive).
+
+   Pour plus d&#39;informations, consultez [Comprendre les résultats](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) de l&#39;audit de contenu.
 
    ![](assets/set-up-pipeline4.png)
 
