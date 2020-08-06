@@ -2,7 +2,7 @@
 title: Configuration du pipeline CI/CD - Cloud Services
 description: Configuration du pipeline CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: 9cfdf421db39dd08e8b772241f1f750fb73375b8
+source-git-commit: c21c4e8c71b9427dee2402815df1660a12af8bdc
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 72%
@@ -15,11 +15,15 @@ ht-degree: 72%
 Dans Cloud Manager, il existe deux types de pipeline :
 
 * **Pipelines**de production :
-Un pipeline de production ne peut être ajouté qu&#39;une fois qu&#39;un environnement de production et d&#39;étape est créé. Consultez la section [Configuration du pipeline](configure-pipeline.md#setting-up-the-pipeline) pour plus de détails.
+Un pipeline de production ne peut être ajouté qu&#39;une fois qu&#39;un environnement de production et d&#39;étape est créé.
+
+   Consultez la section [Configuration du pipeline](configure-pipeline.md#setting-up-the-pipeline) pour plus de détails.
 
 * **Pipelines hors production**:
 
-   Vous pouvez ajouter un pipeline hors production à partir de la page **Aperçu** de l’interface utilisateur de Cloud Manager. Pour plus d&#39;informations, consultez la section Tuyaux [pour la qualité du code et](configure-pipeline.md#non-production-pipelines) non-production.
+   Vous pouvez ajouter un pipeline hors production à partir de la page **Aperçu** de l’interface utilisateur de Cloud Manager.
+
+   Pour plus d&#39;informations, consultez la section Tuyaux [pour la qualité du code et](configure-pipeline.md#non-production-pipelines) non-production.
 
 ## Présentation du flux {#understanding-the-flow}
 
@@ -90,7 +94,7 @@ Pour configurer le comportement et les préférences de votre pipeline, procéde
 
    Cliquez sur **Ajouter le remplacement** de la nouvelle page pour fournir un chemin d’URL à inclure dans l’audit de contenu. Une fois le chemin ajouté, cliquez sur **Enregistrer**.
 
-   ![](assets/content-audit-2.png)
+   ![](assets/content-audit2.png)
 
 1. Cliquez sur **Enregistrer** dans l’écran **Modifier le tuyau** . La page **Aperçu** affiche désormais la carte **Déployer votre programme**. Cliquez sur le bouton **Déployer** pour déployer votre programme.
 
