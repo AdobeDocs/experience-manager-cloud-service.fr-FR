@@ -2,10 +2,10 @@
 title: Déploiement de votre code - Cloud Services
 description: Déploiement de votre code - Cloud Services
 translation-type: tm+mt
-source-git-commit: ebab226b7d45994cc00c1abe42d84dab47391f5d
+source-git-commit: fe2439e506f84a191922416e9c99b496fd90016c
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 100%
+source-wordcount: '994'
+ht-degree: 86%
 
 ---
 
@@ -50,10 +50,16 @@ Une fois que vous avez configuré le **pipeline** (référentiel, environnement 
       ![](assets/stage-deployment.png)
    Le **test dans l’environnement intermédiaire** comprend les étapes suivantes :
 
-   * Tests fonctionnels du produit : les exécutions du pipeline Cloud Manager prennent en charge l’exécution de tests sur l’environnement d’évaluation. Pour plus d’informations sur le processus de test, voir [Comprendre vos résultats de test](/help/implementing/developing/introduction/understand-test-results.md).
-   * Tests fonctionnels personnalisés : cette étape du pipeline est toujours présente et ne peut pas être ignorée. Cependant, si aucun fichier JAR de test n’est généré par la compilation, le test réussit par défaut. Pour plus d’informations sur le processus de test, voir [Comprendre vos résultats de test](/help/implementing/developing/introduction/understand-test-results.md).
+   * Test fonctionnel du produit : Les exécutions du pipeline Cloud Manager prendront en charge l’exécution de tests exécutés par rapport à l’environnement d’affichage.
+Refer to [Understand your Test Results](/help/implementing/developing/introduction/understand-test-results.md) for details on the testing process.
 
-      ![](assets/stage-testing.png)
+   * Tests fonctionnels personnalisés : cette étape du pipeline est toujours présente et ne peut pas être ignorée. Cependant, si aucun fichier JAR de test n’est généré par la compilation, le test réussit par défaut.\
+      Refer to [Understand your Test Results](/help/implementing/developing/introduction/understand-test-results.md) for details on the testing process.
+
+   * Audit de contenu : Cette étape du pipeline est toujours présente et ne peut pas être ignorée. Lorsqu’un pipeline de production est exécuté, une étape de contrôle du contenu est incluse après un test fonctionnel personnalisé qui exécutera les contrôles. Les pages configurées seront envoyées au service et évaluées. Les résultats sont informatifs et permettent à l’utilisateur de voir les scores et le changement entre les scores actuel et précédent. Cette connaissance est utile pour déterminer si une régression est introduite avec le déploiement actuel.
+Pour plus d&#39;informations, consultez [Comprendre les résultats](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) de l&#39;audit de contenu.
+
+      ![](assets/testing-tab.png)
 
 
 
