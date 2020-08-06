@@ -2,10 +2,10 @@
 title: Configuration du pipeline CI/CD - Cloud Services
 description: Configuration du pipeline CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: c21c4e8c71b9427dee2402815df1660a12af8bdc
+source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 72%
+source-wordcount: '793'
+ht-degree: 70%
 
 ---
 
@@ -14,10 +14,11 @@ ht-degree: 72%
 
 Dans Cloud Manager, il existe deux types de pipeline :
 
-* **Pipelines**de production :
-Un pipeline de production ne peut être ajouté qu&#39;une fois qu&#39;un environnement de production et d&#39;étape est créé.
+* **Pipelines** de production :
 
-   Consultez la section [Configuration du pipeline](configure-pipeline.md#setting-up-the-pipeline) pour plus de détails.
+   Un pipeline de production ne peut être ajouté qu&#39;une fois qu&#39;un environnement de production et d&#39;étape est créé.
+
+   Refer to [Setting up the Pipeline](configure-pipeline.md#setting-up-the-pipeline) for more details.
 
 * **Pipelines hors production**:
 
@@ -83,6 +84,8 @@ Pour configurer le comportement et les préférences de votre pipeline, procéde
 
 1. Les paramètres du pipeline de production comprennent un troisième onglet intitulé Audit **de** contenu.
 
+   ![](assets/content-audit-1.png)
+
    Cette option fournit un tableau pour les chemins d’URL qui doivent toujours être inclus dans l’audit de contenu. L’utilisateur peut saisir manuellement un chemin d’URL à inclure. 25 lignes au maximum peuvent être incluses. S&#39;il n&#39;y a pas de pages envoyées par l&#39;utilisateur dans cette section, la page d&#39;accueil du site sera incluse par défaut dans l&#39;audit de contenu.
 
    >[!NOTE]
@@ -90,9 +93,10 @@ Pour configurer le comportement et les préférences de votre pipeline, procéde
 
    Pour plus d&#39;informations, consultez [Comprendre les résultats](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) de l&#39;audit de contenu.
 
-   ![](assets/content-audit-1.png)
-
    Cliquez sur **Ajouter le remplacement** de la nouvelle page pour fournir un chemin d’URL à inclure dans l’audit de contenu. Une fois le chemin ajouté, cliquez sur **Enregistrer**.
+
+   >[!NOTE]
+   >Pour activer l’étape de contrôle du contenu, les utilisateurs doivent modifier le pipeline et, éventuellement, ajouter des pages. Consultez Problèmes [](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) connus pour plus de détails.
 
    ![](assets/content-audit2.png)
 
