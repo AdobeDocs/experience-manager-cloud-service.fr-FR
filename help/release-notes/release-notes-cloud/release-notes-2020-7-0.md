@@ -2,7 +2,7 @@
 title: Notes de mise à jour de la version 2020.7.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[ !DNL Adobe Experience Manager] en tant que notes de mise à jour Cloud Service pour la version 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: 7f089e15deff87706e0ed3c38630b52832b277d4
+source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 37%
@@ -34,7 +34,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 ### Nouveautés {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] est un service évolutif et extensible permettant de traiter les ressources. Les administrateurs peuvent configurer le Experience Manager pour qu’il appelle le travailleur personnalisé créé à l’aide du [!DNL Asset Compute Service]. Les développeurs peuvent utiliser ce service pour créer des agents personnalisés spécialisés qui répondent à des cas d’utilisation complexes. Ce service Web peut générer des miniatures pour différents types de fichiers, des rendus d&#39;images de haute qualité à partir de formats de fichiers Adobes, coder des vidéos (à venir), extraire des métadonnées, extraire du texte intégral comme précurseur de l&#39;indexation et exécuter un fichier par l&#39;intermédiaire de tous les services Sensei disponibles. voir [Utilisation des microservices de ressources et des profils](/help/assets/asset-microservices-configure-and-use.md)de traitement.
+* [!DNL Asset Compute Service] est un service évolutif et extensible permettant de traiter les ressources. Les administrateurs peuvent configurer le Experience Manager pour appeler les applications personnalisées créées à l’aide du [!DNL Asset Compute Service]. Les développeurs peuvent utiliser ce service pour créer des applications personnalisées spécialisées qui répondent à des cas d’utilisation complexes. Ce service Web peut générer des miniatures pour différents types de fichiers, des rendus d&#39;images de haute qualité à partir de formats de fichiers Adobes, coder des vidéos (à venir), extraire des métadonnées, extraire du texte intégral comme précurseur de l&#39;indexation et exécuter un fichier par l&#39;intermédiaire de tous les services Sensei disponibles. voir [Utilisation des microservices de ressources et des profils](/help/assets/asset-microservices-configure-and-use.md)de traitement.
 
 * La configuration initiale de [!DNL Dynamic Media] en [!DNL Experience Manager] tant que Cloud Service est améliorée pour être plus robuste. Il fournit désormais aux administrateurs la progression des processus.
 
