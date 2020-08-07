@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 2020.8.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[ !DNL Adobe Experience Manager] en tant que notes de mise à jour Cloud Service pour la version 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: 85f5262c2af7502e98fcb60b51b9b13d2c2c0f2c
+source-git-commit: dafdbffa96cd565379a700c696586222f43022c2
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '494'
 ht-degree: 8%
 
 ---
@@ -67,4 +67,18 @@ La date de publication de la mise à jour 2020.8.0 de [!UICONTROL Cloud Manage
 * L’onglet Audit de contenu affiche incorrectement l’URL de base à l’aide du domaine d’auteur et non du domaine de publication.
 
 * Pour activer l’étape de contrôle du contenu, les utilisateurs doivent modifier le pipeline et, éventuellement, ajouter des pages. Si aucune page n&#39;est ajoutée, la page d&#39;accueil fera l&#39;objet d&#39;un audit.
+
+## Outil de transfert de contenu {#content-transfer-tool}
+
+Suivez cette section pour en savoir plus sur les nouveautés et les mises à jour de la version 1.0.4 de l’outil de transfert de contenu.
+
+### Nouveautés {#what-is-new-ctt}
+
+* L’outil de transfert de contenu prend désormais en charge le magasin de données partagé S3.
+
+### Correctifs {#ctt-bug-fixes}
+
+* Ajout de délais d’attente supplémentaires pour que l’outil exécute les actions.
+
+* L’interface utilisateur des versions antérieures présentait parfois une extraction réussie, même si le journal présentait des erreurs.
 
