@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2020.8.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[ !DNL Adobe Experience Manager] en tant que notes de mise à jour Cloud Service pour la version 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
+source-git-commit: 19ad5567b94912eb4ea254b36f45feb46ad96255
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 9%
+source-wordcount: '438'
+ht-degree: 8%
 
 ---
 
@@ -13,6 +13,14 @@ ht-degree: 9%
 # Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
 
 La section suivante décrit les notes de mise à jour générales d’Experience Manager as a Cloud Service 2020.8.0.
+
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### Nouveautés {#what-is-new-commerce}
+
+* La fonction Console produit est désormais disponible. Cela permet aux spécialistes du marketing/auteurs d’AEM de vue et de parcourir les catégories et les produits stockés dans l’arrière-plan du commerce. La prise en charge des propriétés des catégories et des produits dans la Console produit est également fournie.
+
+* Les sélecteur de produits et de Catégories ont été améliorés pour permettre aux spécialistes du marketing de sélectionner un produit via le SKU ou de sélectionner une catégorie via l’ID de catégorie.
 
 ## Cloud Manager {#cloud-manager}
 
