@@ -2,7 +2,7 @@
 title: Prise en charge des fragments de contenu d’Adobe Experience Manager as a Cloud Service dans l’API Assets HTTP
 description: Découvrez la prise en charge des fragments de contenu Adobe Experience Manager as a Cloud Service dans l’API HTTP Assets.
 translation-type: tm+mt
-source-git-commit: 0dbec9bde44780958332f6f4cd82c05b4ec9206d
+source-git-commit: 6db201f00e8f304122ca8c037998b363ff102c1f
 workflow-type: tm+mt
 source-wordcount: '1891'
 ht-degree: 100%
@@ -181,7 +181,7 @@ La réponse contiendra les informations de pagination dans la section `propertie
 
 `GET /api/assets.json?offset=2&limit=3`
 
-```
+```json
 ...
 "properties": {
     ...
