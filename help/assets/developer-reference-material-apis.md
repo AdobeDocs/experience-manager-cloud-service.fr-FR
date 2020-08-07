@@ -2,11 +2,11 @@
 title: 'API Assets pour la gestion des ressources numériques dans Adobe Experience Manager as a Cloud Service '
 description: Les API Assets permettent d’effectuer des opérations CRUD (création, lecture, mise à jour, suppression) de base afin de gérer des ressources, y compris des fichiers binaires, des métadonnées, des rendus, des commentaires et des fragments de contenu.
 contentOwner: AG
-translation-type: ht
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
-source-wordcount: '1249'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 6db201f00e8f304122ca8c037998b363ff102c1f
+workflow-type: tm+mt
+source-wordcount: '1253'
+ht-degree: 98%
 
 ---
 
@@ -48,11 +48,7 @@ Cette méthode doit permettre une gestion plus évolutive et plus performante de
 
 ### Lancement du chargement {#initiate-upload}
 
-La première étape consiste à envoyer une requête HTTP POST au dossier où la ressource doit être créée ou mise à jour ; incluez le sélecteur `.initiateUpload.json` pour indiquer que la requête doit démarrer un chargement binaire. Par exemple, le chemin d’accès au dossier dans lequel la ressource doit être créée est `/assets/folder` :
-
-```
-POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
-```
+La première étape consiste à envoyer une requête HTTP POST au dossier où la ressource doit être créée ou mise à jour ; incluez le sélecteur `.initiateUpload.json` pour indiquer que la requête doit démarrer un chargement binaire. For example, the path to the folder where the asset should be created is `/assets/folder`. La demande du POST est `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`.
 
 Le corps de la requête doit être constitué de données de formulaire `application/x-www-form-urlencoded`, contenant les champs suivants :
 
@@ -61,7 +57,7 @@ Le corps de la requête doit être constitué de données de formulaire `applica
 
 Une seule requête peut être utilisée afin de lancer des chargements pour plusieurs fichiers binaires, à condition que chaque binaire contienne les champs obligatoires. En cas de succès, la requête renverra un code d’état `201` et un corps contenant des données JSON au format suivant :
 
-```
+```json
 {
     "completeURI": "(string)",
     "folderPath": (string)",
