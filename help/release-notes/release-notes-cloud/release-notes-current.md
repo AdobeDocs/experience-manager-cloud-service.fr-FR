@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 2020.8.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[ !DNL Adobe Experience Manager] en tant que notes de mise à jour Cloud Service pour la version 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: 19ad5567b94912eb4ea254b36f45feb46ad96255
+source-git-commit: 85f5262c2af7502e98fcb60b51b9b13d2c2c0f2c
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '440'
 ht-degree: 8%
 
 ---
@@ -48,7 +48,7 @@ La date de publication de la mise à jour 2020.8.0 de [!UICONTROL Cloud Manage
 
 * Dans certains cas, les exécutions de pipeline achevées n&#39;ont pas été enregistrées comme ayant été achevées, ce qui a empêché de nouvelles exécutions de pipeline.
 
-* Les exécutions de pipelines se retrouveraient parfois &quot;bloquées&quot; en raison de problèmes de communication interne.
+* Les exécutions de pipelines se retrouveraient parfois *bloquées* en raison de problèmes de communication interne.
 
 * Lors de la mise en service d’une nouvelle organisation, certains utilisateurs ayant des rôles d’administration autres que les administrateurs système ont reçu par erreur l’accès à Cloud Manager.
 
@@ -58,7 +58,7 @@ La date de publication de la mise à jour 2020.8.0 de [!UICONTROL Cloud Manage
 
 * L’interface utilisateur permettait par erreur de tenter une opération sur un environnement alors qu’elle était en cours de suppression.
 
-* Il y avait une incohérence de couleur sur la page d&#39;aperçu.
+* La page **Aperçu** de Cloud Manager ne correspondait pas aux couleurs.
 
 ### Problèmes connus {#known-issues-cm}
 
