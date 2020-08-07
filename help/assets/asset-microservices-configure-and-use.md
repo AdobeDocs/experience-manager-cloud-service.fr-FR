@@ -3,10 +3,10 @@ title: Configuration et utilisation des microservices de ressources pour le trai
 description: Découvrez comment configurer et utiliser les microservices de ressources basés sur le cloud pour traiter des ressources à grande échelle.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
+source-git-commit: 568e5d2906fe6c9415eebcab7e3e4e1fb4a738fa
 workflow-type: tm+mt
-source-wordcount: '2522'
-ht-degree: 50%
+source-wordcount: '2537'
+ht-degree: 49%
 
 ---
 
@@ -46,9 +46,9 @@ Experience Manager permet d’effectuer les niveaux de traitement suivants.
 
 | Option | Description | Cas d’utilisation couverts |
 |---|---|---|
-| [Configuration par défaut](#default-config) | Il est disponible en l’état et ne peut pas être modifié. Cette configuration fournit une fonctionnalité de génération de rendu de base. | <ul> <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 px) </li> <li> Aperçu grand format (rendu web : 1 280 pixels) </li><li> extraction des métadonnées et du texte.</li></ul> |
+| [Configuration par défaut](#default-config) | Il est disponible en l’état et ne peut pas être modifié. Cette configuration fournit une fonctionnalité de génération de rendu de base. | <ul> <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 px) </li> <li> Aperçu grand format (rendu web : 1 280 pixels) </li><li> Extraction des métadonnées et du texte.</li></ul> |
 | [Configuration personnalisée](#standard-config) | Configuré par les administrateurs via l’interface utilisateur. Fournit davantage d’options pour la génération de rendu en étendant l’option par défaut. Etendez l’option prête à l’emploi pour fournir différents formats et rendus. | <ul><li>Rendu FPO. </li> <li>Modification du format de fichier et de la résolution des images</li> <li> S’appliquer de manière conditionnelle aux types de fichiers configurés. </li> </ul> |
-| [profil personnalisé](#custom-config) | Configuré par les administrateurs via l’interface utilisateur pour utiliser du code personnalisé par le biais d’applications personnalisées afin d’appeler [Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). Prend en charge des exigences plus complexes dans une méthode native de cloud et évolutive. | Voir les cas [d’utilisation](#custom-config)autorisés. |
+| [Profil personnalisé](#custom-config) | Configuré par les administrateurs via l’interface utilisateur pour utiliser du code personnalisé par le biais d’applications personnalisées afin d’appeler [Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). Prend en charge des exigences plus complexes dans une méthode native de cloud et évolutive. | Voir les cas [d’utilisation](#custom-config)autorisés. |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -110,19 +110,11 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## Cas d’utilisation et de profil personnalisés {#custom-config}
 
-<!-- **TBD items**:
-
-* Overall cross-linking with the extensibility content.
-* Mention how to get URL of application. Application URL for Dev, Stage, and Prod environments.
-* Mention mapping of service parameters. Link to compute service article.
-* Review from flow perspective shared in Jira ticket.
--->
-
 Il [!DNL Asset Compute Service] prend en charge divers cas d’utilisation, tels que le traitement par défaut, le traitement de formats spécifiques à l’Adobe, tels que les fichiers Photoshop, et l’implémentation de traitements personnalisés ou spécifiques à l’organisation. La personnalisation du processus de mise à jour des actifs de gestion des actifs de gestion des actifs requise par le passé est gérée automatiquement ou via la configuration des profils de traitement. Si ces options de traitement ne répondent pas aux besoins de l&#39;entreprise, l&#39;Adobe recommande de développer et d&#39;utiliser [!DNL Asset Compute Service] pour étendre les fonctionnalités par défaut. Pour un aperçu, voir [comprendre l&#39;extensibilité et quand l&#39;utiliser](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
 
 >[!NOTE]
 >
->Adobe recommande d&#39;utiliser une application personnalisée uniquement lorsque les besoins de l&#39;entreprise ne peuvent pas être satisfaits à l&#39;aide des configurations par défaut ou du profil standard.
+>adobe recommande d&#39;utiliser une application personnalisée uniquement lorsque les besoins de l&#39;entreprise ne peuvent pas être satisfaits à l&#39;aide des configurations par défaut ou du profil standard.
 
 Il peut transformer des formats d’image, de vidéo, de document et d’autres formats de fichier en différents rendus, y compris des miniatures, du texte extrait, des métadonnées et des archives.
 
@@ -147,12 +139,12 @@ Pour créer un profil personnalisé, procédez comme suit :
 
    * Nom de fichier de chaque rendu et extension de fichier prise en charge.
    * [URL de point de terminaison d’une application](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html)personnalisée Firefox. L’application doit provenir de la même organisation que le compte du Experience Manager.
-   * Ajoutez Paramètres du service pour [transmettre des informations ou des paramètres supplémentaires à l’application](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)personnalisée.
-   * Types MIME inclus et exclus pour définir l’applicabilité d’un profil.
+   * ajoutez Paramètres du service pour [transmettre des informations ou des paramètres supplémentaires à l’application](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)personnalisée.
+   * Types MIME inclus et exclus pour limiter le traitement à quelques formats de fichier spécifiques.
 
    Cliquez sur **[!UICONTROL Enregistrer]**.
 
-L’application personnalisée récupère tous les fichiers fournis s’ils sont configurés avec un profil de traitement. L’application doit filtrer les fichiers.
+Les applications personnalisées sont des applications [Project Firefly](https://github.com/AdobeDocs/project-firefly) sans en-tête. L’application personnalisée récupère tous les fichiers fournis s’ils sont configurés avec un profil de traitement. L’application doit filtrer les fichiers.
 
 >[!CAUTION]
 >
