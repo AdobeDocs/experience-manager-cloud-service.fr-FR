@@ -1,11 +1,11 @@
 ---
-title: API HTTP Assets  in [!DNL Adobe Experience Manager].
+title: API HTTP Assets  dans [!DNL Adobe Experience Manager].
 description: Créer, lire, mettre à jour, supprimer et gérer des ressources numériques à l’aide de l’API HTTP dans [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b96e976b5a2aaff90d7317360b0325dcae21ff26
+source-git-commit: 1a307b065beff721cad35def4f812c3bee8eb8dd
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1476'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,7 @@ Pour accéder à l’API, procédez comme suit :
 
 La réponse de l’API est un fichier JSON pour certains types MIME et un code de réponse pour tous les types MIME. La réponse JSON est facultative et peut ne pas être disponible, par exemple pour les fichiers PDF. Vous pouvez faire appel au code de réponse pour d’autres analyses ou actions.
 
-Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne sont plus disponibles via l’interface web [!DNL Assets] ou par le biais de l’API HTTP. L’API renvoie un message d’erreur 404 si l’[!UICONTROL heure d’activation] se situe dans le futur ou si l’[!UICONTROL heure de désactivation] se situe dans le passé.
+Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne sont plus disponibles via l’interface web [!DNL Assets] ni par le biais de l’API HTTP. L’API renvoie un message d’erreur 404 si l’[!UICONTROL heure d’activation] se situe dans le futur ou si l’[!UICONTROL heure de désactivation] se situe dans le passé.
 
 >[!NOTE]
 >
@@ -68,16 +68,18 @@ Les dossiers **Liens** présentent trois liens :
 Dans [!DNL Experience Manager], une ressource contient les éléments suivants :
 
 * Propriétés et métadonnées de la ressource.
-* Plusieurs rendus tels que le rendu d’origine (qui est la ressource transférée initialement), une vignette et divers autres rendus. Les rendus supplémentaires peuvent être des images de tailles différentes, différents codages vidéo ou des pages extraites de fichiers PDF ou Adobe InDesign.
+* Plusieurs rendus tels que le rendu d’origine (qui est la ressource chargée initialement), une miniature et divers autres rendus. Les rendus supplémentaires peuvent être des images de tailles différentes, différents codages vidéo ou des pages extraites de fichiers PDF ou Adobe InDesign.
 * Commentaires facultatifs.
 
-Pour plus d’informations sur les éléments des fragments de contenu, voir la section [Prise en charge de fragments de contenu dans l’API HTTP Experience Manager Assets](/help/assets/assets-api-content-fragments.md).
+Pour plus d’informations sur les éléments des fragments de contenu, voir [Prise en charge de fragments de contenu dans l’API HTTP Experience Manager Assets](/help/assets/assets-api-content-fragments.md).
 
 Dans [!DNL Experience Manager], un dossier comprend les composants suivants :
 
 * Entités : les enfants des ressources sont ses rendus.
 * Propriétés.
 * Liens.
+
+## Fonctionnalités disponibles {#available-features}
 
 L’API Assets HTTP offre les fonctionnalités suivantes :
 
@@ -116,7 +118,7 @@ Récupère une représentation Siren d’un dossier existant et de ses entités 
 
 * 200 - OK - succès.
 * 404 - INTROUVABLE - le dossier n’existe pas ou n’est pas accessible.
-* 500 - ERREUR DU SERVEUR INTERNE - si une autre erreur s’est produite.
+* 500 - ERREUR INTERNE DU SERVEUR - si une autre erreur s’est produite.
 
 **Réponse** : la classe de l’entité renvoyée est une ressource ou un dossier. Les propriétés des entités contenues représentent un sous-ensemble du jeu complet des propriétés de chaque entité. Pour obtenir une représentation complète de l’entité, les clients doivent récupérer le contenu de l’URL vers laquelle pointe le lien avec l’élément `rel` `self`.
 
@@ -138,7 +140,7 @@ Un appel d’API échoue avec un code de réponse `500` si le nœud parent du ch
 * 201 - CRÉÉ - en cas de réussite de la création.
 * 409 - CONFLIT - si un dossier existe déjà.
 * 412 - ÉCHEC DE LA PRÉCONDITION - si la collection racine est introuvable ou inaccessible.
-* 500 - ERREUR DU SERVEUR INTERNE - si une autre erreur s’est produite.
+* 500 - ERREUR INTERNE DU SERVEUR - si une autre erreur s’est produite.
 
 ## Créer une ressource {#create-an-asset}
 
@@ -159,7 +161,7 @@ Met à jour les propriétés de métadonnées d’une ressource. Si vous mettez 
 * 200 - OK - si la ressource a été mise à jour avec succès.
 * 404 - INTROUVABLE - si la ressource n’a pas été trouvée ou est inaccessible à l’aide de l’URI fourni.
 * 412 - ÉCHEC DE LA PRÉCONDITION - si la collection racine est introuvable ou inaccessible.
-* 500 - ERREUR DU SERVEUR INTERNE - si une autre erreur s’est produite.
+* 500 - ERREUR INTERNE DU SERVEUR - si une autre erreur s’est produite.
 
 ## Créer un rendu de ressource {#create-an-asset-rendition}
 
@@ -177,7 +179,7 @@ Créer un rendu pour une ressource. Si le nom de paramètre de requête n’est 
 * 201 - CRÉÉ - si le rendu a été créé avec succès.
 * 404 - INTROUVABLE - si la ressource n’a pas été trouvée ou est inaccessible à l’aide de l’URI fourni.
 * 412 - ÉCHEC DE LA PRÉCONDITION - si la collection racine est introuvable ou inaccessible.
-* 500 - ERREUR DU SERVEUR INTERNE - si une autre erreur s’est produite.
+* 500 - ERREUR INTERNE DU SERVEUR - si une autre erreur s’est produite.
 
 ## Mettre à jour un rendu de ressource {#update-an-asset-rendition}
 
@@ -190,7 +192,7 @@ Met à jour et remplace le rendu d’une ressource par les nouvelles données bi
 * 200 - OK - si le rendu a été mis à jour avec succès.
 * 404 - INTROUVABLE - si la ressource n’a pas été trouvée ou est inaccessible à l’aide de l’URI fourni.
 * 412 - ÉCHEC DE LA PRÉCONDITION - si la collection racine est introuvable ou inaccessible.
-* 500 - ERREUR DU SERVEUR INTERNE - si une autre erreur s’est produite.
+* 500 - ERREUR INTERNE DU SERVEUR - si une autre erreur s’est produite.
 
 ## Ajouter un commentaire pour une ressource {#create-an-asset-comment}
 
@@ -205,7 +207,7 @@ Crée un commentaire de ressource.
 * 201 - CRÉÉ - si le commentaire a été créé avec succès.
 * 404 - INTROUVABLE - si la ressource n’a pas été trouvée ou est inaccessible à l’aide de l’URI fourni.
 * 412 - ÉCHEC DE LA PRÉCONDITION - si la collection racine est introuvable ou inaccessible.
-* 500 - ERREUR DU SERVEUR INTERNE - si une autre erreur s’est produite.
+* 500 - ERREUR INTERNE DU SERVEUR - si une autre erreur s’est produite.
 
 ## Copier un dossier ou une ressource {#copy-a-folder-or-asset}
 
@@ -213,7 +215,7 @@ Copie un fichier ou une ressource disponible à l’emplacement indiqué vers un
 
 **En-têtes de la requête** : les paramètres sont les suivants :
 
-* `X-Destination` - un nouvel URI de destination appartenant au périmètre de la solution d’API pour copier la ressource.
+* `X-Destination` - un nouvel URI de destination appartenant à la portée de la solution d’API pour copier la ressource.
 * `X-Depth` - `infinity` ou `0`. L’utilisation du code `0` entraîne la copie exclusive de la ressource et de ses propriétés, mais pas de ses enfants.
 * `X-Overwrite` - utilisez le code `F` pour éviter le remplacement d’une ressource à la destination existante.
 
@@ -221,10 +223,10 @@ Copie un fichier ou une ressource disponible à l’emplacement indiqué vers un
 
 **Codes de réponse** : les codes de réponse sont les suivants :
 
-* 201 - CRÉÉ - si le dossier/la ressource a été copié(e) vers une destination inexistante.
-* 204 - AUCUN CONTENU - si le dossier/la ressource a été copié(e) vers une destination existante.
+* 201 - CRÉÉ - si le dossier ou la ressource a été copié vers une destination inexistante.
+* 204 - AUCUN CONTENU - si le dossier ou la ressource a été copié vers une destination existante.
 * 412 - ÉCHEC DE LA PRÉCONDITION - s’il manque un en-tête de requête.
-* 500 - ERREUR DU SERVEUR INTERNE - si une autre erreur s’est produite.
+* 500 - ERREUR INTERNE DU SERVEUR - si une autre erreur s’est produite.
 
 ## Déplacer un dossier ou une ressource {#move-a-folder-or-asset}
 
@@ -232,7 +234,7 @@ Déplace un dossier ou une ressource de l’emplacement indiqué vers une nouvel
 
 **En-têtes de la requête** : les paramètres sont les suivants :
 
-* `X-Destination` - un nouvel URI de destination appartenant au périmètre de la solution d’API pour copier la ressource.
+* `X-Destination` - un nouvel URI de destination appartenant à la portée de la solution d’API pour copier la ressource.
 * `X-Depth` - `infinity` ou `0`. L’utilisation du code `0` entraîne la copie exclusive de la ressource et de ses propriétés, mais pas de ses enfants.
 * `X-Overwrite` - Utiliser soit `T` pour forcer la suppression d’une ressource existante, soit `F` pour éviter le remplacement d’une ressource existante.
 
@@ -240,10 +242,10 @@ Déplace un dossier ou une ressource de l’emplacement indiqué vers une nouvel
 
 **Codes de réponse** : les codes de réponse sont les suivants :
 
-* 201 - CRÉÉ - si le dossier/la ressource a été copié(e) vers une destination inexistante.
-* 204 - AUCUN CONTENU - si le dossier/la ressource a été copié(e) vers une destination existante.
+* 201 - CRÉÉ - si le dossier ou la ressource a été copié vers une destination inexistante.
+* 204 - AUCUN CONTENU - si le dossier ou la ressource a été copié vers une destination existante.
 * 412 - ÉCHEC DE LA PRÉCONDITION - s’il manque un en-tête de requête.
-* 500 - ERREUR DU SERVEUR INTERNE - si une autre erreur s’est produite.
+* 500 - ERREUR INTERNE DU SERVEUR - si une autre erreur s’est produite.
 
 ## Supprimer un dossier, une ressource ou un rendu {#delete-a-folder-asset-or-rendition}
 
@@ -259,4 +261,4 @@ Supprime une ressource (arborescence) pour le chemin indiqué.
 
 * 200 - OK - si le dossier a été supprimé avec succès.
 * 412 - ÉCHEC DE LA PRÉCONDITION - si la collection racine est introuvable ou inaccessible.
-* 500 - ERREUR DU SERVEUR INTERNE - si une autre erreur s’est produite.
+* 500 - ERREUR INTERNE DU SERVEUR - si une autre erreur s’est produite.
