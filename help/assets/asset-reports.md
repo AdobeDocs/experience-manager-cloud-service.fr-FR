@@ -1,23 +1,23 @@
 ---
-title: Rapports de ressources
-description: Cet article décrit les différents rapports relatifs aux ressources dans AEM Assets et comment les générer.
+title: Rapports sur l’utilisation et le partage de vos ressources numériques.
+description: Rapports sur vos ressources [!DNL Adobe Experience Manager Assets] dans lesquels vous pouvez comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: ab9a3bfa3536e25243e9752f9f034e31a57e136c
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 100%
+source-wordcount: '1011'
+ht-degree: 49%
 
 ---
 
 
 # Rapports de ressources  {#asset-reports}
 
-La création de rapports de ressources est un outil essentiel pour évaluer l’utilité de votre déploiement Adobe Experience Manager (AEM) Assets. Avec AEM Assets, vous pouvez générer divers rapports concernant vos ressources numériques. Les rapports fournissent des informations utiles concernant votre utilisation du système, la façon dont les utilisateurs interagissent avec les ressources et la façon dont les ressources sont téléchargées et partagées.
+Le rapports des ressources vous permet d’évaluer l’utilité de votre [!DNL Adobe Experience Manager Assets] déploiement. Vous [!DNL Assets]pouvez générer divers rapports pour vos ressources numériques. Les rapports fournissent des informations utiles concernant votre utilisation du système, la façon dont les utilisateurs interagissent avec les ressources et la façon dont les ressources sont téléchargées et partagées.
 
-Utilisez les informations figurant dans les rapports de manière à obtenir des mesures de succès essentielles pour évaluer l’adoption d’AEM Assets au sein de votre entreprise et par les clients.
+Use the information in the reports to derive key success metrics to measure the adoption of [!DNL Assets] within your enterprise and by customers.
 
-La structure de création de rapports dans AEM Assets exploite des tâches Sling de façon à traiter de manière asynchrone les demandes de rapports en respectant l’ordre. Elle est extensible pour les référentiels de grande taille. Le traitement asynchrone des rapports permet de générer des rapports de manière plus efficace et rapide.
+The [!DNL Assets] reporting framework uses [!DNL Sling] jobs to asynchronously process report requests in an ordered manner. Elle est extensible pour les référentiels de grande taille. Le traitement asynchrone des rapports permet de générer des rapports de manière plus efficace et rapide.
 
 L’interface de gestion de rapports est intuitive et inclut des options et des commandes précises pour accéder aux rapports archivés, ainsi qu’afficher les états d’exécution des rapports (réussite, échec et en file d’attente).
 
@@ -25,28 +25,28 @@ Lorsqu’un rapport est généré, vous êtes averti par <!-- through an email (
 
 ## Génération de rapports {#generate-reports}
 
-AEM Assets génère les rapports standard suivants :
+[!DNL Experience Manager Assets] génère les rapports standard suivants pour vous :
 
 * Charger
 * Téléchargement
 * Expiration
 * Modification
-* Publier
-* Publier sur Brand Portal
+* Publication 
+* [!DNL Brand Portal] publish
 * Utilisation du disque
 * Fichiers
 * Partage de liens
 
-Les administrateurs d’AEM peuvent facilement générer et personnaliser ces rapports pour votre implémentation. Un administrateur peut procéder comme suit pour générer un rapport :
+[!DNL Adobe Experience Manager] les administrateurs peuvent facilement générer et personnaliser ces rapports pour votre mise en oeuvre. Un administrateur peut procéder comme suit pour générer un rapport :
 
-1. Appuyez/cliquez sur le logo AEM, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
+1. Dans [!DNL Experience Manager] l’interface, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
 
-   ![navigation](assets/navigation.png)
+   ![Page Outils pour parcourir le rapport des ressources](assets/navigation.png)
 
-1. Sur la page Rapports de ressources, appuyez/cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
-1. Sur la page **[!UICONTROL Créer un rapport]**, sélectionnez le rapport que vous souhaitez créer, puis appuyez/cliquez sur **[!UICONTROL Suivant]**.
+1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
+1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**.
 
-   ![choose_report](assets/choose_report.png)
+   ![Sélectionner le type de rapport](assets/choose_report.png)
 
    >[!NOTE]
    >
@@ -54,11 +54,15 @@ Les administrateurs d’AEM peuvent facilement générer et personnaliser ces ra
 
    >[!NOTE]
    >
-   >Par défaut, les fragments de contenu et les partages de lien sont inclus dans le rapport Ressource téléchargée. Sélectionnez l’option appropriée pour créer un rapport de partages de lien ou pour exclure les fragments de contenu du rapport de téléchargement.
+   >By default, the Content Fragments and link shares are included in the Asset [!UICONTROL Download] report. Sélectionnez l’option appropriée pour créer un rapport de partages de lien ou pour exclure les fragments de contenu du rapport de téléchargement.
 
-1. Configurez les détails du rapport, tels que le titre, la description, la miniature et le chemin du dossier dans le référentiel CRX où le rapport est stocké. Par défaut, le chemin du dossier est */content/dam*. Vous pouvez spécifier un autre chemin.
+   >[!NOTE]
+   >
+   >Le rapport [!UICONTROL Télécharger] affiche uniquement les détails des ressources téléchargées après sélection individuelle ou téléchargées à l’aide de l’action rapide. Toutefois, il n’inclut pas les détails des ressources se trouvant dans un dossier téléchargé.
 
-   ![report_configuration](assets/report_configuration.png)
+1. Configurez les détails du rapport, tels que le titre, la description, la miniature et le chemin du dossier dans le référentiel CRX où le rapport est stocké. By default, the folder path is `/content/dam`. Vous pouvez spécifier un autre chemin.
+
+   ![Page pour ajouter des détails sur le rapport](assets/report_configuration.png)
 
    Sélectionnez la période de votre rapport.
 
@@ -66,46 +70,42 @@ Les administrateurs d’AEM peuvent facilement générer et personnaliser ces ra
 
    >[!NOTE]
    >
-   >Si vous choisissez de planifier le rapport à une date ultérieure, veillez à spécifier la date et l’heure actuelles dans le champ de date et heure. Si vous ne spécifiez aucune valeur, le moteur de création de rapports traite le rapport comme devant être généré immédiatement.
+   >Si vous choisissez de planifier le rapport ultérieurement, veillez à spécifier la date et l’heure dans les champs Date et heure. Si vous ne spécifiez aucune valeur, le moteur de création de rapports traite le rapport comme devant être généré immédiatement.
 
-   Les champs de configuration peuvent varier en fonction du type de rapport que vous créez.
-
-   Par exemple, le rapport **[!UICONTROL Utilisation du disque]** fournit des options pour inclure les rendus de ressources lors du calcul de l’espace disque utilisé par les ressources. Vous pouvez choisir d’inclure ou d’exclure les ressources figurant dans les sous-dossiers pour le calcul de l’utilisation du disque.
+   Les champs de configuration peuvent varier en fonction du type de rapport que vous créez. Par exemple, le rapport **[!UICONTROL Utilisation du disque]** fournit des options pour inclure les rendus de ressources lors du calcul de l’espace disque utilisé par les ressources. Vous pouvez choisir d’inclure ou d’exclure des fichiers dans des sous-dossiers pour le calcul de l’utilisation du disque.
 
    >[!NOTE]
    >
    >Le rapport **[!UICONTROL Utilisation du disque]** n’inclut pas les champs de période, car il indique uniquement l’utilisation actuelle de l’espace disque.
 
-   ![disk_usage_configuration](assets/disk_usage_configuration.png)
+   ![Page Détails du rapport d&#39;utilisation des disques](assets/disk_usage_configuration.png)
 
-   Lorsque vous créez le rapport **[!UICONTROL Fichiers]**, vous pouvez inclure ou exclure les sous-dossiers. Cependant, vous ne pouvez pas inclure les rendus de ressources dans ce rapport.
+   When you create the **[!UICONTROL Files]** report, you can include/exclude sub-folders. Cependant, vous ne pouvez pas inclure les rendus de ressources dans ce rapport.
 
-   ![files_report](assets/files_report.png)
+   ![Page Détails du rapport Fichiers](assets/files_report.png)
 
-   Le rapport **[!UICONTROL Partage de liens]** affiche des URL vers des ressources partagées avec des utilisateurs externes à partir d’AEM Assets. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> Les colonnes ne sont pas personnalisables.
+   The **[!UICONTROL Link Share]** report displays URLs to assets that are shared with external users from within [!DNL Assets]. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> Les colonnes ne sont pas personnalisables.
 
-   Le rapport **[!UICONTROL Partage de liens]** n’inclut pas d’options pour les sous-dossiers et les rendus, car il publie seulement les URL partagées qui apparaissent sous */var/dam/share*.
+   The **[!UICONTROL Link Share]** report, does not include options for sub-folders and renditions because it merely publishes the shared URLs that appear under `/var/dam/share`.
 
-   ![link_share](assets/link_share.png)
+   ![Page de détails du rapport Partage de liens](assets/link_share.png)
 
-1. Appuyez/cliquez sur **[!UICONTROL Suivant]** dans la barre d’outils.
+1. Click **[!UICONTROL Next]** from the toolbar.
 
-1. Sur la page **[!UICONTROL Configurer les colonnes]**, certaines colonnes sont sélectionnées pour apparaître dans le rapport par défaut. Vous pouvez sélectionner des colonnes supplémentaires. Désélectionnez une colonne sélectionnée pour l’exclure du rapport.
+1. Sur la page **[!UICONTROL Configurer les colonnes]**, certaines colonnes sont sélectionnées pour apparaître dans le rapport par défaut. Vous pouvez sélectionner d’autres colonnes. Désélectionnez une colonne sélectionnée pour l’exclure du rapport.
 
-   ![configure_columns](assets/configure_columns.png)
+   ![Sélectionner ou désélectionner des colonnes de rapports](assets/configure_columns.png)
 
-   Pour afficher un chemin de propriété ou un nom de colonne personnalisé, configurez les propriétés du binaire de ressource sous le nœud jcr:content dans CRX. Vous pouvez également l’ajouter dans le sélecteur de chemin de propriété.
+   To display a custom column name or property path, configure the properties for the asset binary under the `jcr:content` node in CRX. Vous pouvez également l’ajouter dans le sélecteur de chemin de propriété.
 
-   ![custom_columns](assets/custom_columns.png)
+   ![Sélectionner ou désélectionner des colonnes de rapports](assets/custom_columns.png)
 
-1. Appuyez/cliquez sur **[!UICONTROL Créer]** dans la barre d’outils. Un message indique que la génération du rapport a été lancée.
-1. Sur la page Rapports de ressources, l’état de la génération des rapports repose sur l’état actuel de la tâche de rapport, par exemple, Réussite, Échec, En file d’attente ou Planifié. Le même état apparaît dans la boîte de réception des notifications.
+1. Click **[!UICONTROL Create]** from the toolbar. Un message indique que la génération du rapport a été lancée.
+1. On the [!UICONTROL Asset Reports] page, the report generation status is based on the current state of the report job, for example [!UICONTROL Success], [!UICONTROL Failed], [!UICONTROL Queued], or [!UICONTROL Scheduled]. Le même état s&#39;affiche dans la boîte de réception des notifications. Pour vue à la page du rapport, cliquez sur le lien du rapport. Alternatively, select the report, and click **[!UICONTROL View]** from the toolbar.
 
-   Pour afficher la page du rapport, appuyez/cliquez sur le lien du rapport. Vous pouvez également sélectionner le rapport et appuyer/cliquer sur l’icône Afficher de la barre d’outils.
+   ![Un rapport généré](assets/report_page.png)
 
-   ![report_page](assets/report_page.png)
-
-   Appuyez/cliquez sur l’icône Télécharger de la barre d’outils pour télécharger le rapport au format CSV.
+   Click **[!UICONTROL Download]** from the toolbar to download the report in CSV format.
 
 ## Ajout de colonnes personnalisées  {#add-custom-columns}
 
@@ -115,31 +115,29 @@ Vous pouvez ajouter des colonnes personnalisées aux rapports suivants pour affi
 * Téléchargement
 * Expiration
 * Modification
-* Publier
-* Publier sur Brand Portal
+* Publication 
+* [!DNL Brand Portal] publish
 * Fichiers
 
-1. Appuyez/cliquez sur le logo AEM, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
-1. Sur la page Rapports de ressources, appuyez/cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
+Pour ajouter des colonnes personnalisées à ces rapports, procédez comme suit :
 
-1. Sur la page **[!UICONTROL Créer un rapport]**, sélectionnez le rapport que vous souhaitez créer, puis appuyez/cliquez sur **[!UICONTROL Suivant]**.
-1. Configurez les détails du rapport, tels que le titre, la description, la miniature, le chemin du dossier, la période, et ainsi de suite.
+1. Dans le [!DNL Manager interface]menu, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
+1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
+
+1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**.
+1. Configurez les détails du rapport, tels que le titre, la description, la miniature, le chemin d’accès au dossier et la plage de dates, le cas échéant.
 
 1. Pour afficher une colonne personnalisée, spécifiez son nom sous **[!UICONTROL Colonnes personnalisées]**.
 
-   ![custom_columns-1](assets/custom_columns-1.png)
+   ![Spécifier le nom de la colonne personnalisée du rapport](assets/custom_columns-1.png)
 
-1. Ajoutez le chemin de la propriété sous le nœud `jcr:content` dans CRXDE à l’aide du sélecteur de chemin de propriété.
+1. Ajoutez le chemin de la propriété sous le nœud `jcr:content` dans CRXDE à l’aide du sélecteur de chemin de propriété. Vous pouvez également saisir le chemin d’accès dans le champ de chemin d’accès à la propriété.
 
-   ![property_picker](assets/property_picker.png)
+   ![Faites correspondre le chemin d’accès à la propriété des chemins dans jcr:content](assets/property_picker.png)
 
-   Vous pouvez également saisir le chemin d’accès dans le champ de chemin d’accès à la propriété.
+   To add more custom columns, click **[!UICONTROL Add]** and repeat steps 5 and 6.
 
-   ![property_path](assets/property_path.png)
-
-   Pour ajouter d’autres colonnes personnalisées, appuyez/cliquez sur **[!UICONTROL Ajouter]** et répétez les étapes 5 et 6.
-
-1. Appuyez/cliquez sur **[!UICONTROL Créer]** dans la barre d’outils. Un message indique que la génération du rapport a été lancée.
+1. Click **[!UICONTROL Create]** from the toolbar. Un message indique que la génération du rapport a été lancée.
 
 ## Configuration du service de purge {#configure-purging-service}
 
