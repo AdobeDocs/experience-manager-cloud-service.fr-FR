@@ -1,39 +1,39 @@
 ---
 title: Journalisation
 description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou apprenez à demander la journalisation des données.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 86103b40e931ec00e0c15e9dbcbdf396c8eb05c9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2212'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
 
 # Journalisation {#logging}
 
-La plate-forme AEM as a Cloud Service permet aux clients d’inclure du code personnalisé destiné à créer des expériences incomparables pour leurs propres bases de clients. Dans cette optique, la journalisation est une fonction essentielle pour déboguer et comprendre l&#39;exécution du code sur le développement local, et les environnements de cloud, en particulier l&#39;AEM en tant qu&#39;environnements de développement Cloud Service.
+La plate-forme AEM as a Cloud Service permet aux clients d’inclure du code personnalisé destiné à créer des expériences incomparables pour leurs propres bases de clients. Dans cette optique, la journalisation est une fonction essentielle pour déboguer et comprendre l’exécution du code sur le développement local, ainsi que les environnements cloud, en particulier les environnements de développement AEM as a Cloud Service.
 
-Les niveaux de journalisation et de journalisation AEM sont gérés dans des fichiers de configuration stockés dans le cadre du projet AEM dans Git, et déployés dans le cadre du projet AEM via Cloud Manager. La connexion à AEM en tant que Cloud Service peut être divisée en deux jeux logiques :
+Les niveaux de journal et de journalisation AEM sont gérés dans des fichiers de configuration stockés au sein du projet AEM dans Git, et déployés dans le cadre du projet AEM via Cloud Manager. La journalisation dans AEM as a Cloud Service peut être divisée en deux ensembles logiques :
 
-* Journalisation des AEM, qui effectue la journalisation au niveau de l&#39;AEM application
-* Journalisation du serveur Web/Dispatcher Apache HTTPD, qui effectue la journalisation du serveur Web et du Dispatcher sur le niveau Publier.
+* La journalisation au niveau de l’application AEM.
+* La journalisation de serveur web Apache HTTPD/Dispatcher au niveau Publication.
 
-## Journalisation des AEM {#aem-loggin}
+## Journalisation AEM {#aem-loggin}
 
-La journalisation au niveau de l’application AEM est gérée par trois journaux :
+La journalisation au niveau de l’application AEM est gérée par trois journaux :
 
-1. Journaux Java AEM, qui affichent les instructions de journalisation Java pour l’application AEM.
-1. Journaux de requêtes HTTP, qui consignent les informations sur les requêtes HTTP et leurs réponses fournies par AEM
-1. Journaux d’accès HTTP, qui consignent les informations résumées et les requêtes HTTP diffusées par AEM
+1. Les journaux Java AEM, qui consignent les instructions de journalisation Java pour l’application AEM.
+1. Les journaux de requêtes HTTP, qui consignent les informations sur les requêtes HTTP et les réponses fournies par AEM
+1. Les journaux d’accès HTTP, qui consignent les informations résumées et les requêtes HTTP diffusées par AEM
 
 >[!NOTE]
 >
->Les requêtes HTTP diffusées à partir du cache Dispatcher du niveau Publication ou du réseau de diffusion de contenu en amont ne sont pas reflétées dans ces journaux.
+>Les requêtes HTTP diffusées à partir du cache Dispatcher du niveau Publication ou du réseau de diffusion de contenu en amont ne sont pas reflétées dans ces journaux
 
 ## Journalisation Java AEM {#aem-java-logging}
 
-AEM en tant que Cloud Service donne accès aux instructions de journal Java. Les développeurs d&#39;applications pour AEM doivent suivre les meilleures pratiques de consignation Java générales, consigner les instructions pertinentes concernant l&#39;exécution du code personnalisé, aux niveaux de journal suivants :
+AEM as a Cloud Service donne accès aux instructions de journal Java. Les développeurs d’applications pour AEM doivent suivre les bonnes pratiques générales en matière de consignation pour Java, en consignant les instructions pertinentes concernant l’exécution du code personnalisé, aux niveaux de journal suivants :
 
 <table>
 <tr>
@@ -53,7 +53,7 @@ Développement</td>
 DEBUG</td>
 <td>
 Décrit ce qui se passe dans l’application.<br>
-Lorsque la journalisation DEBUG est active, les instructions fournissant une image claire des activités survenues ainsi que les paramètres clés qui affectent le traitement sont consignées.</td>
+Lorsque la journalisation DEBUG est active, les instructions fournissant une image claire des activités survenues ainsi que les paramètres clés qui affectent le traitement sont consignés.</td>
 <td>
 <ul>
 <li> Développement local</li>
@@ -62,17 +62,17 @@ Lorsque la journalisation DEBUG est active, les instructions fournissant une ima
 </tr>
 <tr>
 <td>
-Scène</td>
+Évaluation</td>
 <td>
 WARN</td>
 <td>
 Décrit les conditions susceptibles de devenir des erreurs.<br>
-Lorsque la journalisation WARN est active, seules les instructions indiquant les conditions qui approchent du sous-optimisme sont consignées.</td>
+Lorsque la journalisation WARN est active, seules les instructions indiquant des conditions qui s’approchent de performances sous-optimales sont consignées.</td>
 <td>
 <ul>
 <li> Développement local</li>
 <li>Développement</li>
-<li>Scène</li>
+<li>Évaluation</li>
 </ul></td>
 </tr>
 <tr>
@@ -82,20 +82,20 @@ Production</td>
 ERREUR</td>
 <td>
 Décrit les conditions qui indiquent un échec et doivent être résolues.<br>
-Lorsque la journalisation ERROR est active, seules les instructions indiquant des échecs sont consignées. Les relevés de journal d'ERREUR indiquent un problème grave qui devrait être résolu le plus tôt possible.</td>
+Lorsque la journalisation ERROR est active, seules les instructions indiquant des échecs sont consignées. Les instructions de journal ERROR indiquent un problème grave qui doit être résolu le plus tôt possible.</td>
 <td>
 <ul>
 <li> Développement local</li>
 <li>Développement</li>
-<li>Scène</li>
+<li>Évaluation</li>
 <li>Production</li>
 </ul></td>
 </tr>
 </table>
 
-Bien que la journalisation Java prenne en charge plusieurs autres niveaux de granularité de la journalisation, AEM en tant que Cloud Service recommande d&#39;utiliser les trois niveaux décrits ci-dessus.
+Bien que la journalisation Java prenne en charge plusieurs autres niveaux de granularité de la journalisation, nous recommandons d’utiliser les trois niveaux décrits ci-dessus pour AEM as a Cloud Service.
 
-Les niveaux de journalisation AEM sont définis par type d’environnement via la configuration OSGi, qui à son tour est affectée à Git, et déployés via Cloud Manager pour AEM en tant que Cloud Service. C&#39;est pourquoi il est préférable de conserver des instructions de journal cohérentes et bien connues pour les types d&#39;environnements, afin de s&#39;assurer que les journaux disponibles par l&#39;intermédiaire d&#39;AEM comme Cloud Service sont disponibles au niveau de journal optimal sans avoir à redéployer l&#39;application avec la configuration de niveau de journal mise à jour.
+Les niveaux de journalisation AEM sont définis par type d’environnement via la configuration OSGi, qui à leur tour sont validés dans Git, et déployés sur AEM as a Cloud Service via Cloud Manager. C’est pourquoi il est préférable de conserver des instructions de journal cohérentes et bien connues pour les types d’environnements, afin de s’assurer que les journaux disponibles par l’intermédiaire d’AEM as a Cloud Service sont disponibles au niveau de journal optimal sans avoir à redéployer l’application avec la configuration de niveau de journal mise à jour.
 
 **Exemple de sortie de journal**
 
@@ -116,11 +116,11 @@ Les niveaux de journalisation AEM sont définis par type d’environnement via l
 <td>29.04.2020 21:50:13.398</td>
 </tr>
 <tr>
-<td>AEM en tant qu’ID de noeud Cloud Service</td>
+<td>ID du nœud AEM as a Cloud Service</td>
 <td>[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]</td>
 </tr>
 <tr>
-<td>Niveau de journalisation</td>
+<td>Niveau de journal</td>
 <td>DEBUG</td>
 </tr>
 <tr>
@@ -133,25 +133,25 @@ Les niveaux de journalisation AEM sont définis par type d’environnement via l
 </tr>
 <tr>
 <td>Message du journal</td>
-<td>Aucun approbateur spécifié, par défaut [ groupe d’utilisateurs Approbateurs créatifs ]</td>
+<td>Aucun approbateur spécifié, utilisation par défaut de [groupe d’utilisateurs Approbateurs du contenu créatif]</td>
 </tr>
 </tbody>
 </table>
 
-### Journaux de configuration {#configuration-loggers}
+### Enregistreurs de configuration {#configuration-loggers}
 
-AEM journaux Java sont définis en tant que configuration OSGi et, par conséquent, des AEM spécifiques à la cible en tant qu’environnements Cloud Service utilisant des dossiers en mode d’exécution.
+Les journaux Java AEM sont définis en tant que configuration OSGi et ciblent par conséquent des environnements AEM as a Cloud Service spécifiques en utilisant des dossiers en mode d’exécution.
 
-Configurez la journalisation java pour les packages Java personnalisés via des configurations OSGi pour la fabrique Sling LogManager. Il existe deux propriétés de configuration prises en charge :
+Configurez la journalisation Java pour des packages Java personnalisés via des configurations OSGi pour Sling LogManager Factory. Deux propriétés de configuration sont prises en charge :
 
 | Propriété de configuration OSGi | Description |
 |---|---|
 | org.apache.sling.commons.log.names | Packages Java pour lesquels collecter les instructions de journal. |
-| org.apache.sling.commons.log.level | Niveau de journal auquel consigner les packages Java, spécifié par org.apache.sling.commons.log.names |
+| org.apache.sling.commons.log.level | Niveau de journal auquel consigner les packages Java, spécifié par org.apache.sling.commons.log.names. |
 
-La modification d’autres propriétés de configuration de LogManager OSGi peut entraîner des problèmes de disponibilité dans AEM en tant que Cloud Service.
+La modification d’autres propriétés de configuration OSGi LogManager peut entraîner des problèmes de disponibilité dans AEM as a Cloud Service.
 
-Vous trouverez ci-dessous des exemples des configurations de journalisation recommandées (à l’aide du package Java d’espace réservé de `com.example`) pour les trois AEM en tant que types d’environnements Cloud Service.
+Vous trouverez ci-dessous des exemples de configurations de journalisation recommandées (à l’aide de l’espace réservé de package Java `com.example`) pour les trois types d’environnements AEM as a Cloud Service.
 
 ### Développement {#development}
 
@@ -164,7 +164,7 @@ Vous trouverez ci-dessous des exemples des configurations de journalisation reco
 }
 ```
 
-### Scène {#stage}
+### Évaluation {#stage}
 
 /apps/my-app/config.stage/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json
 
@@ -188,9 +188,9 @@ Vous trouverez ci-dessous des exemples des configurations de journalisation reco
 
 ## Journalisation des requêtes HTTP AEM {#aem-http-request-logging}
 
-AEM en tant que Cloud Service de la journalisation des requêtes HTTP fournit des informations sur les requêtes HTTP envoyées à AEM et leurs réponses HTTP dans l’ordre du temps. Ce journal permet de comprendre les requêtes HTTP envoyées à AEM et l&#39;ordre dans lequel elles sont traitées et auxquelles elles ont répondu.
+La journalisation des requêtes HTTP dans AEM as a Cloud Service fournit des informations sur les requêtes HTTP envoyées à AEM et leurs réponses HTTP par ordre d’arrivée. Ce journal permet de comprendre les requêtes HTTP envoyées à AEM ainsi que l’ordre dans lequel elles sont traitées et reçoivent une réponse.
 
-La clé pour comprendre ce journal est de mapper les paires requête et réponse HTTP selon leurs ID, identifiés par la valeur numérique entre crochets. Notez que souvent, les requêtes et leurs réponses correspondantes ont d&#39;autres requêtes HTTP et réponses interjonctées entre elles dans le journal.
+La clé pour comprendre ce journal est de mapper les paires de requête HTTP et réponse selon leur ID, identifié par la valeur numérique entre crochets. Notez que, dans le journal, les différentes requêtes HTTP et leurs réponses se chevauchent souvent.
 
 **Exemple de journal**
 
@@ -210,10 +210,10 @@ La clé pour comprendre ce journal est de mapper les paires requête et réponse
 <tbody>
 <tr>
 <td>Date et heure</td>
-<td>29/avr/2020:19:14:21 +000</td>
+<td>29/Apr/2020:19:14:21 +0000</td>
 </tr>
 <tr>
-<td>ID de paire de requêtes/réponses</td>
+<td>ID de paire de requête/réponse</td>
 <td><code>[137]</code></td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ La clé pour comprendre ce journal est de mapper les paires requête et réponse
 </td>
 </tr>
 <tr>
-<td>AEM en tant qu’ID de noeud Cloud Service</td>
+<td>ID du nœud AEM as a Cloud Service</td>
 <td>[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]</td>
 </tr>
 </tbody>
@@ -238,13 +238,13 @@ La clé pour comprendre ce journal est de mapper les paires requête et réponse
 
 ### Configuration du journal {#configuring-the-log}
 
-Le journal des requêtes HTTP AEM n&#39;est pas configurable dans AEM en tant que Cloud Service.
+Le journal des requêtes HTTP AEM n’est pas configurable dans AEM as a Cloud Service.
 
 ## Journalisation des accès HTTP AEM {#aem-http-access-logging}
 
-AEM en tant que journalisation d’accès HTTP Cloud Service affiche les requêtes HTTP dans l’ordre du temps. Chaque entrée de journal représente la requête HTTP qui accède à AEM.
+La journalisation des accès HTTP dans AEM as a Cloud Service affiche les requêtes HTTP par ordre d’arrivée. Chaque entrée de journal représente la requête HTTP qui accède à AEM.
 
-Ce journal est utile pour comprendre rapidement quelles requêtes HTTP sont envoyées à AEM, si elles réussissent en examinant le code d’état de la réponse HTTP qui l’accompagne et combien de temps la requête HTTP a duré. Ce journal peut également être utile pour déboguer une activité d’utilisateur spécifique en filtrant les entrées du journal par utilisateurs.
+Ce journal est utile pour comprendre rapidement quelles requêtes HTTP sont envoyées à AEM, si elles réussissent (en examinant le code d’état de la réponse HTTP qui l’accompagne) et combien de temps la requête HTTP a duré. Ce journal peut également servir à déboguer une activité d’utilisateur spécifique en filtrant les entrées du journal par utilisateurs.
 
 **Exemple de sortie de journal**
 
@@ -259,7 +259,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 <table>
 <tbody>
 <tr>
-<td>AEM en tant qu’ID de noeud Cloud Service</td>
+<td>ID du nœud AEM as a Cloud Service</td>
 <td>cm-p1235-e2644-aem-author-59555cb5b8-8kgr2</td>
 </tr>
 <tr>
@@ -272,7 +272,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 </tr>
 <tr>
 <td>Date et heure</td>
-<td>30/avr/2020:17:37:14 +000</td>
+<td>30/Apr/2020:17:37:14 +0000</td>
 </tr>
 <tr>
 <td>Méthode HTTP</td>
@@ -287,7 +287,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 <td>HTTP/1.1</td>
 </tr>
 <tr>
-<td>État de la réponse HTTP</td>
+<td>Statut de réponse HTTP</td>
 <td>200</td>
 </tr>
 <tr>
@@ -300,32 +300,32 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 </tr>
 <tr>
 <td>Agent utilisateur</td>
-<td>"Mozilla/5.0 (Macintosh ; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, comme Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
+<td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
 </tr>
 </tbody>
 </table>
 
-### Configuration du journal d&#39;accès HTTP {#configuring-the-http-access-log}
+### Configuration du journal d’accès HTTP {#configuring-the-http-access-log}
 
-Le journal d&#39;accès HTTP n&#39;est pas configurable dans AEM en tant que Cloud Service.
+Le journal des accès HTTP n’est pas configurable dans AEM as a Cloud Service.
 
-## Apache Web Server and Dispatcher Logging {#apache-web-server-and-dispatcher-logging}
+## Journalisation de serveur web Apache et de Dispatcher {#apache-web-server-and-dispatcher-logging}
 
-AEM en tant que Cloud Service fournit trois journaux pour les serveurs Web Apache et la couche de répartiteur sur la publication :
+AEM as a Cloud Service fournit trois journaux pour les serveurs web Apache et la couche Dispatcher au niveau Publication :
 
-* Journal d&#39;accès au serveur Web Apache HTTPD
-* Journal des erreurs du serveur Web Apache HTTPD
-* Journal des Dispatchers
+* Journal des accès au serveur web Apache HTTPD
+* Journal des erreurs du serveur web Apache HTTPD
+* Journal de Dispatcher
 
 Notez que ces journaux ne sont disponibles que pour le niveau Publication.
 
-Cet ensemble de journaux fournit des informations sur les requêtes HTTP à l’AEM en tant que niveau de publication Cloud Service avant que ces requêtes n’atteignent l’application AEM. Il est important de le comprendre, car, idéalement, la plupart des requêtes HTTP envoyées aux serveurs de niveau Publication sont servies par du contenu mis en cache par le serveur Web Apache HTTPD et l’Dispatcher AEM, et n’atteignent jamais l’application AEM elle-même. Il n’existe donc aucune instruction de journal pour ces requêtes dans AEM journaux Java, Request ou Access.
+Cet ensemble de journaux fournit des informations sur les requêtes HTTP envoyées au niveau Publication d’AEM as a Cloud Service avant que celles-ci n’atteignent l’application AEM. Il est important de comprendre cela, car, dans l’idéal, la plupart des requêtes HTTP envoyées aux serveurs de niveau Publication sont servies par du contenu mis en cache par le serveur web Apache HTTPD et le Dispatcher AEM, et n’atteignent jamais l’application AEM elle-même. Il n’existe donc aucune instruction de journal pour ces requêtes dans les journaux Java, de requêtes ou des accès d’AEM.
 
-### Journal d&#39;accès du serveur Web Apache HTTPD {#apache-httpd-web-server-access-log}
+### Journal des accès au serveur web Apache HTTPD {#apache-httpd-web-server-access-log}
 
-Le journal d&#39;accès Apache HTTP Web Server fournit des instructions pour chaque requête HTTP qui atteint le serveur Web/Dispatcher du niveau Publication. Notez que les requêtes diffusées à partir d’un CDN en amont ne sont pas reflétées dans ces journaux.
+Le journal des accès au serveur web Apache HTTPD fournit des instructions pour chaque requête HTTP qui atteint le serveur web/Dispatcher du niveau Publication. Notez que les requêtes diffusées à partir d’un réseau CDN en amont ne sont pas reflétées dans ces journaux.
 
-Consultez les informations sur le format du journal des erreurs dans la documentation [](https://httpd.apache.org/docs/2.4/logs.html#accesslog)officielle d’Apache.
+Consultez les informations sur le format du journal des erreurs dans la [documentation officielle d’Apache](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
 **Exemple de sortie de journal**
 
@@ -340,7 +340,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 <table>
 <tbody>
 <tr>
-<td>AEM en tant qu’ID de noeud de service cloud</td>
+<td>ID du nœud AEM as a Cloud Service</td>
 <td>cm-p1234-e26813-aem-publish-5c787687c-lqlxr</td>
 </tr>
 <tr>
@@ -353,7 +353,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tr>
 <tr>
 <td>Date et heure</td>
-<td>01/mai/2020:00:09:46 +000</td>
+<td>01/May/2020:00:09:46 +0000</td>
 </tr>
 <tr>
 <td>Méthode HTTP</td>
@@ -368,7 +368,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 <td>HTTP/1.1</td>
 </tr>
 <tr>
-<td>État de la réponse HTTP</td>
+<td>Statut de réponse HTTP</td>
 <td>200</td>
 </tr>
 <tr>
@@ -381,20 +381,20 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tr>
 <tr>
 <td>Agent utilisateur</td>
-<td>"Mozilla/5.0 (Macintosh ; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, comme Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
+<td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
 </tr>
 </tbody>
 </table>
 
-### Configuration du journal d&#39;accès au serveur Web Apache HTTPD {#configuring-the-apache-httpd-webs-server-access-log}
+### Configuration du journal des accès au serveur web Apache HTTPD {#configuring-the-apache-httpd-webs-server-access-log}
 
-Ce journal n&#39;est pas configurable dans AEM en tant que Cloud Service.
+Ce journal n’est pas configurable dans AEM as a Cloud Service.
 
-## Journal d’erreurs du serveur Web Apache HTTPD {#apache-httpd-web-server-error-log}
+## Journal des erreurs du serveur web Apache HTTPD {#apache-httpd-web-server-error-log}
 
-Le journal des erreurs du serveur Web HTTP Apache fournit des instructions pour chaque erreur dans le serveur Web/Dispatcher du niveau Publication.
+Le journal des erreurs du serveur web Apache HTTPD fournit des instructions pour chaque erreur dans le serveur web/Dispatcher du niveau Publication.
 
-Consultez les informations sur le format du journal des erreurs dans la documentation [](https://httpd.apache.org/docs/2.4/logs.html#errorlog)officielle d’Apache.
+Consultez les informations sur le format du journal des erreurs dans la [documentation officielle d’Apache](https://httpd.apache.org/docs/2.4/logs.html#errorlog).
 
 **Exemple de sortie de journal**
 
@@ -410,36 +410,36 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 <tbody>
 <tr>
 <td>Date et heure</td>
-<td>Vendredi 17 Juil 02:16:42.608913 2020</td>
+<td>Fri Jul 17 02:16:42.608913 2020</td>
 </tr>
 <tr>
-<td>Niveau de Événement</td>
+<td>Niveau d’événement</td>
 <td>[mpm_worker:notice]</td>
 </tr>
 <tr>
-<td>ID de processus</td>
+<td>ID du processus</td>
 <td>[pid 1:tid 140715149343624]</td>
 </tr>
 <tr>
-<td>Nom de la capsule</td>
+<td>Nom du pod</td>
 <td>[cm-p1234-e56789-aem-publish-b86c6b466-qpfvp]</td>
 </tr>
 <tr>
 <td>Message</td>
-<td>AH00094 : Ligne de commande : 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUE -D </td>
+<td>AH00094: Command line: 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D </td>
 </tr>
 </tbody>
 </table>
 
-### Configuration du journal des erreurs du serveur Web Apache HTTPD {#configuring-the-apache-httpd-web-server-error-log}
+### Configuration du journal des erreurs du serveur web Apache HTTPD {#configuring-the-apache-httpd-web-server-error-log}
 
 Les niveaux de journal mod_rewrite sont définis par la variable REWRITE_LOG_LEVEL dans le fichier `conf.d/variables/global.var`.
 
-Il peut être défini sur Error, Warn, Info, Debug et Trace1 - Trace8, avec la valeur par défaut Warn. Pour déboguer votre RewriteRules, il est recommandé de passer au niveau du journal Trace2.
+Elle peut être définie sur Error, Warn, Info, Debug et Trace1 à Trace8, avec la valeur par défaut Warn. Pour déboguer vos règles de réécriture (RewriteRules), il est recommandé de passer au niveau de journal Trace2.
 
-Pour plus d&#39;informations, consultez la documentation [du module](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) mod_rewrite.
+Pour plus d’informations, consultez la [documentation du module mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging).
 
-Pour définir le niveau de journal par environnement, utilisez la branche conditionnelle appropriée dans le fichier global.var, comme décrit ci-dessous :
+Pour définir le niveau de journal par environnement, utilisez la branche conditionnelle appropriée dans le fichier global.var, comme décrit ci-dessous :
 
 ```
 Define REWRITE_LOG_LEVEL Debug
@@ -456,7 +456,7 @@ Define REWRITE_LOG_LEVEL Debug
 </IfDefine>
 ```
 
-## Journal des Dispatchers {#dispatcher-log}
+## Journal de Dispatcher {#dispatcher-log}
 
 **Exemple**
 
@@ -472,10 +472,10 @@ Define REWRITE_LOG_LEVEL Debug
 <tbody>
 <tr>
 <td>Date et heure</td>
-<td>[17/juil/2020:23:48:16 +000]</td>
+<td>[17/Jul/2020:23:48:16 +0000]</td>
 </tr>
 <tr>
-<td>Nom de la capsule</td>
+<td>Nom du pod</td>
 <td>[cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr]</td>
 </tr>
 <tr>
@@ -487,7 +487,7 @@ Define REWRITE_LOG_LEVEL Debug
 <td>/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/responsivegrid/image.coreimg.100.500.jpeg/1572236359031/ayo-ogunseinde-237739.jpeg</td>
 </tr>
 <tr>
-<td>Code d’état de réponse du Dispatcher</td>
+<td>Code d’état de réponse de Dispatcher</td>
 <td>/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/responsivegrid/image.coreimg.100.500.jpeg/1572236359031/ayo-ogunseinde-237739.jpeg</td>
 </tr>
 <tr>
@@ -496,11 +496,11 @@ Define REWRITE_LOG_LEVEL Debug
 </tr>
 <tr>
 <td>Ferme</td>
-<td>[publishbatterie/0]</td>
+<td>[publishfarm/0]</td>
 </tr>
 <tr>
-<td>État du cache</td>
-<td>[action manquée]</td>
+<td>Statut du cache</td>
+<td>[action miss]</td>
 </tr>
 <tr>
 <td>Hôte</td>
@@ -509,15 +509,15 @@ Define REWRITE_LOG_LEVEL Debug
 </tbody>
 </table>
 
-### Configuration du journal des erreurs du Dispatcher {#configuring-the-dispatcher-error-log}
+### Configuration du journal des erreurs de Dispatcher {#configuring-the-dispatcher-error-log}
 
-Les niveaux de journal du répartiteur sont définis par la variable DISP_LOG_LEVEL dans le fichier `conf.d/variables/global.var`.
+Les niveaux de journal de Dispatcher sont définis par la variable DISP_LOG_LEVEL dans le fichier `conf.d/variables/global.var`.
 
-Il peut être défini sur Error, Warn, Info, Debug et Trace1, avec la valeur par défaut Warn.
+Elle peut être définie sur Error, Warn, Info, Debug et Trace1, avec la valeur par défaut Warn.
 
-Bien que la journalisation des Dispatchers prenne en charge plusieurs autres niveaux de granularité de la journalisation, l’AEM en tant que Cloud Service recommande d’utiliser les niveaux décrits ci-dessous.
+Bien que la journalisation de Dispatcher prenne en charge plusieurs autres niveaux de granularité de la journalisation, nous recommandons d’utiliser les niveaux décrits ci-dessous pour AEM as a Cloud Service.
 
-Pour définir le niveau de journal par environnement, utilisez la branche conditionnelle appropriée dans le `global.var` fichier, comme décrit ci-dessous :
+Pour définir le niveau de journal par environnement, utilisez la branche conditionnelle appropriée dans le fichier `global.var`, comme décrit ci-dessous :
 
 ```
 Define DISP_LOG_LEVEL Debug
@@ -536,95 +536,95 @@ Define DISP_LOG_LEVEL Debug
 
 ## Comment accéder aux journaux {#how-to-access-logs}
 
-### Environnements du cloud {#cloud-environments}
+### Environnements cloud {#cloud-environments}
 
-AEM en tant que journaux Cloud Service pour les services cloud sont accessibles soit en téléchargeant via l’interface de Cloud Manager, soit en conservant les journaux sur la ligne de commande à l’aide de l’interface de ligne de commande E/S d’Adobe. Pour plus d’informations, voir la documentation [sur la journalisation de](/help/implementing/cloud-manager/manage-logs.md)Cloud Manager.
+Les journaux AEM as a Cloud Service pour les services cloud sont accessibles par téléchargement via l’interface de Cloud Manager ou en affichant leurs dernières lignes à l’aide de l’interface de ligne de commande Adobe I/O. Pour plus d’informations, voir la [documentation sur la journalisation de Cloud Manager](/help/implementing/cloud-manager/manage-logs.md).
 
 ### SDK local {#local-sdk}
 
-AEM en tant que SDK Cloud Service fournit des fichiers journaux pour la prise en charge du développement local.
+Le SDK AEM as a Cloud Service fournit des fichiers journaux pour la prise en charge du développement local.
 
-AEM journaux se trouvent dans le dossier `crx-quickstart/logs`, où vous pouvez afficher les journaux suivants :
+Les journaux AEM se trouvent dans le dossier `crx-quickstart/logs`, où vous pouvez afficher les journaux suivants :
 
-* Journal Java AEM : `error.log`
-* Journal des requêtes HTTP AEM : `request.log`
-* Journal d&#39;accès HTTP AEM : `access.log`
+* Journal Java AEM : `error.log`
+* Journal des requêtes HTTP AEM : `request.log`
+* Journal des accès HTTP AEM : `access.log`
 
-Les journaux de couche Apache, y compris le répartiteur, se trouvent dans le conteneur Docker qui contient le Dispatcher. Consultez la documentation [du](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) Dispatcher pour savoir comment début du Dispatcher.
+Les journaux de couche Apache, y compris de Dispatcher, se trouvent dans le conteneur Docker qui contient Dispatcher. Consultez la [documentation de Dispatcher](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) pour savoir comment le démarrer.
 
-Pour récupérer les journaux :
+Pour récupérer les journaux :
 
-1. Sur la ligne de commande, tapez `docker ps` pour liste vos conteneurs.
-1. Pour vous connecter au conteneur, tapez &quot;`docker exec -it <container> /bin/sh`&quot;, où `<container>` est l&#39;identifiant de conteneur du répartiteur de l&#39;étape précédente.
-1. Accédez à la racine du cache sous `/mnt/var/www/html`
-1. Les journaux sont sous `/etc/httpd/logs`
-1. Inspect the logs : ils sont accessibles sous le dossier XYZ, où vous pouvez afficher les journaux suivants :
-   * Journal d&#39;accès du serveur Web Apache HTTPD - `httpd_access.log`
-   * Journaux d&#39;erreur du serveur Web Apache HTTPD - `httpd_error.log`
-   * Journaux des Dispatchers - `dispatcher.log`
+1. Sur la ligne de commande, tapez `docker ps` afin de répertorier vos conteneurs.
+1. Pour vous connecter au conteneur, tapez « `docker exec -it <container> /bin/sh` », où `<container>` est l’identifiant de conteneur Dispatcher de l’étape précédente.
+1. Accédez à la racine du cache sous `/mnt/var/www/html`.
+1. Les journaux se trouvent sous `/etc/httpd/logs`.
+1. Inspectez les journaux : ils sont accessibles sous le dossier XYZ, où vous pouvez afficher les journaux suivants :
+   * Journal des accès au serveur web Apache HTTPD – `httpd_access.log`
+   * Journaux des erreur du serveur web Apache HTTPD – `httpd_error.log`
+   * Journaux de Dispatcher – `dispatcher.log`
 
-Les journaux sont également directement imprimés sur le terminal. La plupart du temps, ces journaux doivent être DEBUG, ce qui peut être accompli en transmettant le niveau de débogage en tant que paramètre lors de l&#39;exécution de Docker. Par exemple :
+Les journaux sont également directement imprimés dans la sortie du terminal. La plupart du temps, ces journaux doivent être en mode DEBUG, ce qui peut être effectué en transmettant le niveau Debug comme paramètre lors de l’exécution de Docker. Par exemple :
 
 `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
 
-## Débogage de la production et de la phase {#debugging-production-and-stage}
+## Débogage dans les environnements de production et d’évaluation {#debugging-production-and-stage}
 
-Dans des circonstances exceptionnelles, il est nécessaire de modifier les niveaux de journalisation pour qu’ils soient plus précis dans les environnements d’étape ou de production.
+Dans des circonstances exceptionnelles, il est nécessaire de modifier les niveaux de journalisation pour qu’ils soient plus précis dans les environnements d’évaluation ou de production.
 
-Bien que cela soit possible, il nécessite des modifications des niveaux de journal dans les fichiers de configuration dans Git from Warn et Error to Debug, et l&#39;exécution d&#39;un déploiement sur AEM en tant que Cloud Service pour enregistrer ces modifications de configuration avec les environnements.
+Bien que cela soit possible, cela requiert des modifications des niveaux de journal dans les fichiers de configuration dans Git (en passant de Warn et Error à Debug), et l’exécution d’un déploiement sur AEM as a Cloud Service pour enregistrer ces modifications de configuration auprès des environnements.
 
-Selon le trafic et la quantité de consignes écrites par Debug, cela peut avoir un impact négatif sur les performances de l&#39;environnement. Il est donc recommandé que les modifications apportées aux niveaux de débogage Stage et Production soient les suivantes :
+Selon le trafic et la quantité d’instructions de journal écrites par Debug, cela peut avoir un impact négatif sur les performances de l’environnement. Il est donc recommandé que les modifications apportées aux niveaux de débogage Stage (pour l’environnement d’évaluation) et Production soient :
 
-* Fait judicieusement, et uniquement lorsque cela est absolument nécessaire
-* Revenir aux niveaux appropriés et procéder au redéploiement le plus tôt possible
+* effectuées judicieusement, et uniquement lorsque cela est absolument nécessaire ;
+* annulées le plus tôt possible pour redéployer les niveaux appropriés.
 
-## Journaux de bogue {#splunk-logs}
+## Journaux Splunk {#splunk-logs}
 
-Les clients disposant d&#39;un compte Splunk peuvent demander, via un ticket d&#39;assistance à la clientèle, que leurs journaux d&#39;Cloud Service d&#39;AEM soient transférés vers l&#39;index approprié. Les données de journalisation sont équivalentes à ce qui est disponible par le biais des téléchargements de journaux de Cloud Manager, mais les clients peuvent trouver pratique de tirer parti des fonctionnalités de requête disponibles dans le produit Splunk.
+Les clients disposant d’un compte Splunk peuvent demander, via un ticket de service clientèle, que leurs journaux d’AEM as a Cloud Service soient transférés vers l’index approprié. Les données de journalisation sont équivalentes à celles disponibles par téléchargement des journaux de Cloud Manager, mais les clients peuvent tirer parti des fonctionnalités de requête disponibles dans le produit Splunk.
 
-La bande passante réseau associée aux journaux envoyés à Splunk est considérée comme faisant partie de l&#39;utilisation des E/S réseau du client.
+La bande passante réseau associée aux journaux envoyés à Splunk est considérée comme faisant partie de l’utilisation des E/S réseau du client.
 
-### Activation du transfert de blocs {#enabling-splunk-forwarding}
+### Activation du transfert Splunk {#enabling-splunk-forwarding}
 
-Dans la demande d&#39;assistance, les clients doivent indiquer :
+Dans la demande d’assistance, les clients doivent indiquer :
 
-* Hôte Splunk
-* Index Splunk
-* Le port Splunk
-* Jeton Splunk HEC. Pour plus d’informations, consultez [cette page](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples).
+* l’hôte Splunk ;
+* l’index Splunk ;
+* le port Splunk ;
+* le jeton Splunk HEC. Pour plus d’informations, consultez [cette page](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples).
 
-Les propriétés ci-dessus doivent être spécifiées pour chaque combinaison de type programme/environnement appropriée.  Par exemple, si un client souhaite des environnements de développement, d’évaluation et de production, il doit fournir trois ensembles d’informations, comme indiqué ci-dessous.
+Les propriétés ci-dessus doivent être spécifiées pour chaque combinaison de type programme/environnement appropriée. Par exemple, si un client souhaite des environnements de développement, d’évaluation et de production, il doit fournir trois ensembles d’informations, comme indiqué ci-dessous.
 
 >[!NOTE]
 >
->La redirection des blocs pour les environnements de programme sandbox n&#39;est pas prise en charge.
+>Le transfert Splunk pour les environnements de programme de test Sandbox n’est pas pris en charge.
 
-Vous trouverez ci-dessous un exemple de demande d’assistance à la clientèle :
+Vous trouverez ci-dessous un exemple de demande d’assistance :
 
-Programme 123, Production Env
+Programme 123, environnement de production
 
-* Hôte de socle : `splunk-hec-ext.acme.com`
-* Indice Splunk : acme_123prod (le client peut choisir la convention d’affectation de nom qu’il souhaite)
-* Port Splunk : 443
-* Jeton Splunk HEC : ABC123
+* Hôte Splunk : `splunk-hec-ext.acme.com`
+* Index Splunk : acme_123prod (le client peut choisir la convention d’affectation de nom qu’il souhaite)
+* Port Splunk : 443
+* Jeton Splunk HEC : ABC123
 
-Programme 123, Stage Env
+Programme 123, environnement d’évaluation
 
-* Hôte de socle : `splunk-hec-ext.acme.com`
-* Indice Splunk : acme_123stage
-* Port Splunk : 443
-* Jeton Splunk HEC : ABC123
+* Hôte Splunk : `splunk-hec-ext.acme.com`
+* Index Splunk : acme_123stage
+* Port Splunk : 443
+* Jeton Splunk HEC : ABC123
 
-Programme 123, Dev Envs
+Programme 123, environnements de développement
 
-* Hôte de socle : `splunk-hec-ext.acme.com`
-* Indice Splunk : acme_123dev
-* Port Splunk : 443
-* Jeton Splunk HEC : ABC123
+* Hôte Splunk : `splunk-hec-ext.acme.com`
+* Index Splunk : acme_123dev
+* Port Splunk : 443
+* Jeton Splunk HEC : ABC123
 
-Il peut suffire que le même index Splunk soit utilisé pour chaque environnement, auquel cas le champ peut être utilisé pour différencier les valeurs en fonction de l’évolution, de l’étape et de la prod. `aem_env_type` S’il existe plusieurs environnements de développement, le `aem_env_id` champ peut également être utilisé. Certaines organisations peuvent choisir un index distinct pour les journaux de l&#39;environnement de production si l&#39;index associé limite l&#39;accès à un ensemble réduit d&#39;utilisateurs Splunk.
+Il peut suffire que le même index Splunk soit utilisé pour chaque environnement, auquel cas le champ `aem_env_type` peut être utilisé pour les distinguer à l’aide des valeurs dev, stage et prod. S’il existe plusieurs environnements de développement, le champ `aem_env_id` peut également être utilisé. Certaines organisations peuvent choisir un index distinct pour les journaux de l’environnement de production si l’index associé limite l’accès à un ensemble réduit d’utilisateurs Splunk.
 
-Voici un exemple d&#39;entrée de journal :
+Voici un exemple d’entrée de journal :
 
 ```
 aem_env_id: 1242
