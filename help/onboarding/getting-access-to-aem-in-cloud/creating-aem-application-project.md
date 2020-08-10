@@ -2,10 +2,10 @@
 title: Projet de demande de AEM - Cloud Service
 description: Projet de demande de AEM - Cloud Service
 translation-type: tm+mt
-source-git-commit: 9e27ff9510fda5ed238a25b2d63d1d9a3099a8b5
+source-git-commit: 4bcae8f2bb74838497323125ebf7015f955bb374
 workflow-type: tm+mt
-source-wordcount: '1414'
-ht-degree: 82%
+source-wordcount: '1406'
+ht-degree: 95%
 
 ---
 
@@ -45,7 +45,7 @@ Pour créer et déployer dans Cloud Manager, les projets AEM existants doivent 
 * Les projets doivent être créés à l’aide d’Apache Maven.
 * Un fichier *pom.xml* doit se trouver à la racine du référentiel Git. Ce fichier *pom.xml* peut faire référence à autant de sous-modules (qui, à leur tour, peuvent comporter d’autres sous-modules, etc.) que nécessaire.
 
-* Vous pouvez ajouter des références à d’autres référentiels d’artefact Maven dans vos fichiers *pom.xml*. L’accès aux référentiels [d’artefacts protégés par](#password-protected-maven-repositories) mot de passe est pris en charge lorsqu’il est configuré. Cependant, l’accès aux référentiels d’artefacts protégés par le réseau n’est pas pris en charge.
+* Vous pouvez ajouter des références à d’autres référentiels d’artefact Maven dans vos fichiers *pom.xml*. L’accès aux [référentiels d’artefacts protégés par mot de passe](#password-protected-maven-repositories) est pris en charge s’il est configuré. Cependant, l’accès aux référentiels d’artefacts protégés par réseau n’est pas pris en charge.
 * Les packages de contenu déployables sont découverts en analysant les fichiers *zip* de package de contenu contenus dans un répertoire appelé *target*. Un nombre illimité de sous-modules peuvent produire des packages de contenu.
 
 * Les artefacts déployables de Dispatcher sont découverts en analysant les fichiers *zip* (contenus dans un répertoire appelé *target*) dont les répertoires sont appelés *conf* et *conf.d*.
@@ -59,7 +59,6 @@ Cloud Manager crée et teste votre code à l&#39;aide d&#39;un environnement de 
 
 * L&#39;environnement de création est basé sur Linux, dérivé de Ubuntu 18.04.
 * Apache Maven 3.6.0 est installé.
-* La version Java a installé Oracle JDK 8u202 et 11.0.2.
 * D’autres packages système nécessaires sont installés :
 
    * bzip2
@@ -209,17 +208,17 @@ Si vous souhaitez générer un message de sortie simple uniquement lorsque la g�
         </profile>
 ```
 
-## Prise en charge du référentiel Maven protégé par mot de passe {#password-protected-maven-repositories}
+## Prise en charge d’un référentiel Maven protégé par mot de passe {#password-protected-maven-repositories}
 
-Pour utiliser un référentiel Maven protégé par un mot de passe dans Cloud Manager, spécifiez le mot de passe (et éventuellement le nom d’utilisateur) en tant que variable [](#pipeline-variables) Pipeline secrète, puis référencez ce secret dans un fichier nommé `.cloudmanager/maven/settings.xml` dans le référentiel git. Ce fichier suit le schéma de fichier [](https://maven.apache.org/settings.html) Maven Settings. Lorsque Cloud Manager crée des débuts de processus, l’ `<servers>` élément de ce fichier est fusionné dans le `settings.xml` fichier par défaut fourni par Cloud Manager. Une fois ce fichier en place, l’ID de serveur est référencé à l’intérieur d’un élément `<repository>` et/ou `<pluginRepository>` dans le `pom.xml` fichier. En règle générale, ces éléments `<repository>` et/ou `<pluginRepository>` ces éléments sont contenus dans un profil [spécifique à]{#activating-maven-profiles-in-cloud-manager}Cloud Manager, bien que cela ne soit pas strictement nécessaire.
+Pour utiliser un référentiel Maven protégé par mot de passe dans Cloud Manager, spécifiez le mot de passe (et éventuellement le nom d’utilisateur) en tant que [Variable pipeline](#pipeline-variables) secrète, puis référencez ce secret dans un fichier nommé `.cloudmanager/maven/settings.xml` dans le référentiel git. Ce fichier suit le schéma de [fichier de paramètres Maven](https://maven.apache.org/settings.html). Au démarrage du processus de création de Cloud Manager, l’élément `<servers>` de ce fichier est fusionné dans le fichier `settings.xml` par défaut fourni par Cloud Manager. Une fois ce fichier en place, l’ID de serveur est référencé à l’intérieur d’un élément `<repository>` et/ou `<pluginRepository>` dans le fichier `pom.xml`. En règle générale, ces éléments `<repository>` et/ou `<pluginRepository>` sont contenus dans un [profil spécifique à Cloud Manager]{#activating-maven-profiles-in-cloud-manager}, bien que cela ne soit pas strictement nécessaire.
 
-Par exemple, supposons que le référentiel se trouve à l’adresse https://repository.myco.com/maven2, que le nom d’utilisateur que Cloud Manager doit utiliser soit `cloudmanager` et que le mot de passe soit `secretword`défini.
+Par exemple, supposons que le référentiel se trouve à l’adresse https://repository.myco.com/maven2, que le nom d’utilisateur que Cloud Manager doit utiliser soit `cloudmanager` et que le mot de passe soit `secretword`.
 
-Tout d&#39;abord, définissez le mot de passe comme secret sur le pipeline :
+Tout d’abord, définissez le mot de passe comme secret sur le pipeline :
 
 `$ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSITORY_PASSWORD secretword`
 
-Faites ensuite référence à ceci à partir du `.cloudmanager/maven/settings.xml` fichier :
+Faites ensuite référence à ceci à partir du fichier `.cloudmanager/maven/settings.xml` :
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -235,7 +234,7 @@ Faites ensuite référence à ceci à partir du `.cloudmanager/maven/settings.xm
 </settings>
 ```
 
-Et enfin référencez l&#39;identifiant du serveur dans le `pom.xml` fichier :
+Enfin référencez l’identifiant du serveur dans le fichier `pom.xml` :
 
 ```xml
 <profiles>
