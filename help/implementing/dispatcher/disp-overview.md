@@ -1,11 +1,11 @@
 ---
 title: Dispatcher en mode cloud
 description: 'Dispatcher en mode cloud '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fe4202cafcab99d22e05728f58974e1a770a99ed
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3824'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -378,7 +378,7 @@ Dispatcher démarre alors dans un conteneur avec son serveur principal pointant 
 
 ## Débogage de la configuration Apache et Dispatcher {#debugging-apache-and-dispatcher-configuration}
 
-Les niveaux de journalisation sont définis par les variables `DISP_LOG_LEVEL` et `REWRITE_LOG_LEVEL` dans `conf.d/variables/global.var`s&quot;. See the [Logging documentation](/help/implementing/developing/introduction/logging.md#apache-web-server-and-dispatcher-logging) for more information.
+Les niveaux de journal sont définis par les variables `DISP_LOG_LEVEL` et `REWRITE_LOG_LEVEL` dans `conf.d/variables/global.var`s. Pour plus d’informations, voir la [documentation sur la journalisation](/help/implementing/developing/introduction/logging.md#apache-web-server-and-dispatcher-logging).
 
 ## Différentes configurations Dispatcher par environnement {#different-dispatcher-configurations-per-environment}
 
