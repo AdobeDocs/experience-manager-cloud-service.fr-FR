@@ -1,11 +1,11 @@
 ---
 title: Conseils de développement pour AEM as a Cloud Service
 description: À terminer
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: eb2f944b4cc4311c6e0c10d34d02eafa6128f6aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1949'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -86,7 +86,7 @@ Le contenu est répliqué de l’instance d’auteur vers l’instance de public
 
 ### Journaux {#logs}
 
-Pour le développement en local, les entrées de journaux sont écrites dans des fichiers locaux   dans le dossier `/crx-quickstart/logs`.
+Pour le développement en local, les entrées de journaux sont écrites dans des fichiers locaux    dans le dossier `/crx-quickstart/logs`.
 
 Dans les environnements cloud, les développeurs peuvent télécharger les journaux via Cloud Manager ou utiliser un outil de ligne de commande pour en afficher les dernières lignes. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
@@ -171,25 +171,25 @@ Les clients n’auront pas accès aux outils de développement pour les environn
 
 Adobe surveille les performances de l’application et prend des mesures pour remédier à cette détérioration. Actuellement, il n’est pas possible d’observer les mesures d’application.
 
-## Adresse IP d&#39;entrée dédiée {#dedicated-egress-ip-address}
+## Adresse IP Egress dédiée {#dedicated-egress-ip-address}
 
-Sur demande, AEM en tant que Cloud Service fournira une adresse IP statique, dédiée, pour le trafic sortant HTTP (port 80) et HTTPS (port 443) programmé en code Java.
+Sur demande, AEM as a Cloud Service fournira une adresse IP statique, dédiée, pour le trafic sortant HTTP (port 80) et HTTPS (port 443) programmé en code Java.
 
 ### Avantages {#benefits}
 
-Cette adresse IP dédiée peut améliorer la sécurité lors de l&#39;intégration avec les fournisseurs SaaS (comme un fournisseur de gestion de la relation client) ou d&#39;autres intégrations en dehors de l&#39;AEM en tant que Cloud Service qui offre une liste autorisée d&#39;adresses IP. En ajoutant l&#39;adresse IP dédiée à la liste autorisée, elle garantit que seul le trafic provenant de l&#39;Cloud Service AEM du client sera autorisé à circuler dans le service externe. Ceci s’ajoute au trafic provenant de toute autre adresse IP autorisée.
+Cette adresse IP dédiée peut améliorer la sécurité lors de l’intégration avec les fournisseurs SaaS (comme un fournisseur de solutions de gestion de la relation client) ou d’autres intégrations en dehors d’AEM as a Cloud Service qui offrent une liste autorisée d’adresses IP. L’ajout de l’adresse IP dédiée à la liste autorisée garantit que seul le trafic provenant de l’instance AEM as a Cloud Service du client sera autorisé à circuler dans le service externe. Cela s’ajoute au trafic provenant de toute autre adresse IP autorisée.
 
-Si la fonction d’adresse IP dédiée n’est pas activée, le trafic provenant d’AEM en tant que Cloud Service passe par un ensemble d’adresses IP partagées avec d’autres clients.
+Si la fonction d’adresse IP dédiée n’est pas activée, le trafic provenant d’AEM as a Cloud Service passe par un jeu d’adresses IP partagées avec d’autres clients.
 
 ### Configuration {#configuration}
 
-Pour activer une adresse IP dédiée, envoyez une demande au service d’assistance clientèle, qui fournira les informations d’adresse IP. La demande doit spécifier chaque environnement et des demandes supplémentaires doivent être effectuées si de nouveaux environnements ont besoin de la fonction après la demande initiale. Les environnements de programme Sandbox ne sont pas pris en charge.
+Pour activer une adresse IP dédiée, envoyez une demande au service clientèle, qui fournira les informations d’adresse IP. La demande doit spécifier chaque environnement et des demandes supplémentaires doivent être effectuées si de nouveaux environnements requièrent cette fonctionnalité après la demande initiale. Les environnements de programme de test Sandbox ne sont pas pris en charge.
 
-### Utilisation des fonctionnalités {#feature-usage}
+### Utilisation de la fonctionnalité {#feature-usage}
 
-Cette fonction est compatible avec le code Java ou les bibliothèques qui génèrent du trafic sortant, à condition qu’ils utilisent les propriétés système Java standard pour les configurations de proxy. Dans la pratique, cela devrait inclure la plupart des bibliothèques courantes.
+Cette fonctionnalité est compatible avec les bibliothèques ou le code Java qui génèrent du trafic sortant, à condition qu’ils utilisent les propriétés système Java standard pour les configurations de proxy. Dans la pratique, cela devrait inclure la plupart des bibliothèques courantes.
 
-Voici un exemple de code :
+Voici un exemple de code :
 
 ```
 public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
@@ -205,7 +205,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 }
 ```
 
-La même adresse IP dédiée est appliquée à tous les programmes d&#39;un client dans son organisation d&#39;Adobe et à tous les environnements de chacun de leurs programmes. Il s’applique aux services d’auteur et de publication.
+La même adresse IP dédiée est appliquée à tous les programmes d’un client dans son organisation Adobe ainsi qu’à tous les environnements de chacun de ses programmes. Elle s’applique aux services de création et de publication.
 
 Seuls les ports HTTP et HTTPS sont pris en charge. Cela inclut HTTP/1.1, ainsi que HTTP/2 lorsqu’il est chiffré.
 
