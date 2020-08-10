@@ -1,9 +1,9 @@
 ---
 title: Utilisation de fragments de contenu
 description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 85f47a417e73432d776c0ed4f5cdb7673ce41a70
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1818'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ Les fragments de contenu peuvent également être livrés au format JSON, à l�
 
 Cette page et les suivantes portent sur les tâches de création, de configuration et de gestion de vos fragments de contenu :
 
-* [Gestion des fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md)   : créez des fragments de contenu, puis modifiez-les, publiez-les et référencez-les.
+* [Gestion des fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md)    : créez des fragments de contenu, puis modifiez-les, publiez-les et référencez-les.
 * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) : activation, création et définition de vos modèles.
 * [Variations – création de fragments de contenu](/help/assets/content-fragments/content-fragments-variations.md) : créez le contenu du fragment et créez des variantes du maître.
 * [Texte (Markdown)](/help/assets/content-fragments/content-fragments-markdown.md) : utilisation de la syntaxe Markdown pour votre fragment.
@@ -53,7 +53,7 @@ Les fragments de contenu vous permettent de :
 
 Ces fragments de contenu peuvent ensuite être assemblés pour offrir diverses expériences sur de multiples canaux.
 
-## Fragments de contenu et Content Services   {#content-fragments-and-content-services}
+## Fragments de contenu et Content Services    {#content-fragments-and-content-services}
 
 Les services de contenu AEM sont conçus pour généraliser la description et la diffusion du contenu dans/depuis AEM, au-delà des pages web.
 
@@ -259,7 +259,7 @@ Pour créer, modifier et utiliser des fragments de contenu, vous aurez égalemen
    * Les fragments ont besoin d’un ou de plusieurs composants dédiés pour définir la mise en page, ainsi que diffuser tous les éléments/variations et le contenu associé.
    * Faire glisser un fragment sur une page en mode Création permet d’associer automatiquement le composant requis.
 
-## Cas d’utilisation   {#example-usage}
+## Cas d’utilisation    {#example-usage}
 
 Un fragment, avec ses éléments et ses variations, peut être utilisé afin de créer du contenu homogène sur plusieurs canaux. Lors de la conception d’un fragment, vous devez prendre en compte où vous utiliserez chacun de ses éléments.
 
