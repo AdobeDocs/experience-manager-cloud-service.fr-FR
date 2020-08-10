@@ -1,9 +1,9 @@
 ---
 title: Phase d’exécution
 description: Phase d’exécution
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0dd05c1f6dc197daf154d4df6e6661e00455b233
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1020'
 ht-degree: 100%
 
@@ -77,11 +77,11 @@ Une liste contenant un certain nombre de ressources supplémentaires est propos�
 
 * Regardez la vidéo relative à l’installation du SDK Dispatcher pour comprendre comment procéder :
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30601)
+   >[!VIDEO](https://video.tv.adobe.com/v/30601?captions=fre_fr)
 
 * Regardez la vidéo relative à la configuration du SDK Dispatcher pour comprendre comment procéder :
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30602)
+   >[!VIDEO](https://video.tv.adobe.com/v/30602?captions=fre_fr)
 
 * Consultez la documentation relative à la [Configuration du développement local](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) pour configurer un environnement de développement local.
 
