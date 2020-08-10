@@ -1,11 +1,11 @@
 ---
 title: Facettes de recherche.
 description: Cet article décrit comment créer, modifier et utiliser les facettes de recherche dans AEM.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2371'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -33,30 +33,30 @@ Pour des recherches de texte intégral, ajoutez le prédicat `Fulltext` au formu
 
 1. Sur la page Modifier des formulaires de recherche, faites glisser un prédicat de l’onglet **[!UICONTROL Sélectionner le prédicat]** vers le volet principal. Faites glisser, par exemple, **[!UICONTROL Prédicat de la propriété]**.
 
-   ![Appuyez et déplacez un prédicat pour personnaliser les filtres de recherche.](assets/drag_predicate.png)
+   ![Appuyez sur un prédicat et déplacez-le pour personnaliser les filtres de recherche](assets/drag_predicate.png)
 
-   *Figure : Appuyez et déplacez un prédicat pour personnaliser les filtres de recherche.*
+   *Figure : Appuyez sur un prédicat et déplacez-le pour personnaliser les filtres de recherche.*
 
 1. Sous l’onglet Paramètres, saisissez un libellé de champ, un texte d’espace réservé et une description pour le prédicat. Indiquez un nom valide pour la propriété de métadonnées que vous souhaitez associer au prédicat. Le libellé d’en-tête de l’onglet Paramètres identifie le type de prédicat sélectionné.
 
    ![Utilisez l’onglet Paramètres pour définir les options requises d’un prédicat](assets/settings.png)
 
-   *Figure : Utilisez l’onglet Paramètres pour fournir les options requises d’un prédicat.*
+   *Figure : Utilisez l’onglet Paramètres pour définir les options d’un prédicat requises.*
 
 1. Dans le champ **[!UICONTROL Nom de la propriété]**, indiquez un nom valide pour la propriété de métadonnées que vous souhaitez associer au prédicat. Il s’agit du nom sur lequel la recherche se base. Par exemple, saisissez `jcr:content/metadata/dc:description` ou `./jcr:content/metadata/dc:description`. Vous pouvez également sélectionner un nœud existant dans la boîte de dialogue de sélection.
 
    ![Associez une propriété de métadonnées à un prédicat dans le champ Nom de propriété](assets/property_settings.png)
 
-   *Figure : Associez une propriété de métadonnées à un prédicat dans le champ Nom de la propriété.*
+   *Figure : Associez une propriété de métadonnées à un prédicat dans le champ Nom de propriété.*
 
-1. Click the **[!UICONTROL Preview]** ![preview](assets/preview.png) to generate a preview of the Filters panel as it appears after you add the predicate.
+1. Cliquez sur **[!UICONTROL Aperçu]** ![aperçu](assets/preview.png) pour générer un aperçu du panneau Filtres tel qu’il apparaît une fois le prédicat ajouté.
 1. Examinez la structure du prédicat en mode Aperçu.
 
    ![Aperçu du formulaire de recherche avant de soumettre les modifications](assets/preview-1.png)
 
    Aperçu du formulaire de recherche avant de soumettre les modifications
 
-1. To close the preview, click the **[!UICONTROL Close]** ![close](assets/do-not-localize/close_icon.png) on the upper-right corner of the preview.
+1. Pour fermer l’aperçu, cliquez sur **[!UICONTROL Fermer]** ![fermer](assets/do-not-localize/close_icon.png) dans le coin supérieur droit de l’aperçu.
 1. Pour enregistrer les paramètres, appuyez sur **[!UICONTROL Terminé]**.
 1. Accédez au panneau Rechercher dans l’interface utilisateur d’Assets. Le prédicat Propriété est ajouté au panneau.
 1. Dans la zone de texte, saisissez une description de la ressource à rechercher. Saisissez par exemple « Adobe ». Lorsque vous effectuez une recherche, les ressources dont la description correspond à « Adobe » sont répertoriées dans les résultats de la recherche.
@@ -144,7 +144,7 @@ Le prédicat `Tags` vous permet de rechercher des ressources sur la base des bal
 1. Indiquez les balises sur la base desquelles vous souhaitez rechercher des ressources ou faites votre sélection dans la liste des suggestions.
 1. Sélectionnez **[!UICONTROL Correspondre à tous les critères]** pour rechercher les ressources qui contiennent toutes les balises que vous spécifiez.
 
-## Ajout d’autres prédicats  {#adding-other-predicates}
+## Ajout d’autres prédicats   {#adding-other-predicates}
 
 Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous pouvez ajouter les autres prédicats suivants au panneau Rechercher :
 
@@ -167,7 +167,7 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
     </ul> </td>
   </tr>
   <tr>
-   <td>Chemin   Navigateur</td>
+   <td>Chemin    Navigateur</td>
    <td>Prédicat de recherche permettant de rechercher des ressources dans des dossiers et des sous-dossiers à un chemin d’accès racine préconfiguré.</td>
    <td>
     <ul>
@@ -217,7 +217,7 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Date   Plage</p> </td>
+   <td><p>Date    Plage</p> </td>
    <td><p>Prédicat de recherche permettant de rechercher des ressources créées pendant une période spécifiée pour une propriété de date. Vous pouvez spécifier des dates de début et de fin dans le panneau Rechercher à l’aide des sélecteurs de date.</p> </td>
    <td>
     <ul>
@@ -324,9 +324,9 @@ Si le rôle d’administrateur ne vous a pas été attribué, voici la liste des
 
 | Action | Autorisation |
 |---|---|
-| Modifier | Read and write permissions on the `/apps` node in CRX. |
-| Supprimer | Read, write, and delete permissions on the `/apps` node in CRX. |
-| Aperçu | Read, write, and delete permissions on the `/var/dam/content` node in CRX. Also, Read and write permissions on `/apps` node. |
+| Modifier | Autorisations de lecture et d’écriture sur le nœud `/apps` dans CRX. |
+| Supprimer | Autorisations de lecture, d’écriture et de suppression sur le nœud `/apps` dans CRX |
+| Aperçu | Autorisations de lecture, d’écriture et de suppression sur le nœud `/var/dam/content` dans CRX De même que les autorisations de lecture et d’écriture sur le nœud `/apps`. |
 
 >[!MORELIKETHIS]
 >
