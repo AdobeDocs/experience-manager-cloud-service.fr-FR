@@ -1,12 +1,12 @@
 ---
-sub-product: Présentation d’AEM en tant que Cloud Service
-user-guide-title: Présentation d’AEM en tant que Cloud Service
+sub-product: Vue d’ensemble d’AEM as a Cloud Service
+user-guide-title: Vue d’ensemble d’AEM as a Cloud Service
 user-guide-description: For an overview of Experience Manager as a Cloud service, including an introduction, terminology, etc., start here.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '41'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
