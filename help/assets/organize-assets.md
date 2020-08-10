@@ -2,11 +2,11 @@
 title: Organisation des ressources numériques
 description: Organisez vos ressources numériques à l’aide de diverses méthodes fournies dans Adobe Experience Manager Assets.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '445'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -44,5 +44,5 @@ Dans Assets, vous pouvez limiter les utilisateurs autorisés à accéder à cert
 Vous pouvez utiliser des dossiers, des balises ou les deux pour organiser des ressources. Lorsque vous ajoutez des balises aux ressources, vous facilitez leur récupération lors d’une recherche. Pour ajouter des balises à une ressource, procédez comme suit :
 
 1. Dans Digital Asset Manager, double-cliquez sur la ressource pour l’ouvrir.
-1. In the **Tags** area, open the menu to reveal the available tags. Sélectionnez les balises appropriées. To delete a tag, hover the pointer over the tag and click `X` to delete it.
+1. Dans la zone **Balises**, ouvrez le menu pour afficher les balises disponibles. Sélectionnez les balises appropriées. Pour supprimer une balise, pointez dessus et cliquez sur `X`.
 1. Cliquez sur **Enregistrer** pour enregistrer les balises ajoutées.
