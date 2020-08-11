@@ -1,11 +1,11 @@
 ---
 title: Modification des propriétés de page
 description: Définissez les propriétés requises pour une page
-translation-type: ht
-source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
-workflow-type: ht
-source-wordcount: '1538'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
+workflow-type: tm+mt
+source-wordcount: '1675'
+ht-degree: 88%
 
 ---
 
@@ -62,13 +62,21 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Heure d’activation**
 
-   * Date et heure auxquelles la page publiée sera activée. Une fois publiée, cette page restera dormante jusqu’à l’heure indiquée.
-   * Ne complétez pas ces champs pour les pages que vous souhaitez publier immédiatement (scénario normal).
+   * Date et heure auxquelles la page publiée sera rendue visible (rendue) sur l’environnement de publication. La page doit être publiée, soit manuellement, soit par réplication automatique préconfigurée.
+
+      >[!NOTE]
+      >
+      > Voir [Heures d’activation et de désactivation - Configuration](/help/operations/replication.md#on-and-off-times-trigger-configuration) du déclencheur pour en savoir plus sur la configuration de la réplication automatique associée.
+
+      * Si elle a déjà été [publiée (manuellement)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) , cette page reste inactive (masquée) jusqu’au rendu au moment spécifié.
+      * Si elle n’est pas publiée et configurée pour la réplication automatique, la page est automatiquement publiée, puis rendue au moment spécifié.
+      * Si elle n’est pas publiée et n’est pas configurée pour la réplication automatique, la page ne sera pas publiée automatiquement. Un 404 sera donc affiché lorsqu’une tentative d’accès à la page est effectuée.
+   * Laissez ces champs (**Heure** de publication et Heure **de** désactivation) vides pour les pages que vous souhaitez publier immédiatement et qui sont disponibles sur l’environnement de publication jusqu’à ce qu’ils soient désactivés (scénario normal).
 
 * **Heure de désactivation**
 
-   * Heure à laquelle la page publiée sera désactivée.
-   * Ne renseignez pas ces champs pour une action immédiate.
+   * Parallèlement à l’heure **** de publication, cette option définit l’heure à laquelle la page publiée sera masquée sur l’environnement de publication.
+   * Laissez ces champs (**Heure** de publication et Heure **de** désactivation) vides pour les pages que vous souhaitez publier immédiatement et qui sont disponibles sur l’environnement de publication jusqu’à ce qu’ils soient désactivés (scénario normal).
 
 * **URL Vanity**
 
