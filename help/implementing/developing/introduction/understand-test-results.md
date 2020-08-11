@@ -2,10 +2,10 @@
 title: Présentation des résultats de test - Cloud Services
 description: Présentation des résultats de test - Cloud Services
 translation-type: tm+mt
-source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
+source-git-commit: 938e83ccb5dfbd69cb1e137667601408185473e0
 workflow-type: tm+mt
 source-wordcount: '1486'
-ht-degree: 66%
+ht-degree: 65%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 66%
 # Présentation des résultats de test {#understand-test-results}
 
 Les exécutions du pipeline Cloud Manager for Cloud Services prennent en charge l’exécution de tests sur l’environnement d’évaluation. Cela contraste avec les tests exécutés dans le cadre de l’étape Test de création et d’unité, qui sont réalisés hors ligne, sans aucun accès à un environnement AEM actif.
-Deux types de tests sont exécutés dans ce contexte :
+Il existe trois types de tests exécutés dans ce contexte :
 * Tests écrits par le client
 * Tests écrits par Adobe
 * Outil Open Source optimisé par Lighthouse depuis Google
