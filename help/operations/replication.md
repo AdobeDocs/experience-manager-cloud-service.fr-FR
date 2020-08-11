@@ -2,17 +2,17 @@
 title: Réplication
 description: Distribution et dépannage de la réplication.
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 4%
+source-wordcount: '303'
+ht-degree: 3%
 
 ---
 
 
 # Réplication {#replication}
 
-Adobe Experience Manager en tant que Cloud Service utilise la fonctionnalité de distribution [de contenu](https://sling.apache.org/documentation/bundles/content-distribution.html) Sling pour déplacer le contenu à répliquer vers un service de pipeline s’exécutant sur les E/S Adobe qui se trouvent en dehors de l’exécution d’AEM.
+Adobe Experience Manager en tant que Cloud Service utilise la fonctionnalité de distribution [de contenu](https://sling.apache.org/documentation/bundles/content-distribution.html) Sling pour déplacer le contenu à répliquer vers un service de pipeline s’exécutant sur des E/S d’Adobe en dehors de l’exécution AEM.
 
 >[!NOTE]
 >
@@ -22,7 +22,15 @@ Adobe Experience Manager en tant que Cloud Service utilise la fonctionnalité de
 
 ### Désactivation/publication rapide - Annulation/publication planifiée {#publish-unpublish}
 
-Ces fonctionnalités standard d’AEM pour les auteurs ne changent pas avec AEM Cloud Service.
+Ces fonctionnalités AEM standard pour les auteurs ne changent pas avec AEM Cloud Service.
+
+### Heures d’activation et de désactivation - Configuration du déclenchement {#on-and-off-times-trigger-configuration}
+
+Les autres possibilités de **l&#39;Heure** d&#39;ouverture et de l&#39;Heure **de** fermeture sont disponibles dans l&#39;onglet [Réglages de base des Propriétés](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)de la page.
+
+Pour réaliser la réplication automatique pour cela, vous devez activer la réplication **** automatique dans la configuration [](/help/implementing/deploying/configuring-osgi.md) OSGi **On Off Trigger Configuration**:
+
+![Configuration OSGi On Off Trigger](/help/operations/assets/replication-on-off-trigger.png)
 
 ### Activation d’une arborescence {#tree-activation}
 
@@ -37,7 +45,7 @@ Pour exécuter une activation d&#39;arborescence :
 
 ## Résolution des incidents {#troubleshooting}
 
-Pour résoudre les problèmes de réplication, accédez aux files d&#39;attente de réplication dans l&#39;interface Web du service de AEM Author :
+Pour résoudre les problèmes de réplication, accédez aux files d’attente de réplication dans l’interface Web du service d’auteur AEM :
 
 1. Dans le menu Début AEM, accédez à **Outils > Déploiement > Distribution**
 2. Sélectionner la carte **forwardPublisher**
@@ -48,5 +56,5 @@ Pour résoudre les problèmes de réplication, accédez aux files d&#39;attente 
 
 ![](assets/logs.png "JournauxJournaux")
 
-Si le contenu n&#39;a pas pu être publié, l&#39;ensemble de la publication est restauré à partir du service de AEM Publish.
+Si le contenu n’a pas pu être publié, l’intégralité de la publication est restaurée à partir du service de publication AEM.
 Dans ce cas, les files d&#39;attente doivent être examinées afin d&#39;identifier les éléments qui ont provoqué l&#39;annulation de la publication. En cliquant sur une file d&#39;attente présentant un état rouge, la file d&#39;attente avec des éléments en attente s&#39;affiche, à partir de laquelle un ou tous les éléments peuvent être effacés si nécessaire.
