@@ -2,10 +2,10 @@
 title: Publication de pages
 description: Publication et annulation de la publication de pages à l’aide d’AEM
 translation-type: tm+mt
-source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
 workflow-type: tm+mt
-source-wordcount: '1694'
-ht-degree: 100%
+source-wordcount: '1717'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ Vous pouvez publier/annuler la publication d’une page immédiatement ou à une
 
 ## Terminologie {#terminology}
 
-Vous pouvez rencontrer différents termes liés à la publication lorsque vous utilisez AEM.
+Vous pouvez rencontrer différents termes liés à la publication lorsque vous travaillez avec Adobe Experience Manager (AEM) en tant que Cloud Service.
 
 * **Publier/Annuler la publication**
    * Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
@@ -53,6 +53,10 @@ Selon votre emplacement, vous pouvez effectuer la publication :
 >* A message will be displayed briefly to notify you that the workflow was triggered.
 -->
 
+>[!NOTE]
+>
+> Pour d&#39;autres possibilités, voir **Heure** de début et Heure **de** fin dans l&#39;onglet [Réglages de base des Propriétés de la page.](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
+
 ### Publication à partir de l’éditeur {#publishing-from-the-editor}
 
 Si vous modifiez une page, vous pouvez la publier directement à partir de l’éditeur.
@@ -67,6 +71,7 @@ Si vous modifiez une page, vous pouvez la publier directement à partir de l’�
    * Si la page comporte des références à publier, celles-ci seront répertoriées dans l’assistant **Publier**, où vous pourrez accomplir ce qui suit :
       * Spécifier les ressources, balises et autres éléments à publier conjointement avec la page, puis cliquer sur **Publier** pour terminer l’opération.
       * Sélectionner **Annuler** pour abandonner l’opération.
+
    ![Publication de références avec la page](/help/sites-cloud/authoring/assets/publishing-references.png)
 
 1. L’option **Publier** réplique la page dans l’environnement de publication. Une bannière d’informations est affichée dans l’éditeur de page pour confirmer l’opération de publication.
@@ -122,6 +127,7 @@ Pour modifier ou annuler la publication d’une page à l’aide de l’option G
 
    * Publier ou annuler la publication des pages sélectionnées.
    * Effectuer une action maintenant ou ultérieurement.
+
    La publication différée lance un workflow pour modifier la ou les pages sélectionnées à l’heure indiquée. Si vous optez pour une annulation différée de la publication, un workflow est lancé pour annuler la publication de la ou des pages sélectionnées à une heure déterminée.
 
    Pour annuler une publication/annulation de publication ultérieurement, rendez-vous dans la console Processus pour mettre un terme au workflow correspondant. <!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
@@ -138,13 +144,14 @@ Pour modifier ou annuler la publication d’une page à l’aide de l’option G
 
    Le bouton Ajouter du contenu lance l’[explorateur de chemins d’accès](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser), qui vous permet de sélectionner du contenu.
 
-   Sélectionnez les pages souhaitées, puis cliquez sur **Sélectionner** pour ajouter du contenu à l’assistant ou sur **Annuler** pour annuler la sélection et revenir à l’assistant.
+   Select the required pages and then click **Select** to add the content to the wizard or **Cancel** to cancel the selection and return to the wizard.
 
    De retour dans l’assistant, vous pouvez sélectionner un élément dans la liste afin de configurer d’autres options :
 
    * Inclure ses enfants.
    * Le supprimer de la sélection.
    * Gérer ses références publiées.
+
    ![Sélection de pages dans la boîte de dialogue Gérer la publication](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
    La boîte de dialogue qui s’ouvre lorsque vous cliquez sur **Inclure les enfants** vous permet d’effectuer les opérations suivantes :
@@ -152,6 +159,7 @@ Pour modifier ou annuler la publication d’une page à l’aide de l’option G
    * Inclure seulement les enfants immédiats.
    * Inclure seulement les pages modifiées.
    * Inclure seulement les pages déjà publiées.
+
    Cliquez sur **Ajouter** pour ajouter les pages enfants à la liste des pages à publier ou dont la publication doit être annulée sur la base des options sélectionnées. Cliquez sur **Annuler** pour annuler la sélection et revenir à l’assistant.
 
    ![Gérer la publication : option Inclure les enfants](/help/sites-cloud/authoring/assets/publishing-include-children.png)
@@ -187,10 +195,12 @@ Pour modifier ou annuler la publication d’une page à l’aide de l’option G
 
    * définir le titre du workflow ;
    * conserver le module de workflow, à condition que le workflow dispose d’une prise en charge multi-ressource ;
+
    <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
     -->
 
    * définir le titre du module de workflow, si l’option de conservation du module de workflow a été sélectionnée.
+
    Cliquez sur **Publier** ou **Publier ultérieurement** pour terminer la publication.
 
 ## Annulation de la publication des pages {#unpublishing-pages}
@@ -237,6 +247,7 @@ Pour ce faire, vous pouvez utiliser l’option [Gérer la publication](#manage-p
 
    * Inclure seulement les enfants immédiats
    * Inclure seulement les pages déjà publiées
+
    Ces options sont sélectionnées par défaut. Vous devez donc penser à les désélectionner. Cliquez sur **Ajouter** pour confirmer et ajouter le contenu à l’opération de publication ou d’annulation de la publication.
 
    ![Inclusion des enfants lors de la l’annulation de la publication](/help/sites-cloud/authoring/assets/publishing-tree-children.png)
