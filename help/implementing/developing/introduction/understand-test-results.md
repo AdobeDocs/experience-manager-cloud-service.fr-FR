@@ -2,10 +2,10 @@
 title: Présentation des résultats de test - Cloud Services
 description: Présentation des résultats de test - Cloud Services
 translation-type: tm+mt
-source-git-commit: 64644b2377eb152a6033fcade79aa820d3e6ff26
+source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 60%
+source-wordcount: '1620'
+ht-degree: 59%
 
 ---
 
@@ -91,7 +91,7 @@ La bonne solution consiste alors à supprimer le mot de passe codé en dur.
 >Bien qu’il soit préférable de rendre l’annotation `@SuppressWarnings` aussi précise que possible, c’est-à-dire de n’annoter que l’énoncé ou le bloc qui cause le problème, il est tout de même possible de le faire à un niveau qui se rapporte à la classe.
 
 >[!NOTE]
->Bien qu&#39;il n&#39;y ait pas d&#39;étape de test de sécurité explicite, des règles de qualité du code liées à la sécurité sont toujours évaluées au cours de l&#39;étape de qualité du code. Refer to [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) for more details.
+>Bien qu&#39;il n&#39;y ait pas d&#39;étape de test de sécurité explicite, des règles de qualité du code liées à la sécurité sont toujours évaluées au cours de l&#39;étape de qualité du code. Pour en savoir plus sur la sécurité dans le Cloud Service, reportez-vous à la section Aperçu de [la sécurité pour AEM Cloud Service](/help/security/cloud-service-security-overview.md) .
 
 ## Tests fonctionnels {#functional-testing}
 
@@ -104,7 +104,9 @@ Les tests fonctionnels sont classés en deux types :
 
 Les tests fonctionnels du produit sont un ensemble de tests d’intégration HTTP (IT) stables qui s’articulent autour des fonctionnalités de base des AEM (par exemple, la création et la réplication) et qui empêchent le déploiement des modifications du code de l’application par les clients s’il rompt cette fonctionnalité de base.
 
-Les tests de fonctionnement du produit s’exécutent automatiquement chaque fois qu’un client déploie un nouveau code dans Cloud Manager.
+Les tests de fonctionnement du produit s’exécutent automatiquement lorsqu’un client déploie un nouveau code dans Cloud Manager et ne peuvent pas être ignorés.
+
+Reportez-vous à la section Tests [Fonctionnels](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) du produit pour les exemples de tests.
 
 ### Tests fonctionnels personnalisés {#custom-functional-testing}
 
