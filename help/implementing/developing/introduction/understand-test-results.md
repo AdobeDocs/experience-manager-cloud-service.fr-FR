@@ -2,10 +2,10 @@
 title: Présentation des résultats de test - Cloud Services
 description: Présentation des résultats de test - Cloud Services
 translation-type: tm+mt
-source-git-commit: c5d5b75f19c5b3d96ed4cd79f9e305b26709675b
+source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
 workflow-type: tm+mt
-source-wordcount: '1578'
-ht-degree: 61%
+source-wordcount: '1614'
+ht-degree: 59%
 
 ---
 
@@ -24,7 +24,7 @@ Ces tests peuvent être :
 
 * Écrit par le client
 * adobe écrit
-* Outil Open Source optimisé par Lighthouse depuis Google
+* Proposé par Lighthouse depuis Google en tant qu&#39;outil open source
 
    >[!NOTE]
    > Les tests écrits par le client et les tests écrits par Adobe sont exécutés dans une infrastructure conteneurisée conçue pour exécuter ces types de tests.
@@ -90,6 +90,9 @@ La bonne solution consiste alors à supprimer le mot de passe codé en dur.
 >
 >Bien qu’il soit préférable de rendre l’annotation `@SuppressWarnings` aussi précise que possible, c’est-à-dire de n’annoter que l’énoncé ou le bloc qui cause le problème, il est tout de même possible de le faire à un niveau qui se rapporte à la classe.
 
+>[!NOTE]
+>Bien qu&#39;il n&#39;y ait pas d&#39;étape de test de sécurité explicite, des règles de qualité du code liées à la sécurité sont toujours évaluées au cours de l&#39;étape de qualité du code. Refer to [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) for more details.
+
 ## Tests fonctionnels {#functional-testing}
 
 Les tests fonctionnels sont classés en deux types :
@@ -111,7 +114,7 @@ L’étape des tests fonctionnels personnalisés du pipeline est toujours prése
 Cependant, si aucun fichier JAR de test n’est généré par la compilation, le test réussit par défaut.
 
 >[!NOTE]
->le bouton **Télécharger le journal** permet d’accéder à un fichier ZIP contenant les journaux du formulaire détaillé d’exécution du test. Ces journaux ne contiennent pas les journaux du processus d’exécution AEM proprement dit. Vous pouvez y accéder à l’aide de la fonctionnalité de téléchargement standard ou d’affichage des dernières lignes des journaux. Pour plus d’informations, reportez-vous à la section [Accès et gestion des journaux](/help/implementing/cloud-manager/manage-logs.md).
+>le bouton **Télécharger le journal** permet d’accéder à un fichier ZIP contenant les journaux du formulaire détaillé d’exécution du test. Ces journaux ne contiennent pas les journaux du processus d’exécution AEM proprement dit. Vous pouvez y accéder à l’aide de la fonctionnalité de téléchargement standard ou d’affichage des dernières lignes des journaux. Refer to [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) for more details.
 
 
 #### Écriture de tests fonctionnels {#writing-functional-tests}
