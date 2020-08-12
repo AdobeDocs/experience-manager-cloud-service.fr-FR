@@ -2,9 +2,9 @@
 title: Déploiement de votre code - Cloud Services
 description: Déploiement de votre code - Cloud Services
 translation-type: tm+mt
-source-git-commit: fe2439e506f84a191922416e9c99b496fd90016c
+source-git-commit: c5d5b75f19c5b3d96ed4cd79f9e305b26709675b
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '992'
 ht-degree: 86%
 
 ---
@@ -51,10 +51,10 @@ Une fois que vous avez configuré le **pipeline** (référentiel, environnement 
    Le **test dans l’environnement intermédiaire** comprend les étapes suivantes :
 
    * Test fonctionnel du produit : Les exécutions du pipeline Cloud Manager prendront en charge l’exécution de tests exécutés par rapport à l’environnement d’affichage.
-Refer to [Understand your Test Results](/help/implementing/developing/introduction/understand-test-results.md) for details on the testing process.
+Pour plus d&#39;informations sur le processus de test, reportez-vous à la section Tests [fonctionnels](/help/implementing/developing/introduction/understand-test-results.md#product-functional-testing) du produit.
 
    * Tests fonctionnels personnalisés : cette étape du pipeline est toujours présente et ne peut pas être ignorée. Cependant, si aucun fichier JAR de test n’est généré par la compilation, le test réussit par défaut.\
-      Refer to [Understand your Test Results](/help/implementing/developing/introduction/understand-test-results.md) for details on the testing process.
+      Pour plus d’informations sur le processus de test, reportez-vous à la section Tests [fonctionnels](/help/implementing/developing/introduction/understand-test-results.md#custom-functional-testing) personnalisés.
 
    * Audit de contenu : Cette étape du pipeline est toujours présente et ne peut pas être ignorée. Lorsqu’un pipeline de production est exécuté, une étape de contrôle du contenu est incluse après un test fonctionnel personnalisé qui exécutera les contrôles. Les pages configurées seront envoyées au service et évaluées. Les résultats sont informatifs et permettent à l’utilisateur de voir les scores et le changement entre les scores actuel et précédent. Cette connaissance est utile pour déterminer si une régression est introduite avec le déploiement actuel.
 Pour plus d&#39;informations, consultez [Comprendre les résultats](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) de l&#39;audit de contenu.
