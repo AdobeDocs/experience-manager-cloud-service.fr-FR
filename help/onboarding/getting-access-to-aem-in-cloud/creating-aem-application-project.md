@@ -2,10 +2,10 @@
 title: Projet de demande de AEM - Cloud Service
 description: Projet de demande de AEM - Cloud Service
 translation-type: tm+mt
-source-git-commit: 1dfc9cfaba4c7701ebca58346d6eec6b946dd517
+source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
 workflow-type: tm+mt
-source-wordcount: '1442'
-ht-degree: 92%
+source-wordcount: '1472'
+ht-degree: 91%
 
 ---
 
@@ -374,3 +374,12 @@ Avec content-package-maven-plugin, il est similaire :
             </configuration>
         </plugin>
 ```
+
+## Ressources supplémentaires {#additional-resources}
+
+Reportez-vous aux sections ci-dessous pour savoir comment utiliser Cloud Manager en Cloud Service :
+
+* [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md)
+* [Configuration de votre pipeline CI-CD](/help/implementing/cloud-manager/configure-pipeline.md)
+* [Déploiement de votre code](/help/implementing/cloud-manager/deploy-code.md)
+* [Présentation des résultats de tests](/help/implementing/developing/introduction/understand-test-results.md)
