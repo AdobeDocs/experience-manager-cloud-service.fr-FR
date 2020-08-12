@@ -2,7 +2,7 @@
 title: Invalidation du cache CDN par le biais de Contenu multimédia dynamique
 description: L’annulation de la validité du contenu CDN en cache vous permet de mettre à jour rapidement les ressources diffusées par Dynamic Media, au lieu d’attendre l’expiration du cache.
 translation-type: tm+mt
-source-git-commit: aae3dcb0f44ef8e8d1401274fbf1fd47ea718b09
+source-git-commit: 68ee2c58588ad519aac673652349e0fefd20ee57
 workflow-type: tm+mt
 source-wordcount: '1194'
 ht-degree: 4%
@@ -37,10 +37,9 @@ See also [Caching overview in Dynamic Media](https://helpx.adobe.com/fr/experien
 
    ![Modèle d’invalidation CDN - Créer](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
-1. Dans le coin supérieur droit de la page Modèle d’invalidation CDN, appuyez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL OK]**.<br>
+1. Dans le coin supérieur droit de la page Modèle d’invalidation CDN, appuyez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL OK]**.
 
-   ***Partie 2 : Définition des options d’invalidation CDN***
-<br>
+   *Partie 2 : Définition des options d’invalidation CDN*
 
 1. Dans AEM en tant que Cloud Service, appuyez sur **[!UICONTROL Outils > Actifs > Invalidation CDN.]**
 
