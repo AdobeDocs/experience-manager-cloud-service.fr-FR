@@ -4,10 +4,10 @@ description: Découvrez les différentes méthodes de gestion et de modification
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d4b4b5fbbd07851485d216b502c66037cccef134
+source-git-commit: a088aa3cd5fda428477c985d1edacf59cfe71a67
 workflow-type: tm+mt
-source-wordcount: '4419'
-ht-degree: 96%
+source-wordcount: '4435'
+ht-degree: 99%
 
 ---
 
@@ -39,17 +39,26 @@ Les caractères suivants (liste de ceux-ci séparés par des espaces) ne sont pa
 
 Voir [Ajout de ressources numériques à Experience Manager](add-assets.md).
 
-## Détecter les ressources de duplicata {#detect-duplicate-assets}
+## Détection des ressources en double {#detect-duplicate-assets}
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-Si un utilisateur DAM télécharge un ou plusieurs actifs qui existent déjà dans le référentiel, [!DNL Experience Manager] détecte la duplication et en informe l’utilisateur. La détection de Duplicata est désactivée par défaut car elle peut avoir un impact sur les performances en fonction de la taille du référentiel et du nombre de ressources téléchargées. Pour activer cette fonctionnalité, configurez le [!UICONTROL détecteur]de duplication de ressources AEM Cloud pour Adobe. Découvrez [comment effectuer des configurations](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)OSGi. La détection de duplication est basée sur la `dam:sha1` valeur unique stockée dans `jcr:content/metadata/dam:sha1`. Cela signifie que les ressources de duplicata sont détectées même si les noms de fichier sont différents.
+Si un utilisateur DAM charge une ou plusieurs ressources qui existent déjà dans le référentiel, [!DNL Experience Manager] détecte la duplication et en informe l’utilisateur. La fonctionnalité de détection des doublons est désactivée par défaut, car elle peut avoir un impact sur les performances en fonction de la taille du référentiel et du nombre de ressources chargées. Pour activer cette fonctionnalité, configurez le [!UICONTROL détecteur de duplication de ressources d’Adobe AEM Cloud]. Découvrez [comment définir des configurations OSGi](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html). La détection de duplication est basée sur la valeur `dam:sha1` unique stockée dans `jcr:content/metadata/dam:sha1`. Ainsi, les ressources en double sont détectées même si les noms de fichier sont différents.
 
-![Détecter la configuration OSGi des ressources de duplicata](assets/duplicate-detection.png)
+![Détecter la configuration OSGi des ressources en double](assets/duplicate-detection.png)
 
-Une fois activé, le Experience Manager envoie des notifications des ressources de duplicata à la boîte de réception. Il s’agit d’un résultat global pour plusieurs duplicata. Les utilisateurs peuvent choisir de supprimer les fichiers en fonction des résultats.
+Vous pouvez ajouter le fichier de configuration `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` dans le code personnalisé et le fichier peut contenir les éléments suivants :
 
-![Notification de boîte de réception pour les ressources de duplicata](assets/duplicate-detect-inbox-notification.png)
+```json
+{
+  "enabled":true,
+  "detectMetadataField":"dam:sha1"
+}
+```
+
+Une fois activé, Experience Manager envoie des notifications de ressources en double vers la boîte de réception. Il s’agit d’un résultat global correspondant à plusieurs doublons. Les utilisateurs peuvent choisir de supprimer les ressources en fonction des résultats.
+
+![Notification de boîte de réception pour les ressources en double](assets/duplicate-detect-inbox-notification.png)
 
 ## Aperçu des ressources {#previewing-assets}
 
