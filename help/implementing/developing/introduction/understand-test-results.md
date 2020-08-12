@@ -2,10 +2,10 @@
 title: Présentation des résultats de test - Cloud Services
 description: Présentation des résultats de test - Cloud Services
 translation-type: tm+mt
-source-git-commit: 938e83ccb5dfbd69cb1e137667601408185473e0
+source-git-commit: c5d5b75f19c5b3d96ed4cd79f9e305b26709675b
 workflow-type: tm+mt
-source-wordcount: '1486'
-ht-degree: 65%
+source-wordcount: '1578'
+ht-degree: 61%
 
 ---
 
@@ -13,9 +13,17 @@ ht-degree: 65%
 # Présentation des résultats de test {#understand-test-results}
 
 Les exécutions du pipeline Cloud Manager for Cloud Services prennent en charge l’exécution de tests sur l’environnement d’évaluation. Cela contraste avec les tests exécutés dans le cadre de l’étape Test de création et d’unité, qui sont réalisés hors ligne, sans aucun accès à un environnement AEM actif.
-Il existe trois types de tests exécutés dans ce contexte :
-* Tests écrits par le client
-* Tests écrits par Adobe
+
+Il existe trois grandes catégories de tests pris en charge par Cloud Manager pour le gazoduc Cloud Services :
+
+1. [Test de qualité du code](#code-quality-testing)
+1. [Tests fonctionnels](#functional-testing)
+1. [Test de l’audit du contenu](#content-audit-testing)
+
+Ces tests peuvent être :
+
+* Écrit par le client
+* adobe écrit
 * Outil Open Source optimisé par Lighthouse depuis Google
 
    >[!NOTE]
@@ -82,7 +90,31 @@ La bonne solution consiste alors à supprimer le mot de passe codé en dur.
 >
 >Bien qu’il soit préférable de rendre l’annotation `@SuppressWarnings` aussi précise que possible, c’est-à-dire de n’annoter que l’énoncé ou le bloc qui cause le problème, il est tout de même possible de le faire à un niveau qui se rapporte à la classe.
 
-## Écriture de tests fonctionnels {#writing-functional-tests}
+## Tests fonctionnels {#functional-testing}
+
+Les tests fonctionnels sont classés en deux types :
+
+* Test fonctionnel du produit
+* Tests fonctionnels personnalisés
+
+### Test fonctionnel du produit {#product-functional-testing}
+
+Les tests fonctionnels du produit sont un ensemble de tests d’intégration HTTP (IT) stables autour de la création, de la réplication, qui empêchent le déploiement des modifications du code de l’application par les clients s’il rompt les fonctionnalités de base de l’AEM.
+Elles s’exécutent automatiquement chaque fois qu’un client déploie un nouveau code dans Cloud Manager.
+
+L&#39;étape de test de la fonction du produit dans le pipeline est toujours présente et ne peut pas être ignorée. Cette étape est en cours d&#39;exécution immédiatement après le déploiement de l&#39;étape.
+
+### Tests fonctionnels personnalisés {#custom-functional-testing}
+
+L’étape des tests fonctionnels personnalisés du pipeline est toujours présente et ne peut pas être ignorée.
+
+Cependant, si aucun fichier JAR de test n’est généré par la compilation, le test réussit par défaut.
+
+>[!NOTE]
+>le bouton **Télécharger le journal** permet d’accéder à un fichier ZIP contenant les journaux du formulaire détaillé d’exécution du test. Ces journaux ne contiennent pas les journaux du processus d’exécution AEM proprement dit. Vous pouvez y accéder à l’aide de la fonctionnalité de téléchargement standard ou d’affichage des dernières lignes des journaux. Pour plus d’informations, reportez-vous à la section [Accès et gestion des journaux](/help/implementing/cloud-manager/manage-logs.md).
+
+
+#### Écriture de tests fonctionnels {#writing-functional-tests}
 
 Les tests fonctionnels écrits par le client doivent être placés dans un fichier JAR distinct produit par la même version de Maven que les artefacts à déployer dans AEM. En règle générale, il s’agit d’un module Maven distinct. Le fichier JAR obtenu doit contenir toutes les dépendances requises. Il est généralement créé avec le plug-in Assembly de Maven à l’aide du descripteur jar-with-dependencies.
 
@@ -124,15 +156,6 @@ Dans ce fichier JAR, les noms de classe des tests à exécuter doivent se termin
 Par exemple, une classe nommée `com.myco.tests.aem.ExampleIT` sera exécutée, mais pas une classe nommée `com.myco.tests.aem.ExampleTest`.
 
 Les classes de test doivent être des tests JUnit normaux. L’infrastructure de test est conçue et configurée pour être compatible avec les conventions utilisées par la bibliothèque de tests aem-testing-clients. Les développeurs sont vivement encouragés à utiliser cette bibliothèque et à suivre les bonnes pratiques en vigueur. Pour plus d’informations, voir [Lien Git](https://github.com/adobe/aem-testing-clients).
-
-## Tests fonctionnels personnalisés {#custom-functional-test}
-
-L’étape des tests fonctionnels personnalisés du pipeline est toujours présente et ne peut pas être ignorée.
-
-Cependant, si aucun fichier JAR de test n’est généré par la compilation, le test réussit par défaut. Actuellement, cette étape est effectuée immédiatement après le déploiement intermédiaire.
-
->[!NOTE]
->le bouton **Télécharger le journal** permet d’accéder à un fichier ZIP contenant les journaux du formulaire détaillé d’exécution du test. Ces journaux ne contiennent pas les journaux du processus d’exécution AEM proprement dit. Vous pouvez y accéder à l’aide de la fonctionnalité de téléchargement standard ou d’affichage des dernières lignes des journaux. Pour plus d’informations, reportez-vous à la section [Accès et gestion des journaux](/help/implementing/cloud-manager/manage-logs.md).
 
 ## Test de l’audit du contenu {#content-audit-testing}
 
