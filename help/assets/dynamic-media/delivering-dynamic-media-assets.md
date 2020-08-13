@@ -2,10 +2,10 @@
 title: Diffusion de ressources Dynamic Media
 description: Découvrez comment diffuser des ressources Dynamic Media
 translation-type: tm+mt
-source-git-commit: ea6a1bddaab6819d1f89268ceba3c4d4981729a2
+source-git-commit: a09e82278df1adfb225a01e60ae7ef188375b800
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 93%
+source-wordcount: '306'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,6 @@ Pour plus d’informations, reportez-vous aux rubriques suivantes :
 * [Liaison d’URL à une application web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [Diffusion d’images optimisées pour un site réactif](/help/assets/dynamic-media/responsive-site.md)
 * [Diffusion de contenu HTTP/2](/help/assets/dynamic-media/http2faq.md)
-* [Invalidation du cache CDN à l’aide de Contenu multimédia dynamique](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 * [Invalidation du cache CDN par le biais de Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
 * [Utilisation de jeux de règles de transformation d’URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
