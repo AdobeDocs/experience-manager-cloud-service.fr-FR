@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2020.8.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[ !DNL Adobe Experience Manager] en tant que notes de mise à jour Cloud Service pour la version 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: dafdbffa96cd565379a700c696586222f43022c2
+source-git-commit: bb5bf9527da7ed9039740ef6d0bab27cfd21b84e
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 8%
+source-wordcount: '525'
+ht-degree: 23%
 
 ---
 
@@ -13,6 +13,10 @@ ht-degree: 8%
 # Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
 
 La section suivante décrit les notes de mise à jour générales d’Experience Manager as a Cloud Service 2020.8.0.
+
+## [!DNL Adobe Experience Manager Assets]as a Cloud Service{#assets}
+
+* Les nouveaux [!DNL Experience Manager Assets] déploiements sont intégrés [!DNL Adobe Developer Console] par défaut. Il permet de configurer plus rapidement la fonctionnalité des balises actives. Dans les déploiements existants, les administrateurs [configurent l’intégration](/help/assets/smart-tags-configuration.md#aio-integration) des balises actives comme auparavant.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -42,23 +46,23 @@ La date de publication de la mise à jour 2020.8.0 de [!UICONTROL Cloud Manage
 
 ### Correctifs {#bug-fixes-cm}
 
-* Certains modules externes SonarQube inutiles et indésirables étaient exécutés dans le cadre de l’analyse de la qualité du code.
+* Certains plug-ins SonarQube inutiles et indésirables étaient exécutés dans le cadre de l’analyse de la qualité du code.
 
-* Sur la page d&#39;exécution du pipeline, le nom de la branche n&#39;était pas correctement formaté.
+* Sur la page d’exécution du pipeline, le nom de la branche n’était pas correctement formaté.
 
-* Dans certains cas, les exécutions de pipeline achevées n&#39;ont pas été enregistrées comme ayant été achevées, ce qui a empêché de nouvelles exécutions de pipeline.
+* Dans certains cas, les exécutions de pipeline achevées n’étaient pas été enregistrées comme ayant été achevées, ce qui empêchait de nouvelles exécutions de pipeline.
 
-* Les exécutions de pipelines se retrouveraient parfois *bloquées* en raison de problèmes de communication interne.
+* Les exécutions de pipelines étaient parfois *bloquées* en raison de problèmes de communication interne.
 
 * Lors de la mise en service d’une nouvelle organisation, certains utilisateurs ayant des rôles d’administration autres que les administrateurs système ont reçu par erreur l’accès à Cloud Manager.
 
 * Dans certaines conditions, la tâche de mise à jour des index a été lancée plusieurs fois en parallèle, ce qui a entraîné un échec du déploiement.
 
-* L’info-bulle des cartes de programme n’était pas toujours correcte.
+* Les info-bulles des cartes de programme n’étaient pas toujours correctes.
 
 * L’interface utilisateur permettait par erreur de tenter une opération sur un environnement alors qu’elle était en cours de suppression.
 
-* La page **Aperçu** de Cloud Manager ne correspondait pas aux couleurs.
+* There was a color mismatch on the Cloud Manager&#39;s **Overview** page.
 
 ### Problèmes connus {#known-issues-cm}
 
