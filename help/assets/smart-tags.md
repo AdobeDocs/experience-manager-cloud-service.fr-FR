@@ -2,11 +2,11 @@
 title: Balisez des images avec des services d’intelligence artificielle.
 description: Balisez des images avec des services d’intelligence artificielle en appliquant des balises commerciales contextuelles et descriptives à l’aide des services Adobe Sensei.
 contentOwner: AG
-translation-type: ht
-source-git-commit: cc24b16cf17f146e773e7974c649adae1bd10ddf
-workflow-type: ht
-source-wordcount: '2401'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 33ce255e126f2a49f1c1a6e94955aade2ca0d240
+workflow-type: tm+mt
+source-wordcount: '2425'
+ht-degree: 98%
 
 ---
 
@@ -37,9 +37,11 @@ Les balises intelligentes ne s’appliquent qu’aux clients [!DNL Adobe Experie
 
 ## Intégrer [!DNL Experience Manager] avec Adobe Developer Console {#integrate-aem-with-aio}
 
-Vous pouvez intégrer [!DNL Adobe Experience Manager] avec les balises intelligentes à l’aide d’Adobe Developer Console. Utilisez cette configuration pour accéder au service de balises intelligentes depuis [!DNL Experience Manager].
+>[!IMPORTANT]
+>
+>Les nouveaux [!DNL Experience Manager Assets] déploiements sont intégrés [!DNL Adobe Developer Console] par défaut. Il permet de configurer plus rapidement la fonctionnalité des balises actives. Sur les déploiements existants, les administrateurs peuvent [configurer manuellement l’intégration](/help/assets/smart-tags-configuration.md#aio-integration)des balises actives.
 
-Voir [Configuration d’Experience Manager pour le balisage intelligent des ressources](smart-tags-configuration.md) pour les tâches de configuration des balises intelligentes. En arrière-plan, le serveur [!DNL Experience Manager] authentifie vos informations d’identification du service auprès de la passerelle Adobe Developer Console avant de transférer votre demande au service de balises intelligentes.
+Vous pouvez intégrer [!DNL Adobe Experience Manager] les balises actives à l’aide [!DNL Adobe Developer Console]. Utilisez cette configuration pour accéder au service de balises intelligentes depuis [!DNL Experience Manager]. Voir [Configuration d’Experience Manager pour le balisage intelligent des ressources](smart-tags-configuration.md) pour les tâches de configuration des balises intelligentes. En arrière-plan, le serveur [!DNL Experience Manager] authentifie vos informations d’identification du service auprès de la passerelle Adobe Developer Console avant de transférer votre demande au service de balises intelligentes.
 
 ## Comprendre les directives et les modèles relatifs aux balises {#understand-tag-models-guidelines}.
 
