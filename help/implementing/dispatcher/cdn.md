@@ -1,11 +1,11 @@
 ---
 title: Réseau de diffusion de contenu dans AEM as a Cloud Service
 description: Réseau de diffusion de contenu dans AEM as a Cloud Service
-translation-type: ht
-source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
-workflow-type: ht
-source-wordcount: '646'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 38b69b96011b7920adaf7f6cca0edff10f387b41
+workflow-type: tm+mt
+source-wordcount: '668'
+ht-degree: 89%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 AEM as a Cloud Service est fourni avec un réseau de diffusion de contenu intégré. Son principal objectif est de réduire la latence en fournissant du contenu pouvant être mis en cache à partir des nœuds CDN en périphérie, près du navigateur. Il est entièrement géré et configuré afin de permettre des performances optimales des applications AEM.
 
-Le réseau de diffusion de contenu géré par AEM satisfait à la plupart des exigences de performances et de sécurité du client. Les clients peuvent éventuellement privilégier leur propre réseau de diffusion de contenu, mais il leur appartiendra de le gérer. Ce choix sera possible au cas par cas, en fonction de certaines conditions préalables, y compris, mais sans s’y limiter, le fait que le client possède une ancienne intégration avec son fournisseur de réseau de diffusion de contenu, et qu’il soit difficile de l’abandonner.
+Le réseau de diffusion de contenu géré par AEM satisfait à la plupart des exigences de performances et de sécurité du client. Pour le niveau de publication, les clients peuvent éventuellement le pointer à partir de leur propre réseau de diffusion de contenu, qu’ils devront gérer. Ce choix sera possible au cas par cas, en fonction de certaines conditions préalables, y compris, mais sans s’y limiter, le fait que le client possède une ancienne intégration avec son fournisseur de réseau de diffusion de contenu, et qu’il soit difficile de l’abandonner.
 
 ## Réseau de diffusion de contenu géré par AEM {#aem-managed-cdn}
 
@@ -53,4 +53,6 @@ Instructions de configuration :
 
 Avant d’accepter le trafic en direct, vous devez vérifier auprès du service clientèle d’Adobe que le trafic de bout en bout fonctionne correctement.
 
-Notez que les performances peuvent potentiellement diminuer en raison du saut supplémentaire, bien que les sauts entre le réseau de diffusion du client et celui géré par Adobe puissent être efficaces.
+Il y a peut-être un faible impact sur les performances en raison du saut supplémentaire, bien que les houblons du CDN du client au CDN géré par l&#39;Adobe soient susceptibles d&#39;être efficaces.
+
+Notez que cette configuration CDN client est prise en charge pour la couche Publication, mais pas devant la couche Auteur.
