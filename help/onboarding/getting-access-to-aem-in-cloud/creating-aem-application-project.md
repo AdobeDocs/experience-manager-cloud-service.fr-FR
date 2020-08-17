@@ -2,10 +2,10 @@
 title: Projet de demande de AEM - Cloud Service
 description: Projet de demande de AEM - Cloud Service
 translation-type: tm+mt
-source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
+source-git-commit: 2a89c8039f3d2135d8944822d3a4381142bbdb75
 workflow-type: tm+mt
-source-wordcount: '1472'
-ht-degree: 91%
+source-wordcount: '1543'
+ht-degree: 89%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 91%
 
 ## Utilisation de l’assistant pour créer un projet d’application AEM {#using-wizard-to-create-an-aem-application-project}
 
-Pour faciliter la prise en main des nouveaux clients, Cloud Manager peut désormais créer un projet AEM minimal comme point de départ. Ce processus est basé sur l’[**AEM Project Archetype **](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
+Pour faciliter la prise en main des nouveaux clients, Cloud Manager peut désormais créer un projet AEM minimal comme point de départ. Ce processus est basé sur l’[**AEM Project Archetype**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
 
 Suivez les étapes ci-dessous pour créer un projet d’application AEM dans Cloud Manager :
@@ -59,6 +59,7 @@ Cloud Manager crée et teste votre code à l&#39;aide d&#39;un environnement de 
 
 * L&#39;environnement de création est basé sur Linux, dérivé de Ubuntu 18.04.
 * Apache Maven 3.6.0 est installé.
+* Les versions Java installées sont Oracle JDK 8u202 et 11.0.2.
 * D’autres packages système nécessaires sont installés :
 
    * bzip2
@@ -75,6 +76,38 @@ Cloud Manager crée et teste votre code à l&#39;aide d&#39;un environnement de 
 >[!NOTE]
 >Bien que Cloud Manager ne définisse pas de version spécifique du `jacoco-maven-plugin`, la version utilisée doit être au moins `0.7.5.201505241946`.
 
+### Utilisation de la prise en charge de Java 11 {#using-java-support}
+
+Cloud Manager prend désormais en charge la création de projets clients avec Java 8 et Java 11. Par défaut, les projets sont créés à l’aide de Java 8. Les clients qui souhaitent utiliser Java 11 dans leurs projets peuvent le faire à l’aide du plug-in Maven Toolchain.
+
+À cet effet, dans le fichier pom.xml, ajoutez une `<plugin>` entrée du type suivant :
+
+```
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-toolchains-plugin</artifactId>
+    <version>1.1</version>
+    <executions>
+        <execution>
+            <goals>
+                <goal>toolchain</goal>
+            </goals>
+        </execution>
+    </executions>
+    <configuration>
+        <toolchains>
+            <jdk>
+                <version>11</version>
+                <vendor>oracle</vendor>
+           </jdk>
+        </toolchains>
+    </configuration>
+</plugin>
+```
+
+>[!NOTE]
+>Les valeurs de fournisseur prises en charge sont `oracle` et `sun`.
+>Les valeurs de version prises en charge sont `1.8`, `1.11`et `11`.
 
 ## Variables d’environnement {#environment-variables}
 
