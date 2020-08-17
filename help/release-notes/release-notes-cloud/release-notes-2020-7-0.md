@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2020.7.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[ !DNL Adobe Experience Manager] en tant que notes de mise à jour Cloud Service pour la version 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: ded8f565ac80b5819eeee15396da5987da43dfd0
+source-git-commit: 4211a4d95be6e625b283e3142609923245da8d31
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 38%
+source-wordcount: '1056'
+ht-degree: 36%
 
 ---
 
@@ -30,11 +30,11 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 * Les configurations sont désormais stockées dans `/conf` le référentiel du Experience Manager plutôt que `/etc/cloudsettings` dans celui-ci.
 
-## Adobe Experience Manager Assets as a Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets]as a Cloud Service{#assets}
 
-### Nouveautés {#what-is-new-assets}
+### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] est un service évolutif et extensible permettant de traiter les ressources. Les administrateurs peuvent configurer le Experience Manager pour appeler les applications personnalisées créées à l’aide du [!DNL Asset Compute Service]. Les développeurs peuvent utiliser ce service pour créer des applications personnalisées spécialisées qui répondent à des cas d’utilisation complexes. Ce service Web peut générer des miniatures pour différents types de fichiers, des rendus d&#39;images de haute qualité à partir de formats de fichiers Adobes, coder des vidéos (à venir), extraire des métadonnées, extraire du texte intégral comme précurseur de l&#39;indexation et exécuter un fichier par l&#39;intermédiaire de tous les services Sensei disponibles. voir [Utilisation des microservices de ressources et des profils](/help/assets/asset-microservices-configure-and-use.md)de traitement.
+* [!DNL Asset Compute Service] est un service évolutif et extensible permettant de traiter les ressources. Les administrateurs peuvent configurer [!DNL Experience Manager] pour appeler des applications personnalisées créées à l’aide de la [!DNL Asset Compute Service]. Les développeurs peuvent utiliser ce service pour créer des applications personnalisées spécialisées qui répondent à des cas d’utilisation complexes. Ce service Web peut générer des miniatures pour différents types de fichiers, des rendus d’images de haute qualité à partir de formats de fichier Adobe, coder des vidéos (à venir), extraire des métadonnées, extraire du texte intégral en tant que précurseur de l’indexation et exécuter un fichier via tous les [!DNL Sensei] services disponibles. voir [utiliser des microservices de ressources et des profils](/help/assets/asset-microservices-configure-and-use.md)de traitement.
 
 * La configuration initiale de [!DNL Dynamic Media] en [!DNL Experience Manager] tant que Cloud Service est améliorée pour être plus robuste. Il fournit désormais aux administrateurs la progression des processus.
 
@@ -42,7 +42,13 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 * Les étapes de flux de travaux qui ne sont pas compatibles avec un déploiement de Cloud Service sont désormais signalées par un avertissement dans l’éditeur de modèles [!UICONTROL de] flux de travaux. De plus, lors de l’exécution des workflows existants sur un environnement Cloud Service, les étapes de flux de travaux incompatibles sont ignorées.
 
-* Les modèles de flux de travaux créés par les clients qui sont déployés dans `/conf/global` le projet Git associé à l’environnement dans Cloud Manager sont automatiquement déployés dans `/var` et sont donc disponibles dans le Experience Manager. Les modèles de processus des produits sous `/libs` lesquels le client a modifié n’ont pas été automatiquement déployés dans `/var`.
+* Les modèles de flux de travaux créés par les clients qui sont déployés dans `/conf/global` le projet Git associé à l&#39;environnement dans [!DNL Cloud Manager] sont automatiquement déployés dans `/var` et donc disponibles dans [!DNL Experience Manager]. Les modèles de processus des produits sous `/libs` lesquels le client a modifié n’ont pas été automatiquement déployés dans `/var`.
+
+### Bugs résolus {#assets-bugs-fixed}
+
+* L’assistant de déplacement d’actifs ne se charge pas comme prévu pour les actifs inclus dans les collections. (CQ-4296756)
+* Les valeurs de `dam:size` et `dam:sha1` sont exclues de l’écriture différée XMP. (CQ-4237355)
+* Lors de l’annulation de la publication de fichiers en bloc, [!DNL Brand Portal] génère une erreur suggérant que l’URI de demande est trop long. (CQ-4299474)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
