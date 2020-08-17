@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2020.8.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[ !DNL Adobe Experience Manager] en tant que notes de mise à jour Cloud Service pour la version 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: bb5bf9527da7ed9039740ef6d0bab27cfd21b84e
+source-git-commit: 5a53e13a3692fbb8ab3ae7760f13b6908d15db3a
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 23%
+source-wordcount: '544'
+ht-degree: 24%
 
 ---
 
@@ -43,6 +43,9 @@ La date de publication de la mise à jour 2020.8.0 de [!UICONTROL Cloud Manage
 * Les environnements en veille prolongée peuvent être désactivés à partir de la page **Présentation** de Cloud Manager.
 
 * Les référentiels Maven privés liés à l’authentification sont désormais pris en charge.
+
+* Le conteneur de création Cloud Manager prend désormais en charge Java 8 et Java 11.
+Consultez [Utilisation de la prise en charge](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#using-java-support) de Java 11 pour plus d’informations.
 
 ### Correctifs {#bug-fixes-cm}
 
