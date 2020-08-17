@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2020.7.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[ !DNL Adobe Experience Manager] en tant que notes de mise à jour Cloud Service pour la version 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: 85f5262c2af7502e98fcb60b51b9b13d2c2c0f2c
+source-git-commit: ded8f565ac80b5819eeee15396da5987da43dfd0
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 37%
+source-wordcount: '1018'
+ht-degree: 38%
 
 ---
 
@@ -84,6 +84,11 @@ La date de publication de la mise à jour 2020.7.0 de [!UICONTROL Cloud Manager
 * Les pipelines de Cloud Manager prennent désormais en charge les variables et les secrets définis par le client.
 
    Pour plus d’informations, consultez [Variables de pipeline](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables).
+
+* Les référentiels Maven privés liés à l’authentification sont désormais pris en charge.
+
+* Le conteneur de création Cloud Manager prend désormais en charge Java 8 et Java 11.
+Consultez [Utilisation de la prise en charge](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#using-java-support) de Java 11 pour plus d’informations.
 
 ### Correctifs {#bug-fixes-cm}
 
