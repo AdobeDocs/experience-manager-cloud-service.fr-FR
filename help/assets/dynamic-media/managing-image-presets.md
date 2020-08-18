@@ -1,11 +1,11 @@
 ---
 title: Gestion des paramètres d’image prédéfinis
 description: Découvrez les paramètres d’image prédéfinis, et comment les créer, les modifier et les gérer.
-translation-type: ht
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
-workflow-type: ht
-source-wordcount: '3651'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
+workflow-type: tm+mt
+source-wordcount: '3649'
+ht-degree: 98%
 
 ---
 
@@ -34,7 +34,7 @@ Les images de taille réduite, lorsqu’elles sont diffusées dynamiquement, peu
 
 Les administrateurs peuvent créer des paramètres d’image prédéfinis. Vous pouvez créer un paramètre d’image prédéfini ou commencer par un paramètre d’image existant et l’enregistrer sous un nouveau nom.
 
-## Gestion des paramètres d’image prédéfinis  {#managing-image-presets-1}
+## Gestion des paramètres d’image prédéfinis {#managing-image-presets-1}
 
 La gestion des paramètres d’image prédéfinis dans AEM s’effectue en appuyant ou en cliquant sur le logo AEM pour accéder à la console de navigation globale, puis en appuyant ou en cliquant sur l’icône Outils et en accédant à **[!UICONTROL Ressources > Paramètres d’image prédéfinis]**.
 
@@ -273,7 +273,7 @@ Lorsque ces valeurs sont vides, AEM détermine que ce paramètre d’image préd
 
 Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous disposez des options décrites dans cette section. En outre, Adobe recommande les options suivantes (correspondant aux « bonnes pratiques ») pour commencer :
 
-* **Format** (onglet **[!UICONTROL De base]**) : sélectionnez **[!UICONTROL JPEG]** ou un autre format qui répond à vos besoins. Tous les navigateurs web prennent en charge le format d’image JPEG ; il offre un bon équilibre entre la taille des fichiers et la qualité des images. Toutefois, les images au format JPEG utilisent un modèle de compression avec perte qui peut introduire des artefacts d’image indésirables si le paramètre de compression est trop faible. C’est pourquoi Adobe recommande de définir la qualité de compression sur 75. Ce paramètre offre un bon équilibre entre la qualité d’image et la taille de fichier réduite.
+* **[!UICONTROL Format]** (onglet **[!UICONTROL Basic]** ) - Sélectionnez **[!UICONTROL JPEG]** ou un autre format qui répond à vos besoins. Tous les navigateurs Web prennent en charge le format d’image JPEG ; il offre un bon équilibre entre la taille des petits fichiers et la qualité des images. Cependant, les images au format JPEG utilisent un modèle de compression avec perte qui peut introduire des artefacts d’image indésirables si le paramètre de compression est trop faible. C’est pourquoi Adobe recommande de définir la qualité de compression sur 75. Ce paramètre offre un bon équilibre entre la qualité d’image et la taille de fichier réduite.
 
 * **[!UICONTROL Activer l’accentuation simple]** : ne sélectionnez pas l’option **[!UICONTROL Activer l’accentuation simple]** (ce filtre d’accentuation est moins précis que les paramètres Accentuation).
 
@@ -475,4 +475,4 @@ Les paramètres d’image prédéfinis sont automatiquement publiés.
 ### Suppression de paramètres d’image prédéfinis {#deleting-image-presets}
 
 1. Dans AEM, appuyez sur le logo AEM pour accéder à la console de navigation globale, puis appuyez ou cliquez sur l’icône Outils et accédez à **[!UICONTROL Ressources > Paramètres d’image prédéfinis]**.
-1. Sélectionnez un paramètre prédéfini, puis cliquez sur **Supprimer**. Dynamic Media vous invite à confirmer la suppression. Appuyez sur **[!UICONTROL Supprimer]** pour le supprimer ou sur **[!UICONTROL Annuler]** pour annuler.
+1. Sélectionnez un paramètre prédéfini, puis cliquez sur **[!UICONTROL Supprimer]**. Dynamic Media vous invite à confirmer la suppression. Appuyez sur **[!UICONTROL Supprimer]** pour le supprimer ou sur **[!UICONTROL Annuler]** pour annuler.
