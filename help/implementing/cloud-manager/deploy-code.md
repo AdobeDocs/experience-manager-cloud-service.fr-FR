@@ -2,7 +2,7 @@
 title: Déploiement de votre code - Cloud Services
 description: Déploiement de votre code - Cloud Services
 translation-type: tm+mt
-source-git-commit: 6eee78f2883b15f793662dc1474b7b7874903702
+source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 82%
@@ -43,7 +43,7 @@ Once you have configured your Production **Pipeline** (repository, environment, 
 
    * Validation : cette étape permet de s’assurer que le pipeline est configuré pour utiliser les ressources actuellement disponibles ; par exemple, la branche configurée existe, les environnements sont disponibles, etc.
    * Test de création et d’unité : cette étape exécute un processus de création en conteneur. Pour plus d’informations sur l’environnement de création, voir Détails [de l’Environnement de](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) création.
-   * Analyse du code : cette étape évalue la qualité du code de votre application. Voir Test [de la qualité du](/help/implementing/developing/introduction/understand-test-results.md#code-quality-testing) code pour plus d’informations sur le processus de test.
+   * Analyse du code : cette étape évalue la qualité du code de votre application. Voir Test [de la qualité du](/help/implementing/cloud-manager/code-quality-testing.md) code pour plus d’informations sur le processus de test.
    * Compiler des images : cette étape comprend un fichier journal du processus utilisé pour compiler des images. Ce processus est responsable de la transformation du contenu et des modules du Dispatcher générés par l’étape de compilation en images Docker et en configuration Kubernetes.
    * Déploiement dans l’environnement d’évaluation.
 
@@ -51,13 +51,13 @@ Once you have configured your Production **Pipeline** (repository, environment, 
    Le **test dans l’environnement intermédiaire** comprend les étapes suivantes :
 
    * Test fonctionnel du produit : Les exécutions du pipeline Cloud Manager prendront en charge l’exécution de tests exécutés par rapport à l’environnement d’affichage.
-Pour plus d&#39;informations, reportez-vous à la section Tests [fonctionnels](/help/implementing/developing/introduction/understand-test-results.md#product-functional-testing) du produit.
+Pour plus d&#39;informations, reportez-vous à la section Tests [fonctionnels](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) du produit.
 
    * Tests fonctionnels personnalisés : cette étape du pipeline est toujours présente et ne peut pas être ignorée. Cependant, si aucun fichier JAR de test n’est généré par la compilation, le test réussit par défaut.\
-      Pour plus d&#39;informations, reportez-vous à la section Tests [fonctionnels](/help/implementing/developing/introduction/understand-test-results.md#custom-functional-testing) personnalisés.
+      Pour plus d&#39;informations, reportez-vous à la section Tests [fonctionnels](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) personnalisés.
 
    * Audit de contenu : Cette étape du pipeline est toujours présente et ne peut pas être ignorée. Lorsqu’un pipeline de production est exécuté, une étape de contrôle du contenu est incluse après un test fonctionnel personnalisé qui exécutera les contrôles. Les pages configurées seront envoyées au service et évaluées. Les résultats sont informatifs et permettent à l’utilisateur de voir les scores et le changement entre les scores actuel et précédent. Cette connaissance est utile pour déterminer si une régression est introduite avec le déploiement actuel.
-Pour plus d&#39;informations, consultez [Comprendre les résultats](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) de l&#39;audit de contenu.
+Pour plus d&#39;informations, consultez [Comprendre les résultats](/help/implementing/cloud-manager/content-audit-testing.md) de l&#39;audit de contenu.
 
       ![](assets/testing-tab.png)
 
