@@ -2,10 +2,10 @@
 title: Présentation des résultats de test - Cloud Services
 description: Présentation des résultats de test - Cloud Services
 translation-type: tm+mt
-source-git-commit: 6eee78f2883b15f793662dc1474b7b7874903702
+source-git-commit: bf0ecdfa4685d7ce9b26266e19af71199dd117a4
 workflow-type: tm+mt
-source-wordcount: '1700'
-ht-degree: 54%
+source-wordcount: '1703'
+ht-degree: 55%
 
 ---
 
@@ -36,9 +36,13 @@ Cette étape évalue la qualité du code de votre application. Il s&#39;agit de 
 
 Reportez-vous à [Configuration de votre pipeline](/help/implementing/cloud-manager/configure-pipeline.md) CI-CD pour en savoir plus sur les différents types de conduites.
 
+### Présentation des règles de qualité du code personnalisé {#understanding-code-quality-rules}
+
 Dans le test de qualité du code, le code source est analysé afin de s’assurer qu’il se déploie selon certains critères de qualité. Actuellement, cette analyse est implémentée par une combinaison de SonarQube et d’examens au niveau du package de contenu à l’aide de OakPAL. Il existe plus de 100 règles combinant des règles Java génériques et des règles spécifiques à AEM. Certaines des règles spécifiques à l&#39;AEM sont créées en fonction des meilleures pratiques d&#39;AEM Engineering et sont appelées Règles [de qualité du code](/help/implementing/cloud-manager/custom-code-quality-rules.md)personnalisé.
 
-Les résultats de cette étape sont distribués sous forme de *cotation*. Le tableau ci-dessous résume les cotes attribuées à divers critères d&#39;examen :
+You can download the list of rules [here](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx).
+
+Les résultats de cette étape sont distribués sous forme de *cotation*. Le tableau suivant résume l’évaluation des critères de test :
 
 | Nom | Définition | Catégorie | Seuil d’échec |
 |--- |--- |--- |--- |
@@ -50,9 +54,6 @@ Les résultats de cette étape sont distribués sous forme de *cotation*. Le tab
 | Problèmes en cours | Types de problèmes généraux - Vulnérabilités, bogues et smells de code | Infos | > 0 |
 | Lignes dupliquées | Nombre de lignes impliquées dans des blocs dupliqués. <br/>Pour qu’un bloc de code soit considéré comme dupliqué : <br/><ul><li>**Projets non Java :**</li><li>Il doit y avoir au moins 100 jetons successifs et dupliqués.</li><li>Ces jetons doivent être répartis au moins sur : </li><li>30 lignes de code pour COBOL </li><li>20 lignes de code pour ABAP </li><li>10 lignes de code pour d’autres langages</li><li>**Projets Java :**</li><li> Il devrait y avoir au moins 10 instructions successives et dupliquées, quel que soit le nombre de jetons et de lignes.</li></ul> <br/>Les différences dans la mise en retrait ainsi que dans les littéraux de chaîne sont ignorées lors de la détection des doublons. | Infos | > 1% |
 | Compatibilité Cloud Service | Nombre de problèmes de compatibilité Cloud Service identifiés. | Infos | > 0 |
-
-
-Vous pouvez télécharger la liste des règles ici : [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx).
 
 >[!NOTE]
 >
