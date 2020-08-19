@@ -2,10 +2,10 @@
 title: Présentation des résultats de test - Cloud Services
 description: Présentation des résultats de test - Cloud Services
 translation-type: tm+mt
-source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
+source-git-commit: 6eee78f2883b15f793662dc1474b7b7874903702
 workflow-type: tm+mt
-source-wordcount: '1620'
-ht-degree: 59%
+source-wordcount: '1700'
+ht-degree: 54%
 
 ---
 
@@ -32,7 +32,13 @@ Ces tests peuvent être :
 
 ## Test de qualité du code {#code-quality-testing}
 
-Dans le cadre du pipeline, le code source est analysé afin de garantir que les déploiements respectent certains critères de qualité. Actuellement, cette analyse est implémentée par une combinaison de SonarQube et d’examens au niveau du package de contenu à l’aide de OakPAL. Il existe plus de 100 règles combinant des règles Java génériques et des règles spécifiques à AEM. Le tableau suivant résume l’évaluation des critères de test :
+Cette étape évalue la qualité du code de votre application. Il s&#39;agit de l&#39;objectif principal d&#39;un pipeline de qualité code uniquement et il est exécuté immédiatement après l&#39;étape de construction dans tous les pipelines de non-production et de production.
+
+Reportez-vous à [Configuration de votre pipeline](/help/implementing/cloud-manager/configure-pipeline.md) CI-CD pour en savoir plus sur les différents types de conduites.
+
+Dans le test de qualité du code, le code source est analysé afin de s’assurer qu’il se déploie selon certains critères de qualité. Actuellement, cette analyse est implémentée par une combinaison de SonarQube et d’examens au niveau du package de contenu à l’aide de OakPAL. Il existe plus de 100 règles combinant des règles Java génériques et des règles spécifiques à AEM. Certaines des règles spécifiques à l&#39;AEM sont créées en fonction des meilleures pratiques d&#39;AEM Engineering et sont appelées Règles [de qualité du code](/help/implementing/cloud-manager/custom-code-quality-rules.md)personnalisé.
+
+Les résultats de cette étape sont distribués sous forme de *cotation*. Le tableau ci-dessous résume les cotes attribuées à divers critères d&#39;examen :
 
 | Nom | Définition | Catégorie | Seuil d’échec |
 |--- |--- |--- |--- |
@@ -46,11 +52,12 @@ Dans le cadre du pipeline, le code source est analysé afin de garantir que les 
 | Compatibilité Cloud Service | Nombre de problèmes de compatibilité Cloud Service identifiés. | Infos | > 0 |
 
 
+Vous pouvez télécharger la liste des règles ici : [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx).
+
 >[!NOTE]
 >
 >Pour des définitions plus détaillées, consultez [Définitions des mesures](https://docs.sonarqube.org/display/SONAR/Metric+Definitions).
 
-Vous pouvez télécharger la liste des règles ici : [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx).
 
 >[!NOTE]
 >
