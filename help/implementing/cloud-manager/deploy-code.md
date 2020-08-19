@@ -2,9 +2,9 @@
 title: Déploiement de votre code - Cloud Services
 description: Déploiement de votre code - Cloud Services
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '983'
 ht-degree: 82%
 
 ---
@@ -82,7 +82,7 @@ Lorsque Cloud Manager se déploie sur des topologies autres que de production, 
    >
    >Cette fonctionnalité devrait principalement être utilisée par les clients 1-1-1.
 
-1. Chaque artefact AEM est déployé sur chaque instance AEM par le biais des API de Package Manager, avec des dépendances de packages qui déterminent l’ordre de déploiement.
+1. Chaque artefact AEM est déployé sur chacune des instances AEM par le biais des API de Package Manager, avec des dépendances de packages qui déterminent l’ordre de déploiement.
 
    Pour en savoir plus sur l’utilisation de packages pour installer de nouvelles fonctionnalités, transférer du contenu entre des instances et sauvegarder le contenu du référentiel, reportez-vous à la section Utilisation de packages.
 
@@ -94,7 +94,7 @@ Lorsque Cloud Manager se déploie sur des topologies autres que de production, 
 
    1. Les configurations actuelles sont sauvegardées et copiées vers un emplacement temporaire.
    1. Toutes les configurations sont supprimées, à l’exception des fichiers non modifiables. Pour plus d’informations, consultez la section Gestion des configurations du Dispatcher. Cela permet de vider les répertoires pour qu’aucun fichier orphelin ne soit abandonné.
-   1. L’artefact est extrait dans le répertoire httpd. Les fichiers non modifiables ne sont pas remplacés. Toute modification apportée aux fichiers non modifiables dans votre référentiel git sera ignorée au moment du déploiement.  Ces fichiers sont essentiels à la structure du dispatcher AMS et ne peuvent pas être modifiés.
+   1. L’artefact est extrait dans le répertoire `httpd`. Les fichiers non modifiables ne sont pas remplacés. Toute modification apportée aux fichiers non modifiables dans votre référentiel git sera ignorée au moment du déploiement.  Ces fichiers sont essentiels à la structure du dispatcher AMS et ne peuvent pas être modifiés.
    1. Apache effectue un test de configuration. Si aucune erreur n’est trouvée, le service est rechargé. Si une erreur se produit, les configurations sont restaurées à partir de la sauvegarde, le service est rechargé et l’erreur est renvoyée à Cloud Manager.
    1. Chaque chemin spécifié dans la configuration de pipeline est invalidé ou purgé du cache du dispatcher.
 
