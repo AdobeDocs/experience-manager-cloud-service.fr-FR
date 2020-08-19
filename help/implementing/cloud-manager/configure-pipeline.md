@@ -2,7 +2,7 @@
 title: Configuration du pipeline CI/CD - Cloud Services
 description: Configuration du pipeline CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: f0f49b935cb0ec2a7fe6115294be2b79cc8bac3d
+source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 63%
@@ -38,7 +38,7 @@ Dans Cloud Manager, il existe deux types de pipeline :
 Deployment Manager est responsable de la configuration du pipeline de production.
 
 >[!NOTE]
->A Production Pipeline cannot be setup until a program creation is complete, Git repository has at least one branch, and a Production and Stage environment set is created.
+>Un pipeline de production ne peut pas être configuré tant qu&#39;une création de programme n&#39;est pas terminée, que le référentiel Git ne comporte pas au moins une branche et qu&#39;un jeu d&#39;environnements de production et d&#39;étape n&#39;est pas créé.
 
 Avant de commencer le déploiement du code, vous devez configurer les paramètres de votre pipeline à partir de [!UICONTROL Cloud Manager].
 
@@ -87,7 +87,7 @@ Pour configurer le comportement et les préférences de votre pipeline, procéde
    >[!NOTE]
    > Les pages configurées seront envoyées au service et évaluées en fonction des performances, de l&#39;accessibilité, de l&#39;optimisation du référencement (optimisation pour les moteurs de recherche), des bonnes pratiques et des tests de PWA (application Web progressive).
 
-   Pour plus d&#39;informations, consultez [Comprendre les résultats](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) de l&#39;audit de contenu.
+   Pour plus d&#39;informations, consultez [Comprendre les résultats](/help/implementing/cloud-manager/content-audit-testing.md) de l&#39;audit de contenu.
 
    Cliquez sur **Ajouter le remplacement** de la nouvelle page pour fournir un chemin d’URL à inclure dans l’audit de contenu. Une fois le chemin ajouté, cliquez sur **Enregistrer**.
 
