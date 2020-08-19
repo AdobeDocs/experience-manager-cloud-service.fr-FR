@@ -2,10 +2,10 @@
 title: Projet de demande de AEM - Cloud Service
 description: Projet de demande de AEM - Cloud Service
 translation-type: tm+mt
-source-git-commit: 696014ea61c049e719c8c9fdccc2a85b087c2466
+source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
 workflow-type: tm+mt
 source-wordcount: '1549'
-ht-degree: 89%
+ht-degree: 93%
 
 ---
 
@@ -246,7 +246,7 @@ Si vous souhaitez générer un message de sortie simple uniquement lorsque la g�
 
 ## Prise en charge d’un référentiel Maven protégé par mot de passe {#password-protected-maven-repositories}
 
-Pour utiliser un référentiel Maven protégé par mot de passe dans Cloud Manager, spécifiez le mot de passe (et éventuellement le nom d’utilisateur) en tant que [Variable pipeline](#pipeline-variables) secrète, puis référencez ce secret dans un fichier nommé `.cloudmanager/maven/settings.xml` dans le référentiel git. Ce fichier suit le schéma de [fichier de paramètres Maven](https://maven.apache.org/settings.html). Au démarrage du processus de création de Cloud Manager, l’élément `<servers>` de ce fichier est fusionné dans le fichier `settings.xml` par défaut fourni par Cloud Manager. Les ID de serveur commençant par `adobe` et `cloud-manager` sont considérés comme réservés et ne doivent pas être utilisés par des serveurs personnalisés. Les ID de serveur **ne correspondant pas** à l’un de ces préfixes ou l’ID par défaut `central` ne seront jamais mis en miroir par Cloud Manager. Une fois ce fichier en place, l’ID de serveur est référencé à l’intérieur d’un élément `<repository>` et/ou `<pluginRepository>` dans le fichier `pom.xml`. Generally, these `<repository>` and/or `<pluginRepository>` elements would be contained inside a [Cloud Manager-specific profile](#activating-maven-profiles-in-cloud-manager), although that is not strictly necessary.
+Pour utiliser un référentiel Maven protégé par mot de passe dans Cloud Manager, spécifiez le mot de passe (et éventuellement le nom d’utilisateur) en tant que [Variable pipeline](#pipeline-variables) secrète, puis référencez ce secret dans un fichier nommé `.cloudmanager/maven/settings.xml` dans le référentiel git. Ce fichier suit le schéma de [fichier de paramètres Maven](https://maven.apache.org/settings.html). Au démarrage du processus de création de Cloud Manager, l’élément `<servers>` de ce fichier est fusionné dans le fichier `settings.xml` par défaut fourni par Cloud Manager. Les ID de serveur commençant par `adobe` et `cloud-manager` sont considérés comme réservés et ne doivent pas être utilisés par des serveurs personnalisés. Les ID de serveur **ne correspondant pas** à l’un de ces préfixes ou à l’ID par défaut `central` ne seront jamais mis en miroir par Cloud Manager. Une fois ce fichier en place, l’ID de serveur est référencé à l’intérieur d’un élément `<repository>` et/ou `<pluginRepository>` dans le fichier `pom.xml`. En règle générale, ces éléments `<repository>` et/ou `<pluginRepository>` sont contenus dans un [profil spécifique à Cloud Manager](#activating-maven-profiles-in-cloud-manager), bien que cela ne soit pas strictement nécessaire.
 
 Par exemple, supposons que le référentiel se trouve à l’adresse https://repository.myco.com/maven2, que le nom d’utilisateur que Cloud Manager doit utiliser soit `cloudmanager` et que le mot de passe soit `secretword`.
 
@@ -418,4 +418,4 @@ Reportez-vous aux sections ci-dessous pour savoir comment utiliser Cloud Manager
 * [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md)
 * [Configuration de votre pipeline CI-CD](/help/implementing/cloud-manager/configure-pipeline.md)
 * [Déploiement de votre code](/help/implementing/cloud-manager/deploy-code.md)
-* [Présentation des résultats de tests](/help/implementing/developing/introduction/understand-test-results.md)
+* [Présentation des résultats de tests](/help/implementing/cloud-manager/overview-test-results.md)
