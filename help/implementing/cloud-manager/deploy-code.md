@@ -2,7 +2,7 @@
 title: Déploiement de votre code - Cloud Services
 description: Déploiement de votre code - Cloud Services
 translation-type: tm+mt
-source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
+source-git-commit: 18ef67e6b8450e4220a5d40c1da8b126136e39f2
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 82%
@@ -14,7 +14,7 @@ ht-degree: 82%
 
 ## Déploiement du code avec Cloud Manager {#deploying-code-with-cloud-manager}
 
-Once you have configured your Production **Pipeline** (repository, environment, and testing environment), you are ready to deploy your code.
+Une fois que vous avez configuré votre pipeline de production (référentiel, environnement et environnement de test), vous êtes prêt à déployer votre code.
 
 1. Cliquez sur **Déployer** dans Cloud Manager pour lancer le processus de déploiement.
 
