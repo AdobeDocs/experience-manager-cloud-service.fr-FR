@@ -2,29 +2,37 @@
 title: Présentation des résultats des tests - Cloud Services
 description: Présentation des résultats des tests - Cloud Services
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 41%
+source-wordcount: '140'
+ht-degree: 2%
 
 ---
 
 
 # Présentation {#overview}
 
-Les exécutions du pipeline Cloud Manager for Cloud Services prennent en charge l’exécution de tests sur l’environnement d’évaluation. Cela contraste avec les tests exécutés dans le cadre de l’étape Test de création et d’unité, qui sont réalisés hors ligne, sans aucun accès à un environnement AEM actif.
-
 Il existe trois grandes catégories de tests pris en charge par Cloud Manager pour le gazoduc Cloud Services :
 
 1. [Test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md)
+
+   Le test de qualité du code évalue la qualité du code de votre application. Le pipeline Code-Qualité est exécuté immédiatement après l’étape de création dans tous les pipelines de non-production et de production.
+
+   The [Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md) executed by Cloud Manager are created based on best practices from AEM Engineering.
+
 1. [Tests fonctionnels](/help/implementing/cloud-manager/functional-testing.md)
+
+   Les essais fonctionnels font partie de la phase d&#39;essai en phase d&#39;un pipeline de production.
+
 1. [Test de l’audit du contenu](/help/implementing/cloud-manager/content-audit-testing.md)
+
+   Le test d’audit du contenu est activé dans tous les tuyaux de production de Cloud Manager et ne peut pas être ignoré.
 
 Ces tests peuvent être :
 
 * Écrit par le client
 * adobe écrit
-* Outil Open Source (optimisé par Lighthouse depuis Google)
+* Outil Open Source
 
    >[!NOTE]
    > Les tests écrits par le client et les tests écrits par Adobe sont exécutés dans une infrastructure conteneurisée conçue pour exécuter ces types de tests.
