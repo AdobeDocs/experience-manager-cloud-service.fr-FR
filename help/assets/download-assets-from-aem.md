@@ -1,12 +1,12 @@
 ---
-title: Téléchargement de ressources à partir d’AEM
-description: Découvrez comment télécharger des ressources à partir d’AEM et activer ou désactiver la fonctionnalité de téléchargement.
+title: Download assets from [!DNL Adobe Experience Manager Assets].
+description: Téléchargez des ressources [!DNL Adobe Experience Manager Assets] à partir de et activez ou désactivez la fonctionnalité de téléchargement.
 contentOwner: AG
-translation-type: ht
-source-git-commit: 12575cd2f046d3a382786811dd28fec8df3be8bd
-workflow-type: ht
-source-wordcount: '771'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 3cbf0cc85c7c415f6585e92e509eb7fefb5ede82
+workflow-type: tm+mt
+source-wordcount: '747'
+ht-degree: 90%
 
 ---
 
@@ -21,17 +21,14 @@ Vous pouvez télécharger des ressources, dont des rendus statiques et dynamique
 
 Les types de ressources Visionneuses d’images, Visionneuses à 360°, Visionneuses de supports variés et Visionneuses de carrousel ne peuvent pas être téléchargés.
 
-**Pour télécharger des ressources**
+Pour télécharger des fichiers, procédez comme suit :
 
-1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Navigation]** (icône de compas).
-1. Sur la page de navigation, appuyez sur **[!UICONTROL Ressources > Fichiers]**.
-1. Accédez à un dossier contenant les ressources à télécharger.
-1. Sélectionnez le dossier ou une ou plusieurs ressources qu’il contient.
-1. Dans la barre d’outils, appuyez sur **[!UICONTROL Télécharger]**.
+1. Dans l’interface utilisateur du Experience Manager, cliquez sur **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**.
+1. Accédez aux ressources que vous souhaitez télécharger. Sélectionnez le dossier ou une ou plusieurs ressources qu’il contient. On the toolbar, click **[!UICONTROL Download]**.
 
-   ![Options disponibles lors du téléchargement de ressources à partir d’Experience Manager Assets](/help/assets/assets/asset-download1.png)
+   ![Options disponibles lors du téléchargement de fichiers depuis [!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)
 
-   *Options de la boîte de dialogue Télécharger.*
+   *Figure : Options de la boîte de dialogue Télécharger.*
 
 1. Dans la boîte de dialogue Télécharger, sélectionnez les options de téléchargement de votre choix.
 
@@ -44,8 +41,7 @@ Les types de ressources Visionneuses d’images, Visionneuses à 360°, Visionne
    | **[!UICONTROL Recadrages intelligents]** | Sélectionnez cette option pour télécharger tous les rendus de recadrage intelligent de la ressource sélectionnée depuis AEM. Un fichier zip contenant les rendus de recadrage intelligent est créé et téléchargé sur votre ordinateur local. |
    | **[!UICONTROL Rendu(s) dynamique(s)]** | Sélectionnez cette option pour générer une série de rendus alternatifs en temps réel. Lorsque vous sélectionnez cette option, vous sélectionnez également les rendus à créer dynamiquement dans la liste [Paramètre d’image prédéfini](/help/assets/dynamic-media/image-presets.md). <br>De plus, vous pouvez sélectionner la taille, l’unité de mesure, le format, l’espace colorimétrique, la résolution, ainsi que les éventuels modificateurs d’image (pour inverser l’image, par exemple). Cette option n’est disponible que si vous avez activé [!DNL Dynamic Media]. |
 
-1. Dans la boîte de dialogue, appuyez sur **[!UICONTROL Télécharger]**.
-
+1. In the dialog box, click **[!UICONTROL Download]**.
 
 ## Activation du servlet de téléchargement de ressources {#enable-asset-download-servlet}
 
@@ -76,6 +72,6 @@ Le `Asset Download Servlet` peut être désactivé sur une instance AEM Publish
 >[!MORELIKETHIS]
 >
 >* [Téléchargement de ressources protégées par DRM](drm.md)
->* [Téléchargement de ressources à l’aide de l’application de bureau AEM sur un poste de travail Windows/Mac](https://helpx.adobe.com/fr/experience-manager/desktop-app/aem-desktop-app.html)
+>* [Téléchargement de fichiers à l’aide d’une application de bureau Experience Manager sous Windows ou Mac](https://helpx.adobe.com/fr/experience-manager/desktop-app/aem-desktop-app.html)
 >* [Téléchargement de ressources à l’aide d’Adobe Assets Link depuis les applications Adobe Creative Cloud prises en charge](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
