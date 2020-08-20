@@ -2,10 +2,10 @@
 title: Test de qualité du code - Cloud Services
 description: Test de qualité du code - Cloud Services
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 78%
+source-wordcount: '831'
+ht-degree: 76%
 
 ---
 
@@ -16,14 +16,26 @@ Le test de qualité du code évalue la qualité du code de votre application. Il
 
 Reportez-vous à [Configuration de votre pipeline](/help/implementing/cloud-manager/configure-pipeline.md) CI-CD pour en savoir plus sur les différents types de conduites.
 
-## Présentation des règles de qualité du code personnalisé {#understanding-code-quality-rules}
+## Understanding Code Quality Rules {#understanding-code-quality-rules}
 
 Dans le test de qualité du code, le code source est analysé afin de s’assurer qu’il répond à certains critères de qualité. Actuellement, cette analyse est implémentée par une combinaison de SonarQube et d’examens au niveau du package de contenu à l’aide de OakPAL. Il existe plus de 100 règles combinant des règles Java génériques et des règles spécifiques à AEM. Certaines des règles spécifiques à l&#39;AEM sont créées en fonction des meilleures pratiques d&#39;AEM Engineering et sont appelées Règles [de qualité du code](/help/implementing/cloud-manager/custom-code-quality-rules.md)personnalisé.
 
 >[!NOTE]
 >You can download the complete list of rules [here](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx).
 
-Les résultats de cette étape sont distribués sous forme de *cotation*. Le tableau suivant résume l’évaluation des critères de test :
+**Porte à trois niveaux**
+
+Cette étape de test de la qualité du code comporte une structure à trois niveaux pour les problèmes identifiés :
+
+* **Critique** : il s’agit des problèmes identifiés par le point de contrôle qui entraînent l’échec immédiat du pipeline.
+
+* **Important** : il s’agit des problèmes identifiés par le point de contrôle qui entraînent la suspension du pipeline. Un responsable de déploiement, un responsable de projet ou un propriétaire d’entreprise peuvent soit contourner les problèmes, auquel cas le pipeline continue, soit accepter les problèmes, auquel cas le pipeline s’arrête avec un échec.
+
+* **Informations** : il s’agit des problèmes identifiés par le point de contrôle qui sont fournis uniquement à titre d’information et qui n’ont aucune incidence sur l’exécution du pipeline
+
+Les résultats de cette étape sont fournis sous forme de *classements*.
+
+Le tableau suivant résume les seuils d&#39;évaluation et d&#39;échec pour chacune des catégories Critique, Important et Information :
 
 | Nom | Définition | Catégorie | Seuil d’échec |
 |--- |--- |--- |--- |
