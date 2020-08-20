@@ -2,9 +2,9 @@
 title: Présentation des résultats de test - Cloud Services
 description: Présentation des résultats de test - Cloud Services
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1697'
 ht-degree: 53%
 
 ---
@@ -24,7 +24,7 @@ Ces tests peuvent être :
 
 * Écrit par le client
 * adobe écrit
-* Outil Open Source (optimisé par Lighthouse depuis Google)
+* Outil Open Source
 
    >[!NOTE]
    > Les tests écrits par le client et les tests écrits par Adobe sont exécutés dans une infrastructure conteneurisée conçue pour exécuter ces types de tests.
