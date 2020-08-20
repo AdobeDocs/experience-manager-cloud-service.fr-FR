@@ -3,7 +3,7 @@ title: Configuration et utilisation des microservices de ressources pour le trai
 description: Découvrez comment configurer et utiliser les microservices de ressources basés sur le cloud pour traiter des ressources à grande échelle.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 568e5d2906fe6c9415eebcab7e3e4e1fb4a738fa
+source-git-commit: 2917f14bea5e2a31c436577d9fd74135cca93118
 workflow-type: tm+mt
 source-wordcount: '2537'
 ht-degree: 49%
@@ -48,7 +48,7 @@ Experience Manager permet d’effectuer les niveaux de traitement suivants.
 |---|---|---|
 | [Configuration par défaut](#default-config) | Il est disponible en l’état et ne peut pas être modifié. Cette configuration fournit une fonctionnalité de génération de rendu de base. | <ul> <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 px) </li> <li> Aperçu grand format (rendu web : 1 280 pixels) </li><li> Extraction des métadonnées et du texte.</li></ul> |
 | [Configuration personnalisée](#standard-config) | Configuré par les administrateurs via l’interface utilisateur. Fournit davantage d’options pour la génération de rendu en étendant l’option par défaut. Etendez l’option prête à l’emploi pour fournir différents formats et rendus. | <ul><li>Rendu FPO. </li> <li>Modification du format de fichier et de la résolution des images</li> <li> S’appliquer de manière conditionnelle aux types de fichiers configurés. </li> </ul> |
-| [Profil personnalisé](#custom-config) | Configuré par les administrateurs via l’interface utilisateur pour utiliser du code personnalisé par le biais d’applications personnalisées afin d’appeler [Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). Prend en charge des exigences plus complexes dans une méthode native de cloud et évolutive. | Voir les cas [d’utilisation](#custom-config)autorisés. |
+| [Profil personnalisé](#custom-config) | Configuré par les administrateurs via l’interface utilisateur pour utiliser du code personnalisé par le biais d’applications personnalisées pour appeler le service [](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)Asset Compute. Prend en charge des exigences plus complexes dans une méthode native de cloud et évolutive. | Voir les cas [d’utilisation](#custom-config)autorisés. |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -118,7 +118,7 @@ Il [!DNL Asset Compute Service] prend en charge divers cas d’utilisation, tels
 
 Il peut transformer des formats d’image, de vidéo, de document et d’autres formats de fichier en différents rendus, y compris des miniatures, du texte extrait, des métadonnées et des archives.
 
-Les développeurs peuvent utiliser le [!DNL Asset Compute Service] pour [créer des applications](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) personnalisées qui répondent aux cas d’utilisation pris en charge. [!DNL Experience Manager] peuvent appeler ces applications personnalisées à partir de l’interface utilisateur en utilisant des profils personnalisés configurés par les administrateurs. [!DNL Asset Compute Service] prend en charge les cas d’utilisation suivants d’appel de services externes :
+Les développeurs peuvent utiliser le [!DNL Asset Compute Service] pour [créer des applications](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) personnalisées qui répondent aux cas d’utilisation pris en charge. [!DNL Experience Manager] Vous pouvez appeler ces applications personnalisées à partir de l’interface utilisateur en utilisant des profils personnalisés configurés par les administrateurs. [!DNL Asset Compute Service] prend en charge les cas d’utilisation suivants d’appel de services externes :
 
 * Utilisez [!DNL Adobe Photoshop]l’API [](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) ImageCutout et enregistrez le résultat en tant que rendu.
 * Appelez des systèmes tiers pour mettre à jour des données, par exemple un système PIM.
