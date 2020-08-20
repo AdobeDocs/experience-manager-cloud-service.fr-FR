@@ -1,11 +1,11 @@
 ---
-title: Add your digital assets to [!DNL Adobe Experience Manager].
-description: Add your digital assets to [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Ajout de vos ressources numériques à [!DNL Adobe Experience Manager].
+description: Ajoutez vos ressources numériques à [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 3e9697d27337b39f5667cc94930de6ea7f0b68c5
+source-git-commit: 06cba29b131ada6a1c0fe2bd8ccad95ce5ff7160
 workflow-type: tm+mt
-source-wordcount: '1324'
-ht-degree: 76%
+source-wordcount: '1320'
+ht-degree: 95%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 76%
 
 [!DNL Adobe Experience Manager] enrichit le contenu binaire des fichiers numériques chargés avec des métadonnées enrichies, des balises intelligentes, des rendus et autres services de gestion des ressources numériques (DAM). Vous pouvez charger divers types de fichiers, tels que des images, des documents et des fichiers d’images brutes, depuis votre dossier local ou un lecteur réseau vers [!DNL Experience Manager Assets].
 
-Plusieurs méthodes de chargement sont fournies. Outre le téléchargement de navigateur le plus souvent utilisé, il existe d’autres méthodes d’ajout d’actifs au référentiel de Experience Manager, notamment des clients de bureau, tels que Adobe Asset Link ou l’application de bureau Experience Manager, le téléchargement et l’assimilation de scripts que les clients créeraient et des intégrations d’assimilation automatisées ajoutées en tant qu’extensions Experience Manager.
+Plusieurs méthodes de chargement sont proposées. Outre la méthode la plus courante qui consiste à utiliser le navigateur, il existe d’autres méthodes pour ajouter des ressources au référentiel Experience Manager : clients de bureau, comme Adobe Asset Link ou l’application de bureau Experience Manager, scripts de chargement et d’ingestion créés par les clients, ou encore intégrations d’ingestion automatisées ajoutées sous la forme d’extensions Experience Manager.
 
 Dans ce chapitre, nous nous focaliserons sur les méthodes de chargements destinées aux utilisateurs finaux. Nous vous proposerons également des liens vers des articles décrivant les aspects techniques du chargement et de l’ingestion de ressources à l’aide des kits SDK et des API d’Experience Manager.
 
@@ -24,19 +24,19 @@ Vous pouvez également choisir d’effectuer un traitement supplémentaire sur l
 
 >[!NOTE]
 >
->Avec Experience Manager as a Cloud Service, vous disposez d’une nouvelle méthode de chargement de ressources appelée chargement binaire direct. Il est pris en charge par défaut par les fonctionnalités de produit prêtes à l’emploi et les clients, tels que l’interface utilisateur du Experience Manager, Adobe Asset Link, l’application de bureau du Experience Manager, et donc transparent pour les utilisateurs finaux.
+>Avec Experience Manager as a Cloud Service, vous disposez d’une nouvelle méthode de chargement de ressources appelée chargement binaire direct. Cette méthode est prise en charge par défaut par les clients et fonctionnalités standard du produit, comme l’interface utilisateur Experience Manager, Adobe Asset Link et l’application de bureau Experience Manager. Elle est donc transparente pour les utilisateurs finaux.
 >
 >Le code de chargement personnalisé ou étendu par les équipes techniques des clients doit utiliser les nouvelles API et les nouveaux protocoles de chargement.
 
 ## Chargement des ressources {#upload-assets}
 
-Pour télécharger un fichier (ou plusieurs fichiers), vous pouvez les sélectionner sur votre bureau et faire glisser sur l’interface utilisateur (navigateur Web) le dossier de destination. Vous pouvez également lancer le chargement à partir de l’interface utilisateur.
+Pour charger un ou plusieurs fichiers, vous pouvez les sélectionner sur votre bureau et les faire glisser vers le dossier de destination dans l’interface utilisateur (navigateur web). Vous pouvez également lancer le chargement à partir de l’interface utilisateur.
 
-1. In the [!DNL Assets] user interface, navigate to the location where you want to add digital assets.
+1. Dans l’interface utilisateur [!DNL Assets], accédez à l’emplacement où vous voulez ajouter des ressources numériques.
 1. Pour charger les ressources, effectuez l’une des opérations suivantes :
 
    * Appuyez sur l’icône **[!UICONTROL Créer]** de la barre d’outils. Ensuite, dans le menu, appuyez sur **[!UICONTROL Fichiers]**. Au besoin, vous pouvez renommer le fichier dans la boîte de dialogue affichée.
-   * In a browser that supports HTML5, drag the assets directly on the [!DNL Assets] user interface. La boîte de dialogue permettant de renommer les fichiers n’est pas affichée.
+   * Dans un navigateur prenant en charge HTML5, faites glisser directement les ressources dans l’interface utilisateur [!DNL Assets]. La boîte de dialogue permettant de renommer les fichiers n’est pas affichée.
 
    ![create_menu](assets/create_menu.png)
 
@@ -59,9 +59,9 @@ Pour télécharger un fichier (ou plusieurs fichiers), vous pouvez les sélectio
    ![chlimage_1-212](assets/chlimage_1-212.png)
 -->
 
-1. Pour annuler une opération de chargement en cours, cliquez sur le bouton de fermeture (`X`) en regard de la barre de progression. When you cancel the upload operation, [!DNL Assets] deletes the partially uploaded portion of the asset.
+1. Pour annuler une opération de chargement en cours, cliquez sur le bouton de fermeture (`X`) en regard de la barre de progression. Lorsque vous annulez le chargement, [!DNL Assets] supprime la partie partiellement chargée de la ressource.
 
-   If you cancel the upload operation before the files are uploaded, [!DNL Assets] stops uploading the current file and refreshes the content. Toutefois, les fichiers déjà téléchargés ne sont pas supprimés.
+   Si vous annulez le chargement avant la fin de l’opération, [!DNL Assets] arrête le chargement du fichier en cours et actualise le contenu. Toutefois, les fichiers déjà chargés ne sont pas supprimés.
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
@@ -73,13 +73,13 @@ Pour télécharger un fichier (ou plusieurs fichiers), vous pouvez les sélectio
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
-1. The upload progress dialog in [!DNL Assets] displays the count of successfully uploaded files and the files that failed to upload.
+1. La boîte de dialogue de progression du chargement dans [!DNL Assets] affiche le nombre de fichiers dont le chargement a réussi et ceux dont le chargement a échoué.
 
 De plus, l’interface utilisateur d’Assets affiche la ressource la plus récente que vous avez chargée ou le dossier que vous avez créé en premier.
 
 >[!NOTE]
 >
->To upload nested folder hierarchies to AEM, see [bulk upload assets](#bulk-upload).
+>Pour charger des hiérarchies de dossiers imbriqués vers AEM, voir [Téléchargement massif de ressources](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -112,11 +112,11 @@ Vous pouvez choisir de remplacer une ressource existante, de créer une autre ve
 >
 >Si la fonction Statistiques sur les ressources est activée pour effectuer le suivi des impressions/clics avec Adobe Analytics, l’ID de ressource régénéré invalide les données capturées pour la ressource dans Analytics.
 
-Pour conserver la ressource de duplicata dans [!DNL Assets], cliquez sur **[!UICONTROL Conserver]**. Pour supprimer la ressource en double que vous avez chargée, appuyez/cliquez sur **[!UICONTROL Supprimer]**.
+Pour conserver le duplicata de ressource dans [!DNL Assets], cliquez sur **[!UICONTROL Conserver]**. Pour supprimer la ressource en double que vous avez chargée, appuyez/cliquez sur **[!UICONTROL Supprimer]**.
 
 ### Gestion des noms de fichier et caractères interdits {#filename-handling}
 
-[!DNL Experience Manager Assets] vous empêche de charger des ressources dont le nom de fichier contient des caractères interdits. If you try to upload an asset with file name containing a disallowed character or more, [!DNL Assets] displays a warning message and stops the upload until you remove these characters or upload with an allowed name.
+[!DNL Experience Manager Assets] vous empêche de charger des ressources dont le nom de fichier contient des caractères interdits. Si vous essayez de charger une ressource dont le nom de fichier contient un ou plusieurs caractères interdits, [!DNL Assets] affiche un message d’avertissement à ce sujet et interrompt l’opération jusqu’à ce que vous supprimiez les caractères concernés ou utilisiez un nom autorisé.
 
 Pour prendre en compte les conventions d’appellation en vigueur dans votre entreprise, la boîte de dialogue [!UICONTROL Charger les ressources] vous permet de spécifier des noms longs pour les fichiers chargés.
 
@@ -140,7 +140,7 @@ Pour charger un plus grand nombre de fichiers, en particulier s’ils existent d
 
 Outre l’interface utilisateur du navigateur web, Experience Manager prend en charge d’autres clients pour ordinateur de bureau. Ils permettent également de télécharger du contenu sans devoir passer par le navigateur web.
 
-* [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) permet d’accéder aux ressources provenant [!DNL Experience Manager] des applications de bureau Adobe Photoshop, Adobe Illustrator et Adobe InDesign. You can upload the currently open document into [!DNL Experience Manager] directly from Adobe Asset Link user interface from within these desktop applications.
+* [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) permet d’accéder aux ressources [!DNL Experience Manager] dans les applications de bureau Adobe Photoshop, Adobe Illustrator et Adobe InDesign. Ces applications vous offrent la possibilité de charger directement le document ouvert vers [!DNL Experience Manager] depuis l’interface utilisateur d’Adobe Asset Link.
 * L’[application de bureau Experience Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/using.html) simplifie l’utilisation des ressources sur l’ordinateur, indépendamment du type de fichier ou de l’application native affectée à leur gestion. Il est particulièrement utile de charger des fichiers dans des hiérarchies de dossiers imbriqués à partir de votre système de fichiers local, car le téléchargement à l’aide du navigateur ne prend en charge que les listes de fichiers plats.
 
 ## Traitement supplémentaire {#additional-processing}
@@ -151,13 +151,13 @@ Pour qu’un traitement supplémentaire soit réalisé sur les ressources charg�
 
 Les profils suivants sont disponibles :
 
-* Les [profils de métadonnées](metadata-profiles.md) vous permettent d’appliquer des propriétés de métadonnées par défaut aux ressources chargées dans ce dossier.
+* [Les profils](metadata-profiles.md) de métadonnées vous permettent d’appliquer les propriétés de métadonnées par défaut aux fichiers téléchargés dans ce dossier.
 * [Les profils](asset-microservices-configure-and-use.md) de traitement vous permettent de générer plus de rendus que ce qui est possible par défaut.
 
 De plus, si Dynamic Media est activé dans votre environnement :
 
-* Les [profils d’image Dynamic Media](dynamic-media/image-profiles.md) vous permettent d’appliquer un recadrage spécifique (**[!UICONTROL Recadrage intelligent]** et recadrage de pixels) et une configuration d’accentuation aux ressources chargées.
-* Les [profils vidéo Dynamic Media](dynamic-media/video-profiles.md) vous permettent d’appliquer des profils de codage vidéo spécifiques (résolution, format, paramètres).
+* [Les profils](dynamic-media/image-profiles.md) d’image de média dynamique vous permettent d’appliquer une configuration de recadrage spécifique (recadrage **** intelligent et recadrage de pixels) et d’accentuation aux fichiers téléchargés.
+* [Les profils](dynamic-media/video-profiles.md) vidéo de médias dynamiques vous permettent d’appliquer des profils de codage vidéo spécifiques (résolution, format, paramètres).
 
 >[!NOTE]
 >
