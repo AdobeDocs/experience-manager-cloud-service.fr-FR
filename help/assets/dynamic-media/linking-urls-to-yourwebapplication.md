@@ -1,11 +1,11 @@
 ---
 title: Liaison d’URL à une application web
 description: Comment lier des URL à votre application web dans les médias dynamiques
-translation-type: ht
-source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
-workflow-type: ht
-source-wordcount: '1272'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+workflow-type: tm+mt
+source-wordcount: '1271'
+ht-degree: 98%
 
 ---
 
@@ -132,7 +132,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
    Par exemple, si l’ID d’enregistrement est `87654321|MyCompany`, le nom du client est `MyCompany`.
 
-1. Près du coin supérieur gauche de la page, appuyez sur **Cloud Services**, puis sur l’icône d’AEM et accédez à **[!UICONTROL Général > CRXDE Lite]**.
+1. Near the upper-left corner of the page, tap **[!UICONTROL Cloud Services]**, then tap the AEM icon and navigate to **[!UICONTROL General > CRXDE Lite]**.
 1. Copiez le chemin URL du rendu vidéo à partir du référentiel JCR (Java Content Repository).
 
    Par exemple, le chemin URL du rendu vidéo est similaire au suivant :
