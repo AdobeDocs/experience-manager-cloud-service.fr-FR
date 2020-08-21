@@ -2,9 +2,9 @@
 title: 'Utilisation des sélecteurs  '
 description: Sélection de ressources pour les images interactives, vidéos interactives et bannières de carrousel
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '738'
 ht-degree: 100%
 
 ---
@@ -30,7 +30,7 @@ Utilisez le sélecteur de produits pour choisir un produit lorsque vous souhaite
 
 1. Accédez à l’ensemble de carrousels, à l’image interactive ou à la vidéo interactive, puis appuyez sur l’onglet **[!UICONTROL Actions]** (disponible uniquement si vous avez défini une zone réactive ou une zone cliquable).
 
-   Le sélecteur de produits se trouve dans la zone **Type d’action [!UICONTROL**.
+   Le sélecteur de produits se trouve dans la zone **[!UICONTROL Type d’action]**.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
