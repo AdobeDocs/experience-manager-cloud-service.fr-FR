@@ -1,9 +1,9 @@
 ---
 title: Création et organisation des pages
 description: Comment créer et organiser des pages avec AEM
-translation-type: ht
-source-git-commit: b9c7e476ad8efebeff44d88302484893edbf1469
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+workflow-type: tm+mt
 source-wordcount: '2550'
 ht-degree: 100%
 
@@ -385,7 +385,7 @@ Cependant, si le nombre de pages affectées est supérieur à une limite défini
 
          ![Déplacement de page asynchrone](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
 
-L’état des tâches asynchrones peut être vérifié dans le [**tableau de bord État des tâches asynchrones **](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)en sélectionnant** Navigation globale **->** Outils **->** Opérations **->** Tâches **.
+L’état des tâches asynchrones peut être vérifié dans le [**tableau de bord État des tâches asynchrones**](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) en sélectionnant **Navigation globale** -> **Outils** -> **Opérations** -> **Tâches**.
 
 >[!NOTE]
 >
