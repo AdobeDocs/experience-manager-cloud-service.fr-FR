@@ -2,7 +2,7 @@
 title: Vidéos interactives
 description: Découvrez comment utiliser des vidéos interactives et Shoppable dans Dynamic Media
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
 source-wordcount: '6010'
 ht-degree: 100%
@@ -120,7 +120,7 @@ Normalement, il n’est pas nécessaire d’utiliser des outils de débogage sp�
 
 * Pour voir toutes les demandes HTTP sortantes dans Google Chrome, appuyez sur **F12** (Windows) ou **Contrôle+Options+I** (Mac) pour ouvrir le panneau Outils de développement, puis cliquez sur l’onglet **Réseau**.
 
-* Dans Firefox, vous pouvez activer le plug-in Firebug en appuyant sur **F12** (Windows) ou **Contrôle+Option+I** (Mac) et utiliser l’onglet **Réseau**. Sinon, vous pouvez utiliser l’outil Inspecteur intégré et son onglet Réseau.
+* Dans Firefox, vous pouvez activer le plug-in Firebug en appuyant sur **F12** (Windows) ou **Contrôle+Option+I** (Mac) et utilisez l’onglet **[Réseau]**. Sinon, vous pouvez utiliser l’outil Inspecteur intégré et son onglet Réseau.
 
 * Dans Internet Explorer, activez l’outil de débogage en appuyant sur **F12**.
 
@@ -256,7 +256,7 @@ Une fois que vous avez ajouté des segments de montage, vous ajoutez des images 
 Voir [Fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
-N’oubliez pas que les outils de partage sur les réseaux sociaux ne sont pas pris en charge dans la bannière de carrousel lorsque vous incorporez la visionneuse dans un fragment d’expérience.  Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les réseaux sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
+N’oubliez pas que les outils de partage sur les réseaux sociaux ne sont pas pris en charge dans la bannière de carrousel lorsque vous incorporez la visionneuse dans un fragment d’expérience. Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les réseaux sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
 
 >[!NOTE]
 La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages AEM Sites.
@@ -354,6 +354,7 @@ Pour ajouter de l’interactivité à votre vidéo :
       * Appuyez sur l’ovale bleu de début pour chercher la vidéo directement au début de ce segment.
       * Appuyez sur l’ovale bleu de fin pour chercher la vidéo directement à la fin de ce segment.
       * Appuyez sur le segment entier pour relancer la lecture de la vidéo à partir du début de ce segment.
+
    ![chlimage_1-26](assets/chlimage_1-132.png)
 
    Repositionnement de la fin d’un segment de chronologie
