@@ -1,10 +1,10 @@
 ---
 title: Gérer les journaux - Cloud Service
 description: Gérer les journaux - Cloud Service
-translation-type: ht
-source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
-workflow-type: ht
-source-wordcount: '209'
+translation-type: tm+mt
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+workflow-type: tm+mt
+source-wordcount: '207'
 ht-degree: 100%
 
 ---
@@ -22,7 +22,7 @@ Ou encore à partir de la page **Environnements** :
 
 ![](assets/download-logs.png)
 
->[!NNote]
+>[!NOTE]
 >Quel que soit l’emplacement d’ouverture, la même boîte de dialogue s’affiche et permet de télécharger un fichier journal.
 
 ![](assets/manage-logs3.png)
@@ -67,7 +67,7 @@ Environment Id Service    Name
 1884           dispatcher httpdaccess
 ```
 
->[!NNote]
+>[!NOTE]
 >Alors que **les téléchargements de journaux** seront disponibles par le biais de l’interface utilisateur et de l’API, **** la fonction d’envoi de journaux est disponible uniquement sur l’API/CLI.
 
 ### Ressources supplémentaires {#resources}
