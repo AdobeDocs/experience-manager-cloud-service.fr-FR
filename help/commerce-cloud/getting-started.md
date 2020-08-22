@@ -2,17 +2,17 @@
 title: Prise en main de AEM Commerce en tant que Cloud Service
 description: Prise en main de AEM Commerce en tant que Cloud Service
 translation-type: tm+mt
-source-git-commit: 1fcdfa60c134491c781906e4a757a3a10399bde1
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
 workflow-type: tm+mt
-source-wordcount: '572'
-ht-degree: 6%
+source-wordcount: '571'
+ht-degree: 5%
 
 ---
 
 
 # Prise en main de AEM Commerce en tant que Cloud Service {#start}
 
-Pour commencer à utiliser AEM Commerce en tant que Cloud Service, votre Experience Manager Cloud Service doit être configuré avec le module complémentaire CIF (Commerce Integration Framework). Le module complémentaire CIF est un module supplémentaire en plus des [AEM Sites en tant que Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/home.html).
+Pour commencer à utiliser AEM Commerce en tant que Cloud Service, votre Experience Manager Cloud Service doit être configuré avec le module complémentaire CIF (Commerce Integration Framework). Le module complémentaire CIF est un module supplémentaire ajouté à [AEM Sites en tant que Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/home.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
@@ -56,7 +56,7 @@ Pour connecter AEM Commerce à un Magento, procédez comme suit :
 >
 >Vous pouvez liste toutes les variables de Cloud Manager à l’aide de la commande suivante pour vérifier le doublon : `aio cloudmanager:list-environment-variables ENVIRONMENT_ID`
 
->[!NNote]
+>[!NOTE]
 >
 >Vous pouvez également utiliser l’API [de](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) Cloud Manager pour configurer les variables de Cloud Manager.
 
