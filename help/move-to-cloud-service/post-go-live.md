@@ -1,10 +1,10 @@
 ---
 title: Phase de post-activation
 description: Phase de post-activation
-translation-type: ht
-source-git-commit: 0565d053b6040bc99ae79823711d56eb9aecdfb3
-workflow-type: ht
-source-wordcount: '242'
+translation-type: tm+mt
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+workflow-type: tm+mt
+source-wordcount: '241'
 ht-degree: 100%
 
 ---
@@ -31,7 +31,7 @@ Pour en savoir plus sur les outils de développement, voir [Implémentation pour
 
 En tant qu’utilisateur, vous pouvez accéder à CRX/DE Lite dans l’environnement de développement, mais pas dans les environnements d’évaluation ni de production.
 
->[IMPORTANT]
+>[!IMPORTANT]
 >L’écriture, au moment de l’exécution, dans des référentiels non modifiables tels que `/libs` et `/apps`, entraîne des erreurs. En outre, en tant que client, vous n’aurez pas accès aux outils de développement pour les environnements d’évaluation et de production.
 
 Pour savoir comment développer votre application AEM avec CRX/DE Lite, voir [Développement dans CRX/DE Lite](https://docs.adobe.com/help/fr-FR/experience-manager-65/developing/devtools/developing-with-crxde-lite.html).
