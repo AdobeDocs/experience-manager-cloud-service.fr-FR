@@ -1,10 +1,10 @@
 ---
 title: Modifications notables apportées à AEM Commerce en tant que Cloud Service
-description: Changements notables apportés à AEM Commerce en tant que Cloud Service par rapport à l'Adobe Experience Manager 6.5.
+description: Changements notables apportés à AEM Commerce en tant que Cloud Service par rapport à Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: df6f679b70a7cc70e4f76612c0a72a31443cd1b8
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '596'
 ht-degree: 13%
 
 ---
@@ -27,12 +27,12 @@ Le cadre d’intégration du commerce classique qui incluait un importateur de p
 
 Vous trouverez ci-dessous les différents modèles de déploiement de Commerce Integration Framework pour les différentes offres d’AEM :
 
-|  | AEM sur site | AEM Managed Services | Cloud Service AEM |
+|  | aem sur site | aem Managed Services | cloud service AEM |
 |-------------     |-----------|-----------|-----------|
-| Comment déployer les outils de création CIF pour le serveur principal Magento | [Reportez-vous à CIF Connector](https://github.com/adobe/commerce-cif-connector/blob/master/README.md) pris en charge sur AEM 6.5. | [Reportez-vous à CIF Connector](https://github.com/adobe/commerce-cif-connector/blob/master/README.md) pris en charge sur AEM 6.5. | AEM en tant que Cloud Service doit être configuré avec un module complémentaire CIF. Contactez votre représentant commercial pour plus de détails. |
+| Comment déployer les outils de création CIF pour le serveur principal Magento | [Reportez-vous à CIF Connector](https://github.com/adobe/commerce-cif-connector/blob/master/README.md) pris en charge sur AEM 6.5. | [Reportez-vous à CIF Connector](https://github.com/adobe/commerce-cif-connector/blob/master/README.md) pris en charge sur AEM 6.5. | aem en tant que Cloud Service doit être configuré avec un module complémentaire CIF. Contactez votre représentant commercial pour plus de détails. |
 | Comment déployer [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) | Installation AEM package | Déploiement effectué via [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) | Projet déplacé dans le référentiel [Git de](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) Cloud Manager et déploiement effectué via [Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/deploying/overview.html) |
 
->[!NNote]
+>[!NOTE]
 >
 >La version CIF Classic/Quickstart de Commerce Integration Framework peut être utilisée sur AEM offre sur site pour des utilisations très limitées. Cependant, il ne s’agit pas de la solution recommandée.
 
@@ -48,6 +48,6 @@ Les principales différences sont les suivantes :
 * Le lot OSGI client GraphQL **ne doit plus** être inclus dans le projet AEM, il est déployé via le module complémentaire CIF.
 * Les configurations OSGI pour le client GraphQL et le service de données Graphql ne **doivent plus** être incluses dans le projet AEM
 
->[!Tip]
+>[!TIP]
 >
 >Découvrez le projet [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) sur GitHub. Ce projet fournit des profils Maven pour AEM en tant que Cloud Service et sur site, qui tiennent compte des différentes conditions-cadres.
