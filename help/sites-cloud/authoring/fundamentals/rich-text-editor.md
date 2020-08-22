@@ -1,10 +1,10 @@
 ---
 title: Utilisation de l’éditeur de texte enrichi dans  [!DNL Adobe Experience Manager]  pour créer du contenu.
 description: Utilisation de l’éditeur de texte enrichi [!DNL Experience Manager] pour créer du contenu.
-translation-type: ht
-source-git-commit: 5437329c55bd7da6d8b966a7f01c9e57ff1feb59
-workflow-type: ht
-source-wordcount: '287'
+translation-type: tm+mt
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+workflow-type: tm+mt
+source-wordcount: '286'
 ht-degree: 100%
 
 ---
@@ -51,7 +51,7 @@ Les options supplémentaires de l’éditeur de texte enrichi incluent les suiva
 
 Cliquez sur Réduire pour fermer le mode plein écran.
 
->[!Tip]
+>[!TIP]
 >
 >La copie de listes imbriquées de [!DNL Microsoft Word] vers l’éditeur de texte enrichi peut donner des résultats incohérents. Il est préférable d’effectuer une copie sous forme de texte et un ajustement manuel.
 
