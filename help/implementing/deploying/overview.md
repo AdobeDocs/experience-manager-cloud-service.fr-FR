@@ -2,10 +2,10 @@
 title: Déploiement sur AEM as a Cloud Service
 description: 'Déploiement sur AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: bb810684a513718ddb7232f1a2da725b2df7f36c
 workflow-type: tm+mt
-source-wordcount: '3523'
-ht-degree: 100%
+source-wordcount: '3537'
+ht-degree: 99%
 
 ---
 
@@ -183,7 +183,7 @@ Les modules de contenu (modifiable ou non) installés via Cloud Manager s’aff
 
 ### Inclusion de modules tiers {#including-third-party}
 
-Il est courant pour les clients d’inclure des modules préconfigurés provenant de sources tierces, telles que des fournisseurs de logiciels comme les partenaires de traduction d’Adobe. Il est recommandé d’héberger ces modules au sein d’un référentiel distant et de les référencer dans le `pom.xml`. Cela n’est possible que pour les référentiels publics.
+Il est courant pour les clients d’inclure des modules préconfigurés provenant de sources tierces, telles que des fournisseurs de logiciels comme les partenaires de traduction d’Adobe. Il est recommandé d’héberger ces modules au sein d’un référentiel distant et de les référencer dans le `pom.xml`. Cela est possible pour les référentiels publics et aussi pour les référentiels privés avec protection par mot de passe, comme décrit dans les référentiels [maven protégés par](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#password-protected-maven-repositories)mot de passe.
 
 S’il n’est pas possible de stocker le module dans un référentiel distant, les clients peuvent le placer dans un référentiel Maven local basé sur un système de fichiers, qui est validé dans SCM dans le cadre du projet et référencé par toutes les dépendances. Ce référentiel serait alors déclaré dans les fichiers pom du projet, comme illustré ci-dessous :
 
