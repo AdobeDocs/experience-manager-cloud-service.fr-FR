@@ -2,9 +2,9 @@
 title: Vidéo
 description: Découvrez comment utiliser la vidéo dans Dynamic Media
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 07d60f1ae6be824af07bc51f989a5c2029a3422a
 workflow-type: tm+mt
-source-wordcount: '10056'
+source-wordcount: '10052'
 ht-degree: 99%
 
 ---
@@ -973,10 +973,10 @@ Pour afficher un rapport vidéo, procédez comme suit :
 1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** (icône en forme de marteau) > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports vidéo]**.
 1. Dans la page Rapport vidéo, effectuez l’une des opérations suivantes :
 
-   * Dans le coin supérieur droit, appuyez sur l’icône **[UICONTROL Actualiser le rapport vidéo]**.
+   * Dans le coin supérieur droit, appuyez sur l’icône **[!UICONTROL Actualiser le rapport vidéo]**.
 Vous ne devez utiliser la commande d’actualisation que si la date de fin du rapport correspond à la date du jour. Vous affichez ainsi le suivi vidéo qui a eu lieu depuis la dernière exécution du rapport.
 
-   * Dans le coin supérieur droit, appuyez sur l’icône **[UICONTROL Sélecteur de date]**.
+   * Dans le coin supérieur droit, appuyez sur l’icône **[!UICONTROL Sélecteur de date]**.
 Indiquez la période de début et de fin pour laquelle vous souhaitez obtenir les données vidéo, puis appuyez sur **[!UICONTROL Exécuter le rapport]**.
 
    Le groupe Mesures principales identifie diverses mesures agrégées pour toutes les vidéos publiées sur votre site.
@@ -1012,7 +1012,7 @@ Pour afficher des rapports vidéo qui reposent sur une visionneuse de vidéos cr
 
    Le paramètre `config2` active le suivi dans les visionneuses HTML5. Il s’agit également d’un paramètre prédéfini spécifique à l’entreprise qui contient des informations de configuration pour les rapports vidéo et pour les configurations Adobe Analytics propres au client.
 
-   La valeur correcte du paramètre config2 figure dans le **[!UICONTROL code intégré]** et la fonction Copier l’**[UICONTROL URL]**. Dans l’URL provenant de la commande Copier l’**[UICONTROL URL]**, le paramètre à rechercher est `&config2=<value>`. La valeur est pratiquement toujours `companypreset`, mais dans certains cas elle peut également être `companypreset-1`, `companypreset-2`, etc.
+   La valeur correcte du paramètre config2 figure dans le **[!UICONTROL code intégré]** et la fonction Copier l’**[!UICONTROL URL]**. Dans l’URL provenant de la commande Copier l’**[!UICONTROL URL]**, le paramètre à rechercher est `&config2=<value>`. La valeur est pratiquement toujours `companypreset`, mais dans certains cas elle peut également être `companypreset-1`, `companypreset-2`, etc.
 
 1. Dans le code de la visionneuse de vidéos personnalisée, ajoutez le fichier AppMeasurementBridge.jsp à la page de la visionneuse en procédant comme suit :
 
