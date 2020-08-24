@@ -2,15 +2,15 @@
 title: Règles de qualité du code personnalisé - Cloud Services
 description: Règles de qualité du code personnalisé - Cloud Services
 translation-type: tm+mt
-source-git-commit: f2fa2adeec74bfa687ed59d3e0847e6246028040
+source-git-commit: 437652f9ed5d0fc4abae22e470b650bd1c2bedb6
 workflow-type: tm+mt
-source-wordcount: '2254'
+source-wordcount: '2253'
 ht-degree: 100%
 
 ---
 
 
-# Présentation des règles de qualité du code personnalisé {#custom-code-quality-rules}
+# Règles de qualité du code personnalisé {#custom-code-quality-rules}
 
 
 Cette page décrit les règles de qualité du code personnalisé exécutées par Cloud Manager qui sont créées selon les bonnes pratiques en matière d’ingénierie AEM.
