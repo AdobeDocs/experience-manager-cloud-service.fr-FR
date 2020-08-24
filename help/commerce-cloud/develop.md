@@ -2,9 +2,9 @@
 title: Développer le commerce AEM pour l'AEM en tant que Cloud Service
 description: Développer le commerce AEM pour l'AEM en tant que Cloud Service
 translation-type: tm+mt
-source-git-commit: e30086c546d9efcc1da07ac5862c012a0db02c09
+source-git-commit: 19fa6391913f556b80607f8dd5215489082b50ab
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '809'
 ht-degree: 12%
 
 ---
@@ -20,11 +20,13 @@ Le développement de projets de commerce AEM basés sur le cadre d&#39;intégrat
 
 ## Développement local avec AEM comme SDK Cloud Service {#local}
 
-Un environnement de développement local est recommandé pour travailler avec les projets du FCI. La Ajoute du FCI prévue pour l&#39;AEM en tant qu&#39;environnement Cloud Service est également disponible pour le développement local. Il peut être téléchargé à partir du portail [de distribution de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)logiciels.
+>[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
 
-Le Ajoute CIF est fourni en tant qu’archive de fonctionnalité Sling. Le fichier zip disponible sur le portail de distribution de logiciels comprend deux fichiers d’archives de fonctionnalités Sling, l’un pour l’auteur AEM et l’autre pour les instances de publication AEM.
+Un environnement de développement local est recommandé pour travailler avec les projets du FCI. L&#39;Ajoute du FCI, qui permet l&#39;AEM en tant qu&#39;environnement Cloud Service, est également disponible pour le développement local. Il peut être téléchargé à partir du portail [de distribution de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)logiciels.
 
-**Vous êtes nouveau à AEM en tant que Cloud Service ?** Consultez le guide [suivant pour configurer un environnement de développement local à l’aide de l’AEM en tant que SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)Cloud Service.
+L’Ajoute CIF est fournie sous la forme d’une archive de fonctionnalité Sling. Le fichier zip disponible sur le portail de distribution de logiciels comprend deux fichiers d’archives de fonctionnalités Sling, l’un pour l’auteur AEM et l’autre pour les instances de publication AEM.
+
+**Vous êtes nouveau à AEM en tant que Cloud Service ?** Consultez [un guide plus détaillé pour configurer un environnement de développement local à l’aide de l’AEM en tant que SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)Cloud Service.
 
 ### Logiciels requis
 
@@ -39,15 +41,15 @@ Les éléments suivants doivent être installés localement :
 
 ### Accès au module complémentaire CIF
 
-The CIF add-on can be downloaded as a zip file from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Le fichier zip contient le module complémentaire CIF en tant qu’archive de fonctionnalité Sling, il ne s’agit pas d’un package AEM. Notez que l’accès aux listes de SDK est limité à celles avec AEM en tant que licence Cloud Service.
+The CIF add-on can be downloaded as a zip file from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Le fichier zip contient le module complémentaire CIF en tant qu’archive **de fonctionnalité** Sling, il ne s’agit pas d’un package AEM. Notez que l’accès aux listes de SDK est limité à celles avec AEM en tant que licence Cloud Service.
 
 >[!TIP]
 >
->Veillez à toujours utiliser la dernière version de Ajoute CIF.
+>Veillez à toujours utiliser la dernière version d’Ajoute CIF.
 
 ### Configuration locale
 
-Pour le développement de Ajoutes CIF locales à l’aide de l’AEM en tant que SDK Cloud Service, procédez comme suit :
+Pour le développement d’Ajoutes CIF locales à l’aide de l’AEM en tant que SDK Cloud Service, procédez comme suit :
 
 1. Nouveautés AEM en tant que SDK Cloud Service
 2. Décompressez le fichier AEM .jar pour créer le `crx-quickstart` dossier, exécutez :
@@ -57,9 +59,9 @@ Pour le développement de Ajoutes CIF locales à l’aide de l’AEM en tant que
    ```
 
 3. Create a `crx-quickstart/install` folder
-4. Copiez le fichier d’archive Sling Feature approprié du module complémentaire CIF dans le `crx-quickstart/install` dossier.
+4. Copiez le fichier d’archive des fonctionnalités Sling du module complémentaire CIF dans le `crx-quickstart/install` dossier.
 
-   Le fichier zip du module complémentaire CIF contient deux `.far` fichiers d’archives de la fonctionnalité Sling. Assurez-vous d’utiliser la version correcte pour le AEM Author ou le AEM Publish, en fonction de la manière dont vous envisagez d’exécuter l’AEM locale en tant que SDK Cloud Service.
+   Le fichier zip du module complémentaire CIF contient deux `.far` fichiers d’archives de la fonctionnalité Sling. Assurez-vous d’utiliser l’AEM appropriée pour AEM Author ou AEM Publish, selon la manière dont vous envisagez d’exécuter l’locale en tant que SDK Cloud Service.
 
 5. Créez une variable d’environnement système d’exploitation locale nommée `COMMERCE_ENDPOINT` contenant le point de terminaison GraphQL Magento.
 
@@ -150,5 +152,5 @@ Pour commencer avec le Venia Reference Store, il vous suffit de cloner le réfé
 ## Ressources supplémentaires
 
 - [Archétype de projet AEM](https://github.com/adobe/aem-project-archetype)
-- [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
+- [aem Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
 - [Portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
