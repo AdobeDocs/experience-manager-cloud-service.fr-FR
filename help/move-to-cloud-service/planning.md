@@ -2,10 +2,10 @@
 title: Phase de planification
 description: Phase de planification
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: fdcad36713cdcd766d7d698a2e6c017dad1b03a0
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 100%
+source-wordcount: '430'
+ht-degree: 91%
 
 ---
 
@@ -18,15 +18,15 @@ Avant de commencer votre parcours de transition vers Cloud Service, vous devez v
 
 AEM as a Cloud Service offre de très nombreuses fonctionnalités et possibilités nouvelles pour gérer vos projets AEM.
 
-Cependant, un certain nombre de différences existent entre AEM On-premise ou Adobe Managed Services par rapport à AEM as a Cloud Service.
+Cependant, un certain nombre de différences existent entre AEM On-Premise ou Adobe Managed Services par rapport à AEM as a Cloud Service.
 
-Pour comprendre ces différences importantes, voir la section [Modifications notables d’AEM Cloud Service](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/release-notes/aem-cloud-changes.html).
+Pour comprendre ces différences importantes, voir [Modifications notables d’AEM Cloud Service](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/release-notes/aem-cloud-changes.html).
 
 ## Fonctionnalités obsolètes {#deprecated-features}
 
 Adobe étudie constamment les fonctionnalités du produit de façon à les réinventer au fil du temps ou à remplacer les fonctions plus anciennes par des variantes plus modernes, pour améliorer la valeur client globale, le tout en faisant toujours attention à la compatibilité ascendante.
 
-Pour en savoir plus sur les caractéristiques et les fonctionnalités signalées comme étant obsolètes dans Experience Manager as a Cloud Service, voir la section [ Fonctionnalités obsolètes](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features).
+Pour en savoir plus sur les caractéristiques et les fonctionnalités signalées comme étant obsolètes dans Experience Manager as a Cloud Service, voir [ Fonctionnalités obsolètes](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features).
 
 ## Présentation de la phase de planification {#introduction}
 
@@ -40,16 +40,18 @@ La première étape de la phase de planification consiste à évaluer votre capa
 
 Vous devrez effectuer une évaluation complète du code source AEM existant par rapport aux modifications notables et aux fonctionnalités obsolètes afin de déterminer le niveau d’effort attendu pour le parcours de transition.
 
+Vous pouvez accélérer l’étape d’évaluation en exécutant l’outil Cloud Readiness Analyzer (CRA) sur votre version d’AEM actuelle. Pour plus de détails, consultez la section Aperçu [de](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.html)l&#39;ARC.
+
 >[!NOTE]
 >Si vous avez déjà accès à Cloud Manager et à un environnement Cloud Service, il est recommandé de faire fonctionner votre code actuel dans un pipeline de qualité de code Cloud Manager afin d’évaluer les modifications de code assurant la compatibilité avec Cloud Service.
 
 ### Examen de la planification des ressources {#review-resource-planning}
 
-Une fois le niveau d’effort estimé pour passer à Cloud Service, vous devez identifier les ressources, créer une équipe et définir les rôles et les responsabilités pour le processus de transition.
+Une fois le niveau d’effort estimé pour passer à Cloud Service, vous devez identifier les ressources, créer une équipe ainsi que définir les rôles et les responsabilités pour le processus de transition.
 
 ### Définition des indicateurs de performance clés (IPC) {#establish-kpis}
 
 Si vous n’avez pas encore défini d’indicateurs de performance clés (IPC), il est recommandé de les établir pour votre implémentation d’Adobe Experience Manager (AEM). Votre équipe pourra ainsi se concentrer sur l’essentiel.
 
-Pour savoir comment choisir les IPC appropriés pour vos objectifs métier, voir la section [Développement d’indicateurs de performance clés](https://guided.adobe.com/welcome/aem/part6.html).
+Pour savoir comment choisir les IPC appropriés pour vos objectifs métier, voir [Développement d’indicateurs de performance clés](https://guided.adobe.com/welcome/aem/part6.html).
 
