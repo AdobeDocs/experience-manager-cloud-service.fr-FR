@@ -2,10 +2,10 @@
 title: Personnalisation et extensions de fragments de contenu
 description: Un fragment de contenu étend une ressource standard.
 translation-type: tm+mt
-source-git-commit: bfdb862f07dc37b540c07f267b2bdcc2100bcca2
+source-git-commit: a829a70350464e0d96ae302aa305e140affbc63a
 workflow-type: tm+mt
-source-wordcount: '1849'
-ht-degree: 100%
+source-wordcount: '1842'
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,11 @@ Dans Adobe Experience Manager as a Cloud Service, un fragment de contenu étend 
 
 * [Création et gestion des fragments de contenu](/help/assets/content-fragments/content-fragments.md) et [Création de pages avec des fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md) pour plus d’informations sur les fragments de contenu.
 
-* [Gestions des ressources](/help/assets/manage-digital-assets.md) et [Personnalisation et extension de l’éditeur de ressources](/help/assets/extend-asset-editor.md) pour plus d’informations sur les ressources standard.
+* [Gestion des actifs](/help/assets/manage-digital-assets.md) pour plus d’informations sur les actifs standard.
+
+<!-- Removing the extend-asset-editor article for now as I'm unsure of its accuracy. Hence commenting this link.
+* [Managing Assets](/help/assets/manage-digital-assets.md) and [Customizing and Extending the Asset Editor](/help/assets/extend-asset-editor.md) for further information about standard assets.
+-->
 
 ## Architecture {#architecture}
 
@@ -99,7 +103,7 @@ Pour une intégration au composant de base Assets :
 >
 >Le [composant Fragment de contenu fait partie des composants de base](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/content-fragment-component.html). Voir [Développement de composants de base](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/developing.html) pour plus d’informations.
 
-Les fragments de contenu peuvent être référencés dans les pages AEM, exactement comme n’importe quel autre type de ressource. AEM fournit le composant de base de **[fragment de contenu](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/content-fragment-component.html)**[qui permet d’inclure des fragments de contenu sur vos pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). Vous pouvez également étendre ce composant de base de**[fragment de contenu](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/developing.html)**.
+Les fragments de contenu peuvent être référencés dans les pages AEM, exactement comme n’importe quel autre type de ressource. AEM fournit le composant de base de **[fragment de contenu](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/content-fragment-component.html)** [qui permet d’inclure des fragments de contenu sur vos pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). Vous pouvez également étendre ce composant de base de **[fragment de contenu](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/developing.html)**.
 
 * Le composant utilise la propriété `fragmentPath` pour référencer le fragment de contenu. La propriété `fragmentPath` est traitée de la même façon que les propriétés similaires d’autres types de ressources, par exemple, lorsque le fragment de contenu est déplacé vers un autre emplacement.
 
