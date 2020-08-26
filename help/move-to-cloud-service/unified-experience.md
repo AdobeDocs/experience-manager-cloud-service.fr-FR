@@ -2,10 +2,10 @@
 title: Expérience unifiée pour les outils de refactorisation du code
 description: Expérience unifiée pour les outils de refactorisation du code
 translation-type: tm+mt
-source-git-commit: c554506aea99518c94666f5d2e6151a3dce3b91e
+source-git-commit: df41244712e1792e5265e4e6c8104962899c9b26
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 0%
+source-wordcount: '418'
+ht-degree: 1%
 
 ---
 
@@ -16,17 +16,19 @@ Les outils Expérience unifiée pour la refactorisation du code unifient l’exp
 
 Cet outil réduit la complexité de l&#39;utilisation des outils de refactorisation du code, chacun ayant des exigences d&#39;exécution différentes en termes d&#39;installation, de configuration et d&#39;exécution.
 
+![image](/help/move-to-cloud-service/assets/unified-1.png)
+
 ## Avantages {#benefits}
 
-L’expérience unifiée pour les outils de refactorisation du code appelle et exécute tous les outils de refactorisation du code qui fonctionnent sur le code source au même endroit.
+Les outils Expérience unifiée pour la refactorisation du code appellent et exécutent tous les outils de refactorisation du code source qui fonctionnent à partir du même emplacement.
 
-L’expérience unifiée des outils de refactorisation du code, ainsi que les référentiels connexes, permettent de :
+Ces outils, ainsi que les référentiels complémentaires, permettent :
 
-* Unifiez tous les outils qui fonctionnent sur la migration du code source dans une `node.js` application exposée `aio-cli plugin` afin de fournir une expérience utilisateur cohérente à l’utilisateur.
+* Unification de tous les outils qui fonctionnent sur la migration du code source dans une `node.js` application exposée `aio-cli plugin` afin de fournir une expérience utilisateur cohérente à l’utilisateur.
 
-* Permet d’effectuer la migration globale par le biais d’une seule commande, tout en offrant la possibilité d’exécuter un outil particulier selon les besoins.
+* Approvisionnement permettant d’effectuer la migration globale via une seule commande, tout en offrant une flexibilité pour exécuter un outil particulier selon les besoins.
 
-* Simplifiez l&#39;ajout futur de nouveaux outils, tels que l&#39;ajout de nouveaux outils au module externe, en ajoutant simplement une nouvelle commande pour le développeur et une simple mise à jour du module externe pour l&#39;utilisateur, afin que l&#39;expérience reste cohérente avec une plus grande valeur ajoutée.
+* Pour simplifier l’ajout futur de nouveaux outils, comme l’ajout de nouveaux outils au module externe, il suffit d’ajouter une nouvelle commande pour le développeur et une simple mise à jour du module externe pour l’utilisateur. Ainsi, l’expérience reste cohérente avec une plus grande valeur ajoutée.
 
 ## Présentation du module externe {#understanding-plugin}
 
