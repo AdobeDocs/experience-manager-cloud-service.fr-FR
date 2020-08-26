@@ -1,18 +1,18 @@
 ---
 title: Outil convertisseur du Dispatcher AEM
 description: Outil convertisseur du Dispatcher AEM
-translation-type: ht
-source-git-commit: 66cf4fc7b5a336968dd3f8757cc56a11d6e4843e
-workflow-type: ht
-source-wordcount: '348'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 50d26dbec8281afec07ca56595b4b2a7b915eca9
+workflow-type: tm+mt
+source-wordcount: '320'
+ht-degree: 53%
 
 ---
 
 
 # Convertisseur du Dispatcher AEM {#introduction}
 
-Le convertisseur du Dispatcher Adobe Experience Manager convertit les configurations existantes du Dispatcher AMS en configurations du Dispatcher AEM as a Cloud Service.
+Adobe Experience Manager Dispatcher Converter convertit en AEM les configurations de  Dispatcher existantes en configurations de Cloud Service Dispatcher.
 
 ## Présentation du Dispatcher {#introduction-dispatcher}
 
@@ -31,23 +31,18 @@ Pour plus d’informations, voir [Dispatcher en mode cloud](https://docs.adobe.c
 
 ## Convertisseur du Dispatcher AEM {#aem-dispatcher-converter}
 
-Le convertisseur du Dispatcher AEM est un utilitaire permettant de convertir des configurations du Dispatcher AMS existantes en configurations du Dispatcher AEM as a Cloud Service. Cet utilitaire est destiné aux instances AMS.
-
-Le convertisseur mis en œuvre est **AEMDispatcherConfigConverter**, en conformité avec les règles de transformation.
-
-Reportez-vous à [Conversion d’une configuration AMS en configuration du Dispatcher Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html#how-to-convert-an-ams-to-an-aem-as-a-cloud-service-dispatcher-configuration) pour la conversion d’une configuration de Dispatcher entre AMS et Adobe Experience Manager as a Cloud Service.
+aem Dispatcher Converter offre la possibilité de refactoriser les configurations existantes sur site ou Adobe Managed Services Dispatcher en AEM en tant que configuration de Répartiteur compatible Cloud Service.
 
 ## Utilisation du convertisseur du Dispatcher AEM {#using-dispatcher-converter}
 
-La section suivante décrit les ressources et les informations requises pour utiliser le convertisseur du Dispatcher AEM.
+* Par l&#39;intermédiaire de l&#39;interface de ligne de commande des E/S d&#39;Adobe : Il est recommandé d&#39;utiliser AEM Dispatcher Converter via `aio-cli-plugin-aem-cloud-service-migration` (AEM en tant que module externe de refactorisation du code Cloud Service pour l&#39;interface de ligne de commande E/S de l&#39;Adobe).
 
-Pour en savoir plus sur l’utilisation, les restrictions et la résolution des problèmes de cet outil, voir **[Ressource Git : Convertisseur du Dispatcher AEM Cloud Service](https://github.com/adobe/aem-cloud-service-dispatcher-converter)**.
+   Reportez-vous à la ressource **[Git : aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** pour savoir comment installer et utiliser le module externe.
+
+* En tant qu&#39;utilitaire autonome : L&#39;outil de conversion de répartiteur AEM peut également être exécuté en tant qu&#39;utilitaire autonome.
+
+   Refer to **[Git Resource: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)** to learn about the usage and troubleshooting for this tool.
 
 >[!IMPORTANT]
->Le convertisseur du Dispatcher AEM est développé à l’aide de Python 3.7.3. Il est recommandé d’installer Python 3.5 ou une version supérieure.
-
-## Restrictions {#limitations}
-
-Le convertisseur du Dispatcher AEM fonctionne en partant du principe que la structure du dossier de configuration du Dispatcher est similaire à celle décrite dans la configuration du Dispatcher Cloud Manager.
-
+>aem Dispatcher Converter est développé à l&#39;aide de NodeJS. Il est recommandé d’installer NodeJS 10.0+.
 
