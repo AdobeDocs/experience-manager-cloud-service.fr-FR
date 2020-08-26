@@ -2,7 +2,7 @@
 title: Expérience unifiée pour les outils de refactorisation du code
 description: Expérience unifiée pour les outils de refactorisation du code
 translation-type: tm+mt
-source-git-commit: 03434343829e1a1fb95256a607619b55626c6afc
+source-git-commit: ae60d0b472ed6368aeb5806329ff1d5c689e0827
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 1%
@@ -30,8 +30,8 @@ Le `aio-cli-plugin-aem-cloud-service-migration` module externe se compose de deu
 
 * **Interface utilisateur**
 
-   * `aio-cli` commandes pour exécuter un ou plusieurs outils de refactorisation du code (en chaînant les outils à exécuter de manière séquentielle)
-   * `config.yaml` qui accepte les paramètres d&#39;entrée requis
+   * `aio-cli` pour exécuter un ou plusieurs outils de refactorisation du code (en chaînant les outils à exécuter de manière séquentielle).
+   * `config.yaml` qui accepte les paramètres d&#39;entrée requis.
 
 * **Suite d&#39;outils de refactorisation du code sous-jacente**
 
