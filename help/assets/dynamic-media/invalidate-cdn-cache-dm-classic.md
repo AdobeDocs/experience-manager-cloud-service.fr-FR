@@ -1,8 +1,8 @@
 ---
-title: Invalidation du cache CDN par le biais de Dynamic Media Classic
+title: Invalidation du cache CDN par le biais de Contenu multimédia dynamique classique
 description: L’annulation de la validité du contenu CDN en cache vous permet de mettre à jour rapidement les ressources diffusées par Dynamic Media, au lieu d’attendre l’expiration du cache.
 translation-type: tm+mt
-source-git-commit: e4822ae72d133bb502bc2c2fa1eb07a625f2a507
+source-git-commit: 8f555f2cf97aaeabfae24919ad5861a2512b0903
 workflow-type: tm+mt
 source-wordcount: '682'
 ht-degree: 90%
@@ -10,7 +10,7 @@ ht-degree: 90%
 ---
 
 
-# Invalidation du cache CDN par le biais de Dynamic Media Classic {#invalidating-your-cdn-cached-content}
+# Invalidation du cache CDN par le biais de Contenu multimédia dynamique classique {#invalidating-your-cdn-cached-content}
 
 Les ressources Dynamic Media sont mises en cache par le réseau CDN en vue d’une diffusion rapide. Cependant, lorsque vous appliquez des mises à jour à une ressource, vous pouvez faire en sorte qu’elles soient prises immédiatement en compte. L’annulation de la validité du contenu CDN en cache vous permet de mettre à jour rapidement les ressources diffusées par Dynamic Media, au lieu d’attendre l’expiration du cache.
 
