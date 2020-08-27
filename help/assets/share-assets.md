@@ -3,10 +3,10 @@ title: Partage de ressources, de dossiers et de collections sous forme de lien
 description: Cet article décrit le partage de ressources, de dossiers et de collections dans les ressources d’Experience Manager sous forme de lien hypertexte.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: f13a884d16dd5695a0acd456bea143591fd0d822
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 100%
+source-wordcount: '905'
+ht-degree: 98%
 
 ---
 
@@ -107,7 +107,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 ## Téléchargement et partage de ressources {#download-and-share-assets}
 
-Les utilisateurs peuvent télécharger certaines ressources et les partager en dehors d’Experience Manager. Pour plus d’informations, consultez les pages suivantes (en anglais) [Recherche de ressources](/help/assets/search-assets.md), [Téléchargement de ressources](/help/assets/download-assets-from-aem.md) et [Téléchargement de collections](manage-collections.md#download-a-collection)
+Les utilisateurs peuvent télécharger les ressources requises et les partager en dehors de [!DNL Experience Manager]. Pour plus d’informations, consultez les pages suivantes (en anglais) [Recherche de ressources](/help/assets/search-assets.md), [Téléchargement de ressources](/help/assets/download-assets-from-aem.md) et [Téléchargement de collections](manage-collections.md#download-a-collection)
 
 ## Partage de ressources avec des professionnels de la création {#share-with-creatives}
 
