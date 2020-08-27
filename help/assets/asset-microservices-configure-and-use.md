@@ -1,33 +1,23 @@
 ---
-title: Configuration et utilisation des microservices de ressources pour le traitement des ressources
-description: Découvrez comment configurer et utiliser les microservices de ressources basés sur le cloud pour traiter des ressources à grande échelle.
+title: Configuration et utilisation des microservices de ressources pour le traitement des ressources.
+description: Configurez et utilisez les microservices de ressources natifs du cloud pour traiter les ressources à l’échelle.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2917f14bea5e2a31c436577d9fd74135cca93118
+source-git-commit: ee3dfaee39f05dbcc37ae77789431af115b1c115
 workflow-type: tm+mt
-source-wordcount: '2537'
-ht-degree: 49%
+source-wordcount: '2530'
+ht-degree: 45%
 
 ---
 
 
 # Utiliser les microservices de ressources et les profils de traitement {#get-started-using-asset-microservices}
 
-<!--
-* Current capabilities of asset microservices offered. If applications have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
-* How to access the microservices. UI. API. Is extending possible right now?
-* Detailed list of what file formats and what processing is supported by which workflows/application process.
-* How/where can admins check what's already configured and provisioned.
-* How to create new config or request for new provisioning/purchase.
+Les micro-services de ressources permettent un traitement évolutif et résilient des ressources à l’aide d’applications natives au cloud (également appelées travailleurs). Adobe gère les services pour une gestion optimale des différents types de ressources et des options de traitement.
 
-* [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
--->
+Asset microservices lets you process a [broad range of file types](/help/assets/file-format-support.md) covering more formats out-of-the-box than what is possible with previous versions of [!DNL Experience Manager]. Par exemple, l’extraction de miniatures des formats PSD et PSB est désormais possible, car elle nécessitait auparavant des solutions tierces telles qu’ImageMagick.
 
-Les microservices de ressources permettent un traitement évolutif et résilient des ressources à l’aide des services cloud. Adobe gère les services pour une gestion optimale des différents types de ressources et des options de traitement.
-
-Asset processing depends on the configuration in **[!UICONTROL Processing Profiles]**, which provide a default set up, and let an administrator to add more specific asset processing configuration. Les administrateurs peuvent créer et gérer les configurations des workflows de post-traitement, y compris la personnalisation facultative. La personnalisation des workflows autorise une extensibilité et une personnalisation complète.
-
-Asset microservices lets you process a [broad range of file types](/help/assets/file-format-support.md) covering more formats out-of-the-box than what is possible with previous versions of Experience Manager. Par exemple, l’extraction de miniatures des formats PSD et PSB est désormais possible, car elle nécessitait auparavant des solutions tierces telles qu’ImageMagick.
+Le traitement des ressources dépend de la configuration des Profils **[!UICONTROL de]** traitement. Experience Manager fournit une configuration par défaut de base et permet aux administrateurs d’ajouter une configuration de traitement des ressources plus spécifique. Les administrateurs créent, conservent et modifient les configurations des workflows de post-traitement, y compris la personnalisation facultative. La personnalisation des workflows permet aux développeurs d’étendre l’offre par défaut.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -93,7 +83,7 @@ Pour créer un profil de traitement standard, procédez comme suit :
    * Qualité en pourcentage de chaque rendu JPEG.
    * Types MIME inclus et exclus pour définir l’applicabilité d’un profil.
 
-   ![processing-profiles-adding](assets/processing-profiles-adding.png)
+   ![processing-profiles-adding](assets/processing-profiles-image.png)
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -158,9 +148,7 @@ L’intégration du service Asset Compute permet au Experience Manager de transm
 
 ![profil de traitement personnalisé](assets/custom-processing-profile.png)
 
-*Figure : Utilisez le champ Paramètres[!UICONTROL du]service pour transmettre des informations supplémentaires aux paramètres prédéfinis générés dans l’application personnalisée.*
-
-Lorsque des images de campagne sont téléchargées dans le dossier sur lequel ce profil de traitement est appliqué, les images sont mises à jour avec `Jumanji` du texte en `Arial-BoldMT` police.
+*Figure : Utilisez le champ Paramètres[!UICONTROL du]service pour transmettre des informations supplémentaires aux paramètres prédéfinis générés dans l’application personnalisée. Dans cet exemple, lorsque des images de campagne sont téléchargées, les images sont mises à jour avec`Jumanji`du texte en`Arial-BoldMT`police.*
 
 ## Utiliser des profils de traitement pour traiter des ressources {#use-profiles}
 
@@ -169,19 +157,20 @@ Créez les profils de traitement personnalisé supplémentaire et appliquez-les 
 Appliquez des profils de traitement aux dossiers en utilisant l’une des méthodes suivantes :
 
 * Administrators can select a processing profile definition in **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**, and use **[!UICONTROL Apply Profile to Folder(s)]** action. Cette action ouvre un navigateur de contenu qui vous permet d’accéder à des dossiers spécifiques, de les sélectionner et de confirmer l’application du profil.
-* Les utilisateurs peuvent sélectionner un dossier dans l’interface utilisateur Assets, exécuter l’action **[!UICONTROL Propriétés]** pour ouvrir l’écran des propriétés du dossier, cliquer sur l’onglet **[!UICONTROL Profils de traitement]** puis, dans la liste déroulante, sélectionner le profil de traitement approprié pour ce dossier. Pour enregistrer les modifications, cliquez sur **[!UICONTROL Enregistrer et fermer]**.
+* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the appropriate processing profile for that folder. Pour enregistrer les modifications, cliquez sur **[!UICONTROL Enregistrer et fermer]**.
+   ![Application d’un profil de traitement à un dossier à partir de l’onglet Propriétés du fichier](assets/folder-properties-processing-profile.png)
 
->[!NOTE]
+>[!TIP]
 >
->Un seul profil de traitement peut être appliqué à chaque dossier. Pour générer davantage de rendus, ajoutez d’autres définitions de rendu au profil de traitement existant.
+>Un seul profil de traitement peut être appliqué à un dossier. Pour générer davantage de rendus, ajoutez d’autres définitions de rendu au profil de traitement existant.
 
-Une fois qu’un profil de traitement a été appliqué à un dossier, toutes les nouvelles ressources chargées (ou mises à jour) dans ce dossier ou dans l’un de ses sous-dossiers sont traitées à l’aide du profil de traitement supplémentaire configuré. Ce dernier s’ajoute au profil par défaut standard. Si vous appliquez plusieurs profils à un dossier, les ressources chargées ou mises à jour sont traitées à l’aide de chacun d’eux.
+Une fois qu’un profil de traitement a été appliqué à un dossier, toutes les nouvelles ressources chargées (ou mises à jour) dans ce dossier ou dans l’un de ses sous-dossiers sont traitées à l’aide du profil de traitement supplémentaire configuré. Ce dernier s’ajoute au profil par défaut standard.
 
 >[!NOTE]
 >
 >Un profil de traitement appliqué à un dossier fonctionne pour l’ensemble de l’arborescence, mais il peut être remplacé par un autre qui est appliqué à un sous-dossier. Lorsque des ressources sont chargées dans un dossier, Experience Manager recherche un profil de traitement dans les propriétés du dossier conteneur. Si aucun dossier parent n’est appliqué, un dossier parent dans la hiérarchie est vérifié pour appliquer un profil de traitement.
 
-Tous les rendus générés sont disponibles dans la vue [!UICONTROL Rendus] du rail de gauche. Ouvrez la prévisualisation de ressources et ouvrez le rail de gauche pour accéder à la vue **[!UICONTROL Rendus]** . Les rendus spécifiques situés dans le profil de traitement, pour lesquels le type de la ressource correspond aux règles d’inclusion du type MIME, doivent être visibles et accessibles.
+Pour vérifier que les ressources sont traitées, prévisualisation les rendus générés dans la vue [!UICONTROL Rendus] dans le rail de gauche. Ouvrez la prévisualisation de ressources et ouvrez le rail de gauche pour accéder à la vue **[!UICONTROL Rendus]** . Les rendus spécifiques situés dans le profil de traitement, pour lesquels le type de la ressource correspond aux règles d’inclusion du type MIME, doivent être visibles et accessibles.
 
 ![rendus supplémentaires](assets/renditions-additional-renditions.png)
 
@@ -238,4 +227,10 @@ Pour plus d’informations sur les étapes de workflow standard pouvant être ut
 >* [Présentation du service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)Asset Compute.
 >* [Comprendre l&#39;extensibilité et quand l&#39;utiliser](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
 >* [Comment créer des applications](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html)personnalisées.
+>* [Types MIME pris en charge pour divers cas](/help/assets/file-format-support.md)d’utilisation.
 
+
+<!-- TBD: 
+* How/where can admins check what's already configured and provisioned.
+* How/where to request for new provisioning/purchase.
+-->
