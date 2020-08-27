@@ -2,10 +2,10 @@
 title: Adobe Experience Manager Assets as a Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation d’Adobe Experience Manager Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: bb81fbf0952719c6ea364d008506faad73a60b8f
+source-git-commit: d9237a0121a346fc16e67e52300c3a5a263e5af3
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 95%
+source-wordcount: '347'
+ht-degree: 90%
 
 ---
 
@@ -30,7 +30,7 @@ Vous trouverez ci-dessous les ressources d’aide autonome d’Experience Manage
 | [Guide de l’utilisateur relatif à la sécurité](/help/security/home.md) | Découvrez les sujets de sécurité importants concernant Experience Manager as a Cloud Service. |
 | [Intégration](/help/onboarding/home.md) | Prise en main d’Experience Manager as a Cloud Service – accédez aux données importantes et protégez-les. |
 | [Guide de l’utilisateur de Sites](/help/sites-cloud/home.md) | Découvrez comment créer avec Experience Manager Sites as a Cloud Service et l’administrer. |
-| [Transition vers AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Découvrez le parcours de transition vers Cloud Service. |
+| [Passage au Experience Manager en tant que Cloud Service](/help/move-to-cloud-service/home.md) | Comprenez le parcours de transition vers le Experience Manager en tant que Cloud Service. |
 | [Guide de l’utilisateur relatif à l’implémentation](/help/implementing/home.md) | Personnalisez, développez et déployez Experience Manager as a Cloud Service. |
 | [Guide de l’utilisateur des connecteurs](/help/connectors/home.md) | Découvrez comment intégrer des connecteurs dans Experience Manager as a Cloud Service. |
 | [Guide de l’utilisateur relatif aux opérations](/help/operations/home.md) | Découvrez les opérations principales d’Experience Manager as a Cloud Service, telles que les tâches d’indexation et de maintenance. |
