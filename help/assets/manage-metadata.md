@@ -4,10 +4,10 @@ description: Découvrez les types de métadonnées ainsi que l’organisation et
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 643d31998989e9ebe73e124313379fb64ec86cd5
+source-git-commit: d6a0848547a6dcbb058576827d3cacbc8045ae79
 workflow-type: tm+mt
-source-wordcount: '1830'
-ht-degree: 100%
+source-wordcount: '1933'
+ht-degree: 94%
 
 ---
 
@@ -141,6 +141,16 @@ Enterprise Manager Assets vous permet de modifier les métadonnées de plusieu
    >[!CAUTION]
    >
    >Pour les champs à une seule valeur, les nouvelles métadonnées ne sont pas ajoutées à la valeur existante dans le champ même si vous sélectionnez **[!UICONTROL Mode d’ajout]**.
+
+## Métadonnées personnalisées à l’aide du profil de traitement {#metadata-compute-service}
+
+Les ressources en tant que Cloud Service peuvent générer des métadonnées personnalisées pour une ressource à l’aide de services natifs au cloud. Configurez un profil de traitement pour générer des métadonnées personnalisées. Voir [comment utiliser le profil](/help/assets/asset-microservices-configure-and-use.md#use-profiles)de traitement.
+
+![Rendu des métadonnées dans le profil de traitement](assets/processing-profile-metadata.png)
+
+>[!TIP]
+>
+>Un seul profil de traitement peut être appliqué à un dossier. Pour appliquer plusieurs traitements aux fichiers d’un dossier, ajoutez d’autres options à un seul profil de traitement. Par exemple, un seul profil peut générer des rendus, transcoder des fichiers, générer des métadonnées personnalisées, etc. Vous pouvez appliquer des filtres de type MIME pour chaque tâche afin que la tâche appropriée soit déclenchée pour le format de fichier requis.
 
 ## Configuration du nombre maximal de paramètres pour la mise à jour des métadonnées en masse {#configlimit}
 
