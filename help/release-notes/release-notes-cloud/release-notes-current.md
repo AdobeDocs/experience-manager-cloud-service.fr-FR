@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 2020.8.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[ !DNL Adobe Experience Manager] en tant que notes de mise à jour Cloud Service pour la version 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: b47b4d0c84e814a43ca14c2efd4f553694ab6c2b
+source-git-commit: 7bd917067667af2f9f03a153a26303daade996fc
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1037'
 ht-degree: 12%
 
 ---
@@ -44,7 +44,7 @@ La section suivante décrit les notes de mise à jour générales d’Experience
 
 * Les prévisualisations de document PDF natives et de haute fidélité sont désormais disponibles dans le portail des marques. Voir Présentation [du lecteur de](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)documents.
 
-* L’interface utilisateur permettant d’invalider le cache est désormais disponible dans [!DNL Dynamic Media].
+* Vous pouvez désormais invalider le cache CDN (Content Diffusion Network) directement depuis [!DNL Dynamic Media] AEM en tant que Cloud Service (au lieu d’utiliser [!DNL Dynamic Media Classic]) pour vous assurer que les derniers actifs sont diffusés en quelques minutes au lieu de quelques heures. Voir [Invalidation du cache CDN à l’aide de Contenu multimédia dynamique.](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 
 * La prise en charge de l’accessibilité est ajoutée aux commandes d’interface utilisateur, à la navigation, à la navigation et à la recherche dans [!DNL Assets].
 
