@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2020.8.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[ !DNL Adobe Experience Manager] en tant que notes de mise à jour Cloud Service pour la version 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: 27f9f4441a95964a4ae0db798577510c726133c5
+source-git-commit: b47b4d0c84e814a43ca14c2efd4f553694ab6c2b
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 22%
+source-wordcount: '1002'
+ht-degree: 12%
 
 ---
 
@@ -14,9 +14,51 @@ ht-degree: 22%
 
 La section suivante décrit les notes de mise à jour générales d’Experience Manager as a Cloud Service 2020.8.0.
 
+## [!DNL Adobe Experience Manager Sites]as a Cloud Service{#sites}
+
+### What is new in [!DNL Sites] {#what-is-new-sites}
+
+* Possibilité de restaurer des pages et des sous-pages (arbres de page) vers une version antérieure.
+
+* Possibilité de créer des lancements dans AEM éditeur d’applications monopages.
+
 ## [!DNL Adobe Experience Manager Assets]as a Cloud Service{#assets}
 
-* Les nouveaux [!DNL Experience Manager Assets] déploiements sont intégrés [!DNL Adobe Developer Console] par défaut. Il permet de configurer plus rapidement la fonctionnalité des balises actives. Dans les déploiements existants, les administrateurs [configurent l’intégration](/help/assets/smart-tags-configuration.md#aio-integration) des balises actives comme auparavant.
+### What is new in [!DNL Assets] {#what-is-new-assets}
+
+* Le transcodage vidéo est désormais pris en charge avec les microservices de ressources, avec une nouvelle section Vidéo dans l’écran Profils [!UICONTROL de] traitement prenant en charge la configuration du débit vidéo et des dimensions (le format de sortie est MP4 avec le codec H.264). For details, see [manage video assets](/help/assets/manage-video-assets.md#transcode-video). Pour d’autres options de transcodage et un module complémentaire de diffusion vidéo [!DNL Dynamic Media] peuvent être utilisés.
+
+* Lors des nouveaux [!DNL Experience Manager Assets] déploiements, la fonctionnalité de balisage intelligent est désormais configurée par défaut. Il n’est pas nécessaire d’intégrer manuellement [!DNL Adobe Developer Console]. Sur les déploiements existants, les administrateurs [configurent l’intégration](/help/assets/smart-tags-configuration.md#aio-integration) des balises actives comme auparavant.
+
+* Une nouvelle expérience [de téléchargement de](/help/assets/download-assets-from-aem.md) ressources permet,
+
+   * Téléchargement asynchrone pour les téléchargements volumineux afin que les utilisateurs n’aient pas à attendre.
+
+   * Une nouvelle API modulaire pour l&#39;extensibilité des développeurs.
+
+* [!DNL Experience Manager] a amélioré les performances de l’extraction des métadonnées pour les microservices de ressources. Cela augmente le débit global d&#39;assimilation des actifs.
+
+* Utilisez le profil de traitement pour générer des métadonnées personnalisées à l’aide de Compute Service. Voir Métadonnées [personnalisées à l’aide du profil de traitement](/help/assets/manage-metadata.md#metadata-compute-service)
+
+* Une expérience de téléchargement plus simple pour les utilisateurs du portail de marque que les administrateurs peuvent configurer. Voir Présentation [de l’expérience](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)de téléchargement.
+
+* Les prévisualisations de document PDF natives et de haute fidélité sont désormais disponibles dans le portail des marques. Voir Présentation [du lecteur de](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)documents.
+
+* L’interface utilisateur permettant d’invalider le cache est désormais disponible dans [!DNL Dynamic Media].
+
+* La prise en charge de l’accessibilité est ajoutée aux commandes d’interface utilisateur, à la navigation, à la navigation et à la recherche dans [!DNL Assets].
+
+   * Si vous appuyez sur la touche Echap après avoir sélectionné l’option [!UICONTROL Ajouter le rendu] , la sélection revient à la barre d’outils. <!-- via CQ-4293594-->
+   * La mise au point du clavier fonctionne comme prévu lors de l’utilisation de la zone de liste déroulante Courriel. <!-- via CQ-4286215 -->
+   * Les éléments en accordéon de la section filtres de recherche sont interprétés comme des accordéons extensibles standard. <!-- via CQ-4273103 -->
+   * Lors de l’application d’une balise à une ressource, la boîte de dialogue affiche les balises sous forme d’éléments d’arborescence. Les attributs ARIA sont correctement appliqués aux éléments de l&#39;arborescence pour les rendre accessibles dès maintenant. <!-- via CQ-4272964 -->
+
+* [!DNL AEM Desktop app] La version 2.0.3 est désormais disponible, ce qui améliore la compatibilité avec la version [!DNL AEM] 6.5.5 [!DNL Service Pack] et met à jour la liste de compatibilité du système d’exploitation client (suppression [!DNL Windows] 7 et [!DNL MacOS] versions antérieures à la version 10.14).
+
+### Bugs résolus dans [!DNL Assets] {#bugs-fixed}
+
+* L’option Créer une relation et Annuler la relation ne répond pas lorsque l’utilisateur clique pour la première fois. (CQ-4299022)
+* Lors du téléchargement d’un fichier, si vous sélectionnez l’option permettant de le recevoir par courrier électronique, le courrier électronique n’est pas envoyé. (CQ-4299146)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -42,6 +84,7 @@ La date de publication de la mise à jour 2020.8.0 de [!UICONTROL Cloud Manage
 
 * Les environnements en veille prolongée peuvent être désactivés à partir de la page **Présentation** de Cloud Manager.
 
+* Possibilité d’effectuer des vérifications d’expérience sur les pages, optimisées par Google Lighthouse. Dans le cadre du pipeline de Cloud Manager, jusqu’à 25 pages peuvent être vérifiées et validées par rapport aux IPC d’expérience et les scores s’affichent dans l’interface utilisateur de Cloud Manager.
 
 ### Correctifs {#bug-fixes-cm}
 
@@ -85,3 +128,14 @@ Suivez cette section pour en savoir plus sur les nouveautés et les mises à jou
 
 * L’interface utilisateur des versions antérieures présentait parfois une extraction réussie, même si le journal présentait des erreurs.
 
+## Outils de refactorisation du code {#code-refactoring-tools}
+
+Suivez cette section pour en savoir plus sur les nouveautés et les mises à jour des outils de refactorisation du code.
+
+### Nouveautés {#what-is-new-refactoring}
+
+* Module externe AIO-CLI sorti pour unifier les outils de refactorisation du code pour permettre aux développeurs d’appeler et d’exécuter des outils de refactorisation du code à partir d’un seul endroit. Refer to [Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) for more details.
+
+* aem Dispatcher Converter a été étendu pour prendre en charge les conversions des configurations On-premise et Adobe Managed Services Dispatcher en AEM en tant que configurations de Répartiteur compatibles avec les Cloud Service. Reportez-vous à la ressource [Git : aem Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) pour plus d&#39;informations.
+
+* aem Réécriture du convertisseur de répartiteur dans ` node.js ` et intégration avec le module externe AIO-CLI.
