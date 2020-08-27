@@ -1,28 +1,28 @@
 ---
-title: Configuration d’AEM Assets avec Brand Portal
+title: Configuration d’AEM Assets en tant que Cloud Service avec le portail de marque
 description: Configuration d’AEM Assets avec Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: db5299d353d6a5e46f2d1707379cd6c364531e47
+source-git-commit: 830fd3a61d479a47b03cffc117f7192dd2c740cc
 workflow-type: tm+mt
 source-wordcount: '1664'
-ht-degree: 58%
+ht-degree: 43%
 
 ---
 
 
-# Configuration d’AEM Assets avec Brand Portal {#configure-aem-assets-with-brand-portal}
+# Configure AEM Assets as a Cloud Service with Brand Portal {#configure-aem-assets-with-brand-portal}
 
-Adobe Experience Manager (AEM) Assets est configuré avec Brand Portal via Adobe Developer Console, qui fournit un jeton IMS pour autoriser votre client Brand Portal.
+La configuration de Adobe Experience Manager Assets Brand Portal permet de publier des fichiers de marque approuvés à partir de Adobe Experience Manager Assets en tant qu’instance de Cloud Service sur Brand Portal et de les distribuer aux utilisateurs du portail de marque.
 
-**Comment fonctionne la configuration ?**
+**Processus de configuration**
 
-La configuration de AEM Assets avec Brand Portal nécessite des configurations à la fois dans AEM Assets et dans Adobe Developer Console.
+aem assets en tant que Cloud Service est configuré avec Brand Portal via Adobe Developer Console, qui fournit un jeton IMS pour l’autorisation du locataire du portail de marques. Il nécessite des configurations à la fois dans AEM Assets et dans Adobe Developer Console.
 
-1. En AEM Assets, créez un compte IMS et générez un certificat public (clé publique).
+1. En AEM Assets, créez un compte Identity Management Services (IMS) Adobe et générez une clé publique (certificat).
 1. Dans Adobe Developer Console, créez un projet pour votre client Brand Portal (organisation).
-1. Dans le projet, configurez une API à l’aide de la clé publique pour créer une connexion au compte de service (JWT).
-1. Obtenez les informations d’identification du compte de service et les informations de charge utile JWT.
+1. Sous le projet, configurez une API à l’aide de la clé publique pour créer une connexion au compte de service.
+1. Obtenez les informations d’identification du compte de service et les informations de charge utile JSON Web Token (JWT).
 1. En AEM Assets, configurez le compte IMS à l’aide des informations d’identification du compte de service et de la charge utile JWT.
 1. Dans AEM Assets, configurez le service cloud du portail des marques à l’aide du compte IMS et du point de terminaison du portail des marques (URL de l’organisation).
 1. Testez votre configuration en publiant un fichier d’AEM Assets vers Brand Portal.
@@ -36,9 +36,9 @@ La configuration de AEM Assets avec Brand Portal nécessite des configurations �
 
 Pour configurer AEM Assets avec Brand Portal, vous devez disposer des éléments suivants :
 
-* Une AEM Assets en cours d’exécution en tant qu’instance Cloud Service.
-* URL du client du portail de la marque.
-* Un utilisateur disposant de droits d’administrateur système sur l’organisation IMS du client Brand Portal
+* Une AEM Assets en cours d’exécution en tant qu’instance Cloud Service
+* URL du client du portail de marques
+* Utilisateur disposant de droits d’administrateur système sur l’organisation IMS du locataire du portail de marque
 
 ## Création d’une configuration {#create-new-configuration}
 
@@ -65,19 +65,16 @@ Un certificat public permet d’authentifier votre profil sur Adobe Developer Co
 
 1. Connectez-vous à AEM Assets.
 
-1. Dans le panneau **Outils** ![Outils](assets/tools.png), accédez à **[!UICONTROL Sécurité]** > **[!UICONTROL Configurations d’Adobe IMS]**.
+1. From the **Tools** panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
-   ![Interface utilisateur de configuration du compte Adobe IMS](assets/ims-configuration1.png)
 
-1. Dans la page Configurations d’Adobe IMS, cliquez sur **[!UICONTROL Créer]**.
+1. Dans la page Configurations d’Adobe IMS, cliquez sur **[!UICONTROL Créer]**. It will redirect to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page. Par défaut, l’onglet **Certificat** s’ouvre.
 
-1. Vous êtes redirigé vers la page **[!UICONTROL Configuration du compte technique Adobe IMS]**. Par défaut, l’onglet **Certificat** s’ouvre.
+1. Sélectionnez la solution cloud **[!UICONTROL Adobe Brand Portal]**.
 
-   Sélectionnez la solution cloud **[!UICONTROL Adobe Brand Portal]**.
+1. Cochez la case **[!UICONTROL Créer un nouveau certificat]** et spécifiez un **alias** pour la clé publique. L’alias sert de nom à la clé publique.
 
-1. Mark the **[!UICONTROL Create new certificate]** checkbox and specify an **alias** for the certificate. L’alias sert de nom au certificat.
-
-1. Cliquez sur **[!UICONTROL Créer un certificat]**. Cliquez ensuite sur **[!UICONTROL OK]** dans la boîte de dialogue pour générer le certificat public.
+1. Cliquez sur **[!UICONTROL Créer un certificat]**. Then, click **[!UICONTROL OK]** to generate the public key.
 
    ![Création d’un certificat](assets/ims-config2.png)
 
@@ -89,19 +86,17 @@ Un certificat public permet d’authentifier votre profil sur Adobe Developer Co
 
 1. Cliquez sur **[!UICONTROL Suivant]**.
 
-   In the **Account** tab, the Adobe IMS account is created but for that you will need the service account credentials that are generated in Adobe Developer Console. Gardez cette page ouverte pour l’instant.
+   Dans l&#39;onglet **Compte** , un compte IMS Adobe est créé, ce qui nécessite les informations d&#39;identification du compte de service qui sont générées dans Adobe Developer Console. Gardez cette page ouverte pour l’instant.
 
    Ouvrez un nouvel onglet et [créez une connexion au compte de service (JWT) dans Adobe Developer Console](#createnewintegration) pour obtenir les informations d’identification et la charge utile JWT qui servent à configurer le compte IMS.
 
 ### Création d’une connexion au compte de service (JWT) {#createnewintegration}
 
-Dans Adobe Developer Console, les projets et les API sont configurés au niveau du client (organisation) du portail de la marque. La configuration d’une API crée une connexion au compte de service (JWT) dans Adobe Developer Console. Il existe deux méthodes pour configurer l’API : générer une paire de clés (clés privée et publique) ou télécharger une clé publique. Pour configurer AEM Assets avec Brand Portal, vous devez générer un certificat public (clé publique) dans AEM Assets et créer des informations d’identification dans Adobe Developer Console en téléchargeant la clé publique. Cette clé publique est utilisée pour configurer l’API pour le client du portail de marque sélectionné et génère les informations d’identification et la charge utile JWT pour le compte de service. Ces informations d’identification sont également utilisées pour configurer le compte IMS en AEM Assets. Une fois le compte IMS configuré, vous pouvez configurer le service cloud du portail de marque en AEM Assets.
+Dans Adobe Developer Console, les projets et les API sont configurés au niveau du client (organisation) du portail de la marque. La configuration d’une API crée une connexion au compte de service (JWT). Il existe deux méthodes pour configurer l’API : générer une paire de clés (clés privée et publique) ou télécharger une clé publique. Pour configurer AEM Assets avec Brand Portal, vous devez générer un certificat public (clé publique) dans AEM Assets et créer des informations d’identification dans Adobe Developer Console en téléchargeant la clé publique. Cette clé publique est utilisée pour configurer l’API pour le client du portail de marque sélectionné et génère les informations d’identification et la charge utile JWT pour le compte de service. Ces informations d’identification sont requises pour configurer le compte IMS en AEM Assets. Une fois le compte IMS configuré, vous pouvez configurer le service cloud du portail de marque en AEM Assets.
 
 Procédez comme suit pour générer les informations d’identification du compte de service et la charge utile JWT :
 
-1. Connectez-vous à Adobe Developer Console avec les privilèges d’administrateur système sur l’organisation IMS (client Brand Portal). L’URL par défaut est
-
-   [https://www.adobe.com/go/devs_console_ui_fr](https://www.adobe.com/go/devs_console_ui_fr)
+1. Connectez-vous à Adobe Developer Console avec les privilèges d’administrateur système sur l’organisation IMS (client Brand Portal). L’URL par défaut est [https://www.adobe.com/go/devs_console_ui_fr](https://www.adobe.com/go/devs_console_ui_fr).
 
 
    >[!NOTE]
@@ -112,11 +107,7 @@ Procédez comme suit pour générer les informations d’identification du compt
 
    Cliquez sur **[!UICONTROL Modifier le projet]** pour mettre à jour le **[!UICONTROL Titre du projet]** et la **[!UICONTROL Description]**, puis cliquez sur **[!UICONTROL Enregistrer]**.
 
-   ![Créer un projet](assets/service-account1.png)
-
 1. In the **[!UICONTROL Project overview]** tab, click **[!UICONTROL Add API]**.
-
-   ![Ajouter une API](assets/service-account2.png)
 
 1. In the **[!UICONTROL Add an API window]**, select **[!UICONTROL AEM Brand Portal]** and click **[!UICONTROL Next]**.
 
@@ -138,11 +129,11 @@ Procédez comme suit pour générer les informations d’identification du compt
 
    ![Sélectionner le profil de produit](assets/service-account4.png)
 
-1. Une fois l’API configurée, vous êtes redirigé vers l’aperçu de l’API. Dans le volet de navigation de gauche, sous **[!UICONTROL Informations d’identification]**, cliquez sur **[!UICONTROL Compte de service (JWT)]**.
+1. Une fois l’API configurée, vous êtes redirigé vers la page d’aperçu de l’API. Dans le volet de navigation de gauche, sous **[!UICONTROL Informations d’identification]**, cliquez sur **[!UICONTROL Compte de service (JWT)]**.
 
    >[!NOTE]
    >
-   >Vous pouvez voir les informations d’identification et effectuer d’autres actions (générer des jetons JWT, copier les informations d’identification, récupérer le secret client, etc.), si nécessaire.
+   >Vous pouvez vue les informations d’identification et effectuer des actions telles que générer des jetons JWT, copier les informations d’identification, récupérer le secret client, etc.
 
 1. Dans l’onglet **[!UICONTROL Informations d’identification client]**, copiez l’**[!UICONTROL ID client]**.
 
@@ -204,9 +195,9 @@ Effectuez les étapes suivantes pour configurer le compte IMS.
 
 1. Spécifiez un **[!UICONTROL titre]** pour le compte IMS.
 
-   Dans **[!UICONTROL Serveur d’autorisation]**, entrez l’adresse URL : [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)
+   In the **[!UICONTROL Authorization Server]** field, specify the URL: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)
 
-   Collez la clé **** d’API (ID client), la clé secrète **** client et la charge **** utile (charge JWT) que vous avez copiée lors de la [création de la connexion du compte de service (JWT).](#createnewintegration)
+   Specify client ID in the **[!UICONTROL API key]** field, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]** (JWT payload) that you have copied while [creating the service account (JWT) connection](#createnewintegration).
 
    Cliquez sur **[!UICONTROL Créer]**.
 
@@ -241,9 +232,9 @@ Pour configurer le service cloud Brand Portal, procédez comme suit :
 
 1. Saisissez un **[!UICONTROL titre]** pour la configuration.
 
-   Sélectionnez la configuration IMS créée lors de la [configuration du compte IMS](#create-ims-account-configuration).
+   Select the IMS configuration that you created while [configuring the IMS account](#create-ims-account-configuration).
 
-   Dans **[!UICONTROL URL du service]**, entrez votre client Brand Portal (URL de l’organisation).
+   In the **[!UICONTROL Service URL]** field, specify your Brand Portal tenant (organization) URL.
 
    ![](assets/create-cloud-service.png)
 
@@ -257,7 +248,7 @@ Pour valider la configuration, procédez comme suit :
 
 1. Connectez-vous à AEM Assets.
 
-1. Dans le panneau **Outils** ![Outils](assets/tools.png), accédez à **[!UICONTROL Déploiement]** > **[!UICONTROL Distribution]**.
+1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
    ![](assets/test-bpconfig1.png)
 
@@ -283,7 +274,7 @@ Pour valider la configuration, procédez comme suit :
 
    ![](assets/test-bpconfig3.png)
 
-1. Pour vérifier la connexion entre AEM Assets et Brand Portal, cliquez sur **[!UICONTROL Tester la connexion]**.
+1. Pour vérifier la connexion entre AEM Assets en tant que Cloud Service et le portail de marque, cliquez sur l’icône **[!UICONTROL Tester la connexion]** .
 
    ![](assets/test-bpconfig4.png)
 
@@ -300,13 +291,11 @@ Vous pouvez maintenant :
 * [Publication de dossiers à partir d’AEM Assets sur Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Publication de collections à partir d’AEM Assets sur Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
 
-Outre ce qui précède, vous pouvez également publier des schémas de métadonnées, des balises, des paramètres d’image prédéfinis et des facettes de recherche depuis AEM Assets vers Brand Portal.
-
 * [Publication de paramètres prédéfinis, de schémas et de facettes sur Brand Portal](https://docs.adobe.com/content/help/fr-FR/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [Publication de balises sur Brand Portal](https://docs.adobe.com/content/help/fr-FR/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
 
-Pour plus d’informations, voir [Publication de balises sur Brand Portal](https://docs.adobe.com/content/help/fr-FR/experience-manager-brand-portal/using/home.html).
+See [Brand Portal documentation](https://docs.adobe.com/content/help/fr-FR/experience-manager-brand-portal/using/home.html) for more information.
 
 
 ## Journaux de distribution {#distribution-logs}
@@ -317,7 +306,7 @@ Par exemple, nous avons publié une ressource d’AEM Assets sur Brand Portal po
 
 1. Suivez les étapes (1 à 4), comme indiqué dans la section [Test de la configuration](#test-configuration), puis accédez à la page de l’agent de distribution.
 
-1. Cliquez sur **[!UICONTROL Journaux]** pour afficher les journaux de distribution. Vous pouvez afficher les journaux de traitement et d’erreur ici.
+1. Cliquez sur **[!UICONTROL Journaux]** pour vue des journaux de traitement et d’erreurs.
 
    ![](assets/test-bpconfig5.png)
 
