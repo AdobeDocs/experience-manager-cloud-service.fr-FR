@@ -2,7 +2,7 @@
 title: Notes de mise à jour de la version 2020.8.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[ !DNL Adobe Experience Manager] en tant que notes de mise à jour Cloud Service pour la version 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: 7bd917067667af2f9f03a153a26303daade996fc
+source-git-commit: 9a54fda87ffb26ad9e811a27a40ee8d7c81b6bea
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 12%
@@ -18,7 +18,7 @@ La section suivante décrit les notes de mise à jour générales d’Experience
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
-* Possibilité de restaurer des pages et des sous-pages (arbres de page) vers une version antérieure.
+* Possibilité de [restaurer les pages et les sous-pages (arbres de page) dans une version](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions)antérieure.
 
 * Possibilité de créer des lancements dans AEM éditeur d’applications monopages.
 
