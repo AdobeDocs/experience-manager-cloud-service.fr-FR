@@ -2,10 +2,10 @@
 title: Recherche et indexation de contenu
 description: Recherche et indexation de contenu
 translation-type: tm+mt
-source-git-commit: 0789eb6ea2fb128d7b6b87cffd44a92187535642
+source-git-commit: 610615534cb5a798e37d34fadb9a3bf341565526
 workflow-type: tm+mt
-source-wordcount: '1474'
-ht-degree: 3%
+source-wordcount: '1521'
+ht-degree: 2%
 
 ---
 
@@ -50,7 +50,7 @@ AS NOTE: the above is internal for now.
 
 La définition d&#39;index peut comprendre les trois cas d&#39;utilisation suivants :
 
-1. Ajouter une nouvelle définition d’index client
+1. ajouter une nouvelle définition d&#39;index client
 1. Mise à jour d’une définition d’index existante. Cela signifie en effet l’ajout d’une nouvelle version d’une définition d’index existante.
 1. Suppression d’un index existant redondant ou obsolète.
 
@@ -155,7 +155,7 @@ Actuellement, la gestion des index n&#39;est prise en charge que pour les index 
 
 Si un index doit être supprimé dans une version ultérieure de l’application, vous pouvez définir un index vide (un index sans données à indexer), avec un nouveau nom. Par exemple, vous pouvez lui donner un nom `/oak:index/acme.product-custom-3`. Cette opération remplace l’index `/oak:index/acme.product-custom-2`. Une fois `/oak:index/acme.product-custom-2` supprimé par le système, l&#39;index vide `/oak:index/acme.product-custom-3` peut également être supprimé.
 
-### Ajouter un index {#adding-an-index}
+### ajouter un index {#adding-an-index}
 
 Pour ajouter un index nommé &quot;/oak:index/acme.product-custom-1&quot; à utiliser dans une nouvelle version de l’application et ultérieure, l’index doit être configuré comme suit :
 
@@ -176,3 +176,7 @@ L’ancienne version de l’application utilise la configuration suivante :
 La nouvelle version de l’application utilise la configuration suivante (modifiée) :
 
 `/oak:index/acme.product-custom-2`
+
+### Disponibilité de l&#39;index/Tolérance aux pannes {#index-availability}
+
+Il est recommandé de créer des index de duplicata pour les fonctions extrêmement importantes (en gardant à l&#39;esprit la convention d&#39;attribution de noms pour les index mentionnés ci-dessus), de sorte que dans le cas de corruption d&#39;index ou de tout événement imprévu de ce type, un index de secours est disponible pour répondre aux requêtes.
