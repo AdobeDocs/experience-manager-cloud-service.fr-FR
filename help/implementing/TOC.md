@@ -3,10 +3,10 @@ sub-product: Implémentation pour AEM as a Cloud Service
 user-guide-title: Implémentation pour AEM as a Cloud Service
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
+source-git-commit: 769364dc0a70e081a1a0cc9b86f616ccb99c93ab
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 97%
+source-wordcount: '365'
+ht-degree: 79%
 
 ---
 
@@ -36,12 +36,42 @@ ht-degree: 97%
    + [SDK AEM as a Cloud Service](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [Conseils de développement pour AEM as a Cloud Service](developing/introduction/development-guidelines.md)
    + [Prise en main du développement d’AEM Sites – Tutoriel WKND](developing/introduction/develop-wknd-tutorial.md)
+   + [Structure de l’interface utilisateur AEM](developing/introduction/ui-structure.md)
    + [Aide-mémoire pour Sling](developing/introduction/sling-cheatsheet.md)
    + [Utilisation des adaptateurs Sling](developing/introduction/sling-adapters.md)
    + [Utilisation de Sling Resource Merger dans AEM as a Cloud Service](developing/introduction/sling-resource-merger.md)
    + [Recouvrements dans AEM as a Cloud Service](developing/introduction/overlays.md)
    + [Journalisation](developing/introduction/logging.md)
    + [API d’AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [Présentation des résultats de tests](/help/implementing/developing/introduction/understand-test-results.md)
++ Composants et modèles {#components-templates}
+   + [Présentation des composants](developing/components/overview.md)
+   + [Modèles](developing/components/templates.md)
+   + [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
+   + [Système de style](/help/sites-cloud/authoring/features/style-system.md)
+   + [Exportateur JSON pour les services de contenu](developing/components/json-exporter.md)
+   + [Activation de l’exportateur JSON pour un composant](developing/components/enabling-json-exporter.md) 
+   + [Éditeur d’image](developing/components/image-editor.md)
+   + [Balises de décoration](developing/components/decoration-tag.md)
+   + [Utilisation de conditions de masquage](developing/components/hide-conditions.md)
++ Gestion de l’expérience sans tête {#headless}
+   + [Sans tête et hybride avec AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+   + [Activation de l’exportateur JSON pour un composant](developing/components/enabling-json-exporter.md) 
+   + des applications sur une seule page ;{#spa}
+      + [Présentation et présentation des applications monopages](developing/spa/introduction.md)
+      + [Didacticiel sur le WKND SPA](developing/spa/wknd-tutorial.md)
+      + [Prise en main à l’aide de Réaction](developing/spa/getting-started-react.md)
+      + [Prise en main à l’aide de Angular](developing/spa/getting-started-angular.md)
+      + [SPA Deep Dives](developing/spa/deep-dives.md)
+      + [Développement d’applications monopages pour AEM](developing/spa/developing.md)
+      + [Aperçu de l’éditeur d’application d’une seule page](developing/spa/editor-overview.md)
+      + [Plan directeur d’applications sur une seule page (SPA)](developing/spa/blueprint.md)
+      + [Composant de page SPA](developing/spa/page-component.md)
+      + [Mappage du modèle dynamique au composant](developing/spa/model-to-component-mapping.md)
+      + [Routage de modèle](developing/spa/routing.md)
+      + [Intégration du lancement](developing/spa/launch-integration.md)
+      + [Rendu côté serveur](developing/spa/ssr.md)
+      + [Références de l’API Javascript](developing/spa/reference-materials.md)
 + Configuration et extension d’AEM as a Cloud Service {#configuring-and-extending}
    + [Extension des fragments d’expérience](developing/extending/experience-fragments.md)
    + [Personnalisation et extensions de fragments de contenu](developing/extending/content-fragments-customizing.md)
