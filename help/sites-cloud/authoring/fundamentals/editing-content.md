@@ -2,7 +2,7 @@
 title: Modification du contenu de la page
 description: Une fois votre page créée, vous pouvez modifier le contenu pour effectuer les mises à jour dont vous avez besoin.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '2974'
 ht-degree: 100%
@@ -129,7 +129,7 @@ L’espace réservé du composant est un indicateur qui signale où sera positio
 
 Vous pouvez ajouter un nouveau composant à l’aide de l’[explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). L’[espace réservé du composant](#component-placeholder) indique où le composant va être positionné :
 
-1. Assurez-vous que votre page est en mode [**Édition **](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
+1. Assurez-vous que votre page est en mode [**Édition**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Ouvrez l’[explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
 1. Faites glisser le composant jusqu’à la [position requise](#component-placeholder).
 1. [Modifiez](#edit-content) le composant.
@@ -142,7 +142,7 @@ Vous pouvez ajouter un nouveau composant à l’aide de l’[explorateur de comp
 
 Vous pouvez ajouter un nouveau composant à l’aide de la case **Faire glisser les composants ici** du système de paragraphes :
 
-1. Assurez-vous que votre page est en mode [**Édition **](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
+1. Assurez-vous que votre page est en mode [**Édition**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Pour sélectionner et ajouter un nouveau composant à partir du système de paragraphes, deux méthodes peuvent être utilisées :
 
    * Sélectionnez l’option **Insérer le composant** (+) à partir de la barre d’outils d’un composant existant ou de la zone **Faire glisser les composants ici**.
@@ -165,7 +165,7 @@ Ce comportement peut être configuré pour votre installation. Pour plus d’inf
 
 Pour créer un composant en faisant glisser l’un des types de ressources ci-dessus, suivez ces étapes :
 
-1. Assurez-vous que votre page est en mode [**Édition **](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
+1. Assurez-vous que votre page est en mode [**Édition**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Ouvrez l’[explorateur de ressources](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser).
 1. Faites glisser la ressource jusqu’à la position requise. L’[espace réservé du composant](#component-placeholder) indique où le composant va être positionné.
 
@@ -177,7 +177,7 @@ Pour créer un composant en faisant glisser l’un des types de ressources ci-de
 >
 >Sur un appareil mobile, l’explorateur de ressources occupe tout l’écran. Dès que vous commencez à faire glisser une ressource, le navigateur se ferme et la page est de nouveau affichée, de sorte que vous puissiez placer la ressource.
 
-Si, lors de l’exploration des ressources, vous estimez qu’il est nécessaire d’apporter une modification rapide à l’une d’elles, vous pouvez lancer directement l’éditeur de ressources à partir du navigateur en cliquant sur l’icône d’édition située en regard de son nom. <!--If when browsing the assets you find that you need to make a quick change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the browser by clicking the edit icon next to the asset's name.-->
+Si, lors de l’exploration des ressources, vous estimez qu’il est nécessaire d’apporter une modification rapide à l’une d’elles, vous pouvez lancer directement l’[éditeur de ressources](/help/assets/manage-digital-assets.md) à partir du navigateur en cliquant sur l’icône d’édition située en regard de son nom.
 
 ![Bouton Modifier la ressource](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
