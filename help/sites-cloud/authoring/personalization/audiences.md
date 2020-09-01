@@ -1,9 +1,9 @@
 ---
 title: Gestion des audiences
 description: La console Audiences vous permet de créer, d’organiser et de gérer les audiences associées à votre compte Adobe Target ou de gérer des segments pour ContextHub.
-translation-type: ht
-source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 100%
 
@@ -65,7 +65,7 @@ Pour créer une audience Adobe Target :
 
    ![Accès aux audiences](/help/sites-cloud/authoring/assets/audiences-navigation.png)
 
-1. Dans la console Audiences, appuyez ou cliquez sur **Créer**, puis sur **Créer le public cible**.
+1. Dans la console Audiences, cliquez ou appuyez sur **Créer**, puis sur **Créer le public cible**.
 
    ![Création d’un public cible](/help/sites-cloud/authoring/assets/audiences-create-target.png)
 
