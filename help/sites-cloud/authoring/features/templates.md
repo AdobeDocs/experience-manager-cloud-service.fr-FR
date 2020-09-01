@@ -2,10 +2,10 @@
 title: 'Création de modèles de page   '
 description: Le modèle définit la structure de la page créée et, à l’aide de l’éditeur de modèles, les tâches de création et de gestion des modèles ne sont plus réservées aux développeurs.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '4554'
-ht-degree: 100%
+source-wordcount: '4551'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ L’**éditeur de modèles** permet aux créateurs de modèles :
 
 Ce document explique comment un **créateur de modèles** peut utiliser la console et l’éditeur de modèles pour créer et gérer des modèles modifiables.
 
-Pour obtenir des informations détaillées sur le fonctionnement des modèles modifiables à un niveau technique, voir le document destiné aux développeurs Modèles de page - Modifiables. <!-- For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md) for more information.-->
+For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates](/help/implementing/developing/components/templates.md) for more information.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ Lors de la création d’un modèle modifiable :
 
 ### Création d’un dossier de modèles - Administrateur {#creating-a-template-folder-admin}
 
-Vous devez créer un dossier de modèles pour votre projet afin de contenir les modèles spécifiques au projet. Il s’agit d’une tâche de l’administrateur qui est décrite dans le document Modèles de page - Modifiables. <!-- A template folder should be created for your project to hold your project-specific templates. This is an admin task and is described in the document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-folders).-->
+Vous devez créer un dossier de modèles pour votre projet afin de contenir les modèles spécifiques au projet. This is an admin task and is described in the document [Page Templates](/help/implementing/developing/components/templates.md#template-folders).-->
 
 ### Création d’un modèle - Créateur de modèles {#creating-a-new-template-template-author}
 
@@ -106,7 +106,7 @@ Vous devez créer un dossier de modèles pour votre projet afin de contenir les 
    >
    >Dans une instance AEM standard, le dossier **Global** existe déjà dans la console de modèles. Il contient les modèles par défaut et fait office de dossier de rechange si le dossier actif ne contient pas de stratégies et/ou de types de modèles.
    >
-   >Il est recommandé d’utiliser un dossier de modèles créé pour le projet. <!-- It is recommended best practice to use a [template folder created for your project](/help/sites-developing/page-templates-editable.md#template-folders).-->
+   >Il est recommandé d’utiliser un [dossier de modèles créé pour le projet](/help/implementing/developing/components/templates.md#template-folders).
 
 1. Pour ouvrir l’Assistant, sélectionnez **Créer**, puis **Créer un modèle**.
 
@@ -114,7 +114,7 @@ Vous devez créer un dossier de modèles pour votre projet afin de contenir les 
 
    >[!NOTE]
    >
-   >Les types de modèles sont des mises en page de modèles prédéfinies et peuvent être considérés comme les modèles d’un modèle. Ils sont prédéfinis par les développeurs ou l’administrateur système. Vous trouverez plus d’informations à ce sujet dans le document Modèles de page - Modifiables. <!-- More information can be found in the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-type).-->
+   >Les types de modèles sont des mises en page de modèles prédéfinies et peuvent être considérés comme les modèles d’un modèle. Ils sont prédéfinis par les développeurs ou l’administrateur système. More information can be found in the developer document [Page Templates](/help/implementing/developing/components/templates.md#template-type).-->
 
 1. Renseignez les **détails du modèle** :
 
@@ -204,7 +204,7 @@ Un modèle peut être rendu disponible ou indisponible pour certaines branches d
    >Si la liste **Modèles autorisés** reste vide, l’arborescence est remontée jusqu’à ce qu’une valeur/liste soit détectée.
    >
    >
-   >Voir Disponibilité des modèles : les principes des modèles autorisés restent identiques. <!--See [Template Availability](/help/sites-developing/templates.md#template-availability) - the principles for allowed templates remain the same.-->
+   >See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) - the principles for allowed templates remain the same.
 
 1. Cliquez sur **Enregistrer** pour enregistrer les modifications apportées aux propriétés de la page.
 
@@ -265,7 +265,7 @@ Lorsqu’un composant a été déverrouillé, vous pouvez définir le [contenu i
 
 #### Mise en page {#template-layout}
 
-Vous pouvez prédéfinir la [mise en page](#editing-a-template-layout-template-author) du modèle pour les formats d’appareil de votre choix. Le mode **Mise en page** pour la création de modèles comporte la même fonctionnalité que le mode [**Mise en page **pour la création de pages](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
+Vous pouvez prédéfinir la [mise en page](#editing-a-template-layout-template-author) du modèle pour les formats d’appareil de votre choix. Le mode **Mise en page** pour la création de modèles comporte la même fonctionnalité que le mode [**Mise en page** pour la création de pages](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
 
 #### Stratégies de page {#template-page-policies}
 
@@ -414,7 +414,7 @@ Par exemple, pour un composant d’image, vous pouvez définir les proportions d
 
 >[!NOTE]
 >
->Les stratégies de contenu pour les composants impliquant la mise en œuvre de l’éditeur de texte enrichi peuvent uniquement être définies pour les options accessibles par les paramètres de l’interface utilisateur, via ses propres paramètres d’interface utilisateur. <!--[Content policies for components implementing the rich text editor](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) can only be defined for options made available by the RTE through its UI settings.-->
+>[](/help/implementing/developing/extending/rich-text-editor.md)Les stratégies de contenu pour les composants impliquant la mise en œuvre de l’éditeur de texte enrichi peuvent uniquement être définies pour les options accessibles par les paramètres de l’interface utilisateur, via ses propres paramètres d’interface utilisateur.
 
 #### Stratégie et propriétés (conteneur de mises en page) {#policy-and-properties-layout-container}
 
@@ -504,7 +504,7 @@ Même si l’ensemble du contenu créé en mode **Structure** est visible en mod
 
 >[!NOTE]
 >
->Le mode **Contenu initial** peut être envisagé comme mode d’édition pour les pages créées avec ce modèle. Par conséquent, les stratégies ne sont pas définies en mode **Contenu initial**, mais plutôt en mode [**Structure **](#editing-a-template-structure-template-author).
+>Le mode **Contenu initial** peut être envisagé comme mode d’édition pour les pages créées avec ce modèle. Par conséquent, les stratégies ne sont pas définies en mode **Contenu initial**, mais plutôt en mode [**Structure**](#editing-a-template-structure-template-author).
 
 * Les composants déverrouillés modifiables sont marqués. Une fois sélectionnés, ils comportent une bordure bleue :
 
