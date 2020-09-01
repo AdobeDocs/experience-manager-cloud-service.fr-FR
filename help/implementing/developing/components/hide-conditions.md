@@ -2,7 +2,7 @@
 title: Utilisation de conditions de masquage
 description: Des conditions de masquage peuvent être utilisées pour déterminer si une ressource de composant est rendue ou non.
 translation-type: tm+mt
-source-git-commit: 6902b40232ae0b704c5e29f09844cab018598c24
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 67%
@@ -58,22 +58,22 @@ Si un auteur de modèles choisit de désactiver l’option des pages enfants, un
 
 1. Par défaut, l’auteur de la page peut utiliser le composant principal Liste pour créer une liste à l’aide des pages enfants en choisissant l’option **Pages enfants**.
 
-   ![Paramètres des composants de liste](/help/implementing/developing/introduction/assets/hide-conditions-list-settings.png)
+   ![Paramètres des composants de liste](assets/hide-conditions-list-settings.png)
 
 1. Dans la boîte de dialogue de création du composant principal Liste, l’auteur de modèles peut sélectionner l’option **Désactiver les enfants** pour éviter que l’option de génération d’une liste sur la base de pages enfants ne soit présentée à l’auteur de pages.
 
-   ![Boîte de dialogue de conception de composant de liste](/help/implementing/developing/introduction/assets/hide-conditions-list-design.png)
+   ![Boîte de dialogue de conception de composant de liste](assets/hide-conditions-list-design.png)
 
 1. Un noeud de stratégie est créé sous `/conf/wknd/settings/wcm/policies/wknd/components/list` une propriété `disableChildren` définie sur `true`.
 
-   ![Structure de noeud de la condition de masquage](/help/implementing/developing/introduction/assets/hide-conditions-node-structure.png)
+   ![Structure de noeud de la condition de masquage](assets/hide-conditions-node-structure.png)
 
 1. La condition Masquer est définie comme la valeur d’une `granite:hide` propriété sur le noeud de propriété dialog. `/libs/core/wcm/components/list/v2/list/cq:dialog/content/items/tabs/items/listSettings/items/columns/items/column/items/listFrom/items/children`
 
-![Évaluation de la condition de masquage](/help/implementing/developing/introduction/assets/hide-conditions-evaluation.png)
+   ![Évaluation de la condition de masquage](assets/hide-conditions-evaluation.png)
 
 1. The value of `disableChildren` is pulled from the design configuration and the expression `${cdDesign.disableChildren}` evaluates to `false`, meaning the option will not be rendered as part of the component.
 
 1. L’option **Pages enfants** n’est plus rendue pour l’auteur de pages lors de l’utilisation du composant de liste.
 
-   ![Composant de liste avec option enfant désactivée](/help/implementing/developing/introduction/assets/hide-conditions-child-disabled.png)
+   ![Composant de liste avec option enfant désactivée](assets/hide-conditions-child-disabled.png)
