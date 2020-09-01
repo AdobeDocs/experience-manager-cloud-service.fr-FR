@@ -2,7 +2,7 @@
 title: 'Outil de comparaison des pages  '
 description: De fait, l’outil de comparaison des pages permet d’afficher côte à côte deux pages pour les comparer en mettant en évidence leurs différences
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 100%
@@ -22,7 +22,7 @@ De fait, l’outil de comparaison des pages permet d’afficher côte à côte d
 >
 >L’utilisateur doit disposer de l’autorisation **Modifier/Créer/Supprimer** sur le nœud `/content/versionhistory` pour pouvoir utiliser la fonctionnalité.
 >
->Consultez la section consacrée à l’outil de comparaison des pages pour plus d’informations sur cette fonction. <!-- See [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) for more technical details on this feature.-->
+>Consultez la section consacrée à l’[outil de comparaison des pages](/help/implementing/developing/introduction/page-diff.md#operation-details) pour plus d’informations sur cette fonction.
 
 ## Utilisation {#use}
 
@@ -105,4 +105,4 @@ Dans certaines situations, l’outil de comparaison des pages peut ne pas détec
 
 >[!NOTE]
 >
->Pour plus d’informations sur le fonctionnement de l’outil de comparaison des pages, ainsi que les limites pouvant affecter cette comparaison, consultez la documentation du développeur liée à cette fonctionnalité. <!-- For more details about the operation of the page diff mechanism as well as limitations which can affect page diff, please see the [developer documentation](/help/sites-developing/pagediff.md) of this feature.-->
+>Pour plus d’informations sur le fonctionnement de l’outil de comparaison des pages, ainsi que les limites pouvant affecter cette comparaison, consultez la [documentation du développeur](/help/implementing/developing/introduction/page-diff.md) liée à cette fonctionnalité.
