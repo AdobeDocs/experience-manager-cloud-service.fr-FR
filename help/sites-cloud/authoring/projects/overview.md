@@ -2,7 +2,7 @@
 title: Projets
 description: Les projets vous permettent de regrouper des ressources dans une seule entité dont l’environnement commun et partagé facilite la gestion de vos projets.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 100%
@@ -72,7 +72,7 @@ Vous chargez des ressources directement dans la mosaïque. En outre, vous pouvez
 
 ### Collections de ressources {#asset-collections}
 
-Comme avec les ressources, vous pouvez ajouter des collections de ressources directement à votre projet. Vous définissez les collections dans AEM Assets. <!--Similar to assets, you can add [asset collections](/help/assets/managing-collections-touch-ui.md) directly to your project. You define collections in Assets.-->
+Comme avec les ressources, vous pouvez ajouter des [collections de ressources](/help/assets/manage-collections.md) directement à votre projet. Vous définissez les collections dans AEM Assets.
 
 ![Collection de ressources](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
 
@@ -112,7 +112,7 @@ Des membres d’équipe peuvent être attribués et supprimés de cette mosaïqu
 
 ### Tâche de traduction {#translation-job}
 
-La mosaïque Tâche de traduction est l’endroit où vous commencez une traduction et où vous pouvez voir l’état de toutes vos traductions. Pour configurer votre traduction, voir Création de projets de traduction. <!--To set up your translation, see [Creating Translation Projects](/help/assets/translation-projects.md).-->
+La mosaïque Tâche de traduction est l’endroit où vous commencez une traduction et où vous pouvez voir l’état de toutes vos traductions. Pour configurer votre traduction, consultez [Création de projets de traduction](/help/assets/translate-assets.md).
 
 ![Tâche de traduction](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 
