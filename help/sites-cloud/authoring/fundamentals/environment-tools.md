@@ -2,7 +2,7 @@
 title: Environnement et outils de création
 description: L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '2163'
 ht-degree: 100%
@@ -40,7 +40,7 @@ Vous pouvez modifier une page dans l’éditeur de page. Par exemple :
 
 Lorsque vous modifiez une page, l’**Aide** est accessible depuis :
 
-* le sélecteur [**d’informations sur la page **](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties)avec les diapositives de présentation qui s’affichent (comme lors de votre premier accès à l’éditeur) ;
+* le sélecteur [**d’informations sur la page**](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties) avec les diapositives de présentation qui s’affichent (comme lors de votre premier accès à l’éditeur) ;
 * la boîte de dialogue [Configuration](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) pour des composants spécifiques (au moyen de l’icône ? dans la barre d’outils de la boîte de dialogue), qui affiche l’aide contextuelle.
 
 D’autres [ressources d’aide sont accessibles depuis les consoles](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help).
@@ -100,7 +100,7 @@ L’aspect et la gestion de l’explorateur dépendent du type d’appareil util
 
 ## Explorateur de ressources {#assets-browser}
 
-L’explorateur de ressources présente toutes les ressources que vous pouvez utiliser directement sur la page active. <!--The assets browser shows all [assets](/help/assets/home.md) that are available for direct use on your current page.-->
+L’explorateur de ressources présente toutes les [ressources](/help/assets/home.md) que vous pouvez utiliser directement sur la page active.
 
 L’explorateur de ressources est un onglet du panneau latéral (de même que l’[explorateur de composants](#components-browser) et l’[arborescence de contenu](#content-tree)). Pour ouvrir ou fermer le panneau latéral, utilisez l’icône en haut à gauche de la barre d’outils :
 
@@ -155,7 +155,7 @@ L’aspect et la gestion de l’explorateur dépendent du type d’appareil util
 >
 >Un appareil mobile est détecté si la largeur est inférieure à 1 024 px. C’est également le cas pour les petites fenêtres sur les ordinateurs de bureau.
 
-Si vous devez modifier rapidement une ressource, vous pouvez lancer l’éditeur de ressources directement depuis l’explorateur de ressources en cliquant sur l’icône Modifier affichée en regard du nom de la ressource. <!--If you need to quickly make a change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.-->
+Si vous devez modifier rapidement une ressource, vous pouvez lancer [l’éditeur de ressources](/help/assets/manage-digital-assets.md) directement depuis l’explorateur de ressources en cliquant sur l’icône Modifier affichée en regard du nom de la ressource.
 
 ![Bouton Modifier la ressource](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
