@@ -2,7 +2,7 @@
 title: 'Création d’une page pour les appareils mobiles '
 description: Lors de la création pour les périphériques mobiles, vous pouvez basculer entre plusieurs émulateurs pour voir ce que l’utilisateur final voit.
 translation-type: tm+mt
-source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 100%
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Création d’une page pour les appareils mobiles {#authoring-a-page-for-mobile-devices}
 
-Les pages d’Adobe Experience Manager reposent sur une disposition réactive. La mise en page réactive adapte automatiquement votre contenu à l’appareil cible, éliminant ainsi la nécessité de créer du contenu pour des appareils spécifiques.
+Les pages d’Adobe Experience Manager reposent sur une disposition réactive. [La mise en page réactive adapte automatiquement votre contenu à l’appareil cible, éliminant ainsi la nécessité de créer du contenu pour des appareils spécifiques.](/help/sites-cloud/authoring/features/responsive-layout.md)
 
 Lorsque vous créez une page mobile, celle-ci est affichée d’une manière qui émule le périphérique mobile. Lorsque vous créez une page, vous pouvez basculer entre plusieurs émulateurs pour voir ce que l’utilisateur voit lorsqu’il accède à la page.
 
