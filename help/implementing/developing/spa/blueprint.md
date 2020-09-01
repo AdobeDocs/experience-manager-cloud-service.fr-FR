@@ -2,7 +2,7 @@
 title: Plan directeur d’applications sur une seule page (SPA)
 description: Ce document décrit le contrat général et indépendant du cadre que tout cadre d’application d’une seule page doit respecter pour mettre en oeuvre des composants modifiables d’une application d’une seule page dans AEM.
 translation-type: tm+mt
-source-git-commit: f7d90d9cb41077a3a510f97a9f9f89f4b2b13cd9
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 10%
@@ -14,7 +14,7 @@ ht-degree: 10%
 
 Pour permettre à l’auteur d’utiliser l’éditeur d’applications monopages AEM pour modifier le contenu d’une application monopage, l’application doit satisfaire à certaines exigences.
 
-## Présentation {#introdcution}
+## Présentation {#introduction}
 
 Ce document décrit le contrat général que tout cadre d&#39;application d&#39;une seule page doit respecter (c&#39;est-à-dire le type de couche de support AEM) pour mettre en oeuvre des composants d&#39;application d&#39;une seule page modifiables dans AEM.
 
@@ -283,4 +283,3 @@ Découvrez comment fonctionne un SPA simple et testez-le vous-même en continuan
 Pour plus d’informations sur les applications sur une seule page dans AEM, consultez les documents suivants :
 
 * [Présentation](editor-overview.md) de l’éditeur d’applications monopages pour une présentation des applications monopages dans AEM et le modèle de communication
-
