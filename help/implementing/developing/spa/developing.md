@@ -2,9 +2,9 @@
 title: Développement d’applications monopages pour AEM
 description: Cet article présente des questions importantes à prendre en compte lorsqu'un développeur frontal développe un SPA pour AEM et donne un aperçu de l'architecture des AEM par rapport aux SPA à garder à l'esprit lors du déploiement d'un SPA développé sur les .
 translation-type: tm+mt
-source-git-commit: d0685af8b05d5491debf7bad99b5c8f111808f26
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
-source-wordcount: '2088'
+source-wordcount: '2078'
 ht-degree: 2%
 
 ---
@@ -71,7 +71,7 @@ Il peut toutefois y avoir des cas où cela n&#39;est pas tout à fait nécessair
    <th><strong>Inconvénients</strong></th>
   </tr>
   <tr>
-   <td>aem est utilisé en tant que CMS sans en-tête sans utiliser la structure <a href="https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-reference-materials.html">SPA Editor SDK.</a></td>
+   <td>aem est utilisé en tant que CMS sans en-tête sans utiliser la structure <a href="/help/implementing/developing/spa/reference-materials.md">SPA Editor SDK.</a></td>
    <td>Le développeur frontal a un contrôle total sur l’application.</td>
    <td><p>Les auteurs de contenu ne peuvent pas exploiter AEM expérience de création de contenu.</p> <p>Le code n'est ni portable ni réutilisable s'il contient des références statiques ou un routage.</p> <p>N’autorise pas l’utilisation de l’éditeur de modèles ; le développeur principal doit donc gérer les modèles modifiables via le JCR.</p> </td>
   </tr>
