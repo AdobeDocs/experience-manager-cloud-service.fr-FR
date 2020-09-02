@@ -10,9 +10,9 @@ audience: developer
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: d17aadfa60e2e13487d937c0630181beb7370328
+source-git-commit: 7fd7a8a5387c8b204e8e470a2571679b89701074
 workflow-type: tm+mt
-source-wordcount: '2604'
+source-wordcount: '2620'
 ht-degree: 4%
 
 ---
@@ -28,7 +28,7 @@ Le projet [](https://github.com/adobe/aem-cif-guides-venia) CIF Venia est une ba
 
 ## Ce que vous allez construire
 
-Un nouveau style sera mis en oeuvre pour le composant Produit Teaser qui ressemble à une carte.
+Dans ce didacticiel, un nouveau style sera mis en oeuvre pour le composant Produit Teaser qui ressemble à une carte. Les leçons apprises dans le tutoriel peuvent être appliquées à d&#39;autres composantes essentielles du FIC.
 
 ![Ce que vous allez construire](../assets/style-cif-component/what-you-will-build.png)
 
