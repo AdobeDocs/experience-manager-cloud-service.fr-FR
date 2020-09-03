@@ -2,7 +2,7 @@
 title: Présentation des résultats des tests - Cloud Services
 description: Présentation des résultats des tests - Cloud Services
 translation-type: tm+mt
-source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
+source-git-commit: d03ef0afe91760e35ef4e8fb3e3f2c833cbf945c
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 2%
@@ -24,9 +24,9 @@ Il existe trois grandes catégories de tests pris en charge par Cloud Manager po
 
    Les essais fonctionnels font partie de la phase d&#39;essai en phase d&#39;un pipeline de production.
 
-1. [Test de l’audit du contenu](/help/implementing/cloud-manager/content-audit-testing.md)
+1. [Test d’audit d’expérience](/help/implementing/cloud-manager/experience-audit-testing.md)
 
-   Le test d’audit du contenu est activé dans tous les tuyaux de production de Cloud Manager et ne peut pas être ignoré.
+   Le test d’audit d’expérience est activé dans tous les tuyaux de production de Cloud Manager et ne peut pas être ignoré.
 
 Ces tests peuvent être :
 
