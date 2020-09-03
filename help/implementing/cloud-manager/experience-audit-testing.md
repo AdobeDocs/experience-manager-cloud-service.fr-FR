@@ -2,7 +2,7 @@
 title: Test d’audit d’expérience - Cloud Services
 description: Test d’audit d’expérience - Cloud Services
 translation-type: tm+mt
-source-git-commit: 87d41dc311e96c41be230046f511d2c3301d48f1
+source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 0%
@@ -51,7 +51,8 @@ La mesure Valeur de changement peut être l’une des mesures suivantes :
 
 * **S/O** - aucun score précédent n’était disponible pour la comparaison
 
-   ![](/help/implementing/developing/introduction/assets/content-audit-test1.png)
+   ![](/help/implementing/cloud-manager/assets/exp-audit-1.png)
+
 
 ### Scores au niveau de la page {#page-level-scores}
 
@@ -59,5 +60,5 @@ En analysant n’importe lequel des tests, vous obtenez des scores de niveau de 
 
 Un clic sur les détails d&#39;une page donnée fournit des informations sur les éléments de la page qui ont été évalués et des conseils pour résoudre les problèmes si des opportunités d&#39;amélioration sont détectées. Les détails des tests et les conseils associés sont fournis par Google Lighthouse.
 
-![](/help/implementing/developing/introduction/assets/page-level-scores.png)
+![](/help/implementing/cloud-manager/assets/exp-audit-2.png)
 
