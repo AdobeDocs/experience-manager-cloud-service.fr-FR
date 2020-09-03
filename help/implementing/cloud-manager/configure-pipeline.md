@@ -2,7 +2,7 @@
 title: Configuration du pipeline CI/CD - Cloud Services
 description: Configuration du pipeline CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
+source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 63%
@@ -78,21 +78,21 @@ Pour configurer le comportement et les préférences de votre pipeline, procéde
    * **Continuer immédiatement** : si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Cette option émule essentiellement la validation manuelle de l’utilisateur à chaque échec.
 
 
-1. Les paramètres du pipeline de production comprennent un troisième onglet intitulé Audit **de** contenu.
+1. Les paramètres du pipeline de production comprennent un troisième onglet intitulé **Audit** d’expérience.
 
    ![](assets/content-audit-1.png)
 
-   Cette option fournit un tableau pour les chemins d’URL qui doivent toujours être inclus dans l’audit de contenu. L’utilisateur peut saisir manuellement un chemin d’URL à inclure. 25 lignes au maximum peuvent être incluses. S&#39;il n&#39;y a pas de pages envoyées par l&#39;utilisateur dans cette section, la page d&#39;accueil du site sera incluse par défaut dans l&#39;audit de contenu.
+   Cette option fournit un tableau pour les chemins d’URL qui doivent toujours être inclus dans l’audit d’expérience. L’utilisateur peut saisir manuellement un chemin d’URL à inclure. 25 lignes au maximum peuvent être incluses. Si aucune page n’est envoyée par l’utilisateur dans cette section, la page d’accueil du site sera incluse par défaut dans l’audit d’expérience.
 
    >[!NOTE]
    > Les pages configurées seront envoyées au service et évaluées en fonction des performances, de l&#39;accessibilité, de l&#39;optimisation du référencement (optimisation pour les moteurs de recherche), des bonnes pratiques et des tests de PWA (application Web progressive).
 
-   Pour plus d&#39;informations, consultez [Comprendre les résultats](/help/implementing/cloud-manager/content-audit-testing.md) de l&#39;audit de contenu.
+   Pour plus d’informations, voir [Comprendre les résultats](/help/implementing/cloud-manager/experience-audit-testing.md) de l’audit d’expérience.
 
-   Cliquez sur **Ajouter le remplacement** de la nouvelle page pour fournir un chemin d’URL à inclure dans l’audit de contenu. Une fois le chemin ajouté, cliquez sur **Enregistrer**.
+   Cliquez sur **Ajouter le remplacement** de la nouvelle page pour fournir un chemin d’URL à inclure dans l’audit d’expérience. Une fois le chemin ajouté, cliquez sur **Enregistrer**.
 
    >[!NOTE]
-   >Pour activer l’étape de contrôle du contenu, les utilisateurs doivent modifier le pipeline et, éventuellement, ajouter des pages. Consultez Problèmes [](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) connus pour plus de détails.
+   >Pour activer l’étape Audit d’expérience, les utilisateurs doivent modifier le pipeline et, éventuellement, ajouter des pages. Consultez Problèmes [](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) connus pour plus de détails.
 
    ![](assets/content-audit2.png)
 
