@@ -2,10 +2,10 @@
 title: Déploiement de votre code - Cloud Services
 description: Déploiement de votre code - Cloud Services
 translation-type: tm+mt
-source-git-commit: 18ef67e6b8450e4220a5d40c1da8b126136e39f2
+source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 82%
+source-wordcount: '985'
+ht-degree: 81%
 
 ---
 
@@ -42,7 +42,7 @@ Une fois que vous avez configuré votre pipeline de production (référentiel, e
    Le **déploiement en environnement intermédiaire** comprend les étapes suivantes :
 
    * Validation : cette étape permet de s’assurer que le pipeline est configuré pour utiliser les ressources actuellement disponibles ; par exemple, la branche configurée existe, les environnements sont disponibles, etc.
-   * Test de création et d’unité : cette étape exécute un processus de création en conteneur. Pour plus d’informations sur l’environnement de création, voir Détails [de l’Environnement de](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) création.
+   * Test de création et d’unité : cette étape exécute un processus de création en conteneur. Pour plus d’informations sur l’environnement de création, voir Détails [de l’Environnement de](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md) création.
    * Analyse du code : cette étape évalue la qualité du code de votre application. Voir Test [de la qualité du](/help/implementing/cloud-manager/code-quality-testing.md) code pour plus d’informations sur le processus de test.
    * Compiler des images : cette étape comprend un fichier journal du processus utilisé pour compiler des images. Ce processus est responsable de la transformation du contenu et des modules du Dispatcher générés par l’étape de compilation en images Docker et en configuration Kubernetes.
    * Déploiement dans l’environnement d’évaluation.
@@ -51,13 +51,13 @@ Une fois que vous avez configuré votre pipeline de production (référentiel, e
    Le **test dans l’environnement intermédiaire** comprend les étapes suivantes :
 
    * Test fonctionnel du produit : Les exécutions du pipeline Cloud Manager prendront en charge l’exécution de tests exécutés par rapport à l’environnement d’affichage.
-Pour plus d&#39;informations, reportez-vous à la section Tests [fonctionnels](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) du produit.
+Refer to [Product Functional Testing](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) for more details.
 
    * Tests fonctionnels personnalisés : cette étape du pipeline est toujours présente et ne peut pas être ignorée. Cependant, si aucun fichier JAR de test n’est généré par la compilation, le test réussit par défaut.\
-      Pour plus d&#39;informations, reportez-vous à la section Tests [fonctionnels](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) personnalisés.
+      Refer to [Custom Functional Testing](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) for more details.
 
-   * Audit de contenu : Cette étape du pipeline est toujours présente et ne peut pas être ignorée. Lorsqu’un pipeline de production est exécuté, une étape de contrôle du contenu est incluse après un test fonctionnel personnalisé qui exécutera les contrôles. Les pages configurées seront envoyées au service et évaluées. Les résultats sont informatifs et permettent à l’utilisateur de voir les scores et le changement entre les scores actuel et précédent. Cette connaissance est utile pour déterminer si une régression est introduite avec le déploiement actuel.
-Pour plus d&#39;informations, consultez [Comprendre les résultats](/help/implementing/cloud-manager/content-audit-testing.md) de l&#39;audit de contenu.
+   * Audit d’expérience : Cette étape du pipeline est toujours présente et ne peut pas être ignorée. Lorsqu’un pipeline de production est exécuté, une étape de contrôle d’expérience est incluse après des tests fonctionnels personnalisés qui exécuteront les contrôles. Les pages configurées seront envoyées au service et évaluées. Les résultats sont informatifs et permettent à l’utilisateur de voir les scores et le changement entre les scores actuel et précédent. Cette connaissance est utile pour déterminer si une régression est introduite avec le déploiement actuel.
+Pour plus d’informations, voir [Comprendre les résultats](/help/implementing/cloud-manager/experience-audit-testing.md) de l’audit d’expérience.
 
       ![](assets/testing-tab.png)
 
@@ -88,7 +88,7 @@ Lorsque Cloud Manager se déploie sur des topologies autres que de production, 
 
    >[!NOTE]
    >
-   >Tous les artefacts AEM sont déployés à la fois sur author et publishers. Les modes d’exécution doivent être utilisés lorsque des configurations spécifiques à un nœud sont requises. Pour en savoir plus sur la façon dont les modes d’exécution vous permettent d’ajuster votre instance AEM à des fins spécifiques, consultez Modes d’exécution.
+   >Tous les artefacts AEM sont déployés à la fois sur author et publishers. Les modes d’exécution doivent être exploités lorsque des configurations spécifiques aux noeuds sont requises. Pour en savoir plus sur la façon dont les modes d&#39;exécution vous permettent d&#39;ajuster votre instance AEM pour un objectif spécifique, reportez-vous à la section Modes d&#39;exécution.
 
 1. L’artefact dispatcher est déployé sur chaque dispatcher comme suit :
 
