@@ -2,7 +2,7 @@
 title: Configuration du pipeline CI/CD - Cloud Services
 description: Configuration du pipeline CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
+source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 63%
@@ -58,11 +58,11 @@ Pour configurer le comportement et les préférences de votre pipeline, procéde
 
 1. L’écran **Configurer un pipeline** s’affiche. Sélectionnez la branche, puis cliquez sur **Suivant**.
 
-   ![](assets/setup-pipeline-1.png)
+   ![](assets/setup-1.png)
 
 1. Configurez vos options de déploiement.
 
-   ![](assets/setup-pipeline-2.png)
+   ![](assets/setup-2.png)
 
    Vous pouvez définir le déclencheur pour démarrer le pipeline :
 
@@ -80,7 +80,7 @@ Pour configurer le comportement et les préférences de votre pipeline, procéde
 
 1. Les paramètres du pipeline de production comprennent un troisième onglet intitulé **Audit** d’expérience.
 
-   ![](assets/content-audit-1.png)
+   ![](assets/setup-3.png)
 
    Cette option fournit un tableau pour les chemins d’URL qui doivent toujours être inclus dans l’audit d’expérience. L’utilisateur peut saisir manuellement un chemin d’URL à inclure. 25 lignes au maximum peuvent être incluses. Si aucune page n’est envoyée par l’utilisateur dans cette section, la page d’accueil du site sera incluse par défaut dans l’audit d’expérience.
 
@@ -94,7 +94,7 @@ Pour configurer le comportement et les préférences de votre pipeline, procéde
    >[!NOTE]
    >Pour activer l’étape Audit d’expérience, les utilisateurs doivent modifier le pipeline et, éventuellement, ajouter des pages. Consultez Problèmes [](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) connus pour plus de détails.
 
-   ![](assets/content-audit2.png)
+   ![](assets/exp-audit2.png)
 
 1. Cliquez sur **Enregistrer** dans l’écran **Modifier le tuyau** . La page **Aperçu** affiche désormais la carte **Déployer votre programme**. Cliquez sur le bouton **Déployer** pour déployer votre programme.
 
