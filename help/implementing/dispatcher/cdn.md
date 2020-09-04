@@ -2,10 +2,10 @@
 title: Réseau de diffusion de contenu dans AEM as a Cloud Service
 description: Réseau de diffusion de contenu dans AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 38b69b96011b7920adaf7f6cca0edff10f387b41
+source-git-commit: 50c5be6adf265eac9c9c7a7b36d03cb30ba4e5d2
 workflow-type: tm+mt
-source-wordcount: '668'
-ht-degree: 89%
+source-wordcount: '689'
+ht-degree: 87%
 
 ---
 
@@ -21,7 +21,7 @@ Le réseau de diffusion de contenu géré par AEM satisfait à la plupart des ex
 Procédez comme suit pour préparer la diffusion de contenu à l’aide du réseau de diffusion de contenu prêt à l’emploi d’Adobe :
 
 1. Fournissez le certificat SSL signé et la clé secrète à Adobe en partageant un lien vers un formulaire sécurisé contenant ces informations. Il est recommandé de coordonner cette tâche avec le service clientèle.
-   **Remarque :** AEM as a Cloud Service ne prend pas en charge les certificats DV (Domain Validated, domaines validés).
+   **Remarque :** AEM as a Cloud Service ne prend pas en charge les certificats DV (Domain Validated, domaines validés). En outre, il doit s’agir d’un certificat TLS X.509 d’une autorité de certification approuvée avec une clé privée RSA 2 048 bits correspondante.
 1. Donnez les informations suivantes au service clientèle :
    * Le domaine personnalisé qui doit être associé à un environnement donné, indiqué par l’ID de programme et l’ID d’environnement. Notez que les domaines personnalisés côté auteur ne sont pas pris en charge.
    * Une liste d’adresses IP autorisées éventuellement nécessaire pour limiter le trafic à destination d’un environnement donné.
