@@ -2,10 +2,10 @@
 title: Notifications - Cloud Service
 description: Notifications - Cloud Service
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 100%
+source-wordcount: '192'
+ht-degree: 94%
 
 ---
 
@@ -34,11 +34,10 @@ La barre latérale répertorie les notifications les plus récentes.
 
 Par défaut, les notifications sont disponibles dans l’interface utilisateur web de toutes les solutions Adobe [!UICONTROL Experience Cloud]. Les utilisateurs peuvent également opter pour l’envoi de ces notifications par e-mail, de manière immédiate ou dans le cadre de résumé.
 
-
 L’utilisateur sera alors dirigé vers l’écran Préférences de notifications dans Adobe [!UICONTROL Experience Cloud].
 
 Les utilisateurs peuvent activer les notifications par e-mail et (facultativement) sélectionner les types de notifications qu’ils souhaitent recevoir par e-mail.
 
 >[!NOTE]
 >
->Vous pouvez également activer la synthèse à partir d’Adobe [!UICONTROL Experience Cloud], comme illustré ci-dessous :
+>You can also enable digesting from the Adobe [!UICONTROL Experience Cloud].
