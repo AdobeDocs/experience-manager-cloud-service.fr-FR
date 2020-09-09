@@ -2,9 +2,9 @@
 title: Gestion des environnements - Cloud Service
 description: Gestion des environnements - Cloud Service
 translation-type: tm+mt
-source-git-commit: 3130b1af089d67bcdca2b1da5bdb7fede8bcafbb
+source-git-commit: 3768474b41abe76ee639e51c9eae39d72ab7c4a4
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '790'
 ht-degree: 95%
 
 ---
@@ -99,7 +99,7 @@ Cette fonction n’est pas disponible pour l’environnement de production/d’�
 
 ## Managing Access {#managing-access}
 
-Select **Manage Access** from from the dropdown menu in the **Environments** Card. Vous pouvez accéder directement à l’instance d’auteur et gérer l’accès pour votre environnement.
+Select **Manage Access** from the dropdown menu in the **Environments** Card. Vous pouvez accéder directement à l’instance d’auteur et gérer l’accès pour votre environnement.
 
 Consultez [Gestion de l’accès à l’instance](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) d’auteur pour en savoir plus.
 
