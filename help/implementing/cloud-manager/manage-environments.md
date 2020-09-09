@@ -1,11 +1,11 @@
 ---
 title: Gestion des environnements - Cloud Service
 description: Gestion des environnements - Cloud Service
-translation-type: ht
-source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
-workflow-type: ht
-source-wordcount: '753'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 3130b1af089d67bcdca2b1da5bdb7fede8bcafbb
+workflow-type: tm+mt
+source-wordcount: '791'
+ht-degree: 95%
 
 ---
 
@@ -96,6 +96,15 @@ L’option de suppression est également disponible si vous cliquez sur **Détai
 
 >[!NOTE]
 Cette fonction n’est pas disponible pour l’environnement de production/d’évaluation défini dans une configuration de programme normale à des fins de production. Cette fonction est toutefois disponible pour les environnements de production/d’évaluation dans un programme Sandbox.
+
+## Managing Access {#managing-access}
+
+Select **Manage Access** from from the dropdown menu in the **Environments** Card. Vous pouvez accéder directement à l’instance d’auteur et gérer l’accès pour votre environnement.
+
+Consultez [Gestion de l’accès à l’instance](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) d’auteur pour en savoir plus.
+
+![](assets/environ-manage-access.png)
+
 
 ## Accès à Developer Console {#accessing-developer-console}
 
