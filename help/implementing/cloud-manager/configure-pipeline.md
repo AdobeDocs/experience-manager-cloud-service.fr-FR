@@ -2,7 +2,7 @@
 title: Configuration du pipeline CI/CD - Cloud Services
 description: Configuration du pipeline CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: bf07f6cba245ac8bc671264e5af24b0c72c68c5d
+source-git-commit: 044d3498749ea79bbf920e7eb6354750a626ffc7
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 63%
@@ -88,7 +88,9 @@ Pour configurer le comportement et les préférences de votre pipeline, procéde
 
    ![](assets/exp-audit4.png)
 
-   L’URL qui apparaît dans le tableau sera `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`indiquée.
+   L’URL qui apparaît dans le tableau sera :
+
+   `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`
 
    ![](assets/exp-audit5.png)
 
