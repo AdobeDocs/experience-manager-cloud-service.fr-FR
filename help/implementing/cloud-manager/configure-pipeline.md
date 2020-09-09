@@ -2,9 +2,9 @@
 title: Configuration du pipeline CI/CD - Cloud Services
 description: Configuration du pipeline CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: b94cd6c5bce641e50491f5c1fd30f5cb2f92646c
+source-git-commit: e85f06b1f1431cfe8955c84bdb96ea27f566ff95
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '768'
 ht-degree: 63%
 
 ---
@@ -78,27 +78,23 @@ Pour configurer le comportement et les préférences de votre pipeline, procéde
    * **Continuer immédiatement** : si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Cette option émule essentiellement la validation manuelle de l’utilisateur à chaque échec.
 
 
-1. Les paramètres du pipeline de production comprennent un troisième onglet intitulé **Audit** d’expérience.
+1. Les paramètres du pipeline de production comprennent un troisième onglet intitulé **Audit** d’expérience. Cette option fournit un tableau pour les chemins d’URL qui doivent toujours être inclus dans l’audit d’expérience. L’utilisateur doit remplir le champ de saisie pour définir son propre lien personnalisé.
 
    ![](assets/setup-3.png)
 
-   Cette option fournit un tableau pour les chemins d’URL qui doivent toujours être inclus dans l’audit d’expérience. L’utilisateur doit remplir le champ de saisie pour définir son propre lien personnalisé.
+   Cliquez sur **Ajouter un nouveau remplacement** de page pour fournir un chemin d’URL à inclure dans l’audit d’expérience.
 
    Par exemple, si vous souhaitez inclure `https://wknd.site/us/en/about-us.html` dans l’audit d’expérience, entrez le chemin `us/en/about-us.html` dans ce champ.
 
-   ![](assets/set-up-5.png)
+   ![](assets/exp-audit4.png)
 
-   L’URL qui apparaît dans le tableau sera `https://publish-p7719-e13204.adobeaemcloud.com/us/en/about-us.html`indiquée.
+   L’URL qui apparaît dans le tableau sera `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`indiquée.
 
-   ![](assets/set-up-4.png)
+   ![](assets/exp-audit5.png)
 
    25 lignes au maximum peuvent être incluses. S’il n’y a aucune page envoyée par l’utilisateur dans cette section, la page d’accueil du site sera incluse par défaut dans l’audit d’expérience.
 
    Pour plus d’informations, voir [Comprendre les résultats](/help/implementing/cloud-manager/experience-audit-testing.md) de l’audit d’expérience.
-
-   Cliquez sur **Ajouter un nouveau remplacement** de page pour fournir un chemin d’URL à inclure dans l’audit d’expérience. Une fois le chemin ajouté, cliquez sur **Enregistrer**.
-
-   ![](assets/exp-audit2.png)
 
    >[!NOTE]
    > Les pages configurées seront envoyées au service et évaluées en fonction des performances, de l&#39;accessibilité, de l&#39;optimisation du référencement (optimisation pour les moteurs de recherche), des bonnes pratiques et des tests de PWA (application Web progressive).
