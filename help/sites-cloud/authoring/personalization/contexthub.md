@@ -2,7 +2,7 @@
 title: Aperçu des pages à l’aide des données ContextHub
 description: La barre d’outils ContextHub affiche les données ContextHub, vous permet de modifier les données de la boutique, et se révèle utile pour prévisualiser le contenu.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: e361f24b943eff68982a37ac0dc2597f92450026
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 100%
@@ -12,14 +12,14 @@ ht-degree: 100%
 
 # Aperçu des pages à l’aide des données ContextHub {#previewing-pages-using-contexthub-data}
 
-La barre d’outils ContextHub affiche les données ContextHub et vous permet de modifier les données de la boutique. Elle est utile pour prévisualiser le contenu déterminé par des données dans une boutique ContextHub.<!--The [ContextHub](/help/sites-developing/contexthub.md) toolbar displays data from ContextHub stores and enables you to change store data. The ContextHub toolbar is useful for previewing content that is determined by data in a ContextHub store.-->
+La barre d’outils ContextHub affiche les données ContextHub et vous permet de modifier les données de la boutique. Elle est utile pour prévisualiser le contenu déterminé par des données dans une boutique ContextHub.
 
 La barre d’outils consiste en une série de modes d’IU qui contiennent un ou plusieurs modules d’IU.
 
 * Les modes d’IU sont les icônes qui s’affichent dans la partie gauche de la barre d’outils. Lorsque vous cliquez ou appuyez sur une icône, la barre d’outils affiche les modules d’IU qu’elle contient.
 * Les modules d’IU affichent les données d’une ou plusieurs boutiques ContextHub. Certains modules d’IU vous permettent également de manipuler les données de boutique.
 
-ContextHub installe plusieurs modes d’IU et modules d’IU. Votre administrateur a peut-être configuré ContextHub pour en afficher d’autres.<!--ContextHub installs several UI modes and UI modules. Your administrator may have [configured ContextHub](/help/sites-administering/contexthub-config.md) to display different ones.-->
+ContextHub installe plusieurs modes d’IU et modules d’IU. Votre administrateur a peut-être [configuré ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) pour en afficher d’autres.
 
 ## Affichage de la barre d’outils ContextHub {#revealing-the-contexthub-toolbar}
 
