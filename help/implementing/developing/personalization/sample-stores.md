@@ -2,9 +2,9 @@
 title: Exemples de magasins candidats ContextHub
 description: ContextHub fournit plusieurs exemples de magasins candidats que vous pouvez utiliser dans vos solutions
 translation-type: tm+mt
-source-git-commit: ddfdcf74977adf00bc0ab01b0b1a669781f0d730
+source-git-commit: c3f69e4b03819fea9a1842a87cad38bd1e485d83
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '466'
 ht-degree: 76%
 
 ---
@@ -112,7 +112,7 @@ Le magasin utilise une arborescence de données similaire à l’exemple suivant
 
 Stocke des informations sur l’environnement client actuel, telles que l’appareil, la fenêtre, le navigateur, la date et l’heure.
 
-### Emplacement source {#source-location-surferinfo
+### Emplacement du code source {#source-location-surferinfo}
 
 `/libs/settings/cloudsettings/legacy/contexthub/surferinfo`
 
