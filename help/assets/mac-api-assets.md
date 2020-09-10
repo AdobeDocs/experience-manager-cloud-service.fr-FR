@@ -3,7 +3,7 @@ title: API HTTP Assets  dans [!DNL Adobe Experience Manager].
 description: Créer, lire, mettre à jour, supprimer et gérer des ressources numériques à l’aide de l’API HTTP dans [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1a307b065beff721cad35def4f812c3bee8eb8dd
+source-git-commit: 8aa2585e85b0ed23d68597857cda09dc301df4f6
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 100%
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ## Présentation {#overview}
 
-L’API HTTP Assets permet d’effectuer des opérations CRUD (créer, lire, mettre à jour, supprimer) sur des ressources numériques, notamment les métadonnées, les rendus et les commentaires, ainsi que sur des contenus structurés grâce à des fragments de contenu [!DNL Experience Manager]. Elle est exposée sous `/api/assets` et est implémentée en tant qu’API REST. Elle inclut [la prise en charge des fragments de contenu](/help/assets/assets-api-content-fragments.md).
+L’API HTTP Assets permet d’effectuer des opérations CRUD (créer, lire, mettre à jour, supprimer) sur des ressources numériques, notamment les métadonnées, les rendus et les commentaires, ainsi que sur des contenus structurés grâce à des fragments de contenu [!DNL Experience Manager]. Elle est exposée sous `/api/assets` et est implémentée en tant qu’API REST. Elle inclut [la prise en charge des fragments de contenu](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 Pour accéder à l’API, procédez comme suit :
 
@@ -34,13 +34,13 @@ Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne 
 
 Un [fragment de contenu](/help/assets/content-fragments/content-fragments.md) est un type de ressource spécial. Il permet d’accéder aux données structurées, telles que les textes, les nombres, les dates, etc. Comme il existe plusieurs différences de ressources `standard` (telles que les images ou les documents), certaines règles supplémentaires s’appliquent pour gérer les fragments de contenu.
 
-Pour plus d’informations, voir [Prise en charge de fragments de contenu dans l’API HTTP Experience Manager Assets](/help/assets/assets-api-content-fragments.md).
+Pour plus d’informations, voir [Prise en charge de fragments de contenu dans l’API HTTP Experience Manager Assets](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 ## Modèle de données {#data-model}
 
 L’API HTTP Assets présente deux éléments principaux : des dossiers et des ressources (pour les ressources standard).
 
-Il expose également des éléments plus détaillés pour les modèles de données personnalisés décrivant le contenu structuré dans les fragments de contenu. Pour plus d’informations, voir [Modèles de données de fragments de contenu](/help/assets/assets-api-content-fragments.md#content-models-and-content-fragments).
+Il expose également des éléments plus détaillés pour les modèles de données personnalisés décrivant le contenu structuré dans les fragments de contenu. Pour plus d’informations, voir [Modèles de données de fragments de contenu](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments).
 
 ### Dossiers {#folders}
 
@@ -71,7 +71,7 @@ Dans [!DNL Experience Manager], une ressource contient les éléments suivants 
 * Plusieurs rendus tels que le rendu d’origine (qui est la ressource chargée initialement), une miniature et divers autres rendus. Les rendus supplémentaires peuvent être des images de tailles différentes, différents codages vidéo ou des pages extraites de fichiers PDF ou Adobe InDesign.
 * Commentaires facultatifs.
 
-Pour plus d’informations sur les éléments des fragments de contenu, voir [Prise en charge de fragments de contenu dans l’API HTTP Experience Manager Assets](/help/assets/assets-api-content-fragments.md).
+Pour plus d’informations sur les éléments des fragments de contenu, voir [Prise en charge de fragments de contenu dans l’API HTTP Experience Manager Assets](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 Dans [!DNL Experience Manager], un dossier comprend les composants suivants :
 
