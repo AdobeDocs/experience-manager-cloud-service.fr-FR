@@ -2,17 +2,17 @@
 title: Documents de référence SPA
 description: Présentation des références à l’API d’application d’une seule page et des référentiels de code source
 translation-type: tm+mt
-source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
+source-git-commit: ef3e40c22264e96253dc1ff322a667b4b2432450
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 15%
+source-wordcount: '127'
+ht-degree: 12%
 
 ---
 
 
-# Références de l’API JavaScript SPA{#spa-javascript-api-references}
+# Documents de référence SPA {#spa-reference-materials}
 
-## Références d’API pour les modules NMP {#api-references}
+## Références de l’API JavaScript SPA pour les modules NMP {#api-references}
 
 Vous trouverez ci-dessous les références d’API JavaScript des modules NPM pour la structure SDK de l’éditeur d’applications d’une seule page AEM.
 
