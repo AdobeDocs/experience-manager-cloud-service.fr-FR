@@ -2,9 +2,9 @@
 title: Modifications notables apportées à AEM Commerce en tant que Cloud Service
 description: Changements notables apportés à AEM Commerce en tant que Cloud Service par rapport à Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: ed81d08d9775f61c0ab1e305710ac7ecf29d4229
+source-git-commit: 2934d0d8d3977bb7884bae9654ac26e9fa57b34f
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '623'
 ht-degree: 12%
 
 ---
@@ -36,7 +36,7 @@ Vous trouverez ci-dessous les différents modèles de déploiement de Commerce I
 >
 >Pour obtenir de la documentation supplémentaire sur l&#39;utilisation du FIC avec le service AEM géré ou AEM sur site, consultez le Cadre d&#39;intégration [commerciale.](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
 
->[!NNote]
+>[!NOTE]
 >
 >La version CIF Classic/Quickstart de Commerce Integration Framework peut être utilisée sur AEM offre sur site pour des utilisations très limitées. Cependant, il ne s’agit pas de la solution recommandée.
 
