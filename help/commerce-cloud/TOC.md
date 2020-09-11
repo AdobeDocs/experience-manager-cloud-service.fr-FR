@@ -1,9 +1,10 @@
 ---
-sub-product: AEM Commerce en tant que Cloud Service
-user-guide-title: AEM Commerce en tant que Cloud Service
+sub-product: aem Commerce en tant que Cloud Service
+user-guide-title: aem Commerce en tant que Cloud Service
+breadcrumb-title: Commerce Guide
 user-guide-description: Understand how to use and administer Experience Manager Commerce as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 8e7b2e2e0c5c23aa14bc4d302c417dcc27f70468
+source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
 workflow-type: tm+mt
 source-wordcount: '56'
 ht-degree: 17%
@@ -13,7 +14,7 @@ ht-degree: 17%
 
 # Commerce {#commerce}
 
-+ [AEM Commerce en tant que Cloud Service](/help/commerce-cloud/home.md)
++ [aem Commerce en tant que Cloud Service](/help/commerce-cloud/home.md)
 + [Présentation](overview.md)
 + [Modifications notables](changes.md)
 + Architecture {#architecture}
