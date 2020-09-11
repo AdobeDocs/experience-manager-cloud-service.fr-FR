@@ -2,10 +2,10 @@
 title: Modifications notables apportées à AEM Commerce en tant que Cloud Service
 description: Changements notables apportés à AEM Commerce en tant que Cloud Service par rapport à Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: ed81d08d9775f61c0ab1e305710ac7ecf29d4229
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 13%
+source-wordcount: '624'
+ht-degree: 12%
 
 ---
 
@@ -21,7 +21,7 @@ Les principales différences par rapport à Experience Manager 6.5 se situent d
 
 ## Prise en charge de CIF Classic/Quickstart en tant que Cloud Service {#cif-classic}
 
-Le cadre d’intégration du commerce classique qui incluait un importateur de produits pour importer et stocker des catalogues de produits en Experience Manager n’est plus disponible en tant que Cloud Service dans Experience Manager. L’utilisation de CIF classique n’est pas prise en charge en Experience Manager en tant que Cloud Service et les projets utilisant CIF classique devront remplacer l’implémentation CIF classique par la version prise en charge, comme décrit dans [CIF sur Experience Manager en tant que Cloud Service.](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/cif/help/commerce-cloud/architecture.md)
+Le cadre d’intégration du commerce classique qui incluait un importateur de produits pour importer et stocker des catalogues de produits en Experience Manager n’est plus disponible en tant que Cloud Service dans Experience Manager. L’utilisation de CIF classique n’est pas prise en charge en Experience Manager en tant que Cloud Service et les projets utilisant CIF classique devront remplacer l’implémentation CIF classique par la version prise en charge, comme décrit dans [CIF sur Experience Manager en tant que Cloud Service.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/architecture/magento.html#overview)
 
 ## Déploiement du FIC {#deployment}
 
@@ -33,6 +33,10 @@ Vous trouverez ci-dessous les différents modèles de déploiement de Commerce I
 | Comment déployer [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) | Installation AEM package | Déploiement effectué via [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) | Projet déplacé dans le référentiel [Git de](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) Cloud Manager et déploiement effectué via [Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/deploying/overview.html) |
 
 >[!NOTE]
+>
+>Pour obtenir de la documentation supplémentaire sur l&#39;utilisation du FIC avec le service AEM géré ou AEM sur site, consultez le Cadre d&#39;intégration [commerciale.](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+
+>[!NNote]
 >
 >La version CIF Classic/Quickstart de Commerce Integration Framework peut être utilisée sur AEM offre sur site pour des utilisations très limitées. Cependant, il ne s’agit pas de la solution recommandée.
 
