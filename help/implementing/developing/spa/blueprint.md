@@ -2,7 +2,7 @@
 title: Plan directeur d’applications sur une seule page (SPA)
 description: Ce document décrit le contrat général et indépendant du cadre que tout cadre d’application d’une seule page doit respecter pour mettre en oeuvre des composants modifiables d’une application d’une seule page dans AEM.
 translation-type: tm+mt
-source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
+source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 10%
@@ -97,7 +97,7 @@ module npm : [@adobe/aem-response-editable-components](https://www.npmjs.com/pac
 
 #### Angular {#angular}
 
-module npm : [@adobe/cq-angular-editable-components](https://www.npmjs.com/package/@adobe/cq-angular-editable-components)
+module npm : [@adobe/aem-angular-editable-components](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 ## Services principaux et composants {#main-services-and-components}
 
