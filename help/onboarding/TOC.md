@@ -1,12 +1,13 @@
 ---
 sub-product: Intégration à AEM as a Cloud Service
 user-guide-title: Intégration à AEM as a Cloud Service
+breadcrumb-title: Onboarding Guide
 user-guide-description: This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.
 translation-type: tm+mt
-source-git-commit: 17971405c174e2559879335ade437c5fec2868a3
+source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
 workflow-type: tm+mt
 source-wordcount: '144'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -27,9 +28,9 @@ ht-degree: 95%
       + [Création d’un programme](getting-access-to-aem-in-cloud/creating-a-program.md)
       + [Programmes Sandbox](getting-access-to-aem-in-cloud/sandbox-programs.md)
    + Création d’un projet d’application AEM {#create-application-project}
-      + [Utilisation de l’Assistant](getting-access-to-aem-in-cloud/using-the-wizard.md)
+      + [Utilisation de l’assistant](getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [Configuration du projet](getting-access-to-aem-in-cloud/setting-up-project.md)
-      + [Présentation de l&#39;Environnement de création](getting-access-to-aem-in-cloud/build-environment-details.md)
+      + [Présentation de l’environnement de création](getting-access-to-aem-in-cloud/build-environment-details.md)
 + Préparation à la confidentialité et protection des données {#data-privacy}
    + [Préparation d’AEM aux réglementations sur la protection et la confidentialité des données](data-privacy-and-protection-readiness/aem-readiness.md)
    + [Préparation d’AEM Foundation aux réglementations sur la protection et la confidentialité des données](data-privacy-and-protection-readiness/foundation-readiness.md)
