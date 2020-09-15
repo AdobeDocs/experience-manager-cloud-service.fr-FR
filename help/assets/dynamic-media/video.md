@@ -2,9 +2,9 @@
 title: Vidéo
 description: Découvrez comment utiliser la vidéo dans Dynamic Media
 translation-type: tm+mt
-source-git-commit: 07d60f1ae6be824af07bc51f989a5c2029a3422a
+source-git-commit: 3a56bee9236702d22fc7159c744271be49f4a9a6
 workflow-type: tm+mt
-source-wordcount: '10052'
+source-wordcount: '10056'
 ht-degree: 99%
 
 ---
@@ -413,9 +413,9 @@ Dynamic Media recommande d’utiliser les paramètres prédéfinis MP4 H.264 de 
 
 ## Publication de vidéos sur YouTube   {#publishing-videos-to-youtube}
 
-Vous pouvez publier des ressources vidéo AEM on-premise directement sur une chaîne YouTube que vous avez précédemment créée.
+Vous pouvez publier des fichiers vidéo gérés en AEM Assets directement sur un canal YouTube que vous avez précédemment créé.
 
-Pour publier des ressources vidéo sur YouTube, vous définissez AEM Assets avec des balises. Vous associez ces balises à une chaîne YouTube. Si la balise d’une ressource vidéo correspond à la balise d’une chaîne YouTube, la vidéo est publiée sur YouTube. La publication sur YouTube se produit avec une publication normale de la vidéo à condition qu’une balise associée soit utilisée.
+Pour publier des fichiers vidéo sur YouTube, vous devez baliser les fichiers vidéo en AEM Assets avec des balises. Vous associez ces balises à une chaîne YouTube. Si la balise d’une ressource vidéo correspond à la balise d’une chaîne YouTube, la vidéo est publiée sur YouTube. La publication sur YouTube se produit avec une publication normale de la vidéo à condition qu’une balise associée soit utilisée.
 
 YouTube procède à son propre codage. De ce fait, le fichier vidéo d’origine chargé dans AEM est publié sur YouTube et non pas dans un rendu vidéo créé par le codage Dynamic Media. Même s’il n’est pas nécessaire de traiter les vidéos à l’aide de Dynamic Media, il est supposé qu’elles le seront si un paramètre prédéfini de visionneuse est nécessaire pour la lecture.
 
