@@ -1,11 +1,11 @@
 ---
 title: Utilisation de Cloud Readiness Analyzer
 description: Utilisation de Cloud Readiness Analyzer
-translation-type: ht
-source-git-commit: a0e58c626f94b778017f700426e960428b657806
-workflow-type: ht
-source-wordcount: '1871'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: ba2105d389617fe0c7e26642799b3a7dd3adb8a1
+workflow-type: tm+mt
+source-wordcount: '2091'
+ht-degree: 78%
 
 ---
 
@@ -146,29 +146,33 @@ Vous pouvez également utiliser un outil de ligne de commande tel que `curl` ou 
 
 Les en-têtes HTTP suivants sont utilisés par cette interface :
 
-* `Cache-Control: max-age=<seconds>` : spécifie l’intervalle d’actualisation du cache en secondes. (Voir [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8).)
-* `Prefer: respond-async` : indique que le serveur doit répondre de manière asynchrone. (Voir [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1).)
+* `Cache-Control: max-age=<seconds>`: Spécifie la durée de vie de fraîcheur du cache en secondes. (Voir [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8).)
+* `Prefer: respond-async`: Indique que le serveur doit répondre de manière asynchrone. (Voir [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1).)
+* `Prefer: return=minimal`: Indique que le serveur doit renvoyer une réponse minimale. (Voir [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2).)
 
 Les paramètres de requête HTTP suivants sont disponibles à titre de commodité lorsque l’utilisation des en-têtes HTTP risque de ne pas être facile :
 
-* `max-age` (nombre, facultatif) : spécifie l’intervalle d’actualisation du cache en secondes. Ce nombre doit être égal ou supérieur à 0. L’intervalle d’actualisation par défaut est de 86 400 secondes, ce qui signifie que sans ce paramètre ou l’en-tête correspondant, un nouveau cache sera utilisé pour répondre aux demandes pendant 24 heures avant que le rapport ne soit de nouveau généré. L’utilisation de `max-age=0` forcera l’effacement du cache et déclenchera une nouvelle génération du rapport. Immédiatement après cette demande, l’intervalle d’actualisation sera réinitialisé à la valeur antérieure non nulle.
-* `respond-async` (booléen, facultatif) : spécifie que la réponse doit être fournie de manière asynchrone. L’utilisation de `respond-async=true`, si le cache est obsolète, entraînera l’envoi par le serveur d’une réponse `202 Accepted, processing cache` sans attendre que le rapport soit généré et que le cache soit actualisé. Si le cache est actualisé, ce paramètre n’a aucun effet. La valeur par défaut est `false`, ce qui signifie que sans ce paramètre ou l’en-tête correspondant, le serveur répondra de manière synchrone. Dans ce cas, la réponse peut nécessiter un temps important et un ajustement du temps de réponse maximal pour le client HTTP.
+* `max-age` (nombre, facultatif) : Spécifie la durée de vie de fraîcheur du cache en secondes. Ce nombre doit être égal ou supérieur à 0. La durée de vie de fraîcheur par défaut est de 8 6400 secondes. Sans ce paramètre ou l&#39;en-tête correspondant, un nouveau cache sera utilisé pour répondre aux demandes pendant 24 heures, et le cache devra alors être régénéré. L&#39;utilisation `max-age=0` forcera le cache à être effacé et déclenchera une régénération du rapport, en utilisant la durée de vie de fraîcheur non nulle précédente pour le cache nouvellement généré.
+* `respond-async` (booléen, facultatif) : Indique que la réponse doit être fournie de manière asynchrone. Using `respond-async=true` when the cache is stale will cause the server to return a response of `202 Accepted` without waiting for the cache to be refreshed and for the report to be generated. Si le cache est actualisé, ce paramètre n’a aucun effet. The default value is `false`. Without this parameter or the corresponding header the server will respond synchronously, which may require a significant amount of time and require an adjustment to the maximum response time for the HTTP client.
+* `may-refresh-cache` (booléen, facultatif) : Indique que le serveur peut actualiser le cache en réponse à une demande si le cache actuel est vide, obsolète ou bientôt obsolète. Si `may-refresh-cache=true`ou si elle n’est pas spécifiée, le serveur peut lancer une tâche d’arrière-plan qui appelle le Détecteur de schémas et actualise le cache. Si `may-refresh-cache=false` le serveur ne lance aucune tâche d&#39;actualisation qui aurait été effectuée autrement si le cache est vide ou obsolète, auquel cas le rapport est vide. Toute tâche d&#39;actualisation déjà en cours de traitement ne sera pas affectée par ce paramètre.
+* `return-minimal` (booléen, facultatif) : Indique que la réponse du serveur doit uniquement inclure l’état contenant l’indication de progression et l’état du cache au format JSON. Si `return-minimal=true`vous le souhaitez, le corps de la réponse sera limité à l’objet status. Si `return-minimal=false`ou si elle n&#39;est pas spécifiée, une réponse complète sera fournie.
+* `log-findings` (booléen, facultatif) : Indique que le serveur doit enregistrer le contenu du cache lors de sa création ou de son actualisation initiale. Chaque recherche du cache sera consignée sous la forme d’une chaîne JSON. Cette journalisation ne se produit que si `log-findings=true` la demande génère un nouveau cache.
 
 Si un en-tête HTTP et son paramètre de requête correspondant sont présents simultanément, le paramètre de requête est prioritaire.
 
 La commande suivante est une méthode simple pour lancer la génération du rapport via l’interface HTTP :
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
 
-Lorsqu’une requête a été effectuée, le client n’a pas besoin de rester actif pour que le rapport soit généré. La génération du rapport peut être lancée avec un client à l’aide d’une requête HTTP GET. Une fois le rapport généré, il peut être affiché à l’aide du cache d’un autre client ou de l’outil CSV de l’interface utilisateur AEM.
+Lorsqu’une requête a été effectuée, le client n’a pas besoin de rester actif pour que le rapport soit généré. La génération du rapport peut être lancée avec un client à l&#39;aide d&#39;une demande de GET HTTP et, une fois le rapport généré, affichée à partir du cache avec un autre client ou avec l&#39;outil ARC dans l&#39;interface utilisateur de l&#39;AEM.
 
 ### Réponses {#http-responses}
 
 Les valeurs de réponses possibles sont les suivantes :
 
-* `200 OK` : la réponse contient les résultats du détecteur de motifs, générés pendant l’intervalle d’actualisation de la mémoire cache.
-* `202 Accepted, processing cache` : fourni pour les réponses asynchrones indiquant que le cache était obsolète et qu’une actualisation est en cours.
-* `400 Bad Request` : indique qu’une erreur s’est produite lors de la requête. Un message au format Détails du problème (voir [RFC 7807](https://tools.ietf.org/html/rfc7807)) fournissant des détails supplémentaires.
-* `401 Unauthorized` : la requête n’a pas été autorisée.
+* `200 OK`: Indique que la réponse contient les résultats du détecteur de schémas qui ont été générés pendant la durée de vie de la mémoire cache.
+* `202 Accepted`: Utilisé pour indiquer que le cache est obsolète. Lorsque `respond-async=true` et `may-refresh-cache=true` cette réponse indique qu’une tâche d’actualisation est en cours. Lorsque `may-refresh-cache=false` cette réponse indique simplement que le cache est obsolète.
+* `400 Bad Request` : indique qu’une erreur s’est produite lors de la requête. Un message au format Détails du problème (voir [RFC 7807](https://tools.ietf.org/html/rfc7807)) donne des détails supplémentaires.
+* `401 Unauthorized`: Indique que la demande n’a pas été autorisée.
 * `500 Internal Server Error` : indique qu’une erreur de serveur interne s’est produite. Un message au format Détails du problème donne des détails supplémentaires.
 * `503 Service Unavailable` : indique que le serveur est occupé par une autre réponse et qu’il ne peut pas traiter cette requête dans les délais impartis. Cela ne se produit probablement que pour les requêtes synchrones. Un message au format Détails du problème donne des détails supplémentaires.
 
