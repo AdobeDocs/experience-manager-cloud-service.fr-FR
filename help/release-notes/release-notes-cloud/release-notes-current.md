@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 2020.9.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[ !DNL Adobe Experience Manager] en tant que notes de mise à jour Cloud Service pour la version 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: 529a538948f537fde8b2c50fb1f3acc942a7cb64
+source-git-commit: 9bb087cb0570a1f3bbffb989a9399d3274f9c5e1
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '391'
 ht-degree: 19%
 
 ---
@@ -60,7 +60,7 @@ Suivez cette section pour en savoir plus sur les nouveautés et les mises à jou
 
 ### Nouveautés {#what-is-new-cra}
 
-* L&#39;Analyseur de préparation du cloud (CRA) dispose d&#39;une console d&#39;état de début qui affiche un bouton &quot;Générer un rapport&quot; explicite sur lequel l&#39;utilisateur peut cliquer pour exécuter l&#39;ARC.
+* L&#39;Analyseur de préparation du cloud (CRA) dispose d&#39;une console d&#39;état de début qui affiche un bouton **Générer un rapport** explicite sur lequel l&#39;utilisateur peut cliquer pour exécuter l&#39;ARC.
 
 * L&#39;interface utilisateur de l&#39;ARC affiche la progression pendant son exécution. Il affiche les éléments analysés et les résultats trouvés pendant l&#39;exécution.
 
