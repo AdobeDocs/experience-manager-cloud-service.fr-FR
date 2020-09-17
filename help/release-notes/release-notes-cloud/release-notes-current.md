@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2020.9.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[ !DNL Adobe Experience Manager] en tant que notes de mise à jour Cloud Service pour la version 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: cca8aff3ada327252bfabd2207e7aa86fdf00033
+source-git-commit: 529a538948f537fde8b2c50fb1f3acc942a7cb64
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 20%
+source-wordcount: '390'
+ht-degree: 19%
 
 ---
 
@@ -53,3 +53,20 @@ La date de publication de [!UICONTROL Cloud Manager] version 2020.9.0 est le 3
 ### Correctifs {#bug-fixes-cm}
 
 * L’onglet Audit de contenu affichait incorrectement l’URL de base à l’aide du domaine d’auteur et non du domaine de publication.
+
+## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
+
+Suivez cette section pour en savoir plus sur les nouveautés et les mises à jour de la version 1.1.0 de Cloud Readiness Analyzer.
+
+### Nouveautés {#what-is-new-cra}
+
+* L&#39;Analyseur de préparation du cloud (CRA) dispose d&#39;une console d&#39;état de début qui affiche un bouton &quot;Générer un rapport&quot; explicite sur lequel l&#39;utilisateur peut cliquer pour exécuter l&#39;ARC.
+
+* L&#39;interface utilisateur de l&#39;ARC affiche la progression pendant son exécution. Il affiche les éléments analysés et les résultats trouvés pendant l&#39;exécution.
+
+* Le rapport de l&#39;ARC présente un résumé et le nombre de constatations sous forme de tableau, selon le type de conclusions et le niveau d&#39;importance. En cliquant sur le numéro de cette recherche, vous accédez automatiquement à l&#39;emplacement de cette recherche dans le rapport.
+
+### Correctifs {#cra-bug-fixes}
+
+* Dans certains cas, le rapport de l&#39;ARC n&#39;était pas mis à jour après avoir forcé une actualisation. Ce problème a été corrigé dans cette version.
+
