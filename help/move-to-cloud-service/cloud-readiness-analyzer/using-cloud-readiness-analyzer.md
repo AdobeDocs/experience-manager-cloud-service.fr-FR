@@ -2,7 +2,7 @@
 title: Utilisation de Cloud Readiness Analyzer
 description: Utilisation de Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: b15969e7cdbd8c3affc6a51b0bc0b0f3f5fdb0f0
+source-git-commit: 6459a3eae03ec75ed9449f27ad717b90bddf6dec
 workflow-type: tm+mt
 source-wordcount: '2209'
 ht-degree: 71%
@@ -62,20 +62,20 @@ Consultez cette section pour savoir comment afficher le rapport Cloud Readiness 
 
 1. Une fois le rapport de l&#39;ARC généré, il affiche un résumé et le nombre de constatations sous forme de tableau, selon le type de conclusions et le niveau d&#39;importance. Pour obtenir plus de détails sur une recherche particulière, vous pouvez cliquer sur le numéro correspondant au type de recherche dans le tableau.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table.png)
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-4.png)
 
    L&#39;action ci-dessus fera défiler automatiquement l&#39;écran jusqu&#39;à l&#39;emplacement de cette recherche dans le rapport.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table-1.png)
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-5.png)
 
 1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-download-csv.png)
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-6.png)
 
    >[!NOTE]
    >Vous pouvez forcer CRA à effacer son cache et à générer de nouveau le rapport en cliquant sur **Actualiser le rapport**.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-refresh.png)
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-7.png)
 
    >[!NOTE]
    >Le rapport est en cours de régénération, mais il affiche la progression en termes de pourcentage achevé, comme le montre l&#39;illustration ci-dessous.
