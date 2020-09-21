@@ -2,10 +2,10 @@
 title: Structure de projet AEM
 description: Découvrez comment définir des structures de package en vue d’un déploiement sur Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: d0e63184d229e52b949d0f24660121e3417912be
 workflow-type: tm+mt
-source-wordcount: '2530'
-ht-degree: 100%
+source-wordcount: '2542'
+ht-degree: 99%
 
 ---
 
@@ -102,8 +102,10 @@ La structure de déploiement d’application recommandée est la suivante :
    + Le module de contenu `all` intègre les modules suivants afin de créer un artefact de déploiement unique
       + `ui.apps.common` déploie le code requis par les sites A **et** B
       + `ui.apps.site-a` déploie le code requis par le site A
+         + `core.site-a` Le JAR du lot OSGi est incorporé dans `ui.apps.site-a`
       + `ui.content.site-a` déploie le contenu et la configuration requis par le site A
       + `ui.apps.site-b` déploie le code requis par le site B
+         + `core.site-b` Le JAR du lot OSGi est incorporé dans `ui.apps.site-b`
       + `ui.content.site-b` déploie le contenu et la configuration requis par le site B
 
 ## Types de modules {#package-types}
