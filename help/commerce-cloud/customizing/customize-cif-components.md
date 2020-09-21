@@ -10,7 +10,7 @@ audience: developer
 kt: 4279
 thumbnail: 4279-customize-cif.jpg
 translation-type: tm+mt
-source-git-commit: 34b4dc697d3fb8c3f81e16ee3cab5d768e42b99c
+source-git-commit: a88595f3fab37f4406e607cb104a27de51cdbef6
 workflow-type: tm+mt
 source-wordcount: '2550'
 ht-degree: 3%
@@ -176,7 +176,7 @@ Ensuite, utilisez un IDE GraphQL pour vérifier que l&#39; `eco_friendly` attrib
    }
    ```
 
-   ![Exemple de réponse GraphlQL](../assets/customize-cif-components/sample-graphql-query.png)
+   ![Exemple de réponse GraphQL](../assets/customize-cif-components/sample-graphql-query.png)
 
    Notez que la valeur de **Yes** est un entier de **1**. Cela sera utile lorsque nous écrirons la requête GraphQL dans Java.
 
