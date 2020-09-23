@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2020.9.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[ !DNL Adobe Experience Manager] en tant que notes de mise à jour Cloud Service pour la version 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: 9bb087cb0570a1f3bbffb989a9399d3274f9c5e1
+source-git-commit: 24f7e9c1a99286d38332b1d4fa1b0ff9a7335069
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 19%
+source-wordcount: '462'
+ht-degree: 17%
 
 ---
 
@@ -70,3 +70,16 @@ Suivez cette section pour en savoir plus sur les nouveautés et les mises à jou
 
 * Dans certains cas, le rapport de l&#39;ARC n&#39;était pas mis à jour après avoir forcé une actualisation. Ce problème a été corrigé dans cette version.
 
+## Outil de transfert de contenu {#content-transfer-tool}
+
+Suivez cette section pour en savoir plus sur les nouveautés et les mises à jour de la version 1.1.10 de l’outil de transfert de contenu.
+
+### Nouveautés {#what-is-new-ctt}
+
+* L&#39;outil de transfert de contenu (CTT) prend en charge le magasin de données Azure Blob Store.
+
+* L’interface utilisateur du CTT dispose d’une fonction de rechargement automatique qui recharge la page d’aperçu toutes les 30 secondes.
+
+* Bouton ajouté à l’interface utilisateur de CTT pour récupérer facilement le *Jeton d&#39;accès* .
+
+* Ajout d’un message de validation descriptif pour l’ *URL* et le nom *du jeu de* migration.
