@@ -2,10 +2,10 @@
 title: Administration d’instances de workflows
 description: Découvrez comment administrer les instances de flux de travail
 translation-type: tm+mt
-source-git-commit: 85e4104c3c2dbe4b67005bab52edb7ab90767406
+source-git-commit: c19079b1be36c4e87962491f263ddf97ab98f831
 workflow-type: tm+mt
 source-wordcount: '934'
-ht-degree: 74%
+ht-degree: 67%
 
 ---
 
@@ -40,16 +40,16 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 
 1. Dans la boîte de dialogue Filtre, sélectionnez les critères de recherche de processus. Vous pouvez effectuer des recherches en fonction de ces entrées :
 
-* Chemin d’accès de la charge : Sélectionner un chemin spécifique
-* Modèle de flux de travail : Sélectionner un modèle de processus
-* Destinataire : Sélectionner un responsable de processus
-* Type : Tâche, élément de flux de travail ou échec du flux de travail
-* Etat de la tâche : Principal, complet ou arrêté
-* Où je suis : Propriétaire ET cessionnaire, propriétaire uniquement, cessionnaire uniquement
-* Date de début : Date de début avant ou après une date spécifiée
-* Date de fin : Date de fin avant ou après une date spécifiée
-* Date d&#39;échéance : Date d&#39;échéance avant ou après une date spécifiée
-* Date de mise à jour : Date mise à jour avant ou après une date spécifiée
+   * Chemin d’accès de la charge : Sélectionner un chemin spécifique
+   * Modèle de flux de travail : Sélectionner un modèle de processus
+   * Destinataire : Sélectionner un responsable de processus
+   * Type : Tâche, élément de flux de travail ou échec du flux de travail
+   * Etat de la tâche : Principal, complet ou arrêté
+   * Où je suis : Propriétaire ET cessionnaire, propriétaire uniquement, cessionnaire uniquement
+   * Date de début : Date de début avant ou après une date spécifiée
+   * Date de fin : Date de fin avant ou après une date spécifiée
+   * Date d&#39;échéance : Date d&#39;échéance avant ou après une date spécifiée
+   * Date de mise à jour : Date mise à jour avant ou après une date spécifiée
 
 ## Suspension, reprise ou arrêt d’une instance de workflows {#suspending-resuming-and-terminating-a-workflow-instance}
 
@@ -65,12 +65,12 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 ## Affichage des workflows archivés {#viewing-archived-workflows}
 
 1. Avec la navigation, sélectionnez **Outil**, puis **Workflows**.
+
 1. Sélectionnez **Archiver** pour afficher la liste des instances de workflows qui se sont terminées avec succès.
 
    ![wf-98](/help/sites-cloud/administering/assets/wf-98.png)
 
    >[!NOTE]
-   >
    >Le statut d’abandon est considéré comme un arrêt réussi, car il se produit suite à une action de l’utilisateur. Par exemple :
    >
    >* Utilisation de l’action **Terminer**
@@ -90,13 +90,14 @@ Lorsqu’un workflow échoue, AEM fournit la console **Échecs** pour vous perme
 
 * **Ouvrir l’historique** Affiche des détails sur l’historique des workflows.
 
-* **Relancer l’étape** Exécute à nouveau l’instance du composant d’étape de test. Utilisez la commande Relancer l’étape après avoir corrigé la cause de l’erreur d’origine. Par exemple, relancez l’étape après avoir corrigé un bogue dans le script que l’étape de processus exécute.
-* **Arrêter** Arrêtez le workflow si l’erreur a provoqué une situation irréconciliable pour le workflow. Par exemple, le workflow peut se baser sur des conditions environnementales comme des informations figurant dans le référentiel qui ne sont plus valides pour l’instance de workflow.
+* **Relancer l’étape** Exécute à nouveau l’instance du composant d’étape de test. Utilisez la commande Recommencer l’étape après avoir corrigé la cause de l’erreur d’origine. Par exemple, relancez l’étape après avoir corrigé un bogue dans le script que l’étape de processus exécute.
+* **Arrêter** Arrêter le processus si l&#39;erreur a provoqué une situation irréconciliable pour le processus. Par exemple, le flux de travail peut s’appuyer sur des conditions environnementales telles que des informations dans le référentiel qui ne sont plus valides pour l’instance de flux de travail.
 * **Arrêter et réessayer** Similaire à **Arrêter**, à ceci près qu’une nouvelle instance de workflow est lancée à l’aide de la charge utile, du titre et de la description d’origine.
 
 Pour examiner les échecs, puis reprendre ou arrêter le workflow par la suite, utilisez les étapes suivantes :
 
 1. Avec la navigation, sélectionnez **Outil**, puis **Workflows**.
+
 1. Sélectionnez **Échecs** pour afficher la liste des instances de workflows qui ne se sont pas terminées avec succès.
 1. Sélectionnez un élément spécifique, puis l’action appropriée :
 
@@ -110,16 +111,12 @@ Configurez la **configuration de la purge du workflow Adobe Granite** pour purge
 
 Vous pouvez également créer plusieurs configurations du service pour purger les instances de workflows qui répondent à différents critères. Par exemple, créez une configuration qui purge les instances d’un modèle de workflow particulier lorsqu’elles s’exécutent beaucoup plus longtemps que prévu. Créez une autre configuration qui purge tous les workflows terminés après un certain nombre de jours pour réduire la taille du référentiel.
 
-Pour configurer le service, vous pouvez configurer les fichiers de configuration OSGI voir les fichiers [de configuration](/help/implementing/deploying/configuring-osgi.md)OSGi. Le tableau suivant décrit les propriétés dont vous avez besoin pour l’une ou l’autre de ces méthodes.
+Pour configurer le service, vous pouvez configurer les fichiers de configuration OSGi voir les fichiers [de configuration](/help/implementing/deploying/configuring-osgi.md)OSGi. Le tableau suivant décrit les propriétés dont vous avez besoin pour l’une ou l’autre méthode.
 
 >[!NOTE]
->
 >Pour ajouter la configuration au référentiel, le PID de service est :
->
 >`com.adobe.granite.workflow.purge.Scheduler`
->
 >Le service étant un service d’usine, le nom du nœud `sling:OsgiConfig` nécessite un suffixe d’identifiant, tel que :
->
 >`com.adobe.granite.workflow.purge.Scheduler-myidentifier`
 
 <table>
@@ -161,9 +158,7 @@ Pour configurer le service, vous pouvez configurer les fichiers de configuration
 You can set the maximum size of the inbox by configuring the **Adobe Granite Workflow Service**, see [add an OSGi configuration to the repository](/help/implementing/deploying/configuring-osgi.md). Le tableau suivant décrit la propriété que vous configurez.
 
 >[!NOTE]
->
 >Pour ajouter la configuration au référentiel, le PID de service est :
->
 >`com.adobe.granite.workflow.core.WorkflowSessionFactory`.
 
 | Nom de propriété (console Web) | Nom de propriété OSGi |
