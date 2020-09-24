@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 2020.8.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[ !DNL Adobe Experience Manager] en tant que notes de mise à jour Cloud Service pour la version 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: 130603301212cdb29ae7f395ebc05fc58f64686e
+source-git-commit: fe769e8acecbc173f2437edc292eeba2585f0509
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1054'
 ht-degree: 12%
 
 ---
@@ -14,9 +14,6 @@ ht-degree: 12%
 
 La section suivante décrit les notes de mise à jour générales d’Experience Manager as a Cloud Service 2020.8.0.
 
-## Date de publication {#release-date}
-
-The release date for [!DNL Experience Manager] as a Cloud Service 2020.8.0 is August 27, 2020.
 
 ## [!DNL Adobe Experience Manager Sites]as a Cloud Service{#sites}
 
@@ -25,6 +22,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.8.0 is Au
 * Possibilité de [restaurer les pages et les sous-pages (arbres de page) dans une version](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions)antérieure.
 
 * Possibilité de [créer des lancements](/help/sites-cloud/authoring/launches/overview.md) dans AEM [éditeur d’applications monopages.](/help/implementing/developing/spa/introduction.md)
+
 
 ## [!DNL Adobe Experience Manager Assets]as a Cloud Service{#assets}
 
@@ -80,6 +78,7 @@ La date de publication de la mise à jour 2020.8.0 de [!UICONTROL Cloud Manage
 ### Nouveautés {#what-is-new-cloud-manager}
 
 * L’audit de contenu est une fonctionnalité activée sur les pipelines de production de sites Cloud Manager. La configuration du pipeline de production pour les programmes avec sites comprend désormais un troisième onglet nommé Audit **du** contenu. Chaque fois qu&#39;un pipeline de production est exécuté, une nouvelle étape de contrôle du contenu est incluse dans le pipeline après des tests fonctionnels personnalisés qui évaluent le site par rapport à un certain nombre de dimensions, y compris les performances, l&#39;optimisation du référencement (optimisation pour les moteurs de recherche), l&#39;accessibilité, les meilleures pratiques et le PWA (application Web progressive).
+
 
    >[!NOTE]
    >L’audit de contenu a depuis été renommé Audit d’expérience.
