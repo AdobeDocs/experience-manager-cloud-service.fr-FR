@@ -2,7 +2,7 @@
 title: Test d’audit d’expérience - Cloud Services
 description: Test d’audit d’expérience - Cloud Services
 translation-type: tm+mt
-source-git-commit: 28ba5412190560b21b27068832ba05cfff24c079
+source-git-commit: c1ce44fb8a7b12818b58ff5ef661b9b447b9cd5c
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
@@ -30,7 +30,7 @@ L’audit d’expérience fournit des résultats de test détaillés et agrégat
    >[!NOTE]
    >Le score d&#39;application Web progressive (PWA) n&#39;est pas inclus dans le score de synthèse et ne sera affiché que dans l&#39;écran des détails du rapport au niveau de la page.
 * Des scores individuels au niveau de la page sont également disponibles par le biais d’une analyse approfondie.
-* Des détails sur les notes sont disponibles pour voir quels sont les résultats des tests individuels, ainsi que des conseils sur la façon de résoudre les problèmes qui ont été identifiés lors de la vérification du contenu.
+* Des détails sur les notes sont disponibles pour voir quels sont les résultats des tests individuels, ainsi que des conseils sur la façon de résoudre les problèmes qui ont été identifiés lors de la vérification de l&#39;expérience.
 * Un historique des résultats du test est conservé dans Cloud Manager afin que les clients puissent voir si les modifications introduites dans l’exécution du pipeline incluent des régressions par rapport à l’exécution précédente.
 
 ### Scores d’Agrégat {#aggregate-scores}
