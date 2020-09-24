@@ -2,7 +2,7 @@
 title: Configuration de Dynamic Media Cloud Service
 description: Informations sur la configuration de Dynamic Media dans Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 500d8795176fa21f79a8d67954fc9352b9a349f8
+source-git-commit: c5c2f5d9f0fd539591972382f197cb83b3d7e60e
 workflow-type: tm+mt
 source-wordcount: '5124'
 ht-degree: 98%
@@ -158,7 +158,9 @@ L’écran Image Server permet de définir les paramètres par défaut pour la d
 Pour ouvrir la page Paramètres généraux de l’application, dans la barre de navigation globale de Dynamic Media Classic, cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux.]**
 
 * **[!UICONTROL Serveurs]** : au moment de la mise en service du compte, Dynamic Media fournit automatiquement les serveurs attribués à votre entreprise. Ces serveurs sont utilisés pour créer des chaînes URL pour votre site web et vos applications. Ces appels d’URL sont spécifiques à votre compte. Ne modifiez le nom d’aucun des serveurs à moins que le support AEM ne vous le demande explicitement.
+
 * **[!UICONTROL Écraser les images]** : Dynamic Media ne permet pas que deux fichiers portent le même nom. L’identifiant de l’URL de chaque élément (le nom de fichier sans l’extension) doit être unique. Ces options spécifient la manière dont les ressources de remplacement sont chargées : elles peuvent remplacer l’original ou devenir un doublon. Les ressources en double sont renommées en ajoutant « -1 » (par exemple, chaise.tif devient chaise-1.tif). Ces options affectent les ressources chargées dans un dossier autre que celui d’origine ou les ressources dont l’extension est différente de celle du fichier d’origine (telle que JPG, TIF ou PNG).
+
 * **[!UICONTROL Écraser dans dossier actuel, même nom/même extension de fichier de base]** : cette option est la règle la plus stricte pour le remplacement. Elle implique que vous chargiez l’image de remplacement dans le même dossier que l’original, et qu’elle ait la même extension que le fichier d’origine. Si ces conditions ne sont pas remplies, un doublon est créé.
 
    >[!NOTE]
@@ -166,7 +168,9 @@ Pour ouvrir la page Paramètres généraux de l’application, dans la barre de 
    >Pour préserver la compatibilité avec AEM, sélectionnez toujours ce paramètre : **Écraser dans dossier actuel, même nom/même extension de fichier de base**.
 
 * **[!UICONTROL Écraser dans un dossier, même nom/même extension de fichier de base]** : nécessite que l’image de remplacement ait la même extension que l’image d’origine (par exemple, chaise.jpg peut remplacer uniquement chaise.jpg, et non chaise.tif). Vous pouvez néanmoins télécharger l’image de remplacement dans un dossier différent de celui de l’image d’origine. L’image mise à jour se trouve dans le nouveau dossier ; le fichier d’origine n’est plus disponible à l’emplacement d’origine..
+
 * **[!UICONTROL Écraser dans un dossier, même nom de fichier, extension indépendante]** : cette option est la règle de remplacement la plus inclusive. Elle vous permet de télécharger une image de remplacement dans un dossier autre que celui de l’image d’origine, de télécharger un fichier dont l’extension est différente de celle du fichier d’origine et de remplacer le fichier d’origine. Si le fichier d’origine se trouve dans un dossier différent, l’image de remplacement est enregistrée dans le nouveau dossier où elle a été téléchargée.
+
 * **[!UICONTROL Profils de couleurs par défaut]** : voir [Configuration de la gestion des couleurs](#configuring-color-management) pour plus d’informations.
 
    >[!NOTE]
@@ -213,7 +217,7 @@ Vous pouvez définir les types de ressources qui doivent être traités par Dyna
 
 Voir la section [Chargement des ressources](/help/assets/add-assets.md).
 
-**Pour configurer le traitement des ressources**
+Pour configurer le traitement des ressources:
 
 1. Dans AEM, cliquez sur le logo AEM pour accéder à la console de navigation globale, puis cliquez sur **[!UICONTROL Général > CRXDE Lite]**.
 1. Dans le rail de gauche, accédez à ce qui suit :
@@ -230,7 +234,6 @@ Voir la section [Chargement des ressources](/help/assets/add-assets.md).
    * Cliquez deux fois sur **[!UICONTROL jobParam]** pour ouvrir le champ de texte associé. Voir [Types MIME pris en charge](/help/assets/file-format-support.md) pour connaître la liste des valeurs de paramètres de traitement que vous pouvez utiliser pour un type MIME donné.
 
 1. Utilisez l’une des méthodes suivantes :
-
    * Répétez les étapes 3 et 4 pour modifier d’autres types MIME.
    * Dans la barre de menus de la page CRXDE Lite, cliquez sur **[!UICONTROL Tout enregistrer.]**
 
@@ -240,7 +243,7 @@ Voir la section [Chargement des ressources](/help/assets/add-assets.md).
 
 Vous pouvez ajouter des types MIME personnalisés pour les formats non pris en charge dans AEM Assets. Pour vous assurer que tout nouveau nœud ajouté dans CRXDE Lite n’est pas supprimé par AEM, vous devez vous assurer que vous déplacez le type MIME avant `image_` et que sa valeur activée est définie sur **[!UICONTROL false]**.
 
-**Pour ajouter des types MIME personnalisés pour des formats non pris en charge**
+Pour ajouter des types MIME personnalisés pour des formats non pris en charge:
 
 1. Dans AEM, appuyez sur **[!UICONTROL Outils > Opérations > Console web.]**
 
@@ -306,7 +309,7 @@ Vous pouvez également utiliser **[!UICONTROL Afficher le code]** sans champ de 
 
 Deux éléments sont disponibles pour la définition : correspondance et nom de base. Ces champs vous permettent de définir tous les éléments de la convention de nommage et d’identifier la partie de la convention utilisée pour nommer la visionneuse dans laquelle ils se trouvent. La convention de nommage individuelle d’une entreprise est susceptible d’utiliser une ou plusieurs lignes de définition pour chacun de ces éléments. Vous pouvez utiliser autant de lignes que vous le souhaitez pour votre définition unique et les regrouper dans des éléments distincts, par exemple, pour l’image principale, les éléments Couleur, Affichage secondaire et Échantillon.
 
-**Pour configurer l’affectation de nom par défaut**
+Pour configurer l’affectation de nom par défaut:
 
 1. Connectez-vous à votre compte Dynamic Media Classic (Scene7) : [http://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html).
 
@@ -340,7 +343,7 @@ Vous pouvez créer, modifier et gérer vos paramètres prédéfinis d’ensemble
 
 Vous pouvez utiliser la méthode de champ de formulaire pour définir un paramètre prédéfini d’ensemble par lot ou la méthode de code, qui vous permet d’utiliser des expressions régulières. Comme dans le nommage par défaut, vous pouvez sélectionner Afficher le code en même temps que vous définissez la vue Formulaire et utilisez des expressions régulières pour créer vos définitions. Vous pouvez également désélectionner l’une des deux vues pour utiliser uniquement l’une ou l’autre.
 
-**Pour créer un paramètre prédéfini d’ensemble par lot**
+Pour créer un paramètre prédéfini d’ensemble par lot:
 
 1. Connectez-vous à votre compte Dynamic Media Classic (Scene7) : [http://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html).
 
@@ -503,7 +506,7 @@ La file d’attente de workflows Granite est utilisée pour le workflow **[!UICO
 
 La file d’attente de workflows Granite est utilisée pour les workflows non transitoires. Dans Dynamic Media, elle est utilisée pour le traitement de la vidéo avec le workflow **[!UICONTROL Vidéo de codage Dynamic Media]**.
 
-**Pour mettre à jour la file d’attente de workflows Granite**
+Pour mettre à jour la file d’attente de workflows Granite:
 
 1. Accédez à `https://<server>/system/console/configMgr` et recherchez **Queue: Granite Workflow Queue** (File d’attente : file d’attente de workflows Granite).
 
@@ -525,7 +528,7 @@ La file d’attente de workflows Granite est utilisée pour les workflows non tr
 
 Le paramètre de connexion de chargement vers Scene7 synchronise les ressources AEM avec les serveurs Dynamic Media Classic.
 
-**Pour mettre à jour la connexion de chargement vers Scene7**
+Pour mettre à jour la connexion de chargement vers Scene7:
 
 1. Accédez à `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`.
 1. Dans le champ **[!UICONTROL Nombre de connexions]** et/ou **[!UICONTROL Délai d’expiration des tâches actives]**, modifiez le nombre en fonction de vos besoins.
@@ -538,7 +541,7 @@ Le paramètre de connexion de chargement vers Scene7 synchronise les ressources 
 
    ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-1. Appuyez sur **[!UICONTROL Enregistrer]**.
+1. Appuyez sur **[!UICONTROL Enregistrer.]**
 
 <!-- NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
 
