@@ -2,11 +2,11 @@
 title: Publication de ressources Dynamic Media
 description: Découvrez comment publier des ressources Dynamic Media.
 contentOwner: Rick Brough
-translation-type: ht
-source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
-workflow-type: ht
-source-wordcount: '436'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 9a4f8b4470a0850f4044f799b2af6cf836fd402d
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 93%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 Vous publiez vos ressources Dynamic Media en sélectionnant celles que vous avez déjà chargées et en appuyant sur **[!UICONTROL Publier]** ou **[!UICONTROL Publication rapide]**. Une fois vos ressources Dynamic Media publiées, vous pouvez les inclure dans une page web au moyen d’une URL ou d’une incorporation de code sur la page.
 
-Vous pouvez également publier immédiatement les ressources que vous chargez, sans intervention de l’utilisateur. Vous pouvez également publier ces ressources de manière sélective. Voir [Configuration de Dynamic Media](config-dm.md).
+Vous pouvez également publier immédiatement les ressources que vous chargez, sans intervention de l’utilisateur. Vous pouvez également publier ces ressources de manière sélective. Voir [Configuration de Dynamic Media](config-dm.md). Vous pouvez également publier des fichiers de manière sélective sur Contenu multimédia dynamique ou AEM, mutuellement exclusifs les uns des autres, à l’aide de Publication **** sélective au niveau du dossier. See [Working with Selective Publish in Dynamic Media.](/help/assets/dynamic-media/selective-publishing.md)
 
 En **[!UICONTROL mode Carte]**, une petite icône en forme de globe apparaît directement sous le nom d’une ressource et à gauche de la date et de l’heure pour indiquer qu’elle est publiée. En **[!UICONTROL mode Liste]**, une colonne **[!UICONTROL Publié]** indique les ressources qui sont publiées et celles qui ne le sont pas.
 
@@ -33,6 +33,7 @@ Voir aussi [Intégration de la visionneuse de vidéos ou d’images Dynamic Medi
 >
 >* Pour utiliser l’URL, les ressources doivent être publiées. Si les ressources ne sont pas publiées, la copie et le collage de l’URL ne fonctionnent pas dans un navigateur web.
 >* Les paramètres d’image prédéfinis et les paramètres de visionneuse prédéfinis doivent être activés et publiés pour une diffusion en direct.
+
 >
 
 
