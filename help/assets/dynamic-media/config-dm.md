@@ -2,7 +2,7 @@
 title: Configuration de Dynamic Media Cloud Service
 description: Informations sur la configuration de Dynamic Media dans Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 97b4d8bba29ddaea959b41c2690b8ff11860413d
+source-git-commit: ab9255dd28f1c20f1085810e63f0b56e30fa8c5a
 workflow-type: tm+mt
 source-wordcount: '5122'
 ht-degree: 97%
@@ -64,26 +64,35 @@ Pour configurer les services cloud Dynamic Media :
 
 1. Si la connexion est établie, vous pouvez définir les éléments suivants :
 
-   * **[!UICONTROL Société]** : nom du compte Dynamic Media. Il est possible que vous disposiez de plusieurs comptes Dynamic Media pour différentes sous-marques et divisions ou différents environnements d’évaluation/de production.
+* **[!UICONTROL Société]** : nom du compte Dynamic Media. Il est possible que vous disposiez de plusieurs comptes Dynamic Media pour différentes sous-marques et divisions ou différents environnements d’évaluation/de production.
 
-   * **[!UICONTROL Chemin d’accès au dossier racine de l’entreprise]**
+* **[!UICONTROL Chemin d’accès au dossier racine de l’entreprise]**
 
-   * **[!UICONTROL Publication de ressources]** : vous pouvez choisir parmi les trois options suivantes :
-      * **[!UICONTROL Immédiatement]** signifie que lorsque les ressources sont chargées, le système intègre les ressources et fournit instantanément l’URL/le code intégré. Aucune intervention n’est nécessaire de la part de l’utilisateur pour publier des ressources.
-      * **[!UICONTROL Lors de l’activation]** : signifie que vous devez publier explicitement la ressource avant qu’un lien URL/code intégré ne soit fourni.
-      * **[!UICONTROL Publication sélective]** signifie que les ressources sont publiées automatiquement pour un aperçu sécurisé uniquement et peuvent être publiées explicitement dans AEM sans publication dans DMS7 pour une diffusion dans le domaine public. À l’avenir, Adobe améliorera cette option pour publier des ressources vers AEM et vers Dynamic Media, qui sont mutuellement exclusifs. En d’autres termes, vous pouvez publier des ressources dans DMS7 afin d’utiliser des fonctionnalités telles que le recadrage intelligent ou les rendus dynamiques. Vous pouvez également publier des ressources exclusivement dans AEM pour un aperçu ; ces mêmes ressources ne sont pas publiées dans DMS7 pour une diffusion dans le domaine public.
-   * **[!UICONTROL Serveur d’aperçu sécurisé]** : permet de définir le chemin URL de votre serveur d’aperçu des rendus sécurisé. En d’autres termes, une fois les rendus générés, AEM peut accéder de manière sécurisée aux rendus Dynamic Media distants et en afficher un aperçu (aucune donnée binaire n’est renvoyée à l’instance AEM).
+* **[!UICONTROL Publication de ressources]** : vous pouvez choisir parmi les trois options suivantes :
+
+* **[!UICONTROL Immédiatement]** signifie que lorsque les ressources sont chargées, le système intègre les ressources et fournit instantanément l’URL/le code intégré. Aucune intervention n’est nécessaire de la part de l’utilisateur pour publier des ressources.
+
+* **[!UICONTROL Lors de l’activation]** : signifie que vous devez publier explicitement la ressource avant qu’un lien URL/code intégré ne soit fourni.
+
+* **[!UICONTROL Publication sélective]** signifie que les ressources sont publiées automatiquement pour un aperçu sécurisé uniquement et peuvent être publiées explicitement dans AEM sans publication dans DMS7 pour une diffusion dans le domaine public. À l’avenir, Adobe améliorera cette option pour publier des ressources vers AEM et vers Dynamic Media, qui sont mutuellement exclusifs. En d’autres termes, vous pouvez publier des ressources dans DMS7 afin d’utiliser des fonctionnalités telles que le recadrage intelligent ou les rendus dynamiques. Vous pouvez également publier des ressources exclusivement dans AEM pour un aperçu ; ces mêmes ressources ne sont pas publiées dans DMS7 pour une diffusion dans le domaine public.
+
+* **[!UICONTROL Serveur d’aperçu sécurisé]** : permet de définir le chemin URL de votre serveur d’aperçu des rendus sécurisé. En d’autres termes, une fois les rendus générés, AEM peut accéder de manière sécurisée aux rendus Dynamic Media distants et en afficher un aperçu (aucune donnée binaire n’est renvoyée à l’instance AEM).
 À moins que vous ayez pris des dispositions spéciales pour utiliser le serveur de votre propre société ou un serveur spécial, Adobe Systems vous conseille de conserver ce paramètre tel que spécifié.
 
-   * **[!UICONTROL Synchroniser tout le contenu]** : sélectionné par défaut. Désélectionnez cette option si vous souhaitez inclure ou exclure des ressources de la synchronisation avec Dynamic Media. La désélection de cette option vous permet de choisir l’un des deux modes de synchronisation Dynamic Media :
+* **[!UICONTROL Synchroniser tout le contenu]** : sélectionné par défaut. Désélectionnez cette option si vous souhaitez inclure ou exclure des ressources de la synchronisation avec Dynamic Media. La désélection de cette option vous permet de choisir l’un des deux modes de synchronisation Dynamic Media :
 
-   * **[!UICONTROL Mode de synchronisation Dynamic Media]**
-      * **[!UICONTROL Activé par défaut]** : la configuration s’applique par défaut à tous les dossiers, sauf si vous marquez un dossier spécifique à exclure. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
-      * **[!UICONTROL Désactivé par défaut]** : la configuration n’est appliquée à aucun dossier tant que vous ne marquez pas explicitement un dossier sélectionné pour synchronisation avec Dynamic Media.
+* **[!UICONTROL Mode de synchronisation Dynamic Media]**
+
+* **[!UICONTROL Activé par défaut]** : la configuration s’applique par défaut à tous les dossiers, sauf si vous marquez un dossier spécifique à exclure. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+
+* **[!UICONTROL Désactivé par défaut]** : la configuration n’est appliquée à aucun dossier tant que vous ne marquez pas explicitement un dossier sélectionné pour synchronisation avec Dynamic Media.
 Pour marquer un dossier sélectionné pour synchronisation avec Dynamic Media, ouvrez la page Propriétés de votre dossier de ressources. Appuyez sur l’onglet **[!UICONTROL Détails]**, puis dans la liste déroulante **[!UICONTROL Mode de synchronisation Dynamic Media]**, choisissez l’une des trois options suivantes, enfin appuyez sur **[!UICONTROL Enregistrer]**.
-         * **[!UICONTROL Hérité]** : aucune valeur de synchronisation explicite sur le dossier ; au lieu de cela, le dossier hérite de la valeur de synchronisation de l’un de ses dossiers ancêtres ou du mode par défaut dans la configuration cloud. Le statut détaillé de l’héritage s’affiche par le biais d’une info-bulle.
-         * **[!UICONTROL Activé pour les sous-dossiers]** : incluez tous les éléments de cette sous-arborescence dans la synchronisation avec Dynamic Media. Les paramètres propres au dossier remplacent le mode par défaut dans la configuration du cloud.
-         * **[!UICONTROL Désactivé pour les sous-dossiers]** : excluez tous les éléments de cette sous-arborescence de la synchronisation avec Dynamic Media.
+
+* **[!UICONTROL Hérité]** : aucune valeur de synchronisation explicite sur le dossier ; au lieu de cela, le dossier hérite de la valeur de synchronisation de l’un de ses dossiers ancêtres ou du mode par défaut dans la configuration cloud. Le statut détaillé de l’héritage s’affiche par le biais d’une info-bulle.
+
+* **[!UICONTROL Activé pour les sous-dossiers]** : incluez tous les éléments de cette sous-arborescence dans la synchronisation avec Dynamic Media. Les paramètres propres au dossier remplacent le mode par défaut dans la configuration du cloud.
+
+* **[!UICONTROL Désactivé pour les sous-dossiers]** : excluez tous les éléments de cette sous-arborescence de la synchronisation avec Dynamic Media.
 
    >[!NOTE]
    >
@@ -176,10 +185,10 @@ Pour configurer les propriétés de couleur par défaut afin d’activer la corr
 
    Vous pouvez définir les propriétés de correction des couleurs suivantes :
 
-   * **[!UICONTROL Espace colorimétrique CMJN par défaut]** : nom du profil de couleurs CMJN par défaut..
-   * **[!UICONTROL Espace]** colorimétrique par défaut à l&#39;échelle des gris - Nom du profil de couleurs gris par défaut.
-   * **[!UICONTROL Espace]** colorimétrique par défaut RVB - Nom du profil colorimétrique RVB par défaut.
-   * **[!UICONTROL Intention de rendu de conversion de couleurs]** : indique l’intention de rendu. Les valeurs possibles sont les suivantes : **[!UICONTROL perception]**, **[!UICONTROL colorimétrie relative]**, **[!UICONTROL saturation]** et **[!UICONTROL colorimétrie absolue.]** adobe recommande **[!UICONTROL relative]** comme valeur par défaut.
+   **[!UICONTROL Espace colorimétrique CMJN par défaut]** : nom du profil de couleurs CMJN par défaut..
+   **[!UICONTROL Espace]** colorimétrique par défaut à l&#39;échelle des gris - Nom du profil de couleurs gris par défaut.
+   **[!UICONTROL Espace]** colorimétrique par défaut RVB - Nom du profil colorimétrique RVB par défaut.
+   **[!UICONTROL Intention de rendu de conversion de couleurs]** : indique l’intention de rendu. Les valeurs possibles sont les suivantes : **[!UICONTROL perception]**, **[!UICONTROL colorimétrie relative]**, **[!UICONTROL saturation]** et **[!UICONTROL colorimétrie absolue.]** adobe recommande **[!UICONTROL relative]** comme valeur par défaut.
 
 1. Appuyez sur **[!UICONTROL Enregistrer]**.
 
@@ -190,7 +199,7 @@ Cela aura les effets suivants :
 * Active la correction des couleurs pour les images RVB et CMJN.
 * Les images RVB qui n’ont pas de profil colorimétrique seront considérées comme se trouvant dans l’espace colorimétrique *sRVB*.
 * Les images CMJN qui n’ont pas de profil colorimétrique seront considérées comme se trouvant dans l’espace colorimétrique *WebCoated*.
-* Les rendus dynamiques qui renvoient une sortie RVB, la renverront dans l’espace colorimétrique *sRVB*.
+* Dynamic renditions that return RGB output, will return it in the *sRGB* color space.
 * Les rendus dynamiques qui renvoient une sortie CMJN, la renverront dans l’espace colorimétrique *WebCoated*.
 
 #### Configuration du traitement des ressources {#configuring-asset-processing}
