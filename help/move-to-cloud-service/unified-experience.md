@@ -2,9 +2,9 @@
 title: Expérience unifiée pour les outils de refactorisation du code
 description: Expérience unifiée pour les outils de refactorisation du code
 translation-type: tm+mt
-source-git-commit: d6fa0d8bb7d5e251e51a3e4ffd93d6aaa1c7980c
+source-git-commit: 5d2b14c827603297a59cba7180fc1a68de0c841a
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '264'
 ht-degree: 1%
 
 ---
@@ -46,4 +46,4 @@ Le `aio-cli-plugin-aem-cloud-service-migration` module externe se compose de deu
 Reportez-vous à la ressource [Git : aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) pour en savoir plus sur l’utilisation et comment vous pouvez contribuer à ce code de module externe ouvert dans GitHub.
 
 >[!NOTE]
->Actuellement, seul le convertisseur de répartiteur est intégré au module externe.
+>Actuellement, le module externe est intégré à AEM Dispatcher Converter et Repository Modernizer.
