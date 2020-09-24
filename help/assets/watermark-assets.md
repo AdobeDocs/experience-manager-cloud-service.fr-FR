@@ -3,7 +3,7 @@ title: Mettre vos fichiers en filigrane
 description: Ajout d’un filigrane à vos ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a9ebb97541b44140d0155bcfa5d0228c79dbffec
+source-git-commit: f1fcddf196a1a2bfa2629dbd6a8fe0ac057a3d07
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 2%
@@ -30,7 +30,7 @@ Pour configurer le Experience Manager pour les ressources de filigrane, procéde
 
 1. [Créez un profil](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) de traitement pour exploiter les microservices de ressources afin d’appliquer le filigrane.
 
-![Profil de traitement des ressources pour créer un filigrane](assets/watermark-processing-profile.png)
+   ![Profil de traitement des ressources pour créer un filigrane](assets/watermark-processing-profile.png)
 
 1. [Appliquez les profils de traitement à un dossier](/help/assets/asset-microservices-configure-and-use.md#use-profiles) pour créer des fichiers en filigrane.
 
