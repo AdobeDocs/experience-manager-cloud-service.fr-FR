@@ -1,23 +1,25 @@
 ---
-title: Adobe Experience Manager Assets as a Cloud Service
+title: Guide des ressources en tant que Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation d’Adobe Experience Manager Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: d9237a0121a346fc16e67e52300c3a5a263e5af3
+source-git-commit: 181e1f1526726154232f25eac95db05e290756d6
 workflow-type: tm+mt
 source-wordcount: '347'
-ht-degree: 90%
+ht-degree: 85%
 
 ---
 
 
-# Adobe Experience Manager Assets as a Cloud Service {#aem-assets-guide}
+# Guide des ressources en tant que Cloud Service {#aem-assets-guide}
 
 Vous trouverez ci-dessous les ressources d’aide autonome d’Experience Manager Assets as a Cloud Service.
 
 ## Articles Assets clés {#key-articles}
 
-* [Présentation d’Assets as a Cloud Service](overview.md)
+* [Présentation et nouveautés](overview.md)
+* [Modifications notables](/help/assets/assets-cloud-changes.md)
 * [Architecture d’Assets as a Cloud Service](architecture.md)
+* [Aperçu des microservices de ressources](/help/assets/asset-microservices-overview.md)
 
 ## Guides d’Experience Manager {#aem-guides}
 
