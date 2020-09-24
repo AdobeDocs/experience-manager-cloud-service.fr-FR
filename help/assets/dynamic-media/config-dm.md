@@ -2,7 +2,7 @@
 title: Configuration de Dynamic Media Cloud Service
 description: Informations sur la configuration de Dynamic Media dans Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 4b967e8b738171f0997df7cd433e1d7a418751e8
+source-git-commit: 500d8795176fa21f79a8d67954fc9352b9a349f8
 workflow-type: tm+mt
 source-wordcount: '5124'
 ht-degree: 98%
@@ -155,7 +155,7 @@ L’écran Image Server permet de définir les paramètres par défaut pour la d
 
 #### Configuration des paramètres généraux de l’application {#configuring-application-general-settings}
 
-Pour ouvrir la page Paramètres généraux de l’application, dans la barre de navigation globale de Dynamic Media Classic, cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**.
+Pour ouvrir la page Paramètres généraux de l’application, dans la barre de navigation globale de Dynamic Media Classic, cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux.]**
 
 * **[!UICONTROL Serveurs]** : au moment de la mise en service du compte, Dynamic Media fournit automatiquement les serveurs attribués à votre entreprise. Ces serveurs sont utilisés pour créer des chaînes URL pour votre site web et vos applications. Ces appels d’URL sont spécifiques à votre compte. Ne modifiez le nom d’aucun des serveurs à moins que le support AEM ne vous le demande explicitement.
 * **[!UICONTROL Écraser les images]** : Dynamic Media ne permet pas que deux fichiers portent le même nom. L’identifiant de l’URL de chaque élément (le nom de fichier sans l’extension) doit être unique. Ces options spécifient la manière dont les ressources de remplacement sont chargées : elles peuvent remplacer l’original ou devenir un doublon. Les ressources en double sont renommées en ajoutant « -1 » (par exemple, chaise.tif devient chaise-1.tif). Ces options affectent les ressources chargées dans un dossier autre que celui d’origine ou les ressources dont l’extension est différente de celle du fichier d’origine (telle que JPG, TIF ou PNG).
@@ -232,7 +232,7 @@ Voir la section [Chargement des ressources](/help/assets/add-assets.md).
 1. Utilisez l’une des méthodes suivantes :
 
    * Répétez les étapes 3 et 4 pour modifier d’autres types MIME.
-   * Dans la barre de menus de la page CRXDE Lite, cliquez sur **[!UICONTROL Tout enregistrer]**.
+   * Dans la barre de menus de la page CRXDE Lite, cliquez sur **[!UICONTROL Tout enregistrer.]**
 
 1. Dans le coin supérieur gauche de la page, appuyez sur **[!UICONTROL CRXDE Lite]** pour revenir dans AEM.
 
@@ -242,7 +242,7 @@ Vous pouvez ajouter des types MIME personnalisés pour les formats non pris en c
 
 **Pour ajouter des types MIME personnalisés pour des formats non pris en charge**
 
-1. Dans AEM, appuyez sur **[!UICONTROL Outils > Opérations > Console web]**.
+1. Dans AEM, appuyez sur **[!UICONTROL Outils > Opérations > Console web.]**
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
