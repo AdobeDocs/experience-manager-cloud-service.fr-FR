@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 2020.9.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[ !DNL Adobe Experience Manager] en tant que notes de mise à jour Cloud Service pour la version 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: 615adbe6597f05a1cc2150a265f217d21026be8a
+source-git-commit: f39b03455fc03104932952b892b88403d0c9eca7
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '623'
 ht-degree: 15%
 
 ---
@@ -28,7 +28,7 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* Le filigrane d’une image PNG est pris en charge pour les rendus générés avec les microservices de ressources. Il peut être configuré en tant que Profil de traitement. &lt;!— À déterminer : Lien vers l’article d’aide.>
+* Le filigrane d’une image PNG est pris en charge pour les rendus générés avec les microservices de ressources. Il peut être configuré en tant que Profil de traitement.
 
 * Améliorations des [!DNL Dynamic Media]
 
