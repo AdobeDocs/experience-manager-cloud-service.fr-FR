@@ -2,9 +2,9 @@
 title: SPA et rendu côté serveur
 description: L’utilisation du rendu côté serveur dans votre application d’une seule page peut accélérer le chargement initial de la page, puis transmettre le rendu au client.
 translation-type: tm+mt
-source-git-commit: c2c338061d72ae6c5054d18308a2ea1038eaea39
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Les sections suivantes décrivent comment Adobe I/O Runtime peut être utilisé 
 >
 >adobe recommande une instance Adobe I/O Runtime distincte pour chaque environnement AEM (auteur, publication, étape, etc.).
 
-## Configuration du rendu à distance {#remote-renderer-configuration}
+## Configuration du rendu à distance {#remote-content-renderer-configuration}
 
 aem doit savoir où le contenu rendu à distance peut être récupéré. Quel que soit [le modèle que vous choisissiez de mettre en oeuvre pour SSR,](#adobe-i-o-runtime) vous devrez indiquer pour AEM comment accéder à ce service de rendu à distance.
 
@@ -67,8 +67,6 @@ Les champs suivants sont disponibles pour la configuration :
 >[!NOTE]
 >
 >Que vous choisissiez de mettre en oeuvre le flux [de communication](#aem-driven-communication-flow) AEM ou le flux de communication [Adobe I/O Runtime,](#adobe-i-o-runtime-driven-communication-flow) vous devez définir une configuration de rendu de contenu à distance.
->
->Cette configuration doit également être définie si vous choisissez d’ [utiliser un serveur Node.js personnalisé.](#using-node-js)
 
 >[!NOTE]
 >
@@ -76,7 +74,7 @@ Les champs suivants sont disponibles pour la configuration :
 
 ## Flux de communication AEM {#aem-driven-communication-flow}
 
-Lors de l’utilisation de la technologie SSR, le processus [d’interaction des](introduction.md#workflow) composants des applications monopages en AEM inclut une phase au cours de laquelle le contenu initial de l’application est généré sur Adobe I/O Runtime.
+Lors de l’utilisation de la technologie SSR, le processus [d’interaction des](introduction.md#interaction-with-the-spa-editor) composants des applications monopages en AEM inclut une phase au cours de laquelle le contenu initial de l’application est généré sur Adobe I/O Runtime.
 
 1. Le navigateur demande le contenu de la SSR à AEM.
 1. aem publie le modèle à Adobe I/O Runtime.
@@ -164,7 +162,7 @@ Il `RemoteContentRendererRequestHandlerServlet` peut être utilisé pour défini
 
 Pour ajouter un gestionnaire de requêtes personnalisé, implémentez l’ `RemoteContentRendererRequestHandler` interface. Veillez à définir la propriété `Constants.SERVICE_RANKING` du composant sur un nombre entier supérieur à 100, qui correspond au classement du `DefaultRemoteContentRendererRequestHandlerImpl`.
 
-```
+```javascript
 @Component(immediate = true,
         service = RemoteContentRendererRequestHandler.class,
         property={
@@ -188,7 +186,7 @@ Pour qu’une servlet récupère et renvoie du contenu qui peut être injecté d
 
 En général, le modèle HTML d’un composant de page est le principal destinataire d’une telle fonctionnalité.
 
-```
+```html
 <sly data-sly-resource="${resource @ resourceType='cq/remote/content/renderer/request/handler'}" />
 ```
 
