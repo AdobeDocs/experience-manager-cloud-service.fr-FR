@@ -2,7 +2,7 @@
 title: Présentation et présentation des applications monopages
 description: Cet article présente les concepts d’une application d’une seule page et décrit comment elle se rapporte à l’AEM sous-jacent de l’éditeur d’une seule page.
 translation-type: tm+mt
-source-git-commit: 78ce5113d97b0fa2e0172598d374c924f4306395
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '1930'
 ht-degree: 3%
@@ -151,7 +151,7 @@ Ainsi, si la page n’est pas rechargée lors de la navigation dans les pages en
 
 La section suivante, [Chargement d’une application](#loading-a-spa-application)d’application d’application d’une seule page, approfondit la procédure de chargement de l’application d’une seule page et explique comment le contenu peut être chargé de façon synchrone et asynchrone.
 
-### Chargement d’une application d’application d’une seule page {#loading-an-spa-application}
+### Chargement d’une application d’application d’une seule page {#loading-a-spa-application}
 
 1. Si ce n’est pas déjà fait, chargez l’application de Journal We.Retail sur le serveur de publication ou à l’aide de la **Vue d’options Publié** dans le menu Informations **sur la** page de l’éditeur de page.
 
