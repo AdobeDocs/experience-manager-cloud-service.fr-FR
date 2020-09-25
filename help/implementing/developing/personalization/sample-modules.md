@@ -2,9 +2,9 @@
 title: Exemples de types de module d’IU ContextHub
 description: ContextHub fournit plusieurs exemples de module d’IU que vous pouvez utiliser dans vos solutions
 translation-type: tm+mt
-source-git-commit: 2a589ff554a5cced3d7ad45d981697debb73992f
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1126'
 ht-degree: 66%
 
 ---
@@ -95,7 +95,7 @@ Les instances du module d’IU contextthub.browserinfo ne requièrent pas de val
 
 ## Type de module d’IU contexthub.datetime {#contexthub-datetime-ui-module-type}
 
-The `contexthub.datetime` UI module displays the date and time that is stored in a store named datetime that is based on the [contexthub.datetime](sample-stores.md#contexthub-datetime-sample-store-candidate) store candidate.
+The `contexthub.datetime` UI module displays the date and time that is stored in a store named datetime that is based on the `contexthub.datetime` store candidate.
 
 ![module contexthub.datetime](assets/datetime-module.png)
 
@@ -187,7 +187,7 @@ Instances of the `contexthub.screen-orientation` UI module do not require a valu
 
 ## Type de module d’IU contexttub.tagcloud {#contexthub-tagcloud-ui-module-type}
 
-The `contexthub.tagcloud` UI module displays information about tags. Dans la barre d’outils, le module d’IU affiche le nombre de balises. La fenêtre contextuelle révèle un nuage de balises et une zone de texte pour l’ajout de nouvelles balises. Le module obtient des informations à partir d’un magasin ContextHub nommé tagcloud et basé sur le magasin candidat [contexthub.tagcloud](sample-stores.md#contexthub-tagcloud-sample-data-store).
+The `contexthub.tagcloud` UI module displays information about tags. Dans la barre d’outils, le module d’IU affiche le nombre de balises. La fenêtre contextuelle révèle un nuage de balises et une zone de texte pour l’ajout de nouvelles balises. Le module obtient des informations à partir d’un magasin ContextHub nommé tagcloud et basé sur le magasin candidat `contexthub.tagcloud`.
 
 ![module contexthub.tagcloud](assets/tagcloud-module.png)
 
