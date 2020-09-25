@@ -2,7 +2,7 @@
 title: Plan directeur d’applications sur une seule page (SPA)
 description: Ce document décrit le contrat général et indépendant du cadre que tout cadre d’application d’une seule page doit respecter pour mettre en oeuvre des composants modifiables d’une application d’une seule page dans AEM.
 translation-type: tm+mt
-source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 10%
@@ -164,7 +164,7 @@ Le composant SPA est mappé à un conteneur graphique tel que la grille réactiv
 
 Par exemple :
 
-```
+```html
 <div data-cq-data-path={"path/to/the/responsivegrid/*"} className="new section aem-Grid-newComponent"/>
 ```
 
@@ -183,7 +183,7 @@ Par exemple :
 
 La [`Component Mapping`](#componentmapping) bibliothèque sous-jacente et sa `MapTo` fonction peuvent être encapsulées et étendues afin de fournir les fonctionnalités relatives à la configuration d&#39;édition fournie avec la classe de composants actuelle.
 
-```
+```javascript
 const EditConfig = {
 
     emptyLabel: 'My Component',
@@ -205,7 +205,7 @@ MapTo('component/resource/path')(MyComponent, EditConfig);
 
 Dans l’implémentation ci-dessus, le composant de projet est étendu avec la fonctionnalité de vide avant d’être réellement enregistré dans le magasin de mappage [des](#componentmapping) composants. Pour ce faire, encapsulez et étendez la [`ComponentMapping`](#componentmapping) bibliothèque afin d’introduire la prise en charge de l’objet `EditConfig` de configuration :
 
-```
+```javascript
 /**
  * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data will be decorating the associated component
  *
@@ -245,9 +245,9 @@ Le fragment suivant illustre la représentation HTML type d’une structure de c
 * L’élément de grille réactive contient les noms de classe, précédés de `aem-Grid--`
 * The responsive column element carries class names prefixed with `aem-GridColumn--`
 * Une grille réactive qui est également la colonne d’une grille parent est encapsulée, de sorte que les deux préfixes précédents n’apparaissent pas sur le même élément.
-* Elements corresponding to editable resources carry a `data-cq-data-path` property. Consultez la section [Contrat avec l&#39;éditeur](#contract-wtih-the-page-editor) de page de ce document.
+* Elements corresponding to editable resources carry a `data-cq-data-path` property. Consultez la section [Contrat avec l&#39;éditeur](#contract-with-the-page-editor) de page de ce document.
 
-```
+```javascript
 <div data-cq-data-path="/content/page">
     <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
         <div class="aem-container aem-GridColumn aem-GridColumn--default--12" data-cq-data-path="/content/page/jcr:content/root/responsivegrid">
