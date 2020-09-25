@@ -2,7 +2,7 @@
 title: ContextHub
 description: ContextHub est un framework qui permet de stocker, de manipuler et de présenter des données de contexte
 translation-type: tm+mt
-source-git-commit: 75d6b51c0148a21ca401d98a5eaf644fc6b0e8cc
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 65%
@@ -43,8 +43,8 @@ Chaque magasin ContextHub est une instance d’un type de magasin prédéfini :
 * ContextHub fournit plusieurs [exemples de types de magasin](sample-stores.md).
 * Utilisez les consoles AEM pour [créer des magasins](configuring-contexthub.md#creating-a-contexthub-store).
 * Developers can [create custom store types](extending-contexthub.md#creating-custom-store-candidates).
-* Les développeurs peuvent [accéder aux données du magasin](configuring-contexthub.md#interacting-with-contexthub-stores) via Javascript.
+* Les développeurs peuvent [accéder aux données du magasin](adding-contexthub.md#interacting-with-contexthub-stores) via Javascript.
 
 ## Segmentation {#segmentation}
 
-ContextHub propose un moteur de segmentation qui gère les segments et détermine les segments qui sont résolus pour le contexte actuel. Plusieurs segments sont définis. Vous pouvez utiliser l’API Javascript pour [déterminer les segments résolus](configuring-contexthub.md#determining-resolved-contexthub-segments).
+ContextHub propose un moteur de segmentation qui gère les segments et détermine les segments qui sont résolus pour le contexte actuel. Plusieurs segments sont définis. Vous pouvez utiliser l’API Javascript pour [déterminer les segments résolus](adding-contexthub.md#determining-resolved-contexthub-segments).
