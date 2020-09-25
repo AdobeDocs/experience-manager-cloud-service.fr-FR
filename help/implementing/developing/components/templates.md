@@ -2,9 +2,9 @@
 title: Modèles de page
 description: Les modèles de page sont utilisés lors de la création d'une page qui sera utilisée comme base pour la nouvelle page.
 translation-type: tm+mt
-source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '3244'
+source-wordcount: '3221'
 ht-degree: 63%
 
 ---
@@ -292,7 +292,7 @@ Lors de la création d’un modèle, vous devez spécifier un type :
 
    * Le type de ressource du composant de page.
    * La stratégie du nœud racine, laquelle définit les composants autorisés dans l’éditeur de modèles.
-   * Il est recommandé de définir les points d’arrêt pour la grille réactive et la configuration de l’émulateur mobile au niveau du type d’émulateur. This is optional, because the configuration could also be defined on the individual template (see the section [Template Type and Mobile Device Groups](#p-template-type-and-mobile-device-groups-br-p)).
+   * Il est recommandé de définir les points d’arrêt pour la grille réactive et la configuration de l’émulateur mobile au niveau du type d’émulateur.
 
 * AEM fournit une petite sélection de types de modèle prêts à l’emploi tels que Page HTML5 et Page de formulaire adaptatif.
 
@@ -476,7 +476,7 @@ Les stratégies de page vous permettent de définir la [stratégie de contenu](#
 
    Avant de pouvoir être utilisé, un modèle doit être activé en effectuant l’une des opérations suivantes :
 
-   * [Activer le modèle](/help/sites-cloud/authoring/features/templates.md#enablingatemplateauthor) à partir de la console **Modèles**.
+   * [Activer le modèle](/help/sites-cloud/authoring/features/templates.md) à partir de la console **Modèles**.
 
    * Setting the status property on the `jcr:content` node.
 
