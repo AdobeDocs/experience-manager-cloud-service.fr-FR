@@ -2,10 +2,10 @@
 title: Ce qui est différent et ce qui est nouveau - Adobe Experience Manager en tant que Cloud Service
 description: 'Ce qui est différent et ce qui est nouveau - Adobe Experience Manager (AEM) en tant que Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 338f4b8d291bd0dca1c2f0de7bd6f721156d8df9
+source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
 workflow-type: tm+mt
-source-wordcount: '2154'
-ht-degree: 15%
+source-wordcount: '1899'
+ht-degree: 11%
 
 ---
 
@@ -69,14 +69,12 @@ Cela permet une mise à l’échelle automatique pour divers schémas d’utilis
 ## Mises à jour {#upgrades}
 
 >[!NOTE]
->
->Pour plus d’informations, voir l’introduction [](/help/implementing/deploying/overview.md)du déploiement.
+>Pour plus d&#39;informations, reportez-vous à l&#39; [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md).
 
-aem en tant que Cloud Service utilise maintenant l&#39;intégration continue et la Diffusion continue (CI/CD) pour s&#39;assurer que vos projets se trouvent sur la version AEM la plus récente. Cela signifie que toutes les opérations de mise à niveau sont entièrement automatisées et ne nécessitent donc aucune interruption de service pour les utilisateurs.
+aem en tant que Cloud Service utilise maintenant l&#39;intégration continue et la Diffusion continue (CI/CD) pour s&#39;assurer que vos projets se trouvent sur la version AEM la plus récente.
 
->[!NOTE]
->Si la mise à jour de l’environnement de production échoue, Cloud Manager annule automatiquement l’environnement d’évaluation. Cette opération est effectuée automatiquement pour s’assurer qu’une fois la mise à jour terminée, les environnements d’étape et de production se trouvent sur la même version AEM.
-
+Cela signifie que toutes les opérations de mise à niveau sont entièrement automatisées. Par conséquent, il n’est pas nécessaire d’interrompre le service pour les utilisateurs.
+L’Adobe prend en charge de façon proactive la mise à jour de toutes les instances opérationnelles du service vers la dernière version de la base de code AEM :
 aem mises à jour de version sont de deux types :
 
 * **Mises à jour Push**
@@ -93,19 +91,8 @@ aem mises à jour de version sont de deux types :
 
    * Publié selon un calendrier mensuel prévisible.
 
-aem mises à jour passent par un processus de validation de produit intense et entièrement automatisé, impliquant plusieurs étapes permettant de ne pas perturber le service des systèmes en production. Les contrôles d’intégrité servent à surveiller l’état de l’application. Si ces vérifications échouent lors d’un AEM en tant que mise à jour Cloud Service, la version ne sera pas publiée et l’Adobe examinera pourquoi la mise à jour a provoqué ce comportement inattendu.
-
-[Les tests de produit et les tests](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) de fonctionnement du client qui empêchent les mises à niveau de produit et les poussées de code client d’interrompre la production sont également validés lors d’une mise à jour de AEM version.
-
->[REMARQUE]
->Si vous avez envoyé le code personnalisé pour évaluation, puis que vous l’avez rejeté, la prochaine mise à jour d’AEM supprimera ces modifications afin de refléter la balise git de la dernière version de production réussie du client.
-
-
-### Magasin de nœuds composites {#composite-node-structure}
-
-Comme mentionné plus haut, les mises à jour n’entraînent dans la plupart des cas aucune interruption, y compris pour l’auteur, qui est une grappe de nœuds.
-
-Rolling updates are possible due to the *composite node store* feature in Oak. Cette fonctionnalité permet à AEM de faire référence à plusieurs référentiels simultanément. In a rolling deployment, the new Green AEM version contains its own `/libs`, that is, the TarMK based immutable repository), distinct from the older Blue AEM version, although both reference a shared DocumentMK based mutable repository that contains areas like `/content` , `/conf` , `/etc` and others. Comme les versions bleue et verte possèdent leur propre version de `/libs`, elles peuvent toutes deux être actives pendant la mise à jour en continu, se partageant le trafic jusqu’à ce que la version verte remplace complètement la bleue.
+>[!NOTE]
+>Pour plus d’informations, voir Architecture [de](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/core-concepts/architecture.html#deployment-architecture) déploiement .
 
 ## Cloud Manager {#cloud-manager}
 
