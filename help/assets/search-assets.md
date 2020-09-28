@@ -1,12 +1,12 @@
 ---
-title: Recherche d’images et de ressources numériques dans AEM
+title: Recherche de ressources numériques
 description: Découvrez comment rechercher les ressources souhaitées dans AEM à l’aide du panneau Filtres et comment utiliser les ressources affichées dans la recherche.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7673ff492caac0b06e568ffecb43da2f5c6becbc
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '4525'
+source-wordcount: '4521'
 ht-degree: 97%
 
 ---
