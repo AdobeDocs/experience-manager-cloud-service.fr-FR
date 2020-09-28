@@ -1,11 +1,11 @@
 ---
-title: Configuration et utilisation des microservices de ressources pour le traitement des ressources.
+title: Configuration et utilisation des microservices de ressources
 description: Configurez et utilisez les microservices de ressources natifs du cloud pour traiter les ressources à l’échelle.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ee3dfaee39f05dbcc37ae77789431af115b1c115
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2527'
 ht-degree: 45%
 
 ---
@@ -85,7 +85,7 @@ Pour créer un profil de traitement standard, procédez comme suit :
 
    ![processing-profiles-adding](assets/processing-profiles-image.png)
 
-1. Cliquez sur **[!UICONTROL Enregistrer]**.
+1. Cliquez sur **[!UICONTROL Save]**.
 
 <!-- TBD: Update the video link when a new video is available from Tech Marketing.
 
@@ -132,7 +132,7 @@ Pour créer un profil personnalisé, procédez comme suit :
    * ajoutez Paramètres du service pour [transmettre des informations ou des paramètres supplémentaires à l’application](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)personnalisée.
    * Types MIME inclus et exclus pour limiter le traitement à quelques formats de fichier spécifiques.
 
-   Cliquez sur **[!UICONTROL Enregistrer]**.
+   Cliquez sur **[!UICONTROL Save]**.
 
 Les applications personnalisées sont des applications [Project Firefly](https://github.com/AdobeDocs/project-firefly) sans en-tête. L’application personnalisée récupère tous les fichiers fournis s’ils sont configurés avec un profil de traitement. L’application doit filtrer les fichiers.
 
