@@ -2,10 +2,10 @@
 title: Ce qui est différent et ce qui est nouveau - Adobe Experience Manager en tant que Cloud Service
 description: 'Ce qui est différent et ce qui est nouveau - Adobe Experience Manager (AEM) en tant que Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 9882c95972675ee1e0af5de30119d764638f53f3
+source-git-commit: 338f4b8d291bd0dca1c2f0de7bd6f721156d8df9
 workflow-type: tm+mt
-source-wordcount: '1856'
-ht-degree: 11%
+source-wordcount: '2154'
+ht-degree: 15%
 
 ---
 
@@ -66,31 +66,46 @@ Cela permet une mise à l’échelle automatique pour divers schémas d’utilis
 ![Mise à l’échelle automatique pour divers schémas d’utilisation](assets/introduction-04.png "Mise à l’échelle automatique pour divers schémas d’utilisation")
 
 
-## Mises à niveau {#upgrades}
+## Mises à jour {#upgrades}
 
 >[!NOTE]
 >
 >Pour plus d’informations, voir l’introduction [](/help/implementing/deploying/overview.md)du déploiement.
 
-aem en tant que Cloud Service utilise maintenant l&#39;intégration continue et la Diffusion continue (CI/CD) pour s&#39;assurer que vos projets sont entièrement à jour. Cela signifie que toutes les opérations de mise à niveau sont entièrement automatisées. Par conséquent, il n’est pas nécessaire d’interrompre le service pour les utilisateurs.
-
-L’Adobe prend en charge de façon proactive la mise à jour de toutes les instances opérationnelles du service vers la dernière version de la base de code AEM :
-
-* Correctifs :
-
-   * Peut être publié quotidiennement.
-
-   * Les instances sont fréquemment mises à jour avec les derniers correctifs de bogues. Les modifications étant appliquées régulièrement, l’impact est incrémentiel, ce qui réduit l’impact sur votre service.
-
-   * La plupart des mises à jour sont effectuées pour des raisons de maintenance et de sécurité.
-
-* Nouvelles fonctionnalités:
-
-   * Sera publié selon un calendrier mensuel prévisible.
+aem en tant que Cloud Service utilise maintenant l&#39;intégration continue et la Diffusion continue (CI/CD) pour s&#39;assurer que vos projets se trouvent sur la version AEM la plus récente. Cela signifie que toutes les opérations de mise à niveau sont entièrement automatisées et ne nécessitent donc aucune interruption de service pour les utilisateurs.
 
 >[!NOTE]
->
->Pour plus d’informations, voir Architecture [de](/help/core-concepts/architecture.md#deployment-architecture)déploiement.
+>Si la mise à jour de l’environnement de production échoue, Cloud Manager annule automatiquement l’environnement d’évaluation. Cette opération est effectuée automatiquement pour s’assurer qu’une fois la mise à jour terminée, les environnements d’étape et de production se trouvent sur la même version AEM.
+
+aem mises à jour de version sont de deux types :
+
+* **Mises à jour Push**
+
+   * Peut être publié quotidiennement.
+   * Principalement la maintenance, y compris les derniers correctifs de bogues et les mises à jour de sécurité.
+
+   Les modifications étant appliquées régulièrement, l’impact est incrémentiel, ce qui réduit l’impact sur votre service.
+
+>[!NOTE]
+>Pour en savoir plus sur les mises à jour AEM Push, consultez le livre blanc sur [Adobe Experience Manager en tant que modèle de Diffusion continue Cloud Service](https://fieldreadiness-adobe.highspot.com/items/5ea322e1c714336c23b32599#2)
+
+* **Nouvelles fonctionnalités mises à jour**
+
+   * Publié selon un calendrier mensuel prévisible.
+
+aem mises à jour passent par un processus de validation de produit intense et entièrement automatisé, impliquant plusieurs étapes permettant de ne pas perturber le service des systèmes en production. Les contrôles d’intégrité servent à surveiller l’état de l’application. Si ces vérifications échouent lors d’un AEM en tant que mise à jour Cloud Service, la version ne sera pas publiée et l’Adobe examinera pourquoi la mise à jour a provoqué ce comportement inattendu.
+
+[Les tests de produit et les tests](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) de fonctionnement du client qui empêchent les mises à niveau de produit et les poussées de code client d’interrompre la production sont également validés lors d’une mise à jour de AEM version.
+
+>[REMARQUE]
+>Si vous avez envoyé le code personnalisé pour évaluation, puis que vous l’avez rejeté, la prochaine mise à jour d’AEM supprimera ces modifications afin de refléter la balise git de la dernière version de production réussie du client.
+
+
+### Magasin de nœuds composites {#composite-node-structure}
+
+Comme mentionné plus haut, les mises à jour n’entraînent dans la plupart des cas aucune interruption, y compris pour l’auteur, qui est une grappe de nœuds.
+
+Rolling updates are possible due to the *composite node store* feature in Oak. Cette fonctionnalité permet à AEM de faire référence à plusieurs référentiels simultanément. In a rolling deployment, the new Green AEM version contains its own `/libs`, that is, the TarMK based immutable repository), distinct from the older Blue AEM version, although both reference a shared DocumentMK based mutable repository that contains areas like `/content` , `/conf` , `/etc` and others. Comme les versions bleue et verte possèdent leur propre version de `/libs`, elles peuvent toutes deux être actives pendant la mise à jour en continu, se partageant le trafic jusqu’à ce que la version verte remplace complètement la bleue.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -263,7 +278,7 @@ adobe experience manager sites en tant que Cloud Service vous permet de fournir 
 
 Pour plus d&#39;informations, reportez-vous à l&#39;aperçu des [modifications apportées aux sites](/help/sites-cloud/sites-cloud-changes.md).
 
-## AEM Assets {#aem-assets}
+## AEM Assets {#aem-assets}
 
 Adobe Experience Manager Assets en tant que Cloud Service offre une solution SaaS native de cloud pour les entreprises, qui leur permet non seulement d’exécuter rapidement et efficacement leurs opérations de gestion des ressources numériques et de médias dynamiques, mais également d’utiliser des fonctionnalités intelligentes de prochaine génération, telles que l’IA/ML, à partir d’un système toujours à jour, toujours disponible et toujours en cours d’apprentissage.
 
