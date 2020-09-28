@@ -1,12 +1,12 @@
 ---
-title: Architecture d’Adobe Experience Manager Assets as a Cloud Service
+title: Architecture de [!DNL Assets]
 description: Architecture d’Adobe Experience Manager Assets as a Cloud Service
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 100%
+source-wordcount: '103'
+ht-degree: 98%
 
 ---
 
