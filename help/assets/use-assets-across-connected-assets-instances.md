@@ -1,11 +1,11 @@
 ---
-title: Utilisez des ressources connectées pour partager des ressources DAM dans un workflow de création  [!DNL Adobe Experience Manager Sites] .
+title: Utilisation des ressources connectées pour partager des ressources DAM dans [!DNL Sites]
 description: Utilisez des ressources disponibles pour un déploiement  [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites]  à distance.
 contentOwner: AG
-translation-type: ht
-source-git-commit: 97830590ba66e90c324770fa57b3ff11a760677f
-workflow-type: ht
-source-wordcount: '2082'
+translation-type: tm+mt
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+workflow-type: tm+mt
+source-wordcount: '2080'
 ht-degree: 100%
 
 ---
@@ -32,9 +32,9 @@ Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points 
 
    |  | [!DNL Sites] as a Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] sur AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] on-premise |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]as a Cloud Service ** | Pris en charge | Pris en charge | Pris en charge |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]sur AMS ** | Pris en charge | Pris en charge | Pris en charge |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]on-premise ** | pas de prise en charge | pas de prise en charge | pas de prise en charge |
+   | **[!DNL Experience Manager Assets]as a Cloud Service** | Pris en charge | Pris en charge | Pris en charge |
+   | **[!DNL Experience Manager]6.5[!DNL Assets]sur AMS** | Pris en charge | Pris en charge | Pris en charge |
+   | **[!DNL Experience Manager]6.5[!DNL Assets]on-premise** | pas de prise en charge | pas de prise en charge | pas de prise en charge |
 
 ### Formats de fichiers pris en charge {#mimetypes}
 
