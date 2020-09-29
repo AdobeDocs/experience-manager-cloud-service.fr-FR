@@ -2,7 +2,7 @@
 title: Mises à jour des versions AEM
 description: 'Mises à jour des versions AEM '
 translation-type: tm+mt
-source-git-commit: 5032c503be8972879eff82d4919bb07dcff1db2a
+source-git-commit: 3d9ed5ea31344bf4e25c37368cca01856cdbbd01
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 38%
@@ -24,6 +24,7 @@ aem mises à jour de version sont de deux types :
 * **Mises à jour Push AEM**
 
    * Peut être publié quotidiennement.
+
    * Principalement la maintenance, y compris les derniers correctifs de bogues et les mises à jour de sécurité.
 
       Les modifications étant appliquées régulièrement, l’impact est incrémentiel, ce qui réduit l’impact sur votre service.
