@@ -2,9 +2,9 @@
 title: Mises à jour des versions AEM
 description: 'Mises à jour des versions AEM '
 translation-type: tm+mt
-source-git-commit: 4e164812cc489959f615dc683f07c362af1555a1
+source-git-commit: 5032c503be8972879eff82d4919bb07dcff1db2a
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '394'
 ht-degree: 38%
 
 ---
@@ -36,7 +36,8 @@ aem mises à jour passent par un processus de validation de produit intense et e
 
 [Les tests de produit et les tests](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) de fonctionnement du client qui empêchent les mises à niveau de produit et les poussées de code client d’interrompre la production sont également validés lors d’une mise à jour de AEM version.
 
->[REMARQUE]
+>[!NOTE]
+>
 >Si vous avez envoyé le code personnalisé pour évaluation, puis que vous l’avez rejeté, la prochaine mise à jour d’AEM supprimera ces modifications afin de refléter la balise git de la dernière version de production réussie du client.
 
 ## Magasin de nœuds composites {#composite-node-store}
