@@ -2,9 +2,9 @@
 title: Mises à jour des versions AEM
 description: 'Mises à jour des versions AEM '
 translation-type: tm+mt
-source-git-commit: 3d9ed5ea31344bf4e25c37368cca01856cdbbd01
+source-git-commit: 78c0802a0703e81941013347a3f4b57cb106c927
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '396'
 ht-degree: 38%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 38%
 
 ## Présentation {#introduction}
 
-aem en tant que Cloud Service utilise maintenant l&#39;intégration continue et la Diffusion continue (CI/CD) pour s&#39;assurer que vos projets se trouvent sur la version AEM la plus récente. Cela signifie que toutes les opérations de mise à niveau sont entièrement automatisées et ne nécessitent donc aucune interruption de service pour les utilisateurs.
+aem en tant que Cloud Service utilise maintenant l&#39;intégration continue et la Diffusion continue (CI/CD) pour s&#39;assurer que vos projets se trouvent sur la version AEM la plus récente. Cela signifie que les instances Production et Stage sont mises à jour vers la dernière version AEM sans interruption de service pour les utilisateurs.
 
 >[!NOTE]
 >Si la mise à jour de l’environnement de production échoue, Cloud Manager annule automatiquement l’environnement d’évaluation. Cette opération est effectuée automatiquement pour s’assurer qu’une fois la mise à jour terminée, les environnements d’étape et de production se trouvent sur la même version AEM.
