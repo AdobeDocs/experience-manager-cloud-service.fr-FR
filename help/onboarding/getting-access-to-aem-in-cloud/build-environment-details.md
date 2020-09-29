@@ -2,15 +2,15 @@
 title: Détails de l’environnement de génération
 description: Détails de la création d'Environnements - Cloud Services
 translation-type: tm+mt
-source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
+source-git-commit: 34087724d41de1fc4303ddbbb92122760d360e77
 workflow-type: tm+mt
-source-wordcount: '668'
-ht-degree: 88%
+source-wordcount: '716'
+ht-degree: 82%
 
 ---
 
 
-# Présentation de l&#39;Environnement de création {#understanding-build-environment}
+# Présentation de l’environnement de création {#understanding-build-environment}
 
 ## Détails de l’environnement de génération {#build-environment-details}
 
@@ -71,9 +71,10 @@ Customers who want to use Java 11 in their projects can do so using the [Apache 
 ```
 
 >[!NOTE]
->Les valeurs de fournisseur prises en charge sont `oracle` et `sun`.
->
->Les valeurs de version prises en charge sont `1.8`, `1.11`et `11`.
+>Supported vendor values are `oracle`  and `sun`and the supported version values are `1.8`, `1.11`, and `11`.
+
+>[!NOTE]
+>La génération du projet Cloud Manager utilise toujours Java 8 pour appeler Maven. Par conséquent, la vérification ou l’application de la version Java configurée dans le module externe de la chaîne d’outils via des modules externes tels que le module externe [](https://maven.apache.org/enforcer/maven-enforcer-plugin/) Apache Maven Enforcer ne fonctionne pas et ces modules externes ne doivent pas être utilisés.
 
 ## Variables d’environnement {#environment-variables}
 
