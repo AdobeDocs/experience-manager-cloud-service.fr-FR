@@ -4,24 +4,24 @@ user-guide-title: Guide des ressources en tant que Cloud Service
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 942eb1424af119c4dda6b8286a20ff030c807802
+source-git-commit: 1f575a2bc844e108477a86d4f653928442165c8e
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 90%
+source-wordcount: '406'
+ht-degree: 79%
 
 ---
 
 
-# Guide des ressources {#assets}
+# [!DNL Assets] Guide {#assets}
 
-+ [AEM Assets as a Cloud Service](/help/assets/home.md)
-+ [Présentation et nouveautés](overview.md)
-+ [Modifications notables apportées à AEM Assets as a Cloud Service](assets-cloud-changes.md)
-+ [Architecture](architecture.md)
++ [[!DNL Assets] as a Cloud Service](/help/assets/home.md)
++ [Aperçu et nouveautés](overview.md)
++ [Modifications notables [!DNL Assets] en tant que Cloud Service](assets-cloud-changes.md)
++ [[!DNL Assets] l’architecture ;](architecture.md)
 + [Formats de fichiers pris en charge](file-format-support.md)
 + [Présentation des microservices de ressources](asset-microservices-overview.md)
 + [Accessibilité dans [!DNL Assets]](accessibility.md)
-+ Gestion des ressources numériques à l’aide d’AEM {#manage}
++ Gestion des éléments numériques {#manage}
    + [Partage de ressources](share-assets.md)
    + [Surveillance des activités et des tâches de gestion des ressources numériques](assets-activity-history.md)
    + [Prise en main des microservices de ressources](asset-microservices-configure-and-use.md)
@@ -30,29 +30,29 @@ ht-degree: 90%
    + [Tâches courantes de gestion des ressources](manage-digital-assets.md)
    + [Balises intelligentes](smart-tags.md)
    + [Organisation des ressources](organize-assets.md)
-   + [Utilisation de ressources Adobe Stock dans AEM](aem-assets-adobe-stock.md)
+   + [ [!DNL Adobe Stock] Utilisation des ressources dans AEM](aem-assets-adobe-stock.md)
    + [Gestion des collections](manage-collections.md)
    + [Présentation des métadonnées](manage-metadata.md)
-   + [Intégration à Adobe Creative Cloud](aem-cc-integration-best-practices.md)
+   + [Intégrer à [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
    + [Ajout ou modification de métadonnées](meta-edit.md)
    + [Révision de collections et de ressources situées dans un dossier](bulk-approval.md)
    + [Utilisation et configuration des statistiques sur les ressources](assets-insights.md)
    + [Profils de métadonnées](metadata-profiles.md)
    + [Schéma de métadonnées](metadata-schemas.md)
    + [Gestion des ressources vidéo](manage-video-assets.md)
-   + [Téléchargement de ressources à partir d’AEM](download-assets-from-aem.md)
+   + [Téléchargement de ressources](download-assets-from-aem.md)
    + [Archivage et extraction des ressources à modifier](check-out-and-submit-assets.md)
    + [Gestion des droits numériques des ressources](drm.md)
    + [Fichiers filigrane](watermark-assets.md)
-+ Configuration, administration et extension d’Assets {#admin}
++ Configure, administer and extend [!DNLAssets] {#admin}
    + [Documentation pour les développeurs et références aux API](developer-reference-material-apis.md)
    + [Schéma de métadonnées de dossier](folder-metadata-schema.md)
-   + [À propos de l’utilisation des profils d’image et vidéo](/help/assets/dynamic-media/about-image-video-profiles.md)
-   + [Configuration des balises intelligentes](smart-tags-configuration.md)
-   + [Ressources multilingues et traduction des ressources](translate-assets.md)
+   + [Utilisation de profils d’images et de vidéos](/help/assets/dynamic-media/about-image-video-profiles.md)
+   + [Configuration des balises actives](smart-tags-configuration.md)
+   + [Ressources et traduction multilingues](translate-assets.md)
    + [Facettes de recherche](search-facets.md)
    + [API HTTP Assets](mac-api-assets.md)
-   + [Prise en charge des fragments de contenu dans l’API HTTP AEM Assets](content-fragments/assets-api-content-fragments.md)
+   + [Prise en charge des fragments de contenu dans l’API HTTP Assets](content-fragments/assets-api-content-fragments.md)
    + [Ressources connectées](use-assets-across-connected-assets-instances.md)
    + [Rapports de ressources](asset-reports.md)
    + [Métadonnées en cascade](cascading-metadata.md)
@@ -60,8 +60,8 @@ ht-degree: 90%
    + [Fonctionnalités de MediaLibrary](medialibrary.md)
    + [Importation et exportation des métadonnées des ressources](metadata-import-export.md)
 + Partage et distribution de ressources {#brand-portal}
-   + [Configuration d’AEM Assets avec Brand Portal](configure-aem-assets-with-brand-portal.md)
-   + [Publication de ressources sur Brand Portal](publish-to-brand-portal.md)
+   + [ [!DNL Assets] Configuration [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Publier des fichiers vers [!DNL Brand Portal]](publish-to-brand-portal.md)
 + Fragments de contenu {#content-fragments}
    + [Utilisation de fragments de contenu](content-fragments/content-fragments.md)
    + [Gestion des fragments de contenu](content-fragments/content-fragments-managing.md)
