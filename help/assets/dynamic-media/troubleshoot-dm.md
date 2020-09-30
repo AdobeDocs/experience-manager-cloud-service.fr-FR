@@ -2,17 +2,21 @@
 title: Résolution des problèmes liés à Dynamic Media
 description: Résolution des problèmes liés à Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: a0b4f04aaafbaef86728c8bd23cc026f43c72dde
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 100%
+source-wordcount: '995'
+ht-degree: 95%
 
 ---
 
 
 # Résolution des problèmes liés à Dynamic Media {#troubleshooting-dynamic-media-scene-mode}
 
-Le document suivant décrit la résolution des problèmes liés à Dynamic Media.
+La rubrique suivante décrit le dépannage de Contenu multimédia dynamique.
+
+## Nouvelle configuration de média dynamique {#new-dm-config}
+
+Voir [Dépannage d’une nouvelle configuration de contenu multimédia dynamique.](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
 
 ## Général (toutes les ressources) {#general-all-assets}
 
@@ -32,14 +36,6 @@ Vous pouvez passer en revue les propriétés de ressource suivantes dans CRXDE L
 ### Journalisation de la synchronisation {#synchronization-logging}
 
 Les erreurs et problèmes de synchronisation sont consignés dans le fichier `error.log` (répertoire de serveur AEM `/crx-quickstart/logs/`). La journalisation est suffisante pour déterminer la cause de la plupart des problèmes. Vous pouvez toutefois augmenter le niveau de journalisation sur DEBUG sur le module `com.adobe.cq.dam.ips` via la console Sling ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) pour collecter davantage d’informations.
-
-### Déplacement, copie et suppression {#move-copy-delete}
-
-Avant d’effectuer une opération de déplacement, de copie ou de suppression, procédez comme suit :
-
-* Pour les images et les vidéos, vérifiez qu’il existe une valeur `<object_node>/jcr:content/metadata/dam:scene7ID` avant d’effectuer des opérations de déplacement, de copie ou de suppression.
-* Pour les paramètres prédéfinis de visionneuse et d’image, vérifiez qu’il existe une valeur `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` avant d’effectuer des opérations de déplacement, de copie ou de suppression.
-* Si la valeur de métadonnées ci-dessus est absente, vous devez transférer à nouveau les ressources avant les opérations de déplacement, de copie ou de suppression.
 
 ### Gestion de version {#version-control}
 
@@ -75,16 +71,6 @@ Si des problèmes surviennent avec les images et les visionneuses, reportez-vous
      <li>Publiez la ressource.</li>
      <li>Rechargez la ressource et publiez-la.</li>
     </ul> </td>
-  </tr>
-  <tr>
-   <td>Le sélecteur de ressources dans l’éditeur de visionneuse est bloqué dans un chargement perpétuel.</td>
-   <td><p>Problème connu à corriger dans la version 6.4</p> </td>
-   <td><p>Fermez le sélecteur et rouvrez-le.</p> </td>
-  </tr>
-  <tr>
-   <td>Le bouton <strong>Sélectionner</strong> n’est pas actif après sélection d’une ressource dans le cadre de la modification de ressource.</td>
-   <td><p> </p> <p>Problème connu à corriger dans la version 6.4</p> <p> </p> </td>
-   <td><p>Cliquez sur un autre dossier dans le sélecteur de ressources et revenez pour sélectionner la ressource.</p> </td>
   </tr>
   <tr>
    <td>La zone réactive de carrousel se déplace après un basculement entre des diapositives.</td>
@@ -160,7 +146,6 @@ Si vous êtes confronté à des problèmes au niveau de la vidéo, reportez-vous
    <td><p>Pour déterminer si le codage vidéo est toujours en cours ou s’il est passé à l’état d’échec :</p>
     <ul>
      <li>Vérifiez l’état de la vidéo <code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <code>dam:assetState</code></li>
-     <li>Surveillez la vidéo via la console de workflow <code>https://localhost:4502/libs/cq/workflow/content/console.html</code> &gt; onglets Instances, Archive, Échecs.</li>
     </ul> </td>
    <td> </td>
   </tr>
@@ -220,19 +205,16 @@ Si vous rencontrez des problèmes avec les visionneuses, reportez-vous aux conse
     </ol> </td>
    <td><p>Si les exemples de ressources ou l’illustration du paramètre prédéfini de la visionneuse n’ont pas été synchronisés ou publiés, redémarrez le processus de copie/synchronisation entier :</p>
     <ol>
-     <li>Accédez à CRXDE Lite.
-      <ul>
-       <li>Supprimez <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>.</li>
-      </ul> </li>
-     <li>Accédez au gestionnaire de modules CRX : <code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>.
+     <li>Accédez à <code>/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code>.
+     </li>
+     <li>Sélectionnez les actions suivantes dans l’ordre :
       <ol>
-       <li>Recherchez le module de visionneuse dans la liste (il commence par <code>cq-dam-scene7-viewers-content</code>).</li>
-       <li>Cliquez sur <strong>Réinstaller</strong>.</li>
+       <li>Supprimer les dossiers Sync.</li>
+       <li>Supprimer le dossier Paramètres prédéfinis (ci-dessous <code>/conf</code>).
+       <li>Déclencher la tâche asynchrone de configuration de DM.</li>
       </ol> </li>
-     <li>Sous Cloud Services, accédez à la page Configuration Dynamic Media, puis ouvrez la boîte de dialogue de configuration correspondant à la configuration S7 de Dynamic Media.
-      <ul>
-       <li>N’effectuez aucune modification, cliquez sur <strong>Enregistrer</strong>. Cela a pour effet de déclencher à nouveau la logique pour créer et synchroniser les exemples de ressources, la feuille CSS du paramètre prédéfini de la visionneuse et l’illustration.<br />  </li>
-      </ul> </li>
+     <li>Attendez la notification d'une synchronisation réussie dans votre boîte de réception AEM.
+     </li>
     </ol> </td>
   </tr>
  </tbody>
