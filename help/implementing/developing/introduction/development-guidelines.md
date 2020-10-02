@@ -2,7 +2,7 @@
 title: Conseils de développement pour AEM as a Cloud Service
 description: Conseils de développement pour AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: d7b3306f2415960669a60472ba343bfb394a1012
+source-git-commit: 82f50e50bb93baa280a981708277dd63004b101f
 workflow-type: tm+mt
 source-wordcount: '2237'
 ht-degree: 87%
@@ -232,9 +232,9 @@ Le service [OSGI de](https://docs.adobe.com/content/help/en/experience-manager-6
 
 aem CS exige que le courrier soit envoyé par le port 465. Si un serveur de messagerie ne prend pas en charge le port 465, le port 587 peut être utilisé, tant que l&#39;option TLS est activée.
 
-> [!NOTE]
+>[!NOTE]
 >
-> Notez que l’Adobe ne prend pas en charge le traitement SMTP sur une adresse IP dédiée unique.
+>Notez que l’Adobe ne prend pas en charge le traitement SMTP sur une adresse IP dédiée unique.
 
 ### Configuration {#email-configuration}
 
