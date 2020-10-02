@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: 5627904800600386d186fdf9123cacbb55c57a49
+source-git-commit: 1f0e6805dc5acd21f323a5ce502363c63bfb0f0a
 workflow-type: tm+mt
-source-wordcount: '1667'
-ht-degree: 84%
+source-wordcount: '1688'
+ht-degree: 79%
 
 ---
 
@@ -20,15 +20,15 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * L’outil de transfert de contenu peut être utilisé avec les types de stockage de données suivants : File Data Store, S3 Data Store, Shared S3 Data Store et Azure Blob Store Data Store.
 
-* Si vous utilisez un *environnement Sandbox*, veillez à ce qu’il soit mis à niveau à la version du 10 juin 2020 ou à une version postérieure. Si vous utilisez un *environnement de production*, il est automatiquement mis à jour.
+* Si vous utilisez un Environnement ** Sandbox, assurez-vous que votre environnement est à jour et mis à niveau vers la dernière version. Si vous utilisez un *environnement de production*, il est automatiquement mis à jour.
 
-* Pour utiliser l’outil de transfert de contenu, vous devez être un utilisateur administrateur sur votre instance source et appartenir au groupe d’administrateurs AEM dans l’instance Cloud Service vers laquelle vous transférez du contenu. Les utilisateurs non privilégiés ne pourront pas récupérer le jeton d’accès pour utiliser l’outil de transfert de contenu.
+* Pour utiliser l’outil de transfert de contenu, vous devez être un utilisateur administrateur sur votre instance source et appartenir au groupe d’administrateurs AEM locaux dans l’instance de Cloud Service à laquelle vous transférez du contenu. Les utilisateurs non privilégiés ne pourront pas récupérer le jeton d’accès pour utiliser l’outil de transfert de contenu.
 
 * Pendant la phase d’extraction, l’outil de transfert de contenu est exécuté sur une instance source AEM active.
 
 * La *phase d’ingestion* de l’auteur réduira l’ensemble du déploiement de l’auteur. L’auteur AEM ne sera donc pas disponible pendant la totalité du processus d’ingestion.
 
-* La limite supérieure recommandée pour la taille du référentiel que l’outil de transfert de contenu peut prendre en charge à un moment donné est de 20 Go.
+* Actuellement, la taille de MongoDB par défaut pour un AEM en tant qu’instance d’auteur Cloud Service est de 32 Go. Pour une taille de stockage de segments supérieure à 20 Go, il est recommandé d’envoyer un ticket d’assistance afin d’augmenter la taille de MongoDB.
 
 ## Disponibilité {#availability}
 
