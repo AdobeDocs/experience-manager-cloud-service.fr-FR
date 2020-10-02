@@ -2,7 +2,7 @@
 title: Conseils de développement pour AEM as a Cloud Service
 description: Conseils de développement pour AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 90c3fd9a4293821568700148eb8d186b929988a1
+source-git-commit: d7b3306f2415960669a60472ba343bfb394a1012
 workflow-type: tm+mt
 source-wordcount: '2237'
 ht-degree: 87%
@@ -185,47 +185,6 @@ Si la fonction d’adresse IP dédiée n’est pas activée, le trafic provenant
 
 Pour activer une adresse IP dédiée, envoyez une demande au service clientèle, qui fournira les informations d’adresse IP. La demande doit spécifier chaque environnement et des demandes supplémentaires doivent être effectuées si de nouveaux environnements requièrent cette fonctionnalité après la demande initiale. Les environnements de programme de test Sandbox ne sont pas pris en charge.
 
-### Envoi d’un courriel {#sending-email}
-
-aem en tant que Cloud Service exige que le courrier sortant soit chiffré. Les sections ci-dessous décrivent comment demander, configurer et envoyer des courriers électroniques.
-
-**Demande d&#39;accès**
-
-Par défaut, le courrier électronique sortant est désactivé. Pour l&#39;activer, soumettez un ticket d&#39;assistance avec :
-
-1. Nom de domaine complet pour le serveur de messagerie (par exemple `smtp.sendgrid.net`)
-1. Port à utiliser. Il doit s&#39;agir du port 465 s&#39;il est pris en charge par le serveur de messagerie, sinon le port 587 Notez que le port 587 ne peut être utilisé que si le serveur de messagerie requiert et applique TLS sur ce port.
-1. ID de programme et ID d&#39;environnement pour les environnements qu&#39;ils souhaitent envoyer par courrier électronique
-1. Indique si l’accès SMTP est nécessaire sur l’auteur, la publication ou les deux.
-
-**Envoi de courriels**
-
-Le service [OSGI de](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) Day CQ Mail Service doit être utilisé et les courriels doivent être envoyés au serveur de messagerie indiqué dans la demande d&#39;assistance plutôt qu&#39;directement aux destinataires.
-
-aem CS exige que le courrier soit envoyé par le port 465. Si un serveur de messagerie ne prend pas en charge le port 465, le port 587 peut être utilisé, tant que l&#39;option TLS est activée.
-
-> [!NOTE]
->
-> Notez que l’Adobe ne prend pas en charge le traitement SMTP sur une adresse IP dédiée unique.
-
-**Configuration**
-
-Les courriels en AEM doivent être envoyés à l&#39;aide du service [OSGi](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)Day CQ Mail Service.
-
-Voir la documentation [de](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) AEM 6.5 pour plus d’informations sur la configuration des paramètres de courrier électronique. Pour AEM CS, les ajustements suivants doivent être apportés au `com.day.cq.mailer.DefaultMailService OSGI` service :
-
-Si le port 465 a été demandé :
-
-* définir `smtp.port` sur `465`
-* définir `smtp.ssl` sur `true`
-* définir `smtp.starttls` sur `false`
-
-Si le port 587 a été demandé (uniquement autorisé si le serveur de messagerie ne prend pas en charge le port 465) :
-
-* définir `smtp.port` sur `587`
-* définir `smtp.ssl` sur `false`
-* définir `smtp.starttls` sur `true`
-
 ### Utilisation de la fonctionnalité {#feature-usage}
 
 Cette fonctionnalité est compatible avec les bibliothèques ou le code Java qui génèrent du trafic sortant, à condition qu’ils utilisent les propriétés système Java standard pour les configurations de proxy. Dans la pratique, cela devrait inclure la plupart des bibliothèques courantes.
@@ -253,3 +212,44 @@ Seuls les ports HTTP et HTTPS sont pris en charge. Cela inclut HTTP/1.1, ainsi q
 ### Considérations relatives au débogage {#debugging-considerations}
 
 Afin de vérifier que le trafic est effectivement sortant sur l’adresse IP dédiée attendue, vérifiez les journaux dans le service de destination, si disponible. Dans le cas contraire, il peut s’avérer utile d’appeler un service de débogage tel que [https://ifconfig.me/ip](https://ifconfig.me/ip), qui renverra l’adresse IP d’appel.
+
+## Envoi d’un courriel {#sending-email}
+
+aem en tant que Cloud Service exige que le courrier sortant soit chiffré. Les sections ci-dessous décrivent comment demander, configurer et envoyer des courriers électroniques.
+
+### Demande d&#39;accès {#requesting-access}
+
+Par défaut, le courrier électronique sortant est désactivé. Pour l&#39;activer, soumettez un ticket d&#39;assistance avec :
+
+1. Nom de domaine complet pour le serveur de messagerie (par exemple `smtp.sendgrid.net`)
+1. Port à utiliser. Il doit s&#39;agir du port 465 s&#39;il est pris en charge par le serveur de messagerie, sinon le port 587 Notez que le port 587 ne peut être utilisé que si le serveur de messagerie requiert et applique TLS sur ce port.
+1. ID de programme et ID d&#39;environnement pour les environnements qu&#39;ils souhaitent envoyer par courrier électronique
+1. Indique si l’accès SMTP est nécessaire sur l’auteur, la publication ou les deux.
+
+### Envoi de courriels {#sending-emails}
+
+Le service [OSGI de](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) Day CQ Mail Service doit être utilisé et les courriels doivent être envoyés au serveur de messagerie indiqué dans la demande d&#39;assistance plutôt qu&#39;directement aux destinataires.
+
+aem CS exige que le courrier soit envoyé par le port 465. Si un serveur de messagerie ne prend pas en charge le port 465, le port 587 peut être utilisé, tant que l&#39;option TLS est activée.
+
+> [!NOTE]
+>
+> Notez que l’Adobe ne prend pas en charge le traitement SMTP sur une adresse IP dédiée unique.
+
+### Configuration {#email-configuration}
+
+Les courriels en AEM doivent être envoyés à l&#39;aide du service [OSGi](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)Day CQ Mail Service.
+
+Voir la documentation [de](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) AEM 6.5 pour plus d’informations sur la configuration des paramètres de courrier électronique. Pour AEM CS, les ajustements suivants doivent être apportés au `com.day.cq.mailer.DefaultMailService OSGI` service :
+
+Si le port 465 a été demandé :
+
+* définir `smtp.port` sur `465`
+* définir `smtp.ssl` sur `true`
+* définir `smtp.starttls` sur `false`
+
+Si le port 587 a été demandé (uniquement autorisé si le serveur de messagerie ne prend pas en charge le port 465) :
+
+* définir `smtp.port` sur `587`
+* définir `smtp.ssl` sur `false`
+* définir `smtp.starttls` sur `true`
