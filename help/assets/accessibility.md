@@ -3,9 +3,9 @@ title: Accessibilité dans [!DNL Experience Manager Assets]
 description: Découvrez comment les fonctions d’accessibilité [!DNL Adobe Experience Manager] d’un Cloud Service aident les utilisateurs handicapés.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b866d9317ba1795b34f7e308426240c44bd1131c
+source-git-commit: d0be8ff6c8f9e0c37bd4dc9f66d80e19ab7e1508
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1840'
 ht-degree: 3%
 
 ---
@@ -145,7 +145,7 @@ Lors de la navigation dans le référentiel d’actifs, les fonctionnalités sui
 * L&#39;utilisation de la `Esc` touche pour supprimer les icônes d&#39;action rapide de la vue de miniature ne supprime pas la sélection du clavier du dernier élément sélectionné.
 * Une fois un fichier sélectionné, appuyez sur le raccourci clavier Alt + 4 pour ouvrir la liste Références. A l’aide de `Tab` la touche, les utilisateurs peuvent parcourir les entrées de référence aucune-zéro.
 * Les commentaires sur une ressource sont disponibles dans la chronologie de la ressource. Il est accessible par le clavier.
-* Les paramètres de vue dans le Experience Manager sont accessibles par le clavier. L’utilisateur peut parcourir les tailles de carte disponibles à l’aide des touches fléchées, puis sélectionner et faire défiler par onglets pour parcourir et définir d’autres éléments dans la vue des paramètres de Vue existante.
+* Les paramètres de vue dans le Experience Manager sont accessibles par le clavier. L’utilisateur peut parcourir les tailles de carte disponibles à l’aide des touches fléchées, puis sélectionner et passer à l’onglet pour parcourir et définir d’autres éléments dans la vue Paramètres de Vue existante.
 
 <!-- TBD: Gradually,  as more enhancements are done in these categories, add more content.
 
@@ -175,7 +175,7 @@ Pour les opérations de métadonnées généralement effectuées par des rôles 
 
 ## Recherche de ressources numériques {#search-assets}
 
-Une recherche rapide et transparente des ressources augmente la vitesse du contenu. Les cas d’utilisation de la vitesse du contenu font partie des principales [!DNL Assets] fonctionnalités. Pour début d&#39;une recherche à partir de la barre de recherche Omniture, les utilisateurs peuvent utiliser un raccourci clavier `/` ou `Tab` des lecteurs d&#39;écran pour localiser rapidement l&#39;option de recherche. Le lecteur d’écran indique le nom de l’option en tant que bouton [!UICONTROL de] recherche lorsque l’accent est mis sur l’option ![de](assets/do-not-localize/search_icon.png)recherche des options de recherche. Les utilisateurs peuvent appuyer `Return` sur pour ouvrir la boîte Omnisearch. Le lecteur d’écran n’explique pas seulement le mot-clé saisi dans la zone de recherche, mais il décrit également les suggestions de saisie semi-automatique proposées par [!DNL Experience Manager Assets]. Les utilisateurs peuvent utiliser une combinaison de touches fléchées `Return`et `Tab` accéder aux différentes options pour déclencher une recherche.
+Une recherche rapide et transparente des ressources augmente la vitesse du contenu. Les cas d’utilisation de la vitesse du contenu font partie des principales [!DNL Assets] fonctionnalités. Pour début d&#39;une recherche à partir de la barre de recherche Omniture, les utilisateurs peuvent utiliser un raccourci clavier `/` ou `Tab` des lecteurs d&#39;écran pour localiser rapidement l&#39;option de recherche. Le lecteur d’écran indique le nom de l’option en tant que bouton [!UICONTROL de] recherche lorsque l’accent est mis sur l’option ![de](assets/do-not-localize/search_icon.png)recherche des options de recherche. Les utilisateurs peuvent appuyer `Return` sur pour ouvrir la boîte Omnisearch. Le lecteur d’écran n’explique pas seulement le mot-clé saisi dans la zone de recherche, mais il décrit également les suggestions proposées par [!DNL Experience Manager Assets]. Les utilisateurs peuvent utiliser une combinaison de touches fléchées `Return`et `Tab` accéder aux différentes options pour déclencher une recherche.
 
 La fonctionnalité de recherche est rendue plus accessible par les fonctionnalités suivantes :
 
@@ -187,7 +187,7 @@ La fonctionnalité de recherche est rendue plus accessible par les fonctionnalit
 
 Lors du filtrage des résultats de la recherche :
 
-* La page des résultats de la recherche comporte des titres informatifs pour mieux comprendre les utilisateurs de lecteurs d’écran.
+* La page des résultats de la recherche comporte un titre informatif pour mieux comprendre les utilisateurs de lecteurs d’écran.
 * Un lecteur d’écran affiche les options du filtre de recherche sous forme d’accordéons extensibles.
 * Les prédicats comportant des boutons à états mixtes sont annoncés par les lecteurs d’écran.
 
@@ -203,8 +203,8 @@ Lors du partage de fichiers, les fonctionnalités suivantes améliorent l’acce
 * Dans la boîte de dialogue de partage de liens, lorsque vous naviguez en mode de navigation, les lecteurs d’écran,
 
    * Ne narrez pas les informations du tableau dès que la boîte de dialogue est chargée.
-   * Peut accéder à toutes les suggestions automatiques répertoriées.
-   * Narrez les suggestions automatiques affichées pour les champs Ajouter l’adresse électronique et Rechercher.
+   * Peut accéder à toutes les suggestions répertoriées.
+   * Narrez les suggestions affichées pour les champs Ajouter l’adresse électronique et Rechercher.
 
 ## Accessibilité dans [!DNL Dynamic Media] {#dynamic-media-accessibility}
 
