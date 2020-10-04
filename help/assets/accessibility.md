@@ -3,9 +3,9 @@ title: Accessibilité dans [!DNL Experience Manager Assets]
 description: Découvrez comment les fonctions d’accessibilité [!DNL Adobe Experience Manager] d’un Cloud Service aident les utilisateurs handicapés.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bd27bb5da82c9997f4c562a3d1efad77df66728f
+source-git-commit: b866d9317ba1795b34f7e308426240c44bd1131c
 workflow-type: tm+mt
-source-wordcount: '1842'
+source-wordcount: '1841'
 ht-degree: 3%
 
 ---
@@ -175,7 +175,7 @@ Pour les opérations de métadonnées généralement effectuées par des rôles 
 
 ## Recherche de ressources numériques {#search-assets}
 
-Une recherche rapide et transparente des ressources augmente la vitesse du contenu. Les cas d&#39;utilisation de la vitesse du contenu font partie des principales [!DNL Assets] fonctionnalités. Pour début d&#39;une recherche à partir de la barre de recherche Omniture, les utilisateurs peuvent utiliser un raccourci clavier `/` ou `Tab` des lecteurs d&#39;écran pour localiser rapidement l&#39;option de recherche. Le lecteur d’écran indique le nom de l’option en tant que bouton [!UICONTROL de] recherche lorsque l’accent est mis sur l’option ![de](assets/do-not-localize/search_icon.png)recherche des options de recherche. Les utilisateurs peuvent appuyer `Return` sur pour ouvrir la boîte Omnisearch. Le lecteur d’écran n’explique pas seulement le mot-clé saisi dans la zone de recherche, mais il décrit également les suggestions de saisie semi-automatique proposées par [!DNL Experience Manager Assets]. Les utilisateurs peuvent utiliser une combinaison de touches fléchées `Return`et `Tab` accéder aux différentes options pour déclencher une recherche.
+Une recherche rapide et transparente des ressources augmente la vitesse du contenu. Les cas d’utilisation de la vitesse du contenu font partie des principales [!DNL Assets] fonctionnalités. Pour début d&#39;une recherche à partir de la barre de recherche Omniture, les utilisateurs peuvent utiliser un raccourci clavier `/` ou `Tab` des lecteurs d&#39;écran pour localiser rapidement l&#39;option de recherche. Le lecteur d’écran indique le nom de l’option en tant que bouton [!UICONTROL de] recherche lorsque l’accent est mis sur l’option ![de](assets/do-not-localize/search_icon.png)recherche des options de recherche. Les utilisateurs peuvent appuyer `Return` sur pour ouvrir la boîte Omnisearch. Le lecteur d’écran n’explique pas seulement le mot-clé saisi dans la zone de recherche, mais il décrit également les suggestions de saisie semi-automatique proposées par [!DNL Experience Manager Assets]. Les utilisateurs peuvent utiliser une combinaison de touches fléchées `Return`et `Tab` accéder aux différentes options pour déclencher une recherche.
 
 La fonctionnalité de recherche est rendue plus accessible par les fonctionnalités suivantes :
 
