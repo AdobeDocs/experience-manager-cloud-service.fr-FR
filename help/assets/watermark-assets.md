@@ -3,10 +3,10 @@ title: Filigrane des ressources
 description: Ajout d’un filigrane à vos ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 7ea7af1cf784b6866f3c2484475a8072ff76be2c
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 2%
+source-wordcount: '198'
+ht-degree: 3%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 2%
 
 [!DNL Adobe Experience Manager Assets] vous permet d’ajouter un filigrane numérique aux images. [!DNL Assets] prend en charge l’application d’une image en tant que filigrane à d’autres fichiers image. Les filigranes peuvent aider les utilisateurs à vérifier l’authenticité et la propriété des fichiers sous copyright. Un filigrane peut également être utilisé pour indiquer un état de document tel que confidentiel, brouillon, validité, etc.
 
-Pour configurer le Experience Manager pour les ressources de filigrane, procédez comme suit :
+Pour configurer [!DNL Experience Manager] les fichiers de filigrane, procédez comme suit :
 
 1. Un fichier PNG est appliqué en filigrane. Téléchargez ce fichier dans votre référentiel DAM.
 
-1. Accédez au référentiel Cloud Manager Git associé à votre environnement. Validez un fichier nommé `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.json` dans leur référentiel Cloud Manager Git avec le contenu suivant. Pour plus d’informations, voir [comment configurer OSGi en Experience Manager en tant que Cloud Service](/help/implementing/deploying/configuring-osgi.md).
+1. Accédez au référentiel [!DNL Cloud Manager] Git associé à votre environnement. Validez un fichier nommé `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.json` dans leur référentiel [!DNL Cloud Manager] Git avec le contenu suivant. Pour plus d’informations, voir [comment configurer OSGi [!DNL Experience Manager] en tant que Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 
    ```json
    {
