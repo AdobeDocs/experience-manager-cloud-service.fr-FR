@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: 1f0e6805dc5acd21f323a5ce502363c63bfb0f0a
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
-source-wordcount: '1688'
-ht-degree: 79%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -140,8 +140,10 @@ Une fois le processus d’extraction terminé, vous pouvez transférer le conten
 1. Accédez à la page *Aperçu* et sélectionnez le jeu de migration pour lequel vous souhaitez effectuer l’extraction de complément. Cliquez sur **Extraire** pour démarrer l’extraction de complément. La boîte de dialogue **Extraction du jeu de migration** s’affiche.
 
    >[!IMPORTANT]
+   >
    >Il est préférable de désactiver l’option **Remplacer le conteneur d’évaluation pendant l’extraction**.
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
+   >
+   >![image](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
 
 ### Processus d’ingestion au cours du transfert de contenu {#ingestion-process}
 
@@ -151,17 +153,16 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
-
 1. Une fois l’assimilation terminée, l’état du champ **PUBLIER L’INGESTION** se met à jour pour **TERMINER**.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
-
 
 #### Ingestion de complément {#top-up-ingestion-process}
 
 L’outil de transfert de contenu comporte une fonctionnalité pour traiter un *complément* de contenu différentiel. Dans ce cas, seules les modifications effectuées depuis l’activité de transfert de contenu précédente sont transférées.
 
 >[!NOTE]
+>
 >Suite au transfert initial d’un contenu, il est recommandé d’effectuer fréquemment des compléments différentiels pour réduire la période de gel du transfert final de contenu différentiel avant de passer en ligne sur Cloud Service.
 
 Une fois le processus d’ingestion terminé, vous pouvez utiliser le contenu différentiel à l’aide de la méthode d’ingestion de complément. Suivez les étapes ci-dessous :
@@ -169,8 +170,10 @@ Une fois le processus d’ingestion terminé, vous pouvez utiliser le contenu di
 1. Accédez à la page *Aperçu* et sélectionnez le jeu de migration pour lequel vous souhaitez effectuer l’ingestion de complément. Cliquez sur **Ingérer** pour démarrer l’extraction de complément. La boîte de dialogue **Ingestion du jeu de migration** s’affiche.
 
    >[!IMPORTANT]
+   >
    >Vous devez désactiver l’option **Balayer le contenu existant sur l’instance Cloud avant l’assimilation** , afin d’empêcher la suppression du contenu existant de l’activité d’assimilation précédente.
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
+   >
+   >![image](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
 
 ### Affichage des journaux d’un jeu de migration {#viewing-logs-migration-set}
 
