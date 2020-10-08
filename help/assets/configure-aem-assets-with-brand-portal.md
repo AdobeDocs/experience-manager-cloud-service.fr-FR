@@ -3,7 +3,7 @@ title: Configuration d’AEM Assets en tant que Cloud Service avec le portail de
 description: Configuration d’AEM Assets avec Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: ad1f1e8c0ba5409cd645489263f349b29f080d27
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '1647'
 ht-degree: 37%
@@ -17,7 +17,7 @@ La configuration de Adobe Experience Manager Assets Brand Portal permet de publi
 
 **Processus de configuration**
 
-aem assets en tant que Cloud Service est configuré avec Brand Portal via Adobe Developer Console, qui fournit un jeton de compte Adobe Identity Management Services (IMS) pour l’autorisation du locataire du portail Marque. Il nécessite des configurations à la fois dans AEM Assets et dans Adobe Developer Console.
+AEM Assets en tant que Cloud Service est configuré avec Brand Portal via Adobe Developer Console, qui fournit un jeton de compte Adobe Identity Management Services (IMS) pour l’autorisation du locataire du portail Marque. Il nécessite des configurations à la fois dans AEM Assets et dans Adobe Developer Console.
 
 1. En AEM Assets, créez un compte IMS et générez une clé publique (certificat).
 1. Dans Adobe Developer Console, créez un projet pour votre client Brand Portal (organisation).
@@ -30,7 +30,6 @@ aem assets en tant que Cloud Service est configuré avec Brand Portal via Adobe 
 >[!NOTE]
 >
 >Une AEM Assets en tant qu’instance Cloud Service ne doit être configurée qu’avec un seul client du portail de marques.
-
 
 ## Conditions préalables {#prerequisites}
 
@@ -64,16 +63,10 @@ La configuration IMS comprend deux étapes :
 La clé publique (certificat) authentifie votre profil sur Adobe Developer Console.
 
 1. Connectez-vous à AEM Assets.
-
 1. From the **Tools** panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
-
-
 1. Dans la page Configurations d’Adobe IMS, cliquez sur **[!UICONTROL Créer]**. It will redirect to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page. Par défaut, l’onglet **Certificat** s’ouvre.
-
 1. Sélectionnez Portail **[!UICONTROL de marque]** d’Adobe dans la liste déroulante Solution **** Cloud.
-
 1. Cochez la case **[!UICONTROL Créer un nouveau certificat]** et spécifiez un **alias** pour la clé publique. L’alias sert de nom à la clé publique.
-
 1. Cliquez sur **[!UICONTROL Créer un certificat]**. Then, click **[!UICONTROL OK]** to generate the public key.
 
    ![Création d’un certificat](assets/ims-config2.png)
@@ -218,8 +211,6 @@ Effectuez les étapes suivantes pour configurer le compte IMS.
 >
 >Assurez-vous que la configuration IMS réussit le contrôle d’intégrité. Si tel n’est pas le cas, elle n’est pas valide. Vous devez la supprimer et créer une configuration valide.
 
-
-
 ### Configuration du service cloud {#configure-the-cloud-service}
 
 Pour configurer le service cloud Brand Portal, procédez comme suit :
@@ -281,19 +272,15 @@ Pour valider la configuration, procédez comme suit :
    >
    >Évitez de désactiver l’agent de distribution, car cela peut entraîner l’échec de la distribution des ressources (running-in-queue).
 
-
 Vous pouvez maintenant :
 
 * [Publication de ressources à partir d’AEM Assets sur Brand Portal](publish-to-brand-portal.md)
 * [Publication de dossiers à partir d’AEM Assets sur Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Publication de collections à partir d’AEM Assets sur Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-
 * [Publication de paramètres prédéfinis, de schémas et de facettes sur Brand Portal](https://docs.adobe.com/content/help/fr-FR/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [Publication de balises sur Brand Portal](https://docs.adobe.com/content/help/fr-FR/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-
 See [Brand Portal documentation](https://docs.adobe.com/content/help/fr-FR/experience-manager-brand-portal/using/home.html) for more information.
-
 
 ## Journaux de distribution {#distribution-logs}
 
@@ -302,7 +289,6 @@ Vous pouvez surveiller les journaux de l’agent de distribution pour le process
 Par exemple, nous avons publié une ressource d’AEM Assets sur Brand Portal pour valider la configuration.
 
 1. Suivez les étapes (1 à 4), comme indiqué dans la section [Test de la configuration](#test-configuration), puis accédez à la page de l’agent de distribution.
-
 1. Cliquez sur **[!UICONTROL Journaux]** pour vue des journaux de traitement et d’erreurs.
 
    ![](assets/test-bpconfig5.png)
@@ -315,10 +301,12 @@ L&#39;agent de distribution a généré les journaux suivants :
 Lors de la publication de la ressource, les journaux de requête et de réponse suivants sont générés :
 
 **Requête de l’agent de distribution** :
+
 * DSTRQ2 (requête 2) : La requête de publication de ressource est déclenchée.
 * DSTRQ3 (Demande 3) : Le système déclenche une autre demande de publication du dossier AEM Assets (dans lequel la ressource existe) et répliquera le dossier dans le portail de marques.
 
 **Réponse de l’agent de distribution** :
+
 * queue-bpdistributionagent0 (DSTRQ2) : La ressource est publiée sur Brand Portal.
 * queue-bpdistributionagent0 (DSTRQ3) : Le système répliquera le dossier AEM Assets (contenant le fichier) dans Brand Portal.
 
@@ -327,8 +315,6 @@ Dans l’exemple ci-dessus, une requête et une réponse supplémentaires sont d
 >[!NOTE]
 >
 >Une requête supplémentaire est générée au cas où le dossier parent n’existerait pas dans le portail de la marque ou aurait été modifié en AEM Assets.
-
-
 
 <!--
 
@@ -358,4 +344,4 @@ Go to `/system/console/slingmetrics` for statistics related to the distributed c
    Comment Type: draft
 
    <li>Step text</li>
-   -->
+-->
