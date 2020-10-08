@@ -1,11 +1,11 @@
 ---
 title: Journalisation
 description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou apprenez à demander la journalisation des données.
-translation-type: ht
-source-git-commit: 86103b40e931ec00e0c15e9dbcbdf396c8eb05c9
-workflow-type: ht
-source-wordcount: '2212'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 0b648e1a0da141f8393c62cb269e5498e2ecd23f
+workflow-type: tm+mt
+source-wordcount: '2219'
+ht-degree: 99%
 
 ---
 
@@ -588,7 +588,7 @@ La bande passante réseau associée aux journaux envoyés à Splunk est considé
 
 Dans la demande d’assistance, les clients doivent indiquer :
 
-* l’hôte Splunk ;
+* Adresse du point de terminaison HEC de Splunk
 * l’index Splunk ;
 * le port Splunk ;
 * le jeton Splunk HEC. Pour plus d’informations, consultez [cette page](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples).
@@ -603,21 +603,21 @@ Vous trouverez ci-dessous un exemple de demande d’assistance :
 
 Programme 123, environnement de production
 
-* Hôte Splunk : `splunk-hec-ext.acme.com`
+* Adresse du point de terminaison Splunk HEC : `splunk-hec-ext.acme.com`
 * Index Splunk : acme_123prod (le client peut choisir la convention d’affectation de nom qu’il souhaite)
 * Port Splunk : 443
 * Jeton Splunk HEC : ABC123
 
 Programme 123, environnement d’évaluation
 
-* Hôte Splunk : `splunk-hec-ext.acme.com`
+* Adresse du point de terminaison Splunk HEC : `splunk-hec-ext.acme.com`
 * Index Splunk : acme_123stage
 * Port Splunk : 443
 * Jeton Splunk HEC : ABC123
 
 Programme 123, environnements de développement
 
-* Hôte Splunk : `splunk-hec-ext.acme.com`
+* Adresse du point de terminaison Splunk HEC : `splunk-hec-ext.acme.com`
 * Index Splunk : acme_123dev
 * Port Splunk : 443
 * Jeton Splunk HEC : ABC123
