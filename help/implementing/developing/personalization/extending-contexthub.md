@@ -2,7 +2,7 @@
 title: Extension de ContextHub
 description: Définissez de nouveaux types de modules et de magasins ContextHub lorsque ceux qui sont fournis ne répondent pas à vos besoins en termes de solution.
 translation-type: tm+mt
-source-git-commit: ddfdcf74977adf00bc0ab01b0b1a669781f0d730
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 70%
@@ -18,9 +18,7 @@ Définissez de nouveaux types de modules et de magasins ContextHub lorsque ceux 
 
 Les magasins ContextHub sont créés à partir de candidats de magasin enregistrés. Pour créer un magasin personnalisé, vous devez créer et enregistrer un candidat de magasin.
 
-<!--The javascript file that includes the code that creates and registers the store candidate must be included in a [client library folder](/help/sites-developing/clientlibs.md#creating-client-library-folders). The category of the folder must match the following pattern:-->
-
-Le fichier JavaScript contenant le code qui crée et enregistre le candidat de magasin doit être inclus dans un dossier de bibliothèque cliente. La catégorie du dossier doit correspondre au schéma suivant :
+Le fichier JavaScript contenant le code qui crée et enregistre le candidat de magasin doit être inclus dans un [dossier de bibliothèque cliente](/help/implementing/developing/introduction/clientlibs.md). La catégorie du dossier doit correspondre au schéma suivant :
 
 ```xml
 contexthub.store.[storeType]
@@ -101,9 +99,7 @@ Créez et enregistrez la classe du module de rendu dans une fonction anonyme à 
 }());
 ```
 
-<!--The javascript file that includes the code that creates and registers the renderer must be included in a [client library folder](/help/sites-developing/clientlibs.md#creating-client-library-folders). The category of the folder must match the following pattern:-->
-
-Le fichier javascript qui inclut le code qui crée et enregistre le rendu doit être inclus dans un dossier de bibliothèque client. La catégorie du dossier doit correspondre au schéma suivant :
+The javascript file that includes the code that creates and registers the renderer must be included in a [client library folder](/help/implementing/developing/introduction/clientlibs.md). La catégorie du dossier doit correspondre au schéma suivant :
 
 ```javascript
 contexthub.module.[moduleType]
