@@ -10,9 +10,9 @@ audience: developer
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: 7fd7a8a5387c8b204e8e470a2571679b89701074
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
-source-wordcount: '2620'
+source-wordcount: '2592'
 ht-degree: 4%
 
 ---
@@ -57,7 +57,7 @@ Nous clonerons le projet [](https://github.com/adobe/aem-cif-guides-venia) Venia
    $ mvn clean install -PautoInstallPackage,cloud
    ```
 
-1. ajoutez les configurations OSGi nécessaires pour connecter votre instance AEM à une instance de Magento ou ajoutez les configurations au projet nouvellement créé.
+1. Ajoutez les configurations OSGi nécessaires pour connecter votre instance AEM à une instance de Magento ou ajoutez les configurations au projet nouvellement créé.
 
 1. A ce stade, vous devez disposer d&#39;une version fonctionnelle d&#39;une vitrine connectée à une instance de Magento. Accédez à la page `US` > `Home` à l’adresse suivante : [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
@@ -67,7 +67,7 @@ Nous clonerons le projet [](https://github.com/adobe/aem-cif-guides-venia) Venia
 
 ## Bibliothèques client et module ui.frontend {#introduction-to-client-libraries}
 
-La page CSS et le code JavaScript responsable du rendu du thème/des styles de la vitrine sont gérés AEM par une bibliothèque [](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html) cliente ou des clientlibs pour un court laps de temps. Les bibliothèques clientes offrent un mécanisme permettant d’organiser CSS et Javascript dans le code d’un projet, puis de diffuser sur la page.
+La page CSS et le code JavaScript responsable du rendu du thème/des styles de la vitrine sont gérés AEM par une bibliothèque [](/help/implementing/developing/introduction/clientlibs.md) cliente ou des clientlibs pour un court laps de temps. Les bibliothèques clientes offrent un mécanisme permettant d’organiser CSS et Javascript dans le code d’un projet, puis de diffuser sur la page.
 
 Des styles spécifiques à la marque peuvent être appliqués aux composants principaux AEM CIF en ajoutant et en remplaçant la page CSS gérée par ces bibliothèques clientes. Il est essentiel de comprendre comment les bibliothèques client sont structurées et incluses dans la page.
 
@@ -77,7 +77,7 @@ Le `ui.frontend` module est également un module Maven et intégré au projet pl
 
 ![ui.frontend vers l’architecture ui.apps](../assets/style-cif-component/ui-frontend-architecture.png)
 
-*Les fichiers CSS et Javascript compilés sont copiés du`ui.frontend`module dans le`ui.apps`module en tant que bibliothèque client lors d’une génération Maven.*
+*Les fichiers CSS et Javascript compilés sont copiés du `ui.frontend` module dans le `ui.apps` module en tant que bibliothèque client lors d’une génération Maven.*
 
 ## Mettre à jour le style du teaser {#ui-frontend-module}
 
@@ -129,9 +129,9 @@ Ensuite, apportez une petite modification au style Teaser pour voir comment fonc
    [INFO] ------------------------------------------------------------------------
    ```
 
-   inspect la sortie du terminal. Vous verrez que la commande Maven a exécuté plusieurs scripts NPM, y compris `npm run build`. La `npm run build` commande est définie dans le `package.json` fichier et a pour effet de compiler le projet webpack et de déclencher la génération de la bibliothèque cliente.
+   Inspect la sortie du terminal. Vous verrez que la commande Maven a exécuté plusieurs scripts NPM, y compris `npm run build`. La `npm run build` commande est définie dans le `package.json` fichier et a pour effet de compiler le projet webpack et de déclencher la génération de la bibliothèque cliente.
 
-1. inspect le fichier `ui.frontend/dist/clientlib-site/site.css`:
+1. Inspect le fichier `ui.frontend/dist/clientlib-site/site.css`:
 
    ![CSS du site compilé](../assets/style-cif-component/comiled-site-css.png)
 
@@ -141,7 +141,7 @@ Ensuite, apportez une petite modification au style Teaser pour voir comment fonc
    >
    > Les fichiers de ce type sont ignorés du contrôle de code source, puisqu’ils doivent être générés pendant la génération.
 
-1. inspect le fichier `ui.frontend/clientlib.config.js`.
+1. Inspect le fichier `ui.frontend/clientlib.config.js`.
 
    ```js
    /* clientlib.config.js*/
@@ -184,7 +184,7 @@ Ensuite, apportez une petite modification au style Teaser pour voir comment fonc
 
    **clientlib-grid** : inclut la page CSS nécessaire pour activer la fonction de grille réactive AEM. L’utilisation de la grille AEM active le mode [de](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/configuring-responsive-layout.html#include-the-responsive-css) mise en page dans l’éditeur AEM et permet aux auteurs de contenu de redimensionner les composants. La catégorie est `venia.grid` et est incorporée dans la `venia.base` bibliothèque.
 
-1. inspect les fichiers `customheaderlibs.html` et `customfooterlibs.html` sous `ui.apps/src/main/content/jcr_root/apps/venia/components/page`:
+1. Inspect les fichiers `customheaderlibs.html` et `customfooterlibs.html` sous `ui.apps/src/main/content/jcr_root/apps/venia/components/page`:
 
    ![Scripts d’en-tête et de pied de page personnalisés](../assets/style-cif-component/custom-header-footer-script.png)
 
@@ -249,7 +249,7 @@ Ensuite, vérifiez l’inclusion des bibliothèques clientes dans la page.
    </html>
    ```
 
-   Les bibliothèques clientes lorsqu’elles sont diffusées sur la page sont précédées d’un préfixe `/etc.clientlibs` et sont diffusées par le biais d’un [proxy](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) afin d’éviter d’exposer quelque chose de sensible dans `/apps` ou `/libs`.
+   Les bibliothèques clientes lorsqu’elles sont diffusées sur la page sont précédées d’un préfixe `/etc.clientlibs` et sont diffusées par le biais d’un [proxy](/help/implementing/developing/introduction/clientlibs.md) afin d’éviter d’exposer quelque chose de sensible dans `/apps` ou `/libs`.
 
    Remarquez `venia/clientlibs/clientlib-site.min.css` et `venia/clientlibs/clientlib-site.min.js`. Il s’agit des fichiers CSS et Javascript compilés dérivés du `ui.frontend` module.
 
@@ -366,7 +366,7 @@ Revenez à l&#39;IDE et au projet généré.
 
    Enregistrez les modifications et le webpack-dev-server devrait automatiquement actualiser avec les nouveaux styles.
 
-1. ajoutez une ombre portée et ajoutez des coins arrondis au produit Teaser.
+1. Ajoutez une ombre portée et ajoutez des coins arrondis au produit Teaser.
 
    ```scss
     .item__root {
@@ -482,6 +482,6 @@ Utilisez le système [Style](https://docs.adobe.com/content/help/fr-FR/experienc
 * [Archétype de projet AEM](https://github.com/adobe/aem-project-archetype)
 * [Composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components)
 * [Configuration d’un Environnement de développement AEM local](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
-* [Bibliothèques côté client](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html)
+* [Bibliothèques côté client](/help/implementing/developing/introduction/clientlibs.md)
 * [Prise en main de AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 * [Développer avec le système de style](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
