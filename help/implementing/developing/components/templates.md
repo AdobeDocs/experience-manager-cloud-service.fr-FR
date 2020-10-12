@@ -2,10 +2,10 @@
 title: Modèles de page
 description: Les modèles de page sont utilisés lors de la création d'une page qui sera utilisée comme base pour la nouvelle page.
 translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
 workflow-type: tm+mt
-source-wordcount: '3221'
-ht-degree: 63%
+source-wordcount: '3228'
+ht-degree: 64%
 
 ---
 
@@ -115,8 +115,8 @@ Lors de la création d’un modèle modifiable :
 >The editor client library assumes the presence of the `cq.shared` namespace in content pages, and if it is absent the JavaScript error `Uncaught TypeError: Cannot read property 'shared' of undefined` will result.
 >
 >`cq.shared` est inclus dans tous les exemples de pages de contenu. Par conséquent, tout contenu basé sur ces pages inclut automatiquement `cq.shared`. Toutefois, si vous décidez de créer vos propres pages de contenu à partir de zéro, sans vous servir de l’exemple de contenu, vous devez veiller à inclure l’espace de noms `cq.shared`.
-
-<!--See [Using Client-Side Libraries](/help/sites-developing/clientlibs.md) for further information.-->
+>
+>Pour plus d’informations, voir [Utilisation des bibliothèques côté client](/help/implementing/developing/introduction/clientlibs.md).
 
 >[!CAUTION]
 >
