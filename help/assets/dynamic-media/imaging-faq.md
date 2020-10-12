@@ -146,7 +146,8 @@ Vous devez envoyer la demande d’utilisation de l’imagerie dynamique ; elle 
 Les demandes sont traitées dans l’ordre de réception par l’équipe du support technique, suivant la liste d’attente.
 
 >[!NOTE]
-Le délai d’exécution peut être relativement long, car l’activation de l’imagerie dynamique implique qu’Adobe efface le cache. Seul un petit nombre de transitions peut donc être traité simultanément.
+>
+>Le délai d’exécution peut être relativement long, car l’activation de l’imagerie dynamique implique qu’Adobe efface le cache. Seul un petit nombre de transitions peut donc être traité simultanément.
 
 ## Quels sont les risques liés au passage à l’imagerie dynamique ? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
@@ -168,7 +169,8 @@ Au cours de la transition initiale, les images non mises en cache accèdent dir
 1. Répétez ce test sur d’autres navigateurs et avec différentes conditions d’utilisation.
 
 >[!NOTE]
-Toutes les images ne sont pas converties. L’imagerie dynamique détermine si la conversion est requise en vue d’améliorer les performances. Dans certains cas, si aucune amélioration des performances n’est attendue, ou que le format n’est pas JPEG ou PNG, l’image n’est pas convertie.
+>
+>Toutes les images ne sont pas converties. L’imagerie dynamique détermine si la conversion est requise en vue d’améliorer les performances. Dans certains cas, si aucune amélioration des performances n’est attendue, ou que le format n’est pas JPEG ou PNG, l’image n’est pas convertie.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
 

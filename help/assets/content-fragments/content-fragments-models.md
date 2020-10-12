@@ -93,12 +93,13 @@ Le modèle de fragment de contenu définit la structure des fragments de contenu
    ![propriétés de champ](assets/cfm-models-05.png)
 
    >[!NOTE]
-   Pour le type données **texte multiligne**, il est possible de définir le **type par défaut** en tant que :
-   * **Texte enrichi**
-   * **Texte (Markdown)**
-   * **Texte brut**
-   Si elle n’est pas spécifiée, la valeur par défaut **Texte enrichi** est utilisée pour ce champ.
-   La modification du **type par défaut** dans un modèle de fragment de contenu prend effet uniquement sur un fragment de contenu existant et lié après l’ouverture et l’enregistrement du fragment dans l’éditeur.
+   >
+   >Pour le type données **texte multiligne**, il est possible de définir le **type par défaut** en tant que :
+   >* **Texte enrichi**
+   >* **Texte (Markdown)**
+   >* **Texte brut**
+   >Si elle n’est pas spécifiée, la valeur par défaut **Texte enrichi** est utilisée pour ce champ.
+   >La modification du **type par défaut** dans un modèle de fragment de contenu prend effet uniquement sur un fragment de contenu existant et lié après l’ouverture et l’enregistrement du fragment dans l’éditeur.
 
 1. **Pour supprimer un champ**
 
@@ -113,7 +114,8 @@ Le modèle de fragment de contenu définit la structure des fragments de contenu
 ## Suppression d’un modèle de fragment de contenu {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
-La suppression d’un modèle de fragment de contenu peut avoir un impact sur les fragments dépendants.
+>
+>La suppression d’un modèle de fragment de contenu peut avoir un impact sur les fragments dépendants.
 
 Pour supprimer un modèle de fragment de contenu :
 
@@ -123,7 +125,8 @@ Pour supprimer un modèle de fragment de contenu :
 1. Sélectionnez votre modèle, puis utilisez l’option **de suppression** de la barre d’outils.
 
    >[!NOTE]
-   Si le modèle est référencé, un avertissement s’affiche. Prenez alors les mesures qui s’imposent.
+   >
+   >Si le modèle est référencé, un avertissement s’affiche. Prenez alors les mesures qui s’imposent.
 
 ## Publication d’un modèle de fragment de contenu   {#publishing-a-content-fragment-model}
 
@@ -137,4 +140,5 @@ Pour publier un modèle de fragment de contenu :
 1. Sélectionnez votre modèle, puis l’option de **publication** dans la barre d’outils.
 
    >[!NOTE]
-   Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection indique cela, ainsi que le fait que le modèle sera publié avec le fragment.
+   >
+   >Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection indique cela, ainsi que le fait que le modèle sera publié avec le fragment.
