@@ -1,11 +1,11 @@
 ---
 title: Système de style
 description: Le système de style permet à un auteur de modèles de définir des classes de style dans la stratégie de contenu d’un composant, de façon à pouvoir sélectionner ces classes lors de la modification du composant sur une page. Ces styles peuvent être des variantes visuelles d’un composant, le rendant ainsi plus flexible.
-translation-type: ht
-source-git-commit: 130b372a9450c5c632715b098fd5c5ebf61bdf0d
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
+workflow-type: tm+mt
 source-wordcount: '1329'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -41,7 +41,7 @@ L’utilisation du système de style se passe généralement comme suit.
 
 1. Le développeur HTML met en œuvre le code CSS correspondant (et, éventuellement, le code JS) pour que chaque variante visuelle ait l’apparence définie.
 
-1. Le développeur AEM place le code CSS (et en option, JS) fourni dans une bibliothèque cliente et le déploie. <!--The AEM developer places the provided CSS (and optional JS) in a [Client Library](/help/sites-developing/clientlibs.md) and deploys it.-->
+1. Le développeur AEM place le code CSS (et en option, JS) fourni dans une [bibliothèque cliente](/help/implementing/developing/introduction/clientlibs.md) et le déploie.
 
 1. Le développeur AEM ou l’auteur de modèles configure les modèles de page et modifie la stratégie de chaque composant stylisé, en ajoutant les classes CSS définies, en attribuant des noms conviviaux à chaque style et en indiquant les styles qui peuvent être combinés.
 
@@ -105,9 +105,7 @@ Si vous souhaitez utiliser le système de style pour vos propres composants, pro
 
 >[!CAUTION]
 >
->Pour pouvoir fonctionner, les classes CSS (ainsi que toute classe JavaScript nécessaire) configurées en tant que propriétés de style d’une stratégie de composants doivent être déployées comme bibliothèques clientes.
-
-<!--The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.-->
+>The CSS classes (as well as any necessary Javascript) configured as style properties of a component&#39;s policy must be deployed as [Client Libraries](/help/implementing/developing/introduction/clientlibs.md) in order to work.
 
 ## Configuration {#setup}
 
