@@ -1,12 +1,12 @@
 ---
 sub-product: Implémentation pour AEM as a Cloud Service
 user-guide-title: Implémentation pour AEM as a Cloud Service
-breadcrumb-title: Implementing Guide
-user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
+breadcrumb-title: Guide d’implémentation
+user-guide-description: Découvrez comment personnaliser votre déploiement d’Experience Manager as a Cloud Service, y compris des rubriques sur le déploiement et le développement.
 translation-type: tm+mt
-source-git-commit: fa7d271a047277afe0a4bad709d1223224c92fb8
+source-git-commit: 1a282bdaca02f47d7936222da8522e74831a4572
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '420'
 ht-degree: 78%
 
 ---
@@ -42,6 +42,7 @@ ht-degree: 78%
    + [Utilisation des adaptateurs Sling](developing/introduction/sling-adapters.md)
    + [Utilisation de Sling Resource Merger dans AEM as a Cloud Service](developing/introduction/sling-resource-merger.md)
    + [Recouvrements dans AEM as a Cloud Service](developing/introduction/overlays.md)
+   + [Utilisation de bibliothèques côté client](developing/introduction/clientlibs.md)
    + [Journalisation](developing/introduction/logging.md)
    + [API d’AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Outil de comparaison des pages](/help/implementing/developing/introduction/page-diff.md)
@@ -78,7 +79,7 @@ ht-degree: 78%
 + Personnalisation   {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [Configuration de ContextHub](developing/personalization/configuring-contexthub.md)
-   + [ajouter ContextHub aux pages](developing/personalization/adding-contexthub.md)
+   + [Ajouter ContextHub aux pages](developing/personalization/adding-contexthub.md)
    + [Exemples de candidats de magasins](developing/personalization/sample-stores.md)
    + [Exemples de modules de stockage](developing/personalization/sample-modules.md)
    + [Diagnostic ContextHub](developing/personalization/contexthub-diagnostics.md)
