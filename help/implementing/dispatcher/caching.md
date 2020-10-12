@@ -1,11 +1,11 @@
 ---
 title: Mise en cache dans AEM as a Cloud Service
 description: 'Mise en cache dans AEM as a Cloud Service '
-translation-type: ht
-source-git-commit: 18c2f70acd33c83a0d98ccb658d3e9be18b34c8b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
+workflow-type: tm+mt
 source-wordcount: '1358'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -113,7 +113,7 @@ Le réseau de diffusion de contenu géré par Adobe respecte les TTL et il n’e
 
 ## Bibliothèques côté client et cohérence entre les versions {#content-consistency}
 
-Les pages sont composées de code HTML, JavaScript et CSS, ainsi que d’images. Nous vous recommandons d’utiliser les bibliothèques côté client (clientlibs) pour importer des ressources JavaScript et CSS dans des pages HTML, en tenant compte des dépendances entre les bibliothèques JS.
+Les pages sont composées de code HTML, JavaScript et CSS, ainsi que d’images. Customers are encouraged to leverage the [Client-Side Libraries (clientlibs) framework](/help/implementing/developing/introduction/clientlibs.md) to import Javascript and CSS resources into HTML pages, taking into account dependencies between JS libraries.
 
 Le framework clientlibs fournit une gestion automatique des versions, ce qui signifie que les développeurs peuvent archiver les modifications apportées aux bibliothèques JS dans le contrôle de code source et que la dernière version sera disponible lorsqu’un client transfère sa version. Sans cela, les développeurs devraient modifier manuellement le code HTML avec des références à la nouvelle version de la bibliothèque, ce qui est particulièrement onéreux si de nombreux modèles HTML partagent la même bibliothèque.
 
