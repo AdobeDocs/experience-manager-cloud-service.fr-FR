@@ -2,7 +2,7 @@
 title: SPA et rendu côté serveur
 description: L’utilisation du rendu côté serveur dans votre application d’une seule page peut accélérer le chargement initial de la page, puis transmettre le rendu au client.
 translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Les sections suivantes décrivent comment Adobe I/O Runtime peut être utilisé 
 
 >[!NOTE]
 >
->adobe recommande une instance Adobe I/O Runtime distincte pour chaque environnement AEM (auteur, publication, étape, etc.).
+>Adobe recommande une instance Adobe I/O Runtime distincte pour chaque environnement AEM (auteur, publication, étape, etc.).
 
 ## Configuration du rendu à distance {#remote-content-renderer-configuration}
 
@@ -118,7 +118,7 @@ Les deux modèles sont valides et pris en charge par AEM. Toutefois, il faut ten
     </ul> </td>
    <td>
     <ul>
-     <li>Les ressources de bibliothèque cliente requises par l'application, telles que CSS et JavaScript, devront être rendues disponibles par le développeur AEM via la <code>allowProxy</code> propriété<br /> </li>
+     <li>Les ressources de bibliothèque cliente requises par l'application, telles que CSS et JavaScript, devront être rendues disponibles par le développeur AEM via la <code><a href="/help/implementing/developing/introduction/clientlibs.md">allowProxy</a></code> propriété<br /> </li>
      <li>Les ressources doivent être synchronisées entre AEM et Adobe I/O Runtime<br /> </li>
      <li>Pour activer la création de l’application d’une seule page, un serveur proxy pour Adobe I/O Runtime peut être nécessaire.</li>
     </ul> </td>
@@ -180,7 +180,7 @@ La configuration du gestionnaire par défaut doit être configurée comme décri
 Pour qu’une servlet récupère et renvoie du contenu qui peut être injecté dans la page :
 
 1. Assurez-vous que votre serveur distant est accessible.
-1. ajoutez l’un des fragments de code suivants sur le modèle HTML d’un composant AEM.
+1. Ajoutez l’un des fragments de code suivants sur le modèle HTML d’un composant AEM.
 1. Vous pouvez éventuellement créer ou modifier les configurations OSGi.
 1. Parcourir le contenu de votre site
 
