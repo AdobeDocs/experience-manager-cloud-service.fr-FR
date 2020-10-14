@@ -2,9 +2,9 @@
 title: Profils d’image Dynamic Media
 description: Créez des profils d’image Dynamic Media qui contiennent des paramètres pour le masquage flou et le recadrage intelligent ou l’échantillon intelligent, ou les deux, puis appliquez le profil à un dossier de ressources d’images.
 translation-type: tm+mt
-source-git-commit: 35bf35cb68ffc82539fe65750486a6db98480207
+source-git-commit: 867303fd42ed73d7c7dfb5cc1e3612f05ffea10f
 workflow-type: tm+mt
-source-wordcount: '2737'
+source-wordcount: '2738'
 ht-degree: 99%
 
 ---
@@ -16,7 +16,7 @@ Lorsque vous chargez des images, vous pouvez les recadrer automatiquement en app
 
 >[!IMPORTANT]
 >
->Les profils d’image ne s’appliquent pas aux fichiers PDF, GIF ou INDD (Adobe InDesign).
+>Les profils d’image ne s’appliquent pas aux fichiers PDF, GIF animé ou INDD (Adobe InDesign).
 
 ## Options de recadrage {#crop-options}
 
