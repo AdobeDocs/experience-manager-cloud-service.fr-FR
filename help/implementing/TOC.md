@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: 1a282bdaca02f47d7936222da8522e74831a4572
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 78%
+ht-degree: 79%
 
 ---
 
@@ -62,12 +62,12 @@ ht-degree: 78%
    + [Sans tête et hybride avec AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Activation de l’exportateur JSON pour un composant](developing/components/enabling-json-exporter.md) 
    + des applications sur une seule page ;{#spa}
-      + [Présentation et présentation des applications monopages](developing/spa/introduction.md)
-      + [Didacticiel sur le WKND SPA](developing/spa/wknd-tutorial.md)
+      + [SPA Introduction et présentation](developing/spa/introduction.md)
+      + [Didacticiel sur SPA WKND](developing/spa/wknd-tutorial.md)
       + [Prise en main à l’aide de Réaction](developing/spa/getting-started-react.md)
       + [Prise en main à l’aide de Angular](developing/spa/getting-started-angular.md)
       + [SPA Deep Dives](developing/spa/deep-dives.md)
-      + [Développement d’applications monopages pour AEM](developing/spa/developing.md)
+      + [Développement de SPA pour l&#39;AEM](developing/spa/developing.md)
       + [Aperçu de l’éditeur d’application d’une seule page](developing/spa/editor-overview.md)
       + [Plan directeur d’applications sur une seule page (SPA)](developing/spa/blueprint.md)
       + [Composant de page SPA](developing/spa/page-component.md)
@@ -75,7 +75,7 @@ ht-degree: 78%
       + [Routage de modèle](developing/spa/routing.md)
       + [Intégration du lancement](developing/spa/launch-integration.md)
       + [Rendu côté serveur](developing/spa/ssr.md)
-      + [Documents de référence SPA](developing/spa/reference-materials.md)
+      + [documents de référence SPA](developing/spa/reference-materials.md)
 + Personnalisation   {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [Configuration de ContextHub](developing/personalization/configuring-contexthub.md)
