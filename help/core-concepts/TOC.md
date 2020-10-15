@@ -1,12 +1,12 @@
 ---
 sub-product: Concepts de base d’AEM as a Cloud Service
 user-guide-title: Concepts de base d’AEM as a Cloud Service
-breadcrumb-title: Core Concepts Guide
-user-guide-description: This guide provides an introduction to the core concepts of Experience Manager as a Cloud Service, including the architecture of the new service.
+breadcrumb-title: Guide des concepts de base
+user-guide-description: Ce guide présente les concepts de base d’Experience Manager as a Cloud Service, y compris l’architecture du nouveau service.
 translation-type: tm+mt
 source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
 workflow-type: tm+mt
-source-wordcount: '37'
+source-wordcount: '63'
 ht-degree: 100%
 
 ---
