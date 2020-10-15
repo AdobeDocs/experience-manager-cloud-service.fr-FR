@@ -2,10 +2,10 @@
 title: Détails de l’environnement de génération
 description: Détails de la création d'Environnements - Cloud Services
 translation-type: tm+mt
-source-git-commit: 34087724d41de1fc4303ddbbb92122760d360e77
+source-git-commit: 3e76f7273393f104347611a8f0238e3722714b2b
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 82%
+source-wordcount: '732'
+ht-degree: 84%
 
 ---
 
@@ -74,7 +74,7 @@ Customers who want to use Java 11 in their projects can do so using the [Apache 
 >Supported vendor values are `oracle`  and `sun`and the supported version values are `1.8`, `1.11`, and `11`.
 
 >[!NOTE]
->La génération du projet Cloud Manager utilise toujours Java 8 pour appeler Maven. Par conséquent, la vérification ou l’application de la version Java configurée dans le module externe de la chaîne d’outils via des modules externes tels que le module externe [](https://maven.apache.org/enforcer/maven-enforcer-plugin/) Apache Maven Enforcer ne fonctionne pas et ces modules externes ne doivent pas être utilisés.
+>La création du projet Cloud Manager continue à utiliser Java 8 pour appeler Maven. De ce fait, la vérification ou l’application de la version Java configurée dans le module externe de la chaîne d’outils par le biais de modules externes comme [Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/) ne fonctionne pas et ils ne doivent pas être utilisés.
 
 ## Variables d’environnement {#environment-variables}
 
@@ -111,7 +111,7 @@ Les variables actives peuvent être répertoriées :
 
 `$ aio cloudmanager:list-pipeline-variables PIPELINEID`
 
-Les noms des variables ne peuvent contenir que des caractères alphanumériques et des caractères de soulignement (_). Par convention, les noms doivent être entièrement en majuscules. Il existe une limite de 200 variables par pipeline, chaque nom doit comporter moins de 100 caractères et chaque valeur doit être inférieure à 2 048 caractères.
+Les noms des variables ne peuvent contenir que des caractères alphanumériques et des caractères de soulignement (_). Par convention, les noms doivent être entièrement en majuscules. Il existe une limite de 200 variables par pipeline, chaque nom doit comporter moins de 100 caractères et chaque valeur doit comporter moins de 2 048 caractères dans le cas des variables de type chaîne et 500 caractères dans le cas des variables de type chaîne secrète.
 
 En cas d’utilisation dans un fichier `Maven pom.xml`, il est généralement utile de mapper ces variables aux propriétés Maven en suivant une syntaxe similaire à celle-ci :
 
@@ -187,5 +187,4 @@ Certaines versions nécessitent d&#39;autres packages système pour fonctionner 
 Cette même technique peut être utilisée pour installer des packages spécifiques à la langue, c’est-à-dire utilisée `gem` pour les packages RubyGems ou `pip` pour les packages Python.
 
 >[!NOTE]
->
 >Installer un package système de cette manière ne l&#39;installe **pas** dans l&#39;environnement d&#39;exécution utilisé pour exécuter Adobe Experience Manager. Si vous avez besoin d&#39;un package système installé sur l&#39;environnement AEM, contactez votre représentant Adobe.
