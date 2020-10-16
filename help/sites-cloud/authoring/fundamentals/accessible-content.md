@@ -2,10 +2,10 @@
 title: Création de contenu accessible pour Adobe Experience Manager as a Cloud Service (conformité WCAG 2.1)
 description: Utilisez AEM as a Cloud Service pour rendre le contenu web accessible et utilisable par les personnes en situation de handicap
 translation-type: tm+mt
-source-git-commit: fb6c90078e9da011a71093fcdab1a50faded5daa
+source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
 workflow-type: tm+mt
-source-wordcount: '14057'
-ht-degree: 100%
+source-wordcount: '14060'
+ht-degree: 99%
 
 ---
 
@@ -26,6 +26,7 @@ En outre, voir :
 
 * Notre [Guide rapide relatif à WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md).
 * Les [rapports de conformité à l’accessibilité pour les solutions Adobe](https://www.adobe.com/accessibility/compliance.html).
+* [Accessibilité dans les ressources](/help/assets/accessibility.md)
 * [Configuration de l’éditeur de texte enrichi pour produire du contenu accessible](/help/implementing/developing/extending/rte-accessible-content.md)
 
 Les règles sont classées selon trois niveaux de conformité : niveau A (le plus bas), niveau AA et niveau AAA (le plus élevé). Pour résumer, les niveaux sont définis comme suit :
