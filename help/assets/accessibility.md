@@ -3,9 +3,9 @@ title: Accessibilité dans [!DNL Experience Manager Assets]
 description: Découvrez comment les fonctions d’accessibilité [!DNL Adobe Experience Manager] d’un Cloud Service aident les utilisateurs handicapés.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
+source-git-commit: ffdecc8439b96b3bfcfd0571304a7917135684ca
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1895'
 ht-degree: 2%
 
 ---
@@ -77,7 +77,7 @@ De nombreux éléments de l’interface utilisateur qui peuvent être cliqués o
 
 ### Raccourcis clavier dans les ressources {#keyboard-shortcuts}
 
-Les actions suivantes des ressources fonctionnent avec les raccourcis clavier répertoriés. La plupart des raccourcis clavier qui s’appliquent aux [!DNL Experience Manager] consoles s’appliquent également aux ressources. See [Keyboard Shortcuts for Consoles](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/essentials/keyboard-shortcuts.html). Découvrez comment [activer ou désactiver les raccourcis clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Les actions suivantes des ressources fonctionnent avec les raccourcis clavier répertoriés. La plupart des raccourcis clavier qui s’appliquent aux [!DNL Experience Manager] consoles s’appliquent également aux ressources. See [keyboard shortcuts for Consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md). Découvrez comment [activer ou désactiver les raccourcis clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 | Interface utilisateur ou scénario | Raccourci clavier | Action |
 |---|---|---|
@@ -142,7 +142,7 @@ Lors de la navigation dans le référentiel d’actifs, les fonctionnalités sui
 * Les éléments de chaque ligne de la vue de liste sont annoncés comme éléments de la même ligne par les lecteurs d’écran.
 * La sélection de l’utilisateur lors de la navigation à l’aide de `Tab` la clé peut passer à l’option de fermeture dans la prévisualisation de version.
 * Lorsque vous utilisez le clavier pour naviguer, les options d’interface utilisateur exploitables mises en surbrillance ont une mise au point visuelle plus visible et un contraste amélioré. Elle permet à l’utilisateur d’identifier plus facilement la zone ciblée.
-* L’utilisation de la `Esc` touche pour supprimer les icônes d’action rapide de la vue de miniature ne supprime pas la sélection du clavier du dernier élément sélectionné.
+* L&#39;utilisation de la `Esc` touche pour supprimer les icônes d&#39;action rapide de la vue de miniature ne supprime pas la sélection du clavier du dernier élément sélectionné.
 * Une fois une ressource sélectionnée, un raccourci `Alt + 4` clavier vous permet d’ouvrir la liste [!UICONTROL Références] dans le rail de gauche. A l’aide de `Tab` la touche, les utilisateurs peuvent parcourir les entrées de référence non nulles. En parcourant uniquement les entrées de référence non nulles, vous économisez également les efforts et les touches.
 * Les commentaires sur une ressource sont disponibles dans la chronologie de la ressource. Il est accessible si vous accédez au rail gauche à l’aide d’un clavier ou d’un raccourci clavier.
 * [!UICONTROL Les paramètres] de vue de [!DNL Experience Manager] sont accessibles à l’aide du clavier. Les utilisateurs peuvent parcourir les tailles de carte disponibles à l’aide des touches fléchées, puis sélectionner et passer d’un onglet à l’autre pour parcourir et définir d’autres éléments dans la vue Paramètres de Vue existante.
@@ -192,7 +192,7 @@ Lors du filtrage des résultats de la recherche :
 
 ## Partage de ressources {#share-assets}
 
-<!-- TBD: Accessibility in DA, BP, AAL? Asked CCE team for AAL content?
+<!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed there's no content.
 -->
 
 Lors du partage de fichiers, les fonctionnalités suivantes améliorent l’accessibilité :
