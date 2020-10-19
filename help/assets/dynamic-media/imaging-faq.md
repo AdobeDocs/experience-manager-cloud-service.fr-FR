@@ -1,11 +1,11 @@
 ---
 title: Imagerie dynamique
 description: L’imagerie dynamique utilise les caractéristiques de visualisation uniques de chaque utilisateur pour diffuser automatiquement les images optimisées pour leur expérience, ce qui se traduit par des performances accrues et une meilleure interaction.
-translation-type: ht
-source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
-workflow-type: ht
-source-wordcount: '1720'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 24d929702fd9eb31b95fdd6d97c7b9978d919804
+workflow-type: tm+mt
+source-wordcount: '1730'
+ht-degree: 98%
 
 ---
 
@@ -111,8 +111,8 @@ Votre premier domaine personnalisé n’entraîne aucun coût supplémentaire av
 
 Vous devez envoyer la demande d’utilisation de l’imagerie dynamique ; elle n’est pas activée automatiquement.
 
-1. Envoyez une demande de support technique (à l’adresse : `s7support@adobe.com`). 
-1. Indiquez les informations suivantes dans votre demande de support :
+1. [Utilisez le Admin Console pour créer un dossier de support.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. Fournissez les informations suivantes dans votre dossier de support :
 
    1. nom, adresse électronique et numéro de téléphone du contact principal.
    1. Tous les domaines à activer pour l’imagerie dynamique (c’est-à-dire `images.company.com` ou `mycompany.scene7.com`).
@@ -146,8 +146,7 @@ Vous devez envoyer la demande d’utilisation de l’imagerie dynamique ; elle 
 Les demandes sont traitées dans l’ordre de réception par l’équipe du support technique, suivant la liste d’attente.
 
 >[!NOTE]
->
->Le délai d’exécution peut être relativement long, car l’activation de l’imagerie dynamique implique qu’Adobe efface le cache. Seul un petit nombre de transitions peut donc être traité simultanément.
+Le délai d’exécution peut être relativement long, car l’activation de l’imagerie dynamique implique qu’Adobe efface le cache. Seul un petit nombre de transitions peut donc être traité simultanément.
 
 ## Quels sont les risques liés au passage à l’imagerie dynamique ? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
@@ -169,8 +168,7 @@ Au cours de la transition initiale, les images non mises en cache accèdent dir
 1. Répétez ce test sur d’autres navigateurs et avec différentes conditions d’utilisation.
 
 >[!NOTE]
->
->Toutes les images ne sont pas converties. L’imagerie dynamique détermine si la conversion est requise en vue d’améliorer les performances. Dans certains cas, si aucune amélioration des performances n’est attendue, ou que le format n’est pas JPEG ou PNG, l’image n’est pas convertie.
+Toutes les images ne sont pas converties. L’imagerie dynamique détermine si la conversion est requise en vue d’améliorer les performances. Dans certains cas, si aucune amélioration des performances n’est attendue, ou que le format n’est pas JPEG ou PNG, l’image n’est pas convertie.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
 
