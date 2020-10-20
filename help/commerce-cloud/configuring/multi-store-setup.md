@@ -2,7 +2,7 @@
 title: Configuration multi-magasin
 description: Configuration multi-magasin
 translation-type: tm+mt
-source-git-commit: 94c6abef36b6add300ba3b24855ebf3edf10e1ed
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 4%
@@ -18,7 +18,7 @@ Présentation vidéo détaillant les options d’intégration de plusieurs Vues 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
-AEM fonctions de gestion multisite de Live Copy et de la Copie de langue sont utilisées conjointement avec Commerce Integration Framework pour gérer globalement les sites dans les régions et les paramètres régionaux.
+aem fonctions de gestion multisite de Live Copy et de la Copie de langue sont utilisées conjointement avec Commerce Integration Framework pour gérer globalement les sites dans les régions et les paramètres régionaux.
 
 La configuration recommandée consiste à utiliser une relation 1:1 entre le site AEM et la vue de stockage Magento.
 
@@ -32,7 +32,7 @@ Pour connecter un site AEM et AEM CIF Core Components ainsi qu&#39;à une vue de
 
 3. Créez une configuration enfant de la configuration du Cloud Service CIF en procédant comme suit :
 
-   * Dans AEM accédez à Outils -> Général -> Explorateur de configuration
+   * Dans AEM accédez à Outils -> Général -> [Configuration Navigateur](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * Sélectionnez la configuration de base que vous avez créée.
    * Créer une nouvelle configuration en suivant les étapes décrites au point 2 ci-dessus
 
