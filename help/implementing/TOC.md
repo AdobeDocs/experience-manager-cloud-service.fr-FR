@@ -4,10 +4,10 @@ user-guide-title: Implémentation pour AEM as a Cloud Service
 breadcrumb-title: Guide d’implémentation
 user-guide-description: Découvrez comment personnaliser votre déploiement d’Experience Manager as a Cloud Service, y compris des rubriques sur le déploiement et le développement.
 translation-type: tm+mt
-source-git-commit: 1a282bdaca02f47d7936222da8522e74831a4572
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 79%
+source-wordcount: '425'
+ht-degree: 78%
 
 ---
 
@@ -43,6 +43,7 @@ ht-degree: 79%
    + [Utilisation de Sling Resource Merger dans AEM as a Cloud Service](developing/introduction/sling-resource-merger.md)
    + [Recouvrements dans AEM as a Cloud Service](developing/introduction/overlays.md)
    + [Utilisation de bibliothèques côté client](developing/introduction/clientlibs.md)
+   + [Configurations et navigateur de configuration](developing/introduction/configurations.md)
    + [Journalisation](developing/introduction/logging.md)
    + [API d’AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Outil de comparaison des pages](/help/implementing/developing/introduction/page-diff.md)
