@@ -2,10 +2,10 @@
 title: Modèles de fragment de contenu
 description: Les modèles de fragment de contenu sont utilisés pour créer des fragments de contenu avec du contenu structuré.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
 source-wordcount: '739'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -22,12 +22,12 @@ Les modèles de fragment de contenu définissent la structure du contenu pour vo
 
 Pour activer les modèles de fragment de contenu, vous devez :
 
-* activer l’utilisation des modèles de fragment de contenu dans Configuration Manager ;
+* Activer l’utilisation de modèles de fragments de contenu dans le navigateur de configuration
 * appliquer la configuration à votre dossier de ressources ;
 
-### Activation des modèles de fragment de contenu dans Configuration Manager   {#enable-content-fragment-models-in-configuration-manager}
+### Enable Content Fragment Models in Configuration Browser {#enable-content-fragment-models-in-configuration-browser}
 
-Pour [créer un nouveau modèle de fragment de contenu](#creating-a-content-fragment-model), vous **devez** d’abord activer ces modèles à l’aide du gestionnaire de configuration :
+To [create a new Content Fragment Model](#creating-a-content-fragment-model) you **must** first enable them using the [Configuration Browser:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 1. Accédez à **Outils**, **Général**, puis ouvrez l’**explorateur de configurations**.
 2. Sélectionnez l’emplacement approprié pour votre site web.
@@ -35,6 +35,7 @@ Pour [créer un nouveau modèle de fragment de contenu](#creating-a-content-frag
 
    1. Spécifiez un **Titre**.
    2. Sélectionnez **Modèles de fragment de contenu** pour activer leur utilisation.
+
    ![configuration](assets/cfm-models-01.png)
 
 4. Sélectionnez **Créer** pour enregistrer la définition.
@@ -78,6 +79,7 @@ Le modèle de fragment de contenu définit la structure des fragments de contenu
 
    * à gauche : les champs déjà définis 
    * à droite : les **types de données** disponibles pour la création des champs (et les **propriétés** à utiliser une fois les champs créés).
+
    >[!NOTE]
    >
    >Lorsqu’un champ est **obligatoire**, le **libellé** indiqué dans le volet de gauche est signalé par un astérisque (*****).
@@ -87,19 +89,21 @@ Le modèle de fragment de contenu définit la structure des fragments de contenu
 1. **Pour ajouter un champ**
 
    * Faites glisser un type de données à l’emplacement souhaité pour un champ :
+
    ![type de données dans le champ](assets/cfm-models-04.png)
 
    * Une fois qu’un champ a été ajouté au modèle, le panneau de droite affiche les **propriétés** qui peuvent être définies pour ce type de données spécifique. Vous pouvez définir ce qui est obligatoire pour ce champ. Par exemple :
+
    ![propriétés de champ](assets/cfm-models-05.png)
 
    >[!NOTE]
-   >
-   >Pour le type données **texte multiligne**, il est possible de définir le **type par défaut** en tant que :
-   >* **Texte enrichi**
-   >* **Texte (Markdown)**
-   >* **Texte brut**
-   >Si elle n’est pas spécifiée, la valeur par défaut **Texte enrichi** est utilisée pour ce champ.
-   >La modification du **type par défaut** dans un modèle de fragment de contenu prend effet uniquement sur un fragment de contenu existant et lié après l’ouverture et l’enregistrement du fragment dans l’éditeur.
+   Pour le type données **texte multiligne**, il est possible de définir le **type par défaut** en tant que :
+   * **Texte enrichi**
+   * **Texte (Markdown)**
+   * **Texte brut**
+
+   Si elle n’est pas spécifiée, la valeur par défaut **Texte enrichi** est utilisée pour ce champ.
+   La modification du **type par défaut** dans un modèle de fragment de contenu prend effet uniquement sur un fragment de contenu existant et lié après l’ouverture et l’enregistrement du fragment dans l’éditeur.
 
 1. **Pour supprimer un champ**
 
@@ -114,8 +118,7 @@ Le modèle de fragment de contenu définit la structure des fragments de contenu
 ## Suppression d’un modèle de fragment de contenu {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
->
->La suppression d’un modèle de fragment de contenu peut avoir un impact sur les fragments dépendants.
+La suppression d’un modèle de fragment de contenu peut avoir un impact sur les fragments dépendants.
 
 Pour supprimer un modèle de fragment de contenu :
 
@@ -125,8 +128,7 @@ Pour supprimer un modèle de fragment de contenu :
 1. Sélectionnez votre modèle, puis utilisez l’option **de suppression** de la barre d’outils.
 
    >[!NOTE]
-   >
-   >Si le modèle est référencé, un avertissement s’affiche. Prenez alors les mesures qui s’imposent.
+   Si le modèle est référencé, un avertissement s’affiche. Prenez alors les mesures qui s’imposent.
 
 ## Publication d’un modèle de fragment de contenu   {#publishing-a-content-fragment-model}
 
@@ -140,5 +142,4 @@ Pour publier un modèle de fragment de contenu :
 1. Sélectionnez votre modèle, puis l’option de **publication** dans la barre d’outils.
 
    >[!NOTE]
-   >
-   >Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection indique cela, ainsi que le fait que le modèle sera publié avec le fragment.
+   Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection indique cela, ainsi que le fait que le modèle sera publié avec le fragment.
