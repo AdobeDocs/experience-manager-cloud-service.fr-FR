@@ -2,10 +2,10 @@
 title: Modèles de page
 description: Les modèles de page sont utilisés lors de la création d'une page qui sera utilisée comme base pour la nouvelle page.
 translation-type: tm+mt
-source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
 source-wordcount: '3228'
-ht-degree: 64%
+ht-degree: 62%
 
 ---
 
@@ -156,7 +156,7 @@ Une liste de toutes les entrées autorisées est créée. If any configurations 
 Pour créer un dossier, vous pouvez procéder de l’une des façons suivantes :
 
 * Soit par programmation, soit en utilisant CRXDE Lite
-* En utilisant l’explorateur de configurations
+* Using the [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 ## Utilisation de CRXDE Lite {#using-crxde-lite}
 
@@ -189,7 +189,7 @@ Pour créer un dossier, vous pouvez procéder de l’une des façons suivantes 
 
 ### Utilisation de l’explorateur de configurations {#using-the-configuration-browser}
 
-1. Accédez à **Navigation globale** -> **Outils** > **Explorateur de configurations**.
+1. Accédez à **Navigation globale** -> **Outils** > [**Explorateur de configurations**.](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
    The existing folders are listed to the left including the `global` folder.
 
@@ -203,7 +203,7 @@ Pour créer un dossier, vous pouvez procéder de l’une des façons suivantes 
 
 >[!NOTE]
 >
->Dans l’explorateur de configurations, vous pouvez modifier le dossier global et activer l’option **Modèles modifiables** si vous souhaitez créer des modèles dans ce dossier. Il ne s’agit toutefois pas de la méthode recommandée.
+>In the [Configuration Browser,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) you can edit the global folder and activate the **Editable Templates** option if you wish to create templates within this folder, however this is not recommended best practice.
 
 ### ACL et groupes {#acls-and-groups}
 
