@@ -2,9 +2,9 @@
 title: Concepts de création
 description: Concepts de création dans AEM
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 92434d0dc29ac5fe1b395a2d34c8e48e2fdb7c97
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '349'
 ht-degree: 100%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 100%
 Une installation AEM se compose généralement d’au moins deux environnements :
 
 * Création
-* Publication
+* Publication 
 
 Ces environnements interagissent afin que vous puissiez rendre le contenu disponible sur votre site web, pour que vos visiteurs puissent y accéder.
 
@@ -27,10 +27,6 @@ L’environnement de création fournit les mécanismes de création, de mise à 
 ![Diagramme de l’auteur, de l’éditeur et des dispatchers](/help/sites-cloud/authoring/assets/author-publish.png)
 
 Dans l’environnement de création, les fonctions d’AEM sont accessibles dans l’interface utilisateur d’AEM. Dans l’environnement de publication, vous concevez l’aspect de l’interface proposée aux utilisateurs.
-
->[!NOTE]
->
->La documentation d’AEM est elle-même publiée grâce à AEM.
 
 ## Environnement de création {#author-environment}
 
@@ -65,4 +61,4 @@ Pour plus d’informations sur la publication et l’annulation de la publicatio
 
 ## Dispatcher {#dispatcher}
 
-Afin que les visiteurs de votre site web bénéficient de performances optimales, le **[dispatcher](/help/implementing/dispatcher/overview.md)**met en œuvre des mécanismes de mise en cache et d’équilibrage de la charge.
+Afin que les visiteurs de votre site web bénéficient de performances optimales, le **[dispatcher](/help/implementing/dispatcher/overview.md)** met en œuvre des mécanismes de mise en cache et d’équilibrage de la charge.
