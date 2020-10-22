@@ -2,10 +2,10 @@
 title: Règles de qualité du code personnalisé - Cloud Services
 description: Règles de qualité du code personnalisé - Cloud Services
 translation-type: tm+mt
-source-git-commit: 437652f9ed5d0fc4abae22e470b650bd1c2bedb6
+source-git-commit: 457ee90f0c0eeb9325cab0c66694862772390611
 workflow-type: tm+mt
-source-wordcount: '2253'
-ht-degree: 100%
+source-wordcount: '2267'
+ht-degree: 99%
 
 ---
 
@@ -16,8 +16,7 @@ ht-degree: 100%
 Cette page décrit les règles de qualité du code personnalisé exécutées par Cloud Manager qui sont créées selon les bonnes pratiques en matière d’ingénierie AEM.
 
 >[!NOTE]
->
->Les exemples de code utilisés ici ne sont fournis qu’à titre d’exemple.
+>Les exemples de code utilisés ici ne sont fournis qu’à titre d’exemple. Voir [Concepts](https://docs.sonarqube.org/7.4/user-guide/concepts/) pour en savoir plus sur les concepts et les règles de qualité de SonarQube.
 
 ## Règles SonarQube {#sonarqube-rules}
 
