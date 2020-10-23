@@ -2,9 +2,9 @@
 title: Dispatcher en mode cloud
 description: 'Dispatcher en mode cloud '
 translation-type: tm+mt
-source-git-commit: 2bf7578ec5431f98ab7cfff55770766228ba63e2
+source-git-commit: 95e89bc665ee228da0a25a57a3a917a6b4c379ad
 workflow-type: tm+mt
-source-wordcount: '4082'
+source-wordcount: '4073'
 ht-degree: 88%
 
 ---
@@ -35,7 +35,8 @@ Les outils Dispatcher font partie du SDK global d’AEM as a Cloud Service et fo
 ## Téléchargement et extraction des outils {#extracting-the-sdk}
 
 Les outils du répartiteur, qui font partie de l&#39; [AEM en tant que SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)Cloud Service, peuvent être téléchargés à partir d&#39;un fichier zip sur le portail de distribution [de](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) logiciels. Toute nouvelle configuration disponible dans cette nouvelle version des outils du répartiteur peut être utilisée pour le déploiement sur les environnements Cloud exécutant cette version d’AEM dans le Cloud ou une version ultérieure.
-/Users/raiman/Documents/experience-manager-cloud-service.en/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.mdDécompressez le SDK, qui regroupe les outils du répartiteur pour macOS/Linux et Windows.
+
+Décompressez le SDK, qui regroupe les outils du répartiteur pour macOS/Linux et Windows.
 
 **Pour macOS/Linux**, rendez l’artefact de l’outil de répartiteur exécutable et exécutez-le. Il extrait automatiquement les fichiers des outils Dispatcher au sein du répertoire dans lequel vous l’avez stocké (où `version` est la version des outils Dispatcher).
 
