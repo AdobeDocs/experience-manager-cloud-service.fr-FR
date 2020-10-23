@@ -2,10 +2,10 @@
 title: Dispatcher en mode cloud
 description: 'Dispatcher en mode cloud '
 translation-type: tm+mt
-source-git-commit: 720c1cdb6c26bb023a6cbf12aaa935645b0e8661
+source-git-commit: 2bf7578ec5431f98ab7cfff55770766228ba63e2
 workflow-type: tm+mt
-source-wordcount: '4073'
-ht-degree: 91%
+source-wordcount: '4082'
+ht-degree: 88%
 
 ---
 
@@ -34,18 +34,19 @@ Les outils Dispatcher font partie du SDK global d’AEM as a Cloud Service et fo
 
 ## Téléchargement et extraction des outils {#extracting-the-sdk}
 
-Les outils Dispatcher peuvent être téléchargés à partir d’un fichier ZIP sur le portail [Distribution logicielle](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html). Notez que l’accès aux listes de SDK est limité aux environnements AEM Managed Services ou AEM as a Cloud Service. Toute nouvelle configuration disponible dans cette nouvelle version des outils Dispatcher peut être utilisée pour le déploiement dans les environnements cloud exécutant cette version d’AEM en mode cloud ou une version ultérieure.
+Les outils du répartiteur, qui font partie de l&#39; [AEM en tant que SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)Cloud Service, peuvent être téléchargés à partir d&#39;un fichier zip sur le portail de distribution [de](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) logiciels. Toute nouvelle configuration disponible dans cette nouvelle version des outils du répartiteur peut être utilisée pour le déploiement sur les environnements Cloud exécutant cette version d’AEM dans le Cloud ou une version ultérieure.
+/Users/raiman/Documents/experience-manager-cloud-service.en/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.mdDécompressez le SDK, qui regroupe les outils du répartiteur pour macOS/Linux et Windows.
 
-**Pour macOS et Linux**, téléchargez le script shell dans un dossier de votre ordinateur, rendez-le exécutable et exécutez-le. Il extrait automatiquement les fichiers des outils Dispatcher au sein du répertoire dans lequel vous l’avez stocké (où `version` est la version des outils Dispatcher).
+**Pour macOS/Linux**, rendez l’artefact de l’outil de répartiteur exécutable et exécutez-le. Il extrait automatiquement les fichiers des outils Dispatcher au sein du répertoire dans lequel vous l’avez stocké (où `version` est la version des outils Dispatcher).
 
 ```bash
-$ chmod +x DispatcherSDKv<version>.sh
-$ ./DispatcherSDKv<version>.sh
+$ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
+$ ./aem-sdk-dispatcher-tools-<version>-unix.sh
 Verifying archive integrity...  100%   All good.
-Uncompressing DispatcherSDKv<version>  100% 
+Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 ```
 
-**Pour Windows**, téléchargez l’archive ZIP et extrayez-la.
+**Pour Windows**, extrayez le fichier d’archive compressé Dispatcher Tooling.
 
 ## Structure de fichier {#file-structure}
 
@@ -385,7 +386,7 @@ Le script effectue les opérations suivantes :
 
 Il est également possible de tester localement votre configuration Apache et Dispatcher. Il nécessite l&#39;installation locale du docker et votre configuration pour réussir la validation comme décrit ci-dessus.
 
-Exécutez l&#39;outil de validation en utilisant le paramètre &quot;`-d`&quot; qui génère un dossier contenant tous les fichiers de configuration nécessaires au répartiteur. Ensuite, le `docker_run.sh` script peut pointer vers ce dossier. En indiquant le numéro de port (dans l&#39;exemple ci-dessous, 8080) pour exposer le point de terminaison du répartiteur, vous début le conteneur avec votre configuration.
+Exécutez l&#39;outil de validation (notez qu&#39;il est différent de celui `validator.sh` mentionné plus haut) en utilisant le `-d` paramètre qui génère un dossier avec tous les fichiers de configuration du répartiteur. Exécutez ensuite le `docker_run.sh` script, en transmettant ce dossier en tant qu’argument. En indiquant le numéro de port (ici : 8080) pour exposer le point de terminaison du répartiteur, un conteneur Docker est démarré, exécutant le répartiteur avec votre configuration.
 
 ```
 $ validator full -d out src/dispatcher
