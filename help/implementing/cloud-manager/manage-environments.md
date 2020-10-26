@@ -2,10 +2,10 @@
 title: Gestion des environnements - Cloud Service
 description: Gestion des environnements - Cloud Service
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: c015c631f6ad988b1482b45281a2ed9840e6af45
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '830'
+ht-degree: 90%
 
 ---
 
@@ -62,6 +62,16 @@ Un utilisateur disposant des autorisations requises peut créer les types d’en
 
    >[!NOTE]
    >Si vous n’avez pas encore configuré votre pipeline hors production, l’écran *Aperçu* affiche la carte d’où vous pouvez créer votre pipeline hors production.
+
+
+### Affichage des Environnements {#viewing-environment}
+
+La carte **Environnements** de la page Aperçu liste jusqu’à trois environnements.
+
+L’utilisateur peut sélectionner le bouton **Afficher tout** pour accéder à la page de résumé de l’ **Environnement** et vue d’un tableau avec une liste complète d’environnements.
+
+![](assets/environment-view1.png)
+
 
 ## Mise à jour de l’environnement {#updating-dev-environment}
 
