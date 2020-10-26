@@ -2,9 +2,9 @@
 title: Prise en main du développement de sites AEM – Tutoriel WKND
 description: Vous découvrez le développement dans AEM ? Vous avez besoin d’une mise à niveau sur les meilleures pratiques ? Voici l’endroit idéal pour bien commencer ! L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur qui découvre AEM comment implémenter un site web dans AEM en utilisant les normes et les technologies les plus récentes.
 translation-type: tm+mt
-source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
+source-git-commit: 20a19c558be17631889f0253b3ad4e5a71ebcce2
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '254'
 ht-degree: 100%
 
 ---
@@ -31,6 +31,6 @@ La mise en œuvre du tutoriel tire parti de nombreuses fonctionnalités puissant
 * [Archétype de projet Maven AEM](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)
 * [Composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/getting-started/getting-started.html)
-* Modèles Sling
+* [Modèles Sling](https://sling.apache.org/documentation/bundles/models.html)
 * [Modèles modifiables](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
 * [Système de style](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
