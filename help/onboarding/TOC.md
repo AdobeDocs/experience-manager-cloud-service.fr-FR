@@ -4,7 +4,7 @@ user-guide-title: Intégration à AEM as a Cloud Service
 breadcrumb-title: Guide d’intégration
 user-guide-description: Ce guide résume la procédure à suivre pour commencer à utiliser Experience Manager as a Cloud Service, avec les informations d’accès et des informations importantes sur la protection des données.
 translation-type: tm+mt
-source-git-commit: 6c719411ffa7bd814a515e302024ac433f173207
+source-git-commit: 207ed100748d87e65f54e7dfe5bb81e100845cc1
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 95%
@@ -44,7 +44,7 @@ ht-degree: 95%
       + [Configuration du projet](getting-access-to-aem-in-cloud/setting-up-project.md)
       + [Présentation de l’environnement de création](getting-access-to-aem-in-cloud/build-environment-details.md)
    + Notes de mise à jour de Cloud Manager {#release-notes-cloud-manager}
-      + [Notes de mise à jour de la version 2020.10.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
+      + [Notes de mise à jour de la version actuelle (2020.10.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
       + [Notes de mise à jour de la version 2020.2.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
 + Préparation à la confidentialité et protection des données {#data-privacy}
    + [Préparation d’AEM aux réglementations sur la protection et la confidentialité des données](data-privacy-and-protection-readiness/aem-readiness.md)
