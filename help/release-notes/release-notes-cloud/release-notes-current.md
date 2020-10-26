@@ -1,10 +1,10 @@
 ---
 title: Notes de mise à jour de la version 2020.9.0 [!DNL Adobe Experience Manager] de Cloud Service.
-description: '[ !DNL Adobe Experience Manager] en tant que notes de mise à jour Cloud Service pour la version 2020.9.0.'
+description: '[!DNL Adobe Experience Manager] comme notes de mise à jour Cloud Service pour la version 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: 5fb87f82c092552aa5e1c4b569399ec0bbc0da3b
+source-git-commit: ded2efb4020386b058ec6b1286d6dfa078cddfe1
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '781'
 ht-degree: 11%
 
 ---
@@ -22,7 +22,7 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
-* Le SDK JavaScript de l’éditeur d’applications à page unique (SPA) [est désormais open source.](/help/implementing/developing/spa/reference-materials.md)
+* Le SDK JavaScript de l’éditeur d’application à page unique (SPA) [est désormais open source.](/help/implementing/developing/spa/reference-materials.md)
 
 ## [!DNL Adobe Experience Manager Assets]as a Cloud Service{#assets}
 
@@ -87,7 +87,7 @@ Suivez cette section pour en savoir plus sur les nouveautés et les mises à jou
 
 ### Nouveautés {#what-is-new-cra}
 
-* L&#39;Analyseur de préparation du cloud (CRA) dispose d&#39;une console d&#39;état de début qui affiche un bouton **Générer un rapport** explicite sur lequel l&#39;utilisateur peut cliquer pour exécuter l&#39;ARC.
+* L’analyseur de [disponibilité du cloud (CRA)](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.html) dispose d’une console d’état de début qui affiche un bouton **Générer un rapport** explicite sur lequel l’utilisateur peut cliquer pour exécuter l’ARC.
 
 * L&#39;interface utilisateur de l&#39;ARC affiche la progression pendant son exécution. Il affiche les éléments analysés et les résultats trouvés pendant l&#39;exécution.
 
@@ -103,7 +103,7 @@ Suivez cette section pour en savoir plus sur les nouveautés et les mises à jou
 
 ### Nouveautés {#what-is-new-ctt}
 
-* L&#39;outil de transfert de contenu (CTT) prend en charge le magasin de données Azure Blob Store.
+* L&#39;outil de transfert de [contenu (CTT)](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) prend en charge le magasin de données Azure Blob Store.
 
 * L’interface utilisateur du CTT dispose d’une fonction de rechargement automatique qui recharge la page d’aperçu toutes les 30 secondes.
 
