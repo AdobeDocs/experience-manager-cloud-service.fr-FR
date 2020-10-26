@@ -2,7 +2,7 @@
 title: Développement et outil de comparaison des pages
 description: Comprendre le fonctionnement de la fonction Diff de page et son impact sur un développeur
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 57a9026dd944547196e53fecb1cf1213ed793af7
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 52%
@@ -30,7 +30,7 @@ Lors de la comparaison du contenu, l’arborescence entière jusqu’à la page 
 
 Une tâche de nettoyage s’exécute automatiquement pour nettoyer ce contenu temporaire.
 
-## Autorisations {#permissions}
+## Restrictions {#limitations}
 
 La différence se produit côté client par le biais de la comparaison DOM, ce qui rend le processus de différenciation simple. Cependant, il existe un certain nombre de limitations qui doivent être prises en compte par le développeur.
 
