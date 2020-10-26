@@ -2,9 +2,9 @@
 title: Configurations et navigateur de configuration
 description: Comprendre AEM configurations et comment elles gèrent les paramètres de l'espace de travail dans AEM.
 translation-type: tm+mt
-source-git-commit: 174648c78b71ef60d2d2507c3c4fbf18bbdac647
+source-git-commit: 47d2ff211b5c00457793dc7bd321df1139cfc327
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1496'
 ht-degree: 2%
 
 ---
@@ -19,13 +19,13 @@ Les configurations AEM permettent de gérer les paramètres dans AEM et servent 
 Une configuration peut être considérée sous deux angles différents.
 
 * [Un administrateur](#configurations-administrator) utilise des configurations en tant qu’espaces de travail dans AEM pour définir et gérer des groupes de paramètres.
-* [Un développeur](#configurations-developer) utilise le mécanisme de configuration sous-jacent qui implémente les configurations Sling tenant compte du contexte pour conserver et rechercher les paramètres dans AEM.
+* [Un développeur](#configurations-developer) utilise le mécanisme de configuration sous-jacent qui implémente les configurations pour conserver et rechercher les paramètres dans AEM.
 
-En d&#39;autres termes, du point de vue d&#39;un administrateur, les configurations sont la façon dont vous créez des espaces de travail pour gérer les paramètres dans AEM, alors que le développeur doit comprendre comment AEM persiste et examine ces configurations dans le référentiel.
+En résumé : du point de vue d&#39;un administrateur, les configurations sont la façon dont vous créez des espaces de travail pour gérer les paramètres dans AEM, tandis que le développeur doit comprendre comment AEM utilise et gère ces configurations dans le référentiel.
 
 Quelle que soit votre perspective, les configurations répondent à deux objectifs principaux en AEM :
 
-* Les configurations activent certaines fonctionnalités pour des groupes d’utilisateurs.
+* Les configurations activent certaines fonctionnalités pour certains groupes d’utilisateurs.
 * Les configurations définissent les droits d’accès pour ces fonctionnalités.
 
 ## Configurations en tant qu’administrateur {#configurations-administrator}
@@ -38,6 +38,8 @@ Des configurations peuvent être créées pour de nombreuses fonctionnalités di
 * [Segments Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
 * [Modèles modifiables](/help/sites-cloud/authoring/features/templates.md)
+
+### Exemple {#administrator-example}
 
 Par exemple, un administrateur peut créer deux configurations pour les modèles modifiables.
 
@@ -122,7 +124,7 @@ Bien que l’ [administrateur et les utilisateurs puissent considérer les confi
 
 Le contenu référence sa configuration associée par le biais d’une `cq:conf` propriété. aem effectue une recherche basée sur le contenu et sa `cq:conf` propriété contextuelle permet de trouver la configuration appropriée.
 
-### Un exemple simple   {#example}
+### Exemple {#developer-example}
 
 Dans cet exemple, supposons que vous ayez un code d&#39;application qui s&#39;intéresse aux paramètres DAM.
 
@@ -193,7 +195,7 @@ Pour ce faire, la recherche de configuration dans AEM dispose d’un mécanisme 
 
 ### Utilisation des configurations {#using-configurations}
 
-Les configurations dans AEM sont basées sur les configurations Sling de prise en compte du contexte. Les lots Sling fournissent une API de service qui peut être utilisée pour obtenir des configurations contextuelles. Les configurations sensibles au contexte sont des configurations qui sont liées à une ressource de contenu ou à une arborescence de ressources, comme [décrit dans l&#39;exemple précédent.](#example)
+Les configurations dans AEM sont basées sur les configurations Sling de prise en compte du contexte. Les lots Sling fournissent une API de service qui peut être utilisée pour obtenir des configurations contextuelles. Les configurations sensibles au contexte sont des configurations qui sont liées à une ressource de contenu ou à une arborescence de ressources, comme [décrit dans l&#39;exemple précédent.](#developer-example)
 
 Pour plus d’informations sur les configurations basées sur le contexte, des exemples et la manière de les utiliser, [consultez la documentation Sling.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
 
