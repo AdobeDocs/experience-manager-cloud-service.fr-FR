@@ -2,7 +2,7 @@
 title: Notes de mise à jour de Cloud Manager en AEM version 2020.10.0 du Cloud Service
 description: Notes de mise à jour de Cloud Manager en AEM version 2020.10.0 du Cloud Service
 translation-type: tm+mt
-source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
+source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 54%
@@ -31,7 +31,7 @@ La date de publication de Cloud Manager en tant que Cloud Service 2020.10.0 en A
 * Le nombre de variables d’environnement par environnement a été porté à 200.
 
 * La carte d’Environnement de la page Aperçu liste désormais jusqu’à trois environnements. Les utilisateurs peuvent sélectionner le bouton **Afficher tout** pour accéder à la page de résumé de l’Environnement et vue d’un tableau avec une liste complète d’environnements.
-Refer to [Viewing Environments](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) for more details.
+Consultez [Affichage de l’Environnement](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) pour plus d’informations.
 
 
 ### Correctifs {#bug-fixes-cloud-manager}
