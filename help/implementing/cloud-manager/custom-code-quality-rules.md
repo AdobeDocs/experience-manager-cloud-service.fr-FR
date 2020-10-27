@@ -2,10 +2,10 @@
 title: Règles de qualité du code personnalisé - Cloud Services
 description: Règles de qualité du code personnalisé - Cloud Services
 translation-type: tm+mt
-source-git-commit: 457ee90f0c0eeb9325cab0c66694862772390611
+source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
 workflow-type: tm+mt
-source-wordcount: '2267'
-ht-degree: 99%
+source-wordcount: '2285'
+ht-degree: 97%
 
 ---
 
@@ -555,7 +555,7 @@ public void doThis(Resource resource) {
 
 **Clé** : CQRules:AMSCORE-554
 
-**Type** : code Smell
+**Type**: Compatibilité entre les odeurs de code et les Cloud Service
 
 **Gravité** : mineure
 
@@ -569,7 +569,7 @@ Reportez-vous à la section [Traitement des tâches et gestion des événements 
 
 **Clé** : AMSCORE-553
 
-**Type** : code Smell
+**Type**: Compatibilité entre les odeurs de code et les Cloud Service
 
 **Gravité** : mineure
 
@@ -680,7 +680,7 @@ Tout comme *Les packages ne doivent pas contenir de configurations OSGi en doubl
 
 **Clé** : ClassicUIAuthoringMode
 
-**Type** : code Smell
+**Type**: Compatibilité entre les odeurs de code et les Cloud Service
 
 **Gravité** : mineure
 
@@ -692,7 +692,7 @@ La configuration OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` déf
 
 **Clé** : ComponentWithOnlyClassicUIDialog
 
-**Type** : code Smell
+**Type**: Compatibilité entre les odeurs de code et les Cloud Service
 
 **Gravité** : mineure
 
@@ -710,7 +710,7 @@ La documentation des outils de modernisation d’AEM contient des documents et d
 
 **Clé** : ImmutableMutableMixedPackage
 
-**Type** : code Smell
+**Type**: Compatibilité entre les odeurs de code et les Cloud Service
 
 **Gravité** : mineure
 
@@ -724,7 +724,7 @@ Pour plus d’informations, voir [Structure de projet AEM](https://docs.adobe.co
 
 **Clé** : ReverseReplication
 
-**Type** : code Smell
+**Type**: Compatibilité entre les odeurs de code et les Cloud Service
 
 **Gravité** : mineure
 
