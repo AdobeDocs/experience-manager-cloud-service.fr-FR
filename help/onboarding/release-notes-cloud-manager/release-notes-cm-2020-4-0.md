@@ -1,0 +1,40 @@
+---
+title: Notes de mise à jour de Cloud Manager en AEM version 2020.4.0 du Cloud Service
+description: Notes de mise à jour de Cloud Manager en AEM version 2020.4.0 du Cloud Service
+translation-type: tm+mt
+source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 77%
+
+---
+
+
+# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.4.0 {#release-notes}
+
+Cette page présente les Notes de mise à jour de Cloud Manager en AEM en tant que Cloud Service 2020.4.0.
+
+## Date de publication {#release-date}
+
+La date de publication de Cloud Manager en tant que Cloud Service 2020.4.0 est le 09 avril 2020.
+
+## Nouveautés {#whats-new-cloud-manager}
+
+* Les URL de l’éditeur sont désormais disponibles à partir de la page Environnement de l’interface utilisateur Cloud Manager.
+* Modifications de la navigation pour permettre à l’utilisateur de modifier, de changer ou d’ajouter un programme à partir de la page d’aperçu de Cloud Manager.
+* Modifications permettant à l’utilisateur de modifier un programme à partir de la carte de programme sur la page d’entrée de Cloud Manager.
+* Nouveau statut du pipeline **Exécution de pipeline** affiché au niveau de l’environnement auquel il est associé.
+* Améliorations de la lisibilité de la page d’exécution de pipeline. Cela inclut l’affichage du nom du pipeline (pipeline hors production uniquement) et du type, ainsi qu’un badge pour indiquer si le statut du pipeline est En cours/Annulé/Échec.
+* Ajout d’info-bulles destinées à améliorer l’expérience utilisateur et à expliquer pourquoi le bouton Ajouter un programme/environnement est désactivé.
+* Les environnements ayant échoué peuvent désormais être supprimés via l’interface utilisateur et l’API.
+* Le processus utilisé pour générer les mots de passe Git est maintenant plus résilient face aux problèmes de la couche de service sous-jacente.
+
+### Correctifs {#bug-fixes-cloud-manager}
+
+* Les liens vers l’environnement d’évaluation sur la page des détails d’exécution de pipeline ne menaient pas toujours à l’emplacement correct.
+* Les étapes individuelles du processus de création d’environnement expiraient plus tôt que nécessaire, provoquant l’échec du processus.
+* La configuration Maven utilisée dans le conteneur de build a été mise à jour afin d’éviter les blocages lors du téléchargement des métadonnées d’artefact.
+* Dans certains cas, l’étape de création d’image ne parvenait pas à télécharger les modules clients.
+* Certaines conditions peu fréquentes empêchaient la suppression des environnements.
+* Les notifications Experience Cloud n’étaient pas toujours reçues.
+
