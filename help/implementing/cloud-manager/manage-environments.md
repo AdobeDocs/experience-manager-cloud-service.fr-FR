@@ -2,10 +2,10 @@
 title: Gestion des environnements - Cloud Service
 description: Gestion des environnements - Cloud Service
 translation-type: tm+mt
-source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
+source-git-commit: 7b452b260bfaee159fe4d228b704f69b12780805
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 90%
+source-wordcount: '850'
+ht-degree: 88%
 
 ---
 
@@ -67,9 +67,17 @@ Un utilisateur disposant des autorisations requises peut créer les types d’en
 
 La carte **Environnements** de la page Aperçu liste jusqu’à trois environnements.
 
-L’utilisateur peut sélectionner le bouton **Afficher tout** pour accéder à la page de résumé de l’ **Environnement** et vue d’un tableau avec une liste complète d’environnements.
+1. Cliquez sur le bouton **Afficher tout** pour accéder à la page de résumé de l’ **Environnement** et vue d’un tableau avec une liste complète d’environnements.
 
-![](assets/environment-view1.png)
+   ![](assets/environment-view-1.png)
+
+1. La page **Environnements** affiche la liste de tous les environnements existants.
+
+   ![](assets/environment-view-2.png)
+
+1. Sélectionnez l&#39;un des environnements de la liste à la vue des détails de l&#39;environnement.
+
+   ![](assets/environment-view-3.png)
 
 
 ## Mise à jour de l’environnement {#updating-dev-environment}
