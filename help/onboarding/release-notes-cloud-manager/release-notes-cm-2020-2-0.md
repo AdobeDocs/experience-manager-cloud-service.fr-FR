@@ -1,11 +1,11 @@
 ---
-title: Notes de mise à jour de la version 2020.2.0
-description: Notes de mise à jour de la version 2020.2.0
+title: Notes de mise à jour de Cloud Manager en AEM version 2020.2.0 du Cloud Service
+description: Notes de mise à jour de Cloud Manager en AEM version 2020.2.0 du Cloud Service
 translation-type: tm+mt
-source-git-commit: 6c719411ffa7bd814a515e302024ac433f173207
+source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 77%
+source-wordcount: '199'
+ht-degree: 66%
 
 ---
 
