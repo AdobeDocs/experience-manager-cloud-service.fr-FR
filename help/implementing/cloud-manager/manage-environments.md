@@ -2,9 +2,9 @@
 title: Gestion des environnements - Cloud Service
 description: Gestion des environnements - Cloud Service
 translation-type: tm+mt
-source-git-commit: 6c719411ffa7bd814a515e302024ac433f173207
+source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '828'
 ht-degree: 90%
 
 ---
@@ -36,8 +36,7 @@ Un utilisateur disposant des autorisations requises peut créer les types d’en
    >[!NOTE]
    >La production et le test sont disponibles en duo et sont utilisés à des fins de test et de production. L’utilisateur ne pourra pas créer uniquement un environnement de production ou de test.
 
-## Ajout d’un environnement {#adding-environments}
-
+## Environnement Ajoutant {#adding-environments}
 
 1. Cliquez sur **Ajouter un environnement** pour ajouter un environnement. Ce bouton sera accessible à l’aide de l’écran **Environnements**.
    ![](assets/environments-tab.png)
@@ -64,7 +63,7 @@ Un utilisateur disposant des autorisations requises peut créer les types d’en
    >Si vous n’avez pas encore configuré votre pipeline hors production, l’écran *Aperçu* affiche la carte d’où vous pouvez créer votre pipeline hors production.
 
 
-### Affichage des Environnements {#viewing-environment}
+## Affichage de l’Environnement {#viewing-environment}
 
 La carte **Environnements** de la page Aperçu liste jusqu’à trois environnements.
 
