@@ -2,9 +2,9 @@
 title: Schéma de métadonnées de dossier
 description: Découvrez comment créer des schémas de métadonnées pour des dossiers de ressources dans AEM Assets
 contentOwner: AG
-translation-type: ht
-source-git-commit: 2394ce2b5ebbd3e0e7229a98b5f500312b82dbd7
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: dc5cec192a70413e0ebcc27eb5e58577079ae93b
+workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 100%
 
@@ -171,4 +171,3 @@ Ouvrez les propriétés d’un dossier configuré avec un schéma de métadonné
 Saisissez les valeurs de métadonnées dans les différents champs, puis appuyez/cliquez sur **[!UICONTROL Enregistrer]** pour les stocker. Les valeurs renseignées sont stockées dans le nœud de dossier du référentiel CRX.
 
 ![folder_metadata_properties-1](assets/folder_metadata_properties-1.png)
-
