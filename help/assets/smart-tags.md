@@ -1,17 +1,17 @@
 ---
-title: Baliser des images avec des services dynamiques
-description: Balisez des images avec des services d’intelligence artificielle en appliquant des balises commerciales contextuelles et descriptives à l’aide des services Adobe Sensei.
+title: Balisage automatique des images avec des balises générées par AI
+description: Tag images using artificially intelligent services that apply contextual and descriptive business tags using [!DNL Adobe Sensei] services.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 33f5f5e0f4769381dd135216d7c7e49e158e870e
 workflow-type: tm+mt
-source-wordcount: '2424'
-ht-degree: 98%
+source-wordcount: '2433'
+ht-degree: 87%
 
 ---
 
 
-# Entraînez le service de balises intelligentes et balisez vos images {#train-service-tag-assets}
+# Train Smart Content Service and auto-tag your images {#train-service-tag-assets}
 
 Les entreprises qui traitent des ressources numériques utilisent de plus en plus le vocabulaire contrôlé par taxonomie dans les métadonnées des ressources. Il s’agit essentiellement d’une liste des mots-clés que les employés, les partenaires et les clients utilisent fréquemment pour mentionner et rechercher des ressources numériques. Le balisage des ressources avec vocabulaire contrôlé par taxonomie permet de s’assurer qu’elles peuvent être facilement identifiées et récupérées au moyen de recherches sur les balises.
 
@@ -19,7 +19,7 @@ Comparé aux vocabulaires des langages naturels, le balisage basé sur la taxono
 
 En arrière-plan, le service de balises intelligentes utilise le framework d’intelligence artificielle d’[Adobe Sensei](https://www.adobe.com/fr/sensei/experience-cloud-artificial-intelligence.html) pour entraîner son algorithme de reconnaissance d’images à propos de votre structure de balises et de votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes.
 
-<!-- TBD: Create a similar flowchart for how training works in CS.
+<!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
@@ -33,13 +33,13 @@ Pour utiliser le balisage intelligent, effectuez les tâches suivantes :
 
 Les balises intelligentes ne s’appliquent qu’aux clients [!DNL Adobe Experience Manager Assets]. Elles sont disponibles à l’achat sous la forme d’un module complémentaire de [!DNL Experience Manager].
 
-<!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
+<!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
 ## Intégrer [!DNL Experience Manager] avec Adobe Developer Console {#integrate-aem-with-aio}
 
 >[!IMPORTANT]
 >
->Les nouveaux [!DNL Experience Manager Assets] déploiements sont intégrés [!DNL Adobe Developer Console] par défaut. Il permet de configurer plus rapidement la fonctionnalité des balises actives. Sur les déploiements existants, les administrateurs peuvent [configurer manuellement l’intégration](/help/assets/smart-tags-configuration.md#aio-integration)des balises actives.
+>Les nouveaux [!DNL Experience Manager Assets] déploiements sont intégrés [!DNL Adobe Developer Console] par défaut. Il permet de configurer plus rapidement la fonctionnalité des balises actives. Dans les anciens déploiements, les administrateurs peuvent [configurer manuellement l’intégration](/help/assets/smart-tags-configuration.md#aio-integration)des balises actives.
 
 Vous pouvez intégrer [!DNL Adobe Experience Manager] les balises actives à l’aide [!DNL Adobe Developer Console]. Utilisez cette configuration pour accéder au service de balises intelligentes depuis [!DNL Experience Manager]. Voir [Configuration d’Experience Manager pour le balisage intelligent des ressources](smart-tags-configuration.md) pour les tâches de configuration des balises intelligentes. En arrière-plan, le serveur [!DNL Experience Manager] authentifie vos informations d’identification du service auprès de la passerelle Adobe Developer Console avant de transférer votre demande au service de balises intelligentes.
 
@@ -154,28 +154,36 @@ Après avoir entraîné le service de balises intelligentes, vous pouvez déclen
 1. Cliquez sur **[!UICONTROL Démarrer]**. Le workflow applique vos balises aux ressources. Accédez au dossier de ressources et passez en revue les balises pour vérifier que ces ressources sont correctement balisées. Pour plus d’informations, voir [Gestion des balises intelligentes](#manage-smart-tags-and-searches).
 
 >[!NOTE]
->
+
 >Lors des cycles de balisage suivants, seules les ressources modifiées seront à nouveau balisées avec des balises nouvellement entraînées. Cependant, même les ressources inchangées seront balisées si l’écart entre le dernier cycle de balisage et le cycle de balisage actuel du workflow de balisage dépasse 24 heures. Pour les workflows de balisage périodiques, les ressources inchangées sont balisées lorsque l’intervalle dépasse 6 mois.
 
 ### Balisage des ressources chargées {#tag-uploaded-assets}
 
 Experience Manager peut automatiquement baliser les ressources que les utilisateurs chargent dans le système de gestion des actifs numériques. Pour ce faire, les administrateurs configurent un workflow pour ajouter une étape disponible pour le balisage intelligent des ressources. Voir [Comment activer le balisage intelligent pour les ressources chargées](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 
-## Gestion des balises intelligentes et des recherches d’images {#manage-smart-tags-and-searches}
+## Manage smart tags and asset searches {#manage-smart-tags-and-searches}
 
-Vous pouvez organiser les balises intelligentes pour supprimer toute balise non pertinente qui pourrait avoir été attribuée à vos images de marque, afin que seules les balises les plus pertinentes s’affichent.
+Vous pouvez traiter les balises actives afin de supprimer les balises inexactes qui ont pu être attribuées à vos actifs de marque, de sorte que seules les balises les plus pertinentes soient affichées.
 
-La modération de balises intelligentes contribue également à affiner les résultats des recherches d’images basées sur des balises, en garantissant que votre image apparaisse dans les résultats de la recherche pour les balises les plus pertinentes. Essentiellement, cela réduit les risques que des images non pertinentes apparaissent dans les résultats de la recherche.
+La modération des balises actives permet également d’affiner les recherches de ressources basées sur des balises en veillant à ce que vos ressources apparaissent dans les résultats de recherche pour les balises les plus pertinentes. Essentiellement, cela permet d’éliminer les chances d’affichage d’éléments non liés dans les résultats de recherche.
 
-Vous pouvez également attribuer un rang supérieur à une balise afin d’accroître son degré de pertinence par rapport à une image. La promotion d’une balise pour une image augmente les risques qu’une image apparaisse dans les résultats de la recherche lorsqu’une recherche est basée sur cette balise.
+Vous pouvez également affecter un rang supérieur à une balise pour accroître sa pertinence par rapport à une ressource. La promotion d’une balise pour une ressource augmente les chances d’affichage de la ressource dans les résultats de la recherche lorsqu’une recherche est effectuée en fonction de la balise particulière.
 
-1. Dans l’encadré Omnisearch, recherchez des ressources sur la base d’une balise.
-1. Examinez les résultats de la recherche pour identifier une image que vous ne trouvez pas pertinente.
-1. Sélectionnez l’image, puis cliquez sur l’icône **[!UICONTROL Gérer les balises]** dans la barre d’outils.
-1. Examinez les balises sur la page **[!UICONTROL Gérer les balises]**. Si vous ne souhaitez pas que l’image puisse être recherchée sur la base d’une balise spécifique, sélectionnez la balise, puis cliquez sur l’icône Supprimer dans la barre d’outils. Sinon, cliquez sur le symbole `X` qui apparaît en face du libellé.
-1. Pour attribuer un rang supérieur à une balise, sélectionnez-la, puis cliquez sur l’icône Convertir dans la barre d’outils. La balise objet d’une conversion est déplacée dans la section **[!UICONTROL Balises]**.
-1. Cliquez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL OK]** pour fermer la boîte de dialogue de réussite.
-1. Accédez à la page Propriétés de l’image. Remarquez que la balise que vous avez convertie se voit attribuer une pertinence élevée et apparaît donc plus haut dans les résultats de la recherche.
+Pour modérer les balises actives de vos ressources :
+
+1. Dans le champ Omnisearch, recherchez des ressources basées sur une balise .
+
+1. Inspect les résultats de la recherche pour identifier les ressources que vous ne trouvez pas pertinentes pour votre recherche.
+
+1. Select the asset, and then select ![Manage tags icon](assets/do-not-localize/manage-tags-icon.png) from the toolbar.
+
+1. Examinez les balises sur la page **[!UICONTROL Gérer les balises]**. Si vous ne souhaitez pas que la recherche de la ressource soit basée sur une balise spécifique, sélectionnez la balise et sélectionnez l’icône ![](assets/do-not-localize/delete-icon.png) Supprimer dans la barre d’outils. Vous pouvez également sélectionner `X` un symbole en regard de l’étiquette.
+
+1. To assign a higher rank to a tag, select the tag and select ![Promote icon](assets/do-not-localize/promote-icon.png) from the toolbar. The tag you promote is moved to the **[!UICONTROL Tags]** section.
+
+1. Select **[!UICONTROL Save]** and then select **[!UICONTROL OK]** to close the [!UICONTROL Success] dialog.
+
+1. Navigate to the [!UICONTROL Properties] page for the asset. Remarquez que la balise que vous avez convertie se voit attribuer une pertinence élevée et apparaît donc plus haut dans les résultats de la recherche.
 
 ### Comprendre les résultats de recherche AEM avec des balises dynamiques  {#understandsearch}
 
@@ -210,4 +218,5 @@ Pour rechercher des ressources avec des balises intelligentes (standard ou amél
 >
 >* [Configuration d’Experience Manager pour le balisage intelligent](smart-tags-configuration.md)
 >* [Comprendre comment les balises intelligentes facilitent la gestion des ressources](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
+>* [Balisage intelligent des fichiers vidéo](smart-tags-video-assets.md)
 
