@@ -5,10 +5,10 @@ breadcrumb-title: Guide d’Assets
 user-guide-description: Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: d311c87c1ae1cdfe9f50d41750aecbab960dc7ef
+source-git-commit: a298921410b4cba05ad341f7cee6d2ac9981bce4
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 81%
+source-wordcount: '429'
+ht-degree: 79%
 
 ---
 
@@ -29,7 +29,8 @@ ht-degree: 81%
    + [Ajout et chargement de ressources](add-assets.md)
    + [Recherche de ressources](search-assets.md)
    + [Tâches courantes de gestion des ressources](manage-digital-assets.md)
-   + [Balises intelligentes](smart-tags.md)
+   + [Balises dynamiques pour les images](smart-tags.md)
+   + [Balisez intelligemment vos fichiers vidéo.](smart-tags-video-assets.md)
    + [Organisation des ressources](organize-assets.md)
    + [ [!DNL Adobe Stock] Utilisation des ressources dans AEM](aem-assets-adobe-stock.md)
    + [Gestion des collections](manage-collections.md)
@@ -49,7 +50,7 @@ ht-degree: 81%
    + [Documentation pour les développeurs et références aux API](developer-reference-material-apis.md)
    + [Schéma de métadonnées de dossier](folder-metadata-schema.md)
    + [Utilisation de profils d’images et de vidéos](/help/assets/dynamic-media/about-image-video-profiles.md)
-   + [Configuration des balises actives](smart-tags-configuration.md)
+   + [Configuration du balisage intelligent des images](smart-tags-configuration.md)
    + [Ressources et traduction multilingues](translate-assets.md)
    + [Facettes de recherche](search-facets.md)
    + [API HTTP Assets](mac-api-assets.md)
