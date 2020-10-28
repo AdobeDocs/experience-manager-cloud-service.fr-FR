@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 2020.10.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[!DNL Adobe Experience Manager] comme notes de mise à jour Cloud Service pour la version 2020.10.0.'
 translation-type: tm+mt
-source-git-commit: 45d9b852fad20f518f9840adc17b9d2abeb2bc6a
+source-git-commit: 12883e87d4aee796b23c366e77651134dafb8f4c
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '855'
 ht-degree: 21%
 
 ---
@@ -66,7 +66,7 @@ Content to come
 
 * L’interface utilisateur de configuration de CIF Cloud affichait les boutons &quot;Enregistrer et fermer&quot; pour les configurations dans /lib et /apps/. Mais il s’agit de données en lecture seule, ce qui explique pourquoi l’interface utilisateur a corrigé pour afficher uniquement le bouton Fermer.
 
-### Cloud Manager {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 * La page Environnements a été repensée.
 
@@ -76,8 +76,8 @@ Content to come
 
 * Le nombre de variables d’environnement par environnement a été porté à 200.
 
-* La carte d’Environnement de la page Aperçu liste désormais jusqu’à trois environnements. Les utilisateurs peuvent sélectionner le bouton **Afficher tout** pour accéder à la page de résumé des Environnements et vue d’un tableau avec une liste complète d’environnements.
-
+* La carte d’Environnement de la page Aperçu liste désormais jusqu’à trois environnements. Les utilisateurs peuvent sélectionner le bouton **Afficher tout** pour accéder à la page de résumé de l’Environnement et vue d’un tableau avec une liste complète d’environnements.
+Consultez [Affichage de l’Environnement](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) pour plus d’informations.
 
 ### Correctifs {#bug-fixes-cloud-manager}
 
