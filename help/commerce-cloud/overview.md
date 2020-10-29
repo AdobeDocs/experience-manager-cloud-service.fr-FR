@@ -1,11 +1,12 @@
 ---
 title: Introduction à AEM Commerce en tant que Cloud Service
-description: Nouveautés en AEM Commerce en tant que Cloud Service.
+description: Le commerce Experience Manager en tant que Cloud Service est constitué du cadre d'intégration commerciale (CIF), qui est le modèle recommandé par le Adobe pour intégrer et étendre les services commerciaux à partir de solutions commerciales Magento et tierces avec l'Experience Cloud.
+thumbnail: introducing-aem-commerce.jpg
 translation-type: tm+mt
-source-git-commit: c5694cf8651cf8ba5331c730fa1b1180310dd35a
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '1331'
-ht-degree: 1%
+source-wordcount: '1357'
+ht-degree: 2%
 
 ---
 
@@ -46,21 +47,21 @@ Les composants principaux CIF AEM sont des composants rendus côté serveur et c
 
 Les composants de base sont fournis, communs aux implémentations commerciales telles que les détails du produit, la Liste de produit, la navigation, la recherche, etc. Ils peuvent être utilisés en l&#39;état ou étendus.
 
-Les composants [de base](https://github.com/adobe/aem-core-cif-components) AEM CIF fonctionnent comme les composants [de base](https://github.com/adobe/aem-core-wcm-components) AEM Sites, mais sont dédiés à des utilisations spécifiques au commerce.
+Les composants [de base](https://github.com/adobe/aem-core-cif-components) AEM CIF fonctionnent comme les composants [de base de](https://github.com/adobe/aem-core-wcm-components) AEM Sites, mais sont dédiés à des utilisations spécifiques au commerce.
 
 Les principaux avantages de ces éléments sont les suivants :
 
 * Ils sont faciles à utiliser dans vos projets.
 * Ils peuvent être utilisés en l&#39;état ou avec des modifications très minimes.
-* Ils fournissent les meilleures pratiques pour la connexion avec un Magento via les API GraphQL ou les API REST.
+* Ils fournissent les meilleures pratiques de connexion avec les Magento via les API GraphQL ou les API REST.
 
-Des composants tels que Produit Teaser et Carrousel sont fournis pour permettre aux AEM Author de créer des pages d’expérience dans AEM, en combinant du contenu marketing et commercial. Ces composants peuvent être facilement glissés et déposés sur une page de contenu créée dans AEM et liée à des produits ou catégories spécifiques à l’aide des outils de création CIF tels que le produit ou le sélecteur de Catégories en Cloud Service.
+Des composants tels que Produit Teaser et Carrousel sont fournis pour permettre aux auteurs AEM de créer des pages d’expérience dans AEM, en combinant du contenu marketing et commercial. Ces composants peuvent être facilement glissés-déposés sur une page de contenu créée dans AEM et liée à des produits ou catégories spécifiques à l’aide des outils de création CIF tels que le produit ou le sélecteur de Catégories en Cloud Service.
 
 Tous les composants sont open-source sur [GitHub](https://github.com/adobe/aem-core-cif-components). Cela permet une transparence totale sur les modifications à venir et vous permet d&#39;obtenir la dernière version très facilement. Vous pouvez également fournir des demandes d’extraction pour des améliorations et des correctifs de bogues qui peuvent être incorporés.
 
 ### Vitrine d&#39;AEM Venia {#aem-venia-storefront}
 
-L&#39; [AEM Venia Storefront](https://github.com/adobe/aem-cif-guides-venia) est une vitrine de référence moderne prête à la production qui présente un parcours commercial B2C de base. Il peut être utilisé pour lancer des projets commerciaux et accélérer des projets à l&#39;aide d&#39;AEM, de CIF et de Magento. Il présente les meilleures pratiques d&#39;intégration des AEM et des Magento et montre comment utiliser les composants [principaux de CIF](https://github.com/adobe/aem-core-cif-components) AEM et les composants [principaux](https://github.com/adobe/aem-core-wcm-components) AEM Sites et prend en charge les points de terminaison GraphQL de Commerce Adobe. Il fournit également des ventes anticipées avec un site de référence pour démontrer l&#39;intégration entre AEM et Magento.
+L&#39; [AEM Venia Storefront](https://github.com/adobe/aem-cif-guides-venia) est une vitrine de référence moderne prête à la production qui présente un parcours commercial B2C de base. Il peut être utilisé pour lancer des projets commerciaux et accélérer des projets à l&#39;aide d&#39;AEM, de CIF et de Magento. Il présente les meilleures pratiques d&#39;intégration des AEM et des Magento et montre comment utiliser les composants [principaux de CIF](https://github.com/adobe/aem-core-cif-components) AEM et les composants [principaux de](https://github.com/adobe/aem-core-wcm-components) AEM Sites et prend en charge les points de terminaison GraphQL de Commerce Adobe. Il fournit également des ventes anticipées avec un site de référence pour démontrer l&#39;intégration entre AEM et Magento.
 
 L&#39;AEM Venia Storefront est une application de pages mixtes dans laquelle AEM possède le verre et le Magento alimente le commerce sans tête. Le rendu côté serveur et le rendu côté client sont utilisés dans la vitrine. Le rendu côté serveur est utilisé pour diffuser du contenu statique et le rendu côté client est utilisé pour diffuser du contenu dynamique.
 
