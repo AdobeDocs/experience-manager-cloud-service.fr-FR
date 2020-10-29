@@ -2,10 +2,10 @@
 title: Notes de mise à jour de Cloud Manager en AEM version 2020.10.0 du Cloud Service
 description: Notes de mise à jour de Cloud Manager en AEM version 2020.10.0 du Cloud Service
 translation-type: tm+mt
-source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
+source-git-commit: d992646fd89a4e502d74533f5fa2bbe994a9ab97
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 54%
+source-wordcount: '300'
+ht-degree: 48%
 
 ---
 
@@ -26,7 +26,7 @@ La date de publication de Cloud Manager en tant que Cloud Service 2020.10.0 en A
 
 * Les environnements en veille prolongée affichent désormais un état discret dans Cloud Manager.
 
-* Le conteneur de création Cloud Manager prend désormais en charge Java 8 et Java 11.
+* Le conteneur de création de Cloud Manager prend désormais en charge la compilation de projets à l’aide de Java 8 ou Java 11. La prise en charge de Java 11 est assurée par le système de chaînes d’outils Maven.
 
 * Le nombre de variables d’environnement par environnement a été porté à 200.
 
