@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: e96ffc15849baa306fae8839476fa453ace69ef5
+source-git-commit: 3f27193ea4533e700800fccfe75b123f6480bc69
 workflow-type: tm+mt
-source-wordcount: '1710'
-ht-degree: 78%
+source-wordcount: '1855'
+ht-degree: 71%
 
 ---
 
@@ -26,11 +26,18 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * Pour utiliser l’outil de transfert de contenu, vous devez être un utilisateur administrateur sur votre instance source et appartenir au groupe d’administrateurs AEM locaux dans l’instance de Cloud Service à laquelle vous transférez du contenu. Les utilisateurs non privilégiés ne pourront pas récupérer le jeton d’accès pour utiliser l’outil de transfert de contenu.
 
+* Actuellement, la taille de MongoDB par défaut pour un AEM en tant qu’instance d’auteur Cloud Service est de 32 Go. Pour une taille de stockage de segments supérieure à 20 Go, il est recommandé d’envoyer un ticket d’assistance afin d’augmenter la taille de MongoDB.
+
 * Pendant la phase d’extraction, l’outil de transfert de contenu est exécuté sur une instance source AEM active.
 
-* La *phase d’ingestion* de l’auteur réduira l’ensemble du déploiement de l’auteur. L’auteur AEM ne sera donc pas disponible pendant la totalité du processus d’ingestion.
+* Après avoir terminé la phase d&#39; *Extraction* du processus de transfert de contenu et avant de commencer la phase *d&#39;* importation pour ingérer du contenu dans votre AEM en tant qu&#39;instances d&#39; *étape* de Cloud Service ou de *production, vous devrez enregistrer un ticket d&#39;assistance pour informer l&#39;Adobe de votre intention d&#39;exécuter le  d&#39;importation de  afin que l&#39;Adobe puisse vous garantir qu&#39;absence d&#39;interruption.***** Vous devrez enregistrer le ticket de support 1 semaine avant la date prévue de votre *importation* . Une fois que vous avez soumis le ticket d&#39;assistance, l&#39;équipe d&#39;assistance vous donnera des conseils sur les étapes suivantes.
+   * Enregistrez un ticket d&#39;assistance avec les détails suivants :
+   1. Date exacte et heure estimée (avec votre fuseau horaire) lorsque vous prévoyez de début de la phase *d&#39;importation* .
+   2. Type d’Environnement (Phase ou Production) dans lequel vous prévoyez d’importer des données.
+   3. ID programme
 
-* Actuellement, la taille de MongoDB par défaut pour un AEM en tant qu’instance d’auteur Cloud Service est de 32 Go. Pour une taille de stockage de segments supérieure à 20 Go, il est recommandé d’envoyer un ticket d’assistance afin d’augmenter la taille de MongoDB.
+* La *phase d’ingestion* de l’auteur réduira l’ensemble du déploiement de l’auteur. L’auteur AEM ne sera donc pas disponible pendant la totalité du processus d’ingestion. Assurez-vous également qu’aucun pipeline Cloud Manager n’est exécuté pendant que vous exécutez la phase d’ *importation* .
+
 
 ## Disponibilité {#availability}
 
