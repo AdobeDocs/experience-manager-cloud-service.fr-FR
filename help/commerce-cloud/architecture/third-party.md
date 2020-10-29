@@ -1,11 +1,12 @@
 ---
 title: Intégration commerciale AEM et tierce à l’aide du cadre d’intégration commerciale
-description: Intégration commerciale AEM et tierce à l’aide du cadre d’intégration commerciale
+description: Les entreprises peuvent avoir besoin de solutions commerciales tierces supplémentaires pour alimenter leur vitrine. Le cadre d'intégration commerciale (CIF) peut être utilisé dans de tels scénarios d'intégration pour connecter une solution commerciale tierce à Adobe Experience Manager à l'aide de l'exécution E/S.
+thumbnail: cif-third-party-architecture.jpg
 translation-type: tm+mt
-source-git-commit: c5694cf8651cf8ba5331c730fa1b1180310dd35a
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 0%
+source-wordcount: '368'
+ht-degree: 1%
 
 ---
 
