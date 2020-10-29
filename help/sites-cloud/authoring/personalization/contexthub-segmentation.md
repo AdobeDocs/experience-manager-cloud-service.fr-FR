@@ -2,10 +2,10 @@
 title: Configuration de la segmentation avec ContextHub
 description: Découvrez comment configurer la segmentation à l’aide de ContextHub.
 translation-type: tm+mt
-source-git-commit: 82ad2cda70dd664ac9456a04f34e2d5831687fc1
+source-git-commit: c9c7176f6c3bf70529b761183341a2490d4ecbfc
 workflow-type: tm+mt
-source-wordcount: '1372'
-ht-degree: 58%
+source-wordcount: '1692'
+ht-degree: 47%
 
 ---
 
@@ -26,14 +26,14 @@ The [Audiences](audiences.md) console is used to manage segments for ContextHub 
 
 Pour accéder à vos segments, dans la navigation globale, sélectionnez **Navigation > Personnalisation > Audiences**.
 
-![Gestion des audiences](/help/sites-cloud/authoring/assets/contexthub-segmentation-audiences.png)
+![Gestion des audiences](../assets/contexthub-segmentation-audiences.png)
 
 ## Éditeur de segment {#segment-editor}
 
 <!--The **Segment Editor** allows you to easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
 The **Segment Editor** allows you to easily modify a segment. Pour modifier un segment, sélectionnez un segment dans la liste de segments et cliquez sur le bouton **Modifier**.
 
-![Éditeur de segments](/help/sites-cloud/authoring/assets/contexthub-segment-editor.png)
+![Éditeur de segments](../assets/contexthub-segment-editor.png)
 
 Using the components browser you can add **AND** and **OR** containers to define the segment logic, then add additional components to compare properties and values or reference scripts and other segments to define the selection criteria (see [Creating a New Segment](#creating-a-new-segment)) to define the exact scenario for selecting the segment.
 
@@ -87,13 +87,15 @@ Les références suivantes sont disponibles clé en main pour établir un lien d
 
 Pour définir votre nouveau segment :
 
-1. Après avoir [accédé aux segments](#accessing-segments), appuyez ou cliquez sur le bouton Créer et sélectionnez **Créer un segment ContextHub**.
+1. Après [avoir accédé aux segments](#accessing-segments), [accédez au dossier](#organizing-segments) dans lequel vous souhaitez créer le segment ou laissez-le à la racine.
 
-   ![ajouter un segment](/help/sites-cloud/authoring/assets/contexthub-create-segment.png)
+1. Appuyez sur le bouton **Créer** ou cliquez dessus, puis sélectionnez **Créer un segment** ContextHub.
+
+   ![Ajouter un segment](../assets/contexthub-create-segment.png)
 
 1. Dans la section **Nouveau segment ContextHub**, tapez un titre pour le segment, ainsi qu’une valeur d’amplification si nécessaire, puis appuyez ou cliquez sur **Créer**.
 
-   ![Nouveau segment](/help/sites-cloud/authoring/assets/contexthub-new-segment.png)
+   ![Nouveau segment](../assets/contexthub-new-segment.png)
 
    Chaque segment comporte un paramètre de stimulation utilisé comme facteur de pondération. Une valeur plus élevée indique que le segment sera sélectionné de préférence à un segment ayant une valeur plus basse dans les cas où plusieurs segments sont valides.
 
@@ -104,7 +106,7 @@ Pour définir votre nouveau segment :
 1. Faites glisser une comparaison ou une référence vers l’éditeur de segment dans lequel elle apparaîtra dans le conteneur ET par défaut.
 1. Double-cliquez ou appuyez sur l’option de configuration de la nouvelle référence ou du nouveau segment pour modifier les paramètres. Dans cet exemple, nous testons des personnes à Bâle.
 
-   ![Des tests pour les gens à Bâle](/help/sites-cloud/authoring/assets/contexthub-comparing-property-value.png)
+   ![Des tests pour les gens à Bâle](../assets/contexthub-comparing-property-value.png)
 
    Si possible, veillez à toujours définir un **type de données** pour vous assurer que vos comparaisons sont évaluées correctement. Voir la rubrique [Comparaisons](#comparisons) pour plus d’informations.
 
@@ -130,7 +132,7 @@ L’exemple suivant permet de sélectionner des visiteurs qui sont pris en compt
 
 Commencez par placer un composant de conteneur OU dans le conteneur ET par défaut. Dans le conteneur OU, vous pouvez ajouter la propriété ou les composants de référence.
 
-![Segmenter avec l’opérateur OU](/help/sites-cloud/authoring/assets/contexthub-or-operator.png)
+![Segmenter avec l’opérateur OU](../assets/contexthub-or-operator.png)
 
 Vous pouvez imbriquer plusieurs opérateurs ET et OU selon les besoins.
 
@@ -186,6 +188,75 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. Ajoutez le composant **Référence de script** à l’emplacement souhaité du segment.
 1. Ouvrez la boîte de dialogue de modification du composant **Référence de script**. S’il est [correctement configuré](#defining-a-script-to-reference), le script doit être disponible dans le menu déroulant **Nom du script**.
 
+## Organisation des segments {#organizing-segments}
+
+Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer en tant que liste plate. Dans ce cas, il peut s’avérer utile de créer des dossiers pour gérer vos segments.
+
+### Create a New Folder {#create-folder}
+
+1. After [accessing the segments](#accessing-segments), click or tap the **Create** button and select **Folder**.
+
+   ![Dossier Ajouter](../assets/contexthub-create-segment.png)
+
+1. Indiquez un **titre** et un **nom** pour votre dossier.
+   * Le **titre** doit être descriptif.
+   * Le **nom** deviendra le nom du noeud dans le référentiel.
+      * Elle sera générée automatiquement en fonction du titre et ajustée en fonction des conventions de dénomination [AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Il peut être ajusté si nécessaire.
+
+   ![Créer un dossier](../assets/contexthub-create-folder.png)
+
+1. Appuyez ou cliquez sur **Créer**.
+
+   ![Confirmer le dossier](../assets/contexthub-confirm-folder.png)
+
+1. Le dossier s’affiche dans la liste des segments.
+   * La manière dont vous triez vos colonnes aura une incidence sur l&#39;emplacement d&#39;affichage du nouveau dossier dans la liste.
+   * Vous pouvez appuyer ou cliquer sur les en-têtes de colonne pour ajuster votre tri.
+      ![Le nouveau dossier](../assets/contexthub-folder.png)
+
+### Modifier les dossiers existants {#modify-folders}
+
+1. Après [avoir accédé aux segments](#accessing-segments), cliquez ou appuyez sur le dossier que vous souhaitez modifier pour le sélectionner.
+
+   ![Sélectionner un dossier](../assets/contexthub-select-folder.png)
+
+1. Appuyez ou cliquez sur **Renommer** dans la barre d’outils pour renommer le dossier.
+
+1. Saisissez un nouveau titre **de** dossier et appuyez ou cliquez sur **Enregistrer**.
+
+   ![Renommer le dossier](../assets/contexthub-rename-folder.png)
+
+>[!NOTE]
+>
+>Lorsque vous renommez des dossiers, seul le titre peut être modifié. Le nom ne peut pas être modifié.
+
+### Suppression d’un dossier
+
+1. Après [avoir accédé aux segments](#accessing-segments), cliquez ou appuyez sur le dossier que vous souhaitez modifier pour le sélectionner.
+
+   ![Sélectionner un dossier](../assets/contexthub-select-folder.png)
+
+1. Appuyez ou cliquez sur **Supprimer** dans la barre d’outils pour supprimer le dossier.
+
+1. Une boîte de dialogue présente une liste de dossiers sélectionnés pour suppression.
+
+   ![Confirmer la suppression](../assets/contexthub-confirm-segment-delete.png)
+
+   * Appuyez sur ou sur **Supprimer** pour confirmer.
+   * Appuyez ou cliquez sur **Annuler** pour abandonner.
+
+1. Si l’un des dossiers sélectionnés contient des sous-dossiers ou des segments, leur suppression doit être confirmée.
+
+   ![Confirmer la suppression des enfants](../assets/contexthub-confirm-segment-child-delete.png)
+
+   * Appuyez ou cliquez sur **Forcer la suppression** pour confirmer.
+   * Appuyez ou cliquez sur **Annuler** pour abandonner.
+
+>[!NOTE]
+>
+> Il n’est pas possible de déplacer un segment d’un dossier à un autre.
+
 ## Test de l’application d’un segment {#testing-the-application-of-a-segment}
 
 Une fois le segment défini, les résultats potentiels peuvent être testés avec **[ContextHub](contexthub.md).**
@@ -197,11 +268,11 @@ Une fois le segment défini, les résultats potentiels peuvent être testés ave
 
 Par exemple, notre définition de segment simple pour identifier les utilisateurs à Bâle est basée sur l’emplacement de l’utilisateur. Le chargement d’une personne spécifique qui correspond à ces critères indique si le segment a été résolu avec succès :
 
-![Segment résolu](/help/sites-cloud/authoring/assets/contexthub-segment-resolve.png)
+![Segment résolu](../assets/contexthub-segment-resolve.png)
 
 Ou s’il n’est pas résolu :
 
-![Segment non résolu](/help/sites-cloud/authoring/assets/contexthub-segment-doesnt-resolve.png)
+![Segment non résolu](../assets/contexthub-segment-doesnt-resolve.png)
 
 >[!NOTE]
 >
