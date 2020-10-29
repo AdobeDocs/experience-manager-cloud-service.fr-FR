@@ -1,10 +1,18 @@
 ---
 title: Configuration multi-magasin
-description: Configuration multi-magasin
+description: Découvrez comment mettre en correspondance plusieurs vues de stockage du Magento à l’AEM. Cela permet aux projets de prendre en charge les cas d’utilisation multilocataires et multilingues.
+sub-product: Commerce
+version: cloud-service
+doc-type: technical-video
+activity: setup
+audience: administrator
+feature: Commerce Integration Framework
+kt: 3046
+thumbnail: 28952.jpg
 translation-type: tm+mt
-source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
+source-git-commit: 4862a09b3a0ce2f7506f4fff10639c51792db1b7
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '354'
 ht-degree: 4%
 
 ---
