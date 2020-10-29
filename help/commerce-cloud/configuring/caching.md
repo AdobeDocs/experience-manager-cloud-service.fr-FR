@@ -1,10 +1,10 @@
 ---
 title: Mise en cache et performances
-description: Mise en cache et performances
+description: Découvrez les différentes configurations disponibles pour activer GraphQL et la mise en cache de contenu afin d’optimiser les performances de votre implémentation commerciale.
 translation-type: tm+mt
-source-git-commit: 2997a28e79b51e88ececbd46c81dbc6a6c443e68
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '848'
 ht-degree: 2%
 
 ---
@@ -44,15 +44,15 @@ venia/components/structure/navigation:true:10:600
 
 lors de la prise en compte du magasin [de référence](https://github.com/adobe/aem-cif-guides-venia) Venia est utilisé. Notez l’utilisation du nom du proxy de composant `venia/components/structure/navigation`et **non** le nom du composant de navigation CIF (`core/cif/components/structure/navigation/v1/navigation`).
 
-La mise en cache d’autres composants doit être définie sur la base d’un projet, généralement en coordination avec la mise en cache configurée au niveau du Dispatcher. N’oubliez pas qu’il n’y a pas d’invalidation active de ces caches. Par conséquent, la durée de mise en cache doit être soigneusement définie. Il n’existe aucune valeur &quot;taille unique&quot; qui correspondrait à tous les projets et cas d’utilisation possibles. Assurez-vous de définir une stratégie de mise en cache au niveau du projet qui correspond le mieux aux exigences de votre projet.
+La mise en cache d’autres composants doit être définie sur la base d’un projet, généralement en coordination avec la mise en cache configurée au niveau du répartiteur. N’oubliez pas qu’il n’y a pas d’invalidation principale de ces caches. Par conséquent, la durée de mise en cache doit être soigneusement définie. Il n’existe aucune valeur &quot;taille unique&quot; qui correspondrait à tous les projets et cas d’utilisation possibles. Assurez-vous de définir une stratégie de mise en cache au niveau du projet qui correspond le mieux aux exigences de votre projet.
 
 ## Mise en cache du répartiteur {#dispatcher}
 
-La mise en cache de pages ou de fragments AEM dans l’Dispatcher [](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html) AEM est la meilleure pratique pour tout projet AEM. En règle générale, il repose sur des techniques d’invalidation qui garantissent que tout contenu modifié dans AEM est correctement mis à jour dans le Dispatcher. Il s’agit d’une fonctionnalité essentielle de la stratégie de mise en cache des Dispatchers AEM.
+La mise en cache de pages ou de fragments AEM dans le répartiteur [](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html) AEM est une bonne pratique pour tout projet AEM. En règle générale, il repose sur des techniques d’invalidation qui garantissent que tout contenu modifié dans AEM est correctement mis à jour dans le répartiteur. Il s’agit d’une fonctionnalité essentielle de la stratégie de mise en cache du répartiteur AEM.
 
 Outre le contenu géré par AEM pur, une page peut généralement afficher des données commerciales récupérées dynamiquement à partir d’un Magento via GraphQL. Bien que la structure de la page elle-même ne puisse jamais changer, le contenu du commerce peut changer, par exemple, si certaines données de produit (nom, prix, etc.) changent dans le Magento.
 
-Pour nous assurer que les pages CIF peuvent être mises en cache pendant une durée limitée dans le répartiteur d&#39;AEM, nous vous recommandons donc d&#39;utiliser l&#39;invalidation [du cache basée sur le](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) temps (également appelée mise en cache basée sur TTL) lors de la mise en cache des pages CIF dans l&#39;Dispatcher AEM. Cette fonctionnalité peut être configurée en AEM avec le package [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) supplémentaire.
+Pour nous assurer que les pages CIF peuvent être mises en cache pendant une durée limitée dans le répartiteur d&#39;AEM, nous vous recommandons donc d&#39;utiliser l&#39;invalidation [du cache basée sur le](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) temps (également appelée mise en cache basée sur TTL) lors de la mise en cache des pages CIF dans le répartiteur d&#39;AEM. Cette fonctionnalité peut être configurée en AEM avec le package [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) supplémentaire.
 
 Avec la mise en cache TTL, un développeur définit généralement une ou plusieurs durées de mise en cache pour les pages AEM sélectionnées. Ainsi, les pages CIF ne sont mises en cache que dans le répartiteur AEM jusqu’à la durée configurée et le contenu est fréquemment mis à jour.
 
