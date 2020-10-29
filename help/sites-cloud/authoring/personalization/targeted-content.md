@@ -1,11 +1,11 @@
 ---
 title: Création de contenu ciblé en mode Ciblage
 description: Le mode Ciblage et le composant cible fournissent des outils permettant de créer du contenu pour les expériences.
-translation-type: ht
-source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 10aba35c0795ef946edce02e9396947fc6348514
+workflow-type: tm+mt
 source-wordcount: '5348'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ Créez du contenu ciblé à l’aide du mode Ciblage d’AEM. Le mode Ciblage et
 
 Vous pouvez utiliser AEM ou Adobe Target comme moteur de ciblage (pour utiliser Adobe Target, vous devez disposer d’un compte Adobe Target valide). Si vous utilisez Adobe Target, vous devez commencer par configurer l’intégration. Reportez-vous aux instructions pour l’intégration à Adobe Target. <!--See the[instructions for integrating with Adobe Target](/help/sites-administering/target.md).-->
 
-![Ciblage de contenu](/help/sites-cloud/authoring/assets/targeted-content.png)
+![Ciblage de contenu](../assets/targeted-content.png)
 
 Les activités et les expériences qui s’affichent en mode Cible se répercutent dans la [console Activités](/help/sites-cloud/authoring/personalization/activities.md) :
 
@@ -53,11 +53,11 @@ Pour passer en mode Cible :
 1. Ouvrez la page pour laquelle vous souhaitez créer du contenu ciblé.
 1. Dans la barre d’outils au niveau de la partie supérieure de la page, cliquez ou appuyez sur le menu déroulant de mode pour afficher les types de modes disponibles.
 
-   ![Mode Ciblage](/help/sites-cloud/authoring/assets/targeted-mode.png)
+   ![Mode Ciblage](../assets/targeted-mode.png)
 
 1. Cliquez ou appuyez sur **Ciblage**. Les options de ciblage s’affichent dans la partie supérieure de la page.
 
-   ![Barre d’outils de ciblage](/help/sites-cloud/authoring/assets/targeted-toolbar.png)
+   ![Barre d’outils de ciblage](../assets/targeted-toolbar.png)
 
 ## Ajout d’une activité à l’aide du mode Ciblage {#adding-an-activity-using-targeting-mode}
 
@@ -118,7 +118,7 @@ Pour ajouter une activité :
 1. Dans le menu déroulant **Activité**, sélectionnez l’activité pour laquelle vous créez du contenu ciblé.
 1. Pour afficher les options qui vous guident lors de la procédure de ciblage, cliquez ou appuyez sur **Commencer le ciblage**.
 
-   ![Commencer le ciblage](/help/sites-cloud/authoring/assets/targeted-start-targeting.png)
+   ![Commencer le ciblage](../assets/targeted-start-targeting.png)
 
    >[!NOTE]
    >
@@ -142,15 +142,15 @@ Après avoir [commencé la procédure de ciblage](#the-targeting-process-create-
 
 Les expériences s’affichent dans le volet Audiences. Dans l’exemple ci-dessous, les expériences sont **Par défaut**, **Femme**, **Femme âgée de plus de 30 ans** et **Femme âgée de moins de 30 ans**. Cet exemple affiche l’offre Par défaut d’un composant **Image** ciblé.
 
-![Composant d’image ciblé](/help/sites-cloud/authoring/assets/targeted-image-component.png)
+![Composant d’image ciblé](../assets/targeted-image-component.png)
 
 Lorsqu’une autre expérience est sélectionnée, le composant Image affiche l’offre concernant cette expérience.
 
-![Composant d’image ciblé modifié](/help/sites-cloud/authoring/assets/targeted-image-different.png)
+![Composant d’image ciblé modifié](../assets/targeted-image-different.png)
 
 Lorsqu’une expérience est sélectionnée et que le composant ciblé n’inclut pas d’offre pour cette expérience, le composant affiche l’option **Ajouter une offre** superposée à l’offre par défaut semi-transparente. Lorsqu’aucune offre n’a été créée pour une expérience, l’offre **Par défaut** s’affiche pour le segment mappé à l’expérience.
 
-![Ajouter une offre](/help/sites-cloud/authoring/assets/targeted-add-offer.png)
+![Ajouter une offre](../assets/targeted-add-offer.png)
 
 L’expérience par défaut s’affiche également si les propriétés du visiteur ne correspondent à aucun segment mappé sur les expériences. Voir [Ajout d’expériences à l’aide du mode Ciblage](#adding-and-removing-experiences-using-targeting-mode).
 
@@ -158,11 +158,11 @@ L’expérience par défaut s’affiche également si les propriétés du visite
 
 Les offres qui sont [créées dans la page](#adding-a-custom-offer) et utilisées pour une seule expérience sont des « offres personnalisées ». L’image ci-dessous est superposée sur le contenu d’une offre personnalisée :
 
-![Icône d’offre personnalisée](/help/sites-cloud/authoring/assets/targeted-custom-offer-icon.png)
+![Icône d’offre personnalisée](../assets/targeted-custom-offer-icon.png)
 
 Les offres [ajoutées à partir d’une bibliothèque d’offres](#adding-an-offer-from-an-offer-library) sont superposées sur l’image suivante :
 
-![Icône d’offre de bibliothèque](/help/sites-cloud/authoring/assets/targeted-library-offer-icon.png)
+![Icône d’offre de bibliothèque](../assets/targeted-library-offer-icon.png)
 
 Vous pouvez enregistrer des offres personnalisées à une bibliothèque d’offres si vous estimez que vous êtes susceptible de les réutiliser. Vous pouvez également convertir une offre de bibliothèque en offre personnalisée si vous souhaitez modifier le contenu d’une expérience. Après la modification, vous pouvez réenregistrer l’offre dans la bibliothèque.
 
@@ -174,7 +174,7 @@ Vous pouvez enregistrer des offres personnalisées à une bibliothèque d’offr
 
 Pour ajouter une expérience :
 
-1. Pour ajouter une expérience, cliquez ou appuyez sur « **+** » **Ajouter le ciblage d’expérience**, qui s’affiche en dessous des expériences existantes dans le volet **Audiences**.
+1. To add an experience, click or tap **+** **Add Experience Targeting** that appears below existing experiences in the **Audiences** pane.
 1. Sélectionnez une audience. Par défaut, ce nom est le nom de l’expérience. Vous pouvez entrer un autre nom, si vous le souhaitez. Cliquez ou appuyez sur **OK**.
 
 #### Suppression d’expériences à l’aide du mode Ciblage  {#removing-experiences-using-targeting-mode}
@@ -183,7 +183,7 @@ Pour supprimer une expérience :
 
 1. Cliquez ou appuyez sur la flèche en regard du nom de l’expérience.
 
-   ![Suppression d’une expérience](/help/sites-cloud/authoring/assets/targeted-delete-experiene.png)
+   ![Suppression d’une expérience](../assets/targeted-delete-experiene.png)
 
 1. Cliquez sur **Supprimer**.
 
@@ -239,11 +239,11 @@ Suivez la procédure ci-dessous après [avoir commencé la procédure de ciblage
 
 1. Cliquez ou appuyez sur le composant à cibler. La barre d’outils du composant s’affiche, comme indiqué sur l’exemple suivant.
 
-   ![Composant ciblé](/help/sites-cloud/authoring/assets/targeted-component.png)
+   ![Composant ciblé](../assets/targeted-component.png)
 
 1. Cliquez ou appuyez sur l’icône Cible.
 
-   ![Bouton Cible](/help/sites-cloud/authoring/assets/targeted-target-button.png)
+   ![Bouton Cible](../assets/targeted-target-button.png)
 
    Le contenu du composant est l’offre de l’expérience par défaut. Lorsqu’un composant est ciblé, son nœud par défaut sera répliqué pour chaque expérience. Cela est nécessaire afin de modifier le nœud de contenu adéquat lors d’une création spécifique à une expérience. Pour ces expériences autres que l’expérience par défaut, [ajoutez une offre personnalisée](#adding-a-custom-offer) ou [une offre de bibliothèque](#adding-an-offer-from-an-offer-library).
 
@@ -261,21 +261,21 @@ Comme le composant cible est un conteneur, il s’affiche sous forme de zone cib
 
 En mode Cible, le composant cible possède une bordure bleue, et le message de indique la nature ciblée.
 
-![Zone de dépôt cible](/help/sites-cloud/authoring/assets/targeted-drop-target.png)
+![Zone de dépôt cible](../assets/targeted-drop-target.png)
 
 En mode d’édition, le composant cible comporte une icône Cible.
 
-![Icône de la zone de dépôt cible](/help/sites-cloud/authoring/assets/targeted-drop-target-icon.png)
+![Icône de la zone de dépôt cible](../assets/targeted-drop-target-icon.png)
 
 Lorsque vous faites glisser des composants dans le composant cible, ils sont des composants ciblés.
 
-![Zone de dépôt avec cibles](/help/sites-cloud/authoring/assets/targeted-drop-zone-populated.png)
+![Zone de dépôt avec cibles](../assets/targeted-drop-zone-populated.png)
 
 Lorsque vous ajoutez un composant au composant cible, il fournit du contenu pour une expérience spécifique. Pour spécifier l’expérience, vous sélectionnez l’expérience avant d’ajouter des composants.
 
 Vous pouvez ajouter un composant cible à la page en mode d’édition ou en mode Cible. Vous ne pouvez ajouter des composants au composant cible qu’en mode Cible. Le composant cible appartient au groupe Composants de personnalisation.
 
-Si vous voulez modifier le contenu ciblé, vous devez pour cela cliquer ou appuyer sur **Commencer le ciblage**.
+Si vous modifiez le contenu ciblé, vous devez cliquer ou appuyer sur **Commencer le ciblage** avant d’en avoir la possibilité.
 
 1. Faites glisser le composant cible vers la page dans laquelle vous souhaitez afficher l’offre.
 1. Par défaut, aucun ID d’emplacement n’est défini. Cliquez ou appuyez sur Configurer (icône d’engrenage) pour définir l’emplacement.
@@ -303,7 +303,7 @@ Si vous décidez que l’offre peut être utilisée pour d’autres expériences
 1. Sélectionnez l’expérience à laquelle vous ajoutez l’offre.
 1. Pour afficher le menu Composant, cliquez ou appuyez sur le composant ciblé auquel vous ajoutez l’offre.
 
-   ![Ajout d’une offre](/help/sites-cloud/authoring/assets/targeted-component-menu.png)
+   ![Ajout d’une offre](../assets/targeted-component-menu.png)
 
 1. Cliquez ou appuyez sur l’icône « + ».
 
@@ -311,7 +311,7 @@ Si vous décidez que l’offre peut être utilisée pour d’autres expériences
 
 1. Cliquez ou appuyez sur l’offre pour afficher le menu Offre, puis cliquez ou appuyez sur l’icône Modifier.
 
-   ![Barre d’outils du composant cible](/help/sites-cloud/authoring/assets/targeted-offer-menu.png)
+   ![Barre d’outils du composant cible](../assets/targeted-offer-menu.png)
 
 1. Modifiez le contenu du composant.
 
@@ -324,33 +324,33 @@ Vous ne pouvez pas ajouter d’offres de bibliothèque à l’expérience par d�
 1. Sélectionnez l’expérience à laquelle vous ajoutez l’offre.
 1. Pour afficher le menu Composant, cliquez ou appuyez sur le composant ciblé auquel vous ajoutez l’offre.
 
-   ![Offre ciblée](/help/sites-cloud/authoring/assets/targeted-add-offer-large.png)
+   ![Offre ciblée](../assets/targeted-add-offer-large.png)
 
 1. Cliquez ou appuyez sur l’icône Dossier.
 
-   ![Icône Dossier](/help/sites-cloud/authoring/assets/targeted-folder-button.png)
+   ![Icône Dossier](../assets/targeted-folder-button.png)
 
 1. Sélectionnez l’offre dans la bibliothèque, puis cliquez ou appuyez sur l’icône Coche.
 
-   ![Bibliothèque d’offres](/help/sites-cloud/authoring/assets/targeted-select-content.png)
+   ![Bibliothèque d’offres](../assets/targeted-select-content.png)
 
    Le sélecteur d’offres permet de chercher ou de filtrer les offres. Lors de la recherche ou du filtrage, vous pouvez également trier les offres et modifier le mode d’affichage. Le nombre dans la partie supérieure droite indique le nombre d’offres disponibles dans la bibliothèque actuelle.
 
    * Cliquez ou appuyez sur **Parcourir** pour accéder à un autre dossier. Le volet de navigation s’affiche. Cliquez sur la flèche pour accéder aux dossiers. Cliquez ou appuyez sur **Parcourir** pour fermer le volet de navigation.
 
-   ![Parcourir le contenu](/help/sites-cloud/authoring/assets/targeted-select-content-browse.png)
+   ![Parcourir le contenu](../assets/targeted-select-content-browse.png)
 
    * Cliquez ou appuyez sur **Filtrer** pour filtrer les offres selon les mots-clés et les balises. Vous saisissez des mots-clés et sélectionnez des balises dans le menu déroulant. Cliquez ou appuyez de nouveau sur **Filtrer** pour fermer le volet de filtrage.
 
-   ![Filtrer le contenu](/help/sites-cloud/authoring/assets/targeted-filter.png)
+   ![Filtrer le contenu](../assets/targeted-filter.png)
 
    * Modifiez la façon dont vous triez les offres en cliquant ou en appuyant sur la flèche en regard de **Du plus récent au plus ancien**. Les offres peuvent être triées de la plus récente à la plus ancienne et inversement.
 
-   ![Ordre de tri des filtres](/help/sites-cloud/authoring/assets/targeted-filter-sort.png)
+   ![Ordre de tri des filtres](../assets/targeted-filter-sort.png)
 
    Cliquez ou appuyez sur l’icône en regard de **Afficher sous** pour afficher les offres sous forme de mosaïque ou de liste.
 
-   ![Bouton Afficher sous](/help/sites-cloud/authoring/assets/targeted-view-as-button.png)
+   ![Bouton Afficher sous](../assets/targeted-view-as-button.png)
 
 #### Ajout d’une offre personnalisée à une bibliothèque {#adding-a-custom-offer-to-a-library}
 
@@ -361,7 +361,7 @@ Pour plus d’informations sur l’utilisation de la console Offres pour créer 
 1. Sélectionnez l’expérience pour afficher l’offre personnalisée.
 1. Cliquez ou appuyez sur l’offre personnalisée pour afficher le menu Offre, puis cliquez ou appuyez sur l’icône **Enregistrer l’offre dans la bibliothèque d’offre**.
 
-   ![Enregistrer l’offre dans la bibliothèque d’offres](/help/sites-cloud/authoring/assets/targeted-save-offer-library-button.png)
+   ![Enregistrer l’offre dans la bibliothèque d’offres](../assets/targeted-save-offer-library-button.png)
 
 1. Saisissez le nom de l’offre et sélectionnez la bibliothèque à laquelle vous ajoutez l’offre, puis cliquez ou appuyez sur l’icône Coche.
 
@@ -372,7 +372,7 @@ Convertissez une offre de bibliothèque en offre personnalisée pour modifier l�
 1. Sélectionnez l’expérience pour afficher l’offre de bibliothèque.
 1. Cliquez ou appuyez sur l’offre de bibliothèque pour afficher le menu Offre, puis cliquez ou appuyez sur l’icône Convertir en offre intégrée.
 
-   ![Convertir en offre insérée](/help/sites-cloud/authoring/assets/targeted-convert-inline.png)
+   ![Convertir en offre insérée](../assets/targeted-convert-inline.png)
 
 #### Modification d’une offre de bibliothèque {#editing-a-library-offer}
 
@@ -388,11 +388,11 @@ Ouvrez une offre de bibliothèque à partir d’une expérience en mode ciblé p
 
 L’étape Cibler de la [procédure de ciblage](#the-targeting-process-create-target-and-goals-settings) implique de mapper les audiences sur les expériences utilisées lors de l’étape Créer. La page Cible affiche les audiences ciblées par chaque expérience. Vous pouvez spécifier ou modifier l’audience de chaque expérience. Si vous utilisez Adobe Target, vous pouvez également créer des tests A/B qui permettent de cibler le pourcentage de trafic d’une audience pour une expérience spécifique.
 
-### Si vous utilisez le ciblage d’AEM ou d’Adobe Target (ciblage d’expériences)…  {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
+### If you are using AEM targeting or Adobe Target (experience targeting) {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
 Les audiences s’affichent dans la partie gauche du diagramme de mappage, tandis que les expériences s’affichent dans la partie droite.
 
-![Mappage d’audiences](/help/sites-cloud/authoring/assets/targeted-diagram.png)
+![Mappage d’audiences](../assets/targeted-diagram.png)
 
 Définissez une audience à l’aide d’un segment. La configuration du cloud de la page détermine les segments à votre disposition. Lorsque la page n’est pas associée à une configuration de cloud d’Adobe Target, les segments AEM sont disponibles pour définir les audiences. Lorsque la page est associée à une configuration de cloud d’Adobe Target, vous utilisez les segments cibles.
 
@@ -400,7 +400,7 @@ Pour plus d’informations sur les moteurs de ciblage, reportez-vous à la secti
 
 Une audience ne doit pas être utilisée par plusieurs expériences. Un symbole d’avertissement s’affiche en regard d’une expérience lorsqu’elle est associée à une audience mappée à une autre expérience.
 
-![Icône Avertissement](/help/sites-cloud/authoring/assets/targeted-warn.png)
+![Icône Avertissement](../assets/targeted-warn.png)
 
 ### Association d’expériences à des audiences (AEM ou Adobe Target) {#associating-experiences-with-audiences-aem-or-adobe-target}
 
@@ -410,13 +410,13 @@ Suivez la procédure ci-dessous pour associer une expérience à une audience lo
 1. (Facultatif) Cliquez ou appuyez sur **Modifier**, puis saisissez un mot-clé pour chercher le segment souhaité.
 1. Dans la liste d’audiences, sélectionnez l’audience et cliquez ou appuyez sur **OK**.
 
-### Si vous utilisez des tests A/B (Adobe Target)…  {#if-you-are-using-a-b-testing-adobe-target}
+### If you are using A/B Testing (Adobe Target) {#if-you-are-using-a-b-testing-adobe-target}
 
 Si vous avez une activité de test A/B, les audiences se trouvent dans la partie gauche, le pourcentage de chaque expérience s’affiche au centre et les expériences se trouvent à droite.
 
 Vous pouvez modifier les pourcentages, à condition que leur somme reste égale à 100 %. Une audience peut être utilisée par plusieurs expériences dans un test A/B.
 
-![Ciblage A/B](/help/sites-cloud/authoring/assets/targeted-ab.png)
+![Ciblage A/B](../assets/targeted-ab.png)
 
 ### Association d’audiences et de pourcentages de trafic avec un test A/B {#associating-audiences-and-traffic-percentages-with-a-b-testing}
 
@@ -436,15 +436,15 @@ Les mesures d’objectif ne sont mesurées que pour la campagne publiée.
 
 Si vous utilisez AEM comme moteur de ciblage :
 
-![AEM en tant que moteur de ciblage](/help/sites-cloud/authoring/assets/targeted-goals.png)
+![AEM en tant que moteur de ciblage](../assets/targeted-goals.png)
 
 Si vous utilisez Adobe Target comme moteur de ciblage :
 
-![Adobe Target en tant que moteur de ciblage](/help/sites-cloud/authoring/assets/targeted-engine.png)
+![Adobe Target en tant que moteur de ciblage](../assets/targeted-engine.png)
 
 Si vous utilisez Adobe Target comme moteur de ciblage et que A4T Analytics est configuré pour le compte, un menu déroulant supplémentaire, **Source de création de rapports**, s’affiche :
 
-![A4T](/help/sites-cloud/authoring/assets/targeted-source.png)
+![A4T](../assets/targeted-source.png)
 
 Les mesures de réussite ci-dessous sont disponibles (pour la publication uniquement) :
 
@@ -501,7 +501,7 @@ Pour configurer les objectifs et les paramètres si vous utilisez Adobe Target 
 
    Si vous avez sélectionné **Adobe Analytics**, sélectionnez la société et une suite de rapports. Si vous sélectionnez **Adobe Target**, aucune action n’est nécessaire.
 
-   ![Source de création de rapports](/help/sites-cloud/authoring/assets/targeted-reporting-source.png)
+   ![Source de création de rapports](../assets/targeted-reporting-source.png)
 
 1. Dans la zone **Mesure d’objectif**, sous **Mon objectif principal**, sélectionnez la mesure de succès dont vous souhaitez effectuer le suivi (Conversion, Chiffre d’affaires, Engagement) et saisissez la manière dont cette mesure est évaluée (ou l’action entreprise par l’audience pour indiquer qu’un objectif a été atteint). Consultez la définition des mesures d’objectif dans le tableau précédent et la [documentation d’Adobe Target](https://docs.adobe.com/content/help/fr-FR/target/using/activities/success-metrics/success-metrics.html) sur les mesures de succès.
 
@@ -515,7 +515,7 @@ Pour configurer les objectifs et les paramètres si vous utilisez Adobe Target 
    >
    >Un objectif au moins doit être défini.
 
-   ![Mesure de l’objectif](/help/sites-cloud/authoring/assets/targeted-goal-metric.png)
+   ![Mesure de l’objectif](../assets/targeted-goal-metric.png)
 
    >[!NOTE]
    >
@@ -523,7 +523,7 @@ Pour configurer les objectifs et les paramètres si vous utilisez Adobe Target 
 
 1. Cliquez sur **Ajouter une nouvelle mesure** pour configurer d’autres mesures de réussite.
 
-   ![Mesures supplémentaires](/help/sites-cloud/authoring/assets/targeted-additional-metrics.png)
+   ![Mesures supplémentaires](../assets/targeted-additional-metrics.png)
 
    >[!NOTE]
    >
@@ -560,11 +560,11 @@ Pour simuler l’expérience du visiteur, utilisez les outils suivants :
 1. Pour passer en mode Aperçu, dans la barre d’outils, cliquez ou appuyez sur **Aperçu**.
 1. Dans la barre d’outils, cliquez ou appuyez sur l’icône ContextHub.
 
-   ![Bouton ContextHub](/help/sites-cloud/authoring/assets/targeted-contexthub-button.png)
+   ![Bouton ContextHub](../assets/targeted-contexthub-button.png)
 
 1. Utilisez ContextHub pour modifier les propriétés de contexte. Par exemple, cliquez ou appuyez sur la propriété Persona pour sélectionner un autre utilisateur.
 
-   ![Barre d’outils ContextHub](/help/sites-cloud/authoring/assets/targeted-contexthub-toolbar.png)
+   ![Barre d’outils ContextHub](../assets/targeted-contexthub-toolbar.png)
 
    La page change pour afficher le contenu ciblé pour le contexte actuel.
 
@@ -576,19 +576,19 @@ Vous pouvez personnaliser le composant cible en accédant aux options du composa
 
 1. Une fois que vous avez ciblé le composant, dans le composant cible, cliquez ou appuyez sur le composant, puis sur l’icône Paramètres (engrenage).
 
-   ![Paramètres du composant](/help/sites-cloud/authoring/assets/targeted-component-settings.png)
+   ![Paramètres du composant](../assets/targeted-component-settings.png)
 
    AEM affiche la fenêtre Options du composant cible.
 
-   ![Boîte de dialogue Cible](/help/sites-cloud/authoring/assets/targeted-dialog.png)
+   ![Boîte de dialogue Cible](../assets/targeted-dialog.png)
 
 1. Autrement, pour accéder à ces paramètres en mode Plein écran, dans la fenêtre Options du composant cible, cliquez ou appuyez sur l’icône Plein écran.
 
-   ![Bouton Plein écran](/help/sites-cloud/authoring/assets/targeted-fullscreen.png)
+   ![Bouton Plein écran](../assets/targeted-fullscreen.png)
 
    AEM affiche la fenêtre Options du composant cible en plein écran.
 
-   ![Composant en plein écran](/help/sites-cloud/authoring/assets/targeted-target-as-enging.png)
+   ![Composant en plein écran](../assets/targeted-target-as-enging.png)
 
 1. Configurez les paramètres du composant cible, comme indiqué dans les tableaux suivants.
 
@@ -599,7 +599,7 @@ Vous pouvez personnaliser le composant cible en accédant aux options du composa
 
 Si vous sélectionnez Adobe Target comme moteur :
 
-![Target comme moteur](/help/sites-cloud/authoring/assets/targeted-target-as-enging.png)
+![Target comme moteur](../assets/targeted-target-as-enging.png)
 
 | Option | Description |
 |---|---|
