@@ -1,16 +1,17 @@
 ---
 title: Personnalisation des composants principaux CIF
 description: Découvrez comment personnaliser AEM composants principaux CIF. Le didacticiel explique comment étendre en toute sécurité un élément de base du FIC pour répondre aux besoins spécifiques de l'entreprise. Découvrez comment étendre une requête GraphQL pour renvoyer un attribut personnalisé et afficher le nouvel attribut dans un composant CIF Core.
-sub-product: commerce
-topics: development
+sub-product: Commerce
+topics: Development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
+feature: Commerce Integration Framework
 kt: 4279
-thumbnail: 4279-customize-cif.jpg
+thumbnail: customize-aem-cif-core-component.jpg
 translation-type: tm+mt
-source-git-commit: a88595f3fab37f4406e607cb104a27de51cdbef6
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
 source-wordcount: '2550'
 ht-degree: 3%
@@ -59,7 +60,7 @@ Nous clonerons le projet [](https://github.com/adobe/aem-cif-guides-venia) Venia
    $ mvn clean install -PautoInstallPackage,cloud
    ```
 
-1. ajoutez les configurations OSGi nécessaires pour connecter votre instance AEM à une instance de Magento ou ajoutez les configurations au projet nouvellement créé.
+1. Ajoutez les configurations OSGi nécessaires pour connecter votre instance AEM à une instance de Magento ou ajoutez les configurations au projet nouvellement créé.
 
 1. A ce stade, vous devez disposer d&#39;une version fonctionnelle d&#39;une vitrine connectée à une instance de Magento. Accédez à la page `US` > `Home` à l’adresse suivante : [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
@@ -89,7 +90,7 @@ Le composant Teaser du produit sera étendu tout au long de ce tutoriel. Dans un
 
    ![Produit Teaser - style par défaut](../assets/customize-cif-components/product-teaser-default-style.png)
 
-## ajouter un attribut personnalisé dans le Magento {#add-custom-attribute}
+## Ajouter un attribut personnalisé dans le Magento {#add-custom-attribute}
 
 Les produits et les données de produit affichées dans AEM sont stockés dans le Magento. Ajoutez ensuite un nouvel attribut pour **Eco Friendly** dans l’attribut de produit défini à l’aide de l’interface utilisateur du Magento.
 
@@ -142,7 +143,7 @@ Avant de passer au code AEM, il est utile d&#39;explorer GraphQL [](https://devd
 Ensuite, utilisez un IDE GraphQL pour vérifier que l&#39; `eco_friendly` attribut a été ajouté au jeu d&#39;attributs du produit. Les captures d&#39;écran de ce didacticiel utilisent le client [Altair GraphQL](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja).
 
 1. Ouvrez l&#39;IDE GraphQL et entrez l&#39;URL `http://<magento-server>/graphql` dans la barre d&#39;URL de votre IDE ou extension.
-2. ajoutez la requête [de](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) produits suivante où `YOUR_SKU` correspond au SKU **** du produit utilisé lors de l’exercice précédent :
+2. Ajoutez la requête [de](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) produits suivante où `YOUR_SKU` correspond au SKU **** du produit utilisé lors de l’exercice précédent :
 
    ```json
      {
@@ -200,7 +201,7 @@ Utilisez [l&#39;IDE de votre choix](https://docs.adobe.com/content/help/en/exper
 
    Une nouvelle méthode a déjà été ajoutée pour afficher un badge si le produit est considéré comme &quot;nouveau&quot; `isShowBadge()` .
 
-1. ajoutez une nouvelle méthode `isEcoFriendly()` à l’interface :
+1. Ajoutez une nouvelle méthode `isEcoFriendly()` à l’interface :
 
    ```java
    @ProviderType
@@ -236,7 +237,7 @@ Utilisez [l&#39;IDE de votre choix](https://docs.adobe.com/content/help/en/exper
 
    Cela réduit la quantité de code Java qu’une implémentation doit écrire.
 
-1. L&#39;un des points d&#39;extension supplémentaires fournis par AEM CIF Core Components est celui `AbstractProductRetriever` qui permet d&#39;accéder à des attributs de produits spécifiques. inspect à la `initModel()` méthode :
+1. L&#39;un des points d&#39;extension supplémentaires fournis par AEM CIF Core Components est celui `AbstractProductRetriever` qui permet d&#39;accéder à des attributs de produits spécifiques. Inspect à la `initModel()` méthode :
 
    ```java
    import javax.annotation.PostConstruct;
@@ -285,7 +286,7 @@ Utilisez [l&#39;IDE de votre choix](https://docs.adobe.com/content/help/en/exper
    }
    ```
 
-   ajouter à la `extendProductQueryWith` méthode est un moyen puissant de s&#39;assurer que d&#39;autres attributs de produit sont disponibles pour le reste du modèle. Elle permet également de réduire le nombre de requêtes exécutées.
+   Ajouter à la `extendProductQueryWith` méthode est un moyen puissant de s&#39;assurer que d&#39;autres attributs de produit sont disponibles pour le reste du modèle. Elle permet également de réduire le nombre de requêtes exécutées.
 
    Dans le code ci-dessus, les`addCustomSimpleField` est utilisé pour récupérer l’ `eco_friendly` attribut. Ceci illustre comment vous pouvez requête pour les attributs personnalisés qui font partie du schéma du Magento.
 
@@ -293,7 +294,7 @@ Utilisez [l&#39;IDE de votre choix](https://docs.adobe.com/content/help/en/exper
    >
    > La `createdAt()` méthode a en fait été implémentée dans le cadre de l&#39;interface [](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java)du produit. La plupart des attributs de schéma les plus courants ont été implémentés, utilisez donc uniquement la `addCustomSimpleField` pour les attributs réellement personnalisés.
 
-1. ajoutez une journalisation pour aider à déboguer le code Java :
+1. Ajoutez une journalisation pour aider à déboguer le code Java :
 
    ```java
    import org.slf4j.Logger;
@@ -428,12 +429,12 @@ A ce stade, la logique pour quand afficher le badge **Eco Friendly** fonctionne,
 
 1. Téléchargez le fichier [eco_friendly.svg](../assets/customize-cif-components/eco_friendly.svg) . Il sera utilisé comme badge **écologique** .
 1. Revenez à l&#39;IDE et accédez au `ui.frontend` dossier.
-1. ajoutez le `eco_friendly.svg` fichier dans le `ui.frontend/src/main/resources/images` dossier :
+1. Ajoutez le `eco_friendly.svg` fichier dans le `ui.frontend/src/main/resources/images` dossier :
 
    ![SVG écologique ajouté](../assets/customize-cif-components/eco-friendly-svg-added.png)
 
 1. Open the file `productteaser.scss` at `ui.frontend/src/main/styles/commerce/_productteaser.scss`.
-1. ajoutez les règles Sass suivantes dans la `.productteaser` classe :
+1. Ajoutez les règles Sass suivantes dans la `.productteaser` classe :
 
    ```scss
    .productteaser {
