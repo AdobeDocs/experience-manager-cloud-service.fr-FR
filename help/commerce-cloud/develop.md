@@ -1,10 +1,16 @@
 ---
 title: Développer le commerce AEM pour l'AEM en tant que Cloud Service
-description: Développer le commerce AEM pour l'AEM en tant que Cloud Service
+description: Découvrez comment générer un projet AEM compatible avec le commerce à l'aide de l'archétype de projet AEM. Découvrez comment créer et déployer le projet sur un environnement de développement local à l’aide de l’AEM en tant que SDK Cloud Service.
+topics: Commerce, Development
+feature: Commerce Integration Framework
+version: cloud-service
+doc-type: tutorial
+kt: 5826
+thumbnail: 39476.jpg
 translation-type: tm+mt
-source-git-commit: 1c39ddefbeceb52e6a7adefe1d32d4cef164ef3b
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '987'
 ht-degree: 10%
 
 ---
