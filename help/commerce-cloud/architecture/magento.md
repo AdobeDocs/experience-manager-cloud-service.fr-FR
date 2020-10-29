@@ -1,10 +1,11 @@
 ---
 title: Intégration des AEM et des Magento à l’aide de Commerce Integration Framework
-description: Intégration des AEM et des Magento à l’aide de Commerce Integration Framework
+description: aem et Magento sont intégrés de manière transparente à l'aide du cadre d'intégration commerciale (CIF). CIF permet à AEM d’accéder à une instance de Magento et de communiquer avec le Magento via GraphQL. Il permet également aux auteurs AEM d’utiliser les sélecteurs de produits et de Catégories et la console de produits pour parcourir les données de produit et de catégorie récupérées à la demande du Magento. En outre, le FIC offre une vitrine prête à l'emploi qui peut accélérer les projets commerciaux.
+thumbnail: aem-magento-architecture.jpg
 translation-type: tm+mt
-source-git-commit: 48805b21500ff3f2629efd6aecb40bb1cdc38cd6
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '403'
 ht-degree: 1%
 
 ---
@@ -12,7 +13,7 @@ ht-degree: 1%
 
 # AEM and Magento Integration using Commerce Integration Framework {#aem-magento-framework}
 
-AEM et Magento sont intégrés de manière transparente à l&#39;aide du cadre d&#39;intégration commerciale (CIF). CIF permet à AEM d’accéder à une instance de Magento et de communiquer avec le Magento via GraphQL. Il permet également aux AEM Author d&#39;utiliser les sélecteurs de produits et de Catégories et la console de produits pour parcourir les données de produit et de catégorie récupérées sur demande par le Magento. En outre, le FIC offre une vitrine prête à l&#39;emploi qui peut accélérer les projets commerciaux.
+aem et Magento sont intégrés de manière transparente à l&#39;aide du cadre d&#39;intégration commerciale (CIF). CIF permet à AEM d’accéder à une instance de Magento et de communiquer avec le Magento via GraphQL. Il permet également aux auteurs AEM d’utiliser les sélecteurs de produits et de Catégories et la console de produits pour parcourir les données de produit et de catégorie récupérées à la demande du Magento. En outre, le FIC offre une vitrine prête à l&#39;emploi qui peut accélérer les projets commerciaux.
 
 ## Présentation de l&#39;architecture {#overview}
 
@@ -27,11 +28,11 @@ Les appels d’API côté serveur sont implémentés à l’aide du client [](ht
 
 Pour les composants côté client, qui sont créés à l&#39;aide de [React](https://reactjs.org/), le client [](https://www.apollographql.com/docs/react/) Apollo est utilisé.
 
-## AEM CIF Core Component Architecture {#cif-core-components}
+## aem CIF Core Component Architecture {#cif-core-components}
 
-![AEM CIF Core Component Architecture](../assets/cif-component-architecture.jpg)
+![aem CIF Core Component Architecture](../assets/cif-component-architecture.jpg)
 
-[AEM Composants](https://github.com/adobe/aem-core-cif-components) de base du FIC suivent des modèles de conception et des pratiques exemplaires très similaires à ceux des Composants [de base de la](https://github.com/adobe/aem-core-wcm-components)WCM.
+[aem Composants](https://github.com/adobe/aem-core-cif-components) de base du FIC suivent des modèles de conception et des pratiques exemplaires très similaires à ceux des Composants [de base de la](https://github.com/adobe/aem-core-wcm-components)WCM.
 
 La logique métier et la communication d&#39;arrière-plan avec le Magento pour l&#39;AEM CIF Core Components sont mises en oeuvre dans les modèles Sling. Au cas où il serait nécessaire de personnaliser cette logique pour répondre aux exigences spécifiques du projet, le modèle de délégation pour les modèles Sling peut être utilisé.
 
