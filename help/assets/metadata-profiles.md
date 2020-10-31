@@ -3,7 +3,7 @@ title: Profils de métadonnées
 description: Découvrez les profils de métadonnées pour les ressources. Apprenez à créer un profil de métadonnées et à l’appliquer aux ressources d’un dossier.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 98%
@@ -89,7 +89,7 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 
 1. Dans le rail de gauche, appuyez sur **[!UICONTROL Ressources]**, puis accédez au dossier auquel vous souhaitez appliquer un profil de métadonnées.
 1. Dans le dossier, appuyez ou cliquez sur la coche afin de la sélectionner, puis appuyez ou cliquez sur **Propriétés**.
-1. Select the **[!UICONTROL Metadata Profiles]** tab and select the profile from the drop-down menu and tap **[Save]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
+1. Select the **[!UICONTROL Metadata Profiles]** tab and select the profile from the drop-down menu and tap **[!UICONTROL Save]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
 ### Application d’un profil de métadonnées à l’ensemble des ressources {#applying-a-metadata-profile-globally}
 
