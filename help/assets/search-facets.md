@@ -1,11 +1,11 @@
 ---
 title: Facettes de recherche.
 description: Cet article décrit comment créer, modifier et utiliser les facettes de recherche dans AEM.
-translation-type: ht
-source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
-workflow-type: ht
-source-wordcount: '2371'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: c80c0063ce0f7c6bc8d99d5078ec8d5f50839732
+workflow-type: tm+mt
+source-wordcount: '2377'
+ht-degree: 98%
 
 ---
 
@@ -102,7 +102,7 @@ Si vous souhaitez utiliser un nœud existant, indiquez-le à l’aide de la boî
 1. Utilisez l’une des méthodes suivantes :
 
    * Dans le champ **[!UICONTROL Nom de la propriété]**, indiquez le chemin du fichier JSON où sont définis les nœuds des options et spécifiez les paires clé-valeur correspondantes.
-   * Appuyez sur l’icône ![](assets/do-not-localize/aem_assets_add_icon.png) en regard du champ Options afin de spécifier le texte affiché et la valeur pour les options que vous souhaitez fournir dans le panneau Filtres. Pour ajouter une autre option, appuyez/cliquez sur ![](assets/do-not-localize/aem_assets_add_icon.png) et répétez l’étape.
+   * Tap ![Assets add icon](assets/do-not-localize/aem_assets_add_icon.png) next to the Options field to specify the display text and value for the options you want to supply in the Filters panel. To add another option, tap/click ![Assets add icon](assets/do-not-localize/aem_assets_add_icon.png) and repeat the step.
 
 1. Assurez-vous que l’option **[!UICONTROL Sélection simple]** est désactivée pour permettre à l’utilisateur de sélectionner plusieurs options à la fois pour les types de fichiers (Images, Documents, Multimédia et Archives, par exemple). Si vous choisissez **[!UICONTROL Sélection simple]**, l’utilisateur ne peut sélectionner qu’une seule option à la fois pour les types de fichiers.
 
@@ -177,7 +177,7 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Chemin  </p> </td>
+   <td><p>Chemin   </p> </td>
    <td><p>Utilisez-le pour filtrer les résultats selon l’emplacement. Vous pouvez spécifier différents chemins d’accès sous la forme d’options.</p> </td>
    <td>
     <ul>
