@@ -3,10 +3,10 @@ title: Formats de fichiers et types MIME pris en charge
 description: Formats de fichier et types MIME pris en charge par Experience Manager Assets as a Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a1ecf5d0cf84a5f83952c6b32e77fdbb397486c2
+source-git-commit: 2df737ae0601774f4a9d1dce470125f596fab467
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 97%
+source-wordcount: '812'
+ht-degree: 99%
 
 ---
 
@@ -61,9 +61,6 @@ La légende suivante décrit le niveau de prise en charge.
 | JPEG | ✓ | ✓ | ✓ | ✓ |
 | PNG | ✓ | ✓ | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
-| WebP | ✓ | ✓ | - | - |
-
-* La prise en charge de WebP concerne actuellement la compression avec perte et prend en charge les valeurs 0 à 100 pour modifier la qualité de l’image.
 
 ## Formats des images dans [!DNL Dynamic Media] {#image-support-dynamic-media}
 
