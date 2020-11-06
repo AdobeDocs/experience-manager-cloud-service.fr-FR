@@ -2,10 +2,10 @@
 title: Configuration de Dynamic Media Cloud Service
 description: Informations sur la configuration de Dynamic Media dans Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 6319b8dcbddda9910b6745d1594dd81f5ba986ba
+source-git-commit: 978fcf17a1bd00b6d3be81587afaafef1807d678
 workflow-type: tm+mt
-source-wordcount: '5599'
-ht-degree: 81%
+source-wordcount: '5598'
+ht-degree: 79%
 
 ---
 
@@ -82,7 +82,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    | Chemin d’accès au dossier racine de l’entreprise | Chemin du dossier racine de votre société. |
    | Publication de ressources | Vous pouvez choisir parmi les trois options suivantes :<br>**[!UICONTROL Immédiatement ]**: Lorsque des fichiers sont téléchargés, le système les ingère et fournit l’URL/l’incorporation instantanément. Aucune intervention n’est nécessaire de la part de l’utilisateur pour publier des ressources.<br>**[!UICONTROL A l&#39;Activation]**: Vous devez d’abord publier explicitement le fichier avant qu’un lien URL/Incorporer ne soit fourni.<br>**[!UICONTROL Publication ]**sélective : Les ressources sont publiées automatiquement pour une prévisualisation sécurisée uniquement et peuvent être publiées explicitement sur AEM sans publication dans DMS7 pour diffusion dans le domaine public. À l’avenir, Adobe améliorera cette option pour publier des ressources vers AEM et vers Dynamic Media, qui sont mutuellement exclusifs. En d’autres termes, vous pouvez publier des ressources dans DMS7 afin d’utiliser des fonctionnalités telles que le recadrage intelligent ou les rendus dynamiques. Vous pouvez également publier des ressources exclusivement dans AEM pour un aperçu ; ces mêmes ressources ne sont pas publiées dans DMS7 pour une diffusion dans le domaine public. |
    | Serveur d’aperçu sécurisé | Permet de spécifier le chemin d’accès à l’URL de votre serveur de prévisualisations de rendus sécurisé. En d’autres termes, une fois les rendus générés, AEM peut accéder de manière sécurisée aux rendus Dynamic Media distants et en afficher un aperçu (aucune donnée binaire n’est renvoyée à l’instance AEM).<br>À moins que vous ayez pris des dispositions spéciales pour utiliser le serveur de votre propre société ou un serveur spécial, Adobe Systems vous conseille de conserver ce paramètre tel que spécifié. |
-   | Synchroniser tout le contenu | Sélectionné par défaut. Désélectionnez cette option si vous souhaitez inclure ou exclure des ressources de la synchronisation avec Dynamic Media. La désélection de cette option vous permet de choisir l’un des deux modes de synchronisation Dynamic Media :<br>**[!UICONTROL Mode de synchronisation Dynamic Media]**<br>**[!UICONTROL Enable by default ]**: The configuration is applied to all folders by default unless you mark a folder specifically for exclusion.<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Désactivé par défaut]**: La configuration n’est appliquée à aucun dossier tant que vous n’avez pas explicitement marqué un dossier sélectionné pour synchronisation dans Contenu multimédia dynamique.<br>Pour marquer un dossier sélectionné en vue de sa synchronisation avec Contenu multimédia dynamique, sélectionnez un dossier de ressources, puis, sur la barre d’outils, appuyez sur **[!UICONTROL Propriétés]**. Sous l’onglet **[!UICONTROL Détails]** , dans la liste déroulante Mode **[!UICONTROL de synchronisation des médias]** dynamiques, choisissez l’une des trois options suivantes. When you are done, tap **[!UICONTROL Save]**. *Rappelez-vous : ces trois options ne sont pas disponibles si vous avez sélectionné&#x200B;**Synchroniser tout le contenu**plus tôt.* Voir aussi [Utilisation de la publication sélective au niveau du dossier dans Contenu multimédia dynamique.](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL Hérité&#x200B;]**: Aucune valeur de synchronisation explicite sur le dossier ; au lieu de cela, le dossier hérite de la valeur de synchronisation de l’un de ses dossiers ancêtres ou du mode par défaut dans la configuration cloud. Le statut détaillé de l’héritage s’affiche par le biais d’une info-bulle.<br>**[!UICONTROL Activer pour les sous-dossiers]**: Incluez dans cette sous-arborescence tous les éléments à synchroniser avec Contenu multimédia dynamique. Les paramètres propres au dossier remplacent le mode par défaut dans la configuration du cloud.<br>**[!UICONTROL Désactivé pour les sous-dossiers ]**: Exclure la synchronisation de tous les éléments de cette sous-arborescence vers Contenu multimédia dynamique. |
+   | Synchroniser tout le contenu | Sélectionné par défaut. Désélectionnez cette option si vous souhaitez inclure ou exclure des ressources de la synchronisation avec Dynamic Media. La désélection de cette option vous permet de choisir l’un des deux modes de synchronisation Dynamic Media :<br>**[!UICONTROL Mode de synchronisation Dynamic Media]**<br>**[!UICONTROL Enable by default ]**: The configuration is applied to all folders by default unless you mark a folder specifically for exclusion. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Désactivé par défaut]**: La configuration n’est appliquée à aucun dossier tant que vous n’avez pas explicitement marqué un dossier sélectionné pour synchronisation dans Contenu multimédia dynamique.<br>Pour marquer un dossier sélectionné en vue de sa synchronisation avec Contenu multimédia dynamique, sélectionnez un dossier de ressources, puis, sur la barre d’outils, appuyez sur **[!UICONTROL Propriétés]**. Sous l’onglet **[!UICONTROL Détails]** , dans la liste déroulante Mode **[!UICONTROL de synchronisation des médias]** dynamiques, choisissez l’une des trois options suivantes. When you are done, tap **[!UICONTROL Save]**. *Rappelez-vous : ces trois options ne sont pas disponibles si vous avez sélectionné&#x200B;**Synchroniser tout le contenu**plus tôt.* Voir aussi [Utilisation de la publication sélective au niveau du dossier dans Contenu multimédia dynamique.](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL Hérité&#x200B;]**: Aucune valeur de synchronisation explicite sur le dossier ; au lieu de cela, le dossier hérite de la valeur de synchronisation de l’un de ses dossiers ancêtres ou du mode par défaut dans la configuration cloud. Le statut détaillé de l’héritage s’affiche par le biais d’une info-bulle.<br>**[!UICONTROL Activer pour les sous-dossiers]**: Incluez dans cette sous-arborescence tous les éléments à synchroniser avec Contenu multimédia dynamique. Les paramètres propres au dossier remplacent le mode par défaut dans la configuration du cloud.<br>**[!UICONTROL Désactivé pour les sous-dossiers ]**: Exclure la synchronisation de tous les éléments de cette sous-arborescence vers Contenu multimédia dynamique. |
 
    >[!NOTE]
    >
@@ -240,7 +240,7 @@ Vous pouvez définir les propriétés de correction des couleurs suivantes :
    | Espace colorimétrique par défaut CMJN | Nom du profil de couleurs CMJN par défaut. |
    | Espace colorimétrique par défaut à l’échelle grise | Nom du profil de couleur gris par défaut. |
    | Espace colorimétrique par défaut RVB | Nom du profil de couleurs RVB par défaut. |
-   | Mode de rendu de conversion des couleurs | Indique le mode de rendu. Les valeurs possibles sont les suivantes : **[!UICONTROL perception]**, **[!UICONTROL colorimétrie relative]**, **[!UICONTROL saturation]** et **[!UICONTROL colorimétrie absolue.]** adobe recommande **[!UICONTROL relative]** comme valeur par défaut. |
+   | Mode de rendu de conversion des couleurs | Indique le mode de rendu. Les valeurs possibles sont les suivantes : **[!UICONTROL perception]**, **[!UICONTROL colorimétrie relative]**, **[!UICONTROL saturation]** et **[!UICONTROL colorimétrie absolue.]** Adobe recommande **[!UICONTROL relative]** comme valeur par défaut. |
 
 1. Appuyez sur **[!UICONTROL Enregistrer]**.
 
@@ -254,14 +254,14 @@ Cela aura les effets suivants :
 * Dynamic renditions that return RGB output, will return it in the *sRGB* color space.
 * Les rendus dynamiques qui renvoient une sortie CMJN, la renverront dans l’espace colorimétrique *WebCoated*.
 
-#### Configuration du traitement des ressources {#configuring-asset-processing}
+#### Modification des types MIME pour les formats pris en charge {#configuring-asset-processing}
 
-Vous pouvez définir les types de ressources qui doivent être traités par Dynamic Media et personnaliser les paramètres de traitement des ressources avancé. Vous pouvez, par exemple, spécifier les paramètres de traitement des ressources de façon à ce qu’ils effectuent les opérations suivantes :
+Vous pouvez définir les types de fichier qui sont traités par Contenu multimédia dynamique et personnaliser les paramètres avancés de traitement des fichiers. Vous pouvez, par exemple, spécifier les paramètres de traitement des ressources de façon à ce qu’ils effectuent les opérations suivantes :
 
 * Conversion d’un PDF Adobe en ressource de catalogue électronique.
 * Conversion d’un document Adobe Photoshop (.psd) en ressource de modèle de bannière afin de permettre la personnalisation.
 * Pixellisation d’un fichier Adobe Illustrator (.ai) ou d’un fichier PostScript encapsulé Adobe Photoshop (.eps).
-* Remarque : des profils vidéo et d’images peuvent être utilisés pour définir le traitement des vidéos et des images, respectivement.
+* [Les Profils](/help/assets/dynamic-media/video-profiles.md) vidéo et les Profils [](/help/assets/dynamic-media/image-profiles.md) d’imagerie peuvent être utilisés pour définir le traitement des vidéos et des images, respectivement.
 
 Voir la section [Chargement des ressources](/help/assets/add-assets.md).
 
@@ -277,9 +277,9 @@ Pour configurer le traitement des ressources:
 1. Sous le dossier mimeTypes, sélectionnez un type MIME.
 1. Sur le côté droit de la page CRXDE Lite, dans la partie inférieure :
 
-   * Cliquez deux fois sur le champ **[!UICONTROL activé]**. Par défaut, tous les types MIME des ressources sont activés (définis sur **[!UICONTROL true]**), ce qui signifie que les ressources seront synchronisées avec Dynamic Media pour le traitement. Si vous souhaitez exclure ce type MIME de ressource du traitement, définissez ce paramètre sur **[!UICONTROL false]**.
+   * Double-click the **[!UICONTROL enabled]** field. Par défaut, tous les types MIME des ressources sont activés (définis sur **[!UICONTROL true]**), ce qui signifie que les ressources seront synchronisées avec Dynamic Media pour le traitement. If you want to exclude this asset mime type from being processed, change this setting to **[!UICONTROL false]**.
 
-   * Cliquez deux fois sur **[!UICONTROL jobParam]** pour ouvrir le champ de texte associé. Voir [Types MIME pris en charge](/help/assets/file-format-support.md) pour connaître la liste des valeurs de paramètres de traitement que vous pouvez utiliser pour un type MIME donné.
+   * Double-click **[!UICONTROL jobParam]** to open its associated text field. Voir [Types MIME pris en charge](/help/assets/file-format-support.md) pour connaître la liste des valeurs de paramètres de traitement que vous pouvez utiliser pour un type MIME donné.
 
 1. Utilisez l’une des méthodes suivantes :
    * Répétez les étapes 3 et 4 pour modifier d’autres types MIME.
@@ -287,11 +287,11 @@ Pour configurer le traitement des ressources:
 
 1. Dans le coin supérieur gauche de la page, appuyez sur **[!UICONTROL CRXDE Lite]** pour revenir dans AEM.
 
-#### Ajout de types MIME personnalisés pour les formats non pris en charge {#adding-custom-mime-types-for-unsupported-formats}
+#### Adding MIME types for unsupported formats {#adding-custom-mime-types-for-unsupported-formats}
 
 Vous pouvez ajouter des types MIME personnalisés pour les formats non pris en charge dans AEM Assets. Pour vous assurer que tout nouveau nœud ajouté dans CRXDE Lite n’est pas supprimé par AEM, vous devez vous assurer que vous déplacez le type MIME avant `image_` et que sa valeur activée est définie sur **[!UICONTROL false]**.
 
-Pour ajouter des types MIME personnalisés pour des formats non pris en charge:
+Pour ajouter des types MIME pour des formats non pris en charge :
 
 1. Dans AEM, appuyez sur **[!UICONTROL Outils > Opérations > Console web.]**
 
@@ -453,7 +453,7 @@ Pour créer un paramètre prédéfini d’ensemble par lot pour la génération 
 
    Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
 
-1. On the navigation bar near the top of the page, click **[!UICONTROL Setup > Application Setup]>[!UICONTROL Batch Set Presets]>[!UICONTROL Batch Set Preset]**.
+1. On the navigation bar near the top of the page, click **[!UICONTROL Setup > Application Setup] > [!UICONTROL Batch Set Presets] > [!UICONTROL Batch Set Preset]**.
 
    Notez que l’option **[!UICONTROL Afficher le formulaire]**, indiquée dans le coin supérieur droit de la page Détails, correspond à la vue par défaut.
 
