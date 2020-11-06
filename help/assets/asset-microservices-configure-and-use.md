@@ -3,10 +3,10 @@ title: Configuration et utilisation des microservices de ressources
 description: Configurez et utilisez les microservices de ressources natifs du cloud pour traiter les ressources à l’échelle.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: a316bc6f0c1f0d09f6531b6e1b244596c6010355
 workflow-type: tm+mt
-source-wordcount: '2527'
-ht-degree: 45%
+source-wordcount: '2530'
+ht-degree: 44%
 
 ---
 
@@ -36,7 +36,7 @@ Experience Manager permet d’effectuer les niveaux de traitement suivants.
 
 | Option | Description | Cas d’utilisation couverts |
 |---|---|---|
-| [Configuration par défaut](#default-config) | Il est disponible en l’état et ne peut pas être modifié. Cette configuration fournit une fonctionnalité de génération de rendu de base. | <ul> <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 px) </li> <li> Aperçu grand format (rendu web : 1 280 pixels) </li><li> Extraction des métadonnées et du texte.</li></ul> |
+| [Configuration par défaut](#default-config) | Il est disponible en l’état et ne peut pas être modifié. Cette configuration fournit une fonctionnalité de génération de rendu de base. | <ul> <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 pixels) </li> <li> Grande prévisualisation (rendu Web - 1 280 pixels) </li><li> Extraction des métadonnées et du texte.</li></ul> |
 | [Configuration personnalisée](#standard-config) | Configuré par les administrateurs via l’interface utilisateur. Fournit davantage d’options pour la génération de rendu en étendant l’option par défaut. Etendez l’option prête à l’emploi pour fournir différents formats et rendus. | <ul><li>Rendu FPO. </li> <li>Modification du format de fichier et de la résolution des images</li> <li> S’appliquer de manière conditionnelle aux types de fichiers configurés. </li> </ul> |
 | [Profil personnalisé](#custom-config) | Configuré par les administrateurs via l’interface utilisateur pour utiliser du code personnalisé par le biais d’applications personnalisées pour appeler le service [](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)Asset Compute. Prend en charge des exigences plus complexes dans une méthode native de cloud et évolutive. | Voir les cas [d’utilisation](#custom-config)autorisés. |
 
@@ -78,9 +78,9 @@ Pour créer un profil de traitement standard, procédez comme suit :
 1. Pour générer d’autres rendus, cliquez sur **[!UICONTROL Ajouter nouveau]** et fournissez les informations suivantes :
 
    * Nom de fichier de chaque rendu.
-   * Format de fichier (PNG, JPEG ou GIF) de chaque rendu.
+   * Format de fichier (PNG, JPEG, GIF ou WebP) de chaque rendu.
    * Largeur et hauteur en pixels de chaque rendu. Si les valeurs ne sont pas spécifiées, la taille en pixels de l’image d’origine est utilisée.
-   * Qualité en pourcentage de chaque rendu JPEG.
+   * Qualité en pourcentage de chaque rendu JPEG et WebP.
    * Types MIME inclus et exclus pour définir l’applicabilité d’un profil.
 
    ![processing-profiles-adding](assets/processing-profiles-image.png)
@@ -104,7 +104,7 @@ Il [!DNL Asset Compute Service] prend en charge divers cas d’utilisation, tels
 
 >[!NOTE]
 >
->adobe recommande d&#39;utiliser une application personnalisée uniquement lorsque les besoins de l&#39;entreprise ne peuvent pas être satisfaits à l&#39;aide des configurations par défaut ou du profil standard.
+>Adobe recommande d&#39;utiliser une application personnalisée uniquement lorsque les besoins de l&#39;entreprise ne peuvent pas être satisfaits à l&#39;aide des configurations par défaut ou du profil standard.
 
 Il peut transformer des formats d’image, de vidéo, de document et d’autres formats de fichier en différents rendus, y compris des miniatures, du texte extrait, des métadonnées et des archives.
 
@@ -129,7 +129,7 @@ Pour créer un profil personnalisé, procédez comme suit :
 
    * Nom de fichier de chaque rendu et extension de fichier prise en charge.
    * [URL de point de terminaison d’une application](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html)personnalisée Firefox. L’application doit provenir de la même organisation que le compte du Experience Manager.
-   * ajoutez Paramètres du service pour [transmettre des informations ou des paramètres supplémentaires à l’application](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)personnalisée.
+   * Ajoutez Paramètres du service pour [transmettre des informations ou des paramètres supplémentaires à l’application](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)personnalisée.
    * Types MIME inclus et exclus pour limiter le traitement à quelques formats de fichier spécifiques.
 
    Cliquez sur **[!UICONTROL Save]**.
@@ -148,7 +148,7 @@ L’intégration du service Asset Compute permet au Experience Manager de transm
 
 ![profil de traitement personnalisé](assets/custom-processing-profile.png)
 
-*Figure : Utilisez le champ Paramètres[!UICONTROL du]service pour transmettre des informations supplémentaires aux paramètres prédéfinis générés dans l’application personnalisée. Dans cet exemple, lorsque des images de campagne sont téléchargées, les images sont mises à jour avec`Jumanji`du texte en`Arial-BoldMT`police.*
+*Figure : Utilisez le champ Paramètres [!UICONTROL du] service pour transmettre des informations supplémentaires aux paramètres prédéfinis générés dans l’application personnalisée. Dans cet exemple, lorsque des images de campagne sont téléchargées, les images sont mises à jour avec `Jumanji` du texte en `Arial-BoldMT` police.*
 
 ## Utiliser des profils de traitement pour traiter des ressources {#use-profiles}
 
