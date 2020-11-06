@@ -93,9 +93,10 @@ Utilisez le code intégré ou l’URL pour intégrer votre vidéo interactive au
 ## (Facultatif) Identification de variables d’aperçu rapide {#optional-identifying-quickview-variables}
 
 >[!NOTE]
-Cette tâche n’est nécessaire que si les conditions ci-dessous sont vraies :
-* Vous souhaitez ajouter de l’interactivité à votre vidéo en déclenchant des aperçus rapides.
-* Votre mise en œuvre d’AEM *n’utilise pas* de framework d’intégration de commerce électronique pour extraire des données de produit dans AEM à partir d’une solution de commerce électronique, comme IBM WebSphere Commerce, Elastic Pathe, Hybris ou Intershop. <!-- See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).-->
+>
+>Cette tâche n’est nécessaire que si les conditions ci-dessous sont vraies :
+>* Vous souhaitez ajouter de l’interactivité à votre vidéo en déclenchant des aperçus rapides.
+>* Votre mise en œuvre d’AEM *n’utilise pas* de framework d’intégration de commerce électronique pour extraire des données de produit dans AEM à partir d’une solution de commerce électronique, comme IBM WebSphere Commerce, Elastic Pathe, Hybris ou Intershop. <!-- See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).-->
 
 Si votre mise en œuvre d’AEM utilise le eCommerce, vous pouvez ignorer cette tâche et passer à la tâche suivante.
 
@@ -256,10 +257,12 @@ Une fois que vous avez ajouté des segments de montage, vous ajoutez des images 
 Voir [Fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
-N’oubliez pas que les outils de partage sur les réseaux sociaux ne sont pas pris en charge dans la bannière de carrousel lorsque vous incorporez la visionneuse dans un fragment d’expérience. Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les réseaux sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
+>
+>N’oubliez pas que les outils de partage sur les réseaux sociaux ne sont pas pris en charge dans la bannière de carrousel lorsque vous incorporez la visionneuse dans un fragment d’expérience. Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les réseaux sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
 
 >[!NOTE]
-La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages AEM Sites.
+>
+>La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages AEM Sites.
 
 Les options Annuler et Rétablir, proches du coin supérieur droit de la page, sont prises en charge au cours de la session de création/modification actuelle.
 
@@ -480,7 +483,8 @@ Pour ajouter de l’interactivité à votre vidéo :
    Lorsque vous avez terminé, appuyez sur **[!UICONTROL Enregistrer]**.
 
    >[!NOTE]
-   Lorsque vous enregistrez votre vidéo interactive, un fichier `.vtt` associé est automatiquement enregistré avec celle-ci. Le fichier `.vtt` est enregistré dans le dossier `_VTT` situé à la racine des **[!UICONTROL ressources]**. Le fichier et le dossier sont nécessaires pour que la lecture de votre vidéo interactive s’effectue correctement sur votre site web. Ainsi, ne déplacez pas, ne modifiez pas et ne supprimez pas le dossier `_VTT` ni son contenu.
+   >
+   >Lorsque vous enregistrez votre vidéo interactive, un fichier `.vtt` associé est automatiquement enregistré avec celle-ci. Le fichier `.vtt` est enregistré dans le dossier `_VTT` situé à la racine des **[!UICONTROL ressources]**. Le fichier et le dossier sont nécessaires pour que la lecture de votre vidéo interactive s’effectue correctement sur votre site web. Ainsi, ne déplacez pas, ne modifiez pas et ne supprimez pas le dossier `_VTT` ni son contenu.
 
 1. Publiez la vidéo interactive. La publication crée le code intégré ou l’URL que vous copiez et collez éventuellement pour enrichir les expériences de votre site web.
 
@@ -489,7 +493,8 @@ Pour ajouter de l’interactivité à votre vidéo :
    Voir [Publication de ressources](publishing-dynamicmedia-assets.md).
 
    >[!NOTE]
-   Pour publier une vidéo commerciale avec des aperçus rapides, veillez également à publier séparément chaque ressource image liée à la vidéo dans votre espace commercial.
+   >
+   >Pour publier une vidéo commerciale avec des aperçus rapides, veillez également à publier séparément chaque ressource image liée à la vidéo dans votre espace commercial.
 
    Une fois les segments de chronologie ajoutés et la vidéo interactive publiée, vous êtes prêt à l’ajouter à la page d’entrée de votre site Web existant. Reportez-vous à la section [Intégration d’une vidéo interactive à votre site web.](#integrating-an-interactive-video-with-your-website)
 
@@ -514,8 +519,9 @@ Si vous avez ajouté l’interactivité avec des aperçus rapides, utilisez uniq
 Le code intégré copié est conçu pour un environnement réactif et devrait donc s’adapter automatiquement à la zone occupée précédemment par la vidéo statique.
 
 >[!NOTE]
-À ce stade, si vous avez ajouté l’interactivité avec seulement des pages web connectées par liens hypertexte, votre travail est terminé.
-Toutefois, si vous avez ajouté l’interactivité pour déclencher un aperçu rapide, les miniatures adjacentes à la vidéo interactive sont à des fins d’affichage uniquement ; elles ne sont pas encore intégrées à vos aperçus rapides existants. Dans ce cas, vous devez désormais intégrer la vidéo interactive à des aperçus rapides existants sur votre site Web.
+>
+>À ce stade, si vous avez ajouté l’interactivité avec seulement des pages web connectées par liens hypertexte, votre travail est terminé.
+>Toutefois, si vous avez ajouté l’interactivité pour déclencher un aperçu rapide, les miniatures adjacentes à la vidéo interactive sont à des fins d’affichage uniquement ; elles ne sont pas encore intégrées à vos aperçus rapides existants. Dans ce cas, vous devez désormais intégrer la vidéo interactive à des aperçus rapides existants sur votre site Web.
 
 **Exemple**
 
@@ -557,7 +563,8 @@ L’intégration est aussi simple que la suppression du code intégré de la vid
 ## Intégration d’une vidéo interactive avec un aperçu rapide existant    {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
-Cette tâche ne s’applique que si vous êtes un client AEM Assets autonome.
+>
+>Cette tâche ne s’applique que si vous êtes un client AEM Assets autonome.
 
 La dernière étape de cette procédure consiste à intégrer votre vidéo interactive avec une mise en œuvre existante de l’aperçu rapide utilisée sur votre site web. Pour ce qui est de l’intégration, il n’existe pas de solution qui fonctionne dans tous les cas. Chaque implémentation d’aperçu rapide est unique. De ce fait, une approche spécifique, impliquant probablement l’aide d’un informaticien compétent en systèmes frontaux, est nécessaire.
 
