@@ -2,10 +2,10 @@
 title: Réseau de diffusion de contenu dans AEM as a Cloud Service
 description: Réseau de diffusion de contenu dans AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 50c5be6adf265eac9c9c7a7b36d03cb30ba4e5d2
+source-git-commit: 14d08529eeee0f9881e668eed6273cfa57f1360f
 workflow-type: tm+mt
-source-wordcount: '689'
-ht-degree: 87%
+source-wordcount: '713'
+ht-degree: 81%
 
 ---
 
@@ -20,10 +20,10 @@ Le réseau de diffusion de contenu géré par AEM satisfait à la plupart des ex
 
 Procédez comme suit pour préparer la diffusion de contenu à l’aide du réseau de diffusion de contenu prêt à l’emploi d’Adobe :
 
-1. Fournissez le certificat SSL signé et la clé secrète à Adobe en partageant un lien vers un formulaire sécurisé contenant ces informations. Il est recommandé de coordonner cette tâche avec le service clientèle.
+1. Fournissez le certificat SSL signé et la clé secrète à Adobe en partageant un lien vers un formulaire sécurisé contenant ces informations. Il est recommandé de coordonner cette tâche avec le service clientèle. Adobe prend en charge jusqu’à 10 certificats SSL pour un programme.
    **Remarque :** AEM as a Cloud Service ne prend pas en charge les certificats DV (Domain Validated, domaines validés). En outre, il doit s’agir d’un certificat TLS X.509 d’une autorité de certification approuvée avec une clé privée RSA 2 048 bits correspondante.
 1. Donnez les informations suivantes au service clientèle :
-   * Le domaine personnalisé qui doit être associé à un environnement donné, indiqué par l’ID de programme et l’ID d’environnement. Notez que les domaines personnalisés côté auteur ne sont pas pris en charge.
+   * quel(s) domaine(s) personnalisé(s) doit être associé(s) à un environnement donné, tel que défini par l&#39;ID de programme et l&#39;ID d&#39;environnement. Jusqu’à 100 domaines sont pris en charge pour un environnement donné et les domaines ne peuvent pas contenir de caractères génériques. Notez que les domaines personnalisés côté auteur ne sont pas pris en charge.
    * Une liste d’adresses IP autorisées éventuellement nécessaire pour limiter le trafic à destination d’un environnement donné.
 1. Coordination avec l’assistance clientèle concernant les délais des modifications nécessaires apportées aux enregistrements DNS. Les instructions sont différentes selon qu’un enregistrement apex est nécessaire ou non :
    * si aucun enregistrement apex n’est nécessaire, les clients doivent définir l’enregistrement CNAME DNS pour qu’il adresse leur nom de domaine complet (FQDN) sur `cdn.adobeaemcloud.com`.
