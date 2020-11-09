@@ -1,11 +1,11 @@
 ---
 title: Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service
 description: 'Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service. '
-translation-type: ht
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
-source-wordcount: '1679'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 6b68c52235bae033b429a2d4c84f7c31c75b0fa2
+workflow-type: tm+mt
+source-wordcount: '1671'
+ht-degree: 98%
 
 ---
 
@@ -59,10 +59,11 @@ La mise à l’échelle des instances par client du service peut être automatiq
 ## Environnements {#environments}
 
 >[!NOTE]
->
 >Pour plus d’informations, voir [Déploiement - Modes d’exécution](/help/implementing/deploying/overview.md#runmodes)
 
-AEM as a Cloud Service est mis à la disposition des utilisateurs sous forme d’instances individuelles, chaque instance représentant un environnement AEM complet. Quatre types d’environnements sont disponibles avec AEM as a Cloud Service :
+AEM as a Cloud Service est mis à la disposition des utilisateurs sous forme d’instances individuelles, chaque instance représentant un environnement AEM complet.
+
+Il existe trois types d’environnements disponibles avec AEM en tant que Cloud Service :
 
 * **Environnement de production** : héberge les applications destinées aux professionnels.
 
@@ -70,9 +71,7 @@ AEM as a Cloud Service est mis à la disposition des utilisateurs sous forme d�
 
 * **Environnement de développement** : permet aux développeurs d’implémenter des applications AEM dans les mêmes conditions d’exécution que les environnements d’évaluation et de production.
 
-* **Environnement de démonstration** : peut être utilisé à des fins d’évaluation, de démonstration, de prototypage et de formation.
-
-Les environnements de développement et de démonstration sont souvent désignés sous le nom d’environnements *hors production*.
+   Refer to [Managing Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) for more details.
 
 ## Programmes {#programs}
 
