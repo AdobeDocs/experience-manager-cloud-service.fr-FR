@@ -3,9 +3,9 @@ title: Télécharger des ressources
 description: Téléchargez des ressources [!DNL Adobe Experience Manager Assets] à partir de et activez ou désactivez la fonctionnalité de téléchargement.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '885'
 ht-degree: 70%
 
 ---
@@ -26,16 +26,16 @@ Vous pouvez télécharger des ressources de Experience Manager à l’aide des m
 * [Interface utilisateur Experience Manager](#download-in-aem)
 * Interface utilisateur du partage de liens de ressources
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal.html)
-* [Application de bureau](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets)
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
+* [Application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
 ## Téléchargement de fichiers à l’aide de l’interface AEM {#download-in-aem}
 
-Le service de téléchargement asynchrone fournit une structure permettant un téléchargement transparent de ressources de grande taille. Les fichiers plus petits sont téléchargés en temps réel depuis l’interface utilisateur. Les fichiers volumineux sont téléchargés de manière asynchrone et les utilisateurs sont informés de leur achèvement par le biais de notifications Experience Manager dans la boîte de réception. Voir [compréhension de la boîte de réception](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html)du Experience Manager.
+Le service de téléchargement asynchrone fournit une structure permettant un téléchargement transparent de ressources de grande taille. Les fichiers plus petits sont téléchargés en temps réel depuis l’interface utilisateur. Les fichiers volumineux sont téléchargés de manière asynchrone et les utilisateurs sont informés de leur achèvement par le biais de notifications Experience Manager dans la boîte de réception. Voir [compréhension de la boîte de réception](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html)du Experience Manager.
 
 ![Notification de téléchargement](assets/download-notification.png)
 
-*Figure : Télécharger la notification via[!DNL Experience Manager]la boîte de réception.*
+*Figure : Télécharger la notification via [!DNL Experience Manager] la boîte de réception.*
 
 Les téléchargements asynchrones sont déclenchés dans l’un des cas suivants :
 
@@ -86,7 +86,7 @@ Pour permettre le téléchargement de fichiers depuis votre DAM (par exemple, lo
 
 Le `Asset Download Servlet` peut être désactivé sur une instance  Publish en mettant à jour la configuration du dispatcher afin de bloquer toute demande de téléchargement de ressources. [!DNL Experience Manager] Le servlet peut également être désactivé manuellement par l’intermédiaire de la console OSGi.
 
-1. Pour bloquer les requêtes de téléchargement de ressources via une configuration de Dispatcher, modifiez la configuration `dispatcher.any` et ajoutez une nouvelle règle à la [section /filter](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter).
+1. Pour bloquer les requêtes de téléchargement de ressources via une configuration de Dispatcher, modifiez la configuration `dispatcher.any` et ajoutez une nouvelle règle à la [section /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring).
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
