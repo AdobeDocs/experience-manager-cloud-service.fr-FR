@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
+source-git-commit: 7af8ddda4aee093b22147db9be9f65cd0c131c04
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '495'
 ht-degree: 3%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 3%
 
 Contenu multimédia dynamique prend en charge les technologies d’assistance et de contrôle du clavier, telles que les lecteurs d’écran JAWS et NVDA, dans l’interface utilisateur de création.
 
+
+
 ## Prise en charge de l’accessibilité du clavier dans Contenu multimédia dynamique
 
 Les touches prises en charge par des éléments d&#39;interface utilisateur individuels sont, dans la plupart des cas, évidentes et faciles à découvrir. Le contrôle du clavier dans Contenu multimédia dynamique porte sur les éléments suivants :
@@ -25,8 +27,8 @@ Les touches prises en charge par des éléments d&#39;interface utilisateur indi
 L’utilisation de la fonction `Tab` avance la mise au point des entrées sur l’élément d’interface utilisateur suivant dans l’ordre de tabulation ; l’utilisation `Shift+Tab` rétablit la cible d’action sur l’élément d’interface utilisateur précédent.
 La traversée de la cible d’action suit l’emplacement de l’élément d’interface utilisateur naturel à l’écran et se déplace de gauche à droite, puis de haut en bas.
 * Possibilité d’utiliser la `Spacebar` touche et la `Enter` touche pour activer les éléments standard de l’interface utilisateur, tels que les boutons, les listes déroulantes, etc.
-* Possibilité d’utiliser des touches personnalisées pour interagir avec des éléments complexes de l’interface utilisateur, tels que les touches fléchées dans l’éditeur de points chauds.
 * Possibilité de voir la mise en surbrillance du clavier sur l’élément principal. L’élément d’interface utilisateur qui a le focus d’entrée peut recevoir une indication de focus visuel sous la forme d’une bordure rendue autour de l’élément d’interface utilisateur.
+* Possibilité d’utiliser des touches personnalisées pour interagir avec des éléments complexes de l’interface utilisateur, tels que les touches fléchées dans l’éditeur de points chauds. Dans l’éditeur Recadrage d’image/Recadrage dynamique, vous pouvez utiliser les touches fléchées pour recadrer la taille du cadre ou repositionner l’image, ou les deux.
 
 Dans la mesure où Contenu multimédia dynamique est un module externe d’AEM Assets, la plupart des commandes de clavier se comportent exactement de la même manière qu’en AEM Assets. Par exemple, le `Cancel` bouton dans Contenu multimédia dynamique a la même mise en surbrillance que dans AEM Assets et réagit à la `Spacebar` clé que dans AEM Assets. Voir Raccourcis [clavier dans Ressources](/help/assets/accessibility.md#keyboard-shortcuts). Les exceptions à cette règle sont l’éditeur de zones réactives et les éditeurs Image Crop/Smart Crop.
 
