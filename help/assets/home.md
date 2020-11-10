@@ -2,10 +2,10 @@
 title: Guide d’Assets as a Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation d’Adobe Experience Manager Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: ffdecc8439b96b3bfcfd0571304a7917135684ca
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 85%
+source-wordcount: '343'
+ht-degree: 76%
 
 ---
 
@@ -40,12 +40,12 @@ Vous trouverez ci-dessous les ressources d’aide autonome d’Experience Manage
 
 ## Autres ressources relatives à Experience Manager {#other-resources}
 
-* [Mises à jour récentes de la documentation](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html#aem-as-a-cloud-service)
+* [Mises à jour récentes de la documentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html#aem-as-a-cloud-service)
 * [Documentation Dispatcher](/help/implementing/dispatcher/overview.md)
-* [Documentation HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
-* [Documentation sur les composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
-* [Documentation Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Documentation HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
+* [Documentation sur les composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [Documentation Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Tutoriels sur Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [Forum de la communauté AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Tutoriels sur Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
+* [Forum de la communauté AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
