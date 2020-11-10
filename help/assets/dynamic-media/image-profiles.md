@@ -2,10 +2,10 @@
 title: Profils d’image Dynamic Media
 description: Créez des profils d’image Dynamic Media qui contiennent des paramètres pour le masquage flou et le recadrage intelligent ou l’échantillon intelligent, ou les deux, puis appliquez le profil à un dossier de ressources d’images.
 translation-type: tm+mt
-source-git-commit: 867303fd42ed73d7c7dfb5cc1e3612f05ffea10f
+source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
 workflow-type: tm+mt
-source-wordcount: '2738'
-ht-degree: 99%
+source-wordcount: '2754'
+ht-degree: 98%
 
 ---
 
@@ -195,7 +195,7 @@ Vous pouvez exécuter à nouveau le recadrage intelligent pour générer des rec
 
 Voir aussi [Modification du recadrage intelligent ou de l’échantillon intelligent de plusieurs images](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
 
-**Pour modifier le recadrage intelligent ou l’échantillon intelligent d’une seule image** :
+**Pour modifier le recadrage intelligent ou l’échantillon d’une seule image**
 
 1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Ressources]**, puis au dossier auquel est appliqué un profil d’image de recadrage intelligent ou d’échantillon intelligent.
 
@@ -209,6 +209,7 @@ Voir aussi [Modification du recadrage intelligent ou de l’échantillon intelli
    * Dans l’image, faites glisser une poignée d’angle pour régler la taille de la zone visible du recadrage ou de l’échantillon.
    * Dans l’image, faites glisser la zone/l’échantillon vers un nouvel emplacement. Vous pouvez modifier uniquement les échantillons d’images ; les échantillons de couleurs sont statiques.
    * Au-dessus de l’image, appuyez sur **[!UICONTROL Rétablir]** pour annuler toutes les modifications effectuées et restaurer le recadrage ou l’échantillon d’origine.
+   * Utilisez les touches fléchées du clavier pour recadrer la taille du cadre ou repositionner l’image, ou les deux.
 
 1. Près du coin supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer]**, puis appuyez sur **[!UICONTROL Fermer]** pour revenir au dossier des ressources.
 
@@ -220,7 +221,7 @@ Une fois que vous avez modifié et enregistré un recadrage intelligent, le chan
 
 Vous pouvez exécuter à nouveau le recadrage intelligent pour générer des recadrages supplémentaires, le cas échéant.
 
-**Pour modifier le recadrage intelligent ou l’échantillon intelligent de plusieurs images** :
+**Pour modifier le recadrage intelligent ou l’échantillon intelligent de plusieurs images**
 
 1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Ressources]**, puis à un dossier auquel est appliqué un profil d’image de recadrage intelligent ou d’échantillon intelligent.
 1. Sur le dossier, appuyez sur l’icône **[!UICONTROL Autres actions]** (...), puis sur **[!UICONTROL Recadrage intelligent]**.
