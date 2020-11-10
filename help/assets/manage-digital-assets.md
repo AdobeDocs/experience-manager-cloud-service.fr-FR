@@ -4,9 +4,9 @@ description: Découvrez les différentes méthodes de gestion et de modification
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '4431'
+source-wordcount: '4429'
 ht-degree: 99%
 
 ---
@@ -43,7 +43,7 @@ Voir [Ajout de ressources numériques à Experience Manager](add-assets.md).
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-Si un utilisateur DAM charge une ou plusieurs ressources qui existent déjà dans le référentiel, [!DNL Experience Manager] détecte la duplication et en informe l’utilisateur. La fonctionnalité de détection des doublons est désactivée par défaut, car elle peut avoir un impact sur les performances en fonction de la taille du référentiel et du nombre de ressources chargées. Pour activer cette fonctionnalité, configurez le [!UICONTROL détecteur de duplication de ressources d’Adobe AEM Cloud]. Découvrez [comment définir des configurations OSGi](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html). La détection de duplication est basée sur la valeur `dam:sha1` unique stockée dans `jcr:content/metadata/dam:sha1`. Ainsi, les ressources en double sont détectées même si les noms de fichier sont différents.
+Si un utilisateur DAM charge une ou plusieurs ressources qui existent déjà dans le référentiel, [!DNL Experience Manager] détecte la duplication et en informe l’utilisateur. La fonctionnalité de détection des doublons est désactivée par défaut, car elle peut avoir un impact sur les performances en fonction de la taille du référentiel et du nombre de ressources chargées. Pour activer cette fonctionnalité, configurez le [!UICONTROL détecteur de duplication de ressources d’Adobe AEM Cloud]. Découvrez [comment définir des configurations OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html). La détection de duplication est basée sur la valeur `dam:sha1` unique stockée dans `jcr:content/metadata/dam:sha1`. Ainsi, les ressources en double sont détectées même si les noms de fichier sont différents.
 
 ![Détecter la configuration OSGi des ressources en double](assets/duplicate-detection.png)
 
