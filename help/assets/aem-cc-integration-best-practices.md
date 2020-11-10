@@ -4,9 +4,9 @@ description: Bonnes pratiques pour intégrer un déploiement Experience Manager 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '3297'
+source-wordcount: '3296'
 ht-degree: 99%
 
 ---
@@ -26,7 +26,6 @@ Lisez ce qui suit pour savoir quelles intégrations choisir entre poste de trava
 
 ## Besoins en matière de collaboration des créatifs, spécialistes marketing et utilisateurs de DAM   {#collaboration-need-of-creatives-marketers-and-dam-users}
 
-
 | Conditions requises | Cas d’utilisation | Surfaces impliquées |
 |---|---|---|
 | Simplifier l’expérience pour les créatifs utilisant un poste de travail | Simplifiez l’accès aux ressources depuis DAM (AEM Assets) pour les créatifs ou, plus largement, pour les utilisateurs sur poste de travail utilisant des applications de création de ressources natives. Ils ont besoin d’une méthode simple et rapide pour découvrir, utiliser (ouvrir), modifier et enregistrer les modifications dans AEM, ainsi que pour télécharger de nouveaux fichiers. | Poste de travail Windows ou Mac ; applications Creative Cloud |
@@ -38,7 +37,7 @@ Lisez ce qui suit pour savoir quelles intégrations choisir entre poste de trava
 | Proposition de valeur pour les personnes impliquées | Offre d’Adobe | Surfaces impliquées |
 |---|---|---|
 | Les utilisateurs créatifs découvrent des ressources à partir d’AEM, les ouvrent et les utilisent, les modifient et téléchargent les modifications dans AEM et téléchargent aussi de nouveaux fichiers dans AEM sans quitter les applications Creative Cloud. | [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator et InDesign |
-| Les utilisateurs professionnels simplifient l’ouverture et l’utilisation des ressources, la modification et le chargement des modifications dans AEM et le chargement de nouveaux fichiers dans AEM à partir de l’environnement de poste de travail. Ils utilisent une intégration générique pour ouvrir n’importe quel type de ressource dans l’application de bureau native, y compris les applications autres qu’Adobe. | [Application de bureau AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/using.html) | Application de bureau AEM sous Windows et Mac |
+| Les utilisateurs professionnels simplifient l’ouverture et l’utilisation des ressources, la modification et le chargement des modifications dans AEM et le chargement de nouveaux fichiers dans AEM à partir de l’environnement de poste de travail. Ils utilisent une intégration générique pour ouvrir n’importe quel type de ressource dans l’application de bureau native, y compris les applications autres qu’Adobe. | [[!DNL Experience Manager] application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en) | Application de bureau AEM sous Windows et Mac |
 | Les spécialistes marketing et les utilisateurs professionnels découvrent, prévisualisent, attribuent une licence et enregistrent les ressources Adobe Stock dans AEM. Les ressources sous licence et enregistrées fournissent des métadonnées Adobe Stock pour une meilleure gouvernance. | [Intégration d’Experience Manager et d’Adobe Stock](aem-assets-adobe-stock.md) | Interface web d’AEM |
 
 Cet article se concentre principalement sur les deux premiers aspects des besoins de collaboration. La distribution et la source des ressources à grande échelle sont brièvement mentionnées comme cas d’utilisation. Pour répondre à ces besoins, pensez à Adobe Brand Portal ou à Asset Share Commons. D’autres solutions (par exemple, [AEM Assets Brand Portal](https://helpx.adobe.com/fr/experience-manager/brand-portal/user-guide.html), les solutions pouvant être créées en fonction des composants [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/), [Partage de lien](share-assets.md) à l’aide de l’[interface utilisateur web d’AEM Assets](/help/assets/manage-digital-assets.md)) doivent être envisagées en fonction des besoins spécifiques.
