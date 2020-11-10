@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: 3f27193ea4533e700800fccfe75b123f6480bc69
+source-git-commit: 5f57e7ead9dc461188895e6428c386af96d53a53
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 71%
+source-wordcount: '1902'
+ht-degree: 70%
 
 ---
 
@@ -28,6 +28,8 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * Actuellement, la taille de MongoDB par défaut pour un AEM en tant qu’instance d’auteur Cloud Service est de 32 Go. Pour une taille de stockage de segments supérieure à 20 Go, il est recommandé d’envoyer un ticket d’assistance afin d’augmenter la taille de MongoDB.
 
+* Les utilisateurs et groupes transférés par l’outil de transfert de contenu sont uniquement ceux qui sont requis par le contenu pour satisfaire aux autorisations. Le processus *d’Extraction* copie l’intégralité `/home` du jeu de migration et le processus d’ *importation* copie tous les utilisateurs et groupes référencés dans les listes de contrôle d’accès du contenu migré.
+
 * Pendant la phase d’extraction, l’outil de transfert de contenu est exécuté sur une instance source AEM active.
 
 * Après avoir terminé la phase d&#39; *Extraction* du processus de transfert de contenu et avant de commencer la phase *d&#39;* importation pour ingérer du contenu dans votre AEM en tant qu&#39;instances d&#39; *étape* de Cloud Service ou de *production, vous devrez enregistrer un ticket d&#39;assistance pour informer l&#39;Adobe de votre intention d&#39;exécuter le  d&#39;importation de  afin que l&#39;Adobe puisse vous garantir qu&#39;absence d&#39;interruption.***** Vous devrez enregistrer le ticket de support 1 semaine avant la date prévue de votre *importation* . Une fois que vous avez soumis le ticket d&#39;assistance, l&#39;équipe d&#39;assistance vous donnera des conseils sur les étapes suivantes.
@@ -49,6 +51,7 @@ L&#39;outil de transfert de contenu peut être téléchargé dans un fichier zip
 ## Exécution de l’outil de transfert de contenu {#running-tool}
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
+
 
 Consultez cette section pour effectuer une migration du contenu vers AEM as a Cloud Service (auteur/publication) à l’aide de l’outil de transfert de contenu :
 
