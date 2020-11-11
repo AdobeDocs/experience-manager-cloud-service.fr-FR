@@ -4,9 +4,9 @@ user-guide-title: Implémentation pour AEM as a Cloud Service
 breadcrumb-title: Guide d’implémentation
 user-guide-description: Découvrez comment personnaliser votre déploiement d’Experience Manager as a Cloud Service, y compris des rubriques sur le déploiement et le développement.
 translation-type: tm+mt
-source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
+source-git-commit: 1cbc54fb7de0ba9c1c92cdcbe64f02a9e767c3b7
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '425'
 ht-degree: 77%
 
 ---
@@ -48,6 +48,11 @@ ht-degree: 77%
    + [Outil de comparaison des pages](/help/implementing/developing/introduction/page-diff.md)
    + [Limites de l’éditeur](/help/implementing/developing/introduction/editor-limitations.md)
    + [Conventions de dénomination](/help/implementing/developing/introduction/naming-conventions.md)
++ Outils de développement {#developer-tools}
+   + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
+   + [Module externe Content Package Maven](/help/implementing/developing/tools/maven-plugin.md)
+   + [Outil AEM Repo](/help/implementing/developing/tools/repo-tool.md)
+   + [Utilisation de CRXDE Lite](/help/implementing/developing/tools/crxde.md)
 + Composants et modèles {#components-templates}
    + [Présentation des composants](developing/components/overview.md)
    + [Modèles](developing/components/templates.md)
