@@ -3,10 +3,10 @@ title: Utilisation des ressources connectées pour partager des ressources DAM d
 description: Utilisez des ressources disponibles pour un déploiement  [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites]  à distance.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 0fb84bb88e42f92e335460edca5041a0878f9dca
 workflow-type: tm+mt
-source-wordcount: '2223'
-ht-degree: 91%
+source-wordcount: '2228'
+ht-degree: 90%
 
 ---
 
@@ -28,7 +28,7 @@ Pour les auteurs [!DNL Sites], les ressources distantes sont disponibles en tant
 Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points suivants :
 
 * Les utilisateurs font partie de groupes d’utilisateurs appropriés sur chaque déploiement.
-* Pour les types de déploiements [!DNL Adobe Experience Manager], l’un des critères pris en charge est satisfait. For more information, [!DNL Experience Manager] 6.5, see [Connected Assets functionality in Experience Manager 6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
+* Pour les types de déploiements [!DNL Adobe Experience Manager], l’un des critères pris en charge est satisfait. Pour plus d’informations sur le fonctionnement de cette fonctionnalité dans [!DNL Experience Manager] la version 6.5, voir Ressources [connectées dans le Experience Manager 6.5 Ressources](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] as a Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] sur AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] on-premise |
    |---|---|---|---|
