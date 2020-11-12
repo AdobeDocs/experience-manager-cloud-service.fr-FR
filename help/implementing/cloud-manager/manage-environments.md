@@ -2,10 +2,10 @@
 title: Gestion des environnements - Cloud Service
 description: Gestion des environnements - Cloud Service
 translation-type: tm+mt
-source-git-commit: 1d71788a84bb3c680ad4045454db00cfb345469d
+source-git-commit: 727dfd1d16a80620fba6db00289021ee5efae0fc
 workflow-type: tm+mt
-source-wordcount: '870'
-ht-degree: 86%
+source-wordcount: '880'
+ht-degree: 85%
 
 ---
 
@@ -141,5 +141,9 @@ Cette option est également disponible si vous cliquez sur **Détails** dans la 
 
 Sélectionnez Connexion **** locale dans le menu déroulant de la carte des **Environnements** pour vous connecter localement à Adobe Experience Manager.
 
-![](assets/environ-login.png)
+![](assets/environ-login-locally.png)
+
+De plus, vous pouvez vous connecter localement à partir de la page de résumé des **Environnements** .
+
+![](assets/environ-login-locally-2.png)
 
