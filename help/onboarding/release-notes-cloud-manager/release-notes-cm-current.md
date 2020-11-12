@@ -2,7 +2,7 @@
 title: Notes de mise à jour de Cloud Manager en AEM version 2020.11.0 du Cloud Service
 description: Notes de mise à jour de Cloud Manager en AEM version 2020.11.0 du Cloud Service
 translation-type: tm+mt
-source-git-commit: 65752c7c51538de27aa2b21695e8eb6c6695a5f5
+source-git-commit: 1d71788a84bb3c680ad4045454db00cfb345469d
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 4%
@@ -22,7 +22,7 @@ La date de publication de Cloud Manager en tant que Cloud Service 2020.11.0 est 
 
 ### Nouveautés {#what-is-new}
 
-* Une nouvelle option de menu **Connexion locale** est désormais disponible pour les utilisateurs à partir des options du menu environnement sur les pages Carte d&#39;Environnements et Résumé d&#39;Environnements.
+* Une nouvelle option de menu Connexion **locale** est désormais disponible pour les utilisateurs à partir des options du menu environnement sur les pages Carte d&#39;Environnements et Résumé d&#39;Environnements.
 
 * L’onglet **Apprendre** de Cloud Manager a été actualisé avec de nouvelles images dans l’interface utilisateur.
 
