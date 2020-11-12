@@ -2,7 +2,7 @@
 title: Gestion des environnements - Cloud Service
 description: Gestion des environnements - Cloud Service
 translation-type: tm+mt
-source-git-commit: 906965ee6f86682ebd5df8f3e99c5951d78cb071
+source-git-commit: fb979363fcb8c17fbefd11b9b86498447593f745
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 85%
@@ -86,13 +86,13 @@ Les mises à jour des environnements Test et Production sont gérées automatiqu
 
 Les mises à jour des environnements de développement sont gérées par les utilisateurs du programme. Lorsqu’un environnement n’exécute pas la dernière version d’AEM disponible pour le public, l’état de la carte Environnements sur l’écran d’accueil affiche **MISE À JOUR DISPONIBLE**.
 
-![](assets/update-environ-1.png)
+![](assets/environ-update.png)
 
 
 L’option **Mettre à jour** est disponible à partir de la carte **Environnements**.
 Cette option est également disponible si vous cliquez sur **Détails** dans la carte **Environnements**. La page **Environnements** s’ouvre. Une fois que vous avez sélectionné l’environnement de développement, cliquez sur **...** et sélectionnez **Mettre à jour**, comme illustré dans la figure ci-dessous :
 
-![](assets/environments-screen-update.png)
+![](assets/environ-update2.png)
 
 Si vous sélectionnez cette option, un gestionnaire de déploiement pourra mettre à jour le pipeline associé à cet environnement vers la dernière version, puis exécuter le pipeline.
 
@@ -108,7 +108,7 @@ L’option **Supprimer** est disponible dans le menu déroulant de la carte **En
 
 L’option de suppression est également disponible si vous cliquez sur **Détails** dans la carte **Environnements**. La page **Environnements** s’ouvre. Une fois que vous avez sélectionné l’environnement de développement, cliquez sur **...** et sélectionnez **Supprimer**, comme illustré dans la figure ci-dessous :
 
-![](assets/environ-delete-2.png)
+![](assets/environ-delete2.png)
 
 
 >[!NOTE]
@@ -121,7 +121,7 @@ Select **Manage Access** from the dropdown menu in the **Environments** Card. Vo
 
 Consultez [Gestion de l’accès à l’instance](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) d’auteur pour en savoir plus.
 
-![](assets/environ-manage-access.png)
+![](assets/environ-access.png)
 
 
 ## Accès à Developer Console {#accessing-developer-console}
@@ -133,7 +133,7 @@ Seul un utilisateur possédant le rôle de développeur aura accès à **Develop
 Pour plus d’informations, voir [Mise en hibernation et déshibernation des environnements Sandbox](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction).
 
 
-![](assets/environ-dev-console.png)
+![](assets/environ-devconsole.png)
 
 Cette option est également disponible si vous cliquez sur **Détails** dans la carte **Environnements**. La page **Environnements** s’ouvre. Une fois que vous avez sélectionné un environnement, cliquez sur **...** et sélectionnez **Console développeur**.
 
