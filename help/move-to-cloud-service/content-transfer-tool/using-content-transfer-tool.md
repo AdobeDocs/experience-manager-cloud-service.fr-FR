@@ -2,7 +2,7 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: 5f57e7ead9dc461188895e6428c386af96d53a53
+source-git-commit: f3a4fdf57dc84bba9811530fccb2fe6a4404376f
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 70%
@@ -34,9 +34,9 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * Après avoir terminé la phase d&#39; *Extraction* du processus de transfert de contenu et avant de commencer la phase *d&#39;* importation pour ingérer du contenu dans votre AEM en tant qu&#39;instances d&#39; *étape* de Cloud Service ou de *production, vous devrez enregistrer un ticket d&#39;assistance pour informer l&#39;Adobe de votre intention d&#39;exécuter le  d&#39;importation de  afin que l&#39;Adobe puisse vous garantir qu&#39;absence d&#39;interruption.***** Vous devrez enregistrer le ticket de support 1 semaine avant la date prévue de votre *importation* . Une fois que vous avez soumis le ticket d&#39;assistance, l&#39;équipe d&#39;assistance vous donnera des conseils sur les étapes suivantes.
    * Enregistrez un ticket d&#39;assistance avec les détails suivants :
-   1. Date exacte et heure estimée (avec votre fuseau horaire) lorsque vous prévoyez de début de la phase *d&#39;importation* .
-   2. Type d’Environnement (Phase ou Production) dans lequel vous prévoyez d’importer des données.
-   3. ID programme
+      * Date exacte et heure estimée (avec votre fuseau horaire) lorsque vous prévoyez de début de la phase *d&#39;importation* .
+      * Type d’Environnement (Phase ou Production) dans lequel vous prévoyez d’importer des données.
+      * ID de programme.
 
 * La *phase d’ingestion* de l’auteur réduira l’ensemble du déploiement de l’auteur. L’auteur AEM ne sera donc pas disponible pendant la totalité du processus d’ingestion. Assurez-vous également qu’aucun pipeline Cloud Manager n’est exécuté pendant que vous exécutez la phase d’ *importation* .
 
