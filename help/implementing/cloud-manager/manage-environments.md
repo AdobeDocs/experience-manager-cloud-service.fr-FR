@@ -2,10 +2,10 @@
 title: Gestion des environnements - Cloud Service
 description: Gestion des environnements - Cloud Service
 translation-type: tm+mt
-source-git-commit: 7b452b260bfaee159fe4d228b704f69b12780805
+source-git-commit: 1d71788a84bb3c680ad4045454db00cfb345469d
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 88%
+source-wordcount: '870'
+ht-degree: 86%
 
 ---
 
@@ -136,4 +136,10 @@ Pour plus d’informations, voir [Mise en hibernation et déshibernation des env
 ![](assets/environ-dev-console.png)
 
 Cette option est également disponible si vous cliquez sur **Détails** dans la carte **Environnements**. La page **Environnements** s’ouvre. Une fois que vous avez sélectionné un environnement, cliquez sur **...** et sélectionnez **Console développeur**.
+
+## Connexion locale {#login-locally}
+
+Sélectionnez Connexion **** locale dans le menu déroulant de la carte des **Environnements** pour vous connecter localement à Adobe Experience Manager.
+
+![](assets/environ-login.png)
 
