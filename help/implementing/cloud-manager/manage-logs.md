@@ -2,7 +2,7 @@
 title: Gérer les journaux - Cloud Service
 description: Gérer les journaux - Cloud Service
 translation-type: tm+mt
-source-git-commit: 703248cdcab9797b20d3f7e46f7ac03c15ec6980
+source-git-commit: b67bafd9edb06a6d333e1a5bde0687994c30ea81
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 100%
@@ -28,7 +28,7 @@ Ou encore à partir de la page **Environnements** :
 ![](assets/download-logs2.png)
 
 
-## Journaux disponibles via l’API {#logs-thorugh-api}
+## Journaux disponibles via l’API {#logs-through-api}
 
 Outre le téléchargement de journaux par le biais l’interface utilisateur, les journaux seront disponibles via l’API et l’interface de ligne de commande.
 
