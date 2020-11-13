@@ -2,7 +2,7 @@
 title: Gérer les journaux - Cloud Service
 description: Gérer les journaux - Cloud Service
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: 703248cdcab9797b20d3f7e46f7ac03c15ec6980
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 100%
@@ -14,9 +14,9 @@ ht-degree: 100%
 
 Les utilisateurs peuvent accéder à la liste des fichiers journaux disponibles pour l’environnement sélectionné à l’aide de la carte d’environnement. Les utilisateurs peuvent accéder à la liste des fichiers journaux disponibles pour l’environnement sélectionné.
 
-Ces fichiers peuvent être téléchargés soit par le biais de l’interface utilisateur, soit à partir de la page **Aperçu**.
+Ces fichiers peuvent être téléchargés soit par le biais de l’interface utilisateur, soit à partir de la page **Aperçu:**
 
-![](assets/manage-logs1.png)
+![](assets/download-logs1.png)
 
 Ou encore à partir de la page **Environnements** :
 
@@ -25,7 +25,7 @@ Ou encore à partir de la page **Environnements** :
 >[!NOTE]
 >Quel que soit l’emplacement d’ouverture, la même boîte de dialogue s’affiche et permet de télécharger un fichier journal.
 
-![](assets/manage-logs3.png)
+![](assets/download-logs2.png)
 
 
 ## Journaux disponibles via l’API {#logs-thorugh-api}
