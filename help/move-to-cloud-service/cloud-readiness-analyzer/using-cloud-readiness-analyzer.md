@@ -1,100 +1,100 @@
 ---
-title: Utilisation de Cloud Readiness Analyzer
-description: Utilisation de Cloud Readiness Analyzer
+title: Utilisation de l’analyseur des meilleures pratiques
+description: Utilisation de l’analyseur des meilleures pratiques
 translation-type: tm+mt
-source-git-commit: a1690ec94cf739d1b366f5ef99f3124162f35375
+source-git-commit: ca6ee9c820c67b68c7498f2b0bad8c650b00562e
 workflow-type: tm+mt
-source-wordcount: '2209'
-ht-degree: 71%
+source-wordcount: '2207'
+ht-degree: 48%
 
 ---
 
 
-# Utilisation de Cloud Readiness Analyzer {#using-cloud-readiness-analyzer}
+# Utilisation de l’analyseur des meilleures pratiques {#using-best-practices-analyzer}
 
-## Points importants concernant l’utilisation de Cloud Readiness Analyzer {#imp-considerations}
+## Considérations importantes pour l’utilisation de l’analyseur des meilleures pratiques {#imp-considerations}
 
-Consultez la section ci-dessous afin de comprendre les points importants à prendre en compte pour utiliser l’outil Cloud Readiness Analyzer (CRA) :
+Suivez la section ci-dessous pour comprendre les points importants à prendre en compte pour l’exécution de l’analyseur des meilleures pratiques (BPA) :
 
-* Les rapports CRA sont générés à l’aide des résultats obtenus par le [détecteur de motifs](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/deploying/upgrading/pattern-detector.html) d’Adobe Experience Manager (AEM). La version du détecteur de motifs utilisée par CRA se trouve dans le module d’installation CRA.
+* The BPA report is built using the output of the Adobe Experience Manager (AEM) [Pattern Detector](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/deploying/upgrading/pattern-detector.html). La version du Détecteur de schémas utilisée par BPA est incluse dans le package d’installation de BPA.
 
-* L’outil CRA ne peut être exécuté que par un utilisateur **admin** ou un utilisateur figurant dans le groupe **administrateurs**.
+* BPA may only be run by the **admin** user or a user in the **administrators** group.
 
-* L’outil est pris en charge sur les instances AEM avec la version 6.1 et versions ultérieures.
-
-   >[!NOTE]
-   > Consultez [Installation sur AEM 6.1](#installing-on-aem61) pour connaître les conditions particulières d’installation de CRA sur AEM 6.1.
-
-* Il peut s’exécuter dans n’importe quel environnement, mais il est préférable de l’exécuter dans un environnement d’*évaluation*.
+* Le BPA est pris en charge sur les instances AEM avec les versions 6.1 et ultérieures.
 
    >[!NOTE]
-   >Pour éviter toute incidence sur les instances critiques de l’entreprise, il est recommandé d’exécuter CRA dans un environnement de *création* aussi proche que possible de l’environnement de *production* concernant la personnalisation, la configuration, les contenus et les applications utilisateur. Vous pouvez également l’exécuter sur un clone de l’environnement de *création* de production.
+   > Please see [Installing on AEM 6.1](#installing-on-aem61) for special requirements for installing BPA on AEM 6.1.
 
-* La génération du contenu des rapports CRA peut nécessiter un temps important, de plusieurs minutes à quelques heures. La durée nécessaire dépend largement de la taille et de la nature du contenu du référentiel AEM, de la version d’AEM et d’autres facteurs.
+* BPA can run on any environment, but it is preferred to have it run on a *Stage* environment.
+
+   >[!NOTE]
+   >In order to avoid an impact on business critical instances, it is recommended that you run BPA on an *Author* environment that is as close as possible to the *Production* environment in the areas of customizations, configurations, content and user applications. Vous pouvez également l’exécuter sur un clone de l’environnement de *création* de production.
+
+* La génération du contenu du rapport BPA peut prendre un temps considérable, de plusieurs minutes à quelques heures. La durée nécessaire dépend largement de la taille et de la nature du contenu du référentiel AEM, de la version d’AEM et d’autres facteurs.
 
 * En raison du temps éventuellement nécessaire pour générer le contenu du rapport, celui-ci est créé par un processus en arrière-plan et conservé dans un cache. L’affichage et le téléchargement du rapport doivent être relativement rapides, car il utilise le cache de contenu jusqu’à son expiration ou s’il est explicitement actualisé. Pendant la génération du contenu du rapport, vous pouvez fermer l’onglet du navigateur et revenir ultérieurement à l’affichage du rapport lorsque son contenu est disponible dans le cache.
 
 ## Disponibilité {#availability}
 
-Il est possible de télécharger l’outil Cloud Readiness Analyzer dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le module par le biais du gestionnaire de modules sur votre instance source Adobe Experience Manager (AEM).
+L&#39;analyseur des meilleures pratiques peut être téléchargé sous la forme d&#39;un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le module par le biais du gestionnaire de modules sur votre instance source Adobe Experience Manager (AEM).
 
 >[!NOTE]
->Téléchargez Cloud Readiness Analyzer depuis le portail de [distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+>Download the Best Practices Analyzer from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
 
-## Affichage du rapport Cloud Readiness Analyzer au format {#viewing-report}
+## Affichage du rapport Analyseur des meilleures pratiques {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0 et versions ultérieures {#aem-later-versions}
 
-Consultez cette section pour savoir comment afficher le rapport Cloud Readiness Analyzer :
+Suivez cette section pour savoir comment vue du rapport Best Practices Analyzer :
 
-1. Sélectionnez Adobe Experience Manager et accédez à Outils -> **Opérations** -> **Cloud Readiness Analyzer**.
+1. Select Adobe Experience Manager and navigate to tools -> **Operations** -> **Best Practices Analyzer**.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic1.png)
 
-1. Cliquez sur **Générer le rapport** pour exécuter Cloud Readiness Analyzer.
+1. Cliquez sur **Générer le rapport** pour exécuter l’analyseur des meilleures pratiques.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-generate-report.png)
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic2.png)
 
-1. Pendant que l&#39;ARC génère le rapport, vous pouvez voir les progrès réalisés par l&#39;outil à l&#39;écran. Il affiche le nombre d&#39;éléments analysés et le nombre de résultats trouvés.
+1. Pendant que l&#39;APM génère le rapport, vous pouvez voir la progression de l&#39;outil à l&#39;écran. Il affiche le nombre d&#39;éléments analysés et le nombre de résultats trouvés.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-generate-report-1.png)
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic3.png)
 
 
-1. Une fois le rapport de l&#39;ARC généré, il affiche un résumé et le nombre de constatations sous forme de tableau, selon le type de conclusions et le niveau d&#39;importance. Pour obtenir plus de détails sur une recherche particulière, vous pouvez cliquer sur le numéro correspondant au type de recherche dans le tableau.
+1. Une fois le rapport d&#39;APB généré, il affiche un résumé et le nombre de résultats sous forme de tableau, organisés en fonction du type de recherche et du niveau d&#39;importance. Pour obtenir plus de détails sur une recherche particulière, vous pouvez cliquer sur le numéro correspondant au type de recherche dans le tableau.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-4.png)
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic4.png)
 
    L&#39;action ci-dessus fera défiler automatiquement l&#39;écran jusqu&#39;à l&#39;emplacement de cette recherche dans le rapport.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-5.png)
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic5.png)
 
 1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-6.png)
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
-   >Vous pouvez forcer CRA à effacer son cache et à générer de nouveau le rapport en cliquant sur **Actualiser le rapport**.
+   >You may force the BPA to clear its cache and regenerate the report by clicking **Refresh Report**.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-7.png)
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic7.png)
 
    >[!NOTE]
    >Le rapport est en cours de régénération, mais il affiche la progression en termes de pourcentage achevé, comme le montre l&#39;illustration ci-dessous.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-refresh-1.png)
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic8.png)
 
 
 ### Adobe Experience Manager 6.2 et 6.1 {#aem-specific-versions}
 
-Dans l’outil Adobe Experience Manager 6.2, Cloud Readiness Analyzer est limité à un lien qui génère et télécharge le rapport CSV.
+L’outil Best Practices Analyzer est limité dans Adobe Experience Manager 6.2 à un lien qui génère et télécharge le rapport CSV.
 
 Pour Adobe Experience Manager 6.1, l’outil n’est pas fonctionnel et seule l’interface HTTP peut être utilisée.
 
 >[!NOTE]
 >Dans toutes les versions, le détecteur de motifs inclus peut s’exécuter de manière indépendante.
 
-## Interprétation des rapports Cloud Readiness Analyzer {#cra-report}
+## Interprétation du rapport Analyseur des meilleures pratiques {#cra-report}
 
-Lorsque l’outil Cloud Readiness Analyzer est exécuté dans l’instance AEM, le rapport s’affiche sous la forme de résultats dans la fenêtre des outils.
+Lorsque l&#39;outil Best Practices Analyzer est exécuté dans l&#39;instance AEM, le rapport s&#39;affiche sous forme de résultats dans la fenêtre d&#39;outils.
 
 Le format du rapport est le suivant :
 
@@ -103,13 +103,13 @@ Le format du rapport est le suivant :
    * **Expiration Time** : heure d’expiration du cache du contenu du rapport.
    * **Generation Time Period** : durée du processus de génération du contenu du rapport.
    * **Finding Count** : nombre total de résultats figurant dans le rapport.
-* **System Overview** : informations sur le système AEM sur lequel CRA a été exécuté.
+* **Présentation** du système : Informations sur le système AEM sur lequel le BPA a été exécuté.
 * **Finding Categories** : différentes sections traitant chacune d’un ou plusieurs résultats pour une même catégorie. Chaque section comprend les éléments suivants : nom de la catégorie, sous-types, nombre et importance des résultats, résumé, lien vers la documentation de la catégorie et informations relatives à chaque résultat.
 
 Un niveau d’importance est attribué à chaque résultat pour indiquer une priorité absolue concernant l’action.
 
 >[!NOTE]
->Pour en savoir plus sur chaque Catégorie de recherche, consultez Catégories [du Détecteur de](https://docs.adobe.com/content/help/en/experience-manager-pattern-detection/table-of-contents/aso.html)schémas.
+>Pour en savoir plus sur chaque Catégorie de recherche, consultez Catégories [du Détecteur de](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html)schémas.
 
 Consultez le tableau ci-dessous pour comprendre les niveaux d’importance :
 
@@ -121,9 +121,9 @@ Consultez le tableau ci-dessous pour comprendre les niveaux d’importance :
 | CRITICAL | Il est très probable que ce résultat constitue un problème de mise à niveau qui doit être résolu pour éviter toute perte de fonction ou de performances. |
 
 
-## Interprétation du rapport Cloud Readiness Analyzer au format CSV {#cra-csv-report}
+## Interprétation du rapport CSV de l’analyseur des meilleures pratiques {#cra-csv-report}
 
-Lorsque vous cliquez sur l’option **CSV** de votre instance AEM, le format CSV du rapport Cloud Readiness Analyzer est créé à partir du cache de contenu et renvoyé à votre navigateur. En fonction des paramètres du navigateur, ce rapport sera automatiquement téléchargé sous la forme d’un fichier portant le nom `results.csv` par défaut.
+When you click the **CSV** option from your AEM instance, the CSV format of the Best Practices Analyzer report is built from the content cache and returned to your browser. En fonction des paramètres du navigateur, ce rapport sera automatiquement téléchargé sous la forme d’un fichier portant le nom `results.csv` par défaut.
 
 Si le cache a atteint son délai d’expiration, le rapport sera de nouveau généré avant la création et le téléchargement du fichier CSV.
 
@@ -145,12 +145,12 @@ La valeur « \N » dans une colonne concernant un résultat individuel indique
 
 ## Interface HTTP {#http-interface}
 
-CRA fournit une interface HTTP, utilisable comme alternative à son interface utilisateur dans AEM. L’interface prend en charge les commandes HEAD et GET. Il peut être utilisé pour générer le rapport CRA et le renvoyer dans l’un des trois formats suivants : JSON, CSV et TSV (valeurs séparées par des tabulations).
+Le BPA fournit une interface HTTP qui peut être utilisée comme alternative à son interface utilisateur dans AEM. L’interface prend en charge les commandes HEAD et GET. Il peut être utilisé pour générer le rapport BPA et le renvoyer dans l’un des trois formats suivants : JSON, CSV et valeurs séparées par des tabulations (TSV).
 
-Les URL suivantes sont disponibles pour l’accès HTTP, où `<host>` est le nom d’hôte et, si nécessaire, le port du serveur sur lequel CRA est installé :
-* `http://<host>/apps/readiness-analyzer/analysis/result.json` pour le format JSON
-* `http://<host>/apps/readiness-analyzer/analysis/result.csv` pour le format CSV
-* `http://<host>/apps/readiness-analyzer/analysis/result.tsv` pour le format TSV
+The following URLs are available for HTTP access, where `<host>` is the hostname, and port if necessary, of the server on which the BPA is installed:
+* `http://<host>/apps/best-practices-analyzer/analysis/report.json` pour le format JSON
+* `http://<host>/apps/best-practices-analyzer/analysis/report.csv` pour le format CSV
+* `http://<host>/apps/best-practices-analyzer/analysis/report.tsv` pour le format TSV
 
 ### Exécution d’une requête HTTP {#executing-http-request}
 
@@ -161,7 +161,7 @@ Une méthode simple consiste à ouvrir un onglet dans le même navigateur que ce
 Vous pouvez également utiliser un outil de ligne de commande tel que `curl` ou `wget`, mais aussi toute autre application cliente HTTP. Si vous n’utilisez pas un onglet de navigateur avec une session authentifiée, vous devez fournir un nom d’utilisateur et un mot de passe d’administration en commentaire.
 
 À titre d’exemple, vous pouvez procéder comme suit :
-`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.csv' > result.csv`.
+`curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.csv' > report.csv`.
 
 ### En-têtes et paramètres {#http-headers-and-parameters}
 
@@ -182,9 +182,9 @@ Les paramètres de requête HTTP suivants sont disponibles à titre de commodit�
 Si un en-tête HTTP et son paramètre de requête correspondant sont présents simultanément, le paramètre de requête est prioritaire.
 
 La commande suivante est une méthode simple pour lancer la génération du rapport via l’interface HTTP :
-`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
+`curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.json?max-age=0&respond-async=true'`.
 
-Lorsqu’une requête a été effectuée, le client n’a pas besoin de rester actif pour que le rapport soit généré. La génération du rapport peut être lancée avec un client à l&#39;aide d&#39;une demande de GET HTTP et, une fois le rapport généré, affichée à partir du cache avec un autre client ou avec l&#39;outil ARC dans l&#39;interface utilisateur de l&#39;AEM.
+Lorsqu’une requête a été effectuée, le client n’a pas besoin de rester actif pour que le rapport soit généré. La génération du rapport peut être lancée avec un client à l’aide d’une demande de GET HTTP et, une fois le rapport généré, affichée à partir du cache avec un autre client ou avec l’outil BPA dans l’interface utilisateur AEM.
 
 ### Réponses {#http-responses}
 
@@ -201,19 +201,19 @@ Les valeurs de réponses possibles sont les suivantes :
 
 ### Ajustement de la durée de vie du cache {#cache-adjustment}
 
-La durée de vie par défaut du cache CRA est de 24 heures. Avec l’option destinée à actualiser un rapport et à régénérer le cache, aussi bien dans l’instance AEM que dans l’interface HTTP, cette valeur par défaut sera probablement appropriée pour la plupart des utilisations du CRA. Si le temps de génération du rapport est particulièrement long pour votre instance AEM, vous pouvez ajuster la durée de vie du cache afin de minimiser la nouvelle génération d’un rapport.
+La durée de vie du cache BPA par défaut est de 24 heures. Avec l&#39;option d&#39;actualisation d&#39;un rapport et de régénération du cache, dans l&#39;instance AEM et l&#39;interface HTTP, cette valeur par défaut est susceptible d&#39;être appropriée pour la plupart des utilisations du BPA. Si le temps de génération du rapport est particulièrement long pour votre instance AEM, vous pouvez ajuster la durée de vie du cache afin de minimiser la nouvelle génération d’un rapport.
 
 La durée de vie du cache est stockée dans la propriété `maxCacheAge` dans le nœud de référentiel suivant :
-`/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
+`/apps/best-practices-analyzer/content/BestPracticesReport/jcr:content`
 
 La valeur de cette propriété est la durée de vie du cache en secondes. Un administrateur peut ajuster la durée de vie du cache à l’aide de CRX/DE Lite.
 
 ### Installation sur AEM 6.1 {#installing-on-aem61}
 
-CRA utilise un compte d’utilisateur de service système nommé `repository-reader-service` pour exécuter le détecteur de motifs. Ce compte est disponible dans AEM 6.2 et versions ultérieures. Dans AEM 6.1, ce compte doit être créé *avant* l’installation de CRA en procédant comme suit :
+BPA utilizes a system service user account named `repository-reader-service` to execute the Pattern Detector. Ce compte est disponible dans AEM 6.2 et versions ultérieures. On AEM 6.1, this account must be created *prior to* installation of BPA by taking the following steps:
 
 1. Suivez les instructions de la section [Création d’un utilisateur de service](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) pour créer un utilisateur. Définissez l’ID utilisateur sur `repository-reader-service` et laissez le champ Chemin intermédiaire vide, puis cliquez sur la coche verte.
 
 2. Suivez les instructions de la section [Gestion des utilisateurs et des groupes](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/security/security.html#managing-users-and-groups), en particulier les instructions d’ajout d’utilisateurs à un groupe afin d’ajouter l’utilisateur `repository-reader-service` au groupe `administrators`.
 
-3. Installez le package CRA via Package Manager sur votre instance AEM source. (Cela a pour effet d’ajouter la modification de configuration nécessaire à la configuration ServiceUserMapper pour l’utilisateur du service système `repository-reader-service`.)
+3. Installez le package BPA via Package Manager sur votre instance d’AEM source. (Cela a pour effet d’ajouter la modification de configuration nécessaire à la configuration ServiceUserMapper pour l’utilisateur du service système `repository-reader-service`.)
