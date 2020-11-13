@@ -1,26 +1,26 @@
 ---
-title: Présentation de Cloud Readiness Analyzer
-description: Présentation de Cloud Readiness Analyzer
-translation-type: ht
-source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
-workflow-type: ht
-source-wordcount: '256'
-ht-degree: 100%
+title: Présentation de l’analyseur des meilleures pratiques
+description: Présentation de l’analyseur des meilleures pratiques
+translation-type: tm+mt
+source-git-commit: 61be08b5cbee6c389f3878ef9d9f7ea9167b1dce
+workflow-type: tm+mt
+source-wordcount: '288'
+ht-degree: 35%
 
 ---
 
 
-# Présentation {#overview-cloud-readiness-analyzer}
+# Présentation {#overview-best-practices-analyzer}
 
-Cloud Readiness Analyzer permet d’accélérer les processus d’évaluation du niveau de préparation à la migration entre un déploiement d’Adobe Experience Manager (AEM) existant et AEM as a Cloud Service.
+L’analyseur des meilleures pratiques fournit une évaluation de votre mise en oeuvre AEM actuelle en indiquant les domaines qui ne respectent pas les meilleures pratiques AEM. Il fournit également des orientations sur les prochaines étapes à suivre pour adopter AEM pratiques exemplaires. En outre, il permet d&#39;accélérer les processus d&#39;évaluation de la préparation au passage d&#39;un déploiement Adobe Experience Manager (AEM) existant à un déploiement AEM en tant que Cloud Service.
 
 L’outil génère un rapport destiné à identifier les domaines de reconfiguration potentielle, première étape du parcours de transition vers AEM as a Cloud Service.
 
-## Rapport Cloud Readiness Analyzer {#cra-report}
+## Rapport Analyseur des meilleures pratiques {#bpa-report}
 
-Le rapport Cloud Readiness Analyzer permet de mieux comprendre le degré de préparation général à la mise à niveau. Ses résultats sont organisés par catégories de problèmes qui devront être résolus avant un déploiement réussi dans AEM as a Cloud Service.
+Le rapport Best Practices Analyzer permet de mieux comprendre l’état de préparation à la mise à niveau générale. Ses résultats sont organisés par catégories de problèmes qui devront être résolus avant un déploiement réussi dans AEM as a Cloud Service.
 
-Le rapport Cloud Readiness Analyzer comprend les catégories suivantes :
+Le rapport Best Practices Analyzer comprend les catégories suivantes :
 
 * Fonctionnalités de l’application qui doivent être reconfigurées
 * Éléments du référentiel qui doivent être déplacés vers un emplacement pris en charge
@@ -28,9 +28,9 @@ Le rapport Cloud Readiness Analyzer comprend les catégories suivantes :
 * Problèmes de déploiement et de configuration
 * Fonctionnalités d’AEM 6.x qui ont été remplacées par de nouvelles ou qui ne sont actuellement pas prises en charge par AEM as a Cloud Service
 
-Des liens contenus dans le rapport Cloud Readiness Analyzer apportent des informations supplémentaires sur les catégories, les implications possibles et les solutions associées à ces catégories.
+Des informations supplémentaires sur les catégories, les implications possibles et les solutions associées à ces catégories sont fournies par le biais de liens dans le rapport Best Practices Analyzer.
 
 >[!NOTE]
->Le rapport accélère le processus d’évaluation du délai et du coût de la transition vers AEM as a Cloud Service en apportant des informations qui, en son absence, auraient dû être collectées et évaluées manuellement.
+>Le rapport Analyseur des meilleures pratiques accélère le processus d’estimation du temps et du coût requis pour la transition à l’AEM en tant que Cloud Service en fournissant des informations qui autrement devraient être collectées et évaluées manuellement.
 
-Vous pouvez également télécharger le rapport Cloud Readiness Analyzer depuis votre instance AEM. Reportez-vous à [Affichage du rapport Cloud Readiness Analyzer](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md#viewing-report) pour plus d’informations.
+Vous pouvez également télécharger le rapport Best Practices Analyzer à partir de votre instance AEM. Refer to [Viewing the Best Practices Analyzer Report](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md#viewing-report) for more details.
