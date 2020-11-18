@@ -2,10 +2,10 @@
 title: SDK AEM as a Cloud Service
 description: Présentation de l'AEM en tant que kit de développement logiciel Cloud Service
 translation-type: tm+mt
-source-git-commit: 1ebc4f833d4a01f1144c585dc71057f007031e43
+source-git-commit: 0b46cc8ce4229138df84c70193cf9068e1200f0a
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 98%
+source-wordcount: '1181'
+ht-degree: 86%
 
 ---
 
@@ -23,6 +23,17 @@ En outre, certains clients qui ont déjà été déployés avec AEM 6.5 ou des 
 
 * **6.5 Deprecated Java API Jar** : jeu supplémentaire d’interfaces qui ont été supprimées depuis AEM 6.5.
 * **6.5 Deprecated Javadoc Jar** : Javadocs pour l’ensemble supplémentaire d’interfaces.
+
+## Création pour le SDK {#building-for-the-sdk}
+
+L’AEM en tant que SDK Cloud Service est utilisé pour créer et déployer du code personnalisé. Pour plus de détails, consultez la documentation [](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en)AEM Project Archetype. A un niveau élevé, les étapes suivantes sont effectuées :
+
+* **Compilez le code**. Comme prévu, le code source est compilé, ce qui génère les packages de contenu résultants.
+* **Créez des artefacts**. Les artefacts sont créés pendant ce processus.
+* **Analyser les lots**. Les lots sont analysés à l’aide du module externe Maven analyzer, qui recherche les problèmes du projet Maven, tels que les dépendances manquantes.
+* **Déployez des artefacts**. Les artefacts sont déployés sur le serveur local.
+
+Les mêmes étapes sont exécutées par Cloud Manager lors du déploiement sur les Environnements Cloud. L’exécution de compilations localement permet le développement et les tests locaux afin que les développeurs puissent découvrir efficacement les problèmes de code ou de structure bien avant de s’engager dans le contrôle de code source et de déclencher les déploiements de Cloud Manager, ce qui peut prendre plus de temps.
 
 ## Accès au SDK d’AEM as a Cloud Service {#accessing-the-aem-as-a-cloud-service-sdk}
 
