@@ -2,7 +2,7 @@
 title: Programmes Sandbox - Cloud Service
 description: Programmes Sandbox - Cloud Service
 translation-type: tm+mt
-source-git-commit: b3fbe13df886459c6b18369af1a6e550ccad0454
+source-git-commit: 8383dc023b35cf76f7dc0e41cedef8cfab7753aa
 workflow-type: tm+mt
 source-wordcount: '1184'
 ht-degree: 0%
@@ -51,13 +51,13 @@ Les Programmes Sandbox sont livrés à un environnement de développement au mom
 
 Le jeu d&#39;environnements de la phase de production peut être ajouté manuellement au Programme Sandbox lorsque l&#39;utilisateur est prêt à configurer un pipeline de production.
 
-Pour savoir comment créer manuellement un environnement, reportez-vous à la section Environnements [](/help/implementing/cloud-manager/manage-environments.md) Ajoutant pour plus de détails.
+Pour savoir comment créer manuellement un environnement, reportez-vous à la section Environnement [](/help/implementing/cloud-manager/manage-environments.md) Ajoutant pour plus de détails.
 
 ### Suppression d&#39;Environnements de sandbox {#deleting-sandbox-environments}
 
 L’utilisateur disposant des autorisations requises peut supprimer un ou plusieurs environnements de développement ou de production/étape.
 
-Pour supprimer un environnement, reportez-vous à la section [Suppression d’Environnements](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) pour plus d’informations.
+Pour supprimer un environnement, reportez-vous à la section [Suppression d’Environnement](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) pour plus d’informations.
 
 
 ## Mise en hibernation et déshibernation des Environnements de sandbox {#hibernating-introduction}
@@ -176,7 +176,7 @@ Peu de considérations clés liées aux environnements en hibernation et en hibe
 
 ## aem mises à jour des Environnements Sandbox {#aem-updates-sandbox}
 
-Refer to [AEM version updates](/help/implementing/deploying/overview.md#version-updates) for more details.
+Refer to [AEM version updates](/help/implementing/deploying/aem-version-updates.md) for more details.
 
 Un utilisateur peut manuellement appliquer AEM mises à jour aux environnements dans un Programme Sandbox.
 
