@@ -1,11 +1,11 @@
 ---
 title: Configuration d’OSGi pour AEM as a Cloud Service
 description: 'Configuration d’OSGi à l’aide de valeurs secrètes et spécifiques aux environnements '
-translation-type: ht
-source-git-commit: 024518cca45463afb5cbb4c9cd66bf1cd2a7c210
-workflow-type: ht
-source-wordcount: '2691'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 0a2d44a63c3d26460c0836ab6b28989a0aad72da
+workflow-type: tm+mt
+source-wordcount: '2737'
+ht-degree: 98%
 
 ---
 
@@ -471,6 +471,11 @@ config.dev
 </table>
 
 ## Format de l’API Cloud Manager pour la définition des propriétés {#cloud-manager-api-format-for-setting-properties}
+
+Consultez [cette page](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md) pour savoir comment l&#39;API doit être configurée.
+>[!NOTE]
+>
+>Assurez-vous que l’API Cloud Manager utilisée a attribué le rôle &quot;Deployment Manager - Cloud Service&quot;. Les autres rôles ne peuvent pas exécuter toutes les commandes ci-dessous.
 
 ### Définition de valeurs via l’API {#setting-values-via-api}
 
