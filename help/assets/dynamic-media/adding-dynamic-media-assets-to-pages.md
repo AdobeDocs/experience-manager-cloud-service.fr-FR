@@ -117,10 +117,9 @@ Le composant Dynamic Media est dynamique ; il propose des options différentes
 >
 >* Plusieurs instances du composant Dynamic Media utilisé sur la même page.
 >* Chaque instance utilise le même type de ressource.
-
 >
 >
-Prenez en compte le fait que l’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant Dynamic Media de cette page n’est pas prise en charge.
+>Prenez en compte le fait que l’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant Dynamic Media de cette page n’est pas prise en charge.
 >
 >Vous pouvez toutefois utiliser le même paramètre prédéfini de visionneuse pour tous les composants Dynamic Media qui utilisent des éléments du même type, dans la page.
 
@@ -256,10 +255,9 @@ Le composant Média interactif est dynamique : il propose des options différen
 >
 >* Plusieurs instances du composant Interactive Media utilisé sur la même page.
 >* Chaque instance utilise le même type de ressource.
-
 >
 >
-Prenez en compte le fait que l’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant Interactive Media de cette page n’est pas prise en charge.
+>Prenez en compte le fait que l’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant Interactive Media de cette page n’est pas prise en charge.
 >
 >Vous pouvez toutefois utiliser le même paramètre prédéfini de visionneuse pour tous les composants Interactive Media qui utilisent des éléments du même type, dans la page.
 
@@ -298,10 +296,9 @@ Les critères de rapport d’aspect et de mots-clés s’appliquent tous deux au
 >
 >* Plusieurs instances du composant **[!UICONTROL Média panoramique]** utilisées sur la même page.
 >* Chaque instance utilise le même type de ressource.
-
 >
 >
-N’oubliez pas que l’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant **[!UICONTROL Média panoramique]** sur cette page n’est pas prise en charge.
+>N’oubliez pas que l’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant **[!UICONTROL Média panoramique]** sur cette page n’est pas prise en charge.
 >
 >Vous pouvez toutefois utiliser le même paramètre prédéfini de visionneuse pour tous les composants de média panoramique qui utilisent des éléments du même type, dans la page.
 
