@@ -1,25 +1,25 @@
 ---
 title: Formats de fichiers et types MIME pris en charge
-description: Formats de fichier et types MIME pris en charge par Experience Manager Assets as a Cloud Service.
+description: File formats and MIME types supported by [!DNL Experience Manager Assets] as a Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2df737ae0601774f4a9d1dce470125f596fab467
+source-git-commit: bafcf005a2264b96caa3d59c478aa57fb38b2a4c
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 99%
+source-wordcount: '785'
+ht-degree: 93%
 
 ---
 
 
-# Formats de fichiers pris en charge par Assets {#supported-file-formats}
+# [!DNL Assets] formats de fichier pris en charge {#supported-file-formats}
 
-Adobe Experience Manager as a Cloud Service prend en charge les fonctionnalités de base de gestion de contenu (stockage, gestion des métadonnées en ligne, gestion des versions, chargement et téléchargement, etc.) pour tout fichier binaire, quel que soit son format. Adobe Experience Manager Assets prend en charge un large éventail de formats de fichiers et chaque fonctionnalité de produit prend en charge différents formats.
+[!DNL Adobe Experience Manager] as a Cloud Service prend en charge les fonctionnalités de base de gestion de contenu (stockage, gestion des métadonnées en ligne, contrôle de version, chargement et téléchargement, etc.) pour tout fichier binaire, quel que soit son format. [!DNL Adobe Experience Manager Assets] prend en charge un large éventail de formats de fichiers et chaque fonctionnalité de produit prend en charge différents formats.
 
-En outre, Experience Manager Assets offre une prise en charge étendue pour générer des aperçus et des rendus et extraire des métadonnées et du texte en vue de l’indexation en texte intégral. Cette prise en charge étendue est assurée à l’aide de [microservices de ressources](asset-microservices-configure-and-use.md).
+In addition, [!DNL Experience Manager Assets] provides extended support to generate previews and renditions and to extract metadata and text for full-text indexing. Cette prise en charge étendue est assurée à l’aide de [microservices de ressources](asset-microservices-configure-and-use.md).
 
 Les éléments essentiels concernant la conversion des ressources à l’aide des microservices de ressources sont les suivants :
 
-* [Formats de fichiers Adobe](#adobe-formats) clés générés par les applications et services Adobe, notamment Adobe Photoshop, Adobe InDesign, Adobe Illustrator, Adobe XD, Adobe Dimension et Adobe Acrobat ou PDF.
+* Key [Adobe file formats](#adobe-formats) produced by Adobe applications and services, including [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], and [!DNL Adobe Acrobat] or PDF.
 * [Formats de fichiers d’imagerie](#image-formats) clés.
 * [Formats de fichiers Camera Raw](#camera-raw-formats) pour un large éventail d’appareils photo, dont Canon, Nikon, Fujifilm, Olympus et d’autres fabricants (optimisés par Adobe Camera Raw).
 * [Formats de documents](#document-formats) courants, y compris les formats Microsoft Office et Open Document.
@@ -35,11 +35,11 @@ La légende suivante décrit le niveau de prise en charge.
 
 ## Formats Adobe {#adobe-formats}
 
-| Format de fichier | Génération de miniature | Extraction de texte intégral | Extraction de métadonnées | Largeur/Hauteur |
+| Format de fichier | Génération de miniatures | Extraction de texte intégral | Extraction de métadonnées | Largeur/Hauteur |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
 | AI | ✓ | - | ✓ | ✓ |
 | COLLAGE | - | - | ✓ | - |
-| DN | ✓ |  | ✓ | ✓ |
+| DN | ✓ | - | ✓ | ✓ |
 | IDEAS | - | - | ✓ | - |
 | INDD | ✓ | - | ✓ | ✓ * |
 | INDT | - | - | ✓ | - |
@@ -53,7 +53,7 @@ La légende suivante décrit le niveau de prise en charge.
 
 ## Formats d’image {#image-formats}
 
-| Format de fichier | Génération de miniature | Extraction de métadonnées | Largeur/Hauteur | Options |
+| Format de fichier | Génération de miniatures | Extraction de métadonnées | Largeur/Hauteur | Recadrer |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
 | BMP | ✓ | - | ✓ | ✓ |
 | EPS | - | ✓ | - | - |
@@ -77,7 +77,7 @@ La légende suivante décrit le niveau de prise en charge.
 
 ‡ L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par [!DNL Adobe Photoshop] et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
 
-Les sous-types suivants de formats de fichiers d’images pixellisées qui ne sont pas pris en charge dans [!DNL Dynamic Media] :
+Les sous-types suivants de formats de fichiers d’images pixellisées ne sont pas pris en charge dans [!DNL Dynamic Media] :
 
 * Fichiers PNG dont la taille de bloc IDAT est supérieure à 100 Mo.
 * Fichiers PSB.
@@ -94,16 +94,16 @@ Voir [Utilisation de ressources 3D dans Dynamic Media.](/help/assets/dynamic-me
 
 | Format | Stockage | Contrôle de version | Workflow | Publication | Contrôle d’accès | Aperçu de miniature | Aperçu 3D | Diffusion Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
-| gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
-| gLTF | ✓ | ✓ | ✓ |  | ✓ |  | ✓ |  |
-| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
-| STL | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
-| USDz | ✓ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ | - | ✓ | - | ✓ | - |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
 
 ## Formats [!DNL Camera RAW] {#camera-raw-formats}
 
-| Format de fichier | Génération de miniature | Extraction de métadonnées | Largeur/Hauteur |
+| Format de fichier | Génération de miniatures | Extraction de métadonnées | Largeur/Hauteur |
 | ----------- | -------------------- | ------------------- | ------------ |
 | 3FR | ✓ | ✓ | ✓ |
 | ARW | ✓ | ✓ | ✓ |
@@ -137,7 +137,7 @@ Voir [Utilisation de ressources 3D dans Dynamic Media.](/help/assets/dynamic-me
 
 Les formats de documents pris en charge pour les fonctionnalités de gestion des ressources sont les suivants.
 
-| Format de fichier | Génération de miniature | Extraction de texte intégral | Largeur/Hauteur | Gestion des métadonnées | [Ressources connectées](use-assets-across-connected-assets-instances.md) |
+| Format de fichier | Génération de miniatures | Extraction de texte intégral | Largeur/Hauteur | Gestion des métadonnées | [Ressources connectées](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
 | PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -169,12 +169,12 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 
 ## Formats vidéo {#video-formats}
 
-| Format de fichier | Génération de miniature | Extraction de métadonnées | Largeur/Hauteur |
+| Format de fichier | Génération de miniatures | Extraction de métadonnées | Largeur/Hauteur |
 | ----------- | -------------------- | ------------------- | ------------ |
 | 3G2 | - | ✓ | - |
 | 3GP | - | ✓ | - |
 | AVI | ✓ | ✓ | ✓ |
-| DIVX | ✓ |  | ✓ |
+| DIVX | ✓ | - | ✓ |
 | F4V | ✓ | ✓ | ✓ |
 | FLV | ✓ | ✓ | ✓ |
 | M2T | ✓ | - | ✓ |
@@ -197,27 +197,27 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 ## Formats vidéo dans [!DNL Dynamic Media] pour le transcodage {#video-dynamic-media-transcoding}
 
 | Extension de fichier vidéo | Conteneur | Codecs vidéo recommandés | Codecs vidéo non pris en charge |
-|------------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| MP4 | MPEG-4 | H264/AVC (tous les profils) |  |
+|------------------------|--------------------|--------|-------|
+| MP4 | MPEG-4 | H264/AVC (tous les profils) | - |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 et HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
 | FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (fichiers d’animation vectorielle) |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
-| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 |  |
-| M4V | Apple iTunes | H264/AVC |  |
+| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
+| M4V | Apple iTunes | H264/AVC | - |
 | AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
-| WebM | WebM | Google VP8 |  |
-| OGV, OGG | Ogg | Theora, VP3, Dirac |  |
-| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro |  |
-| MTS | AVCHD | H264/AVC |  |
-| MKV | Matroska | H264/AVC |  |
-| R3D, RM | Red Raw Video | MJPEG 2000 |  |
+| WebM | WebM | Google VP8 | - |
+| OGV, OGG | Ogg | Theora, VP3, Dirac | - |
+| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
+| MTS | AVCHD | H264/AVC | - |
+| MKV | Matroska | H264/AVC | - |
+| R3D, RM | Red Raw Video | MJPEG 2000 | - |
 | RAM, RM | RealVideo | Non pris en charge | Real G2 (RV20), Real 8 (RV30), Real 10 (RV40) |
-| FLAC | Native Flac | FLAC (Free Lossless Audio Codec) |  |
-| MJ2 | Motion JPEG 2000 | Codec Motion JPEG 2000 |  |
+| FLAC | Native Flac | FLAC (Free Lossless Audio Codec) | - |
+| MJ2 | Motion JPEG 2000 | Codec Motion JPEG 2000 | - |
 
 ## Formats audio {#audio-formats}
 
-Assets as a Cloud Service offre une prise en charge de l’extraction de métadonnées XMP pour les formats audio AIF, ASF, M4A, MP3, WAV et WMA.
+[!DNL Assets] as a Cloud Service offre une prise en charge de l’extraction de métadonnées XMP pour les formats audio AIF, ASF, M4A, MP3, WAV et WMA.
 
 >[!MORELIKETHIS]
 >
