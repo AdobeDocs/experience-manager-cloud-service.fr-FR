@@ -2,15 +2,22 @@
 title: Transition vers AEM as a Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation concernant la transition entre Adobe Experience Manager as a Cloud Service et AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: c843240b419fe1c40292e6cdb44b9811bc809bf3
+source-git-commit: 80aa4881bf3e6ee01e84eb4096d24fcb749419c6
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 95%
+source-wordcount: '578'
+ht-degree: 93%
 
 ---
 
 
 # Transition vers AEM as a Cloud Service {#aem-moving-to-aem-guide}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_overview"
+>title="A propos de Cloud Accelerator Manager"
+>abstract="Cloud Acceleration Manager est votre propre guide personnel tout au long du processus d&#39;AEM en tant que Cloud Service."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html" text="Modifications notables apportées à AEM Sites as a Cloud Service"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html#how-to-use" text="Configuration de votre pipeline CI/CD"
 
 ## Avantages de la transition vers AEM as a Cloud Service {#benefits-aem-moving-to-aem-guide}
 
@@ -24,7 +31,7 @@ Le parcours de transition vers Cloud Service comprend trois phases : planificat
 
 Pour une transition réussie et fluide, vous devez veiller à une planification adéquate et respecter les bonnes pratiques décrites du présent guide.
 
-La figure ci-dessous contient une représentation graphique du parcours recommandé de transition vers Cloud Service.
+La figure ci-dessous est une représentation graphique du parcours recommandé de transition vers Cloud Service.
 
 ![image](/help/move-to-cloud-service/assets/home-img1.png)
 
@@ -50,7 +57,7 @@ Pour en savoir plus sur les différentes phases du parcours de transition vers C
 | [Guide de l’utilisateur relatif à l’implémentation](/help/implementing/home.md) | Découvrez comment personnaliser votre déploiement d’Experience Manager as a Cloud Service, y compris des rubriques sur le déploiement et le développement. |
 | [Guide de l’utilisateur des connecteurs](/help/connectors/home.md) | Découvrez comment intégrer des connecteurs dans Experience Manager as a Cloud Service. |
 | [Guide de l’utilisateur relatif aux opérations](/help/operations/home.md) | Découvrez les opérations principales d’Experience Manager as a Cloud Service, telles que les tâches d’indexation et de maintenance. |
-| [Guide de l&#39;utilisateur Commerce](/help/commerce-cloud/home.md) | Découvrez Commerce Integration Framework sur AEM en tant que Cloud Service. |
+| [Guide de l’utilisateur relatif au commerce](/help/commerce-cloud/home.md) | Découvrez Commerce Integration Framework sur AEM as a Cloud Service. |
 
 ## Autres ressources relatives à Experience Manager {#other-resources}
 
@@ -58,8 +65,8 @@ Pour en savoir plus sur les différentes phases du parcours de transition vers C
 * [Documentation Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentation HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
 * [Documentation sur les composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
-* [Documentation Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Documentation Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Tutoriels sur Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Tutoriels sur Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/fr/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Forum de la communauté AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
