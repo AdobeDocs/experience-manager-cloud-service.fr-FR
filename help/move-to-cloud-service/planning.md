@@ -2,15 +2,21 @@
 title: Phase de planification
 description: Phase de planification
 translation-type: tm+mt
-source-git-commit: 52d7f6ff1c11ee450d418989ae35ff69d2cc39e6
+source-git-commit: df3eb65817a00fe31eff466565b9de5e0a72ccae
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 94%
+source-wordcount: '474'
+ht-degree: 91%
 
 ---
 
 
 # Planification {#planning-phase}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_planning"
+>title="Planification de votre Transition"
+>abstract="Avant de commencer votre parcours de transition vers Cloud Service, vous devez vous familiariser avec AEM as a Cloud Service, mais aussi examiner les modifications notables qui y ont été apportées, ainsi que les fonctionnalités remplacées ou obsolètes."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="Analyseur des meilleures pratiques"
 
 Avant de commencer votre parcours de transition vers Cloud Service, vous devez vous familiariser avec AEM as a Cloud Service, mais aussi examiner les modifications notables qui y ont été apportées, ainsi que les fonctionnalités remplacées ou obsolètes.
 
@@ -26,7 +32,7 @@ Pour comprendre ces différences importantes, voir [Modifications notables d’A
 
 Adobe étudie constamment les fonctionnalités du produit de façon à les réinventer au fil du temps ou à remplacer les fonctions plus anciennes par des variantes plus modernes, pour améliorer la valeur client globale, le tout en faisant toujours attention à la compatibilité ascendante.
 
-Pour en savoir plus sur les caractéristiques et les fonctionnalités signalées comme étant obsolètes dans Experience Manager as a Cloud Service, voir [ Fonctionnalités obsolètes](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features).
+Pour en savoir plus sur les caractéristiques et les fonctionnalités signalées comme étant obsolètes dans Experience Manager as a Cloud Service, voir [Fonctionnalités obsolètes](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features).
 
 ## Présentation de la phase de planification {#introduction}
 
