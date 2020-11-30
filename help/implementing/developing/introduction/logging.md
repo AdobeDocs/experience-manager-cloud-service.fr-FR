@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 0b648e1a0da141f8393c62cb269e5498e2ecd23f
 workflow-type: tm+mt
 source-wordcount: '2219'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Lorsque la journalisation WARN est active, seules les instructions indiquant des
 <td>
 Production</td>
 <td>
-ERREUR</td>
+ERROR</td>
 <td>
 Décrit les conditions qui indiquent un échec et doivent être résolues.<br>
 Lorsque la journalisation ERROR est active, seules les instructions indiquant des échecs sont consignées. Les instructions de journal ERROR indiquent un problème grave qui doit être résolu le plus tôt possible.</td>
@@ -588,7 +588,7 @@ La bande passante réseau associée aux journaux envoyés à Splunk est considé
 
 Dans la demande d’assistance, les clients doivent indiquer :
 
-* Adresse du point de terminaison HEC de Splunk
+* l’adresse du point d’entrée Splunk HEC ;
 * l’index Splunk ;
 * le port Splunk ;
 * le jeton Splunk HEC. Pour plus d’informations, consultez [cette page](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples).
@@ -603,21 +603,21 @@ Vous trouverez ci-dessous un exemple de demande d’assistance :
 
 Programme 123, environnement de production
 
-* Adresse du point de terminaison Splunk HEC : `splunk-hec-ext.acme.com`
+* Adresse du point d’entrée Splunk HEC : `splunk-hec-ext.acme.com`
 * Index Splunk : acme_123prod (le client peut choisir la convention d’affectation de nom qu’il souhaite)
 * Port Splunk : 443
 * Jeton Splunk HEC : ABC123
 
 Programme 123, environnement d’évaluation
 
-* Adresse du point de terminaison Splunk HEC : `splunk-hec-ext.acme.com`
+* Adresse du point d’entrée Splunk HEC : `splunk-hec-ext.acme.com`
 * Index Splunk : acme_123stage
 * Port Splunk : 443
 * Jeton Splunk HEC : ABC123
 
 Programme 123, environnements de développement
 
-* Adresse du point de terminaison Splunk HEC : `splunk-hec-ext.acme.com`
+* Adresse du point d’entrée Splunk HEC : `splunk-hec-ext.acme.com`
 * Index Splunk : acme_123dev
 * Port Splunk : 443
 * Jeton Splunk HEC : ABC123
