@@ -2,9 +2,9 @@
 title: Configurez l’éditeur de texte enrichi pour créer du contenu dans [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Configurez l’éditeur de texte enrichi pour créer du contenu dans [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 739dde6f9a6a7f4fe773e27e53f23a395f2881dc
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1981'
 ht-degree: 100%
 
@@ -131,9 +131,10 @@ Le tableau ci-dessous répertorie les modules externes actuels et indique les in
 >* **Nom** : `configPath`
 >* **Type** : `String`
 >* **Valeur** : chemin du nœud qui contient la configuration proprement dite.
+
 >
 >
->Ne donnez pas le nom `config` au nœud de configuration de l’éditeur de texte enrichi (RTE). Autrement, les configurations de l’éditeur de texte enrichi prennent effet seulement pour les administrateurs et non pour les utilisateurs du groupe `content-author`.
+Ne donnez pas le nom `config` au nœud de configuration de l’éditeur de texte enrichi (RTE). Autrement, les configurations de l’éditeur de texte enrichi prennent effet seulement pour les administrateurs et non pour les utilisateurs du groupe `content-author`.
 
 Configurez les propriétés suivantes qui s’appliquent uniquement au mode de modification dans la boîte de dialogue :
 
@@ -160,9 +161,10 @@ Le [composant textuel Core Components](https://docs.adobe.com/content/help/fr-FR
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
+
 >
 >
->Pour créer votre propre composant textuel, copiez le composant ci-dessus au lieu de modifier ces composants.
+Pour créer votre propre composant textuel, copiez le composant ci-dessus au lieu de modifier ces composants.
 
 ## Configuration de la barre d’outils de l’éditeur de texte enrichi  {#dialogfullscreen}
 
