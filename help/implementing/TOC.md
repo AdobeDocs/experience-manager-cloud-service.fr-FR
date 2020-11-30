@@ -4,10 +4,10 @@ user-guide-title: Implémentation pour AEM as a Cloud Service
 breadcrumb-title: Guide d’implémentation
 user-guide-description: Découvrez comment personnaliser votre déploiement d’Experience Manager as a Cloud Service, y compris des rubriques sur le déploiement et le développement.
 translation-type: tm+mt
-source-git-commit: 1cbc54fb7de0ba9c1c92cdcbe64f02a9e767c3b7
+source-git-commit: ce55065c3ae6a2350ed06811af76477df7c11291
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 77%
+source-wordcount: '436'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 77%
       + [Test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md)
       + [Règles de qualité du code personnalisé](cloud-manager/custom-code-quality-rules.md)
       + [Tests fonctionnels](/help/implementing/cloud-manager/functional-testing.md)
-      + [Test d’audit d’expérience](/help/implementing/cloud-manager/experience-audit-testing.md)
+      + [Tests de contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md)
    + [Accès aux journaux et leur gestion](cloud-manager/manage-logs.md)
    + [Présentation des notifications](cloud-manager/notifications.md)
 + Gestion de votre code {#managing-code}
@@ -37,7 +37,7 @@ ht-degree: 77%
    + [SDK AEM as a Cloud Service](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [Conseils de développement pour AEM as a Cloud Service](developing/introduction/development-guidelines.md)
    + [Prise en main du développement d’AEM Sites – Tutoriel WKND](developing/introduction/develop-wknd-tutorial.md)
-   + [Structure de l’interface utilisateur AEM](developing/introduction/ui-structure.md)
+   + [Structure de l’interface utilisateur d’AEM](developing/introduction/ui-structure.md)
    + [Aide-mémoire pour Sling](developing/introduction/sling-cheatsheet.md)
    + [Utilisation des adaptateurs Sling](developing/introduction/sling-adapters.md)
    + [Utilisation de Sling Resource Merger dans AEM as a Cloud Service](developing/introduction/sling-resource-merger.md)
@@ -48,13 +48,16 @@ ht-degree: 77%
    + [Outil de comparaison des pages](/help/implementing/developing/introduction/page-diff.md)
    + [Limites de l’éditeur](/help/implementing/developing/introduction/editor-limitations.md)
    + [Conventions de dénomination](/help/implementing/developing/introduction/naming-conventions.md)
+   + [Infrastructure de balisage AEM](/help/implementing/developing/introduction/tagging-framework.md)
+   + [Création de balises dans des applications AEM](/help/implementing/developing/introduction/tagging-applications.md)
+   + [Fondements techniques AEM](/help/implementing/developing/introduction/aem-technologies.md)
 + Outils de développement {#developer-tools}
    + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
    + [Module externe Content Package Maven](/help/implementing/developing/tools/maven-plugin.md)
    + [Outil AEM Repo](/help/implementing/developing/tools/repo-tool.md)
-   + [Utilisation de CRXDE Lite](/help/implementing/developing/tools/crxde.md)
+   + [Utilisation de CRXDE Lite ](/help/implementing/developing/tools/crxde.md)
 + Composants et modèles {#components-templates}
-   + [Présentation des composants](developing/components/overview.md)
+   + [Aperçu des composants](developing/components/overview.md)
    + [Modèles](developing/components/templates.md)
    + [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
    + [Système de style](/help/sites-cloud/authoring/features/style-system.md)
@@ -64,29 +67,29 @@ ht-degree: 77%
    + [Balises de décoration](developing/components/decoration-tag.md)
    + [Utilisation de conditions de masquage](developing/components/hide-conditions.md)
 + Gestion de l’expérience sans tête {#headless}
-   + [Sans tête et hybride avec AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+   + [Sans affichage et hybride avec AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Activation de l’exportateur JSON pour un composant](developing/components/enabling-json-exporter.md) 
-   + des applications sur une seule page ;{#spa}
-      + [SPA Introduction et présentation](developing/spa/introduction.md)
-      + [Didacticiel sur SPA WKND](developing/spa/wknd-tutorial.md)
-      + [Prise en main à l’aide de Réaction](developing/spa/getting-started-react.md)
-      + [Prise en main à l’aide de Angular](developing/spa/getting-started-angular.md)
-      + [SPA Deep Dives](developing/spa/deep-dives.md)
-      + [Développement de SPA pour l&#39;AEM](developing/spa/developing.md)
-      + [Aperçu de l’éditeur d’application d’une seule page](developing/spa/editor-overview.md)
+   + Applications sur une seule page {#spa}
+      + [Introduction et présentation des SPA](developing/spa/introduction.md)
+      + [Tutoriel sur SPA WKND](developing/spa/wknd-tutorial.md)
+      + [Prise en main avec React](developing/spa/getting-started-react.md)
+      + [Prise en main avec Angular](developing/spa/getting-started-angular.md)
+      + [Immersion dans les SPA](developing/spa/deep-dives.md)
+      + [Développement de SPA pour AEM](developing/spa/developing.md)
+      + [Présentation de l’éditeur de SPA](developing/spa/editor-overview.md)
       + [Plan directeur d’applications sur une seule page (SPA)](developing/spa/blueprint.md)
       + [Composant de page SPA](developing/spa/page-component.md)
-      + [Mappage du modèle dynamique au composant](developing/spa/model-to-component-mapping.md)
+      + [Mappage du modèle dynamique sur le composant](developing/spa/model-to-component-mapping.md)
       + [Routage de modèle](developing/spa/routing.md)
-      + [Intégration du lancement](developing/spa/launch-integration.md)
+      + [Intégration de Launch](developing/spa/launch-integration.md)
       + [Rendu côté serveur](developing/spa/ssr.md)
-      + [documents de référence SPA](developing/spa/reference-materials.md)
-+ Personnalisation   {#personalization}
+      + [Documents de référence SPA](developing/spa/reference-materials.md)
++ Personnalisation  {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [Configuration de ContextHub](developing/personalization/configuring-contexthub.md)
-   + [Ajouter ContextHub aux pages](developing/personalization/adding-contexthub.md)
+   + [Ajout de ContextHub aux pages](developing/personalization/adding-contexthub.md)
    + [Exemples de candidats de magasins](developing/personalization/sample-stores.md)
-   + [Exemples de modules de stockage](developing/personalization/sample-modules.md)
+   + [Exemples de modules de magasin](developing/personalization/sample-modules.md)
    + [Diagnostic ContextHub](developing/personalization/contexthub-diagnostics.md)
    + [Extension de ContextHub](developing/personalization/extending-contexthub.md)
    + [API ContextHub](developing/personalization/contexthub-api.md)
@@ -102,7 +105,7 @@ ht-degree: 77%
    + [Configuration de l’éditeur de texte enrichi pour créer des sites accessibles](/help/implementing/developing/extending/rte-accessible-content.md)
 + Déploiement sur AEM as a Cloud Service {#deploying}
    + [Déploiement sur AEM as a Cloud Service](deploying/overview.md)
-   + [Mises à jour des versions AEM](deploying/aem-version-updates.md)
+   + [Mises à jour de la version d’AEM](deploying/aem-version-updates.md)
    + [Configuration d’OSGi pour AEM as a Cloud Service](deploying/configuring-osgi.md)
 + Niveau de création {#author-tier}
    + [Accès au niveau de création](/help/implementing/author-tier/accessing-the-author-tier.md)
