@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: 65752c7c51538de27aa2b21695e8eb6c6695a5f5
 workflow-type: tm+mt
 source-wordcount: '244'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 95%
       + [Test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md)
       + [Règles de qualité du code personnalisé](/help/implementing/cloud-manager/custom-code-quality-rules.md)
       + [Tests fonctionnels](/help/implementing/cloud-manager/functional-testing.md)
-      + [Test d’audit d’expérience](/help/implementing/cloud-manager/experience-audit-testing.md)
+      + [Tests de contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md)
    + [Accès aux journaux et leur gestion](/help/implementing/cloud-manager/manage-logs.md)
    + [Présentation des notifications](/help/implementing/cloud-manager/notifications.md)
    + Création d’un projet d’application AEM {#create-application-project}
