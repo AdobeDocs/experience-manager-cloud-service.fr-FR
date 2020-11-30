@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 0e414de936267cb4648c3078720b198e00c4a3cb
 workflow-type: tm+mt
 source-wordcount: '1479'
-ht-degree: 84%
+ht-degree: 86%
 
 ---
 
@@ -128,7 +128,7 @@ Le réseau de diffusion de contenu géré par Adobe respecte les TTL et il n’e
 
 ## Bibliothèques côté client et cohérence entre les versions {#content-consistency}
 
-Les pages sont composées de code HTML, JavaScript et CSS, ainsi que d’images. Customers are encouraged to leverage the [Client-Side Libraries (clientlibs) framework](/help/implementing/developing/introduction/clientlibs.md) to import Javascript and CSS resources into HTML pages, taking into account dependencies between JS libraries.
+Les pages sont composées de code HTML, JavaScript et CSS, ainsi que d’images. Nous vous recommandons d’utiliser le [framework de bibliothèques côté client (clientlibs)](/help/implementing/developing/introduction/clientlibs.md) pour importer des ressources JavaScript et CSS dans des pages HTML, en tenant compte des dépendances entre les bibliothèques JS.
 
 Le framework clientlibs fournit une gestion automatique des versions, ce qui signifie que les développeurs peuvent archiver les modifications apportées aux bibliothèques JS dans le contrôle de code source et que la dernière version sera disponible lorsqu’un client transfère sa version. Sans cela, les développeurs devraient modifier manuellement le code HTML avec des références à la nouvelle version de la bibliothèque, ce qui est particulièrement onéreux si de nombreux modèles HTML partagent la même bibliothèque.
 
