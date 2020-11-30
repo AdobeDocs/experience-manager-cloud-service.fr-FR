@@ -1,5 +1,5 @@
 ---
-title: Composants Présentation
+title: Aperçu des composants
 description: Les composants sont des unités modulaires qui exécutent des fonctionnalités spécifiques pour présenter du contenu sur votre site web.
 translation-type: tm+mt
 source-git-commit: 83c27daae4e8ae2ae6a8f115c9da9527971c6ecb
@@ -10,7 +10,7 @@ ht-degree: 49%
 ---
 
 
-# Présentation des composants {#components-overview}
+# Aperçu des composants {#components-overview}
 
 Cette page donne un aperçu des composants AEM (Adobe Experience Manager), tels que ceux [utilisés pour la création de pages](/help/sites-cloud/authoring/fundamentals/components.md).
 
