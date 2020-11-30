@@ -1,9 +1,9 @@
 ---
 title: Opérations de développement d’entreprise
 description: Découvrez les processus, les méthodes et les communications requis pour faciliter le déploiement et simplifier la collaboration.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 5fe4eb9f9cad4ad2f1d259ebb5fa0302ea5c515f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1001'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Adobe Experience Manager (AEM) as a Cloud Service implique généralement plusie
 
 * [Développement](#development)
 * [Assurance qualité](#quality-assurance)
-* [Intermédiaire](#staging)
+* [Évaluation ](#staging)
 * [Production](#production-author-and-publish)
 
 >[!NOTE]
