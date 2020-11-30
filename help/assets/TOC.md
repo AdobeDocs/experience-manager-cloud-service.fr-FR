@@ -8,21 +8,21 @@ translation-type: tm+mt
 source-git-commit: a298921410b4cba05ad341f7cee6d2ac9981bce4
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 79%
+ht-degree: 96%
 
 ---
 
 
-# [!DNL Assets] Guide {#assets}
+# Guide d’[!DNL Assets] {#assets}
 
 + [[!DNL Assets] as a Cloud Service](/help/assets/home.md)
 + [Aperçu et nouveautés](overview.md)
-+ [Modifications notables [!DNL Assets] en tant que Cloud Service](assets-cloud-changes.md)
-+ [[!DNL Assets] l’architecture ;](architecture.md)
++ [Modifications notables apportées à  [!DNL Assets]  as a Cloud Service](assets-cloud-changes.md)
++ [[!DNL Assets] Architecture](architecture.md)
 + [Formats de fichiers pris en charge](file-format-support.md)
 + [Présentation des microservices de ressources](asset-microservices-overview.md)
 + [Accessibilité dans [!DNL Assets]](accessibility.md)
-+ Gestion des éléments numériques {#manage}
++ Gestion des ressources numériques {#manage}
    + [Partage de ressources](share-assets.md)
    + [Surveillance des activités et des tâches de gestion des ressources numériques](assets-activity-history.md)
    + [Prise en main des microservices de ressources](asset-microservices-configure-and-use.md)
@@ -32,10 +32,10 @@ ht-degree: 79%
    + [Balises dynamiques pour les images](smart-tags.md)
    + [Balisez intelligemment vos fichiers vidéo.](smart-tags-video-assets.md)
    + [Organisation des ressources](organize-assets.md)
-   + [ [!DNL Adobe Stock] Utilisation des ressources dans AEM](aem-assets-adobe-stock.md)
+   + [Utilisation de ressources  [!DNL Adobe Stock]  dans AEM](aem-assets-adobe-stock.md)
    + [Gestion des collections](manage-collections.md)
    + [Présentation des métadonnées](manage-metadata.md)
-   + [Intégrer à [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
+   + [Intégration avec [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
    + [Ajout ou modification de métadonnées](meta-edit.md)
    + [Révision de collections et de ressources situées dans un dossier](bulk-approval.md)
    + [Utilisation et configuration des statistiques sur les ressources](assets-insights.md)
@@ -45,13 +45,13 @@ ht-degree: 79%
    + [Téléchargement de ressources](download-assets-from-aem.md)
    + [Archivage et extraction des ressources à modifier](check-out-and-submit-assets.md)
    + [Gestion des droits numériques des ressources](drm.md)
-   + [Fichiers filigrane](watermark-assets.md)
-+ Configure, administer and extend [!DNL Assets] {#admin}
-   + [Documentation pour les développeurs et références aux API](developer-reference-material-apis.md)
+   + [Mise en filigrane de ressources](watermark-assets.md)
++ Configuration, administration et extension d’[!DNL Assets] {#admin}
+   + [Documents pour les développeurs et guides de référence des API](developer-reference-material-apis.md)
    + [Schéma de métadonnées de dossier](folder-metadata-schema.md)
-   + [Utilisation de profils d’images et de vidéos](/help/assets/dynamic-media/about-image-video-profiles.md)
+   + [Utilisation des profils d’image et vidéo](/help/assets/dynamic-media/about-image-video-profiles.md)
    + [Configuration du balisage intelligent des images](smart-tags-configuration.md)
-   + [Ressources et traduction multilingues](translate-assets.md)
+   + [Ressources multilingues et traduction](translate-assets.md)
    + [Facettes de recherche](search-facets.md)
    + [API HTTP Assets](mac-api-assets.md)
    + [Prise en charge des fragments de contenu dans l’API HTTP Assets](content-fragments/assets-api-content-fragments.md)
@@ -62,8 +62,8 @@ ht-degree: 79%
    + [Fonctionnalités de MediaLibrary](medialibrary.md)
    + [Importation et exportation des métadonnées des ressources](metadata-import-export.md)
 + Partage et distribution de ressources {#brand-portal}
-   + [ [!DNL Assets] Configuration [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
-   + [Publier des fichiers vers [!DNL Brand Portal]](publish-to-brand-portal.md)
+   + [Configuration d’ [!DNL Assets]  avec  [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Publication de ressources sur [!DNL Brand Portal]](publish-to-brand-portal.md)
 + Fragments de contenu {#content-fragments}
    + [Utilisation de fragments de contenu](content-fragments/content-fragments.md)
    + [Gestion des fragments de contenu](content-fragments/content-fragments-managing.md)
@@ -110,9 +110,9 @@ ht-degree: 79%
    + [Liaison d’URL à une application web](dynamic-media/linking-urls-to-yourwebapplication.md)
    + [Utilisation de jeux de règles de transformation d’URL](dynamic-media/using-rulesets-to-transform-urls.md)
    + [Publication de ressources Dynamic Media](dynamic-media/publishing-dynamicmedia-assets.md)
-   + [Utilisation de la publication sélective dans un média dynamique](dynamic-media/selective-publishing.md)
-   + [Invalidation du cache CDN par le biais de Contenu multimédia dynamique](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-   + [Invalidation du cache CDN par le biais de Contenu multimédia dynamique classique](dynamic-media/invalidate-cdn-cache-dm-classic.md)
+   + [Utilisation de la publication sélective dans Dynamic Media](dynamic-media/selective-publishing.md)
+   + [Invalidation du cache CDN via Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+   + [Invalidation du cache CDN via Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [Utilisation des sélecteurs](dynamic-media/working-with-selectors.md)
    + [FAQ sur la fin de prise en charge de la visionneuse DHTML](dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + [Notification de fin de prise en charge de la visionneuse Flash](dynamic-media/flash-viewers-eol.md)
