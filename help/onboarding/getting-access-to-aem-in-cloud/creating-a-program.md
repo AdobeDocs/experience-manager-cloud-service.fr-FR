@@ -1,11 +1,11 @@
 ---
-title: Création d’un Programme - Service Cloud
-description: Création d’un Programme - Service Cloud
+title: Création d'un Programme - Cloud Service
+description: Création d'un Programme - Cloud Service
 translation-type: tm+mt
 source-git-commit: 5658b2cc853ff7e6222a7f35e56527577d2c7324
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -32,7 +32,7 @@ En fonction de l’objectif de l’utilisateur de créer le programme dans les l
 
 ![](assets/create-program-add.png)
 
-## Création d’un Programme Sandbox {#create-sandbox-program}
+## Création d’un programme Sandbox {#create-sandbox-program}
 
 Pour créer un programme de sandbox, procédez comme suit :
 
@@ -57,7 +57,7 @@ Pour créer un programme de sandbox, procédez comme suit :
 
    ![](assets/create-program-5.png)
 
-1. Une fois le déploiement du pipeline de non-production en cours de développement terminé, l’assistant guide l’utilisateur à accéder à AEM (sur le développement) ou à déployer du code sur l’environnement de développement :
+1. Une fois le déploiement du canal de non-production vers le développement terminé, l’assistant guide l’utilisateur à accéder à AEM (sur le développement) ou à déployer du code vers l’environnement de développement :
 
    ![](assets/create-program-setup-deploy.png)
 
@@ -66,12 +66,12 @@ Pour créer un programme de sandbox, procédez comme suit :
 
    ![](assets/create-program-a1.png)
 
-## Suppression d&#39;un Programme Sandbox {#delete-sandbox-program}
+## Deleting a Sandbox Program {#delete-sandbox-program}
 
-Un utilisateur de Programme Sandbox dans le rôle Propriétaire ** d’entreprise ou *Deployment Manager* dans Cloud Manager peut supprimer son jeu d’environnements de production et d’étape via l’interface utilisateur de Cloud Manager.
+A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud Manager can delete their Production and Stage environment set via the Cloud Manager UI.
 
 >[!NOTE]
->La sélection de l’option de suppression sur Production ou Stage supprime également l’autre dans l’ensemble.
+>La sélection de l’option de suppression dans l’environnement de production ou d’évaluation supprime également l’autre dans le jeu d’environnements.
 
 L’option de suppression est disponible à partir du landing page, comme illustré ci-dessous :
 
@@ -84,7 +84,7 @@ Sélectionnez **Supprimer le Programme** dans la page Aperçu **du** Programme p
 ![](assets/delete-sandbox2.png)
 
 
-## Création d’un Programme régulier {#create-regular-program}
+## Creating a Regular Program {#create-regular-program}
 
 Un programme *régulier* est destiné à un utilisateur familiarisé avec AEM et Cloud Manager et prêt à début la rédaction, la création et le test de code dans le but de le déployer vers Production.
 
