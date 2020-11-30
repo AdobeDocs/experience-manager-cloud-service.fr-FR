@@ -301,7 +301,7 @@ Vous pouvez modifier un profil de codage vidéo existant pour tirer parti de par
 1. Utilisez l’une des méthodes suivantes :
 
    * Répétez les étapes 3 et 4 pour ajouter un autre paramètre à votre profil de codage vidéo.
-   * Dans le coin supérieur gauche de la page, appuyez sur **[!UICONTROL Tout enregistrer]**.
+   * Dans le coin supérieur gauche de la page, appuyez sur **[!UICONTROL Enregistrer tout]**.
 
 1. Dans le coin supérieur gauche de la page CRXDE Lite, appuyez sur l’icône **[!UICONTROL Retour à l’accueil]** pour revenir à AEM.
 
@@ -397,7 +397,7 @@ Voir aussi [Retraitement des ressources dans un dossier](/help/assets/dynamic-me
 
 **Pour appliquer un profil vidéo à l’ensemble des ressources :**
 
-* Accédez au nœud suivant de CRXDE Lite : `/content/dam/jcr:content`. Ajoutez la propriété `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` et appuyez sur **[!UICONTROL Tout enregistrer]**.
+* Accédez au nœud suivant de CRXDE Lite : `/content/dam/jcr:content`. Ajoutez la propriété `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` et appuyez sur **[!UICONTROL Enregistrer tout]**.
 
    ![chlimage_1-519](assets/chlimage_1-519.png)
 * Vous pouvez [surveiller la progression d’une tâche de traitement de profil vidéo](#monitoring-the-progress-of-an-encoding-job).
