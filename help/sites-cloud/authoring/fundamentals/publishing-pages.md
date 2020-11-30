@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
 workflow-type: tm+mt
 source-wordcount: '1717'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Vous pouvez publier/annuler la publication d’une page immédiatement ou à une
 
 ## Terminologie {#terminology}
 
-Vous pouvez rencontrer différents termes liés à la publication lorsque vous travaillez avec Adobe Experience Manager (AEM) en tant que Cloud Service.
+Dans le cadre de votre utilisation d’Adobe Experience Manager (AEM) as a Cloud Service, vous pouvez rencontrer différents termes liés à la publication.
 
 * **Publier/Annuler la publication**
    * Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
@@ -55,7 +55,7 @@ Selon votre emplacement, vous pouvez effectuer la publication :
 
 >[!NOTE]
 >
-> Pour d&#39;autres possibilités, voir **Heure** de début et Heure **de** fin dans l&#39;onglet [Réglages de base des Propriétés de la page.](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
+> Pour les autres possibilités, reportez-vous à **Heure d’activation** et **Heure de désactivation** dans l’[onglet De base des propriétés de page](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
 
 ### Publication à partir de l’éditeur {#publishing-from-the-editor}
 
@@ -144,7 +144,7 @@ Pour modifier ou annuler la publication d’une page à l’aide de l’option G
 
    Le bouton Ajouter du contenu lance l’[explorateur de chemins d’accès](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser), qui vous permet de sélectionner du contenu.
 
-   Select the required pages and then click **Select** to add the content to the wizard or **Cancel** to cancel the selection and return to the wizard.
+   Sélectionnez les pages souhaitées, puis cliquez sur **Sélectionner** pour ajouter le contenu à l’assistant ou sur **Annuler** pour annuler la sélection et revenir à l’assistant.
 
    De retour dans l’assistant, vous pouvez sélectionner un élément dans la liste afin de configurer d’autres options :
 
