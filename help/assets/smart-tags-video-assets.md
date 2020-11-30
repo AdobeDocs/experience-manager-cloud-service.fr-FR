@@ -18,7 +18,7 @@ Les formats de fichiers vidéo (et leurs codecs) pris en charge pour le balisage
 
 ## Balisage intelligent des vidéos lors du téléchargement {#smart-tag-assets-on-ingestion}
 
-Lorsque vous [téléchargez des fichiers](add-assets.md#upload-assets) vidéo en [!DNL Adobe Experience Manager] tant que Cloud Service, les vidéos sont ![traitées](assets/do-not-localize/assetprocessing.png). Une fois le traitement terminé, consultez l’onglet [!UICONTROL Réglages de base] de la page [!UICONTROL Propriétés] du fichier. Les balises actives sont automatiquement ajoutées à la vidéo sous [!UICONTROL Balises]dynamiques. Le service Asset Compute utilise Adobe Sensei pour créer ces balises actives.
+Lorsque vous [téléchargez des fichiers](add-assets.md#upload-assets) vidéo en [!DNL Adobe Experience Manager] tant que Cloud Service, les vidéos sont ![traitées](assets/do-not-localize/assetprocessing.png). Une fois le traitement terminé, consultez l’onglet [!UICONTROL Réglages de base] de la page [!UICONTROL Propriétés] du fichier. Les balises actives sont automatiquement ajoutées à la vidéo sous [!UICONTROL Balises]dynamiques. asset compute Service utilise Adobe Sensei pour créer ces balises actives.
 
 ![Les balises actives sont ajoutées aux vidéos et affichées dans l’onglet Simple des propriétés du fichier.](assets/smart-tags-added-to-videos.png)
 
