@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 10%
+ht-degree: 12%
 
 ---
 
@@ -28,7 +28,7 @@ Le développement de projets de commerce AEM basés sur le cadre d&#39;intégrat
 
 >[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
 
-Un environnement de développement local est recommandé pour travailler avec les projets du FCI. L&#39;Ajoute du FCI, qui permet l&#39;AEM en tant qu&#39;environnement Cloud Service, est également disponible pour le développement local. Il peut être téléchargé à partir du portail [de distribution de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)logiciels.
+Un environnement de développement local est recommandé pour travailler avec les projets du FCI. L&#39;Ajoute du FCI, qui permet l&#39;AEM en tant qu&#39;environnement Cloud Service, est également disponible pour le développement local. Il peut être téléchargé à partir du portail [de distribution de](https://experience.adobe.com/#/downloads/content/software-distribution/fr-FR/aemcloud.html)logiciels.
 
 L’Ajoute CIF est fournie sous la forme d’une archive de fonctionnalité Sling. Le fichier zip disponible sur le portail de distribution de logiciels comprend deux fichiers d’archives de fonctionnalités Sling, l’un pour l’auteur AEM et l’autre pour les instances de publication AEM.
 
@@ -41,13 +41,13 @@ Les éléments suivants doivent être installés localement :
 - [SDK AEM as a Cloud Service](https://docs.adobe.com/content/help/en/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
 - [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) (version 3.3.9 ou ultérieure)
-- [Node.js v10+](https://nodejs.org/en/)
+- [Node.js v10+](https://nodejs.org/fr/)
 - [npm 6+](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)
 
 ### Accès au module complémentaire CIF
 
-The CIF add-on can be downloaded as a zip file from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Le fichier zip contient le module complémentaire CIF en tant qu’archive **de fonctionnalité** Sling, il ne s’agit pas d’un package AEM. Notez que l’accès aux listes de SDK est limité à celles avec AEM en tant que licence Cloud Service.
+The CIF add-on can be downloaded as a zip file from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/fr-FR/aemcloud.html). Le fichier zip contient le module complémentaire CIF en tant qu’archive **de fonctionnalité** Sling, il ne s’agit pas d’un package AEM. Notez que l’accès aux listes de SDK est limité à celles avec AEM en tant que licence Cloud Service.
 
 >[!TIP]
 >
@@ -187,4 +187,4 @@ Pour commencer avec le Venia Reference Store, il vous suffit de cloner le réfé
 
 - [Archétype de projet AEM](https://github.com/adobe/aem-project-archetype)
 - [aem Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
-- [Portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
+- [Portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/fr-FR/aemcloud.html)
