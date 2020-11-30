@@ -1,9 +1,9 @@
 ---
 title: Phase d’exécution
 description: Phase d’exécution
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 0dd05c1f6dc197daf154d4df6e6661e00455b233
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 100%
 
@@ -59,7 +59,7 @@ Certaines modifications sont nécessaires pour que les projets AEM Maven soient 
 
 Pour plus d’informations, voir [Structure de module recommandée](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#recommended-package-structure).
 
-Il existe d’autres directives de développement à connaître concernant le développement sur AEM as a Cloud Service. Pour en savoir plus, consultez les [Conseils de développement pour AEM as a Cloud Service](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/development-guidelines.html).
+Il existe d’autres directives de développement à connaître concernant le développement sur AEM as a Cloud Service. Pour en savoir plus, consultez les [Conseils de développement pour AEM as a Cloud Service](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/development-guidelines.html).
 
 À partir de la phase de planification, vous devez disposer d’une liste des zones à reconfigurer pour qu’elles soient compatibles avec Cloud Service. Vous devez également consulter les [Conseils de développement](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/development-guidelines.html) pour en savoir plus sur la refactorisation et l’optimisation du code nécessaires au passage vers Cloud Service.
 
@@ -77,11 +77,11 @@ Une liste contenant un certain nombre de ressources supplémentaires est propos�
 
 * Regardez la vidéo relative à l’installation du SDK Dispatcher pour comprendre comment procéder :
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30601?captions=fre_fr)
+   >[!VIDEO](https://video.tv.adobe.com/v/30601)
 
 * Regardez la vidéo relative à la configuration du SDK Dispatcher pour comprendre comment procéder :
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30602?captions=fre_fr)
+   >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
 * Consultez la documentation relative à la [Configuration du développement local](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) pour configurer un environnement de développement local.
 
