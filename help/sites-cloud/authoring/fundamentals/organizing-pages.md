@@ -4,8 +4,8 @@ description: Comment créer et organiser des pages avec AEM
 translation-type: tm+mt
 source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2554'
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Vous pouvez également vous aider de [dossiers](#creating-a-new-folder) pour org
 
 La structure d’un site web est construite comme une arborescence qui contient vos pages de contenu. Les noms de ces pages de contenu sont utilisés pour former les URL, tandis que les titres sont affichés lorsque le contenu de la page est affiché.
 
-Voici un exemple tiré du site [Tutoriel WKND](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), sur lequel on consulte un article concernant les skateparks (`la-skateparks`) :
+Voici un exemple tiré du site [Tutoriel WKND](https://docs.adobe.com/content/help/fr/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), sur lequel on consulte un article concernant les skateparks (`la-skateparks`) :
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -93,7 +93,7 @@ Le **Titre** et le **Nom** de la page peuvent être créés séparément, mais i
 >
 >N’oubliez pas que certains navigateurs (par exemple, les anciennes versions d’IE) n’acceptent que les URL n’excédant pas une certaine longueur. C’est pourquoi il existe également une raison technique de garder les noms de pages courts.
 
-When creating a new page, AEM will [validate the page name according to the conventions](/help/implementing/developing/introduction/naming-conventions.md) imposed by AEM and the JCR.
+Lors de la création d’une page, AEM [valide son nom en fonction des conventions](/help/implementing/developing/introduction/naming-conventions.md) imposées par AEM et JCR.
 
 Les caractères minimum autorisés sont :
 
@@ -111,7 +111,7 @@ Vous trouverez la liste complète et détaillée des caractères autorisés dans
 
 #### Titre {#title}
 
-Si vous n’indiquez qu’un **titre** de page lors de la création d’une page, AEM utilise le **nom**[ de la page de cette chaîne et valide le nom en fonction des conventions imposées par AEM et JCR.](/help/implementing/developing/introduction/naming-conventions.md)
+Si vous n’indiquez qu’un **titre** de page lors de la création d’une page, AEM utilise le **nom** de la page de cette chaîne et [valide le nom en fonction des conventions](/help/implementing/developing/introduction/naming-conventions.md) imposées par AEM et JCR.
 
 Un champ **Titre** contenant des caractères non valides sera accepté, mais les caractères non valides seront remplacés pour le nom dérivé. Par exemple :
 
@@ -122,7 +122,7 @@ Un champ **Titre** contenant des caractères non valides sera accepté, mais les
 
 #### Nom {#name}
 
-Si vous indiquez un **nom** de page lors de la création d’une page, AEM valide le nom en fonction des conventions imposées par AEM et JCR. [](/help/implementing/developing/introduction/naming-conventions.md) Vous ne pouvez pas utiliser de caractères non valides dans le champ **Nom**. Lorsqu’AEM détecte des caractères incorrects, le champ est mis en surbrillance avec un message d’explication.
+Si vous indiquez un **nom** de page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/implementing/developing/introduction/naming-conventions.md) imposées par AEM et JCR. Vous ne pouvez pas utiliser de caractères non valides dans le champ **Nom**. Lorsqu’AEM détecte des caractères incorrects, le champ est mis en surbrillance avec un message d’explication.
 
 ![Exemple de saisie d’un nom de page non valide](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -178,7 +178,7 @@ Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du conten
 
 À moins que toutes les pages n’aient été créées pour vous au préalable, vous devez créer une page avant de commencer à créer du contenu :
 
-1. Ouvrez la console Sites (par exemple, `https://<host>:<port>/sites.html/content`.
+1. Ouvrez la console Sites (par exemple, `https://<host>:<port>/sites.html/content`).
 1. Accédez à l’emplacement où créer la page.
 1. Ouvrez le sélecteur de liste déroulante avec l’option **Créer** de la barre d’outils, puis sélectionnez **Page** dans la liste :
 
@@ -206,8 +206,8 @@ Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du conten
    * **Nom** :
 
       * Il est utilisé pour générer l’URI. Si le nom n’est pas spécifié, il est dérivé du titre.
-      * Si vous indiquez un **nom**[ de page lors de la création d’une page, AEM valide le nom en fonction des conventions imposées par AEM et JCR.](/help/implementing/developing/introduction/naming-conventions.md)
-      * Vous **ne pouvez pas utiliser de caractères non valides** dans le champ **Nom**. Lorsque AEM détecte des caractères non valides, le champ est mis en surbrillance et un message d’explication s’affiche et indique les caractères à supprimer/remplacer.
+      * Si vous indiquez un **nom** de page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/implementing/developing/introduction/naming-conventions.md) imposées par AEM et JCR.
+      * Vous **ne pouvez pas utiliser de caractères non valides** dans le champ **Nom**. Lorsqu’AEM détecte des caractères non valides, le champ est mis en surbrillance et un message d’explication s’affiche et indique les caractères à supprimer/remplacer.
 
    >[!TIP]
    >
@@ -254,7 +254,7 @@ Après avoir créé une page ou accédé à une page existante (dans la console)
 >
 >L’accès à d’autres pages à partir de l’Éditeur de page n’est possible qu’en mode Aperçu, car les liens ne sont pas actifs dans le mode d’édition.
 
-### Copier et coller une page   {#copying-and-pasting-a-page}
+### Copier et coller une page  {#copying-and-pasting-a-page}
 
 Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplacement :
 
@@ -365,7 +365,7 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
 
 >[!NOTE]
 >
->Une page peut uniquement être déplacée vers un emplacement où le modèle sur lequel la page est basée est autorisé. See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) for more information.
+>Une page peut uniquement être déplacée vers un emplacement où le modèle sur lequel la page est basée est autorisé. Pour plus d’informations, voir [Disponibilité des modèles](/help/implementing/developing/components/templates.md#template-availability).
 
 #### Actions asynchrones {#asynchronous-actions}
 
