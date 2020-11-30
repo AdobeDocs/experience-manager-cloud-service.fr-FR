@@ -1,6 +1,6 @@
 ---
 title: Présentation des types de Programme et de Programme
-description: Présentation des types de Programme et de Programme - Services Cloud
+description: Présentation des types de Programme et de Programme - Cloud Services
 translation-type: tm+mt
 source-git-commit: 14da491cf09ed46ea425a8d65670d8b851aef388
 workflow-type: tm+mt
@@ -18,7 +18,7 @@ Le diagramme suivant présente la hiérarchie des entités dans Cloud Manager.
 
 ![image](assets/program-types1.png)
 
-## Types de Programme {#program-types}
+## Types de programme {#program-types}
 
 Un utilisateur peut créer un **Sandbox** ou un programme **régulier** .
 
