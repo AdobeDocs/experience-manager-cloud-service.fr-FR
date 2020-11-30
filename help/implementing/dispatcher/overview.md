@@ -1,9 +1,9 @@
 ---
 title: Présentation du flux de diffusion de contenu
 description: Présentation du flux de diffusion de contenu
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 100%
 
