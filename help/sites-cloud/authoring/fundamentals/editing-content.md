@@ -251,7 +251,7 @@ Les actions disponibles pour l’utilisateur sont affichées comme il convient 
 
    ![Bouton Parent](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
 
-* **Mise en page**
+* **Disposition**
 
    Cette option vous permet de modifier la [mise en page](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) du composant sélectionné. Cela s’applique uniquement au composant sélectionné et n’active pas le [mode Mise en page](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) de la page entière.
 
