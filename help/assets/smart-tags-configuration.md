@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 33ce255e126f2a49f1c1a6e94955aade2ca0d240
 workflow-type: tm+mt
 source-wordcount: '1036'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ La fonctionnalité est disponible à l’achat sous la forme d’un module compl
 
 >[!IMPORTANT]
 >
->Les nouveaux [!DNL Experience Manager Assets] déploiements sont intégrés [!DNL Adobe Developer Console] par défaut. Il permet de configurer plus rapidement la fonctionnalité des balises actives. Sur les déploiements existants, les administrateurs suivent ces étapes pour la configurer.
+>Les nouveaux déploiements [!DNL Experience Manager Assets] sont intégrés à [!DNL Adobe Developer Console] par défaut. Cela permet de configurer plus rapidement la fonctionnalité de balises intelligentes. Sur les déploiements existants, les administrateurs suivent ces étapes pour configurer cette fonctionnalité.
 
 ## Intégration à Adobe Developer Console {#aio-integration}
 
@@ -73,7 +73,7 @@ Pour utiliser les balises intelligentes, créez une intégration dans Adobe Deve
 
 ### Configuration des balises intelligentes {#configure-smart-content-service}
 
-Pour configurer l’intégration, utilisez les valeurs des champs Payload (Charge utile), Client Secret (Secret du client), Authorization Server (Serveur d’autorisation) et API key (Clé d’API) de l’intégration Adobe Developer Console.
+Pour configurer l’intégration, utilisez les valeurs des champs Payload (Charge utile), Client Secret (Secret du client), Authorization Server (Serveur d’autorisation) et API key (Clé API) de l’intégration Adobe Developer Console.
 
 1. Dans l’interface utilisateur [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Configurations d’Adobe IMS]**.
 1. Accédez à la page **[!UICONTROL Configuration du compte technique Adobe IMS]** et indiquez le **[!UICONTROL titre]** souhaité.
@@ -103,7 +103,7 @@ Lorsque le certificat expire, il n’est plus approuvé. Pour ajouter un nouveau
 
    ![Suppression d’une entrée similaritysearch existante dans le Keystore pour ajouter un nouveau certificat de sécurité](assets/smarttags_delete_similaritysearch_keystore.png)
 
-   *Figure : Suppression d’une entrée existante`similaritysearch`dans le Keystore pour ajouter un nouveau certificat de sécurité.*
+   *Figure : Suppression d’une entrée existante`similaritysearch` dans le Keystore pour ajouter un nouveau certificat de sécurité.*
 
 1. Dans l’interface utilisateur [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Configurations d’Adobe IMS]**. Ouvrez la configuration des balises intelligentes disponible. Pour télécharger un certificat public, cliquez sur **[!UICONTROL Télécharger le certificat public]**.
 
