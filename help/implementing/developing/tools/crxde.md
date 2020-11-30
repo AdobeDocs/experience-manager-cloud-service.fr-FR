@@ -1,5 +1,5 @@
 ---
-title: Utilisation de CRXDE Lite
+title: 'Utilisation de CRXDE Lite '
 description: CRXDE Lite fait partie de l'AEM démarrage rapide et vous permet d'accéder et de modifier le référentiel dans vos environnements de développement locaux dans le navigateur.
 translation-type: tm+mt
 source-git-commit: c40d668cb6dcf5c3e2d09504b547457306a99c85
@@ -10,7 +10,7 @@ ht-degree: 21%
 ---
 
 
-# Utilisation de CRXDE Lite {#using-crxde-lite}
+# Utilisation de CRXDE Lite  {#using-crxde-lite}
 
 CRXDE Lite fait partie de l&#39;AEM démarrage rapide et vous permet d&#39;accéder et de modifier le référentiel dans vos environnements de développement locaux dans le navigateur. Avec CRXDE Lite, vous pouvez modifier des fichiers, des dossiers, des noeuds et des propriétés. Le référentiel entier est accessible dans cette interface conviviale.
 
