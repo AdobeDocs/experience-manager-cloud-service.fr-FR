@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
 source-wordcount: '343'
-ht-degree: 76%
+ht-degree: 80%
 
 ---
 
@@ -36,7 +36,7 @@ Vous trouverez ci-dessous les ressources d’aide autonome d’Experience Manage
 | [Guide de l’utilisateur relatif à l’implémentation](/help/implementing/home.md) | Personnalisez, développez et déployez Experience Manager as a Cloud Service. |
 | [Guide de l’utilisateur des connecteurs](/help/connectors/home.md) | Découvrez comment intégrer des connecteurs dans Experience Manager as a Cloud Service. |
 | [Guide de l’utilisateur relatif aux opérations](/help/operations/home.md) | Découvrez les opérations principales d’Experience Manager as a Cloud Service, telles que les tâches d’indexation et de maintenance. |
-| [Guide de l&#39;utilisateur Commerce](/help/commerce-cloud/home.md) | Découvrez Commerce Integration Framework sur AEM en tant que Cloud Service. |
+| [Guide de l’utilisateur relatif au commerce](/help/commerce-cloud/home.md) | Découvrez Commerce Integration Framework sur AEM as a Cloud Service. |
 
 ## Autres ressources relatives à Experience Manager {#other-resources}
 
