@@ -1,9 +1,9 @@
 ---
 title: Utilisation de Dynamic Media
 description: Découvrez comment utiliser Dynamic Media pour diffuser des ressources pour une utilisation sur le web, les appareils mobiles et les réseaux sociaux.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 100%
 
