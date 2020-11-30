@@ -1,6 +1,6 @@
 ---
 title: Navigation
-description: Navigation - Service Cloud
+description: Navigation - Cloud Service
 translation-type: tm+mt
 source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
 workflow-type: tm+mt
@@ -20,31 +20,31 @@ Une fois votre connexion établie, vous serez dirigé vers le landing page de Cl
 
 ## Tâches SysAdmin {#sysadmin-tasks}
 
-Un utilisateur du rôle Administrateur système peut désormais accéder directement à la console d’administration pour gérer les rôles et autorisations et accéder aux instances AEM.
+Un utilisateur du rôle SysAdmin peut désormais accéder directement au Admin Console pour gérer les rôles et autorisations et accéder aux instances AEM.
 
 ### Gestion des rôles {#manage-roles}
 
-En tant qu’utilisateur du rôle Administrateur système, vous disposez d’un accès en un clic à l’emplacement dans la console **d’** administration à partir duquel les rôles utilisateur ou les autorisations de Cloud Manager sont gérés.
+As a user in the SysAdmin role, you have one-click access to the location in **Admin Console** from where user roles or permissions to Cloud Manager are managed.
 
 Consultez [Accès à Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) pour en savoir plus sur la manière d’ajouter des utilisateurs à un profil.
 
 >[!NOTE]
->Pour certaines organisations qui ont eu accès à AEM en tant que service Cloud avant janvier 2020, celles-ci seront transférées vers la console d’administration Adobe et le Profil Produit et Environnement devra être sélectionné.
+>Pour certaines organisations qui ont eu accès à l&#39;AEM en tant que Cloud Service avant janvier 2020, celles-ci seront acheminées au Adobe Admin Console et le Profil des produits et Environnements devra être sélectionné.
 
 1. Accédez au landing page de Cloud Manager et cliquez sur **Gérer l’accès**.
 
    ![](assets/sys-admin5.png)
 
-1. Une fois que vous avez cliqué sur **Gérer l’accès**, vous accédez à la console **d’** administration à partir de laquelle vous pouvez gérer les rôles utilisateur ou les autorisations de Cloud Manager.
+1. Une fois que vous avez cliqué sur **Gérer l’accès**, vous accédez au **Admin Console** à partir duquel vous pouvez gérer les rôles utilisateur ou les autorisations de Cloud Manager.
 
    ![](assets/sys-admin1.png)
 
 ### Gestion de l’accès à l’instance d’auteur {#manage-access-aem}
 
-En tant qu&#39;utilisateur du rôle Administrateur système, vous disposez d&#39;un accès en un clic à la console **d&#39;** administration à partir de laquelle vous pouvez accéder directement à l&#39;instance d&#39;auteur et gérer l&#39;accès.
+En tant qu’utilisateur du rôle Administrateur système, vous disposez d’un accès d’un simple clic au **Admin Console** à partir duquel vous pouvez accéder directement à l’instance d’auteur et gérer l’accès.
 
 >[!NOTE]
->Pour certaines organisations qui ont eu accès à AEM en tant que service Cloud avant janvier 2020, celles-ci seront transférées vers la console d’administration Adobe et le Profil Produit et Environnement devra être sélectionné.
+>Pour certaines organisations qui ont eu accès à l&#39;AEM en tant que Cloud Service avant janvier 2020, celles-ci seront acheminées au Adobe Admin Console et le Profil des produits et Environnements devra être sélectionné.
 
 Refer to [Accessing an Instance in AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) for more details.
 
@@ -58,21 +58,21 @@ Refer to [Accessing an Instance in AEM as a Cloud Service](https://docs.adobe.co
 
    ![](assets/sys-admin4.png)
 
-1. Une fois que vous avez cliqué sur **Gérer l’accès**, vous accédez à la console **** d’administration à partir de laquelle vous avez accès à l’instance d’auteur de l’environnement.
+1. Une fois que vous avez cliqué sur **Gérer l’accès**, vous accédez au **Admin Console** à partir duquel vous avez accès à l’instance d’auteur de l’environnement.
 
    ![](assets/sys-admin-2.png)
 
 ## Pour les clients AMS existants {#existing-aem}
 
-Si vous êtes déjà client AMS (Adobe Managed Services) et que vous avez accès au service Cloud, vous verrez vos programmes existants et le bouton de Programme **** Ajouter situé dans le coin supérieur droit du landing page s’afficher.
+Si vous êtes déjà client AMS (Adobe Managed Services) et que vous avez accès à un Cloud Service, vous verrez vos programmes existants et le bouton du Programme **d’** Ajoute situé dans le coin supérieur droit du landing page s’afficher.
 
-Si vous ne voyez pas le bouton **Ajouter le Programme** et si vous avez des questions sur l’accès au service Cloud, contactez votre représentant Adobe.
+Si vous ne voyez pas le bouton **Ajouter le Programme** et si vous avez des questions sur l&#39;accès au Cloud Service, veuillez communiquer avec votre représentant d&#39;Adobe.
 
-Pour plus d’informations, consultez [Ajouter un nouveau Programme dans le service Cloud avec des Programmes](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#existing-program) existants.
+Pour plus d&#39;informations, reportez-vous à la section [Ajouter un nouveau Programme en Cloud Service avec des Programmes](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#existing-program) existants.
 
-## Pour les nouveaux clients du service Cloud {#new-cloud-services}
+## Pour les nouveaux clients Cloud Service {#new-cloud-services}
 
-Si vous êtes un nouveau client du service Cloud, le bouton **Ajouter le Programme** s’affiche dans le coin supérieur droit d’un landing page vide. Vous souhaiterez ajouter un nouveau programme à votre service Cloud.
+Si vous êtes un nouveau client Cloud Service, le bouton **Ajouter le Programme** s’affiche dans le coin supérieur droit d’un landing page vide. Vous souhaiterez ajouter un nouveau programme à votre Cloud Service.
 
-Pour plus d’informations, consultez [Ajouter un nouveau Programme dans le service Cloud sans Programme](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#no-program) existant.
+Pour plus d&#39;informations, consultez [Ajouter un nouveau Programme en Cloud Service sans Programme](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#no-program) existant.
 
