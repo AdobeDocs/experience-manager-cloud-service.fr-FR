@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
 source-wordcount: '102'
-ht-degree: 4%
+ht-degree: 17%
 
 ---
 
@@ -24,6 +24,6 @@ ht-degree: 4%
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
-Vous trouverez plus d&#39;informations sur cette rubrique à partir des ressources suivantes :
+Vous trouverez des informations supplémentaires à ce sujet dans les ressources suivantes :
 
 - [aem composants principaux CIF - Configuration de pages à catalogue multiple](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
