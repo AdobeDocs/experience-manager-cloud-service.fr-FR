@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 07180809ff8b4a42a07eb9c691ab7a99262742ec
 workflow-type: tm+mt
 source-wordcount: '2207'
-ht-degree: 48%
+ht-degree: 72%
 
 ---
 
@@ -39,7 +39,7 @@ Suivez la section ci-dessous pour comprendre les points importants à prendre en
 L&#39;analyseur des meilleures pratiques peut être téléchargé sous la forme d&#39;un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le module par le biais du gestionnaire de modules sur votre instance source Adobe Experience Manager (AEM).
 
 >[!NOTE]
->Download the Best Practices Analyzer from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
+>Download the Best Practices Analyzer from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/fr-FR/aemcloud.html) portal.
 
 ## Affichage du rapport Analyseur des meilleures pratiques {#viewing-report}
 
@@ -51,24 +51,24 @@ Suivez cette section pour savoir comment vue du rapport Best Practices Analyzer 
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. Cliquez sur **Générer le rapport** pour exécuter l’analyseur des meilleures pratiques.
+1. Click on **Generate Report** to execute the Best Practices Analyzer.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic2.png)
 
-1. Pendant que l&#39;APM génère le rapport, vous pouvez voir la progression de l&#39;outil à l&#39;écran. Il affiche le nombre d&#39;éléments analysés et le nombre de résultats trouvés.
+1. Pendant que l&#39;APM génère le rapport, vous pouvez voir la progression de l&#39;outil à l&#39;écran. Il affiche le nombre d’éléments analysés et le nombre de résultats trouvés.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic3.png)
 
 
-1. Une fois le rapport d&#39;APB généré, il affiche un résumé et le nombre de résultats sous forme de tableau, organisés en fonction du type de recherche et du niveau d&#39;importance. Pour obtenir plus de détails sur une recherche particulière, vous pouvez cliquer sur le numéro correspondant au type de recherche dans le tableau.
+1. Une fois le rapport d&#39;APB généré, il affiche un résumé et le nombre de résultats sous forme de tableau, organisés en fonction du type de recherche et du niveau d&#39;importance. Pour obtenir plus de détails sur un résultat spécifique, vous pouvez cliquer sur le numéro correspondant au type de résultat dans le tableau.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic4.png)
 
-   L&#39;action ci-dessus fera défiler automatiquement l&#39;écran jusqu&#39;à l&#39;emplacement de cette recherche dans le rapport.
+   L’action ci-dessus fait automatiquement défiler l’écran jusqu’à l’emplacement de ce résultat dans le rapport.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
 
-1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
+1. Vous avez la possibilité de télécharger le rapport au format CSV (valeurs séparées par une virgule) en cliquant sur **CSV**, comme le montre la figure ci-dessous.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
@@ -78,7 +78,7 @@ Suivez cette section pour savoir comment vue du rapport Best Practices Analyzer 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
 
    >[!NOTE]
-   >Le rapport est en cours de régénération, mais il affiche la progression en termes de pourcentage achevé, comme le montre l&#39;illustration ci-dessous.
+   >Pendant sa régénération, le rapport affiche la progression en termes de pourcentage achevé, comme le montre l’illustration ci-dessous.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
 
@@ -109,7 +109,7 @@ Le format du rapport est le suivant :
 Un niveau d’importance est attribué à chaque résultat pour indiquer une priorité absolue concernant l’action.
 
 >[!NOTE]
->Pour en savoir plus sur chaque Catégorie de recherche, consultez Catégories [du Détecteur de](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html)schémas.
+>Pour en savoir plus sur chaque catégorie de résultat, consultez [Catégories du détecteur de motifs](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
 
 Consultez le tableau ci-dessous pour comprendre les niveaux d’importance :
 
@@ -167,17 +167,17 @@ Vous pouvez également utiliser un outil de ligne de commande tel que `curl` ou 
 
 Les en-têtes HTTP suivants sont utilisés par cette interface :
 
-* `Cache-Control: max-age=<seconds>`: Spécifie la durée de vie de fraîcheur du cache en secondes. (Voir [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8).)
-* `Prefer: respond-async`: Indique que le serveur doit répondre de manière asynchrone. (Voir [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1).)
-* `Prefer: return=minimal`: Indique que le serveur doit renvoyer une réponse minimale. (Voir [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2).)
+* `Cache-Control: max-age=<seconds>` : indique l’intervalle d’actualisation du cache en secondes. (Voir [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8).)
+* `Prefer: respond-async` : indique que le serveur doit répondre de manière asynchrone. (Voir [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1).)
+* `Prefer: return=minimal` : indique que le serveur doit renvoyer une réponse minimale. (Voir [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2).)
 
 Les paramètres de requête HTTP suivants sont disponibles à titre de commodité lorsque l’utilisation des en-têtes HTTP risque de ne pas être facile :
 
-* `max-age` (nombre, facultatif) : Spécifie la durée de vie de fraîcheur du cache en secondes. Ce nombre doit être égal ou supérieur à 0. La durée de vie de fraîcheur par défaut est de 8 6400 secondes. Sans ce paramètre ou l&#39;en-tête correspondant, un nouveau cache sera utilisé pour répondre aux demandes pendant 24 heures, et le cache devra alors être régénéré. L&#39;utilisation `max-age=0` forcera le cache à être effacé et déclenchera une régénération du rapport, en utilisant la durée de vie de fraîcheur non nulle précédente pour le cache nouvellement généré.
-* `respond-async` (booléen, facultatif) : Indique que la réponse doit être fournie de manière asynchrone. Using `respond-async=true` when the cache is stale will cause the server to return a response of `202 Accepted` without waiting for the cache to be refreshed and for the report to be generated. Si le cache est actualisé, ce paramètre n’a aucun effet. The default value is `false`. Without this parameter or the corresponding header the server will respond synchronously, which may require a significant amount of time and require an adjustment to the maximum response time for the HTTP client.
-* `may-refresh-cache` (booléen, facultatif) : Indique que le serveur peut actualiser le cache en réponse à une demande si le cache actuel est vide, obsolète ou bientôt obsolète. Si `may-refresh-cache=true`ou si elle n’est pas spécifiée, le serveur peut lancer une tâche d’arrière-plan qui appelle le Détecteur de schémas et actualise le cache. Si `may-refresh-cache=false` le serveur ne lance aucune tâche d&#39;actualisation qui aurait été effectuée autrement si le cache est vide ou obsolète, auquel cas le rapport est vide. Toute tâche d&#39;actualisation déjà en cours de traitement ne sera pas affectée par ce paramètre.
-* `return-minimal` (booléen, facultatif) : Indique que la réponse du serveur doit uniquement inclure l’état contenant l’indication de progression et l’état du cache au format JSON. Si `return-minimal=true`vous le souhaitez, le corps de la réponse sera limité à l’objet status. Si `return-minimal=false`ou si elle n&#39;est pas spécifiée, une réponse complète sera fournie.
-* `log-findings` (booléen, facultatif) : Indique que le serveur doit enregistrer le contenu du cache lors de sa création ou de son actualisation initiale. Chaque recherche du cache sera consignée sous la forme d’une chaîne JSON. Cette journalisation ne se produit que si `log-findings=true` la demande génère un nouveau cache.
+* `max-age` (nombre, facultatif) : indique l’intervalle d’actualisation du cache en secondes. Ce nombre doit être égal ou supérieur à 0. L’intervalle d’actualisation par défaut est de 86 400 secondes. Sans ce paramètre ou l’en-tête correspondant, un nouveau cache est utilisé pour répondre aux requêtes pendant 24 heures, auquel stade le cache doit être régénéré. L’utilisation de `max-age=0` force l’effacement du cache et déclenche une régénération du rapport, en utilisant l’intervalle d’actualisation non nul précédent du cache nouvellement généré.
+* `respond-async` (booléen, facultatif) : indique que la réponse doit être fournie de manière asynchrone. L’utilisation de `respond-async=true`, si le cache est obsolète, entraîne l’envoi par le serveur d’une réponse `202 Accepted` sans attendre que le cache soit actualisé et le rapport généré. Si le cache est actualisé, ce paramètre n’a aucun effet. La valeur par défaut est `false`. Sans ce paramètre ou l’en-tête correspondant, le serveur répondra de manière synchrone. Dans ce cas, la réponse peut nécessiter un temps important et un ajustement du temps de réponse maximal pour le client HTTP.
+* `may-refresh-cache` (booléen, facultatif) : indique que le serveur peut actualiser le cache en réponse à une demande si le cache actuel est vide, obsolète ou sur le point d’être obsolète. Si `may-refresh-cache=true`, ou s’il n’est pas spécifié, le serveur peut lancer une tâche en arrière-plan qui appelle le détecteur de motifs et actualise le cache. Si `may-refresh-cache=false`, le serveur ne lance aucune tâche d’actualisation qui aurait sinon été effectuée si le cache est vide ou obsolète, auquel cas le rapport est vide. Une tâche d’actualisation déjà en cours de traitement n’est pas affectée par ce paramètre.
+* `return-minimal` (booléen, facultatif) : indique que la réponse du serveur doit uniquement inclure le statut contenant l’indication de progression et le statut du cache au format JSON. Si `return-minimal=true`, le corps de la réponse est limité à l’objet de statut. Si `return-minimal=false`, ou s’il n’est pas spécifié, une réponse complète est fournie.
+* `log-findings` (booléen, facultatif) : indique que le serveur doit consigner le contenu du cache lors de sa création ou de son actualisation initiale. Chaque résultat du cache est consigné sous la forme d’une chaîne JSON. Cette consignation ne se produit que si `log-findings=true` et la requête génèrent un nouveau cache.
 
 Si un en-tête HTTP et son paramètre de requête correspondant sont présents simultanément, le paramètre de requête est prioritaire.
 
@@ -190,10 +190,10 @@ Lorsqu’une requête a été effectuée, le client n’a pas besoin de rester a
 
 Les valeurs de réponses possibles sont les suivantes :
 
-* `200 OK`: Indique que la réponse contient les résultats du détecteur de schémas qui ont été générés pendant la durée de vie de la mémoire cache.
-* `202 Accepted`: Utilisé pour indiquer que le cache est obsolète. Lorsque `respond-async=true` et `may-refresh-cache=true` cette réponse indique qu’une tâche d’actualisation est en cours. Lorsque `may-refresh-cache=false` cette réponse indique simplement que le cache est obsolète.
+* `200 OK` : indique que la réponse contient les résultats du détecteur de motifs, générés pendant l’intervalle d’actualisation de la mémoire cache.
+* `202 Accepted` : utilisé pour indiquer que le cache est obsolète. Si `respond-async=true` et `may-refresh-cache=true`, cette réponse indique qu’une tâche d’actualisation est en cours. Si `may-refresh-cache=false`, cette réponse indique simplement que le cache est obsolète.
 * `400 Bad Request` : indique qu’une erreur s’est produite lors de la requête. Un message au format Détails du problème (voir [RFC 7807](https://tools.ietf.org/html/rfc7807)) donne des détails supplémentaires.
-* `401 Unauthorized`: Indique que la demande n’a pas été autorisée.
+* `401 Unauthorized` : indique que la requête n’a pas été autorisée.
 * `500 Internal Server Error` : indique qu’une erreur de serveur interne s’est produite. Un message au format Détails du problème donne des détails supplémentaires.
 * `503 Service Unavailable` : indique que le serveur est occupé par une autre réponse et qu’il ne peut pas traiter cette requête dans les délais impartis. Cela ne se produit probablement que pour les requêtes synchrones. Un message au format Détails du problème donne des détails supplémentaires.
 
