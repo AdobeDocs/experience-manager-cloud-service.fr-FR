@@ -1,5 +1,5 @@
 ---
-title: Gestion des éléments numériques
+title: Gestion des ressources numériques
 description: Découvrez les différentes méthodes de gestion et de modification des ressources.
 contentOwner: AG
 mini-toc-levels: 1
