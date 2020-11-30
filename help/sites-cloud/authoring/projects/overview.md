@@ -43,20 +43,20 @@ Dans AEM, la console Projets permet d’accéder à vos projets et de les gérer
 * L’option **Activer/désactiver les projets actifs** vous permet de basculer entre tous les projets et uniquement ceux qui sont actifs.
 * L’option **Afficher la vue Statistiques** permet d’afficher les statistiques de projet relatives à la réalisation de tâches.
 
-## Mosaïques de projet   {#project-tiles}
+## Mosaïques de projet {#project-tiles}
 
 Dans la console Projets, vous devez associer différents types d’informations à vos projets. Elles sont connues sous le nom de **mosaïques**. Toutes les mosaïques, ainsi que le type d’informations qu’elles contiennent, sont décrites dans cette section.
 
 Vous pouvez associer les mosaïques suivantes à votre projet. Chacune d’elles est décrite dans les sections ci-après :
 
 * Ressources et collections de ressources
-* Expériences  
+* Expériences
 * Liens
 * Informations sur le projet
 * Équipe
 * Pages d’entrée
 * Courriels
-* Workflows   
+* Workflows
 * Lancements
 * Tâches
 
@@ -66,13 +66,13 @@ Dans la mosaïque **Ressources**, vous pouvez regrouper tous les éléments dont
 
 ![Mosaïque Ressources](/help/sites-cloud/authoring/assets/projects-assets-tile.png)
 
-Vous chargez des ressources directement dans la mosaïque. En outre, vous pouvez créer des visionneuses d’images, des visionneuses à 360° ou des visionneuses de médias mixtes si vous avez installé le complément Médias dynamiques.
+Vous chargez des ressources directement dans la mosaïque. En outre, vous pouvez créer des visionneuses d’images, des visionneuses à 360° ou des visionneuses de médias mixtes si vous avez installé le complément Dynamic Media.
 
 ![Visionneuse d’images](/help/sites-cloud/authoring/assets/projects-image-sets.png)
 
 ### Collections de ressources {#asset-collections}
 
-Comme avec les ressources, vous pouvez ajouter des [collections de ressources](/help/assets/manage-collections.md) directement à votre projet. Vous définissez les collections dans AEM Assets.
+Comme avec les ressources, vous pouvez ajouter des [collections de ressources](/help/assets/manage-collections.md) directement à votre projet. Vous définissez les collections dans Assets.
 
 ![Collection de ressources](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
 
@@ -162,7 +162,7 @@ AEM est fourni avec trois modèles prêts à l’emploi :
 
 En fonction du modèle sélectionné, plusieurs options s’offrent à vous, notamment en termes de rôles utilisateur et de workflows.
 
-## Rôles utilisateur dans un projet   {#user-roles-in-a-project}
+## Rôles utilisateur dans un projet  {#user-roles-in-a-project}
 
 Différents rôles utilisateur sont définis dans un modèle de projet et utilisés pour deux principales raisons :
 
@@ -173,9 +173,9 @@ Pour vous permettre de gérer les autorisations de sécurité et de contrôle, t
 
 | Rôle | Description | Autorisations | Appartenance à un groupe |
 |---|---|---|---|
-| Observateur | Un utilisateur disposant de ce rôle peut afficher les détails du projet, y compris son état. | Droits en lecture seule sur un projet | `workflow-users` groupe |
-| Éditeur | Un utilisateur disposant de ce rôle peut télécharger et modifier le contenu d’un projet. | Accès en lecture et en écriture à un projet, aux métadonnées associées et aux ressources connexes ; droits permettant à l’utilisateur de charger une liste de plans ou une séance photo et de passer en revue et d’approuver des ressources ; droits en écriture sur /etc/commerce ; droits de modification sur un projet spécifique | groupe workflow-users |
-| Propriétaire | Un utilisateur disposant de ce rôle peut lancer un projet. Le propriétaire peut créer un projet, lancer une tâche pour un projet et déplacer les ressources approuvées vers le dossier Production. Toutes les autres tâches de projet peuvent également être visualisées et implémentées par le propriétaire. | Droits en écriture sur `/etc/commerce` | groupe `dam-users` (pour pouvoir créer un projet) groupe project-administrators (pour pouvoir déplacer des ressources) |
+| Observateur | Un utilisateur disposant de ce rôle peut afficher les détails du projet, y compris son état. | Droits en lecture seule sur un projet | Groupe `workflow-users` |
+| Éditeur | Un utilisateur disposant de ce rôle peut charger et modifier le contenu d’un projet. | Accès en lecture et en écriture à un projet, aux métadonnées associées et aux ressources connexes ; droits permettant à l’utilisateur de charger une liste de plans ou une séance photo et de passer en revue et d’approuver des ressources ; droits en écriture sur /etc/commerce ; droits de modification sur un projet spécifique | Groupe workflow-users |
+| Propriétaire | Un utilisateur disposant de ce rôle peut lancer un projet. Le propriétaire peut créer un projet, lancer une tâche pour un projet et déplacer les ressources approuvées vers le dossier Production. Toutes les autres tâches de projet peuvent également être visualisées et implémentées par le propriétaire. | Droits en écriture sur `/etc/commerce` | Groupe `dam-users` (pour pouvoir créer un projet), groupe project-administrators (pour pouvoir déplacer des ressources) |
 
 >[!NOTE]
 >
