@@ -1,5 +1,5 @@
 ---
-title: Meilleures pratiques pour l’intégration à [!DNL Adobe Creative Cloud]
+title: Bonnes pratiques pour l’intégration à [!DNL Adobe Creative Cloud]
 description: Bonnes pratiques pour intégrer un déploiement Experience Manager à Adobe Creative Cloud de façon à rationaliser les workflows de transfert de ressources et à obtenir un maximum d’efficacité.
 contentOwner: AG
 mini-toc-levels: 1
@@ -18,13 +18,13 @@ Adobe Experience Manager (AEM) Assets est une solution de gestion des ressourc
 
 Adobe Creative Cloud offre aux équipes créatives un écosystème de solutions et de services pour leur permettre de créer des ressources numériques. Il comprend des applications de bureau et mobiles, des services de cloud tels que le stockage avec une synchronisation sur poste de travail ou une expérience web, ainsi que des places de marché telles qu’Adobe Stock.
 
-Lisez ce qui suit pour savoir quelles intégrations choisir entre poste de travail et DAM d’entreprise selon votre cas d’utilisation et découvrir quelles sont les meilleures pratiques associées aux workflows de connexion.
+Lisez ce qui suit pour savoir quelles intégrations choisir entre poste de travail et DAM d’entreprise selon votre cas d’utilisation et découvrir quelles sont les bonnes pratiques associées aux workflows de connexion.
 
 >[!NOTE]
 >
 >Le partage de dossiers d’AEM vers Creative Cloud est maintenant obsolète et n’est plus traité ci-après. Adobe recommande des fonctionnalités plus récentes, telles qu’Adobe Asset Link ou l’application de bureau AEM, pour fournir aux utilisateurs créatifs un accès aux ressources gérées dans AEM.
 
-## Besoins en matière de collaboration des créatifs, spécialistes marketing et utilisateurs de DAM   {#collaboration-need-of-creatives-marketers-and-dam-users}
+## Besoins en matière de collaboration des créatifs, spécialistes marketing et utilisateurs de DAM {#collaboration-need-of-creatives-marketers-and-dam-users}
 
 | Conditions requises | Cas d’utilisation | Surfaces impliquées |
 |---|---|---|
@@ -46,7 +46,7 @@ Cet article se concentre principalement sur les deux premiers aspects des besoin
 
 Choix de la fonctionnalité à utiliser
 
-### Correspondance des cas d’utilisation aux solutions Adobe   {#mapping-of-use-cases-and-adobe-solutions}
+### Correspondance des cas d’utilisation aux solutions Adobe {#mapping-of-use-cases-and-adobe-solutions}
 
 | Cas d’utilisation | Adobe Asset Link | Application de bureau AEM | Remarques ou autres méthodes |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -84,7 +84,7 @@ Pour prendre en charge les cas d’utilisation de la distribution des ressources
 * **Ressources prêtes après création :** ressources prêtes à être partagées avec l’équipe élargie ou sélectionnées/approuvées par l’équipe créative pour le partage avec les équipes marketing ou métier.
 
 * **Approbation des ressources :** processus d’approbation traitant des ressources déjà transférées dans la gestion des ressources numériques, qui inclut généralement les approbations de marque, les validations juridiques, etc.
-* **Ressource finale :** ressource qui a passé l’ensemble des      approbations/balisages de métadonnées et qui est prête à être utilisée par l’équipe élargie. Une telle ressource est stockée dans la gestion des ressources numériques et est accessible à tous les utilisateurs (ou à tous les utilisateurs intéressés). Il peut être utilisé dans les canaux marketing ou par des équipes créatives pour créer des conceptions.
+* **Ressource finale :** ressource qui a passé l’ensemble des  approbations/balisages de métadonnées et qui est prête à être utilisée par l’équipe élargie. Une telle ressource est stockée dans la gestion des ressources numériques et est accessible à tous les utilisateurs (ou à tous les utilisateurs intéressés). Il peut être utilisé dans les canaux marketing ou par des équipes créatives pour créer des conceptions.
 
 * **Mise à jour/modification mineure des ressources :** modification rapide et petite d’une ressource numérique. Cette opération est souvent effectuée en réponse à une demande de retouche ou de modification mineure, de révision ou d’approbation de fichier (par exemple, repositionnement, modification de la taille du texte, ajustement de la saturation/luminosité, couleur, etc.).
 * **Mise à jour/modification majeure des ressources :** modification d’une ressource numérique qui nécessite un travail considérable et qui doit parfois être effectuée sur une plus longue période de temps. Celle-ci implique généralement plusieurs modifications. La ressource doit être enregistrée plusieurs fois lors de la mise à jour. En règle générale, les mises à jour majeures de la ressource entraînent le passage à une étape en cours.
@@ -127,19 +127,19 @@ Les ressources d’Adobe Stock sous licence et enregistrées dans AEM sont acce
 
 ## À propos du stockage de ressources dans un système de gestion des ressources numériques {#about-storing-assets-in-a-dam}
 
-Pour établir un workflow efficace entre les équipes créatives et marketing/métier, et sélectionner les meilleures fonctionnalités de prise en charge, il est important de comprendre quand et pourquoi les ressources sont stockées dans la gestion des ressources numériques.
+Pour établir un workflow efficace entre les équipes créatives et marketing/métier, et sélectionner les meilleures fonctionnalités de prise en charge, il est important de comprendre quand et pourquoi les ressources sont stockées dans la gestion des ressources numériques (DAM).
 
-### Pourquoi les ressources sont-elles stockées dans la gestion des ressources numériques ?   {#why-assets-are-stored-in-dam}
+### Pourquoi les ressources sont-elles stockées dans la gestion des ressources numériques ? {#why-assets-are-stored-in-dam}
 
 Le stockage des ressources dans la gestion des ressources numériques permet d’en faciliter l’accès et de les retrouver plus aisément. Cela garantit que les ressources peuvent être exploitées par de nombreux utilisateurs au sein de votre organisation ou écosystème, qui comprend les partenaires, les clients, etc.
 
 La plupart des entreprises choisissent de stocker uniquement les ressources pertinentes pour les processus marketing/métier en aval (publication sur des canaux tels que le canal web via AEM Sites ou d’autres canaux traités par Adobe Experience Cloud : Marketing Cloud, Advertising Cloud et mesurés par Analytics Cloud, satisfaction des besoins des utilisateurs et partenaires, etc.). En outre, les entreprises stockent les ressources qui peuvent être soumises à un processus de révision/approbation dans la gestion des ressources numériques. De cette manière, la gestion des ressources numériques stocke principalement les ressources ayant de grandes chances d’être exploitées, en évitant de stocker les ressources inactives.
 
-Le stockage des ressources est soumis à des considérations techniques et d’utilisation des ressources. La gestion des ressources numériques fournit des services supplémentaires pour les ressources stockées, notamment l’extraction de métadonnées, le contrôle de versions, la génération d’aperçus/de transcodage, la gestion des références et l’ajout d’informations de contrôle d’accès. Ces services utilisent davantage de temps et de ressources de votre infrastructure.
+Le stockage des ressources est soumis à des considérations techniques et d’utilisation des ressources. La gestion des ressources numériques fournit des services supplémentaires pour les ressources stockées, notamment l’extraction de métadonnées, le contrôle de version, la génération d’aperçus/de transcodage, la gestion des références et l’ajout d’informations de contrôle d’accès. Ces services utilisent davantage de temps et de ressources de votre infrastructure.
 
 Souvent, le stockage de toutes les ressources et mises à jour n’est pas souhaitable. Par exemple, si les mises à jour de ressources spécifiques sont de mauvaise qualité et utilisent les ressources en excès, les ressources peuvent être stockées dans la gestion des ressources numériques.
 
-#### Quand les ressources sont-elles stockées dans la gestion des ressources numériques ?   {#when-assets-are-stored-in-dam}
+#### Quand les ressources sont-elles stockées dans la gestion des ressources numériques ? {#when-assets-are-stored-in-dam}
 
 Les équipes créatives (et les organisations) ne sont généralement pas intéressées par le stockage des ressources à chaque étape de leur cycle de vie. Par exemple, elles évitent de stocker des ressources dans les cas suivants :
 
@@ -153,13 +153,13 @@ En règle générale, les classes de ressources suivantes sont stockées dans la
 * Les ressources qui ont été présélectionnées par l’équipe créative
 * Les formats de ressources spécifiques qui sont utilisables ou demandés par le marketing, selon un contrat ou un accord spécifique (par exemple, des fichiers JPG convertis à partir de fichiers RAW, des TIFF/images à partir d’originaux PSD)
 
-#### Quand les mises à jour de ressources sont-elles stockées dans la gestion des ressources numériques ?   {#when-updates-to-assets-are-stored-in-dam}
+#### Quand les mises à jour de ressources sont-elles stockées dans la gestion des ressources numériques ? {#when-updates-to-assets-are-stored-in-dam}
 
 En règle générale, seules les mises à jour des ressources pertinentes pour un large ensemble d’utilisateurs de la gestion des ressources numériques doivent être stockées dans la gestion des ressources numériques. Cela garantit que les utilisateurs (marketing et fonctions similaires) voient uniquement les versions appropriées dans la chronologie des ressources de la gestion des ressources numériques.
 
 Généralement, il s’agit des modifications en rapport avec les principaux jalons dans le cycle de vie des ressources. Par exemple, la ressource initiale prête pour les spécialistes marketing ou une mise à jour officielle basée sur une demande/révision fournie par l’équipe créative doit être enregistrée et versionnée dans la gestion des ressources numériques.
 
-Il peut s’agir, par exemple, d’une mise à jour de l’équipe créative pour révision par l’équipe marketing après une demande de modification de la ressource existante dans la gestion des ressources numériques. Elle doit être stockée et versionnée dans la gestion des actifs numériques à des fins de référence ou pour revenir à la version précédente.
+Il peut s’agir, par exemple, d’une mise à jour de l’équipe créative pour révision par l’équipe marketing après une demande de modification de la ressource existante dans la gestion des ressources numériques. Elle doit être stockée et versionnée dans la gestion des ressources numériques à des fins de référence ou pour revenir à la version précédente.
 
 Voici quelques exemples de mises à jour qui ne sont généralement pas pertinentes :
 
@@ -170,7 +170,7 @@ Voici quelques exemples de mises à jour qui ne sont généralement pas pertinen
 
 AEM Assets prend en charge deux types d’utilisateurs selon leur accès au déploiement d’AEM Assets. En règle générale, les utilisateurs à l’intérieur du réseau d’entreprise (pare-feu) ont un accès direct à la gestion des ressources numériques. Les autres utilisateurs à l’extérieur du réseau d’entreprise n’auront pas d’accès direct. Le type d’utilisateur détermine les intégrations qui peuvent être utilisées du point de vue technique.
 
-#### Utilisateurs créatifs avec un accès direct à la gestion des ressources numériques   {#creative-users-with-direct-access-to-dam}
+#### Utilisateurs créatifs avec un accès direct à la gestion des ressources numériques {#creative-users-with-direct-access-to-dam}
 
 En règle générale, les équipes créatives internes, de même que les agences et les professionnels de la création intégrés au réseau interne ont accès à l’instance DAM, et peuvent se connecter à AEM. AEM et l’infrastructure réseau peuvent être configurés afin d’autoriser un accès direct aux parties externes (généralement, des entreprises de confiance telles que des agences travaillant pour un client) pour disposer d’un accès à AEM via le réseau (par le biais de la liste adresses IP autorisées ou d’un VPN, par exemple).
 
@@ -185,7 +185,7 @@ Utilisez les stratégies suivantes pour fournir un accès aux ressources finales
 * Utilisez l’application de bureau si Asset Link ne fonctionne pas.
 * Utilisez [AEM Assets Brand Portal](https://helpx.adobe.com/fr/experience-manager/brand-portal/user-guide.html) pour distribuer les ressources en toute sécurité aux partenaires externes.
 * Utilisez une implémentation personnalisée d’un portail de distribution et de source basé sur [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* Utilisez la configuration du contrôle d’accès dans AEM et l’infrastructure réseau nécessaire (mise en liste d’adresses IP autorisées et VPN, par exemple) pour permettre aux parties externes d’accéder à une zone de contenu dédiée dans la gestion des actifs numériques. Ils peuvent utiliser l’interface utilisateur web d’AEM pour obtenir des ressources et charger du nouveau contenu dans la gestion des actifs numériques.
+* Utilisez la configuration du contrôle d’accès dans AEM et l’infrastructure réseau nécessaire (mise en liste d’adresses IP autorisées et VPN, par exemple) pour permettre aux parties externes d’accéder à une zone de contenu dédiée dans la gestion des ressources numériques. Ils peuvent utiliser l’interface utilisateur web d’AEM pour obtenir des ressources et charger du nouveau contenu dans la gestion des ressources numériques.
 
 #### Travail en cours sur les ressources d’AEM {#work-in-progress-on-assets-from-aem}
 
@@ -205,13 +205,13 @@ L’approche recommandée dans ce cas consiste à utiliser une option dans l’a
 
 #### Chargement en masse dans DAM {#bulk-upload-to-dam}
 
-Dans certains cas, il est possible que vous deviez charger simultanément un plus grand nombre de fichiers dans la gestion des actifs numériques, par exemple :
+Dans certains cas, il est possible que vous deviez charger simultanément un plus grand nombre de fichiers dans la gestion des ressources numériques, par exemple :
 
-* Chargement des résultats de   séances photo ou de projets de plus grande envergure
+* Chargement des résultats de séances photo ou de projets de plus grande envergure
 * Chargement de ressources fournies par les agences de création
 * Transfert de ressources sélectionnées à partir d’un plus grand ensemble si la sélection est effectuée en dehors de la gestion des ressources numériques
 
-Notez que cette description fait référence aux chargements de fichiers du point de vue des opérations (par exemple, chaque semaine ou à chaque      séance photo), comme composante normale du workflow de l’utilisateur de bureau. Les migrations de ressources de grande taille ne sont pas abordées ici.
+Notez que cette description fait référence aux chargements de fichiers du point de vue des opérations (par exemple, chaque semaine ou à chaque  séance photo), comme composante normale du workflow de l’utilisateur de bureau. Les migrations de ressources de grande taille ne sont pas abordées ici.
 
 Vous pouvez utiliser les fonctionnalités de transfert suivantes :
 
