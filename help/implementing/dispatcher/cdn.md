@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 14d08529eeee0f9881e668eed6273cfa57f1360f
 workflow-type: tm+mt
 source-wordcount: '713'
-ht-degree: 81%
+ht-degree: 93%
 
 ---
 
@@ -14,14 +14,14 @@ ht-degree: 81%
 
 AEM as a Cloud Service est fourni avec un réseau de diffusion de contenu intégré. Son principal objectif est de réduire la latence en fournissant du contenu pouvant être mis en cache à partir des nœuds CDN en périphérie, près du navigateur. Il est entièrement géré et configuré afin de permettre des performances optimales des applications AEM.
 
-Le réseau de diffusion de contenu géré par AEM satisfait à la plupart des exigences de performances et de sécurité du client. Pour le niveau de publication, les clients peuvent éventuellement le pointer à partir de leur propre réseau de diffusion de contenu, qu’ils devront gérer. Ce choix sera possible au cas par cas, en fonction de certaines conditions préalables, y compris, mais sans s’y limiter, le fait que le client possède une ancienne intégration avec son fournisseur de réseau de diffusion de contenu, et qu’il soit difficile de l’abandonner.
+Le réseau de diffusion de contenu géré par AEM satisfait à la plupart des exigences de performances et de sécurité du client. Pour le niveau de publication, les clients peuvent éventuellement privilégier leur propre réseau de diffusion de contenu, mais il leur appartiendra de le gérer. Ce choix sera possible au cas par cas, en fonction de certaines conditions préalables, y compris, mais sans s’y limiter, le fait que le client possède une ancienne intégration avec son fournisseur de réseau de diffusion de contenu, et qu’il soit difficile de l’abandonner.
 
 ## Réseau de diffusion de contenu géré par AEM {#aem-managed-cdn}
 
 Procédez comme suit pour préparer la diffusion de contenu à l’aide du réseau de diffusion de contenu prêt à l’emploi d’Adobe :
 
 1. Fournissez le certificat SSL signé et la clé secrète à Adobe en partageant un lien vers un formulaire sécurisé contenant ces informations. Il est recommandé de coordonner cette tâche avec le service clientèle. Adobe prend en charge jusqu’à 10 certificats SSL pour un programme.
-   **Remarque :** AEM as a Cloud Service ne prend pas en charge les certificats DV (Domain Validated, domaines validés). En outre, il doit s’agir d’un certificat TLS X.509 d’une autorité de certification approuvée avec une clé privée RSA 2 048 bits correspondante.
+   **Remarque :** AEM as a Cloud Service ne prend pas en charge les certificats DV (Domain Validated, domaines validés). En outre, il doit s’agir d’un certificat TLS X.509 d’une autorité de certification approuvée (CA) avec une clé privée RSA 2 048 bits correspondante.
 1. Donnez les informations suivantes au service clientèle :
    * quel(s) domaine(s) personnalisé(s) doit être associé(s) à un environnement donné, tel que défini par l&#39;ID de programme et l&#39;ID d&#39;environnement. Jusqu’à 100 domaines sont pris en charge pour un environnement donné et les domaines ne peuvent pas contenir de caractères génériques. Notez que les domaines personnalisés côté auteur ne sont pas pris en charge.
    * Une liste d’adresses IP autorisées éventuellement nécessaire pour limiter le trafic à destination d’un environnement donné.
@@ -53,6 +53,6 @@ Instructions de configuration :
 
 Avant d’accepter le trafic en direct, vous devez vérifier auprès du service clientèle d’Adobe que le trafic de bout en bout fonctionne correctement.
 
-Il y a peut-être un faible impact sur les performances en raison du saut supplémentaire, bien que les houblons du CDN du client au CDN géré par l&#39;Adobe soient susceptibles d&#39;être efficaces.
+Les performances peuvent diminuer en raison du saut supplémentaire, bien que les sauts entre le réseau de diffusion du client et celui géré par Adobe puissent être efficaces.
 
-Notez que cette configuration CDN client est prise en charge pour la couche Publication, mais pas devant la couche Auteur.
+Notez que cette configuration CDN client est prise en charge pour le niveau de publication, mais pas devant le niveau de création.
