@@ -1,6 +1,6 @@
 ---
-title: Règlement sur la protection des données et la confidentialité des données - Adobe Experience Manager en tant que base Cloud Service
-description: 'Découvrez comment l''Adobe Experience Manager en tant que soutien de la Fondation Cloud Service pour les divers règlements sur la protection des données et la confidentialité des données ; notamment le règlement général de l’UE sur la protection des données (RGPD), la loi sur la protection des renseignements personnels des consommateurs de Californie et la manière de se conformer lors de la mise en oeuvre d’un nouveau projet AEM en tant que Cloud Service. '
+title: Règlement sur la protection des données et la confidentialité des données - Adobe Experience Manager en tant que Cloud Service Foundation Readiness
+description: 'Découvrez Adobe Experience Manager en tant que support de la Fondation Cloud Service pour les différentes réglementations sur la protection des données et la confidentialité des données ; y compris le règlement général de l''UE sur la protection des données (RGPD), la loi sur la protection des renseignements personnels des consommateurs de Californie et la façon de se conformer lors de la mise en oeuvre d''une nouvelle AEM en tant que projet Cloud Service. '
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
@@ -20,11 +20,11 @@ ht-degree: 32%
 
 >[!NOTE]
 >
->Pour plus d&#39;informations sur la réponse Adobe aux problèmes de confidentialité et sur ce que cela signifie pour vous en tant que client Adobe, consultez le Centre [de confidentialité](https://www.adobe.com/privacy.html)Adobe.
+>Pour plus d&#39;informations sur la réponse des Adobes aux questions de confidentialité et sur ce que cela signifie pour vous en tant que client Adobe, consultez le Centre [de confidentialité des](https://www.adobe.com/privacy.html)Adobes.
 
-## Prise en charge de la protection et de la confidentialité des données AEM Foundation {#aem-foundation-data-privacy-and-protection-support}
+## Prise en charge de la protection et de la confidentialité des données de AEM Foundation {#aem-foundation-data-privacy-and-protection-support}
 
-Au niveau d’AEM Foundation, les données personnelles stockées sont conservées dans le Profil utilisateur. Par conséquent, les informations contenues dans cet article portent principalement sur la manière d’accéder aux profils d’utilisateurs et de les supprimer, afin de répondre respectivement aux demandes d’accès et de suppression.
+Au niveau de AEM Foundation, les données personnelles stockées sont conservées dans le Profil utilisateur. Par conséquent, les informations contenues dans cet article portent principalement sur la manière d’accéder aux profils d’utilisateurs et de les supprimer, afin de répondre respectivement aux demandes d’accès et de suppression.
 
 ## Accès à un profil utilisateur {#accessing-a-user-profile}
 
@@ -44,7 +44,7 @@ Au niveau d’AEM Foundation, les données personnelles stockées sont conservé
 
    ![profil utilisateur](assets/dpp-foundation-02.png)
 
-### API HTTP {#http-api}
+### API HTTP  {#http-api}
 
 Comme mentionné, Adobe fournit des API pour accéder aux données utilisateur, afin de faciliter l’automatisation. Il existe plusieurs types d’API que vous pouvez utiliser :
 
@@ -96,9 +96,9 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 >[!NOTE]
 >
->Pour AEM en tant que Cloud Service, aucune procédure manuelle n’est disponible à partir de l’interface utilisateur pour la suppression d’un profil utilisateur, car CRXDE n’est pas accessible.
+>Pour AEM en tant que Cloud Service, il n’existe aucune procédure manuelle disponible dans l’interface utilisateur pour la suppression d’un profil utilisateur, car CRXDE n’est pas accessible.
 
-### API HTTP {#http-api-1}
+### API HTTP  {#http-api-1}
 
 Les procédures suivantes utilisent l’outil de ligne de commande `curl` pour illustrer comment désactiver l’utilisateur **[!UICONTROL cavery]** `userId` et supprimer ses profils disponibles à l’emplacement par défaut.
 
