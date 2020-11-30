@@ -1,30 +1,30 @@
 ---
-title: Structure de l’interface utilisateur AEM
-description: L’interface utilisateur AEM repose sur plusieurs principes fondamentaux et se compose de plusieurs éléments clés.
+title: Structure de l’interface utilisateur d’AEM
+description: 'L’interface utilisateur d’AEM s’accompagne de plusieurs principes sous-jacents et se compose d’une série d’éléments clés :'
 translation-type: tm+mt
 source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '915'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
 
-# Structure of the AEM UI {#structure-of-the-aem-ui}
+# Structure de l’interface utilisateur d’AEM {#structure-of-the-aem-ui}
 
-L’interface utilisateur AEM comporte plusieurs principes sous-jacents et se compose de plusieurs éléments clés :
+L’interface utilisateur d’AEM s’accompagne de plusieurs principes sous-jacents et se compose d’une série d’éléments clés :
 
 ## Consoles {#consoles}
 
 ### Redimensionnement et mise en page de base {#basic-layout-and-resizing}
 
-L’interface utilisateur est adaptée aux périphériques mobiles et de bureau. Toutefois, plutôt que de créer deux styles, AEM utilise un style qui fonctionne pour tous les écrans et les périphériques.
+L’interface utilisateur convient à la fois aux appareils mobiles et aux ordinateurs de bureau. Cependant, au lieu de créer deux styles distincts, AEM utilise un seul style qui fonctionne pour tous les écrans et terminaux.
 
-Tous les modules utilisent la même mise en page de base, AEM ceci peut être considéré comme :
+Tous les modules utilisent la même disposition de base. Dans AEM, cela se traduit visuellement comme suit :
 
 ![Console AEM Sites](assets/ui-sites-console.png)
 
-La mise en page respecte un style de conception réactif et s’adapte à la taille du périphérique/de la fenêtre que vous utilisez.
+La disposition adhère au style Responsive Design et s’adapte à la taille de l’appareil ou de la fenêtre que vous utilisez.
 
 Par exemple, si la résolution passe sous 1 024 pixels (comme c’est le cas sur un appareil mobile), l’affichage est adapté en conséquence :
 
@@ -32,22 +32,22 @@ Par exemple, si la résolution passe sous 1 024 pixels (comme c’est le cas s
 
 ### Barre d’en-tête {#header-bar}
 
-![aem barre d’en-tête](assets/ui-header-bar.png)
+![Barre d’en-tête AEM](assets/ui-header-bar.png)
 
 La barre d’en-tête affiche des éléments globaux, parmi lesquels :
 
-* Le logo et le produit/la solution spécifique que vous utilisez actuellement ; pour AEM, cela forme également un lien vers la navigation globale.
+* Le logo et le produit ou la solution spécifique en cours d’utilisation ; pour AEM, cela constitue également un lien vers la navigation globale
 * Rechercher
-* Icône permettant d’accéder aux ressources d’aide
-* Icône permettant d’accéder à d’autres solutions
-* Indicateur des alertes ou éléments de boîte de réception (et accès à ces alertes) qui vous attendent
-* L&#39;icône utilisateur, ainsi qu&#39;un lien vers votre gestion des profils
+* Icône d’accès aux ressources d’aide
+* Icône d’accès à d’autres solutions
+* Un indicateur pour les alertes et éléments de boîte de réception en attente (ainsi que la possibilité d’y accéder)
+* L’icône de l’utilisateur, ainsi qu’un lien vers la gestion de votre profil
 
 ### Barre d’outils {#toolbar}
 
-La barre d’outils est contextuelle par rapport à votre emplacement et aux outils de surfaces pertinents pour contrôler la vue ou les ressources dans la page ci-dessous. La barre d’outils est propre au produit, mais elle contient des éléments communs.
+Le contenu de cette barre varie en fonction de l’emplacement. La barre d’outils affiche des outils permettant de contrôler la vue ou des ressources dans la page ci-dessous. La barre d’outils est propre au produit, mais elle contient des éléments communs.
 
-La barre d’outils affiche les actions actuellement disponibles à n’importe quel emplacement :
+Quel que soit l’emplacement, la barre d’outils affiche les actions actuellement disponibles :
 
 ![Barre d’outils AEM Sites](assets/ui-sites-toolbar.png)
 
@@ -83,22 +83,22 @@ Le cadre de contenu se situe dans la partie droite de la fenêtre, sous la barre
 
 ### Cadre d’éditeur {#editor-frame}
 
-Le cadre de l’éditeur active les fonctions de modification.
+Le cadre d’éditeur active les fonctions d’édition.
 
 Le cadre d’éditeur est un conteneur pour l’ensemble des éléments de création de pages. Il se situe au-dessus du cadre de contenu et comprend les éléments suivants :
 
 * Barre d’outils supérieure
-* Le panneau latéral
-* Toutes les incrustations
-* Tout autre élément de création de page ; par exemple, la barre d’outils des composants
+* Panneau latéral
+* Tous les recouvrements
+* Tout autre élément de création de pages ; la barre d’outils des composants, par exemple
 
-![Cadre de l’éditeur](assets/ui-editor-frame.png)
+![Cadre d’éditeur](assets/ui-editor-frame.png)
 
 ### Panneau latéral {#side-panel}
 
-Il contient trois onglets par défaut. Les onglets **Ressources** et **Composants** vous permettent de sélectionner de tels éléments, de les faire glisser du panneau et de les déposer sur la page. L’onglet Arborescence **du** contenu vous permet d’examiner la hiérarchie du contenu de la page.
+Il contient trois onglets par défaut. Les onglets **Ressources** et **Composants** vous permettent de sélectionner de tels éléments, de les faire glisser du panneau et de les déposer sur la page. L’onglet **Arborescence du contenu** vous permet d’examiner la hiérarchie du contenu de la page.
 
-Par défaut, le panneau latéral est masqué. Lorsqu&#39;elle est sélectionnée, elle s&#39;affiche soit sur le côté gauche, soit elle glisse sur l&#39;ensemble de la fenêtre lorsque la taille de la fenêtre est inférieure à une largeur de 1 024 px ; comme, par exemple, sur un périphérique mobile.
+Par défaut, le panneau latéral est masqué. Lorsqu’il est sélectionné, soit il est affiché sur le côté gauche, soit il recouvre l’intégralité de la fenêtre lorsque la largeur de la fenêtre est inférieure à 1 024 pixels (par exemple, sur un appareil mobile).
 
 ![Panneau latéral](assets/ui-side-panel.png)
 
@@ -110,7 +110,7 @@ L’onglet Ressources vous permet de faire votre choix parmi un éventail de res
 
 ### Panneau latéral – Groupes de ressources {#side-panel-asset-groups}
 
-Dans l’onglet Ressources, vous pouvez utiliser une liste déroulante pour sélectionner les groupes de ressources spécifiques.
+L’onglet Ressources comprend un menu déroulant que vous pouvez utiliser pour sélectionner les groupes de ressources spécifiques.
 
 ![Groupes de ressources](assets/ui-side-panel-asset-groups.png)
 
@@ -120,17 +120,17 @@ L’onglet Composants vous propose un éventail de composants à sélectionner. 
 
 ![Onglet Composants](assets/ui-side-panel-components.png)
 
-### Panneau latéral - Arborescence de contenu {#side-panel-content-tree}
+### Panneau latéral – Arborescence de contenu {#side-panel-content-tree}
 
-Dans l’onglet Arborescence du contenu, vous pouvez vue la hiérarchie du contenu de la page. Un clic sur une entrée dans l’onglet permet d’accéder à l’élément et de le sélectionner sur la page dans l’éditeur.
+Dans l’onglet Arborescence de contenu, vous pouvez afficher la hiérarchie du contenu de la page. Cliquer sur une entrée dans l’onglet permet d’accéder à l’élément et de le sélectionner sur la page dans l’éditeur.
 
 ![Arborescence de contenu](assets/ui-side-panel-content-tree.png)
 
 ### Recouvrements {#overlays}
 
-Ces incrustations recouvrent le cadre de contenu et sont utilisées par les [calques](#layer) pour appliquer le mécanisme d’interaction (de manière complètement transparente) avec les composants et leur contenu.
+Ces recouvrements recouvrent le cadre de contenu et sont utilisés par les [calques](#layer) pour appliquer le mécanisme d’interaction (de manière complètement transparente) avec les composants et leur contenu.
 
-Les incrustations résident dans le cadre d’éditeur (avec tous les autres éléments de création de pages) même si, en fait, elles recouvrent les composants appropriés dans le cadre de contenu.
+Les recouvrements résident dans le cadre d’éditeur (avec tous les autres éléments de création de pages) même si, en fait, ils recouvrent les composants appropriés dans le cadre de contenu.
 
 ![Recouvrements](assets/ui-overlays.png)
 
@@ -138,28 +138,28 @@ Les incrustations résident dans le cadre d’éditeur (avec tous les autres él
 
 Un calque est un groupe indépendant de fonctionnalités pouvant être activées pour :
 
-* Fournir une vue différente de la page
-* Permet de manipuler et/ou d’interagir avec une page.
+* fournir une vue différente de la page ;
+* vous permettre de manipuler une page et/ou d’interagir avec celle-ci.
 
 Les calques fournissent des fonctionnalités sophistiquées pour toute la page, par opposition aux actions spécifiques sur un composant individuel.
 
-aem est fourni avec plusieurs calques déjà implémentés pour la création de pages ; par exemple, modifier, prévisualisation et annoter des calques.
+AEM s’accompagne de plusieurs calques qui sont déjà implémentés pour la création de pages. Il s’agit notamment des calques d’édition, de prévisualisation et d’annotation.
 
 >[!NOTE]
 >
 >Les calques constituent une puissante solution qui affecte la manière dont l’utilisateur affiche le contenu de la page et interagit avec celui-ci. Lorsque vous développez vos propres calques, vous devez veiller à ce qu’ils soient effacés lorsque vous les quittez.
 
-### Sélecteur de calques {#layer-switcher}
+### Sélecteur de calques  {#layer-switcher}
 
 Le sélecteur de calques vous permet de choisir le calque à utiliser. Lorsqu’il est fermé, il indique le calque en cours d’utilisation.
 
 Le sélecteur de calques se présente sous la forme d’un menu déroulant dans la barre d’outils (dans la partie supérieure de la fenêtre, à l’intérieur du cadre d’éditeur).
 
-![Commutateur de calque](assets/ui-layer-switcher.png)
+![Sélecteur de calques](assets/ui-layer-switcher.png)
 
 ### Barre d’outils des composants {#component-toolbar}
 
-Lorsque vous cliquez sur une instance d’un composant (simple clic ou double-clic lent), sa barre d’outils est affichée. La barre d’outils contient les actions spécifiques (par exemple, copier, coller, ouvrir l’éditeur) disponibles pour l’instance de composant sur la page.
+Lorsque vous cliquez sur une instance d’un composant (simple clic ou double-clic lent), sa barre d’outils est affichée. Cette barre d’outils contient les actions (par exemple, copier, coller, ouvrir l’éditeur) qui sont disponibles pour l’instance du composant sur la page.
 
 En fonction de l’espace disponible, les barres d’outils de composant sont placées dans le coin supérieur, ou inférieur, droit du composant approprié.
 
@@ -169,4 +169,4 @@ En fonction de l’espace disponible, les barres d’outils de composant sont pl
 
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
-Pour plus d’informations techniques, voir la documentation [JS définie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) pour l’éditeur de page.
+Pour plus d’informations techniques, voir la [documentation JS](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) relative à l’éditeur de page.
