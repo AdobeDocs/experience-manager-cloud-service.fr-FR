@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 7d3b5199333a60d69957819d874f8ce1bafdd797
 workflow-type: tm+mt
 source-wordcount: '857'
-ht-degree: 10%
+ht-degree: 15%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 10%
 Dans le cadre d’Adobe Marketing Cloud, Adobe Target vous permet d’améliorer la pertinence du contenu en effectuant un ciblage et des mesures sur tous les canaux. L&#39;intégration de l&#39;Adobe Target et de l&#39;AEM en tant que Cloud Service nécessite :
 
 * à l’aide de l’interface utilisateur tactile pour créer une configuration de Cible dans AEM en tant que Cloud Service (configuration IMS requise).
-* ajout et configuration d’Adobe Target en tant qu’extension dans [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
+* adding and configuring Adobe Target as an extension in [Adobe Launch](https://docs.adobe.com/content/help/fr-FR/launch/using/intro/get-started/quick-start.html).
 
 Le lancement d’Adobe est nécessaire pour gérer les propriétés côté client pour Analytics et la Cible dans les pages AEM (bibliothèques/balises JS). Ceci dit, l’intégration avec le lancement est nécessaire pour le &quot;ciblage d’expérience&quot;. Pour l’exportation des fragments d’expérience vers la Cible, vous n’avez besoin que de la configuration Adobe Target et IMS.
 
@@ -23,14 +23,14 @@ Le lancement d’Adobe est nécessaire pour gérer les propriétés côté clien
 >
 >Les clients Adobe Experience Manager as a Cloud Service qui ne disposent pas d’un compte Target existant peuvent demander l’accès au package Target Foundation pour Experience Cloud. Le package Foundation offre une utilisation limitée en volume de Target.
 
-## Création de la configuration Adobe Target {#create-configuration}
+## Creating the Adobe Target Configuration {#create-configuration}
 
-1. Navigate to **Tools** → **Cloud Services**.
+1. Accédez à **Outils** 	 **Cloud Services**.
    ![](assets/cloudservice1.png "NavigationNavigation")
 2. Sélectionnez **Adobe Target**.
-3. Select the **Create** button.
+3. Cliquez sur le bouton **Créer**.
    ![](assets/tenant1.png "CreateCreate")
-4. Renseignez les détails (voir ci-dessous), puis sélectionnez **Se connecter**.
+4. Fill in the details (see below), and select **Connect**.
    ![](assets/open_screen1.png "ConnectConnect")
 
 ### Configuration IMS
@@ -47,17 +47,17 @@ Pour modifier la configuration de la Cible, procédez comme suit :
    ![Re-](assets/edit_config_page1.png "connectRe-connect")
 4. Sélectionnez **Enregistrer et fermer**.
 
-### Ajouter une configuration à un site {#add-configuration}
+### Ajout d’une configuration à un site {#add-configuration}
 
-Pour appliquer une configuration d’interface utilisateur tactile à un site, accédez à : **Sites** → **Sélectionner n&#39;importe quelle page** du site → **Propriétés** → **Avancé** → Configuration → Sélectionner le client de configuration.****
+To apply a Touch UI configuration to a site, go to: **Sites** → **Select any site page** → **Properties** → **Advanced** → **Configuration** → Select the configuration tenant.
 
-## Intégration d’Adobe Target sur AEM sites à l’aide du lancement d’Adobe {#integrate-target-launch}
+## Integrating Adobe Target on AEM sites by using Adobe Launch {#integrate-target-launch}
 
-AEM offres et intégration immédiate avec l’Experience Platform Launch. En ajoutant l&#39;extension Adobe Target à l&#39;Experience Platform Launch, vous pouvez utiliser les fonctionnalités de Adobe Target sur AEM page Web.Les bibliothèques de Cible ne seront rendues qu&#39;à l&#39;aide de Launch.
+aem offres et intégration immédiate avec l’Experience Platform Launch. En ajoutant l&#39;extension Adobe Target à l&#39;Experience Platform Launch, vous pouvez utiliser les fonctionnalités de Adobe Target sur AEM page Web.Les bibliothèques de Cible ne seront rendues qu&#39;à l&#39;aide de Launch.
 
 >[!NOTE]
 >
->Les structures existantes (héritées) fonctionnent toujours, mais ne peuvent pas être configurées dans l’interface utilisateur tactile. Il est conseillé de recréer les configurations de mappage de variables dans Lancement.
+>Les frameworks existants (hérités) fonctionnent toujours, mais ne peuvent pas être configurés dans l’interface utilisateur tactile. Il est conseillé de recréer les configurations de mappage de variables dans Launch.
 
 En général, les étapes d’intégration sont les suivantes :
 
@@ -74,7 +74,7 @@ Une propriété est un conteneur qui sera rempli d’extensions, de règles et d
 1. Sélectionnez le bouton **Nouvelle propriété** .
 2. Attribuez un nom à votre propriété.
 3. Au fur et à mesure que le domaine entre l’adresse IP/l’hôte sur lequel vous souhaitez charger la bibliothèque de lancement.
-4. Sélectionnez le bouton **Enregistrer** .
+4. Select the **Save** button.
    ![](assets/properties_newproperty1.png "LaunchpropertyLaunchproperty")
 
 ### Ajouter les extensions requises {#add-extension}
@@ -85,7 +85,7 @@ Une propriété est un conteneur qui sera rempli d’extensions, de règles et d
 2. Sélectionnez **Adobe Target** at.js et cliquez sur l’option Installer.
    ![Cible Recherche](assets/search_ext1.png "SearchTarget")
 3. Select the **Configure** button. Notez la fenêtre de configuration avec les informations d’identification du compte de Cible importées et la version at.js de cette extension.
-4. Sélectionnez **Enregistrer** pour ajouter l’Extension de l&#39;cible à votre propriété Launch. Vous devriez être en mesure de voir l’Extension de l&#39;cible répertoriée sous la liste Extensions **** installées.
+4. Sélectionnez **Enregistrer** pour ajouter l’Extension de la cible à votre propriété Launch. Vous devriez être en mesure de voir l’Extension de la cible répertoriée sous la liste Extensions **** installées.
    ![Enregistrer](assets/configure_extension1.png "l&#39;extensionEnregistrer l&#39;extension")
 5. Répétez les étapes ci-dessus pour rechercher l’extension **Adobe ContextHub** et l’installer (ceci est nécessaire pour l’intégration avec les paramètres contextuels, en fonction desquels le ciblage sera effectué).
 
@@ -103,7 +103,7 @@ Une propriété est un conteneur qui sera rempli d’extensions, de règles et d
 
 En **règle** , nous définissons et ordonnons une séquence d’actions qui sera exécutée sur le site, pour atteindre le ciblage.
 
-1. Ajoutez un ensemble d’actions tel qu’illustré dans la capture d’écran.
+1. Ajoutez un ensemble d’actions comme illustré dans la capture d’écran.
    ![](assets/rules1.png "ActionsActions")
 2. Dans Ajouter les paramètres à toutes les mbox, ajoutez l’élément de données configuré précédemment (voir l’élément de données ci-dessus) au paramètre qui sera envoyé dans l’appel de mbox.
    ![](assets/map_data1.png "MboxActions")
