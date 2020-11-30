@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '1687'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -62,30 +62,30 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Heure d’activation**
 
-   * Date et heure auxquelles la page publiée sera rendue visible (rendue) sur l’environnement de publication. La page doit être publiée, soit manuellement, soit par réplication automatique préconfigurée.
+   * Date et heure auxquelles la page publiée sera rendue visible (rendue) dans l’environnement de publication. La page doit être publiée, soit manuellement, soit par réplication automatique préconfigurée.
 
       >[!NOTE]
       >
-      > Voir [Heures d’activation et de désactivation - Configuration](/help/operations/replication.md#on-and-off-times-trigger-configuration) du déclencheur pour en savoir plus sur la configuration de la réplication automatique associée.
+      > Voir [Heures d’activation et de désactivation - Configuration du déclenchement](/help/operations/replication.md#on-and-off-times-trigger-configuration) pour en savoir plus sur la configuration de la réplication automatique associée.
 
-      * Si elle a déjà été [publiée (manuellement)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) , cette page reste inactive (masquée) jusqu’au rendu au moment spécifié.
+      * Si elle a déjà été [publiée (manuellement)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md), cette page reste inactive (masquée) jusqu’à son rendu au moment spécifié.
       * Si elle n’est pas publiée et configurée pour la réplication automatique, la page est automatiquement publiée, puis rendue au moment spécifié.
-      * Si elle n’est pas publiée et n’est pas configurée pour la réplication automatique, la page ne sera pas publiée automatiquement. Un 404 sera donc affiché lorsqu’une tentative d’accès à la page est effectuée.
-   * Laissez ces champs (**Heure** de publication et Heure **de** désactivation) vides pour les pages que vous souhaitez publier immédiatement et qui sont disponibles sur l’environnement de publication jusqu’à ce qu’ils soient désactivés (scénario normal).
+      * Si elle n’est pas publiée et n’est pas configurée pour la réplication automatique, la page n’est pas publiée automatiquement. Un message 404 s’affiche donc lors d’une tentative d’accès à la page.
+   * Laissez ces champs (**Heure d’activation** et **Heure de désactivation**) vides pour les pages que vous souhaitez publier immédiatement et qui sont disponibles dans l’environnement de publication jusqu’à ce qu’elles soient désactivées (scénario normal).
 
 * **Heure de désactivation**
 
-   * Parallèlement à l’heure **** de publication, cette option définit l’heure à laquelle la page publiée sera masquée sur l’environnement de publication.
-   * Laissez ces champs (**Heure** de publication et Heure **de** désactivation) vides pour les pages que vous souhaitez publier immédiatement et qui sont disponibles sur l’environnement de publication jusqu’à ce qu’ils soient désactivés (scénario normal).
+   * Parallèlement à l’option **Heure d’activation**, cette option définit l’heure à laquelle la page publiée sera masquée dans l’environnement de publication.
+   * Laissez ces champs (**Heure d’activation** et **Heure de désactivation**) vides pour les pages que vous souhaitez publier immédiatement et qui sont disponibles dans l’environnement de publication jusqu’à ce qu’elles soient désactivées (scénario normal).
 
 * **URL Vanity**
 
    * Permet de saisir une URL Vanity pour cette page. Vous pouvez ainsi disposer d’une URL plus courte et/ou plus explicite.
-   * Par exemple, si l’URL de redirection est définie sur `welcome` sur la page identifiée par le chemin `/v1.0/startpage` pour le site web `http://example.com`, `http://example.com/welcome` sera l’URL de redirection de `http://example.com/content/v1.0/startpage`
+   * Par exemple, si l’URL Vanity est définie sur `welcome` sur la page identifiée par le chemin `/v1.0/startpage` pour le site web `http://example.com`, `http://example.com/welcome` sera l’URL Vanity de `http://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
-   >L’URL de redirection :
+   >L’URL Vanity :
    >
    >* doit être unique. Vous devez donc veiller à ce que la valeur ne soit pas déjà utilisée par une autre page.
    >* ne prend pas en charge les modèles d’expression régulière.
@@ -94,7 +94,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Rediriger l’URL Vanity**
 
-   * Indique si vous souhaitez que la page utilise l’URL de redirection.
+   * Indique si vous souhaitez que la page utilise l’URL Vanity.
 
 ### Avancé {#advanced}
 
@@ -180,7 +180,7 @@ Affiche l’image de la miniature de la page. Vous pouvez :
 
 * **Partage sur les réseaux sociaux**
 
-   Définit les options de partage disponibles sur la page. Affiche les options disponibles pour le [composant principal de partage](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/sharing.html).
+   Définit les options de partage disponibles sur la page. Affiche les options disponibles pour le [composant principal de partage](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/sharing.html).
 
    * **Activer le partage utilisateur pour Facebook**
    * **Activer le partage utilisateur pour Pinterest**
