@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
 source-wordcount: '1246'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -89,7 +89,7 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 
 1. Dans le rail de gauche, appuyez sur **[!UICONTROL Ressources]**, puis accédez au dossier auquel vous souhaitez appliquer un profil de métadonnées.
 1. Dans le dossier, appuyez ou cliquez sur la coche afin de la sélectionner, puis appuyez ou cliquez sur **Propriétés**.
-1. Select the **[!UICONTROL Metadata Profiles]** tab and select the profile from the drop-down menu and tap **[!UICONTROL Save]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
+1. Sélectionnez l’onglet **[!UICONTROL Profils de métadonnées]** et sélectionnez le profil dans le menu déroulant, puis appuyez sur **[!UICONTROL Enregistrer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
 ### Application d’un profil de métadonnées à l’ensemble des ressources {#applying-a-metadata-profile-globally}
 
@@ -101,7 +101,7 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 
 * Accédez à `https://<AEM server>/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` et appliquez le profil approprié, puis appuyez sur **Enregistrer**.
 
-* Accédez au nœud suivant de CRXDE Lite : `/content/dam/jcr:content`. Ajoutez la propriété `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` et appuyez sur **Tout enregistrer**.
+* Accédez au nœud suivant de CRXDE Lite : `/content/dam/jcr:content`. Ajoutez la propriété `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` et appuyez sur **Enregistrer tout**.
 
 ## Suppression d’un profil de métadonnées d’un dossier {#removing-a-metadata-profile-from-folders}
 
@@ -113,7 +113,7 @@ Vous pouvez supprimer un profil de métadonnées d’un dossier à partir du men
 
 1. Appuyez ou cliquez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**.
 1. Sélectionnez le profil de métadonnées à supprimer d’un ou de plusieurs dossiers.
-1. Appuyez sur **[!UICONTROL Supprimer le profil de métadonnées du ou des dossiers]** et sélectionnez ensuite le(s) dossier(s) duquel (desquels) vous souhaitez supprimer le profil. Ensuite, appuyez sur **[!UICONTROL Terminé]**.
+1. Appuyez sur **[!UICONTROL Supprimer le profil de métadonnées du ou des dossiers]**, puis sélectionnez le ou les dossiers desquels vous souhaitez supprimer le profil. Ensuite, appuyez sur **[!UICONTROL Terminé]**.
 
    Le fait que le nom du profil n’apparaît plus sous celui du dossier indique que le profil de métadonnées n’est plus appliqué à un dossier.
 
