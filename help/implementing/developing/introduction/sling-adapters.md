@@ -1,11 +1,11 @@
 ---
-title: 'Utilisation des adaptateurs Sling '
+title: Utilisation des adaptateurs Sling
 description: Sling propose un modèle Adaptateur permettant de convertir facilement les objets qui mettent en œuvre l’interface Adaptable
 translation-type: tm+mt
 source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
 workflow-type: tm+mt
 source-wordcount: '2234'
-ht-degree: 71%
+ht-degree: 72%
 
 ---
 
@@ -137,8 +137,8 @@ Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `ada
    <td>S’il s’agit d’une ressource basée sur un nœud JCR.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html">Page  </a></td>
-   <td>If this is a JCR-node-based resource and the node is a <code>cq:Page</code> (or <code>cq:PseudoPage</code>).</td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html">Page </a></td>
+   <td>S’il s’agit d’une ressource basée sur un nœud JCR et que le nœud est <code>cq:Page</code> (ou <code>cq:PseudoPage</code>).</td>
   </tr>
   <tr>
    <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/components/Component.html">Composant</a></td>
@@ -146,10 +146,10 @@ Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `ada
   </tr>  
   <tr>
    <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/designer/Design.html">Conception</a></td>
-   <td>S’il s’agit d’un noeud de conception (<code>cq:Page</code>).</td>
+   <td>S’il s’agit d’un nœud de conception (<code>cq:Page</code>).</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Template.html">Template (Modèle)</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Template.html">Template</a></td>
    <td>S’il s’agit d’une ressource de nœud <code>cq:Template</code>.</td>
   </tr>  
   <tr>
@@ -338,7 +338,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 |---|---|
 | [ReplicationStatus](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/ReplicationStatus.html) | Renvoie l’état de réplication pour le nœud racine utilisateur/groupe. |
 
-#### Gestion des actifs numériques {#dam}
+#### Gestion des ressources numériques {#dam}
 
 **Asset** s’adapte à :
 
