@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
 source-wordcount: '1357'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -81,7 +81,7 @@ Le projet  Venia Storefront est open source et pour plus de détails, consultez 
 
 ### Archétype de projet AEM {#aem-project-archtype}
 
-The [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) can be used to create a minimal, best-practices-based Adobe Experience Manager project as a starting point for your own AEM projects. Les composants [de base](https://github.com/adobe/aem-core-cif-components) AEM CIF peuvent éventuellement être inclus dans un nouveau projet généré.
+The [AEM Project Archetype](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html) can be used to create a minimal, best-practices-based Adobe Experience Manager project as a starting point for your own AEM projects. Les composants [de base](https://github.com/adobe/aem-core-cif-components) AEM CIF peuvent éventuellement être inclus dans un nouveau projet généré.
 
 ### Couche d&#39;extension CIF {#cif-extension}
 
