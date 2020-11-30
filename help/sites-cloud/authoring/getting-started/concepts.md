@@ -15,7 +15,7 @@ ht-degree: 100%
 Une installation AEM se compose généralement d’au moins deux environnements :
 
 * Création
-* Publication 
+* Publier
 
 Ces environnements interagissent afin que vous puissiez rendre le contenu disponible sur votre site web, pour que vos visiteurs puissent y accéder.
 
