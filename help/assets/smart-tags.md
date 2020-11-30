@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 80171c63e9f3ba9ace4fd948c7997f14a17ccddc
 workflow-type: tm+mt
 source-wordcount: '2432'
-ht-degree: 85%
+ht-degree: 86%
 
 ---
 
@@ -39,11 +39,11 @@ Les balises intelligentes ne s’appliquent qu’aux clients [!DNL Adobe Experie
 
 >[!IMPORTANT]
 >
->Les nouveaux [!DNL Experience Manager Assets] déploiements sont intégrés [!DNL Adobe Developer Console] par défaut. Il permet de configurer plus rapidement la fonctionnalité des balises actives. Dans les anciens déploiements, les administrateurs peuvent [configurer manuellement l’intégration](/help/assets/smart-tags-configuration.md#aio-integration)des balises actives.
+>Les nouveaux déploiements d’[!DNL Experience Manager Assets] sont intégrés avec [!DNL Adobe Developer Console] par défaut. Il est ainsi possible de configurer plus rapidement la fonctionnalité des balises intelligentes. On the older deployments, administrators can manually [configure smart tags integration](/help/assets/smart-tags-configuration.md#aio-integration).
 
-Vous pouvez intégrer [!DNL Adobe Experience Manager] les balises actives à l’aide [!DNL Adobe Developer Console]. Utilisez cette configuration pour accéder au service de balises intelligentes depuis [!DNL Experience Manager]. Voir [Configuration d’Experience Manager pour le balisage intelligent des ressources](smart-tags-configuration.md) pour les tâches de configuration des balises intelligentes. En arrière-plan, le serveur [!DNL Experience Manager] authentifie vos informations d’identification du service auprès de la passerelle Adobe Developer Console avant de transférer votre demande au service de balises intelligentes.
+Vous pouvez intégrer [!DNL Adobe Experience Manager] avec les balises intelligentes à l’aide d’[!DNL Adobe Developer Console]. Utilisez cette configuration pour accéder au service de balises intelligentes depuis [!DNL Experience Manager]. Voir [Configuration d’Experience Manager pour le balisage intelligent des ressources](smart-tags-configuration.md) pour les tâches de configuration des balises intelligentes. En arrière-plan, le serveur [!DNL Experience Manager] authentifie vos informations d’identification du service auprès de la passerelle Adobe Developer Console avant de transférer votre demande au service de balises intelligentes.
 
-## Comprendre les directives et les modèles relatifs aux balises {#understand-tag-models-guidelines}.
+## Comprendre les directives et les modèles relatifs aux balises {#understand-tag-models-guidelines}
 
 Un modèle de balise est formé d’un groupe de balises connexes associées à un aspect visuel de l’image. Par exemple, une collection de chaussures peut avoir des balises différentes. Cependant, toutes les balises sont liées à des chaussures et peuvent appartenir au même modèle. Les balises ne peuvent concerner que des aspects visuels des images incontestablement différents. Pour comprendre la représentation du contenu d’un modèle d’entraînement dans [!DNL Experience Manager], imaginez un modèle d’entraînement comme une entité de niveau supérieur, composée d’un groupe de balises ajoutées manuellement et d’exemples d’images pour chaque balise. Chaque balise s’applique exclusivement à une image.
 
@@ -84,12 +84,12 @@ Les images de votre corpus d’entraînement doivent respecter les instructions 
 
 **Exemples** : Voici d’autres exemples à titre de conseil :
 
-* Créez un modèle de balise contenant
-   * uniquement des balises relatives à des modèles de voitures.
-   * uniquement des balises relatives à des couleurs des chemises.
+* Créez un modèle de balise contenant :
+   * uniquement des balises relatives à des modèles de voitures ;
+   * uniquement des balises relatives à des couleurs des chemises ;
    * uniquement des balises relatives à des vestes pour femmes et hommes.
-* Ne créez pas
-   * un modèle de balise contenant des modèles de voitures commercialisés en 2019 et 2020.
+* Ne créez pas :
+   * un modèle de balise contenant des modèles de voitures commercialisés en 2019 et 2020 ;
    * plusieurs modèles de balises contenant ces mêmes modèles de voitures en nombre limité.
 
 **Images utilisées pour l’entraînement** : vous pouvez utiliser les mêmes images pour entraîner différents modèles de balises. Cependant, ces modèles n’associent pas une image à plusieurs balises dans un modèle donné. Il est donc possible de baliser la même image avec des balises différentes appartenant à différents modèles.
@@ -104,13 +104,13 @@ Pour créer et entraîner un modèle pour vos balises spécifiques à votre entr
 1. Dans l’interface utilisateur d’[!DNL Experience Manager], accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Entraînement des balises intelligentes]**.
 1. Cliquez sur **[!UICONTROL Créer]**. Indiquez un **[!UICONTROL titre]** et une **[!UICONTROL description]**.
 1. Recherchez et sélectionnez les balises existantes dans `cq:tags` pour entraîner le modèle. Cliquez sur **[!UICONTROL Suivant]**.
-1. Dans la boîte de dialogue **[!UICONTROL Sélectionner les ressources]**, cliquez sur **[!UICONTROL Ajouter les ressources]** pour chaque balise. Effectuez des recherches dans le référentiel de gestion des actifs numériques ou parcourez le référentiel pour sélectionner au moins 10, et au plus 50 images. Sélectionnez les ressources et non le dossier. Une fois les images sélectionnées, cliquez sur **[!UICONTROL Sélectionner]**.
+1. Dans la boîte de dialogue **[!UICONTROL Sélectionner les ressources]**, cliquez sur **[!UICONTROL Ajouter les ressources]** pour chaque balise. Effectuez des recherches dans le référentiel de gestion des ressources numériques ou parcourez le référentiel pour sélectionner au moins 10, et au plus 50 images. Sélectionnez les ressources et non le dossier. Une fois les images sélectionnées, cliquez sur **[!UICONTROL Sélectionner]**.
 1. Pour avoir un aperçu des miniatures des images sélectionnées, cliquez sur l’accordéon situé face à une balise. Vous pouvez modifier votre sélection en cliquant sur **[!UICONTROL Ajouter les ressources]**. Une fois la sélection effectuée, cliquez sur **[!UICONTROL Envoyer]**. L’interface utilisateur affiche une notification au bas de la page indiquant que l’entraînement est lancé.
 1. Vérifiez l’état de l’entraînement dans la colonne **[!UICONTROL État]** pour chaque modèle de balise. Les états possibles sont [!UICONTROL En Attente], [!UICONTROL Entraîné(s)] et [!UICONTROL Échec].
 
 ![Workflow d’entraînement du modèle de balisage pour le balisage intelligent](assets/smart-tag-model-training-flow.png)
 
-*Figure : Étapes du processus d’entraînement du modèle de balisage.*
+*Figure : Étapes du workflow d’entraînement du modèle de balisage.*
 
 ### Afficher l’état et le rapport d’entraînement {#training-status}
 
@@ -121,7 +121,7 @@ Pour vérifier que le service de balises intelligentes est entraîné sur vos ba
 1. Sélectionnez le rapport **[!UICONTROL Entraînement des balises intelligentes]**, puis cliquez sur **[!UICONTROL Suivant]** dans la barre d’outils.
 1. Indiquez un titre et une description pour le rapport. Sous **[!UICONTROL Planifier le rapport]**, laissez l’option **[!UICONTROL Maintenant]** sélectionnée. Si vous souhaitez planifier le rapport pour une date ultérieure, sélectionnez **[!UICONTROL Plus tard]** et spécifiez une date et une heure. Ensuite, cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
 1. Dans la page **[!UICONTROL Rapports de ressources]**, sélectionnez le rapport que vous avez généré. Pour afficher le rapport, cliquez sur **[!UICONTROL Afficher]** dans la barre d’outils.
-1. Passez en revue les détails du rapport. Le rapport affiche l’état d’identification des balises que vous avez entraînées. La couleur verte de la colonne **[!UICONTROL État de l’entraînement]** indique que le service de balises intelligentes est entraîné pour la balise. La couleur jaune indique que le service n’est pas complètement entraîné pour une balise particulière. Dans ce cas, ajoutez d’autres images avec la balise particulière et exécutez le processus d’entraînement pour l’entraînement complet du service sur la balise. Si vous ne voyez pas vos balises dans ce rapport, lancez à nouveau le workflow d’entraînement pour ces balises.
+1. Passez en revue les détails du rapport. Le rapport affiche l’état d’identification des balises que vous avez entraînées. La couleur verte de la colonne **[!UICONTROL État de l’entraînement]** indique que le service de balises intelligentes est entraîné pour la balise. La couleur jaune indique que le service n’est pas complètement entraîné pour une balise particulière. Dans ce cas, ajoutez d’autres images avec la balise particulière et exécutez le workflow d’entraînement pour l’entraînement complet du service sur la balise. Si vous ne voyez pas vos balises dans ce rapport, lancez à nouveau le workflow d’entraînement pour ces balises.
 1. Pour télécharger le rapport, sélectionnez-le dans la liste, puis cliquez sur **[!UICONTROL Télécharger]** dans la barre d’outils. Le rapport est téléchargé sous la forme d’une feuille de calcul Microsoft Excel.
 
 ## Balisage des ressources {#tag-assets}
@@ -151,7 +151,7 @@ Après avoir entraîné le service de balises intelligentes, vous pouvez déclen
    ![start_workflow](assets/start_workflow.png)
 
 1. Sélectionnez le workflow **[!UICONTROL Balisage intelligent des ressources (gestion des actifs numériques)]** et spécifiez un titre pour le workflow.
-1. Cliquez sur **[!UICONTROL Démarrer]**. Le workflow applique vos balises aux ressources. Accédez au dossier de ressources et passez en revue les balises pour vérifier que ces ressources sont correctement balisées. Pour plus d’informations, voir [Gestion des balises intelligentes](#manage-smart-tags-and-searches).
+1. Cliquez sur **[!UICONTROL Début]**. Le workflow applique vos balises aux ressources. Accédez au dossier de ressources et passez en revue les balises pour vérifier que ces ressources sont correctement balisées. Pour plus d’informations, voir [Gestion des balises intelligentes](#manage-smart-tags-and-searches).
 
 >[!NOTE]
 >
@@ -159,7 +159,7 @@ Après avoir entraîné le service de balises intelligentes, vous pouvez déclen
 
 ### Balisage des ressources chargées {#tag-uploaded-assets}
 
-Experience Manager peut automatiquement baliser les ressources que les utilisateurs chargent dans le système de gestion des actifs numériques. Pour ce faire, les administrateurs configurent un workflow pour ajouter une étape disponible pour le balisage intelligent des ressources. Voir [Comment activer le balisage intelligent pour les ressources chargées](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
+Experience Manager peut automatiquement baliser les ressources que les utilisateurs chargent dans le système de gestion des ressources numériques. Pour ce faire, les administrateurs configurent un workflow pour ajouter une étape disponible pour le balisage intelligent des ressources. Voir [Comment activer le balisage intelligent pour les ressources chargées](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 
 ## Manage smart tags and asset searches {#manage-smart-tags-and-searches}
 
@@ -185,11 +185,11 @@ Pour modérer les balises actives de vos ressources :
 
 1. Navigate to the [!UICONTROL Properties] page for the asset. Remarquez que la balise que vous avez convertie se voit attribuer une pertinence élevée et apparaît donc plus haut dans les résultats de la recherche.
 
-### Comprendre les résultats de recherche AEM avec des balises dynamiques  {#understandsearch}
+### Comprendre les résultats de recherche AEM avec des balises dynamiques {#understandsearch}
 
-Par défaut, la recherche AEM associe les termes de recherche avec une clause `AND`. L’utilisation de balises intelligentes ne modifie pas ce comportement par défaut. Elle ajoute une clause `OR` supplémentaire pour trouver l’un des termes de recherche dans les balises intelligentes. Par exemple, pour la recherche de `woman running`. Les ressources avec les mots-clés `woman` ou `running` uniquement dans les métadonnées n’apparaissent pas dans les résultats de recherche par défaut. Toutefois, une ressource balisée avec `woman` ou `running` à l’aide de balises intelligentes apparaît dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de
+Par défaut, la recherche AEM associe les termes de recherche avec une clause `AND`. L’utilisation de balises intelligentes ne modifie pas ce comportement par défaut. Elle ajoute une clause `OR` supplémentaire pour trouver l’un des termes de recherche dans les balises intelligentes. Par exemple, pour la recherche de `woman running`. Les ressources avec les mots-clés `woman` ou `running` uniquement dans les métadonnées n’apparaissent pas dans les résultats de recherche par défaut. Toutefois, une ressource balisée avec `woman` ou `running` à l’aide de balises intelligentes apparaît dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de :
 
-* ressources avec les mots-clés `woman` et `running` dans les métadonnées.
+* ressources avec les mots-clés `woman` et `running` dans les métadonnées ;
 
 * ressources avec balise dynamique avec l’un des mots-clés.
 
