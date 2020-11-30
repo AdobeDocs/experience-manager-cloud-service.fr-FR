@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 2934d0d8d3977bb7884bae9654ac26e9fa57b34f
 workflow-type: tm+mt
 source-wordcount: '623'
-ht-degree: 12%
+ht-degree: 14%
 
 ---
 
@@ -30,7 +30,7 @@ Vous trouverez ci-dessous les différents modèles de déploiement de Commerce I
 |  | aem sur site | aem Managed Services | cloud service AEM |
 |-------------     |-----------|-----------|-----------|
 | Comment déployer les outils de création CIF pour le serveur principal Magento | [Reportez-vous à CIF Connector](https://github.com/adobe/commerce-cif-connector/blob/master/README.md) pris en charge sur AEM 6.5. | [Reportez-vous à CIF Connector](https://github.com/adobe/commerce-cif-connector/blob/master/README.md) pris en charge sur AEM 6.5. | aem en tant que Cloud Service doit être configuré avec un module complémentaire CIF. Contactez votre représentant commercial pour plus de détails. |
-| Comment déployer [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) | Installation AEM package | Déploiement effectué via [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) | Projet déplacé dans le référentiel [Git de](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) Cloud Manager et déploiement effectué via [Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/deploying/overview.html) |
+| Comment déployer [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) | Installation AEM package | Déploiement effectué via [Cloud Manager](https://docs.adobe.com/content/help/fr/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) | Projet déplacé dans le référentiel [Git de](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) Cloud Manager et déploiement effectué via [Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/deploying/overview.html) |
 
 >[!NOTE]
 >
