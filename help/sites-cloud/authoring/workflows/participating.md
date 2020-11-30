@@ -39,6 +39,7 @@ Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**),
    * Le nombre de workflows auxquels la page est soumise. Vous pouvez :
       * utiliser les flèches gauche/droite pour parcourir les informations d’état des différents workflows.
       * cliquer/appuyer sur le nombre pour ouvrir la liste déroulante de tous les workflows applicables, puis sélectionner le workflow que vous souhaitez afficher dans la barre d’état.
+
    ![Page avec plusieurs workflows](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
    >[!NOTE]
