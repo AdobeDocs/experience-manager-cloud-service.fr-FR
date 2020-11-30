@@ -29,7 +29,7 @@ L’assistant **Créer une exportation CSV** vous permet de sélectionner les é
       * Nom
       * Modifié
       * Publié
-      * Template (Modèle)
+      * Template
       * Workflow
    * Traduction
       * Traduit
