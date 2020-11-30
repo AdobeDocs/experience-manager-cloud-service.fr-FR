@@ -1,6 +1,6 @@
 ---
 title: Visionneuses à 360°
-description: Découvrez comment utiliser des visionneuses à 360° dans Dynamic Media.
+description: Découvrez comment utiliser des visionneuses à 360° dans Dynamic Media
 translation-type: tm+mt
 source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
 workflow-type: tm+mt
@@ -24,7 +24,7 @@ Les visionneuses à 360° sont désignées par une bannière contenant le mot **
 >
 >Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources avec l’interface utilisateur tactile](/help/assets/manage-digital-assets.md).
 
-## Démarrage rapide : Visionneuse à 360°   {#quick-start-spin-sets}
+## Démarrage rapide : Visionneuse à 360°  {#quick-start-spin-sets}
 
 Pour démarrer rapidement, procédez comme suit :
 
@@ -78,7 +78,7 @@ Vous pouvez charger des images pour les visionneuses à 360° comme vous le [fer
 
 ### Instructions relatives à la capture d’images pour la visionneuse à 360° {#guidelines-for-shooting-spin-set-images}
 
-Vous trouverez ci-dessous des pratiques recommandées relatives aux images de la visionneuse à 360°. En général, plus vous avez d’images dans la visionneuse à 360°, plus l’effet de rotation est réussi. Néanmoins, l’inclusion de nombreuses images dans la visionneuse augmente également la durée de chargement de ces dernières. AEM recommande de suivre les instructions suivantes pour les prises de vue à utiliser dans les visionneuses à 360° :
+Vous trouverez ci-dessous des bonnes pratiques relatives aux images de la visionneuse à 360°. En général, plus vous avez d’images dans la visionneuse à 360°, plus l’effet de rotation est réussi. Néanmoins, l’inclusion de nombreuses images dans la visionneuse augmente également la durée de chargement de ces dernières. AEM recommande de suivre les instructions suivantes pour les prises de vue à utiliser dans les visionneuses à 360° :
 
 * Au minimum, utilisez 8 à 12 images dans une visionneuse à 360° unidimensionnelle et 16 à 24 images dans une visionneuse à 360° bidimensionnelle. 8 images au minimum sont nécessaires pour effectuer une rotation de 360 degrés. Les visionneuses à 360° unidimensionnelles sont plus courantes que les visionneuses à 360° bidimensionnelles, car la création de ces dernières demande beaucoup de travail.
 * Utilisez un format d’image sans perte (formats TIFF et PNG recommandés).
@@ -86,7 +86,7 @@ Vous trouverez ci-dessous des pratiques recommandées relatives aux images de la
 * Assurez-vous que les détails du produit sont bien éclairés et que leur mise au point est nette.
 * Utilisez un mannequin ou un modèle pour la prise de vue d’articles de mode. Souvent, le mannequin est complètement masqué (en utilisant un mannequin transparent) ou bien un mannequin stylisé est présenté dans l’image. Vous pouvez créer une visionneuse à 360° « sur modèle » en définissant le nombre d’angles. Marquez chaque angle avec du ruban adhésif sur le sol afin de guider le modèle à regarder dans la direction de chaque prise de vue.
 
-## Création d’une visionneuse à 360°   {#creating-spin-sets}
+## Création d’une visionneuse à 360°  {#creating-spin-sets}
 
 Cette section décrit comment créer des visionneuses à 360°.
 
@@ -137,13 +137,13 @@ Cette section décrit comment créer des visionneuses à 360°.
 
 1. (En option) Effectuez l’une des actions suivantes :
 
-   * Pour supprimer une image, sélectionnez-la et appuyez sur **[!UICONTROL Supprimer la ressource]**.
+   * Pour supprimer une image, sélectionnez-la et appuyez sur **[!UICONTROL Supprimer l’élément]**.
 
    * Pour appliquer un paramètre prédéfini, en haut à droite de la page, appuyez sur **[!UICONTROL Paramètre prédéfini]**, puis sélectionnez un paramètre prédéfini à appliquer en une seule fois à toutes les ressources.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**. La visionneuse à 360° nouvellement créée apparaît dans le dossier dans lequel vous l’avez créée.
 
-## Affichage de visionneuses à 360°   {#viewing-spin-sets}
+## Affichage de visionneuses à 360°  {#viewing-spin-sets}
 
 Vous pouvez créer des visionneuses à 360° dans l’interface utilisateur ou automatiquement à l’aide des [paramètres prédéfinis d’ensemble par lot](/help/assets/dynamic-media/config-dm.md). (Notez toutefois que les visionneuses créées à l’aide de paramètres prédéfinis d’ensemble par lot *ne s’affichent pas* dans l’interface utilisateur.) Vous pouvez accéder aux visionneuses créées au moyen de paramètres prédéfinis d’ensemble par lot de trois manières différentes. (Ces méthodes sont disponibles même si vous avez créé les visionneuses à 360° dans l’interface utilisateur.)
 
@@ -161,7 +161,7 @@ Vous pouvez créer des visionneuses à 360° dans l’interface utilisateur ou 
 
    ![chlimage_1-157](assets/chlimage_1-385.png)
 
-1. À partir de la recherche, vous pouvez **[!UICONTROL sélectionner des filtres]**, développer **[!UICONTROL Dynamic Media]** et **[!UICONTROL sélectionner des jeux]**.
+1. À partir de la recherche, vous pouvez **[!UICONTROL sélectionner des filtres]**, développer **[!UICONTROL Dynamic Media]** et sélectionner des **[!UICONTROL visionneuses]**.
 
    La recherche renvoie les visionneuses correspondantes qui ont soit été créées manuellement dans l’interface utilisateur, soit automatiquement au moyen de paramètres prédéfinis d’ensemble par lot. Dans le cas des visionneuses automatisées, la requête de recherche est effectuée à l’aide du critère `Starts with`, à la différence de la recherche AEM qui repose sur l’utilisation du critère `Contains`. La définition du filtre sur **[!UICONTROL Visionneuses]** constitue la seule méthode de recherche dans des visionneuses automatisées.
 
@@ -194,7 +194,7 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses à 3
 Si vous supprimez l’image qu’AEM utilise pour la miniature en la remplaçant par une autre image, la ressource d’origine s’affiche toujours.
    * Pour supprimer une ressource, sélectionnez-la et cliquez ou appuyez sur **[!UICONTROL Supprimer la ressource]**.
    * Pour appliquer un paramètre prédéfini, appuyez ou cliquez sur l’icône Paramètre prédéfini et sélectionnez-en un.
-   * Pour supprimer une visionneuse à 360°, accédez à cette dernière, sélectionnez-la, puis choisissez **[!UICONTROL Supprimer]**
+   * Pour supprimer une visionneuse à 360°, accédez à cette dernière, sélectionnez-la, puis choisissez **[!UICONTROL Supprimer]**.
 
    >[!NOTE]
    >
@@ -202,10 +202,10 @@ Si vous supprimez l’image qu’AEM utilise pour la miniature en la remplaçant
 
 1. Lorsque vous avez terminé les modifications, cliquez sur **[!UICONTROL Enregistrer]**.
 
-## Aperçu d’une visionneuse à 360°   {#previewing-spin-sets}
+## Aperçu d’une visionneuse à 360°  {#previewing-spin-sets}
 
 Voir aussi [Aperçu des ressources](/help/assets/dynamic-media/previewing-assets.md).
 
-## Publication d’une visionneuse à 360°   {#publishing-spin-sets}
+## Publication d’une visionneuse à 360°  {#publishing-spin-sets}
 
 Voir [Publication de ressources](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
