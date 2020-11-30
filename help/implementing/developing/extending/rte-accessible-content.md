@@ -2,9 +2,9 @@
 title: Configurez l’éditeur de texte enrichi pour créer des pages web et des sites accessibles.
 description: Découvrez comment configurer l’éditeur de texte enrichi pour créer des sites accessibles dans [!DNL Adobe Experience Manager].
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 96c59974a868779df6979818bea0d942060cf5bc
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 100%
 
