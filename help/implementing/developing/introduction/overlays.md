@@ -1,9 +1,9 @@
 ---
 title: Recouvrements pour Adobe Experience Manager as a Cloud Service
 description: AEM as a Cloud Service applique le principe des recouvrements pour vous permettre d’étendre et de personnaliser les consoles et d’autres fonctionnalités.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ Il est conseillé de recourir aux recouvrements pour de nombreuses modifications
 Overlays are the recommended method for many changes, such as [configuring your consoles](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) or [creating your selection category to the asset browser in the side panel](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (used when authoring pages). They are required as:
 -->
 
-* Vous ***ne devez pas *effectuer de modifications dans la`/libs`branche **Les modifications que vous effectuez risquent d’être perdues, car cette branche fait l’objet de modifications chaque fois que des mises à niveau sont appliquées à votre instance.
+* Vous ***ne devez pas* effectuer de modifications dans la `/libs`branche **Les modifications que vous effectuez risquent d’être perdues, car cette branche fait l’objet de modifications chaque fois que des mises à niveau sont appliquées à votre instance.
 
 * Elles centralisent vos modifications dans un seul emplacement ; cela facilite le suivi, la migration, la sauvegarde et/ou le débogage de vos modifications, suivant les besoins.
 
