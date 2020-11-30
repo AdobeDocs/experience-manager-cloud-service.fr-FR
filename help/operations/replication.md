@@ -5,56 +5,56 @@ translation-type: tm+mt
 source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
 workflow-type: tm+mt
 source-wordcount: '303'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
 # Réplication {#replication}
 
-Adobe Experience Manager en tant que Cloud Service utilise la fonctionnalité de distribution [de contenu](https://sling.apache.org/documentation/bundles/content-distribution.html) Sling pour déplacer le contenu à répliquer vers un service de pipeline s’exécutant sur des E/S d’Adobe en dehors de l’exécution AEM.
+Adobe Experience Manager as a Cloud Service utilise la fonctionnalité de [distribution de contenu Sling](https://sling.apache.org/documentation/bundles/content-distribution.html) pour déplacer le contenu à répliquer vers un service de pipeline s’exécutant sur Adobe I/O, en dehors d’AEM.
 
 >[!NOTE]
 >
->Consultez [Distribution](/help/core-concepts/architecture.md#content-distribution) pour en savoir plus.
+>Pour en savoir plus, consultez [Distribution](/help/core-concepts/architecture.md#content-distribution).
 
 ## Méthodes de publication de contenu {#methods-of-publishing-content}
 
-### Désactivation/publication rapide - Annulation/publication planifiée {#publish-unpublish}
+### Publication/annulation de publication rapide – Publication/annulation de publication planifiée {#publish-unpublish}
 
-Ces fonctionnalités AEM standard pour les auteurs ne changent pas avec AEM Cloud Service.
+Ces fonctionnalités standard d’AEM pour les auteurs sont inchangées avec AEM Cloud Service.
 
-### Heures d’activation et de désactivation - Configuration du déclenchement {#on-and-off-times-trigger-configuration}
+### Heures d’activation et de désactivation – Configuration du déclenchement {#on-and-off-times-trigger-configuration}
 
-Les autres possibilités de **l&#39;Heure** d&#39;ouverture et de l&#39;Heure **de** fermeture sont disponibles dans l&#39;onglet [Réglages de base des Propriétés](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)de la page.
+Les autres possibilités d’**Heure d’activation** et d’**Heure de désactivation** sont disponibles dans l’[onglet De base des Propriétés de la page](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic).
 
-Pour réaliser la réplication automatique pour cela, vous devez activer la réplication **** automatique dans la configuration [](/help/implementing/deploying/configuring-osgi.md) OSGi **On Off Trigger Configuration**:
+Pour réaliser la réplication automatique dans ce cas, vous devez activer **Auto Replicate** (Réplication automatique) dans **On Off Trigger Configuration** (Configuration d’activation et de désactivation du déclenchement) de la [configuration OSGi](/help/implementing/deploying/configuring-osgi.md) :
 
-![Configuration OSGi On Off Trigger](/help/operations/assets/replication-on-off-trigger.png)
+![Configuration OSGi d’activation et de désactivation du déclenchement](/help/operations/assets/replication-on-off-trigger.png)
 
 ### Activation d’une arborescence {#tree-activation}
 
-Pour exécuter une activation d&#39;arborescence :
+Pour exécuter une activation d’arborescence :
 
-1. Dans le menu Début AEM, accédez à **Outils > Déploiement > Distribution**
-2. Sélectionner la carte **forwardPublisher**
-3. Une fois dans l’interface utilisateur de la console Web forwardPublisher, **sélectionnez Répartir**
+1. Dans le menu Accueil AEM, accédez à **Outils > Déploiement > Distribution**.
+2. Sélectionnez la carte **forwardPublisher**.
+3. Une fois dans l’interface utilisateur de la console web forwardPublisher, sélectionnez **Distribute** (Distribuer).
 
-   ![](assets/distribute.png "DistributeDistribute")
-4. Sélectionnez le chemin d’accès dans le navigateur de chemins d’accès, ajoutez un noeud, une arborescence ou supprimez-le selon les besoins, puis sélectionnez **Envoyer.**
+   ![Distribuer](assets/distribute.png "Distribuer")
+4. Sélectionnez le chemin dans l’explorateur de chemins d’accès, choisissez d’ajouter un nœud, une arborescence ou supprimez-les, si nécessaire, puis sélectionnez **Submit** (Envoyer).
 
-## Résolution des incidents {#troubleshooting}
+## Dépannage {#troubleshooting}
 
-Pour résoudre les problèmes de réplication, accédez aux files d’attente de réplication dans l’interface Web du service d’auteur AEM :
+Pour résoudre les problèmes de réplication, accédez aux files d’attente de réplication dans l’interface utilisateur web du service d’auteur AEM :
 
-1. Dans le menu Début AEM, accédez à **Outils > Déploiement > Distribution**
-2. Sélectionner la carte **forwardPublisher**
-   ![](assets/status.png "StatusStatus")
-3. Vérifier l&#39;état de la file d&#39;attente qui doit être verte
+1. Dans le menu Accueil AEM, accédez à **Outils > Déploiement > Distribution**.
+2. Sélectionnez la carte **forwardPublisher**.
+   ![État](assets/status.png "État")
+3. Vérifiez l’état de la file d’attente qui doit être de couleur verte.
 4. Vous pouvez tester la connexion au service de réplication.
-5. Sélectionnez l&#39;onglet **Journaux** qui affiche l&#39;historique des publications de contenu
+5. Sélectionnez l’onglet **Logs** (Journaux) qui affiche l’historique des publications de contenu.
 
-![](assets/logs.png "JournauxJournaux")
+![Journaux](assets/logs.png "Journaux")
 
-Si le contenu n’a pas pu être publié, l’intégralité de la publication est restaurée à partir du service de publication AEM.
-Dans ce cas, les files d&#39;attente doivent être examinées afin d&#39;identifier les éléments qui ont provoqué l&#39;annulation de la publication. En cliquant sur une file d&#39;attente présentant un état rouge, la file d&#39;attente avec des éléments en attente s&#39;affiche, à partir de laquelle un ou tous les éléments peuvent être effacés si nécessaire.
+S’il n’a pas été possible de publier le contenu, l’intégralité de la publication est restaurée à partir du service de publication AEM.
+Dans ce cas, les files d’attente doivent être examinées afin d’identifier les éléments qui ont provoqué l’annulation de la publication. Suite à un clic sur une file d’attente signalée par un état rouge, celle contenant des éléments en attente s’affiche. Il est possible d’y effacer un ou tous les éléments, si nécessaire.
