@@ -21,11 +21,11 @@ Pour plus d&#39;informations sur les tâches de maintenance, consultez les pages
 
 ## Configuration des tâches de maintenance
 
-Dans les versions précédentes d’AEM, vous pouvez configurer les tâches de maintenance à l’aide de la carte de maintenance (Outils > Opérations > Maintenance). Pour AEM en tant que Cloud Service, la carte de maintenance n’est plus disponible. Les configurations doivent donc être validées pour le contrôle de code source et déployées à l’aide de Cloud Manager. adobe va gérer les tâches de maintenance qui n&#39;exigent pas de décisions client (par exemple, la collecte de déchets de la banque de données) alors que d&#39;autres tâches de maintenance peuvent être configurées par le client (voir le tableau ci-dessous).
+Dans les versions précédentes d’AEM, vous pouvez configurer les tâches de maintenance à l’aide de la carte de maintenance (Outils > Opérations > Maintenance). Pour AEM en tant que Cloud Service, la carte de maintenance n’est plus disponible. Les configurations doivent donc être validées pour le contrôle de code source et déployées à l’aide de Cloud Manager. Adobe va gérer les tâches de maintenance qui n&#39;exigent pas de décisions client (par exemple, la collecte de déchets de la banque de données) alors que d&#39;autres tâches de maintenance peuvent être configurées par le client (voir le tableau ci-dessous).
 
 >[!CAUTION]
 >
->adobe se réserve le droit de remplacer les paramètres de configuration de la tâche de maintenance d&#39;un client afin d&#39;atténuer des problèmes tels que la dégradation des performances.
+>Adobe se réserve le droit de remplacer les paramètres de configuration de la tâche de maintenance d&#39;un client afin d&#39;atténuer des problèmes tels que la dégradation des performances.
 
 Le tableau suivant illustre les tâches de maintenance disponibles au moment de la publication de l&#39;AEM en tant que Cloud Service.
 
