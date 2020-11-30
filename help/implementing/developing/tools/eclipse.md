@@ -54,7 +54,7 @@ Once you have fulfilled the [requirements](#requirements) above, you can install
 1. Dans **Location** (Emplacement), copiez l’URL d’installation.
 1. Cliquez sur **Ajouter**.
 1. Cochez les deux modules externes **AEM** et **Sling**.
-1. Cliquez sur **Suivant**.
+1. Cliquez sur **Next** (Suivant).
 1. Dans la fenêtre Détails **de l’** installation, cliquez à nouveau sur **Suivant** .
 1. Accept the license agreements and click **Finish**.
 1. Click **RestartNow** in order to restart Eclipse.
@@ -80,7 +80,7 @@ Suivez les étapes ci-après pour créer l’exemple de projet :
 
    ![aem exemple de projet à modules multiples](assets/aem-sample-project.png)
 
-1. Cliquez sur **Suivant**.
+1. Cliquez sur **Next** (Suivant).
 
    >[!NOTE]
    >
@@ -101,7 +101,7 @@ Suivez les étapes ci-après pour créer l’exemple de projet :
 
    ![Définition des propriétés d&#39;archétype](assets/archetype-properties.png)
 
-1. Cliquez sur **Suivant**.
+1. Cliquez sur **Next** (Suivant).
 
 1. Vous configurez ensuite un serveur AEM auquel Eclipse va se connecter.
 
@@ -199,7 +199,7 @@ Si vous souhaitez recréer un package à partir de votre projet, cliquez avec le
 
 Vous disposez désormais d’un dossier de cible créé avec votre pack (appelé par ex. `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
-## Résolution des incidents {#troubleshooting}
+## Dépannage {#troubleshooting}
 
 ### Résolution d’une définition de projet non valide {#resolving-invalid-project-definition}
 
