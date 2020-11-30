@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '286'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ En règle générale, la barre d’outils propose les options suivantes :
 
 Pour les composants basés sur du texte, cliquez sur le bouton ![Mode plein écran de l’éditeur de texte enrichi](/help/sites-cloud/authoring/assets/editing-full-screen.png) de la [barre d’outils](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) pour ouvrir l’éditeur de texte enrichi et masquer le reste du contenu de la page.
 
-Le mode Plein écran affiche toutes les options configurées que vous pouvez utiliser pour la création. The availability of options [depends on the configuration](/help/implementing/developing/extending/rich-text-editor.md).
+Le mode Plein écran affiche toutes les options configurées que vous pouvez utiliser pour la création. La disponibilité des options [dépend de la configuration](/help/implementing/developing/extending/rich-text-editor.md).
 
 ![Éditeur de texte enrichi en mode plein écran](/help/sites-cloud/authoring/assets/rte-full-screen.png)
 
