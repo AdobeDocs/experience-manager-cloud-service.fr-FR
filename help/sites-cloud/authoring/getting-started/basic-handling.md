@@ -187,7 +187,7 @@ Plusieurs ressources d’aide sont disponibles :
 
    Parcourez cet aperçu comme vous le feriez avec l’[aperçu de navigation du produit](#product-navigation) la première fois que vous accédez à une console.
 
-   Dans le menu [**Informations sur la page **, sélectionnez l’option** Aide **](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help)pour afficher de nouveau cette présentation à tout moment.
+   Dans le menu [**Informations sur la page**, sélectionnez l’option **Aide**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help) pour afficher de nouveau cette présentation à tout moment.
 
 * **Console Outils**
 
