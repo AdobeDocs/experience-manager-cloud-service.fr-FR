@@ -1,9 +1,9 @@
 ---
 title: Intégration de la visionneuse de vidéos ou d’images Dynamic Media dans une page web
 description: Découvrez comment intégrer des images ou des vidéos Dynamic Media dans une page web
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 100%
 
@@ -52,4 +52,4 @@ Consultez aussi [Diffusion d’images optimisées pour un site réactif.](respon
 
 HTTP/2 est le nouveau protocole web qui améliore la manière dont les serveurs et les navigateurs communiquent. Il permet un transfert rapide d’informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media peuvent désormais être diffusées sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
 
-Voir [Diffusion du contenu sur HTTP/2](http2faq.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.
+Voir [Diffusion du contenu sur HTTP2](http2faq.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.
