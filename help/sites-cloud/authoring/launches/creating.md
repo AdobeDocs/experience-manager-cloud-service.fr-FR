@@ -81,8 +81,8 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
 
    Si vous revenez à la console (en cliquant sur **Terminé**) vous pouvez afficher (et accéder à) votre lancement à partir de :
 
-   * la [**console Lancements **](/help/sites-cloud/authoring/launches/overview.md#the-launches-console) ;
-   * les [**références **de la** console Sites **](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console).
+   * la [**console Lancements**](/help/sites-cloud/authoring/launches/overview.md#the-launches-console) ;
+   * les [**références** de la **console Sites**](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console).
 
 ### Création d’un lancement avec un nouveau modèle {#create-launch-with-new-template}
 
