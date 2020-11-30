@@ -1,16 +1,16 @@
 ---
-title: aem Commerce en tant que Cloud Service
+title: AEM Commerce as a Cloud Service
 description: aem Commerce en tant que Cloud Service ressources d'aide autonome et liens vers la documentation
 translation-type: tm+mt
 source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 82%
+ht-degree: 88%
 
 ---
 
 
-# aem Commerce en tant que Cloud Service {#commerce-guide}
+# AEM Commerce as a Cloud Service {#commerce-guide}
 
 Cette page liste les ressources d&#39;aide autonome concernant AEM Commerce en tant que Cloud Service.
 
@@ -41,8 +41,8 @@ Cette page liste les ressources d&#39;aide autonome concernant AEM Commerce en t
 * [Documentation Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentation HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Documentation sur les composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
-* [Documentation Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Documentation Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Tutoriels sur Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Tutoriels sur Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/fr/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Forum de la communauté AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
