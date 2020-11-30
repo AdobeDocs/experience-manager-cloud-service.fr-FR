@@ -40,7 +40,7 @@ Pour plus d’informations, consultez Modification du contenu d’une Live Copy
 Pour suivre les modifications que vous avez apportées, vous pouvez afficher le lancement dans **Références** et comparer la page de lancement à sa page source :
 
 1. Dans la console **Sites**, [accédez à la page source de votre lancement et sélectionnez-la](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Ouvrez le panneau **[Références](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**et sélectionnez **Lancements**.
+1. Ouvrez le panneau **[Références](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** et sélectionnez **Lancements**.
 1. Sélectionnez votre lancement spécifique, puis **Comparer à la source** :
 
    ![Comparaison du lancement à la source](/help/sites-cloud/authoring/assets/launches-compare.png)
