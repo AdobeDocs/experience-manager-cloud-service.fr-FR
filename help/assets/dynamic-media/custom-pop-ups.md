@@ -1,9 +1,9 @@
 ---
 title: Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées
 description: L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 100%
 
