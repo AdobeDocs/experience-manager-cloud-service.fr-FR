@@ -1,9 +1,9 @@
 ---
 title: Gestion des activités
 description: 'La console Activités vous permet de créer, d’organiser et de gérer les activités marketing de vos marques :'
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: dba848cb8d7bc42f37fb64131150c136e07dd24e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2002'
 ht-degree: 100%
 
@@ -39,11 +39,12 @@ Les activités sont présentées avec un libellé décrivant le type d’activit
 >Les types d’activités disponibles sont déterminés par ce qui suit :
 >
 >* Si l’option `xt_only` est activée sur le client Adobe Target (clientcode) utilisé sur AEM pour se connecter à Adobe Target, vous pouvez créer **uniquement** des activités XT dans AEM.
+   >
+   >
+* Si les options `xt_only` **ne sont pas** activées sur le client Adobe Target (clientcode), vous pouvez créer **à la fois** des activités XT et A/B dans AEM.
 >
->* Si les options `xt_only` **ne sont pas** activées sur le client Adobe Target (clientcode), vous pouvez créer **à la fois** des activités XT et A/B dans AEM.
 >
->
->**Remarque :** L’option `xt_only` est un paramètre appliqué à un certain client Adobe Target (clientcode) et peut uniquement être modifiée directement dans Adobe Target. Vous ne pouvez pas activer ni désactiver cette option dans AEM.
+**Remarque :** L’option `xt_only` est un paramètre appliqué à un certain client Adobe Target (clientcode) et peut uniquement être modifiée directement dans Adobe Target. Vous ne pouvez pas activer ni désactiver cette option dans AEM.
 
 >[!CAUTION]
 >
@@ -165,6 +166,7 @@ Pour afficher les performances des activités et convertir les expériences gagn
 
    * Elle désactive l’activité en cours.
    * Elle modifie toutes les pages et remplace le contenu ciblé par le contenu de l’expérience gagnante. Le contenu de l’expérience gagnante devient une partie de la page normale **sans** ciblage.
+
    ![Conversion de l’expérience gagnante](/help/sites-cloud/authoring/assets/activities-reports.png)
 
    L’expérience gagnante est celle qui génère la meilleure progression dans les rapports, en fonction des taux de conversion.
