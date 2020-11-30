@@ -85,7 +85,7 @@ Pour créer un profil de traitement standard, procédez comme suit :
 
    ![processing-profiles-adding](assets/processing-profiles-image.png)
 
-1. Cliquez sur **[!UICONTROL Save]**.
+1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
 <!-- TBD: Update the video link when a new video is available from Tech Marketing.
 
@@ -108,7 +108,7 @@ Il [!DNL Asset Compute Service] prend en charge divers cas d’utilisation, tels
 
 Il permet d’obtenir différents rendus à partir des images, des vidéos, des documents et d’autres formats de fichiers, notamment sous forme de miniatures, de texte extrait, de métadonnées et d’archives.
 
-Les développeurs peuvent utiliser le [!DNL Asset Compute Service] pour [créer des applications](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) personnalisées qui répondent aux cas d’utilisation pris en charge. [!DNL Experience Manager] Vous pouvez appeler ces applications personnalisées à partir de l’interface utilisateur en utilisant des profils personnalisés configurés par les administrateurs. [!DNL Asset Compute Service] prend en charge les cas d’utilisation suivants d’appel de services externes :
+Developers can use the [!DNL Asset Compute Service] to [create custom applications](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) that cater to the supported use cases. [!DNL Experience Manager] Vous pouvez appeler ces applications personnalisées à partir de l’interface utilisateur en utilisant des profils personnalisés configurés par les administrateurs. [!DNL Asset Compute Service] prend en charge les cas d’utilisation suivants d’appel de services externes :
 
 * Utilisez [!DNL Adobe Photoshop]l’API [](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) ImageCutout et enregistrez le résultat en tant que rendu.
 * Appelez des systèmes tiers pour mettre à jour des données, par exemple un système PIM.
@@ -132,7 +132,7 @@ Pour créer un profil personnalisé, procédez comme suit :
    * Ajoutez Paramètres du service pour [transmettre des informations ou des paramètres supplémentaires à l’application](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#extend)personnalisée.
    * Types MIME inclus et exclus pour limiter le traitement à quelques formats de fichier spécifiques.
 
-   Cliquez sur **[!UICONTROL Save]**.
+   Cliquez sur **[!UICONTROL Enregistrer]**.
 
 Les applications personnalisées sont des applications [Project Firefly](https://github.com/AdobeDocs/project-firefly) sans interface utilisateur graphique. L’application personnalisée récupère tous les fichiers fournis s’ils sont configurés avec un profil de traitement. L’application doit filtrer les fichiers.
 
@@ -150,7 +150,7 @@ L’intégration d’Asset compute Service permet au Experience Manager de trans
 
 *Figure : Utilisez le champ Paramètres [!UICONTROL du] service pour transmettre des informations supplémentaires aux paramètres prédéfinis générés dans l’application personnalisée. Dans cet exemple, lorsque des images de campagne sont téléchargées, les images sont mises à jour avec `Jumanji` du texte en `Arial-BoldMT` police.*
 
-## Utiliser des profils de traitement pour traiter des ressources {#use-profiles}
+## Use processing profiles to process assets {#use-profiles}
 
 Créez les profils de traitement personnalisé supplémentaire et appliquez-les à des dossiers spécifiques pour qu’Experience Manager traite les ressources chargées ou mises à jour dans ces dossiers. Le profil de traitement standard intégré par défaut est toujours exécuté, mais il n’est pas visible dans l’interface utilisateur. Si vous ajoutez un profil personnalisé, les deux profils sont utilisés pour traiter les ressources chargées.
 
