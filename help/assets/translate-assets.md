@@ -1,12 +1,12 @@
 ---
-title: Créer et gérer des ressources numériques en plusieurs langues
+title: Création et gestion des ressources numériques en plusieurs langues
 description: Découvrez comment automatiser les workflows de traduction des ressources, y compris les fichiers binaires, les métadonnées et les balises, dans plusieurs langues.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: f85dea62ba334fd5b3a7cc45fbf09556cbfdd2ec
 workflow-type: tm+mt
 source-wordcount: '2608'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -243,8 +243,8 @@ L’application de services cloud directement à votre dossier de ressources él
 
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
-1. Accédez à l’onglet **[!UICONTROL Cloud Services]**.
-1. Depuis la liste Configurations Cloud Service, sélectionnez le fournisseur de services de traduction de votre choix. Par exemple, si vous souhaitez utiliser les services de traduction de Microsoft, choisissez **[!UICONTROL Microsoft Translator]**.
+1. Accédez à l’onglet **[!UICONTROL Services Cloud]**.
+1. Depuis la liste Configurations du service Cloud, sélectionnez le fournisseur de services de traduction de votre choix. Par exemple, si vous souhaitez utiliser les services de traduction de Microsoft, choisissez **[!UICONTROL Microsoft Translator]**.
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
@@ -259,8 +259,8 @@ L’application de services cloud directement à votre dossier de ressources él
 Si vous souhaitez appliquer un connecteur personnalisé pour les services de traduction que vous souhaitez utiliser dans les workflows. Pour appliquer un connecteur personnalisé, installez d’abord le connecteur à partir de Package Manager. Configurez ensuite le connecteur depuis la console Cloud Services. Une fois le connecteur configuré, il est disponible dans la liste des connecteurs de l’onglet Cloud Services décrits dans la section [Application des services de traduction](#applying-the-translation-services). Une fois que vous avez appliqué le connecteur personnalisé et exécuté des workflows de traduction, la mosaïque **[!UICONTROL Résumé de traduction]** du projet de traduction affiche les détails du connecteur dans les sections **[!UICONTROL Fournisseur]** et **[!UICONTROL Méthode]**.
 
 1. Installez le connecteur depuis le gestionnaire de modules.
-1. Cliquez/appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Déploiement > Cloud Services]**.
-1. Localisez le connecteur que vous avez installé sous **[!UICONTROL Services tiers]** sur la page **[!UICONTROL Cloud Services]**.
+1. Cliquez/appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Déploiement > Services Cloud]**.
+1. Localisez le connecteur que vous avez installé sous **[!UICONTROL Services tiers]** sur la page **[!UICONTROL Services Cloud]**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
@@ -268,7 +268,7 @@ Si vous souhaitez appliquer un connecteur personnalisé pour les services de tra
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
-1. Spécifiez un titre et un nom pour le connecteur, puis cliquez/appuyez sur **[!UICONTROL Créer]**. Le connecteur personnalisé est alors disponible dans la liste des connecteurs de l’onglet **[!UICONTROL Cloud Services]** décrit à l’étape 5 de la section [Application des services de traduction](#applying-the-translation-services).
+1. Spécifiez un titre et un nom pour le connecteur, puis cliquez/appuyez sur **[!UICONTROL Créer]**. Le connecteur personnalisé est alors disponible dans la liste des connecteurs de l’onglet **[!UICONTROL Services Cloud]** décrit à l’étape 5 de la section [Application des services de traduction](#applying-the-translation-services).
 1. Exécutez n’importe quel workflow de traduction tel que décrit dans la section Création de projets de traduction après avoir appliqué le connecteur personnalisé. Vérifiez les informations détaillées du connecteur dans la mosaïque **[!UICONTROL Résumé de traduction]** du projet de traduction dans la console **[!UICONTROL Projets]**.
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
