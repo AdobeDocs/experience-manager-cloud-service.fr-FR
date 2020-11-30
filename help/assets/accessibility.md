@@ -159,7 +159,7 @@ Lors de la navigation dans le référentiel d’actifs, les fonctionnalités sui
 * Some enhancements to metadata properties UI?
 -->
 
-## Gestion des éléments numériques {#manage-assets}
+## Gestion des ressources numériques {#manage-assets}
 
 De nombreuses tâches de gestion des ressources, telles que les opérations CRUD, le téléchargement d’une ressource et l’ajout de métadonnées, sont accessibles à divers degrés. [!DNL Assets] vous permet d’accomplir les tâches à l’aide de diverses technologies d’assistance, notamment un lecteur d’écran et un clavier.
 
