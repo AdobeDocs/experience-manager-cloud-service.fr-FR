@@ -11,14 +11,14 @@ translation-type: tm+mt
 source-git-commit: b3abefb2953080443e220a248dd4484d23c09a0e
 workflow-type: tm+mt
 source-wordcount: '600'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
 
 # Prise en main de AEM Commerce en tant que Cloud Service {#start}
 
-Pour commencer à utiliser AEM Commerce en tant que Cloud Service, votre Experience Manager Cloud Service doit être configuré avec le module complémentaire CIF (Commerce Integration Framework). Le module complémentaire CIF est un module supplémentaire ajouté à [AEM Sites en tant que Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/home.html).
+Pour commencer à utiliser AEM Commerce en tant que Cloud Service, votre Experience Manager Cloud Service doit être configuré avec le module complémentaire CIF (Commerce Integration Framework). Le module complémentaire CIF est un module supplémentaire ajouté à [AEM Sites en tant que Cloud Service](https://docs.adobe.com/content/help/fr/experience-manager-cloud-service/sites/home.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
@@ -42,9 +42,9 @@ Une autre URL de point de terminaison GraphQL Magento peut être utilisée pour 
 
 Pour connecter AEM Commerce à un Magento, procédez comme suit :
 
-1. Obtenez l&#39;interface de ligne de commande des E/S Adobe avec le module Cloud Manager
+1. Obtenez l’interface de ligne de commande Adobe I/O avec le module externe Cloud Manager
 
-   Consultez la documentation [de](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) Adobe Cloud Manager sur la façon de télécharger, de configurer et d’utiliser l’interface de ligne de commande des E/S [Adobes avec le module](https://github.com/adobe/aio-cli) d’interface de ligne de commande [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+   Consultez la documentation [de](https://docs.adobe.com/content/help/fr/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) Adobe Cloud Manager sur la façon de télécharger, de configurer et d’utiliser l’interface de ligne de commande [de](https://github.com/adobe/aio-cli) Adobe I/O avec le module externe [d’interface de ligne de commande de](https://github.com/adobe/aio-cli-plugin-cloudmanager)Cloud Manager.
 
 2. Authentification de l’interface de ligne de commande avec l’AEM en tant que programme Cloud Service
 
