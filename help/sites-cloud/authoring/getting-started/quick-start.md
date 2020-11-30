@@ -288,7 +288,7 @@ Un [accès rapide aux références](/help/sites-cloud/authoring/fundamentals/env
 
 Pour créer une [version](/help/sites-cloud/authoring/features/page-versions.md) de votre page :
 
-1. Pour ouvrir le rail de la chronologie, sélectionnez la **[Chronologie](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**à l’aide de l’icône de la barre d’outils (avant ou après la[sélection d’une page](#selecting-your-page-for-further-action)) :
+1. Pour ouvrir le rail de la chronologie, sélectionnez la **[Chronologie](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)** à l’aide de l’icône de la barre d’outils (avant ou après la [sélection d’une page](#selecting-your-page-for-further-action)) :
 
    ![Option du mode Chronologie](/help/sites-cloud/authoring/assets/timeline.png)
 
@@ -302,7 +302,7 @@ Pour créer une [version](/help/sites-cloud/authoring/features/page-versions.md)
 
 Le même mécanisme de base est appliqué pour restaurer ou pour comparer des versions d’une page :
 
-1. Sélectionnez la **[Chronologie](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**à l’aide de l’icône de la barre d’outils (avant ou après la[sélection d’une page](#selecting-your-page-for-further-action)) :
+1. Sélectionnez la **[Chronologie](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)** à l’aide de l’icône de la barre d’outils (avant ou après la [sélection d’une page](#selecting-your-page-for-further-action)) :
 
    ![Option du mode Chronologie](/help/sites-cloud/authoring/assets/timeline.png)
 
