@@ -487,8 +487,8 @@ Examinez les fonctionnalités du **nouveau** badge qui a déjà été mis en oeu
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Archétype AEM](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)
+* [Archétype AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html)
 * [Composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components)
 * [Personnalisation des composants principaux CIF AEM](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
 * [Personnalisation des composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html)
-* [Prise en main de AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+* [Prise en main de AEM Sites](https://docs.adobe.com/content/help/fr/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
