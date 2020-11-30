@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 450d78be9472c854a13ba35965ac10f806aba3d9
 workflow-type: tm+mt
 source-wordcount: '3210'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -16,18 +16,18 @@ ht-degree: 94%
 
 Les principes fondamentaux du développement de code sont similaires dans AEM as a Cloud Service par rapport aux solutions AEM On Premise et Managed Services. Les développeurs écrivent du code et le testent localement. Il est ensuite envoyé vers les environnements distants AEM as a Cloud Service. Cloud Manager, qui était un outil de diffusion de contenu facultatif pour Managed Services, est requis. Il s’agit désormais du seul mécanisme permettant de déployer du code vers les environnements AEM as a Cloud Service.
 
-The update of the [AEM version](/help/implementing/deploying/aem-version-updates.md) is always a separate deployment event from pushing [custom code](#customer-releases). D’une autre manière, les versions de code personnalisées doivent être testées par rapport à la version AEM en production, car c’est ce qu’elles seront déployées en haut. aem mises à jour de version qui se produisent après cela, qui seront fréquentes et sont appliquées automatiquement. Ils sont destinés à être rétrocompatibles avec le code client déjà déployé.
+La mise à jour de la [version d’AEM](/help/implementing/deploying/aem-version-updates.md) est toujours un événement de déploiement distinct de la publication de [code personnalisé](#customer-releases). Il en résulte que les versions de code personnalisé doivent être testées par rapport à la version d’AEM en cours de production, car c’est sur celle-ci qu’elles seront déployées. Les mises à jour de version d’AEM ayant lieu par la suite seront fréquentes et appliquées automatiquement. Elles sont conçues pour être rétrocompatibles avec le code client déjà déployé.
 
 Le reste de ce document décrit la manière dont les développeurs doivent adapter leurs pratiques afin de s’adapter aux mises à jour de version d’AEM as a Cloud Service et aux mises à jour client.
 
 >[!NOTE]
->Il est recommandé aux clients disposant de bases de code de passer par l’exercice de restructuration du référentiel décrit dans la [documentation d’AEM](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
+>Il est recommandé aux clients disposant de bases de code de passer par l’exercice de restructuration du référentiel décrit dans la [documentation d’AEM](https://docs.adobe.com/help/fr-FR/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
 
 ## Versions client {#customer-releases}
 
 ### Codage par rapport à la version appropriée d’AEM {#coding-against-the-right-aem-version}
 
-Pour les solutions AEM précédentes, la version la plus récente d’AEM était rarement modifiée (environ une fois par an avec des Service Packs trimestriels) et les clients mettaient à jour les instances de production au moment voulu vers le quickstart le plus récent, en référençant le fichier Jar de l’API. Cependant, AEM en tant qu&#39;applications Cloud Service sont automatiquement mises à jour vers la dernière version d&#39;AEM plus souvent, de sorte que le code personnalisé pour les versions internes doit être créé par rapport à la dernière version d&#39;AEM.
+Pour les solutions AEM précédentes, la version la plus récente d’AEM était rarement modifiée (environ une fois par an avec des Service Packs trimestriels) et les clients mettaient à jour les instances de production au moment voulu vers le quickstart le plus récent, en référençant le fichier Jar de l’API. Toutefois, les applications AEM as a Cloud Service sont automatiquement mises à jour vers la dernière version d’AEM à une fréquence plus élevée, de sorte que le code personnalisé pour les versions internes doit être créé par rapport à la dernière version d’AEM.
 
 Comme pour les versions existantes d’AEM hors cloud, un développement local hors ligne basé sur un quickstart spécifique sera pris en charge et devrait être l’outil de choix pour le débogage dans la plupart des cas.
 
@@ -41,7 +41,7 @@ La vidéo suivante présente un aperçu général du déploiement du code vers A
 >[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 >[!NOTE]
->Il est recommandé aux clients disposant de bases de code de passer par l’exercice de restructuration du référentiel décrit dans la [documentation d’AEM](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
+>Il est recommandé aux clients disposant de bases de code de passer par l’exercice de restructuration du référentiel décrit dans la [documentation d’AEM](https://docs.adobe.com/help/fr-FR/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
 
 ## Déploiement de modules de contenu via Cloud Manager et le gestionnaire de modules {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
@@ -139,7 +139,7 @@ Lorsque Cloud Manager déploie l’application, il exécute ces instructions, i
 
 Pour créer des instructions repoinit, procédez comme suit :
 
-1. Ajoutez une configuration OSGi pour le PID d’usine `org.apache.sling.jcr.repoinit.RepositoryInitializer` dans un dossier de configuration du projet. Utilisez un nom descriptif pour la configuration, tel que **org.apache.sling.jcr.repoinit.RepositoryInitializer~initstructure**.
+1. Ajoutez une configuration OSGi pour le PID d’usine `org.apache.sling.jcr.repoinit.RepositoryInitializer` dans un dossier de configuration du projet. Utilisez un nom explicite pour la configuration, tel que **org.apache.sling.jcr.repoinit.RepositoryInitializer~initstructure**.
 1. Ajoutez des instructions repoinit à la propriété de script de la configuration. La syntaxe et les options sont décrites dans la [documentation Sling](https://sling.apache.org/documentation/bundles/repository-initialization.html). Notez que vous devez créer explicitement un dossier parent avant leurs dossiers enfants. Par exemple, une création explicite de `/content` avant `/content/myfolder`, et avant `/content/myfolder/mysubfolder`. Pour que les listes de contrôle d’accès soient définies sur des structures de bas niveau, il est recommandé de les définir sur un niveau supérieur et de travailler avec une restriction `rep:glob`. Par exemple, `(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))`.
 1. Validez l’environnement de développement local au moment de l’exécution.
 
@@ -169,7 +169,7 @@ Les modules de contenu (modifiable ou non) installés via Cloud Manager s’aff
 
 ### Inclusion de modules tiers {#including-third-party}
 
-Il est courant pour les clients d’inclure des modules préconfigurés provenant de sources tierces, telles que des fournisseurs de logiciels comme les partenaires de traduction d’Adobe. Il est recommandé d’héberger ces modules au sein d’un référentiel distant et de les référencer dans le `pom.xml`. Cela est possible pour les référentiels publics et aussi pour les référentiels privés avec protection par mot de passe, comme décrit dans les référentiels [maven protégés par](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories)mot de passe.
+Il est courant pour les clients d’inclure des modules préconfigurés provenant de sources tierces, telles que des fournisseurs de logiciels comme les partenaires de traduction d’Adobe. Il est recommandé d’héberger ces modules au sein d’un référentiel distant et de les référencer dans le `pom.xml`. Cela est possible pour les référentiels publics et pour les référentiels privés avec protection par mot de passe, comme décrit dans [Référentiels Maven protégés par mot de passe](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
 
 S’il n’est pas possible de stocker le module dans un référentiel distant, les clients peuvent le placer dans un référentiel Maven local basé sur un système de fichiers, qui est validé dans SCM dans le cadre du projet et référencé par toutes les dépendances. Ce référentiel serait alors déclaré dans les fichiers pom du projet, comme illustré ci-dessous :
 
@@ -235,19 +235,19 @@ Comme les mises à jour d’AEM, les versions des clients sont déployées à l�
 
 ## Index {#indexes}
 
-Les nouveaux index ou les index modifiés entraîneront une étape supplémentaire d’indexation ou de réindexation avant que la nouvelle version (verte) puisse prendre en charge le trafic. Vous trouverez des informations détaillées sur la gestion des index en tant que Cloud Service dans AEM [cet article](/help/operations/indexing.md). Vous pouvez vérifier l’état de la tâche d’indexation sur la page de version Cloud Manager et vous recevrez une notification lorsque la nouvelle version sera prête à recevoir le trafic.
+Les nouveaux index ou les index modifiés entraîneront une étape supplémentaire d’indexation ou de réindexation avant que la nouvelle version (verte) puisse prendre en charge le trafic. Vous trouverez dans [cet article](/help/operations/indexing.md) des informations détaillées sur la gestion des index dans AEM as a Cloud Service. Vous pouvez vérifier l’état de la tâche d’indexation sur la page de version Cloud Manager et vous recevrez une notification lorsque la nouvelle version sera prête à recevoir le trafic.
 
 >[!NOTE]
 >
 >Le temps nécessaire pour un déploiement en continu varie en fonction de la taille de l’index, car la version verte ne peut pas accepter de trafic tant que le nouvel index n’a pas été généré.
 
-Pour le moment, AEM en tant que Cloud Service ne fonctionne pas avec les outils de gestion d&#39;index tels que ACS Commons Vérifier l&#39;indice de chêne.
+Pour le moment, AEM as a Cloud Service ne fonctionne pas avec les outils de gestion d’index tels que ACS Commons Verify Oak Index.
 
 ## Réplication {#replication}
 
 Le mécanisme de publication est rétrocompatible avec les [API Java de réplication AEM](https://helpx.adobe.com/fr/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html).
 
-Pour développer et tester la réplication avec un AEM démarrage rapide prêt pour le cloud, les fonctionnalités classiques de réplication doivent être utilisées avec une configuration Auteur/Publication. Dans le cas où le point d’entrée de l’interface utilisateur sur l’auteur AEM a été supprimé pour le cloud, les utilisateurs accèdent à `http://localhost:4502/etc/replication` pour la configuration.
+Pour développer et tester avec la réplication en utilisant le fichier Quickstart AEM prêt pour le cloud, les fonctionnalités classiques de réplication doivent être utilisées avec une configuration Auteur/Publication. Dans le cas où le point d’entrée de l’interface utilisateur sur l’auteur AEM a été supprimé pour le cloud, les utilisateurs accèdent à `http://localhost:4502/etc/replication` pour la configuration.
 
 ## Code rétrocompatible pour les déploiements en continu {#backwards-compatible-code-for-rolling-deployments}
 
