@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
 workflow-type: tm+mt
 source-wordcount: '2285'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 Cette page décrit les règles de qualité du code personnalisé exécutées par Cloud Manager qui sont créées selon les bonnes pratiques en matière d’ingénierie AEM.
 
 >[!NOTE]
->Les exemples de code utilisés ici ne sont fournis qu’à titre d’exemple. Voir [Concepts](https://docs.sonarqube.org/7.4/user-guide/concepts/) pour en savoir plus sur les concepts et les règles de qualité de SonarQube.
+>Les exemples de code utilisés ici ne sont fournis qu’à titre d’illustration. Consultez les [Concepts](https://docs.sonarqube.org/7.4/user-guide/concepts/) pour en savoir plus sur les concepts et les règles de qualité de SonarQube.
 
 ## Règles SonarQube {#sonarqube-rules}
 
@@ -113,7 +113,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 **Depuis** : version 2018.6.0
 
-Lors de l’exécution de requêtes HTTP à partir d’une application AEM, il est essentiel de vérifier que les délais appropriés sont configurés afin d’éviter toute consommation inutile de threads. Malheureusement, le comportement par défaut du client HTTP Java par défaut (java.net.HttpUrlconnection) et du client de composants Apache HTTP couramment utilisé ne doivent jamais expirer, donc les délais d’expiration doivent être explicitement définis. De plus, en règle générale, ces délais d’expiration ne doivent pas dépasser 60 secondes.
+Lors de l’exécution de requêtes HTTP à partir d’une application AEM, il est essentiel de vérifier que les délais appropriés sont configurés afin d’éviter toute consommation inutile de threads. Malheureusement, le comportement par défaut du client HTTP Java par défaut (java.net.HttpUrlConnection) et du client de composants Apache HTTP couramment utilisé ne doivent jamais expirer, donc les délais d’expiration doivent être explicitement définis. De plus, en règle générale, ces délais d’expiration ne doivent pas dépasser 60 secondes.
 
 #### Code non conforme {#non-compliant-code-2}
 
@@ -211,7 +211,7 @@ public class DontDoThis implements Page {
 
 **Clé** : CQRules:CQBP-72
 
-**Type** : code Smell
+**Type** : code smell
 
 **Gravité** : majeure
 
@@ -256,7 +256,7 @@ public void orDoThis(Session session) throws Exception {
 
 **Clé** : CQRules:CQBP-75
 
-**Type** : code Smell
+**Type** : code smell
 
 **Gravité** : majeure
 
@@ -275,11 +275,11 @@ public class DontDoThis extends SlingAllMethodsServlet {
 }
 ```
 
-### Les exceptions capturées doivent être consignées ou émises, mais pas les deux. {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
+### Les exceptions capturées doivent être consignées ou émises, mais pas les deux {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
 **Clé** : CQRules:CQBP-44---CatchAndEitherLogOrThrow
 
-**Type** : code Smell
+**Type** : code smell
 
 **Gravité** : mineure
 
@@ -324,7 +324,7 @@ public void orDoThis() throws MyCustomException {
 
 **Clé** : CQRules:CQBP-44---ConsecutivelyLogAndThrow
 
-**Type** : code Smell
+**Type** : code smell
 
 **Gravité** : mineure
 
@@ -349,11 +349,11 @@ public void doThis() throws Exception {
 }
 ```
 
-### Évitez de journaliser les informations lors de la gestion des requêtes GET ou HEAD. {#avoid-logging-at-info-when-handling-get-or-head-requests}
+### Évitez de journaliser les informations lors de la gestion des requêtes GET ou HEAD {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 **Clé** : CQRules:CQBP-44---LogInfoInGetOrHeadRequests
 
-**Type** : code Smell
+**Type** : code smell
 
 **Gravité** : mineure
 
@@ -383,7 +383,7 @@ public void doGet() throws Exception {
 
 **Clé** : CQRules:CQBP-44---ExceptionGetMessageIsFirstLogParam
 
-**Type** : code Smell
+**Type** : code smell
 
 **Gravité** : mineure
 
@@ -415,11 +415,11 @@ public void doThis() {
 }
 ```
 
-### La journalisation des blocs catch doit se trouver au niveau d’avertissement ou d’erreur. {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
+### La journalisation des blocs catch doit se trouver au niveau d’avertissement ou d’erreur {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
 **Clé** : CQRules:CQBP-44---WrongLogLevelInCatchBlock
 
-**Type** : code Smell
+**Type** : code smell
 
 **Gravité** : mineure
 
@@ -455,7 +455,7 @@ public void doThis() {
 
 **Clé** : CQRules:CQBP-44---ExceptionPrintStackTrace
 
-**Type** : code Smell
+**Type** : code smell
 
 **Gravité** : mineure
 
@@ -491,7 +491,7 @@ public void doThis() {
 
 **Clé** : CQRules:CQBP-44—LogLevelConsolePrinters
 
-**Type** : code Smell
+**Type** : code smell
 
 **Gravité** : mineure
 
@@ -527,7 +527,7 @@ public void doThis() {
 
 **Clé** : CQRules:CQBP-71
 
-**Type** : code Smell
+**Type** : code smell
 
 **Gravité** : mineure
 
@@ -555,7 +555,7 @@ public void doThis(Resource resource) {
 
 **Clé** : CQRules:AMSCORE-554
 
-**Type**: Compatibilité entre les odeurs de code et les Cloud Service
+**Type** : code smell/comptabilité avec Cloud Service
 
 **Gravité** : mineure
 
@@ -569,7 +569,7 @@ Reportez-vous à la section [Traitement des tâches et gestion des événements 
 
 **Clé** : AMSCORE-553
 
-**Type**: Compatibilité entre les odeurs de code et les Cloud Service
+**Type** : code smell/comptabilité avec Cloud Service
 
 **Gravité** : mineure
 
@@ -680,7 +680,7 @@ Tout comme *Les packages ne doivent pas contenir de configurations OSGi en doubl
 
 **Clé** : ClassicUIAuthoringMode
 
-**Type**: Compatibilité entre les odeurs de code et les Cloud Service
+**Type** : code smell/comptabilité avec Cloud Service
 
 **Gravité** : mineure
 
@@ -692,7 +692,7 @@ La configuration OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` déf
 
 **Clé** : ComponentWithOnlyClassicUIDialog
 
-**Type**: Compatibilité entre les odeurs de code et les Cloud Service
+**Type** : code smell/comptabilité avec Cloud Service
 
 **Gravité** : mineure
 
@@ -710,7 +710,7 @@ La documentation des outils de modernisation d’AEM contient des documents et d
 
 **Clé** : ImmutableMutableMixedPackage
 
-**Type**: Compatibilité entre les odeurs de code et les Cloud Service
+**Type** : code smell/comptabilité avec Cloud Service
 
 **Gravité** : mineure
 
@@ -724,7 +724,7 @@ Pour plus d’informations, voir [Structure de projet AEM](https://docs.adobe.co
 
 **Clé** : ReverseReplication
 
-**Type**: Compatibilité entre les odeurs de code et les Cloud Service
+**Type** : code smell/comptabilité avec Cloud Service
 
 **Gravité** : mineure
 
