@@ -1,9 +1,9 @@
 ---
 title: Configuration de Dynamic Media
 description: Pour configurer Dynamic Media, vous devez configurer un média dynamique et gérer les paramètres prédéfinis d’image et de visionneuse.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 100%
 
