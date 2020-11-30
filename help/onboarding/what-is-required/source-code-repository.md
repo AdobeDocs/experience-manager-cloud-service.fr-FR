@@ -1,6 +1,6 @@
 ---
-title: Référentiel du code source - Cloud Service
-description: Référentiel du code source - Cloud Service
+title: Référentiel du code source - Cloud Services
+description: Référentiel du code source - Cloud Services
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
