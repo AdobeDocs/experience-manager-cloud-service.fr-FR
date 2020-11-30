@@ -2,9 +2,9 @@
 title: Publication de ressources, de dossiers et de collections sur Brand Portal
 description: Publiez des ressources, des dossiers et des collections sur Brand Portal.
 contentOwner: Vishabh Gupta
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 100%
 
