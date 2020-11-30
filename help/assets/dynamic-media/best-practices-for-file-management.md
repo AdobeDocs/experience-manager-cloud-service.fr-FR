@@ -1,9 +1,9 @@
 ---
 title: Bonnes pratiques relatives à l’organisation de vos ressources numériques pour utiliser des profils d’image ou vidéo Dynamic Media
 description: Conseils et bonnes pratiques pour nommer, organiser et gérer les fichiers d’image et vidéo Dynamic Media.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 100%
 
