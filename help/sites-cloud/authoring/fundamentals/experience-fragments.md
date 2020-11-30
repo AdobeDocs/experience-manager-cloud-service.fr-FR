@@ -224,7 +224,7 @@ Vous pouvez créer des variations du fragment d’expérience, selon vos besoins
 
 1. Définissez les propriétés requises :
 
-   * **Template (Modèle)**
+   * **Template**
    * **Titre**
    * **Nom** : si rien n’est indiqué dans ce champ, le nom est déduit du titre
    * **Description**
