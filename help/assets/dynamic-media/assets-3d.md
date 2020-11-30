@@ -36,12 +36,12 @@ Dynamic Media prend en charge les formats de fichiers 3D suivants :
 
 Voir aussi [Formats 3D pris en charge](/help/assets/file-format-support.md#support-3d-formats)
 
-| Extension de fichier 3D | Format de fichier | Type MIME | Notes |
+| Extension de fichier 3D | Format de fichier | Type MIME | Remarques |
 |---|---|---|---|
 | GLB | Transmission GL binaire | model/gltf-binary | Inclut les matières et les textures dans une seule ressource. |
 | OBJ | Fichier d’objet 3D WaveFront | application/x-tgif |  |
 | STL | Stéréolithographie | application/vnd.ms-pki.stl |  |
-| USDZ | Archive zip de description de scène universelle | model/vnd.usdz+zip | *Prise en charge de l’ingestion uniquement ; aucun affichage ni interaction n’est disponible.* USDZ est un format 3D propriétaire qui peut être visualisé en mode natif à l’aide de Safari ou iOS. |
+| USDZ | Fichier zip de description de scène universelle | model/vnd.usdz+zip | *Prise en charge de l’ingestion uniquement ; aucun affichage ni interaction n’est disponible.* USDZ est un format 3D propriétaire qui peut être visualisé en mode natif à l’aide de Safari ou iOS. |
 
 ## Démarrage rapide : ressources 3D dans Dynamic Media {#quick-start-three-d}
 
@@ -53,7 +53,7 @@ Voir [Configuration des Cloud Services Dynamic Media](/help/assets/dynamic-media
 
 1. **Chargement de ressources 3D**
 
-   * [Chargement de ressources 3D pour les utiliser dans Dynamic Media](/help/assets/add-assets.md#upload-assets)
+   * [Chargement de ressources 3D pour utilisation dans Dynamic Media](/help/assets/add-assets.md#upload-assets)
    * [Formats de ressources 3D pris en charge pour le chargement dans Dynamic Media](#supported-three-d-file-formats-in-dm)
 
 1. **Gestion des ressources 3D**
@@ -84,7 +84,7 @@ Cette section décrit deux manières différentes d’afficher des ressources 3D
 
 La visionneuse 3D interactive comprend, entre autres, un ensemble de contrôles de caméra interactifs qui permettent d’orbiter, de zoomer et de faire un panoramique sur la ressource 3D.
 
-Notez que le délai nécessaire pour ouvrir une ressource 3D dans la page de détails de la ressource dépend de plusieurs facteurs. Ces facteurs sont, entre autres :
+Notez que le délai nécessaire pour ouvrir une ressource 3D dans la page de détails de la ressource dépend de plusieurs facteurs. Ces facteurs sont notamment :
 
 * La bande passante sur le serveur.
 * Les latences sur le serveur.
@@ -106,7 +106,7 @@ Voir aussi [Prévisualisation de ressources à l’aide de l’interface logicie
 
 1. Assurez-vous d’avoir chargé des ressources 3D dans AEM.
 
-   Voir [Chargement de ressources 3D pour les utiliser dans Dynamic Media.](/help/assets/add-assets.md#upload-assets)
+   Voir [Chargement de ressources 3D pour utilisation dans Dynamic Media.](/help/assets/add-assets.md#upload-assets)
 
 1. Dans AEM, sur la page de **[!UICONTROL navigation]**, appuyez sur **[!UICONTROL Ressources > Fichiers]**.
 1. Dans l’angle supérieur droit de la page, dans la liste déroulante **[!UICONTROL Vue]**, appuyez sur **[!UICONTROL Mode Carte]**.
@@ -148,7 +148,7 @@ Voir aussi [Prévisualisation de ressources à l’aide de l’interface logicie
    * Près de l’angle supérieur droit de la page, cliquez sur **[!UICONTROL Aperçu]** pour passer en mode **[!UICONTROL Aperçu]**.
    * Supprimez `/editor.html` de l’URL de la page dans le navigateur.
 
-Ressource 3D entièrement interactive affichée en    ![Ressource 3D affichée dans le composant Média 3D](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)
+Ressource 3D entièrement interactive affichée en mode Aperçu    ![Ressource 3D affichée dans le composant Média 3D](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)
 Ressource 3D entièrement interactive affichée en mode **[!UICONTROL Aperçu]**.
 
 1. En mode **[!UICONTROL Aperçu]**, effectuez l’une des opérations suivantes :
