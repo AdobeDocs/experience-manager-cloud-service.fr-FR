@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
 source-wordcount: '2592'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -72,7 +72,7 @@ La page CSS et le code JavaScript responsable du rendu du thème/des styles de l
 
 Des styles spécifiques à la marque peuvent être appliqués aux composants principaux AEM CIF en ajoutant et en remplaçant la page CSS gérée par ces bibliothèques clientes. Il est essentiel de comprendre comment les bibliothèques client sont structurées et incluses dans la page.
 
-Le [ui.frontend](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html) est un projet [webpack](https://webpack.js.org/) dédié à la gestion de toutes les ressources frontales d’un projet. Cela permet aux développeurs frontaux d&#39;utiliser un grand nombre de langages et de technologies tels que [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) et bien plus encore.
+Le [ui.frontend](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/uifrontend.html) est un projet [webpack](https://webpack.js.org/) dédié à la gestion de toutes les ressources frontales d’un projet. Cela permet aux développeurs frontaux d&#39;utiliser un grand nombre de langages et de technologies tels que [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) et bien plus encore.
 
 Le `ui.frontend` module est également un module Maven et intégré au projet plus vaste grâce à l&#39;utilisation d&#39;un module NPM le générateur [](https://github.com/wcm-io-frontend/aem-clientlib-generator)aem-clientlib. Au cours d’une génération, le `aem-clientlib-generator` copie les fichiers CSS et JavaScript compilés dans une bibliothèque cliente du `ui.apps` module.
 
@@ -460,7 +460,7 @@ Une fois que le code du projet a été déployé sur AEM, nous devons maintenant
 
    ![Teasers de produits multiples](../assets/style-cif-component/multiple-teasers-final.png)
 
-## Résolution des incidents {#troubleshooting}
+## Dépannage {#troubleshooting}
 
 Vous pouvez vérifier dans [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp) que le fichier CSS mis à jour a été déployé : [http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css](http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css)
 
@@ -484,5 +484,5 @@ Utilisez le système [Style](https://docs.adobe.com/content/help/fr-FR/experienc
 * [Composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components)
 * [Configuration d’un Environnement de développement AEM local](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 * [Bibliothèques côté client](/help/implementing/developing/introduction/clientlibs.md)
-* [Prise en main de AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+* [Prise en main de AEM Sites](https://docs.adobe.com/content/help/fr/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 * [Développer avec le système de style](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
