@@ -1,42 +1,42 @@
 ---
-title: Prise en main des applications monopages dans AEM Utilisation de la fonction Réagir
-description: Cet article présente un exemple d’application d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page d’une seule page.
+title: Prise en main des SPA dans AEM avec React
+description: Cet article présente un exemple d'application SPA, explique comment elle est organisée et vous permet de vous familiariser avec vos propres SPA rapidement en utilisant la structure Réagir.
 translation-type: tm+mt
 source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 36%
+ht-degree: 50%
 
 ---
 
 
-# Prise en main des applications monopages dans AEM Utilisation de la fonction Réagir {#getting-started-with-spas-in-aem-using-react}
+# Prise en main des SPA dans AEM avec React {#getting-started-with-spas-in-aem-using-react}
 
-Les applications d’une seule page (SPA) peuvent améliorer considérablement l’expérience des utilisateurs de sites web. Le souhait des développeurs est de pouvoir créer des sites avec des structures SPA. Les auteurs, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de telles structures.
+Les applications sur une seule page (SPA) peuvent améliorer considérablement l’expérience des utilisateurs de sites web. Le souhait des développeurs est de pouvoir créer des sites avec des structures SPA. Les auteurs, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de telles structures.
 
-La fonction de création d’application d’une seule page constitue une solution complète pour la prise en charge de ce type d’application dans AEM. Cet article présente une application SPA simplifiée sur le cadre React, explique comment elle est mise en place, ce qui vous permet de maîtriser rapidement votre propre application SPA.
+La fonction de création d’application d’une seule page constitue une solution complète pour la prise en charge de ce type d’application dans AEM. Cet article présente une application de SPA simplifiée sur le cadre React, explique comment il est assemblé, vous permettant de vous mettre rapidement en contact avec vos propres SPA.
 
 >[!NOTE]
 >
->Cet article est basé sur le cadre Réagir. Pour le document correspondant à la structure angulaire, voir [Prise en main des applications monopages dans AEM - Angular](getting-started-angular.md).
+>Cet article est basé sur le cadre Réagir. Pour le document correspondant à la structure angulaire, voir [Prise en main des SPA dans AEM - Angular](getting-started-angular.md).
 
 ## Présentation {#introduction}
 
 Cet article résume le fonctionnement de base d’une application d’une seule page simple et ce que vous devez savoir pour que la vôtre soit opérationnelle.
 
-Pour plus d’informations sur le fonctionnement des applications monopages en AEM, voir les documents suivants :
+Pour plus d&#39;informations sur le fonctionnement des SPA en AEM, consultez les documents suivants :
 
-* [Présentation et présentation des applications monopages](introduction.md)
-* [Aperçu de l’éditeur d’application d’une seule page](editor-overview.md)
+* [Introduction et présentation des SPA](introduction.md)
+* [Présentation de l’éditeur de SPA](editor-overview.md)
 * [Plan directeur d’applications sur une seule page (SPA)](blueprint.md)
 
 >[!NOTE]
 >
->Pour pouvoir créer du contenu dans une application d’une seule page, le contenu doit être stocké dans AEM et exposé par le modèle de contenu.
+>Pour pouvoir créer du contenu au sein d’un SPA, le contenu doit être stocké dans AEM et exposé par le modèle de contenu.
 >
->Une ZPS développée en dehors de AEM ne sera pas autorisée si elle ne respecte pas le contrat du modèle de contenu.
+>Un SPA développé en dehors de AEM ne sera pas autorisé s&#39;il ne respecte pas le contrat du modèle de contenu.
 
-Ce document va parcourir la structure d&#39;une application d&#39;une seule page d&#39;une seule page créée à l&#39;aide de la structure Réagir et illustrera son fonctionnement afin que vous puissiez appliquer cette compréhension à votre propre application d&#39;une seule page d&#39;une seule page.
+Ce document va parcourir la structure d&#39;un SPA simplifié créé à l&#39;aide du cadre Réagir et illustrera comment il fonctionne pour que vous puissiez appliquer cette compréhension à votre propre SPA.
 
 ## Dépendances, configuration et construction {#dependencies-configuration-and-building}
 
@@ -44,7 +44,7 @@ En plus de la dépendance React attendue, l’exemple d’application d’une se
 
 ### Dépendances {#dependencies}
 
-Le `package.json` fichier définit les exigences du pack d’application d’une seule page. Les dépendances AEM minimales pour un SPA fonctionnel sont répertoriées ici.
+Le `package.json` fichier définit les exigences du paquet SPA global. Les dépendances AEM minimales pour un SPA fonctionnel sont répertoriées ici.
 
 ```
   "dependencies": {
@@ -106,13 +106,13 @@ Une fois construit, le module peut être téléchargé dans une instance AEM.
 
 ### Archétype de projet AEM {#aem-project-archetype}
 
-Tout projet AEM doit tirer parti de l’archétype [de projet](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM, qui prend en charge les projets d’application d’une seule page à l’aide de React ou d’Angular et qui utilise le SDK d’application d’une seule page.
+Tout projet AEM doit exploiter l’[archétype de projet AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html), qui prend en charge les projets SPA à l’aide de React ou d’Angular et utilise le SDK SPA.
 
 ## Structure d’application {#application-structure}
 
-L’inclusion des dépendances et la création de votre application comme décrit précédemment vous laisseront avec un pack d’applications monopages fonctionnel que vous pourrez télécharger sur votre instance AEM.
+L’inclusion des dépendances et la création de votre application comme décrit précédemment vous laisseront avec un SPA de travail que vous pourrez télécharger sur votre instance AEM.
 
-La section suivante de ce document vous permettra de découvrir comment une application SPA est structurée en AEM, les fichiers importants qui pilotent l&#39;application et comment elle fonctionne ensemble.
+La section suivante de ce document vous permettra de découvrir comment un SPA en AEM est structuré, les fichiers importants qui pilotent l&#39;application et comment ils fonctionnent ensemble.
 
 Un composant d’image simplifié est utilisé comme exemple, mais tous les composants de l’application sont basés sur le même concept.
 
@@ -210,7 +210,7 @@ class Image extends Component {
 MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);
 ```
 
-Les applications d’une seule page dans AEM ont comme principale finalité de mapper les composants SPA aux composants AEM et de mettre à jour le composant lorsque le contenu est modifié (et vice versa). Pour obtenir un résumé de ce modèle de communication, consultez la Présentation [de l’éditeur](editor-overview.md) d’applications monopages de document.
+Les applications d’une seule page dans AEM ont comme principale finalité de mapper les composants SPA aux composants AEM et de mettre à jour le composant lorsque le contenu est modifié (et vice versa). Pour obtenir un résumé de ce modèle de communication, consultez la Présentation [de l’éditeur](editor-overview.md) SPA document.
 
 `MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);`
 
@@ -253,7 +253,7 @@ Pour plus d’informations, voir le document [Plan directeur de SPA](blueprint.m
 >
 >Par défaut, vous recevez le modèle complet du composant lorsque vous utilisez la fonction `withModel`.
 
-## Partage d’informations entre les composants de l’application d’une seule page {#sharing-information-between-spa-components}
+## Partage d’informations entre les composants SPA {#sharing-information-between-spa-components}
 
 Il est régulièrement nécessaire que les composants d’une application d’une seule page partagent des informations. Il existe plusieurs méthodes recommandées pour ce faire, énumérées ci-dessous dans un ordre croissant de complexité.
 
@@ -263,8 +263,8 @@ Il est régulièrement nécessaire que les composants d’une application d’un
 
 ## Étapes suivantes {#next-steps}
 
-* [Prise en main des applications monopages en AEM à l’aide d’Angular](getting-started-angular.md) montre comment une application monopage de base est créée pour fonctionner avec l’éditeur d’applications monopages en AEM à l’aide d’Angular.
-* [Présentation](editor-overview.md) de l’éditeur d’applications d’une seule page approfondit le modèle de communication entre l’AEM et l’application d’une seule page.
-* [WKND SPA Project](wknd-tutorial.md) est un didacticiel détaillé qui met en oeuvre un projet SPA simple en AEM.
-* [Le mappage modèle dynamique/composant pour les applications monopages](model-to-component-mapping.md) explique le mappage des composants du modèle dynamique et son fonctionnement dans les applications monopages dans AEM.
-* [SPA Blueprint](blueprint.md) offre une plongée profonde dans le fonctionnement du SDK SPA pour AEM au cas où vous souhaiteriez mettre en oeuvre des SPA dans AEM pour un cadre autre que React ou Angular ou simplement pour une compréhension plus approfondie.
+* [Prise en main des SPA dans AEM avec Angular](getting-started-angular.md) présente comment créer une SPA de base pour fonctionner avec l’éditeur de SPA dans AEM avec Angular.
+* [Vue d’ensemble de l’éditeur de SPA](editor-overview.md) décrit de manière plus détaillée le modèle de communication entre AEM et la SPA.
+* [WKND SPA Project](wknd-tutorial.md) est un tutoriel détaillé qui met en œuvre un projet de SPA simple dans AEM.
+* [Mappage dynamique de modèle à composant pour SPA](model-to-component-mapping.md) explique le mappage dynamique du modèle au composant et son fonctionnement au sein de SPA dans AEM.
+* [Plan directeur d’applications sur une seule page (SPA)](blueprint.md) explique en détail le fonctionnement du SDK SPA pour AEM pour la mise en œuvre de SPA dans AEM dans un autre framework que React ou Angular.
