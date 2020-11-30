@@ -1,24 +1,24 @@
 ---
-title: Projet d’application de la loi WKND
-description: Découvrez-vous dans le développement des applications monopages grâce à ce didacticiel en plusieurs parties qui vous guide tout au long de la configuration du projet, du mappage des composants, des outils de développement frontal et du routage d’application pour mettre en oeuvre votre propre application d’application d’application d’application d’application d’application d’application à l’aide de React et d’Angular.
+title: Projet SPA WKND
+description: Découvrez le développement d’applications sur une seule page (SPA) grâce à ce tutoriel en plusieurs parties. Vous serez guidé tout au long des opérations de configuration du projet, de mappage des composants, des outils de développement front-end et du routage d’applications pour mettre en œuvre vos propres SPA avec React et Angular.
 translation-type: tm+mt
 source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '151'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Projet d’application de la loi WKND {#wknd-spa-project}
+# Projet SPA WKND {#wknd-spa-project}
 
-Découvrez-vous dans le développement des applications monopages grâce à ce didacticiel en plusieurs parties qui vous guide tout au long de la configuration du projet, du mappage des composants, des outils de développement frontal et du routage d’application pour mettre en oeuvre votre propre application d’application d’application d’application d’application d’application d’application d’application d’application d’application d’application d’application d’application d’application.
+Découvrez le développement d’applications sur une seule page (SPA) grâce à ce tutoriel en plusieurs parties. Vous serez guidé tout au long de la mise en œuvre de la configuration du projet, du mappage des composants, des outils de développement front-end et du routage d’applications pour mettre en œuvre vos propres SPA.
 
-![Projet d’application de la loi WKND](assets/wknd-spa-project.png)
+![Projet SPA WKND](assets/wknd-spa-project.png)
 
-Tout comme le tutoriel WKND AEM, cet homologue orienté SPA offre un exemple de bout en bout de la création de votre propre application d’une seule page modifiable avec AEM en commençant par la configuration du projet via le routage de l’application.
+Tout comme celui relatif à WKND pour AEM, ce tutoriel consacré aux SPA offre un exemple de bout en bout de la création de vos propres applications sur une seule page, modifiables à l’aide d’AEM, depuis la configuration du projet jusqu’au routage de l’application.
 
-* [Créez votre première application d’une seule page dans AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
-* [Créez votre première application d’une seule réponse dans AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
+* [Créer votre première SPA Angular dans AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/spa-angular-tutorial/overview.html)
+* [Créer votre première SPA React dans AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/spa-react-tutorial/overview.html)
 
-Toutefois, avant de commencer votre propre projet d’application d’une seule page pour AEM, vous pouvez également consulter les [applications d’une seule page pour un document AEM](developing.md) .
+Toutefois, avant de vous engager dans votre propre projet SPA pour AEM, vous pouvez également consulter le document [Développement de SPA pour AEM](developing.md).
