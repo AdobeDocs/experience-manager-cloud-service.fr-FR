@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
 source-wordcount: '1312'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -79,7 +79,7 @@ Pour charger un ou plusieurs fichiers, vous pouvez les sélectionner sur votre b
 
 >[!NOTE]
 >
->To upload nested folder hierarchies, see [bulk upload assets](#bulk-upload).
+>Pour charger des hiérarchies de dossiers imbriqués, voir [Chargement en masse de ressources](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -151,13 +151,13 @@ Pour qu’un traitement supplémentaire soit réalisé sur les ressources charg�
 
 Les profils suivants sont disponibles :
 
-* [Les profils](metadata-profiles.md) de métadonnées vous permettent d’appliquer les propriétés de métadonnées par défaut aux fichiers téléchargés dans ce dossier.
-* [Les profils](asset-microservices-configure-and-use.md) de traitement vous permettent de générer plus de rendus que ce qui est possible par défaut.
+* Les [profils de métadonnées](metadata-profiles.md) vous permettent d’appliquer des propriétés de métadonnées par défaut aux ressources chargées dans ce dossier.
+* Les [profils de traitement](asset-microservices-configure-and-use.md) vous permettent de générer davantage de rendus que ce qui est possible par défaut.
 
 De plus, si Dynamic Media est activé dans votre environnement :
 
-* [Les profils](dynamic-media/image-profiles.md) d’image de média dynamique vous permettent d’appliquer une configuration de recadrage spécifique (recadrage **** intelligent et recadrage de pixels) et d’accentuation aux fichiers téléchargés.
-* [Les profils](dynamic-media/video-profiles.md) vidéo de média dynamique vous permettent d’appliquer des profils de codage vidéo spécifiques (résolution, format, paramètres).
+* Les [profils d’image Dynamic Media](dynamic-media/image-profiles.md) vous permettent d’appliquer un recadrage spécifique (**[!UICONTROL Recadrage intelligent]** et recadrage de pixels) et une configuration d’accentuation aux ressources chargées.
+* Les [profils vidéo Dynamic Media](dynamic-media/video-profiles.md) vous permettent d’appliquer des profils de codage vidéo spécifiques (résolution, format, paramètres).
 
 >[!NOTE]
 >
@@ -167,11 +167,11 @@ Pour les dossiers auxquels un profil de traitement est affecté, le nom du profi
 
 ## Chargement ou ingestion de fichiers à l’aide d’API {#upload-using-apis}
 
-Les détails techniques du protocole et des API de chargement, ainsi que les liens vers les exemples de clients et le kit SDK Open Source, sont fournis dans la section [Chargement de ressources](developer-reference-material-apis.md#asset-upload-technical) de la documentation de référence du développeur.
+Les détails techniques du protocole et des API de chargement, ainsi que les liens vers les exemples de clients et le SDK Open Source, sont fournis dans la section [Chargement de ressources](developer-reference-material-apis.md#asset-upload-technical) de la documentation de référence du développeur.
 
 >[!MORELIKETHIS]
 >
->* [Application de bureau Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
+>* [Application de bureau Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr)
 >* [Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Documentation d’Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html)
 >* [Référence technique pour le chargement de ressources](developer-reference-material-apis.md#asset-upload-technical)
