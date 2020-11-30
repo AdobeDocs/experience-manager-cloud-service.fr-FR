@@ -83,7 +83,7 @@ Pour ce cas d’utilisation, il n’est pas nécessaire d’acheter AEM Assets.
 * Rapports et analyses des ressources : statistiques sur les ressources
 * Gestion des ressources 3D
 * Ressources connectées
-* Brand Portal
+* Brand Portal
 * Accès en libre-service
 * Parcourir, rechercher et télécharger
 * Partage de collections et de dossiers
