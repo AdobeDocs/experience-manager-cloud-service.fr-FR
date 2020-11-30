@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fb979363fcb8c17fbefd11b9b86498447593f745
 workflow-type: tm+mt
 source-wordcount: '880'
-ht-degree: 85%
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ La section suivante décrit les types d’environnement qu’un utilisateur peut
 
 Un utilisateur disposant des autorisations requises peut créer les types d’environnement suivants (dans les limites de ce qui est disponible pour le client spécifique).
 
-* **Environnement de production et de test** : les environnements de production et de test sont disponibles en duo et sont utilisés à des fins de test et de production.
+* **Environnement de production et d’évaluation** : les environnements de production et d’évaluation sont disponibles en duo et sont utilisés à des fins de test et de production.
 
 * **Développement** : un environnement de développement peut être créé à des fins de développement et de test et sera associé uniquement aux pipelines qui ne sont pas en production.
 
@@ -30,7 +30,7 @@ Un utilisateur disposant des autorisations requises peut créer les types d’en
    | Nom | Niveau de création | Niveau de publication | L’utilisateur peut créer | L’utilisateur peut supprimer | Pipeline pouvant être associé à l’environnement |
    |--- |--- |--- |--- |---|---|
    | Production | Oui | Oui si Sites est inclus | Oui | Non | Pipeline de production |
-   | Scène | Oui | Oui si Sites est inclus | Oui | Non | Pipeline de production |
+   | Évaluation | Oui | Oui si Sites est inclus | Oui | Non | Pipeline de production |
    | Développement | Oui | Oui si Sites est inclus | Oui | Oui | Pipeline hors production |
 
    >[!NOTE]
@@ -48,12 +48,12 @@ Un utilisateur disposant des autorisations requises peut créer les types d’en
    >[!NOTE]
    >L’option **Ajouter un environnement** sera désactivée en raison de l’absence d’autorisations ou de conditions contractuelles.
 
-1. La boîte de dialogue **Ajouter un environnement** s’affiche. L’utilisateur doit ajouter des détails tels que le **type d’environnement**, **nom de l’environnement** et la **description de l’environnement** (selon l’objectif de l’utilisateur lors de la création de l’environnement dans les limites de ce qui est disponible pour le client spécifique).
+1. La boîte de dialogue **Ajouter l’environnement** s’affiche. L’utilisateur doit ajouter des détails tels que le **Type d’environnement**, **Nom de l’environnement** et la **Description de l’environnement** (selon l’objectif de l’utilisateur lors de la création de l’environnement dans les limites de ce qui est disponible pour le client spécifique).
 
    ![](assets/add-environment2.png)
 
    >[!NOTE]
-   >Lors de la création d’un environnement, une ou plusieurs *intégrations* sont créées dans les E/S Adobe. Elles sont visibles par les utilisateurs clients qui ont accès à la console d’E/S Adobe et ne doivent pas être supprimées. Cette suppression est déconseillée dans la description de la console d’E/S Adobe.
+   >Lors de la création d’un environnement, une ou plusieurs *intégrations* sont créées dans Adobe I/O. Elles sont visibles par les utilisateurs clients qui ont accès à la console Adobe I/O et ne doivent pas être supprimées. Cette suppression est déconseillée dans la description de la console Adobe I/O.
 
    ![](assets/add-environment-image1.png)
 
@@ -115,11 +115,11 @@ L’option de suppression est également disponible si vous cliquez sur **Détai
 >
 >Cette fonction n’est pas disponible pour l’environnement de production/d’évaluation défini dans une configuration de programme normale à des fins de production. Cette fonction est toutefois disponible pour les environnements de production/d’évaluation dans un programme Sandbox.
 
-## Managing Access {#managing-access}
+## Gestion de l’accès {#managing-access}
 
-Select **Manage Access** from the dropdown menu in the **Environments** Card. Vous pouvez accéder directement à l’instance d’auteur et gérer l’accès pour votre environnement.
+Sélectionnez **Gérer l’accès** dans le menu déroulant de la carte **Environnements**. Vous pouvez accéder directement à l’instance d’auteur et gérer l’accès pour votre environnement.
 
-Consultez [Gestion de l’accès à l’instance](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) d’auteur pour en savoir plus.
+Consultez [Gestion de l’accès à l’instance d’auteur](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) pour en savoir plus.
 
 ![](assets/environ-access.png)
 
@@ -130,7 +130,7 @@ Sélectionnez **Developer Console** dans le menu déroulant de la carte **Enviro
 
 Seul un utilisateur possédant le rôle de développeur aura accès à **Developer Console**. L’exception concerne les programmes Sandbox, où tout utilisateur ayant accès au programme Cloud Manager Sandbox aura accès à **Developer Console**.
 
-Pour plus d’informations, voir [Mise en hibernation et déshibernation des environnements Sandbox](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction).
+Pour plus d’informations, voir [Mise en veille et réactivation d’environnements Sandbox](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction).
 
 
 ![](assets/environ-devconsole.png)
