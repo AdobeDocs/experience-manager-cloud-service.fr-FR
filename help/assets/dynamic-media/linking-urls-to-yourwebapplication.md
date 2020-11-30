@@ -1,11 +1,11 @@
 ---
 title: Liaison d’URL à une application web
-description: Comment lier des URL à votre application web dans les médias dynamiques
+description: Comment lier des URL à votre application web dans Dynamic Media
 translation-type: tm+mt
 source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
 source-wordcount: '1271'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -132,7 +132,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
    Par exemple, si l’ID d’enregistrement est `87654321|MyCompany`, le nom du client est `MyCompany`.
 
-1. Near the upper-left corner of the page, tap **[!UICONTROL Cloud Services]**, then tap the AEM icon and navigate to **[!UICONTROL General > CRXDE Lite]**.
+1. Près du coin supérieur gauche de la page, appuyez sur **[!UICONTROL Cloud Services]** puis sur l’icône d’AEM et accédez à **[!UICONTROL Général > CRXDE Lite]**.
 1. Copiez le chemin URL du rendu vidéo à partir du référentiel JCR (Java Content Repository).
 
    Par exemple, le chemin URL du rendu vidéo est similaire au suivant :
@@ -210,4 +210,4 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
 HTTP/2 est le nouveau protocole web qui améliore la manière dont les serveurs et les navigateurs communiquent. Il permet un transfert rapide d’informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media peuvent désormais être diffusées sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
 
-Voir [Diffusion du contenu sur HTTP/2](http2faq.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.
+Voir [Diffusion du contenu sur HTTP2](http2faq.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.
