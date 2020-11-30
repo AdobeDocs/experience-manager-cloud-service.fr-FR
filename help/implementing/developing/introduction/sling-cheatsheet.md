@@ -1,9 +1,9 @@
 ---
-title: Aide-mémoire pour Sling
+title: 'Aide-mémoire pour Sling '
 description: Référence Sling
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 4d41f18fea1984f64e85df6b06602426c3602efa
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '30'
 ht-degree: 100%
 
