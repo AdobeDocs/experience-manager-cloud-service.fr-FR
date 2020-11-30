@@ -5,24 +5,24 @@ translation-type: tm+mt
 source-git-commit: a0b4f04aaafbaef86728c8bd23cc026f43c72dde
 workflow-type: tm+mt
 source-wordcount: '995'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
 # Résolution des problèmes liés à Dynamic Media {#troubleshooting-dynamic-media-scene-mode}
 
-La rubrique suivante décrit le dépannage de Contenu multimédia dynamique.
+La rubrique suivante décrit la résolution des problèmes liés à Dynamic Media.
 
-## Nouvelle configuration de média dynamique {#new-dm-config}
+## Nouvelle configuration Dynamic Media {#new-dm-config}
 
-Voir [Dépannage d’une nouvelle configuration de contenu multimédia dynamique.](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
+Voir [Résolution des problèmes liés à une nouvelle configuration Dynamic Media.](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
 
 ## Général (toutes les ressources) {#general-all-assets}
 
 Vous trouverez ci-après quelques astuces et conseils généraux concernant toutes les ressources.
 
-### Propriétés de l’état de synchronisation des ressources   {#asset-synchronization-status-properties}
+### Propriétés de l’état de synchronisation des ressources  {#asset-synchronization-status-properties}
 
 Vous pouvez passer en revue les propriétés de ressource suivantes dans CRXDE Lite pour vérifier que la synchronisation de la ressource depuis AEM vers Dynamic Media s’est déroulée correctement :
 
@@ -45,7 +45,7 @@ Lors du remplacement d’une ressource Dynamic Media (nom et emplacement identiq
 
 * La création d’une version n’est pas prise en charge dans Dynamic Media. La nouvelle version remplace la ressource existante lors de la diffusion.
 
-## Images et visionneuses   {#images-and-sets}
+## Images et visionneuses  {#images-and-sets}
 
 Si des problèmes surviennent avec les images et les visionneuses, reportez-vous aux conseils de dépannage ci-dessous.
 
@@ -207,13 +207,13 @@ Si vous rencontrez des problèmes avec les visionneuses, reportez-vous aux conse
     <ol>
      <li>Accédez à <code>/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code>.
      </li>
-     <li>Sélectionnez les actions suivantes dans l’ordre :
+     <li>Sélectionnez les actions suivantes dans l’ordre :
       <ol>
-       <li>Supprimer les dossiers Sync.</li>
-       <li>Supprimer le dossier Paramètres prédéfinis (ci-dessous <code>/conf</code>).
+       <li>Supprimer les dossiers de synchronisation.</li>
+       <li>Supprimer le dossier Paramètre prédéfini (sous <code>/conf</code>).
        <li>Déclencher la tâche asynchrone de configuration de DM.</li>
       </ol> </li>
-     <li>Attendez la notification d'une synchronisation réussie dans votre boîte de réception AEM.
+     <li>Attendez la notification d’une synchronisation réussie dans votre boîte de réception AEM.
      </li>
     </ol> </td>
   </tr>
