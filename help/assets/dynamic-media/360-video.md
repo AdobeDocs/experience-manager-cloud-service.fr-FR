@@ -118,7 +118,7 @@ Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages.](/help
    * Faites glisser le pointeur de la souris sur la vidéo pour modifier l’angle de vue de la scène statique.
    * Appuyez sur le bouton **[!UICONTROL Lecture]** de la vidéo pour commencer la lecture ; pendant la lecture de la vidéo, faites glisser le pointeur de la souris sur la vidéo pour modifier l’angle de vue.
 
-   ![6_5_360video-preview-video360-social](assets/6_5_360video-preview-video360-social.png)*Capture d’écran d’une vidéo 360.*
+   ![6_5_360video-preview-video360-social ](assets/6_5_360video-preview-video360-social.png)*Capture d’écran d’une vidéo 360.*
 
    * Dans la liste des visionneuses, appuyez sur **[!UICONTROL Video360VR]**.
 
