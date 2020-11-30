@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 82f50e50bb93baa280a981708277dd63004b101f
 workflow-type: tm+mt
 source-wordcount: '2237'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -86,13 +86,13 @@ Le contenu est répliqué de l’instance d’auteur vers l’instance de public
 
 ### Journaux {#logs}
 
-Pour le développement en local, les entrées de journaux sont écrites dans des fichiers locaux    dans le dossier `/crx-quickstart/logs`.
+Pour le développement en local, les entrées de journaux sont écrites dans des fichiers locaux dans le dossier `/crx-quickstart/logs`.
 
 Dans les environnements cloud, les développeurs peuvent télécharger les journaux via Cloud Manager ou utiliser un outil de ligne de commande pour en afficher les dernières lignes. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
 **Définition du niveau de journalisation**
 
-Pour modifier les niveaux de journal des environnements Cloud, il est nécessaire de modifier la configuration d’enregistreur OSGI Sling, suivi d’un redéploiement complet. Comme il ne s’agit pas d’une opération instantanée, soyez prudent lorsque vous activez les journaux en détail sur les environnements de production qui reçoivent beaucoup de trafic. Dans le futur, il est possible que des mécanismes soient ajoutés pour pouvoir modifier plus rapidement le niveau du journal.
+Pour modifier les niveaux de journal des environnements Cloud, il est nécessaire de modifier la configuration d’enregistreur OSGi Sling, suivi d’un redéploiement complet. Comme il ne s’agit pas d’une opération instantanée, soyez prudent lorsque vous activez les journaux en détail sur les environnements de production qui reçoivent beaucoup de trafic. Dans le futur, il est possible que des mécanismes soient ajoutés pour pouvoir modifier plus rapidement le niveau du journal.
 
 >[!NOTE]
 >
@@ -138,7 +138,7 @@ Un ensemble d’outils pour le débogage des environnements de développeur d’
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
-Vous pouvez utiliser comme raccourci la commande d’interface de ligne de commande Cloud Manager suivante pour lancer la console de développement, en fonction du paramètre d’environnement décrit ci-dessous :
+Vous pouvez utiliser comme raccourci la commande d’interface de ligne de commande Cloud Manager suivante pour lancer Developer Console, en fonction du paramètre d’environnement décrit ci-dessous :
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
@@ -146,7 +146,7 @@ Pour plus d’informations, consultez [cette page](/help/release-notes/home.md).
 
 Les développeurs peuvent générer des informations d’état et résoudre diverses ressources.
 
-Comme illustré ci-dessous, les informations d’état disponibles incluent l’état des bundles, des composants, des configurations OSGI, des index Oak, des services OSGI et des tâches Sling.
+Comme illustré ci-dessous, les informations d’état disponibles incluent l’état des bundles, des composants, des configurations OSGi, des index Oak, des services OSGi et des tâches Sling.
 
 ![Console de développement 1](/help/implementing/developing/introduction/assets/devconsole1.png)
 
@@ -156,7 +156,7 @@ Comme illustré ci-dessous, les développeurs peuvent résoudre les dépendances
 
 ![Console de développement 3](/help/implementing/developing/introduction/assets/devconsole3.png)
 
-Également utile pour le débogage, la console de développement comprend un lien vers l’outil Requête d’explication :
+Également utile pour le débogage, Developer Console comprend un lien vers l’outil d’explication des requêtes :
 
 ![Console de développement 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
@@ -213,43 +213,43 @@ Seuls les ports HTTP et HTTPS sont pris en charge. Cela inclut HTTP/1.1, ainsi q
 
 Afin de vérifier que le trafic est effectivement sortant sur l’adresse IP dédiée attendue, vérifiez les journaux dans le service de destination, si disponible. Dans le cas contraire, il peut s’avérer utile d’appeler un service de débogage tel que [https://ifconfig.me/ip](https://ifconfig.me/ip), qui renverra l’adresse IP d’appel.
 
-## Envoi d’un courriel {#sending-email}
+## Envoi d’un email {#sending-email}
 
-aem en tant que Cloud Service exige que le courrier sortant soit chiffré. Les sections ci-dessous décrivent comment demander, configurer et envoyer des courriers électroniques.
+AEM as a Cloud Service exige que le courrier sortant soit chiffré. Les sections ci-dessous décrivent comment demander, configurer et envoyer des emails.
 
-### Demande d&#39;accès {#requesting-access}
+### Demande d’accès {#requesting-access}
 
-Par défaut, le courrier électronique sortant est désactivé. Pour l&#39;activer, soumettez un ticket d&#39;assistance avec :
+Par défaut, les emails sortants sont désactivés. Pour les activer, soumettez un ticket d’assistance contenant :
 
-1. Nom de domaine complet pour le serveur de messagerie (par exemple `smtp.sendgrid.net`)
-1. Port à utiliser. Il doit s&#39;agir du port 465 s&#39;il est pris en charge par le serveur de messagerie, sinon le port 587 Notez que le port 587 ne peut être utilisé que si le serveur de messagerie requiert et applique TLS sur ce port.
-1. ID de programme et ID d&#39;environnement pour les environnements qu&#39;ils souhaitent envoyer par courrier électronique
-1. Indique si l’accès SMTP est nécessaire sur l’auteur, la publication ou les deux.
+1. Le nom de domaine complet du serveur de messagerie (par exemple, `smtp.sendgrid.net`).
+1. Le port à utiliser. Il doit s’agir du port 465 s’il est pris en charge par le serveur de messagerie, sinon le port 587. Notez que le port 587 ne peut être utilisé que si le serveur de messagerie nécessite et applique le protocole TLS sur ce port.
+1. L’identifiant de programme et l’identifiant d’environnement pour les environnements à partir desquels l’envoi d’emails est souhaité.
+1. Une indication précisant si l’accès SMTP est nécessaire pour l’auteur, la publication ou les deux.
 
-### Envoi de courriels {#sending-emails}
+### Envoi d’emails {#sending-emails}
 
-Le service [OSGI de](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) Day CQ Mail Service doit être utilisé et les courriels doivent être envoyés au serveur de messagerie indiqué dans la demande d&#39;assistance plutôt qu&#39;directement aux destinataires.
+Le [service de messagerie Day CQ OSGi](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) doit être utilisé et les emails doivent être envoyés au serveur de messagerie indiqué dans la demande d’assistance, et non directement aux destinataires.
 
-aem CS exige que le courrier soit envoyé par le port 465. Si un serveur de messagerie ne prend pas en charge le port 465, le port 587 peut être utilisé, tant que l&#39;option TLS est activée.
+AEM CS exige que le courrier soit envoyé par le biais du port 465. Si un serveur de messagerie ne prend pas en charge le port 465, il est possible d’utiliser le port 587 tant que l’option TLS est activée.
 
 >[!NOTE]
 >
->Notez que l’Adobe ne prend pas en charge le traitement SMTP sur une adresse IP dédiée unique.
+>Notez qu’Adobe ne prend pas en charge le traitement du protocole SMTP en sortie sur une adresse IP dédiée unique.
 
 ### Configuration {#email-configuration}
 
-Les courriels en AEM doivent être envoyés à l&#39;aide du service [OSGi](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)Day CQ Mail Service.
+Dans AEM, les emails doivent être envoyés à l’aide du [service de messagerie Day CQ OSGi](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
-Voir la documentation [de](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) AEM 6.5 pour plus d’informations sur la configuration des paramètres de courrier électronique. Pour AEM CS, les ajustements suivants doivent être apportés au `com.day.cq.mailer.DefaultMailService OSGI` service :
+Voir la [documentation d’AEM 6.5](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/operations/notification.html) pour plus d’informations sur la configuration des paramètres des emails. Pour AEM CS, les ajustements suivants doivent être appliqués aux services `com.day.cq.mailer.DefaultMailService OSGI` :
 
-Si le port 465 a été demandé :
+Si le port 465 a été demandé :
 
-* définir `smtp.port` sur `465`
-* définir `smtp.ssl` sur `true`
-* définir `smtp.starttls` sur `false`
+* Définissez `smtp.port` sur `465`.
+* Définissez `smtp.ssl` sur `true`.
+* Définissez `smtp.starttls` sur `false`.
 
-Si le port 587 a été demandé (uniquement autorisé si le serveur de messagerie ne prend pas en charge le port 465) :
+Si le port 587 a été demandé (autorisé seulement si le serveur de messagerie ne prend pas en charge le port 465) :
 
-* définir `smtp.port` sur `587`
-* définir `smtp.ssl` sur `false`
-* définir `smtp.starttls` sur `true`
+* Définissez `smtp.port` sur `587`.
+* Définissez `smtp.ssl` sur `false`.
+* Définissez `smtp.starttls` sur `true`.
