@@ -1,9 +1,9 @@
 ---
 title: Prévisualisation de fichiers 3D
 description: Découvrez comment prévisualiser des fichiers 3D
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '566'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Adobe Experience Manager prend en charge le chargement, la diffusion et l’aperçu interactif des ressources 3D dans le cadre du processus de création.
 
-La visionneuse 3D interactive est disponible sur la page de détails de la ressource dans AEM. La visionneuse comprend, entre autres, un ensemble de contrôles de caméra interactifs qui permettent d’orbiter, de zoomer et de faire un panoramique sur la ressource 3D.
+La visionneuse 3D interactive est disponible sur la page de détails de la ressource dans AEM. La visionneuse comprend, entre autres, un ensemble de contrôles de caméra interactifs qui permettent d’orbiter, de zoomer et de faire un panoramique sur la ressource 3D.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
@@ -22,14 +22,14 @@ La visionneuse 3D interactive est disponible sur la page de détails de la ress
 
 L’aperçu 3D interactif prend en charge les formats de fichier suivants :
 
-| Extension de fichier 3D | Format de fichier | Type MIME | Notes |
+| Extension de fichier 3D | Format de fichier | Type MIME | Remarques |
 |---|---|---|---|
 | GLB | Transmission GL binaire | model/gltf-binary |  |
 | GLTF | Format de transmission GL | model/gltf+json | Consultez **la remarque** ci-dessous. |
 | OBJ | Fichier d’objet 3D WaveFront | application/x-tgif |  |
 | STL | Stéréolithographie | application/vnd.ms-pki.stl |  |
 | DN | Adobe Dimension | model/x-adobe-dn | Prise en charge de l’assimilation uniquement, prévisualisation non disponible. |
-| USDZ | Archive zip de description de scène universelle | model/vnd.usdz+zip | Prise en charge de l’assimilation uniquement, prévisualisation non disponible. |
+| USDZ | Fichier zip de description de scène universelle | model/vnd.usdz+zip | Prise en charge de l’assimilation uniquement, prévisualisation non disponible. |
 
 **Remarque** : si le rendu des matériaux n’est pas effectué dans la prévisualisation d’un modèle gLTF, assurez-vous qu’ils sont correctement nommés et qu’ils se trouvent dans un dossier `textures` situé dans le même dossier racine que le modèle, comme suit :
 
