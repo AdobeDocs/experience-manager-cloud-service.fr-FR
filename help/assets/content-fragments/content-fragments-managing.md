@@ -136,7 +136,7 @@ Pour ouvrir votre fragment à des fins de modification :
 
 3. Naviguez parmi les trois modes à l’aide des icônes du panneau latéral :
 
-   * Variations : [ Modification du contenu](#editing-the-content-of-your-fragment) et [Gestion des variations](#creating-and-managing-variations-within-your-fragment)
+   * Variations : [Modification du contenu](#editing-the-content-of-your-fragment) et [Gestion des variations](#creating-and-managing-variations-within-your-fragment)
 
    * [Annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
    * [Contenu associé](#associating-content-with-your-fragment)
@@ -223,9 +223,9 @@ Outre les options standard, la [Chronologie](/help/assets/manage-digital-assets.
 * Affichage des informations sur les versions, commentaires et annotations
 * Actions pour les versions
 
-   * **[Revenir à cette version](#reverting-to-a-version)**(sélectionner un fragment existant, puis une version spécifique)
+   * **[Revenir à cette version](#reverting-to-a-version)** (sélectionner un fragment existant, puis une version spécifique)
 
-   * **[Comparer à actuel](#comparing-fragment-versions)**(sélectionner un fragment existant, puis une version spécifique)
+   * **[Comparer à actuel](#comparing-fragment-versions)** (sélectionner un fragment existant, puis une version spécifique)
 
    * Ajouter un **libellé** et/ou un **commentaire** (sélectionner un fragment existant, puis une version spécifique)
 
@@ -236,11 +236,10 @@ Outre les options standard, la [Chronologie](/help/assets/manage-digital-assets.
    * **Supprimer**
 
 >[!NOTE]
->
->Les commentaires :
->* Une fonctionnalité standard pour toutes les ressources
->* Réalisés dans la chronologie
->* Liés à la ressource de fragment
+Les commentaires :
+* Une fonctionnalité standard pour toutes les ressources
+* Réalisés dans la chronologie
+* Liés à la ressource de fragment
 
 Les annotations (pour les fragments de contenu) sont :
 * Entrées dans l’éditeur de fragments
@@ -275,8 +274,7 @@ Elles seront affichées côte à côte, où :
 * **Terminé** vous ramène à la console
 
 >[!NOTE]
->
->Vous ne pouvez pas modifier le contenu du fragment lors de la comparaison des fragments.
+Vous ne pouvez pas modifier le contenu du fragment lors de la comparaison des fragments.
 
 ![comparaison](assets/cfm-managing-06.png)
 
@@ -293,9 +291,8 @@ Vous pouvez restaurer vers une version spécifique de votre fragment :
 ## Publication et référencement d’un fragment {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
->
->Si votre fragment est basé sur un modèle, vous devez vous assurer que le [modèle a été publié](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
->Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection indique cela, ainsi que le fait que le modèle sera publié avec le fragment.
+Si votre fragment est basé sur un modèle, vous devez vous assurer que le [modèle a été publié](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection indique cela, ainsi que le fait que le modèle sera publié avec le fragment.
 
 Les fragments de contenu doivent être publiés pour être utilisés dans l’environnement de publication. Ils peuvent être publiés :
 
@@ -303,8 +300,7 @@ Les fragments de contenu doivent être publiés pour être utilisés dans l’en
 * Lorsque vous [publiez une page qui utilise le fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), celui-ci est répertorié dans les références de la page.
 
 >[!CAUTION]
->
->Une fois qu’un fragment a été publié et/ou référencé, AEM affiche un avertissement lorsqu’un auteur ouvre à nouveau ce fragment en mode d’édition. Il s’agit de signaler que les modifications apportées au fragment seront également répercutées sur les pages référencées.
+Une fois qu’un fragment a été publié et/ou référencé, AEM affiche un avertissement lorsqu’un auteur ouvre à nouveau ce fragment en mode d’édition. Il s’agit de signaler que les modifications apportées au fragment seront également répercutées sur les pages référencées.
 
 ## Suppression d’un fragment {#deleting-a-fragment}
 
@@ -314,12 +310,10 @@ Pour supprimer un fragment :
 2. Sélectionnez le fragment.
 
    >[!NOTE]
-   >
-   >L’action **Supprimer** n’est pas proposée comme action rapide.
+   L’action **Supprimer** n’est pas proposée comme action rapide.
 
 3. Sélectionnez **Supprimer** dans la barre d’outils.
 4. Confirmez l’action **Supprimer**.
 
    >[!CAUTION]
-   >
-   >Si le fragment est déjà référencé dans une page, un message d’avertissement vous demande de confirmer que vous souhaitez poursuivre et **forcer la suppression**. Le fragment et son composant de fragment de contenu seront supprimés de toutes les pages de contenu.
+   Si le fragment est déjà référencé dans une page, un message d’avertissement vous demande de confirmer que vous souhaitez poursuivre et **forcer la suppression**. Le fragment et son composant de fragment de contenu seront supprimés de toutes les pages de contenu.
