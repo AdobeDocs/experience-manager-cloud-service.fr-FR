@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2030'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -159,7 +159,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Date   Plage</td>
+   <td>Date    Plage</td>
    <td>Recherchez des ressources créées dans une plage spécifiée pour une propriété de date. Dans le panneau Rechercher, vous pouvez spécifier des dates de début et de fin.</td>
    <td>
     <ul>
@@ -282,7 +282,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Options  de la propriété</td>
+   <td>Options, propriété</td>
    <td>Recherchez une ou plusieurs propriétés de l’option.</td>
    <td>
     <ul>
@@ -316,7 +316,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Chemin   Navigateur</td>
+   <td>Chemin    Navigateur</td>
    <td>Fournissez un navigateur de chemins d’accès pour effectuer une recherche sous un chemin racine prédéfini.</td>
    <td>
     <ul>
