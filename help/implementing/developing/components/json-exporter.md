@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
@@ -81,7 +81,7 @@ Voir également :
 
 Pour plus d’informations, voir :
 
-* [Fragments de contenu dans le guide de l’utilisateur Ressources](/help/assets/content-fragments/content-fragments.md)
+* [Fragments de contenu du guide de l’utilisateur Assets](/help/assets/content-fragments/content-fragments.md)
 * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
 * [Création à l’aide de fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) et [composant Fragment de contenu](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/content-fragment-component.html)
+* [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) et [Composant Fragment de contenu](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/content-fragment-component.html)
