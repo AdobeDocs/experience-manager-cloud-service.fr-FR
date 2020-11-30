@@ -5,14 +5,14 @@ translation-type: tm+mt
 source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
 workflow-type: tm+mt
 source-wordcount: '654'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
 # Notes de mise à jour d’Adobe Experience Manager as a Cloud Service version 2020.4.0 {#release-notes}
 
-This page outlines the general release notes for [!DNL Experience Manager] as a Cloud Service 2020.4.0.
+Cette page décrit les notes de mise à jour générales pour [!DNL Experience Manager] as a Cloud Service 2020.4.0.
 
 ## Date de publication {#release-date}
 
@@ -31,7 +31,7 @@ Découvrez les nouvelles fonctionnalités, les améliorations et les correctifs 
    * [!DNL Asset Link] prend désormais en charge un [commutateur d’environnement Experience Manager](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) qui permet aux utilisateurs créatifs de se connecter facilement à un autre environnement [!DNL Experience Manager]. Cette fonctionnalité est utile, par exemple, pour les designers en agence qui travaillent avec plusieurs clients utilisant différents déploiements [!DNL Experience Manager Assets].
 
 * Les utilisateurs peuvent configurer des [workflows de post-traitement](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) démarrant automatiquement dans l’interface utilisateur [!UICONTROL Propriétés] de dossier pour les hiérarchies de dossiers spécifiques.
-   * L’interface utilisateur [!UICONTROL Propriétés] de dossier est simplifiée, avec un nouvel onglet [!UICONTROL Traitement du ou des fichier(s)] contenant un profil de métadonnées, un profil de traitement et la nouvelle configuration de workflow qui démarre automatiquement.
+   * L’interface utilisateur [!UICONTROL Propriétés] de dossier est simplifiée, avec un nouvel onglet [!UICONTROL Traitement des ressources] contenant un profil de métadonnées, un profil de traitement et la nouvelle configuration de workflow qui démarre automatiquement.
 
       ![Les profils de traitement peuvent s’appliquer facilement aux dossiers et toutes les ressources téléchargées dans les dossiers sont traitées à l’aide de ces profils](/help/assets/assets/asset-processing-folder-properties.png)
 
