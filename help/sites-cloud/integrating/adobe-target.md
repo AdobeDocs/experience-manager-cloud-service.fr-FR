@@ -1,9 +1,9 @@
 ---
 title: Intégration à Adobe Target
 description: 'Intégration à Adobe Target '
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Intégrez vos sites AEM à Adobe Target pour personnaliser le contenu dans vos 
 
 >[!NOTE]
 >
->Les clients Adobe Experience Manager as a Cloud Service qui ne disposent pas d’un compte Target existant peuvent demander l’accès au package Target Foundation pour Experience Cloud. Le package Foundation offre une utilisation limitée en volume de Target.
+>Les clients Adobe Experience Manager as a Cloud Service qui ne disposent pas d’un compte Target existant peuvent demander l’accès au package Target Foundation pour Experience Cloud.  Le package Foundation offre une utilisation limitée en volume de Target.
 
 
 Pour assurer l’intégration à Target, effectuez les tâches suivantes :
@@ -53,6 +53,7 @@ Pour assurer l’intégration à Target, effectuez les tâches suivantes :
 >
 >* La version 3.x est configurée avec [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* Les API 4.x sont configurées avec [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+
 >
 
 
@@ -85,6 +86,7 @@ Intégrer AEM as a Cloud Service à Adobe Target nécessite des connaissances 
 >* 2 000 expériences
 >* 50 mesures
 >* 50 segments de création de rapports
+
 >
 
 
