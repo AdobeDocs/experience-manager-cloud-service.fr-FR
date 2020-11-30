@@ -38,7 +38,7 @@ Par exemple, pour télécharger les fichiers journaux d’un environnement spéc
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-La commande suivante permet de retailler les journaux :
+La commande suivante permet d’afficher les dernières lignes des journaux :
 
 ```java
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
@@ -68,7 +68,7 @@ Environment Id Service    Name
 ```
 
 >[!NOTE]
->Alors que **les téléchargements de journaux** seront disponibles par le biais de l’interface utilisateur et de l’API, **** la fonction d’envoi de journaux est disponible uniquement sur l’API/CLI.
+>Alors que les **téléchargements de journaux** seront disponibles par le biais de l’interface utilisateur et de l’API, la fonction d’**affichage des dernières lignes des journaux** est disponible uniquement sur l’API/interface de ligne de commande.
 
 ### Ressources supplémentaires {#resources}
 
