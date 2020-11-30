@@ -1,29 +1,29 @@
 ---
-title: Tests fonctionnels - Cloud Services
-description: Tests fonctionnels - Cloud Services
+title: Tests fonctionnels – Cloud Services
+description: Tests fonctionnels – Cloud Services
 translation-type: tm+mt
 source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
 workflow-type: tm+mt
 source-wordcount: '415'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
 
 # Tests fonctionnels {#functional-testing}
 
-Les tests fonctionnels sont classés en deux types :
+Les tests fonctionnels sont classés en deux types :
 
-* Test fonctionnel du produit
+* Tests fonctionnels du produit
 * Tests fonctionnels personnalisés
 
-## Test fonctionnel du produit {#product-functional-testing}
+## Tests fonctionnels du produit {#product-functional-testing}
 
-Les tests fonctionnels du produit sont un ensemble de tests d’intégration HTTP (IT) stables qui s’articulent autour des fonctionnalités de base des AEM (par exemple, la création et la réplication) et qui empêchent le déploiement des modifications du code de l’application par les clients s’il rompt cette fonctionnalité de base.
+Les tests fonctionnels du produit forment un ensemble de tests d’intégration HTTP stables qui s’articulent autour de fonctionnalités de base d’AEM (par exemple, la création et la réplication) et qui empêchent le déploiement de modifications du code de l’application par les clients s’il ne respecte pas ces fonctionnalités de base.
 
-Les tests de fonctionnement du produit s’exécutent automatiquement lorsqu’un client déploie un nouveau code dans Cloud Manager et ne peuvent pas être ignorés.
+Les tests fonctionnels de produit s’exécutent automatiquement lorsqu’un client déploie un nouveau code dans Cloud Manager et ils ne peuvent pas être ignorés.
 
-Reportez-vous à la section Tests [Fonctionnels](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) du produit pour les exemples de tests.
+Référez-vous à [Tests fonctionnels du produit](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) pour accéder à des exemples de tests.
 
 ## Tests fonctionnels personnalisés {#custom-functional-testing}
 
@@ -32,7 +32,7 @@ L’étape des tests fonctionnels personnalisés du pipeline est toujours prése
 Cependant, si aucun fichier JAR de test n’est généré par la compilation, le test réussit par défaut.
 
 >[!NOTE]
->le bouton **Télécharger le journal** permet d’accéder à un fichier ZIP contenant les journaux du formulaire détaillé d’exécution du test. Ces journaux ne contiennent pas les journaux du processus d’exécution AEM proprement dit. Vous pouvez y accéder à l’aide de la fonctionnalité de téléchargement standard ou d’affichage des dernières lignes des journaux. Refer to [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) for more details.
+>Le bouton **Télécharger le journal** permet d’accéder à un fichier ZIP contenant les journaux du formulaire détaillé d’exécution du test. Ces journaux ne contiennent pas les journaux du processus d’exécution AEM proprement dit. Vous pouvez y accéder à l’aide de la fonctionnalité de téléchargement standard ou d’affichage des dernières lignes des journaux. Pour plus d’informations, reportez-vous à [Accès et gestion des journaux](/help/implementing/cloud-manager/manage-logs.md).
 
 
 ### Écriture de tests fonctionnels {#writing-functional-tests}
@@ -82,7 +82,7 @@ Les classes de test doivent être des tests JUnit normaux. L’infrastructure de
 
 Les classes de test étant des tests JUnit, elles peuvent être exécutées à partir d’IDE Java standard comme Eclipse, IntelliJ, NetBeans, etc.
 
-Toutefois, lors de l’exécution de ces tests, il sera nécessaire de définir diverses propriétés système attendues des clients aem-testing (et des clients Sling Testing sous-jacents).
+Cependant, lors de l’exécution de ces tests, il est nécessaire de définir diverses propriétés système attendues par les clients de test AEM (et les clients de test Sling sous-jacents).
 
 Les propriétés système sont les suivantes :
 
