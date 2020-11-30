@@ -1,22 +1,22 @@
 ---
 title: Détails de l’environnement de génération
-description: Détails de la création d'Environnements - Cloud Services
+description: Détails de l’environnement de génération – Cloud Services
 translation-type: tm+mt
 source-git-commit: 3e76f7273393f104347611a8f0238e3722714b2b
 workflow-type: tm+mt
 source-wordcount: '732'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 
-# Présentation de l’environnement de création {#understanding-build-environment}
+# Présentation de l’environnement de génération {#understanding-build-environment}
 
 ## Détails de l’environnement de génération {#build-environment-details}
 
-Cloud Manager crée et teste votre code à l&#39;aide d&#39;un environnement de création spécialisé. Cet environnement comporte les attributs suivants :
+Cloud Manager crée et teste votre code à l’aide d’un environnement de génération spécialisé. Cet environnement comporte les attributs suivants :
 
-* L&#39;environnement de création est basé sur Linux, dérivé de Ubuntu 18.04.
+* L’environnement de génération est basé sur Linux, dérivé de Ubuntu 18.04.
 * Apache Maven 3.6.0 est installé.
 * Les versions Java installées sont Oracle JDK 8u202 et 11.0.2.
 * D’autres packages système nécessaires sont installés :
@@ -27,25 +27,25 @@ Cloud Manager crée et teste votre code à l&#39;aide d&#39;un environnement de 
    * imagemagick
    * graphicsmagick
 
-* D&#39;autres packages peuvent être installés au moment de la création, comme décrit [ci-dessous](#installing-additional-system-packages).
+* D’autres packages peuvent être installés au moment de la génération, comme décrit [ci-dessous](#installing-additional-system-packages).
 * Chaque génération a lieu dans un environnement vierge ; le conteneur de génération ne conserve aucun état entre les exécutions.
-* Maven est toujours exécuté avec les trois commandes suivantes :
+* Maven est toujours exécuté avec les trois commandes suivantes :
 
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
-* Maven est configuré au niveau du système avec un fichier settings.xml qui inclut automatiquement le référentiel public Adobe **Artifact**. (See [Adobe Public Maven Repository](https://repo.adobe.com/) for more details).
+* Maven est configuré au niveau du système avec un fichier settings.xml qui inclut automatiquement le référentiel public Adobe **Artifact**. (Pour plus d’informations, consultez le [référentiel Maven public d’Adobe](https://repo.adobe.com/)).
 
 >[!NOTE]
 >Bien que Cloud Manager ne définisse pas de version spécifique du `jacoco-maven-plugin`, la version utilisée doit être au moins `0.7.5.201505241946`.
 
-### Utilisation de la prise en charge de Java 11 {#using-java-support}
+### Utilisation de la prise en charge de Java 11 {#using-java-support}
 
 Cloud Manager prend désormais en charge la création de projets clients avec Java 8 et Java 11. Par défaut, les projets sont créés à l’aide de Java 8.
 
-Customers who want to use Java 11 in their projects can do so using the [Apache Maven Toolchains Plugin](https://maven.apache.org/plugins/maven-toolchains-plugin/).
+Les clients souhaitant utiliser Java 11 dans leurs projets peuvent le faire via le module [Apache Maven Toolchain](https://maven.apache.org/plugins/maven-toolchains-plugin/).
 
-À cet effet, dans le fichier pom.xml, ajoutez une `<plugin>` entrée du type suivant :
+À cet effet, dans le fichier pom.xml, ajoutez une entrée `<plugin>` du type suivant :
 
 ```
 <plugin>
@@ -71,7 +71,7 @@ Customers who want to use Java 11 in their projects can do so using the [Apache 
 ```
 
 >[!NOTE]
->Supported vendor values are `oracle`  and `sun`and the supported version values are `1.8`, `1.11`, and `11`.
+>Les valeurs des fournisseurs prises en charge sont `oracle` et `sun`, et les valeurs des versions prises en charge sont `1.8`, `1.11` et `11`.
 
 >[!NOTE]
 >La création du projet Cloud Manager continue à utiliser Java 8 pour appeler Maven. De ce fait, la vérification ou l’application de la version Java configurée dans le module externe de la chaîne d’outils par le biais de modules externes comme [Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/) ne fonctionne pas et ils ne doivent pas être utilisés.
@@ -111,7 +111,7 @@ Les variables actives peuvent être répertoriées :
 
 `$ aio cloudmanager:list-pipeline-variables PIPELINEID`
 
-Les noms des variables ne peuvent contenir que des caractères alphanumériques et des caractères de soulignement (_). Par convention, les noms doivent être entièrement en majuscules. Il existe une limite de 200 variables par pipeline, chaque nom doit comporter moins de 100 caractères et chaque valeur doit comporter moins de 2 048 caractères dans le cas des variables de type chaîne et 500 caractères dans le cas des variables de type chaîne secrète.
+Les noms des variables ne peuvent contenir que des caractères alphanumériques et des caractères de soulignement (_). Par convention, les noms doivent être entièrement en majuscules. Chaque pipeline présente une limite de 200 variables, chaque nom doit comporter moins de 100 caractères et chaque valeur doit comporter moins de 2 048 caractères dans le cas des variables de type chaîne et 500 caractères dans le cas des variables de type secretString.
 
 En cas d’utilisation dans un fichier `Maven pom.xml`, il est généralement utile de mapper ces variables aux propriétés Maven en suivant une syntaxe similaire à celle-ci :
 
@@ -131,7 +131,7 @@ En cas d’utilisation dans un fichier `Maven pom.xml`, il est généralement ut
 
 ## Installation de packages système supplémentaires {#installing-additional-system-packages}
 
-Certaines versions nécessitent d&#39;autres packages système pour fonctionner entièrement. Par exemple, une version peut appeler un script Python ou ruby et, par conséquent, doit se voir installer un interprète de langue approprié. Pour ce faire, appelez le plug-in [exec-maven-plugin](https://www.mojohaus.org/exec-maven-plugin/) pour invoquer APT. Cette exécution doit généralement être encapsulée dans un profil Maven spécifique à Cloud Manager. Par exemple, pour installer Python :
+Certaines versions nécessitent d’autres packages système pour fonctionner entièrement. Par exemple, une version peut appeler un script Python ou ruby et, par conséquent, doit se voir installer un interprète de langue approprié. Pour ce faire, appelez le plug-in [exec-maven-plugin](https://www.mojohaus.org/exec-maven-plugin/) pour invoquer APT. Cette exécution doit généralement être encapsulée dans un profil Maven spécifique à Cloud Manager. Par exemple, pour installer Python :
 
 ```xml
         <profile>
@@ -187,4 +187,4 @@ Certaines versions nécessitent d&#39;autres packages système pour fonctionner 
 Cette même technique peut être utilisée pour installer des packages spécifiques à la langue, c’est-à-dire utilisée `gem` pour les packages RubyGems ou `pip` pour les packages Python.
 
 >[!NOTE]
->Installer un package système de cette manière ne l&#39;installe **pas** dans l&#39;environnement d&#39;exécution utilisé pour exécuter Adobe Experience Manager. Si vous avez besoin d&#39;un package système installé sur l&#39;environnement AEM, contactez votre représentant Adobe.
+>Installer un package système de cette manière ne l’installe **pas** dans l’environnement d’exécution utilisé pour Adobe Experience Manager. Si vous avez besoin d’installer un package système dans l’environnement AEM, contactez votre représentant Adobe.
