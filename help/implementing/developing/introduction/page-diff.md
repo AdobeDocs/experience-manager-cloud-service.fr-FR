@@ -1,11 +1,11 @@
 ---
 title: Développement et outil de comparaison des pages
-description: Comprendre le fonctionnement de la fonction Diff de page et son impact sur un développeur
+description: Découvrez le fonctionnement de l’outil de comparaison des pages et son impact sur un développeur
 translation-type: tm+mt
 source-git-commit: 57a9026dd944547196e53fecb1cf1213ed793af7
 workflow-type: tm+mt
 source-wordcount: '336'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
@@ -18,13 +18,13 @@ La création de contenu est un processus itératif. Pour être efficace lorsque 
 
 L’outil de comparaison des pages permet à un utilisateur de comparer la page active aux lancements, aux versions précédentes, etc. Pour plus d’informations sur cette fonctionnalité utilisateur, voir [Outil de comparaison des pages](/help/sites-cloud/authoring/features/page-diff.md).
 
-## Détails de l&#39;opération {#operation-details}
+## Détails de l’opération {#operation-details}
 
-Lors de la comparaison de versions d’une page, la version précédente que l’utilisateur souhaite comparer est recréée par AEM en arrière-plan afin de faciliter la comparaison. Ceci est nécessaire pour pouvoir générer le contenu [pour une comparaison](/help/sites-cloud/authoring/features/page-diff.md)côte à côte.
+Lors de la comparaison des versions d’une page, la version précédente que l’utilisateur souhaite comparer est recréée en arrière-plan par AEM pour faciliter la comparaison. Cette opération est nécessaire pour pouvoir restituer le contenu [pour une comparaison côte à côte](/help/sites-cloud/authoring/features/page-diff.md).
 
-Cette opération de loisirs est réalisée par AEM en interne et est transparente pour l&#39;utilisateur et ne nécessite aucune intervention. Cependant, un administrateur qui consulte le référentiel par exemple dans CRX DE Lite voit ces versions recréées dans la structure de contenu.
+Cette opération de recréation, réalisée par AEM en interne, est transparente pour l’utilisateur et ne nécessite aucune intervention. Cependant, un administrateur qui consulte le référentiel, par exemple dans CRX DE Lite, voit ces versions recréées dans la structure de contenu.
 
-Lors de la comparaison du contenu, l’arborescence entière jusqu’à la page à comparer est recréée à l’emplacement suivant :
+Lorsque le contenu est comparé, l’ensemble de l’arborescence jusqu’à la page à comparer est recréé à l’emplacement suivant :
 
 `/tmp/versionhistory/`
 
@@ -32,9 +32,9 @@ Une tâche de nettoyage s’exécute automatiquement pour nettoyer ce contenu te
 
 ## Restrictions {#limitations}
 
-La différence se produit côté client par le biais de la comparaison DOM, ce qui rend le processus de différenciation simple. Cependant, il existe un certain nombre de limitations qui doivent être prises en compte par le développeur.
+L’outil d’analyse des différences est exécuté côté client par comparaison DOM, ce qui simplifie le processus de différenciation. Il existe cependant un certain nombre de restrictions que le développeur doit prendre en compte.
 
-* Cette fonctionnalité utilise des classes CSS qui ne sont pas placées dans un espace de noms sur le produit AEM. Si d’autres classes CSS personnalisées ou des classes CSS tierces portant le même nom sont incluses sur la page, l’affichage de la comparaison peut s’en trouver affectée.
+* Cette fonctionnalité utilise des classes CSS qui ne sont pas placées dans un espace de noms sur le produit AEM. Si d’autres classes CSS personnalisées ou des classes CSS tierces portant le même nom sont incluses sur la page, l’affichage de la comparaison peut s’en trouver affecté.
 
    * `html-added`
    * `html-removed`
@@ -45,6 +45,6 @@ La différence se produit côté client par le biais de la comparaison DOM, ce q
 
 * Étant donné que la comparaison s’effectue du côté client et s’exécute au chargement de la page, les réglages apportés au DOM après l’exécution de ce service de comparaison ne sont pas pris en compte. Cela peut avoir une incidence sur éléments suivants :
 
-   * Composants qui utilisent AJAX pour inclure du contenu
-   * des applications sur une seule page ;
+   * Composants qui utilisent AJAX pour intégrer du contenu
+   * Applications sur une seule page
    * Composants basés sur JavaScript qui manipulent le DOM lors d’une interaction de l’utilisateur
