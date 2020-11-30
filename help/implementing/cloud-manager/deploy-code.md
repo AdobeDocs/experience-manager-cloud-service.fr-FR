@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
 workflow-type: tm+mt
 source-wordcount: '985'
-ht-degree: 81%
+ht-degree: 85%
 
 ---
 
@@ -42,7 +42,7 @@ Une fois que vous avez configuré votre pipeline de production (référentiel, e
    Le **déploiement en environnement intermédiaire** comprend les étapes suivantes :
 
    * Validation : cette étape permet de s’assurer que le pipeline est configuré pour utiliser les ressources actuellement disponibles ; par exemple, la branche configurée existe, les environnements sont disponibles, etc.
-   * Test de création et d’unité : cette étape exécute un processus de création en conteneur. Pour plus d’informations sur l’environnement de création, voir Détails [de l’Environnement de](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md) création.
+   * Test de création et d’unité : cette étape exécute un processus de création en conteneur. See [Build Environment Details](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md) for details on the build environment.
    * Analyse du code : cette étape évalue la qualité du code de votre application. Voir Test [de la qualité du](/help/implementing/cloud-manager/code-quality-testing.md) code pour plus d’informations sur le processus de test.
    * Compiler des images : cette étape comprend un fichier journal du processus utilisé pour compiler des images. Ce processus est responsable de la transformation du contenu et des modules du Dispatcher générés par l’étape de compilation en images Docker et en configuration Kubernetes.
    * Déploiement dans l’environnement d’évaluation.
@@ -56,8 +56,8 @@ Refer to [Product Functional Testing](/help/implementing/cloud-manager/functiona
    * Tests fonctionnels personnalisés : cette étape du pipeline est toujours présente et ne peut pas être ignorée. Cependant, si aucun fichier JAR de test n’est généré par la compilation, le test réussit par défaut.\
       Refer to [Custom Functional Testing](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) for more details.
 
-   * Audit d’expérience : Cette étape du pipeline est toujours présente et ne peut pas être ignorée. Lorsqu’un pipeline de production est exécuté, une étape de contrôle d’expérience est incluse après des tests fonctionnels personnalisés qui exécuteront les contrôles. Les pages configurées seront envoyées au service et évaluées. Les résultats sont informatifs et permettent à l’utilisateur de voir les scores et le changement entre les scores actuel et précédent. Cette connaissance est utile pour déterminer si une régression est introduite avec le déploiement actuel.
-Pour plus d’informations, voir [Comprendre les résultats](/help/implementing/cloud-manager/experience-audit-testing.md) de l’audit d’expérience.
+   * Audit d’expérience : Cette étape du pipeline est toujours présente et ne peut pas être ignorée. Lorsqu’un pipeline de production est exécuté, une étape de contrôle d’expérience est incluse après des tests fonctionnels personnalisés qui exécuteront les contrôles. Les pages configurées seront envoyées au service et évaluées. Les résultats sont informatifs et permettent à l’utilisateur de voir les scores et le changement entre les scores actuels et précédents. Ces informations sont utiles pour déterminer si une régression sera introduite avec le déploiement actuel.
+Refer to [Understanding Experience Audit results](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
 
       ![](assets/testing-tab.png)
 
@@ -88,7 +88,7 @@ Lorsque Cloud Manager se déploie sur des topologies autres que de production, 
 
    >[!NOTE]
    >
-   >Tous les artefacts AEM sont déployés à la fois sur author et publishers. Les modes d’exécution doivent être exploités lorsque des configurations spécifiques aux noeuds sont requises. Pour en savoir plus sur la façon dont les modes d&#39;exécution vous permettent d&#39;ajuster votre instance AEM pour un objectif spécifique, reportez-vous à la section Modes d&#39;exécution.
+   >Tous les artefacts AEM sont déployés à la fois sur l’instance de création et les instances de publication. Les modes d’exécution doivent être exploités lorsque des configurations spécifiques aux noeuds sont requises. Pour en savoir plus sur la façon dont les modes d&#39;exécution vous permettent d&#39;ajuster votre instance AEM pour un objectif spécifique, reportez-vous à la section Modes d&#39;exécution.
 
 1. L’artefact dispatcher est déployé sur chaque dispatcher comme suit :
 
@@ -121,6 +121,6 @@ Les déploiements en production suivent généralement les mêmes étapes que ci
 1. Lorsque dispatcher1 fonctionne à nouveau, détachement de dispatcher2 de l’équilibreur de charge.
 1. Déploiement des packages AEM sur publish2 et le package dispatcher sur dispatcher2. Purge du cache du dispatcher.
 1. Replacement du dispatcher2 dans l’équilibreur de charge.
-Ce processus se poursuit jusqu’à ce que le déploiement ait atteint tous les publishers et dispatchers dans la topologie.
+Ce processus se poursuit jusqu’à ce que le déploiement ait atteint toutes les instances de publication et tous les Dispatchers dans la topologie.
 
 
