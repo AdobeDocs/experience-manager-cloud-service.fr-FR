@@ -146,11 +146,11 @@ Un appel d’API échoue avec un code de réponse `500` si le nœud parent du ch
 
 Pour plus d’informations sur la création d’une ressource à l’aide d’API, voir [Chargement de ressources](developer-reference-material-apis.md). La création d’une ressource à l’aide de l’API HTTP est obsolète.
 
-## Mise à jour d’un fichier binaire de ressource {#update-asset-binary}
+## Mettre à jour un fichier binaire de ressource {#update-asset-binary}
 
 Pour plus d’informations sur la mise à jour de fichiers binaires de ressources à l’aide d’API, voir [Chargement de ressources](developer-reference-material-apis.md). La mise à jour d’un fichier binaire de ressource à l’aide de l’API HTTP est obsolète.
 
-## Mise à jour des métadonnées d’une ressource {#update-asset-metadata}
+## Mettre à jour les métadonnées d’une ressource {#update-asset-metadata}
 
 Met à jour les propriétés de métadonnées d’une ressource. Si vous mettez à jour une propriété du namespace `dc:`, l’API met à jour cette même propriété dans le namespace `jcr`. L’API ne synchronise pas les propriétés des deux namespaces.
 
