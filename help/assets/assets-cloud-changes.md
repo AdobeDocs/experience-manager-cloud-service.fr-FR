@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
 source-wordcount: '626'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ Adobe Experience Manager as a Cloud Service offre de nombreuses nouvelles fon
 Les principales différences par rapport à Experience Manager 6.5 se situent dans les domaines suivants :
 
 * [Ingestion et chargement de ressources](#asset-ingestion).
-* [Microservices de ressources pour le traitement](#asset-microservices)natif du cloud.
+* [Microservices de ressources pour le traitement natif dans le cloud](#asset-microservices).
 * [Suppression de l’interface utilisateur classique](#classic-ui).
 
 >[!NOTE]
@@ -48,7 +48,7 @@ Les rendus standard générés avec les microservices de ressources sont stocké
 
 ## Développement et test de microservices de ressources {#asset-microservices}
 
-Les microservices de ressources offrent un traitement évolutif et résilient des ressources à l’aide des services cloud. Adobe gère les services cloud pour un traitement optimal des différents types de ressources et des options de traitement. L’utilisation des microservices de ressources permet de se passer d’outils et de méthodes de rendu tiers (comme ImageMagick) et de simplifier les configurations, tout en fournissant des fonctionnalités prêtes à l’emploi pour les types de fichiers courants. Vous pouvez désormais traiter un [large éventail de types de fichiers](/help/assets/file-format-support.md), dans des formats prêts à l’emploi plus nombreux que les versions précédentes d’Experience Manager. Par exemple, l’extraction de miniatures des formats PSD et PSB est désormais possible, car elle nécessitait auparavant des solutions tierces telles qu’ImageMagick. Vous ne pouvez pas utiliser les configurations complexes d’ImageMagick pour la configuration des [!UICONTROL Profils de traitement]. Utilisation [!DNL Dynamic Media] pour le transcodage FFmpeg des vidéos et utilisation de profils de traitement pour le transcodage de [base des vidéos](/help/assets/manage-video-assets.md#transcode-video)MP4.
+Les microservices de ressources offrent un traitement évolutif et résilient des ressources à l’aide des services cloud. Adobe gère les services cloud pour un traitement optimal des différents types de ressources et des options de traitement. L’utilisation des microservices de ressources permet de se passer d’outils et de méthodes de rendu tiers (comme ImageMagick) et de simplifier les configurations, tout en fournissant des fonctionnalités prêtes à l’emploi pour les types de fichiers courants. Vous pouvez désormais traiter un [large éventail de types de fichiers](/help/assets/file-format-support.md), dans des formats prêts à l’emploi plus nombreux que les versions précédentes d’Experience Manager. Par exemple, l’extraction de miniatures des formats PSD et PSB est désormais possible, car elle nécessitait auparavant des solutions tierces telles qu’ImageMagick. Vous ne pouvez pas utiliser les configurations complexes d’ImageMagick pour la configuration des [!UICONTROL Profils de traitement]. Utilisez [!DNL Dynamic Media] pour le transcodage FFmpeg des vidéos et les profils de traitement pour le [transcodage de base des vidéos MP4](/help/assets/manage-video-assets.md#transcode-video).
 
 Les microservices de ressources, natifs dans le cloud, sont automatiquement mis en service et connectés à Experience Manager dans les programmes et environnements clients gérés dans Cloud Manager. Pour étendre ou personnaliser Experience Manager, les développeurs peuvent utiliser le contenu existant ou les ressources dont les rendus sont générés dans un environnement cloud, afin de tester et valider leur code avec des ressources (en les utilisant, les affichant et les téléchargeant).
 
