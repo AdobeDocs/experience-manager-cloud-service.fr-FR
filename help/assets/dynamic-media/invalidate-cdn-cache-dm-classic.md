@@ -1,30 +1,30 @@
 ---
-title: Invalidation du cache CDN par le biais de Contenu multimédia dynamique classique
-description: L’annulation de la validité du contenu CDN en cache vous permet de mettre à jour rapidement les ressources diffusées par Dynamic Media, au lieu d’attendre l’expiration du cache.
+title: Invalidation du cache de réseau CDN par le biais de Dynamic Media Classic
+description: L’invalidation du contenu de réseau de diffusion de continu (CDN) en cache vous permet de mettre à jour rapidement les ressources diffusées par Dynamic Media, au lieu d’attendre l’expiration du cache.
 translation-type: tm+mt
 source-git-commit: 8f555f2cf97aaeabfae24919ad5861a2512b0903
 workflow-type: tm+mt
 source-wordcount: '682'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
-# Invalidation du cache CDN par le biais de Contenu multimédia dynamique classique {#invalidating-your-cdn-cached-content}
+# Invalidation du cache de réseau CDN par le biais de Dynamic Media Classic {#invalidating-your-cdn-cached-content}
 
-Les ressources Dynamic Media sont mises en cache par le réseau CDN en vue d’une diffusion rapide. Cependant, lorsque vous appliquez des mises à jour à une ressource, vous pouvez faire en sorte qu’elles soient prises immédiatement en compte. L’annulation de la validité du contenu CDN en cache vous permet de mettre à jour rapidement les ressources diffusées par Dynamic Media, au lieu d’attendre l’expiration du cache.
+Les ressources Dynamic Media sont mises en cache par le réseau CDN en vue d’une diffusion rapide. Cependant, lorsque vous appliquez des mises à jour à une ressource, vous pouvez faire en sorte qu’elles soient prises immédiatement en compte. L’invalidation du contenu de réseau de diffusion de continu (CDN) en cache vous permet de mettre à jour rapidement les ressources diffusées par Dynamic Media, au lieu d’attendre l’expiration du cache.
 
 >[!IMPORTANT]
 >
->Ces étapes s’appliquent uniquement à Contenu multimédia dynamique dans AEM 6.5, Service Pack 5 ou version antérieure. <!-- If you are using Dynamic Media in AEM as a Cloud Service, [use the new steps found here](/help/assets/invalidate-cdn-cache-dynamic-media.md). -->
+>Ces étapes s’appliquent uniquement à Dynamic Media dans AEM 6.5, Service Pack 5 ou version antérieure. <!-- If you are using Dynamic Media in AEM as a Cloud Service, [use the new steps found here](/help/assets/invalidate-cdn-cache-dynamic-media.md). -->
 
 Voir aussi [Présentation du cache dans Dynamic Media Classic (Scene7)](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
-**Pour invalider votre cache CDN au moyen de Dynamic Media Classic :**
+**Pour invalider votre cache de réseau CDN au moyen de Dynamic Media Classic :**
 
 1. Utilisez l’une des méthodes suivantes :
 
-   * Dans votre navigateur Web, connectez-vous à votre compte Dynamic Media Classic :
+   * Dans votre navigateur web, connectez-vous à votre compte Dynamic Media Classic :
 
       [https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -54,7 +54,7 @@ Voir aussi [Présentation du cache dans Dynamic Media Classic (Scene7)](https:
 
    Après avoir cliqué sur **[!UICONTROL Continuer]**, un indicateur s’affiche pour vous donner une estimation de la durée nécessaire pour effacer le cache.
 
-   Si vous avez sélectionné plusieurs ressources, puis cliqué sur **[!UICONTROL Fichier > Invalider sur le réseau de diffusion de contenu]****[!UICONTROL , chaque ressource est référencée dans l’URL du modèle enregistrée]**. Par conséquent, vous pouvez définir un **[!UICONTROL modèle d’invalidation sur le réseau de diffusion de contenu]** faisant référence à chaque URL de paramètre d’image prédéfini qui figure sur votre site web (comme les détails d’un produit, les résultats de la recherche, etc.). Par la suite, lorsque vous sélectionnerez une ou plusieurs images à invalider dans le cache, les URL seront automatiquement renseignées dans l’interface.
+   Si vous avez sélectionné plusieurs ressources, puis cliqué sur **[!UICONTROL Fichier > Invalider sur le réseau de diffusion de contenu]**, chaque ressource est référencée dans l’**[!UICONTROL URL du modèle]** enregistrée. Par conséquent, vous pouvez définir un **[!UICONTROL modèle d’invalidation sur le réseau de diffusion de contenu]** faisant référence à chaque URL de paramètre d’image prédéfini qui figure sur votre site web (comme les détails d’un produit, les résultats de la recherche, etc.). Par la suite, lorsque vous sélectionnerez une ou plusieurs images à invalider dans le cache, les URL seront automatiquement renseignées dans l’interface.
 
    >[!NOTE]
    >
