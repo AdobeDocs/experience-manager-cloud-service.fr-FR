@@ -25,8 +25,8 @@ Chacun des rôles possède des autorisations, des tâches préconfigurées ou de
 | Mettre à jour l’environnement | Mettre à jour les Environnements Prod+Stage, Dev, Playground. | x | x |  |  |
 | Supprimer l’environnement | Supprimer les Environnements non-prod, Dev, Playground. | x | x |  |  |
 | Supprimer l’environnement | Supprimer l&#39;Environnement Prod+Stage. |  |  |  |  |
-| Configuration du Programme | Configurez le Programme (y compris les indicateurs clés de performance). | x |  |  |  |
-| Configuration du Programme | Obtenez L’Accès De Validation. |  | x |  | x |
+| Configuration du programme | Configurez le Programme (y compris les indicateurs clés de performance). | x |  |  |  |
+| Configuration du programme | Obtenez L’Accès De Validation. |  | x |  | x |
 | Configuration du tuyau | Configuration ou modification du tuyau. |  | x |  |  |
 | Exécution du pipeline | Début du pipeline. | x | x |  |  |
 | Exécution du pipeline | Rejeter/Approuver les échecs importants à trois niveaux. | x | x | x |  |
