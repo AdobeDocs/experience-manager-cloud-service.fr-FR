@@ -1,6 +1,6 @@
 ---
-title: 'Outil de comparaison des pages  '
-description: De fait, l’outil de comparaison des pages permet d’afficher côte à côte deux pages pour les comparer en mettant en évidence leurs différences
+title: Outil de comparaison des pages
+description: De fait, l’outil de comparaison des pages permet d’afficher côte à côte deux pages pour les comparer en mettant en évidence leurs différences.
 translation-type: tm+mt
 source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
@@ -10,13 +10,13 @@ ht-degree: 100%
 ---
 
 
-# Outil de comparaison des pages   {#page-diff}
+# Outil de comparaison des pages {#page-diff}
 
 ## Présentation {#introduction}
 
 La création de contenu est un processus itératif. Pour être efficace lorsque vous créez du contenu, vous devez pouvoir voir ce qui a changé d’une version à l’autre. Afficher les versions en alternance est une méthode inefficace avec un fort risque d’erreur. Pour comparer deux pages, il est plus facile pour un auteur d’avoir côte à côte la page en cours et une version antérieure.
 
-De fait, l’outil de comparaison des pages permet d’afficher côte à côte deux pages pour les comparer en mettant en évidence leurs différences
+De fait, l’outil de comparaison des pages permet d’afficher côte à côte deux pages pour les comparer en mettant en évidence leurs différences.
 
 >[!CAUTION]
 >
@@ -33,9 +33,9 @@ L’outil de comparaison côte à côte permet de comparer les éléments suivan
 * [Lancements](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) : un lancement et sa source
 * Copies de langue : une page avant et après (re)traduction <!-- [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation-->
 
-Reportez-vous aux rubriques correspondantes pour connaître la procédure de comparaison pour ces différents éléments.
+Reportez-vous aux rubriques correspondantes afin de connaître la procédure de comparaison pour ces différents éléments.
 
-### Présentation des différences   {#presentation-of-differences}
+### Présentation des différences {#presentation-of-differences}
 
 La présentation des différences reste la même, quel que soit le contenu à comparer.
 
@@ -68,7 +68,7 @@ Notez que la couleur bleue est utilisée à la fois pour les modifications et le
 >
 >Lorsque vous comparez des copies de langue, la mise en surbrillance est désactivée. En effet, dans la mesure où la traduction modifie tout le contenu, la mise en surbrillance ne présente aucun intérêt.
 
-### Affichage en mode plein écran   {#fullscreen-and-exiting}
+### Affichage en mode plein écran {#fullscreen-and-exiting}
 
 Si vous souhaitez vous concentrer sur un contenu spécifique, vous pouvez cliquer sur l’icône du mode plein écran pour l’un ou l’autre des deux « côtés » de votre comparaison. Cela vous permet d’afficher la version en plein écran dans la fenêtre du navigateur.
 
