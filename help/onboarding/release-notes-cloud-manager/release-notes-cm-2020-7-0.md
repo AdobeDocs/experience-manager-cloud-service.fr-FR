@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
 workflow-type: tm+mt
 source-wordcount: '309'
-ht-degree: 71%
+ht-degree: 78%
 
 ---
 
@@ -22,7 +22,7 @@ La date de publication de Cloud Manager en AEM Cloud Service 2020.7.0 est le 09 
 
 * La page Environnements a été repensée.
 
-* Les environnements en veille prolongée affichent désormais un état discret dans Cloud Manager.
+* Les environnements en veille affichent désormais un état discret dans Cloud Manager.
 
 * Le nombre de variables d’environnement par environnement a été porté à 200.
 
@@ -33,13 +33,13 @@ La date de publication de Cloud Manager en AEM Cloud Service 2020.7.0 est le 09 
 * Les référentiels Maven privés liés à l’authentification sont désormais pris en charge.
 
 * Le conteneur de création Cloud Manager prend désormais en charge Java 8 et Java 11.
-Consultez [Utilisation de la prise en charge](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) de Java 11 pour plus d’informations.
+Consultez [Utilisation de la prise en charge de Java 11](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) pour plus d’informations.
 
 ### Correctifs {#bug-fixes-cm}
 
 * Le lien entre Cloud Manager et Developer Console était actif avant la création complète des environnements alors qu’il ne devait pas l’être.
 
-* Le lien direct vers Developer Console à partir de Cloud Manager n’affichait pas l’option permettant de mettre en veille/réactiver un environnement de programme sandbox.
+* Le lien direct vers Developer Console à partir de Cloud Manager n’affichait pas l’option permettant de mettre en veille/réactiver un environnement de programme Sandbox.
 
 * Les options **Annuler** et **Enregistrer** sur la page Modification d’un pipeline hors production n’étaient pas toujours visibles.
 
@@ -47,7 +47,7 @@ Consultez [Utilisation de la prise en charge](/help/onboarding/getting-access-to
 
 * Lors de la création d’un programme, le nom suggéré renvoyait parfois un duplicata de nom de programme existant.
 
-* Certains journaux d&#39;étape de pipeline volumineux n&#39;ont pas pu être téléchargés de manière cohérente via l&#39;interface utilisateur.
+* Certains journaux d’étape de pipeline volumineux n’ont pas pu être téléchargés de manière cohérente via l’interface utilisateur.
 
 * La validation des noms d’environnement comportait une erreur de décalage d’une unité.
 
