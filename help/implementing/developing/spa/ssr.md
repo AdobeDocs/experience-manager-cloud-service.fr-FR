@@ -1,6 +1,6 @@
 ---
-title: SPA et rendu côté serveur
-description: L’utilisation du rendu côté serveur dans votre application d’une seule page peut accélérer le chargement initial de la page, puis transmettre le rendu au client.
+title: Rendu SPA et côté serveur
+description: L’utilisation du rendu côté serveur dans votre SPA peut accélérer le chargement initial de la page, puis transmettre le rendu au client.
 translation-type: tm+mt
 source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
 workflow-type: tm+mt
@@ -10,15 +10,15 @@ ht-degree: 0%
 ---
 
 
-# SPA et rendu côté serveur{#spa-and-server-side-rendering}
+# Rendu SPA et côté serveur{#spa-and-server-side-rendering}
 
-Les applications d’une seule page (SPA) peuvent offre à l’utilisateur une expérience riche et dynamique qui réagit et se comporte de manière familière, souvent comme une application native. [Pour ce faire, le client doit charger le contenu à l’avance, puis gérer l’interaction](introduction.md#how-does-a-spa-work) utilisateur de manière intensive, ce qui réduit le volume de communication nécessaire entre le client et le serveur, ce qui rend l’application plus réactive.
+Les applications d’une seule page (SPA) peuvent offre à l’utilisateur une expérience riche et dynamique qui réagit et se comporte de manière familière, souvent tout comme une application native. [Pour ce faire, le client doit charger le contenu à l’avance, puis gérer l’interaction](introduction.md#how-does-a-spa-work) utilisateur de manière intensive, ce qui réduit le volume de communication nécessaire entre le client et le serveur, ce qui rend l’application plus réactive.
 
 Toutefois, cela peut entraîner des temps de chargement initiaux plus longs, en particulier si le SPA est volumineux et riche en contenu. Pour optimiser les temps de chargement, une partie du contenu peut être rendue côté serveur. L’utilisation du rendu côté serveur (SSR) peut accélérer le chargement initial de la page, puis transmettre le rendu au client.
 
 ## Quand utiliser SSR {#when-to-use-ssr}
 
-SSR n&#39;est pas requis pour tous les projets. Bien que AEM appuie pleinement la stratégie SSR JS pour l&#39;application d&#39;une seule page, l&#39;Adobe ne recommande pas sa mise en oeuvre systématique pour chaque projet.
+SSR n&#39;est pas requis pour tous les projets. Bien que AEM appuie pleinement la stratégie de développement social conjointe pour SPA, l&#39;Adobe ne recommande pas de la mettre en oeuvre systématiquement pour chaque projet.
 
 Lorsque vous décidez de mettre en oeuvre des SSR, vous devez d&#39;abord estimer la complexité, les efforts et les coûts supplémentaires associés à l&#39;ajout de SSR de façon réaliste pour le projet, y compris la maintenance à long terme. Une architecture SSR ne devrait être choisie que lorsque la valeur ajoutée dépasse clairement les coûts estimés.
 
@@ -38,7 +38,7 @@ Pour plus d’informations sur Adobe I/O Runtime, voir
 * [https://www.adobe.io/apis/experienceplatform/runtime.html](https://www.adobe.io/apis/experienceplatform/runtime.html) - pour une présentation du service
 * [https://www.adobe.io/apis/experienceplatform/runtime/docs.html](https://www.adobe.io/apis/experienceplatform/runtime/docs.html) - pour obtenir une documentation détaillée sur la plateforme
 
-Les sections suivantes décrivent comment Adobe I/O Runtime peut être utilisé pour implémenter la technologie SSR pour votre application monopage dans deux modèles différents :
+Les sections suivantes décrivent comment Adobe I/O Runtime peut être utilisé pour implémenter la technologie SSR pour votre SPA dans deux modèles différents :
 
 * [Flux de communication AEM](#aem-driven-communication-flow)
 * [Flux de communication piloté par Adobe I/O Runtime](#adobe-i-o-runtime-driven-communication-flow)
@@ -74,18 +74,18 @@ Les champs suivants sont disponibles pour la configuration :
 
 ## Flux de communication AEM {#aem-driven-communication-flow}
 
-Lors de l’utilisation de la technologie SSR, le processus [d’interaction des](introduction.md#interaction-with-the-spa-editor) composants des applications monopages en AEM inclut une phase au cours de laquelle le contenu initial de l’application est généré sur Adobe I/O Runtime.
+Lors de l’utilisation de la technologie SSR, le processus [d’interaction des](introduction.md#interaction-with-the-spa-editor) composants de SPA en AEM inclut une phase au cours de laquelle le contenu initial de l’application est généré sur Adobe I/O Runtime.
 
 1. Le navigateur demande le contenu de la SSR à AEM.
 1. aem publie le modèle à Adobe I/O Runtime.
 1. Adobe I/O Runtime renvoie le contenu généré.
 1. aem diffuse le code HTML renvoyé par Adobe I/O Runtime via le modèle HTML du composant de page d’arrière-plan.
 
-![E/S d&#39;Adobe d&#39; SSE par CMS](assets/ssr-cms-drivenaemnode-adobeio.png)
+![Adobe I/O orienté SSE CMS](assets/ssr-cms-drivenaemnode-adobeio.png)
 
 ## Flux de communication piloté par Adobe I/O Runtime {#adobe-i-o-runtime-driven-communication-flow}
 
-La section précédente décrit l’implémentation standard et recommandée du rendu côté serveur en ce qui concerne les applications monopages en AEM, où AEM effectue l’amorçage et la diffusion du contenu.
+La section précédente décrit l’implémentation standard et recommandée du rendu côté serveur en ce qui concerne les SPA dans AEM, où l’AEM effectue l’amorçage et la diffusion du contenu.
 
 Une autre solution consiste à mettre en oeuvre la SSR de sorte que Adobe I/O Runtime soit responsable de l&#39;amorçage, inversant ainsi le flux de communication.
 
@@ -107,20 +107,20 @@ Les deux modèles sont valides et pris en charge par AEM. Toutefois, il faut ten
     </ul> </td>
    <td>
     <ul>
-     <li>Peut-être pas familier avec les développeurs d’applications monopages<br /> </li>
+     <li>Peut-être pas familier avec SPA développeur<br /> </li>
     </ul> </td>
   </tr>
   <tr>
    <th><strong>via Adobe I/O Runtime<br /> </strong></th>
    <td>
     <ul>
-     <li>Plus familier aux développeurs d’applications monopages<br /> </li>
+     <li>Plus familier aux développeurs SPA<br /> </li>
     </ul> </td>
    <td>
     <ul>
      <li>Les ressources de bibliothèque cliente requises par l'application, telles que CSS et JavaScript, devront être rendues disponibles par le développeur AEM via la <code><a href="/help/implementing/developing/introduction/clientlibs.md">allowProxy</a></code> propriété<br /> </li>
      <li>Les ressources doivent être synchronisées entre AEM et Adobe I/O Runtime<br /> </li>
-     <li>Pour activer la création de l’application d’une seule page, un serveur proxy pour Adobe I/O Runtime peut être nécessaire.</li>
+     <li>Pour activer la création du SPA, un serveur proxy pour Adobe I/O Runtime peut être nécessaire.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -128,29 +128,29 @@ Les deux modèles sont valides et pris en charge par AEM. Toutefois, il faut ten
 
 ## Planification de la SSR {#planning-for-ssr}
 
-En règle générale, seule une partie d’une application doit être rendue côté serveur. L’exemple courant est le contenu qui s’affichera au-dessus du pli lors du chargement initial de la page est rendu côté serveur. Cela permet de gagner du temps en fournissant au client du contenu déjà rendu. Lorsque l’utilisateur interagit avec l’application d’une seule page, le contenu supplémentaire est rendu par le client.
+En règle générale, seule une partie d’une application doit être rendue côté serveur. L’exemple courant est le contenu qui s’affichera au-dessus du pli lors du chargement initial de la page est rendu côté serveur. Cela permet de gagner du temps en fournissant au client du contenu déjà rendu. Lorsque l’utilisateur interagit avec le SPA, le contenu supplémentaire est rendu par le client.
 
-Lorsque vous envisagez d’implémenter le rendu côté serveur pour votre application monopage, vous devez vérifier les parties de l’application qui seront nécessaires.
+Lorsque vous envisagez d’implémenter le rendu côté serveur pour votre SPA, vous devez vérifier quelles parties de l’application seront nécessaires.
 
-## Développement d’une application d’une seule page à l’aide d’une SSR {#developing-an-spa-using-ssr}
+## Développement d’un SPA à l’aide de la technologie SSR {#developing-an-spa-using-ssr}
 
-Les composants SPA peuvent être rendus par le client (dans le navigateur) ou côté serveur. Lorsqu’il est rendu côté serveur, les propriétés du navigateur telles que la taille de la fenêtre et l’emplacement ne sont pas présentes. Par conséquent, les composants de l&#39;APS doivent être isomorphiques, sans présumer de l&#39;endroit où ils seront rendus.
+SPA composants peuvent être rendus par le client (dans le navigateur) ou côté serveur. Lorsqu’il est rendu côté serveur, les propriétés du navigateur telles que la taille de la fenêtre et l’emplacement ne sont pas présentes. Par conséquent, SPA composants doivent être isomorphiques, sans présumer de l&#39;endroit où ils seront rendus.
 
 Pour utiliser la technologie SSR, vous devez déployer votre code dans AEM et sur Adobe I/O Runtime, qui est responsable du rendu côté serveur. La plupart du code sera identique, mais les tâches spécifiques au serveur seront différentes.
 
-## SSR pour les applications monopages en AEM {#ssr-for-spas-in-aem}
+## SSR pour SPA en AEM {#ssr-for-spas-in-aem}
 
-Les applications SSR pour les applications monopages en AEM nécessitent Adobe I/O Runtime, qui est appelé pour le rendu côté serveur de contenu d’application. Dans le fichier HTL de l’application, une ressource sur Adobe I/O Runtime est appelée pour générer le contenu.
+La fonction SSR pour SPA dans AEM nécessite Adobe I/O Runtime, qui est appelée pour le rendu du côté serveur de contenu d’application. Dans le fichier HTL de l’application, une ressource sur Adobe I/O Runtime est appelée pour générer le contenu.
 
-Tout comme AEM prend en charge les structures d’application monopages Angular et React prêtes à l’emploi, le rendu côté serveur est également pris en charge pour les applications Angular et React. Pour plus d&#39;informations, consultez la documentation du mécanisme national de prévention pour les deux cadres.
+Tout comme AEM prend en charge les structures de SPA Angular et React prêtes à l’emploi, le rendu côté serveur est également pris en charge pour les applications Angular et React. Pour plus d&#39;informations, consultez la documentation du mécanisme national de prévention pour les deux cadres.
 
 ## Rendu de contenu distant {#remote-content-renderer}
 
-La configuration [de](#remote-content-renderer-configuration) Remote Content Renderer qui est requise pour utiliser SSR avec votre application d’une seule page d’accueil dans AEM appuie sur un service de rendu plus généralisé qui peut être étendu et personnalisé pour répondre à vos besoins.
+La configuration [de](#remote-content-renderer-configuration) Remote Content Renderer qui est requise pour utiliser SSR avec votre SPA dans AEM permet d’accéder à un service de rendu plus généralisé qui peut être étendu et personnalisé pour répondre à vos besoins.
 
 ### RemoteContentRenderingService {#remotecontentrenderingservice}
 
-`RemoteContentRenderingService` est un service OSGi permettant de récupérer le contenu rendu sur un serveur distant, par exemple à partir des E/S d’Adobe. Le contenu envoyé au serveur distant est basé sur le paramètre de requête transmis.
+`RemoteContentRenderingService` est un service OSGi permettant de récupérer le contenu rendu sur un serveur distant, tel qu’Adobe I/O. Le contenu envoyé au serveur distant est basé sur le paramètre de requête transmis.
 
 `RemoteContentRenderingService` peut être injecté par inversion de dépendance dans un modèle Sling personnalisé ou une servlet lorsque des manipulations de contenu supplémentaires sont requises.
 
