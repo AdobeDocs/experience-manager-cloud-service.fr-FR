@@ -34,7 +34,7 @@ aem 6.5 respecte les meilleures pratiques en matière de gestion des paquets et 
 
 >[!TIP]
 >
->Pour plus de détails, consultez l’article [AEM Structure](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) du projet dans l’AEM sous la forme d’une documentation Cloud Service ainsi que la documentation sur l’archétype [du projet](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) AEM. Les deux sont entièrement pris en charge pour AEM 6.5.
+>Pour plus de détails, consultez l’article [AEM Structure](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) du projet dans l’AEM sous la forme d’une documentation Cloud Service ainsi que la documentation sur l’archétype [du projet](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html) AEM. Les deux sont entièrement pris en charge pour AEM 6.5.
 
 ## Obtention du module externe Content Package Maven {#obtaining-the-content-package-maven-plugin}
 
@@ -205,7 +205,7 @@ L’exemple de filtre suivant montre la structure XML à utiliser :
 </filter>
 ```
 
-##### Import Mode {#import-mode}
+##### Mode d’importation {#import-mode}
 
 L’élément `mode` définit l’impact de l’importation du package sur le contenu du référentiel. Les valeurs suivantes peuvent être utilisées :
 
@@ -266,4 +266,4 @@ Le dernier archétype de projet AEM met en oeuvre la structure d&#39;ensemble de
 
 >[!TIP]
 >
->Pour plus de détails, consultez l’article [AEM Structure](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) du projet dans l’AEM sous la forme d’une documentation Cloud Service ainsi que la documentation sur l’archétype [du projet](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) AEM. Les deux sont entièrement pris en charge pour AEM 6.5.
+>Pour plus de détails, consultez l’article [AEM Structure](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) du projet dans l’AEM sous la forme d’une documentation Cloud Service ainsi que la documentation sur l’archétype [du projet](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html) AEM. Les deux sont entièrement pris en charge pour AEM 6.5.
