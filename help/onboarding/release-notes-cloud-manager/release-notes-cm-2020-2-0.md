@@ -18,7 +18,7 @@ Cette page présente les Notes de mise à jour de Cloud Manager en AEM en tant q
 
 La date de publication de Cloud Manager en tant que Cloud Service 2020.2.0 est le 13 février 2020.
 
-## Cloud Manager {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 ### Nouveautés {#what-is-new}
 
