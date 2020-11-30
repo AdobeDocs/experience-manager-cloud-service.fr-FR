@@ -20,7 +20,7 @@ Les opérations suivantes sont consignées dans le flux d’activités :
 * Créer
 * Supprimer
 * Téléchargement (rendus compris)
-* Publication
+* Publier
 * Annuler la publication
 * Approuver
 * Refuser
