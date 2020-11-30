@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1511e24cbc4a845b1d7673438b8b7c4171d173e6
 workflow-type: tm+mt
 source-wordcount: '215'
-ht-degree: 65%
+ht-degree: 67%
 
 ---
 
@@ -16,7 +16,7 @@ Adobe will create an **Organization** identifier for your company in the Adobe I
 
 ## Types d’identités de l’utilisateur {#user-identity-types}
 
-Pour commencer à utiliser un Adobe ID, consultez la page [Gérer les types d’identités Adobe](https://helpx.adobe.com/enterprise/using/identity.html), afin d’obtenir des instructions détaillées sur la manière d’obtenir un Adobe ID à l’aide de l’un des types d’identités disponibles.
+Pour commencer à utiliser un Adobe ID, consultez la page [Gérer les types d’identités Adobe](https://helpx.adobe.com/fr/enterprise/using/identity.html), afin d’obtenir des instructions détaillées sur la manière d’obtenir un Adobe ID à l’aide de l’un des types d’identités disponibles.
 
 ## Utilisateurs et rôles {#users-and-roles}
 
