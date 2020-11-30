@@ -39,6 +39,7 @@ Vous devez convertir les pages de lancement pour redéplacer le contenu vers la 
 >
 >* [Conversion d’un lancement imbriqué](#promoting-a-nested-launch) lorsqu’il existe plusieurs lancements dans la structure.
 >* [Lancements - Ordre des événements](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) pour en savoir plus sur la conversion et la publication automatiques.
+
 >
 
 
