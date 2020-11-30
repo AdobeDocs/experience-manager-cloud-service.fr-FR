@@ -14,7 +14,7 @@ ht-degree: 99%
 
 AEM permet de réaliser une mise en page réactive pour vos pages à l’aide du composant **Conteneur de mises en page**.
 
-Vous obtenez ainsi un système de paragraphes qui permet de positionner les composants dans une grille réactive. Cette grille peut réorganiser la mise en page selon l’appareil ou la taille de la fenêtre et le format. Le composant est utilisé avec le mode [**Mise en page **](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), ce qui permet de créer et de modifier votre mise en page réactive en fonction de l’appareil.
+Vous obtenez ainsi un système de paragraphes qui permet de positionner les composants dans une grille réactive. Cette grille peut réorganiser la mise en page selon l’appareil ou la taille de la fenêtre et le format. Le composant est utilisé avec le mode [**Mise en page**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), ce qui permet de créer et de modifier votre mise en page réactive en fonction de l’appareil.
 
 Le conteneur de mises en page présente les caractéristiques suivantes :
 
@@ -27,15 +27,16 @@ L’utilisateur peut ensuite afficher un aperçu du contenu pour des appareils s
 
 AEM effectue une mise en page réactive de vos pages en combinant plusieurs mécanismes :
 
-* Composant [**Conteneur de mises en page **](#adding-a-layout-container-and-its-content-edit-mode)
+* Composant [**Conteneur de mises en page**](#adding-a-layout-container-and-its-content-edit-mode)
 
    Ce composant, qui est disponible dans l’[explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser), fournit un système de paragraphes/grille qui permet d’ajouter et de positionner des composants dans une grille réactive. Il peut également être défini comme le système de paragraphes par défaut de votre page.
 
-* [**Mode Mise en page **](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
+* [**Mode Mise en page**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
 
    Une fois que le conteneur de mises en page est positionné sur la page, vous pouvez utiliser le mode **Mise en page** pour placer le contenu dans la grille réactive.
 
-* [**Émulateur **](#selecting-a-device-to-emulate)Permet de créer et de modifier des sites web réactifs qui réorganisent la mise en page en fonction de l’appareil ou de la taille de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur peut ensuite afficher un aperçu du contenu à l’aide de l’émulateur.
+* [**Émulateur**](#selecting-a-device-to-emulate)
+Permet de créer et de modifier des sites web réactifs qui réorganisent la mise en page en fonction de l’appareil ou de la taille de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur peut ensuite afficher un aperçu du contenu à l’aide de l’émulateur.
 
 À l’aide de ces mécanismes de grille réactive, vous pouvez effectuer les opérations suivantes :
 
