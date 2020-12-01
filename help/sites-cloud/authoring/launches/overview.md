@@ -2,10 +2,10 @@
 title: 'Les lancements  '
 description: La fonction Lancements permet de développer efficacement du contenu en vue d’une publication ultérieure. Les lancements permettent de préparer les modifications pour une publication à venir, tout en conservant vos pages actuelles.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 395e936c34d7d7fdece8f57c773d07a244f880e4
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 100%
+source-wordcount: '819'
+ht-degree: 98%
 
 ---
 
@@ -32,6 +32,8 @@ Cette section explique comment créer, modifier et convertir (et, le cas échéa
 
 * [Création de lancements](/help/sites-cloud/authoring/launches/creating.md)
 * [Modification de lancements](/help/sites-cloud/authoring/launches/editing.md)
+* [Gestion des pages dans les lancements](/help/sites-cloud/authoring/launches/managing-pages.md)
+* [Utilisation de Timewarp pour Prévisualisation de votre contenu en fonction des lancements](/help/sites-cloud/authoring/launches/preview.md)
 * [Conversion de lancements](/help/sites-cloud/authoring/launches/promoting.md)
 
 ## Lancements - Ordre des événements {#launches-the-order-of-events}
