@@ -2,9 +2,9 @@
 title: Configuration des formulaires de recherche
 description: Configuration des formulaires de recherche pour Adobe Experience Manager as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: c48274f76db764e1cbad459e644d5fb4b753a086
 workflow-type: tm+mt
-source-wordcount: '2030'
+source-wordcount: '2043'
 ht-degree: 99%
 
 ---
@@ -33,9 +33,7 @@ Ensemble, ces outils visent à vous aider à localiser rapidement et facilement 
 Les **Formulaires de recherche** fournissent une sélection immédiate de [prédicats](#predicates-and-their-settings) que vous pouvez combiner et définir. Les [boîtes de dialogue de configuration de ces formulaires](#configuring-your-search-forms) sont accessibles en sélectionnant :
 
 * **Outils**
-
    * **Général**
-
       * **Formulaires de recherche**
 
 ## Formulaires par défaut {#default-forms}
@@ -46,35 +44,24 @@ Lorsque vous accédez à la console **Formulaires de recherche** pour la premiè
 
 Les configurations par défaut (classées dans l’ordre alphabétique) disponibles sont les suivantes :
 
-* **Rail de recherche d’administrateurs de ressources :**
-
-* **Éditeur de page (recherche de documents) :**
-
-* **Éditeur de page (recherche des fragments expérience) :**
-
-* **Éditeur de page (recherche d’images) :**
-
-* **Éditeur de page (recherche de manuscrits) :**
-
-* **Éditeur de page (recherche de pages) :**
-
-* **Éditeur de page (recherche de paragraphes) :**
-
-* **Éditeur de page (recherche de produits) :**
-
-* **Éditeur de page (recherche Scene7)** :
-
-* **Éditeur de page (recherche de vidéos)** :
-
-* **Rail de recherche d’administrateurs de projets :**
-
-* **Rail de recherche de traduction de projets :**
-
-* **Rail de recherche d’administrateurs de sites** :
-
-* **Rail de recherche d’administrateurs de fragments de code** :
-
-* **Rail de recherche d’administrateurs Stock** :
+* **Rail de recherche d’administrateurs de ressources**
+* **Éditeur de page (recherche de documents)**
+* **Éditeur de page (recherche des fragments expérience)**
+* **Éditeur de page (recherche d’images)**
+* **Éditeur de page (recherche de manuscrits)**
+* **Éditeur de page (recherche de pages)**
+* **Éditeur de page (recherche de paragraphes)**
+* **Éditeur de page (recherche de produits)**
+* **Éditeur de page (recherche Scene7)**
+* **Éditeur de page (recherche de vidéos)**
+* **Rail de recherche d’administrateurs de projets**
+* **Rail de recherche de traduction de projets**
+* **Rail de recherche d’administration de site**
+* **Rail de recherche d’administrateurs de fragments de code**
+* **Rail de recherche d’administrateurs Stock**
+* **Rail de recherche des modèles de fragment de contenu**
+* **Rail de recherche d’administrateurs de projets**
+* **Rail de recherche de traduction de projets**
 
 >[!NOTE]
 >
@@ -614,7 +601,7 @@ Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs para
 
 1. **Fermez** l’aperçu pour terminer la configuration.
 
-### Suppression d’un champ de prédicat   {#deleting-a-predicate-field}
+### Suppression d’un champ de prédicat    {#deleting-a-predicate-field}
 
 1. [Ouvrez la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
 1. Sélectionnez le champ de prédicat (à droite), ouvrez l’onglet **Paramètres**, puis sélectionnez l’icône **Supprimer** (dans le coin inférieur gauche).
@@ -641,7 +628,7 @@ Les configurations personnalisées doivent être supprimées à partir de la con
 
 1. La configuration personnalisée est supprimée et la valeur par défaut est rétablie (le symbole de cadenas réapparaît dans la console).
 
-### Ajout de prédicats d’options   {#adding-options-predicates}
+### Ajout de prédicats d’options    {#adding-options-predicates}
 
 Les prédicats d’options (options, propriété d’options) permettent de configurer un élément à rechercher. Ils servent généralement à rechercher un élément directement sous la page, par exemple, une propriété sur le nœud de page.
 
