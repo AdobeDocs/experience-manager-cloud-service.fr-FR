@@ -25,7 +25,7 @@ Par rapport aux versions précédentes d’AEM, la prise en charge du framework 
 
 ## Création de la configuration d’Adobe Analytics {#analytics-configuration}
 
-1. Accédez à **Outils** 	 **Cloud Services**.
+1. Accédez à **Outils** → **Cloud Services**.
 2. Sélectionnez **Adobe Analytics**.
    ![Fenêtre Adobe Analytics](assets/analytics_screen2.png "Fenêtre Adobe Analytics")
 3. Cliquez sur le bouton **Créer**.
