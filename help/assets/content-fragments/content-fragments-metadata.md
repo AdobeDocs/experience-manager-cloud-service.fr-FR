@@ -2,10 +2,10 @@
 title: Métadonnées – propriétés des fragments
 description: Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments de contenu.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d302df83f3c2f95a5cc46d1d21c5e1376d4d4faf
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 100%
+source-wordcount: '111'
+ht-degree: 89%
 
 ---
 
@@ -27,6 +27,7 @@ Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments 
 3. L’onglet **De base** fournit des options que vous pouvez afficher ou modifier :
 
    * Une miniature, pour laquelle vous pouvez **télécharger une image** 
+   * **Le** modèle de fragment de contenu indique le modèle utilisé pour créer le fragment actif.
    * **Titre**
    * **Description**
    * **Balises**
