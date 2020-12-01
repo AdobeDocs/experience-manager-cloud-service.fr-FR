@@ -99,7 +99,7 @@ Après avoir téléchargé toutes les parties d’un fichier binaire, envoyez un
 | `replace` | Booléen | Facultatif | If `True` and an asset with the specified name exists, [!DNL Experience Manager] deletes the asset then re-create it. |
 
 >!![NOTE]
-If the asset exists and neither `createVersion` nor `replace` is specified, then [!DNL Experience Manager] updates the asset&#39;s current version with the new binary.
+>If the asset exists and neither `createVersion` nor `replace` is specified, then [!DNL Experience Manager] updates the asset&#39;s current version with the new binary.
 
 Comme c’est le cas pour le processus de lancement, les données de la requête de fin peuvent contenir des informations pour plusieurs fichiers.
 
@@ -124,8 +124,9 @@ La nouvelle méthode de téléchargement n’est prise en charge que pour [!DNL 
 * API Java `AssetManager`, comme `AssetManager.createAsset(..)`
 
 >[!MORELIKETHIS]
-* [Bibliothèque de chargement AEM Open Source](https://github.com/adobe/aem-upload).
-* [Outil de ligne de commande Open Source](https://github.com/adobe/aio-cli-plugin-aem).
+>
+>* [Bibliothèque de chargement AEM Open Source](https://github.com/adobe/aem-upload).
+>* [Outil de ligne de commande Open Source](https://github.com/adobe/aio-cli-plugin-aem).
 
 
 ## Workflows de traitement et de post-traitement des ressources {#post-processing-workflows}
@@ -193,5 +194,6 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
-* [L’Experience Cloud en tant que SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)Cloud Service.
+>
+>* [L’Experience Cloud en tant que SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)Cloud Service.
 
