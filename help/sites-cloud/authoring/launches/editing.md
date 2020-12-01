@@ -2,10 +2,10 @@
 title: Modification de lancements
 description: 'Après avoir créé un lancement pour votre page (ou un jeu de pages), vous pouvez modifier le contenu dans la copie de lancement de la ou des pages. '
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 914eb7f7b040b99c11d9f109549eb13868058320
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 100%
+source-wordcount: '521'
+ht-degree: 91%
 
 ---
 
@@ -19,7 +19,11 @@ Après avoir créé un lancement pour une page (ou un jeu de pages), vous pouvez
 1. Accédez à [Lancement à partir des références (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) pour afficher les actions disponibles.
 1. Sélectionnez **Aller à la page** pour ouvrir la page d’édition.
 
-### Modification de l’objet des pages de lancement en Live Copy   {#editing-launch-pages-subject-to-a-live-copy}
+Lors de la modification de la page, une indication s’affiche dans la barre d’outils supérieure, ainsi que les options **Leave** et **Naviguer** :
+
+![Quitter et naviguer le lancement à partir de l’éditeur de page](/help/sites-cloud/authoring/assets/launches-edit-01.png)
+
+### Modification de l’objet des pages de lancement en Live Copy    {#editing-launch-pages-subject-to-a-live-copy}
 
 Si votre lancement est basé sur une Live Copy :<!--If your launch is based upon a [live copy](/help/sites-administering/msm.md) then you will:-->
 
@@ -39,7 +43,7 @@ Pour plus d’informations, consultez Modification du contenu d’une Live Copy
 
 Pour suivre les modifications que vous avez apportées, vous pouvez afficher le lancement dans **Références** et comparer la page de lancement à sa page source :
 
-1. Dans la console **Sites**, [accédez à la page source de votre lancement et sélectionnez-la](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. Dans la console **Sites**, [accédez aux pages source de votre lancement et sélectionnez une page](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Ouvrez le panneau **[Références](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** et sélectionnez **Lancements**.
 1. Sélectionnez votre lancement spécifique, puis **Comparer à la source** :
 
@@ -65,7 +69,7 @@ Vous pouvez à tout moment ajouter ou supprimer des pages vers/depuis la plage d
 >
 >Pour ajouter des pages à un lancement, celles-ci doivent se trouver sous une racine de langue commune (c’est-à-dire, sur un seul site).
 
-## Modification d’une configuration de lancement   {#editing-a-launch-configuration}
+## Modification d’une configuration de lancement    {#editing-a-launch-configuration}
 
 Vous pouvez à tout moment modifier les propriétés d’un lancement : 
 
@@ -78,7 +82,7 @@ Vous pouvez à tout moment modifier les propriétés d’un lancement :
 1. Effectuez les modifications requises, puis confirmez avec **Enregistrer**.
    * Consultez [Lancements - Ordre des événements](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) pour plus d’informations sur l’objectif et l’interaction des champs **Date de lancement** et **Prêt pour la production**.
 
-## Identification de l’état de lancement d’une page   {#discovering-the-launch-status-of-a-page}
+## Identification de l’état de lancement d’une page    {#discovering-the-launch-status-of-a-page}
 
 L’état s’affiche lorsque vous sélectionnez un lancement spécifique dans l’onglet Références (voir [Lancements dans les références (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)).
 
