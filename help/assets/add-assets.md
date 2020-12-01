@@ -2,10 +2,10 @@
 title: Ajout de vos ressources numériques à [!DNL Adobe Experience Manager].
 description: Ajoutez vos ressources numériques à [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 9c42bd216edd0174c9a4c9b706c0e08ca36428f6
 workflow-type: tm+mt
-source-wordcount: '1312'
-ht-degree: 99%
+source-wordcount: '1494'
+ht-degree: 78%
 
 ---
 
@@ -62,20 +62,18 @@ Pour charger un ou plusieurs fichiers, vous pouvez les sélectionner sur votre b
 1. Dans l’interface utilisateur [!DNL Assets], accédez à l’emplacement où vous voulez ajouter des ressources numériques.
 1. Pour charger les ressources, effectuez l’une des opérations suivantes :
 
-   * Appuyez sur l’icône **[!UICONTROL Créer]** de la barre d’outils. Ensuite, dans le menu, appuyez sur **[!UICONTROL Fichiers]**. Au besoin, vous pouvez renommer le fichier dans la boîte de dialogue affichée.
+   * Dans la barre d’outils, cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Fichiers]**. Au besoin, vous pouvez renommer le fichier dans la boîte de dialogue affichée.
    * Dans un navigateur prenant en charge HTML5, faites glisser directement les ressources dans l’interface utilisateur [!DNL Assets]. La boîte de dialogue permettant de renommer les fichiers n’est pas affichée.
 
    ![create_menu](assets/create_menu.png)
 
-   Pour sélectionner plusieurs fichiers, appuyez sur la touche Ctrl ou Commande et sélectionnez les ressources dans la boîte de dialogue de sélecteur de fichiers. Si vous utilisez un iPad, vous ne pouvez sélectionner qu’un seul fichier à la fois.
+   Pour sélectionner plusieurs fichiers, sélectionnez la clé `Ctrl` ou `Command` et sélectionnez les actifs dans la boîte de dialogue du sélecteur de fichiers. Si vous utilisez un iPad, vous ne pouvez sélectionner qu’un seul fichier à la fois.
 
 1. Pour annuler une opération de chargement en cours, cliquez sur le bouton de fermeture (`X`) en regard de la barre de progression. Lorsque vous annulez le chargement, [!DNL Assets] supprime la partie partiellement chargée de la ressource.
-
-   Si vous annulez le chargement avant la fin de l’opération, [!DNL Assets] arrête le chargement du fichier en cours et actualise le contenu. Toutefois, les fichiers déjà chargés ne sont pas supprimés.
+Si vous annulez une opération de téléchargement avant que les fichiers ne soient téléchargés, [!DNL Assets] arrête de télécharger le fichier actif et actualise le contenu. Toutefois, les fichiers déjà chargés ne sont pas supprimés.
 
 1. La boîte de dialogue de progression du chargement dans [!DNL Assets] affiche le nombre de fichiers dont le chargement a réussi et ceux dont le chargement a échoué.
-
-   De plus, l’interface utilisateur d’Assets affiche la ressource la plus récente que vous avez chargée ou le dossier que vous avez créé en premier.
+En outre, l’interface utilisateur [!DNL Assets] affiche la ressource la plus récente que vous téléchargez ou le dossier que vous avez créé en premier.
 
 >[!NOTE]
 >
@@ -127,10 +125,29 @@ Toutefois, la liste de caractères suivante, séparée par des espaces, n’est 
 
 ## Chargement en masse de ressources {#bulk-upload}
 
-Pour charger un plus grand nombre de fichiers, en particulier s’ils existent dans une hiérarchie de dossiers imbriqués sur le disque, vous pouvez utiliser les méthodes suivantes :
+Pour télécharger un plus grand nombre de fichiers, utilisez l’une des méthodes suivantes. Voir aussi les [cas d’utilisation et les méthodes](#upload-methods-comparison)
 
-* Utilisez un script ou un outil de chargement personnalisé qui exploite des [API de chargement de ressources](developer-reference-material-apis.md#asset-upload-technical). Un tel outil personnalisé peut donner lieu à un traitement supplémentaire des ressources (comme la traduction des métadonnées ou l’affectation de nouveaux noms aux fichiers).
-* Utilisez l’[application de bureau Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) pour charger des hiérarchies de dossiers imbriqués.
+* [API](developer-reference-material-apis.md#asset-upload-technical) de transfert de ressources : Utilisez un script ou un outil de téléchargement personnalisé qui utilise les API pour ajouter une gestion supplémentaire des ressources (par exemple, traduire des métadonnées ou renommer des fichiers), si nécessaire.
+* [Application](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) de bureau Experience Manager : Utile pour les professionnels de la création et les marketeurs qui téléchargent des fichiers à partir de leur système de fichiers local. Utilisez-la pour télécharger les dossiers imbriqués disponibles localement.
+* [Outil](#bulk-ingestion-tool) d&#39;assimilation en masse : Utilisation pour l’assimilation de grandes quantités de ressources, occasionnellement ou initialement, lors du déploiement  [!DNL Experience Manager].
+
+### Outil d&#39;assimilation de ressources en bloc {#bulk-ingestion-tool}
+
+Ajoutez les informations suivantes :
+
+* Cas d’utilisation d’utilisation de cette méthode.
+* Personnalités applicables
+* Étapes de configuration
+* Comment gérer les tâches d&#39;assimilation et voir les états.
+* Points à mémoriser sur la gestion ou la gestion des ressources à ingérer.
+
+Pour configurer l’outil, procédez comme suit :
+
+1. Créez une configuration d’importation en bloc.  Accédez à Outils > Fichier > Importation en bloc > sélectionnez le bouton Créer.
+
+![Configuration de l&#39;importateur en vrac](assets/bulk-import-config.png)
+
+1. Fournissez les détails appropriés.
 
 >[!NOTE]
 >
@@ -169,10 +186,22 @@ Pour les dossiers auxquels un profil de traitement est affecté, le nom du profi
 
 Les détails techniques du protocole et des API de chargement, ainsi que les liens vers les exemples de clients et le SDK Open Source, sont fournis dans la section [Chargement de ressources](developer-reference-material-apis.md#asset-upload-technical) de la documentation de référence du développeur.
 
+## Méthodes de transfert basées sur un scénario {#upload-methods-comparison}
+
+| Méthode de téléchargement | Quand utiliser la personnalisation? | Personnalité Principal (administrateur, développeur, utilisateur créatif, marketeur) |
+|---------------------|-------------------------------------------------------------------------------------------|------------|
+| Console Ressources/interface utilisateur | Téléchargement occasionnel, facilité de pression et de glisser, téléchargement de recherche. Pas pour les grandes consommations en vrac. | Tous |
+| API de téléchargement | Pour la prise de décision dynamique des ressources au cours du transfert | Développeur |
+| Application de bureau | Importation de ressources en faible volume, mais pour la migration | Admin, Marketer |
+| Lien de ressource | Pour que les créatifs et les marketeurs puissent collaborer sur des ressources à partir des applications de bureau Creative Cloud prises en charge. | Créatif, spécialiste du marketing |
+| Outil de gestion en masse | Importation en masse de ressources à partir des banques de données.  Recommandé pour les migrations et les ingérations occasionnelles en vrac. | Administrateur, développeur |
+
+Décrivez quand utiliser quelle méthode.
+
 >[!MORELIKETHIS]
 >
->* [Application de bureau Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr)
+>* [Application de bureau Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
->* [Documentation d’Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html)
+>* [Documentation d’Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [Référence technique pour le chargement de ressources](developer-reference-material-apis.md#asset-upload-technical)
 
