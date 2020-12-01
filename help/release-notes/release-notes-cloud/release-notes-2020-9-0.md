@@ -2,7 +2,7 @@
 title: Notes de mise à jour de la version 2020.9.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service pour la version 2020.9.0.
 translation-type: tm+mt
-source-git-commit: db5ca67c583166f4ecb09884a064dfc1378f436e
+source-git-commit: 701d9ff3c9553c28bce0ef417487facedb22373f
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 25%
@@ -12,28 +12,28 @@ ht-degree: 25%
 
 # Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
 
-The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.9.0.
+La section suivante décrit les Notes de mise à jour générales de [!DNL Experience Manager] en tant que Cloud Service 2020.9.0.
 
 ## Date de publication {#release-date}
 
-The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 is September 24, 2020.
+La date de publication de [!DNL Adobe Experience Manager] en tant que Cloud Service 2020.9.0 est le 24 septembre 2020.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service{#sites}
 
 ### Nouveautés d’[!DNL Sites] {#what-is-new-sites}
 
-* Le SDK JavaScript de l’éditeur d’application à page unique (SPA) [est désormais open source.](/help/implementing/developing/spa/reference-materials.md)
+* Le SDK JavaScript de l’éditeur d’applications d’une seule page [est désormais open source.](/help/implementing/developing/hybrid/reference-materials.md)
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service{#assets}
 
 ### Nouveautés d’[!DNL Assets] {#what-is-new-assets}
 
-* Les fichiers image de filigrane sont pris en charge pour les rendus générés avec les microservices de ressources. Il peut être configuré en tant que Profil de traitement et utilise un fichier PNG en tant que filigrane. Voir [filigrane de vos fichiers](/help/assets/watermark-assets.md).
+* Les fichiers image de filigrane sont pris en charge pour les rendus générés avec les microservices de ressources. Il peut être configuré en tant que Profil de traitement et utilise un fichier PNG en tant que filigrane. Voir [filigrane de vos ressources](/help/assets/watermark-assets.md).
 
-* Améliorations des [!DNL Dynamic Media]
+* Améliorations apportées à [!DNL Dynamic Media]
 
-   * Publication sélective : il est désormais possible pour une équipe marketing d’accéder à des images de recadrage [!DNL Dynamic Media] intelligentes et à des rendus dynamiques synchronisés avec [!DNL Dynamic Media] afin de pouvoir créer des supports promotionnels, le tout sans avoir à publier ces ressources [!DNL Dynamic Media] pour une diffusion globale. [!DNL Experience Manager] et [!DNL Dynamic Media] la publication est découplée et peut se produire séparément pour y parvenir. Voir Publication [](/help/assets/dynamic-media/selective-publishing.md)sélective.
-   * Les administrateurs peuvent désormais réinitialiser le mot de passe [!DNL Dynamic Media] du Cloud Service reçu lors de la mise en service. La réinitialisation peut être effectuée dans [!DNL Experience Manager] l’interface utilisateur, sans qu’il soit nécessaire d’utiliser l’application de [!DNL Dynamic Media Classic] bureau.
+   * Publication sélective : il est désormais possible pour une équipe marketing d’accéder à [!DNL Dynamic Media] des images de recadrage intelligent et des rendus dynamiques synchronisés avec [!DNL Dynamic Media] afin de pouvoir créer des supports promotionnels, sans avoir à publier ces ressources dans [!DNL Dynamic Media] pour une diffusion globale. [!DNL Experience Manager] et  [!DNL Dynamic Media] la publication est découplée et peut se produire séparément pour y parvenir. Voir [publication sélective](/help/assets/dynamic-media/selective-publishing.md).
+   * Les administrateurs peuvent désormais réinitialiser le [!DNL Dynamic Media] mot de passe du Cloud Service reçu lors de la mise en service. La réinitialisation peut être effectuée dans l&#39;[!DNL Experience Manager] interface utilisateur, sans qu&#39;il soit nécessaire d&#39;utiliser l&#39;application de bureau [!DNL Dynamic Media Classic].
 
 * Pour en savoir plus sur les améliorations suivantes, voir [les nouveautés de Brand Portal](https://docs.adobe.com/content/help/fr-FR/experience-manager-brand-portal/using/introduction/whats-new.html).
 
@@ -51,7 +51,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### Nouveautés {#what-is-new-commerce}
 
-* Composants principaux CIF version 1.3.0. Pour plus d&#39;informations, reportez-vous à la section Composants [principaux](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) CIF.
+* Composants principaux CIF version 1.3.0. Pour plus d&#39;informations, consultez [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0).
 
 * La fonctionnalité de prévisualisation avec produit/catégorie pour les modèles de produit et de catégorie est désormais disponible. Cela permet aux utilisateurs/marketeurs d’entreprise en AEM de vue des modèles de produit/catégorie avec des données réelles.
 
@@ -87,7 +87,7 @@ Suivez cette section pour en savoir plus sur les nouveautés et les mises à jou
 
 ### Nouveautés {#what-is-new-cra}
 
-* L&#39;Analyseur de préparation du cloud (CRA) dispose d&#39;une console d&#39;état de début qui affiche un bouton **Générer un rapport** explicite sur lequel l&#39;utilisateur peut cliquer pour exécuter l&#39;ARC.
+* L&#39;analyseur de l&#39;état de préparation du cloud (CRA) dispose d&#39;une console d&#39;état de début qui affiche un bouton **Générer un rapport** explicite sur lequel l&#39;utilisateur doit cliquer pour exécuter l&#39;ARC.
 
 * L&#39;interface utilisateur de l&#39;ARC affiche la progression pendant son exécution. Il affiche les éléments analysés et les résultats trouvés pendant l&#39;exécution.
 
@@ -107,9 +107,9 @@ Suivez cette section pour en savoir plus sur les nouveautés et les mises à jou
 
 * L’interface utilisateur du CTT dispose d’une fonction de rechargement automatique qui recharge la page d’aperçu toutes les 30 secondes.
 
-* Bouton ajouté à l’interface utilisateur de CTT pour récupérer facilement le *Jeton d&#39;accès* .
+* Bouton ajouté à l’interface utilisateur CTT pour récupérer *Jeton d&#39;accès* facilement.
 
-* Ajout d’un message de validation descriptif pour l’ *URL* et le nom *du jeu de* migration.
+* Ajout d’un message de validation descriptif pour *URL* et *Nom du jeu de migration*.
 
 ## Outils de refactorisation du code {#code-refactoring}
 
@@ -123,5 +123,5 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 
 * L&#39;utilitaire Repository Modernizer peut être utilisé pour restructurer des packages de projet existants en packages compatibles avec la structure de projet définie pour AEM en tant que Cloud Service.
 
-   Refer to [Git Resource: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) for more details.
+   Reportez-vous à [Ressource Git : Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) pour plus de détails.
 
