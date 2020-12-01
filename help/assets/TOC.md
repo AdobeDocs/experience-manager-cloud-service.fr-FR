@@ -5,9 +5,9 @@ breadcrumb-title: Guide d’Assets
 user-guide-description: Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: a298921410b4cba05ad341f7cee6d2ac9981bce4
+source-git-commit: 4420fd95388ba2f389192f767b6d612bdc2b18a9
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '432'
 ht-degree: 96%
 
 ---
@@ -82,12 +82,15 @@ ht-degree: 96%
    + [Gestion des ressources Dynamic Media](dynamic-media/managing-assets.md)
    + [Bonnes pratiques relatives à l’optimisation de la qualité des images](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Bonnes pratiques relatives à la gestion des fichiers](dynamic-media/best-practices-for-file-management.md)
-   + [Gestion des paramètres prédéfinis de la visionneuse Dynamic Media](dynamic-media/managing-viewer-presets.md)
-   + [Application des paramètres prédéfinis de la visionneuse Dynamic Media](dynamic-media/viewer-presets.md)
-   + [Gestion des paramètres prédéfinis d’image Dynamic Media](dynamic-media/managing-image-presets.md)
-   + [Application des paramètres prédéfinis d’image Dynamic Media](dynamic-media/image-presets.md)
    + [Profils d’image](dynamic-media/image-profiles.md)
    + [Profils vidéo](dynamic-media/video-profiles.md)
+   + [Gestion des paramètres prédéfinis d’image Dynamic Media](dynamic-media/managing-image-presets.md)
+   + [Application des paramètres prédéfinis d’image Dynamic Media](dynamic-media/image-presets.md)
+   + [Gestion des paramètres prédéfinis de la visionneuse Dynamic Media](dynamic-media/managing-viewer-presets.md)
+   + [Application des paramètres prédéfinis de la visionneuse Dynamic Media](dynamic-media/viewer-presets.md)
+   + [Paramètres prédéfinis d’ensemble par lot](dynamic-media/batch-set-presets-dm.md)
+   + [Invalidation du cache CDN via Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+   + [Invalidation du cache CDN via Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [Imagerie dynamique](dynamic-media/imaging-faq.md)
    + [Diffusion de ressources Dynamic Media](dynamic-media/delivering-dynamic-media-assets.md)
    + [Activation de la protection de lien dynamique dans Dynamic Media](dynamic-media/hotlink-protection.md)
@@ -111,8 +114,6 @@ ht-degree: 96%
    + [Utilisation de jeux de règles de transformation d’URL](dynamic-media/using-rulesets-to-transform-urls.md)
    + [Publication de ressources Dynamic Media](dynamic-media/publishing-dynamicmedia-assets.md)
    + [Utilisation de la publication sélective dans Dynamic Media](dynamic-media/selective-publishing.md)
-   + [Invalidation du cache CDN via Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-   + [Invalidation du cache CDN via Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [Utilisation des sélecteurs](dynamic-media/working-with-selectors.md)
    + [FAQ sur la fin de prise en charge de la visionneuse DHTML](dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + [Notification de fin de prise en charge de la visionneuse Flash](dynamic-media/flash-viewers-eol.md)
