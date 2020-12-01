@@ -2,10 +2,10 @@
 title: Visionneuses d’images
 description: Découvrez comment utiliser des visionneuses d’images dans Dynamic Media
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 7a1d12a8cff03af660b936bb7d8b045532357f0d
 workflow-type: tm+mt
-source-wordcount: '2047'
-ht-degree: 100%
+source-wordcount: '2069'
+ht-degree: 98%
 
 ---
 
@@ -28,25 +28,27 @@ Par exemple, supposons que vous souhaitez présenter les images d’une casquett
 >
 >Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources avec l’interface utilisateur tactile](/help/assets/manage-digital-assets.md).
 
-## Démarrage rapide : Visionneuses d’images  {#quick-start-image-sets}
+## Démarrage rapide : Visionneuses d’images   {#quick-start-image-sets}
 
 Pour démarrer rapidement :
 
+1. Facultatif. [Créez un ](/help/assets/dynamic-media/batch-set-presets-dm.md) paramètre prédéfini d’ensemble par lot et appliquez-le à un nouveau dossier dans lequel vos images de visionneuse à 360° seront téléchargées.
+
+   Un paramètre prédéfini d’ensemble par lot peut vous aider à automatiser la création de votre visionneuse d’images.
+
+   >[!IMPORTANT]
+   >
+   > Les ensembles par lots sont créés par IPS (Image Production System) dans le cadre de l’assimilation des ressources.
+
 1. [Chargez les images sources originales pour plusieurs vues.](#uploading-assets-in-image-sets)
 
-   Commencez par télécharger les images pour les visionneuses d’images. Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse d’images, tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande. AEM Assets prend en charge de nombreux formats de fichier image, mais les formats sans perte TIFF, PNG et EPS sont recommandés.
+   Téléchargez les images pour vos visionneuses d’images. Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse d’images, tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande. AEM Assets prend en charge de nombreux formats de fichier image, mais les formats sans perte TIFF, PNG et EPS sont recommandés.
 
 1. [Créez une visionneuse d’images.](#creating-image-sets)
 
    Dans les visionneuses d’images, les utilisateurs cliquent sur les images miniatures dans la visionneuse d’images.
 
    Pour créer une visionneuse d’images dans AEM Assets, appuyez ou cliquez sur **[!UICONTROL Créer > Visionneuses d’images]**. Ajoutez ensuite des images et cliquez sur **[!UICONTROL Enregistrer]**.
-
-   Vous pouvez également créer des visionneuses d’images automatiquement par l’intermédiaire des [paramètres prédéfinis d’ensemble par lot](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
-
-   >[!IMPORTANT]
-   >
-   > Les ensembles par lots sont créés par IPS (Image Production System) dans le cadre de l’assimilation des ressources.
 
    Voir [Préparation du chargement de ressources de visionneuse d’images et Chargement des fichiers](#uploading-assets-in-image-sets).
 
@@ -105,13 +107,13 @@ Comme les utilisateurs peuvent zoomer sur les images dans les visionneuses d’i
 >* Une miniature de couleur noire, marron et verte.
 
 
-## Création d’une visionneuse d’images  {#creating-image-sets}
+## Création d’une visionneuse d’images   {#creating-image-sets}
 
 Vous pouvez créer des visionneuses d’images par l’interface utilisateur ou par l’API. Cette section décrit comment créer des visionneuses d’images dans l’interface utilisateur.
 
 >[!NOTE]
 >
->Vous pouvez également créer des visionneuses d’images automatiquement par l’intermédiaire des [paramètres prédéfinis d’ensemble par lot](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+>Vous pouvez également créer des visionneuses d’images automatiquement par l’intermédiaire des [paramètres prédéfinis d’ensemble par lot](/help/assets/dynamic-media/batch-set-presets-dm.md).
 >**Important** : les ensembles par lot sont créés par le système IPS (Image Production System) dans le cadre de l’ingestion des ressources.
 
 Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatiquement ajoutées dans l’ordre alphanumérique. Vous pouvez réorganiser ou trier manuellement les ressources après les avoir ajoutées.
@@ -164,9 +166,9 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**. La nouvelle visionneuse d’images apparaît dans le dossier dans lequel vous l’avez créée.
 
-## Affichage de visionneuses d’images  {#viewing-image-sets}
+## Affichage de visionneuses d’images   {#viewing-image-sets}
 
-Vous pouvez créer des visionneuses d’images dans l’interface utilisateur ou automatiquement à l’aide des [paramètres prédéfinis d’ensemble par lot](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+Vous pouvez créer des visionneuses d’images dans l’interface utilisateur ou automatiquement à l’aide des [paramètres prédéfinis d’ensemble par lot](/help/assets/dynamic-media/batch-set-presets-dm.md).
 
 >[!IMPORTANT]
 >
@@ -192,7 +194,7 @@ Notez toutefois que les visionneuses créées à l’aide de paramètres prédé
 >
 >Vous pouvez afficher les visionneuses par le biais de l’interface utilisateur, comme indiqué dans la section [Modification d’une visionneuse d’images](#editing-image-sets).
 
-## Modification d’une visionneuse d’images  {#editing-image-sets}
+## Modification d’une visionneuse d’images   {#editing-image-sets}
 
 Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’images, comme suit :
 
@@ -230,10 +232,10 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
 
 1. Appuyez sur **[!UICONTROL Enregistrer]** lorsque vous avez terminé la modification.
 
-## Aperçu d’une visionneuse d’images  {#previewing-image-sets}
+## Aperçu d’une visionneuse d’images   {#previewing-image-sets}
 
 Voir aussi [Aperçu des ressources](/help/assets/dynamic-media/previewing-assets.md).
 
-## Publication de visionneuses d’images  {#publishing-image-sets}
+## Publication de visionneuses d’images   {#publishing-image-sets}
 
 Voir [Publication de ressources](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
