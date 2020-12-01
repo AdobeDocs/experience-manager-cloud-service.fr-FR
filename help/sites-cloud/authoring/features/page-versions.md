@@ -2,10 +2,10 @@
 title: Utilisation des versions de page
 description: Création, comparaison et restauration des versions d’une page
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 83c6301cd804ea1bb41204cf68d9a8de0b373678
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 100%
+source-wordcount: '1521'
+ht-degree: 99%
 
 ---
 
@@ -24,7 +24,7 @@ Le contrôle de version permet de créer un « instantané » d’une page à 
    * Les différences dans le texte et les images sont mises en évidence.
 * La distorsion du temps utilise les versions de pages pour déterminer l’état de l’environnement de publication.
 
-## Création d’une version  {#creating-a-new-version}
+## Création d’une version   {#creating-a-new-version}
 
 Vous pouvez créer une version de votre ressource depuis :
 
@@ -116,6 +116,7 @@ Cette méthode permet de rétablir des versions de pages spécifiées dans le do
    >Si :
    >* vous avez sélectionné une seule page, qui n’a jamais eu de page enfant,
    >* ou aucune des pages du dossier ne comporte de version,
+
    >
    >l’affichage sera vide, car aucune version n’est applicable.
 
@@ -157,7 +158,7 @@ Cette méthode permet de restaurer une version d’une arborescence à une date 
 
 1. Sélectionnez **Restaurer** pour la version sélectionnée de l’arborescence à restaurer comme version *actuelle*.
 
-## Aperçu d’une version  {#previewing-a-version}
+## Aperçu d’une version   {#previewing-a-version}
 
 Vous pouvez prévisualiser une version spécifique :
 
@@ -189,9 +190,13 @@ Pour comparer la version actuelle de la page avec une version précédente :
 
 1. Sélectionnez **Comparer à actuel**. L’[outil de comparaison des pages](/help/sites-cloud/authoring/features/page-diff.md) s’ouvre et affiche les différences.
 
-## Distorsion du temps Timewarp  {#timewarp}
+## Distorsion du temps Timewarp   {#timewarp}
 
 La fonction de distorsion du temps Timewarp permet de simuler l’état *publié* d’une page à des moments spécifiques dans le passé.
+
+>[!NOTE]
+>
+>[La fonction Timewarp peut également être utilisée avec les lancements pour prévisualisation le futur](/help/sites-cloud/authoring/launches/preview.md).
 
 La création de contenu étant un processus continu et collaboratif, l’objectif de Timewarp est de permettre aux auteurs d’effectuer le suivi d’un site web publié au fil du temps afin de comprendre l’évolution du contenu. Cette fonction utilise les versions de page pour déterminer l’état de l’environnement de publication.
 
