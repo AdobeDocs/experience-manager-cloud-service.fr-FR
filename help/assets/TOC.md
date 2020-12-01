@@ -5,10 +5,10 @@ breadcrumb-title: Guide d’Assets
 user-guide-description: Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 4420fd95388ba2f389192f767b6d612bdc2b18a9
+source-git-commit: 302830f46f5a0cedcb717b4ab2e2d95f1c9904d4
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 96%
+source-wordcount: '436'
+ht-degree: 95%
 
 ---
 
@@ -79,6 +79,7 @@ ht-degree: 96%
    + [Utilisation de Dynamic Media](dynamic-media/dynamic-media.md)
    + [Configuration de Dynamic Media](dynamic-media/config-dm.md)
    + [Résolution des problèmes liés à Dynamic Media](dynamic-media/troubleshoot-dm.md)
+   + [Accessibilité dans Contenu multimédia dynamique](dynamic-media/accessibility-dm.md)
    + [Gestion des ressources Dynamic Media](dynamic-media/managing-assets.md)
    + [Bonnes pratiques relatives à l’optimisation de la qualité des images](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Bonnes pratiques relatives à la gestion des fichiers](dynamic-media/best-practices-for-file-management.md)
