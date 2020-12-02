@@ -51,13 +51,13 @@ Les programmes Sandbox sont livrés de manière automatique dans un environnemen
 
 Le jeu d’environnements de production-évaluation peut être ajouté manuellement au programme Sandbox lorsque l’utilisateur est prêt à configurer un pipeline de production.
 
-To learn how to manually create an environment, refer to [Adding Environment](/help/implementing/cloud-manager/manage-environments.md) for more details.
+Pour savoir comment créer manuellement un environnement, reportez-vous à [Environnement Ajoutant](/help/implementing/cloud-manager/manage-environments.md) pour plus de détails.
 
 ### Suppression d’environnements Sandbox {#deleting-sandbox-environments}
 
 L’utilisateur disposant des autorisations requises peut supprimer un environnement ou un jeu d’environnements de développement ou de production/d’évaluation.
 
-To delete an environment, refer to [Deleting Environment](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) for more details.
+Pour supprimer un environnement, consultez [Suppression d’Environnement](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) pour plus d’informations.
 
 
 ## Mise en veille et réactivation d’environnements Sandbox {#hibernating-introduction}
