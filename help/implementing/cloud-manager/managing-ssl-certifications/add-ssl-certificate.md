@@ -55,22 +55,22 @@ Pour convertir le format de vos fichiers SSL au format PEM, procédez comme suit
 
 ## Erreurs de certificat {#certificate-errors}
 
-### Corriger l&#39;ordre de certificat {#correct-certificate-order}
+### Ordre de certificat {#correct-certificate-order} correct
 
-La raison la plus courante de l’échec du déploiement d’un certificat est que les certificats intermédiaires ou de chaîne ne sont pas dans le bon ordre. Plus précisément, les fichiers de certificat intermédiaire doivent se terminer par le certificat racine ou le certificat le plus proche de la racine et se trouver dans un ordre décroissant entre le `main/server` certificat et la racine.
+La raison la plus courante de l’échec du déploiement d’un certificat est que les certificats intermédiaires ou de chaîne ne sont pas dans le bon ordre. Plus précisément, les fichiers de certificat intermédiaire doivent se terminer par le certificat racine ou le certificat le plus proche de la racine et se trouver dans un ordre décroissant entre le certificat `main/server` et la racine.
 
 Vous pouvez déterminer l’ordre de vos fichiers intermédiaires à l’aide de la commande suivante :
 
 `openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout`
 
-Vous pouvez vérifier que la clé privée et le `main/server` certificat correspondent à l’aide des commandes suivantes :
+Vous pouvez vérifier que la clé privée et le certificat `main/server` correspondent à l’aide des commandes suivantes :
 
 `openssl x509 -noout -modulus -in certificate.pem | openssl md5`
 
 `openssl rsa -noout -modulus -in ssl.key | openssl md5`
 
 >[!NOTE]
->La sortie de ces deux commandes doit être exactement la même. Si vous ne parvenez pas à trouver une clé privée correspondante à votre `main/server` certificat, vous devrez la resynchroniser en générant un nouveau CSR et/ou en demandant un certificat mis à jour à votre fournisseur SSL.
+>La sortie de ces deux commandes doit être exactement la même. Si vous ne parvenez pas à trouver une clé privée correspondante à votre certificat `main/server`, vous devrez recréer la clé du certificat en générant un nouveau CSR et/ou en demandant un certificat mis à jour à votre fournisseur SSL.
 
 ### Dates de validité du certificat {#certificate-validity-dates}
 
