@@ -4,9 +4,9 @@ description: Découvrez les types de métadonnées ainsi que l’organisation et
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: eb30e4f948c748c0c0e39f32c8870aff116a7a86
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1930'
 ht-degree: 94%
 
 ---
@@ -144,7 +144,7 @@ Enterprise Manager Assets vous permet de modifier les métadonnées de plusieu
 
 ## Métadonnées personnalisées à l’aide du profil de traitement {#metadata-compute-service}
 
-Les ressources en tant que Cloud Service peuvent générer des métadonnées personnalisées pour une ressource à l’aide de services natifs au cloud. Configurez un profil de traitement pour générer des métadonnées personnalisées. Voir [comment utiliser le profil de traitement](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
+Les ressources sous la forme [!DNL Cloud Service] peuvent générer des métadonnées personnalisées pour une ressource à l’aide de services natifs au cloud. Configurez un profil de traitement pour générer des métadonnées personnalisées. Voir [comment utiliser le profil de traitement](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
 ![Rendu des métadonnées dans le profil de traitement](assets/processing-profile-metadata.png)
 
