@@ -2,9 +2,9 @@
 title: Ajout de vos ressources numériques à [!DNL Adobe Experience Manager].
 description: Ajoutez vos ressources numériques à  [!DNL Adobe Experience Manager] en tant que  [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
+source-git-commit: a5c9ec14af4241734fb6f6c88d5fc982e52924ce
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1895'
 ht-degree: 38%
 
 ---
@@ -178,10 +178,6 @@ Pour configurer l’outil, procédez comme suit :
    * [!UICONTROL Arrêter] : Arrêtez une configuration principale.
    * [!UICONTROL État] de la tâche : Vue l’état de la configuration lorsqu’elle est utilisée dans une tâche d’importation en cours ou pour une tâche terminée.
    * [!UICONTROL Ressources] de vue : Vue le dossier de cible s’il existe.
-
->[!NOTE]
->
->Le chargement en masse dans le cadre de la migration de contenu à partir d&#39;autres systèmes lors de la configuration et du déploiement vers [!DNL Experience Manager] nécessite une planification, une réflexion et un choix minutieux d&#39;outils. Consultez le [guide de déploiement](/help/implementing/deploying/overview.md) pour en savoir plus sur les méthodes de migration de contenu.
 
 ## Chargement de ressources à l’aide de clients pour ordinateur de bureau {#upload-assets-desktop-clients}
 
