@@ -16,19 +16,19 @@ La solution native de cloud fournit à l’utilisateur les autorisations requise
 
 Un assistant de création de programme demande à l’utilisateur d’envoyer des détails, en fonction de l’objectif de l’utilisateur de créer le programme dans les limites de ce qui est disponible pour le client ou l’organisation spécifique.
 
-Dans le événement de l’accès initial à Cloud Manager ou si aucun programme n’existe dans le client, l’utilisateur verra **Créer votre premier écran de Programme** . Si l’utilisateur sélectionne *Echap* ou clique en dehors de la boîte de dialogue, l’écran suivant s’affiche :
+Dans le événement de l’accès initial à Cloud Manager ou s’il n’existe aucun programme dans le client, l’utilisateur verra **Créer votre premier écran de Programme**. Si l’utilisateur sélectionne *Echap* ou clique en dehors de la boîte de dialogue, l’écran suivant s’affiche :
 
 ![](assets/create-program1.png)
 
 
-## Utilisation de l&#39;Assistant Création de Programmes {#using-create-program-wizard}
+## Utilisation de l&#39;Assistant Création de Programme {#using-create-program-wizard}
 
 En fonction de l’objectif de l’utilisateur de créer le programme dans les limites de ce qui est disponible pour le client/l’organisation spécifique, un assistant de création de programme demande à l’utilisateur d’envoyer un ou plusieurs détails.
 
 ![](assets/create-sandbox.png)
 
 >[!NOTE]
->If a program already exists, then you will see **Add Program** on the top right of the landing page, as shown in the figure below.
+>Si un programme existe déjà, vous verrez **Ajouter le Programme** en haut à droite du landing page, comme illustré dans la figure ci-dessous.
 
 ![](assets/create-program-add.png)
 
@@ -44,16 +44,16 @@ Pour créer un programme de sandbox, procédez comme suit :
 
    ![](assets/program-create-setupdemo2.png)
 
-1. Une fois le programme configuré et l’étape de création du projet terminée, l’utilisateur peut accéder au lien **Gérer les** Gits, comme illustré dans la figure ci-dessous :
+1. Une fois le programme configuré et l&#39;étape de création du projet terminée, l&#39;utilisateur peut accéder au lien **Gérer les accès**, comme indiqué dans la figure ci-dessous :
 
    ![](assets/create-program4.png)
 
    >[!NOTE]
    >
-   >Pour en savoir plus sur l’accès et la gestion de votre référentiel Git à l’aide de la gestion de compte Git en libre-service à partir de l’interface utilisateur de Cloud Manager, voir [Accès au Git](/help/implementing/cloud-manager/accessing-git.md).
+   >Pour en savoir plus sur l’accès et la gestion de votre référentiel Git à l’aide de la gestion de compte Git en libre-service depuis l’interface utilisateur de Cloud Manager, voir [Accès à Git](/help/implementing/cloud-manager/accessing-git.md).
 
 
-1. Une fois l’environnement de développement créé, l’utilisateur peut **accéder au lien AEM** , comme illustré dans la figure ci-dessous :
+1. Une fois l’environnement de développement créé, l’utilisateur peut accéder au lien **AEM**, comme indiqué dans la figure ci-dessous :
 
    ![](assets/create-program-5.png)
 
@@ -66,9 +66,9 @@ Pour créer un programme de sandbox, procédez comme suit :
 
    ![](assets/create-program-a1.png)
 
-## Deleting a Sandbox Program {#delete-sandbox-program}
+## Suppression d&#39;un Programme Sandbox {#delete-sandbox-program}
 
-A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud Manager can delete their Production and Stage environment set via the Cloud Manager UI.
+Un utilisateur de Programme Sandbox dans le rôle *Propriétaire d’entreprise* ou *Deployment Manager* de Cloud Manager peut supprimer son jeu d’environnements de production et d’étape via l’interface utilisateur de Cloud Manager.
 
 >[!NOTE]
 >La sélection de l’option de suppression dans l’environnement de production ou d’évaluation supprime également l’autre dans le jeu d’environnements.
@@ -79,18 +79,18 @@ L’option de suppression est disponible à partir du landing page, comme illust
 
 Ou,
 
-Sélectionnez **Supprimer le Programme** dans la page Aperçu **du** Programme pour supprimer votre Programme Sandbox.
+Sélectionnez **Supprimer le Programme** dans la page **Aperçu du Programme** pour supprimer votre Programme Sandbox.
 
 ![](assets/delete-sandbox2.png)
 
 
-## Creating a Regular Program {#create-regular-program}
+## Création d’un Programme régulier {#create-regular-program}
 
-Un programme *régulier* est destiné à un utilisateur familiarisé avec AEM et Cloud Manager et prêt à début la rédaction, la création et le test de code dans le but de le déployer vers Production.
+Un programme *Normal* est destiné à un utilisateur familiarisé avec AEM et Cloud Manager et prêt à début la rédaction, la création et le test de code dans le but de le déployer vers Production.
 
 Pour créer un programme normal, procédez comme suit :
 
-1. Sélectionnez **Configurer pour la production** dans l’assistant Créer un Programme pour créer un programme normal. L’utilisateur peut accepter le nom de programme par défaut ou le modifier avant de sélectionner **Continuer**.
+1. Sélectionnez **Configurer pour la production** dans l’assistant de création de Programme pour créer un programme normal. L’utilisateur peut accepter le nom de programme par défaut ou le modifier avant de sélectionner **Continuer**.
 
    ![](assets/create-prod1.png)
 
@@ -104,11 +104,11 @@ Pour créer un programme normal, procédez comme suit :
 
    ![](assets/set-up-prod2.png)
 
-1. Once you have selected the solutions, click **Create**.
+1. Une fois les solutions sélectionnées, cliquez sur **Créer**.
 
    ![](assets/set-up-prod3.png)
 
-1. Une fois que vous avez vu votre carte de programme sur le landing page, passez la souris dessus pour sélectionner l’icône Cloud Manager et accéder à la page **Présentation** de Cloud Manager.
+1. Une fois que vous avez vu votre carte de programme sur le landing page, passez la souris dessus pour sélectionner l’icône Cloud Manager et accéder à la page Cloud Manager **Aperçu**.
 
    ![](assets/set-up-prod4.png)
 
@@ -118,7 +118,7 @@ Pour créer un programme normal, procédez comme suit :
 
    >[!NOTE]
    >
-   >A regular program does not have **Auto-setup** feature.
+   >Un programme normal n&#39;a pas de fonction **de configuration automatique**.
 
 
 
