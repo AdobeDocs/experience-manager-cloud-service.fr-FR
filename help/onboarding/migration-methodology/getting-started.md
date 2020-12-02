@@ -1,10 +1,10 @@
 ---
-title: Un pager pour la migration vers le Experience Manager en tant que Cloud Service
-description: Un pager pour la migration vers le Experience Manager en tant que Cloud Service
+title: Migration vers le Experience Manager en tant que Cloud Service
+description: Migration vers le Experience Manager en tant que Cloud Service
 translation-type: tm+mt
-source-git-commit: 02e6581ec5a922d71c53e99212a1f8aecc405f6f
+source-git-commit: 3c1ff52d58f64d351507d20e4368a6aeb1bf6339
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '2070'
 ht-degree: 12%
 
 ---
@@ -167,7 +167,7 @@ Cloud Manager permet aux entreprises de gérer elles-mêmes les Experience Manag
 1. [Déploiement sur Cloud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=en#managing-code) Managergit
 2. Exécutez le code client via le [pipeline de qualité de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use).
 3. [Déploiement sur l’Environnement de développement](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html?lang=en#debugging)
-4. [**Migration**] uniquementTransfert de contenu à l’aide de packages ou de l’outil [ de transfert de ]contenu (https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#cloud-migration(CTT)
+4. [**Migration**] uniquementTransfert de contenu à l’aide de packages ou de l’outil [ de transfert de ](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)contenu (CTT)
 5. Exécuter les cycles d&#39;essai recommandés (fumée, contrôle qualité, etc.)
 6. Promouvoir dans le pipeline de production de Cloud Manager
 7. Validation du test de fumée
