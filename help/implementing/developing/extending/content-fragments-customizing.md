@@ -16,7 +16,7 @@ Dans Adobe Experience Manager as a Cloud Service, un fragment de contenu étend 
 
 * [Création et gestion des fragments de contenu](/help/assets/content-fragments/content-fragments.md) et [Création de pages avec des fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md) pour plus d’informations sur les fragments de contenu.
 
-* [Gestion des actifs](/help/assets/manage-digital-assets.md) pour plus d’informations sur les actifs standard.
+* [Gestion des ](/help/assets/manage-digital-assets.md) actifs pour plus d’informations sur les actifs standard.
 
 <!-- Removing the extend-asset-editor article for now as I'm unsure of its accuracy. Hence commenting this link.
 * [Managing Assets](/help/assets/manage-digital-assets.md) and [Customizing and Extending the Asset Editor](/help/assets/extend-asset-editor.md) for further information about standard assets.
@@ -77,7 +77,7 @@ par exemple, le contenu de l’élément `text` est stocké en tant que proprié
 Hormis le titre et la description, qui ne sont pas considérés comme des métadonnées traditionnelles et sont stockés sur 
 `jcr:content`
 
-#### Emplacement des ressources   {#asset-location}
+#### Emplacement des ressources    {#asset-location}
 
 Comme pour les ressources standard, un fragment de contenu est conservé sous :
 
@@ -103,7 +103,7 @@ Pour une intégration au composant de base Assets :
 >
 >Le [composant Fragment de contenu fait partie des composants de base](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/content-fragment-component.html). Voir [Développement de composants de base](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/developing.html) pour plus d’informations.
 
-Les fragments de contenu peuvent être référencés dans les pages AEM, exactement comme n’importe quel autre type de ressource. AEM fournit le composant de base de **[fragment de contenu](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/content-fragment-component.html)** [qui permet d’inclure des fragments de contenu sur vos pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). Vous pouvez également étendre ce composant de base de **[fragment de contenu](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/developing.html)**.
+Les fragments de contenu peuvent être référencés dans les pages AEM, exactement comme n’importe quel autre type de ressource. AEM fournit le composant de base de **[fragment de contenu](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)** [qui permet d’inclure des fragments de contenu sur vos pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). Vous pouvez également étendre ce composant de base de **[fragment de contenu](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)**.
 
 * Le composant utilise la propriété `fragmentPath` pour référencer le fragment de contenu. La propriété `fragmentPath` est traitée de la même façon que les propriétés similaires d’autres types de ressources, par exemple, lorsque le fragment de contenu est déplacé vers un autre emplacement.
 
@@ -166,7 +166,7 @@ Les fragments de contenu peuvent être intégrés à :
 
    * Le formulaire de schéma respectif est intégré à l’éditeur de fragments.
 
-## L’API de gestion des fragments de contenu – côté serveur   {#the-content-fragment-management-api-server-side}
+## L’API de gestion des fragments de contenu – côté serveur    {#the-content-fragment-management-api-server-side}
 
 Vous pouvez utiliser l’API côté serveur pour accéder à vos fragments de contenu ; voir :
 
@@ -176,7 +176,7 @@ Vous pouvez utiliser l’API côté serveur pour accéder à vos fragments de co
 >
 >Il est fortement conseillé d’utiliser l’API côté serveur plutôt que d’accéder directement à la structure du contenu.
 
-### Interfaces principales   {#key-interfaces}
+### Interfaces principales    {#key-interfaces}
 
 Les trois interfaces suivantes peuvent faire office de points d’entrée :
 
@@ -236,7 +236,7 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
 
 
 
-### Adaptation – utilisation d’adaptTo()   {#adapting-using-adaptto}
+### Adaptation – utilisation d’adaptTo()    {#adapting-using-adaptto}
 
 Ce qui suit peut être adapté :
 
@@ -268,7 +268,7 @@ Il convient de noter les éléments suivants :
 
    * La suppression de variations existantes par l’intermédiaire d’un élément, à l’aide de `ContentElement.removeVariation()`, ne mettra pas à jour les structures de données globales affectées à la variation. Pour garantir le maintien de la synchronisation de ces structures, utilisez plutôt `ContentFragment.removeVariation()`, ce qui supprime globalement une variation.
 
-## L’API de gestion des fragments de contenu – côté client   {#the-content-fragment-management-api-client-side}
+## L’API de gestion des fragments de contenu – côté client    {#the-content-fragment-management-api-client-side}
 
 >[!CAUTION]
 >
@@ -317,7 +317,7 @@ if (fragmentResource != null) {
 }
 ```
 
-### Exemple : création d’un fragment de contenu   {#example-creating-a-new-content-fragment}
+### Exemple : création d’un fragment de contenu    {#example-creating-a-new-content-fragment}
 
 Pour créer un fragment de contenu par programmation, vous devez utiliser un
 modèle `FragmentTemplate` adapté d’une ressource de modèle.
@@ -330,7 +330,7 @@ FragmentTemplate tpl = modelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
-### Exemple : spécification de l’intervalle d’enregistrement automatique   {#example-specifying-the-auto-save-interval}
+### Exemple : spécification de l’intervalle d’enregistrement automatique    {#example-specifying-the-auto-save-interval}
 
 L’[intervalle d’enregistrement automatique](/help/assets/content-fragments/content-fragments-managing.md#save-cancel-and-versions) (exprimé en secondes) peut être défini à l’aide de Configuration Manager (ConfMgr) :
 
@@ -353,4 +353,4 @@ Si vous souhaitez définir un intervalle d’enregistrement automatique de 5 mi
 
 Pour plus d’informations, voir :
 
-* [Composants de base – composant de fragment de contenu](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/content-fragment-component.html) (recommandé)
+* [Composants de base – composant de fragment de contenu](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) (recommandé)
