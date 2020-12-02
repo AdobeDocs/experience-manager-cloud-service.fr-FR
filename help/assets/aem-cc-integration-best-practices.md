@@ -24,7 +24,7 @@ Lisez ce qui suit pour savoir quelles intégrations choisir entre poste de trava
 >
 >Le partage de dossiers d’AEM vers Creative Cloud est maintenant obsolète et n’est plus traité ci-après. Adobe recommande des fonctionnalités plus récentes, telles qu’Adobe Asset Link ou l’application de bureau AEM, pour fournir aux utilisateurs créatifs un accès aux ressources gérées dans AEM.
 
-## Besoins en matière de collaboration des créatifs, spécialistes marketing et utilisateurs de DAM {#collaboration-need-of-creatives-marketers-and-dam-users}
+## Besoins en matière de collaboration des créatifs, spécialistes marketing et utilisateurs de DAM  {#collaboration-need-of-creatives-marketers-and-dam-users}
 
 | Conditions requises | Cas d’utilisation | Surfaces impliquées |
 |---|---|---|
@@ -46,7 +46,7 @@ Cet article se concentre principalement sur les deux premiers aspects des besoin
 
 Choix de la fonctionnalité à utiliser
 
-### Correspondance des cas d’utilisation aux solutions Adobe {#mapping-of-use-cases-and-adobe-solutions}
+### Correspondance des cas d’utilisation aux solutions Adobe  {#mapping-of-use-cases-and-adobe-solutions}
 
 | Cas d’utilisation | Adobe Asset Link | Application de bureau AEM | Remarques ou autres méthodes |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -57,7 +57,7 @@ Choix de la fonctionnalité à utiliser
 | Utilisation - placement de la ressource d’AEM dans un document | Oui - incorporation | Oui - liaison ou incorporation | L’application de bureau AEM donne accès aux ressources sous forme de fichiers sur le système de fichiers local. Ces liens dans les applications natives sont représentés par des chemins d’accès locaux. |
 | Modification - ouvrir pour modification | Oui - Action d’extraction | Oui - Action d’ouverture (dans le partage réseau) | L’[extraction dans AAL](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html) enregistre la ressource dans le compte de stockage Creative Cloud de l’utilisateur (synchronisé par l’application Creative Cloud) par défaut. |
 | Modification - tâche en cours en dehors d’AEM | Oui - Ressource disponible dans le compte de stockage Creative Cloud de l’utilisateur synchronisé avec le poste de travail. | Oui |  |
-| Modification - téléchargement des modifications | Oui - [Action d’archivage](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html) avec des commentaires facultatifs | Oui |  |
+| Modification - téléchargement des modifications | Oui - [Action d’archivage](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) avec des commentaires facultatifs | Oui |  |
 | Téléchargement - fichier unique | Oui - téléchargement du document actif | Oui | [Chargement via l’interface web](/help/assets/manage-digital-assets.md#uploading-assets) |
 | Téléchargement - plusieurs fichiers/structures de dossiers hiérarchiques | Non | Oui | [Chargement via l’interface web](/help/assets/manage-digital-assets.md#uploading-assets) ; outil ou script personnalisé |
 | Divers - utilisateur et connexion | L’utilisateur Creative Cloud connecté à l’application de bureau Creative Cloud est reconnu (SSO) | Utilisateur/connexion AEM | Les utilisateurs des deux solutions sont comptabilisés par rapport au quota d’utilisateurs AEM. |
@@ -70,7 +70,7 @@ Choix de la fonctionnalité à utiliser
 
 Pour prendre en charge les cas d’utilisation de la distribution des ressources, d’autres solutions doivent être envisagées :
 
-* [AEM Assets Brand Portal](https://helpx.adobe.com/fr/experience-manager/brand-portal/user-guide.html) pour un module complémentaire SaaS configurable pour AEM Assets afin de publier des ressources.
+* [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) pour un module complémentaire SaaS configurable pour AEM Assets afin de publier des ressources.
 
 * Les solutions personnalisées sont créées à partir de la base de code [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/).
 * [Partage de liens](/help/assets/share-assets.md) AEM pour partager des ressources ad hoc à l’aide de liens.
@@ -129,7 +129,7 @@ Les ressources d’Adobe Stock sous licence et enregistrées dans AEM sont acce
 
 Pour établir un workflow efficace entre les équipes créatives et marketing/métier, et sélectionner les meilleures fonctionnalités de prise en charge, il est important de comprendre quand et pourquoi les ressources sont stockées dans la gestion des ressources numériques (DAM).
 
-### Pourquoi les ressources sont-elles stockées dans la gestion des ressources numériques ? {#why-assets-are-stored-in-dam}
+### Pourquoi les ressources sont-elles stockées dans la gestion des ressources numériques ?  {#why-assets-are-stored-in-dam}
 
 Le stockage des ressources dans la gestion des ressources numériques permet d’en faciliter l’accès et de les retrouver plus aisément. Cela garantit que les ressources peuvent être exploitées par de nombreux utilisateurs au sein de votre organisation ou écosystème, qui comprend les partenaires, les clients, etc.
 
@@ -139,7 +139,7 @@ Le stockage des ressources est soumis à des considérations techniques et d’u
 
 Souvent, le stockage de toutes les ressources et mises à jour n’est pas souhaitable. Par exemple, si les mises à jour de ressources spécifiques sont de mauvaise qualité et utilisent les ressources en excès, les ressources peuvent être stockées dans la gestion des ressources numériques.
 
-#### Quand les ressources sont-elles stockées dans la gestion des ressources numériques ? {#when-assets-are-stored-in-dam}
+#### Quand les ressources sont-elles stockées dans la gestion des ressources numériques ?  {#when-assets-are-stored-in-dam}
 
 Les équipes créatives (et les organisations) ne sont généralement pas intéressées par le stockage des ressources à chaque étape de leur cycle de vie. Par exemple, elles évitent de stocker des ressources dans les cas suivants :
 
@@ -153,7 +153,7 @@ En règle générale, les classes de ressources suivantes sont stockées dans la
 * Les ressources qui ont été présélectionnées par l’équipe créative
 * Les formats de ressources spécifiques qui sont utilisables ou demandés par le marketing, selon un contrat ou un accord spécifique (par exemple, des fichiers JPG convertis à partir de fichiers RAW, des TIFF/images à partir d’originaux PSD)
 
-#### Quand les mises à jour de ressources sont-elles stockées dans la gestion des ressources numériques ? {#when-updates-to-assets-are-stored-in-dam}
+#### Quand les mises à jour de ressources sont-elles stockées dans la gestion des ressources numériques ?  {#when-updates-to-assets-are-stored-in-dam}
 
 En règle générale, seules les mises à jour des ressources pertinentes pour un large ensemble d’utilisateurs de la gestion des ressources numériques doivent être stockées dans la gestion des ressources numériques. Cela garantit que les utilisateurs (marketing et fonctions similaires) voient uniquement les versions appropriées dans la chronologie des ressources de la gestion des ressources numériques.
 
@@ -170,7 +170,7 @@ Voici quelques exemples de mises à jour qui ne sont généralement pas pertinen
 
 AEM Assets prend en charge deux types d’utilisateurs selon leur accès au déploiement d’AEM Assets. En règle générale, les utilisateurs à l’intérieur du réseau d’entreprise (pare-feu) ont un accès direct à la gestion des ressources numériques. Les autres utilisateurs à l’extérieur du réseau d’entreprise n’auront pas d’accès direct. Le type d’utilisateur détermine les intégrations qui peuvent être utilisées du point de vue technique.
 
-#### Utilisateurs créatifs avec un accès direct à la gestion des ressources numériques {#creative-users-with-direct-access-to-dam}
+#### Utilisateurs créatifs avec un accès direct à la gestion des ressources numériques  {#creative-users-with-direct-access-to-dam}
 
 En règle générale, les équipes créatives internes, de même que les agences et les professionnels de la création intégrés au réseau interne ont accès à l’instance DAM, et peuvent se connecter à AEM. AEM et l’infrastructure réseau peuvent être configurés afin d’autoriser un accès direct aux parties externes (généralement, des entreprises de confiance telles que des agences travaillant pour un client) pour disposer d’un accès à AEM via le réseau (par le biais de la liste adresses IP autorisées ou d’un VPN, par exemple).
 
@@ -183,7 +183,7 @@ Les agences externes et les indépendants sans accès direct à l’instance de 
 Utilisez les stratégies suivantes pour fournir un accès aux ressources finales/approuvées :
 
 * Utilisez l’application de bureau si Asset Link ne fonctionne pas.
-* Utilisez [AEM Assets Brand Portal](https://helpx.adobe.com/fr/experience-manager/brand-portal/user-guide.html) pour distribuer les ressources en toute sécurité aux partenaires externes.
+* Utilisez [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) pour distribuer les ressources en toute sécurité aux partenaires externes.
 * Utilisez une implémentation personnalisée d’un portail de distribution et de source basé sur [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * Utilisez la configuration du contrôle d’accès dans AEM et l’infrastructure réseau nécessaire (mise en liste d’adresses IP autorisées et VPN, par exemple) pour permettre aux parties externes d’accéder à une zone de contenu dédiée dans la gestion des ressources numériques. Ils peuvent utiliser l’interface utilisateur web d’AEM pour obtenir des ressources et charger du nouveau contenu dans la gestion des ressources numériques.
 
