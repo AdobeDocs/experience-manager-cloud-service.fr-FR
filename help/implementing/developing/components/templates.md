@@ -156,9 +156,9 @@ Une liste de toutes les entrées autorisées est créée. Si des configurations 
 Pour créer un dossier, vous pouvez procéder de l’une des façons suivantes :
 
 * Soit par programmation, soit en utilisant CRXDE Lite
-* Using the [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+* Utilisation de l&#39;[navigateur de configuration](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
-## Utilisation de CRXDE Lite  {#using-crxde-lite}
+## Utilisation de CRXDE Lite   {#using-crxde-lite}
 
 1. Un nouveau dossier (sous /conf) peut être créé pour votre instance, soit par programmation soit avec CRXDE Lite.
 
@@ -203,9 +203,9 @@ Pour créer un dossier, vous pouvez procéder de l’une des façons suivantes 
 
 >[!NOTE]
 >
->In the [Configuration Browser,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) you can edit the global folder and activate the **Editable Templates** option if you wish to create templates within this folder, however this is not recommended best practice.
+>Dans le [Navigateur de configuration,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) vous pouvez modifier le dossier global et activer l&#39;option **Modèles modifiables** si vous souhaitez créer des modèles dans ce dossier, mais il n&#39;est pas recommandé de le faire.
 
-### ACL et groupes  {#acls-and-groups}
+### ACL et groupes   {#acls-and-groups}
 
 Une fois vos dossiers de modèles créés (soit via CRXDE, soit à l’aide de l’explorateur de configurations), des listes de contrôle d’accès (ACL) doivent être définies pour les groupes appropriés afin que les dossiers de modèles garantissent une protection adéquate.
 
@@ -470,7 +470,7 @@ Fournit une référence relative à la stratégie de contenu pour le système de
 
 Les stratégies de page vous permettent de définir la [stratégie de contenu](#content-policies) de la page (système de paragraphes principal), soit dans le modèle soit dans les pages créées.
 
-### Activation et autorisation d’un modèle à utiliser  {#enabling-and-allowing-a-template-for-use}
+### Activation et autorisation d’un modèle à utiliser   {#enabling-and-allowing-a-template-for-use}
 
 1. **Activation du modèle**
 
