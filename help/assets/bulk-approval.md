@@ -19,7 +19,7 @@ Une fois que vous avez partagé les ressources, les réviseurs peuvent les appro
 
 Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ressources), vous recevez une notification de fin de révision.
 
-## Création d’une tâche de révision pour des dossiers   {#creating-a-review-task-for-folders}
+## Création d’une tâche de révision pour des dossiers    {#creating-a-review-task-for-folders}
 
 1. Dans l’interface utilisateur Assets, sélectionnez le dossier pour lequel vous souhaitez créer une tâche de révision.
 1. Dans la barre d’outils, appuyez/cliquez sur l’icône **[!UICONTROL Créer une tâche de révision]** pour ouvrir la page **[!UICONTROL Tâche de révision]**. Si l’icône n’apparaît pas dans la barre d’outils, appuyez/cliquez sur **[!UICONTROL Plus]**, puis sélectionnez l’icône.
