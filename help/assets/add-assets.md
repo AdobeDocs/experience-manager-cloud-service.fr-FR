@@ -2,10 +2,10 @@
 title: Ajout de vos ressources numériques à [!DNL Adobe Experience Manager].
 description: Ajoutez vos ressources numériques à  [!DNL Adobe Experience Manager] en tant que  [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
 workflow-type: tm+mt
-source-wordcount: '1972'
-ht-degree: 47%
+source-wordcount: '1930'
+ht-degree: 38%
 
 ---
 
@@ -14,17 +14,17 @@ ht-degree: 47%
 
 [!DNL Adobe Experience Manager] enrichit le contenu binaire des fichiers numériques chargés avec des métadonnées enrichies, des balises intelligentes, des rendus et autres services de gestion des ressources numériques (DAM). Vous pouvez charger divers types de fichiers, tels que des images, des documents et des fichiers d’images brutes, depuis votre dossier local ou un lecteur réseau vers [!DNL Experience Manager Assets].
 
-Plusieurs méthodes de chargement sont proposées. Outre la méthode la plus courante qui consiste à utiliser le navigateur, il existe d’autres méthodes pour ajouter des ressources au référentiel Experience Manager : clients de bureau, comme Adobe Asset Link ou l’application de bureau Experience Manager, scripts de chargement et d’ingestion créés par les clients, ou encore intégrations d’ingestion automatisées ajoutées sous la forme d’extensions Experience Manager.
+Plusieurs méthodes de chargement sont proposées. Outre le téléchargement de navigateur le plus utilisé, il existe d&#39;autres méthodes d&#39;ajout d&#39;actifs au référentiel [!DNL Experience Manager], notamment des clients de bureau, tels que Adobe Asset Link ou [!DNL Experience Manager] application de bureau, de téléchargement et d&#39;assimilation de scripts que les clients créeraient et des intégrations d&#39;assimilation automatisées ajoutées en tant qu&#39;extensions [!DNL Experience Manager].
 
-Dans ce chapitre, nous nous focaliserons sur les méthodes de chargements destinées aux utilisateurs finaux. Nous vous proposerons également des liens vers des articles décrivant les aspects techniques du chargement et de l’ingestion de ressources à l’aide des kits SDK et des API d’Experience Manager.
+Nous allons nous concentrer sur les méthodes de téléchargement pour les utilisateurs finaux ici, et fournir des liens vers des articles décrivant les aspects techniques du transfert et de l&#39;assimilation de ressources à l&#39;aide des [!DNL Experience Manager] API et SDK.
 
-Experience Manager vous permet de charger et de gérer n’importe quel fichier binaire. Cependant, les formats de fichiers les plus courants prennent en charge des services supplémentaires, tels que l’extraction de métadonnées ou la génération d’aperçus et de rendus. Pour plus d’informations, reportez-vous aux [formats de fichiers pris en charge](file-format-support.md).
+Bien que vous puissiez télécharger et gérer n’importe quel fichier binaire dans [!DNL Experience Manager], les formats de fichier les plus couramment utilisés prennent en charge d’autres services, tels que l’extraction des métadonnées ou la génération de prévisualisation/rendu. Pour plus d’informations, reportez-vous aux [formats de fichiers pris en charge](file-format-support.md).
 
 Vous pouvez également choisir d’effectuer un traitement supplémentaire sur les fichiers chargés. Plusieurs profils de traitement de ressources peuvent être configurés sur le dossier dans lequel les ressources sont chargées, afin d’ajouter des services de traitement des images, des rendus ou des métadonnées spécifiques. Voir [traiter les ressources lors du transfert](#process-when-uploaded).
 
 >[!NOTE]
 >
->Experience Manager en tant que [!DNL Cloud Service] utilise une nouvelle méthode de transfert de ressources : le transfert binaire direct. Cette méthode est prise en charge par défaut par les clients et fonctionnalités standard du produit, comme l’interface utilisateur Experience Manager, Adobe Asset Link et l’application de bureau Experience Manager. Elle est donc transparente pour les utilisateurs finaux.
+>[!DNL Experience Manager] en tant que  [!DNL Cloud Service] levier une nouvelle façon de télécharger des ressources - transfert binaire direct. Il est pris en charge par défaut par les fonctionnalités de produit prêtes à l’emploi et les clients, tels que l’interface utilisateur [!DNL Experience Manager], [!DNL Adobe Asset Link], l’application de bureau [!DNL Experience Manager], et donc transparente pour les utilisateurs finaux.
 >
 >Le code de chargement personnalisé ou étendu par les équipes techniques des clients doit utiliser les nouvelles API et les nouveaux protocoles de chargement.
 
@@ -35,7 +35,7 @@ Assets as a [!DNL Cloud Service] fournit les méthodes de téléchargement suiva
 | [Interface utilisateur de la console Ressources](#upload-assets) | Téléchargement occasionnel, facilité de pression et de glisser, téléchargement de recherche. N’utilisez pas pour télécharger un grand nombre de fichiers. | Tous les utilisateurs |
 | [API de téléchargement](#upload-using-apis) | Pour les décisions dynamiques lors du transfert. | Développeur |
 | [[!DNL Experience Manager] application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Importation de ressources en faible volume, mais pour la migration. | Administrateur, Marketer |
-| [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Utile lorsque les créatifs et les marketeurs travaillent sur des ressources à partir des applications de bureau [!DNL Creative Cloud] prises en charge. | Créatif, spécialiste du marketing |
+| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Utile lorsque les créatifs et les marketeurs travaillent sur des ressources à partir des applications de bureau [!DNL Creative Cloud] prises en charge. | Créatif, spécialiste du marketing |
 | [Intégrateur en masse de ressources](#asset-bulk-ingestor) | Recommandé pour les migrations à grande échelle et les ingestions occasionnelles en vrac. Uniquement pour les banques de données prises en charge. | Administrateur, développeur |
 
 ## Chargement des ressources {#upload-assets}
@@ -144,7 +144,7 @@ L’analyseur de ressources en vrac peut gérer efficacement des milliers de res
 Pour télécharger un plus grand nombre de fichiers, utilisez l’une des méthodes suivantes. Voir aussi les [cas d’utilisation et les méthodes](#upload-methods-comparison)
 
 * [API](developer-reference-material-apis.md#asset-upload-technical) de transfert de ressources : Utilisez un script ou un outil de téléchargement personnalisé qui utilise les API pour ajouter une gestion supplémentaire des ressources (par exemple, traduire des métadonnées ou renommer des fichiers), si nécessaire.
-* [Application](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) de bureau Experience Manager : Utile pour les professionnels de la création et les marketeurs qui téléchargent des fichiers à partir de leur système de fichiers local. Utilisez-la pour télécharger les dossiers imbriqués disponibles localement.
+* [[!DNL Experience Manager] application](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) de bureau : Utile pour les professionnels de la création et les marketeurs qui téléchargent des fichiers à partir de leur système de fichiers local. Utilisez-la pour télécharger les dossiers imbriqués disponibles localement.
 * [Outil](#asset-bulk-ingestor) d&#39;assimilation en masse : Utilisation pour l’assimilation de grandes quantités de ressources, occasionnellement ou initialement, lors du déploiement  [!DNL Experience Manager].
 
 ### Outil d&#39;assimilation en masse de ressources {#asset-bulk-ingestor}
@@ -181,14 +181,14 @@ Pour configurer l’outil, procédez comme suit :
 
 >[!NOTE]
 >
->Pour effectuer un téléchargement massif dans le cadre de la migration de contenu à partir d’autres systèmes lors de la configuration et du déploiement vers Experience Manager, la planification et le choix des outils doivent faire l’objet d’une attention particulière. Consultez le [guide de déploiement](/help/implementing/deploying/overview.md) pour en savoir plus sur les méthodes de migration de contenu.
+>Le chargement en masse dans le cadre de la migration de contenu à partir d&#39;autres systèmes lors de la configuration et du déploiement vers [!DNL Experience Manager] nécessite une planification, une réflexion et un choix minutieux d&#39;outils. Consultez le [guide de déploiement](/help/implementing/deploying/overview.md) pour en savoir plus sur les méthodes de migration de contenu.
 
 ## Chargement de ressources à l’aide de clients pour ordinateur de bureau {#upload-assets-desktop-clients}
 
-Outre l’interface utilisateur du navigateur web, Experience Manager prend en charge d’autres clients pour ordinateur de bureau. Ils permettent également de télécharger du contenu sans devoir passer par le navigateur web.
+Outre l’interface utilisateur du navigateur Web, [!DNL Experience Manager] prend en charge d’autres clients sur le bureau. Ils permettent également de télécharger du contenu sans devoir passer par le navigateur web.
 
-* [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) permet d’accéder aux ressources [!DNL Experience Manager] dans les applications de bureau Adobe Photoshop, Adobe Illustrator et Adobe InDesign. Ces applications vous offrent la possibilité de charger directement le document ouvert vers [!DNL Experience Manager] depuis l’interface utilisateur d’Adobe Asset Link.
-* L’[application de bureau Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) simplifie l’utilisation des ressources sur l’ordinateur, indépendamment du type de fichier ou de l’application native affectée à leur gestion. Il est particulièrement utile de charger des fichiers dans des hiérarchies de dossiers imbriqués à partir de votre système de fichiers local, car le téléchargement à l’aide du navigateur ne prend en charge que les listes de fichiers plats.
+* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) permet d’accéder aux ressources [!DNL Experience Manager] dans les applications de bureau Adobe Photoshop, Adobe Illustrator et Adobe InDesign. Ces applications vous offrent la possibilité de charger directement le document ouvert vers [!DNL Experience Manager] depuis l’interface utilisateur d’Adobe Asset Link.
+* L’[[!DNL Experience Manager] application de bureau ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) simplifie l’utilisation des ressources sur l’ordinateur, indépendamment du type de fichier ou de l’application native affectée à leur gestion. Il est particulièrement utile de charger des fichiers dans des hiérarchies de dossiers imbriqués à partir de votre système de fichiers local, car le téléchargement à l’aide du navigateur ne prend en charge que les listes de fichiers plats.
 
 ## Traiter les ressources lors du transfert {#process-when-uploaded}
 
@@ -218,8 +218,8 @@ Les détails techniques du protocole et des API de chargement, ainsi que les lie
 
 >[!MORELIKETHIS]
 >
->* [Application de bureau Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
->* [À propos d’Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
->* [Documentation d’Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [[!DNL Adobe Experience Manager] application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
+>* [À propos d’ [!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [[!DNL Adobe Asset Link] documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [Référence technique pour le chargement de ressources](developer-reference-material-apis.md#asset-upload-technical)
 
