@@ -142,9 +142,9 @@ Enterprise Manager Assets vous permet de modifier les métadonnées de plusieu
    >
    >Pour les champs à une seule valeur, les nouvelles métadonnées ne sont pas ajoutées à la valeur existante dans le champ même si vous sélectionnez **[!UICONTROL Mode d’ajout]**.
 
-## Custom metadata using processing profile {#metadata-compute-service}
+## Métadonnées personnalisées à l’aide du profil de traitement {#metadata-compute-service}
 
-Les ressources en tant que Cloud Service peuvent générer des métadonnées personnalisées pour une ressource à l’aide de services natifs au cloud. Configurez un profil de traitement pour générer des métadonnées personnalisées. Voir [comment utiliser le profil](/help/assets/asset-microservices-configure-and-use.md#use-profiles)de traitement.
+Les ressources en tant que Cloud Service peuvent générer des métadonnées personnalisées pour une ressource à l’aide de services natifs au cloud. Configurez un profil de traitement pour générer des métadonnées personnalisées. Voir [comment utiliser le profil de traitement](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
 ![Rendu des métadonnées dans le profil de traitement](assets/processing-profile-metadata.png)
 
