@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Raccourcis clavier pour les consoles   {#keyboard-shortcuts-for-consoles}
+# Raccourcis clavier pour les consoles    {#keyboard-shortcuts-for-consoles}
 
 Les raccourcis suivants sont disponibles pour les consoles Sites, Assets, Utilisateurs, Groupes, Projets et Fragments d’expérience.
 
