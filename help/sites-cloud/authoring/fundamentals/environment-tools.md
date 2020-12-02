@@ -45,7 +45,7 @@ Lorsque vous modifiez une page, l’**Aide** est accessible depuis :
 
 D’autres [ressources d’aide sont accessibles depuis les consoles](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help).
 
-## Explorateur de composants    {#components-browser}
+## Explorateur de composants     {#components-browser}
 
 Les composants sont les blocs de création du contenu AEM. Vous placez plusieurs composants sur une page et configurez leurs options afin de créer votre page de contenu avec AEM.
 
@@ -159,7 +159,7 @@ Si vous devez modifier rapidement une ressource, vous pouvez lancer [l’éditeu
 
 ![Bouton Modifier la ressource](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
-## Arborescence de contenu    {#content-tree}
+## Arborescence de contenu     {#content-tree}
 
 L’**arborescence de contenu** présente une vue d’ensemble des composants sur la page sous forme de structure hiérarchique pour que vous puissiez visualiser la composition de la page en un seul coup d’œil.
 
@@ -261,7 +261,7 @@ L’icône Informations sur la page (icône d’égaliseur) ouvre un menu qui fo
 
 Le menu **Informations sur la page** peut en outre donner accès à des analyses et recommandations, le cas échéant.
 
-## Modes de page    {#page-modes}
+## Modes de page     {#page-modes}
 
 Lors de la modification d’une page, plusieurs modes permettent d’effectuer différentes actions :
 
@@ -283,6 +283,7 @@ Vous pouvez accéder à ces modes en cliquant sur les icônes dans le coin supé
 >* L’accès à certains modes implique que vous disposiez des droits ou autorisations appropriés.
 >* Le mode Développeur n’est pas accessible sur les appareils mobiles en raison de restrictions d’espace.
 >* Utilisez le [raccourci clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) pour permuter entre l’**Aperçu** et le mode actuellement sélectionné (par ex. **Modifier**, **Mise en page**, etc.).
+
 >
 
 
