@@ -169,7 +169,7 @@ Sur la base de cette analyse, vous utiliseriez `categoryId` et `SKU` pour les zo
 
 Vous êtes à présent prêt à charger une bannière d’image et à y ajouter des zones réactives à l’aide de la fonctionnalité d’images interactives Shoppable d’AEM Assets.
 
-## (Facultatif) Création d’un paramètre prédéfini de visionneuse d’images interactives  {#optional-creating-an-interactive-image-viewer-preset}
+## (Facultatif) Création d’un paramètre prédéfini de visionneuse d’images interactives   {#optional-creating-an-interactive-image-viewer-preset}
 
 Vous pouvez choisir d’utiliser la valeur par défaut, le paramètre prédéfini de visionneuse d’images interactives, appelé « `Shoppable_Banner` », qui est fourni avec AEM Assets. Vous pouvez également créer votre propre paramètre prédéfini de visionneuse personnalisé à utiliser avec les images interactives.
 
@@ -201,7 +201,7 @@ Une fois que vous avez enregistré le paramètre prédéfini de visionneuse, il 
 
    Vous êtes désormais prêt à charger une bannière d’image.
 
-## Chargement d’une bannière d’image  {#uploading-an-image-banner}
+## Chargement d’une bannière d’image   {#uploading-an-image-banner}
 
 Si vous avez déjà chargé les images que vous souhaitez utiliser, passez à l’étape suivante [Ajout de zones réactives à une bannière d’image](#adding-hotspots-to-an-image-banner).
 
@@ -213,7 +213,7 @@ Si vous avez déjà chargé les images que vous souhaitez utiliser, passez à l�
 
    Vous êtes maintenant prêt à ajouter des zones réactives à la bannière d’image. Reportez-vous à la tâche suivante ci-dessous.
 
-## Ajout de zones réactives à une bannière d’image  {#adding-hotspots-to-an-image-banner}
+## Ajout de zones réactives à une bannière d’image   {#adding-hotspots-to-an-image-banner}
 
 Vous pouvez ajouter des zones réactives à une bannière d’image à l’aide de l’éditeur dans la page Gestion des zones réactives.
 
@@ -310,7 +310,7 @@ Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres pr�
    >
    >Si vous modifiez des images interactives avec des zones réactives et que vous recadrez l’image, les zones réactives sont supprimées.
 
-### (Facultatif) Aperçu des images interactives  {#optional-previewing-interactive-images}
+### (Facultatif) Aperçu des images interactives   {#optional-previewing-interactive-images}
 
 Vous pouvez utiliser la prévisualisation pour afficher une représentation de votre image interactive, telle qu’elle s’affichera pour les clients, et tester les zones réactives de l’image pour vous assurer qu’elles se comportent de la façon escomptée.
 
@@ -366,7 +366,7 @@ Voir la commande de service d’images [crop](https://docs.adobe.com/content/hel
 
 Vous êtes désormais prêt à intégrer l’image interactive à un aperçu rapide existant de votre site web.
 
-## Intégration d’une image interactive dans un aperçu rapide existant  {#integrating-an-interactive-image-with-an-existing-quickview}
+## Intégration d’une image interactive dans un aperçu rapide existant   {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
 >
