@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Balise décorative {#decoration-tag}
+# Balise décorative  {#decoration-tag}
 
 Lors du rendu d’un composant d’une page web, un élément HTML peut être généré, en encapsulant le composant rendu sur lui-même. Dans ce cas, l’objectif est double :
 
@@ -42,7 +42,7 @@ Les propriétés et nœuds suivants peuvent être appliqués aux composants pour
    * **`class {String}` :** cette propriété peut être utilisée pour spécifier des noms de classe CSS à ajouter à l’élément wrapper.
    * D’autres noms de propriété seront ajoutés comme attributs HTML avec la même valeur String que celle fournie.
 
-## Contrôles de script {#script-controls}
+## Contrôles de script  {#script-controls}
 
 En règle générale, le comportement de l’élément wrapper dans HTL peut être résumé comme suit :
 
