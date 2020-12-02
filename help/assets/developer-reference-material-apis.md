@@ -1,5 +1,5 @@
 ---
-title: Références du développeur pour [!DNL Assets]
+title: Références du développeur pour  [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 translation-type: tm+mt
@@ -11,36 +11,36 @@ ht-degree: 49%
 ---
 
 
-# [!DNL Assets] API et matériel de référence pour les développeurs {#assets-cloud-service-apis}
+# [!DNL Assets] API et matériel de référence pour les développeurs  {#assets-cloud-service-apis}
 
-L&#39;article contient du matériel de référence et des ressources pour les développeurs de [!DNL Assets] Cloud Service. Il comprend une nouvelle méthode de téléchargement, une référence à l’API et des informations sur la prise en charge fournie dans les workflows de post-traitement.
+L&#39;article contient des documents de référence et des ressources pour les développeurs de [!DNL Assets] en tant que Cloud Service. Il comprend une nouvelle méthode de téléchargement, une référence à l’API et des informations sur la prise en charge fournie dans les workflows de post-traitement.
 
 ## Chargement de ressources {#asset-upload-technical}
 
 [!DNL Experience Manager] as a Cloud Service fournit une nouvelle méthode pour télécharger des ressources vers le référentiel. Les utilisateurs peuvent directement télécharger les ressources vers l’enregistrement cloud à l’aide de l’API HTTP. Pour télécharger un fichier binaire, procédez comme suit :
 
-1. [Envoyez une requête](#initiate-upload)HTTP. Il informe [!DNL Experience Manage]ou le déploiement de votre intention de télécharger un nouveau binaire.
+1. [Envoyez une requête](#initiate-upload) HTTP. Il informe [!DNL Experience Manage]r le déploiement de votre intention de télécharger un nouveau binaire.
 1. [Publiez le contenu du fichier binaire sur un ou plusieurs URI fournis par la requête de lancement.](#upload-binary)
 1. [Envoyez une requête HTTP pour informer le serveur que le contenu du fichier binaire a bien été chargé.](#complete-upload)
 
 ![Présentation du protocole de chargement binaire direct](assets/add-assets-technical.png)
 
-Cette approche permet une gestion évolutive et plus performante des transferts de ressources. Les différences par rapport à [!DNL Experience Manager] 6,5 sont les suivantes :
+Cette approche permet une gestion évolutive et plus performante des transferts de ressources. Les différences par rapport à [!DNL Experience Manager] 6.5 sont les suivantes :
 
-* Binaries do not go through [!DNL Experience Manager], which is now simply coordinating the upload process with the binary cloud storage configured for the deployment.
+* Les binaires ne passent pas par [!DNL Experience Manager], qui se contente maintenant de coordonner le processus de téléchargement avec l’enregistrement de cloud binaire configuré pour le déploiement.
 * L’enregistrement cloud binaire fonctionne avec un réseau CDN (Content Diffusion Network) ou Edge. Un CDN sélectionne un point de terminaison de transfert plus proche pour un client. Lorsque les données parcourent une distance plus courte jusqu’à un point de terminaison voisin, les performances de transfert et l’expérience utilisateur s’améliorent, en particulier pour les équipes géographiquement réparties.
 
 >[!NOTE]
 >
->Voir le code client pour implémenter cette approche dans la bibliothèque [de téléchargement](https://github.com/adobe/aem-upload)aem open source.
+>Consultez le code client pour implémenter cette approche dans la [bibliothèque de transfert aem](https://github.com/adobe/aem-upload) open-source.
 
 ### Lancement du chargement {#initiate-upload}
 
-Envoyez une demande de POST HTTP au dossier de votre choix. Les ressources sont créées ou mises à jour dans ce dossier. Incluez le sélecteur `.initiateUpload.json` pour indiquer que la demande doit lancer le téléchargement d’un fichier binaire. For example, the path to the folder where the asset should be created is `/assets/folder`. La demande du POST est `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`.
+Envoyez une demande de POST HTTP au dossier de votre choix. Les ressources sont créées ou mises à jour dans ce dossier. Insérez le sélecteur `.initiateUpload.json` pour indiquer que la demande est de lancer le téléchargement d’un fichier binaire. Par exemple, le chemin d’accès au dossier dans lequel la ressource doit être créée est `/assets/folder`. La demande du POST est `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`.
 
 Le corps de la requête doit être constitué de données de formulaire `application/x-www-form-urlencoded`, contenant les champs suivants :
 
-* `(string) fileName` : obligatoire. Nom du fichier tel qu’il apparaît dans [!DNL Experience Manager].
+* `(string) fileName` : obligatoire. Nom de la ressource tel qu’il apparaît dans [!DNL Experience Manager].
 * `(number) fileSize` : obligatoire. Taille de fichier, en octets, de la ressource en cours de téléchargement.
 
 Une seule requête peut être utilisée afin de lancer des chargements pour plusieurs fichiers binaires, à condition que chaque binaire contienne les champs obligatoires. En cas de succès, la requête renverra un code d’état `201` et un corps contenant des données JSON au format suivant :
@@ -82,7 +82,7 @@ Pour ce faire, il est possible de calculer la taille de la pièce en fonction du
 * Publiez la plage d’octets 0 à 9 999 du binaire sur le premier URI de la liste des URI de chargement.
 * Publiez la plage d’octets 10 000 à 19 999 du binaire sur le deuxième URI de la liste des URI de chargement.
 
-If the upload is successful, the server responds to each request with a `201` status code.
+Si le transfert aboutit, le serveur répond à chaque requête avec un code d’état `201`.
 
 ### Fin du chargement {#complete-upload}
 
@@ -93,13 +93,13 @@ Après avoir téléchargé toutes les parties d’un fichier binaire, envoyez un
 | `fileName` | Chaîne | Requis | Nom de la ressource, tel qu’il est fourni par les données de lancement. |
 | `mimeType` | Chaîne | Requis | Type de contenu HTTP du binaire, tel qu’il est fourni par les données de lancement. |
 | `uploadToken` | Chaîne | Requis | Jeton de chargement du binaire, tel qu’il est fourni par les données de lancement. |
-| `createVersion` | Booléen | Facultatif | If `True` and an asset with the specified name exists, then [!DNL Experience Manager] creates a new version of the asset. |
+| `createVersion` | Booléen | Facultatif | Si `True` et qu&#39;une ressource portant le nom spécifié existe, [!DNL Experience Manager] crée une nouvelle version de la ressource. |
 | `versionLabel` | Chaîne | Facultatif | Si une version est créée, le libellé associé à la nouvelle version d’une ressource. |
 | `versionComment` | Chaîne | Facultatif | Si une version est créée, les commentaires associés à la version. |
-| `replace` | Booléen | Facultatif | If `True` and an asset with the specified name exists, [!DNL Experience Manager] deletes the asset then re-create it. |
+| `replace` | Booléen | Facultatif | Si `True` et qu&#39;un fichier portant le nom spécifié existe, [!DNL Experience Manager] supprime l&#39;actif, puis le recrée. |
 
 >!![NOTE]
->If the asset exists and neither `createVersion` nor `replace` is specified, then [!DNL Experience Manager] updates the asset&#39;s current version with the new binary.
+Si la ressource existe et que `createVersion` ni `replace` ne sont spécifiés, [!DNL Experience Manager] met à jour la version actuelle de la ressource avec le nouveau binaire.
 
 Comme c’est le cas pour le processus de lancement, les données de la requête de fin peuvent contenir des informations pour plusieurs fichiers.
 
@@ -118,26 +118,25 @@ Pour en savoir plus sur les algorithmes de téléchargement ou pour créer vos p
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-La nouvelle méthode de téléchargement n’est prise en charge que pour [!DNL Adobe Experience Manager] un Cloud Service. Les API de la version [!DNL Adobe Experience Manager] 6.5 sont obsolètes. Les méthodes liées au chargement ou à la mise à jour de ressources ou de rendus (tout chargement de binaires) sont obsolètes dans les API suivantes :
+La nouvelle méthode de téléchargement n’est prise en charge que pour [!DNL Adobe Experience Manager] en tant que Cloud Service. Les API de [!DNL Adobe Experience Manager] 6.5 sont obsolètes. Les méthodes liées au chargement ou à la mise à jour de ressources ou de rendus (tout chargement de binaires) sont obsolètes dans les API suivantes :
 
 * [API HTTP des ressources Experience Manager](mac-api-assets.md)
 * API Java `AssetManager`, comme `AssetManager.createAsset(..)`
 
 >[!MORELIKETHIS]
->
->* [Bibliothèque de chargement AEM Open Source](https://github.com/adobe/aem-upload).
->* [Outil de ligne de commande Open Source](https://github.com/adobe/aio-cli-plugin-aem).
+* [Bibliothèque de chargement AEM Open Source](https://github.com/adobe/aem-upload).
+* [Outil de ligne de commande Open Source](https://github.com/adobe/aio-cli-plugin-aem).
 
 
 ## Workflows de traitement et de post-traitement des ressources {#post-processing-workflows}
 
-In [!DNL Experience Manager], the asset processing is based on **[!UICONTROL Processing Profiles]** configuration that uses [asset microservices](asset-microservices-configure-and-use.md#get-started-using-asset-microservices). Le traitement ne nécessite pas d’extensions de développeur.
+Dans [!DNL Experience Manager], le traitement des actifs est basé sur la configuration **[!UICONTROL Profils de traitement]** qui utilise [microservices de ressources](asset-microservices-configure-and-use.md#get-started-using-asset-microservices). Le traitement ne nécessite pas d’extensions de développeur.
 
 Pour la configuration du workflow de post-traitement, utilisez les workflows standard avec des extensions pour les étapes personnalisées.
 
 ## Prise en charge des étapes d’un workflow de post-traitement {#post-processing-workflows-steps}
 
-Les clients effectuant une mise à niveau à partir de versions précédentes de peuvent utiliser des microservices de ressources pour traiter des ressources. [!DNL Experience Manager] Les microservices de ressources natifs en mode cloud sont beaucoup plus simples à configurer et à utiliser. Certaines étapes appliquées dans le workflow [!UICONTROL Ressource de mise à jour de la gestion des actifs numériques] de la version précédente ne sont pas prises en charge.
+Les clients effectuant une mise à niveau à partir des versions précédentes de [!DNL Experience Manager] peuvent utiliser les microservices de ressources pour traiter les ressources. Les microservices de ressources natifs en mode cloud sont beaucoup plus simples à configurer et à utiliser. Certaines étapes appliquées dans le workflow [!UICONTROL Ressource de mise à jour de la gestion des actifs numériques] de la version précédente ne sont pas prises en charge.
 
 [!DNL Experience Manager] en tant que Cloud Service prend en charge les étapes de processus suivantes :
 
@@ -194,6 +193,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
->
->* [L’Experience Cloud en tant que SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)Cloud Service.
+* [L’Experience Cloud en tant que SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) Cloud Service.
 
