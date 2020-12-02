@@ -3,10 +3,10 @@ title: 'API HTTP Assets '
 description: Créer, lire, mettre à jour, supprimer et gérer des ressources numériques à l’aide de l’API HTTP dans [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1475'
-ht-degree: 100%
+source-wordcount: '1473'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne 
 
 >[!NOTE]
 >
->Tous les appels d’API liés au chargement ou à la mise à jour des ressources ou des fichiers binaires en général (tels que les rendus) sont obsolètes pour un déploiement d’AEM as a Cloud Service. Pour charger des fichiers binaires, utilisez plutôt des [API de chargement binaire direct](developer-reference-material-apis.md#asset-upload-technical).
+>Tous les appels d’API liés au transfert ou à la mise à jour des ressources ou des binaires en général (tels que les rendus) sont abandonnés pour AEM en tant que déploiement [!DNL Cloud Service]. Pour charger des fichiers binaires, utilisez plutôt des [API de chargement binaire direct](developer-reference-material-apis.md#asset-upload-technical).
 
 ## Fragments de contenu {#content-fragments}
 
