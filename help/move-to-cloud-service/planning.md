@@ -46,7 +46,7 @@ La première étape de la phase de planification consiste à évaluer votre capa
 
 Vous devrez effectuer une évaluation complète du code source AEM existant par rapport aux modifications notables et aux fonctionnalités obsolètes afin de déterminer le niveau d’effort attendu pour le parcours de transition.
 
-Vous pouvez accélérer l’étape d’évaluation en exécutant l’analyseur des meilleures pratiques sur votre version d’AEM actuelle. Pour plus d’informations, reportez-vous à la section Analyseur des [meilleures pratiques](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
+Vous pouvez accélérer l’étape d’évaluation en exécutant l’analyseur des meilleures pratiques sur votre version d’AEM actuelle. Pour plus d&#39;informations, consultez [Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
 
 >[!NOTE]
 >Si vous avez déjà accès à Cloud Manager et à un environnement Cloud Service, il est recommandé de faire fonctionner votre code actuel dans un pipeline de qualité de code Cloud Manager afin d’évaluer les modifications de code assurant la compatibilité avec Cloud Service.
