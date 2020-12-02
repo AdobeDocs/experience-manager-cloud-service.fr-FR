@@ -11,11 +11,11 @@ ht-degree: 100%
 ---
 
 
-# Importation et exportation des métadonnées de ressources par lot  {#import-and-export-asset-metadata-in-bulk}
+# Importation et exportation des métadonnées de ressources par lot   {#import-and-export-asset-metadata-in-bulk}
 
 AEM Assets permet d’importer des métadonnées de ressources par lot à l’aide d’un fichier CSV. Vous pouvez effectuer des mises à jour par lot pour les ressources récemment transférées ou les ressources existantes en important un fichier CSV. Vous pouvez également assimiler des métadonnées de ressources par lot à partir d’un système tiers au format CSV.
 
-## Importation de métadonnées  {#import-metadata}
+## Importation de métadonnées   {#import-metadata}
 
 L’importation de métadonnées est asynchrone et ne nuit pas aux performances du système. La mise à jour simultanée des métadonnées pour plusieurs ressources peut être gourmande en ressources en raison de l’activité d’écriture différée XMP si l’indicateur de workflow est coché. Planifiez une importation de ce type quand le serveur est peu utilisé afin que les performances d’autres utilisateurs ne soient pas affectées.
 
