@@ -69,7 +69,7 @@ Il est recommandé de placer la majorité du code du connecteur sous `/apps/conn
 Configuration de Cloud Services
 -----------------------------
 
-Le code sur lequel est basée la configuration du connecteur constitue l’un des aspects de son implémentation. Ce code entraîne l’affichage d’une carte portant le nom du connecteur sous Outils > Opérations > Cloud Services. When clicked, a [configuration browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) pops up where the customer selects the parent folder to contain the connector configuration. Le code du connecteur doit générer un formulaire avec toutes les propriétés à configurer et stocker, au final, les valeurs dans un dossier de configuration sous `/conf`. Ce dossier pourra ensuite être sélectionné sous l’onglet Propriétés de Sites ou Propriétés d’Assets.
+Le code sur lequel est basée la configuration du connecteur constitue l’un des aspects de son implémentation. Ce code entraîne l’affichage d’une carte portant le nom du connecteur sous Outils > Opérations > Cloud Services. Lorsque vous cliquez dessus, un [navigateur de configuration](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) s’affiche où le client sélectionne le dossier parent qui contient la configuration du connecteur. Le code du connecteur doit générer un formulaire avec toutes les propriétés à configurer et stocker, au final, les valeurs dans un dossier de configuration sous `/conf`. Ce dossier pourra ensuite être sélectionné sous l’onglet Propriétés de Sites ou Propriétés d’Assets.
 
 
 Configurations basées sur le contexte
