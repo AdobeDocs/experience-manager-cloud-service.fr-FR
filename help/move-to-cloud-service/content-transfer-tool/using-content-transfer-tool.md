@@ -18,32 +18,32 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * La configuration minimale requise pour l’outil de transfert de contenu est AEM 6.3+ et JAVA 8. Si vous utilisez une version antérieure d’AEM, vous devrez mettre à niveau votre référentiel de contenu à la version AEM 6.5 pour utiliser l’outil de transfert de contenu.
 
-* Java doit être configuré sur l’environnement AEM, de sorte que la `java` commande puisse être exécutée par l’utilisateur qui a début AEM.
+* Java doit être configuré sur l&#39;environnement AEM, de sorte que la commande `java` puisse être exécutée par l&#39;utilisateur qui a début AEM.
 
 * L’outil de transfert de contenu peut être utilisé avec les types de stockage de données suivants : File Data Store, S3 Data Store, Shared S3 Data Store et Azure Blob Store Data Store.
 
-* Si vous utilisez un Environnement ** Sandbox, assurez-vous que votre environnement est à jour et mis à niveau vers la dernière version. Si vous utilisez un *environnement de production*, il est automatiquement mis à jour.
+* Si vous utilisez un *Environnement Sandbox*, assurez-vous que votre environnement est à jour et mis à niveau vers la dernière version. Si vous utilisez un *environnement de production*, il est automatiquement mis à jour.
 
 * Pour utiliser l’outil de transfert de contenu, vous devez être un utilisateur administrateur sur votre instance source et appartenir au groupe d’administrateurs AEM locaux dans l’instance de Cloud Service à laquelle vous transférez du contenu. Les utilisateurs non privilégiés ne pourront pas récupérer le jeton d’accès pour utiliser l’outil de transfert de contenu.
 
 * Actuellement, la taille de MongoDB par défaut pour un AEM en tant qu’instance d’auteur Cloud Service est de 32 Go. Pour une taille de stockage de segments supérieure à 20 Go, il est recommandé d’envoyer un ticket d’assistance afin d’augmenter la taille de MongoDB.
 
-* Les utilisateurs et groupes transférés par l’outil de transfert de contenu sont uniquement ceux qui sont requis par le contenu pour satisfaire aux autorisations. Le processus *d’Extraction* copie l’intégralité `/home` du jeu de migration et le processus d’ *importation* copie tous les utilisateurs et groupes référencés dans les listes de contrôle d’accès du contenu migré.
+* Les utilisateurs et groupes transférés par l’outil de transfert de contenu sont uniquement ceux qui sont requis par le contenu pour satisfaire aux autorisations. Le processus *Extraction* copie l&#39;ensemble `/home` dans le jeu de migration et le processus *Ingestion* copie tous les utilisateurs et groupes référencés dans les listes de contrôle d&#39;accès du contenu migré.
 
 * Pendant la phase d’extraction, l’outil de transfert de contenu est exécuté sur une instance source AEM active.
 
-* Après avoir terminé la phase d&#39; *Extraction* du processus de transfert de contenu et avant de commencer la phase *d&#39;* importation pour ingérer du contenu dans votre AEM en tant qu&#39;instances d&#39; *étape* de Cloud Service ou de *production, vous devrez enregistrer un ticket d&#39;assistance pour informer l&#39;Adobe de votre intention d&#39;exécuter le  d&#39;importation de  afin que l&#39;Adobe puisse vous garantir qu&#39;absence d&#39;interruption.***** Vous devrez enregistrer le ticket de support 1 semaine avant la date prévue de votre *importation* . Une fois que vous avez soumis le ticket d&#39;assistance, l&#39;équipe d&#39;assistance vous donnera des conseils sur les étapes suivantes.
+* Après avoir terminé la phase *Extraction* du processus de transfert de contenu et avant de commencer la phase *d&#39;importation* pour ingérer du contenu dans votre AEM en tant que Cloud Service *Stage* ou *Production*, vous devez enregistrer un ticket d&#39;assistance pour informer l&#39;Adobe de votre intention d&#39;exécuter *Production gestion* afin que l&#39;Adobe puisse s&#39;assurer qu&#39;aucune interruption ne se produit pendant le processus *Ingestion*. Vous devrez consigner le ticket de support 1 semaine avant la date *d&#39;importation* prévue. Une fois que vous avez soumis le ticket d&#39;assistance, l&#39;équipe d&#39;assistance vous donnera des conseils sur les étapes suivantes.
    * Enregistrez un ticket d&#39;assistance avec les détails suivants :
-      * Date exacte et heure estimée (avec votre fuseau horaire) lorsque vous prévoyez de début de la phase *d&#39;importation* .
+      * Date exacte et heure estimée (avec votre fuseau horaire) lorsque vous prévoyez de début de la phase *Ingestion*.
       * Type d’Environnement (Phase ou Production) dans lequel vous prévoyez d’importer des données.
       * ID de programme.
 
-* La *phase d’ingestion* de l’auteur réduira l’ensemble du déploiement de l’auteur. L’auteur AEM ne sera donc pas disponible pendant la totalité du processus d’ingestion. Assurez-vous également qu’aucun pipeline Cloud Manager n’est exécuté pendant que vous exécutez la phase d’ *importation* .
+* La *phase d’ingestion* de l’auteur réduira l’ensemble du déploiement de l’auteur. L’auteur AEM ne sera donc pas disponible pendant la totalité du processus d’ingestion. Assurez-vous également qu’aucun pipeline Cloud Manager n’est exécuté pendant que vous exécutez la phase *Ingestion*.
 
 
 ## Disponibilité {#availability}
 
-L&#39;outil de transfert de contenu peut être téléchargé dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le module par le biais du gestionnaire de modules sur votre instance source Adobe Experience Manager (AEM). Veillez à télécharger la dernière version. Pour plus d’informations sur la dernière version, consultez les Notes [de](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html)mise à jour.
+L&#39;outil de transfert de contenu peut être téléchargé dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le module par le biais du gestionnaire de modules sur votre instance source Adobe Experience Manager (AEM). Veillez à télécharger la dernière version. Pour plus d&#39;informations sur la dernière version, consultez [Notes de mise à jour](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 >[!NOTE]
 >Téléchargez l’outil de transfert de contenu depuis le portail de [distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
@@ -84,7 +84,7 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
    1. **Jeton d’accès** : renseignez le jeton d’accès.
 
       >[!NOTE]
-      >Vous pouvez récupérer le jeton d&#39;accès à l’aide du bouton **Ouvrir le jeton d&#39;accès** . Vous devez vous assurer que vous appartenez au groupe d’administrateurs AEM dans l’instance de Cloud Service de cible.
+      >Vous pouvez récupérer le jeton d&#39;accès en cliquant sur le bouton **Ouvrir le jeton d&#39;accès**. Vous devez vous assurer que vous appartenez au groupe d’administrateurs AEM dans l’instance de Cloud Service de cible.
 
    1. **Paramètres** : sélectionnez les paramètres suivants pour créer le jeu de migration :
 
@@ -120,7 +120,7 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
 
 Pour extraire votre jeu de migration à partir de l’outil de transfert de contenu, procédez comme suit :
 
-1. Pour démarrer l’extraction, sélectionnez un jeu de migration dans la page *Aperçu*, puis cliquez sur **Extraire.** The **Migration Set extraction** dialog box displays and click on **Extract** to start the extraction phase.
+1. Pour démarrer l’extraction, sélectionnez un jeu de migration dans la page *Aperçu*, puis cliquez sur **Extraire.** La boîte de dialogue **extraction du jeu de migration** s’affiche et cliquez sur **Extract** pour début de la phase d’extraction.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/06-content-extraction.png)
 
@@ -128,7 +128,7 @@ Pour extraire votre jeu de migration à partir de l’outil de transfert de cont
    >Vous avez la possibilité de remplacer le conteneur d’évaluation pendant la phase d’extraction.
 
 
-1. Le champ **EXTRACTION** affiche désormais l’état **EN COURS** pour indiquer que l’extraction est en cours d’exécution.
+1. Le champ **EXTRACTION** affiche désormais l’état **EN COURS** pour indiquer que l’extraction est en cours.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/07-extraction-job-running.png)
 
@@ -161,11 +161,11 @@ Une fois le processus d’extraction terminé, vous pouvez transférer le conten
 
 Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert de contenu, procédez comme suit :
 
-1. Pour démarrer l’extraction, sélectionnez un jeu de migration dans la page *Aperçu*, puis cliquez sur **Ingérer.** La boîte de dialogue **Ingestion du jeu de migration** s’affiche. Click on **Ingest** to start the ingestion phase. Pour une démonstration, l’option **Ingérer du contenu avec l’instance d’auteur** est désactivée. Il est possible d’ingérer en même temps du contenu avec l’instance d’auteur et de publication.
+1. Pour démarrer l’extraction, sélectionnez un jeu de migration dans la page *Aperçu*, puis cliquez sur **Ingérer.** La boîte de dialogue **Ingestion du jeu de migration** s’affiche. Cliquez sur **Assimilation** pour début de la phase d&#39;assimilation. Pour une démonstration, l’option **Ingérer du contenu avec l’instance d’auteur** est désactivée. Il est possible d’ingérer en même temps du contenu avec l’instance d’auteur et de publication.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
-1. Une fois l’assimilation terminée, l’état du champ **PUBLIER L’INGESTION** se met à jour pour **TERMINER**.
+1. Une fois l’assimilation terminée, le statut du champ **PUBLISH INGESTION** est mis à jour en **FINISHED**.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
@@ -183,7 +183,7 @@ Une fois le processus d’ingestion terminé, vous pouvez utiliser le contenu di
 
    >[!IMPORTANT]
    >
-   >Vous devez désactiver l’option **Balayer le contenu existant sur l’instance Cloud avant l’assimilation** , afin d’empêcher la suppression du contenu existant de l’activité d’assimilation précédente.
+   >Désactivez l’option **Effacer le contenu existant sur l’instance Cloud avant l’assimilation**, afin d’empêcher la suppression du contenu existant de l’activité d’assimilation précédente.
    >
    >![image](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
 
