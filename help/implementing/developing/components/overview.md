@@ -45,9 +45,9 @@ Chaque composant AEM :
 
 ## AEM Core Components {#aem-core-components}
 
-[Les Composants](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) principaux AEM sont un ensemble de composants de Gestion de contenu Web normalisés (WCM) qui permettent aux AEM d&#39;accélérer le temps de développement et de réduire les coûts de maintenance de vos sites Web.
+[Les ](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) composants de base AEM sont un ensemble de composants de Gestion de contenu Web normalisés (WCM) pour AEM accélérer le temps de développement et réduire les coûts de maintenance de vos sites Web.
 
-Les composants principaux sont fournis avec AEM en tant que Cloud Service et le didacticiel [](/help/implementing/developing/introduction/develop-wknd-tutorial.md) WKND illustre comment implémenter et utiliser les composants. Les composants sont fournis avec l’intégralité du code source et peuvent être utilisés tels quels ou comme points de départ pour des composants modifiés ou étendus.
+Les composants principaux sont fournis avec AEM en tant que Cloud Service et le [tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) illustre comment implémenter et utiliser les composants. Les composants sont fournis avec l’intégralité du code source et peuvent être utilisés tels quels ou comme points de départ pour des composants modifiés ou étendus.
 
 ### Affichage des composants disponibles {#viewing-available-components}
 
@@ -55,7 +55,7 @@ Pour avoir un aperçu de tous les composants disponibles dans votre instance AE
 
 Une autre méthode consiste à utiliser CRXDE Lite pour obtenir la liste de tous les composants disponibles dans le référentiel.
 
-1. In **[!UICONTROL CRXDE Lite]**, select **[!UICONTROL Tools]** from the toolbar, then **[!UICONTROL Query]**, which opens the **[!UICONTROL Query]** tab.
+1. Dans **[!UICONTROL CRXDE Lite]**, sélectionnez **[!UICONTROL Outils]** dans la barre d&#39;outils, puis **[!UICONTROL Requête]**, qui ouvre l&#39;onglet **[!UICONTROL Requête]**.
 
 1. Dans l’onglet **[!UICONTROL Requête]**, sélectionnez `XPath` comme **[!UICONTROL Type]**.
 
@@ -63,5 +63,5 @@ Une autre méthode consiste à utiliser CRXDE Lite pour obtenir la liste de tou
 
    `//element(*, cq:Component)`
 
-1. Click **[!UICONTROL Execute]** and the components are listed.
+1. Cliquez sur **[!UICONTROL Exécuter]** et les composants sont répertoriés.
 
