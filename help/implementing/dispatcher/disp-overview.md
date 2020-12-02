@@ -34,7 +34,7 @@ Les outils Dispatcher font partie du SDK global d’AEM as a Cloud Service et fo
 
 ## Téléchargement et extraction des outils {#extracting-the-sdk}
 
-Les outils du répartiteur, qui font partie de l&#39; [AEM en tant que SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)Cloud Service, peuvent être téléchargés à partir d&#39;un fichier zip sur le portail de distribution [de](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) logiciels. Toute nouvelle configuration disponible dans cette nouvelle version des outils du répartiteur peut être utilisée pour le déploiement sur les environnements Cloud exécutant cette version d’AEM dans le Cloud ou une version ultérieure.
+Les outils du répartiteur, qui font partie de l&#39;[AEM en tant que SDK Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), peuvent être téléchargés à partir d&#39;un fichier zip sur le portail [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html). Toute nouvelle configuration disponible dans cette nouvelle version des outils du répartiteur peut être utilisée pour le déploiement sur les environnements Cloud exécutant cette version d’AEM dans le Cloud ou une version ultérieure.
 
 Décompressez le SDK, qui regroupe les outils du répartiteur pour macOS/Linux et Windows.
 
@@ -352,11 +352,11 @@ Ce message indique que votre configuration présente la disposition version 1 o
 configuration Apache complète et des fichiers avec des préfixes `ams_`. Bien que cette fonctionnalité soit toujours prise en charge
 pour la rétrocompatibilité, vous devez passer à la nouvelle mise en page.
 
-## Validation locale de la syntaxe de configuration du répartiteur de sorte qu&#39;apache httpd puisse début {#local-validation}
+## Validation locale de la syntaxe de configuration du répartiteur afin que le httpd d’apache puisse début {#local-validation}
 
 Une fois qu&#39;il a été établi que la configuration du module répartiteur inclut uniquement les directives prises en charge, vous devez vérifier que la syntaxe est correcte afin qu&#39;apache puisse se début. Pour ce faire, le docker doit être installé localement. Et notez qu&#39;il n&#39;est pas nécessaire que AEM fonctionne.
 
-Utilisez le `validate.sh` script comme illustré ci-dessous :
+Utilisez le script `validate.sh` comme indiqué ci-dessous :
 
 ```
 $ validate.sh src/dispatcher
@@ -380,13 +380,13 @@ Phase 2 finished
 Le script effectue les opérations suivantes :
 
 1. Il exécute le validateur de la section précédente pour s&#39;assurer que seules les directives prises en charge sont incluses. Si la configuration n’est pas valide, le script échoue.
-2. Il exécute le test `httpd -t command` pour vérifier si la syntaxe est correcte de sorte qu&#39;apache httpd puisse début. En cas de réussite, la configuration doit être prête pour le déploiement
+2. Il exécute le `httpd -t command` pour tester si la syntaxe est correcte de telle sorte qu&#39;apache httpd puisse début. En cas de réussite, la configuration doit être prête pour le déploiement
 
 ## Test local de votre configuration Apache et Dispatcher {#testing-apache-and-dispatcher-configuration-locally}
 
 Il est également possible de tester localement votre configuration Apache et Dispatcher. Il nécessite l&#39;installation locale du docker et votre configuration pour réussir la validation comme décrit ci-dessus.
 
-Exécutez l&#39;outil de validation (notez qu&#39;il est différent de celui `validator.sh` mentionné plus haut) en utilisant le `-d` paramètre qui génère un dossier avec tous les fichiers de configuration du répartiteur. Exécutez ensuite le `docker_run.sh` script, en transmettant ce dossier en tant qu’argument. En indiquant le numéro de port (ici : 8080) pour exposer le point de terminaison du répartiteur, un conteneur Docker est démarré, exécutant le répartiteur avec votre configuration.
+Exécutez l&#39;outil de validation (notez qu&#39;il est différent de `validator.sh` mentionné plus haut) en utilisant le paramètre `-d` qui génère un dossier avec tous les fichiers de configuration du répartiteur. Exécutez ensuite le script `docker_run.sh`, en transmettant ce dossier en tant qu’argument. En indiquant le numéro de port (ici : 8080) pour exposer le point de terminaison du répartiteur, un conteneur Docker est démarré, exécutant le répartiteur avec votre configuration.
 
 ```
 $ validator full -d out src/dispatcher
@@ -405,7 +405,7 @@ Dispatcher démarre alors dans un conteneur avec son serveur principal pointant 
 
 ## Débogage de la configuration Apache et Dispatcher {#debugging-apache-and-dispatcher-configuration}
 
-The following strategy can be used to increase the log output for the dispatcher module and see the results of the `RewriteRule` evaluation in both local and cloud environments.
+La stratégie suivante peut être utilisée pour augmenter la sortie du journal pour le module répartiteur et voir les résultats de l&#39;évaluation `RewriteRule` dans les environnements locaux et les  de cloud.
 
 Les niveaux de journal de ces modules sont définis par les variables `DISP_LOG_LEVEL` et `REWRITE_LOG_LEVEL`. Ils peuvent être définis dans le fichier `conf.d/variables/global.vars`. Sa partie pertinente est la suivante :
 
