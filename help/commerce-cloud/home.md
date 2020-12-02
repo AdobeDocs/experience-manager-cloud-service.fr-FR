@@ -14,7 +14,7 @@ ht-degree: 88%
 
 Cette page liste les ressources d&#39;aide autonome concernant AEM Commerce en tant que Cloud Service.
 
-## Principaux articles commerciaux {#key-articles}
+## Articles commerciaux clés {#key-articles}
 
 * [Introduction du commerce AEM en tant que Cloud Service](overview.md)
 * [Architecture du commerce AEM en tant que Cloud Service](architecture/magento.md)
