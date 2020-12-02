@@ -254,7 +254,7 @@ Après avoir créé une page ou accédé à une page existante (dans la console)
 >
 >L’accès à d’autres pages à partir de l’Éditeur de page n’est possible qu’en mode Aperçu, car les liens ne sont pas actifs dans le mode d’édition.
 
-### Copier et coller une page  {#copying-and-pasting-a-page}
+### Copier et coller une page   {#copying-and-pasting-a-page}
 
 Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplacement :
 
