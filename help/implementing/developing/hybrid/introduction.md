@@ -80,10 +80,8 @@ Parce que le rendu est effectué côté client, les éléments de la page réagi
 >Pour obtenir des détails techniques sur le fonctionnement des SPA dans AEM, consultez les articles suivants :
 >* [Prise en main des SPA dans AEM avec React](getting-started-react.md)
 >* [Prise en main des SPA dans AEM avec Angular](getting-started-angular.md)
-
 >
->
-Pour observer de plus près la conception, l’architecture et le workflow technique de l’éditeur de SPA, consultez l’article :
+>Pour observer de plus près la conception, l’architecture et le workflow technique de l’éditeur de SPA, consultez l’article :
 >* [Présentation de l’éditeur de SPA](editor-overview.md).
 
 

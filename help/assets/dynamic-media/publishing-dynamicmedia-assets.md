@@ -33,7 +33,6 @@ Voir aussi [Intégration de la visionneuse de vidéos ou d’images Dynamic Medi
 >
 >* Pour utiliser l’URL, les ressources doivent être publiées. Si les ressources ne sont pas publiées, la copie et le collage de l’URL ne fonctionnent pas dans un navigateur web.
 >* Les paramètres d’image prédéfinis et les paramètres de visionneuse prédéfinis doivent être activés et publiés pour une diffusion en direct.
-
 >
 
 
