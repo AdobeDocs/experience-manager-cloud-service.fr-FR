@@ -156,7 +156,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    * Indiquez une configuration d’exportation.
 
-### Miniature  {#thumbnail}
+### Miniature   {#thumbnail}
 
 Affiche l’image de la miniature de la page. Vous pouvez :
 
@@ -196,7 +196,7 @@ Affiche l’image de la miniature de la page. Vous pouvez :
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
 
-### Personnalisation  {#personalization}
+### Personnalisation   {#personalization}
 
 * **Configurations ContextHub**
 
@@ -236,14 +236,14 @@ Affiche l’image de la miniature de la page. Vous pouvez :
    * Détermine les circonstances dans lesquelles les modifications seront diffusées à la Live Copy.
 
 
-### Live Copy  {#live-copy}
+### Live Copy   {#live-copy}
 
 * **Live Copy**
 
    * Définissez les propriétés d’une page Live Copy dans le cadre de la gestion multi-site. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * Détermine les circonstances dans lesquelles les modifications seront propagées à partir du plan directeur.
 
-### Structure du site  {#site-structure}
+### Structure du site   {#site-structure}
 
 * Diffusez des liens d’accès aux pages qui fournissent les fonctionnalités à l’échelle du site, comme la **page d’inscription** et la page **en mode hors ligne**, entre autres.
 
