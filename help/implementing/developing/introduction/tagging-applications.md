@@ -22,20 +22,20 @@ qui interagit avec le
 
 Pour plus d&#39;informations sur le balisage :
 
-* Voir [Utilisation des balises](/help/sites-cloud/authoring/features/tags.md) pour en savoir plus sur le balisage du contenu en tant qu’auteur de contenu.
+* Voir [Utilisation des balises](/help/sites-cloud/authoring/features/tags.md) pour plus d’informations sur le balisage du contenu en tant qu’auteur de contenu.
 * Voir Administration des balises pour en savoir plus sur la création et la gestion des balises, ainsi que sur les balises de contenu qui ont été appliquées.
 
 ## Vue d’ensemble de l’API de balisage {#overview-of-the-tagging-api}
 
-L’implémentation du [framework de balisage](tagging-framework.md) dans AEM permet la gestion des balises et du contenu des balises à l’aide de l’API JCR. `TagManager` s’assure que les balises entrées en tant que valeurs sur la propriété du tableau de `cq:tags` chaînes ne sont pas dupliquées, supprime `TagID`les balises pointant vers des balises non existantes et met à jour `TagID`les balises déplacées ou fusionnées. `TagManager` utilise un écouteur d’observation JCR qui annule les modifications incorrectes. Les principales classes sont stockées dans le modules [com.day.cq.tagging](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html) :
+L’implémentation du [framework de balisage](tagging-framework.md) dans AEM permet la gestion des balises et du contenu des balises à l’aide de l’API JCR. `TagManager` s’assure que les balises entrées en tant que valeurs sur la propriété du tableau de  `cq:tags` chaînes ne sont pas dupliquées, supprime  `TagID`les balises pointant vers des balises non existantes et met à jour  `TagID`les balises déplacées ou fusionnées. `TagManager` utilise un écouteur d’observation JCR qui annule les modifications incorrectes. Les principales classes sont stockées dans le modules [com.day.cq.tagging](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html) :
 
-* `JcrTagManagerFactory` - renvoie une mise en oeuvre JCR d&#39;un `TagManager`. C’est l’implémentation de référence de l’API de balisage.
+* `JcrTagManagerFactory` - renvoie une mise en oeuvre JCR d&#39;un  `TagManager`. C’est l’implémentation de référence de l’API de balisage.
 * `TagManager` - permet de résoudre et de créer des balises par chemins et noms.
 * `Tag` - définit l’objet tag.
 
 ### Récupération d’un TagManager basé sur JCR {#getting-a-jcr-based-tagmanager}
 
-To retrieve a `TagManager` instance, you need to have a JCR `Session` and to call `getTagManager(Session)`:
+Pour récupérer une instance `TagManager`, vous devez disposer d’un JCR `Session` et appeler `getTagManager(Session)` :
 
 ```java
 @Reference
@@ -52,7 +52,7 @@ TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
 
 ### Récupération d’un objet Tag {#retrieving-a-tag-object}
 
-A `Tag` can be retrieved through the `TagManager`, by either resolving an existing tag or creating a new one:
+Vous pouvez récupérer une balise `Tag` par l&#39;intermédiaire de `TagManager`, soit en résolvant une balise existante, soit en en en créant une nouvelle :
 
 ```java
 Tag tag = tagManager.resolve("my/tag"); // for existing tags
@@ -60,7 +60,7 @@ Tag tag = tagManager.resolve("my/tag"); // for existing tags
 Tag tag = tagManager.createTag("my/tag"); // for new tags
 ```
 
-For the JCR-based implementation, which maps `Tags` onto JCR `Nodes`, you can directly use Sling&#39;s `adaptTo` mechanism if you have the resource (e.g. such as `/content/cq:tags/default/my/tag`):
+Pour l’implémentation basée sur JCR, qui mappe `Tags` sur JCR `Nodes`, vous pouvez directement utiliser le mécanisme `adaptTo` de Sling si vous disposez de la ressource (par exemple `/content/cq:tags/default/my/tag`) :
 
 ```java
 Tag tag = resource.adaptTo(Tag.class);
@@ -75,7 +75,7 @@ Resource node = tag.adaptTo(Resource.class);
 
 >[!NOTE]
 >
->Directly adapting from `Node` to `Tag` is not possible, because `Node` does not implement the Sling `Adaptable.adaptTo(Class)` method.
+>L&#39;adaptation directe de `Node` à `Tag` n&#39;est pas possible, car `Node` n&#39;implémente pas la méthode Sling `Adaptable.adaptTo(Class)`.
 
 ### Récupération et définition des balises {#getting-and-setting-tags}
 
@@ -122,7 +122,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## Le Tag Garbage Collector {#the-tag-garbage-collector}
 
-Le récupérateur de balises est un service d’arrière-plan qui nettoie les balises qui sont masquées et inutilisées. Les balises masquées et inutilisées sont des balises ci-dessous `/content/cq:tags` qui possèdent une `cq:movedTo` propriété et ne sont pas utilisées sur un noeud de contenu. Ils ont un décompte de zéro. Avec ce processus de suppression à l’arrière-plan, le nœud de contenu (c’est-à-dire la propriété `cq:tags`) n’a pas besoin d’être mis à jour lors du déplacement ou de la fusion. Les références de la propriété `cq:tags` sont automatiquement mises à jour lorsque la propriété `cq:tags` est mise à jour, par ex. via la boîte de dialogue des propriétés de la page.
+Le récupérateur de balises est un service d’arrière-plan qui nettoie les balises qui sont masquées et inutilisées. Les balises masquées et inutilisées sont des balises inférieures à `/content/cq:tags` qui possèdent une propriété `cq:movedTo` et ne sont pas utilisées sur un noeud de contenu. Ils ont un décompte de zéro. Avec ce processus de suppression à l’arrière-plan, le nœud de contenu (c’est-à-dire la propriété `cq:tags`) n’a pas besoin d’être mis à jour lors du déplacement ou de la fusion. Les références de la propriété `cq:tags` sont automatiquement mises à jour lorsque la propriété `cq:tags` est mise à jour, par ex. via la boîte de dialogue des propriétés de la page.
 
 Le Tag Garbage Collector s’exécute par défaut une fois par jour. Cette fréquence peut être configurée sur : 
 
@@ -132,14 +132,14 @@ Le Tag Garbage Collector s’exécute par défaut une fois par jour. Cette fréq
 
 La recherche de balises et le listing des balises fonctionnent comme suit :
 
-* The search for `TagID` searches for the tags that have the property `cq:movedTo` set to `TagID` and follows through the `cq:movedTo` `TagID`s.
-* The search for tag title only searches the tags that do not have a `cq:movedTo` property.
+* La recherche de `TagID` recherche les balises pour lesquelles la propriété `cq:movedTo` est définie sur `TagID` et suit les `cq:movedTo` `TagID`s.
+* La recherche du titre de la balise ne porte que sur les balises qui ne possèdent pas de propriété `cq:movedTo`.
 
 ## Balises dans différentes langues {#tags-in-different-languages}
 
-Une balise `title` peut être définie dans différentes langues. Une propriété sensible à la langue est ensuite ajoutée au nœud de la balise. Cette propriété a le format `jcr:title.<locale>`, par exemple `jcr:title.fr` pour la traduction française. `<locale>` doit être une chaîne de paramètres régionaux ISO en minuscules et utiliser un trait de soulignement (`_`) au lieu d’un tiret/tiret (`-`), par exemple : `de_ch`.
+Une balise `title` peut être définie dans différentes langues. Une propriété sensible à la langue est ensuite ajoutée au nœud de la balise. Cette propriété a le format `jcr:title.<locale>`, par ex. `jcr:title.fr` pour la traduction française. `<locale>` doit être une chaîne de paramètres régionaux ISO en minuscules et utiliser un trait de soulignement (`_`) au lieu d’un tiret/tiret (`-`), par exemple :  `de_ch`.
 
-Par exemple, lorsque la balise **Animals** est ajoutée à la page **Produits** , la valeur `stockphotography:animals` est ajoutée à la propriété `cq:tags` du noeud `/content/wknd/en/products/jcr:content`. La traduction est référencée à partir du nœud de balise.
+Par exemple, lorsque la balise **Animaux** est ajoutée à la page **Produits**, la valeur `stockphotography:animals` est ajoutée à la propriété `cq:tags` du noeud `/content/wknd/en/products/jcr:content`. La traduction est référencée à partir du nœud de balise.
 
 L’API côté serveur a localisé des méthodes liées à `title` :
 
@@ -160,12 +160,12 @@ Pour le balisage, la localisation dépend du contexte, car la balise `titles` pe
 
 ### Ajout d’une langue à la boîte de dialogue Modifier la balise {#adding-a-new-language-to-the-edit-tag-dialog}
 
-The following procedure describes how to add a new language (e.g. Finnish) to the **Tag Edit** dialog:
+La procédure suivante décrit comment ajouter une nouvelle langue (par exemple le finnois) à la boîte de dialogue **Modifier la balise** :
 
-1. In **CRXDE**, edit the multi-value property `languages` of the node `/content/cq:tags`.
-1. Add `fi_fi`, which represents the Finnish locale, and save the changes.
+1. Dans **CRXDE**, modifiez la propriété à plusieurs valeurs `languages` du noeud `/content/cq:tags`.
+1. Ajoutez `fi_fi`, qui représente le paramètre régional finlandais, et enregistrez les modifications.
 
-Finnish is now available in the tag dialog of the page properties and in the **Edit Tag** dialog when editing a tag in the **Tagging** console.
+Le finnois est désormais disponible dans la boîte de dialogue des balises des propriétés de la page et dans la boîte de dialogue **Modifier la balise** lors de la modification d’une balise dans la console **Balisage**.
 
 >[!NOTE]
 >
