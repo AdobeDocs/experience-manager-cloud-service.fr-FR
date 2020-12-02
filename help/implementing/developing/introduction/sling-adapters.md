@@ -10,7 +10,7 @@ ht-degree: 72%
 ---
 
 
-# Utilisation des adaptateurs Sling  {#using-sling-adapters}
+# Utilisation des adaptateurs Sling   {#using-sling-adapters}
 
 [Sling](https://sling.apache.org) propose un [modèle Adaptateur](https://sling.apache.org/site/adapters.html) permettant de convertir facilement les objets qui mettent en œuvre l’interface [Adaptable](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29). Cette interface fournit une méthode [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) générique qui convertit les objets dans le type de classe qui est transmis comme argument.
 
@@ -72,7 +72,7 @@ Cependant, il n’existe pas de règle absolue : l’objet peut soit être une 
 
 Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `adaptTo-targets` possibles. Cependant, pour des sous-classes spécifiques, telles que la ressource basée sur JCR, cela s’avère souvent impossible. Dans ce cas, les implémentations de `AdapterFactory` font généralement partie des classes privées d’un lot et ne sont donc pas exposées dans une API cliente ni répertoriées dans les JavaDocs. En théorie, il serait possible d’accéder à toutes les implémentations `AdapterFactory` à partir de l’exécutable de service [OSGi](/help/implementing/deploying/configuring-osgi.md) et d’observer leurs configurations « adaptables » (sources et cibles), mais pas de les mapper entre elles. En définitive, cela dépend de la logique interne, qui doit être documentée, d’où cette référence.
 
-## Référence  {#reference}
+## Référence   {#reference}
 
 ### Sling {#sling}
 
@@ -289,7 +289,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
    <td>Ressource étiquetée (== this).</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Node</a></td>
+   <td><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Noeud</a></td>
    <td>Nœud de la page.</td>
   </tr>
   <tr>
@@ -301,7 +301,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 
 **[Component](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/components/Component.html)** s’adapte à :
 
-| [Resource](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | Ressource du composant. |
+| [Ressource](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | Ressource du composant. |
 |---|---|
 | [LabeledResource](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html) | Ressource étiquetée (== this). |
 | [Node](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nœud du composant. |
@@ -320,7 +320,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
    <td>Ressource étiquetée (== this).</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Node</a></td>
+   <td><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Noeud</a></td>
    <td>Nœud de ce modèle.</td>
   </tr>
   <tr>
@@ -334,7 +334,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 
 **Authorizable**, **User** et **Group** s’adaptent à :
 
-| [Node](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Renvoie le nœud racine utilisateur/groupe. |
+| [Noeud](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Renvoie le nœud racine utilisateur/groupe. |
 |---|---|
 | [ReplicationStatus](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/ReplicationStatus.html) | Renvoie l’état de réplication pour le nœud racine utilisateur/groupe. |
 
@@ -342,18 +342,18 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 
 **Asset** s’adapte à :
 
-| [Resource](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | Ressource de l’actif. |
+| [Ressource](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | Ressource de l’actif. |
 |---|---|
-| [Node](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nœud de la ressource. |
+| [Noeud](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nœud de la ressource. |
 | … | Tous les éléments auxquels la ressource de l’actif peut être adaptée. |
 
 #### Balisage {#tagging}
 
 **Tag** s’adapte à :
 
-| [Resource](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | Ressource de la balise. |
+| [Ressource](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | Ressource de la balise. |
 |---|---|
-| [Node](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nœud de la balise. |
+| [Noeud](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nœud de la balise. |
 | … | Tous les éléments auxquels la ressource de la balise peut être adaptée. |
 
 #### Autres {#other}
