@@ -2,9 +2,9 @@
 title: Balisez intelligemment vos fichiers vidéo.
 description: Le balisage intelligent des ressources vidéo automatise le balisage des ressources en appliquant des balises contextuelles et descriptives à l’aide des services Adobe Sensei.
 translation-type: tm+mt
-source-git-commit: 68fe67617f0d63872f13427b3fbc7b58f2497aca
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Marquez intelligemment vos fichiers vidéo {#video-smart-tags}
 
-Le besoin croissant de nouveaux contenus nécessite des efforts manuels réduits pour fournir en un rien de temps des expériences numériques attrayantes. [!DNL Adobe Experience Manager] en tant que Cloud Service, le balisage automatisé des ressources vidéo est facilité par l&#39;intelligence artificielle. Le balisage manuel des vidéos peut prendre du temps. Cependant, la fonctionnalité de balisage dynamique vidéo optimisée pour Adobe Sensei utilise des modèles d’intelligence artificielle pour analyser le contenu vidéo et ajouter des balises aux fichiers vidéo. Ainsi, les utilisateurs de la gestion des actifs numériques ont moins de temps à fournir des expériences enrichissantes à leurs clients. Le service d’apprentissage automatique d’Adobe génère deux jeux de balises pour une vidéo. Pendant ce temps, une visionneuse correspond aux objets, scènes et attributs de cette vidéo ; l&#39;autre jeu concerne des actions telles que la boisson, la course et le jogging.
+Le besoin croissant de nouveaux contenus nécessite des efforts manuels réduits pour fournir en un rien de temps des expériences numériques attrayantes. [!DNL Adobe Experience Manager] en tant que  [!DNL Cloud Service] support du balisage automatisé des ressources vidéo assisté par l&#39;intelligence artificielle. Le balisage manuel des vidéos peut prendre du temps. Cependant, la fonctionnalité de balisage dynamique vidéo optimisée pour Adobe Sensei utilise des modèles d’intelligence artificielle pour analyser le contenu vidéo et ajouter des balises aux fichiers vidéo. Ainsi, les utilisateurs de la gestion des actifs numériques ont moins de temps à fournir des expériences enrichissantes à leurs clients. Le service d’apprentissage automatique d’Adobe génère deux jeux de balises pour une vidéo. Pendant ce temps, une visionneuse correspond aux objets, scènes et attributs de cette vidéo ; l&#39;autre jeu concerne des actions telles que la boisson, la course et le jogging.
 
-Les formats de fichiers vidéo (et leurs codecs) pris en charge pour le balisage intelligent sont MP4 (H264/AVC), MKV (H264/AVC), MOV (H264/AVC, Motion JPEG), AVI (indeo4), FLV (H264/AVC, vp6f) et WMV (WMV). WMV2). En outre, la fonctionnalité permet le balisage des vidéos jusqu&#39;à une taille de 300 Mo. Le balisage automatisé des fichiers vidéo se produit sous forme de traitement standard des fichiers (avec création de miniatures et extraction de métadonnées) après le téléchargement d’une vidéo ou lorsqu’un retraitement est déclenché. Les balises actives s’affichent dans l’ordre décroissant de leur [score de confiance](#confidence-score-video-tag) dans la ressource [!UICONTROL Propriétés]. Le balisage vidéo est activé par défaut dans [!DNL Adobe Experience Manager] en tant que Cloud Service. Cependant, vous pouvez [exclure le balisage dynamique vidéo](#opt-out-video-smart-tagging) sur un dossier.
+Les formats de fichiers vidéo (et leurs codecs) pris en charge pour le balisage intelligent sont MP4 (H264/AVC), MKV (H264/AVC), MOV (H264/AVC, Motion JPEG), AVI (indeo4), FLV (H264/AVC, vp6f) et WMV (WMV). WMV2). En outre, la fonctionnalité permet le balisage des vidéos jusqu&#39;à une taille de 300 Mo. Le balisage automatisé des fichiers vidéo se produit sous forme de traitement standard des fichiers (avec création de miniatures et extraction de métadonnées) après le téléchargement d’une vidéo ou lorsqu’un retraitement est déclenché. Les balises actives s’affichent dans l’ordre décroissant de leur [score de confiance](#confidence-score-video-tag) dans la ressource [!UICONTROL Propriétés]. Le balisage vidéo est activé par défaut dans [!DNL Adobe Experience Manager] en tant que [!DNL Cloud Service]. Cependant, vous pouvez [exclure le balisage dynamique vidéo](#opt-out-video-smart-tagging) sur un dossier.
 
 ## Balisage intelligent des vidéos lors du transfert {#smart-tag-assets-on-ingestion}
 
-Lorsque vous [téléchargez des ressources vidéo](add-assets.md#upload-assets) vers [!DNL Adobe Experience Manager] en tant que Cloud Service, les vidéos sont traitées ![](assets/do-not-localize/assetprocessing.png). Une fois le traitement terminé, consultez l&#39;onglet [!UICONTROL Basic] de la page de propriétés [!UICONTROL de l&#39;actif ]. Les balises actives sont automatiquement ajoutées à la vidéo sous [!UICONTROL Balises dynamiques]. asset compute Service utilise Adobe Sensei pour créer ces balises actives.
+Lorsque vous [téléchargez des fichiers vidéo](add-assets.md#upload-assets) vers [!DNL Adobe Experience Manager] en tant que [!DNL Cloud Service], les vidéos sont traitées ![](assets/do-not-localize/assetprocessing.png). Une fois le traitement terminé, consultez l&#39;onglet [!UICONTROL Basic] de la page de propriétés [!UICONTROL de l&#39;actif ]. Les balises actives sont automatiquement ajoutées à la vidéo sous [!UICONTROL Balises dynamiques]. asset compute Service utilise Adobe Sensei pour créer ces balises actives.
 
 ![Les balises actives sont ajoutées aux vidéos et affichées dans l’onglet Simple des propriétés du fichier.](assets/smart-tags-added-to-videos.png)
 
@@ -106,7 +106,7 @@ Opt-out de génération de balises actives vidéo automatisée pour les fichiers
 
 Le seuil par défaut pour les balises d’action et d’objet dans [!DNL Adobe Experience Manager] est 0,7 (doit être compris entre 0 et 1). Si certaines ressources vidéo ne sont pas balisées par une balise spécifique, cela indique que l’algorithme a moins de 70 % d’assurance sur les balises prédites. Le seuil par défaut peut ne pas toujours être optimal pour tous les utilisateurs. Vous pouvez donc modifier la valeur du score de confiance dans la configuration OSGI.
 
-Pour ajouter la configuration OSGI du score de confiance au projet déployé dans [!DNL Adobe Experience Manager] en tant que Cloud Service via Cloud Manager :
+Pour ajouter la configuration OSGI du score de confiance au projet déployé dans [!DNL Adobe Experience Manager] sous la forme [!DNL Cloud Service] à [!DNL Cloud Manager] :
 
 * Dans le projet [!DNL Adobe Experience Manager] (`ui.config` depuis l&#39;archétype 24, ou précédemment `ui.apps`) la configuration `config.author` OSGi, incluez un fichier de configuration nommé `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json` avec le contenu suivant :
 
