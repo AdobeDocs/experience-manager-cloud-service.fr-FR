@@ -16,7 +16,7 @@ Le test de qualité du code évalue la qualité du code de votre application. Il
 
 Voir [Configuration de votre pipeline CI-CD](/help/implementing/cloud-manager/configure-pipeline.md) pour en savoir plus sur les différents types de pipelines.
 
-## Understanding Code Quality Rules {#understanding-code-quality-rules}
+## Présentation des règles de qualité du code {#understanding-code-quality-rules}
 
 Au cours du test de qualité du code, le code source est analysé afin de s’assurer qu’il répond à certains critères de qualité. Actuellement, cette analyse est implémentée par une combinaison de SonarQube et d’examens au niveau du package de contenu à l’aide de OakPAL. Il existe plus de 100 règles combinant des règles Java génériques et des règles spécifiques à AEM. Certaines des règles spécifiques à AEM sont créées en fonction des bonnes pratiques de l’équipe d’ingénierie AEM et sont appelées [Règles de qualité du code personnalisées](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
@@ -33,7 +33,7 @@ Cette étape de test de la qualité du code comporte une structure à trois nive
 
 * **Informations** : il s’agit des problèmes identifiés par le point de contrôle qui sont fournis uniquement à titre d’information et qui n’ont aucune incidence sur l’exécution du pipeline
 
-The results of this step is delivered as *Ratings*.
+Les résultats de cette étape sont présentés sous la forme *Classifications*.
 
 Le tableau suivant résume les seuils d&#39;évaluation et d&#39;échec pour chacune des catégories Critique, Important et Information :
 
@@ -59,7 +59,7 @@ Le tableau suivant résume les seuils d&#39;évaluation et d&#39;échec pour cha
 
 ## Traitement des faux positifs {#dealing-with-false-positives}
 
-Le processus d’analyse de qualité n’est pas parfait et identifiera parfois de manière incorrecte des problèmes qui ne sont pas réellement problématiques. This is referred to as a *false positive*.
+Le processus d’analyse de qualité n’est pas parfait et identifiera parfois de manière incorrecte des problèmes qui ne sont pas réellement problématiques. On parle alors de *faux positif*.
 
 Dans ce cas, une annotation Java `@SuppressWarnings` standard spécifiant l’ID de règle comme attribut d’annotation peut être inscrite dans le code source. Par exemple, la règle SonarQube permettant de détecter les mots de passe codés en dur peut être agressive sur la façon dont un mot de passe codé en dur est identifié.
 
@@ -92,4 +92,4 @@ La bonne solution consiste alors à supprimer le mot de passe codé en dur.
 >Bien qu’il soit préférable de rendre l’annotation `@SuppressWarnings` aussi précise que possible, c’est-à-dire de n’annoter que l’énoncé ou le bloc qui cause le problème, il est tout de même possible de le faire à un niveau qui se rapporte à la classe.
 
 >[!NOTE]
->Bien qu&#39;il n&#39;y ait pas d&#39;étape de test de sécurité explicite, des règles de qualité de code liées à la sécurité sont toujours évaluées au cours de l&#39;étape de qualité du code. Pour en savoir plus sur la sécurité dans le Cloud Service, reportez-vous à la section Aperçu de [la sécurité pour AEM Cloud Service](/help/security/cloud-service-security-overview.md) .
+>Bien qu&#39;il n&#39;y ait pas d&#39;étape de test de sécurité explicite, des règles de qualité de code liées à la sécurité sont toujours évaluées au cours de l&#39;étape de qualité du code. Consultez [Aperçu de la sécurité pour AEM en tant que Cloud Service](/help/security/cloud-service-security-overview.md) pour en savoir plus sur la sécurité dans le Cloud Service.
