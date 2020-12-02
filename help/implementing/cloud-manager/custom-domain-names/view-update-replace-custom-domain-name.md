@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Affichage de la mise à jour et du remplacement d&#39;un nom de domaine personnalisé  {#view-update-replace-cdn}
+# Affichage de la mise à jour et du remplacement d&#39;un nom de domaine personnalisé {#view-update-replace-cdn}
 
 Utilisez le menu Vue et mise à jour pour simplement vue les détails d&#39;un ou plusieurs de vos noms de domaine personnalisé.
 Vous pouvez également modifier le certificat SSL à utiliser pour le nom de domaine personnalisé.
@@ -25,7 +25,7 @@ L’action de mise à jour peut être effectuée à deux emplacements différent
 1. Accédez à la page Paramètres de domaine à partir de l’écran Environnements.
 1. Vous pouvez également accéder à la page Détails de l’Environnement spécifique à partir de l’écran Environnements et accéder au tableau Noms de domaine.
 Identifiez la ligne où figure le nom de domaine personnalisé que vous souhaitez vue/mettre à jour.
-1. Sélectionnez le **...** menu à l&#39;extrémité droite de la rangée.
+1. Sélectionnez **...menu** situé à l’extrémité droite de la ligne
 1. Sélectionnez l’option Vue et mise à jour
 1. Apportez les modifications nécessaires au certificat SSL et confirmez votre envoi.
 
