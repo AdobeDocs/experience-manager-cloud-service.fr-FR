@@ -102,7 +102,7 @@ Si vous souhaitez utiliser un nœud existant, indiquez-le à l’aide de la boî
 1. Utilisez l’une des méthodes suivantes :
 
    * Dans le champ **[!UICONTROL Nom de la propriété]**, indiquez le chemin du fichier JSON où sont définis les nœuds des options et spécifiez les paires clé-valeur correspondantes.
-   * Tap ![Assets add icon](assets/do-not-localize/aem_assets_add_icon.png) next to the Options field to specify the display text and value for the options you want to supply in the Filters panel. To add another option, tap/click ![Assets add icon](assets/do-not-localize/aem_assets_add_icon.png) and repeat the step.
+   * Appuyez sur ![Icône d’ajout de ressources](assets/do-not-localize/aem_assets_add_icon.png) en regard du champ Options pour spécifier le texte d’affichage et la valeur des options à fournir dans le panneau Filtres. Pour ajouter une autre option, appuyez/cliquez sur ![Actifs ajoutez l’icône](assets/do-not-localize/aem_assets_add_icon.png) et répétez l’étape.
 
 1. Assurez-vous que l’option **[!UICONTROL Sélection simple]** est désactivée pour permettre à l’utilisateur de sélectionner plusieurs options à la fois pour les types de fichiers (Images, Documents, Multimédia et Archives, par exemple). Si vous choisissez **[!UICONTROL Sélection simple]**, l’utilisateur ne peut sélectionner qu’une seule option à la fois pour les types de fichiers.
 
@@ -144,7 +144,7 @@ Le prédicat `Tags` vous permet de rechercher des ressources sur la base des bal
 1. Indiquez les balises sur la base desquelles vous souhaitez rechercher des ressources ou faites votre sélection dans la liste des suggestions.
 1. Sélectionnez **[!UICONTROL Correspondre à tous les critères]** pour rechercher les ressources qui contiennent toutes les balises que vous spécifiez.
 
-## Ajout d’autres prédicats   {#adding-other-predicates}
+## Ajout d’autres prédicats    {#adding-other-predicates}
 
 Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous pouvez ajouter les autres prédicats suivants au panneau Rechercher :
 
