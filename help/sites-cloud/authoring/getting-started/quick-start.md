@@ -84,7 +84,7 @@ Pour [créer une page](/help/sites-cloud/authoring/fundamentals/organizing-pages
 
 1. Un assistant s’ouvre, qui vous aidera à collecter les informations nécessaires lors de la [création de votre page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page). Suivez les instructions à l’écran.
 
-### Sélection de la page pour d’autres actions   {#selecting-your-page-for-further-action}
+### Sélection de la page pour d’autres actions    {#selecting-your-page-for-further-action}
 
 Sélectionnez une page pour y effectuer des actions. Ce faisant, la barre d’outils est automatiquement mise à jour afin de présenter les actions appropriées pour cette ressource.
 
@@ -181,7 +181,7 @@ Pour modifier votre page :
    >
    >Pour naviguer en suivant les liens figurant dans le contenu, vous devez utiliser le [mode Aperçu](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode).
 
-### Modification des propriétés de page   {#editing-the-page-properties}
+### Modification des propriétés de page    {#editing-the-page-properties}
 
 Vous pouvez [modifier les propriétés de page](/help/sites-cloud/authoring/fundamentals/page-properties.md) de deux (principales) façons :
 
@@ -233,7 +233,7 @@ Il existe deux méthodes principales pour [publier une page](/help/sites-cloud/a
 
    Pour plus d’informations, voir [Publication de pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages).
 
-### Déplacement, copier-coller ou suppression d’une page   {#move-copy-and-paste-or-delete-your-page}
+### Déplacement, copier-coller ou suppression d’une page    {#move-copy-and-paste-or-delete-your-page}
 
 Ces actions peuvent être déclenchées en procédant comme suit :
 
@@ -284,7 +284,7 @@ Un [accès rapide aux références](/help/sites-cloud/authoring/fundamentals/env
 
 1. Appuyez ou cliquez sur le type de référence requis pour afficher d’autres détails et (le cas échéant) accomplir d’autres actions.
 
-### Création d’une version d’une page   {#creating-a-version-of-your-page}
+### Création d’une version d’une page    {#creating-a-version-of-your-page}
 
 Pour créer une [version](/help/sites-cloud/authoring/features/page-versions.md) de votre page :
 
