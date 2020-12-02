@@ -155,7 +155,7 @@ Pour configurer le service, vous pouvez configurer les fichiers de configuration
  </tbody>
 </table>
 
-## Définition de la taille maximale de la boîte de réception  {#setting-the-maximum-size-of-the-inbox}
+## Définition de la taille maximale de la boîte de réception   {#setting-the-maximum-size-of-the-inbox}
 
 Vous pouvez définir la taille maximale de la boîte de réception en configurant le **service de workflow Adobe Granite** ; voir [Ajouter une configuration OSGi au référentiel](/help/implementing/deploying/configuring-osgi.md). Le tableau suivant décrit la propriété que vous pouvez configurer.
 
