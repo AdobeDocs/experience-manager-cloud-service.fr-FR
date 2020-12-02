@@ -11,7 +11,7 @@ ht-degree: 100%
 ---
 
 
-# Schémas de métadonnées    {#metadata-schemas}
+# Schémas de métadonnées     {#metadata-schemas}
 
 Dans Adobe Experience Manager (AEM) Assets, le schéma de métadonnées définit la disposition de la page des propriétés et les propriétés de métadonnées qui s’affichent pour les ressources qui utilisent ce schéma spécifique. Les propriétés de métadonnées incluent le titre, la description, les types MIME, les balises, etc.
 
@@ -207,7 +207,7 @@ Pour supprimer un formulaire, sélectionnez-le puis cliquez sur l’icône Suppr
 >
 >Vous ne pouvez pas supprimer les formulaires de schéma de métadonnées prêts à l’emploi dans AEM Assets.
 
-## Formulaires de schéma pour les types MIME    {#schema-forms-for-mime-types}
+## Formulaires de schéma pour les types MIME     {#schema-forms-for-mime-types}
 
 AEM Assets fournit des formulaires par défaut pour plusieurs types MIME prêts à l’emploi. Vous pouvez toutefois ajouter des formulaires personnalisés pour les ressources de plusieurs types MIME.
 
@@ -272,7 +272,7 @@ Si le dossier contient un sous-dossier, les ressources du sous-dossier héritent
 1. Cliquez sur **OK** pour fermer le message de confirmation.
 1. Accédez au dossier auquel vous avez appliqué le schéma de métadonnées modifié.
 
-## Définition des métadonnées obligatoires    {#defining-mandatory-metadata}
+## Définition des métadonnées obligatoires     {#defining-mandatory-metadata}
 
 Vous pouvez définir des champs obligatoires au niveau d’un dossier, qui s’appliquent aux ressources chargées dans ce dossier. Si vous chargez des ressources présentant des métadonnées manquantes dans des champs obligatoires précédemment définis, une indication visuelle de métadonnées manquantes apparaît sur les ressources en mode Carte.
 
