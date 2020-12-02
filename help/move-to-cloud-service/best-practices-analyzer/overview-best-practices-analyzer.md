@@ -33,4 +33,4 @@ Des informations supplémentaires sur les catégories, les implications possible
 >[!NOTE]
 >Le rapport Analyseur des meilleures pratiques accélère le processus d’estimation du temps et du coût requis pour la transition à l’AEM en tant que Cloud Service en fournissant des informations qui autrement devraient être collectées et évaluées manuellement.
 
-Vous pouvez également télécharger le rapport Best Practices Analyzer à partir de votre instance AEM. Refer to [Viewing the Best Practices Analyzer Report](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) for more details.
+Vous pouvez également télécharger le rapport Best Practices Analyzer à partir de votre instance AEM. Consultez [Affichage du rapport Analyseur des meilleures pratiques](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) pour plus de détails.
