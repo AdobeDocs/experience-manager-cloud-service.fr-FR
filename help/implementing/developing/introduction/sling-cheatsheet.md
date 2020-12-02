@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Aide-mémoire pour Sling  {#sling-cheatsheet}
+# Aide-mémoire pour Sling   {#sling-cheatsheet}
 
 ![Présentation de la résolution du script Apache Sling.](assets/sling-cheatsheet-01.png)
 
