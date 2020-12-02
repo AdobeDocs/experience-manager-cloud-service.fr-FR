@@ -20,7 +20,7 @@ Si vous utilisez AEM comme système de gestion de contenu web, vous pouvez ajout
 >
 >Vous devez publier les ressources avant de les ajouter aux pages d’AEM. Voir [Publication de ressources Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-## Ajout d’un composant Dynamic Media à une page  {#adding-a-dynamic-media-component-to-a-page}
+## Ajout d’un composant Dynamic Media à une page   {#adding-a-dynamic-media-component-to-a-page}
 
 L’ajout d’un composant Média 3D, Dynamic Media, Média interactif, Média panoramique, Recadrage intelligent de la vidéo ou Média vidéo 360 à une page est identique à l’ajout d’un composant sur n’importe quelle page. Les composants Dynamic Media sont décrits dans les sections suivantes.
 
@@ -117,8 +117,10 @@ Le composant Dynamic Media est dynamique ; il propose des options différentes
 >
 >* Plusieurs instances du composant Dynamic Media utilisé sur la même page.
 >* Chaque instance utilise le même type de ressource.
+
 >
->Prenez en compte le fait que l’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant Dynamic Media de cette page n’est pas prise en charge.
+>
+Prenez en compte le fait que l’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant Dynamic Media de cette page n’est pas prise en charge.
 >
 >Vous pouvez toutefois utiliser le même paramètre prédéfini de visionneuse pour tous les composants Dynamic Media qui utilisent des éléments du même type, dans la page.
 
@@ -126,7 +128,7 @@ Si vous ajoutez le composant Dynamic Media et si l’option **[!UICONTROL Param
 
 * L’image possède un fichier pyramid tiff. Les images importées avant l’activation de Dynamic Media ne possèdent pas de fichier pyramid tiff.
 
-#### En cas d’utilisation d’images  {#when-working-with-images}
+#### En cas d’utilisation d’images   {#when-working-with-images}
 
 Le composant Dynamic Media permet d’ajouter des images dynamiques, notamment des visionneuses d’images, à 360 ° et de supports variés. Vous pouvez effectuer un zoom avant et arrière, faire pivoter une image dans une visionneuse à 360° ou sélectionner une image dans un autre type de visionneuse.
 
@@ -254,8 +256,10 @@ Le composant Média interactif est dynamique : il propose des options différen
 >
 >* Plusieurs instances du composant Interactive Media utilisé sur la même page.
 >* Chaque instance utilise le même type de ressource.
+
 >
->Prenez en compte le fait que l’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant Interactive Media de cette page n’est pas prise en charge.
+>
+Prenez en compte le fait que l’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant Interactive Media de cette page n’est pas prise en charge.
 >
 >Vous pouvez toutefois utiliser le même paramètre prédéfini de visionneuse pour tous les composants Interactive Media qui utilisent des éléments du même type, dans la page.
 
@@ -294,8 +298,10 @@ Les critères de rapport d’aspect et de mots-clés s’appliquent tous deux au
 >
 >* Plusieurs instances du composant **[!UICONTROL Média panoramique]** utilisées sur la même page.
 >* Chaque instance utilise le même type de ressource.
+
 >
->N’oubliez pas que l’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant **[!UICONTROL Média panoramique]** sur cette page n’est pas prise en charge.
+>
+N’oubliez pas que l’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant **[!UICONTROL Média panoramique]** sur cette page n’est pas prise en charge.
 >
 >Vous pouvez toutefois utiliser le même paramètre prédéfini de visionneuse pour tous les composants de média panoramique qui utilisent des éléments du même type, dans la page.
 
