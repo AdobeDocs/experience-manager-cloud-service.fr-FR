@@ -41,7 +41,7 @@ La vidéo suivante présente un aperçu général du déploiement du code vers A
 >[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 >[!NOTE]
->Il est recommandé aux clients disposant de bases de code de passer par l’exercice de restructuration du référentiel décrit dans la [documentation d’AEM](https://docs.adobe.com/help/fr-FR/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
+>Il est recommandé aux clients disposant de bases de code de passer par l’exercice de restructuration du référentiel décrit dans la [documentation d’AEM](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
 
 ## Déploiement de modules de contenu via Cloud Manager et le gestionnaire de modules {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
