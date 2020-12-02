@@ -1,11 +1,11 @@
 ---
 title: Formats de fichiers et types MIME pris en charge
-description: Formats de fichiers et types MIME pris en charge par  [!DNL Experience Manager Assets] en tant que Cloud Service.
+description: Formats de fichier et types MIME pris en charge par  [!DNL Experience Manager Assets] en tant que  [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7e5ea5ccf0110d1fb55449c9c1933aff6aba0065
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '783'
 ht-degree: 93%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 93%
 
 # [!DNL Assets] formats de fichier pris en charge  {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] as a Cloud Service prend en charge les fonctionnalités de base de gestion de contenu (stockage, gestion des métadonnées en ligne, gestion des versions, chargement et téléchargement, etc.) pour tout fichier binaire, quel que soit son format. [!DNL Adobe Experience Manager Assets] prend en charge un large éventail de formats de fichiers et chaque fonctionnalité de produit prend en charge différents formats.
+[!DNL Adobe Experience Manager] as a prend en charge les fonctionnalités de base de gestion de contenu (stockage, gestion des métadonnées en ligne, gestion des versions, chargement et téléchargement, etc.) pour tout fichier binaire, quel que soit son format.[!DNL Cloud Service] [!DNL Adobe Experience Manager Assets] prend en charge un large éventail de formats de fichiers et chaque fonctionnalité de produit prend en charge différents formats.
 
 En outre, [!DNL Experience Manager Assets] offre une prise en charge étendue pour générer des prévisualisations et des rendus et pour extraire des métadonnées et du texte pour l’indexation de texte intégral. Cette prise en charge étendue est assurée à l’aide de [microservices de ressources](asset-microservices-configure-and-use.md).
 
@@ -221,7 +221,7 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 
 ## Formats audio {#audio-formats}
 
-[!DNL Assets] as a Cloud Service offre une prise en charge de l’extraction de métadonnées XMP pour les formats audio AIF, ASF, M4A, MP3, WAV et WMA.
+[!DNL Assets] as a offre une prise en charge de l’extraction de métadonnées XMP pour les formats audio AIF, ASF, M4A, MP3, WAV et WMA.[!DNL Cloud Service]
 
 >[!MORELIKETHIS]
 >
