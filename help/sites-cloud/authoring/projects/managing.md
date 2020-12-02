@@ -42,7 +42,7 @@ Les étapes de création d’un projet sont identiques d’un projet à l’autr
 
 1. Cliquez/appuyez sur **Créer**. Le message de confirmation vous demande si vous voulez ouvrir votre projet ou revenir à la console.
 
-### Association de ressources à un projet   {#associating-resources-with-your-project}
+### Association de ressources à un projet    {#associating-resources-with-your-project}
 
 Dans la mesure où les projets permettent de regrouper les ressources dans une seule entité, il convient d’associer des ressources à votre projet. Ces ressources sont connues sous le nom de **mosaïques**. Les types de ressources que vous pouvez ajouter sont décrits dans la section [Mosaïques de projet](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
@@ -136,8 +136,7 @@ Pour activer/désactiver un projet :
 1. Dans la console **Projets**, ouvrez votre projet, puis recherchez la mosaïque **Informations sur le projet**.
 
    >[!NOTE]
-   >
-   >Vous pourriez être amené à ajouter cette mosaïque, si ce n’est pas déjà fait dans votre projet. Voir [Ajout de mosaïques](#adding-items-to-a-tile).
+   Vous pourriez être amené à ajouter cette mosaïque, si ce n’est pas déjà fait dans votre projet. Voir [Ajout de mosaïques](#adding-items-to-a-tile).
 
 1. Appuyez/cliquez sur **Modifier**.
 1. Basculez la valeur du sélecteur entre **Actif** et **Inactif**.
