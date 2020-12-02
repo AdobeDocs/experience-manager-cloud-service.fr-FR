@@ -12,23 +12,23 @@ ht-degree: 72%
 
 # Utilisation de l’analyseur des meilleures pratiques {#using-best-practices-analyzer}
 
-## Considérations importantes pour l’utilisation de l’analyseur des meilleures pratiques {#imp-considerations}
+## Considérations importantes concernant l’utilisation de l’analyseur des meilleures pratiques {#imp-considerations}
 
 Suivez la section ci-dessous pour comprendre les points importants à prendre en compte pour l’exécution de l’analyseur des meilleures pratiques (BPA) :
 
-* The BPA report is built using the output of the Adobe Experience Manager (AEM) [Pattern Detector](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/deploying/upgrading/pattern-detector.html). La version du Détecteur de schémas utilisée par BPA est incluse dans le package d’installation de BPA.
+* Le rapport BPA est créé à l’aide de la sortie de Adobe Experience Manager (AEM) [Détecteur de schémas](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/deploying/upgrading/pattern-detector.html). La version du Détecteur de schémas utilisée par BPA est incluse dans le package d’installation de BPA.
 
-* BPA may only be run by the **admin** user or a user in the **administrators** group.
+* Le BPA ne peut être exécuté que par l&#39;utilisateur **admin** ou un utilisateur du groupe **administrateurs**.
 
 * Le BPA est pris en charge sur les instances AEM avec les versions 6.1 et ultérieures.
 
    >[!NOTE]
-   > Please see [Installing on AEM 6.1](#installing-on-aem61) for special requirements for installing BPA on AEM 6.1.
+   > Veuillez consulter [Installation sur AEM 6.1](#installing-on-aem61) pour connaître les conditions particulières d&#39;installation de BPA sur AEM 6.1.
 
-* BPA can run on any environment, but it is preferred to have it run on a *Stage* environment.
+* BPA peut s’exécuter sur n’importe quel environnement, mais il est préférable de l’exécuter sur un environnement *Stage*.
 
    >[!NOTE]
-   >In order to avoid an impact on business critical instances, it is recommended that you run BPA on an *Author* environment that is as close as possible to the *Production* environment in the areas of customizations, configurations, content and user applications. Vous pouvez également l’exécuter sur un clone de l’environnement de *création* de production.
+   >Afin d’éviter tout impact sur les instances critiques de l’entreprise, il est recommandé d’exécuter BPA sur un environnement *Auteur* aussi proche que possible de l’environnement *Production* dans les domaines des personnalisations, des configurations, du contenu et des applications utilisateur. Vous pouvez également l’exécuter sur un clone de l’environnement de *création* de production.
 
 * La génération du contenu du rapport BPA peut prendre un temps considérable, de plusieurs minutes à quelques heures. La durée nécessaire dépend largement de la taille et de la nature du contenu du référentiel AEM, de la version d’AEM et d’autres facteurs.
 
@@ -39,7 +39,7 @@ Suivez la section ci-dessous pour comprendre les points importants à prendre en
 L&#39;analyseur des meilleures pratiques peut être téléchargé sous la forme d&#39;un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le module par le biais du gestionnaire de modules sur votre instance source Adobe Experience Manager (AEM).
 
 >[!NOTE]
->Download the Best Practices Analyzer from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/fr-FR/aemcloud.html) portal.
+>Téléchargez l&#39;analyseur des meilleures pratiques sur le portail [Distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/fr-FR/aemcloud.html).
 
 ## Affichage du rapport Analyseur des meilleures pratiques {#viewing-report}
 
@@ -47,11 +47,11 @@ L&#39;analyseur des meilleures pratiques peut être téléchargé sous la forme 
 
 Suivez cette section pour savoir comment vue du rapport Best Practices Analyzer :
 
-1. Select Adobe Experience Manager and navigate to tools -> **Operations** -> **Best Practices Analyzer**.
+1. Sélectionnez Adobe Experience Manager et accédez aux outils -> **Opérations** -> **Analyseur des meilleures pratiques**.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. Click on **Generate Report** to execute the Best Practices Analyzer.
+1. Cliquez sur **Générer le rapport** pour exécuter l’analyseur des meilleures pratiques.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic2.png)
 
@@ -73,7 +73,7 @@ Suivez cette section pour savoir comment vue du rapport Best Practices Analyzer 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
-   >You may force the BPA to clear its cache and regenerate the report by clicking **Refresh Report**.
+   >Vous pouvez forcer l’analyse d’analyse d’ensemble à effacer son cache et à régénérer le rapport en cliquant sur **Actualiser le rapport**.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
 
@@ -123,7 +123,7 @@ Consultez le tableau ci-dessous pour comprendre les niveaux d’importance :
 
 ## Interprétation du rapport CSV de l’analyseur des meilleures pratiques {#cra-csv-report}
 
-When you click the **CSV** option from your AEM instance, the CSV format of the Best Practices Analyzer report is built from the content cache and returned to your browser. En fonction des paramètres du navigateur, ce rapport sera automatiquement téléchargé sous la forme d’un fichier portant le nom `results.csv` par défaut.
+Lorsque vous cliquez sur l’option **CSV** de votre instance d’AEM, le format CSV du rapport Best Practices Analyzer est créé à partir du cache de contenu et renvoyé à votre navigateur. En fonction des paramètres du navigateur, ce rapport sera automatiquement téléchargé sous la forme d’un fichier portant le nom `results.csv` par défaut.
 
 Si le cache a atteint son délai d’expiration, le rapport sera de nouveau généré avant la création et le téléchargement du fichier CSV.
 
@@ -147,7 +147,7 @@ La valeur « \N » dans une colonne concernant un résultat individuel indique
 
 Le BPA fournit une interface HTTP qui peut être utilisée comme alternative à son interface utilisateur dans AEM. L’interface prend en charge les commandes HEAD et GET. Il peut être utilisé pour générer le rapport BPA et le renvoyer dans l’un des trois formats suivants : JSON, CSV et valeurs séparées par des tabulations (TSV).
 
-The following URLs are available for HTTP access, where `<host>` is the hostname, and port if necessary, of the server on which the BPA is installed:
+Les URL suivantes sont disponibles pour l’accès HTTP, où `<host>` correspond au nom d’hôte et au port, si nécessaire, du serveur sur lequel le BPA est installé :
 * `http://<host>/apps/best-practices-analyzer/analysis/report.json` pour le format JSON
 * `http://<host>/apps/best-practices-analyzer/analysis/report.csv` pour le format CSV
 * `http://<host>/apps/best-practices-analyzer/analysis/report.tsv` pour le format TSV
@@ -210,7 +210,7 @@ La valeur de cette propriété est la durée de vie du cache en secondes. Un adm
 
 ### Installation sur AEM 6.1 {#installing-on-aem61}
 
-BPA utilizes a system service user account named `repository-reader-service` to execute the Pattern Detector. Ce compte est disponible dans AEM 6.2 et versions ultérieures. On AEM 6.1, this account must be created *prior to* installation of BPA by taking the following steps:
+BPA utilise un compte utilisateur de service système nommé `repository-reader-service` pour exécuter le Détecteur de schémas. Ce compte est disponible dans AEM 6.2 et versions ultérieures. À l&#39;AEM 6.1, ce compte doit être créé *avant* l&#39;installation de BPA en procédant comme suit :
 
 1. Suivez les instructions de la section [Création d’un utilisateur de service](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) pour créer un utilisateur. Définissez l’ID utilisateur sur `repository-reader-service` et laissez le champ Chemin intermédiaire vide, puis cliquez sur la coche verte.
 
