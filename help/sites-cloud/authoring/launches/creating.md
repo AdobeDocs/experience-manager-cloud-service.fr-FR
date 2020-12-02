@@ -107,7 +107,7 @@ La sélection de cette option va :
 >
 >Ce mécanisme peut être utilisé pour modifier le modèle d’une [page existante](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), bien que la perte du contenu doit être envisagée.
 
-### Création d’un lancement imbriqué   {#creating-a-nested-launch}
+### Création d’un lancement imbriqué    {#creating-a-nested-launch}
 
 La création d’un lancement imbriqué (lancement dans un lancement) vous permet de créer un lancement à partir d’un lancement existant pour que les développeurs de contenu exploitent les modifications déjà apportées, au lieu de répercuter ces mêmes modifications à plusieurs reprises pour chaque lancement.
 
