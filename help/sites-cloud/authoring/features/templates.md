@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Création de modèles de page  {#creating-page-templates}
+# Création de modèles de page   {#creating-page-templates}
 
 Lors de la création d’une page, vous devez sélectionner un modèle. C’est la base pour la création de la page. Le modèle définit la structure de la page créée, le contenu initial et les composants pouvant être utilisés.
 
@@ -127,7 +127,7 @@ Vous devez créer un dossier de modèles pour votre projet afin de contenir les 
    >
    >Lorsque vous créez un modèle, il est marqué comme **Brouillon** dans la console pour indiquer qu’il n’est pas encore actif.
 
-### Définition des propriétés des modèles - Créateur de modèles  {#defining-template-properties-template-author}
+### Définition des propriétés des modèles - Créateur de modèles   {#defining-template-properties-template-author}
 
 Un modèle peut posséder les propriétés suivantes :
 
@@ -162,7 +162,7 @@ Pour définir la miniature du modèle :
    * Si l’aperçu ne vous satisfait pas, cliquez ou appuyez sur **Effacer** pour télécharger une autre image ou pour générer à nouveau la miniature.
 1. Lorsque vous êtes satisfait de la miniature, cliquez ou appuyez sur **Enregistrer et Fermer**.
 
-### Activation et autorisation d’un modèle - Créateur de modèles  {#enabling-and-allowing-a-template-template-author}
+### Activation et autorisation d’un modèle - Créateur de modèles   {#enabling-and-allowing-a-template-template-author}
 
 Pour utiliser un modèle lors de la création d’une page, vous devez effectuer les deux tâches suivantes :
 
@@ -221,7 +221,7 @@ Dans la mesure où il est référencé lors du rendu d’une page, le modèle (t
 1. Sélectionnez les **Politiques de contenu** à publier en tandem.
 1. Sélectionnez **Publier** dans la barre d’outils pour terminer l’action.
 
-## Modification des modèles  - Créateurs de modèles  {#editing-templates-template-authors}
+## Modification des modèles  - Créateurs de modèles   {#editing-templates-template-authors}
 
 Lors de la création ou de la modification d’un modèle, vous pouvez définir différents aspects. La modification de modèles est similaire à la création de pages.
 
@@ -527,7 +527,7 @@ Même si l’ensemble du contenu créé en mode **Structure** est visible en mod
 >
 >Le contenu initial est destiné à préparer les composants et la mise en page, point de départ de la création du contenu. Il n’est pas destiné à constituer un contenu réel laissé tel quel. C’est pour cette raison que le contenu initial ne peut pas être traduit.
 >
->Si vous devez inclure du texte traduisible dans votre modèle, par exemple dans les en-têtes ou les pieds de page, vous pouvez utiliser les [fonctions de localisation des composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/get-started/localization.html).
+>Si vous devez inclure du texte traduisible dans votre modèle, par exemple dans les en-têtes ou les pieds de page, vous pouvez utiliser les [fonctions de localisation des composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html).
 
 ### Modification d’un modèle - Disposition - Créateur de modèles {#editing-a-template-layout-template-author}
 
