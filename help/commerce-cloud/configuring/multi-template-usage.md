@@ -20,7 +20,7 @@ ht-degree: 17%
 
 # Création de plusieurs pages de Catégories et de produits
 
-[aem Composants](https://github.com/adobe/aem-core-cif-components) principaux CIF permet aux auteurs de contenu de créer des pages de catégories et de produits supplémentaires. Ces pages peuvent être enrichies de contenu marketing supplémentaire et configurées pour des catégories et des produits spécifiques à la cible. La vidéo suivante décrit la configuration de cette fonctionnalité.
+[aem les ](https://github.com/adobe/aem-core-cif-components) composants de base CIF permettent aux auteurs de contenu de créer des pages de catégorie et de produit supplémentaires. Ces pages peuvent être enrichies de contenu marketing supplémentaire et configurées pour des catégories et des produits spécifiques à la cible. La vidéo suivante décrit la configuration de cette fonctionnalité.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
