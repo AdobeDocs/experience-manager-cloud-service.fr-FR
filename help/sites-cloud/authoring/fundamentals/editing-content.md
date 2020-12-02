@@ -157,7 +157,7 @@ Vous pouvez ajouter un nouveau composant à l’aide de la case **Faire glisser 
 
 1. Le composant sélectionné est alors ajouté au bas de la page. [Modifiez](#edit-content) le composant selon les besoins.
 
-### Insertion d’un composant à partir de l’Explorateur de ressources    {#inserting-a-component-using-the-assets-browser}
+### Insertion d’un composant à partir de l’Explorateur de ressources     {#inserting-a-component-using-the-assets-browser}
 
 Vous pouvez également ajouter un nouveau composant à la page en faisant glisser un élément depuis l’[explorateur de ressources](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). Un nouveau composant du type approprié (et contenant l’élément) est ainsi créé automatiquement.
 
@@ -270,7 +270,7 @@ Deux méthodes permettent d’ajouter et/ou de modifier le contenu dans les comp
 * Ouvrez la [boîte de dialogue de composant pour l’édition](#component-edit-dialog).
 * [Faites glisser et déposez un élément](#drag-and-drop-assets-into-component) depuis l’explorateur de ressources pour ajouter directement du contenu.
 
-### Boîte de dialogue d’édition de composant    {#component-edit-dialog}
+### Boîte de dialogue d’édition de composant     {#component-edit-dialog}
 
 Vous pouvez ouvrir un composant pour modifier le contenu à l’aide de l’[icône Modifier (crayon) de la barre d’outils Composant](#component-toolbar).
 
@@ -409,7 +409,7 @@ Par exemple :
 
 Les [Annotations](/help/sites-cloud/authoring/fundamentals/annotations.md) permettent aux réviseurs et aux autres créateurs de fournir des commentaires sur votre contenu. Elles sont souvent utilisées à des fins de révision et de validation.
 
-## Aperçu des pages    {#previewing-pages}
+## Aperçu des pages     {#previewing-pages}
 
 Deux options sont disponibles pour prévisualiser une page :
 
