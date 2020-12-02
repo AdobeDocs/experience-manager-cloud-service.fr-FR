@@ -183,7 +183,7 @@ Si vous avez déjà chargé les images à utiliser, passez à l’étape suivant
 
 Pour charger des bannières d’image, voir [Chargement de ressources](/help/assets/manage-digital-assets.md).
 
-## Création d’ensembles de carrousels  {#creating-carousel-sets}
+## Création d’ensembles de carrousels   {#creating-carousel-sets}
 
 >[!NOTE]
 >
@@ -323,7 +323,7 @@ Voir [Fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experi
 
    Reportez-vous à la section [Ajout d’un ensemble de carrousel à la page d’entrée de votre site web](#adding-a-carousel-banner-to-your-website-page).
 
-## Modification d’ensembles de carrousels  {#editing-carousel-sets}
+## Modification d’ensembles de carrousels   {#editing-carousel-sets}
 
 >[!NOTE]
 Les utilisateurs non administrateurs doivent être ajoutés au groupe **[!UICONTROL dam-users]** de façon à pouvoir créer ou modifier des bannières de carrousel. Si vous rencontrez des problèmes lors de la création ou de la modification des bannières, contactez votre administrateur système pour qu’il vous ajoute au groupe **[!UICONTROL dam-users]**.
@@ -399,7 +399,7 @@ De plus, si vous modifiez une image interactive publiée existante que vous util
 
 Voir [Publication de ressources Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) pour savoir comment publier des bannières de carrousel.
 
-## Ajout d’une bannière de carrousel à votre page web  {#adding-a-carousel-banner-to-your-website-page}
+## Ajout d’une bannière de carrousel à votre page web   {#adding-a-carousel-banner-to-your-website-page}
 
 Une fois que vous avez chargé les images de la bannière pour créer un carrousel, ajouté des zones réactives et/ou cliquables à la bannière et publié l’ensemble de carrousel, vous êtes prêt à l’ajouter à votre page web existante.
 
