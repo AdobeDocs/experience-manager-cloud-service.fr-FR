@@ -22,11 +22,11 @@ Ils assurent la diffusion du contenu aux canaux autres que les pages web AEM cl
 
 Avec les fragments de contenu qui utilisent du contenu structuré, vous pouvez fournir des services de contenu en utilisant l’exportateur JSON pour fournir le contenu d’une page AEM(y) au format de modèle de données JSON. Ce contenu peut ensuite être utilisé dans vos propres applications.
 
-## Exportateur JSON avec les composants principaux des fragments de contenu {#json-exporter-with-content-fragment-core-components}
+## Exportateur JSON avec les composants principaux des fragments de contenu  {#json-exporter-with-content-fragment-core-components}
 
 Grâce à l’exportateur JSON AEM, vous pouvez diffuser le contenu des pages AEM au format du modèle de données JSON. Ce contenu peut ensuite être utilisé dans vos propres applications.
 
-AEM la diffusion est réalisée à l&#39;aide du sélecteur `model` et de l&#39; `.json` extension.
+AEM la diffusion est réalisée à l&#39;aide de l&#39;extension de sélecteur `model` et `.json`.
 
 `.model.json`
 
