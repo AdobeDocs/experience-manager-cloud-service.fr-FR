@@ -22,7 +22,7 @@ AEM est fourni avec tout un éventail de composants prêts à l’emploi qui pro
 >
 >En fonction de votre instance, vous disposez peut-être de composants personnalisés développés explicitement pour vos besoins. Ces composants peuvent même avoir le même nom que certains composants traités ici.
 
-## Utilisation générale   {#general-usage}
+## Utilisation générale    {#general-usage}
 
 Les composants sont disponibles dans l’onglet **Composants** du panneau latéral de l’éditeur de page lors de la [modification d’une page](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
