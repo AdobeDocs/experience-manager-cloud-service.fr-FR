@@ -97,7 +97,7 @@ Pour créer un modèle de fragment d’expérience détecté par l’assistant *
    1. Et le nom du modèle doit commencer par :
       `experience-fragments`
 Cela permet aux utilisateurs de créer des fragments d’expérience dans /content/experience-fragments en tant que 
-`cq:allowedTemplates` de ce dossier contient tous les modèles dont le nom commence par `experience-fragment`. Les clients peuvent mettre à jour cette propriété afin d’inclure leur propre schéma d’affectation de noms ou emplacement de modèle.
+`cq:allowedTemplates` de ce dossier contient tous les modèles dont le nom commence par  `experience-fragment`. Les clients peuvent mettre à jour cette propriété afin d’inclure leur propre schéma d’affectation de noms ou emplacement de modèle.
 
 1. Les [modèles autorisés](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) peuvent être configurés dans la console des fragments d’expérience.
 
