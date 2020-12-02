@@ -79,6 +79,6 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 Voir aussi [Aperçu des ressources](/help/assets/dynamic-media/previewing-assets.md).
 
-## Publication des images panoramiques   {#publishing-panoramic-images}
+## Publication des images panoramiques    {#publishing-panoramic-images}
 
 Voir [Publication de ressources](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
