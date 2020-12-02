@@ -425,6 +425,6 @@ Vous pouvez supprimer un profil vidéo d’un dossier à partir du menu **[!UICO
 ### Suppression d’un profil vidéo des dossiers à l’aide des propriétés {#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. Appuyez ou cliquez sur le logo AEM, puis accédez à **[!UICONTROL Ressources]** et au dossier duquel vous souhaitez supprimer un profil vidéo.
-1. On the folder, tap or click the check mark to select it and then tap **[!UICONTROL Properties]**.
+1. Dans le dossier, appuyez ou cliquez sur la coche pour la sélectionner, puis appuyez sur **[!UICONTROL Propriétés]**.
 1. Sélectionnez l’onglet **[!UICONTROL Profils vidéo]**, choisissez **[!UICONTROL Aucun]** dans le menu déroulant, puis cliquez sur **[!UICONTROL Enregistrer et fermer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
