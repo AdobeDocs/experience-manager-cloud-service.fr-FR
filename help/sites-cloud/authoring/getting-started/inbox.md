@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Votre boîte de réception   {#your-inbox}
+# Votre boîte de réception    {#your-inbox}
 
 Vous pouvez recevoir des notifications de diverses sections d’AEM, y compris des workflows et des projets. Ces notifications peuvent par exemple concerner les éléments suivants :
 
@@ -43,7 +43,7 @@ Dans les deux consoles, le nombre actuel d’éléments présents dans votre bo�
 >
 >Certaines opérations sont également répertoriées en [mode Carte de la ressource appropriée](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view).
 
-## Ouverture de la boîte de réception   {#opening-the-inbox}
+## Ouverture de la boîte de réception    {#opening-the-inbox}
 
 Pour ouvrir la boîte de réception des notifications AEM :
 
