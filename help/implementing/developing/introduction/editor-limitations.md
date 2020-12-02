@@ -14,11 +14,11 @@ ht-degree: 100%
 
 L’éditeur de l’interface utilisateur tactile emploie des couches pour interagir avec le contenu confiné dans un iFrame. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs. Cette page résume ces limites et fournit des solutions lorsque cela s’avère possible.
 
-## Limites fonctionnelles  {#functional-limitations}
+## Limites fonctionnelles   {#functional-limitations}
 
 Un auteur peut être confronté aux limites fonctionnelles suivantes lors de l’utilisation de l’éditeur pour créer des pages.
 
-### Liens inactifs  {#links-not-active}
+### Liens inactifs   {#links-not-active}
 
 Lors de la [modification d’une page](/help/sites-cloud/authoring/fundamentals/editing-content.md), les liens ne sont pas actifs.
 
@@ -32,13 +32,13 @@ Les pages ne peuvent pas être nommées `structure`. Les pages nommées `structu
 
 Un développeur peut être confronté aux limites suivantes concernant les interactions de l’éditeur avec CSS.
 
-### Éléments à positionnement absolu  {#absolutely-positioned-elements}
+### Éléments à positionnement absolu   {#absolutely-positioned-elements}
 
 Les éléments à positionnement absolu peuvent occasionner des problèmes au niveau de la position de leur incrustation.
 
 * Si cela se produit, assurez-vous que les dimensions de l’élément à positionnement absolu sont correctes, car l’éditeur créera une incrustation ayant exactement les mêmes dimensions.
 
-### Unités vh  {#vh-units}
+### Unités vh   {#vh-units}
 
 Les unités `vh` ne sont pas prises en charge, car la hauteur de l’iFrame doit être réglée automatiquement par AEM.
 
