@@ -48,7 +48,7 @@ Cette page décrit également comment le cache du Dispatcher est invalidé, ains
    { /glob "*" /type "allow" }
    ```
 
-* To prevent specific content from being cached, set the Cache-Control header to *private*. For example, the following would prevent html content under a directory named **myfolder** from being cached:
+* Pour empêcher la mise en cache d’un contenu spécifique, définissez l’en-tête Cache-Control sur *private*. Par exemple, les éléments suivants empêcheraient la mise en cache du contenu html situé sous un répertoire nommé **myfolder** :
 
    ```
       <LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
@@ -57,7 +57,7 @@ Cette page décrit également comment le cache du Dispatcher est invalidé, ains
    ```
 
    >[!NOTE]
-   >The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
+   >Les autres méthodes, y compris le projet [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), ne remplaceront pas les valeurs.
 
 ### Bibliothèques côté client (js, css) {#client-side-libraries}
 
@@ -78,7 +78,7 @@ Cette page décrit également comment le cache du Dispatcher est invalidé, ains
 
    Consultez la discussion dans la section html/text ci-dessus pour faire attention à ne pas mettre trop en cache et pour savoir comment forcer AEM à toujours appliquer la mise en cache avec l’option &quot;always&quot;.
 
-   It is necessary to ensure that a file under `src/conf.dispatcher.d/`cache has the following rule (which is in the default configuration):
+   Il est nécessaire de s’assurer qu’un fichier placé sous `src/conf.dispatcher.d/`cache comporte la règle suivante (qui se trouve dans la configuration par défaut) :
 
    ```
    /0000
@@ -88,7 +88,7 @@ Cette page décrit également comment le cache du Dispatcher est invalidé, ains
    Assurez-vous que les ressources destinées à être conservées en privé plutôt que mises en cache ne font pas partie des filtres de directive LocationMatch.
 
    >[!NOTE]
-   >The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
+   >Les autres méthodes, y compris le projet [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), ne remplaceront pas les valeurs.
 
 ### Autres types de fichiers de contenu dans le magasin de nœuds {#other-content}
 
@@ -124,7 +124,7 @@ Le diagramme ci-dessous illustre cela.
 
 Si le cache du Dispatcher n’est pas effacé, contactez le [service clientèle](https://helpx.adobe.com/fr/support.ec.html), qui pourra le vider si nécessaire.
 
-Le réseau de diffusion de contenu géré par Adobe respecte les TTL et il n’est donc pas nécessaire qu’il soit vidé. Si un problème est suspecté, [contactez le service clientèle](https://helpx.adobe.com/fr/support.ec.html), qui pourra vider un cache de réseau de diffusion de contenu géré par Adobe si nécessaire.
+Le réseau de diffusion de contenu géré par Adobe respecte les TTL et il n’est donc pas nécessaire qu’il soit vidé. Si un problème est suspecté, [contactez le service clientèle](https://helpx.adobe.com/support.ec.html), qui pourra vider un cache de réseau de diffusion de contenu géré par Adobe si nécessaire.
 
 ## Bibliothèques côté client et cohérence entre les versions {#content-consistency}
 
