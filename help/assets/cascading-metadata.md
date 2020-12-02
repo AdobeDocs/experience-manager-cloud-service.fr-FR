@@ -26,7 +26,7 @@ Voici quelques cas d’utilisation pour lesquels vous pouvez définir des métad
 * Modifier les options affichées pour un champ particulier en fonction de la valeur spécifiée dans un autre champ.
 * Définir la valeur de métadonnées par défaut dans un domaine spécifique en fonction de la valeur spécifiée dans un autre champ.
 
-## Configuration des métadonnées en cascade dans AEM   {#configure-cascading-metadata-in-aem}
+## Configuration des métadonnées en cascade dans AEM    {#configure-cascading-metadata-in-aem}
 
 Supposons que vous souhaitiez afficher les métadonnées en cascade en fonction du type de ressource sélectionné. Quelques exemples
 
