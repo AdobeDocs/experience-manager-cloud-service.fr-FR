@@ -3,9 +3,9 @@ title: Partage de ressources, de dossiers et de collections sous forme de lien
 description: Cet article décrit le partage de ressources, de dossiers et de collections dans les ressources d’Experience Manager sous forme de lien hypertexte.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '896'
 ht-degree: 96%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 96%
 
 # Partage et distribution de ressources gérées dans Experience Manager {#share-assets-from-aem}
 
-Adobe Experience Manager (AEM) Assets vous permet de partager des ressources, des dossiers et des collections avec des membres de votre entreprise et des tiers, notamment des partenaires et des fournisseurs. Procédez comme suit pour partager des ressources à partir d’Experience Manager Assets as a Cloud Service :
+Adobe Experience Manager (AEM) Assets vous permet de partager des ressources, des dossiers et des collections avec des membres de votre entreprise et des tiers, notamment des partenaires et des fournisseurs. Procédez comme suit pour partager des ressources à partir d’Experience Manager Assets as a [!DNL Cloud Service]:
 
 * Partager des ressources sous la forme d’un lien.
 * Télécharger des ressources et les partager séparément.
@@ -187,6 +187,5 @@ Découvrez [comment configurer AEM pour l’utiliser avec Adobe Asset Link](htt
 * If you cannot share assets using link sharing functionality, ensure that you have the appropriate permissions. See [share assets](#sharelink).
 -->
 
-<!--
-Add content or link about how to share using Brand Portal when it is available on Cloud Service.
+<!-- TBD: Add content or link about how to share using Brand Portal when it is available on [!DNL Cloud Service].
 -->
