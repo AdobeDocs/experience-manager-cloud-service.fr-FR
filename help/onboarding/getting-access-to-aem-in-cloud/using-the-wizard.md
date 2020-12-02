@@ -25,7 +25,7 @@ Suivez les étapes ci-dessous pour créer un projet d’application AEM dans Clo
 
    ![](assets/create-wizard2.png)
 
-1. La mosaïque Création de **projet en cours** s’affiche dans l’écran Présentation *du* Programme.
+1. La mosaïque **Création de projet en cours** s’affiche sur l’écran *Aperçu du Programme*.
 
    ![](assets/create-wizard3.png)
 
