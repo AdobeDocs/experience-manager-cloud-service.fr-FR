@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Configuration de votre environnement de compte   {#configuring-your-account-environment}
+# Configuration de votre environnement de compte    {#configuring-your-account-environment}
 
 AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
 
