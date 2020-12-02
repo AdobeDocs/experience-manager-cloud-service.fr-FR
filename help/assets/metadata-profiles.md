@@ -109,7 +109,7 @@ Lorsque vous supprimez un profil de métadonnées d’un dossier, tout sous-doss
 
 Vous pouvez supprimer un profil de métadonnées d’un dossier à partir du menu **Outils** ou, si vous êtes dans le dossier, à partir de **Propriétés**. Cette section décrit comment supprimer des profils de métadonnées des dossiers des deux manières.
 
-### Suppression de profils de métadonnées d’un dossier via l’interface utilisateur des profils  {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
+### Suppression de profils de métadonnées d’un dossier via l’interface utilisateur des profils   {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
 1. Appuyez ou cliquez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**.
 1. Sélectionnez le profil de métadonnées à supprimer d’un ou de plusieurs dossiers.
