@@ -72,7 +72,7 @@ Commencez par charger les images et les vidéos pour les visionneuses de médias
 
 Si vous souhaitez ajouter des visionneuses à 360° ou des visionneuses d’images à la visionneuse de médias mixtes, créez-les aussi.
 
-## Création d’une visionneuse de médias mixtes  {#creating-mixed-media-sets}
+## Création d’une visionneuse de médias mixtes   {#creating-mixed-media-sets}
 
 Vous pouvez ajouter des images, des visionneuses d’images, des visionneuses à 360° et des vidéos à votre visionneuse de médias mixtes. Assurez-vous que les fichiers, visionneuses d’images et visionneuses à 360° sont prêts pour la publication avant de les ajouter à la visionneuse de médias mixtes.
 
@@ -114,7 +114,7 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
 1. Pour appliquer un paramètre prédéfini aux ressources, appuyez sur **[!UICONTROL Paramètre prédéfini]** dans le coin supérieur droit, puis sélectionnez le paramètre prédéfini de votre choix.
 1. Cliquez sur **[!UICONTROL Enregistrer]**. La visionneuse de médias mixtes nouvellement créée apparaît dans le dossier dans lequel vous l’avez créée.
 
-## Modification d’une visionneuse de médias mixtes  {#editing-mixed-media-sets}
+## Modification d’une visionneuse de médias mixtes   {#editing-mixed-media-sets}
 
 Vous pouvez effectuer diverses tâches de modification sur les ressources dans les visionneuses de médias mixtes, directement dans l’interface utilisateur, [comme vous le feriez dans AEM Assets](/help/assets/manage-digital-assets.md). Vous pouvez également effectuer les actions suivantes dans les visionneuses de médias mixtes :
 
@@ -147,7 +147,7 @@ Vous pouvez effectuer diverses tâches de modification sur les ressources dans l
       >* Pour supprimer une visionneuse de médias mixtes dans son ensemble, depuis n’importe quel mode d’affichage (**[!UICONTROL Carte]** ou **[!UICONTROL Colonnes]**, par exemple), accédez à la visionneuse de médias mixtes. Placez le pointeur de la souris sur la ressource et appuyez sur l’icône de coche pour la sélectionner. Appuyez sur la touche **[!UICONTROL Retour arrière]** du clavier ou sur **[!UICONTROL Plus]** (points de suspension) dans la barre d’outils, puis appuyez sur **[!UICONTROL Supprimer]**.
          >
          >
-      * You can edit the assets in a Mixed Media Set by navigating to the set, tapping **[!UICONTROL Set Members]** in the left rail, and then tapping the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
+      * Vous pouvez modifier les fichiers d’une visionneuse de supports variés en accédant à la visionneuse, en appuyant sur **[!UICONTROL Définir les membres]** dans le rail de gauche, puis en appuyant sur l’icône **[!UICONTROL Crayon]** d’une ressource individuelle pour ouvrir la fenêtre de modification.
 
 
 1. Appuyez sur **[!UICONTROL Enregistrer]** lorsque vous avez terminé la modification.
@@ -164,7 +164,7 @@ Vous pouvez effectuer diverses tâches de modification sur les ressources dans l
 
 Pour obtenir des informations sur l’aperçu d’une visionneuse de médias mixtes, voir [Aperçu des ressources](/help/assets/dynamic-media/previewing-assets.md).
 
-## Publication d’une visionneuse de médias mixtes  {#publishing-mixed-media-sets}
+## Publication d’une visionneuse de médias mixtes   {#publishing-mixed-media-sets}
 
 Pour obtenir des informations sur la publication d’une visionneuse de médias mixtes, voir [Publication de ressources](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
