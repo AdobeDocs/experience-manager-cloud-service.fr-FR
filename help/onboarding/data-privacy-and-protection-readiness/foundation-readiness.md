@@ -20,7 +20,7 @@ ht-degree: 32%
 
 >[!NOTE]
 >
->Pour plus d&#39;informations sur la réponse des Adobes aux questions de confidentialité et sur ce que cela signifie pour vous en tant que client Adobe, consultez le Centre [de confidentialité des](https://www.adobe.com/privacy.html)Adobes.
+>Pour plus d&#39;informations sur la réponse des Adobes aux questions de confidentialité et sur ce que cela signifie pour vous en tant que client d&#39;Adobe, voir [Centre de confidentialité des Adobes](https://www.adobe.com/privacy.html).
 
 ## Prise en charge de la protection et de la confidentialité des données de AEM Foundation {#aem-foundation-data-privacy-and-protection-support}
 
@@ -30,7 +30,7 @@ Au niveau de AEM Foundation, les données personnelles stockées sont conservée
 
 ### Étapes manuelles {#manual-steps}
 
-1. Ouvrez la console d’administration utilisateur en accédant à **[!UICONTROL Outils - Sécurité - Utilisateurs]** ou en accédant directement à `https://<serveraddress>:<serverport>/security/users.html`
+1. Ouvrez la console d’administration utilisateur en accédant à **[!UICONTROL Outils - Sécurité - Utilisateurs]** ou en accédant directement à `https://<serveraddress>:<serverport>/security/users.html`.
 
 <!--
    ![useradmin2](assets/useradmin2.png)
@@ -82,7 +82,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 1. Ouvrez la console Administration utilisateur et recherchez l’utilisateur en question, comme décrit ci-dessus.
 2. Survolez l’utilisateur avec le curseur, puis cliquez sur l’icône sélectionnée. Le profil devient gris pour indiquer qu’il est sélectionné.
 
-3. Press the **Disable** button in the upper menu to disable the user:
+3. Appuyez sur le bouton **Désactiver** dans le menu supérieur pour désactiver l&#39;utilisateur :
 
    ![désactiver le compte](assets/dpp-foundation-03.png)
 
