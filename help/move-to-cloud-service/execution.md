@@ -61,7 +61,7 @@ Pour plus d’informations, voir [Structure de module recommandée](https://docs
 
 Il existe d’autres directives de développement à connaître concernant le développement sur AEM as a Cloud Service. Pour en savoir plus, consultez les [Conseils de développement pour AEM as a Cloud Service](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/development-guidelines.html).
 
-À partir de la phase de planification, vous devez disposer d’une liste des zones à reconfigurer pour qu’elles soient compatibles avec Cloud Service. Vous devez également consulter les [Conseils de développement](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/development-guidelines.html) pour en savoir plus sur la refactorisation et l’optimisation du code nécessaires au passage vers Cloud Service.
+À partir de la phase de planification, vous devez disposer d’une liste des zones à reconfigurer pour qu’elles soient compatibles avec Cloud Service. Vous devez également consulter les [Conseils de développement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html) pour en savoir plus sur la refactorisation et l’optimisation du code nécessaires au passage vers Cloud Service.
 
 Pour accélérer certaines de vos tâches de refactorisation du code, vous pouvez utiliser les outils suivants :
 
