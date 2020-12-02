@@ -28,7 +28,7 @@ Les audiences sont accompagnées d’un libellé qui décrit le type d’audienc
 * CH - segment ContextHub
 * AT - audience Adobe Target
 
-## Création d’un segment ContextHub dans la console Audiences  {#creating-a-contexthub-segment-in-the-audiences-console}
+## Création d’un segment ContextHub dans la console Audiences   {#creating-a-contexthub-segment-in-the-audiences-console}
 
 Vous pouvez créer un segment ContextHub dans la console Audiences ou durant le processus de ciblage.
 
@@ -76,7 +76,7 @@ Pour créer une audience Adobe Target :
 1. Saisissez le nom de l’audience et cliquez ou appuyez sur le bouton **Enregistrer**.
 1. Cliquez ou appuyez sur **Enregistrer**. Votre audience est répertoriée dans la liste des audiences.
 
-### Attributs et leurs options  {#attributes-and-their-options}
+### Attributs et leurs options   {#attributes-and-their-options}
 
 Vous pouvez créer des règles de ciblage pour chacun des attributs suivants :
 
