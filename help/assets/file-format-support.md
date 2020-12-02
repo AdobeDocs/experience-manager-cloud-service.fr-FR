@@ -1,6 +1,6 @@
 ---
 title: Formats de fichiers et types MIME pris en charge
-description: File formats and MIME types supported by [!DNL Experience Manager Assets] as a Cloud Service.
+description: Formats de fichiers et types MIME pris en charge par  [!DNL Experience Manager Assets] en tant que Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 7e5ea5ccf0110d1fb55449c9c1933aff6aba0065
@@ -11,15 +11,15 @@ ht-degree: 93%
 ---
 
 
-# [!DNL Assets] formats de fichier pris en charge {#supported-file-formats}
+# [!DNL Assets] formats de fichier pris en charge  {#supported-file-formats}
 
 [!DNL Adobe Experience Manager] as a Cloud Service prend en charge les fonctionnalités de base de gestion de contenu (stockage, gestion des métadonnées en ligne, gestion des versions, chargement et téléchargement, etc.) pour tout fichier binaire, quel que soit son format. [!DNL Adobe Experience Manager Assets] prend en charge un large éventail de formats de fichiers et chaque fonctionnalité de produit prend en charge différents formats.
 
-In addition, [!DNL Experience Manager Assets] provides extended support to generate previews and renditions and to extract metadata and text for full-text indexing. Cette prise en charge étendue est assurée à l’aide de [microservices de ressources](asset-microservices-configure-and-use.md).
+En outre, [!DNL Experience Manager Assets] offre une prise en charge étendue pour générer des prévisualisations et des rendus et pour extraire des métadonnées et du texte pour l’indexation de texte intégral. Cette prise en charge étendue est assurée à l’aide de [microservices de ressources](asset-microservices-configure-and-use.md).
 
 Les éléments essentiels concernant la conversion des ressources à l’aide des microservices de ressources sont les suivants :
 
-* Key [Adobe file formats](#adobe-formats) produced by Adobe applications and services, including [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], and [!DNL Adobe Acrobat] or PDF.
+* Formats de fichier [Adobe ](#adobe-formats) produit par les applications et services d&#39;Adobe, y compris [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] et [!DNL Adobe Acrobat] ou PDF.
 * [Formats de fichiers d’imagerie](#image-formats) clés.
 * [Formats de fichiers Camera Raw](#camera-raw-formats) pour un large éventail d’appareils photo, dont Canon, Nikon, Fujifilm, Olympus et d’autres fabricants (optimisés par Adobe Camera Raw).
 * [Formats de documents](#document-formats) courants, y compris les formats Microsoft Office et Open Document.
@@ -37,17 +37,17 @@ La légende suivante décrit le niveau de prise en charge.
 
 | Format de fichier | Génération de miniatures | Extraction de texte intégral | Extraction de métadonnées | Largeur/Hauteur |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
-| AI | ✓ | - | ✓ | ✓ |
-| COLLAGE | - | - | ✓ | - |
-| DN | ✓ | - | ✓ | ✓ |
-| IDEAS | - | - | ✓ | - |
-| INDD | ✓ | - | ✓ | ✓ * |
-| INDT | - | - | ✓ | - |
-| PDF | ✓ | ✓ | ✓ | ✓ |
-| PROTO | - | - | ✓ | - |
-| PSB | ✓ | - | ✓ | ✓ |
-| PSD | ✓ | - | ✓ | ✓ |
-| XD | ✓ | - | ✓ | ✓ |
+| AI | obj | - | obj | obj |
+| COLLAGE | - | - | obj | - |
+| DN | obj | - | obj | obj |
+| IDEAS | - | - | obj | - |
+| INDD | obj | - | obj | ✓ * |
+| INDT | - | - | obj | - |
+| PDF | obj | obj | obj | obj |
+| PROTO | - | - | obj | - |
+| PSB | obj | - | obj | obj |
+| PSD | obj | - | obj | obj |
+| XD | obj | - | obj | obj |
 
 \* Pour les fichiers [!DNL Adobe InDesign] (INDD), la taille du rendu est déterminée par l’aperçu incorporé dans le fichier. Configurez les préférences dans [!DNL InDesign] (**[!UICONTROL Préférences > Gestion des fichiers > Toujours enregistrer les images d’aperçu avec les documents, Taille d’aperçu]**) pour incorporer un rendu plus grand.
 
@@ -55,29 +55,29 @@ La légende suivante décrit le niveau de prise en charge.
 
 | Format de fichier | Génération de miniatures | Extraction de métadonnées | Largeur/Hauteur | Recadrer |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
-| BMP | ✓ | - | ✓ | ✓ |
-| EPS | - | ✓ | - | - |
-| GIF | ✓ | ✓ | ✓ | ✓ |
-| JPEG | ✓ | ✓ | ✓ | ✓ |
-| PNG | ✓ | ✓ | ✓ | ✓ |
-| TIFF | ✓ | ✓ | ✓ | - |
-| SVG | ✓ | - | ✓ | ✓ |
-| SGI | ✓ | ✓ | ✓ | ✓ |
-| RVB | ✓ | ✓ | ✓ | ✓ |
-| RGBA | ✓ | ✓ | ✓ | ✓ |
+| BMP | obj | - | obj | obj |
+| EPS | - | obj | - | - |
+| GIF | obj | obj | obj | obj |
+| JPEG | obj | obj | obj | obj |
+| PNG | obj | obj | obj | obj |
+| TIFF | obj | obj | obj | - |
+| SVG | obj | - | obj | obj |
+| SGI | obj | obj | obj | obj |
+| RVB | obj | obj | obj | obj |
+| RGBA | obj | obj | obj | obj |
 
 ## Formats des images dans [!DNL Dynamic Media] {#image-support-dynamic-media}
 
 | Format | Transférer (format d’entrée) | Créer un paramètre d’image prédéfini (format de sortie) | Prévisualiser un rendu dynamique | Diffuser un rendu dynamique | Télécharger un rendu dynamique |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| BMP | ✓ | - | - | - | - |
-| PSD   ‡ | ✓ | - | - | - | - |
-| EPS | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PICT | ✓ | - | - | - | - |
+| PNG | obj | obj | obj | obj | obj |
+| GIF | obj | obj | obj | obj | obj |
+| TIFF | obj | obj | obj | obj | obj |
+| JPEG | obj | obj | obj | obj | obj |
+| BMP | obj | - | - | - | - |
+| PSD   ‡ | obj | - | - | - | - |
+| EPS | obj | obj | obj | obj | obj |
+| PICT | obj | - | - | - | - |
 
 ‡ L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par [!DNL Adobe Photoshop] et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
 
@@ -98,44 +98,44 @@ Voir [Utilisation de ressources 3D dans Dynamic Media.](/help/assets/dynamic-me
 
 | Format | Stockage | Contrôle de version | Workflow | Publication | Contrôle d’accès | Aperçu de miniature | Aperçu 3D | Diffusion Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
-| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| gLTF | ✓ | ✓ | ✓ | - | ✓ | - | ✓ | - |
-| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
+| DN | obj | obj | obj | - | obj | obj | - | - |
+| gLB | obj | obj | obj | obj | obj | - | obj | obj |
+| gLTF | obj | obj | obj | - | obj | - | obj | - |
+| OBJ | obj | obj | obj | obj | obj | - | obj | obj |
+| STL | obj | obj | obj | obj | obj | - | obj | obj |
+| USDz | obj | obj | obj | obj | obj | - | - | obj |
 
 ## Formats [!DNL Camera RAW] {#camera-raw-formats}
 
 | Format de fichier | Génération de miniatures | Extraction de métadonnées | Largeur/Hauteur |
 | ----------- | -------------------- | ------------------- | ------------ |
-| 3FR | ✓ | ✓ | ✓ |
-| ARW | ✓ | ✓ | ✓ |
-| CR2 | ✓ | ✓ | ✓ |
-| CR3 | ✓ | ✓ | ✓ |
-| CRW | ✓ | ✓ | ✓ |
-| DCR | ✓ | ✓ | ✓ |
-| DNG | ✓ | ✓ | ✓ |
-| ERF | ✓ | ✓ | ✓ |
-| FFF | ✓ | ✓ | ✓ |
-| GPR | ✓ | ✓ | ✓ |
-| IIQ | ✓ | ✓ | ✓ |
-| KDC | ✓ | ✓ | ✓ |
-| MEF | ✓ | ✓ | ✓ |
-| MFW | ✓ | ✓ | ✓ |
-| MOS | ✓ | ✓ | ✓ |
-| MRW | ✓ | ✓ | ✓ |
-| NEF | ✓ | ✓ | ✓ |
-| NRW | ✓ | ✓ | ✓ |
-| ORF | ✓ | ✓ | ✓ |
-| PEF | ✓ | ✓ | ✓ |
-| RAF | ✓ | ✓ | ✓ |
-| RAW | ✓ | ✓ | ✓ |
-| RW2 | ✓ | ✓ | ✓ |
-| RWL | ✓ | ✓ | ✓ |
-| SRF | ✓ | ✓ | ✓ |
-| SRW | ✓ | ✓ | ✓ |
-| X3F | ✓ | ✓ | ✓ |
+| 3FR | obj | obj | obj |
+| ARW | obj | obj | obj |
+| CR2 | obj | obj | obj |
+| CR3 | obj | obj | obj |
+| CRW | obj | obj | obj |
+| DCR | obj | obj | obj |
+| DNG | obj | obj | obj |
+| ERF | obj | obj | obj |
+| FFF | obj | obj | obj |
+| GPR | obj | obj | obj |
+| IIQ | obj | obj | obj |
+| KDC | obj | obj | obj |
+| MEF | obj | obj | obj |
+| MFW | obj | obj | obj |
+| MOS | obj | obj | obj |
+| MRW | obj | obj | obj |
+| NEF | obj | obj | obj |
+| NRW | obj | obj | obj |
+| ORF | obj | obj | obj |
+| PEF | obj | obj | obj |
+| RAF | obj | obj | obj |
+| RAW | obj | obj | obj |
+| RW2 | obj | obj | obj |
+| RWL | obj | obj | obj |
+| SRF | obj | obj | obj |
+| SRW | obj | obj | obj |
+| X3F | obj | obj | obj |
 
 ## Formats de document {#document-formats}
 
@@ -143,60 +143,60 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 
 | Format de fichier | Génération de miniatures | Extraction de texte intégral | Largeur/Hauteur | Gestion des métadonnées | [Ressources connectées](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DOC | - | - | - | ✓ | ✓ |
-| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PPT | - | - | - | ✓ | ✓ |
-| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| XLS | - | - | - | ✓ | ✓ |
-| ODF | ✓ | ✓ | ✓ | - | - |
-| OFG | ✓ | ✓ | ✓ | - | - |
-| ODM | ✓ | ✓ | ✓ | - | - |
-| ODP | ✓ | ✓ | ✓ | - | - |
-| ODS | ✓ | ✓ | ✓ | - | - |
-| ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
-| EPUB | - | ✓ | - | - | - |
-| HTML | - | ✓ | - | ✓ | ✓ |
-| PS | - | - | ✓ | - | - |
-| RTF | - | ✓ | - | ✓ | ✓ |
-| TXT | - | ✓ | - | ✓ | ✓ |
-| XML | - | ✓ | - | - | - |
+| PDF | obj | obj | obj | obj | obj |
+| DOCX | obj | obj | obj | obj | obj |
+| DOC | - | - | - | obj | obj |
+| PPTX | obj | obj | obj | obj | obj |
+| PPT | - | - | - | obj | obj |
+| XLSX | obj | obj | obj | obj | obj |
+| XLS | - | - | - | obj | obj |
+| ODF | obj | obj | obj | - | - |
+| OFG | obj | obj | obj | - | - |
+| ODM | obj | obj | obj | - | - |
+| ODP | obj | obj | obj | - | - |
+| ODS | obj | obj | obj | - | - |
+| ODT | obj | obj | obj | obj | obj |
+| EPUB | - | obj | - | - | - |
+| HTML | - | obj | - | obj | obj |
+| PS | - | - | obj | - | - |
+| RTF | - | obj | - | obj | obj |
+| TXT | - | obj | - | obj | obj |
+| XML | - | obj | - | - | - |
 
 ## Formats de document dans [!DNL Dynamic Media] {#document-support-dynamic-media}
 
 | Format | Transférer (format d’entrée) | Créer un paramètre d’image prédéfini (format de sortie) | Prévisualiser un rendu dynamique | Diffuser un rendu dynamique | Télécharger un rendu dynamique |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| AI | ✓ | - | - | - | - |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| INDD | ✓ | - | - | - | - |
+| AI | obj | - | - | - | - |
+| PDF | obj | obj | obj | obj | obj |
+| INDD | obj | - | - | - | - |
 
 ## Formats vidéo {#video-formats}
 
 | Format de fichier | Génération de miniatures | Extraction de métadonnées | Largeur/Hauteur |
 | ----------- | -------------------- | ------------------- | ------------ |
-| 3G2 | - | ✓ | - |
-| 3GP | - | ✓ | - |
-| AVI | ✓ | ✓ | ✓ |
-| DIVX | ✓ | - | ✓ |
-| F4V | ✓ | ✓ | ✓ |
-| FLV | ✓ | ✓ | ✓ |
-| M2T | ✓ | - | ✓ |
-| M2TS | ✓ | - | ✓ |
-| M2V | ✓ | - | ✓ |
-| M4V | ✓ | ✓ | ✓ |
-| MKV | ✓ | - | ✓ |
-| MOV | ✓ | ✓ | ✓ |
-| MP4 | ✓ | ✓ | ✓ |
-| MPEG | ✓ | ✓ | ✓ |
-| MPG | ✓ | ✓ | ✓ |
-| MTS | ✓ | - | ✓ |
-| OGV | ✓ | - | ✓ |
-| QT | ✓ | - | ✓ |
-| R3D | - | ✓ | ✓ |
-| SWF | ✓ | - | ✓ |
-| WebM | ✓ | - | ✓ |
-| WMV | ✓ | ✓ | ✓ |
+| 3G2 | - | obj | - |
+| 3GP | - | obj | - |
+| AVI | obj | obj | obj |
+| DIVX | obj | - | obj |
+| F4V | obj | obj | obj |
+| FLV | obj | obj | obj |
+| M2T | obj | - | obj |
+| M2TS | obj | - | obj |
+| M2V | obj | - | obj |
+| M4V | obj | obj | obj |
+| MKV | obj | - | obj |
+| MOV | obj | obj | obj |
+| MP4 | obj | obj | obj |
+| MPEG | obj | obj | obj |
+| MPG | obj | obj | obj |
+| MTS | obj | - | obj |
+| OGV | obj | - | obj |
+| QT | obj | - | obj |
+| R3D | - | obj | obj |
+| SWF | obj | - | obj |
+| WebM | obj | - | obj |
+| WMV | obj | obj | obj |
 
 ## Formats vidéo dans [!DNL Dynamic Media] pour le transcodage {#video-dynamic-media-transcoding}
 
