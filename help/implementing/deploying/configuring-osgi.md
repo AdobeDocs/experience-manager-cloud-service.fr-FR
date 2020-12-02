@@ -378,8 +378,8 @@ config.dev
 <pre>
 { 
  "my_var1" : "$[env:my_var1]"
- "my_var2": "abc",
- "my_var3": 500
+ "my_var2" : "abc",
+ "my_var3" : 500
 }
 </pre>
 </td>
@@ -406,9 +406,9 @@ config
 <td>
 <pre>
 { 
- "my_var1": "val1",
- "my_var2": "abc",
- "my_var3": 500
+ "my_var1" : "val1",
+ "my_var2" : "abc",
+ "my_var3" : 500
 }
 </pre>
 </td>
@@ -421,8 +421,8 @@ config.dev
 <pre>
 { 
  "my_var1" : "$[env:my_var1]"
- "my_var2": "abc",
- "my_var3": 500
+ "my_var2" : "abc",
+ "my_var3" : 500
 }
 </pre>
 </td>
@@ -447,9 +447,9 @@ config
 <td>
 <pre>
 { 
- "my_var1": "val1",
- "my_var2": "abc",
- "my_var3": 500
+ "my_var1" : "val1",
+ "my_var2" : "abc",
+ "my_var3" : 500
 }
 </pre>
 </td>
@@ -472,7 +472,7 @@ config.dev
 
 ## Format de l’API Cloud Manager pour la définition des propriétés {#cloud-manager-api-format-for-setting-properties}
 
-Consultez [cette page](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md) pour savoir comment l&#39;API doit être configurée.
+Voir [cette page](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md) sur la configuration de l&#39;API.
 >[!NOTE]
 >
 >Assurez-vous que l’API Cloud Manager utilisée a attribué le rôle &quot;Deployment Manager - Cloud Service&quot;. Les autres rôles ne peuvent pas exécuter toutes les commandes ci-dessous.
