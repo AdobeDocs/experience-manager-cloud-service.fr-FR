@@ -1,6 +1,6 @@
 ---
 title: Balisage automatique des images avec des balises générées par AI
-description: Tag images using artificially intelligent services that apply contextual and descriptive business tags using [!DNL Adobe Sensei] services.
+description: Balisez des images à l’aide de services artificiellement intelligents qui appliquent des balises commerciales contextuelles et descriptives à l’aide de  [!DNL Adobe Sensei] services.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 80171c63e9f3ba9ace4fd948c7997f14a17ccddc
@@ -11,7 +11,7 @@ ht-degree: 86%
 ---
 
 
-# Train Smart Content Service and auto-tag your images {#train-service-tag-assets}
+# Formez Smart Content Service et balisez automatiquement vos images {#train-service-tag-assets}
 
 Les entreprises qui traitent des ressources numériques utilisent de plus en plus le vocabulaire contrôlé par taxonomie dans les métadonnées des ressources. Il s’agit essentiellement d’une liste des mots-clés que les employés, les partenaires et les clients utilisent fréquemment pour mentionner et rechercher des ressources numériques. Le balisage des ressources avec vocabulaire contrôlé par taxonomie permet de s’assurer qu’elles peuvent être facilement identifiées et récupérées au moyen de recherches sur les balises.
 
@@ -39,7 +39,7 @@ Les balises intelligentes ne s’appliquent qu’aux clients [!DNL Adobe Experie
 
 >[!IMPORTANT]
 >
->Les nouveaux déploiements d’[!DNL Experience Manager Assets] sont intégrés avec [!DNL Adobe Developer Console] par défaut. Il est ainsi possible de configurer plus rapidement la fonctionnalité des balises intelligentes. On the older deployments, administrators can manually [configure smart tags integration](/help/assets/smart-tags-configuration.md#aio-integration).
+>Les nouveaux déploiements d’[!DNL Experience Manager Assets] sont intégrés avec [!DNL Adobe Developer Console] par défaut. Il est ainsi possible de configurer plus rapidement la fonctionnalité des balises intelligentes. Dans les anciens déploiements, les administrateurs peuvent manuellement [configurer l’intégration des balises actives](/help/assets/smart-tags-configuration.md#aio-integration).
 
 Vous pouvez intégrer [!DNL Adobe Experience Manager] avec les balises intelligentes à l’aide d’[!DNL Adobe Developer Console]. Utilisez cette configuration pour accéder au service de balises intelligentes depuis [!DNL Experience Manager]. Voir [Configuration d’Experience Manager pour le balisage intelligent des ressources](smart-tags-configuration.md) pour les tâches de configuration des balises intelligentes. En arrière-plan, le serveur [!DNL Experience Manager] authentifie vos informations d’identification du service auprès de la passerelle Adobe Developer Console avant de transférer votre demande au service de balises intelligentes.
 
@@ -161,7 +161,7 @@ Après avoir entraîné le service de balises intelligentes, vous pouvez déclen
 
 Experience Manager peut automatiquement baliser les ressources que les utilisateurs chargent dans le système de gestion des ressources numériques. Pour ce faire, les administrateurs configurent un workflow pour ajouter une étape disponible pour le balisage intelligent des ressources. Voir [Comment activer le balisage intelligent pour les ressources chargées](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 
-## Manage smart tags and asset searches {#manage-smart-tags-and-searches}
+## Gérer les balises actives et les recherches de ressources {#manage-smart-tags-and-searches}
 
 Vous pouvez traiter les balises actives afin de supprimer les balises inexactes qui ont pu être attribuées à vos actifs de marque, de sorte que seules les balises les plus pertinentes soient affichées.
 
@@ -175,17 +175,17 @@ Pour modérer les balises actives de vos ressources :
 
 1. Inspect les résultats de la recherche pour identifier les ressources que vous ne trouvez pas pertinentes pour votre recherche.
 
-1. Select the asset, and then select ![Manage tags icon](assets/do-not-localize/manage-tags-icon.png) from the toolbar.
+1. Sélectionnez la ressource, puis ![Gérer les balises icône](assets/do-not-localize/manage-tags-icon.png) dans la barre d’outils.
 
-1. Examinez les balises sur la page **[!UICONTROL Gérer les balises]**. Si vous ne souhaitez pas que la recherche de la ressource soit basée sur une balise spécifique, sélectionnez la balise et sélectionnez l’icône ![](assets/do-not-localize/delete-icon.png) Supprimer dans la barre d’outils. Vous pouvez également sélectionner `X` un symbole en regard de l’étiquette.
+1. Examinez les balises sur la page **[!UICONTROL Gérer les balises]**. Si vous ne souhaitez pas que la recherche de la ressource soit basée sur une balise spécifique, sélectionnez la balise et sélectionnez ![Supprimer l’icône](assets/do-not-localize/delete-icon.png) dans la barre d’outils. Vous pouvez également sélectionner le symbole `X` en regard de l’étiquette.
 
-1. To assign a higher rank to a tag, select the tag and select ![Promote icon](assets/do-not-localize/promote-icon.png) from the toolbar. The tag you promote is moved to the **[!UICONTROL Tags]** section.
+1. Pour attribuer un rang supérieur à une balise, sélectionnez la balise et sélectionnez ![Promouvoir l&#39;icône](assets/do-not-localize/promote-icon.png) dans la barre d&#39;outils. La balise que vous promouvez est déplacée vers la section **[!UICONTROL Balises]**.
 
-1. Select **[!UICONTROL Save]** and then select **[!UICONTROL OK]** to close the [!UICONTROL Success] dialog.
+1. Sélectionnez **[!UICONTROL Enregistrer]**, puis **[!UICONTROL OK]** pour fermer la boîte de dialogue [!UICONTROL Succès].
 
-1. Navigate to the [!UICONTROL Properties] page for the asset. Remarquez que la balise que vous avez convertie se voit attribuer une pertinence élevée et apparaît donc plus haut dans les résultats de la recherche.
+1. Accédez à la page [!UICONTROL Propriétés] de la ressource. Remarquez que la balise que vous avez convertie se voit attribuer une pertinence élevée et apparaît donc plus haut dans les résultats de la recherche.
 
-### Comprendre les résultats de recherche AEM avec des balises dynamiques {#understandsearch}
+### Comprendre les résultats de recherche AEM avec des balises dynamiques  {#understandsearch}
 
 Par défaut, la recherche AEM associe les termes de recherche avec une clause `AND`. L’utilisation de balises intelligentes ne modifie pas ce comportement par défaut. Elle ajoute une clause `OR` supplémentaire pour trouver l’un des termes de recherche dans les balises intelligentes. Par exemple, pour la recherche de `woman running`. Les ressources avec les mots-clés `woman` ou `running` uniquement dans les métadonnées n’apparaissent pas dans les résultats de recherche par défaut. Toutefois, une ressource balisée avec `woman` ou `running` à l’aide de balises intelligentes apparaît dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de :
 
@@ -205,7 +205,7 @@ Les balises intelligentes améliorées sont basées sur des modèles d’apprent
 
 * Impossibilité d’identifier des différences subtiles dans les images. Par exemple, des chemises coupe droite ou ajustée.
 * Impossibilité d’identifier des balises basées sur des motifs/éléments minuscules d’une image. Par exemple, des logos sur des T-shirts.
-* Le balisage est pris en charge dans les langues prises en charge par le Experience Manager. For a list of languages, see [Smart Content Service release notes](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+* Le balisage est pris en charge dans les langues prises en charge par le Experience Manager. Pour une liste des langues, voir [Notes de mise à jour de Smart Content Service](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
 
 Pour rechercher des ressources avec des balises intelligentes (standard ou améliorées), utilisez la recherche de texte intégral d’Assets. Il n’y a aucun prédicat de recherche distinct pour les balises intelligentes.
 
