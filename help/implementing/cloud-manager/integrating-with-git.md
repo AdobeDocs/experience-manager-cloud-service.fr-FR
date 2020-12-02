@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Adobe Cloud Manager est fourni avec un référentiel Git unique utilisé pour déployer le code à l’aide des pipelines CI/CD de Cloud Manager. Ce référentiel Git de Cloud Manager est prêt à l’emploi. Les clients ont également la possibilité d’intégrer un référentiel Git sur site ou **géré par le client** à Cloud Manager.
 
-## Présentation de l’intégration Git    {#git-integration-overview}
+## Présentation de l’intégration Git     {#git-integration-overview}
 
 >[!VIDEO](https://video.tv.adobe.com/v/28710/)
 
