@@ -2,9 +2,9 @@
 title: Notes de mise à jour actuelles de  [!DNL Adobe Experience Manager] en tant que Cloud Service.
 description: Notes de mise à jour actuelles de  [!DNL Adobe Experience Manager] en tant que Cloud Service.
 translation-type: tm+mt
-source-git-commit: 8ee5f7c0c5690dd21291261e5e2ad01599c0c174
+source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
 workflow-type: tm+mt
-source-wordcount: '1233'
+source-wordcount: '1234'
 ht-degree: 11%
 
 ---
@@ -33,7 +33,7 @@ La version suivante (2020.12.0) sera publiée le 17 décembre 2020.
 
 ### Nouveautés de [!DNL Assets] et [!DNL Dynamic Media] {#what-is-new-assets}
 
-* **Importation** de ressources en vrac : Offrez aux clients un service d’assimilation évolutif et natif au cloud qui tire parti  [!DNL Experience Manager] en tant qu’architecture Cloud Service, y compris les microservices de ressources. Les cas d’utilisation clés incluent l’assimilation à l’échelle avec la surveillance, le rapports et la planification, tout en permettant le transfert initial des ressources vers les entrepôts de données en nuage à l’aide d’outils de téléchargement de cloud courants. Voir [outil d&#39;importation en vrac](/help/assets/add-assets.md#bulk-ingestion-tool).
+* **Importation** de ressources en vrac : Offrez aux clients un service d’assimilation évolutif et natif au cloud qui tire parti  [!DNL Experience Manager] en tant qu’architecture Cloud Service, y compris les microservices de ressources. Les cas d’utilisation clés incluent l’assimilation à l’échelle avec la surveillance, le rapports et la planification, tout en permettant le transfert initial des ressources vers les entrepôts de données en nuage à l’aide d’outils de téléchargement de cloud courants. Voir [outil d&#39;assimilation en masse de ressources](/help/assets/add-assets.md#asset-bulk-ingestor).
 Cet outil est destiné aux administrateurs système, aux consultants ou aux partenaires d’implémentation. Cette fonction permet l&#39;ingestion à grande échelle et est idéalement utilisée lors de l&#39;ingestion initiale ou parfois d&#39;une ingestion importante. Pour les tâches d’assimilation plus petites, utilisez l’[[!DNL Experience Manager] application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr) ou [téléchargez à l’aide de l’interface utilisateur Ressources](/help/assets/add-assets.md#upload-assets).
 
    ![Configuration de l&#39;importateur en vrac](/help/assets/assets/bulk-import-config-low-res.png)
