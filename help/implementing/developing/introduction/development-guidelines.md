@@ -238,7 +238,7 @@ AEM CS exige que le courrier soit envoyé par le biais du port 465. Si un serve
 
 ### Configuration {#email-configuration}
 
-Dans AEM, les emails doivent être envoyés à l’aide du [service de messagerie Day CQ OSGi](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
+Dans AEM, les emails doivent être envoyés à l’aide du [service de messagerie Day CQ OSGi](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
 Voir la [documentation d’AEM 6.5](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/operations/notification.html) pour plus d’informations sur la configuration des paramètres des emails. Pour AEM CS, les ajustements suivants doivent être appliqués aux services `com.day.cq.mailer.DefaultMailService OSGI` :
 
