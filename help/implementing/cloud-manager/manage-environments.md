@@ -63,11 +63,11 @@ Un utilisateur disposant des autorisations requises peut créer les types d’en
    >Si vous n’avez pas encore configuré votre pipeline hors production, l’écran *Aperçu* affiche la carte d’où vous pouvez créer votre pipeline hors production.
 
 
-## Affichage de l’Environnement {#viewing-environment}
+## Affichage de l&#39;Environnement {#viewing-environment}
 
 La carte **Environnements** de la page Aperçu liste jusqu’à trois environnements.
 
-1. Cliquez sur le bouton **Afficher tout** pour accéder à la page de résumé de l’ **Environnement** et vue d’un tableau avec une liste complète d’environnements.
+1. Sélectionnez le bouton **Afficher tout** pour accéder à la page de résumé **Environnement** afin de vue d’un tableau avec une liste complète d’environnements.
 
    ![](assets/environment-view-1.png)
 
@@ -139,11 +139,11 @@ Cette option est également disponible si vous cliquez sur **Détails** dans la 
 
 ## Connexion locale {#login-locally}
 
-Sélectionnez Connexion **** locale dans le menu déroulant de la carte des **Environnements** pour vous connecter localement à Adobe Experience Manager.
+Sélectionnez **Connexion locale** dans le menu déroulant de la carte **Environnements** pour vous connecter localement à Adobe Experience Manager.
 
 ![](assets/environ-login-locally.png)
 
-De plus, vous pouvez vous connecter localement à partir de la page de résumé des **Environnements** .
+De plus, vous pouvez vous connecter localement à partir de la **page de résumé Environnements**.
 
 ![](assets/environ-login-locally-2.png)
 
