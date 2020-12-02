@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Utilisation des workflows   {#working-with-workflows}
+# Utilisation des workflows    {#working-with-workflows}
 
 Les worfklow AEM permettent d’automatiser une série d’étapes exécutées sur une ou plusieurs pages et/ou ressources.
 
