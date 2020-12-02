@@ -53,6 +53,7 @@ Pour assurer l’intégration à Target, effectuez les tâches suivantes :
 >
 >* La version 3.x est configurée avec [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* Les API 4.x sont configurées avec [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+
 >
 
 
@@ -69,7 +70,7 @@ Une fois l’intégration terminée, vous pouvez [créer du contenu ciblé](http
 >
 >Lorsque vous ciblez un composant dans le mode Auteur AEM, il effectue une série d’appels côté serveur vers Adobe Target afin d’enregistrer la campagne, de configurer des offres et de récupérer des segments Adobe Target (si cela est configuré). Aucun appel côté serveur n’est effectué depuis la publication AEM vers Adobe Target.
 
-## Sources d’informations sur le contexte  {#background-information-sources}
+## Sources d’informations sur le contexte   {#background-information-sources}
 
 Intégrer AEM as a Cloud Service à Adobe Target nécessite des connaissances sur Adobe Target, la gestion des activités AEM et la gestion des audiences AEM. Vous devez connaître les éléments suivants :
 
@@ -85,6 +86,7 @@ Intégrer AEM as a Cloud Service à Adobe Target nécessite des connaissances 
 >* 2 000 expériences
 >* 50 mesures
 >* 50 segments de création de rapports
+
 >
 
 
