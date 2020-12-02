@@ -63,7 +63,7 @@ En utilisant Adobe Experience Manager, les auteurs de contenu et/ou les propri
   Adobe Experience Manager (AEM) includes a number of features and capabilities that enhance the usability of adaptive forms for users with different abilities. The solution also assists form authors in creating accessible adaptive forms.
 -->
 
-## L’accessibilité chez Adobe   {#accessibility-at-adobe}
+## L’accessibilité chez Adobe    {#accessibility-at-adobe}
 
 Pour plus d’informations, consultez le [Centre de ressources sur l’accessibilité Adobe](https://www.adobe.com/accessibility/).
 
