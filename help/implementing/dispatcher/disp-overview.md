@@ -2,9 +2,9 @@
 title: Dispatcher en mode cloud
 description: 'Dispatcher en mode cloud '
 translation-type: tm+mt
-source-git-commit: aae587109d1f8764ac535b316a2a7d05fd7179fe
+source-git-commit: cf5216f3d4d0a9acc7fabc31896770464303f793
 workflow-type: tm+mt
-source-wordcount: '4059'
+source-wordcount: '4082'
 ht-degree: 88%
 
 ---
@@ -381,6 +381,8 @@ Le script effectue les opérations suivantes :
 
 1. Il exécute le validateur de la section précédente pour s&#39;assurer que seules les directives prises en charge sont incluses. Si la configuration n’est pas valide, le script échoue.
 2. Il exécute le `httpd -t command` pour tester si la syntaxe est correcte de telle sorte qu&#39;apache httpd puisse début. En cas de réussite, la configuration doit être prête pour le déploiement
+
+Lors d’un déploiement de Cloud Manager, la vérification `httpd -t syntax` sera également exécutée et toute erreur sera incluse dans le journal de Cloud Manager `Build Images step failure`.
 
 ## Test local de votre configuration Apache et Dispatcher {#testing-apache-and-dispatcher-configuration-locally}
 
