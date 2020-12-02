@@ -43,7 +43,7 @@ Dans AEM, la console Projets permet d’accéder à vos projets et de les gérer
 * L’option **Activer/désactiver les projets actifs** vous permet de basculer entre tous les projets et uniquement ceux qui sont actifs.
 * L’option **Afficher la vue Statistiques** permet d’afficher les statistiques de projet relatives à la réalisation de tâches.
 
-## Mosaïques de projet {#project-tiles}
+## Mosaïques de projet  {#project-tiles}
 
 Dans la console Projets, vous devez associer différents types d’informations à vos projets. Elles sont connues sous le nom de **mosaïques**. Toutes les mosaïques, ainsi que le type d’informations qu’elles contiennent, sont décrites dans cette section.
 
@@ -162,7 +162,7 @@ AEM est fourni avec trois modèles prêts à l’emploi :
 
 En fonction du modèle sélectionné, plusieurs options s’offrent à vous, notamment en termes de rôles utilisateur et de workflows.
 
-## Rôles utilisateur dans un projet  {#user-roles-in-a-project}
+## Rôles utilisateur dans un projet   {#user-roles-in-a-project}
 
 Différents rôles utilisateur sont définis dans un modèle de projet et utilisés pour deux principales raisons :
 
