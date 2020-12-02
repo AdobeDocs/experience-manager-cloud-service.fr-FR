@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Exporter au format CSV   {#export-to-csv}
+# Exporter au format CSV    {#export-to-csv}
 
 L’option **Créer une exportation CSV** vous permet d’exporter les informations relatives à vos pages vers un fichier CSV situé sur votre système local.
 
