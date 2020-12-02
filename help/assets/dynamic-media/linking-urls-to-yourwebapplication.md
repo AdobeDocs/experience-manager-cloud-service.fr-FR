@@ -30,7 +30,7 @@ Voir aussi [Diffusion d’images optimisées pour un site réactif](responsive-s
 
 Voir aussi [Téléchargement de ressources](/help/assets/manage-digital-assets.md#uploading-assets).
 
-## Obtention d’une URL pour une ressource  {#obtaining-a-url-for-an-asset}
+## Obtention d’une URL pour une ressource   {#obtaining-a-url-for-an-asset}
 
 Vous pouvez obtenir une chaîne URL qui est générée par un paramètre d’image prédéfini ou un paramètre prédéfini de la visionneuse. Une fois que vous avez copié l’URL, elle se trouve dans le presse-papiers ce qui vous permet de la coller dans les pages de votre site web ou de votre application.
 
@@ -151,7 +151,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
    Il s’agit de l’URL complète d’un rendu vidéo publié.
 
-## Obtention d’une URL de vidéo pour la diffusion adaptative (HLS)  {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## Obtention d’une URL de vidéo pour la diffusion adaptative (HLS)   {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. Dans AEM, accédez à **[!UICONTROL Outils > Déploiement > Cloud > Cloud Services]**.
 1. Sur la page **[!UICONTROL Cloud Services]**, faites défiler l’écran jusqu’au titre **[!UICONTROL Dynamic Media Cloud Services]**, puis cliquez sur **[!UICONTROL Afficher les configurations]**.
