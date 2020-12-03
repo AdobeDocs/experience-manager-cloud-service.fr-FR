@@ -2,10 +2,10 @@
 title: Visionneuses à 360°
 description: Découvrez comment utiliser des visionneuses à 360° dans Dynamic Media
 translation-type: tm+mt
-source-git-commit: 7a1d12a8cff03af660b936bb7d8b045532357f0d
+source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
 workflow-type: tm+mt
-source-wordcount: '1835'
-ht-degree: 96%
+source-wordcount: '1829'
+ht-degree: 94%
 
 ---
 
@@ -74,9 +74,9 @@ Pour démarrer rapidement, procédez comme suit :
 
 Le cas échéant, vous pouvez [modifier les visionneuses à 360°](#editing-spin-sets). Vous pouvez, en outre, afficher et modifier les [propriétés de la visionneuse à 360°](/help/assets/manage-digital-assets.md#editing-properties).
 
-## Chargement de ressources pour les visionneuses à 360° {#uploading-assets-for-spin-sets}
+## Téléchargement de fichiers pour les visionneuses à 360° {#uploading-assets-for-spin-sets}
 
-Vous avez besoin au minimum de 8 à 12 prises de vue d’un élément pour pouvoir utiliser une visionneuse à 360° unidimensionnelle et de 16 à 24 prises de vue pour pouvoir utiliser une visionneuse à 360° bidimensionnelle. Les prises de vue doivent être réalisées à intervalles réguliers pour donner l’impression que l’objet est en rotation et retourné. Par exemple, si une visionneuse unidimensionnelle comprend 12 prises de vue, faites pivoter l’objet de 30 degrés (360/12) pour chaque prise de vue.
+Au minimum, vous avez besoin de 8 à 12 prises de vue d’un élément pour une visionneuse à 360° unidimensionnelle. Les prises de vue doivent être réalisées à intervalles réguliers pour donner l&#39;impression que l&#39;objet tourne et est retourné. Par exemple, si une visionneuse à une dimension inclut 12 prises de vue, faites pivoter l’élément de 30° (360/12) pour chaque prise de vue.
 
 Vous pouvez charger des images pour les visionneuses à 360° comme vous le [feriez pour n’importe quelle autre ressource dans AEM Assets](/help/assets/manage-digital-assets.md).
 
