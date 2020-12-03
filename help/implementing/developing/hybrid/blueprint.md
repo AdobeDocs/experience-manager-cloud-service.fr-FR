@@ -2,10 +2,10 @@
 title: Plan directeur d’applications sur une seule page (SPA)
 description: Ce document décrit le contrat général et indépendant du framework que tout framework de SPA devrait respecter afin de mettre en œuvre des composants de SPA modifiables dans AEM.
 translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+source-git-commit: d70f531087cccd45793f091b9fab7e8a25143c1e
 workflow-type: tm+mt
 source-wordcount: '2058'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -64,7 +64,7 @@ Le reste de ce document, supposé être indépendant du framework, décrit les e
 
 La structure de contenu de la page est stockée dans AEM. Le modèle de la page est utilisé pour mapper et instancier les composants de l’application sur une seule page (SPA). Les développeurs d’applications sur une seule page créent des composants SPA qu’ils mappent sur des composants AEM. Ils utilisent pour cela le type de ressource (ou le chemin d’accès au composant AEM) comme clé unique.
 
-Les composants de la SPA doivent être synchronisés avec le modèle de page et mis à jour avec toute modification apportée au contenu. Un modèle qui a recours à des composants dynamiques doit être utilisé pour instancier des composants à la volée, suivant la structure de modèle de page fournie.
+Les composants SPA doivent être synchronisés avec le modèle de page et être mis à jour en fonction des modifications apportées à son contenu. Un modèle qui a recours à des composants dynamiques doit être utilisé pour instancier des composants à la volée, suivant la structure de modèle de page fournie.
 
 ### Champs Meta   {#meta-fields}
 
@@ -174,6 +174,7 @@ Par exemple :
 >
 >* `"new section"` : indique que l’élément en cours est l’espace réservé du conteneur.
 >* `"aem-Grid-newComponent"` : normalise le composant pour la création de dispositions.
+
 >
 
 
