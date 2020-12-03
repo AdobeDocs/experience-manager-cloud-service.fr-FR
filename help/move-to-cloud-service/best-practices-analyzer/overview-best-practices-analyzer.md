@@ -2,15 +2,20 @@
 title: Présentation de l’analyseur des meilleures pratiques
 description: Présentation de l’analyseur des meilleures pratiques
 translation-type: tm+mt
-source-git-commit: 07180809ff8b4a42a07eb9c691ab7a99262742ec
+source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 35%
+source-wordcount: '351'
+ht-degree: 29%
 
 ---
 
 
 # Présentation {#overview-best-practices-analyzer}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_bpa_overview"
+>title="Présentation de l’analyseur des meilleures pratiques"
+>abstract="L’analyseur des meilleures pratiques fournit une évaluation de votre mise en oeuvre AEM actuelle en indiquant les domaines qui ne respectent pas les meilleures pratiques AEM. Il fournit également des orientations sur les prochaines étapes à suivre pour adopter AEM pratiques exemplaires. En outre, il permet d&#39;accélérer les processus d&#39;évaluation de la préparation au passage d&#39;un déploiement Adobe Experience Manager (AEM) existant à un déploiement AEM en tant que Cloud Service."
 
 L’analyseur des meilleures pratiques fournit une évaluation de votre mise en oeuvre AEM actuelle en indiquant les domaines qui ne respectent pas les meilleures pratiques AEM. Il fournit également des orientations sur les prochaines étapes à suivre pour adopter AEM pratiques exemplaires. En outre, il permet d&#39;accélérer les processus d&#39;évaluation de la préparation au passage d&#39;un déploiement Adobe Experience Manager (AEM) existant à un déploiement AEM en tant que Cloud Service.
 
