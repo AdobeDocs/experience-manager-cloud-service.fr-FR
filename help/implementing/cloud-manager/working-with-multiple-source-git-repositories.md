@@ -2,9 +2,9 @@
 title: Utilisation de plusieurs référentiels Git source
 description: Utilisation de plusieurs référentiels Git source - Cloud Services
 translation-type: tm+mt
-source-git-commit: 89429fcba3a1d4f5e5fe9c98ef235057b979ad60
+source-git-commit: e8cfe8eeec697fe74da02e178a89fc7a0e22d441
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Suivez les étapes ci-dessous pour ajouter une nouvelle (troisième) source ou r
 1. Ajoutez une référence au nouveau répertoire dans le répertoire Maven racine du référentiel Git de Cloud Manager.
 
 
-## Annexe A : Exemple d&#39;action GitHub {#sample-github-action}
+## Exemple d&#39;action GitHub {#sample-github-action}
 
 Il s’agit d’un exemple d’action GitHub déclenchée par une poussée vers la branche principale, puis dans un sous-répertoire du référentiel Git de Cloud Manager. Les actions GitHub doivent être dotées de deux secrets, `MAIN_USER` et `MAIN_PASSWORD`, pour pouvoir se connecter et transmettre au référentiel Git de Cloud Manager.
 
@@ -117,7 +117,7 @@ Comme indiqué ci-dessus, l&#39;utilisation d&#39;une action GitHub est très fl
 >[!NOTE]
 >Le script ci-dessus utilise `git add` pour mettre à jour le référentiel qui suppose que les suppressions sont incluses. Selon la configuration par défaut de Git, il doit être remplacé par `git add --all`.
 
-## Annexe B : Exemple de travail Jenkins {#sample-jenkins-job}
+## Exemple de travail Jenkins {#sample-jenkins-job}
 
 Il s’agit d’un exemple de script pouvant être utilisé dans une tâche Jenkins ou une tâche similaire. Il est déclenché par une modification dans un référentiel Git. La tâche Jenkins extrait l&#39;état le plus récent de ce projet ou branche, puis déclenche ce script.
 
