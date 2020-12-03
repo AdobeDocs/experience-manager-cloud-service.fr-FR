@@ -2,9 +2,9 @@
 title: Migration vers le Experience Manager en tant que Cloud Service
 description: Migration vers le Experience Manager en tant que Cloud Service
 translation-type: tm+mt
-source-git-commit: 3c1ff52d58f64d351507d20e4368a6aeb1bf6339
+source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
 workflow-type: tm+mt
-source-wordcount: '2070'
+source-wordcount: '2117'
 ht-degree: 12%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 12%
 # Migration vers Adobe Experience Manager en tant que Cloud Service {#Overview}
 
 >[!CONTEXTUALHELP]
->id="aemcloud_migration-overview"
+>id="aemcloud_migration_overview"
 >title="Migration vers AEM en tant que service cloud"
 >abstract="Présente l’approche échelonnée recommandée pour les clients de transition de divers déploiements de Experience Manager vers le Experience Manager en tant que Cloud Service et aide les clients existants à fournir des expériences connectées et continues"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en" text="Quoi de neuf et de différent ?"
@@ -101,6 +101,11 @@ Consultez les ressources d’auto-assistance sur la configuration et le déploie
 <br>
 
 ## Déplacement vers Adobe Experience Manager en tant que Cloud Service {#move-to-cloud}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_move_to_cloud"
+>title="Déplacement vers Adobe Experience Manager en tant que Cloud Service"
+>abstract="Cette pagination unique décrit l&#39;approche échelonnée recommandée pour les clients transitions, depuis divers déploiements de Experience Manager jusqu&#39;à Experience Manager en tant que Cloud Service, et aide les clients existants à fournir des expériences connectées et continues sur cette plateforme moderne et personnalisée pour la gestion de l&#39;expérience."
 
 **Experience Manager en tant que Cloud Service fournit une base technologique évolutive, sécurisée et agile pour les sites et ressources Experience Manager, ce qui permet aux spécialistes du marketing et de l’informatique de se concentrer sur la diffusion à grande échelle d’expériences performantes.**
 
