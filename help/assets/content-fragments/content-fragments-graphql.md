@@ -2,9 +2,9 @@
 title: Diffusion de contenu sans en-tête utilisant des fragments de contenu avec GraphQL
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) en tant que Cloud Service avec GraphQL pour la Diffusion de contenu sans en-tête.
 translation-type: tm+mt
-source-git-commit: ae918d074d4bacfc207d4dca2c67f41a3118aff4
+source-git-commit: 1e9596fb12a38f5c4c6e15d7c33af86e59e76083
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
@@ -129,3 +129,7 @@ Pour faciliter la conception et le développement de votre modèle de fragment d
 ## Apprendre à utiliser GraphQL avec AEM - Exemple de contenu et de Requêtes {#learn-graphql-with-aem-sample-content-queries}
 
 Voir [Apprendre à utiliser GraphQL avec AEM - Exemple de contenu et de Requêtes](/help/assets/content-fragments/content-fragments-graphql-samples.md) pour une présentation de l&#39;utilisation de l&#39;API AEM GraphQL.
+
+## Didacticiel - Prise en main de AEM sans en-tête et de GraphQL
+
+Vous recherchez un didacticiel pratique ? Consultez [Prise en main de AEM didacticiel sans en-tête et GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) de bout en bout illustrant comment créer et exposer du contenu à l’aide des API GraphQL d’AEM et consommé par une application externe, dans un scénario CMS sans en-tête.
