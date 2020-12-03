@@ -2,15 +2,21 @@
 title: Utilisation de l’analyseur des meilleures pratiques
 description: Utilisation de l’analyseur des meilleures pratiques
 translation-type: tm+mt
-source-git-commit: 07180809ff8b4a42a07eb9c691ab7a99262742ec
+source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
 workflow-type: tm+mt
-source-wordcount: '2207'
-ht-degree: 72%
+source-wordcount: '2362'
+ht-degree: 69%
 
 ---
 
 
 # Utilisation de l’analyseur des meilleures pratiques {#using-best-practices-analyzer}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_bpa_using"
+>title="Utilisation de l’analyseur des meilleures pratiques"
+>abstract="Consultez la documentation relative à l’utilisation de Best Practices Analyzer (anciennement Cloud Readiness Analyzer) et du rapport généré. Le rapport Best Practices Analyzer permet de mieux comprendre l’état de préparation à la mise à niveau générale."
+>additional-url=""
 
 ## Considérations importantes concernant l’utilisation de l’analyseur des meilleures pratiques {#imp-considerations}
 
@@ -23,12 +29,12 @@ Suivez la section ci-dessous pour comprendre les points importants à prendre en
 * Le BPA est pris en charge sur les instances AEM avec les versions 6.1 et ultérieures.
 
    >[!NOTE]
-   > Veuillez consulter [Installation sur AEM 6.1](#installing-on-aem61) pour connaître les conditions particulières d&#39;installation de BPA sur AEM 6.1.
+Veuillez consulter  [Installation sur AEM 6.1](#installing-on-aem61) pour connaître les conditions particulières d&#39;installation de BPA sur AEM 6.1.
 
 * BPA peut s’exécuter sur n’importe quel environnement, mais il est préférable de l’exécuter sur un environnement *Stage*.
 
    >[!NOTE]
-   >Afin d’éviter tout impact sur les instances critiques de l’entreprise, il est recommandé d’exécuter BPA sur un environnement *Auteur* aussi proche que possible de l’environnement *Production* dans les domaines des personnalisations, des configurations, du contenu et des applications utilisateur. Vous pouvez également l’exécuter sur un clone de l’environnement de *création* de production.
+Afin d’éviter tout impact sur les instances critiques de l’entreprise, il est recommandé d’exécuter BPA sur un environnement  ** Autorisation le plus proche possible de l’environnement  ** Productionenvironment dans les domaines des personnalisations, des configurations, du contenu et des applications utilisateur. Vous pouvez également l’exécuter sur un clone de l’environnement de *création* de production.
 
 * La génération du contenu du rapport BPA peut prendre un temps considérable, de plusieurs minutes à quelques heures. La durée nécessaire dépend largement de la taille et de la nature du contenu du référentiel AEM, de la version d’AEM et d’autres facteurs.
 
@@ -36,10 +42,15 @@ Suivez la section ci-dessous pour comprendre les points importants à prendre en
 
 ## Disponibilité {#availability}
 
+[!CONTEXTUALHELP]
+id="aemcloud_bpa_download"
+title="Téléchargement de l’analyseur des meilleures pratiques"
+abstract="L&#39;analyseur des meilleures pratiques peut être téléchargé sous la forme d&#39;un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le module par le biais du gestionnaire de modules sur votre instance source Adobe Experience Manager (AEM)."
+
 L&#39;analyseur des meilleures pratiques peut être téléchargé sous la forme d&#39;un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le module par le biais du gestionnaire de modules sur votre instance source Adobe Experience Manager (AEM).
 
 >[!NOTE]
->Téléchargez l&#39;analyseur des meilleures pratiques sur le portail [Distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/fr-FR/aemcloud.html).
+Téléchargez Best Practices Analyzer sur le  [portail ](https://experience.adobe.com/#/downloads/content/software-distribution/fr-FR/aemcloud.html) de distribution de logiciels.
 
 ## Affichage du rapport Analyseur des meilleures pratiques {#viewing-report}
 
@@ -73,12 +84,12 @@ Suivez cette section pour savoir comment vue du rapport Best Practices Analyzer 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
-   >Vous pouvez forcer l’analyse d’analyse d’ensemble à effacer son cache et à régénérer le rapport en cliquant sur **Actualiser le rapport**.
+Vous pouvez forcer l’application d’une seule page à effacer son cache et à régénérer le rapport en cliquant sur  **Actualiser le rapport**.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
 
    >[!NOTE]
-   >Pendant sa régénération, le rapport affiche la progression en termes de pourcentage achevé, comme le montre l’illustration ci-dessous.
+Pendant sa régénération, le rapport affiche la progression en termes de pourcentage achevé, comme le montre l’illustration ci-dessous.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
 
@@ -90,9 +101,15 @@ L’outil Best Practices Analyzer est limité dans Adobe Experience Manager 6.2 
 Pour Adobe Experience Manager 6.1, l’outil n’est pas fonctionnel et seule l’interface HTTP peut être utilisée.
 
 >[!NOTE]
->Dans toutes les versions, le détecteur de motifs inclus peut s’exécuter de manière indépendante.
+Dans toutes les versions, le détecteur de motifs inclus peut s’exécuter de manière indépendante.
 
 ## Interprétation du rapport Analyseur des meilleures pratiques {#cra-report}
+
+[!CONTEXTUALHELP]
+id="aemcloud_bpa_interpreting"
+title="Interprétation du rapport Analyseur des meilleures pratiques"
+abstract="Il existe deux options pour afficher les sorties de rapport BPA : IU et CSV. Lorsque l’outil Best Practices Analyzer est exécuté dans l’instance AEM, le rapport IU s’affiche sous forme de résultats dans la fenêtre d’outils. Le format CSV du rapport contient des informations générées à partir de la sortie du détecteur de motifs, triées et organisées par types de catégories, sous-types et niveaux d’importance."
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="Présentation des catégories de rapports de l’analyseur des meilleures pratiques"
 
 Lorsque l&#39;outil Best Practices Analyzer est exécuté dans l&#39;instance AEM, le rapport s&#39;affiche sous forme de résultats dans la fenêtre d&#39;outils.
 
@@ -109,7 +126,7 @@ Le format du rapport est le suivant :
 Un niveau d’importance est attribué à chaque résultat pour indiquer une priorité absolue concernant l’action.
 
 >[!NOTE]
->Pour en savoir plus sur chaque catégorie de résultat, consultez [Catégories du détecteur de motifs](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
+Pour en savoir plus sur chaque catégorie de résultat, consultez [Catégories du détecteur de motifs](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
 
 Consultez le tableau ci-dessous pour comprendre les niveaux d’importance :
 
