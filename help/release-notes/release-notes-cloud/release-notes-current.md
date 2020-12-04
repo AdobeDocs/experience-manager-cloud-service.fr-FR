@@ -2,10 +2,10 @@
 title: Notes de mise à jour actuelles de  [!DNL Adobe Experience Manager] en tant que Cloud Service.
 description: Notes de mise à jour actuelles de  [!DNL Adobe Experience Manager] en tant que Cloud Service.
 translation-type: tm+mt
-source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
+source-git-commit: f37bcfda2b4e4c036ce5c7ddd2dd1aa131f2a6a5
 workflow-type: tm+mt
-source-wordcount: '1234'
-ht-degree: 11%
+source-wordcount: '1269'
+ht-degree: 10%
 
 ---
 
@@ -25,9 +25,9 @@ La version suivante (2020.12.0) sera publiée le 17 décembre 2020.
 
 * **[Lance la gestion](/help/sites-cloud/authoring/launches/managing-pages.md)  hiérarchique et le  [futur calendrier](/help/sites-cloud/authoring/launches/preview.md)** : Nouvelle interface utilisateur permettant d’ajouter ou de supprimer des pages au cours d’un lancement, et le site de navigation avec Timewarp affiche l’état futur des lancements.
 
-* **Trier les pages Live Copy disponibles pour le déploiement** : Nouvelle option pour trier les pages Live Copy disponibles pour le déploiement à l’aide des propriétés de  [!UICONTROL données ]Nom [!UICONTROL , Date] de la  [!UICONTROL dernière modification et ] Dernière mise en service. La [!UICONTROL dernière date de déploiement] pour une page est une nouvelle propriété introduite.
+* **[Modèles et éditeur](/help/assets/content-fragments/content-fragments-models.md)** de fragments de contenu étendu : De nouvelles options pour la validation des entrées sur divers types de données, un type de données de Énumération amélioré avec de nouvelles visualisations de formulaire et le nom du modèle Fragment de contenu s’affichent et peuvent faire l’objet de recherches dans l’interface utilisateur Ressources.
 
-<!--- * **[Extended Content Fragment Models & Editor](/help/assets/content-fragments/content-fragments-models.md)**: New options for input validation on various data types, improved Enumeration data type with new form visualizations, and the Content Fragment model name is displayed and searchable in Assets UI. --->
+* **Trier les pages Live Copy disponibles pour le déploiement** : Nouvelle option pour trier les pages Live Copy disponibles pour le déploiement à l’aide des propriétés de  [!UICONTROL données ]Nom [!UICONTROL , Date] de la  [!UICONTROL dernière modification et ] Dernière mise en service. La [!UICONTROL dernière date de déploiement] pour une page est une nouvelle propriété introduite.
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service{#assets}
 
