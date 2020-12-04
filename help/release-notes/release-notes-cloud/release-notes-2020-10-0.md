@@ -2,13 +2,12 @@
 title: Notes de mise à jour de la version 2020.10.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service pour la version 2020.10.0.
 translation-type: tm+mt
-source-git-commit: 841069f35539a49c6ee67699bf3a476cf1c9da41
+source-git-commit: fd271f24e5f8ddbe440dccf5c51c91a46c70dead
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 22%
+source-wordcount: '1044'
+ht-degree: 21%
 
 ---
-
 
 
 # Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 {#release-notes}
@@ -32,8 +31,6 @@ La version suivante (2020.11.0) sera publiée le 1er décembre 2020.
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service{#assets}
 
-### Nouveautés d’[!DNL Assets] {#what-is-new-assets}
-
 * **[!DNL Adobe Sensei]balisage** intelligent vidéo optimisé : En exploitant les modèles AI pour analyser le contenu vidéo pour les balises d&#39;objet et d&#39;action, les utilisateurs DAM peuvent passer moins de temps à ajouter des balises et consacrer plus de temps à utiliser les informations riches exposées pour offrir une expérience adaptée aux clients. Voir [Fichiers vidéo de balises actives](/help/assets/smart-tags-video-assets.md).
 
 * **Améliorations** du portail de marque : Les nouvelles fonctionnalités suivantes, entre autres, sont disponibles dans  [!DNL Brand Portal]. Pour plus d’informations, voir [[!DNL Brand Portal] Notes de mise à jour](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html).
@@ -45,13 +42,7 @@ La version suivante (2020.11.0) sera publiée le 1er décembre 2020.
 
 * **[!DNL Adobe Asset Link]version 2.1** : Une nouvelle version de  [Adobe Asset ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) Linkextension pour  [!DNL Adobe Photoshop],  [!DNL Adobe Illustrator]et  [!DNL Adobe InDesign] est disponible. Il ajoute la compatibilité avec les dernières applications [!DNL Adobe Creative Cloud] de la version 2021, publiée en octobre 2020.
 
-* **[!DNL Assets]Prise en charge** des fichiers WebP :  [!DNL Assets] en tant que Cloud Service prend désormais en charge le format d’image WebP. WebP est un nouveau format d’image créé par Google. Les images au format WebP ne peuvent pas être visuellement distinguées des fichiers JPG ou PNG et les fichiers sont beaucoup plus petits. La taille de fichier réduite des ressources réduit les temps de chargement des pages et aide les créateurs de contenu à offrir une expérience Web plus rapide.
-
-<!--
-### Bugs Fixed {#bugs-fixed-assets}
-
-Content to come
--->
+* **[!DNL Assets]Prise en charge** des fichiers WebP :  [!DNL Assets] en tant que Cloud Service prend désormais en charge le format d’image WebP. WebP est un nouveau format d’image créé par Google. Les images au format WebP ne peuvent pas être visuellement distinguées des fichiers JPG ou PNG et les fichiers sont beaucoup plus petits. La taille de fichier réduite des ressources réduit les temps de chargement des pages et aide les créateurs de contenu à offrir une expérience Web plus rapide. Découvrez comment utiliser WebP dans [créer un profil de traitement](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -80,7 +71,6 @@ La date de publication de Cloud Manager en tant que Cloud Service 2020.10.0 en A
 * Les environnements en veille affichent désormais un état discret dans Cloud Manager.
 
 * Le conteneur de création de Cloud Manager prend désormais en charge la compilation de projets à l’aide de Java 8 ou Java 11. La prise en charge de Java 11 est assurée par le système de chaînes d’outils Maven.
-
 
 * Le nombre de variables d’environnement par environnement a été porté à 200.
 
@@ -122,4 +112,3 @@ Suivez cette section pour en savoir plus sur les nouveautés et les mises à jou
 ### Correctifs {#ctt-bug-fixes}
 
 * L’outil de transfert de contenu ignorait les fichiers de contenu si le jeu de migration contenait des chemins dont les noms de fichier étaient partiellement similaires. Ce problème a été résolu.
-
