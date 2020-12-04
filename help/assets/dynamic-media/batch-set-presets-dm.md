@@ -3,7 +3,7 @@ title: Paramètres prédéfinis d’ensemble par lot
 description: Découvrez comment automatiser la création de visionneuse d’images et de visionneuses à 360° à l’aide des paramètres prédéfinis d’ensemble par lot dans Contenu multimédia dynamique.
 contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
+source-git-commit: c7a2fbb4fa6e81caabab829b876741ecf393a2c3
 workflow-type: tm+mt
 source-wordcount: '3521'
 ht-degree: 3%
@@ -24,7 +24,7 @@ Utilisez **[!UICONTROL Paramètres prédéfinis d’ensemble par lot]** pour fac
 1. Créez un paramètre prédéfini d’ensemble par lot. Voir [Création d’un paramètre prédéfini d’ensemble par lot pour une visionneuse d’images ou une visionneuse à 360°](#creating-bsp).
 1. Créez un dossier de ressources ou utilisez un dossier de ressources existant et assurez-vous qu’il est synchronisé avec [!DNL Dynamic Media]. Voir [Création de dossiers](/help/assets/manage-digital-assets.md#creating-folders).
 1. Appliquez le paramètre prédéfini d’ensemble par lot au dossier Fichiers. Voir [A propos de l’application des paramètres prédéfinis d’ensemble par lot aux dossiers](#apply-bsp).
-1. Téléchargez des images vers le dossier de fichiers. Voir [Téléchargement de fichiers pour les visionneuses d’images](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [Téléchargement de fichiers pour les visionneuses à 360°](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets) ou [Ajouter des ressources numériques à Adobe Experience Manager](#add-assets-to-experience-manager).
+1. Téléchargez des images vers le dossier de fichiers. Voir [Téléchargement de fichiers pour les visionneuses d’images](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [Téléchargement de fichiers pour les visionneuses à 360°](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets) ou [Ajouter des ressources numériques à Adobe Experience Manager](/help/assets/add-assets.md#add-assets-to-experience-manager).
 1. Créez votre visionneuse d’images ou votre visionneuse à 360°. Voir [Visionneuses d’images](/help/assets/dynamic-media/image-sets.md) ou [Visionneuses à 360°](/help/assets/dynamic-media/spin-sets.md).
 1. Publiez votre visionneuse d’images ou votre visionneuse à 360°. Voir [Publication de ressources Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
