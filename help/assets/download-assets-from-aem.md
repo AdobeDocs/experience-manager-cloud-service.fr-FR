@@ -3,9 +3,9 @@ title: Téléchargement de ressources
 description: Téléchargez des ressources depuis  [!DNL Adobe Experience Manager Assets]  et activez ou désactivez la fonctionnalité de téléchargement.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '884'
 ht-degree: 96%
 
 ---
@@ -29,7 +29,7 @@ Vous pouvez télécharger des ressources Experience Manager à l’aide des mét
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [Appli de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
-## Téléchargement de ressources à l’aide de l’interface AEM {#download-in-aem}
+## Télécharger des ressources à l&#39;aide de l&#39;interface [!DNL Experience Manager] {#download-in-aem}
 
 Le service de téléchargement asynchrone fournit un framework permettant le téléchargement transparent de ressources de grande taille. Les fichiers plus petits sont téléchargés en temps réel depuis l’interface utilisateur. Les fichiers volumineux sont téléchargés de manière asynchrone et les utilisateurs sont informés de l’achèvement de l’opération par le biais de notifications Experience Manager dans la boîte de réception. Voir [Présentation de la boîte de réception d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html).
 
