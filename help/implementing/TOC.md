@@ -4,10 +4,10 @@ user-guide-title: Implémentation pour AEM as a Cloud Service
 breadcrumb-title: Guide d’implémentation
 user-guide-description: Découvrez comment personnaliser votre déploiement d’Experience Manager as a Cloud Service, y compris des rubriques sur le déploiement et le développement.
 translation-type: tm+mt
-source-git-commit: 737c7473e97279a524cbb5809634c2c2dcfc8826
+source-git-commit: fd3ab969d9fb433ca2db68a5919fd0a0e9181e14
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 83%
+source-wordcount: '567'
+ht-degree: 82%
 
 ---
 
@@ -65,6 +65,10 @@ ht-degree: 83%
          + [Utilisation de conditions de masquage](developing/components/hide-conditions.md)
       + [Infrastructure de balisage AEM](/help/implementing/developing/introduction/tagging-framework.md)
       + [Création de balises dans des applications AEM](/help/implementing/developing/introduction/tagging-applications.md)
+      + Recherche {#search}
+         + [API Query Builder](/help/implementing/developing/introduction/query-builder-api.md)
+         + [Référence des prédicats de Query Builder](/help/implementing/developing/introduction/query-builder-predicates.md)
+         + [Implémentation d’un évaluateur d’attributs personnalisé](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
    + Développement des AEM hybrides {#hybrid}
       + [Hybride et SPA avec AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
       + [Activation de l’exportateur JSON pour un composant](developing/components/enabling-json-exporter.md) 
