@@ -3,10 +3,10 @@ title: Métadonnées en cascade
 description: Cet article décrit comment définir des métadonnées en cascade pour des ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 100%
+source-wordcount: '957'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ Voici quelques cas d’utilisation pour lesquels vous pouvez définir des métad
 * Modifier les options affichées pour un champ particulier en fonction de la valeur spécifiée dans un autre champ.
 * Définir la valeur de métadonnées par défaut dans un domaine spécifique en fonction de la valeur spécifiée dans un autre champ.
 
-## Configuration des métadonnées en cascade dans AEM    {#configure-cascading-metadata-in-aem}
+## Configurer des métadonnées en cascade dans [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
 
 Supposons que vous souhaitiez afficher les métadonnées en cascade en fonction du type de ressource sélectionné. Quelques exemples
 
@@ -35,7 +35,7 @@ Supposons que vous souhaitiez afficher les métadonnées en cascade en fonction 
 
 Sans tenir compte du type de ressource choisi, affichez les informations de copyright comme étant un champ requis.
 
-1. Appuyez/cliquez sur le logo AEM, puis sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées]**.
+1. Appuyez/cliquez sur le logo [!DNL Experience Manager] et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées]**.
 1. Dans la page **[!UICONTROL Formulaires de schéma]**, sélectionnez un formulaire de schéma, puis appuyez/cliquez sur **[!UICONTROL Modifier]** dans la barre d’outils pour modifier le schéma.
 
    ![select_form](assets/select_form.png)
@@ -54,7 +54,7 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
    * Pour spécifier les valeurs manuellement, sélectionnez **[!UICONTROL Ajouter manuellement]**, appuyez/cliquez sur **[!UICONTROL Ajouter un choix]**, puis spécifiez le texte et la valeur de l’option. Par exemple, spécifiez les types de ressources vidéo, PDF, Word et image.
 
-   * Pour récupérer les valeurs d’un fichier JSON de façon dynamique, sélectionnez **[!UICONTROL Ajouter par chemin JSON]** et indiquez le chemin d’accès au fichier JSON. AEM récupère les paires clé/valeur en temps réel lorsque le formulaire est présenté à l’utilisateur.
+   * Pour récupérer les valeurs d’un fichier JSON de façon dynamique, sélectionnez **[!UICONTROL Ajouter par chemin JSON]** et indiquez le chemin d’accès au fichier JSON. [!DNL Experience Manager] récupère les paires clé/valeur en temps réel lorsque le formulaire est présenté à l’utilisateur.
 
    Les deux options s’excluent mutuellement. Vous ne pouvez pas importer les options d’un fichier JSON et les modifier manuellement.
 
