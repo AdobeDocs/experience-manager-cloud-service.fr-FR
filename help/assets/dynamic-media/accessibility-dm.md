@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 40d84fc902f872eae276272b6a975c108b655943
+source-git-commit: d87710badeeb0518a2e51b8abc3974fa77914515
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '622'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Contenu multimédia dynamique prend en charge les technologies d’assistance et
 
 ## Prise en charge de l’accessibilité du clavier dans Contenu multimédia dynamique
 
-Dans la mesure où Contenu multimédia dynamique est un module externe d’AEM Assets, la plupart des commandes de clavier se comportent exactement de la même manière qu’en AEM Assets. Par exemple, le bouton `Cancel` dans Contenu multimédia dynamique a la même mise en surbrillance que dans AEM Assets et réagit à la clé `Spacebar` que dans AEM Assets. Voir [Raccourcis clavier dans Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Dans la mesure où Contenu multimédia dynamique est un module externe des ressources du Experience Manager, la plupart des commandes de clavier sont identiques à celles des ressources du Experience Manager. Par exemple, le bouton `Cancel` dans Contenu multimédia dynamique a la même mise en surbrillance que dans les Ressources du Experience Manager et réagit à la clé `Spacebar` comme dans les Ressources du Experience Manager. Voir [Raccourcis clavier dans Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
 Les touches prises en charge par les éléments d’interface utilisateur individuels dans Contenu multimédia dynamique sont, dans la plupart des cas, évidentes et faciles à découvrir. Le contrôle du clavier dans Contenu multimédia dynamique porte sur les éléments suivants :
 
