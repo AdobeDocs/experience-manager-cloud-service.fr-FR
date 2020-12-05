@@ -1,25 +1,25 @@
 ---
 title: Schéma de métadonnées de dossier
-description: Découvrez comment créer des schémas de métadonnées pour des dossiers de ressources dans AEM Assets
+description: Découvrez comment créer des schémas de métadonnées pour des dossiers de ressources dans [!DNL Experience Manager Assets]
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: dc5cec192a70413e0ebcc27eb5e58577079ae93b
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 100%
+source-wordcount: '1029'
+ht-degree: 96%
 
 ---
 
 
 # Schéma de métadonnées de dossier {#folder-metadata-schema}
 
-Adobe Experience Manager (AEM) Assets vous permet de créer des schémas de métadonnées pour des dossiers de ressources. Ces schémas définissent la disposition et les métadonnées affichées dans les pages de propriétés des dossiers.
+[!DNL Adobe Experience Manager Assets] vous permet de créer des schémas de métadonnées pour des dossiers de ressources. Ces schémas définissent la disposition et les métadonnées affichées dans les pages de propriétés des dossiers.
 
 ## Ajout d’un formulaire de schéma de métadonnées de dossier   {#add-a-folder-metadata-schema-form}
 
 Utilisez l’éditeur Formulaires de schéma de métadonnées de dossier pour créer et modifier des schémas de métadonnées pour les dossiers.
 
-1. Appuyez/cliquez sur le logo AEM, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées de dossier]**.
+1. Appuyez/cliquez sur le logo [!DNL Experience Manager] et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées de dossier]**.
 1. Sur la page Formulaires de schéma de métadonnées de dossier, appuyez/cliquez sur **[!UICONTROL Créer]**.
 1. Indiquez un nom pour le formulaire, puis appuyez/cliquez sur **[!UICONTROL Créer]**. Le nouveau formulaire de schéma est répertorié dans la page Formulaires de schéma.
 
@@ -138,7 +138,7 @@ Si vous configurez un schéma de métadonnées pour un dossier, le chemin d’ac
 
 ### Affectation d’un schéma à partir de la page Schéma de métadonnées de dossier   {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Appuyez/cliquez sur le logo AEM, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées de dossier]**.
+1. Appuyez/cliquez sur le logo [!DNL Experience Manager] et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** **[!UICONTROL Schémas de métadonnées de dossier]**.
 1. Sur la page Formulaires de schéma de métadonnées de dossier, sélectionnez le formulaire à appliquer à un dossier.
 1. Dans la barre d’outils, appuyez/cliquez sur **[!UICONTROL Appliquer au(x) dossier(s)]**.
 
@@ -155,7 +155,7 @@ Si vous configurez un schéma de métadonnées pour un dossier, le chemin d’ac
 
 Vous pouvez affecter un schéma de métadonnées de dossier lors de la création d’un dossier. S’il existe au moins un schéma de métadonnées de dossier dans le système, une liste supplémentaire s’affiche dans la boîte de dialogue **[!UICONTROL Créer un dossier]**. Vous pouvez sélectionner le schéma de votre choix. Par défaut, aucun schéma n’est sélectionné.
 
-1. Dans l’interface utilisateur d’AEM Assets, appuyez/cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
+1. Dans l&#39;interface utilisateur [!DNL Experience Manager Assets], appuyez/cliquez sur **[!UICONTROL Créer]** dans la barre d&#39;outils.
 1. Attribuez un titre et un nom au dossier.
 1. Dans la liste Schéma de métadonnées de dossier, sélectionnez le schéma de votre choix. Ensuite, appuyez/cliquez sur **[!UICONTROL Créer]**.
 
