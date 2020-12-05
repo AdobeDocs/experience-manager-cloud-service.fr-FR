@@ -2,10 +2,10 @@
 title: Configuration de Dynamic Media
 description: Pour configurer Dynamic Media, vous devez configurer un média dynamique et gérer les paramètres prédéfinis d’image et de visionneuse.
 translation-type: tm+mt
-source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
+source-git-commit: 79d4e51db99e2c1f8b18edd7249a26f4be7169e1
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 100%
+source-wordcount: '175'
+ht-degree: 69%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->This documentation describes Dynamic Media capabilites, which are integrated directly into AEM. If you are using Dynamic Media Classic (previously called Scene7) integrated into AEM, see [Dynamic Media Classic integration documentation](/help/sites-cloud/administering/integrating-scene7.md).
+>This documentation describes Dynamic Media capabilites, which are integrated directly into Experience Manager. If you are using Dynamic Media Classic (previously called Scene7) integrated into Experience Manager, see [Dynamic Media Classic integration documentation](/help/sites-cloud/administering/integrating-scene7.md).
 >
->See [Dual Use Scenario](/help/sites-cloud/administering/integrating-scene7.md#dual-use-scenario) for times when you may want to use AEM integrated with Dynamic Media Classic along with Dynamic Media.
+>See [Dual Use Scenario](/help/sites-cloud/administering/integrating-scene7.md#dual-use-scenario) for times when you may want to use Experience Manager integrated with Dynamic Media Classic along with Dynamic Media.
 
 -->
 
@@ -40,4 +40,4 @@ Voir aussi les rubriques suivantes :
 >
 >**Si vous effectuez une mise à niveau :**
 >
->* Après la mise en service d’AEM, toutes les ressources que vous chargez sont automatiquement activées pour Dynamic Media (à moins que cela n’ait été explicitement désactivé par votre administrateur système). Si vous utilisez une instance mise à niveau d’AEM et que Dynamic Media est nouveau pour vous, vous devrez peut-être retraiter vos ressources pour les rendre compatibles avec Dynamic Media.
+>* Une fois le Experience Manager en cours d’exécution, les fichiers que vous téléchargez sont automatiquement activés dans Contenu multimédia dynamique (sauf s’ils ont été explicitement désactivés par votre administrateur système). Si vous utilisez une instance mise à niveau de Experience Manager et que vous découvrez Contenu multimédia dynamique, vous devrez peut-être retraiter vos fichiers pour les rendre compatibles avec Contenu multimédia dynamique.
