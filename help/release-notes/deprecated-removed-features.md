@@ -2,10 +2,10 @@
 title: Fonctionnalités obsolètes et supprimées
 description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et supprimées dans Adobe Experience Manager as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 0a9a462f1b92a0dcb712163574bbf57582f8145c
+source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 100%
+source-wordcount: '506'
+ht-degree: 92%
 
 ---
 
@@ -41,7 +41,7 @@ Cette section répertorie les capacités et fonctionnalités qui ont été suppr
 | Zone | Fonctionnalité | Remplacement |
 | ------------ | ------------------ | ----------- |
 | Interface utilisateur | Bien que certaines boîtes de dialogue de l’interface utilisateur classique restent pour l’instant réservées à quelques fonctionnalités sélectionnées, telles que le vérificateur de liens, la purge de version et certaines configurations du Cloud Service, l’accès à l’interface utilisateur classique en général a été supprimé dans l’interface utilisateur du produit AEM. | Interface utilisateur standard |
-| Dynamic Media | Les intégrations précédentes avec [Dynamic Media Classic (Scene7)](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/scene7.html) et le mode [hybride de médias](https://helpx.adobe.com/fr/experience-manager/6-5/assets/using/config-dynamic.html) dynamiques ne sont pas disponibles dans AEM as a Cloud Service. | Utilisez [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) fourni avec Experience Manager as a Cloud Service. |
+| Dynamic Media | Les intégrations précédentes avec [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html#integration) et [le mode hybride Contenu multimédia dynamique](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html#dynamic) ne sont pas disponibles en AEM en tant que Cloud Service. | Utilisez [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) fourni avec Experience Manager as a Cloud Service. |
 | Sites | Composant Portal Director et Portlet | Ces fonctionnalités ont été abandonnées dans AEM 6.4 et ont été supprimées d’AEM. |
 | Sites | Importateur de conception | Cette fonctionnalité a été supprimée, car les sections non modifiables du référentiel AEM ne sont pas accessibles au moment de l’exécution. |
 | Ressources | [Le partage d’AEM Assets avec le service principal Experience Cloud Assets et les services Creative Cloud](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/integration/configure-assets-cc-integration.html) n’est pas disponible. | Pour l’intégration à Creative Cloud, utilisez [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html). |
