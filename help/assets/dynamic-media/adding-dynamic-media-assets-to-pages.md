@@ -1,11 +1,11 @@
 ---
 title: Ajout de ressources Dynamic Media aux pages
-description: Comment ajouter des composants Dynamic Media à une page dans AEM
+description: Comment ajouter des composants Contenu multimédia dynamique à une page dans le Experience Manager
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 79d4e51db99e2c1f8b18edd7249a26f4be7169e1
 workflow-type: tm+mt
-source-wordcount: '3121'
-ht-degree: 100%
+source-wordcount: '3134'
+ht-degree: 94%
 
 ---
 
@@ -14,11 +14,11 @@ ht-degree: 100%
 
 Pour ajouter la fonction Dynamic Media aux ressources que vous utilisez sur des sites web, vous pouvez ajouter le composant **Dynamic Media**, **Média interactif**, **Média panoramique** ou **Média vidéo 360** directement à la page. Pour ce faire, vous devez activer le mode Mise en page et activer les composants Dynamic Media. Vous pouvez ensuite ajouter ces composants à la page et ajouter des ressources au composant. Les composants Dynamic Media sont intelligents : ils savent si vous ajoutez une image ou une vidéo, et les options de configuration disponibles changent en conséquence.
 
-Si vous utilisez AEM comme système de gestion de contenu web, vous pouvez ajouter les ressources Dynamic Media directement aux pages. Si vous faites appel à un tiers pour votre gestion de contenu web, [liez](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ou [incorporez](/help/assets/dynamic-media/embed-code.md) vos ressources. Pour un site web tiers réactif, reportez-vous à la section [Diffusion d’images optimisées sur un site réactif](/help/assets/dynamic-media/responsive-site.md).
+Vous ajoutez directement des fichiers Contenu multimédia dynamique à la page si vous utilisez Experience Manager comme WCM. Si vous faites appel à un tiers pour votre gestion de contenu web, [liez](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ou [incorporez](/help/assets/dynamic-media/embed-code.md) vos ressources. Pour un site web tiers réactif, reportez-vous à la section [Diffusion d’images optimisées sur un site réactif](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
->Vous devez publier les ressources avant de les ajouter aux pages d’AEM. Voir [Publication de ressources Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+>Vous devez publier des fichiers avant de les ajouter aux pages dans le Experience Manager. Voir [Publication de ressources Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Ajout d’un composant Dynamic Media à une page   {#adding-a-dynamic-media-component-to-a-page}
 
@@ -26,7 +26,7 @@ L’ajout d’un composant Média 3D, Dynamic Media, Média interactif, Média p
 
 **Ajout d’un composant Dynamic Media à une page**
 
-1. Dans AEM, ouvrez la page où vous souhaitez ajouter le composant Dynamic Media.
+1. Dans le Experience Manager, ouvrez la page dans laquelle vous souhaitez ajouter le composant Contenu multimédia dynamique.
 1. Dans le volet de gauche, appuyez sur l’icône **[!UICONTROL Composants]** puis définissez un filtre Dynamic Media.
 
    Si aucune liste de composants Dynamic Media n’est disponible, vous devrez probablement activer ceux que vous souhaitez utiliser. Voir [Activation des composants Dynamic Media](#enabling-dynamic-media-components).
@@ -53,7 +53,7 @@ L’ajout d’un composant Média 3D, Dynamic Media, Média interactif, Média p
 
 Si aucun composant Dynamic Media n’est disponible pour ajouter une page, cela signifie probablement que vous devez d’abord activer les composants que vous souhaitez utiliser.
 
-1. Dans AEM, ouvrez la page où vous souhaitez ajouter le composant Dynamic Media.
+1. Dans le Experience Manager, ouvrez la page dans laquelle vous souhaitez ajouter le composant Contenu multimédia dynamique.
 1. Dans la partie gauche de la barre d’outils située en haut de la page, appuyez sur l’icône Informations de la page, puis sur **[!UICONTROL Modifier le modèle]** dans la liste déroulante.
 
    ![edit-template](/help/assets/assets-dm/edit-template.png)
@@ -103,7 +103,7 @@ Les composants Dynamic Media disponibles comprennent les suivants :
 
 >[!NOTE]
 >
->Ces composants ne sont pas disponibles par défaut et doivent être rendus disponibles via l’éditeur de modèles avant utilisation. Une fois les composants disponibles dans l’éditeur de modèles, vous pouvez les ajouter à votre page comme vous le feriez avec tout autre composant AEM.
+>Ces composants ne sont pas disponibles par défaut et doivent être rendus disponibles via l’éditeur de modèles avant utilisation. Une fois qu’ils sont disponibles dans l’éditeur de modèles, vous pouvez ajouter les composants à votre page comme vous le feriez pour tout autre composant Experience Manager.
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
@@ -117,8 +117,10 @@ Le composant Dynamic Media est dynamique ; il propose des options différentes
 >
 >* Plusieurs instances du composant Dynamic Media utilisé sur la même page.
 >* Chaque instance utilise le même type de ressource.
+
 >
->Prenez en compte le fait que l’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant Dynamic Media de cette page n’est pas prise en charge.
+>
+Prenez en compte le fait que l’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant Dynamic Media de cette page n’est pas prise en charge.
 >
 >Vous pouvez toutefois utiliser le même paramètre prédéfini de visionneuse pour tous les composants Dynamic Media qui utilisent des éléments du même type, dans la page.
 
@@ -208,7 +210,7 @@ Vous pouvez modifier les paramètres Dynamic Media ci-après en cliquant sur **
 
 Utilisez le composant Dynamic Media pour ajouter des ressources d’images avec recadrage intelligent à vos pages web. Lorsque vous modifiez le composant, vous pouvez choisir d’utiliser un paramètre prédéfini de la visionneuse de vidéos pour lire la vidéo sur la page.
 
-Voir [Utilisation du recadrage dynamique avec AEM Assets Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
+Voir [Utilisation de la recadrage dynamique avec des ressources Experience Manager Contenu multimédia dynamique](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
 
 Voir aussi [Profils d’image](/help/assets/dynamic-media/image-profiles.md).
 
@@ -254,8 +256,10 @@ Le composant Média interactif est dynamique : il propose des options différen
 >
 >* Plusieurs instances du composant Interactive Media utilisé sur la même page.
 >* Chaque instance utilise le même type de ressource.
+
 >
->Prenez en compte le fait que l’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant Interactive Media de cette page n’est pas prise en charge.
+>
+Prenez en compte le fait que l’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant Interactive Media de cette page n’est pas prise en charge.
 >
 >Vous pouvez toutefois utiliser le même paramètre prédéfini de visionneuse pour tous les composants Interactive Media qui utilisent des éléments du même type, dans la page.
 
@@ -294,8 +298,10 @@ Les critères de rapport d’aspect et de mots-clés s’appliquent tous deux au
 >
 >* Plusieurs instances du composant **[!UICONTROL Média panoramique]** utilisées sur la même page.
 >* Chaque instance utilise le même type de ressource.
+
 >
->N’oubliez pas que l’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant **[!UICONTROL Média panoramique]** sur cette page n’est pas prise en charge.
+>
+N’oubliez pas que l’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant **[!UICONTROL Média panoramique]** sur cette page n’est pas prise en charge.
 >
 >Vous pouvez toutefois utiliser le même paramètre prédéfini de visionneuse pour tous les composants de média panoramique qui utilisent des éléments du même type, dans la page.
 
@@ -331,10 +337,10 @@ Voir [Diffusion du contenu sur HTTP2](/help/assets/dynamic-media/http2faq.md) po
 
 >[!MORELIKETHIS]
 >
->* [Utilisation du lecteur vidéo dans AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
->* [Utilisation de la vidéo interactive avec AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
->* [Présentation de la visionneuse d’éléments avec AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
->* [Utilisation de miniatures vidéo personnalisées avec AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
->* [Explication de la gestion des couleurs avec AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
->* [Utilisation de l’accentuation d’image avec AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
+>* [Utilisation du lecteur vidéo dans le média dynamique Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
+>* [Utilisation de la vidéo interactive avec le média dynamique Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
+>* [Présentation de Asset Viewer avec le média dynamique Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
+>* [Utilisation d’une miniature vidéo personnalisée avec un média dynamique Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [Présentation de la gestion des couleurs avec le média dynamique Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
+>* [Utilisation de l’accentuation des images avec le média dynamique Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
 
