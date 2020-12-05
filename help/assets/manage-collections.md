@@ -4,10 +4,10 @@ description: Découvrez le concept de collection dans Adobe Experience Manager A
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 85f949e405ee3e7527f49d61c368b79ee2d0743b
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '2401'
-ht-degree: 100%
+source-wordcount: '2396'
+ht-degree: 97%
 
 ---
 
@@ -140,7 +140,7 @@ La fonctionnalité Recherche des collections prend en charge à la fois la [rech
 
 ### Recherche de collections {#search-collections}
 
-Vous pouvez effectuer des recherches dans des collections à partir de la console Collections. Lorsque vous effectuez des recherches avec des mots-clés dans la zone Omnisearch, AEM Assets recherche les noms des collections, les métadonnées et les balises ajoutées aux collections.
+Vous pouvez effectuer des recherches dans des collections à partir de la console Collections. Lorsque vous effectuez une recherche avec des mots-clés dans la zone Omnisearch, [!DNL Experience Manager Assets] recherche les noms de collection, les métadonnées et les balises ajoutées aux collections.
 
 Si vous recherchez des collections à partir du niveau supérieur, seules les collections individuelles sont renvoyées dans les résultats de recherche. Les ressources ou dossiers à l’intérieur des collections sont exclus. Dans tous les autres cas (par exemple, dans une collection individuelle ou dans une hiérarchie de dossiers), tous les fichiers, dossiers et collections appropriés sont renvoyés.
 
@@ -148,7 +148,7 @@ Si vous recherchez des collections à partir du niveau supérieur, seules les co
 
 Dans la console Collections, appuyez/cliquez sur une collection pour l’ouvrir.
 
-Dans une collection, la recherche AEM Assets se limite aux ressources (ainsi qu’aux balises et métadonnées) de la collection en cours d’affichage. Lorsque vous effectuez une recherche dans un dossier, toutes les ressources correspondantes et les dossiers enfants du dossier actif sont renvoyés. Lorsque vous effectuez une recherche dans une collection, seuls les ressources, dossiers et autres collections correspondant aux membres directs de la collection sont renvoyés.
+Dans une collection, [!DNL Experience Manager] la recherche est limitée aux ressources (ainsi qu’à leurs balises et métadonnées) de la collection que vous visualisez. Lorsque vous effectuez une recherche dans un dossier, toutes les ressources correspondantes et les dossiers enfants du dossier actif sont renvoyés. Lorsque vous effectuez une recherche dans une collection, seuls les ressources, dossiers et autres collections correspondant aux membres directs de la collection sont renvoyés.
 
 ## Modification des paramètres d’une collection {#edit-collection-settings}
 
@@ -179,7 +179,7 @@ Lorsque vous téléchargez une collection, la hiérarchie complète des ressourc
 
 ## Modification des propriétés de métadonnées de plusieurs collections {#editing-metadata-properties-of-multiple-collections}
 
-Adobe Enterprise Manager (AEM) Assets vous permet de modifier en masse les métadonnées de nombreuses collections. Utilisez la page [!UICONTROL Propriétés] pour effectuer des modifications sur les métadonnées sur plusieurs collections, par exemple pour modifier les propriétés des métadonnées en une valeur commune, ainsi que pour ajouter ou modifier des balises.
+Adobe Enterprise Manager Assets vous permet de modifier en bloc les métadonnées de nombreuses collections. Utilisez la page [!UICONTROL Propriétés] pour effectuer des modifications sur les métadonnées sur plusieurs collections, par exemple pour modifier les propriétés des métadonnées en une valeur commune, ainsi que pour ajouter ou modifier des balises.
 
 Pour personnaliser la page [!UICONTROL Propriétés] de métadonnées, notamment ajouter, modifier et supprimer des propriétés de métadonnées, utilisez l’éditeur de schéma.
 
