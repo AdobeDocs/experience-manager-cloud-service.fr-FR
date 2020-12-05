@@ -2,10 +2,10 @@
 title: Gestion des paramètres d’image prédéfinis
 description: Découvrez les paramètres d’image prédéfinis, et comment les créer, les modifier et les gérer.
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
 workflow-type: tm+mt
-source-wordcount: '3648'
-ht-degree: 100%
+source-wordcount: '3608'
+ht-degree: 97%
 
 ---
 
@@ -182,8 +182,10 @@ Le dimensionnement des miniatures est défini au format suivant : **[!UICONTROL
 >[!NOTE]
 >
 >* La taille des miniatures pour les fichiers EPS est configurée à l’étape **[!UICONTROL Miniatures EPS]**, dans l’onglet **[!UICONTROL Arguments]** sous Miniatures.
->
->* La taille des miniatures pour les vidéos est configurée à l’étape **[!UICONTROL Miniatures FFmpeg]**, dans l’onglet **[!UICONTROL Processus]** sous **[!UICONTROL Arguments]**.
+   >
+   >
+* La taille des miniatures pour les vidéos est configurée à l’étape **[!UICONTROL Miniatures FFmpeg]**, dans l’onglet **[!UICONTROL Processus]** sous **[!UICONTROL Arguments]**.
+
 >
 
 
@@ -392,7 +394,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
   </tr>
   <tr>
    <td><strong>Modificateur d’image</strong></td>
-   <td><p>Au-delà des paramètres d’image courants disponibles dans l’IU, Dynamic Media prend en charge de nombreuses modifications d’image avancées que vous pouvez spécifier dans le champ <strong>Modificateurs d’images</strong>. Ces paramètres sont définis dans la <a href="https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">référence des commandes du protocole de serveur d’images</a>.</p> <p>Important : La fonctionnalité suivante répertoriée dans l’API n’est pas prise en charge :</p>
+   <td><p>Au-delà des paramètres d’image courants disponibles dans l’IU, Dynamic Media prend en charge de nombreuses modifications d’image avancées que vous pouvez spécifier dans le champ <strong>Modificateurs d’images</strong>. Ces paramètres sont définis dans la <a href="https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview.html">référence des commandes du protocole de serveur d’images</a>.</p> <p>Important : La fonctionnalité suivante répertoriée dans l’API n’est pas prise en charge :</p>
     <ul>
      <li>Commandes de base de création de modèles et de rendu de texte : <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> et <code>textPs=</code></li>
      <li>Commandes de localisation : <code>locale=</code> et <code>req=xlate</code></li>
@@ -409,7 +411,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
 
 ### Définition des options de paramètre d’image prédéfini à l’aide des modificateurs d’image {#defining-image-preset-options-with-image-modifiers}
 
-Outre les options disponibles dans les onglets De base et Avancé, vous pouvez définir des modificateurs d’image afin de disposer de davantage d’options lors de la définition de paramètres d’image prédéfinis. Le rendu d’images dépend de l’API Image Rendering de Scene7. Vous en trouverez une description détaillée à la page [Référence du protocole HTTP](https://microsite.omniture.com/t2/help/fr_FR/s7/is_ir_api/is_api/http_ref/c_http_protocol_reference.html).
+Outre les options disponibles dans les onglets Simple et Avancé, vous pouvez définir des modificateurs d’image afin de vous donner plus d’options lors de la définition de paramètres d’image prédéfinis. Le rendu d’image repose sur l’API de rendu d’image de média dynamique et est défini en détail dans la section [Référence du protocole HTTP](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api).
 
 Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l’aide des modificateurs d’image.
 
@@ -417,7 +419,7 @@ Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l
 >
 >Certains modificateurs d’image [ne peuvent pas être utilisés dans AEM](#advanced-tab-options).
 
-* [op_invert](https://microsite.omniture.com/t2/help/fr_FR/s7/is_ir_api/is_api/http_ref/r_op_invert.html) : inverse chaque composant de couleur pour générer un effet d’image négative.
+* [op_invert](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html) : inverse chaque composant de couleur pour générer un effet d’image négative.
 
    ```xml
    &op_invert=1
@@ -425,7 +427,7 @@ Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l
 
    ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://microsite.omniture.com/t2/help/fr_FR/s7/is_ir_api/is_api/http_ref/r_op_blur.html) : applique un effet de flou à l’image.
+* [op_blur](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html) : applique un effet de flou à l’image.
 
    ```xml
    &op_blur=7
@@ -441,7 +443,7 @@ Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l
 
    ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_brightness](https://microsite.omniture.com/t2/help/fr_FR/s7/is_ir_api/is_api/http_ref/r_op_brightness.html) : augmente ou diminue la luminosité.
+* [op_brightness](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html) : augmente ou diminue la luminosité.
 
    ```xml
    &op_brightness=58
@@ -449,7 +451,7 @@ Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l
 
    ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://microsite.omniture.com/t2/help/fr_FR/s7/is_ir_api/is_api/http_ref/r_opac.html) : permet de régler l’opacité de l’image. Cet attribut vous permet de diminuer l’opacité du premier plan.
+* [opac](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html) : permet de régler l’opacité de l’image. Cet attribut vous permet de diminuer l’opacité du premier plan.
 
    ```xml
    opac=29
