@@ -3,10 +3,10 @@ title: Configuration et utilisation des microservices de ressources
 description: Configurez et utilisez les microservices de ressources natifs du cloud pour traiter les ressources à l’échelle.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '2514'
-ht-degree: 46%
+source-wordcount: '2511'
+ht-degree: 44%
 
 ---
 
@@ -180,7 +180,7 @@ Pour vérifier que les ressources sont traitées, prévisualisation les rendus g
 
 S’il s’avère qu’un traitement supplémentaire des ressources est nécessaire, mais qu’il ne peut pas être effectué à l’aide des profils de traitement, des workflows de post-traitement peuvent être ajoutés à la configuration. Cela permet d’ajouter un traitement entièrement personnalisé en plus du traitement configurable à l’aide des microservices de ressources.
 
-Les workflows de post-traitement, s’ils sont configurés, sont automatiquement exécutés par AEM une fois le traitement des microservices terminé. Il n’est pas nécessaire d’ajouter manuellement des lanceurs de workflows pour les déclencher. Voici quelques exemples :
+Les workflows de post-traitement, s’ils sont configurés, sont automatiquement exécutés par [!DNL Experience Manager] une fois le traitement des microservices terminé. Il n’est pas nécessaire d’ajouter manuellement des lanceurs de workflows pour les déclencher. Voici quelques exemples :
 
 * Étapes du workflow personnalisé de traitement des ressources.
 * Intégrations pour ajouter des métadonnées ou des propriétés à des ressources provenant de systèmes externes (par exemple, des informations sur des produits ou des processus).
@@ -195,7 +195,7 @@ L’ajout d’une configuration de workflow de post-traitement à Experience Man
 
 ### Création de modèles de workflow de post-traitement {#create-post-processing-workflow-models}
 
-Les modèles de workflow de post-traitement sont des modèles AEM standard. Créez des modèles différents si un autre traitement doit être exécuté pour différents emplacements de référentiel ou types de ressource.
+Les modèles de processus de post-traitement sont des modèles de flux de travaux [!DNL Experience Manager] standard. Créez des modèles différents si un autre traitement doit être exécuté pour différents emplacements de référentiel ou types de ressource.
 
 Les étapes de traitement doivent être ajoutées en fonction des besoins. Vous pouvez utiliser n’importe quelle étape prise en charge, ainsi que n’importe quelle étape de workflow implémentée sur mesure.
 
@@ -213,7 +213,7 @@ Ce service (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunne
 >[!NOTE]
 >
 >La configuration du service d’exécution de workflow personnalisé est la configuration d’un service OSGi. Pour en savoir plus sur le déploiement d’une configuration OSGi, voir [Déploiement sur Experience Manager](/help/implementing/deploying/overview.md).
->Contrairement aux déploiements des Managed Services et On-Premise Services d’AEM, la console web OSGi n’est pas directement disponible dans les déploiements Cloud Service.
+>La console Web OSGi, contrairement aux déploiements de services sur site et gérés de [!DNL Experience Manager], n’est pas directement disponible dans les déploiements de services Cloud.
 
 Pour plus d’informations sur les étapes de workflow standard pouvant être utilisées dans le workflow de post-traitement, voir [Étapes du workflow de post-traitement](developer-reference-material-apis.md#post-processing-workflows-steps) (en anglais) dans la documentation de référence du développeur.
 
