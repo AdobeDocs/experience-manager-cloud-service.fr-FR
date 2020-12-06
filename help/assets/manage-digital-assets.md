@@ -4,10 +4,10 @@ description: Découvrez les différentes méthodes de gestion et de modification
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
-source-wordcount: '4408'
-ht-degree: 95%
+source-wordcount: '4407'
+ht-degree: 94%
 
 ---
 
@@ -95,7 +95,7 @@ Pour prévisualiser une ressource, procédez comme suit.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. Sélectionnez une ou plusieurs balises dans le champ **[!UICONTROL Balises]**. Pour ajouter une balise personnalisée, saisissez son nom dans la zone appropriée et appuyez ensuite sur la touche Entrée. La nouvelle balise est enregistrée dans [!DNL Experience Manager].
+1. Sélectionnez une ou plusieurs balises dans le champ **[!UICONTROL Balises]**. Pour ajouter une balise personnalisée, saisissez le nom de la balise dans la zone et sélectionnez la clé `Enter`. La nouvelle balise est enregistrée dans [!DNL Experience Manager].
 
    YouTube requiert que les balises soient publiées et comportent un lien vers YouTube (si un lien approprié peut être trouvé).
 
