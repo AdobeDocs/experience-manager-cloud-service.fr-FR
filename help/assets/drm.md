@@ -3,10 +3,10 @@ title: Gestion des droits numériques dans AEM [!DNL Assets]
 description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans [!DNL Experience Manager] as a [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
-source-wordcount: '1345'
-ht-degree: 100%
+source-wordcount: '1343'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Vous pouvez rechercher des ressources arrivées à expiration, y compris les sou
 
 1. Dans la console [!DNL Assets], cliquez sur l’option **[!UICONTROL Rechercher]** de la barre d’outils pour afficher la zone Omni-recherche.
 
-1. Avec le curseur dans la zone Omni-recherche, appuyez sur la touche Entrée pour afficher la page des résultats de la recherche.
+1. Avec le curseur dans la zone Omnisearch, sélectionnez la clé `Enter` pour afficher la page des résultats de la recherche.
 
 1. Cliquez sur l’icône de navigation globale pour afficher le panneau Recherche.
 
@@ -95,7 +95,7 @@ La console [!DNL Assets] peut afficher différents états des ressources. En fon
 
 1. Pour rechercher des ressources en fonction de leur état, cliquez sur **[!UICONTROL Rechercher]** pour afficher la barre Omni-recherche.
 
-1. Appuyez sur Retour et cliquez sur [!DNL Experience Manager] pour afficher le panneau de recherche.
+1. Sélectionnez `Return` et cliquez sur [!DNL Experience Manager] pour afficher le panneau de recherche.
 1. Dans le panneau de recherche, cliquez sur **[!UICONTROL État de publication]** et choisissez **[!UICONTROL Publié]** pour rechercher des ressources publiées dans [!DNL Assets].
 
 1. Cliquez sur **[!UICONTROL État d’approbation]**, puis sur l’option correspondante pour rechercher des ressources approuvées ou rejetées.
