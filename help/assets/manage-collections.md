@@ -4,10 +4,10 @@ description: Découvrez le concept de collection dans Adobe Experience Manager A
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
-source-wordcount: '2396'
-ht-degree: 97%
+source-wordcount: '2393'
+ht-degree: 95%
 
 ---
 
@@ -73,7 +73,7 @@ Vous pouvez faire glisser des ressources de l’interface utilisateur Assets jus
 Une collection dynamique utilise des critères de recherche pour rassembler les ressources de manière dynamique. Vous pouvez créer une collection dynamique en utilisant uniquement des fichiers ou en utilisant des fichiers et des dossiers.
 
 1. Accédez à l’IU d’Assets et appuyez/cliquez sur l’icône **[!UICONTROL Rechercher]**.
-1. Saisissez le mot-clé dans la boîte de dialogue d’omni-recherche et appuyez sur entrée. Appuyez/cliquez sur l’icône GlobalNav pour afficher le panneau Filtres et pour appliquer un filtre de recherche à partir du panneau Recherche.
+1. Saisissez le mot-clé de recherche dans la zone Recherche Omni et sélectionnez `Enter`. Appuyez/cliquez sur l’icône GlobalNav pour afficher le panneau Filtres et pour appliquer un filtre de recherche à partir du panneau Recherche.
 1. Dans la liste **[!UICONTROL Fichiers et dossiers]**, sélectionnez **[!UICONTROL Fichiers]**.
 1. Appuyez/cliquez sur **[!UICONTROL Enregistrer la collection dynamique]**.
 1. Spécifiez le nom de la collection. Sélectionnez **[!UICONTROL Public]** pour ajouter le groupe Utilisateurs DAM avec le rôle Observateur à la collection dynamique.
@@ -103,7 +103,7 @@ Vous pouvez ajouter des ressources à une collection qui comporte une liste de r
 Les collections dynamiques sont créées en enregistrant une recherche afin que vous puissiez modifier leur contenu en changeant les paramètres de recherche de la [recherche enregistrée](#saved-searches).
 
 1. Dans l’interface utilisateur Assets, appuyez/cliquez sur l’icône de **[!UICONTROL recherche]** de la barre d’outils.
-1. Placez le curseur dans la zone Omni-recherche et appuyez sur la touche Entrée.
+1. Avec le curseur dans la zone Omnisearch, sélectionnez la clé `Enter`.
 1. Appuyez/cliquez sur l’icône de navigation globale pour afficher le panneau Filtres.
 1. Dans la liste **[!UICONTROL Recherches enregistrées]**, sélectionnez la collection dynamique que vous souhaitez modifier. Le panneau de recherche affiche les filtres configurés pour la recherche enregistrée.
 1. Dans la liste **[!UICONTROL Fichiers et dossiers]**, sélectionnez **[!UICONTROL Fichiers]**.
@@ -238,7 +238,7 @@ Pour supprimer des recherches enregistrées, procédez comme suit :
 
 1. Dans l’interface utilisateur Assets, appuyez/cliquez sur l’icône de recherche de la barre d’outils.
 
-1. Placez le curseur dans le champ Omni-recherche et appuyez sur la touche Entrée.
+1. Avec le curseur dans le champ Omnisearch, sélectionnez la clé `Enter`.
 1. Appuyez ou cliquez sur l’icône de navigation globale afin d’afficher le panneau Filtres.
 1. Dans la liste **[!UICONTROL Recherches enregistrées]**, appuyez/cliquez sur l’icône **[!UICONTROL Supprimer]** en regard de la collection dynamique à supprimer.
 1. Dans la boîte de dialogue, appuyez/cliquez sur **[!UICONTROL Supprimer]** pour supprimer la recherche enregistrée.
@@ -249,7 +249,7 @@ Vous pouvez exécuter un workflow pour les ressources d’une collection. Si la 
 
 1. Dans la console Collections, sélectionnez une collection sur laquelle exécuter un workflow.
 1. Appuyez/cliquez sur l’icône de navigation globale, puis sélectionnez **[!UICONTROL Chronologie]** dans la liste.
-1. Dans la chronologie, cliquez ou appuyez sur l’icône en forme de signe d’insertion en bas, puis appuyez/cliquez sur **[!UICONTROL Démarrer le workflow]**.
+1. Dans le plan de montage chronologique, sélectionnez ou appuyez sur l’icône Caret en bas, puis appuyez/cliquez sur **[!UICONTROL Processus du Début]**.
 1. Dans la section **[!UICONTROL Démarrer le workflow]**, sélectionnez un modèle de workflow dans la liste. Par exemple, sélectionnez le modèle **[!UICONTROL Ressources de mise à jour de DAM]**.
 1. Saisissez un titre pour le workflow, puis appuyez/cliquez sur **[!UICONTROL Démarrer]**.
 1. Dans la boîte de dialogue, appuyez/cliquez sur **[!UICONTROL Poursuivre]**. Le workflow s’exécute sur toutes les ressources de la collection.
