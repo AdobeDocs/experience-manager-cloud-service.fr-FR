@@ -2,10 +2,10 @@
 title: Facettes de recherche.
 description: Cet article décrit comment créer, modifier et utiliser les facettes de recherche dans AEM.
 translation-type: tm+mt
-source-git-commit: c80c0063ce0f7c6bc8d99d5078ec8d5f50839732
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
 source-wordcount: '2377'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -33,9 +33,9 @@ Pour des recherches de texte intégral, ajoutez le prédicat `Fulltext` au formu
 
 1. Sur la page Modifier des formulaires de recherche, faites glisser un prédicat de l’onglet **[!UICONTROL Sélectionner le prédicat]** vers le volet principal. Faites glisser, par exemple, **[!UICONTROL Prédicat de la propriété]**.
 
-   ![Appuyez sur un prédicat et déplacez-le pour personnaliser les filtres de recherche](assets/drag_predicate.png)
+   ![Sélectionner et déplacer un prédicat pour personnaliser les filtres de recherche](assets/drag_predicate.png)
 
-   *Figure : Appuyez sur un prédicat et déplacez-le pour personnaliser les filtres de recherche.*
+   *Figure : Sélectionnez et déplacez un prédicat pour personnaliser les filtres de recherche.*
 
 1. Sous l’onglet Paramètres, saisissez un libellé de champ, un texte d’espace réservé et une description pour le prédicat. Indiquez un nom valide pour la propriété de métadonnées que vous souhaitez associer au prédicat. Le libellé d’en-tête de l’onglet Paramètres identifie le type de prédicat sélectionné.
 
