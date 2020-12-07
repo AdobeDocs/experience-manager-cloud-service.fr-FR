@@ -2,10 +2,10 @@
 title: Rechercher
 description: Retrouvez votre contenu plus rapidement grâce à de puissantes options de recherche
 translation-type: tm+mt
-source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -18,7 +18,7 @@ L’environnement de création d’AEM comporte divers mécanismes de recherche 
 
 La recherche est disponible dans la barre d’outils supérieure :
 
-![Bouton Rechercher](/help/sites-cloud/authoring/assets/search-button.png)
+![Icône Rechercher](/help/sites-cloud/authoring/assets/search-icon.png)
 
 Avec le rail de recherche, vous pouvez accomplir ce qui suit :
 
