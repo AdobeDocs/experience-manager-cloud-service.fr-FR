@@ -2,9 +2,9 @@
 title: Introduction - Gestion des certificats SSL
 description: Introduction - Gestion des certificats SSL
 translation-type: tm+mt
-source-git-commit: 74cc587874c4d0a0ef9b542549801198d4f2d7a5
+source-git-commit: fecbd0b4d5cfd8aa970c235c79158bea44403c09
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Cloud Manager permet aux clients d’installer des certificats SSL en libre-serv
 
 Cloud Manager prend en charge les exigences de certificat SSL client suivantes :
 
-* Un certificat SSL peut être utilisé par plusieurs Environnements - Ajouté une fois et utilisé plusieurs fois.
+* Un certificat SSL peut être utilisé par plusieurs Environnements, c’est-à-dire, ajouter une fois et utiliser plusieurs fois.
 * Chaque Environnement de Cloud Manager peut utiliser plusieurs certificats.
 * Une clé privée peut émettre plusieurs certificats SSL.
 * Chaque certificat contient généralement plusieurs domaines.
@@ -30,6 +30,8 @@ Cloud Manager prend en charge les exigences de certificat SSL client suivantes :
 
 A l’aide de la page Certificats SSL de l’interface utilisateur de Cloud Manager, un utilisateur disposant d’autorisations peut exécuter plusieurs tâches pour gérer des certificats SSL pour un programme :
 
-* Ajoute d’un certificat SSL.
-* Affichage, mise à jour ou remplacement d’un certificat SSL. Ces actions vous permettent de vue des détails ou de remplacer un certificat qui arrive à expiration.
-* Suppression d’un certificat SSL.
+* Ajouter un certificat SSL
+* Affichage, mise à jour ou remplacement d’un certificat SSL
+   >[!NOTE]
+   >Ces actions vous permettent de vue des détails ou de remplacer un certificat qui arrive à expiration.
+* Suppression d’un certificat SSL
