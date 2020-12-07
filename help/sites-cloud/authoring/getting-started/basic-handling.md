@@ -2,10 +2,10 @@
 title: Manipulation de base
 description: Se familiariser avec la navigation dans AEM et l’utilisation des fonctionnalités de base
 translation-type: tm+mt
-source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
+source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
 workflow-type: tm+mt
 source-wordcount: '2864'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -95,7 +95,7 @@ L’en-tête est toujours affiché en haut de l’écran. La plupart des options
 
 * [Rechercher](/help/sites-cloud/authoring/getting-started/search.md)
 
-   ![Bouton Rechercher](/help/sites-cloud/authoring/assets/search-button.png)
+   ![Icône Rechercher](/help/sites-cloud/authoring/assets/search-icon.png)
 
    Vous pouvez également utiliser la [touche de raccourci](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (barre oblique) pour appeler la recherche à partir de n’importe quelle console.
 
