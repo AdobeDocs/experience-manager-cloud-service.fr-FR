@@ -2,10 +2,10 @@
 title: 'Les lancements  '
 description: La fonction Lancements permet de développer efficacement du contenu en vue d’une publication ultérieure. Les lancements permettent de préparer les modifications pour une publication à venir, tout en conservant vos pages actuelles.
 translation-type: tm+mt
-source-git-commit: 395e936c34d7d7fdece8f57c773d07a244f880e4
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 98%
+source-wordcount: '878'
+ht-degree: 90%
 
 ---
 
@@ -84,22 +84,31 @@ La fonction Lancements vous permet de :
 >
 >Si vous rencontrez des difficultés, contactez votre administrateur système. 
 
-### Console de lancements {#the-launches-console}
-
-La console de lancements fournit un aperçu de vos lancements et permet d’appliquer des actions sur les lancements répertoriés. Vous pouvez accéder à la console via :
-
-* La console **Outils** : **Outils**, **Sites**, **Lancements**.
-
-* Ou directement avec `https://<host>:<port>/libs/launches/content/launches.html`.
-
 ## Lancements dans les références (console de sites) {#launches-in-references-sites-console}
 
 1. Dans la console **Sites**, accédez à la source des lancements.
 1. Ouvrez le rail **Références** et sélectionnez la page source.
-1. Sélectionnez **Lancements**. Les lancements existants seront répertoriés :
+1. Sélectionnez **Lancements**, les lancements existants seront répertoriés, ainsi que l&#39;accès à la **Console de lancements** :
 
    ![Références des lancements dans la console des sites](/help/sites-cloud/authoring/assets/launches-references.png)
 
 1. Appuyez/cliquez sur le lancement qui vous intéresse. La liste des actions possibles s’affiche :
 
    ![Actions à effectuer sur les lancements dans la console des sites](/help/sites-cloud/authoring/assets/launches-references-actions.png)
+
+## Console de lancements {#the-launches-console}
+
+La console de lancements fournit un aperçu de vos lancements et permet d’appliquer des actions sur les lancements répertoriés. Vous pouvez accéder à la console via :
+
+* La console **Outils** : **Outils**, **Sites**, **Lancements**.
+
+* **Lancements** Consolez la partie inférieure de la section  **** Lancement du  **** rail de références lors de la navigation dans le contenu source dans la console Sites.
+
+   ![lance la console dans les références des lancements dans la console Sites](/help/sites-cloud/authoring/assets/launches-references.png)
+
+* Le bouton **Lance** en haut à droite lors de la navigation dans le contenu du lancement dans la console Sites :
+
+   ![Option Lancements dans la console Sites](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+
+* Ou directement ; par exemple, avec :
+   `https://<host>:<port>/libs/launches/content/launches.html`
