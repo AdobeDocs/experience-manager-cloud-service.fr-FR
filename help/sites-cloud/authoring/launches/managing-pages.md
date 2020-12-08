@@ -2,9 +2,9 @@
 title: Gestion des pages dans votre lancement
 description: 'Vous pouvez créer de nouvelles pages dans votre lancement. Vous pouvez également supprimer des pages indésirables. '
 translation-type: tm+mt
-source-git-commit: 1a753aa9132a6de73e093caa1f682a78f29348c4
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '290'
 ht-degree: 2%
 
 ---
@@ -54,6 +54,8 @@ Tous ces points d&#39;entrée ouvrent le lancement dans la console Sites, où vo
 * Sélectionner les pages existantes et agir ; par exemple, **Modifier**, ouvrir **Propriétés**, **Verrouiller**, **Copier**, **Coller** et **Supprimer**
 
    ![Accédez au lancement dans la console Sites à partir de Gérer le contenu](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
+* Utilisez le rail **Références** pour revenir aux pages **Source de lancement** :
+   ![Console Sites - Source du lancement](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
 
 ## Ajouter des pages à votre lancement {#add-pages-to-launch}
 
