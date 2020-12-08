@@ -2,10 +2,10 @@
 title: Création de lancements
 description: Vous pouvez créer un lancement afin de permettre la mise à jour d’une nouvelle version des pages web existantes en vue d’une activation future.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 035c6d862bf28fe2a6fbdbbf32dff45fa09dbd8c
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 100%
+source-wordcount: '998'
+ht-degree: 97%
 
 ---
 
@@ -120,13 +120,15 @@ La création d’un lancement imbriqué (lancement dans un lancement) vous perme
 La création d’un lancement imbriqué à partir de la console **Lancements** est similaire à la création de tout autre type de lancement, si ce n’est que vous devez accéder à la branche de lancements `/content/launches` :
 
 1. Dans la console **Lancements**, sélectionnez **Créer**.
-1. Sélectionnez **Ajouter des pages**, puis accédez à la branche de lancements en spécifiant `/content/launches` dans le filtre. Sélectionnez la branche requise et confirmez avec **Sélectionner** :
+1. Sélectionnez **Ajouter les pages**, puis accédez à la branche lancements en spécifiant `/content/launches` dans le rail **Filtres**. Sélectionnez la branche requise et confirmez avec **Sélectionner** :
 
    ![Création d’un lancement imbriqué](/help/sites-cloud/authoring/assets/launches-create-nested.png)
 
-1. Continuez avec **Suivant** et indiquez les **propriétés**, comme pour tout autre lancement.
+1. Poursuivez en cliquant sur **Suivant**.
 
-   ![Sélection de la source du lancement imbriqué](/help/sites-cloud/authoring/assets/launches-create-nested-select.png)
+1. Remplissez les **Propriétés** comme pour tout autre lancement.
+
+1. Complète par **Créer**.
 
 #### Création d’un lancement imbriqué - Console Sites {#creating-a-nested-launch-sites-console}
 
