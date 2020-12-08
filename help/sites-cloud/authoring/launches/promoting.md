@@ -2,10 +2,10 @@
 title: Conversion de lancements
 description: 'Vous devez convertir les pages de lancement pour redéplacer le contenu vers la source (production) avant de le publier. '
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 100%
+source-wordcount: '799'
+ht-degree: 96%
 
 ---
 
@@ -39,6 +39,7 @@ Vous devez convertir les pages de lancement pour redéplacer le contenu vers la 
 >
 >* [Conversion d’un lancement imbriqué](#promoting-a-nested-launch) lorsqu’il existe plusieurs lancements dans la structure.
 >* [Lancements - Ordre des événements](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) pour en savoir plus sur la conversion et la publication automatiques.
+
 >
 
 
@@ -46,11 +47,14 @@ Vous devez convertir les pages de lancement pour redéplacer le contenu vers la 
 Vous pouvez convertir des lancements à partir de la console de **sites** ou de la console de **lancements** :
 
 1. Ouvrez :
-   * la console **Sites** :
+   * La console **Sites** lors de la navigation dans les pages source :
       1. Ouvrez le [rail de références](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) et sélectionnez la page source souhaitée à l’aide du [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md) (ou sélectionnez et ouvrez le rail de références, l’ordre n’a pas d’importance). Toutes les références seront affichées.
       1. Sélectionnez **Lancements** (par exemple Lancements (1)) pour afficher une liste de lancements particuliers.
       1. Sélectionnez le lancement en question pour afficher les actions disponibles.
       1. Sélectionnez **Convertir le lancement** pour ouvrir l’assistant.
+   * La console **Sites** lors de la navigation dans les pages de lancement :
+      1. Sélectionnez la page de lancement requise à l&#39;aide du [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md).
+      1. L&#39;action **Promouvoir** sera disponible dans la barre d&#39;outils.
    * La console **Lancements :**
       1. Sélectionnez votre lancement (appuyez/cliquez sur la miniature).
       1. Sélectionnez **Convertir**.
