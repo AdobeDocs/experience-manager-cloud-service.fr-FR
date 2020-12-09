@@ -1,10 +1,10 @@
 ---
 title: Gestion des paramètres prédéfinis de visionneuse
-description: Comment créer et gérer les paramètres prédéfinis de la visionneuse
+description: Comment créer et gérer les paramètres prédéfinis de la visionneuse à Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '4258'
+source-wordcount: '4261'
 ht-degree: 99%
 
 ---
@@ -51,7 +51,7 @@ Vous pouvez ajouter, modifier, supprimer, publier, annuler la publication et pr�
 
 Chaque page web a des besoins différents. Vous aurez parfois besoin d’une page web proposant un lien qui ouvre la visionneuse HTML5 dans une fenêtre de navigateur distincte. Dans d’autres cas, vous aurez peut-être besoin d’intégrer directement la visionneuse HTML5 sur la page d’hébergement. Si c’est le cas, la page web aura peut-être une mise en page statique. Autrement, elle peut être « réactive » et affichée différemment en fonction du périphérique ou de la taille de fenêtre du navigateur. Pour répondre à ces besoins, toutes les visionneuses prédéfinies HTML5 fournies avec Dynamic Media sont compatibles à la fois avec les pages web statiques et les pages web réactives.
 
-Voir [Bibliothèque d’images statiques réactives](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) dans l’*Aide de l’API de diffusion d’images de médias dynamiques* pour plus d’informations sur la manière d’incorporer des visionneuses réactives à vos pages Web.
+Voir [Bibliothèque d’images statiques réactives](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) dans l’*Aide de l’API de diffusion et de rendu d’images de Dynamic Media* pour plus d’informations sur la façon d’incorporer des visionneuses réactives à vos pages Web.
 
 >[!NOTE]
 >
