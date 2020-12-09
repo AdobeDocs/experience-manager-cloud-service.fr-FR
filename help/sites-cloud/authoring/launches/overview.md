@@ -2,10 +2,10 @@
 title: 'Les lancements  '
 description: La fonction Lancements permet de développer efficacement du contenu en vue d’une publication ultérieure. Les lancements permettent de préparer les modifications pour une publication à venir, tout en conservant vos pages actuelles.
 translation-type: tm+mt
-source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
+source-git-commit: 21f14d1f4e0ae26e097d4b31fe6811f1d089813d
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 90%
+source-wordcount: '907'
+ht-degree: 87%
 
 ---
 
@@ -20,6 +20,11 @@ Par exemple, les pages de produits saisonniers de votre boutique en ligne sont m
 
 * Modifications apportées aux pages source dans le cadre des tâches de maintenance normales. Ces modifications sont automatiquement dupliquées dans les pages de lancement.
 * Modifications effectuées directement sur les pages de lancement en vue du prochain trimestre.
+
+Vous pouvez également :
+
+* Naviguer dans le contenu de la branche de lancement ; ajout ou suppression de pages, si nécessaire.
+* Prévisualisation de la manière dont le contenu publié se penchera sur une date/heure spécifique à l’avenir.
 
 À l’approche du trimestre suivant, vous convertissez les pages de lancement pour pouvoir modifier les pages source (contenant le contenu mis à jour). Vous pouvez convertir toutes les pages ou uniquement celles que vous avez modifiées. 
 
