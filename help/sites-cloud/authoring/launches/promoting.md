@@ -2,10 +2,10 @@
 title: Conversion de lancements
 description: 'Vous devez convertir les pages de lancement pour redéplacer le contenu vers la source (production) avant de le publier. '
 translation-type: tm+mt
-source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
+source-git-commit: 645d25753e4baa03ba4df0645a266b793ec64a49
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 96%
+source-wordcount: '817'
+ht-degree: 91%
 
 ---
 
@@ -64,6 +64,7 @@ Vous pouvez convertir des lancements à partir de la console de **sites** ou de 
    * **Portée**
       * **Convertir le lancement complet**
       * **Promouvoir les pages modifiées**
+      * **Promouvoir les pages**  approuvées en fonction du processus d’approbation du lancement
       * **Convertir la page active**
       * **Convertir la page active et les sous-pages**
 
@@ -75,7 +76,7 @@ Vous pouvez convertir des lancements à partir de la console de **sites** ou de 
       >
       >Cette procédure porte sur la conversion d’un lancement simple. Si vous avez imbriqué des lancements, reportez-vous à la section [Conversion d’un lancement imbriqué](#promoting-a-nested-launch).
 1. Cliquez sur **Suivant** pour continuer.
-1. Vous pouvez passer en revue les pages à convertir. Elles dépendent de la plage de pages sélectionnée :
+1. Vous pouvez consulter les pages à promouvoir ; elles dépendent de la plage de pages que vous avez choisie :
 
    ![Réviser la promotion](/help/sites-cloud/authoring/assets/launches-promote-review.png)
 
@@ -106,6 +107,7 @@ Après avoir créé un lancement imbriqué, vous pouvez le convertir en pages so
    * **Domaine** : ici, vous pouvez indiquer s’il faut convertir l’intégralité du lancement ou uniquement les pages qui ont été modifiées. Dans le second cas, vous pouvez choisir d’inclure/exclure des sous-pages. La configuration par défaut consiste à convertir uniquement les changements de page pour la page active :
       * **Convertir le lancement complet**
       * **Promouvoir les pages modifiées**
+      * **Promouvoir les pages**  approuvées en fonction du processus d’approbation du lancement
       * **Convertir la page active**
       * **Convertir la page active et les sous-pages**
 
