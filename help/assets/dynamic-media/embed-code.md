@@ -1,11 +1,11 @@
 ---
 title: Intégration de la visionneuse de vidéos ou d’images Dynamic Media dans une page web
-description: Découvrez comment intégrer des images ou des vidéos Dynamic Media dans une page web
+description: Découvrez comment incorporer des fichiers vidéo ou d’image Dynamic Media sur une page Web.
 translation-type: tm+mt
-source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 100%
+source-wordcount: '372'
+ht-degree: 96%
 
 ---
 
