@@ -1,11 +1,11 @@
 ---
 title: Résolution des problèmes liés à Dynamic Media
-description: Résolution des problèmes liés à Dynamic Media.
+description: Conseils de dépannage lors de l’utilisation de Dynamic Media.
 translation-type: tm+mt
-source-git-commit: a0b4f04aaafbaef86728c8bd23cc026f43c72dde
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 100%
+source-wordcount: '998'
+ht-degree: 99%
 
 ---
 
