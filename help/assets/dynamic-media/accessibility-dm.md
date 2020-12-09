@@ -1,11 +1,11 @@
 ---
 title: Accessibilité dans [!DNL Dynamic Media]
-description: En savoir plus sur l’accessibilité dans Contenu multimédia dynamique et Visionneuses de contenu multimédia dynamique
+description: Découvrez l’accessibilité dans les visionneuses Dynamic Media et Dynamic Media.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d87710badeeb0518a2e51b8abc3974fa77914515
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 1%
@@ -13,15 +13,15 @@ ht-degree: 1%
 ---
 
 
-# Accessibilité dans Contenu multimédia dynamique {#working-with-three-d-assets-dm}
+# Accessibilité dans Dynamic Media {#working-with-three-d-assets-dm}
 
-Contenu multimédia dynamique prend en charge les technologies d’assistance et de contrôle du clavier, telles que les lecteurs d’écran JAWS et NVDA, dans l’interface utilisateur de création.
+Dynamic Media prend en charge les technologies d’assistance et de contrôle du clavier, telles que les lecteurs d’écran JAWS et NVDA, dans l’interface utilisateur de création.
 
-## Prise en charge de l’accessibilité du clavier dans Contenu multimédia dynamique
+## Prise en charge de l’accessibilité du clavier dans Dynamic Media
 
-Dans la mesure où Contenu multimédia dynamique est un module externe des ressources du Experience Manager, la plupart des commandes de clavier sont identiques à celles des ressources du Experience Manager. Par exemple, le bouton `Cancel` dans Contenu multimédia dynamique a la même mise en surbrillance que dans les Ressources du Experience Manager et réagit à la clé `Spacebar` comme dans les Ressources du Experience Manager. Voir [Raccourcis clavier dans Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Dynamic Media étant un module externe des ressources du Experience Manager, la plupart des commandes de clavier sont identiques à celles des ressources du Experience Manager. Par exemple, le bouton `Cancel` de Dynamic Media a la même mise en surbrillance que dans les ressources du Experience Manager et réagit à la clé `Spacebar` comme dans les ressources du Experience Manager. Voir [Raccourcis clavier dans Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
-Les touches prises en charge par les éléments d’interface utilisateur individuels dans Contenu multimédia dynamique sont, dans la plupart des cas, évidentes et faciles à découvrir. Le contrôle du clavier dans Contenu multimédia dynamique porte sur les éléments suivants :
+Les touches prises en charge par des éléments d&#39;interface utilisateur individuels à Dynamic Media sont, dans la plupart des cas, évidentes et faciles à découvrir. Le contrôle clavier dans Dynamic Media est à peu près le suivant :
 
 * Possibilité d’utiliser des touches `Tab` et `Shift+Tab` pour naviguer entre les éléments interactifs de la page.
 L’utilisation de `Tab` permet d’activer la cible d’action sur l’élément d’interface utilisateur suivant dans l’ordre de tabulation ; l’utilisation de `Shift+Tab` rétablit la cible d’action sur l’élément d’interface utilisateur précédent.
@@ -44,20 +44,20 @@ Voir [Modification du recadrage intelligent ou de l’échantillon intelligent d
 
 <!-- I would not get into much of details of specific keyboard support logic of these editors. One of the reasons - chances are that accessibility support will receive Phase2-like attention, with more holistic approach. -->
 
-## Prise en charge des technologies d’assistance dans les médias dynamiques {#assistive-technology=support-for-dm}
+## Prise en charge des technologies d&#39;assistance à Dynamic Media {#assistive-technology=support-for-dm}
 
-Les éléments de l’interface utilisateur Contenu multimédia dynamique fonctionnent avec les technologies d’assistance, telles que les lecteurs d’écran. Par exemple, il reconnaît les repères sur une page lorsque vous naviguez entre les repères à l’aide du raccourci clavier `D` ou de régions à l’aide du raccourci clavier `R`. Il décrit également l’en-tête lors de la navigation à l’aide du raccourci clavier de l’en-tête `H`.
+Les éléments de l’interface utilisateur de Dynamic Media fonctionnent avec des technologies d’assistance telles que les lecteurs d’écran. Par exemple, il reconnaît les repères sur une page lorsque vous naviguez entre les repères à l’aide du raccourci clavier `D` ou de régions à l’aide du raccourci clavier `R`. Il décrit également l’en-tête lors de la navigation à l’aide du raccourci clavier de l’en-tête `H`.
 
-## Prise en charge de l’accessibilité des claviers dans les visionneuses de contenu multimédia dynamique {#keyboard-accessibility-for-dm-viewers}
+## Prise en charge de l’accessibilité du clavier dans les visionneuses Dynamic Media {#keyboard-accessibility-for-dm-viewers}
 
-Tous les composants prêts à l’emploi des visionneuses de médias dynamiques prennent en charge l’accessibilité du clavier pour vos clients.
+Tous les composants prêts à l’emploi des visionneuses Dynamic Media prennent en charge l’accessibilité du clavier pour vos clients.
 
-Voir [Accessibilité du clavier et navigation](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) dans le Guide de référence des visionneuses de médias dynamiques.
+Voir [Accessibilité du clavier et navigation](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) dans le Guide de référence des visionneuses Dynamic Media.
 
-## Prise en charge de la technologie d’assistance dans les visionneuses de médias dynamiques {#assistive-technology=support-for-dm-viewers}
+## Prise en charge des technologies d’assistance dans les lecteurs Dynamic Media {#assistive-technology=support-for-dm-viewers}
 
-Tous les composants du lecteur Contenu multimédia dynamique prennent en charge les rôles et attributs ARIA (Applications Internet enrichies accessibles) afin d’améliorer l’intégration avec les technologies d’assistance telles que les lecteurs d’écran.
-Consultez la rubrique d’aide **Prise en charge de la technologie d’assistance** dans toute rubrique de personnalisation de la visionneuse du Guide de référence des visionneuses de médias dynamiques. Par exemple, voir [Prise en charge de la technologie d’assistance](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) pour la visionneuse de vidéos ou [Prise en charge de la technologie d’assistance](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only) pour la visionneuse d’images interactives.
+Tous les composants du lecteur Dynamic Media prennent en charge les rôles et attributs ARIA (Accessible Rich Internet Applications) afin d’améliorer l’intégration avec les technologies d’assistance telles que les lecteurs d’écran.
+Consultez la rubrique d’aide **Prise en charge des technologies d’assistance** dans toute rubrique de personnalisation de la visionneuse du Guide de référence des visionneuses Dynamic Media. Par exemple, voir [Prise en charge de la technologie d’assistance](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) pour la visionneuse de vidéos ou [Prise en charge de la technologie d’assistance](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only) pour la visionneuse d’images interactives.
 
 >[!MORELIKETHIS]
 >
