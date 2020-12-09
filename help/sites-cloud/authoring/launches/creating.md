@@ -2,10 +2,10 @@
 title: Création de lancements
 description: Vous pouvez créer un lancement afin de permettre la mise à jour d’une nouvelle version des pages web existantes en vue d’une activation future.
 translation-type: tm+mt
-source-git-commit: 035c6d862bf28fe2a6fbdbbf32dff45fa09dbd8c
+source-git-commit: 9e9f2bbed463143f821cc7aa0d50f37f892f3e9b
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 97%
+source-wordcount: '1045'
+ht-degree: 93%
 
 ---
 
@@ -19,6 +19,18 @@ Créez un lancement pour permettre la mise à jour d’une nouvelle version des 
 * Par défaut, Live Copy met automatiquement à jour les pages de lancement à mesure que les pages source changent. Vous pouvez spécifier qu’une copie statique soit créée afin d’empêcher les modifications automatiques. <!--By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.-->
 
 Vous pouvez éventuellement indiquer la **date de lancement** (et l’heure) pour définir le moment auquel les pages de lancement doivent être promues et activées. Toutefois, la **date de lancement** fonctionne uniquement en conjonction avec l’indicateur **Prêt pour la production** (voir [Modification d’une configuration de lancement](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration)). Pour que les actions se produisent automatiquement, les deux doivent être définis.
+
+>[!NOTE]
+>
+>Lorsque vous créez un lancement, les pages situées plus haut dans la hiérarchie ne sont pas des copies des pages source. Il s’agit d’espaces réservés, créés avec le modèle :
+>
+>* `/libs/launches/templates/outofscope`
+>
+>
+Ces pages ne peuvent pas être modifiées. Le message s’affiche :
+>
+>* **Cette page ne fait pas partie du lancement. Atteindre la page de production**
+
 
 ## Création d’un lancement {#creating-a-launch}
 
