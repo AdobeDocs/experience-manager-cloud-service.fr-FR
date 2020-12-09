@@ -1,8 +1,8 @@
 ---
 title: Images interactives
-description: Découvrir comment utiliser les images interactives dans Dynamic Media
+description: Découvrez comment utiliser des images interactives dans Dynamic Media.
 translation-type: tm+mt
-source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '4253'
 ht-degree: 99%
