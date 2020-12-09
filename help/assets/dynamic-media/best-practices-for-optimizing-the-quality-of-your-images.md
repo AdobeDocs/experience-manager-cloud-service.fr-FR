@@ -1,11 +1,11 @@
 ---
 title: Bonnes pratiques relatives à l’optimisation de la qualité des images
-description: Découvrez les bonnes pratiques relatives à l’optimisation de la qualité des images dans Dynamic Media
+description: Découvrez les meilleures pratiques que vous pouvez utiliser dans Dynamic Media pour optimiser la qualité de vos fichiers d’image.
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '1490'
-ht-degree: 100%
+source-wordcount: '1497'
+ht-degree: 98%
 
 ---
 
