@@ -1,12 +1,12 @@
 ---
 title: Publication de ressources Dynamic Media
-description: Découvrez comment publier des ressources Dynamic Media
+description: Découvrez comment publier des ressources Dynamic Media.
 contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: b65ce0af6281f60272322744f0e6f81b7eb6b96a
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 100%
+source-wordcount: '469'
+ht-degree: 98%
 
 ---
 
@@ -33,6 +33,7 @@ Voir aussi [Intégration de la visionneuse de vidéos ou d’images Dynamic Medi
 >
 >* Pour utiliser l’URL, les ressources doivent être publiées. Si les ressources ne sont pas publiées, la copie et le collage de l’URL ne fonctionnent pas dans un navigateur web.
 >* Les paramètres d’image prédéfinis et les paramètres de visionneuse prédéfinis doivent être activés et publiés pour une diffusion en direct.
+
 >
 
 
