@@ -1,11 +1,11 @@
 ---
 title: Configuration de Dynamic Media
-description: Pour configurer Dynamic Media, vous devez configurer un média dynamique et gérer les paramètres prédéfinis d’image et de visionneuse.
+description: Pour configurer Dynamic Media, vous devez configurer Dynamic Media et gérer les paramètres prédéfinis d’image et de visionneuse.
 translation-type: tm+mt
-source-git-commit: 79d4e51db99e2c1f8b18edd7249a26f4be7169e1
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '175'
-ht-degree: 69%
+ht-degree: 60%
 
 ---
 
@@ -40,4 +40,4 @@ Voir aussi les rubriques suivantes :
 >
 >**Si vous effectuez une mise à niveau :**
 >
->* Une fois le Experience Manager en cours d’exécution, les fichiers que vous téléchargez sont automatiquement activés dans Contenu multimédia dynamique (sauf s’ils ont été explicitement désactivés par votre administrateur système). Si vous utilisez une instance mise à niveau de Experience Manager et que vous découvrez Contenu multimédia dynamique, vous devrez peut-être retraiter vos fichiers pour les rendre compatibles avec Contenu multimédia dynamique.
+>* Une fois que le Experience Manager est en cours d’exécution, Dynamic Media est automatiquement activé pour tout fichier que vous téléchargez (sauf s’il a été explicitement désactivé par votre administrateur système). Si vous utilisez une instance mise à niveau de Experience Manager et que vous découvrez Dynamic Media, vous devrez peut-être retraiter vos ressources pour les activer Dynamic Media.
