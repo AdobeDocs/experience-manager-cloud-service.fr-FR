@@ -1,18 +1,18 @@
 ---
 title: Diffusion de ressources Dynamic Media
-description: Découvrez comment diffuser des ressources Dynamic Media
+description: Découvrez comment diffuser des ressources Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 7a2eef19a3807d02e7eba0ce177465aabc35a53e
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
 
 # Diffusion de ressources Dynamic Media{#delivering-dynamic-media-assets}
 
-La diffusion des ressources Dynamic Media (vidéos et images) dépend de la mise en œuvre de votre site web.
+La manière dont vous pouvez diffuser vos ressources Dynamic Media (vidéo et images) dépend de la manière dont votre site Web est mis en oeuvre.
 
 Avec Dynamic Media, vous disposez de plusieurs options :
 
