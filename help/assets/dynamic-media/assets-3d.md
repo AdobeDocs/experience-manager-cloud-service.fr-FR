@@ -1,16 +1,14 @@
 ---
 title: Utilisation de ressources 3D dans Dynamic Media
-seo-title: Utilisation de ressources 3D dans Dynamic Media
-description: Découvrez comment utiliser des ressources 3D dans Dynamic Media
-seo-description: Découvrez comment utiliser des ressources 3D dans Dynamic Media
+description: Découvrez comment utiliser des ressources 3D dans Dynamic Media.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS and Experience Manager as a Cloud Service
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 72bf52ca97b9c3cac84361207e53093fc69c0b43
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '2287'
+source-wordcount: '2270'
 ht-degree: 90%
 
 ---
@@ -47,7 +45,7 @@ Voir aussi [Formats 3D pris en charge](/help/assets/file-format-support.md#supp
 
 La description du workflow étape par étape qui suit est conçue pour vous aider à démarrer et à utiliser rapidement des ressources 3D dans Dynamic Media.
 
-Avant d’utiliser des fichiers 3D dans Contenu multimédia dynamique, assurez-vous que votre administrateur de Experience Manager a déjà activé et configuré les Cloud Services Contenu multimédia dynamique.
+Avant de travailler avec des ressources 3D dans Dynamic Media, assurez-vous que votre administrateur Experience Manager a déjà activé et configuré les Cloud Services Dynamic Media.
 
 Voir [Configuration des Cloud Services Dynamic Media](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
@@ -170,7 +168,7 @@ Ressource 3D entièrement interactive affichée en mode **[!UICONTROL Aperçu]**
 
 ## À propos de l’utilisation du composant Média 3D {#working-with-three-d-media-component}
 
-Contenu multimédia dynamique comprend un composant Contenu multimédia 3D dynamique que vous pouvez utiliser dans les sites Experience Manager pour activer l’affichage interactif de modèles 3D sur vos pages Web.
+Dynamic Media comprend un composant multimédia 3D Dynamic Media que vous pouvez utiliser dans les sites Experience Manager pour activer l’affichage interactif de modèles 3D sur vos pages Web.
 
 * [Ajout du composant Média 3D au modèle de page](#adding-three-d-media-component-to-page-template)
 * [Ajout du composant Média 3D à une page web](#adding-the-three-d-media-component-to-a-web-page)
@@ -200,7 +198,7 @@ Si vous utilisez Adobe Experience Manager comme système de gestion de contenu w
 
 Voir aussi [Ajout de ressources Dynamic Media aux pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
-1. Ouvrez Sites de Experience Manager et sélectionnez la page Web à laquelle vous souhaitez ajouter le composant Contenu multimédia 3D Contenu multimédia dynamique.
+1. Ouvrez Sites Experience Manager et sélectionnez la page Web à laquelle vous souhaitez ajouter le composant multimédia 3D Dynamic Media.
 1. Appuyez sur l’icône **[!UICONTROL Modifier]** (en forme de crayon) pour ouvrir la page dans l’éditeur de pages. Assurez-vous que le mode d’**[!UICONTROL édition]** est sélectionné près de l’angle supérieur droit de la page.
 
    ![3d-media-component-add](/help/assets/dynamic-media/assets/3d-media-component-edita.png)
@@ -255,7 +253,7 @@ Voir également [Obtention d’une URL pour une ressource statique.](/help/asset
 
 En **[!UICONTROL mode Carte]**, une petite icône en forme de globe apparaît directement sous le nom d’une ressource, et à gauche de ses informations de date et d’heure, pour indiquer qu’elle est publiée. En **[!UICONTROL mode Liste]**, une colonne **[!UICONTROL Publié]** indique les ressources qui sont publiées et celles qui ne le sont pas.
 
-Si vous utilisez le Experience Manager en tant que WCM, utilisez cette méthode de publication pour ajouter les fichiers Contenu multimédia dynamique 3D directement sur votre page Web.
+Si vous utilisez le Experience Manager comme WCM, utilisez cette méthode de publication pour ajouter les ressources Dynamic Media 3D directement sur votre page Web.
 
 Voir aussi [Publication de ressources Dynamic Media.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 
@@ -284,7 +282,7 @@ Voir aussi [Publication de pages.](/help/sites-cloud/authoring/fundamentals/publ
 
 ### Autres méthodes de publication de ressources 3D Dynamic Media à l’aide de la visionneuse Dimensionnel{#alternate-publish-methods}
 
-Utilisez les deux méthodes suivantes pour publier des fichiers 3D de Contenu multimédia dynamique si *vous n’utilisez pas* Experience Manager comme WCM.
+Utilisez les deux méthodes suivantes pour publier des ressources Dynamic Media 3D si *vous n’utilisez pas* Experience Manager comme WCM.
 
 * **[!UICONTROL URL]** : utilisez **[!UICONTROL URL]** si vous avez recours à un système de gestion de contenu web tiers et que vous souhaitez lier des ressources 3D Dynamic Media à vos pages web à l’aide de la visionneuse Dimensionnel.
 
