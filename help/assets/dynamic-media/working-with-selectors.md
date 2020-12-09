@@ -1,16 +1,16 @@
 ---
 title: 'Utilisation des sélecteurs  '
-description: Sélection de ressources pour les images interactives, vidéos interactives et bannières de carrousel
+description: Découvrez les méthodes que vous pouvez utiliser pour sélectionner des fichiers pour des images interactives, des vidéos interactives et des bannières de carrousel dans Dynamic Media.
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 100%
+source-wordcount: '748'
+ht-degree: 96%
 
 ---
 
 
-# Utilisation des sélecteurs dans Dynamic Media{#working-with-selectors}
+# Utilisation de sélecteurs dans Dynamic Media {#working-with-selectors}
 
 Lorsque vous utilisez une image interactive, une vidéo interactive ou une bannière de carrousel, vous sélectionnez des ressources, ainsi que des sites et des produits auxquels relier les zones réactives et les zones cliquables. Lorsque vous travaillez avec des visionneuses d’images, des visionneuses à 360° et de contenu multimédia, vous devez également sélectionner les ressources à l’aide du sélecteur de ressources.
 
