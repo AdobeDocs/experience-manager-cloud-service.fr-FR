@@ -40,12 +40,12 @@ Vous pouvez modifier une page dans l’éditeur de page. Par exemple :
 
 Lorsque vous modifiez une page, l’**Aide** est accessible depuis :
 
-* le sélecteur [**d’informations sur la page**](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties) avec les diapositives de présentation qui s’affichent (comme lors de votre premier accès à l’éditeur) ;
+* le sélecteur [**Informations sur la page**](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties) avec les diapositives de présentation qui s’affichent (comme lors de votre premier accès à l’éditeur) ;
 * la boîte de dialogue [Configuration](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) pour des composants spécifiques (au moyen de l’icône ? dans la barre d’outils de la boîte de dialogue), qui affiche l’aide contextuelle.
 
 D’autres [ressources d’aide sont accessibles depuis les consoles](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help).
 
-## Explorateur de composants     {#components-browser}
+## Explorateur de composants  {#components-browser}
 
 Les composants sont les blocs de création du contenu AEM. Vous placez plusieurs composants sur une page et configurez leurs options afin de créer votre page de contenu avec AEM.
 
@@ -159,7 +159,7 @@ Si vous devez modifier rapidement une ressource, vous pouvez lancer [l’éditeu
 
 ![Bouton Modifier la ressource](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
-## Arborescence de contenu     {#content-tree}
+## Arborescence de contenu  {#content-tree}
 
 L’**arborescence de contenu** présente une vue d’ensemble des composants sur la page sous forme de structure hiérarchique pour que vous puissiez visualiser la composition de la page en un seul coup d’œil.
 
@@ -226,7 +226,7 @@ Sélectionnez le type de référence approprié pour en savoir plus. Dans certai
 * Les instances du contenu emprunté et prêté à l’aide du composant **Référence** vous permettent de naviguer jusqu’à la page de référence.
 * [Lancements](/help/sites-cloud/authoring/launches/overview.md) donne accès aux lancements associés.
 * Live Copies affiche les chemins d’accès à toutes les Live Copies basées sur la ressource sélectionnée. <!--[Live Copies](/help/sites-administering/msm.md) displays the paths of all live copies that are based on the selected resource.-->
-* Plan directeur fournit des détails et diverses actions. <!--[Blueprint](/help/sites-administering/msm-best-practices.md), provides details and various actions-->
+* Le plan directeur fournit des détails et diverses actions. <!--[Blueprint](/help/sites-administering/msm-best-practices.md), provides details and various actions-->
 * Copies de langue fournit des détails et diverses actions. <!--[Languages Copies](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), provides details and various actions-->
 
 ## Événements – Chronologie {#events-timeline}
@@ -237,7 +237,7 @@ Ouvrez la console appropriée, puis accédez à la ressource requise et ouvrez l
 
 ![Option Chronologie](/help/sites-cloud/authoring/assets/timeline.png)
 
-[Sélectionnez la ressource requise](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), puis **Tout afficher** ou **Activités** afin de répertorier les activités récentes pour les ressources sélectionnées :
+[Sélectionnez la ressource requise](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), puis **Afficher tout** ou **Activités** afin de répertorier les activités récentes pour les ressources sélectionnées :
 
 ![Détails de la chronologie](/help/sites-cloud/authoring/assets/timeline-detail.png)
 
@@ -249,7 +249,7 @@ L’icône Informations sur la page (icône d’égaliseur) ouvre un menu qui fo
 
 * [Ouvrir les propriétés](/help/sites-cloud/authoring/fundamentals/page-properties.md)
 * Déployer la page <!--[Rollout Page](/help/sites-administering/msm.md#msm-from-the-ui)-->
-* [Démarrer le workflow](/help/sites-cloud/authoring/workflows/applying.md#starting-a-workflow-from-the-page-editor)
+* [Démarrer le processus](/help/sites-cloud/authoring/workflows/applying.md#starting-a-workflow-from-the-page-editor)
 * [Verrouiller la page](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)
 * [Publier la page](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-pages-1)
 * [Annuler la publication de la page](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)
@@ -261,12 +261,12 @@ L’icône Informations sur la page (icône d’égaliseur) ouvre un menu qui fo
 
 Le menu **Informations sur la page** peut en outre donner accès à des analyses et recommandations, le cas échéant.
 
-## Modes de page     {#page-modes}
+## Modes de page  {#page-modes}
 
 Lors de la modification d’une page, plusieurs modes permettent d’effectuer différentes actions :
 
 * [Modifier](/help/sites-cloud/authoring/fundamentals/editing-content.md) : mode à utiliser lors de la modification du contenu de la page.
-* [Mise en page](/help/sites-cloud/authoring/features/responsive-layout.md) : permet de créer et de modifier une mise en page réactive en fonction du type d’appareil utilisé (si la page est basée sur un conteneur de mises en page).
+* [Disposition](/help/sites-cloud/authoring/features/responsive-layout.md) : permet de créer et de modifier une disposition réactive en fonction du type d’appareil utilisé (si la page est basée sur un conteneur de mises en page).
 * [Ciblage](/help/sites-cloud/authoring/personalization/targeted-content.md) : optimise la pertinence du contenu grâce au ciblage et aux mesures à l’échelle de tous les canaux.
 * [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) : permet d’afficher l’état d’une page à un moment donné.
 * [État de Live Copy](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) : donne un aperçu rapide de l’état de la live copy et des composants qui sont ou non hérités.
@@ -282,7 +282,8 @@ Vous pouvez accéder à ces modes en cliquant sur les icônes dans le coin supé
 >* Certains modes peuvent ne pas être disponibles en fonction des caractéristiques de la page.
 >* L’accès à certains modes implique que vous disposiez des droits ou autorisations appropriés.
 >* Le mode Développeur n’est pas accessible sur les appareils mobiles en raison de restrictions d’espace.
->* Utilisez le [raccourci clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) pour permuter entre l’**Aperçu** et le mode actuellement sélectionné (par ex. **Modifier**, **Mise en page**, etc.).
+>* Utilisez le [raccourci clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) pour permuter entre l’**Aperçu** et le mode actuellement sélectionné (par ex. **Modifier**, **Disposition**, etc.).
+
 >
 
 
@@ -311,10 +312,10 @@ L’explorateur de chemins d’accès est organisé de la même façon que le [m
 
 ![Explorateur de chemins d’accès](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* Lorsqu’une ressource est sélectionnée, le bouton **Sélectionner** situé en haut à droit de la boîte de dialogue devient actif. Cliquez ou appuyez dessus pour confirmer la sélection, ou sur **Annuler** pour annuler.
+* Lorsqu’une ressource est sélectionnée, le bouton **Sélectionner** situé en haut à droite de la boîte de dialogue devient actif. Cliquez ou appuyez dessus pour confirmer la sélection, ou sur **Annuler** pour annuler.
 * Si le contexte permet la sélection de plusieurs ressources, la sélection d’une ressource active également le bouton **Sélectionner**, mais ajoute également le nombre de ressources sélectionnées en haut à droite de la fenêtre. Cliquez sur le **X** en regard du nombre pour tout désélectionner.
 * Lorsque vous parcourez l’arborescence, votre emplacement est reflété dans le chemin de navigation de la boîte de dialogue. Ces chemins de navigation peuvent être utilisés pour passer rapidement d’une ressource à une autre dans la hiérarchie des ressources.
-* Vous pouvez à tout moment utiliser le champ de recherche situé en haut de la boîte de dialogue. Cliquez sur **X** dans le champ de recherche pour effacer la recherche.
+* Vous pouvez à tout moment utiliser le champ de recherche situé en haut de la boîte de dialogue. Cliquez sur le **X** dans le champ de recherche pour effacer la recherche.
 * Pour affiner votre recherche, vous pouvez afficher les options de filtre et filtrer vos résultats en fonction du chemin d’accès.
 
    ![Option Filtres](/help/sites-cloud/authoring/assets/filters-option.png)
