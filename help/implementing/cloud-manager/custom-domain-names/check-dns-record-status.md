@@ -2,7 +2,7 @@
 title: Vérification de l'état de l'enregistrement DNS
 description: Vérification de l'état de l'enregistrement DNS
 translation-type: tm+mt
-source-git-commit: 1c51560886515e092680c23db3e128758dcd7d99
+source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -14,8 +14,7 @@ ht-degree: 0%
 
 Vous pouvez déterminer si votre nom de domaine est correctement résolu sur votre AEM en tant que site Web Cloud Service en cliquant sur l’icône État de l’enregistrement DNS dans le tableau de la page Environnements de la page Paramètres de domaine.
 
->[!NOTE]
->Cloud Manager déclenche automatiquement une recherche DNS lorsque votre nom de domaine personnalisé est vérifié et déployé pour la première fois. Pour les tentatives suivantes, vous devez sélectionner activement l&#39;icône **résoudre de nouveau** en regard de l&#39;état.
+Cloud Manager déclenche automatiquement une recherche DNS lorsque votre nom de domaine personnalisé est vérifié et déployé pour la première fois. Pour les tentatives suivantes, vous devez sélectionner activement l&#39;icône **résoudre de nouveau** en regard de l&#39;état.
 
 Cloud Manager effectue une recherche DNS pour votre nom de domaine et affiche l’un des messages d’état suivants :
 
