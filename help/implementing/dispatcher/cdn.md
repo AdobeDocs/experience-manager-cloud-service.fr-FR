@@ -2,10 +2,10 @@
 title: Réseau de diffusion de contenu dans AEM as a Cloud Service
 description: Réseau de diffusion de contenu dans AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 14d08529eeee0f9881e668eed6273cfa57f1360f
+source-git-commit: 40119f7b3bdf36af668b79afbcb2802a0b2a6033
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 93%
+source-wordcount: '462'
+ht-degree: 84%
 
 ---
 
@@ -18,21 +18,16 @@ Le réseau de diffusion de contenu géré par AEM satisfait à la plupart des ex
 
 ## Réseau de diffusion de contenu géré par AEM {#aem-managed-cdn}
 
-Procédez comme suit pour préparer la diffusion de contenu à l’aide du réseau de diffusion de contenu prêt à l’emploi d’Adobe :
+Suivez les sections ci-dessous pour utiliser l’interface utilisateur en libre-service de Cloud Manager afin de vous préparer à la diffusion de contenu en utilisant le CDN prêt à l’emploi de l’Adobe :
 
-1. Fournissez le certificat SSL signé et la clé secrète à Adobe en partageant un lien vers un formulaire sécurisé contenant ces informations. Il est recommandé de coordonner cette tâche avec le service clientèle. Adobe prend en charge jusqu’à 10 certificats SSL pour un programme.
-   **Remarque :** AEM as a Cloud Service ne prend pas en charge les certificats DV (Domain Validated, domaines validés). En outre, il doit s’agir d’un certificat TLS X.509 d’une autorité de certification approuvée (CA) avec une clé privée RSA 2 048 bits correspondante.
-1. Donnez les informations suivantes au service clientèle :
-   * quel(s) domaine(s) personnalisé(s) doit être associé(s) à un environnement donné, tel que défini par l&#39;ID de programme et l&#39;ID d&#39;environnement. Jusqu’à 100 domaines sont pris en charge pour un environnement donné et les domaines ne peuvent pas contenir de caractères génériques. Notez que les domaines personnalisés côté auteur ne sont pas pris en charge.
-   * Une liste d’adresses IP autorisées éventuellement nécessaire pour limiter le trafic à destination d’un environnement donné.
-1. Coordination avec l’assistance clientèle concernant les délais des modifications nécessaires apportées aux enregistrements DNS. Les instructions sont différentes selon qu’un enregistrement apex est nécessaire ou non :
-   * si aucun enregistrement apex n’est nécessaire, les clients doivent définir l’enregistrement CNAME DNS pour qu’il adresse leur nom de domaine complet (FQDN) sur `cdn.adobeaemcloud.com`.
-   * si un enregistrement apex est nécessaire, créez un enregistrement A pointant vers les adresses IP suivantes : 151.101.3.10, 151.101.67.10, 151.101.131.10, 151.101.195.10. Les clients ont besoin d’un enregistrement apex si le FQDN correspond à la zone DNS. Vous pouvez le tester en utilisant la commande dig Unix pour vérifier si la valeur SOA de la sortie correspond au domaine. Par exemple, la commande `dig anything.dev.adobeaemcloud.com` renvoie un SOA (Start of Authority, c’est-à-dire la zone) `dev.adobeaemcloud.com`, et il ne s’agit donc pas d’un enregistrement APEX. Par contre, `dig dev.adobeaemcloud.com` renvoie un SOA `dev.adobeaemcloud.com` qui est un enregistrement APEX.
-1. Vous serez averti lorsque les certificats SSL arriveront à expiration afin que vous puissiez soumettre à nouveau les nouveaux certificats SSL.
+1. [Gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+1. [Gestion des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 **Limitation du trafic**
 
-Par défaut, dans le cas d’une configuration de réseau de diffusion de contenu géré par Adobe, tout le trafic public peut se diriger vers le service de publication, tant pour les environnements de production que de non-production (de développement et d’évaluation). Si vous souhaitez limiter le trafic à destination du service de publication pour un environnement donné (par exemple, limiter l’évaluation par une plage d’adresses IP), vous devez demander au service clientèle de configurer ces restrictions.
+Par défaut, dans le cas d’une configuration de réseau de diffusion de contenu géré par Adobe, tout le trafic public peut se diriger vers le service de publication, tant pour les environnements de production que de non-production (de développement et d’évaluation). Si vous souhaitez limiter le trafic au service de publication pour un environnement donné (par exemple, en limitant l’évaluation par une plage d’adresses IP), vous pouvez le faire en libre-service via l’interface utilisateur de Cloud Manager.
+
+Consultez [Gestion des Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) pour en savoir plus.
 
 ## Le réseau de diffusion de contenu du client pointe vers le réseau de diffusion de contenu géré par AEM {#point-to-point-CDN}
 
