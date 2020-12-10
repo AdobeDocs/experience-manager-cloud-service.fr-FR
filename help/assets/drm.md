@@ -1,6 +1,6 @@
 ---
-title: Gestion des droits numériques dans AEM [!DNL Assets]
-description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans [!DNL Experience Manager] as a [!DNL Cloud Service].
+title: Gestion des droits numériques dans  [!DNL Assets]
+description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans  [!DNL Experience Manager] as a [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
@@ -89,7 +89,7 @@ La console [!DNL Assets] peut afficher différents états des ressources. En fon
 1. Cliquez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL Fermer]** pour afficher la console Ressources.
 1. L’état de publication de la ressource indique qu’elle a expiré au bas de sa miniature en mode d’affichage Carte. En mode Liste, l’état de la ressource s’affiche comme étant **[!UICONTROL arrivée à expiration]**.
 
-1. Dans la console [!DNL Assets], sélectionnez un dossier et créez une tâche de révision sur le dossier. 
+1. Dans la console [!DNL Assets], sélectionnez un dossier et créez une tâche de révision sur le dossier.
 1. Recherchez et approuvez/rejetez les ressources dans la tâche de révision, puis cliquez sur **[!UICONTROL Terminé]**.
 1. Accédez au dossier pour lequel vous avez créé la tâche de révision. L’état des ressources que vous avez approuvées/rejetées s’affiche en bas du mode Carte. En mode Liste, les états d’approbation et d’expiration sont affichés dans les colonnes correspondantes.
 
@@ -104,7 +104,7 @@ La console [!DNL Assets] peut afficher différents états des ressources. En fon
 
 1. Vous pouvez également rechercher des éléments en fonction de plusieurs états, sous diverses facettes de recherche. Par exemple, vous pouvez rechercher les ressources publiées qui ont été approuvées dans une tâche de révision et qui n’ont pas encore expiré, en sélectionnant les options correspondantes dans les facettes de recherche.
 
-## Gestion des droits numériques dans AEM [!DNL Assets] {#digital-rights-management-in-assets-1}
+## Gestion des droits numériques dans [!DNL Assets] {#digital-rights-management-in-assets-1}
 
 Cette fonction force l’acceptation du contrat de licence avant le téléchargement d’une ressource sous licence à partir d’[!DNL Adobe Experience Manager Assets].
 
