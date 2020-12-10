@@ -1,35 +1,36 @@
 ---
-title: Notes de mise à jour de Cloud Manager en AEM version 2020.11.0 du Cloud Service
-description: Notes de mise à jour de Cloud Manager en AEM version 2020.11.0 du Cloud Service
+title: Notes de mise à jour de Cloud Manager en AEM version 2020.12.0 du Cloud Service
+description: Notes de mise à jour de Cloud Manager en AEM version 2020.12.0 du Cloud Service
 translation-type: tm+mt
-source-git-commit: 727dfd1d16a80620fba6db00289021ee5efae0fc
+source-git-commit: 738cff4231f329826b44f1b0f1a184fa15edd82a
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 36%
+source-wordcount: '128'
+ht-degree: 6%
 
 ---
 
 
-# Notes de mise à jour de Cloud Manager dans Adobe Experience Manager en tant que Cloud Service 2020.11.0 {#release-notes}
+# Notes de mise à jour de Cloud Manager dans Adobe Experience Manager en tant que Cloud Service 2020.12.0 {#release-notes}
 
-Cette page présente les Notes de mise à jour de Cloud Manager en AEM en tant que Cloud Service 2020.11.0.
+Cette page présente les Notes de mise à jour de Cloud Manager en AEM en tant que Cloud Service 2020.12.0.
 
 ## Date de publication {#release-date}
 
-La date de publication de Cloud Manager en tant que Cloud Service 2020.11.0 est le 12 novembre 2020.
+La date de publication de Cloud Manager en tant que Cloud Service 2020.12.0 est le 10 décembre 2020.
 
-## Cloud Manager {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 ### Nouveautés {#what-is-new}
 
-* Une nouvelle option de menu **Connexion locale** est désormais disponible pour les utilisateurs à partir des options du menu environnement sur les pages de la carte d&#39;Environnement et du résumé des Environnements.
-Pour plus d’informations, consultez [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md##login-locally).
+* Gestion en libre-service des [certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) et [noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
-* L’onglet **Apprendre** de Cloud Manager a été actualisé avec de nouvelles images dans l’interface utilisateur.
+* Gestion en libre-service des [Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
-### Correctifs {#bug-fixes-cloud-manager}
+* La page de détails **Environnement** mise à jour permet désormais aux utilisateurs de gérer les noms de domaine personnalisés et les Listes autorisées IP sur leurs environnements.
 
-* Le chargement des dépendances effectué avant l’exécution du build nécessitait le téléchargement d’un module externe Maven.
-* Le lien du pied de page de Cloud Manager destiné à sélectionner une langue dirige désormais vers l’emplacement approprié.
-* Parfois, pendant la numérisation du code, le processus SonarQube ne démarrait pas. Désormais, il sera automatiquement détecté et un redémarrage sera tenté.
-* Tous les pipelines de production existants seront automatiquement activés avec l’étape Audit d’expérience.
+
+### Correctifs {#bug-fixes}
+
+* Certaines occurrences d’échecs au stade de l’analyse du code sans fournir de résultats corrigés.
+
+* La carte d&#39;Environnement n&#39;affichait pas systématiquement le bouton **Ajouter**.
