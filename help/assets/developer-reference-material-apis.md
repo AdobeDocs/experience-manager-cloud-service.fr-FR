@@ -3,17 +3,65 @@ title: Références du développeur pour  [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 5bc532a930a46127051879e000ab1a7fc235a6a8
 workflow-type: tm+mt
-source-wordcount: '1208'
-ht-degree: 49%
+source-wordcount: '1400'
+ht-degree: 45%
 
 ---
 
 
-# [!DNL Assets] API et matériel de référence pour les développeurs  {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] API et matériel de référence pour les développeurs  {#assets-cloud-service-apis}
 
-L&#39;article contient des documents de référence et des ressources pour les développeurs de [!DNL Assets] en tant que [!DNL Cloud Service]. Il comprend une nouvelle méthode de téléchargement, une référence à l’API et des informations sur la prise en charge fournie dans les workflows de post-traitement.
+L&#39;article contient des recommandations, des documents de référence et des ressources pour les développeurs de [!DNL Assets] en tant que [!DNL Cloud Service]. Il comprend un nouveau module de transfert de ressources, des références d’API et des informations sur la prise en charge fournie dans les workflows de post-traitement.
+
+## [!DNL Experience Manager Assets] API et opérations  {#use-cases-and-apis}
+
+[!DNL Assets] comme a  [!DNL Cloud Service] fournit plusieurs API pour interagir par programmation avec des ressources numériques. Chaque API prend en charge des cas d’utilisation spécifiques, comme indiqué dans le tableau ci-dessous. L&#39;interface utilisateur [!DNL Assets], l&#39;application de bureau [!DNL Experience Manager] et [!DNL Adobe Asset Link] prennent en charge l&#39;ensemble ou une partie des opérations.
+
+>[!CAUTION]
+>
+>Certaines API existent toujours mais ne sont pas activement prises en charge (signalées par un ×) et ne doivent pas être utilisées.
+
+| Niveau de prise en charge | Description |
+| ------------- | --------------------------- |
+| ✓ | Pris en charge |
+| × | pas de prise en charge. Ne pas utiliser. |
+| - | Non disponible |
+
+| Cas d’utilisation | [aem-upload](https://github.com/adobe/aem-upload) | [aem / Sling / API ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) JCRJava | [Service Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | API HTTP [[!DNL Assets]  ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Serlets de [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(Prévisualisation)_ |
+| ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
+| **binaire original** |  |  |  |  |  |  |
+| Créer l’original | obj | × | - | × | × | - |
+| Lire l&#39;original | - | × | obj | obj | obj | - |
+| Mettre à jour l&#39;original | obj | × | obj | × | × | - |
+| Supprimer l&#39;original | - | obj | - | obj | obj | - |
+| Copier l&#39;original | - | obj | - | obj | obj | - |
+| Déplacer l&#39;original | - | obj | - | obj | obj | - |
+| **Métadonnées** |  |  |  |  |  |  |
+| Création de métadonnées | - | obj | obj | obj | obj | - |
+| Lire les métadonnées | - | obj | - | obj | obj | - |
+| Mettre à jour les métadonnées | - | obj | obj | obj | obj | - |
+| Suppression de métadonnées | - | obj | obj | obj | obj | - |
+| Copier les métadonnées | - | obj | - | obj | obj | - |
+| Déplacer les métadonnées | - | obj | - | obj | obj | - |
+| **Fragments de contenu (CF)** |  |  |  |  |  |  |
+| Créer un CF | - | obj | - | obj | - | - |
+| Read CF | - | obj | - | obj | - | obj |
+| Mettre à jour les FC | - | obj | - | obj | - | - |
+| Supprimer CF | - | obj | - | obj | - | - |
+| Copier CF | - | obj | - | obj | - | - |
+| Déplacer CF | - | obj | - | obj | - | - |
+| **Versions** |  |  |  |  |  |  |
+| Créer une version | obj | obj | - | - | - | - |
+| Version de lecture | - | obj | - | - | - | - |
+| Supprimer la version | - | obj | - | - | - | - |
+| **Dossiers** |  |  |  |  |  |  |
+| Créer un dossier | obj | obj | - | obj | - | - |
+| Dossier de lecture | - | obj | - | obj | - | - |
+| Supprimer le dossier | obj | obj | - | obj | - | - |
+| Copier le dossier | obj | obj | - | obj | - | - |
+| Déplacer le dossier | obj | obj | - | obj | - | - |
 
 ## Chargement de ressources {#asset-upload-technical}
 
@@ -31,8 +79,7 @@ Cette approche permet une gestion évolutive et plus performante des transferts 
 * L’enregistrement cloud binaire fonctionne avec un réseau CDN (Content Diffusion Network) ou Edge. Un CDN sélectionne un point de terminaison de transfert plus proche pour un client. Lorsque les données parcourent une distance plus courte jusqu’à un point de terminaison voisin, les performances de transfert et l’expérience utilisateur s’améliorent, en particulier pour les équipes géographiquement réparties.
 
 >[!NOTE]
->
->Consultez le code client pour implémenter cette approche dans la [bibliothèque de transfert aem](https://github.com/adobe/aem-upload) open-source.
+Consultez le code client pour implémenter cette approche dans la [bibliothèque de transfert aem](https://github.com/adobe/aem-upload) open-source.
 
 ### Lancement du chargement {#initiate-upload}
 
