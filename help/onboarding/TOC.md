@@ -4,10 +4,10 @@ user-guide-title: Intégration à AEM as a Cloud Service
 breadcrumb-title: Guide d’intégration
 user-guide-description: Ce guide résume la procédure à suivre pour commencer à utiliser Experience Manager as a Cloud Service, avec les informations d’accès et des informations importantes sur la protection des données.
 translation-type: tm+mt
-source-git-commit: 4245bbad81327ffdba9c400a36a03d815e2ebdc7
+source-git-commit: d1301d4414f87b30f5ab732eacbb61c96f102262
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 67%
+source-wordcount: '380'
+ht-degree: 66%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 67%
       + [Présentation](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [Ajouter une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
       + [Affichage et mise à jour d&#39;une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
-      + [Application de la Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+      + [Application d&#39;une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
       + [Annulation de l&#39;application d&#39;une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
       + [Suppression d’une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [Vérification de l&#39;état d&#39;une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
