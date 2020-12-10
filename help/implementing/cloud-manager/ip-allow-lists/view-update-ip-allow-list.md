@@ -2,7 +2,7 @@
 title: Affichage et mise à jour - Listes autorisées IP dans le Gestionnaire de commandes
 description: Affichage et mise à jour - Listes autorisées IP dans le Gestionnaire de commandes
 translation-type: tm+mt
-source-git-commit: b353de1a58eb8c31de7289677a589cf192ebc0b9
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
@@ -29,10 +29,10 @@ Un utilisateur du rôle Propriétaire de l&#39;entreprise ou Deployment Manager 
 
 Suivez les étapes ci-dessous pour mettre à jour une Liste autorisée IP :
 
-1. Accédez à la page Liste autorisée IP à partir de l’écran Environnements.
+1. Accédez à la page **Listes autorisées IP** à partir de l’écran **Environnements**.
 1. Identifiez la ligne où est répertoriée la règle de Liste autorisée IP que vous souhaitez vue/mettre à jour.
 1. Sélectionnez **...** à l&#39;extrémité droite de la ligne.
-1. Sélectionnez l’option Vue et mise à jour.
+1. Sélectionnez l&#39;option **Vue et mise à jour**.
 1. Apportez des modifications au nom ou à l’adresse IP et confirmez votre envoi.
 
 ## Considérations importantes lors de l’Ajoute, de la mise à jour ou de la suppression de Listes autorisées IP {#considerations}
@@ -41,4 +41,4 @@ Suivez les étapes ci-dessous pour mettre à jour une Liste autorisée IP :
 * La suppression d&#39;une plage d&#39;adresses IP de la Liste autorisée d&#39;adresses IP annule automatiquement son application de tous les services environnements correspondants.
 * Les mises à jour ne peuvent pas être apportées à une Liste autorisée IP alors qu’une mise à jour précédente est en cours et n’est pas terminée.
 * Les mises à jour ne peuvent pas être apportées à une Liste autorisée IP en cas d’erreur provenant d’une mise à jour antérieure. Toute erreur doit être corrigée en tentant de relancer la mise à jour.
-Pour en savoir plus, consultez la section Vérification du statut de la Liste autorisée IP.
+Consultez [Vérification du statut de la Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md) pour en savoir plus.
