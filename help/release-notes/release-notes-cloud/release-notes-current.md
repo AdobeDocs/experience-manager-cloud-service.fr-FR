@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: f37bcfda2b4e4c036ce5c7ddd2dd1aa131f2a6a5
 workflow-type: tm+mt
 source-wordcount: '1269'
-ht-degree: 10%
+ht-degree: 12%
 
 ---
 
 
-# Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service  {#release-notes}
+# Notes de mise à jour pour [!DNL Adobe Experience Manager] as a Cloud Service  {#release-notes}
 
 La section suivante décrit les Notes de mise à jour générales de [!DNL Experience Manager] en tant que Cloud Service.
 
@@ -21,7 +21,7 @@ La version suivante (2020.12.0) sera publiée le 17 décembre 2020.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service{#sites}
 
-### Nouveautés d’[!DNL Sites] {#what-is-new-sites}
+### Nouveautés de [!DNL Sites] {#what-is-new-sites}
 
 * **[Lance la gestion](/help/sites-cloud/authoring/launches/managing-pages.md)  hiérarchique et le  [futur calendrier](/help/sites-cloud/authoring/launches/preview.md)** : Nouvelle interface utilisateur permettant d’ajouter ou de supprimer des pages au cours d’un lancement, et le site de navigation avec Timewarp affiche l’état futur des lancements.
 
@@ -52,7 +52,7 @@ Cet outil est destiné aux administrateurs système, aux consultants ou aux part
    * Lors de la sélection d’une cellule de grille dans la grille présente dans la page, la sélection se déplace vers la barre d’actions qui s’affiche à l’écran.
    * Les utilisateurs visuels peuvent faire la différence entre un texte normal et un lien, car des indices visuels (soulignement et icône en chevron) sont affichés pour les liens vers toutes les solutions dans la page d&#39;accueil [!DNL Experience Manager].
 
-* **Paramètres prédéfinis d’ensemble par lot dans le contenu multimédia** dynamique : Vous pouvez désormais automatiser la création et l’organisation de plusieurs fichiers dans une visionneuse d’images ou une visionneuse à 360° au moment où vous téléchargez des fichiers de fichiers dans un dossier, soit individuellement, soit par assimilation en masse.
+* **Paramètres prédéfinis d’ensemble par lot dans Dynamic Media** : Vous pouvez désormais automatiser la création et l’organisation de plusieurs fichiers dans une visionneuse d’images ou une visionneuse à 360° au moment où vous téléchargez des fichiers de fichiers dans un dossier, soit individuellement, soit par assimilation en masse.
 
    Voir [A propos des paramètres prédéfinis d’ensemble par lot](/help/assets/dynamic-media/batch-set-presets-dm.md).
 
@@ -75,19 +75,19 @@ Cet outil est destiné aux administrateurs système, aux consultants ou aux part
 
 * Site de référence de CIF Venia - 2020.11.05 qui comprend les derniers composants principaux de CIF version 1.5.0. Pour plus d&#39;informations, consultez [Site de référence de CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27).
 
-* Composants principaux CIF version 1.5.0. Pour plus d&#39;informations, consultez [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0).
+* Publication des composants principaux CIF version 1.5.0. Reportez-vous à [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) pour plus de détails.
 
 ### Correctifs {#bug-fixes-commerce}
 
 * La configuration du client GraphQL n&#39;était pas lue correctement lorsque la configuration n&#39;était pas spécifiée directement dans la configuration de l&#39;autorité de certification Sling, mais dans l&#39;une des configurations parentes. Ce problème a été résolu.
 
-## Cloud Manager {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 ### Date de publication {#release-date-cm}
 
 La date de publication de Cloud Manager en tant que Cloud Service 2020.11.0 est le 12 novembre 2020.
 
-### Nouveautés d’[!DNL Cloud Manager] {#what-is-new-cm}
+### Nouveautés de [!DNL Cloud Manager] {#what-is-new-cm}
 
 * Une nouvelle option de menu **Connexion locale** est désormais disponible pour les utilisateurs à partir des options du menu environnement sur les pages de résumé **Environnements** et **Environnements**.
 Pour plus d’informations, consultez [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md##login-locally).
@@ -137,7 +137,7 @@ Suivez cette section pour en savoir plus sur les nouveautés et les mises à jou
 
 La date de publication de l’analyseur des meilleures pratiques est le 13 novembre 2020.
 
-### Nouveautés d’[!DNL Best Practices Analyzer] {#what-is-new-bpa}
+### Nouveautés de [!DNL Best Practices Analyzer] {#what-is-new-bpa}
 
 * Cloud Readiness Analyzer est désormais Best Practices Analyzer (BPA). BPA fournit une évaluation des meilleures pratiques de votre mise en oeuvre AEM en cours et aide à évaluer la capacité de passer d’une instance AEM existante à l’AEM en tant que Cloud Service.
 
