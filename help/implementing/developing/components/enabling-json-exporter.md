@@ -79,7 +79,7 @@ Pour obtenir un exemple, consultez la mise en œuvre du modèle Sling sur le com
 
 Pour plus d’informations, voir :
 
-* [Fragments de contenu du guide de l’utilisateur Assets](/help/assets/content-fragments/content-fragments.md)
+* [Fragments de contenu dans le guide de l’utilisateur d’Assets](/help/assets/content-fragments/content-fragments.md)
 * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
 * [Création à l’aide de fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [Composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) et [Composant Fragment de contenu](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/content-fragment-component.html)
+* [Composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) et [composant Fragment de contenu](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/content-fragment-component.html)
