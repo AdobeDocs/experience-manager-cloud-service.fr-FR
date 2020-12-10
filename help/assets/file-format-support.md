@@ -13,7 +13,7 @@ ht-degree: 93%
 
 # [!DNL Assets] formats de fichier pris en charge  {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] as a prend en charge les fonctionnalités de base de gestion de contenu (stockage, gestion des métadonnées en ligne, gestion des versions, chargement et téléchargement, etc.) pour tout fichier binaire, quel que soit son format.[!DNL Cloud Service] [!DNL Adobe Experience Manager Assets] prend en charge un large éventail de formats de fichiers et chaque fonctionnalité de produit prend en charge différents formats.
+[!DNL Adobe Experience Manager] as a prend en charge les fonctionnalités de base de gestion de contenu (stockage, gestion des métadonnées en ligne, contrôle de version, chargement et téléchargement, etc.) pour tout fichier binaire, quel que soit son format.[!DNL Cloud Service] [!DNL Adobe Experience Manager Assets] prend en charge un large éventail de formats de fichiers et chaque fonctionnalité de produit prend en charge différents formats.
 
 En outre, [!DNL Experience Manager Assets] offre une prise en charge étendue pour générer des prévisualisations et des rendus et pour extraire des métadonnées et du texte pour l’indexation de texte intégral. Cette prise en charge étendue est assurée à l’aide de [microservices de ressources](asset-microservices-configure-and-use.md).
 
