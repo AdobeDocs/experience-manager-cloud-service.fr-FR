@@ -2,9 +2,9 @@
 title: Vérification du statut de la Liste autorisée IP
 description: Vérification du statut de la Liste autorisée IP
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: 4245bbad81327ffdba9c400a36a03d815e2ebdc7
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Voici les définitions de statut qui apparaîtront dans une Liste autorisée IP 
 
 * **Échec** : Échec d&#39;un ou plusieurs processus d&#39;application ou d&#39;annulation d&#39;application dans une mise à jour. Chaque application et annulation de la demande sont répertoriées avec l&#39;option Terminé ou Échec.
    * L&#39;état sera Échec, même si une application/annulation de l&#39;application échoue dans la mise à jour.
-   * L&#39;état restera Échec jusqu&#39;à ce que tous les échecs soient effacés.L&#39;utilisateur doit sélectionner l&#39;icône Réessayer en regard de l&#39;état pour effacer l&#39;échec.
+   * L&#39;état restera Échec jusqu&#39;à ce que tous les échecs soient effacés. L’utilisateur doit sélectionner l’icône de nouvelle tentative en regard de l’état pour effacer l’échec.
    * L&#39;utilisateur ne pourra pas mettre à jour ou supprimer la Liste autorisée IP tant que l&#39;état est Échec.
 
 * **Suppression** : La demande de suppression est en cours. Cela implique la non-application de tous les services. Chaque Annulation sera répertoriée avec Non commencée/En cours/Terminée ou Échec.
