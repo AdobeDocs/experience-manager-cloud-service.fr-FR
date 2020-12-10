@@ -5,8 +5,8 @@ contentOwner: AG
 translation-type: tm+mt
 source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '734'
+ht-degree: 97%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Adobe Experience Manager (AEM) Assets vous permet de partager des ressources, des dossiers et des collections avec des membres de votre entreprise et des tiers, notamment des partenaires et des fournisseurs. Procédez comme suit pour partager des ressources à partir d’Experience Manager Assets as a [!DNL Cloud Service]:
 
-* Partager des ressources sous la forme d’un lien.
+* Partager des ressources en tant que lien.
 * Télécharger des ressources et les partager séparément.
 * Partager via l’application de bureau AEM.
 * Partager via Adobe Asset Link.
@@ -107,7 +107,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 ## Téléchargement et partage de ressources {#download-and-share-assets}
 
-Les utilisateurs peuvent télécharger les ressources requises et les partager en dehors de [!DNL Experience Manager]. Pour plus d’informations, consultez les pages suivantes (en anglais) [Recherche de ressources](/help/assets/search-assets.md), [Téléchargement de ressources](/help/assets/download-assets-from-aem.md) et [Téléchargement de collections](manage-collections.md#download-a-collection)
+Les utilisateurs peuvent télécharger les ressources requises et les partager en dehors d’[!DNL Experience Manager]. Pour plus d’informations, consultez les pages suivantes [Recherche de ressources](/help/assets/search-assets.md), [Téléchargement de ressources](/help/assets/download-assets-from-aem.md) et [Téléchargement de collections](manage-collections.md#download-a-collection)
 
 ## Partage de ressources avec des professionnels de la création {#share-with-creatives}
 
