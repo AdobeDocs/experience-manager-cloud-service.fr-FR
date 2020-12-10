@@ -1,8 +1,8 @@
 ---
-sub-product: Adobe Experience Manager Assets as a Cloud Service
+sub-product: Adobe Experience Manager Assets as a Cloud Service
 user-guide-title: Guide d’Assets as a Cloud Service
 breadcrumb-title: Guide d’Assets
-user-guide-description: Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service.
+user-guide-description: Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
 source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
@@ -85,7 +85,7 @@ ht-degree: 87%
    + [Utilisation de Dynamic Media](dynamic-media/dynamic-media.md)
    + [Configuration de Dynamic Media](dynamic-media/config-dm.md)
    + [Résolution des problèmes liés à Dynamic Media](dynamic-media/troubleshoot-dm.md)
-   + [Accessibilité dans Contenu multimédia dynamique](dynamic-media/accessibility-dm.md)
+   + [Accessibilité dans Dynamic Media](dynamic-media/accessibility-dm.md)
    + [Gestion des ressources Dynamic Media](dynamic-media/managing-assets.md)
    + [Bonnes pratiques relatives à l’optimisation de la qualité des images](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Bonnes pratiques relatives à la gestion des fichiers](dynamic-media/best-practices-for-file-management.md)
