@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Notes de mise à jour d’AEM as a Cloud Service 2020.3.0 {#release-notes}
 
-Cette page décrit les notes de mise à jour générales d’Experience Manager as a Cloud Service 2020.3.0.
+Cette page contient les notes de mise à jour générales d’Experience Manager as a Cloud Service 2020.3.0.
 
 ## Date de publication {#release-date}
 
