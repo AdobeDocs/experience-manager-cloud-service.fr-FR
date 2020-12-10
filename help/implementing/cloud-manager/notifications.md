@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 0f9d9cc0c1a7a50e5ac5fb1da2227537e75ac8ed
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,7 @@ ht-degree: 94%
 >
 >Les notifications Approbation et Planifié sont envoyées uniquement aux utilisateurs ayant les rôles Propriétaire de l’entreprise, Responsable de programme et Responsable de déploiement.
 
-Les notifications s’affichent dans une barre latérale dans l’IU (interface utilisateur) de [!UICONTROL Cloud Manager] et dans Adobe [!UICONTROL Experience Cloud].
-
- 
+Les notifications s’affichent dans une barre latérale dans l’IU (interface utilisateur) de [!UICONTROL Cloud Manager] et dans Adobe [!UICONTROL Experience Cloud]. 
 ![](assets/notify-1.png)
 
 Cliquez sur l’icône représentant une cloche dans l’en-tête pour ouvrir la barre latérale et afficher les notifications, comme illustré dans la figure suivante :
@@ -39,4 +37,4 @@ L’utilisateur sera alors dirigé vers l’écran Préférences de notification
 Les utilisateurs peuvent activer les notifications par e-mail et (facultativement) sélectionner les types de notifications qu’ils souhaitent recevoir par e-mail.
 
 >[!NOTE]
->Vous pouvez également activer la digestion à partir de l&#39;Adobe [!UICONTROL Experience Cloud].
+>Vous pouvez également activer la synthèse à partir d’Adobe [!UICONTROL Experience Cloud].
