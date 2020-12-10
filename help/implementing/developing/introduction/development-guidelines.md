@@ -1,6 +1,6 @@
 ---
-title: Conseils de développement pour AEM as a Cloud Service
-description: Conseils de développement pour AEM as a Cloud Service
+title: Conseils de développement pour AEM as a Cloud Service
+description: Conseils de développement pour AEM as a Cloud Service
 translation-type: tm+mt
 source-git-commit: 2910d5c1d32ca58f6634204bac882fccb3e65bf3
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 99%
 ---
 
 
-# Conseils de développement pour AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
+# Conseils de développement pour AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
 
 Le code s’exécutant dans AEM as a Cloud Service doit savoir qu’il s’exécute toujours dans une grappe. Cela signifie qu’il y a toujours plusieurs instances en cours d’exécution. Le code doit être résilient, d’autant plus qu’une instance peut être arrêtée à tout moment.
 
@@ -134,7 +134,7 @@ Notez qu’en cas de développement local (à l’aide du démarrage rapide disp
 
 Les clients peuvent accéder à CRXDE Lite sur l’environnement de développement du niveau auteur, mais pas sur l’étape ou la production. Le référentiel immuable (`/libs`, `/apps`) ne peut pas être modifié au moment de l’exécution. Toute tentative de ce type entraînera des erreurs.
 
-Un ensemble d’outils pour le débogage des environnements de développeur d’AEM as a Cloud Service est disponible dans la Console de développement pour les environnements de développement, d’évaluation et de production. L’URL peut être déterminée en ajustant les URL du service d’auteur ou de publication comme suit :
+Un ensemble d’outils pour le débogage des environnements de développeur d’AEM as a Cloud Service est disponible dans Developer Console pour les environnements de développement, d’évaluation et de production. L’URL peut être déterminée en ajustant les URL du service d’auteur ou de publication comme suit :
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
