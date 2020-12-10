@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: c3922be7da1e76fee51e2ae2f59f16e260727001
 workflow-type: tm+mt
 source-wordcount: '1955'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -99,7 +99,7 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 
 ### Problèmes connus {#known-issues-cm}
 
-* Les environnements d’un programme Sandbox sont mis en veille prolongée lorsqu’aucune activité n’est détectée pendant une certaine durée. Cet état ne sera pas appliqué dans Cloud Manager. Il peut toutefois être appliqué par le biais de Developer Console. Ce problème sera traité dans une prochaine version.
+* Les environnements d’un programme Sandbox sont mis en veille lorsqu’aucune activité n’est détectée pendant une certaine durée. Cet état ne sera pas appliqué dans Cloud Manager. Il peut toutefois être appliqué par le biais de Developer Console. Ce problème sera traité dans une prochaine version.
 
 * Le lien vers Developer Console directement à partir de Cloud Manager n’affiche pas l’option permettant de mettre en veille/réactiver un environnement de programme Sandbox. Pour résoudre ce problème, une fois dans Developer Console, ajoutez le motif `#release-cm-p1234-e5678` à la fin de l’URL, où *1234* correspond à l’identifiant de programme et *5678* à l’identifiant d’environnement. Ce problème sera traité dans une prochaine version.
 
@@ -118,7 +118,7 @@ Les entreprises peuvent désormais stocker et utiliser des fichiers 3D dans AEM
 
 **Prise en charge d’Adobe Asset Link pour Adobe XD**
 
-Avec la dernière version, [!DNL Experience Manager Assets] prend en charge un nouveau module externe [!DNL Adobe Asset Link] diffusé avec [!DNL Adobe XD] v29.3. L’intégration permet aux concepteurs d’accéder aux ressources d’[!DNL Experience Manager] et de les utiliser dans leurs projets, sans avoir à quitter l’application [!DNL Adobe XD]. Voir [Adobe Asset Link pour Adobe XD](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link-for-xd.html).
+Avec la dernière version, [!DNL Experience Manager Assets] prend en charge un nouveau plug-in [!DNL Adobe Asset Link] publié avec [!DNL Adobe XD] v29.3. L’intégration permet aux concepteurs d’accéder aux ressources d’[!DNL Experience Manager] et de les utiliser dans leurs projets, sans avoir à quitter l’application [!DNL Adobe XD]. Voir [Adobe Asset Link pour Adobe XD](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link-for-xd.html).
 
 Grâce à cette version, les utilisateurs créatifs et les concepteurs peuvent désormais utiliser des ressources gérées dans [!DNL AEM Assets] en utilisant [!DNL Adobe Asset Link] avec toute une gamme d’applications de bureau Creative Cloud, notamment [!DNL Adobe XD], [!DNL Photoshop], [!DNL Illustrator] et [!DNL InDesign].
 
@@ -190,4 +190,4 @@ En plus des nouvelles fonctionnalités ci-dessus, la version actuelle apporte le
 * Lors du téléchargement d’une ressource, si l’option de courrier électronique est sélectionnée et même si une adresse électronique valide est fournie, l’option de téléchargement n’est pas disponible. (CQ-4296535)
 * Les filtres personnalisés enregistrés à titre de collections dynamiques ne sont pas correctement appliqués aux ressources. (CQ-4294942)
 * Différentes améliorations concernant la recherche et l’indexation, et des corrections de bogues, ont été réalisées pour obtenir des gains de performances. (CQ-4286373)
-* L’onglet des propriétés de dossier est inaccessible dans Ressources et renvoie une erreur 500. (CQ-4295701)
+* L’onglet des propriétés de dossier est inaccessible dans Assets et renvoie une erreur 500. (CQ-4295701)
