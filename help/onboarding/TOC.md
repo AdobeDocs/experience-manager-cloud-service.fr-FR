@@ -4,9 +4,9 @@ user-guide-title: Intégration à AEM as a Cloud Service
 breadcrumb-title: Guide d’intégration
 user-guide-description: Ce guide résume la procédure à suivre pour commencer à utiliser Experience Manager as a Cloud Service, avec les informations d’accès et des informations importantes sur la protection des données.
 translation-type: tm+mt
-source-git-commit: f836254f6c4874621d4772758b29c6b22aff0ed6
+source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '359'
 ht-degree: 67%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 67%
       + [Affichage et mise à jour ou remplacement d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
       + [Vérification du statut d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
       + [Suppression d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
-   + Noms de domaine personnalisés {#custom-domain-names}
+   + Gestion des noms de domaine personnalisés {#custom-domain-names}
       + [Présentation](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
       + [Obtention d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
       + [Ajouter un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
@@ -61,7 +61,7 @@ ht-degree: 67%
       + [Affichage et mise à jour du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
       + [Mise à jour du certificat SSL du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
       + [Suppression du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
-   + LISTES AUTORISÉES IP {#ip-allow-lists}
+   + Gestion des Listes autorisées IP {#ip-allow-lists}
       + [Présentation](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [Ajouter une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
       + [Affichage et mise à jour d’une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
