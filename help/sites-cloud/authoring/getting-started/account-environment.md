@@ -1,6 +1,6 @@
 ---
-title: 'Configuration de votre environnement de compte  '
-description: AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création
+title: Configuration de votre environnement de compte
+description: AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
 translation-type: tm+mt
 source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Configuration de votre environnement de compte    {#configuring-your-account-environment}
+# Configuration de votre environnement de compte  {#configuring-your-account-environment}
 
 AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
 
@@ -64,7 +64,7 @@ Chaque utilisateur peut définir certaines propriétés pour lui-même.
    Cette opération définit la couleur par défaut utilisée pour les annotations.
 
    * Cliquez sur le bloc de couleurs pour ouvrir le sélecteur d’échantillon afin de choisir une couleur.
-   * Vous pouvez également saisir le code hexadécimal de la couleur désirée dans le champ. 
+   * Vous pouvez également saisir le code hexadécimal de la couleur désirée dans le champ.
 
 * **Présentation de la date relative**
 
