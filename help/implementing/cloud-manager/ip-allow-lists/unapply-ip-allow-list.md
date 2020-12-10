@@ -2,7 +2,7 @@
 title: 'Annuler l''application de la Liste autorisée IP '
 description: Annuler l'application de la Liste autorisée IP
 translation-type: tm+mt
-source-git-commit: e92fc7bac289481d046eb6bc27da833f17b29c7e
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 0%
@@ -19,7 +19,7 @@ L’annulation de l’application d’une Liste autorisée IP est le processus p
 
 Suivez les étapes ci-dessous pour annuler l’application d’une Liste autorisée IP :
 
-1. Accédez à la page Détails de l&#39;Environnement spécifique à partir de l&#39;écran Environnements et accédez au tableau Liste autorisée IP.
+1. Accédez à la page Détails de l&#39;Environnement spécifique à partir de l&#39;écran **Environnements** et accédez au tableau Liste autorisée IP.
 1. Identifiez la ligne où est répertoriée la règle de Liste autorisée IP que vous souhaitez annuler.
 1. Sélectionnez **...** à l&#39;extrémité droite de la ligne.
-1. Sélectionnez l’option Annuler l’application et confirmez votre envoi.
+1. Sélectionnez l&#39;option **Annuler** et confirmez votre envoi.
