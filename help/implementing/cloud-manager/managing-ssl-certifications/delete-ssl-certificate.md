@@ -2,9 +2,9 @@
 title: Suppression d’un certificat SSL - Gestion des certificats SSL
 description: Suppression d’un certificat SSL - Gestion des certificats SSL
 translation-type: tm+mt
-source-git-commit: e5305efad061ae0b06ecb16433fccd5e97f978f3
+source-git-commit: 84c8204d257de4ecdee3728176f6d4ef545346f5
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >La suppression de certificats de Cloud Manager est une action permanente qui ne peut pas être annulée. Il est recommandé d’enregistrer les fichiers SSL nécessaires localement avant de les supprimer dans l’interface utilisateur de Cloud Manager.
 
 >[!NOTE]
->Un utilisateur doit se trouver dans le rôle Business Owner ou Deployment Manager pour pouvoir supprimer un certificat SSL dans Cloud Manager. Cloud Manager ne vous permet pas de supprimer un certificat SSL associé à un ou plusieurs domaines.  Tous les domaines associés doivent être supprimés avant de supprimer le certificat SSL. Reportez-vous à Supprimer le nom de domaine personnalisé INSERT LINK pour en savoir plus sur cette rubrique.
+>Un utilisateur doit se trouver dans le rôle Business Owner ou Deployment Manager pour pouvoir supprimer un certificat SSL dans Cloud Manager. Cloud Manager ne vous permet pas de supprimer un certificat SSL associé à un ou plusieurs domaines.  Tous les domaines associés doivent être supprimés avant de supprimer le certificat SSL. Consultez [Suppression d&#39;un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) pour en savoir plus.
 
 Pour supprimer un certificat SSL, procédez comme suit :
 
