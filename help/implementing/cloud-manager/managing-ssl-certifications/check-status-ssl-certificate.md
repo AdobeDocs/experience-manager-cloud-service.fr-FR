@@ -2,9 +2,9 @@
 title: Vérification de l’état d’un certificat SSL - Gestion des certificats SSL
 description: Vérification de l’état d’un certificat SSL - Gestion des certificats SSL
 translation-type: tm+mt
-source-git-commit: e27e5302802e68dce2a5713626950896bb35420a
+source-git-commit: f426a9a653a3a3ae06abdbd2262e5d8f4beff277
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '138'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Vérification du statut d&#39;un certificat SSL {#checking-status-an-ssl-certificate}
 
-L’état de vos certificats SSL peut être compris d’un seul coup d’oeil à partir de la page de certificat SSL ou de la page de détails de l’Environnement.
+L’état de vos certificats SSL peut être compris d’un seul coup d’oeil à partir de la page de certificat SSL.
 
 Vous pouvez identifier l’état d’un certificat SSL à partir des modèles de couleurs suivants :
 
