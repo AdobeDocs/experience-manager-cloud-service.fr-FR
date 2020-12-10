@@ -2,9 +2,9 @@
 title: Introduction - Listes autorisées IP dans le Gestionnaire de commandes
 description: Introduction - Listes autorisées IP dans le Gestionnaire de commandes
 translation-type: tm+mt
-source-git-commit: ef7d8c340d4c6c47ede89552e6c4bfab49251d79
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ aem en tant que service cloud ouvert à Internet et la sécurité est gérée pa
 Les Listes autorisées IP peuvent être ajoutées une seule fois et appliquées/non appliquées plusieurs fois en tant qu’unité ou entité à un service Auteur et/ou Editeur dans un environnement.
 
 >[!NOTE]
->Les noms des Listes autorisées IP sont pris en charge dans Cloud Manager pour les services d’auteur et/ou de publication dans un environnement.
+>Les noms de Listes autorisées IP sont pris en charge dans Cloud Manager pour les services d’auteur et/ou de publication dans un environnement.
 
 A l’aide de la page Liste autorisée IP de l’interface utilisateur de Cloud Manager ou de la page Détails de l’Environnement, un utilisateur disposant d’autorisations peut effectuer plusieurs tâches pour gérer les Listes autorisées IP de vos environnements, notamment :
 
