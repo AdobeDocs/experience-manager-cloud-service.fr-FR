@@ -121,7 +121,6 @@ Pour qu’un composant fonctionne avec le système de style d’AEM et affiche l
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->
 >Cette méthode utilise des [recouvrements](/help/implementing/developing/introduction/overlays.md) en faisant appel à [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 Une fois le composant configuré, les styles définis par les auteurs de pages seront automatiquement insérés par AEM sur l’élément de décoration qu’AEM ajoute automatiquement autour de chaque composant modifiable. Le composant lui-même n’a besoin d’effectuer aucune autre action pour que cela se produise.
@@ -136,7 +135,6 @@ L’onglet de la boîte de dialogue Modifier peut être inclus de la même mani�
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->
 >Cette méthode utilise des [recouvrements](/help/implementing/developing/introduction/overlays.md) en faisant appel à [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 >[!NOTE]
@@ -158,6 +156,7 @@ Cette propriété est définie sur le nœud `cq:Component`. Par exemple :
 >1. HTL est prioritaire sur tout le reste : `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. Ensuite, au sein de plusieurs styles actifs, le premier style de la liste des styles configurés dans la stratégie du composant est sélectionné.
 >1. Enfin, le nom `cq:htmlTag`/ `cq:tagName` du composant est considéré comme une valeur de repli.
+
 >
 
 
