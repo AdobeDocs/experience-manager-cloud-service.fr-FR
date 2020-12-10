@@ -2,7 +2,7 @@
 title: Introduction - Gestion des certificats SSL
 description: Introduction - Gestion des certificats SSL
 translation-type: tm+mt
-source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
+source-git-commit: 4ab944ad15390f9399138672a024aa30cf4aede8
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Présentation {#introduction}
 
-Cloud Manager permet aux clients d’installer des certificats SSL en libre-service via l’interface utilisateur de Cloud Manager. Cloud Manager utilise un service Platform TLS pour gérer les certificats SSL et les clés privées détenues par les clients et généralement obtenues auprès d’autorités de certification tierces, par exemple Let’s Encrypt.
+Cloud Manager permet aux clients d’installer des certificats SSL en libre-service via l’interface utilisateur de Cloud Manager. Cloud Manager utilise un service Platform TLS pour gérer les certificats SSL et les clés privées détenues par les clients et généralement obtenues auprès d’autorités de certification tierces, par exemple, *Chiffrement*.
 
 ## Points importants {#important-considerations}
 
