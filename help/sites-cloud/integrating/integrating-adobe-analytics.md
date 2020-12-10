@@ -21,11 +21,11 @@ Par rapport aux versions précédentes d’AEM, la prise en charge du framework 
 
 >[!NOTE]
 >
->Les clients Adobe Experience Manager as a Cloud Service qui ne disposent pas d’un compte Analytics existant peuvent demander l’accès au package Analytics Foundation pour Experience Cloud. Ce Foundation Pack offre une utilisation limitée en volume d’Analytics.
+>Les clients Adobe Experience Manager as a Cloud Service qui ne disposent pas d’un compte Analytics existant peuvent demander l’accès à l’Analytics Foundation Pack pour Experience Cloud. Ce Foundation Pack offre une utilisation limitée en volume d’Analytics.
 
 ## Création de la configuration d’Adobe Analytics {#analytics-configuration}
 
-1. Accédez à **Outils** → **Cloud Services**.
+1. Accédez à **Outils** 	 **Cloud Services**.
 2. Sélectionnez **Adobe Analytics**.
    ![Fenêtre Adobe Analytics](assets/analytics_screen2.png "Fenêtre Adobe Analytics")
 3. Cliquez sur le bouton **Créer**.
