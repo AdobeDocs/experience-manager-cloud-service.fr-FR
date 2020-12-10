@@ -2,9 +2,9 @@
 title: Ajouter un nom de domaine personnalisé
 description: Ajouter un nom de domaine personnalisé
 translation-type: tm+mt
-source-git-commit: 6571c11cedbc0d81fbdfd8072a39b1327bdba10b
+source-git-commit: 9d5f7d633ac8dfaadf315e85666479c87a0afa04
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -14,12 +14,13 @@ ht-degree: 0%
 
 Un utilisateur doit être un propriétaire d’entreprise ou un gestionnaire de déploiement pour pouvoir ajouter un nom de domaine personnalisé dans Cloud Manager.
 
->[!NOTE]
->Avant d’ajouter un nom de domaine personnalisé, un certificat SSL valide contenant le nom de domaine personnalisé doit être installé sur votre Programme. Consultez la section Installation d’un certificat SSL pour en savoir plus.
+## Points importants {#important-considerations}
 
-Un seul nom de domaine peut être ajouté à la fois. Les utilisateurs peuvent toutefois ajouter des caractères génériques, par exemple `*.wknd.com` en tant que nom de domaine, ce qui permet d’héberger plusieurs sous-domaines avec un enregistrement TXT unique.
-Chaque Environnement de Cloud Manager peut héberger jusqu’à 50 domaines personnalisés par environnement.
-Le même nom de domaine ne peut pas être utilisé sur plusieurs environnements.
+* Avant d’ajouter un nom de domaine personnalisé, un certificat SSL valide contenant le nom de domaine personnalisé doit être installé sur votre Programme. Consultez [Ajouter un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) pour en savoir plus.
+
+* Un seul nom de domaine peut être ajouté à la fois. Les utilisateurs peuvent toutefois ajouter des caractères génériques, par exemple `*.wknd.com` en tant que nom de domaine, ce qui permet d’héberger plusieurs sous-domaines avec un enregistrement TXT unique.
+
+* Chaque Environnement de Cloud Manager peut héberger jusqu’à 100 domaines personnalisés par environnement. Le même nom de domaine ne peut pas être utilisé sur plusieurs environnements.
 
 ## Ajouter un nom de domaine personnalisé à partir de la page Paramètres de domaine {#adding-cdn-settings}
 
@@ -38,10 +39,8 @@ Suivez les étapes ci-dessous pour ajouter un nom de domaine personnalisé à pa
 
 1. Sélectionnez le certificat SSL dans la liste déroulante et sélectionnez Continuer.
 
-1. Vous accédez alors à l’écran Vérification du nom de domaine pour votre Environnement. Consultez Ajouter un enregistrement TXT pour en savoir plus.
-
-   >[!NOTE]
-   >Suivez les instructions fournies pour prouver la propriété du domaine de votre environnement.
+1. Vous accédez alors à l’écran Vérification du nom de domaine pour votre Environnement. Consultez [Ajouter un enregistrement TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) pour en savoir plus.
+Suivez les instructions fournies pour prouver la propriété du domaine de votre environnement.
 
 1. Sélectionnez Continuer.
 1. Le déploiement CDN nécessite un certificat SSL valide et une vérification TXT réussie. Ceci est indiqué par l’état **Vérifié et déployé**.
@@ -56,10 +55,7 @@ Suivez les étapes ci-dessous pour ajouter un nom de domaine personnalisé à pa
 1. Utilisez les champs d’entrée situés en haut du tableau Noms de domaine pour envoyer le nom de domaine personnalisé, le certificat SSL. Sélectionnez ensuite Ajouter.
 1. L&#39;Assistant Ajouter un nom de domaine personnalisé s&#39;ouvre alors avec le nom d&#39;Environnement pré-renseigné.
 1. Entrez le nom de domaine personnalisé. Remarque : N’incluez pas d’espaces `http://`, `https://` lors de la saisie dans votre domaine. Sélectionnez Continuer.
-1. Vous accédez alors à l’écran Vérification du nom de domaine pour votre Environnement. Consultez la section Vérification du domaine (Ajouter l’enregistrement TXT) pour en savoir plus.
-
-   >[!NOTE]
-   >Suivez les instructions fournies pour prouver la propriété du domaine de votre environnement.
+1. Vous accédez alors à l’écran Vérification du nom de domaine pour votre Environnement. Consultez [Vérification de domaine](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) pour en savoir plus. Suivez les instructions fournies pour prouver la propriété du domaine de votre environnement.
 
 1. Sélectionnez Continuer.
 1. Le déploiement CDN nécessite un certificat SSL valide et une vérification TXT réussie. Ceci est indiqué par l’état **Vérifié et déployé**.
