@@ -6,8 +6,8 @@ mini-toc-levels: 1
 translation-type: tm+mt
 source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1850'
+ht-degree: 99%
 
 ---
 
@@ -69,7 +69,7 @@ Les métadonnées techniques sont utiles pour les applications logicielles qui t
 * débit d’un fichier audio ou vidéo ;
 * résolution (niveau de détail) d’une image.
 
-Les métadonnées descriptives concernent le domaine d’application, par exemple l’entreprise d’où provient un fichier et ne peuvent pas être déterminées automatiquement. Elles sont créées manuellement ou semi-automatiquement. Par exemple, une caméra GPS peut automatiquement suivre la latitude et la longitude et ajouter un balisage géographique à l’image.
+Les métadonnées descriptives concernent le domaine d’application (par exemple, l’entreprise d’où provient une ressource) et ne peuvent pas être déterminées automatiquement. Elles sont créées manuellement ou semi-automatiquement. Par exemple, une caméra GPS peut automatiquement suivre la latitude et la longitude et ajouter un balisage géographique à l’image.
 
 La création manuelle d’informations descriptives de métadonnées coûte cher. Des normes ont donc été mises en place pour faciliter l’échange de métadonnées entre les systèmes logiciels et les organisations. [!DNL Experience Manager Assets] prend en charge l’ensemble des normes pertinentes pour la gestion des métadonnées.
 
@@ -142,15 +142,15 @@ Enterprise Manager Assets vous permet de modifier les métadonnées de plusieu
    >
    >Pour les champs à une seule valeur, les nouvelles métadonnées ne sont pas ajoutées à la valeur existante dans le champ même si vous sélectionnez **[!UICONTROL Mode d’ajout]**.
 
-## Métadonnées personnalisées à l’aide du profil de traitement {#metadata-compute-service}
+## Métadonnées personnalisées à l’aide d’un profil de traitement {#metadata-compute-service}
 
-Les ressources sous la forme [!DNL Cloud Service] peuvent générer des métadonnées personnalisées pour une ressource à l’aide de services natifs au cloud. Configurez un profil de traitement pour générer des métadonnées personnalisées. Voir [comment utiliser le profil de traitement](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
+Les ressources sous la forme [!DNL Cloud Service] peuvent générer des métadonnées personnalisées pour une ressource à l’aide de services natifs au cloud. Configurez un profil de traitement pour générer des métadonnées personnalisées. Voir [Comment utiliser un profil de traitement](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
 ![Rendu des métadonnées dans le profil de traitement](assets/processing-profile-metadata.png)
 
 >[!TIP]
 >
->Un seul profil de traitement peut être appliqué à un dossier. Pour appliquer plusieurs traitements aux fichiers d’un dossier, ajoutez d’autres options à un seul profil de traitement. Par exemple, un seul profil peut générer des rendus, transcoder des fichiers, générer des métadonnées personnalisées, etc. Vous pouvez appliquer des filtres de type MIME pour chaque tâche afin que la tâche appropriée soit déclenchée pour le format de fichier requis.
+>Un seul profil de traitement peut être appliqué à un dossier. Pour appliquer plusieurs traitements aux ressources d’un dossier, ajoutez d’autres options à un seul profil de traitement. Par exemple, un seul profil peut générer des rendus, transcoder des ressources, générer des métadonnées personnalisées, etc. Vous pouvez appliquer des filtres de type MIME pour chaque tâche afin que la tâche appropriée soit déclenchée pour le format de fichier requis.
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
@@ -184,7 +184,7 @@ Les schémas de métadonnées pris en charge sont répertoriés ci-dessous.
 
 Les métadonnées spécifiques à l’application englobent des métadonnées techniques et descriptives. Si vous utilisez ces types de métadonnées, il se peut que d’autres applications ne soient pas en mesure de les exploiter. Par exemple, il est possible qu’une autre application de rendu d’image ne puisse pas accéder aux métadonnées [!DNL Adobe Photoshop]. Vous pouvez créer une étape de workflow qui transforme une propriété spécifique à l’application en propriété standard.
 
-* ACDSee – métadonnées gérées par le programme. [!DNL ACDSee] Voir [www.acdsee.com/](https://www.acdsee.com/).
+* ACDSee – métadonnées gérées par le programme [!DNL ACDSee]. Voir [www.acdsee.com/](https://www.acdsee.com/).
 * Album – [!DNL Adobe Photoshop Album].
 * CQ – utilisées par [!DNL Experience Manager Assets].
 * DAM – utilisées par [!DNL Experience Manager Assets].
@@ -201,7 +201,7 @@ Les métadonnées spécifiques à l’application englobent des métadonnées te
 * CC – [!DNL Creative Commons].
 * [!DNL XMPRights].
 * PLUS – [Picture Licensing Universal System](https://www.useplus.com).
-* PRISM – [ Exigences de publication pour les métadonnées standard du secteur (Publishing Requirements for Industry Standard Metadata). ](https://www.idealliance.org/prism-metadata)
+* PRISM – [Exigences de publication pour les métadonnées standard du secteur (Publishing Requirements for Industry Standard Metadata)](https://www.idealliance.org/prism-metadata).
 * PRL – PRISM Rights Language.
 * PUR – PRISM Usage Rights.
 * `xmpPlus` – intégration de PLUS avec XMP.
@@ -216,7 +216,7 @@ Les métadonnées spécifiques à l’application englobent des métadonnées te
 ### Métadonnées spécifiques à l’impression {#print-specific-metadata}
 
 * PDF et PDF/X – Adobe PDF et applications tierces.
-* PRISM – [ Exigences de publication pour les métadonnées standard du secteur (Publishing Requirements for Industry Standard Metadata). ](https://www.idealliance.org/prism-metadata)
+* PRISM – [Exigences de publication pour les métadonnées standard du secteur (Publishing Requirements for Industry Standard Metadata)](https://www.idealliance.org/prism-metadata).
 * XMP – [!DNL Extensible Metadata Platform].
 * `xmpPG` – Métadonnées XMP pour le texte paginé.
 
