@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: c1014098cecf3c3f86a7af844801fb1202864b51
 workflow-type: tm+mt
 source-wordcount: '863'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Le contenu et les sous-dossiers de `/apps` et `/libs` sont en lecture seule. Les
 * Les informations de conception de modèles statiques stockées dans `/apps` ne peuvent pas être modifiées au moyen de l’interface utilisateur.
    * Il est recommandé d’utiliser plutôt des modèles modifiables.
    * Si des modèles statiques sont toujours requis, les informations de configuration doivent provenir de Git via le pipeline CI/CD.
-* Les configurations de déploiement MSM personnalisées et MSM Blueprint doivent être installées à partir de Git via le pipeline CI/CD.
+* Les configurations de déploiement MSM personnalisées et le plan directeur MSM doivent être installés à partir de Git via le pipeline CI/CD.
 * Les changements de traduction I18n doivent provenir de Git via le pipeline CI/CD.
 
 ## Les paramètres et bundles OSGi doivent être basés sur le référentiel {#osgi}
@@ -109,7 +109,7 @@ Pour la transition d’un projet à partir d’AMS ou d’une installation sur s
 
 ## Gestion et diffusion des ressources {#asset-handling}
 
-Le transfert, le traitement et le téléchargement des ressources ont été optimisés en tant que Cloud Service des ressources afin d’être plus efficaces et de permettre ainsi une mise à l’échelle et des téléchargements et téléchargements plus rapides. Cela peut toutefois avoir une incidence sur certains codes personnalisés existants.
+Le chargement, le traitement et le téléchargement des ressources ont été optimisés dans Assets as a Cloud Service. Cela se traduit par un dimensionnement plus efficace, ainsi que des chargements et des téléchargements plus rapides. Cela peut toutefois avoir une incidence sur certains codes personnalisés existants.
 
 * Le workflow par défaut de **Mise à jour des ressources DAM** dans les versions précédentes d’AEM n’est plus disponible.
 * Les composants de site web qui diffusent un fichier binaire **sans transformation** doivent utiliser le téléchargement direct.
