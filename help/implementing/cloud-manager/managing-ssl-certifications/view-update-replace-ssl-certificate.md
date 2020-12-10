@@ -2,7 +2,7 @@
 title: 'Affichage de la mise à jour et du remplacement d’un certificat SSL - Gestion de SSL '
 description: Affichage de la mise à jour et du remplacement d’un certificat SSL - Gestion des certificats SSL
 translation-type: tm+mt
-source-git-commit: d5a119921a06ea06cbf2b95353083aa987869629
+source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Quand utiliser ces options dans l’interface utilisateur de Cloud Manager :
 
 ## Mise à jour d’un certificat SSL sur le point d’expirer {#update-ssl-certificate}
 
-Lorsqu’un certificat expire, les domaines utilisés avec le certificat expiré ne fonctionneront plus. Pour mettre à jour un certificat expiré, vous devez suivre les étapes ci-dessous. Ainsi, votre domaine continuera à fonctionner comme vous le souhaitez. Pour Ajouter un nouveau certificat, il est nécessaire de mettre à jour le nom de domaine personnalisé avec le nouveau certificat avant que les domaines ne fonctionnent comme vous le souhaitez. Voir [Affichage et mise à jour et remplacement d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)pour plus d’informations.
+Lorsqu’un certificat expire, les domaines utilisés avec le certificat expiré ne fonctionneront plus. Pour mettre à jour un certificat expiré, vous devez suivre les étapes ci-dessous. Ainsi, votre domaine continuera à fonctionner comme vous le souhaitez. Pour Ajouter un nouveau certificat, il est nécessaire de mettre à jour le nom de domaine personnalisé avec le nouveau certificat avant que les domaines ne fonctionnent comme vous le souhaitez. Pour plus d&#39;informations, consultez [Affichage et mise à jour et remplacement d&#39;un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md).
 
 Pour mettre à jour un certificat SSL, procédez comme suit :
 
