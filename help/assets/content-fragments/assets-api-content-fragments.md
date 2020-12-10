@@ -20,16 +20,18 @@ ht-degree: 100%
 >
 >* l’API REST Assets,
 >* y compris la prise en charge des fragments de contenu
+
 >
->L’implémentation actuelle de l’API HTTP Assets est basée sur le style architectural [REST](https://fr.wikipedia.org/wiki/Representational_state_transfer).
+>
+L’implémentation actuelle de l’API HTTP Assets est basée sur le style architectural [REST](https://fr.wikipedia.org/wiki/Representational_state_transfer).
 
 L’[API REST Assets](/help/assets/mac-api-assets.md) permet aux développeurs d’Adobe Experience Manager as a Cloud Service d’accéder au contenu (stocké dans AEM) directement via l’API HTTP, via des opérations CRUD (création, lecture, mise à jour et suppression).
 
 L’API permet d’utiliser Adobe Experience Manager as a Cloud Service en tant que système de gestion de contenu (CMS) sans interface utilisateur en fournissant des services de contenu à une application frontale JavaScript. Ou toute autre application pouvant exécuter des requêtes HTTP et gérer les réponses JSON.
 
-Par exemple, les applications monopages, basées sur la structure ou personnalisées, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
+Par exemple, les applications sur une seule page, basées sur la structure ou personnalisées, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
 
-Bien que les [composants de base AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) fournissent une API très complète, flexible et personnalisable pouvant traiter les opérations de lecture requises à cette fin, et dont la sortie JSON peut être personnalisée, ils ne nécessitent pas de connaissances sur AEM WCM (Web Content Management) pour la mise en œuvre, car ils doivent être hébergés sur des pages reposant sur des modèles AEM dédiés. Les entreprises de développement d’applications monopages n’ont pas toutes accès à ces connaissances.
+Bien que les [composants de base AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) fournissent une API très complète, flexible et personnalisable pouvant traiter les opérations de lecture requises à cette fin, et dont la sortie JSON peut être personnalisée, ils ne nécessitent pas de connaissances sur AEM WCM (Web Content Management) pour la mise en œuvre, car ils doivent être hébergés sur des pages reposant sur des modèles AEM dédiés. Les entreprises de développement d’applications sur une seule page n’ont pas toutes accès à ces connaissances.
 
 Dans ce cas, l’API REST Assets peut être utilisée. Elle permet aux développeurs d’accéder à des ressources (par exemple, des images et des fragments de contenu) directement, sans devoir d’abord les intégrer dans une page puis diffuser leur contenu au format JSON sérialisé.
 
@@ -63,7 +65,6 @@ Elle utilise le point d’entrée `/api/assets` et requiert le chemin d’accès
 Par exemple, pour accéder à `/content/dam/wknd/en/adventures/cycling-tuscany`, demandez `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 >[!NOTE]
->
 >Accès via :
 >* `/api/assets` **ne nécessite pas** l’utilisation du sélecteur `.model`.
 >* `/content/path/to/page` **nécessite** l’utilisation du sélecteur `.model`.
@@ -104,7 +105,7 @@ Cela signifie que les requêtes suivantes (`write`) ne peuvent pas être combin�
   <tr>
    <td>Cas d’utilisation pris en charge</td>
    <td>Objectif général.</td>
-   <td><p>Optimisé pour une utilisation dans une application monopage (SPA) ou tout autre contexte (utilisant du contenu).</p> <p>Peut également contenir des informations de disposition.</p> </td>
+   <td><p>Optimisé pour une utilisation dans une application sur une seule page (SPA) ou tout autre contexte (utilisant du contenu).</p> <p>Peut également contenir des informations de disposition.</p> </td>
   </tr>
   <tr>
    <td>Opérations prises en charge</td>
@@ -126,7 +127,7 @@ Cela signifie que les requêtes suivantes (`write`) ne peuvent pas être combin�
   </tr>
   <tr>
    <td>Remarques sur l’architecture</td>
-   <td><p>L’accès en écriture résout généralement une instance d’auteur.</p> <p>Un accès en lecture peut également être redirigée vers une instance de publication.</p> </td>
+   <td><p>L’accès en écriture résout généralement une instance d’auteur.</p> <p>Un accès en lecture peut également être redirigé vers une instance de publication.</p> </td>
    <td>Comme cette approche est en lecture seule, elle est généralement utilisée pour les instances de publication.</td>
   </tr>
   <tr>
@@ -147,6 +148,7 @@ Si l’API REST Assets est utilisée dans un environnement sans conditions d’a
 >
 >* [CORS/AEM expliqué](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [Vidéo - Développement pour CORS et AEM](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
@@ -219,7 +221,7 @@ Un [fragment de contenu](/help/assets/content-fragments/content-fragments.md) es
 
 Comme il existe plusieurs différences au sein des ressources *standard* (telles que les images ou le son), certaines règles supplémentaires s’appliquent pour les gérer.
 
-#### Représentation    {#representation}
+#### Représentation  {#representation}
 
 Les fragments de contenu :
 
@@ -228,7 +230,7 @@ Les fragments de contenu :
 
 * Sont également considérés comme atomiques, c’est-à-dire que les éléments et les variations sont exposés dans les propriétés du fragment et non pas en tant que liens ou entités enfants. Cela permet un accès efficace à la charge utile d’un fragment.
 
-#### Modèles et fragments de contenu    {#content-models-and-content-fragments}
+#### Modèles et fragments de contenu  {#content-models-and-content-fragments}
 
 Actuellement, les modèles qui définissent la structure d’un fragment de contenu ne sont pas exposés via une API HTTP. Par conséquent, le *consommateur* doit disposer d’informations sur le modèle d’un fragment (au moins un minimum), bien que la plupart des informations puissent être déduites de la charge utile (par exemple, les types de données, etc.). Font partie de la définition.
 
@@ -321,7 +323,7 @@ Les codes d’état suivants s’affichent dans les circonstances pertinentes :
 
    * mise à jour réussie d’un fragment de contenu via `PUT`
 
-* **** 201 (Créé)
+* **201** (Créé)
 
    Affiché dans le scénario suivant :
 
@@ -333,7 +335,7 @@ Les codes d’état suivants s’affichent dans les circonstances pertinentes :
 
    * le fragment de contenu demandé n’existe pas
 
-* **** 500 (Erreur interne du serveur)
+* **500** (Erreur interne du serveur)
 
    >[!NOTE]
    >
@@ -379,7 +381,7 @@ Les codes d’état suivants s’affichent dans les circonstances pertinentes :
    }
    ```
 
-## Référence d’API    {#api-reference}
+## Référence d’API  {#api-reference}
 
 Pour accéder aux références d’API détaillées :
 <!--
