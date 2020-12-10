@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
 source-wordcount: '4407'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ Lorsque vous organisez une collection de ressources, comme toutes les images `Na
 
 >[!NOTE]
 >
->* Le partage d’un dossier de ressources du type `sling:OrderedFolder` n’est pas pris en charge lors du partage vers Marketing Cloud. Si vous souhaitez partager un dossier, ne sélectionnez pas [!UICONTROL Ordonné] lors de la création du dossier.
+>* Le partage d’un dossier de ressources du type `sling:OrderedFolder` n’est pas pris en charge lors du partage vers Experience Cloud. Si vous souhaitez partager un dossier, ne sélectionnez pas [!UICONTROL Ordonné] lors de la création du dossier.
 >* Experience Manager n’autorise pas l’utilisation du mot `subassets` comme nom de dossier. Il s’agit d’un mot-clé réservé au nœud qui contient des sous-ressources pour les ressources composites.
 
 
@@ -47,7 +47,7 @@ Si un utilisateur DAM charge une ou plusieurs ressources qui existent déjà dan
 
 ![Détecter la configuration OSGi des ressources en double](assets/duplicate-detection.png)
 
-Vous pouvez ajouter le fichier de configuration `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` dans le code personnalisé et le fichier peut contenir les éléments suivants :
+Vous pouvez ajouter le fichier de configuration `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` dans le code personnalisé et le fichier peut contenir les éléments suivants :
 
 ```json
 {
@@ -343,7 +343,7 @@ Les groupes d’utilisateurs fermés constituent un moyen supplémentaire de lim
 1. Publiez le dossier, puis tentez d’y accéder à partir de l’instance de publication. Un écran de connexion s’affiche.
 1. Si vous êtes membre d’un groupe d’utilisateurs fermé, saisissez vos informations d’identification de sécurité. Le dossier s’affiche une fois que [!DNL Experience Manager] vous a authentifié.
 
-## Recherche de ressources   {#search-assets}
+## Recherche de ressources  {#search-assets}
 
 La recherche de ressources est essentielle pour l’utilisation d’un système de gestion des ressources numériques, que ce soit pour une utilisation plus poussée par les créatifs, pour une gestion robuste des ressources par les utilisateurs et spécialistes marketing ou pour l’administration par les administrateurs DAM.
 
@@ -420,7 +420,7 @@ La chronologie permet d’afficher différents événements d’un élément sé
 
 >[!NOTE]
 >
->Dans la [console Collections](/help/assets/manage-collections.md#navigate-the-collections-console), la liste **[!UICONTROL Tout afficher]** contient des options permettant de n’afficher que les commentaires et les workflows. De plus, la frise chronologique ne s’affiche que pour les collections de niveau supérieur répertoriées dans la console. Elle ne s’affiche pas si vous accédez à l’intérieur des collections.
+>Dans la [console Collections](/help/assets/manage-collections.md#navigate-the-collections-console), la liste **[!UICONTROL Afficher tout]** contient des options permettant de n’afficher que les commentaires et les workflows. De plus, la chronologie ne s’affiche que pour les collections de niveau supérieur répertoriées dans la console. Elle ne s’affiche pas si vous accédez à l’intérieur des collections.
 
 >[!NOTE]
 >
@@ -440,7 +440,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 1. Appuyez/cliquez sur l’icône **[!UICONTROL Annoter]** à partir de l’une des options suivantes :
 
    * [Actions rapides](#quick-actions)
-   * Dans la barre d’outils, après avoir sélectionné la ressource  ou avoir accédé à la page de la ressource
+   * Dans la barre d’outils, après avoir sélectionné la ressource ou avoir accédé à la page de la ressource
 
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
@@ -493,7 +493,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
    ![chlimage_1-239](assets/chlimage_1-239.png)
 
-1. Dans la liste **[!UICONTROL Tout afficher]** de la chronologie, sélectionnez **[!UICONTROL Commentaires]** pour filtrer les résultats selon les annotations.
+1. Dans la liste **[!UICONTROL Afficher tout]** de la chronologie, sélectionnez **[!UICONTROL Commentaires]** pour filtrer les résultats selon les annotations.
 
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
@@ -589,7 +589,7 @@ La création de versions permet d’effectuer les opérations suivantes :
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Pour afficher la version qui vient d’être créée, ouvrez la liste **[!UICONTROL Tout afficher]** dans la chronologie à partir de la page de détails de la ressource ou de l’interface utilisateur d’Assets et sélectionnez **[!UICONTROL Versions]**. Toutes les versions créées pour une ressource sont répertoriées sous l’onglet Chronologie. Pour filtrer la liste afin d’afficher les versions, cliquez sur la flèche pointant vers le bas et sélectionnez **[!UICONTROL Versions]** dans la liste.
+1. Pour afficher la version qui vient d’être créée, ouvrez la liste **[!UICONTROL Afficher tout]** dans la chronologie à partir de la page de détails de la ressource ou de l’interface utilisateur d’Assets et sélectionnez **[!UICONTROL Versions]**. Toutes les versions créées pour une ressource sont répertoriées sous l’onglet Chronologie. Pour filtrer la liste afin d’afficher les versions, cliquez sur la flèche pointant vers le bas et sélectionnez **[!UICONTROL Versions]** dans la liste.
 
    ![versions_option](assets/versions_option.png)
 
@@ -626,7 +626,7 @@ La création de versions permet d’effectuer les opérations suivantes :
 
    ![chlimage_1-253](assets/chlimage_1-253.png)
 
-1. Dans la section **[!UICONTROL Démarrer le workflow]**, sélectionnez un modèle de workflow dans la liste.
+1. Dans la section **[!UICONTROL Démarrer le processus]**, sélectionnez un modèle de workflow dans la liste.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
