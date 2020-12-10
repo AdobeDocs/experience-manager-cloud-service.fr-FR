@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1a282bdaca02f47d7936222da8522e74831a4572
 workflow-type: tm+mt
 source-wordcount: '2828'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 75%
 
 >[!TIP]
 >
->L’[archétype de projet AEM](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) et le [plug-in Maven FileVault Content](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html) font partie des thèmes abordés dans cet article. Vous êtes donc invité à vous familiariser avec ces concepts.
+>L’[archétype de projet AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html) et le [plug-in Maven FileVault Content](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html) font partie des thèmes abordés dans cet article. Vous êtes donc invité à vous familiariser avec ces concepts.
 
-Cet article décrit les modifications à apporter aux projets Adobe Experience Manager Maven pour qu&#39;ils soient compatibles avec les Cloud Service en s&#39;assurant qu&#39;ils respectent la division du contenu muable et immuable, que des dépendances sont établies pour créer des déploiements non contradictoires et déterministes et qu&#39;ils sont emballés dans une structure déployable.
+Cet article décrit les modifications requises pour que les projets Maven Adobe Experience Manager soient compatibles avec AEM as a Cloud Service, en veillant à ce qu’ils respectent la division entre contenu modifiable et non modifiable, à ce que les dépendances soient établies pour créer des déploiements déterministes non conflictuels et à ce qu’ils soient mis en package dans une structure déployable.
 
 Les déploiements d’applications AEM doivent être constitués d’un seul module AEM. Ce module doit, à son tour, contenir des sous-modules qui comprennent tout ce dont l’application a besoin pour fonctionner, y compris le code, la configuration et tout contenu de base nécessaire.
 
@@ -40,7 +40,7 @@ Toutes les autres zones du référentiel (`/content`, `/conf`, `/var`, `/etc`, `
 
 ### Index Oak {#oak-indexes}
 
-Les index de chêne (`/oak:index`) sont spécifiquement gérés par l&#39;AEM en tant que processus de déploiement Cloud Service. En effet, Cloud Manager doit attendre le déploiement d’un nouvel index et la réindexation complète avant de passer à la nouvelle image de code.
+Les index Oak (`/oak:index`) sont gérés spécifiquement par le processus de déploiement d’AEM as a Cloud Service. En effet, Cloud Manager doit attendre le déploiement d’un nouvel index et la réindexation complète avant de passer à la nouvelle image de code.
 
 Ainsi, bien que les index Oak soient modifiables au moment de l’exécution, ils doivent être déployés sous forme de code pour pouvoir être installés avant les modules modifiables. Les configurations `/oak:index` font donc partie du module de code, mais pas du module de contenu, [comme décrit ci-dessous](#recommended-package-structure).
 
@@ -56,89 +56,89 @@ Ce diagramme présente un aperçu de la structure de projet recommandée et des 
 
 La structure de déploiement d’application recommandée est la suivante :
 
-### Packages de code / Offres groupées OSGi
+### Modules de code/Bundles OSGi
 
-+ Le fichier Jar du lot OSGi est généré et directement incorporé dans l’ensemble du projet.
++ Le fichier Jar du bundle OSGi est généré et directement incorporé dans l’ensemble du projet.
 
-+ Le package `ui.apps` contient tout le code à déployer et se déploie uniquement sur `/apps`. Voici un aperçu des éléments courants du module `ui.apps` :
-   + [Définitions des composants et scripts ](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html) HTL
++ Le module `ui.apps` contient tout le code à déployer. Il est déployé uniquement sur `/apps`. Voici un aperçu des éléments courants du module `ui.apps` :
+   + [Définitions des composants et scripts HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
       + `/apps/my-app/components`
-   + JavaScript et CSS (via [Bibliothèques client](/help/implementing/developing/introduction/clientlibs.md))
+   + Code JavaScript et CSS (via les [bibliothèques clientes](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
-   + [Superpositions ](/help/implementing/developing/introduction/overlays.md) de  `/libs`
+   + [Recouvrements](/help/implementing/developing/introduction/overlays.md) de `/libs`
       + `/apps/cq`, `/apps/dam/`, etc.
    + Configurations basées sur le contexte de secours
       + `/apps/settings`
    + Listes de contrôle d’accès (autorisations)
       + Tout `rep:policy` pour tout chemin d’accès sous `/apps`
 
-+ Le package `ui.config` contient toutes les [configurations OSGi](/help/implementing/deploying/configuring-osgi.md) :
++ Le module `ui.config` contient toutes les [configurations OSGi](/help/implementing/deploying/configuring-osgi.md) :
    + Dossier d’organisation contenant des définitions de configuration OSGi spécifiques au mode d’exécution
       + `/apps/my-app/osgiconfig`
-   + Dossier de configuration OSGi commun contenant les configurations OSGi par défaut qui s’appliquent à toutes les cibles AEM en tant que cibles de déploiement Cloud Service
+   + Dossier de configuration OSGi commun contenant les configurations OSGi par défaut qui s’appliquent à toutes les cibles de déploiement AEM as a Cloud Service
       + `/apps/my-app/osgiconfig/config`
-   + Exécutez des dossiers de configuration OSGi spécifiques au mode qui contiennent des configurations OSGi par défaut qui s&#39;appliquent à toutes les cibles AEM en tant que cibles de déploiement Cloud Service.
+   + Dossiers de configuration OSGi spécifiques au mode d’exécution contenant les configurations OSGi par défaut qui s’appliquent à toutes les cibles de déploiement AEM as a Cloud Service
       + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
    + Scripts de configuration OSGi Repo Init
-      + [Repo Init](#repo-init) est la méthode recommandée pour déployer du contenu (mutable) faisant logiquement partie de l’application AEM. Les configurations OSGi Repo Init doivent être placées dans le dossier `config.<runmode>` approprié, comme indiqué ci-dessus, et être utilisées pour définir :
+      + [Repo Init](#repo-init) est la méthode recommandée pour déployer du contenu (mutable) faisant logiquement partie de l’application AEM. Les configurations OSGi Repo Init doivent être placées dans le dossier `config.<runmode>` approprié, comme indiqué ci-dessus, et être utilisées pour définir :
          + Structures de contenu de base
          + Utilisateurs
          + Utilisateurs du service
          + Groupes
          + Listes de contrôle d’accès (autorisations)
 
-### Packages de contenu
+### Modules de contenu
 
-+ Le package `ui.content` contient tout le contenu et la configuration. Le package de contenu contient toutes les définitions de noeud qui ne figurent pas dans les packages `ui.apps` ou `ui.config`, ou en d’autres termes, qui ne figurent pas dans `/apps` ou `/oak:index`. Voici un aperçu des éléments courants du module `ui.content` :
++ Le module `ui.content` contient l’ensemble du contenu et de la configuration. Le module de contenu contient toutes les définitions de nœud qui ne se trouvent pas dans les modules `ui.apps` ou `ui.config` ou, en d’autres termes, tout ce qui ne se trouve pas dans `/apps` ou `/oak:index`. Voici un aperçu des éléments courants du module `ui.content` :
    + Configurations basées sur le contexte
       + `/conf`
-   + Structures de contenu requises et complexes (c.-à-d., déploiement de contenu basé sur et étendant les structures de contenu de base passées définies dans Repo Init))
+   + Structures de contenu requises et complexes (c.-à-d., déploiement de contenu basé sur et étendant les structures de contenu de base passées définies dans Repo Init)
       + `/content`,  `/content/dam`, etc.
    + Taxonomies du balisage régies
       + `/content/cq:tags`
-   + Noeuds etc hérités (idéalement, migrer ces derniers vers des emplacements autres que/etc.)
+   + Nœuds etc. hérités (l’idéal est de les migrer vers des emplacements autres que /etc)
       + `/etc`
 
-### Packages de conteneurs
+### Modules conteneurs
 
-+ Le package `all` est un package de conteneur qui contient UNIQUEMENT des artefacts déployables, le fichier Jar du lot OSGI, les packages `ui.apps`, `ui.config` et `ui.content` en tant qu’incorporés. Le package `all` ne doit pas avoir **de contenu ou de code** qui lui soit propre, mais plutôt déléguer tout déploiement au référentiel à ses sous-packages ou fichiers Jar OSGi.
++ Le module `all` est un module conteneur n’incluant QUE des artefacts déployables, le fichier Jar du bundle OSGI, `ui.apps`, `ui.config` et des modules `ui.content` en tant qu’incorporations. Le module `all` ne doit pas comporter de **contenu ou de code** propre, mais à la place doit déléguer tout le déploiement sur le référentiel à ses sous-modules ou aux fichiers Jar du bundle OSGi.
 
    Les modules sont désormais inclus à l’aide de la [configuration intégrée du plug-in FileVault Package Maven](#embeddeds) au lieu de la configuration `<subPackages>`.
 
-   Pour les déploiements de Experience Manager complexes, il peut être souhaitable de créer plusieurs projets/packages `ui.apps`, `ui.config` et `ui.content` qui représentent des sites ou des locataires spécifiques en AEM. Dans ce cas, assurez-vous que le fractionnement entre contenu mutable et non modifiable est respecté et que les packages de contenu requis et les fichiers Jar du lot OSGi sont incorporés en tant que sous-packages dans le package de contenu du conteneur `all`.
+   Pour les déploiements Experience Manager complexes, il peut être souhaitable de créer plusieurs projets/modules `ui.apps`, `ui.config` et `ui.content` représentant des clients ou des sites spécifiques dans AEM. Dans ce cas, assurez-vous que la division entre contenu modifiable et non modifiable est respectée et que les modules de contenu et les fichiers Jar du bundle OSGi requis sont incorporés sous la forme de sous-modules dans le module du conteneur `all`.
 
-   Par exemple, une structure complexe de package de contenu de déploiement peut se présenter comme suit :
+   Une structure complexe d’un module de contenu de déploiement peut, par exemple, se présenter comme suit :
 
    + Le module de contenu `all` intègre les modules suivants afin de créer un artefact de déploiement unique
       + `common.ui.apps` déploie le code requis par les sites A **et** B
-      + `site-a.core` JAR du lot OSGi requis par le site A
+      + Fichier Jar de bundle OSGi `site-a.core` requis par le site A
       + `site-a.ui.apps` déploie le code requis par le site A
       + `site-a.ui.config` déploie les configurations OSGi requises par le site A
       + `site-a.ui.content` déploie le contenu et la configuration requis par le site A
-      + `site-b.core` JAR du lot OSGi requis par le site B
+      + Fichier Jar de bundle OSGi `site-b.core` requis par le site B
       + `site-b.ui.apps` déploie le code requis par le site B
       + `site-b.ui.config` déploie les configurations OSGi requises par le site B
       + `site-b.ui.content` déploie le contenu et la configuration requis par le site B
 
-### Packages d’applications supplémentaires{#extra-application-packages}
+### Modules d’applications supplémentaires{#extra-application-packages}
 
-Si d&#39;autres projets AEM, eux-mêmes composés de leur propre code et de leurs propres packages de contenu, sont utilisés par le déploiement AEM, leurs packages de conteneur doivent être incorporés dans le package `all` du projet.
+Si d’autres projets AEM, eux-mêmes composés de leur propre code et de leurs propres modules de contenu, sont utilisés par le déploiement AEM, leurs modules conteneurs doivent être incorporés dans le module `all` du projet.
 
-Par exemple, un projet AEM qui comprend deux applications AEM de fournisseurs peut se présenter comme suit :
+Par exemple, un projet AEM incluant deux applications AEM de fournisseurs peut se présenter comme suit :
 
 + Le module de contenu `all` intègre les modules suivants afin de créer un artefact de déploiement unique
-   + `core` JAR du lot OSGi requis par l&#39;application AEM
-   + `ui.apps` déploie le code requis par l&#39;application AEM
-   + `ui.config` déploie les configurations OSGi requises par l&#39;application AEM
+   + Fichier Jar de bundle OSGi `core` requis par l’application AEM
+   + `ui.apps` déploie le code requis par l’application AEM
+   + `ui.config` déploie les configurations OSGi requises par l’application AEM
    + `ui.content` déploie le contenu et la configuration requis par l’application AEM
-   + `vendor-x.all` déploie tout (code et contenu) requis par l&#39;application X fournisseur
-   + `vendor-y.all` déploie tout (code et contenu) requis par l’application Y fournisseur
+   + `vendor-x.all` déploie tous les éléments (code et contenu) requis par l’application du fournisseur X
+   + `vendor-y.all` déploie tout les éléments (code et contenu) requis par l’application du fournisseur Y
 
 ## Types de modules {#package-types}
 
 Les modules doivent être marqués avec le type déclaré.
 
-+ Les packages de conteneur doivent définir leur `packageType` sur `container`.
++ Les modules conteneurs doivent définir leur `packageType` sur `container`.
 + Les modules de code (non modifiables) doivent définir leur `packageType` sur `application`.
 + Les modules de contenu (modifiables) doivent définir leur `packageType` sur `content`.
 
@@ -170,9 +170,9 @@ Bien que les scripts Repo Init résident eux-mêmes dans le projet `ui.config` 
 + Groupes
 + Listes ACL
 
-Les scripts Repo Init sont stockés sous la forme `scripts` entrées de `RepositoryInitializer` configurations d’usine OSGi et peuvent donc être implicitement ciblés par le mode d’exécution, ce qui permet de distinguer les scripts Repo Init d’AEM Publish Services des scripts d’AEM Author, voire entre les environnements (Dev, Stage et Prod).
+Les scripts Repo Init sont stockés en tant qu’entrées `scripts` des configurations d’usine OSGi `RepositoryInitializer`. Ils peuvent donc être implicitement ciblés par le mode d’exécution, ce qui permet d’établir des différences entre les scripts Repo Init des services d’auteur et de publication AEM, voire entre les environnements (développement, évaluation et production).
 
-Les configurations OSGi Repo Init sont mieux écrites dans le format de configuration [`.config` OSGi](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-config-1) car elles prennent en charge plusieurs lignes, ce qui est une exception aux meilleures pratiques d&#39;utilisation de [`.cfg.json` pour définir des configurations OSGi](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
+Les configurations OSGi Repo Init sont mieux écrites dans le [`.config` format de configuration OSGi](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-config-1), car elles prennent en charge plusieurs lignes, ce qui est une exception aux bonnes pratiques d’utilisation de [`.cfg.json` pour définir des configurations OSGi](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 
 Notez que lors de la définition d’utilisateurs et de groupes, seuls les groupes considérés comme faisant partie de l’application, et essentiels à son fonctionnement, doivent être définis ici. Dans les organisations, les utilisateurs et les groupes doivent toujours être définis au moment de l’exécution dans AEM ; par exemple, si un workflow personnalisé affecte du travail à un groupe nommé, ce groupe doit être défini via Repo Init dans l’application AEM. Toutefois, si le regroupement est simplement organisationnel, comme « Équipe de Jean » et « Équipe de Valérie », le groupe sera défini et géré plus efficacement lors de l’exécution dans AEM.
 
@@ -231,9 +231,9 @@ Analyse de cette structure de dossiers :
 + Le dossier de troisième niveau doit être
    `application`, `content` ou `container`
    + Le dossier `application` contient des modules de code.
-   + Le dossier `content` contient des packages de contenu.
-   + Le dossier `container` contient tous les [packages d&#39;applications supplémentaires](#extra-application-packages) pouvant être inclus par l&#39;application AEM.
-Ce nom de dossier correspond aux [types de package](#package-types) des packages qu’il contient.
+   + Le dossier `content` contient des modules de contenu.
+   + Le dossier `container` contient les [modules d’applications supplémentaires](#extra-application-packages) pouvant être inclus par l’application AEM.
+Ce nom de dossier correspond aux [types](#package-types) de modules qu’il contient.
 + Le dossier de quatrième niveau contient les sous-modules. Il doit s’agir de l’un des dossiers suivants :
    + `install` pour effectuer une installation sur AEM Author **et** AEM Publish
    + `install.author` pour effectuer une installation **uniquement** sur AEM Author
@@ -270,7 +270,7 @@ Si les modules tiers se trouvent dans le **référentiel d’artefacts Maven pub
 
 Si les modules tiers se trouvent dans le **référentiel d’artefacts Maven tiers public**, ce dernier doit être enregistré dans le fichier `pom.xml` du projet et incorporé suivant la méthode [décrite ci-dessus](#embeddeds).
 
-Les applications/connecteurs tiers doivent être incorporés à l’aide de son package `all` en tant que conteneur dans le package de conteneur de votre projet (`all`).
+Les applications/connecteurs tiers doivent être incorporés à l’aide de son module `all` en tant que conteneur dans le module (`all`) du conteneur de votre projet.
 
 L’ajout de dépendances Maven suivant les pratiques Maven standard et l’incorporation d’artefacts tiers (modules de code et contenu) sont [décrits ci-dessus](#embedding-3rd-party-packages).
 
@@ -405,9 +405,9 @@ Dans chaque projet générant un module, **à l’exception** du projet conteneu
 
 ### Repo Init{#snippet-repo-init}
 
-Les scripts Repo Init sont définis dans la configuration d’usine OSGi `RepositoryInitializer` via la propriété `scripts`. Notez que ces scripts étant définis dans les configurations OSGi, ils peuvent être facilement mis en plage par le mode d’exécution à l’aide de la sémantique de dossiers `../config.<runmode>` habituelle.
+Les scripts Repo Init sont définis dans la configuration d’usine OSGi `RepositoryInitializer` via la propriété `scripts`. Puisque ces scripts sont définis dans les configurations OSGi, ils peuvent être facilement définis par le mode d’exécution à l’aide de la sémantique de dossier `../config.<runmode>` habituelle.
 
-Notez que les scripts étant généralement des déclarations multilignes, il est plus facile de les définir dans le fichier `.config` que dans le format `.cfg.json` JSON.
+Parce que les scripts sont généralement des déclarations multilignes, il est plus facile de les définir dans le fichier `.config` que dans le format `.cfg.json` basé sur JSON.
 
 `/apps/my-app/config.author/org.apache.sling.jcr.repoinit.RepositoryInitializer-author.config`
 
