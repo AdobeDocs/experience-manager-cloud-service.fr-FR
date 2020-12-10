@@ -1,23 +1,23 @@
 ---
 title: AEM Commerce as a Cloud Service
-description: aem Commerce en tant que Cloud Service ressources d'aide autonome et liens vers la documentation
+description: Ressources d’aide autonome et liens vers la documentation d’AEM Commerce as a Cloud Service
 translation-type: tm+mt
 source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 
 # AEM Commerce as a Cloud Service {#commerce-guide}
 
-Cette page liste les ressources d&#39;aide autonome concernant AEM Commerce en tant que Cloud Service.
+Cette page répertorie les ressources d’aide autonome relatives à AEM Commerce as a Cloud Service.
 
-## Articles commerciaux clés {#key-articles}
+## Principaux articles relatifs à Commerce {#key-articles}
 
-* [Introduction du commerce AEM en tant que Cloud Service](overview.md)
-* [Architecture du commerce AEM en tant que Cloud Service](architecture/magento.md)
+* [Introduction d’AEM Commerce as a Cloud Service](overview.md)
+* [Architecture d’AEM Commerce as a Cloud Service](architecture/magento.md)
 * [Prise en main](getting-started.md)
 
 ## Guides relatifs à Experience Manager as a Cloud Service {#aem-guides}
@@ -39,10 +39,10 @@ Cette page liste les ressources d&#39;aide autonome concernant AEM Commerce en t
 ## Autres ressources relatives à Experience Manager {#other-resources}
 
 * [Documentation Dispatcher](/help/implementing/dispatcher/overview.md)
-* [Documentation HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+* [Documentation HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
 * [Documentation sur les composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 * [Documentation Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Tutoriels sur Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/fr/experience-manager-learn/cloud-service/overview.html)
+* [Tutoriels sur Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Forum de la communauté AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
