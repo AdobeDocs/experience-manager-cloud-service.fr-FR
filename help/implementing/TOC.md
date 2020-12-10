@@ -4,9 +4,9 @@ user-guide-title: Implémentation pour AEM as a Cloud Service
 breadcrumb-title: Guide d’implémentation
 user-guide-description: Découvrez comment personnaliser votre déploiement d’Experience Manager as a Cloud Service, y compris des rubriques sur le déploiement et le développement.
 translation-type: tm+mt
-source-git-commit: b927992107d7e7e4df5511a366c71449ff73ec93
+source-git-commit: c130ade74e91c4247b4c858621a4d39d45fb2404
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '579'
 ht-degree: 81%
 
 ---
@@ -63,6 +63,7 @@ ht-degree: 81%
          + [Éditeur d’image](developing/components/image-editor.md)
          + [Balises de décoration](developing/components/decoration-tag.md)
          + [Utilisation de conditions de masquage](developing/components/hide-conditions.md)
+         + [Guide de référence des composants](developing/components/reference.md)
       + [Infrastructure de balisage AEM](/help/implementing/developing/introduction/tagging-framework.md)
       + [Création de balises dans des applications AEM](/help/implementing/developing/introduction/tagging-applications.md)
       + Recherche {#search}
@@ -74,7 +75,7 @@ ht-degree: 81%
       + [Instructions relatives aux API Java](/help/implementing/developing/introduction/java-api-guidelines.md)
    + Développement des AEM hybrides {#hybrid}
       + [Hybride et SPA avec AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-      + [Activation de l’exportateur JSON pour un composant](developing/components/enabling-json-exporter.md) 
+      + [Activation de l’exportateur JSON pour un composant](developing/components/enabling-json-exporter.md)
       + [Introduction et présentation des SPA](developing/hybrid/introduction.md)
       + [Tutoriel sur SPA WKND](developing/hybrid/wknd-tutorial.md)
       + [Prise en main avec React](developing/hybrid/getting-started-react.md)
