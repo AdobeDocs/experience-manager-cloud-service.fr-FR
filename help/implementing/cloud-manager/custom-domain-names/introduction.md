@@ -2,9 +2,9 @@
 title: Introduction - Noms de domaine personnalisés
 description: Introduction - Noms de domaine personnalisés
 translation-type: tm+mt
-source-git-commit: 7704c19e440b1fedc651ce0115eb5e5ecf1eba1c
+source-git-commit: f40f87cb61d5f66ca5773d1fd1cfee6fb623201d
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '153'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,6 @@ Cloud Manager vous permet d’ajouter un domaine personnalisé afin d’identifi
 
 A l’aide de la page Paramètres de domaine de l’interface utilisateur de Cloud Manager ou de la page Détails de l’Environnement, un utilisateur disposant d’autorisations peut effectuer plusieurs tâches pour gérer des noms de domaine personnalisés pour vos environnements, notamment :
 
-* Ajouter un nom de domaine personnalisé.
-* Affichage ou mise à jour d’un nom de domaine personnalisé qui permet à un utilisateur de vue des détails ou de remplacer un certificat qui arrive à expiration.
-* Suppression du nom de domaine personnalisé.
+* [Ajouter un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+* [Affichage ou mise à jour d’un ](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md) nom de domaine personnalisé qui permet à un utilisateur de vue des détails ou de remplacer un certificat qui arrive à expiration
+* [Suppression d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
