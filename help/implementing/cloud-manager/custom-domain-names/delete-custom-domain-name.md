@@ -2,7 +2,7 @@
 title: Suppression d’un nom de domaine personnalisé
 description: Suppression d’un nom de domaine personnalisé
 translation-type: tm+mt
-source-git-commit: 1c51560886515e092680c23db3e128758dcd7d99
+source-git-commit: 68a62be11f711e30b87dfc60a85627dceaf06caa
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 0%
@@ -12,15 +12,16 @@ ht-degree: 0%
 
 # Suppression d&#39;un nom de domaine personnalisé {#deleting-cdn}
 
->[!NOTE]
->Un utilisateur doit se trouver dans le rôle Business Owner ou Deployment Manager pour pouvoir supprimer un nom de domaine personnalisé dans Cloud Manager.
+Un utilisateur doit se trouver dans le rôle Business Owner ou Deployment Manager pour pouvoir supprimer un nom de domaine personnalisé dans Cloud Manager.
 
 ## Suppression d&#39;un nom de domaine personnalisé de tous les Environnements associés {#delete-cdn-all}
 
-1. Accédez à la page Paramètres de domaine à partir de l’écran Environnements.
+1. Accédez à la page **Paramètres de domaine** à partir de l’écran **Environnements**.
 1. Identifiez la ligne où figure le nom de domaine personnalisé que vous souhaitez supprimer.
 1. Sélectionnez **...** à l&#39;extrémité droite de la ligne.
-1. Sélectionnez l’option Supprimer.
+1. Sélectionnez l&#39;option **Supprimer**.
+
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
 1. Confirmez votre envoi.
 
 
