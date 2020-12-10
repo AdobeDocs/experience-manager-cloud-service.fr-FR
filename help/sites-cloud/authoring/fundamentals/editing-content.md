@@ -73,7 +73,7 @@ La barre d’outils vous donne accès à de nombreuses options. La disponibilit�
 
 * **Sélecteur de mode**
 
-   Affiche le [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) en cours et vous permet d’en sélectionner un autre, tel que Édition, Mise en page, Timewarp ou Ciblage.
+   Affiche le [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) en cours et vous permet d’en sélectionner un autre, tel que Modifier, Disposition, Timewarp ou Ciblage.
 
    ![Bouton Sélecteur de mode](/help/sites-cloud/authoring/assets/mode-selector.png)
 
@@ -101,7 +101,7 @@ Si la page fait partie d’un ou de plusieurs [workflows](/help/sites-cloud/auth
 
 La notification indique le workflow exécuté sur la page. Si l’utilisateur prend part à l’étape actuelle du workflow, des options [affectant l’état du workflow](/help/sites-cloud/authoring/workflows/participating.md) et permettant d’obtenir plus d’informations sur le workflow sont également disponibles, à savoir :
 
-* **Terminer** : ouvre la boîte de dialogue **Terminer l’élément de travail**
+* **Terminé** : ouvre la boîte de dialogue **Terminer l’élément de travail**
 * **Déléguer** : ouvre la boîte de dialogue **Terminer l’élément de travail**
 * **Afficher les détails** : ouvre la fenêtre **Détails** du workflow
 
@@ -129,7 +129,7 @@ L’espace réservé du composant est un indicateur qui signale où sera positio
 
 Vous pouvez ajouter un nouveau composant à l’aide de l’[explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). L’[espace réservé du composant](#component-placeholder) indique où le composant va être positionné :
 
-1. Assurez-vous que votre page est en mode [**Édition**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
+1. Assurez-vous que votre page est en mode [**Modifier**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Ouvrez l’[explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
 1. Faites glisser le composant jusqu’à la [position requise](#component-placeholder).
 1. [Modifiez](#edit-content) le composant.
@@ -142,7 +142,7 @@ Vous pouvez ajouter un nouveau composant à l’aide de l’[explorateur de comp
 
 Vous pouvez ajouter un nouveau composant à l’aide de la case **Faire glisser les composants ici** du système de paragraphes :
 
-1. Assurez-vous que votre page est en mode [**Édition**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
+1. Assurez-vous que votre page est en mode [**Modifier**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Pour sélectionner et ajouter un nouveau composant à partir du système de paragraphes, deux méthodes peuvent être utilisées :
 
    * Sélectionnez l’option **Insérer le composant** (+) à partir de la barre d’outils d’un composant existant ou de la zone **Faire glisser les composants ici**.
@@ -157,7 +157,7 @@ Vous pouvez ajouter un nouveau composant à l’aide de la case **Faire glisser 
 
 1. Le composant sélectionné est alors ajouté au bas de la page. [Modifiez](#edit-content) le composant selon les besoins.
 
-### Insertion d’un composant à partir de l’Explorateur de ressources     {#inserting-a-component-using-the-assets-browser}
+### Insertion d’un composant à partir de l’Explorateur de ressources  {#inserting-a-component-using-the-assets-browser}
 
 Vous pouvez également ajouter un nouveau composant à la page en faisant glisser un élément depuis l’[explorateur de ressources](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). Un nouveau composant du type approprié (et contenant l’élément) est ainsi créé automatiquement.
 
@@ -165,7 +165,7 @@ Ce comportement peut être configuré pour votre installation. Pour plus d’inf
 
 Pour créer un composant en faisant glisser l’un des types de ressources ci-dessus, suivez ces étapes :
 
-1. Assurez-vous que votre page est en mode [**Édition**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
+1. Assurez-vous que votre page est en mode [**Modifier**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Ouvrez l’[explorateur de ressources](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser).
 1. Faites glisser la ressource jusqu’à la position requise. L’[espace réservé du composant](#component-placeholder) indique où le composant va être positionné.
 
@@ -251,7 +251,7 @@ Les actions disponibles pour l’utilisateur sont affichées comme il convient 
 
    ![Bouton Parent](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
 
-* **Disposition**
+* **Mise en page**
 
    Cette option vous permet de modifier la [mise en page](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) du composant sélectionné. Cela s’applique uniquement au composant sélectionné et n’active pas le [mode Mise en page](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) de la page entière.
 
@@ -270,7 +270,7 @@ Deux méthodes permettent d’ajouter et/ou de modifier le contenu dans les comp
 * Ouvrez la [boîte de dialogue de composant pour l’édition](#component-edit-dialog).
 * [Faites glisser et déposez un élément](#drag-and-drop-assets-into-component) depuis l’explorateur de ressources pour ajouter directement du contenu.
 
-### Boîte de dialogue d’édition de composant     {#component-edit-dialog}
+### Boîte de dialogue d’édition de composant  {#component-edit-dialog}
 
 Vous pouvez ouvrir un composant pour modifier le contenu à l’aide de l’[icône Modifier (crayon) de la barre d’outils Composant](#component-toolbar).
 
@@ -292,7 +292,7 @@ Les options de modification disponibles dépendent du composant. Pour certains c
 
 * Composant image – Plein écran
 
-   [Le passage en mode plein écran](#edit-content-full-screen-mode) pour le composant d’image permet de libérer de l’espace pour modifier l’image et d’afficher des options de modification supplémentaires, telles que **Lancer une Map** et **Réinitialiser le zoom**. En outre, le mode plein écran permet de sélectionner les paramètres prédéfinis de recadrage.
+   [Le passage en mode Plein écran](#edit-content-full-screen-mode) pour le composant d’image permet de libérer de l’espace pour modifier l’image et d’afficher des options de modification supplémentaires, telles que **Lancer une Map** et **Réinitialiser le zoom**. En outre, le mode plein écran permet de sélectionner les paramètres prédéfinis de recadrage.
 
    ![Mode Plein écran du composant d’image](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
@@ -333,15 +333,15 @@ Pour déplacer un composant de paragraphe :
 
 ## Modification de la mise en page du composant {#edit-component-layout}
 
-Au lieu de basculer à plusieurs reprises entre les modes d’édition et de [mise en page](/help/sites-cloud/authoring/features/responsive-layout.md) pour ajuster un composant, vous pouvez sélectionner l’action **Mise en page** pour un composant afin d’en modifier la mise en page. Cela vous évite de devoir quitter le mode d’édition, ce qui se traduit par un gain de temps.
+Au lieu de basculer à plusieurs reprises entre les modes Modifier et de [Disposition](/help/sites-cloud/authoring/features/responsive-layout.md) pour ajuster un composant, vous pouvez sélectionner l’action **Disposition** pour un composant afin d’en modifier la mise en page. Cela vous évite de devoir quitter le mode Modifier, ce qui se traduit par un gain de temps.
 
-1. Lorsque le mode **Édition** de la console Sites est actif, la sélection d’un composant déclenche l’affichage de sa barre d’outils.
+1. Lorsque le mode **Modifier** de la console Sites est actif, la sélection d’un composant déclenche l’affichage de sa barre d’outils.
 
    ![Barre d’outils d’un composant de page](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
 
-   Cliquez ou appuyez sur l’action **Mise en page** pour ajuster la mise en page du composant.
+   Cliquez ou appuyez sur l’action **Disposition** pour ajuster la mise en page du composant.
 
-   ![Bouton Mise en page de la barre d’outils d’un composant](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
+   ![Bouton Disposition de la barre d’outils d’un composant](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 1. Une fois cette action sélectionnée :
 
@@ -409,7 +409,7 @@ Par exemple :
 
 Les [Annotations](/help/sites-cloud/authoring/fundamentals/annotations.md) permettent aux réviseurs et aux autres créateurs de fournir des commentaires sur votre contenu. Elles sont souvent utilisées à des fins de révision et de validation.
 
-## Aperçu des pages     {#previewing-pages}
+## Aperçu des pages  {#previewing-pages}
 
 Deux options sont disponibles pour prévisualiser une page :
 
