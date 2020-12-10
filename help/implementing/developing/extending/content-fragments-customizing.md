@@ -16,7 +16,7 @@ Dans Adobe Experience Manager as a Cloud Service, un fragment de contenu étend 
 
 * [Création et gestion des fragments de contenu](/help/assets/content-fragments/content-fragments.md) et [Création de pages avec des fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md) pour plus d’informations sur les fragments de contenu.
 
-* [Gestion des ](/help/assets/manage-digital-assets.md) actifs pour plus d’informations sur les actifs standard.
+* [Gestion des ressources](/help/assets/manage-digital-assets.md) pour plus d’informations sur les ressources standard.
 
 <!-- Removing the extend-asset-editor article for now as I'm unsure of its accuracy. Hence commenting this link.
 * [Managing Assets](/help/assets/manage-digital-assets.md) and [Customizing and Extending the Asset Editor](/help/assets/extend-asset-editor.md) for further information about standard assets.
@@ -77,7 +77,7 @@ par exemple, le contenu de l’élément `text` est stocké en tant que proprié
 Hormis le titre et la description, qui ne sont pas considérés comme des métadonnées traditionnelles et sont stockés sur 
 `jcr:content`
 
-#### Emplacement des ressources    {#asset-location}
+#### Emplacement des ressources  {#asset-location}
 
 Comme pour les ressources standard, un fragment de contenu est conservé sous :
 
@@ -133,7 +133,7 @@ Les fragments de contenu peuvent être référencés dans les pages AEM, exactem
 
 Les fragments de contenu peuvent être intégrés à :
 
-* **des traductions** ;
+* **Des traductions**
 
    Les fragments de contenu sont entièrement intégrés au workflow de traduction AEM. Au niveau architectural, cela présente les implications suivantes :
 
@@ -154,7 +154,7 @@ Les fragments de contenu peuvent être intégrés à :
    >* Les modèles de fragment de contenu résidant dans `/conf` ; ils ne sont pas inclus dans ces traductions. Vous pouvez internationaliser les chaînes de l’IU.
 
 
-* **Schémas de métadonnées**
+* **Des schémas de métadonnées**
 
    * Les fragments de contenu (ré)utilisent les [schémas de métadonnées](/help/assets/metadata-schemas.md) qui peuvent être définis par de ressources standard.
 
@@ -166,7 +166,7 @@ Les fragments de contenu peuvent être intégrés à :
 
    * Le formulaire de schéma respectif est intégré à l’éditeur de fragments.
 
-## L’API de gestion des fragments de contenu – côté serveur    {#the-content-fragment-management-api-server-side}
+## API de gestion des fragments de contenu – côté serveur  {#the-content-fragment-management-api-server-side}
 
 Vous pouvez utiliser l’API côté serveur pour accéder à vos fragments de contenu ; voir :
 
@@ -176,7 +176,7 @@ Vous pouvez utiliser l’API côté serveur pour accéder à vos fragments de co
 >
 >Il est fortement conseillé d’utiliser l’API côté serveur plutôt que d’accéder directement à la structure du contenu.
 
-### Interfaces principales    {#key-interfaces}
+### Interfaces principales  {#key-interfaces}
 
 Les trois interfaces suivantes peuvent faire office de points d’entrée :
 
@@ -236,7 +236,7 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
 
 
 
-### Adaptation – utilisation d’adaptTo()    {#adapting-using-adaptto}
+### Adaptation – utilisation d’adaptTo()  {#adapting-using-adaptto}
 
 Ce qui suit peut être adapté :
 
@@ -268,7 +268,7 @@ Il convient de noter les éléments suivants :
 
    * La suppression de variations existantes par l’intermédiaire d’un élément, à l’aide de `ContentElement.removeVariation()`, ne mettra pas à jour les structures de données globales affectées à la variation. Pour garantir le maintien de la synchronisation de ces structures, utilisez plutôt `ContentFragment.removeVariation()`, ce qui supprime globalement une variation.
 
-## L’API de gestion des fragments de contenu – côté client    {#the-content-fragment-management-api-client-side}
+## API de gestion des fragments de contenu – côté client  {#the-content-fragment-management-api-client-side}
 
 >[!CAUTION]
 >
@@ -317,7 +317,7 @@ if (fragmentResource != null) {
 }
 ```
 
-### Exemple : création d’un fragment de contenu    {#example-creating-a-new-content-fragment}
+### Exemple : création d’un fragment de contenu  {#example-creating-a-new-content-fragment}
 
 Pour créer un fragment de contenu par programmation, vous devez utiliser un
 modèle `FragmentTemplate` adapté d’une ressource de modèle.
@@ -330,7 +330,7 @@ FragmentTemplate tpl = modelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
-### Exemple : spécification de l’intervalle d’enregistrement automatique    {#example-specifying-the-auto-save-interval}
+### Exemple : spécification de l’intervalle d’enregistrement automatique  {#example-specifying-the-auto-save-interval}
 
 L’[intervalle d’enregistrement automatique](/help/assets/content-fragments/content-fragments-managing.md#save-cancel-and-versions) (exprimé en secondes) peut être défini à l’aide de Configuration Manager (ConfMgr) :
 
