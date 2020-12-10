@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Notes de mise à jour d’Adobe Experience Manager as a Cloud Service version 2020.4.0 {#release-notes}
 
-Cette page décrit les notes de mise à jour générales pour [!DNL Experience Manager] as a Cloud Service 2020.4.0.
+Cette page présente les notes de mise à jour générales pour [!DNL Experience Manager] as a Cloud Service 2020.4.0.
 
 ## Date de publication {#release-date}
 
