@@ -1,6 +1,6 @@
 ---
 title: ContextHub
-description: ContextHub est un framework qui permet de stocker, de manipuler et de présenter des données de contexte
+description: ContextHub est une structure pour stocker, manipuler et présenter des données contextuelles
 translation-type: tm+mt
 source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
