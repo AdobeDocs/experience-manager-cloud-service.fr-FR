@@ -2,9 +2,9 @@
 title: Ajouter un certificat SSL - Gestion des certificats SSL
 description: Ajouter un certificat SSL - Gestion des certificats SSL
 translation-type: tm+mt
-source-git-commit: 4ab944ad15390f9399138672a024aa30cf4aede8
+source-git-commit: 4255035b68467e4ad783edd88e8f4e96855cfe50
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 # Ajouter un certificat SSL {#adding-an-ssl-certificate}
 
 >[!NOTE]
->aem en tant que Cloud Service n&#39;acceptera que les certificats OV(validation d&#39;organisation) ou EV(validation étendue). Les certificats DV(Domain Validation) ne seront pas acceptés.
+>aem en tant que Cloud Service n&#39;acceptera que les certificats OV(validation d&#39;organisation) ou EV(validation étendue). Les certificats DV(Domain Validation) ne seront pas acceptés. En outre, tout certificat doit être un certificat TLS X.509 d’une autorité de certification approuvée avec une clé privée RSA 2 048 bits correspondante.
 
 La mise en service d’un certificat prend quelques jours et il est recommandé que le certificat soit mis en service plusieurs mois à l’avance. Pour plus d&#39;informations, consultez [Obtention d&#39;un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md).
 
@@ -59,11 +59,12 @@ Pour ajouter un certificat, procédez comme suit :
    1. Collez la **chaîne de certificats**, **clé privée** et **chaîne de certificats** dans leurs champs respectifs. Utilisez l’icône Coller située à droite de la zone de saisie.
 Les trois champs ne sont pas facultatifs et doivent être inclus.
 
+      >[!NOTE]
+      >Toutes les erreurs détectées s&#39;affichent. Vous devez corriger toutes les erreurs avant de pouvoir enregistrer votre certificat. Consultez la section [Erreurs de certificat](#certificate-errors) pour en savoir plus sur la résolution des erreurs courantes.
+
 1. Cliquez sur **Enregistrer** pour envoyer votre certificat. Il s’affiche sous la forme d’une nouvelle ligne dans le tableau.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
-   >[!NOTE]
-   >Toutes les erreurs détectées s&#39;affichent. Vous devez corriger toutes les erreurs avant de pouvoir enregistrer votre certificat. Consultez la section [Erreurs de certificat](#certificate-errors) pour en savoir plus sur la résolution des erreurs courantes.
 
 ## Erreurs de certificat {#certificate-errors}
 
