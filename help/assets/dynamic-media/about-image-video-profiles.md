@@ -47,7 +47,7 @@ Voir [Réglage de la taille du lot du workflow de retraitement](#adjusting-load)
 
 >[!NOTE]
 >
->Si vous effectuez une migration en masse de ressources de Dynamic Media Classic vers Experience Manager, vous devez activer l’agent de réplication de migration sur le serveur Contenu multimédia dynamique. Une fois la migration terminée, veillez à désactiver l’agent.
+>Si vous effectuez une migration en masse des ressources de Dynamic Media Classic vers le Experience Manager, vous devez activer l’agent de réplication de migration sur le serveur Dynamic Media. Une fois la migration terminée, veillez à désactiver l’agent.
 >
 >L’agent de publication Migration doit être désactivé sur le serveur Dynamic Media afin que le workflow de retraitement fonctionne comme prévu.
 
@@ -58,7 +58,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 -->
 
 **Pour retraiter des ressources Dynamic Media dans un dossier** :
-1. Dans Adobe Experience Manager, à partir de la page Ressources, accédez à un dossier de fichiers Contenu multimédia dynamique auquel un Profil d’image ou un Profil vidéo est affecté et pour lequel vous souhaitez appliquer le paramètre **Scene7: Processus de retraitement des ressources**,
+1. Dans Adobe Experience Manager, à partir de la page Ressources, accédez à un dossier de ressources Dynamic Media auquel un Profil d’images ou un Profil vidéo est affecté et pour lequel vous souhaitez appliquer la Scene7 **: Processus de retraitement des ressources**,
 
    Dans le cas des dossiers auxquels un profil d’image ou vidéo est déjà affecté, le nom du profil est affiché directement sous celui du dossier en mode Carte.
 
