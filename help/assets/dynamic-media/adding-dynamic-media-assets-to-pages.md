@@ -20,7 +20,7 @@ Vous ajoutez directement des ressources Dynamic Media à la page si vous utilise
 >
 >Vous devez publier des fichiers avant de les ajouter aux pages dans le Experience Manager. Voir [Publication de ressources Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-## Ajout d’un composant Dynamic Media à une page   {#adding-a-dynamic-media-component-to-a-page}
+## Ajout d’un composant Dynamic Media à une page  {#adding-a-dynamic-media-component-to-a-page}
 
 L’ajout d’un composant Média 3D, Dynamic Media, Média interactif, Média panoramique, Recadrage intelligent de la vidéo ou Média vidéo 360 à une page est identique à l’ajout d’un composant sur n’importe quelle page. Les composants Dynamic Media sont décrits dans les sections suivantes.
 
@@ -128,7 +128,7 @@ Si vous ajoutez le composant Dynamic Media et si l’option **[!UICONTROL Param
 
 * L’image possède un fichier pyramid tiff. Les images importées avant l’activation de Dynamic Media ne possèdent pas de fichier pyramid tiff.
 
-#### En cas d’utilisation d’images   {#when-working-with-images}
+#### En cas d’utilisation d’images  {#when-working-with-images}
 
 Le composant Dynamic Media permet d’ajouter des images dynamiques, notamment des visionneuses d’images, à 360 ° et de supports variés. Vous pouvez effectuer un zoom avant et arrière, faire pivoter une image dans une visionneuse à 360° ou sélectionner une image dans un autre type de visionneuse.
 
@@ -195,8 +195,8 @@ Vous pouvez modifier les paramètres Dynamic Media ci-après en cliquant sur **
 
    Avec les modificateurs de visionneuse, vous pouvez, par exemple, effectuer les opérations suivantes :
 
-   * Associer un fichier de légende à une vidéo : [légende](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * Associer un fichier de navigation à une vidéo : [navigation](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+   * Associer un fichier de légende à une vidéo : [légende](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * Associer un fichier de navigation à une vidéo : [navigation](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
    Vous pouvez modifier les paramètres avancés ci-après en cliquant sur **[!UICONTROL Modifier]** dans le composant.
 
@@ -210,7 +210,7 @@ Vous pouvez modifier les paramètres Dynamic Media ci-après en cliquant sur **
 
 Utilisez le composant Dynamic Media pour ajouter des ressources d’images avec recadrage intelligent à vos pages web. Lorsque vous modifiez le composant, vous pouvez choisir d’utiliser un paramètre prédéfini de la visionneuse de vidéos pour lire la vidéo sur la page.
 
-Voir [Utilisation de la recadrage dynamique avec les ressources Experience Manager Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
+Voir [Utilisation de la recadrage dynamique avec les ressources Experience Manager Dynamic Media](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
 
 Voir aussi [Profils d’image](/help/assets/dynamic-media/image-profiles.md).
 
@@ -337,10 +337,10 @@ Voir [Diffusion du contenu sur HTTP2](/help/assets/dynamic-media/http2faq.md) po
 
 >[!MORELIKETHIS]
 >
->* [Utilisation du lecteur vidéo dans le Dynamic Media Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
->* [Utilisation de la vidéo interactive avec le Dynamic Media Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
->* [Présentation de Asset Viewer avec le Dynamic Media Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
->* [Utilisation de la miniature vidéo personnalisée avec le Dynamic Media Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
->* [Présentation de la gestion des couleurs avec le Dynamic Media Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
->* [Utilisation de l’accentuation des images avec le Dynamic Media Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
+>* [Utilisation du lecteur vidéo dans le Dynamic Media Experience Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
+>* [Utilisation de la vidéo interactive avec le Dynamic Media Experience Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
+>* [Présentation de Asset Viewer avec le Dynamic Media Experience Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
+>* [Utilisation de la miniature vidéo personnalisée avec le Dynamic Media Experience Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [Présentation de la gestion des couleurs avec le Dynamic Media Experience Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
+>* [Utilisation de l’accentuation des images avec le Dynamic Media Experience Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
 
