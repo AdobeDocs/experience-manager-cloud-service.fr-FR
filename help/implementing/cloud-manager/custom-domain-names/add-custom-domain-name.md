@@ -2,9 +2,9 @@
 title: Ajouter un nom de domaine personnalisé
 description: Ajouter un nom de domaine personnalisé
 translation-type: tm+mt
-source-git-commit: 68a62be11f711e30b87dfc60a85627dceaf06caa
+source-git-commit: 27e96d66d93f2fa0e67e607c75f37efda17a13b7
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -52,22 +52,39 @@ Suivez les instructions fournies pour prouver la propriété du domaine de votre
 
 1. Cliquez sur **Créer**.
 1. Le déploiement CDN nécessite un certificat SSL valide et une vérification TXT réussie. Ceci est indiqué par l’état **Vérifié et déployé**.
-1. Accédez à Vérifier l’état du nom de domaine personnalisé pour en savoir plus sur les différents états et sur la façon de s’adresser.
+Accédez à [Vérification de l’état du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour en savoir plus sur les différents états et sur la manière de résoudre le problème.
 
    >[!NOTE]
    >Le BAT DNS peut prendre jusqu&#39;à quelques heures pour reconnaître, en raison des retards de propagation DNS. Cloud Manager vérifie la propriété et met à jour l’état visible dans le tableau Paramètres de domaine. Pour plus d’informations, voir Vérification de l’état du nom de domaine.
 
 ## Ajouter un nom de domaine personnalisé à partir de la page des Environnements {#adding-cdn-environments}
 
-1. Accédez à la page Détails de l’Environnement pour l’environnement d’intérêt.
-1. Utilisez les champs d’entrée situés en haut du tableau Noms de domaine pour envoyer le nom de domaine personnalisé, le certificat SSL. Sélectionnez ensuite Ajouter.
-1. L&#39;Assistant Ajouter un nom de domaine personnalisé s&#39;ouvre alors avec le nom d&#39;Environnement pré-renseigné.
-1. Entrez le nom de domaine personnalisé. Remarque : N’incluez pas d’espaces `http://`, `https://` lors de la saisie dans votre domaine. Sélectionnez Continuer.
-1. Vous accédez alors à l’écran Vérification du nom de domaine pour votre Environnement. Consultez [Vérification de domaine](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) pour en savoir plus. Suivez les instructions fournies pour prouver la propriété du domaine de votre environnement.
-1. Sélectionnez **Continuer**.
-1. Le déploiement CDN nécessite un certificat SSL valide et une vérification TXT réussie. Ceci est indiqué par l’état **Vérifié et déployé**.
+1. Accédez à la page Détails des Environnements pour l’environnement d’intérêt.
 
-A ce stade, votre nom de domaine personnalisé est prêt pour le test et un `CNAME` pour pointer vers celui-ci. Reportez-vous à la section Etat du nom de domaine pour en savoir plus sur les différents états et sur la façon de traiter.
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create4.png)
+
+1. Utilisez les champs d’entrée situés en haut du tableau Noms de domaine pour envoyer le nom de domaine personnalisé et sélectionnez le certificat SSL dans la liste déroulante. Cliquez sur **+ Ajoute**.
+
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
+
+1. Vérifiez les champs de la boîte de dialogue **Ajouter le nom de domaine** et cliquez sur **Continuer**.
+
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
+
+   >[!NOTE]
+   >N’incluez pas d’espaces `http://`, `https://` lors de la saisie dans votre domaine.
+
+1. L’écran Vérification du nom de domaine de votre Environnement s’affiche.
+
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create6.png)
+
+   Consultez [Vérification de domaine](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) pour en savoir plus. Suivez les instructions fournies pour prouver la propriété du domaine de votre environnement.
+
+1. Cliquez sur **Créer**.
+
+1. Le déploiement des noms de domaine personnalisés requiert un certificat SSL valide et une vérification TXT réussie. Ceci est indiqué par l’état **Vérifié et déployé**.
+
+A ce stade, votre nom de domaine personnalisé est prêt pour le test et un `CNAME` pour pointer vers celui-ci. Consultez [État du nom de domaine](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour en savoir plus sur les différents états et sur la façon de s&#39;y attaquer.
 
 >[!NOTE]
 >Le BAT DNS peut prendre jusqu&#39;à quelques heures pour reconnaître, en raison des retards de propagation DNS. Cloud Manager vérifie la propriété et met à jour l’état visible dans le tableau Paramètres de domaine. Consultez la section Vérification de l’état du nom de domaine pour en savoir plus.
