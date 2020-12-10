@@ -2,15 +2,15 @@
 title: 'Affichage de la mise à jour et du remplacement d’un certificat SSL - Gestion de SSL '
 description: Affichage de la mise à jour et du remplacement d’un certificat SSL - Gestion des certificats SSL
 translation-type: tm+mt
-source-git-commit: e5305efad061ae0b06ecb16433fccd5e97f978f3
+source-git-commit: d1301d4414f87b30f5ab732eacbb61c96f102262
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
 
 
-# Affichage de la mise à jour et du remplacement d’un certificat SSL {#view-update-replace-ssl-certificate}
+# Affichage et mise à jour et remplacement d’un certificat SSL {#view-update-replace-ssl-certificate}
 
 ## Affichage et mise à jour d’un certificat SSL {#view-update}
 
