@@ -4,10 +4,10 @@ user-guide-title: Implémentation pour AEM as a Cloud Service
 breadcrumb-title: Guide d’implémentation
 user-guide-description: Découvrez comment personnaliser votre déploiement d’Experience Manager as a Cloud Service, y compris des rubriques sur le déploiement et le développement.
 translation-type: tm+mt
-source-git-commit: c130ade74e91c4247b4c858621a4d39d45fb2404
+source-git-commit: c1485dabe9c31b355a0b06b96c69a11e31ea9962
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 81%
+source-wordcount: '681'
+ht-degree: 69%
 
 ---
 
@@ -28,6 +28,32 @@ ht-degree: 81%
       + [Tests de l’interface utilisateur](/help/implementing/cloud-manager/ui-testing.md)
    + [Accès aux journaux et leur gestion](cloud-manager/manage-logs.md)
    + [Présentation des notifications](cloud-manager/notifications.md)
+   + Gestion des certificats SSL {#manage-ssl-certificates}
+      + [Présentation](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+      + [Obtention d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
+      + [Ajouter un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+      + [Affichage et mise à jour ou remplacement d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
+      + [Vérification du statut d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
+      + [Suppression d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
+   + Noms de domaine personnalisés {#custom-domain-names}
+      + [Présentation](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+      + [Obtention d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
+      + [Ajouter un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+      + [Ajouter un enregistrement TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
+      + [Vérification de l&#39;état du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
+      + [Configuration des paramètres DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
+      + [Vérification de l&#39;état de l&#39;enregistrement DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
+      + [Affichage et mise à jour du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+      + [Mise à jour du certificat SSL du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
+      + [Suppression du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+   + LISTES AUTORISÉES IP {#ip-allow-lists}
+      + [Présentation](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+      + [Ajouter une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
+      + [Affichage et mise à jour d’une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
+      + [Application de la Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+      + [Annulation de l&#39;application d&#39;une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
+      + [Suppression d’une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
+      + [Vérification de l&#39;état d&#39;une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
 + Gestion de votre code {#managing-code}
    + [Gestion des versions du projet Maven](cloud-manager/project-version-handling.md)
    + [Accès à Git](cloud-manager/accessing-git.md)
