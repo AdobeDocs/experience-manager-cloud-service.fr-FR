@@ -2,9 +2,9 @@
 title: Introduction - Listes autorisées IP dans le Gestionnaire de commandes
 description: Introduction - Listes autorisées IP dans le Gestionnaire de commandes
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ Les Listes autorisées IP peuvent être ajoutées une seule fois et appliquées/
 
 A l’aide de la page Liste autorisée IP de l’interface utilisateur de Cloud Manager ou de la page Détails de l’Environnement, un utilisateur disposant d’autorisations peut effectuer plusieurs tâches pour gérer les Listes autorisées IP de vos environnements, notamment :
 
-* Ajouter la Liste autorisée IP
+* [Ajouter une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
    >[!NOTE]
    > Vous pouvez Ajouter une seule fois et réutiliser ou appliquer la règle un certain nombre de fois dans environnement-services du programme.
-* Affichage ou mise à jour d&#39;une Liste autorisée IP
-* Application ou annulation de l&#39;application d&#39;une Liste autorisée IP
-* Suppression d’une Liste autorisée IP
+* [Affichage ou mise à jour d&#39;une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
+* [Application ou annulation de l&#39;application d&#39;une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+* [Suppression d’une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
