@@ -2,22 +2,22 @@
 title: 'Suppression de la Liste autorisée IP '
 description: Suppression de la Liste autorisée IP
 translation-type: tm+mt
-source-git-commit: b9b2591ce25040b108484984851308bc80eee958
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '83'
 ht-degree: 0%
 
 ---
 
 
-# Suppression de la Liste autorisée IP {#delete-allow-list}
+# Suppression d’une Liste autorisée IP {#delete-allow-list}
 
 Pour supprimer une Liste autorisée IP, procédez comme suit :
 
-1. Accédez à la page Paramètres de domaine à partir de l’écran Environnements.
+1. Accédez à la page **Paramètres de domaine** à partir de l’écran **Environnements**.
 1. Identifiez la ligne où figure le nom de domaine personnalisé que vous souhaitez supprimer.
 1. Sélectionnez **...** à l&#39;extrémité droite de la ligne.
-1. Sélectionnez l’option Supprimer.
+1. Sélectionnez l&#39;option **Supprimer**.
 1. Confirmez votre envoi.
 
 >[!NOTE]
