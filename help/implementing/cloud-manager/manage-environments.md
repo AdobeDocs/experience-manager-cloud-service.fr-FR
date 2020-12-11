@@ -2,10 +2,10 @@
 title: Gestion des environnements - Cloud Service
 description: Gestion des environnements - Cloud Service
 translation-type: tm+mt
-source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
+source-git-commit: 483c31a7ca53dc5e5dcffe3e9bfc7ce613ca8697
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 62%
+source-wordcount: '1248'
+ht-degree: 63%
 
 ---
 
@@ -153,18 +153,11 @@ Accédez à la page de détails **Environnements** à partir de la page Résumé
 
 Vous pouvez exécuter les actions suivantes sur le service de publication pour votre environnement, comme décrit ci-dessous :
 
-1. **Ajouter un**
-nom de domaine personnaliséReportez-vous à la section  [Ajoute d&#39;un nom de domaine personnalisé.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+1. [Ajouter un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-1. **Affichage et mise à jour des**
-certificats de domaine et des noms de domaine personnalisésReportez-vous à la section
-   * [Affichage et mise à jour des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
-   * [Affichage et mise à jour des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
+1. [Affichage et mise à jour d&#39;un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
 
-1. **Suppression de noms de domaine et de**
-certificats personnalisésReportez-vous à la section
-   * [Suppression d&#39;un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
-   * [Certificats SSL](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+1. [Suppression d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
 ## Gestion des Listes autorisées IP {#manage-ip-allow-lists}
 
@@ -175,23 +168,23 @@ Accédez à la page Détails de l&#39;Environnement à partir de la page Récapi
 L’application d’une Liste autorisée IP est le processus par lequel toutes les plages d’adresses IP incluses dans la définition de la Liste autorisée sont associées à un service Auteur ou Publication dans un environnement. Un utilisateur du rôle Propriétaire de l&#39;entreprise ou Deployment Manager doit être connecté pour pouvoir appliquer une Liste autorisée IP.
 
 >[!NOTE]
->La Liste autorisée IP doit exister dans Cloud Manager pour pouvoir l’appliquer à un environnement-service. Pour en savoir plus sur les Listes autorisées IP dans Cloud Manager, accédez à [Introduction aux Listes autorisées IP dans le composant Can Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+>La Liste autorisée IP doit exister dans Cloud Manager pour pouvoir l’appliquer à un environnement-service. Pour en savoir plus sur les Listes autorisées IP dans Cloud Manager, accédez à [Introduction aux Listes autorisées IP dans le Gestionnaire de commandes ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
-Suivez les étapes ci-dessous :
+Pour appliquer une Liste autorisée IP, procédez comme suit :
 
-1. Accédez à la page Détails de l&#39;Environnement spécifique à partir de l&#39;écran Environnements et accédez au tableau Liste autorisée IP.
+1. Accédez à l&#39;environnement spécifique à partir de la page de détails **Environnements** et accédez au tableau **Listes autorisées IP**.
 1. Utilisez les champs d’entrée en haut du tableau Liste autorisée IP pour sélectionner la Liste autorisée IP et le service Auteur ou Publication auquel vous souhaitez l’appliquer.
-1. Sélectionnez ensuite Appliquer et confirmez votre envoi.
+1. Cliquez sur **Appliquer** et confirmez votre soumission.
 
 ### Annulation de l&#39;application d&#39;une Liste autorisée IP {#unapply-ip-allow-list}
 
-L’annulation de l’application d’une Liste autorisée IP est le processus par lequel toutes les plages d’adresses IP incluses dans la définition de la Liste autorisée sont dissociées d’un service Auteur/Editeur dans un environnement.  Un utilisateur du rôle Propriétaire de l&#39;entreprise ou Deployment Manager doit être connecté pour pouvoir annuler l&#39;application d&#39;une Liste autorisée IP.
+L’annulation de l’application d’une Liste autorisée IP est le processus par lequel toutes les plages d’adresses IP incluses dans la définition de la Liste autorisée sont dissociées d’un service Auteur ou Editeur dans un environnement. Un utilisateur du rôle Propriétaire de l&#39;entreprise ou Deployment Manager doit être connecté pour pouvoir annuler l&#39;application d&#39;une Liste autorisée IP.
 
-Suivez les étapes ci-dessous :
+Pour annuler l’application d’une Liste autorisée IP, procédez comme suit :
 
-1. Accédez à la page Détails de l&#39;Environnement spécifique à partir de l&#39;écran Environnements et accédez au tableau Liste autorisée IP.
+1. Accédez à la page de détails **Environnements** spécifique de l&#39;écran Environnements et accédez au tableau **Listes autorisées IP**.
 1. Identifiez la ligne où est répertoriée la règle de Liste autorisée IP que vous souhaitez annuler.
 1. Sélectionnez **...** à l&#39;extrémité droite de la ligne.
-1. Sélectionnez l’option Annuler l’application et confirmez votre envoi.
+1. Sélectionnez l&#39;option **Annuler** et confirmez votre envoi.
 
 
