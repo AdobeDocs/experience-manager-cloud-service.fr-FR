@@ -2,15 +2,15 @@
 title: Affichage et mise à jour - Listes autorisées IP dans le Gestionnaire de commandes
 description: Affichage et mise à jour - Listes autorisées IP dans le Gestionnaire de commandes
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
 
 
-# Affichage et mise à jour des Listes autorisées IP {#view-update}
+# Affichage et mise à jour d&#39;une Liste autorisée IP {#view-update}
 
 Vous pouvez vue et mettre à jour des Listes autorisées IP dans les cas suivants :
 
