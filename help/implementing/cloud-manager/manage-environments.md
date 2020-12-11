@@ -2,10 +2,10 @@
 title: Gestion des environnements - Cloud Service
 description: Gestion des environnements - Cloud Service
 translation-type: tm+mt
-source-git-commit: 146f5348eb9c0fafd5dd8c4f974e1e534d9bb0df
+source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 63%
+source-wordcount: '1264'
+ht-degree: 62%
 
 ---
 
@@ -149,15 +149,22 @@ De plus, vous pouvez vous connecter localement à partir de la **page de résum�
 
 ## Gestion des noms de domaine personnalisés {#manage-cdn}
 
-Accédez à la page Détails de l&#39;Environnement à partir de la page Récapitulatif des Environnements.
+Accédez à la page de détails **Environnements** à partir de la page Résumé des Environnements.
 
 Vous pouvez exécuter les actions suivantes sur le service de publication pour votre environnement, comme décrit ci-dessous :
 
-1. **Ajouter un nom** de domaine personnalisé : Reportez-vous à la section  [Ajoute d&#39;un nom de domaine personnalisé.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+1. **Ajouter un**
+nom de domaine personnaliséReportez-vous à la section  [Ajoute d&#39;un nom de domaine personnalisé.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-1. **Affichage et mise à jour du nom** de domaine personnalisé : Reportez-vous à  [Affichage et mise à jour des noms de domaine personnalisés et des certificats SSL.](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+1. **Affichage et mise à jour des**
+certificats de domaine et des noms de domaine personnalisésReportez-vous à la section
+   * [Affichage et mise à jour des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+   * [Affichage et mise à jour des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
 
-1. **Suppression du nom** de domaine personnalisé : Reportez-vous à la section  [Suppression d’un nom de domaine personnalisé et de certificats SSL.](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+1. **Suppression de noms de domaine et de**
+certificats personnalisésReportez-vous à la section
+   * [Suppression d&#39;un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+   * [Certificats SSL](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
 ## Gestion des Listes autorisées IP {#manage-ip-allow-lists}
 
