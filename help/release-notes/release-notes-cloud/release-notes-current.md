@@ -2,10 +2,10 @@
 title: Notes de mise à jour actuelles de  [!DNL Adobe Experience Manager] en tant que Cloud Service.
 description: Notes de mise à jour actuelles de  [!DNL Adobe Experience Manager] en tant que Cloud Service.
 translation-type: tm+mt
-source-git-commit: f37bcfda2b4e4c036ce5c7ddd2dd1aa131f2a6a5
+source-git-commit: 3aff98256eb26176bca52a49286bf2853290b5ef
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 12%
+source-wordcount: '1205'
+ht-degree: 9%
 
 ---
 
@@ -85,21 +85,21 @@ Cet outil est destiné aux administrateurs système, aux consultants ou aux part
 
 ### Date de publication {#release-date-cm}
 
-La date de publication de Cloud Manager en tant que Cloud Service 2020.11.0 est le 12 novembre 2020.
+La date de publication de Cloud Manager en tant que Cloud Service 2020.12.0 est le 10 décembre 2020.
 
 ### Nouveautés de [!DNL Cloud Manager] {#what-is-new-cm}
 
-* Une nouvelle option de menu **Connexion locale** est désormais disponible pour les utilisateurs à partir des options du menu environnement sur les pages de résumé **Environnements** et **Environnements**.
-Pour plus d’informations, consultez [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md##login-locally).
+* Gestion en libre-service des [certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) et [noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
-* L’onglet **Apprendre** de Cloud Manager a été actualisé avec de nouvelles images dans l’interface utilisateur.
+* Gestion en libre-service des [Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+
+* La page de détails **Environnement** mise à jour permet désormais aux utilisateurs de gérer les noms de domaine personnalisés et les Listes autorisées IP sur leurs environnements.
 
 ### Correctifs {#bug-fixes-cloud-manager}
 
-* Le chargement des dépendances effectué avant l’exécution du build nécessitait le téléchargement d’un module externe Maven.
-* Le lien du pied de page de Cloud Manager destiné à sélectionner une langue dirige désormais vers l’emplacement approprié.
-* Parfois, pendant la numérisation du code, le processus SonarQube ne démarrait pas. Désormais, il sera automatiquement détecté et un redémarrage sera tenté.
-* Tous les pipelines de production existants seront automatiquement activés avec l’étape Audit d’expérience.
+* Certaines occurrences d’échecs au stade de l’analyse du code sans fournir de résultats corrigés.
+
+* La carte d&#39;Environnement n&#39;affichait pas systématiquement le bouton **Ajouter**.
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 
@@ -119,30 +119,18 @@ L’AEM en tant que module externe expert de création de SDK Cloud Service dét
 
 La nouvelle syntaxe [&quot;httpd -t&quot;](/help/implementing/dispatcher/disp-overview.md#local-validation) recherche la configuration d’apache et de répartiteur exécutée lors de la génération de Cloud Manager, qui peut également être exécutée à l’aide d’AEM en tant qu’outils de répartiteur du kit SDK Cloud Service.
 
-## Outil de transfert de contenu {#content-transfer-tool}
+## Outils de refactorisation du code {#code-refactoring-tools}
 
-Suivez cette section pour en savoir plus sur les nouveautés et les mises à jour de [Outil de transfert de contenu](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Version v1.1.12.
+### Nouveautés de [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-### Nouveautés {#what-is-new-ctt}
+* Nouvelle version du module externe AIO-CLI publiée. La dernière version de ce module comprend des correctifs pour AEM Dispatcher Converter et Repository Modernizer et prend également en charge un nouvel utilitaire - Index Converter. Consultez [Expérience unifiée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) pour en savoir plus sur ce module externe.
 
-* Amélioration de l’expérience utilisateur des journaux. Horodatages ajoutés aux journaux d&#39;Extraction et d&#39;importation. Message ajouté pour indiquer si les journaux sont vides.
+* Index Converter est un utilitaire qui permet de transformer les définitions d&#39;index OAK personnalisées d&#39;un client en AEM en définitions d&#39;index OAK compatibles avec les Cloud Service.
+Pour plus d&#39;informations, consultez [Index Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter).
 
-### Correctifs {#ctt-bug-fixes}
+* Nouvelle fonctionnalité ajoutée à [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) qui crée un package distinct `ui.config` qui contient toutes les configurations OSGi.
 
-* L’outil de transfert de contenu ignorait les fichiers de contenu si le jeu de migration contenait des chemins dont les noms de fichier étaient partiellement similaires. Ce problème a été résolu.
+### Correctifs {#crt-bug-fixes}
 
-## Analyseur des meilleures pratiques {#best-practices-analyzer}
-
-### Date de publication {#release-date-bpa}
-
-La date de publication de l’analyseur des meilleures pratiques est le 13 novembre 2020.
-
-### Nouveautés de [!DNL Best Practices Analyzer] {#what-is-new-bpa}
-
-* Cloud Readiness Analyzer est désormais Best Practices Analyzer (BPA). BPA fournit une évaluation des meilleures pratiques de votre mise en oeuvre AEM en cours et aide à évaluer la capacité de passer d’une instance AEM existante à l’AEM en tant que Cloud Service.
-
-* Un nouveau détecteur a été ajouté pour détecter l&#39;utilisation de `java.io.InputStream`, ce qui peut causer des problèmes s&#39;il est utilisé en AEM comme Cloud Service.
-
-### Correctifs {#bpa-bug-fixes}
-
-* Nous avons corrigé un bogue qui provoquait les éléments positifs liés au composant *textfield foundation*.
+* Plusieurs correctifs de bogues ont été apportés aux outils  Dispatcher Converter et Repository Modernizer.
+Reportez-vous à [AEM Répartiteur Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) et [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
