@@ -2,7 +2,7 @@
 title: Vérification du statut de la Liste autorisée IP
 description: Vérification du statut de la Liste autorisée IP
 translation-type: tm+mt
-source-git-commit: 4245bbad81327ffdba9c400a36a03d815e2ebdc7
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -33,7 +33,8 @@ Voici les définitions de statut qui apparaîtront dans une Liste autorisée IP 
 
 * **Suppression** : La demande de suppression est en cours. Cela implique la non-application de tous les services. Chaque Annulation sera répertoriée avec Non commencée/En cours/Terminée ou Échec.
 Une fois l&#39;opération de suppression terminée, la Liste autorisée IP :
-   * N’apparaît plus dans la table Liste autorisée IP * Ne s’applique plus à aucun service du programme dans Cloud Manager.
+   * N’apparaît plus dans le tableau Liste autorisée IP.
+   * Ne plus être appliqué à un service du programme dans Cloud Manager.
 
 * **Échec** de la suppression : Échec d&#39;un ou plusieurs processus d&#39;annulation d&#39;application dans une opération de suppression. Chaque Annulation sera répertoriée avec Terminé ou Echec.
 
