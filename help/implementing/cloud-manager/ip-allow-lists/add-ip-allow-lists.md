@@ -2,7 +2,7 @@
 title: 'Ajouter la Liste autorisée IP '
 description: Ajouter la Liste autorisée IP
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: 701020701fd45af720edea13a70cb459a650fbca
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%
@@ -10,11 +10,9 @@ ht-degree: 0%
 ---
 
 
-# Présentation {#introduction}
+# Ajouter une Liste autorisée IP {#add-ip-allow-list}
 
 Un utilisateur du rôle Propriétaire de l&#39;entreprise ou Deployment Manager doit être connecté pour pouvoir ajouter une Liste autorisée IP.
-
-## Ajouter la Liste autorisée IP {#add-ip-allow-list}
 
 Pour ajouter une Liste autorisée IP, procédez comme suit :
 
