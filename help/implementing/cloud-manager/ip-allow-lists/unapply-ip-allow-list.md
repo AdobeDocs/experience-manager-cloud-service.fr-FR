@@ -2,15 +2,15 @@
 title: 'Annuler l''application de la Liste autorisée IP '
 description: Annuler l'application de la Liste autorisée IP
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '131'
 ht-degree: 0%
 
 ---
 
 
-# Annulation de l&#39;application de la Liste autorisée IP {#apply-allow-list}
+# Annulation de l&#39;application d&#39;une Liste autorisée IP {#apply-allow-list}
 
 L’annulation de l’application d’une Liste autorisée IP est le processus par lequel toutes les plages d’adresses IP incluses dans la définition de la Liste autorisée sont dissociées d’un service Auteur/Editeur dans un environnement.
 
