@@ -2,9 +2,9 @@
 title: Ajouter un nom de domaine personnalisé
 description: Ajouter un nom de domaine personnalisé
 translation-type: tm+mt
-source-git-commit: 27e96d66d93f2fa0e67e607c75f37efda17a13b7
+source-git-commit: 3d60af3da62a8a5c8cb62a4e79452bc7675b1878
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Un utilisateur doit être un propriétaire d’entreprise ou un gestionnaire de 
 
 * Avant d’ajouter un nom de domaine personnalisé, un certificat SSL valide contenant le nom de domaine personnalisé doit être installé sur votre Programme. Consultez [Ajouter un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) pour en savoir plus.
 
-* Un seul nom de domaine peut être ajouté à la fois. Les utilisateurs peuvent toutefois ajouter des caractères génériques, par exemple `*.wknd.com` en tant que nom de domaine, ce qui permet d’héberger plusieurs sous-domaines avec un enregistrement TXT unique.
+* Un seul nom de domaine peut être ajouté à la fois. Toutefois, les domaines ne peuvent pas contenir de caractères génériques. Les domaines personnalisés côté auteur ne sont pas pris en charge.
 
 * Chaque Environnement de Cloud Manager peut héberger jusqu’à 100 domaines personnalisés par environnement.
 
