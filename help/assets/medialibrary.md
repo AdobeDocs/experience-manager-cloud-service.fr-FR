@@ -3,10 +3,10 @@ title: Différence entre AEM Assets et AEM Media Library
 description: Questions fréquentes concernant AEM Assets et AEM Media Library, y compris les différences entre les deux.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 100%
+source-wordcount: '694'
+ht-degree: 97%
 
 ---
 
@@ -44,7 +44,7 @@ Si vous prévoyez de modifier les métadonnées autres que le titre, la descript
 
 ## Je souhaite utiliser le prédicat de catégorie sur mon site web. Ai-je besoin d’AEM Assets ?    {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
 
-Oui, le prédicat de catégorie ainsi que tous les autres composants utilisés avec le centre de presse Geometrixx font partie d’AEM Assets et nécessitent une licence AEM Assets.
+Oui, le prédicat de catégorie, ainsi que tous les autres composants font partie de AEM Assets et nécessitent une licence AEM Assets.
 
 ## Je souhaite redimensionner automatiquement les images lors de l’importation. Ai-je besoin d’AEM Assets ?    {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
 
