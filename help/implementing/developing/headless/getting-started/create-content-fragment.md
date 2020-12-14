@@ -2,7 +2,7 @@
 title: Guide de Début rapide sur la création de fragments de contenu sans en-tête
 description: Les fragments de contenu vous permettent de concevoir, de créer, de traiter et d’utiliser du contenu indépendant des pages qui peut être diffusé sans encombre par AEM.
 translation-type: tm+mt
-source-git-commit: 712a99095494ab333cf0ebb2ac9fffe3f5945f3b
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 3%
@@ -53,5 +53,6 @@ Les fragments de contenu peuvent également référencer d’autres ressources d
 
 Maintenant que vous avez créé un fragment de contenu, vous pouvez passer à la dernière partie du guide de prise en main et [créer des demandes d&#39;API pour accéder aux fragments de contenu et les diffuser.](create-api-request.md)
 
->!![TIP]
-Pour plus d’informations sur la gestion des fragments de contenu, voir la [documentation sur les fragments de contenu](/help/assets/content-fragments/content-fragments.md).
+>[!TIP]
+>
+>Pour plus d’informations sur la gestion des fragments de contenu, voir la [documentation sur les fragments de contenu](/help/assets/content-fragments/content-fragments.md).
