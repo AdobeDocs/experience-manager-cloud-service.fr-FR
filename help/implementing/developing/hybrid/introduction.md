@@ -2,10 +2,10 @@
 title: Introduction et présentation des applications sur une seule page (SPA)
 description: Cet article présente les concepts d’une SPA et décrit l’utilisation d’une SPA élémentaire à des fins de création, indiquant comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
 translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+source-git-commit: e4b75913e8d2ec90efc97d79e3a272b146fc06d6
 workflow-type: tm+mt
-source-wordcount: '1930'
-ht-degree: 100%
+source-wordcount: '1933'
+ht-degree: 97%
 
 ---
 
@@ -80,8 +80,10 @@ Parce que le rendu est effectué côté client, les éléments de la page réagi
 >Pour obtenir des détails techniques sur le fonctionnement des SPA dans AEM, consultez les articles suivants :
 >* [Prise en main des SPA dans AEM avec React](getting-started-react.md)
 >* [Prise en main des SPA dans AEM avec Angular](getting-started-angular.md)
+
 >
->Pour observer de plus près la conception, l’architecture et le workflow technique de l’éditeur de SPA, consultez l’article :
+>
+Pour observer de plus près la conception, l’architecture et le workflow technique de l’éditeur de SPA, consultez l’article :
 >* [Présentation de l’éditeur de SPA](editor-overview.md).
 
 
@@ -151,7 +153,7 @@ La section suivante, [Chargement d’une SPA](#loading-a-spa-application), exami
 
 ### Chargement d’une SPA {#loading-a-spa-application}
 
-1. Si ce n’est pas déjà fait, chargez l’application We.Retail Journal sur le serveur de publication ou à l’aide de l’option **Afficher comme publié(e)** du menu **Informations sur la page** de l’éditeur de page.
+1. Si ce n’est pas déjà fait, chargez l’application WKND SPA Project sur le serveur de publication ou en utilisant l’option **Vue as Published** dans le menu **Informations sur la page** de l’éditeur de page.
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
@@ -252,7 +254,7 @@ La section suivante, [Chargement d’une SPA](#loading-a-spa-application), exami
 
 1. Le modèle peut également regrouper les pages afin qu’elles soient chargées de manière synchrone, ce qui réduit le nombre de rechargements de page nécessaires.
 
-   Dans l’exemple de l’application We.Retail Journal, les pages `home`, `page-1`, `page-2` et `page-3` sont chargées de manière synchrone, car les visiteurs visitent généralement toutes ces pages.
+   Dans l&#39;exemple de l&#39;application de projet WKND SPA, les pages `home`, `page-1`, `page-2` et `page-3` sont chargées de manière synchrone, puisque les visiteurs visitent généralement toutes ces pages.
 
    Ce comportement n’est pas obligatoire et est entièrement définissable.
 
