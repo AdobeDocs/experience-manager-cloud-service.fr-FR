@@ -2,7 +2,7 @@
 title: Guide du Début rapide Création d’un dossier Ressources sans en-tête
 description: Les modèles de fragments de contenu définissent la structure des fragments de contenu. Les fragments de contenu sont ensuite stockés dans des dossiers de fichiers.
 translation-type: tm+mt
-source-git-commit: 9c801af38142434a5a0302b73b6fc1469a0eaab2
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 1%
@@ -53,5 +53,6 @@ Si vous utilisez une structure de site localisée, vous pouvez [créer une racin
 
 Maintenant que vous avez créé un dossier pour vos fragments de contenu, vous pouvez passer à la quatrième partie du guide de prise en main et [créer des fragments de contenu.](create-content-fragment.md)
 
->!![TIP]
-Pour plus d’informations sur la gestion des fragments de contenu, voir la [documentation sur les fragments de contenu](/help/assets/content-fragments/content-fragments.md).
+>[!TIP]
+>
+>Pour plus d’informations sur la gestion des fragments de contenu, voir la [documentation sur les fragments de contenu](/help/assets/content-fragments/content-fragments.md).
