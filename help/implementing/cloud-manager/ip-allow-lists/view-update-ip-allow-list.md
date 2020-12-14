@@ -1,8 +1,8 @@
 ---
-title: Affichage et mise à jour - Listes autorisées IP dans le Gestionnaire de commandes
-description: Affichage et mise à jour - Listes autorisées IP dans le Gestionnaire de commandes
+title: Affichage et mise à jour - Listes autorisées IP dans Cloud Manager
+description: Affichage et mise à jour - Listes autorisées IP dans Cloud Manager
 translation-type: tm+mt
-source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
+source-git-commit: 7fdfa626147a72f3d7fb98b89a19a871fc7a13ca
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 0%
