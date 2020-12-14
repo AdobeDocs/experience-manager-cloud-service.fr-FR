@@ -2,7 +2,7 @@
 title: Guide du Début rapide sans en-tête Accès et diffusion de fragments de contenu
 description: L’API REST Assets permet de gérer les fragments de contenu et l’API GraphQL permet une simple diffusion sans en-tête du contenu des fragments de contenu.
 translation-type: tm+mt
-source-git-commit: 7ed96dc0da879800d731983a0399b4f4fb3d7d41
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Les architectes de l&#39;information devront concevoir des requêtes pour leurs 
 
 1. En supposant que le modèle que nous avons créé s&#39;appelle `person` avec les champs `firstName`, `lastName` et `position`, nous pouvons créer une requête simple pour récupérer le contenu de notre fragment de contenu.
 
-   ```
+   ```text
    query {
      persons {
        items {
