@@ -2,7 +2,7 @@
 title: Guide de Début rapide sur la création de modèles de fragments de contenu sans en-tête
 description: Les modèles de fragments de contenu définissent la structure du contenu que vous allez créer et diffuser à l’aide de fonctionnalités AEM sans en-tête.
 translation-type: tm+mt
-source-git-commit: 712a99095494ab333cf0ebb2ac9fffe3f5945f3b
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 1%
@@ -63,5 +63,6 @@ Vous pouvez créer plusieurs modèles. Les modèles peuvent référencer d’aut
 
 Maintenant que vous avez défini les structures de vos fragments de contenu en créant des modèles, vous pouvez passer à la troisième partie du guide de prise en main et [créer des dossiers dans lesquels vous stockerez les fragments eux-mêmes.](create-assets-folder.md)
 
->!![TIP]
-Pour plus d’informations sur les modèles de fragments de contenu, voir la [documentation sur les modèles de fragments de contenu](/help/assets/content-fragments/content-fragments-models.md).
+>[!TIP]
+>
+>Pour plus d’informations sur les modèles de fragments de contenu, voir la [documentation sur les modèles de fragments de contenu](/help/assets/content-fragments/content-fragments-models.md).
