@@ -3,9 +3,9 @@ title: Balisage automatique des images avec des balises générées par AI
 description: Balisez des images à l’aide de services artificiellement intelligents qui appliquent des balises commerciales contextuelles et descriptives à l’aide de  [!DNL Adobe Sensei] services.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 80171c63e9f3ba9ace4fd948c7997f14a17ccddc
+source-git-commit: 745585ebd50f67987ee4fc48d4f9d5b4afa865a0
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2431'
 ht-degree: 86%
 
 ---
@@ -25,7 +25,7 @@ En arrière-plan, le service de balises intelligentes utilise le framework d’i
 
 Pour utiliser le balisage intelligent, effectuez les tâches suivantes :
 
-* [Intégrer Experience Manager avec Adobe Developer Console](#integrate-aem-with-aio).
+* [ [!DNL Adobe Experience Manager] Intégration à Adobe Developer Console](#integrate-aem-with-aio).
 * [Comprendre les directives et les modèles relatifs aux balises](#understand-tag-models-guidelines).
 * [Entraîner le modèle](#train-model).
 * [Baliser vos ressources numériques](#tag-assets).
@@ -105,6 +105,9 @@ Pour créer et entraîner un modèle pour vos balises spécifiques à votre entr
 1. Cliquez sur **[!UICONTROL Créer]**. Indiquez un **[!UICONTROL titre]** et une **[!UICONTROL description]**.
 1. Recherchez et sélectionnez les balises existantes dans `cq:tags` pour entraîner le modèle. Cliquez sur **[!UICONTROL Suivant]**.
 1. Dans la boîte de dialogue **[!UICONTROL Sélectionner les ressources]**, cliquez sur **[!UICONTROL Ajouter les ressources]** pour chaque balise. Effectuez des recherches dans le référentiel de gestion des ressources numériques ou parcourez le référentiel pour sélectionner au moins 10, et au plus 50 images. Sélectionnez les ressources et non le dossier. Une fois les images sélectionnées, cliquez sur **[!UICONTROL Sélectionner]**.
+
+   ![Statut de la formation à la vue](assets/smart-tags-training-status.png)
+
 1. Pour avoir un aperçu des miniatures des images sélectionnées, cliquez sur l’accordéon situé face à une balise. Vous pouvez modifier votre sélection en cliquant sur **[!UICONTROL Ajouter les ressources]**. Une fois la sélection effectuée, cliquez sur **[!UICONTROL Envoyer]**. L’interface utilisateur affiche une notification au bas de la page indiquant que l’entraînement est lancé.
 1. Vérifiez l’état de l’entraînement dans la colonne **[!UICONTROL État]** pour chaque modèle de balise. Les états possibles sont [!UICONTROL En Attente], [!UICONTROL Entraîné(s)] et [!UICONTROL Échec].
 
@@ -116,13 +119,13 @@ Pour créer et entraîner un modèle pour vos balises spécifiques à votre entr
 
 Pour vérifier que le service de balises intelligentes est entraîné sur vos balises dans la série de ressources d’entraînement, examinez le rapport de workflow d’entraînement dans la console Rapports.
 
-1. Dans l’interface d’[!DNL Experience Manager], accédez à **[!UICONTROL Outils > Ressources > Rapports]**.
+1. Dans l&#39;interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils] > **[!UICONTROL Ressources] > **[!UICONTROL Rapports]**.
 1. Dans la page **[!UICONTROL Rapports de ressources]**, cliquez sur **[!UICONTROL Créer]**.
 1. Sélectionnez le rapport **[!UICONTROL Entraînement des balises intelligentes]**, puis cliquez sur **[!UICONTROL Suivant]** dans la barre d’outils.
 1. Indiquez un titre et une description pour le rapport. Sous **[!UICONTROL Planifier le rapport]**, laissez l’option **[!UICONTROL Maintenant]** sélectionnée. Si vous souhaitez planifier le rapport pour une date ultérieure, sélectionnez **[!UICONTROL Plus tard]** et spécifiez une date et une heure. Ensuite, cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
 1. Dans la page **[!UICONTROL Rapports de ressources]**, sélectionnez le rapport que vous avez généré. Pour afficher le rapport, cliquez sur **[!UICONTROL Afficher]** dans la barre d’outils.
 1. Passez en revue les détails du rapport. Le rapport affiche l’état d’identification des balises que vous avez entraînées. La couleur verte de la colonne **[!UICONTROL État de l’entraînement]** indique que le service de balises intelligentes est entraîné pour la balise. La couleur jaune indique que le service n’est pas complètement entraîné pour une balise particulière. Dans ce cas, ajoutez d’autres images avec la balise particulière et exécutez le workflow d’entraînement pour l’entraînement complet du service sur la balise. Si vous ne voyez pas vos balises dans ce rapport, lancez à nouveau le workflow d’entraînement pour ces balises.
-1. Pour télécharger le rapport, sélectionnez-le dans la liste, puis cliquez sur **[!UICONTROL Télécharger]** dans la barre d’outils. Le rapport est téléchargé sous la forme d’une feuille de calcul Microsoft Excel.
+1. Pour télécharger le rapport, sélectionnez-le dans la liste, puis cliquez sur **[!UICONTROL Télécharger]** dans la barre d’outils. Le rapport est téléchargé sous la forme d&#39;une feuille de calcul [!DNL Microsoft Excel].
 
 ## Balisage des ressources {#tag-assets}
 
