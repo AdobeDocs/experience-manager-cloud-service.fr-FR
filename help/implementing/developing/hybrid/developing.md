@@ -208,7 +208,7 @@ L’architecture générale d’AEM, y compris les environnements de développem
 
 * [Prise en main des SPA dans AEM avec React](getting-started-react.md) présente comment créer une SPA de base pour fonctionner avec l’éditeur de SPA dans AEM avec React.
 * [Prise en main des SPA dans AEM avec Angular](getting-started-angular.md) présente comment créer une SPA de base pour fonctionner avec l’éditeur de SPA dans AEM avec Angular.
-* [Vue d’ensemble de l’éditeur de SPA](editor-overview.md) décrit de manière plus détaillée le modèle de communication entre AEM et la SPA.
-* [WKND SPA Project](wknd-tutorial.md) est un tutoriel détaillé qui met en œuvre un projet de SPA simple dans AEM.
-* [Mappage dynamique de modèle à composant pour SPA](model-to-component-mapping.md) explique le mappage dynamique du modèle au composant et son fonctionnement au sein de SPA dans AEM.
-* [Plan directeur d’applications sur une seule page (SPA)](blueprint.md) explique en détail le fonctionnement du SDK SPA pour AEM pour la mise en œuvre de SPA dans AEM dans un autre framework que React ou Angular.
+* La section [Aperçu de l’éditeur de SPA](editor-overview.md) aborde plus en détail le modèle de communication entre AEM et la SPA.
+* Le tutoriel [Projet SPA WKND](wknd-tutorial.md) est un tutoriel détaillé qui met en œuvre un projet SPA simple dans AEM.
+* La section [Mappage d’un modèle dynamique sur un composant pour les SPA](model-to-component-mapping.md) explique le mappage d’un modèle dynamique sur un composant et présente son fonctionnement au sein des SPA dans AEM.
+* La section [Plan directeur d’applications sur une seule page (SPA)](blueprint.md) aborde en détail le fonctionnement du SDK SPA pour AEM si vous souhaitez mettre en œuvre des SPA dans AEM pour un framework autre que React ou Angular ou recherchez simplement une compréhension plus approfondie.
