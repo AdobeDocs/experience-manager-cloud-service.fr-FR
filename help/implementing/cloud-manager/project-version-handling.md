@@ -4,8 +4,8 @@ description: Gestion des versions du projet Maven - Cloud Services
 translation-type: tm+mt
 source-git-commit: 8e470ed1ea30fd2fa59617fdb6755abf9a0d74a2
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '237'
+ht-degree: 100%
 
 ---
 
