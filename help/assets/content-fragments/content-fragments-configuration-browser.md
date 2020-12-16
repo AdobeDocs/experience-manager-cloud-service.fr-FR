@@ -2,10 +2,10 @@
 title: Fragments de contenu - Explorateur de configuration
 description: Découvrez comment activer certaines fonctionnalités de fragment de contenu dans l’explorateur de configuration.
 translation-type: tm+mt
-source-git-commit: ae918d074d4bacfc207d4dca2c67f41a3118aff4
+source-git-commit: c821baff208e563009e68f51700555ea1d516886
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 42%
+source-wordcount: '263'
+ht-degree: 38%
 
 ---
 
@@ -42,19 +42,25 @@ Pour [utiliser certaines fonctionnalités de fragment de contenu](#creating-a-co
 >
 >Pour plus de détails, voir également [Navigateur de configuration:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
+>[!CAUTION]
+>
+>Les sous-configurations (configuration imbriquée dans une configuration) ne sont pas prises en charge pour une utilisation avec les fragments de contenu.
+
 1. Accédez à **Outils**, **Général**, puis ouvrez l’**explorateur de configurations**.
-2. Sélectionnez l’emplacement approprié pour votre site web.
-3. Utilisez le bouton **Créer** pour ouvrir la boîte de dialogue.
+
+1. Utilisez le bouton **Créer** pour ouvrir la boîte de dialogue.
 
    1. Spécifiez un **Titre**.
-   2. Pour activer leur utilisation, sélectionnez
+   1. Pour activer leur utilisation, sélectionnez
       * **Modèles de fragment de contenu**
       * **Requêtes persistantes GraphQL**
 
       ![Définir la configuration](assets/cfm-conf-01.png)
 
 
-4. Sélectionnez **Créer** pour enregistrer la définition.
+1. Sélectionnez **Créer** pour enregistrer la définition.
+
+<!-- 1. Select the location appropriate to your website. -->
 
 ### Application de la configuration à votre dossier de ressources {#apply-the-configuration-to-your-assets-folder}
 
