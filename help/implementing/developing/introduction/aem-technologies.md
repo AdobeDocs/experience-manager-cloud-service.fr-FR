@@ -104,7 +104,7 @@ Nous pouvons la décomposer comme suit :
 * **chemin**  de contenu - chemin spécifiant le contenu à rendre et utilisé en combinaison avec l’extension ; dans cet exemple, ils traduisent en  `tools/spy.html`
 * **sélecteur(s)** - utilisé pour d’autres méthodes de rendu du contenu ; dans cet exemple une version compatible avec les imprimantes au format A4
 * **extension**  - format de contenu ; spécifie également le script à utiliser pour le rendu
-* **suffixe**  - Peut être utilisé pour spécifier des informations supplémentaires
+* **suffixe**  : peut être utilisé pour spécifier des informations supplémentaires.
 * **param(s)** - Tout paramètre requis pour le contenu dynamique
 
 #### De l’URL au contenu et aux scripts {#from-url-to-content-and-scripts}
