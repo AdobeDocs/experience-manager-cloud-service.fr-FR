@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
 workflow-type: tm+mt
 source-wordcount: '125'
-ht-degree: 13%
+ht-degree: 47%
 
 ---
 
@@ -20,10 +20,10 @@ La date de publication de Cloud Manager en AEM Cloud Service 2020.9.0 est le 03 
 
 ## Nouveautés {#whats-new-cloud-manager}
 
-* L’audit de contenu a été renommé Audit d’expérience.
+* La fonction Audit de contenu se nomme désormais Contrôle de l’expérience.
 * Le processus de création a été divisé en trois commandes Maven distinctes.
-* Si le référentiel Git n’est pas cloné, il sera multiplié par trois.
+* Si le clonage du référentiel Git échoue, il sera tenté à nouveau jusqu’à trois fois.
 
 ### Correctifs {#bug-fixes-cm}
 
-* L’onglet Audit de contenu affichait incorrectement l’URL de base à l’aide du domaine d’auteur et non du domaine de publication.
+* L’onglet Audit de contenu affichait incorrectement l’URL de base à l’aide du domaine de création et non du domaine de publication.
