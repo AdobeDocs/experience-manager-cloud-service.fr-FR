@@ -60,6 +60,6 @@ La date de publication de Cloud Manager en tant que Cloud Service 2020.6.0 est l
 
 ### Problèmes connus {#known-issues-cm}
 
-* Les environnements d’un programme Sandbox sont mis en veille prolongée lorsqu’aucune activité n’est détectée pendant une certaine durée. Cet état ne sera pas appliqué dans Cloud Manager. Il peut toutefois être appliqué par le biais de Developer Console. Ce problème sera traité dans une prochaine version.
+* Les environnements d’un programme Sandbox sont mis en veille lorsqu’aucune activité n’est détectée pendant une certaine durée. Cet état ne sera pas appliqué dans Cloud Manager. Il peut toutefois être appliqué par le biais de Developer Console. Ce problème sera traité dans une prochaine version.
 
 * Le lien vers Developer Console directement à partir de Cloud Manager n’affiche pas l’option permettant de mettre en veille/réactiver un environnement de programme Sandbox. Pour résoudre ce problème, une fois dans Developer Console, ajoutez le motif `#release-cm-p1234-e5678` à la fin de l’URL, où *1234* correspond à l’identifiant de programme et *5678* à l’identifiant d’environnement. Ce problème sera traité dans une prochaine version.
