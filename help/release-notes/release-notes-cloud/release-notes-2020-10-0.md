@@ -5,14 +5,14 @@ translation-type: tm+mt
 source-git-commit: fd271f24e5f8ddbe440dccf5c51c91a46c70dead
 workflow-type: tm+mt
 source-wordcount: '1044'
-ht-degree: 21%
+ht-degree: 24%
 
 ---
 
 
-# Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 {#release-notes}
+# Notes de mise à jour pour [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 {#release-notes}
 
-La section suivante décrit les Notes de mise à jour générales de [!DNL Experience Manager] en tant que Cloud Service 2020.10.0.
+La section suivante présente les notes de mise à jour générales d’[!DNL Experience Manager] as a Cloud Service version 2020.10.0.
 
 ## Date de publication {#release-date}
 
@@ -21,7 +21,7 @@ La version suivante (2020.11.0) sera publiée le 1er décembre 2020.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service{#sites}
 
-### Nouveautés d’[!DNL Sites] {#what-is-new-sites}
+### Nouveautés de [!DNL Sites] {#what-is-new-sites}
 
 * **[Composants principaux 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)** : aem en tant que Cloud Service bénéficie des mises à jour automatiques de la dernière version des composants principaux. La version 2.12.0 comprend les dernières améliorations apportées par la communauté, telles que [un nouveau gestionnaire de formulaires POST ;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) la possibilité d’inclure des balises CSS, JavaScript et [de métadonnées personnalisées par le biais d’une configuration contextuelle ;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) et un utilitaire [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) pour simplifier l’intégration de la couche de données Adobe dans les composants personnalisés. Voir la [liste des modifications](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) dans la version 2.12.0.
 
@@ -50,7 +50,7 @@ La version suivante (2020.11.0) sera publiée le 1er décembre 2020.
 
 * Site de référence de CIF Venia - 2020.10.2 qui comprend les derniers composants de base de CIF version 1.4.0. Pour plus de détails, voir [Site de référence de CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2).
 
-* Composants principaux CIF version 1.4.0. Pour plus d&#39;informations, consultez [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0).
+* Publication des composants principaux CIF version 1.4.0. Reportez-vous à [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) pour plus de détails.
 
 ### Correctifs {#bug-fixes-commerce}
 
@@ -58,13 +58,13 @@ La version suivante (2020.11.0) sera publiée le 1er décembre 2020.
 
 * L’interface utilisateur de configuration de CIF Cloud affichait les boutons &quot;Enregistrer et fermer&quot; pour les configurations dans /lib et /apps/. Mais il s’agit de données en lecture seule, ce qui explique pourquoi l’interface utilisateur a corrigé pour afficher uniquement le bouton Fermer.
 
-## Cloud Manager {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 ### Date de publication {#release-date-cm}
 
 La date de publication de Cloud Manager en tant que Cloud Service 2020.10.0 en AEM est le 2 octobre 2020.
 
-### Nouveautés d’[!DNL Cloud Manager] {#what-is-new-cm}
+### Nouveautés de [!DNL Cloud Manager] {#what-is-new-cm}
 
 * La page Environnements a été repensée.
 
