@@ -15,7 +15,7 @@ ht-degree: 81%
 
 <!-- Need review information from gklebus -->
 
-Adobe Experience Manager Assets en tant que [!DNL Cloud Service] offre une solution PaaS native de cloud pour permettre aux entreprises non seulement d’exécuter rapidement et efficacement leurs opérations de gestion des ressources numériques et de médias dynamiques, mais également d’utiliser des fonctionnalités intelligentes de prochaine génération, telles que l’IA/ML, à partir d’un système toujours à jour, toujours disponible et toujours en cours d’apprentissage.
+Adobe Experience Manager Assets en tant que [!DNL Cloud Service] offre une solution PaS native de cloud pour permettre aux entreprises non seulement d’effectuer rapidement et efficacement leurs opérations de gestion des actifs numériques et de Dynamic Media, mais également d’utiliser des fonctionnalités intelligentes de prochaine génération, telles que l’IA/ML, à partir d’un système toujours à jour, toujours disponible et toujours en cours d’apprentissage.
 
 L’ingestion simultanée d’un grand nombre de ressources ou de ressources complexes est une tâche gourmande en ressources pour une instance d’auteur AEM. L’instance principale consomme beaucoup de ressources processeur, mémoire et E/S lorsque des ressources sont ajoutées, traitées ou migrées. Ces problèmes de performances ont un impact sur l’expérience de création et la navigation des utilisateurs finaux.
 
