@@ -199,7 +199,7 @@ Si vous souhaitez recréer un package à partir de votre projet, cliquez avec le
 
 Vous disposez désormais d’un dossier de cible créé avec votre pack (appelé par ex. `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
-## Dépannage {#troubleshooting}
+## Résolution des incidents {#troubleshooting}
 
 ### Résolution d’une définition de projet non valide {#resolving-invalid-project-definition}
 
