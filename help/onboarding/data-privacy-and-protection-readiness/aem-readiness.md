@@ -86,7 +86,7 @@ Veuillez consulter les sections ci-dessous pour obtenir la documentation sur la 
 
 Voir [AEM Règlement sur la préparation à la protection des données et la confidentialité des données](/help/onboarding/data-privacy-and-protection-readiness/foundation-readiness.md).
 
-## Adobe Experience Manager Sites as a Cloud Service {#aem-sites}
+## Adobe Experience Manager Sites as a Cloud Service {#aem-sites}
 
 Voir [AEM Sites Readiness for Data Protection and Data Privacy Regulations.](/help/onboarding/data-privacy-and-protection-readiness/sites-readiness.md)
 
