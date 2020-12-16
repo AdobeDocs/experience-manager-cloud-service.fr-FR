@@ -1,5 +1,5 @@
 ---
-title: Accessibilité dans [!DNL Dynamic Media]
+title: Accessibilité dans  [!DNL Dynamic Media]
 description: Découvrez l’accessibilité dans les visionneuses Dynamic Media et Dynamic Media.
 contentOwner: Rick Brough
 topic-tags: introduction
