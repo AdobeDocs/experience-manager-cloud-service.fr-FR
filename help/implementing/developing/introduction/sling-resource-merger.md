@@ -48,12 +48,10 @@ Sling Resource Merger est utilisé dans AEM pour deux raisons principales :
 >En effet, le contenu de `/libs` peut être remplacé chaque fois que des mises à niveau sont appliquées à votre instance.
 >
 >* Les recouvrements dépendent des [chemins de recherche](/help/implementing/developing/introduction/overlays.md#search-paths).
-   >
-   >
-* Les remplacements ne dépendent pas des chemins de recherche. Ils utilisent la propriété `sling:resourceSuperType` pour établir la connexion.
 >
+>* Les remplacements ne dépendent pas des chemins de recherche. Ils utilisent la propriété `sling:resourceSuperType` pour établir la connexion.
 >
-Cependant, les remplacements sont souvent définis sous `/apps`, car une pratique recommandée dans AEM as a Cloud Service consiste à définir des personnalisations sous `/apps`, du fait que vous ne devez rien changer sous `/libs`.
+>Cependant, les remplacements sont souvent définis sous `/apps`, car une pratique recommandée dans AEM as a Cloud Service consiste à définir des personnalisations sous `/apps`, du fait que vous ne devez rien changer sous `/libs`.
 
 ### Propriétés {#properties}
 
