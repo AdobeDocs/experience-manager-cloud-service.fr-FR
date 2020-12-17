@@ -3,10 +3,10 @@ title: 'Gestion des ressources vidéo '
 description: Charger, prévisualiser, annoter et publier des ressources vidéo dans [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 100%
+source-wordcount: '616'
+ht-degree: 80%
 
 ---
 
@@ -28,17 +28,17 @@ Découvrez comment gérer et modifier les ressources vidéo dans [!DNL Adobe Exp
 
 ## Publication de ressources vidéo {#publish-video-assets}
 
-Après la publication, vous pouvez inclure les ressources vidéo dans une page web sous la forme d’une URL ou les intégrer directement. Pour plus d’informations, voir [Publication de ressources Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+Après la publication, vous pouvez inclure les ressources vidéo dans une page web sous la forme d’une URL ou les intégrer directement. Pour plus d’informations, voir [publier [!DNL Dynamic Media] ressources](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Transcodage à l’aide du profil de traitement {#transcode-video}
 
 [!DNL Experience Manager][!DNL Cloud Service] as a permet de réaliser un transcodage de base des fichiers vidéo MP4 à l’aide de profils de traitement. Cette fonctionnalité vous permet non seulement de charger, mais aussi de prévisualiser et de mettre à l’échelle un fichier vidéo MP4.
 
-![Création d’un profil de traitement pour le transcodage vidéo dans Experience Manager](assets/video-processing-profile-for-mp4.png)
+![Création d’un Profil de traitement pour le transcodage vidéo dans  [!DNL Experience Manager]](assets/video-processing-profile-for-mp4.png)
 
 *Figure : Profil de traitement pour le transcodage vidéo dans [!DNL Experience Manager].*
 
-Si vous indiquez uniquement la largeur ou uniquement la hauteur et laissez l’autre champ vide, les rendus conservent les proportions. Actuellement, seul le codec h264 est disponible pour le transcodage.
+Si vous indiquez uniquement la largeur ou uniquement la hauteur et laissez l’autre champ vide, les rendus conservent les proportions. Le codec vidéo H.264 est disponible pour le transcodage.
 
 Pour traiter des ressources à l’aide d’un profil de traitement, ajoutez un profil à un dossier. Voir [Utilisation de profils de traitement pour traiter des ressources](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
@@ -52,8 +52,18 @@ Pour traiter des ressources à l’aide d’un profil de traitement, ajoutez un 
 
 ## Bonnes pratiques et restrictions {#tips-limitations}
 
-* Sans licence Dynamic Media, vous pouvez seulement traiter les fichiers MP4 à l’aide de profils de traitement.
-* Pour le transcodage de base avec
+* Sans licence [!DNL Dynamic Media], vous ne pouvez traiter que les fichiers MP4 à l’aide de profils de traitement.
+* Lorsque vous transcodez des fichiers MP4 à l’aide de Profils de traitement, les instructions et restrictions suivantes s’appliquent :
+
+   * Les fichiers Apple ProRes ne peuvent transcoder qu’à une résolution maximale de 1080p.
+   * Si le fichier source a un débit > 200 Mbit/s, vous ne pouvez transcoder que jusqu’à une résolution maximale de 1080p.
+   * Si la cadence source >= 60 ips, la taille maximale du fichier source que vous pouvez utiliser est
+
+      * 400 Mo pour un transcodage de 4 k.
+      * 800 Mo pour le transcodage 1080p.
+      * 8 Go pour le transcodage 720p.
+   * La taille de fichier maximale que vous pouvez transcoder en résolution 4 Ko est un fichier MP4 de 2,55 Go de résolution 4 Ko, un débit de 12 Mbit/s et de 23 i/s.
+
 
 >[!MORELIKETHIS]
 >
