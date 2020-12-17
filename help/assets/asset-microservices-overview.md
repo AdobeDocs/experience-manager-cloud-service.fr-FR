@@ -3,10 +3,10 @@ title: Traitement des ressources à l’aide des microservices de ressources
 description: Traitez vos ressources numériques à l’aide de microservices de traitement des ressources évolutifs et natifs en mode cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 89%
+source-wordcount: '829'
+ht-degree: 85%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Experience Manager en tant que [!DNL Cloud Service] fournit une méthode n
 * Le cas échéant, les services natifs de traitement de fichiers Adobe sont utilisés, ce qui se traduit par un résultat fidèle et une [gestion efficace des formats propriétaires Adobe](file-format-support.md).
 * Possibilité de configurer le workflow de post-traitement de manière à ajouter des actions et des intégrations spécifiques à l’utilisateur.
 
-L’utilisation des microservices de ressources permet de se passer d’outils et de méthodes de rendu tiers (comme ImageMagick et le transcodage FFmpeg) et de simplifier les configurations, tout en fournissant des fonctionnalités prêtes à l’emploi pour les types de fichiers courants.
+Les microservices de ressources permettent d’éviter la nécessité d’utiliser des outils et méthodes de rendu tiers (tels que le transcodage ImageMagick et FFmpeg) et de simplifier les configurations, tout en offrant des fonctionnalités de base pour les types de fichiers courants par défaut.
 
 ## Architecture de haut niveau {#asset-microservices-architecture}
 
