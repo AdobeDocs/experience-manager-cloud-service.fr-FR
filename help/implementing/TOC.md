@@ -4,10 +4,10 @@ user-guide-title: Implémentation pour AEM as a Cloud Service
 breadcrumb-title: Guide d’implémentation
 user-guide-description: Découvrez comment personnaliser votre déploiement d’Experience Manager as a Cloud Service, y compris des rubriques sur le déploiement et le développement.
 translation-type: tm+mt
-source-git-commit: c82622ad26fecd547c12fff6994713488b9759df
+source-git-commit: d8c4c49b158077393aac66bcb87a52236115551f
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 69%
+source-wordcount: '701'
+ht-degree: 68%
 
 ---
 
@@ -68,6 +68,7 @@ ht-degree: 69%
    + [Configurations et navigateur de configuration](developing/introduction/configurations.md)
    + [Fondements techniques AEM](/help/implementing/developing/introduction/aem-technologies.md)
    + [API d’AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [Génération de Jetons d&#39;accès pour les API côté serveur](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + Développement d&#39;AEM de pile complète {#full-stack}
       + [Prise en main du développement d’AEM Sites – Tutoriel WKND](developing/introduction/develop-wknd-tutorial.md)
       + [Structure de l’interface utilisateur d’AEM](developing/introduction/ui-structure.md)
