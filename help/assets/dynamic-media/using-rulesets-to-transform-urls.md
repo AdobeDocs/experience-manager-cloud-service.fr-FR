@@ -2,10 +2,10 @@
 title: Utilisation de jeux de règles de transformation d’URL
 description: Vous pouvez déployer des ensembles de règles dans Dynamic Media pour transformer les URL. Les ensembles de règles sont des ensembles d’instructions écrites dans un langage de scripts (comme JavaScript) qui évaluent des données XML et déclenchent certaines actions si ces données remplissent des conditions spécifiques.
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: fe2cf46a7a84b4b07bf17de8c048fc2db41c2c70
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 100%
+source-wordcount: '795'
+ht-degree: 98%
 
 ---
 
@@ -17,11 +17,11 @@ Vous pouvez déployer des ensembles de règles dans Dynamic Media pour transfor
 * Ajout d’un suffixe de type MIME. De nombreux services et sites web ont besoin de suffixes d’image, comme l’ajout de `.jpg` à une URL.
 * Création d’un chemin de dossier vers l’URL pour le SEO (Search Engine Optimization, ou optimisation du moteur de recherche).
 
-   Voir la section [Comment le système de publication Adobe Scene7 prend en charge le SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
+   Voir [Comment Dynamic Media Classic prend en charge le référencement ](/help/assets/dynamic-media/assets/s7_seo.pdf).
 
 * Ajout de métadonnées vers l’URL pour le SEO (Search Engine Optimization, ou optimisation du moteur de recherche).
 
-   Voir la section [Comment le système de publication Adobe Scene7 prend en charge le SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
+   Voir [Comment Dynamic Media Classic prend en charge le référencement ](/help/assets/dynamic-media/assets/s7_seo.pdf).
 
 * Définition de la mise en page du contenu pour déclencher le téléchargement.
 * Simplifiez le service d’images pour la création de modèles d’URL pour la personnalisation. Par exemple, transformez `rgb{XX,YY,ZZ}` en `\redXX\greenYY\blueZZ` qui est conforme RTF.
