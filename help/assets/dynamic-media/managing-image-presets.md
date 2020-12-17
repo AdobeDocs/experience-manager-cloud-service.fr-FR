@@ -2,10 +2,10 @@
 title: Gestion des paramètres d’image prédéfinis
 description: Découvrez les paramètres d’image prédéfinis, et comment les créer, les modifier et les gérer..
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 59c532d8893f6dc6b94d7ec45a4af87ff1e37fff
 workflow-type: tm+mt
-source-wordcount: '3608'
-ht-degree: 97%
+source-wordcount: '3607'
+ht-degree: 96%
 
 ---
 
@@ -374,7 +374,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
      <li><strong>Appliquer à</strong> : détermine si l’accentuation s’applique à chaque couleur ou à la luminosité.</li>
     </ul>
     <div>
-      L’accentuation est décrite dans <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/s7_sharpening_images.pdf">Accentuation des images</a>.
+      L’accentuation est décrite dans <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/sharpening_images.pdf">Accentuation des images</a>.
     </div> </td>
   </tr>
   <tr>
