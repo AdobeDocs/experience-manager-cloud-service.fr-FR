@@ -1,19 +1,17 @@
 ---
 title: Notification de fin de prise en charge de la visionneuse Flash
-description: À compter du 31 janvier 2017, Adobe Scene7 mettra officiellement fin à la prise en charge de la plate-forme de la visionneuse Flash.
+description: Depuis le 31 janvier 2017, la prise en charge de la plate-forme du lecteur de Flash est officiellement en fin de vie.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d9e0c105ad7f9e03bc2120a03a5c613b97ffa17b
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 100%
+source-wordcount: '47'
+ht-degree: 8%
 
 ---
 
 
-# Notification de fin de prise en charge de la visionneuse Flash{#flash-viewers-end-of-life-notice}
+# Fin de vie des visionneuses de Flashs {#flash-viewers-end-of-life-notice}
 
-*À compter du 31 janvier 2017, Adobe Dynamic Media Classic (Scene7) a officiellement arrêté la prise en charge de la plate-forme de la visionneuse Flash.*
+Depuis le 31 janvier 2017, la prise en charge de la plate-forme du lecteur de Flash est officiellement en fin de vie.
 
-*Pour en savoir plus sur ce changement important, consultez les questions fréquentes à l’adresse suivante :*
-
-[https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html](https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html).
+Consultez le [Guide de référence des visionneuses Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) pour connaître les dernières visionneuses prises en charge.
