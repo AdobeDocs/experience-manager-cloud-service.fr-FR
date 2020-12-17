@@ -2,10 +2,10 @@
 title: Prise en charge des fragments de contenu d’Adobe Experience Manager as a Cloud Service dans l’API Assets HTTP
 description: Découvrez la prise en charge des fragments de contenu Adobe Experience Manager as a Cloud Service dans l’API HTTP Assets.
 translation-type: tm+mt
-source-git-commit: 8aa2585e85b0ed23d68597857cda09dc301df4f6
+source-git-commit: 68f799349a4a1a9d5a09fb0cb23e0f5620d77d2f
 workflow-type: tm+mt
-source-wordcount: '1891'
-ht-degree: 100%
+source-wordcount: '1862'
+ht-degree: 99%
 
 ---
 
@@ -20,8 +20,10 @@ ht-degree: 100%
 >
 >* l’API REST Assets,
 >* y compris la prise en charge des fragments de contenu
+
 >
->L’implémentation actuelle de l’API HTTP Assets est basée sur le style architectural [REST](https://fr.wikipedia.org/wiki/Representational_state_transfer).
+>
+L’implémentation actuelle de l’API HTTP Assets est basée sur le style architectural [REST](https://fr.wikipedia.org/wiki/Representational_state_transfer).
 
 L’[API REST Assets](/help/assets/mac-api-assets.md) permet aux développeurs d’Adobe Experience Manager as a Cloud Service d’accéder au contenu (stocké dans AEM) directement via l’API HTTP, via des opérations CRUD (création, lecture, mise à jour et suppression).
 
@@ -63,8 +65,8 @@ Elle utilise le point d’entrée `/api/assets` et requiert le chemin d’accès
 Par exemple, pour accéder à `/content/dam/wknd/en/adventures/cycling-tuscany`, demandez `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 >[!NOTE]
->
 >Accès via :
+>
 >* `/api/assets` **ne nécessite pas** l’utilisation du sélecteur `.model`.
 >* `/content/path/to/page` **nécessite** l’utilisation du sélecteur `.model`.
 
@@ -147,6 +149,7 @@ Si l’API REST Assets est utilisée dans un environnement sans conditions d’a
 >
 >* [CORS/AEM expliqué](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [Vidéo - Développement pour CORS et AEM](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
@@ -304,32 +307,28 @@ Mode d’utilisation :
 
 Il existe quelques restrictions :
 
-* **Les variantes ne peuvent pas être écrites et mises à jour.** Si ces variantes sont ajoutées à une charge utile (par exemple, pour les mises à jour), elles seront ignorées. Toutefois, la variante sera traitée via la diffusion (`GET`).
-
 * **Les modèles de fragment de contenu ne sont actuellement pas pris en charge** : ils ne peuvent pas être lus ni créés. Pour pouvoir créer un fragment de contenu, ou en mettre un existant à jour, les développeurs doivent connaître le chemin correct vers le modèle de fragment de contenu. Actuellement, l’interface utilisateur d’administration est le seul moyen d’obtenir un aperçu des modèles de fragment de contenu.
 * **Les références sont ignorées**. Il n’existe actuellement aucune vérification pour savoir si un fragment de contenu existant est référencé ou non. Par conséquent, la suppression d’un fragment de contenu, par exemple, peut entraîner des problèmes sur une page contenant une référence au fragment de contenu en question.
+
+<!--
+* **Variations cannot be written and updated.** If those variations are added to a payload (e.g. for updates) they will be ignored. However, the variation will be served via delivery ( `GET`).
+-->
 
 ## Codes d’état et messages d’erreur {#status-codes-and-error-messages}
 
 Les codes d’état suivants s’affichent dans les circonstances pertinentes :
 
-* **200** (OK)
-
-   Affiché dans le scénario suivant :
+* **200** (OK) Retourné lorsque :
 
    * demande d’un fragment de contenu via `GET`
-
    * mise à jour réussie d’un fragment de contenu via `PUT`
 
-* **201** (Créé)
-
-   Affiché dans le scénario suivant :
+* **201** (Créé) renvoyé lorsque :
 
    * création réussie d’un fragment de contenu via `POST`
 
 * **404** (Introuvable)
-
-   Affiché dans le scénario suivant :
+Affiché dans le scénario suivant :
 
    * le fragment de contenu demandé n’existe pas
 
@@ -339,8 +338,8 @@ Les codes d’état suivants s’affichent dans les circonstances pertinentes :
    >
    >Cette erreur est renvoyée :
    >
-   >    * lorsqu’une erreur ne pouvant pas être identifiée avec un code spécifique s’est produite ;
-   >    * lorsque la charge utile donnée n’était pas valide.
+   >* lorsqu’une erreur ne pouvant pas être identifiée avec un code spécifique s’est produite ;
+   >* lorsque la charge utile donnée n’était pas valide.
 
 
    L’exemple suivant répertorie les scénarios courants dans lesquels ce statut d’erreur est renvoyé, avec le message d’erreur (espacement fixe) généré :
@@ -382,6 +381,7 @@ Les codes d’état suivants s’affichent dans les circonstances pertinentes :
 ## Référence d’API  {#api-reference}
 
 Pour accéder aux références d’API détaillées :
+
 <!--
 * [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 -->
