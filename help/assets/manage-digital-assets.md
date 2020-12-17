@@ -4,9 +4,9 @@ description: Découvrez les différentes méthodes de gestion et de modification
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
+source-git-commit: de313ebc7a4fe89784b9083edbb790dc444caac9
 workflow-type: tm+mt
-source-wordcount: '4407'
+source-wordcount: '4358'
 ht-degree: 95%
 
 ---
@@ -103,19 +103,25 @@ Pour prévisualiser une ressource, procédez comme suit.
    >
    >Pour créer des balises, vous devez disposer d’une autorisation d’écriture sur le chemin d’accès `/content/cq:tags/default` dans le référentiel CRX.
 
-1. Pour afficher les statistiques d’utilisation de la ressource, cliquez/appuyez sur l’onglet **[!UICONTROL Statistiques]**.
-
-   Les statistiques d’utilisation comprennent les suivantes :
-
-   * Le nombre de fois que la ressource a été visualisée ou téléchargée.
-   * Les canaux/périphériques via lesquels la ressource a été utilisée.
-   * Des solutions de création où la ressource a été récemment utilisée.
-
-   Pour plus d’informations, reportez-vous à la section [Informations sur les ressources](assets-insights.md).
-
 1. Appuyez/cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 
 1. Accédez à l’interface utilisateur d’Assets. Les propriétés des métadonnées modifiées, notamment le titre, la description et les balises, sont affichées sur la carte des ressources en mode Carte et dans les colonnes pertinentes en mode Liste.
+
+<!-- TBD: Uncomment after verification for Dec release.
+
+## View asset usage and references {#usage-and-references}
+
+[!DNL Experience Manager] lets you track statistics about usage of a digital asset. The usage statistics include the following:
+
+    * Number of times the asset was viewed or downloaded
+    * Channels/devices through which the asset was used
+    * Creative solutions where the asset was recently used
+
+To view usage statistics for an asset, in the [!UICONTROL Properties] page, click the **[!UICONTROL Insights]** tab. For more details, see [Asset Insights](assets-insights.md).
+
+[!DNL Experience Manager] also lets you check all the incoming references to an asset, that is, the usage of an asset in remote [!DNL Sites] and in compound assets. Authors of webpages on [!DNL Experience Manager Sites] deployment can use an asset on a remote [!DNL Assets] deployment using the Connected Assets functionality. The [!UICONTROL References] tab in an asset's [!UICONTROL Properties] page lists the local and remote references of the asset. That is, the use of assets in compound assets in [!DNL Assets] and its use in remote [!DNL Sites] pages.
+
+-->
 
 ## Copie de ressources {#copying-assets}
 
