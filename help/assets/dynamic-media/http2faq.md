@@ -2,10 +2,10 @@
 title: FAQ sur la diffusion de contenu HTTP/2
 description: Découvrez la diffusion de contenu HTTP/2.
 translation-type: tm+mt
-source-git-commit: 24d929702fd9eb31b95fdd6d97c7b9978d919804
+source-git-commit: d9673296208831e68c5f776e0a9b142f348efc95
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 94%
+source-wordcount: '753'
+ht-degree: 86%
 
 ---
 
@@ -24,7 +24,7 @@ Le site web ci-dessous décrit simplement HTTP/2 et les avantages qu’il procur
 
 ## Quels sont les principaux avantages à la transition vers HTTP/2 pour la diffusion de contenu ?{#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
-L’amélioration des performances varie considérablement en fonction de facteurs, comme le code de votre site web, la façon dont vous utilisez Scene7, l’appareil, l’écran et l’emplacement de l’utilisateur, etc.
+L’amélioration des performances varie considérablement en fonction de facteurs tels que le code de votre site web, la façon dont vous utilisez Dynamic Media, l’appareil, l’écran et l’emplacement du client, etc.
 
 Les tests d’Adobe ont donné les résultats suivants :
 
@@ -41,13 +41,13 @@ Pour utiliser HTTP/2, vous devez satisfaire aux exigences suivantes :
 
 * Utilisez le protocole HTTPS sécurisé pour vos demandes de médias riches.
 * Utilisez le CDN de lots Adobe (réseau de diffusion de contenu) dans le cadre de votre licence Dynamic Media Classic.
-* Utilisez un domaine dédié (c’est-à-dire `images.company.com` ou `mycompany.scene7.com`), et non un domaine Dynamic Media Classic générique (c’est-à-dire `s7d1.scene7.com`, `s7d2.scene7.com`ou `s7d13.scene7.com`).
+* Utilisez un domaine dédié (c’est-à-dire `images.company.com` ou `mycompany.scene7.com`), et non un domaine Dynamic Media générique (c’est-à-dire `s7d1.scene7.com`, `s7d2.scene7.com`ou `s7d13.scene7.com`).
 
-   Pour trouver vos domaines, [connectez-vous à votre instance Scene7 Publishing System](https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html) pour chaque compte d’entreprise.
+   Pour rechercher vos domaines, [connectez-vous à votre instance de Dynamic Media Classic](https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html) pour chaque compte de société.
 
-    Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**. Recherchez le champ intitulé **Nom du serveur publié**. Si vous utilisez actuellement un domaine Scene7 générique, vous pouvez demander une migration vers votre domaine personnalisé dans le cadre de cette transition.
+    Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**. Recherchez le champ intitulé **Nom du serveur publié**. Si vous utilisez actuellement un domaine Dynamic Media générique, vous pouvez demander une migration vers votre domaine personnalisé dans le cadre de cette transition.
 
-## Quel est le processus d’activation de HTTP/2 pour mon compte Dynamic Media Classic ?{#what-is-the-process-for-enabling-http-for-my-scene-account}
+## Quel est le processus d’activation de HTTP/2 pour mon compte Dynamic Media ?{#what-is-the-process-for-enabling-http-for-my-dm-account}
 
 Vous devez [utiliser le Admin Console pour créer un dossier de support](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) et demander à passer à HTTP/2 ; ce n&#39;est pas automatiquement fait pour vous.
 
@@ -56,17 +56,17 @@ Vous devez [utiliser le Admin Console pour créer un dossier de support](https:/
    * Nom, adresse électronique et numéro de téléphone du contact principal.
    * Tous les domaines pour lesquels activer HTTP/2. C’est-à-dire, `images.company.com` ou `mycompany.scene7.com`.
 
-   Pour trouver vos domaines, [connectez-vous à votre instance Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) pour chaque compte d’entreprise.
+   Pour rechercher vos domaines, [connectez-vous à votre instance de Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) pour chaque compte de société.
 
     Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**. Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié]**.
 
    * Vérifiez que vous utilisez le protocole sécurisé HTTPS pour les demandes de médias riches.
    * Vérifiez que vous utilisez le CDN par le biais d’Adobe et non le CDN géré avec une relation directe.
-   * Assurez-vous d’utiliser un domaine dédié. C’est-à-dire `images.company.com` ou `mycompany.scene7.com`, et non d’un domaine Scene7 générique tel que `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
+   * Assurez-vous d’utiliser un domaine dédié. Autrement dit, `images.company.com` ou `mycompany.scene7.com`, pas un domaine Dynamic Media générique tel que `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-   Pour trouver vos domaines, [connectez-vous à votre instance Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) pour chaque compte d’entreprise.
+   Pour rechercher vos domaines, [connectez-vous à votre instance de Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) pour chaque compte de société.
 
-    Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**. Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié]**. Si vous utilisez actuellement un domaine Scene7 générique, vous pouvez demander une migration vers votre domaine personnalisé dans le cadre de cette transition.
+    Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**. Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié]**. Si vous utilisez actuellement un domaine Dynamic Media générique, vous pouvez demander une migration vers votre domaine personnalisé dans le cadre de cette transition.
 
    1. L’assistance technique vous ajoute à la liste d’attente des clients HTTP/2 par ordre chronologique d’envoi des demandes.
    1. Lorsque Adobe est prêt à traiter votre demande, le support vous contacte pour coordonner la transition et définir une date cible.
