@@ -2,10 +2,10 @@
 title: Bonnes pratiques relatives à l’optimisation de la qualité des images
 description: Découvrez les meilleures pratiques que vous pouvez utiliser dans Dynamic Media pour optimiser la qualité de vos fichiers d’image.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: e18fdf02371b641b6ff65d70084b22ab9b6b6ded
 workflow-type: tm+mt
-source-wordcount: '1497'
-ht-degree: 98%
+source-wordcount: '1475'
+ht-degree: 95%
 
 ---
 
@@ -40,7 +40,7 @@ Pour le dimensionnement des images, il est recommandé d’utiliser `&wid=<value
 
 L’accentuation des images est l’aspect le plus complexe du contrôle des images du site web, processus au cours duquel de nombreuses erreurs sont commises. Prenez le temps d’en savoir plus sur le fonctionnement de l’accentuation et du masquage flou dans AEM en vous référant aux ressources suivantes :
 
-L’article technique des bonnes pratiques [Accentuation des images dans Adobe Scene7 Publishing System et sur le serveur d’images](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf) s’applique aussi à AEM.
+Le livre blanc Meilleures pratiques [Accentuation des images dans l’Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) s’applique également à AEM.
 
 Sur Adobe TV, regardez [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html) (vidéo en anglais).
 
@@ -65,7 +65,7 @@ Il existe deux méthodes d’accentuation des images que vous pouvez utiliser :
 
       Rubrique d’aide d’AEM sur l’accentuation d’une image.
 
-      L’article technique des bonnes pratiques [Accentuation des images dans Adobe Scene7 Publishing System et sur le serveur d’images.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
+      Livre blanc des meilleures pratiques [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf).
 
    * AEM permet également de contrôler un quatrième paramètre : monochrome (0,1). Ce paramètre détermine si le masquage flou est appliqué séparément à chaque composante de couleur en utilisant la valeur 0, ou à la luminosité/intensité de l’image en utilisant la valeur 1.
 
@@ -117,7 +117,7 @@ Si le résultat de l’accentuation n’est toujours pas satisfaisant, augmentez
 
 Tandis que vous testez différentes valeurs, vous trouverez peut-être également les suggestions générales suivantes utiles pour optimiser le workflow :
 
-* Testez les différents paramètres en temps réel, directement sur une URL ou en utilisant les fonctions de réglage d’image de Scene7 Publishing System, afin d’obtenir un aperçu en temps réel des différents réglages.
+* Testez différents paramètres en temps réel, directement sur une URL.
 * Gardez à l’esprit que vous pouvez regrouper les commandes de diffusion d’images Dynamic Media dans un paramètre d’image prédéfini. Il s’agit en outre d’une bonne pratique. Un paramètre d’image prédéfini est, en fait, constitué de macros de commande d’URL avec des noms de paramètres prédéfinis personnalisés tels que `$thumb_low$` et `&product_high$`. Le nom du paramètre prédéfini personnalisé d’un chemin URL appelle ces paramètres prédéfinis. Cette fonctionnalité vous aide à gérer les commandes et les paramètres de qualité pour différents modèles d’utilisation des images sur vos sites web et raccourcit la longueur globale des URL.
 * AEM propose également des méthodes plus élaborées permettant d’optimiser la qualité des images, par exemple en accentuant les images lors de l’assimilation. Pour les cas d’utilisation plus complexes où il peut s’avérer nécessaire d’affiner et d’optimiser le rendu, n’hésitez pas à faire appel à [Adobe Professional Services](https://www.adobe.com/fr/experience-cloud/consulting-services.html).
 
