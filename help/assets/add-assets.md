@@ -2,7 +2,7 @@
 title: Ajout de vos ressources numériques à [!DNL Adobe Experience Manager].
 description: Ajoutez vos ressources numériques à  [!DNL Adobe Experience Manager] en tant que  [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: a5c9ec14af4241734fb6f6c88d5fc982e52924ce
+source-git-commit: 42d607c2dc938c2ed91ecac10b29824050dd6810
 workflow-type: tm+mt
 source-wordcount: '1895'
 ht-degree: 38%
@@ -150,6 +150,8 @@ Pour télécharger un plus grand nombre de fichiers, utilisez l’une des métho
 ### Outil d&#39;assimilation en masse de ressources {#asset-bulk-ingestor}
 
 L&#39;outil est fourni uniquement au groupe d&#39;administrateurs à utiliser pour l&#39;assimilation à grande échelle d&#39;actifs à partir de banques de données Azure ou S3.
+
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
 Pour configurer l’outil, procédez comme suit :
 
