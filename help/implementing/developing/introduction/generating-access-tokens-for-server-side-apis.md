@@ -2,9 +2,9 @@
 title: Génération de Jetons d'accès pour les API côté serveur
 description: Découvrez comment faciliter la communication entre un serveur tiers et AEM en tant que Cloud Service en générant un jeton JWT sécurisé
 translation-type: tm+mt
-source-git-commit: 9a4cb6d981fdf5eea4d1b9c7ae9e3c99947d9745
+source-git-commit: 251f5de85d63f6afd730fc450fe2b5a06bc90c38
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Le flux serveur à serveur implique les étapes suivantes :
 
 ### Génération du jeton de garde JWT {#generating-the-jwt-bearer-token}
 
-Les utilisateurs qui ont le rôle d’administrateur pour une organisation voient l’onglet intégrations dans la console de développement pour un environnement donné, ainsi que deux boutons. Cliquez sur le bouton **Obtenir les informations d&#39;identification du service** pour générer la clé privée, le certificat et la configuration.
+Les utilisateurs qui ont le rôle d’administrateur pour une organisation voient l’onglet intégrations dans la console de développement pour un environnement donné, ainsi que deux boutons. Cliquez sur le bouton **Obtenir les informations d’identification du service** pour générer la clé privée, le certificat et la configuration pour les niveaux d’auteur et de publication de l’environnement, quelle que soit la sélection de la capsule.
 
 ![Génération JWT](assets/JWTtoken3.png)
 
