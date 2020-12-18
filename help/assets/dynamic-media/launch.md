@@ -2,10 +2,10 @@
 title: Intégration des visionneuses Dynamic Media à Adobe Analytics et Adobe Launch
 description: L’extension Visionneuses Dynamic Media pour Adobe Launch, ainsi que la version 5.13 des Visionneuses Dynamic Media, permettent aux clients de Dynamic Media, Adobe Analytics et Adobe Launch d’utiliser des événements et des données spécifiques aux visionneuses Dynamic Media dans leur configuration Adobe Launch.
 translation-type: tm+mt
-source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
-source-wordcount: '6647'
-ht-degree: 100%
+source-wordcount: '6628'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ La nouvelle extension *Visionneuses Dynamic Media* pour Adobe Launch, ainsi qu
 
 Cette intégration signifie que vous pouvez suivre l’utilisation des visionneuses Dynamic Media sur votre site web avec Adobe Analytics. En même temps, vous pouvez utiliser les événements et les données exposés par les visiteurs avec toute autre extension Launch provenant d’Adobe ou d’un tiers.
 
-Voir [Extension Adobe](https://docs.adobe.com/content/help/fr-FR/launch/using/extensions-ref/overview.html) dans le Guide de l’utilisateur d’Experience Platform Launch pour en savoir plus sur les extensions.
+Voir [Extensions d’Adobe](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/overview.html#adobe-extension) dans le Guide de l’utilisateur Experience Platform Launch pour en savoir plus sur les extensions.
 
 **À qui s’adresse cette documentation** : administrateurs du site, développeurs sur la plate-forme AEM et les personnes chargées des opérations.
 
@@ -27,7 +27,7 @@ Voir [Extension Adobe](https://docs.adobe.com/content/help/fr-FR/launch/using/ex
 * L’intégration d’Adobe Launch pour les visionneuses Dynamic Media ne fonctionne pas dans le nœud Auteur AEM. Vous ne pouvez pas afficher de suivi à partir d’une page WCM tant qu’elle n’est pas publiée.
 * L’intégration d’Adobe Launch pour les visionneuses Dynamic Media n’est pas prise en charge pour le mode de fonctionnement « pop-up », où l’URL de la visionneuse est obtenue à l’aide du bouton URL de la page de détails de la ressource.
 * L’intégration d’Adobe Launch ne peut pas être utilisée simultanément avec l’intégration des visionneuses Analytics héritées (au moyen du paramètre `config2=`).
-* La prise en charge du suivi vidéo se limite au suivi de la lecture principale uniquement, comme décrit dans [Présentation du suivi](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html). En particulier, le suivi de la qualité de service, des publicités, des chapitres/segments et des erreurs n’est pas pris en charge.
+* La prise en charge du suivi vidéo se limite au suivi de la lecture principale uniquement, comme décrit dans [Présentation du suivi](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). En particulier, le suivi de la qualité de service, des publicités, des chapitres/segments et des erreurs n’est pas pris en charge.
 * La configuration de la durée de stockage n’est pas prise en charge pour les éléments de données à l’aide de l’extension *Visionneuses Dynamic Media*. La durée de stockage doit être définie sur **[!UICONTROL Aucune]**.
 
 ### Cas d’utilisation de l’intégration {#use-cases-for-the-integration}
@@ -62,7 +62,7 @@ L’extension Visionneuse Dynamic Media actualise automatiquement les valeurs d
 
 Une fois défini, un élément de données peut être utilisé dans d’autres emplacements de l’interface utilisateur d’Adobe Launch, à l’aide du widget de sélecteur d’éléments de données. En particulier, les éléments de données définis aux fins du suivi des visionneuses Dynamic Media seront référencés par l’action Définir les variables de l’extension Adobe Analytics dans la règle (voir ci-dessous).
 
-Voir [Éléments de données](https://docs.adobe.com/content/help/fr-FR/launch/using/reference/manage-resources/data-elements.translate.html) dans le Guide de l’utilisateur d’Experience Platform Launch pour en savoir plus.
+Voir [Éléments de données](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html#reference) dans le Guide de l’utilisateur d’Experience Platform Launch pour en savoir plus.
 
 #### À propos des règles dans Adobe Launch {#about-rules-in-adobe-launch}
 
@@ -88,7 +88,7 @@ Dans la section Actions, vous devez disposer d’une action *Définir les variab
 
 L’action *Définir les variables* doit être suivie d’une action *Envoyer une balise*. L’action *Envoyer la balise* envoie en fait des données au serveur de suivi Analytics. Les deux actions, *Définir les variables* et *Envoyer une balise*, proviennent de l’extension Adobe Analytics.
 
-Voir [Règles](https://docs.adobe.com/content/help/fr-FR/launch/using/reference/manage-resources/rules.translate.html) dans le Guide de l’utilisateur d’Experience Platform Launch pour en savoir plus.
+Voir [Règles](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/rules.html#reference) dans le Guide de l’utilisateur d’Experience Platform Launch pour en savoir plus.
 
 #### Exemple de configuration {#sample-configuration}
 
@@ -122,7 +122,7 @@ Lorsqu’un compte Experience Cloud est abonné pour utiliser Adobe Analytics 
 
 Voir [Installation et configuration des extensions](#installing-and-setup-of-extensions).
 
-À l’heure actuelle, la prise en charge du suivi vidéo se limite au suivi de la lecture principale uniquement, comme décrit dans [Présentation du suivi](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html). En particulier, le suivi de la qualité de service, des publicités, des chapitres/segments et des erreurs n’est pas pris en charge.
+À l’heure actuelle, la prise en charge du suivi vidéo se limite au suivi de la lecture principale uniquement, comme décrit dans [Présentation du suivi](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). En particulier, le suivi de la qualité de service, des publicités, des chapitres/segments et des erreurs n’est pas pris en charge.
 
 ## Utilisation de l’extension Visionneuses Dynamic Media {#using-the-dynamic-media-viewers-extension}
 
@@ -144,7 +144,7 @@ Vous devez suivre les étapes de configuration des sections [Configuration d’A
 
 Une fois la configuration appropriée effectuée, vous pouvez ajouter la prise en charge d’Adobe Launch à une page web à l’aide d’une visionneuse Dynamic Media.
 
-Voir [Ajout du code intégré Launch](https://docs.adobe.com/content/help/fr-FR/launch/using/implement/configure/implement-the-launch-install-code.html) pour en savoir plus sur l’utilisation du code intégré de la bibliothèque Adobe Launch.
+Voir [Ajout du code intégré Launch](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html#configure-launch) pour en savoir plus sur l’utilisation du code intégré de la bibliothèque Adobe Launch.
 
 Voir [Incorporation de la visionneuse de vidéos ou d’images sur une page web](/help/assets/dynamic-media/embed-code.md) pour en savoir plus sur l’utilisation de la fonctionnalité de code intégré d’AEM Dynamic Media.
 
@@ -190,7 +190,7 @@ Lorsqu’il est sélectionné, l’éditeur d’éléments de données génère 
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-Pour obtenir la liste des événements pris en charge par chaque type de visionneuse, reportez-vous au [Guide de référence des visionneuses Dynamic Media](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html), accédez à la section spécifique à la visionneuse, puis cliquez sur la sous-section Prise en charge du suivi d’Adobe Analytics. À l’heure actuelle, le guide de référence des visionneuses Dynamic Media ne documente pas les arguments d’événement.
+Pour obtenir la liste des événements pris en charge par chaque type de visionneuse, reportez-vous au [Guide de référence des visionneuses Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html), accédez à la section spécifique à la visionneuse, puis cliquez sur la sous-section Prise en charge du suivi d’Adobe Analytics. À l’heure actuelle, le guide de référence des visionneuses Dynamic Media ne documente pas les arguments d’événement.
 
 Examinons à présent le cycle de vie de l’*élément de données* Visionneuses Dynamic Media. La valeur de cet élément de données est renseignée après que l’événement de visionneuse Dynamic Media correspondant a lieu sur la page. Par exemple, si l’élément de données pointe vers l’événement **[!UICONTROL LOAD]** et son argument « asset », la valeur de cet élément de données recevra des données valides une fois que la visionneuse aura exécuté l’événement LOAD pour la première fois. Si l’élément de données pointe vers l’événement **[!UICONTROL ZOOM]** et son argument « scale », la valeur de cet élément de données reste vide jusqu’à ce que la visionneuse envoie un événement **[!UICONTROL ZOOM]** pour la première fois.
 
@@ -210,8 +210,7 @@ La valeur exacte renvoyée par l’élément de données dépend du contexte. Si
    * Utilise l’événement **[!UICONTROL PAN]** de la visionneuse Dynamic Media comme déclencheur.
    * Envoie la valeur de l’élément de données **[!UICONTROL ZoomScale]** à Adobe Analytics.
 
-* 
-   * Règle **[!UICONTROL TrackKey]** avec ce qui suit :
+* Règle **[!UICONTROL TrackKey]** avec ce qui suit :
 
    * Utilise l’événement de pression de touche de l’extension Core Adobe Launch comme déclencheur.
    * Envoie la valeur de l’élément de données **[!UICONTROL ZoomScale]** à Adobe Analytics.
@@ -227,7 +226,7 @@ L’exemple de configuration ci-dessus affecte également la durée de vie de la
 
 Dans tous les cas, les valeurs des éléments de données pilotées par les visionneuses Dynamic Media ne sont pas stockées sur le stockage local ou sur le serveur ; elles sont conservées uniquement dans la bibliothèque Adobe Launch côté client. Les valeurs de cet élément de données disparaissent lors du rechargement de la page web.
 
-En règle générale, l’éditeur d’éléments de données prend en charge la [sélection de la durée de stockage](https://docs.adobe.com/content/help/fr-FR/launch/using/reference/manage-resources/data-elements.translate.html#create-a-data-element). Toutefois, les éléments de données qui utilisent l’extension Visionneuses Dynamic Media ne prennent en charge que l’option de durée de stockage **[!UICONTROL Aucune]**. La définition d’une autre valeur est possible dans l’interface utilisateur, mais le comportement de l’élément de données n’est pas défini dans ce cas. L’extension gère elle-même la valeur de l’élément de données qui conserve la valeur de l’argument d’événement de visionneuse pendant tout le cycle de vie de la visionneuse.
+En règle générale, l’éditeur d’éléments de données prend en charge la [sélection de la durée de stockage](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html?lang=en#create-a-data-element). Toutefois, les éléments de données qui utilisent l’extension Visionneuses Dynamic Media ne prennent en charge que l’option de durée de stockage **[!UICONTROL Aucune]**. La définition d’une autre valeur est possible dans l’interface utilisateur, mais le comportement de l’élément de données n’est pas défini dans ce cas. L’extension gère elle-même la valeur de l’élément de données qui conserve la valeur de l’argument d’événement de visionneuse pendant tout le cycle de vie de la visionneuse.
 
 ### À propos des règles dans l’extension Visionneuses Dynamic Media {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -421,7 +420,7 @@ Une fois Adobe Analytics configuré, les éléments suivants sont configurés p
 * Les variables Analytics sont disponibles pour recevoir les données de suivi.
 * Les rapports sont disponibles pour afficher les données collectées dans Adobe Analytics.
 
-Voir aussi le [Guide de mise en œuvre d’Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/home.html).
+Voir aussi le [Guide de mise en œuvre d’Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html).
 
 **Pour configurer Adobe Analytics en vue de l’intégration** :
 
@@ -439,7 +438,7 @@ Voir aussi le [Guide de mise en œuvre d’Analytics](https://docs.adobe.com/con
 
    Si aucune suite de rapports n’est disponible, votre administrateur Adobe Analytics ou vous-même devez en créer une avant de poursuivre la configuration.
 
-   Voir [Rapports et suites de rapports](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/analytics-basics/ref-reports-report-suites.html) et [Création d’une suite de rapports](https://docs.adobe.com/content/help/fr-FR/analytics/admin/admin-console/create-report-suite.html).
+   Voir [Rapports et suites de rapports](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites) et [Création d’une suite de rapports](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/create-report-suite.html#admin-console).
 
    Dans Adobe Analytics, les suites de rapports sont gérées sous **[!UICONTROL Admin > Suites de rapports]**.
 
@@ -453,7 +452,7 @@ Voir aussi le [Guide de mise en œuvre d’Analytics](https://docs.adobe.com/con
 
    Il est possible d’utiliser n’importe quel type de variable pris en charge par Adobe Analytics. La décision concernant le type de variable (tel que [props] de trafic personnalisé et [eVar] de conversion) doit être motivée par les besoins spécifiques à votre implémentation Analytics.
 
-   Voir [Présentation de props et eVar](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/analytics-basics/traffic-props-evars/props-evars.html).
+   Voir [Présentation de props et eVar](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html#vars).
 
    Aux fins de cette documentation, seule une variable de trafic personnalisé (props) sera utilisée, car elle sera disponible dans un rapport Analytics quelques minutes après qu’une action a eu lieu sur une page web.
 
@@ -501,7 +500,7 @@ Une fois Adobe Launch configuré, les éléments suivants sont configurés pour
 
 Une propriété dans Adobe Launch est une configuration nommée qui conserve l’ensemble de vos paramètres. Une bibliothèque des paramètres de configuration est générée et publiée à différents niveaux d’environnement (développement, évaluation et production).
 
-Voir aussi [Création d’une propriété](https://docs.adobe.com/content/help/fr-FR/launch/using/implement/configure/create-a-property.html).
+Voir aussi [Créer une propriété Launch](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-create-a-property.html#configure-launch).
 
 1. Dans Adobe Launch, cliquez sur **[!UICONTROL Nouvelle propriété]**.
 1. Dans la boîte de dialogue **[!UICONTROL Créer une propriété]**, dans le champ **[!UICONTROL Nom]**, saisissez un nom descriptif, tel que le titre de votre site web. Par exemple, `DynamicMediaViewersProp.`
@@ -526,7 +525,7 @@ Le cas échéant, les extensions suivantes doivent être installées et configur
 
 Aucune configuration supplémentaire n’est nécessaire, acceptez les valeurs proposées. Lorsque vous avez terminé, veillez à cliquer sur **[!UICONTROL Enregistrer]**.
 
-Voir [Extension Experience Cloud ID Service](https://docs.adobe.com/content/help/fr-FR/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html).
+Voir [Extension Experience Cloud ID Service](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html#extensions-ref).
 
 * (Obligatoire) Extension *Adobe Analytics*
 
@@ -546,7 +545,7 @@ Sur la page **[!UICONTROL Installer l’extension]**, développez **[!UICONTROL 
 
 Cliquez sur **[!UICONTROL Enregistrer]**.
 
-Voir [Extension Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html).
+Voir [Extension Adobe Analytics](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#extensions-ref).
 
 * (Facultatif ; obligatoire uniquement si le suivi vidéo est nécessaire) *Adobe Media Analytics for Audio and Video*
 
@@ -554,7 +553,7 @@ Renseignez le champ Serveur de suivi. Le serveur de suivi pour l’extension *Ad
 
 Tous les autres champs sont facultatifs.
 
-Voir [Adobe Media Analytics for Audio and Video](https://docs.adobe.com/content/help/fr-FR/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html).
+Voir [Adobe Media Analytics for Audio and Video](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#extensions-ref).
 
 * (Obligatoire) Extension *Visionneuses Dynamic Media*
 
@@ -584,7 +583,7 @@ Pour apporter des modifications à la configuration d’Adobe Launch (y compris
 
 Adobe Launch peut comporter plusieurs environnements de développement, un environnement d’évaluation et un environnement de production. Par défaut, la configuration du cloud Adobe Launch dans AEM pointe le nœud Auteur AEM vers l’environnement d’évaluation d’Adobe Launch et le nœud Publication AEM vers l’environnement de production d’Adobe Launch. Cela signifie qu’avec les paramètres par défaut d’AEM, il est nécessaire de publier la bibliothèque Adobe Launch dans l’environnement d’évaluation afin de l’utiliser dans l’auteur AEM, puis de la publier dans l’environnement de production afin qu’elle puisse être utilisée dans la publication AEM.
 
-Voir [Environnements](https://docs.adobe.com/content/help/fr-FR/launch/using/reference/publish/environments.html) pour plus d’informations sur les environnements Adobe Launch.
+Voir [Environnements](https://experienceleague.adobe.com/docs/launch/using/reference/publish/environments/environments.html#environment-types) pour plus d’informations sur les environnements Adobe Launch.
 
 La publication d’une bibliothèque implique les deux étapes suivantes :
 
@@ -642,7 +641,7 @@ La publication d’une bibliothèque implique les deux étapes suivantes :
 
    ![image2019-7-15_16-8-9](assets/image2019-7-15_16-8-9.png)
 
-   Voir [Publication](https://docs.adobe.com/content/help/fr-FR/launch/using/reference/publish/overview.html) pour plus d’informations sur le processus de publication dans Adobe Launch.
+   Voir [Publication](https://experienceleague.adobe.com/docs/launch/using/reference/publish/overview.html#reference) pour plus d’informations sur le processus de publication dans Adobe Launch.
 
 ## Configuration d’Adobe Experience Manager pour l’intégration {#configuring-adobe-experience-manager-for-the-integration}
 
