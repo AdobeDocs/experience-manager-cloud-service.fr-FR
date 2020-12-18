@@ -3,9 +3,9 @@ title: Configuration et utilisation des microservices de ressources
 description: Configurez et utilisez des microservices de ressources basés sur le cloud pour traiter des ressources à grande échelle.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
 workflow-type: tm+mt
-source-wordcount: '2511'
+source-wordcount: '2532'
 ht-degree: 94%
 
 ---
@@ -221,6 +221,7 @@ Pour plus d’informations sur les étapes de workflow standard pouvant être ut
 
 * Pour la conception des workflows, prenez en compte vos besoins pour tous les types de rendus. Si vous ne prévoyez pas la nécessité d’un rendu futur, supprimez son étape de création dans le workflow. Il est impossible par la suite de supprimer les rendus en masse. Les rendus superflus peuvent occuper beaucoup d’espace de stockage suite à une utilisation prolongée d’[!DNL Experience Manager]. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Si plusieurs ressources sont concernées, vous pouvez, au choix, personnaliser [!DNL Experience Manager] pour supprimer des rendus spécifiques, ou supprimer les ressources et les charger à nouveau.
 * Actuellement, la prise en charge se limite à la génération de rendus. La génération de nouvelles ressources n’est pas prise en charge.
+* Actuellement, la taille de fichier maximale pour l’extraction des métadonnées est d’environ 10 Go. Lors du téléchargement de fichiers très volumineux, l’opération d’extraction des métadonnées échoue parfois.
 
 >[!MORELIKETHIS]
 >
