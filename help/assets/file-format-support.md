@@ -3,10 +3,10 @@ title: Formats de fichiers et types MIME pris en charge
 description: Formats de fichier et types MIME pris en charge par  [!DNL Experience Manager Assets] en tant que  [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 93%
+source-wordcount: '807'
+ht-degree: 91%
 
 ---
 
@@ -222,6 +222,10 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 ## Formats audio {#audio-formats}
 
 [!DNL Assets] as a offre une prise en charge de l’extraction de métadonnées XMP pour les formats audio AIF, ASF, M4A, MP3, WAV et WMA.[!DNL Cloud Service]
+
+## Conseils et restrictions {#limitations-and-tips}
+
+* Actuellement, la taille de fichier maximale pour l’extraction des métadonnées est d’environ 10 Go. Lors du téléchargement de fichiers très volumineux, l’opération d’extraction des métadonnées échoue parfois.
 
 >[!MORELIKETHIS]
 >
