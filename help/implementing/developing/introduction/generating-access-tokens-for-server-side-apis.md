@@ -2,9 +2,9 @@
 title: Génération de Jetons d'accès pour les API côté serveur
 description: Découvrez comment faciliter la communication entre un serveur tiers et AEM en tant que Cloud Service en générant un jeton JWT sécurisé
 translation-type: tm+mt
-source-git-commit: 251f5de85d63f6afd730fc450fe2b5a06bc90c38
+source-git-commit: 7ca7cd458ea5152d56754bf1e6a500b2c04d0039
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '895'
 ht-degree: 0%
 
 ---
@@ -22,18 +22,18 @@ Le flux serveur à serveur est décrit ci-dessous, ainsi qu’un flux simplifié
 
 ## Flux serveur à serveur {#the-server-to-server-flow}
 
-Un utilisateur doté du rôle d’administrateur peut générer un jeton porteur JWT, qui doit être installé sur le serveur et doit être traité avec soin comme une clé secrète. Le jeton porteur JWT doit être échangé avec IMS pour un jeton d&#39;accès, qui doit être inclus dans la demande d&#39;AEM en tant que Cloud Service.
+Un utilisateur doté du rôle d’administrateur peut générer un AEM en tant qu’informations d’identification du Cloud Service, qui doit être installé sur le serveur et doit être traité avec soin comme une clé secrète. Ce fichier de format JSON contient toutes les données requises pour l’intégration à un AEM en tant qu’API Cloud Service. Les données sont utilisées pour créer un jeton JWT signé, qui est échangé avec IMS pour un jeton d&#39;accès IMS. Ce jeton d&#39;accès peut ensuite être utilisé comme jeton d’authentification du porteur pour envoyer des requêtes à AEM en tant que Cloud Service.
 
 Le flux serveur à serveur implique les étapes suivantes :
 
-* Générer le jeton porteur JWT à partir de la console de développement
-* Installez le jeton sur un serveur non AEM qui appelle AEM
-* Échange du jeton porteur JWT pour un jeton d&#39;accès à l’aide des API IMS de Adobe
-* Appel de l’API AEM
+* Récupérez l&#39;AEM en tant qu&#39;informations d&#39;identification de Cloud Service dans la Console développeur
+* Installez l’AEM en tant qu’informations d’identification de Cloud Service sur un serveur non AEM et appelez l’AEM
+* Générer un jeton JWT et échanger ce jeton contre un jeton d&#39;accès à l’aide des API IMS de Adobe
+* Appel de l’API AEM avec le jeton d&#39;accès comme jeton d’authentification du porteur
 
-### Génération du jeton de garde JWT {#generating-the-jwt-bearer-token}
+### Extraire l&#39;AEM en tant qu&#39;informations d&#39;identification du Cloud Service {#fetch-the-aem-as-a-cloud-service-credentials}
 
-Les utilisateurs qui ont le rôle d’administrateur pour une organisation voient l’onglet intégrations dans la console de développement pour un environnement donné, ainsi que deux boutons. Cliquez sur le bouton **Obtenir les informations d’identification du service** pour générer la clé privée, le certificat et la configuration pour les niveaux d’auteur et de publication de l’environnement, quelle que soit la sélection de la capsule.
+Les utilisateurs qui ont le rôle d&#39;administrateur pour une organisation IMS voient l&#39;onglet intégrations dans la Console développeur pour un environnement donné, ainsi que deux boutons. Cliquez sur le bouton **Obtenir les informations d’identification du service** pour générer les informations d’identification du service json, qui contiendront toutes les informations requises pour le serveur non-AEM, y compris l’ID client, le secret client, la clé privée, le certificat et la configuration pour les niveaux d’auteur et de publication de l’environnement, quelle que soit la sélection de la capsule.
 
 ![Génération JWT](assets/JWTtoken3.png)
 
@@ -59,21 +59,45 @@ La sortie sera similaire à la suivante :
 }
 ```
 
-### Installer le jeton sur un serveur non AEM {#install-the-token-on-a-non-aem-server}
+### Installer les informations d’identification du service AEM sur un serveur non AEM {#install-the-aem-service-credentials-on-a-non-aem-server}
 
-L’application non-AEM qui appelle AEM doit installer le jeton porteur JWT, en le traitant comme un secret.
+L&#39;application non-AEM qui appelle AEM doit pouvoir accéder à l&#39; en tant qu&#39;identification de Cloud Service, en la traitant comme un secret.
 
-### Échanger le jeton JWT pour un Jeton d&#39;accès {#exchange-the-jwt-token-for-an-access-token}
+### Générer un jeton JWT et l’échanger pour un Jeton d&#39;accès{#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
-Incluez le jeton JWT dans un appel au service IMS de l’Adobe afin de récupérer un jeton d&#39;accès valide pendant 24 heures.
+Utilisez les informations d’identification pour créer un jeton JWT dans un appel au service IMS de l’Adobe afin de récupérer un jeton d&#39;accès valide pendant 24 heures.
+
+Les informations d&#39;identification du service AEM-CS peuvent être échangées contre un jeton d&#39;accès à l&#39;aide de bibliothèques clientes conçues à cet effet. Les bibliothèques clientes sont disponibles à partir du [référentiel public GitHub du Adobe](https://github.com/adobe/aemcs-api-client-lib), qui contient des instructions plus détaillées et des informations les plus récentes.
+
+```
+/*jshint node:true */
+"use strict";
+
+const fs = require('fs');
+const exchange = require("@adobe/aemcs-api-client-lib");
+
+const jsonfile = "aemcs-service-credentials.json";
+
+var config = JSON.parse(fs.readFileSync(jsonfile, 'utf8'));
+exchange(config).then(accessToken => {
+    // output the access token in json form including when it will expire.
+    console.log(JSON.stringify(accessToken,null,2));
+}).catch(e => {
+    console.log("Failed to exchange for access token ",e);
+});
+```
+
+Le même échange peut être effectué dans n&#39;importe quelle langue capable de générer un jeton JWT signé avec le format correct et d&#39;appeler les API IMS Token Exchange.
+
+Le jeton d&#39;accès définit le moment où il expire, qui est généralement de 12h. Il existe un exemple de code dans le référentiel git pour gérer un jeton d&#39;accès et l&#39;actualiser avant son expiration.
 
 ### Appel de l’API AEM {#calling-the-aem-api}
 
-Effectuez les appels d’API serveur à serveur appropriés à un AEM en tant qu’environnement Cloud Service, y compris le jeton d&#39;accès dans l’en-tête. Pour l’en-tête &quot;Autorisation&quot;, utilisez la valeur `"Bearer <access_token>"`.
+Effectuez les appels d’API serveur à serveur appropriés à un AEM en tant qu’environnement Cloud Service, y compris le jeton d&#39;accès dans l’en-tête. Pour l’en-tête &quot;Autorisation&quot;, utilisez la valeur `"Bearer <access_token>"`. Par exemple, en utilisant `curl` :
 
-<!-- ### Code Samples {#code-samples}
-
-https://git.corp.adobe.com/boston/skyline-api-client-lib (internal note: URL will change to public git repo before we publish) contains client libraries written in node.js that will exchange the JSON outputted by the developer console for an access token. -->
+```curlc
+curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e23423423.adobeaemcloud.com/content/dam.json
+```
 
 ## Flux de développement {#developer-flow}
 
@@ -100,6 +124,6 @@ Cliquez sur le bouton **Obtenir le jeton de développement local** de la Console
 
 Effectuez les appels d’API serveur à serveur appropriés de l’application non-AEM à un AEM en tant qu’environnement Cloud Service, y compris le jeton d&#39;accès dans l’en-tête. Pour l’en-tête &quot;Autorisation&quot;, utilisez la valeur `"Bearer <access_token>"`.
 
-## Révocation du jeton JWT Bearer {#jwt-bearer-token-revocation}
+## Révocation des informations d&#39;identification du service {#service-credentials-revocation}
 
 Veuillez envoyer une demande au service clientèle si le jeton porteur JWT doit être révoqué.
