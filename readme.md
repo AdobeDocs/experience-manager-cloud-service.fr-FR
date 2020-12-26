@@ -1,14 +1,14 @@
 ---
-source-git-commit: aa4e8a3d1650411c4b78c534b5797abbcd0a7035
+source-git-commit: 3409c713ea1ca033a2835d0070d0da4fec58fd18
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '91'
-ht-degree: 63%
+source-wordcount: '97'
+ht-degree: 59%
 
 ---
-# Documentation du Cloud Service Adobe Experience Manager
+# Adobe Experience Manager en tant que documentation Cloud Service
 
-Il s’agit du référentiel de la documentation du Cloud Service Adobe Experience Manager. Cette documentation traite de l’installation, de l’administration, de la création d’utilisation et de la personnalisation des AEM à l’aide de Cloud Service.
+Il s’agit du référentiel pour Adobe Experience Manager en tant que documentation Cloud Service. Cette documentation porte sur l’installation, l’administration, la création d’utilisation et la personnalisation de l’utilisation d’une expérience en tant que Cloud Service.
 
 Vos contributions à la documentation sont les bienvenues. Veuillez consulter les ressources suivantes :
 
