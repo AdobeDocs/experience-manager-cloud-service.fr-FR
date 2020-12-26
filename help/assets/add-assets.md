@@ -2,9 +2,9 @@
 title: Ajout de vos ressources numériques à [!DNL Adobe Experience Manager].
 description: Ajoutez vos ressources numériques à  [!DNL Adobe Experience Manager] en tant que  [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: 42d607c2dc938c2ed91ecac10b29824050dd6810
+source-git-commit: 6f5b6ba7da4c0d3161b9f34602b0256c319b191f
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1903'
 ht-degree: 38%
 
 ---
@@ -135,7 +135,7 @@ Pour prendre en compte les conventions d’appellation en vigueur dans votre ent
 
 ## Chargement en masse de ressources {#bulk-upload}
 
-L’analyseur de ressources en vrac peut gérer efficacement des milliers de ressources. Cependant, une ingestion à grande échelle n&#39;est pas simplement un vidage de fichiers volumineux ou une migration aveugle. Pour qu&#39;il s&#39;agisse d&#39;un projet significatif qui répond à vos besoins commerciaux, la planification et la gestion des actifs conduisent à une assimilation beaucoup plus efficace. Toutes les intégrations ne sont pas les mêmes et les généralisations ne peuvent pas être faites sans tenir compte de la composition nuancée du référentiel et des besoins commerciaux. Voici des suggestions globales pour planifier et exécuter une ingestion en masse :
+L’analyseur de ressources en vrac peut traiter efficacement un très grand nombre de ressources. Cependant, une ingestion à grande échelle n&#39;est pas simplement un vidage de fichiers ou une migration occasionnelle. Pour qu&#39;une assimilation à grande échelle soit un projet significatif qui réponde à vos besoins et soit efficace, planifiez la migration et traitez l&#39;organisation des ressources. Toutes les intégrations sont différentes, donc au lieu de généraliser, tenir compte de la composition nuancée du référentiel et des besoins commerciaux. Voici quelques suggestions générales pour planifier et exécuter une ingestion en masse :
 
 * Traiter les ressources : Supprimez les actifs qui ne sont pas nécessaires dans le DAM. Envisagez de supprimer les actifs inutilisés, obsolètes ou de duplicata. Cela permet de réduire les données transférées et les ressources ingérées, ce qui accélère les saisies.
 * Organiser les ressources : Envisagez d’organiser le contenu dans un ordre logique, par exemple par taille de fichier, format de fichier, cas d’utilisation ou priorité. En général, les fichiers complexes volumineux nécessitent un traitement plus poussé. Vous pouvez également envisager d’importer des fichiers volumineux séparément à l’aide de l’option de filtrage de la taille de fichier (décrite ci-dessous).
@@ -149,7 +149,7 @@ Pour télécharger un plus grand nombre de fichiers, utilisez l’une des métho
 
 ### Outil d&#39;assimilation en masse de ressources {#asset-bulk-ingestor}
 
-L&#39;outil est fourni uniquement au groupe d&#39;administrateurs à utiliser pour l&#39;assimilation à grande échelle d&#39;actifs à partir de banques de données Azure ou S3.
+L&#39;outil est fourni uniquement au groupe d&#39;administrateurs à utiliser pour l&#39;assimilation à grande échelle d&#39;actifs à partir de banques de données Azure ou S3. Visionnez une vidéo présentant la configuration et l’assimilation.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
