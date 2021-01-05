@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 6%
+ht-degree: 15%
 
 ---
 
@@ -31,6 +31,6 @@ La date de publication de Cloud Manager en tant que Cloud Service 2020.12.0 est 
 
 ### Correctifs {#bug-fixes}
 
-* Certaines occurrences d’échecs au stade de l’analyse du code sans fournir de résultats corrigés.
+* Certaines occurrences d’échecs au stade de l’analyse du code sans fournir de résultats ont été corrigées.
 
 * La carte d&#39;Environnement n&#39;affichait pas systématiquement le bouton **Ajouter**.
