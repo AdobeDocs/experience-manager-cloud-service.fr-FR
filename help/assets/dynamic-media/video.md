@@ -404,7 +404,7 @@ Supposons, par exemple, que la résolution de votre vidéo source soit équivale
 |--- |--- |--- |--- |
 | Source | 1 920 x 1 080 | 1 | 1 |
 | Codée | 960 x 540 | 2 | 2 |
-| Codée | 640 x 360 | 3 | 3 |
+| Codée | 640 x 360 | 3 | 1 |
 | Codée | 480 x 270 | 4 | 4 |
 
 ### Format de fichier vidéo codé {#encoded-video-file-format}
