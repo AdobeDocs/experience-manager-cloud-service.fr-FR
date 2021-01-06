@@ -3,10 +3,10 @@ title: Utilisation des ressources connectées pour partager des ressources DAM d
 description: Utilisez des ressources disponibles pour un déploiement  [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites]  à distance.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: caf50490c573c2f119f2cbfa14ee7cca12854364
+source-git-commit: f548a4eecbd2a7c6bad2a848ce493c2dcff3f248
 workflow-type: tm+mt
-source-wordcount: '2688'
-ht-degree: 63%
+source-wordcount: '2704'
+ht-degree: 62%
 
 ---
 
@@ -105,6 +105,10 @@ Pour configurer les ressources connectées et la connectivité des [!DNL Sites] 
    >Tous les rendus disponibles sur le déploiement distant sont récupérés lorsque les auteurs obtiennent une ressource. Si vous souhaitez créer d’autres rendus d’une ressource récupérée, ignorez cette étape de configuration. Le workflow [!UICONTROL Ressources de mise à jour de gestion des actifs numériques] est déclenché et crée d’autres rendus. Ces rendus sont disponibles uniquement sur le déploiement [!DNL Sites] local, et non sur le déploiement DAM distant.
 
 1. Ajoutez le déploiement [!DNL Sites] comme origine autorisée dans la configuration CORS du déploiement [!DNL Assets]. Pour plus d&#39;informations, voir [comprendre CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html).
+
+Vous pouvez vérifier la connectivité entre les déploiements [!DNL Sites] configurés et le déploiement [!DNL Assets].
+
+![Test de connexion des ressources connectées configurées  [!DNL Sites]](assets/connected-assets-multiple-config.png)
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
