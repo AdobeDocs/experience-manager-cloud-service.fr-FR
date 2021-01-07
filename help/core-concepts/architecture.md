@@ -82,7 +82,7 @@ Un programme AEM est le conteneur qui comprend les éléments suivants :
 |  Élément de programme |  Nombre |
 |--- |--- |
 | Référentiel de code (Git) |  1 |
-| Image de base (Sites ou Assets) |  3 |
+| Image de base (Sites ou Assets) |  1 |
 | Ensemble d’environnements d’évaluation et de production (1:1) | 0 ou 1 |
 | Environnements hors production (développement ou démonstration) | 0 à N |
 | Pipeline pour chaque environnement | 0 ou 1 |
