@@ -2,9 +2,9 @@
 title: Introduction - Noms de domaine personnalisés
 description: Introduction - Noms de domaine personnalisés
 translation-type: tm+mt
-source-git-commit: 1304a0cfa67c38943b1a36c105fbd5eafb3f8c4f
+source-git-commit: 677a5d65bb15c9579f19b0b4e8ef03d1201e4a94
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '159'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Présentation {#introduction}
 
-Cloud Manager vous permet d’ajouter un domaine personnalisé afin d’identifier votre site avec un nom de marque unique en libre-service via l’interface utilisateur. Votre AEMaaCS est doté d’un nom de domaine par défaut se terminant par `*.adobeaemcloud.com`. Ce nom de domaine par défaut est conservé, même après avoir ajouté des noms de domaine personnalisés à votre site Web.
+Cloud Manager vous permet d’ajouter un domaine personnalisé afin d’identifier votre site avec un nom de marque unique en libre-service via l’interface utilisateur. Votre Adobe Experience Manager en tant que Cloud Service est configuré avec un nom de domaine par défaut, se terminant par `*.adobeaemcloud.com`. Ce nom de domaine par défaut est conservé, même après avoir ajouté des noms de domaine personnalisés à votre site Web.
 
 >[!NOTE]
 >Les noms de domaine personnalisés sont uniquement pris en charge dans Cloud Manager pour le Programme Sites (service de publication). Chaque Environnement de Cloud Manager peut héberger jusqu’à 100 domaines personnalisés par environnement.
