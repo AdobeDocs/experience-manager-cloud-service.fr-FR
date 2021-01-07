@@ -2,7 +2,7 @@
 title: Gestion des environnements - Cloud Service
 description: Gestion des environnements - Cloud Service
 translation-type: tm+mt
-source-git-commit: b3c577f1030ed96e5dde596c5fe01e853c3199df
+source-git-commit: 1304a0cfa67c38943b1a36c105fbd5eafb3f8c4f
 workflow-type: tm+mt
 source-wordcount: '1249'
 ht-degree: 63%
@@ -168,7 +168,7 @@ Accédez à la page Détails de l&#39;Environnement à partir de la page Récapi
 L’application d’une Liste autorisée IP est le processus par lequel toutes les plages d’adresses IP incluses dans la définition de la Liste autorisée sont associées à un service Auteur ou Publication dans un environnement. Un utilisateur du rôle Propriétaire de l&#39;entreprise ou Deployment Manager doit être connecté pour pouvoir appliquer une Liste autorisée IP.
 
 >[!NOTE]
->La Liste autorisée IP doit exister dans Cloud Manager pour pouvoir l’appliquer à un environnement-service. Pour en savoir plus sur les Listes autorisées IP dans Cloud Manager, accédez à [Introduction aux Listes autorisées IP dans le Gestionnaire de commandes ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+>La Liste autorisée IP doit exister dans Cloud Manager pour pouvoir l’appliquer à un environnement-service. Pour en savoir plus sur les Listes autorisées IP dans Cloud Manager, accédez à [Introduction aux Listes autorisées IP dans Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 Pour appliquer une Liste autorisée IP, procédez comme suit :
 
