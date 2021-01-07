@@ -18,7 +18,7 @@ ht-degree: 0%
 >
 >La documentation correspondante est déjà disponible à des fins de prévisualisation.
 
-Avec Adobe Experience Manager (AEM) en tant que Cloud Service, vous pouvez utiliser les fragments de contenu, ainsi que l’API AEM GraphQL (une implémentation personnalisée, basée sur la norme GraphQL), pour fournir du contenu structuré à utiliser dans vos applications.
+Avec Adobe Experience Manager (AEM) en tant que Cloud Service, vous pouvez utiliser les fragments de contenu, ainsi que l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard), pour fournir du contenu structuré à utiliser dans vos applications.
 
 ## CMS sans en-tête {#headless-cms}
 
