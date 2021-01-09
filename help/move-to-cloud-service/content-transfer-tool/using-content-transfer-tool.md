@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: f3a4fdf57dc84bba9811530fccb2fe6a4404376f
+source-git-commit: 7af431be9817c5d5fda933e4697a63ab1085276f
 workflow-type: tm+mt
-source-wordcount: '1902'
-ht-degree: 89%
+source-wordcount: '2018'
+ht-degree: 84%
 
 ---
 
@@ -25,6 +25,8 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 * Si vous utilisez un *environnement sandbox*, assurez-vous que celui-ci est à jour et mis à niveau vers la dernière version. Si vous utilisez un *environnement de production*, il est automatiquement mis à jour.
 
 * Pour utiliser l’outil de transfert de contenu, vous devez être un utilisateur administrateur sur votre instance source et appartenir au groupe d’administrateurs AEM local dans l’instance Cloud Service vers laquelle vous transférez du contenu. Les utilisateurs non privilégiés ne pourront pas récupérer le jeton d’accès pour utiliser l’outil de transfert de contenu.
+
+* Le jeton d&#39;accès peut expirer périodiquement, soit après une période spécifique, soit après la mise à niveau de l’environnement Cloud Service. Si le jeton d&#39;accès a expiré, vous ne pourrez pas vous connecter à l’instance du Cloud Service et vous devrez récupérer le nouveau jeton d&#39;accès. L’icône d’état associée à un jeu de migration existant se transforme en nuage rouge et affiche un message lorsque vous le survolez.
 
 * Actuellement, la taille par défaut de MongoDB pour une instance AEM as a Cloud Service est de 32 Go. Pour une taille de banque de segments supérieure à 20 Go, envoyez un ticket d’assistance demandant à augmenter la taille de MongoDB.
 
@@ -162,6 +164,9 @@ Une fois le processus d’extraction terminé, vous pouvez transférer le conten
 Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert de contenu, procédez comme suit :
 
 1. Pour démarrer l’extraction, sélectionnez un jeu de migration dans la page *Overview*, puis cliquez sur **Ingest** (Ingérer). La boîte de dialogue **Migration Set ingestion** (Ingestion du jeu de migration) s’affiche. Cliquez sur **Ingest** pour démarrer la phase d’ingestion. Pour une démonstration, l’option **Ingest content to Author instance** (Ingérer du contenu vers l’instance d’auteur) est désactivée. Il est possible d’ingérer en même temps du contenu vers les instances d’auteur et de publication.
+
+   >[!IMPORTANT]
+   >Lorsque l’option **Effacer le contenu existant sur l’instance Cloud avant l’assimilation** est activée, elle supprime l’intégralité du référentiel existant et crée un nouveau référentiel dans lequel intégrer du contenu. Cela signifie qu’il réinitialise tous les paramètres, y compris les autorisations sur l’instance de Cloud Service de cible.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
