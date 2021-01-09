@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: 7af431be9817c5d5fda933e4697a63ab1085276f
+source-git-commit: 6446faf2ed936b8bcefd6b4192dbd99fb10aa41e
 workflow-type: tm+mt
-source-wordcount: '2018'
-ht-degree: 84%
+source-wordcount: '1915'
+ht-degree: 83%
 
 ---
 
@@ -257,12 +257,6 @@ Les fichiers créés dans *OUT_DIR*, spécifiés ci-dessus pour assurer la cohé
 ### Comportement de l’interface utilisateur {#ui-behavior}
 
 En tant qu’utilisateur, il est possible que vous constatiez les changements de comportement suivants dans l’interface utilisateur de l’outil de transfert de contenu :
-
-* L’utilisateur crée un jeu de migration pour une URL d’auteur (Développement/Évaluation/Production) et effectue avec succès l’extraction et l’ingestion.
-
-* L’utilisateur crée ensuite un jeu de migration pour la même URL d’auteur et effectue l’extraction et l’ingestion sur le nouveau jeu de migration. L’interface utilisateur indique que l’état d’ingestion du premier jeu de migration devient **ÉCHEC** et qu’aucun journal n’est disponible.
-
-* Cela ne signifie pas que l’ingestion du premier jeu de migration a échoué. Ce comportement apparaît, car lorsqu’une nouvelle tâche d’ingestion est lancée, elle supprime la tâche d’ingestion précédente. L’état des modifications du premier jeu de migration doit donc être ignoré.
 
 * Selon la version de l’instance AEM source, les icônes de l’interface utilisateur de l’outil de transfert de contenu peuvent apparaître sous des formes différentes des captures d’écran de ce guide ou ne pas apparaître du tout.
 
