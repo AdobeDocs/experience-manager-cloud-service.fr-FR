@@ -2,7 +2,7 @@
 title: Ajouter un nom de domaine personnalisé
 description: Ajouter un nom de domaine personnalisé
 translation-type: tm+mt
-source-git-commit: b336f361b496b672d26a5316952ee52ce828e201
+source-git-commit: 148a1f478aeabea970e46e7e565fccca7db6a7e9
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%
@@ -50,7 +50,8 @@ Suivez les étapes ci-dessous pour ajouter un nom de domaine personnalisé à pa
 1. Sélectionnez **Domain SSL Certificate** dans la liste déroulante et sélectionnez **Continuer**.
 
 1. **La boîte de dialogue Ajouter le** nom de domaine s’affiche. Vous accédez alors à l’écran Vérification du nom de domaine pour votre Environnement. Consultez [Ajouter un enregistrement TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) pour en savoir plus.
-Suivez les instructions fournies pour prouver la propriété du domaine de votre environnement.
+
+   Suivez les instructions fournies pour prouver la propriété de domaine de votre environnement :
 
 1. Cliquez sur **Créer**.
 1. Le déploiement CDN nécessite un certificat SSL valide et une vérification TXT réussie. Ceci est indiqué par l’état **Vérifié et déployé**.
