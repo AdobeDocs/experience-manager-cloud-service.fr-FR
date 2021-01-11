@@ -1,18 +1,18 @@
 ---
-title: Modifications notables d’Adobe Experience Manager Assets as a [!DNL Cloud Service]
-description: Modifications notables apportées aux ressources Adobe Experience Manager dans Experience Manager [!DNL Cloud Service] par rapport à Adobe Experience Manager 6.5.
+title: Changements notables dans  [!DNL Adobe Experience Manager Assets] en tant que  [!DNL Cloud Service]
+description: Modifications notables apportées à  [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] par rapport à [ !DNL Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 0838f384b31c59fe95087e1a71741656eedcd13b
+source-git-commit: ed449eea146ec18bdc4d25ae4938f9a36180037d
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 63%
+source-wordcount: '605'
+ht-degree: 43%
 
 ---
 
 
-# Modifications notables d’Experience Manager Assets as a [!DNL Cloud Service] {#notable-changes}
+# Modifications notables apportées à [!DNL Experience Manager Assets] en tant que [!DNL Cloud Service] {#notable-changes}
 
-Adobe Experience Manager en tant que [!DNL Cloud Service] apporte de nombreuses nouvelles fonctionnalités et possibilités pour gérer vos projets Experience Manager. Il existe de nombreuses différences entre les ressources Experience Manager sur site ou hébergées en tant que service géré par Adobe par rapport à [!DNL Experience Manager] en tant que [!DNL Cloud Service]. Cet article souligne les différences importantes entre les fonctionnalités [!DNL Assets].
+[!DNL Adobe Experience Manager] comme a  [!DNL Cloud Service] apporte de nombreuses nouvelles fonctionnalités et possibilités pour gérer vos projets Experience Manager. Il existe de nombreuses différences entre [!DNL Experience Manager Assets] sur site ou hébergé en tant que service géré par Adobe par rapport à [!DNL Experience Manager] en tant que [!DNL Cloud Service]. Cet article souligne les différences importantes entre les fonctionnalités [!DNL Assets].
 
 Les principales différences par rapport à [Experience Manager] 6.5 se situent dans les domaines suivants :
 
@@ -22,16 +22,17 @@ Les principales différences par rapport à [Experience Manager] 6.5 se situent 
 
 ## Importation et traitement des ressources {#asset-ingestion}
 
-Le transfert des ressources a été optimisé pour plus d’efficacité en permettant une meilleure mise à l’échelle de l’assimilation des ressources, des téléchargements plus rapides, un traitement plus rapide à l’aide de microservices et l’assimilation en masse. Les fonctionnalités du produit (interfaces utilisateur web, clients de bureau) ont été mises à jour. Cela peut toutefois avoir un impact sur une personnalisation existante.
+Le transfert des ressources est optimisé pour une efficacité optimale en permettant une meilleure mise à l’échelle de l’assimilation, des téléchargements plus rapides, un traitement plus rapide à l’aide de microservices et l’assimilation en masse. Les fonctionnalités du produit (interfaces utilisateur Web, clients de bureau) sont mises à jour. Cela peut également avoir un impact sur certaines personnalisations existantes.
 
-* Experience Manager applique le principe d’accès binaire direct pour le transfert et le téléchargement et les microservices de ressources pour le traitement des ressources. Consultez la [Présentation de l’assimilation de ressources](/help/assets/asset-microservices-overview.md).
+* [!DNL Experience Manager] utilise le principe d’accès binaire direct pour télécharger et télécharger des ressources et utilise des microservices de ressources pour traiter des ressources. Voir [présentation des microservices](/help/assets/asset-microservices-overview.md).
    * Chargement de ressources [avec accès binaire direct](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access).
-   * Pour plus d’informations techniques, reportez-vous à la section sur le [protocole de chargement de binaire direct et les API](/help/assets/developer-reference-material-apis.md#upload-binary).
+   * Pour plus de détails techniques, voir [protocole de téléchargement binaire direct et API](/help/assets/developer-reference-material-apis.md#upload-binary).
    * Pour une comparaison des méthodes d’API disponibles pour les opérations CRUD de base, voir [APIs and asset operations](/help/assets/developer-reference-material-apis.md#use-cases-and-apis).
 * Le flux de travaux par défaut **[!UICONTROL Mise à jour des ressources DAM]** dans les versions précédentes de [!DNL Experience Manager] n&#39;est plus disponible. Au lieu de cela, les microservices de ressources offrent un service évolutif et facilement disponible qui couvre la plupart du traitement des ressources par défaut (rendus, extraction de métadonnées et extraction de texte pour l’indexation).
-   * Consultez [Configuration et utilisation des microservices de ressources](/help/assets/asset-microservices-configure-and-use.md)
-   * Pour que les étapes de workflow personnalisées soient intégrées au traitement, vous pouvez utiliser les workflows [de](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) post-traitement..
-* Les ressources qui arrivent par le biais du gestionnaire de modules nécessitent un retraitement manuel à l’aide de l’action **[!UICONTROL Retraiter les ressources]** dans l’interface Assets.
+   * Voir [configuration et utilisation des microservices de ressources](/help/assets/asset-microservices-configure-and-use.md)
+   * Pour que les étapes de processus personnalisées soient intégrées au traitement, [les workflows de post-traitement](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) peuvent être utilisés.
+* Les ressources téléchargées à l’aide de Package Manager doivent être retraitées manuellement à l’aide de l’action **[!UICONTROL Retraiter l’actif]** de l’interface [!DNL Assets].
+* Un fichier numérique sans extension ou avec une extension incorrecte n’est pas traité comme vous le souhaitez. Par exemple, lors du transfert de ces ressources, rien ne se produit ou un profil de traitement incorrect peut s’appliquer à la ressource. Les utilisateurs peuvent toujours stocker les fichiers binaires dans le module DAM.
 
 Les rendus standard générés avec les microservices de ressources sont stockés de manière rétrocompatible dans les nœuds du référentiel de ressources (conventions d’affectation de noms identiques).
 
