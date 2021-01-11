@@ -3,10 +3,10 @@ title: Configuration et utilisation des microservices de ressources
 description: Configurez et utilisez des microservices de ressources basés sur le cloud pour traiter des ressources à grande échelle.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '2532'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -68,9 +68,9 @@ Avec la configuration par défaut, seul le profil de traitement le plus élémen
 
 Le profil de traitement peut inclure un rendu FPO (For Placement Only). Consultez la [documentation d’[!DNL Adobe Asset Link]](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html) afin de savoir si vous devez l’activer pour votre profil de traitement. Pour plus d’informations, voir la [documentation complète d’Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html).
 
-### Création d’un profil standard {#create-standard-profile}
+### Créer un profil standard {#create-standard-profile}
 
-Pour créer un profil de traitement standard, procédez comme suit :
+Pour créer un profil de traitement standard, procédez comme suit :
 
 1. Les administrateurs accèdent à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de traitement]**. Cliquez sur **[!UICONTROL Créer]**.
 1. Fournissez un nom qui vous aide à identifier de manière unique le profil lors de l’application à un dossier.
@@ -108,7 +108,7 @@ Le [!DNL Asset Compute Service] prend en charge une variété de cas d’utilisa
 
 Le profil personnalisé peut transformer des formats d’image, de vidéo, de document et autres formats de fichier en différents rendus, y compris des miniatures, du texte et des métadonnées extraits et des archives.
 
-Les développeurs peuvent utiliser le [!DNL Asset Compute Service] pour [créer des applications personnalisées](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) qui répondent aux cas d’utilisation pris en charge. [!DNL Experience Manager] peut appeler ces applications personnalisées à partir de l’interface utilisateur en utilisant des profils personnalisés configurés par les administrateurs. [!DNL Asset Compute Service] prend en charge les cas d’utilisation suivants d’appel de services externes :
+Les développeurs peuvent utiliser [!DNL Asset Compute Service] pour [créer des applications personnalisées](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) pour les cas d’utilisation pris en charge. [!DNL Experience Manager] peut appeler ces applications personnalisées à partir de l’interface utilisateur en utilisant des profils personnalisés configurés par les administrateurs. [!DNL Asset Compute Service] prend en charge les cas d’utilisation suivants d’appel de services externes :
 
 * Utilisez l’[API ImageCutout](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) d’[!DNL Adobe Photoshop] et enregistrez le résultat en tant que rendu.
 * Appelez des systèmes tiers pour mettre à jour des données (par exemple, un système PIM).
@@ -123,7 +123,7 @@ Les développeurs peuvent utiliser le [!DNL Asset Compute Service] pour [créer 
 
 Pour créer un profil personnalisé, procédez comme suit :
 
-1. Les administrateurs accèdent à **[!UICONTROL Outils > Ressources > Profils de traitement]**. Cliquez sur **[!UICONTROL Créer]**.
+1. Les administrateurs accèdent à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de traitement]**. Cliquez sur **[!UICONTROL Créer]**.
 1. Cliquez sur l’onglet **[!UICONTROL Personnalisé]**. Cliquez sur **[!UICONTROL Ajouter nouveau]**. Indiquez le nom de fichier souhaité pour le rendu.
 1. Fournissez les informations suivantes.
 
@@ -145,6 +145,8 @@ Les applications personnalisées sont des applications [Project Firefly](https:/
 Pour illustrer l’utilisation d’un profil personnalisé, considérons un exemple d’utilisation dans lequel il s’agit d’appliquer du texte personnalisé à des images de campagne. Vous pouvez créer un profil de traitement qui exploite l’API Photoshop pour modifier les images.
 
 L’intégration d’Asset Compute Service permet à Experience Manager de transmettre ces paramètres à l’application personnalisée à l’aide du champ [!UICONTROL Paramètres de service]. L’application personnalisée appelle ensuite l’API Photoshop et transmet ces valeurs à l’API. Par exemple, vous pouvez transmettre le nom de la police ainsi que la couleur, l’épaisseur et la taille du texte pour ajouter le texte personnalisé aux images de campagne.
+
+<!-- TBD: Check screenshot against the interface. -->
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
 
