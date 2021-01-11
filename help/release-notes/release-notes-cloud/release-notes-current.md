@@ -2,10 +2,10 @@
 title: Notes de mise à jour actuelles de  [!DNL Adobe Experience Manager] en tant que Cloud Service.
 description: Notes de mise à jour actuelles de  [!DNL Adobe Experience Manager] en tant que Cloud Service.
 translation-type: tm+mt
-source-git-commit: 6b001ffb9afe73c09d131ef7901cc2c12c57f164
+source-git-commit: cfe49fe414f387c660259de540af0cc26ef3951f
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 19%
+source-wordcount: '694'
+ht-degree: 17%
 
 ---
 
@@ -17,13 +17,13 @@ La section suivante décrit les Notes de mise à jour générales de [!DNL Exper
 ## Date de publication {#release-date}
 
 La date de publication de [!DNL Adobe Experience Manager] en tant que Cloud Service 2020.12.0 est le 17 décembre 2020.
-La version suivante (2021.1.0) sera publiée le 28 janvier 2020.
+La version suivante (2021.1.0) sera publiée le 28 janvier 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service{#sites}
 
 * **[API](/help/assets/content-fragments/assets-api-content-fragments.md)** HTTP de fragment de contenu : Ajoutez la possibilité d’ajouter/de mettre à jour et de supprimer des variations de fragments de contenu à l’aide de l’API HTTP.
 
-## [!DNL Adobe Experience Manager Assets] comme  [!DNL Cloud Service] {#assets}
+## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 * L&#39;intégration à [!DNL Adobe InDesign Server] est désormais disponible pour [!DNL Experience Manager] en tant que [!DNL Cloud Service]. Il permet l’automatisation du traitement des fichiers [!DNL Adobe InDesign] à l’aide de scripts [!DNL Adobe InDesign Server] et aux utilisateurs d’utiliser l’interface utilisateur des modèles [!DNL Assets] pour créer des brochures ou des publicités. Seul [!DNL InDesign Server] hébergé par [!DNL Adobe Managed Services] est pris en charge pour [!DNL Experience Manager as a Cloud Service]. <!-- TBD: Add link to article. -->
 
@@ -74,3 +74,20 @@ La date de publication de Cloud Manager en tant que Cloud Service 2020.12.0 est 
 ### Correctifs {#crt-bug-fixes}
 
 * Plusieurs correctifs de bogues ont été apportés aux outils  Dispatcher Converter et Repository Modernizer. Veuillez vous reporter à [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) et [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+
+## Outils de transition vers le cloud {#code-transition-tools}
+
+### Date de publication {#release-date-ctt}
+
+La date de publication de l’outil de transfert de contenu v1.1.20 est le 8 janvier 2021.
+
+### Nouveautés de [!DNL Content Transfer Tool] {#what-is-new-ctt}
+
+* Les utilisateurs peuvent désormais savoir si leur Jeton d&#39;accès a expiré en pointant vers l’icône d’état de l’interface utilisateur de l’outil de transfert de contenu (CTT). Ils seront également avertis dans l’interface utilisateur Détails du jeu de migration qu’ils ne peuvent pas se connecter à leur instance de Cloud Service.
+
+### Correctifs {#ctt-bug-fixes}
+
+* L’état de l’interface utilisateur de l’outil de transfert de contenu (CTT) pour un jeu de migration n’était pas conservé et modifié après une période d’inactivité. Ce problème a été résolu.
+* L&#39;option permettant d&#39;accéder aux journaux de vue était désactivée si les journaux n&#39;étaient pas disponibles. Ce problème a été corrigé et un message a été ajouté pour informer l’utilisateur de l’absence de journaux.
+* L’état de l’interface utilisateur de l’outil de transfert de contenu affichait ÉCHOUÉ lorsque l’utilisateur arrêtait une assimilation. Ce problème a été corrigé pour afficher à la place *STOPPED*.
+
