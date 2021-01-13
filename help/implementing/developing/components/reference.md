@@ -2,10 +2,10 @@
 title: Guide de référence des composants
 description: Guide de référence du développeur pour les détails des composants et de leur structure
 translation-type: tm+mt
-source-git-commit: a4805cd1c6ee3b32f064f258d4a2a0308bee99b1
+source-git-commit: d843182585a269b5ebb24cc31679b77fb6b6d697
 workflow-type: tm+mt
-source-wordcount: '3464'
-ht-degree: 33%
+source-wordcount: '3720'
+ht-degree: 31%
 
 ---
 
@@ -315,6 +315,39 @@ Le comportement de modification d’un composant est configuré en ajoutant un n
    * `cq:listeners` (type de noeud  `cq:EditListenersConfig`) : définit ce qui se produit avant ou après une action sur le composant.
 
 Il existe de nombreuses configurations en AEM. Vous pouvez facilement rechercher des propriétés spécifiques ou des noeuds enfants à l’aide de l’outil de Requête dans **CRXDE Lite**.
+
+### Espaces réservés de composant {#component-placeholders}
+
+Les composants doivent toujours générer du code HTML visible par l’auteur, même si le composant ne comporte aucun contenu. Sinon, il peut disparaître visuellement de l’interface de l’éditeur, ce qui le rend techniquement présent mais invisible sur la page et dans l’éditeur. Dans ce cas, les auteurs ne pourront pas sélectionner et interagir avec le composant vide.
+
+Pour cette raison, les composants doivent générer un espace réservé tant qu’ils n’affichent pas de sortie visible lorsque la page est rendue dans l’éditeur de page (lorsque le mode WCM est `edit` ou `preview`).
+L’annotation HTML type d’un espace réservé est la suivante :
+
+```HTML
+<div class="cq-placeholder" data-emptytext="Component Name"></div>
+```
+
+Le script HTML type qui effectue le rendu du code HTML d’espace réservé ci-dessus est le suivant :
+
+```HTML
+<div class="cq-placeholder" data-emptytext="${component.properties.jcr:title}"
+     data-sly-test="${(wcmmode.edit || wcmmode.preview) && isEmpty}"></div>
+```
+
+Dans l’exemple précédent, `isEmpty` est une variable vraie uniquement lorsque le composant n’a aucun contenu et est invisible pour l’auteur.
+
+Pour éviter la répétition, l&#39;Adobe recommande que les implémenteurs des composants utilisent un modèle HTML pour ces espaces réservés, [comme celui fourni par les composants principaux.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+
+L’utilisation du modèle dans le lien précédent se fait ensuite avec la ligne HTML suivante :
+
+```HTML
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-call="${template.placeholder @ isEmpty=!model.text}"></sly>
+```
+
+Dans l’exemple précédent, `model.text` est la variable qui est vraie uniquement lorsque le contenu comporte du contenu et est visible.
+
+Vous trouverez un exemple d&#39;utilisation de ce modèle dans les composants principaux, [tels que dans le composant Titre.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
 
 ### Configuration avec des nœuds enfants cq:EditConfig {#configuring-with-cq-editconfig-child-nodes}
 
