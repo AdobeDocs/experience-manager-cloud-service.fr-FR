@@ -2,9 +2,9 @@
 title: Diffusion de contenu sans en-tête utilisant des fragments de contenu avec GraphQL
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) en tant que Cloud Service avec GraphQL pour la Diffusion de contenu sans en-tête.
 translation-type: tm+mt
-source-git-commit: 1e9596fb12a38f5c4c6e15d7c33af86e59e76083
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->L’AEM API GraphQL, pour Content Fragment Diffusion, sera disponible début 2021.
+>L’API AEM GraphQL pour la Diffusion Fragments de contenu est disponible sur demande.
 >
->La documentation correspondante est déjà disponible à des fins de prévisualisation.
+>Contactez le [support Adobe](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support) pour activer l&#39;API pour votre AEM en tant que programme Cloud Service.
 
-Avec Adobe Experience Manager (AEM) en tant que Cloud Service, vous pouvez utiliser les fragments de contenu, ainsi que l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard), pour fournir du contenu structuré à utiliser dans vos applications.
+Avec Adobe Experience Manager (AEM) en tant que Cloud Service, vous pouvez utiliser les fragments de contenu, ainsi que l’API AEM GraphQL (une implémentation personnalisée, basée sur la norme GraphQL), pour fournir du contenu structuré à utiliser dans vos applications.
 
 ## CMS sans en-tête {#headless-cms}
 
@@ -102,7 +102,7 @@ Fragments de contenu:
 
 ### Modèles de fragment de contenu {#content-fragments-models}
 
-[Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) :
+[Modèles de fragments de contenu](/help/assets/content-fragments/content-fragments-models.md) :
 
 * Fournissez les types de données et les champs requis pour GraphQL. Ils s&#39;assurent que votre application ne demande que ce qui est possible et reçoit ce qui est attendu.
 
