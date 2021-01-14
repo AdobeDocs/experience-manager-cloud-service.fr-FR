@@ -2,31 +2,21 @@
 title: Gestion des fragments de contenu
 description: Les fragments de contenu sont stockés en tant que ressources, et ils sont donc principalement gérés par l’intermédiaire de la console Ressources.
 translation-type: tm+mt
-source-git-commit: 0a60687eacf054675205d9a9466473e1f4996db1
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '1473'
-ht-degree: 96%
+source-wordcount: '1488'
+ht-degree: 95%
 
 ---
 
 
 # Gestion des fragments de contenu{#managing-content-fragments}
 
-<!--
 >[!CAUTION]
 >
->Certain features for Content Fragments will be released in early 2021.
+>L’API AEM GraphQL pour la Diffusion Fragments de contenu est disponible sur demande.
 >
->The related documentation is already available for preview purposes.
->
->Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
--->
-
->[!CAUTION]
->
->L’AEM API GraphQL, pour Content Fragment Diffusion, sera disponible début 2021.
->
->La documentation correspondante est déjà disponible à des fins de prévisualisation.
+>Contactez le [support Adobe](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support) pour activer l&#39;API pour votre AEM en tant que programme Cloud Service.
 
 Les fragments de contenu sont stockés en tant que **Ressources**, et ils sont donc principalement gérés par l’intermédiaire de la console **Ressources**.
 
