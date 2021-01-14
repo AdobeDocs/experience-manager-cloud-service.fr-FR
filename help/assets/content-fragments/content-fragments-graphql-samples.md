@@ -2,9 +2,9 @@
 title: Apprendre à utiliser GraphQL avec AEM - Exemple de contenu et de Requêtes
 description: Apprendre à utiliser GraphQL avec AEM - Exemple de contenu et de Requêtes.
 translation-type: tm+mt
-source-git-commit: 46e179faa7875c4b3e9da30356d2b82d4b25b130
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1298'
 ht-degree: 6%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->L’AEM API GraphQL, pour Content Fragment Diffusion, sera disponible début 2021.
+>L’API AEM GraphQL pour la Diffusion Fragments de contenu est disponible sur demande.
 >
->La documentation correspondante est déjà disponible à des fins de prévisualisation.
+>Contactez le [support Adobe](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support) pour activer l&#39;API pour votre AEM en tant que programme Cloud Service.
 
 Pour commencer à utiliser les requêtes GraphQL et comment elles fonctionnent avec AEM Content Fragments, vous pouvez consulter quelques exemples pratiques.
 
