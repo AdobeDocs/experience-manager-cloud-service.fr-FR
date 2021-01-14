@@ -2,9 +2,9 @@
 title: Diffusion de contenu à l’aide de fragments de contenu avec le Adobe Experience Manager comme API GraphQL Cloud Service
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) en tant que Cloud Service avec l’API AEM GraphQL pour la Diffusion de contenu sans en-tête.
 translation-type: tm+mt
-source-git-commit: 1e9596fb12a38f5c4c6e15d7c33af86e59e76083
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '2491'
+source-wordcount: '2506'
 ht-degree: 2%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->L’AEM API GraphQL, pour Content Fragment Diffusion, sera disponible début 2021.
+>L’API AEM GraphQL pour la Diffusion Fragments de contenu est disponible sur demande.
 >
->La documentation correspondante est déjà disponible à des fins de prévisualisation.
+>Contactez le [support Adobe](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support) pour activer l&#39;API pour votre AEM en tant que programme Cloud Service.
 
 L’API Adobe Experience Manager en tant que Cloud Service (AEM) GraphQL utilisée avec Content Fragments repose principalement sur l’API GraphQL Open Source standard.
 
