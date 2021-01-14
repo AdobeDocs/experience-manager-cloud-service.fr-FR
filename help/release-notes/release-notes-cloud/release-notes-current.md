@@ -2,10 +2,10 @@
 title: Notes de mise à jour actuelles de  [!DNL Adobe Experience Manager] en tant que Cloud Service.
 description: Notes de mise à jour actuelles de  [!DNL Adobe Experience Manager] en tant que Cloud Service.
 translation-type: tm+mt
-source-git-commit: cfe49fe414f387c660259de540af0cc26ef3951f
+source-git-commit: a09377df02225e9ad58ea4a8a0671fc40bd7d703
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 17%
+source-wordcount: '692'
+ht-degree: 14%
 
 ---
 
@@ -45,21 +45,15 @@ La version suivante (2021.1.0) sera publiée le 28 janvier 2021.
 
 ### Date de publication {#release-date-cm}
 
-La date de publication de Cloud Manager en tant que Cloud Service 2020.12.0 est le 10 décembre 2020.
-
-### Nouveautés de [!DNL Cloud Manager] {#what-is-new-cm}
-
-* Gestion en libre-service des [certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) et [noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
-
-* Gestion en libre-service des [Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
-
-* La page de détails **Environnement** mise à jour permet désormais aux utilisateurs de gérer les noms de domaine personnalisés et les Listes autorisées IP sur leurs environnements.
+La date de publication de Cloud Manager en tant que Cloud Service 2021.1.0 est le 14 janvier 2021.
 
 ### Correctifs {#bug-fixes-cloud-manager}
 
-* Certaines occurrences d’échecs au stade de l’analyse du code sans fournir de résultats ont été corrigées.
+* L’instance de production de ressources peut, à l’occasion, afficher l’état du portail de la marque sur la page de détails **Environnements** sous la forme *En attente* sans permettre à l’utilisateur d’effectuer une action.
 
-* La carte d&#39;Environnement n&#39;affichait pas systématiquement le bouton **Ajouter**.
+* Lors du déclenchement d’une désactivation de l’hibernation à partir de Cloud Manager, un message d’échec s’affichait parfois, même lorsque la désactivation de l’hibernation était correctement lancée.
+
+* Les rares cas d&#39;échec rencontrés lors de la création ou de la suppression d&#39;environnements ont été résolus.
 
 ## Outils de refactorisation du code {#code-refactoring-tools}
 
