@@ -2,10 +2,10 @@
 title: Fragments de contenu - Explorateur de configuration
 description: Découvrez comment activer certaines fonctionnalités de fragment de contenu dans l’explorateur de configuration.
 translation-type: tm+mt
-source-git-commit: c821baff208e563009e68f51700555ea1d516886
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 38%
+source-wordcount: '278'
+ht-degree: 36%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 38%
 
 >[!CAUTION]
 >
->L’AEM API GraphQL, pour Content Fragment Diffusion, sera disponible début 2021.
+>L’API AEM GraphQL pour la Diffusion Fragments de contenu est disponible sur demande.
 >
->La documentation correspondante est déjà disponible à des fins de prévisualisation.
+>Contactez le [support Adobe](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support) pour activer l&#39;API pour votre AEM en tant que programme Cloud Service.
 
 ## Activer la fonctionnalité de fragment de contenu pour votre instance {#enable-content-fragment-functionality-instance}
 
@@ -36,7 +36,7 @@ Pour activer la fonctionnalité de fragment de contenu, vous devez effectuer les
 
 ### Activation de la fonctionnalité de fragment de contenu dans l’explorateur de configuration {#enable-content-fragment-functionality-in-configuration-browser}
 
-Pour [utiliser certaines fonctionnalités de fragment de contenu](#creating-a-content-fragment-model), **vous &lt;a2/>devez d&#39;abord** les activer via l&#39;**navigateur de configuration** :
+Pour [utiliser certaines fonctionnalités de fragment de contenu](#creating-a-content-fragment-model), **vous devez d&#39;abord** les activer via l&#39;**navigateur de configuration** :
 
 >[!NOTE]
 >
