@@ -2,10 +2,10 @@
 title: Création de modèles de page
 description: Le modèle définit la structure de la page créée et, à l’aide de l’éditeur de modèles, les tâches de création et de gestion des modèles ne sont plus réservées aux développeurs.
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 7cceaf3942b60f13004d606de9a7e0408f528671
 workflow-type: tm+mt
-source-wordcount: '4551'
-ht-degree: 100%
+source-wordcount: '4600'
+ht-degree: 98%
 
 ---
 
@@ -88,7 +88,7 @@ Lors de la création d’un modèle modifiable :
 >
 >Les **modèles autorisés** sont souvent prédéfinis lors de la configuration initiale de votre site web.
 
->[!CAUTION]
+>[!TIP]
 >
 >Ne saisissez jamais d’informations qui doivent être internationalisées dans un modèle. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
@@ -126,6 +126,12 @@ Vous devez créer un dossier de modèles pour votre projet afin de contenir les 
    >[!NOTE]
    >
    >Lorsque vous créez un modèle, il est marqué comme **Brouillon** dans la console pour indiquer qu’il n’est pas encore actif.
+
+>[!NOTE]
+>
+>Les modèles sont des outils puissants pour rationaliser votre processus de création de page. Cependant, trop de modèles peuvent submerger les auteurs et rendre la création de page déroutante. Une bonne règle générale consiste à garder le nombre de modèles en dessous de 100.
+>
+>L&#39;Adobe ne recommande pas d&#39;avoir plus de 1000 modèles en raison des impacts potentiels sur le rendement.
 
 ### Définition des propriétés des modèles - Créateur de modèles   {#defining-template-properties-template-author}
 
