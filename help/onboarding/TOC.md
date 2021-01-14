@@ -4,10 +4,10 @@ user-guide-title: Intégration à AEM as a Cloud Service
 breadcrumb-title: Guide d’intégration
 user-guide-description: Ce guide résume la procédure à suivre pour commencer à utiliser Experience Manager as a Cloud Service, avec les informations d’accès et des informations importantes sur la protection des données.
 translation-type: tm+mt
-source-git-commit: 064ef219702e45695413dad21388b513627a3cf5
+source-git-commit: af15539007e264fc473d35529f0f8c41276ec01d
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 66%
+source-wordcount: '382'
+ht-degree: 67%
 
 ---
 
@@ -74,7 +74,8 @@ ht-degree: 66%
       + [Suppression d’une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [Vérification de l&#39;état d&#39;une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
    + Notes de mise à jour de Cloud Manager {#release-notes-cloud-manager}
-      + [Notes de mise à jour de la version actuelle (2020.12.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Notes de mise à jour de la version actuelle (2021.1.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Notes de mise à jour de la version 2020.12.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
       + [Notes de mise à jour de la version 2020.11.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
       + [Notes de mise à jour de la version 2020.10.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
       + [Notes de mise à jour de la version 2020.9.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
