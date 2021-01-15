@@ -2,7 +2,7 @@
 title: Génération de Jetons d'accès pour les API côté serveur
 description: Découvrez comment faciliter la communication entre un serveur tiers et AEM en tant que Cloud Service en générant un jeton JWT sécurisé
 translation-type: tm+mt
-source-git-commit: 7ca7cd458ea5152d56754bf1e6a500b2c04d0039
+source-git-commit: a8cb0c1bf2cdc741173e83ad00b6453931a8df18
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 0%
@@ -101,7 +101,9 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 ## Flux de développement {#developer-flow}
 
-Les développeurs voudront probablement tester en utilisant une instance de développement de leur application non-AEM (exécutée sur leur ordinateur portable ou hébergée) qui envoie des requêtes à un AEM de développement en tant qu’environnement de développement Cloud Service. Cependant, comme les développeurs n’ont pas nécessairement accès au rôle d’administrateur à l’AEM en tant qu’environnement de développement Cloud Service, nous ne pouvons pas supposer qu’ils peuvent générer le porteur JWT décrit dans le flux serveur à serveur régulier. Ainsi, nous fournissons un mécanisme permettant à un développeur de générer directement un jeton d&#39;accès qui peut être utilisé dans les demandes à AEM en tant qu&#39;environnements Cloud Service auxquels ils ont accès. Pour plus d&#39;informations sur les autorisations requises pour utiliser l&#39;AEM en tant que console de développement Cloud Service, consultez la [documentation destinée aux développeurs](/help/implementing/developing/introduction/development-guidelines.md).
+Les développeurs voudront probablement tester en utilisant une instance de développement de leur application non-AEM (exécutée sur leur ordinateur portable ou hébergée) qui envoie des requêtes à un AEM de développement en tant qu’environnement de développement Cloud Service. Cependant, comme les développeurs n’ont pas nécessairement accès au rôle d’administrateur à l’AEM en tant qu’environnement de développement Cloud Service, nous ne pouvons pas supposer qu’ils peuvent générer le porteur JWT décrit dans le flux serveur à serveur régulier. Ainsi, nous fournissons un mécanisme permettant à un développeur de générer directement un jeton d&#39;accès qui peut être utilisé dans les demandes à AEM en tant qu&#39;environnements Cloud Service auxquels ils ont accès.
+
+Pour plus d&#39;informations sur les autorisations requises pour utiliser l&#39;AEM en tant que console de développement Cloud Service, consultez la [documentation destinée aux développeurs](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console).
 
 >[!NOTE]
 >
