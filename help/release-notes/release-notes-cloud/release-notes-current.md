@@ -2,7 +2,7 @@
 title: Notes de mise à jour actuelles de  [!DNL Adobe Experience Manager] en tant que Cloud Service.
 description: Notes de mise à jour actuelles de  [!DNL Adobe Experience Manager] en tant que Cloud Service.
 translation-type: tm+mt
-source-git-commit: a09377df02225e9ad58ea4a8a0671fc40bd7d703
+source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 14%
@@ -84,4 +84,3 @@ La date de publication de l’outil de transfert de contenu v1.1.20 est le 8 jan
 * L’état de l’interface utilisateur de l’outil de transfert de contenu (CTT) pour un jeu de migration n’était pas conservé et modifié après une période d’inactivité. Ce problème a été résolu.
 * L&#39;option permettant d&#39;accéder aux journaux de vue était désactivée si les journaux n&#39;étaient pas disponibles. Ce problème a été corrigé et un message a été ajouté pour informer l’utilisateur de l’absence de journaux.
 * L’état de l’interface utilisateur de l’outil de transfert de contenu affichait ÉCHOUÉ lorsque l’utilisateur arrêtait une assimilation. Ce problème a été corrigé pour afficher à la place *STOPPED*.
-
