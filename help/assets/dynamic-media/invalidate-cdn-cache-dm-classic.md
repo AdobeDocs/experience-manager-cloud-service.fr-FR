@@ -2,10 +2,10 @@
 title: Invalidation du cache de réseau CDN par le biais de Dynamic Media Classic
 description: L’invalidation du contenu de réseau de diffusion de continu (CDN) en cache vous permet de mettre à jour rapidement les ressources diffusées par Dynamic Media, au lieu d’attendre l’expiration du cache.
 translation-type: tm+mt
-source-git-commit: 7dee751f0b0e059bda7cfdf3f524bdc4c75de91b
+source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 100%
+source-wordcount: '663'
+ht-degree: 94%
 
 ---
 
@@ -22,15 +22,9 @@ Voir aussi [Présentation du cache dans Dynamic Media Classic](https://helpx.a
 
 **Pour invalider votre cache de réseau CDN au moyen de Dynamic Media Classic :**
 
-1. Utilisez l’une des méthodes suivantes :
+1. Ouvrez l&#39;[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous à votre compte.
 
-   * Dans votre navigateur web, connectez-vous à votre compte Dynamic Media Classic :
-
-      [https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html)
-
-      Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
-
-   * Ouvrez l’application Dynamic Media Classic, puis connectez-vous à votre compte.
+   Vos informations d’identification et de connexion ont été fournies par l’Adobe au moment de la mise en service. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
 
 1.  Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**.
 1. Recherchez la zone de texte **[!UICONTROL Modèle d’invalidation sur le réseau de diffusion de contenu]** dans la section Serveurs de la page Paramètres généraux de l’application.
