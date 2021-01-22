@@ -102,7 +102,7 @@ Fragments de contenu:
 
 ### Modèles de fragment de contenu {#content-fragments-models}
 
-[Modèles de fragments de contenu](/help/assets/content-fragments/content-fragments-models.md) :
+[Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) :
 
 * Fournissez les types de données et les champs requis pour GraphQL. Ils s&#39;assurent que votre application ne demande que ce qui est possible et reçoit ce qui est attendu.
 
