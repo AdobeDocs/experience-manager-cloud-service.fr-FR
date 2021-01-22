@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1c51560886515e092680c23db3e128758dcd7d99
 workflow-type: tm+mt
 source-wordcount: '328'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
@@ -25,7 +25,7 @@ Les sections suivantes vous aideront à déterminer quel type d&#39;enregistreme
 
 Un enregistrement Nom canonique ou `CNAME` est un type d&#39;enregistrement DNS qui mappe un nom d&#39;alias à un nom de domaine canonique ou vrai. Les enregistrements CNAME sont généralement utilisés pour mapper un sous-domaine tel que `www.example.com` au domaine hébergeant le contenu de ce sous-domaine.
 
-Connectez-vous à votre serveur d’enregistrement de domaine et créez un enregistrement CNAME pour pointer votre nom de domaine personnalisé vers la cible, comme indiqué ci-dessous :
+Connectez-vous à votre bureau d’enregistrement de domaines et créez un enregistrement CNAME pour faire pointer votre nom de domaine personnalisé vers la cible, comme indiqué ci-dessous :
 
 | CNAME | Point de nom de domaine personnalisé vers la Cible |
 |--- |--- |
