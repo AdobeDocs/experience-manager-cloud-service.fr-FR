@@ -42,7 +42,7 @@ Cette pagination unique décrit l&#39;approche échelonnée recommandée pour le
 
 <br>
 
-## Voyage du développeur à Adobe Experience Manager en tant que Cloud Service {#developer-journey}
+## Parcours de développement à Adobe Experience Manager en tant que Cloud Service {#developer-journey}
 
 ### Développement
 
@@ -122,7 +122,7 @@ La figure ci-dessous est une représentation graphique du parcours recommandé d
 
 ### Planification
 
-Avant de commencer votre voyage de transition vers le Cloud Service, vous devez vous familiariser avec le Experience Manager en tant que Cloud Service et examiner les modifications notables qui y ont été apportées et examiner également les fonctions qui ont été remplacées ou abandonnées.
+Avant de commencer votre parcours de transition au Cloud Service, vous devez vous familiariser avec le Experience Manager en tant que Cloud Service et examiner les modifications notables qui y ont été apportées, ainsi que les fonctions qui ont été remplacées ou abandonnées.
 
 <table>
 <tr>
