@@ -26,15 +26,12 @@ Il est recommandé d’utiliser les composants principaux.
 >[!CAUTION]
 >
 >* **Si vous n’avez pas besoin des [services avancés](#definition-of-advanced-services-that-need-configuration)** décrits ci-dessous, vous pouvez ignorer cette configuration.
-   >
-   >
-* **Lorsque vous étendez ou utilisez les composants prêts à l’emploi**, il n’est pas recommandé de modifier la configuration OSGi.
-   >
-   >
-* **Vous pouvez créer de A à Z un composant n’utilisant que l’API de fragments de contenu, sans services avancés**. Cependant, dans ce cas, vous devrez développer votre composant de sorte qu’il traite le traitement approprié.
 >
+>* **Lorsque vous étendez ou utilisez les composants prêts à l’emploi**, il n’est pas recommandé de modifier la configuration OSGi.
 >
-Il est donc recommandé d’utiliser les composants principaux.
+>* **Vous pouvez créer de A à Z un composant n’utilisant que l’API de fragments de contenu, sans services avancés**. Cependant, dans ce cas, vous devrez développer votre composant de sorte qu’il traite le traitement approprié.
+>
+>Il est donc recommandé d’utiliser les composants principaux.
 
 ## Définition des services avancés nécessitant une configuration {#definition-of-advanced-services-that-need-configuration}
 
