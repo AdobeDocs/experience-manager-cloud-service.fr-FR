@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de mappage des utilisateurs
 description: Utilisation de l’outil de mappage des utilisateurs
 translation-type: tm+mt
-source-git-commit: 664c278494a5ac88362b994946060ab3baa846d8
+source-git-commit: 410b7900981596590fa80b286b40a965700f108e
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 7%
+source-wordcount: '750'
+ht-degree: 6%
 
 ---
 
@@ -42,3 +42,39 @@ Procédez comme suit pour configurer ce paramètre :
 1. Générer une paire de clés ou Télécharger une clé publique (rsa n&#39;est pas bon)
 1. Générez un jeton d&#39;accès (ou jeton JWT ou jeton porteur).
 1. Enregistrez toutes ces informations (ID client, clé secrète client, ID de compte technique, adresse électronique du compte technique, ID d’organisation, Jeton d&#39;accès) dans un endroit sûr.
+
+## Interface utilisateur {#user-interface}
+
+L’outil de mappage utilisateur est intégré à l’outil de transfert de contenu. Vous pouvez télécharger l&#39;outil de transfert de contenu à partir du portail de distribution de logiciels. Pour plus d’informations sur la dernière version, consultez les Notes de mise à jour.
+
+1. Sélectionnez Sélectionner le Adobe Experience Manager et accédez aux outils -> **Opérations** -> **Transfert de contenu**.
+1. Cliquez sur **Créer une configuration de mappage utilisateur**.
+
+   >[!NOTE]
+   >Si vous ignorez cette étape, le mappage des utilisateurs et des groupes sera ignoré pendant la phase d’Extraction.
+
+   Renseignez les champs de la configuration de l’API User Management comme décrit ci-dessous :
+
+   * **ID** d&#39;entreprise : Saisissez l’ID d’organisation IMS pour l’organisation que les utilisateurs sont en train de migrer.
+
+      >[!NOTE]
+      >Pour obtenir l’ID d’organisation, connectez-vous au [Admin Console](https://adminconsole.adobe.com/) et choisissez votre organisation (dans la zone supérieure droite) si vous appartenez à plusieurs organisations. L’ID d’organisation se trouve dans l’URL de cette page, au format `xx@AdobeOrg`, où xx correspond à l’ID d’organisation IMS.  Vous pouvez également trouver l’ID d’organisation dans la [Adobe Developer Console](https://console.adobe.io) page où vous générez le Jeton d&#39;accès.
+
+   * **ID** client : Saisissez l’ID client que vous avez enregistré à l’étape de configuration.
+
+   * **jeton d&#39;accès** : Entrez le Jeton d&#39;accès que vous avez enregistré à partir de l&#39;étape de configuration
+
+      >[!NOTE]
+      >Le Jeton d&#39;accès arrive à expiration toutes les 24 heures et il faut en créer un nouveau. Pour créer un jeton, revenez dans [Adobe Developer Console](https://console.adobe.io), choisissez votre projet, cliquez sur User Management API et collez la même clé privée dans la zone.
+
+1. Après avoir saisi les informations ci-dessus, cliquez sur Enregistrer.
+
+1. Créez une visionneuse de migration en cliquant sur Créer une visionneuse de migration et en renseignant les champs, puis en cliquant sur Enregistrer. Pour plus d’informations, voir Exécution de l’outil de transfert de contenu.
+
+   >[!NOTE]
+   >Par défaut, l’option bascule pour inclure le mappage des utilisateurs à partir des utilisateurs et groupes IMS est ACTIVÉE. Avec ce paramètre, lorsque l’Extraction est effectuée sur ce jeu de migration, l’outil de mappage utilisateur s’exécute dans le cadre de la phase d’Extraction. Il s’agit de la méthode recommandée pour exécuter la phase d’Extraction de l’outil de transfert de contenu. Si cette bascule est désactivée et/ou si la configuration de mappage des utilisateurs n’est pas créée, le mappage des utilisateurs et des groupes est ignoré pendant la phase d’Extraction.
+
+1. Pour exécuter la phase d&#39;Extraction, reportez-vous à la section [Exécution de l&#39;outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool).
+
+
+
