@@ -2,10 +2,10 @@
 title: Réseau de diffusion de contenu dans AEM as a Cloud Service
 description: Réseau de diffusion de contenu dans AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 40119f7b3bdf36af668b79afbcb2802a0b2a6033
+source-git-commit: 8ca8944d37c1a10782597ec30c16b0151b5cd717
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 84%
+source-wordcount: '567'
+ht-degree: 68%
 
 ---
 
@@ -51,3 +51,24 @@ Avant d’accepter le trafic en direct, vous devez vérifier auprès du service 
 Les performances peuvent diminuer en raison du saut supplémentaire, bien que les sauts entre le réseau de diffusion du client et celui géré par Adobe puissent être efficaces.
 
 Notez que cette configuration CDN client est prise en charge pour le niveau de publication, mais pas devant le niveau de création.
+
+## En-têtes de géolocalisation {#geo-headers}
+
+Le CDN géré par l’Adobe ajoute des en-têtes à chaque requête avec :
+
+* code de pays : `x-aem-client-country`
+* code continent : `x-aem-client-continent`
+
+Les valeurs des codes de pays sont les codes Alpha-2 décrits [ici](https://en.wikipedia.org/wiki/ISO_3166-1).
+
+Les valeurs des codes du continent sont les suivantes :
+
+* Afrique du Sud
+* Antarctique
+* AS Asia
+* Europe
+* Amérique du Nord
+* Océanie
+* SA Amérique du Sud
+
+Ces informations peuvent s’avérer utiles pour les cas d’utilisation, tels que la redirection vers une URL différente en fonction de l’origine (pays) de la demande. Bien que, dans ce cas d’utilisation spécifique, la redirection ne doit pas être mise en cache car elle varie. Si nécessaire, vous pouvez utiliser `Cache-Control: private` pour empêcher la mise en cache. Voir aussi [Mise en cache](/help/implementing/dispatcher/caching.md#html-text).
