@@ -3,10 +3,10 @@ title: 'Gestion des ressources vidéo '
 description: Charger, prévisualiser, annoter et publier des ressources vidéo dans [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
+source-git-commit: deab2183447e64e8a98f3072ceab2ef2216c4528
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 80%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -53,11 +53,11 @@ Pour traiter des ressources à l’aide d’un profil de traitement, ajoutez un 
 ## Bonnes pratiques et restrictions {#tips-limitations}
 
 * Sans licence [!DNL Dynamic Media], vous ne pouvez traiter que les fichiers MP4 à l’aide de profils de traitement.
-* Lorsque vous transcodez des fichiers MP4 à l’aide de Profils de traitement, les instructions et restrictions suivantes s’appliquent :
+* Lors du transcodage de fichiers MP4 à l’aide de Profils de traitement, les instructions et restrictions suivantes s’appliquent :
 
    * Les fichiers Apple ProRes ne peuvent transcoder qu’à une résolution maximale de 1080p.
    * Si le fichier source a un débit > 200 Mbit/s, vous ne pouvez transcoder que jusqu’à une résolution maximale de 1080p.
-   * Si la cadence source >= 60 ips, la taille maximale du fichier source que vous pouvez utiliser est
+   * Si la cadence source >=60 ips alors, la taille maximale du fichier source que vous pouvez utiliser est,
 
       * 400 Mo pour un transcodage de 4 k.
       * 800 Mo pour le transcodage 1080p.
