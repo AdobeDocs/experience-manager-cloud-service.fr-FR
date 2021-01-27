@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de mappage des utilisateurs
 description: Utilisation de l’outil de mappage des utilisateurs
 translation-type: tm+mt
-source-git-commit: a5129eac9f8032de5931b75c83eea62e480c1847
+source-git-commit: dcba197624b6a7ae668b11f43f60b13a9da0080e
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 6%
+source-wordcount: '757'
+ht-degree: 5%
 
 ---
 
@@ -35,17 +35,17 @@ L’outil de mappage utilisateur utilise une API qui lui permet de rechercher le
 Procédez comme suit pour configurer ce paramètre :
 
 1. Accédez à [Adobe Developer Console](https://console.adobe.io) à l&#39;aide de votre Adobe ID.
-1. Créer un projet ou ouvrir un projet existant
-1. Ajouter une API
-1. Choisir l’API de gestion des utilisateurs
-1. Création d’informations d’identification JWT
-1. Générer une paire de clés ou Télécharger une clé publique (rsa n&#39;est pas bon)
+1. Créez un projet ou ouvrez un projet existant.
+1. Ajoutez une API.
+1. Sélectionnez User Management API.
+1. Créez des informations d’identification JWT.
+1. Générez une paire de clés ou Téléchargez une clé publique (rsa ne convient pas).
 1. Générez un jeton d&#39;accès (ou jeton JWT ou jeton porteur).
-1. Enregistrez toutes ces informations (ID client, clé secrète client, ID de compte technique, adresse électronique du compte technique, ID d’organisation, Jeton d&#39;accès) dans un endroit sûr.
+1. Enregistrez en toute sécurité toutes ces informations, telles que **ID client**, **Secret client**, **ID de compte technique**, **Adresse électronique du compte technique**, **ID d&#39;organisation** et **Jeton d&#39;accès**.
 
 ## Interface utilisateur {#user-interface}
 
-L’outil de mappage utilisateur est intégré à l’outil de transfert de contenu. Vous pouvez télécharger l&#39;outil de transfert de contenu à partir du portail de distribution de logiciels. Pour plus d’informations sur la dernière version, consultez les Notes de mise à jour.
+L’outil de mappage utilisateur est intégré à l’outil de transfert de contenu. Vous pouvez télécharger l&#39;outil de transfert de contenu à partir du portail de distribution de logiciels. Pour plus d&#39;informations sur la dernière version, consultez les [Notes de mise à jour actuelles](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 1. Sélectionnez Sélectionner le Adobe Experience Manager et accédez aux outils -> **Opérations** -> **Transfert de contenu**.
 1. Cliquez sur **Créer une configuration de mappage utilisateur**.
