@@ -2,9 +2,9 @@
 title: Utilisation de l’outil de mappage des utilisateurs
 description: Utilisation de l’outil de mappage des utilisateurs
 translation-type: tm+mt
-source-git-commit: 410b7900981596590fa80b286b40a965700f108e
+source-git-commit: a5129eac9f8032de5931b75c83eea62e480c1847
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '754'
 ht-degree: 6%
 
 ---
@@ -53,7 +53,11 @@ L’outil de mappage utilisateur est intégré à l’outil de transfert de cont
    >[!NOTE]
    >Si vous ignorez cette étape, le mappage des utilisateurs et des groupes sera ignoré pendant la phase d’Extraction.
 
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-1.png)
+
    Renseignez les champs de la configuration de l’API User Management comme décrit ci-dessous :
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-2.png)
 
    * **ID** d&#39;entreprise : Saisissez l’ID d’organisation IMS pour l’organisation que les utilisateurs sont en train de migrer.
 
@@ -67,12 +71,17 @@ L’outil de mappage utilisateur est intégré à l’outil de transfert de cont
       >[!NOTE]
       >Le Jeton d&#39;accès arrive à expiration toutes les 24 heures et il faut en créer un nouveau. Pour créer un jeton, revenez dans [Adobe Developer Console](https://console.adobe.io), choisissez votre projet, cliquez sur User Management API et collez la même clé privée dans la zone.
 
-1. Après avoir saisi les informations ci-dessus, cliquez sur Enregistrer.
+1. Après avoir saisi les informations ci-dessus, cliquez sur **Enregistrer**.
 
-1. Créez une visionneuse de migration en cliquant sur Créer une visionneuse de migration et en renseignant les champs, puis en cliquant sur Enregistrer. Pour plus d’informations, voir Exécution de l’outil de transfert de contenu.
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-3.png)
+
+
+1. Créez un jeu de migration en cliquant sur **Créer un jeu de migration** et en renseignant les champs, puis en cliquant sur **Enregistrer**. Pour plus d’informations, voir Exécution de l’outil de transfert de contenu.
 
    >[!NOTE]
    >Par défaut, l’option bascule pour inclure le mappage des utilisateurs à partir des utilisateurs et groupes IMS est ACTIVÉE. Avec ce paramètre, lorsque l’Extraction est effectuée sur ce jeu de migration, l’outil de mappage utilisateur s’exécute dans le cadre de la phase d’Extraction. Il s’agit de la méthode recommandée pour exécuter la phase d’Extraction de l’outil de transfert de contenu. Si cette bascule est désactivée et/ou si la configuration de mappage des utilisateurs n’est pas créée, le mappage des utilisateurs et des groupes est ignoré pendant la phase d’Extraction.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
 1. Pour exécuter la phase d&#39;Extraction, reportez-vous à la section [Exécution de l&#39;outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool).
 
