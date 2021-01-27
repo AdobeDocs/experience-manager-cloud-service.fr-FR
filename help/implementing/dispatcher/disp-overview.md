@@ -2,7 +2,7 @@
 title: Dispatcher en mode cloud
 description: 'Dispatcher en mode cloud '
 translation-type: tm+mt
-source-git-commit: 38a589297caf3b28c7be569a819bd104a5079066
+source-git-commit: 4d58ccf972f5bf2a48b228755f93166c17bcb4b0
 workflow-type: tm+mt
 source-wordcount: '4050'
 ht-degree: 88%
@@ -195,15 +195,15 @@ Les sections ci-dessous décrivent comment valider localement la configuration a
 
 L’outil de validation est disponible dans le SDK à l’emplacement `bin/validator` sous forme de fichier binaire Mac OS, Linux ou Windows, ce qui permet aux clients d’exécuter la même validation que celle effectuée par Cloud Manager lors de la création et du déploiement d’une version.
 
-Il est appelé comme suit : `validator full [-d folder] [-w whitelist] zip-file | src folder`
+Il est appelé comme suit : `validator full [-d folder] [-w allowlist] zip-file | src folder`
 
 L&#39;outil vérifie que la configuration du répartiteur utilise les directives appropriées prises en charge par AEM en tant que service Cloud en analysant tous les fichiers avec le modèle `conf.d/enabled_vhosts/*.vhost`. Les directives autorisées dans les fichiers de configuration Apache peuvent être répertoriées en exécutant la commande de liste autorisée du programme de validation :
 
 ```
-$ validator whitelist
+$ validator allowlist
 Cloud manager validator 2.0.4
  
-Whitelisted directives:
+Allowlisted directives:
   <Directory>
   ...
   
@@ -249,7 +249,7 @@ Lorsqu’il est exécuté sur votre artefact maven ou votre sous-répertoire `di
 ```
 $ validator full dispatcher/src
 Cloud manager validator 1.0.4
-2019/06/19 15:41:37 Apache configuration uses non-whitelisted directives:
+2019/06/19 15:41:37 Apache configuration uses non-allowlisted directives:
   conf.d/enabled_vhosts/aem_publish.vhost:46: LogLevel
 2019/06/19 15:41:37 Dispatcher configuration validation failed:
   conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
