@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de mappage des utilisateurs
 description: Utilisation de l’outil de mappage des utilisateurs
 translation-type: tm+mt
-source-git-commit: d582b752848b2b8b5a5955eec08b04fbbc3a53fa
+source-git-commit: 2ceaaa4db35ab793392ae3644db9b862cbf9af2b
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 5%
+source-wordcount: '783'
+ht-degree: 6%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 Dans le cadre du parcours de transition à Adobe Experience Manager (AEM) en tant que Cloud Service, vous devez déplacer les utilisateurs et les groupes de votre système AEM existant vers l&#39;AEM en tant que Cloud Service. Pour ce faire, utilisez l’outil de transfert de contenu.
 
-L’un des changements majeurs apportés à AEM as a Cloud Service est l’utilisation entièrement intégrée des Adobe ID pour l’accès au niveau création.  Pour ce faire, il est nécessaire d’utiliser Adobe Admin Console pour la gestion des utilisateurs et des groupes d’utilisateurs. Les informations utilisateur-profil sont centralisées dans l’Adobe Identity Management System (IMS), qui permet l’authentification unique dans toutes les applications de cloud d’Adobes. Pour plus de détails, reportez-vous à Identity Management. En raison de cette modification, les utilisateurs et groupes existants doivent être mappés à leurs ID IMS pour éviter que des utilisateurs et des groupes de duplicata ne soient associés à l’instance d’auteur du Cloud Service.
+L’un des changements majeurs apportés à AEM as a Cloud Service est l’utilisation entièrement intégrée des Adobe ID pour l’accès au niveau création.  Pour ce faire, il faut utiliser le [Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html) pour gérer les utilisateurs et les groupes d’utilisateurs. Les informations utilisateur-profil sont centralisées dans l’Adobe Identity Management System (IMS), qui permet l’authentification unique dans toutes les applications de cloud d’Adobes. Pour plus d&#39;informations, consultez [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management). En raison de cette modification, les utilisateurs et groupes existants doivent être mappés à leurs ID IMS pour éviter que des utilisateurs et des groupes de duplicata ne soient associés à l’instance d’auteur du Cloud Service.
 
 ## Points importants {#important-considerations}
 
@@ -45,7 +45,7 @@ Suivez les étapes ci-dessous pour configurer ce paramètre :
 
 ## Interface utilisateur {#user-interface}
 
-L’outil de mappage utilisateur est intégré à l’outil de transfert de contenu. Vous pouvez télécharger l&#39;outil de transfert de contenu à partir du portail de distribution de logiciels. Pour plus d&#39;informations sur la dernière version, consultez les [Notes de mise à jour actuelles](/help/release-notes/release-notes-cloud/release-notes-current.md).
+L’outil de mappage utilisateur est intégré à l’outil de transfert de contenu. Vous pouvez télécharger l&#39;outil de transfert de contenu à partir de [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Pour plus d&#39;informations sur la dernière version, consultez les [Notes de mise à jour actuelles](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 1. Sélectionnez Sélectionner le Adobe Experience Manager et accédez aux outils -> **Opérations** -> **Transfert de contenu**.
 1. Cliquez sur **Créer une configuration de mappage utilisateur**.
