@@ -3,10 +3,10 @@ title: Configuration et utilisation des microservices de ressources
 description: Configurez et utilisez des microservices de ressources basés sur le cloud pour traiter des ressources à grande échelle.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
+source-git-commit: 57ae02b90d1e78e8a940b65d195bc2077feec2d2
 workflow-type: tm+mt
-source-wordcount: '2532'
-ht-degree: 93%
+source-wordcount: '2576'
+ht-degree: 88%
 
 ---
 
@@ -180,18 +180,18 @@ Pour vérifier que les ressources sont traitées, prévisualisez les rendus gén
 
 ## Workflows de post-traitement {#post-processing-workflows}
 
-S’il s’avère qu’un traitement supplémentaire des ressources est nécessaire, mais qu’il ne peut pas être effectué à l’aide des profils de traitement, des workflows de post-traitement peuvent être ajoutés à la configuration. Cela permet d’ajouter un traitement entièrement personnalisé en plus du traitement configurable à l’aide des microservices de ressources.
+Dans le cas où un traitement supplémentaire des actifs est nécessaire et ne peut pas être effectué à l’aide des profils de traitement, des workflows de post-traitement supplémentaires peuvent être ajoutés à la configuration. Cela permet d’ajouter un traitement entièrement personnalisé en plus du traitement configurable à l’aide des microservices de ressources.
 
-Les workflows de post-traitement, s’ils sont configurés, sont automatiquement exécutés par [!DNL Experience Manager] une fois le traitement des microservices terminé. Il n’est pas nécessaire d’ajouter manuellement des lanceurs de workflows pour les déclencher. Voici quelques exemples :
+Les workflows de post-traitement, s’ils sont configurés, sont automatiquement exécutés par [!DNL Experience Manager] une fois le traitement des microservices terminé. Il n’est pas nécessaire d’ajouter manuellement des lanceurs de processus pour déclencher les workflows. Voici quelques exemples :
 
 * Étapes du workflow personnalisé de traitement des ressources.
 * Intégrations pour ajouter des métadonnées ou des propriétés à des ressources provenant de systèmes externes (par exemple, des informations sur des produits ou des processus).
 * Traitement supplémentaire effectué par des services externes.
 
-L’ajout d’une configuration de workflow de post-traitement à Experience Manager comprend les étapes suivantes :
+Pour ajouter une configuration de processus de post-traitement à [!DNL Experience Manager], procédez comme suit :
 
-* Création d’un ou de plusieurs modèles de workflow. Les documents parlent de *modèles de workflow de post-traitement*, mais il s’agit de modèles de workflow Experience Manager standard.
-* Ajout d’étapes de workflow spécifiques à ces modèles. Les étapes sont exécutées sur les ressources en fonction d’une configuration de modèle de workflow.
+* Création d’un ou de plusieurs modèles de workflow. Ces modèles personnalisés sont appelés *modèles de processus de post-traitement* dans cette documentation. Il s’agit de modèles de flux de travaux [!DNL Experience Manager] standard.
+* Ajoutez les étapes de flux de travail requises à ces modèles. Passez en revue les étapes du processus par défaut et ajoutez toutes les étapes par défaut requises au processus personnalisé. Les étapes sont exécutées sur les ressources en fonction d’une configuration de modèle de workflow. Par exemple, si vous souhaitez que le balisage intelligent se produise automatiquement lors du transfert des ressources, ajoutez l’étape à votre modèle personnalisé de processus de post-traitement.
 * Ajoutez l’étape [!UICONTROL Processus terminé du workflow Ressource de mise à jour DAM] à la fin. En ajoutant cette étape, vous êtes certain que Experience Manager sait à quel moment le traitement se termine et la ressource peut être marquée comme traitée ; en d’autres termes, *Nouvelle* s’affiche sur la ressource.
 * Création d’une configuration pour le service d’exécution de workflow personnalisé, lequel permet de configurer l’exécution d’un modèle de workflow de post-traitement selon le chemin d’accès (emplacement du dossier) ou une expression régulière.
 
@@ -207,7 +207,7 @@ Assurez-vous que la dernière étape de chaque workflow de post-traitement est `
 
 Pour configurer les modèles du workflow de post-traitement à exécuter pour les ressources chargées ou mises à jour dans le système une fois le traitement des microservices de ressources terminé, il convient de configurer le service d’exécution de workflow personnalisé.
 
-Ce service (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) est un service OSGi qui propose deux options de configuration :
+L’instance Adobe CQ DAM Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) est un service OSGi et offre deux options de configuration :
 
 * Workflows de post-traitement par chemin d’accès (`postProcWorkflowsByPath`) : plusieurs modèles de workflow peuvent être répertoriés en fonction de différents chemins de référentiel. Les chemins d’accès et les modèles doivent être séparés par un signe « deux-points ». Les chemins de référentiel simples sont pris en charge et doivent être associés à un modèle de workflow dans le chemin d’accès `/var`. Par exemple : `/content/dam/my-brand:/var/workflow/models/my-workflow`.
 * Workflows de post-traitement par expression (`postProcWorkflowsByExpression`) : plusieurs modèles de workflows peuvent être répertoriés en fonction de différentes expressions régulières. Les expressions et les modèles doivent être séparés par un signe « deux-points ». L’expression régulière doit pointer directement vers le nœud Ressource et non vers l’un des rendus ou fichiers. Par exemple : `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
