@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de mappage des utilisateurs
 description: Utilisation de l’outil de mappage des utilisateurs
 translation-type: tm+mt
-source-git-commit: 2ceaaa4db35ab793392ae3644db9b862cbf9af2b
+source-git-commit: d1a944606a88a0afded94592676f14c0ba84e954
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 6%
+source-wordcount: '782'
+ht-degree: 8%
 
 ---
 
@@ -47,7 +47,7 @@ Suivez les étapes ci-dessous pour configurer ce paramètre :
 
 L’outil de mappage utilisateur est intégré à l’outil de transfert de contenu. Vous pouvez télécharger l&#39;outil de transfert de contenu à partir de [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Pour plus d&#39;informations sur la dernière version, consultez les [Notes de mise à jour actuelles](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-1. Sélectionnez Sélectionner le Adobe Experience Manager et accédez aux outils -> **Opérations** -> **Transfert de contenu**.
+1. Sélectionnez Adobe Experience Manager et accédez à Outils -> **Opérations** -> **Content Transfer** (Transfert de contenu).
 1. Cliquez sur **Créer une configuration de mappage utilisateur**.
 
    >[!NOTE]
