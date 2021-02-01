@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: 6446faf2ed936b8bcefd6b4192dbd99fb10aa41e
+source-git-commit: b4bc29dbea7a765ff41752d4b680cbbc3df51a0b
 workflow-type: tm+mt
-source-wordcount: '1915'
-ht-degree: 83%
+source-wordcount: '1906'
+ht-degree: 82%
 
 ---
 
@@ -28,9 +28,7 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * Le jeton d&#39;accès peut expirer périodiquement, soit après une période spécifique, soit après la mise à niveau de l’environnement Cloud Service. Si le jeton d&#39;accès a expiré, vous ne pourrez pas vous connecter à l’instance du Cloud Service et vous devrez récupérer le nouveau jeton d&#39;accès. L’icône d’état associée à un jeu de migration existant se transforme en nuage rouge et affiche un message lorsque vous le survolez.
 
-* Actuellement, la taille par défaut de MongoDB pour une instance AEM as a Cloud Service est de 32 Go. Pour une taille de banque de segments supérieure à 20 Go, envoyez un ticket d’assistance demandant à augmenter la taille de MongoDB.
-
-* Les utilisateurs et groupes transférés par l’outil de transfert de contenu sont uniquement ceux qui sont requis par le contenu pour satisfaire aux autorisations. Le processus *Extraction* copie l&#39;ensemble `/home` dans le jeu de migration et le processus *Ingestion* copie tous les utilisateurs et groupes référencés dans les listes de contrôle d&#39;accès du contenu migré.
+* Les utilisateurs et groupes transférés par l’outil de transfert de contenu sont uniquement ceux qui sont requis par le contenu pour satisfaire aux autorisations. Le processus *Extraction* copie l&#39;ensemble `/home` dans le jeu de migration et le processus *Ingestion* copie tous les utilisateurs et groupes référencés dans les listes de contrôle d&#39;accès du contenu migré. Pour mapper automatiquement les utilisateurs et les groupes existants à leurs ID IMS, reportez-vous à la section [Utilisation de l’outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
 
 * Pendant la phase d’extraction, l’outil de transfert de contenu est exécuté sur une instance source AEM active.
 
