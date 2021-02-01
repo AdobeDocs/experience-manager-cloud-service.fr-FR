@@ -2,10 +2,10 @@
 title: Notes de mise à jour actuelles de  [!DNL Adobe Experience Manager] en tant que Cloud Service.
 description: Notes de mise à jour actuelles de  [!DNL Adobe Experience Manager] en tant que Cloud Service.
 translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+source-git-commit: 1ac061dfc9773a1de0b1d5f8c427f8d770ca73fa
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 14%
+source-wordcount: '649'
+ht-degree: 15%
 
 ---
 
@@ -73,14 +73,10 @@ La date de publication de Cloud Manager en tant que Cloud Service 2021.1.0 est l
 
 ### Date de publication {#release-date-ctt}
 
-La date de publication de l’outil de transfert de contenu v1.1.20 est le 8 janvier 2021.
+La date de publication de l’outil de transfert de contenu v1.2.20 est le 01 février 2021.
 
 ### Nouveautés de [!DNL Content Transfer Tool] {#what-is-new-ctt}
 
-* Les utilisateurs peuvent désormais savoir si leur Jeton d&#39;accès a expiré en pointant vers l’icône d’état de l’interface utilisateur de l’outil de transfert de contenu (CTT). Ils seront également avertis dans l’interface utilisateur Détails du jeu de migration qu’ils ne peuvent pas se connecter à leur instance de Cloud Service.
-
-### Correctifs {#ctt-bug-fixes}
-
-* L’état de l’interface utilisateur de l’outil de transfert de contenu (CTT) pour un jeu de migration n’était pas conservé et modifié après une période d’inactivité. Ce problème a été résolu.
-* L&#39;option permettant d&#39;accéder aux journaux de vue était désactivée si les journaux n&#39;étaient pas disponibles. Ce problème a été corrigé et un message a été ajouté pour informer l’utilisateur de l’absence de journaux.
-* L’état de l’interface utilisateur de l’outil de transfert de contenu affichait ÉCHOUÉ lorsque l’utilisateur arrêtait une assimilation. Ce problème a été corrigé pour afficher à la place *STOPPED*.
+* Nouvelle fonctionnalité et interface utilisateur ajoutées à l’outil de transfert de contenu - Outil de mappage des utilisateurs. Cette fonctionnalité mappe automatiquement les utilisateurs et les groupes existants à leurs identifiants système Identity Management Adobe dans le cadre de l’activité de migration de contenu. Pour plus d&#39;informations, consultez [Utilisation de l&#39;outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html).
+* L’outil de transfert de contenu migre désormais tous les groupes et utilisateurs référencés dans le jeu de migration, y compris les enfants.
+* Les utilisateurs sont autorisés à sélectionner certains chemins sous `/etc` lors de la création de jeux de migration.
