@@ -2,10 +2,10 @@
 title: Présentation de l’outil de transfert de contenu
 description: Présentation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 60e236eadea8983fcf087b94ce908e55421214ae
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 100%
+source-wordcount: '674'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,11 @@ Le transfert de contenu comporte deux phases :
 
    Pour plus d’informations, voir [Processus d’extraction au cours du transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#extraction-process).
 
-2. **Ingestion** : l’ingestion désigne l’ingestion de contenu à partir du *jeu de migration* dans l’instance Cloud Service cible.
+>[!NOTE]
+>
+> Il est recommandé d’exécuter l’outil de mappage des utilisateurs dans le cadre de la phase d’Extraction. Pour plus d&#39;informations, consultez [Utilisation de l&#39;outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
+
+1. **Ingestion** : l’ingestion désigne l’ingestion de contenu à partir du *jeu de migration* dans l’instance Cloud Service cible.
 
    Pour plus d’informations, voir [Processus d’ingestion au cours du transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#ingestion-process).
 
