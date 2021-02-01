@@ -4,10 +4,10 @@ user-guide-title: Transition vers AEM as a Cloud Service
 breadcrumb-title: Guide de déplacement
 user-guide-description: Découvrez le parcours de transition vers Cloud Service.
 translation-type: tm+mt
-source-git-commit: 81e84ae3993321c210de917a9a9bcd17d32b2040
+source-git-commit: b729e3fe4ef572877ae185c37f30b9b1fc78fc2a
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 89%
+source-wordcount: '87'
+ht-degree: 85%
 
 ---
 
@@ -25,6 +25,7 @@ ht-degree: 89%
       + [Utilisation de l’analyseur des meilleures pratiques](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + Outil de transfert de contenu {#content-transfer-tool}
       + [Présentation](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
+      + [Utilisation de l’outil de mappage des utilisateurs](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
       + [Utilisation de l’outil de transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + Outils de refactorisation du code {#refactoring-tools}
    + [Expérience unifiée](/help/move-to-cloud-service/unified-experience.md)
