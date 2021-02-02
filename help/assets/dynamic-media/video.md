@@ -2,7 +2,7 @@
 title: Vidéo
 description: Découvrez comment utiliser la vidéo dans Dynamic Media.
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
 workflow-type: tm+mt
 source-wordcount: '9536'
 ht-degree: 98%
@@ -402,9 +402,9 @@ Supposons, par exemple, que la résolution de votre vidéo source soit équivale
 
 | Type de vidéo | Largeur x hauteur | Rapport de largeur | Rapport de hauteur |
 |--- |--- |--- |--- |
-| Source | 1 920 x 1 080 | 1 | 3 |
+| Source | 1 920 x 1 080 | 1 | 1 |
 | Codée | 960 x 540 | 2 | 2 |
-| Codée | 640 x 360 | 3 | 3 |
+| Codée | 640 x 360 | 3 | 1 |
 | Codée | 480 x 270 | 4 | 4 |
 
 ### Format de fichier vidéo codé {#encoded-video-file-format}
@@ -1058,7 +1058,7 @@ Le lecteur vidéo utilisé doit prendre en charge l’affichage des sous-titres.
 
 Dynamic Media peut convertir des fichiers de sous-titres au format JSON (JavaScript Object Notation). Cette conversion signifie que vous pouvez intégrer le texte JSON dans une page web sous forme de transcription masquée complète de la vidéo. Les moteurs de recherche peuvent ensuite analyser et indexer le contenu pour permettre de trouver plus facilement les vidéos et fournir aux utilisateurs des informations supplémentaires sur le contenu des vidéos.
 
-Voir [Diffusion de contenu statique (sans image)](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) pour plus d’informations sur l’utilisation de la fonction JSON dans une URL.
+Voir [Diffusion de contenu statique (sans image)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) pour plus d’informations sur l’utilisation de la fonction JSON dans une URL.
 
 **Pour ajouter des sous-titres à une vidéo:**
 
