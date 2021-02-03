@@ -2,21 +2,24 @@
 title: Apprendre à utiliser GraphQL avec AEM - Exemple de contenu et de Requêtes
 description: Apprendre à utiliser GraphQL avec AEM - Exemple de contenu et de Requêtes.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
 workflow-type: tm+mt
-source-wordcount: '1298'
-ht-degree: 6%
+source-wordcount: '1708'
+ht-degree: 5%
 
 ---
 
 
 # Apprendre à utiliser GraphQL avec AEM - Exemple de contenu et de Requêtes {#learn-graphql-with-aem-sample-content-queries}
 
->[!CAUTION]
+>[!NOTE]
 >
->L’API AEM GraphQL pour la Diffusion Fragments de contenu est disponible sur demande.
+>Cette page doit être lue avec :
 >
->Contactez le [support Adobe](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support) pour activer l&#39;API pour votre AEM en tant que programme Cloud Service.
+>* [Fragments de contenu](/help/assets/content-fragments/content-fragments.md)
+>* [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
+>* [aem API GraphQL à utiliser avec les fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md)
+
 
 Pour commencer à utiliser les requêtes GraphQL et comment elles fonctionnent avec AEM Content Fragments, vous pouvez consulter quelques exemples pratiques.
 
@@ -26,7 +29,7 @@ Pour obtenir de l’aide sur ce point, voir :
 
 * Et certains [exemples de requêtes GraphQL](#graphql-sample-queries), basés sur l’exemple de structure de fragments de contenu (modèles de fragments de contenu et fragments de contenu associés).
 
-## GraphQL pour AEM - Certaines extensions {#graphql-some-extensions}
+## GraphQL pour AEM - Résumé des extensions {#graphql-extensions}
 
 Le fonctionnement de base des requêtes avec GraphQL pour AEM adhère à la spécification GraphQL standard. Pour les requêtes GraphQL avec AEM il existe quelques extensions :
 
@@ -34,148 +37,59 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM adhère à la spé
    * utiliser le nom du modèle ; eg ville
 
 * Si vous prévoyez une liste de résultats :
-   * ajouter &quot;Liste&quot; au nom du modèle ; par exemple, `cityList`
+   * ajouter `List` au nom du modèle ; par exemple, `cityList`
+   * Voir [Exemple de Requête - Toutes les informations sur toutes les villes](#sample-all-information-all-cities)
 
 * Si vous souhaitez utiliser un OU logique :
-   * utiliser &quot;_logOp : OR&quot;
+   * use ` _logOp: OR`
+   * Voir [Exemple de Requête - Toutes les personnes qui portent le nom &quot;Tâches&quot; ou &quot;Smith&quot;](#sample-all-persons-jobs-smith)
 
 * L&#39;opérateur logique ET existe également, mais est (souvent) implicite
 
 * Vous pouvez requête sur les noms de champ qui correspondent aux champs du modèle de fragment de contenu.
+   * Voir [Exemple de Requête - Détails complets du PDG et des employés d&#39;une Société](#sample-full-details-company-ceos-employees)
 
 * Outre les champs de votre modèle, il existe certains champs générés par le système (précédés d’un trait de soulignement) :
 
    * Pour le contenu :
 
       * `_locale` : révéler la langue ; basé sur Language Manager
-
+         * Voir [Exemple de Requête pour plusieurs fragments de contenu d’un paramètre régional donné](#sample-wknd-multiple-fragments-given-locale)
       * `_metadata` : pour afficher les métadonnées de votre fragment
-
+         * Voir [Exemple de Requête de métadonnées - Liste des métadonnées pour les prix intitulés GB](#sample-metadata-awards-gb)
+      * `_model` : autoriser l’interrogation d’un modèle de fragment de contenu (chemin et titre)
+         * Voir [Exemple de Requête pour un modèle de fragment de contenu à partir d&#39;un modèle](#sample-wknd-content-fragment-model-from-model)
       * `_path` : le chemin d’accès à votre gestion de contenu dans le référentiel.
-
-      * `_references` : révéler les références ; y compris les références intégrées dans l’éditeur de texte enrichi
-
-      * `_variations` : pour afficher des variations spécifiques dans votre fragment de contenu
+         * Voir [Exemple de Requête - Un fragment de ville spécifique unique](#sample-single-specific-city-fragment)
+      * `_reference` : révéler les références ; y compris les références intégrées dans l’éditeur de texte enrichi
+         * Voir [Exemple de Requête pour plusieurs fragments de contenu avec des références prérécupérées](#sample-wknd-multiple-fragments-prefetched-references)
+      * `_variation` : pour afficher des variations spécifiques dans votre fragment de contenu
+         * Voir [Exemple de Requête - Toutes les villes avec une variante nommée](#sample-cities-named-variation)
    * Et les opérations :
 
-      * `_operator` : appliquer des opérateurs spécifiques ;  `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`,
-
+      * `_operator` : appliquer des opérateurs spécifiques ;  `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`
+         * Voir [Exemple de Requête - Toutes les personnes qui n&#39;ont pas de nom &quot;Tâches&quot;](#sample-all-persons-not-jobs)
       * `_apply` : d&#39;appliquer des conditions spécifiques ; par exemple,   `AT_LEAST_ONCE`
-
+         * Voir [Exemple de Requête - Filtrer sur un tableau avec un élément qui doit se produire au moins une fois](#sample-array-item-occur-at-least-once)
       * `_ignoreCase` : pour ignorer la casse lors de l’interrogation
+         * Voir [Exemple de Requête - Toutes les villes dont le nom contient un SAN, indépendamment de la casse](#sample-all-cities-san-ignore-case)
+
+
+
+
+
+
+
 
 
 * Les types d’union GraphQL sont pris en charge :
 
-   * use `...on`
-
-
-## Exemple de structure de fragment de contenu à utiliser avec GraphQL {#content-fragment-structure-graphql}
-
-Pour un exemple simple, nous avons besoin de :
-
-* Un ou plusieurs [modèles de fragments de contenu ](#sample-content-fragment-models-schemas) constituent la base des schémas GraphQL
-
-* [Exemples de ](#sample-content-fragments) fragments de contenu basés sur les modèles ci-dessus
-
-### Exemples de modèles de fragments de contenu (Schémas) {#sample-content-fragment-models-schemas}
-
-Pour les exemples de requêtes, nous utiliserons les modèles de contenu suivants et leurs interrelations (références ->) :
-
-* [Société](#model-company)
-->  [Personne](#model-person)
-    ->  [Prix](#model-award)
-
-* [Ville](#model-city)
-
-#### Entreprise {#model-company}
-
-Les champs de base définissant la société sont les suivants :
-
-| Nom du champ | Type de données | Référence  |
-|--- |--- |--- |
-| Nom de la société | Une seule ligne de texte |  |
-| Directeur | Référence du fragment (unique) | [Personne](#model-person) |
-| Employés | Référence du fragment (champ multiple) | [Personne](#model-person) |
-
-#### Personne {#model-person}
-
-Champs définissant une personne, qui peut également être un employé :
-
-| Nom du champ | Type de données | Référence  |
-|--- |--- |--- |
-| Nom | Une seule ligne de texte |  |
-| Prénom | Une seule ligne de texte |  |
-| Prix | Référence du fragment (champ multiple) | [Prix](#model-award) |
-
-#### Attribution {#model-award}
-
-Les champs définissant une récompense sont les suivants :
-
-| Nom du champ | Type de données | Référence  |
-|--- |--- |--- |
-| Raccourci/ID | Une seule ligne de texte |  |
-| Title (Titre) | Une seule ligne de texte |  |
-
-#### Ville {#model-city}
-
-Les champs permettant de définir une ville sont les suivants :
-
-| Nom du champ | Type de données | Référence  |
-|--- |--- |--- |
-| Nom | Une seule ligne de texte |  |
-| Pays | Une seule ligne de texte |  |
-| Population | Nombre |  |
-| Catégories | Balises |  |
-
-### Exemples de fragments de contenu {#sample-content-fragments}
-
-Les fragments suivants sont utilisés pour le modèle approprié.
-
-#### Entreprise {#fragment-company}
-
-| Nom de la société | Directeur | Employés |
-|--- |--- |--- |
-| Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
-|  Little Pony Inc. | Adam Smith | Lara Croft<br>Étalure de découpe |
-| NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
-
-#### Personne {#fragment-person}
-
-| Nom | Prénom | Prix |
-|--- |--- |--- |
-| Lincoln |  Abe |  |
-| Smith | Adam |   |
-| Étalon |  Cutter |  Gameblitz<br>Gamestar |
-| Marsh |  Duke |   |   |
-|  Smith |  Joe |   |
-| Croisement |  Lara | Gamestar |
-| Caulfield |  Max |  Gameblitz |
-|  Tâches |  Steve |   |
-
-#### Attribution {#fragment-award}
-
-| Raccourci/ID | Title (Titre) |
-|--- |--- |
-|  Go | Gameblitz |
-|  GS | Gamestar |
-|  OSC | Oscar |
-
-#### Ville {#fragment-city}
-
-| Nom | Pays | Population | Catégories |
-|--- |--- |--- |--- |
-| Basel | Suisse | 172258 | ville:emea |
-| Berlin | Allemagne | 3669491 | ville:capital<br>ville:emea |
-| Bucarest | Roumanie | 1821000 |  ville:capital<br>ville:emea |
-| San Francisco |  USA |  883306 |  ville:plage<br>ville:na |
-| San Jose |  USA |  102635 |  ville:na |
-| Stuttgart |  Allemagne |  634830 |  ville:emea |
-|  Zurich |  Suisse |  415367 |  ville:capital<br>ville:emea |
+   * use `... on`
+      * Voir [Exemple de Requête pour un fragment de contenu d&#39;un modèle spécifique avec une référence de contenu](#sample-wknd-fragment-specific-model-content-reference)
 
 ## GraphQL - Exemples de Requêtes utilisant la structure de fragment de contenu d’exemple {#graphql-sample-queries-sample-content-fragment-structure}
 
-Consultez les exemples de requêtes pour obtenir des illustrations de requêtes de création, ainsi que des exemples de résultats.
+Consultez ces exemples de requêtes pour obtenir des illustrations de requêtes de création, ainsi que des exemples de résultats.
 
 >[!NOTE]
 >
@@ -183,9 +97,13 @@ Consultez les exemples de requêtes pour obtenir des illustrations de requêtes 
 >
 >Par exemple : `http://localhost:4502/content/graphiql.html`
 
+>[!NOTE]
+>
+>Les exemples de requêtes sont basés sur la [structure d’exemple de fragment de contenu à utiliser avec GraphQL](#content-fragment-structure-graphql)
+
 ### Exemple de Requête - Tous les Schémas et types de données disponibles {#sample-all-schemes-datatypes}
 
-Tous les types seront renvoyés pour tous les schémas disponibles.
+Toutes les `types` seront renvoyées pour tous les schémas disponibles.
 
 **Exemple de Requête**
 
@@ -269,134 +187,6 @@ Tous les types seront renvoyés pour tous les schémas disponibles.
         {
           "name": "__TypeKind",
           "description": "An enum describing what kind of type a given __Type is"
-        }
-      ]
-    }
-  }
-}
-```
-
-### Exemple de Requête - Détails complets du PDG et des employés d&#39;une Société {#sample-full-details-company-ceos-employees}
-
-À l’aide de la structure des fragments imbriqués, cette requête renvoie tous les détails du PDG d’une société et de tous ses employés.
-
-**Exemple de Requête**
-
-```xml
-query {
-  companyList {
-    items {
-      name
-      ceo {
-        _path
-        name
-        firstName
-        awards {
-        id
-          title
-        }
-      }
-      employees {
-       name
-        firstName
-       awards {
-         id
-          title
-        }
-      }
-    }
-  }
-}
-```
-
-**Exemples de résultats**
-
-```xml
-{
-  "data": {
-    "companyList": {
-      "items": [
-        {
-          "name": "Apple Inc.",
-          "ceo": {
-            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
-            "name": "Jobs",
-            "firstName": "Steve",
-            "awards": []
-          },
-          "employees": [
-            {
-              "name": "Marsh",
-              "firstName": "Duke",
-              "awards": []
-            },
-            {
-              "name": "Caulfield",
-              "firstName": "Max",
-              "awards": [
-                {
-                  "id": "GB",
-                  "title": "Gameblitz"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Little Pony, Inc.",
-          "ceo": {
-            "_path": "/content/dam/sample-content-fragments/persons/adam-smith",
-            "name": "Smith",
-            "firstName": "Adam",
-            "awards": []
-          },
-          "employees": [
-            {
-              "name": "Croft",
-              "firstName": "Lara",
-              "awards": [
-                {
-                  "id": "GS",
-                  "title": "Gamestar"
-                }
-              ]
-            },
-            {
-              "name": "Slade",
-              "firstName": "Cutter",
-              "awards": [
-                {
-                  "id": "GB",
-                  "title": "Gameblitz"
-                },
-                {
-                  "id": "GS",
-                  "title": "Gamestar"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "NextStep Inc.",
-          "ceo": {
-            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
-            "name": "Jobs",
-            "firstName": "Steve",
-            "awards": []
-          },
-          "employees": [
-            {
-              "name": "Smith",
-              "firstName": "Joe",
-              "awards": []
-            },
-            {
-              "name": "Lincoln",
-              "firstName": "Abraham",
-              "awards": []
-            }
-          ]
         }
       ]
     }
@@ -537,7 +327,7 @@ query {
 }
 ```
 
-### Exemple de Requête - Un fragment de ville unique {#sample-single-city-fragment}
+### Exemple de Requête - Un fragment de ville spécifique {#sample-single-specific-city-fragment}
 
 Il s’agit d’une requête de renvoi des détails d’une entrée de fragment unique à un emplacement spécifique dans le référentiel.
 
@@ -613,6 +403,134 @@ Si vous créez une nouvelle variation, appelée &quot;Centre de Berlin&quot; (`b
           "categories": [
             "city:capital",
             "city:emea"
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+### Exemple de Requête - Détails complets du PDG et des employés d&#39;une Société {#sample-full-details-company-ceos-employees}
+
+À l’aide de la structure des fragments imbriqués, cette requête renvoie tous les détails du PDG d’une société et de tous ses employés.
+
+**Exemple de Requête**
+
+```xml
+query {
+  companyList {
+    items {
+      name
+      ceo {
+        _path
+        name
+        firstName
+        awards {
+        id
+          title
+        }
+      }
+      employees {
+       name
+        firstName
+       awards {
+         id
+          title
+        }
+      }
+    }
+  }
+}
+```
+
+**Exemples de résultats**
+
+```xml
+{
+  "data": {
+    "companyList": {
+      "items": [
+        {
+          "name": "Apple Inc.",
+          "ceo": {
+            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
+            "name": "Jobs",
+            "firstName": "Steve",
+            "awards": []
+          },
+          "employees": [
+            {
+              "name": "Marsh",
+              "firstName": "Duke",
+              "awards": []
+            },
+            {
+              "name": "Caulfield",
+              "firstName": "Max",
+              "awards": [
+                {
+                  "id": "GB",
+                  "title": "Gameblitz"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Little Pony, Inc.",
+          "ceo": {
+            "_path": "/content/dam/sample-content-fragments/persons/adam-smith",
+            "name": "Smith",
+            "firstName": "Adam",
+            "awards": []
+          },
+          "employees": [
+            {
+              "name": "Croft",
+              "firstName": "Lara",
+              "awards": [
+                {
+                  "id": "GS",
+                  "title": "Gamestar"
+                }
+              ]
+            },
+            {
+              "name": "Slade",
+              "firstName": "Cutter",
+              "awards": [
+                {
+                  "id": "GB",
+                  "title": "Gameblitz"
+                },
+                {
+                  "id": "GS",
+                  "title": "Gamestar"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NextStep Inc.",
+          "ceo": {
+            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
+            "name": "Jobs",
+            "firstName": "Steve",
+            "awards": []
+          },
+          "employees": [
+            {
+              "name": "Smith",
+              "firstName": "Joe",
+              "awards": []
+            },
+            {
+              "name": "Lincoln",
+              "firstName": "Abraham",
+              "awards": []
+            }
           ]
         }
       ]
@@ -1186,7 +1104,13 @@ query {
 
 ## Exemples de Requêtes utilisant le projet WKND {#sample-queries-using-wknd-project}
 
-Ces exemples de requêtes sont basés sur le projet WKND.
+Ces exemples de requêtes sont basés sur le projet WKND. Il s&#39;agit :
+
+* Modèles de fragments de contenu disponibles sous :
+   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+
+* Fragments de contenu (et autres contenus) disponibles sous :
+   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
 >[!NOTE]
 >
@@ -1277,12 +1201,12 @@ Cette requête interroge :
 
 Cet exemple de requête interroge :
 
-* pour un fragment de contenu unique d’un modèle donné
-* pour tous les formats de contenu :
-   * HTML
-   * Texte (Markdown)
-   * Texte brut
-   * JSON
+* pour un fragment de contenu unique de type `article` à un chemin spécifique
+   * dans ce cas, tous les formats de contenu :
+      * HTML
+      * Texte (Markdown)
+      * Texte brut
+      * JSON
 
 **Exemple de Requête**
 
@@ -1303,7 +1227,40 @@ Cet exemple de requête interroge :
 }
 ```
 
+### Exemple de Requête pour un modèle de fragment de contenu à partir d&#39;un modèle {#sample-wknd-content-fragment-model-from-model}
+
+Cet exemple de requête interroge :
+
+* pour un seul fragment de contenu
+   * détails du modèle de fragment de contenu sous-jacent
+
+**Exemple de Requête**
+
+```xml
+{
+  adventureByPath(_path: "/content/dam/wknd/en/adventures/riverside-camping-australia/riverside-camping-australia") {
+    item {
+      _path
+      adventureTitle
+      _model {
+        _path
+        title
+      }
+    }
+  }
+}
+```
+
 ### Exemple de Requête pour un fragment de contenu imbriqué - Type de modèle unique{#sample-wknd-nested-fragment-single-model}
+
+Cette requête interroge :
+
+* pour un fragment de contenu unique de type `article` à un chemin spécifique
+   * dans cette zone, le chemin d’accès et l’auteur du fragment référencé (imbriqué)
+
+>[!NOTE]
+>
+>Le champ `referencearticle` a le type de données `fragment-reference`.
 
 **Exemple de Requête**
 
@@ -1324,6 +1281,15 @@ Cet exemple de requête interroge :
 
 ### Exemple de Requête pour un fragment de contenu imbriqué - Type de modèle multiple{#sample-wknd-nested-fragment-multiple-model}
 
+Cette requête interroge :
+
+* pour plusieurs fragments de contenu de type `bookmark`
+   * avec des références de fragments à d&#39;autres fragments de types de modèles spécifiques `article` et `adventure`
+
+>[!NOTE]
+>
+>Le champ `fragments` a le type de données `fragment-reference`, avec les modèles `Article`, `Adventure` sélectionnés.
+
 ```xml
 {
   bookmarkList {
@@ -1343,7 +1309,61 @@ Cet exemple de requête interroge :
 }
 ```
 
-### Exemple de Requête pour un fragment de contenu d&#39;un modèle spécifique avec une référence de contenu{#sample-wknd-fragment-specific-model-content-reference}
+### Exemple de Requête pour un fragment de contenu d&#39;un modèle spécifique avec des références de contenu{#sample-wknd-fragment-specific-model-content-reference}
+
+Cette requête présente deux saveurs :
+
+1. Pour renvoyer toutes les références au contenu.
+1. Pour renvoyer les références de contenu spécifiques de type `attachments`.
+
+Ces requêtes interrogent :
+
+* pour plusieurs fragments de contenu de type `bookmark`
+   * avec des références de contenu à d’autres fragments
+
+#### Exemple de Requête pour plusieurs fragments de contenu avec des références prérécupérées {#sample-wknd-multiple-fragments-prefetched-references}
+
+La requête suivante renvoie toutes les références de contenu en utilisant `_references` :
+
+```xml
+{
+  bookmarkList {
+     _references {
+         ... on ImageRef {
+          _path
+          type
+          height
+        }
+        ... on MultimediaRef {
+          _path
+          type
+          size
+        }
+        ... on DocumentRef {
+          _path
+          type
+          author
+        }
+        ... on ArchiveRef {
+          _path
+          type
+          format
+        }
+    }
+    items {
+        _path
+    }
+  }
+}
+```
+
+#### Exemple de Requête pour plusieurs fragments de contenu avec des pièces jointes {#sample-wknd-multiple-fragments-attachments}
+
+La requête suivante renvoie tous les `attachments` - un champ spécifique (sous-groupe) de type `content-reference` :
+
+>[!NOTE]
+>
+>Le champ `attachments` a le type de données `content-reference`, avec différents formulaires sélectionnés.
 
 ```xml
 {
@@ -1376,80 +1396,16 @@ Cet exemple de requête interroge :
 }
 ```
 
-### Exemple de Requête pour plusieurs fragments de contenu avec des références prérécupérées {#sample-wknd-multiple-fragments-prefetched-references}
-
-```xml
-{
-  bookmarkList {
-    _references {
-       ... on ImageRef {
-        _path
-        type
-        height
-      }
-      ... on MultimediaRef {
-        _path
-        type
-        size
-      }
-      ... on DocumentRef {
-        _path
-        type
-        author
-      }
-      ... on ArchiveRef {
-        _path
-        type
-        format
-      }
-    }
-  }
-}
-```
-
-### Exemple de Requête pour une variation de fragment de contenu unique d&#39;un modèle donné {#sample-wknd-single-fragment-given-model}
-
-**Exemple de Requête**
-
-```xml
-{
-  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
-    item {
-      _path
-      author
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
-    }
-  }
-}
-```
-
-### Exemple de Requête pour plusieurs fragments de contenu d’un paramètre régional donné {#sample-wknd-multiple-fragments-given-locale}
-
-**Exemple de Requête**
-
-```xml
-{ 
-  articleList (_locale: "fr") {
-    items {
-      _path
-      author
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
-    }
-  }
-}
-```
-
 ### Exemple de Requête pour un fragment de contenu unique avec référence en ligne RTE {#sample-wknd-single-fragment-rte-inline-reference}
+
+Cette requête interroge :
+
+* pour un fragment de contenu unique de type `bookmark` à un chemin spécifique
+   * à l&#39;intérieur de cela, références intégrées RTE
+
+>[!NOTE]
+>
+>Les références en ligne RTE sont hydratées dans `_references`.
 
 **Exemple de Requête**
 
@@ -1486,7 +1442,37 @@ Cet exemple de requête interroge :
 }
 ```
 
+### Exemple de Requête pour une variation de fragment de contenu unique d&#39;un modèle donné {#sample-wknd-single-fragment-given-model}
+
+Cette requête interroge :
+
+* pour un fragment de contenu unique de type `article` à un chemin spécifique
+   * dans ce cas, les données se rapportaient à la variation : `variation1`
+
+**Exemple de Requête**
+
+```xml
+{
+  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+    item {
+      _path
+      author
+      main {
+        html
+        markdown
+        plaintext
+        json
+      }
+    }
+  }
+}
+```
+
 ### Exemple de Requête pour une Variation nommée de plusieurs fragments de contenu d&#39;un modèle donné {#sample-wknd-variation-multiple-fragment-given-model}
+
+Cette requête interroge :
+
+* pour les fragments de contenu de type `article` avec une variation spécifique : `variation1`
 
 **Exemple de Requête**
 
@@ -1506,3 +1492,131 @@ Cet exemple de requête interroge :
   }
 }
 ```
+
+### Exemple de Requête pour plusieurs fragments de contenu d’un paramètre régional donné {#sample-wknd-multiple-fragments-given-locale}
+
+Cette requête interroge :
+
+* pour les fragments de contenu de type `article` dans le paramètre régional `fr`
+
+**Exemple de Requête**
+
+```xml
+{ 
+  articleList (_locale: "fr") {
+    items {
+      _path
+      author
+      main {
+        html
+        markdown
+        plaintext
+        json
+      }
+    }
+  }
+}
+```
+
+## Exemple de structure de fragment de contenu (utilisée avec GraphQL) {#content-fragment-structure-graphql}
+
+Les exemples de requêtes sont basés sur la structure suivante, qui utilise :
+
+* Un ou plusieurs [modèles de fragments de contenu ](#sample-content-fragment-models-schemas) constituent la base des schémas GraphQL
+
+* [Exemples de ](#sample-content-fragments) fragments de contenu basés sur les modèles ci-dessus
+
+### Exemples de modèles de fragments de contenu (Schémas) {#sample-content-fragment-models-schemas}
+
+Pour les exemples de requêtes, nous utiliserons les modèles de contenu suivants et leurs interrelations (références ->) :
+
+* [Société](#model-company)
+->  [Personne](#model-person)
+    ->  [Prix](#model-award)
+
+* [Ville](#model-city)
+
+#### Entreprise {#model-company}
+
+Les champs de base définissant la société sont les suivants :
+
+| Nom du champ | Type de données | Référence  |
+|--- |--- |--- |
+| Nom de la société | Une seule ligne de texte |  |
+| Directeur | Référence du fragment (unique) | [Personne](#model-person) |
+| Employés | Référence du fragment (champ multiple) | [Personne](#model-person) |
+
+#### Personne {#model-person}
+
+Champs définissant une personne, qui peut également être un employé :
+
+| Nom du champ | Type de données | Référence  |
+|--- |--- |--- |
+| Nom | Une seule ligne de texte |  |
+| Prénom | Une seule ligne de texte |  |
+| Prix | Référence du fragment (champ multiple) | [Prix](#model-award) |
+
+#### Attribution {#model-award}
+
+Les champs définissant une récompense sont les suivants :
+
+| Nom du champ | Type de données | Référence  |
+|--- |--- |--- |
+| Raccourci/ID | Une seule ligne de texte |  |
+| Title (Titre) | Une seule ligne de texte |  |
+
+#### Ville {#model-city}
+
+Les champs permettant de définir une ville sont les suivants :
+
+| Nom du champ | Type de données | Référence  |
+|--- |--- |--- |
+| Nom | Une seule ligne de texte |  |
+| Pays | Une seule ligne de texte |  |
+| Population | Nombre |  |
+| Catégories | Balises |  |
+
+### Exemples de fragments de contenu {#sample-content-fragments}
+
+Les fragments suivants sont utilisés pour le modèle approprié.
+
+#### Entreprise {#fragment-company}
+
+| Nom de la société | Directeur | Employés |
+|--- |--- |--- |
+| Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
+|  Little Pony Inc. | Adam Smith | Lara Croft<br>Étalure de découpe |
+| NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
+
+#### Personne {#fragment-person}
+
+| Nom | Prénom | Prix |
+|--- |--- |--- |
+| Lincoln |  Abe |  |
+| Smith | Adam |   |
+| Étalon |  Cutter |  Gameblitz<br>Gamestar |
+| Marsh |  Duke |   |   |
+|  Smith |  Joe |   |
+| Croisement |  Lara | Gamestar |
+| Caulfield |  Max |  Gameblitz |
+|  Tâches |  Steve |   |
+
+#### Attribution {#fragment-award}
+
+| Raccourci/ID | Title (Titre) |
+|--- |--- |
+|  Go | Gameblitz |
+|  GS | Gamestar |
+|  OSC | Oscar |
+
+#### Ville {#fragment-city}
+
+| Nom | Pays | Population | Catégories |
+|--- |--- |--- |--- |
+| Basel | Suisse | 172258 | ville:emea |
+| Berlin | Allemagne | 3669491 | ville:capital<br>ville:emea |
+| Bucarest | Roumanie | 1821000 |  ville:capital<br>ville:emea |
+| San Francisco |  USA |  883306 |  ville:plage<br>ville:na |
+| San Jose |  USA |  102635 |  ville:na |
+| Stuttgart |  Allemagne |  634830 |  ville:emea |
+|  Zurich |  Suisse |  415367 |  ville:capital<br>ville:emea |
