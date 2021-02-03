@@ -2,7 +2,7 @@
 title: Notes de mise à jour de la version 2020.11.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service pour la version 2020.11.0.
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: ef8df0176c0541acc3cb6cb52d564d9bfee0bfea
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 13%
@@ -91,7 +91,7 @@ La date de publication de Cloud Manager en tant que Cloud Service 2020.11.0 est 
 ### Nouveautés de [!DNL Cloud Manager] {#what-is-new-cm}
 
 * Une nouvelle option de menu **Connexion locale** est désormais disponible pour les utilisateurs à partir des options du menu environnement sur les pages de résumé **Environnements** et **Environnements**.
-Pour plus d’informations, consultez [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md##login-locally).
+Pour plus d’informations, consultez [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md#login-locally).
 
 * L’onglet **Apprendre** de Cloud Manager a été actualisé avec de nouvelles images dans l’interface utilisateur.
 
