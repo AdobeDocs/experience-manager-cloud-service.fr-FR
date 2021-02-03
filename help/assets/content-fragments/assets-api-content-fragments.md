@@ -2,10 +2,10 @@
 title: Prise en charge des fragments de contenu d’Adobe Experience Manager as a Cloud Service dans l’API Assets HTTP
 description: Découvrez la prise en charge des fragments de contenu Adobe Experience Manager as a Cloud Service dans l’API HTTP Assets.
 translation-type: tm+mt
-source-git-commit: 42d7ac4fc99ef45c26c23d68ddfe2a5ddf7f62fd
+source-git-commit: 8563a87bdfc251166590210993b7d9e4cbdee385
 workflow-type: tm+mt
-source-wordcount: '1914'
-ht-degree: 98%
+source-wordcount: '1931'
+ht-degree: 97%
 
 ---
 
@@ -305,6 +305,7 @@ Il existe quelques restrictions :
 
 * **Les modèles de fragment de contenu ne sont actuellement pas pris en charge** : ils ne peuvent pas être lus ni créés. Pour pouvoir créer un fragment de contenu, ou en mettre un existant à jour, les développeurs doivent connaître le chemin correct vers le modèle de fragment de contenu. Actuellement, l’interface utilisateur d’administration est le seul moyen d’obtenir un aperçu des modèles de fragment de contenu.
 * **Les références sont ignorées**. Il n’existe actuellement aucune vérification pour savoir si un fragment de contenu existant est référencé ou non. Par conséquent, la suppression d’un fragment de contenu, par exemple, peut entraîner des problèmes sur une page contenant une référence au fragment de contenu en question.
+* **Type de données JSONLa sortie API REST des** types de données  *JSON est actuellement basée sur une* chaîne **.
 
 ## Codes d’état et messages d’erreur {#status-codes-and-error-messages}
 
