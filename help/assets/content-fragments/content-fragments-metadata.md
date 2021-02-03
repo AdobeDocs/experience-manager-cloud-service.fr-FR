@@ -2,10 +2,10 @@
 title: Métadonnées – propriétés des fragments
 description: Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments de contenu.
 translation-type: tm+mt
-source-git-commit: d302df83f3c2f95a5cc46d1d21c5e1376d4d4faf
+source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
 workflow-type: tm+mt
 source-wordcount: '111'
-ht-degree: 89%
+ht-degree: 77%
 
 ---
 
@@ -20,7 +20,7 @@ Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments 
 2. Vous pouvez :
 
    * Sélectionnez [**Afficher les propriétés** pour ouvrir les boîtes de dialogue](/help/assets/manage-digital-assets.md#editing-properties). Une fois la collection ouverte pour consultation, vous pouvez également la modifier.
-   * Ouvrez[ le fragment de contenu à modifier](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor), puis sélectionnez **Métadonnées** dans le panneau latéral.
+   * Ouvrez le fragment de contenu pour le modifier, puis sélectionnez **Métadonnées** dans le panneau latéral.
 
    ![métadonnées](assets/cfm-metadata-01.png)
 
