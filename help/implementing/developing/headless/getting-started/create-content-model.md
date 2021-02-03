@@ -2,9 +2,9 @@
 title: Guide de Début rapide sur la création de modèles de fragments de contenu sans en-tête
 description: Les modèles de fragments de contenu définissent la structure du contenu que vous allez créer et diffuser à l’aide de fonctionnalités AEM sans en-tête.
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: d37342feb794b9f1385bb5edd38b2d9bb6e7dff9
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '468'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Un architecte de l&#39;information ne réaliserait ces tâches que de façon spo
 
    ![Le dossier models](../assets/models-folder.png)
 1. Appuyez ou cliquez sur **Créer**.
-1. Indiquez un **titre du modèle** et une **description**.
+1. Indiquez un **titre du modèle**, **balises** et **description**. Vous pouvez également sélectionner/désélectionner **Activer le modèle** pour contrôler si le modèle est immédiatement activé lors de sa création.
 
    ![Création d’un modèle](../assets/models-create.png)
 1. Dans la fenêtre de confirmation, appuyez ou cliquez sur **Ouvrir** pour configurer votre modèle.
@@ -45,7 +45,7 @@ Un architecte de l&#39;information ne réaliserait ces tâches que de façon spo
 1. Lorsque vous avez terminé de créer votre modèle, appuyez ou cliquez sur **Enregistrer**. Le modèle nouvellement créé est enregistré en mode **Brouillon**.
 
    ![Modèle en mode brouillon](../assets/models-draft.png)
-1. Le modèle doit être activé pour pouvoir l&#39;utiliser. Sélectionnez le modèle que vous venez de créer, puis appuyez ou cliquez sur **Activer**.
+1. Le modèle doit être activé pour pouvoir l&#39;utiliser (s&#39;il n&#39;est pas déjà activé). Sélectionnez le modèle que vous venez de créer, puis appuyez ou cliquez sur **Activer**.
 
    ![Activation du modèle](../assets/models-enable.png)
 1. Confirmez l&#39;activation du modèle en appuyant ou en cliquant sur **Activer** dans la boîte de dialogue de confirmation.
