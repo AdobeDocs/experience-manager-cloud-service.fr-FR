@@ -2,21 +2,15 @@
 title: Gestion des fragments de contenu
 description: Les fragments de contenu sont stockés en tant que ressources, et ils sont donc principalement gérés par l’intermédiaire de la console Ressources.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 33f0980b138959ab4bc13eb5fe80733a0b4ef3a2
 workflow-type: tm+mt
-source-wordcount: '1488'
-ht-degree: 95%
+source-wordcount: '1593'
+ht-degree: 88%
 
 ---
 
 
 # Gestion des fragments de contenu{#managing-content-fragments}
-
->[!CAUTION]
->
->L’API AEM GraphQL pour la Diffusion Fragments de contenu est disponible sur demande.
->
->Contactez le [support Adobe](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support) pour activer l&#39;API pour votre AEM en tant que programme Cloud Service.
 
 Les fragments de contenu sont stockés en tant que **Ressources**, et ils sont donc principalement gérés par l’intermédiaire de la console **Ressources**.
 
@@ -39,8 +33,8 @@ Les [modèles de fragments de contenu](/help/assets/content-fragments/content-fr
 La méthode de création d’un fragment de contenu est la suivante :
 
 1. Accédez au dossier **Ressources** dans lequel vous souhaitez créer le fragment.
-2. Pour ouvrir l’assistant, sélectionnez **Créer**, puis **Fragment de contenu**.
-3. La première étape de l’assistant nécessite de spécifier la base du nouveau fragment.
+1. Pour ouvrir l’assistant, sélectionnez **Créer**, puis **Fragment de contenu**.
+1. La première étape de l’assistant nécessite de spécifier la base du nouveau fragment.
 
    * [Modèle](/help/assets/content-fragments/content-fragments-models.md) : utilisé pour créer un fragment qui nécessite du contenu structuré, par exemple, le modèle **Adventure**.
 
@@ -50,7 +44,7 @@ La méthode de création d’un fragment de contenu est la suivante :
 
    ![base du fragment](assets/cfm-managing-01.png)
 
-4. Dans l’étape **Propriétés**, spécifiez :
+1. Dans l’étape **Propriétés**, spécifiez :
 
    * **De base**
 
@@ -72,9 +66,12 @@ La méthode de création d’un fragment de contenu est la suivante :
          Obligatoire, il sera dérivé automatiquement du titre, mais il peut être modifié.
 
 
-5. Sélectionnez **Créer** pour terminer l’action, puis **ouvrez** le fragment en mode d’édition ou revenez à la console en sélectionnant **Terminé**.
+1. Sélectionnez **Créer** pour terminer l’action, puis **ouvrez** le fragment en mode d’édition ou revenez à la console en sélectionnant **Terminé**.
 
-## Actions pour un fragment de contenu {#actions-for-a-content-fragment}
+   >[!NOTE]
+   >En mode **Liste** de la console, vous pouvez mettre à jour les **paramètres de Vue** pour activer la colonne **Modèle de fragment de contenu**.
+
+## Actions pour un fragment de contenu dans la console Ressources {#actions-for-a-content-fragment-assets-console}
 
 Dans la console **Ressources**, différentes actions sont disponibles pour vos fragments de contenu, soit :
 
@@ -125,7 +122,7 @@ Pour ouvrir votre fragment à des fins de modification :
 >Pour modifier un fragment de contenu, vous devez disposer des autorisations appropriées. Si vous rencontrez des problèmes, contactez votre administrateur système.
 
 1. Utilisez la console **Assets** afin de naviguer jusqu’à l’emplacement de votre fragment de contenu.
-2. Ouvrez le fragment en mode édition, en effectuant l’une des opérations suivantes :
+1. Ouvrez le fragment en mode édition, en effectuant l’une des opérations suivantes :
 
    * Cliquez/appuyez sur le fragment ou le lien de fragment (selon l’affichage console).
    * Sélectionnez le fragment, puis cliquez sur **Modifier** dans la barre d’outils.
@@ -140,23 +137,49 @@ Pour ouvrir votre fragment à des fins de modification :
    >2. Le panneau latéral peut être masqué/affiché en appuyant sur l’icône **Activer/désactiver le panneau latéral**.
 
 
-3. Naviguez parmi les trois modes à l’aide des icônes du panneau latéral :
-
-   * Variations : [Modification du contenu](#editing-the-content-of-your-fragment) et [Gestion des variations](#creating-and-managing-variations-within-your-fragment)
-
-   * [Annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-   * [Contenu associé](#associating-content-with-your-fragment)
-   * [Métadonnées](#viewing-and-editing-the-metadata-properties-of-your-fragment)
-   * [Arborescence de la structure](/help/assets/content-fragments/content-fragments-structure-tree.md)
-   * [Aperçu](/help/assets/content-fragments/content-fragments-json-preview.md)
-
-   ![modes](assets/cfm-managing-04.png)
-
-4. Après avoir effectué les modifications, utilisez **Enregistrer** ou **Annuler** selon le cas.
+1. Après avoir effectué les modifications, utilisez **Enregistrer** ou **Annuler** selon le cas.
 
    >[!NOTE]
    >
    >Les options **Enregistrer** et **Annuler** vous font quitter l’éditeur. Pour plus d’informations sur le fonctionnement des deux options avec les fragments de contenu, voir [Enregistrer, Annuler et Versions](#save-cancel-and-versions).
+
+## Modes et actions dans l’éditeur de fragment de contenu {#modes-actions-content-fragment-editor}
+
+L’éditeur de fragments de contenu propose divers modes et actions.
+
+### Modes dans l’éditeur de fragment de contenu {#modes-in-the-content-fragment-editor}
+
+Parcourez les différents modes à l’aide des icônes du panneau latéral :
+
+* Variations : [Modification du contenu](#editing-the-content-of-your-fragment) et [Gestion des variations](#creating-and-managing-variations-within-your-fragment)
+
+* [Annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+* [Contenu associé](#associating-content-with-your-fragment)
+* [Métadonnées](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+* [Arborescence de la structure](/help/assets/content-fragments/content-fragments-structure-tree.md)
+* [Aperçu](/help/assets/content-fragments/content-fragments-json-preview.md)
+
+![modes](assets/cfm-managing-04.png)
+
+### Actions de barre d’outils dans l’éditeur de fragments de contenu {#toolbar-actions-in-the-content-fragment-editor}
+
+Certaines fonctions de la barre d’outils supérieure sont disponibles dans plusieurs modes :
+
+![modes](assets/cfm-managing-top-toolbar.png)
+
+* Sous le nom du fragment, vous pouvez voir le nom du [Modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) utilisé pour créer le fragment actif :
+
+   * Le nom est également un lien qui ouvre l&#39;éditeur de modèles.
+
+* Voir l’état du fragment ; par exemple, des informations sur le moment de sa création, de sa modification ou de sa publication. L’état est également codé par couleur :
+
+   * Nouveau : gris
+   * Version préliminaire : bleu
+   * Publié : vert
+   * Modifié : orange
+   * Désactivé : rouge
+
+* **[](#publishing-and-referencing-a-fragment)** Publiez le fragment.
 
 ## Enregistrer, Annuler et Versions   {#save-cancel-and-versions}
 
@@ -304,7 +327,8 @@ Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore �
 
 Les fragments de contenu doivent être publiés pour être utilisés dans l’environnement de publication. Ils peuvent être publiés :
 
-* Une fois créés, depuis la console **Ressources**.
+* après la création ; en utilisant les actions [disponibles dans la console Ressources](#actions-for-a-content-fragment-assets-console).
+* Dans l&#39;[éditeur de fragments de contenu](#toolbar-actions-in-the-content-fragment-editor).
 * Lorsque vous [publiez une page qui utilise le fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), celui-ci est répertorié dans les références de la page.
 
 >[!CAUTION]
