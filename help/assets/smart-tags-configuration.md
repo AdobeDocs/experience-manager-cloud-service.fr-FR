@@ -3,10 +3,10 @@ title: Balises intelligentes améliorées
 description: Appliquez des balises commerciales contextuelles et descriptives à l’aide du service AI et ML d’Adobe Sensei afin d’améliorer la découverte de ressources et la vitesse du contenu.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33ce255e126f2a49f1c1a6e94955aade2ca0d240
+source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 100%
+source-wordcount: '1037'
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ La fonctionnalité est disponible à l’achat sous la forme d’un module compl
 
 >[!IMPORTANT]
 >
->Les nouveaux déploiements [!DNL Experience Manager Assets] sont intégrés à [!DNL Adobe Developer Console] par défaut. Cela permet de configurer plus rapidement la fonctionnalité de balises intelligentes. Sur les déploiements existants, les administrateurs suivent ces étapes pour configurer cette fonctionnalité.
+>Les nouveaux déploiements [!DNL Experience Manager Assets] sont intégrés à [!DNL Adobe Developer Console] par défaut. Il est ainsi possible de configurer plus rapidement la fonctionnalité des balises intelligentes. Sur les déploiements existants, les administrateurs suivent ces étapes pour configurer l’intégration.
 
 ## Intégration à Adobe Developer Console {#aio-integration}
 
