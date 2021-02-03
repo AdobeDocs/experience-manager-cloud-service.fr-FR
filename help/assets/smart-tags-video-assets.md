@@ -1,10 +1,10 @@
 ---
 title: Balisez intelligemment vos fichiers vidéo.
-description: Le balisage intelligent des ressources vidéo automatise le balisage des ressources en appliquant des balises contextuelles et descriptives à l’aide des services Adobe Sensei.
+description: Le Experience Manager ajoute automatiquement des balises actives contextuelles et descriptives aux vidéos en utilisant  [!DNL Adobe Sensei].
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1188'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Marquez intelligemment vos fichiers vidéo {#video-smart-tags}
 
-Le besoin croissant de nouveaux contenus nécessite des efforts manuels réduits pour fournir en un rien de temps des expériences numériques attrayantes. [!DNL Adobe Experience Manager] en tant que  [!DNL Cloud Service] support du balisage automatisé des ressources vidéo assisté par l&#39;intelligence artificielle. Le balisage manuel des vidéos peut prendre du temps. Cependant, la fonctionnalité de balisage dynamique vidéo optimisée pour Adobe Sensei utilise des modèles d’intelligence artificielle pour analyser le contenu vidéo et ajouter des balises aux fichiers vidéo. Ainsi, les utilisateurs de la gestion des actifs numériques ont moins de temps à fournir des expériences enrichissantes à leurs clients. Le service d’apprentissage automatique d’Adobe génère deux jeux de balises pour une vidéo. Pendant ce temps, une visionneuse correspond aux objets, scènes et attributs de cette vidéo ; l&#39;autre jeu concerne des actions telles que la boisson, la course et le jogging.
+Le besoin croissant de nouveaux contenus nécessite des efforts manuels réduits pour fournir en un rien de temps des expériences numériques attrayantes. [!DNL Adobe Experience Manager] comme a  [!DNL Cloud Service] prend en charge le balisage automatique des ressources vidéo à l’aide de l’intelligence artificielle. Le balisage manuel des vidéos peut prendre du temps. Cependant, la fonction de balisage dynamique de la vidéo optimisée [!DNL Adobe Sensei] utilise des modèles d’intelligence artificielle pour analyser le contenu vidéo et ajouter des balises aux ressources vidéo. Ainsi, les utilisateurs de la gestion des actifs numériques ont moins de temps à fournir des expériences enrichissantes à leurs clients. Le service d’apprentissage automatique d’Adobe génère deux jeux de balises pour une vidéo. Pendant ce temps, une visionneuse correspond aux objets, scènes et attributs de cette vidéo ; l&#39;autre jeu concerne des actions telles que la boisson, la course et le jogging.
 
-Les formats de fichiers vidéo (et leurs codecs) pris en charge pour le balisage intelligent sont MP4 (H264/AVC), MKV (H264/AVC), MOV (H264/AVC, Motion JPEG), AVI (indeo4), FLV (H264/AVC, vp6f) et WMV (WMV). WMV2). En outre, la fonctionnalité permet le balisage des vidéos jusqu&#39;à une taille de 300 Mo. Le balisage automatisé des fichiers vidéo se produit sous forme de traitement standard des fichiers (avec création de miniatures et extraction de métadonnées) après le téléchargement d’une vidéo ou lorsqu’un retraitement est déclenché. Les balises actives s’affichent dans l’ordre décroissant de leur [score de confiance](#confidence-score-video-tag) dans la ressource [!UICONTROL Propriétés]. Le balisage vidéo est activé par défaut dans [!DNL Adobe Experience Manager] en tant que [!DNL Cloud Service]. Cependant, vous pouvez [exclure le balisage dynamique vidéo](#opt-out-video-smart-tagging) sur un dossier.
+Le balisage automatique des fichiers vidéo se produit en tant que traitement standard des fichiers (avec création de miniatures et extraction de métadonnées) après le téléchargement d’une vidéo ou lorsqu’un retraitement est déclenché. Les balises actives s’affichent dans l’ordre décroissant de leur [score de confiance](#confidence-score-video-tag) dans la ressource [!UICONTROL Propriétés]. Le balisage vidéo est activé par défaut dans [!DNL Adobe Experience Manager] en tant que [!DNL Cloud Service]. Cependant, vous pouvez [exclure le balisage dynamique vidéo](#opt-out-video-smart-tagging) sur un dossier.
 
 ## Balisage intelligent des vidéos lors du transfert {#smart-tag-assets-on-ingestion}
 
-Lorsque vous [téléchargez des fichiers vidéo](add-assets.md#upload-assets) vers [!DNL Adobe Experience Manager] en tant que [!DNL Cloud Service], les vidéos sont traitées ![](assets/do-not-localize/assetprocessing.png). Une fois le traitement terminé, consultez l&#39;onglet [!UICONTROL Basic] de la page de propriétés [!UICONTROL de l&#39;actif ]. Les balises actives sont automatiquement ajoutées à la vidéo sous [!UICONTROL Balises dynamiques]. asset compute Service utilise Adobe Sensei pour créer ces balises actives.
+Lorsque vous [téléchargez des fichiers vidéo](add-assets.md#upload-assets) vers [!DNL Adobe Experience Manager] en tant que [!DNL Cloud Service], les vidéos sont traitées. Une fois le traitement terminé, consultez l&#39;onglet [!UICONTROL Basic] de la page de propriétés [!UICONTROL de l&#39;actif ]. Les balises actives sont automatiquement ajoutées à la vidéo sous [!UICONTROL Balises dynamiques]. Les microservices de ressources utilisent [!DNL Adobe Sensei] pour créer ces balises actives.
 
 ![Les balises actives sont ajoutées aux vidéos et affichées dans l’onglet Simple des propriétés du fichier.](assets/smart-tags-added-to-videos.png)
 
@@ -44,7 +44,9 @@ Pour baliser de manière dynamique des fichiers vidéo ou des dossiers (y compri
 
 1. Sélectionnez ![Icône Retraiter les actifs](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Retraiter les actifs] et sélectionnez l&#39;option [!UICONTROL Processus complet].
 
-![Retraiter les ressources pour ajouter des balises aux vidéos du référentiel DAM existant](assets/reprocess.gif)
+<!-- TBD: Limit size -->
+
+![Retraiter les actifs pour ajouter des balises aux vidéos du référentiel DAM existant](assets/reprocess.gif)
 
 Une fois le processus terminé, accédez à la page [!UICONTROL Propriétés] de toute ressource vidéo du dossier. Les balises ajoutées automatiquement sont affichées dans la section [!UICONTROL Balises dynamiques] de l&#39;onglet [!UICONTROL Basique]. Ces balises actives appliquées sont triées par ordre décroissant de [score de confiance](#confidence-score-video-tag).
 
@@ -123,13 +125,13 @@ Pour ajouter la configuration OSGI du score de confiance au projet déployé dan
 
 ## Restrictions {#video-smart-tagging-limitations}
 
-* La formation du service de balises actives (ou des balises actives améliorées) au balisage de vos ressources vidéo n’est pas encore prise en charge.
+* Vous ne pouvez pas former le service qui applique les balises actives aux vidéos à l’aide de vidéos spécifiques. Il fonctionne avec les paramètres [!DNL Adobe Sensei] par défaut.
 
-* La progression du balisage n’est pas affichée.
+* La progression du balisage ne s’affiche pas.
 
-* Seules les vidéos de taille inférieure ou égale à 300 Mo peuvent être marquées. Le service Adobe Sensei active les balises des vidéos répondant à ces critères et ignore le balisage des autres vidéos dans un dossier.
+* Seules les vidéos de moins de 300 Mo de taille de fichier sont balisées automatiquement. Le service [!DNL Adobe Sensei] ignore les fichiers vidéo de plus grande taille.
 
-* Seules les vidéos dans ces formats de fichier (et codecs pris en charge) : MP4 (H264/AVC), MKV (H264/AVC), MOV (H264/AVC, Motion JPEG), AVI (indeo4), FLV (H264/AVC, vp6f) et WMV (WMV). V2) : peut être balisé.
+* Seules les vidéos dans les formats de fichier et les codecs pris en charge mentionnés dans [Balises dynamiques](/help/assets/smart-tags.md#smart-tags-supported-file-formats) sont balisées.
 
 >[!MORELIKETHIS]
 >
