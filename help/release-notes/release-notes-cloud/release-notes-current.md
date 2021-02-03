@@ -2,7 +2,7 @@
 title: Notes de mise à jour actuelles de  [!DNL Adobe Experience Manager] en tant que Cloud Service.
 description: Notes de mise à jour actuelles de  [!DNL Adobe Experience Manager] en tant que Cloud Service.
 translation-type: tm+mt
-source-git-commit: 7ce352515b375d553cd00802204274c3c6774bb4
+source-git-commit: cd392473d4e8ebee20b41c6c979121fe81819a40
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 11%
@@ -16,8 +16,8 @@ La section suivante décrit les Notes de mise à jour générales de [!DNL Exper
 
 ## Date de publication {#release-date}
 
-La date de publication de [!DNL Adobe Experience Manager] en tant que Cloud Service 2020.12.0 est le 17 décembre 2020.
-La version suivante (2021.1.0) sera publiée le 28 janvier 2021.
+La date de publication de [!DNL Adobe Experience Manager] en tant que Cloud Service 2021.1.0 est le 3 février 2021.
+La version suivante (2021.2.0) sera publiée le 25 février 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service{#sites}
 
