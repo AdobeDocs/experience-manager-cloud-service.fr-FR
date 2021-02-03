@@ -2,21 +2,15 @@
 title: Modèles de fragment de contenu
 description: Les modèles de fragment de contenu sont utilisés pour créer des fragments de contenu avec du contenu structuré.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 3538c03a6a455cd22423ca5a4fd69c1fe57b3e5e
 workflow-type: tm+mt
-source-wordcount: '1189'
-ht-degree: 44%
+source-wordcount: '2156'
+ht-degree: 26%
 
 ---
 
 
 # Modèles de fragment de contenu {#content-fragment-models}
-
->[!CAUTION]
->
->L’API AEM GraphQL pour la Diffusion Fragments de contenu est disponible sur demande.
->
->Contactez le [support Adobe](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support) pour activer l&#39;API pour votre AEM en tant que programme Cloud Service.
 
 Les modèles de fragment de contenu définissent la structure du contenu pour vos[ fragments de contenu](/help/assets/content-fragments/content-fragments.md).
 
@@ -25,6 +19,7 @@ Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 1. [Activer la fonctionnalité Modèle de fragment de contenu pour votre instance](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. [Créez](#creating-a-content-fragment-model) et  [configurez](#defining-your-content-fragment-model) vos modèles de fragments de contenu
 1. [Activez vos ](#enabling-disabling-a-content-fragment-model) modèles de fragments de contenu à utiliser lors de la création de fragments de contenu pour la création de fragments de contenu.
+1. [Autorisez vos modèles de fragments de contenu sur les ](#allowing-content-fragment-models-assets-folder) dossiers Ressources requis en configurant  **des stratégies**.
 
 ## Création d’un modèle de fragment de contenu {#creating-a-content-fragment-model}
 
@@ -36,7 +31,7 @@ Pour utiliser des modèles de fragments de contenu, procédez comme suit :
    >
    >Si[ l’utilisation des modèles de contenu du fragment n’a pas été activée](/help/assets/content-fragments/content-fragments-configuration-browser.md), l’option **Créer** n’est pas disponible.
 
-1. Spécifiez le **Titre du modèle**. Vous pouvez également ajouter **Balises** et **Description** si nécessaire.
+1. Spécifiez le **Titre du modèle**. Vous pouvez également ajouter **Balises**, **Description**, et sélectionner **Activer le modèle** à [activer le modèle](#enabling-disabling-a-content-fragment-model) si nécessaire.
 
    ![titre et description](assets/cfm-models-02.png)
 
@@ -64,70 +59,35 @@ Le modèle de fragment de contenu définit efficacement la structure des fragmen
    >
    >Lorsqu’un champ est **obligatoire**, le **libellé** indiqué dans le volet de gauche est signalé par un astérisque (*****).
 
+   ![propriétés](assets/cfm-models-03.png)
+
 1. **Pour ajouter un champ**
 
-   * Faites glisser un type de données requis vers l’emplacement requis pour un champ.
+   * Faites glisser un type de données à l’emplacement souhaité pour un champ :
+
+      ![type de données dans le champ](assets/cfm-models-04.png)
 
    * Une fois qu’un champ a été ajouté au modèle, le panneau de droite affiche les **propriétés** qui peuvent être définies pour ce type de données spécifique. Vous pouvez définir ce qui est obligatoire pour ce champ.
-De nombreuses propriétés s’expliquent d’elles-mêmes. Pour plus d’informations, voir [Propriétés](#properties).
+
+      * De nombreuses propriétés s’expliquent d’elles-mêmes. Pour plus d’informations, voir [Propriétés](#properties).
+      * Si vous entrez une **étiquette de champ**, le **nom de propriété** est automatiquement renseigné. S’il est vide, il peut être mis à jour manuellement par la suite.
+
+      Par exemple :
+
+      ![propriétés de champ](assets/cfm-models-05.png)
+
 
 1. **Pour supprimer un champ**
 
    Sélectionnez le champ, puis cliquez/appuyez sur l’icône représentant une corbeille. Vous serez alors invité à confirmer l’opération.
 
-1. Ajoutez tous les champs obligatoires et définissez les propriétés connexes, le cas échéant.
+   ![supprimer](assets/cfm-models-06.png)
 
-1. Sélectionnez **Enregistrer** pour conserver la définition.
-
-<!--
-## Defining your Content Fragment Model {#defining-your-content-fragment-model}
-
-The content fragment model effectively defines the structure of the resulting content fragments using a selection of **[Data Types](#data-types)**. Using the model editor you can add instances of the data types, then configure them to create the required fields:
-
->[!CAUTION]
->
->Editing an existing content fragment model can impact dependent fragments.
-
-1. Navigate to **Tools**, **Assets**, then open **Content Fragment Models**.
-
-1. Navigate to the folder holding your content fragment model.
-1. Open the required model for **Edit**; use either the quick action, or select the model and then the action from the toolbar.
-
-   Once open the model editor shows:
-
-    * left: fields already defined
-    * right: **Data Types** available for creating fields (and **Properties** for use once fields have been created)
-
-   >[!NOTE]
-   >
-   >When a field as **Required**, the **Label** indicated in the left pane will be marked with an asterix (**&#42;**).
-
-   ![properties](assets/cfm-models-03.png)
-
-1. **To Add a Field**
-
-    * Drag a required data type to the required location for a field:
-
-      ![data type to field](assets/cfm-models-04.png)
-
-    * Once a field has been added to the model, the right panel will show the **Properties** that can be defined for that particular data type. Here you can define what is required for that field. 
-      Many properties are self-explanatory, for additional details see [Properties](#properties).
-      For example:
-
-      ![field properties](assets/cfm-models-05.png)
-
-1. **To Remove a Field**
-
-   Select the required field, then click/tap the trash-can icon. You will be asked to confirm the action.
-
-   ![remove](assets/cfm-models-06.png)
-
-1. Add all required fields, and define the related properties, as required. For example:
+1. Ajoutez tous les champs obligatoires et définissez les propriétés connexes, le cas échéant. Par exemple :
 
    ![save](assets/cfm-models-07.png)
 
-1. Select **Save** to persist the definition.
--->
+1. Sélectionnez **Enregistrer** pour conserver la définition.
 
 ## Types de données {#data-types}
 
@@ -149,19 +109,16 @@ Une sélection de types de données est disponible pour la définition de votre 
    * Permet aux auteurs de fragments d’accéder à des zones de balises et de les sélectionner.
 * **Référence de contenu**
    * les références d&#39;autres contenus, de tout type ; peut être utilisé pour [créer du contenu imbriqué](#using-references-to-form-nested-content)
-
-<!--
-* **Fragment Reference**
-  * References other content fragments; can be used to [create nested content](#using-references-to-form-nested-content)
-  * The data type can be configured to allow fragment authors to:
-    * Edit the referenced fragment directly.
-    * Create a new content fragment, based on the appropriate model  
-* **JSON Object**
-  * Allows the content fragment author to enter JSON syntax into the corresponding elements of a fragment. 
-    * To allow AEM to store direct JSON that you have copy/pasted from another service.
-    * The JSON will be passed through, and output as JSON in GraphQL.
-    * Includes JSON syntax-highlighting, auto-complete and error-highlighting in the content fragment editor.
--->
+* **Référence du fragment**
+   * Références à d&#39;autres fragments de contenu ; peut être utilisé pour [créer du contenu imbriqué](#using-references-to-form-nested-content)
+   * Le type de données peut être configuré pour permettre aux auteurs de fragments de :
+      * Modifiez directement le fragment référencé.
+      * Créer un fragment de contenu, en fonction du modèle approprié
+* **Objet JSON**
+   * Permet à l’auteur du fragment de contenu de saisir la syntaxe JSON dans les éléments correspondants d’un fragment.
+      * Permettre aux AEM de stocker directement JSON que vous avez copié/collé à partir d’un autre service.
+      * Le fichier JSON est transmis et généré sous la forme JSON dans GraphQL.
+      * Inclut la mise en surbrillance de la syntaxe JSON, la saisie semi-automatique et la mise en surbrillance des erreurs dans l’éditeur de fragments de contenu.
 
 ## Propriétés {#properties}
 
@@ -187,15 +144,26 @@ ValidationBasic est disponible par des mécanismes tels que la propriété  ****
 
    La modification du **type par défaut** dans un modèle de fragment de contenu prend effet uniquement sur un fragment de contenu existant et lié après l’ouverture et l’enregistrement du fragment dans l’éditeur.
 
-<!--
-* **Translatable**
-  Checking the "Translatable" checkbox on a field in CF model editor will
+* **Le**
+contenu unique (pour le champ spécifique) doit être unique dans tous les fragments de contenu créés à partir du modèle actuel.
 
-  * Ensure the field's property name is added in translation config, context `/content/dam/<tenant>`, if not already present. 
-  * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
+   Elle permet de s’assurer que les auteurs de contenu ne peuvent pas répéter le contenu déjà ajouté dans un autre fragment du même modèle.
 
-* See **[Fragment Reference (Nested Fragments)](#fragment-reference-nested-fragments)** for more details about that specific data type and its properties.
--->
+   Par exemple, un champ **Texte d’une seule ligne** appelé `Country` dans le modèle de fragment de contenu ne peut pas avoir la valeur `Japan` dans deux fragments de contenu dépendants. Un avertissement sera émis lorsque la deuxième instance sera tentée.
+
+   >[!NOTE]
+   L&#39;unicité est assurée par racine de langue.
+
+   >[!NOTE]
+   Les variations peuvent avoir la même valeur *unique* que les variations du même fragment, mais pas la même valeur que celle utilisée dans toute variation d’autres fragments.
+
+* ****
+TranslatableSi vous cochez la case &quot;Translatable&quot; dans un champ de l&#39;éditeur de modèles des FC,
+
+   * Assurez-vous que le nom de propriété du champ est ajouté dans la configuration de traduction, contexte `/content/dam/<tenant>`, s’il n’est pas déjà présent.
+   * Pour GraphQL : définissez une propriété `<translatable>` sur `yes` dans le champ Fragment de contenu, afin d’autoriser le filtre de requête GraphQL pour la sortie JSON avec uniquement du contenu convertible.
+
+* Voir **[Référence sur les fragments (Fragments imbriqués)](#fragment-reference-nested-fragments)** pour plus d’informations sur ce type de données spécifique et ses propriétés.
 
 ## Validation {#validation}
 
@@ -205,72 +173,65 @@ Divers types de données incluent désormais la possibilité de définir les exi
    * Comparaison avec un regex prédéfini.
 * **Nombre**
    * Recherchez des valeurs spécifiques.
+* **Référence de contenu**
+   * Testez des types de contenu spécifiques.
+   * Seuls les fichiers de taille de fichier spécifiée ou inférieure peuvent être référencés.
+   * Seules les images d’une plage prédéfinie de largeur et/ou de hauteur (en pixels) peuvent être référencées.
+* **Référence du fragment**
+   * Testez un modèle de fragment de contenu spécifique.
 
 <!--
-* **Content Reference**
-  * Test for specific types of content.
-  * Only images within a predefined range of width and height (in pixels) can be referenced. 
-  * Only assets of specified file size or smaller can be referenced. 
   * Only predefined file types can be referenced.
   * No more than the predefined number of assets can be referenced. 
   * No more than the predefined number of fragments can be referenced.
-* **Fragment Reference**
-  * Test for a specific content fragment model.
 -->
 
-<!--
-## Using References to form Nested Content {#using-references-to-form-nested-content}
+## Utilisation de références pour le contenu imbriqué du formulaire {#using-references-to-form-nested-content}
 
-Content Fragments can form nested content, using either of the following data types:
+Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’un des types de données suivants :
 
-* **[Content Reference](#content-reference)**
-  * Provides a simple reference to other content; of any type.
-  * Can be configured for a one or multiple references (in the resulting fragment).
+* **[Référence de contenu](#content-reference)**
+   * Fournit une référence simple à un autre contenu ; de tout type.
+   * Peut être configuré pour une ou plusieurs références (dans le fragment résultant).
 
-* **[Fragment Reference](#fragment-reference-nested-fragments)** (Nested Fragments)
-  * References other fragments, dependent on the specific models specified.
-  * Allows you to include/retrieve structured data.
-    >[!NOTE]
-    >
-    >This method is of particular interest in conjunction with [Headless Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
-  * Can be configured for one or multiple references (in the resulting fragment)..
+* **[Référence](#fragment-reference-nested-fragments)**  sur les fragments (fragments imbriqués)
+   * Réalise d’autres fragments, en fonction des modèles spécifiques spécifiés.
+   * Permet d’inclure/de récupérer des données structurées.
+
+      >[!NOTE]
+      Cette méthode présente un intérêt particulier en conjonction avec [Diffusion de contenu sans en-tête utilisant des fragments de contenu avec GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+   * Peut être configuré pour une ou plusieurs références (dans le fragment résultant).
 
 >[!NOTE]
->
->AEM has a recurrence protection for:
->
->* Content References
->  This prevents the user from adding a reference to the current fragment. This may lead to an empty Fragment Reference picker dialog.
->
->* Fragment References in GraphQL 
->  If you create a deep query that returns multiple Content Fragments referenced by each another, it will return null at first occurence.
+aem dispose d&#39;une protection récurrente pour :
+* Références du contenu
+Cela empêche l’utilisateur d’ajouter une référence au fragment actif. Cela peut conduire à une boîte de dialogue vide du sélecteur de référence aux fragments.
 
-### Content Reference {#content-reference}
+* Références de fragments dans GraphQL
+Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur null en première occurrence.
 
-The Content Reference allows you to render content from another source; for example, image or content fragment.
 
-In addition to standard properties you can specify:
+### Référence de contenu {#content-reference}
 
-* The **Root Path** for any referenced content.
-* The content types that can be referenced.
-* Limitations for file sizes.
-* Image restraints.
--->
+La référence de contenu vous permet de générer du contenu à partir d’une autre source ; par exemple, image ou fragment de contenu.
 
-<!-- Check screenshot - might need update
+Outre les propriétés standard, vous pouvez spécifier les éléments suivants :
 
-   ![Content Reference](assets/cfm-content-reference.png)
--->
+* Le **chemin racine** pour tout contenu référencé.
+* Types de contenu pouvant être référencés.
+* Limites relatives aux tailles de fichier.
+* Limitations d&#39;image.
+   <!-- Check screenshot - might need update -->
+   ![Référence de contenu](assets/cfm-content-reference.png)
 
-<!--
-### Fragment Reference (Nested Fragments) {#fragment-reference-nested-fragments}
+### Référence du fragment (fragments imbriqués) {#fragment-reference-nested-fragments}
 
-The Fragment Reference references one, or more, content fragments. This feature of particular interest when retrieving content for use in your app, as it allows you to retrieve structured data with multiple layers.
+La référence au fragment fait référence à un ou plusieurs fragments de contenu. Cette fonctionnalité présente un intérêt particulier lors de la récupération de contenu pour une utilisation dans votre application, car elle vous permet de récupérer des données structurées avec plusieurs calques.
 
-For example:
+Par exemple :
 
-* A model defining details for an employee; these include:
-  * A reference to the model that defines the employer (company)
+* Un modèle définissant les détails d&#39;un employé ; il s&#39;agit notamment :
+   * Référence au modèle qui définit l&#39;employeur (société)
 
 ```xml
 type EmployeeModel {
@@ -287,44 +248,34 @@ type CompanyModel {
 ```
 
 >[!NOTE]
->
->This is of particular interest in conjunction with [Headless Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+Cela présente un intérêt particulier en conjonction avec [Diffusion de contenu sans en-tête utilisant des fragments de contenu avec GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
-In addition to standard properties you can define:
+Outre les propriétés standard, vous pouvez définir les éléments suivants :
 
-* **Render As**:
+* **Afficher comme**:
 
-  * **multifield** - the fragment author can create multiple, individual, references
+   * **multichamp**  : l’auteur du fragment peut créer plusieurs références, individuelles ou
 
-  * **fragmentreference** - allows the fragment author to select a single reference to a fragment
+   * **référence**  de fragment : permet à l’auteur du fragment de sélectionner une référence unique à un fragment.
 
-* **Model Type**
-  Multiple models can be selected. When authoring the Content Fragment any referenced fragments must have been created using these models.
+* **Modèle**
+TypePlusieurs modèles peuvent être sélectionnés. Lors de la création du fragment de contenu, tous les fragments référencés doivent avoir été créés à l’aide de ces modèles.
 
-* **Root Path**
-  This specifies a root path for any fragments referenced.
+* **Chemin d&#39;**
+accès racineIndique un chemin d&#39;accès racine pour tout fragment référencé.
 
-* **Allow Fragment Creation**
+* **Autoriser la création de fragments**
 
-  This will allow the fragment author to create a new fragment based on the appropriate model.
--->
+   Cela permet à l’auteur du fragment de créer un nouveau fragment en fonction du modèle approprié.
 
-<!--
-  * **fragmentreferencecomposite** - allows the fragment author to build a composite, by selecting multiple fragments
--->
+   * **fragmentation référence**  : permet à l’auteur du fragment de créer un composite en sélectionnant plusieurs fragments.
 
-<!-- Check screenshot - might need update
+   <!-- Check screenshot - might need update -->
+   ![Référence du fragment](assets/cfm-fragment-reference.png)
 
-   ![Fragment Reference](assets/cfm-fragment-reference.png)
--->
-
-<!--
 >[!NOTE]
->
->A recurrence protection mechanism is in place. It prohibits the user from selecting the current Content Fragment in the Fragment Reference. This may lead to an empty Fragment Reference picker dialog.
->
->There is also a recurrence protection for Fragment References in GraphQL. If you create a deep query across two Content Fragments that reference each other, it will return null.
--->
+Un mécanisme de protection contre les récidives est en place. Il interdit à l’utilisateur de sélectionner le fragment de contenu actif dans la référence au fragment. Cela peut conduire à une boîte de dialogue vide du sélecteur de référence aux fragments.
+Il existe également une protection récurrente pour les références de fragments dans GraphQL. Si vous créez une requête profonde entre deux fragments de contenu qui se référencent, elle renvoie la valeur null.
 
 ## Activation ou désactivation d&#39;un modèle de fragment de contenu {#enabling-disabling-a-content-fragment-model}
 
@@ -366,6 +317,40 @@ Pour désactiver un modèle marqué comme **Activé**, utilisez l&#39;option **D
 * Action rapide correspondante (placez le pointeur de la souris sur le modèle requis).
 
 ![Désactiver un modèle activé](assets/cfm-status-disable.png)
+
+## Autorisation de modèles de fragments de contenu dans votre dossier Ressources {#allowing-content-fragment-models-assets-folder}
+
+Pour mettre en oeuvre la gouvernance du contenu, vous pouvez configurer **Stratégies** sur le dossier Ressources afin de contrôler quels modèles de fragment de contenu sont autorisés pour la création de fragments dans ce dossier.
+
+>[!NOTE]
+Le mécanisme est similaire à [l’autorisation de modèles de page](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) pour une page et ses enfants, dans les propriétés avancées d’une page.
+
+Pour configurer les **stratégies** pour les **modèles de fragments de contenu autorisés** :
+
+1. Recherchez et ouvrez **Propriétés** pour le dossier Ressources requis.
+
+1. Ouvrez l&#39;onglet **Stratégies**, où vous pouvez configurer :
+
+   * **Hérité de`<folder>`**
+
+      Les stratégies sont automatiquement héritées lors de la création de dossiers enfants ; la stratégie peut être reconfigurée (et l’héritage rompu) si des sous-dossiers doivent autoriser des modèles différents du dossier parent.
+
+   * **Modèles de fragments de contenu autorisés par chemin**
+
+      Plusieurs modèles peuvent être autorisés.
+
+   * **Modèles de fragments de contenu autorisés par balise**
+
+      Plusieurs modèles peuvent être autorisés.
+   ![Stratégie de modèle de fragment de contenu](assets/cfm-model-policy-assets-folder.png)
+
+1. **** Enregistrez les modifications.
+
+Les modèles de fragment de contenu autorisés pour un dossier sont résolus comme suit :
+* **Stratégies** pour les **modèles de fragments de contenu autorisés**.
+* S’il est vide, essayez de déterminer la stratégie à l’aide des règles d’héritage.
+* Si la chaîne d&#39;héritage ne produit pas de résultat, examinez la configuration **Cloud Services** pour ce dossier (également directement et ensuite par héritage).
+* Si aucun des éléments ci-dessus ne fournit de résultats, il n’existe aucun modèle autorisé pour ce dossier.
 
 ## Suppression d’un modèle de fragment de contenu {#deleting-a-content-fragment-model}
 
