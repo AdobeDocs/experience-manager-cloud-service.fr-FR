@@ -3,10 +3,10 @@ title: Formats de fichiers et types MIME pris en charge
 description: Formats de fichier et types MIME pris en charge par  [!DNL Experience Manager Assets] en tant que  [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
+source-git-commit: 72a87e2eb8c4e40bbe0e5f831afc374fe3521bd7
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 91%
+source-wordcount: '806'
+ht-degree: 90%
 
 ---
 
@@ -60,24 +60,24 @@ La légende suivante décrit le niveau de prise en charge.
 | GIF | obj | obj | obj | obj |
 | JPEG | obj | obj | obj | obj |
 | PNG | obj | obj | obj | obj |
-| TIFF | obj | obj | obj | - |
-| SVG | obj | - | obj | obj |
-| SGI | obj | obj | obj | obj |
 | RVB | obj | obj | obj | obj |
 | RGBA | obj | obj | obj | obj |
+| SGI | obj | obj | obj | obj |
+| SVG | obj | - | obj | obj |
+| TIFF | obj | obj | obj | - |
 
 ## Formats des images dans [!DNL Dynamic Media] {#image-support-dynamic-media}
 
 | Format | Transférer (format d’entrée) | Créer un paramètre d’image prédéfini (format de sortie) | Prévisualiser un rendu dynamique | Diffuser un rendu dynamique | Télécharger un rendu dynamique |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| PNG | obj | obj | obj | obj | obj |
-| GIF | obj | obj | obj | obj | obj |
-| TIFF | obj | obj | obj | obj | obj |
-| JPEG | obj | obj | obj | obj | obj |
 | BMP | obj | - | - | - | - |
-| PSD   ‡ | obj | - | - | - | - |
 | EPS | obj | obj | obj | obj | obj |
+| GIF | obj | obj | obj | obj | obj |
+| JPEG | obj | obj | obj | obj | obj |
 | PICT | obj | - | - | - | - |
+| PNG | obj | obj | obj | obj | obj |
+| PSD   ‡ | obj | - | - | - | - |
+| TIFF | obj | obj | obj | obj | obj |
 
 ‡ L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par [!DNL Adobe Photoshop] et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
 
@@ -92,7 +92,7 @@ Les sous-types suivants de formats de fichiers d’images pixellisées ne sont p
 
 ## Formats 3D {#support-3d-formats}
 
-Les formats 3D de la liste suivante sont pris en charge.
+Les formats 3D suivants sont pris en charge.
 
 Voir [Utilisation de ressources 3D dans Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
 
@@ -143,24 +143,24 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 
 | Format de fichier | Génération de miniatures | Extraction de texte intégral | Largeur/Hauteur | Gestion des métadonnées | [Ressources connectées](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
-| PDF | obj | obj | obj | obj | obj |
-| DOCX | obj | obj | obj | obj | obj |
 | DOC | - | - | - | obj | obj |
-| PPTX | obj | obj | obj | obj | obj |
-| PPT | - | - | - | obj | obj |
-| XLSX | obj | obj | obj | obj | obj |
-| XLS | - | - | - | obj | obj |
+| DOCX | obj | obj | obj | obj | obj |
+| EPUB | - | obj | - | - | - |
+| HTML | - | obj | - | obj | obj |
 | ODF | obj | obj | obj | - | - |
-| OFG | obj | obj | obj | - | - |
 | ODM | obj | obj | obj | - | - |
 | ODP | obj | obj | obj | - | - |
 | ODS | obj | obj | obj | - | - |
 | ODT | obj | obj | obj | obj | obj |
-| EPUB | - | obj | - | - | - |
-| HTML | - | obj | - | obj | obj |
+| OFG | obj | obj | obj | - | - |
+| PDF | obj | obj | obj | obj | obj |
+| PPT | - | - | - | obj | obj |
+| PPTX | obj | obj | obj | obj | obj |
 | PS | - | - | obj | - | - |
 | RTF | - | obj | - | obj | obj |
 | TXT | - | obj | - | obj | obj |
+| XLS | - | - | - | obj | obj |
+| XLSX | obj | obj | obj | obj | obj |
 | XML | - | obj | - | - | - |
 
 ## Formats de document dans [!DNL Dynamic Media] {#document-support-dynamic-media}
@@ -168,8 +168,8 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 | Format | Transférer (format d’entrée) | Créer un paramètre d’image prédéfini (format de sortie) | Prévisualiser un rendu dynamique | Diffuser un rendu dynamique | Télécharger un rendu dynamique |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | AI | obj | - | - | - | - |
-| PDF | obj | obj | obj | obj | obj |
 | INDD | obj | - | - | - | - |
+| PDF | obj | obj | obj | obj | obj |
 
 ## Formats vidéo {#video-formats}
 
@@ -191,6 +191,7 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 | MPEG | obj | obj | obj |
 | MPG | obj | obj | obj |
 | MTS | obj | - | obj |
+| MXF | obj | - | obj |
 | OGV | obj | - | obj |
 | QT | obj | - | obj |
 | R3D | - | obj | obj |
