@@ -2,21 +2,15 @@
 title: Utilisation de fragments de contenu
 description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 6f8264ae53b30afac0cc523c312aea8918e5eafa
 workflow-type: tm+mt
-source-wordcount: '2012'
-ht-degree: 87%
+source-wordcount: '2027'
+ht-degree: 86%
 
 ---
 
 
 # Utilisation de fragments de contenu{#working-with-content-fragments}
-
->[!CAUTION]
->
->L’API AEM GraphQL pour la Diffusion Fragments de contenu est disponible sur demande.
->
->Contactez le [support Adobe](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support) pour activer l&#39;API pour votre AEM en tant que programme Cloud Service.
 
 Les fragments de contenu d’Adobe Experience Manager (AEM) as a Cloud Service vous permettent de concevoir, créer, organiser et [publier du contenu indépendant des pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Ils permettent de préparer le contenu prêt à être utilisé dans des emplacements multiples/sur plusieurs canaux.
 
@@ -30,12 +24,9 @@ Les fragments de contenu contiennent du contenu structuré :
    * Complexe
       * Combinaison de nombreux champs de types de données variés, dont le texte, le nombre, le booléen, les données et l’heure, entre autres.
       * Peut être utilisé soit pour la préparation de contenu plus structuré pour la création de pages, soit pour la diffusion à votre application.
-
-<!--
-  * Nested
-    * The reference data types available allow you to nest your content.
-    * Tends to be used for delivery to your application.
--->
+   * Imbriqué
+      * Les types de données de référence disponibles vous permettent d’imbriquer votre contenu.
+      * Tend à être utilisé pour la diffusion à votre application.
 
 Les fragments de contenu peuvent également être livrés au format JSON, à l’aide des fonctions d’exportation Sling Model (JSON) des composants de base AEM. Cette forme de livraison :
 
@@ -78,10 +69,7 @@ Les fragments de contenu vous permettent de :
 * Créer des groupes de contenu sur un large éventail de canaux.
 * Concevoir des variations de contenu pour des canaux spécifiques.
 * Ajouter des images à votre texte en insérant des ressources (fragments de supports variés).
-
-<!--
-* Create nested content to reflect the complexity of your data.
--->
+* Créez du contenu imbriqué pour refléter la complexité de vos données.
 
 Ces fragments de contenu peuvent ensuite être assemblés pour offrir diverses expériences sur de multiples canaux.
 
@@ -121,11 +109,9 @@ Associé aux fonctionnalités d’exportation JSON des composants de base AEM, 
 >
 >AEM prend également en charge la traduction des fragments de contenu.
 
-<!--
 >[!NOTE]
 >
->AEM also supports the translation of fragment content. See [Creating Translation Projects for Content Fragments](/help/assets/creating-translation-projects-for-content-fragments.md) for further information.
--->
+>AEM prend également en charge la traduction des fragments de contenu. Voir [Traduction des actifs](/help/assets/translate-assets.md) pour plus d’informations.
 
 ## Type de contenu {#content-type}
 
@@ -306,6 +292,12 @@ Un fragment, avec ses éléments et ses variations, peut être utilisé afin de 
 
 ### Exemple WKND {#wknd-sample}
 
-Les exemples du [site WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) sont fournis pour vous aider à en savoir plus sur AEM as a Cloud Service. Ils comprennent des exemples de fragments, qui peuvent être consultés à l’adresse suivante :
+Les exemples du [site WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) sont fournis pour vous aider à en savoir plus sur AEM as a Cloud Service.
 
-`hhttp://<host>:<port>/assets.html/content/dam/wknd/en/adventures`
+Le projet WKND comprend :
+
+* Modèles de fragments de contenu disponibles sous :
+   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+
+* Fragments de contenu (et autres contenus) disponibles sous :
+   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
