@@ -2,21 +2,15 @@
 title: Fragments de contenu - Explorateur de configuration
 description: Découvrez comment activer certaines fonctionnalités de fragment de contenu dans l’explorateur de configuration.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 260578950833b96616a2a3928d206e6f9e0a206a
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 36%
+source-wordcount: '241'
+ht-degree: 42%
 
 ---
 
 
 # Fragments de contenu - Navigateur de configuration{#content-fragments-configuration-browser}
-
->[!CAUTION]
->
->L’API AEM GraphQL pour la Diffusion Fragments de contenu est disponible sur demande.
->
->Contactez le [support Adobe](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support) pour activer l&#39;API pour votre AEM en tant que programme Cloud Service.
 
 ## Activer la fonctionnalité de fragment de contenu pour votre instance {#enable-content-fragment-functionality-instance}
 
