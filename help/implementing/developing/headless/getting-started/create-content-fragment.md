@@ -2,10 +2,10 @@
 title: Guide de Début rapide sur la création de fragments de contenu sans en-tête
 description: Les fragments de contenu vous permettent de concevoir, de créer, de traiter et d’utiliser du contenu indépendant des pages qui peut être diffusé sans encombre par AEM.
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: fa2fee3139acd60ea96222752785cf397978a2bc
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 3%
+source-wordcount: '392'
+ht-degree: 2%
 
 ---
 
@@ -43,7 +43,7 @@ Les auteurs de contenu créeront tout nombre de fragments de contenu pour repré
 1. Fournissez les détails du fragment de contenu dans l’éditeur de fragments de contenu.
 
    ![Éditeur de fragment de contenu](../assets/content-fragment-edit.png)
-1. Cliquez ou appuyez sur **Enregistrer**.
+1. Appuyez ou cliquez sur **Enregistrer et fermer**.
 
 Les fragments de contenu peuvent faire référence à d’autres fragments de contenu, ce qui permet d’obtenir une structure de contenu imbriqué si nécessaire.
 
