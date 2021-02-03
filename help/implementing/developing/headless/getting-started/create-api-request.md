@@ -2,10 +2,10 @@
 title: Guide du Début rapide sans en-tête Accès et diffusion de fragments de contenu
 description: L’API REST Assets permet de gérer les fragments de contenu et l’API GraphQL permet une simple diffusion sans en-tête du contenu des fragments de contenu.
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: 472f691cf8b2ec502611ee88bc4abdcabb6d8412
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 0%
+source-wordcount: '504'
+ht-degree: 1%
 
 ---
 
@@ -27,8 +27,14 @@ Le reste de ce guide porte sur l&#39;accès GraphQL et la diffusion de fragments
 
 Les architectes de l&#39;information devront concevoir des requêtes pour leurs points de terminaison canal afin de fournir du contenu. Ces requêtes ne doivent généralement être prises en compte qu&#39;une seule fois par point de terminaison par modèle. Pour les besoins de ce guide de prise en main, nous n&#39;aurons qu&#39;à en créer un.
 
-1. Connectez-vous à AEM en tant que Cloud Service et dans le menu principal sélectionnez **Outils -> Ressources -> GraphQL**
-   * Vous pouvez également ouvrir la page directement à `https://<host>:<port>/content/graphiql.html`.
+<!-- Not in the UI yet - will need updating when it is -->
+<!--
+1. Log into AEM as a Cloud Service and from the main menu select **Tools -&gt; Assets -&gt; GraphQL** 
+   * Alternatively open the page directly at `https://<host>:<port>/content/graphiql.html`.
+-->
+
+1. Connectez-vous à AEM en tant que Cloud Service et accédez à l’interface GraphiQL :
+   * Par exemple : `https://<host>:<port>/content/graphiql.html`.
 
 1. GraphiQL est un éditeur de requêtes intégré au navigateur pour GraphQL. Vous pouvez l’utiliser pour créer des requêtes permettant de récupérer des fragments de contenu afin de les diffuser en mode JSON.
    * Le panneau de gauche vous permet de construire votre requête.
@@ -39,8 +45,9 @@ Les architectes de l&#39;information devront concevoir des requêtes pour leurs 
 1. En supposant que le modèle que nous avons créé s&#39;appelle `person` avec les champs `firstName`, `lastName` et `position`, nous pouvons créer une requête simple pour récupérer le contenu de notre fragment de contenu.
 
    ```text
-   query {
-     persons {
+   query 
+   {
+     personList {
        items {
          _path
          firstName
