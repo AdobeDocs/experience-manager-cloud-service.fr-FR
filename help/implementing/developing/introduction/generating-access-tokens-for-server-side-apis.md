@@ -2,9 +2,9 @@
 title: Génération de Jetons d'accès pour les API côté serveur
 description: Découvrez comment faciliter la communication entre un serveur tiers et AEM en tant que Cloud Service en générant un jeton JWT sécurisé
 translation-type: tm+mt
-source-git-commit: a29eda3347502a3a498c2f40ed2e46cda59b2a24
+source-git-commit: e4c7fcc1576a401629461117be4dba404a3c37c8
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1106'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Présentation {#introduction}
 
->[!IMPORTANT]
->
->Cette fonction n’est pas encore disponible. Consultez les [Notes de mise à jour](/help/release-notes/release-notes-cloud/release-notes-current.md) pour connaître la liste à jour des fonctionnalités.
-
 Certaines architectures reposent sur des appels à AEM en tant que Cloud Service à partir d&#39;une application hébergée sur un serveur en dehors de l&#39;infrastructure AEM. Par exemple, une application mobile qui appelle un serveur, qui effectue ensuite des demandes d’API à AEM en tant que Cloud Service.
 
 Le flux serveur à serveur est décrit ci-dessous, ainsi qu’un flux simplifié de développement. L&#39;AEM en tant que Cloud Service [Console développeur](development-guidelines.md#crxde-lite-and-developer-console) est utilisé pour générer les jetons nécessaires au processus d&#39;authentification.
+
+>[!NOTE]
+>
+>Outre cette documentation, vous pouvez également consulter le didacticiel sur l&#39;[authentification par jeton pour l&#39;AEM en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication).
 
 ## Flux serveur à serveur {#the-server-to-server-flow}
 
