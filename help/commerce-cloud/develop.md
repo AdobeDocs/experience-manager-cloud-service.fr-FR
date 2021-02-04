@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 translation-type: tm+mt
-source-git-commit: 6be2ed60f4e672b99a85b55f833b8ae2f1b952b0
+source-git-commit: 9d8d7c3c8c1ac3cb843ce74b3ccdb6904bbfaa05
 workflow-type: tm+mt
-source-wordcount: '1070'
-ht-degree: 89%
+source-wordcount: '967'
+ht-degree: 82%
 
 ---
 
@@ -83,9 +83,9 @@ Pour le développement local du module complémentaire CIF avec le SDK AEM as a 
    set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
    ```
 
-   Cette variable doit également être configurée pour l’environnement AEM as a Cloud Service.
+   Cette variable est utilisée par AEM pour se connecter à votre système commercial. De plus, le module complémentaire CIF inclut un proxy inverse local pour rendre le point de terminaison GraphQL Magento disponible localement. Il est utilisé par les outils de création CIF (console de produit et sélecteurs) et pour les composants côté client CIF effectuant des appels GraphQL directs.
 
-   Pour plus d’informations sur les variables, voir [Configuration d’OSGi pour AEM en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
+   Cette variable doit également être configurée pour l’environnement AEM as a Cloud Service. Pour plus d’informations sur les variables, voir [Configuration d’OSGi pour AEM en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
 
 1. (Facultatif) Pour activer les fonctionnalités de catalogue intermédiaire, vous devez créer un jeton d’intégration pour votre instance de Magento. Suivez les étapes décrites dans [Prise en main](./getting-started.md#staging) pour créer le jeton.
 
@@ -98,35 +98,6 @@ Pour le développement local du module complémentaire CIF avec le SDK AEM as a 
    Pour plus d&#39;informations sur les secrets, voir [Configuration d&#39;OSGi pour AEM en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
 
 1. Démarrez le SDK AEM as a Cloud Service.
-
-1. Démarrer le serveur proxy GraphQL local.
-
-   Afin de rendre le point d’entrée Magento GraphQL disponible localement pour le module complémentaire CIF et les composants CIF, exécutez la commande suivante. Le point d’entrée GraphQL sera alors disponible dans `http://localhost:3002/graphql`.
-Exemple pour Mac OSX :
-
-   ```bash
-   npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud --port 3002 --proxyPartial ''
-   ```
-
-   Exemple pour Windows :
-
-   ```bash
-   npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud --port 3002 --proxyPartial '""'
-   ```
-
-   L’argument `--proxyPartial` doit recevoir une chaîne vide.
-
-   Vous pouvez tester le proxy GraphQL local en pointant un outil de requête GraphQL sur `http://localhost:3002/graphql` et tester quelques requêtes.
-
-1. Connectez-vous au SDK AEM et configurez CIF pour utiliser le serveur proxy GraphQL local..
-
-   Accédez à la configuration du service cloud CIF (Outils > Services cloud > Configuration CIF). Ouvrez la vue de propriétés de la configuration utilisée par votre projet.
-
-   Pour la propriété `GraphQL Proxy Path`, utilisez le point d’entrée du serveur proxy local `http://localhost:3002/graphql`. Enregistrez la configuration.
-
->[!NOTE]
->
->Ne poussez pas la configuration de l’étape 8 dans le référentiel du projet. Cette configuration n’est requise que pour une configuration de développement local. Les environnements AEM as a Cloud Service sont déjà configurés avec le proxy GraphQL lors de l’intégration.
 
 Vérifiez la configuration via la console OSGI : `http://localhost:4502/system/console/osgi-installer`. La liste doit inclure les bundles liés au module complémentaire CIF, le module de contenu et les configurations OSGI, comme défini dans le fichier de modèle de fonctionnalité.
 
