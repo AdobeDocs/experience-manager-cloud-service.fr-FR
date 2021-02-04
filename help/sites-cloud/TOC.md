@@ -5,10 +5,10 @@ user-guide-title: Création de contenu dans AEM as a Cloud Service
 breadcrumb-title: Guide de création
 user-guide-description: Découvrez comment créer avec Experience Manager Sites as a Cloud Service et l’administrer.
 translation-type: tm+mt
-source-git-commit: 2c00c3723c3c84365044b5cd2fe6779de0360736
+source-git-commit: 0999f7a2a915df0d58876e17ceb5e93e13b7f817
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 94%
+source-wordcount: '241'
+ht-degree: 92%
 
 ---
 
@@ -50,6 +50,7 @@ ht-degree: 94%
       + [Console des composants](authoring/features/components-console.md)
       + [Mise en page réactive](authoring/features/responsive-layout.md)
       + [Utilisation des balises](authoring/features/tags.md)
+      + [Activation des fonctionnalités d&#39;application Web progressive](authoring/features/enable-pwa.md)
    + Projets {#projects}
       + [Utilisation des projets](authoring/projects/overview.md)
       + [Gestion de projets](authoring/projects/managing.md)
