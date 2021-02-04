@@ -2,9 +2,9 @@
 title: Notes de mise à jour actuelles de  [!DNL Adobe Experience Manager] en tant que Cloud Service.
 description: Notes de mise à jour actuelles de  [!DNL Adobe Experience Manager] en tant que Cloud Service.
 translation-type: tm+mt
-source-git-commit: 429d1710af30f85174f69ed111140b2e4fb5ab0f
+source-git-commit: 5901bdd97c8c94f6baf04eab8da1d7fc3f3f89da
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '719'
 ht-degree: 9%
 
 ---
@@ -21,9 +21,13 @@ La version suivante (2021.2.0) sera publiée le 25 février 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service{#sites}
 
+### Gestion de contenu en mode sans affichage {#headless}
+
 * **[API GraphQL pour la Diffusion](/help/assets/content-fragments/graphql-api-content-fragments.md)** de fragments de contenu : Possibilité de requête de fragments de contenu à l’aide de la syntaxe GraphQL et de schémas basés sur des modèles de fragments de contenu, pour une sortie au format JSON.
 
 * **[Prise en charge de l’authentification pour les demandes](/help/assets/content-fragments/graphql-authentication-content-fragments.md)** d’API GraphQL : Capacité à authentifier les demandes d’API GraphQL avec des jetons d&#39;accès pour les API côté serveur.
+
+* [Le ](/help/implementing/developing/hybrid/remote-page.md) composant RemotePage prend en charge l’affichage et la modification des SPA externes dans AEM utilisation.
 
 * Amélioration de la sortie JSON à partir de l’API GraphQL, notamment la possibilité de générer du texte enrichi au format JSON et dans les paramètres régionaux.
 
@@ -37,6 +41,9 @@ La version suivante (2021.2.0) sera publiée le 25 février 2021.
 
 * Possibilité de prévisualisation de la sortie JSON directement dans l’éditeur de fragments de contenu.
 
+### Applications Web progressives (PWA) {#pwa}
+
+* [Une version d&#39;application Web progressive (PWA) d&#39;un ](/help/sites-cloud/authoring/features/enable-pwa.md)  site peut désormais être activée au niveau du projet via une configuration simple.
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
