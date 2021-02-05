@@ -3,15 +3,15 @@ title: Balises automatiques des ressources avec des balises générées par AI
 description: Balisez des actifs à l’aide de services artificiellement intelligents qui appliquent des balises commerciales contextuelles et descriptives à l’aide de  [!DNL Adobe Sensei] service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '2557'
-ht-degree: 78%
+source-wordcount: '2799'
+ht-degree: 68%
 
 ---
 
 
-# Ajouter des balises actives à vos ressources pour accélérer les recherches {#smart-tag-assets-for-faster-search}
+# Ajouter des balises actives à vos ressources afin d’améliorer l’expérience de recherche {#smart-tag-assets-for-faster-search}
 
 Les entreprises qui traitent des ressources numériques utilisent de plus en plus le vocabulaire contrôlé par taxonomie dans les métadonnées des ressources. Il s’agit essentiellement d’une liste des mots-clés que les employés, les partenaires et les clients utilisent fréquemment pour mentionner et rechercher des ressources numériques. Le balisage des actifs avec un vocabulaire contrôlé par taxonomie permet d’identifier et de récupérer facilement les actifs dans les recherches.
 
@@ -23,25 +23,31 @@ En arrière-plan, les balises actives utilisent la structure artificiellement in
 ![flowchart](assets/flowchart.gif) 
 -->
 
+Vous pouvez baliser les types de ressources suivants :
+
+* **Images** : Les images dans de nombreux formats sont balisées à l’aide des services de contenu dynamique Adobe Sensei. Vous [créez un modèle de formation](#train-model), puis [appliquez des balises actives](#tag-assets) aux images.
+* **Fichiers** vidéo : Le balisage vidéo est activé par défaut en  [!DNL Adobe Experience Manager] tant que  [!DNL Cloud Service]balise. [Les vidéos sont automatiquement ](/help/assets/smart-tags-video-assets.md) marquées lorsque vous téléchargez de nouvelles vidéos ou retraitez des vidéos existantes.
+* **Fichiers** textuels :  [!DNL Experience Manager Assets] balisage automatique des ressources textuelles prises en charge lors du téléchargement.
+
 ## Types de ressource pris en charge {#smart-tags-supported-file-formats}
 
-Les balises actives sont appliquées uniquement aux types de fichiers pris en charge qui génèrent des rendus aux formats JPG et PNG. La fonctionnalité est prise en charge pour les types de ressources suivants :
+Les balises actives sont appliquées aux types de fichiers pris en charge qui génèrent des rendus aux formats JPG et PNG. La fonctionnalité est prise en charge pour les types de ressources suivants :
 
 | Images (types MIME) | Fichiers texte (formats de fichier) | Fichiers vidéo (formats de fichier et codecs) |
 |----|-----|------|
-| image/jpeg | TXT | MP4 (H264/AVC) |
-| image/tiff | RTF | MKV (H264/AVC) |
-| image/png | DITA | MOV (H264/AVC, Motion JPEG) |
-| image/bmp | XML | AVI (indeo4) |
+| image/jpeg | CSV | MP4 (H264/AVC) |
+| image/tiff | DOC | MKV (H264/AVC) |
+| image/png | DOCX | MOV (H264/AVC, Motion JPEG) |
+| image/bmp | HTML | AVI (indeo4) |
 | image/gif | JSON | FLV (H264/AVC, vp6f) |
-| image/pjpeg | DOC | WMV (WMV2) |
-| image/x-portable-anymap | DOCX |  |
-| image/x-portable-bitmap | PDF |  |
-| image/x-portable-graymap | CSV |  |
-| image/x-portable-pixmap | PPT |  |
-| image/x-rgb | PPTX |  |
+| image/pjpeg | PDF | WMV (WMV2) |
+| image/x-portable-anymap | PPT |  |
+| image/x-portable-bitmap | PPTX |  |
+| image/x-portable-graymap | RTF |  |
+| image/x-portable-pixmap | SRT |  |
+| image/x-rgb | TXT |  |
 | image/x-xbitmap | VTT |  |
-| image/x-xpixmap | SRT |  |
+| image/x-xpixmap | XML |  |
 | image/x-icon |  |  |
 | image/photoshop |  |  |
 | image/x-photoshop |  |  |
@@ -62,6 +68,12 @@ Les balises actives sont appliquées uniquement aux types de fichiers pris en ch
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
+## Balisage intelligent des ressources textuelles {#smart-tag-text-based-assets}
+
+Les ressources textuelles prises en charge sont automatiquement balisées par [!DNL Experience Manager Assets] lors du téléchargement. Elle est activée par défaut. L’efficacité des balises actives ne dépend pas de la quantité de texte dans le fichier, mais des mots-clés ou entités pertinents présents dans le texte du fichier. Pour les fichiers basés sur du texte, les balises actives sont les mots-clés qui apparaissent dans le texte, mais ceux qui décrivent le mieux le fichier. Pour les ressources prises en charge, [!DNL Experience Manager] extrait déjà le texte, qui est ensuite indexé et est utilisé pour rechercher les ressources. Cependant, les balises actives basées sur les mots-clés dans le texte fournissent une facette de recherche dédiée, structurée et de priorité plus élevée, qui est utilisée pour améliorer la découverte de ressources par rapport à l’index de recherche complète.
+
+En comparaison, pour les images et les vidéos, les balises actives sont dérivées en fonction de certains aspects visuels.
+
 ## Intégrer [!DNL Experience Manager] avec Adobe Developer Console {#integrate-aem-with-aio}
 
 >[!IMPORTANT]
@@ -72,12 +84,7 @@ Vous pouvez intégrer [!DNL Adobe Experience Manager] avec les balises intellige
 
 ## Comprendre les directives et les modèles relatifs aux balises {#understand-tag-models-guidelines}
 
-Un modèle de balise est formé d’un groupe de balises connexes associées à un aspect visuel de l’image. Par exemple, une collection de chaussures peut avoir des balises différentes. Cependant, toutes les balises sont liées à des chaussures et peuvent appartenir au même modèle. Les balises ne peuvent concerner que des aspects visuels des images incontestablement différents. Pour comprendre la représentation du contenu d’un modèle d’entraînement dans [!DNL Experience Manager], imaginez un modèle d’entraînement comme une entité de niveau supérieur, composée d’un groupe de balises ajoutées manuellement et d’exemples d’images pour chaque balise. Chaque balise s’applique exclusivement à une image.
-
-Les balises impossibles à gérer de manière pratique se caractérisent par les critères suivants :
-
-* Aspects non visuels et abstraits, tels que l’année ou la saison de la sortie d’un produit, une ambiance ou une émotion évoquée par une image.
-* Différences visuelles fines pour des produits tels que des chemises avec ou sans cols, ou de petits logos incorporés sur des produits.
+Un modèle de balise est un groupe de balises connexes qui sont associées à divers aspects visuels des images balisées. Les balises sont liées aux différents aspects visuels des images, de sorte qu’une fois appliquées, les balises permettent de rechercher des types d’images spécifiques. Par exemple, une collection de chaussures peut avoir des balises différentes. Cependant, toutes les balises sont liées à des chaussures et peuvent appartenir au même modèle. Lorsqu’elles sont appliquées, les balises permettent de trouver différents types de chaussures, par exemple par couleur, par conception ou par utilisation. Pour comprendre la représentation du contenu d’un modèle d’entraînement dans [!DNL Experience Manager], imaginez un modèle d’entraînement comme une entité de niveau supérieur, composée d’un groupe de balises ajoutées manuellement et d’exemples d’images pour chaque balise. Chaque balise s’applique exclusivement à une image.
 
 Avant de créer un modèle de balise et d’entraîner le service, identifiez un ensemble de balises uniques décrivant le mieux les objets contenus dans les images replacés dans le contexte de votre activité. Vérifiez que les ressources figurant dans la série sélectionnée sont conformes aux [instructions d’entraînement](#training-guidelines).
 
@@ -189,9 +196,7 @@ Après avoir entraîné le service de balises intelligentes, vous pouvez déclen
 
 ### Balisage des ressources chargées {#tag-uploaded-assets}
 
-Experience Manager peut automatiquement baliser les ressources que les utilisateurs chargent dans le système de gestion des ressources numériques. Pour ce faire, les administrateurs configurent un workflow pour ajouter une étape disponible pour le balisage intelligent des ressources. Voir [Comment activer le balisage intelligent pour les ressources chargées](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
-
-<!-- TBD: Text-based assets are automatically smart tagged. -->
+[!DNL Experience Manager] peut automatiquement baliser les ressources que les utilisateurs chargent dans le système de gestion des ressources numériques. Pour ce faire, les administrateurs configurent un workflow pour ajouter une étape disponible pour le balisage intelligent des ressources. Voir [Comment activer le balisage intelligent pour les ressources chargées](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 
 ## Gérer les balises actives et les recherches de ressources {#manage-smart-tags-and-searches}
 
@@ -231,17 +236,21 @@ Les résultats de recherche qui correspondent à tous les termes de recherche da
 1. correspondances de `woman running` dans les balises intelligentes.
 1. correspondances de `woman` ou de `running` dans les balises intelligentes.
 
-### Limites du balisage {#limitations}
+## Limites du balisage et bonnes pratiques {#limitations}
 
-Les balises intelligentes améliorées sont basées sur des modèles d’apprentissage d’images de marque et de leurs balises. Ces modèles ne sont pas toujours parfaits pour identifier les balises. La version actuelle des balises intelligentes présente les limites suivantes :
+Le balisage intelligent amélioré repose sur les modèles d’apprentissage des images et de leurs balises. Ces modèles ne sont pas toujours parfaits pour identifier les balises. La version actuelle des balises intelligentes présente les limites suivantes :
 
 * Impossibilité d’identifier des différences subtiles dans les images. Par exemple, des chemises coupe droite ou ajustée.
 * Impossibilité d’identifier des balises basées sur des motifs/éléments minuscules d’une image. Par exemple, des logos sur des T-shirts.
-* Le balisage est pris en charge dans les langues prises en charge par le Experience Manager. Pour une liste des langues, voir [Notes de mise à jour de Smart Content Service](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+* Le balisage est pris en charge dans les langues prises en charge par [!DNL Experience Manager]. Pour une liste des langues, voir [Notes de mise à jour de Smart Content Service](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+* Les balises qui ne sont pas gérées de manière réaliste sont liées à :
+
+   * Aspects non visuels et abstraits, tels que l&#39;année ou la saison de la sortie d&#39;un produit, l&#39;humeur ou l&#39;émotion suscitées par une image, la connotation subjective d&#39;une vidéo, etc.
+   * Différences visuelles fines pour des produits tels que des chemises avec ou sans cols, ou de petits logos incorporés sur des produits.
 
 <!-- TBD: Add limitations related to text-based assets. -->
 
-Pour rechercher des ressources avec des balises intelligentes (standard ou améliorées), utilisez la recherche de texte intégral d’Assets. Il n’y a aucun prédicat de recherche distinct pour les balises intelligentes.
+Pour rechercher des ressources avec des balises actives (régulières ou améliorées), utilisez [!DNL Assets] Omnisearch (recherche de texte intégral). Il n’y a aucun prédicat de recherche distinct pour les balises intelligentes.
 
 >[!NOTE]
 >
