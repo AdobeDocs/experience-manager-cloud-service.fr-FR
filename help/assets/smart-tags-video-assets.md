@@ -2,9 +2,9 @@
 title: Balisez intelligemment vos fichiers vidéo.
 description: Le Experience Manager ajoute automatiquement des balises actives contextuelles et descriptives aux vidéos en utilisant  [!DNL Adobe Sensei].
 translation-type: tm+mt
-source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1183'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Le besoin croissant de nouveaux contenus nécessite des efforts manuels réduits pour fournir en un rien de temps des expériences numériques attrayantes. [!DNL Adobe Experience Manager] comme a  [!DNL Cloud Service] prend en charge le balisage automatique des ressources vidéo à l’aide de l’intelligence artificielle. Le balisage manuel des vidéos peut prendre du temps. Cependant, la fonction de balisage dynamique de la vidéo optimisée [!DNL Adobe Sensei] utilise des modèles d’intelligence artificielle pour analyser le contenu vidéo et ajouter des balises aux ressources vidéo. Ainsi, les utilisateurs de la gestion des actifs numériques ont moins de temps à fournir des expériences enrichissantes à leurs clients. Le service d’apprentissage automatique d’Adobe génère deux jeux de balises pour une vidéo. Pendant ce temps, une visionneuse correspond aux objets, scènes et attributs de cette vidéo ; l&#39;autre jeu concerne des actions telles que la boisson, la course et le jogging.
 
-Le balisage automatique des fichiers vidéo se produit en tant que traitement standard des fichiers (avec création de miniatures et extraction de métadonnées) après le téléchargement d’une vidéo ou lorsqu’un retraitement est déclenché. Les balises actives s’affichent dans l’ordre décroissant de leur [score de confiance](#confidence-score-video-tag) dans la ressource [!UICONTROL Propriétés]. Le balisage vidéo est activé par défaut dans [!DNL Adobe Experience Manager] en tant que [!DNL Cloud Service]. Cependant, vous pouvez [exclure le balisage dynamique vidéo](#opt-out-video-smart-tagging) sur un dossier.
+Le balisage vidéo est activé par défaut dans [!DNL Adobe Experience Manager] en tant que [!DNL Cloud Service]. Cependant, vous pouvez [exclure le balisage dynamique vidéo](#opt-out-video-smart-tagging) sur un dossier. Les vidéos sont automatiquement balisées lorsque vous téléchargez de nouvelles vidéos ou retraitez des vidéos existantes. [!DNL Experience Manager] crée également les miniatures et extrait les métadonnées des fichiers vidéo. Les balises actives s’affichent dans l’ordre décroissant de leur [score de confiance](#confidence-score-video-tag) dans la ressource [!UICONTROL Propriétés].
 
 ## Balisage intelligent des vidéos lors du transfert {#smart-tag-assets-on-ingestion}
 
