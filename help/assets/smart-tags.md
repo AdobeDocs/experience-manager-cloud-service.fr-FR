@@ -3,9 +3,9 @@ title: Balises automatiques des ressources avec des balises générées par AI
 description: Balisez des actifs à l’aide de services artificiellement intelligents qui appliquent des balises commerciales contextuelles et descriptives à l’aide de  [!DNL Adobe Sensei] service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
+source-git-commit: c7befef579ca6f722ca630102c875bfb7651c131
 workflow-type: tm+mt
-source-wordcount: '2799'
+source-wordcount: '2807'
 ht-degree: 68%
 
 ---
@@ -27,7 +27,7 @@ Vous pouvez baliser les types de ressources suivants :
 
 * **Images** : Les images dans de nombreux formats sont balisées à l’aide des services de contenu dynamique Adobe Sensei. Vous [créez un modèle de formation](#train-model), puis [appliquez des balises actives](#tag-assets) aux images.
 * **Fichiers** vidéo : Le balisage vidéo est activé par défaut en  [!DNL Adobe Experience Manager] tant que  [!DNL Cloud Service]balise. [Les vidéos sont automatiquement ](/help/assets/smart-tags-video-assets.md) marquées lorsque vous téléchargez de nouvelles vidéos ou retraitez des vidéos existantes.
-* **Fichiers** textuels :  [!DNL Experience Manager Assets] balisage automatique des ressources textuelles prises en charge lors du téléchargement.
+* **Fichiers** textuels :  [!DNL Experience Manager Assets] balisage automatique des ressources textuelles prises en charge lors du téléchargement. En savoir plus sur le [balisage intelligent des ressources textuelles](#smart-tag-text-based-assets).
 
 ## Types de ressource pris en charge {#smart-tags-supported-file-formats}
 
