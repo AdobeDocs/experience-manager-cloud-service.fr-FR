@@ -3,10 +3,10 @@ title: Formats de fichiers et types MIME pris en charge
 description: Formats de fichier et types MIME pris en charge par  [!DNL Experience Manager Assets] en tant que  [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 72a87e2eb8c4e40bbe0e5f831afc374fe3521bd7
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 90%
+source-wordcount: '818'
+ht-degree: 86%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 90%
 
 En outre, [!DNL Experience Manager Assets] offre une prise en charge étendue pour générer des prévisualisations et des rendus et pour extraire des métadonnées et du texte pour l’indexation de texte intégral. Cette prise en charge étendue est assurée à l’aide de [microservices de ressources](asset-microservices-configure-and-use.md).
 
-Les éléments essentiels concernant la conversion des ressources à l’aide des microservices de ressources sont les suivants :
+Voici les points saillants de la conversion d’actifs à l’aide des microservices d’actifs :
 
 * Formats de fichier [Adobe ](#adobe-formats) produit par les applications et services d&#39;Adobe, y compris [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] et [!DNL Adobe Acrobat] ou PDF.
 * [Formats de fichiers d’imagerie](#image-formats) clés.
@@ -25,7 +25,7 @@ Les éléments essentiels concernant la conversion des ressources à l’aide de
 * [Formats de documents](#document-formats) courants, y compris les formats Microsoft Office et Open Document.
 * Large éventail de formats [vidéo](#video-formats) et [audio](#audio-formats).
 
-La légende suivante décrit le niveau de prise en charge.
+La légende suivante décrit le niveau de prise en charge de chaque format.
 
 | Niveau de prise en charge | Description |
 | ------------- | --------------------------- |
@@ -231,4 +231,5 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 >[!MORELIKETHIS]
 >
 >* [Traitement des ressources à l’aide des microservices de ressources](asset-microservices-overview.md)
+>* [Formats de fichiers pris en charge pour le balisage intelligent des fichiers texte](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
