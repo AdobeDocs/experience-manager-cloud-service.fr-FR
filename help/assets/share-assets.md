@@ -3,10 +3,10 @@ title: Partage de ressources, de dossiers et de collections sous forme de lien
 description: Cet article décrit comment partager des fichiers, des dossiers et des collections dans  [!DNL Experience Manager Assets] sous forme d’hyperlien.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
+source-git-commit: c023451f2b5c5e1ce2cbc9eddb858f96bd28cbd6
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 73%
+source-wordcount: '681'
+ht-degree: 71%
 
 ---
 
@@ -28,7 +28,7 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
 >[!NOTE]
 >
 >* Vous devez disposer de l’autorisation Modifier l’ACL pour le dossier ou la ressource que vous souhaitez partager sous forme d’un lien.
->* Avant de partager un lien avec des utilisateurs, assurez-vous que le service de messagerie Day CQ est bien configuré. Dans le cas contraire, une erreur se produira.
+>* Avant de partager un lien avec les utilisateurs, assurez-vous que [le courrier électronique sortant est activé](/help/implementing/developing/introduction/development-guidelines.md#sending-email). Dans le cas contraire, une erreur se produira.
 
 
 1. Dans l&#39;interface utilisateur [!DNL Assets], sélectionnez la ressource à partager en tant que lien.
