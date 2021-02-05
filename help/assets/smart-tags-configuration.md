@@ -3,10 +3,10 @@ title: Balises intelligentes améliorées
 description: Appliquez des balises commerciales contextuelles et descriptives à l’aide du service AI et ML d’Adobe Sensei afin d’améliorer la découverte de ressources et la vitesse du contenu.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 98%
+source-wordcount: '1040'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ La fonctionnalité est disponible à l’achat sous la forme d’un module compl
 
 >[!IMPORTANT]
 >
->Les nouveaux déploiements [!DNL Experience Manager Assets] sont intégrés à [!DNL Adobe Developer Console] par défaut. Il est ainsi possible de configurer plus rapidement la fonctionnalité des balises intelligentes. Sur les déploiements existants, les administrateurs suivent ces étapes pour configurer l’intégration.
+>[!DNL Experience Manager Assets] les déploiements créés après  [août 2020 ](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets) sont intégrés  [!DNL Adobe Developer Console] par défaut. Il est ainsi possible de configurer plus rapidement la fonctionnalité des balises intelligentes. Dans les anciens déploiements, les administrateurs peuvent suivre les étapes suivantes pour configurer l’intégration.
 
 ## Intégration à Adobe Developer Console {#aio-integration}
 
@@ -109,7 +109,7 @@ Lorsque le certificat expire, il n’est plus approuvé. Pour ajouter un nouveau
 
 1. Accédez à [https://console.adobe.io](https://console.adobe.io), puis au service existant dans le projet. Chargez le nouveau certificat et configurez-le. Pour plus d’informations sur la configuration, voir les instructions contenues dans [Création d’une intégration dans Adobe Developer Console](#create-aio-integration).
 
-## Activation du balisage intelligent pour les ressources qui viennent d’être chargées (facultatif) {#enable-smart-tagging-for-uploaded-assets}
+## Activer le balisage automatique lorsque des ressources sont téléchargées (facultatif) {#enable-smart-tagging-for-uploaded-assets}
 
 1. Dans [!DNL Experience Manager], accédez à **[!UICONTROL Outils > Processus > Modèles]**.
 1. Sur la page **[!UICONTROL Modèles de processus]**, sélectionnez le modèle de processus **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques]**.
