@@ -2,10 +2,10 @@
 title: Réseau de diffusion de contenu dans AEM as a Cloud Service
 description: Réseau de diffusion de contenu dans AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 8ca8944d37c1a10782597ec30c16b0151b5cd717
+source-git-commit: b6ae5cab872a3cca4eb41259f6c242b1fbeb98bb
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 68%
+source-wordcount: '604'
+ht-degree: 64%
 
 ---
 
@@ -28,6 +28,10 @@ Suivez les sections ci-dessous pour utiliser l’interface utilisateur en libre-
 Par défaut, dans le cas d’une configuration de réseau de diffusion de contenu géré par Adobe, tout le trafic public peut se diriger vers le service de publication, tant pour les environnements de production que de non-production (de développement et d’évaluation). Si vous souhaitez limiter le trafic au service de publication pour un environnement donné (par exemple, en limitant l’évaluation par une plage d’adresses IP), vous pouvez le faire en libre-service via l’interface utilisateur de Cloud Manager.
 
 Consultez [Gestion des Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) pour en savoir plus.
+
+>[!CAUTION]
+>
+>Seules les demandes provenant des adresses IP autorisées seront diffusées par le réseau de diffusion de contenu géré de l’AEM. Si vous pointez votre propre CDN sur le CDN géré AEM, assurez-vous que les adresses IP de votre CDN sont incluses dans la liste autorisée.
 
 ## Le réseau de diffusion de contenu du client pointe vers le réseau de diffusion de contenu géré par AEM {#point-to-point-CDN}
 
