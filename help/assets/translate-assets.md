@@ -3,9 +3,9 @@ title: Création et gestion des ressources numériques en plusieurs langues
 description: Découvrez comment automatiser les workflows de traduction des ressources, y compris les fichiers binaires, les métadonnées et les balises, dans plusieurs langues.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f85dea62ba334fd5b3a7cc45fbf09556cbfdd2ec
+source-git-commit: 100171693837dcdcef0efeab8d61b567114c5ef0
 workflow-type: tm+mt
-source-wordcount: '2608'
+source-wordcount: '2587'
 ht-degree: 100%
 
 ---
@@ -186,7 +186,10 @@ Lorsque vous exécutez un workflow de traduction pour mettre à jour une copie d
 
 1. Accédez à la console Ressources et ouvrez la page Propriétés de chacune des ressources traduites afin d’afficher les métadonnées traduites.
 
-Pour obtenir des conseils sur la traduction des métadonnées de ressources, voir [Traduire les métadonnées efficacement en 5 étapes](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
+<!-- TBD: Possibly this blog wasn't migrated. Still try to find from the author. Old one is archived at https://web.archive.org/web/20180423042713/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/
+
+For tips on translating metadata for assets efficiently, see [5 Steps to efficiently translate metadata](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/). 
+-->
 
 ## Création de projets de traduction {#creating-translation-projects}
 
@@ -216,7 +219,7 @@ Vous utilisez le workflow Créer et traduire afin de générer des copies de lan
 * Créer un projet de traduction
 * Ajouter à un projet de traduction existant
 
-### Créer uniquement la structure   {#create-structure-only}
+### Créer uniquement la structure  {#create-structure-only}
 
 Utilisez l’option **Créer uniquement la structure** pour créer une hiérarchie de dossiers cible au niveau de la racine de la langue cible semblable à celle du dossier source au sein de la racine de la langue source. Dans ce cas, les fichiers source sont copiés dans le dossier de destination. Cependant, aucun projet de traduction n’est généré.
 
