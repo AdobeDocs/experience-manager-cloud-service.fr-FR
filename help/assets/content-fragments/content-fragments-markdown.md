@@ -2,9 +2,9 @@
 title: Texte (Markdown)
 description: Lors du processus de création, l’éditeur de fragments de contenu utilise la syntaxe markdown pour vous permettre d’écrire aisément du contenu.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 2ab82c18fedd5e49a9aa1bcb0a774f55327d9b56
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '520'
 ht-degree: 100%
 
 ---
@@ -188,7 +188,7 @@ Les échappements par barre oblique inverse sont disponibles pour les caractère
 
     `\ backslash`
 
-    ` guillemet oblique
+    `` ` backtick``
 
     `* asterisk`
 
