@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: b0abba78292035140688b1802e8d8f12a121a1f0
 workflow-type: tm+mt
 source-wordcount: '476'
-ht-degree: 86%
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 86%
 
 + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [Aperçu et nouveautés](overview.md)
-+ [Changements notables  [!DNL Assets] en tant que [!DNL Cloud Service]](assets-cloud-changes.md)
++ [Modifications notables apportées à  [!DNL Assets]  as a [!DNL Cloud Service]](assets-cloud-changes.md)
 + [[!DNL Assets] Architecture](architecture.md)
 + [Formats de fichiers pris en charge](file-format-support.md)
 + [Présentation des microservices de ressources](asset-microservices-overview.md)
@@ -29,8 +29,8 @@ ht-degree: 86%
    + [Ajout et chargement de ressources](add-assets.md)
    + [Recherche de ressources](search-assets.md)
    + [Tâches courantes de gestion des ressources](manage-digital-assets.md)
-   + [Balises dynamiques pour les images](smart-tags.md)
-   + [Balisez intelligemment vos fichiers vidéo.](smart-tags-video-assets.md)
+   + [Balises intelligentes pour les images](smart-tags.md)
+   + [Balises intelligentes pour vos ressources vidéo](smart-tags-video-assets.md)
    + [Organisation des ressources](organize-assets.md)
    + [Utilisation de ressources  [!DNL Adobe Stock]  dans AEM](aem-assets-adobe-stock.md)
    + [Gestion des collections](manage-collections.md)
@@ -55,9 +55,9 @@ ht-degree: 86%
    + [Facettes de recherche](search-facets.md)
    + [API HTTP Assets](mac-api-assets.md)
    + [Prise en charge des fragments de contenu dans l’API HTTP Assets](content-fragments/assets-api-content-fragments.md)
-   + [aem API GraphQL pour les fragments de contenu](content-fragments/graphql-api-content-fragments.md)
+   + [API AEM GraphQL pour les fragments de contenu](content-fragments/graphql-api-content-fragments.md)
    + [Authentification pour les Requêtes GraphQL d&#39;AEM distantes sur les fragments de contenu](content-fragments/graphql-authentication-content-fragments.md)
-   + [aem API GraphQL avec fragments de contenu - Exemple de contenu et Requêtes](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+   + [API AEM GraphQL avec les fragments de contenu – Exemple de contenu et requêtes](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Ressources connectées](use-assets-across-connected-assets-instances.md)
    + [Rapports de ressources](asset-reports.md)
    + [Métadonnées en cascade](cascading-metadata.md)
@@ -69,9 +69,9 @@ ht-degree: 86%
    + [Publication de ressources sur [!DNL Brand Portal]](publish-to-brand-portal.md)
 + Fragments de contenu {#content-fragments}
    + [Utilisation de fragments de contenu](content-fragments/content-fragments.md)
-   + [Diffusion sans en-tête avec des fragments de contenu et GraphQL](content-fragments/content-fragments-graphql.md)
-   + [Gestion des fragments de contenu](content-fragments/content-fragments-managing.md)   
-   + [Activer la fonctionnalité de fragment de contenu pour votre instance](content-fragments/content-fragments-configuration-browser.md)
+   + [Diffusion découplée avec des fragments de contenu et GraphQL](content-fragments/content-fragments-graphql.md)
+   + [Gestion des fragments de contenu](content-fragments/content-fragments-managing.md)
+   + [Activation de la fonctionnalité de fragment de contenu pour votre instance](content-fragments/content-fragments-configuration-browser.md)
    + [Modèles de fragment de contenu](content-fragments/content-fragments-models.md)
    + [Variations – création de contenu de fragment](content-fragments/content-fragments-variations.md)
    + [Contenu associé à un fragment de contenu](content-fragments/content-fragments-assoc-content.md)
@@ -79,7 +79,7 @@ ht-degree: 86%
    + [Fragments de contenu – considérations sur la suppression](content-fragments/content-fragments-delete.md)
    + [Texte (Markdown)](content-fragments/content-fragments-markdown.md)
    + [Arborescence de la structure](/help/assets/content-fragments/content-fragments-structure-tree.md)
-   + [Prévisualisation - Représentation JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
+   + [Prévisualisation – Représentation JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
 + Dynamic Media {#dynamicmedia}
    + [Newsletter sur Dynamic Media par Experience League](dynamic-media/dynamic-media-newsletter.md)
    + [Configuration de Dynamic Media](dynamic-media/administering-dynamic-media.md)
@@ -96,7 +96,7 @@ ht-degree: 86%
    + [Application des paramètres prédéfinis d’image Dynamic Media](dynamic-media/image-presets.md)
    + [Gestion des paramètres prédéfinis de la visionneuse Dynamic Media](dynamic-media/managing-viewer-presets.md)
    + [Application des paramètres prédéfinis de la visionneuse Dynamic Media](dynamic-media/viewer-presets.md)
-   + [Paramètres prédéfinis d’ensemble par lot](dynamic-media/batch-set-presets-dm.md)
+   + [Paramètres prédéfinis de lot](dynamic-media/batch-set-presets-dm.md)
    + [Invalidation du cache CDN via Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
    + [Invalidation du cache CDN via Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [Imagerie dynamique](dynamic-media/imaging-faq.md)
