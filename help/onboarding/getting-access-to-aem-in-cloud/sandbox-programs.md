@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 8383dc023b35cf76f7dc0e41cedef8cfab7753aa
 workflow-type: tm+mt
 source-wordcount: '1184'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Un sandbox est généralement créé pour servir à la formation, à l’exécut
 
 Les environnements créés dans un sandbox ne sont pas configurés pour la mise à l’échelle automatique. Par conséquent, ils ne conviennent pas aux tests de performances ou de charge.
 
-Les programmes Sandbox comprennent les sites et les ressources et sont automatiquement renseignés avec un référentiel Git, un environnement de développement et un pipeline hors production.  Le référentiel Git est renseigné avec un exemple de projet basé sur l’archétype de projet AEM.
+Les programmes Sandbox comprennent les sites et les ressources et sont automatiquement renseignés avec un référentiel Git, un environnement de développement et un pipeline hors production. Le référentiel Git est renseigné avec un exemple de projet basé sur l’archétype de projet AEM.
 
 Consultez [Présentation des programmes et des types de programmes](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) pour en savoir plus sur les types de programmes.
 
@@ -51,13 +51,13 @@ Les programmes Sandbox sont livrés de manière automatique dans un environnemen
 
 Le jeu d’environnements de production-évaluation peut être ajouté manuellement au programme Sandbox lorsque l’utilisateur est prêt à configurer un pipeline de production.
 
-Pour savoir comment créer manuellement un environnement, reportez-vous à [Environnement Ajoutant](/help/implementing/cloud-manager/manage-environments.md) pour plus de détails.
+Pour savoir comment créer manuellement un environnement, reportez-vous à [Ajout d’un environnement](/help/implementing/cloud-manager/manage-environments.md) pour plus de détails.
 
 ### Suppression d’environnements Sandbox {#deleting-sandbox-environments}
 
 L’utilisateur disposant des autorisations requises peut supprimer un environnement ou un jeu d’environnements de développement ou de production/d’évaluation.
 
-Pour supprimer un environnement, consultez [Suppression d’Environnement](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) pour plus d’informations.
+Pour supprimer un environnement, reportez-vous à [Suppression d’un environnement](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) pour plus de détails.
 
 
 ## Mise en veille et réactivation d’environnements Sandbox {#hibernating-introduction}
@@ -116,7 +116,7 @@ Consultez [Accès à Developer Console](/help/implementing/cloud-manager/manage-
    ![](assets/hibernate-4.png)
 
 
-### Réactivation{#de-hibernation-introduction}
+### Réactivation {#de-hibernation-introduction}
 
 1. Accédez à **Developer Console**.
 Consultez [Accès à Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) pour savoir comment accéder à **Developer Console** à partir de la carte **Environnements**.
@@ -128,7 +128,7 @@ Consultez [Accès à Developer Console](/help/implementing/cloud-manager/manage-
    >Vous pouvez également accéder à **Developer Console** pour réactiver en essayant d’accéder au service de création ou de publication d’un environnement déjà mis en veille ; dans ce cas, une page d’entrée s’affiche avec un lien vers Developer Console. Reportez-vous à la section Accès à un environnement mis en veille ci-dessous.
 
    >[!IMPORTANT]
-   >L’accès à Developer Console est défini par le **rôle Cloud Manager - Développeur** dans **Admin Console**. Un utilisateur disposant d’une autorisation de rôle de développeur peut réactiver un environnement de programme Sandbox.
+   >L’accès à Developer Console est défini par le **rôle Cloud Manager – Développeur** dans **Admin Console**. Un utilisateur disposant d’une autorisation de rôle de développeur peut réactiver un environnement de programme Sandbox.
 
 1. Cliquez sur **De-hibernate** (Réactiver), comme illustré dans la figure ci-dessous :
 
