@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 0b46cc8ce4229138df84c70193cf9068e1200f0a
 workflow-type: tm+mt
 source-wordcount: '1181'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -26,14 +26,14 @@ En outre, certains clients qui ont déjà été déployés avec AEM 6.5 ou des 
 
 ## Création pour le SDK {#building-for-the-sdk}
 
-L’AEM en tant que SDK Cloud Service est utilisé pour créer et déployer du code personnalisé. Pour plus d&#39;informations, consultez la [AEM documentation sur l&#39;archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en). A un niveau élevé, les étapes suivantes sont effectuées :
+Le SDK AEM as a Cloud Service permet de créer et de déployer du code personnalisé. Pour plus d’informations, consultez la [documentation sur l’archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=fr-FR). Voici ce qui est réalisé de manière générale :
 
-* **Compilez le code**. Comme prévu, le code source est compilé, ce qui génère les packages de contenu résultants.
-* **Créez des artefacts**. Les artefacts sont créés pendant ce processus.
-* **Analyser les lots**. Les lots sont analysés à l’aide du module externe Maven analyzer, qui recherche les problèmes du projet Maven, tels que les dépendances manquantes.
-* **Déployez des artefacts**. Les artefacts sont déployés sur le serveur local.
+* **Compilation du code**. Comme prévu, le code source est compilé afin de générer les packages de contenu résultants.
+* **Création d’artefacts**. Les artefacts sont créés pendant ce processus.
+* **Analyse des lots**. Les lots sont analysés à l’aide du plug-in d’analyse Maven, qui recherche des problèmes dans le projet Maven, tels que les dépendances manquantes.
+* **Déploiement d’artefacts**. Les artefacts sont déployés sur le serveur local.
 
-Les mêmes étapes sont exécutées par Cloud Manager lors du déploiement sur les Environnements Cloud. L’exécution de compilations localement permet le développement et les tests locaux afin que les développeurs puissent découvrir efficacement les problèmes de code ou de structure bien avant de s’engager dans le contrôle de code source et de déclencher les déploiements de Cloud Manager, ce qui peut prendre plus de temps.
+Les mêmes opérations sont exécutées par Cloud Manager lors du déploiement vers des environnements cloud. L’exécution locale de compilations permet de développer et de tester localement afin que les développeurs puissent découvrir efficacement les problèmes de code ou de structure bien avant de s’engager dans le contrôle de code source et de déclencher des déploiements Cloud Manager, ce qui peut prendre plus de temps.
 
 ## Accès au SDK d’AEM as a Cloud Service {#accessing-the-aem-as-a-cloud-service-sdk}
 
