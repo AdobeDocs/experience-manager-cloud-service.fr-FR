@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '799'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
 
    >[!NOTE]
    >
-   >Étant donné que la fonction Statistiques sur les ressources récupère les données de solutions d’Adobe Analytics de manière périodique, la section Solutions peut ne pas afficher les données les plus récentes. La période pendant laquelle les données sont affichées dépend de la planification de l’opération de récupération que la fonction Statistiques sur les ressources exécute pour récupérer les données d’analyse.
+   >Étant donné que la fonction Statistiques sur les ressources récupère les données de solutions d’Adobe Analytics de manière périodique, la section Solutions peut ne pas afficher les données les plus récentes. La période pendant laquelle les données sont affichées dépend de la planification de l’opération de récupération que la fonction Statistiques sur les ressources exécute pour récupérer les données d’Analytics.
 
 1. Pour afficher les statistiques de performances de l’actif sous forme graphique sur une période donnée, sélectionnez une période dans la section **[!UICONTROL Statistiques de performances]**. Les détails, y compris les clics et les impressions, sont affichés sous forme de lignes de tendance dans un graphique.
 
@@ -86,13 +86,13 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 
 ## Configuration des statistiques sur les ressources {#configure-asset-insights}
 
-[!DNL Experience Manager Assets] récupère les données d’utilisation des ressources numériques utilisées par des sites Web tiers à partir de  [!DNL Adobe Analytics]. Pour permettre à la fonction Statistiques sur les ressources de récupérer ces données et de générer des informations, commencez par la configurer afin qu’elle s’intègre à [!DNL Adobe Analytics].
+[!DNL Experience Manager Assets] récupère les données d’utilisation des ressources numériques utilisées par des sites web tiers à partir de [!DNL Adobe Analytics]. Pour permettre à la fonction Statistiques sur les ressources de récupérer ces données et de générer des informations, commencez par la configurer afin qu’elle s’intègre à [!DNL Adobe Analytics].
 
 >[!NOTE]
 >
 >Les statistiques sont uniquement prises en charge et fournies pour les images.
 
-1. Dans [!DNL Experience Manager], cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]**.
+1. Dans [!DNL Experience Manager], cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]**.
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
@@ -103,14 +103,14 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 
    *Figure : Configuration d’Adobe Analytics pour les statistiques sur les ressources dans[!DNL Experience Manager]*
 
-1. Cliquez/appuyez sur **[!UICONTROL Authentifier]**. Une fois que [!DNL Experience Manager] a authentifié vos informations d’identification, dans la liste **[!UICONTROL Report Suite]**, choisissez une suite de rapports Adobe Analytics à partir de laquelle vous voulez que Asset Insights récupère les données. Cliquez sur **[!UICONTROL Ajouter]**.
-1. Une fois [!DNL Experience Manager] configuré votre suite de rapports, appuyez sur **[!UICONTROL Terminé]**.
+1. Cliquez/appuyez sur **[!UICONTROL Authentifier]**. Une fois que [!DNL Experience Manager] a authentifié vos identifiants, dans la liste **[!UICONTROL Suite de rapports]**, sélectionnez une suite de rapports Adobe Analytics à partir de laquelle la fonction Statistiques sur les ressources doit récupérer les données. Cliquez sur **[!UICONTROL Ajouter]**.
+1. Une fois que [!DNL Experience Manager] a configuré votre suite de rapports, appuyez sur **[!UICONTROL Terminé]**.
 
 ### Suivi de page {#page-tracker}
 
-Une fois que vous avez configuré votre compte Adobe Analytics, le code de suivi de page est généré pour vous. Pour permettre au composant Assets Insights d’effectuer le suivi des ressources [!DNL Experience Manager] utilisées dans les sites Web tiers, incluez le code du suivi de page dans le code du site Web. Utilisez l’utilitaire de suivi de page dans Ressources pour générer le code de suivi de page. <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+Une fois que vous avez configuré votre compte Adobe Analytics, le code de suivi de page est généré pour vous. Pour permettre à la fonction Statistiques sur les ressources de surveiller les ressources [!DNL Experience Manager] utilisées sur les sites web tiers, incluez le code de suivi de page dans le code du site web. Utilisez l’utilitaire de suivi de page dans Assets pour générer le code de suivi de page. <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
-1. Dans [!DNL Experience Manager], cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]**.
+1. Dans [!DNL Experience Manager], cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]**.
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
