@@ -1,11 +1,11 @@
 ---
-title: 'Les lancements  '
+title: Lancements
 description: La fonction Lancements permet de développer efficacement du contenu en vue d’une publication ultérieure. Les lancements permettent de préparer les modifications pour une publication à venir, tout en conservant vos pages actuelles.
 translation-type: tm+mt
 source-git-commit: 21f14d1f4e0ae26e097d4b31fe6811f1d089813d
 workflow-type: tm+mt
 source-wordcount: '907'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -23,8 +23,8 @@ Par exemple, les pages de produits saisonniers de votre boutique en ligne sont m
 
 Vous pouvez également :
 
-* Naviguer dans le contenu de la branche de lancement ; ajout ou suppression de pages, si nécessaire.
-* Prévisualisation de la manière dont le contenu publié se penchera sur une date/heure spécifique à l’avenir.
+* Naviguer dans le contenu de la branche de lancement pour ajoute ou supprimer des pages, si nécessaire.
+* Obtenir un aperçu de l’aspect du contenu publié à une date/heure future spécifique.
 
 À l’approche du trimestre suivant, vous convertissez les pages de lancement pour pouvoir modifier les pages source (contenant le contenu mis à jour). Vous pouvez convertir toutes les pages ou uniquement celles que vous avez modifiées. 
 
@@ -37,11 +37,11 @@ Cette section explique comment créer, modifier et convertir (et, le cas échéa
 
 * [Création de lancements](/help/sites-cloud/authoring/launches/creating.md)
 * [Modification de lancements](/help/sites-cloud/authoring/launches/editing.md)
-* [Gestion des pages dans les lancements](/help/sites-cloud/authoring/launches/managing-pages.md)
-* [Utilisation de Timewarp pour Prévisualisation de votre contenu en fonction des lancements](/help/sites-cloud/authoring/launches/preview.md)
+* [Gestion des pages lors des lancements](/help/sites-cloud/authoring/launches/managing-pages.md)
+* [Utilisation de Timewarp pour obtenir un aperçu du contenu en fonction des lancements](/help/sites-cloud/authoring/launches/preview.md)
 * [Conversion de lancements](/help/sites-cloud/authoring/launches/promoting.md)
 
-## Lancements - Ordre des événements {#launches-the-order-of-events}
+## Lancements – Ordre des événements {#launches-the-order-of-events}
 
 La fonction Lancements vous permet de développer efficacement le contenu en vue d’une publication future d’une ou de plusieurs pages web activées.
 
@@ -65,7 +65,7 @@ La fonction Lancements vous permet de :
    * Automatiquement, ce qui implique les étapes suivantes : 
       * Le champ **Date de** **lancement** (**En direct**) : ce paramètre peut être défini lors de la création ou de la modification du lancement.
       * L’indicateur **Prêt pour la production** : cette option n’est sélectionnable que lors de la modification d’un lancement.
-      * Si l’indicateur **Prêt pour la production** est défini, le lancement sera automatiquement converti en pages de production à la date de **lancement** (**En direct**) spécifiée ****. Après la promotion, les pages de production sont automatiquement publiées.\
+      * Si l’indicateur **Prêt pour la production** est défini, le lancement sera automatiquement converti en pages de production à la **date** de **lancement** (**En direct**) spécifiée. Après la promotion, les pages de production sont automatiquement publiées.\
          Si aucune date n’a été définie, l’indicateur n’a aucun effet.
 * Mettez à jour vos pages source et de lancement en parallèle :
    * Les modifications apportées aux pages source sont automatiquement appliquées à la copie de lancement (si elle a été configurée avec un héritage, c’est-à-dire comme Live Copy). 
@@ -93,7 +93,7 @@ La fonction Lancements vous permet de :
 
 1. Dans la console **Sites**, accédez à la source des lancements.
 1. Ouvrez le rail **Références** et sélectionnez la page source.
-1. Sélectionnez **Lancements**, les lancements existants seront répertoriés, ainsi que l&#39;accès à la **Console de lancements** :
+1. Sélectionnez **Lancements**. Les lancements existants seront répertoriés, ainsi que l’accès à la **Console Lancements** :
 
    ![Références des lancements dans la console des sites](/help/sites-cloud/authoring/assets/launches-references.png)
 
@@ -101,19 +101,19 @@ La fonction Lancements vous permet de :
 
    ![Actions à effectuer sur les lancements dans la console des sites](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
-## Console de lancements {#the-launches-console}
+## Console Lancements {#the-launches-console}
 
-La console de lancements fournit un aperçu de vos lancements et permet d’appliquer des actions sur les lancements répertoriés. Vous pouvez accéder à la console via :
+La console Lancements fournit un aperçu de vos lancements et permet d’appliquer des actions sur les lancements répertoriés. Vous pouvez accéder à la console via :
 
 * La console **Outils** : **Outils**, **Sites**, **Lancements**.
 
-* **Lancements** Consolez la partie inférieure de la section  **** Lancement du  **** rail de références lors de la navigation dans le contenu source dans la console Sites.
+* La **Console Lancements** dans la partie inférieure de la section **Lancements** du rail **Références** lors du parcours du contenu source dans la console Sites.
 
-   ![lance la console dans les références des lancements dans la console Sites](/help/sites-cloud/authoring/assets/launches-references.png)
+   ![Lance la console dans les références des lancements de la console Sites](/help/sites-cloud/authoring/assets/launches-references.png)
 
-* Le bouton **Lance** en haut à droite lors de la navigation dans le contenu du lancement dans la console Sites :
+* Le bouton **Lancements** en haut à droite lors du parcours du contenu du lancement dans la console Sites :
 
    ![Option Lancements dans la console Sites](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
 
-* Ou directement ; par exemple, avec :
+* Ou directement, par exemple, avec :
    `https://<host>:<port>/libs/launches/content/launches.html`
