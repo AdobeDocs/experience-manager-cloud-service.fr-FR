@@ -2,10 +2,10 @@
 title: Utilisation de contenu ciblé sur plusieurs sites
 description: Si vous devez gérer du contenu ciblé, tel que des activités, des expériences et des offres sur vos différents sites, vous pouvez profiter de la prise en charge de sites multiples intégrée à AEM pour le contenu ciblé
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 01ca37d8bdf1c7e5c1801db6f4ad537772407064
 workflow-type: tm+mt
-source-wordcount: '2900'
-ht-degree: 100%
+source-wordcount: '2915'
+ht-degree: 99%
 
 ---
 
@@ -36,7 +36,7 @@ Pour définir la façon dont vos sites partagent du contenu personnalisé, vous 
 
 Vous pouvez à tout moment suspendre ou restaurer l’héritage. En outre, si vous ne souhaitez pas suspendre l’héritage, vous pouvez également créer des expériences locales. Sauf indication contraire, toutes les pages utilisent par défaut la zone maître.
 
-## Présentation de la prise en charge de sites multiples pour le contenu ciblé     {#introduction-to-multisite-support-for-targeted-content}
+## Présentation de la prise en charge de sites multiples pour le contenu ciblé    {#introduction-to-multisite-support-for-targeted-content}
 
 La prise en charge de sites multiples pour le contenu ciblé est prête à l’emploi. Elle vous permet de pousser le contenu ciblé du gabarit que vous gérez via MSM vers une Live Copy locale ou de gérer des modifications globales et locales du contenu en question.
 
@@ -52,6 +52,7 @@ Un site ou une Live Copy présente un lien vers une zone contenant les activité
 >
 >* Lorsque vous utilisez des déploiements ou des Live Copies, une licence MSM est requise.
 >* Lorsque vous utilisez la synchronisation avec Adobe Target, une licence Adobe Target est requise.
+
 >
 
 
@@ -188,9 +189,9 @@ Pour créer une zone comme Live Copy :
 
 1. Dans le menu déroulant **Configurations du déploiement**, sélectionnez la configuration appropriée.
 
-   Voir Configurations de déploiement installées pour obtenir une description de chaque option. <!--See [Installed Rollout Configurations](/help/sites-administering/msm-sync.md#installed-rollout-configurations) for descriptions of each option.-->
+   Voir [Configurations de déploiement installées](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-sync.html#installed-and-custom-rollout-configurations) pour obtenir une description de chaque option.
 
-   Voir Création et synchronisation des Live Copies pour plus d’informations sur les Live Copies. <!--See [Creating and Synchronizing Live Copies](/help/sites-administering/msm-livecopy.md) for more information on live copies.-->
+   Voir [Création et synchronisation des Live Copies](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-livecopy.html) pour plus d’informations sur les Live Copies.
 
    >[!NOTE]
    >
@@ -239,6 +240,7 @@ Une activité qui hérite d’un autre site comporte une marque verte en regard 
 >
 >* Vous pouvez uniquement suspendre ou désolidariser des Live Copies dans une activité.
 >* Vous n’avez pas besoin de suspendre ou de désolidariser des Live Copies pour étendre une activité héritée. Vous pouvez toujours créer de **nouvelles** expériences et offres locales pour cette activité. Si vous souhaitez modifier une activité existante, il vous faut suspendre l’héritage.
+
 >
 
 
