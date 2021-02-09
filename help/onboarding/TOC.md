@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: 42147d7465ec10a41702e74699a3d54624b7d4bd
 workflow-type: tm+mt
 source-wordcount: '662'
-ht-degree: 39%
+ht-degree: 48%
 
 ---
 
@@ -50,18 +50,18 @@ ht-degree: 39%
    + Gestion des certificats SSL {#manage-ssl-certificates}
       + [Présentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/introduction.html)
       + [Obtention d’un certificat SSL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/get-ssl-certificate.html)
-      + [Ajouter un certificat SSL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html)
+      + [Ajout d’un certificat SSL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html)
       + [Affichage et mise à jour ou remplacement d’un certificat SSL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/view-update-replace-ssl-certificate.html)
       + [Vérification du statut d’un certificat SSL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/check-status-ssl-certificate.html)
       + [Suppression d’un certificat SSL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/delete-ssl-certificate.html)
    + Gestion des noms de domaine personnalisés {#custom-domain-names}
       + [Présentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/introduction.html)
       + [Obtention d’un nom de domaine personnalisé](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/get-custom-domain-name.html)
-      + [Ajouter un nom de domaine personnalisé](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html)
-      + [Ajouter un enregistrement TXT](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html)
+      + [Ajout d’un nom de domaine personnalisé](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html)
+      + [Ajout d’un enregistrement TXT](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html)
       + [Vérification de l&#39;état du nom de domaine personnalisé](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html)
       + [Configuration des paramètres DNS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html)
-      + [Vérification de l&#39;état de l&#39;enregistrement DNS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html)
+      + [Vérification du statut de l’enregistrement DNS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html)
       + [Affichage et mise à jour du nom de domaine personnalisé](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html)
       + [Mise à jour du certificat SSL du nom de domaine personnalisé](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/update-cdn-ssl-certificate.html)
       + [Suppression du nom de domaine personnalisé](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/delete-custom-domain-name.html)
@@ -71,7 +71,7 @@ ht-degree: 39%
       + [Affichage et mise à jour d&#39;une Liste autorisée IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/view-update-ip-allow-list.html)
       + [Application d&#39;une Liste autorisée IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html)
       + [Annulation de l&#39;application d&#39;une Liste autorisée IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/unapply-ip-allow-list.html)
-      + [Suppression d’une Liste autorisée IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html)
+      + [Suppression d’une liste autorisée d’adresses IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html)
       + [Vérification de l&#39;état d&#39;une Liste autorisée IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html)
    + Notes de mise à jour de Cloud Manager {#release-notes-cloud-manager}
       + [Notes de mise à jour de la version actuelle (2021.1.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
@@ -94,7 +94,7 @@ ht-degree: 39%
    + [AEM as a Cloud Service et directives d’accessibilité web](accessibility/web-accessibility.md)
    + [Guide rapide relatif à WCAG 2.1](accessibility/quick-guide-wcag.md)
 + Méthodologie de migration {#migration-methodology}
-   + [Migration vers Adobe Experience Manager en tant que Cloud Service](migration-methodology/getting-started.md)
+   + [Migration vers Adobe Experience Manager as a Cloud Service](migration-methodology/getting-started.md)
 + Bonnes pratiques {#best-practices}
    + [Gestion de l’optimisation et des URL](best-practices/seo-and-url-management.md)
 + [Présentation des consoles des outils](tools-consoles.md)
