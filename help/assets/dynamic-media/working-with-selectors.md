@@ -1,16 +1,16 @@
 ---
 title: Utilisation des sélecteurs
-description: Découvrez les méthodes que vous pouvez utiliser pour sélectionner des fichiers pour des images interactives, des vidéos interactives et des bannières de carrousel dans Dynamic Media.
+description: Découvrez les méthodes que vous pouvez utiliser pour sélectionner des ressources sous forme d’images interactives, de vidéos interactives et de bannières de carrousel dans Dynamic Media.
 translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '748'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
-# Utilisation de sélecteurs dans Dynamic Media {#working-with-selectors}
+# Utilisation de sélecteurs dans Dynamic Media {#working-with-selectors}
 
 Lorsque vous utilisez une image interactive, une vidéo interactive ou une bannière de carrousel, vous sélectionnez des ressources, ainsi que des sites et des produits auxquels relier les zones réactives et les zones cliquables. Lorsque vous travaillez avec des visionneuses d’images, des visionneuses à 360° et de contenu multimédia, vous devez également sélectionner les ressources à l’aide du sélecteur de ressources.
 
@@ -103,11 +103,11 @@ Reportez-vous également à la section [Sélecteur de ressources](/help/assets/s
 
    ![chlimage_1-534](assets/chlimage_1-534.png)
 
-   Appuyez sur **[!UICONTROL Afficher comme]** pour changer l’affichage des produits (en mode **[!UICONTROL Liste]**, en mode **[!UICONTROL Colonne]** ou en mode **[!UICONTROL Carte]**).
+   Appuyez sur **[!UICONTROL Afficher sous]** pour changer l’affichage des produits (en mode **[!UICONTROL Liste]**, en mode **[!UICONTROL Colonne]** ou en mode **[!UICONTROL Carte]**).
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 
-1. Activez sur la coche pour sélectionner la ressource. La ressource s’affiche.
+1. Cochez la ressource pour la sélectionner. La ressource s’affiche.
 
    ![chlimage_1-536](assets/chlimage_1-536.png)
 -->
