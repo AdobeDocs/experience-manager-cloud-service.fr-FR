@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 0a2d44a63c3d26460c0836ab6b28989a0aad72da
 workflow-type: tm+mt
 source-wordcount: '2737'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -288,7 +288,7 @@ Dans les exemples ci-dessous, supposons qu’il y ait trois environnements de d�
 
 **Exemple 1**
 
-L’objectif est que la valeur de la propriété OSGi `my_var1` soit identique pour l’évaluation et la production, mais différente pour chacun des trois environnements de développement. 
+L’objectif est que la valeur de la propriété OSGi `my_var1` soit identique pour l’évaluation et la production, mais différente pour chacun des trois environnements de développement.
 
 <table>
 <tr>
@@ -472,10 +472,10 @@ config.dev
 
 ## Format de l’API Cloud Manager pour la définition des propriétés {#cloud-manager-api-format-for-setting-properties}
 
-Voir [cette page](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md) sur la configuration de l&#39;API.
+Voir [cette page](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md) à propos de la configuration de l’API.
 >[!NOTE]
 >
->Assurez-vous que l’API Cloud Manager utilisée a attribué le rôle &quot;Deployment Manager - Cloud Service&quot;. Les autres rôles ne peuvent pas exécuter toutes les commandes ci-dessous.
+>Assurez-vous que l’API Cloud Manager utilisée a attribué le rôle « Responsable de déploiement – Cloud Service ». Les autres rôles ne peuvent pas exécuter toutes les commandes ci-dessous.
 
 ### Définition de valeurs via l’API {#setting-values-via-api}
 
