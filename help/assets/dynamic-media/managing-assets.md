@@ -21,7 +21,7 @@ Pour des informations générales sur la gestion des ressources, consultez [Gest
 Les rubriques suivantes décrivent les tâches que vous devez effectuer pour gérer des ressources Dynamic Media :
 
 * [Bonnes pratiques relatives à l’optimisation de la qualité des images](best-practices-for-optimizing-the-quality-of-your-images.md)
-* [Prévisualisation de ressources Dynamic Media](previewing-assets.md)
+* [Aperçu de ressources Dynamic Media](previewing-assets.md)
 * [Publication de ressources Dynamic Media](publishing-dynamicmedia-assets.md)
 * [Utilisation des sélecteurs](working-with-selectors.md)
 
