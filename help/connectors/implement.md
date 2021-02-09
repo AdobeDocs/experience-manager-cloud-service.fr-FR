@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
 source-wordcount: '960'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Modèles d’intégration courants
 
 AEM est une solution de gestion de l’expérience web haut de gamme qui propose de nombreux domaines d’intégration potentiels. Les modèles d’intégration courants sont les suivants :
 
-* Extraction de données d’un système externe dans AEM ; par exemple, exporter des informations de contact depuis un système CRM afin de les mettre à la disposition d’un plus grand nombre de personnes qui visitent un site web utilisant la technologie AEM. Les implémentations doivent utiliser les [tâches planifiées](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#scheduled-jobs) de Sling, ce qui garantit que la tâche est exécutée même si les conteneurs tombent en panne. Le code doit être conçu de manière à supposer que la tâche peut être déclenchée plusieurs fois.
+* Extraction de données d’un système externe dans AEM ; par exemple, exporter des informations de contact depuis un système CRM afin de les mettre à la disposition d’un plus grand nombre de personnes qui visitent un site web utilisant la technologie AEM.  Les implémentations doivent utiliser les [tâches planifiées](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#scheduled-jobs) de Sling, ce qui garantit que la tâche est exécutée même si les conteneurs tombent en panne. Le code doit être conçu de manière à supposer que la tâche peut être déclenchée plusieurs fois.
 * Exportation de données d’AEM vers un système externe. Il peut s’agir, par exemple, des paramètres d’abonnement à des newsletters envoyés à un système CRM sur un site web utilisant la technologie AEM.
 * Récupération de ressources d’AEM. Il peut s’agir, par exemple, d’un système de gestion de contenu (CMS) externe faisant référence à une ressource stockée dans AEM Assets. Autre exemple : un système PIM lié à une image dans AEM Assets.
 * Stockage de ressources dans l’infrastructure AEM. Il peut s’agir, par exemple, d’un système de gestion des ressources marketing (MRM) qui stocke une ressource approuvée dans AEM Assets.
@@ -69,7 +69,7 @@ Il est recommandé de placer la majorité du code du connecteur sous `/apps/conn
 Configuration de Cloud Services
 -----------------------------
 
-Le code sur lequel est basée la configuration du connecteur constitue l’un des aspects de son implémentation. Ce code entraîne l’affichage d’une carte portant le nom du connecteur sous Outils > Opérations > Cloud Services. Lorsque vous cliquez dessus, un [navigateur de configuration](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) s’affiche où le client sélectionne le dossier parent qui contient la configuration du connecteur. Le code du connecteur doit générer un formulaire avec toutes les propriétés à configurer et stocker, au final, les valeurs dans un dossier de configuration sous `/conf`. Ce dossier pourra ensuite être sélectionné sous l’onglet Propriétés de Sites ou Propriétés d’Assets.
+Le code sur lequel est basée la configuration du connecteur constitue l’un des aspects de son implémentation. Ce code entraîne l’affichage d’une carte portant le nom du connecteur sous Outils > Opérations > Cloud Services. Lorsque vous cliquez dessus, un [explorateur de configurations](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) apparaît. Il permet au client de sélectionner le dossier parent où sera stockée la configuration du connecteur. Le code du connecteur doit générer un formulaire avec toutes les propriétés à configurer et stocker, au final, les valeurs dans un dossier de configuration sous `/conf`. Ce dossier pourra ensuite être sélectionné sous l’onglet Propriétés de Sites ou Propriétés d’Assets.
 
 
 Configurations basées sur le contexte
