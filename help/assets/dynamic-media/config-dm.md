@@ -1,11 +1,11 @@
 ---
 title: Configuration de Dynamic Media Cloud Service
-description: Informations sur la configuration de Dynamic Media dans Adobe Experience Manager en tant que Cloud Service.
+description: Informations sur la configuration de Dynamic Media dans Adobe Experience Manager as a Cloud Service.
 translation-type: tm+mt
 source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
 workflow-type: tm+mt
 source-wordcount: '3869'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
@@ -130,7 +130,7 @@ Voir aussi [Votre boîte de réception](/help/sites-cloud/authoring/getting-star
 **Pour résoudre les problèmes liés à une nouvelle configuration Dynamic Media**
 
 1. Près de l’angle supérieur droit de la page AEM, appuyez sur l’icône en forme de cloche, puis sur **[!UICONTROL Afficher tout]**.
-1. Sur la page Boîte de réception, appuyez sur la notification de réussite pour accéder à un aperçu de l’état et des journaux de la configuration.
+1. Sur la page Boîte de réception, appuyez sur la notification de succès pour accéder à un aperçu de l’état et des journaux de la configuration.
 
    Si la configuration a échoué, appuyez sur la notification d’échec, similaire à la capture d’écran ci-dessous.
 
@@ -169,7 +169,7 @@ Le mot de passe modifié est enregistré lorsque vous appuyez sur **[!UICONTROL 
 
 1. Dans l’angle supérieur droit de la page **[!UICONTROL Modifier la configuration Dynamic Media]**, appuyez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL OK.]**
 
-## (Facultatif) Configuration des paramètres avancés dans Dynamic Media{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
+## (Facultatif) Configuration des paramètres avancés dans Dynamic Media {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
 Si vous souhaitez personnaliser davantage l’installation et la configuration de Dynamic Media, ou en optimiser les performances, vous pouvez effectuer une ou plusieurs des tâches *facultatives* suivantes :
 
@@ -194,11 +194,11 @@ Les tâches d’installation et de configuration incluent :
 * [Configuration des paramètres généraux de l’application](#configuring-application-general-settings)
 * [Configuration de la gestion des couleurs](#configuring-color-management)
 * [Modification des types MIME pour les formats pris en charge](#editing-mime-types-for-supported-formats)
-* [Ajouter les types MIME pour les formats non pris en charge](#adding-mime-types-for-unsupported-formats)
+* [Ajout de types MIME pour les formats non pris en charge](#adding-mime-types-for-unsupported-formats)
 
 <!-- * [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
 
-#### Configuration de la publication pour Image Server  {#publishing-setup-for-image-server}
+#### Configuration de la publication pour Image Server {#publishing-setup-for-image-server}
 
 Les paramètres de configuration de la publication déterminent comment les ressources sont diffusées par défaut à partir de Dynamic Media. Si aucun paramètre n’est spécifié, Dynamic Media diffuse une ressource selon les paramètres par défaut définis dans Configuration de la publication. Par exemple, une requête de diffusion d’image qui ne comporte pas d’attribut de résolution produit une image avec le paramètre de résolution d’objet par défaut.
 
@@ -258,12 +258,12 @@ Cela aura les effets suivants :
 
 #### Modification des types MIME pour les formats pris en charge {#editing-mime-types-for-supported-formats}
 
-Vous pouvez définir quels types de fichier sont traités par Dynamic Media et personnaliser les paramètres avancés de traitement des fichiers. Vous pouvez, par exemple, spécifier les paramètres de traitement des ressources de façon à ce qu’ils effectuent les opérations suivantes :
+Vous pouvez définir les types de ressources traités par Dynamic Media et personnaliser les paramètres de traitement des ressources avancé. Vous pouvez, par exemple, spécifier les paramètres de traitement des ressources de façon à ce qu’ils effectuent les opérations suivantes :
 
 * Conversion d’un PDF Adobe en ressource de catalogue électronique.
 * Conversion d’un document Adobe Photoshop (.psd) en ressource de modèle de bannière afin de permettre la personnalisation.
 * Pixellisation d’un fichier Adobe Illustrator (.ai) ou d’un fichier PostScript encapsulé Adobe Photoshop (.eps).
-* [Les ](/help/assets/dynamic-media/video-profiles.md) profils vidéo et les  [profils ](/help/assets/dynamic-media/image-profiles.md) d’imagerie peuvent être utilisés pour définir le traitement des vidéos et des images, respectivement.
+* Des [profils vidéo](/help/assets/dynamic-media/video-profiles.md) et des [profils d’images](/help/assets/dynamic-media/image-profiles.md) peuvent être utilisés pour définir le traitement des vidéos et des images.
 
 Voir la section [Chargement des ressources](/help/assets/add-assets.md).
 
@@ -279,9 +279,9 @@ Voir la section [Chargement des ressources](/help/assets/add-assets.md).
 1. Sous le dossier mimeTypes, sélectionnez un type MIME.
 1. Sur le côté droit de la page CRXDE Lite, dans la partie inférieure :
 
-   * Doublon-cliquez sur le champ **[!UICONTROL enabled]**. Par défaut, tous les types MIME des ressources sont activés (définis sur **[!UICONTROL true]**), ce qui signifie que les ressources seront synchronisées avec Dynamic Media pour le traitement. Si vous souhaitez exclure le traitement de ce type MIME de ressource, modifiez ce paramètre en **[!UICONTROL false]**.
+   * Double-cliquez sur le champ **[!UICONTROL activé]**. Par défaut, tous les types MIME des ressources sont activés (définis sur **[!UICONTROL true]**), ce qui signifie que les ressources seront synchronisées avec Dynamic Media pour le traitement. Si vous voulez exclure ce type MIME de ressource du traitement, définissez ce paramètre sur **[!UICONTROL false]**.
 
-   * Cliquez avec le doublon **[!UICONTROL jobParam]** pour ouvrir le champ de texte associé. Voir [Types MIME pris en charge](/help/assets/file-format-support.md) pour connaître la liste des valeurs de paramètres de traitement que vous pouvez utiliser pour un type MIME donné.
+   * Double-cliquez sur **[!UICONTROL jobParam]** pour ouvrir le champ de texte associé. Voir [Types MIME pris en charge](/help/assets/file-format-support.md) pour connaître la liste des valeurs de paramètres de traitement que vous pouvez utiliser pour un type MIME donné.
 
 1. Utilisez l’une des méthodes suivantes :
    * Répétez les étapes 3 et 4 pour modifier d’autres types MIME.
@@ -289,7 +289,7 @@ Voir la section [Chargement des ressources](/help/assets/add-assets.md).
 
 1. Dans le coin supérieur gauche de la page, appuyez sur **[!UICONTROL CRXDE Lite]** pour revenir dans AEM.
 
-#### Ajouter les types MIME pour les formats non pris en charge {#adding-mime-types-for-unsupported-formats}
+#### Ajout de types MIME pour les formats non pris en charge {#adding-mime-types-for-unsupported-formats}
 
 Vous pouvez ajouter des types MIME personnalisés pour les formats non pris en charge dans AEM Assets. Pour vous assurer que tout nouveau nœud ajouté dans CRXDE Lite n’est pas supprimé par AEM, vous devez vous assurer que vous déplacez le type MIME avant `image_` et que sa valeur activée est définie sur **[!UICONTROL false]**.
 
@@ -343,7 +343,7 @@ Vous pouvez ajouter des types MIME personnalisés pour les formats non pris en c
 
 
 
-### (Facultatif) Optimisation des performances de Dynamic Media{#optional-tuning-the-performance-of-dynamic-media-scene-mode}
+### (Facultatif) Optimisation des performances de Dynamic Media {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
 Pour garantir la bonne exécution de Dynamic Media <!--(with `dynamicmedia_scene7` run mode)-->, Adobe recommande les actions suivantes permettant d’optimiser les performances/l’évolutivité de la synchronisation :
 
@@ -380,7 +380,7 @@ La file d’attente de workflows Granite est utilisée pour le workflow **[!UICO
 
 1. Dans le champ **[!UICONTROL Maximum Parallel Jobs]** (Nombre maximal de tâches en parallèle), modifiez le nombre en fonction de la valeur souhaitée.
 
-   Vous pouvez augmenter **[!UICONTROL le nombre maximal de tâches parallèles]** afin de prendre en charge le chargement intensif de fichiers vers Dynamic Media. La valeur exacte dépend de la capacité matérielle. Dans certains cas, c’est-à-dire lors d’une migration initiale ou d’un transfert en vrac unique, vous pouvez utiliser une valeur importante. Sachez toutefois que l’utilisation d’une valeur élevée (par exemple deux fois le nombre de coeurs) peut avoir des effets négatifs sur d’autres activités simultanées. Vous devez donc tester et ajuster la valeur en fonction de votre cas d’utilisation particulier.
+   Vous pouvez augmenter le **[!UICONTROL nombre maximal de tâches en parallèle]** afin de prendre en charge le chargement intensif de fichiers vers Dynamic Media. La valeur exacte dépend de la capacité du matériel. Dans certains cas, c’est-à-dire lors d’une migration initiale ou d’un chargement massif unique, vous pouvez utiliser une valeur élevée. Sachez toutefois que l’utilisation d’une valeur élevée (par exemple deux fois le nombre de cœurs) peut avoir des effets négatifs sur les activités simultanées. Vous devez donc tester et ajuster la valeur en fonction de votre cas d’utilisation particulier.
 
 <!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
@@ -388,7 +388,7 @@ La file d’attente de workflows Granite est utilisée pour le workflow **[!UICO
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
-1. Appuyez sur **[!UICONTROL Save]** (Enregistrer).
+1. Appuyez sur **[!UICONTROL Enregistrer]**.
 
 #### Mise à jour de la file d’attente de workflows Granite {#updating-the-granite-workflow-queue}
 
