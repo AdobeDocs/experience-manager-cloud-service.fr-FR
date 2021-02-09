@@ -2,22 +2,21 @@
 title: Tests de l’interface utilisateur – Cloud Services
 description: Tests de l’interface utilisateur – Cloud Services
 translation-type: tm+mt
-source-git-commit: bf3fb5178bc2ae72e19ecc1de82b08fac5089ecf
+source-git-commit: ea0c9675ca03b1d247c7e5fd13e03072fb4a13ae
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 100%
+source-wordcount: '997'
+ht-degree: 96%
 
 ---
 
 
 # Tests de l’interface utilisateur {#ui-testing}
 
->[!CAUTION]
->
->Cette fonction n’est pas encore disponible de manière généralisée.
-
-
 Les tests de l’interface utilisateur sont des tests basés sur Selenium placés dans une image Docker afin de permettre un large choix de langues et de cadres (tels que Java et Maven, Node et WebDriver.io, ou tout autre cadre et technologie basé sur Selenium). L’image Docker peut être créée avec des outils standard, mais elle doit respecter certaines conventions lors de son exécution. Lors de l’exécution de l’image Docker, un serveur Selenium est automatiquement mis en service. Les conventions d’exécution décrites ci-dessous permettent à votre code de test d’accéder à la fois au serveur Selenium et aux instances AEM testées.
+
+>[!NOTE]
+> Les gazoducs d’étape et de production créés avant le 10 février 2021 doivent être mis à jour afin d’utiliser les tests d’interface utilisateur décrits sur cette page.
+> Voir [Configuration de votre pipeline CI-CD](/help/implementing/cloud-manager/configure-pipeline.md) pour plus d&#39;informations sur la configuration du pipeline.
 
 ## Création de tests de l’interface utilisateur {#building-ui-tests}
 
