@@ -1,11 +1,11 @@
 ---
-title: Introduction - Gestion des certificats SSL
-description: Introduction - Gestion des certificats SSL
+title: Introduction – Gestion des certificats SSL
+description: Introduction – Gestion des certificats SSL
 translation-type: tm+mt
 source-git-commit: 4ab944ad15390f9399138672a024aa30cf4aede8
 workflow-type: tm+mt
 source-wordcount: '254'
-ht-degree: 1%
+ht-degree: 78%
 
 ---
 
@@ -17,22 +17,22 @@ Cloud Manager permet aux clients d’installer des certificats SSL en libre-serv
 ## Points importants {#important-considerations}
 
 
-* Cloud Manager ne fournit pas de certificats SSL ni de clés privées. Ils doivent être obtenus auprès d&#39;autorités de certification tierces. Consultez [Obtention d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) pour en savoir plus.
+* Cloud Manager ne fournit pas de certificats SSL ni de clés privées. Ils doivent être obtenus auprès d’autorités de certification tierces. Consultez [Obtention d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) pour en savoir plus.
 
-* aem en tant que Cloud Service ne prend en charge que les sites sécurisés `https`. Les clients disposant de plusieurs domaines personnalisés ne souhaitent pas télécharger de certificat chaque fois qu’ils ajoutent un domaine. Par conséquent, ces clients bénéficieront d’un certificat comportant plusieurs domaines.
+* aem en tant que Cloud Service ne prend en charge que les sites sécurisés `https`. Les clients disposant de plusieurs domaines personnalisés ne souhaitent pas télécharger un certificat à chaque fois qu’ils ajoutent un domaine. Ces clients obtiendront ainsi un certificat comportant plusieurs domaines.
 
-Cloud Manager prend en charge les exigences de certificat SSL client suivantes :
+Cloud Manager respecte les exigences suivantes en matière de certificat SSL client :
 
-* Un certificat SSL peut être utilisé par plusieurs Environnements, c’est-à-dire, ajouter une fois et utiliser plusieurs fois.
-* Chaque Environnement de Cloud Manager peut utiliser plusieurs certificats.
+* Un certificat SSL peut être utilisé par plusieurs environnements, c’est-à-dire ajouter une fois et utiliser plusieurs fois.
+* Chaque environnement Cloud Manager peut utiliser plusieurs certificats.
 * Une clé privée peut émettre plusieurs certificats SSL.
 * Chaque certificat contient généralement plusieurs domaines.
-* Le service TLS de plate-forme achemine les demandes vers le service CDN du client en fonction du certificat SSL utilisé pour s’arrêter et du service CDN qui héberge ce domaine.
+* Le service Platform TLS achemine les requêtes vers le service CDN du client en fonction du certificat SSL utilisé pour s’arrêter et du service CDN qui héberge ce domaine.
 
-A l’aide de la page Certificats SSL de l’interface utilisateur de Cloud Manager, un utilisateur disposant d’autorisations peut exécuter plusieurs tâches pour gérer des certificats SSL pour un programme :
+La page Certificats SSL de l’interface utilisateur de Cloud Manager permet à un utilisateur disposant d’autorisations d’exécuter plusieurs tâches pour gérer des certificats SSL pour un programme :
 
-* [Ajouter un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+* [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
 * [Affichage, mise à jour ou remplacement d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
    >[!NOTE]
-   >Ces actions vous permettent de vue des détails ou de remplacer un certificat qui arrive à expiration.
+   >Ces actions vous permettent de consulter des détails ou de remplacer un certificat qui arrive à expiration.
 * [Suppression d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
