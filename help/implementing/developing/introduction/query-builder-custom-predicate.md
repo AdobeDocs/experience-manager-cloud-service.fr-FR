@@ -1,29 +1,29 @@
 ---
 title: Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder.
-description: Le créateur de Requêtes dans AEM offres est un moyen facile et personnalisable de requête au référentiel de contenu.
+description: Query Builder, associé à AEM, met à votre disposition un moyen efficace et personnalisable d’appliquer des requêtes au référentiel de contenu.
 translation-type: tm+mt
 source-git-commit: 21a0e6967a17ea30435d0343c4aa497f54134cda
 workflow-type: tm+mt
 source-wordcount: '673'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
 
-# Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder.{#implementing-a-custom-predicate-evaluator-for-the-query-builder}
+# Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder {#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
-Ce document décrit comment étendre le [créateur de Requêtes](query-builder-api.md) en implémentant un évaluateur de prédicats personnalisé.
+Ce document décrit comment étendre [Query Builder](query-builder-api.md) en mettant en œuvre un évaluateur de prédicat personnalisé.
 
 ## Présentation {#overview}
 
-Les offres [Créateur de Requêtes](query-builder-api.md) constituent un moyen facile de requête au référentiel de contenu. aem est fourni avec [un ensemble d’évaluateurs de prédicats](#query-builder-predicates.md) qui vous aident à requête vos données.
+[Query Builder](query-builder-api.md) met à votre disposition un moyen efficace d’appliquer des requêtes au référentiel de contenu. AEM est fourni avec [un ensemble d’évaluateurs de prédicats](#query-builder-predicates.md) qui vous aident à appliquer des requêtes à vos données.
 
 Toutefois, vous pouvez simplifier vos requêtes en mettant en œuvre un évaluateur de prédicat personnalisé qui masque une partie de la complexité et assure une meilleure sémantique.
 
 Un prédicat personnalisé peut également réaliser d’autres actions qui ne sont pas directement possibles avec XPath, par exemple :
 
-* Interrogation des données d’un autre service
-* Filtrage personnalisé basé sur un calcul
+* Requêtes sur des données à l’aide d’un autre service
+* Filtrage personnalisé basé sur le calcul
 
 >[!NOTE]
 >
@@ -31,25 +31,25 @@ Un prédicat personnalisé peut également réaliser d’autres actions qui ne s
 
 >[!TIP]
 >
->Vous trouverez des exemples de requêtes dans le document [Créateur de Requêtes](query-builder-api.md).
+>Vous trouverez des exemples de requêtes dans le document [Query Builder](query-builder-api.md).
 
 >[!TIP]
 >
 >Vous pouvez trouver le code de cette page sur GitHub.
 >
->* [Ouvrez le projet aem-search-custom-prédicate-évaluator sur GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
+>* [Ouvrez le projet aem-search-custom-predicate-evaluator sur GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
 >* Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip).
 
 
 >[!NOTE]
 >
->Ce code lié sur GitHub et les fragments de code de ce document sont fournis à des fins de démonstration uniquement.
+>Ce code lié sur GitHub et les fragments de code de ce document sont fournis exclusivement à des fins de démonstration.
 
 ### L’évaluateur de prédicat en détail {#predicate-evaluator-in-detail}
 
-Un évaluateur de prédicat gère l’évaluation de certains prédicats, qui constituent les contraintes définissant une requête.
+Un évaluateur gère l’évaluation de certains prédicats qui constituent les contraintes définissant une requête.
 
-Il mappe une contrainte de recherche de niveau supérieur (telle que `width>200`) à une requête JCR spécifique qui correspond au modèle de contenu réel (ex. : `metadata/@width > 200`). Il peut également filtrer manuellement les nœuds et vérifier leurs contraintes.
+Il mappe une contrainte de recherche de plus haut niveau (par exemple `width>200`) sur une requête JCR spécifique adaptée au modèle de contenu actuel (par exemple `metadata/@width > 200`). Il peut également filtrer manuellement les nœuds et vérifier leurs contraintes.
 
 >[!TIP]
 >
@@ -57,7 +57,7 @@ Il mappe une contrainte de recherche de niveau supérieur (telle que `width>200`
 
 ### Mise en œuvre d’un évaluateur de prédicat personnalisé pour les métadonnées de réplication {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
-Cette section vous explique, par exemple, comment créer un évaluateur de prédicats personnalisé qui aide les données en fonction des métadonnées de réplication :
+En guise d’illustration, cette section décrit comment créer un évaluateur de prédicat personnalisé qui aide à évaluer les données en fonction des métadonnées de réplication :
 
 * `cq:lastReplicated` qui stocke la date de la dernière action de réplication.
 * `cq:lastReplicatedBy` qui stocke l’ID de l’utilisateur qui a déclenché la dernière action de réplication.
@@ -65,7 +65,7 @@ Cette section vous explique, par exemple, comment créer un évaluateur de préd
 
 #### Requête sur les métadonnées de réplication avec les évaluateurs de prédicats par défaut {#querying-replication-metadata-with-default-predicate-evaluators}
 
-La requête suivante récupère la liste des noeuds de la branche `/content` qui ont été activés par `admin` depuis le début de l&#39;année.
+La requête suivante récupère la liste des nœuds dans la branche `/content` qui a été activée par `admin` depuis le début de l’année.
 
 ```xml
 path=/content
@@ -95,13 +95,13 @@ replic.since=2013-01-01T00:00:00.000+01:00
 replic.action=Activate
 ```
 
-Le regroupement des prédicats de métadonnées de réplication à l’aide d’un évaluateur de prédicats personnalisé permet de créer une requête significative.
+Le regroupement des prédicats de métadonnées de réplication avec un évaluateur de prédicat personnalisé permet de créer une requête pertinente.
 
 #### Mise à jour des dépendances Maven {#updating-maven-dependencies}
 
 >[!TIP]
 >
->La configuration de nouveaux projets AEM incluant l&#39;utilisation de maven est expliquée en détail par [le tutoriel WKND.](develop-wknd-tutorial.md)
+>La configuration de nouveaux projets AEM incluant l’utilisation de Maven est expliquée en détail dans [le tutoriel WKND.](develop-wknd-tutorial.md)
 
 Tout d’abord, vous devez mettre à jour les dépendances Maven de votre projet. `PredicateEvaluator` fait partie de l’artefact `cq-search` et doit donc être ajouté à votre fichier pom Maven.
 
@@ -109,7 +109,7 @@ Tout d’abord, vous devez mettre à jour les dépendances Maven de votre projet
 >
 >La portée de la dépendance `cq-search` est définie sur `provided`, car `cq-search` sera fourni par le conteneur `OSGi`.
 
-Le fragment de code suivant présente les différences dans le fichier `pom.xml`, au format [diff unifié](https://en.wikipedia.org/wiki/Diff#Unified_format).
+Le fragment suivant présente les différences dans le fichier `pom.xml` au [format diff unifié.](https://fr.wikipedia.org/wiki/Diff#Unified_format)
 
 ```text
 @@ -120,6 +120,12 @@
@@ -126,16 +126,16 @@ Le fragment de code suivant présente les différences dans le fichier `pom.xml`
              <version>3.8.1</version></dependency>
 ```
 
-#### Écriture de ReplicationpredicateEvaluator {#writing-the-replicationpredicateevaluator}
+#### Écriture de ReplicationPredicateEvaluator {#writing-the-replicationpredicateevaluator}
 
-Le projet `cq-search` contient la classe abstraite `AbstractPredicateEvaluator`. Vous pouvez l&#39;étendre en suivant quelques étapes pour mettre en oeuvre votre propre évaluateur de prédicats personnalisé `(PredicateEvaluator`).
+Le projet `cq-search` contient la classe abstraite `AbstractPredicateEvaluator`. Il est possible d’améliorer cela moyennant quelques étapes pour mettre en œuvre votre évaluateur de prédicat personnalisé `(PredicateEvaluator`).
 
 >[!NOTE]
 >
->La procédure suivante explique comment créer une expression `Xpath` afin de filtrer des données. Une autre option consisterait à implémenter la méthode `includes` qui sélectionne les données sur une base de ligne. Pour plus d’informations, voir la [documentation Java](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29).
+>La procédure suivante explique comment créer une expression `Xpath` afin de filtrer des données. Une autre option consisterait à mettre en œuvre la méthode `includes` qui sélectionne les données sur la base de la ligne. Pour plus d’informations, voir la [documentation Java](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29).
 
 1. Créez une classe Java qui étend `com.day.cq.search.eval.AbstractPredicateEvaluator`.
-1. Annotez votre classe avec un `@Component` comme des affichages de fragment de code dans [format diff unifié](https://en.wikipedia.org/wiki/Diff#Unified_format).
+1. Annotez votre classe avec un `@Component`, par exemple des affichages de fragment de code au [format diff unifié](https://en.wikipedia.org/wiki/Diff#Unified_format).
 
    ```text
    @@ -19,8 +19,11 @@
@@ -153,7 +153,7 @@ Le projet `cq-search` contient la classe abstraite `AbstractPredicateEvaluator`.
 
    >[!NOTE]
    >
-   >`factory`doit être une chaîne unique commençant par `com.day.cq.search.eval.PredicateEvaluator/`et se terminant par le nom de votre `PredicateEvaluator` personnalisé.
+   >La `factory` doit être une chaîne unique commençant par `com.day.cq.search.eval.PredicateEvaluator/` et se terminant par le nom de votre `PredicateEvaluator` personnalisé.
 
    >[!NOTE]
    >
@@ -165,9 +165,9 @@ Le projet `cq-search` contient la classe abstraite `AbstractPredicateEvaluator`.
    public String getXPathExpression(Predicate predicate, EvaluationContext context)
    ```
 
-   Dans la méthode override, vous créez une expression `Xpath` basée sur `Predicate` donnée dans l&#39;argument.
+   Avec la méthode de remplacement, vous créez une expression `Xpath` basée sur le `Predicate` fourni comme argument.
 
-### Exemple d’un évaluateur d’attributs personnalisé pour les métadonnées de réplication {#example-of-a-custom-predicate-evaluator-for-replication-metadata}
+### Exemple d’évaluateur de prédicat personnalisé pour les métadonnées de réplication {#example-of-a-custom-predicate-evaluator-for-replication-metadata}
 
 La mise en œuvre complète de ce `PredicateEvaluator` peut être semblable à la classe suivante.
 
