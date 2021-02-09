@@ -5,16 +5,16 @@ translation-type: tm+mt
 source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
 workflow-type: tm+mt
 source-wordcount: '111'
-ht-degree: 77%
+ht-degree: 88%
 
 ---
 
 
-# Métadonnées – propriétés des fragments{#metadata-fragment-properties}
+# Métadonnées – propriétés des fragments {#metadata-fragment-properties}
 
 ## Modification des propriétés/métadonnées {#editing-properties-meta-data}
 
-Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments de contenu :
+Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments de contenu:
 
 1. Dans la console **Ressources**, naviguez jusqu’à l’emplacement de votre fragment de contenu.
 2. Vous pouvez :
@@ -26,8 +26,8 @@ Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments 
 
 3. L’onglet **De base** fournit des options que vous pouvez afficher ou modifier :
 
-   * Une miniature, pour laquelle vous pouvez **télécharger une image** 
-   * **Le** modèle de fragment de contenu indique le modèle utilisé pour créer le fragment actif.
+   * Une miniature, pour laquelle vous pouvez **charger une image** 
+   * Le **modèle de fragment de contenu** indique le modèle utilisé pour créer le fragment actif.
    * **Titre**
    * **Description**
    * **Balises**
