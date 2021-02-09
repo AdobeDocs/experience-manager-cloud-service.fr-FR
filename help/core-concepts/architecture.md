@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 6b68c52235bae033b429a2d4c84f7c31c75b0fa2
 workflow-type: tm+mt
 source-wordcount: '1671'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -61,9 +61,9 @@ La mise à l’échelle des instances par client du service peut être automatiq
 >[!NOTE]
 >Pour plus d’informations, voir [Déploiement - Modes d’exécution](/help/implementing/deploying/overview.md#runmodes)
 
-AEM as a Cloud Service est mis à la disposition des utilisateurs sous forme d’instances individuelles, chaque instance représentant un environnement AEM complet.
+AEM as a Cloud Service est mis à la disposition des utilisateurs sous forme d’instances individuelles, chaque instance représentant un environnement AEM complet.
 
-Il existe trois types d’environnements disponibles avec AEM en tant que Cloud Service :
+Trois types d’environnements sont disponibles avec AEM as a Cloud Service :
 
 * **Environnement de production** : héberge les applications destinées aux professionnels.
 
@@ -71,7 +71,7 @@ Il existe trois types d’environnements disponibles avec AEM en tant que Cloud 
 
 * **Environnement de développement** : permet aux développeurs d’implémenter des applications AEM dans les mêmes conditions d’exécution que les environnements d’évaluation et de production.
 
-   Pour plus d’informations, consultez [Gestion des environnements](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager).
+   Pour plus d’informations, consultez [Gestion des environnements](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=fr#using-cloud-manager).
 
 ## Programmes {#programs}
 
@@ -82,7 +82,7 @@ Un programme AEM est le conteneur qui comprend les éléments suivants :
 |  Élément de programme |  Nombre |
 |--- |--- |
 | Référentiel de code (Git) |  1 |
-| Image de base (Sites ou Assets) |  3 |
+| Image de base (Sites ou Assets) |  1 |
 | Ensemble d’environnements d’évaluation et de production (1:1) | 0 ou 1 |
 | Environnements hors production (développement ou démonstration) | 0 à N |
 | Pipeline pour chaque environnement | 0 ou 1 |
@@ -101,7 +101,7 @@ Cette nouvelle architecture comporte différents éléments principaux :
 
 <!--- needs reworking -->
 
-![AEM as a Cloud Service - Architecture d’exécution](assets/concepts-03.png "AEM as a Cloud Service - Architecture d’exécution")
+![AEM as a Cloud Service – Architecture d’exécution](assets/concepts-03.png "AEM as a Cloud Service – Architecture d’exécution")
 
 * Pour AEM Sites as a Cloud Service :
 
