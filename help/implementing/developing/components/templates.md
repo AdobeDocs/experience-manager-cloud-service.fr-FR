@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 73e7f9a5b0976ebd5228c182d47c1058290f7629
 workflow-type: tm+mt
 source-wordcount: '3296'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -26,7 +26,7 @@ Ce document :
 
 * offre un aperçu de la création d’un modèle de page ;
 * décrit les tâches d’administration/de développement requises pour créer des modèles modifiables ;
-* décrit les bases techniques des modèles modifiables.
+* décrit les bases techniques des modèles modifiables ;
 * décrit comment AEM évalue la disponibilité d’un modèle.
 
 >[!NOTE]
@@ -164,9 +164,9 @@ Une liste de toutes les entrées autorisées est créée. Si des configurations 
 Pour créer un dossier, vous pouvez procéder de l’une des façons suivantes :
 
 * Soit par programmation, soit en utilisant CRXDE Lite
-* Utilisation de l&#39;[navigateur de configuration](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+* Utilisation de l’[explorateur de configurations](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
-## Utilisation de CRXDE Lite   {#using-crxde-lite}
+## Utilisation de CRXDE Lite {#using-crxde-lite}
 
 1. Un nouveau dossier (sous /conf) peut être créé pour votre instance, soit par programmation soit avec CRXDE Lite.
 
@@ -211,9 +211,9 @@ Pour créer un dossier, vous pouvez procéder de l’une des façons suivantes 
 
 >[!NOTE]
 >
->Dans le [Navigateur de configuration,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) vous pouvez modifier le dossier global et activer l&#39;option **Modèles modifiables** si vous souhaitez créer des modèles dans ce dossier, mais il n&#39;est pas recommandé de le faire.
+>Dans l’[explorateur de configurations](/help/implementing/developing/introduction/configurations.md#using-configuration-browser), vous pouvez modifier le dossier global et activer l’option **Modèles modifiables** si vous souhaitez créer des modèles dans ce dossier. Il ne s’agit toutefois pas de la méthode recommandée.
 
-### ACL et groupes   {#acls-and-groups}
+### ACL et groupes  {#acls-and-groups}
 
 Une fois vos dossiers de modèles créés (soit via CRXDE, soit à l’aide de l’explorateur de configurations), des listes de contrôle d’accès (ACL) doivent être définies pour les groupes appropriés afin que les dossiers de modèles garantissent une protection adéquate.
 
@@ -247,12 +247,12 @@ Le tableau suivant récapitule les autorisations nécessaires pour la modificati
   </tr>
   <tr>
    <td>Utilisateur web anonyme</td>
-   <td>lire</td>
+   <td>lecture</td>
    <td>L’utilisateur web anonyme doit lire les modèles lors du rendu d’une page.</td>
   </tr>
   <tr>
    <td>Auteurs de contenu</td>
-   <td>répliquer</td>
+   <td>réplication</td>
    <td>Lors de l’activation d’une page, les créateurs replicateContent doivent activer les modèles correspondants.</td>
   </tr>
   <tr>
@@ -263,18 +263,18 @@ Le tableau suivant récapitule les autorisations nécessaires pour la modificati
   </tr>
   <tr>
    <td>Utilisateur web anonyme</td>
-   <td>lire</td>
+   <td>lecture</td>
    <td>L’utilisateur web anonyme doit lire les stratégies lors du rendu d’une page.</td>
   </tr>
   <tr>
    <td>Auteurs de contenu</td>
-   <td>répliquer</td>
+   <td>réplication</td>
    <td>Les créateurs de contenu doivent activer les stratégies d’un modèle de page lors de l’activation d’une page.</td>
   </tr>
   <tr>
    <td rowspan="2"><code>/conf/&lt;site&gt;/settings/template-types</code></td>
    <td>Créateur de modèles</td>
-   <td>lire</td>
+   <td>lecture</td>
    <td>Le créateur de modèles crée un modèle basé sur l’un des types de modèles prédéfinis.</td>
   </tr>
   <tr>
@@ -478,7 +478,7 @@ Fournit une référence relative à la stratégie de contenu pour le système de
 
 Les stratégies de page vous permettent de définir la [stratégie de contenu](#content-policies) de la page (système de paragraphes principal), soit dans le modèle soit dans les pages créées.
 
-### Activation et autorisation d’un modèle à utiliser   {#enabling-and-allowing-a-template-for-use}
+### Activation et autorisation d’un modèle à utiliser  {#enabling-and-allowing-a-template-for-use}
 
 1. **Activation du modèle**
 
@@ -516,9 +516,9 @@ Les pages créées à partir de modèles modifiables :
 
 * contiennent des références aux informations contenues dans le modèle et le type de modèle. Pour cela, on utilise un nœud `jcr:content` avec les propriétés suivantes :
 
-   * `cq:template` - Fournit la référence dynamique au modèle proprement dit ; fait en sorte que les modifications apportées au modèle soient répercutées sur les pages proprement dites.
+   * `cq:template` – Fournit la référence dynamique au modèle proprement dit ; fait en sorte que les modifications apportées au modèle soient répercutées sur les pages proprement dites.
 
-   * `cq:templateType` - Fournit une référence au type de modèle.
+   * `cq:templateType` – Fournit une référence au type de modèle.
 
 ![Comment les modèles, le contenu et les composants interagissent](assets/templates-content-components.png)
 
