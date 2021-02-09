@@ -6,12 +6,12 @@ translation-type: tm+mt
 source-git-commit: 3ee2e53268ea77949057ac18fcb4a8f8b1e01cb2
 workflow-type: tm+mt
 source-wordcount: '928'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
-# Rapports de ressources  {#asset-reports}
+# Rapports de ressources {#asset-reports}
 
 Les rapports de ressources vous permettent d’évaluer l’utilité de votre déploiement [!DNL Adobe Experience Manager Assets]. Avec [!DNL Assets], vous pouvez générer divers rapports pour vos ressources numériques. Les rapports fournissent des informations utiles concernant votre utilisation du système, la façon dont les utilisateurs interagissent avec les ressources et la façon dont les ressources sont téléchargées et partagées.
 
@@ -60,7 +60,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
 >[!NOTE]
 >
->Le rapport [!UICONTROL Téléchargement] affiche uniquement les détails des ressources téléchargées après sélection individuelle ou téléchargées à l’aide de l’action rapide. Cependant, il n’inclut pas les détails des ressources figurant dans un dossier téléchargé.
+>Le rapport [!UICONTROL Télécharger] affiche uniquement les détails des ressources téléchargées après sélection individuelle ou téléchargées à l’aide de l’action rapide. Cependant, il n’inclut pas les détails des ressources figurant dans un dossier téléchargé.
 
 1. Configurez les détails du rapport, tels que le titre, la description, la miniature et le chemin du dossier dans le référentiel CRX où le rapport est stocké. Par défaut, le chemin du dossier est `/content/dam`. Vous pouvez spécifier un autre chemin.
 
@@ -155,4 +155,4 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 
 ## Informations, conseils et limites de dépannage {#best-practices-and-limitations}
 
-* Si le rapport d&#39;utilisation des disques n&#39;est pas généré et que vous utilisez [!DNL Dynamic Media], assurez-vous que toutes les ressources sont correctement traitées. Pour résoudre ce problème, retraitez les ressources, puis générez de nouveau le rapport.
+* Si le rapport d’utilisation des disques n’est pas généré et si vous utilisez [!DNL Dynamic Media], assurez-vous que toutes les ressources sont traitées correctement. Pour résoudre ce problème, retraitez les ressources puis générez de nouveau le rapport.
