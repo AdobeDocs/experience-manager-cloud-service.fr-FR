@@ -23,7 +23,7 @@ Les avantages principaux sont les suivants :
 
 * L’intégration est une couche d’abstraction pour normaliser et encapsuler les intégrations avec plusieurs systèmes.
 
-* CIF prend en charge les expériences sans interface/omnicanal :
+* CIF prend en charge les expériences découplées/omnicanal :
 
    * Applications sur une seule page et applications de plusieurs pages
    * Points d’entrée GraphQL
@@ -63,7 +63,7 @@ Tous les composants sont Open Source sur [GitHub](https://github.com/adobe/aem-c
 
 [AEM Venia Storefront](https://github.com/adobe/aem-cif-guides-venia) est un storefront de référence moderne prêt pour la production et présentant un parcours commercial B2C de base. Il peut être utilisé pour lancer des projets commerciaux et accélérer des projets à l’aide d’AEM, de CIF et de Magento. Il présente les bonnes pratiques d’intégration d’AEM et de Magento, indique comment utiliser les [composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components) et les [composants principaux AEM Sites](https://github.com/adobe/aem-core-wcm-components) et prend en charge les points d’entrée GraphQL Adobe Commerce. Il assure également des ventes anticipées avec un site de référence pour démontrer l’intégration entre AEM et Magento.
 
-AEM Venia Storefront est une application de pages mixtes dans laquelle AEM gère la vitrine et Magento alimente le serveur principal Commerce sans interface. Les rendus côtés serveur et client sont utilisés dans le storefront. Le rendu côté serveur est utilisé pour diffuser du contenu statique et le rendu côté client pour diffuser du contenu dynamique.
+AEM Venia Storefront est une application de pages mixtes dans laquelle AEM gère la vitrine et Magento alimente le serveur principal Commerce de manière découplée. Les rendus côtés serveur et client sont utilisés dans le storefront. Le rendu côté serveur est utilisé pour diffuser du contenu statique et le rendu côté client pour diffuser du contenu dynamique.
 
 Les pages de produits et de catalogues sont relativement statiques et sont rendues côté serveur à l’aide de composants principaux AEM CIF tels que Détail de produit et Liste de produits sur les modèles génériques créés dans AEM. Ces composants obtiennent des données de Magento via les API GraphQL.
 Ces pages sont créées dynamiquement, rendues sur le serveur, mises en cache dans le Dispatcher AEM, puis fournies au navigateur.
@@ -71,7 +71,7 @@ Pour les attributs plus dynamiques tels que le stock ou le prix, en revanche, le
 
 #### Passage en caisse {#checkout}
 
-Ce storefront de référence utilise le composant Panier côté client qui effectue le rendu du panier et du formulaire de passage en caisse pour démontrer un modèle d’intégration d’expérience complète qui vous permet de diffuser des expériences commerciales avec Magento s’exécutant intégralement sans serveur et AEM gérant la vitrine. Il est recommandé d’utiliser les méthodes de paiement abstraites fournies. Le client du navigateur est ainsi en communication directe avec le fournisseur de passerelle de paiement, de sorte que ni les clouds Adobe ni les clouds Magento ne contiennent ni ne transmettent de données sensibles PCI.
+Ce storefront de référence utilise le composant Panier côté client qui effectue le rendu du panier et du formulaire de passage en caisse pour démontrer un modèle d’intégration d’expérience complète qui vous permet de diffuser des expériences commerciales avec Magento s’exécutant intégralement de manière découplée et AEM gérant la vitrine. Il est recommandé d’utiliser les méthodes de paiement abstraites fournies. Le client du navigateur est ainsi en communication directe avec le fournisseur de passerelle de paiement, de sorte que ni les clouds Adobe ni les clouds Magento ne contiennent ni ne transmettent de données sensibles PCI.
 
 #### Gestion de compte {#account-management}
 
@@ -105,7 +105,7 @@ Il s’agit de notre modèle d’intégration recommandé dans lequel AEM gère 
 
 ### Modèle d’intégration 2 {#integration-pattern-two}
 
-Ce modèle illustre une manière intégralement sans serveur de diffuser du contenu et des transactions commerciales. La diffusion s’effectue entièrement côté client. Dans ce modèle, le contenu est diffusé via API et HTML et les données commerciales sont fournies via GraphQL. Ce modèle n’est actuellement pas pris en charge par CIF prêt à l’emploi.
+Ce modèle illustre une manière intégralement découplée de diffuser du contenu et des transactions commerciales. La diffusion s’effectue entièrement côté client. Dans ce modèle, le contenu est diffusé via API et HTML et les données commerciales sont fournies via GraphQL. Ce modèle n’est actuellement pas pris en charge par CIF prêt à l’emploi.
 
 
 ### Modèle d’intégration 3 {#integration-pattern-three}
