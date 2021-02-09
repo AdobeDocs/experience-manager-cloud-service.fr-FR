@@ -1,40 +1,40 @@
 ---
-title: Fragments de contenu - Explorateur de configuration
-description: Découvrez comment activer certaines fonctionnalités de fragment de contenu dans l’explorateur de configuration.
+title: Fragments de contenu - Explorateur de configurations
+description: Découvrez comment activer certaines fonctionnalités de fragments de contenu dans l’explorateur de configurations.
 translation-type: tm+mt
 source-git-commit: 260578950833b96616a2a3928d206e6f9e0a206a
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 42%
+ht-degree: 93%
 
 ---
 
 
-# Fragments de contenu - Navigateur de configuration{#content-fragments-configuration-browser}
+# Fragments de contenu - Explorateur de configurations {#content-fragments-configuration-browser}
 
-## Activer la fonctionnalité de fragment de contenu pour votre instance {#enable-content-fragment-functionality-instance}
+## Activation de la fonctionnalité de fragment de contenu pour votre instance {#enable-content-fragment-functionality-instance}
 
-Avant d’utiliser les fragments de contenu, vous devez utiliser le **navigateur de configuration** pour activer les éléments suivants :
+Avant d’utiliser les fragments de contenu, vous devez utiliser l’**Explorateur de configurations** pour activer les éléments suivants :
 
-* **Modèles**  de fragment de contenu - obligatoire
-* **Requêtes**  persistantes GraphQL - facultatif
+* **Modèles de fragment de contenu** - obligatoire
+* **Requêtes persistantes GraphQL** - facultatif
 
 >[!CAUTION]
 >
 >Si vous n’activez pas **les modèles de fragment de contenu**, l’option **Créer** n’est pas disponible pour la création de modèles.
 
-Pour activer la fonctionnalité de fragment de contenu, vous devez effectuer les opérations suivantes :
+Pour activer la fonctionnalité de fragments de contenu, vous devez :
 
-* Activer l’utilisation de la fonctionnalité de fragments de contenu par le biais du navigateur de configuration
-* appliquer la configuration à votre dossier de ressources ;
+* activer l’utilisation de la fonctionnalité de fragments de contenu par le biais de l’explorateur de configurations ;
+* appliquer la configuration à votre dossier de ressources.
 
-### Activation de la fonctionnalité de fragment de contenu dans l’explorateur de configuration {#enable-content-fragment-functionality-in-configuration-browser}
+### Activation de la fonctionnalité de fragments de contenu dans l’explorateur de configurations {#enable-content-fragment-functionality-in-configuration-browser}
 
-Pour [utiliser certaines fonctionnalités de fragment de contenu](#creating-a-content-fragment-model), **vous devez d&#39;abord** les activer via l&#39;**navigateur de configuration** :
+Pour [utiliser certaines fonctionnalités de fragments de contenu,](#creating-a-content-fragment-model) vous **devez** commencer par les activer par le biais de l’**explorateur de configurations** :
 
 >[!NOTE]
 >
->Pour plus de détails, voir également [Navigateur de configuration:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+>Pour plus de détails, voir également [Explorateur de configurations :](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
 >[!CAUTION]
 >
@@ -58,7 +58,7 @@ Pour [utiliser certaines fonctionnalités de fragment de contenu](#creating-a-co
 
 ### Application de la configuration à votre dossier de ressources {#apply-the-configuration-to-your-assets-folder}
 
-Lorsque la configuration **global** est activée pour la fonctionnalité de fragment de contenu, s’applique à tout dossier Assets.
+Lorsque la configuration **global** est activée pour la fonctionnalité de fragments de contenu, elle s’applique à tout dossier Assets.
 
 Pour utiliser d’autres configurations (c’est-à-dire à l’exclusion de la version globale) avec un dossier de ressources comparable, vous devez définir la connexion. Pour ce faire, utilisez **Configuration** sous l’onglet **Services cloud** des **Propriétés du dossier** du dossier approprié.
 
