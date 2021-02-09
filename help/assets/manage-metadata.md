@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
 workflow-type: tm+mt
 source-wordcount: '1850'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -144,7 +144,7 @@ Enterprise Manager Assets vous permet de modifier les métadonnées de plusieu
 
 ## Métadonnées personnalisées à l’aide d’un profil de traitement {#metadata-compute-service}
 
-Les ressources sous la forme [!DNL Cloud Service] peuvent générer des métadonnées personnalisées pour une ressource à l’aide de services natifs au cloud. Configurez un profil de traitement pour générer des métadonnées personnalisées. Voir [Comment utiliser un profil de traitement](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
+Assets as a [!DNL Cloud Service] peut générer des métadonnées personnalisées pour une ressource à l’aide de services basés sur le cloud. Configurez un profil de traitement pour générer des métadonnées personnalisées. Voir [Comment utiliser un profil de traitement](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
 ![Rendu des métadonnées dans le profil de traitement](assets/processing-profile-metadata.png)
 
@@ -184,10 +184,10 @@ Les schémas de métadonnées pris en charge sont répertoriés ci-dessous.
 
 Les métadonnées spécifiques à l’application englobent des métadonnées techniques et descriptives. Si vous utilisez ces types de métadonnées, il se peut que d’autres applications ne soient pas en mesure de les exploiter. Par exemple, il est possible qu’une autre application de rendu d’image ne puisse pas accéder aux métadonnées [!DNL Adobe Photoshop]. Vous pouvez créer une étape de workflow qui transforme une propriété spécifique à l’application en propriété standard.
 
-* ACDSee – métadonnées gérées par le programme [!DNL ACDSee]. Voir [www.acdsee.com/](https://www.acdsee.com/).
+* ACDSee – Métadonnées gérées par le programme [!DNL ACDSee]. Voir [www.acdsee.com/](https://www.acdsee.com/).
 * Album – [!DNL Adobe Photoshop Album].
-* CQ – utilisées par [!DNL Experience Manager Assets].
-* DAM – utilisées par [!DNL Experience Manager Assets].
+* CQ – Utilisées par [!DNL Experience Manager Assets].
+* DAM – Utilisées par [!DNL Experience Manager Assets].
 * DEX – [Optima SC Description explorer](http://www.optimasc.com/products/dex/index.html) est une collection d’outils pour la gestion des métadonnées et des fichiers pour les systèmes d’exploitation Windows.
 * CRS – [Adobe Photoshop Camera Raw](https://helpx.adobe.com/fr/camera-raw/using/introduction-camera-raw.html).
 * LR – [!DNL Adobe Lightroom].
@@ -204,14 +204,14 @@ Les métadonnées spécifiques à l’application englobent des métadonnées te
 * PRISM – [Exigences de publication pour les métadonnées standard du secteur (Publishing Requirements for Industry Standard Metadata)](https://www.idealliance.org/prism-metadata).
 * PRL – PRISM Rights Language.
 * PUR – PRISM Usage Rights.
-* `xmpPlus` – intégration de PLUS avec XMP.
+* `xmpPlus` – Intégration de PLUS avec XMP.
 
 ### Métadonnées spécifiques à la photographie {#photography-specific-metadata}
 
-* Exif – de nombreuses informations techniques issues de l’appareil photo, notamment la position GPS.
-* CRS – [!DNL Camera Raw] schéma.
+* Exif – De nombreuses informations techniques issues de l’appareil photo, notamment la position GPS.
+* CRS – Schéma [!DNL Camera Raw].
 * `iptc4xmpCore` et `iptc4xmpExt`.
-* TIFF – métadonnées d’image (pas seulement pour les images TIFF).
+* TIFF – Métadonnées d’image (pas seulement pour les images TIFF).
 
 ### Métadonnées spécifiques à l’impression {#print-specific-metadata}
 
