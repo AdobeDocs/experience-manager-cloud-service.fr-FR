@@ -6,12 +6,12 @@ translation-type: tm+mt
 source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
 source-wordcount: '884'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
-# Télécharger des ressources depuis [!DNL Adobe Experience Manager] {#download-assets-from-aem}
+# Téléchargement de ressources depuis [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
 Vous pouvez télécharger des ressources, dont des rendus statiques et dynamiques. Vous pouvez également envoyer des liens vers des ressources par courrier électronique, directement depuis [!DNL Adobe Experience Manager Assets]. Les ressources téléchargées sont compressées dans un fichier ZIP. La taille maximale du fichier ZIP compressé est de 1 Go pour la tâche d’exportation. Un maximum de 500 ressources par tâche d’exportation est autorisé.
 
@@ -26,12 +26,12 @@ Vous pouvez télécharger des ressources Experience Manager à l’aide des mét
 * [Interface utilisateur d’Experience Manager](#download-in-aem)
 * Interface utilisateur de partage de liens de ressources
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
-* [Appli de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=fr)
+* [Appli de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#download-assets)
 
-## Télécharger des ressources à l&#39;aide de l&#39;interface [!DNL Experience Manager] {#download-in-aem}
+## Téléchargement de ressources à l’aide de l’interface [!DNL Experience Manager] {#download-in-aem}
 
-Le service de téléchargement asynchrone fournit un framework permettant le téléchargement transparent de ressources de grande taille. Les fichiers plus petits sont téléchargés en temps réel depuis l’interface utilisateur. Les fichiers volumineux sont téléchargés de manière asynchrone et les utilisateurs sont informés de l’achèvement de l’opération par le biais de notifications Experience Manager dans la boîte de réception. Voir [Présentation de la boîte de réception d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html).
+Le service de téléchargement asynchrone fournit un framework permettant le téléchargement transparent de ressources de grande taille. Les fichiers plus petits sont téléchargés en temps réel depuis l’interface utilisateur. Les fichiers volumineux sont téléchargés de manière asynchrone et les utilisateurs sont informés de l’achèvement de l’opération par le biais de notifications Experience Manager dans la boîte de réception. Voir [Présentation de la boîte de réception d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=fr).
 
 ![Notification de téléchargement](assets/download-notification.png)
 
@@ -86,7 +86,7 @@ Pour permettre le téléchargement de fichiers depuis votre DAM (par exemple, lo
 
 Le `Asset Download Servlet` peut être désactivé sur les instances de publication [!DNL Experience Manager] en mettant à jour la configuration du Dispatcher afin de bloquer toute demande de téléchargement de ressources. Le servlet peut également être désactivé manuellement par l’intermédiaire de la console OSGi.
 
-1. Pour bloquer les requêtes de téléchargement de ressources via une configuration de Dispatcher, modifiez la configuration `dispatcher.any` et ajoutez une nouvelle règle à la [section /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring).
+1. Pour bloquer les requêtes de téléchargement de ressources via une configuration de Dispatcher, modifiez la configuration `dispatcher.any` et ajoutez une nouvelle règle à la [section /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#configuring).
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
