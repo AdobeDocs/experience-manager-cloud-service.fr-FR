@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 29ce1175e3fcc606d12dd4f1ef7b6d8f26c1d47a
 workflow-type: tm+mt
 source-wordcount: '227'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 
-# Contenu associé{#associated-content}
+# Contenu associé {#associated-content}
 
 Le contenu associé fournit la connexion afin que les ressources puissent (éventuellement) être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu. Vous bénéficiez ainsi d’une certaine souplesse,[ car vous disposez d’une gamme de ressources auxquelles accéder lors de l’utilisation du fragment de contenu sur une page.](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) Cela permet aussi de réduire le temps nécessaire pour rechercher la ressource appropriée.
 
@@ -26,10 +26,10 @@ Pour effectuer l’association, vous devez d’abord [ajouter les ressources mul
 
    ![Contenu associé](assets/cfm-assoc-content-01.png)
 
-1. Selon si des collections ont déjà été associées ou non, sélectionnez l’une des options suivantes :
+1. Selon que des collections ont déjà été associées ou non, sélectionnez l’une des options suivantes :
 
-   * **Associer du contenu**  : il s’agira de la première collection associée
-   * **Associer la collection**  : les collections associées sont déjà configurées
+   * **Associer le contenu** : il s’agira de la première collection associée
+   * **Associer la collection** : les collections associées sont déjà configurées
 
 1. Sélectionnez la collection requise.
 
