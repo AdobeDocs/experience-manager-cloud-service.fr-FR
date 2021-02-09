@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Aperçu des ressources{#previewing-assets}
+# Aperçu des ressources {#previewing-assets}
 
 Vous pouvez utiliser la fonction Aperçu pour afficher une ressource numérique que vous avez chargée telle qu’elle sera présentée au client dans son navigateur web. La visionneuse par défaut incorporée inter-périphérique affectée à la ressource est utilisée pour l’aperçu.
 
