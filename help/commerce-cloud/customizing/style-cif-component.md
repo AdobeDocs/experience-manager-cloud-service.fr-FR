@@ -37,7 +37,7 @@ Dans ce tutoriel, un nouveau style ressemblant à une carte sera mis en œuvre p
 
 Un environnement de développement local est nécessaire pour suivre ce tutoriel. Cela inclut une instance AEM en cours d’exécution configurée et connectée à une instance Magento. Examinez les exigences et les étapes de la [configuration d’un développement local avec le SDK AEM as a Cloud Service](../develop.md).
 
-## Cloner le projet Venia {#clone-venia-project}
+## Clonage du projet Venia {#clone-venia-project}
 
 Nous allons cloner le [projet Venia](https://github.com/adobe/aem-cif-guides-venia) puis remplacer les styles par défaut.
 
@@ -448,7 +448,7 @@ Revenez à l’IDE et au projet généré.
    >[!NOTE]
    >Il existe d’autres [outils et programmes d’installation IDE](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment) pouvant synchroniser les fichiers de projet directement dans une instance d’AEM locale sans avoir à créer une version Maven entière.
 
-## Afficher le teaser de produit mis à jour{#view-updated-product-teaser}
+## Afficher le teaser de produit mis à jour {#view-updated-product-teaser}
 
 Une fois que le code du projet a été déployé dans AEM, les modifications apportées au teaser de produit devraient être visibles.
 
