@@ -5,22 +5,22 @@ translation-type: tm+mt
 source-git-commit: 77e270b354e7e99aa2e7ab88ddc8528ad0c4ade0
 workflow-type: tm+mt
 source-wordcount: '1300'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Invalidation du cache du réseau de diffusion de contenu par le biais de Dynamic Media {#invalidating-cdn-cache-for-dm-assets-in-aem-cs}
+# Invalidation du cache du réseau CDN par le biais de Dynamic Media {#invalidating-cdn-cache-for-dm-assets-in-aem-cs}
 
 Les ressources Dynamic Media sont mises en cache par le réseau de diffusion de contenu (CDN) pour une diffusion rapide à vos clients. Cependant, lorsque vous apportez des mises à jour à ces ressources, vous souhaiterez peut-être que ces modifications prennent effet immédiatement sur votre site web. La purge ou l’invalidation du cache du réseau CDN vous permet de mettre rapidement à jour les ressources distribuées par Dynamic Media. Au lieu d’attendre que le cache arrive à expiration à l’aide d’une valeur TTL (durée de vie) (10 heures par défaut), vous pouvez envoyer une requête depuis l’interface utilisateur de Dynamic Media pour que le cache arrive à expiration en quelques minutes.
 
 >[!IMPORTANT]
 >
->Cette fonctionnalité nécessite l’utilisation du CDN prêt à l’emploi, livré avec AEM Dynamic Media ; aucun autre CDN personnalisé n’est pris en charge. <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
+>Cette fonctionnalité nécessite l’utilisation du réseau CDN prêt à l’emploi fourni avec AEM Dynamic Media ; aucun autre réseau CDN personnalisé n’est pris en charge. <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
 
 Voir aussi [Présentation de la mise en cache dans Dynamic Media](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
-**Pour invalider le cache CDN au moyen de Dynamic Media**
+**Pour invalider le cache du réseau CDN au moyen de Dynamic Media**
 
 *Partie 1 de 2 : création d’un modèle d’invalidation du réseau CDN*
 
