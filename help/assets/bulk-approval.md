@@ -6,20 +6,20 @@ translation-type: tm+mt
 source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
 source-wordcount: '793'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # Vérification de ressources dans des dossiers et des collections {#review-folder-assets-and-collections}
 
-Grâce aux ressources Adobe Experience Manager, vous pouvez définir des workflows de révision ad hoc pour les ressources qui se trouvent dans un dossier ou dans une collection. Vous pouvez le partager avec des réviseurs ou des partenaires créatifs pour obtenir leurs commentaires. Vous pouvez soit associer le workflow de révision à un projet, soit créer une tâche de révision indépendante.
+Adobe Experience Manager permet de définir des workflows de révision ad hoc pour les ressources qui se trouvent dans un dossier ou dans une collection. Vous pouvez le partager avec des réviseurs ou des partenaires créatifs pour obtenir leurs commentaires. Vous pouvez soit associer le workflow de révision à un projet, soit créer une tâche de révision indépendante.
 
-Une fois que vous avez partagé les ressources, les réviseurs peuvent les approuver ou les rejeter. Les notifications sont envoyées à différentes étapes du workflow pour informer les destinataires voulus de la fin des diverses tâches. Par exemple, lorsque vous partagez un dossier ou une collection, le réviseur reçoit une notification lui indiquant qu’un dossier/une collection a été partagé(e) pour la révision.
+Une fois que vous avez partagé les ressources, les réviseurs peuvent les approuver ou les rejeter. Les notifications sont envoyées à différentes étapes du workflow pour informer les destinataires voulus de la fin des diverses tâches. Par exemple, lorsque vous partagez un dossier ou une collection, le réviseur reçoit une notification lui indiquant qu’un dossier/une collection a été partagé pour la révision.
 
 Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ressources), vous recevez une notification de fin de révision.
 
-## Création d’une tâche de révision pour des dossiers    {#creating-a-review-task-for-folders}
+## Création d’une tâche de révision pour des dossiers {#creating-a-review-task-for-folders}
 
 1. Dans l’interface utilisateur Assets, sélectionnez le dossier pour lequel vous souhaitez créer une tâche de révision.
 1. Dans la barre d’outils, appuyez/cliquez sur l’icône **[!UICONTROL Créer une tâche de révision]** pour ouvrir la page **[!UICONTROL Tâche de révision]**. Si l’icône n’apparaît pas dans la barre d’outils, appuyez/cliquez sur **[!UICONTROL Plus]**, puis sélectionnez l’icône.
@@ -47,7 +47,7 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
    ![review_name](assets/review_name.png)
 
 1. Appuyez/cliquez sur **[!UICONTROL Envoyer]**, puis sur **[!UICONTROL Terminé]** pour fermer le message de confirmation. Une notification pour la nouvelle tâche est envoyée à l’approbateur.
-1. Connectez-vous à [!DNL Experience Manager Assets] en tant qu’approbateur et accédez à l’interface utilisateur Ressources. Pour approuver des ressources, cliquez/appuyez sur l’icône **[!UICONTROL Notifications]**, puis sélectionnez la tâche de révision dans la liste.
+1. Connectez-vous à [!DNL Experience Manager Assets] en tant qu’approbateur et accédez à l’IU Assets. Pour approuver des ressources, cliquez/appuyez sur l’icône **[!UICONTROL Notifications]**, puis sélectionnez la tâche de révision dans la liste.
 
    ![notification](assets/notification.png)
 
