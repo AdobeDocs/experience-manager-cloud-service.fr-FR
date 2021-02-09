@@ -1,16 +1,16 @@
 ---
 title: Prévisualisation de fichiers 3D
-description: Découvrez comment prévisualiser des fichiers 3D à Dynamic Media.
+description: Découvrez comment prévisualiser des ressources 3D dans Dynamic Media.
 translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# Prévisualisation de ressources 3D dans AEM{#previewing-3d-assets}
+# Prévisualisation de ressources 3D dans AEM {#previewing-3d-assets}
 
 Adobe Experience Manager prend en charge le chargement, la diffusion et l’aperçu interactif des ressources 3D dans le cadre du processus de création.
 
@@ -18,7 +18,7 @@ La visionneuse 3D interactive est disponible sur la page de détails de la ress
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Formats pris en charge pour la prévisualisation 3D dans AEM{#supported-3d-previewing-assets}
+## Formats pris en charge pour la prévisualisation 3D dans AEM {#supported-3d-previewing-assets}
 
 L’aperçu 3D interactif prend en charge les formats de fichier suivants :
 
@@ -31,7 +31,7 @@ L’aperçu 3D interactif prend en charge les formats de fichier suivants :
 | DN | Adobe Dimension | model/x-adobe-dn | Prise en charge de l’assimilation uniquement, prévisualisation non disponible. |
 | USDZ | Fichier zip de description de scène universelle | model/vnd.usdz+zip | Prise en charge de l’assimilation uniquement, prévisualisation non disponible. |
 
-**Remarque** : si le rendu des matériaux n’est pas effectué dans la prévisualisation d’un modèle gLTF, assurez-vous qu’ils sont correctement nommés et qu’ils se trouvent dans un dossier `textures` situé dans le même dossier racine que le modèle, comme suit :
+**Remarque** : Si le rendu des matières n’est pas effectué dans la prévisualisation d’un modèle gLTF, assurez-vous qu’elles sont correctement nommées et qu’elles se trouvent dans un dossier `textures` situé dans le même dossier racine que le modèle, comme suit :
 
     Asset (folder)
     model.gltf
@@ -50,14 +50,14 @@ De plus, les capacités de l’ordinateur client, par exemple un poste de travai
 
 1. Assurez-vous d’avoir chargé des ressources 3D dans AEM.
 Consultez [Formats pris en charge pour la prévisualisation 3D](#supported-3d-previewing-assets) et [Téléchargement de ressources](/help/assets/manage-digital-assets.md#uploading-assets).
-1. Dans AEM, sur la page de **[!UICONTROL navigation]**, appuyez sur **[!UICONTROL Ressources > Fichiers]**.
+1. Dans AEM, sur la page de **[!UICONTROL navigation]**, appuyez sur **[!UICONTROL Assets > Fichiers]**.
 
    ![Page de navigation](/help/assets/dynamic-media/assets/navigation-assets.png)
 
-1. Près du coin supérieur droit de la page, dans la liste déroulante Affichage, appuyez sur **[!UICONTROL Affichage carte]**, puis accédez au fichier 3D à prévisualiser.
+1. Près du coin supérieur droit de la page, dans la liste déroulante Mode, appuyez sur **[!UICONTROL Mode Carte]**, puis accédez au fichier 3D à prévisualiser.
 
    ![Sélection de carte 3D](/help/assets/dynamic-media/assets/3d-card-select.png)
-   _En mode Affichage carte, appuyez sur la carte du fichier 3D à prévisualiser._
+   _En mode Carte, appuyez sur la carte du fichier 3D à prévisualiser._
 
 1. Appuyez sur la carte de la ressource 3D pour l’ouvrir sur la page des détails de la ressource.
 
