@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: a01a55f85639613e5febd2588c9c55590f888124
 workflow-type: tm+mt
 source-wordcount: '2284'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -122,7 +122,7 @@ Les niveaux de journalisation sont les suivants :
 
 Les images mémoire de threads dans les environnements Cloud sont collectés en permanence, mais ne peuvent pas être téléchargées en libre-service pour le moment. En attendant, contactez l’assistance AEM si des images mémoire de threads sont nécessaires pour déboguer un problème, en spécifiant la fenêtre de temps exacte.
 
-## CRX/DE Lite et Console développeur {#crxde-lite-and-developer-console}
+## CRX/DE Lite et Developer Console {#crxde-lite-and-developer-console}
 
 ### Développement local {#local-development}
 
@@ -132,7 +132,7 @@ Notez qu’en cas de développement local (à l’aide du démarrage rapide disp
 
 ### Outils de développement AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
-Les clients peuvent accéder à CRXDE Lite sur l’environnement de développement du niveau auteur, mais pas sur l’étape ou la production. Le référentiel immuable (`/libs`, `/apps`) ne peut pas être modifié au moment de l’exécution. Toute tentative de ce type entraînera des erreurs.
+Les clients peuvent accéder à CRXDE Lite sur l’environnement de développement du niveau de création, mais pas sur l’environnement intermédiaire ou de production. Le référentiel immuable (`/libs`, `/apps`) ne peut pas être modifié au moment de l’exécution. Toute tentative de ce type entraînera des erreurs.
 
 Un ensemble d’outils pour le débogage des environnements de développeur d’AEM as a Cloud Service est disponible dans Developer Console pour les environnements de développement, d’évaluation et de production. L’URL peut être déterminée en ajustant les URL du service d’auteur ou de publication comme suit :
 
