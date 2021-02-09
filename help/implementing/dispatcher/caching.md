@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: a02e035a842e7c633aaa926d0ab092b2c7aed5cb
 workflow-type: tm+mt
 source-wordcount: '1535'
-ht-degree: 81%
+ht-degree: 95%
 
 ---
 
@@ -40,7 +40,7 @@ Cela peut s’avérer utile, par exemple, lorsque la logique de votre entreprise
    </LocationMatch>
    ```
 
-   Soyez prudent lorsque vous définissez des en-têtes de contrôle du cache global ou ceux qui correspondent à un large regex afin qu’ils ne soient pas appliqués au contenu que vous souhaitez peut-être garder confidentiel. Envisagez l&#39;utilisation de plusieurs directives pour s&#39;assurer que les règles sont appliquées de manière fine. Ceci étant dit, AEM en tant que Cloud Service va supprimer l&#39;en-tête de cache s&#39;il détecte qu&#39;il a été appliqué à ce qu&#39;il détecte comme inaccessible par répartiteur, comme décrit dans la documentation du répartiteur. Pour forcer AEM à toujours appliquer la mise en cache, vous pouvez ajouter l’option &quot;always&quot; comme suit :
+   Faites preuve de prudence lorsque vous définissez des en-têtes de contrôle du cache global ou ceux qui correspondent à une expression régulière (regex) large afin qu’ils ne soient pas appliqués au contenu que vous souhaitez peut-être garder confidentiel. Envisagez l’utilisation de plusieurs directives pour vous assurer que les règles sont appliquées de manière extrêmement détaillée. Ceci étant dit, AEM as a Cloud Service va supprimer l’en-tête de cache s’il détecte qu’il a été appliqué à un élément considéré comme impossible à mettre en cache par le Dispatcher, comme décrit dans la documentation du Dispatcher. Pour forcer AEM à toujours appliquer la mise en cache, vous pouvez ajouter l’option « always » comme suit :
 
    ```
    <LocationMatch "\.(html)$">
@@ -56,7 +56,7 @@ Cela peut s’avérer utile, par exemple, lorsque la logique de votre entreprise
    { /glob "*" /type "allow" }
    ```
 
-* Pour empêcher la mise en cache d’un contenu spécifique, définissez l’en-tête Cache-Control sur *private*. Par exemple, les éléments suivants empêcheraient la mise en cache du contenu html situé sous un répertoire nommé **myfolder** :
+* Pour empêcher la mise en cache d’un contenu spécifique, définissez l’en-tête Cache-Control sur *private*. Par exemple, les éléments suivants empêcheraient la mise en cache du contenu html situé sous un répertoire nommé **myfolder** :
 
    ```
       <LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
@@ -65,7 +65,7 @@ Cela peut s’avérer utile, par exemple, lorsque la logique de votre entreprise
    ```
 
    >[!NOTE]
-   >Les autres méthodes, y compris le projet [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), ne remplaceront pas les valeurs.
+   >D’autres méthodes, y compris le [projet ACS Commons AEM dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), ne remplaceront pas les valeurs.
 
 ### Bibliothèques côté client (js, css) {#client-side-libraries}
 
@@ -84,9 +84,9 @@ Cela peut s’avérer utile, par exemple, lorsque la logique de votre entreprise
       </LocationMatch>
    ```
 
-   Consultez la discussion dans la section html/text ci-dessus pour faire attention à ne pas mettre trop en cache et pour savoir comment forcer AEM à toujours appliquer la mise en cache avec l’option &quot;always&quot;.
+   Consultez la discussion dans la section html/text ci-dessus pour veiller à ne pas appliquer excessivement la mise en cache et pour savoir comment forcer AEM à toujours appliquer la mise en cache avec l’option « always ».
 
-   Il est nécessaire de s’assurer qu’un fichier placé sous `src/conf.dispatcher.d/`cache comporte la règle suivante (qui se trouve dans la configuration par défaut) :
+   Vous devez vous assurer qu’un fichier sous `src/conf.dispatcher.d/`cache comporte la règle suivante (qui se trouve dans la configuration par défaut) :
 
    ```
    /0000
@@ -96,7 +96,7 @@ Cela peut s’avérer utile, par exemple, lorsque la logique de votre entreprise
    Assurez-vous que les ressources destinées à être conservées en privé plutôt que mises en cache ne font pas partie des filtres de directive LocationMatch.
 
    >[!NOTE]
-   >Les autres méthodes, y compris le projet [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), ne remplaceront pas les valeurs.
+   >D’autres méthodes, y compris le [projet ACS Commons AEM dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), ne remplaceront pas les valeurs.
 
 ### Autres types de fichiers de contenu dans le magasin de nœuds {#other-content}
 
@@ -126,7 +126,7 @@ Avant AEM as a Cloud Service, il existait deux manières d’invalider le cache 
 L’approche d’API `invalidate.cache` du Dispatcher ne sera plus prise en charge puisqu’elle ne concerne qu’un nœud Dispatcher spécifique. AEM as a Cloud Service fonctionne au niveau du service, et non au niveau du nœud individuel. Les instructions d’invalidation figurant sur la page [Invalidation des pages mises en cache à partir d’AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/configuring/page-invalidate.html) ne sont donc plus valides pour AEM as a Cloud Service.
 À la place, l’agent de vidage de réplication doit être utilisé. Cette opération peut être réalisée en utilisant l’API de réplication. La documentation de l’API de réplication est disponible [ici](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html). Pour obtenir un exemple de vidage du cache, consultez la [page d’exemple de l’API](https://helpx.adobe.com/fr/experience-manager/using/aem64_replication_api.html), et plus particulièrement, l’exemple `CustomStep` qui émet une action de réplication de type ACTIVATE pour tous les agents disponibles. Le point d’entrée de l’agent de vidage n’est pas configurable, mais il est préconfiguré pour pointer sur le Dispatcher, conformément au service de publication exécutant l’agent de vidage. L’agent de vidage peut généralement être déclenché par des événements ou des workflows OSGi.
 
-Le diagramme ci-dessous illustre cela.
+Le schéma ci-dessous illustre cela.
 
 ![Réseau de diffusion de contenu](assets/cdnd.png "Réseau de diffusion de contenu")
 
