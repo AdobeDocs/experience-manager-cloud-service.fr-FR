@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
 source-wordcount: '2393'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ Vous pouvez faire glisser des ressources de l’interface utilisateur Assets jus
 Une collection dynamique utilise des critères de recherche pour rassembler les ressources de manière dynamique. Vous pouvez créer une collection dynamique en utilisant uniquement des fichiers ou en utilisant des fichiers et des dossiers.
 
 1. Accédez à l’IU d’Assets et appuyez/cliquez sur l’icône **[!UICONTROL Rechercher]**.
-1. Saisissez le mot-clé de recherche dans la zone Recherche Omni et sélectionnez `Enter`. Appuyez/cliquez sur l’icône GlobalNav pour afficher le panneau Filtres et pour appliquer un filtre de recherche à partir du panneau Recherche.
+1. Saisissez le mot-clé dans la boîte de dialogue Omni-recherche et sélectionnez `Enter`. Appuyez/cliquez sur l’icône GlobalNav pour afficher le panneau Filtres et pour appliquer un filtre de recherche à partir du panneau Recherche.
 1. Dans la liste **[!UICONTROL Fichiers et dossiers]**, sélectionnez **[!UICONTROL Fichiers]**.
 1. Appuyez/cliquez sur **[!UICONTROL Enregistrer la collection dynamique]**.
 1. Spécifiez le nom de la collection. Sélectionnez **[!UICONTROL Public]** pour ajouter le groupe Utilisateurs DAM avec le rôle Observateur à la collection dynamique.
@@ -103,7 +103,7 @@ Vous pouvez ajouter des ressources à une collection qui comporte une liste de r
 Les collections dynamiques sont créées en enregistrant une recherche afin que vous puissiez modifier leur contenu en changeant les paramètres de recherche de la [recherche enregistrée](#saved-searches).
 
 1. Dans l’interface utilisateur Assets, appuyez/cliquez sur l’icône de **[!UICONTROL recherche]** de la barre d’outils.
-1. Avec le curseur dans la zone Omnisearch, sélectionnez la clé `Enter`.
+1. Placez le curseur dans la zone Omni-recherche et sélectionnez la touche `Enter`.
 1. Appuyez/cliquez sur l’icône de navigation globale pour afficher le panneau Filtres.
 1. Dans la liste **[!UICONTROL Recherches enregistrées]**, sélectionnez la collection dynamique que vous souhaitez modifier. Le panneau de recherche affiche les filtres configurés pour la recherche enregistrée.
 1. Dans la liste **[!UICONTROL Fichiers et dossiers]**, sélectionnez **[!UICONTROL Fichiers]**.
@@ -140,7 +140,7 @@ La fonctionnalité Recherche des collections prend en charge à la fois la [rech
 
 ### Recherche de collections {#search-collections}
 
-Vous pouvez effectuer des recherches dans des collections à partir de la console Collections. Lorsque vous effectuez une recherche avec des mots-clés dans la zone Omnisearch, [!DNL Experience Manager Assets] recherche les noms de collection, les métadonnées et les balises ajoutées aux collections.
+Vous pouvez effectuer des recherches dans des collections à partir de la console Collections. Lorsque vous effectuez des recherches avec des mots-clés dans la zone Omni-recherche, [!DNL Experience Manager Assets] recherche les noms des collections, les métadonnées et les balises ajoutées aux collections.
 
 Si vous recherchez des collections à partir du niveau supérieur, seules les collections individuelles sont renvoyées dans les résultats de recherche. Les ressources ou dossiers à l’intérieur des collections sont exclus. Dans tous les autres cas (par exemple, dans une collection individuelle ou dans une hiérarchie de dossiers), tous les fichiers, dossiers et collections appropriés sont renvoyés.
 
@@ -148,7 +148,7 @@ Si vous recherchez des collections à partir du niveau supérieur, seules les co
 
 Dans la console Collections, appuyez/cliquez sur une collection pour l’ouvrir.
 
-Dans une collection, [!DNL Experience Manager] la recherche est limitée aux ressources (ainsi qu’à leurs balises et métadonnées) de la collection que vous visualisez. Lorsque vous effectuez une recherche dans un dossier, toutes les ressources correspondantes et les dossiers enfants du dossier actif sont renvoyés. Lorsque vous effectuez une recherche dans une collection, seuls les ressources, dossiers et autres collections correspondant aux membres directs de la collection sont renvoyés.
+Dans une collection, la recherche [!DNL Experience Manager] se limite aux ressources (ainsi qu’aux balises et métadonnées) de la collection en cours d’affichage. Lorsque vous effectuez une recherche dans un dossier, toutes les ressources correspondantes et les dossiers enfants du dossier actif sont renvoyés. Lorsque vous effectuez une recherche dans une collection, seuls les ressources, dossiers et autres collections correspondant aux membres directs de la collection sont renvoyés.
 
 ## Modification des paramètres d’une collection {#edit-collection-settings}
 
@@ -179,7 +179,7 @@ Lorsque vous téléchargez une collection, la hiérarchie complète des ressourc
 
 ## Modification des propriétés de métadonnées de plusieurs collections {#editing-metadata-properties-of-multiple-collections}
 
-Adobe Enterprise Manager Assets vous permet de modifier en bloc les métadonnées de nombreuses collections. Utilisez la page [!UICONTROL Propriétés] pour effectuer des modifications sur les métadonnées sur plusieurs collections, par exemple pour modifier les propriétés des métadonnées en une valeur commune, ainsi que pour ajouter ou modifier des balises.
+Adobe Enterprise Manager Assets vous permet de modifier en masse les métadonnées de nombreuses collections. Utilisez la page [!UICONTROL Propriétés] pour effectuer des modifications sur les métadonnées sur plusieurs collections, par exemple pour modifier les propriétés des métadonnées en une valeur commune, ainsi que pour ajouter ou modifier des balises.
 
 Pour personnaliser la page [!UICONTROL Propriétés] de métadonnées, notamment ajouter, modifier et supprimer des propriétés de métadonnées, utilisez l’éditeur de schéma.
 
@@ -222,7 +222,7 @@ Vous pouvez ajouter une collection à une autre collection, créant ainsi une co
 >
 >Les collections dynamiques ne peuvent pas être imbriquées. En d’autres termes, elles ne peuvent pas comporter d’autres collections.
 
-## Recherches enregistrées    {#saved-searches}
+## Recherches enregistrées  {#saved-searches}
 
 Dans l’interface utilisateur d’Assets, vous pouvez rechercher ou filtrer des ressources selon des règles, critères de recherche ou facettes de recherche personnalisées. Si vous enregistrez ces éléments en tant que **[!UICONTROL recherches enregistrées]**, vous pouvez y accéder ultérieurement à partir de la liste **[!UICONTROL Recherches enregistrées]** du panneau Filtrer. La création d’une recherche enregistrée entraîne celle d’une collection dynamique.
 
@@ -238,7 +238,7 @@ Pour supprimer des recherches enregistrées, procédez comme suit :
 
 1. Dans l’interface utilisateur Assets, appuyez/cliquez sur l’icône de recherche de la barre d’outils.
 
-1. Avec le curseur dans le champ Omnisearch, sélectionnez la clé `Enter`.
+1. Placez le curseur dans le champ Omni-recherche et appuyez sur la touche `Enter`.
 1. Appuyez ou cliquez sur l’icône de navigation globale afin d’afficher le panneau Filtres.
 1. Dans la liste **[!UICONTROL Recherches enregistrées]**, appuyez/cliquez sur l’icône **[!UICONTROL Supprimer]** en regard de la collection dynamique à supprimer.
 1. Dans la boîte de dialogue, appuyez/cliquez sur **[!UICONTROL Supprimer]** pour supprimer la recherche enregistrée.
@@ -249,7 +249,7 @@ Vous pouvez exécuter un workflow pour les ressources d’une collection. Si la 
 
 1. Dans la console Collections, sélectionnez une collection sur laquelle exécuter un workflow.
 1. Appuyez/cliquez sur l’icône de navigation globale, puis sélectionnez **[!UICONTROL Chronologie]** dans la liste.
-1. Dans le plan de montage chronologique, sélectionnez ou appuyez sur l’icône Caret en bas, puis appuyez/cliquez sur **[!UICONTROL Processus du Début]**.
+1. Dans la chronologie, sélectionnez ou appuyez sur l’icône en forme de signe d’insertion en bas, puis appuyez/cliquez sur **[!UICONTROL Démarrer le workflow]**.
 1. Dans la section **[!UICONTROL Démarrer le workflow]**, sélectionnez un modèle de workflow dans la liste. Par exemple, sélectionnez le modèle **[!UICONTROL Ressources de mise à jour de DAM]**.
 1. Saisissez un titre pour le workflow, puis appuyez/cliquez sur **[!UICONTROL Démarrer]**.
 1. Dans la boîte de dialogue, appuyez/cliquez sur **[!UICONTROL Poursuivre]**. Le workflow s’exécute sur toutes les ressources de la collection.
