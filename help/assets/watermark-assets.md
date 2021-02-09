@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
 source-wordcount: '194'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Procédez de la manière suivante pour configurer [!DNL Experience Manager] pour
 
 1. Un fichier PNG est appliqué comme filigrane. Chargez ce fichier dans votre référentiel DAM.
 
-1. Accédez au référentiel Git [!DNL Cloud Manager] associé à votre environnement. Validez un fichier nommé `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` dans le référentiel avec le contenu suivant. Pour obtenir des instructions, voir [comment effectuer la configuration OSGi dans [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md).
+1. Accédez au référentiel Git [!DNL Cloud Manager] associé à votre environnement. Validez un fichier nommé `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` dans le référentiel avec le contenu suivant. Pour accéder à des instructions, voir [comment configurer OSGi dans [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md).
 
    ```json
    {
