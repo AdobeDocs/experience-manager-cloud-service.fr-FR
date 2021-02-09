@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# SPA et rendu côté serveur{#spa-and-server-side-rendering}
+# SPA et rendu côté serveur {#spa-and-server-side-rendering}
 
 Les applications sur une seule page (SPA) peuvent offrir à l’utilisateur une expérience riche et dynamique qui réagit et se comporte de manière familière, souvent tout simplement comme une application native. [À cette fin, le client doit charger le contenu à l’avance, puis se charger de la lourde tâche consistant à gérer l’interaction utilisateur](introduction.md#how-does-a-spa-work), réduisant ainsi le volume de communication nécessaire entre le client et le serveur, ce qui rend l’application plus réactive.
 
