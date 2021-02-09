@@ -1,6 +1,6 @@
 ---
 title: Développement d’AEM Commerce pour AEM as a Cloud Service
-description: Découvrez comment générer un projet AEM compatible avec le commerce à l'aide de l'archétype de projet AEM. Découvrez comment créer et déployer le projet sur un environnement de développement local à l’aide de l’AEM en tant que SDK Cloud Service.
+description: Découvrir comment générer un projet AEM compatible avec le commerce à l’aide de l’archétype de projet AEM. Découvrir comment créer et déployer le projet sur un environnement de développement local à l’aide du SDK AEM as a Cloud Service.
 topics: Commerce, Development
 feature: Commerce Integration Framework
 version: cloud-service
@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: 9d8d7c3c8c1ac3cb843ce74b3ccdb6904bbfaa05
 workflow-type: tm+mt
 source-wordcount: '967'
-ht-degree: 82%
+ht-degree: 94%
 
 ---
 
@@ -28,7 +28,7 @@ Le développement de projets AEM Commerce basés sur Commerce Integration Framew
 
 >[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
 
-Un environnement de développement local est recommandé pour travailler avec des projets CIF. Le module complémentaire CIF fournit pour les environnements AEM as a Cloud Service est également disponible pour le développement local. Il peut être téléchargé à partir du [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+Un environnement de développement local est recommandé pour travailler avec des projets CIF. Le module complémentaire CIF fourni pour les environnements AEM as a Cloud Service est également disponible pour le développement local. Il peut être téléchargé à partir du [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 Le module complémentaire est fourni sous la forme d’une archive de fonctionnalités Sling. Le fichier zip disponible sur le portail de distribution de logiciels comprend deux fichiers archivés de fonctionnalités Sling, l’un pour l’auteur AEM et l’autre pour les instances de publication AEM.
 
@@ -85,17 +85,17 @@ Pour le développement local du module complémentaire CIF avec le SDK AEM as a 
 
    Cette variable est utilisée par AEM pour se connecter à votre système commercial. De plus, le module complémentaire CIF inclut un proxy inverse local pour rendre le point de terminaison GraphQL Magento disponible localement. Il est utilisé par les outils de création CIF (console de produit et sélecteurs) et pour les composants côté client CIF effectuant des appels GraphQL directs.
 
-   Cette variable doit également être configurée pour l’environnement AEM as a Cloud Service. Pour plus d’informations sur les variables, voir [Configuration d’OSGi pour AEM en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
+   Cette variable doit également être configurée pour l’environnement AEM as a Cloud Service. Pour plus d’informations sur les variables, voir [Configuration d’OSGi pour AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#local-development).
 
-1. (Facultatif) Pour activer les fonctionnalités de catalogue intermédiaire, vous devez créer un jeton d’intégration pour votre instance de Magento. Suivez les étapes décrites dans [Prise en main](./getting-started.md#staging) pour créer le jeton.
+1. (Facultatif) Pour activer les fonctionnalités de catalogue par étapes, vous devez créer un jeton d’intégration pour votre instance de Magento. Suivez les étapes décrites dans [Prise en main](./getting-started.md#staging) pour créer le jeton.
 
-   Définissez un secret OSGi portant le nom `COMMERCE_AUTH_HEADER` sur la valeur suivante :
+   Définissez un secret OSGi portant le nom `COMMERCE_AUTH_HEADER` sur la valeur suivante :
 
    ```xml
    Authorization: Bearer <Access Token>
    ```
 
-   Pour plus d&#39;informations sur les secrets, voir [Configuration d&#39;OSGi pour AEM en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
+   Pour plus d’informations sur les secrets, voir [Configuration d’OSGi pour AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
 
 1. Démarrez le SDK AEM as a Cloud Service.
 
