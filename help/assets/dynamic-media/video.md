@@ -5,16 +5,16 @@ translation-type: tm+mt
 source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
 workflow-type: tm+mt
 source-wordcount: '9536'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
 
-# Vidéo{#video}
+# Vidéo {#video}
 
 Cette section décrit l’utilisation de vidéos dans Dynamic Media.
 
-## Démarrage rapide : vidéos   {#quick-start-videos}
+## Démarrage rapide : vidéos {#quick-start-videos}
 
 Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapidement les opérations liées aux visionneuses de vidéos adaptatives dans Dynamic Media. Chaque étape comporte des renvois à des rubriques contenant de plus amples informations.
 
@@ -50,13 +50,13 @@ Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapide
 
 1. **Gérez les vidéos Dynamic Media** en effectuant les opérations suivantes :
 
-   * Organiser, parcourir et rechercher des ressources vidéo
+   * Organisez, parcourez et recherchez des ressources vidéo
 
       * [Organisation des ressources numériques](/help/assets/organize-assets.md)
 En savoir plus sur les [bonnes pratiques relatives à l’organisation des ressources numériques en vue de l’utilisation de profils de traitement](/help/assets/dynamic-media/best-practices-for-file-management.md)
 
       * [Recherche de ressources vidéo](/help/assets/search-assets.md#custompredicates) ou [Recherche de ressources](/help/assets/manage-digital-assets.md#search-assets)
-   * Prévisualiser et publier des ressources vidéo
+   * Prévisualisez et publiez des ressources vidéo
 
       * Affichez la vidéo source et les rendus codés de la vidéo avec les miniatures associées :
          [Prévisualisation de vidéos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) ou [Prévisualisation de ressources](/help/assets/dynamic-media/previewing-assets.md)
@@ -117,7 +117,7 @@ En savoir plus sur les [bonnes pratiques relatives à l’organisation des resso
 
 
 
-## Utilisation de vidéo dans Dynamic Media   {#working-with-video-in-dynamic-media}
+## Utilisation de vidéo dans Dynamic Media  {#working-with-video-in-dynamic-media}
 
 La vidéo dans Dynamic Media est une solution complète qui facilite la publication de vidéos adaptatives haute qualité pour la diffusion sur plusieurs écrans, notamment les postes de travail et les appareils mobiles iOS, Android, Blackberry et Windows. Une visionneuse de vidéos adaptative regroupe les versions d’une même vidéo codées dans des débits et des formats différents, par exemple 400 kbit/s, 800 kbit/s et 1 000 kbit/s. L’ordinateur de bureau ou l’appareil mobile détecte la bande passante disponible.
 
@@ -146,7 +146,7 @@ Pour la gestion des visionneuses de vidéos adaptative et unique, les fonctions 
 * Organiser, parcourir et effectuer des recherches dans la vidéo avec une prise en charge complète des métadonnées pour une gestion efficace des ressources vidéo.
 * Proposer des visionneuses de vidéos adaptatives en ligne ainsi que sur des postes de travail et des appareils mobiles (iPhone, iPad, Android, Blackberry et Windows Phone notamment).
 
-La diffusion de vidéo adaptative en flux continu est prise en charge sur diverses plates-formes iOS. Voir [Guide de référence des visionneuses Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
+La diffusion de vidéo adaptative en flux continu est prise en charge sur diverses plates-formes iOS. Voir [Guide de référence des visionneuses de médias dynamiques](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
 
 Dynamic Media prend en charge la lecture vidéo pour mobiles au format vidéo MP4 H.264. Les appareils Blackberry qui prennent en charge ce format vidéo sont répertoriés dans la liste : [Formats vidéo pris en charge sur Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -162,7 +162,7 @@ Les terminaux Windows qui prennent en charge ce format vidéo sont répertoriés
 
 Voir l’exemple [Lecture de vidéo dynamique](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480).
 
-Voir aussi [Visionneuses pour AEM Assets et Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) et [Visionneuses pour AEM Assets uniquement](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) dans le [Guide de référence des visionneuses Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+Voir aussi [Visionneuses pour AEM Assets et Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html?lang=fr#viewers-aem-assets-dmc) et [Visionneuses pour AEM Assets uniquement](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=fr#viewers-for-aem-assets-only) dans le [Guide de référence des visionneuses de médias dynamiques](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=fr).
 
 ## Bonne pratique : Utilisation de la visionneuse de vidéos HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -174,9 +174,9 @@ En ce qui concerne la lecture, la visionneuse, détecte automatiquement les fonc
 
 En combinant dans un lecteur unique la capacité de concevoir les composants de lecture à l’aide de code HTML5 et CSS, d’avoir accès à la lecture incorporée et d’utiliser les flux continus adaptatifs et progressifs selon la capacité du navigateur, vous pouvez étendre la portée de votre contenu multimédia aux utilisateurs d’appareils mobiles et de postes de travail et garantir ainsi une expérience vidéo rationalisée.
 
-Voir aussi [Visionneuses pour AEM Assets uniquement](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) dans le [Guide de référence des visionneuses Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+Voir aussi [Visionneuses pour AEM Assets uniquement](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) dans le [Guide de référence des visionneuses de médias dynamiques](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
-### Lecture vidéo sur les ordinateurs de bureau et les appareils mobiles à l’aide de la visionneuse de vidéos HTML5   {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
+### Lecture vidéo sur les ordinateurs de bureau et les appareils mobiles à l’aide de la visionneuse de vidéos HTML5  {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 Pour la diffusion en flux continu de la vidéo adaptative sur un poste de travail et un appareil mobile, les vidéos utilisées pour le changement de débit reposent sur toutes les vidéos MP4 dans la visionneuse de vidéos adaptative.
 
@@ -191,7 +191,7 @@ HLS est une norme d’Apple pour la diffusion de vidéo adaptative en continu qu
 
 La vidéo progressive est fournie grâce au téléchargement et à l’enregistrement de la vidéo en local sur le système du poste de travail ou de l’appareil mobile de l’utilisateur.
 
-Le tableau suivant décrit la méthode de lecture, de navigation et de périphérique des vidéos sur les ordinateurs de bureau et les périphériques mobiles à l’aide de la [visionneuse de vidéos HTML5 Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video.html#interactive-video).
+Le tableau ci-dessous décrit l’appareil, le navigateur et la méthode de lecture des vidéos sur les ordinateurs de bureau et les appareils mobiles à l’aide de la [visionneuse de vidéos HTML5 Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video.html?lang=fr#interactive-video).
 
 <table>
  <tbody>
@@ -208,7 +208,7 @@ Le tableau suivant décrit la méthode de lecture, de navigation et de périphé
   <tr>
    <td>Poste de travail</td>
    <td>Internet Explorer 11+</td>
-   <td>Sous Windows 8 et Windows 10 - Forcer l’utilisation de HTTPS chaque fois que HLS est demandé. Limites connues : HTTP sur HLS ne fonctionne pas avec cette combinaison de navigateur/système d’exploitation<br /> <br /> Sous Windows 7 - Téléchargement progressif. Utilise la logique standard pour sélectionner le protocole HTTP ou HTTPS.</td>
+   <td>Sous Windows 8 et Windows 10 – Forcer l’utilisation de HTTPS chaque fois que HLS est demandé. Limites connues : HTTP sur HLS ne fonctionne pas avec cette combinaison de navigateur/système d’exploitation<br /> <br /> Sous Windows 7 – Téléchargement progressif. Utilise la logique standard pour sélectionner le protocole HTTP ou HTTPS.</td>
   </tr>
   <tr>
    <td>Poste de travail</td>
@@ -263,7 +263,7 @@ Le tableau suivant décrit la méthode de lecture, de navigation et de périphé
  </tbody>
 </table>
 
-## Architecture de la solution vidéo Dynamic Media   {#architecture-of-dynamic-media-video-solution}
+## Architecture de la solution vidéo Dynamic Media  {#architecture-of-dynamic-media-video-solution}
 
 Le graphique suivant montre le workflow global de création de vidéos qui sont chargées et codées par le biais de DMGateway (dans le mode Hybride Dynamic Media) et mises à disposition pour une consommation publique.
 
@@ -282,7 +282,7 @@ Vous trouverez ci-dessous quelques conseils sur les bonnes pratiques de codage d
 Pour obtenir plus de conseils sur le codage vidéo, voir :
 
 * [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution (« Diffusion en continu : notions fondamentales – codecs, bande passante, débit de données et résolution »)](https://www.adobe.com/go/learn_s7_streaming101_fr).
-* [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_fr).
+* [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en).
 
 ### Fichiers vidéo source {#source-video-files}
 
@@ -323,7 +323,7 @@ Ce tableau décrit la façon dont les résultats de la formule se traduisent en 
 
 Par exemple, une vidéo qui a une largeur de 1440 pour une hauteur de 1080 a un format de 1440/1080, soit 1,33. Dans ce cas, vous choisissez un paramètre prédéfini de codage vidéo avec un format de 4:3 pour le codage du fichier vidéo.
 
-### Débit binaire   {#bitrate}
+### Débit binaire  {#bitrate}
 
 Le débit correspond à la quantité de données encodées pour produire une seule seconde de lecture vidéo. Le débit de données est mesuré en kilobits par seconde (kbit/s).
 
@@ -355,7 +355,7 @@ Ce tableau décrit le débit de données associé à des vitesses de connexion c
 
 ### Résolution {#resolution}
 
-La **résolution** décrit la hauteur et la largeur d’un fichier vidéo, exprimée en pixels. La plupart des vidéos sources sont stockées à une résolution élevée (par exemple, 1 920 x 1 080). À des fins de diffusion en flux continu, la vidéo source est compressée à une résolution inférieure (640 x 480, voire moins).
+La **résolution** décrit la hauteur et la largeur d’un fichier vidéo, exprimée en pixels. La plupart des vidéos sources sont stockées à une résolution élevée (par exemple, 1 920 x 1 080). À des fins de diffusion en flux continu, la vidéo source est compressée à une résolution inférieure (640 x 480, voire moins).
 
 La résolution et le débit de données sont deux facteurs étroitement liés qui déterminent la qualité de la vidéo. Pour maintenir la même qualité vidéo, plus le nombre de pixels (c’est-à-dire la résolution) est élevé dans un fichier vidéo, plus le débit de données doit l’être également. Par exemple, considérez le nombre de pixels par image dans un fichier vidéo d’une résolution de 320 x 240 pixels et dans un fichier vidéo d’une résolution de 640 x 480 pixels :
 
@@ -404,14 +404,14 @@ Supposons, par exemple, que la résolution de votre vidéo source soit équivale
 |--- |--- |--- |--- |
 | Source | 1 920 x 1 080 | 1 | 1 |
 | Codée | 960 x 540 | 2 | 2 |
-| Codée | 640 x 360 | 3 | 1 |
+| Codée | 640 x 360 | 3 | 3 |
 | Codée | 480 x 270 | 4 | 4 |
 
 ### Format de fichier vidéo codé {#encoded-video-file-format}
 
 Dynamic Media recommande d’utiliser les paramètres prédéfinis MP4 H.264 de codage vidéo. Comme les fichiers MP4 utilisent le codec vidéo H.264, la vidéo est de haute qualité mais dans un fichier au volume compressé.
 
-## Publication de vidéos sur YouTube   {#publishing-videos-to-youtube}
+## Publication de vidéos sur YouTube  {#publishing-videos-to-youtube}
 
 Vous pouvez publier des ressources vidéo gérées dans AEM Assets directement sur une chaîne YouTube que vous avez précédemment créée.
 
@@ -434,7 +434,7 @@ Pour garantir une authentification serveur à serveur sécurisée avec YouTube, 
 
 Vous pouvez également [annuler la publication de vidéos pour les supprimer de YouTube](#unpublishing-videos-to-remove-them-from-youtube).
 
-### Configuration des paramètres de Google Cloud   {#configuring-google-cloud-settings}
+### Configuration des paramètres de Google Cloud  {#configuring-google-cloud-settings}
 
 Pour effectuer une publication sur YouTube, vous avez besoin d’un compte Google. Si vous disposez d’un compte GMAIL, alors vous disposez déjà d’un compte Google ; si vous ne disposez pas d’un compte Google, vous pouvez facilement en créer un. Un compte est nécessaire, car vous avez besoin des informations d’identification pour publier des ressources vidéo sur YouTube. Si vous avez déjà créé un compte, ignorez cette tâche et passez directement à [Création d’une chaîne YouTube](#creating-a-youtube-channel).
 
@@ -472,13 +472,13 @@ Pour configurer les paramètres de Google Cloud, procédez comme suit :
 1. Effectuez l’une des opérations suivantes :
 
    * Dans le tableau de bord de votre projet, dans la carte Prise en main, appuyez sur **[!UICONTROL Explorer et activer les API]**.
-   * Dans le tableau de bord de votre projet, dans la carte API, appuyez sur **[!UICONTROL Accéder à la présentation des API]**.
+   * Dans le tableau de bord de votre projet, dans la carte API, appuyez sur **[!UICONTROL Accéder à l’aperçu des API]**.
 
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. En haut de la page API &amp; services, appuyez sur **[!UICONTROL Activer les API et les services]**.
-1. Sur la page Bibliothèque d’API, dans la partie gauche, sous **[!UICONTROL Catégorie]**, appuyez sur **[!UICONTROL YouTube]**. Sur le côté droit de la page, appuyez sur **[!UICONTROL API YouTube Data]**.
-1. Sur la page API YouTube Data v3, appuyez sur **[!UICONTROL Activer]**.
+1. Sur la page Bibliothèque d’API, dans la partie gauche, sous **[!UICONTROL Catégorie]**, appuyez sur **[!UICONTROL YouTube]**. Sur le côté droit de la page, appuyez sur **[!UICONTROL YouTube Data API]**.
+1. Sur la page YouTube Data API v3, appuyez sur **[!UICONTROL Activer]**.
 
    ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
 
@@ -486,19 +486,19 @@ Pour configurer les paramètres de Google Cloud, procédez comme suit :
 
    ![6_5_googleaccount-apis-createcredentials](assets/6_5_googleaccount-apis-createcredentials.png)
 
-1. Sur la page **[!UICONTROL Ajouter des informations d’identification à votre projet]**, à l’étape 1, procédez comme suit :
+1. Sur la page **[!UICONTROL Ajouter des identifiants au projet]**, à l’étape 1, procédez comme suit :
 
-   * Dans la liste déroulante **[!UICONTROL Quelle API utilisez-vous ?]**, sélectionnez **[!UICONTROL API YouTube Data v3]**.
+   * Dans la liste déroulante **[!UICONTROL Quelle API utilisez-vous ?]**, sélectionnez **[!UICONTROL YouTube Data API v3]**.
 
-   * Depuis la liste déroulante **[!UICONTROL Depuis où appellerez-vous l’API ?]**, sélectionnez **[!UICONTROL Serveur web (par exemple, node.js, Tomcat)]**
+   * Depuis la liste déroulante **[!UICONTROL Quelle plate-forme utilisez-vous pour appeler l’API ?]**, sélectionnez **[!UICONTROL Serveur web (exemple : node.js, Tomcat)]**
 
-   * Dans la liste déroulante **[!UICONTROL À quelles données aurez-vous accès ?]**, appuyez sur **[!UICONTROL Données utilisateur]**.
+   * Dans la liste déroulante **[!UICONTROL À quelles données allez-vous accéder ?]**, appuyez sur **[!UICONTROL Données utilisateur]**.
 
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
 1. Appuyez sur **[!UICONTROL De quels identifiants ai-je besoin ?]**
-1. Sur la page **[!UICONTROL Ajouter des informations d’identification à votre projet]**, à l’étape 2, sous l’en-tête **[!UICONTROL Créer un ID de client OAuth 2.0]**, dans le champ Nom, saisissez un nom unique si vous le souhaitez. Vous pouvez également utiliser le nom par défaut spécifié par Google.
-1. Dans le champ de texte sous l’en-tête **[!UICONTROL Origines Javascript autorisées]**, saisissez le chemin suivant, en substituant vos propres domaine et numéro de port dans le chemin, puis appuyez sur **[!UICONTROL Entrée]** pour ajouter le chemin à la liste :
+1. Sur la page **[!UICONTROL Ajouter des identifiants au projet]**, à l’étape 2, sous l’en-tête **[!UICONTROL Créer un ID client OAuth 2.0]**, dans le champ Nom, saisissez un nom unique si vous le souhaitez. Vous pouvez également utiliser le nom par défaut spécifié par Google.
+1. Dans le champ de texte sous l’en-tête **[!UICONTROL Origines JavaScript autorisées]**, saisissez le chemin suivant, en substituant vos propres domaine et numéro de port dans le chemin, puis appuyez sur **[!UICONTROL Entrée]** pour ajouter le chemin à la liste :
 
    `https://<servername.domain>:<port_number>`
 
@@ -516,17 +516,17 @@ Pour configurer les paramètres de Google Cloud, procédez comme suit :
 
    **Remarque :** L’exemple du chemin ci-dessus est fourni uniquement à titre illustratif.
 
-1. Cliquez sur **[!UICONTROL Créer un ID de client OAuth]**.
-1. Sur la page **[!UICONTROL Ajouter des informations d’identification à votre projet]**, à l’étape 3, sous l’en-tête **[!UICONTROL Configuration de l’écran de consentement OAuth 2.0]**, sélectionnez l’adresse électronique Gmail que vous utilisez actuellement.
+1. Cliquez sur **[!UICONTROL Créer un ID client OAuth]**.
+1. Sur la page **[!UICONTROL Ajouter des identifiants au projet]**, à l’étape 3, sous l’en-tête **[!UICONTROL Configuration de l’écran d’autorisation OAuth 2.0]**, sélectionnez l’adresse e-mail Gmail que vous utilisez actuellement.
 
    ![6_5_googleaccount-apis-createcredentials-consentscreen](assets/6_5_googleaccount-apis-createcredentials-consentscreen.png)
 
-1. Sous l’en-tête **[!UICONTROL Nom du produit affiché à l’intention des utilisateurs]**, dans le champ de texte, entrez ce qui doit s’afficher sur l’écran du consentement.
+1. Sous l’en-tête **[!UICONTROL Nom du produit affiché à l’intention des utilisateurs]**, dans le champ de texte, entrez ce qui doit s’afficher sur l’écran d’autorisation.
 
    L’écran du consentement s’affiche à l’administrateur AEM lorsque celui-ci s’identifie sur YouTube ; AEM contactera YouTube pour l’autorisation.
 
 1. Cliquez sur **[!UICONTROL Continuer]**.
-1. Sur la page Ajouter des informations d’identification à votre projet, à l’étape 4, sous l’en-tête **[!UICONTROL Télécharger les informations d’identification]**, appuyez sur **[!UICONTROL Télécharger]**.
+1. Sur la page Ajouter des identifiants au projet, à l’étape 4, sous l’en-tête **[!UICONTROL Télécharger les identifiants]**, appuyez sur **[!UICONTROL Télécharger]**.
 
    ![6_5_googleaccount-apis-createcredentials-downloadcredentials](assets/6_5_googleaccount-apis-createcredentials-downloadcredentials.png)
 
@@ -580,14 +580,14 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. Select the **[!UICONTROL Enabled]** checkbox to turn on the replication agent.
 1. Click **[!UICONTROL OK]**. -->
 
-### Configuration de YouTube dans AEM   {#setting-up-youtube-in-aem}
+### Configuration de YouTube dans AEM  {#setting-up-youtube-in-aem}
 
 À partir d’AEM 6.4, une nouvelle méthode d’interface utilisateur tactile a été ajoutée pour configurer la publication YouTube dans AEM. Selon l’instance installée d’AEM que vous utilisez, effectuez l’une des opérations suivantes :
 
 * Pour configurer YouTube dans une version d’AEM antérieure à 6.4, voir [Configuration de YouTube dans une version d’AEM antérieure à 6.4](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before).
 * Pour configurer YouTube dans AEM 6.4 ou versions ultérieures, reportez-vous à [Configuration de YouTube dans AEM 6.4 et versions ultérieures](#setting-up-youtube-in-aem-and-later).
 
-#### Configuration de YouTube dans AEM 6.4 et versions ultérieures   {#setting-up-youtube-in-aem-and-later}
+#### Configuration de YouTube dans AEM 6.4 et versions ultérieures  {#setting-up-youtube-in-aem-and-later}
 
 1. Veillez à vous connecter à votre instance Dynamic Media en tant qu’administrateur.
 1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Services cloud]** > **[!UICONTROL Configuration de la publication sur YouTube]**.
@@ -743,7 +743,7 @@ Collez la valeur copiée dans l’éditeur de texte ouvert. Par la suite, vous a
 
    Voir [Profils de métadonnées](/help/assets/metadata-profiles.md) et [Profils vidéo](/help/assets/dynamic-media/video-profiles.md).
 
-### Publication de vidéos sur votre chaîne YouTube   {#publishing-videos-to-your-youtube-channel}
+### Publication de vidéos sur votre chaîne YouTube  {#publishing-videos-to-your-youtube-channel}
 
 Vous devez maintenant associer les balises que vous avez précédemment ajoutées aux ressources vidéo. Ce processus permet à AEM de déterminer les ressources à publier sur votre chaîne YouTube.
 
@@ -803,7 +803,7 @@ Pour lier les URL YouTube à votre application web, procédez comme suit :
 1. Cliquez sur l’onglet **[!UICONTROL Avancé]**.
 1. Sous l’en-tête Publication YouTube, dans la liste des URL YouTube, sélectionnez le texte de l’URL et copiez-le dans votre navigateur web pour prévisualiser la ressource ou l’ajouter à votre page de contenu web.
 
-### Annulation de la publication d’une vidéo pour la supprimer de YouTube   {#unpublishing-videos-to-remove-them-from-youtube}
+### Annulation de la publication d’une vidéo pour la supprimer de YouTube  {#unpublishing-videos-to-remove-them-from-youtube}
 
 Lorsque vous annulez la publication d’une ressource vidéo dans AEM, la vidéo est supprimée de YouTube.
 
@@ -823,7 +823,7 @@ Pour annuler la publication de vidéos afin de les supprimer de YouTube, procéd
 1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Suivant]**.
 1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Annuler la publication]**.
 
-## Surveillance du codage vidéo et de la progression de la publication sur YouTube   {#monitoring-video-encoding-and-youtube-publishing-progress}
+## Surveillance du codage vidéo et de la progression de la publication sur YouTube  {#monitoring-video-encoding-and-youtube-publishing-progress}
 
 Lorsque vous téléchargez une nouvelle vidéo vers un dossier auquel un codage vidéo a été appliqué ou que vous publiez votre vidéo sur YouTube, vous pouvez contrôler la manière dont votre codage vidéo/publication YouTube progresse (ou échoue) de plusieurs façons. La progression de la publication YouTube réelle est uniquement disponible via les journaux mais sa réussite ou son échec sont également répertoriés et décrits dans la procédure suivante. En outre, vous pouvez recevoir des notifications par e-mail lorsqu’un processus de publication YouTube ou un codage vidéo est terminé ou interrompu.
 
@@ -859,7 +859,7 @@ Pour surveiller la progression (notamment l’échec du codage ou de la publicat
 
    Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
 
-1. Pour les workflows en cours, consultez les instances de workflow disponibles sous **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Instances]**.
+1. Pour les workflows en cours, consultez les instances de workflow disponibles sous **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Instances]**.
 
    >[!NOTE]
    Vous aurez peut-être besoin de droits administratifs pour accéder au menu **[!UICONTROL Outils]**.
@@ -887,7 +887,7 @@ Pour surveiller la progression (notamment l’échec du codage ou de la publicat
 
    Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
 
-1. Pour les workflows terminés, consultez l’archive de workflow sous **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Archive]**. La liste **[!UICONTROL Archive de workflow]** répertorie toutes les activités de workflow qui ont réussi.
+1. Pour les workflows terminés, consultez l’archive de workflow sous **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Archive]**. La liste **[!UICONTROL Archive de workflow]** répertorie toutes les activités de workflow qui ont réussi.
 
    >[!NOTE]
    Vous aurez peut-être besoin de droits administratifs pour accéder au menu **[!UICONTROL Outils]**.
@@ -1060,7 +1060,7 @@ Dynamic Media peut convertir des fichiers de sous-titres au format JSON (JavaSc
 
 Voir [Diffusion de contenu statique (sans image)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) pour plus d’informations sur l’utilisation de la fonction JSON dans une URL.
 
-**Pour ajouter des sous-titres à une vidéo:**
+**Pour ajouter des sous-titres à une vidéo :**
 
 1. Utilisez une application tierce ou un service de création de fichiers de sous-titres de vidéo.
 
@@ -1113,9 +1113,9 @@ Le lecteur vidéo utilisé doit prendre en charge l’utilisation des marqueurs 
 
 <!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
-  Vous créez une liste de chapitres pour votre vidéo un peu de la même façon que vous créez des sous-titres. Autrement dit, vous créez un fichier WebVTT. Notez toutefois que ce fichier doit être distinct de tout fichier de sous-titrage WebVTT que vous pourriez également être amené à utiliser ; vous ne pouvez pas combiner les sous-titres et les chapitres dans un fichier WebVTT.
+Vous créez une liste de chapitres pour votre vidéo un peu de la même façon que vous créez des sous-titres. Autrement dit, vous créez un fichier WebVTT. Notez toutefois que ce fichier doit être distinct de tout fichier de sous-titrage WebVTT que vous pourriez également être amené à utiliser ; vous ne pouvez pas combiner les sous-titres et les chapitres dans un fichier WebVTT.
 
-  Vous pouvez utiliser l’exemple suivant comme un exemple du format que vous pouvez utiliser pour créer un fichier WebVTT avec une navigation par chapitre :
+Vous pouvez utiliser l’exemple suivant comme un exemple du format que vous pouvez utiliser pour créer un fichier WebVTT avec une navigation par chapitre :
 
 ### Fichier WebVTT avec navigation par chapitre vidéo {#webvtt-file-with-video-chapter-navigation}
 
@@ -1137,7 +1137,7 @@ Cost-efficient access to rapidly evolving technology.
 
 Dans l’exemple ci-dessus, le `Chapter 1` est l’identifiant de repère et il est facultatif. La période de repère `00:00:000 --> 01:04:364` indique l’heure de début et l’heure de fin du chapitre au format `00:00:000`. Les trois derniers chiffres sont les millisecondes et peuvent être laissés sur `000`, selon vos préférences. Le titre du chapitre `The bicycle store behind it all` est la description réelle du contenu du chapitre. L’identifiant de repère, l’heure de départ du repère, ainsi que le titre du chapitre apparaissent tous dans une fenêtre contextuelle du lecteur vidéo lorsqu’un utilisateur pointe la souris sur un point de repère visuel dans la chronologie de la vidéo.
 
-  Étant donné que vous utilisez une visionneuse de vidéos HTML5, assurez-vous que le fichier de chapitres que vous créez est conforme à la norme WebVTT (Web Video Text Tracks). L’extension de nom de fichier de chapitres est .vtt. D’autres informations sur la norme de sous-titrage WebVTT sont disponibles.
+Étant donné que vous utilisez une visionneuse de vidéos HTML5, assurez-vous que le fichier de chapitres que vous créez est conforme à la norme WebVTT (Web Video Text Tracks). L’extension de nom de fichier de chapitres est .vtt. D’autres informations sur la norme de sous-titrage WebVTT sont disponibles.
 
 Reportez-vous à la section [WebVTT : The web video text tracks format](https://dev.w3.org/html5/webvtt/)
 
@@ -1145,7 +1145,7 @@ Reportez-vous à la section [WebVTT : The web video text tracks format](https:/
 
 1. Enregistrez le fichier .vtt en codage UTF8 pour éviter tout problème de rendu des caractères dans le texte des titres de chapitres.
 
-     En règle générale, vous attribuez au fichier de chapitres VTT le même nom que celui du fichier vidéo et lui ajoutez le mot « chapitres ». Ainsi, vous pouvez automatiser aisément la génération des URL de vidéo avec le système de gestion de contenu web existant.
+   En règle générale, vous attribuez au fichier de chapitres VTT le même nom que celui du fichier vidéo et lui ajoutez le mot « chapitres ». Ainsi, vous pouvez automatiser aisément la génération des URL de vidéo avec le système de gestion de contenu web existant.
 1. Dans AEM, chargez votre fichier de chapitres WebVTT.
 
    Voir la section [Chargement des ressources](/help/assets/manage-digital-assets.md#uploading-assets).
