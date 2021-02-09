@@ -1,12 +1,12 @@
 ---
 title: Gestion des droits numériques dans  [!DNL Assets]
-description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans  [!DNL Experience Manager] as a [!DNL Cloud Service].
+description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans  [!DNL Experience Manager]  as a  [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
 source-wordcount: '1343'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Vous pouvez rechercher des ressources arrivées à expiration, y compris les sou
 
 1. Dans la console [!DNL Assets], cliquez sur l’option **[!UICONTROL Rechercher]** de la barre d’outils pour afficher la zone Omni-recherche.
 
-1. Avec le curseur dans la zone Omnisearch, sélectionnez la clé `Enter` pour afficher la page des résultats de la recherche.
+1. Avec le curseur dans la zone Omni-recherche, sélectionnez la touche `Enter` pour afficher la page des résultats de la recherche.
 
 1. Cliquez sur l’icône de navigation globale pour afficher le panneau Recherche.
 
@@ -56,7 +56,7 @@ Pour que la console [!DNL Assets] affiche les ressources composites référencé
 1. Ouvrez Configuration Manager dans [!DNL Experience Manager].
 1. Sélectionnez l’option de **[!UICONTROL notification d’expiration d’Adobe CQ DAM]**. Par défaut, le **[!UICONTROL planificateur basé temps]** est sélectionné. Il programme une tâche qui vérifie, à un moment précis, si une ressource contient des sous-ressources arrivées à expiration. Une fois la tâche terminée, les ressources qui possèdent des sous-ressources expirées et des ressources référencées sont affichées à l’état expiré dans les résultats de la recherche.
 
-1. Pour exécuter la tâche périodiquement, décochez l’option de **[!UICONTROL planificateur basé sur le temps]** et modifiez la périodicité en secondes dans le champ du **[!UICONTROL planificateur de périodicité]**. Par exemple, l’expression « 0 0 0 * * ? » déclenche la tâche à 00 heures.
+1. Pour exécuter la tâche périodiquement, décochez l’option de **[!UICONTROL planificateur basé sur le temps]** et modifiez la périodicité en secondes dans le champ du **[!UICONTROL planificateur de périodicité]**. Par exemple, l’expression « 0 0 0 &amp;ast; &amp;ast; ? » déclenche la tâche à 00 heures.
 
 <!-- 1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
 
