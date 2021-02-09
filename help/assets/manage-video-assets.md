@@ -5,13 +5,13 @@ contentOwner: AG
 translation-type: tm+mt
 source-git-commit: deab2183447e64e8a98f3072ceab2ef2216c4528
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '619'
+ht-degree: 80%
 
 ---
 
 
-# Gestion des ressources vidéo   {#manage-video-assets}
+# Gestion des ressources vidéo {#manage-video-assets}
 
 Le format vidéo est un élément essentiel des ressources numériques d’une entreprise. [!DNL Adobe Experience Manager] propose des solutions et des fonctionnalités matures pour gérer l’ensemble du cycle de vie de vos ressources vidéo après leur création.
 
@@ -32,7 +32,7 @@ Après la publication, vous pouvez inclure les ressources vidéo dans une page w
 
 ## Transcodage à l’aide du profil de traitement {#transcode-video}
 
-[!DNL Experience Manager][!DNL Cloud Service] as a permet de réaliser un transcodage de base des fichiers vidéo MP4 à l’aide de profils de traitement. Cette fonctionnalité vous permet non seulement de charger, mais aussi de prévisualiser et de mettre à l’échelle un fichier vidéo MP4.
+[!DNL Experience Manager] as a [!DNL Cloud Service] permet de réaliser un transcodage de base des fichiers vidéo MP4 à l’aide de profils de traitement. Cette fonctionnalité vous permet non seulement de charger, mais aussi de prévisualiser et de mettre à l’échelle un fichier vidéo MP4.
 
 ![Création d’un Profil de traitement pour le transcodage vidéo dans  [!DNL Experience Manager]](assets/video-processing-profile-for-mp4.png)
 
