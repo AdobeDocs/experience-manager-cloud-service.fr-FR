@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 645d25753e4baa03ba4df0645a266b793ec64a49
 workflow-type: tm+mt
 source-wordcount: '817'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -16,12 +16,12 @@ Vous devez convertir les pages de lancement pour redéplacer le contenu vers la 
 
 * Faut-il convertir l’intégralité du lancement ou uniquement la page en cours ?
 * Faut-il convertir les pages enfants de la page en cours ?
-* Conversion de l’intégralité du lancement ou uniquement des pages qui ont été modifiées.
+* Faut-il convertir l’intégralité du lancement ou uniquement des pages qui ont été modifiées ?
 * Faut-il supprimer le lancement après la conversion ?
 
 >[!NOTE]
 >
->Après avoir converti les pages de lancement en pages cibles (de **production**), vous pouvez activer les pages de **production** sous la forme d’une entité (pour accélérer le processus de rendu). Ajoutez les pages à un module de workflow et utilisez ce dernier comme charge utile pour un workflow qui active un module de pages. Vous devez créer le module de workflow avant la conversion du lancement Voir [Traitement de pages converties à l’aide du worfklow AEM](#processing-promoted-pages-using-aem-workflow).
+>Après avoir converti les pages de lancement en pages cibles (de **production**), vous pouvez activer les pages de **production** sous la forme d’une entité (pour accélérer le processus de rendu). Ajoutez les pages à un module de workflow et utilisez ce dernier comme charge utile pour un workflow qui active un module de pages. Vous devez créer le module de workflow avant la conversion du lancement Voir [Traitement de pages converties à l’aide du workflow AEM](#processing-promoted-pages-using-aem-workflow).
 
 >[!CAUTION]
 >
@@ -47,14 +47,14 @@ Vous devez convertir les pages de lancement pour redéplacer le contenu vers la 
 Vous pouvez convertir des lancements à partir de la console de **sites** ou de la console de **lancements** :
 
 1. Ouvrez :
-   * La console **Sites** lors de la navigation dans les pages source :
+   * La console **Sites** lors de la navigation dans les pages source :
       1. Ouvrez le [rail de références](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) et sélectionnez la page source souhaitée à l’aide du [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md) (ou sélectionnez et ouvrez le rail de références, l’ordre n’a pas d’importance). Toutes les références seront affichées.
       1. Sélectionnez **Lancements** (par exemple Lancements (1)) pour afficher une liste de lancements particuliers.
       1. Sélectionnez le lancement en question pour afficher les actions disponibles.
       1. Sélectionnez **Convertir le lancement** pour ouvrir l’assistant.
-   * La console **Sites** lors de la navigation dans les pages de lancement :
-      1. Sélectionnez la page de lancement requise à l&#39;aide du [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md).
-      1. L&#39;action **Promouvoir** sera disponible dans la barre d&#39;outils.
+   * La console **Sites** lors de la navigation dans les pages de lancement :
+      1. Sélectionnez la page de lancement requise à l’aide du [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md).
+      1. L’action **Promouvoir** sera disponible dans la barre d’outils.
    * La console **Lancements :**
       1. Sélectionnez votre lancement (appuyez/cliquez sur la miniature).
       1. Sélectionnez **Convertir**.
@@ -64,7 +64,7 @@ Vous pouvez convertir des lancements à partir de la console de **sites** ou de 
    * **Portée**
       * **Convertir le lancement complet**
       * **Promouvoir les pages modifiées**
-      * **Promouvoir les pages**  approuvées en fonction du processus d’approbation du lancement
+      * **Promouvoir les pages approuvées** en fonction du processus d’approbation du lancement
       * **Convertir la page active**
       * **Convertir la page active et les sous-pages**
 
@@ -76,13 +76,13 @@ Vous pouvez convertir des lancements à partir de la console de **sites** ou de 
       >
       >Cette procédure porte sur la conversion d’un lancement simple. Si vous avez imbriqué des lancements, reportez-vous à la section [Conversion d’un lancement imbriqué](#promoting-a-nested-launch).
 1. Cliquez sur **Suivant** pour continuer.
-1. Vous pouvez consulter les pages à promouvoir ; elles dépendent de la plage de pages que vous avez choisie :
+1. Vous pouvez passer en revue les pages à convertir. Elles dépendent de la plage de pages sélectionnée :
 
    ![Réviser la promotion](/help/sites-cloud/authoring/assets/launches-promote-review.png)
 
 1. Sélectionnez **Convertir**.
 
-## Conversion de pages de lancement lors de leur modification    {#promoting-launch-pages-when-editing}
+## Conversion de pages de lancement lors de leur modification {#promoting-launch-pages-when-editing}
 
 Lorsque vous modifiez une page de lancement, l’action **Convertir le lancement** est également disponible dans les **informations sur la page**. Cette action ouvre l’assistant pour collecter les informations nécessaires.
 
@@ -92,7 +92,7 @@ Lorsque vous modifiez une page de lancement, l’action **Convertir le lancement
 >
 >Cette option est disponible pour les lancements simples et [imbriqués](#promoting-a-nested-launch).
 
-## Promotion d’un lancement imbriqué    {#promoting-a-nested-launch}
+## Promotion d’un lancement imbriqué  {#promoting-a-nested-launch}
 
 Après avoir créé un lancement imbriqué, vous pouvez le convertir en pages source, y compris la source racine (production).
 
@@ -107,7 +107,7 @@ Après avoir créé un lancement imbriqué, vous pouvez le convertir en pages so
    * **Domaine** : ici, vous pouvez indiquer s’il faut convertir l’intégralité du lancement ou uniquement les pages qui ont été modifiées. Dans le second cas, vous pouvez choisir d’inclure/exclure des sous-pages. La configuration par défaut consiste à convertir uniquement les changements de page pour la page active :
       * **Convertir le lancement complet**
       * **Promouvoir les pages modifiées**
-      * **Promouvoir les pages**  approuvées en fonction du processus d’approbation du lancement
+      * **Promouvoir les pages approuvées** en fonction du processus d’approbation du lancement
       * **Convertir la page active**
       * **Convertir la page active et les sous-pages**
 
