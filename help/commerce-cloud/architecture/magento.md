@@ -28,7 +28,7 @@ Les appels d’API côté serveur sont mis en œuvre à l’aide du [client Grap
 
 Pour les composants côté client, qui sont créés à l’aide de [React](https://reactjs.org/), le [client Apollo](https://www.apollographql.com/docs/react/) est utilisé.
 
-## Architecture des composants principaux AEM CIF{#cif-core-components}
+## Architecture des composants principaux AEM CIF {#cif-core-components}
 
 ![Architecture des composants principaux AEM CIF](../assets/cif-component-architecture.jpg)
 
