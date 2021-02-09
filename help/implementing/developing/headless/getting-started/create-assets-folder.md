@@ -1,51 +1,51 @@
 ---
-title: Guide du Début rapide Création d’un dossier Ressources sans en-tête
-description: Les modèles de fragments de contenu définissent la structure des fragments de contenu. Les fragments de contenu sont ensuite stockés dans des dossiers de fichiers.
+title: Guide de démarrage rapide sur la création d’un dossier de ressources découplées
+description: Les modèles de fragments de contenu définissent la structure des fragments de contenu. Ces fragments sont ensuite stockés dans des dossiers de ressources.
 translation-type: tm+mt
 source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '373'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
-# Guide de Début rapide de création d’un dossier Ressources sans en-tête{#creating-an-assets-folder}
+# Guide de démarrage rapide sur la création d’un dossier de ressources découplées {#creating-an-assets-folder}
 
-Les modèles de fragments de contenu définissent la structure des fragments de contenu. Les fragments de contenu sont ensuite stockés dans des dossiers de fichiers.
+Les modèles de fragments de contenu définissent la structure des fragments de contenu. Ces fragments sont ensuite stockés dans des dossiers de ressources.
 
-##  Qu’est-ce qu’un dossier Ressources ? {#what-is-an-assets-folder}
+## Qu’est-ce qu’un dossier de ressources ? {#what-is-an-assets-folder}
 
-[Maintenant que vous avez créé des ](create-content-model.md) modèles de fragments de contenu qui définissent la structure souhaitée pour vos futurs fragments de contenu, vous êtes probablement ravi de créer des fragments.
+[Maintenant que vous avez créé des modèles de fragments de contenu](create-content-model.md) qui définissent la structure souhaitée pour vos futurs fragments de contenu, vous êtes probablement enthousiaste à l’idée d’en créer.
 
-Cependant, vous devez d’abord créer un dossier de fichiers dans lequel vous allez les stocker.
+Cependant, vous devez d’abord créer un dossier de ressources pour les stocker.
 
-Les dossiers Assets sont utilisés pour [organiser les ressources de contenu traditionnelles](/help/assets/manage-digital-assets.md), telles que les images et les vidéos, ainsi que les fragments de contenu.
+Les dossiers de ressources servent à [organiser les ressources de contenu traditionnelles](/help/assets/manage-digital-assets.md), comme les images et les vidéos, mais aussi les fragments de contenu.
 
-## Comment créer un dossier Ressources {#how-to-create-an-assets-folder}
+## Comment créer un dossier de ressources {#how-to-create-an-assets-folder}
 
-Un administrateur n’a besoin de créer des dossiers qu’occasionnellement pour organiser le contenu au fur et à mesure de sa création. Pour les besoins de ce guide de prise en main, il suffit de créer un seul dossier.
+Un administrateur n’a besoin de créer des dossiers qu’occasionnellement pour organiser le contenu au fur et à mesure de sa création. Pour les besoins de ce guide de prise en main, il suffit de créer un dossier.
 
-1. Connectez-vous à AEM en tant que Cloud Service et dans le menu principal, sélectionnez **Navigation -> Ressources -> Fichiers**.
+1. Connectez-vous à AEM as a Cloud Service. Sélectionnez ensuite, dans le menu principal, **Navigation -> Ressources -> Fichiers**.
 1. Appuyez ou cliquez sur **Créer -> Dossier**.
 1. Indiquez un **titre** et un **nom** pour votre dossier.
    * Le **titre** doit être descriptif.
-   * **Name** deviendra le nom du noeud dans le référentiel.
-      * Elle sera générée automatiquement en fonction du titre et ajustée selon les [conventions d&#39;appellation AEM.](/help/implementing/developing/introduction/naming-conventions.md)
-      * Il peut être ajusté si nécessaire.
+   * Le **Nom** devient le nom du nœud dans le référentiel.
+      * Il sera généré automatiquement en fonction du titre et adapté selon les [conventions d’appellation AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Il peut être adapté si nécessaire.
 
    ![Créer un dossier](../assets/assets-folder-create.png)
-1. Sélectionnez le dossier que vous venez de créer, puis **Propriétés** dans la barre d&#39;outils (ou utilisez le raccourci clavier `p` [](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)).
-1. Dans la fenêtre **Propriétés**, sélectionnez l&#39;onglet **Cloud Services**.
-1. Pour la **Configuration du cloud** sélectionnez la configuration [que vous avez créée précédemment.](create-configuration.md)
+1. Sélectionnez le dossier que vous venez de créer, puis sélectionnez **Propriétés** dans la barre d’outils (ou utilisez le [raccourci clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `p` ).
+1. Dans la fenêtre **Propriétés**, sélectionnez l’onglet **Cloud Services**.
+1. Pour la **configuration du cloud**, sélectionnez la[ configuration que vous avez créée précédemment.](create-configuration.md)
 
-   ![Configuration du dossier Fichiers](../assets/assets-folder-configure.png)
-1. Appuyez ou cliquez sur **Enregistrer et fermer**.
-1. Appuyez ou cliquez sur **OK** dans la fenêtre de confirmation.
+   ![Configurer le dossier de ressources](../assets/assets-folder-configure.png)
+1. Appuyez/cliquez sur **Enregistrer et fermer**.
+1. Appuyez/cliquez sur **OK** dans la fenêtre de confirmation.
 
    ![Fenêtre de confirmation](../assets/assets-folder-confirmation.png)
 
-Vous pouvez créer des sous-dossiers supplémentaires dans le dossier que vous venez de créer. Les sous-dossiers hériteront de la configuration **Cloud** du dossier parent. Il peut toutefois être remplacé si vous souhaitez utiliser des modèles d’une autre configuration.
+Vous pouvez créer des sous-dossiers supplémentaires dans le dossier que vous venez de créer. Les sous-dossiers hériteront de la **configuration du cloud** du dossier parent. Il est toutefois possible de modifier ce paramétrage si vous souhaitez utiliser les modèles d’une autre configuration.
 
 Si vous utilisez une structure de site localisée, vous pouvez [créer une racine de langue](/help/assets/translate-assets.md) sous votre nouveau dossier.
 
