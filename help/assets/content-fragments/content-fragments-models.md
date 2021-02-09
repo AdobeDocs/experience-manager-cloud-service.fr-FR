@@ -5,20 +5,20 @@ translation-type: tm+mt
 source-git-commit: 3538c03a6a455cd22423ca5a4fd69c1fe57b3e5e
 workflow-type: tm+mt
 source-wordcount: '2156'
-ht-degree: 26%
+ht-degree: 55%
 
 ---
 
 
 # Modèles de fragment de contenu {#content-fragment-models}
 
-Les modèles de fragment de contenu définissent la structure du contenu pour vos[ fragments de contenu](/help/assets/content-fragments/content-fragments.md).
+Les modèles de fragment de contenu définissent la structure du contenu pour vos [fragments de contenu](/help/assets/content-fragments/content-fragments.md).
 
-Pour utiliser des modèles de fragments de contenu, procédez comme suit :
+Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 
-1. [Activer la fonctionnalité Modèle de fragment de contenu pour votre instance](/help/assets/content-fragments/content-fragments-configuration-browser.md)
-1. [Créez](#creating-a-content-fragment-model) et  [configurez](#defining-your-content-fragment-model) vos modèles de fragments de contenu
-1. [Activez vos ](#enabling-disabling-a-content-fragment-model) modèles de fragments de contenu à utiliser lors de la création de fragments de contenu pour la création de fragments de contenu.
+1. [Activez la fonctionnalité Modèle de fragment de contenu pour votre instance](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+1. [Créez](#creating-a-content-fragment-model) et [configurez](#defining-your-content-fragment-model) vos modèles de fragments de contenu.
+1. [Activez les modèles de fragments de contenu ](#enabling-disabling-a-content-fragment-model) à utiliser pour la création de fragments de contenu.
 1. [Autorisez vos modèles de fragments de contenu sur les ](#allowing-content-fragment-models-assets-folder) dossiers Ressources requis en configurant  **des stratégies**.
 
 ## Création d’un modèle de fragment de contenu {#creating-a-content-fragment-model}
@@ -37,9 +37,9 @@ Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 
 1. Utilisez le bouton **Créer** pour enregistrer le modèle vide. Un message indique que l’action a réussi. Vous pouvez alors sélectionner **Ouvrir** pour publier immédiatement le modèle ou **Terminé** pour revenir à la console.
 
-## Définition de votre modèle de fragment de contenu    {#defining-your-content-fragment-model}
+## Définition de votre modèle de fragment de contenu  {#defining-your-content-fragment-model}
 
-Le modèle de fragment de contenu définit efficacement la structure des fragments de contenu résultants à l’aide d’une sélection de **[Types de données](#data-types)**. A l’aide de l’éditeur de modèles, vous pouvez ajouter des instances des types de données, puis les configurer pour créer les champs requis :
+Le modèle de fragment de contenu définit effectivement la structure des fragments de contenu résultants à l’aide d’une sélection de **[Types de données](#data-types)**. Grâce à l’éditeur de modèles, vous pouvez ajouter des instances de types de données, puis les configurer pour créer les champs requis :
 
 >[!CAUTION]
 >
@@ -63,7 +63,7 @@ Le modèle de fragment de contenu définit efficacement la structure des fragmen
 
 1. **Pour ajouter un champ**
 
-   * Faites glisser un type de données à l’emplacement souhaité pour un champ :
+   * Faites glisser un type de données à l’emplacement souhaité pour un champ:
 
       ![type de données dans le champ](assets/cfm-models-04.png)
 
@@ -91,24 +91,24 @@ Le modèle de fragment de contenu définit efficacement la structure des fragmen
 
 ## Types de données {#data-types}
 
-Une sélection de types de données est disponible pour la définition de votre modèle :
+Une sélection de types de données est disponible pour la définition de votre modèle :
 
 * **Une seule ligne de texte**
-   * Ajouter un ou plusieurs champs d’une seule ligne de texte ; la longueur maximale peut être définie
+   * Ajoutez un ou plusieurs champs d’une seule ligne de texte ; il est possible de définir la longueur maximale.
 * **Plusieurs lignes de texte**
-   * Zone de texte qui peut être de type texte enrichi, texte ordinaire ou annotation
+   * Zone de texte pouvant contenir du texte enrichi, du texte brut ou du texte Markdown.
 * **Nombre**
-   * Ajouter un ou plusieurs champs numériques
+   * Ajoutez un ou plusieurs champs numériques
 * **Booléen**
-   * Ajouter une case à cocher booléenne
+   * Ajoutez une case à cocher booléenne
 * **Date et heure**
-   * Ajouter une date et/ou une heure
+   * Ajoutez une date et/ou une heure
 * **Énumération**
-   * Ajouter un ensemble de cases à cocher, de boutons radio ou de champs déroulants
+   * Ajoutez un ensemble de cases à cocher, de boutons radio ou de champs déroulants
 * **Balises**
    * Permet aux auteurs de fragments d’accéder à des zones de balises et de les sélectionner.
 * **Référence de contenu**
-   * les références d&#39;autres contenus, de tout type ; peut être utilisé pour [créer du contenu imbriqué](#using-references-to-form-nested-content)
+   * Fait référence à d’autres contenus, tous types confondus ; peut être utilisée pour [créer du contenu imbriqué](#using-references-to-form-nested-content).
 * **Référence du fragment**
    * Références à d&#39;autres fragments de contenu ; peut être utilisé pour [créer du contenu imbriqué](#using-references-to-form-nested-content)
    * Le type de données peut être configuré pour permettre aux auteurs de fragments de :
@@ -122,17 +122,17 @@ Une sélection de types de données est disponible pour la définition de votre 
 
 ## Propriétés {#properties}
 
-De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propriétés, les détails supplémentaires sont les suivants :
+De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propriétés, les détails supplémentaires sont les suivants :
 
-* **Rendu**
-en tant queLes différentes options permettant de réaliser/rendre le champ dans un fragment. Cela vous permet souvent de définir si l’auteur verra une seule instance du champ ou s’il sera autorisé à créer plusieurs instances.
+* **Rendu comme**
+Les différentes options permettant de réaliser/rendre le champ dans un fragment. Il est ainsi souvent possible de définir si l’auteur verra une seule instance du champ ou s’il sera autorisé à créer plusieurs instances.
 
-* **Libellé**
-de champSaisir un 
-**L’** étiquette du champ génère automatiquement un nom **de** propriété, qui peut ensuite être mis à jour manuellement si nécessaire.
+* **Libellé du champ**
+La saisie d’un 
+**libellé de champ** génère automatiquement un **nom de propriété**, qui peut ensuite être mis à jour manuellement, si nécessaire.
 
-* **La validation**
-ValidationBasic est disponible par des mécanismes tels que la propriété  **** Requiredproperty. Certains types de données comportent des champs de validation supplémentaires. Voir [Validation](#validation) pour plus de détails.
+* **Validation**
+La validation de base est disponible par le biais de mécanismes tels que la propriété **Requis**. Certains types de données comportent des champs de validation supplémentaires. Voir [Validation](#validation) pour plus de détails.
 
 * Pour le type données **texte multiligne**, il est possible de définir le **type par défaut** en tant que :
 
@@ -167,12 +167,12 @@ TranslatableSi vous cochez la case &quot;Translatable&quot; dans un champ de l&#
 
 ## Validation {#validation}
 
-Divers types de données incluent désormais la possibilité de définir les exigences de validation pour le moment où le contenu est saisi dans le fragment résultant :
+Différents types de données incluent désormais la possibilité de définir les exigences de validation lorsque le contenu est saisi dans le fragment résultant :
 
 * **Une seule ligne de texte**
-   * Comparaison avec un regex prédéfini.
+   * Comparaison avec une expression régulière prédéfinie (regex).
 * **Nombre**
-   * Recherchez des valeurs spécifiques.
+   * Vérification de valeurs spécifiques.
 * **Référence de contenu**
    * Testez des types de contenu spécifiques.
    * Seuls les fichiers de taille de fichier spécifiée ou inférieure peuvent être référencés.
@@ -277,44 +277,44 @@ accès racineIndique un chemin d&#39;accès racine pour tout fragment référenc
 Un mécanisme de protection contre les récidives est en place. Il interdit à l’utilisateur de sélectionner le fragment de contenu actif dans la référence au fragment. Cela peut conduire à une boîte de dialogue vide du sélecteur de référence aux fragments.
 Il existe également une protection récurrente pour les références de fragments dans GraphQL. Si vous créez une requête profonde entre deux fragments de contenu qui se référencent, elle renvoie la valeur null.
 
-## Activation ou désactivation d&#39;un modèle de fragment de contenu {#enabling-disabling-a-content-fragment-model}
+## Activation ou désactivation d’un modèle de fragment de contenu {#enabling-disabling-a-content-fragment-model}
 
-Pour un contrôle total de l’utilisation de vos modèles de fragments de contenu, ils disposent d’un état que vous pouvez définir.
+Pour un contrôle total de l’utilisation de vos modèles de fragments de contenu, ils contiennent un état que vous pouvez définir.
 
 ### Activation d’un modèle de fragment de contenu {#enabling-a-content-fragment-model}
 
-Une fois qu&#39;un modèle a été créé, il doit être activé afin qu&#39;il :
+Une fois qu’un modèle a été créé, il doit être activé pour :
 
-* Est disponible pour la sélection lors de la création d’un fragment de contenu.
-* Peut être référencé à partir d’un modèle de fragment de contenu.
-* est disponible pour GraphQL ; le schéma est donc généré.
+* Être disponible afin d’être sélectionné lors de la création d’un fragment de contenu.
+* Pouvoir être référencé à partir d’un modèle de fragment de contenu.
+* Être disponible pour GraphQL ; le schéma est ensuite généré.
 
-Pour activer un modèle marqué comme :
+Pour activer un modèle marqué comme :
 
-* **Version préliminaire**  : mew (jamais activé).
-* **Désactivé**  : a été spécifiquement désactivé.
+* **Brouillon** : nouveau (jamais activé).
+* **Désactivé** : a été spécifiquement désactivé.
 
-Vous utilisez l&#39;option **Activer** de l&#39;une des manières suivantes :
+Vous utilisez l’option **Activer** de l’une des manières suivantes :
 
-* La barre d&#39;outils supérieure, lorsque le modèle requis est sélectionné.
-* Action rapide correspondante (placez le pointeur de la souris sur le modèle requis).
+* La barre d’outils supérieure, lorsque le modèle concerné est sélectionné.
+* L’action rapide correspondante (placez le pointeur de la souris sur le modèle concerné).
 
-![Activation d&#39;un modèle Brouillon ou Désactivé](assets/cfm-status-enable.png)
+![Activation d’un modèle Brouillon ou Désactivé](assets/cfm-status-enable.png)
 
 ### Désactivation d’un modèle de fragment de contenu {#disabling-a-content-fragment-model}
 
-Un modèle peut également être désactivé afin que :
+Un modèle peut également être désactivé afin que :
 
-* Le modèle n’est plus disponible comme base pour la création de *nouveaux* fragments de contenu.
-* Toutefois:
-   * Le schéma GraphQL continue à être généré et peut toujours être interrogé (afin d’éviter d’affecter l’API JSON).
-   * Tout fragment de contenu basé sur le modèle peut toujours être interrogé et renvoyé à partir du point de terminaison GraphQL.
-* Le modèle ne peut plus être référencé, mais les références existantes sont conservées intactes et peuvent toujours être interrogées et renvoyées à partir du point de terminaison GraphQL.
+* Le modèle ne soit plus disponible comme base pour la création de *nouveaux* fragments de contenu.
+* Toutefois :
+   * Le schéma GraphQL continue à être généré et peut toujours être interrogé (pour éviter tout impact sur l’API JSON).
+   * Tout fragment de contenu basé sur le modèle peut toujours être interrogé et renvoyé à partir du point d’entrée GraphQL.
+* Le modèle ne peut plus être référencé, mais les références existantes sont conservées intactes et peuvent toujours être interrogées et renvoyées à partir du point d’entrée GraphQL.
 
-Pour désactiver un modèle marqué comme **Activé**, utilisez l&#39;option **Désactiver** de l&#39;une des deux options suivantes :
+Pour désactiver un modèle marqué comme **Activé**, utilisez l’option **Désactiver** de l’une des deux manières suivantes :
 
-* La barre d&#39;outils supérieure, lorsque le modèle requis est sélectionné.
-* Action rapide correspondante (placez le pointeur de la souris sur le modèle requis).
+* La barre d’outils supérieure, lorsque le modèle concerné est sélectionné.
+* L’action rapide correspondante (placez le pointeur de la souris sur le modèle concerné).
 
 ![Désactiver un modèle activé](assets/cfm-status-disable.png)
 
@@ -367,7 +367,7 @@ Pour supprimer un modèle de fragment de contenu :
    >[!NOTE]
    Si le modèle est référencé, un avertissement s’affiche. Prenez alors les mesures qui s’imposent.
 
-## Publication d’un modèle de fragment de contenu    {#publishing-a-content-fragment-model}
+## Publication d’un modèle de fragment de contenu   {#publishing-a-content-fragment-model}
 
 Les modèles de fragment de contenu doivent être publiés avant ou pendant la publication des fragments de contenu dépendants.
 
@@ -377,19 +377,19 @@ Pour publier un modèle de fragment de contenu :
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
 1. Sélectionnez votre modèle, puis l’option de **publication** dans la barre d’outils.
-L&#39;état publié sera indiqué dans la console.
+L’état publié sera indiqué dans la console.
 
    >[!NOTE]
    Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection indique cela, ainsi que le fait que le modèle sera publié avec le fragment.
 
-## Annulation de la publication d&#39;un modèle de fragment de contenu {#unpublishing-a-content-fragment-model}
+## Annulation de la publication d’un modèle de fragment de contenu {#unpublishing-a-content-fragment-model}
 
-Les modèles de fragments de contenu peuvent être annulés s’ils ne sont référencés par aucun fragment.
+Les modèles de fragment de contenu peuvent être annulés s’ils ne sont référencés par aucun fragment.
 
-Pour annuler la publication d’un modèle de fragment de contenu :
+Pour annuler la publication d’un modèle de fragment de contenu :
 
 1. Accédez à **Outils**, **Ressources**, puis ouvrez les **modèles de fragment de contenu**.
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
-1. Sélectionnez votre modèle, puis **Annuler la publication** dans la barre d’outils.
-L&#39;état publié sera indiqué dans la console.
+1. Sélectionnez votre modèle, puis l’option **Annuler la publication** dans la barre d’outils.
+L’état publié sera indiqué dans la console.
