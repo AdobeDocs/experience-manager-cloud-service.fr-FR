@@ -1,6 +1,6 @@
 ---
 title: Configurations d’URL avancées
-description: Découvrez comment personnaliser les URL des pages de produits et de catégories. Cela permet aux implémentations d'optimiser les URL pour les moteurs de recherche et de promouvoir la découverte.
+description: Découvrez comment personnaliser les URL des pages de produits et de catégories. Cela permet aux implémentations d’optimiser les URL pour les moteurs de recherche et de promouvoir la découverte.
 sub-product: Commerce
 version: cloud-service
 doc-type: technical-video
@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
 source-wordcount: '789'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
 # Configurations d’URL avancées {#url}
 
-Les [composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components) fournissent des configurations avancées pour personnaliser les URL des pages de produits et de catégories. De nombreuses mises en œuvre personnalisent ces URL à des fins d’optimisation du moteur de recherche (SEO).  La vidéo suivante explique comment configurer les services et les fonctionnalités `UrlProvider` du [mappage Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) pour personnaliser les URL des pages de produits et de catégories.
+Les [composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components) fournissent des configurations avancées pour personnaliser les URL des pages de produits et de catégories. De nombreuses mises en œuvre personnalisent ces URL à des fins d’optimisation du moteur de recherche (SEO). La vidéo suivante explique comment configurer les services et les fonctionnalités `UrlProvider` du [mappage Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) pour personnaliser les URL des pages de produits et de catégories.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
