@@ -1,25 +1,25 @@
 ---
-title: Notes de mise à jour actuelles de  [!DNL Adobe Experience Manager] en tant que Cloud Service.
-description: Notes de mise à jour actuelles de  [!DNL Adobe Experience Manager] en tant que Cloud Service.
+title: Notes de mise à jour actuelles pour  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notes de mise à jour actuelles pour  [!DNL Adobe Experience Manager]  as a Cloud Service.
 translation-type: tm+mt
 source-git-commit: 135fe0d4172af12f091268e9ffc45295e6645fd7
 workflow-type: tm+mt
 source-wordcount: '745'
-ht-degree: 8%
+ht-degree: 21%
 
 ---
 
 
-# Notes de mise à jour pour [!DNL Adobe Experience Manager] as a Cloud Service  {#release-notes}
+# Notes de mise à jour pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante décrit les Notes de mise à jour générales de [!DNL Experience Manager] en tant que Cloud Service.
+La section suivante présente les notes de mise à jour générales d’[!DNL Experience Manager] as a Cloud Service.
 
 ## Date de publication {#release-date}
 
 La date de publication de [!DNL Adobe Experience Manager] en tant que Cloud Service 2021.1.0 est le 3 février 2021.
 La version suivante (2021.2.0) sera publiée le 25 février 2021.
 
-## [!DNL Adobe Experience Manager Sites] as a Cloud Service{#sites}
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 ### Gestion de contenu en mode sans affichage {#headless}
 
@@ -83,16 +83,16 @@ La date de publication de Cloud Manager en tant que Cloud Service 2021.1.0 est l
 
 * Appels d&#39;API authentifiés serveur à serveur : générez les jetons d&#39;accès appropriés pour effectuer des appels d&#39;API authentifiés serveur à serveur entre vos applications externes et AEM en tant qu&#39;environnements Cloud Service. Pour en savoir plus, lisez [la documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) ou consultez le [didacticiel](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication).
 
-### Analyseurs de génération de SDK {#sdk-build-analyzers}
+### Analyseurs de build de SDK {#sdk-build-analyzers}
 
-L’AEM en tant que module externe expert de création de SDK Cloud Service détecte des problèmes dans un projet expert, y compris les dépendances manquantes. Il permet aux développeurs de découvrir des problèmes au cours du développement local, bien avant leur déploiement dans les environnements Cloud avec Cloud Manager.
+Le plug-in Build Analyzer Maven du SDK AEM as a Cloud Service détecte des problèmes dans un projet Maven, y compris les dépendances manquantes. Il permet aux développeurs d’identifier des problèmes au cours du développement local, bien avant leur déploiement dans les environnements Cloud avec Cloud Manager.
 
 Deux nouveaux analyseurs ont été ajoutés pour cette version :
 
 * analyseur repointeur
 * bundle-nativecode
 
-Pour plus d&#39;informations, consultez la documentation [ici](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing).
+Pour plus d&#39;informations, consultez la documentation [ici](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=fr#developing).
 
 ## Outils de transition vers le cloud {#code-transition-tools}
 
