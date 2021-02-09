@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: df3eb65817a00fe31eff466565b9de5e0a72ccae
 workflow-type: tm+mt
 source-wordcount: '474'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 91%
 >id="aemcloud_cam_planning"
 >title="Planification de votre Transition"
 >abstract="Avant de commencer votre parcours de transition vers Cloud Service, vous devez vous familiariser avec AEM as a Cloud Service, mais aussi examiner les modifications notables qui y ont été apportées, ainsi que les fonctionnalités remplacées ou obsolètes."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="Analyseur des meilleures pratiques"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=fr" text="Analyseur des bonnes pratiques"
 
 Avant de commencer votre parcours de transition vers Cloud Service, vous devez vous familiariser avec AEM as a Cloud Service, mais aussi examiner les modifications notables qui y ont été apportées, ainsi que les fonctionnalités remplacées ou obsolètes.
 
@@ -46,7 +46,7 @@ La première étape de la phase de planification consiste à évaluer votre capa
 
 Vous devrez effectuer une évaluation complète du code source AEM existant par rapport aux modifications notables et aux fonctionnalités obsolètes afin de déterminer le niveau d’effort attendu pour le parcours de transition.
 
-Vous pouvez accélérer l’étape d’évaluation en exécutant l’analyseur des meilleures pratiques sur votre version d’AEM actuelle. Pour plus d&#39;informations, consultez [Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
+Vous pouvez accélérer l’étape d’évaluation en exécutant l’analyseur des bonnes pratiques sur votre version actuelle d’AEM. Pour plus d’informations, consultez [Analyseur des bonnes pratiques](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
 
 >[!NOTE]
 >Si vous avez déjà accès à Cloud Manager et à un environnement Cloud Service, il est recommandé de faire fonctionner votre code actuel dans un pipeline de qualité de code Cloud Manager afin d’évaluer les modifications de code assurant la compatibilité avec Cloud Service.
