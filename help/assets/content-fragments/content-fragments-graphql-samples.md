@@ -1,16 +1,16 @@
 ---
-title: Apprendre à utiliser GraphQL avec AEM - Exemple de contenu et de Requêtes
-description: Apprendre à utiliser GraphQL avec AEM - Exemple de contenu et de Requêtes.
+title: Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes
+description: Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes.
 translation-type: tm+mt
 source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
 workflow-type: tm+mt
 source-wordcount: '1708'
-ht-degree: 5%
+ht-degree: 72%
 
 ---
 
 
-# Apprendre à utiliser GraphQL avec AEM - Exemple de contenu et de Requêtes {#learn-graphql-with-aem-sample-content-queries}
+# Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes {#learn-graphql-with-aem-sample-content-queries}
 
 >[!NOTE]
 >
@@ -18,60 +18,60 @@ ht-degree: 5%
 >
 >* [Fragments de contenu](/help/assets/content-fragments/content-fragments.md)
 >* [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
->* [aem API GraphQL à utiliser avec les fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [API AEM GraphQL à utiliser avec les fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
-Pour commencer à utiliser les requêtes GraphQL et comment elles fonctionnent avec AEM Content Fragments, vous pouvez consulter quelques exemples pratiques.
+Pour prendre en main les requêtes GraphQL et leur fonctionnement avec les fragments de contenu AEM, il peut être utile de consulter quelques exemples pratiques.
 
-Pour obtenir de l’aide sur ce point, voir :
+Pour obtenir de l’aide à ce sujet, voir les éléments suivants :
 
 * Un [exemple de structure de fragment de contenu](#content-fragment-structure-graphql)
 
-* Et certains [exemples de requêtes GraphQL](#graphql-sample-queries), basés sur l’exemple de structure de fragments de contenu (modèles de fragments de contenu et fragments de contenu associés).
+* Un certain nombre d’[exemples de requêtes GraphQL](#graphql-sample-queries), basés sur l’exemple de structure de fragments de contenu (modèles de fragments de contenu et fragments de contenu associés).
 
 ## GraphQL pour AEM - Résumé des extensions {#graphql-extensions}
 
-Le fonctionnement de base des requêtes avec GraphQL pour AEM adhère à la spécification GraphQL standard. Pour les requêtes GraphQL avec AEM il existe quelques extensions :
+Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la spécification GraphQL standard. Pour les requêtes GraphQL avec AEM, il existe quelques extensions :
 
-* Si vous avez besoin d’un seul résultat :
-   * utiliser le nom du modèle ; eg ville
+* Si vous avez besoin d’un seul résultat :
+   * Utilisez le nom du modèle ; p. ex. city.
 
-* Si vous prévoyez une liste de résultats :
+* Si vous prévoyez une liste de résultats :
    * ajouter `List` au nom du modèle ; par exemple, `cityList`
    * Voir [Exemple de Requête - Toutes les informations sur toutes les villes](#sample-all-information-all-cities)
 
-* Si vous souhaitez utiliser un OU logique :
-   * use ` _logOp: OR`
+* Si vous souhaitez utiliser un OU logique :
+   * Utilisez ` _logOp: OR`
    * Voir [Exemple de Requête - Toutes les personnes qui portent le nom &quot;Tâches&quot; ou &quot;Smith&quot;](#sample-all-persons-jobs-smith)
 
-* L&#39;opérateur logique ET existe également, mais est (souvent) implicite
+* L’opérateur logique ET existe également, mais est (souvent) implicite
 
-* Vous pouvez requête sur les noms de champ qui correspondent aux champs du modèle de fragment de contenu.
+* Vous pouvez appliquer des requêtes aux noms de champ qui correspondent aux champs du modèle de fragment de contenu.
    * Voir [Exemple de Requête - Détails complets du PDG et des employés d&#39;une Société](#sample-full-details-company-ceos-employees)
 
-* Outre les champs de votre modèle, il existe certains champs générés par le système (précédés d’un trait de soulignement) :
+* Outre les champs de votre modèle, il existe certains champs générés par le système (précédés d’un trait de soulignement) :
 
-   * Pour le contenu :
+   * Pour le contenu :
 
-      * `_locale` : révéler la langue ; basé sur Language Manager
+      * `_locale` : pour afficher la langue ; basé sur Language Manager
          * Voir [Exemple de Requête pour plusieurs fragments de contenu d’un paramètre régional donné](#sample-wknd-multiple-fragments-given-locale)
-      * `_metadata` : pour afficher les métadonnées de votre fragment
-         * Voir [Exemple de Requête de métadonnées - Liste des métadonnées pour les prix intitulés GB](#sample-metadata-awards-gb)
+      * `_metadata` : pour afficher les métadonnées de votre fragment
+         * Voir [Modèle de recherche de métadonnées – Répertorier les métadonnées des prix intitulés GB](#sample-metadata-awards-gb)
       * `_model` : autoriser l’interrogation d’un modèle de fragment de contenu (chemin et titre)
          * Voir [Exemple de Requête pour un modèle de fragment de contenu à partir d&#39;un modèle](#sample-wknd-content-fragment-model-from-model)
-      * `_path` : le chemin d’accès à votre gestion de contenu dans le référentiel.
+      * `_path` : chemin d’accès au fragment de contenu dans le référentiel.
          * Voir [Exemple de Requête - Un fragment de ville spécifique unique](#sample-single-specific-city-fragment)
-      * `_reference` : révéler les références ; y compris les références intégrées dans l’éditeur de texte enrichi
+      * `_reference` : pour afficher les références ; y compris les références intégrées dans l’éditeur de texte enrichi
          * Voir [Exemple de Requête pour plusieurs fragments de contenu avec des références prérécupérées](#sample-wknd-multiple-fragments-prefetched-references)
-      * `_variation` : pour afficher des variations spécifiques dans votre fragment de contenu
-         * Voir [Exemple de Requête - Toutes les villes avec une variante nommée](#sample-cities-named-variation)
-   * Et les opérations :
+      * `_variation` : pour afficher des variantes spécifiques dans votre fragment de contenu
+         * Voir [Modèle de requête – Toutes les villes avec une variante nommée](#sample-cities-named-variation)
+   * Et les opérations :
 
       * `_operator` : appliquer des opérateurs spécifiques ;  `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`
          * Voir [Exemple de Requête - Toutes les personnes qui n&#39;ont pas de nom &quot;Tâches&quot;](#sample-all-persons-not-jobs)
-      * `_apply` : d&#39;appliquer des conditions spécifiques ; par exemple,   `AT_LEAST_ONCE`
+      * `_apply` : pour appliquer des conditions spécifiques ; par exemple `AT_LEAST_ONCE`
          * Voir [Exemple de Requête - Filtrer sur un tableau avec un élément qui doit se produire au moins une fois](#sample-array-item-occur-at-least-once)
-      * `_ignoreCase` : pour ignorer la casse lors de l’interrogation
+      * `_ignoreCase` : pour ignorer la casse lors de l’application de la requête
          * Voir [Exemple de Requête - Toutes les villes dont le nom contient un SAN, indépendamment de la casse](#sample-all-cities-san-ignore-case)
 
 
@@ -82,18 +82,18 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM adhère à la spé
 
 
 
-* Les types d’union GraphQL sont pris en charge :
+* Les types d’union GraphQL sont pris en charge :
 
-   * use `... on`
+   * Utilisez `... on`
       * Voir [Exemple de Requête pour un fragment de contenu d&#39;un modèle spécifique avec une référence de contenu](#sample-wknd-fragment-specific-model-content-reference)
 
-## GraphQL - Exemples de Requêtes utilisant la structure de fragment de contenu d’exemple {#graphql-sample-queries-sample-content-fragment-structure}
+## GraphQL – Exemples de requêtes utilisant l’exemple de structure de fragment de contenu {#graphql-sample-queries-sample-content-fragment-structure}
 
 Consultez ces exemples de requêtes pour obtenir des illustrations de requêtes de création, ainsi que des exemples de résultats.
 
 >[!NOTE]
 >
->Selon votre instance, vous pouvez accéder directement à l&#39;interface [Graph *i* QL incluse avec l&#39;API GraphQL AEM](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) pour envoyer et tester des requêtes.
+>Selon votre instance, vous pouvez accéder directement à l’interface [Graph *i* QL incluse avec l’API AEM GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) pour envoyer et tester des requêtes.
 >
 >Par exemple : `http://localhost:4502/content/graphiql.html`
 
@@ -101,11 +101,11 @@ Consultez ces exemples de requêtes pour obtenir des illustrations de requêtes 
 >
 >Les exemples de requêtes sont basés sur la [structure d’exemple de fragment de contenu à utiliser avec GraphQL](#content-fragment-structure-graphql)
 
-### Exemple de Requête - Tous les Schémas et types de données disponibles {#sample-all-schemes-datatypes}
+### Exemple de requête – Tous les schémas et types de données disponibles {#sample-all-schemes-datatypes}
 
 Toutes les `types` seront renvoyées pour tous les schémas disponibles.
 
-**Exemple de Requête**
+**Exemple de requête**
 
 ```xml
 {
@@ -194,10 +194,10 @@ Toutes les `types` seront renvoyées pour tous les schémas disponibles.
 }
 ```
 
-### Exemple de Requête - Toutes les informations sur toutes les villes {#sample-all-information-all-cities}
+### Exemple de requête – Toutes les informations sur toutes les villes {#sample-all-information-all-cities}
 
-Pour récupérer toutes les informations sur toutes les villes, vous pouvez utiliser la requête de base :
-**Exemple de Requête**
+Pour récupérer toutes les informations sur toutes les villes, vous pouvez utiliser la requête de base :
+**Exemple de requête**
 
 ```xml
 {
@@ -207,7 +207,7 @@ Pour récupérer toutes les informations sur toutes les villes, vous pouvez util
 }
 ```
 
-Une fois exécuté, le système développe automatiquement la requête pour inclure tous les champs :
+Une fois l’exécution effectuée, le système développe automatiquement la requête pour inclure tous les champs :
 
 ```xml
 {
@@ -277,11 +277,11 @@ Une fois exécuté, le système développe automatiquement la requête pour incl
 }
 ```
 
-### Exemple de Requête - Noms de toutes les villes {#sample-names-all-cities}
+### Exemple de requête – Noms de toutes les villes {#sample-names-all-cities}
 
-Il s&#39;agit d&#39;une requête simple pour renvoyer l&#39;élément `name`de toutes les entrées dans le `city`schéma.
+Il s’agit d’une requête simple pour renvoyer l’élément `name`de toutes les entrées dans le schéma `city`.
 
-**Exemple de Requête**
+**Exemple de requête**
 
 ```xml
 query {
@@ -329,9 +329,9 @@ query {
 
 ### Exemple de Requête - Un fragment de ville spécifique {#sample-single-specific-city-fragment}
 
-Il s’agit d’une requête de renvoi des détails d’une entrée de fragment unique à un emplacement spécifique dans le référentiel.
+Il s’agit d’une requête qui renvoie les détails d’une entrée de fragment unique vers un emplacement spécifique dans le référentiel.
 
-**Exemple de Requête**
+**Exemple de requête**
 
 ```xml
 {
@@ -368,11 +368,11 @@ Il s’agit d’une requête de renvoi des détails d’une entrée de fragment 
 }
 ```
 
-### Exemple de Requête - Toutes les villes avec une variante nommée {#sample-cities-named-variation}
+### Exemple de requête – Toutes les villes avec une variante nommée {#sample-cities-named-variation}
 
-Si vous créez une nouvelle variation, appelée &quot;Centre de Berlin&quot; (`berlin_centre`), pour le Berlin `city`, vous pouvez utiliser une requête pour renvoyer des détails sur la variation.
+Si vous créez une nouvelle variante, appelée « Centre de Berlin » (`berlin_centre`), pour Berlin en tant que `city`, vous pouvez utiliser une requête afin de renvoyer des détails sur la variante.
 
-**Exemple de Requête**
+**Exemple de requête**
 
 ```xml
 {
@@ -411,11 +411,11 @@ Si vous créez une nouvelle variation, appelée &quot;Centre de Berlin&quot; (`b
 }
 ```
 
-### Exemple de Requête - Détails complets du PDG et des employés d&#39;une Société {#sample-full-details-company-ceos-employees}
+### Exemple de requête – Détails complets relatifs au PDG et aux employés d’une entreprise {#sample-full-details-company-ceos-employees}
 
-À l’aide de la structure des fragments imbriqués, cette requête renvoie tous les détails du PDG d’une société et de tous ses employés.
+Grâce à la structure des fragments imbriqués, cette requête renvoie tous les détails relatifs au PDG d’une entreprise et à tous ses employés.
 
-**Exemple de Requête**
+**Exemple de requête**
 
 ```xml
 query {
@@ -539,11 +539,11 @@ query {
 }
 ```
 
-### Exemple de Requête - Toutes les personnes qui portent le nom &quot;Tâches&quot; ou &quot;Smith&quot; {#sample-all-persons-jobs-smith}
+### Exemple de Requête – Toutes les personnes qui portent le nom « Jobs » ou « Smith » {#sample-all-persons-jobs-smith}
 
-Ceci filtrera tous les `persons` pour ceux qui portent le nom `Jobs`ou `Smith`.
+Elle filtre toutes les `persons` qui portent le nom `Jobs` ou `Smith`.
 
-**Exemple de Requête**
+**Exemple de requête**
 
 ```xml
 query {
@@ -593,11 +593,11 @@ query {
 }
 ```
 
-### Exemple de Requête - Toutes les personnes qui n&#39;ont pas de nom &quot;Tâches&quot; {#sample-all-persons-not-jobs}
+### Exemple de requête – Toutes les personnes qui ne portent pas le nom « Jobs » {#sample-all-persons-not-jobs}
 
-Ceci filtrera tous les `persons` pour ceux qui portent le nom `Jobs`ou `Smith`.
+Elle filtre toutes les `persons` qui portent le nom `Jobs` ou `Smith`.
 
-**Exemple de Requête**
+**Exemple de requête**
 
 ```xml
 query {
@@ -660,11 +660,11 @@ query {
 }
 ```
 
-### Échantillon de Requête - Toutes les villes situées en Allemagne ou en Suisse et dont la population se situe entre 400000 et 999999 {#sample-all-cities-d-ch-population}
+### Exemple de requête – Toutes les villes situées en Allemagne ou en Suisse et dont la population se situe entre 400 000 et 999 999 {#sample-all-cities-d-ch-population}
 
-Ici, une combinaison de champs est filtrée. Un `AND` (implicite) est utilisé pour sélectionner la plage `population`tandis qu&#39;un `OR` (explicite) est utilisé pour sélectionner les villes requises.
+Ici, le filtrage concerne une combinaison de champs. Un opérateur `AND` (implicite) est utilisé pour sélectionner la plage `population`, tandis qu’un opérateur `OR` (explicite) est utilisé pour sélectionner les villes requises.
 
-**Exemple de Requête**
+**Exemple de requête**
 
 ```xml
 query {
@@ -723,11 +723,11 @@ query {
 }
 ```
 
-### Exemple de Requête : toutes les villes dont le nom contient un SAN, indépendamment de la casse {#sample-all-cities-san-ignore-case}
+### Exemple de requête : toutes les villes dont le nom contient SAN, indépendamment de la casse {#sample-all-cities-san-ignore-case}
 
 Cette requête interroge toutes les villes dont le nom contient `SAN`, indépendamment de la casse.
 
-**Exemple de Requête**
+**Exemple de requête**
 
 ```xml
 query {
@@ -774,11 +774,11 @@ query {
 }
 ```
 
-### Exemple de Requête : filtrer sur un tableau avec un élément qui doit se produire au moins une fois {#sample-array-item-occur-at-least-once}
+### Exemple de requête : effectuer un filtrage sur un tableau avec un élément qui doit se produire au moins une fois {#sample-array-item-occur-at-least-once}
 
-Cette requête filtres sur un tableau avec un élément (`city:na`) qui doit se produire au moins une fois.
+Cette requête effectue un filtrage sur un tableau avec un élément (`city:na`) qui doit se produire au moins une fois.
 
-**Exemple de Requête**
+**Exemple de requête**
 
 ```xml
 query {
@@ -832,11 +832,11 @@ query {
 }
 ```
 
-### Exemple de Requête : filtrer sur une valeur de tableau exacte {#sample-array-exact-value}
+### Exemple de requête : effectue un filtrage sur une valeur de tableau exacte {#sample-array-exact-value}
 
-Cette requête filtres sur une valeur de tableau exacte.
+Cette requête effectue un filtrage sur une valeur de tableau exacte.
 
-**Exemple de Requête**
+**Exemple de requête**
 
 ```xml
 query {
@@ -884,11 +884,11 @@ query {
 }
 ```
 
-### Exemple de Requête pour les fragments de contenu imbriqué - Toutes les sociétés qui ont au moins un employé portant le nom &quot;Smith&quot; {#sample-companies-employee-smith}
+### Exemple de requête pour les fragments de contenu imbriqués – Toutes les entreprises dont au moins un employé porte le nom « Smith » {#sample-companies-employee-smith}
 
-Cette requête illustre le filtrage pour tout `person` de `name` &quot;Smith&quot;, renvoyant des informations provenant de deux fragments imbriqués - `company` et `employee`.
+Cette requête illustre le filtrage pour toute `person` portant le `name` « Smith », qui renvoie des informations provenant de deux fragments imbriqués – `company` et `employee`.
 
-**Exemple de Requête**
+**Exemple de requête**
 
 ```xml
 query {
@@ -950,11 +950,11 @@ query {
 }
 ```
 
-### Exemple de Requête pour les fragments de contenu imbriqué - Toutes les sociétés où tous les employés ont gagné le prix &quot;Gamestar&quot; {#sample-all-companies-employee-gamestar-award}
+### Exemple de requête pour les fragments de contenu imbriqués – Toutes les entreprises dont tous les employés ont reçu la distinction « Gamestar » {#sample-all-companies-employee-gamestar-award}
 
-Cette requête illustre le filtrage sur trois fragments imbriqués : `company`, `employee` et `award`.
+Cette requête illustre le filtrage de trois fragments imbriqués : `company`, `employee` et `award`.
 
-**Exemple de Requête**
+**Exemple de requête**
 
 ```xml
 query {
@@ -1042,11 +1042,11 @@ query {
 }
 ```
 
-### Exemple de Requête de métadonnées - Liste des métadonnées pour les prix intitulées GB {#sample-metadata-awards-gb}
+### Exemple de requête pour des métadonnées – Liste des métadonnées pour les distinctions intitulées GB {#sample-metadata-awards-gb}
 
-Cette requête illustre le filtrage sur trois fragments imbriqués : `company`, `employee` et `award`.
+Cette requête illustre le filtrage de trois fragments imbriqués : `company`, `employee` et `award`.
 
-**Exemple de Requête**
+**Exemple de requête**
 
 ```xml
 query {
@@ -1102,7 +1102,7 @@ query {
 }
 ```
 
-## Exemples de Requêtes utilisant le projet WKND {#sample-queries-using-wknd-project}
+## Exemples de requêtes utilisant le projet WKND {#sample-queries-using-wknd-project}
 
 Ces exemples de requêtes sont basés sur le projet WKND. Il s&#39;agit :
 
@@ -1114,16 +1114,16 @@ Ces exemples de requêtes sont basés sur le projet WKND. Il s&#39;agit :
 
 >[!NOTE]
 >
->Comme les résultats peuvent être complets, ils ne sont pas reproduits ici.
+>Les résultats pouvant être volumineux, ils ne sont pas reproduits ici.
 
-### Exemple de Requête pour tous les fragments de contenu d’un modèle donné avec les propriétés spécifiées {#sample-wknd-all-model-properties}
+### Exemple de requête pour tous les fragments de contenu d’un modèle donné avec les propriétés spécifiées {#sample-wknd-all-model-properties}
 
-Cet exemple de requête interroge :
+Cet exemple de requête applique une interrogation :
 
-* pour tous les fragments de contenu de type `article`
-* avec les propriétés `path`et `author`.
+* À tous les fragments de contenu de type `article`
+* Avec les propriétés `path` et `author`.
 
-**Exemple de Requête**
+**Exemple de requête**
 
 ```xml
 {
@@ -1136,14 +1136,14 @@ Cet exemple de requête interroge :
 }
 ```
 
-### Exemple de Requête de métadonnées {#sample-wknd-metadata}
+### Exemple de requête de métadonnées {#sample-wknd-metadata}
 
-Cette requête interroge :
+Cette requête applique une interrogation :
 
-* pour tous les fragments de contenu de type `adventure`
+* À tous les fragments de contenu de type `adventure`
 * metadata
 
-**Exemple de Requête**
+**Exemple de requête**
 
 ```xml
 {
@@ -1197,9 +1197,9 @@ Cette requête interroge :
 }
 ```
 
-### Exemple de Requête pour un fragment de contenu unique d&#39;un modèle donné {#sample-wknd-single-content-fragment-of-given-model}
+### Exemple de requête pour un fragment de contenu unique d’un modèle donné {#sample-wknd-single-content-fragment-of-given-model}
 
-Cet exemple de requête interroge :
+Cet exemple de requête applique une interrogation :
 
 * pour un fragment de contenu unique de type `article` à un chemin spécifique
    * dans ce cas, tous les formats de contenu :
@@ -1208,7 +1208,7 @@ Cet exemple de requête interroge :
       * Texte brut
       * JSON
 
-**Exemple de Requête**
+**Exemple de requête**
 
 ```xml
 {
@@ -1229,12 +1229,12 @@ Cet exemple de requête interroge :
 
 ### Exemple de Requête pour un modèle de fragment de contenu à partir d&#39;un modèle {#sample-wknd-content-fragment-model-from-model}
 
-Cet exemple de requête interroge :
+Cet exemple de requête applique une interrogation :
 
 * pour un seul fragment de contenu
    * détails du modèle de fragment de contenu sous-jacent
 
-**Exemple de Requête**
+**Exemple de requête**
 
 ```xml
 {
@@ -1251,9 +1251,9 @@ Cet exemple de requête interroge :
 }
 ```
 
-### Exemple de Requête pour un fragment de contenu imbriqué - Type de modèle unique{#sample-wknd-nested-fragment-single-model}
+### Exemple de Requête pour un fragment de contenu imbriqué – Type de modèle unique {#sample-wknd-nested-fragment-single-model}
 
-Cette requête interroge :
+Cette requête applique une interrogation :
 
 * pour un fragment de contenu unique de type `article` à un chemin spécifique
    * dans cette zone, le chemin d’accès et l’auteur du fragment référencé (imbriqué)
@@ -1262,7 +1262,7 @@ Cette requête interroge :
 >
 >Le champ `referencearticle` a le type de données `fragment-reference`.
 
-**Exemple de Requête**
+**Exemple de requête**
 
 ```xml
 {
@@ -1279,9 +1279,9 @@ Cette requête interroge :
 }
 ```
 
-### Exemple de Requête pour un fragment de contenu imbriqué - Type de modèle multiple{#sample-wknd-nested-fragment-multiple-model}
+### Exemple de Requête pour un fragment de contenu imbriqué – Type de modèle multiple {#sample-wknd-nested-fragment-multiple-model}
 
-Cette requête interroge :
+Cette requête applique une interrogation :
 
 * pour plusieurs fragments de contenu de type `bookmark`
    * avec des références de fragments à d&#39;autres fragments de types de modèles spécifiques `article` et `adventure`
@@ -1321,7 +1321,7 @@ Ces requêtes interrogent :
 * pour plusieurs fragments de contenu de type `bookmark`
    * avec des références de contenu à d’autres fragments
 
-#### Exemple de Requête pour plusieurs fragments de contenu avec des références prérécupérées {#sample-wknd-multiple-fragments-prefetched-references}
+#### Exemple de requête pour plusieurs fragments de contenu avec des références préalablement récupérées {#sample-wknd-multiple-fragments-prefetched-references}
 
 La requête suivante renvoie toutes les références de contenu en utilisant `_references` :
 
@@ -1396,9 +1396,9 @@ La requête suivante renvoie tous les `attachments` - un champ spécifique (sous
 }
 ```
 
-### Exemple de Requête pour un fragment de contenu unique avec référence en ligne RTE {#sample-wknd-single-fragment-rte-inline-reference}
+### Exemple de requête pour un fragment de contenu unique avec référence en ligne RTE {#sample-wknd-single-fragment-rte-inline-reference}
 
-Cette requête interroge :
+Cette requête applique une interrogation :
 
 * pour un fragment de contenu unique de type `bookmark` à un chemin spécifique
    * à l&#39;intérieur de cela, références intégrées RTE
@@ -1407,7 +1407,7 @@ Cette requête interroge :
 >
 >Les références en ligne RTE sont hydratées dans `_references`.
 
-**Exemple de Requête**
+**Exemple de requête**
 
 ```xml
 {
@@ -1442,14 +1442,14 @@ Cette requête interroge :
 }
 ```
 
-### Exemple de Requête pour une variation de fragment de contenu unique d&#39;un modèle donné {#sample-wknd-single-fragment-given-model}
+### Exemple de requête pour une variation de fragment de contenu unique d’un modèle donné {#sample-wknd-single-fragment-given-model}
 
-Cette requête interroge :
+Cette requête applique une interrogation :
 
 * pour un fragment de contenu unique de type `article` à un chemin spécifique
    * dans ce cas, les données se rapportaient à la variation : `variation1`
 
-**Exemple de Requête**
+**Exemple de requête**
 
 ```xml
 {
@@ -1468,13 +1468,13 @@ Cette requête interroge :
 }
 ```
 
-### Exemple de Requête pour une Variation nommée de plusieurs fragments de contenu d&#39;un modèle donné {#sample-wknd-variation-multiple-fragment-given-model}
+### Exemple de requête pour une variante nommée de plusieurs fragments de contenu d’un modèle donné {#sample-wknd-variation-multiple-fragment-given-model}
 
-Cette requête interroge :
+Cette requête applique une interrogation :
 
 * pour les fragments de contenu de type `article` avec une variation spécifique : `variation1`
 
-**Exemple de Requête**
+**Exemple de requête**
 
 ```xml
 {
@@ -1493,13 +1493,13 @@ Cette requête interroge :
 }
 ```
 
-### Exemple de Requête pour plusieurs fragments de contenu d’un paramètre régional donné {#sample-wknd-multiple-fragments-given-locale}
+### Exemple de requête pour plusieurs fragments de contenu d’un paramètre régional donné {#sample-wknd-multiple-fragments-given-locale}
 
-Cette requête interroge :
+Cette requête applique une interrogation :
 
 * pour les fragments de contenu de type `article` dans le paramètre régional `fr`
 
-**Exemple de Requête**
+**Exemple de requête**
 
 ```xml
 { 
@@ -1522,54 +1522,54 @@ Cette requête interroge :
 
 Les exemples de requêtes sont basés sur la structure suivante, qui utilise :
 
-* Un ou plusieurs [modèles de fragments de contenu ](#sample-content-fragment-models-schemas) constituent la base des schémas GraphQL
+* Un ou plusieurs [exemples de modèles de fragments de contenu](#sample-content-fragment-models-schemas) constituent la base des schémas GraphQL
 
-* [Exemples de ](#sample-content-fragments) fragments de contenu basés sur les modèles ci-dessus
+* [Exemples de fragments de contenu](#sample-content-fragments) basés sur les modèles ci-dessus
 
-### Exemples de modèles de fragments de contenu (Schémas) {#sample-content-fragment-models-schemas}
+### Exemples de modèles de fragments de contenu (schémas) {#sample-content-fragment-models-schemas}
 
-Pour les exemples de requêtes, nous utiliserons les modèles de contenu suivants et leurs interrelations (références ->) :
+Pour les exemples de requêtes, nous utiliserons les modèles de contenu suivants et leurs relations mutuelles (références ->) :
 
-* [Société](#model-company)
-->  [Personne](#model-person)
-    ->  [Prix](#model-award)
+* [Entreprise](#model-company)
+-> [Personne](#model-person)
+-> [Distinction](#model-award)
 
 * [Ville](#model-city)
 
 #### Entreprise {#model-company}
 
-Les champs de base définissant la société sont les suivants :
+Les champs de base définissant l’entreprise sont les suivants :
 
-| Nom du champ | Type de données | Référence  |
+| Nom du champ | Type de données | Référence |
 |--- |--- |--- |
-| Nom de la société | Une seule ligne de texte |  |
-| Directeur | Référence du fragment (unique) | [Personne](#model-person) |
+| Nom de l’entreprise | Une seule ligne de texte |  |
+| PDG | Référence du fragment (unique) | [Personne](#model-person) |
 | Employés | Référence du fragment (champ multiple) | [Personne](#model-person) |
 
 #### Personne {#model-person}
 
-Champs définissant une personne, qui peut également être un employé :
+Champs définissant une personne, qui peut également être un employé :
 
-| Nom du champ | Type de données | Référence  |
+| Nom du champ | Type de données | Référence |
 |--- |--- |--- |
 | Nom | Une seule ligne de texte |  |
 | Prénom | Une seule ligne de texte |  |
-| Prix | Référence du fragment (champ multiple) | [Prix](#model-award) |
+| Distinctions | Référence du fragment (champ multiple) | [Distinction](#model-award) |
 
-#### Attribution {#model-award}
+#### Distinction {#model-award}
 
-Les champs définissant une récompense sont les suivants :
+Les champs définissant une distinction sont les suivants :
 
-| Nom du champ | Type de données | Référence  |
+| Nom du champ | Type de données | Référence |
 |--- |--- |--- |
 | Raccourci/ID | Une seule ligne de texte |  |
-| Title (Titre) | Une seule ligne de texte |  |
+| Titre | Une seule ligne de texte |  |
 
 #### Ville {#model-city}
 
-Les champs permettant de définir une ville sont les suivants :
+Les champs permettant de définir une ville sont les suivants :
 
-| Nom du champ | Type de données | Référence  |
+| Nom du champ | Type de données | Référence |
 |--- |--- |--- |
 | Nom | Une seule ligne de texte |  |
 | Pays | Une seule ligne de texte |  |
@@ -1582,30 +1582,30 @@ Les fragments suivants sont utilisés pour le modèle approprié.
 
 #### Entreprise {#fragment-company}
 
-| Nom de la société | Directeur | Employés |
+| Nom de l’entreprise | PDG | Employés |
 |--- |--- |--- |
 | Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
-|  Little Pony Inc. | Adam Smith | Lara Croft<br>Étalure de découpe |
+|  Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
 | NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
 
 #### Personne {#fragment-person}
 
-| Nom | Prénom | Prix |
+| Nom | Prénom | Distinctions |
 |--- |--- |--- |
 | Lincoln |  Abe |  |
 | Smith | Adam |   |
-| Étalon |  Cutter |  Gameblitz<br>Gamestar |
+| Slade |  Cutter |  Gameblitz<br>Gamestar |
 | Marsh |  Duke |   |   |
 |  Smith |  Joe |   |
-| Croisement |  Lara | Gamestar |
+| Croft |  Lara | Gamestar |
 | Caulfield |  Max |  Gameblitz |
-|  Tâches |  Steve |   |
+|  Jobs |  Steve |   |
 
-#### Attribution {#fragment-award}
+#### Distinction {#fragment-award}
 
-| Raccourci/ID | Title (Titre) |
+| Raccourci/ID | Titre |
 |--- |--- |
-|  Go | Gameblitz |
+| GB | Gameblitz |
 |  GS | Gamestar |
 |  OSC | Oscar |
 
@@ -1613,10 +1613,10 @@ Les fragments suivants sont utilisés pour le modèle approprié.
 
 | Nom | Pays | Population | Catégories |
 |--- |--- |--- |--- |
-| Basel | Suisse | 172258 | ville:emea |
-| Berlin | Allemagne | 3669491 | ville:capital<br>ville:emea |
-| Bucarest | Roumanie | 1821000 |  ville:capital<br>ville:emea |
-| San Francisco |  USA |  883306 |  ville:plage<br>ville:na |
-| San Jose |  USA |  102635 |  ville:na |
-| Stuttgart |  Allemagne |  634830 |  ville:emea |
+| Bâle | Suisse | 172258 | city:emea |
+| Berlin | Allemagne | 3669491 | city:capital<br>city:emea |
+| Bucarest | Roumanie | 1821000 |  city:capital<br>city:emea |
+| San Francisco |  États-Unis |  883306 |  city:beach<br>city:na |
+| San Jose |  États-Unis |  102635 |  city:na |
+| Stuttgart |  Allemagne |  634830 |  city:emea |
 |  Zurich |  Suisse |  415367 |  ville:capital<br>ville:emea |
