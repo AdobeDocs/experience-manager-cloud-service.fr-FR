@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
 workflow-type: tm+mt
 source-wordcount: '2234'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
 
-# Utilisation des adaptateurs Sling   {#using-sling-adapters}
+# Utilisation des adaptateurs Sling {#using-sling-adapters}
 
 [Sling](https://sling.apache.org) propose un [modèle Adaptateur](https://sling.apache.org/site/adapters.html) permettant de convertir facilement les objets qui mettent en œuvre l’interface [Adaptable](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29). Cette interface fournit une méthode [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) générique qui convertit les objets dans le type de classe qui est transmis comme argument.
 
@@ -72,7 +72,7 @@ Cependant, il n’existe pas de règle absolue : l’objet peut soit être une 
 
 Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `adaptTo-targets` possibles. Cependant, pour des sous-classes spécifiques, telles que la ressource basée sur JCR, cela s’avère souvent impossible. Dans ce cas, les implémentations de `AdapterFactory` font généralement partie des classes privées d’un lot et ne sont donc pas exposées dans une API cliente ni répertoriées dans les JavaDocs. En théorie, il serait possible d’accéder à toutes les implémentations `AdapterFactory` à partir de l’exécutable de service [OSGi](/help/implementing/deploying/configuring-osgi.md) et d’observer leurs configurations « adaptables » (sources et cibles), mais pas de les mapper entre elles. En définitive, cela dépend de la logique interne, qui doit être documentée, d’où cette référence.
 
-## Référence   {#reference}
+## Référence  {#reference}
 
 ### Sling {#sling}
 
@@ -237,7 +237,7 @@ Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `ada
   </tr>
   <tr>
    <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/UserManager.html">UserManager</a></td>
-   <td>UserManager permet d’accéder aux objets Autorizable et de les gérer, c’est-à-dire les utilisateurs et les groupes. UserManager est lié à une session particulière.
+   <td>UserManager permet d’accéder aux objets Authorizable et de les gérer, c’est-à-dire les utilisateurs et les groupes. UserManager est lié à une session particulière.
    </td>
   </tr>
   <tr>
@@ -338,7 +338,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 |---|---|
 | [ReplicationStatus](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/ReplicationStatus.html) | Renvoie l’état de réplication pour le nœud racine utilisateur/groupe. |
 
-#### Gestion des ressources numériques {#dam}
+#### Gestion des ressources numériques (DAM) {#dam}
 
 **Asset** s’adapte à :
 
