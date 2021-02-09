@@ -1,11 +1,11 @@
 ---
-title: Facettes de recherche.
+title: Facettes de recherche
 description: Cet article décrit comment créer, modifier et utiliser les facettes de recherche dans AEM.
 translation-type: tm+mt
 source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
 source-wordcount: '2377'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -33,9 +33,9 @@ Pour des recherches de texte intégral, ajoutez le prédicat `Fulltext` au formu
 
 1. Sur la page Modifier des formulaires de recherche, faites glisser un prédicat de l’onglet **[!UICONTROL Sélectionner le prédicat]** vers le volet principal. Faites glisser, par exemple, **[!UICONTROL Prédicat de la propriété]**.
 
-   ![Sélectionner et déplacer un prédicat pour personnaliser les filtres de recherche](assets/drag_predicate.png)
+   ![Sélectionnez et déplacez un prédicat pour personnaliser les filtres de recherche](assets/drag_predicate.png)
 
-   *Figure : Sélectionnez et déplacez un prédicat pour personnaliser les filtres de recherche.*
+   *Figure : Sélectionner et déplacer un prédicat pour personnaliser les filtres de recherche.*
 
 1. Sous l’onglet Paramètres, saisissez un libellé de champ, un texte d’espace réservé et une description pour le prédicat. Indiquez un nom valide pour la propriété de métadonnées que vous souhaitez associer au prédicat. Le libellé d’en-tête de l’onglet Paramètres identifie le type de prédicat sélectionné.
 
@@ -45,9 +45,9 @@ Pour des recherches de texte intégral, ajoutez le prédicat `Fulltext` au formu
 
 1. Dans le champ **[!UICONTROL Nom de la propriété]**, indiquez un nom valide pour la propriété de métadonnées que vous souhaitez associer au prédicat. Il s’agit du nom sur lequel la recherche se base. Par exemple, saisissez `jcr:content/metadata/dc:description` ou `./jcr:content/metadata/dc:description`. Vous pouvez également sélectionner un nœud existant dans la boîte de dialogue de sélection.
 
-   ![Associez une propriété de métadonnées à un prédicat dans le champ Nom de propriété](assets/property_settings.png)
+   ![Associez une propriété de métadonnées à un prédicat dans le champ Nom de la propriété](assets/property_settings.png)
 
-   *Figure : Associez une propriété de métadonnées à un prédicat dans le champ Nom de propriété.*
+   *Figure : Associez une propriété de métadonnées à un prédicat dans le champ Nom de la propriété.*
 
 1. Cliquez sur **[!UICONTROL Aperçu]** ![aperçu](assets/preview.png) pour générer un aperçu du panneau Filtres tel qu’il apparaît une fois le prédicat ajouté.
 1. Examinez la structure du prédicat en mode Aperçu.
@@ -102,7 +102,7 @@ Si vous souhaitez utiliser un nœud existant, indiquez-le à l’aide de la boî
 1. Utilisez l’une des méthodes suivantes :
 
    * Dans le champ **[!UICONTROL Nom de la propriété]**, indiquez le chemin du fichier JSON où sont définis les nœuds des options et spécifiez les paires clé-valeur correspondantes.
-   * Appuyez sur ![Icône d’ajout de ressources](assets/do-not-localize/aem_assets_add_icon.png) en regard du champ Options pour spécifier le texte d’affichage et la valeur des options à fournir dans le panneau Filtres. Pour ajouter une autre option, appuyez/cliquez sur ![Actifs ajoutez l’icône](assets/do-not-localize/aem_assets_add_icon.png) et répétez l’étape.
+   * Appuyez sur l’![icône Ajouter des ressources](assets/do-not-localize/aem_assets_add_icon.png) en regard du champ Options afin de spécifier le texte affiché et la valeur pour les options que vous souhaitez fournir dans le panneau Filtres. Pour ajouter une autre option, appuyez/cliquez sur ![l’icône Ajouter des ressources](assets/do-not-localize/aem_assets_add_icon.png) et répétez l’étape.
 
 1. Assurez-vous que l’option **[!UICONTROL Sélection simple]** est désactivée pour permettre à l’utilisateur de sélectionner plusieurs options à la fois pour les types de fichiers (Images, Documents, Multimédia et Archives, par exemple). Si vous choisissez **[!UICONTROL Sélection simple]**, l’utilisateur ne peut sélectionner qu’une seule option à la fois pour les types de fichiers.
 
@@ -144,7 +144,7 @@ Le prédicat `Tags` vous permet de rechercher des ressources sur la base des bal
 1. Indiquez les balises sur la base desquelles vous souhaitez rechercher des ressources ou faites votre sélection dans la liste des suggestions.
 1. Sélectionnez **[!UICONTROL Correspondre à tous les critères]** pour rechercher les ressources qui contiennent toutes les balises que vous spécifiez.
 
-## Ajout d’autres prédicats    {#adding-other-predicates}
+## Ajout d’autres prédicats {#adding-other-predicates}
 
 Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous pouvez ajouter les autres prédicats suivants au panneau Rechercher :
 
@@ -167,7 +167,7 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
     </ul> </td>
   </tr>
   <tr>
-   <td>Chemin    Navigateur</td>
+   <td>Chemin Navigateur</td>
    <td>Prédicat de recherche permettant de rechercher des ressources dans des dossiers et des sous-dossiers à un chemin d’accès racine préconfiguré.</td>
    <td>
     <ul>
@@ -177,7 +177,7 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Chemin   </p> </td>
+   <td><p>Chemin</p> </td>
    <td><p>Utilisez-le pour filtrer les résultats selon l’emplacement. Vous pouvez spécifier différents chemins d’accès sous la forme d’options.</p> </td>
    <td>
     <ul>
@@ -217,7 +217,7 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Date    Plage</p> </td>
+   <td><p>Date Plage</p> </td>
    <td><p>Prédicat de recherche permettant de rechercher des ressources créées pendant une période spécifiée pour une propriété de date. Vous pouvez spécifier des dates de début et de fin dans le panneau Rechercher à l’aide des sélecteurs de date.</p> </td>
    <td>
     <ul>
@@ -304,7 +304,7 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
  </tbody>
 </table>
 
-## Restaurer les facettes de recherche par défaut {#restoring-default-search-facets}
+## Restauration des facettes de recherche par défaut {#restoring-default-search-facets}
 
 Par défaut, une icône représentant un cadenas s’affiche devant **[!UICONTROL Rail de recherche d’administrateurs de ressources]** sur la page **[!UICONTROL Formulaires de recherche]**. L’icône représentant un cadenas disparaît lorsque vous ajoutez des facettes de recherche au formulaire, ce qui indique que le formulaire par défaut a été modifié.
 
@@ -325,8 +325,8 @@ Si le rôle d’administrateur ne vous a pas été attribué, voici la liste des
 | Action | Autorisation |
 |---|---|
 | Modifier | Autorisations de lecture et d’écriture sur le nœud `/apps` dans CRX. |
-| Supprimer | Autorisations de lecture, d’écriture et de suppression sur le nœud `/apps` dans CRX |
-| Aperçu | Autorisations de lecture, d’écriture et de suppression sur le nœud `/var/dam/content` dans CRX De même que les autorisations de lecture et d’écriture sur le nœud `/apps`. |
+| Supprimer | Autorisations de lecture, d’écriture et de suppression sur le nœud `/apps` dans CRX.  |
+| Aperçu | Autorisations de lecture, d’écriture et de suppression sur le nœud `/var/dam/content` dans CRX. De même que les autorisations de lecture et d’écriture sur le nœud `/apps`. |
 
 >[!MORELIKETHIS]
 >
