@@ -1,22 +1,22 @@
 ---
-title: Notes de mise à jour de Cloud Manager en AEM version 2020.7.0 du Cloud Service
-description: Notes de mise à jour de Cloud Manager en AEM version 2020.7.0 du Cloud Service
+title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2020.7.0
+description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2020.7.0
 translation-type: tm+mt
 source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
 workflow-type: tm+mt
 source-wordcount: '309'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 
-# Notes de mise à jour de Cloud Manager dans Adobe Experience Manager en tant que Cloud Service 2020.7.0 {#release-notes}
+# Notes de mise à jour de Cloud Manager dans Adobe Experience Manager as a Cloud Service version 2020.7.0 {#release-notes}
 
-Cette page présente les Notes de mise à jour de Cloud Manager en AEM en tant que Cloud Service 2020.7.0.
+Cette page présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service 2020.7.0.
 
 ## Date de publication {#release-date}
 
-La date de publication de Cloud Manager en AEM Cloud Service 2020.7.0 est le 09 juillet 2020.
+La date de publication de Cloud Manager dans AEM as a Cloud Service 2020.7.0 est le 9 juillet 2020.
 
 ## Nouveautés {#whats-new-cloud-manager}
 
@@ -55,4 +55,4 @@ Consultez [Utilisation de la prise en charge de Java 11](/help/onboarding/getti
 
 ### Problèmes connus {#known-issues}
 
-* En raison d’un changement dans le mode de calcul de la couverture du code, la version *minimale* du module externe Jacoco est désormais 0.7.5.201505241946 (publiée en mai 2015). Les clients référençant explicitement une ancienne version reçoivent un message d’erreur dans le processus de qualité du code.
+* En raison d’un changement dans le mode de calcul de la couverture du code, la version *minimale* du plug-in Jacoco est désormais 0.7.5.201505241946 (publiée en mai 2015). Les clients référençant explicitement une ancienne version reçoivent un message d’erreur dans le processus de qualité du code.
