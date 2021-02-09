@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: 0999f7a2a915df0d58876e17ceb5e93e13b7f817
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 92%
       + [Exportation au format CSV](authoring/fundamentals/csv-export.md)
       + [Composants](authoring/fundamentals/components.md)
       + [Création pour appareils mobiles](authoring/fundamentals/mobile.md)
-      + [Création d’un contenu accessible (conformité WCAG 2.1)](authoring/fundamentals/accessible-content.md)
+      + [Création de contenu accessible (conformité WCAG 2.1)](authoring/fundamentals/accessible-content.md)
       + [Résolution des incidents](authoring/fundamentals/troubleshooting.md)
       + [Raccourcis clavier](authoring/fundamentals/keyboard-shortcuts.md)
    + Fonctions de création {#features}
@@ -61,13 +61,13 @@ ht-degree: 92%
       + [Création de lancements](authoring/launches/creating.md)
       + [Gestion des pages dans les lancements](authoring/launches/managing-pages.md)
       + [Modification de lancements](authoring/launches/editing.md)
-      + [Prévisualisation des lancements à l’aide de la barre de temps](authoring/launches/preview.md)
+      + [Aperçu des lancements avec Timewarp](authoring/launches/preview.md)
       + [Conversion de lancements](authoring/launches/promoting.md)
    + Workflows {#workflows}
       + [Utilisation des workflows](authoring/workflows/overview.md)
       + [Application de workflows aux pages ](authoring/workflows/applying.md)
       + [Participation aux workflows](authoring/workflows/participating.md)
-   + Personnalisation   {#personalization}
+   + Personnalisation {#personalization}
       + [Présentation de la personnalisation](authoring/personalization/overview.md)
       + [Aperçu des pages à l’aide des données ContextHub](authoring/personalization/contexthub.md)
       + [Création de contenu ciblé en mode Ciblage](authoring/personalization/targeted-content.md)
@@ -78,7 +78,7 @@ ht-degree: 92%
       + [Création et gestion d’offres](authoring/personalization/offers.md)
       + [Compréhension de la segmentation](authoring/personalization/segmentation.md)
       + [Configuration de la segmentation avec ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-      + [Inscription, connexion et Profil utilisateur](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
+      + [Enregistrement, connexion et profil utilisateur](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + Administration {#administering}
    + [Administration des workflows](administering/workflows-administering.md)
 + Intégration d’AEM as a Cloud Service {#integrations}
