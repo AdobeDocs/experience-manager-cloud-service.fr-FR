@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: ed449eea146ec18bdc4d25ae4938f9a36180037d
 workflow-type: tm+mt
 source-wordcount: '605'
-ht-degree: 43%
+ht-degree: 46%
 
 ---
 
@@ -30,7 +30,7 @@ Le transfert des ressources est optimisé pour une efficacité optimale en perme
    * Pour une comparaison des méthodes d’API disponibles pour les opérations CRUD de base, voir [APIs and asset operations](/help/assets/developer-reference-material-apis.md#use-cases-and-apis).
 * Le flux de travaux par défaut **[!UICONTROL Mise à jour des ressources DAM]** dans les versions précédentes de [!DNL Experience Manager] n&#39;est plus disponible. Au lieu de cela, les microservices de ressources offrent un service évolutif et facilement disponible qui couvre la plupart du traitement des ressources par défaut (rendus, extraction de métadonnées et extraction de texte pour l’indexation).
    * Voir [configuration et utilisation des microservices de ressources](/help/assets/asset-microservices-configure-and-use.md)
-   * Pour que les étapes de processus personnalisées soient intégrées au traitement, [les workflows de post-traitement](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) peuvent être utilisés.
+   * Pour que les étapes de workflow personnalisées soient intégrées au traitement, vous pouvez utiliser les [workflows de post-traitement](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)..
 * Les ressources téléchargées à l’aide de Package Manager doivent être retraitées manuellement à l’aide de l’action **[!UICONTROL Retraiter l’actif]** de l’interface [!DNL Assets].
 * Un fichier numérique sans extension ou avec une extension incorrecte n’est pas traité comme vous le souhaitez. Par exemple, lors du transfert de ces ressources, rien ne se produit ou un profil de traitement incorrect peut s’appliquer à la ressource. Les utilisateurs peuvent toujours stocker les fichiers binaires dans le module DAM.
 
@@ -55,5 +55,5 @@ L’interface utilisateur classique n’est plus disponible dans Experience Mana
 >* [architecture](/help/core-concepts/architecture.md) de [!DNL Experience Manager] en tant que [!DNL Cloud Service]
 >* [Changements notables  [!DNL Experience Manager] en tant que [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md)
 >* [Changements notables  [!DNL Experience Manager Sites] en tant que [!DNL Cloud Service]](/help/sites-cloud/sites-cloud-changes.md)
->* [[!DNL Experience Manager] as a [!DNL Cloud Service] Tutoriels](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+>* [[!DNL Experience Manager] as a [!DNL Cloud Service] Tutoriels](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=fr)
 
