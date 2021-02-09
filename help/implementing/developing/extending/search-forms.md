@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: c48274f76db764e1cbad459e644d5fb4b753a086
 workflow-type: tm+mt
 source-wordcount: '2043'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -146,7 +146,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Date    Plage</td>
+   <td>Date Plage</td>
    <td>Recherchez des ressources créées dans une plage spécifiée pour une propriété de date. Dans le panneau Rechercher, vous pouvez spécifier des dates de début et de fin.</td>
    <td>
     <ul>
@@ -211,7 +211,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Masqué   Filtrer</td>
+   <td>Masqué Filtrer</td>
    <td>Filtrez selon la propriété et la valeur, invisible pour l’utilisateur.</td>
    <td>
     <ul>
@@ -256,7 +256,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
    </td>
   </tr>
   <tr>
-   <td>Options </td>
+   <td>Options</td>
    <td><p>Les options sont des nœuds de contenu créés par l’utilisateur.</p> <p>Pour plus d’informations, voir <a href="#addinganoptionspredicate">Ajout d’un prédicat Options</a>.</p> </td>
    <td>
     <ul>
@@ -265,11 +265,11 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
      <li>Sélection simple</li>
      <li>Ajouter des options</li>
      <li>Manuel</li>
-     <li>Description</li>
+     <li>sa description ;</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>Options, propriété</td>
+   <td>Propriété des options</td>
    <td>Recherchez une ou plusieurs propriétés de l’option.</td>
    <td>
     <ul>
@@ -282,7 +282,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Page   État</td>
+   <td>Page État</td>
    <td>Filtrez des pages en fonction de leur état.</td>
    <td>
     <ul>
@@ -303,7 +303,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Chemin    Navigateur</td>
+   <td>Chemin Navigateur</td>
    <td>Fournissez un navigateur de chemins d’accès pour effectuer une recherche sous un chemin racine prédéfini.</td>
    <td>
     <ul>
@@ -314,7 +314,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
    </td>
   </tr>
   <tr>
-   <td>Chemin   Masqué</td>
+   <td>Chemin Masqué</td>
    <td>Filtrez selon le chemin, invisible pour l’utilisateur.</td>
    <td>
     <ul>
@@ -570,7 +570,7 @@ Libellés des cases à cocher Publication et Live Copy pour le prédicat spéci
 Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs paramètres :
 
 1. [Ouvrez la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
-1. Si vous souhaitez ajouter un nouveau champ, ouvrez l’onglet **Sélectionner le prédicat** et faites glisser le prédicat souhaité vers l’emplacement souhaité. Par exemple, le **prédicat de plage de dates** :
+1. Si vous souhaitez ajouter un nouveau champ, ouvrez l’onglet **Sélectionner le prédicat** et faites glisser le prédicat souhaité vers l’emplacement souhaité. Par exemple, le **prédicat de période** :
 
    ![ajout d’un prédicat](assets/csf-add-predicate.png)
 
@@ -583,7 +583,7 @@ Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs para
    * Vous souhaitiez ou non mettre à jour un prédicat existant :
 
       Sélectionnez le champ de prédicat (à droite), puis ouvrez l’onglet **Paramètres**.
-   Par exemple, les paramètres du **prédicat de plage de dates** :
+   Par exemple, les paramètres du **prédicat de période** :
 
    ![modifier le prédicat](assets/csf-modify-predicate.png)
 
@@ -601,7 +601,7 @@ Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs para
 
 1. **Fermez** l’aperçu pour terminer la configuration.
 
-### Suppression d’un champ de prédicat    {#deleting-a-predicate-field}
+### Suppression d’un champ de prédicat {#deleting-a-predicate-field}
 
 1. [Ouvrez la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
 1. Sélectionnez le champ de prédicat (à droite), ouvrez l’onglet **Paramètres**, puis sélectionnez l’icône **Supprimer** (dans le coin inférieur gauche).
@@ -622,13 +622,13 @@ Une fois que vous avez personnalisé une configuration, cette option remplace le
 
 Les configurations personnalisées doivent être supprimées à partir de la console :
 
-1. Sélectionnez une configuration (par exemple, **Éditeur de page (Recherche sur des paragraphes)**), puis cliquez sur l’icône **Supprimer** de la barre d’outils :
+1. Sélectionnez une configuration (par exemple, **Éditeur de page (Recherche de paragraphes)**), puis cliquez sur l’icône **Supprimer** de la barre d’outils :
 
    ![restaurer les valeurs par défaut](assets/csf-restore-default.png)
 
 1. La configuration personnalisée est supprimée et la valeur par défaut est rétablie (le symbole de cadenas réapparaît dans la console).
 
-### Ajout de prédicats d’options    {#adding-options-predicates}
+### Ajout de prédicats d’options  {#adding-options-predicates}
 
 Les prédicats d’options (options, propriété d’options) permettent de configurer un élément à rechercher. Ils servent généralement à rechercher un élément directement sous la page, par exemple, une propriété sur le nœud de page.
 
