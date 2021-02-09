@@ -1,11 +1,11 @@
 ---
 title: Utilisation de plusieurs référentiels Git source
-description: Utilisation de plusieurs référentiels Git source - Cloud Services
+description: Utilisation de plusieurs référentiels Git source – Cloud Services
 translation-type: tm+mt
 source-git-commit: e8cfe8eeec697fe74da02e178a89fc7a0e22d441
 workflow-type: tm+mt
 source-wordcount: '747'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -13,13 +13,13 @@ ht-degree: 98%
 # Utilisation de plusieurs référentiels Git source {#working-with-multiple-source-git-repos}
 
 
-## Synchronisation de référentiels Git gérés par le client {#syncing-customer-managed-git-repositories}
+## Synchronisation des référentiels Git gérés par le client {#syncing-customer-managed-git-repositories}
 
-Au lieu de travailler directement avec le référentiel Git de Cloud Manager, les clients peuvent utiliser un ou plusieurs référentiels Git qu’ils détiennent. Dans ce cas, un processus de synchronisation automatique doit être configuré pour s’assurer que le référentiel Git de Cloud Manager soit toujours à jour. Selon l’emplacement d’hébergement du référentiel Git du client, vous pouvez utiliser une action GitHub ou une solution d’intégration continue comme Jenkins pour configurer l’automatisation. Si une automatisation a été mise en place, il est possible de transférer automatiquement vers le référentiel Git de Cloud Manager les transmissions de type push destinées à un référentiel Git détenu par le client.
+Au lieu de travailler directement avec le référentiel Git de Cloud Manager, les clients peuvent travailler avec un ou plusieurs référentiels Git qu’ils détiennent. Dans ce cas, un processus de synchronisation automatique doit être configuré pour s’assurer que le référentiel Git de Cloud Manager soit toujours à jour. Selon l’emplacement d’hébergement du référentiel Git du client, il est possible d’utiliser une action GitHub ou une solution d’intégration continue comme Jenkins pour configurer l’automatisation. Si une automatisation a été mise en place, il est possible de transférer automatiquement vers le référentiel Git de Cloud Manager les transmissions destinées à un référentiel Git détenu par le client. 
 
-Bien que cette automatisation d’un seul référentiel Git détenu par le client soit simple, la configuration de ce processus pour plusieurs référentiels nécessite une configuration initiale. Le contenu des référentiels Git doit être mappé avec différents répertoires dans le référentiel Git unique de Cloud Manager.  Ce référentiel doit être mis en service avec un modèle pom Maven racine qui répertorie les différents sous-projets dans la section des modules.
+Bien que cette automatisation d’un seul référentiel Git détenu par le client soit simple, la configuration de ce processus pour plusieurs référentiels nécessite une configuration initiale. Le contenu des référentiels Git doit être mappé avec différents répertoires dans le référentiel Git unique de Cloud Manager. Ce référentiel doit être mis en service avec un modèle pom Maven racine qui répertorie les différents sous-projets dans la section des modules.
 
-Vous trouverez ci-dessous un exemple de modèle pom pour deux référentiels Git détenus par le client : le premier projet sera placé dans le répertoire `project-a`, le second dans `project-b`.
+Vous trouverez ci-dessous un exemple de modèle pom pour deux référentiels Git détenus par le client : le premier projet sera placé dans le répertoire `project-a`, le second dans le répertoire `project-b`.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -42,20 +42,20 @@ Vous trouverez ci-dessous un exemple de modèle pom pour deux référentiels Git
 
 Ce modèle pom racine est placé dans une branche du référentiel Git de Cloud Manager. Les deux projets doivent être ensuite configurés pour transférer automatiquement les modifications vers le référentiel Git de Cloud Manager.
 
-Une action GitHub peut, par exemple, être déclenchée par une transmission de type push vers une branche du projet A. L’action va extraire le projet A et le référentiel Git de Cloud Manager, copier l’ensemble du contenu du projet A vers le répertoire `project-a` dans le référentiel Git de Cloud Manager, puis valider et transmettre (commit-push) la modification. À titre d’exemple, une modification apportée à la branche principale du projet A est automatiquement répercutée sur la branche principale du référentiel Git de Cloud Manager. Bien sûr, il pourrait y avoir un mappage entre branches, par exemple une transmission de type push vers une branche nommée dev dans le projet A, répercuté vers une branche nommée development dans le référentiel Git de Cloud Manager. Des étapes similaires sont nécessaires pour le projet B.
+Une action GitHub peut, par exemple, être déclenchée par un transfert (push) vers une branche du projet A. L’action va extraire le projet A et le référentiel Git de Cloud Manager, copier l’ensemble du contenu du projet A vers le répertoire `project-a` dans le référentiel Git de Cloud Manager, puis valider et transférer (commit-push) la modification. À titre d’exemple, une modification apportée à la branche principale du projet A est automatiquement répercutée sur la branche principale du référentiel Git de Cloud Manager. Bien sûr, il pourrait y avoir un mappage entre branches, par exemple un transfert vers une branche nommée « dev » dans le projet A, répercuté vers une branche nommée « development » dans le référentiel Git de Cloud Manager. Des étapes similaires sont nécessaires pour le projet B.
 
 Selon la stratégie et les workflows d’embranchement, il est possible de configurer la synchronisation pour différentes branches. Si le référentiel Git utilisé ne propose pas un concept similaire aux actions GitHub, une intégration par le biais de Jenkins (ou de type similaire) est également possible. Dans ce cas, un webhook déclenche un traitement Jenkins chargé d’effectuer le travail.
 
 Suivez les étapes ci-dessous pour ajouter une source ou un référentiel nouveaux (la ou le troisième) :
 
-1. Ajoutez une nouvelle action GitHub dans le nouveau référentiel afin de transmettre les modifications de ce référentiel vers le référentiel Git de Cloud Manager.
+1. Ajoutez une nouvelle action GitHub dans le nouveau référentiel pour transférer les modifications de ce référentiel vers le référentiel Git de Cloud Manager.
 1. Effectuez cette action au moins une fois pour vous assurer que le code du projet se trouve dans le référentiel Git de Cloud Manager.
 1. Dans le référentiel Git de Cloud Manager, ajoutez une référence au nouveau répertoire dans le modèle pom Maven racine.
 
 
 ## Exemple d’action GitHub {#sample-github-action}
 
-Il s’agit d’un exemple d’action GitHub déclenchée par une transmission de type push vers la branche principale, puis vers un sous-répertoire du référentiel Git de Cloud Manager. Les actions GitHub doivent comporter deux secrets, `MAIN_USER` et `MAIN_PASSWORD`, pour se connecter et effectuer des transmissions de type push vers le référentiel Git de Cloud Manager.
+Il s’agit d’un exemple d’action GitHub déclenchée par un transfert vers la branche principale, puis vers un sous-répertoire du référentiel Git de Cloud Manager. Les actions GitHub doivent comporter deux secrets, `MAIN_USER` et `MAIN_PASSWORD`, pour pouvoir se connecter et effectuer des transferts (push) vers le référentiel Git de Cloud Manager.
 
 ```java
 name: SYNC
@@ -112,10 +112,10 @@ jobs:
           git -C main push
 ```
 
-Comme indiqué ci-dessus, l’utilisation d’une action GitHub est très flexible. Il est possible d’effectuer n’importe quel mappage entre les branches des référentiels Git, ou des mappages de projets Git distincts dans la disposition des répertoires du projet principal.
+Comme indiqué ci-dessus, l’utilisation d’une action GitHub est très flexible. Il est possible d’effectuer un mappage quelconque entre branches des référentiels Git, ou des mappages de projets Git distincts dans la disposition des répertoires du projet principal.
 
 >[!NOTE]
->Le script ci-dessus utilise `git add` pour mettre à jour le référentiel, en supposant que les suppressions sont incluses. Selon la configuration Git par défaut, la commande doit être remplacée par `git add --all`.
+>Le script ci-dessus utilise `git add` pour mettre à jour le référentiel, en supposant que les suppressions sont incluses. Selon la configuration de Git par défaut, la commande doit être remplacée par `git add --all`.
 
 ## Exemple de traitement Jenkins {#sample-jenkins-job}
 
@@ -123,7 +123,7 @@ Il s’agit d’un exemple de script pouvant être utilisé dans un traitement J
 
 Le script extrait ensuite le référentiel Git de Cloud Manager et valide le code du projet dans un sous-répertoire.
 
-Le traitement Jenkins doit comporter deux secrets, `MAIN_USER` et `MAIN_PASSWORD`, pour se connecter et effectuer des transmissions de type push vers le référentiel Git de Cloud Manager.
+Le traitement Jenkins doit comporter deux secrets, `MAIN_USER` et `MAIN_PASSWORD`, pour pouvoir se connecter et effectuer des transferts (push) vers le référentiel Git de Cloud Manager.
 
 ```java
 # Username/email used to commit to Cloud Manager's Git repository
@@ -177,7 +177,7 @@ git commit -F ../commit.txt
 git push
 ```
 
-Comme indiqué ci-dessus, l’utilisation d’un traitement Jenkins est très flexible. Il est possible d’effectuer n’importe quel mappage entre les branches des référentiels Git, ou des mappages de projets Git distincts dans la disposition des répertoires du projet principal.
+Comme indiqué ci-dessus, l’utilisation d’un traitement Jenkins est très flexible. Il est possible d’effectuer un mappage quelconque entre branches des référentiels Git, ou des mappages de projets Git distincts dans la disposition des répertoires du projet principal.
 
 >[!NOTE]
 >Le script ci-dessus utilise `git add` pour mettre à jour le référentiel, en supposant que les suppressions sont incluses. Selon la configuration de Git par défaut, la commande doit être remplacée par `git add --all`.
