@@ -1,22 +1,22 @@
 ---
-title: Notes de mise à jour de Cloud Manager en AEM version 2020.10.0 du Cloud Service
-description: Notes de mise à jour de Cloud Manager en AEM version 2020.10.0 du Cloud Service
+title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2020.10.0
+description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2020.10.0
 translation-type: tm+mt
 source-git-commit: 65752c7c51538de27aa2b21695e8eb6c6695a5f5
 workflow-type: tm+mt
 source-wordcount: '300'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
 
-# Notes de mise à jour de Cloud Manager dans Adobe Experience Manager en tant que Cloud Service 2020.10.0 {#release-notes}
+# Notes de mise à jour de Cloud Manager dans Adobe Experience Manager as a Cloud Service version 2020.10.0 {#release-notes}
 
-Cette page présente les Notes de mise à jour de Cloud Manager en AEM en tant que Cloud Service 2020.10.0.
+Cette page présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service 2020.10.0.
 
 ## Date de publication {#release-date}
 
-La date de publication de Cloud Manager en tant que Cloud Service 2020.10.0 en AEM est le 01 octobre 2020.
+La date de publication de Cloud Manager dans AEM as a Cloud Service 2020.10.0 est le 1er octobre 2020.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -26,12 +26,12 @@ La date de publication de Cloud Manager en tant que Cloud Service 2020.10.0 en A
 
 * Les environnements en veille affichent désormais un état discret dans Cloud Manager.
 
-* Le conteneur de création de Cloud Manager prend désormais en charge la compilation de projets à l’aide de Java 8 ou Java 11. La prise en charge de Java 11 est assurée par le système de chaînes d’outils Maven.
+* Le conteneur de création de Cloud Manager prend désormais en charge la compilation de projets à l’aide de Java 8 ou Java 11. La prise en charge de Java 11 est assurée par le système de chaînes d’outils Maven.
 
 * Le nombre de variables d’environnement par environnement a été porté à 200.
 
-* La carte d’Environnement de la page Aperçu liste désormais jusqu’à trois environnements. Les utilisateurs peuvent sélectionner le bouton **Afficher tout** pour accéder à la page de résumé de l’Environnement et vue d’un tableau avec une liste complète d’environnements.
-Consultez [Affichage de l&#39;Environnement](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) pour plus de détails.
+* La carte d’environnement de la page Aperçu répertorie désormais jusqu’à trois environnements. Les utilisateurs peuvent sélectionner le bouton **Afficher tout** pour accéder à la page de résumé de l’environnement afin d’afficher un tableau avec une liste complète d’environnements.
+Voir [Affichage de l’environnement](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) pour plus de détails.
 
 
 ### Correctifs {#bug-fixes-cloud-manager}
@@ -40,7 +40,7 @@ Consultez [Affichage de l&#39;Environnement](/help/implementing/cloud-manager/ma
 
 * Le lien direct vers Developer Console à partir de Cloud Manager n’affichait pas l’option permettant de mettre en veille/réactiver un environnement de programme Sandbox.
 
-* Les boutons Annuler et Enregistrer de la page Modification du pipeline hors production n’étaient pas toujours visibles.
+* Les boutons Annuler et Enregistrer sur la page Modification d’un pipeline hors production n’étaient pas toujours visibles.
 
 * Certaines erreurs liées au u processus de qualité du code peuvent entraîner la génération incorrecte du fichier journal.
 
