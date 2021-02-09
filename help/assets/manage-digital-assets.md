@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: de313ebc7a4fe89784b9083edbb790dc444caac9
 workflow-type: tm+mt
 source-wordcount: '4358'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Voir [Ajout de ressources numériques à Experience Manager](add-assets.md).
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-Si un utilisateur DAM charge une ou plusieurs ressources qui existent déjà dans le référentiel, [!DNL Experience Manager] détecte la duplication et en informe l’utilisateur. La fonctionnalité de détection des doublons est désactivée par défaut, car elle peut avoir un impact sur les performances en fonction de la taille du référentiel et du nombre de ressources chargées. Pour activer cette fonctionnalité, configurez le [!UICONTROL détecteur de duplication de ressources d’Adobe AEM Cloud]. Découvrez [comment définir des configurations OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html). La détection de duplication est basée sur la valeur `dam:sha1` unique stockée dans `jcr:content/metadata/dam:sha1`. Ainsi, les ressources en double sont détectées même si les noms de fichier sont différents.
+Si un utilisateur DAM charge une ou plusieurs ressources qui existent déjà dans le référentiel, [!DNL Experience Manager] détecte la duplication et en informe l’utilisateur. La fonctionnalité de détection des doublons est désactivée par défaut, car elle peut avoir un impact sur les performances en fonction de la taille du référentiel et du nombre de ressources chargées. Pour activer cette fonctionnalité, configurez le [!UICONTROL détecteur de duplication de ressources d’Adobe AEM Cloud]. Découvrez [comment définir des configurations OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr). La détection de duplication est basée sur la valeur `dam:sha1` unique stockée dans `jcr:content/metadata/dam:sha1`. Ainsi, les ressources en double sont détectées même si les noms de fichier sont différents.
 
 ![Détecter la configuration OSGi des ressources en double](assets/duplicate-detection.png)
 
@@ -95,7 +95,7 @@ Pour prévisualiser une ressource, procédez comme suit.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. Sélectionnez une ou plusieurs balises dans le champ **[!UICONTROL Balises]**. Pour ajouter une balise personnalisée, saisissez le nom de la balise dans la zone et sélectionnez la clé `Enter`. La nouvelle balise est enregistrée dans [!DNL Experience Manager].
+1. Sélectionnez une ou plusieurs balises dans le champ **[!UICONTROL Balises]**. Pour ajouter une balise personnalisée, saisissez son nom dans la zone appropriée et sélectionnez ensuite la touche `Enter`. La nouvelle balise est enregistrée dans [!DNL Experience Manager].
 
    YouTube requiert que les balises soient publiées et comportent un lien vers YouTube (si un lien approprié peut être trouvé).
 
@@ -145,7 +145,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    >[!NOTE]
    >
-   >Si vous copiez un fichier au même emplacement, [!DNL Experience Manager] génère automatiquement une variante du nom. Par exemple, si vous copiez un fichier intitulé `Square`, [!DNL Experience Manager] génère automatiquement le titre de sa copie sous la forme `Square1`.
+   >Si vous copiez une ressource au même endroit, [!DNL Experience Manager] génère automatiquement une variante du nom. Par exemple, si vous copiez une ressource intitulée `Square`, [!DNL Experience Manager] génère automatiquement le titre de sa copie `Square1`.
 
 1. Cliquez sur l’icône de ressource **[!UICONTROL Coller]** de la barre d’outils. Les ressources sont copiées à cet emplacement.
 
@@ -209,7 +209,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    >[!NOTE]
    >
-   >Par défaut, [!DNL Experience Manager Assets] n’affiche pas le rendu original de la ressource en mode prévisualisation. Si vous êtes un administrateur, vous pouvez utiliser des incrustations pour configurer [!DNL Assets] pour afficher les rendus d’origine en mode prévisualisation.
+   >Par défaut, [!DNL Experience Manager Assets] n’affiche pas le rendu d’origine de la ressource en mode Aperçu. Si vous êtes administrateur, vous pouvez utiliser des incrustations pour configurer [!DNL Assets] de manière à afficher les rendus d’origine dans ce mode.
 
 1. Sélectionnez un rendu afin de l’afficher ou de le supprimer.
 
@@ -229,7 +229,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
    >
    >Si vous sélectionnez un rendu dans le panneau **[!UICONTROL Rendus]**, la barre d’outils change de contexte et affiche uniquement les actions pertinentes par rapport au rendu. Certaines options, telles que l’icône Télécharger le rendu, ne sont pas visibles. Pour afficher ces options dans la barre d’outils, accédez à la page des détails de la ressource.
 
-   Vous pouvez configurer les dimensions du rendu à afficher dans la page de détails d’une ressource image ou vidéo. En fonction des dimensions que vous spécifiez, Assets affiche le rendu avec les dimensions exactes ou les plus proches.
+   Vous pouvez configurer les dimensions du rendu à afficher dans la page de détails d’une ressource image ou vidéo. Assets affiche le rendu selon les dimensions exactes ou les plus proches de celles spécifiées.
 
    Pour configurer les dimensions du rendu d’une image au niveau des détails de la ressource, recouvrez le nœud `renditionpicker` (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) et configurez la valeur de la propriété de largeur. Configurez la propriété **[!UICONTROL size (Long) in KB]** (taille (Longueur) en Ko) à la place de la largeur pour personnaliser le rendu dans la page des détails de la ressource selon la taille de l’image. Pour une personnalisation dépendant de la taille, la propriété `preferOriginal` affecte les préférences à l’image initiale si la taille du rendu correspondant est supérieure à celle de l’image initiale.
 
@@ -276,7 +276,7 @@ De plus, désactivez le bouton Forcer la suppression à l’aide d’un recouvre
 
 ## Téléchargement de ressources {#download-assets}
 
-Voir [Téléchargement de ressources à partir de  [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
+Voir la section [Téléchargement de ressources à partir d’ [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
 ## Publication des ressources {#publish-assets}
 
@@ -329,7 +329,7 @@ Voir [Téléchargement de ressources à partir de  [!DNL Experience Manager]](/h
 
 ## Groupe d’utilisateurs fermé {#closed-user-group}
 
-Un groupe d’utilisateurs fermé (CUG) est utilisé pour limiter l’accès à des dossiers de ressources spécifiques publiés à partir de [!DNL Experience Manager]. Si vous créez un groupe d’utilisateurs fermé pour un fichier, l’accès au dossier (y compris aux ressources du dossier et à ses sous-dossiers) est limité aux membres ou aux groupes attribués. Pour accéder au dossier, ils doivent se connecter à l’aide de leurs informations d’identification de sécurité.
+Les groupes d’utilisateurs fermés permettent de limiter l’accès à des dossiers de ressources spécifiques publiés à partir d’[!DNL Experience Manager]. Si vous créez un groupe d’utilisateurs fermé pour un fichier, l’accès au dossier (y compris aux ressources du dossier et à ses sous-dossiers) est limité aux membres ou aux groupes attribués. Pour accéder au dossier, ils doivent se connecter à l’aide de leurs informations d’identification de sécurité.
 
 Les groupes d’utilisateurs fermés constituent un moyen supplémentaire de limiter l’accès à vos ressources. Vous pouvez également configurer une page de connexion pour le dossier.
 
@@ -338,18 +338,18 @@ Les groupes d’utilisateurs fermés constituent un moyen supplémentaire de lim
 
    ![add_user](assets/add_user.png)
 
-1. Pour afficher un écran de connexion lorsque les utilisateurs accèdent au dossier, sélectionnez l’option **[!UICONTROL Activer]**. Sélectionnez ensuite le chemin d’accès à une page de connexion dans [!DNL Experience Manager], puis enregistrez les modifications.
+1. Pour afficher un écran de connexion lorsque les utilisateurs accèdent au dossier, sélectionnez l’option **[!UICONTROL Activer]**. Sélectionnez ensuite le chemin de la page de connexion dans [!DNL Experience Manager] et enregistrez les modifications.
 
    ![login_page](assets/login_page.png)
 
    >[!NOTE]
    >
-   >Si vous ne spécifiez pas le chemin d’accès à une page de connexion, [!DNL Experience Manager] affiche la page de connexion par défaut dans l’instance de publication.
+   >Si vous ne spécifiez pas le chemin d’une page de connexion, [!DNL Experience Manager] affiche la page de connexion par défaut dans l’instance de publication.
 
 1. Publiez le dossier, puis tentez d’y accéder à partir de l’instance de publication. Un écran de connexion s’affiche.
-1. Si vous êtes membre d’un groupe d’utilisateurs fermé, saisissez vos informations d’identification de sécurité. Le dossier s’affiche une fois que [!DNL Experience Manager] vous a authentifié.
+1. Si vous êtes membre d’un groupe d’utilisateurs fermé, saisissez vos informations d’identification de sécurité. Le dossier s’affiche après qu’[!DNL Experience Manager] vous a authentifié.
 
-## Recherche de ressources  {#search-assets}
+## Recherche de ressources {#search-assets}
 
 La recherche de ressources est essentielle pour l’utilisation d’un système de gestion des ressources numériques, que ce soit pour une utilisation plus poussée par les créatifs, pour une gestion robuste des ressources par les utilisateurs et spécialistes marketing ou pour l’administration par les administrateurs DAM.
 
@@ -364,7 +364,7 @@ Les icônes d’action rapide sont disponibles pour une ressource à la fois. Se
 
 ## Modification des images {#editing-images}
 
-Les outils de modification de l&#39;interface [!DNL Experience Manager Assets] vous permettent d&#39;effectuer de petites tâches de modification sur les fichiers d&#39;image. Vous pouvez recadrer les images, les faire pivoter, les retourner et effectuer d’autres tâches de modification. Vous pouvez également ajouter des zones cliquables aux ressources.
+Les outils de modification de l’interface d’[!DNL Experience Manager Assets] permettent d’effectuer de petites tâches de modification sur les ressources d’image. Vous pouvez recadrer les images, les faire pivoter, les retourner et effectuer d’autres tâches de modification. Vous pouvez également ajouter des zones cliquables aux ressources.
 
 >[!NOTE]
 >
@@ -436,7 +436,7 @@ La chronologie permet d’afficher différents événements d’un élément sé
 
 Les annotations sont des commentaires ou des notes d’explication ajoutées aux images ou vidéos. Les annotations offrent aux spécialistes marketing la possibilité de collaborer et de laisser des commentaires sur des ressources.
 
-Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acceptent les formats vidéo compatibles avec HTML5. Les formats vidéo pris en charge par  Assets dépendent du navigateur.
+Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acceptent les formats vidéo compatibles avec HTML5. Les formats vidéo pris en charge par Assets dépendent du navigateur.
 
 >[!NOTE]
 >
@@ -473,7 +473,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
    >Vous pouvez ajouter plusieurs annotations avant de les enregistrer.
 
 1. Appuyez/cliquez sur **[!UICONTROL Fermer]** pour quitter le mode Annotation.
-1. Pour afficher la notification, connectez-vous à  Assets avec les informations d’identification d’Aaron MacDonald et cliquez ensuite sur l’icône **[!UICONTROL Notifications]**.
+1. Pour afficher la notification, connectez-vous à Assets avec les informations d’identification d’Aaron MacDonald et cliquez ensuite sur l’icône **[!UICONTROL Notifications]**.
 
    >[!NOTE]
    >
@@ -565,9 +565,9 @@ Le contrôle de version permet de créer un instantané des ressources numériqu
 
 Voici quelques scénarios de création de versions :
 
-* Vous modifiez une image dans une autre application et la téléchargez vers  Assets. Une version de l’image est créée afin que votre image d’origine ne soit pas remplacée.
+* Vous modifiez une image dans une autre application et la chargez vers Assets. Une version de l’image est créée afin que votre image d’origine ne soit pas remplacée.
 * Vous modifiez les métadonnées d’une ressource.
-* Vous utilisez [!DNL Experience Manager] application de bureau pour extraire une ressource existante et enregistrer vos modifications. Une nouvelle version est créée chaque fois que la ressource est enregistrée.
+* Vous utilisez l’application de bureau [!DNL Experience Manager] pour extraire une ressource existante et enregistrer vos changements. Une nouvelle version est créée chaque fois que la ressource est enregistrée.
 
 Vous pouvez également activer le contrôle de version automatique à l’aide d’un workflow. Lorsque vous créez une version d’une ressource, les métadonnées et les rendus sont enregistrés avec la version. Les rendus sont d’autres affichages d’une même image (un rendu PNG d’un fichier JPEG téléchargé, par exemple).
 
