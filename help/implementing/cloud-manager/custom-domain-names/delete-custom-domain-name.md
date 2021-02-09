@@ -5,22 +5,22 @@ translation-type: tm+mt
 source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
 source-wordcount: '151'
-ht-degree: 0%
+ht-degree: 80%
 
 ---
 
 
-# Suppression d&#39;un nom de domaine personnalisé {#deleting-cdn}
+# Suppression d’un nom de domaine personnalisé {#deleting-cdn}
 
-Un utilisateur doit se trouver dans le rôle Business Owner ou Deployment Manager pour pouvoir supprimer un nom de domaine personnalisé dans Cloud Manager.
+Un utilisateur doit avoir le rôle Propriétaire de l’entreprise ou Responsable du déploiement pour pouvoir supprimer un nom de domaine personnalisé dans Cloud Manager.
 
-## Suppression d&#39;un nom de domaine personnalisé de tous les Environnements associés {#delete-cdn-all}
+## Suppression d’un nom de domaine personnalisé de tous les environnements associés {#delete-cdn-all}
 
 1. Accédez à la page **Paramètres de domaine** à partir de l’écran **Environnements**.
 
 1. Identifiez la ligne où figure le nom de domaine personnalisé que vous souhaitez supprimer.
 
-1. Sélectionnez **...** à l&#39;extrémité droite de la ligne.
+1. Sélectionnez le menu **...** à l’extrémité droite de la ligne.
 
 1. Sélectionnez l&#39;option **Supprimer**.
    ![](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
@@ -28,10 +28,10 @@ Un utilisateur doit se trouver dans le rôle Business Owner ou Deployment Manage
 1. Confirmez votre envoi.
 
 
-## Suppression d&#39;un nom de domaine personnalisé d&#39;un Environnement spécifique {#delete-cdn-specific}
+## Suppression d’un nom de domaine personnalisé d’un environnement spécifique {#delete-cdn-specific}
 
 1. Dans la page **Environnements**, accédez à l’écran des détails de l’Environnement de l’environnement d’intérêt.
-1. Dans le tableau Noms de domaine, identifiez la ligne où figure le nom de domaine personnalisé que vous souhaitez supprimer.
-1. Sélectionnez **...** à l&#39;extrémité droite de la ligne.
+1. Dans le tableau Noms de domaines, identifiez la ligne où figure le nom de domaine personnalisé que vous souhaitez supprimer.
+1. Sélectionnez le menu **...** tout à fait à droite de la ligne.
 1. Sélectionnez l’option Supprimer.
 1. Confirmez votre envoi.
