@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
 source-wordcount: '3680'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# Profils vidéo Dynamic Media{#video-profiles}
+# Profils vidéo Dynamic Media {#video-profiles}
 
 Dynamic Media est fourni avec un profil prédéfini de codage vidéo adaptatif. Les paramètres de ce profil prêt à l’emploi sont optimisés pour offrir à vos clients la meilleure expérience de visionnage possible. Lorsque vous codez vos vidéos sources originales à l’aide du profil de codage vidéo adaptatif, au cours de la lecture, le lecteur vidéo ajuste automatiquement la qualité du flux vidéo en fonction de la vitesse de la connexion Internet de vos clients. Ce processus est appelé diffusion en continu adaptative.
 
@@ -48,13 +48,13 @@ Le tableau ci-après identifie les profils de codage recommandés pour la diffus
  <tbody>
   <tr>
    <td><strong>Codec du format vidéo</strong></td>
-   <td><strong>Taille de la vidéo - Largeur (px)</strong></td>
-   <td><strong>Taille de la vidéo - Hauteur (px)</strong></td>
+   <td><strong>Taille de la vidéo – Largeur (px)</strong></td>
+   <td><strong>Taille de la vidéo – Hauteur (px)</strong></td>
    <td><strong>Conserver les proportions ?</strong></td>
    <td><strong>Débit vidéo (kbit/s)</strong></td>
    <td><strong>Taux de rafraîchissement vidéo (i/s)</strong></td>
    <td><strong>Codec audio</strong></td>
-   <td><strong>Débit audio  (kbit/s)</strong></td>
+   <td><strong>Débit audio (kbit/s)</strong></td>
   </tr>
   <tr>
    <td><p>MP4 H.264 (mp4)</p> </td>
@@ -425,6 +425,6 @@ Vous pouvez supprimer un profil vidéo d’un dossier à partir du menu **[!UICO
 ### Suppression d’un profil vidéo des dossiers à l’aide des propriétés {#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. Appuyez ou cliquez sur le logo AEM, puis accédez à **[!UICONTROL Ressources]** et au dossier duquel vous souhaitez supprimer un profil vidéo.
-1. Dans le dossier, appuyez ou cliquez sur la coche pour la sélectionner, puis appuyez sur **[!UICONTROL Propriétés]**.
+1. Dans le dossier, appuyez ou cliquez sur la coche afin de la sélectionner, puis appuyez sur **[!UICONTROL Propriétés]**.
 1. Sélectionnez l’onglet **[!UICONTROL Profils vidéo]**, choisissez **[!UICONTROL Aucun]** dans le menu déroulant, puis cliquez sur **[!UICONTROL Enregistrer et fermer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
