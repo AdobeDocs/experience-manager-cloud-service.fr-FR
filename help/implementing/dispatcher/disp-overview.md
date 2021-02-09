@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 49b2f4abf64e404fcda7ea8d35e3ab9dc5fec90f
 workflow-type: tm+mt
 source-wordcount: '4119'
-ht-degree: 86%
+ht-degree: 98%
 
 ---
 
@@ -23,17 +23,17 @@ Cette section décrit comment structurer les configurations Apache et Dispatcher
 
 Les outils Dispatcher font partie du SDK global d’AEM as a Cloud Service et fournissent les éléments suivants :
 
-* Structure de fichiers vanille contenant les fichiers de configuration à inclure dans un projet expert pour le répartiteur.
-* Outil permettant aux clients de vérifier que la configuration du répartiteur inclut uniquement des AEM en tant que directives prises en charge par le Cloud Service.        En outre, l&#39;outil valide également la syntaxe correcte afin qu&#39;apache puisse début correctement.
+* Une structure de fichiers classique contenant les fichiers de configuration à inclure dans un projet maven pour Dispatcher.
+* Outil permettant aux clients de confirmer que la configuration de Dispatcher inclut uniquement des directives prises en charge AEM as a Cloud Service. En outre, l’outil confirme également que la syntaxe correcte afin qu’Apache puisse démarrer correctement.
 * Une image du Docker qui rend Dispatcher accessible localement
 
 ## Téléchargement et extraction des outils {#extracting-the-sdk}
 
-Les outils du répartiteur, qui font partie de l&#39;[AEM en tant que SDK Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), peuvent être téléchargés à partir d&#39;un fichier zip sur le portail [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html). Toute nouvelle configuration disponible dans cette nouvelle version des outils du répartiteur peut être utilisée pour le déploiement sur les environnements Cloud exécutant cette version d’AEM dans le Cloud ou une version ultérieure.
+Les outils Dispatcher, qui font partie du [SDK AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), peuvent être téléchargés sous la forme d’un fichier zip sur le portail de [distribution de logiciels](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html). Toute nouvelle configuration disponible dans cette nouvelle version des outils Dispatcher peut être utilisée pour le déploiement dans les environnements cloud exécutant cette version d’AEM en mode cloud ou une version ultérieure.
 
-Décompressez le SDK, qui regroupe les outils du répartiteur pour macOS/Linux et Windows.
+Décompressez le SDK, qui regroupe les outils Dispatcher pour macOS/Linux et Windows.
 
-**Pour macOS/Linux**, rendez l’artefact de l’outil de répartiteur exécutable et exécutez-le. Il extrait automatiquement les fichiers des outils Dispatcher au sein du répertoire dans lequel vous l’avez stocké (où `version` est la version des outils Dispatcher).
+**Pour macOS/Linux**, rendez l’artefact de l’outil Dispatcher exécutable et exécutez-le. Il extrait automatiquement les fichiers des outils Dispatcher au sein du répertoire dans lequel vous l’avez stocké (où `version` est la version des outils Dispatcher).
 
 ```bash
 $ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
@@ -191,13 +191,13 @@ Extension métacaractère d’hôte par défaut adaptée à un projet standard. 
 
 Les sections ci-dessous décrivent comment valider localement la configuration afin qu’elle puisse franchir le niveau de qualité associé dans Cloud Manager lors du déploiement d’une version interne.
 
-## Validation locale des directives prises en charge dans la configuration du répartiteur {#local-validation-of-dispatcher-configuration}
+## Validation locale des directives prises en charge dans la configuration Dispatcher {#local-validation-of-dispatcher-configuration}
 
 L’outil de validation est disponible dans le SDK à l’emplacement `bin/validator` sous forme de fichier binaire Mac OS, Linux ou Windows, ce qui permet aux clients d’exécuter la même validation que celle effectuée par Cloud Manager lors de la création et du déploiement d’une version.
 
 Il est appelé comme suit : `validator full [-d folder] [-w allowlist] zip-file | src folder`
 
-L&#39;outil vérifie que la configuration du répartiteur utilise les directives appropriées prises en charge par AEM en tant que service Cloud en analysant tous les fichiers avec le modèle `conf.d/enabled_vhosts/*.vhost`. Les directives autorisées dans les fichiers de configuration Apache peuvent être répertoriées en exécutant la commande de liste autorisée du programme de validation :
+L’outil confirme que la configuration Dispatcher utilise les directives appropriées prises en charge par AEM As a Cloud Service en analysant tous les fichiers présentant le motif `conf.d/enabled_vhosts/*.vhost`. Les directives autorisées dans les fichiers de configuration Apache peuvent être répertoriées en exécutant la commande de liste autorisée du programme de validation :
 
 ```
 $ validator allowlist
@@ -347,11 +347,11 @@ Ce message indique que votre configuration présente la disposition version 1 o
 configuration Apache complète et des fichiers avec des préfixes `ams_`. Bien que cette fonctionnalité soit toujours prise en charge
 pour la rétrocompatibilité, vous devez passer à la nouvelle mise en page.
 
-## Validation locale de la syntaxe de configuration du répartiteur afin que le httpd d’apache puisse début {#local-validation}
+## Validation locale de la syntaxe de configuration Dispatcher afin qu’Apache httpd puisse démarrer {#local-validation}
 
-Une fois qu&#39;il a été établi que la configuration du module répartiteur inclut uniquement les directives prises en charge, vous devez vérifier que la syntaxe est correcte afin qu&#39;apache puisse se début. Pour ce faire, le docker doit être installé localement. Et notez qu&#39;il n&#39;est pas nécessaire que AEM fonctionne.
+Une fois qu’il a été établi que la configuration du module Dispatcher inclut uniquement les directives prises en charge, vous devez vérifier que la syntaxe est correcte afin qu’Apache puisse démarrer. Pour ce faire, Docker doit être installé localement. Il n’est pas nécessaire qu’AEM soit en cours d’exécution.
 
-Utilisez le script `validate.sh` comme indiqué ci-dessous :
+Utilisez le script `validate.sh` comme indiqué ci-dessous :
 
 ```
 $ validate.sh src/dispatcher
@@ -372,19 +372,19 @@ Syntax OK
 Phase 2 finished
 ```
 
-Le script effectue les opérations suivantes :
+Le script effectue les opérations suivantes :
 
-1. Il exécute le validateur de la section précédente pour s&#39;assurer que seules les directives prises en charge sont incluses. Si la configuration n’est pas valide, le script échoue.
-2. Il exécute le `httpd -t command` pour tester si la syntaxe est correcte de telle sorte qu&#39;apache httpd puisse début. En cas de réussite, la configuration doit être prête pour le déploiement.
+1. Il exécute le programme de validation de la section précédente pour s’assurer que seules les directives prises en charge soient incluses. Si la configuration n’est pas valide, le script échoue.
+2. Il exécute la `httpd -t command` pour tester si la syntaxe est correcte de sorte qu’Apache httpd puisse démarrer. En cas de réussite, la configuration doit être prête pour le déploiement..
 3. Vérifie que le sous-ensemble des fichiers de configuration du SDK du répartiteur, qui sont censés être immuables comme décrit dans la section [Structure de fichiers](#file-structure), n&#39;a pas été modifié. Il s’agit d’une nouvelle vérification, introduite avec AEM SDK version v2021.1.4738 qui inclut également Dispatcher Tools version 2.0.36. Avant cette mise à jour, les clients auraient pu supposer à tort que toute modification locale du SDK de ces fichiers immuables serait également appliquée à l’environnement Cloud.
 
-Lors d’un déploiement de Cloud Manager, la vérification `httpd -t syntax` sera également exécutée et toute erreur sera incluse dans le journal de Cloud Manager `Build Images step failure`.
+Lors d’un déploiement de Cloud Manager, la vérification `httpd -t syntax` est également exécutée et toute erreur est incluse dans le journal `Build Images step failure` de Cloud Manager.
 
 ## Test local de votre configuration Apache et Dispatcher {#testing-apache-and-dispatcher-configuration-locally}
 
-Il est également possible de tester localement votre configuration Apache et Dispatcher. Il nécessite l&#39;installation locale du docker et votre configuration pour réussir la validation comme décrit ci-dessus.
+Il est également possible de tester localement votre configuration Apache et Dispatcher. Cela nécessite que Docker soit installé localement et que votre configuration réussisse la validation comme décrit ci-dessus.
 
-Exécutez l&#39;outil de validation (notez qu&#39;il est différent de `validator.sh` mentionné plus haut) en utilisant le paramètre `-d` qui génère un dossier avec tous les fichiers de configuration du répartiteur. Exécutez ensuite le script `docker_run.sh`, en transmettant ce dossier en tant qu’argument. En indiquant le numéro de port (ici : 8080) pour exposer le point de terminaison du répartiteur, un conteneur Docker est démarré, exécutant le répartiteur avec votre configuration.
+Exécutez l’outil de validation (notez qu’il est différent de `validator.sh` mentionné plus haut) en utilisant le paramètre `-d` qui génère un dossier avec tous les fichiers de configuration de Dispatcher. Exécutez ensuite le script `docker_run.sh` en transmettant ce dossier en tant qu’argument. En indiquant le numéro de port (ici : 8080) pour exposer le point d’entrée de Dispatcher, un conteneur Docker est démarré et exécute Dispatcher avec votre configuration.
 
 ```
 $ validator full -d out src/dispatcher
@@ -403,7 +403,7 @@ Dispatcher démarre alors dans un conteneur avec son serveur principal pointant 
 
 ## Débogage de la configuration Apache et Dispatcher {#debugging-apache-and-dispatcher-configuration}
 
-La stratégie suivante peut être utilisée pour augmenter la sortie du journal pour le module répartiteur et voir les résultats de l&#39;évaluation `RewriteRule` dans les environnements locaux et les  de cloud.
+La stratégie suivante peut être utilisée afin d’augmenter la sortie du journal pour le module Dispatcher et de voir les résultats de l’évaluation `RewriteRule` dans les environnements locaux et cloud.
 
 Les niveaux de journal de ces modules sont définis par les variables `DISP_LOG_LEVEL` et `REWRITE_LOG_LEVEL`. Ils peuvent être définis dans le fichier `conf.d/variables/global.vars`. Sa partie pertinente est la suivante :
 
@@ -429,9 +429,9 @@ Les niveaux de journal de ces modules sont définis par les variables `DISP_LOG_
 # Define REWRITE_LOG_LEVEL Warn
 ```
 
-Lorsque le répartiteur est exécuté localement, les journaux sont imprimés directement sur la sortie terminal. La plupart du temps, vous souhaitez que ces journaux soient dans DEBUG, ce qui peut être fait en transmettant le niveau de débogage comme paramètre lors de l&#39;exécution de Docker. Par exemple : `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
+Lors de l’exécution locale de Dispatcher, les journaux sont directement imprimés dans la sortie du terminal. La plupart du temps, vous souhaitez que ces journaux soient en mode DEBUG, ce qui peut être réalisé en transmettant le niveau Debug comme paramètre lors de l’exécution de Docker. Par exemple : `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
 
-Les journaux des environnements cloud sont exposés par le biais du service de journalisation disponible dans Cloud Manager.
+Les journaux des environnements cloud sont exposés par le biais du service de journalisation disponible dans Cloud Manager.
 
 ## Différentes configurations Dispatcher par environnement {#different-dispatcher-configurations-per-environment}
 
