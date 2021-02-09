@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '1829'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
-# Visionneuses à 360°{#spin-sets}
+# Visionneuses à 360 {#spin-sets}
 
 Une visionneuse à 360° simule l’action consistant à faire pivoter un objet pour l’examiner. Les visionneuses à 360° permettent de voir des éléments depuis tous les angles, révélant les détails visuels clés depuis chaque angle.
 
@@ -22,19 +22,19 @@ Les visionneuses à 360° sont désignées par une bannière contenant le mot **
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’interface utilisateur Ressources, voir [Gestion des ressources à l’aide de l’interface utilisateur tactile](/help/assets/manage-digital-assets.md) et l’appliquer à un nouveau dossier dans lequel vos fichiers de visionneuse d’images seront téléchargés.
+>Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources à l’aide de l’interface utilisateur tactile](/help/assets/manage-digital-assets.md) et l’appliquer à un nouveau dossier dans lequel vos ressources de visionneuse d’images seront chargées.
 
-## Démarrage rapide : Visionneuse à 360°   {#quick-start-spin-sets}
+## Démarrage rapide : Visionneuse à 360° {#quick-start-spin-sets}
 
 Pour démarrer rapidement, procédez comme suit :
 
-1. Facultatif. [Créez un ](/help/assets/dynamic-media/batch-set-presets-dm.md) paramètre prédéfini d’ensemble par lot et appliquez-le à un nouveau dossier de ressources.
+1. Facultatif. [Créez un paramètre prédéfini d’ensemble par lot](/help/assets/dynamic-media/batch-set-presets-dm.md) et appliquez-le à un nouveau dossier de ressources.
 
    Un paramètre prédéfini d’ensemble par lot peut vous aider à automatiser la création de votre visionneuse à 360°.
 
    >[!IMPORTANT]
    >
-   > Les ensembles par lots sont créés par IPS (Image Production System) dans le cadre de l’assimilation des ressources.
+   >Les ensembles par lots sont créés par IPS (Image Production System) dans le cadre de l’assimilation des ressources.
 
 1. [Chargez les images pour plusieurs vues.](#uploading-assets-for-spin-sets)
 
@@ -74,9 +74,9 @@ Pour démarrer rapidement, procédez comme suit :
 
 Le cas échéant, vous pouvez [modifier les visionneuses à 360°](#editing-spin-sets). Vous pouvez, en outre, afficher et modifier les [propriétés de la visionneuse à 360°](/help/assets/manage-digital-assets.md#editing-properties).
 
-## Téléchargement de fichiers pour les visionneuses à 360° {#uploading-assets-for-spin-sets}
+## Chargement de ressources pour les visionneuses à 360° {#uploading-assets-for-spin-sets}
 
-Au minimum, vous avez besoin de 8 à 12 prises de vue d’un élément pour une visionneuse à 360° unidimensionnelle. Les prises de vue doivent être réalisées à intervalles réguliers pour donner l&#39;impression que l&#39;objet tourne et est retourné. Par exemple, si une visionneuse à une dimension inclut 12 prises de vue, faites pivoter l’élément de 30° (360/12) pour chaque prise de vue.
+Au minimum, vous avez besoin de 8 à 12 prises de vue d’un élément pour une visionneuse à 360° unidimensionnelle. Les prises de vue doivent être effectuées à intervalles réguliers afin de donner l’impression que l’élément pivote et s’incline. Par exemple, si une visionneuse unidimensionnelle inclut 12 prises de vue, faites pivoter l’élément de 30° (360/12) pour chacune d’elles.
 
 Vous pouvez charger des images pour les visionneuses à 360° comme vous le [feriez pour n’importe quelle autre ressource dans AEM Assets](/help/assets/manage-digital-assets.md).
 
@@ -90,7 +90,7 @@ Vous trouverez ci-dessous des bonnes pratiques relatives aux images de la vision
 * Assurez-vous que les détails du produit sont bien éclairés et que leur mise au point est nette.
 * Utilisez un mannequin ou un modèle pour la prise de vue d’articles de mode. Souvent, le mannequin est complètement masqué (en utilisant un mannequin transparent) ou bien un mannequin stylisé est présenté dans l’image. Vous pouvez créer une visionneuse à 360° « sur modèle » en définissant le nombre d’angles. Marquez chaque angle avec du ruban adhésif sur le sol afin de guider le modèle à regarder dans la direction de chaque prise de vue.
 
-## Création d’une visionneuse à 360°   {#creating-spin-sets}
+## Création d’une visionneuse à 360°  {#creating-spin-sets}
 
 Cette section décrit comment créer des visionneuses à 360°.
 
@@ -147,9 +147,9 @@ Cette section décrit comment créer des visionneuses à 360°.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**. La visionneuse à 360° nouvellement créée apparaît dans le dossier dans lequel vous l’avez créée.
 
-## Affichage de visionneuses à 360°   {#viewing-spin-sets}
+## Affichage de visionneuses à 360°  {#viewing-spin-sets}
 
-Vous pouvez créer des visionneuses à 360° dans l’interface utilisateur ou automatiquement à l’aide des [paramètres prédéfinis d’ensemble par lot](/help/assets/dynamic-media/config-dm.md). (Notez toutefois que les visionneuses créées à l’aide de paramètres prédéfinis d’ensemble par lot *ne s’affichent pas* dans l’interface utilisateur.) Vous pouvez accéder aux visionneuses créées au moyen de paramètres prédéfinis d’ensemble par lot de trois manières différentes. (Ces méthodes sont disponibles même si vous avez créé les visionneuses à 360° dans l’interface utilisateur.)
+Vous pouvez créer des visionneuses à 360° dans l’interface utilisateur ou automatiquement à l’aide des [paramètres prédéfinis d’ensemble par lot](/help/assets/dynamic-media/config-dm.md). Notez toutefois que les visionneuses créées à l’aide de paramètres prédéfinis d’ensemble par lot *ne s’affichent pas* dans l’interface utilisateur. Vous pouvez accéder aux visionneuses créées au moyen de paramètres prédéfinis d’ensemble par lot de trois manières différentes. (Ces méthodes sont disponibles même si vous avez créé les visionneuses à 360° dans l’interface utilisateur.)
 
 >[!NOTE]
 >
@@ -171,7 +171,7 @@ Vous pouvez créer des visionneuses à 360° dans l’interface utilisateur ou 
 
    ![chlimage_1-158](assets/chlimage_1-386.png)
 
-## Modification d’une visionneuse à 360°{#editing-spin-sets}
+## Modification d’une visionneuse à 360 {#editing-spin-sets}
 
 Vous pouvez effectuer diverses tâches de modification sur les visionneuses à 360°, notamment :
 
@@ -206,10 +206,10 @@ Si vous supprimez l’image qu’AEM utilise pour la miniature en la remplaçant
 
 1. Lorsque vous avez terminé les modifications, cliquez sur **[!UICONTROL Enregistrer]**.
 
-## Aperçu d’une visionneuse à 360°   {#previewing-spin-sets}
+## Aperçu d’une visionneuse à 360°  {#previewing-spin-sets}
 
 Voir aussi [Aperçu des ressources](/help/assets/dynamic-media/previewing-assets.md).
 
-## Publication d’une visionneuse à 360°   {#publishing-spin-sets}
+## Publication d’une visionneuse à 360°  {#publishing-spin-sets}
 
 Voir [Publication de ressources](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
