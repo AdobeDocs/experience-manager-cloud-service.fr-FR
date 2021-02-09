@@ -1,16 +1,16 @@
 ---
 title: Configuration de Dynamic Media
-description: Pour configurer Dynamic Media, vous devez configurer Dynamic Media et gérer les paramètres prédéfinis d’image et de visionneuse.
+description: Pour installer Dynamic Media, vous devez configurer Dynamic Media et gérer les paramètres prédéfinis d’image et de visionneuse.
 translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '175'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
 
-# Configuration de Dynamic Media   {#setting-up-dynamic-media}
+# Configuration de Dynamic Media {#setting-up-dynamic-media}
 
 [Dynamic Media](https://www.adobe.com/fr/marketing/experience-manager-assets/dynamic-media.html) facilite la gestion des ressources visuelles de marchandisage et de marketing à la demande, automatiquement dimensionnées pour une utilisation sur le web, les appareils mobiles et les réseaux sociaux. À partir d’un ensemble de ressources de sources originales, Dynamic Media génère et diffuse en temps réel plusieurs variantes d’un même contenu enrichi par le biais de son réseau mondial et évolutif, aux performances optimisées.
 
@@ -40,4 +40,4 @@ Voir aussi les rubriques suivantes :
 >
 >**Si vous effectuez une mise à niveau :**
 >
->* Une fois que le Experience Manager est en cours d’exécution, Dynamic Media est automatiquement activé pour tout fichier que vous téléchargez (sauf s’il a été explicitement désactivé par votre administrateur système). Si vous utilisez une instance mise à niveau de Experience Manager et que vous découvrez Dynamic Media, vous devrez peut-être retraiter vos ressources pour les activer Dynamic Media.
+>* Après la mise en service d’Experience Manager, toutes les ressources que vous chargez sont automatiquement activées pour Dynamic Media (à moins que cela n’ait été explicitement désactivé par votre administrateur système). Si vous utilisez une instance mise à niveau d’Experience Manager et que Dynamic Media est nouveau pour vous, vous devrez peut-être retraiter vos ressources pour les rendre compatibles avec Dynamic Media.
