@@ -1,22 +1,22 @@
 ---
-title: Notes de mise à jour de Cloud Manager en AEM version 2020.5.0 de Cloud Service
-description: Notes de mise à jour de Cloud Manager en AEM version 2020.5.0 de Cloud Service
+title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2020.5.0
+description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2020.5.0
 translation-type: tm+mt
 source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
 workflow-type: tm+mt
 source-wordcount: '230'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
 
-# Notes de mise à jour de Cloud Manager dans Adobe Experience Manager en tant que Cloud Service 2020.5.0 {#release-notes}
+# Notes de mise à jour de Cloud Manager dans Adobe Experience Manager as a Cloud Service version 2020.5.0 {#release-notes}
 
-Cette page présente les Notes de mise à jour de Cloud Manager en AEM en tant que Cloud Service 2020.5.0.
+Cette page contient les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2020.5.0.
 
 ## Date de publication {#release-date}
 
-La date de publication de Cloud Manager en AEM Cloud Service 2020.5.0 est le 07 mai 2020.
+La date de publication de Cloud Manager dans AEM as a Cloud Service 2020.5.0 est le 7 mai 2020.
 
 ## Nouveautés {#whats-new-cloud-manager}
 
