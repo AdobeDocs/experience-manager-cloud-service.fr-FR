@@ -6,14 +6,14 @@ translation-type: tm+mt
 source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
 workflow-type: tm+mt
 source-wordcount: '829'
-ht-degree: 85%
+ht-degree: 96%
 
 ---
 
 
 # Présentation de l’ingestion et du traitement des ressources à l’aide des microservices de ressources {#asset-microservices-overview}
 
-Adobe Experience Manager en tant que [!DNL Cloud Service] fournit une méthode native de cloud pour exploiter les applications et les fonctionnalités Experience Manager. L’ingestion et le traitement des ressources, basés sur la technologie des microservices de ressources, constituent deux points forts de cette nouvelle architecture. Les microservices de ressources offrent un traitement évolutif et résilient des ressources à l’aide des services cloud. Adobe gère les services cloud pour un traitement optimal des différents types de ressources et des options de traitement. Les principaux avantages des microservices de ressources, natifs dans le cloud, sont les suivants :
+Adobe Experience Manager as a [!DNL Cloud Service] permet d’exploiter, en mode natif, les applications et fonctionnalités d’Experience Manager. L’ingestion et le traitement des ressources, basés sur la technologie des microservices de ressources, constituent deux points forts de cette nouvelle architecture. Les microservices de ressources offrent un traitement évolutif et résilient des ressources à l’aide des services cloud. Adobe gère les services cloud pour un traitement optimal des différents types de ressources et des options de traitement. Les principaux avantages des microservices de ressources, natifs dans le cloud, sont les suivants :
 
 * Architecture évolutive qui permet un traitement transparent pour les opérations gourmandes en ressources.
 * Indexation et extractions de texte efficaces qui n’affectent pas les performances de vos environnements Experience Manager.
@@ -50,14 +50,14 @@ Il s’agit du flux d’ingestion et de traitement de base des ressources. S’i
 
 L’ingestion et le flux de traitement sont des concepts clés de l’architecture des microservices de ressources d’Experience Manager.
 
-* **Accès** binaire direct : Les ressources sont transportées (et téléchargées) dans le magasin binaire Cloud une fois configurées pour les environnements Experience Manager, puis  [!DNL Experience Manager]les microservices de ressources, et finalement les clients ont un accès direct à ces ressources pour effectuer leur travail. Cela réduit la charge sur les réseaux et la duplication des binaires stockés.
-* **Traitement externalisé**[!DNL Experience Manager] : le traitement des ressources s’effectue en dehors de l’environnement , d’où une économie des ressources (processeur et mémoire), afin de fournir des fonctionnalités de gestion des ressources numériques essentielles et de permettre aux utilisateurs finaux d’effectuer des tâches interactives sur le système.
+* **Accès binaire direct** : les ressources sont transportées (et chargées) dans l’espace de stockage des binaires, une fois la configuration effectuée pour les environnements Experience Manager. Elles sont ensuite chargées dans [!DNL Experience Manager], puis dans les microservices de ressources. Enfin, les clients y ont accès directement pour mener à bien leur travail. Cela réduit la charge sur les réseaux et la duplication des binaires stockés.
+* **Traitement externalisé** : le traitement des ressources s’effectue en dehors de l’environnement [!DNL Experience Manager], d’où une économie des ressources (processeur et mémoire), afin de fournir des fonctionnalités de gestion des ressources numériques essentielles et de permettre aux utilisateurs finaux d’effectuer des tâches interactives sur le système.
 
 ## Chargement de ressources avec accès direct aux binaires {#asset-upload-with-direct-binary-access}
 
-Les clients Experience Manager, qui font partie de l’offre de produit, prennent tous en charge le chargement avec un accès direct aux binaires par défaut. Il s’agit notamment du téléchargement à l’aide de l’interface Web, du lien d’Adobe des ressources et de l’application de bureau [!DNL Experience Manager].
+Les clients Experience Manager, qui font partie de l’offre de produit, prennent tous en charge le chargement avec un accès direct aux binaires par défaut. Cela comprend notamment le chargement au moyen de l’interface web, d’Adobe Asset Link et de l’application de bureau [!DNL Experience Manager].
 
-Vous pouvez utiliser des outils de téléchargement personnalisés qui fonctionnent directement avec les API HTTP [!DNL Experience Manager]. Vous pouvez soit utiliser directement ces API, soit utiliser et étendre les projets Open Source suivants qui implémentent le protocole de chargement :
+Vous pouvez utiliser des outils de chargement personnalisés qui fonctionnent directement avec les API HTTP d’[!DNL Experience Manager]. Vous pouvez soit utiliser directement ces API, soit utiliser et étendre les projets Open Source suivants qui implémentent le protocole de chargement :
 
 * [Bibliothèque de chargement Open Source](https://github.com/adobe/aem-upload)
 * [Outil de ligne de commande Open Source](https://github.com/adobe/aio-cli-plugin-aem)
@@ -68,7 +68,7 @@ Pour plus d’informations, voir [Chargement de ressources](add-assets.md).
 
 Les microservices de ressources configurables répondent généralement à tous les besoins de la plupart des clients en matière de traitement des ressources. Il est cependant des cas où un traitement supplémentaire peut s’avérer nécessaire. C’est notamment le cas lorsque les ressources doivent être traitées sur la base d’informations provenant d’autres systèmes par le biais d’intégrations. Des workflows de post-traitement personnalisés peuvent alors être utilisés.
 
-Les workflows de post-traitement sont des modèles de flux de travaux [!DNL Experience Manager] standard, créés et gérés dans [!DNL Experience Manager] l’éditeur de flux de travaux. Les clients peuvent configurer les workflows pour effectuer d’autres étapes de traitement sur un fichier. Ils peuvent, par exemple, utiliser des étapes de workflow prêtes à l’emploi et des workflows personnalisés.
+Les workflows de post-traitement sont des modèles de workflow [!DNL Experience Manager] standard, créés et gérés dans l’éditeur de processus d’[!DNL Experience Manager]. Les clients peuvent configurer les workflows pour effectuer d’autres étapes de traitement sur un fichier. Ils peuvent, par exemple, utiliser des étapes de workflow prêtes à l’emploi et des workflows personnalisés.
 
 Adobe Experience Manager peut être configuré de manière à déclencher automatiquement les workflows de post-traitement une fois le traitement des ressources terminé.
 
@@ -80,6 +80,6 @@ Adobe Experience Manager peut être configuré de manière à déclencher automa
 >* [Prise en main des microservices de ressources](asset-microservices-configure-and-use.md)
 >* [Formats de fichiers pris en charge](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html)
->* [[!DNL Experience Manager] application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr)
+>* Appli de bureau [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr)
 >* [Documentation Apache Oak sur l’accès binaire direct](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
 
