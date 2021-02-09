@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: b4bc29dbea7a765ff41752d4b680cbbc3df51a0b
 workflow-type: tm+mt
 source-wordcount: '1906'
-ht-degree: 82%
+ht-degree: 92%
 
 ---
 
@@ -28,25 +28,25 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * Le jeton d&#39;accès peut expirer périodiquement, soit après une période spécifique, soit après la mise à niveau de l’environnement Cloud Service. Si le jeton d&#39;accès a expiré, vous ne pourrez pas vous connecter à l’instance du Cloud Service et vous devrez récupérer le nouveau jeton d&#39;accès. L’icône d’état associée à un jeu de migration existant se transforme en nuage rouge et affiche un message lorsque vous le survolez.
 
-* Les utilisateurs et groupes transférés par l’outil de transfert de contenu sont uniquement ceux qui sont requis par le contenu pour satisfaire aux autorisations. Le processus *Extraction* copie l&#39;ensemble `/home` dans le jeu de migration et le processus *Ingestion* copie tous les utilisateurs et groupes référencés dans les listes de contrôle d&#39;accès du contenu migré. Pour mapper automatiquement les utilisateurs et les groupes existants à leurs ID IMS, reportez-vous à la section [Utilisation de l’outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
+* Les utilisateurs et les groupes transférés par l’outil de transfert de contenu sont uniquement ceux qui sont requis en fonction du contenu pour respecter les autorisations. Le processus d’*extraction* copie l’ensemble de `/home` dans le jeu de migration et le processus d’*ingestion* copie tous les utilisateurs et groupes référencés dans les listes de contrôle d’accès du contenu migré. Pour mapper automatiquement les utilisateurs et les groupes existants à leurs ID IMS, reportez-vous à la section [Utilisation de l’outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
 
 * Pendant la phase d’extraction, l’outil de transfert de contenu est exécuté sur une instance source AEM active.
 
-* Après avoir terminé la phase *Extraction* du processus de transfert de contenu et avant de commencer la phase *d&#39;importation* pour ingérer du contenu dans votre AEM en tant que Cloud Service *Stage* ou *Production*, vous devez enregistrer un ticket d&#39;assistance pour informer l&#39;Adobe de votre intention d&#39;exécuter *Production gestion* afin que l&#39;Adobe puisse s&#39;assurer qu&#39;aucune interruption ne se produit pendant le processus *Ingestion*. Vous devrez consigner le ticket de support 1 semaine avant la date *d&#39;importation* prévue. Une fois que vous avez soumis le ticket d&#39;assistance, l&#39;équipe d&#39;assistance vous donnera des conseils sur les étapes suivantes.
-   * Enregistrez un ticket d&#39;assistance avec les détails suivants :
-      * Date exacte et heure estimée (avec votre fuseau horaire) lorsque vous prévoyez de début de la phase *Ingestion*.
-      * Type d’Environnement (Phase ou Production) dans lequel vous prévoyez d’importer des données.
+* Après avoir terminé la phase d’*extraction* du processus de transfert de contenu et avant de commencer la phase d’*ingestion* pour ingérer du contenu dans vos instances d’*évaluation* ou de *production* AEM as a Cloud Service, vous devez enregistrer un ticket d’assistance pour informer Adobe de votre intention d’exécuter *Ingestion* afin qu’Adobe puisse s’assurer qu’aucune interruption ne se produise pendant le processus d’*ingestion*. Vous devrez consigner le ticket de support une semaine avant la date d’*Ingestion* prévue. Une fois que vous aurez soumis le ticket d’assistance, l’équipe d’assistance vous donnera des conseils sur les étapes suivantes.
+   * Enregistrez un ticket d’assistance avec les détails suivants :
+      * Date exacte et heure estimée (avec votre fuseau horaire) lorsque vous prévoyez de lancer la phase d’*ingestion*.
+      * Type d’environnement (évaluation ou production) dans lequel vous prévoyez d’importer des données.
       * ID de programme.
 
-* La *phase d’ingestion* de l’auteur réduira l’ensemble du déploiement de l’auteur. L’auteur AEM ne sera donc pas disponible pendant la totalité du processus d’ingestion. Assurez-vous également qu’aucun pipeline Cloud Manager n’est exécuté pendant que vous exécutez la phase *Ingestion*.
+* La *phase d’ingestion* de l’auteur réduira l’ensemble du déploiement de l’auteur. L’auteur AEM ne sera donc pas disponible pendant la totalité du processus d’ingestion. Assurez-vous également qu’aucun pipeline Cloud Manager n’est exécuté pendant que vous exécutez la phase d’*ingestion*.
 
 
 ## Disponibilité {#availability}
 
-Il est possible de télécharger l’outil de transfert de contenu dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le module par le biais de Package Manager sur votre instance source Adobe Experience Manager (AEM). Veillez à télécharger la dernière version. Pour plus d’informations sur la dernière version, consultez les [Notes de mise à jour](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+Il est possible de télécharger l’outil de transfert de contenu dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le module par le biais du gestionnaire de modules sur votre instance source Adobe Experience Manager (AEM). Veillez à télécharger la dernière version. Pour plus d’informations sur la dernière version, consultez les [Notes de mise à jour](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 >[!NOTE]
->Téléchargez l’outil de transfert de contenu depuis le portail de [distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+>Téléchargez l’outil de transfert de contenu depuis le portail de [distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/fr-FR/aemcloud.html).
 
 ## Exécution de l’outil de transfert de contenu {#running-tool}
 
