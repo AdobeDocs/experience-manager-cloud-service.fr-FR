@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
 workflow-type: tm+mt
 source-wordcount: '1818'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
-# Personnalisation et extensions de fragments de contenu{#customizing-and-extending-content-fragments}
+# Personnalisation et extensions de fragments de contenu {#customizing-and-extending-content-fragments}
 
 Dans Adobe Experience Manager as a Cloud Service, un fragment de contenu étend une ressource standard ; voir :
 
@@ -77,7 +77,7 @@ par exemple, le contenu de l’élément `text` est stocké en tant que proprié
 Hormis le titre et la description, qui ne sont pas considérés comme des métadonnées traditionnelles et sont stockés sur 
 `jcr:content`
 
-#### Emplacement des ressources  {#asset-location}
+#### Emplacement des ressources {#asset-location}
 
 Comme pour les ressources standard, un fragment de contenu est conservé sous :
 
