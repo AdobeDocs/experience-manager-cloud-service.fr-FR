@@ -5,21 +5,21 @@ translation-type: tm+mt
 source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
 workflow-type: tm+mt
 source-wordcount: '2186'
-ht-degree: 78%
+ht-degree: 85%
 
 ---
 
 
-# Variations – création de contenu de fragment{#variations-authoring-fragment-content}
+# Variations – création de contenu de fragment {#variations-authoring-fragment-content}
 
 Les [variations](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sont une fonction importante des fragments de contenu, car elles permettent de créer et de modifier des copies du contenu maître pour une utilisation sur des canaux spécifiques et/ou dans des cas spécifiques.
 
 À partir de l’onglet **variations**, vous pouvez :
 
-* [saisir le contenu](#authoring-your-content) de votre fragment ;,
-* [Créez et gérez ](#managing-variations) des variantes du  **** contenu maître,
+* [saisir le contenu](#authoring-your-content) de votre fragment,
+* [créer et gérer les variations](#managing-variations) du contenu **maître** ;
 
-Vous pouvez effectuer diverses autres actions selon le type de données que vous modifiez ; par exemple :
+Vous pouvez effectuer diverses autres actions selon le type de données que vous modifiez, par exemple :
 
 * [Insertion de ressources visuelles dans votre fragment](#inserting-assets-into-your-fragment) (images)
 
@@ -39,15 +39,15 @@ Vous pouvez effectuer diverses autres actions selon le type de données que vous
 
 ## Création de contenu {#authoring-your-content}
 
-Lorsque vous ouvrez votre fragment de contenu pour le modifier, l’onglet **Variations** est ouvert par défaut. Vous pouvez y saisir le contenu, pour le maître ou toutes les variations de votre choix. Le fragment structuré contient divers champs, de différents types de données, qui ont été définis dans le modèle de contenu.
+Lorsque vous ouvrez votre fragment de contenu pour le modifier, l’onglet **Variations** est ouvert par défaut. Vous pouvez y saisir le contenu, pour le maître ou toutes les variations de votre choix. Le fragment structuré contient différents champs, avec divers types de données, qui ont été définis dans le modèle de contenu.
 
 Vous pouvez :
 
-* effectuer des modifications directement dans l’onglet **Variations** ;
+* effectuer des modifications directement dans l’onglet **Variations**.
 
-   * chaque type de données propose différentes options de modification
+   * Chaque type de données propose différentes options de modification.
 
-* pour les champs **Texte à plusieurs lignes**, vous pouvez également ouvrir l&#39;[éditeur en plein écran](#full-screen-editor) pour :
+* Pour les champs **Plusieurs lignes de texte**, vous pouvez également ouvrir l’[éditeur plein écran](#full-screen-editor) pour :
 
    * sélectionner le [format](#formats) ;
    * voir davantage d’options de modification (pour le format [Texte enrichi](#rich-text)) ;
@@ -59,20 +59,20 @@ Par exemple :
 
 ### Éditeur plein écran {#full-screen-editor}
 
-Lors de la modification d’un champ de texte multiligne, vous pouvez ouvrir l’éditeur en plein écran ; appuyez ou cliquez dans le texte réel, puis sélectionnez l’icône d’action suivante :
+Lors de la modification d’un champ de plusieurs lignes de texte, vous pouvez ouvrir l’éditeur plein écran ; appuyez ou cliquez dans le texte, puis sélectionnez l’icône d’action suivante :
 
-![icône de l’éditeur plein écran](assets/cfm-variations-03.png)
+![Icône de l’éditeur plein écran](assets/cfm-variations-03.png)
 
 L’éditeur de texte en plein écran s’ouvre alors :
 
 ![éditeur plein écran](assets/cfm-variations-fullscreentexteditor.png)
 
-L’éditeur de texte en plein écran fournit les éléments suivants :
+L’éditeur de texte en plein écran fournit :
 
 * l’accès à diverses [actions](#actions) ;
 * selon le [format](#formats), des options de mise en forme supplémentaires ([texte enrichi](#rich-text)).
 
-### Actions   {#actions}
+### Actions {#actions}
 
 Les actions suivantes sont également disponibles (pour tous les [formats](#formats)) lorsque l’éditeur plein écran (c’est-à-dire pour le texte sur plusieurs lignes) est ouvert :
 
@@ -153,14 +153,14 @@ Vous pouvez également ouvrir l’éditeur plein écran pour accomplir d’autre
 >
 >Si vous basculez entre **Texte enrichi** et **Texte (Markdown)**, des effets inattendus peuvent apparaître avec les Blocs de citations et Blocs de code, dans la mesure où le traitement de ces deux formats peut être différent.
 
-### Références de fragments {#fragment-references}
+### Références à un fragment {#fragment-references}
 
 Si le modèle de fragment de contenu contient des références à un fragment, les auteurs de fragments peuvent avoir d’autres options :
 
 * [Modifier le fragment de contenu](#fragment-references-edit-content-fragment)
 * [Nouveau fragment du contenu](#fragment-references-new-content-fragment)
 
-![Références de fragments](assets/cfm-variations-12.png)
+![Références à un fragment](assets/cfm-variations-12.png)
 
 #### Modifier le fragment de contenu {#fragment-references-edit-content-fragment}
 
@@ -251,29 +251,29 @@ Pour annoter un fragment :
 
 1. Ouvrez l’éditeur plein écran.
 
-1. L&#39;icône **Annoter** est disponible dans la barre d&#39;outils supérieure. Vous pouvez sélectionner du texte si nécessaire.
+1. L’icône **Annoter** est disponible dans la barre d’outils supérieure. Vous pouvez sélectionner du texte si nécessaire.
 
    ![annoter](assets/cfm-variations-07.png)
 
 1. Une boîte de dialogue s’ouvre. Vous pouvez y saisir votre annotation.
 
-   ![annoter](assets/cfm-variations-07a.png)
+   ![Annoter](assets/cfm-variations-07a.png)
 
 1. Sélectionnez **Appliquer** dans la boîte de dialogue.
 
-   ![annoter](assets/cfm-variations-annotations-apply-icon.png)
+   ![Annoter](assets/cfm-variations-annotations-apply-icon.png)
 
-   Si l&#39;annotation a été appliquée au texte sélectionné, ce texte reste en surbrillance.
+   Si l’annotation a été appliquée au texte sélectionné, ce texte reste en surbrillance.
 
-   ![annoter](assets/cfm-variations-07b.png)
+   ![Annoter](assets/cfm-variations-07b.png)
 
-1. Fermez l’éditeur plein écran, les annotations sont toujours mises en surbrillance. Si cette option est sélectionnée, une boîte de dialogue s’ouvre pour vous permettre de modifier davantage l’annotation.
+1. Fermez l’éditeur plein écran, les annotations restent en surbrillance. Si cette option est sélectionnée, une boîte de dialogue apparaît pour vous permettre de modifier encore l’annotation.
 
 1. Sélectionnez **Enregistrer**.
 
-1. Fermez l’éditeur plein écran, les annotations sont toujours mises en surbrillance. Si cette option est sélectionnée, une boîte de dialogue s’ouvre pour vous permettre de modifier davantage l’annotation.
+1. Fermez l’éditeur plein écran, les annotations restent en surbrillance. Si cette option est sélectionnée, une boîte de dialogue apparaît pour vous permettre de modifier encore l’annotation.
 
-   ![annoter](assets/cfm-variations-07c.png)
+   ![Annoter](assets/cfm-variations-07c.png)
 
 ### Affichage, modification et suppression d’annotations {#viewing-editing-deleting-annotations}
 
@@ -312,8 +312,8 @@ Il existe différentes méthodes pour ajouter des [images](/help/assets/content-
 
 1. Dans la boîte de dialogue, vous pouvez effectuer l’une des opérations suivantes :
 
-   * Accéder à la ressource souhaitée dans la gestion des actifs numériques
-   * Rechercher la ressource dans la gestion des actifs numériques
+   * Accéder à la ressource souhaitée dans la gestion des actifs numériques (DAM)
+   * Rechercher la ressource dans la gestion des actifs numériques (DAM)
 
    Une fois la ressource souhaitée localisée, sélectionnez-la en cliquant sur la miniature.
 
@@ -361,7 +361,7 @@ Il existe différentes méthodes pour ajouter des [images](/help/assets/content-
    * **Marquage** : la référence demeurera.
 
 
-## Gestion des variations   {#managing-variations}
+## Gestion des variations  {#managing-variations}
 
 ### Création d’une variation {#creating-a-variation}
 
@@ -373,19 +373,19 @@ Pour créer une variation, procédez comme suit :
 1. Sélectionnez **Variations** dans la barre d’icônes du panneau latéral.
 1. Sélectionnez **Créer une variation**.
 1. Une boîte de dialogue s’ouvre. Spécifiez le **titre** et la **description** correspondant à la nouvelle variante.
-1. Sélectionnez **Ajouter** et le **Gabarit**[ du fragment sera copié dans la nouvelle variation, qui est maintenant ouverte pour modification](#editing-a-variation).
+1. Sélectionnez **Ajouter** et le **Gabarit** du fragment sera copié dans la nouvelle variation, qui est maintenant ouverte pour [modification](#editing-a-variation).
 
    >[!NOTE]
    Lors de la création d’une variation, c’est toujours le **Maître** qui est copié et non pas la variation ouverte.
 
-### Modification d’une variation   {#editing-a-variation}
+### Modification d’une variation  {#editing-a-variation}
 
 Vous pouvez apporter des modifications au contenu de la variation après avoir :
 
 * [Créé votre variation](#creating-a-variation).
 * Ouvert un fragment existant, puis sélectionné la variation requise dans le panneau latéral.
 
-![modification d’une variation](assets/cfm-variations-10.png)
+![Modification d’une variation](assets/cfm-variations-10.png)
 
 ### Modification du nom d’une variation {#renaming-a-variation}
 
@@ -402,7 +402,7 @@ Pour renommer une variation existante :
 >[!NOTE]
 Cette opération concerne uniquement le **Titre** de la variation.
 
-### Suppression d’une variation   {#deleting-a-variation}
+### Suppression d’une variation  {#deleting-a-variation}
 
 Pour supprimer une variation existante :
 
@@ -441,7 +441,7 @@ Le transfert des modifications n’est pas proposé *entre une variation et le *
 
 1. Le maître et la variation seront affichés côte à côte :
 
-   * le contenu ajouté figure en vert  (ajouté à la variation) ;
+   * le contenu ajouté figure en vert (ajouté à la variation) ;
    * le contenu supprimé (de la variation) figure en rouge.
    * le texte remplacé apparaît en bleu
 
