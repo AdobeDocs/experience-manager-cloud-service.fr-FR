@@ -2,7 +2,7 @@
 title: Mise en cache dans AEM as a Cloud Service
 description: 'Mise en cache dans AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: a02e035a842e7c633aaa926d0ab092b2c7aed5cb
+source-git-commit: d4b7aed89e587750b96b13d07a9252ecabee6c03
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 95%
@@ -34,7 +34,7 @@ Cela peut s’avérer utile, par exemple, lorsque la logique de votre entreprise
 * Peut être remplacé à un niveau plus détaillé par les directives mod_headers apache suivantes :
 
    ```
-   <LocationMatch "\.(html)$">
+   <LocationMatch "^/content/.*\.(html)$">
         Header set Cache-Control "max-age=200"
         Header set Age 0
    </LocationMatch>
@@ -43,7 +43,7 @@ Cela peut s’avérer utile, par exemple, lorsque la logique de votre entreprise
    Faites preuve de prudence lorsque vous définissez des en-têtes de contrôle du cache global ou ceux qui correspondent à une expression régulière (regex) large afin qu’ils ne soient pas appliqués au contenu que vous souhaitez peut-être garder confidentiel. Envisagez l’utilisation de plusieurs directives pour vous assurer que les règles sont appliquées de manière extrêmement détaillée. Ceci étant dit, AEM as a Cloud Service va supprimer l’en-tête de cache s’il détecte qu’il a été appliqué à un élément considéré comme impossible à mettre en cache par le Dispatcher, comme décrit dans la documentation du Dispatcher. Pour forcer AEM à toujours appliquer la mise en cache, vous pouvez ajouter l’option « always » comme suit :
 
    ```
-   <LocationMatch "\.(html)$">
+   <LocationMatch "^/content/.*\.(html)$">
         Header always set Cache-Control "max-age=200"
         Header set Age 0
    </LocationMatch>
@@ -59,7 +59,7 @@ Cela peut s’avérer utile, par exemple, lorsque la logique de votre entreprise
 * Pour empêcher la mise en cache d’un contenu spécifique, définissez l’en-tête Cache-Control sur *private*. Par exemple, les éléments suivants empêcheraient la mise en cache du contenu html situé sous un répertoire nommé **myfolder** :
 
    ```
-      <LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
+      <LocationMatch "/content/myfolder/.*\.(html)$">.  // replace with the right regex
       Header set Cache-Control “private”
      </LocationMatch>
    ```
@@ -78,7 +78,7 @@ Cela peut s’avérer utile, par exemple, lorsque la logique de votre entreprise
 * Peuvent être définis à un niveau de détail supérieur par les directives `mod_headers` apache suivantes :
 
    ```
-      <LocationMatch "^\.*.(jpeg|jpg)$">
+      <LocationMatch "^/content/.*\.(jpeg|jpg)$">
         Header set Cache-Control "max-age=222"
         Header set Age 0
       </LocationMatch>
