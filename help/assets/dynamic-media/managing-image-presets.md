@@ -2,10 +2,10 @@
 title: Gestion des paramètres d’image prédéfinis
 description: Découvrez les paramètres d’image prédéfinis, et comment les créer, les modifier et les gérer..
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '3607'
-ht-degree: 98%
+source-wordcount: '3647'
+ht-degree: 96%
 
 ---
 
@@ -374,7 +374,8 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
      <li><strong>Appliquer à</strong> : détermine si l’accentuation s’applique à chaque couleur ou à la luminosité.</li>
     </ul>
     <div>
-      L’accentuation est décrite dans <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/sharpening_images.pdf">Accentuation des images</a>.
+      L’accentuation est décrite dans la section
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media">Utilisation de l’accentuation des images avec AEM vidéo Dynamic Media</a>, dans <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#master-files">Accentuation d’une image</a> rubrique d’aide en ligne et dans <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Meilleures pratiques pour l’accentuation des images dans Dynamic Media Classic</a> PDF téléchargeable.
     </div> </td>
   </tr>
   <tr>
