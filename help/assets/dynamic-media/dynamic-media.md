@@ -2,23 +2,23 @@
 title: Utilisation de Dynamic Media
 description: Découvrez comment utiliser Dynamic Media pour diffuser des ressources pour une utilisation sur le web, les appareils mobiles et les réseaux sociaux.
 translation-type: tm+mt
-source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '395'
 ht-degree: 100%
 
 ---
 
 
-# Utilisation de Dynamic Media   {#working-with-dynamic-media}
+# Utilisation de Dynamic Media  {#working-with-dynamic-media}
 
 [Dynamic Media](https://www.adobe.com/fr/marketing/experience-manager-assets/dynamic-media.html) fournit des ressources visuelles de marchandisage et de marketing à la demande, automatiquement dimensionnées pour une utilisation sur le web, les appareils mobiles et les réseaux sociaux. À partir d’un ensemble de ressources de sources originales, Dynamic Media génère et diffuse en temps réel plusieurs variantes d’un même contenu enrichi par le biais de son réseau mondial et évolutif, aux performances optimisées.
 
 Dynamic Media permet un affichage interactif, notamment le zoom, la rotation à 360° et la vidéo. Dynamic Media incorpore de manière unique les workflows de la gestion des ressources numériques d’Adobe Experience Manager pour simplifier et rationaliser le processus de gestion des campagnes numériques.
 
->[!NOTE]
+<!-- >[!NOTE]
 >
->Un article de la communauté (en anglais) intitulé [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/fr/experience-manager/using/aem_dynamic_media.html) porte sur l’utilisation d’Adobe Experience Manager et de Dynamic Media.
+>A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
 
 ## Tâches que vous pouvez effectuer avec Dynamic Media   {#what-you-can-do-with-dynamic-media}
 
