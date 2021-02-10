@@ -2,10 +2,10 @@
 title: Intégration des visionneuses Dynamic Media à Adobe Analytics et Adobe Launch
 description: L’extension Visionneuses Dynamic Media pour Adobe Launch, ainsi que la version 5.13 des Visionneuses Dynamic Media, permettent aux clients de Dynamic Media, Adobe Analytics et Adobe Launch d’utiliser des événements et des données spécifiques aux visionneuses Dynamic Media dans leur configuration Adobe Launch.
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '6628'
-ht-degree: 97%
+source-wordcount: '6626'
+ht-degree: 96%
 
 ---
 
@@ -835,4 +835,4 @@ Elle est toutefois prise en charge dans le nœud Publication AEM. Avec les param
 
 Il est possible de contourner cette limitation en spécifiant l’URL de développement ou d’évaluation de la bibliothèque Adobe Launch dans la configuration du cloud Adobe Launch pour la publication AEM ci-dessus. Ce faisant, le nœud Publication AEM utilise la version de développement ou d’évaluation de la bibliothèque Adobe Launch.
 
-Voir [Intégration d’AEM à Adobe Launch via Adobe I/O](https://helpx.adobe.com/fr/experience-manager/using/aem_launch_adobeio_integration.html) pour plus d’informations sur la configuration du cloud Adobe Launch.
+Voir [Intégrer l’Experience Platform Launch et l’AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html#integrations) pour plus d’informations sur la configuration de Adobe Launch Cloud Configuration.
