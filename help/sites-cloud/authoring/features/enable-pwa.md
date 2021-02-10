@@ -1,11 +1,13 @@
 ---
 title: Activation des fonctionnalités d'application Web progressive
 description: AEM Sites permet à l’auteur du contenu d’activer des fonctionnalités d’application Web progressive sur n’importe quel site par le biais d’une configuration simple plutôt que d’un codage.
+hide: true
+hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: ba014bb90b1cb08630455b3ac72895272ae8ed5b
+source-git-commit: 071eefa3b6f5e9636ace612e968b6a9627c98550
 workflow-type: tm+mt
 source-wordcount: '1725'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -78,7 +80,7 @@ Le développeur devra également ajouter le lien suivant au fichier `customfoote
 
 >[!NOTE]
 >
->Les futures versions des [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) incluront automatiquement ces fonctionnalités. Cependant, si vous utilisez des composants personnalisés au lieu des composants principaux, ces ajustements seront toujours nécessaires.
+>Les futures versions des [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) incluront automatiquement ces fonctionnalités. Cependant, si vous utilisez des composants personnalisés au lieu des composants principaux, ces ajustements seront toujours nécessaires.
 
 ### Ajuster votre répartiteur {#adjust-dispatcher}
 
@@ -93,7 +95,7 @@ File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filt
 
 >[!NOTE]
 >
->Les futures versions de l&#39;archétype de projet [AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en#developing) incluront cette configuration.
+>Les futures versions de l&#39;archétype de projet [AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en#development) incluront cette configuration.
 
 ## Activation du PWA pour votre site {#enabling-pwa-for-your-site}
 
@@ -122,7 +124,7 @@ Avec [les conditions préalables](#prerequisites) satisfaites, il est très faci
       ![Définir des chemins hors ligne PWA](../assets/pwa-offline.png)
 
 
-1. Appuyez ou cliquez sur **Enregistrer et fermer**.
+1. Appuyez/cliquez sur **Enregistrer et fermer**.
 
 Votre site est maintenant configuré et vous pouvez [l&#39;installer en tant qu&#39;application locale.](#using-pwa-enabled-site)
 
