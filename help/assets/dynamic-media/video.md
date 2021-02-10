@@ -2,9 +2,9 @@
 title: Vidéo
 description: Découvrez comment utiliser la vidéo dans Dynamic Media.
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '9536'
+source-wordcount: '9537'
 ht-degree: 99%
 
 ---
@@ -404,7 +404,7 @@ Supposons, par exemple, que la résolution de votre vidéo source soit équivale
 |--- |--- |--- |--- |
 | Source | 1 920 x 1 080 | 1 | 1 |
 | Codée | 960 x 540 | 2 | 2 |
-| Codée | 640 x 360 | 3 | 3 |
+| Codée | 640 x 360 | 3 | 1 |
 | Codée | 480 x 270 | 4 | 4 |
 
 ### Format de fichier vidéo codé {#encoded-video-file-format}
@@ -772,7 +772,7 @@ Pour obtenir des informations de progression plus détaillées, vous pouvez surv
 1. Dans le coin supérieur droit de la page des propriétés de la vidéo, cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Publication rapide]**.
 
-   Voir aussi [Utilisation de la gestion de la publication avec AEM Sites](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/publication-management-feature-video-use.html).
+   Voir aussi [Utilisation de la gestion de la publication avec AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring).
 
    Vous avez la possibilité de vérifier la vidéo publiée sur votre chaîne YouTube.
 
@@ -983,7 +983,7 @@ Indiquez la période de début et de fin pour laquelle vous souhaitez obtenir le
 
 1. Dans le tableau qui répertorie les principales vidéos publiées, appuyez sur le nom d’une vidéo pour la lire et afficher également le rapport sur la rétention de l’audience (taux de déperdition) de celle-ci.
 
-<!-- OBSOLETE CONTENT OBSOLETE CONTENT SDK ONLY AVAILABLE INTERNALLY NOW 
+<!-- OBSOLETE CONTENT OBSOLETE CONTENT - SDK ONLY AVAILABLE INTERNALLY NOW 
 ### Viewing video reports based on a video viewer that you created using the Dynamic Media HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 If you are using an out-of-box video viewer provided by Dynamic Media, or if you created a custom viewer preset based off of an out-of-box video viewer, then no additional steps are required to view video reports. However, if you have created your own video viewer based off the Dynamic Media HTML5 Viewer SDK, then use the following steps to ensure the your video viewer is sending tracking events to Dynamic Media Video Reports.
