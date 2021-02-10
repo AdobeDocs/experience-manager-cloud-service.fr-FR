@@ -2,10 +2,10 @@
 title: Bonnes pratiques relatives à l’optimisation de la qualité des images
 description: Découvrez les meilleures pratiques que vous pouvez utiliser dans Dynamic Media pour optimiser la qualité de vos ressources d’images.
 translation-type: tm+mt
-source-git-commit: e18fdf02371b641b6ff65d70084b22ab9b6b6ded
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '1475'
-ht-degree: 97%
+source-wordcount: '1474'
+ht-degree: 95%
 
 ---
 
@@ -40,9 +40,9 @@ Pour le dimensionnement des images, il est recommandé d’utiliser `&wid=<value
 
 L’accentuation des images est l’aspect le plus complexe du contrôle des images du site web, processus au cours duquel de nombreuses erreurs sont commises. Prenez le temps d’en savoir plus sur le fonctionnement de l’accentuation et du masquage flou dans AEM en vous référant aux ressources suivantes :
 
-Le livre blanc Meilleures pratiques [Accentuation des images dans l’Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) s’applique également à AEM.
+* Le livre blanc Meilleures pratiques [Accentuation des images dans l’Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) s’applique également à AEM.
 
-Sur Adobe TV, regardez [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html) (vidéo en anglais).
+* Regardez [Utilisation de l’accentuation des images avec l’AEM Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
 Avec AEM, vous pouvez accentuer les images lors de l’assimilation, lors de la distribution, ou les deux. Néanmoins, dans la plupart des cas, vous devez accentuer les images à l’aide d’une seule méthode et non des deux. L’accentuation des images lors de la distribution, sur une URL, produit généralement les meilleurs résultats.
 
