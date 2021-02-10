@@ -1,37 +1,37 @@
 ---
-title: Accessibilité dans  [!DNL Dynamic Media]
+title: Accessibilité dans Dynamic Media
 description: Découvrez l’accessibilité dans Dynamic Media et dans les visionneuses Dynamic Media.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: 75caf21c399271b23e71c7c0045e3a41cda8a851
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 97%
+source-wordcount: '613'
+ht-degree: 67%
 
 ---
 
 
-# Accessibilité dans Dynamic Media {#working-with-three-d-assets-dm}
+# Accessibilité dans Dynamic Media {#accessibility-in-dm}
 
 Dynamic Media prend en charge les technologies d’assistance et de contrôle du clavier, telles que les lecteurs d’écran JAWS et NVDA, dans l’interface utilisateur de création.
 
-## Prise en charge de l’accessibilité du clavier dans Dynamic Media
+## Prise en charge de l’accessibilité du clavier dans Dynamic Media {#keyboard-support-in-dm}
 
-Dynamic Media étant un plug-in d’Experience Manager Assets, la plupart des commandes de clavier produisent exactement le même résultat que dans Experience Manager Assets. Par exemple, le bouton `Cancel` de Dynamic Media produit la même mise en surbrillance que dans Experience Manager Assets et réagit à la touche `Spacebar` comme Experience Manager Assets. Voir [Raccourcis clavier dans Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Dynamic Media étant un module externe des ressources du Experience Manager, la plupart des commandes de clavier sont identiques à celles des ressources du Experience Manager. Par exemple, le bouton `Cancel` de Dynamic Media a la même mise en surbrillance que dans les ressources du Experience Manager. Il réagit également à la clé `Spacebar`, comme dans les ressources du Experience Manager. Voir [raccourcis clavier dans Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
-Les touches prises en charge par des éléments individuels de l’interface utilisateur dans Dynamic Media sont, dans la plupart des cas, évidentes et faciles à trouver. Voici ce que permet le contrôle clavier dans Dynamic Media :
+Les touches prises en charge par les éléments d’interface utilisateur individuels à Dynamic Media sont, dans la plupart des cas, évidentes et faciles à trouver. Voici ce que permet le contrôle clavier dans Dynamic Media :
 
 * Possibilité d’utiliser les touches `Tab` et `Shift+Tab` pour naviguer entre les éléments interactifs de la page.
 `Tab` permet d’activer le focus d’entrée sur l’élément d’interface utilisateur suivant dans l’ordre de tabulation ; `Shift+Tab` rétablit le focus d’entrée sur l’élément d’interface utilisateur précédent.
 Le parcours du focus suit l’emplacement naturel des éléments de l’interface utilisateur à l’écran et se déplace de gauche à droite, puis de haut en bas. En outre, si un champ comporte une erreur, vous pouvez appuyer sur `Tab` pour y placer le focus.
 * Possibilité d’utiliser les touches `Spacebar` et `Enter` pour activer les éléments standard de l’interface utilisateur, tels que les boutons, les listes déroulantes, etc.
-* Possibilité de voir la mise en surbrillance du clavier sur l’élément actif. L’élément d’interface utilisateur avec le focus peut recevoir une indication de focus visuelle sous la forme d’un contour autour de l’élément d’interface utilisateur.
+* Possibilité de voir la mise en surbrillance du clavier sur l’élément actif. L’élément d’interface utilisateur qui a le focus d’entrée a reçu une indication de focus visuel sous la forme d’une bordure rendue autour de l’élément d’interface utilisateur.
 * Dans l’éditeur de zones réactives, vous pouvez utiliser des touches personnalisées, telles que les touches fléchées, pour interagir avec des éléments complexes de l’interface utilisateur afin de repositionner les zones réactives.
-* Dans l’éditeur de vidéo interactive, vous pouvez utiliser `Spacebar` pour sélectionner une image et l’ajouter à un segment. De plus, vous pouvez utiliser la touche `Backspace` pour supprimer l’élément sélectionné de l’onglet **[!UICONTROL Contenu]**. La touche `Tab` permet par ailleurs de naviguer entre les éléments interactifs de la page.
-* Dans l’éditeur Recadrage d’image/Recadrage intelligent, vous pouvez effectuer les opérations suivantes :
-   * Utiliser les touches fléchées pour recadrer la taille du cadre ou repositionner l’image, ou les deux.
+* Dans l’éditeur de vidéo interactive, vous pouvez utiliser `Spacebar` pour sélectionner une image et l’ajouter à un segment. De plus, vous pouvez utiliser la clé `Backspace` pour supprimer l’élément sélectionné de l’onglet **[!UICONTROL Contenu]**. La touche `Tab` permet par ailleurs de naviguer entre les éléments interactifs de la page.
+* Dans l’éditeur Recadrage d’image/Recadrage dynamique, vous pouvez effectuer les opérations suivantes :
+   * Utilisez les touches fléchées pour recadrer la taille du cadre ou repositionner l’image, ou les deux.
    * Le premier arrêt `Tab` met en surbrillance l’ensemble du cadre d’image. Vous pouvez ensuite utiliser les touches fléchées du clavier pour repositionner le cadre.
    * Les quatre arrêts `Tab` suivants sont les quatre coins du cadre. Lorsque la cible d’action est placée sur un angle de cadre, le coin est mis en surbrillance. Encore une fois, vous pouvez utiliser les touches fléchées du clavier pour déplacer le coin ciblé.
 Voir [Modification du recadrage intelligent ou de l’échantillon intelligent d’une seule image](/help/assets/dynamic-media/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
@@ -46,7 +46,7 @@ Voir [Modification du recadrage intelligent ou de l’échantillon intelligent d
 
 ## Prise en charge des technologies d’assistance dans Dynamic Media {#assistive-technology=support-for-dm}
 
-Les éléments de l’interface utilisateur de Dynamic Media fonctionnent avec des technologies d’assistance telles que les lecteurs d’écran. Elle reconnaît par exemple les repères sur une page lorsque vous naviguez entre les repères à l’aide du raccourci clavier `D` ou entre les régions à l’aide du raccourci clavier `R`. Elle décrit également la section lors de la navigation à l’aide du raccourci clavier de la section `H`.
+Les éléments de l’interface utilisateur de Dynamic Media fonctionnent avec des technologies d’assistance telles que les lecteurs d’écran. Par exemple, il reconnaît les repères sur une page lorsque vous naviguez entre les repères à l’aide du raccourci clavier `D` ou de régions à l’aide du raccourci clavier `R`. Elle décrit également la section lors de la navigation à l’aide du raccourci clavier de la section `H`.
 
 ## Prise en charge de l’accessibilité du clavier dans les visionneuses Dynamic Media {#keyboard-accessibility-for-dm-viewers}
 
