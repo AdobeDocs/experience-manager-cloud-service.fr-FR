@@ -2,10 +2,10 @@
 title: API GraphQL d’AEM à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API GraphQL d’AEM pour la diffusion de contenu découplée.
 translation-type: tm+mt
-source-git-commit: 20f90d46d24fa211d51ef4b59bb56f4b9f963bc3
+source-git-commit: 36e0fd66c9119571cde5c8791862abed8b552d5a
 workflow-type: tm+mt
-source-wordcount: '3167'
-ht-degree: 71%
+source-wordcount: '3220'
+ht-degree: 70%
 
 ---
 
@@ -19,6 +19,14 @@ L’utilisation de l’API GraphQL dans AEM permet la diffusion efficace de frag
 * en évitant les demandes d’API itératives comme avec REST ;
 * en veillant à ce que la diffusion soit limitée aux exigences spécifiques ;
 * Permet la diffusion en bloc de ce qui est exactement nécessaire pour le rendu en tant que réponse à une seule requête d&#39;API.
+
+>[!NOTE]
+>
+>GraphQL est actuellement utilisé comme Cloud Service dans deux scénarios (distincts) à Adobe Experience Manager (AEM) :
+>
+>* [aem Commerce utilise les données d&#39;une plateforme commerciale via GraphQL](/help/commerce-cloud/architecture/magento.md).
+>* aem Fragments de contenu fonctionnent conjointement avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard), pour fournir du contenu structuré à utiliser dans vos applications.
+
 
 ## L’API GraphQL {#graphql-api}
 
