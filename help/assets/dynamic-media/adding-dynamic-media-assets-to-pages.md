@@ -2,10 +2,10 @@
 title: Ajout de ressources Dynamic Media aux pages
 description: Comment ajouter des composants Dynamic Media à une page dans Adobe Experience Manager as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '3135'
-ht-degree: 99%
+source-wordcount: '3128'
+ht-degree: 97%
 
 ---
 
@@ -210,7 +210,7 @@ Vous pouvez modifier les paramètres Dynamic Media ci-après en cliquant sur **
 
 Utilisez le composant Média dynamique pour ajouter des ressources d’images avec recadrage intelligent à vos pages web. Lorsque vous modifiez le composant, vous pouvez choisir d’utiliser un paramètre prédéfini de la visionneuse de vidéos pour lire la vidéo sur la page.
 
-Voir [Utilisation du recadrage dynamique avec Experience Manager Assets Dynamic Media](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
+Voir [Utilisation du recadrage dynamique avec Experience Manager Assets Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html#dynamic-media)
 
 Voir aussi [Profils d’image](/help/assets/dynamic-media/image-profiles.md).
 
@@ -337,10 +337,10 @@ Voir [Diffusion du contenu sur HTTP2](/help/assets/dynamic-media/http2faq.md) po
 
 >[!MORELIKETHIS]
 >
->* [Utilisation du lecteur vidéo dans Experience Manager Dynamic Media](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
->* [Utilisation de la vidéo interactive avec Experience Manager Dynamic Media](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
->* [Présentation de la visionneuse d’éléments avec Experience Manager Dynamic Media](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
->* [Utilisation de miniatures vidéo personnalisées avec Experience Manager Dynamic Media](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
->* [Explication de la gestion des couleurs avec Experience Manager Dynamic Media](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
->* [Utilisation de l’accentuation d’image avec Experience Manager Dynamic Media](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
+>* [Utilisation du lecteur vidéo dans Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html#dynamic-media)
+>* [Utilisation de la vidéo interactive avec Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html#dynamic-media)
+>* [Présentation de la visionneuse d’éléments avec Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html#dynamic-media)
+>* [Utilisation de miniatures vidéo personnalisées avec Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html#dynamic-media)
+>* [Explication de la gestion des couleurs avec Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html#dynamic-media)
+>* [Utilisation de l’accentuation d’image avec Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media)
 
