@@ -1,11 +1,12 @@
 ---
 title: Ajout de ressources Dynamic Media aux pages
 description: Comment ajouter des composants Dynamic Media à une page dans Adobe Experience Manager as a Cloud Service.
+contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: d1f2315de6b96a912b38d4b81f5ea0a672f6c168
+source-git-commit: cf607bd27463f23de29d0d6770940a01f3e36c87
 workflow-type: tm+mt
-source-wordcount: '3123'
-ht-degree: 93%
+source-wordcount: '3082'
+ht-degree: 70%
 
 ---
 
@@ -14,28 +15,28 @@ ht-degree: 93%
 
 Pour ajouter la fonction Dynamic Media aux ressources que vous utilisez sur des sites web, vous pouvez ajouter le composant **Dynamic Media**, **Média interactif**, **Média panoramique** ou **Média vidéo 360** directement à la page. Vous entrez en mode Mise en page et activez les composants Dynamic Media. Vous ajoutez ensuite ces composants à la page et ajoutez des actifs au composant. Les composants Dynamic Media sont intelligents : ils savent si vous ajoutez une image ou une vidéo, et les options de configuration disponibles changent en conséquence.
 
-Si vous utilisez Experience Manager comme système de gestion de contenu web, vous pouvez ajouter les ressources Dynamic Media directement à la page. Si vous utilisez un tiers pour votre gestion de contenu Web, [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ou [embed](/help/assets/dynamic-media/embed-code.md) vos ressources. Pour un site web tiers réactif, reportez-vous à la section [Diffusion d’images optimisées sur un site réactif](/help/assets/dynamic-media/responsive-site.md).
+Si vous utilisez Experience Manager comme système de gestion de contenu web, vous pouvez ajouter les ressources Dynamic Media directement à la page. Si vous utilisez un tiers pour votre gestion de contenu Web, [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ou [embed](/help/assets/dynamic-media/embed-code.md) vos ressources. Pour un site Web tiers réactif, voir [livraison d’images optimisées à un site réactif](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
->Vous devez publier les ressources avant de les ajouter aux pages dans Experience Manager. Voir [Publication de ressources Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+>Veillez à publier les fichiers avant de les ajouter aux pages du Experience Manager. Voir [Publication de ressources Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Ajout d’un composant Dynamic Media à une page {#adding-a-dynamic-media-component-to-a-page}
 
-L’ajout d’un composant Média 3D, Dynamic Media, Média interactif, Média panoramique, Recadrage intelligent de la vidéo ou Média vidéo 360 à une page est identique à l’ajout d’un composant sur n’importe quelle page. Les composants Dynamic Media sont décrits dans les sections suivantes.
+L’ajout d’un composant Média 3D, Dynamic Media, Média interactif, Média panoramique, Recadrage intelligent de la vidéo ou Média vidéo 360 à une page est identique à l’ajout d’un composant sur n’importe quelle page.
 
 **Ajout d’un composant Dynamic Media à une page**
 
 1. Dans Experience Manager, ouvrez la page où vous souhaitez ajouter le composant Dynamic Media.
 1. Dans le volet de gauche, appuyez sur l’icône **[!UICONTROL Composants]** puis définissez un filtre Dynamic Media.
 
-   Si aucune liste de composants Dynamic Media n’est disponible, vous devrez probablement activer ceux que vous souhaitez utiliser. Voir [Activation des composants Dynamic Media](#enabling-dynamic-media-components).
+   Si aucune liste de composants Dynamic Media n’est disponible, vous devez probablement activer les composants Dynamic Media que vous souhaitez utiliser. Voir [Activation des composants Dynamic Media](#enabling-dynamic-media-components).
 
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
 1. Faites glisser un composant **[!UICONTROL Dynamic Media]** et déposez-le à l’emplacement souhaité sur la page.
 
-1. Placez le pointeur de la souris directement sur le composant. Lorsque le composant est entouré d’une zone bleue, appuyez une fois pour afficher la barre d’outils du composant. Appuyez sur l’icône **[!UICONTROL Configuration (clé à molette)]**.
+1. Pointez le pointeur directement sur le composant. Lorsque le composant est entouré d’une zone bleue, appuyez une fois pour afficher la barre d’outils du composant. Appuyez sur l’icône **[!UICONTROL Configuration (clé à molette)]**.
 
    ![6_5_360video_wcmcomponentconfigure](assets/6_5_360video_wcmcomponentconfigure.png)
 
@@ -47,14 +48,14 @@ L’ajout d’un composant Média 3D, Dynamic Media, Média interactif, Média p
 
    Composant Dynamic Media Média vidéo 360.
 
-1. Une fois que vous avez terminé, dans l’angle supérieur droit de la boîte de dialogue, appuyez sur la coche pour enregistrer vos modifications.
+1. Lorsque vous avez terminé, dans le coin supérieur droit de la boîte de dialogue, cochez la case pour enregistrer vos modifications.
 
 ### Activation des composants Dynamic Media {#enabling-dynamic-media-components}
 
-Si aucun composant Dynamic Media n’est disponible pour ajouter une page, cela signifie probablement que vous devez d’abord activer les composants que vous souhaitez utiliser.
+Si aucun composant Dynamic Media n’est disponible pour l’ajout à une page, cela signifie probablement que vous devez activer les composants que vous souhaitez utiliser.
 
 1. Dans Experience Manager, ouvrez la page où vous souhaitez ajouter le composant Dynamic Media.
-1. Dans la partie gauche de la barre d’outils située en haut de la page, appuyez sur l’icône Informations de la page, puis sur **[!UICONTROL Éditer le modèle]** dans la liste déroulante.
+1. À gauche de la barre d’outils située en haut de la page, appuyez sur l’icône Informations sur la page, puis appuyez sur **[!UICONTROL Modifier le modèle]** dans la liste déroulante.
 
    ![edit-template](/help/assets/assets-dm/edit-template.png)
 
@@ -63,18 +64,19 @@ Si aucun composant Dynamic Media n’est disponible pour ajouter une page, cela 
    ![Stratégie](/help/assets/assets-dm/structure-mode.png)
 
 1. À proximité du bas de la page, appuyez sur **[!UICONTROL Conteneur de mises en page]** pour ouvrir sa barre d’outils, puis appuyez sur l’icône Stratégie.
-1. Sur la page **[!UICONTROL Conteneur de mises en page]**, sous l’en-tête **[!UICONTROL Propriétés]**, assurez-vous que l’onglet **[!UICONTROL Composants autorisés]** est sélectionné.
+1. Sur la page **[!UICONTROL Conteneur de mise en page]**, sous l&#39;en-tête **[!UICONTROL Propriétés]**, assurez-vous que l&#39;onglet **[!UICONTROL Composants autorisés]** est sélectionné.
 
    ![Composants autorisés](/help/assets/assets-dm/allowed-components.png)
 
 1. Faites défiler l’écran jusqu’à ce que vous voyiez **[!UICONTROL Média dynamique]**.
-1. Appuyez sur l’icône > située à gauche de **[!UICONTROL Média dynamique]** pour développer la liste, puis sélectionnez les composants Dynamic Media à activer.
+1. Appuyez sur l’icône > située à gauche de **[!UICONTROL Dynamic Media]**, puis sélectionnez les composants Dynamic Media à activer.
 
    ![Liste de composants Dynamic Media](/help/assets/assets-dm/dm-components-select.png)
 
-1. À proximité de l’angle supérieur droit de la page **[!UICONTROL Conteneur de mises en page]**, appuyez sur l’icône Terminé (coche).
+1. Près du coin supérieur droit de la page **[!UICONTROL Conteneur de mise en page]**, appuyez sur l’icône Terminé (coche).
 
-1. Dans la liste déroulante située sur le côté droit de la barre d’outils, en haut de la page, appuyez sur **[!UICONTROL Contenu initial]**, puis [ajoutez un composant Dynamic Media à une page](#adding-a-dynamic-media-component-to-a-page) comme vous le faites habituellement.
+1. Sur le côté droit de la barre d’outils, près du haut de la page, dans la liste déroulante, appuyez sur **[!UICONTROL Contenu initial]**.
+1. [Ajoutez un composant Dynamic Media à une ](#adding-a-dynamic-media-component-to-a-page) page comme d’habitude.
 
 ## Localisation des composants Dynamic Media {#localizing-dynamic-media-components}
 
@@ -88,7 +90,7 @@ Vous pouvez rechercher les composants Dynamic Media de deux façons :
 
    >[!NOTE]
    >
-   >Notez que toutes les langues disponibles dans le menu **[!UICONTROL Langue]** ne sont pas actuellement associées à des jetons.
+   >Certaines langues disponibles dans le menu **[!UICONTROL Langue]** n&#39;ont pas de jetons affectés.
 
 ## Composants Dynamic Media disponibles {#dynamic-media-components}
 
@@ -103,7 +105,7 @@ Les composants Dynamic Media disponibles comprennent les suivants :
 
 >[!NOTE]
 >
->Ces composants ne sont pas disponibles par défaut et doivent être rendus disponibles via l’éditeur de modèles avant utilisation. Une fois les composants disponibles dans l’éditeur de modèles, vous pouvez les ajouter à votre page comme vous le feriez avec tout autre composant Experience Manager.
+>Ces composants ne sont pas disponibles par défaut et doivent être disponibles dans l’éditeur de modèles avant de les utiliser. Une fois les composants disponibles dans l’éditeur de modèles, vous pouvez les ajouter à votre page comme vous le feriez avec tout autre composant Experience Manager.
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
@@ -120,13 +122,13 @@ Le composant Média dynamique est dynamique ; il propose des options différent
 
 >
 >
-Prenez en compte le fait que l’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant Dynamic Media de cette page n’est pas prise en charge.
+L’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant Dynamic Media sur cette page n’est pas prise en charge.
 >
 >Vous pouvez toutefois utiliser le même paramètre prédéfini de visionneuse pour tous les composants Média dynamique qui utilisent des éléments du même type, dans la page.
 
 Si vous ajoutez le composant Média dynamique et si l’option **[!UICONTROL Paramètres de média dynamique]** est vide ou s’il est impossible d’ajouter correctement une ressource, vérifiez les points suivants :
 
-* L’image possède un fichier pyramid tiff. Les images importées avant l’activation de Dynamic Media ne comportent pas de fichier de tiff de pyramide.
+* L’image possède un fichier pyramid tiff. Les images importées avant l’activation de Dynamic Media n’ont pas de fichier pyramidal tiff.
 
 #### En cas d’utilisation d’images  {#when-working-with-images}
 
@@ -142,21 +144,21 @@ Vous pouvez modifier les paramètres Dynamic Media ci-après en appuyant sur **
 >
 >Par défaut, le composant d’image Dynamic Media est adaptatif. Si vous souhaitez faire en sorte qu’il ait une taille fixe, définissez-la dans le composant de l’onglet **[!UICONTROL Avancé]** à l’aide des options **[!UICONTROL Largeur]** et **[!UICONTROL Hauteur]**.
 
-* **[!UICONTROL Paramètre prédéfini de la visionneuse]** : sélectionnez un paramètre prédéfini de visionneuse existant. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devrez le rendre visible. Voir Gestion des paramètres prédéfinis de visionneuse. Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
+* **[!UICONTROL Paramètre]** prédéfini de visionneuse : sélectionnez un paramètre prédéfini de visionneuse existant dans la liste déroulante. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devez le rendre visible. Voir Gestion des paramètres prédéfinis de visionneuse. Vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse si vous utilisez un paramètre d’image prédéfini et inversement.
 
-   Il s’agit de la seule option disponible si vous affichez des visionneuses d’images, à 360° ou de supports variés. Les paramètres prédéfinis de visionneuse sont également dynamiques : seuls les paramètres pertinents s’affichent.
+   Cette option est la seule disponible si vous visualisez des visionneuses d’images, des visionneuses à 360° ou des visionneuses de supports variés. Les paramètres prédéfinis de la visionneuse affichés sont également des paramètres prédéfinis appropriés de visionneuse uniquement intelligents.
 
 * **[!UICONTROL Modificateurs de visionneuse]** : les modificateurs de visionneuse prennent la forme d’une paire nom=valeur avec un délimiteur &amp; et permettent de modifier les visionneuses comme indiqué dans le Guide de référence des visionneuses. Un exemple de modificateur de visionneuse est `posterimage=img.jpg&caption=text.vtt,1`, qui définit une image différente pour la miniature de la vidéo et associe un fichier de légende/sous-titre à la vidéo.
 
-* **[!UICONTROL Paramètre d’image prédéfini]** : sélectionnez un paramètre d’image prédéfini existant. Si le paramètre d’image prédéfini que vous recherchez n’est pas visible, vous devrez le rendre visible. Voir Gestion des paramètres d’image prédéfinis. Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
+* **[!UICONTROL Paramètre]** d&#39;image prédéfini : sélectionnez un paramètre d&#39;image prédéfini existant dans la liste déroulante. Si le paramètre d’image prédéfini que vous recherchez n’est pas visible, vous devez le rendre visible. Voir Gestion des paramètres d’image prédéfinis. Vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse si vous utilisez un paramètre d’image prédéfini et inversement.
 
    Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de supports variés.
 
-* **[!UICONTROL Modificateurs d’image]** : vous pouvez appliquer des effets d’image en fournissant des commandes d’image supplémentaires. Ces commandes sont décrites dans la section Paramètres prédéfinis d’image et dans le guide de référence des commandes relatives aux images.
+* **[!UICONTROL Modificateurs]** d&#39;image : vous pouvez appliquer des effets d&#39;image en fournissant davantage de commandes d&#39;image. Ces commandes sont décrites dans la section Paramètres d’image prédéfinis et la référence de la commande Image Serving.
 
    Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de supports variés.
 
-* **[!UICONTROL Points d’arrêt]** : si vous utilisez cette ressource sur un site réactif, vous devez ajouter les points d’arrêt d’image. Les points d’arrêt d’image doivent être séparés par des virgules (,). Cette option fonctionne lorsqu’il n’existe aucune valeur de hauteur ou largeur définie dans un paramètre d’image prédéfini.
+* **[!UICONTROL Points d&#39;arrêt]** : si vous utilisez ce fichier sur un site réactif, vous devez ajouter les points d&#39;arrêt d&#39;image. Les points d’arrêt d’image doivent être séparés par des virgules (,). Cette option fonctionne lorsqu’il n’existe aucune valeur de hauteur ou largeur définie dans un paramètre d’image prédéfini.
 
    Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de supports variés.
 
@@ -179,7 +181,7 @@ Vous pouvez modifier les paramètres Dynamic Media ci-après en appuyant sur **
 
 #### En cas d’utilisation de vidéos {#when-working-with-video}
 
-Le composant Média dynamique permet d’ajouter une vidéo dynamique à vos pages web. Lorsque vous modifiez le composant, vous pouvez choisir d’utiliser un paramètre prédéfini de la visionneuse de vidéos pour lire la vidéo sur la page.
+Le composant Média dynamique permet d’ajouter une vidéo dynamique à vos pages web. Lorsque vous modifiez le composant, vous pouvez choisir d’utiliser un paramètre prédéfini de visionneuse de vidéos prédéfini pour lire la vidéo sur la page.
 
 ![chlimage_1-173](assets/chlimage_1-540.png)
 
@@ -189,16 +191,16 @@ Vous pouvez modifier les paramètres Dynamic Media ci-après en cliquant sur **
 >
 >Par défaut le composant vidéo Dynamic Media est adaptatif. Si vous souhaitez lui donner une taille fixe, définissez-la sous l’onglet **[!UICONTROL Avancé]** du composant, grâce aux options **[!UICONTROL Largeur]** et **[!UICONTROL Hauteur]**.
 
-* **[!UICONTROL Paramètre prédéfini de la visionneuse]** : sélectionnez un paramètre prédéfini de visionneuse existant. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devrez le rendre visible. Voir Gestion des paramètres prédéfinis de visionneuse.
+* **[!UICONTROL Paramètre prédéfini]** de visionneuse : sélectionnez un paramètre prédéfini existant dans la liste déroulante. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devez le rendre visible. Voir Gestion des paramètres prédéfinis de visionneuse.
 
-* **[!UICONTROL Modificateurs de visionneuse]** : les modificateurs de visionneuse prennent la forme d’une paire nom=valeur avec un délimiteur &amp; et permettent de modifier les visionneuses comme indiqué dans le Guide de référence des visionneuses d’Adobe. Un exemple de modificateur de visionneuse est `posterimage=img.jpg&caption=text.vtt,1`
+* **[!UICONTROL Modificateurs]** de visionneuse : les modificateurs de visionneuse prennent la forme d’une  `name=value` paire avec un  `&` délimiteur. Ils vous permettent de modifier les visionneuses comme l’indique le Guide de référence des visionneuses d’Adobes. Un exemple de modificateur de visionneuse est `posterimage=img.jpg&caption=text.vtt,1`
 
-   Avec les modificateurs de visionneuse, vous pouvez, par exemple, effectuer les opérations suivantes :
+   Avec les modificateurs de visionneuse, vous pouvez, par exemple, effectuer les opérations suivantes :
 
    * Associer un fichier de légende à une vidéo : [légende](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
    * Associer un fichier de navigation à une vidéo : [navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
-   Vous pouvez modifier les paramètres avancés ci-après en cliquant sur **[!UICONTROL Modifier]** dans le composant.
+      Vous pouvez modifier les paramètres avancés ci-après en cliquant sur **[!UICONTROL Modifier]** dans le composant.
 
 * **[!UICONTROL Titre]** : modifiez le titre de la vidéo.
 
@@ -208,7 +210,7 @@ Vous pouvez modifier les paramètres Dynamic Media ci-après en cliquant sur **
 
 #### Lorsque vous utilisez le recadrage intelligent {#when-working-with-smart-crop}
 
-Utilisez le composant Média dynamique pour ajouter des ressources d’images avec recadrage intelligent à vos pages web. Lorsque vous modifiez le composant, vous pouvez choisir d’utiliser un paramètre prédéfini de la visionneuse de vidéos pour lire la vidéo sur la page.
+Utilisez le composant Média dynamique pour ajouter des ressources d’images avec recadrage intelligent à vos pages web. Lorsque vous modifiez le composant, vous pouvez choisir d’utiliser un paramètre prédéfini de visionneuse de vidéos prédéfini pour lire la vidéo sur la page.
 
 Voir [Utilisation du recadrage dynamique avec Experience Manager Assets Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html#dynamic-media)
 
@@ -222,13 +224,13 @@ Vous pouvez modifier le paramètre Dynamic Media suivant en cliquant sur **[!UI
 >
 >Par défaut, le composant d’image Dynamic Media est adaptatif. Si vous souhaitez faire en sorte qu’il ait une taille fixe, définissez-la dans le composant de l’onglet **[!UICONTROL Avancé]** à l’aide des options **[!UICONTROL Largeur]** et **[!UICONTROL Hauteur]**.
 
-* **[!UICONTROL Modificateurs d’image]** : vous pouvez appliquer des effets d’image en fournissant des commandes d’image supplémentaires. Ces commandes sont décrites dans la section Paramètres prédéfinis d’image et dans le guide de référence des commandes relatives aux images.
+* **[!UICONTROL Modificateurs]** d&#39;image : vous pouvez appliquer des effets d&#39;image en fournissant davantage de commandes d&#39;image. Ces commandes sont décrites dans la section Paramètres d’image prédéfinis et la référence de la commande Image Serving.
 
    Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de supports variés.
 
    Vous pouvez modifier les paramètres avancés ci-après en cliquant sur **[!UICONTROL Modifier]** dans le composant.
 
-* **[!UICONTROL Activer la correspondance du rapport d’aspect]** : sélectionnez cette option pour laisser Dynamic Media sélectionner un rendu de recadrage intelligent avec le rapport d’aspect correspondant le mieux à celui de l’image d’origine.
+* **[!UICONTROL Activer la correspondance]** des proportions : pour permettre à Dynamic Media de sélectionner un rendu de recadrage intelligent avec un format qui correspond le mieux au format de l&#39;image d&#39;origine, sélectionnez cette option.
 
 * **[!UICONTROL Titre]** : modifiez le titre d’une image avec recadrage intelligent.
 
@@ -259,7 +261,7 @@ Le composant Média interactif est dynamique : il propose des options différen
 
 >
 >
-Prenez en compte le fait que l’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant Interactive Media de cette page n’est pas prise en charge.
+L’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant Interactive Media de cette page n’est pas prise en charge.
 >
 >Vous pouvez toutefois utiliser le même paramètre prédéfini de visionneuse pour tous les composants Interactive Media qui utilisent des éléments du même type, dans la page.
 
@@ -267,7 +269,7 @@ Prenez en compte le fait que l’affectation d’un paramètre prédéfini de vi
 
 Vous pouvez modifier les paramètres **[!UICONTROL Général]** ci-après en cliquant sur **[!UICONTROL Modifier]** dans le composant.
 
-* **[!UICONTROL Paramètre prédéfini de la visionneuse]** : sélectionnez un paramètre prédéfini de visionneuse existant. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devrez le rendre visible. Les paramètres de visionneuse prédéfinis doivent être publiés avant de pouvoir être utilisés. Voir Gestion des paramètres prédéfinis de visionneuse.
+* **[!UICONTROL Paramètre]** prédéfini de visionneuse : sélectionnez un paramètre prédéfini de visionneuse existant dans la liste déroulante. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devez le rendre visible. Les paramètres de visionneuse prédéfinis doivent être publiés avant de pouvoir être utilisés. Voir Gestion des paramètres prédéfinis de visionneuse.
 
 * **[!UICONTROL Titre]** : modifiez le titre de la vidéo.
 
@@ -301,7 +303,7 @@ Les critères de rapport d’aspect et de mots-clés s’appliquent tous deux au
 
 >
 >
-N’oubliez pas que l’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant **[!UICONTROL Média panoramique]** sur cette page n’est pas prise en charge.
+L’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant **[!UICONTROL Média panoramique]** de cette page n’est pas prise en charge.
 >
 >Vous pouvez toutefois utiliser le même paramètre prédéfini de visionneuse pour tous les composants de média panoramique qui utilisent des éléments du même type, dans la page.
 
@@ -309,13 +311,13 @@ N’oubliez pas que l’affectation d’un paramètre prédéfini de visionneuse
 
 Vous pouvez modifier le paramètre suivant en appuyant sur **[!UICONTROL Modifier]** dans le composant.
 
-* **[!UICONTROL Paramètre défini de la visionneuse]** : sélectionnez une visionneuse dans le menu déroulant Paramètre prédéfini de la visionneuse.
+* **[!UICONTROL Paramètre prédéfini]** de visionneuse : sélectionnez une visionneuse existante dans la liste déroulante Paramètre prédéfini de visionneuse.
 
-Si le paramètre prédéfini de la visionneuse que vous recherchez n’est pas visible, vérifiez qu’il est publié. Vous devez publier les paramètres prédéfinis de la visionneuse avant que vous puissiez les utiliser. Voir [Gestion des paramètres prédéfinis de visionneuse](/help/assets/dynamic-media/managing-viewer-presets.md).
+Si le paramètre prédéfini de la visionneuse que vous recherchez n’est pas visible, vérifiez qu’il est publié. Publiez les paramètres prédéfinis de la visionneuse avant de les utiliser. Voir [Gestion des paramètres prédéfinis de visionneuse](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 ### Composant : Média vidéo 360 {#video-media-component}
 
-Utilisez le composant **[!UICONTROL Média vidéo 360]** pour effectuer un rendu vidéo équirectangulaire sur votre page web pour une expérience de visionnage immersive d’une pièce, d’une propriété, d’un emplacement, d’un paysage ou d’une procédure médicale.
+Utilisez le composant **[!UICONTROL Video 360 Media]** pour effectuer le rendu d’une vidéo équirectangulaire sur votre page Web. Cela permet d&#39;assurer une expérience de visualisation immersive d&#39;une pièce, d&#39;une propriété, d&#39;un lieu, d&#39;un paysage ou d&#39;une procédure médicale.
 
 Lors de la lecture sur un écran plat, l’utilisateur contrôle l’angle d’affichage ; la lecture sur les périphériques mobiles utilise généralement leurs commandes gyroscopiques intégrées.
 
@@ -325,9 +327,9 @@ La visionneuse inclut une prise en charge native de la diffusion de ressources v
 
 Vous pouvez modifier le paramètre suivant en appuyant sur **[!UICONTROL Modifier]** dans le composant.
 
-* **[!UICONTROL Paramètre défini de la visionneuse]** : sélectionnez une visionneuse dans le menu déroulant Paramètre prédéfini de la visionneuse. Utilisez Video360VR pour les utilisateurs finaux qui utilisent des lunettes de réalité virtuelle. Inclut les commandes de lecture vidéo de base et les fonctions de réseaux sociaux. Utilisez Video360_social, qui inclut les commandes de lecture vidéo de base. Le rendu vidéo est effectué en mode stéréo. Le contrôle manuel du point de vue est désactivé, mais la commande gyroscopique est activée. Il n&#39;y a aucune fonctionnalité de médias sociaux.
+* **[!UICONTROL Paramètre prédéfini]** de visionneuse : sélectionnez une visionneuse existante dans la liste déroulante Paramètre prédéfini de visionneuse. Utilisez Video360VR pour les utilisateurs finaux qui utilisent des lunettes de réalité virtuelle. Inclut les commandes de lecture vidéo de base et les fonctions de réseaux sociaux. Utilisez Video360_social, qui inclut les commandes de lecture vidéo de base. Le rendu vidéo est effectué en mode stéréo. Le contrôle manuel du point de vue est désactivé, mais la commande gyroscopique est activée. Il n&#39;y a aucune fonctionnalité de médias sociaux.
 
-Si le paramètre prédéfini de la visionneuse que vous recherchez n’est pas visible, vérifiez qu’il est publié. Vous devez publier les paramètres prédéfinis de la visionneuse avant que vous puissiez les utiliser. Voir [Gestion des paramètres prédéfinis de visionneuse](/help/assets/dynamic-media/managing-viewer-presets.md).
+Si le paramètre prédéfini de la visionneuse que vous recherchez n’est pas visible, vérifiez qu’il est publié. Publiez les paramètres prédéfinis de la visionneuse avant de les utiliser. Voir [Gestion des paramètres prédéfinis de visionneuse](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 ### Utilisation de HTTP/2 pour la diffusion de ressources Dynamic Media {#using-http-to-delivery-dynamic-media-assets}
 
