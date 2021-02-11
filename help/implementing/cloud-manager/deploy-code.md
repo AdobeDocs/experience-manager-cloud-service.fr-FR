@@ -2,7 +2,7 @@
 title: Déploiement de votre code - Cloud Services
 description: Déploiement de votre code - Cloud Services
 translation-type: tm+mt
-source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
+source-git-commit: d0dd1bb2f3f040ef61401f5dbd5d5d9799c1a8ff
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 100%
@@ -59,7 +59,7 @@ Pour plus d’informations, voir [Tests fonctionnels du produit](/help/implement
    * Audit de l’expérience : cette étape du pipeline est toujours présente et ne peut pas être ignorée. Lorsqu’un pipeline de production est exécuté, une étape de contrôle de l’expérience est incluse après les tests fonctionnels personnalisés qui exécuteront les contrôles. Les pages configurées sont envoyées au service et évaluées. Les résultats sont informatifs et permettent à l’utilisateur de voir les scores et les différences existant entre les scores précédents et actuels. Ces connaissances sont utiles pour déterminer si une régression sera introduite avec le déploiement actuel.
 Pour plus d’informations, voir [Compréhension des résultats du contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md).
 
-      ![](assets/testing-tab.png)
+      ![](/help/implementing/cloud-manager/assets/deploy-testingscreen.png)
 
 
 
