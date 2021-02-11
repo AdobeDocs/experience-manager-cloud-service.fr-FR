@@ -2,10 +2,10 @@
 title: Déploiement de votre code - Cloud Services
 description: Déploiement de votre code - Cloud Services
 translation-type: tm+mt
-source-git-commit: d0dd1bb2f3f040ef61401f5dbd5d5d9799c1a8ff
+source-git-commit: aef8afd3efca4d6d5db9f457e952958ee9ca38de
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 100%
+source-wordcount: '1032'
+ht-degree: 95%
 
 ---
 
@@ -55,6 +55,9 @@ Pour plus d’informations, voir [Tests fonctionnels du produit](/help/implement
 
    * Tests fonctionnels personnalisés : cette étape du pipeline est toujours présente et ne peut pas être ignorée. Cependant, si aucun fichier JAR de test n’est généré par la compilation, le test réussit par défaut.\
       Pour plus d’informations, voir [Tests fonctionnels personnalisés](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing).
+
+   * Tests personnalisés de l&#39;interface utilisateur : Cette étape du pipeline est toujours présente et ne peut pas être ignorée. Les tests d’interface utilisateur personnalisés peuvent être écrits et permettent aux clients de créer rapidement des suites d’automatisation de tests pour valider les applications Web et mobiles créées sur des AEM.
+Consultez [Tests personnalisés de l&#39;interface utilisateur](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) pour plus d&#39;informations.
 
    * Audit de l’expérience : cette étape du pipeline est toujours présente et ne peut pas être ignorée. Lorsqu’un pipeline de production est exécuté, une étape de contrôle de l’expérience est incluse après les tests fonctionnels personnalisés qui exécuteront les contrôles. Les pages configurées sont envoyées au service et évaluées. Les résultats sont informatifs et permettent à l’utilisateur de voir les scores et les différences existant entre les scores précédents et actuels. Ces connaissances sont utiles pour déterminer si une régression sera introduite avec le déploiement actuel.
 Pour plus d’informations, voir [Compréhension des résultats du contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md).
