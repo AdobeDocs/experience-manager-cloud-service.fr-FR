@@ -2,10 +2,10 @@
 title: Notes de mise à jour actuelles pour  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour actuelles pour  [!DNL Adobe Experience Manager]  as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 071eefa3b6f5e9636ace612e968b6a9627c98550
+source-git-commit: d20a729712c1dbd48150f813419b57c49074b492
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 21%
+source-wordcount: '978'
+ht-degree: 17%
 
 ---
 
@@ -69,15 +69,37 @@ La version suivante (2021.2.0) sera publiée le 25 février 2021.
 
 ### Date de publication {#release-date-cm}
 
-La date de publication de Cloud Manager en tant que Cloud Service 2021.1.0 est le 14 janvier 2021.
+La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.2.0 est le 11 février 2021.
+
+### Nouveautés {#what-is-new-cloud-manager}
+
+* Le pipeline de production de Cloud Manager inclut désormais la fonctionnalité de test d’interface utilisateur personnalisée.
+
+* Les clients du module Ressources peuvent désormais choisir quand et où déployer leur instance de portail de marque en libre-service via l’interface utilisateur de Cloud Manager. Pour un programme standard (non sandbox) avec la solution Ressources, le portail de marque peut désormais être mis en service sur l’environnement de production. L’approvisionnement ne peut être effectué qu’une seule fois sur l’environnement Production.
+
+* L&#39;archétype de projet AEM utilisé dans Project and Sandbox Creation a été mis à jour vers la version 25.
+
+* La liste des API obsolètes identifiées lors de l’analyse du code a été affinée afin d’inclure d’autres classes et méthodes obsolètes dans les dernières versions du SDK Cloud Service.
+
+* Profil SonarQube pour Cloud Manager mis à jour pour supprimer la règle Sonar squid:S2142. Ceci ne sera plus en conflit avec les contrôles Interruption du thread.
+
+* L’interface utilisateur de Cloud Manager informe l’utilisateur qui ne peut pas temporairement ajouter/mettre à jour le nom de domaine car l’environnement associé dispose soit d’un pipeline en cours d’exécution qui lui est associé, soit de l’étape d’approbation en attente.
+
+* Les propriétés définies dans les fichiers `pom.xml` client précédés du préfixe Sonar seront désormais supprimées dynamiquement afin d’éviter les échecs d’analyse de la génération et de la qualité.
+
+* L’interface utilisateur de Cloud Manager informe l’utilisateur qui ne peut pas sélectionner de certificat SSL pour le moment s’il est utilisé par un nom de domaine en cours de déploiement.
 
 ### Correctifs {#bug-fixes-cloud-manager}
 
-* L’instance de production de ressources peut, à l’occasion, afficher l’état du portail de la marque sur la page de détails **Environnements** sous la forme *En attente* sans permettre à l’utilisateur d’effectuer une action.
+* La correspondance d’un certificat SSL avec un nom de domaine n’est plus sensible à la casse.
 
-* Lors du déclenchement d’une désactivation de l’hibernation à partir de Cloud Manager, un message d’échec s’affichait parfois, même lorsque la désactivation de l’hibernation était correctement lancée.
+* L’interface utilisateur de Cloud Manager informe désormais un utilisateur si les clés privées du certificat ne respectent pas la limite de 2 048 bits avec un message d’erreur approprié.
 
-* Les rares cas d&#39;échec rencontrés lors de la création ou de la suppression d&#39;environnements ont été résolus.
+* L’interface utilisateur de Cloud Manager informe l’utilisateur qui ne peut pas sélectionner de certificat SSL pour le moment s’il est utilisé par un nom de domaine en cours de déploiement.
+
+* Dans certains cas, un problème interne peut bloquer la suppression d’environnement.
+
+* Certains échecs de pipeline étaient incorrectement signalés comme des erreurs de pipeline.
 
 ## aem en tant que fondation Cloud Service {#aem-as-a-cloud-service-foundation}
 
