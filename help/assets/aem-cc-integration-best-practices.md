@@ -4,10 +4,10 @@ description: Bonnes pratiques pour intégrer un déploiement Experience Manager 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: eaf08018fbbf1cf1e71db2edce9ea673d546073a
 workflow-type: tm+mt
-source-wordcount: '3296'
-ht-degree: 100%
+source-wordcount: '3294'
+ht-degree: 99%
 
 ---
 
@@ -70,7 +70,7 @@ Choix de la fonctionnalité à utiliser
 
 Pour prendre en charge les cas d’utilisation de la distribution des ressources, d’autres solutions doivent être envisagées :
 
-* [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) pour un module complémentaire SaaS configurable pour AEM Assets afin de publier des ressources.
+* [AEM Assets Brand ](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) Portalon pour un module complémentaire configurable des ressources à publier.
 
 * Les solutions personnalisées sont créées à partir de la base de code [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/).
 * [Partage de liens](/help/assets/share-assets.md) AEM pour partager des ressources ad hoc à l’aide de liens.
