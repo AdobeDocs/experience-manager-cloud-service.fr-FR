@@ -2,10 +2,10 @@
 title: Tests fonctionnels – Cloud Services
 description: Tests fonctionnels – Cloud Services
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: 3bf7defc9aa36c831e061e7209a765f2d60cfb33
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 100%
+source-wordcount: '469'
+ht-degree: 89%
 
 ---
 
@@ -16,6 +16,7 @@ Les tests fonctionnels sont classés en deux types :
 
 * Tests fonctionnels du produit
 * Tests fonctionnels personnalisés
+* Test d’interface utilisateur personnalisé
 
 ## Tests fonctionnels du produit {#product-functional-testing}
 
@@ -33,6 +34,12 @@ Cependant, si aucun fichier JAR de test n’est généré par la compilation, le
 
 >[!NOTE]
 >Le bouton **Télécharger le journal** permet d’accéder à un fichier ZIP contenant les journaux du formulaire détaillé d’exécution du test. Ces journaux ne contiennent pas les journaux du processus d’exécution AEM proprement dit. Vous pouvez y accéder à l’aide de la fonctionnalité de téléchargement standard ou d’affichage des dernières lignes des journaux. Pour plus d’informations, reportez-vous à [Accès et gestion des journaux](/help/implementing/cloud-manager/manage-logs.md).
+
+## Test d’interface utilisateur personnalisé {#custom-ui-testing}
+
+Les tests d’interface utilisateur personnalisés peuvent être écrits et permettent aux clients de créer rapidement des suites d’automatisation de tests pour valider les applications Web et mobiles créées sur des AEM.
+
+Pour en savoir plus sur la façon d’écrire des tests d’interface utilisateur personnalisés, voir [Création de tests d’interface utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html#building-ui-tests).
 
 
 ### Écriture de tests fonctionnels {#writing-functional-tests}
