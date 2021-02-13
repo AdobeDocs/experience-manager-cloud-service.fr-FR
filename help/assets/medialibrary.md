@@ -3,10 +3,10 @@ title: Différence entre AEM Assets et AEM Media Library
 description: Questions fréquentes concernant AEM Assets et AEM Media Library, y compris les différences entre les deux.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
+source-git-commit: e98179379a97e7270b755042928133ddbd8de3fa
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 97%
+source-wordcount: '693'
+ht-degree: 91%
 
 ---
 
@@ -23,14 +23,14 @@ AEM Assets est une application de la plateforme AEM qui permet à nos clients d
 
 La bibliothèque multimédia AEM est un élément désigné du référentiel de contenu de la gestion de contenu web d’AEM où les images et d’autres ressources partagées sont enregistrées. La bibliothèque multimédia utilise les fonctionnalités de gestion des actifs numériques de la gestion de contenu web d’AEM.
 
-## Que m’offre AEM Assets qui ne soit pas déjà inclus dans la gestion de contenu web d’AEM ?    {#what-do-i-get-from-aem-assets-that-is-not-part-of-aem-wcm}
+## Que m’offre AEM Assets qui ne soit pas déjà inclus dans la gestion de contenu web d’AEM ?   {#what-do-i-get-from-aem-assets-that-is-not-part-of-aem-wcm}
 
 Les fonctionnalités uniques disponibles uniquement pour les clients AEM Assets sont : 
 
-1. La possibilité d’extraire et de modifier des métadonnées autres que le titre, les balises et la description
-1. L’administrateur d’AEM Assets, accessible via l’écran de bienvenue en cliquant sur le deuxième bouton à côté de siteadmin
+1. Possibilité d’extraire et de modifier des métadonnées autres que le titre, les balises et la description.
+1. L’administrateur AEM Assets, disponible dans l’écran de bienvenue en cliquant sur la deuxième option adjacente à `siteadmin`.
 1. Toutes les étapes de workflow associées à la gestion des ressources numériques, à savoir l’assimilation AEM Assets, la suppression AEM Assets, la gestion des sous-ressources d’AEM Assets et l’extraction de métadonnées d’AEM Assets
-1. Les bibliothèques, y compris « dam » dans l’espace de modules
+1. Bibliothèques incluant &quot;dam&quot; dans l’espace du package.
 
 L’utilisation de ces fonctions nécessite une licence AEM Assets valide.
 
