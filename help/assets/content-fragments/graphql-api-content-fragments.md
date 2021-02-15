@@ -2,10 +2,10 @@
 title: API GraphQL d’AEM à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API GraphQL d’AEM pour la diffusion de contenu découplée.
 translation-type: tm+mt
-source-git-commit: 48b889e2357f9564c7a0e529c2bde5a05f7fcea1
+source-git-commit: 05dd9c9111409a67bf949b0fd8a13041eae6ef1d
 workflow-type: tm+mt
-source-wordcount: '3228'
-ht-degree: 70%
+source-wordcount: '3296'
+ht-degree: 66%
 
 ---
 
@@ -24,8 +24,8 @@ L’utilisation de l’API GraphQL dans AEM permet la diffusion efficace de frag
 >
 >GraphQL est actuellement utilisé comme Cloud Service dans deux scénarios (distincts) à Adobe Experience Manager (AEM) :
 >
->* [aem Commerce utilise les données d&#39;une plateforme commerciale via GraphQL](/help/commerce-cloud/architecture/magento.md).
->* aem Fragments de contenu fonctionnent conjointement avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard), pour fournir du contenu structuré à utiliser dans vos applications.
+>* [AEM Commerce utilise les données d&#39;une plateforme commerciale via GraphQL](/help/commerce-cloud/architecture/magento.md).
+>* AEM Fragments de contenu fonctionnent conjointement avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard), pour fournir du contenu structuré à utiliser dans vos applications.
 
 
 ## L’API GraphQL {#graphql-api}
@@ -725,23 +725,90 @@ Vous trouverez ci-dessous les étapes nécessaires à la conservation d’une re
 
 ## Requête du point d’entrée GraphQL à partir d’un site Web externe {#query-graphql-endpoint-from-external-website}
 
+Pour accéder au point de terminaison GraphQL à partir d’un site Web externe, vous devez configurer les éléments suivants :
+
+* [Filtre CORS](#cors-filter)
+* [Filtre de parrain](#referrer-filter)
+
+### Filtre CORS {#cors-filter}
+
 >[!NOTE]
 >
 >Pour un aperçu détaillé de la politique de partage des ressources CORS dans AEM, voir [Description du partage des ressources Cross-Origin (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=fr#understand-cross-origin-resource-sharing-(cors)).
 
-Pour autoriser un site Web tiers à consommer la sortie JSON, une politique CORS doit être configurée dans le référentiel Git client. Vous devez pour cela ajouter un fichier de configuration CORS OSGi approprié pour le point d’entrée souhaité. Cette configuration doit spécifier un nom de site Web approuvé (ou regex) pour lequel l’accès doit être accordé.
+Pour accéder au point de terminaison GraphQL, une stratégie CORS doit être configurée dans le référentiel Git du client. Pour ce faire, vous devez ajouter un fichier de configuration CORS OSGi approprié pour les points de terminaison souhaités.
 
-* Accès au point d’entrée GraphQL :
+Cette configuration doit spécifier une origine de site Web approuvée `alloworigin` ou `alloworiginregexp` pour laquelle l&#39;accès doit être accordé.
 
-   * alloworigin : [votre domaine] ou alloworiginregexp : [votre domaine regex]
-   * supportedmethods : [POST]
-   * allowedpaths : [&quot;/content/graphql/global/endpoint.json&quot;]
+Par exemple, pour accorder l’accès au point de terminaison GraphQL et au point de terminaison de requêtes persistantes pour `https://my.domain`, vous pouvez utiliser :
 
-* Accès au point d’entrée des requêtes persistantes GraphQL :
+```xml
+{
+  "supportscredentials":true,
+  "supportedmethods":[
+    "GET",
+    "HEAD",
+    "POST"
+  ],
+  "exposedheaders":[
+    ""
+  ],
+  "alloworigin":[
+    "https://my.domain"
+  ],
+  "maxage:Integer":1800,
+  "alloworiginregexp":[
+    ""
+  ],
+  "supportedheaders":[
+    "Origin",
+    "Accept",
+    "X-Requested-With",
+    "Content-Type",
+    "Access-Control-Request-Method",
+    "Access-Control-Request-Headers"
+  ],
+  "allowedpaths":[
+    "/content/_cq_graphql/global/endpoint.json",
+    "/graphql/execute.json/.*"
+  ]
+}
+```
 
-   * alloworigin : [votre domaine] ou alloworiginregexp : [votre domaine regex]
-   * supportedmethods : [GET]
-   * allowedpaths : [&quot;/graphql/execute.json/.*&quot;]
+Si vous avez configuré un chemin d&#39;accès à la vanité pour le point de terminaison, vous pouvez également l&#39;utiliser dans `allowedpaths`.
+
+### Filtre de parrain {#referrer-filter}
+
+Outre la configuration CORS, un filtre de Parrain doit être configuré pour autoriser l’accès à partir d’hôtes tiers.
+
+Pour ce faire, ajoutez un fichier de configuration de filtre de Parrain OSGi approprié qui :
+
+* spécifie un nom d&#39;hôte de site Web approuvé ; soit `allow.hosts`, soit `allow.hosts.regexp`,
+* accorde l&#39;accès pour ce nom d&#39;hôte.
+
+Par exemple, pour accorder l’accès aux requêtes avec le Parrain `my.domain`, vous pouvez :
+
+```xml
+{
+    "allow.empty":false,
+    "allow.hosts":[
+      "my.domain"
+    ],
+    "allow.hosts.regexp":[
+      ""
+    ],
+    "filter.methods":[
+      "POST",
+      "PUT",
+      "DELETE",
+      "COPY",
+      "MOVE"
+    ],
+    "exclude.agents.regexp":[
+      ""
+    ]
+}
+```
 
 >[!CAUTION]
 >
