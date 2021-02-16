@@ -2,10 +2,10 @@
 title: API GraphQL d’AEM à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API GraphQL d’AEM pour la diffusion de contenu découplée.
 translation-type: tm+mt
-source-git-commit: 05dd9c9111409a67bf949b0fd8a13041eae6ef1d
+source-git-commit: 89a51faa08adc1a87d86c8e280919b3a890aae8b
 workflow-type: tm+mt
-source-wordcount: '3296'
-ht-degree: 66%
+source-wordcount: '2935'
+ht-degree: 62%
 
 ---
 
@@ -98,9 +98,11 @@ Avec GraphQL, vous pouvez exécuter des requêtes pour renvoyer l&#39;un ou l&#3
 
 * A **[liste des entrées](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-Vous pouvez également effectuer les opérations suivantes :
+<!--
+You can also perform:
 
-* [Requêtes persistantes, mises en cache](#persisted-queries-caching)
+* [Persisted Queries, that are cached](#persisted-queries-caching)
+-->
 
 ## GraphQL pour le point de terminaison AEM {#graphql-aem-endpoint}
 
@@ -531,20 +533,21 @@ Pour d&#39;autres exemples, voir :
 
 * [Modèles de requêtes basées sur le projet WKND](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
 
-## Requêtes conservées (cache) {#persisted-queries-caching}
+<!--
+## Persisted Queries (Caching) {#persisted-queries-caching}
 
-Après avoir préparé une requête avec une requête POST, elle peut être exécutée avec une requête GET qui peut être mise en cache par des caches HTTP ou un réseau CDN.
+After preparing a query with a POST request, it can be executed with a GET request that can be cached by HTTP caches or a CDN.
 
-Cela est nécessaire, car les requêtes POST ne sont généralement pas mises en cache et si vous utilisez GET avec la requête comme paramètre, il existe un risque important que le paramètre devienne trop volumineux pour les services et intermédiaires HTTP.
+This is required as POST queries are usually not cached, and if using GET with the query as a parameter there is a significant risk of the parameter becoming too large for HTTP services and intermediates.
 
-Vous trouverez ci-dessous les étapes nécessaires à la conservation d’une requête donnée :
+Here are the steps required to persist a given query:
 
 >[!NOTE]
->Avant cela, les **Requêtes de persistance GraphQL** doivent être activées pour la configuration appropriée. Voir [Activation de la fonctionnalité de fragment de contenu dans le navigateur de configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) pour plus d’informations.
+>Prior to this the **GraphQL Persistence Queries** need to be enabled, for the appropriate configuration. See [Enable Content Fragment Functionality in Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) for more details.
 
-1. Préparez la requête avec une commande PUT sur l’URL du nouveau point d’entrée `/graphql/persist.json/<config>/<persisted-label>`.
+1. Prepare the query by PUTing it to the new endpoint URL `/graphql/persist.json/<config>/<persisted-label>`.
 
-   Par exemple, créez une requête persistante :
+   For example, create a persisted query:
 
    ```xml
    $ curl -X PUT \
@@ -565,32 +568,32 @@ Vous trouverez ci-dessous les étapes nécessaires à la conservation d’une re
    }'
    ```
 
-1. À ce stade, vérifiez la réponse.
+1. At this point, check the response.
 
-   Par exemple, contrôlez le succès :
+   For example, check for success:
 
-   ```xml
-   {
-     "action": "create",
-     "configurationName": "wknd",
-     "name": "plain-article-query",
-     "shortPath": "/wknd/plain-article-query",
-     "path": "/conf/wknd/settings/graphql/persistentQueries/plain-article-query"
-   }
-   ```
+     ```xml
+     {
+       "action": "create",
+       "configurationName": "wknd",
+       "name": "plain-article-query",
+       "shortPath": "/wknd/plain-article-query",
+       "path": "/conf/wknd/settings/graphql/persistentQueries/plain-article-query"
+     }
+     ```
 
-1. Vous pouvez ensuite exécuter à nouveau la requête conservée avec une commande GET sur l’URL `/graphql/execute.json/<shortPath>`.
+1. You can then replay the persisted query by GETing the URL `/graphql/execute.json/<shortPath>`.
 
-   Par exemple, utilisez la requête persistante :
+   For example, use the persisted query:
 
    ```xml
    $ curl -X GET \
        http://localhost:4502/graphql/execute.json/wknd/plain-article-query
    ```
 
-1. Mettez à jour une requête persistante avec une commande POST vers un chemin de requête existant.
+1. Update a persisted query by POSTing to an already existing query path.
 
-   Par exemple, utilisez la requête persistante :
+   For example, use the persisted query:
 
    ```xml
    $ curl -X POST \
@@ -614,9 +617,9 @@ Vous trouverez ci-dessous les étapes nécessaires à la conservation d’une re
    }'
    ```
 
-1. Créez une requête ordinaire encapsulée.
+1. Create a wrapped plain query.
 
-   Par exemple :
+   For example:
 
    ```xml
    $ curl -X PUT \
@@ -627,9 +630,9 @@ Vous trouverez ci-dessous les étapes nécessaires à la conservation d’une re
    '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }"}'
    ```
 
-1. Créez une requête ordinaire encapsulée avec le contrôle de cache.
+1. Create a wrapped plain query with cache control.
 
-   Par exemple :
+   For example:
 
    ```xml
    $ curl -X PUT \
@@ -640,9 +643,9 @@ Vous trouverez ci-dessous les étapes nécessaires à la conservation d’une re
    '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
    ```
 
-1. Créez une requête persistante avec des paramètres :
+1. Create a persisted query with parameters:
 
-   Par exemple :
+   For example:
 
    ```xml
    $ curl -X PUT \
@@ -666,62 +669,62 @@ Vous trouverez ci-dessous les étapes nécessaires à la conservation d’une re
      }'
    ```
 
-1. Exécution d’une requête avec des paramètres.
+1. Executing a query with parameters.
 
-   Par exemple :
+   For example:
 
    ```xml
    $ curl -X POST \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-   
+
    $ curl -X GET \
        "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    ```
 
-1. Pour exécuter la requête lors de la publication, l’arborescence persistante associée doit être répliquée.
+1. To execute the query on publish, the related persist tree need to replicated
 
-   * Utilisation d’un POST pour la réplication :
+   * Using a POST for replication:
 
-      ```xml
-      $curl -X POST   http://localhost:4502/bin/replicate.json \
-        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-        -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
-        -F cmd=activate
-      ```
+     ```xml
+     $curl -X POST   http://localhost:4502/bin/replicate.json \
+       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
+       -F cmd=activate
+     ```
 
-   * Utilisation d’un module :
-      1. Créez une définition de module.
-      1. Incluez la configuration (par exemple, `/conf/wknd/settings/graphql/persistentQueries`).
-      1. Créez le module.
-      1. Répliquez le module.
-   * Utilisation de l’outil de réplication/distribution.
-      1. Accédez à l’outil Distribution.
-      1. Sélectionnez l’activation de l’arborescence pour la configuration (par exemple, `/conf/wknd/settings/graphql/persistentQueries`).
-   * Utilisation d’un workflow (via la configuration du lanceur de workflow) :
-      1. Définissez une règle de lancement de workflow pour exécuter un modèle de workflow qui répliquerait la configuration sur différents événements (par exemple, créer, modifier, entre autres).
+   * Using a package:
+     1. Create a new package definition.
+     1. Include the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
+     1. Build the package.
+     1. Replicate the package.
 
+   * Using replication/distribution tool.
+     1. Go to the Distribution tool.
+     1. Select tree activation for the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
 
+   * Using a workflow (via workflow launcher configuration):
+     1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
 
-1. Une fois que la configuration de la requête est publiée, les mêmes principes s’appliquent, en utilisant simplement le point d’entrée de publication.
-
-   >[!NOTE]
-   >
-   >Pour un accès anonyme, le système suppose que l’ACL permet à « tout le monde » d’avoir accès à la configuration de la requête.
-   >
-   >Si ce n’est pas le cas, l’exécution sera impossible.
+1. Once the query configuration is on publish, the same principles apply, just using the publish endpoint.
 
    >[!NOTE]
    >
-   >Les points-virgules (;) des URL doivent être codés.
+   >For anonymous access the system assumes that the ACL allows "everyone" to have access to the query configuration.
    >
-   >Par exemple, comme dans la demande d’exécution d’une requête persistante :
+   >If that is not the case it will not be able to execute.
+
+   >[!NOTE]
    >
+   >Any semicolons (";") in the URLs need to be encoded.
    >
-   ```xml
+   >For example, as in the request to Execute a persisted query:
+   >
+   >```xml
    >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    >```
+-->
 
 ## Requête du point d’entrée GraphQL à partir d’un site Web externe {#query-graphql-endpoint-from-external-website}
 
@@ -740,8 +743,13 @@ Pour accéder au point de terminaison GraphQL, une stratégie CORS doit être co
 
 Cette configuration doit spécifier une origine de site Web approuvée `alloworigin` ou `alloworiginregexp` pour laquelle l&#39;accès doit être accordé.
 
-Par exemple, pour accorder l’accès au point de terminaison GraphQL et au point de terminaison de requêtes persistantes pour `https://my.domain`, vous pouvez utiliser :
+<!--
+For example, to grant access to the GraphQL endpoint and persisted queries endpoint for `https://my.domain` you can use:
+-->
 
+Par exemple, pour accorder l’accès au point de terminaison GraphQL pour `https://my.domain`, vous pouvez utiliser :
+
+<!--
 ```xml
 {
   "supportscredentials":true,
@@ -771,6 +779,39 @@ Par exemple, pour accorder l’accès au point de terminaison GraphQL et au poin
   "allowedpaths":[
     "/content/_cq_graphql/global/endpoint.json",
     "/graphql/execute.json/.*"
+  ]
+}
+```
+-->
+
+```xml
+{
+  "supportscredentials":true,
+  "supportedmethods":[
+    "GET",
+    "HEAD",
+    "POST"
+  ],
+  "exposedheaders":[
+    ""
+  ],
+  "alloworigin":[
+    "https://my.domain"
+  ],
+  "maxage:Integer":1800,
+  "alloworiginregexp":[
+    ""
+  ],
+  "supportedheaders":[
+    "Origin",
+    "Accept",
+    "X-Requested-With",
+    "Content-Type",
+    "Access-Control-Request-Method",
+    "Access-Control-Request-Headers"
+  ],
+  "allowedpaths":[
+    "/content/_cq_graphql/global/endpoint.json"
   ]
 }
 ```
