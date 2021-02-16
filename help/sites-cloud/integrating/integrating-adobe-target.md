@@ -2,9 +2,9 @@
 title: Intégration à Adobe Target
 description: 'Intégration à Adobe Target '
 translation-type: tm+mt
-source-git-commit: 344afa2d78c2453dce4d49e108ea7617d307ea09
+source-git-commit: 79cdc4f453efe5b251891c09934e2dcb823f645c
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1047'
 ht-degree: 81%
 
 ---
