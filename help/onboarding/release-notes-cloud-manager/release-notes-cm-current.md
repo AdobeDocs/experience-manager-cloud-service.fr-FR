@@ -2,10 +2,10 @@
 title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.2.0
 description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.2.0
 translation-type: tm+mt
-source-git-commit: 968775b24441457143f497c2cfb1f9ece392d475
+source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 18%
+source-wordcount: '388'
+ht-degree: 19%
 
 ---
 
@@ -21,8 +21,6 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.2.0 est
 ## Cloud Manager {#cloud-manager}
 
 ### Nouveautés {#what-is-new}
-
-* Le pipeline de production de Cloud Manager inclut désormais la fonctionnalité de test d’interface utilisateur personnalisée.
 
 * Les clients du module Ressources peuvent désormais choisir quand et où déployer leur instance de portail de marque en libre-service via l’interface utilisateur de Cloud Manager. Pour un programme standard (non sandbox) avec la solution Ressources, le portail de marque peut désormais être mis en service sur l’environnement de production. L’approvisionnement ne peut être effectué qu’une seule fois sur l’environnement Production.
 
