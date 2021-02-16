@@ -2,10 +2,10 @@
 title: Intégration à Adobe Target
 description: 'Intégration à Adobe Target '
 translation-type: tm+mt
-source-git-commit: f07df8230ac3be34c29f54c41dc75ed21b2f5b3d
+source-git-commit: 344afa2d78c2453dce4d49e108ea7617d307ea09
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 100%
+source-wordcount: '1048'
+ht-degree: 81%
 
 ---
 
@@ -33,9 +33,33 @@ Adobe Launch est nécessaire afin de gérer les propriétés côté client pour 
 4. Renseignez les détails (voir ci-dessous), puis sélectionnez **Connexion**.
    ![Connexion](assets/open_screen1.png "Connexion")
 
-### Configuration IMS
+### Configuration IMS {#ims-configuration}
 
 Une configuration IMS pour Launch et Target est nécessaire pour intégrer correctement Target à AEM et Launch. Bien que la configuration IMS de Launch est préconfigurée dans AEM as a Cloud Service, celle de Target doit être créée (une fois Target approvisionné). Reportez-vous à [cette vidéo](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) et à [cette page](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/integration/integration-ims-adobe-io.html) pour savoir comment créer la configuration IMS de Target.
+
+### ID de client Adobe Target et code client Adobe Target {#tenant-client}
+
+Lors de la configuration des champs ID client Adobe Target et Code client Adobe Target, veuillez tenir compte des points suivants :
+
+1. Pour la plupart des clients, l’ID de client et le code client sont identiques. Cela signifie que les deux champs contiennent les mêmes informations et sont identiques. Veillez à saisir l’identifiant du client dans les deux champs.
+2. A des fins héritées, vous pouvez également entrer différentes valeurs dans les champs ID de client et Code client.
+
+Dans les deux cas, il faut savoir que :
+
+* Par défaut, le code client (s’il est ajouté en premier) sera également automatiquement copié dans le champ ID du client.
+* Vous avez la possibilité de modifier le jeu d’ID de client par défaut.
+* Par conséquent, les appels à la Cible du serveur principal sont basés sur l&#39;identifiant du client et les appels à la Cible côté client sont basés sur le code client.
+
+Comme nous l&#39;avons indiqué plus haut, le premier cas est le plus courant pour l&#39;AEM en tant que Cloud Service. Dans les deux cas, veillez à ce que les champs **** contiennent les informations appropriées en fonction de vos besoins.
+
+>[!NOTE]
+>
+> Si vous souhaitez modifier une configuration de Cible existante :
+>
+> 1. Saisissez de nouveau l’identifiant du client.
+> 2. Se reconnecter à la Cible.
+> 3. Enregistrez la configuration.
+
 
 ### Modification de la configuration de Target {#edit-target-configuration}
 
