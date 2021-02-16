@@ -2,10 +2,10 @@
 title: Changements notables dans  [!DNL Adobe Experience Manager Assets] en tant que  [!DNL Cloud Service]
 description: Modifications notables apportées à  [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] par rapport à [ !DNL Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: ed449eea146ec18bdc4d25ae4938f9a36180037d
+source-git-commit: 035d77ee4a6f9ef3593a34b2691ab6545d9e4f11
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 46%
+source-wordcount: '697'
+ht-degree: 37%
 
 ---
 
@@ -31,10 +31,14 @@ Le transfert des ressources est optimisé pour une efficacité optimale en perme
 * Le flux de travaux par défaut **[!UICONTROL Mise à jour des ressources DAM]** dans les versions précédentes de [!DNL Experience Manager] n&#39;est plus disponible. Au lieu de cela, les microservices de ressources offrent un service évolutif et facilement disponible qui couvre la plupart du traitement des ressources par défaut (rendus, extraction de métadonnées et extraction de texte pour l’indexation).
    * Voir [configuration et utilisation des microservices de ressources](/help/assets/asset-microservices-configure-and-use.md)
    * Pour que les étapes de workflow personnalisées soient intégrées au traitement, vous pouvez utiliser les [workflows de post-traitement](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)..
+* L’écriture différée des métadonnées n’est pas prise en charge.
 * Les ressources téléchargées à l’aide de Package Manager doivent être retraitées manuellement à l’aide de l’action **[!UICONTROL Retraiter l’actif]** de l’interface [!DNL Assets].
-* Un fichier numérique sans extension ou avec une extension incorrecte n’est pas traité comme vous le souhaitez. Par exemple, lors du transfert de ces ressources, rien ne se produit ou un profil de traitement incorrect peut s’appliquer à la ressource. Les utilisateurs peuvent toujours stocker les fichiers binaires dans le module DAM.
+* Un fichier numérique sans extension ou avec une extension incorrecte n’est pas traité comme vous le souhaitez. [La ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html) détection automatique du type MIME n&#39;est pas disponible. Par exemple, lors du transfert de ces ressources, rien ne se produit ou un profil de traitement incorrect peut s’appliquer à la ressource. Les utilisateurs peuvent toujours stocker les fichiers binaires sans extension dans la gestion des actifs numériques.
+* [[!DNL Assets] L&#39;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) expérience de page d&#39;accueil n&#39;est pas disponible.
+* La détection des actifs de duplicata fonctionne différemment par rapport à [comment elle fonctionnait dans le Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html).
+* Pour les rendus FPO (placement uniquement), les rendus sont générés différemment par rapport à leur fonctionnement dans les versions [!DNL Experience Manager] précédentes. Voir [Rendu FPO pour Experience Manager en tant que Cloud Service](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html).
 
-Les rendus standard générés avec les microservices de ressources sont stockés de manière rétrocompatible dans les nœuds du référentiel de ressources (conventions d’affectation de noms identiques).
+Les rendus standard générés avec des microservices de ressources sont stockés de manière compatible dans les noeuds du référentiel de ressources en appliquant les mêmes conventions d’affectation de nom.
 
 ## Développement et test de microservices de ressources {#asset-microservices}
 
