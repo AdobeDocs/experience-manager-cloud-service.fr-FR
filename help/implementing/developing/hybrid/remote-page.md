@@ -17,7 +17,7 @@ Lorsque vous décidez de [quel niveau d&#39;intégration](/help/implementing/dev
 
 Le composant RemotePage récupère toutes les ressources nécessaires à partir du `asset-manifest.json` généré par l&#39;application et l&#39;utilise pour effectuer le rendu des SPA dans AEM.
 
-## Conditions requises {#requirements}
+## Conditions préalables {#requirements}
 
 * Activer CORS dans le développement
 * Configuration de l’URL distante dans les propriétés de page
