@@ -1,6 +1,6 @@
 ---
 title: En tête et sans tête en AEM
-description: aem projets peuvent être mis en oeuvre dans un modèle plein d'esprit et sans tête, mais le choix n'est pas binaire. aem offre la flexibilité d'exploiter les avantages des deux modèles dans un seul projet.
+description: AEM projets peuvent être mis en oeuvre dans un modèle plein d'esprit et sans tête, mais le choix n'est pas binaire. AEM offre la flexibilité d'exploiter les avantages des deux modèles dans un seul projet.
 translation-type: tm+mt
 source-git-commit: 772717b7ad3baa17a58e251c128663035eb89931
 workflow-type: tm+mt
@@ -12,15 +12,15 @@ ht-degree: 0%
 
 # En-tête et sans en-tête en AEM {#headful-headless}
 
-Les projets Adobe Experience Manager peuvent être mis en oeuvre à la fois dans des modèles sans tête et en tête, mais le choix n&#39;est pas binaire. aem offre la flexibilité d&#39;exploiter les avantages des deux modèles dans un seul projet. Ce document fournit un aperçu des différents modèles et décrit les niveaux d&#39;intégration SPA.
+Les projets Adobe Experience Manager peuvent être mis en oeuvre à la fois dans des modèles sans tête et en tête, mais le choix n&#39;est pas binaire. AEM offre la flexibilité d&#39;exploiter les avantages des deux modèles dans un seul projet. Ce document fournit un aperçu des différents modèles et décrit les niveaux d&#39;intégration SPA.
 
 ## Présentation {#overview}
 
-aem offre de puissants outils pour gérer à la fois la création de contenu et sa diffusion sur une seule plate-forme. Il s&#39;agit d&#39;un modèle traditionnel de gestion de contenu &quot;dynamique&quot;, où les auteurs et les développeurs de contenu travaillent sur la même plate-forme pour fournir les expériences aux consommateurs de contenu.
+AEM offre de puissants outils pour gérer à la fois la création de contenu et sa diffusion sur une seule plate-forme. Il s&#39;agit d&#39;un modèle traditionnel de gestion de contenu &quot;dynamique&quot;, où les auteurs et les développeurs de contenu travaillent sur la même plate-forme pour fournir les expériences aux consommateurs de contenu.
 
 Les AEM peuvent également être utilisés pour gérer simplement le contenu, ce qui permet de gérer la présentation et la diffusion du contenu par une autre plateforme. Il s&#39;agit du modèle de gestion de contenu &quot;sans tête&quot;, où les auteurs et les développeurs de contenu travaillent sur différentes plateformes pour fournir une expérience aux consommateurs de contenu.
 
-Mais ce n&#39;est pas nécessairement un choix binaire. aem offres une flexibilité sans précédent, vous permettant d&#39;exploiter les avantages des deux modèles pour votre projet.
+Mais ce n&#39;est pas nécessairement un choix binaire. AEM offres une flexibilité sans précédent, vous permettant d&#39;exploiter les avantages des deux modèles pour votre projet.
 
 ![Modèles d’implémentation AEM](headless/assets/aem-implementation-models.png)
 
@@ -28,11 +28,11 @@ Dans un modèle avec ou sans pile, le contenu est géré dans le référentiel A
 
 Dans un modèle sans en-tête, le contenu est géré dans le référentiel AEM, mais diffusé via des API telles que REST et GraphQL sur un autre système afin de générer le contenu pour l’expérience utilisateur. Dans ce modèle, le contenu est créé dans AEM, mais il est mis en forme, présenté et diffusé sur une autre plateforme.
 
-Les applications d’une seule page (SPA) sont souvent la destination du contenu diffusé sans encombre par AEM. Cependant, ces SPA ne doivent pas nécessairement être entièrement externes à l&#39;AEM. aem vous permet de décider dans quelle mesure votre SPA est intégrée à l&#39;AEM. Prenons un exemple.
+Les applications d’une seule page (SPA) sont souvent la destination du contenu diffusé sans encombre par AEM. Cependant, ces SPA ne doivent pas nécessairement être entièrement externes à l&#39;AEM. AEM vous permet de décider dans quelle mesure votre SPA est intégrée à l&#39;AEM. Prenons un exemple.
 
 ## Exemple de boutique Web {#web-shop-example}
 
-Supposons que vous ayez un site Web pour votre société en tant que SPA. Vous y trouverez tous les détails et images de votre produit. Vous présentez ensuite AEM afin de renforcer vos efforts marketing, tels que les sites promotionnels, les blogs et le contenu des campagnes. Comment intégrer les deux ? aem permet un éventail d’options :
+Supposons que vous ayez un site Web pour votre société en tant que SPA. Vous y trouverez tous les détails et images de votre produit. Vous présentez ensuite AEM afin de renforcer vos efforts marketing, tels que les sites promotionnels, les blogs et le contenu des campagnes. Comment intégrer les deux ? AEM permet un éventail d’options :
 
 * **Permettre aux systèmes de fonctionner indépendamment.**
 * **Fournissez le site Web avec un contenu limité provenant d&#39;AEM via GraphQL.** Le contenu peut être créé par des auteurs en AEM, mais uniquement visible via la boutique web SPA.
@@ -70,7 +70,7 @@ SPA intégration se fait sur un spectre de quatre niveaux en AEM.
    * Le contenu peut être visualisé en contexte dans AEM.
    * La plupart du contenu peut être modifié dans AEM.
 
-Le niveau 1 est un exemple typique d’une mise en oeuvre sans tête. Cependant, les auteurs de contenu ne peuvent vue leur contenu qu’en contexte au sein du SPA. aem n&#39;est qu&#39;un outil de création.
+Le niveau 1 est un exemple typique d’une mise en oeuvre sans tête. Cependant, les auteurs de contenu ne peuvent vue leur contenu qu’en contexte au sein du SPA. AEM n&#39;est qu&#39;un outil de création.
 
 L&#39;avantage et la souplesse de l&#39;AEM deviennent évidents avec les niveaux 2 et 3 tout en conservant les avantages de SPA. Les auteurs de contenu peuvent créer leur contenu dans AEM, mais ils peuvent également le voir dans son contexte dans AEM. Le SPA gagne la capacité d&#39;être écrit en AEM, mais toujours être livré comme un SPA.
 
