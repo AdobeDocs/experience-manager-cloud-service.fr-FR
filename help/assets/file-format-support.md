@@ -1,25 +1,25 @@
 ---
 title: Formats de fichiers et types MIME pris en charge
-description: Formats de fichier et types MIME pris en charge par  [!DNL Experience Manager Assets] en tant que  [!DNL Cloud Service].
+description: Formats de fichier et types MIME pris en charge par  [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
 source-wordcount: '818'
-ht-degree: 86%
+ht-degree: 93%
 
 ---
 
 
-# [!DNL Assets] formats de fichier pris en charge  {#supported-file-formats}
+# Formats de fichiers pris en charge [!DNL Assets] {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] as a prend en charge les fonctionnalités de base de gestion de contenu (stockage, gestion des métadonnées en ligne, contrôle de version, chargement et téléchargement, etc.) pour tout fichier binaire, quel que soit son format.[!DNL Cloud Service] [!DNL Adobe Experience Manager Assets] prend en charge un large éventail de formats de fichiers et chaque fonctionnalité de produit prend en charge différents formats.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] prend en charge les fonctionnalités de base de gestion de contenu (stockage, gestion des métadonnées en ligne, contrôle de version, chargement et téléchargement, etc.) pour tout fichier binaire, quel que soit son format. [!DNL Adobe Experience Manager Assets] prend en charge un large éventail de formats de fichiers et chaque fonctionnalité de produit prend en charge différents formats.
 
-En outre, [!DNL Experience Manager Assets] offre une prise en charge étendue pour générer des prévisualisations et des rendus et pour extraire des métadonnées et du texte pour l’indexation de texte intégral. Cette prise en charge étendue est assurée à l’aide de [microservices de ressources](asset-microservices-configure-and-use.md).
+En outre, [!DNL Experience Manager Assets] offre une prise en charge étendue pour générer des aperçus et des rendus et extraire des métadonnées et du texte en vue de l’indexation en texte intégral. Cette prise en charge étendue est assurée à l’aide de [microservices de ressources](asset-microservices-configure-and-use.md).
 
 Voici les points saillants de la conversion d’actifs à l’aide des microservices d’actifs :
 
-* Formats de fichier [Adobe ](#adobe-formats) produit par les applications et services d&#39;Adobe, y compris [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] et [!DNL Adobe Acrobat] ou PDF.
+* [Formats de fichiers Adobe](#adobe-formats) clés générés par les applications et services Adobe, notamment [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] et [!DNL Adobe Acrobat] ou PDF.
 * [Formats de fichiers d’imagerie](#image-formats) clés.
 * [Formats de fichiers Camera Raw](#camera-raw-formats) pour un large éventail d’appareils photo, dont Canon, Nikon, Fujifilm, Olympus et d’autres fabricants (optimisés par Adobe Camera Raw).
 * [Formats de documents](#document-formats) courants, y compris les formats Microsoft Office et Open Document.
