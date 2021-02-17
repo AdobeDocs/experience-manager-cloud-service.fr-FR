@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Exemples de magasins candidats ContextHub   {#sample-contexthub-store-candidates}
+# Exemples de magasins candidats ContextHub  {#sample-contexthub-store-candidates}
 
 ContextHub fournit plusieurs exemples de magasins candidats que vous pouvez utiliser dans vos solutions. Les informations suivantes sont fournies pour chaque exemple :
 
