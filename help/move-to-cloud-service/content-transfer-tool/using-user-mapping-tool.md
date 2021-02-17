@@ -45,7 +45,7 @@ Suivez les étapes ci-dessous pour configurer ce paramètre :
 
 ## Interface utilisateur {#user-interface}
 
-L’outil de mappage utilisateur est intégré à l’outil de transfert de contenu. Vous pouvez télécharger l&#39;outil de transfert de contenu à partir de [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Pour plus d&#39;informations sur la dernière version, consultez les [Notes de mise à jour actuelles](/help/release-notes/release-notes-cloud/release-notes-current.md).
+L’outil de mappage utilisateur est intégré à l’outil de transfert de contenu. Vous pouvez télécharger l&#39;outil de transfert de contenu à partir de [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/fr-FR/aemcloud.html). Pour plus d&#39;informations sur la dernière version, consultez les [Notes de mise à jour actuelles](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 1. Sélectionnez Adobe Experience Manager et accédez à Outils -> **Opérations** -> **Content Transfer** (Transfert de contenu).
 1. Cliquez sur **Créer une configuration de mappage utilisateur**.
