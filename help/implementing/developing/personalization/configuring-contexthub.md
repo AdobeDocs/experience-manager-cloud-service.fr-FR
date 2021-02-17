@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Configuration de ContextHub  {#configuring-contexthub}
+# Configuration de ContextHub {#configuring-contexthub}
 
 ContextHub est une structure pour stocker, manipuler et présenter des données contextuelles. Pour plus de détails sur ContextHub, voir [Aperçu du développeur ContextHub](contexthub.md).
 
@@ -133,7 +133,7 @@ AEM fournit des exemples de candidats de magasins sur lesquels vous pouvez baser
 1. (Facultatif) Pour remplacer la configuration de magasin par défaut, saisissez un objet JSON dans la case Configuration des détails (JSON).
 1. Cliquez ou appuyez sur Enregistrer.
 
-## Exemple : en utilisant un service JSONP   {#example-using-a-jsonp-service}
+## Exemple : en utilisant un service JSONP  {#example-using-a-jsonp-service}
 
 Cet exemple illustre comment configurer un magasin et afficher les données dans un module d’IU. Dans cet exemple, le service MD5 du site jsontest.com est utilisé comme source de données pour un magasin. Le service renvoie le code de hachage MD5 d’une chaîne donnée, au format JSON.
 
