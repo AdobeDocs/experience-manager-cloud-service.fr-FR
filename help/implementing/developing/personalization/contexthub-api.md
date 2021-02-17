@@ -67,7 +67,7 @@ Le tableau suivant répertorie les noms des événements qui se produisent pour 
 
 L’objet ContextHub fournit l’accès à tous les magasins.
 
-### Fonctions (ContextHub)   {#functions-contexthub}
+### Fonctions (ContextHub)  {#functions-contexthub}
 
 #### getAllStores() {#getallstores}
 
