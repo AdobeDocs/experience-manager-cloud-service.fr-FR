@@ -46,7 +46,7 @@ Les auteurs souhaitent utiliser AEM uniquement dans une optique de création, m
 >
 Si vous rencontrez des problèmes, contactez votre administrateur système.
 
-## Quand utiliser les fragments d’expérience ?    {#when-should-you-use-experience-fragments}
+## Quand utiliser les fragments d’expérience ?   {#when-should-you-use-experience-fragments}
 
 Les fragments d’expérience doivent être utilisés dans les cas suivants :
 
