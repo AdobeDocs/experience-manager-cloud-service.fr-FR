@@ -1,5 +1,5 @@
 ---
-title: Composants Présentation
+title: Aperçu des composants
 description: Les composants sont des unités modulaires qui exécutent des fonctionnalités spécifiques pour présenter du contenu sur votre site web.
 translation-type: tm+mt
 source-git-commit: 83c27daae4e8ae2ae6a8f115c9da9527971c6ecb
