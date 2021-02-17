@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Création et gestion d’offres    {#creating-and-managing-offers}
+# Création et gestion d’offres   {#creating-and-managing-offers}
 
 Utilisez la console Offres pour créer des offres que vous pourrez [utiliser dans le cadre d’expériences associées à des activités](/help/sites-cloud/authoring/personalization/targeted-content.md). La création d’offres dans la console Offres permet de gagner du temps lorsque plusieurs expériences nécessitent la même offre :
 
