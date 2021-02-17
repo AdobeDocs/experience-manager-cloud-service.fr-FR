@@ -203,7 +203,7 @@ Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’
    * Peut être configuré pour une ou plusieurs références (dans le fragment résultant).
 
 >[!NOTE]
-aem dispose d&#39;une protection récurrente pour :
+AEM dispose d&#39;une protection récurrente pour :
 * Références du contenu
 Cela empêche l’utilisateur d’ajouter une référence au fragment actif. Cela peut conduire à une boîte de dialogue vide du sélecteur de référence aux fragments.
 
