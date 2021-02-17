@@ -19,7 +19,7 @@ Cloud Manager permet aux clients d’installer des certificats SSL en libre-serv
 
 * Cloud Manager ne fournit pas de certificats SSL ni de clés privées. Ils doivent être obtenus auprès d’autorités de certification tierces. Consultez [Obtention d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) pour en savoir plus.
 
-* aem en tant que Cloud Service ne prend en charge que les sites sécurisés `https`. Les clients disposant de plusieurs domaines personnalisés ne souhaitent pas télécharger un certificat à chaque fois qu’ils ajoutent un domaine. Ces clients obtiendront ainsi un certificat comportant plusieurs domaines.
+* AEM en tant que Cloud Service ne prend en charge que les sites sécurisés `https`. Les clients disposant de plusieurs domaines personnalisés ne souhaitent pas télécharger un certificat à chaque fois qu’ils ajoutent un domaine. Ces clients obtiendront ainsi un certificat comportant plusieurs domaines.
 
 Cloud Manager respecte les exigences suivantes en matière de certificat SSL client :
 
