@@ -11,7 +11,7 @@ ht-degree: 100%
 ---
 
 
-# Schémas de métadonnées     {#metadata-schemas}
+# Schémas de métadonnées    {#metadata-schemas}
 
 Dans Adobe Experience Manager (AEM) Assets, le schéma de métadonnées définit la disposition de la page des propriétés et les propriétés de métadonnées qui s’affichent pour les ressources qui utilisent ce schéma spécifique. Les propriétés de métadonnées incluent le titre, la description, les types MIME, les balises, etc.
 
