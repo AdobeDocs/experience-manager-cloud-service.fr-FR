@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Utilisation de conditions de masquage  {#using-hide-conditions}
+# Utilisation de conditions de masquage {#using-hide-conditions}
 
 Des conditions de masquage peuvent être utilisées pour déterminer si une ressource de composant est rendue ou non. Cela peut être le cas, par exemple, lorsqu’un créateur de modèles configure le composant principal [Composant de liste](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/list.html) dans l’[éditeur de modèles](/help/sites-cloud/authoring/features/templates.md) et décide de désactiver les options afin de créer la liste sur la base des pages enfants. Si vous désactivez cette option dans la boîte de dialogue de création, une propriété est définie, de sorte que, lorsque le composant de liste est rendu, la condition de masquage soit évaluée et l’option d’affichage des pages enfants ne soit pas présentée.
 
