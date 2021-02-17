@@ -15,7 +15,7 @@ ht-degree: 100%
 La section suivante décrit les notes de mise à jour générales d’Experience Manager as a Cloud Service 2020.8.0.
 
 
-## [!DNL Adobe Experience Manager Sites] as a Cloud Service{#sites}
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 ### Nouveautés de [!DNL Sites] {#what-is-new-sites}
 
@@ -24,7 +24,7 @@ La section suivante décrit les notes de mise à jour générales d’Experience
 * Possibilité de [créer des lancements](/help/sites-cloud/authoring/launches/overview.md) dans l’[éditeur de SPA](/help/implementing/developing/hybrid/introduction.md) d’AEM.
 
 
-## [!DNL Adobe Experience Manager Assets] as a Cloud Service{#assets}
+## [!DNL Adobe Experience Manager Assets] en tant que Cloud Service  {#assets}
 
 ### Nouveautés de [!DNL Assets] {#what-is-new-assets}
 
