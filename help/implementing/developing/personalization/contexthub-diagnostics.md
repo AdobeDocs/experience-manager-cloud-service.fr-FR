@@ -22,7 +22,7 @@ La page de diagnostic de ContextHub présente des informations sur les magasins 
 >
 >Pour que les informations de diagnostic soient renvoyées, le mode de débogage doit être activé, sinon la page de diagnostic est vide. Reportez-vous à ce [document](configuring-contexthub.md#debugging-contexthub) pour plus de détails sur l’activation du mode débogage.
 
-## Magasins  {#stores}
+## Magasins {#stores}
 
 La section Magasins répertorie tous les magasins ContextHub qui ont été configurés. Chaque élément de la liste comprend les informations suivantes :
 
