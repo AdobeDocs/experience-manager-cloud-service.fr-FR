@@ -1,11 +1,11 @@
 ---
 title: Gestion des fragments de contenu
-description: Les fragments de contenu sont stockés en tant que ressources, et ils sont donc principalement gérés par l’intermédiaire de la console Ressources.
+description: Les fragments de contenu sont stockés en tant que Ressources, et ils sont donc principalement gérés par l’intermédiaire de la console Ressources.
 translation-type: tm+mt
 source-git-commit: 33f0980b138959ab4bc13eb5fe80733a0b4ef3a2
 workflow-type: tm+mt
 source-wordcount: '1593'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -16,13 +16,13 @@ Les fragments de contenu sont stockés en tant que **Ressources**, et ils sont d
 
 >[!NOTE]
 >
->Les fragments de contenu peuvent être utilisés :
+>Il est possible d’utiliser les fragments de contenu comme suit :
 >
->* lors de la création de pages ; voir [Création de pages avec des fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
->* pour [Diffusion de contenu sans en-tête utilisant des fragments de contenu avec GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+>* lors de la création de pages ; voir [Création de pages avec des fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* pour la [Diffusion de contenu découplé utilisant des fragments de contenu avec GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
 
-## Création de fragments de contenu   {#creating-content-fragments}
+## Création de fragments de contenu {#creating-content-fragments}
 
 ### Création d’un modèle de contenu {#creating-a-content-model}
 
@@ -84,7 +84,7 @@ Sélectionnez le fragment pour afficher la barre d’outils avec les actions app
 
 * **Retraiter les éléments**
 * **Créer**
-* **Téléchargement**
+* **Télécharger**
 
    * Enregistrez le fragment sous forme d’un fichier ZIP. Vous pouvez indiquer si vous souhaitez inclure des éléments, des variations ou des métadonnées.
 
@@ -101,7 +101,7 @@ Sélectionnez le fragment pour afficher la barre d’outils avec les actions app
 * **Gérer la publication**
 * **Gérer les balises**
 * **À la collection**
-* **Copier**  (et  **Coller**)
+* **Copier** (et **coller**) 
 * **Déplacer**
 * **Supprimer**
 
@@ -181,7 +181,7 @@ Certaines fonctions de la barre d’outils supérieure sont disponibles dans plu
 
 * **[](#publishing-and-referencing-a-fragment)** Publiez le fragment.
 
-## Enregistrer, Annuler et Versions   {#save-cancel-and-versions}
+## Enregistrer, Annuler et Versions  {#save-cancel-and-versions}
 
 >[!NOTE]
 >
@@ -235,19 +235,19 @@ Lorsque vous modifiez votre fragment de contenu, AEM crée automatiquement des v
 
 Une fois que vous avez ouvert le fragment, vous pouvez utiliser l’onglet [Variations](/help/assets/content-fragments/content-fragments-variations.md) pour créer votre contenu.
 
-## Création et gestion de variations dans un fragment   {#creating-and-managing-variations-within-your-fragment}
+## Création et gestion de variations dans un fragment  {#creating-and-managing-variations-within-your-fragment}
 
 Une fois que vous avez créé le contenu maître, vous pouvez créer et gérer des [Variations](/help/assets/content-fragments/content-fragments-variations.md) de ce contenu.
 
-## Association de contenu au fragment   {#associating-content-with-your-fragment}
+## Association de contenu au fragment  {#associating-content-with-your-fragment}
 
 Vous pouvez également [associer du contenu](/help/assets/content-fragments/content-fragments-assoc-content.md) à un fragment. Cela fournit une liaison pour que les ressources (c’est-à-dire les images) puissent éventuellement être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu.
 
-## Affichage et modification des métadonnées (propriétés) du fragment   {#viewing-and-editing-the-metadata-properties-of-your-fragment}
+## Affichage et modification des métadonnées (propriétés) du fragment  {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
 Vous pouvez afficher et modifier les propriétés d’un fragment à l’aide de l’onglet [Métadonnées](/help/assets/content-fragments/content-fragments-metadata.md).
 
-## Chronologie pour les fragments de contenu   {#timeline-for-content-fragments}
+## Chronologie pour les fragments de contenu  {#timeline-for-content-fragments}
 
 Outre les options standard, la [Chronologie](/help/assets/manage-digital-assets.md#timeline) fournit les informations et les actions spécifiques aux fragments de contenu :
 
@@ -258,7 +258,7 @@ Outre les options standard, la [Chronologie](/help/assets/manage-digital-assets.
 
    * **[Comparer à actuel](#comparing-fragment-versions)** (sélectionner un fragment existant, puis une version spécifique)
 
-   * Ajouter un **libellé** et/ou un **commentaire** (sélectionner un fragment existant, puis une version spécifique)
+   * Ajouter une **étiquette** et/ou un **commentaire** (sélectionner un fragment existant, puis une version spécifique)
 
    * **Enregistrer comme version** (sélectionner un fragment existant, puis la flèche du haut au bas de la chronologie)
 
@@ -301,7 +301,7 @@ Elles seront affichées côte à côte, où :
    * Le texte remplacé est en bleu
 
 * L’icône en plein écran permet d’ouvrir l’une ou l’autre version seule, puis de revenir en mode parallèle.
-* Vous pouvez **restaurer** à la version spécifique
+* Vous pouvez **rétablir** la version spécifique
 * **Terminé** vous ramène à la console
 
 >[!NOTE]
