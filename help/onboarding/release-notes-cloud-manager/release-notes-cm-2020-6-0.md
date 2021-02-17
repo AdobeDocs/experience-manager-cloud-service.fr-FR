@@ -26,7 +26,7 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2020.6.0 es
 
 * Un utilisateur du programme Sandbox possédant le rôle *Propriétaire d’entreprise* ou *Responsable de déploiement* dans Cloud Manager peut désormais supprimer ses jeux d’environnements de production et d’évaluation via l’interface utilisateur de Cloud Manager. L’option de suppression est désormais disponible à partir de la carte Environnement dans la page **Aperçu du programme**, mais aussi dans la page **Environnements**. La sélection de l’option de suppression dans l’environnement de production ou d’évaluation supprime également l’autre dans le jeu d’environnements.
 
-   Pour plus d’informations, voir [Suppression d’un programme Sandbox](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html).
+   Pour plus d’informations, voir [Suppression d’un programme Sandbox](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html).
 
 * Repères sur la landing page pour informer l’utilisateur sur la navigation de base.
 
