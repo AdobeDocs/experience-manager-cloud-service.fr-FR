@@ -16,7 +16,7 @@ ht-degree: 100%
 
 AEM propose un ensemble d’outils permettant de créer du contenu ciblé et de présenter des expériences personnalisées.
 
-## Mode Ciblage    {#targeting-mode}
+## Mode Ciblage   {#targeting-mode}
 
 [Créez du contenu ciblé à l’aide du mode Ciblage d’AEM. ](/help/sites-cloud/authoring/personalization/targeted-content.md) Le mode Ciblage et le composant Cible fournissent des outils permettant de créer du contenu pour les expériences de vos activités de marketing.
 
