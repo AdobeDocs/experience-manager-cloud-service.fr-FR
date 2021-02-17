@@ -24,8 +24,10 @@ En même temps que l’outil d’exportation JSON mis à jour, les fragments de
 >
 >* Les **fragments de contenu** sont des contenus éditoriaux, composés essentiellement de texte et des images associées. Il s’agit exclusivement de contenu, sans aucun élément de conception ni de mise en page.
 >* Les **fragments d’expérience** désignent un contenu entièrement mis en page et donc les fragments d’une page web.
+
 >
->Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
+>
+Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
 
 >[!CAUTION]
 >
@@ -50,7 +52,7 @@ Grâce aux fragments de contenu :
    * Peuvent se fier à du contenu multimédia associé toujours pertinent.
    * Peuvent créer des variations de contenu ad hoc à la volée tout en garantissant leur gestion centralisée dans le fragment.
 
-## Ajout d’un fragment de contenu à une page    {#adding-a-content-fragment-to-your-page}
+## Ajout d’un fragment de contenu à une page   {#adding-a-content-fragment-to-your-page}
 
 1. Ouvrez la page à modifier.
 2. Ajoutez le composant **Fragment de contenu** à partir du navigateur **Composants** ou **Insérer un nouveau composant**.
@@ -144,7 +146,8 @@ Dans le cas du contenu intermédiaire, plusieurs possibilités vous sont offerte
 >
 >* Les composants intermédiaires occupent une position absolue dans la séquence de composants du flux de fragments. Cette position ne varie pas, même en cas de modification du contenu des paragraphes dans le fragment.
 >
->  Cela peut donner l’impression que le positionnement relatif a changé, dans la mesure où les paragraphes intermédiaires n’ont aucune relation contextuelle avec les paragraphes (de fragment) près desquels ils sont placés.
+>  
+Cela peut donner l’impression que le positionnement relatif a changé, dans la mesure où les paragraphes intermédiaires n’ont aucune relation contextuelle avec les paragraphes (de fragment) près desquels ils sont placés.
 >* À moins que ces deux structures de paragraphes ne soient en conflit ; dans ce cas, le contenu intermédiaire n’est pas affiché (bien qu’il soit toujours présent en interne).
 
 
