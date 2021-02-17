@@ -10,7 +10,7 @@ ht-degree: 99%
 ---
 
 
-# Mise en page réactive    {#responsive-layout}
+# Mise en page réactive   {#responsive-layout}
 
 AEM permet de réaliser une mise en page réactive pour vos pages à l’aide du composant **Conteneur de mises en page**.
 
@@ -233,7 +233,7 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
 
    * **Afficher les**
 composantsSélectionnez les composants parents pour afficher la barre d&#39;outils d&#39;action avec la fonction 
-**Afficher l&#39;option** Composants masqués. Dans cet exemple, deux composants sont masqués.
+**Afficher les** composants masqués, option. Dans cet exemple, deux composants sont masqués.
 
       ![Afficher les composants](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
    Si vous sélectionnez l’option **Afficher les composants masqués**, les composants actuellement masqués s’affichent en bleu à leur position initiale.
