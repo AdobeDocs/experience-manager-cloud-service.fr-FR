@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 57ae02b90d1e78e8a940b65d195bc2077feec2d2
 workflow-type: tm+mt
 source-wordcount: '2576'
-ht-degree: 88%
+ht-degree: 92%
 
 ---
 
@@ -36,9 +36,9 @@ Experience Manager autorise les niveaux de traitement suivants.
 
 | Option | Description | Cas d’utilisation couverts |
 |---|---|---|
-| [Configuration par défaut](#default-config) | Elle est disponible en l’état et ne peut pas être modifiée. Cette configuration fournit des fonctionnalités de génération de rendu très élémentaires. | <ul> <li>Miniatures standard utilisées par l’interface utilisateur [!DNL Assets] (48, 140 et 319 pixels) </li> <li> Grande prévisualisation (rendu Web - 1 280 pixels) </li><li> Extraction des métadonnées et du texte</li></ul> |
+| [Configuration par défaut](#default-config) | Elle est disponible en l’état et ne peut pas être modifiée. Cette configuration fournit des fonctionnalités de génération de rendu très élémentaires. | <ul> <li>Miniatures standard utilisées par l’interface utilisateur d’[!DNL Assets] (48, 140 et 319 pixels) </li> <li> Aperçu grand format (rendu web : 1 280 pixels). </li><li> Extraction des métadonnées et du texte</li></ul> |
 | [Configuration personnalisée](#standard-config) | Configurée par les administrateurs via l’interface utilisateur. Fournit davantage d’options de génération de rendu en étendant l’option par défaut. Étend l’option prête à l’emploi pour fournir différents formats et rendus. | <ul><li>Rendu FPO. </li> <li>Change le format de fichier et la résolution des images.</li> <li> S’applique de manière conditionnelle aux types de fichiers configurés. </li> </ul> |
-| [Profil personnalisé](#custom-config) | Configuré par les administrateurs via l’interface utilisateur pour utiliser du code personnalisé par le biais d’applications personnalisées afin d’appeler [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html). Prend en charge des exigences plus complexes dans une méthode évolutive et basée sur le cloud. | Voir les [Cas d’utilisation autorisés](#custom-config) |
+| [Profil personnalisé](#custom-config) | Configuré par les administrateurs via l’interface utilisateur pour utiliser du code personnalisé par le biais d’applications personnalisées afin d’appeler [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html?lang=fr). Prend en charge des exigences plus complexes dans une méthode évolutive et basée sur le cloud. | Voir les [Cas d’utilisation autorisés](#custom-config) |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -100,7 +100,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## Profil et cas d’utilisation personnalisés {#custom-config}
 
-Le [!DNL Asset Compute Service] prend en charge une variété de cas d’utilisation, tels que le traitement par défaut, le traitement de formats spécifiques à Adobe (par exemple, des fichiers Photoshop) et la mise en œuvre d’un traitement personnalisé ou spécifique à l’organisation. La personnalisation du workflow Ressource de mise à jour DAM requise par le passé est gérée automatiquement ou via la configuration des profils de traitement. Si ces options de traitement ne répondent pas aux besoins de l’entreprise, Adobe recommande de développer et d’utiliser le [!DNL Asset Compute Service] pour étendre les fonctionnalités par défaut. Pour obtenir aperçu, voir [Comprendre l’extensibilité et savoir quand l’utiliser](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
+Le [!DNL Asset Compute Service] prend en charge une variété de cas d’utilisation, tels que le traitement par défaut, le traitement de formats spécifiques à Adobe (par exemple, des fichiers Photoshop) et la mise en œuvre d’un traitement personnalisé ou spécifique à l’organisation. La personnalisation du workflow Ressource de mise à jour DAM requise par le passé est gérée automatiquement ou via la configuration des profils de traitement. Si ces options de traitement ne répondent pas aux besoins de l’entreprise, Adobe recommande de développer et d’utiliser le [!DNL Asset Compute Service] pour étendre les fonctionnalités par défaut. Pour obtenir aperçu, voir [Comprendre l’extensibilité et savoir quand l’utiliser](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=fr).
 
 >[!NOTE]
 >
@@ -108,7 +108,7 @@ Le [!DNL Asset Compute Service] prend en charge une variété de cas d’utilisa
 
 Le profil personnalisé peut transformer des formats d’image, de vidéo, de document et autres formats de fichier en différents rendus, y compris des miniatures, du texte et des métadonnées extraits et des archives.
 
-Les développeurs peuvent utiliser [!DNL Asset Compute Service] pour [créer des applications personnalisées](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) pour les cas d’utilisation pris en charge. [!DNL Experience Manager] peut appeler ces applications personnalisées à partir de l’interface utilisateur en utilisant des profils personnalisés configurés par les administrateurs. [!DNL Asset Compute Service] prend en charge les cas d’utilisation suivants d’appel de services externes :
+Les développeurs peuvent utiliser [!DNL Asset Compute Service] pour [créer des applications personnalisées](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=fr) pour les cas d’utilisation pris en charge. [!DNL Experience Manager] peut appeler ces applications personnalisées à partir de l’interface utilisateur en utilisant des profils personnalisés configurés par les administrateurs. [!DNL Asset Compute Service] prend en charge les cas d’utilisation suivants d’appel de services externes :
 
 * Utilisez l’[API ImageCutout](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) d’[!DNL Adobe Photoshop] et enregistrez le résultat en tant que rendu.
 * Appelez des systèmes tiers pour mettre à jour des données (par exemple, un système PIM).
@@ -128,8 +128,8 @@ Pour créer un profil personnalisé, procédez comme suit :
 1. Fournissez les informations suivantes.
 
    * Nom de fichier de chaque rendu et extension de fichier prise en charge.
-   * [URL de point d’entrée d’une application personnalisée Firefly](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html). L’application doit provenir de la même organisation que le compte Experience Manager.
-   * Paramètres Ajouter un service pour [transmettre des informations ou des paramètres supplémentaires à l’application personnalisée](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#extend).
+   * [URL de point d’entrée d’une application personnalisée Firefly](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html?lang=fr). L’application doit provenir de la même organisation que le compte Experience Manager.
+   * Paramètres Ajouter un service pour [transmettre des informations ou des paramètres supplémentaires à l’application personnalisée](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=fr#extend).
    * Types MIME inclus et exclus pour limiter le traitement à quelques formats de fichiers spécifiques.
 
    Cliquez sur **[!UICONTROL Enregistrer]**.
@@ -197,7 +197,7 @@ Pour ajouter une configuration de processus de post-traitement à [!DNL Experien
 
 ### Création de modèles de workflow de post-traitement {#create-post-processing-workflow-models}
 
-Les modèles de processus de post-traitement sont des modèles de flux de travaux [!DNL Experience Manager] standard. Créez des modèles différents si un autre traitement doit être exécuté pour différents emplacements de référentiel ou types de ressource.
+Les modèles de workflow de post-traitement sont des modèles de workflow [!DNL Experience Manager]standard. Créez des modèles différents si un autre traitement doit être exécuté pour différents emplacements de référentiel ou types de ressource.
 
 Les étapes de traitement doivent être ajoutées en fonction des besoins. Vous pouvez utiliser n’importe quelle étape prise en charge, ainsi que n’importe quelle étape de workflow implémentée sur mesure.
 
@@ -215,7 +215,7 @@ L’instance Adobe CQ DAM Custom Workflow Runner (`com.adobe.cq.dam.processor.nu
 >[!NOTE]
 >
 >La configuration du service d’exécution de workflow personnalisé est la configuration d’un service OSGi. Pour en savoir plus sur le déploiement d’une configuration OSGi, voir [Déploiement sur Experience Manager](/help/implementing/deploying/overview.md).
->La console Web OSGi, contrairement aux déploiements de services sur site et gérés de [!DNL Experience Manager], n’est pas directement disponible dans les déploiements de services Cloud.
+>Contrairement aux déploiements des Managed Services et On-Premise Services d’[!DNL Experience Manager], la console web OSGi n’est pas directement disponible dans les déploiements Cloud Service.
 
 Pour plus d’informations sur les étapes de workflow standard pouvant être utilisées dans le workflow de post-traitement, voir [Étapes du workflow de post-traitement](developer-reference-material-apis.md#post-processing-workflows-steps) (en anglais) dans la documentation de référence du développeur.
 
