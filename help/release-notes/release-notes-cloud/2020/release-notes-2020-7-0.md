@@ -116,7 +116,7 @@ Consultez [Utilisation de la prise en charge de Java 11](/help/onboarding/getti
 
 ### Problèmes connus {#known-issues}
 
-* En raison d’un changement dans le mode de calcul de la couverture du code, la version *minimale* du module externe Jacoco est désormais 0.7.5.201505241946 (publiée en mai 2015). Les clients référençant explicitement une ancienne version reçoivent un message d’erreur dans le processus de qualité du code.
+* En raison d’un changement dans le mode de calcul de la couverture du code, la version *minimale* du plug-in Jacoco est désormais 0.7.5.201505241946 (publiée en mai 2015). Les clients référençant explicitement une ancienne version reçoivent un message d’erreur dans le processus de qualité du code.
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-foundation}
 
