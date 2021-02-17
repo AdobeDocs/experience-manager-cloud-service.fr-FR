@@ -26,7 +26,8 @@ Vous pouvez éventuellement indiquer la **date de lancement** (et l’heure) pou
 >
 >* `/libs/launches/templates/outofscope`
 >
->Ces pages ne peuvent pas être modifiées. Le message suivant s’affiche :
+>
+Ces pages ne peuvent pas être modifiées. Le message suivant s’affiche :
 >
 >* **Cette page ne fait pas partie du lancement. Accéder à la page de production**
 
