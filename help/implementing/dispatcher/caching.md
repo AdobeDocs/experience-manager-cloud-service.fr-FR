@@ -28,7 +28,7 @@ Cette page décrit également comment le cache du Dispatcher est invalidé, ains
 Define DISABLE_DEFAULT_CACHING
 ```
 
-Cela peut s’avérer utile, par exemple, lorsque la logique de votre entreprise nécessite un réglage précis de l’en-tête d’âge (avec une valeur basée sur le jour du calendrier) puisque, par défaut, l’en-tête d’âge est défini sur 0. Ceci dit, **soyez prudent lorsque vous désactivez la mise en cache par défaut.**
+Cela peut s’avérer utile, par exemple, lorsque la logique de votre entreprise nécessite un réglage précis de l’en-tête d’âge (avec une valeur basée sur le jour calendaire) puisque, par défaut, l’en-tête d’âge est défini sur 0. Ceci dit, **soyez prudent lorsque vous désactivez la mise en cache par défaut.**
 
 * Peut être remplacé pour tout le contenu HTML/texte en définissant la variable `EXPIRATION_TIME` dans `global.vars` avec les outils du Dispatcher SDK AEM as a Cloud Service.
 * Peut être remplacé à un niveau plus détaillé par les directives mod_headers apache suivantes :
