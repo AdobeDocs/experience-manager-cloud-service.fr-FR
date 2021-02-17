@@ -18,13 +18,13 @@ La section suivante présente les notes de mise à jour générales d’[!DNL Ex
 
 La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.9.0 est le jeudi 24 septembre 2020.
 
-## [!DNL Adobe Experience Manager Sites] as a Cloud Service{#sites}
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 ### Nouveautés de [!DNL Sites] {#what-is-new-sites}
 
 * Le SDK JavaScript de l’éditeur d’application sur une seule page (SPA) [est désormais en source libre.](/help/implementing/developing/hybrid/reference-materials.md)
 
-## [!DNL Adobe Experience Manager Assets] as a Cloud Service{#assets}
+## [!DNL Adobe Experience Manager Assets] en tant que Cloud Service  {#assets}
 
 ### Nouveautés de [!DNL Assets] {#what-is-new-assets}
 
