@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Application de workflows aux pages    {#applying-workflows-to-pages}
+# Application de workflows aux pages   {#applying-workflows-to-pages}
 
 Lors de la création de pages, vous avez la possibilité d’utiliser des workflows pour exécuter des actions sur vos pages. Il est possible d’appliquer plusieurs workflows.
 
