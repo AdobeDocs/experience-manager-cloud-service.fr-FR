@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Votre boîte de réception    {#your-inbox}
+# Votre boîte de réception   {#your-inbox}
 
 Vous pouvez recevoir des notifications de diverses sections d’AEM, y compris des workflows et des projets. Ces notifications peuvent par exemple concerner les éléments suivants :
 
