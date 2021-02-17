@@ -45,7 +45,7 @@ Lorsque vous modifiez une page, l’**Aide** est accessible depuis :
 
 D’autres [ressources d’aide sont accessibles depuis les consoles](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help).
 
-## Explorateur de composants  {#components-browser}
+## Explorateur de composants {#components-browser}
 
 Les composants sont les blocs de création du contenu AEM. Vous placez plusieurs composants sur une page et configurez leurs options afin de créer votre page de contenu avec AEM.
 
@@ -283,6 +283,7 @@ Vous pouvez accéder à ces modes en cliquant sur les icônes dans le coin supé
 >* L’accès à certains modes implique que vous disposiez des droits ou autorisations appropriés.
 >* Le mode Développeur n’est pas accessible sur les appareils mobiles en raison de restrictions d’espace.
 >* Utilisez le [raccourci clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) pour permuter entre l’**Aperçu** et le mode actuellement sélectionné (par ex. **Modifier**, **Disposition**, etc.).
+
 >
 
 
