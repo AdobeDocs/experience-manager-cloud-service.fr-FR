@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Balise décorative  {#decoration-tag}
+# Balise décorative {#decoration-tag}
 
 Lors du rendu d’un composant d’une page web, un élément HTML peut être généré, en encapsulant le composant rendu sur lui-même. Dans ce cas, l’objectif est double :
 
