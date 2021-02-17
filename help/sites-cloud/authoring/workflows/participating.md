@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Participation aux workflows    {#participating-in-workflows}
+# Participation aux workflows   {#participating-in-workflows}
 
 Les workflows incluent généralement les étapes qu’une personne doit suivre pour réaliser une activité sur une page ou sur une ressource. Le workflow sélectionne un utilisateur ou un groupe pour qu’il mette en œuvre l’activité en question et attribue un élément de travail à cette personne ou à ce groupe. L’utilisateur reçoit la notification et peut alors réaliser l’action appropriée :
 
