@@ -22,8 +22,8 @@ Avec Adobe Experience Manager (AEM) as a Cloud Service, vous pouvez utiliser des
 >
 >GraphQL est actuellement utilisé comme Cloud Service dans deux scénarios (distincts) à Adobe Experience Manager (AEM) :
 >
->* [aem Commerce utilise les données d&#39;une plateforme commerciale via GraphQL](/help/commerce-cloud/architecture/magento.md).
->* [aem Fragments de contenu fonctionnent conjointement avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard), pour fournir du contenu structuré à utiliser dans vos applications](/help/assets/content-fragments/graphql-api-content-fragments.md).
+>* [AEM Commerce utilise les données d&#39;une plateforme commerciale via GraphQL](/help/commerce-cloud/architecture/magento.md).
+>* [AEM Fragments de contenu fonctionnent conjointement avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard), pour fournir du contenu structuré à utiliser dans vos applications](/help/assets/content-fragments/graphql-api-content-fragments.md).
 
 
 ## CMS découplé {#headless-cms}
