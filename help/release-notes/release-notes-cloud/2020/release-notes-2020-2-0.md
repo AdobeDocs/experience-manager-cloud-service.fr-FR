@@ -31,7 +31,7 @@ Suivez cette section pour en savoir plus sur les nouveautés et les mises à jou
 * L’étape d’analyse du code comporte désormais un journal téléchargeable.
 * La feuille de calcul contenant les problèmes détectés lors de l’analyse du code comporte désormais une colonne avec un lien vers la documentation de la règle spécifique.
 
-### Correctifs  {#bug-fixes}
+### Correctifs {#bug-fixes}
 
 * Les stratégies de sécurité du navigateur empêchaient parfois le fonctionnement correct de certains boutons de l’écran d’exécution du pipeline.
 * Les liens Aperçu, Environnements et Activité étaient parfois disponibles sur la page d’entrée de Cloud Manager.
