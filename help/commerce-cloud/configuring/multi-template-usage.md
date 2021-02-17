@@ -1,6 +1,6 @@
 ---
 title: Création de plusieurs pages de catégories et de produits
-description: Découvrez comment enrichir les pages d'entrée et de détails des produits de Catégorie avec du contenu marketing ciblé.
+description: Découvrez comment enrichir les pages d’entrée de catégorie et de détails des produits avec du contenu marketing ciblé.
 sub-product: Commerce
 version: cloud-service
 doc-type: feature-video
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
 source-wordcount: '102'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
