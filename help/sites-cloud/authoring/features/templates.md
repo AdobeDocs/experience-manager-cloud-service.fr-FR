@@ -10,7 +10,7 @@ ht-degree: 98%
 ---
 
 
-# Création de modèles de page   {#creating-page-templates}
+# Création de modèles de page  {#creating-page-templates}
 
 Lors de la création d’une page, vous devez sélectionner un modèle. C’est la base pour la création de la page. Le modèle définit la structure de la page créée, le contenu initial et les composants pouvant être utilisés.
 
