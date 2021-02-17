@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Exportateur JSON pour Content Services  {#json-exporter-for-content-services}
+# Exportateur JSON pour Content Services {#json-exporter-for-content-services}
 
 AEM Content Services est conçu pour généraliser la description et la diffusion du contenu dans/depuis AEM, au-delà des pages web.
 
