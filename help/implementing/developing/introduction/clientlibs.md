@@ -210,7 +210,7 @@ Vous pouvez incorporer du code d’une bibliothèque cliente dans une autre bibl
 
 Incorporer du code s’avère utile pour fournir l’accès aux bibliothèques qui sont stockées dans des zones sécurisées du référentiel.
 
-#### Dossiers de bibliothèques clientes spécifiques à une application   {#app-specific-client-library-folders}
+#### Dossiers de bibliothèques clientes spécifiques à une application  {#app-specific-client-library-folders}
 
 Il est conseillé de conserver tous les fichiers associés à une application dans leur dossier d’application sous `/app`. Il est également recommandé d’empêcher les internautes d’accéder au dossier `/app`. Pour répondre à ces deux exigences, créez sous `/etc` un dossier de bibliothèques clientes qui incorpore la bibliothèque cliente qui est située sous `/app`.
 
