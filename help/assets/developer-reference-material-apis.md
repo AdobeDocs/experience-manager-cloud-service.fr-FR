@@ -79,8 +79,7 @@ Cette approche permet une gestion évolutive et plus performante des chargements
 * L’espace de stockage de fichiers binaires fonctionne avec un réseau CDN (réseau de diffusion de contenu) ou Edge. Un CDN sélectionne un point d’entrée de chargement plus proche pour un client. Lorsque les données parcourent une distance plus courte jusqu’à un point d’entrée voisin, les performances de chargement et l’expérience utilisateur s’améliorent, en particulier pour les équipes réparties géographiquement.
 
 >[!NOTE]
->
->Consultez le code client pour implémenter cette approche dans la [bibliothèque de chargement aem](https://github.com/adobe/aem-upload) open-source.
+Consultez le code client pour implémenter cette approche dans la [bibliothèque de chargement aem](https://github.com/adobe/aem-upload) open-source.
 
 ### Lancement du chargement {#initiate-upload}
 
@@ -147,7 +146,7 @@ Après avoir chargé toutes les parties d’un fichier binaire, envoyez une requ
 | `replace` | Booléen | Facultatif | Si `True` et qu’une ressource portant le nom spécifié existe, [!DNL Experience Manager] supprime la ressource, puis la recrée. |
 
 >!![NOTE]
->Si la ressource existe et que ni `createVersion` ni `replace` n’est spécifié, [!DNL Experience Manager] met à jour la version actuelle de la ressource avec le nouveau fichier binaire.
+Si la ressource existe et que ni `createVersion` ni `replace` n’est spécifié, [!DNL Experience Manager] met à jour la version actuelle de la ressource avec le nouveau fichier binaire.
 
 Comme c’est le cas pour le processus de lancement, les données de la requête de fin peuvent contenir des informations pour plusieurs fichiers.
 
@@ -172,9 +171,8 @@ La nouvelle méthode de chargement n’est prise en charge que pour [!DNL Adobe 
 * API Java `AssetManager`, comme `AssetManager.createAsset(..)`
 
 >[!MORELIKETHIS]
->
->* [Bibliothèque de chargement AEM Open Source](https://github.com/adobe/aem-upload).
->* [Outil de ligne de commande Open Source](https://github.com/adobe/aio-cli-plugin-aem).
+* [Bibliothèque de chargement AEM Open Source](https://github.com/adobe/aem-upload).
+* [Outil de ligne de commande Open Source](https://github.com/adobe/aio-cli-plugin-aem).
 
 
 ## Workflows de traitement et de post-traitement des ressources {#post-processing-workflows}
@@ -242,6 +240,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
->
->* [Le SDK Experience Cloud as a  [!DNL Cloud Service] ](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+* [Le SDK Experience Cloud as a  [!DNL Cloud Service] ](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 
