@@ -32,7 +32,7 @@ Pour plus d&#39;informations, consultez le [Centre de confidentialité des Adobe
 
 ## Niveau de création AEM {#aem-author-tier}
 
-Les comptes d’utilisateurs et le contenu de l’UGC sur le serveur d’auteur sont traités dans la [documentation de AEM Foundation](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md).
+Les comptes d’utilisateurs et le contenu du CDU sur le serveur d’auteur sont traités dans la [documentation de AEM Foundation](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md).
 
 ## Niveau de publication AEM {#aem-publish-tier}
 
@@ -90,7 +90,7 @@ Pour plus d&#39;informations sur la gestion des demandes de personnes concernée
 AEM provides an optional data layer with [ContextHub](/help/sites-developing/contexthub.md).
 -->
 
-aem fournit une couche de données facultative avec ContextHub. Cette option conserve les données spécifiques aux visiteurs dans le navigateur, afin qu’elles soient utilisées pour la personnalisation basée sur des règles.
+AEM fournit une couche de données facultative avec ContextHub. Cette option conserve les données spécifiques aux visiteurs dans le navigateur, afin qu’elles soient utilisées pour la personnalisation basée sur des règles.
 
 Par défaut, ces données sur les visiteurs ne sont pas stockées dans AEM ; AEM envoie des règles à la couche de données de façon à prendre des décisions de personnalisation dans le navigateur.
 
@@ -126,27 +126,27 @@ Ces instructions mettent en œuvre la souscription comme valeur par défaut. Ain
    // if isOptedOut is true, ContextHub is running in opt-out mode
    ```
 
-### Aperçu de la persistance de ContextHub  {#previewing-persistence-of-contexthub}
+### Aperçu de la persistance de ContextHub {#previewing-persistence-of-contexthub}
 
 Pour afficher un aperçu de la persistance utilisée par ContextHub, l’utilisateur peut :
 
 * utiliser la console du navigateur, par exemple :
 
-   * Chrome :
+   * Chrome:
 
       * Ouvrez Outils de développement > Application > Stockage :
 
          * Stockage local > (site web) > ContextHubPersistence
          * Stockage de session > (site web) > ContextHubPersistence
          * Cookies > (site web) > SessionPersistence
-   * Firefox :
+   * Firefox:
 
       * Ouvrez Outils de développement > Stockage :
 
          * Stockage local > (site web) > ContextHubPersistence
          * Stockage de session > (site web) > ContextHubPersistence
          * Cookies > (site web) > SessionPersistence
-   * Safari :
+   * Safari:
 
       * Ouvrez Préférences > Avancé > Afficher le menu Développement dans la barre de menus
       * Ouvrez Développement > Afficher la console JavaScript
