@@ -1,25 +1,25 @@
 ---
-title: Notes de mise à jour actuelles de  [!DNL Adobe Experience Manager] en tant que Cloud Service.
-description: Notes de mise à jour actuelles de  [!DNL Adobe Experience Manager] en tant que Cloud Service.
+title: Notes de mise à jour actuelles pour  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notes de mise à jour actuelles pour  [!DNL Adobe Experience Manager]  as a Cloud Service.
 translation-type: tm+mt
 source-git-commit: 31e07090e4e3a265269eebce13857f88245788ee
 workflow-type: tm+mt
 source-wordcount: '691'
-ht-degree: 16%
+ht-degree: 29%
 
 ---
 
 
-# Notes de mise à jour pour [!DNL Adobe Experience Manager] as a Cloud Service  {#release-notes}
+# Notes de mise à jour pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante décrit les Notes de mise à jour générales de [!DNL Experience Manager] en tant que Cloud Service.
+La section suivante présente les notes de mise à jour générales d’[!DNL Experience Manager] as a Cloud Service.
 
 ## Date de publication {#release-date}
 
-La date de publication de [!DNL Adobe Experience Manager] en tant que Cloud Service 2020.12.0 est le 17 décembre 2020.
+La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.12.0 est le 17 décembre 2020.
 La version suivante (2021.1.0) sera publiée le 28 janvier 2021.
 
-## [!DNL Adobe Experience Manager Sites] as a Cloud Service{#sites}
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 * **[API](/help/assets/content-fragments/assets-api-content-fragments.md)** HTTP de fragment de contenu : Ajoutez la possibilité d’ajouter/de mettre à jour et de supprimer des variations de fragments de contenu à l’aide de l’API HTTP.
 
@@ -31,7 +31,7 @@ La version suivante (2021.1.0) sera publiée le 28 janvier 2021.
 
 * [!DNL Dynamic Media] les fonctionnalités sont désormais accessibles via les composants principaux basés sur les  [!DNL Sites] images. Les auteurs peuvent configurer rapidement les composants pour qu’ils utilisent les paramètres d’image prédéfinis, les options de recadrage dynamique et les modificateurs d’image lors de la création de pages Web. Voir [Core Components 2.13.0 release](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0).
 
-* [!DNL Experience Manager] application de bureau permet aux utilisateurs de télécharger des fichiers et des dossiers en faisant glisser les fichiers depuis l’Explorateur Windows ou l’Outil de recherche Mac sur l’interface de l’application de bureau. Voir [ajout de ressources à l’aide de l’application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* [!DNL Experience Manager] application de bureau permet aux utilisateurs de télécharger des fichiers et des dossiers en faisant glisser les fichiers depuis l’Explorateur Windows ou l’Outil de recherche Mac sur l’interface de l’application de bureau. Voir [ajout de ressources à l’aide de l’application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#upload-and-add-new-assets-to-aem).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -45,7 +45,7 @@ La version suivante (2021.1.0) sera publiée le 28 janvier 2021.
 
 ### Date de publication {#release-date-cm}
 
-La date de publication de Cloud Manager en tant que Cloud Service 2020.12.0 est le 10 décembre 2020.
+La date de publication de Cloud Manager dans AEM as a Cloud Service 2020.12.0 est le 10 décembre 2020.
 
 ### Nouveautés de [!DNL Cloud Manager] {#what-is-new-cm}
 
@@ -59,7 +59,7 @@ La date de publication de Cloud Manager en tant que Cloud Service 2020.12.0 est 
 
 * Certaines occurrences d’échecs au stade de l’analyse du code sans fournir de résultats ont été corrigées.
 
-* La carte d&#39;Environnement n&#39;affichait pas systématiquement le bouton **Ajouter**.
+* La carte d’environnement n’affichait pas systématiquement le bouton **Ajouter**.
 
 ## Outils de refactorisation du code {#code-refactoring-tools}
 
