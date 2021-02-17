@@ -52,7 +52,7 @@ Instructions de configuration :
 
 Avant d’accepter le trafic en direct, vous devez vérifier auprès du service clientèle d’Adobe que le trafic de bout en bout fonctionne correctement.
 
-Les performances peuvent être faibles en raison du saut supplémentaire, bien que les houblons du CDN du client vers le CDN géré de l’AEM soient susceptibles d’être efficaces.
+Les performances peuvent être faibles en raison du saut supplémentaire, bien que les houblons du CDN du client vers le CDN géré AEM sont susceptibles d’être efficaces.
 
 Notez que cette configuration CDN client est prise en charge pour le niveau de publication, mais pas devant le niveau de création.
 
