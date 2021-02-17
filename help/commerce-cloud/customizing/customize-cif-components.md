@@ -99,35 +99,35 @@ Les produits et les données de produit affichés dans AEM sont stockés dans Ma
 > Vous disposez déjà d’un attribut **Oui/Non** personnalisé dans votre jeu d’attributs de produit ? N’hésitez pas à l’utiliser et à ignorer cette section.
 
 1. Connectez-vous à votre instance Magento.
-1. Accédez à **Catalogue** > **Produits**.
-1. Mettez à jour le filtre de recherche pour rechercher le **Produit configurable** utilisé lors de son ajout au composant Teaser dans l’exercice précédent. Ouvrez le produit en mode édition.
+1. Accédez à **Catalog** > **Products**.
+1. Mettez à jour le filtre de recherche pour rechercher le **Configurable product** (Produit configurable) utilisé lors de son ajout au composant Teaser dans l’exercice précédent. Ouvrez le produit en mode édition.
 
    ![Rechercher un produit Valeria](../assets/customize-cif-components/search-valeria-product.png)
 
-1. Dans le mode Produits, cliquez sur **Ajouter un attribut** > **Créer un attribut**.
-1. Remplissez le formulaire **Nouvel attribut** avec les valeurs suivantes (conservez les paramètres par défaut des autres valeurs).
+1. Dans le mode Produits, cliquez sur **Add Attribute** (Ajouter un attribut) > **Create New Attribute** (Créer un attribut).
+1. Remplissez le formulaire **New Attribute** (Nouvel attribut) avec les valeurs suivantes (conservez les paramètres par défaut des autres valeurs).
 
    | Jeu de champs | Libellé du champ | Valeur |
    |-----------|-------------|---------|
-   | Propriétés d’attribut | Libellé d’attribut | **Écologique** |
-   | Propriétés d’attribut | Type d’entrée de catalogue | **Oui/Non** |
-   | Propriétés d’attribut avancées | Code d’attribut | **eco_friendly** |
+   | Propriétés d’attribut | Attribute Label | **Écologique** |
+   | Propriétés d’attribut | Catalog Input Type | **Oui/Non** |
+   | Propriétés d’attribut avancées | Attribute Code | **eco_friendly** |
 
    ![Formulaire de nouvel attribut](../assets/customize-cif-components/attribute-new-form.png)
 
-   Lorsque vous avez terminé, cliquez sur **Enregistrer l’attribut**.
+   Lorsque vous avez terminé, cliquez sur **Save Attribute** (Enregistrer l’attribut).
 
-1. Faites défiler la page jusqu’au bas du produit et développez l’en-tête **Attributs**. Le nouveau champ **Écologique** devrait apparaître. Redéfinissez le bouton bascule sur **Oui**.
+1. Faites défiler la page jusqu’au bas du produit et développez l’en-tête **Attributes**. Le nouveau champ **Écologique** devrait apparaître. Redéfinissez le bouton bascule sur **Yes**.
 
-   ![Redéfinir le bouton bascule sur Oui](../assets/customize-cif-components/eco-friendly-toggle-yes.png)
+   ![Redéfinir le bouton bascule sur Yes](../assets/customize-cif-components/eco-friendly-toggle-yes.png)
 
-   Cliquez sur **Enregistrer** pour enregistrer les modifications apportées au produit.
+   Cliquez sur **Save** pour enregistrer les modifications apportées au produit.
 
    >[!TIP]
    >
    > Pour plus d’informations sur la gestion des [attributs de produit, consultez le guide de l’utilisateur de Magento](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html).
 
-1. Accédez à **Système** > **Outils** > **Gestion du cache**. Une mise à jour ayant été apportée au schéma de données, certains des types de cache doivent être invalidés dans Magento.
+1. Accédez à **System** > **Tools** > **Cache Management**. Une mise à jour ayant été apportée au schéma de données, certains des types de cache doivent être invalidés dans Magento.
 1. Cochez la case **Configuration** et envoyez le type de cache pour **Actualiser**.
 
    ![Actualise le type de cache de configuration](../assets/customize-cif-components/refresh-configuration-cache-type.png)
