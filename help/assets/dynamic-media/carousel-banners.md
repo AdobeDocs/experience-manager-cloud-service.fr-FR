@@ -2,9 +2,9 @@
 title: Bannières de carrousel
 description: Découvrez comment utiliser des bannières de carrousel dans Dynamic Media.
 translation-type: tm+mt
-source-git-commit: f5627a6e885a556700fbf56c4c63f0f4d6a89da0
+source-git-commit: a3482d4e22ceb11d18a693fe2975d5b78d843de3
 workflow-type: tm+mt
-source-wordcount: '4576'
+source-wordcount: '4575'
 ht-degree: 50%
 
 ---
@@ -224,7 +224,7 @@ Pour charger des bannières d’image, voir [Chargement de ressources](/help/ass
    >    * Animation. Par défaut, la transition entre chaque diapositive est un fondu. Vous pouvez prévoir une transition affichant une diapositive.
    >    * Style des boutons. Les utilisateurs peuvent faire alterner les bannières en appuyant sur chaque point ou numéro. Vous pouvez modifier l’emplacement d’affichage des boutons de définition des indicateurs (et s’ils sont de style numérique ou en pointillé) et leur taille.
    >    * Modification du style de mise en évidence d’une zone cliquable ou de l’icône utilisée pour les zones réactives.
-   >    * Avant de modifier un paramètre prédéfini de visionneuse, choisissez le style sur lequel vous souhaitez baser le paramètre prédéfini. Si vous ne choisissez pas de style, lorsque vous début modifier le paramètre prédéfini de la visionneuse, vous perdez toutes vos modifications si vous décidez de passer à un autre paramètre prédéfini.
+   >    * Avant de modifier un paramètre prédéfini de visionneuse, choisissez le style sur lequel vous souhaitez baser le paramètre prédéfini. Si vous ne choisissez pas de style, lorsque vous début modifier le paramètre prédéfini de visionneuse, vous perdez toutes vos modifications si vous changez de paramètre prédéfini.
 
 
    Vous pouvez également prévisualisation à quoi ressemble la bannière du carrousel. Voir [(Facultatif) Aperçu des bannières de carrousel](#optional-previewing-carousel-banners).
