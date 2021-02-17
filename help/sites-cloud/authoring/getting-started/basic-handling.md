@@ -1,11 +1,11 @@
 ---
 title: Manipulation de base
-description: Se familiariser avec la navigation dans AEM et l’utilisation des fonctionnalités de base
+description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base
 translation-type: tm+mt
 source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
 workflow-type: tm+mt
 source-wordcount: '2864'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Une fois connecté, vous accédez au [panneau de navigation](#navigation-panel).
 
 La console **Sites** est utilisée dans ce document pour garantir une bonne compréhension de l’utilisation de base d’AEM. Cliquez ou appuyez sur **Sites** pour commencer.
 
-## Navigation dans le produit   {#product-navigation}
+## Navigation dans le produit {#product-navigation}
 
 La première fois que vous accédez à une console, un didacticiel de navigation du produit démarre. Prenez quelques instants pour cliquer ou appuyer sur divers éléments afin de vous familiariser avec le fonctionnement de base d’AEM.
 
@@ -40,7 +40,7 @@ La première fois que vous accédez à une console, un didacticiel de navigation
 
 Cliquez ou appuyez sur **Suivant** pour accéder à la page suivante de la présentation. Cliquez ou appuyez sur **Fermer** ou à l’extérieur de la boîte de dialogue de présentation pour la fermer.
 
-Si vous ne désactivez pas l’option **Ne plus afficher**, la présentation redémarrera la prochaine fois que vous accéderez à la console.
+Si vous ne désactivez pas l’option **Ne plus afficher ce message**, la présentation redémarrera la prochaine fois que vous accéderez à la console.
 
 ## Navigation globale {#global-navigation}
 
@@ -52,12 +52,12 @@ Vous pouvez fermer le panneau de navigation globale en cliquant ou en appuyant s
 
 La navigation globale se compose de deux panneaux, représentés par des icônes dans la marge gauche de l’écran :
 
-* **[Navigation](#navigation-panel)** : représenté par une boussole  et le panneau par défaut lorsque vous vous connectez à AEM
+* **[Navigation](#navigation-panel)** : représenté par une boussole et le panneau par défaut lorsque vous vous connectez à AEM
 * **[Outils](#tools-panel)** : représenté par un marteau
 
 Les options disponibles dans ces panneaux sont décrites ci-dessous.
 
-### Panneau de navigation   {#navigation-panel}
+### Panneau de navigation  {#navigation-panel}
 
 Panneau de navigation :
 
@@ -72,7 +72,7 @@ Les consoles suivantes sont disponibles à partir du panneau de navigation :
 | Projets | La console Projets vous donne un accès direct à vos projets. [Les projets sont des tableaux de bord virtuels](/help/sites-cloud/authoring/projects/overview.md) qui peuvent être utilisés pour créer une équipe. Vous pouvez ensuite donner à cette équipe un accès aux ressources, aux workflows et aux tâches, ce qui permet aux utilisateurs de travailler vers un objectif commun. |
 | Sites | Les consoles Sites permettent de [créer, d’afficher et de gérer des sites](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) exécutés sur votre instance AEM. Grâce à ces consoles, vous pouvez créer, modifier, copier, déplacer et supprimer des pages, démarrer des workflows et publier des pages. |
 | Fragments d’expérience | Un [fragment d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) est une expérience autonome qui peut être réutilisée sur l’ensemble des canaux et qui présente des variations, ce qui vous évite de devoir copier et coller à plusieurs reprises des expériences ou des parties d’expériences. |
-| Ressources | La console Ressources vous permet d’importer et de gérer des ressources numériques telles que des images, des vidéos, des documents et des fichiers audio. Ces ressources peuvent ensuite être utilisées par n’importe quel site s’exécutant sur la même instance AEM.<!--add some kind of assets link--> |
+| Assets | La console Assets vous permet d’importer et de gérer des ressources numériques telles que des images, des vidéos, des documents et des fichiers audio. Ces ressources peuvent ensuite être utilisées par n’importe quel site s’exécutant sur la même instance AEM.<!--add some kind of assets link--> |
 | Personnalisation | Cette console propose un ensemble d’outils de [création de contenu ciblé et de présentation d’expériences personnalisées.](/help/sites-cloud/authoring/personalization/overview.md) |
 
 ## Panneau Outils {#tools-panel}
@@ -226,7 +226,7 @@ En raison des restrictions d’espace dans certaines fenêtres, la barre d’out
 >
 >Les icônes individuelles disponibles sont documentées par rapport à la console, à la fonction ou au scénario approprié.
 
-## Actions rapides   {#quick-actions}
+## Actions rapides  {#quick-actions}
 
 Dans le [mode Carte](#card-view), certaines actions, en plus d’être disponibles dans la barre d’outils, le sont également sous la forme d’icônes d’actions rapides. Les icônes d’actions rapides sont disponibles pour un seul élément à la fois et évitent d’avoir à présélectionner l’action.
 
@@ -248,7 +248,7 @@ Vous pouvez afficher, parcourir et sélectionner (pour effectuer d’autres opé
 >
 >Par défaut, AEM Assets n’affiche pas les rendus d’origine des ressources dans l’interface utilisateur sous la forme de miniatures, et ce, quel que soit le mode. Si vous êtes administrateur, vous pouvez utiliser des incrustations pour configurer AEM Assets afin d’afficher les rendus d’origine sous la forme de miniatures.
 
-### Sélection de ressources   {#selecting-resources}
+### Sélection de ressources  {#selecting-resources}
 
 La sélection d’une ressource en particulier dépend de la combinaison du mode et de l’appareil :
 
@@ -262,7 +262,7 @@ La sélection d’une ressource en particulier dépend de la combinaison du mode
 
 Vous pouvez sélectionner tous les éléments d’une vue en cliquant sur l’option **Sélectionner tout** dans l’angle supérieur droit de la console.
 
-* Dans le **mode d’affichage Carte**, toutes les cartes sont sélectionnées.
+* En **mode Carte**, toutes les cartes sont sélectionnées.
 * En **mode Liste**, tous les éléments de la liste sont sélectionnés.
 * En **mode Colonnes**, tous les éléments de la colonne la plus à gauche sont sélectionnés.
 
