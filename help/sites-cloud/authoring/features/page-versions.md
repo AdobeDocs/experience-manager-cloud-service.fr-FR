@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 83c6301cd804ea1bb41204cf68d9a8de0b373678
 workflow-type: tm+mt
 source-wordcount: '1521'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -24,14 +24,14 @@ Le contrôle de version permet de créer un « instantané » d’une page à 
    * Les différences dans le texte et les images sont mises en évidence.
 * La distorsion du temps utilise les versions de pages pour déterminer l’état de l’environnement de publication.
 
-## Création d’une version   {#creating-a-new-version}
+## Création d’une version {#creating-a-new-version}
 
 Vous pouvez créer une version de votre ressource depuis :
 
 * le [rail de la frise chronologique](#creating-a-new-version-timeline),
 * l’option [Créer](#creating-a-new-version-create-with-a-selected-resource) (lorsqu’une ressource est sélectionnée)
 
-### Création d’une version - Frise chronologique{#creating-a-new-version-timeline}
+### Création d’une version – Frise chronologique {#creating-a-new-version-timeline}
 
 1. Accédez à la page pour laquelle créer une version.
 1. Sélectionnez la page en [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
@@ -49,7 +49,7 @@ Vous pouvez créer une version de votre ressource depuis :
 
    Les informations dans la frise chronologique sont mises à jour pour indiquer la nouvelle version.
 
-### Création d’une version - Création avec une ressource sélectionnée {#creating-a-new-version-create-with-a-selected-resource}
+### Création d’une version – Création avec une ressource sélectionnée {#creating-a-new-version-create-with-a-selected-resource}
 
 1. Accédez à la page pour laquelle créer une version.
 1. Sélectionnez la page en [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
@@ -116,6 +116,7 @@ Cette méthode permet de rétablir des versions de pages spécifiées dans le do
    >Si :
    >* vous avez sélectionné une seule page, qui n’a jamais eu de page enfant,
    >* ou aucune des pages du dossier ne comporte de version,
+
    >
    >l’affichage sera vide, car aucune version n’est applicable.
 
@@ -125,11 +126,11 @@ Cette méthode permet de rétablir des versions de pages spécifiées dans le do
 
 1. Pour une page spécifique, utilisez le sélecteur déroulant sous **RESTAURER VERS LA VERSION** pour sélectionner la version requise pour cette page.
 
-   ![Restaurer la version - Sélectionner la version](/help/sites-cloud/authoring/assets/versions-restore-version-02.png)
+   ![Restaurer la version – Sélectionner la version](/help/sites-cloud/authoring/assets/versions-restore-version-02.png)
 
 1. Dans l’affichage principal, sélectionnez la page à restaurer :
 
-   ![Restaurer la version - Sélectionner la page](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
+   ![Restaurer la version – Sélectionner la page](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
 
 1. Sélectionnez **Restaurer** pour la version sélectionnée de la page sélectionnée à restaurer en tant que version actuelle.
 
@@ -157,7 +158,7 @@ Cette méthode permet de restaurer une version d’une arborescence à une date 
 
 1. Sélectionnez **Restaurer** pour la version sélectionnée de l’arborescence à restaurer comme version *actuelle*.
 
-## Aperçu d’une version   {#previewing-a-version}
+## Aperçu d’une version  {#previewing-a-version}
 
 Vous pouvez prévisualiser une version spécifique :
 
@@ -189,13 +190,13 @@ Pour comparer la version actuelle de la page avec une version précédente :
 
 1. Sélectionnez **Comparer à actuel**. L’[outil de comparaison des pages](/help/sites-cloud/authoring/features/page-diff.md) s’ouvre et affiche les différences.
 
-## Distorsion du temps Timewarp   {#timewarp}
+## Distorsion du temps Timewarp  {#timewarp}
 
 La fonction de distorsion du temps Timewarp permet de simuler l’état *publié* d’une page à des moments spécifiques dans le passé.
 
 >[!NOTE]
 >
->[La fonction Timewarp peut également être utilisée avec les lancements pour prévisualisation le futur](/help/sites-cloud/authoring/launches/preview.md).
+>[Il est également possible d’utiliser la fonction Timewarp avec les lancements pour obtenir un aperçu du futur](/help/sites-cloud/authoring/launches/preview.md).
 
 La création de contenu étant un processus continu et collaboratif, l’objectif de Timewarp est de permettre aux auteurs d’effectuer le suivi d’un site web publié au fil du temps afin de comprendre l’évolution du contenu. Cette fonction utilise les versions de page pour déterminer l’état de l’environnement de publication.
 
@@ -222,7 +223,7 @@ Timewarp est un [mode](/help/sites-cloud/authoring/fundamentals/environment-tool
 
    ![En mode Timewarp](/help/sites-cloud/authoring/assets/versions-timewarp.png)
 
-### Limites du mode Timewarp{#timewarp-limitations}
+### Limites du mode Timewarp {#timewarp-limitations}
 
 Timewarp s’efforce de reproduire au mieux une page à un moment donné. Toutefois, en raison de la complexité de la création continue de contenu dans AEM, cela n’est pas toujours possible. Ces restrictions doivent être prises en compte lors de l’utilisation de Timewarp.
 
