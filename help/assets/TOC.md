@@ -5,10 +5,10 @@ breadcrumb-title: Guide d’Assets
 user-guide-description: Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: b0abba78292035140688b1802e8d8f12a121a1f0
+source-git-commit: 2749703c569b5ce060041b1c479a465fb3d0ca01
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 98%
+source-wordcount: '474'
+ht-degree: 96%
 
 ---
 
@@ -123,6 +123,6 @@ ht-degree: 98%
    + [Publication de ressources Dynamic Media](dynamic-media/publishing-dynamicmedia-assets.md)
    + [Utilisation de la publication sélective dans Dynamic Media](dynamic-media/selective-publishing.md)
    + [Utilisation des sélecteurs](dynamic-media/working-with-selectors.md)
-   + [FAQ sur la fin de prise en charge de la visionneuse DHTML](dynamic-media/dhtml-viewer-endoflifefaqs.md)
-   + [Notification de fin de prise en charge de la visionneuse Flash](dynamic-media/flash-viewers-eol.md)
    + [FAQ sur la diffusion de contenu HTTP2](dynamic-media/http2faq.md)
+   + [Fin de vie des visionneuses de Flashs](dynamic-media/flash-viewers-eol.md)
+   + [Fin de vie des visionneuses DHTML](dynamic-media/dhtml-viewer-endoflifefaqs.md)
