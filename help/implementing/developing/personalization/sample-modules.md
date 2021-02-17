@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Exemples de types de module d’IU ContextHub  {#sample-contexthub-ui-module-types}
+# Exemples de types de module d’IU ContextHub {#sample-contexthub-ui-module-types}
 
 ContextHub fournit plusieurs exemples de module d’IU que vous pouvez utiliser dans vos solutions. Les informations suivantes sont disponibles :
 
