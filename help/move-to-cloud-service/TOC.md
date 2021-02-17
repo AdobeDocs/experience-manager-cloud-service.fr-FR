@@ -7,12 +7,12 @@ translation-type: tm+mt
 source-git-commit: b729e3fe4ef572877ae185c37f30b9b1fc78fc2a
 workflow-type: tm+mt
 source-wordcount: '87'
-ht-degree: 85%
+ht-degree: 95%
 
 ---
 
 
-# Guide de la transition vers AEM as a Cloud Service{#moving}
+# Guide de la transition vers AEM as a Cloud Service {#moving}
 
 + [Transition vers AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
 + Phases du parcours de transition {#phases}
@@ -20,9 +20,9 @@ ht-degree: 85%
    + [Exécution](/help/move-to-cloud-service/execution.md)
    + [Post-activation](/help/move-to-cloud-service/post-go-live.md)
 + Outils de transition vers le cloud {#cloud-migration}
-   + Analyseur des meilleures pratiques {#best-practices-analyzer}
+   + Analyseur de bonnes pratiques {#best-practices-analyzer}
       + [Présentation](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
-      + [Utilisation de l’analyseur des meilleures pratiques](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
+      + [Utilisation de l’analyseur de bonnes pratiques](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + Outil de transfert de contenu {#content-transfer-tool}
       + [Présentation](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [Utilisation de l’outil de mappage des utilisateurs](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
