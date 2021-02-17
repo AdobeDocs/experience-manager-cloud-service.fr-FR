@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: bb8ab907dbeb422db410328f9c559c6794c16a8f
 workflow-type: tm+mt
 source-wordcount: '2127'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -79,7 +79,7 @@ Dans cet exemple, le `ModelManager` est initialisé et un `ModelStore` vide est 
 * `modelClient` - Permet de fournir un client personnalisé chargé de récupérer le modèle.
 * `model` - Un  `model` objet transmis en tant que paramètre généralement renseigné lors de l&#39; [utilisation de SSR.](/help/implementing/developing/hybrid/ssr.md)
 
-### aem composants de feuilles autorisés {#authorable-leaf-components}
+### AEM composants de feuilles autorisés {#authorable-leaf-components}
 
 1. Créez/identifiez un composant AEM pour lequel un composant React autorisé sera créé. Dans cet exemple, nous utilisons le composant de texte du projet WKND.
 
@@ -103,7 +103,7 @@ Dans cet exemple, le `ModelManager` est initialisé et un `ModelStore` vide est 
 
    >[!NOTE]
    >
-   >Dans cet exemple, il existe des versions distinctes du composant : aem composants React encapsulés et non encapsulés. La version encapsulée doit être utilisée lors de l’utilisation explicite du composant. Lorsque le composant fait partie d’une page, vous pouvez continuer à utiliser le composant par défaut comme dans l’éditeur de SPA.
+   >Dans cet exemple, il existe des versions distinctes du composant : AEM composants React encapsulés et non encapsulés. La version encapsulée doit être utilisée lors de l’utilisation explicite du composant. Lorsque le composant fait partie d’une page, vous pouvez continuer à utiliser le composant par défaut comme dans l’éditeur de SPA.
 
 1. Générer le contenu dans le composant.
 
@@ -185,7 +185,7 @@ mvn clean install -PautoInstallSinglePackage
 
 Le composant `AEMText` peut désormais être autorisé sur AEM.
 
-### aem Pages autorisées {#aem-authorable-pages}
+### AEM Pages autorisées {#aem-authorable-pages}
 
 1. Identifiez une page à ajouter pour la création dans le SPA. Cet exemple utilise `/content/wknd-spa-react/us/en/home.html`.
 1. Créez un nouveau fichier (ex. `Page.js`) pour le composant de page autorisé. Ici, nous pouvons réutiliser le composant de page fourni dans `@adobe/cq-react-editable-components`.
@@ -334,4 +334,4 @@ Le document de référence ci-après peut être utile pour comprendre SPA dans l
 * [Documents de référence SPA (références API)](/help/implementing/developing/hybrid/reference-materials.md)
 * [SPA Plan directeur et PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
 * [Routage du modèle de SPA ](/help/implementing/developing/hybrid/routing.md)
-* [SPA et rendu côté serveur](/help/implementing/developing/hybrid/ssr.md)
+* [SPA et rendu côté serveur ](/help/implementing/developing/hybrid/ssr.md)
