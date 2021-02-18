@@ -2,10 +2,10 @@
 title: Notes de mise à jour actuelles pour  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour actuelles pour  [!DNL Adobe Experience Manager]  as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
+source-git-commit: 77d0ae925ed3837c70e58c110b6c8360790b6aee
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 17%
+source-wordcount: '1103'
+ht-degree: 16%
 
 ---
 
@@ -133,9 +133,10 @@ La date de publication de l’outil de transfert de contenu v1.2.4 est le 10 fé
 
 La date de publication de l’outil de transfert de contenu v1.2.2 est le 01 février 2021.
 
-### Nouveautés de [!DNL Content Transfer Tool] {#what-is-new-ctt}
+### Nouveautés de l’outil de transfert de contenu {#what-is-new-ctt}
 
-* Nouvelle fonctionnalité et interface utilisateur ajoutées à l’outil de transfert de contenu - Outil de mappage des utilisateurs. Cette fonctionnalité mappe automatiquement les utilisateurs et les groupes existants à leurs identifiants système Identity Management Adobe dans le cadre de l’activité de migration de contenu. Pour plus d&#39;informations, consultez [Utilisation de l&#39;outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html).
+* Nouvelle fonctionnalité et interface utilisateur ajoutées à l’outil de transfert de contenu - Outil de mappage des utilisateurs. Cette fonctionnalité mappe automatiquement les utilisateurs et les groupes existants à leurs identifiants système Identity Management Adobe dans le cadre de l’activité de migration de contenu.
+Pour plus d&#39;informations, consultez [Utilisation de l&#39;outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html).
 * L’outil de transfert de contenu migre désormais tous les groupes et utilisateurs référencés dans le jeu de migration, y compris les enfants.
 * Les utilisateurs sont autorisés à sélectionner certains chemins sous `/etc` lors de la création de jeux de migration.
 
@@ -145,7 +146,7 @@ La date de publication de l’outil de transfert de contenu v1.2.2 est le 01 fé
 
 La date de publication de la version 2.1.0 de Best Practices Analyzer est le 11 février 2021.
 
-### Nouveautés de [!DNL Best Practices Analyzer] {#what-is-new-bpa}
+### Nouveautés de l’analyseur des meilleures pratiques {#what-is-new-bpa}
 
 * Capacité à détecter l’utilisation de l’implémentation AEM Forms et AEM Forms et à indiquer les zones pertinentes pour la migration vers AEM Forms en tant que Cloud Service.
 * Capacité à détecter et à générer des rapports sur l’utilisation et le nombre de composants et de modèles personnalisés.
