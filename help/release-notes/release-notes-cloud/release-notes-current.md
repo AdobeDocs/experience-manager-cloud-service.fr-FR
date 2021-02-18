@@ -2,9 +2,9 @@
 title: Notes de mise à jour actuelles pour  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour actuelles pour  [!DNL Adobe Experience Manager]  as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 77d0ae925ed3837c70e58c110b6c8360790b6aee
+source-git-commit: 6f48b5daa5b47ad19db8b3431350111364f962fc
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1178'
 ht-degree: 16%
 
 ---
@@ -135,7 +135,7 @@ La date de publication de l’outil de transfert de contenu v1.2.2 est le 01 fé
 
 ### Nouveautés de l’outil de transfert de contenu {#what-is-new-ctt}
 
-* Nouvelle fonctionnalité et interface utilisateur ajoutées à l’outil de transfert de contenu - Outil de mappage des utilisateurs. Cette fonctionnalité mappe automatiquement les utilisateurs et les groupes existants à leurs identifiants système Identity Management Adobe dans le cadre de l’activité de migration de contenu.
+* Nouvelle fonctionnalité et interface utilisateur ajoutées à l’outil de transfert de contenu - Outil de mappage des utilisateurs. Cette fonctionnalité mappe automatiquement les utilisateurs et groupes existants à leurs identifiants système Identity Management Adobe dans le cadre de l’activité de migration de contenu.
 Pour plus d&#39;informations, consultez [Utilisation de l&#39;outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html).
 * L’outil de transfert de contenu migre désormais tous les groupes et utilisateurs référencés dans le jeu de migration, y compris les enfants.
 * Les utilisateurs sont autorisés à sélectionner certains chemins sous `/etc` lors de la création de jeux de migration.
@@ -144,7 +144,7 @@ Pour plus d&#39;informations, consultez [Utilisation de l&#39;outil de mappage u
 
 ### Date de publication {#release-date-bpa}
 
-La date de publication de la version 2.1.0 de Best Practices Analyzer est le 11 février 2021.
+La date de publication de la version 2.1.2 de Best Practices Analyzer est le 18 février 2021.
 
 ### Nouveautés de l’analyseur des meilleures pratiques {#what-is-new-bpa}
 
@@ -153,6 +153,19 @@ La date de publication de la version 2.1.0 de Best Practices Analyzer est le 11 
 * Capacité à détecter le type de stockage de noeuds et de stockage de données utilisé.
 * Capacité à détecter l&#39;utilisation de Dynamic Media.
 * Capacité à détecter la version Java utilisée.
+
+## Outils de refactorisation du code {#code-refactoring-tools}
+
+### Nouveautés des outils de refactorisation de code {#what-is-new-crt}
+
+* Nouvelle version du module externe AIO-CLI publiée. La dernière version de ce module comprend plusieurs correctifs pour Repository Modernizer.
+Consultez [Expérience unifiée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) pour en savoir plus sur ce module externe.
+
+### Correctifs {#bug-fixes-crt}
+
+* Plusieurs correctifs de bogues ont été apportés à Repository Modernizer.
+Reportez-vous à la [ressource GitHub : aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) pour plus d’informations.
+
 
 
 
