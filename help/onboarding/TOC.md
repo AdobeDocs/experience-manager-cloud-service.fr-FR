@@ -4,10 +4,10 @@ user-guide-title: Intégration à AEM as a Cloud Service
 breadcrumb-title: Guide d’intégration
 user-guide-description: Ce guide résume la procédure à suivre pour commencer à utiliser Experience Manager as a Cloud Service, avec les informations d’accès et des informations importantes sur la protection des données.
 translation-type: tm+mt
-source-git-commit: d20a729712c1dbd48150f813419b57c49074b492
+source-git-commit: 39c7679e390067b520f36c4053133caeb9541875
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 49%
+source-wordcount: '673'
+ht-degree: 48%
 
 ---
 
@@ -98,4 +98,7 @@ ht-degree: 49%
    + [Migration vers Adobe Experience Manager as a Cloud Service](migration-methodology/getting-started.md)
 + Bonnes pratiques {#best-practices}
    + [Gestion de l’optimisation et des URL](best-practices/seo-and-url-management.md)
+   + [Évaluation des IPC](best-practices/assessing-kpis.md)
+   + [Alignement des indicateurs de performance clés](best-practices/aligning-kpis.md)
+   + [Choisir la bonne équipe](best-practices/choose-right-team.md)
 + [Présentation des consoles des outils](tools-consoles.md)
