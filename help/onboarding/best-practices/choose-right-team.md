@@ -2,15 +2,22 @@
 title: Personnes de droite, rôles appropriés
 description: Personnes de droite, rôles appropriés
 translation-type: tm+mt
-source-git-commit: 35143c9189620180665fe8f8735bc7800c03dc96
+source-git-commit: 7add7edf0a3fe40be33483e293a345d7c68eb312
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '825'
 ht-degree: 2%
 
 ---
 
 
 # **Tout d&#39;abord, il faut que les bonnes personnes jouent les bons rôles.**
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_chooseteam"
+>title="Choisir la bonne équipe"
+>abstract="Placer les bonnes personnes dans les bons emplois pour aider à la réussite de votre déploiement Adobe Experience Manager."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="Alignement des indicateurs de performance clés"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=en" text="Évaluation des IPC"
 
 Il y a des chances que dans votre organisation, plusieurs départements possèdent différents aspects de l&#39;expérience numérique. Sans gouvernance, le moment est propice à un débat sans fin, à des querelles intestines et à la confusion.
 
