@@ -2,10 +2,10 @@
 title: Journalisation
 description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou apprenez à demander la journalisation des données.
 translation-type: tm+mt
-source-git-commit: 0b648e1a0da141f8393c62cb269e5498e2ecd23f
+source-git-commit: 17ba5068b0df0724bcebeecb2323b7dcdc8d8cfa
 workflow-type: tm+mt
-source-wordcount: '2219'
-ht-degree: 100%
+source-wordcount: '2314'
+ht-degree: 95%
 
 ---
 
@@ -598,6 +598,12 @@ Les propriétés ci-dessus doivent être spécifiées pour chaque combinaison de
 >[!NOTE]
 >
 >Le transfert Splunk pour les environnements de programme de test Sandbox n’est pas pris en charge.
+
+Assurez-vous que la requête initiale comprend tous les environnements de développement qui doivent être activés, en plus des environnements d’étape/produit.
+
+Si de nouveaux environnements de développement créés après la requête initiale sont destinés à un transfert de code source, mais qu’ils ne sont pas activés, une requête supplémentaire doit être envoyée.
+
+Notez également que si des environnements de développement ont été demandés, il est possible que d&#39;autres environnements de développement qui ne figurent pas dans la requête ou même les environnements de sandbox aient activé le transfert de Splunk et partagent un index Splunk. Les clients peuvent utiliser le champ `aem_env_id` pour distinguer ces environnements.
 
 Vous trouverez ci-dessous un exemple de demande d’assistance :
 
