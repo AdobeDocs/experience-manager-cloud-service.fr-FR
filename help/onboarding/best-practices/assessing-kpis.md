@@ -2,15 +2,22 @@
 title: Accès aux indicateurs de performance clés
 description: Accès aux indicateurs de performance clés
 translation-type: tm+mt
-source-git-commit: 35143c9189620180665fe8f8735bc7800c03dc96
+source-git-commit: 7add7edf0a3fe40be33483e293a345d7c68eb312
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
 
 
 # Mesurez-vous les choses qui comptent le plus ?
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_assesskpis"
+>title="Évaluation des IPC"
+>abstract="Avant de commencer le lancement de Adobe Experience Manager, tous ceux qui ont un intérêt dans le projet doivent savoir quels sont vos trois principaux IPC et pourquoi ils comptent."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="Alignement des indicateurs de performance clés"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=en" text="Choisir la bonne équipe"
 
 Avant de commencer le lancement de Adobe Experience Manager, tous ceux qui ont un intérêt dans le projet doivent savoir quels sont vos trois principaux IPC et pourquoi ils comptent.
 
