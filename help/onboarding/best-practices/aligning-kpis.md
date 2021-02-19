@@ -2,9 +2,9 @@
 title: Alignement des indicateurs de performance clés
 description: Alignement des indicateurs de performance clés
 translation-type: tm+mt
-source-git-commit: 35143c9189620180665fe8f8735bc7800c03dc96
+source-git-commit: 7add7edf0a3fe40be33483e293a345d7c68eb312
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '483'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,13 @@ ht-degree: 0%
 
 
 # Pour choisir les IPC appropriés, début avec les objectifs de votre entreprise
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_alignkpis"
+>title="Alignement des indicateurs de performance clés"
+>abstract="Dans un monde numérique, vous pouvez mesurer presque tout. Le choix des IPC appropriés pour votre mise en oeuvre Adobe Experience Manager aidera votre équipe à se concentrer sur ce qui compte le plus."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=en" text="Évaluation des IPC"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=en" text="Choisir la bonne équipe"
 
 Dans un monde numérique, vous pouvez mesurer presque tout. Le choix de trois IPC pour votre mise en oeuvre Adobe Experience Manager aidera votre équipe à se concentrer sur ce qui compte le plus.
 
