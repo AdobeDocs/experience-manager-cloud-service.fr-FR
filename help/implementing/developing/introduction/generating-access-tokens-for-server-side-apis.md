@@ -2,9 +2,9 @@
 title: Génération de Jetons d'accès pour les API côté serveur
 description: Découvrez comment faciliter la communication entre un serveur tiers et AEM en tant que Cloud Service en générant un jeton JWT sécurisé
 translation-type: tm+mt
-source-git-commit: e4c7fcc1576a401629461117be4dba404a3c37c8
+source-git-commit: 47296bc734dffb943be37b61ddce6b505d57d6b5
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1108'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ exchange(config).then(accessToken => {
 
 Le même échange peut être effectué dans n&#39;importe quelle langue capable de générer un jeton JWT signé avec le format correct et d&#39;appeler les API IMS Token Exchange.
 
-Le jeton d&#39;accès définit le moment où il expire, qui est généralement de 12 heures. Il existe un exemple de code dans le référentiel git pour gérer un jeton d&#39;accès et l&#39;actualiser avant son expiration.
+Le jeton d&#39;accès définit le moment où il expire, qui est généralement de 24 heures. Il existe un exemple de code dans le référentiel git pour gérer un jeton d&#39;accès et l&#39;actualiser avant son expiration.
 
 ### Appel de l’API AEM {#calling-the-aem-api}
 
@@ -120,7 +120,7 @@ Pour plus d&#39;informations sur les autorisations requises pour utiliser l&#39;
 
 >[!NOTE]
 >
->Le jeton d&#39;accès de développement local est valide pendant 24 heures après quoi il doit être régénéré selon la même méthode.
+>Le jeton d&#39;accès de développement local est valide pendant 24 heures au maximum après quoi il doit être régénéré selon la même méthode.
 
 Les développeurs peuvent utiliser ce jeton pour passer des appels de leur application de test non-AEM à un AEM en tant qu’environnement Cloud Service. En règle générale, le développeur utilise ce jeton avec l’application non-AEM sur son propre ordinateur portable. En outre, l’AEM en tant que Cloud est généralement un environnement hors production.
 
