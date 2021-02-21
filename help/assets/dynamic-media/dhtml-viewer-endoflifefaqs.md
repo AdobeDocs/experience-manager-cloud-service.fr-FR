@@ -2,7 +2,7 @@
 title: Fin de vie de la visionneuse DHTML
 description: Depuis le 31 janvier 2014, la plate-forme de la visionneuse DHTML est officiellement en fin de vie.
 translation-type: tm+mt
-source-git-commit: 7dee751f0b0e059bda7cfdf3f524bdc4c75de91b
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 14%
