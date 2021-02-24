@@ -2,10 +2,10 @@
 title: Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes
 description: Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes.
 translation-type: tm+mt
-source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
+source-git-commit: 6a60238b13d66ea2705063670295a62e3cbf6255
 workflow-type: tm+mt
-source-wordcount: '1708'
-ht-degree: 72%
+source-wordcount: '1707'
+ht-degree: 69%
 
 ---
 
@@ -49,7 +49,7 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 * Vous pouvez appliquer des requêtes aux noms de champ qui correspondent aux champs du modèle de fragment de contenu.
    * Voir [Exemple de Requête - Détails complets du PDG et des employés d&#39;une Société](#sample-full-details-company-ceos-employees)
 
-* Outre les champs de votre modèle, il existe certains champs générés par le système (précédés d’un trait de soulignement) :
+* Outre les champs de votre modèle, il existe certains champs générés par le système (précédés d’un trait de soulignement) :
 
    * Pour le contenu :
 
@@ -59,7 +59,7 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
          * Voir [Modèle de recherche de métadonnées – Répertorier les métadonnées des prix intitulés GB](#sample-metadata-awards-gb)
       * `_model` : autoriser l’interrogation d’un modèle de fragment de contenu (chemin et titre)
          * Voir [Exemple de Requête pour un modèle de fragment de contenu à partir d&#39;un modèle](#sample-wknd-content-fragment-model-from-model)
-      * `_path` : chemin d’accès au fragment de contenu dans le référentiel.
+      * `_path` : chemin d’accès à votre fragment de contenu dans le référentiel
          * Voir [Exemple de Requête - Un fragment de ville spécifique unique](#sample-single-specific-city-fragment)
       * `_reference` : pour afficher les références ; y compris les références intégrées dans l’éditeur de texte enrichi
          * Voir [Exemple de Requête pour plusieurs fragments de contenu avec des références prérécupérées](#sample-wknd-multiple-fragments-prefetched-references)
@@ -329,7 +329,7 @@ query {
 
 ### Exemple de Requête - Un fragment de ville spécifique {#sample-single-specific-city-fragment}
 
-Il s’agit d’une requête qui renvoie les détails d’une entrée de fragment unique vers un emplacement spécifique dans le référentiel.
+Il s’agit d’une requête de renvoi des détails d’une entrée de fragment unique à un emplacement spécifique du référentiel.
 
 **Exemple de requête**
 
