@@ -2,10 +2,10 @@
 title: Invalidation du cache du réseau CDN par le biais de Dynamic Media
 description: L’invalidation du contenu de réseau de diffusion de continu (CDN) en cache vous permet de mettre à jour rapidement les ressources diffusées par Dynamic Media, au lieu d’attendre l’expiration du cache.
 translation-type: tm+mt
-source-git-commit: 77e270b354e7e99aa2e7ab88ddc8528ad0c4ade0
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '1300'
-ht-degree: 100%
+source-wordcount: '1305'
+ht-degree: 97%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 100%
 
 Les ressources Dynamic Media sont mises en cache par le réseau de diffusion de contenu (CDN) pour une diffusion rapide à vos clients. Cependant, lorsque vous apportez des mises à jour à ces ressources, vous souhaiterez peut-être que ces modifications prennent effet immédiatement sur votre site web. La purge ou l’invalidation du cache du réseau CDN vous permet de mettre rapidement à jour les ressources distribuées par Dynamic Media. Au lieu d’attendre que le cache arrive à expiration à l’aide d’une valeur TTL (durée de vie) (10 heures par défaut), vous pouvez envoyer une requête depuis l’interface utilisateur de Dynamic Media pour que le cache arrive à expiration en quelques minutes.
 
->[!IMPORTANT]
+>[!NOTE]
 >
->Cette fonctionnalité nécessite l’utilisation du réseau CDN prêt à l’emploi fourni avec AEM Dynamic Media ; aucun autre réseau CDN personnalisé n’est pris en charge. <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
+>Cette fonctionnalité nécessite l’utilisation du CDN prêt à l’emploi fourni avec Adobe Experience Manager Dynamic Media. Aucun autre CDN personnalisé n’est pris en charge avec cette fonctionnalité.
 
 Voir aussi [Présentation de la mise en cache dans Dynamic Media](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
