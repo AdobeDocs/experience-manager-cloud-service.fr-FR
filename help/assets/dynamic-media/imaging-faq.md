@@ -2,10 +2,10 @@
 title: Imagerie dynamique
 description: L’imagerie intelligente applique les caractéristiques d’affichage uniques de chaque utilisateur afin de fournir automatiquement les images appropriées optimisées pour leur expérience, ce qui se traduit par de meilleures performances et un meilleur engagement.
 translation-type: tm+mt
-source-git-commit: a11ce4c60ddfa345a3be20e3cc4f99ce86d1e84b
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '1828'
-ht-degree: 55%
+source-wordcount: '1856'
+ht-degree: 54%
 
 ---
 
@@ -15,6 +15,10 @@ ht-degree: 55%
 ## Qu’est-ce que l’imagerie dynamique ? {#what-is-smart-imaging}
 
 La technologie d’imagerie intelligente applique les fonctionnalités d’IA Adobe Sensei et fonctionne avec les &quot;paramètres d’image prédéfinis&quot; existants. Il permet d’améliorer les performances de la diffusion d’images en optimisant automatiquement le format, la taille et la qualité des images en fonction des fonctionnalités du navigateur client.
+
+>[!NOTE]
+>
+>Cette fonctionnalité nécessite l’utilisation du CDN prêt à l’emploi fourni avec Adobe Experience Manager Dynamic Media. Aucun autre CDN personnalisé n’est pris en charge avec cette fonctionnalité.
 
 Smart Imaging bénéficie également de l’amélioration des performances grâce à son intégration complète au service haut de gamme CDN (Content Diffusion Network) haut de gamme d’Adobes. Ce service trouve la route Internet optimale entre les serveurs, les réseaux et les points d’écoute. Il examine la latence la plus faible, ou le taux de perte de paquets le plus faible, ou les deux, plutôt que d&#39;utiliser simplement la route par défaut sur Internet.
 
