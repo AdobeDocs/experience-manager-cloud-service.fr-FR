@@ -2,7 +2,7 @@
 title: Activation de la protection de lien dynamique dans Dynamic Media
 description: Informations sur la manière d’activer la protection de lien dynamique dans Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
+source-git-commit: 5c221505c6a56411b17b52c70ce941258993bfb3
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 31%
@@ -18,6 +18,4 @@ La liaison rapide est le cas où un site Web tiers utilise du code HTML pour aff
 
 >[!NOTE]
 >
->Cette fonctionnalité nécessite l’utilisation du CDN prêt à l’emploi fourni avec Adobe Experience Manager Dynamic Media. Aucun autre CDN personnalisé n’est pris en charge avec cette fonctionnalité.
-
-Pour activer la protection des liens à chaud, un administrateur doit créer un ticket d&#39;assistance pour demander la modification de la configuration de votre compte Dynamic Media. L&#39;activation de la protection des liens chauds n&#39;entraîne aucun coût supplémentaire.
+>Cette fonctionnalité nécessite l’utilisation du CDN prêt à l’emploi fourni avec Adobe Experience Manager Dynamic Media. Aucun autre CDN personnalisé n’est pris en charge avec cette fonctionnalité. Pour activer la protection des liens à chaud, un administrateur doit créer un ticket d&#39;assistance pour demander la modification de la configuration de votre compte Dynamic Media. L&#39;activation de la protection des liens chauds n&#39;entraîne aucun coût supplémentaire.
