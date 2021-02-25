@@ -2,10 +2,10 @@
 title: Activation de la protection de lien dynamique dans Dynamic Media
 description: Informations sur la manière d’activer la protection de lien dynamique dans Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 58%
+source-wordcount: '191'
+ht-degree: 31%
 
 ---
 
@@ -16,4 +16,8 @@ La liaison rapide est le cas où un site Web tiers utilise du code HTML pour aff
 
 [Adobe Customer ](https://helpx.adobe.com/fr/support.html) Carecan peut configurer un filtre de parrain au niveau du CDN. Cela permet de s’assurer que le contenu Dynamic Media n’est diffusé que sur les sites Web de votre liste des sites Web autorisés pour le domaine.
 
-La protection de lien dynamique nécessite l’utilisation du CDN groupé d’Adobe. Pour activer la protection de lien dynamique, un administrateur doit créer un ticket de support afin de demander le changement de configuration à votre compte Dynamic Media. L’activation de la protection de lien dynamique n’implique aucun frais supplémentaires.
+>[!NOTE]
+>
+>Cette fonctionnalité nécessite l’utilisation du CDN prêt à l’emploi fourni avec Adobe Experience Manager Dynamic Media. Aucun autre CDN personnalisé n’est pris en charge avec cette fonctionnalité.
+
+Pour activer la protection des liens à chaud, un administrateur doit créer un ticket d&#39;assistance pour demander la modification de la configuration de votre compte Dynamic Media. L&#39;activation de la protection des liens chauds n&#39;entraîne aucun coût supplémentaire.
