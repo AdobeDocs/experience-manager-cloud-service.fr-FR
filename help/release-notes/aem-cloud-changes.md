@@ -2,10 +2,10 @@
 title: Modifications notables apportées à Adobe Experience Manager (AEM) as a Cloud Service
 description: Modifications notables apportées à Adobe Experience Manager (AEM) as a Cloud Service
 translation-type: tm+mt
-source-git-commit: c1014098cecf3c3f86a7af844801fb1202864b51
+source-git-commit: 515e462e942d58758a11e0a9bd3b1c3990a4dcf9
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 100%
+source-wordcount: '832'
+ht-degree: 93%
 
 ---
 
@@ -65,11 +65,10 @@ La console web, qui était utilisée dans les versions précédentes d’AEM pou
 
 ## Les modifications apportées au référentiel de publication ne sont pas autorisées {#changes-to-publish-repo}
 
-Les modifications directes apportées au référentiel de publication ne sont pas autorisées sur AEM Cloud Service. Dans les versions antérieures d’AEM sur site ou d’AEM sur AMS, les modifications de code peuvent être apportées directement au référentiel de publication ; pour créer des utilisateurs, mettre à jour le profil utilisateur et créer des nœuds, par exemple. Cela n’est plus possible et vous pouvez y remédier de différentes façons :
+Outre les modifications apportées au dossier `/home` sur la couche Publication, les modifications directes apportées au référentiel de publication ne sont pas autorisées sur AEM Cloud Service. Dans les versions précédentes d’AEM ou d’AEM sur site sur AMS, des modifications de code pouvaient être apportées directement au référentiel de publication. Certaines limitations peuvent être atténuées de différentes manières :
 
 * Pour le contenu et la configuration basée sur le contenu : effectuez les modifications sur l’instance d’auteur et publiez-les.
 * Pour le code et la configuration : effectuez les modifications dans le référentiel GIT et exécutez le pipeline CI/CD pour les déployer.
-* Pour les données liées à l’utilisateur, telles que les envois de formulaire ou les données de profil : utilisez le service de profil unifié à partir d’Experience Cloud Platform ou d’un autre magasin de sessions tiers.
 
 ## Les modes d’exécution personnalisés ne sont pas autorisés {#custom-runmodes}
 
