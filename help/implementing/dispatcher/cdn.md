@@ -2,10 +2,10 @@
 title: Réseau de diffusion de contenu dans AEM as a Cloud Service
 description: Réseau de diffusion de contenu dans AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: e9dd057f3389264a7743d16133f66a9e944d13b1
+source-git-commit: 852a4742a17065b9d38bd78d1e68a92854001842
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 45%
+source-wordcount: '644'
+ht-degree: 44%
 
 ---
 
@@ -75,4 +75,4 @@ Les valeurs des codes du continent sont les suivantes :
 * Océanie
 * SA Amérique du Sud
 
-Ces informations peuvent s’avérer utiles pour les cas d’utilisation, tels que la redirection vers une URL différente en fonction de l’origine (pays) de la demande. Bien que, dans ce cas d’utilisation spécifique, la redirection ne doit pas être mise en cache car elle varie. Si nécessaire, vous pouvez utiliser `Cache-Control: private` pour empêcher la mise en cache. Voir aussi [Mise en cache](/help/implementing/dispatcher/caching.md#html-text).
+Ces informations peuvent s’avérer utiles pour les cas d’utilisation, tels que la redirection vers une URL différente en fonction de l’origine (pays) de la demande. Utilisez l’en-tête Vary pour mettre en cache les réponses qui dépendent des informations géographiques. Par exemple, les redirections vers un landing page de pays spécifique doivent toujours contenir `Vary: x-aem-client-country`. Si nécessaire, vous pouvez utiliser `Cache-Control: private` pour empêcher la mise en cache. Voir aussi [Mise en cache](/help/implementing/dispatcher/caching.md#html-text).
