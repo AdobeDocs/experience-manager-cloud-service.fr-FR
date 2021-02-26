@@ -2,9 +2,9 @@
 title: Génération de Jetons d'accès pour les API côté serveur
 description: Découvrez comment faciliter la communication entre un serveur tiers et AEM en tant que Cloud Service en générant un jeton JWT sécurisé
 translation-type: tm+mt
-source-git-commit: 47296bc734dffb943be37b61ddce6b505d57d6b5
+source-git-commit: 41b4bb3a63089c05750a40e910ee7578727d8b15
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1214'
 ht-degree: 0%
 
 ---
@@ -141,4 +141,11 @@ Effectuez les appels d’API serveur à serveur appropriés de l’application n
 
 ## Révocation des informations d&#39;identification du service {#service-credentials-revocation}
 
-Veuillez envoyer une demande au service clientèle si le jeton porteur JWT doit être révoqué.
+Si les informations d’identification doivent être révoquées, vous devez soumettre une demande au service d’assistance clientèle en procédant comme suit :
+
+1. Désactivez l’utilisateur du compte technique pour Adobe Admin Console dans l’interface utilisateur :
+   * Dans Cloud Manager, appuyez sur **...** en regard de votre environnement. La page profils du produit s’ouvre.
+   * Cliquez maintenant sur le profil **AEM Utilisateurs** pour afficher une liste des utilisateurs.
+   * Cliquez sur l&#39;onglet **Identifiants d&#39;API**, puis recherchez l&#39;utilisateur de compte technique approprié et supprimez-le.
+2. Contactez l’assistance clientèle et demandez que les informations d’identification du service pour cet environnement spécifique soient supprimées.
+3. Enfin, vous pouvez générer à nouveau les informations d’identification, comme décrit dans cette documentation. Assurez-vous également que le nouvel utilisateur de compte technique créé dispose des autorisations appropriées.
