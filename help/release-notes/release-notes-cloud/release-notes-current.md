@@ -2,10 +2,10 @@
 title: Notes de mise à jour actuelles pour  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour actuelles pour  [!DNL Adobe Experience Manager]  as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: ad80ea25abf06fd18dd781641f215e134a18a037
+source-git-commit: a93db92689928a900662a39b11bb5a7ea9724e62
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 11%
+source-wordcount: '1017'
+ht-degree: 10%
 
 ---
 
@@ -53,22 +53,18 @@ La version suivante (2021.3.0) sera publiée le 25 mars 2021.
 
 ## Nouveautés de [!DNL Assets] {#what-is-new-assets}
 
-* Les ressources peuvent être sources à l&#39;aide de [!DNL Experience Manager Assets Brand Portal]. Il permet d’obtenir des ressources auprès des utilisateurs de l’agence pour de nouvelles campagnes marketing, des photos et des projets.
+* Dans [!DNL Brand Portal], un nouveau paramètre de téléchargement est introduit, qui vous permet de créer un dossier distinct pour chaque fichier lors du téléchargement de dossiers, de collections, etc. voir [paramètres de téléchargement](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
 
 <!-- TBD: refine this list of features and enh. for Feb release.
 
-Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
-
-Indicators for expired, approved, and rejected statuses now available for assets in Column view.
-
-Ability to select a root path. select if a minimum number of tags is required. 
-
-Add a Boolean or radio widget type to metadata schema setup. -->
+Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  -->
 
 ## Correctifs de bogues dans [!DNL Assets] {#bug-fixes-assets}
 
 * Lorsqu’une nouvelle version d’une ressource existante est créée après la résolution du conflit d’affectation de nom, les métadonnées de la ressource d’origine sont remplacées. (CQ-4313594)
 * Lors de l’impression d’un fichier avec un texte d’annotation long, le texte de l’annotation est ajusté, même si de l’espace est disponible. (CQ-4314101)
+* Lorsque plusieurs ressources sont sélectionnées pour mettre à jour les propriétés, il arrive parfois qu’une erreur se produise ou que les propriétés d’une ressource désélectionnée soient mises à jour. (CQ-4316532)
+* Lorsque vous tentez d&#39;ouvrir [!UICONTROL le rail de recherche des administrateurs des ressources], la page reste vide et le fait de cliquer sur [!UICONTROL Modifier] > [!UICONTROL Paramètres] génère une erreur. (CQ-4315079)
 
 ## Cloud Manager {#cloud-manager}
 
