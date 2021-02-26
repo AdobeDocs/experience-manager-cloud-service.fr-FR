@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: 7a26596b00f276404934e467490ff79d08b0e1d0
+source-git-commit: 05242f0ca4168e220a4b83436da4daa0013edfaf
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ L’intégration à AEM Commerce as a Cloud Service est un processus à deux ét
 1. Activation d’AEM Commerce as a Cloud Service et approvisionnement du module complémentaire CIF
 2. Connexion d’AEM Commerce as a Cloud Service à votre environnement Magento
 
-La première étape est effectuée par Adobe. Vous devrez fournir des informations telles que l’organisation IMS, l’URL du point d’entrée GraphQL de votre environnement Magento, etc., dans le cadre du processus d’approvisionnement. Pour plus d’informations sur la tarification et l’approvisionnement, contactez votre représentant commercial.
+La première étape de l&#39;intégration est effectuée par Adobe. Pour plus d’informations sur la tarification et l’approvisionnement, contactez votre représentant commercial.
 
 Une fois que vous disposez du module complémentaire CIF, celui-ci est appliqué à tout programme Cloud Manager existant. Si vous n’avez pas de programme Cloud Manager, vous devrez en créer un. Pour plus d’informations, voir [Configuration de votre programme](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/getting-started/setting-up-program.html).
 
