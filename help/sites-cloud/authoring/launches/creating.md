@@ -2,10 +2,10 @@
 title: Création de lancements
 description: Vous pouvez créer un lancement afin de permettre la mise à jour d’une nouvelle version des pages web existantes en vue d’une activation future.
 translation-type: tm+mt
-source-git-commit: 9e9f2bbed463143f821cc7aa0d50f37f892f3e9b
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ Créez un lancement pour permettre la mise à jour d’une nouvelle version des 
 
 * Le titre apparaît dans le rail [Références](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references), à partir duquel les auteurs peuvent accéder aux références afin de les modifier.
 * Les pages enfants de la page source sont incluses, par défaut, dans le lancement. Si vous le souhaitez, vous pouvez n’utiliser que la page source.
-* Par défaut, Live Copy met automatiquement à jour les pages de lancement à mesure que les pages source changent. Vous pouvez spécifier qu’une copie statique soit créée afin d’empêcher les modifications automatiques. <!--By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.-->
+* Par défaut, [Live Copy](/help/sites-cloud/administering/msm/overview.md) met automatiquement à jour les pages de lancement à mesure que les pages source changent. Vous pouvez spécifier qu’une copie statique soit créée afin d’empêcher les modifications automatiques.
 
 Vous pouvez éventuellement indiquer la **date de lancement** (et l’heure) pour définir le moment auquel les pages de lancement doivent être promues et activées. Toutefois, la **date de lancement** fonctionne uniquement en conjonction avec l’indicateur **Prêt pour la production** (voir [Modification d’une configuration de lancement](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration)). Pour que les actions se produisent automatiquement, les deux doivent être définis.
 
@@ -26,7 +26,8 @@ Vous pouvez éventuellement indiquer la **date de lancement** (et l’heure) pou
 >
 >* `/libs/launches/templates/outofscope`
 >
->Ces pages ne peuvent pas être modifiées. Le message suivant s’affiche :
+>
+Ces pages ne peuvent pas être modifiées. Le message suivant s’affiche :
 >
 >* **Cette page ne fait pas partie du lancement. Accéder à la page de production**
 
@@ -83,7 +84,7 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
    * **Titre du lancement** : nom du lancement. Ce nom doit être explicite pour les auteurs.
    * **avec le contenu existant** : le contenu d’origine sera utilisé pour créer le lancement.
    * **en utilisant un nouveau modèle pour remplacer la page** : voir [Création d’un lancement avec un nouveau modèle](#create-launch-with-new-template) pour plus de détails.
-   * **Hériter des données actives de la page source** : sélectionnez cette option pour mettre automatiquement à jour le contenu des pages de lancement lors de la modification des pages source. Cette option transforme le lancement en Live Copy. Par défaut, cette option est sélectionnée. <!--Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md). By default, this option is selected.-->
+   * **Hériter des données actives de la page source** : sélectionnez cette option pour mettre automatiquement à jour le contenu des pages de lancement lors de la modification des pages source. Pour ce faire, cette option effectue le lancement d’une [Live Copy](/help/sites-cloud/administering/msm/overview.md). Par défaut, cette option est sélectionnée.-->
    * **Date de lancement** : date et heure d’activation de la copie de lancement (selon l’indicateur **Prêt pour la production**. Voir [Lancements – Ordre des événements](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
 
    ![Propriétés de lancement](/help/sites-cloud/authoring/assets/launches-properties.png)
