@@ -2,10 +2,10 @@
 title: Modification des propriétés de page
 description: Définissez les propriétés requises pour une page
 translation-type: tm+mt
-source-git-commit: c3fd7b5a6311eded51b13ab9fea1ca6af4a050eb
+source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
 workflow-type: tm+mt
-source-wordcount: '1894'
-ht-degree: 67%
+source-wordcount: '1909'
+ht-degree: 66%
 
 ---
 
@@ -192,11 +192,10 @@ Configuration de la miniature de la page
 
 ### Blueprint {#blueprint}
 
-Cet onglet n&#39;est visible que pour les pages qui servent de modèles.
+Cet onglet n&#39;est visible que pour les pages qui servent de modèles. Les plans directeurs servent de base aux Live Copies dans [la gestion multisite.](/help/sites-cloud/administering/msm/overview.md)
 
 * **Live Copies**  actives - Listes de pages basées sur (c.-à-d. Live Copies de) cette page de plan
 
-   <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
 * **Configurations**  de déploiement : contrôle les circonstances dans lesquelles les modifications seront propagées dans Live Copy.
 
 ### Live Copy   {#live-copy}
