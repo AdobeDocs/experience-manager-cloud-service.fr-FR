@@ -3,17 +3,17 @@ title: Balises intelligentes améliorées
 description: Appliquez des balises commerciales contextuelles et descriptives à l’aide du service AI et ML d’Adobe Sensei afin d’améliorer la découverte de ressources et la vitesse du contenu.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
+source-git-commit: a1213a1694a50d174b4ad1e7e4ba7c71944b861a
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 97%
+source-wordcount: '1031'
+ht-degree: 86%
 
 ---
 
 
-# Configuration d’Experience Manager pour le balisage intelligent des ressources {#configure-aem-for-smart-tagging}
+# Configurer [!DNL Experience Manager] pour le balisage intelligent des ressources {#configure-aem-for-smart-tagging}
 
-Le balisage des ressources avec vocabulaire contrôlé par taxonomie permet de s’assurer qu’elles peuvent être facilement identifiées et récupérées au moyen de recherches sur les balises. Adobe fournit des balises intelligentes qui utilisent l’intelligence artificielle et des algorithmes de machine learning pour entraîner des images. Le service de balises intelligentes utilise le framework d’intelligence artificielle d’[Adobe Sensei](https://www.adobe.com/fr/sensei/experience-cloud-artificial-intelligence.html) pour entraîner son algorithme de reconnaissance d’images par rapport à votre structure de balises et votre taxonomie métier.
+Le balisage des ressources avec vocabulaire contrôlé par taxonomie permet de s’assurer qu’elles peuvent être facilement identifiées et récupérées au moyen de recherches sur les balises. Adobe fournit des balises actives qui utilisent l’intelligence artificielle et des algorithmes d’apprentissage automatique pour former des images. Le service de balises intelligentes utilise le framework d’intelligence artificielle d’[Adobe Sensei](https://www.adobe.com/fr/sensei/experience-cloud-artificial-intelligence.html) pour entraîner son algorithme de reconnaissance d’images par rapport à votre structure de balises et votre taxonomie métier.
 
 La fonctionnalité est disponible à l’achat sous la forme d’un module complémentaire d’[!DNL Experience Manager]. Suite à l’achat, un email contenant un lien vers Adobe Developer Console est envoyé à l’administrateur de votre organisation. Celui-ci accède au lien pour intégrer les balises intelligentes dans [!DNL Experience Manager] à l’aide d’Adobe Developer Console.
 
@@ -25,7 +25,7 @@ La fonctionnalité est disponible à l’achat sous la forme d’un module compl
 
 >[!IMPORTANT]
 >
->[!DNL Experience Manager Assets] les déploiements créés après  [août 2020 ](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets) sont intégrés  [!DNL Adobe Developer Console] par défaut. Il est ainsi possible de configurer plus rapidement la fonctionnalité des balises intelligentes. Dans les anciens déploiements, les administrateurs peuvent suivre les étapes suivantes pour configurer l’intégration.
+>Si vos déploiements [!DNL Experience Manager Assets] ont été créés après [août 2020, ](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets), [!DNL Adobe Developer Console] est intégré par défaut. Il est ainsi possible de configurer plus rapidement la fonctionnalité des balises intelligentes. Dans les anciens déploiements, les administrateurs peuvent configurer manuellement l’intégration en suivant les instructions ci-après.
 
 ## Intégration à Adobe Developer Console {#aio-integration}
 
@@ -56,7 +56,7 @@ Un certificat public permet d’authentifier votre profil sur Adobe Developer Co
 
 1. Cliquez sur **[!UICONTROL Télécharger la clé publique]**.
 
-   ![Le service de balises intelligentes d’Experience Manager crée une clé publique](assets/aem_smarttags-config1.png)
+   ![[!DNL Experience Manager] Les balises actives créent une clé publique](assets/aem_smarttags-config1.png)
 
 ### Création d’une intégration {#create-aio-integration}
 
@@ -64,10 +64,10 @@ Pour utiliser les balises intelligentes, créez une intégration dans Adobe Deve
 
 1. Accédez à l’URL [https://console.adobe.io](https://console.adobe.io/) dans un navigateur. Sélectionnez le compte approprié et vérifiez que le rôle d’organisation associé est administrateur système.
 1. Créez un projet portant le nom de votre choix. Cliquez sur **[!UICONTROL Add API]** (Ajouter une API).
-1. Sur la page **[!UICONTROL Add API]**, sélectionnez **[!UICONTROL Experience Cloud]** puis **[!UICONTROL Smart Content]** (Contenu dynamique). Cliquez sur **[!UICONTROL Next]** (Suivant).
+1. Sur la page **[!UICONTROL Ajouter une API]**, sélectionnez **[!UICONTROL Experience Cloud]**, puis **[!UICONTROL Contenu intelligent]**. Cliquez sur **[!UICONTROL Next]** (Suivant).
 1. Sélectionnez **[!UICONTROL Upload your public key]** (Charger votre clé publique). Fournissez le fichier de certificat téléchargé depuis [!DNL Experience Manager]. Le message [!UICONTROL Public key(s) uploaded successfully] (La ou les clés publiques ont été chargées) s’affiche. Cliquez sur **[!UICONTROL Next]** (Suivant).
-1. La page [!UICONTROL Create a new Service Account (JWT) credential] (Créer des informations d’identification de compte de service (JWT)) affiche la clé publique du compte de service qui vient d’être configuré. Cliquez sur **[!UICONTROL Next]** (Suivant).
-1. Dans la page **[!UICONTROL Select product profiles]** (Sélectionner les profils de produits), sélectionnez **[!UICONTROL Smart Content Services]** (Services de contenu dynamique). Cliquez sur **[!UICONTROL Save configured API]** (Enregistrer l’API configurée). Une page affiche davantage d’informations sur la configuration. Gardez cette page ouverte pour copier et ajouter ces valeurs lors de la configuration ultérieure des balises intelligentes dans [!DNL Experience Manager].
+1. [!UICONTROL La page d’] identification Créer un compte de service (JWT) affiche la clé publique du compte de service. Cliquez sur **[!UICONTROL Next]** (Suivant).
+1. Dans la page **[!UICONTROL Select product profiles]** (Sélectionner les profils de produits), sélectionnez **[!UICONTROL Smart Content Services]** (Services de contenu dynamique). Cliquez sur **[!UICONTROL Save configured API]** (Enregistrer l’API configurée). Une page affiche davantage d’informations sur la configuration. Gardez cette page ouverte pour copier et ajouter ces valeurs dans [!DNL Experience Manager] lors de la configuration ultérieure des balises actives dans [!DNL Experience Manager].
 
    ![Dans l’onglet Overview (Aperçu), vous pouvez consulter les informations fournies pour l’intégration.](assets/integration_details.png)
 
@@ -94,16 +94,16 @@ Une fois la configuration terminée, procédez comme suit pour la valider.
 
 ### Reconfiguration si un certificat atteint sa date d’expiration {#certrenew}
 
-Lorsque le certificat expire, il n’est plus approuvé. Pour ajouter un nouveau certificat, procédez comme suit. Vous ne pouvez pas renouveler un certificat ayant expiré.
+Lorsque le certificat expire, il n’est plus approuvé. Pour ajouter un certificat, procédez comme suit. Vous ne pouvez pas renouveler un certificat ayant expiré.
 
 1. Connectez-vous en tant qu’administrateur à votre déploiement [!DNL Experience Manager]. Cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Utilisateurs]**.
 
 1. Recherchez et cliquez sur l’utilisateur **[!UICONTROL dam-update-service]**. Cliquez sur l’onglet **[!UICONTROL KeyStore]**.
 1. Supprimez le fichier de stockage de clés **[!UICONTROL similaritysearch]** existant avec le certificat arrivé à expiration. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 
-   ![Suppression d’une entrée similaritysearch existante dans le Keystore pour ajouter un nouveau certificat de sécurité](assets/smarttags_delete_similaritysearch_keystore.png)
+   ![Supprimer l&#39;entrée de recherche de similitude existante dans Keystore pour ajouter un nouveau certificat de sécurité](assets/smarttags_delete_similaritysearch_keystore.png)
 
-   *Figure : Suppression d’une entrée existante`similaritysearch` dans le Keystore pour ajouter un nouveau certificat de sécurité.*
+   *Figure : Supprimez l’ `similaritysearch` entrée existante dans Keystore pour ajouter un certificat de sécurité.*
 
 1. Dans l’interface utilisateur [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Configurations d’Adobe IMS]**. Ouvrez la configuration des balises intelligentes disponible. Pour télécharger un certificat public, cliquez sur **[!UICONTROL Télécharger le certificat public]**.
 
@@ -126,7 +126,7 @@ Lorsque le certificat expire, il n’est plus approuvé. Pour ajouter un nouveau
 
 1. Dans l’onglet **[!UICONTROL Arguments]**, sélectionnez **[!UICONTROL Ignorer les erreurs]** si vous souhaitez que le processus ignore les échecs lors de la prédiction des balises. Pour baliser les ressources lors de leur chargement, et ce, que le balisage intelligent soit activé ou non dans les dossiers, cochez la case **[!UICONTROL Ignorer l’indicateur de balise intelligente]**.
 
-1. Cliquez sur **[!UICONTROL OK]** pour fermer l’étape du processus, puis enregistrez ce dernier. Cliquez sur **[!UICONTROL Synchroniser]**.
+1. Cliquez sur **[!UICONTROL OK]**. Elle ferme l’étape du processus. Enregistrez le workflow. Cliquez sur **[!UICONTROL Synchroniser]**.
 
 >[!MORELIKETHIS]
 >
