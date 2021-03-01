@@ -2,17 +2,24 @@
 title: Notes de mise à jour actuelles pour  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour actuelles pour  [!DNL Adobe Experience Manager]  as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: a93db92689928a900662a39b11bb5a7ea9724e62
+source-git-commit: 7c9eea58b8e42902842f5e9658f0fa677f1dc51d
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 10%
+source-wordcount: '1064'
+ht-degree: 9%
 
 ---
 
 
-# Notes de mise à jour pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante présente les notes de mise à jour générales d’[!DNL Experience Manager] as a Cloud Service.
+La section suivante décrit les Notes de mise à jour générales de la version actuelle (dernière) de [!DNL Experience Manager] en tant que Cloud Service.
+
+>[!NOTE]
+>A partir de là, vous pouvez accéder aux notes de mise à jour des versions précédentes ; par exemple, pour ceux de 2020, 2021 et ainsi de suite.
+
+>[!NOTE]
+>
+>Voir [Mises à jour récentes de la documentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=fr) pour plus d&#39;informations sur les mises à jour de la documentation qui ne sont pas directement liées à une version.
 
 ## Date de publication {#release-date}
 
