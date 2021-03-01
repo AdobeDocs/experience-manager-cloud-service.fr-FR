@@ -2,10 +2,10 @@
 title: Modification de lancements
 description: 'Après avoir créé un lancement pour votre page (ou un jeu de pages), vous pouvez modifier le contenu dans la copie de lancement de la ou des pages. '
 translation-type: tm+mt
-source-git-commit: 914eb7f7b040b99c11d9f109549eb13868058320
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ Lors de la modification de la page, une indication apparaît dans la barre d’o
 
 ### Modification de l’objet des pages de lancement en Live Copy {#editing-launch-pages-subject-to-a-live-copy}
 
-Si votre lancement est basé sur une Live Copy :<!--If your launch is based upon a [live copy](/help/sites-administering/msm.md) then you will:-->
+Si votre lancement est basé sur une [Live Copy](/help/sites-cloud/administering/msm/overview.md), vous allez :
 
 * vous verrez des symboles de verrouillage (petits verrous) lors de la modification d’un composant (de son contenu ou de ses propriétés) ;
 * vous verrez l’onglet **Live Copy** dans **Propriétés de la page**.
@@ -37,7 +37,7 @@ Vous pouvez apporter des modifications de la même manière que vous pouvez modi
 * Cliquer sur un cadenas fermé interrompt cette synchronisation et vous permet d’apporter de nouvelles mises à jour au contenu de votre lancement. Une fois le cadenas déverrouillé (ouvert), vos modifications ne seront remplacées par aucune modification effectuée au même emplacement dans la branche de source.
 * **Suspendre** (et **Reprendre**) l’héritage pour une page spécifique.
 
-Pour plus d’informations, consultez Modification du contenu d’une Live Copy. <!--See [Changing Live Copy Content](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) for further information.-->
+Pour plus d’informations, voir [Modification du contenu d’une Live Copy](/help/sites-cloud/administering/msm/creating-live-copies.md).
 
 ## Comparaison d’une page de lancement avec sa page source {#comparing-a-launch-page-to-its-source-page}
 
