@@ -2,7 +2,7 @@
 title: Outil de comparaison des pages
 description: De fait, l’outil de comparaison des pages permet d’afficher côte à côte deux pages pour les comparer en mettant en évidence leurs différences.
 translation-type: tm+mt
-source-git-commit: b405e49cd883df1e2e9768bb9e4d6908afc443e2
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 100%
@@ -29,9 +29,9 @@ De fait, l’outil de comparaison des pages permet d’afficher côte à côte d
 L’outil de comparaison côte à côte permet de comparer les éléments suivants :
 
 * [Versions](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page) : la version actuelle d’une page et sa version antérieure.
-* Live Copies : une Live Copy et son plan directeur <!-- [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint-->
+* [](/help/sites-cloud/administering/msm/creating-live-copies.md#comparing-a-live-copy-page-with-a-blueprint-page)Live Copies : une Live Copy et son plan directeur
 * [Lancements](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) : un lancement et sa source
-* Copies de langue : une page avant et après (re)traduction <!-- [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation-->
+* [](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies)Copies de langue : une page avant et après (re)traduction
 
 Reportez-vous aux rubriques correspondantes afin de connaître la procédure de comparaison pour ces différents éléments.
 
