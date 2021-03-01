@@ -2,10 +2,10 @@
 title: Utilisation de contenu ciblé sur plusieurs sites
 description: Si vous devez gérer du contenu ciblé, tel que des activités, des expériences et des offres sur vos différents sites, vous pouvez profiter de la prise en charge de sites multiples intégrée à AEM pour le contenu ciblé
 translation-type: tm+mt
-source-git-commit: 01ca37d8bdf1c7e5c1801db6f4ad537772407064
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
-source-wordcount: '2915'
-ht-degree: 99%
+source-wordcount: '2900'
+ht-degree: 100%
 
 ---
 
@@ -16,10 +16,7 @@ Si vous devez gérer du contenu ciblé, tel que des activités, des expériences
 
 >[!NOTE]
 >
->L’utilisation de contenu ciblé sur plusieurs sites est une fonctionnalité avancée. Pour utiliser cette fonctionnalité, vous devez connaître Multi Site Manager ainsi que l’intégration d’Adobe Target à AEM.
-<!--
->Working with Multisite support for targeted content is an advanced feature. To use this feature, you should be familiar with [Multi Site Manager](/help/sites-administering/msm.md) and the [Adobe Target integration](/help/sites-administering/target.md) with AEM.
--->
+>L’utilisation de contenu ciblé sur plusieurs sites est une fonctionnalité avancée. Pour utiliser cette fonctionnalité, vous devez connaître [Multi Site Manager](/help/sites-cloud/administering/msm/overview.md) ainsi que l’[intégration d’Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) à AEM.
 
 Ce document fournit les éléments suivants :
 
@@ -110,7 +107,7 @@ Après actualisation de l’onglet, la nouvelle image est appliquée sur le site
 
 ![Modification des versions](/help/sites-cloud/authoring/assets/multisite-us-change.png)
 
-Le spécialiste marketing souhaite déployer ces modifications dans la région européenne et déploie la Live Copy en appuyant ou en cliquant sur **Page de déploiement**. Après actualisation de l’onglet, le site de la Grande-Bretagne dispose de la nouvelle image, car la région Europe hérite de la zone maître (après déploiement). <!--The marketer would like to roll out these changes to the European region and [rolls out the live copy](/help/sites-administering/msm-livecopy.md) by tapping or clicking **Rollout Page**. After refreshing the tab, the Great Britain site has the new image as the Europe area inherits from the master area (after rollout).-->
+Le marketeur souhaite déployer ces modifications dans la région européenne et [déploie la Live Copy](/help/sites-cloud/administering/msm/creating-live-copies.md) en appuyant ou en cliquant sur **Page de déploiement**. Après actualisation de l’onglet, le site de la Grande-Bretagne dispose de la nouvelle image, car la région Europe hérite de la zone maître (après déploiement).
 
 ![Déploiement de la Live Copy](/help/sites-cloud/authoring/assets/multisite-roll-out.png)
 
@@ -189,9 +186,9 @@ Pour créer une zone comme Live Copy :
 
 1. Dans le menu déroulant **Configurations du déploiement**, sélectionnez la configuration appropriée.
 
-   Voir [Configurations de déploiement installées](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-sync.html#installed-and-custom-rollout-configurations) pour obtenir une description de chaque option.
+   Voir [Configurations de déploiement installées](/help/sites-cloud/administering/msm/live-copy-sync-config.md#installed-and-custom-rollout-configurations) pour obtenir une description de chaque option.
 
-   Voir [Création et synchronisation des Live Copies](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-livecopy.html) pour plus d’informations sur les Live Copies.
+   Voir [Création et synchronisation des Live Copies](/help/sites-cloud/administering/msm/creating-live-copies.md) pour plus d’informations sur les Live Copies.
 
    >[!NOTE]
    >
