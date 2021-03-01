@@ -2,10 +2,10 @@
 title: Environnement et outils de création
 description: L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu.
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
-source-wordcount: '2163'
-ht-degree: 100%
+source-wordcount: '2152'
+ht-degree: 99%
 
 ---
 
@@ -191,7 +191,7 @@ Cliquez sur le composant pour mettre en surbrillance le composant dans l’édit
 
    ![Bouton Modifier l’arborescence de contenu](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* Une page faisant partie d’une Live Copy, où les composants sont hérités d’une autre page, présente une sélection réduite d’options, y compris les options d’héritage. <!--A page that is part of a [livecopy](/help/sites-administering/msm.md), where components are inherited from another page:-->
+* Page qui fait partie d’une [livecopy](/help/sites-cloud/administering/msm/overview.md), où les composants sont hérités d’une autre page.
 
 >[!NOTE]
 >
@@ -225,9 +225,9 @@ Sélectionnez le type de référence approprié pour en savoir plus. Dans certai
 * **Liens entrants**, fournit la liste de pages qui font référence à cette page, ainsi qu’un lien direct vers l’option **Modifier** pour l’une de ces deux pages lorsque vous sélectionnez un lien spécifique.
 * Les instances du contenu emprunté et prêté à l’aide du composant **Référence** vous permettent de naviguer jusqu’à la page de référence.
 * [Lancements](/help/sites-cloud/authoring/launches/overview.md) donne accès aux lancements associés.
-* Live Copies affiche les chemins d’accès à toutes les Live Copies basées sur la ressource sélectionnée. <!--[Live Copies](/help/sites-administering/msm.md) displays the paths of all live copies that are based on the selected resource.-->
-* Le plan directeur fournit des détails et diverses actions. <!--[Blueprint](/help/sites-administering/msm-best-practices.md), provides details and various actions-->
-* Copies de langue fournit des détails et diverses actions. <!--[Languages Copies](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), provides details and various actions-->
+* [](/help/sites-cloud/administering/msm/overview.md)Live Copies affiche les chemins d’accès à toutes les Live Copies basées sur la ressource sélectionnée.
+* [Plan directeur](/help/sites-cloud/administering/msm/best-practices.md), fournit des détails et diverses actions
+* [Copies de langue](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel), fournit des détails et diverses actions
 
 ## Événements – Chronologie {#events-timeline}
 
@@ -248,7 +248,7 @@ L’icône Informations sur la page (icône d’égaliseur) ouvre un menu qui fo
 ![Option Informations sur la page](/help/sites-cloud/authoring/assets/page-information.png)
 
 * [Ouvrir les propriétés](/help/sites-cloud/authoring/fundamentals/page-properties.md)
-* Déployer la page <!--[Rollout Page](/help/sites-administering/msm.md#msm-from-the-ui)-->
+* [Déployer la page](/help/sites-cloud/administering/msm/overview.md#msm-from-the-ui)
 * [Démarrer le processus](/help/sites-cloud/authoring/workflows/applying.md#starting-a-workflow-from-the-page-editor)
 * [Verrouiller la page](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)
 * [Publier la page](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-pages-1)
@@ -283,6 +283,7 @@ Vous pouvez accéder à ces modes en cliquant sur les icônes dans le coin supé
 >* L’accès à certains modes implique que vous disposiez des droits ou autorisations appropriés.
 >* Le mode Développeur n’est pas accessible sur les appareils mobiles en raison de restrictions d’espace.
 >* Utilisez le [raccourci clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) pour permuter entre l’**Aperçu** et le mode actuellement sélectionné (par ex. **Modifier**, **Disposition**, etc.).
+
 >
 
 
