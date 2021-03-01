@@ -2,7 +2,7 @@
 title: Modification du contenu de la page
 description: Une fois votre page créée, vous pouvez modifier le contenu pour effectuer les mises à jour dont vous avez besoin.
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2974'
 ht-degree: 100%
@@ -367,7 +367,7 @@ Au lieu de basculer à plusieurs reprises entre les modes Modifier et de [Dispos
 
 L’héritage est le mécanisme par lequel le contenu peut être automatiquement envoyé d’un composant vers un autre. Les composants hérités peuvent être le produit de divers scénarios, notamment :
 
-* Gestion de plusieurs sites <!--[Multi site management](/help/sites-administering/msm.md)-->
+* [Gestion de plusieurs sites](/help/sites-cloud/administering/msm/overview.md)
 * [Lancements](/help/sites-cloud/authoring/launches/overview.md) (quand basé sur une Live Copy).
 
 Vous pouvez annuler (puis réactiver) l’héritage. Selon le composant, cette option peut être disponible à partir de la barre d’outils du composant, s’il se trouve sur une page faisant partie d’une Live Copy ou d’un lancement (en fonction d’une Live Copy).
