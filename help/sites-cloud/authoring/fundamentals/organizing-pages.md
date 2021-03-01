@@ -2,7 +2,7 @@
 title: Création et organisation des pages
 description: Comment créer et organiser des pages avec AEM
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 100%
@@ -130,10 +130,7 @@ Si vous indiquez un **nom** de page lors de la création d’une page, AEM [vali
 >
 >Vous devez éviter d’utiliser un code à deux lettres tel que défini par la norme ISO-639-1 comme nom de page, sauf s’il s’agit d’une racine de langue.
 >
->Pour plus d’informations, voir Préparation du contenu pour la traduction.
-<!--
->See [Preparing Content for Translation](/help/sites-administering/tc-prep.md) for more information.
--->
+>Pour plus d’informations, voir [Préparation du contenu pour la traduction](/help/sites-cloud/administering/translation/preparation.md).
 
 ### Modèles {#templates}
 
