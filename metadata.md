@@ -1,5 +1,6 @@
 ---
 product: adobe experience manager
+description: il s’agit des métadonnées requises pour les pages de documentation d’AEMaaCS.
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.fr-FR
 index: y
 type: Documentation
@@ -8,11 +9,11 @@ solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-clo
 getting-started-title: Prise en main
 getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html
 tutorials-title: Tutoriels
-tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html
+tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=fr
 translation-type: tm+mt
-source-git-commit: 8832307a96160a3d45cc85942473a5ada288a74f
+source-git-commit: 28de20620a7cc8a3df231abacde4b3daa98cbcdb
 workflow-type: tm+mt
-source-wordcount: '110'
+source-wordcount: '120'
 ht-degree: 70%
 
 ---
@@ -51,4 +52,4 @@ Article
 
 * `title`
 * `description`
-* `contentOwner` (uniquement sur le contenu des ressources de base sous `/help/assets`)
+* `contentOwner` (uniquement sur le contenu des ressources de base sous  `/help/assets`)
