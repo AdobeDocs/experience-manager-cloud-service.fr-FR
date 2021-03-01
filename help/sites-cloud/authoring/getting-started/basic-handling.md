@@ -2,7 +2,7 @@
 title: Manipulation de base
 description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base
 translation-type: tm+mt
-source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2864'
 ht-degree: 100%
@@ -450,8 +450,8 @@ Ces fonctionnalités sont accessibles par le biais du chevron en regard du champ
 Les **références** affichent toutes les connexions avec la ressource sélectionnée. Dans la console **Sites**, par exemple, les [références](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) des pages affichent les informations suivantes :
 
 * [Lancements](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
-* Live copies<!--[Live copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)-->
-* Copies de langue<!--[Language copies](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)-->
+* [Live copies](/help/sites-cloud/administering/msm/overview.md#openingthelivecopyoverviewfromreferences)
+* [Copies de langue](/help/sites-cloud/administering/translation/preparation.md#seeing-the-status-of-language-roots)
 * Références du contenu :
 
    * Liens d’autres pages vers la page sélectionnée
