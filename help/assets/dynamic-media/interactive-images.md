@@ -2,9 +2,9 @@
 title: Images interactives
 description: Découvrir comment utiliser les images interactives dans Dynamic Media.
 translation-type: tm+mt
-source-git-commit: ad626d9722f1942249197d96aa5fac3d8f7ed947
+source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
 workflow-type: tm+mt
-source-wordcount: '4246'
+source-wordcount: '4245'
 ht-degree: 45%
 
 ---
@@ -255,7 +255,7 @@ Si vous modifiez des images interactives avec des zones réactives et que vous r
    1. Dans le coin supérieur gauche de la page de gestion des zones réactives, appuyez sur **[!UICONTROL Zone réactive]**.
    1. Sur l’image, appuyez sur un emplacement où vous souhaitez que la zone réactive s’affiche. Si nécessaire, faites glisser la zone réactive pour en ajuster l’emplacement. Vous pouvez également utiliser les touches fléchées du clavier pour contrôler la position d’une zone réactive sélectionnée.
    1. Ajoutez davantage de zones réactives si nécessaire en répétant les étapes a et b.
-   1. (Facultatif) Pour supprimer une zone réactive, sélectionnez-la sur l’image, puis appuyez sur **[!UICONTROL Supprimer]** (icône poubelle) sous l’en-tête **[!UICONTROL Zone réactive]**.
+   1. (Facultatif) Pour supprimer une zone réactive, sélectionnez-la sur l’image, puis appuyez sur **[!UICONTROL Supprimer]** (icône de corbeille) sous l’en-tête **[!UICONTROL Zones réactives]**.
 
 1. Dans le champ de texte Nom, entrez le nom de la zone réactive. Ce nom s’affiche également dans la liste déroulante Zone réactive sélectionnée.
 1. Utilisez l’une des méthodes suivantes :
@@ -337,7 +337,7 @@ Le code incorporé copié est défini pour un environnement réactif afin qu’i
 
 **Exemple**
 
-En prenant comme exemple le [site web de démonstration](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html), notez que l’image des trois hommes est une balise `IMG` statique :
+En utilisant le [site Web de démonstration comme exemple](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html), notez que l&#39;image des trois individus est une balise statique `IMG` :
 
 ```xml
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
