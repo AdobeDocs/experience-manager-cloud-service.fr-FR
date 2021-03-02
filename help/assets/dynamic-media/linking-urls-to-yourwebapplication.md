@@ -2,10 +2,10 @@
 title: Liaison d’URL à une application web
 description: Comment lier des URL à votre application web dans Dynamic Media.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: dce527d5798ef003dc499baec97b169debab445a
 workflow-type: tm+mt
-source-wordcount: '1271'
-ht-degree: 100%
+source-wordcount: '1265'
+ht-degree: 87%
 
 ---
 
@@ -62,7 +62,7 @@ Il existe différents moyens d’obtenir une chaîne URL. Néanmoins, les étape
 
    * Si vous avez sélectionné une image, dans le menu déroulant, appuyez sur **[!UICONTROL Rendus]**.
 
-      Sous l’en-tête **[!UICONTROL Dynamique]**, appuyez sur un nom de paramètre prédéfini afin d’afficher son rendu dans le cadre de droite. Il vous faudra peut-être faire défiler la liste Rendus pour afficher l’en-tête Dynamique.
+      Sous l’en-tête **[!UICONTROL Dynamique]**, appuyez sur un nom de paramètre prédéfini afin d’afficher son rendu dans le cadre de droite. Si nécessaire, faites défiler la liste Rendus pour afficher l’en-tête Dynamique.
 
       Dans la partie inférieure du rail gauche, appuyez sur **[!UICONTROL URL]**.
 
@@ -76,13 +76,13 @@ Il existe différents moyens d’obtenir une chaîne URL. Néanmoins, les étape
 
       ![chlimage_1-271](assets/chlimage_1-271.png)
 
-1. Sélectionnez le texte et copiez-le dans le navigateur web pour prévisualiser la ressource ou l’ajouter à la page de contenu web.
+1. Pour prévisualisation du fichier ou pour l’ajouter à votre page de contenu Web, sélectionnez et copiez le texte dans votre navigateur Web.
 
    Pour fermer la fenêtre d’URL, appuyez sur **[!UICONTROL X]** ou sur **[!UICONTROL Fermer]**.
 
 ## Obtention d’une URL pour une ressource statique {#obtaining-a-url-for-a-static-asset}
 
-Dynamic Media prend en charge le déploiement de ressources statiques, qui sont des ressources supplémentaires au-delà des images et de la vidéo. Les formats de ressources statiques pris en charge pour la diffusion comprennent les formats suivants :
+Dynamic Media prend en charge la diffusion des ressources statiques, qui sont d’autres ressources au-delà des images et de la vidéo. Les formats de ressources statiques pris en charge pour la diffusion comprennent les formats suivants :
 
 * Fichiers 3D
 * GIF animé
@@ -120,9 +120,9 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 1. Sur la page **[!UICONTROL Cloud Services]**, faites défiler l’écran jusqu’au titre **[!UICONTROL Dynamic Media Cloud Services]**, puis cliquez sur **[!UICONTROL Afficher les configurations]**.
 1. Sous **[!UICONTROL Configurations disponibles]**, appuyez sur le nom de la configuration qui vous intéresse.
 
-1. Sur la page **[!UICONTROL Paramètres de cloud Dynamic Media]**, sous **[!UICONTROL URL du service vidéo]**, copiez le chemin URL complet. Vous aurez besoin de l’URL copiée dans les étapes suivantes.
+1. Sur la page **[!UICONTROL Paramètres de cloud Dynamic Media]**, sous **[!UICONTROL URL du service vidéo]**, copiez le chemin URL complet. Vous aurez besoin du chemin d’accès à l’URL copiée plus loin dans les étapes.
 
-   Par exemple, le chemin URL est similaire au suivant :
+   Par exemple, le chemin d’accès à l’URL peut ressembler à ce qui suit :
 
    `https://s7athens.macromedia.com:9090/DMGateway/`
 
@@ -135,13 +135,13 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 1. Près du coin supérieur gauche de la page, appuyez sur **[!UICONTROL Cloud Services]** puis sur l’icône d’AEM et accédez à **[!UICONTROL Général > CRXDE Lite]**.
 1. Copiez le chemin URL du rendu vidéo à partir du référentiel JCR (Java Content Repository).
 
-   Par exemple, le chemin URL du rendu vidéo est similaire au suivant :
+   Par exemple, le chemin de rendu de la vidéo peut ressembler à ce qui suit :
 
    `/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112f/avs/Momentum_1080-0x720-2600k.mp4`
 
    (Le chemin ci-dessus est donné à titre d’illustration uniquement ; il ne s’agit pas de celui que vous allez copier.)
 
-1. Organisez les informations copiées dans l’ordre suivant pour former un chemin URL complet :
+1. Pour former un chemin d’URL complet, disposez les informations copiées dans l’ordre suivant :
 
    `<Video_Service_URL>/public/<Customer_name_from_Registration_ID>/<Video_rendition_path>`
 
@@ -149,7 +149,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
    `https://s7athens.macromedia.com:9090/DMGateway/public/MyCompany/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112ff/avs/Momentum_1080-0x720-2600k.mp4`
 
-   Il s’agit de l’URL complète d’un rendu vidéo publié.
+   Ce chemin est l’URL complète de la vidéo pour un rendu vidéo publié.
 
 ## Obtention d’une URL de vidéo pour la diffusion adaptative (HLS)  {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
@@ -158,18 +158,18 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 1. Sous **[!UICONTROL Configurations disponibles]**, appuyez sur le nom de la configuration qui vous intéresse.
 1. Sur la page **[!UICONTROL Paramètres Dynamic Media Cloud Services]**, procédez comme suit :
 
-   * Sous **[!UICONTROL URL du service vidéo]**, copiez le chemin d’URL entier. Vous aurez besoin de l’URL copiée dans ces étapes. Par exemple, le chemin URL est similaire au suivant :
+   * Sous **[!UICONTROL URL du service vidéo]**, copiez le chemin d’URL entier. Vous aurez besoin du chemin d’accès à l’URL copiée plus loin dans ces étapes. Par exemple, le chemin d’accès à l’URL peut ressembler à ce qui suit :
 
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
    (Le chemin ci-dessus est donné à titre d’illustration uniquement ; il ne s’agit pas de celui que vous allez copier.)
 
-   * Sous **[!UICONTROL ID d’enregistrement]**, copiez le nom du client dans la dernière partie de l’ID. Vous aurez besoin du nom du client copié plus loin dans ces étapes.
+   * Sous **[!UICONTROL ID d’enregistrement]**, copiez le nom du client dans la dernière partie de l’ID. Vous aurez besoin du nom de client copié plus loin dans ces étapes.
 
       Par exemple, si l’ID d’enregistrement est `87654321|demoCo`, le nom du client est `demoCo`.
 
 
-1. En fonction du protocole de diffusion vidéo que vous utilisez, copiez le sélecteur de protocole correspondant. Vous aurez besoin du sélecteur de protocole copié plus tard au cours de ces étapes.
+1. En fonction du protocole de diffusion vidéo que vous utilisez, copiez le sélecteur de protocole correspondant. Vous aurez besoin du sélecteur de protocole copié plus loin dans ces étapes.
 
    <table>
     <tbody>
@@ -188,7 +188,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
     </tbody>
    </table>
 
-1. Copiez le chemin complet de la ressource vidéo dans AEM, tel qu’il est traité par Dynamic Media. Vous aurez besoin de ce chemin d’accès à la ressource vidéo copié dans ces étapes.
+1. Copiez le chemin complet de la ressource vidéo dans AEM, tel qu’il est traité par Dynamic Media. Vous aurez besoin de ce chemin d’accès de fichier vidéo copié plus loin dans ces étapes.
 
    Par exemple :
 
