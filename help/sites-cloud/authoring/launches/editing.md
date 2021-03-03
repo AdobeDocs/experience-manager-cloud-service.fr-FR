@@ -2,10 +2,10 @@
 title: Modification de lancements
 description: 'Après avoir créé un lancement pour votre page (ou un jeu de pages), vous pouvez modifier le contenu dans la copie de lancement de la ou des pages. '
 translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+source-git-commit: ba7a8f5027b71ebdee7c84ed35d374fe22645a5a
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 97%
+source-wordcount: '555'
+ht-degree: 91%
 
 ---
 
@@ -22,6 +22,13 @@ Après avoir créé un lancement pour une page (ou un jeu de pages), vous pouvez
 Lors de la modification de la page, une indication apparaît dans la barre d’outils supérieure, ainsi que les options **Quitter** et **Naviguer** :
 
 ![Quitter et Naviguer apparaissent depuis l’éditeur de page](/help/sites-cloud/authoring/assets/launches-edit-01.png)
+
+>[!NOTE]
+>
+>Vous n’êtes pas autorisé à déplacer une page au cours d’un lancement. La tentative de cette action déclenchera un message d’avertissement :
+>
+>* Avertissement : Cette page est la source du lancement. Le déplacement de la page n’est pas autorisé.
+
 
 ### Modification de l’objet des pages de lancement en Live Copy {#editing-launch-pages-subject-to-a-live-copy}
 
