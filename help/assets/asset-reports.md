@@ -3,10 +3,10 @@ title: Rapports sur l’utilisation et le partage
 description: Des rapports sur vos ressources dans  [!DNL Adobe Experience Manager Assets]  vous permettent de comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3ee2e53268ea77949057ac18fcb4a8f8b1e01cb2
+source-git-commit: 6586dfeeef1732ae115eea433a665191773ed283
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 100%
+source-wordcount: '939'
+ht-degree: 85%
 
 ---
 
@@ -21,7 +21,7 @@ Le framework de création de rapports [!DNL Assets] exploite des tâches [!DNL S
 
 L’interface de gestion de rapports est intuitive et inclut des options et des commandes précises pour accéder aux rapports archivés, ainsi qu’afficher les états d’exécution des rapports (réussite, échec et en file d’attente).
 
-Lorsqu’un rapport est généré, vous êtes averti par <!-- through an email (optional) and --> une notification de boîte de réception. Vous pouvez afficher, télécharger ou supprimer un rapport de la page de liste des rapports, où tous les rapports précédemment générés sont affichés.
+Lorsqu’un rapport est généré, vous êtes averti par <!-- through an email (optional) and --> notification de la boîte de réception. Vous pouvez afficher, télécharger ou supprimer un rapport de la page de liste des rapports, où tous les rapports précédemment générés sont affichés.
 
 ## Génération de rapports {#generate-reports}
 
@@ -56,7 +56,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
 >[!NOTE]
 >
->Par défaut, les fragments de contenu et les partages de lien sont inclus dans le rapport [!UICONTROL Ressource téléchargée]. Sélectionnez l’option appropriée pour créer un rapport de partages de lien ou pour exclure les fragments de contenu du rapport de téléchargement.
+>Par défaut, les fragments de contenu et les partages de liens sont inclus dans le rapport [!UICONTROL Télécharger] de la ressource. Sélectionnez l’option appropriée pour créer un rapport de partages de lien ou pour exclure les fragments de contenu du rapport de téléchargement.
 
 >[!NOTE]
 >
@@ -66,9 +66,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
    ![Page d’ajout de détails de rapport](assets/report_configuration.png)
 
-   Sélectionnez la période de votre rapport.
-
-   Vous pouvez choisir de générer le rapport maintenant ou à une date et une heure ultérieures.
+   Sélectionnez la période de votre rapport. Vous pouvez choisir de générer le rapport maintenant ou à une date et une heure ultérieures.
 
    >[!NOTE]
    >
@@ -109,7 +107,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
    Cliquez sur **[!UICONTROL Télécharger]** dans la barre d’outils pour télécharger le rapport au format CSV.
 
-## Ajout de colonnes personnalisées  {#add-custom-columns}
+## Ajout de colonnes personnalisées aux rapports {#add-custom-columns}
 
 Vous pouvez ajouter des colonnes personnalisées aux rapports suivants pour afficher davantage de données en fonction de vos besoins :
 
@@ -126,10 +124,11 @@ Pour ajouter des colonnes personnalisées à ces rapports, procédez comme suit�
 1. Dans le [!DNL Manager interface], cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
 1. Sur la page [!UICONTROL Rapports de ressources], cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
 
-1. Sur la page **[!UICONTROL Créer un rapport]**, sélectionnez le rapport que vous souhaitez créer, puis cliquez sur **[!UICONTROL Suivant]**.
-1. Configurez les détails du rapport, tels que le titre, la description, la miniature, le chemin du dossier et la période, le cas échéant.
+1. Sur la page **[!UICONTROL Créer un rapport]**, choisissez un rapport à créer. Cliquez sur **[!UICONTROL Next]** (Suivant).
 
-1. Pour afficher une colonne personnalisée, spécifiez son nom sous **[!UICONTROL Colonnes personnalisées]**.
+1. Configurez les détails du rapport, tels que le titre, la description, la miniature, le chemin d’accès au dossier et la plage de dates, selon le cas. Cliquez sur **[!UICONTROL Next]** (Suivant).
+
+1. Sélectionnez les informations applicables dans la liste de **[!UICONTROL Colonnes par défaut]**. Pour afficher une colonne personnalisée, spécifiez le nom de la colonne sous **[!UICONTROL Colonnes personnalisées]**.
 
    ![Spécifier le nom de la colonne personnalisée du rapport](assets/custom_columns-1.png)
 
@@ -137,9 +136,9 @@ Pour ajouter des colonnes personnalisées à ces rapports, procédez comme suit�
 
    ![Faites correspondre le chemin de la propriété des chemins dans jcr:content](assets/property_picker.png)
 
-   Pour ajouter d’autres colonnes personnalisées, cliquez sur **[!UICONTROL Ajouter]** et répétez les étapes 5 et 6.
+   Pour ajouter d’autres colonnes personnalisées, cliquez sur **[!UICONTROL Ajouter]** et répétez les étapes ci-dessus.
 
-1. Cliquez sur **[!UICONTROL Créer]** dans la barre d’outils. Un message indique que la génération du rapport a été lancée.
+1. Cliquez sur **[!UICONTROL Créer]** dans la barre d’outils. Un message indique que la génération du rapport est lancée.
 
 <!-- TBD: How to configure purge now? Is it using OSGi configurations?
 
@@ -153,6 +152,6 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 1. Save the changes.
 -->
 
-## Informations, conseils et limites de dépannage {#best-practices-and-limitations}
+## Informations et conseils de dépannage {#tips-troubleshoot}
 
-* Si le rapport d’utilisation des disques n’est pas généré et si vous utilisez [!DNL Dynamic Media], assurez-vous que toutes les ressources sont traitées correctement. Pour résoudre ce problème, retraitez les ressources puis générez de nouveau le rapport.
+* Si le [!UICONTROL rapport d&#39;utilisation des disques] n&#39;est pas généré et si vous utilisez [!DNL Dynamic Media], assurez-vous que toutes les ressources sont correctement traitées. Pour résoudre ce problème, retraitez les ressources et générez de nouveau le rapport.
