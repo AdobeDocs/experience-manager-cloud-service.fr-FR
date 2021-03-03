@@ -2,10 +2,10 @@
 title: SPA et rendu côté serveur
 description: L’utilisation du rendu côté serveur dans votre SPA peut accélérer le chargement initial de la page, puis transmettre plus de rendu au client.
 translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+source-git-commit: 10012f6dc75da0c199dd5452ceef16ec7f29389b
 workflow-type: tm+mt
-source-wordcount: '1436'
-ht-degree: 100%
+source-wordcount: '1435'
+ht-degree: 99%
 
 ---
 
@@ -58,7 +58,7 @@ Cela s’effectue via le **service RemoteContentRenderer – Configuration d’u
 Les champs suivants sont disponibles pour la configuration :
 
 * **Modèle de chemin d’accès au contenu** : expression régulière afin de faire correspondre une partie du contenu, si nécessaire
-* **URL du point d’entrée distant** : URL du point d’entrée responsable de la génération du contenu
+* **URL**  du point de terminaison distant - URL du point de terminaison responsable de la génération du contenu
    * Utilisez le protocole HTTPS sécurisé si ce point d’entrée ne figure pas sur le réseau local.
 * **En-têtes de requête supplémentaires** : en-têtes supplémentaires à ajouter à la requête envoyée au point d’entrée distant
    * Modèle : `key=value`
