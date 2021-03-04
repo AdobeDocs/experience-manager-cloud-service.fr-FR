@@ -2,10 +2,10 @@
 title: Intégration de Dynamic Media Viewers avec Adobe Analytics et Experience Platform Launch
 description: L’extension Dynamic Media Viewers pour Platform launch et Dynamic Media Viewers 5.13 permet aux clients de Adobe Analytics et de Platform launch d’utiliser des événements et des données spécifiques aux visionneuses dans leur configuration de Platform launch.
 translation-type: tm+mt
-source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
+source-git-commit: ef20224c59a6282ca6a78b2dfc9d777c67de5cb1
 workflow-type: tm+mt
-source-wordcount: '6684'
-ht-degree: 50%
+source-wordcount: '6658'
+ht-degree: 49%
 
 ---
 
@@ -34,11 +34,11 @@ Pour en savoir plus sur les extensions, voir [Extensions d’Adobe](https://expe
 
 Le cas d’utilisation Principal pour l’intégration avec l’Experience Platform Launch concerne les clients qui utilisent à la fois les ressources des Experience Manager et les sites des Experience Manager. Dans de tels scénarios, vous pouvez configurer une intégration standard entre le noeud d’auteur Experience Manager et l’Experience Platform Launch, puis associer votre instance Sites à la propriété Experience Platform Launch. Ensuite, tout composant WCM Dynamic Media ajouté à une page Sites suit les données et les événements des visiteurs.
 
-Voir [A propos du suivi des visionneuses Dynamic Media sur les sites Experience Manager](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites).
+Voir [Suivi des visionneuses Dynamic Media sur les sites Experience Manager](#tracking-dynamic-media-viewers-in-aem-sites).
 
 Un autre cas d’utilisation pris en charge par l’intégration est celui des clients qui utilisent uniquement les ressources du Experience Manager ou Dynamic Media Classic. Dans ce cas, vous obtenez le code intégré pour votre visionneuse et vous l’ajoutez à la page du site web. Ensuite, récupérez l’URL de production de la bibliothèque Experience Platform Launch auprès de l’Experience Platform Launch et ajoutez-la manuellement au code de page Web.
 
-Voir [À propos du suivi des visionneuses Dynamic Media à l’aide du code intégré](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode).
+Voir [Suivi des visionneuses Dynamic Media à l’aide du code incorporé](#tracking-dynamic-media-viewers-using-embed-code).
 
 ## Fonctionnement du suivi des données et des événements dans l’intégration {#how-data-and-event-tracking-works-in-the-integration}
 
