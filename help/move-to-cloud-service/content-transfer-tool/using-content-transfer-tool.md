@@ -2,9 +2,9 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: 8887aff8924da538c94f2ca6ebde64518b4aa019
+source-git-commit: 495a292eceb7abf6439df15a092d71b58cf2f2f3
 workflow-type: tm+mt
-source-wordcount: '2055'
+source-wordcount: '2053'
 ht-degree: 84%
 
 ---
@@ -203,7 +203,7 @@ Une fois le processus d’ingestion terminé, vous pouvez utiliser le contenu di
    >
    >Vous devez désactiver l’option **Wipe existing content on Cloud instance before ingestion** (Effacer le contenu existant sur l’instance cloud avant l’ingestion) pour empêcher la suppression du contenu existant de l’activité d’ingestion précédente.
 
-   De plus, reportez-vous à la section [Considérations importantes relatives à l’utilisation de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) pour savoir comment ajouter des éléments au ticket du service d’assistance clientèle.
+   De plus, consultez la section [Considérations importantes relatives à l’utilisation de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) pour savoir comment ajouter des éléments au ticket d’assistance clientèle.
 
 ### Affichage des journaux d’un jeu de migration {#viewing-logs-migration-set}
 
