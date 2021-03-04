@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: 176662819767d11e0407baee1224b61dbbb1b33e
+source-git-commit: 8887aff8924da538c94f2ca6ebde64518b4aa019
 workflow-type: tm+mt
-source-wordcount: '1969'
-ht-degree: 88%
+source-wordcount: '2055'
+ht-degree: 84%
 
 ---
 
@@ -65,16 +65,23 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
 
+
 1. La console ci-dessous s’affiche lorsque vous créez le premier jeu de migration. Cliquez sur **Create Migration Set** (Créer un jeu de migration) pour créer un jeu de migration.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/01-migration-set-overview.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/01-create-migrationset.png)
+
 
    >[!NOTE]
    >Si vous disposez de jeux de migration, la console affiche la liste de ces jeux avec leur état actuel.
 
-1. Renseignez les champs de l’écran **Content Migrations Set details** (Détails du jeu de migration de contenu), comme décrit ci-dessous.
+   De plus, cliquez sur **Créer une configuration de mappage utilisateur** pour accéder à l&#39;[outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/02-migration-set-creation.png)
+1. Renseignez les champs de l’écran **Jeu de migration de contenu**, comme décrit ci-dessous.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
+
+   >[!NOTE]
+   >Sélectionnez **Inclure le mappage des utilisateurs et groupes IMS**, comme indiqué dans la figure ci-dessus. Consultez [Outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) pour plus de détails.
 
 
    1. **Name** : renseignez le nom du jeu de migration.
@@ -119,7 +126,6 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
    * Une *icône de couleur jaune* indique que vous n’avez pas créé le jeu de migration existant et que celui ainsi indiqué a été créé par un autre utilisateur de la même instance.
 
 1. Sélectionnez un jeu de migration dans la page d’aperçu, puis cliquez sur **Properties** pour voir ou modifier les propriétés du jeu de migration. Lors de la modification des propriétés, il n’est pas possible de changer le nom du conteneur ou l’URL du service.
-
 
 
 ### Processus d’extraction au cours du transfert de contenu {#extraction-process}
@@ -174,6 +180,7 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
+
 1. Une fois l’ingestion terminée, l’état du champ **PUBLISH INGESTION** passe à **FINISHED**.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
@@ -188,13 +195,15 @@ L’outil de transfert de contenu comporte une fonctionnalité pour traiter un *
 
 Une fois le processus d’ingestion terminé, vous pouvez utiliser le contenu différentiel à l’aide de la méthode d’ingestion de complément. Suivez les étapes ci-dessous :
 
-1. Accédez à la page *Overview* et sélectionnez le jeu de migration pour lequel vous souhaitez effectuer l’ingestion de complément. Cliquez sur **Ingest** pour démarrer l’extraction de complément. La boîte de dialogue **Migration Set ingestion** (Ingestion du jeu de migration) s’affiche.
+1. Accédez à la page *Overview* et sélectionnez le jeu de migration pour lequel vous souhaitez effectuer l’ingestion de complément. Cliquez sur **Ingest** pour démarrer l’extraction de complément. La boîte de dialogue **Ingestion du jeu de migration** s’affiche.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    >[!IMPORTANT]
    >
    >Vous devez désactiver l’option **Wipe existing content on Cloud instance before ingestion** (Effacer le contenu existant sur l’instance cloud avant l’ingestion) pour empêcher la suppression du contenu existant de l’activité d’ingestion précédente.
-   >
-   >![image](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
+
+   De plus, reportez-vous à la section [Considérations importantes relatives à l’utilisation de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) pour savoir comment ajouter des éléments au ticket du service d’assistance clientèle.
 
 ### Affichage des journaux d’un jeu de migration {#viewing-logs-migration-set}
 
