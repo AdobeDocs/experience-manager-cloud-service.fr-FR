@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: b4bc29dbea7a765ff41752d4b680cbbc3df51a0b
+source-git-commit: d93961304d01db960c68bd49603d86a30e62223f
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 92%
+source-wordcount: '1916'
+ht-degree: 91%
 
 ---
 
@@ -55,9 +55,13 @@ Il est possible de télécharger l’outil de transfert de contenu dans un fichi
 
 Consultez cette section pour effectuer une migration du contenu vers AEM as a Cloud Service (auteur/publication) à l’aide de l’outil de transfert de contenu :
 
-1. Sélectionnez Adobe Experience Manager et accédez à Outils -> **Opérations** -> **Content Transfer** (Transfert de contenu).
+1. Sélectionnez le Adobe Experience Manager et accédez aux outils -> **Opérations** -> **Migration de contenu**.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content1.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card01.png)
+
+1. Sélectionnez l’option **Transfert de contenu** dans l’assistant **Migration de contenu**.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
 
 1. La console ci-dessous s’affiche lorsque vous créez le premier jeu de migration. Cliquez sur **Create Migration Set** (Créer un jeu de migration) pour créer un jeu de migration.
 
