@@ -2,17 +2,21 @@
 title: Connexion à Microsoft Translator
 description: Découvrez comment connecter AEM à Microsoft Translator prêt à l'emploi pour automatiser votre processus de traduction.
 translation-type: tm+mt
-source-git-commit: b33e13814403af1383b46b1f34737e8aa75d8213
+source-git-commit: 5902e026c47aac0c1ea62a2b74be6109b216fb74
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 44%
+source-wordcount: '476'
+ht-degree: 41%
 
 ---
 
 
 # Connexion à Microsoft Translator {#connecting-to-microsoft-translator}
 
-Créez une configuration pour le service cloud [Microsoft Translator](https://hub.microsofttranslator.com) afin d’utiliser votre compte Microsoft Translation pour traduire AEM contenu de page, le contenu de la communauté ou les ressources.
+Créez une configuration pour le service cloud [Microsoft Translator](https://hub.microsofttranslator.com) afin d’utiliser votre compte Microsoft Translation pour traduire AEM contenu ou ressources de page.
+
+>[!NOTE]
+>
+>AEM fournit un compte d&#39;essai Microsoft Translation qui permet un maximum de 2 000 000 caractères traduits gratuits par mois. Pour obtenir un abonnement de compte adapté aux systèmes de production, voir [Mise à niveau de la configuration de la licence d’évaluation de Microsoft Translator](#upgrading-the-microsoft-translator-trial-license-configuration).
 
 | Propriété | Description |
 |---|---|
