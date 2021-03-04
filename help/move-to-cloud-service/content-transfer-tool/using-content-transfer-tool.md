@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: d93961304d01db960c68bd49603d86a30e62223f
+source-git-commit: 176662819767d11e0407baee1224b61dbbb1b33e
 workflow-type: tm+mt
-source-wordcount: '1916'
-ht-degree: 91%
+source-wordcount: '1969'
+ht-degree: 88%
 
 ---
 
@@ -19,6 +19,8 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 * La configuration minimale requise pour l’outil de transfert de contenu est AEM 6.3+ et JAVA 8. Si vous utilisez une version antérieure d’AEM, vous devrez mettre à niveau votre référentiel de contenu à la version AEM 6.5 pour utiliser l’outil de transfert de contenu.
 
 * Java doit être configuré dans l’environnement AEM, de sorte que la commande `java` puisse être exécutée par l’utilisateur démarrant AEM.
+
+* Il est recommandé de désinstaller les anciennes versions de l&#39;outil de transfert de contenu lors de l&#39;installation de la version 1.3.0, car l&#39;outil a subi un changement d&#39;architecture majeur. Avec la version 1.3.0, vous devez également créer de nouveaux jeux de migration et réexécuter l’extraction et l’assimilation sur les nouveaux jeux de migration.
 
 * L’outil de transfert de contenu peut être utilisé avec les types de magasin de données suivants : File Data Store, S3 Data Store, Shared S3 Data Store et Azure Blob Store Data Store.
 
@@ -101,7 +103,7 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
          >* `/apps`
          >* `/libs`
          >* `/home`
-         >* `/etc`
+         >* `/etc` (certains  `/etc` chemins peuvent être sélectionnés dans le CTT)
 
 
 1. Cliquez sur **Save** après avoir rempli tous les champs de l’écran **Content Migrations Set details**.
