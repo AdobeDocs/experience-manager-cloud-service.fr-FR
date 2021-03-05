@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: 2e059ab3fea8bc80c697fe8190a8166483803821
+source-git-commit: f780bcf645fb4c1f0bce377f95028888161ee7ae
 workflow-type: tm+mt
 source-wordcount: '2068'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -112,7 +112,7 @@ Consultez [Outil de mappage utilisateur](https://experienceleague.adobe.com/docs
          >* `/etc` (certains  `/etc` chemins peuvent être sélectionnés dans le CTT)
 
 
-1. Cliquez sur **Save** après avoir rempli tous les champs de l’écran **Content Migrations Set details**.
+1. Cliquez sur **Enregistrer** après avoir renseigné tous les champs de l’écran de détails **Créer une visionneuse de migration**.
 
 1. Vous voyez alors le jeu de migration défini dans la page *Overview* (Aperçu).
 
