@@ -2,9 +2,9 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: 87b6ae52ae25130f9abca6bfe0e8fb0caa90a348
+source-git-commit: e6a35e20dbbcbaa8385abe7ea36973418978ef04
 workflow-type: tm+mt
-source-wordcount: '2049'
+source-wordcount: '2057'
 ht-degree: 84%
 
 ---
@@ -99,7 +99,8 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
 
       1. **Include version** : sélectionnez les options requises.
 
-      1. **Inclure le mappage à partir des utilisateurs et groupes** IMS : Sélectionnez l’option. Consultez [Outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) pour plus de détails.
+      1. **Inclure le mappage à partir des utilisateurs et groupes** IMS : Sélectionnez l’option permettant d’inclure le mappage à partir des utilisateurs et groupes IMS.
+Consultez [Outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) pour plus de détails.
 
       1. **Paths to be included** : utilisez le navigateur de chemins pour sélectionner les chemins objets de la migration. Le sélecteur de chemin accepte les entrées effectuées par saisie ou par sélection.
 
