@@ -2,10 +2,10 @@
 title: Composant RemotePage
 description: Le composant RemotePage est un composant de page personnalisé permettant de modifier les SPA de réaction distantes dans AEM.
 translation-type: tm+mt
-source-git-commit: 6a88b93a4005b858eec222fd7ae15df9db269d31
+source-git-commit: 9a1048f6d185d2d3229bab05b8e827845444d11c
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 2%
+source-wordcount: '261'
+ht-degree: 1%
 
 ---
 
@@ -16,6 +16,12 @@ Lorsque vous décidez de [quel niveau d&#39;intégration](/help/implementing/dev
 ## Présentation {#overview}
 
 Le composant RemotePage récupère toutes les ressources nécessaires à partir du `asset-manifest.json` généré par l&#39;application et l&#39;utilise pour effectuer le rendu des SPA dans AEM.
+
+* La page distante vous permet d&#39;injecter les scripts et feuilles de style d&#39;un SPA dans le corps d&#39;un composant AEM Page.
+* Les Composants Frontières virtuels permettent de marquer les sections comme modifiables dans AEM SPA Editor.
+* Ensemble, un SPA hébergé sur un autre domaine peut être rendu modifiable dans AEM.
+
+Voir l&#39;article [Modification d&#39;un SPA externe dans AEM](editing-external-spa.md) pour plus d&#39;informations sur les SPA externes modifiables dans l&#39;.
 
 ## Conditions préalables {#requirements}
 
