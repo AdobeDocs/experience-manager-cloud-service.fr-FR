@@ -2,7 +2,7 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: c1c352712d88667faa2364160bdb60cc7ef94f63
+source-git-commit: 2e059ab3fea8bc80c697fe8190a8166483803821
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 83%
@@ -200,7 +200,7 @@ Une fois le processus d’ingestion terminé, vous pouvez utiliser le contenu di
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    >[!IMPORTANT]
-   >Vous devez désactiver l’option **Wipe existing content on Cloud instance before ingestion** (Effacer le contenu existant sur l’instance cloud avant l’ingestion) pour empêcher la suppression du contenu existant de l’activité d’ingestion précédente. De plus, cliquez sur **Service à la clientèle** pour enregistrer un ticket, comme indiqué dans la figure précédente.
+   >Vous devez désactiver l’option **Wipe existing content on Cloud instance before ingestion** (Effacer le contenu existant sur l’instance cloud avant l’ingestion) pour empêcher la suppression du contenu existant de l’activité d’ingestion précédente. De plus, cliquez sur **Service à la clientèle** pour enregistrer un ticket, comme le montre la figure précédente.
 
 
 ### Affichage des journaux d’un jeu de migration {#viewing-logs-migration-set}
