@@ -2,9 +2,9 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: 4a328148fc169b6ee134ea3924e0315e44cda052
+source-git-commit: cef8c78e5fec840ea1cc4d391240e3bf9a4d7c02
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2053'
 ht-degree: 84%
 
 ---
@@ -172,13 +172,14 @@ Une fois le processus d’extraction terminé, vous pouvez transférer le conten
 
 Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert de contenu, procédez comme suit :
 
-1. Pour démarrer l’extraction, sélectionnez un jeu de migration dans la page *Overview*, puis cliquez sur **Ingest** (Ingérer). La boîte de dialogue **Migration Set ingestion** (Ingestion du jeu de migration) s’affiche. Cliquez sur **Ingest** pour démarrer la phase d’ingestion. Pour une démonstration, l’option **Ingest content to Author instance** (Ingérer du contenu vers l’instance d’auteur) est désactivée. Il est possible d’ingérer en même temps du contenu vers les instances d’auteur et de publication.
+1. Pour démarrer l’extraction, sélectionnez un jeu de migration dans la page *Overview*, puis cliquez sur **Ingest** (Ingérer). La boîte de dialogue **Migration Set ingestion** (Ingestion du jeu de migration) s’affiche. Cliquez sur **Ingest** pour démarrer la phase d’ingestion. Il est possible d’ingérer en même temps du contenu vers les instances d’auteur et de publication.
 
    >[!IMPORTANT]
    >Lorsque l’option **Effacer le contenu existant sur l’instance Cloud avant l’assimilation** est activée, elle supprime l’intégralité du référentiel existant et crée un nouveau référentiel dans lequel intégrer du contenu. Cela signifie qu’il réinitialise tous les paramètres, y compris les autorisations sur l’instance de Cloud Service de cible.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/top-ingestion-image01.png)
 
+   De plus, cliquez sur **Service à la clientèle** pour enregistrer un ticket, comme le montre la figure ci-dessus. Consultez également la section [Considérations importantes pour l’utilisation de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) pour en savoir plus.
 
 1. Une fois l’ingestion terminée, l’état du champ **PUBLISH INGESTION** passe à **FINISHED**.
 
@@ -199,10 +200,8 @@ Une fois le processus d’ingestion terminé, vous pouvez utiliser le contenu di
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    >[!IMPORTANT]
-   >
    >Vous devez désactiver l’option **Wipe existing content on Cloud instance before ingestion** (Effacer le contenu existant sur l’instance cloud avant l’ingestion) pour empêcher la suppression du contenu existant de l’activité d’ingestion précédente.
 
-   De plus, cliquez sur **Service à la clientèle** pour enregistrer un ticket, comme le montre la figure ci-dessus. Consultez également la section [Considérations importantes pour l’utilisation de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) pour en savoir plus.
 
 ### Affichage des journaux d’un jeu de migration {#viewing-logs-migration-set}
 
