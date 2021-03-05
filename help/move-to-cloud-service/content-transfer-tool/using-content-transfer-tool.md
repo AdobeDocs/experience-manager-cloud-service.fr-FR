@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: cef8c78e5fec840ea1cc4d391240e3bf9a4d7c02
+source-git-commit: c1c352712d88667faa2364160bdb60cc7ef94f63
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 84%
+source-wordcount: '2068'
+ht-degree: 83%
 
 ---
 
@@ -177,7 +177,7 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
    >[!IMPORTANT]
    >Lorsque l’option **Effacer le contenu existant sur l’instance Cloud avant l’assimilation** est activée, elle supprime l’intégralité du référentiel existant et crée un nouveau référentiel dans lequel intégrer du contenu. Cela signifie qu’il réinitialise tous les paramètres, y compris les autorisations sur l’instance de Cloud Service de cible.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/top-ingestion-image01.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    De plus, cliquez sur **Service à la clientèle** pour enregistrer un ticket, comme le montre la figure ci-dessus. Consultez également la section [Considérations importantes pour l’utilisation de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) pour en savoir plus.
 
@@ -200,7 +200,7 @@ Une fois le processus d’ingestion terminé, vous pouvez utiliser le contenu di
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    >[!IMPORTANT]
-   >Vous devez désactiver l’option **Wipe existing content on Cloud instance before ingestion** (Effacer le contenu existant sur l’instance cloud avant l’ingestion) pour empêcher la suppression du contenu existant de l’activité d’ingestion précédente.
+   >Vous devez désactiver l’option **Wipe existing content on Cloud instance before ingestion** (Effacer le contenu existant sur l’instance cloud avant l’ingestion) pour empêcher la suppression du contenu existant de l’activité d’ingestion précédente. De plus, cliquez sur **Service à la clientèle** pour enregistrer un ticket, comme indiqué dans la figure précédente.
 
 
 ### Affichage des journaux d’un jeu de migration {#viewing-logs-migration-set}
