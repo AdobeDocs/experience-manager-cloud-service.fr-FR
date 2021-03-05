@@ -2,10 +2,10 @@
 title: SPA et rendu côté serveur
 description: L’utilisation du rendu côté serveur dans votre SPA peut accélérer le chargement initial de la page, puis transmettre plus de rendu au client.
 translation-type: tm+mt
-source-git-commit: 10012f6dc75da0c199dd5452ceef16ec7f29389b
+source-git-commit: fc61f13fbf976c43fcdd6921178a9bd4e82fc68d
 workflow-type: tm+mt
 source-wordcount: '1435'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ Toutefois, cela peut entraîner des temps de chargement initiaux plus longs, en 
 
 ## Quand utiliser le rendu côté serveur {#when-to-use-ssr}
 
-Le rendu côté serveur n’est pas requis pour tous les projets. Bien qu’AEM prenne pleinement en charge le rendu côté serveur JS pour les SPA, Adobe ne recommande pas de le mettre en œuvre systématiquement pour chaque projet.
+Le rendu côté serveur n’est pas requis pour tous les projets. Bien que AEM appuie pleinement la stratégie SSR JS pour SPA, l&#39;Adobe ne recommande pas de la mettre en oeuvre systématiquement pour chaque projet.
 
 Lorsque vous décidez de mettre en œuvre le rendu côté serveur, vous devez d’abord estimer la complexité, les efforts et les coûts supplémentaires que ce rendu représente de manière réaliste pour le projet, y compris la maintenance à long terme. Une architecture SSR ne doit être choisie que lorsque la valeur ajoutée dépasse clairement les coûts estimés.
 
