@@ -2,9 +2,9 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: e3fe8daf8f40d3fe98bdbb7bf19ad1df5aa670ae
+source-git-commit: 87b6ae52ae25130f9abca6bfe0e8fb0caa90a348
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2049'
 ht-degree: 84%
 
 ---
@@ -76,13 +76,9 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
 
    De plus, cliquez sur **Créer une configuration de mappage utilisateur** pour accéder à l&#39;[outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
 
-1. Renseignez les champs de l’écran **Jeu de migration de contenu**, comme décrit ci-dessous.
+1. Renseignez les champs de l’écran **Créer une visionneuse de migration**, comme décrit ci-dessous.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
-
-   >[!NOTE]
-   >Sélectionnez **Inclure le mappage des utilisateurs et groupes IMS**, comme indiqué dans la figure ci-dessus. Consultez [Outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) pour plus de détails.
-
 
    1. **Name** : renseignez le nom du jeu de migration.
       >[!NOTE]
@@ -102,6 +98,8 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
    1. **Parameters** : sélectionnez les paramètres suivants pour créer le jeu de migration :
 
       1. **Include version** : sélectionnez les options requises.
+
+      1. **Inclure le mappage à partir des utilisateurs et groupes** IMS : Sélectionnez l’option. Consultez [Outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) pour plus de détails.
 
       1. **Paths to be included** : utilisez le navigateur de chemins pour sélectionner les chemins objets de la migration. Le sélecteur de chemin accepte les entrées effectuées par saisie ou par sélection.
 
@@ -178,7 +176,7 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
    >[!IMPORTANT]
    >Lorsque l’option **Effacer le contenu existant sur l’instance Cloud avant l’assimilation** est activée, elle supprime l’intégralité du référentiel existant et crée un nouveau référentiel dans lequel intégrer du contenu. Cela signifie qu’il réinitialise tous les paramètres, y compris les autorisations sur l’instance de Cloud Service de cible.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04b.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/top-ingestion-image01.png)
 
 
 1. Une fois l’ingestion terminée, l’état du champ **PUBLISH INGESTION** passe à **FINISHED**.
