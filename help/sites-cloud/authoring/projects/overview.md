@@ -2,10 +2,10 @@
 title: Projets
 description: Les projets vous permettent de regrouper des ressources dans une seule entité dont l’environnement commun et partagé facilite la gestion de vos projets.
 translation-type: tm+mt
-source-git-commit: 4f52c08674148776c29c0a3130c60a34f6ed30cd
+source-git-commit: 9518a3ddb253ede2e9b713b4a7d0077e8ba3f7e0
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 99%
+source-wordcount: '1273'
+ht-degree: 97%
 
 ---
 
@@ -175,7 +175,7 @@ Pour vous permettre de gérer les autorisations de sécurité et de contrôle, t
 |---|---|---|---|
 | Observateur | Un utilisateur disposant de ce rôle peut afficher les détails du projet, y compris son état. | Droits en lecture seule sur un projet | Groupe `workflow-users` |
 | Éditeur | Un utilisateur disposant de ce rôle peut charger et modifier le contenu d’un projet. | Accès en lecture et en écriture à un projet, aux métadonnées associées et aux ressources connexes ; droits permettant à l’utilisateur de charger une liste de plans ou une séance photo et de passer en revue et d’approuver des ressources ; droits en écriture sur /etc/commerce ; droits de modification sur un projet spécifique | Groupe workflow-users |
-| Propriétaire | Un utilisateur disposant de ce rôle peut lancer un projet. Le propriétaire peut créer un projet, lancer une tâche pour un projet et déplacer les ressources approuvées vers le dossier Production. Toutes les autres tâches de projet peuvent également être visualisées et implémentées par le propriétaire. | Droits en écriture sur `/etc/commerce` | Groupe `dam-users` (pour pouvoir créer un projet), groupe project-administrators (pour pouvoir déplacer des ressources) |
+| Propriétaire | Un utilisateur disposant de ce rôle peut lancer un projet. Le propriétaire peut créer un projet, lancer une tâche pour un projet et déplacer les ressources approuvées vers le dossier Production. Toutes les autres tâches de projet peuvent également être visualisées et implémentées par le propriétaire. | Droits en écriture sur `/etc/commerce` | `dam-users` groupe (pour pouvoir créer un projet) groupe d&#39;administrateurs de projet (pour pouvoir créer un projet et déplacer des ressources) |
 
 >[!NOTE]
 >
