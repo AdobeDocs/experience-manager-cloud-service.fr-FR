@@ -4,10 +4,10 @@ description: Découvrez les types de métadonnées ainsi que l’organisation et
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
+source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
 workflow-type: tm+mt
-source-wordcount: '1850'
-ht-degree: 100%
+source-wordcount: '1854'
+ht-degree: 98%
 
 ---
 
@@ -127,11 +127,11 @@ Enterprise Manager Assets vous permet de modifier les métadonnées de plusieu
    >Lorsque vous sélectionnez plusieurs ressources, la plus petite forme parent commune est sélectionnée. En d’autres termes, la page [!UICONTROL Propriétés] affiche uniquement les champs de métadonnées communs aux pages [!UICONTROL Propriétés] de toutes les ressources individuelles.
 
 1. Modifiez les propriétés de métadonnées des ressources sélectionnées dans les différents onglets.
-1. Pour afficher l’éditeur de métadonnées pour une ressource spécifique, désélectionnez les autres ressources de la liste. Les champs de l’éditeur de métadonnées sont renseignés avec les métadonnées de la ressource particulière.
+1. Pour vue à l’éditeur de métadonnées d’un fichier spécifique, annulez la sélection des fichiers restants dans la liste. Les champs de l’éditeur de métadonnées sont renseignés avec les métadonnées de la ressource particulière.
 
    >[!NOTE]
    >
-   >* Dans la page [!UICONTROL Propriétés], vous pouvez supprimer des ressources de la liste des ressources en les désélectionnant. La liste des ressources contient toutes les ressources sélectionnées par défaut. Les métadonnées des ressources que vous supprimez de la liste ne sont pas mises à jour.
+   >* Dans la page [!UICONTROL Propriétés], vous pouvez supprimer des ressources de la liste de ressources en annulant la sélection. La liste des ressources contient toutes les ressources sélectionnées par défaut. Les métadonnées des ressources que vous supprimez de la liste ne sont pas mises à jour.
    >* En haut de la liste des ressources, cochez la case située en regard de l’option **[!UICONTROL Titre]** pour passer de la sélection des ressources à l’effacement de la liste, et inversement.
 
 
