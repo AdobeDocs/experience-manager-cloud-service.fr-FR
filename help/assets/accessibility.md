@@ -3,10 +3,10 @@ title: Accessibilité dans  [!DNL Experience Manager Assets]
 description: Découvrez comment les fonctionnalités d’accessibilité d’ [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]  aident les utilisateurs en situation de handicap.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
 workflow-type: tm+mt
 source-wordcount: '1912'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -96,7 +96,7 @@ Les actions suivantes d’[!DNL Assets] fonctionnent avec les raccourcis clavier
 | Ressource ou dossier sélectionné | `e` | Modifier la ressource sélectionnée. |
 | Ressource ou dossier sélectionné | `m` | Déplacer la ressource sélectionnée. |
 | Ressource ou dossier sélectionné | `Ctrl + c` | Copier la ressource sélectionnée. |
-| Ressource ou dossier sélectionné | `Esc` | Désélectionner la sélection. |
+| Ressource ou dossier sélectionné | `Esc` | Annule la sélection. |
 | La boîte de dialogue s’ouvre et est active | `Esc` | Fermer la boîte de dialogue. |
 | Dans un dossier dans DAM | `Ctrl + v` | Coller la ressource copiée. |
 | Console [!DNL Assets] | `Ctrl + A` | Sélectionner tous les fichiers. |
