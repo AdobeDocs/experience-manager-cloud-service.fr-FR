@@ -4,10 +4,10 @@ description: Découvrez le concept de collection dans Adobe Experience Manager A
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
+source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
 workflow-type: tm+mt
-source-wordcount: '2393'
-ht-degree: 100%
+source-wordcount: '2397'
+ht-degree: 97%
 
 ---
 
@@ -80,7 +80,7 @@ Une collection dynamique utilise des critères de recherche pour rassembler les
 
    >[!NOTE]
    >
-   >Si vous sélectionnez **[!UICONTROL Public]**, la collection dynamique est disponible pour chaque personne possédant le rôle de propriétaire une fois que vous la créez. Si vous désactivez la case à cocher **[!UICONTROL Public]**, le groupe Utilisateurs DAM n’est plus associé à la collection dynamique.
+   >Si vous sélectionnez **[!UICONTROL Public]**, la collection dynamique est disponible pour chaque personne possédant le rôle de propriétaire une fois que vous la créez. Si vous annulez l’option **[!UICONTROL Public]**, le groupe d’utilisateurs DAM n’est plus associé à la collection dynamique.
 
 1. Appuyez/cliquez sur **[!UICONTROL Enregistrer]** pour créer la collection dynamique, puis fermez le message afin de terminer le processus. La nouvelle collection dynamique est également ajoutée à la liste **[!UICONTROL Recherches enregistrées]**.
 Le libellé du bouton **[!UICONTROL Créer une collection dynamique]** se transforme en **[!UICONTROL Modifier la collection dynamique]**. Pour modifier les paramètres de la collection dynamique, sélectionnez **[!UICONTROL Fichiers]** dans la liste **[!UICONTROL Fichiers et dossiers]**. Ensuite, appuyez/cliquez sur le bouton **[!UICONTROL Modif. collection dynam]**.
@@ -195,11 +195,11 @@ Pour personnaliser la page [!UICONTROL Propriétés] de métadonnées, notamment
    >
    >Les métadonnées que vous ajoutez pour les collections sélectionnées remplacent les métadonnées précédentes de ces collections, à l’exception des balises. Toutes les balises que vous ajoutez dans le champ **[!UICONTROL Balises]** sont ajoutées à la liste existante des balises dans les métadonnées.
 
-1. Pour afficher les propriétés de métadonnées associées à une collection spécifique, désélectionnez les autres collections dans la liste des collections. Les champs de l’éditeur de métadonnées sont renseignés avec les métadonnées de la collection particulière.
+1. Pour vue des propriétés de métadonnées d’une collection spécifique, annulez la sélection des collections restantes dans la liste des collections. Les champs de l’éditeur de métadonnées sont renseignés avec les métadonnées de la collection particulière.
 
    >[!NOTE]
    >
-   >* Dans la page des propriétés de collection, vous pouvez supprimer des collections de la liste des collections en les désélectionnant. La liste des collections contient toutes les collections sélectionnées par défaut. Les métadonnées des collections que vous supprimez ne sont pas mises à jour.
+   >* Dans la page des propriétés de la collection, vous pouvez supprimer des collections de la liste des collections en annulant la sélection. La liste des collections contient toutes les collections sélectionnées par défaut. Les métadonnées des collections que vous supprimez ne sont pas mises à jour.
    >* En haut de la liste, cochez la case située en regard de l’option **[!UICONTROL Titre]** pour passer de la sélection des collections à l’effacement de la liste, et inversement.
 
 
