@@ -4,10 +4,10 @@ user-guide-title: Intégration à AEM as a Cloud Service
 breadcrumb-title: Guide d’intégration
 user-guide-description: Ce guide résume la procédure à suivre pour commencer à utiliser Experience Manager as a Cloud Service, avec les informations d’accès et des informations importantes sur la protection des données.
 translation-type: tm+mt
-source-git-commit: 3ccf56939f444ce57669b289f4997084828fd0a5
+source-git-commit: 4482fe36339db0c544b0b550e0bd414b2a47809e
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 49%
+source-wordcount: '685'
+ht-degree: 47%
 
 ---
 
@@ -20,7 +20,12 @@ ht-degree: 49%
    + [Ajout d’utilisateurs et de rôles](what-is-required/add-users-roles.md)
    + [Autorisations basées sur les rôles](what-is-required/role-based-permissions.md)
    + [Référentiel de code source](what-is-required/source-code-repository.md)
++ Phases du parcours de transition {#phases}
+   + [Planification](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/planning.html)
+   + [Exécution](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/execution.html)
+   + [Post-activation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/post-go-live.html)
 + Accès à AEM en mode cloud {#getting-access}
+   + [AEM en tant que Cloud Service : Présentation du processus de configuration](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
    + [Accès à Experience Manager as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
    + Programmes Cloud Service {#cloud-service-programs}
       + [Accès aux programmes](getting-access-to-aem-in-cloud/first-time-login.md)
@@ -83,6 +88,7 @@ ht-degree: 49%
       + [Notes de mise à jour de la version 2020.4.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
       + [Notes de mise à jour de la version 2020.3.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
       + [Notes de mise à jour de la version 2020.2.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
+   + [Comprendre les rôles et les responsabilités](getting-access-to-aem-in-cloud/roles-responsibilities.md)
 + Préparation à la confidentialité et protection des données {#data-privacy}
    + [Préparation d’AEM aux réglementations sur la protection et la confidentialité des données](data-privacy-and-protection-readiness/aem-readiness.md)
    + [Préparation d’AEM Foundation aux réglementations sur la protection et la confidentialité des données](data-privacy-and-protection-readiness/foundation-readiness.md)
