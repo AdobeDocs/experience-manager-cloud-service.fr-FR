@@ -1,11 +1,15 @@
 ---
-source-git-commit: d2a24f55d5b89f1abe64702d5f1ad39f793429d5
-workflow-type: tm+mt
+title: Processus de configuration - Présentation
+description: Processus de configuration - Présentation
 translation-type: tm+mt
-source-wordcount: '334'
-ht-degree: 13%
+source-git-commit: bb5a84c915e9b94bed021dacefd75b4e18fa9eb3
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
+
+
 # AEM en tant que Cloud Service : Intégration et accès
 
 Cette page liste les ressources d’auto-assistance sur le processus de mise en service du Experience Manager en tant que Cloud Service.
@@ -46,7 +50,7 @@ Pour plus d&#39;informations, consultez [L&#39;intégration d&#39;un Experience 
 
 ### 2. Organisations embarquées à Adobe Admin Console :
 
- >   ![processview2.jpg](./assets/processOverview2.jpg)
+>   ![processview2.jpg](./assets/processOverview2.jpg)
 * Administrateur système :
    * Fournir AEM programmes et environnements.
    * Accédez au Admin Console pour les tâches d’administration.
@@ -70,5 +74,5 @@ Répertoire
 
 ## Aide et ressources
 
-[Première connexion – Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html#getting-access)\
-[Configuration de l’accès à AEM en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)
+* [Première connexion – Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html#getting-access)
+* [Configuration de l’accès à AEM en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)
