@@ -1,13 +1,16 @@
 ---
-source-git-commit: 8d15605dd696f0163229a677b57aa0837dc11704
-workflow-type: tm+mt
+title: Rôles et responsabilités
+description: Rôles et responsabilités
 translation-type: tm+mt
-source-wordcount: '417'
+source-git-commit: 843e425e446a4e9ce140fe7d7111b69bd9f4545e
+workflow-type: tm+mt
+source-wordcount: '423'
 ht-degree: 21%
 
 ---
 
-# Adobe Experience Manager comme Cloud Service : Rôles et responsabilités
+
+# Adobe Experience Manager comme Cloud Service : Rôles et responsabilités {#roles-responsibilities}
 
 <br></br>
 Adobe fournit un ensemble de services autour de la fourniture, du développement, de l&#39;évaluation et de la production de Experience Manager en tant que Cloud Service. Pour que le développement et le déploiement de la solution se déroulent de la manière la plus efficace possible, il est important que le client et le personnalisateur comprennent et remplissent leurs rôles, comme décrit ci-dessous.
@@ -49,5 +52,8 @@ Adobe fournit un ensemble de services autour de la fourniture, du développement
 | Production | Mises à jour de AEM en tant qu’application Cloud Service |  |  | Propriétaire |  |
 | Production | Sauvegarde de production et reprise après sinistre |  |  | Propriétaire |  |
 
-<br></br>
-Ce qui précède suppose que le Premier Support est inclus. La table peut faire l&#39;objet de modifications par accord entre le Client et le Client. Nous vous recommandons de travailler avec vos équipes de vente et de personnalisation d&#39;Adobes si vous avez besoin de précisions sur l&#39;une ou l&#39;autre de ces questions. Les clients qui ne souhaitent pas gérer eux-mêmes la personnalisation doivent obtenir les services de l’équipe des Services professionnels de l’Adobe ou d’un partenaire Experience Manager. Pour maintenir des niveaux de qualité élevés, l&#39;Adobe exige que les partenaires engagés dans des projets de développement de Experience Manager soient dotés d&#39;au moins une personne ayant obtenu la certification Advanced Developer pour les logiciels Experience Manager.
+>[!NOTE]
+>
+> Ce qui précède suppose que le Premier Support est inclus. La table peut faire l&#39;objet de modifications par accord entre le Client et le Client. Nous vous recommandons de travailler avec vos équipes de vente et de personnalisation d&#39;Adobes si vous avez besoin de précisions sur l&#39;une ou l&#39;autre de ces questions.
+> Les clients qui ne souhaitent pas gérer eux-mêmes la personnalisation doivent obtenir les services de l’équipe des Services professionnels de l’Adobe ou d’un partenaire Experience Manager.
+>Pour maintenir des niveaux de qualité élevés, l&#39;Adobe exige que les partenaires engagés dans des projets de développement de Experience Manager soient dotés d&#39;au moins une personne ayant obtenu la certification Advanced Developer pour les logiciels Experience Manager.
