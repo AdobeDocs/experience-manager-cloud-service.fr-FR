@@ -4,9 +4,9 @@ user-guide-title: Intégration à AEM as a Cloud Service
 breadcrumb-title: Guide d’intégration
 user-guide-description: Ce guide résume la procédure à suivre pour commencer à utiliser Experience Manager as a Cloud Service, avec les informations d’accès et des informations importantes sur la protection des données.
 translation-type: tm+mt
-source-git-commit: cef1cba48c70b6bd8d488040ed80ee0c4d6d814c
+source-git-commit: 4e1f06e38fd968f8bcf240a5a30cf3362e562294
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '656'
 ht-degree: 48%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 48%
 + Accès à AEM en mode cloud {#getting-access}
    + [Présentation du processus de configuration](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
    + [Accès à Experience Manager as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
-   + Programmes Cloud Service {#cloud-service-programs}
-      + [Accès aux programmes](getting-access-to-aem-in-cloud/first-time-login.md)
+   + Accès à Cloud Manager {#cloud-service-programs}
+      + [Page d’accueil de Cloud Manager](getting-access-to-aem-in-cloud/first-time-login.md)
       + [Présentation des programmes et des types de programmes](getting-access-to-aem-in-cloud/understand-program-types.md)
       + [Création d’un programme](getting-access-to-aem-in-cloud/creating-a-program.md)
       + [Programmes Sandbox](getting-access-to-aem-in-cloud/sandbox-programs.md)
