@@ -2,10 +2,10 @@
 title: Utilisation de Dynamic Media
 description: Découvrez comment utiliser Dynamic Media pour diffuser des ressources pour une utilisation sur le web, les appareils mobiles et les réseaux sociaux.
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
 workflow-type: tm+mt
 source-wordcount: '397'
-ht-degree: 97%
+ht-degree: 87%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 97%
 
 [Dynamic Media](https://www.adobe.com/fr/marketing/experience-manager-assets/dynamic-media.html) fournit des ressources visuelles de marchandisage et de marketing à la demande, automatiquement dimensionnées pour une utilisation sur le web, les appareils mobiles et les réseaux sociaux. À partir d’un ensemble de ressources de sources originales, Dynamic Media génère et diffuse en temps réel plusieurs variantes d’un même contenu enrichi par le biais de son réseau mondial et évolutif, aux performances optimisées.
 
-Dynamic Media permet un affichage interactif, notamment le zoom, la rotation à 360° et la vidéo. Dynamic Media incorpore de manière unique les workflows de la gestion des ressources numériques d’Adobe Experience Manager pour simplifier et rationaliser le processus de gestion des campagnes numériques.
+Dynamic Media propose des expériences d’affichage interactives, notamment un zoom, une rotation à 360 degrés et une vidéo. Dynamic Media intègre de manière unique les workflows de la solution Adobe Experience Manager de gestion d’actifs numériques (Assets) afin de simplifier et de rationaliser le processus de Gestion de campagne numérique.
 
 <!-- >[!NOTE]
 >
@@ -74,7 +74,7 @@ Des visionneuses d’images, à 360° et de supports variés sont disponibles lo
 
 ### Rendus PTIFF {#ptiff-renditions}
 
-Les ressources prises en charge par Dynamic Media comprennent `pyramid.tiffs`.
+Les ressources activées pour Dynamic Media sont `pyramid.tiffs`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
