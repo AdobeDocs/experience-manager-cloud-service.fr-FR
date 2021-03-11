@@ -2,7 +2,7 @@
 title: Vidéo
 description: Découvrez comment utiliser la vidéo dans Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
+source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
 workflow-type: tm+mt
 source-wordcount: '9537'
 ht-degree: 99%
@@ -275,7 +275,7 @@ Le graphique suivant montre le workflow global de création de vidéos qui sont 
 
 ## Bonnes pratiques en matière de codage de vidéos {#best-practices-for-encoding-videos}
 
-Le processus **vidéo d’encodage Dynamic Media** encode la vidéo si vous avez activé Dynamic Media et configuré les services cloud vidéo. Ce workflow capture l’historique de traitement des workflows et les informations d’échec. Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](#monitoring-video-encoding-and-youtube-publishing-progress). Si vous avez activé Dynamic Media et configuré les services cloud vidéo, le workflow **[!UICONTROL vidéo d’encodage Dynamic Media]** prend automatiquement effet lorsque vous chargez une vidéo. (Si vous n’utilisez pas Dynamic Media, le workflow **[!UICONTROL Ressource de mise à jour DAM]** prend effet.)
+Le flux de travail **Dynamic Media Encode Video** code la vidéo si vous avez activé Dynamic Media et configuré les services de cloud vidéo. Ce workflow capture l’historique de traitement des workflows et les informations d’échec. Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](#monitoring-video-encoding-and-youtube-publishing-progress). Si vous avez activé Dynamic Media et configuré les services de cloud de vidéos, le flux de travail **[!UICONTROL Dynamic Media Encode Video]** prend automatiquement effet lorsque vous téléchargez une vidéo. (Si vous n’utilisez pas Dynamic Media, le processus **[!UICONTROL DAM Update Asset]** prend effet.)
 
 Vous trouverez ci-dessous quelques conseils sur les bonnes pratiques de codage des fichiers source vidéo.
 
@@ -402,9 +402,9 @@ Supposons, par exemple, que la résolution de votre vidéo source soit équivale
 
 | Type de vidéo | Largeur x hauteur | Rapport de largeur | Rapport de hauteur |
 |--- |--- |--- |--- |
-| Source | 1 920 x 1 080 | 1 | 1 |
+| Source | 1 920 x 1 080 | 1 | 3 |
 | Codée | 960 x 540 | 2 | 2 |
-| Codée | 640 x 360 | 3 | 1 |
+| Codée | 640 x 360 | 3 | 3 |
 | Codée | 480 x 270 | 4 | 4 |
 
 ### Format de fichier vidéo codé {#encoded-video-file-format}
