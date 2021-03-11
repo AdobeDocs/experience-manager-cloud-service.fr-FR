@@ -2,10 +2,10 @@
 title: Déploiement de votre code - Cloud Services
 description: Déploiement de votre code - Cloud Services
 translation-type: tm+mt
-source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
+source-git-commit: 533707b9073231ed16757884afeb968ace0785b3
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 100%
+source-wordcount: '1054'
+ht-degree: 92%
 
 ---
 
@@ -50,15 +50,20 @@ Une fois que vous avez configuré votre pipeline de production (référentiel, e
       ![](assets/stage-deployment.png)
    Le **test dans l’environnement intermédiaire** comprend les étapes suivantes :
 
-   * Tests fonctionnels du produit : les exécutions du pipeline Cloud Manager prennent en charge l’exécution de tests sur l’environnement d’évaluation.
+   * **Test** fonctionnel du produit : Les exécutions du pipeline Cloud Manager prendront en charge l’exécution de tests exécutés par rapport à l’environnement d’affichage.
 Pour plus d’informations, voir [Tests fonctionnels du produit](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing).
 
-   * Tests fonctionnels personnalisés : cette étape du pipeline est toujours présente et ne peut pas être ignorée. Cependant, si aucun fichier JAR de test n’est généré par la compilation, le test réussit par défaut.\
+   * **Tests** fonctionnels personnalisés : Cette étape du pipeline est toujours présente et ne peut pas être ignorée. Cependant, si aucun fichier JAR de test n’est généré par la compilation, le test réussit par défaut.\
       Pour plus d’informations, voir [Tests fonctionnels personnalisés](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing).
 
+   * **Tests** d&#39;interface utilisateur personnalisés : Cette étape est une fonctionnalité facultative qui permet à nos clients de créer et d&#39;exécuter automatiquement des tests d&#39;interface utilisateur pour leurs applications. Les tests de l’interface utilisateur sont des tests basés sur Selenium placés dans une image Docker afin de permettre un large choix de langues et de cadres (tels que Java et Maven, Node et WebDriver.io, ou tout autre cadre et technologie basé sur Selenium).
+Pour plus d’informations, voir Tests personnalisés de l’interface utilisateur.
 
-   * Audit de l’expérience : cette étape du pipeline est toujours présente et ne peut pas être ignorée. Lorsqu’un pipeline de production est exécuté, une étape de contrôle de l’expérience est incluse après les tests fonctionnels personnalisés qui exécuteront les contrôles. Les pages configurées sont envoyées au service et évaluées. Les résultats sont informatifs et permettent à l’utilisateur de voir les scores et les différences existant entre les scores précédents et actuels. Ces connaissances sont utiles pour déterminer si une régression sera introduite avec le déploiement actuel.
+
+   * **Audit** d’expérience : Cette étape du pipeline est toujours présente et ne peut pas être ignorée. Lorsqu’un pipeline de production est exécuté, une étape de contrôle de l’expérience est incluse après les tests fonctionnels personnalisés qui exécuteront les contrôles. Les pages configurées sont envoyées au service et évaluées. Les résultats sont informatifs et permettent à l’utilisateur de voir les scores et les différences existant entre les scores précédents et actuels. Ces connaissances sont utiles pour déterminer si une régression sera introduite avec le déploiement actuel.
 Pour plus d’informations, voir [Compréhension des résultats du contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md).
+
+      ![](assets/stage-testing.png)
 
 
 
