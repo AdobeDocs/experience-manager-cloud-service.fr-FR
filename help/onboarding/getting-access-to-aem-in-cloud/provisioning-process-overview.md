@@ -51,6 +51,7 @@ Pour plus d&#39;informations, consultez [L&#39;intégration d&#39;un Experience 
 ### 2. Organisations embarquées à Adobe Admin Console :
 
 >   ![processview2.jpg](./assets/processOverview2.jpg)
+
 * Administrateur système :
    * Fournir AEM programmes et environnements.
    * Accédez au Admin Console pour les tâches d’administration.
