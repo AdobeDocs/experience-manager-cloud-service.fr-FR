@@ -2,7 +2,7 @@
 title: Configuration de Dynamic Media Cloud Service
 description: Informations sur la configuration de Dynamic Media dans Adobe Experience Manager as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 6dcf891fbe4a58f357fb429fc13cdd16bce7e3d0
+source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
 workflow-type: tm+mt
 source-wordcount: '3883'
 ht-degree: 64%
@@ -33,7 +33,7 @@ Avec la nouvelle architecture, Experience Manager est responsable des ressources
 >* [Imagerie dynamique](/help/assets/dynamic-media/imaging-faq.md)
 >* [Invalidation du cache](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 >* [Protection des liens dynamiques](/help/assets/dynamic-media/hotlink-protection.md)
->* [DIFFUSION de contenu HTTP/2](/help/assets/dynamic-media/http2faq.md)
+>* [Diffusion de contenu HTTP/2](/help/assets/dynamic-media/http2faq.md)
 >* Redirection d’URL au niveau du CDN
 >* Akamai ChinaCDN (pour une diffusion optimale en Chine)
 
@@ -239,7 +239,7 @@ Pour ouvrir la page Paramètres généraux de l’application, dans la barre de 
 
 #### Configuration de la gestion des couleurs {#configuring-color-management}
 
-La gestion des couleurs de Dynamic Media vous permet de corriger les couleurs des ressources. Avec la correction des couleurs, les ressources intégrées conservent leur espace colorimétrique (RVB, CMJN, gris) et leur profil de couleur intégré. Lorsque vous demandez un rendu dynamique, la couleur de l’image est corrigée dans l’espace colorimétrique cible en utilisant une sortie CMJN, RVB ou grise. Reportez-vous à la section [Configuration des paramètres d’image prédéfinis](/help/assets/dynamic-media/managing-image-presets.md).
+La gestion des couleurs Dynamic Media vous permet de colorer les fichiers corrects. Avec la correction des couleurs, les ressources intégrées conservent leur espace colorimétrique (RVB, CMJN, gris) et leur profil de couleur intégré. Lorsque vous demandez un rendu dynamique, la couleur de l’image est corrigée dans l’espace colorimétrique cible en utilisant une sortie CMJN, RVB ou grise. Reportez-vous à la section [Configuration des paramètres d’image prédéfinis](/help/assets/dynamic-media/managing-image-presets.md).
 
 Pour configurer les propriétés de couleur par défaut pour activer la correction des couleurs lors de la demande d’images :
 
