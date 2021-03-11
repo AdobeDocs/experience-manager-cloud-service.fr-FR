@@ -2,10 +2,10 @@
 title: 'Mise en veille et réactivation d’environnements Sandbox '
 description: 'Mise en veille et réactivation d’environnements Sandbox '
 translation-type: tm+mt
-source-git-commit: 213a7237abd4de75be43af430181f4aa914196f4
+source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
 workflow-type: tm+mt
 source-wordcount: '820'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 Les environnements de programme Sandbox passent en *mode veille* si aucune activité n’est détectée pendant une certaine période.
 
 >[!NOTE]
->La veille est unique aux environnements de programme Sandbox. Les environnements de programme réguliers ne connaissent pas de veille.
+>La veille est unique aux environnements de programme Sandbox. Les environnements du programme de production n&#39;hibernent pas.
 
 ## Mise en veille {#hibernation-introduction}
 
