@@ -2,10 +2,10 @@
 title: Tests fonctionnels – Cloud Services
 description: Tests fonctionnels – Cloud Services
 translation-type: tm+mt
-source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
+source-git-commit: 1e0765e6bf2818754c5603c08f055a7c7453bc33
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 100%
+source-wordcount: '845'
+ht-degree: 57%
 
 ---
 
@@ -16,6 +16,7 @@ Les tests fonctionnels sont classés en deux types :
 
 * Tests fonctionnels du produit
 * Tests fonctionnels personnalisés
+* Test d’interface utilisateur personnalisé
 
 ## Tests fonctionnels du produit {#product-functional-testing}
 
@@ -34,6 +35,34 @@ Cependant, si aucun fichier JAR de test n’est généré par la compilation, le
 >[!NOTE]
 >Le bouton **Télécharger le journal** permet d’accéder à un fichier ZIP contenant les journaux du formulaire détaillé d’exécution du test. Ces journaux ne contiennent pas les journaux du processus d’exécution AEM proprement dit. Vous pouvez y accéder à l’aide de la fonctionnalité de téléchargement standard ou d’affichage des dernières lignes des journaux. Pour plus d’informations, reportez-vous à [Accès et gestion des journaux](/help/implementing/cloud-manager/manage-logs.md).
 
+## Test d’interface utilisateur personnalisé {#custom-ui-testing}
+
+AEM fournit à ses clients une suite intégrée de portes de qualité Cloud Manager pour assurer des mises à jour régulières de leurs applications. En particulier, les passerelles de test informatique permettent déjà aux clients de créer et d&#39;automatiser leurs propres tests qui utilisent des API AEM.
+
+La fonctionnalité de test d’interface personnalisée est une fonctionnalité facultative qui permet à nos clients de créer et d’exécuter automatiquement des tests d’interface utilisateur pour leurs applications. Les tests de l’interface utilisateur sont des tests basés sur Selenium placés dans une image Docker afin de permettre un large choix de langues et de cadres (tels que Java et Maven, Node et WebDriver.io, ou tout autre cadre et technologie basé sur Selenium). Vous pouvez en savoir plus sur la création de l’interface utilisateur et la création de tests d’interface utilisateur à partir de cet emplacement. De plus, un projet de tests d&#39;interface utilisateur peut être facilement généré à l&#39;aide de l&#39;archétype de projet AEM.
+
+Les clients peuvent créer (via GIT) des tests personnalisés et des suites de tests pour l’interface utilisateur. Le test de l’interface utilisateur sera exécuté dans le cadre d’une porte d’entrée de qualité spécifique pour chaque pipeline de Cloud Manager, avec leurs informations d’étape et de commentaire spécifiques. Les tests d’interface utilisateur, y compris la régression et les nouvelles fonctionnalités, permettront de détecter les erreurs et de les signaler dans le contexte du client.
+
+Les tests de l’interface utilisateur client s’exécutent automatiquement sur le canal Production, sous l’étape &quot;Tests personnalisés de l’interface utilisateur&quot;.
+
+Contrairement aux tests fonctionnels personnalisés qui sont des tests HTTP écrits en java, les tests de l&#39;interface utilisateur peuvent être une image docker avec des tests écrits dans n&#39;importe quelle langue, à condition qu&#39;ils respectent les conventions définies dans [Création de tests d&#39;interface utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html?lang=en#building-ui-tests).
+
+>[!NOTE]
+>Il est recommandé de suivre la structure et la langue *(js et wdio)* qui sont fournies à titre pratique dans l&#39;[AEM Archétype du projet ](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) comme point de départ.
+
+### Inscription du client {#customer-opt-in}
+
+Pour que leurs tests d&#39;interface utilisateur soient créés et exécutés, les clients doivent &quot;s&#39;inscrire&quot; en ajoutant un fichier à leur référentiel de code, sous le sous-module maven pour les tests d&#39;interface utilisateur (en regard du fichier pom.xml du sous-module tests d&#39;interface utilisateur) et s&#39;assurer que ce fichier est à la racine du fichier `tar.gz` créé.
+
+*Nom du fichier*: `testing.properties`
+
+*Sommaire*: `one line: ui-tests.version=1`
+
+Si ce n&#39;est pas le cas dans le fichier `tar.gz` créé, la création et les exécutions des tests de l&#39;interface utilisateur sont ignorées.
+
+>[!NOTE]
+>Les oléoducs de production créés avant le 10 février 2021 devront être mis à jour afin d’utiliser les tests d’interface utilisateur décrits dans cette section. Cela signifie essentiellement que l’utilisateur doit modifier le pipeline de production et cliquer sur **Enregistrer** dans l’interface utilisateur même si aucune modification n’a été apportée.
+>Consultez [Configuration de votre pipeline CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=fr#using-cloud-manager) pour en savoir plus sur la configuration du pipeline.
 
 ### Écriture de tests fonctionnels {#writing-functional-tests}
 
