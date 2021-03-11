@@ -1,16 +1,16 @@
 ---
-title: Navigation
-description: Navigation - Cloud Service
+title: Accès à Cloud Manager pour AEM en tant que Cloud Service
+description: Accès à Cloud Manager pour AEM en tant que Cloud Service
 translation-type: tm+mt
-source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
+source-git-commit: 55f3b8bd1c21197fd004073cfabd9092678cfdcd
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 1%
+source-wordcount: '530'
+ht-degree: 0%
 
 ---
 
 
-# Accès à Experience Manager as a Cloud Service {#navigation}
+# Accès à Cloud Manager pour AEM en tant que Cloud Service {#navigation}
 
 Une fois que votre administrateur système vous a accordé l’accès à Cloud Manager, vous recevrez un courrier électronique vous conduisant à la page de connexion de Cloud Manager, également accessible via [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/).
 
@@ -20,7 +20,7 @@ Une fois votre connexion établie, vous serez dirigé vers le landing page de Cl
 
 ## Tâches SysAdmin {#sysadmin-tasks}
 
-Un utilisateur du rôle SysAdmin peut désormais accéder directement au Admin Console pour gérer les rôles et autorisations et accéder aux instances AEM.
+Un utilisateur du rôle Administrateur système peut sélectionner **Gérer l&#39;accès** pour accéder directement au Admin Console afin de gérer les rôles et autorisations et accéder aux instances AEM.
 
 ### Gestion des rôles {#manage-roles}
 
