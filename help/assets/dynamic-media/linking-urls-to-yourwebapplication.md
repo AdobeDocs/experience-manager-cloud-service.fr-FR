@@ -2,10 +2,10 @@
 title: Liaison d’URL à une application web
 description: Comment lier des URL à votre application web dans Dynamic Media.
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
 workflow-type: tm+mt
 source-wordcount: '1265'
-ht-degree: 87%
+ht-degree: 84%
 
 ---
 
@@ -20,7 +20,7 @@ Pour placer ces chaînes URL dans vos pages et applications web, copiez-les depu
 
 >[!NOTE]
 >
->Les chaînes URL ne sont disponibles que pour les rendus dynamiques des ressources. Elles ne sont actuellement pas disponibles pour les ressources statiques qui résident dans la gestion des ressources numériques (DAM) et non dans le serveur de média dynamique. Le bouton URL n’apparaît pas pour les rendus statiques.
+>Les chaînes URL ne sont disponibles que pour les rendus dynamiques de ressources. Ils ne sont actuellement pas disponibles pour les ressources statiques résidant dans DAM et non sur le serveur Dynamic Media. Le bouton URL n’apparaît pas pour les rendus statiques.
 
 Voir aussi [Incorporation de la visionneuse de vidéos ou d’images dans une page web](embed-code.md).
 
