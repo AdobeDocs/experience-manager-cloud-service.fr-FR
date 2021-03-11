@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: f780bcf645fb4c1f0bce377f95028888161ee7ae
+source-git-commit: 7d51252abcc5fe2def9a55c6324bf75479ef449a
 workflow-type: tm+mt
-source-wordcount: '2068'
-ht-degree: 82%
+source-wordcount: '2274'
+ht-degree: 73%
 
 ---
 
@@ -26,9 +26,13 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * Si vous utilisez un *environnement sandbox*, assurez-vous que celui-ci est à jour et mis à niveau vers la dernière version. Si vous utilisez un *environnement de production*, il est automatiquement mis à jour.
 
-* Pour utiliser l’outil de transfert de contenu, vous devez être un utilisateur administrateur sur votre instance source et appartenir au groupe d’administrateurs AEM local dans l’instance Cloud Service vers laquelle vous transférez du contenu. Les utilisateurs non privilégiés ne pourront pas récupérer le jeton d’accès pour utiliser l’outil de transfert de contenu.
+* Pour utiliser l’outil de transfert de contenu, vous devez être un utilisateur administrateur sur votre instance source et appartenir au groupe **administrateurs** local de l’AEM Cloud Service vers lequel vous transférez le contenu. Les utilisateurs non privilégiés ne pourront pas récupérer le jeton d’accès pour utiliser l’outil de transfert de contenu.
+
+* Si l’option **Effacer le contenu existant sur l’instance Cloud avant d’assimiler** est activée, elle supprime l’intégralité du référentiel existant et crée un nouveau référentiel dans lequel intégrer du contenu. Cela signifie qu’il réinitialise tous les paramètres, y compris les autorisations sur l’instance de Cloud Service de cible. Cela est également vrai pour un utilisateur administrateur ajouté au groupe **administrateurs**. L’utilisateur devra être réajouté au groupe **administrateurs** pour récupérer le jeton d&#39;accès pour CTT.
 
 * Le jeton d&#39;accès peut expirer périodiquement, soit après une période spécifique, soit après la mise à niveau de l’environnement Cloud Service. Si le jeton d&#39;accès a expiré, vous ne pourrez pas vous connecter à l’instance du Cloud Service et vous devrez récupérer le nouveau jeton d&#39;accès. L’icône d’état associée à un jeu de migration existant se transforme en nuage rouge et affiche un message lorsque vous le survolez.
+
+* L’outil de transfert de contenu n’effectue aucune analyse de contenu avant de transférer le contenu de l’instance source vers l’instance de cible. Par exemple, CTT ne fait pas de distinction entre le contenu publié et le contenu non publié lors de l’assimilation de contenu dans un environnement de publication. Le contenu spécifié dans le jeu de migration sera ingéré dans l’instance de cible choisie. L’utilisateur peut assimiler une visionneuse de migration à une instance d’auteur ou de publication, ou aux deux. Il est recommandé d’installer le CTT et l’instance d’auteur source lors du déplacement du contenu vers une instance de production afin de déplacer le contenu vers l’instance d’auteur de cible et d’installer de la même manière le CTT sur l’instance de publication source pour déplacer le contenu vers l’instance de publication de cible.
 
 * Les utilisateurs et les groupes transférés par l’outil de transfert de contenu sont uniquement ceux qui sont requis en fonction du contenu pour respecter les autorisations. Le processus d’*extraction* copie l’ensemble de `/home` dans le jeu de migration et le processus d’*ingestion* copie tous les utilisateurs et groupes référencés dans les listes de contrôle d’accès du contenu migré. Pour mapper automatiquement les utilisateurs et les groupes existants à leurs ID IMS, reportez-vous à la section [Utilisation de l’outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
 
@@ -175,7 +179,7 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
 1. Pour démarrer l’extraction, sélectionnez un jeu de migration dans la page *Overview*, puis cliquez sur **Ingest** (Ingérer). La boîte de dialogue **Migration Set ingestion** (Ingestion du jeu de migration) s’affiche. Cliquez sur **Ingest** pour démarrer la phase d’ingestion. Il est possible d’ingérer en même temps du contenu vers les instances d’auteur et de publication.
 
    >[!IMPORTANT]
-   >Lorsque l’option **Effacer le contenu existant sur l’instance Cloud avant l’assimilation** est activée, elle supprime l’intégralité du référentiel existant et crée un nouveau référentiel dans lequel intégrer du contenu. Cela signifie qu’il réinitialise tous les paramètres, y compris les autorisations sur l’instance de Cloud Service de cible.
+   >Lorsque l’option **Effacer le contenu existant sur l’instance Cloud avant l’assimilation** est activée, elle supprime l’intégralité du référentiel existant et crée un nouveau référentiel dans lequel intégrer du contenu. Cela signifie qu’il réinitialise tous les paramètres, y compris les autorisations sur l’instance de Cloud Service de cible. Cela est également vrai pour un utilisateur administrateur ajouté au groupe **administrateurs**.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
