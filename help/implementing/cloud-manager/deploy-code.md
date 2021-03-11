@@ -2,10 +2,10 @@
 title: Déploiement de votre code - Cloud Services
 description: Déploiement de votre code - Cloud Services
 translation-type: tm+mt
-source-git-commit: 533707b9073231ed16757884afeb968ace0785b3
+source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 92%
+source-wordcount: '1065'
+ht-degree: 91%
 
 ---
 
@@ -57,7 +57,7 @@ Pour plus d’informations, voir [Tests fonctionnels du produit](/help/implement
       Pour plus d’informations, voir [Tests fonctionnels personnalisés](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing).
 
    * **Tests** d&#39;interface utilisateur personnalisés : Cette étape est une fonctionnalité facultative qui permet à nos clients de créer et d&#39;exécuter automatiquement des tests d&#39;interface utilisateur pour leurs applications. Les tests de l’interface utilisateur sont des tests basés sur Selenium placés dans une image Docker afin de permettre un large choix de langues et de cadres (tels que Java et Maven, Node et WebDriver.io, ou tout autre cadre et technologie basé sur Selenium).
-Pour plus d’informations, voir Tests personnalisés de l’interface utilisateur.
+Consultez [Tests personnalisés de l&#39;interface utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/functional-testing.html?lang=en#custom-ui-testing) pour plus d&#39;informations.
 
 
    * **Audit** d’expérience : Cette étape du pipeline est toujours présente et ne peut pas être ignorée. Lorsqu’un pipeline de production est exécuté, une étape de contrôle de l’expérience est incluse après les tests fonctionnels personnalisés qui exécuteront les contrôles. Les pages configurées sont envoyées au service et évaluées. Les résultats sont informatifs et permettent à l’utilisateur de voir les scores et les différences existant entre les scores précédents et actuels. Ces connaissances sont utiles pour déterminer si une régression sera introduite avec le déploiement actuel.
