@@ -2,10 +2,10 @@
 title: Gestion des environnements – Cloud Service
 description: Gestion des environnements – Cloud Service
 translation-type: tm+mt
-source-git-commit: 1304a0cfa67c38943b1a36c105fbd5eafb3f8c4f
+source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
 workflow-type: tm+mt
 source-wordcount: '1249'
-ht-degree: 81%
+ht-degree: 80%
 
 ---
 
@@ -113,7 +113,7 @@ L’option de suppression est également disponible si vous cliquez sur **Détai
 
 >[!NOTE]
 >
->Cette fonction n’est pas disponible pour l’environnement de production/d’évaluation défini dans une configuration de programme normale à des fins de production. Cette fonction est toutefois disponible pour les environnements de production/d’évaluation dans un programme Sandbox.
+>Cette fonction n’est pas disponible pour les environnements de production/d’étape définis dans un programme de production configuré à des fins de production. Cette fonction est toutefois disponible pour les environnements de production/d’évaluation dans un programme Sandbox.
 
 ## Gestion de l’accès {#managing-access}
 
