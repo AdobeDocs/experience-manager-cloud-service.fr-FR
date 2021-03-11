@@ -2,10 +2,10 @@
 title: Page d’accueil de Cloud Manager
 description: Page d’accueil de Cloud Manager
 translation-type: tm+mt
-source-git-commit: 94740ff155aeea8f912598bedc4c17d4bc9d00e6
+source-git-commit: 2f5b15a4fcd46114f923a387fa71da22d143dfc1
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 47%
+source-wordcount: '280'
+ht-degree: 34%
 
 ---
 
@@ -33,11 +33,10 @@ Une fois que vous êtes connecté à [!UICONTROL Cloud Manager], vous êtes prê
 Une fois que vous vous êtes connecté à [!UICONTROL Cloud Manager], le landing page affiche la carte de tout programme existant de votre organisation.
 
 >[!NOTE]
->
->Les programmes qui se trouvent sur le Cloud Service sont indiqués par le sous-titre **Experience Manager Cloud** (par opposition à **Experience Manager** pour les programmes AMS), comme illustré ci-dessous.
+>Les programmes qui se trouvent sur le Cloud Service sont indiqués par le sous-titre **Experience Manager Cloud** (par opposition à **Experience Manager** pour les programmes AMS).
+>Par exemple, dans la figure ci-dessous, **We.Retail Global** est un programme AMS et **We.Retail-Prod Programme - Prod** est un programme disponible par Cloud Service.
 
 ![](assets/first_timelogin1.png)
-
 
 Selon les circonstances, vous verrez l’une des deux options suivantes :
 
@@ -54,9 +53,6 @@ Si des programmes existent déjà dans votre organisation, votre landing page vo
 
 ![](assets/first_timelogin1.png)
 
->[!NOTE]
->Les programmes qui se trouvent sur le Cloud Service sont indiqués par le sous-titre **Experience Manager Cloud** (par opposition à **Experience Manager** pour les programmes AMS).
->Par exemple, sur la figure ci-dessous, **We.Retail Global** est un programme AMS et **We.Retail-Prod Program - Prod** est un programme disponible via Cloud Service.
 
 Pour savoir comment ajouter un programme dans Cloud Manager, consultez :
 
