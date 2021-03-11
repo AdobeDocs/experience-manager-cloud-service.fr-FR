@@ -2,9 +2,9 @@
 title: 'Modification d''un Programme de sandbox '
 description: 'Modification d''un Programme de sandbox '
 translation-type: tm+mt
-source-git-commit: 78bc94f7e3dab37b7f83f480ef5438165e1897bc
+source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,11 @@ Les utilisateurs disposant des autorisations requises peuvent désormais modifie
 
 Pour modifier un programme Sandbox, procédez comme suit :
 
-1. Accédez à la page **Modifier le Programme**.
+1. Accédez à la page **Modifier le Programme** de la page *Aperçu* de Cloud Manager.
 
 1. La page **Modifier le Programme** affiche deux onglets (Général et Solutions) pour les programmes Production et Sandbox.
    ![](assets/edit-program.png)
 
-   >[!NOTE]
-   >Bien que les sites et les ressources soient affichés, l&#39;un d&#39;eux peut être désactivé en fonction de ce qui a été acheté et inutilisé. En particulier, si l&#39;entreprise ne dispose pas de droits inutilisés pour une solution particulière, cette solution est affichée mais désactivée.
 
 ## Considérations relatives à la modification d’un Programme {#considerations-editing}
 
