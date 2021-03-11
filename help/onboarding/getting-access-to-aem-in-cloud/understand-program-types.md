@@ -2,9 +2,9 @@
 title: Présentation des types de Programme et de Programme
 description: Présentation des types de Programme et de Programme - Cloud Services
 translation-type: tm+mt
-source-git-commit: 14da491cf09ed46ea425a8d65670d8b851aef388
+source-git-commit: e1d805e1e5b5850ecf3154cd69a3955c4dbe1e65
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '170'
 ht-degree: 3%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # Présentation des programmes et des types de programmes {#understanding-programs}
 
-Dans Cloud Manager, l’entité locataire se trouve tout en haut de l’écran et peut comporter plusieurs Programmes.  Chaque Programme ne peut pas contenir plus d’un environnement de production et plusieurs environnements non productifs.
+Dans Cloud Manager, l’entité locataire se trouve tout en haut de l’écran et peut comporter plusieurs Programmes. Chaque Programme ne peut pas contenir plus d’un environnement de production et plusieurs environnements non productifs.
 
 Le diagramme suivant présente la hiérarchie des entités dans Cloud Manager.
 
@@ -20,8 +20,12 @@ Le diagramme suivant présente la hiérarchie des entités dans Cloud Manager.
 
 ## Types de programme {#program-types}
 
-Un utilisateur peut créer un programme **Sandbox** ou **Regular**.
+Un utilisateur peut créer un programme **Sandbox** ou **Production**.
 
-Un *sandbox* est généralement créé pour servir à la formation, à l’exécution de démonstrations, à l’activation, aux points de vue ou à la documentation. Il n&#39;est pas destiné à transporter du trafic réel et aura des restrictions qu&#39;un programme ordinaire ne fera pas. Il comprendra des sites et des ressources et sera livré automatiquement avec une branche Git comprenant un exemple de code, un environnement Dev et un pipeline non productif.
+* Un *Programme de production* est créé pour activer le trafic actif au moment approprié dans le futur.
+Voir [Introduction aux Programmes de production](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md) pour plus de détails.
 
-Un *programme régulier* est créé pour activer le trafic actif au moment approprié dans le futur.
+
+* Un *Programme Sandbox* est généralement créé pour servir à la formation, à l’exécution de démonstrations, à l’activation, aux points de vue ou à la documentation. Il n&#39;est pas destiné à transporter du trafic réel et aura des restrictions qu&#39;un programme ordinaire ne fera pas. Il comprendra des sites et des ressources et sera livré automatiquement avec une branche Git comprenant un exemple de code, un environnement Dev et un pipeline non productif.
+Voir [Introduction aux Programmes Sandbox](/help/onboarding/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) pour plus de détails.
+
