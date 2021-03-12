@@ -2,7 +2,7 @@
 title: Droits d'accès accordés - Ce qui est requis
 description: Droits d'accès accordés - Ce qui est requis
 translation-type: tm+mt
-source-git-commit: 4904d7728befd3562940b35c7d44dbf9cae87fee
+source-git-commit: 4b62401fd1d0654cf758092176bd815a7fa56159
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 51%
@@ -36,8 +36,8 @@ Une fois qu’Adobe a créé une organisation pour votre entreprise, l’adminis
    * [Gestion des rôles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#manage-roles)
    * [Gestion de l’accès à l’instance d’auteur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#manage-access-aem)
 
->[!NOTE]
->Consultez la section [Utilisateurs et rôles](#users-roles) pour en savoir plus sur les utilisateurs et les définitions de rôles dans Cloud Manager.
+      >[!NOTE]
+      >Consultez la section [Utilisateurs et rôles](#users-roles) pour en savoir plus sur les utilisateurs et les définitions de rôles dans Cloud Manager.
 
 Avec ces droits, votre administrateur dispose maintenant d’une authentification unique (à l’aide de l’Adobe ID) pour accéder aux services [!UICONTROL Experience Cloud], se connecter à vos environnements cloud AEM et utiliser [!UICONTROL Cloud Manager].
 
