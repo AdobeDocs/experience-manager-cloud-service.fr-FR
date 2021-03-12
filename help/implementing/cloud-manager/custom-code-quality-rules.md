@@ -2,10 +2,10 @@
 title: Règles de qualité du code personnalisé - Cloud Services
 description: Règles de qualité du code personnalisé - Cloud Services
 translation-type: tm+mt
-source-git-commit: 901a660424f5e1fded654ddb09f3d872b7cd01b7
+source-git-commit: 78d9c1345ed0642f7cb493a50ff117c5fad7632a
 workflow-type: tm+mt
-source-wordcount: '3221'
-ht-degree: 75%
+source-wordcount: '3299'
+ht-degree: 73%
 
 ---
 
@@ -611,6 +611,9 @@ Il a été établi depuis longtemps que l’arborescence de contenu /libs dans l
 **Depuis** : version 2019.6.0
 
 Le fait qu’un même composant OSGi soit configuré plusieurs fois est un problème courant qui se produit sur les projets complexes. Cela crée une ambiguïté quant à la configuration qui sera exploitable. Cette règle est « compatible avec le mode d’exécution » en ce qu’elle identifie uniquement les problèmes où le même composant est configuré plusieurs fois dans le même mode d’exécution (ou combinaison de modes d’exécution).
+
+>[!NOTE]
+>Cette règle crée des problèmes lorsque la même configuration, au même chemin, est définie dans plusieurs packages, y compris dans les cas où le même package est dupliqué dans la liste globale des packages créés. Par exemple, si la génération produit des packages nommés `com.myco:com.myco.ui.apps` et `com.myco:com.myco.all` où `com.myco:com.myco.all` incorpore `com.myco:com.myco.ui.apps`, toutes les configurations de `com.myco:com.myco.ui.apps` seront signalées comme duplicata. Il s’agit généralement de ne pas respecter les [directives relatives à la structure du package de contenu](/help/implementing/developing/aem-project-content-package-structure.md); dans cet exemple spécifique, il manque la propriété `<cloudManagerTarget>none</cloudManagerTarget>` du package `com.myco:com.myco.ui.apps`.
 
 #### Code non conforme {#non-compliant-code-osgi}
 
