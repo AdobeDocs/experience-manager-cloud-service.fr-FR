@@ -2,10 +2,10 @@
 title: Réseau de diffusion de contenu dans AEM as a Cloud Service
 description: Réseau de diffusion de contenu dans AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 6c9a0779cfb9c3c2088a17e67437c76b589276f0
+source-git-commit: c71117de502b1ee756e06e756a643c987113ea45
 workflow-type: tm+mt
-source-wordcount: '696'
-ht-degree: 41%
+source-wordcount: '695'
+ht-degree: 33%
 
 ---
 
@@ -31,7 +31,7 @@ Consultez [Gestion des Listes autorisées IP](/help/implementing/cloud-manager/i
 
 >[!CAUTION]
 >
->Seules les demandes provenant des adresses IP autorisées seront diffusées par le réseau de diffusion de contenu géré de l’AEM. Si vous pointez votre propre CDN sur le CDN géré AEM, assurez-vous que les adresses IP de votre CDN sont incluses dans la liste autorisée.
+>Seules les demandes provenant des adresses IP autorisées seront diffusées par le réseau de diffusion de contenu géré de l’AEM. Si vous pointez votre propre CDN sur le CDN AEM géré, assurez-vous que les adresses IP de votre CDN sont incluses dans la liste autorisée.
 
 ## Le réseau de diffusion de contenu du client pointe vers le réseau de diffusion de contenu géré par AEM {#point-to-point-CDN}
 
@@ -47,10 +47,10 @@ Instructions de configuration :
 
 1. Définissez l’en-tête `X-Forwarded-Host` avec le nom de domaine.
 1. Définissez l’en-tête d’hôte avec le domaine d’origine, qui est l’entrée du CDN AEM. La valeur doit provenir d’Adobe.
-1. Envoyez l’en-tête SNI à l’origine. Tout comme l’en-tête d’hôte, l’en-tête SNI doit être le domaine d’origine.
+1. Envoyez l’en-tête SNI à l’origine. Tout comme l’en-tête Host, l’en-tête SNI doit être le domaine d’origine.
 1. Définissez `X-Edge-Key` ou `X-AEM-Edge-Key` (si votre réseau de diffusion de contenu efface X-Edge-*), qui est nécessaire pour acheminer correctement le trafic vers les serveurs AEM. La valeur doit provenir d’Adobe. Veuillez informer l&#39;Adobe si vous souhaitez un accès direct à l&#39;entrée du CDN de l&#39;Adobe (à bloquer lorsque `X-Edge-Key` n&#39;est pas présent).
 
-Avant d’accepter le trafic en direct, vous devez vérifier auprès du service clientèle d’Adobe que le trafic de bout en bout fonctionne correctement.
+Avant d’accepter le trafic en direct, vous devez vérifier auprès de l’assistance clientèle de l’Adobe que le routage de trafic de bout en bout fonctionne correctement.
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Avant d’accepter le trafic en direct, vous devez vérifier auprès du service 
 
 Les performances peuvent être faibles en raison du saut supplémentaire, bien que les houblons du CDN du client vers le CDN géré AEM sont susceptibles d’être efficaces.
 
-Notez que cette configuration CDN client est prise en charge pour le niveau de publication, mais pas devant le niveau de création.
+Notez que cette configuration CDN client est prise en charge pour la couche Publication, mais pas devant la couche Auteur.
 
 ## En-têtes de géolocalisation {#geo-headers}
 
