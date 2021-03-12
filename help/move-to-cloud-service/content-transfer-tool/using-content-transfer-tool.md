@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 translation-type: tm+mt
-source-git-commit: 7d51252abcc5fe2def9a55c6324bf75479ef449a
+source-git-commit: 23943db6fbdf82a1d1be47e5a8777064b3750a95
 workflow-type: tm+mt
-source-wordcount: '2274'
-ht-degree: 73%
+source-wordcount: '2307'
+ht-degree: 72%
 
 ---
 
@@ -209,6 +209,8 @@ Une fois le processus d’ingestion terminé, vous pouvez utiliser le contenu di
 
 ### Affichage des journaux d’un jeu de migration {#viewing-logs-migration-set}
 
+Une fois chaque étape terminée (extraction et assimilation), vérifiez les journaux et recherchez les erreurs.  Toute erreur doit être corrigée immédiatement soit en traitant les problèmes signalés, soit en contactant l&#39;Adobe.
+
 Vous pouvez afficher les journaux d’un jeu de migration existant à l’aide de la page *Overview*.
 Suivez les étapes ci-dessous :
 
@@ -268,6 +270,7 @@ java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO
 Pour plus d’informations, voir [Fichier jar exécutable Oak](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run).
 
 Les fichiers créés dans *OUT_DIR*, spécifiés ci-dessus pour assurer la cohérence, peuvent ensuite être vérifiés pour détecter les chemins manquants de binaires et les actions appropriées mises en œuvre (restauration à partir d’une sauvegarde, suppression des chemins, réindexation, etc.).
+
 
 ### Comportement de l’interface utilisateur {#ui-behavior}
 
