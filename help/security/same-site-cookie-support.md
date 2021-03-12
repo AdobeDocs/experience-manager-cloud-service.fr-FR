@@ -2,9 +2,9 @@
 title: Prise en charge des mêmes cookies de site pour Adobe Experience Manager en tant que Cloud Service
 description: Prise en charge des mêmes cookies de site pour Adobe Experience Manager en tant que Cloud Service
 translation-type: tm+mt
-source-git-commit: 4f25aa54bd40644912e0e430a81f1a17d545e3f8
+source-git-commit: 7195709a96422eb701722ef6b398d6577e080058
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Prise en charge des mêmes cookies de site pour Adobe Experience Manager en tant que Cloud Service {#same-site-cookie-support-for-adobe-experience-manager-as-a-cloud-service}
 
-Depuis la version 80, Chrome et Safari ultérieur, a introduit un nouveau modèle de sécurité des cookies. Ce mode est conçu pour introduire des contrôles de sécurité sur la disponibilité des cookies sur les sites tiers, par le biais d&#39;un paramètre appelé `SameSite`. Pour plus d&#39;informations, consultez cet [article](https://web.dev/samesite-cookies-explained/).
+Depuis la version 80, Chrome et Safari ultérieur, a introduit un nouveau modèle de sécurité des cookies. Ce mode est conçu pour introduire des contrôles de sécurité sur la disponibilité des cookies aux sites tiers, par le biais d&#39;un paramètre appelé `SameSite`. Pour plus d&#39;informations, consultez cet [article](https://web.dev/samesite-cookies-explained/).
 
 La valeur par défaut de ce paramètre (`SameSite=Lax`) peut entraîner l’échec de l’authentification entre les instances ou services AEM. Cela est dû au fait que les domaines ou les structures d’URL de ces services peuvent ne pas être soumis aux contraintes de cette stratégie de cookies.
 
