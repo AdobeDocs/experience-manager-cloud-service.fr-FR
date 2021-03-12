@@ -2,7 +2,7 @@
 title: Prise en charge des mêmes cookies de site pour Adobe Experience Manager en tant que Cloud Service
 description: Prise en charge des cookies du site ISame pour Adobe Experience Manager en tant que Cloud Service
 translation-type: tm+mt
-source-git-commit: d9a7836034134fac91529a1996c8f05a48a5f4fd
+source-git-commit: 24f26a5cc77158ea20a09b1f40cf3d849a70591f
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 0%
@@ -26,5 +26,5 @@ Pour ce faire, procédez comme suit :
 1. Définissez l’attribut **MêmeSite pour le cookie de jeton de connexion** sur `None`, comme illustré dans l’image ci-dessous.
    ![samesite](/help/security/assets/samesite1.png)
 1. Cliquez sur Enregistrer
-1. Générez les configurations de format JSON pour ce paramètre particulier en suivant les étapes décrites dans la section [Génération de configurations OSGi à l’aide de l’AEM SDK Quickstart](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configuratuions-using-the-aem-sdk-quickstart)
+1. Générez les configurations de format JSON pour ce paramètre particulier en suivant les étapes décrites dans la section [Génération de configurations OSGi à l’aide de l’AEM SDK Quickstart](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)
 1. Appliquez les paramètres en suivant les étapes décrites dans le document [Cloud Manager API Format for Setting Properties](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) OSGi.
