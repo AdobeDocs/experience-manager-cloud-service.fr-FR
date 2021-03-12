@@ -2,10 +2,10 @@
 title: Réseau de diffusion de contenu dans AEM as a Cloud Service
 description: Réseau de diffusion de contenu dans AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 852a4742a17065b9d38bd78d1e68a92854001842
+source-git-commit: 6c9a0779cfb9c3c2088a17e67437c76b589276f0
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 44%
+source-wordcount: '696'
+ht-degree: 41%
 
 ---
 
@@ -51,6 +51,10 @@ Instructions de configuration :
 1. Définissez `X-Edge-Key` ou `X-AEM-Edge-Key` (si votre réseau de diffusion de contenu efface X-Edge-*), qui est nécessaire pour acheminer correctement le trafic vers les serveurs AEM. La valeur doit provenir d’Adobe. Veuillez informer l&#39;Adobe si vous souhaitez un accès direct à l&#39;entrée du CDN de l&#39;Adobe (à bloquer lorsque `X-Edge-Key` n&#39;est pas présent).
 
 Avant d’accepter le trafic en direct, vous devez vérifier auprès du service clientèle d’Adobe que le trafic de bout en bout fonctionne correctement.
+
+>[!NOTE]
+>
+>Les clients qui gèrent leur propre CDN doivent garantir l’intégrité des en-têtes envoyés à AEM CDN. Par exemple, il est recommandé aux clients d’effacer tous les en-têtes `X-Forwarded-*` et de les définir sur des valeurs connues et contrôlées. Par exemple, `X-Forwarded-For` doit contenir l’adresse IP du client, tandis que `X-Forwarded-Host` doit contenir l’hôte du site.
 
 Les performances peuvent être faibles en raison du saut supplémentaire, bien que les houblons du CDN du client vers le CDN géré AEM sont susceptibles d’être efficaces.
 
