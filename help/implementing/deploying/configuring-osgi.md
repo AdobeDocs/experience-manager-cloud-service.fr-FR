@@ -2,7 +2,7 @@
 title: Configuration d’OSGi pour AEM as a Cloud Service
 description: 'Configuration d’OSGi à l’aide de valeurs secrètes et spécifiques aux environnements '
 translation-type: tm+mt
-source-git-commit: a04935b3b71cff9f5f0fbc85b4d3db4dd96a28fc
+source-git-commit: 24f26a5cc77158ea20a09b1f40cf3d849a70591f
 workflow-type: tm+mt
 source-wordcount: '2737'
 ht-degree: 100%
@@ -180,7 +180,7 @@ Notez que les noms des fichiers de configuration OSGi d’usine appliquent la co
 1. Enregistrez les modifications dans le nouveau fichier `.cfg.json`.
 1. Ajoutez et validez votre nouveau fichier de configuration OSGi sur Git.
 
-### Génération de configurations OSGi à l’aide de l’environnement d’exécution Quickstart du SDK AEM  {#generating-osgi-configuratuions-using-the-aem-sdk-quickstart}
+### Génération de configurations OSGi à l’aide de l’environnement d’exécution Quickstart du SDK AEM  {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
 
 Il est possible d’utiliser la console web AEM de l’environnement d’exécution Quickstart Jar du SDK AEM pour configurer les composants OSGi et exporter les configurations OSGi au format JSON. La console facilite la configuration des composants OSGi fournis par AEM dont les propriétés OSGi et leurs formats de valeurs ne sont pas nécessairement bien maîtrisés par le développeur chargé de définir les configurations OSGi du projet AEM. Notez que l’utilisation de l’interface utilisateur de configuration de la console web AEM crée des fichiers `.cfg.json` dans le référentiel. Vous devez garder cela à l’esprit afin d’éviter tout comportement inattendu au cours du développement local, si les configurations OSGi définies par le projet AEM diffèrent de celles générées.
 
