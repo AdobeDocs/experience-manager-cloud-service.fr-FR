@@ -103,7 +103,7 @@ Voir [Affichage de l’environnement](/help/implementing/cloud-manager/manage-en
 
 ## Outil de transfert de contenu {#content-transfer-tool}
 
-Suivez cette section pour découvrir les nouveautés et les mises à jour de l’[outil de transfert de contenu](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) version 1.1.12.
+Consultez cette section pour découvrir les nouveautés et les mises à jour de l’[outil de transfert de contenu](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) version 1.1.12.
 
 ### Nouveautés {#what-is-new-ctt}
 
