@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: d843182585a269b5ebb24cc31679b77fb6b6d697
 workflow-type: tm+mt
 source-wordcount: '3720'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -318,16 +318,16 @@ Il existe de nombreuses configurations dans AEM. Vous pouvez facilement recherch
 
 ### Espaces réservés de composant {#component-placeholders}
 
-Les composants doivent toujours générer du code HTML visible par l’auteur, même si le composant ne comporte aucun contenu. Sinon, il peut disparaître visuellement de l’interface de l’éditeur, ce qui le rend techniquement présent mais invisible sur la page et dans l’éditeur. Dans ce cas, les auteurs ne pourront pas sélectionner et interagir avec le composant vide.
+Les composants doivent toujours générer du code HTML visible par l’auteur, même si le composant ne comporte aucun contenu, sans quoi il pourrait disparaître visuellement de l’interface de l’éditeur, ce qui le rend techniquement présent, mais invisible sur la page et dans l’éditeur. Dans ce cas, les auteurs ne pourraient pas sélectionner ce composant vide ni interagir avec lui.
 
-Pour cette raison, les composants doivent générer un espace réservé tant qu’ils n’affichent pas de sortie visible lorsque la page est rendue dans l’éditeur de page (lorsque le mode WCM est `edit` ou `preview`).
-L’annotation HTML type d’un espace réservé est la suivante :
+Pour cette raison, les composants doivent générer un espace réservé tant qu’ils n’affichent pas de sortie visible lorsque la page est rendue dans l’éditeur de page (lorsque le WCM est en mode `edit` ou `preview`).
+L’annotation HTML type d’un espace réservé est la suivante :
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="Component Name"></div>
 ```
 
-Le script HTML type qui effectue le rendu du code HTML d’espace réservé ci-dessus est le suivant :
+Le script HTL type pour effectuer le rendu du code HTML d’espace réservé ci-dessus est le suivant :
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="${component.properties.jcr:title}"
@@ -336,9 +336,9 @@ Le script HTML type qui effectue le rendu du code HTML d’espace réservé ci-d
 
 Dans l’exemple précédent, `isEmpty` est une variable vraie uniquement lorsque le composant n’a aucun contenu et est invisible pour l’auteur.
 
-Pour éviter la répétition, l&#39;Adobe recommande que les implémenteurs des composants utilisent un modèle HTML pour ces espaces réservés, [comme celui fourni par les composants principaux.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+Pour éviter la répétition, Adobe recommande que les implémenteurs des composants utilisent un modèle HTL pour ces espaces réservés, [comme celui fourni par les composants principaux.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
 
-L’utilisation du modèle dans le lien précédent se fait ensuite avec la ligne HTML suivante :
+L’utilisation du modèle dans le lien précédent se fait ensuite grâce à la ligne HTL suivante :
 
 ```HTML
 <sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
@@ -347,7 +347,7 @@ L’utilisation du modèle dans le lien précédent se fait ensuite avec la lign
 
 Dans l’exemple précédent, `model.text` est la variable qui est vraie uniquement lorsque le contenu comporte du contenu et est visible.
 
-Vous trouverez un exemple d&#39;utilisation de ce modèle dans les composants principaux, [tels que dans le composant Titre.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
+Vous trouverez un exemple d’utilisation de ce modèle dans les composants principaux, [tels que dans le composant Titre.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
 
 ### Configuration avec des nœuds enfants cq:EditConfig {#configuring-with-cq-editconfig-child-nodes}
 
@@ -441,11 +441,11 @@ La validation du champ dans l’IU Granite et les widgets de l’IU Granite est 
 
 ### Détection de la disponibilité de la boîte de dialogue {#dialog-ready}
 
-Si vous disposez d’un script JavaScript personnalisé qui doit être exécuté uniquement lorsque la boîte de dialogue est disponible et prête, vous devez écouter le événement `dialog-ready`.
+Si vous utilisez un script JavaScript personnalisé qui doit être exécuté uniquement lorsque la boîte de dialogue est disponible et prête, vous devez écouter l’événement `dialog-ready`.
 
-Ce événement est déclenché chaque fois que la boîte de dialogue se charge (ou se recharge) et est prêt à l’emploi, ce qui signifie chaque fois qu’il y a une modification (création/mise à jour) dans le DOM de la boîte de dialogue.
+Ce événement est déclenché chaque fois que la boîte de dialogue se charge (ou se recharge) et est prête à l’emploi, soit chaque fois qu’une modification (création ou mise à jour) a lieu dans le DOM de la boîte de dialogue.
 
-`dialog-ready` peut être utilisé pour associer du code personnalisé JavaScript qui effectue des personnalisations sur les champs d’une boîte de dialogue ou de tâches similaires.
+`dialog-ready` peut être utilisé pour associer du code personnalisé JavaScript qui effectue des personnalisations dans les champs d’une boîte de dialogue ou pour des tâches similaires.
 
 ## Comportement de la prévisualisation {#preview-behavior}
 
