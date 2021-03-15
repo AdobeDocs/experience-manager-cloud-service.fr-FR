@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: f11cb3b56f51046779300626d1deb037dd687309
 workflow-type: tm+mt
 source-wordcount: '105'
-ht-degree: 22%
+ht-degree: 100%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 22%
 L’action de mise à jour peut être réalisée à deux emplacements différents dans l’interface utilisateur :
 
 1. Accédez à la page **Paramètres de domaine** à partir de l’écran Environnements.
-1. Vous pouvez également accéder à la page Détails de l&#39;Environnement spécifique à partir de l&#39;écran **Environnements** et accéder à la table Noms de domaine.
+1. Vous pouvez également accéder à la page Détails de l’environnement spécifique à partir de l’écran **Environnements** et accéder au tableau Noms de domaine.
    >[!NOTE]
-   >Identifiez la ligne où figure le nom de domaine personnalisé que vous souhaitez vue ou mettre à jour.
+   >Identifiez la ligne où figure le nom de domaine personnalisé que vous souhaitez afficher ou mettre à jour.
 1. Sélectionnez le menu **...** tout à fait à droite de la ligne.
-1. Sélectionnez l&#39;option **Vue et mise à jour**.
+1. Sélectionnez l’option **Afficher et mettre à jour**.
 1. Apportez les modifications nécessaires au certificat SSL et confirmez votre envoi.
