@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
 workflow-type: tm+mt
 source-wordcount: '2284'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -177,7 +177,7 @@ Sur demande, AEM as a Cloud Service fournira une adresse IP statique, dédiée, 
 
 ### Avantages {#benefits}
 
-Cette adresse IP dédiée peut améliorer la sécurité lors de l’intégration avec les fournisseurs SaaS (comme un fournisseur de solutions de gestion de la relation client) ou d’autres intégrations en dehors d’AEM as a Cloud Service qui offrent une liste autorisée d’adresses IP. L’ajout de l’adresse IP dédiée à la liste autorisée garantit que seul le trafic provenant de l’instance AEM as a Cloud Service du client sera autorisé à circuler dans le service externe. Cela s’ajoute au trafic provenant de toute autre adresse IP autorisée.
+Cette adresse IP dédiée peut améliorer la sécurité lors de l’intégration avec les fournisseurs SaaS (comme un fournisseur de solutions de gestion de la relation client) ou d’autres intégrations en dehors d’AEM as a Cloud Service qui offrent une liste d’adresses IP autorisées. L’ajout de l’adresse IP dédiée à la liste autorisée garantit que seul le trafic provenant de l’instance AEM as a Cloud Service du client sera autorisé à circuler dans le service externe. Cela s’ajoute au trafic provenant de toute autre adresse IP autorisée.
 
 Si la fonction d’adresse IP dédiée n’est pas activée, le trafic provenant d’AEM as a Cloud Service passe par un jeu d’adresses IP partagées avec d’autres clients.
 
@@ -222,8 +222,8 @@ AEM as a Cloud Service exige que le courrier sortant soit chiffré. Les sections
 Par défaut, les emails sortants sont désactivés. Pour les activer, soumettez un ticket d’assistance contenant :
 
 1. Le nom de domaine complet du serveur de messagerie (par exemple, `smtp.sendgrid.net`).
-1. Le port à utiliser. Il doit s&#39;agir du port 465 si le serveur de messagerie l&#39;assure, sinon du port 587. Notez que le port 587 ne peut être utilisé que si le serveur de messagerie requiert et applique TLS sur ce port.
-1. ID de programme et ID d&#39;environnement pour les environnements qu&#39;ils souhaitent envoyer par courrier électronique
+1. Le port à utiliser. Il doit s’agir du port 465 s’il est pris en charge par le serveur de messagerie, sinon le port 587. Notez que le port 587 ne peut être utilisé que si le serveur de messagerie nécessite et applique le protocole TLS sur ce port.
+1. L’identifiant de programme et l’identifiant d’environnement pour les environnements à partir desquels l’envoi d’emails est souhaité.
 1. Une indication précisant si l’accès SMTP est nécessaire pour l’auteur, la publication ou les deux.
 
 ### Envoi d’emails {#sending-emails}
@@ -240,7 +240,7 @@ AEM CS exige que le courrier soit envoyé par le biais du port 465. Si un serve
 
 Dans AEM, les emails doivent être envoyés à l’aide du [service de messagerie Day CQ OSGi](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
-Voir la [documentation d’AEM 6.5](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/operations/notification.html) pour plus d’informations sur la configuration des paramètres des emails. Pour l&#39;AEM en tant que Cloud Service, les ajustements suivants doivent être apportés au service `com.day.cq.mailer.DefaultMailService OSGI` :
+Voir la [documentation d’AEM 6.5](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/operations/notification.html) pour plus d’informations sur la configuration des paramètres des emails. Pour AEM as a Cloud Service, les ajustements suivants doivent être apportés au service `com.day.cq.mailer.DefaultMailService OSGI` :
 
 Si le port 465 a été demandé :
 
@@ -252,4 +252,4 @@ Si le port 587 a été demandé (autorisé seulement si le serveur de messageri
 * Définissez `smtp.port` sur `587`.
 * Définissez `smtp.ssl` sur `false`.
 
-La propriété `smtp.starttls` sera automatiquement définie par AEM en tant que Cloud Service au moment de l&#39;exécution sur une valeur appropriée. Par conséquent, si `smtp.tls` est défini sur true, `smtp.startls` est ignoré. Si `smtp.ssl` est défini sur false, `smtp.starttls` est défini sur true. Ceci indépendamment des valeurs `smtp.starttls` définies dans votre configuration OSGI.
+La propriété `smtp.starttls` sera automatiquement définie par AEM as a Cloud Service au moment de son exécution sur une valeur appropriée. Par conséquent, si `smtp.tls` est défini sur true, `smtp.startls` est ignoré. Si `smtp.ssl` est défini sur false, `smtp.starttls` est défini sur true. Cette règle s’applique indépendamment des valeurs de `smtp.starttls` définies dans votre configuration OSGI.
