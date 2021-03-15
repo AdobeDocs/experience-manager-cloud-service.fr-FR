@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: d37342feb794b9f1385bb5edd38b2d9bb6e7dff9
 workflow-type: tm+mt
 source-wordcount: '468'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Un architecte de l’information ne réaliserait ces tâches qu’occasionnellem
 
    ![Le dossier de modèles](../assets/models-folder.png)
 1. Appuyez ou cliquez sur **Créer**.
-1. Indiquez un **titre du modèle**, **balises** et **description**. Vous pouvez également sélectionner/désélectionner **Activer le modèle** pour contrôler si le modèle est immédiatement activé lors de sa création.
+1. Définissez le **Titre du modèle**, les **Balises** et la **Description**. Vous pouvez également sélectionner/désélectionner l’option **Activer le modèle** pour contrôler si le modèle est immédiatement activé lors de sa création.
 
    ![Création d’un modèle](../assets/models-create.png)
 1. Dans la fenêtre de confirmation, appuyez ou cliquez sur **Ouvrir** pour configurer votre modèle.
@@ -45,7 +45,7 @@ Un architecte de l’information ne réaliserait ces tâches qu’occasionnellem
 1. Lorsque vous avez fini de créer votre modèle, appuyez ou cliquez sur **Enregistrer**. Le modèle que vous venez de créer est enregistré en mode **Brouillon**.
 
    ![Modèle en mode Brouillon](../assets/models-draft.png)
-1. Le modèle doit être activé pour pouvoir l&#39;utiliser (s&#39;il n&#39;est pas déjà activé). Sélectionnez le modèle que vous venez de créer, puis appuyez ou cliquez sur **Activer**.
+1. Le modèle doit être activé pour pouvoir l’utiliser (s’il ne l’est pas déjà). Sélectionnez le modèle que vous venez de créer, puis appuyez ou cliquez sur **Activer**.
 
    ![Activation du modèle](../assets/models-enable.png)
 1. Confirmez l’activation du modèle en appuyant ou en cliquant sur **Activer** dans la boîte de dialogue de confirmation.
