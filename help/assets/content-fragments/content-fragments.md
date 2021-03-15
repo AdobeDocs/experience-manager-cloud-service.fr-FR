@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 6f8264ae53b30afac0cc523c312aea8918e5eafa
 workflow-type: tm+mt
 source-wordcount: '2027'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Utilisation de fragments de contenu{#working-with-content-fragments}
+# Utilisation de fragments de contenu {#working-with-content-fragments}
 
 Les fragments de contenu d’Adobe Experience Manager (AEM) as a Cloud Service vous permettent de concevoir, créer, organiser et [publier du contenu indépendant des pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Ils permettent de préparer le contenu prêt à être utilisé dans des emplacements multiples/sur plusieurs canaux.
 
@@ -37,7 +37,7 @@ Cette page et les suivantes portent sur les tâches de création, de configurati
 
 * [Activation de la fonctionnalité de fragments de contenu pour votre instance](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) : activation, création et définition de vos modèles.
-* [Gestion des fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md) : créez des fragments de contenu, puis modifiez-les, publiez-les et référencez-les.
+* [Gestion des fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md)  : créez des fragments de contenu, puis modifiez-les, publiez-les et référencez-les.
 * [Variations – création de fragments de contenu](/help/assets/content-fragments/content-fragments-variations.md) : créez le contenu du fragment et créez des variantes du maître.
 * [Texte (Markdown)](/help/assets/content-fragments/content-fragments-markdown.md) : utilisation de la syntaxe Markdown pour votre fragment.
 * [Utilisation du contenu associé](/help/assets/content-fragments/content-fragments-assoc-content.md) : ajout de contenu associé.
@@ -111,7 +111,7 @@ Associé aux fonctionnalités d’exportation JSON des composants de base AEM, 
 
 >[!NOTE]
 >
->AEM prend également en charge la traduction des fragments de contenu. Voir [Traduction des actifs](/help/assets/translate-assets.md) pour plus d’informations.
+>AEM prend également en charge la traduction des fragments de contenu. Consultez [Traduction des actifs](/help/assets/translate-assets.md) pour plus d’informations.
 
 ## Type de contenu {#content-type}
 
@@ -286,7 +286,7 @@ Pour utiliser vos fragments de contenu pour la création de pages, vous avez ég
    * Les fragments ont besoin d’un ou de plusieurs composants dédiés pour définir la mise en page, ainsi que diffuser tous les éléments/variations et le contenu associé.
    * Faire glisser un fragment sur une page en mode Création permet d’associer automatiquement le composant requis.
 
-## Cas d’utilisation  {#example-usage}
+## Exemple d’utilisation  {#example-usage}
 
 Un fragment, avec ses éléments et ses variations, peut être utilisé afin de créer du contenu homogène sur plusieurs canaux. Lors de la conception d’un fragment, vous devez prendre en compte où vous utiliserez chacun de ses éléments.
 
@@ -294,10 +294,10 @@ Un fragment, avec ses éléments et ses variations, peut être utilisé afin de 
 
 Les exemples du [site WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) sont fournis pour vous aider à en savoir plus sur AEM as a Cloud Service.
 
-Le projet WKND comprend :
+Le projet WKND comprend :
 
-* Modèles de fragments de contenu disponibles sous :
+* les modèles de fragments de contenu disponibles sous :
    `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
-* Fragments de contenu (et autres contenus) disponibles sous :
+* les fragments de contenu (et autres contenus) disponibles sous :
    `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
