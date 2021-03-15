@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
 source-wordcount: '151'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Un utilisateur doit avoir le rôle Propriétaire de l’entreprise ou Responsabl
 
 1. Sélectionnez le menu **...** à l’extrémité droite de la ligne.
 
-1. Sélectionnez l&#39;option **Supprimer**.
+1. Sélectionnez l’option **Supprimer**.
    ![](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
 
 1. Confirmez votre envoi.
@@ -30,8 +30,8 @@ Un utilisateur doit avoir le rôle Propriétaire de l’entreprise ou Responsabl
 
 ## Suppression d’un nom de domaine personnalisé d’un environnement spécifique {#delete-cdn-specific}
 
-1. Dans la page **Environnements**, accédez à l’écran des détails de l’Environnement de l’environnement d’intérêt.
+1. Sur la page **Environnements**, accédez à l’écran des détails de l’environnement qui vous intéresse.
 1. Dans le tableau Noms de domaines, identifiez la ligne où figure le nom de domaine personnalisé que vous souhaitez supprimer.
-1. Sélectionnez le menu **...** tout à fait à droite de la ligne.
+1. Sélectionnez le menu **...** à l’extrémité droite de la ligne.
 1. Sélectionnez l’option Supprimer.
 1. Confirmez votre envoi.
