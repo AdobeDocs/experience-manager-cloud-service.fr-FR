@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 6a60238b13d66ea2705063670295a62e3cbf6255
 workflow-type: tm+mt
 source-wordcount: '1707'
-ht-degree: 69%
+ht-degree: 97%
 
 ---
 
@@ -14,11 +14,11 @@ ht-degree: 69%
 
 >[!NOTE]
 >
->Cette page doit être lue avec :
+>Il est préférable de lire cette page à la lumière des sections suivantes :
 >
 >* [Fragments de contenu](/help/assets/content-fragments/content-fragments.md)
 >* [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
->* [API AEM GraphQL à utiliser avec les fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [API GraphQL d’AEM à utiliser avec des fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
 Pour prendre en main les requêtes GraphQL et leur fonctionnement avec les fragments de contenu AEM, il peut être utile de consulter quelques exemples pratiques.
@@ -37,42 +37,42 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
    * Utilisez le nom du modèle ; p. ex. city.
 
 * Si vous prévoyez une liste de résultats :
-   * ajouter `List` au nom du modèle ; par exemple, `cityList`
-   * Voir [Exemple de Requête - Toutes les informations sur toutes les villes](#sample-all-information-all-cities)
+   * Ajoutez `List` au nom du modèle ; par exemple, `cityList`
+   * Voir [Exemple de requête – Toutes les informations sur toutes les villes ](#sample-all-information-all-cities)
 
 * Si vous souhaitez utiliser un OU logique :
    * Utilisez ` _logOp: OR`
-   * Voir [Exemple de Requête - Toutes les personnes qui portent le nom &quot;Tâches&quot; ou &quot;Smith&quot;](#sample-all-persons-jobs-smith)
+   * Voir [Exemple de requête – Toutes les personnes qui portent le nom « Jobs » ou « Smith »](#sample-all-persons-jobs-smith)
 
 * L’opérateur logique ET existe également, mais est (souvent) implicite
 
 * Vous pouvez appliquer des requêtes aux noms de champ qui correspondent aux champs du modèle de fragment de contenu.
-   * Voir [Exemple de Requête - Détails complets du PDG et des employés d&#39;une Société](#sample-full-details-company-ceos-employees)
+   * Voir [Exemple de requête – Détails complets relatifs au PDG et aux employés d’une entreprise ](#sample-full-details-company-ceos-employees)
 
 * Outre les champs de votre modèle, il existe certains champs générés par le système (précédés d’un trait de soulignement) :
 
    * Pour le contenu :
 
       * `_locale` : pour afficher la langue ; basé sur Language Manager
-         * Voir [Exemple de Requête pour plusieurs fragments de contenu d’un paramètre régional donné](#sample-wknd-multiple-fragments-given-locale)
+         * Voir [Exemple de requête pour plusieurs fragments de contenu d’un paramètre régional donné ](#sample-wknd-multiple-fragments-given-locale)
       * `_metadata` : pour afficher les métadonnées de votre fragment
          * Voir [Modèle de recherche de métadonnées – Répertorier les métadonnées des prix intitulés GB](#sample-metadata-awards-gb)
-      * `_model` : autoriser l’interrogation d’un modèle de fragment de contenu (chemin et titre)
-         * Voir [Exemple de Requête pour un modèle de fragment de contenu à partir d&#39;un modèle](#sample-wknd-content-fragment-model-from-model)
+      * `_model` : autoriser l’interrogation d’un modèle de fragment de contenu (chemin et titre)
+         * Voir [Exemple de requête pour un modèle de fragment de contenu à partir d’un modèle](#sample-wknd-content-fragment-model-from-model)
       * `_path` : chemin d’accès à votre fragment de contenu dans le référentiel
-         * Voir [Exemple de Requête - Un fragment de ville spécifique unique](#sample-single-specific-city-fragment)
+         * Voir [Exemple de requête – Un fragment de ville unique et spécifique](#sample-single-specific-city-fragment)
       * `_reference` : pour afficher les références ; y compris les références intégrées dans l’éditeur de texte enrichi
-         * Voir [Exemple de Requête pour plusieurs fragments de contenu avec des références prérécupérées](#sample-wknd-multiple-fragments-prefetched-references)
+         * Voir [Exemple de requête pour plusieurs fragments de contenu avec des références préalablement récupérées ](#sample-wknd-multiple-fragments-prefetched-references)
       * `_variation` : pour afficher des variantes spécifiques dans votre fragment de contenu
-         * Voir [Modèle de requête – Toutes les villes avec une variante nommée](#sample-cities-named-variation)
+         * Voir [Exemple de requête – Toutes les villes avec une variante nommée](#sample-cities-named-variation)
    * Et les opérations :
 
-      * `_operator` : appliquer des opérateurs spécifiques ;  `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`
-         * Voir [Exemple de Requête - Toutes les personnes qui n&#39;ont pas de nom &quot;Tâches&quot;](#sample-all-persons-not-jobs)
+      * `_operator` : pour appliquer des opérateurs spécifiques ; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`,
+         * Voir [Exemple de requête – Toutes les personnes qui ne portent pas le nom « Jobs »](#sample-all-persons-not-jobs)
       * `_apply` : pour appliquer des conditions spécifiques ; par exemple `AT_LEAST_ONCE`
-         * Voir [Exemple de Requête - Filtrer sur un tableau avec un élément qui doit se produire au moins une fois](#sample-array-item-occur-at-least-once)
+         * Voir [Exemple de requête : effectuer un filtrage sur un tableau avec un élément qui doit se produire au moins une fois ](#sample-array-item-occur-at-least-once)
       * `_ignoreCase` : pour ignorer la casse lors de l’application de la requête
-         * Voir [Exemple de Requête - Toutes les villes dont le nom contient un SAN, indépendamment de la casse](#sample-all-cities-san-ignore-case)
+         * Voir [Exemple de requête : toutes les villes dont le nom contient SAN, indépendamment de la casse ](#sample-all-cities-san-ignore-case)
 
 
 
@@ -85,25 +85,25 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 * Les types d’union GraphQL sont pris en charge :
 
    * Utilisez `... on`
-      * Voir [Exemple de Requête pour un fragment de contenu d&#39;un modèle spécifique avec une référence de contenu](#sample-wknd-fragment-specific-model-content-reference)
+      * Voir [Exemple de requête pour un fragment de contenu d’un modèle spécifique avec une référence de contenu ](#sample-wknd-fragment-specific-model-content-reference)
 
 ## GraphQL – Exemples de requêtes utilisant l’exemple de structure de fragment de contenu {#graphql-sample-queries-sample-content-fragment-structure}
 
-Consultez ces exemples de requêtes pour obtenir des illustrations de requêtes de création, ainsi que des exemples de résultats.
+Consultez ces exemples de requêtes pour accéder à des illustrations de création de requêtes, ainsi qu’à des exemples de résultats.
 
 >[!NOTE]
 >
->Selon votre instance, vous pouvez accéder directement à l’interface [Graph *i* QL incluse avec l’API AEM GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) pour envoyer et tester des requêtes.
+>Selon votre instance, vous pouvez accéder directement à l’interface [Graph *i* QL incluse avec l’API GraphQL d’AEM](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) pour envoyer et tester des requêtes.
 >
 >Par exemple : `http://localhost:4502/content/graphiql.html`
 
 >[!NOTE]
 >
->Les exemples de requêtes sont basés sur la [structure d’exemple de fragment de contenu à utiliser avec GraphQL](#content-fragment-structure-graphql)
+>Les exemples de requêtes sont basés sur l’[exemple de structure de fragment de contenu à utiliser avec GraphQL](#content-fragment-structure-graphql)
 
 ### Exemple de requête – Tous les schémas et types de données disponibles {#sample-all-schemes-datatypes}
 
-Toutes les `types` seront renvoyées pour tous les schémas disponibles.
+Tous les `types` seront renvoyés pour tous les schémas disponibles.
 
 **Exemple de requête**
 
@@ -327,7 +327,7 @@ query {
 }
 ```
 
-### Exemple de Requête - Un fragment de ville spécifique {#sample-single-specific-city-fragment}
+### Exemple de requête – Un fragment de ville unique et spécifique {#sample-single-specific-city-fragment}
 
 Il s’agit d’une requête de renvoi des détails d’une entrée de fragment unique à un emplacement spécifique du référentiel.
 
@@ -1104,12 +1104,12 @@ query {
 
 ## Exemples de requêtes utilisant le projet WKND {#sample-queries-using-wknd-project}
 
-Ces exemples de requêtes sont basés sur le projet WKND. Il s&#39;agit :
+Ces exemples de requêtes sont basés sur le projet WKND. Il s’agit des éléments suivants :
 
-* Modèles de fragments de contenu disponibles sous :
+* Modèles de fragments de contenu disponibles sous :
    `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
-* Fragments de contenu (et autres contenus) disponibles sous :
+* Fragments de contenu (et autres contenus) disponibles sous :
    `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
 >[!NOTE]
@@ -1118,10 +1118,10 @@ Ces exemples de requêtes sont basés sur le projet WKND. Il s&#39;agit :
 
 ### Exemple de requête pour tous les fragments de contenu d’un modèle donné avec les propriétés spécifiées {#sample-wknd-all-model-properties}
 
-Cet exemple de requête applique une interrogation :
+Cet exemple de requête interroge :
 
-* À tous les fragments de contenu de type `article`
-* Avec les propriétés `path` et `author`.
+* à la recherche de tous les fragments de contenu de type `article` ;
+* avec les propriétés `path` et `author`.
 
 **Exemple de requête**
 
@@ -1138,9 +1138,9 @@ Cet exemple de requête applique une interrogation :
 
 ### Exemple de requête de métadonnées {#sample-wknd-metadata}
 
-Cette requête applique une interrogation :
+Cette requête interroge :
 
-* À tous les fragments de contenu de type `adventure`
+* à la recherche de tous les fragments de contenu de type `adventure` ;
 * metadata
 
 **Exemple de requête**
@@ -1199,10 +1199,10 @@ Cette requête applique une interrogation :
 
 ### Exemple de requête pour un fragment de contenu unique d’un modèle donné {#sample-wknd-single-content-fragment-of-given-model}
 
-Cet exemple de requête applique une interrogation :
+Cet exemple de requête interroge :
 
-* pour un fragment de contenu unique de type `article` à un chemin spécifique
-   * dans ce cas, tous les formats de contenu :
+* à la recherche d’un fragment de contenu unique de type `article` avec un chemin spécifique ;
+   * parmi cela, tous les formats de contenu :
       * HTML
       * Texte (Markdown)
       * Texte brut
@@ -1227,12 +1227,12 @@ Cet exemple de requête applique une interrogation :
 }
 ```
 
-### Exemple de Requête pour un modèle de fragment de contenu à partir d&#39;un modèle {#sample-wknd-content-fragment-model-from-model}
+### Exemple de requête pour un modèle de fragment de contenu à partir d’un modèle {#sample-wknd-content-fragment-model-from-model}
 
-Cet exemple de requête applique une interrogation :
+Cet exemple de requête interroge :
 
-* pour un seul fragment de contenu
-   * détails du modèle de fragment de contenu sous-jacent
+* à la recherche d’un seul fragment de contenu ;
+   * les détails du modèle de fragment de contenu sous-jacent.
 
 **Exemple de requête**
 
@@ -1253,10 +1253,10 @@ Cet exemple de requête applique une interrogation :
 
 ### Exemple de Requête pour un fragment de contenu imbriqué – Type de modèle unique {#sample-wknd-nested-fragment-single-model}
 
-Cette requête applique une interrogation :
+Cette requête interroge :
 
-* pour un fragment de contenu unique de type `article` à un chemin spécifique
-   * dans cette zone, le chemin d’accès et l’auteur du fragment référencé (imbriqué)
+* à la recherche d’un fragment de contenu unique de type `article` avec un chemin spécifique ;
+   * parmi cela, le chemin d’accès et l’auteur du fragment référencé (imbriqué).
 
 >[!NOTE]
 >
@@ -1281,14 +1281,14 @@ Cette requête applique une interrogation :
 
 ### Exemple de Requête pour un fragment de contenu imbriqué – Type de modèle multiple {#sample-wknd-nested-fragment-multiple-model}
 
-Cette requête applique une interrogation :
+Cette requête interroge :
 
-* pour plusieurs fragments de contenu de type `bookmark`
-   * avec des références de fragments à d&#39;autres fragments de types de modèles spécifiques `article` et `adventure`
+* à la recherche de différents fragments de contenu de type `bookmark` ;
+   * avec des références de fragments à d’autres fragments de types de modèles spécifiques `article` et `adventure`.
 
 >[!NOTE]
 >
->Le champ `fragments` a le type de données `fragment-reference`, avec les modèles `Article`, `Adventure` sélectionnés.
+>Le champ `fragments` présente le type de données `fragment-reference`, avec les modèles `Article`, `Adventure` sélectionnés.
 
 ```xml
 {
@@ -1309,21 +1309,21 @@ Cette requête applique une interrogation :
 }
 ```
 
-### Exemple de Requête pour un fragment de contenu d&#39;un modèle spécifique avec des références de contenu{#sample-wknd-fragment-specific-model-content-reference}
+### Exemple de requête pour un fragment de contenu d’un modèle spécifique avec des références de contenu {#sample-wknd-fragment-specific-model-content-reference}
 
-Cette requête présente deux saveurs :
+Cette requête possède deux versions :
 
 1. Pour renvoyer toutes les références au contenu.
-1. Pour renvoyer les références de contenu spécifiques de type `attachments`.
+1. Pour renvoyer les références de contenu spécifiques de type `attachments`
 
-Ces requêtes interrogent :
+Ces requêtes interrogent :
 
-* pour plusieurs fragments de contenu de type `bookmark`
-   * avec des références de contenu à d’autres fragments
+* à la recherche de différents fragments de contenu de type `bookmark` ;
+   * avec des références de contenu à d’autres fragments.
 
 #### Exemple de requête pour plusieurs fragments de contenu avec des références préalablement récupérées {#sample-wknd-multiple-fragments-prefetched-references}
 
-La requête suivante renvoie toutes les références de contenu en utilisant `_references` :
+La requête suivante renvoie toutes les références de contenu en utilisant `_references` :
 
 ```xml
 {
@@ -1357,13 +1357,13 @@ La requête suivante renvoie toutes les références de contenu en utilisant `_r
 }
 ```
 
-#### Exemple de Requête pour plusieurs fragments de contenu avec des pièces jointes {#sample-wknd-multiple-fragments-attachments}
+#### Exemple de requête pour plusieurs fragments de contenu avec des éléments annexes préalablement récupérés {#sample-wknd-multiple-fragments-attachments}
 
-La requête suivante renvoie tous les `attachments` - un champ spécifique (sous-groupe) de type `content-reference` :
+La requête suivante renvoie tous les `attachments` – un champ spécifique (sous-groupe) de type `content-reference` :
 
 >[!NOTE]
 >
->Le champ `attachments` a le type de données `content-reference`, avec différents formulaires sélectionnés.
+>Le champ `attachments` présente le type de données `content-reference`, avec différents formulaires sélectionnés.
 
 ```xml
 {
@@ -1398,14 +1398,14 @@ La requête suivante renvoie tous les `attachments` - un champ spécifique (sous
 
 ### Exemple de requête pour un fragment de contenu unique avec référence en ligne RTE {#sample-wknd-single-fragment-rte-inline-reference}
 
-Cette requête applique une interrogation :
+Cette requête interroge :
 
-* pour un fragment de contenu unique de type `bookmark` à un chemin spécifique
-   * à l&#39;intérieur de cela, références intégrées RTE
+* à la recherche d’un fragment de contenu unique de type `bookmark` avec un chemin spécifique ;
+   * à l’intérieur de cela, les références intégrées RTE.
 
 >[!NOTE]
 >
->Les références en ligne RTE sont hydratées dans `_references`.
+>Les références en ligne RTE sont alimentées dans `_references`.
 
 **Exemple de requête**
 
@@ -1444,10 +1444,10 @@ Cette requête applique une interrogation :
 
 ### Exemple de requête pour une variation de fragment de contenu unique d’un modèle donné {#sample-wknd-single-fragment-given-model}
 
-Cette requête applique une interrogation :
+Cette requête interroge :
 
-* pour un fragment de contenu unique de type `article` à un chemin spécifique
-   * dans ce cas, les données se rapportaient à la variation : `variation1`
+* à la recherche d’un fragment de contenu unique de type `article` avec un chemin spécifique ;
+   * à l’intérieur de cela, les données sont liées à la variation : `variation1`.
 
 **Exemple de requête**
 
@@ -1470,9 +1470,9 @@ Cette requête applique une interrogation :
 
 ### Exemple de requête pour une variante nommée de plusieurs fragments de contenu d’un modèle donné {#sample-wknd-variation-multiple-fragment-given-model}
 
-Cette requête applique une interrogation :
+Cette requête interroge :
 
-* pour les fragments de contenu de type `article` avec une variation spécifique : `variation1`
+* à la recherche de fragments de contenu de type `article` avec une variation spécifique : `variation1`
 
 **Exemple de requête**
 
@@ -1495,9 +1495,9 @@ Cette requête applique une interrogation :
 
 ### Exemple de requête pour plusieurs fragments de contenu d’un paramètre régional donné {#sample-wknd-multiple-fragments-given-locale}
 
-Cette requête applique une interrogation :
+Cette requête interroge :
 
-* pour les fragments de contenu de type `article` dans le paramètre régional `fr`
+* à la recherche de fragments de contenu de type `article` dans le paramètre régional `fr`
 
 **Exemple de requête**
 
@@ -1520,7 +1520,7 @@ Cette requête applique une interrogation :
 
 ## Exemple de structure de fragment de contenu (utilisée avec GraphQL) {#content-fragment-structure-graphql}
 
-Les exemples de requêtes sont basés sur la structure suivante, qui utilise :
+Les exemples de requêtes sont basés sur la structure suivante, qui utilise :
 
 * Un ou plusieurs [exemples de modèles de fragments de contenu](#sample-content-fragment-models-schemas) constituent la base des schémas GraphQL
 
