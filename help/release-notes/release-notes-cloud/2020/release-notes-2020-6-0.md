@@ -103,7 +103,7 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 
 * Le lien vers Developer Console directement à partir de Cloud Manager n’affiche pas l’option permettant de mettre en veille/réactiver un environnement de programme Sandbox. Pour résoudre ce problème, une fois dans Developer Console, ajoutez le motif `#release-cm-p1234-e5678` à la fin de l’URL, où *1234* correspond à l’identifiant de programme et *5678* à l’identifiant d’environnement. Ce problème sera traité dans une prochaine version.
 
-## Nouveautés de [!DNL Adobe Experience Manager Assets] {#aem-assets}
+## Nouveautés d’[!DNL Adobe Experience Manager Assets] {#aem-assets}
 
 **Expérience utilisateur assistée pour les balises intelligentes améliorées, optimisée par Adobe Sensei**
 
