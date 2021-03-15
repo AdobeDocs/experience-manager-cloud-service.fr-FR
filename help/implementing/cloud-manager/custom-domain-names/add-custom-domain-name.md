@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 148a1f478aeabea970e46e7e565fccca7db6a7e9
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
@@ -16,13 +16,13 @@ Un utilisateur doit être un propriétaire d’entreprise ou un responsable du d
 
 ## Points importants {#important-considerations}
 
-* Avant d’ajouter un nom de domaine personnalisé, un certificat SSL valide contenant le nom de domaine personnalisé doit être installé sur votre programme. Consultez [Ajouter un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) pour en savoir plus.
+* Avant d’ajouter un nom de domaine personnalisé, un certificat SSL valide contenant le nom de domaine personnalisé doit être installé sur votre programme. Consultez la section [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) pour en savoir plus.
 
-* Les noms de domaine ne peuvent pas être ajoutés aux environnements tant qu&#39;un pipeline en cours d&#39;exécution est attaché à ces environnements.
+* Les noms de domaine ne peuvent pas être ajoutés aux environnements tant qu’un pipeline en cours d’exécution est attaché à ces environnements.
 
 * Il n’est possible d’ajouter qu’un seul nom de domaine à la fois. Toutefois, les domaines ne peuvent pas contenir de caractères génériques. Les domaines personnalisés côté auteur ne sont pas pris en charge.
 
-* Chaque environnement Cloud Manager peut héberger jusqu’à 100 domaines personnalisés par environnement.
+* Chaque environnement Cloud Manager peut héberger jusqu’à 100 domaines personnalisés.
 
 * Le même nom de domaine ne peut pas être utilisé sur plusieurs environnements.
 
@@ -45,28 +45,28 @@ Suivez les étapes ci-dessous pour ajouter un nom de domaine personnalisé à pa
    >[!NOTE]
    >Vous ne devez pas inclure `http://`, `https://` ni d’espace lors de la saisie dans votre domaine.
 
-1. Sélectionnez l’**Environnement** dont le service de publication sera associé au nom de domaine.
+1. Sélectionnez l’**environnement** dont le service de publication sera associé au nom de domaine.
 
-1. Sélectionnez **Domain SSL Certificate** dans la liste déroulante et sélectionnez **Continuer**.
+1. Sélectionnez le **certificat SSL du domaine** dans la liste déroulante et sélectionnez **Continuer**.
 
-1. **La boîte de dialogue Ajouter le** nom de domaine s’affiche. Vous accédez alors à l’écran de vérification du nom de domaine pour votre environnement. Consultez [Ajouter un enregistrement TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) pour en savoir plus.
+1. La boîte de dialogue **Ajouter le nom de domaine** s’affiche. Vous accédez alors à l’écran de vérification du nom de domaine pour votre environnement. Consultez [Ajout d’un enregistrement TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) pour en savoir plus.
 
-   Suivez les instructions fournies pour prouver la propriété du domaine de votre environnement:
+   Suivez les instructions fournies pour prouver la propriété du domaine de votre environnement :
 
 1. Cliquez sur **Créer**.
 1. Le déploiement CDN nécessite un certificat SSL valide et une vérification TXT réussie. Cela est indiqué par l’état **Vérifié et déployé**.
-Accédez à [Vérification de l’état du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour en savoir plus sur les différents états et sur la manière de résoudre le problème.
+Accédez à [Vérification de l’état du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour en savoir plus sur les différents états et sur l’adressage.
 
    >[!NOTE]
    >Le contrôle du DNS peut prendre jusqu’à quelques heures en raison des retards de propagation de DNS. Cloud Manager vérifie la propriété et met à jour l’état visible dans le tableau des paramètres de domaine. Pour plus d’informations, voir Vérification de l’état du nom de domaine.
 
 ## Ajout d’un nom de domaine personnalisé à partir de la page Environnements {#adding-cdn-environments}
 
-1. Accédez à la page Détails des Environnements pour l’environnement d’intérêt.
+1. Accédez à la page Détails de l’environnement pour l’environnement qui vous intéresse.
 
    ![](/help/implementing/cloud-manager/assets/cdn/cdn-create4.png)
 
-1. Utilisez les champs d’entrée situés en haut du tableau Noms de domaine pour envoyer le nom de domaine personnalisé et sélectionnez le certificat SSL dans la liste déroulante. Cliquez sur **+ Ajoute**.
+1. Utilisez les champs d’entrée situés en haut du tableau Noms de domaine pour envoyer le nom de domaine personnalisé et sélectionnez le certificat SSL dans la liste déroulante. Cliquez sur **+ Ajouter**.
 
    ![](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 
@@ -75,19 +75,19 @@ Accédez à [Vérification de l’état du nom de domaine personnalisé](/help/i
    ![](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
 
    >[!NOTE]
-   >N’incluez pas d’espaces `http://`, `https://` lors de la saisie dans votre domaine.
+   >N’incluez pas `http://`, `https://` ni d’espace lors de la saisie dans votre domaine.
 
-1. L’écran Vérification du nom de domaine de votre Environnement s’affiche.
+1. L’écran Vérification du nom de domaine de votre environnement s’affiche.
 
    ![](/help/implementing/cloud-manager/assets/cdn/cdn-create6.png)
 
-   Consultez [Vérification de domaine](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) pour en savoir plus. Suivez les instructions fournies pour prouver la propriété du domaine de votre environnement.
+   Consultez [Vérification du domaine](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) pour en savoir plus. Suivez les instructions fournies pour prouver la propriété du domaine de votre environnement.
 
 1. Cliquez sur **Créer**.
 
-1. Le déploiement des noms de domaine personnalisés requiert un certificat SSL valide et une vérification TXT réussie. Cela est indiqué par l’état **Vérifié et déployé**.
+1. Le déploiement Custom Domain Name nécessite un certificat SSL valide et une vérification TXT réussie. Cela est indiqué par l’état **Vérifié et déployé**.
 
-À ce stade, votre nom de domaine personnalisé est prêt pour le test et un `CNAME` pour pointer vers celui-ci. Consultez [État du nom de domaine](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour en savoir plus sur les différents états et sur la façon de s&#39;y attaquer.
+À ce stade, votre nom de domaine personnalisé est prêt pour le test et un `CNAME` pour pointer vers celui-ci. Reportez-vous à la section [État du nom de domaine](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour en savoir plus sur les différents états et sur la façon de traiter.
 
 >[!NOTE]
 >Le contrôle du DNS peut prendre jusqu’à quelques heures en raison des retards de propagation de DNS. Cloud Manager vérifie la propriété et met à jour l’état visible dans le tableau des paramètres de domaine. Voir Vérification de l’état du nom de domaine pour en savoir plus.
