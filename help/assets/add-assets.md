@@ -1,11 +1,11 @@
 ---
 title: Ajout de vos ressources numériques à [!DNL Adobe Experience Manager].
-description: Ajoutez vos ressources numériques à  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service].
+description: Ajoutez vos ressources numériques à [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 translation-type: tm+mt
 source-git-commit: d66377444815123d7a4db3c5e9e04b2970841b13
 workflow-type: tm+mt
 source-wordcount: '1951'
-ht-degree: 89%
+ht-degree: 99%
 
 ---
 
@@ -124,14 +124,14 @@ Pour conserver le duplicata de ressource dans [!DNL Assets], cliquez sur **[!UIC
 
 [!DNL Experience Manager Assets] tente de vous empêcher de charger des ressources dont le nom de fichier contient des caractères interdits. Si vous essayez de charger une ressource dont le nom de fichier contient un ou plusieurs caractères interdits, [!DNL Assets] affiche un message d’avertissement à ce sujet et interrompt l’opération jusqu’à ce que vous supprimiez les caractères concernés ou utilisiez un nom autorisé. Certaines méthodes de chargement n’empêchent pas le chargement de ressources dont les noms de fichier contiennent des caractères interdits, mais les remplacent par `-`.
 
-Pour prendre en compte les conventions d’appellation en vigueur dans votre entreprise, la boîte de dialogue [!UICONTROL Charger les ressources] vous permet de spécifier des noms longs pour les fichiers chargés. Les caractères suivants (liste de ceux-ci séparés par des espaces) ne sont pas pris en charge :
+Pour prendre en compte les conventions d’appellation en vigueur dans votre entreprise, la boîte de dialogue [!UICONTROL Charger les ressources] vous permet de spécifier des noms longs pour les fichiers chargés. Les caractères suivants ne sont pas pris en charge (ils sont répertoriés ici et séparés par des espaces) :
 
 * Caractères non valides pour le nom de fichier de la ressource `* / : [ \\ ] | # % { } ? &`
 * Caractères non valides pour le nom de dossier de la ressource `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## Chargement en masse de ressources {#bulk-upload}
 
-L’analyseur de ressources en vrac peut traiter efficacement un très grand nombre de ressources. Cependant, une ingestion à grande échelle n&#39;est pas simplement un vidage de fichiers ou une migration occasionnelle. Pour qu&#39;une assimilation à grande échelle soit un projet significatif qui réponde à vos besoins et soit efficace, planifiez la migration et traitez l&#39;organisation des ressources. Toutes les intégrations sont différentes, donc au lieu de généraliser, tenir compte de la composition nuancée du référentiel et des besoins commerciaux. Voici quelques suggestions générales pour planifier et exécuter une ingestion en masse :
+L’outil d’ingestion de ressources en masse peut traiter efficacement un très grand nombre de ressources. Cependant, une ingestion à grande échelle ne consiste pas simplement en un important vidage de fichiers ou une simple migration. Pour qu’une ingestion à grande échelle s’intègre à un projet pertinent qui réponde à vos besoins et qui soit efficace, planifiez la migration et traitez l’organisation des ressources. Toutes les ingestions étant différentes, les généralisations sont à éviter ; il faut tenir compte des nuances de la composition du référentiel et des besoins commerciaux. Voici quelques suggestions globales pour planifier et exécuter une ingestion en masse :
 
 * Traiter les ressources : supprimez les ressources qui ne sont pas nécessaires dans le DAM. Envisagez de supprimer les ressources inutilisées, obsolètes ou dupliquées. Cela permet de réduire les données transférées et les ressources ingérées afin d’accélérer les ingestions.
 * Organiser les ressources : envisagez d’organiser le contenu dans un ordre logique, par exemple par taille de fichier, format de fichier, cas d’utilisation ou priorité. En général, les fichiers complexes volumineux nécessitent un traitement plus lourd. Vous pouvez également envisager d’ingérer des fichiers volumineux séparément à l’aide de l’option de filtrage de taille de fichier (décrite ci-dessous).
@@ -145,7 +145,7 @@ Pour charger un plus grand nombre de fichiers, utilisez l’une des méthodes su
 
 ### Outil d’ingestion en masse de ressources {#asset-bulk-ingestor}
 
-Cet outil est fourni uniquement au groupe des administrateurs pour l’ingestion à grande échelle de ressources à partir de magasins de données Azure ou S3. Visionnez une vidéo présentant la configuration et l’assimilation.
+Cet outil est fourni uniquement au groupe des administrateurs pour l’ingestion à grande échelle de ressources à partir de magasins de données Azure ou S3. Consultez la vidéo présentant la configuration et l’ingestion.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
@@ -164,7 +164,7 @@ Procédez de la manière suivante pour configurer l’outil :
    * [!UICONTROL Exclure les types Mime] : liste séparée par des virgules des types MIME à exclure de l’ingestion. Par exemple, `image/jpeg, image/.*, video/mp4`.
    * [!UICONTROL Inclure les types MIME] : liste séparée par des virgules des types MIME à inclure dans l’ingestion. Voir [tous les formats de fichier pris en charge](/help/assets/file-format-support.md).
    * [!UICONTROL Mode d’importation] : sélectionnez Ignorer, Remplacer ou Créer une version. Le mode par défaut est Ignorer. Dans ce mode, l’outil d’ingestion ignore l’importation d’une ressource si elle existe déjà. Voir la signification de [Remplacer et créer des options de version](#handling-upload-existing-file).
-   * [!UICONTROL Dossier cible des ressources] : importer un dossier dans la gestion des actifs numériques où les ressources doivent être importées. Par exemple, `/content/dam/imported_assets`
+   * [!UICONTROL Dossier cible des ressources] : importer un dossier dans la gestion des actifs numériques (DAM) où les ressources doivent être importées. Par exemple, `/content/dam/imported_assets`
 
 1. Vous pouvez supprimer, modifier, exécuter et en faire plus avec les configurations que vous avez créées pour l’outil d’ingestion. Lorsque vous sélectionnez une configuration d’importation en masse pour l’outil d’ingestion, les options suivantes sont disponibles dans la barre d’outils.
 
@@ -186,23 +186,23 @@ Outre l’interface utilisateur du navigateur web, [!DNL Experience Manager] pre
 
 ## Traiter les ressources lorsqu’elles sont chargées {#process-when-uploaded}
 
-Pour effectuer un traitement supplémentaire sur les ressources chargées, vous pouvez appliquer des profils de traitement aux dossiers de chargement. Les profils sont disponibles sur la page **[!UICONTROL Propriétés]** d’un dossier dans [!DNL Assets]. Un fichier numérique sans extension ou avec une extension incorrecte n’est pas traité comme vous le souhaitez. Par exemple, lors du transfert de ces ressources, rien ne se produit ou un profil de traitement incorrect peut s’appliquer à la ressource. Les utilisateurs peuvent toujours stocker les fichiers binaires dans le module DAM.
+Pour effectuer un traitement supplémentaire sur les ressources chargées, vous pouvez appliquer des profils de traitement aux dossiers de chargement. Les profils sont disponibles sur la page **[!UICONTROL Propriétés]** d’un dossier dans [!DNL Assets]. Une ressource numérique sans extension ou dotée d’une extension incorrecte ne sera pas traitée comme vous le souhaitez. Par exemple, lors du chargement de ces ressources, il est possible que rien ne se produise ou qu’un profil de traitement incorrect s’applique à la ressource. Les utilisateurs peuvent toujours stocker les fichiers binaires dans le module DAM.
 
-![Propriétés d’un dossier de ressources avec des options permettant d’ajouter un profil de traitement](assets/assets-folder-properties.png)
+![Propriétés d’un dossier de ressources dotées d’options permettant d’ajouter un profil de traitement](assets/assets-folder-properties.png)
 
 Les onglets suivants sont disponibles :
 
-* [Les ](metadata-profiles.md) profils de métadonnées vous permettent d’appliquer des propriétés de métadonnées par défaut aux fichiers téléchargés dans ce dossier.
+* Les [profils de métadonnées](metadata-profiles.md) vous permettent d’appliquer des propriétés de métadonnées par défaut aux ressources chargées dans ce dossier.
 * Les [profils de traitement](asset-microservices-configure-and-use.md) vous permettent de générer davantage de rendus que ce qui est possible par défaut.
 
 De plus, si [!DNL Dynamic Media] est activé sur votre déploiement, les onglets suivants sont disponibles :
 
-* Les [[!DNL Dynamic Media] profils d’image ](dynamic-media/image-profiles.md) vous permettent d’appliquer un recadrage spécifique (**[!UICONTROL Recadrage intelligent]** et recadrage de pixels) et une configuration d’accentuation aux ressources chargées.
-* Les [[!DNL Dynamic Media] profils vidéo ](dynamic-media/video-profiles.md) vous permettent d’appliquer des profils de codage vidéo spécifiques (résolution, format, paramètres).
+* Les [[!DNL Dynamic Media] profils d’image](dynamic-media/image-profiles.md) vous permettent d’appliquer un recadrage spécifique (**[!UICONTROL Recadrage intelligent]** et recadrage de pixels) et une configuration d’accentuation aux ressources chargées.
+* Les [[!DNL Dynamic Media] profils vidéo](dynamic-media/video-profiles.md) vous permettent d’appliquer des profils de codage vidéo spécifiques (résolution, format, paramètres).
 
 >[!NOTE]
 >
->[!DNL Dynamic Media] les opérations de recadrage et autres opérations sur les ressources ne sont pas destructives, c’est-à-dire que les opérations ne modifient pas l’original téléchargé. Il fournit plutôt des paramètres de recadrage ou de transformation lors de la diffusion des ressources.
+>Les opérations de recadrage de [!DNL Dynamic Media] et d’autres opérations sur les ressources ne sont pas destructives, c’est-à-dire que les opérations ne modifient pas l’original chargé. Celui-ci fournit en revanche des paramètres de recadrage ou de transformation lors de la diffusion des ressources.
 
 Pour les dossiers auxquels un profil de traitement est affecté, le nom du profil s’affiche sur la vignette en mode Carte. En mode Liste, le nom du profil s’affiche dans la colonne **[!UICONTROL Profil de traitement.]**
 
