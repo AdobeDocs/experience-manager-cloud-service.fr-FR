@@ -2,10 +2,10 @@
 title: Structure de projet AEM
 description: Découvrez comment définir des structures de package en vue d’un déploiement sur Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 1a282bdaca02f47d7936222da8522e74831a4572
+source-git-commit: e99e802873b805b06e401880bd98c90dc88846c6
 workflow-type: tm+mt
-source-wordcount: '2828'
-ht-degree: 100%
+source-wordcount: '2850'
+ht-degree: 99%
 
 ---
 
@@ -87,6 +87,7 @@ La structure de déploiement d’application recommandée est la suivante :
          + Groupes
          + Listes de contrôle d’accès (autorisations)
 
+
 ### Modules de contenu
 
 + Le module `ui.content` contient l’ensemble du contenu et de la configuration. Le module de contenu contient toutes les définitions de nœud qui ne se trouvent pas dans les modules `ui.apps` ou `ui.config` ou, en d’autres termes, tout ce qui ne se trouve pas dans `/apps` ou `/oak:index`. Voici un aperçu des éléments courants du module `ui.content` :
@@ -138,9 +139,10 @@ Par exemple, un projet AEM incluant deux applications AEM de fournisseurs peut s
 
 Les modules doivent être marqués avec le type déclaré.
 
-+ Les modules conteneurs doivent définir leur `packageType` sur `container`.
++ Les modules conteneurs doivent définir leur `packageType` sur `container`. Les packages de conteneur ne doivent pas contenir directement les lots OSGi, les configurations OSGi et ne sont pas autorisés à utiliser [Hooks d&#39;installation](http://jackrabbit.apache.org/filevault/installhooks.html).
 + Les modules de code (non modifiables) doivent définir leur `packageType` sur `application`.
 + Les modules de contenu (modifiables) doivent définir leur `packageType` sur `content`.
+
 
 Pour plus d’informations, consultez la [documentation d’Apache Jackrabbit FileVault - Package Maven Plugin](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) et le [fragment de code de configuration FileVault Maven](#marking-packages-for-deployment-by-adoube-cloud-manager) ci-dessous.
 
