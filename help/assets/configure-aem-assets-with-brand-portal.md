@@ -3,10 +3,10 @@ title: Configuration d’AEM Assets as a  [!DNL Cloud Service]  avec Brand Porta
 description: Configuration d’AEM Assets avec Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: b6283cfff0a0476cc45eb9da75a3a9b2bfdef7bd
+source-git-commit: 4a22ef2913e88b037a65746f782e4c6a20afdddb
 workflow-type: tm+mt
-source-wordcount: '2248'
-ht-degree: 71%
+source-wordcount: '2411'
+ht-degree: 63%
 
 ---
 
@@ -17,7 +17,7 @@ La configuration d’Adobe Experience Manager Assets Brand Portal permet de publ
 
 ## Activer le portail de marque à l’aide de Cloud Manager {#activate-brand-portal}
 
-L’utilisateur de Cloud Manager active Brand Portal pour une AEM Assets en tant qu’instance [!DNL Cloud Service]. Le processus d’activation crée les configurations requises (jeton d’autorisation, configuration IMS et service cloud du portail de marque) à l’arrière-plan et reflète l’état du client du portail de marque dans Cloud Manager.
+L’utilisateur de Cloud Manager active Brand Portal pour une AEM Assets en tant qu’instance [!DNL Cloud Service]. Le processus d’activation crée les configurations requises (jeton d’autorisation, configuration IMS et service cloud du portail de marque) à l’arrière-plan et reflète l’état du client du portail de marque dans Cloud Manager. L’activation du portail de marques permet aux utilisateurs d’AEM Assets de publier des fichiers sur le portail de marques et de les distribuer aux utilisateurs du portail de marques.
 
 **Conditions préalables**
 
@@ -28,7 +28,7 @@ Vous avez besoin des éléments suivants pour activer le portail de marque sur v
 
 >[!NOTE]
 >
->Une AEM Assets en tant qu&#39;instance [!DNL Cloud Service] est autorisée à connecter un seul client du portail de marques. Vous pouvez créer plusieurs environnements (développement, production et étape) pour votre AEM Assets en tant qu’instance [!DNL Cloud Service], dans laquelle le portail de marque est activé uniquement sur un environnement.
+>Une AEM Assets en tant qu&#39;instance [!DNL Cloud Service] est autorisée à se connecter à un seul client du portail de marques. Vous pouvez avoir plusieurs environnements (développement, production et étape) pour votre AEM Assets en tant qu’instance [!DNL Cloud Service], dans laquelle le portail de marque est activé sur un environnement.
 
 **Procédure d’activation du portail des marques**
 
@@ -46,9 +46,18 @@ Vous pouvez activer le portail de marques lors de la création des environnement
 
    ![Activer Brand Portal](assets/create-environment4.png)
 
-1. L’activation du client du portail de marques peut prendre quelques minutes, car le processus d’activation crée les configurations requises sur le serveur principal. Une fois que le client du portail de marques est activé, l’état devient Activé.
+1. L’activation du client du portail de marques prend quelques minutes, car le processus d’activation crée les configurations requises sur le serveur principal. Une fois que le client du portail de marques est activé, l’état devient Activé.
 
    ![État de la vue](assets/create-environment5.png)
+
+
+>[!NOTE]
+>
+>Le portail de marque doit être activé sur la même organisation IMS que l’AEM Assets en tant qu’instance [!DNL Cloud Service].
+>
+>Si vous disposez d’une configuration cloud du portail de marque existante ([configurée manuellement à l’aide de la Console développeur d’Adobe](#manual-configuration)) pour une organisation IMS (org1-existant) et que votre AEM Assets en tant qu’instance [!DNL Cloud Service] est configurée pour une autre organisation IMS (org2-new), l’activation du portail de marque à partir de Cloud Manager réinitialise l’organisation IMS du portail de marque à `org2-new`. Bien que la configuration de cloud configurée manuellement sur `org1-existing` soit visible dans l’instance d’auteur AEM Assets, elle ne sera plus utilisée après l’activation du portail de marque à partir de Cloud Manager.
+>
+>Si la configuration cloud existante du portail de marque et l’AEM Assets en tant qu’instance [!DNL Cloud Service] utilisent la même organisation IMS (org1), il vous suffit d’activer le portail de marque à partir de Cloud Manager.
 
 **Voir également**:
 * [Ajouter les utilisateurs et les rôles dans AEM Assets en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html?lang=en#role-definitions)
@@ -62,13 +71,15 @@ Après l’activation de votre locataire du portail de marque dans Cloud Manager
 
 L’URL par défaut de votre locataire du portail de marques est : `https://<tenant-id>.brand-portal.adobe.com/`.
 
+Où que ce soit, l&#39;identifiant locataire est l&#39;organisation IMS.
+
 Effectuez les étapes suivantes si vous n’êtes pas sûr de l’URL du portail de marque :
 
 1. Connectez-vous à [Admin Console](http://adminconsole.adobe.com/) et accédez à **[!UICONTROL Produits]**.
 1. Dans le rail de gauche, sélectionnez **[!UICONTROL Portail de marques Adobe Experience Manager - Portail de marques]**.
 1. Cliquez sur **[!UICONTROL Accéder au portail des marques]** pour ouvrir directement le portail des marques dans le navigateur.
 
-   Vous pouvez également copier l’URL du client du portail de marque et la coller dans votre navigateur pour ouvrir l’interface du portail de marque.
+   Vous pouvez également copier l’URL du locataire du portail de marque à partir du lien **[!UICONTROL Accéder au portail de marque]** et la coller dans votre navigateur pour ouvrir l’interface du portail de marque.
 
    ![Accès au portail de marque](assets/access-bp-on-cloud.png)
 
@@ -130,16 +141,16 @@ Pour plus d’informations, voir [Publication de balises sur Brand Portal](http
 
 Vous pouvez surveiller les journaux de l’agent de distribution correspondant au workflow de publication de ressources.
 
-Par exemple, nous avons publié une ressource d’AEM Assets sur Brand Portal pour valider la configuration.
+Publions maintenant un fichier d&#39;AEM Assets sur Brand Portal et voyons les journaux.
 
-1. Suivez les étapes (1 à 4), comme indiqué dans la section [Test de la configuration](#test-configuration), puis accédez à la page de l’agent de distribution.
+1. Suivez les étapes (de 1 à 4) décrites dans la section **Tester la connexion** et accédez à la page de l&#39;agent de distribution.
 1. Cliquez sur **[!UICONTROL Journaux]** pour afficher les journaux de traitement et d’erreurs.
 
    ![](assets/test-bpconfig5.png)
 
 L’agent de distribution génère les journaux suivants :
 
-* INFO : Il s’agit d’un journal généré par le système qui se déclenche lors d’une configuration réussie de l’agent de distribution.
+* INFO : Il s&#39;agit d&#39;un journal généré par le système qui se déclenche lors d&#39;une configuration réussie de l&#39;agent de distribution.
 * DSTRQ1 (requête 1) : Déclencheurs lors du test de la connexion.
 
 Lors de la publication de la ressource, les journaux de requête et de réponse suivants sont générés :
@@ -164,7 +175,7 @@ Outre le processus d’automatisation pour activer Brand Portal sur AEM Assets e
 
 >[!NOTE]
 >
->Si vous rencontrez un problème lors de l’activation de votre client du portail de marques, vous devez contacter l’assistance Adobe.
+>Contactez l’assistance Adobe si vous rencontrez un problème lors de l’activation de votre client du portail de marque.
 
 ## Configuration manuelle à l’aide de la Console développeur d’Adobes {#manual-configuration}
 
@@ -225,7 +236,7 @@ La clé publique (certificat) authentifie votre profil sur Adobe Developer Conso
 
 1. Cliquez sur l&#39;icône **[!UICONTROL Télécharger la clé publique]** et enregistrez le fichier de clé publique (CRT) sur votre ordinateur.
 
-   La clé publique sera utilisée ultérieurement pour configurer l’API de votre client Brand Portal et générer les informations d’identification de compte de service dans Adobe Developer Console.
+   La clé publique est utilisée ultérieurement pour configurer l’API de votre client du portail de marque et générer les informations d’identification du compte de service dans la console de développement des Adobes.
 
    ![Téléchargement du certificat](assets/ims-config3.png)
 
