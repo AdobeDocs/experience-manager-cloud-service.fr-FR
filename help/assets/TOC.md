@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: bafb952cd984885e0f309b8a78a96ae48320b7df
 workflow-type: tm+mt
 source-wordcount: '487'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 94%
 
 + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [Aperçu et nouveautés](overview.md)
-+ [Modifications notables apportées à  [!DNL Assets]  as a [!DNL Cloud Service]](assets-cloud-changes.md)
++ [Modifications notables apportées à [!DNL Assets] as a [!DNL Cloud Service]](assets-cloud-changes.md)
 + [[!DNL Assets] Architecture](architecture.md)
 + [Formats de fichiers pris en charge](file-format-support.md)
 + [Présentation des microservices de ressources](asset-microservices-overview.md)
 + [Accessibilité dans [!DNL Assets]](accessibility.md)
 + Gestion des ressources numériques {#manage}
    + [Partage de ressources](share-assets.md)
-   + [Surveillance des activités et des tâches de gestion des ressources numériques](assets-activity-history.md)
+   + [Surveillance des activités et des tâches de gestion des ressources numériques (DAM)](assets-activity-history.md)
    + [Prise en main des microservices de ressources](asset-microservices-configure-and-use.md)
    + [Ajout et chargement de ressources](add-assets.md)
    + [Recherche de ressources](search-assets.md)
@@ -32,7 +32,7 @@ ht-degree: 94%
    + [Balises intelligentes pour les images](smart-tags.md)
    + [Balises intelligentes pour vos ressources vidéo](smart-tags-video-assets.md)
    + [Organisation des ressources](organize-assets.md)
-   + [Utilisation de ressources  [!DNL Adobe Stock]  dans AEM](aem-assets-adobe-stock.md)
+   + [Utilisation de ressources [!DNL Adobe Stock] dans AEM](aem-assets-adobe-stock.md)
    + [Gestion des collections](manage-collections.md)
    + [Présentation des métadonnées](manage-metadata.md)
    + [Intégration avec [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
@@ -56,7 +56,7 @@ ht-degree: 94%
    + [API HTTP Assets](mac-api-assets.md)
    + [Prise en charge des fragments de contenu dans l’API HTTP Assets](content-fragments/assets-api-content-fragments.md)
    + [API AEM GraphQL pour les fragments de contenu](content-fragments/graphql-api-content-fragments.md)
-   + [Authentification pour les Requêtes GraphQL d&#39;AEM distantes sur les fragments de contenu](content-fragments/graphql-authentication-content-fragments.md)
+   + [Authentification pour les requêtes GraphQL AEM distantes sur les fragments de contenu](content-fragments/graphql-authentication-content-fragments.md)
    + [API AEM GraphQL avec les fragments de contenu – Exemple de contenu et requêtes](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Ressources connectées](use-assets-across-connected-assets-instances.md)
    + [Rapports de ressources](asset-reports.md)
@@ -65,14 +65,14 @@ ht-degree: 94%
    + [Fonctionnalités de MediaLibrary](medialibrary.md)
    + [Importation et exportation des métadonnées des ressources](metadata-import-export.md)
 + Partage et distribution de ressources {#brand-portal}
-   + [Configuration d’ [!DNL Assets]  avec  [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Configuration d’ [!DNL Assets] avec [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Publication de ressources sur [!DNL Brand Portal]](publish-to-brand-portal.md)
    + [Publication de fichiers  [!DNL Brand Portal] depuis [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)
 + Fragments de contenu {#content-fragments}
    + [Utilisation de fragments de contenu](content-fragments/content-fragments.md)
    + [Diffusion découplée avec des fragments de contenu et GraphQL](content-fragments/content-fragments-graphql.md)
    + [Gestion des fragments de contenu](content-fragments/content-fragments-managing.md)
-   + [Activation de la fonctionnalité de fragment de contenu pour votre instance](content-fragments/content-fragments-configuration-browser.md)
+   + [Activation de la fonctionnalité de fragments de contenu pour votre instance](content-fragments/content-fragments-configuration-browser.md)
    + [Modèles de fragment de contenu](content-fragments/content-fragments-models.md)
    + [Variations – création de contenu de fragment](content-fragments/content-fragments-variations.md)
    + [Contenu associé à un fragment de contenu](content-fragments/content-fragments-assoc-content.md)
@@ -99,7 +99,7 @@ ht-degree: 94%
    + [Application des paramètres prédéfinis de la visionneuse Dynamic Media](dynamic-media/viewer-presets.md)
    + [Paramètres prédéfinis de lot](dynamic-media/batch-set-presets-dm.md)
    + [Invalidation du cache CDN via Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-   + [Invalidation du cache CDN via Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
+   + [Invalidation du cache de réseau CDN par le biais de Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [Imagerie dynamique](dynamic-media/imaging-faq.md)
    + [Diffusion de ressources Dynamic Media](dynamic-media/delivering-dynamic-media-assets.md)
    + [Activation de la protection de lien dynamique dans Dynamic Media](dynamic-media/hotlink-protection.md)
@@ -113,7 +113,7 @@ ht-degree: 94%
    + [Images interactives](dynamic-media/interactive-images.md)
    + [Vidéos interactives](dynamic-media/interactive-videos.md)
    + [Vidéo 360 VR](dynamic-media/360-video.md)
-   + [Intégration de visionneuses de médias dynamiques à Adobe Analytics et Adobe Launch](dynamic-media/launch.md)
+   + [Intégration des visionneuses Dynamic Media à Adobe Analytics et Adobe Launch](dynamic-media/launch.md)
    + [Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées](dynamic-media/custom-pop-ups.md)
    + [Diffusion d’images optimisées pour un site réactif](dynamic-media/responsive-site.md)
    + [Aperçu de ressources Dynamic Media](dynamic-media/previewing-assets.md)
@@ -124,6 +124,6 @@ ht-degree: 94%
    + [Publication de ressources Dynamic Media](dynamic-media/publishing-dynamicmedia-assets.md)
    + [Utilisation de la publication sélective dans Dynamic Media](dynamic-media/selective-publishing.md)
    + [Utilisation des sélecteurs](dynamic-media/working-with-selectors.md)
-   + [FAQ sur la diffusion de contenu HTTP2](dynamic-media/http2faq.md)
-   + [Fin de vie des visionneuses de Flashs](dynamic-media/flash-viewers-eol.md)
+   + [FAQ sur la diffusion de contenu HTTP/2](dynamic-media/http2faq.md)
+   + [Fin de prise en charge de la visionneuse Flash](dynamic-media/flash-viewers-eol.md)
    + [Fin de vie des visionneuses DHTML](dynamic-media/dhtml-viewer-endoflifefaqs.md)
