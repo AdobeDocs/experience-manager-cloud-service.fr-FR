@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 57ae02b90d1e78e8a940b65d195bc2077feec2d2
 workflow-type: tm+mt
 source-wordcount: '2576'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -68,9 +68,9 @@ Avec la configuration par défaut, seul le profil de traitement le plus élémen
 
 Le profil de traitement peut inclure un rendu FPO (For Placement Only). Consultez la [documentation d’[!DNL Adobe Asset Link]](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html) afin de savoir si vous devez l’activer pour votre profil de traitement. Pour plus d’informations, voir la [documentation complète d’Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html).
 
-### Créer un profil standard {#create-standard-profile}
+### Création d’un profil standard {#create-standard-profile}
 
-Pour créer un profil de traitement standard, procédez comme suit :
+Pour créer un profil de traitement standard, procédez comme suit :
 
 1. Les administrateurs accèdent à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de traitement]**. Cliquez sur **[!UICONTROL Créer]**.
 1. Fournissez un nom qui vous aide à identifier de manière unique le profil lors de l’application à un dossier.
@@ -108,7 +108,7 @@ Le [!DNL Asset Compute Service] prend en charge une variété de cas d’utilisa
 
 Le profil personnalisé peut transformer des formats d’image, de vidéo, de document et autres formats de fichier en différents rendus, y compris des miniatures, du texte et des métadonnées extraits et des archives.
 
-Les développeurs peuvent utiliser [!DNL Asset Compute Service] pour [créer des applications personnalisées](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=fr) pour les cas d’utilisation pris en charge. [!DNL Experience Manager] peut appeler ces applications personnalisées à partir de l’interface utilisateur en utilisant des profils personnalisés configurés par les administrateurs. [!DNL Asset Compute Service] prend en charge les cas d’utilisation suivants d’appel de services externes :
+Les développeurs peuvent utiliser [!DNL Asset Compute Service] pour [créer des applications personnalisées](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=fr) qui répondent aux cas d’utilisation pris en charge. [!DNL Experience Manager] peut appeler ces applications personnalisées à partir de l’interface utilisateur en utilisant des profils personnalisés configurés par les administrateurs. [!DNL Asset Compute Service] prend en charge les cas d’utilisation suivants d’appel de services externes :
 
 * Utilisez l’[API ImageCutout](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) d’[!DNL Adobe Photoshop] et enregistrez le résultat en tant que rendu.
 * Appelez des systèmes tiers pour mettre à jour des données (par exemple, un système PIM).
@@ -180,18 +180,18 @@ Pour vérifier que les ressources sont traitées, prévisualisez les rendus gén
 
 ## Workflows de post-traitement {#post-processing-workflows}
 
-Dans le cas où un traitement supplémentaire des actifs est nécessaire et ne peut pas être effectué à l’aide des profils de traitement, des workflows de post-traitement supplémentaires peuvent être ajoutés à la configuration. Cela permet d’ajouter un traitement entièrement personnalisé en plus du traitement configurable à l’aide des microservices de ressources.
+S’il s’avère qu’un traitement supplémentaire des ressources est nécessaire, mais qu’il ne peut pas être effectué à l’aide des profils de traitement, des workflows de post-traitement peuvent être ajoutés à la configuration. Cela permet d’ajouter un traitement entièrement personnalisé en plus du traitement configurable à l’aide des microservices de ressources.
 
-Les workflows de post-traitement, s’ils sont configurés, sont automatiquement exécutés par [!DNL Experience Manager] une fois le traitement des microservices terminé. Il n’est pas nécessaire d’ajouter manuellement des lanceurs de processus pour déclencher les workflows. Voici quelques exemples :
+Les workflows de post-traitement, s’ils sont configurés, sont automatiquement exécutés par [!DNL Experience Manager] une fois le traitement des microservices terminé. Il n’est pas nécessaire d’ajouter manuellement des lanceurs de workflows pour les déclencher. Voici quelques exemples :
 
 * Étapes du workflow personnalisé de traitement des ressources.
 * Intégrations pour ajouter des métadonnées ou des propriétés à des ressources provenant de systèmes externes (par exemple, des informations sur des produits ou des processus).
 * Traitement supplémentaire effectué par des services externes.
 
-Pour ajouter une configuration de processus de post-traitement à [!DNL Experience Manager], procédez comme suit :
+Pour ajouter une configuration de workflow de post-traitement à [!DNL Experience Manager], procédez comme suit :
 
-* Création d’un ou de plusieurs modèles de workflow. Ces modèles personnalisés sont appelés *modèles de processus de post-traitement* dans cette documentation. Il s’agit de modèles de flux de travaux [!DNL Experience Manager] standard.
-* Ajoutez les étapes de flux de travail requises à ces modèles. Passez en revue les étapes du processus par défaut et ajoutez toutes les étapes par défaut requises au processus personnalisé. Les étapes sont exécutées sur les ressources en fonction d’une configuration de modèle de workflow. Par exemple, si vous souhaitez que le balisage intelligent se produise automatiquement lors du transfert des ressources, ajoutez l’étape à votre modèle personnalisé de processus de post-traitement.
+* Création d’un ou de plusieurs modèles de workflow. Ces modèles personnalisés sont appelés *modèles de workflow de post-traitement* dans cette documentation. Il s’agit de modèles de flux de workflow [!DNL Experience Manager] standard.
+* Ajoutez les étapes de workflow spécifiques à ces modèles. Passez en revue les étapes du processus par défaut et ajoutez toutes les étapes par défaut requises au workflow personnalisé. Les étapes sont exécutées sur les ressources en fonction d’une configuration de modèle de workflow. Par exemple, si vous souhaitez que le balisage intelligent soit appliqué automatiquement lors du transfert des ressources, ajoutez l’étape à votre modèle personnalisé de workflow de post-traitement.
 * Ajoutez l’étape [!UICONTROL Processus terminé du workflow Ressource de mise à jour DAM] à la fin. En ajoutant cette étape, vous êtes certain que Experience Manager sait à quel moment le traitement se termine et la ressource peut être marquée comme traitée ; en d’autres termes, *Nouvelle* s’affiche sur la ressource.
 * Création d’une configuration pour le service d’exécution de workflow personnalisé, lequel permet de configurer l’exécution d’un modèle de workflow de post-traitement selon le chemin d’accès (emplacement du dossier) ou une expression régulière.
 
@@ -207,7 +207,7 @@ Assurez-vous que la dernière étape de chaque workflow de post-traitement est `
 
 Pour configurer les modèles du workflow de post-traitement à exécuter pour les ressources chargées ou mises à jour dans le système une fois le traitement des microservices de ressources terminé, il convient de configurer le service d’exécution de workflow personnalisé.
 
-L’instance Adobe CQ DAM Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) est un service OSGi et offre deux options de configuration :
+Cet outil d’exécution de workflow DAM personnalisé (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) est un service OSGi qui propose deux options de configuration :
 
 * Workflows de post-traitement par chemin d’accès (`postProcWorkflowsByPath`) : plusieurs modèles de workflow peuvent être répertoriés en fonction de différents chemins de référentiel. Les chemins d’accès et les modèles doivent être séparés par un signe « deux-points ». Les chemins de référentiel simples sont pris en charge et doivent être associés à un modèle de workflow dans le chemin d’accès `/var`. Par exemple : `/content/dam/my-brand:/var/workflow/models/my-workflow`.
 * Workflows de post-traitement par expression (`postProcWorkflowsByExpression`) : plusieurs modèles de workflows peuvent être répertoriés en fonction de différentes expressions régulières. Les expressions et les modèles doivent être séparés par un signe « deux-points ». L’expression régulière doit pointer directement vers le nœud Ressource et non vers l’un des rendus ou fichiers. Par exemple : `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
@@ -223,7 +223,7 @@ Pour plus d’informations sur les étapes de workflow standard pouvant être ut
 
 * Pour la conception des workflows, prenez en compte vos besoins pour tous les types de rendus. Si vous ne prévoyez pas la nécessité d’un rendu futur, supprimez son étape de création dans le workflow. Il est impossible par la suite de supprimer les rendus en masse. Les rendus superflus peuvent occuper beaucoup d’espace de stockage suite à une utilisation prolongée d’[!DNL Experience Manager]. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Si plusieurs ressources sont concernées, vous pouvez, au choix, personnaliser [!DNL Experience Manager] pour supprimer des rendus spécifiques, ou supprimer les ressources et les charger à nouveau.
 * Actuellement, la prise en charge se limite à la génération de rendus. La génération de nouvelles ressources n’est pas prise en charge.
-* Actuellement, la taille de fichier maximale pour l’extraction des métadonnées est d’environ 10 Go. Lors du téléchargement de fichiers très volumineux, l’opération d’extraction des métadonnées échoue parfois.
+* Actuellement, la taille de fichier maximale pour l’extraction des métadonnées est d’environ 10 Go. Lors du chargement de fichiers très volumineux, l’opération d’extraction des métadonnées peut parfois échouer.
 
 >[!MORELIKETHIS]
 >
