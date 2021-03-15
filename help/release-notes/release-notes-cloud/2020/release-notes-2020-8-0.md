@@ -121,7 +121,7 @@ La date de publication de la mise à jour 2020.8.0 de [!UICONTROL Cloud Manage
 
 ## Outil de transfert de contenu {#content-transfer-tool}
 
-Suivez cette section pour en savoir plus sur les nouveautés et les mises à jour de la version 1.0.4 de l’outil de transfert de contenu.
+Consultez cette section pour en savoir plus sur les nouveautés et les mises à jour de la version 1.0.4 de l’outil de transfert de contenu.
 
 ### Nouveautés {#what-is-new-ctt}
 
@@ -135,7 +135,7 @@ Suivez cette section pour en savoir plus sur les nouveautés et les mises à jou
 
 ## Outils de refactorisation du code {#code-refactoring-tools}
 
-Consultez cette section pour en savoir plus sur les nouveautés et les mises à jour des outils de refactorisation du code.
+Consultez cette section pour découvrir les nouveautés et les mises à jour des outils de refactorisation du code.
 
 ### Nouveautés {#what-is-new-refactoring}
 
