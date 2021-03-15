@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: a9c9a866c03bc15ebddddc7f2086f1f3ffd38a07
 workflow-type: tm+mt
 source-wordcount: '969'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -83,7 +83,7 @@ Pour le développement local du module complémentaire CIF avec le SDK AEM as a 
    set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
    ```
 
-   Cette variable est utilisée par AEM pour se connecter à votre système commercial. De plus, le module complémentaire CIF inclut un proxy inverse local pour rendre le point de terminaison GraphQL Magento disponible localement. Il est utilisé par les outils de création CIF (console de produit et sélecteurs) et pour les composants côté client CIF effectuant des appels GraphQL directs.
+   Cette variable est utilisée par AEM pour se connecter à votre système commercial. De plus, le module complémentaire CIF inclut un proxy inverse local pour rendre le point d’entrée GraphQL Magento disponible localement. Il est utilisé par les outils de création CIF (console de produit et sélecteurs) et pour les composants CIF côté client effectuant des appels GraphQL directs.
 
    Cette variable doit également être configurée pour l’environnement AEM as a Cloud Service. Pour plus d’informations sur les variables, voir [Configuration d’OSGi pour AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#local-development).
 
