@@ -5,14 +5,14 @@ translation-type: tm+mt
 source-git-commit: 73e7f9a5b0976ebd5228c182d47c1058290f7629
 workflow-type: tm+mt
 source-wordcount: '3296'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
 # Modèles de page {#page-templates}
 
-Lors de la création d’une page, vous devez sélectionner un modèle. Le modèle de page est utilisé comme base pour la nouvelle page. Le modèle définit la structure de la page créée, le contenu initial et les composants qui peuvent être utilisés (propriétés de conception). Cela présente plusieurs avantages :
+Lors de la création d’une page, vous devez sélectionner un modèle. Le modèle de page est utilisé comme base pour la nouvelle page. Le modèle définit la structure de la page créée, le contenu initial et les composants qui peuvent être utilisés (propriétés de conception). Il offre plusieurs avantages :
 
 * Les modèles de page permettent aux auteurs spécialisés de [créer et de modifier des modèles](/help/sites-cloud/authoring/features/templates.md).
    * Ces auteurs spécialisés sont connus sous le nom de **créateurs (ou auteurs) de modèles**.
@@ -61,7 +61,7 @@ Lors de la création d’un modèle modifiable :
 
    Pour plus d’informations sur la façon dont un créateur de modèles définit la structure, voir [Création de modèles de page](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
 
-   Pour les détails techniques de la structure, voir [Structure](#structure) dans ce document.
+   Pour connaître les détails techniques de la structure, consultez la section [Structure](#structure) de ce document.
 
    **Stratégies**
 
@@ -72,7 +72,7 @@ Lors de la création d’un modèle modifiable :
 
    Pour plus d’informations sur la façon dont un créateur de modèles définit des stratégies, voir [Création de modèles de page](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
 
-   Pour obtenir des informations techniques sur les stratégies, voir [Stratégies de contenu](#content-policies) dans ce document.
+   Pour connaître les détails techniques des stratégies, consultez la section [Stratégies de contenu](#content-policies) de ce document.
 
    **Contenu initial**
 
@@ -85,7 +85,7 @@ Lors de la création d’un modèle modifiable :
 
    **Disposition**
 
-   * Vous pouvez définir la disposition du modèle pour différents appareils. 
+   * Vous pouvez définir la disposition du modèle pour différents appareils.
    * La mise en page réactive pour les modèles fonctionne de la même manière que pour la création de pages.
 
    Pour plus d’informations sur la façon dont le créateur d’un modèle définit la mise en page de ce dernier, voir [Création de modèles de page](/help/sites-cloud/authoring/features/templates.md#editing-a-template-layout-template-author).
@@ -99,7 +99,7 @@ Lors de la création d’un modèle modifiable :
 
    Pour plus d’informations sur la façon dont un créateur de modèles active un modèle, voir [Création de modèles de page](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author).
 
-   Pour des détails techniques sur l&#39;activation d&#39;un modèle, voir [Activation et autorisation d&#39;un modèle pour nous](#enabling-and-allowing-a-template-for-use)e dans ce document
+   Pour obtenir des informations techniques sur l’activation d’un modèle, consultez la section [Activation et autorisation d’un modèle à utiliser](#enabling-and-allowing-a-template-for-use) dans ce document
 
 1. Utilisez-le pour créer des pages de contenu.
 
@@ -112,13 +112,13 @@ Lors de la création d’un modèle modifiable :
 
 >[!TIP]
 >
->Ne saisissez jamais d’informations qui doivent être internationalisées dans un modèle. À des fins d&#39;internalisation, il est recommandé d&#39;utiliser les [fonctions de localisation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
+>Ne saisissez jamais d’informations qui doivent être internationalisées dans un modèle. Pour l’internalisation, il est recommandé d’utiliser les [fonctions de localisation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=fr).
 
 >[!NOTE]
 >
->Les modèles sont des outils puissants pour rationaliser votre processus de création de page. Cependant, trop de modèles peuvent submerger les auteurs et rendre la création de page déroutante. Une bonne règle générale consiste à garder le nombre de modèles en dessous de 100.
+>Les modèles sont des outils puissants pour rationaliser votre processus de création de page. Cependant, un nombre excessif de modèles peut submerger les auteurs et semer la confusion dans la création de pages. Une bonne règle d’or consiste à maintenir le nombre de modèles au-dessous de 100.
 >
->L&#39;Adobe ne recommande pas d&#39;avoir plus de 1000 modèles en raison des impacts potentiels sur le rendement.
+>Adobe ne recommande pas d’avoir plus de 1 000 modèles en raison des impacts potentiels sur le rendement.
 
 >[!NOTE]
 >
