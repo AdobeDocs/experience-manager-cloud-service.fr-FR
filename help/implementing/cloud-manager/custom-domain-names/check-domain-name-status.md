@@ -2,10 +2,10 @@
 title: Vérification de l’état du nom de domaine
 description: Vérification de l’état du nom de domaine
 translation-type: tm+mt
-source-git-commit: ddee11fdfa8cadfcd63472fd3c94cd8af555c856
+source-git-commit: 0b04d43c8b5bb28286e616f0bd902c05ec56ec05
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 79%
+source-wordcount: '339'
+ht-degree: 71%
 
 ---
 
@@ -44,7 +44,7 @@ La suppression du nom de domaine personnalisé a échoué. Vous devez réessayer
 
 ## Configurations CDN préexistantes pour les Listes autorisées IP {#pre-existing-cdn}
 
-Les clients disposant d’environnements qui incluent des configurations CDN préexistantes pour les Listes autorisées IP, les certificats SSL ou les noms de domaine personnalisés voient le message suivant dans les pages de détails **Liste autorisée IP** et **Environnement**.
+Les clients disposant d’environnements qui incluent des configurations CDN préexistantes pour les Listes autorisées IP, les certificats SSL ou les noms de domaine personnalisés voient le message suivant dans les pages de détails **Liste autorisée IP** et **Environnement**. Le message affiché dans l’interface utilisateur disparaît une fois que le client a effectué la migration complète de toutes les configurations d’environnement préexistantes via l’interface utilisateur et il peut s’écouler entre 1 et 2 jours ouvrés avant que le message ne disparaisse.
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
 
