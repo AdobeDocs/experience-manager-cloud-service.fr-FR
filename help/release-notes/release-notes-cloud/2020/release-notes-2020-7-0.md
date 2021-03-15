@@ -30,7 +30,7 @@ Les connecteurs [!DNL Experience Manager] as a Cloud Service pour [!DNL Adobe Ta
 
 * Les configurations sont désormais stockées dans `/conf` plutôt que `/etc/cloudsettings` dans le référentiel Experience Manager.
 
-## [!DNL Adobe Experience Manager Assets] as a Cloud Service{#assets}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### Nouveautés d’[!DNL Assets] {#what-is-new-assets}
 
