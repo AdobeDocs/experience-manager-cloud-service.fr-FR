@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 472f691cf8b2ec502611ee88bc4abdcabb6d8412
 workflow-type: tm+mt
 source-wordcount: '504'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Les architectes de l’information doivent concevoir des requêtes pour leurs po
    * Alternatively open the page directly at `https://<host>:<port>/content/graphiql.html`.
 -->
 
-1. Connectez-vous à AEM en tant que Cloud Service et accédez à l’interface GraphiQL :
+1. Connectez-vous à AEM en as a Cloud Service et accédez à l’interface GraphiQL :
    * Par exemple : `https://<host>:<port>/content/graphiql.html`.
 
 1. GraphiQL est un éditeur de requêtes intégré au navigateur pour GraphQL. Vous pouvez l’utiliser pour créer des requêtes permettant de récupérer des fragments de contenu afin de les diffuser de manière découplée en mode JSON.
