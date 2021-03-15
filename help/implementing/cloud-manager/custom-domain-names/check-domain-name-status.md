@@ -2,10 +2,10 @@
 title: Vérification de l’état du nom de domaine
 description: Vérification de l’état du nom de domaine
 translation-type: tm+mt
-source-git-commit: f11cb3b56f51046779300626d1deb037dd687309
+source-git-commit: 40a0380c6d149d8565dd41a7f48858383c22c5c0
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 72%
+source-wordcount: '298'
+ht-degree: 59%
 
 ---
 
@@ -41,3 +41,12 @@ La suppression du nom de domaine personnalisé est en cours.
 * **Échec de la suppression**
 La suppression du nom de domaine personnalisé a échoué. Vous devez réessayer. Consultez [Suppression d&#39;un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) pour en savoir plus.
 
+
+## Configurations CDN préexistantes pour les Listes autorisées IP {#pre-existing-cdn}
+
+Les clients disposant d’environnements qui incluent des configurations CDN préexistantes pour les Listes autorisées IP (certificats SSL ou noms de domaine personnalisés) verront le message suivant dans les pages de détails **Liste autorisée IP** et **Environnement**.
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+
+Pour afficher et gérer les configurations préexistantes, elles doivent être ajoutées via l’interface utilisateur.
+![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
