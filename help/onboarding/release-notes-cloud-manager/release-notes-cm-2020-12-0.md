@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 8f36e2f6978ee7723c53496ef83bb2959bbc58bc
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -22,11 +22,11 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2020.12.0 e
 
 ### Nouveautés {#what-is-new}
 
-* Gestion en libre-service des [certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) et [noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+* Gestion en libre-service des [certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) et des [noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
-* Gestion en libre-service des [Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+* Gestion en libre-service des [listes autorisées d’adresses IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
-* La page de détails **Environnement** mise à jour permet désormais aux utilisateurs de gérer les noms de domaine personnalisés et les Listes autorisées IP sur leurs environnements.
+* La page des détails de l’**environnement** mise à jour permet désormais aux utilisateurs de gérer les noms de domaine personnalisés et les listes autorisées IP sur leurs environnements.
 
 
 ### Correctifs {#bug-fixes}
