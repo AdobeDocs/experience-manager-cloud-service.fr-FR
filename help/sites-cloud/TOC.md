@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: e381c83eb37e3b2ede1de20eb2f7e3a6eb51ce5e
 workflow-type: tm+mt
 source-wordcount: '307'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 93%
       + [Console des composants](authoring/features/components-console.md)
       + [Mise en page réactive](authoring/features/responsive-layout.md)
       + [Utilisation des balises](authoring/features/tags.md)
-      + [Activation des fonctionnalités d&#39;application Web progressive](authoring/features/enable-pwa.md)
+      + [Activation des fonctionnalités d’une application web progressive](authoring/features/enable-pwa.md)
    + Projets {#projects}
       + [Utilisation des projets](authoring/projects/overview.md)
       + [Gestion de projets](authoring/projects/managing.md)
@@ -83,7 +83,7 @@ ht-degree: 93%
    + [Administration des workflows](administering/workflows-administering.md)
    + Réutilisation du contenu {#reusing-content}
       + [MSM et traduction](administering/msm-and-translation.md)
-      + Gestionnaire multisite {#msm}
+      + Gestionnaire de plusieurs sites {#msm}
          + [Présentation des modules MSM et Live Copy](administering/msm/overview.md)
          + [Configuration de la synchronisation des Live Copies](administering/msm/live-copy-sync-config.md)
          + [Création et synchronisation de Live Copies](administering/msm/creating-live-copies.md)
