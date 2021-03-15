@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: ef8df0176c0541acc3cb6cb52d564d9bfee0bfea
 workflow-type: tm+mt
 source-wordcount: '1269'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -114,7 +114,7 @@ Pour plus d’informations, consultez [Gestion des environnements](/help/impleme
 
 ### Analyseurs de build de SDK {#analyzers}
 
-Le plug-in Build Analyzer Maven du SDK AEM as a Cloud Service détecte des problèmes dans un projet Maven, y compris les dépendances manquantes. Il permet aux développeurs d’identifier des problèmes au cours du développement local, bien avant leur déploiement dans les environnements Cloud avec Cloud Manager. Pour plus d’informations, voir la documentation [ici](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=fr#developing) et [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk).
+Le plug-in Build Analyzer Maven du SDK AEM as a Cloud Service détecte des problèmes dans un projet Maven, y compris les dépendances manquantes. Il permet aux développeurs d’identifier des problèmes au cours du développement local, bien avant leur déploiement dans les environnements Cloud avec Cloud Manager. Pour plus d’informations, voir la documentation [ici](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=fr#developing) et [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=fr#building-for-the-sdk).
 
 ### Autres {#others-foundation}
 
@@ -122,7 +122,7 @@ La nouvelle [syntaxe httpd -t](/help/implementing/dispatcher/disp-overview.md#lo
 
 ## Outil de transfert de contenu {#content-transfer-tool}
 
-Suivez cette section pour découvrir les nouveautés et les mises à jour de l’[outil de transfert de contenu](https://docs.adobe.com/content/help/fr/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) version 1.1.12.
+Consultez cette section pour découvrir les nouveautés et les mises à jour de l’[outil de transfert de contenu](https://docs.adobe.com/content/help/fr/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) version 1.1.12.
 
 ### Nouveautés {#what-is-new-ctt}
 
