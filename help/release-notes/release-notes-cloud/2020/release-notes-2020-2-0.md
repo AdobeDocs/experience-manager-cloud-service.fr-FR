@@ -20,7 +20,7 @@ La date de publication d’Experience Manager as a Cloud Service 2020.2.0 est
 
 ## Cloud Manager {#cloud-manager}
 
-Suivez cette section pour en savoir plus sur les nouveautés et les mises à jour de Cloud Manager dans AEM as a Cloud Service 2020.2.0.
+Consultez cette section pour en savoir plus sur les nouveautés et les mises à jour de Cloud Manager dans AEM as a Cloud Service 2020.2.0.
 
 ### Nouveautés {#what-is-new}
 
