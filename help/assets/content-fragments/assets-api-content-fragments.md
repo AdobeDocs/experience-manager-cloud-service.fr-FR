@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 8563a87bdfc251166590210993b7d9e4cbdee385
 workflow-type: tm+mt
 source-wordcount: '1931'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Prise en charge des fragments de contenu dans l’API HTTP AEM Assets{#content-fragments-support-in-aem-assets-http-api}
+# Prise en charge des fragments de contenu dans l’API HTTP AEM Assets {#content-fragments-support-in-aem-assets-http-api}
 
 ## Présentation {#overview}
 
@@ -305,18 +305,20 @@ Il existe quelques restrictions :
 
 * **Les modèles de fragment de contenu ne sont actuellement pas pris en charge** : ils ne peuvent pas être lus ni créés. Pour pouvoir créer un fragment de contenu, ou en mettre un existant à jour, les développeurs doivent connaître le chemin correct vers le modèle de fragment de contenu. Actuellement, l’interface utilisateur d’administration est le seul moyen d’obtenir un aperçu des modèles de fragment de contenu.
 * **Les références sont ignorées**. Il n’existe actuellement aucune vérification pour savoir si un fragment de contenu existant est référencé ou non. Par conséquent, la suppression d’un fragment de contenu, par exemple, peut entraîner des problèmes sur une page contenant une référence au fragment de contenu en question.
-* **Type de données JSONLa sortie API REST des** types de données  *JSON est actuellement basée sur une* chaîne **.
+* **Type de données JSON** L’API REST définit actuellement la sortie du *type de données JSON* sur *chaîne de caractères*.
 
 ## Codes d’état et messages d’erreur {#status-codes-and-error-messages}
 
 Les codes d’état suivants s’affichent dans les circonstances pertinentes :
 
-* **200** (OK) Retourné lorsque :
+* **200** (OK) 
+Retourné lorsque :
 
    * demande d’un fragment de contenu via `GET`
    * mise à jour réussie d’un fragment de contenu via `PUT`
 
-* **201** (Créé) renvoyé lorsque :
+* **201** (Créé)
+Retourné lorsque :
 
    * création réussie d’un fragment de contenu via `POST`
 
