@@ -1,12 +1,12 @@
 ---
 title: Formats de fichiers et types MIME pris en charge
-description: Formats de fichier et types MIME pris en charge par  [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
+description: Formats de fichier et types MIME pris en charge par [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
 source-wordcount: '818'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 93%
 
 En outre, [!DNL Experience Manager Assets] offre une prise en charge étendue pour générer des aperçus et des rendus et extraire des métadonnées et du texte en vue de l’indexation en texte intégral. Cette prise en charge étendue est assurée à l’aide de [microservices de ressources](asset-microservices-configure-and-use.md).
 
-Voici les points saillants de la conversion d’actifs à l’aide des microservices d’actifs :
+Les éléments essentiels concernant la conversion des ressources à l’aide des microservices de ressources sont les suivants :
 
 * [Formats de fichiers Adobe](#adobe-formats) clés générés par les applications et services Adobe, notamment [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] et [!DNL Adobe Acrobat] ou PDF.
 * [Formats de fichiers d’imagerie](#image-formats) clés.
@@ -25,7 +25,7 @@ Voici les points saillants de la conversion d’actifs à l’aide des microserv
 * [Formats de documents](#document-formats) courants, y compris les formats Microsoft Office et Open Document.
 * Large éventail de formats [vidéo](#video-formats) et [audio](#audio-formats).
 
-La légende suivante décrit le niveau de prise en charge de chaque format.
+Le tableau suivant décrit le niveau de prise en charge pour chaque format.
 
 | Niveau de prise en charge | Description |
 | ------------- | --------------------------- |
@@ -92,7 +92,7 @@ Les sous-types suivants de formats de fichiers d’images pixellisées ne sont p
 
 ## Formats 3D {#support-3d-formats}
 
-Les formats 3D suivants sont pris en charge.
+Les formats 3D suivants sont pris en charge.
 
 Voir [Utilisation de ressources 3D dans Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
 
@@ -226,10 +226,10 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 
 ## Conseils et restrictions {#limitations-and-tips}
 
-* Actuellement, la taille de fichier maximale pour l’extraction des métadonnées est d’environ 10 Go. Lors du téléchargement de fichiers très volumineux, l’opération d’extraction des métadonnées échoue parfois.
+* Actuellement, la taille de fichier maximale pour l’extraction des métadonnées est d’environ 10 Go. Lors du chargement de fichiers très volumineux, l’opération d’extraction des métadonnées peut parfois échouer.
 
 >[!MORELIKETHIS]
 >
 >* [Traitement des ressources à l’aide des microservices de ressources](asset-microservices-overview.md)
->* [Formats de fichiers pris en charge pour le balisage intelligent des fichiers texte](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+>* [Formats de fichiers pris en hcarge pour le balisage intelligent des ressources textuelles](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
