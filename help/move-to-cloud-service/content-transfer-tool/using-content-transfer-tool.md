@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 23943db6fbdf82a1d1be47e5a8777064b3750a95
 workflow-type: tm+mt
 source-wordcount: '2307'
-ht-degree: 72%
+ht-degree: 79%
 
 ---
 
@@ -28,13 +28,13 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * Pour utiliser l’outil de transfert de contenu, vous devez être un utilisateur administrateur sur votre instance source et appartenir au groupe **administrateurs** local de l’AEM Cloud Service vers lequel vous transférez le contenu. Les utilisateurs non privilégiés ne pourront pas récupérer le jeton d’accès pour utiliser l’outil de transfert de contenu.
 
-* Si l’option **Effacer le contenu existant sur l’instance Cloud avant d’assimiler** est activée, elle supprime l’intégralité du référentiel existant et crée un nouveau référentiel dans lequel intégrer du contenu. Cela signifie qu’il réinitialise tous les paramètres, y compris les autorisations sur l’instance de Cloud Service de cible. Cela est également vrai pour un utilisateur administrateur ajouté au groupe **administrateurs**. L’utilisateur devra être réajouté au groupe **administrateurs** pour récupérer le jeton d&#39;accès pour CTT.
+* Si l’option **Effacer le contenu existant sur l’instance Cloud avant d’assimiler** est activée, elle supprime l’intégralité du référentiel existant et crée un nouveau référentiel dans lequel intégrer du contenu. Cela signifie que tous les paramètres sont réinitialisés, y compris les autorisations relatives à l’instance Cloud Service cible. Cela est également vrai pour un utilisateur administrateur ajouté au groupe **administrateurs**. L’utilisateur devra être réajouté au groupe **administrateurs** pour récupérer le jeton d&#39;accès pour CTT.
 
-* Le jeton d&#39;accès peut expirer périodiquement, soit après une période spécifique, soit après la mise à niveau de l’environnement Cloud Service. Si le jeton d&#39;accès a expiré, vous ne pourrez pas vous connecter à l’instance du Cloud Service et vous devrez récupérer le nouveau jeton d&#39;accès. L’icône d’état associée à un jeu de migration existant se transforme en nuage rouge et affiche un message lorsque vous le survolez.
+* Le jeton d’accès peut expirer périodiquement, soit après une période spécifique, soit après la mise à niveau de l’environnement Cloud Service. Si le jeton d’accès a expiré, vous ne pourrez pas vous connecter à l’instance de Cloud Service et vous devrez récupérer le nouveau jeton d’accès. L’icône d’état associée à un jeu de migration existant prend l’aspect d’un nuage rouge et affiche un message si vous le survolez.
 
 * L’outil de transfert de contenu n’effectue aucune analyse de contenu avant de transférer le contenu de l’instance source vers l’instance de cible. Par exemple, CTT ne fait pas de distinction entre le contenu publié et le contenu non publié lors de l’assimilation de contenu dans un environnement de publication. Le contenu spécifié dans le jeu de migration sera ingéré dans l’instance de cible choisie. L’utilisateur peut assimiler une visionneuse de migration à une instance d’auteur ou de publication, ou aux deux. Il est recommandé d’installer le CTT et l’instance d’auteur source lors du déplacement du contenu vers une instance de production afin de déplacer le contenu vers l’instance d’auteur de cible et d’installer de la même manière le CTT sur l’instance de publication source pour déplacer le contenu vers l’instance de publication de cible.
 
-* Les utilisateurs et les groupes transférés par l’outil de transfert de contenu sont uniquement ceux qui sont requis en fonction du contenu pour respecter les autorisations. Le processus d’*extraction* copie l’ensemble de `/home` dans le jeu de migration et le processus d’*ingestion* copie tous les utilisateurs et groupes référencés dans les listes de contrôle d’accès du contenu migré. Pour mapper automatiquement les utilisateurs et les groupes existants à leurs ID IMS, reportez-vous à la section [Utilisation de l’outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
+* Les utilisateurs et les groupes transférés par l’outil de transfert de contenu sont uniquement ceux requis en fonction du contenu pour respecter les autorisations. Le processus d’*extraction* copie l’intégralité de `/home` dans le jeu de migration et le processus d’*ingestion* copie tous les utilisateurs et groupes référencés dans les listes de contrôle d’accès du contenu migré. Pour mapper automatiquement les utilisateurs et les groupes existants avec leurs ID IMS, reportez-vous à la section [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr#cloud-migration).
 
 * Pendant la phase d’extraction, l’outil de transfert de contenu est exécuté sur une instance source AEM active.
 
@@ -52,7 +52,7 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 Il est possible de télécharger l’outil de transfert de contenu dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le module par le biais du gestionnaire de modules sur votre instance source Adobe Experience Manager (AEM). Veillez à télécharger la dernière version. Pour plus d’informations sur la dernière version, consultez les [Notes de mise à jour](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 >[!NOTE]
->Téléchargez l’outil de transfert de contenu depuis le portail de [distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/fr-FR/aemcloud.html).
+>Téléchargez l’outil de transfert de contenu depuis le portail de [distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 ## Exécution de l’outil de transfert de contenu {#running-tool}
 
@@ -104,7 +104,7 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
       1. **Include version** : sélectionnez les options requises.
 
       1. **Inclure le mappage à partir des utilisateurs et groupes** IMS : Sélectionnez l’option permettant d’inclure le mappage à partir des utilisateurs et groupes IMS.
-Consultez [Outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) pour plus de détails.
+Consultez [Outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr) pour plus de détails.
 
       1. **Paths to be included** : utilisez le navigateur de chemins pour sélectionner les chemins objets de la migration. Le sélecteur de chemin accepte les entrées effectuées par saisie ou par sélection.
 
@@ -179,7 +179,7 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
 1. Pour démarrer l’extraction, sélectionnez un jeu de migration dans la page *Overview*, puis cliquez sur **Ingest** (Ingérer). La boîte de dialogue **Migration Set ingestion** (Ingestion du jeu de migration) s’affiche. Cliquez sur **Ingest** pour démarrer la phase d’ingestion. Il est possible d’ingérer en même temps du contenu vers les instances d’auteur et de publication.
 
    >[!IMPORTANT]
-   >Lorsque l’option **Effacer le contenu existant sur l’instance Cloud avant l’assimilation** est activée, elle supprime l’intégralité du référentiel existant et crée un nouveau référentiel dans lequel intégrer du contenu. Cela signifie qu’il réinitialise tous les paramètres, y compris les autorisations sur l’instance de Cloud Service de cible. Cela est également vrai pour un utilisateur administrateur ajouté au groupe **administrateurs**.
+   >Lorsque l’option **Effacer le contenu existant sur l’instance cloud avant l’ingestion** est activée, elle supprime l’intégralité du référentiel existant et crée un référentiel dans lequel intégrer du contenu. Cela signifie que tous les paramètres sont réinitialisés, y compris les autorisations relatives à l’instance Cloud Service cible. Cela est également vrai pour un utilisateur administrateur ajouté au groupe **administrateurs**.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
