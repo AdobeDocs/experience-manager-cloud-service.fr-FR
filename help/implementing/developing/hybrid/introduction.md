@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: e1db93e8f4cf8ef881b274879e800c9993753a66
 workflow-type: tm+mt
 source-wordcount: '1986'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -153,7 +153,7 @@ La section suivante, [Chargement d’une SPA](#loading-a-spa-application), exami
 
 ### Chargement d’une SPA {#loading-a-spa-application}
 
-1. Si ce n’est pas déjà fait, chargez l’application WKND SPA Project sur le serveur de publication ou en utilisant l’option **Vue as Published** dans le menu **Informations sur la page** de l’éditeur de page.
+1. Si ce n’est pas déjà fait, chargez l’application du projet du SPA WKND sur le serveur de publication ou à l’aide de l’option **Afficher comme publié(e)** du menu **Informations sur la page** de l’éditeur de page.
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
@@ -188,7 +188,7 @@ La section suivante, [Chargement d’une SPA](#loading-a-spa-application), exami
 
 1. Le modèle peut également regrouper les pages afin qu’elles soient chargées de manière synchrone, ce qui réduit le nombre de rechargements de page nécessaires.
 
-   Dans l&#39;exemple de l&#39;application de projet WKND SPA, les pages `home`, `page-1`, `page-2` et `page-3` sont chargées de manière synchrone, puisque les visiteurs visitent généralement toutes ces pages.
+   Dans l’exemple de l’application du projet du SPA WKND, les pages `home`, `page-1`, `page-2` et `page-3` sont chargées de manière synchrone, car les visiteurs visitent généralement toutes ces pages.
 
    Ce comportement n’est pas obligatoire et est entièrement définissable.
 
@@ -232,13 +232,13 @@ Dans la section suivante, nous allons examiner le contrat qui permet à l’édi
    >
    >Cette approche dans l’éditeur de SPA élimine la nécessité d’injecter des éléments personnalisés, en n’utilisant qu’un attribut de données supplémentaire, ce qui rend le balisage plus simple pour le développeur frontal.
 
-## En-tête et sans en-tête en AEM {#headful-headless}
+## Couplage et découplage dans AEM {#headful-headless}
 
-SPA peut être activé avec des niveaux flexibles d&#39;intégration au sein des AEM, y compris les SPA développés et maintenus en dehors des . De plus, SPA peut être exploité dans AEM tout en utilisant des AEM pour diffuser du contenu vers d’autres points de terminaison sans encombre.
+Les SPA peuvent être activés avec différents niveaux d’intégration au sein d’AEM, y compris pour les SPA développés et gérés en dehors d’AEM. De plus, les SPA peuvent être exploités dans AEM tout en utilisant AEM pour diffuser du contenu vers d’autres points de terminaison, et ce, en mode headless.
 
 >[!TIP]
 >
->Voir le document [En-tête et sans-tête dans AEM](/help/implementing/developing/headful-headless.md) pour plus d’informations.
+>Consultez le document [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) pour plus d’informations.
 
 ## Étapes suivantes {#next-steps}
 
