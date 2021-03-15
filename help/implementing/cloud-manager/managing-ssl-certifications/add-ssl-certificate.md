@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '539'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 74%
 # Ajout d’un certificat SSL {#adding-an-ssl-certificate}
 
 >[!NOTE]
->AEM as a Cloud Service n’accepte que les certificats OV (validation d’organisation) ou EV (validation étendue). Les certificats DV (Domain Validation) ne sont pas acceptés. En outre, tout certificat doit être un certificat TLS X.509 d’une autorité de certification approuvée avec une clé privée RSA 2 048 bits correspondante.
+>AEM as a Cloud Service n’accepte que les certificats OV (validation d’organisation) ou EV (validation étendue). Les certificats DV (Domain Validation) ne sont pas acceptés. De plus, tout certificat doit être de type TLS X.509, délivré par une autorité de certification approuvée (CA) et doté d’une clé privée RSA 2 048 bits correspondante.
 
-La mise en service d’un certificat prend quelques jours et il est recommandé que le certificat soit mis en service plusieurs mois à l’avance. Pour plus d&#39;informations, consultez [Obtention d&#39;un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md).
+La mise en service d’un certificat prend quelques jours et il est recommandé que le certificat soit mis en service plusieurs mois à l’avance. Consultez [Obtention d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) pour plus d’informations.
 
 ## Format de certificat {#certificate-format}
 
@@ -41,7 +41,7 @@ Procédez comme suit pour convertir le format de vos fichiers SSL au format PEM�
 
 * À tout moment, Cloud Manager autorise un maximum de 10 certificats SSL qui peuvent être associés à un ou plusieurs environnements sur l’ensemble de votre programme, même si un certificat a expiré. L’interface utilisateur de Cloud Manager permet toutefois d’installer jusqu’à 50 certificats SSL dans le programme avec cette contrainte.
 
-## Ajouter un certificat {#adding-a-cert}
+## Ajout d’un certificat {#adding-a-cert}
 
 Procédez comme suit pour ajouter un certificat :
 
@@ -54,16 +54,16 @@ Procédez comme suit pour ajouter un certificat :
 1. Cliquez sur **Ajouter le certificat SSL** pour ouvrir la boîte de dialogue **Ajouter le certificat SSL**.
 
    * Entrez un nom pour votre certificat dans **Nom du certificat**. Cela peut être n’importe quel nom qui vous aide à référencer facilement votre certificat.
-   * Collez la **chaîne de certificats**, **clé privée** et **chaîne de certificats** dans leurs champs respectifs. Utilisez l’icône Coller située à droite de la zone de saisie.
+   * Collez le **certificat**, la **clé privée** et la **chaîne de certificat** dans leurs champs respectifs. Utilisez l’icône Coller située à droite de la zone de saisie.
 Les trois champs ne sont pas facultatifs et doivent être renseignés.
 
       ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
 
       >[!NOTE]
-      >Toutes les erreurs détectées s&#39;affichent. Vous devez corriger toutes les erreurs avant de pouvoir enregistrer votre certificat. Consultez la section [Erreurs de certificat](#certificate-errors) pour en savoir plus sur la résolution des erreurs courantes.
+      >Toutes les erreurs détectées s’affichent. Vous devez corriger toutes les erreurs avant de pouvoir enregistrer votre certificat. Consultez [Erreurs de certificat](#certificate-errors) pour en savoir plus sur la résolution des erreurs courantes.
 
-1. Cliquez sur **Enregistrer** pour envoyer votre certificat. Il s’affiche sous la forme d’une nouvelle ligne dans le tableau.
+1. Cliquez sur **Enregistrer** pour envoyer votre certificat. Celui-ci s’affiche dans une nouvelle ligne du tableau.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
 
