@@ -109,7 +109,7 @@ Lorsque le certificat expire, il n’est plus approuvé. Pour ajouter un certifi
 
 1. Accédez à [https://console.adobe.io](https://console.adobe.io), puis au service existant dans le projet. Chargez le nouveau certificat et configurez-le. Pour plus d’informations sur la configuration, voir les instructions contenues dans [Création d’une intégration dans Adobe Developer Console](#create-aio-integration).
 
-## Activer le balisage automatique lorsque des ressources sont téléchargées (facultatif) {#enable-smart-tagging-for-uploaded-assets}
+## Activer le balisage automatique lorsque des ressources sont chargées (facultatif) {#enable-smart-tagging-for-uploaded-assets}
 
 1. Dans [!DNL Experience Manager], accédez à **[!UICONTROL Outils > Processus > Modèles]**.
 1. Sur la page **[!UICONTROL Modèles de processus]**, sélectionnez le modèle de processus **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques]**.
