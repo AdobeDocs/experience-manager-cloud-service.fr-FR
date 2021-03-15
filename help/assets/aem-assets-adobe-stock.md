@@ -1,6 +1,6 @@
 ---
-title: Gérer les ressources [!DNL Adobe Stock]  dans [!DNL Assets].
-description: Rechercher, récupérer, gérer les licences et gérer les ressources [!DNL Adobe Stock]  dans [!DNL Adobe Experience Manager]. Utiliser les ressources sous licence comme toute autre ressource numérique.
+title: Gérer les ressources [!DNL Adobe Stock] dans [!DNL Assets].
+description: Rechercher, récupérer, gérer les licences et gérer les ressources [!DNL Adobe Stock] dans [!DNL Adobe Experience Manager]. Utiliser les ressources sous licence comme toute autre ressource numérique.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
@@ -25,7 +25,7 @@ Pour permettre à [!DNL Experience Manager] et [!DNL Adobe Stock] de communiquer
 >
 >Seuls les administrateurs d’[!DNL Experience Manager] et d’[!DNL Admin Console] d’une entreprise peuvent procéder à l’intégration, dans la mesure où elle requiert des privilèges d’administrateur.
 
-### Création d’une configuration d’IMS {#create-an-ims-configuration}
+### Création d’une configuration IMS {#create-an-ims-configuration}
 
 1. Dans l’interface utilisateur [!DNL Experience Manager], naviguez jusqu’à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Configurations d’Adobe IMS]**. Cliquez sur **[!UICONTROL Créer]**, puis sélectionnez **[!UICONTROL Solution cloud]** > **[!UICONTROL Adobe Stock]**.
 1. Réutilisez un certificat existant ou sélectionnez **[!UICONTROL Créer un certificat]**.
@@ -48,7 +48,7 @@ Pour permettre à [!DNL Experience Manager] et [!DNL Adobe Stock] de communiquer
 
 >[!NOTE]
 >
->S’il existe plusieurs configurations [!DNL Adobe Stock], sélectionnez la configuration souhaitée dans le panneau Préférences utilisateur. Pour accéder au panneau à partir de la page d’accueil d’Experience Manager, cliquez sur l’icône de l’utilisateur, puis sur **[!UICONTROL Préférences utilisateur]** > **[!UICONTROL Configuration de Stock]**.
+>S’il existe plusieurs configurations [!DNL Adobe Stock], sélectionnez la configuration souhaitée dans le panneau Préférences utilisateur. Pour accéder au panneau à partir de la page d’accueil d’Experience Manager, cliquez sur l’icône de l’utilisateur, puis sur **[!UICONTROL Préférences utilisateur]** > **[!UICONTROL Configuration Stock]**.
 
 ## Utilisation et gestion de ressources [!DNL Adobe Stock] dans [!DNL Experience Manager] {#usemanage}
 
