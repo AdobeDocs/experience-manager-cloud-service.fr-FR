@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: c71117de502b1ee756e06e756a643c987113ea45
 workflow-type: tm+mt
 source-wordcount: '695'
-ht-degree: 33%
+ht-degree: 70%
 
 ---
 
@@ -18,24 +18,24 @@ Le réseau de diffusion de contenu géré par AEM satisfait à la plupart des ex
 
 ## Réseau de diffusion de contenu géré par AEM {#aem-managed-cdn}
 
-Suivez les sections ci-dessous pour utiliser l’interface utilisateur en libre-service de Cloud Manager afin de préparer la diffusion de contenu à l’aide du CDN prêt à l’emploi d’AEM :
+Suivez les étapes des sections ci-dessous pour utiliser l’interface utilisateur en libre-service de Cloud Manager afin de préparer la diffusion de contenu à l’aide du réseau de diffusion de contenu prêt à l’emploi d’AEM :
 
 1. [Gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [Gestion des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 **Limitation du trafic**
 
-Par défaut, pour une configuration CDN gérée AEM, tout le trafic public peut se diriger vers le service de publication, pour les environnements de production et non-production (développement et étape). Si vous souhaitez limiter le trafic au service de publication pour un environnement donné (par exemple, en limitant l’évaluation par une plage d’adresses IP), vous pouvez le faire en libre-service via l’interface utilisateur de Cloud Manager.
+Par défaut, dans le cas d’une configuration de réseau de diffusion de contenu géré par AEM, tout le trafic public peut se diriger vers le service de publication, tant pour les environnements de production que de non-production (de développement et d’évaluation). Si vous souhaitez limiter le trafic au service de publication pour un environnement donné (par exemple, en limitant l’évaluation sur une plage d’adresses IP), vous pouvez le faire en libre-service via l’interface utilisateur de Cloud Manager.
 
-Consultez [Gestion des Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) pour en savoir plus.
+Consultez [Gestion des listes autorisées d’adresses IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) pour en savoir plus.
 
 >[!CAUTION]
 >
->Seules les demandes provenant des adresses IP autorisées seront diffusées par le réseau de diffusion de contenu géré de l’AEM. Si vous pointez votre propre CDN sur le CDN AEM géré, assurez-vous que les adresses IP de votre CDN sont incluses dans la liste autorisée.
+>Seules les requêtes provenant des adresses IP autorisées seront diffusées par le biais du réseau de diffusion de contenu géré par AEM. Si vous pointez votre propre CDN sur le CDN AEM géré, assurez-vous que les adresses IP de votre CDN sont incluses dans la liste autorisée.
 
 ## Le réseau de diffusion de contenu du client pointe vers le réseau de diffusion de contenu géré par AEM {#point-to-point-CDN}
 
-Si un client doit utiliser son réseau de diffusion de contenu existant, il peut le gérer et le pointer vers le réseau de diffusion de contenu géré AEM, à condition que les éléments suivants soient satisfaits :
+Si un client doit utiliser son réseau de diffusion de contenu existant, il peut le gérer et le diriger vers le réseau de diffusion de contenu géré AEM, à condition que les conditions suivantes soient satisfaites :
 
 * Le client doit disposer d’un réseau de diffusion de contenu existant potentiellement onéreux à remplacer.
 * Le client doit en assurer la gestion.
@@ -46,7 +46,7 @@ Si un client doit utiliser son réseau de diffusion de contenu existant, il peut
 Instructions de configuration :
 
 1. Définissez l’en-tête `X-Forwarded-Host` avec le nom de domaine.
-1. Définissez l’en-tête d’hôte avec le domaine d’origine, qui est l’entrée du CDN AEM. La valeur doit provenir d’Adobe.
+1. Définissez l’en-tête de l’hôte avec le domaine d’origine, qui est l’entrée du réseau de diffusion de contenu AEM. La valeur doit provenir d’Adobe.
 1. Envoyez l’en-tête SNI à l’origine. Tout comme l’en-tête Host, l’en-tête SNI doit être le domaine d’origine.
 1. Définissez `X-Edge-Key` ou `X-AEM-Edge-Key` (si votre réseau de diffusion de contenu efface X-Edge-*), qui est nécessaire pour acheminer correctement le trafic vers les serveurs AEM. La valeur doit provenir d’Adobe. Veuillez informer l&#39;Adobe si vous souhaitez un accès direct à l&#39;entrée du CDN de l&#39;Adobe (à bloquer lorsque `X-Edge-Key` n&#39;est pas présent).
 
@@ -56,7 +56,7 @@ Avant d’accepter le trafic en direct, vous devez vérifier auprès de l’assi
 >
 >Les clients qui gèrent leur propre CDN doivent garantir l’intégrité des en-têtes envoyés à AEM CDN. Par exemple, il est recommandé aux clients d’effacer tous les en-têtes `X-Forwarded-*` et de les définir sur des valeurs connues et contrôlées. Par exemple, `X-Forwarded-For` doit contenir l’adresse IP du client, tandis que `X-Forwarded-Host` doit contenir l’hôte du site.
 
-Les performances peuvent être faibles en raison du saut supplémentaire, bien que les houblons du CDN du client vers le CDN géré AEM sont susceptibles d’être efficaces.
+Les performances peuvent diminuer en raison du saut supplémentaire, bien que les sauts entre le réseau de diffusion du client et celui géré par AEM puissent être efficaces.
 
 Notez que cette configuration CDN client est prise en charge pour la couche Publication, mais pas devant la couche Auteur.
 
@@ -64,19 +64,19 @@ Notez que cette configuration CDN client est prise en charge pour la couche Publ
 
 Le CDN géré AEM ajoute des en-têtes à chaque requête avec :
 
-* code de pays : `x-aem-client-country`
-* code continent : `x-aem-client-continent`
+* Le code de pays : `x-aem-client-country`
+* Le code continent : `x-aem-client-continent`
 
-Les valeurs des codes de pays sont les codes Alpha-2 décrits [ici](https://en.wikipedia.org/wiki/ISO_3166-1).
+Les valeurs des codes de pays sont les codes Alpha-2 décrits [ici](https://fr.wikipedia.org/wiki/ISO_3166-1).
 
-Les valeurs des codes du continent sont les suivantes :
+Les valeurs des codes du continent sont les suivantes :
 
-* Afrique du Sud
-* Antarctique
-* AS Asia
-* Europe
-* Amérique du Nord
-* Océanie
+* AF Afrique
+* AN Antarctique
+* AS Asie
+* EU Europe
+* NA Amérique du Nord
+* OC Océanie
 * SA Amérique du Sud
 
-Ces informations peuvent s’avérer utiles pour les cas d’utilisation, tels que la redirection vers une URL différente en fonction de l’origine (pays) de la demande. Utilisez l’en-tête Vary pour mettre en cache les réponses qui dépendent des informations géographiques. Par exemple, les redirections vers un landing page de pays spécifique doivent toujours contenir `Vary: x-aem-client-country`. Si nécessaire, vous pouvez utiliser `Cache-Control: private` pour empêcher la mise en cache. Voir aussi [Mise en cache](/help/implementing/dispatcher/caching.md#html-text).
+Ces informations peuvent s’avérer utiles dans certains cas d’utilisation, tels que la redirection vers une URL différente en fonction de l’origine (pays) de la requête. Utilisez l’en-tête Vary pour mettre en cache les réponses qui dépendent des informations géographiques. Par exemple, les redirections vers un landing page de pays spécifique doivent toujours contenir `Vary: x-aem-client-country`. Si nécessaire, vous pouvez utiliser `Cache-Control: private` pour empêcher la mise en cache. Voir aussi [Mise en cache](/help/implementing/dispatcher/caching.md#html-text).
