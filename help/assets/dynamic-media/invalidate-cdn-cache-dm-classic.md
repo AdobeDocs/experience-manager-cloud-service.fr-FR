@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 6dcf891fbe4a58f357fb429fc13cdd16bce7e3d0
 workflow-type: tm+mt
 source-wordcount: '679'
-ht-degree: 48%
+ht-degree: 51%
 
 ---
 
@@ -26,11 +26,11 @@ Voir aussi [Présentation du cache dans Dynamic Media Classic](https://helpx.a
 
 **Pour invalider votre cache de réseau CDN au moyen de Dynamic Media Classic :**
 
-1. Ouvrez l&#39;[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous à votre compte.
+1. Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started) puis connectez-vous à votre compte.
 
    Vos informations d’identification et de connexion ont été fournies par l’Adobe au moment de l’attribution des privilèges d’accès. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
 
-1.  Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**.
+1. Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**.
 1. Recherchez la zone de texte **[!UICONTROL Modèle d’invalidation sur le réseau de diffusion de contenu]** dans la section Serveurs de la page Paramètres généraux de l’application.
 
 1. Précisez le modèle utilisé pour invalider le cache du réseau de diffusion de contenu (CDN).
