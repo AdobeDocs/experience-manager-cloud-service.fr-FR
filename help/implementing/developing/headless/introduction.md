@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: e1db93e8f4cf8ef881b274879e800c9993753a66
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -22,13 +22,13 @@ L’implémentation découplée renonce à la gestion des pages et des composant
 
 ![Modèles d’implémentation AEM](assets/aem-implementation-models.png)
 
-## Comparaison entre En-tête et Sans en-tête {#headful-headless}
+## Comparaison entre couplage et découplage {#headful-headless}
 
-Ce document se concentre sur le modèle complet de mise en oeuvre sans tête des AEM. Cependant, le choix entre tête et tête n&#39;est pas nécessairement un choix binaire en AEM. Vous pouvez utiliser des fonctions sans en-tête pour gérer et diffuser votre contenu sur divers points de terminaison tout en permettant aux auteurs de contenu de modifier des applications d’une seule page. Tout en AEM.
+Ce document se concentre sur le modèle de mise en œuvre entièrement découplée d’AEM. Pour autant, le choix entre couplage et découplage n’est pas nécessairement binaire dans AEM. Vous pouvez utiliser des fonctions découplées afin de gérer et diffuser votre contenu pour différents points d’entrée tout en permettant aux auteurs de contenu de modifier des applications sur une seule page. Le tout dans AEM.
 
 >[!TIP]
 >
->Voir le document [En-tête et sans-tête dans AEM](/help/implementing/developing/headful-headless.md) pour plus d’informations.
+>Voir le document [Couplage et découplage dans AEM](/help/implementing/developing/headful-headless.md) pour plus d’informations.
 
 ## AEM as a Cloud Service et le découplage {#aem-headless}
 
@@ -43,7 +43,7 @@ AEM as a Cloud Service est un outil couple pour le modèle d’implémentation d
    * Ils sont créés par les auteurs de contenu à l’aide de l’éditeur de fragments de contenu d’AEM.
    * Ils sont stockés dans AEM Assets et gérés dans l’interface utilisateur d’administration d’Assets.
 1. API de contenu pour la diffusion
-   * L’API AEM GraphQL prend en charge la diffusion de fragments de contenu.
+   * L’API GraphQL d’AEM prend en charge la diffusion de fragments de contenu.
    * L’API REST AEM Assets prend en charge les opérations CRUD sur les fragments de contenu.
    * La diffusion directe de contenu est également possible avec l’[exportation JSON du composant principal de fragment de contenu.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/content-fragment-component.html)
 
@@ -55,7 +55,7 @@ Les guides de prise en main du découplage proposent un chemin d’accès simple
 1. [Création d’un modèle de fragment de contenu](getting-started/create-content-model.md)
 1. [Création d’un dossier Ressources](getting-started/create-assets-folder.md)
 1. [Création d’un fragment de contenu](getting-started/create-content-fragment.md)
-1. [Accès et diffusion de fragments de contenu](getting-started/create-api-request.md)
+1. [Accès aux fragments de contenu et leur diffusion](getting-started/create-api-request.md)
 
 ## Public {#audience}
 
