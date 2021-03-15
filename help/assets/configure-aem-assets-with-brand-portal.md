@@ -1,12 +1,12 @@
 ---
-title: Configuration d’AEM Assets as a  [!DNL Cloud Service]  avec Brand Portal
+title: Configuration d’AEM Assets as a [!DNL Cloud Service] avec Brand Portal
 description: Configuration d’AEM Assets avec Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
 source-git-commit: 4a22ef2913e88b037a65746f782e4c6a20afdddb
 workflow-type: tm+mt
 source-wordcount: '2411'
-ht-degree: 63%
+ht-degree: 64%
 
 ---
 
@@ -234,7 +234,7 @@ La clé publique (certificat) authentifie votre profil sur Adobe Developer Conso
 
    ![Création d’un certificat](assets/ims-config2.png)
 
-1. Cliquez sur l&#39;icône **[!UICONTROL Télécharger la clé publique]** et enregistrez le fichier de clé publique (CRT) sur votre ordinateur.
+1. Cliquez sur l’icône **[!UICONTROL Télécharger la clé publique]** et enregistrez le fichier de clé publique (CRT) sur votre ordinateur.
 
    La clé publique est utilisée ultérieurement pour configurer l’API de votre client du portail de marque et générer les informations d’identification du compte de service dans la console de développement des Adobes.
 
