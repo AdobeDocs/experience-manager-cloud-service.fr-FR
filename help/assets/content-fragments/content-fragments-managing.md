@@ -1,16 +1,16 @@
 ---
 title: Gestion des fragments de contenu
-description: Les fragments de contenu sont stockés en tant que Ressources, et ils sont donc principalement gérés par l’intermédiaire de la console Ressources.
+description: Les fragments de contenu sont stockés en tant que ressources, et ils sont donc principalement gérés par l’intermédiaire de la console Ressources.
 translation-type: tm+mt
 source-git-commit: 33f0980b138959ab4bc13eb5fe80733a0b4ef3a2
 workflow-type: tm+mt
 source-wordcount: '1593'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 
-# Gestion des fragments de contenu{#managing-content-fragments}
+# Gestion des fragments de contenu {#managing-content-fragments}
 
 Les fragments de contenu sont stockés en tant que **Ressources**, et ils sont donc principalement gérés par l’intermédiaire de la console **Ressources**.
 
@@ -69,9 +69,9 @@ La méthode de création d’un fragment de contenu est la suivante :
 1. Sélectionnez **Créer** pour terminer l’action, puis **ouvrez** le fragment en mode d’édition ou revenez à la console en sélectionnant **Terminé**.
 
    >[!NOTE]
-   >En mode **Liste** de la console, vous pouvez mettre à jour les **paramètres de Vue** pour activer la colonne **Modèle de fragment de contenu**.
+   >En mode **Liste** de la console, vous pouvez mettre à jour les **Paramètres d’affichage** pour activer la colonne **Modèle de fragment de contenu**.
 
-## Actions pour un fragment de contenu dans la console Ressources {#actions-for-a-content-fragment-assets-console}
+## Actions pour un fragment de contenu dans la console de ressources {#actions-for-a-content-fragment-assets-console}
 
 Dans la console **Ressources**, différentes actions sont disponibles pour vos fragments de contenu, soit :
 
@@ -101,7 +101,7 @@ Sélectionnez le fragment pour afficher la barre d’outils avec les actions app
 * **Gérer la publication**
 * **Gérer les balises**
 * **À la collection**
-* **Copier** (et **coller**) 
+* **Copier** (et **coller**)
 * **Déplacer**
 * **Supprimer**
 
@@ -145,11 +145,11 @@ Pour ouvrir votre fragment à des fins de modification :
 
 ## Modes et actions dans l’éditeur de fragment de contenu {#modes-actions-content-fragment-editor}
 
-L’éditeur de fragments de contenu propose divers modes et actions.
+L’éditeur de fragments de contenu comporte différents modes et actions.
 
 ### Modes dans l’éditeur de fragment de contenu {#modes-in-the-content-fragment-editor}
 
-Parcourez les différents modes à l’aide des icônes du panneau latéral :
+Naviguez entre les différents modes en utilisant les icônes du panneau latéral :
 
 * Variations : [Modification du contenu](#editing-the-content-of-your-fragment) et [Gestion des variations](#creating-and-managing-variations-within-your-fragment)
 
@@ -161,27 +161,27 @@ Parcourez les différents modes à l’aide des icônes du panneau latéral :
 
 ![modes](assets/cfm-managing-04.png)
 
-### Actions de barre d’outils dans l’éditeur de fragments de contenu {#toolbar-actions-in-the-content-fragment-editor}
+### Actions de la barre d’outils dans l’éditeur de fragment de contenu {#toolbar-actions-in-the-content-fragment-editor}
 
-Certaines fonctions de la barre d’outils supérieure sont disponibles dans plusieurs modes :
+Certaines fonctions de la barre d’outils supérieure sont disponibles dans différents modes :
 
 ![modes](assets/cfm-managing-top-toolbar.png)
 
-* Sous le nom du fragment, vous pouvez voir le nom du [Modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) utilisé pour créer le fragment actif :
+* Sous le nom du fragment, vous pouvez voir le nom du [Modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) utilisé pour créer le fragment actif :
 
-   * Le nom est également un lien qui ouvre l&#39;éditeur de modèles.
+   * Le nom est également un lien servant à ouvrir l’éditeur de modèles.
 
-* Voir l’état du fragment ; par exemple, des informations sur le moment de sa création, de sa modification ou de sa publication. L’état est également codé par couleur :
+* Voir l’état du fragment, par exemple, les informations relatives à la date et à l’heure de création, de modification ou de publication. L’état est également codé par couleur :
 
-   * Nouveau : gris
-   * Version préliminaire : bleu
-   * Publié : vert
-   * Modifié : orange
-   * Désactivé : rouge
+   * Nouveau : gris
+   * Version préliminaire : bleu
+   * Publié : vert
+   * Modifié : orange
+   * Désactivé : rouge
 
-* **[](#publishing-and-referencing-a-fragment)** Publiez le fragment.
+* **[Publier](#publishing-and-referencing-a-fragment)** le fragment.
 
-## Enregistrer, Annuler et Versions  {#save-cancel-and-versions}
+## Enregistrement, annulation et versions  {#save-cancel-and-versions}
 
 >[!NOTE]
 >
@@ -327,8 +327,8 @@ Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore �
 
 Les fragments de contenu doivent être publiés pour être utilisés dans l’environnement de publication. Ils peuvent être publiés :
 
-* après la création ; en utilisant les actions [disponibles dans la console Ressources](#actions-for-a-content-fragment-assets-console).
-* Dans l&#39;[éditeur de fragments de contenu](#toolbar-actions-in-the-content-fragment-editor).
+* Après la création, en utilisant les actions [disponibles dans la console de ressources](#actions-for-a-content-fragment-assets-console).
+* Dans l’[éditeur de fragment de contenu](#toolbar-actions-in-the-content-fragment-editor).
 * Lorsque vous [publiez une page qui utilise le fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), celui-ci est répertorié dans les références de la page.
 
 >[!CAUTION]
