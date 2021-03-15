@@ -83,7 +83,7 @@ La date de publication de [!UICONTROL Cloud Manager] version 2020.9.0 est le 3
 
 ## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
-Suivez cette section pour en savoir plus sur les nouveautés et les mises à jour de la version 1.1.0 de Cloud Readiness Analyzer.
+Consultez cette section pour en savoir plus sur les nouveautés et les mises à jour de la version 1.1.0 de Cloud Readiness Analyzer.
 
 ### Nouveautés {#what-is-new-cra}
 
@@ -99,7 +99,7 @@ Suivez cette section pour en savoir plus sur les nouveautés et les mises à jou
 
 ## Outil de transfert de contenu {#content-transfer-tool}
 
-Suivez cette section pour découvrir les nouveautés et les mises à jour de l’outil de transfert de contenu version 1.1.10.
+Consultez cette section pour découvrir les nouveautés et les mises à jour de l’outil de transfert de contenu version 1.1.10.
 
 ### Nouveautés {#what-is-new-ctt}
 
@@ -113,13 +113,13 @@ Suivez cette section pour découvrir les nouveautés et les mises à jour de l�
 
 ## Outils de refactorisation du code {#code-refactoring}
 
-Suivez cette section pour découvrir les nouveautés et les mises à jour des outils de refactorisation du code.
+Consultez cette section pour découvrir les nouveautés et les mises à jour des outils de refactorisation du code.
 
 ### Nouveautés {#what-is-new-refactoring}
 
 * Le plug-in AIO-CLI prend en charge Repository Modernizer et permet aux utilisateurs d’exécuter l’outil.
 
-   Reportez-vous à [Ressource Git : aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) pour plus de détails.
+   Pour plus d’informations, voir [Ressource Git : aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration).
 
 * L’utilitaire Repository Modernizer peut être utilisé pour restructurer des modules de projet existants en modules compatibles avec la structure de projet définie pour AEM as a Cloud Service.
 
