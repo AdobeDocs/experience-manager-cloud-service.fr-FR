@@ -2,10 +2,10 @@
 title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.3.0
 description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.3.0
 translation-type: tm+mt
-source-git-commit: 707c5daf5c48b2054fd684b4557143fbd8d873c7
+source-git-commit: 5dabb0f9f119d8c56c4b1b64e1528f03e1a92fac
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 18%
+source-wordcount: '456'
+ht-degree: 16%
 
 ---
 
@@ -17,12 +17,16 @@ Cette page présente les notes de mise à jour de Cloud Manager dans AEM as a Cl
 ## Date de publication {#release-date}
 
 La date de publication de Cloud Manager en tant que Cloud Service 2021.3.0 dans AEM est le 11 mars 2021.
+La prochaine version est prévue pour le 8 avril 2021.
 
 ## Cloud Manager {#cloud-manager}
 
 ### Nouveautés {#what-is-new}
 
-* Les clients disposant d’environnements avec des configurations CDN préexistantes pour les Listes autorisées IP, les certificats SSL et les noms de domaine personnalisés verront un message sur leurs configurations existantes et pourront se servir librement via l’interface utilisateur.
+* Les clients disposant d’environnements avec des configurations de nom de domaine personnalisé préexistantes pour [Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) et [Noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) verront un message sur leurs configurations existantes et pourront se servir eux-mêmes via l’interface utilisateur. Les utilisateurs peuvent désormais :
+   * Ajouter la solution Sites à un programme existant avec Ressources (ou inversement).
+   * Supprimez des sites (ou des ressources) d’un programme existant avec des sites et des ressources.
+   * Ajoutez ensuite les droits de solution inutilisés à un programme existant ou en tant que nouveau Programme.
 
 * Les utilisateurs disposant des autorisations requises peuvent désormais modifier le Programme, ce qui leur permet d’effectuer les opérations suivantes en libre-service.
 
