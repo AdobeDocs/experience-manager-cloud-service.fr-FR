@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Images panoramiques{#panoramic-images}
+# Images panoramiques {#panoramic-images}
 
 Cette section décrit comment utiliser la visionneuse d’images panoramiques pour le rendu d’images panoramiques sphériques afin de profiter d’une expérience de visionnage immersive à 360° d’une pièce, d’une propriété, d’un lieu ou d’un paysage.
 
@@ -77,8 +77,8 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 ## Aperçu des images panoramiques {#previewing-panoramic-images}
 
-Voir aussi [Aperçu des ressources](/help/assets/dynamic-media/previewing-assets.md).
+Voir [Aperçu des ressources](/help/assets/dynamic-media/previewing-assets.md).
 
-## Publication des images panoramiques   {#publishing-panoramic-images}
+## Publication des images panoramiques {#publishing-panoramic-images}
 
 Voir [Publication de ressources](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
