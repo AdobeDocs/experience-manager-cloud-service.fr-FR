@@ -5,14 +5,14 @@ translation-type: tm+mt
 source-git-commit: 260578950833b96616a2a3928d206e6f9e0a206a
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
 # Fragments de contenu - Explorateur de configurations {#content-fragments-configuration-browser}
 
-## Activation de la fonctionnalité de fragment de contenu pour votre instance {#enable-content-fragment-functionality-instance}
+## Activation de la fonctionnalité de fragments de contenu pour votre instance {#enable-content-fragment-functionality-instance}
 
 Avant d’utiliser les fragments de contenu, vous devez utiliser l’**Explorateur de configurations** pour activer les éléments suivants :
 
@@ -38,9 +38,9 @@ Pour [utiliser certaines fonctionnalités de fragments de contenu,](#creating-a-
 
 >[!CAUTION]
 >
->Les sous-configurations (configuration imbriquée dans une configuration) ne sont pas prises en charge pour une utilisation avec les fragments de contenu.
+>L’utilisation des sous-configurations (les configurations imbriquées dans une configuration) n’est pas prise en charge avec les fragments de contenu.
 
-1. Accédez à **Outils**, **Général**, puis ouvrez l’**explorateur de configurations**.
+1. Accédez à **Outils**, **Général**, puis ouvrez l’**Explorateur de configurations**.
 
 1. Utilisez le bouton **Créer** pour ouvrir la boîte de dialogue.
 
