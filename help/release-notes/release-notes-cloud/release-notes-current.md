@@ -2,7 +2,7 @@
 title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
+source-git-commit: 7059f0868fec3bbc665725c9ad2cc252805d8916
 workflow-type: tm+mt
 source-wordcount: '1675'
 ht-degree: 20%
@@ -87,8 +87,8 @@ La prochaine version est prévue pour le 8 avril 2021.
 
 * Les utilisateurs disposant des autorisations requises peuvent désormais modifier un Programme, ce qui leur permet d’effectuer les opérations suivantes en libre-service :
 
-   * Ajouter la solution Sites à un programme existant avec Ressources (ou inversement).
-   * Supprimez des sites (ou des ressources) d’un programme existant avec des sites et des ressources.
+   * Ajouter la solution Sites à un programme existant avec Ressources ou inversement.
+   * Supprimez des sites ou des ressources d’un programme existant avec des sites et des ressources.
    * Ajoutez ensuite les droits de solution inutilisés à un programme existant ou en tant que nouveau Programme.
 
 * **Le** libellé de mise à jour Push AEM sera désormais affiché pour les écrans  ** d’exécution de pipeline et  ** d’activité.
