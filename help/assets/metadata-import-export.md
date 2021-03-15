@@ -6,18 +6,18 @@ translation-type: tm+mt
 source-git-commit: 8110259a910c891a5bcf7507cfa9897603a45c91
 workflow-type: tm+mt
 source-wordcount: '665'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 
-# Importation et exportation des métadonnées de ressources par lot  {#import-and-export-asset-metadata-in-bulk}
+# Importation et exportation des métadonnées de ressources par lot {#import-and-export-asset-metadata-in-bulk}
 
 AEM Assets permet d’importer des métadonnées de ressources par lot à l’aide d’un fichier CSV. Vous pouvez effectuer des mises à jour par lot pour les ressources récemment transférées ou les ressources existantes en important un fichier CSV. Vous pouvez également assimiler des métadonnées de ressources par lot à partir d’un système tiers au format CSV.
 
-## Importation de métadonnées   {#import-metadata}
+## Importation de métadonnées  {#import-metadata}
 
-L’importation de métadonnées est asynchrone et ne nuit pas aux performances du système. La mise à jour simultanée des métadonnées de plusieurs fichiers peut nécessiter beaucoup de ressources en raison de l’activité de l’écriture différée XMP à l’aide de microservices de ressources. Adobe vous recommande de planifier toute opération en bloc pendant l&#39;utilisation de serveurs légers afin que les performances des autres utilisateurs ne soient pas affectées.
+L’importation de métadonnées est asynchrone et ne nuit pas aux performances du système. La mise à jour simultanée des métadonnées de plusieurs ressources peut nécessiter beaucoup de ressources en raison de l’activité générée par les microservices de ressources dédiés à l’écriture différée XMP. Adobe vous recommande de planifier toute opération par lot pendant les périodes au cours desquelles vos serveurs sont le moins sollicités afin que les performances des autres utilisateurs ne soient pas affectées.
 
 >[!NOTE]
 >
@@ -33,12 +33,12 @@ L’importation de métadonnées est asynchrone et ne nuit pas aux performances 
    | Taille du lot | Nombre de ressources dans un lot pour lesquelles les métadonnées doivent être importées. La valeur par défaut est 50. La valeur maximale est 100. |
    | Séparateur de champs | La valeur par défaut est `,` (une virgule). Vous pouvez spécifier n’importe quel autre caractère. |
    | Délimiteur à plusieurs valeurs | Séparateur des valeurs de métadonnées. La valeur par défaut est `|`. |
-   | Lancer les workflows | Faux par défaut. Lorsque la valeur est définie sur `true` et que les paramètres par défaut du lanceur sont utilisés pour le workflow Écriture différée des métadonnées de gestion des ressources numériques (qui écrit des métadonnées dans les données XMP binaires). L’activation des workflows de lancement ralentit le système. |
+   | Lancer les workflows | Faux par défaut. Lorsque la valeur est définie sur `true` et que les paramètres par défaut du lanceur sont utilisés pour le workflow Écriture différée des métadonnées de gestion des ressources numériques (DAM) (qui écrit des métadonnées dans les données XMP binaires). L’activation des workflows de lancement ralentit le système. |
    | Nom de colonne du chemin d’accès à la ressource | Définit le nom de la colonne du fichier CSV avec des ressources. |
 
 1. Cliquez sur **[!UICONTROL Importer]** dans la barre d’outils. Une fois les métadonnées importées, une notification est envoyée à votre boîte de réception de notifications. Accédez à la page de propriété des ressources et vérifiez que les valeurs des métadonnées sont correctement importées pour les ressources.
 
-Pour ajouter une date et un horodatage au cours de l’importation de métadonnées, utilisez le format de date et d’heure `YYYY-MM-DDThh:mm:ss.fff-00:00`. La date et l’heure sont séparées par `T`, `hh` est les heures au format 24 heures, `fff` est des nanosecondes et `-00:00` est le décalage du fuseau horaire. Par exemple, `2020-03-26T11:26:00.000-07:00` correspond au 26 mars 2020 à 11h26:00.000, heure du Pacifique.
+Pour ajouter une date et un horodatage au cours de l’importation de métadonnées, utilisez le format de date et d’heure `YYYY-MM-DDThh:mm:ss.fff-00:00`. La date et l’heure sont séparées par `T`, `hh` correspond aux heures au format 24 heures, `fff` aux nanosecondes et `-00:00` au décalage du fuseau horaire. Par exemple, `2020-03-26T11:26:00.000-07:00` correspond au 26 mars 2020 à 11h26:00.000, heure du Pacifique.
 
 >[!CAUTION]
 >
@@ -46,7 +46,7 @@ Pour ajouter une date et un horodatage au cours de l’importation de métadonn�
 
 ## Exportation des métadonnées {#export-metadata}
 
-Vous pouvez exporter des métadonnées pour plusieurs fichiers au format CSV. Les métadonnées sont exportées de manière asynchrone et n’ont aucun impact sur les performances du système. Pour exporter des métadonnées, AEM parcourt les propriétés du nœud de ressource `jcr:content/metadata` et de ses nœuds enfants et exporte les propriétés de métadonnées dans un fichier CSV.
+Vous pouvez exporter des métadonnées pour plusieurs ressources au format CSV. Les métadonnées sont exportées de manière asynchrone et n’ont aucun impact sur les performances du système. Pour exporter des métadonnées, AEM parcourt les propriétés du nœud de ressource `jcr:content/metadata` et de ses nœuds enfants et exporte les propriétés de métadonnées dans un fichier CSV.
 
 Voici quelques cas d’utilisation pour l’exportation de métadonnées par lot :
 
