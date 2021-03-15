@@ -5,18 +5,18 @@ translation-type: tm+mt
 source-git-commit: c5f041f29133718a4260a289255e21b535cde12f
 workflow-type: tm+mt
 source-wordcount: '723'
-ht-degree: 78%
+ht-degree: 92%
 
 ---
 
 
 # Diffusion de contenu découplée à l’aide de fragments de contenu avec GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-Avec Adobe Experience Manager (AEM) as a Cloud Service, vous pouvez utiliser des fragments de contenu avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard) pour fournir du contenu structuré à utiliser dans vos applications. La possibilité de personnaliser une seule requête d&#39;API vous permet de récupérer et de diffuser le contenu spécifique que vous souhaitez/souhaitez rendre (en tant que réponse à la requête d&#39;API unique).
+Avec Adobe Experience Manager (AEM) as a Cloud Service, vous pouvez utiliser des fragments de contenu avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard) pour fournir du contenu structuré à utiliser dans vos applications. La possibilité de personnaliser une seule requête d’API vous permet de récupérer et de diffuser le contenu spécifique que vous souhaitez rendre, ou avez besoin de rendre (comme réponse à la requête d’API unique).
 
 >[!NOTE]
 >
->Voir [Découplage et AEM](/help/implementing/developing/headless/introduction.md) pour une présentation du développement découplé pour AEM Sites as a Cloud Service.
+>Voir [Le découplage et AEM](/help/implementing/developing/headless/introduction.md) pour une introduction au développement découplé pour AEM Sites as a Cloud Service.
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ Avec Adobe Experience Manager (AEM) as a Cloud Service, vous pouvez utiliser des
 
 Un système de gestion de contenu (CMS) découplé est :
 
-* « *Un système de gestion de contenu découplé, ou CMS découplé, est un système de gestion de contenu (CMS) back-end uniquement créé dès le départ comme un référentiel de contenu qui rend le contenu accessible via une API pour l’afficher sur n’importe quel appareil.*
+* « *Un système de gestion de contenu découplé, ou CMS découplé, est un système de gestion de contenu (CMS) back-end uniquement créé dès le départ comme un référentiel de contenu qui rend le contenu accessible via une API pour l’afficher sur n’importe quel appareil.* »
 
    Voir [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system).
 
@@ -44,7 +44,7 @@ En termes de création de fragments de contenu dans AEM, cela signifie que :
 
 GraphQL est :
 
-* &quot;*...un langage de requête pour les API et un runtime pour répondre à ces requêtes avec vos données existantes.*&quot;.
+* « *...un langage de requête pour les API et un environnement d’exécution pour répondre à ces requêtes avec vos données existantes* ». 
 
    Voir [GraphQL.org](https://graphql.org)
 
@@ -52,7 +52,7 @@ L’[API AEM GraphQL](#aem-graphql-api) permet d’effectuer des requêtes (comp
 
 ## API AEM GraphQL {#aem-graphql-api}
 
-Pour Adobe Experience as a Cloud Experience, une implémentation personnalisée de l’API GraphQL standard a été développée. Voir [AEM API GraphQL à utiliser avec les fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md) pour plus d’informations.
+Une implémentation personnalisée de l’API GraphQL standard a été développée pour Adobe Experience as a Cloud Experience. Consultez [API GraphQL d’AEM à utiliser avec des fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md) pour plus d’informations.
 
 L’implémentation de l’API AEM GraphQL repose sur les [bibliothèques Java GraphQL](https://graphql.org/code/#java).
 
@@ -78,7 +78,7 @@ Les fragments de contenu :
 
 Ces [modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) :
 
-* Sont utilisés pour générer les [Schémas](https://graphql.org/learn/schema/), une fois **Activé**.
+* Sont utilisés pour générer les [Schémas](https://graphql.org/learn/schema/), une fois **Activés**.
 
 * fournissent les types de données et les champs requis pour GraphQL ; garantissent que votre application ne demande que ce qui est possible et reçoive ce qui est attendu.
 
@@ -100,7 +100,7 @@ La **[référence à un fragment](/help/assets/content-fragments/content-fragmen
 
 ### Prévisualisation JSON {#json-preview}
 
-Pour faciliter la conception et le développement de vos modèles de fragments de contenu, vous pouvez prévisualisation [sortie JSON](/help/assets/content-fragments/content-fragments-json-preview.md).
+Pour faciliter la conception et le développement de vos modèles de fragments de contenu, vous pouvez prévisualiser la [sortie JSON](/help/assets/content-fragments/content-fragments-json-preview.md).
 
 ## Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes {#learn-graphql-with-aem-sample-content-queries}
 
