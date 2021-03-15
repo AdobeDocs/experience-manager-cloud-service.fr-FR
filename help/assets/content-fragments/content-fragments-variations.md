@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
 workflow-type: tm+mt
 source-wordcount: '2186'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -16,10 +16,10 @@ Les [variations](/help/assets/content-fragments/content-fragments.md#constituent
 
 À partir de l’onglet **variations**, vous pouvez :
 
-* [saisir le contenu](#authoring-your-content) de votre fragment,
+* [saisir le contenu](#authoring-your-content) de votre fragment ;
 * [créer et gérer les variations](#managing-variations) du contenu **maître** ;
 
-Vous pouvez effectuer diverses autres actions selon le type de données que vous modifiez, par exemple :
+effectuer diverses autres actions selon le type de données que vous modifiez, par exemple :
 
 * [Insertion de ressources visuelles dans votre fragment](#inserting-assets-into-your-fragment) (images)
 
@@ -63,7 +63,7 @@ Lors de la modification d’un champ de plusieurs lignes de texte, vous pouvez o
 
 ![Icône de l’éditeur plein écran](assets/cfm-variations-03.png)
 
-L’éditeur de texte en plein écran s’ouvre alors :
+L’éditeur de texte s’ouvre alors en plein écran :
 
 ![éditeur plein écran](assets/cfm-variations-fullscreentexteditor.png)
 
@@ -117,7 +117,7 @@ L’édition de texte enrichi vous permet les mises en forme suivantes :
    * Rechercher/remplacer
    * Vérificateur d’orthographe
    * [Annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-* [Insérer un fragment](#inserting-content-fragment-into-your-fragment) de contenu ; disponible lorsque votre champ de  **texte** multiligne est configuré avec  **Autoriser la référence** de fragment.
+* [Insérer un fragment de contenu](#inserting-content-fragment-into-your-fragment) ; disponible lorsque votre champ **Plusieurs lignes de texte** est configuré avec l’option **Autoriser la référence de fragment** activée.
 
 Les [actions](#actions) sont également accessibles à partir de l’éditeur plein écran.
 
@@ -155,7 +155,7 @@ Vous pouvez également ouvrir l’éditeur plein écran pour accomplir d’autre
 
 ### Références à un fragment {#fragment-references}
 
-Si le modèle de fragment de contenu contient des références à un fragment, les auteurs de fragments peuvent avoir d’autres options :
+Si le modèle de fragment de contenu contient des références à un fragment, les auteurs de fragments peuvent disposer d’options disponibles supplémentaires :
 
 * [Modifier le fragment de contenu](#fragment-references-edit-content-fragment)
 * [Nouveau fragment du contenu](#fragment-references-new-content-fragment)
@@ -164,22 +164,22 @@ Si le modèle de fragment de contenu contient des références à un fragment, l
 
 #### Modifier le fragment de contenu {#fragment-references-edit-content-fragment}
 
-L’option **Modifier le fragment de contenu** s’ouvre.
-un nouvel onglet de navigateur, avec le fragment de contenu ouvert dans l’éditeur de fragments de contenu.
+L’option **Modifier le fragment de contenu** ouvre
+un nouvel onglet de navigateur et le fragment de contenu est ouvert dans l’éditeur de fragments de contenu.
 
 #### Nouveau fragment du contenu {#fragment-references-new-content-fragment}
 
 L’option **Nouveau fragment de contenu** vous permet de créer un fragment complètement nouveau. Pour ce faire, une variante de l’assistant de création de fragment de contenu s’ouvre dans l’éditeur.
 
-Vous pourrez ensuite créer un fragment en procédant comme suit :
+Vous pouvez alors créer un fragment en procédant comme suit :
 
-1. Naviguer jusqu’au dossier requis et le sélectionner.
-1. Sélection de **Suivant**.
-1. Spécification des propriétés ; par exemple **Titre**.
-1. Sélection de **Créer**.
-1. Enfin :
-   1. **** Donewill return (to the original fragment) and reference the new fragment.
-   1. **** Open fait référence au nouveau fragment et ouvre le nouveau fragment, pour modification, dans un nouvel onglet de navigateur.
+1. naviguez jusqu’au dossier requis et sélectionnez-le ;
+1. sélectionnez **Suivant** ;
+1. spécifiez les propriétés ; par exemple le **Titre** ;
+1. sélectionnez **Créer** ;
+1. et sélectionnez enfin :
+   1. **Terminer** pour retourner au fragment original tout en référençant le nouveau fragment ;
+   1. ou **Ouvrir** pour référencer le nouveau fragment et l’ouvrir pour modification dans un nouvel onglet du navigateur.
 
 ### Affichage des statistiques clés {#viewing-key-statistics}
 
@@ -329,10 +329,10 @@ Il existe différentes méthodes pour ajouter des [images](/help/assets/content-
 
 Pour faciliter la création de fragments de contenu, vous pouvez également ajouter un autre fragment de contenu à votre fragment.
 
-Ils seront ajoutés en tant que référence, dans votre emplacement actuel dans votre fragment.
+Celui-ci sera ajouté en tant que référence à l’emplacement actuel dans votre fragment.
 
 >[!NOTE]
-Cette option est disponible lorsque votre **texte multiligne** est configuré avec **Autoriser la référence au fragment**.
+Cette option est disponible lorsque l’option **Autoriser la référence de fragment** est activée pour votre champ **Plusieurs lignes de texte**.
 
 >[!CAUTION]
 Ces ressources ne peuvent pas être déplacées ni supprimées sur une page de référence ; ce type d’opération doit être effectué dans l’éditeur de fragment.
@@ -341,24 +341,24 @@ Toutefois, la mise en forme de la ressource (par exemple, sa taille) doit être 
 >[!NOTE]
 Il existe différentes méthodes pour ajouter des [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
 
-1. Positionnez le curseur à l’endroit où vous souhaitez ajouter le fragment.
-1. Utilisez l&#39;icône **Insérer un fragment de contenu** pour ouvrir la boîte de dialogue de recherche.
+1. Placez le curseur à l’endroit où vous souhaitez ajouter le fragment.
+1. Utilisez l’icône **Insérer un fragment de contenu** pour ouvrir la boîte de dialogue de recherche.
 
-   ![icône Insérer un fragment de contenu](assets/cfm-variations-13.png)
+   ![Icône Insérer un fragment de contenu](assets/cfm-variations-13.png)
 
 1. Dans la boîte de dialogue, vous pouvez effectuer l’une des opérations suivantes :
 
-   * accéder au fragment requis dans le dossier Ressources
-   * recherche du fragment
+   * accéder au fragment requis dans le dossier Ressources ;
+   * rechercher le fragment.
 
-   Une fois localisé, sélectionnez le fragment requis en cliquant sur la miniature.
+   Une fois la ressource souhaitée localisée, sélectionnez-la en cliquant sur la miniature.
 
 1. Utilisez **Sélectionner** pour ajouter une référence au fragment de contenu sélectionné à votre fragment de contenu actuel (à l’emplacement actuel).
 
    >[!CAUTION]
-   Si, après avoir ajouté une référence à un autre fragment, vous modifiez le format en :
-   * **Texte** ordinaire : la référence sera complètement perdue dans le fragment.
-   * **Marquage** : la référence demeurera.
+   Si, après avoir ajouté une référence à un autre fragment, vous modifiez le format en :
+   * **Texte brut** : la référence sera complètement effacée du fragment.
+   * **Marquage** : la référence restera intégrée au fragment.
 
 
 ## Gestion des variations  {#managing-variations}
