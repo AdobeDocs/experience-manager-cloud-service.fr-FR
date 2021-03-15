@@ -1,61 +1,61 @@
 ---
-title: Activation des fonctionnalités d'application Web progressive
-description: AEM Sites permet à l’auteur du contenu d’activer des fonctionnalités d’application Web progressive sur n’importe quel site par le biais d’une configuration simple plutôt que d’un codage.
+title: Activation des fonctionnalités d’application web progressive
+description: AEM Sites permet à l’auteur du contenu d’activer des fonctionnalités d’application web progressive sur n’importe quel site par le biais d’une configuration simple plutôt que par un codage.
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
 source-git-commit: 54c4755207d84f6f11effea72e94e20027446ba9
 workflow-type: tm+mt
 source-wordcount: '2046'
-ht-degree: 1%
+ht-degree: 75%
 
 ---
 
 
-# Activation des fonctionnalités d&#39;application Web progressive {#enabling-pwa}
+# Activation des fonctionnalités d’application web progressive {#enabling-pwa}
 
-Grâce à une configuration simple, un auteur de contenu peut désormais activer des fonctionnalités d’application Web progressive (PWA) pour les expériences créées dans AEM Sites.
+Grâce à une configuration simple, un auteur de contenu peut désormais activer des fonctionnalités d’application web progressive (PWA) pour les expériences créées dans AEM Sites.
 
 >[!CAUTION]
 >
->Il s’agit d’une fonction avancée qui requiert :
+>Cette fonction avancée requiert :
 >
->* Connaissance des PWA
->* Connaissance de votre site et de la structure de contenu
->* Compréhension des stratégies de mise en cache
->* Assistance de votre équipe de développement
+>* de savoir comment fonctionnent les PWA ;
+>* de savoir comment sont organisés votre site et sa structure de contenu ;
+>* la compréhension des stratégies de mise en cache ;
+>* l’assistance de votre équipe de développement.
 
 >
 >
-Avant d’utiliser cette fonctionnalité, il est recommandé de discuter de cette question avec votre équipe de développement afin de définir le meilleur moyen de l’exploiter pour votre projet.
+Avant d’utiliser cette fonctionnalité, il est recommandé de discuter de cette question avec votre équipe de développement afin de définir le meilleur moyen de l’exploiter au sein de votre projet.
 
 >[!NOTE]
 >
->Les fonctionnalités décrites dans ce document devraient être mises à disposition avec la version de [mars 2021 de AEM en tant que Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)
+>Les fonctionnalités décrites dans ce document devraient être mises à disposition avec la version de [mars 2021 de AEM en tant que Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr)
 
 ## Présentation {#introduction}
 
-[Les applications Web progressives (en PWA)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) permettent d’offrir des expériences similaires à des applications aux sites AEM en les permettant d’être stockées localement sur l’ordinateur d’un utilisateur et d’être accessibles hors ligne. Un utilisateur peut parcourir un site en déplacement même s’il perd une connexion Internet. Les PWA permettent des expériences homogènes même si le réseau est perdu ou instable.
+[Les applications web progressives (PWA)](https://developer.mozilla.org/fr/docs/Web/Progressive_web_apps) permettent d’offrir des expériences immersives, similaires à des applications, sur des sites AEM en les permettant d’être stockées localement sur l’ordinateur d’un utilisateur et d’être accessibles hors ligne. Un utilisateur peut parcourir un site en déplacement, même s’il ne dispose pas d’une connexion Internet. Les PWA permettent des expériences homogènes même en cas de perte ou instabilité du réseau.
 
-Au lieu d&#39;exiger un recodage du site, un auteur de contenu peut configurer les propriétés du PWA sous forme d&#39;onglet supplémentaire dans les [propriétés de page](/help/sites-cloud/authoring/fundamentals/page-properties.md) d&#39;un site.
+Au lieu d’exiger un recodage du site, un auteur de contenu peut configurer les propriétés PWA sous forme d’un onglet supplémentaire dans les [propriétés de page](/help/sites-cloud/authoring/fundamentals/page-properties.md) d’un site.
 
-* Une fois enregistrée ou publiée, cette configuration déclenche un gestionnaire de événements qui écrit les [fichiers manifestes](https://developer.mozilla.org/en-US/docs/Web/Manifest) et [agent de service](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) qui activent les fonctionnalités de PWA sur le site.
-* Les mappages Sling sont également conservés afin de garantir que le service worker est servi à partir de la racine de l’application afin d’activer le contenu proxy permettant des fonctionnalités hors ligne dans l’application.
+* Une fois enregistrée ou publiée, cette configuration déclenche un gestionnaire d’événements qui rédige les [fichiers de manifeste](https://developer.mozilla.org/fr/docs/Web/Manifest) et [agent de service](https://developer.mozilla.org/fr/docs/Web/API/Service_Worker_API) qui activent les fonctionnalités PWA sur le site.
+* Les mappages Sling sont également conservés afin de garantir que l’agent de service est servi à partir de la racine de l’application afin d’activer le contenu proxy permettant des fonctionnalités hors ligne dans l’application.
 
-Avec le PWA, l’utilisateur dispose d’une copie locale du site, ce qui lui permet de vivre une expérience similaire à une application, même sans connexion Internet.
+En PWA, l’utilisateur dispose d’une copie locale du site, ce qui lui permet de vivre une expérience similaire à une application, même sans connexion Internet.
 
 >[!NOTE]
 >
->Les applications Web progressives sont une technologie en évolution et la prise en charge de l&#39;installation d&#39;applications locales et d&#39;autres fonctionnalités [dépend du navigateur utilisé.](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)
+>Les applications web progressives sont une technologie en évolution et la prise en charge de l’installation d’applications locales et d’autres fonctionnalités [dépend du navigateur utilisé.](https://developer.mozilla.org/fr/docs/Web/Progressive_web_apps/Installable_PWAs#summary)
 
 ## Conditions préalables {#prerequisites}
 
-Pour pouvoir utiliser les fonctionnalités de PWA de votre site, l&#39;environnement de votre projet requiert deux éléments :
+Pour pouvoir utiliser les fonctionnalités PWA sur votre site, l’environnement de votre projet requiert deux éléments :
 
 1. [Utilisez les ](#adjust-components) composants principaux pour tirer parti de cette fonctionnalité
-1. [Ajustez les règles de ](#adjust-dispatcher) répartiteur pour exposer les fichiers requis.
+1. [Ajustez les règles de votre Dispatcher](#adjust-dispatcher) pour exposer les fichiers requis.
 
-Il s&#39;agit d&#39;étapes techniques que l&#39;auteur devra coordonner avec l&#39;équipe de développement. Ces étapes ne sont requises qu&#39;une seule fois par site.
+L’auteur devra coordonner ces étapes techniques avec l’équipe de développement. Ces étapes ne sont requises qu’une seule fois par site.
 
 ### Utilisez les composants de base.{#adjust-components}
 
@@ -89,9 +89,9 @@ The developer will also need to add the following link to the `customfooterlibs.
 ```
 -->
 
-### Ajuster votre répartiteur {#adjust-dispatcher}
+### Ajustement de votre Dispatcher {#adjust-dispatcher}
 
-La fonction de PWA génère et utilise des fichiers `/content/<sitename>/manifest.webmanifest`. Par défaut, [le répartiteur](/help/implementing/dispatcher/overview.md) n&#39;expose pas ces fichiers. Pour exposer ces fichiers, le développeur doit ajouter la configuration suivante à votre projet de site.
+La fonctionnalité PWA génère et utilise des fichiers `/content/<sitename>/manifest.webmanifest`. Par défaut, [le Dispatcher](/help/implementing/dispatcher/overview.md) n’expose pas ces fichiers. Pour exposer ces fichiers, le développeur doit ajouter la configuration suivante à votre projet de site.
 
 ```text
 File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filters.any >
@@ -106,110 +106,110 @@ Selon votre projet, vous pouvez inclure différents types d’extensions aux rè
 RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 ```
 
-## Activation du PWA pour votre site {#enabling-pwa-for-your-site}
+## Activation de fonctionnalités PWA pour votre site {#enabling-pwa-for-your-site}
 
-Avec [les conditions préalables](#prerequisites) satisfaites, il est très facile pour un auteur de contenu d’activer les fonctionnalités de PWA sur un site. Vous trouverez ci-dessous un aperçu de la façon de procéder. Les options individuelles sont détaillées dans la section [Options détaillées.](#detailed-options)
+Une fois [les conditions préalables](#prerequisites) satisfaites, il est très facile pour un auteur de contenu d’activer les fonctionnalités PWA sur un site. Vous trouverez ci-dessous un aperçu basique de la procédure. Les différentes options sont détaillées dans la section [Options détaillées.](#detailed-options)
 
 1. Connectez-vous à AEM.
 1. Dans le menu principal, appuyez ou cliquez sur **Navigation** -> **Sites**.
-1. Sélectionnez le projet de vos sites et appuyez ou cliquez sur [**Propriétés**](/help/sites-cloud/authoring/fundamentals/page-properties.md) ou utilisez la touche d&#39;accès rapide `p`.
-1. Sélectionnez l&#39;onglet **Application Web progressive** et configurez les propriétés applicables. Vous pouvez au minimum :
-   1. Sélectionnez l&#39;option **Activer le PWA**.
-   1. Définissez l&#39;**URL de démarrage**.
+1. Sélectionnez le projet de vos sites et appuyez ou cliquez sur [**Propriétés**](/help/sites-cloud/authoring/fundamentals/page-properties.md) ou utilisez la touche d’accès rapide `p`.
+1. Sélectionnez l’onglet **Application web progressive** et configurez les propriétés concernées. Vous pouvez, au minimum :
+   1. sélectionner l’option **Activer PWA** ;
+   1. définir l’**URL de la page d’accueil** ;
 
       ![Activer PWA](../assets/pwa-enable.png)
 
-   1. Téléchargez une icône de png de 512 x 512 sur le DAM et référencez-la comme icône de l’application.
+   1. charger une icône de 512 x 512 au format png sur le DAM et la référencer en tant qu’icône de l’application ;
 
-      ![Icône Définir un PWA](../assets/pwa-icon.png)
+      ![Définir l’icône de PWA](../assets/pwa-icon.png)
 
-   1. Configurez les chemins d’accès que le collaborateur de services doit emprunter hors connexion. Les chemins types sont les suivants :
+   1. configurer les chemins d’accès que l’agent de service doit emprunter hors connexion. Les chemins types sont les suivants :
       * `/content/<sitename>`
       * `/content/experiencefragements/<sitename>`
       * `/content/dam/<sitename>`
-      * Toute référence à une police tierce
+      * toute référence à une police tierce
       * `/etc/clientlibs/<sitename>`
 
       ![Définir des chemins hors ligne PWA](../assets/pwa-offline.png)
 
 
-1. Appuyez/cliquez sur **Enregistrer et fermer**.
+1. appuyer et cliquer sur **Enregistrer et fermer**.
 
-Votre site est maintenant configuré et vous pouvez [l&#39;installer en tant qu&#39;application locale.](#using-pwa-enabled-site)
+Votre site est maintenant configuré et vous pouvez [l’installer en tant qu’application locale.](#using-pwa-enabled-site)
 
-## Utilisation de votre site compatible avec les PWA {#using-pwa-enabled-site}
+## Utilisation de votre site compatible PWA {#using-pwa-enabled-site}
 
-Maintenant que vous avez [configuré votre site pour prendre en charge le PWA,](#enabling-pwa-for-your-site) vous pouvez l&#39;expérimenter vous-même.
+Maintenant que vous avez [configuré votre site pour prendre en charge le PWA,](#enabling-pwa-for-your-site) vous pouvez l’expérimenter par vous-même.
 
-1. Accédez au site dans un navigateur [pris en charge.](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)
+1. Accédez au site par le biais d’un [navigateur compatible.](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)
 1. Une nouvelle icône s’affiche dans la barre d’adresse du navigateur, indiquant que le site peut être installé en tant qu’application locale.
    * Selon le navigateur, l’icône peut varier et le navigateur peut également afficher une notification (comme une bannière ou une boîte de dialogue) indiquant qu’il est possible de procéder à l’installation en tant qu’application locale.
 1. Installez l’application.
-1. L’application sera installée sur l’écran d’accueil de votre périphérique.
-1. Ouvrez l’application, parcourez un peu et vérifiez que les pages sont disponibles hors ligne.
+1. L’application sera installée sur l’écran d’accueil de votre appareil.
+1. Ouvrez l’application, parcourez le site et vérifiez que les pages sont disponibles hors ligne.
 
 ## Options détaillées {#detailed-options}
 
-La section suivante fournit plus de détails sur les options disponibles lorsque [vous configurez votre site pour un PWA.](#enabling-pwa-for-your-site)
+La section suivante fournit plus de détails sur les options disponibles lorsque [vous configurez votre site pour PWA.](#enabling-pwa-for-your-site)
 
-### Configurer une expérience installable {#configure-installable-experience}
+### Configuration de l’expérience d’installation {#configure-installable-experience}
 
-Ces paramètres permettent à votre site de se comporter comme une application native en le rendant installable sur l’écran d’accueil du visiteur et disponible hors connexion.
+Ces paramètres permettent que votre site se comporte comme une application native en permettant son installation sur l’écran d’accueil des visiteurs et en le rendant disponible hors ligne.
 
-* **Activer le PWA**  : il s&#39;agit de la bascule principale pour activer le PWA pour le site.
-* **URL**  de démarrage : il s’agit de l’ [URL de début ](https://developer.mozilla.org/en-US/docs/Web/Manifest/start_url) préféréeque l’application ouvre lorsque l’utilisateur charge l’application installée localement.
+* **Activer PWA** : cette option permet d’activer les fonctionnalités PWA pour le site.
+* **URL de la page d’accueil** : cette option vous permet de définir l’[URL de la page d’accueil](https://developer.mozilla.org/en-US/docs/Web/Manifest/start_url) ouverte par l’application lorsque l’utilisateur charge l’application installée localement.
    * Il peut s’agir de n’importe quel chemin dans votre structure de contenu.
    * Il n’est pas nécessaire qu’il s’agisse de la racine et il s’agit souvent d’une page d’accueil dédiée à l’application.
-   * Si cette URL est relative, l’URL de manifeste est utilisée comme URL de base pour la résoudre.
-   * Lorsqu’elle est vide, la fonction utilise l’adresse de la page Web à partir de laquelle l’application Web a été installée.
-   * Il est recommandé de définir une valeur.
-* **Mode**  d’affichage : une application activée pour les PWA est toujours un site AEM diffusé par le biais d’un navigateur. [Ces ](https://developer.mozilla.org/en-US/docs/Web/Manifest/display) options d’affichage définissent comment le navigateur doit être masqué ou présenté à l’utilisateur sur le périphérique local.
-   * **Autonome**  : le navigateur est complètement masqué par l’utilisateur et il apparaît comme une application native. Il s’agit de la valeur par défaut.
-      * Avec cette option, la navigation de l’application doit être entièrement possible par le biais de votre contenu à l’aide de liens et de composants sur les pages du site sans utiliser les commandes de navigation du navigateur.
-   * **Navigateur**  : le navigateur s&#39;affiche comme il le ferait normalement lors de la visite du site.
-   * **Interface utilisateur**  minimale : le navigateur est généralement masqué, comme une application native, mais les commandes de navigation de base sont exposées.
-   * **Plein écran**  - Le navigateur est complètement masqué, comme une application native, mais est rendu en mode plein écran.
-      * Avec cette option, la navigation de l’application doit être entièrement possible par le biais de votre contenu à l’aide de liens et de composants sur les pages du site sans utiliser les commandes de navigation du navigateur.
-* **Orientation**  de l&#39;écran - En tant qu&#39;application locale, le PWA doit savoir comment gérer les orientations de  [périphérique.](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation)
-   * **Tout**  : l’application s’adapte à l’orientation du périphérique de l’utilisateur. Il s’agit de la valeur par défaut.
-   * **Portrait**  : cette option force l’application à s’ouvrir en mode portrait, quelle que soit l’orientation du périphérique de l’utilisateur.
-   * **Paysage**  : cette option force l’application à s’ouvrir en mode paysage, quelle que soit l’orientation du périphérique de l’utilisateur.
-* **Couleur**  du thème : définit la  [couleur de l&#39;](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color) application qui affecte la façon dont le système d&#39;exploitation de l&#39;utilisateur local affiche la barre d&#39;outils native de l&#39;interface utilisateur et les commandes de navigation. Selon le navigateur, elle peut affecter d’autres éléments de présentation de l’application.
+   * Si cette URL est relative, l’URL du manifeste est utilisée en tant qu’URL de base pour la résoudre.
+   * Lorsque l’URL de la page d’accueil n’est pas spécifiée, la fonction utilise l’adresse de la page Web à partir de laquelle l’application Web a été installée.
+   * Il est cependant recommandé de définir une valeur pour cette page.
+* **Mode d’affichage** : une application activée pour PWA reste un site AEM mis à disposition par le biais d’un navigateur. [Ces options d’affichage](https://developer.mozilla.org/en-US/docs/Web/Manifest/display) définissent la manière dont navigateur doit être masqué ou présenté à l’utilisateur sur l’appareil local.
+   * **Autonome** : le navigateur est complètement masqué pour l’utilisateur et apparaît sous la forme d’une application native. Il s’agit de la valeur par défaut.
+      * Avec cette option, la navigation de l’application doit être entièrement accessible par le biais de votre contenu à l’aide de liens et de composants sur les pages du site sans utiliser les commandes de navigation du navigateur.
+   * **Par navigateur** : le navigateur s’affiche comme il le ferait normalement lors de la visite du site.
+   * **Par interface utilisateur minimale** : le navigateur est généralement masqué, comme il le serait en tant qu’application native, mais les commandes de navigation de base sont affichées.
+   * **Plein écran** : le navigateur est complètement masqué, comme pour une application native, mais son rendu est réalisé en mode plein écran.
+      * Avec cette option, la navigation de l’application doit être entièrement accessible par le biais de votre contenu à l’aide de liens et de composants sur les pages du site sans utiliser les commandes de navigation du navigateur.
+* **Orientation de l’écran** : en tant qu’application locale, la PWA doit savoir comment gérer [l’orientation de l’appareil.](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation)
+   * **Auto** : l’application s’adapte à l’orientation de l’appareil de l’utilisateur. Il s’agit de la valeur par défaut.
+   * **Portrait** : cette option force l’application à s’ouvrir en mode portrait, quelle que soit l’orientation de l’appareil de l’utilisateur.
+   * **Paysage** : cette option force l’application à s’ouvrir en mode paysage, quelle que soit l’orientation de l’appareil de l’utilisateur.
+* **Couleur du thème** : définit la [couleur de l’application](https://developer.mozilla.org/fr-FR/docs/Web/Manifest/theme_color) utilisée pour l’affichage de la barre d’outils native et des commandes de navigation de l’interface utilisateur par le système d’exploitation de l’utilisateur local. En fonction du navigateur, cette option peut affecter d’autres éléments de présentation de l’application.
    * Utilisez la fenêtre contextuelle de couleurs pour sélectionner une couleur.
-   * La couleur peut également être définie par une valeur hexadécimale ou RVB.
-* **Couleur**  d&#39;arrière-plan : définit la couleur d&#39; [arrière-plan de l&#39;application, ](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color) qui s&#39;affiche au chargement de l&#39;application.
+   * La couleur peut également être définie selon une valeur hexadécimale ou RVB.
+* **Couleur d’arrière-plan** : définit [la couleur d’arrière-plan de l’application](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color) qui s’affiche au chargement de l’application.
    * Utilisez la fenêtre contextuelle de couleurs pour sélectionner une couleur.
-   * La couleur peut également être définie par une valeur hexadécimale ou RVB.
-   * Certains navigateurs [créent automatiquement un écran de démarrage](https://developer.mozilla.org/en-US/docs/Web/Manifest#Splash_screens) à partir du nom de l’application, de la couleur d’arrière-plan et de l’icône.
-* **Icône**  : définit  [l’](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons) icône qui représente l’application sur le périphérique de l’utilisateur.
-   * L’icône doit être un fichier PNG de 512 x 512 pixels.
-   * L&#39;icône doit être [stockée dans DAM.](/help/assets/overview.md)
+   * La couleur peut également être définie selon une valeur hexadécimale ou RVB.
+   * Certains navigateurs [créent automatiquement un écran de démarrage](https://developer.mozilla.org/fr-FR/docs/Web/Manifest#Splash_screens) en utilisant le nom, la couleur d’arrière-plan et de l’icône de l’application.
+* **Icône** : définit [l’icône](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons) qui représente l’application sur l’appareil de l’utilisateur.
+   * L’icône doit être constituée d’un fichier PNG de 512 x 512 pixels.
+   * Elle doit être [stockée sur le DAM.](/help/assets/overview.md)
 
-### Gestion du cache (avancée) {#offline-configuration}
+### Gestion du cache (avancé) {#offline-configuration}
 
-Ces paramètres rendent des parties de ce site disponibles hors ligne et localement sur votre périphérique visiteur. Cela permet de contrôler le cache de l’application Web afin d’optimiser les demandes réseau et de prendre en charge les expériences hors ligne.
+Ces paramètres rendent des parties de ce site disponibles hors ligne et localement sur l’appareil de votre visiteur. Ils permettent de contrôler le cache de l’application web pour optimiser les demandes réseau et prendre en charge les expériences hors ligne.
 
-* **Stratégie de mise en cache et fréquence d&#39;actualisation**  du contenu : ce paramètre définit le modèle de mise en cache de votre PWA.
-   * **Modérément**  :  [ce paramètre ](https://web.dev/stale-while-revalidate/) est le cas pour la plupart des sites et est la valeur par défaut.
+* **Stratégie de mise en cache et fréquence d’actualisation du contenu** : ce paramètre définit le modèle de mise en cache de votre PWA.
+   * **Modérée** : [ce paramètre](https://web.dev/stale-while-revalidate/) est valable pour la plupart des sites et est défini comme valeur par défaut.
       * Avec ce paramètre, le contenu affiché pour la première fois par l’utilisateur sera chargé à partir du cache et pendant que l’utilisateur consomme ce contenu, le reste du contenu du cache sera revalidé.
-   * **Fréquemment**  - C&#39;est le cas pour les sites qui ont besoin de mises à jour pour être très rapides comme les maisons de vente aux enchères.
-      * Avec ce paramètre, l’application recherche d’abord le contenu le plus récent via le réseau et, s’il n’est pas disponible, il revient au cache local.
-   * **Rarement**  : c&#39;est le cas pour les sites qui sont presque statiques, tels que les pages de référence.
-      * Avec ce paramètre, l’application recherche d’abord le contenu dans le cache et, si ce n’est pas le cas, revient au réseau pour le récupérer.
-* **Prémise en cache**  des fichiers : ces fichiers hébergés sur l&#39;AEM seront enregistrés dans le cache du navigateur local lorsque le travailleur de services installe et avant son utilisation. Cela garantit que l’application Web est entièrement fonctionnelle lorsqu’elle est hors ligne.
-* **Inclusions**  de chemins : les demandes réseau pour les chemins définis sont interceptées et le contenu mis en cache est renvoyé conformément à la stratégie de  **mise en cache configurée et à la fréquence d&#39;actualisation** du contenu.
-* **Exclusions**  du cache : ces fichiers ne seront jamais mis en cache, quels que soient les paramètres sous Inclusions **de** chemin et de pré **** mise en cache des fichiers.
+   * **Fréquente** : ce paramètre est recommandé pour les sites qui ont besoin de mises à jour très rapides, tels que les sites d’enchères.
+      * Avec ce paramètre, l’application recherche d’abord le contenu le plus récent sur le réseau et, si celui-ci n’est pas disponible, elle se réfère au cache local.
+   * **Rare** : concerne les sites qui sont pour ainsi dire statiques, tels que les pages de référence.
+      * Avec ce paramètre, l’application recherche d’abord le contenu dans le cache et, s’il n’est pas disponible, elle se réfère au réseau pour le récupérer.
+* **Prémise en cache des fichiers** : ces fichiers hébergés sur AEM seront enregistrés dans le cache du navigateur local lorsque l’agent de service s’installe et avant son utilisation. Cette option garantit que l’application Web est entièrement fonctionnelle lorsqu’elle est hors ligne.
+* **Inclusions des chemins** : les demandes réseau pour les chemins définis sont interceptées et le contenu mis en cache est renvoyé conformément à la **stratégie de mise en cache et à la fréquence d’actualisation** configurées pour le contenu.
+* **Exclusions du cache** : ces fichiers ne seront jamais mis en cache, quels que soient les paramètres définis dans **Prémise en cache des fichiers** et dans **Inclusions des chemins**.
 
 >[!TIP]
 >
->Votre équipe de développeurs a probablement des informations précieuses sur la configuration de votre configuration hors ligne.
+>Votre équipe de développeurs peut probablement vous offrir un avis précieux sur votre configuration hors ligne.
 
 ## Limites et Recommendations {#limitations-recommendations}
 
-Toutes les fonctions de PWA ne sont pas disponibles pour AEM Sites. Il s&#39;agit de quelques limitations notables.
+Toutes les fonctionnalités PWA ne sont pas disponibles pour AEM Sites. Il existe quelques cas importants de restriction.
 
-* Un utilisateur doit parcourir la page au moins une fois avant d’être mis en cache hors ligne.
-* Les pages ne sont pas automatiquement synchronisées ou mises à jour si l’utilisateur n’utilise pas l’application.
+* Un utilisateur doit parcourir la page au moins une fois avant qu’elle puisse être mise en cache hors ligne.
+* Les pages ne sont pas automatiquement synchronisées ni mises à jour si l’utilisateur n’utilise pas l’application.
 
 Adobe fait également les recommandations suivantes lorsque vous implémentez le PWA.
 
