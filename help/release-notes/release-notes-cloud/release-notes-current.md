@@ -1,16 +1,16 @@
 ---
-title: Notes de mise à jour actuelles pour  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Notes de mise à jour actuelles pour  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 612885895dda73afb3406f73e59ef3eec6202f5d
+source-git-commit: 5dabb0f9f119d8c56c4b1b64e1528f03e1a92fac
 workflow-type: tm+mt
-source-wordcount: '1667'
-ht-degree: 10%
+source-wordcount: '1677'
+ht-degree: 20%
 
 ---
 
 
-# Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour actuelles pour[!DNL Adobe Experience Manager]as a Cloud Service {#release-notes}
 
 La section suivante décrit les Notes de mise à jour générales de la version actuelle (dernière) de [!DNL Experience Manager] en tant que Cloud Service.
 
@@ -23,14 +23,14 @@ La section suivante décrit les Notes de mise à jour générales de la version 
 
 ## Date de publication {#release-date}
 
-La date de publication de [!DNL Adobe Experience Manager] en tant que Cloud Service 2021.2.0 est le 25 février 2021.
+La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service version 2021.2.0 est le 25 février 2021.
 La version suivante (2021.3.0) sera publiée le 25 mars 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-* **[Le composant](/help/implementing/developing/hybrid/remote-page.md)** RemotePage : Prise en charge Ajoutée de l’affichage et de la modification des SPA externes dans AEM utilisation.
+* **[Composant RemotePage](/help/implementing/developing/hybrid/remote-page.md)** : ajout de la prise en charge de l’affichage et de la modification des SPA externes dans AEM.
 
-* **[Modification d&#39;un SPA externe dans AEM](/help/implementing/developing/hybrid/editing-external-spa.md)** : Possibilité Ajoutée de télécharger une application autonome d’une seule page sur une instance AEM, d’ajouter des sections de contenu modifiables et d’activer la création.
+* **[Modification d’une SPA externe dans AEM](/help/implementing/developing/hybrid/editing-external-spa.md)** : ajout de la possibilité de charger une application sur une seule page dans une instance AEM, d’ajouter des sections de contenu modifiables et d’activer la création.
 
 <!--
 ### Progressive Web Apps (PWAs) {#pwa}
@@ -67,7 +67,7 @@ Customers using the Connected Assets feature can now easily view and track asset
 
 * Propriétés étendues de la console de produits pour afficher les ressources liées et les fragments d’expérience, y compris les actions permettant d’accéder rapidement au contenu associé.
 
-* Site de référence de CIF Venia - 2021.02.24 qui comprend la dernière version des composants principaux de CIF version 1.8.0. Pour plus d&#39;informations, voir [Site de référence de CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24).
+* Publication du site de référence de CIF Venia – 2021.02.24 qui comprend les derniers composants principaux de CIF version 1.8.0. Pour plus d’informations, consultez [Site de référence de CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24).
 
 * Publication des composants principaux CIF version 1.8.0. Reportez-vous à [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) pour plus de détails.
 
@@ -78,28 +78,29 @@ Cette section décrit les Notes de mise à jour de Cloud Manager en AEM Cloud Se
 ## Date de publication {#release-date-cm-march}
 
 La date de publication de Cloud Manager en tant que Cloud Service 2021.3.0 dans AEM est le 11 mars 2021.
+La prochaine version est prévue pour le 8 avril 2021.
 
 
 ### Nouveautés {#what-is-new-march}
 
-* Les clients disposant d’environnements avec des configurations CDN préexistantes pour les Listes autorisées IP, les certificats SSL et les noms de domaine personnalisés verront un message sur leurs configurations existantes et pourront se servir librement via l’interface utilisateur. Les utilisateurs peuvent désormais :
+* Les clients disposant d’environnements avec des configurations de nom de domaine personnalisé préexistantes pour [Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) et [Noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) verront un message sur leurs configurations existantes et pourront se servir eux-mêmes via l’interface utilisateur. Les utilisateurs peuvent désormais :
    * Ajouter la solution Sites à un programme existant avec Ressources (ou inversement).
    * Supprimez des sites (ou des ressources) d’un programme existant avec des sites et des ressources.
    * Ajoutez ensuite les droits de solution inutilisés à un programme existant ou en tant que nouveau Programme.
 
 * Les utilisateurs disposant des autorisations requises peuvent désormais modifier le Programme, ce qui leur permet d’effectuer les opérations suivantes en libre-service.
 
-* L’étiquette &quot;Mise à jour AEM Push&quot; s’affiche désormais pour les écrans d’exécution du pipeline et d’Activité.
+* **Le** libellé de mise à jour Push AEM sera désormais affiché pour les écrans  ** d’exécution de pipeline et  ** d’activité.
 
-* Si un environnement est mis en veille prolongée mais qu’une mise à jour AEM est également disponible, l’état &quot;Hébergé&quot; prévaudra sur &quot;Mise à jour disponible&quot;.
+* Si un environnement est mis en veille prolongée, mais qu&#39;une mise à jour AEM est également disponible, l&#39;état **Hibernated** prévaudra sur **Mise à jour disponible**.
 
 * Les utilisateurs peuvent désormais voir leur ou leurs rôles Cloud Manager en sélectionnant l’option &quot;Rôle(s) de Vue Cloud Manager&quot; après avoir accédé à l’icône Profil utilisateur (en haut à droite) de l’environnement de travail unifié.
 
-* L&#39;étiquette &quot;Demande d&#39;approbation&quot; a été réétiquetée &quot;Approbation de production&quot; pour plus de clarté.
+* Pour plus de clarté, l&#39;étiquette **Demande d&#39;approbation** a été réétiquetée à **Approbation de production**.
 
-* Le libellé &quot;Version&quot; a été réétiqueté en &quot;Balise Git&quot; dans l’écran d’exécution du pipeline de production.
+* Le libellé **Version** a été réétiqueté en **Balise Git** dans l&#39;écran d&#39;exécution du pipeline de production.
 
-* Les étiquettes qui définissent le comportement lorsque des mesures importantes ne respectent pas le seuil défini ont été réétiquetées pour refléter leur comportement réel : Annuler immédiatement et Approuver immédiatement.
+* Les étiquettes qui définissent le comportement lorsque des mesures importantes ne respectent pas le seuil défini ont été réétiquetées afin de refléter leur comportement réel : **Annuler immédiatement** et **Approuver immédiatement**.
 
 * Les listes de classe et de méthode d’obsolescence ont été mises à jour en fonction de la version `2021.3.4997.20210303T022849Z-210225` du SDK Cloud Service AEM.
 
@@ -183,13 +184,13 @@ La date de publication de l’outil de transfert de contenu v1.2.4 est le 10 fé
 
 ### Date de publication {#release-date-ctt-feb}
 
-La date de publication de l’outil de transfert de contenu v1.2.2 est le 01 février 2021.
+La date de publication de l’outil de transfert de contenu v1.2.2 est le 1er février 2021.
 
 ### Nouveautés de l’outil de transfert de contenu {#what-is-new-ctt}
 
-* Nouvelle fonctionnalité et interface utilisateur ajoutées à l’outil de transfert de contenu - Outil de mappage des utilisateurs. Cette fonctionnalité mappe automatiquement les utilisateurs et groupes existants à leurs identifiants système Identity Management Adobe dans le cadre de l’activité de migration de contenu.
-Pour plus d&#39;informations, consultez [Utilisation de l&#39;outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html).
-* L’outil de transfert de contenu migre désormais tous les groupes et utilisateurs référencés dans le jeu de migration, y compris les enfants.
+* Fonctionnalité et interface utilisateur nouvelles ajoutées à l’outil de transfert de contenu - Outil de mappage des utilisateurs. Cette fonctionnalité mappe automatiquement les utilisateurs et les groupes existants avec leur identifiant IMS (Identity Management System) Adobe au cours de l’activité de migration de contenu.
+Pour plus d’informations, consultez [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html).
+* L’outil de transfert de contenu assure désormais la migration de tous les groupes et utilisateurs référencés dans le jeu de migration, y compris les enfants.
 * Les utilisateurs sont autorisés à sélectionner certains chemins sous `/etc` lors de la création de jeux de migration.
 
 ## Analyseur de bonnes pratiques {#best-practices-analyzer}
@@ -210,7 +211,7 @@ La date de publication de la version 2.1.2 de Best Practices Analyzer est le 18 
 
 ### Nouveautés des outils de refactorisation de code {#what-is-new-crt}
 
-* Nouvelle version du module externe AIO-CLI publiée. La dernière version de ce module comprend plusieurs nouvelles fonctionnalités et correctifs pour Repository Modernizer et Dispatcher Converter.    Consultez [Expérience unifiée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) pour en savoir plus sur ce module externe.
+* Publication de la nouvelle version du plug-in AIO-CLI. La dernière version de ce module comprend plusieurs nouvelles fonctionnalités et correctifs pour Repository Modernizer et Dispatcher Converter.    Consultez [Expérience unifiée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=fr#benefits) pour en savoir plus sur ce module externe.
 
 * Nouvelles fonctionnalités et améliorations de Repository Modernizer. Reportez-vous à la [ressource GitHub : Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) pour la dernière version.
    * Normalisez les configurations OSGi (à l’exception des configurations RepoInit) au format .cfg.json préféré.
