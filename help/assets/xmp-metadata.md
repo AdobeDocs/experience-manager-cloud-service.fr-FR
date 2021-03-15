@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 0aac16705342f9652f38beef956a55d3f8f5df7d
 workflow-type: tm+mt
 source-wordcount: '1000'
-ht-degree: 76%
+ht-degree: 79%
 
 ---
 
@@ -33,7 +33,7 @@ XMP définit un modèle de [métadonnées](https://fr.wikipedia.org/wiki/Métado
 
 XMP est le plus souvent sérialisé et stocké à l’aide d’un sous-ensemble du [W3C](https://fr.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://fr.wikipedia.org/wiki/Resource_Description_Framework) (RDF), exprimé à son tour en format [XML](https://fr.wikipedia.org/wiki/Extensible_Markup_Language).
 
-### Avantages du mode XMP  {#advantages-of-xmp}
+### Avantages du mode XMP {#advantages-of-xmp}
 
 La norme XMP présente les avantages suivants par rapport aux autres normes de codage et schémas :
 
@@ -72,7 +72,7 @@ XMP vous offre la possibilité d’ajouter une propriété `xml:lang` aux propri
 
 ## Écriture différée XMP sur les rendus {#xmp-writeback-to-renditions}
 
-Cette fonction d’écriture différée XMP dans [!DNL Adobe Experience Manager Assets] reproduit les modifications de métadonnées apportées aux rendus de la ressource d’origine. Lorsque vous modifiez les métadonnées d’un fichier depuis [!DNL Assets] ou lors du transfert de l’actif, les modifications sont initialement stockées dans le noeud de l’actif dans le référentiel. La fonction d’écriture différée XMP propage les modifications de métadonnées à tous les rendus ou à des rendus spécifiques du fichier.
+Cette fonction d’écriture différée XMP dans [!DNL Adobe Experience Manager Assets] reproduit les modifications de métadonnées apportées aux rendus de la ressource d’origine. Lorsque vous modifiez les métadonnées d’un fichier depuis [!DNL Assets] ou lors du transfert de l’actif, les modifications sont initialement stockées dans le noeud de l’actif dans le référentiel. La fonction Écriture différée XMP propage les modifications apportées aux métadonnées à l’ensemble des rendus de la ressource ou uniquement à certains d’entre eux.
 
 Supposons que vous remplaciez la propriété [!UICONTROL Titre] d’une ressource intitulée `Classic Leather` par `Nylon`.
 
@@ -84,7 +84,7 @@ Dans ce cas, [!DNL Assets] enregistre les modifications apportées à la propri�
 
 Cependant, [!DNL Assets] ne propage pas automatiquement les modifications de métadonnées aux rendus d’un fichier.
 
-La fonction d’écriture différée XMP permet de propager les modifications de métadonnées à tous les rendus ou à des rendus spécifiques du fichier. Toutefois, les modifications ne sont pas stockées sous le nœud de métadonnées dans la hiérarchie de la ressource. Au lieu de cela, cette fonction incorpore les modifications dans les fichiers binaires des rendus.
+La fonction Écriture différée XMP permet de propager les modifications de métadonnées à l’ensemble des rendus de la ressource ou uniquement à certains d’entre eux. Toutefois, les modifications ne sont pas stockées sous le nœud de métadonnées dans la hiérarchie de la ressource. Au lieu de cela, cette fonction incorpore les modifications dans les fichiers binaires des rendus.
 
 La fonction d&#39;écriture différée n&#39;est pas activée par défaut dans [!DNL Assets]. Voir comment [activer l’écriture différée des métadonnées](#enable-xmp-writeback).
 
