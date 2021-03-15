@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
 workflow-type: tm+mt
 source-wordcount: '829'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Experience Manager as a [!DNL Cloud Service] permet d’exploiter, en mode
 * Le cas échéant, les services natifs de traitement de fichiers Adobe sont utilisés, ce qui se traduit par un résultat fidèle et une [gestion efficace des formats propriétaires Adobe](file-format-support.md).
 * Possibilité de configurer le workflow de post-traitement de manière à ajouter des actions et des intégrations spécifiques à l’utilisateur.
 
-Les microservices de ressources permettent d’éviter la nécessité d’utiliser des outils et méthodes de rendu tiers (tels que le transcodage ImageMagick et FFmpeg) et de simplifier les configurations, tout en offrant des fonctionnalités de base pour les types de fichiers courants par défaut.
+L’utilisation des microservices de ressources permet de se passer d’outils et de méthodes de rendu tiers (comme ImageMagick et le transcodage FFmpeg) et de simplifier les configurations, tout en fournissant des fonctionnalités de base pour les types de fichiers courants par défaut.
 
 ## Architecture de haut niveau {#asset-microservices-architecture}
 
