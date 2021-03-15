@@ -2,9 +2,9 @@
 title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 5dabb0f9f119d8c56c4b1b64e1528f03e1a92fac
+source-git-commit: 36e5e90785a1bc9a4f4f8d4febd462e00252a0ea
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1675'
 ht-degree: 20%
 
 ---
@@ -83,12 +83,13 @@ La prochaine version est prévue pour le 8 avril 2021.
 
 ### Nouveautés {#what-is-new-march}
 
-* Les clients disposant d’environnements avec des configurations de nom de domaine personnalisé préexistantes pour [Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) et [Noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) verront un message sur leurs configurations existantes et pourront se servir eux-mêmes via l’interface utilisateur. Les utilisateurs peuvent désormais :
+* Les clients disposant d’environnements avec des configurations de nom de domaine personnalisé préexistantes pour [Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) et [Noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) verront un message sur leurs configurations existantes et pourront se servir eux-mêmes via l’interface utilisateur.
+
+* Les utilisateurs disposant des autorisations requises peuvent désormais modifier un Programme, ce qui leur permet d’effectuer les opérations suivantes en libre-service :
+
    * Ajouter la solution Sites à un programme existant avec Ressources (ou inversement).
    * Supprimez des sites (ou des ressources) d’un programme existant avec des sites et des ressources.
    * Ajoutez ensuite les droits de solution inutilisés à un programme existant ou en tant que nouveau Programme.
-
-* Les utilisateurs disposant des autorisations requises peuvent désormais modifier le Programme, ce qui leur permet d’effectuer les opérations suivantes en libre-service.
 
 * **Le** libellé de mise à jour Push AEM sera désormais affiché pour les écrans  ** d’exécution de pipeline et  ** d’activité.
 
