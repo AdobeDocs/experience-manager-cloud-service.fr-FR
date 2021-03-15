@@ -10,7 +10,7 @@ ht-degree: 81%
 ---
 
 
-# Intégration à Adobe Target{#integrating-with-adobe-target}
+# Intégration à Adobe Target {#integrating-with-adobe-target}
 
 Dans le cadre d’Adobe Experience Cloud, Adobe Target vous permet d’améliorer la pertinence du contenu en effectuant un ciblage et des mesures sur tous les canaux. L’intégration d’Adobe Target et d’AEM as a Cloud Service nécessite :
 
@@ -76,7 +76,7 @@ Pour appliquer une configuration d’interface utilisateur tactile à un site, a
 
 ## Intégration d’Adobe Target dans AEM Sites à l’aide d’Adobe Launch {#integrate-target-launch}
 
-AEM offre une intégration prête à l’emploi à Experience Platform Launch. En ajoutant l’extension Adobe Target à Experience Platform Launch, vous pouvez utiliser les fonctionnalités d’Adobe Target sur une ou des pages web AEM. Les bibliothèques de Target ne seront rendues qu’à l’aide de Launch.
+AEM offre une intégration à Experience Platform Launch prête à l’emploi. En ajoutant l’extension Adobe Target à Experience Platform Launch, vous pouvez utiliser les fonctionnalités d’Adobe Target sur une ou des pages web AEM. Les bibliothèques de Target ne seront rendues qu’à l’aide de Launch.
 
 >[!NOTE]
 >
