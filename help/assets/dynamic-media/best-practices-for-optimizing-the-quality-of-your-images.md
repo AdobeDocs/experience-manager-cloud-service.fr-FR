@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 58aa2f416aac6fa6b260e846fc5265bdf62a1949
 workflow-type: tm+mt
 source-wordcount: '1452'
-ht-degree: 89%
+ht-degree: 92%
 
 ---
 
@@ -41,7 +41,7 @@ Pour le dimensionnement des images, il est recommandé d’utiliser `&wid=<value
 
 L’accentuation des images est l’aspect le plus complexe du contrôle des images du site web, processus au cours duquel de nombreuses erreurs sont commises. Prenez le temps d’en savoir plus sur le fonctionnement de l’accentuation et du masquage flou dans AEM en vous référant aux ressources suivantes :
 
-* Le livre blanc Meilleures pratiques [Accentuation des images dans l’Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) s’applique également à AEM.
+* Le livre blanc relatif aux bonnes pratiques [Accentuation des images dans Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) s’applique également à AEM.
 
 * Regardez [Utilisation de l’accentuation des images avec l’AEM Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
@@ -66,7 +66,7 @@ Il existe deux méthodes d’accentuation des images que vous pouvez utiliser :
 
       Rubrique d’aide d’AEM sur l’accentuation d’une image.
 
-      Livre blanc des meilleures pratiques [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf).
+      Livre blanc [Bonnes pratiques relatives à la qualité et à l’accentuation des images dans Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf).
 
       * AEM permet également de contrôler un quatrième paramètre : monochrome (0,1). Ce paramètre détermine si le masquage flou est appliqué séparément à chaque composante de couleur en utilisant la valeur 0, ou à la luminosité/intensité de l’image en utilisant la valeur 1.
 
