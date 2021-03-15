@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: d4b7aed89e587750b96b13d07a9252ecabee6c03
 workflow-type: tm+mt
 source-wordcount: '1535'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -21,14 +21,14 @@ Cette page décrit également comment le cache du Dispatcher est invalidé, ains
 
 ### HTML/texte {#html-text}
 
-* par défaut, mis en cache pendant cinq minutes par le navigateur, en fonction de l’en-tête `cache-control` émis par le calque apache. Le réseau de diffusion de contenu respecte également cette valeur.
-* le paramètre de mise en cache HTML/Texte par défaut peut être désactivé en définissant la variable `DISABLE_DEFAULT_CACHING` dans `global.vars` :
+* par défaut, mis en cache par le navigateur pendant cinq minutes, en fonction de l’en-tête `cache-control` émis par la couche Apache. Le réseau de diffusion de contenu respecte également cette valeur.
+* le paramètre de mise en cache HTML/Texte par défaut peut être désactivé en définissant la variable `DISABLE_DEFAULT_CACHING` dans `global.vars` :
 
 ```
 Define DISABLE_DEFAULT_CACHING
 ```
 
-Cela peut s’avérer utile, par exemple, lorsque la logique de votre entreprise nécessite un réglage précis de l’en-tête d’âge (avec une valeur basée sur le jour calendaire) puisque, par défaut, l’en-tête d’âge est défini sur 0. Ceci dit, **soyez prudent lorsque vous désactivez la mise en cache par défaut.**
+Cela peut s’avérer utile, par exemple, lorsque votre logique commerciale nécessite un réglage précis de l’en-tête d’âge (avec une valeur basée sur le jour du calendrier) puisque, par défaut, l’en-tête d’âge est défini sur 0. Cela étant, **faites preuve de prudence lorsque vous désactivez la mise en cache par défaut.**
 
 * Peut être remplacé pour tout le contenu HTML/texte en définissant la variable `EXPIRATION_TIME` dans `global.vars` avec les outils du Dispatcher SDK AEM as a Cloud Service.
 * Peut être remplacé à un niveau plus détaillé par les directives mod_headers apache suivantes :
