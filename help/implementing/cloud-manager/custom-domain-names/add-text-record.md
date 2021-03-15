@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '299'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 89%
 
 Un enregistrement TXT de DNS permet l’hébergement d’un domaine dans un service CDN. Le client doit créer un enregistrement TXT de DNS dans la zone qui permet à Cloud Manager de déployer le service CDN avec le domaine personnalisé et de l’associer au service d’arrière-plan. Cette association est entièrement contrôlée par le client et permet à Cloud Manager de diffuser du contenu du service vers un domaine. Cette autorisation peut être accordée et retirée.
 
-Vous devez suivre les étapes ci-dessous avant de créer un enregistrement TXT :
+Vous devez respecter les étapes ci-dessous avant de créer un enregistrement TXT :
 
 * Vous devez pouvoir modifier les enregistrements DNS du domaine de votre entreprise ou contacter la personne qui peut le faire.
 * Identifiez l’hôte ou le serveur d’enregistrement de votre domaine si vous ne le connaissez pas déjà.
