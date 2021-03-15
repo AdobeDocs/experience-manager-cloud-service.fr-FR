@@ -1,17 +1,17 @@
 ---
-title: Fin de vie de la visionneuse DHTML
+title: Fin de prise en charge de la visionneuse DHTML
 description: Depuis le 31 janvier 2014, la plate-forme de la visionneuse DHTML est officiellement en fin de vie.
 translation-type: tm+mt
 source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
 source-wordcount: '42'
-ht-degree: 14%
+ht-degree: 57%
 
 ---
 
 
-# Fin de vie de la visionneuse DHTML {#dhtml-viewer-end-of-life}
+# Fin de prise en charge de la visionneuse DHTML {#dhtml-viewer-end-of-life}
 
 Depuis le 31 janvier 2014, la plate-forme de la visionneuse DHTML est officiellement en fin de vie.
 
-Consultez le [Guide de référence des visionneuses Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=fr) pour connaître les dernières visionneuses prises en charge.
+Consultez le [Guide de référence des visionneuses Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=fr) pour connaître les dernières visionneuses prises en charge.
