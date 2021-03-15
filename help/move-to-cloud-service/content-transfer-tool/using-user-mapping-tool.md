@@ -2,88 +2,104 @@
 title: Utilisation de l’outil de mappage des utilisateurs
 description: Utilisation de l’outil de mappage des utilisateurs
 translation-type: tm+mt
-source-git-commit: d1a944606a88a0afded94592676f14c0ba84e954
+source-git-commit: 7c7ae680932849cf2ed0be3dc10618d55acc8366
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 8%
+source-wordcount: '1104'
+ht-degree: 62%
 
 ---
 
 
-# Utilisation de l’outil de mappage utilisateur {#user-mapping-tool}
+# Utilisation de l’outil de mappage des utilisateurs {#user-mapping-tool}
 
 ## Présentation {#overview}
 
-Dans le cadre du parcours de transition à Adobe Experience Manager (AEM) en tant que Cloud Service, vous devez déplacer les utilisateurs et les groupes de votre système AEM existant vers l&#39;AEM en tant que Cloud Service. Pour ce faire, utilisez l’outil de transfert de contenu.
+Dans le cadre du parcours de transition vers Adobe Experience Manager (AEM) as a Cloud Service, vous devez déplacer les utilisateurs et les groupes du système AEM existant vers AEM as a Cloud Service. Cette opération fait appel à l’outil de transfert de contenu.
 
-L’un des changements majeurs apportés à AEM as a Cloud Service est l’utilisation entièrement intégrée des Adobe ID pour l’accès au niveau création.  Pour ce faire, il faut utiliser le [Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html) pour gérer les utilisateurs et les groupes d’utilisateurs. Les informations utilisateur-profil sont centralisées dans l’Adobe Identity Management System (IMS), qui permet l’authentification unique dans toutes les applications de cloud d’Adobes. Pour plus d&#39;informations, consultez [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management). En raison de cette modification, les utilisateurs et groupes existants doivent être mappés à leurs ID IMS pour éviter que des utilisateurs et des groupes de duplicata ne soient associés à l’instance d’auteur du Cloud Service.
+L’un des changements majeurs apportés à AEM as a Cloud Service est l’utilisation entièrement intégrée des Adobe ID pour l’accès au niveau création.  Pour ce faire, vous devez utiliser [Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html) afin de gérer les utilisateurs et les groupes d’utilisateurs. Les informations de profil d’utilisateur sont centralisées dans le système Adobe IMS (Identity Management System), qui permet l’authentification unique pour toutes les applications de cloud d’Adobe. Pour plus d’informations, consultez [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=fr#identity-management). En raison de cette modification, les utilisateurs et groupes existants doivent être mappés avec leurs ID IMS pour éviter que des doublons d’utilisateurs et de groupes ne soient associés à l’instance de création Cloud Service.
 
 ## Points importants {#important-considerations}
 
-Il y a quelques cas exceptionnels à examiner. Les cas spécifiques suivants seront consignés et l’utilisateur ou le groupe en question ne sera pas mappé :
+### Cas exceptionnels {#exceptional-cases}
 
-1. Si un utilisateur n’a pas d’adresse électronique dans le champ `profile/email` de son noeud *jcr*.
+Les cas spécifiques suivants seront consignés :
 
-1. Si un courrier électronique donné est introuvable sur le système IMS (Adobe Identity Management System) pour l&#39;ID d&#39;organisation utilisé (ou si l&#39;ID IMS ne peut pas être récupéré pour une autre raison).
+1. Si un utilisateur n’a pas d’adresse électronique dans le champ `profile/email` de son noeud *jcr*, l’utilisateur ou le groupe en question sera migré, mais pas mappé.
 
-1. Si l’utilisateur est actuellement désactivé, il est traité de la même manière que s’il n’était pas désactivé. Il sera mappé et migré comme normal et restera désactivé sur l’instance de cloud.
+1. Si un courrier électronique donné est introuvable sur le système IMS (Adobe Identity Management System) pour l&#39;ID d&#39;organisation utilisé (ou si l&#39;ID IMS ne peut pas être récupéré pour une autre raison), l&#39;utilisateur ou le groupe en question sera migré, mais pas mappé.
+
+1. Si l’utilisateur est actuellement désactivé, il est traité de la même manière que s’il n’était pas désactivé. Il fera l’objet d’une migration et d’un mappage normaux et restera désactivé sur l’instance cloud.
+
+1. Si un utilisateur existe sur l’instance de l’Cloud Service de l’cible AEM avec le même nom d’utilisateur (rep:principalName) que l’un des utilisateurs de l’instance d’AEM source, l’utilisateur ou le groupe en question ne sera pas migré.
+
+### Remarques complémentaires {#additional-considerations}
+
+* Si le paramètre **Effacer le contenu existant sur l’instance Cloud avant l’assimilation** est défini, les utilisateurs déjà transférés sur l’instance de Cloud Service seront supprimés avec l’ensemble du référentiel existant et un nouveau référentiel sera créé pour intégrer du contenu. Ceci réinitialise également tous les paramètres, y compris les autorisations sur l’instance de Cloud Service de cible, et est vrai pour un utilisateur administrateur ajouté au groupe **administrateurs**. L’utilisateur administrateur doit être réajouté au groupe **administrateurs** pour récupérer le jeton d&#39;accès pour CTT.
+
+* Il est recommandé de supprimer tout utilisateur existant de l’instance d’AEM Cloud Service de cible avant d’exécuter CTT avec Mappage d’utilisateur. Cela permet d’éviter tout conflit entre la migration des utilisateurs de l’instance d’AEM source vers l’instance d’AEM de cible. Des conflits surviendront lors de l’assimilation si un même utilisateur existe sur l’instance d’AEM source et l’instance d’AEM de cible.
+
+* Lorsque des rechargements de contenu sont effectués, si le contenu n’est pas transféré parce qu’il n’a pas été modifié depuis le transfert précédent, les utilisateurs et les groupes associés à ce contenu ne seront pas transférés non plus, même si les utilisateurs et les groupes ont changé entre-temps. En effet, les utilisateurs et les groupes sont migrés avec le contenu auquel ils sont associés.
+
+* L&#39;importation échoue dans les cas suivants :
+
+1. Si l’instance de l’Cloud Service de cible a un utilisateur avec un nom d’utilisateur différent mais la même adresse électronique que l’un des utilisateurs de l’instance d’AEM source.
+
+1. S’il y a deux utilisateurs sur l’instance d’AEM source avec des noms d’utilisateur différents mais la même adresse électronique. AEM en tant que Cloud Service ne permet pas à deux utilisateurs d’avoir la même adresse électronique.
 
 ## Utilisation de l’outil de mappage des utilisateurs {#using-user-mapping-tool}
 
-L’outil de mappage utilisateur utilise une API qui lui permet de rechercher des utilisateurs du système IMS (Adobe Identity Management System) par courrier électronique et de renvoyer leurs ID IMS. Cette API requiert que l&#39;utilisateur crée un ID de client pour son organisation, une clé secrète client et un jeton d&#39;accès ou de garde.
+L’outil de mappage utilisateur utilise une API qui lui permet de rechercher des utilisateurs du système de Identity Management Adobe (IMS) par courrier électronique et de renvoyer leurs ID IMS. Cette API nécessite que l’utilisateur crée un ID client pour son organisation, un secret client et un jeton d’accès ou de porteur.
 
-Suivez les étapes ci-dessous pour configurer ce paramètre :
+Suivez les étapes ci-dessous pour configurer ces éléments :
 
-1. Accédez à [Adobe Developer Console](https://console.adobe.io) à l&#39;aide de votre Adobe ID.
-1. Créez un projet ou ouvrez un projet existant.
+1. Accédez à la [Adobe Developer Console](https://console.adobe.io) à l’aide de votre Adobe ID.
+1. Créez un projet ou ouvrez un formulaire existant.
 1. Ajoutez une API.
-1. Sélectionnez User Management API.
+1. Sélectionnez l’API Gestion des utilisateurs.
 1. Créez des informations d’identification JWT.
-1. Générez une paire de clés ou Téléchargez une clé publique (rsa ne convient pas).
-1. Générez un jeton d&#39;accès (ou jeton JWT ou jeton porteur).
-1. Enregistrez en toute sécurité toutes ces informations, telles que **ID client**, **Secret client**, **ID de compte technique**, **Adresse électronique du compte technique**, **ID d&#39;entreprise** et **Jeton d&#39;accès**.
+1. Générez une paire de clés ou chargez une clé publique (RSA ne convient pas).
+1. Générez un jeton d’accès (ou jeton JWT ou jeton au porteur).
+1. Enregistrez en lieu sûr ces informations, notamment l’**ID client**, le **secret client**, l’**ID de compte technique**, l’**adresse électronique du compte technique**, l’**ID d’organisation** et le **jeton d’accès**.
 
 ## Interface utilisateur {#user-interface}
 
-L’outil de mappage utilisateur est intégré à l’outil de transfert de contenu. Vous pouvez télécharger l&#39;outil de transfert de contenu à partir de [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/fr-FR/aemcloud.html). Pour plus d&#39;informations sur la dernière version, consultez les [Notes de mise à jour actuelles](/help/release-notes/release-notes-cloud/release-notes-current.md).
+L’outil de mappage des utilisateurs est intégré à l’outil de transfert de contenu. Vous pouvez télécharger l’outil de transfert de contenu depuis le [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Pour plus d’informations sur la dernière version, consultez les [Notes de mise à jour actuelles](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-1. Sélectionnez Adobe Experience Manager et accédez à Outils -> **Opérations** -> **Content Transfer** (Transfert de contenu).
-1. Cliquez sur **Créer une configuration de mappage utilisateur**.
+1. Sélectionnez Adobe Experience Manager et accédez à Outils -> **Opérations** -> **Transfert de contenu**.
+1. Cliquez sur **Créer une configuration de mappage des utilisateurs**.
 
    >[!NOTE]
-   >Si vous ignorez cette étape, le mappage des utilisateurs et des groupes sera ignoré pendant la phase d’Extraction.
+   >Si vous ignorez cette étape, le mappage des utilisateurs et des groupes sera ignoré au cours de la phase d’extraction.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-1.png)
 
-   Renseignez les champs de la configuration de l’API User Management comme décrit ci-dessous :
+   Renseignez les champs de la configuration de l’API Gestion des utilisateurs comme décrit ci-dessous :
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-2.png)
 
-   * **ID** d&#39;entreprise : Saisissez l’ID d’organisation Adobe Identity Management System (IMS) pour l’organisation que les utilisateurs migrent.
+   * **ID d’organisation** : saisissez l’ID d’organisation Adobe IMS (Identity Management System) pour l’organisation depuis laquelle migrent les utilisateurs.
 
       >[!NOTE]
-      >Pour obtenir l’ID d’organisation, connectez-vous au [Admin Console](https://adminconsole.adobe.com/) et choisissez votre organisation (dans la zone supérieure droite) si vous appartenez à plusieurs organisations. L’ID d’organisation se trouve dans l’URL de cette page, au format `xx@AdobeOrg`, où xx correspond à l’ID d’organisation IMS.  Vous pouvez également trouver l’ID d’organisation dans la [Adobe Developer Console](https://console.adobe.io) page où vous générez le Jeton d&#39;accès.
+      >Pour obtenir l’ID d’organisation, connectez-vous à l’[Admin Console](https://adminconsole.adobe.com/) et choisissez votre organisation (dans la zone supérieure droite) si vous appartenez à plusieurs. L’ID d’organisation se trouve dans l’URL de cette page, au format `xx@AdobeOrg`, où xx correspond à l’ID d’organisation IMS.  Vous pouvez également trouver l’ID d’organisation sur la page [Adobe Developer Console](https://console.adobe.io) où vous générez le jeton d’accès.
 
-   * **ID** client : Saisissez l’ID client que vous avez enregistré à l’étape de configuration.
+   * **ID client** : saisissez l’ID client enregistré à l’étape de configuration.
 
-   * **jeton d&#39;accès** : Entrez le Jeton d&#39;accès que vous avez enregistré à partir de l&#39;étape de configuration.
+   * **Jeton d’accès** : saisissez le jeton d’accès enregistré lors de l’étape de configuration.
 
       >[!NOTE]
-      >Le Jeton d&#39;accès arrive à expiration toutes les 24 heures et il faut en créer un nouveau. Pour créer un jeton, revenez dans [Adobe Developer Console](https://console.adobe.io), choisissez votre projet, cliquez sur **User Management API** et collez la même clé privée dans la zone.
+      >Le jeton d’accès arrive à expiration toutes les 24 heures et il faut en créer un nouveau. Pour créer un jeton, revenez dans [Adobe Developer Console](https://console.adobe.io), choisissez votre projet, cliquez sur **User Management API** (API Gestion des utilisateurs) et collez la même clé privée dans la zone.
 
-1. Après avoir saisi les informations ci-dessus, cliquez sur **Enregistrer**.
+1. Après avoir saisi les informations ci-dessus, cliquez sur **Save** (Enregistrer).
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-3.png)
 
 
-1. Créez un jeu de migration en cliquant sur **Créer un jeu de migration** et en renseignant les champs, puis en cliquant sur **Enregistrer**. Pour plus d&#39;informations, reportez-vous à la section [Exécution de l&#39;outil de transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool).
+1. Créez un jeu de migration en cliquant sur **Create Migration Set** (Créer un jeu de migration) et en renseignant les champs, puis cliquez sur **Save** (Enregistrer). Pour plus d’informations, reportez-vous à la section [Exécution de l’outil de transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool).
 
    >[!NOTE]
-   >Par défaut, l’option bascule pour inclure le mappage des utilisateurs à partir des utilisateurs et groupes IMS est ACTIVÉE. Avec ce paramètre, lorsque l’Extraction est effectuée sur ce jeu de migration, l’outil de mappage utilisateur s’exécute dans le cadre de la phase d’Extraction. Il s’agit de la méthode recommandée pour exécuter la phase d’Extraction de l’outil de transfert de contenu. Si cette bascule est désactivée et/ou si la configuration de mappage des utilisateurs n’est pas créée, le mappage des utilisateurs et des groupes est ignoré pendant la phase d’Extraction.
+   >Par défaut, l’option de bascule destinée à inclure le mappage des utilisateurs à partir des utilisateurs et groupes IMS est activée. Avec ce paramètre, lorsque l’extraction est appliquée à ce jeu de migration, l’outil de mappage des utilisateurs s’exécute dans le cadre de la phase d’extraction. C’est la méthode recommandée pour exécuter la phase d’extraction de l’outil de transfert de contenu. Si ce paramètre est désactivé et/ou si la configuration du mappage des utilisateurs n’est pas créée, le mappage des utilisateurs et des groupes est ignoré pendant la phase d’extraction.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
-1. Pour exécuter la phase d&#39;Extraction, reportez-vous à la section [Exécution de l&#39;outil de transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool).
-
-
+1. Pour exécuter la phase d’extraction, reportez-vous à la section [Exécution de l’outil de transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool).
 
