@@ -2,17 +2,17 @@
 title: Vérification du statut d’un certificat SSL – Gestion des certificats SSL
 description: Vérification du statut d’un certificat SSL – Gestion des certificats SSL
 translation-type: tm+mt
-source-git-commit: f426a9a653a3a3ae06abdbd2262e5d8f4beff277
+source-git-commit: ddee11fdfa8cadfcd63472fd3c94cd8af555c856
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 87%
+source-wordcount: '200'
+ht-degree: 69%
 
 ---
 
 
 # Vérification du statut d’un certificat SSL {#checking-status-an-ssl-certificate}
 
-L’état de vos certificats SSL peut être compris d’un seul coup d’oeil à partir de la page de certificat SSL.
+L’état de vos certificats SSL se comprend d’un seul coup d’oeil grâce à la page de certificat SSL.
 
 Vous pouvez identifier le statut d’un certificat SSL d’après les modèles de couleurs suivants :
 
@@ -24,3 +24,14 @@ indique que votre certificat doit expirer dans moins de 60 jours. Il est temps d
 
 * Le **rouge**
 indique que malgré plusieurs notifications, votre certificat SSL a expiré.
+
+## Configurations CDN préexistantes pour les Listes autorisées IP {#pre-existing-cdn}
+
+Les clients disposant d’environnements qui incluent des configurations CDN préexistantes pour les Listes autorisées IP, les certificats SSL ou les noms de domaine personnalisés voient le message suivant dans les pages de détails **Liste autorisée IP** et **Environnement**.
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+
+>[!NOTE]
+>Pour afficher et gérer les configurations préexistantes, elles doivent être ajoutées via l’interface utilisateur, comme le montre la figure ci-dessous.
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
