@@ -2,7 +2,7 @@
 title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.3.0
 description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.3.0
 translation-type: tm+mt
-source-git-commit: 36e5e90785a1bc9a4f4f8d4febd462e00252a0ea
+source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 16%
@@ -30,21 +30,21 @@ La prochaine version est prévue pour le 8 avril 2021.
    * Supprimez des sites (ou des ressources) d’un programme existant avec des sites et des ressources.
    * Ajoutez ensuite les droits de solution inutilisés à un programme existant ou en tant que nouveau Programme.
 
-* L’étiquette &quot;Mise à jour AEM Push&quot; s’affiche désormais pour les écrans d’exécution du pipeline et d’Activité.
+* **Le** libellé de mise à jour Push AEM sera désormais affiché pour les écrans Exécution du pipeline et Activité.
 
-* Si un environnement est mis en veille prolongée mais qu’une mise à jour AEM est également disponible, l’état &quot;Hébergé&quot; prévaudra sur &quot;Mise à jour disponible&quot;.
+* Si un environnement est mis en veille prolongée, mais qu&#39;une mise à jour AEM est également disponible, l&#39;état **Hibernated** prévaudra sur **Mise à jour disponible**.
 
 * Les utilisateurs peuvent désormais voir leur ou leurs rôles Cloud Manager en sélectionnant l’option &quot;Rôle(s) de Vue Cloud Manager&quot; après avoir accédé à l’icône Profil utilisateur (en haut à droite) de l’environnement de travail unifié.
 
-* L&#39;étiquette &quot;Demande d&#39;approbation&quot; a été réétiquetée &quot;Approbation de production&quot; pour plus de clarté.
+* Pour plus de clarté, l&#39;étiquette **Demande d&#39;approbation** a été réétiquetée à **Approbation de production**.
 
-* Le libellé &quot;Version&quot; a été réétiqueté en &quot;Balise Git&quot; dans l’écran d’exécution du pipeline de production.
+* Le libellé **Version** a été réétiqueté en **Balise Git** dans l&#39;écran d&#39;exécution du pipeline de production.
 
-* Les étiquettes qui définissent le comportement lorsque des mesures importantes ne respectent pas le seuil défini ont été réétiquetées pour refléter leur comportement réel : Annuler immédiatement et Approuver immédiatement.
+* Les étiquettes qui définissent le comportement lorsque des mesures importantes ne respectent pas le seuil défini ont été réétiquetées pour refléter leur comportement réel : **Annuler immédiatement** et **Approuver immédiatement**.
 
 * Les listes de classe et de méthode d’obsolescence ont été mises à jour en fonction de la version `2021.3.4997.20210303T022849Z-210225` du SDK Cloud Service AEM.
 
-* Le pipeline de production de Cloud Manager inclut désormais la fonctionnalité de test d’interface utilisateur personnalisée.
+* Le pipeline de production de Cloud Manager inclut désormais la fonctionnalité [Tests d’interface utilisateur personnalisés](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).
 
 ### Correctifs {#bug-fixes}
 
