@@ -2,10 +2,10 @@
 title: Vérification du statut d’un certificat SSL – Gestion des certificats SSL
 description: Vérification du statut d’un certificat SSL – Gestion des certificats SSL
 translation-type: tm+mt
-source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
+source-git-commit: 46004eb1925533545605a09f62bbd0e7945227e0
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 59%
+source-wordcount: '236'
+ht-degree: 58%
 
 ---
 
@@ -29,9 +29,9 @@ indique que malgré plusieurs notifications, votre certificat SSL a expiré.
 
 Les clients disposant d’environnements qui incluent des configurations CDN préexistantes pour les Listes autorisées IP, les certificats SSL ou les noms de domaine personnalisés voient le message suivant dans les pages de détails **Liste autorisée IP** et **Environnement**. Le message affiché dans l’interface utilisateur disparaît une fois que le client a effectué la migration complète de toutes les configurations d’environnement préexistantes via l’interface utilisateur et il peut s’écouler entre 1 et 2 jours ouvrés avant que le message ne disparaisse.
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
-
 >[!NOTE]
->Pour afficher et gérer les configurations préexistantes, elles doivent être ajoutées via l’interface utilisateur, comme le montre la figure ci-dessous.
+>Pour afficher et gérer les configurations préexistantes, elles doivent être ajoutées via l’interface utilisateur. Pour plus d&#39;informations, consultez [Ajouter un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
