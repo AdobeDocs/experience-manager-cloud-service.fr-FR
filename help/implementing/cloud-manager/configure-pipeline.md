@@ -2,10 +2,10 @@
 title: Configuration du pipeline CI/CD - Cloud Services
 description: Configuration du pipeline CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: 4d5ad99e44446ac40d9798df1c7fabb862065495
+source-git-commit: 97c3ddd5331d55c5d9b45a29251f584e4bac878b
 workflow-type: tm+mt
 source-wordcount: '770'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -62,7 +62,7 @@ Pour configurer le comportement et les préférences de votre pipeline, procéde
 
 1. Configurez vos options de déploiement.
 
-   ![](assets/setup-2.png)
+   ![](assets/setup-pipeline.png)
 
    Vous pouvez définir le déclencheur pour démarrer le pipeline :
 
@@ -74,8 +74,8 @@ Pour configurer le comportement et les préférences de votre pipeline, procéde
    Cela s’avère utile pour les clients qui souhaitent davantage de processus automatisés. Les options disponibles sont les suivantes :
 
    * **Demander à chaque fois** : il s’agit du paramètre par défaut, qui nécessite une intervention manuelle lors de n’importe quel échec important.
-   * **Échec immédiatement** : si cette option est sélectionnée, le pipeline sera annulé chaque fois qu’un échec important se produira. Cette option émule essentiellement un utilisateur rejetant manuellement chaque échec.
-   * **Continuer immédiatement** : si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Cette option émule essentiellement la validation manuelle de l’utilisateur à chaque échec.
+   * **Annuler immédiatement**  - Si cette option est sélectionnée, le pipeline sera annulé chaque fois qu&#39;une défaillance importante se produit. Cette option émule essentiellement un utilisateur rejetant manuellement chaque échec.
+   * **Approuver immédiatement**  - Si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu&#39;une défaillance importante se produit. Cette option émule essentiellement la validation manuelle de l’utilisateur à chaque échec.
 
 
 1. Les paramètres du pipeline de production comprennent un troisième onglet intitulé **Contrôle de l’expérience**. Cette option fournit un tableau pour les chemins d’URL qui doivent toujours être inclus dans le contrôle de l’expérience.
