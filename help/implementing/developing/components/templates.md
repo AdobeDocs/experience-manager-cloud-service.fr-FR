@@ -489,6 +489,7 @@ Les stratégies de page vous permettent de définir la [stratégie de contenu](#
    * Définir la propriété de statut sur le nœud `jcr:content`.
 
       * Par exemple, sous :
+
          `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Définissez la propriété :
@@ -501,6 +502,7 @@ Les stratégies de page vous permettent de définir la [stratégie de contenu](#
 
    * [Définissez le ou les chemins d’accès des modèles autorisés dans les **Propriétés de page**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) de la page appropriée ou de la page racine d’une sous-branche.
    * Définissez la propriété :
+
       `cq:allowedTemplates`
 Sur le 
 nœud `jcr:content` de la branche requise.
@@ -582,12 +584,10 @@ Le diagramme suivant illustre le processus d’évaluation de modèle :
 >Par conséquent, Adobe vous recommande de commencer simplement, en définissant :
 >
 >* uniquement la propriété `cq:allowedTemplates` ;
-   >
-   >
-* uniquement sur la racine du site.
 >
+>* uniquement sur la racine du site.
 >
-Pour consulter un exemple, reportez-vous au contenu du [tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) : `/content/wknd/jcr:content`
+>Pour consulter un exemple, reportez-vous au contenu du [tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) : `/content/wknd/jcr:content`
 >
 >Les propriétés `allowedPaths`, `allowedParents` et `allowedChildren` peuvent également être placées sur les modèles pour définir des règles plus élaborées. Cependant, dans la mesure du possible, il est *beaucoup* plus simple de définir d’autres propriétés `cq:allowedTemplates` dans des sous-sections du site si des restrictions supplémentaires des modèles autorisés s’imposent.
 >
