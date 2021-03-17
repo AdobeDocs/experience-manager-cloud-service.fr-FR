@@ -3,10 +3,10 @@ title: Métadonnées XMP
 description: Découvrez la norme de métadonnées XMP (Extensible Metadata Platform) pour la gestion des métadonnées. Elle est utilisée par AEM comme format normalisé pour la création, le traitement et l’échange de métadonnées.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 46f5ffbdce0bf555e9576126acec61cdae0a1de0
+source-git-commit: c3da535db4bf2b0f71e338f542d388437d6c1623
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 74%
+source-wordcount: '979'
+ht-degree: 76%
 
 ---
 
@@ -72,7 +72,10 @@ XMP vous offre la possibilité d’ajouter une propriété `xml:lang` aux propri
 
 ## Écriture différée XMP sur les rendus {#xmp-writeback-to-renditions}
 
-Cette fonction d’écriture différée XMP dans [!DNL Adobe Experience Manager Assets] reproduit les modifications de métadonnées apportées aux rendus de la ressource d’origine. Lorsque vous modifiez les métadonnées d’un fichier depuis [!DNL Assets] ou lors du transfert de l’actif, les modifications sont initialement stockées dans le noeud de l’actif dans le référentiel. Cependant, [!DNL Assets] ne propage pas automatiquement les modifications de métadonnées aux rendus d’un fichier. La fonction Écriture différée XMP permet de propager les modifications de métadonnées à l’ensemble des rendus de la ressource ou uniquement à certains d’entre eux. Les mises à jour sont stockées dans le noeud de métadonnées de la hiérarchie des ressources. Cette fonctionnalité incorpore également les mises à jour dans les fichiers binaires des rendus. La fonctionnalité n’écrit que les propriétés de métadonnées qui utilisent un espace de nommage `jcr`.
+Cette fonction d’écriture différée XMP dans [!DNL Adobe Experience Manager Assets] reproduit les modifications de métadonnées apportées aux rendus de la ressource d’origine.
+Lorsque vous modifiez les métadonnées d’un fichier depuis le composant Ressources ou lors du téléchargement du fichier, les modifications sont initialement stockées dans le noeud de métadonnées de la hiérarchie des ressources.
+
+La fonction Écriture différée XMP permet de propager les modifications de métadonnées à l’ensemble des rendus de la ressource ou uniquement à certains d’entre eux. La fonctionnalité n&#39;écrit que les propriétés de métadonnées qui utilisent l&#39;espace de nommage `jcr`, c&#39;est-à-dire qu&#39;une propriété nommée `dc:title` est réécrite, mais qu&#39;une propriété nommée `mytitle` ne l&#39;est pas.
 
 Par exemple, imaginez un scénario où vous modifiez la propriété [!UICONTROL Title] de l’actif intitulé `Classic Leather` en `Nylon`.
 
