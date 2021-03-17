@@ -2,7 +2,7 @@
 title: Vérification du statut d’un certificat SSL – Gestion des certificats SSL
 description: Vérification du statut d’un certificat SSL – Gestion des certificats SSL
 translation-type: tm+mt
-source-git-commit: 46004eb1925533545605a09f62bbd0e7945227e0
+source-git-commit: e99c8552e2afff677c08c859dd1044287053a40e
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 58%
@@ -32,6 +32,6 @@ Les clients disposant d’environnements qui incluent des configurations CDN pr�
 >[!NOTE]
 >Pour afficher et gérer les configurations préexistantes, elles doivent être ajoutées via l’interface utilisateur. Pour plus d&#39;informations, consultez [Ajouter un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message2.png)
