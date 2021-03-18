@@ -2,10 +2,10 @@
 title: SDK AEM as a Cloud Service
 description: Aperçu du SDK AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 0b46cc8ce4229138df84c70193cf9068e1200f0a
+source-git-commit: 6b754a866be7979984d613b95a6137104be05399
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 100%
+source-wordcount: '1179'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ Les mêmes opérations sont exécutées par Cloud Manager lors du déploiement v
 ## Accès au SDK d’AEM as a Cloud Service {#accessing-the-aem-as-a-cloud-service-sdk}
 
 * Vous pouvez consulter l’icône **À propos d’Adobe Experience Manager** d’AEM Admin Console pour connaître la version d’AEM que vous exécutez en production.
-* Le fichier Quickstart Jar et les outils Dispatcher peuvent être téléchargés dans un fichier ZIP depuis le [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/fr-FR/aemcloud.html). Notez que l’accès aux listes de SDK est limité aux environnements AEM Managed Services ou AEM as a Cloud Service.
+* Le fichier Quickstart Jar et les outils Dispatcher peuvent être téléchargés dans un fichier ZIP depuis le [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Notez que l’accès aux listes de SDK est limité aux environnements AEM Managed Services ou AEM as a Cloud Service.
 * Les fichiers Java API Jar et Javadoc Jar peuvent être téléchargés via l’outil Maven, soit en ligne de commande, soit avec votre IDE préféré.
 * Les fichiers pom de projet Maven doivent faire référence au module API Jar suivant. Cette dépendance doit également être référencée dans tous les sous-modules pom.
 
@@ -84,7 +84,7 @@ Si du contenu doit être installé avec chaque nouvelle version de quickstart d�
 
 Il est recommandé de mettre à jour fréquemment le SDK (par exemple, toutes les deux semaines) et de supprimer quotidiennement l’état local complet pour ne pas dépendre accidentellement de données avec état dans l’application.
 
-Si vous dépendez de CryptoSupport ([soit en configurant les informations d’identification des Cloud Services ou du service de messagerie SMTP dans AEM, soit en utilisant l’API CryptoSupport dans votre application](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/crypto/CryptoSupport.html)), les propriétés sont chiffrées par une clé qui est générée automatiquement au premier démarrage de l’environnement AEM. Bien que la configuration du cloud s’occupe de réutiliser automatiquement la clé de chiffrement (CryptoKey) spécifique à l’environnement, il est nécessaire d’injecter la clé de chiffrement dans l’environnement de développement local.
+Si vous dépendez de CryptoSupport ([soit en configurant les informations d’identification des Cloud Services ou du service de messagerie SMTP dans AEM, soit en utilisant l’API CryptoSupport dans votre application](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/granite/crypto/CryptoSupport.html)), les propriétés sont chiffrées par une clé qui est générée automatiquement au premier démarrage de l’environnement AEM. Bien que la configuration du cloud s’occupe de réutiliser automatiquement la clé de chiffrement (CryptoKey) spécifique à l’environnement, il est nécessaire d’injecter la clé de chiffrement dans l’environnement de développement local.
 
 Par défaut, AEM est configuré pour stocker les données clés dans le dossier de données d’un dossier, mais pour faciliter leur réutilisation dans le développement, le processus AEM peut être initialisé au premier démarrage avec « `-Dcom.adobe.granite.crypto.file.disable=true` ». Les données de chiffrement seront alors générées à l’emplacement « `/etc/key` ».
 
