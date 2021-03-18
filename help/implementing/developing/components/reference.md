@@ -2,10 +2,10 @@
 title: Guide de référence des composants
 description: Guide de référence du développeur sur les détails des composants et de leur structure
 translation-type: tm+mt
-source-git-commit: d843182585a269b5ebb24cc31679b77fb6b6d697
+source-git-commit: f9a6dbec25b8154fda8069ff213aaaaa1d443ca1
 workflow-type: tm+mt
-source-wordcount: '3720'
-ht-degree: 100%
+source-wordcount: '3675'
+ht-degree: 99%
 
 ---
 
@@ -118,7 +118,7 @@ La définition d’un composant peut être décomposée comme suit :
 
 L’icône ou l’abréviation du composant est définie via les propriétés JCR du composant lorsque le composant est créé par le développeur. Ces propriétés sont évaluées dans l’ordre suivant, la première propriété valide trouvée étant utilisée.
 
-1. `cq:icon` - Propriété de chaîne pointant vers une icône standard dans la [bibliothèque de l’IU Coral](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) à afficher dans le navigateur de composants
+1. `cq:icon` - Propriété de chaîne pointant vers une icône standard dans la [bibliothèque de l’IU Coral](https://opensource.adobe.com/coral-spectrum/examples/#icon) à afficher dans le navigateur de composants
    * Utilisez la valeur de l’attribut HTML de l’icône Coral.
 1. `abbreviation` - Propriété de chaîne servant à personnaliser l’abréviation du nom du composant dans le navigateur de composants
    * L’abréviation devrait être limitée à deux caractères.
@@ -230,15 +230,13 @@ Les boîtes de dialogue de conception sont similaires aux boîtes de dialogue ut
 
 L’IU Coral et l’IU Granite définissent l’aspect d’AEM.
 
-* [L’IU Coral](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) fournit une interface utilisateur uniforme dans toutes les solutions cloud.
+* [L’IU Coral](https://opensource.adobe.com/coral-spectrum/documentation/) fournit une interface utilisateur uniforme dans toutes les solutions cloud.
 * [L’IU Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) fournit le balisage de l’IU Coral encapsulé dans les composants Sling pour la création de consoles d’interface utilisateur et de boîtes de dialogue.
 
 L’IU Granite offre un vaste éventail de widgets de base nécessaires pour créer une boîte de dialogue dans l’environnement de création. Si nécessaire, vous pouvez étendre cette sélection et créer votre propre widget.
 
 Pour plus de détails, reportez-vous aux ressources suivantes :
 
-* [Guide de l’IU Coral](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
-* [Documentation relative à l’interface utilisateur Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
 * [Structure de l’interface utilisateur d’AEM](/help/implementing/developing/introduction/ui-structure.md)
 
 ### Personnalisation des champs de boîte de dialogue {#customizing-dialog-fields}
@@ -389,7 +387,7 @@ Pour injecter une logique dans votre champ, vous devez :
 * marquer votre champ avec une classe CSS donnée (le hook) ;
 * définir dans votre bibliothèque cliente un écouteur JS associé à ce nom de classe CSS (pour garantir que la logique personnalisée est limitée à ce champ et n’affecte pas les autres champs du même type).
 
-Pour ce faire, vous devez connaître la bibliothèque de widgets sous-jacente avec laquelle vous souhaitez interagir. [Consultez la documentation relative à l’IU Coral](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) pour identifier l’événement auquel vous voulez réagir.
+Pour ce faire, vous devez connaître la bibliothèque de widgets sous-jacente avec laquelle vous souhaitez interagir. [Consultez la documentation relative à l’IU Coral](https://opensource.adobe.com/coral-spectrum/documentation/) pour identifier l’événement auquel vous voulez réagir.
 
 Le nœud `cq:listeners` (type de nœud `cq:EditListenersConfig`) définit ce qui se passe avant ou après une action sur le composant. Le tableau suivant définit ses propriétés possibles.
 
@@ -449,7 +447,7 @@ Ce événement est déclenché chaque fois que la boîte de dialogue se charge (
 
 ## Comportement de la prévisualisation {#preview-behavior}
 
-Le cookie [WCM Mode ](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html)est défini lors du passage en mode Aperçu même lorsque la page n’est pas rafraîchie.
+Le cookie [WCM Mode ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html)est défini lors du passage en mode Aperçu même lorsque la page n’est pas rafraîchie.
 
 Pour les composants dont le rendu est sensible au mode WCM, ils doivent être définis de manière à s’actualiser eux-mêmes, puis s’appuyer sur la valeur du cookie.
 
