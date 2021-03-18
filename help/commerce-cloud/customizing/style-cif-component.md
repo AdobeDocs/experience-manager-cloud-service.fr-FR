@@ -11,9 +11,9 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2566'
 ht-degree: 100%
 
 ---
@@ -183,7 +183,7 @@ Apportez ensuite une légère modification au style du teaser pour voir comment 
 
    **clientlib-cif** : il s’agit également d’une bibliothèque cliente vide qui incorpore simplement les dépendances nécessaires des [composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components). La catégorie est `venia.cif`.
 
-   **clientlib-grid** : inclut le fichier CSS nécessaire pour activer la fonction de grille réactive d’AEM. Utiliser la grille AEM active le [mode de mise en page](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/operations/configuring-responsive-layout.html#include-the-responsive-css) dans l’éditeur AEM et permet aux auteurs de contenu de redimensionner les composants. La catégorie est `venia.grid` et est incorporée dans la bibliothèque `venia.base`.
+   **clientlib-grid** : inclut le fichier CSS nécessaire pour activer la fonction de grille réactive d’AEM. Utiliser la grille AEM active le [mode de mise en page](/help/sites-cloud/authoring/features/responsive-layout.md) dans l’éditeur AEM et permet aux auteurs de contenu de redimensionner les composants. La catégorie est `venia.grid` et est incorporée dans la bibliothèque `venia.base`.
 
 1. Inspectez les fichiers `customheaderlibs.html` et `customfooterlibs.html` sous `ui.apps/src/main/content/jcr_root/apps/venia/components/page` :
 
@@ -256,7 +256,7 @@ Vérifiez ensuite l’inclusion des bibliothèques clientes sur la page.
 
 ## Inclusion de la bibliothèque cliente avec des modèles de page {#client-library-inclusion-pagetemplates}
 
-Il existe plusieurs options pour inclure une bibliothèque côté client. Examinez ensuite comment le projet généré inclut les bibliothèques `clientlib-site` par le biais de [modèles de page](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/developing/platform/templates/page-templates-editable.html).
+Il existe plusieurs options pour inclure une bibliothèque côté client. Examinez ensuite comment le projet généré inclut les bibliothèques `clientlib-site` par le biais de [modèles de page](/help/implementing/developing/components/templates.md).
 
 1. Accédez à la **page d’accueil** du site dans l’éditeur AEM : [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
@@ -474,7 +474,7 @@ Vous venez de mettre en forme votre premier composant principal AEM CIF et avez 
 
 ## Défi bonus {#bonus-challenge}
 
-Utilisez le [système de style AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/developing/components/style-system.html) pour créer deux styles pouvant être activés/désactivés par un auteur de contenu. Le [développement avec le système de style](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html) comprend des étapes détaillées et des informations sur la façon d’y parvenir.
+Utilisez le [système de style AEM](/help/sites-cloud/authoring/features/style-system.md) pour créer deux styles pouvant être activés/désactivés par un auteur de contenu. Le [développement avec le système de style](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html) comprend des étapes détaillées et des informations sur la façon d’y parvenir.
 
 ![Défi bonus – Système de style](../assets/style-cif-component/bonus-challenge.png)
 
