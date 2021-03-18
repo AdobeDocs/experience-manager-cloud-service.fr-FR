@@ -2,10 +2,10 @@
 title: Conventions de dénomination
 description: Les nœuds dans le référentiel sont soumis aux conventions de dénomination de Java Content Repository
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 6b754a866be7979984d613b95a6137104be05399
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 100%
+source-wordcount: '223'
+ht-degree: 94%
 
 ---
 
@@ -24,7 +24,7 @@ Ces conventions sont mises en place à différents niveaux :
 
 ### Utilitaires JCR {#jcr-utilities}
 
-[JcrUtil](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) est l’implémentation AEM des utilitaires JCR. Les mappages de caractères contrôlés et les validations suivantes se révèlent particulièrement intéressants dans le cadre de la validation des noms :
+[JcrUtil](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/jcr/JcrUtil.html) est l’implémentation AEM des utilitaires JCR. Les mappages de caractères contrôlés et les validations suivantes se révèlent particulièrement intéressants dans le cadre de la validation des noms :
 
 * `isValidName`
    * Vérifie si le nom n’est pas vide et contient uniquement des caractères valides.
@@ -35,7 +35,7 @@ Ces conventions sont mises en place à différents niveaux :
 
 ### Gestionnaire de pages {#page-manager}
 
-[PageManager](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) fournit des méthodes pour les opérations au niveau de la page, sur la base de [JCRUtil](#jcr-utilities).
+[PageManager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) fournit des méthodes pour les opérations au niveau de la page, sur la base de [JCRUtil](#jcr-utilities).
 
 ### Comportement de l’interface utilisateur d’AEM {#ui-behavior}
 
