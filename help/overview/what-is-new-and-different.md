@@ -2,7 +2,7 @@
 title: Nouveautés et différences – Adobe Experience Manager as a Cloud Service
 description: 'Nouveautés et différences – Adobe Experience Manager (AEM) as a Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 4f43736ae80eeb57efe7d480993efd9a7ad193bf
+source-git-commit: b77113ccc55f2063c684d49e2babdd7563b9d6fc
 workflow-type: tm+mt
 source-wordcount: '1885'
 ht-degree: 98%
@@ -37,7 +37,7 @@ Il existe des différences intrinsèques entre ces approches antérieures et AEM
 
 >[!NOTE]
 >
->Pour plus d’informations sur les versions On-Premise et Managed Service, consultez la documentation relative à [AEM 6.5](https://helpx.adobe.com/fr/support/experience-manager/6-5.html).
+>Pour plus d’informations sur les versions On-Premise et Managed Service, consultez la documentation relative à [AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=fr).
 
 ## Architecture {#architecture}
 
