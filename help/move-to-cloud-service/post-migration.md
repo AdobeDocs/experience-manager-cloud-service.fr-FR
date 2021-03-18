@@ -2,9 +2,9 @@
 title: Phase post-migration
 description: Phase post-migration
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '226'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ En tant qu’utilisateur, vous pouvez accéder à **CRXDE Lite** dans l’enviro
 >[!IMPORTANT]
 >L’écriture, au moment de l’exécution, dans des référentiels non modifiables tels que `/libs` et `/apps`, entraîne des erreurs. En outre, en tant que client, vous n’aurez pas accès aux outils de développement pour les environnements d’évaluation et de production.
 
-Pour savoir comment développer votre application AEM à l’aide de CRXDE Lite, voir [Développement dans CRXDE Lite](https://docs.adobe.com/help/fr-FR/experience-manager-65/developing/devtools/developing-with-crxde-lite.html).
+Pour savoir comment développer votre application AEM à l’aide de CRXDE Lite, voir [Développement dans CRXDE Lite](/help/implementing/developing/tools/crxde.md).
 
 ## Gestion des journaux {#managing-logs}
 
