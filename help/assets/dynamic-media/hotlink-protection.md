@@ -1,11 +1,13 @@
 ---
 title: Activation de la protection de lien dynamique dans Dynamic Media
-description: Informations sur la manière d’activer la protection de lien dynamique dans Dynamic Media.
+description: Découvrez comment activer la protection des liens dynamiques dans Dynamic Media.
+feature: Gestion des ressources
+topic: Professionnel
 translation-type: tm+mt
-source-git-commit: 5c221505c6a56411b17b52c70ce941258993bfb3
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 31%
+source-wordcount: '194'
+ht-degree: 25%
 
 ---
 
