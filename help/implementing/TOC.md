@@ -3,10 +3,13 @@ sub-product: Implémentation pour AEM as a Cloud Service
 user-guide-title: Implémentation pour AEM as a Cloud Service
 breadcrumb-title: Guide d’implémentation
 user-guide-description: Découvrez comment personnaliser votre déploiement d’Experience Manager as a Cloud Service, y compris des rubriques sur le déploiement et le développement.
+feature-set: Experience Manager
+feature: Outils de développement
+role: Développeur, architecte
 translation-type: tm+mt
-source-git-commit: 7b17605ceb794969b079c21a639dd145f8e028af
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '876'
 ht-degree: 99%
 
 ---
