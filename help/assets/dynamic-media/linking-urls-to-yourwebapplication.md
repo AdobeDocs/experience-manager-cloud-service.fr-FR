@@ -1,11 +1,12 @@
 ---
 title: Liaison d’URL à une application web
-description: Comment lier des URL à votre application web dans Dynamic Media.
+description: Découvrez comment lier des URL à votre application Web dans Dynamic Media.
+topic: Professionnel
 translation-type: tm+mt
-source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '1265'
-ht-degree: 84%
+source-wordcount: '1268'
+ht-degree: 83%
 
 ---
 
