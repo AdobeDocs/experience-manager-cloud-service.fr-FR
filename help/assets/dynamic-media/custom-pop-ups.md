@@ -1,11 +1,12 @@
 ---
 title: Utilisation de vues rapides pour créer des fenêtres contextuelles personnalisées
-description: La vue rapide par défaut est utilisée dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec les informations sur le produit pour générer un achat. Vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles.
+description: '"Découvrez comment la vue rapide par défaut est utilisée dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec les informations sur les produits pour générer un achat. Vous pouvez déclencher l’affichage d’un contenu personnalisé dans les fenêtres contextuelles."'
+topic: '"Développeur, Administrateur, Professionnel"'
 translation-type: tm+mt
-source-git-commit: ad626d9722f1942249197d96aa5fac3d8f7ed947
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 45%
+source-wordcount: '1032'
+ht-degree: 44%
 
 ---
 
