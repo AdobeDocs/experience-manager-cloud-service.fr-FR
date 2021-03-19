@@ -1,10 +1,12 @@
 ---
 title: Bannières de carrousel
 description: Découvrez comment utiliser des bannières de carrousel dans Dynamic Media.
+feature: Bannières de carrousel
+topic: Professionnel
 translation-type: tm+mt
-source-git-commit: 3391045d867cdfc21ab9784e20c6893d38bc78f0
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '4561'
+source-wordcount: '4565'
 ht-degree: 49%
 
 ---
