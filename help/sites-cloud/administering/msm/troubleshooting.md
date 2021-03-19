@@ -1,10 +1,12 @@
 ---
 title: Résolution des problèmes et questions fréquentes liés aux modules multimédias
 description: Découvrez comment résoudre les problèmes les plus courants liés aux MSM et obtenir des réponses aux questions les plus courantes liées aux MSM.
+feature: Gestionnaire de plusieurs sites
+role: Administrator
 translation-type: tm+mt
-source-git-commit: b33e13814403af1383b46b1f34737e8aa75d8213
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
