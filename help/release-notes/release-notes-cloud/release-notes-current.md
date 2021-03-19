@@ -2,9 +2,9 @@
 title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: eeb9dfba87a6fa980c2f44b52813e4d3ca8e3e57
+source-git-commit: 93ae24247ae36f44e659211f1e7ab2f0888e4ad6
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1793'
 ht-degree: 20%
 
 ---
@@ -163,6 +163,15 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.2.0 est
 
 ## Outil de transfert de contenu {#content-transfer-tool}
 
+### Date de publication {#release-date-ctt}
+
+La date de publication de l’outil de transfert de contenu v1.3.4 est le 19 mars 2021.
+
+### Correctifs {#bug-fixes-ctt}
+
+* CTT ignorait le contenu des dossiers portant le même nom, mais avec un trait d’union dans le nom. Ce problème a été résolu.
+
+
 ### Date de publication {#release-date-ctt-march}
 
 La date de publication de l’outil de transfert de contenu v1.3.0 est le 4 mars 2021.
@@ -177,15 +186,15 @@ La date de publication de l’outil de transfert de contenu v1.3.0 est le 4 mars
 * Lors de la migration de contenu à partir d’un chemin d’accès spécifique, le CTT extrayait des ressources non liées. Ce problème a été résolu
 
 
-### Date de publication {#release-date-ctt}
+### Date de publication {#release-date-ctt-feb}
 
 La date de publication de l’outil de transfert de contenu v1.2.4 est le 10 février 2021.
 
-### Correctifs {#bug-fixes-ctt}
+### Correctifs {#bug-fixes-ctt-feb}
 
 * Lors du mappage de plusieurs utilisateurs, les ID IMS de certains utilisateurs étaient incorrectement mappés. Ce problème a été résolu.
 
-### Date de publication {#release-date-ctt-feb}
+### Date de publication {#release-date-ctt-feb01}
 
 La date de publication de l’outil de transfert de contenu v1.2.2 est le 1er février 2021.
 
