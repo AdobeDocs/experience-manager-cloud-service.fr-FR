@@ -1,11 +1,13 @@
 ---
 title: Diffusion de ressources Dynamic Media
 description: Découvrez comment diffuser des ressources Dynamic Media.
+feature: Gestion des ressources
+topic: Professionnel
 translation-type: tm+mt
-source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 78%
+source-wordcount: '319'
+ht-degree: 77%
 
 ---
 
