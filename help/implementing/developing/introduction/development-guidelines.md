@@ -2,10 +2,10 @@
 title: Conseils de développement pour AEM as a Cloud Service
 description: Conseils de développement pour AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
+source-git-commit: ce797518714a4919bcdb6187aeaaf35dd1cb76b4
 workflow-type: tm+mt
-source-wordcount: '2284'
-ht-degree: 98%
+source-wordcount: '2283'
+ht-degree: 96%
 
 ---
 
@@ -128,7 +128,7 @@ Les images mémoire de threads dans les environnements Cloud sont collectés en 
 
 Pour le développement local, les développeurs ont un accès complet à CRXDE Lite (`/crx/de`) et à la console web AEM (`/system/console`).
 
-Notez qu’en cas de développement local (à l’aide du démarrage rapide disponible pour le cloud), les `/apps` et `/libs` peuvent être modifiés directement, ce qui diffère des environnements Cloud dans lesquels ces dossiers de niveau supérieur sont immuables.
+Notez qu’en ce qui concerne le développement local (à l’aide du SDK), `/apps` et `/libs` peuvent être écrits directement sur, ce qui est différent des environnements Cloud dans lesquels ces dossiers de niveau supérieur sont immuables.
 
 ### Outils de développement AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
