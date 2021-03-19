@@ -1,11 +1,13 @@
 ---
 title: À propos des profils d’image et vidéo Dynamic Media
 description: Un profil d’image ou vidéo permet de déterminer les options à appliquer aux ressources que vous chargez dans un dossier. Par exemple, vous pouvez spécifier le codage vidéo à appliquer aux ressources vidéo Dynamic Media que vous chargez, ou le profil d’image à appliquer aux ressources d’image Dynamic Media afin de les recadrer correctement.
+feature: Gestion des ressources,Profils d’images,Profils vidéo
+topic: '"Administrateur, Professionnel"'
 translation-type: tm+mt
-source-git-commit: dfaaafce8e9a7f0d90e4c3d6967c8236d48e6e40
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '1278'
-ht-degree: 76%
+source-wordcount: '1287'
+ht-degree: 75%
 
 ---
 
