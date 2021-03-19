@@ -1,11 +1,13 @@
 ---
 title: À propos de la gestion des ressources Dynamic Media
 description: Découvrez comment utiliser des ressources Dynamic Media..
+feature: Gestion des ressources
+topic: Professionnel
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 71%
+source-wordcount: '123'
+ht-degree: 69%
 
 ---
 
