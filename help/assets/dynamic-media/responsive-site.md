@@ -1,11 +1,13 @@
 ---
 title: Diffusion d’images optimisées pour un site réactif
 description: Découvrez comment utiliser la fonction de code réactif pour diffuser des images optimisées à partir de Dynamic Media.
+feature: Gestion des ressources
+topic: Professionnel
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 100%
+source-wordcount: '326'
+ht-degree: 98%
 
 ---
 
