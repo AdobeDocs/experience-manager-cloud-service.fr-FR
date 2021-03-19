@@ -1,15 +1,16 @@
 ---
 title: Utilisation de la publication sélective dans Dynamic Media
-description: Informations relatives à l’utilisation de la publication sélective dans Dynamic Media.
+description: Découvrez comment utiliser la publication sélective dans Dynamic Media.
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
+topic: Professionnel
 translation-type: tm+mt
-source-git-commit: 04f40452ca89bc5298341b4338bc1d7762b908c2
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '2922'
-ht-degree: 100%
+source-wordcount: '2923'
+ht-degree: 99%
 
 ---
 
