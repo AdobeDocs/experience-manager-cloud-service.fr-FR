@@ -3,10 +3,10 @@ title: Utilisation des sélecteurs
 description: Découvrez les méthodes que vous pouvez utiliser pour sélectionner des ressources sous forme d’images interactives, de vidéos interactives et de bannières de carrousel dans Dynamic Media.
 topic: Professionnel
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: bd7734c0f132b660c15a7eba0a6f92042e377a63
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 99%
+source-wordcount: '753'
+ht-degree: 52%
 
 ---
 
@@ -19,15 +19,15 @@ Cette rubrique décrit comment utiliser les sélecteurs de produits, de sites et
 
 Vous accédez aux sélecteurs lorsque vous créez des ensembles de carrousels, vous ajoutez des zones réactives et des zones cliquables et vous créez des vidéos et des images interactives.
 
-Par exemple, dans cette bannière de carrousel, vous utilisez le sélecteur de produits si vous liez une zone réactive ou une zone cliquable à une page d’aperçu rapide, le sélecteur de sites si vous liez une zone réactive ou une zone cliquable à un lien hypertexte et le sélecteur de ressources si vous créez une nouvelle diapositive.
+Par exemple, dans cette bannière de carrousel, vous utilisez le sélecteur de produits si vous liez une zone réactive ou une zone cliquable à une page de vue rapide. Utilisez le sélecteur de site si vous liez une zone réactive ou une zone cliquable à un hyperlien ; utilisez le sélecteur de ressources lorsque vous créez une diapositive.
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-Lorsque vous sélectionnez (au lieu de saisir manuellement) l’emplacement des zones réactives ou des zones cliquables, vous utilisez le sélecteur. Le sélecteur de sites ne fonctionne que si vous êtes client d’AEM Sites. Le sélecteur de produits nécessite également AEM Commerce.
+Lorsque vous sélectionnez (au lieu de saisir manuellement) l’emplacement des zones réactives ou des zones cliquables, vous utilisez le sélecteur. Le sélecteur de site ne fonctionne que si vous êtes un client Adobe Experience Manager Sites. Le sélecteur de produits nécessite également le commerce Experience Manager.
 
 ## Sélection de produits dans Dynamic Media {#selecting-products}
 
-Utilisez le sélecteur de produits pour choisir un produit lorsque vous souhaitez une zone réactive ou une zone cliquable pour proposer l’aperçu rapide d’un produit de votre catalogue de produits.
+Utilisez le sélecteur de produits pour choisir un produit lorsque vous souhaitez qu’une zone réactive ou une zone cliquable fournisse une vue rapide à un produit spécifique dans votre catalogue de produits.
 
 1. Accédez à l’ensemble de carrousels, à l’image interactive ou à la vidéo interactive, puis appuyez sur l’onglet **[!UICONTROL Actions]** (disponible uniquement si vous avez défini une zone réactive ou une zone cliquable).
 
@@ -39,15 +39,15 @@ Utilisez le sélecteur de produits pour choisir un produit lorsque vous souhaite
 
    ![chlimage_1-522](assets/chlimage_1-522.png)
 
-   Vous pouvez également filtrer par mot-clé ou balise en appuyant sur **[!UICONTROL Filtrer]** et en entrant des mots-clés ou en sélectionnant des balises, ou les deux à la fois.
+   Vous pouvez filtrer par mot-clé ou balise en appuyant sur **[!UICONTROL Filtrer]** et en saisissant des mots-clés, en sélectionnant des balises ou les deux.
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   Vous pouvez modifier l’emplacement dans lequel AEM recherche les données de produit en appuyant sur **[!UICONTROL Parcourir]** et en accédant à un autre dossier.
+   Vous pouvez modifier l’emplacement où le Experience Manager recherche les données de produit en appuyant sur **[!UICONTROL Parcourir]** et en naviguant vers un autre dossier.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Appuyez sur **[!UICONTROL Trier]** pour indiquer si AEM trie du plus récent au plus ancien ou du plus ancien au plus récent.
+   Appuyez sur **[!UICONTROL Trier par]** pour indiquer si le Experience Manager effectue le tri par ordre de tri entre le plus récent et le plus ancien ou entre le plus ancien et le plus récent.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -59,13 +59,13 @@ Utilisez le sélecteur de produits pour choisir un produit lorsque vous souhaite
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. En mode **[!UICONTROL Aperçu]**, vous pouvez appuyer sur la zone réactive ou la zone cliquable et voir à quoi ressemble l’aperçu rapide.
+1. En mode **[!UICONTROL Prévisualisation]**, vous pouvez appuyer sur la zone réactive ou la zone cliquable et voir à quoi ressemble la vue rapide.
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
 ## Sélection de sites dans Dynamic Media {#selecting-sites}
 
-Utilisez le sélecteur de sites pour choisir une page web lorsque vous souhaitez qu’une zone réactive ou une zone cliquable pointe vers une page web gérée dans AEM Sites.
+Utilisez le sélecteur de site pour choisir une page Web lorsque vous souhaitez qu’une zone réactive ou une zone cliquable se connecte à une page Web gérée sur des sites Experience Manager.
 
 1. Accédez à l’ensemble de carrousels, à l’image interactive ou à la vidéo interactive, puis appuyez sur l’onglet **[!UICONTROL Actions]** (disponible uniquement si vous avez défini une zone réactive ou une zone cliquable).
 
@@ -73,7 +73,7 @@ Utilisez le sélecteur de sites pour choisir une page web lorsque vous souhaitez
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Appuyez sur l’icône **[!UICONTROL Sélecteur de sites]** (dossier avec loupe) et accédez à une page parmi vos sites AEM à laquelle vous voulez relier la zone réactive ou la zone cliquable.
+1. Appuyez sur l&#39;icône **[!UICONTROL Sélecteur de site]** (dossier avec loupe) et accédez à une page de vos sites Experience Manager vers laquelle vous souhaitez lier la zone réactive ou la zone cliquable.
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -81,24 +81,24 @@ Utilisez le sélecteur de sites pour choisir une page web lorsque vous souhaitez
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. En mode **[!UICONTROL Aperçu]**, si vous appuyez sur la zone réactive ou la zone cliquable, vous accédez à la page AEM Site que vous avez spécifiée.
+1. En mode **[!UICONTROL Prévisualisation]** si vous appuyez sur la zone réactive ou la zone cliquable, vous accédez à la page du site Experience Manager que vous avez spécifiée.
 
 ## Sélection de ressources dans Dynamic Media {#selecting-assets}
 
-Utilisez ce sélecteur pour sélectionner les images à utiliser dans une bannière de carrousel, une vidéo interactive, des visionneuses d’images, de contenus multimédia variés et à 360°. Dans la vidéo interactive, le sélecteur de ressources est disponible lorsque vous tapez sur **[!UICONTROL Sélectionner des ressources]** dans l’onglet **[!UICONTROL Contenu]**. Dans les ensembles de carrousels, le sélecteur de ressources est disponible lorsque vous créez une nouvelle diapositive. Dans les visionneuses d’images, de contenus multimédia variés et à 360°, le sélecteur de ressources est disponible lorsque vous créez respectivement une nouvelle visionneuse d’images, de contenus multimédia variés ou à 360°.
+Utilisez ce sélecteur pour sélectionner les images à utiliser dans une bannière de carrousel, une vidéo interactive, des visionneuses d’images, de contenus multimédia variés et à 360°. Dans la vidéo interactive, le sélecteur de ressources est disponible lorsque vous tapez sur **[!UICONTROL Sélectionner des ressources]** dans l’onglet **[!UICONTROL Contenu]**. Dans les visionneuses de carrousel, le sélecteur de ressources est disponible lorsque vous créez une diapositive. Dans les visionneuses d’images, les visionneuses de supports variés et les visionneuses à 360°, le sélecteur de ressources est disponible lorsque vous créez une visionneuse d’images, une visionneuse de supports variés ou une visionneuse à 360°, respectivement.
 
 Reportez-vous également à la section [Sélecteur de ressources](/help/assets/search-assets.md#assetselector) pour plus d’informations.
 
-1. Accédez à l’ensemble de carrousels et créez une nouvelle diapositive. Ou accédez à la vidéo interactive, accédez à l’onglet **[!UICONTROL Contenu]** et sélectionnez des ressources. Vous pouvez également créer des visionneuses de contenu multimédia varié, d’images ou à 360°.
+1. Accédez à la visionneuse de carrousel et créez une diapositive. Ou, accédez à la vidéo interactive, ouvrez l’onglet **[!UICONTROL Contenu]**, puis sélectionnez des fichiers. Vous pouvez également créer des visionneuses de contenu multimédia varié, d’images ou à 360°.
 1. Tapez sur l’icône **[!UICONTROL Sélecteur de ressources]** (dossier avec loupe) et accédez à une ressource.
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
 
-   Vous pouvez également filtrer par mot-clé ou balise en appuyant sur **[!UICONTROL Filtrer]** et en entrant des mots-clés ou en ajoutant des critères, ou les deux à la fois.
+   Vous pouvez filtrer par mot-clé ou balise en appuyant sur **[!UICONTROL Filtrer]** et en saisissant des mots-clés ou en ajoutant des critères, ou les deux.
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   Vous pouvez modifier l’emplacement où AEM recherche les ressources en accédant à un autre dossier dans le champ **[!UICONTROL Chemin]**.
+   Vous pouvez modifier l’emplacement de navigation du Experience Manager pour les ressources en accédant à un autre dossier du champ **[!UICONTROL Chemin]**.
 
    Appuyez sur **[!UICONTROL Collection]** pour rechercher uniquement des ressources dans les collections.
 
@@ -108,7 +108,7 @@ Reportez-vous également à la section [Sélecteur de ressources](/help/assets/s
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 
-1. Cochez la ressource pour la sélectionner. La ressource s’affiche.
+1. Pour sélectionner le fichier, cochez la coche. La ressource s’affiche.
 
    ![chlimage_1-536](assets/chlimage_1-536.png)
 -->
