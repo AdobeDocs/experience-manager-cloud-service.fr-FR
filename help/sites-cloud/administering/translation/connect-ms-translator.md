@@ -1,10 +1,12 @@
 ---
 title: Connexion à Microsoft Translator
 description: Découvrez comment connecter AEM à Microsoft Translator prêt à l'emploi pour automatiser votre processus de traduction.
+feature: Copie de la langue
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 5902e026c47aac0c1ea62a2b74be6109b216fb74
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '479'
 ht-degree: 41%
 
 ---
@@ -45,7 +47,7 @@ La procédure suivante crée une configuration Microsoft Translator.
    ![Modifier la configuration de traduction](../assets/edit-translation-config.png)
 
 1. Appuyez ou cliquez sur **Se connecter** pour vérifier la connexion.
-1. Appuyez/cliquez sur **Enregistrer et fermer**.
+1. appuyer et cliquer sur **Enregistrer et fermer**.
 
 ## Mise à niveau de la configuration Licence d’évaluation de Microsoft Translator {#upgrading-the-microsoft-translator-trial-license-configuration}
 
