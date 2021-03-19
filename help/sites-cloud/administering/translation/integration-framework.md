@@ -1,11 +1,13 @@
 ---
 title: Configuration de la structure d’intégration de traduction
 description: Découvrez comment configurer le cadre d’intégration de traduction pour l’intégrer à des services de traduction tiers.
+feature: Copie de la langue
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 22437576d55073d51967e2e638fd8786dee18c78
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '1381'
-ht-degree: 44%
+source-wordcount: '1384'
+ht-degree: 45%
 
 ---
 
