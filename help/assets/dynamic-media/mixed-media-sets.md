@@ -1,10 +1,12 @@
 ---
 title: Visionneuses de médias mixtes
 description: Découvrez comment travailler avec des visionneuses de médias mixtes dans Dynamic Media..
+feature: Visionneuses de médias mixtes
+topic: Professionnel
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1469'
 ht-degree: 75%
 
 ---
