@@ -1,10 +1,11 @@
 ---
 title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2020.7.0
 description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2020.7.0
+feature: Informations sur la version
 translation-type: tm+mt
-source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '311'
 ht-degree: 100%
 
 ---
