@@ -1,11 +1,13 @@
 ---
 title: Préparation du contenu à traduire
 description: Découvrez comment préparer le contenu à traduire.
+feature: Copie de la langue
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 45%
+source-wordcount: '733'
+ht-degree: 46%
 
 ---
 
@@ -81,7 +83,7 @@ Vous pouvez utiliser l’un de ces formats en fonction de la structure choisie p
 
 1. Cliquez ou appuyez sur **Créer**. Dans la boîte de dialogue de confirmation, cliquez ou appuyez sur **Terminé** pour revenir à la console Sites ou sur **Ouvrir** pour ouvrir la copie de langue.
 
-## Affichage de l’état des racines de langue  {#seeing-the-status-of-language-roots}
+## Affichage de l’état des racines de langue {#seeing-the-status-of-language-roots}
 
 AEM fournit un rail **References** qui montre une liste de racines de langue qui ont été créées.
 
