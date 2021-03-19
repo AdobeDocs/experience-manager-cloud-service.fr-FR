@@ -3,10 +3,13 @@ sub-product: Intégration à AEM as a Cloud Service
 user-guide-title: Intégration à AEM as a Cloud Service
 breadcrumb-title: Guide d’intégration
 user-guide-description: Ce guide résume la procédure à suivre pour commencer à utiliser Experience Manager as a Cloud Service, avec les informations d’accès et des informations importantes sur la protection des données.
+feature-set: Experience Manager Sites
+feature: Déploiement
+role: Architecte, développeur
 translation-type: tm+mt
-source-git-commit: 2aa9e0122361bbf62150681840b8c7af9b14c86b
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '691'
 ht-degree: 92%
 
 ---
