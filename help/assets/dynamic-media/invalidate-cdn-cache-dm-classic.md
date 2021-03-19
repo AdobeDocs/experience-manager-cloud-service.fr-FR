@@ -1,11 +1,13 @@
 ---
 title: Invalidation du cache de réseau CDN par le biais de Dynamic Media Classic
-description: L’invalidation du contenu de réseau de diffusion de continu (CDN) en cache vous permet de mettre à jour rapidement les ressources diffusées par Dynamic Media, au lieu d’attendre l’expiration du cache.
+description: '"Découvrez comment invalider votre contenu mis en cache CDN (Content Diffusion Network) afin de vous permettre de mettre rapidement à jour les ressources fournies par Dynamic Media, au lieu d’attendre l’expiration du cache."'
+feature: Gestion des ressources,Dynamic Media Classic
+topic: Professionnel
 translation-type: tm+mt
-source-git-commit: 6dcf891fbe4a58f357fb429fc13cdd16bce7e3d0
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 51%
+source-wordcount: '690'
+ht-degree: 46%
 
 ---
 
