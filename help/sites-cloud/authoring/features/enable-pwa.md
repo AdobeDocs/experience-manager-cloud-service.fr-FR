@@ -4,9 +4,9 @@ description: AEM Sites permet à l’auteur du contenu d’activer des fonction
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 54c4755207d84f6f11effea72e94e20027446ba9
+source-git-commit: 8fa74c2c575409659f482c669c4939a623ef6707
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2032'
 ht-degree: 75%
 
 ---
@@ -208,7 +208,6 @@ Ces paramètres rendent des parties de ce site disponibles hors ligne et localem
 
 Toutes les fonctionnalités PWA ne sont pas disponibles pour AEM Sites. Il existe quelques cas importants de restriction.
 
-* Un utilisateur doit parcourir la page au moins une fois avant qu’elle puisse être mise en cache hors ligne.
 * Les pages ne sont pas automatiquement synchronisées ni mises à jour si l’utilisateur n’utilise pas l’application.
 
 Adobe fait également les recommandations suivantes lorsque vous implémentez le PWA.
