@@ -1,11 +1,13 @@
 ---
 title: Identification du contenu à traduire
 description: Découvrez comment les règles de traduction identifient le contenu à traduire.
+feature: Copie de la langue
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1126'
-ht-degree: 53%
+source-wordcount: '1129'
+ht-degree: 54%
 
 ---
 
