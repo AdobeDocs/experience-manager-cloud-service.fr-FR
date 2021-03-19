@@ -1,11 +1,13 @@
 ---
 title: Ajout de ressources Dynamic Media aux pages
-description: Comment ajouter des composants Dynamic Media à une page dans Adobe Experience Manager as a Cloud Service.
+description: Découvrez comment ajouter des composants Dynamic Media à une page dans Adobe Experience Manager en tant que Cloud Service.
 contentOwner: Rick Brough
+feature: Gestion des ressources
+topic: Professionnel
 translation-type: tm+mt
-source-git-commit: cf607bd27463f23de29d0d6770940a01f3e36c87
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '3082'
+source-wordcount: '3087'
 ht-degree: 70%
 
 ---
