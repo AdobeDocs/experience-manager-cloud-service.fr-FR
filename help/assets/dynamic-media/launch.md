@@ -1,10 +1,12 @@
 ---
 title: Intégration de Dynamic Media Viewers avec Adobe Analytics et Experience Platform Launch
-description: L’extension Dynamic Media Viewers pour Platform launch et Dynamic Media Viewers 5.13 permet aux clients de Adobe Analytics et de Platform launch d’utiliser des événements et des données spécifiques aux visionneuses dans leur configuration de Platform launch.
+description: Découvrez l’extension Dynamic Media Viewers pour les visionneuses de Platform launch et Dynamic Media 5.13. Elle permet aux clients de Adobe Analytics et de Platform launch d’utiliser des événements et des données spécifiques aux visionneuses dans leur configuration de Platform launch.
+feature: Rapports de ressources
+topic: '"Ingénieur de données, Administrateur, Professionnel"'
 translation-type: tm+mt
-source-git-commit: 0f20bf7de87fb3635f77a45f532c3ffe2f361adf
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '6658'
+source-wordcount: '6668'
 ht-degree: 52%
 
 ---
