@@ -1,11 +1,13 @@
 ---
 title: Application de paramètres d’image prédéfinis Dynamic Media
 description: Découvrez comment appliquer des paramètres d’image prédéfinis Dynamic Media.
+feature: Paramètres d’image prédéfinis, visionneuses, rendus
+topic: Professionnel
 translation-type: tm+mt
-source-git-commit: a11ce4c60ddfa345a3be20e3cc4f99ce86d1e84b
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 71%
+source-wordcount: '311'
+ht-degree: 69%
 
 ---
 
