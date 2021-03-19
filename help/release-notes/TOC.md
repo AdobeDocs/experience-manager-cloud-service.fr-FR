@@ -3,11 +3,14 @@ sub-product: Notes de mise à jour d’AEM as a Cloud Service
 user-guide-title: Notes de mise à jour d’AEM as a Cloud Service
 breadcrumb-title: Notes de mise à jour
 user-guide-description: Ce guide fournit des informations importantes sur la dernière version d’Experience Manager as a Cloud Service, notamment sur les nouvelles fonctionnalités, celles obsolètes et supprimées, ainsi que les problèmes connus.
+feature-set: Experience Manager
+feature: Informations sur la version
+role: Leader, Architecte, Développeur, Architecte de données, Ingénieur de données, Administrateur, Professionnel
 translation-type: tm+mt
-source-git-commit: fe26fe183c437d6ffe18e1db7fcdb74ad9448982
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 100%
+source-wordcount: '119'
+ht-degree: 91%
 
 ---
 
