@@ -1,10 +1,12 @@
 ---
 title: Gestionnaire et traduction multisite
 description: Découvrez comment réutiliser votre contenu dans votre projet et gérer des sites Web multilingues dans AEM.
+feature: Administration
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '374'
 ht-degree: 36%
 
 ---
