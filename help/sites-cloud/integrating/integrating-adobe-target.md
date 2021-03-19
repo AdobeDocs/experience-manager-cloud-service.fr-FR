@@ -2,10 +2,10 @@
 title: Intégration à Adobe Target
 description: 'Intégration à Adobe Target '
 translation-type: tm+mt
-source-git-commit: 79cdc4f453efe5b251891c09934e2dcb823f645c
+source-git-commit: 2e40a5a1cfe3919d678abeef2726fbc303c2e6b2
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 81%
+source-wordcount: '1042'
+ht-degree: 67%
 
 ---
 
@@ -17,7 +17,7 @@ Dans le cadre d’Adobe Experience Cloud, Adobe Target vous permet d’améli
 * d’utiliser l’interface utilisateur tactile pour créer une configuration Target dans AEM as a Cloud Service (configuration IMS requise) ;
 * d’ajouter et de configurer Adobe Target en tant qu’extension dans [Adobe Launch](https://docs.adobe.com/content/help/fr-FR/launch/using/intro/get-started/quick-start.html).
 
-Adobe Launch est nécessaire afin de gérer les propriétés côté client pour Analytics et Target dans les pages AEM (bibliothèques/balises JS). Cela dit, l’intégration à Launch est nécessaire au « ciblage d’expérience ». Pour l’exportation des fragments d’expérience dans Target, vous n’avez besoin que de la configuration Adobe Target et d’IMS.
+Adobe Launch est nécessaire afin de gérer les propriétés côté client pour Analytics et Target dans les pages AEM (bibliothèques/balises JS). Cela dit, l’intégration à Launch est nécessaire au « ciblage d’expérience ». Pour l’exportation des fragments d’expérience vers la Cible, vous n’avez besoin que de la configuration Adobe Target et d’IMS.
 
 >[!NOTE]
 >
@@ -46,11 +46,11 @@ Lors de la configuration des champs ID client Adobe Target et Code client Adobe 
 
 Dans les deux cas, il faut savoir que :
 
-* Par défaut, le code client (s’il est ajouté en premier) sera également automatiquement copié dans le champ ID du client.
+* Par défaut, le code client (s’il est ajouté en premier) est également automatiquement copié dans le champ ID du client.
 * Vous avez la possibilité de modifier le jeu d’ID de client par défaut.
 * Par conséquent, les appels à la Cible du serveur principal sont basés sur l&#39;identifiant du client et les appels à la Cible côté client sont basés sur le code client.
 
-Comme nous l&#39;avons indiqué plus haut, le premier cas est le plus courant pour l&#39;AEM en tant que Cloud Service. Dans les deux cas, veillez à ce que les champs **** contiennent les informations appropriées en fonction de vos besoins.
+Comme nous l&#39;avons indiqué plus haut, le premier cas est le plus courant pour l&#39;AEM en tant que Cloud Service. Dans les deux cas, assurez-vous que les champs **deux** contiennent les informations appropriées en fonction de vos besoins.
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ Pour appliquer une configuration d’interface utilisateur tactile à un site, a
 
 ## Intégration d’Adobe Target dans AEM Sites à l’aide d’Adobe Launch {#integrate-target-launch}
 
-AEM offre une intégration à Experience Platform Launch prête à l’emploi. En ajoutant l’extension Adobe Target à Experience Platform Launch, vous pouvez utiliser les fonctionnalités d’Adobe Target sur une ou des pages web AEM. Les bibliothèques de Target ne seront rendues qu’à l’aide de Launch.
+AEM offre une intégration à Experience Platform Launch prête à l’emploi. En ajoutant l&#39;extension Adobe Target à l&#39;Experience Platform Launch, vous pouvez utiliser les fonctionnalités de Adobe Target sur AEM pages Web. Les bibliothèques de cibles ne seront rendues qu’à l’aide du paramètre Lancement.
 
 >[!NOTE]
 >
@@ -92,11 +92,11 @@ En général, les étapes d’intégration sont les suivantes :
 
 ### Création d’une propriété Launch {#create-property}
 
-Une propriété est un conteneur qui va être rempli d’extensions, de règles et d’éléments de données.
+Une propriété est un conteneur rempli d’extensions, de règles et d’éléments de données.
 
 1. Sélectionnez le bouton **New Property** (Nouvelle propriété).
 2. Attribuez un nom à votre propriété.
-3. Saisissez comme domaine l’adresse IP/l’hôte sur lequel vous souhaitez charger la bibliothèque Launch.
+3. En tant que domaine, saisissez l’adresse IP/l’hôte sur lequel vous souhaitez charger la bibliothèque de lancement.
 4. Sélectionnez le bouton **Save** (Enregistrer).
    ![Launchproperty](assets/properties_newproperty1.png "Launchproperty")
 
@@ -119,12 +119,12 @@ Les **éléments de données** sont des espaces réservés vers lesquels vous po
 1. Sélectionnez **Data Elements** (Éléments de données).
 2. Sélectionnez **Add Data Element** (Ajouter l’élément de données).
 3. Fournissez le nom de l’élément de données et mappez-le à un paramètre de hub contextuel.
-4. Sélectionnez **Save** (Enregistrer).
+4. Sélectionnez **Enregistrer**.
    ![Élément de données](assets/data_elem1.png "Élément de données")
 
 ### Création d’une règle de page {#page-rule}
 
-Dans **Rule** (Règle), définissez et ordonner une séquence d’actions qui sera exécutée sur le site pour procéder au ciblage.
+Dans **Règle**, nous définissons et ordonnons une séquence d&#39;actions, qui sont exécutées sur le site, pour atteindre le ciblage.
 
 1. Ajoutez un ensemble d’actions comme illustré dans la capture d’écran.
    ![Actions](assets/rules1.png "Actions")
@@ -139,8 +139,8 @@ Pour savoir comment concevoir et publier, reportez-vous à cette [page](https://
 
 | **Modification** | **Configuration de l’interface utilisateur classique** | **Configuration de l’interface utilisateur tactile** | **Conséquences** |
 |---|---|---|---|
-| Emplacement de la configuration de Target. | /etc/cloudservices/testandtarget/ | /conf/tenant/settings/cloudservices/target | Auparavant, plusieurs configurations étaient présentes sous /etc/cloudservices/testandtarget, mais désormais une seule configuration figure sous un client. |
+| Emplacement de la configuration de Target. | /etc/cloudservices/testandtarget/ | /conf/tenant/settings/cloudservices/target | Auparavant, plusieurs configurations étaient présentes sous /etc/cloudservices/testandtarget, mais maintenant une configuration unique est présente sous un client. |
 
 >[!NOTE]
 >
->Les configurations héritées sont toujours prises en charge pour les clients existants (sans possibilité de modifier des configurations ou d’en créer de nouvelle). Les configurations héritées feront partie des modules de contenu chargés par le client à l’aide de VSTS.
+>Les configurations héritées sont toujours prises en charge pour les clients existants (sans possibilité de modifier ou de créer de nouvelles configurations). Les configurations héritées feront partie des packages de contenu téléchargés par les clients à l’aide de VSTS.
