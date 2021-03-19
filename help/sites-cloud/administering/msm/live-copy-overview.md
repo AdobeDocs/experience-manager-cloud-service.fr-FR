@@ -1,10 +1,12 @@
 ---
 title: Console Aperçu de la Live Copy
 description: Découvrez les principes de base de la console d’aperçu de Live Copy pour comprendre rapidement l’état de vos Live Copies afin de synchroniser le contenu.
+feature: Gestionnaire de plusieurs sites
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '739'
 ht-degree: 20%
 
 ---
