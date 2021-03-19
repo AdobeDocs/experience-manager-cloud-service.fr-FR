@@ -1,11 +1,12 @@
 ---
 title: Notification de fin de prise en charge de la visionneuse Flash
 description: Depuis le 31 janvier 2017, la prise en charge de la plate-forme du lecteur de Flash est officiellement en fin de vie.
+topic: Professionnel
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '47'
-ht-degree: 53%
+source-wordcount: '49'
+ht-degree: 51%
 
 ---
 
