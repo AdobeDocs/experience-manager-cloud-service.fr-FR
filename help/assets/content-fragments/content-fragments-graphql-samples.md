@@ -2,10 +2,10 @@
 title: Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes
 description: Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes.
 translation-type: tm+mt
-source-git-commit: 6a60238b13d66ea2705063670295a62e3cbf6255
+source-git-commit: 482e98e36d9e26aed31fc95fbb66a5168af49cf1
 workflow-type: tm+mt
-source-wordcount: '1707'
-ht-degree: 97%
+source-wordcount: '1741'
+ht-degree: 95%
 
 ---
 
@@ -67,12 +67,14 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
          * Voir [Exemple de requête – Toutes les villes avec une variante nommée](#sample-cities-named-variation)
    * Et les opérations :
 
-      * `_operator` : pour appliquer des opérateurs spécifiques ; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`,
+      * `_operator` : pour appliquer des opérateurs spécifiques ; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`,, `STARTS_WITH`
          * Voir [Exemple de requête – Toutes les personnes qui ne portent pas le nom « Jobs »](#sample-all-persons-not-jobs)
+         * Voir [Exemple de Requête - Toutes les aventures où `_path` début avec un préfixe spécifique](#sample-wknd-all-adventures-cycling-path-filter)
       * `_apply` : pour appliquer des conditions spécifiques ; par exemple `AT_LEAST_ONCE`
          * Voir [Exemple de requête : effectuer un filtrage sur un tableau avec un élément qui doit se produire au moins une fois ](#sample-array-item-occur-at-least-once)
       * `_ignoreCase` : pour ignorer la casse lors de l’application de la requête
          * Voir [Exemple de requête : toutes les villes dont le nom contient SAN, indépendamment de la casse ](#sample-all-cities-san-ignore-case)
+
 
 
 
@@ -653,6 +655,51 @@ query {
         {
           "name": "Caulfield",
           "firstName": "Max"
+        }
+      ]
+    }
+  }
+}
+```
+
+### Exemple de Requête - Toutes les aventures dont `_path` commence par un préfixe spécifique {#sample-wknd-all-adventures-cycling-path-filter}
+
+Tout `adventures` où `_path` début avec un préfixe spécifique (`/content/dam/wknd/en/adventures/cycling`).
+
+**Exemple de requête**
+
+```xml
+query {
+  adventureList(
+    filter: {
+      _path: {
+        _expressions: [
+        {
+          value: "/content/dam/wknd/en/adventures/cycling"
+         _operator: STARTS_WITH
+        }]
+       }
+    })
+    {
+    items {
+      _path
+    }
+  }
+}
+```
+
+**Exemples de résultats**
+
+```xml
+{
+  "data": {
+    "adventureList": {
+      "items": [
+        {
+          "_path": "/content/dam/wknd/en/adventures/cycling-southern-utah/cycling-southern-utah"
+        },
+        {
+          "_path": "/content/dam/wknd/en/adventures/cycling-tuscany/cycling-tuscany"
         }
       ]
     }
