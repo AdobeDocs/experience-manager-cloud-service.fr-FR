@@ -1,10 +1,12 @@
 ---
 title: Vidéos interactives
 description: Découvrez comment utiliser des vidéos interactives et Shoppable dans Dynamic Media.
+feature: Vidéos interactives
+topic: Professionnel
 translation-type: tm+mt
-source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '6062'
+source-wordcount: '6066'
 ht-degree: 48%
 
 ---
