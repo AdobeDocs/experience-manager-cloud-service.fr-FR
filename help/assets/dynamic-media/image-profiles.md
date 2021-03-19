@@ -1,11 +1,13 @@
 ---
 title: Profils d’image Dynamic Media
-description: Créez des Profils d’image Dynamic Media contenant des paramètres pour le masquage flou et le recadrage intelligent ou l’échantillon dynamique, ou les deux. Ensuite, appliquez le profil à un dossier de fichiers d’image.
+description: '"Découvrez comment créer des Profils d’image Dynamic Media qui contiennent des paramètres pour le masquage flou, le recadrage intelligent ou l’échantillon intelligent, ou les deux. Ensuite, appliquez le profil à un dossier de fichiers d’image."'
+feature: Gestion des ressources,Profils d’images,Rendus
+topic: Professionnel
 translation-type: tm+mt
-source-git-commit: a11ce4c60ddfa345a3be20e3cc4f99ce86d1e84b
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '2695'
-ht-degree: 75%
+source-wordcount: '2705'
+ht-degree: 74%
 
 ---
 
