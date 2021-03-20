@@ -2,7 +2,7 @@
 title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 93ae24247ae36f44e659211f1e7ab2f0888e4ad6
+source-git-commit: 25b998014f9706da7de7b7ed6e2c8a03404d1950
 workflow-type: tm+mt
 source-wordcount: '1793'
 ht-degree: 20%
@@ -49,10 +49,6 @@ La version suivante (2021.3.0) sera publiée le 25 mars 2021.
 * Le rapport d&#39;utilisation de [!DNL Brand Portal] affiche désormais uniquement les utilisateurs principaux. Les utilisateurs inactifs ne s’affichent pas maintenant. Les utilisateurs principaux sont ceux dont le compte est affecté à un profil de produits dans le [!DNL Admin Console]. Voir [[!DNL Brand Portal] rapports](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
 
 * Dans [!DNL Brand Portal], un nouveau paramètre de téléchargement est introduit, qui vous permet de créer un dossier distinct pour chaque fichier lors du téléchargement de dossiers, de collections, etc. Voir [paramètres de téléchargement](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
-
-<!-- TBD: refine this list of features and enh. for Feb release.
-
-Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  -->
 
 ## Correctifs de bogues dans [!DNL Assets] {#bug-fixes-assets}
 
