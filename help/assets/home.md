@@ -2,9 +2,9 @@
 title: 'Guide d’[!DNL Assets] as a [!DNL Cloud Service] '
 description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] ressources d’aide autonome et liens vers la documentation'
 translation-type: tm+mt
-source-git-commit: 58d99c33105b132570d0ca133ffa164373f53ad7
+source-git-commit: 332ca27c060a46d41e4f6e891f6fd98170d10d9f
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '260'
 ht-degree: 53%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 53%
 
 # [!DNL Assets] en tant que  [!DNL Cloud Service] guide  {#aem-assets-guide}
 
-Vous trouverez ci-dessous les ressources d&#39;auto-assistance pour [!DNL Experience Manager Assets] en tant que [!DNL Cloud Service].
+Les ressources d&#39;auto-assistance suivantes sont disponibles pour [!DNL Experience Manager Assets] en tant que [!DNL Cloud Service].
 
 ## Clés [!DNL Assets] articles {#key-articles}
 
