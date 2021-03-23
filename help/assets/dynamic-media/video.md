@@ -4,10 +4,10 @@ description: Découvrez comment utiliser la vidéo dans Dynamic Media.
 feature: Profils vidéo
 topic: Professionnel
 translation-type: tm+mt
-source-git-commit: bd7734c0f132b660c15a7eba0a6f92042e377a63
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
 source-wordcount: '9512'
-ht-degree: 71%
+ht-degree: 70%
 
 ---
 
@@ -404,7 +404,7 @@ Supposons, par exemple, que la résolution de votre vidéo source soit équivale
 
 | Type de vidéo | Largeur x hauteur | Rapport de largeur | Rapport de hauteur |
 |--- |--- |--- |--- |
-| Source | 1 920 x 1 080 | 1 | 1 |
+| Source | 1 920 x 1 080 | 1 | 3 |
 | Codée | 960 x 540 | 2 | 2 |
 | Codée | 640 x 360 | 3 | 3 |
 | Codée | 480 x 270 | 4 | 4 |
@@ -551,9 +551,9 @@ Pour publier des vidéos sur YouTube, vous devez disposer d’une ou de plusieur
 Pour créer une chaîne YouTube :
 
 1. Accédez à [https://www.youtube.com](https://www.youtube.com/), puis connectez-vous à l’aide des informations d’identification de votre compte Google.
-1. Dans le coin supérieur droit de la page YouTube, cliquez sur votre image de profil (elle peut également apparaître sous la forme d’une lettre dans un cercle de couleur unie), puis cliquez sur **[!UICONTROL Paramètres YouTube]** (icône d’engrenage arrondi).
-1. Sur la page Présentation, sous l’en-tête Fonctionnalités supplémentaires, cliquez sur **[!UICONTROL Voir toutes mes chaînes ou créer une nouvelle chaîne]**.
-1. Depuis la page Chaînes, cliquez sur **[!UICONTROL Créer une chaîne]**.
+1. Dans le coin supérieur droit de la page YouTube, cliquez sur votre image de profil (elle peut également apparaître sous la forme d’une lettre dans un cercle de couleur unie), puis appuyez sur **[!UICONTROL Paramètres YouTube]** (icône d’engrenage arrondi).
+1. Sur la page Aperçu, sous l’en-tête Autres fonctionnalités, appuyez sur **[!UICONTROL Voir tous mes canaux ou créez un nouveau canal]**.
+1. Sur la page Canaux, appuyez sur **[!UICONTROL Créer un canal]**.
 1. Sur la page Compte de marque, dans le champ nom du compte de marque, saisissez un nom d’entité professionnelle ou tout autre nom de chaîne de votre choix sous lequel vous souhaitez publier vos ressources vidéo, puis cliquez sur **[!UICONTROL Créer]**.
 
    Rappelez-vous le nom que vous saisissez ici car vous devez le saisir de nouveau lorsque vous configurez YouTube en Experience Manager.
