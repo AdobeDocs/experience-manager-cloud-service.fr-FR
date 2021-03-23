@@ -2,12 +2,12 @@
 title: Application des paramètres prédéfinis de la visionneuse Dynamic Media
 description: Découvrez comment appliquer des paramètres prédéfinis de visionneuse dans Dynamic Media..
 feature: Paramètres prédéfinis de la visionneuse,Visionneuses
-topic: Professionnel
+topic: Administrateur, Professionnel
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 97%
+ht-degree: 89%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 Un paramètre prédéfini de visionneuse est un ensemble de paramètres qui déterminent la manière dont les utilisateurs voient les ressources multimédia enrichies sur leurs écrans d’ordinateur et appareils mobiles. Vous pouvez appliquer à une ressource n’importe quel paramètre prédéfini de visionneuse créé par votre administrateur.
 
-Si, en tant qu’administrateur, vous devez gérer, créer, trier et supprimer des paramètres prédéfinis de visionneuse, consultez [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md).
+Si vous êtes un administrateur et que vous devez gérer, créer, trier et supprimer les paramètres prédéfinis de visionneuse, voir [Gestion des paramètres prédéfinis de la visionneuse](managing-viewer-presets.md).
 
 Voir également [Publication de paramètres de visionneuse prédéfinis](managing-viewer-presets.md#publishing-viewer-presets).
 
