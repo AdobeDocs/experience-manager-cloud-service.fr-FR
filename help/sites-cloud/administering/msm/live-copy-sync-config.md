@@ -4,10 +4,10 @@ description: Découvrez les puissantes options de synchronisation Live Copy disp
 feature: Gestionnaire de plusieurs sites
 role: Administrator
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: fff94f476124d8a2a84c60c478fef624090192d1
 workflow-type: tm+mt
-source-wordcount: '2358'
-ht-degree: 33%
+source-wordcount: '2340'
+ht-degree: 32%
 
 ---
 
@@ -43,7 +43,11 @@ Chaque configuration du déploiement utilise un déclencheur qui entraîne la su
 
 ### Configurations du déploiement {#rollout-configurations}
 
-Le tableau suivant liste les configurations de déploiement prêtes à l&#39;emploi avec AEM. Le tableau contient les actions de déclenchement et de synchronisation de chaque configuration du déploiement. Si les actions de configuration du déploiement installées ne répondent pas à vos exigences, vous pouvez [créer une autre configuration du déploiement](#creating-a-rollout-configuration).
+Le tableau suivant liste les configurations de déploiement prêtes à l&#39;emploi avec AEM. Le tableau contient les actions de déclenchement et de synchronisation de chaque configuration du déploiement.
+
+<!--
+If the installed rollout configuration actions do not meet your requirements, you can [create a new rollout configuration](#creating-a-rollout-configuration).
+-->
 
 | Nom | Description | Déclencheur | [Actions de synchronisation](#synchronization-actions) |
 |---|---|---|---|
