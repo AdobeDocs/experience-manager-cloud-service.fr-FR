@@ -4,10 +4,10 @@ description: Découvrez comment rechercher les ressources souhaitées dans  [!DN
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
+source-git-commit: 0e5d49b8781ebe0c5785a14800bcaec223da809c
 workflow-type: tm+mt
-source-wordcount: '4741'
-ht-degree: 100%
+source-wordcount: '4755'
+ht-degree: 98%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 100%
 
 [!DNL Experience Manager Assets] prend en charge les cas d’utilisation suivants dont cet article décrit l’utilisation, les concepts, les configurations, les limitations et le dépannage.
 
-| Recherche de ressources | Configuration et administration | Utilisation des résultats de recherche |
+| Recherche de ressources | Configurer et administrer la fonctionnalité de recherche | Utilisation des résultats de recherche |
 |---|---|---|
 | [Recherches de base](#searchbasics) | [Index de recherche](#searchindex) | [Tri des résultats](#sort) |
-| [Présentation de l’interface utilisateur de recherche](#searchui) |  | [Vérification des propriétés et des métadonnées d’une ressource](#checkinfo) |
+| [Présentation de l’interface utilisateur de recherche](#searchui) | [Extraction de texte](#extracttextupload) | [Vérification des propriétés et des métadonnées d’une ressource](#checkinfo) |
 | [Suggestions de recherche](#searchsuggestions) | [Métadonnées obligatoires](#mandatorymetadata) | [Téléchargement](#download) |
 | [Présentation des résultats de recherche et du comportement](#searchbehavior) | [Modification des facettes de recherche](#searchfacets) | [Mises à jour des métadonnées en masse](#metadataupdates) |
-| [Classement et amplification des recherches](#searchrank) | [Extraction de texte](#extracttextupload) | [Collections dynamiques](#collections) |
-| [Recherche avancée : filtrage et portée de la recherche](#scope) | [Prédicats personnalisés](#custompredicates) | [Explication et résolution des problèmes liés aux résultats inattendus](#unexpectedresults) |
-| [Recherche à partir d’autres solutions et applications](#beyondomnisearch) :<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Application de bureau Experience Manager](#desktopapp)</li><li>[Images Adobe Stock](#adobestock)</li><li>[Ressources Dynamic Media](#dynamicmedia)</li></ul> |  |  |
+| [Classement et amplification des recherches](#searchrank) | [Prédicats personnalisés](#custompredicates) | [Collections dynamiques](#collections) |
+| [Recherche avancée : filtrage et portée de la recherche](#scope) |  | [Explication et résolution des problèmes liés aux résultats inattendus](#unexpectedresults) |
+| [Recherche à partir d’autres solutions et applications](#beyondomnisearch) :<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Application de bureau Experience Manager](#desktop-app)</li><li>[Images Adobe Stock](#adobe-stock)</li><li>[Ressources Dynamic Media](#search-dynamic-media-assets)</li></ul> |  |  |
 | [Sélecteur de ressources](#assetselector) |  |  |
 | [Limites](#tips) et [conseils](#limitations) |  |  |
 | [Exemples illustrés](#samples) |  |  |
@@ -139,7 +139,7 @@ To find images that are visually similar to a user-selected image, click **[!UIC
 *Figure: Find similar images using the option in the card view*
 -->
 
-### Images Adobe Stock {#adobestock}
+### Images Adobe Stock {#adobe-stock}
 
 Dans l’interface utilisateur AEM, les utilisateurs peuvent rechercher des [ressources Adobe Stock](/help/assets/aem-assets-adobe-stock.md) et obtenir des licences pour les ressources requises. Ajoutez `Location: Adobe Stock` dans la barre Omni-recherche. Vous pouvez également utiliser le panneau Filtres pour trouver toutes les ressources qui sont ou non sous licence, ou effectuer des recherches dans une ressource spécifique à l’aide du numéro de fichier Adobe Stock.
 
@@ -147,9 +147,9 @@ Dans l’interface utilisateur AEM, les utilisateurs peuvent rechercher des [res
 
 Vous pouvez filtrer les images Dynamic Media en sélectionnant **[!UICONTROL Dynamic Media > Visionneuses]** dans le panneau **[!UICONTROL Filtres]**. Il filtre et affiche des ressources telles que des visionneuses d’images, des carrousels, des visionneuses de supports variés et des visionneuses à 360°.
 
-### Recherche de valeurs spécifiques dans les champs de métadonnées {#gqlsearch}
+### Recherche GQL à l’aide de valeurs spécifiques dans les champs de métadonnées {#gql-search}
 
-Vous pouvez rechercher des ressources en fonction des valeurs exactes de champs de métadonnées spécifiques, tels que le titre, la description et l’auteur. La fonction de recherche en texte intégral GQL récupère uniquement les ressources dont la valeur de métadonnées correspond exactement à votre requête. Les noms des propriétés (auteur, titre, etc.) et les valeurs sont sensibles à la casse.
+Vous pouvez rechercher des fichiers en fonction des valeurs exactes des champs de métadonnées, tels que le titre, la description et le créateur. La fonction de recherche en texte intégral GQL récupère uniquement les ressources dont la valeur de métadonnées correspond exactement à votre requête. Les noms des propriétés (Créateur, Titre, etc.) et des valeurs sont sensibles à la casse.
 
 | Champ de métadonnées | Valeur et utilisation des facettes |
 |---|---|
@@ -175,7 +175,10 @@ Vous pouvez rechercher des ressources en fonction des valeurs exactes de champs 
 | Hauteur de l’image | height:lowerboundsupérieur |
 | Personne | person:John |
 
-Les propriétés path, limit, size et orderby ne peuvent pas être combinées à une autre propriété avec un opérateur OU.
+Les propriétés `path`, `limit`, `size` et `orderby` ne peuvent pas être OUed avec une autre propriété.
+
+<!-- TBD: Where are the limit, size, orderby properties defined?
+-->
 
 Le mot-clé d’une propriété générée par un utilisateur correspond au libellé de son champ dans l’éditeur de propriétés en minuscules et sans espace.
 
@@ -197,19 +200,19 @@ Adobe Experience Manager (AEM) connecte le référentiel de gestion des ressou
 
 Grâce à Adobe Asset Link, les professionnels de la création peuvent désormais accéder au contenu stocké dans AEM Assets, sans quitter les applications Adobe Creative Cloud prises en charge. Ils peuvent parcourir, rechercher, extraire et archiver des ressources de manière transparente à l’aide du panneau intégré à l’application dans les applications Creative Cloud : Photoshop, Illustrator et InDesign. Asset Link permet également aux utilisateurs de rechercher des résultats visuellement similaires. Les résultats d’affichage de la recherche visuelle sont optimisés par les algorithmes d’apprentissage automatique d’Adobe Sensei et aident les utilisateurs à trouver des images à l’esthétique similaire. Voir [Rechercher et parcourir des ressources](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) à l’aide d’Adobe Asset Link.
 
-### Recherche de ressources dans l’application de bureau AEM {#desktopapp}
+### Rechercher des ressources dans l’application de bureau Experience Manager {#desktop-app}
 
 Les professionnels de la création utilisent l’application de bureau pour rendre les ressources AEM facilement consultables et disponibles sur leur bureau local (Windows ou Mac). Les créatifs peuvent facilement afficher les ressources souhaitées dans le Finder du Mac ou l’Explorateur Windows, ouvertes dans des applications de bureau et modifiées localement ; les modifications sont réenregistrées dans AEM avec une nouvelle version créée dans le référentiel. L’application prend en charge les recherches de base à l’aide d’un ou de plusieurs mots-clés, les caractères génériques * et ? et l’opérateur ET. Voir [Navigation, recherche et prévisualisation des ressources](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#browse-search-preview-assets) dans l’application de bureau.
 
-### Recherche de ressources dans Brand Portal {#brandportal}
+### Recherche de ressources dans Brand Portal {#brand-portal}
 
 Les utilisateurs métiers et les spécialistes marketing utilisent Brand Portal pour partager efficacement et en toute sécurité les ressources numériques approuvées avec leurs équipes internes étendues, partenaires et revendeurs. Voir [Recherche de ressources sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html?lang=fr).
 
-### Recherche d’images Adobe Stock {#adobestock-1}
+### Recherche d’images Adobe Stock {#adobe-stock2}
 
 Dans l’interface utilisateur AEM, les utilisateurs peuvent rechercher des ressources Adobe Stock et obtenir des licences pour les ressources requises. Ajoutez `Location: Adobe Stock` dans le champ Omni-recherche. Vous pouvez également utiliser le panneau **[!UICONTROL Filtres]** pour trouver toutes les ressources qui sont ou non sous licence, ou effectuer des recherches dans une ressource spécifique à l’aide du numéro de fichier Adobe Stock. Voir [Gestion des images Adobe Stock dans AEM](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
-### Recherche de ressources Dynamic Media {#dynamicmedia}
+### Recherche de ressources Dynamic Media {#search-dynamic-media-assets}
 
 Vous pouvez filtrer les images Dynamic Media en sélectionnant **[!UICONTROL Dynamic Media]** > **[!UICONTROL Visionneuses]** dans le panneau **[!UICONTROL Filtres]**. Il filtre et affiche des ressources telles que des visionneuses d’images, des carrousels, des visionneuses de supports variés et des visionneuses à 360°. Lors de la création de pages web, les auteurs peuvent rechercher des visionneuses dans l’outil de recherche de contenu. Un filtre est disponible pour les visionneuses dans un menu contextuel.
 
@@ -255,6 +258,7 @@ La fonctionnalité de recherche dans [!DNL Experience Manager Assets] présente 
 * [!DNL Experience Manager] peut continuer à afficher le terme de recherche une fois que vous avez sélectionné les propriétés d’une ressource à partir des résultats de recherche, puis annuler la recherche. <!-- (CQ-4273540) -->
 * Lors de la recherche de dossiers ou de fichiers et de dossiers, les résultats de recherche ne peuvent être triés selon aucun paramètre.
 * Si vous sélectionnez `Return` sans rien taper dans la barre Omni-recherche, [!DNL Experience Manager] renvoie une liste contenant uniquement des fichiers et non des dossiers. Si vous recherchez spécifiquement des dossiers sans utiliser de mot-clé, [!DNL Experience Manager] ne renvoie aucun résultat.
+* Vous pouvez effectuer une recherche de texte intégral sur des dossiers. Spécifiez un terme de recherche pour que la recherche fonctionne.
 
 La recherche visuelle ou par analogie présente les restrictions suivantes :
 
