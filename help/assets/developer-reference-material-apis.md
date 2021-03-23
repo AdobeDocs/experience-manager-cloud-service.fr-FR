@@ -3,10 +3,10 @@ title: Références du développeur pour  [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77b4d9f07626419ddab3a7363b06c382447ec982
+source-git-commit: 044740339ea7f164dd4c28650fe71a5eb11615d6
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 100%
+source-wordcount: '1388'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +21,7 @@ L’article contient des recommandations, des documents de référence et des re
 
 >[!CAUTION]
 >
->Certaines API existent toujours, mais ne sont pas prises en charge activement (signalées par un ×) et ne doivent pas être utilisées.
+>Certaines API existent toujours, mais ne sont pas activement prises en charge (signalées par un ×). Dans la mesure du possible, n’utilisez pas ces API.
 
 | Niveau de prise en charge | Description |
 | ------------- | --------------------------- |
@@ -65,7 +65,7 @@ L’article contient des recommandations, des documents de référence et des re
 
 ## Chargement de ressources {#asset-upload-technical}
 
-[!DNL Experience Manager] as a [!DNL Cloud Service] fournit une nouvelle méthode de chargement des ressources dans le référentiel. Les utilisateurs peuvent charger directement les ressources vers le stockage sur le cloud à l’aide de l’API HTTP. Pour charger un fichier binaire, procédez comme suit :
+Dans [!DNL Experience Manager] en tant que [!DNL Cloud Service], vous pouvez directement télécharger les ressources vers l’enregistrement cloud à l’aide de l’API HTTP. Pour charger un fichier binaire, procédez comme suit :
 
 1. [Envoyez une requête HTTP](#initiate-upload). Cela permet d’informer le déploiement [!DNL Experience Manage] de votre intention de charger un nouveau fichier binaire.
 1. [Publiez le contenu du fichier binaire](#upload-binary) sur un ou plusieurs URI fournis par la requête de lancement.
@@ -79,8 +79,7 @@ Cette approche permet une gestion évolutive et plus performante des chargements
 * L’espace de stockage de fichiers binaires fonctionne avec un réseau CDN (réseau de diffusion de contenu) ou Edge. Un CDN sélectionne un point d’entrée de chargement plus proche pour un client. Lorsque les données parcourent une distance plus courte jusqu’à un point d’entrée voisin, les performances de chargement et l’expérience utilisateur s’améliorent, en particulier pour les équipes réparties géographiquement.
 
 >[!NOTE]
->
->Consultez le code client pour implémenter cette approche dans la [bibliothèque de chargement aem](https://github.com/adobe/aem-upload) open-source.
+Consultez le code client pour implémenter cette approche dans la [bibliothèque de chargement aem](https://github.com/adobe/aem-upload) open-source.
 
 ### Lancement du chargement {#initiate-upload}
 
@@ -117,8 +116,8 @@ Une seule requête peut être utilisée afin de lancer des chargements pour plus
 * `mimeType` (chaîne) : type MIME du fichier binaire correspondant, tel qu’il est fourni dans la requête de lancement. Cette valeur doit être incluse dans la requête de fin.
 * `uploadToken` (chaîne) : jeton de chargement du fichier binaire correspondant. Cette valeur doit être incluse dans la requête de fin.
 * `uploadURIs` (tableau) : liste des chaînes dont les valeurs sont des URI complets vers lesquels le contenu du fichier binaire doit être chargé (voir [Chargement d’un fichier binaire](#upload-binary)).
-* `minPartSize` (nombre) : longueur minimale, en octets, des données pouvant être fournies à l’un des URI de chargement, s’il en existe plusieurs.
-* `maxPartSize` (nombre) : longueur maximale, en octets, des données pouvant être fournies à l’un des URI de chargement, s’il en existe plusieurs.
+* `minPartSize` (nombre) : Longueur minimale, en octets, des données pouvant être fournies à l’un des  `uploadURIs`URI s’il existe plusieurs URI.
+* `maxPartSize` (nombre) : Longueur maximale, en octets, des données pouvant être fournies à l’un des  `uploadURIs`URI s’il existe plusieurs URI.
 
 ### Chargement d’un fichier binaire {#upload-binary}
 
@@ -147,8 +146,7 @@ Après avoir chargé toutes les parties d’un fichier binaire, envoyez une requ
 | `replace` | Booléen | Facultatif | Si `True` et qu’une ressource portant le nom spécifié existe, [!DNL Experience Manager] supprime la ressource, puis la recrée. |
 
 >[!NOTE]
->
->Si la ressource existe et que ni `createVersion` ni `replace` n’est spécifié, [!DNL Experience Manager] met à jour la version actuelle de la ressource avec le nouveau fichier binaire.
+Si la ressource existe et que ni `createVersion` ni `replace` n’est spécifié, [!DNL Experience Manager] met à jour la version actuelle de la ressource avec le nouveau fichier binaire.
 
 Comme c’est le cas pour le processus de lancement, les données de la requête de fin peuvent contenir des informations pour plusieurs fichiers.
 
@@ -173,9 +171,8 @@ La nouvelle méthode de chargement n’est prise en charge que pour [!DNL Adobe 
 * API Java `AssetManager`, comme `AssetManager.createAsset(..)`
 
 >[!MORELIKETHIS]
->
->* [Bibliothèque de chargement AEM Open Source](https://github.com/adobe/aem-upload).
->* [Outil de ligne de commande Open Source](https://github.com/adobe/aio-cli-plugin-aem).
+* [Bibliothèque de chargement AEM Open Source](https://github.com/adobe/aem-upload).
+* [Outil de ligne de commande Open Source](https://github.com/adobe/aio-cli-plugin-aem).
 
 
 ## Workflows de traitement et de post-traitement des ressources {#post-processing-workflows}
@@ -243,6 +240,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
->
->* [Le SDK Experience Cloud as a  [!DNL Cloud Service] ](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 
