@@ -1,19 +1,19 @@
 ---
 title: Utilisation de jeux de règles de transformation d’URL
-description: Découvrez comment déployer des jeux de règles dans Dynamic Media pour transformer les URL. Les ensembles de règles sont des ensembles d’instructions écrites dans un langage de scripts (comme JavaScript) qui évaluent des données XML et déclenchent certaines actions si ces données remplissent des conditions spécifiques.
+description: Découvrez comment déployer des jeux de règles dans Dynamic Media pour transformer les URL. Les jeux de règles sont des ensembles d’instructions écrits dans un langage de script (tel que JavaScript™) qui évaluent les données XML et effectuent certaines actions si ces données remplissent certaines conditions.
 topic: Professionnel
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 98%
+source-wordcount: '768'
+ht-degree: 85%
 
 ---
 
 
 # Utilisation d’ensembles de règles pour transformer des URL {#using-rulesets-to-transform-urls}
 
-Vous pouvez déployer des ensembles de règles dans Dynamic Media pour transformer les URL. Les ensembles de règles sont des ensembles d’instructions écrites dans un langage de scripts (comme JavaScript) qui évaluent des données XML et déclenchent certaines actions si ces données remplissent des conditions spécifiques. Chaque règle définit au moins une condition et une action. Une règle évalue si les données XML remplissent les conditions et, si tel est le cas, déclenche les actions appropriées. Les exemples d’ensembles de règles comprennent les éléments suivants :
+Vous pouvez déployer des ensembles de règles dans Dynamic Media pour transformer les URL. Les jeux de règles sont des ensembles d’instructions écrits dans un langage de script (tel que JavaScript™) qui évaluent les données XML et effectuent certaines actions si ces données remplissent certaines conditions. Chaque règle définit au moins une condition et une action. Une règle évalue si les données XML remplissent les conditions et, si tel est le cas, déclenche les actions appropriées. Les exemples d’ensembles de règles comprennent les éléments suivants :
 
 * Ajout d’un suffixe de type MIME. De nombreux services et sites web ont besoin de suffixes d’image, comme l’ajout de `.jpg` à une URL.
 * Création d’un chemin de dossier vers l’URL pour le SEO (Search Engine Optimization, ou optimisation du moteur de recherche).
@@ -67,8 +67,8 @@ Consultez également la section [Utilisation de « ressource » au lieu d’un
    * Dans la boîte de dialogue **[!UICONTROL Ouvrir]**, naviguez jusqu’à votre fichier d’ensemble de règles (XML).
    * Sélectionnez le fichier, puis cliquez sur **[!UICONTROL Ouvrir]**.
    * Sur le côté droit de la page **[!UICONTROL Charger]**, sélectionnez un dossier de destination pour le fichier d’ensemble de règles.
-   * Près du bas de la page, assurez-vous que l’option **[!UICONTROL Publier après le chargement]** est cochée.
-   * Dans le coin inférieur droit de la page, cliquez sur **[!UICONTROL Soumettre le chargement]**.
+   * Près du bas de la page, vérifiez que l’option Publier après le téléchargement est cochée.
+   * Dans le coin inférieur droit de la page, cliquez sur **[!UICONTROL Envoyer le téléchargement]**.
    * Sur la barre de Navigation générale, cliquez sur **[!UICONTROL Tâches]** afin de vérifier le statut de la tâche de chargement. Lorsque la colonne **[!UICONTROL État]** sur la page de la **[!UICONTROL Tâche]** indique Chargement terminé, passez aux étapes suivantes.
 
 1. Sur la barre de navigation située en haut de la page, cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Configuration de la publication > Serveur d’images]**.
@@ -79,5 +79,5 @@ Consultez également la section [Utilisation de « ressource » au lieu d’un
 
    Les conditions d’ensemble de règles sont appliquées aux demandes aux serveurs d’images Dynamic Media en ligne.
 
-   Si vous apportez des modifications au fichier d’ensemble de règles, celles-ci sont immédiatement appliquées lorsque vous rechargez et publiez à nouveau le fichier d’ensemble de règles mis à jour.
+   Si vous modifiez le fichier du jeu de règles, les modifications sont immédiatement appliquées lorsque vous téléchargez et republiez le fichier mis à jour du jeu de règles.
 
