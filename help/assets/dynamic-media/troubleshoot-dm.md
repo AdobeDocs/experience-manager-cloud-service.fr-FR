@@ -3,10 +3,10 @@ title: Résolution des problèmes liés à Dynamic Media
 description: Conseils de dépannage lors de l’utilisation de Dynamic Media.
 topic: '"Administrateur, Professionnel"'
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 99%
+source-wordcount: '993'
+ht-degree: 78%
 
 ---
 
@@ -25,26 +25,26 @@ Vous trouverez ci-après quelques astuces et conseils généraux concernant tout
 
 ### Propriétés de l’état de synchronisation des ressources {#asset-synchronization-status-properties}
 
-Vous pouvez passer en revue les propriétés de ressource suivantes dans CRXDE Lite pour vérifier que la synchronisation de la ressource depuis AEM vers Dynamic Media s’est déroulée correctement :
+Les propriétés de ressource suivantes peuvent être examinées en CRXDE Lite pour confirmer la synchronisation réussie de la ressource de Adobe Experience Manager vers Dynamic Media :
 
 | **Propriété** | **Exemple** | **Description** |
 |---|---|---|
 | `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | Indicateur général indiquant que le nœud est lié à Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** ou texte d’erreur | Statut du téléchargement de la ressource vers Dynamic Media. |
-| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Doit être renseigné pour générer des URL vers la ressource distante de Dynamic Media. |
+| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Doit être renseigné pour générer des URL vers une ressource distante de Dynamic Media. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **succès** ou **échec :`<error text>`** | Statut de synchronisation des visionneuses (visionneuses à 360°, visionneuses d’images, etc.), des paramètres prédéfinis d’image, des paramètres prédéfinis de visionneuse, des mises à jour de zone cliquable pour une ressource ou des images ayant été modifiées. |
 
 ### Journalisation de la synchronisation {#synchronization-logging}
 
-Les erreurs et problèmes de synchronisation sont consignés dans le fichier `error.log` (répertoire de serveur AEM `/crx-quickstart/logs/`). La journalisation est suffisante pour déterminer la cause de la plupart des problèmes. Vous pouvez toutefois augmenter le niveau de journalisation sur DEBUG sur le module `com.adobe.cq.dam.ips` via la console Sling ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) pour collecter davantage d’informations.
+Les erreurs et problèmes de synchronisation sont consignés dans `error.log` (répertoire du serveur Experience Manager `/crx-quickstart/logs/`). La journalisation est suffisante pour déterminer la cause de la plupart des problèmes. Vous pouvez toutefois augmenter le niveau de journalisation sur DEBUG sur le module `com.adobe.cq.dam.ips` via la console Sling ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) pour collecter davantage d’informations.
 
 ### Gestion de version {#version-control}
 
-Lors du remplacement d’une ressource Dynamic Media (nom et emplacement identiques), vous avez la possibilité de conserver les deux ressources ou de remplacer/créer une version :
+Lors du remplacement d’un fichier Dynamic Media existant (même nom et emplacement), vous pouvez conserver les deux fichiers ou remplacer/créer une version :
 
-* Si vous conservez les deux, une nouvelle ressource est créée avec un nom unique pour l’URL de ressource publiée. Par exemple, `image.jpg` est la ressource d’origine et `image1.jpg` est la ressource qui vient d’être chargée.
+* Le fait de conserver les deux fichiers crée un fichier avec un nom unique pour l’URL de fichier publié. Par exemple, `image.jpg` est la ressource d’origine et `image1.jpg` est la ressource qui vient d’être chargée.
 
-* La création d’une version n’est pas prise en charge dans Dynamic Media. La nouvelle version remplace la ressource existante lors de la diffusion.
+* La création d’une version n’est pas prise en charge dans Dynamic Media. La nouvelle version remplace la ressource existante dans la diffusion.
 
 ## Images et visionneuses  {#images-and-sets}
 
@@ -63,14 +63,14 @@ Si des problèmes surviennent avec les images et les visionneuses, reportez-vous
     <ol>
      <li><p>Accédez à CRX/DE :</p>
       <ul>
-       <li>Vérifiez si le paramètre prédéfini dans le JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> est défini. Remarque : cet emplacement s’applique si vous avez effectué la mise à niveau d’AEM 6.x vers la version 6.4 et si vous avez choisi de ne pas utiliser la migration. Dans le cas contraire, l’emplacement est <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
+       <li>Vérifiez si le paramètre prédéfini dans le JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> est défini. Cet emplacement s’applique si vous avez effectué la mise à niveau de Experience Manager 6.x vers 6.4 et avez choisi de ne pas effectuer la migration. Sinon, l'emplacement est <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
        <li>Vérifiez que la ressource dans le JCR présente <code>dam:scene7FileStatus</code><strong> </strong>sous Métadonnées défini sur <code>PublishComplete</code>.</li>
       </ul> </li>
     </ol> </td>
-   <td><p>Actualisez la page/accédez à une autre page et revenez sur la page (le code JSP de rail latéral doit être recompilé)</p> <p>Si cela ne fonctionne pas :</p>
+   <td><p>Actualiser la page/accéder à une autre page et revenir (le JSP du rail latéral doit être recompilé)</p> <p>Si cela ne fonctionne pas :</p>
     <ul>
      <li>Publiez la ressource.</li>
-     <li>Rechargez la ressource et publiez-la.</li>
+     <li>Téléchargez à nouveau un fichier et publiez-le.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -125,15 +125,15 @@ Si vous êtes confronté à des problèmes au niveau de la vidéo, reportez-vous
      <li>Attribuez un profil vidéo au dossier.</li>
      <li>Modifiez le profil vidéo de sorte qu’il inclue plusieurs paramètres de codage prédéfinis.</li>
      <li>Attendez que le traitement de la vidéo soit terminé.</li>
-     <li>Rechargez la vidéo et assurez-vous que le workflow Vidéo de codage de média dynamique n’est pas en cours d’exécution.<br/> </li>
-     <li>Rechargez la vidéo.</li>
+     <li>Avant de recharger la vidéo, assurez-vous que le flux de travaux vidéo d’encodage Dynamic Media n’est pas en cours d’exécution.<br/> </li>
+     <li>Téléchargez à nouveau la vidéo.</li>
     </ol> </td>
   </tr>
   <tr>
    <td>La vidéo n’est pas codée.</td>
    <td>
     <ul>
-     <li>Vérifiez que le service cloud Dynamic Media est configuré.</li>
+     <li>Vérifiez si le Cloud Service Dynamic Media est configuré.</li>
      <li>Vérifiez qu’un profil vidéo est associé au dossier de transfert.</li>
     </ul> </td>
    <td>
@@ -179,7 +179,7 @@ Si vous rencontrez des problèmes avec les visionneuses, reportez-vous aux conse
   </tr>
   <tr>
    <td>Les paramètres prédéfinis de la visionneuse ne sont pas publiés.</td>
-   <td><p>Accédez à la page de diagnostic du gestionnaire d’échantillons : <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observez les valeurs calculées. Dans le cadre d’un fonctionnement correct, vous devriez voir :</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
+   <td><p>Accédez à la page de diagnostic du gestionnaire d’échantillons : <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observez les valeurs calculées. Lorsque le fonctionnement est correct, vous voyez :</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
        _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Remarque</strong> : Environ 10 minutes peuvent être nécessaires après la configuration des paramètres cloud de Dynamic Media pour que les ressources de visionneuse se synchronisent.</p> <p>S’il reste des ressources non activées, cliquez sur l’un des boutons <strong>Répertorier toutes les ressources non activées</strong> pour afficher des informations détaillées.</p> </td>
    <td>
     <ol>
@@ -194,7 +194,7 @@ Si vous rencontrez des problèmes avec les visionneuses, reportez-vous aux conse
     <ol>
      <li>Accédez au dossier <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> dans votre dossier de synchronisation Dynamic Media (par exemple, <code>/content/dam/_CSS/_OOTB</code>),</li>
      <li>Recherchez le nœud de métadonnées de la ressource qui pose problème (par exemple, <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>).</li>
-     <li>Vérifiez que les propriétés <code>dam:scene7*</code> sont présentes. Si la ressource a été correctement synchronisée et publiée, <code>dam:scene7FileStatus</code> est défini sur <strong>PublishComplete</strong>.</li>
+     <li>Vérifiez que les propriétés <code>dam:scene7*</code> sont présentes. Si la ressource a été synchronisée et publiée avec succès, le <code>dam:scene7FileStatus</code> jeu est défini sur <strong>PublishComplete</strong>.</li>
      <li>Essayez de demander l’illustration directement à partir de Dynamic Media en concaténant les valeurs des propriétés suivantes et des littéraux de chaîne.
       <ul>
        <li><code>dam:scene7Domain</code></li>
@@ -204,17 +204,17 @@ Si vous rencontrez des problèmes avec les visionneuses, reportez-vous aux conse
        <li>Exemple : <code>https://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li>
       </ul> </li>
     </ol> </td>
-   <td><p>Si les exemples de ressources ou l’illustration du paramètre prédéfini de la visionneuse n’ont pas été synchronisés ou publiés, redémarrez le processus de copie/synchronisation entier :</p>
+   <td><p>Si les fichiers d’exemple ou l’illustration prédéfinie de la visionneuse n’ont pas été synchronisés ou publiés, redémarrez l’intégralité du processus de copie/synchronisation :</p>
     <ol>
      <li>Accédez à <code>/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code>.
      </li>
      <li>Sélectionnez les actions suivantes dans l’ordre :
       <ol>
        <li>Supprimer les dossiers de synchronisation.</li>
-       <li>Supprimer le dossier Paramètre prédéfini (sous <code>/conf</code>).
+       <li>Supprimer le dossier Paramètres prédéfinis (sous <code>/conf</code>).
        <li>Déclencher la tâche asynchrone de configuration de DM.</li>
       </ol> </li>
-     <li>Attendez la notification d’une synchronisation réussie dans votre boîte de réception AEM.
+     <li>Attendez la notification d'une synchronisation réussie dans votre boîte de réception Experience Manager.
      </li>
     </ol> </td>
   </tr>
