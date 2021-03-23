@@ -3,10 +3,10 @@ title: 'API HTTP Assets '
 description: Créer, lire, mettre à jour, supprimer et gérer des ressources numériques à l’aide de l’API HTTP dans [!DNL Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 332ca27c060a46d41e4f6e891f6fd98170d10d9f
+source-git-commit: c9a7dc74e3fc7c637825606a1a92cbe46d86283f
 workflow-type: tm+mt
-source-wordcount: '1474'
-ht-degree: 70%
+source-wordcount: '1489'
+ht-degree: 71%
 
 ---
 
@@ -267,7 +267,7 @@ Supprime une ressource (arborescence) pour le chemin indiqué.
 
 * Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne sont plus disponibles via l’interface web [!DNL Assets] ni par le biais de l’API HTTP. L’API renvoie un message d’erreur 404 si l’[!UICONTROL heure d’activation] se situe dans le futur ou si l’[!UICONTROL heure de désactivation] se situe dans le passé.
 
-* N’utilisez pas `/adobe` comme URL ou chemin JCR. N’enregistrez aucune servlet sous cette arborescence ou ne créez aucun contenu dans JCR.
+* Certaines propriétés de dossier ou de fichier sont mises en correspondance avec un préfixe différent lors de la mise à jour à l’aide d’API. Le préfixe `jcr` de `jcr:title`, `jcr:description` et `jcr:language` est remplacé par le préfixe `dc`. Par conséquent, dans le JSON renvoyé, `dc:title` et `dc:description` contiennent respectivement les valeurs de `jcr:title` et `jcr:description`.
 
 >[!MORELIKETHIS]
 >
