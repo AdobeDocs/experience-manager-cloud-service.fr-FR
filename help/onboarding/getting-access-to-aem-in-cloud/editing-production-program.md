@@ -2,7 +2,7 @@
 title: 'Modification d’un Programme de production '
 description: 'Modification d’un Programme de production '
 translation-type: tm+mt
-source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
+source-git-commit: c34b9cbd019ee74059e13be4f19c1bb9a54fa2ba
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -23,8 +23,7 @@ Les utilisateurs disposant des autorisations requises peuvent désormais modifie
 
 Pour modifier un programme de production, procédez comme suit :
 
-1. 
-   1. Accédez à la page **Modifier le Programme** à partir de la page *Aperçu* de Cloud Manager.
+1. Accédez à la page **Modifier le Programme** à partir de la page *Aperçu* de Cloud Manager.
 
 1. La page **Modifier le Programme** affiche deux onglets (Général et Solutions) pour les programmes Production et Sandbox.
 
