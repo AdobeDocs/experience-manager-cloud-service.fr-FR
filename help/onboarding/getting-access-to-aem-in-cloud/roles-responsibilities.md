@@ -2,15 +2,22 @@
 title: Rôles et responsabilités
 description: Rôles et responsabilités
 translation-type: tm+mt
-source-git-commit: 843e425e446a4e9ce140fe7d7111b69bd9f4545e
+source-git-commit: 34eecf5d210376c534ad3c1918db466226c2f9c5
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 21%
+source-wordcount: '500'
+ht-degree: 17%
 
 ---
 
 
 # Adobe Experience Manager comme Cloud Service : Rôles et responsabilités {#roles-responsibilities}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_raci"
+>title="Rôles et responsabilités"
+>abstract="Adobe fournit un ensemble de services autour de la fourniture, du développement, de l&#39;évaluation et de la production de Experience Manager en tant que Cloud Service. Pour que le développement et le déploiement de la solution se déroulent de la manière la plus efficace possible, il est important que le client et le personnalisateur comprennent et remplissent leurs rôles, comme décrit ici."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=en" text="Choix des personnes appropriées, rôles appropriés"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="Alignement des indicateurs de performance clés"
 
 <br></br>
 Adobe fournit un ensemble de services autour de la fourniture, du développement, de l&#39;évaluation et de la production de Experience Manager en tant que Cloud Service. Pour que le développement et le déploiement de la solution se déroulent de la manière la plus efficace possible, il est important que le client et le personnalisateur comprennent et remplissent leurs rôles, comme décrit ci-dessous.
