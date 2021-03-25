@@ -3,10 +3,10 @@ title: Dispatcher en mode cloud
 description: 'Dispatcher en mode cloud '
 feature: Dispatcher
 translation-type: tm+mt
-source-git-commit: 35df3f9c1b8a919de0c8c614bd0169d3418da1d0
+source-git-commit: c11d8e36fe8ba120847c675f40e09a0388943d51
 workflow-type: tm+mt
-source-wordcount: '4113'
-ht-degree: 75%
+source-wordcount: '4169'
+ht-degree: 74%
 
 ---
 
@@ -198,7 +198,21 @@ L’outil de validation est disponible dans le SDK à l’emplacement `bin/valid
 
 Il est appelé comme suit : `validator full [-d folder] [-w allowlist] zip-file | src folder`
 
-L&#39;outil vérifie que la configuration du répartiteur utilise les directives appropriées prises en charge par AEM en tant que service Cloud en analysant tous les fichiers avec le modèle `conf.d/enabled_vhosts/*.vhost`. Les directives autorisées dans les fichiers de configuration Apache peuvent être répertoriées en exécutant la commande de liste autorisée du programme de validation :
+L&#39;outil vérifie que la configuration du répartiteur utilise les directives appropriées prises en charge par AEM en tant que service Cloud en analysant tous les fichiers avec le modèle `conf.d/enabled_vhosts/*.vhost`.
+
+Sous Windows, le programme de validation du répartiteur est sensible à la casse. Par conséquent, il peut ne pas valider la configuration si vous ne respectez pas la mise en majuscule du chemin d’accès où se trouve votre configuration, par exemple :
+
+```
+bin\validator.exe full src
+Cloud manager validator 2.0.xx
+2021/03/15 18:15:40 Dispatcher configuration validation failed:
+  conf.dispatcher.d\available_farms\default.farm:15: parent directory outside server root: c:\k\a\aem-dispatcher-sdk-windows-symlinks-testing3\dispatcher\src
+  
+```
+
+Evitez cette erreur en copiant et collant le chemin d&#39;accès depuis l&#39;Explorateur Windows, puis sur l&#39;invite de commande à l&#39;aide d&#39;une commande `cd` dans ce chemin d&#39;accès.
+
+Les directives autorisées dans les fichiers de configuration Apache peuvent être répertoriées en exécutant la commande de liste autorisée du programme de validation :
 
 ```
 $ validator allowlist
