@@ -3,9 +3,9 @@ title: Configuration de Dynamic Media Cloud Service
 description: Découvrez comment configurer Dynamic Media dans Adobe Experience Manager en tant que Cloud Service.
 topic: Administrator
 translation-type: tm+mt
-source-git-commit: 5772a62c52af9db3cf94f4a2fff66f540b43d010
+source-git-commit: 0e951053a690d091d9b6462138042fd0c59fe5d3
 workflow-type: tm+mt
-source-wordcount: '4030'
+source-wordcount: '4054'
 ht-degree: 56%
 
 ---
@@ -23,7 +23,7 @@ Avec la nouvelle architecture, Experience Manager est responsable des ressources
 
 1. Lorsque la ressource source Principale est téléchargée sur Adobe Experience Manager en tant que Cloud Service, elle est répliquée sur Dynamic Media. À ce stade, Dynamic Media gère l’intégralité du traitement des ressources et de la génération du rendu, comme le codage vidéo et les variantes dynamiques d’une image.
 1. Une fois les rendus générés, le Experience Manager en tant que Cloud Service peut accéder et prévisualisation en toute sécurité les rendus Dynamic Media distants (aucun binaire n’est renvoyé au Experience Manager en tant qu’instance Cloud Service).
-1. Une fois que le contenu est prêt à être publié et approuvé, il déclenche le service Dynamic Media pour pousser le contenu vers les serveurs de diffusion et le mettre en cache sur le CDN.
+1. Une fois que le contenu est prêt à être publié et approuvé, il déclenche le service Dynamic Media pour pousser le contenu vers les serveurs de diffusion et mettre en cache le contenu sur le réseau CDN (Content Diffusion Network).
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
@@ -382,7 +382,9 @@ L’Adobe recommande d’utiliser les paramètres de tâche &quot;affinés&quot;
 
 <!-- CQDOC-17657 for PSD entry in table above -->
 
-<!-- To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support). -->
+Pour mettre à jour l&#39;un de ces paramètres, voir [Modification des types MIME pour les formats pris en charge](#editing-mime-types-for-supported-formats).
+
+Voir aussi [Ajouter des types MIME pour les formats non pris en charge](#adding-mime-types-for-unsupported-formats).
 
 #### Mise à jour de la file d’attente de workflows transitoires Granite {#updating-the-granite-transient-workflow-queue}
 
