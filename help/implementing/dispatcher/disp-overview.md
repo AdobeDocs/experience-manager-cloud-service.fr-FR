@@ -3,10 +3,10 @@ title: Dispatcher en mode cloud
 description: 'Dispatcher en mode cloud '
 feature: Dispatcher
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 35df3f9c1b8a919de0c8c614bd0169d3418da1d0
 workflow-type: tm+mt
-source-wordcount: '4120'
-ht-degree: 100%
+source-wordcount: '4113'
+ht-degree: 75%
 
 ---
 
@@ -18,23 +18,23 @@ ht-degree: 100%
 Cette section décrit comment structurer les configurations Apache et Dispatcher d’AEM as a Cloud Service. Elle explique également comment valider et exécuter le service localement avant son déploiement dans les environnements cloud. Elle présente en outre le débogage dans les environnements cloud. Pour plus d’informations sur Dispatcher, consultez la [documentation d’AEM Dispatcher](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html).
 
 >[!NOTE]
->Les utilisateurs de Windows devront utiliser Windows 10 Professionnel ou d’autres distributions prenant en charge Docker. Il s’agit d’un prérequis pour l’exécution et le débogage de Dispatcher sur un ordinateur local. Les sections ci-dessous incluent des commandes utilisant les versions Mac ou Linux du SDK, mais le SDK Windows peut être utilisé de la même manière.
+>Les utilisateurs de Windows doivent utiliser Windows 10 Professionnel ou d&#39;autres distributions qui prennent en charge Docker. Il s’agit d’un prérequis pour l’exécution et le débogage de Dispatcher sur un ordinateur local. Les sections ci-dessous incluent des commandes utilisant les versions Mac ou Linux du SDK, mais le SDK Windows peut être utilisé de la même manière.
 
 ## Outils Dispatcher {#dispatcher-sdk}
 
 Les outils Dispatcher font partie du SDK global d’AEM as a Cloud Service et fournissent les éléments suivants :
 
-* Une structure de fichiers classique contenant les fichiers de configuration à inclure dans un projet maven pour Dispatcher.
-* Outil permettant aux clients de confirmer que la configuration de Dispatcher inclut uniquement des directives prises en charge AEM as a Cloud Service. En outre, l’outil confirme également que la syntaxe correcte afin qu’Apache puisse démarrer correctement.
-* Une image du Docker qui rend Dispatcher accessible localement
+* Structure de fichiers vanille contenant les fichiers de configuration à inclure dans un projet expert pour le répartiteur.
+* Outil permettant aux clients de vérifier que la configuration du répartiteur inclut uniquement des AEM en tant que directives prises en charge par le Cloud Service.        En outre, l’outil confirme également que la syntaxe correcte afin qu’Apache puisse démarrer correctement.
+* Image Docker qui affiche le Répartiteur localement.
 
 ## Téléchargement et extraction des outils {#extracting-the-sdk}
 
-Les outils Dispatcher, qui font partie du [SDK AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), peuvent être téléchargés sous la forme d’un fichier zip sur le portail de [distribution de logiciels](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html). Toute nouvelle configuration disponible dans cette nouvelle version des outils Dispatcher peut être utilisée pour le déploiement dans les environnements cloud exécutant cette version d’AEM en mode cloud ou une version ultérieure.
+Les outils Dispatcher, qui font partie du [SDK AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), peuvent être téléchargés sous la forme d’un fichier zip sur le portail de [distribution de logiciels](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html). Toute nouvelle configuration disponible dans cette nouvelle version des outils du répartiteur peut être utilisée pour le déploiement sur les environnements Cloud exécutant cette version d’AEM dans le Cloud ou une version ultérieure.
 
 Décompressez le SDK, qui regroupe les outils Dispatcher pour macOS/Linux et Windows.
 
-**Pour macOS/Linux**, rendez l’artefact de l’outil Dispatcher exécutable et exécutez-le. Il extrait automatiquement les fichiers des outils Dispatcher au sein du répertoire dans lequel vous l’avez stocké (où `version` est la version des outils Dispatcher).
+**Pour macOS/Linux**, rendez l’artefact de l’outil Répartiteur exécutable et exécutez-le. Il va extraire automatiquement les fichiers des outils du répartiteur sous le répertoire dans lequel vous l&#39;avez stocké (où `version` correspond à la version des outils du répartiteur).
 
 ```bash
 $ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
@@ -47,7 +47,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 ## Structure de fichier {#file-structure}
 
-La structure du sous-dossier dispatcher du projet est décrite ci-dessous et doit être copiée dans le dossier dispatcher du projet maven :
+La structure du sous-dossier Répartiteur du projet est décrite ci-dessous et doit être copiée dans le dossier Répartiteur du projet expert :
 
 ```bash
 ./
@@ -104,7 +104,7 @@ Ce fichier est inclus dans vos fichiers `.vhost`. Il contient un ensemble de rè
 
 >[!NOTE]
 >
->Actuellement, un seul fichier de réécriture doit être utilisé au lieu de fichiers spécifiques au site. Ce fichier doit présenter une taille inférieure à 1 Mo.
+>Actuellement, un seul fichier de réécriture doit être utilisé plutôt que des fichiers spécifiques au site. En règle générale, la somme du contenu des fichiers personnalisables doit être inférieure à 1 Mo.
 
 * `conf.d/variables/custom.vars`
 
@@ -112,11 +112,11 @@ Ce fichier est inclus dans vos fichiers `.vhost`. Vous pouvez y placer des défi
 
 * `conf.d/variables/global.vars`
 
-Ce fichier est inclus dans le fichier `dispatcher_vhost.conf`. Vous pouvez modifier votre Dispatcher et le niveau du journal des réécritures dans ce fichier.
+Ce fichier est inclus dans le fichier `dispatcher_vhost.conf`. Vous pouvez modifier votre Répartiteur et réécrire le niveau de journal dans ce fichier.
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-Vous pouvez avoir un ou plusieurs de ces fichiers. Ils contiennent des fermes correspondant aux noms d’hôtes et permettant au module Dispatcher de gérer chaque ferme avec des règles différentes. Les fichiers sont créés dans le répertoire `available_farms` et activés avec un lien symbolique dans le répertoire `enabled_farms`. À partir des fichiers `.farm`, d’autres fichiers tels que les filtres, les règles de cache et d’autres seront inclus.
+Vous pouvez avoir un ou plusieurs de ces fichiers, qui contiennent des fermes pour correspondre aux noms d&#39;hôtes et permettre au module Répartiteur de gérer chaque batterie avec des règles différentes. Les fichiers sont créés dans le répertoire `available_farms` et activés avec un lien symbolique dans le répertoire `enabled_farms`. À partir des fichiers `.farm`, d’autres fichiers tels que les filtres, les règles de cache et d’autres seront inclus.
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -134,13 +134,13 @@ Ce fichier est inclus dans vos fichiers `.farm`. Il comporte un ensemble de règ
 
 Ce fichier est inclus dans vos fichiers `.farm`. Il comporte une liste de noms d’hôtes ou de chemins d’URI à mettre en correspondance glob. Cela détermine le serveur principal à utiliser pour diffuser une requête.
 
-Les fichiers ci-dessus font référence aux fichiers de configuration non modifiables répertoriés ci-dessous. Les modifications apportées aux fichiers non modifiables ne seront pas traitées par les Dispatchers dans les environnements cloud.
+Les fichiers ci-dessus font référence aux fichiers de configuration non modifiables répertoriés ci-dessous. Les modifications apportées aux fichiers immuables ne seront pas traitées par les répartiteurs dans les environnements Cloud.
 
 **Fichiers de configuration non modifiables**
 
 Ces fichiers font partie du framework de base. Ils respectent les normes et les bonnes pratiques. Les fichiers sont considérés comme non modifiables, car leur modification ou suppression locale n’aura aucun impact sur votre déploiement ; ils ne seront pas transférés vers votre instance cloud.
 
-Il est recommandé que les fichiers ci-dessus fassent référence aux fichiers non modifiables répertoriés ci-dessous, suivis de toute instruction ou remplacement supplémentaire. Lorsque la configuration Dispatcher est déployée dans un environnement cloud, la dernière version des fichiers non modifiables est utilisée, quelle que soit la version utilisée dans le développement local.
+Il est recommandé que les fichiers ci-dessus fassent référence aux fichiers non modifiables répertoriés ci-dessous, suivis de toute instruction ou remplacement supplémentaire. Lorsque la configuration du répartiteur est déployée sur un environnement cloud, la dernière version des fichiers immuables est utilisée, quelle que soit la version utilisée dans le développement local.
 
 * `conf.d/available_vhosts/default.vhost`
 
@@ -156,7 +156,7 @@ Règles de réécriture par défaut adaptées à un projet standard. Si une pers
 
 * `conf.dispatcher.d/available_farms/default.farm`
 
-Contient un exemple de ferme Dispatcher. Pour votre propre ferme, créez une copie de ce fichier, personnalisez-la, accédez à `conf.d/enabled_farms` et créez un lien symbolique vers votre copie personnalisée.
+Contient un exemple de batterie de répartiteurs. Pour votre propre ferme, créez une copie de ce fichier, personnalisez-la, accédez à `conf.d/enabled_farms` et créez un lien symbolique vers votre copie personnalisée.
 
 * `conf.dispatcher.d/cache/default_invalidate.any`
 
@@ -172,7 +172,7 @@ En-têtes de requête par défaut à transférer vers le serveur principal, adap
 
 * `conf.dispatcher.d/dispatcher.any`
 
-Élément du framework de base, utilisé pour illustrer la manière dont vos fermes de Dispatcher sont incluses.
+Partie du cadre de base, utilisée pour illustrer comment vos fermes de répartiteurs sont incluses.
 
 * `conf.dispatcher.d/filters/default_filters.any`
 
@@ -188,7 +188,7 @@ Extension métacaractère d’hôte par défaut adaptée à un projet standard. 
 
 >[!NOTE]
 >
->L’archétype maven d’AEM as a Cloud Service génère la même structure de fichiers de configuration Dispatcher.
+>L&#39;AEM en tant qu&#39;archétype d&#39;expert Cloud Service générera la même structure de fichiers de configuration du répartiteur.
 
 Les sections ci-dessous décrivent comment valider localement la configuration afin qu’elle puisse franchir le niveau de qualité associé dans Cloud Manager lors du déploiement d’une version interne.
 
@@ -198,7 +198,7 @@ L’outil de validation est disponible dans le SDK à l’emplacement `bin/valid
 
 Il est appelé comme suit : `validator full [-d folder] [-w allowlist] zip-file | src folder`
 
-L’outil confirme que la configuration Dispatcher utilise les directives appropriées prises en charge par AEM As a Cloud Service en analysant tous les fichiers présentant le motif `conf.d/enabled_vhosts/*.vhost`. Les directives autorisées dans les fichiers de configuration Apache peuvent être répertoriées en exécutant la commande de liste autorisée du programme de validation :
+L&#39;outil vérifie que la configuration du répartiteur utilise les directives appropriées prises en charge par AEM en tant que service Cloud en analysant tous les fichiers avec le modèle `conf.d/enabled_vhosts/*.vhost`. Les directives autorisées dans les fichiers de configuration Apache peuvent être répertoriées en exécutant la commande de liste autorisée du programme de validation :
 
 ```
 $ validator allowlist
@@ -345,12 +345,12 @@ Notez qu’il n’existe pas de version par défaut des fichiers de variables.
 **Deprecated configuration layout detected, enabling compatibility mode**
 
 Ce message indique que votre configuration présente la disposition version 1 obsolète, contenant une
-configuration Apache complète et des fichiers avec des préfixes `ams_`. Bien que cette fonctionnalité soit toujours prise en charge
-pour la rétrocompatibilité, vous devez passer à la nouvelle mise en page.
+configuration Apache complète et des fichiers avec des préfixes `ams_`. Bien que ceci soit toujours pris en charge pour les versions antérieures
+, vous devez passer à la nouvelle mise en page.
 
-## Validation locale de la syntaxe de configuration Dispatcher afin qu’Apache httpd puisse démarrer {#local-validation}
+## Validation locale de la syntaxe de configuration du répartiteur de manière à ce qu&#39;apache httpd puisse début {#local-validation}
 
-Une fois qu’il a été établi que la configuration du module Dispatcher inclut uniquement les directives prises en charge, vous devez vérifier que la syntaxe est correcte afin qu’Apache puisse démarrer. Pour ce faire, Docker doit être installé localement. Il n’est pas nécessaire qu’AEM soit en cours d’exécution.
+Une fois qu&#39;il a été établi que la configuration du module Répartiteur inclut uniquement les directives prises en charge, vous devez vérifier que la syntaxe est correcte afin qu&#39;apache puisse début. Pour ce faire, Docker doit être installé localement. Il n’est pas nécessaire qu’AEM soit en cours d’exécution.
 
 Utilisez le script `validate.sh` comme indiqué ci-dessous :
 
@@ -377,7 +377,7 @@ Le script effectue les opérations suivantes :
 
 1. Il exécute le programme de validation de la section précédente pour s’assurer que seules les directives prises en charge soient incluses. Si la configuration n’est pas valide, le script échoue.
 2. Il exécute la `httpd -t command` pour tester si la syntaxe est correcte de sorte qu’Apache httpd puisse démarrer. En cas de réussite, la configuration doit être prête pour le déploiement..
-3. Vérifie que le sous-ensemble des fichiers de configuration du SDK du Dispatcher, qui sont censés être immuables (comme décrit dans la [section Structure de fichiers](#file-structure)) n’a pas été modifié. Cette nouvelle vérification a été introduite avec le SDK AEM version v2021.1.4738 qui inclut également Dispatcher Tools version 2.0.36. Avant cette mise à jour, les clients auraient pu supposer à tort que toute modification locale du SDK de ces fichiers immuables est également appliquée à l’environnement cloud.
+3. Vérifie que le sous-ensemble des fichiers de configuration du SDK du répartiteur, qui sont censés être immuables comme décrit dans la section [Structure de fichiers](#file-structure), n&#39;a pas été modifié. Cette nouvelle vérification a été introduite avec le SDK AEM version v2021.1.4738 qui inclut également Dispatcher Tools version 2.0.36. Avant cette mise à jour, les clients auraient pu supposer à tort que toute modification locale du SDK de ces fichiers immuables est également appliquée à l’environnement cloud.
 
 Lors d’un déploiement de Cloud Manager, la vérification `httpd -t syntax` est également exécutée et toute erreur est incluse dans le journal `Build Images step failure` de Cloud Manager.
 
@@ -385,7 +385,7 @@ Lors d’un déploiement de Cloud Manager, la vérification `httpd -t syntax` es
 
 Il est également possible de tester localement votre configuration Apache et Dispatcher. Cela nécessite que Docker soit installé localement et que votre configuration réussisse la validation comme décrit ci-dessus.
 
-Exécutez l’outil de validation (notez qu’il est différent de `validator.sh` mentionné plus haut) en utilisant le paramètre `-d` qui génère un dossier avec tous les fichiers de configuration de Dispatcher. Exécutez ensuite le script `docker_run.sh` en transmettant ce dossier en tant qu’argument. En indiquant le numéro de port (ici : 8080) pour exposer le point d’entrée de Dispatcher, un conteneur Docker est démarré et exécute Dispatcher avec votre configuration.
+Exécutez l&#39;outil de validation (notez qu&#39;il est différent de `validator.sh` mentionné plus haut) en utilisant le paramètre `-d` qui génère un dossier avec tous les fichiers de configuration du répartiteur. Exécutez ensuite le script `docker_run.sh` en transmettant ce dossier en tant qu’argument. En indiquant le numéro de port (ici : 8080) pour exposer le point de terminaison Répartiteur, un conteneur Docker est démarré, exécutant le Répartiteur avec votre configuration.
 
 ```
 $ validator full -d out src/dispatcher
@@ -400,11 +400,11 @@ Starting httpd server
 ...
 ```
 
-Dispatcher démarre alors dans un conteneur avec son serveur principal pointant vers une instance AEM s’exécutant sur votre ordinateur Mac OS local au port 4503.
+Cette opération début le Répartiteur dans un conteneur dont le serveur principal pointe vers une instance AEM s’exécutant sur votre ordinateur Mac OS local au port 4503.
 
 ## Débogage de la configuration Apache et Dispatcher {#debugging-apache-and-dispatcher-configuration}
 
-La stratégie suivante peut être utilisée afin d’augmenter la sortie du journal pour le module Dispatcher et de voir les résultats de l’évaluation `RewriteRule` dans les environnements locaux et cloud.
+La stratégie suivante peut être utilisée pour augmenter la sortie du journal pour le module Répartiteur et voir les résultats de l&#39;évaluation `RewriteRule` dans les environnements locaux et les  de cloud.
 
 Les niveaux de journal de ces modules sont définis par les variables `DISP_LOG_LEVEL` et `REWRITE_LOG_LEVEL`. Ils peuvent être définis dans le fichier `conf.d/variables/global.vars`. Sa partie pertinente est la suivante :
 
@@ -430,13 +430,13 @@ Les niveaux de journal de ces modules sont définis par les variables `DISP_LOG_
 # Define REWRITE_LOG_LEVEL Warn
 ```
 
-Lors de l’exécution locale de Dispatcher, les journaux sont directement imprimés dans la sortie du terminal. La plupart du temps, vous souhaitez que ces journaux soient en mode DEBUG, ce qui peut être réalisé en transmettant le niveau Debug comme paramètre lors de l’exécution de Docker. Par exemple : `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
+Lors de l&#39;exécution du répartiteur en local, les journaux sont imprimés directement sur la sortie terminal. La plupart du temps, vous souhaitez que ces journaux soient en mode DEBUG, ce qui peut être réalisé en transmettant le niveau Debug comme paramètre lors de l’exécution de Docker. Par exemple : `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
 
-Les journaux des environnements cloud sont exposés par le biais du service de journalisation disponible dans Cloud Manager.
+Les journaux des environnements cloud sont exposés par le biais du service de journalisation disponible dans Cloud Manager.
 
 ## Différentes configurations Dispatcher par environnement {#different-dispatcher-configurations-per-environment}
 
-Actuellement, la même configuration Dispatcher est appliquée à tous les environnements AEM as a Cloud Service. Le composant d’exécution comporte une variable d’environnement `ENVIRONMENT_TYPE` qui contient le mode d’exécution actuel (dev, stage ou prod) ainsi qu’une définition. La définition peut être `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE` ou `ENVIRONMENT_PROD`. Dans la configuration Apache, la variable peut être utilisée directement dans une expression. Vous pouvez également utiliser la définition pour créer une logique :
+Actuellement, la même configuration de Répartiteur est appliquée à tous les AEM en tant qu&#39;environnements Cloud Service. Le composant d’exécution comporte une variable d’environnement `ENVIRONMENT_TYPE` qui contient le mode d’exécution actuel (dev, stage ou prod) ainsi qu’une définition. La définition peut être `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE` ou `ENVIRONMENT_PROD`. Dans la configuration Apache, la variable peut être utilisée directement dans une expression. Vous pouvez également utiliser la définition pour créer une logique :
 
 ```
 # Simple usage of the environment variable
@@ -503,19 +503,19 @@ Comme décrit dans la page de référence ci-dessus, la configuration Apache et 
 
 ## Instructions relatives à la migration de la configuration Dispatcher d’AMS vers AEM as a Cloud Service
 
-La structure de configuration Dispatcher présente des différences entre Managed Services et AEM as a Cloud Service. Vous trouverez ci-dessous un guide détaillé sur la migration de la configuration Dispatcher d’AMS version 2 vers AEM as a Cloud Service.
+La structure de configuration du répartiteur présente des différences entre Managed Services et AEM en tant que Cloud Service. Vous trouverez ci-dessous un guide détaillé sur la migration de la configuration Dispatcher d’AMS version 2 vers AEM as Cloud Service.
 
-## Comment convertir une configuration Dispatcher AMS en AEM as a Cloud Service
+## Comment convertir un fichier AMS en un AEM en tant que configuration du répartiteur de services Cloud
 
-La section suivante fournit des instructions étape par étape pour convertir une configuration AMS. Elle suppose
-que vous disposez d’une archive avec une structure similaire à celle décrite dans la [configuration Dispatcher Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html).
+La section suivante fournit des instructions détaillées sur la conversion d’une configuration AMS. Elle suppose
+que vous disposez d’une archive avec une structure similaire à celle décrite dans [Configuration du répartiteur Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
 
 ### Extraire l’archive et supprimer tout préfixe
 
 Extrayez l’archive dans un dossier et assurez-vous que les noms des sous-dossiers immédiats commencent par `conf`, `conf.d`,
 `conf.dispatcher.d` et `conf.modules.d`. Si tel n’est pas le cas, déplacez-les dans la hiérarchie.
 
-### Supprimer les sous-dossiers et fichiers non utilisés
+### Débarrassez-vous des sous-dossiers et fichiers inutilisés
 
 Supprimez les sous-dossiers `conf` et `conf.modules.d`, ainsi que les fichiers correspondants à `conf.d/*.conf`.
 
@@ -527,7 +527,7 @@ liés peuvent également être supprimés.
 
 ### Supprimer ou mettre en commentaires les sections d’hôte virtuel qui ne font pas référence au port 80
 
-Si des sections de vos fichiers d’hôtes virtuels font encore référence exclusivement à d’autres ports que le port 80, par exemple :
+Si des sections de vos fichiers d&#39;hôtes virtuels contiennent toujours des références exclusivement à d&#39;autres ports que le port 80, par exemple :
 
 ```
 <VirtualHost *:443>
@@ -549,7 +549,7 @@ Si `conf.d/rewrites` contient maintenant un seul fichier, il doit être renommé
 De plus, veillez à adapter également les instructions `Include` se rapportant à ce fichier dans les fichiers d’hôtes virtuels.
 
 Si le dossier contient toutefois plusieurs fichiers spécifiques à l’hôte virtuel, leur contenu doit être
-placé dans l’instruction `Include` qui y fait référence dans les fichiers d’hôtes virtuels.
+copié dans l&#39;instruction `Include` faisant référence à eux dans les fichiers hôtes virtuels.
 
 ### Vérifier les variables
 
@@ -562,7 +562,7 @@ Si `conf.d/variables` contient maintenant un seul fichier, il doit être renomm�
 De plus, veillez à adapter également les instructions `Include` se rapportant à ce fichier dans les fichiers d’hôtes virtuels.
 
 Si le dossier contient toutefois plusieurs fichiers spécifiques à l’hôte virtuel, leur contenu doit être
-placé dans l’instruction `Include` qui y fait référence dans les fichiers d’hôtes virtuels.
+copié dans l&#39;instruction `Include` faisant référence à eux dans les fichiers hôtes virtuels.
 
 ### Supprimer des listes autorisées
 
@@ -578,7 +578,7 @@ Supprimez les sections faisant référence à des variables nommées `DISP_ID`, 
 
 ### Vérifier votre état en exécutant le programme de validation
 
-Exécutez le programme de validation Dispatcher dans votre répertoire, avec la sous-commande `httpd` :
+Exécutez le programme de validation du répartiteur dans votre répertoire, avec la sous-commande `httpd` :
 
 ```
 $ validator httpd .
@@ -606,9 +606,9 @@ Entrez dans le répertoire `conf.dispatcher.d/cache`.
 
 Supprimez tout fichier portant le préfixe `ams_`.
 
-Si `conf.dispatcher.d/cache` est maintenant vide, copiez le fichier `conf.dispatcher.d/cache/rules.any`
-de la configuration Dispatcher standard dans ce dossier. La configuration Dispatcher
-standard se trouve dans le dossier `src` de ce SDK. N’oubliez pas d’adapter également les
+Si `conf.dispatcher.d/cache` est désormais vide, copiez le fichier `conf.dispatcher.d/cache/rules.any`
+de la configuration standard du répartiteur à ce dossier. Répartiteur standard
+se trouve dans le dossier `src` de ce SDK. N’oubliez pas d’adapter également les
 instructions `$include` faisant référence aux fichiers de règles `ams_*_cache.any` dans les
 fichiers de fermes.
 
@@ -616,13 +616,13 @@ En revanche, si `conf.dispatcher.d/cache` contient maintenant un seul fichier po
 il doit être renommé en `rules.any`. De plus, veillez à adapter les instructions `$include`
 se rapportant à ce fichier dans les fichiers de fermes.
 
-Si le dossier contient toutefois plusieurs fichiers spécifiques à la ferme avec ce motif, leur contenu
-doit être copié dans l’instruction `$include` qui y fait référence dans les fichiers de fermes.
+Si le dossier contient toutefois plusieurs fichiers spécifiques à une batterie de serveurs avec ce modèle, leur contenu
+doit être copiée dans l&#39;instruction `$include` qui y fait référence dans les fichiers de batterie.
 
 Supprimez tout fichier portant le suffixe `_invalidate_allowed.any`.
 
-Copiez le fichier `conf.dispatcher.d/cache/default_invalidate_any` de la configuration
-Dispatcher AEM en mode cloud par défaut vers cet emplacement.
+Copiez le fichier `conf.dispatcher.d/cache/default_invalidate_any` du fichier par défaut.
+AEM dans la configuration du répartiteur de cloud à cet emplacement.
 
 Dans chaque fichier de ferme, supprimez tout contenu de la section `cache/allowedClients` et
 remplacez-le par :
@@ -641,13 +641,13 @@ Si `conf.dispatcher.d/clientheaders` contient maintenant un seul fichier portant
 il doit être renommé `clientheaders.any`. De plus, veillez à adapter également les instructions `$include`
 se rapportant à ce fichier dans les fichiers de fermes.
 
-Si le dossier contient toutefois plusieurs fichiers spécifiques à la ferme avec ce motif, leur contenu
-doit être copié dans l’instruction `$include` qui y fait référence dans les fichiers de fermes.
+Si le dossier contient toutefois plusieurs fichiers spécifiques à une batterie de serveurs avec ce modèle, leur contenu
+doit être copiée dans l&#39;instruction `$include` qui y fait référence dans les fichiers de batterie.
 
-Copiez le fichier `conf.dispatcher/clientheaders/default_clientheaders.any` de la configuration
-Dispatcher AEM as a Cloud Service par défaut vers cet emplacement.
+Copiez le fichier `conf.dispatcher/clientheaders/default_clientheaders.any` du fichier par défaut.
+AEM en tant que configuration Cloud Service Dispatcher à cet emplacement.
 
-Dans chaque fichier de ferme, remplacez les instructions d’inclusion clientheader qui se présentent comme suit :
+Dans chaque fichier de batterie de serveurs, remplacez toute instruction d’inclusion clientheader qui se présente comme suit :
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_publish_clientheaders.any"
@@ -669,13 +669,13 @@ Supprimez tout fichier portant le préfixe `ams_`.
 Si `conf.dispatcher.d/filters` contient maintenant un seul fichier, il doit être renommé
 `filters.any`. De plus, veillez à adapter également les instructions `$include` se rapportant à ce fichier dans les fichiers de fermes.
 
-Si le dossier contient toutefois plusieurs fichiers spécifiques à la ferme avec ce motif, leur contenu
-doit être copié dans l’instruction `$include` qui y fait référence dans les fichiers de fermes.
+Si le dossier contient toutefois plusieurs fichiers spécifiques à une batterie de serveurs avec ce modèle, leur contenu
+doit être copiée dans l&#39;instruction `$include` qui y fait référence dans les fichiers de batterie.
 
-Copiez le fichier `conf.dispatcher/filters/default_filters.any` de la configuration
-Dispatcher AEM as a Cloud Service par défaut vers cet emplacement.
+Copiez le fichier `conf.dispatcher/filters/default_filters.any` du fichier par défaut.
+AEM en tant que configuration Cloud Service Dispatcher à cet emplacement.
 
-Dans chaque fichier de ferme, remplacez les instructions d’inclusion de filtre qui se présentent comme suit :
+Dans chaque fichier de batterie, remplacez les instructions d&#39;inclusion de filtre qui se présentent comme suit :
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/filters/ams_publish_filters.any"
@@ -693,8 +693,8 @@ Entrez dans le répertoire `conf.dispatcher.d/renders`.
 
 Supprimez tous les fichiers de ce dossier.
 
-Copiez le fichier `conf.dispatcher.d/renders/default_renders.any` de la configuration
-Dispatcher AEM as a Cloud Service par défaut vers cet emplacement.
+Copiez le fichier `conf.dispatcher.d/renders/default_renders.any` du fichier par défaut.
+AEM en tant que configuration Cloud Service Dispatcher à cet emplacement.
 
 Dans chaque fichier de ferme, supprimez tout contenu de la section `renders` et
 remplacez-le par :
@@ -712,13 +712,13 @@ Supprimez tout fichier portant le préfixe `ams_`.
 Si `conf.dispatcher.d/virtualhosts` contient maintenant un seul fichier, il doit être renommé
 `virtualhosts.any`. De plus, veillez à adapter également les instructions `$include` se rapportant à ce fichier dans les fichiers de fermes.
 
-Si le dossier contient toutefois plusieurs fichiers spécifiques à la ferme avec ce motif, leur contenu
-doit être copié dans l’instruction `$include` qui y fait référence dans les fichiers de fermes.
+Si le dossier contient toutefois plusieurs fichiers spécifiques à une batterie de serveurs avec ce modèle, leur contenu
+doit être copiée dans l&#39;instruction `$include` qui y fait référence dans les fichiers de batterie.
 
-Copiez le fichier `conf.dispatcher/virtualhosts/default_virtualhosts.any` de la configuration
-Dispatcher AEM as a Cloud Service par défaut vers cet emplacement.
+Copiez le fichier `conf.dispatcher/virtualhosts/default_virtualhosts.any` du fichier par défaut.
+AEM en tant que configuration Cloud Service Dispatcher à cet emplacement.
 
-Dans chaque fichier de ferme, remplacez les instructions d’inclusion de filtre qui se présentent comme suit :
+Dans chaque fichier de batterie, remplacez les instructions d&#39;inclusion de filtre qui se présentent comme suit :
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/vhosts/ams_publish_vhosts.any"
@@ -732,7 +732,7 @@ $include "../virtualhosts/default_virtualhosts.any"
 
 ### Vérifier votre état en exécutant le programme de validation
 
-Exécutez le programme de validation Dispatcher AEM as a Cloud Service dans votre répertoire, avec la sous-commande `dispatcher` :
+Exécutez l&#39;AEM en tant que validateur Cloud Service Dispatcher dans votre répertoire, avec la sous-commande `dispatcher` :
 
 ```
 $ validator dispatcher .
@@ -760,10 +760,10 @@ validator full -d out .
 
 Cela valide la configuration complète et génère des informations de déploiement dans `out`
 
-### Étape 2 : démarrer Dispatcher dans une image Docker avec ces informations de déploiement
+### Étape 2 : Début du répartiteur dans une image de station d&#39;accueil avec ces informations de déploiement
 
-Avec votre serveur de publication AEM en exécution sur votre ordinateur macOS et en écoutant le port 4503,
-vous pouvez lancer Dispatcher devant ce serveur comme suit :
+Avec votre serveur de publication AEM exécuté sur votre ordinateur macOS, en écoutant sur le port 4503,
+vous pouvez exécuter le répartiteur début devant ce serveur comme suit :
 
 ```
 $ docker_run.sh out docker.for.mac.localhost:4503 8080
@@ -771,7 +771,7 @@ $ docker_run.sh out docker.for.mac.localhost:4503 8080
 
 Cela démarrera le conteneur et exposera Apache sur le port local 8080.
 
-### Utiliser votre nouvelle configuration Dispatcher
+### Utiliser la nouvelle configuration du répartiteur
 
 Félicitations ! Si le programme de validation ne signale plus aucun problème et
 que le conteneur Docker démarre sans erreur ni avertissement, vous êtes
