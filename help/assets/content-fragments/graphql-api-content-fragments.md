@@ -2,10 +2,10 @@
 title: API GraphQL d’AEM à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API GraphQL d’AEM pour la diffusion de contenu découplée.
 translation-type: tm+mt
-source-git-commit: 8d1e5891b72a9d3587957df5b2553265d66896d5
+source-git-commit: b0bfcacb35f520045ee6ed6d427467490e012912
 workflow-type: tm+mt
-source-wordcount: '2901'
-ht-degree: 91%
+source-wordcount: '3233'
+ht-degree: 86%
 
 ---
 
@@ -24,7 +24,7 @@ L’utilisation de l’API GraphQL dans AEM permet la diffusion efficace de frag
 >
 >GraphQL est actuellement utilisé comme Cloud Service dans deux scénarios (distincts) à Adobe Experience Manager (AEM) :
 >
->* [AEM Commerce utilise les données d&#39;une plateforme commerciale via GraphQL](/help/commerce-cloud/architecture/magento.md).
+>* [AEM Commerce utilise les données d&#39;une plateforme Commerce via GraphQL](/help/commerce-cloud/architecture/magento.md).
 >* AEM Fragments de contenu fonctionnent conjointement avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard), pour fournir du contenu structuré à utiliser dans vos applications.
 
 
@@ -167,30 +167,10 @@ Des configurations supplémentaires sont requises :
 * URL Vanity :
    * Pour allouer une URL simplifiée pour le point d’entrée
    * Facultatif
-* Configuration OSGi :
-   * Configuration de la servlet GraphQL :
-      * Gère les requêtes au point d’entrée
-      * Le nom de la configuration est `org.apache.sling.graphql.core.GraphQLServlet`. Il doit être fourni en tant que configuration OSGi d’usine.
-      * `sling.servlet.extensions` doit être défini sur `[json]`
-      * `sling.servlet.methods` doit être défini sur `[GET,POST]`
-      * `sling.servlet.resourceTypes` doit être défini sur `[graphql/sites/components/endpoint]`
-      * Obligatoire
-   * Configuration de la servlet Schéma :
-      * Crée le schéma GraphQL
-      * Le nom de la configuration est `com.adobe.aem.graphql.sites.adapters.SlingSchemaServlet`. Il doit être fourni en tant que configuration OSGi d’usine.
-      * `sling.servlet.extensions` doit être défini sur `[GQLschema]`
-      * `sling.servlet.methods` doit être défini sur `[GET]`
-      * `sling.servlet.resourceTypes` doit être défini sur `[graphql/sites/components/endpoint]`
-      * Obligatoire
-   * Configuration CSRF :
-      * Protection de sécurité du point d’entrée
-      * Le nom de la configuration est `com.adobe.granite.csrf.impl.CSRFFilter`
-      * Ajoutez `/content/cq:graphql/global/endpoint` à la liste existante des chemins exclus (`filter.excluded.paths`)
-      * Obligatoire
 
 ### Packages de prise en charge {#supporting-packages}
 
-Pour simplifier la configuration d’un point d’entrée GraphQL, Adobe fournit le package [Exemple de projet GraphQL](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-sample.zip).
+Pour simplifier la configuration d&#39;un point de terminaison GraphQL, Adobe fournit le package [Exemple de projet GraphQL (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphql-sample1.zip).
 
 Cette archive contient à la fois [la configuration supplémentaire requise](#additional-configurations-graphql-endpoint) et [le point d’entrée GraphQL](#enabling-graphql-endpoint). Si ce package est installé sur une instance AEM ordinaire, il expose un point d’entrée GraphQL entièrement fonctionnel sur `/content/cq:graphql/global/endpoint`.
 
@@ -218,7 +198,7 @@ Vous disposez de fonctionnalités telles que la mise en surbrillance de la synta
 
 ### Installation de l’interface AEM GraphiQL {#installing-graphiql-interface}
 
-L’interface utilisateur de GraphiQL peut être installée sur AEM avec un package dédié : [GraphiQL Content Package v0.0.4](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-0.0.4.zip).
+L&#39;interface utilisateur de GraphiQL peut être installée sur AEM avec un package dédié : le package [GraphiQL Content Package v0.0.6 (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip).
 
 <!--
 See the package **README** for full details; including full details of how it can be installed on an AEM instance - in a variety of scenarios.
@@ -273,6 +253,14 @@ Par exemple, si un utilisateur a créé un modèle de fragment de contenu nommé
 
 Dans GraphQL pour AEM, le schéma est flexible. Cela signifie qu’il est généré automatiquement à chaque fois qu’un modèle de fragment de contenu est créé, mis à jour ou supprimé. Les caches de schémas de données sont également actualisés lorsque vous mettez à jour un modèle de fragment de contenu.
 
+<!--
+>[!NOTE]
+>
+>AEM does not use the concept of namespacing for Content Fragment Models. 
+>
+>If required, you can edit the **[GraphQL](/help/assets/content-fragments/content-fragments-models.md#content-fragment-model-properties)** properties of a Model to assign specific names.
+-->
+
 Le service Sites GraphQL écoute (en arrière-plan) toutes les modifications apportées à un modèle de fragment de contenu. Lorsque des mises à jour sont détectées, seule cette partie du schéma est régénérée. Cette optimisation permet de gagner du temps et de garantir la stabilité.
 
 Par exemple, si vous :
@@ -292,6 +280,16 @@ Par exemple, si vous :
 >Il est important de le noter si vous souhaitez effectuer des mises à jour en bloc sur les modèles de fragments de contenu via l’API REST, ou autrement.
 
 Le schéma est desservi par le même point d’entrée que les requêtes GraphQL, le client gérant le fait que le schéma est appelé avec l’extension `GQLschema`. Par exemple, l’exécution d’une requête `GET` simple sur `/content/cq:graphql/global/endpoint.GQLschema` entraîne la sortie du schéma avec le type de contenu : `text/x-graphql-schema;charset=iso-8859-1`.
+
+### Génération de schéma - Modèles non publiés {#schema-generation-unpublished-models}
+
+Lorsque des fragments de contenu sont imbriqués, il se peut qu’un modèle de fragment de contenu parent soit publié, mais pas un modèle référencé.
+
+>[!NOTE]
+>
+>L’interface utilisateur AEM empêche cela, mais si la publication est effectuée par programmation ou avec des packages de contenu, elle peut se produire.
+
+Dans ce cas, AEM génère un Schéma *incomplet* pour le modèle de fragment de contenu parent. Cela signifie que la référence au fragment, qui dépend du modèle non publié, est supprimée du schéma.
 
 ## Champs {#fields}
 
@@ -313,8 +311,8 @@ GraphQL pour AEM prend en charge une liste de types. Tous les types de données 
 
 | Modèle de fragment de contenu – Type de données | Type GraphQL | Description |
 |--- |--- |--- |
-| Une seule ligne de texte | Chaîne, [Chaîne] |  Utilisé pour les chaînes simples telles que les noms d’auteurs, les noms d’emplacements, etc.. |
-| Plusieurs lignes de texte | Chaîne |  Utilisé pour générer du texte, tel que le corps d’un article |
+| Texte sur une seule ligne | Chaîne, [Chaîne] |  Utilisé pour les chaînes simples telles que les noms d’auteurs, les noms d’emplacements, etc.. |
+| Texte multiligne | Chaîne |  Utilisé pour générer du texte, tel que le corps d’un article |
 | Nombre |  Flottant, [Flottant] | Utilisé pour afficher le nombre à virgule flottante et les nombres réguliers |
 | Booléen |  Booléen |  Utilisé pour afficher les cases à cocher → simples instructions vrai/faux |
 | Date et heure | Calendrier |  Utilisé pour afficher la date et l’heure au format ISO 8086 |
@@ -517,13 +515,73 @@ query {
 
 Pour accéder à d’autres exemples, voir :
 
-* détails des [extensions GraphQL pour AEM](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-extensions)
+* détails des [extensions GraphQL pour AEM](#graphql-extensions)
 
 * [Modèles de requêtes utilisant ce modèle de contenu et de structure](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries-sample-content-fragment-structure)
 
    * Et [Modèle de contenu et de structure](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql) préparé pour une utilisation dans des modèles de requêtes
 
 * [Modèles de requêtes basées sur le projet WKND](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
+
+## GraphQL pour AEM - Résumé des extensions {#graphql-extensions}
+
+Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la spécification GraphQL standard. Pour les requêtes GraphQL avec AEM, il existe quelques extensions :
+
+* Si vous avez besoin d’un seul résultat :
+   * Utilisez le nom du modèle ; p. ex. city.
+
+* Si vous prévoyez une liste de résultats :
+   * Ajoutez `List` au nom du modèle ; par exemple, `cityList`
+   * Voir [Exemple de requête – Toutes les informations sur toutes les villes ](#sample-all-information-all-cities)
+
+* Si vous souhaitez utiliser un OU logique :
+   * Utilisez ` _logOp: OR`
+   * Voir [Exemple de requête – Toutes les personnes qui portent le nom « Jobs » ou « Smith »](#sample-all-persons-jobs-smith)
+
+* L’opérateur logique ET existe également, mais est (souvent) implicite
+
+* Vous pouvez appliquer des requêtes aux noms de champ qui correspondent aux champs du modèle de fragment de contenu.
+   * Voir [Exemple de requête – Détails complets relatifs au PDG et aux employés d’une entreprise ](#sample-full-details-company-ceos-employees)
+
+* Outre les champs de votre modèle, il existe certains champs générés par le système (précédés d’un trait de soulignement) :
+
+   * Pour le contenu :
+
+      * `_locale` : pour afficher la langue ; basé sur Language Manager
+         * Voir [Exemple de requête pour plusieurs fragments de contenu d’un paramètre régional donné ](#sample-wknd-multiple-fragments-given-locale)
+      * `_metadata` : pour afficher les métadonnées de votre fragment
+         * Voir [Modèle de recherche de métadonnées – Répertorier les métadonnées des prix intitulés GB](#sample-metadata-awards-gb)
+      * `_model` : autoriser l’interrogation d’un modèle de fragment de contenu (chemin et titre)
+         * Voir [Exemple de requête pour un modèle de fragment de contenu à partir d’un modèle](#sample-wknd-content-fragment-model-from-model)
+      * `_path` : chemin d’accès à votre fragment de contenu dans le référentiel
+         * Voir [Exemple de requête – Un fragment de ville unique et spécifique](#sample-single-specific-city-fragment)
+      * `_reference` : pour afficher les références ; y compris les références intégrées dans l’éditeur de texte enrichi
+         * Voir [Exemple de requête pour plusieurs fragments de contenu avec des références préalablement récupérées ](#sample-wknd-multiple-fragments-prefetched-references)
+      * `_variation` : pour afficher des variantes spécifiques dans votre fragment de contenu
+         * Voir [Exemple de requête – Toutes les villes avec une variante nommée](#sample-cities-named-variation)
+   * Et les opérations :
+
+      * `_operator` : pour appliquer des opérateurs spécifiques ; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`,, `STARTS_WITH`
+         * Voir [Exemple de requête – Toutes les personnes qui ne portent pas le nom « Jobs »](#sample-all-persons-not-jobs)
+         * Voir [Exemple de Requête - Toutes les aventures où `_path` début avec un préfixe spécifique](#sample-wknd-all-adventures-cycling-path-filter)
+      * `_apply` : pour appliquer des conditions spécifiques ; par exemple `AT_LEAST_ONCE`
+         * Voir [Exemple de requête : effectuer un filtrage sur un tableau avec un élément qui doit se produire au moins une fois ](#sample-array-item-occur-at-least-once)
+      * `_ignoreCase` : pour ignorer la casse lors de l’application de la requête
+         * Voir [Exemple de requête : toutes les villes dont le nom contient SAN, indépendamment de la casse ](#sample-all-cities-san-ignore-case)
+
+
+
+
+
+
+
+
+
+
+* Les types d’union GraphQL sont pris en charge :
+
+   * Utilisez `... on`
+      * Voir [Exemple de requête pour un fragment de contenu d’un modèle spécifique avec une référence de contenu ](#sample-wknd-fragment-specific-model-content-reference)
 
 <!--
 ## Persisted Queries (Caching) {#persisted-queries-caching}
