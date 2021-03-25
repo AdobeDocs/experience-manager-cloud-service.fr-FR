@@ -2,10 +2,10 @@
 title: Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes
 description: Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes.
 translation-type: tm+mt
-source-git-commit: 482e98e36d9e26aed31fc95fbb66a5168af49cf1
+source-git-commit: b50bef1fd94396e9b9089933744a95f3f7d389f8
 workflow-type: tm+mt
-source-wordcount: '1741'
-ht-degree: 95%
+source-wordcount: '1396'
+ht-degree: 97%
 
 ---
 
@@ -29,65 +29,6 @@ Pour obtenir de l’aide à ce sujet, voir les éléments suivants :
 
 * Un certain nombre d’[exemples de requêtes GraphQL](#graphql-sample-queries), basés sur l’exemple de structure de fragments de contenu (modèles de fragments de contenu et fragments de contenu associés).
 
-## GraphQL pour AEM - Résumé des extensions {#graphql-extensions}
-
-Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la spécification GraphQL standard. Pour les requêtes GraphQL avec AEM, il existe quelques extensions :
-
-* Si vous avez besoin d’un seul résultat :
-   * Utilisez le nom du modèle ; p. ex. city.
-
-* Si vous prévoyez une liste de résultats :
-   * Ajoutez `List` au nom du modèle ; par exemple, `cityList`
-   * Voir [Exemple de requête – Toutes les informations sur toutes les villes ](#sample-all-information-all-cities)
-
-* Si vous souhaitez utiliser un OU logique :
-   * Utilisez ` _logOp: OR`
-   * Voir [Exemple de requête – Toutes les personnes qui portent le nom « Jobs » ou « Smith »](#sample-all-persons-jobs-smith)
-
-* L’opérateur logique ET existe également, mais est (souvent) implicite
-
-* Vous pouvez appliquer des requêtes aux noms de champ qui correspondent aux champs du modèle de fragment de contenu.
-   * Voir [Exemple de requête – Détails complets relatifs au PDG et aux employés d’une entreprise ](#sample-full-details-company-ceos-employees)
-
-* Outre les champs de votre modèle, il existe certains champs générés par le système (précédés d’un trait de soulignement) :
-
-   * Pour le contenu :
-
-      * `_locale` : pour afficher la langue ; basé sur Language Manager
-         * Voir [Exemple de requête pour plusieurs fragments de contenu d’un paramètre régional donné ](#sample-wknd-multiple-fragments-given-locale)
-      * `_metadata` : pour afficher les métadonnées de votre fragment
-         * Voir [Modèle de recherche de métadonnées – Répertorier les métadonnées des prix intitulés GB](#sample-metadata-awards-gb)
-      * `_model` : autoriser l’interrogation d’un modèle de fragment de contenu (chemin et titre)
-         * Voir [Exemple de requête pour un modèle de fragment de contenu à partir d’un modèle](#sample-wknd-content-fragment-model-from-model)
-      * `_path` : chemin d’accès à votre fragment de contenu dans le référentiel
-         * Voir [Exemple de requête – Un fragment de ville unique et spécifique](#sample-single-specific-city-fragment)
-      * `_reference` : pour afficher les références ; y compris les références intégrées dans l’éditeur de texte enrichi
-         * Voir [Exemple de requête pour plusieurs fragments de contenu avec des références préalablement récupérées ](#sample-wknd-multiple-fragments-prefetched-references)
-      * `_variation` : pour afficher des variantes spécifiques dans votre fragment de contenu
-         * Voir [Exemple de requête – Toutes les villes avec une variante nommée](#sample-cities-named-variation)
-   * Et les opérations :
-
-      * `_operator` : pour appliquer des opérateurs spécifiques ; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`,, `STARTS_WITH`
-         * Voir [Exemple de requête – Toutes les personnes qui ne portent pas le nom « Jobs »](#sample-all-persons-not-jobs)
-         * Voir [Exemple de Requête - Toutes les aventures où `_path` début avec un préfixe spécifique](#sample-wknd-all-adventures-cycling-path-filter)
-      * `_apply` : pour appliquer des conditions spécifiques ; par exemple `AT_LEAST_ONCE`
-         * Voir [Exemple de requête : effectuer un filtrage sur un tableau avec un élément qui doit se produire au moins une fois ](#sample-array-item-occur-at-least-once)
-      * `_ignoreCase` : pour ignorer la casse lors de l’application de la requête
-         * Voir [Exemple de requête : toutes les villes dont le nom contient SAN, indépendamment de la casse ](#sample-all-cities-san-ignore-case)
-
-
-
-
-
-
-
-
-
-
-* Les types d’union GraphQL sont pris en charge :
-
-   * Utilisez `... on`
-      * Voir [Exemple de requête pour un fragment de contenu d’un modèle spécifique avec une référence de contenu ](#sample-wknd-fragment-specific-model-content-reference)
 
 ## GraphQL – Exemples de requêtes utilisant l’exemple de structure de fragment de contenu {#graphql-sample-queries-sample-content-fragment-structure}
 
