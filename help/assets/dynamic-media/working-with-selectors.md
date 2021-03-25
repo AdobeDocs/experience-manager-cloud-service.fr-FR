@@ -3,7 +3,7 @@ title: Utilisation des sélecteurs
 description: Découvrez les méthodes que vous pouvez utiliser pour sélectionner des ressources sous forme d’images interactives, de vidéos interactives et de bannières de carrousel dans Dynamic Media.
 topic: Professionnel
 translation-type: tm+mt
-source-git-commit: bd7734c0f132b660c15a7eba0a6f92042e377a63
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 52%
@@ -87,7 +87,7 @@ Utilisez le sélecteur de site pour choisir une page Web lorsque vous souhaitez 
 
 Utilisez ce sélecteur pour sélectionner les images à utiliser dans une bannière de carrousel, une vidéo interactive, des visionneuses d’images, de contenus multimédia variés et à 360°. Dans la vidéo interactive, le sélecteur de ressources est disponible lorsque vous tapez sur **[!UICONTROL Sélectionner des ressources]** dans l’onglet **[!UICONTROL Contenu]**. Dans les visionneuses de carrousel, le sélecteur de ressources est disponible lorsque vous créez une diapositive. Dans les visionneuses d’images, les visionneuses de supports variés et les visionneuses à 360°, le sélecteur de ressources est disponible lorsque vous créez une visionneuse d’images, une visionneuse de supports variés ou une visionneuse à 360°, respectivement.
 
-Reportez-vous également à la section [Sélecteur de ressources](/help/assets/search-assets.md#assetselector) pour plus d’informations.
+Reportez-vous également à la section [Sélecteur de ressources](/help/assets/search-assets.md#asset-selector) pour plus d’informations.
 
 1. Accédez à la visionneuse de carrousel et créez une diapositive. Ou, accédez à la vidéo interactive, ouvrez l’onglet **[!UICONTROL Contenu]**, puis sélectionnez des fichiers. Vous pouvez également créer des visionneuses de contenu multimédia varié, d’images ou à 360°.
 1. Tapez sur l’icône **[!UICONTROL Sélecteur de ressources]** (dossier avec loupe) et accédez à une ressource.
