@@ -2,7 +2,7 @@
 title: Conseils de développement pour AEM as a Cloud Service
 description: Conseils de développement pour AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: ce797518714a4919bcdb6187aeaaf35dd1cb76b4
+source-git-commit: e70135d7f59fc46c24f73f109d027f3536ffbbd7
 workflow-type: tm+mt
 source-wordcount: '2283'
 ht-degree: 96%
@@ -161,7 +161,6 @@ Comme illustré ci-dessous, les développeurs peuvent résoudre les dépendances
 ![Console de développement 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
 Pour les programmes de production, l’accès à la Console développeur est défini par &quot;Cloud Manager - Developer Role&quot; dans le Admin Console, tandis que pour les programmes de sandbox, la Console développeur est disponible pour tout utilisateur disposant d’un profil de produit qui lui permet d’accéder à AEM en tant que Cloud Service. Pour tous les programmes, « Cloud Manager – Rôle de développeur » est nécessaire pour les vidages d’état. Les utilisateurs doivent également être définis dans le profil de produit Utilisateurs d’AEM ou Administrateurs d’AEM sur les services de création et de publication afin d’afficher les données de vidage d’état des deux services. Pour plus d’informations sur la configuration des autorisations des utilisateurs, voir [Documentation de Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
-
 
 ### Service de test et de production AEM {#aem-staging-and-production-service}
 
