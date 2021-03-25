@@ -3,10 +3,10 @@ title: Utilisation des ressources connectées pour partager des ressources DAM d
 description: Utilisez des ressources disponibles pour un déploiement [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] à distance.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f3c02cc79d5d56b67224761efd6a70ae597fe7fe
+source-git-commit: 0f42ba52f8e9f593e95fc4187c6461a660ff696d
 workflow-type: tm+mt
-source-wordcount: '2707'
-ht-degree: 98%
+source-wordcount: '2898'
+ht-degree: 92%
 
 ---
 
@@ -40,7 +40,7 @@ Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points 
 
 Les auteurs recherchent des images et les types de documents suivants dans l’outil de recherche de contenu et utiliser les ressources recherchées dans l’éditeur de page. Les documents sont ajoutés au composant `Download` et les images au composant `Image`. Les auteurs ajoutent également les ressources distantes d’un composant [!DNL Experience Manager] personnalisé qui étend les composants par défaut `Download` ou `Image`. Les formats pris en charge sont les suivants :
 
-* **Formats d’image** : les formats pris en charge par le composant [Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=fr). Les images [!DNL Dynamic Media] ne sont pas prises en charge.
+* **Formats d’image** : les formats pris en charge par le composant [Image.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=fr)
 * **Formats de document** : voir les [formats de document pris en charge](file-format-support.md#document-formats).
 
 ### Utilisateurs et groupes concernés {#users-and-groups-involved}
@@ -111,6 +111,23 @@ Vous pouvez vérifier la connectivité entre les déploiements [!DNL Sites] et l
 ![Test de connexion des ressources connectées configurées [!DNL Sites]](assets/connected-assets-multiple-config.png)
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
+
+## Configurez une connexion entre les déploiements [!DNL Sites] et [!DNL Dynamic Media] {#sites-dynamic-media-connected-assets}
+
+Vous pouvez configurer une connexion entre le déploiement [!DNL Sites] et le déploiement [!DNL Dynamic Media] afin que les auteurs de pages Web puissent utiliser des images [!DNL Dynamic Media] dans leurs pages Web. Lors de la création de pages Web, l&#39;utilisation des ressources distantes et des déploiements [!DNL Dynamic Media] distants reste la même. Cela vous permet d’exploiter la fonctionnalité [!DNL Dynamic Media] via la fonction Ressources connectées, par exemple les paramètres prédéfinis de recadrage intelligent et d’image.
+
+Pour configurer cette connexion, procédez comme suit.
+
+1. Créez la configuration des ressources connectées comme décrit ci-dessus. Cochez la case **[!UICONTROL Récupérer le rendu d’origine pour [!DNL Dynamic Media] Fichiers connectés]** dans la boîte de dialogue.
+
+1. Configurez [!DNL Dynamic Media] sur les déploiements locaux [!DNL Sites] et distants [!DNL Assets]. Suivez les instructions pour [configurer [!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html#configuring-dynamic-media-cloud-services).
+
+   * Utilisez le même nom de société dans toutes les configurations.
+   * Sur le [!DNL Sites] local, en [!UICONTROL mode de synchronisation Dynamic Media], sélectionnez **[!UICONTROL Désactivé par défaut]**. Le déploiement des sites n&#39;a besoin que d&#39;un accès en lecture seule au compte [!DNL Dynamic Media].
+   * Sur [!DNL Sites] local, dans l’option **[!UICONTROL Publier les ressources]**, sélectionnez **[!UICONTROL Publication sélective]**. Ne sélectionnez pas **[!UICONTROL Synchroniser tout le contenu]**.
+   * Dans le déploiement [!DNL Assets] distant, en [!UICONTROL mode de synchronisation Dynamic Media], sélectionnez **[!UICONTROL Activé par défaut]**.
+
+1. Activez [[!DNL Dynamic Media] la prise en charge dans le composant Image Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Cette fonctionnalité permet au composant Image par défaut d’afficher des images [!DNL Dynamic Media] lorsque des images [!DNL Dynamic Media] sont utilisées par les auteurs dans des pages Web lors d’un déploiement local [!DNL Sites].
 
 ## Utilisation des ressources distantes {#use-remote-assets}
 
@@ -184,7 +201,7 @@ Pour afficher et gérer les références du déploiement [!DNL Assets], procéde
 * Les ressources locales ne sont pas synchronisées avec les ressources d’origine sur le déploiement distant. Tout retrait, modification ou suppression d’autorisation sur le déploiement DAM n’est pas propagé en aval.
 * Les ressources locales sont des copies en lecture seule. Les composants [!DNL Experience Manager] effectuent des modifications non destructives des ressources. Aucune autre modification n’est autorisée.
 * Les ressources récupérées localement sont disponibles à des fins d’écriture uniquement. Les workflows de mise à jour de ressources ne peuvent pas être appliqués et les métadonnées ne peuvent pas être modifiées.
-* Seules les images et les formats de document répertoriés sont pris en charge. Les ressources [!DNL Dynamic Media], ainsi que les fragments de contenu et d’expérience, ne sont pas pris en charge.
+* Seules les images et les formats de document répertoriés sont pris en charge. Les fragments de contenu et les fragments d’expérience ne sont pas pris en charge.
 * [!DNL Experience Manager] ne récupère pas les schémas de métadonnées. Il n’est donc pas possible d’afficher toutes les métadonnées extraites. Si le schéma est mis à jour séparément, toutes les propriétés sont affichées.
 * Tous les auteurs [!DNL Sites] disposent de droits d’accès en lecture sur les copies récupérées, même s’ils n’en ont pas sur le déploiement DAM distant.
 * Il n’existe aucune prise en charge API pour personnaliser l’intégration.
