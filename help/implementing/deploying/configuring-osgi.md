@@ -3,10 +3,10 @@ title: Configuration d’OSGi pour Adobe Experience Manager en tant que Cloud Se
 description: 'Configuration d’OSGi à l’aide de valeurs secrètes et spécifiques aux environnements '
 feature: Déploiement
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: a91743ba97f9b18c7f67208e7f1dcd873a3bbd65
 workflow-type: tm+mt
-source-wordcount: '2730'
-ht-degree: 60%
+source-wordcount: '2737'
+ht-degree: 59%
 
 ---
 
@@ -113,7 +113,7 @@ Les valeurs de configuration intégrées sont considérées comme l’approche s
 * Les valeurs sont implicitement liées aux déploiements de code.
 * Elles ne nécessitent aucune autre considération ni coordination de déploiement.
 
-Chaque fois que vous définissez une valeur de configuration OSGi, début avec des valeurs insérées, n&#39;importe quel utilisateur sélectionne que les configurations secrètes ou spécifiques à un environnement si nécessaire pour le cas d&#39;utilisation.
+Chaque fois que vous définissez une valeur de configuration OSGi, début avec des valeurs insérées et sélectionnez uniquement des configurations secrètes ou spécifiques à un environnement si nécessaire pour le cas d&#39;utilisation.
 
 ### Cas d’utilisation de valeurs de configuration non secrètes spécifiques à un environnement {#when-to-use-non-secret-environment-specific-configuration-values}
 
@@ -194,6 +194,10 @@ use $[env:ENV_VAR_NAME]
 ```
 
 Les clients ne doivent utiliser cette technique que pour les propriétés de configuration OSGI liées à leur code personnalisé ; il ne doit pas être utilisé pour remplacer la configuration OSGI définie par Adobe.
+
+>[!NOTE]
+>
+>Les espaces réservés ne peuvent pas être utilisés dans les [instructions de redirection](/help/implementing/deploying/overview.md#repoinit).
 
 ### Valeurs de configuration secrètes {#secret-configuration-values}
 
