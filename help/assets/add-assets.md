@@ -2,10 +2,10 @@
 title: Ajout de vos ressources numériques à [!DNL Adobe Experience Manager].
 description: Ajoutez vos ressources numériques à [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
+source-git-commit: a81fe4a2c7d3c4e0471a961fb51249ac03f27e9c
 workflow-type: tm+mt
-source-wordcount: '1950'
-ht-degree: 99%
+source-wordcount: '2017'
+ht-degree: 95%
 
 ---
 
@@ -174,8 +174,20 @@ Procédez de la manière suivante pour configurer l’outil :
    * [!UICONTROL Exécution à vide] : appelez une série de tests de l’ingestion en masse.
    * [!UICONTROL Exécuter] : exécutez la configuration sélectionnée.
    * [!UICONTROL Arrêter] : terminez une configuration active.
+   * [!UICONTROL Planification] : Définissez une planification ponctuelle ou périodique pour assimiler des ressources.
    * [!UICONTROL État de la tâche] : afficher l’état de la configuration lorsqu’elle est utilisée dans une tâche d’importation en cours ou pour une tâche terminée.
+   * [!UICONTROL Historique] des tâches : Instances précédentes de la tâche.
    * [!UICONTROL Afficher les ressources] : afficher le dossier cible s’il existe.
+
+   ![Options de la barre d’outils pour les configurations d’assimilation](assets/bulk-ingest-toolbar-options.png)
+
+Pour planifier une importation en vrac unique ou périodique, procédez comme suit :
+
+1. Créez une configuration d’importation en bloc.
+1. Sélectionnez la configuration et **[!UICONTROL Planification]** dans la barre d’outils.
+1. Définissez une ingestion ponctuelle ou planifiez une planification horaire, quotidienne ou hebdomadaire. Cliquez sur **[!UICONTROL Envoyer]**.
+
+   ![Planification de la tâche d&#39;assimilateur en vrac](assets/bulk-ingest-schedule1.png)
 
 ## Chargement de ressources à l’aide de clients pour ordinateur de bureau {#upload-assets-desktop-clients}
 
