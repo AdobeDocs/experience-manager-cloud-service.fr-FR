@@ -4,7 +4,7 @@ description: Découvrez les types de métadonnées ainsi que l’organisation et
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
 source-wordcount: '1854'
 ht-degree: 98%
@@ -116,7 +116,7 @@ Enterprise Manager Assets vous permet de modifier les métadonnées de plusieu
 
 >[!NOTE]
 >
->Les méthodes de modification en masse fonctionnent pour les ressources disponibles dans un dossier ou une collection. Pour les ressources disponibles dans plusieurs dossiers ou correspondant à un critère commun, il est possible de mettre à jour [les métadonnées en masse après une recherche](/help/assets/search-assets.md#metadataupdates).
+>Les méthodes de modification en masse fonctionnent pour les ressources disponibles dans un dossier ou une collection. Pour les ressources disponibles dans plusieurs dossiers ou correspondant à un critère commun, il est possible de mettre à jour [les métadonnées en masse après une recherche](/help/assets/search-assets.md#metadata-updates).
 
 1. Accédez à l’emplacement des ressources que vous souhaitez modifier.
 1. Sélectionnez les ressources dont vous souhaitez modifier les propriétés communes.
