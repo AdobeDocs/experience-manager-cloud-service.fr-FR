@@ -2,10 +2,10 @@
 title: Variations – création de contenu de fragment
 description: Les variations permettent de créer du contenu pour le fragment, puis de créer des variations de ce contenu selon l’objectif recherché (si nécessaire).
 translation-type: tm+mt
-source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
+source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
 workflow-type: tm+mt
-source-wordcount: '2186'
-ht-degree: 100%
+source-wordcount: '2236'
+ht-degree: 95%
 
 ---
 
@@ -41,6 +41,9 @@ effectuer diverses autres actions selon le type de données que vous modifiez, p
 
 Lorsque vous ouvrez votre fragment de contenu pour le modifier, l’onglet **Variations** est ouvert par défaut. Vous pouvez y saisir le contenu, pour le maître ou toutes les variations de votre choix. Le fragment structuré contient différents champs, avec divers types de données, qui ont été définis dans le modèle de contenu.
 
+Par exemple :
+
+![éditeur plein écran](assets/cfm-variations-02.png)
 Vous pouvez :
 
 * effectuer des modifications directement dans l’onglet **Variations**.
@@ -53,9 +56,7 @@ Vous pouvez :
    * voir davantage d’options de modification (pour le format [Texte enrichi](#rich-text)) ;
    * accéder à un éventail d’[actions](#actions).
 
-Par exemple :
-
-![éditeur plein écran](assets/cfm-variations-02.png)
+* Pour les champs **Référence du fragment**, l&#39;option **[Modifier le fragment de contenu](#fragment-references-edit-content-fragment)** peut être disponible, selon la définition du modèle.
 
 ### Éditeur plein écran {#full-screen-editor}
 
@@ -164,8 +165,11 @@ Si le modèle de fragment de contenu contient des références à un fragment, l
 
 #### Modifier le fragment de contenu {#fragment-references-edit-content-fragment}
 
-L’option **Modifier le fragment de contenu** ouvre
-un nouvel onglet de navigateur et le fragment de contenu est ouvert dans l’éditeur de fragments de contenu.
+L’option **Modifier le fragment de contenu** ouvre ce fragment dans un nouvel onglet d’éditeur (dans le même onglet de navigateur).
+
+Si vous sélectionnez à nouveau l’onglet d’origine (par exemple, **Little Pony Inc.**), cet onglet secondaire sera fermé (dans ce cas, **Adam Smith**).
+
+![Références à un fragment](assets/cfm-variations-editreference.png)
 
 #### Nouveau fragment du contenu {#fragment-references-new-content-fragment}
 
@@ -210,13 +214,12 @@ Le résumé de texte est conçu pour aider les utilisateurs à réduire la longu
 >  `/content/dam/my-brand/en/path-down/my-content-fragment`
 
 >[!CAUTION]
->
->L’anglais est disponible par défaut.
->D’autres langues sont disponibles en tant que modules de modèle de langues dans Package Share :
->* [Français (fr)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Allemand (de)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italien (it)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Espagnol (es)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
+L’anglais est disponible par défaut.
+D’autres langues sont disponibles en tant que modules de modèle de langues dans Package Share :
+* [Français (fr)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
+* [Allemand (de)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
+* [Italien (it)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
+* [Espagnol (es)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
 
 
 
@@ -241,6 +244,8 @@ Le résumé de texte est conçu pour aider les utilisateurs à réduire la longu
    * Toutes les phrases à éliminer sont biffées en rouge.
    * Cliquez sur n’importe quelle phrase en surbrillance pour la conserver dans le contenu résumé.
    * Cliquez sur n’importe quelle phrase qui ne figure pas en surbrillance pour l’éliminer.
+   * Les statistiques de synthèse sont présentées : **Réel** et **Cible**-
+   * Vous pouvez **Prévisualisation** les modifications.
 
    ![comparaison des résumés](assets/cfm-variations-06.png)
 
@@ -283,8 +288,7 @@ Les annotations :
 * Sont mise en surbrillance sur le texte, en mode plein écran et en mode normal de l’éditeur. Les détails complets d’une annotation peuvent être affichés, modifiés et/ou supprimés en cliquant sur le texte mis en surbrillance, ce qui rouvre la boîte de dialogue.
 
    >[!NOTE]
-   >
-   >Un sélecteur en liste déroulante est fourni si plusieurs annotations ont été appliquées à une partie du texte.
+   Un sélecteur en liste déroulante est fourni si plusieurs annotations ont été appliquées à une partie du texte.
 
 * Lorsque vous supprimez tout le texte auquel l’annotation a été appliquée, cette dernière est également supprimée.
 
@@ -301,13 +305,11 @@ Pour simplifier le processus de création de fragments de contenu, vous pouvez a
 Elles seront ajoutées à la séquence de paragraphes du fragment sans aucune mise en forme ; la mise en forme peut être effectuée lorsque le [fragment est utilisé/référencé sur une page](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!CAUTION]
->
->Ces ressources ne peuvent pas être déplacées ni supprimées sur une page de référence ; ce type d’opération doit être effectué dans l’éditeur de fragment.
->Toutefois, la mise en forme de la ressource (par exemple, sa taille) doit être effectuée dans l’[éditeur de page](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La représentation de la ressource dans l’éditeur de fragment est uniquement destinée à la création du flux de contenu.
+Ces ressources ne peuvent pas être déplacées ni supprimées sur une page de référence ; ce type d’opération doit être effectué dans l’éditeur de fragment.
+Toutefois, la mise en forme de la ressource (par exemple, sa taille) doit être effectuée dans l’[éditeur de page](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La représentation de la ressource dans l’éditeur de fragment est uniquement destinée à la création du flux de contenu.
 
 >[!NOTE]
->
->Il existe différentes méthodes pour ajouter des [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
+Il existe différentes méthodes pour ajouter des [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
 
 1. Placez le curseur à l’endroit où vous souhaitez ajouter l’image.
 1. Utilisez l’icône **Insérer une ressource** pour ouvrir la boîte de dialogue de recherche.
@@ -324,10 +326,9 @@ Elles seront ajoutées à la séquence de paragraphes du fragment sans aucune mi
 1. Utilisez **Sélectionner** pour ajouter le fichier au système de paragraphes de votre fragment de contenu à l’emplacement actuel.
 
    >[!CAUTION]
-   >
-   >Si, après l’ajout d’un fichier, vous modifiez le format en :
-   >* **Texte brut** : le fichier sera complètement perdu du fragment.
-   >* **Markdown** : le fichier ne sera pas visible, mais il sera toujours présent lorsque vous reviendrez au **texte enrichi**.
+   Si, après l’ajout d’un fichier, vous modifiez le format en :
+   * **Texte brut** : le fichier sera complètement perdu du fragment.
+   * **Markdown** : le fichier ne sera pas visible, mais il sera toujours présent lorsque vous reviendrez au **texte enrichi**.
 
 
 ### Insertion d’un fragment de contenu dans votre fragment {#inserting-content-fragment-into-your-fragment}
@@ -337,17 +338,14 @@ Pour faciliter la création de fragments de contenu, vous pouvez également ajou
 Celui-ci sera ajouté en tant que référence à l’emplacement actuel dans votre fragment.
 
 >[!NOTE]
->
->Cette option est disponible lorsque l’option **Autoriser la référence de fragment** est activée pour votre champ **Plusieurs lignes de texte**.
+Cette option est disponible lorsque l’option **Autoriser la référence de fragment** est activée pour votre champ **Plusieurs lignes de texte**.
 
 >[!CAUTION]
->
->Ces ressources ne peuvent pas être déplacées ni supprimées sur une page de référence ; ce type d’opération doit être effectué dans l’éditeur de fragment.
->Toutefois, la mise en forme de la ressource (par exemple, sa taille) doit être effectuée dans l’[éditeur de page](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La représentation de la ressource dans l’éditeur de fragment est uniquement destinée à la création du flux de contenu.
+Ces ressources ne peuvent pas être déplacées ni supprimées sur une page de référence ; ce type d’opération doit être effectué dans l’éditeur de fragment.
+Toutefois, la mise en forme de la ressource (par exemple, sa taille) doit être effectuée dans l’[éditeur de page](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La représentation de la ressource dans l’éditeur de fragment est uniquement destinée à la création du flux de contenu.
 
 >[!NOTE]
->
->Il existe différentes méthodes pour ajouter des [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
+Il existe différentes méthodes pour ajouter des [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
 
 1. Placez le curseur à l’endroit où vous souhaitez ajouter le fragment.
 1. Utilisez l’icône **Insérer un fragment de contenu** pour ouvrir la boîte de dialogue de recherche.
@@ -364,10 +362,9 @@ Celui-ci sera ajouté en tant que référence à l’emplacement actuel dans vot
 1. Utilisez **Sélectionner** pour ajouter une référence au fragment de contenu sélectionné à votre fragment de contenu actuel (à l’emplacement actuel).
 
    >[!CAUTION]
-   >
-   >Si, après avoir ajouté une référence à un autre fragment, vous modifiez le format en :
-   >* **Texte brut** : la référence sera complètement effacée du fragment.
-   >* **Marquage** : la référence restera intégrée au fragment.
+   Si, après avoir ajouté une référence à un autre fragment, vous modifiez le format en :
+   * **Texte brut** : la référence sera complètement effacée du fragment.
+   * **Marquage** : la référence restera intégrée au fragment.
 
 
 ## Gestion des variations  {#managing-variations}
@@ -385,8 +382,7 @@ Pour créer une variation, procédez comme suit :
 1. Sélectionnez **Ajouter** et le **Gabarit** du fragment sera copié dans la nouvelle variation, qui est maintenant ouverte pour [modification](#editing-a-variation).
 
    >[!NOTE]
-   >
-   >Lors de la création d’une variation, c’est toujours le **Maître** qui est copié et non pas la variation ouverte.
+   Lors de la création d’une variation, c’est toujours le **Maître** qui est copié et non pas la variation ouverte.
 
 ### Modification d’une variation  {#editing-a-variation}
 
@@ -410,8 +406,7 @@ Pour renommer une variation existante :
 1. Confirmez l’action **Renommer**.
 
 >[!NOTE]
->
->Cette opération concerne uniquement le **Titre** de la variation.
+Cette opération concerne uniquement le **Titre** de la variation.
 
 ### Suppression d’une variation  {#deleting-a-variation}
 
@@ -424,21 +419,19 @@ Pour supprimer une variation existante :
 1. Confirmez l’action **Supprimer** dans la boîte de dialogue.
 
 >[!NOTE]
->
->Vous ne pouvez pas supprimer le **Maître**.
+Vous ne pouvez pas supprimer le **Maître**.
 
 ### Synchronisation avec le maître {#synchronizing-with-master}
 
-Le **Maître** fait partie intégrante d’un fragment de contenu et, par définition, il contient la copie maître du contenu, tandis que les variations contiennent les versions individuelles et personnalisées de ce contenu. Lorsque le Maître est mis à jour, il est possible que ces modifications soient également liées aux variations et qu’elles doivent, par conséquent, être appliquées à celles-ci.
+Le **Maître** fait partie intégrante d’un fragment de contenu et, par définition, il contient la copie maître du contenu, tandis que les variations contiennent les versions individuelles et personnalisées de ce contenu. Lorsque le Principal est mis à jour, il est possible que ces modifications soient également pertinentes pour les variations et, par conséquent, doivent être propagées à elles.
 
 Lors de la modification d’une variation, vous pouvez accéder à l’action de synchronisation de l’élément actuel de la variation avec le maître. Vous pouvez ainsi copier automatiquement les modifications apportées au Maître sur la variation requise.
 
 >[!CAUTION]
->
->La synchronisation n’est disponible que pour copier les modifications *du **Maître**dans la variation*.
->Seul l’élément actuel de la variation est synchronisé.
->La synchronisation fonctionne uniquement sur le type de données **Plusieurs lignes de texte**.
->Le transfert des modifications n’est pas proposé *entre une variation et le **Maître***.
+La synchronisation n’est disponible que pour copier les modifications *du **Maître**dans la variation*.
+Seul l’élément actuel de la variation est synchronisé.
+La synchronisation fonctionne uniquement sur le type de données **Plusieurs lignes de texte**.
+Le transfert des modifications n’est pas proposé *entre une variation et le **Maître***.
 
 1. Ouvrez votre fragment de contenu dans l’éditeur de fragments. Assurez-vous que le **Maître** a été modifié.
 
