@@ -2,10 +2,10 @@
 title: Modèles de fragment de contenu
 description: Les modèles de fragment de contenu sont utilisés pour créer des fragments de contenu avec du contenu structuré.
 translation-type: tm+mt
-source-git-commit: 3538c03a6a455cd22423ca5a4fd69c1fe57b3e5e
+source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
 workflow-type: tm+mt
-source-wordcount: '2156'
-ht-degree: 100%
+source-wordcount: '2177'
+ht-degree: 96%
 
 ---
 
@@ -122,7 +122,7 @@ Une sélection de types de données est disponible pour la définition de votre 
 
 ## Propriétés {#properties}
 
-De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propriétés, les détails supplémentaires sont les suivants :
+De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propriétés, les détails supplémentaires sont les suivants :
 
 * **Rendu comme**
 Les différentes options permettant de réaliser/rendre le champ dans un fragment. Il est ainsi souvent possible de définir si l’auteur verra une seule instance du champ ou s’il sera autorisé à créer plusieurs instances.
@@ -152,12 +152,10 @@ Le contenu (du champ spécifique) doit être unique dans tous les fragments de c
    Par exemple, un champ **Une seule ligne de texte** appelé `Country` dans le modèle de fragment de contenu ne peut pas avoir la valeur `Japan` dans deux fragments de contenu dépendants. Un avertissement sera émis en cas de tentative concernant la deuxième instance.
 
    >[!NOTE]
-   >
-   >L’unicité est assurée par la racine de langue.
+   L’unicité est assurée par la racine de langue.
 
    >[!NOTE]
-   >
-   >Les variations peuvent avoir la même valeur *unique* que les variations du même fragment, mais pas la même valeur que celle utilisée dans une variation d’autres fragments.
+   Les variations peuvent avoir la même valeur *unique* que les variations du même fragment, mais pas la même valeur que celle utilisée dans une variation d’autres fragments.
 
 * **Translatable**
 Cocher la case Translatable (Traduisible) d’un champ de l’éditeur de modèles des fragments de contenu entraîne les conséquences suivantes :
@@ -201,18 +199,16 @@ Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’
    * Permet d’inclure/récupérer des données structurées.
 
       >[!NOTE]
-      >
-      >Cette méthode présente un intérêt particulier en conjonction avec la [Diffusion de contenu découplé utilisant des fragments de contenu à l’aide de GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+      Cette méthode présente un intérêt particulier en conjonction avec la [Diffusion de contenu découplé utilisant des fragments de contenu à l’aide de GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
    * Peut être configurée pour une ou plusieurs références (dans le fragment résultant).
 
 >[!NOTE]
->
->AEM dispose d’une protection récurrente pour :
->* Références du contenu
->Cela empêche l’utilisateur d’ajouter une référence au fragment actif. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
+AEM dispose d’une protection récurrente pour :
+* Références du contenu
+Cela empêche l’utilisateur d’ajouter une référence au fragment actif. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
 
 * Références de fragments dans GraphQL
-Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
+Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur null à la première occurrence.
 
 
 ### Référence de contenu {#content-reference}
@@ -252,8 +248,7 @@ type CompanyModel {
 ```
 
 >[!NOTE]
->
->Cette méthode présente un intérêt particulier en conjonction avec la [Diffusion de contenu découplé utilisant des fragments de contenu à l’aide de GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+Cette méthode présente un intérêt particulier en conjonction avec la [Diffusion de contenu découplé utilisant des fragments de contenu à l’aide de GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
 Outre les propriétés standard, vous pouvez définir les éléments suivants :
 
@@ -279,9 +274,8 @@ Indique un chemin racine pour tout fragment référencé.
    ![Référence du fragment](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
->
->Un mécanisme de protection contre les répétitions est en place. Il interdit à l’utilisateur de sélectionner le fragment de contenu actif dans la référence au fragment. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
->Il existe également une protection contre les répétitions pour les références de fragments dans GraphQL. Si vous créez une requête profonde entre deux fragments de contenu qui se référencent mutuellement, elle renvoie la valeur « null ».
+Un mécanisme de protection contre les répétitions est en place. Il interdit à l’utilisateur de sélectionner le fragment de contenu actif dans la référence au fragment. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
+Il existe également une protection contre les répétitions pour les références de fragments dans GraphQL. Si vous créez une requête profonde entre deux fragments de contenu qui se référencent mutuellement, elle renvoie la valeur « null ».
 
 ## Activation ou désactivation d’un modèle de fragment de contenu {#enabling-disabling-a-content-fragment-model}
 
@@ -313,7 +307,7 @@ Un modèle peut également être désactivé afin que :
 
 * Le modèle ne soit plus disponible comme base pour la création de *nouveaux* fragments de contenu.
 * Toutefois :
-   * Le schéma GraphQL continue à être généré et peut toujours être interrogé (pour éviter tout impact sur l’API JSON).
+   * Le schéma GraphQL continue à être généré et peut toujours être interrogé (afin d’éviter d’avoir un impact sur l’API JSON).
    * Tout fragment de contenu basé sur le modèle peut toujours être interrogé et renvoyé à partir du point d’entrée GraphQL.
 * Le modèle ne peut plus être référencé, mais les références existantes sont conservées intactes et peuvent toujours être interrogées et renvoyées à partir du point d’entrée GraphQL.
 
@@ -329,8 +323,7 @@ Pour désactiver un modèle marqué comme **Activé**, utilisez l’option **Dé
 Pour mettre en œuvre une gouvernance du contenu, vous pouvez configurer des **Stratégies** sur le dossier de ressources pour contrôler les modèles de fragment de contenu autorisés pour la création de fragments dans ce dossier.
 
 >[!NOTE]
->
->Le mécanisme est similaire à [l’autorisation de modèles de page](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) pour une page et ses enfants, dans les propriétés avancées d’une page.
+Le mécanisme est similaire à [l’autorisation de modèles de page](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) pour une page et ses enfants, dans les propriétés avancées d’une page.
 
 Pour configurer les **stratégies** des **modèles de fragments de contenu autorisés** :
 
@@ -362,8 +355,7 @@ Les modèles de fragment de contenu autorisés pour un dossier sont résolus com
 ## Suppression d’un modèle de fragment de contenu {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
->
->La suppression d’un modèle de fragment de contenu peut avoir un impact sur les fragments dépendants.
+La suppression d’un modèle de fragment de contenu peut avoir un impact sur les fragments dépendants.
 
 Pour supprimer un modèle de fragment de contenu :
 
@@ -373,8 +365,7 @@ Pour supprimer un modèle de fragment de contenu :
 1. Sélectionnez votre modèle, puis utilisez l’option **de suppression** de la barre d’outils.
 
    >[!NOTE]
-   >
-   >Si le modèle est référencé, un avertissement s’affiche. Prenez alors les mesures qui s’imposent.
+   Si le modèle est référencé, un avertissement s’affiche. Prenez alors les mesures qui s’imposent.
 
 ## Publication d’un modèle de fragment de contenu  {#publishing-a-content-fragment-model}
 
@@ -389,8 +380,7 @@ Pour publier un modèle de fragment de contenu :
 L’état publié sera indiqué dans la console.
 
    >[!NOTE]
-   >
-   >Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection indique cela, ainsi que le fait que le modèle sera publié avec le fragment.
+   Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection indique cela, ainsi que le fait que le modèle sera publié avec le fragment.
 
 ## Annulation de la publication d’un modèle de fragment de contenu {#unpublishing-a-content-fragment-model}
 
@@ -403,3 +393,27 @@ Pour annuler la publication d’un modèle de fragment de contenu :
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
 1. Sélectionnez votre modèle, puis l’option **Annuler la publication** dans la barre d’outils.
 L’état publié sera indiqué dans la console.
+
+## Modèle de fragment de contenu - Propriétés {#content-fragment-model-properties}
+
+Vous pouvez modifier les **propriétés** d&#39;un modèle de fragment de contenu :
+
+* **De base**
+   * **Titre du modèle**
+   * **Balises**
+   * **Description**
+   * **Télécharger l’image**
+
+<!--
+* **GraphQL**
+  
+  >[!CAUTION]
+  >
+  >These properties are only required for [development purposes](/help/assets/content-fragments/graphql-api-content-fragments.md#schema-generation).
+  >
+  >Updating these properties can impact dependent applications.
+
+  * **API Name**
+  * **Single Query Field Name**
+  * **Multiple Query Field Name**
+-->
