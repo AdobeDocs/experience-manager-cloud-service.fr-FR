@@ -2,10 +2,10 @@
 title: Droits d'accès accordés - Ce qui est requis
 description: Droits d'accès accordés - Ce qui est requis
 translation-type: tm+mt
-source-git-commit: 4b62401fd1d0654cf758092176bd815a7fa56159
+source-git-commit: 8259bf4e7f2004d76fd985ec7ad7c416b6f8d491
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 51%
+source-wordcount: '576'
+ht-degree: 50%
 
 ---
 
@@ -41,8 +41,6 @@ Une fois qu’Adobe a créé une organisation pour votre entreprise, l’adminis
 
 Avec ces droits, votre administrateur dispose maintenant d’une authentification unique (à l’aide de l’Adobe ID) pour accéder aux services [!UICONTROL Experience Cloud], se connecter à vos environnements cloud AEM et utiliser [!UICONTROL Cloud Manager].
 
-## Utilisateurs et rôles {#users-roles}
-
 La plupart des fonctionnalités de [!UICONTROL Cloud Manager] nécessitent des autorisations spécifiques.
 
 [!UICONTROL Cloud Manager] définit actuellement quatre rôles pour les utilisateurs qui régissent la disponibilité de fonctionnalités spécifiques :
@@ -53,7 +51,6 @@ La plupart des fonctionnalités de [!UICONTROL Cloud Manager] nécessitent des a
 * Développeur
 
 >[!CAUTION]
->
 >Pour utiliser [!UICONTROL Cloud Manager], vous devez disposer d’une Adobe ID et du Adobe Experience Manager en tant que contexte de produit Cloud Service.
 
 ### Définitions de rôle {#role-definitions}
