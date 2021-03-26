@@ -2,7 +2,7 @@
 title: Modifications notables apportées à [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]
 description: Modifications notables apportées à [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] par rapport à [!DNL Adobe Experience Manager 6.5].
 translation-type: tm+mt
-source-git-commit: 201abba4352362b1bb97b6a25bd84f95e8ed8483
+source-git-commit: ab8cc0e3d685b5aba29e3320453ed7789f53083a
 workflow-type: tm+mt
 source-wordcount: '757'
 ht-degree: 57%
@@ -56,7 +56,7 @@ Pour effectuer une validation de bout en bout du code et du processus, y compris
 | Détection du type MIME | Pas de prise en charge. | Si vous téléchargez un fichier numérique sans extension ou avec une extension incorrecte, il se peut qu’il ne soit pas traité comme vous le souhaitez. Les utilisateurs peuvent toujours stocker les fichiers binaires sans extension dans la gestion des actifs numériques. Voir [détection de type MIME dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
 | Génération de sous-ressources pour les ressources composées | Pas de prise en charge. | Les cas d&#39;utilisation à charge ne sont pas satisfaits. Par exemple, l’annotation des fichiers PDF de plusieurs pages est affectée. Voir [création de sous-ressources dans  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
 | Page d&#39;accueil | Pas de prise en charge. | Voir [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
-| Extraction de fichiers de l’archive ZIP | Pas de prise en charge. | Voir [extraction ZIP dans  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip). |
+| Extraction de fichiers de l’archive ZIP | Pas de prise en charge. | Voir [extraction ZIP dans  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | IU classique | Pas de prise en charge. | Seule l’interface utilisateur tactile est disponible. |
 
 >[!MORELIKETHIS]
