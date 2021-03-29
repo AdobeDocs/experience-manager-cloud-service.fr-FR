@@ -1,11 +1,11 @@
 ---
 title: Prise en charge des fragments de contenu d’Adobe Experience Manager as a Cloud Service dans l’API Assets HTTP
-description: Découvrez la prise en charge des fragments de contenu Adobe Experience Manager as a Cloud Service dans l’API HTTP Assets.
+description: Découvrez la prise en charge des fragments de contenu dans l’API HTTP Ressources, une partie importante de la fonction de diffusion sans tête AEM.
 translation-type: tm+mt
-source-git-commit: 8563a87bdfc251166590210993b7d9e4cbdee385
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '1931'
-ht-degree: 100%
+source-wordcount: '1953'
+ht-degree: 98%
 
 ---
 
@@ -14,14 +14,18 @@ ht-degree: 100%
 
 ## Présentation {#overview}
 
+Découvrez la prise en charge des fragments de contenu dans l’API HTTP Ressources, une partie importante de la fonction de diffusion sans tête AEM.
+
 >[!NOTE]
 >
 >L’[API HTTP AEM Assets](/help/assets/mac-api-assets.md) englobe :
 >
 >* l’API REST Assets,
 >* y compris la prise en charge des fragments de contenu
+
 >
->L’implémentation actuelle de l’API HTTP Assets est basée sur le style architectural [REST](https://fr.wikipedia.org/wiki/Representational_state_transfer).
+>
+L’implémentation actuelle de l’API HTTP Assets est basée sur le style architectural [REST](https://fr.wikipedia.org/wiki/Representational_state_transfer).
 
 L’[API REST Assets](/help/assets/mac-api-assets.md) permet aux développeurs d’Adobe Experience Manager as a Cloud Service d’accéder au contenu (stocké dans AEM) directement via l’API HTTP, via des opérations CRUD (création, lecture, mise à jour et suppression).
 
@@ -63,7 +67,6 @@ Elle utilise le point d’entrée `/api/assets` et requiert le chemin d’accès
 Par exemple, pour accéder à `/content/dam/wknd/en/adventures/cycling-tuscany`, demandez `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 >[!NOTE]
->
 >Accès via :
 >
 >* `/api/assets` **ne nécessite pas** l’utilisation du sélecteur `.model`.
@@ -146,6 +149,7 @@ Si l’API REST Assets est utilisée dans un environnement sans conditions d’a
 >
 >* [CORS/AEM expliqué](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [Vidéo - Développement pour CORS et AEM](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
