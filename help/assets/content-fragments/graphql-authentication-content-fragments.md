@@ -1,18 +1,18 @@
 ---
 title: Authentification pour les requêtes AEM GraphQL distantes sur les fragments de contenu
-description: Découvrez l’authentification requise pour les requêtes AEM GraphQL distantes.
+description: Comprenez l'authentification requise pour les requêtes GraphQL d'AEM distantes afin de sécuriser votre diffusion de contenu sans en-tête.
 translation-type: tm+mt
-source-git-commit: 42ca0c70f7018a6e3c9be68ef13adefafc987864
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 100%
+source-wordcount: '231'
+ht-degree: 86%
 
 ---
 
 
 # Authentification pour les requêtes AEM GraphQL distantes sur les fragments de contenu {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-Un des principaux cas d’utilisation de l’[API Adobe Experience Manager as a Cloud Service (AEM) GraphQL pour la diffusion de fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md) consiste à accepter les requêtes distantes provenant d’applications ou de services tiers.  Ces requêtes distantes peuvent nécessiter un accès à une API authentifiée.
+Un des principaux cas d’utilisation de l’[API Adobe Experience Manager as a Cloud Service (AEM) GraphQL pour la diffusion de fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md) consiste à accepter les requêtes distantes provenant d’applications ou de services tiers. Ces requêtes distantes peuvent nécessiter un accès aux API authentifiées pour sécuriser la diffusion de contenu sans en-tête.
 
 >[!NOTE]
 >
