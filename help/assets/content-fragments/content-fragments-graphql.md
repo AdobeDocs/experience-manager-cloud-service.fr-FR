@@ -1,18 +1,18 @@
 ---
 title: Diffusion de contenu découplée à l’aide de fragments de contenu avec GraphQL
-description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec GraphQL pour la diffusion de contenu découplée.
+description: Découvrez comment utiliser AEM Fragments de contenu avec GraphQL pour la diffusion de contenu sans en-tête.
 translation-type: tm+mt
-source-git-commit: c5f041f29133718a4260a289255e21b535cde12f
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 92%
+source-wordcount: '716'
+ht-degree: 85%
 
 ---
 
 
 # Diffusion de contenu découplée à l’aide de fragments de contenu avec GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-Avec Adobe Experience Manager (AEM) as a Cloud Service, vous pouvez utiliser des fragments de contenu avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard) pour fournir du contenu structuré à utiliser dans vos applications. La possibilité de personnaliser une seule requête d’API vous permet de récupérer et de diffuser le contenu spécifique que vous souhaitez rendre, ou avez besoin de rendre (comme réponse à la requête d’API unique).
+Avec Adobe Experience Manager (AEM) en tant que Cloud Service, vous pouvez utiliser les fragments de contenu, ainsi que l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard), pour diffuser sans encombre du contenu structuré destiné à vos applications. La possibilité de personnaliser une seule requête d’API vous permet de récupérer et de diffuser le contenu spécifique que vous souhaitez rendre, ou avez besoin de rendre (comme réponse à la requête d’API unique).
 
 >[!NOTE]
 >
