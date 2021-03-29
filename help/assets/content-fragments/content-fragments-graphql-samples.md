@@ -1,16 +1,18 @@
 ---
 title: Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes
-description: Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes.
+description: Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu sans encombre en explorant des exemples de contenu et de requêtes.
 translation-type: tm+mt
-source-git-commit: b50bef1fd94396e9b9089933744a95f3f7d389f8
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '1396'
-ht-degree: 97%
+source-wordcount: '1418'
+ht-degree: 95%
 
 ---
 
 
 # Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes {#learn-graphql-with-aem-sample-content-queries}
+
+Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu sans encombre en explorant des exemples de contenu et de requêtes.
 
 >[!NOTE]
 >
