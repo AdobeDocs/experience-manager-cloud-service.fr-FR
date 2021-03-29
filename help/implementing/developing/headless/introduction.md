@@ -1,18 +1,18 @@
 ---
 title: Développement découplé pour AEM Sites as a Cloud Service
-description: Les fonctionnalités puissantes telles que les modèles de contenu, les fragments de contenu et l’API GraphQL d’AEM as a Cloud Service permettent de gérer vos expériences de manière centralisée et de les diffuser sur plusieurs canaux.
+description: Découvrez comment AEM en tant que Cloud Service de puissantes fonctionnalités sans en-tête telles que les modèles de contenu, les fragments de contenu et l’API GraphQL fonctionnent ensemble pour vous permettre de gérer vos expériences de manière centralisée et de les diffuser sur plusieurs canaux.
 translation-type: tm+mt
-source-git-commit: e1db93e8f4cf8ef881b274879e800c9993753a66
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 100%
+source-wordcount: '583'
+ht-degree: 88%
 
 ---
 
 
 # Développement découplé pour AEM Sites as a Cloud Service {#headless-development}
 
-Les fonctionnalités puissantes telles que les modèles de contenu, les fragments de contenu et l’API GraphQL d’AEM as a Cloud Service permettent de gérer vos expériences de manière centralisée et de les diffuser sur plusieurs canaux.
+Découvrez comment AEM en tant que Cloud Service de puissantes fonctionnalités sans en-tête telles que les modèles de contenu, les fragments de contenu et l’API GraphQL fonctionnent ensemble pour vous permettre de gérer vos expériences de manière centralisée et de les diffuser sur plusieurs canaux.
 
 ## Présentation {#overview}
 
