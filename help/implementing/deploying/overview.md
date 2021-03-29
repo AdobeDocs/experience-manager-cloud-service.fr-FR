@@ -3,10 +3,10 @@ title: Déploiement sur AEM as a Cloud Service
 description: 'Déploiement sur AEM as a Cloud Service '
 feature: Déploiement
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: a5717e36c347e89f6b9e2f4f7dffc72dcab0b7d7
 workflow-type: tm+mt
 source-wordcount: '3247'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -50,7 +50,7 @@ La vidéo suivante présente un aperçu général du déploiement du code vers A
 
 Les clients déploient le code personnalisé dans les environnements cloud via Cloud Manager. Il est à noter que Cloud Manager transforme des modules de contenu assemblés localement en artefact conforme au modèle de fonctionnalité Sling, qui décrit une application AEM as a Cloud Service lors de l’exécution dans un environnement cloud. Par conséquent, lorsque vous examinez les modules dans le gestionnaire de modules sur les environnements cloud, le nom inclut « cp2fm » et toutes les métadonnées des modules transformés sont supprimées. Ils ne peuvent pas être interactifs, ce qui signifie qu’ils ne peuvent pas être téléchargés, répliqués, ni ouverts. Vous trouverez [ici](https://github.com/apache/sling-org-apache-sling-feature-cpconverter) une documentation détaillée sur le convertisseur.
 
-Les modules de contenu écrits pour les applications AEM as a Cloud Service doivent présenter une distinction claire entre le contenu modifiable et non modifiable, et Cloud Manager l’appliquera en faisant échouer la version, en renvoyant un message du type :
+Les packages de contenu écrits pour AEM en tant qu’applications Cloud Service doivent avoir une séparation nette entre le contenu non modifiable et le contenu mutable et Cloud Manager n’installera que le contenu mutable, générant également un message tel que :
 
 `Generated content-package <PACKAGE_ID> located in file <PATH> is of MIXED type`
 
