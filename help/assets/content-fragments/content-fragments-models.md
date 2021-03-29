@@ -1,18 +1,18 @@
 ---
 title: Modèles de fragment de contenu
-description: Les modèles de fragment de contenu sont utilisés pour créer des fragments de contenu avec du contenu structuré.
+description: Découvrez comment les modèles de fragments de contenu constituent la base de votre contenu sans en-tête dans AEM et comment créer des fragments de contenu avec du contenu structuré.
 translation-type: tm+mt
-source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '2177'
-ht-degree: 96%
+source-wordcount: '2199'
+ht-degree: 94%
 
 ---
 
 
 # Modèles de fragment de contenu {#content-fragment-models}
 
-Les modèles de fragment de contenu définissent la structure du contenu pour vos [fragments de contenu](/help/assets/content-fragments/content-fragments.md).
+Les modèles de fragments de contenu dans AEM définissent la structure du contenu de vos [fragments de contenu,](/help/assets/content-fragments/content-fragments.md) servant de base à votre contenu sans en-tête.
 
 Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 
