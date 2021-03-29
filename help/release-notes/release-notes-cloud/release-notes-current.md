@@ -2,7 +2,7 @@
 title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 3a21441f11d59a8d2a706bda8e1676aa072650b3
+source-git-commit: 8331ecb0797f878067a4f83d97e6ec2f62bb551a
 workflow-type: tm+mt
 source-wordcount: '1318'
 ht-degree: 14%
@@ -84,7 +84,7 @@ Vous pouvez contacter votre représentant d’Adobe pour une démonstration ou p
 
 Cette section décrit les Notes de mise à jour de Cloud Manager en AEM Cloud Service 2021.3.0.
 
-## Date de publication {#release-date-cm-march}
+### Date de publication {#release-date-cm-march}
 
 La date de publication de Cloud Manager en tant que Cloud Service 2021.3.0 dans AEM est le 11 mars 2021.
 La prochaine version est prévue pour le 8 avril 2021.
