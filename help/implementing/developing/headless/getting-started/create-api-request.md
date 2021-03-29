@@ -1,18 +1,18 @@
 ---
 title: Guide de prise en main pour l’accès et la diffusion de fragments de contenu découplés
-description: L’API REST Assets permet de gérer les fragments de contenu et l’API GraphQL permet une simple diffusion découplée du contenu des fragments de contenu.
+description: Découvrez comment utiliser AEM Assets REST API pour gérer les fragments de contenu et l’API GraphQL pour la diffusion sans en-tête du contenu des fragments de contenu.
 translation-type: tm+mt
-source-git-commit: 472f691cf8b2ec502611ee88bc4abdcabb6d8412
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 100%
+source-wordcount: '510'
+ht-degree: 90%
 
 ---
 
 
 # Guide de prise en main pour l’accès et la diffusion de fragments de contenu découplés {#accessing-delivering-content-fragments}
 
-L’API REST Assets permet de gérer les fragments de contenu et l’API GraphQL permet une simple diffusion découplée du contenu des fragments de contenu.
+Découvrez comment utiliser AEM Assets REST API pour gérer les fragments de contenu et l’API GraphQL pour la diffusion sans en-tête du contenu des fragments de contenu.
 
 ## Que sont les API GraphQL et REST Assets ? {#what-are-the-apis}
 
