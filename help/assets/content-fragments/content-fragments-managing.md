@@ -1,16 +1,18 @@
 ---
 title: Gestion des fragments de contenu
-description: Les fragments de contenu sont stockés en tant que ressources, et ils sont donc principalement gérés par l’intermédiaire de la console Ressources.
+description: Découvrez comment utiliser la console Ressources pour gérer vos AEM Fragments de contenu, à la base de votre contenu sans en-tête.
 translation-type: tm+mt
-source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '1616'
-ht-degree: 93%
+source-wordcount: '1640'
+ht-degree: 91%
 
 ---
 
 
 # Gestion des fragments de contenu {#managing-content-fragments}
+
+Découvrez comment utiliser la console Ressources pour gérer vos AEM Fragments de contenu, à la base de votre contenu sans en-tête.
 
 Les fragments de contenu sont stockés en tant que **Ressources**, et ils sont donc principalement gérés par l’intermédiaire de la console **Ressources**.
 
