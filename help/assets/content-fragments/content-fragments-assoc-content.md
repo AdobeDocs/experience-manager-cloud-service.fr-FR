@@ -1,18 +1,18 @@
 ---
 title: Contenu associé
-description: Le contenu associé fournit la connexion afin que les ressources puissent (éventuellement) être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu.
+description: Comprenez comment AEM fonction de contenu associé fournit la connexion afin que les ressources puissent être éventuellement utilisées avec le fragment lorsqu’il est ajouté à une page de contenu, ajoutant ainsi une flexibilité supplémentaire à la diffusion de contenu sans en-tête.
 translation-type: tm+mt
-source-git-commit: 29ce1175e3fcc606d12dd4f1ef7b6d8f26c1d47a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 100%
+source-wordcount: '244'
+ht-degree: 60%
 
 ---
 
 
 # Contenu associé {#associated-content}
 
-Le contenu associé fournit la connexion afin que les ressources puissent (éventuellement) être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu. Vous bénéficiez ainsi d’une certaine souplesse,[ car vous disposez d’une gamme de ressources auxquelles accéder lors de l’utilisation du fragment de contenu sur une page.](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) Cela permet aussi de réduire le temps nécessaire pour rechercher la ressource appropriée.
+AEM fonction de contenu associé fournit la connexion de sorte que les ressources puissent être éventuellement utilisées avec le fragment lorsqu’il est ajouté à une page de contenu. Vous disposez ainsi d’une plus grande flexibilité pour votre diffusion de contenu sans en-tête en [fournissant une gamme de ressources à accéder lors de l’utilisation du fragment de contenu sur une page,](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) tout en réduisant le temps nécessaire à la recherche de la ressource appropriée.
 
 ## Ajout de contenu associé {#adding-associated-content}
 
