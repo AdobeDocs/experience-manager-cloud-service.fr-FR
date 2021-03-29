@@ -1,11 +1,11 @@
 ---
 title: Guide de prise en main pour la création découplée d’une configuration
-description: Pour commencer à utiliser le découplage dans AEM as a Cloud Service, vous devez créer une configuration.
+description: Créez une configuration comme première étape pour commencer à utiliser AEM sans en-tête en tant que Cloud Service.
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 100%
+source-wordcount: '333'
+ht-degree: 94%
 
 ---
 
