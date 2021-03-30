@@ -2,15 +2,15 @@
 title: Accès à Cloud Manager
 description: Suivez cette page pour découvrir comment accéder au landing page Cloud Manager.
 translation-type: tm+mt
-source-git-commit: e77fb8bc94d8be2d8613075f4b1638aab1d2fcbe
+source-git-commit: 55239d6f973f9fbe5a728321ddbe702d74a8a8a7
 workflow-type: tm+mt
 source-wordcount: '337'
-ht-degree: 14%
+ht-degree: 16%
 
 ---
 
 
-# Accès à Cloud Manager {#cloud-manager}
+# Accéder à Cloud Manager {#cloud-manager}
 
 Une fois que votre administrateur système vous a accordé l’accès à Cloud Manager, vous recevrez un courrier électronique vous conduisant à la page de connexion de Cloud Manager, également accessible via [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/).
 
