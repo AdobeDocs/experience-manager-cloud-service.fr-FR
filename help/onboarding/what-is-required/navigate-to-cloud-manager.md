@@ -2,7 +2,7 @@
 title: Accès à Cloud Manager
 description: Suivez cette page pour découvrir comment accéder au landing page Cloud Manager.
 translation-type: tm+mt
-source-git-commit: 1faadf46f38c5c6ac2e2fbc56f0c82214e0bfb6c
+source-git-commit: 159a1619e2cb1243e056dcc6182abceeeff01730
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 15%
@@ -54,7 +54,7 @@ Vous verrez l’une des trois options décrites ci-dessous :
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
-À partir de là, un utilisateur disposant des autorisations appropriées, tel qu’un rôle de propriétaire commercial dans Cloud Manager, peut sélectionner **Programme d’Ajoute** pour lancer l’assistant.
+À partir de là, un utilisateur disposant des autorisations appropriées, tel qu’un rôle de propriétaire d’entreprise dans Cloud Manager, peut sélectionner **Programme d’Ajoute** pour lancer l’[assistant](/help/onboarding/getting-access-to-aem-in-cloud/using-the-wizard.md).
 
 Pour savoir comment ajouter un programme dans Cloud Manager, consultez :
 
