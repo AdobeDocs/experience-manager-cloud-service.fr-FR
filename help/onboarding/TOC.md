@@ -7,10 +7,10 @@ feature-set: Experience Manager Sites
 feature: Déploiement
 role: Architecte, développeur
 translation-type: tm+mt
-source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
+source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 92%
+source-wordcount: '674'
+ht-degree: 91%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 92%
    + [Rôles utilisateur et autorisations](what-is-required/user-roles-permissions.md)
    + [Tâches de l&#39;administrateur système](what-is-required/add-users-assign-cm-roles.md)
    + [Accéder à Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
-   + [Accès à une instance AEM](/help/onboarding/what-is-required/accessing-aem-instance.md)
+   + [Octroi de l’accès utilisateur à une instance AEM](/help/onboarding/what-is-required/accessing-aem-instance.md)
 + Programmes Cloud Manager {#getting-access}
    + [Présentation des programmes et des types de programmes](getting-access-to-aem-in-cloud/understand-program-types.md)
    + Programmes de production {#production-programs}
