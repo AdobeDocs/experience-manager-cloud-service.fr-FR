@@ -2,7 +2,7 @@
 title: Intégration à Adobe Experience Manager as a Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation concernant l’intégration à Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
+source-git-commit: 98c7105aed1b9092a72005cf2cfab4bcf227601f
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 55%
@@ -30,7 +30,7 @@ Une fois votre contrat signé, les événements suivants auront lieu :
 
 **Équipes, rôles et autorisations**
 
-Votre administrateur système peut ajouter des utilisateurs et les affecter à des rôles Cloud Manager. Cette section vous aide à comprendre ce que *Rôles Cloud Manager* sont et les autorisations associées aux rôles avant de commencer.
+Votre administrateur système peut ajouter des utilisateurs et les affecter à des rôles Cloud Manager. Cette section vous aide à comprendre les [rôles Cloud Manager](/help/onboarding/what-is-required/user-roles-permissions.md#user-roles) et les [autorisations](/help/onboarding/what-is-required/user-roles-permissions.md#permissions) associées aux rôles avant de commencer.
 
 **Tâches de l&#39;administrateur système**
 
@@ -39,7 +39,7 @@ Les administrateurs système gèrent tous les aspects de leurs utilisateurs, de 
 
 **Accéder à Cloud Manager**
 
-Accédez à Cloud Manager pour commencer à utiliser votre parcours Cloud avec AEM. Maintenant que vous avez été ajouté en tant qu’utilisateur et affecté à un rôle Cloud Manager, vous êtes prêt à effectuer diverses tâches, telles que la création d’un programme, l’ajout d’un environnement, la gestion de Git, la configuration d’un pipeline et le déploiement du code.
+Accédez à Cloud Manager pour commencer à utiliser votre parcours Cloud avec AEM. Maintenant que vous avez été ajouté en tant qu’utilisateur et affecté à un rôle Cloud Manager, vous êtes prêt à effectuer diverses tâches telles que [création d’un programme](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [ajout d’un environnement](/help/implementing/cloud-manager/manage-environments.md), [accès à Git](/help/implementing/cloud-manager/accessing-git.md), [configuration d’un pipeline](/help/implementing/cloud-manager/configure-pipeline.md) et [déploiement du code](/help/implementing/cloud-manager/deploy-code.md).
 
 **Accès à une instance AEM**
 
