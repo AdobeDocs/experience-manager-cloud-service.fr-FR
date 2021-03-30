@@ -1,18 +1,18 @@
 ---
-title: 'Accès à une instance AEM '
-description: Suivez cette page pour savoir comment accéder à une instance AEM
+title: 'Octroi de l’accès utilisateur à une instance AEM '
+description: Suivez cette page pour découvrir comment un administrateur système octroie à l'utilisateur l'accès à une instance AEM
 translation-type: tm+mt
-source-git-commit: 55239d6f973f9fbe5a728321ddbe702d74a8a8a7
+source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '290'
 ht-degree: 1%
 
 ---
 
 
-# Accès à une instance AEM {#accessing-aem-instance}
+# Octroi à l’utilisateur de l’accès à une instance AEM {#accessing-aem-instance}
 
-Pour accéder à une instance AEM à partir de Cloud Manager, procédez comme suit :
+En tant qu’administrateur système, suivez les étapes ci-dessous pour accorder à l’utilisateur l’accès à une instance AEM :
 
 1. Accédez à Cloud Manager et cliquez sur le bouton **Gérer l’accès** à partir de la carte **Environnements**, comme indiqué ci-dessous.
 
