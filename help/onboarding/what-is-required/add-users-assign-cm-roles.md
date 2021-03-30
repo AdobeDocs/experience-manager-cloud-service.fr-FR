@@ -1,68 +1,16 @@
 ---
-title: 'Ajouter des utilisateurs et affecter des rôles Cloud Manager '
-description: Suivez cette page pour savoir comment ajouter des utilisateurs et les affecter à des rôles Cloud Manager
+title: 'Tâches de l''administrateur système '
+description: Suivez cette page pour savoir comment ajouter des utilisateurs et les affecter à des rôles Cloud Manager en tant qu’administrateur système
 translation-type: tm+mt
-source-git-commit: 6e8cf08ec3f85437a8472a45895f3818e473e98c
+source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 33%
+source-wordcount: '338'
+ht-degree: 0%
 
 ---
 
 
-# Ajouter des utilisateurs et affecter des rôles à Cloud Manager {#add-users-assign}
-
-L&#39;Adobe va créer un **identifiant d&#39;organisation** pour votre société dans le système IMS (Adobe Identity Management System), où tous vos utilisateurs et leurs autorisations peuvent être gérés. Chaque utilisateur, qui doit être membre de cette organisation et qui aura accès à l&#39;un des services [!UICONTROL Experience Cloud], devra disposer de son propre **Adobe ID**.
-
-## Présentation des rôles utilisateur {#user-roles}
-
-La plupart des fonctionnalités de Cloud Manager nécessitent des autorisations spécifiques.
-
-Cloud Manager définit actuellement quatre rôles pour les utilisateurs qui régissent la disponibilité de fonctionnalités spécifiques :
-
-* Propriétaire de l’entreprise
-* Responsable de déploiement
-* Responsable de programme
-* Développeur
-
->[!NOTE]
->Dans Admin Console, le développeur n’est pas lié au rôle Développeur dans [!UICONTROL Cloud Manager].
-
-Le tableau suivant résume les rôles :
-
-| Rôles de [!UICONTROL Cloud Manager] | Description |
-|--- |--- |
-| Propriétaire de l’entreprise | Est responsable de la définition des ICP, approuve les déploiements en production et contourne les échecs de trois niveaux. |
-| Responsable de programme | Utilise [!UICONTROL Cloud Manager] pour configurer les équipes et passer en revue les statuts et les IPC. Peut approuver des échecs importants de 3 niveaux. |
-| Responsable de déploiement | Gère les opérations de déploiement. Utilise [!UICONTROL Cloud Manager] pour exécuter les déploiements dans les environnements intermédiaires/de production. Peut modifier les pipelines CI/CD. Peut approuver des échecs importants de 3 niveaux. Peut accéder au référentiel Git. |
-| Développeur | Développe et teste du code d’application personnalisé. Utilise principalement [!UICONTROL Cloud Manager] pour consulter les statuts. Peut accéder au référentiel Git pour la validation du code. |
-| Auteur de contenu | N’interagit généralement pas avec [!UICONTROL Cloud Manager]. Peut utiliser le commutateur de programmes de [!UICONTROL Cloud Manager] (depuis [!UICONTROL Experience Cloud]) pour accéder à AEM. |
-
-### Profil du produit d&#39;intégration {#integration-product-profile}
-
-Outre ce qui précède, Cloud Manager crée automatiquement un profil de produits nommé &quot;Intégrations - Cloud Service&quot;. Ce profil de produits est utilisé pour les intégrations entre Adobe Experience Manager et d&#39;autres produits d&#39;Adobe. Ce profil de produit **ne doit pas** être supprimé. Si vous supprimez accidentellement ce profil, il doit être recréé manuellement. Le nom d&#39;affichage de ce profil **doit** être `CM_CS_DEFAULT`.
-
-
-## Autorisations associées aux définitions de rôle {#permissions}
-
-[!UICONTROL Cloud Manager] dispose de rôles préconfigurés avec les autorisations appropriées. Par exemple, un développeur développe du code et a l’autorisation de placer le code dans le **référentiel Git**. Un propriétaire d’entreprise dispose d’autorisations différentes qui lui permettent de définir des indicateurs de performance clés et d’approuver les déploiements.
-
-Chacun des rôles possède des autorisations spécifiques associées à chaque rôle. Le tableau suivant récapitule les rôles, liste les fonctions disponibles et les rôles qui peuvent exécuter la fonction.
-
-| Autorisation | Description | Propriétaire de l’entreprise | Responsable de déploiement | Responsable de programme | Développeur |
-|--- |--- |--- |--- |--- |--- |
-| Ajout d’un programme | Ajoutez un nouveau Programme. | x |  |  |  |
-| Créer un Environnement | Créer des Environnements Prod+Stage, Dev. | x | x |  |  |
-| Mettre à jour l’environnement | Mettre à jour Prod+Stage, Dev, Environnements. | x | x |  |  |
-| Supprimer l’environnement | Supprimer les Environnements non-prod, Dev. | x | x |  |  |
-| Configuration du tuyau | Configuration ou modification du tuyau. |  | x |  |  |
-| Exécution du pipeline | Début du pipeline. | x | x |  |  |
-| Exécution du pipeline | Rejeter/Approuver les échecs importants à trois niveaux. | x | x | x |  |
-| Exécution du pipeline | Fournit l’approbation de GoLive. | x | x | x |  |
-| Exécution du pipeline | Planning du déploiement en production. | x | x | x |  |
-| Suppression de pipeline | Permet de supprimer un tuyau. |  | x |  |  |
-| Annuler l’exécution | Annuler l&#39;exécution en cours. |  | x |  |  |
-| Génération d’un jeton d’accès personnel | Accéder à Git. |  | x |  | x |
+# Tâches de l&#39;administrateur système {#add-users-assign}
 
 ## Ajouter des utilisateurs {#add-users}
 
