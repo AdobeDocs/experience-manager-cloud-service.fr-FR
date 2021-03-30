@@ -2,10 +2,10 @@
 title: Intégration à Adobe Experience Manager as a Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation concernant l’intégration à Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: d6721940f2260cf61c83f01106fa2781e2f35b1f
+source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 53%
+source-wordcount: '695'
+ht-degree: 51%
 
 ---
 
@@ -30,20 +30,19 @@ Une fois votre contrat signé, les événements suivants auront lieu :
 
 **[Équipes, rôles et autorisations](/help/onboarding/what-is-required/user-roles-permissions.md)**
 
-Votre administrateur système peut ajouter des utilisateurs et les affecter à des rôles Cloud Manager. Cette section vous aide à comprendre les [rôles Cloud Manager](/help/onboarding/what-is-required/user-roles-permissions.md#user-roles) et les [autorisations](/help/onboarding/what-is-required/user-roles-permissions.md#permissions) associées aux rôles avant de commencer.
+Votre administrateur système peut ajouter des utilisateurs et les affecter à des rôles Cloud Manager. Cette section vous aide à comprendre les [rôles Cloud Manager](/help/onboarding/what-is-required/user-roles-permissions.md#user-roles) et [autorisations](/help/onboarding/what-is-required/user-roles-permissions.md#permissions) associés aux rôles avant de commencer.
 
 **[Tâches de l&#39;administrateur système](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
 
 Les administrateurs système gèrent tous les aspects de leurs utilisateurs, de l’accès aux autorisations. Les pages de documentation suivantes contiennent des informations décrivant les tâches organisationnelles de base, c&#39;est-à-dire [Ajouter des utilisateurs et affecter des utilisateurs aux rôles et autorisations de Cloud Manager](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)
 
-
 **[Accéder à Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
-Accédez à Cloud Manager pour commencer à utiliser votre parcours Cloud avec AEM. Maintenant que vous avez été ajouté en tant qu’utilisateur et affecté à un rôle Cloud Manager, vous êtes prêt à effectuer diverses tâches telles que [création d’un programme](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [ajout d’un environnement](/help/implementing/cloud-manager/manage-environments.md), [accès à Git](/help/implementing/cloud-manager/accessing-git.md), [configuration d’un pipeline](/help/implementing/cloud-manager/configure-pipeline.md) et [déploiement du code](/help/implementing/cloud-manager/deploy-code.md).
+Suivez cette section pour découvrir comment accéder à Cloud Manager pour commencer à utiliser votre parcours Cloud avec AEM. Maintenant que vous avez été ajouté en tant qu’utilisateur et affecté à un rôle Cloud Manager, vous êtes prêt à effectuer diverses tâches telles que [création d’un programme](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [ajout d’un environnement](/help/implementing/cloud-manager/manage-environments.md), [accès à Git](/help/implementing/cloud-manager/accessing-git.md), [configuration d’un pipeline](/help/implementing/cloud-manager/configure-pipeline.md) et [déploiement du code](/help/implementing/cloud-manager/deploy-code.md).
 
-**[Accès à une instance AEM](/help/onboarding/what-is-required/accessing-aem-instance.md)**
+**[Octroi de l’accès utilisateur à une instance AEM](/help/onboarding/what-is-required/accessing-aem-instance.md)**
 
-Un administrateur système peut accorder aux utilisateurs l’accès à une instance AEM à partir de l’interface utilisateur de Cloud Manager ou du Admin Console.
+Suivez cette section pour découvrir comment un administrateur système peut accorder aux utilisateurs l’accès à une instance AEM ou comment un utilisateur qui a créé un environnement peut accorder à d’autres utilisateurs l’accès à une instance AEM.
 
 ## Guides relatifs à Experience Manager as a Cloud Service {#aem-guides}
 
