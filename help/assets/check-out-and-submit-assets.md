@@ -1,73 +1,62 @@
 ---
-title: Archivage et extraction de fichiers dans  [!DNL Assets]
+title: Archiver et extraire des fichiers dans  [!DNL Assets]
 description: Découvrez comment extraire les ressources pour modification et les archiver à nouveau une fois les modifications effectuées.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 8db9f899cee8f01a4c2aac93ccecc052f9780bc0
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 100%
+source-wordcount: '431'
+ht-degree: 49%
 
 ---
 
 
-# Archivage et extraction de fichiers dans AEM Assets {#check-in-and-check-out-files-in-assets}
+# Fichiers d&#39;arrivée et de départ dans [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}
 
-Adobe Experience Manager (AEM) Assets permet d’extraire des ressources pour les modifier et de les archiver après avoir apporté les modifications. Après avoir extrait une ressource, vous seul pouvez la modifier, l’annoter, la publier, la déplacer ou la supprimer. Le fait d’extraire une ressource entraîne son verrouillage. Les autres utilisateurs ne peuvent effectuer aucune de ces opérations sur la ressource tant que vous ne l’avez pas archivée dans AEM Assets. Toutefois, ils peuvent modifier les métadonnées de la ressource verrouillée.
+[!DNL Adobe Experience Manager Assets] permet d’extraire des ressources pour les modifier et de les ré-archiver après y avoir apporté les modifications. Après avoir extrait une ressource, vous seul pouvez la modifier, l’annoter, la publier, la déplacer ou la supprimer. Le fait d’extraire une ressource entraîne son verrouillage. Les autres utilisateurs ne peuvent pas effectuer l’une de ces opérations sur la ressource tant que vous n’avez pas réactivé la ressource dans [!DNL Assets]. Toutefois, ils peuvent modifier les métadonnées de la ressource verrouillée.
 
 Vous avez besoin d’un accès en écriture à ces ressources pour être en mesure de les extraire ou de les archiver.
 
 Cette caractéristique permet d’empêcher les autres utilisateurs d’écraser les modifications apportées par un auteur lorsque plusieurs utilisateurs issus de plusieurs équipes collaborent à la modification des workflows.
 
-## Extraction de ressources {#checking-out-assets}
+## Extraire les ressources {#checking-out-assets}
 
-1. Dans l’interface utilisateur d’Assets, sélectionnez la ressource que vous souhaitez extraire. Vous pouvez également sélectionner plusieurs ressources à extraire.
+1. Dans l&#39;interface utilisateur [!DNL Assets], sélectionnez la ressource à extraire. Vous pouvez également sélectionner plusieurs ressources à extraire.
 
-   ![chlimage_1-468](assets/chlimage_1-468.png)
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Passage en caisse]**. L&#39;option **[!UICONTROL Passage en caisse]** passe à **[!UICONTROL Passage en caisse]**.
+Pour vérifier si d’autres utilisateurs peuvent modifier la ressource que vous avez extraite, connectez-vous comme un utilisateur différent. L&#39;icône ![icône de verrouillage du passage en caisse](assets/do-not-localize/checkout_lock.png) s&#39;affiche sur la miniature de la ressource que vous avez récupérée.
 
-1. Dans la barre d’outils, cliquez/appuyez sur l’icône **[!UICONTROL Extraction]**.
-
-   ![chlimage_1-469](assets/chlimage_1-469.png)
-
-   Notez que l’icône **[!UICONTROL Extraction]** se transforme en icône **[!UICONTROL Archivage]** avec le verrou ouvert.
-
-   ![chlimage_1-470](assets/chlimage_1-470.png)
-
-   Pour vérifier si d’autres utilisateurs peuvent modifier la ressource que vous avez extraite, connectez-vous comme un utilisateur différent. Une icône de verrouillage s’affiche sur la miniature de la ressource que vous avez extraite.
-
-   ![chlimage_1-471](assets/chlimage_1-471.png)
+   ![icône de paiement dans la vue de carte](assets/checkout-icon-card-view.png)
 
    Sélectionnez la ressource. Notez que la barre d’outils n’affiche aucune option permettant de modifier, d’annoter, de publier ou de supprimer la ressource.
 
-   ![chlimage_1-472](assets/chlimage_1-472.png)
+   ![chlimage_1-472](assets/checkout-asset-toolbar-options.png)
 
-   Vous pouvez, toutefois, cliquer/appuyer sur l’icône **[!UICONTROL Afficher les propriétés]** pour modifier les métadonnées de la ressource verrouillée.
+   Pour modifier les métadonnées du fichier verrouillé, cliquez sur **[!UICONTROL Propriétés de la Vue]**.
 
-1. Cliquez/appuyez sur l’icône Modifier pour ouvrir la ressource en mode d’édition.
+1. Cliquez sur **[!UICONTROL Modifier]** pour ouvrir la ressource en mode d’édition.
 
-   ![chlimage_1-473](assets/chlimage_1-473.png)
+1. Modifiez la ressource et enregistrez les modifications. Par exemple, recadrez l’image et enregistrez-la. Vous pouvez également choisir d’annoter ou de publier la ressource.
 
-1. Modifiez la ressource et enregistrez les modifications. Par exemple, recadrez l’image et enregistrez-la.
-
-   ![chlimage_1-474](assets/chlimage_1-474.png)
-
-   Vous pouvez également choisir d’annoter ou de publier la ressource.
-
-1. Sélectionnez la ressource modifiée dans l’interface utilisateur d’Assets, puis cliquez/appuyez sur l’icône **[!UICONTROL Archiver]** dans la barre d’outils.
-
-   ![chlimage_1-475](assets/chlimage_1-475.png)
-
-   La ressource modifiée est archivée dans AEM Assets et peut être modifiée par les autres utilisateurs.
+1. Sélectionnez le fichier modifié dans l&#39;interface [!DNL Assets], puis cliquez sur **[!UICONTROL Archiver]** dans la barre d&#39;outils. L’actif modifié est archivé dans [!DNL Assets] et est disponible pour modification pour d’autres utilisateurs.
 
 ## Archivage forcé {#forced-check-in}
 
 Les administrateurs peuvent archiver les ressources extraites par d’autres utilisateurs.
 
-1. Connectez-vous à AEM Assets en tant qu’administrateur.
-1. Dans l’interface utilisateur d’Assets, sélectionnez une ou plusieurs ressources extraites par d’autres utilisateurs.
+1. Connectez-vous à [!DNL Assets] en tant qu’administrateur.
+1. Dans l&#39;interface utilisateur [!DNL Assets], sélectionnez une ou plusieurs ressources qui ont été extraites par d&#39;autres utilisateurs.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
-1. Dans la barre d’outils, cliquez/appuyez sur l’icône **[!UICONTROL Libérer le verrou]**. La ressource est à nouveau archivée et disponible pour modification pour d’autres utilisateurs.
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Verrouiller]**. La ressource est à nouveau archivée et disponible pour modification pour d’autres utilisateurs.
 
-   ![chlimage_1-477](assets/chlimage_1-477.png)
+## Bonnes pratiques et restrictions {#tips-limitations}
+
+* Il est possible de supprimer un *dossier* contenant des fichiers extraits. Avant de supprimer un dossier, assurez-vous qu’aucun fichier numérique n’est extrait par les utilisateurs.
+
+>[!MORELIKETHIS]
+>
+>* [Comprendre l&#39;archivage et l&#39;extraction  [!DNL Experience Manager] dans l&#39;application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
+>* [Didacticiel vidéo pour comprendre la procédure d&#39;enregistrement et de départ [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
+
