@@ -3,10 +3,11 @@ title: Imagerie dynamique
 description: '"Découvrez comment l''imagerie intelligente applique les caractéristiques d''affichage uniques de chaque utilisateur pour fournir automatiquement les images appropriées optimisées pour leur expérience, ce qui se traduit par de meilleures performances et un meilleur engagement."'
 feature: Gestion des ressources,Rendus
 topic: Professionnel
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1865'
 ht-degree: 54%
 
 ---
