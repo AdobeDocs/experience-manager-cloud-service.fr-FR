@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: 05242f0ca4168e220a4b83436da4daa0013edfaf
+source-git-commit: d1727601bb5d70bea9920aa1d680284fb3d25bf0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '657'
+ht-degree: 98%
 
 ---
 
@@ -79,7 +79,7 @@ Vous êtes ainsi prêt à utiliser AEM Commerce as a Cloud Service et vous pouve
 1. Définissez la variable secrète `COMMERCE_AUTH_HEADER` dans Cloud Manager :
 
    ```bash
-   aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization Bearer: <Access Token>"
+   aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization: Bearer <Access Token>"
    ```
 
    Voir la section [Connexion d’AEM Commerce à Magento](#magento) pour savoir comment configurer l’interface de ligne de commande Adobe I/O pour Cloud Manager.
