@@ -2,9 +2,9 @@
 title: 'Octroi de l’accès utilisateur à une instance AEM '
 description: Suivez cette page pour découvrir comment un administrateur système octroie à l'utilisateur l'accès à une instance AEM
 translation-type: tm+mt
-source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '296'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ En tant qu’administrateur système, suivez les étapes ci-dessous pour accorde
 1. Accédez à Cloud Manager et cliquez sur le bouton **Gérer l’accès** à partir de la carte **Environnements**, comme indiqué ci-dessous.
 
    >[!NOTE]
-   >Vous devez être administrateur système ou l&#39;utilisateur qui a créé l&#39;environnement pour pouvoir ajouter un utilisateur dans le Admin Console. Seuls les rôles Business Owner ou Deployment Manager sont autorisés à créer un environnement. Reportez-vous à la section [Ajoutée Users and Assigning Cloud Manager Roles](/help/onboarding/what-is-required/add-users-assign-cm-roles.md) pour en savoir plus sur les rôles et les autorisations associées.
+   >Vous devez être administrateur système ou l&#39;utilisateur qui a créé l&#39;environnement pour pouvoir ajouter un utilisateur dans le Admin Console. Seuls les rôles Business Owner ou Deployment Manager sont autorisés à créer un environnement. Consultez [Rôles utilisateur et autorisations](/help/onboarding/what-is-required/user-roles-permissions.md) pour en savoir plus sur les rôles et les autorisations associées. De plus, consultez [Gestion des Environnements](/help/implementing/cloud-manager/manage-environments.md) pour en savoir plus sur les environnements.
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin6.png)
 
