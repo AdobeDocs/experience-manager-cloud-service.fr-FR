@@ -2,11 +2,13 @@
 title: Configuration et utilisation des microservices de ressources
 description: Configurez et utilisez des microservices de ressources basés sur le cloud pour traiter des ressources à grande échelle.
 contentOwner: AG
+feature: asset compute Microservices, Workflow, Traitement des ressources
+role: Architecte, Administrateur
 translation-type: tm+mt
-source-git-commit: 57ae02b90d1e78e8a940b65d195bc2077feec2d2
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '2576'
-ht-degree: 100%
+source-wordcount: '2584'
+ht-degree: 99%
 
 ---
 
