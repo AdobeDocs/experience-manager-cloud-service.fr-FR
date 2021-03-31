@@ -3,10 +3,11 @@ title: Visionneuses d’images
 description: Découvrez comment utiliser des visionneuses d’images dans Dynamic Media.
 feature: Visionneuses d’images
 topic: Professionnel
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '2051'
+source-wordcount: '2053'
 ht-degree: 68%
 
 ---
