@@ -2,10 +2,12 @@
 title: Balisage automatique des ressources grâce aux balises générées par l’IA
 description: Balisez des ressources grâce aux services d’intelligence artificielle en appliquant des balises commerciales contextuelles et descriptives à l’aide du service [!DNL Adobe Sensei] .
 contentOwner: AG
+feature: Balises actives, balisage
+role: Administrateur, Professionnel
 translation-type: tm+mt
-source-git-commit: a1213a1694a50d174b4ad1e7e4ba7c71944b861a
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '2800'
+source-wordcount: '2806'
 ht-degree: 87%
 
 ---
