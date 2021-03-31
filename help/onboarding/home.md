@@ -2,10 +2,10 @@
 title: Intégration à Adobe Experience Manager as a Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation concernant l’intégration à Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 3df1e327b2e0ce4239ad522848bdf2877cd86451
+source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 43%
+source-wordcount: '924'
+ht-degree: 42%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 43%
 
 Félicitations pour avoir commencé votre parcours avec AEM en tant que Cloud Service ! Que vous soyez en train de déployer une nouvelle application ou de migrer une application existante, ce guide vous servira de point de départ pour vous assurer que votre application est optimisée et prête pour la réussite du Cloud Service.
 
-Ce guide vous fournira une liste de vérification pour vous aider, vous et votre équipe, à commencer à utiliser Cloud Manager rapidement. Vous aurez besoin de votre Adobe ID et de l’aide de votre administrateur système pour que les utilisateurs soient ajoutés à Cloud Manager dans leurs rôles assignés (appelés Profils de produits en Admin Console) et les autorisations associées. Les instructions de l&#39;administrateur système pour ce faire via le Admin Console sont décrites [ici](/help/onboarding/what-is-required/add-users-assign-cm-roles.md). La liste des rôles de Cloud Manager, appelés Profils de produits dans le Admin Console et leurs autorisations associées, est détaillée afin que vous puissiez déterminer les rôles nécessaires pour les différents utilisateurs de votre organisation.
+Ce guide vous aidera, ainsi que votre équipe, à démarrer rapidement avec Cloud Manager. Vous aurez besoin de votre Adobe ID et de l’aide de votre administrateur système pour que les utilisateurs soient ajoutés à Cloud Manager dans leurs rôles assignés (appelés Profils de produits en Admin Console) et les autorisations associées. Les instructions permettant à l&#39;administrateur système d&#39;effectuer cette opération via le Admin Console sont décrites. La liste des rôles de Cloud Manager, appelés Profils de produits dans le Admin Console et leurs autorisations associées, est détaillée afin que vous puissiez déterminer les rôles nécessaires pour les différents utilisateurs de votre organisation.
 
-L’image suivante illustre votre parcours d’intégration, en commençant par le courrier électronique de bienvenue reçu par votre administrateur système et en aboutissant à l’accès des utilisateurs à Cloud Manager pour AEM en tant que Cloud Service.
+L’image suivante illustre votre parcours d’intégration, en commençant par le courrier électronique de bienvenue reçu par votre administrateur système et aboutissant à l’accès des utilisateurs à Cloud Manager pour AEM en tant que Cloud Service.
 
 ![](/help/onboarding/what-is-required/assets/cust-journey.png)
 
@@ -28,12 +28,15 @@ Cette section porte sur les articles clés axés sur votre parcours lorsque vous
 
 Une fois votre contrat signé, les événements suivants auront lieu :
 
-1. L’Adobe va terminer l’attribution des privilèges d’accès à votre organisation, après quoi l’administrateur système de votre organisation recevra un e-mail de bienvenue qui lui permettra d’effectuer des [tâches d’administrateur système](/help/onboarding/what-is-required/add-users-assign-cm-roles.md) y compris d’ajouter des utilisateurs, de les affecter à des rôles et de leur donner ainsi l’accès [approprié à Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md).
+1. L’Adobe va terminer l’attribution des privilèges d’accès à votre organisation, après quoi l’administrateur système de votre organisation recevra un e-mail de bienvenue lui permettant d’effectuer des [tâches d’administrateur système](/help/onboarding/what-is-required/add-users-assign-cm-roles.md), y compris d’ajouter des utilisateurs, de les affecter à des rôles et de leur accorder ainsi l’accès [approprié à Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md).
 
-1. Les utilisateurs ajoutés par votre administrateur système recevront à leur tour un e-mail de bienvenue leur indiquant qu’ils ont [accès à Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md). Les utilisateurs peuvent désormais utiliser leur [Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md) pour se connecter et commencer leur parcours avec Cloud Manager à partir d’ici.
+1. Les utilisateurs ajoutés par votre administrateur système recevront à leur tour un courrier électronique de bienvenue leur permettant ainsi de [accéder à Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md). Les utilisateurs peuvent désormais utiliser leur Adobe ID pour se connecter et commencer leur parcours avec Cloud Manager à partir d’ici.
 
+1. Un administrateur système peut [accorder aux utilisateurs l&#39;accès à une instance AEM](/help/onboarding/what-is-required/accessing-aem-instance.md) à des fins de développement.
 
-1. Les utilisateurs peuvent en outre avoir [accès à une instance AEM](/help/onboarding/what-is-required/accessing-aem-instance.md) à des fins de développement.
+**[Obtenez votre Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)**
+
+Vous aurez besoin de votre Adobe ID et de l’aide de votre administrateur système pour que les utilisateurs soient ajoutés à Cloud Manager dans les rôles qui leur sont assignés.
 
 **[Rôles utilisateur et autorisations](/help/onboarding/what-is-required/user-roles-permissions.md)**
 
