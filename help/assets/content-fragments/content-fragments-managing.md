@@ -1,10 +1,12 @@
 ---
 title: Gestion des fragments de contenu
 description: Découvrez comment utiliser la console Ressources pour gérer vos AEM Fragments de contenu, à la base de votre contenu sans en-tête.
+feature: Fragments de contenu
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1644'
 ht-degree: 91%
 
 ---
