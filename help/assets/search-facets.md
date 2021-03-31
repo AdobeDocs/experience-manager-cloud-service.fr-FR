@@ -1,11 +1,13 @@
 ---
 title: Facettes de recherche
 description: Cet article décrit comment créer, modifier et utiliser les facettes de recherche dans AEM.
+feature: Rechercher,Métadonnées
+role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '2376'
-ht-degree: 100%
+source-wordcount: '2381'
+ht-degree: 99%
 
 ---
 
