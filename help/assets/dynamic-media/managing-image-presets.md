@@ -3,10 +3,11 @@ title: Gestion des paramètres d’image prédéfinis
 description: '"Découvrez les paramètres d’image prédéfinis et comment créer, modifier et gérer les paramètres d’image prédéfinis."'
 feature: Paramètres d’image prédéfinis, visionneuses, rendus
 topic: Professionnel
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '3646'
+source-wordcount: '3648'
 ht-degree: 71%
 
 ---
