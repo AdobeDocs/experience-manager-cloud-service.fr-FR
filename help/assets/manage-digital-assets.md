@@ -3,10 +3,12 @@ title: Gestion des ressources numériques
 description: Découvrez les différentes méthodes de gestion et de modification des ressources.
 contentOwner: AG
 mini-toc-levels: 1
+feature: Gestion des ressources,Publication,Collaboration,Traitement des ressources
+role: Professionnel, Architecte, Administrateur
 translation-type: tm+mt
-source-git-commit: 61e3f77b7d503b252a00178cebe654038ac6df83
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '4336'
+source-wordcount: '4346'
 ht-degree: 99%
 
 ---
