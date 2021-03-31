@@ -2,11 +2,13 @@
 title: Formats de fichiers et types MIME pris en charge
 description: Formats de fichier et types MIME pris en charge par [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
 contentOwner: AG
+feature: Gestion des ressources,Rendus
+role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 100%
+source-wordcount: '824'
+ht-degree: 99%
 
 ---
 
