@@ -1,11 +1,13 @@
 ---
 title: Balisage intelligent de vos ressources vidéo
 description: Experience Manager ajoute automatiquement des balises intelligentes contextuelles et descriptives aux vidéos en utilisant [!DNL Adobe Sensei].
+feature: Balises actives, balisage
+role: Administrateur, Professionnel
 translation-type: tm+mt
-source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '1183'
-ht-degree: 100%
+source-wordcount: '1189'
+ht-degree: 99%
 
 ---
 
