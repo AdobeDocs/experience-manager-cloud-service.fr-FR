@@ -2,10 +2,12 @@
 title: Métadonnées XMP
 description: Découvrez la norme de métadonnées XMP (Extensible Metadata Platform) pour la gestion des métadonnées. Elle est utilisée par AEM comme format normalisé pour la création, le traitement et l’échange de métadonnées.
 contentOwner: AG
+feature: 'Métadonnées  '
+role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: c3da535db4bf2b0f71e338f542d388437d6c1623
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '983'
 ht-degree: 76%
 
 ---
