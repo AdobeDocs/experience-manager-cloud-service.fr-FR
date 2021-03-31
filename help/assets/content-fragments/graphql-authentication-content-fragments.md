@@ -1,11 +1,12 @@
 ---
 title: Authentification pour les requêtes AEM GraphQL distantes sur les fragments de contenu
 description: Comprenez l'authentification requise pour les requêtes GraphQL d'AEM distantes afin de sécuriser votre diffusion de contenu sans en-tête.
+feature: Fragments de contenu, API GraphQL
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 86%
+source-wordcount: '235'
+ht-degree: 84%
 
 ---
 
