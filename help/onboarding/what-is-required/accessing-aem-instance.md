@@ -2,9 +2,9 @@
 title: 'Octroi de l’accès utilisateur à une instance AEM '
 description: Suivez cette page pour découvrir comment un administrateur système octroie à l'utilisateur l'accès à une instance AEM
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: 580ac3f734042b3116f505c34629cee0331c0bac
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '295'
 ht-degree: 1%
 
 ---
