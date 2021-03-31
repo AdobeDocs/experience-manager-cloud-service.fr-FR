@@ -2,10 +2,12 @@
 title: Schéma de métadonnées de dossier
 description: Découvrez comment créer des schémas de métadonnées pour des dossiers de ressources dans [!DNL Experience Manager Assets]
 contentOwner: AG
+feature: 'Métadonnées  '
+role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1033'
 ht-degree: 100%
 
 ---
