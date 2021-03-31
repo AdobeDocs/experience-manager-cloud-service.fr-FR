@@ -3,10 +3,12 @@ title: Gestion des collections de ressources numériques
 description: Découvrez le concept de collection dans Adobe Experience Manager Assets. Apprenez à créer, gérer, modifier et partager des collections avec d’autres utilisateurs.
 contentOwner: AG
 mini-toc-levels: 1
+feature: Collections, Gestion des ressources
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '2397'
+source-wordcount: '2402'
 ht-degree: 97%
 
 ---
