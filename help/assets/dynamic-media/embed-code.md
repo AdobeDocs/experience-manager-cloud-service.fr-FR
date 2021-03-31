@@ -3,10 +3,11 @@ title: Intégration de la visionneuse de vidéos ou d’images Dynamic Media dan
 description: Découvrez comment intégrer des ressources d’images ou des vidéos Dynamic Media dans une page web.
 feature: Gestion des ressources
 topic: Professionnel
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '378'
 ht-degree: 96%
 
 ---
