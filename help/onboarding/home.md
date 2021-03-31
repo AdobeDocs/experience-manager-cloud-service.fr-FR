@@ -2,9 +2,9 @@
 title: Intégration à Adobe Experience Manager as a Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation concernant l’intégration à Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 175cddb9e36422b3896efc76ac58183829b364b3
+source-git-commit: 826c15ecca494f98fbe7a4c3ef129a45bd4cea7c
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '923'
 ht-degree: 42%
 
 ---
@@ -16,7 +16,7 @@ Félicitations pour avoir commencé votre parcours avec AEM en tant que Cloud Se
 
 Ce guide vous aidera, ainsi que votre équipe, à démarrer rapidement avec Cloud Manager. Vous aurez besoin de votre Adobe ID et de l’aide de votre administrateur système pour que les utilisateurs soient ajoutés à Cloud Manager dans leurs rôles assignés (appelés Profils de produits en Admin Console) et les autorisations associées. Les instructions permettant à l&#39;administrateur système d&#39;effectuer cette opération via le Admin Console sont décrites. La liste des rôles de Cloud Manager, appelés Profils de produits dans le Admin Console et leurs autorisations associées, est détaillée afin que vous puissiez déterminer les rôles nécessaires pour les différents utilisateurs de votre organisation.
 
-L’image suivante illustre votre parcours d’intégration, en commençant par le courrier électronique de bienvenue reçu par votre administrateur système et aboutissant à l’accès des utilisateurs à Cloud Manager pour AEM en tant que Cloud Service.
+L’image suivante illustre votre parcours d’intégration, en commençant par le courrier électronique de bienvenue reçu par votre administrateur système et en aboutissant à l’accès des utilisateurs à Cloud Manager pour AEM en tant que Cloud Service.
 
 ![](/help/onboarding/what-is-required/assets/cust-journey.png)
 
