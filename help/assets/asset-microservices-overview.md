@@ -2,11 +2,13 @@
 title: Traitement des ressources à l’aide des microservices de ressources
 description: Traitez vos ressources numériques à l’aide de microservices de traitement des ressources évolutifs et natifs en mode cloud.
 contentOwner: AG
+feature: asset compute Microservices, Workflow, Informations sur la publication, Traitement des ressources
+role: Architecte, Administrateur
 translation-type: tm+mt
-source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 100%
+source-wordcount: '839'
+ht-degree: 98%
 
 ---
 
