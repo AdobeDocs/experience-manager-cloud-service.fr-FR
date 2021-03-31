@@ -3,10 +3,11 @@ title: Newsletter Dynamic Media
 description: 'La newsletter Dynamic Media d’Experience League est un bulletin d’information mensuel. Il est conçu pour vous aider à vous familiariser avec Dynamic Media et Dynamic Media Classic afin que vous puissiez commencer à en tirer parti immédiatement. De précieuses ressources de renforcement des connaissances sont disponibles dans ce bulletin d''information à guichet unique. Par exemple, il existe des vidéos pratiques et des aperçus de solution. Découvrez quelques-unes des principales fonctionnalités et fonctionnalités telles que les paramètres d’image prédéfinis, les paramètres prédéfinis de la visionneuse, les profils vidéo, etc. '
 feature: Gestion des ressources
 topic: '"Administrateur, Professionnel"'
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1157'
 ht-degree: 69%
 
 ---
