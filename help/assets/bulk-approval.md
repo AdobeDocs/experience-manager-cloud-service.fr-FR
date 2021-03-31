@@ -2,11 +2,13 @@
 title: Vérification de ressources dans des dossiers et des collections
 description: Mettez en place des workflows de révision pour les ressources dans un dossier ou une collection et partagez ce workflow avec les réviseurs ou les partenaires de conception afin d’obtenir leurs commentaires.
 contentOwner: AG
+feature: Collections, Collaboration
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 100%
+source-wordcount: '797'
+ht-degree: 99%
 
 ---
 
