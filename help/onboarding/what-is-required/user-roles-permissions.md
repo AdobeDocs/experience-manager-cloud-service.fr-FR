@@ -2,10 +2,10 @@
 title: Rôles utilisateur et autorisations
 description: Cette page décrit les rôles utilisateur et les autorisations. Suivez cette page pour savoir comment ajouter des utilisateurs et les affecter à des rôles Cloud Manager.
 translation-type: tm+mt
-source-git-commit: 683e660bace4bf2d21ab6b373c75f78e306f5206
+source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 30%
+source-wordcount: '449'
+ht-degree: 28%
 
 ---
 
@@ -14,11 +14,9 @@ ht-degree: 30%
 
 ## Rôles utilisateur {#user-roles}
 
-La plupart des fonctionnalités de Cloud Manager nécessitent des autorisations spécifiques.
-
 De nombreuses fonctionnalités de Cloud Manager nécessitent des autorisations spécifiques pour fonctionner et limitent les actions que vous effectuez dans l’interface utilisateur en fonction des rôles et autorisations attribués. Dans certains cas, si vous n&#39;êtes pas autorisé à effectuer une action, le contrôle d&#39;interface est présent, mais désactivé.
 
-Si vous souhaitez exécuter une action, mais ne pouvez pas l&#39;effectuer, vérifiez les [autorisations associées aux définitions de rôles](#permissions). Selon votre objectif, vous pouvez contacter l&#39;administrateur système et demander le rôle dont vous avez besoin.
+Si vous souhaitez exécuter une action, mais que vous ne pouvez pas, cochez la section suivante, [Rôles utilisateur et autorisations](#permissions). Selon votre objectif, vous pouvez contacter l&#39;administrateur système et demander le rôle dont vous avez besoin.
 
 Cloud Manager définit actuellement quatre rôles pour les utilisateurs qui régissent la disponibilité de fonctionnalités spécifiques :
 
@@ -34,6 +32,9 @@ Cloud Manager définit actuellement quatre rôles pour les utilisateurs qui rég
 
 Pour vue votre rôle dans Cloud Manager, connectez-vous à l’interface utilisateur de Cloud Manager, sélectionnez l’icône de votre profil dans le coin supérieur droit et sélectionnez **Rôles utilisateur**, comme illustré dans la figure ci-dessous.
 
+>[!NOTE]
+>Voir [Accédez à Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) pour en savoir plus sur la connexion à Cloud Manager.
+
 ![](/help/onboarding/what-is-required/assets/admin-console-9.png)
 
 ### Profil du produit d&#39;intégration {#integration-product-profile}
@@ -41,7 +42,7 @@ Pour vue votre rôle dans Cloud Manager, connectez-vous à l’interface utilisa
 Outre ce qui précède, Cloud Manager crée automatiquement un profil de produits nommé &quot;Intégrations - Cloud Service&quot;. Ce profil de produits est utilisé pour les intégrations entre Adobe Experience Manager et d&#39;autres produits d&#39;Adobe. Ce profil de produit **ne doit pas** être supprimé. Si vous supprimez accidentellement ce profil, il doit être recréé manuellement. Le nom d&#39;affichage de ce profil **doit** être `CM_CS_DEFAULT`.
 
 
-## Autorisations associées aux définitions de rôle {#permissions}
+## Rôles utilisateur et autorisations {#permissions}
 
 [!UICONTROL Cloud Manager] dispose de rôles préconfigurés avec les autorisations appropriées. Par exemple, un développeur développe du code et a l’autorisation de placer le code dans le **référentiel Git**. Un propriétaire d’entreprise dispose également de différentes autorisations lui permettant d’ajouter et de modifier des programmes, d’ajouter des environnements et d’approuver des déploiements.
 
