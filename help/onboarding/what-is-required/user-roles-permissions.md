@@ -2,7 +2,7 @@
 title: Rôles de Cloud Manager
 description: Cette page décrit les rôles utilisateur et les autorisations. Suivez cette page pour savoir comment ajouter des utilisateurs et les affecter à des rôles Cloud Manager.
 translation-type: tm+mt
-source-git-commit: f518cab23b1dadceee5800b3454f74d341e941c4
+source-git-commit: e5754366cd0efa08af4c3717481743ab94dc2099
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 19%
@@ -65,7 +65,7 @@ Le tableau suivant récapitule les rôles et les autorisations associées dans C
 | Programme d’Ajoute<br>Modifier le Programme | Ajoutez un nouveau Programme.<br>Modifier un programme : Ajouter ou supprimer des solutions ou des modules complémentaires | x |  |  |  |
 | Créer un Environnement | Créer des Environnements Prod+Stage, Dev. | x | x |  |  |
 | Mettre à jour l’environnement | Mettre à jour Prod+Stage, Dev, Environnements. | x | x |  |  |
-| Supprimer l’environnement | Supprimer les Environnements non-prod, Dev. | x | x |  |  |
+| Supprimer l&#39;Environnement de développement | Supprimer les Environnements de développement. | x | x |  |  |
 | Configuration du tuyau | Configuration ou modification du tuyau. |  | x |  |  |
 | Exécution du pipeline | Début du pipeline. | x | x |  |  |
 | Exécution du pipeline | Rejeter/Approuver les échecs importants à trois niveaux. | x | x | x |  |
