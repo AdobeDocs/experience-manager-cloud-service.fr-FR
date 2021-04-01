@@ -2,9 +2,9 @@
 title: 'Tâches de l''administrateur système '
 description: Suivez cette page pour savoir comment ajouter des utilisateurs et les affecter à des rôles Cloud Manager en tant qu’administrateur système
 translation-type: tm+mt
-source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
+source-git-commit: 3afed5a76c7dd82952ed15f582b7f2c7a36b9db9
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Un administrateur système effectue les tâches d&#39;organisation suivantes :
    ![](/help/onboarding/what-is-required/assets/admin-console-3.png)
 
    >[!NOTE]
-   >Reportez-vous aux sections [Rôles utilisateur et autorisations](#user-roles) et [Permissions associées aux définitions de rôles](#permissions) pour vous assurer que les utilisateurs appropriés se voient attribuer le ou les rôles appropriés dans le **Admin Console**.
+   >Reportez-vous à [Roles de Cloud Manager](/help/onboarding/what-is-required/user-roles-permissions.md) pour en savoir plus sur les rôles et les autorisations proposés dans Cloud Manager.
 
    Vous avez maintenant ajouté des utilisateurs à Adobe Experience Manager en tant que contexte de produit Cloud Service et vous avez configuré les rôles ou Profils de produits appropriés.
 
