@@ -1,10 +1,10 @@
 ---
-title: Rôles utilisateur et autorisations
+title: Rôles de Cloud Manager
 description: Cette page décrit les rôles utilisateur et les autorisations. Suivez cette page pour savoir comment ajouter des utilisateurs et les affecter à des rôles Cloud Manager.
 translation-type: tm+mt
-source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
+source-git-commit: f518cab23b1dadceee5800b3454f74d341e941c4
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '567'
 ht-degree: 19%
 
 ---
