@@ -2,7 +2,7 @@
 title: Rôles de Cloud Manager
 description: Cette page décrit les rôles utilisateur et les autorisations. Suivez cette page pour savoir comment ajouter des utilisateurs et les affecter à des rôles Cloud Manager.
 translation-type: tm+mt
-source-git-commit: e5754366cd0efa08af4c3717481743ab94dc2099
+source-git-commit: 7b5973aef0d3296a54bcf1e57bda616cdd618346
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 19%
@@ -30,7 +30,7 @@ Cloud Manager définit actuellement quatre rôles pour les utilisateurs qui rég
 
 ## Affichage de vos rôles {#view-roles}
 
-Pour vue votre rôle dans Cloud Manager, connectez-vous à l’interface utilisateur de Cloud Manager, sélectionnez l’icône de votre profil dans le coin supérieur droit et sélectionnez **Rôles utilisateur**, comme illustré dans la figure ci-dessous.
+Pour vue de vos rôles dans Cloud Manager, connectez-vous à l’interface utilisateur de Cloud Manager, sélectionnez l’icône de votre profil dans le coin supérieur droit et sélectionnez **Rôles utilisateur**, comme illustré dans la figure ci-dessous.
 
 >[!NOTE]
 >Voir [Accédez à Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) pour en savoir plus sur la connexion à Cloud Manager.
