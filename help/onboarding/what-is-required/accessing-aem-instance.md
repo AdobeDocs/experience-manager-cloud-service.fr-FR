@@ -2,9 +2,9 @@
 title: 'Octroi de l’accès utilisateur à une instance AEM '
 description: Suivez cette page pour découvrir comment un administrateur système octroie à l'utilisateur l'accès à une instance AEM
 translation-type: tm+mt
-source-git-commit: 580ac3f734042b3116f505c34629cee0331c0bac
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '284'
 ht-degree: 1%
 
 ---
@@ -17,13 +17,13 @@ En tant qu’administrateur système, suivez les étapes ci-dessous pour accorde
 1. Accédez à Cloud Manager et cliquez sur le bouton **Gérer l’accès** à partir de la carte **Environnements**, comme indiqué ci-dessous.
 
    >[!NOTE]
-   >Vous devez être administrateur système ou l&#39;utilisateur qui a créé l&#39;environnement pour pouvoir ajouter un utilisateur dans le Admin Console. Seuls les rôles Business Owner ou Deployment Manager sont autorisés à créer un environnement. Consultez [Rôles utilisateur et autorisations](/help/onboarding/what-is-required/user-roles-permissions.md) pour en savoir plus sur les rôles et les autorisations associées. De plus, consultez [Gestion des Environnements](/help/implementing/cloud-manager/manage-environments.md) pour en savoir plus sur les environnements.
+   >Vous devez être administrateur système ou l&#39;utilisateur qui a créé l&#39;environnement pour pouvoir ajouter un utilisateur dans le Admin Console. Seuls les rôles Business Owner ou Deployment Manager sont autorisés à créer un environnement. Consultez [Rôles Cloud Manager](/help/onboarding/what-is-required/user-roles-permissions.md) pour en savoir plus sur les rôles et les autorisations associées. De plus, consultez [Gestion des Environnements](/help/implementing/cloud-manager/manage-environments.md) pour en savoir plus sur les environnements.
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin6.png)
 
    Ou,
 
-   **Vous pouvez également gérer** les accès à partir du bouton  **** Gestion si vous cliquez sur  **** Détails dans le panneau  **** Environnement.
+   Dans la page **Environnements**, sélectionnez **Gérer** —> **Gérer l&#39;accès**.
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin4.png)
 
