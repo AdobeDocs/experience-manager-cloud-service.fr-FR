@@ -7,10 +7,10 @@ feature-set: Experience Manager Sites
 feature: Déploiement
 role: Architecte, développeur
 translation-type: tm+mt
-source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 91%
+source-wordcount: '673'
+ht-degree: 92%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 91%
 + [Intégration à AEM as a Cloud Service](/help/onboarding/home.md)
 + Prise en main de AEM en tant que Cloud Service {#what-is-required}
    + [Obtenez votre Adobe ID](what-is-required/get-your-adobe-id.md)
-   + [Rôles utilisateur et autorisations](what-is-required/user-roles-permissions.md)
+   + [Rôles de Cloud Manager](what-is-required/user-roles-permissions.md)
    + [Tâches de l&#39;administrateur système](what-is-required/add-users-assign-cm-roles.md)
    + [Accéder à Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
    + [Octroi de l’accès utilisateur à une instance AEM](/help/onboarding/what-is-required/accessing-aem-instance.md)
