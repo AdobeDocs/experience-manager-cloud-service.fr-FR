@@ -2,9 +2,9 @@
 title: Intégration à Adobe Experience Manager as a Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation concernant l’intégration à Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 826c15ecca494f98fbe7a4c3ef129a45bd4cea7c
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '922'
 ht-degree: 42%
 
 ---
@@ -38,7 +38,7 @@ Une fois votre contrat signé, les événements suivants auront lieu :
 
 Vous aurez besoin de votre Adobe ID et de l’aide de votre administrateur système pour que les utilisateurs soient ajoutés à Cloud Manager dans les rôles qui leur sont assignés.
 
-**[Rôles utilisateur et autorisations](/help/onboarding/what-is-required/user-roles-permissions.md)**
+**[Rôles de Cloud Manager](/help/onboarding/what-is-required/user-roles-permissions.md)**
 
 Votre administrateur système peut ajouter des utilisateurs et les affecter à des rôles Cloud Manager. Cette section vous aide à comprendre les *rôles de Cloud Manager* et les autorisations associées aux rôles avant de commencer.
 
