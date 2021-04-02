@@ -5,15 +5,15 @@ contentOwner: AG
 feature: API,API HTTP Assets
 role: Développeur, architecte, administrateur
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt
-source-wordcount: '1395'
-ht-degree: 93%
+source-wordcount: '1397'
+ht-degree: 92%
 
 ---
 
 
-# [!DNL Adobe Experience Manager Assets] API et supports de référence pour le développeur {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] cas d’utilisation des développeurs, API et matériel de référence  {#assets-cloud-service-apis}
 
 L’article contient des recommandations, des documents de référence et des ressources pour les développeurs de [!DNL Assets] as a [!DNL Cloud Service]. Il comprend un nouveau module de chargement de ressources, des références d’API et des informations sur la prise en charge fournie dans les workflows de post-traitement.
 
