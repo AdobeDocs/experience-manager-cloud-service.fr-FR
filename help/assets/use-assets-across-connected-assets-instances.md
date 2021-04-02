@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Gestion des ressources,Ressources connectées,Répartition des ressources
 role: Administrateur, Professionnel, Architecte
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt
-source-wordcount: '2908'
-ht-degree: 91%
+source-wordcount: '2902'
+ht-degree: 92%
 
 ---
 
@@ -120,9 +120,9 @@ Vous pouvez configurer une connexion entre le déploiement [!DNL Sites] et le d�
 
 Pour configurer cette connexion, procédez comme suit.
 
-1. Créez la configuration des ressources connectées comme décrit ci-dessus. Cochez la case **[!UICONTROL Récupérer le rendu d’origine pour [!DNL Dynamic Media] Fichiers connectés]** dans la boîte de dialogue.
+1. Créez la configuration des ressources connectées comme décrit ci-dessus. Lors de la configuration de la fonctionnalité, sélectionnez l’option **[!UICONTROL Récupérer le rendu d’origine pour les ressources connectées à Dynamic Media]**.
 
-1. Configurez [!DNL Dynamic Media] sur les déploiements locaux [!DNL Sites] et distants [!DNL Assets]. Suivez les instructions pour [configurer [!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html#configuring-dynamic-media-cloud-services).
+1. Configurez [!DNL Dynamic Media] sur les déploiements locaux [!DNL Sites] et distants [!DNL Assets]. Suivez les instructions pour [configurer [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
    * Utilisez le même nom de société dans toutes les configurations.
    * Sur le [!DNL Sites] local, en [!UICONTROL mode de synchronisation Dynamic Media], sélectionnez **[!UICONTROL Désactivé par défaut]**. Le déploiement des sites n&#39;a besoin que d&#39;un accès en lecture seule au compte [!DNL Dynamic Media].
