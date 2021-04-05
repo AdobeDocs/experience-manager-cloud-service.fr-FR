@@ -4,14 +4,14 @@ description: Créer, lire, mettre à jour, supprimer et gérer des ressources nu
 contentOwner: AG
 feature: API HTTP des ressources,API
 role: Développeur, architecte, administrateur
+exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: b989833b7f1fa0c3de91f96e28a21859d97294cb
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 70%
+source-wordcount: '1522'
+ht-degree: 69%
 
 ---
-
 
 # API HTTP [!DNL Adobe Experience Manager Assets] {#assets-http-api}
 
@@ -268,6 +268,8 @@ Supprime une ressource (arborescence) pour le chemin indiqué.
 ## Conseils, bonnes pratiques et limites {#tips-limitations}
 
 * Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne sont plus disponibles via l’interface web [!DNL Assets] ni par le biais de l’API HTTP. L’API renvoie un message d’erreur 404 si l’[!UICONTROL heure d’activation] se situe dans le futur ou si l’[!UICONTROL heure de désactivation] se situe dans le passé.
+
+* L’API HTTP Assets ne renvoie pas les métadonnées complètes. Les espaces de nommage sont codés en dur et seuls ces espaces de nommage sont renvoyés. Pour obtenir des métadonnées complètes, voir le chemin d’accès au fichier `/jcr_content/metadata.json`.
 
 * Certaines propriétés de dossier ou de fichier sont mises en correspondance avec un préfixe différent lors de la mise à jour à l’aide d’API. Le préfixe `jcr` de `jcr:title`, `jcr:description` et `jcr:language` est remplacé par le préfixe `dc`. Par conséquent, dans le JSON renvoyé, `dc:title` et `dc:description` contiennent respectivement les valeurs de `jcr:title` et `jcr:description`.
 
