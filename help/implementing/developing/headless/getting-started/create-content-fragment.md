@@ -1,14 +1,14 @@
 ---
 title: Guide de démarrage rapide sur la création de fragments de contenu découplés
 description: Découvrez comment utiliser AEM Fragments de contenu pour concevoir, créer, traiter et utiliser du contenu indépendant des pages pour une diffusion sans en-tête.
+exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 088fa5c90d549c52ca2832bd026be4fcddb31b78
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 90%
+source-wordcount: '392'
+ht-degree: 89%
 
 ---
-
 
 # Guide de démarrage rapide sur la création de fragments de contenu découplés {#creating-content-fragments}
 
@@ -43,7 +43,7 @@ Les auteurs de contenu créeront tout nombre de fragments de contenu pour repré
 1. Fournissez les détails du fragment de contenu dans l’éditeur de fragment de contenu.
 
    ![Éditeur de fragment de contenu](../assets/content-fragment-edit.png)
-1. Appuyez/cliquez sur **Enregistrer et fermer**.
+1. Appuyez ou cliquez sur **Enregistrer** ou **Enregistrer et fermer**.
 
 Les fragments de contenu peuvent faire référence à d’autres fragments de contenu, ce qui permet d’obtenir une structure de contenu imbriquée si nécessaire.
 
