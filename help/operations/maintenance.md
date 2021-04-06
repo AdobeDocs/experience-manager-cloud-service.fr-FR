@@ -3,10 +3,10 @@ title: Tâches de maintenance dans AEM as a Cloud Service
 description: Tâches de maintenance dans AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: d53d34e86b5e5bac6a66be8d288cf4ab8fb00ac4
+source-git-commit: 8fbed9ddc872b8caf0a9b15a7578e34a817e4e42
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 98%
+source-wordcount: '925'
+ht-degree: 96%
 
 ---
 
@@ -54,8 +54,8 @@ Les clients peuvent planifier chacune des tâches de maintenance Purger le workf
     <td>Quotidienne</td>
     <td>Client</td>
     <td>Définition de nœud JCR</td>
-    <td>/apps/settings/granite/operations/maintenance/granite_daily</td>
-    <td>Voir l’exemple de code 1 bel</td>
+    <td>Voir l’emplacement 1 ci-dessous</td>
+    <td>Voir l’exemple de code 1 ci-dessous</td>
    <td>
     <ul>
     <li><strong>windowSchedule</strong> = daily (cette valeur ne doit pas être modifiée)</li>
@@ -67,7 +67,7 @@ Les clients peuvent planifier chacune des tâches de maintenance Purger le workf
     <td>Hebdomadaire</td>
     <td>Client</td>
     <td>Définition de nœud JCR</td>
-    <td><code>/apps/settings/granite/operations/maintenance/granite_weekly</code></td>
+    <td>Voir l'emplacement 2 ci-dessous</td>
     <td>Voir l’exemple de code 2 ci-dessous</td>
      <td>
     <ul>
@@ -81,7 +81,7 @@ Les clients peuvent planifier chacune des tâches de maintenance Purger le workf
     <td>Mensuel</td>
     <td>Client</td>
     <td>Définition de nœud JCR</td>
-    <td><code>/apps/settings/granite/operations/maintenance/granite_monthly</code></td>
+    <td>Voir l'emplacement 3 ci-dessous</td>
     <td>Voir l’exemple de code 3 ci-dessous</td>
      <td>
     <ul>
@@ -93,6 +93,14 @@ Les clients peuvent planifier chacune des tâches de maintenance Purger le workf
     </ul> </td> 
   </tr>
 </table>
+
+Emplacements:
+
+1. /apps/settings/granite/operations/maintenance/granite_daily
+2. /apps/settings/granite/operations/maintenance/granite_weekly
+3. /apps/settings/granite/operations/maintenance/granite_mensuel
+
+Exemples de code :
 
 Exemple de code 1
 
