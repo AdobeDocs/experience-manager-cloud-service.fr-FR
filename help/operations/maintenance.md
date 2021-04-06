@@ -1,14 +1,14 @@
 ---
 title: Tâches de maintenance dans AEM as a Cloud Service
-description: 'Tâches de maintenance dans AEM as a Cloud Service '
+description: Tâches de maintenance dans AEM as a Cloud Service
+exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: c3af507716ef60541ecca8dafb797651e8ece9d3
+source-git-commit: d53d34e86b5e5bac6a66be8d288cf4ab8fb00ac4
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 100%
+source-wordcount: '899'
+ht-degree: 98%
 
 ---
-
 
 # Tâches de maintenance dans AEM as a Cloud Service
 
@@ -54,8 +54,8 @@ Les clients peuvent planifier chacune des tâches de maintenance Purger le workf
     <td>Quotidienne</td>
     <td>Client</td>
     <td>Définition de nœud JCR</td>
-    <td><code>/apps/settings/granite/operations/maintenance/granite_daily </code></td>
-    <td>Voir l’exemple de code 1 ci-dessous</td>
+    <td>/apps/settings/granite/operations/maintenance/granite_daily</td>
+    <td>Voir l’exemple de code 1 bel</td>
    <td>
     <ul>
     <li><strong>windowSchedule</strong> = daily (cette valeur ne doit pas être modifiée)</li>
