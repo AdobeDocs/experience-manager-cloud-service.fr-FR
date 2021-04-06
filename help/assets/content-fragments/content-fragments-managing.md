@@ -3,20 +3,30 @@ title: Gestion des fragments de contenu
 description: Découvrez comment utiliser la console Ressources pour gérer vos AEM Fragments de contenu, à la base de votre contenu sans en-tête.
 feature: Fragments de contenu
 role: Professionnel
+exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 114b38142f01b56652a7b840501f7420fdc25562
 workflow-type: tm+mt
-source-wordcount: '1644'
-ht-degree: 91%
+source-wordcount: '1748'
+ht-degree: 78%
 
 ---
-
 
 # Gestion des fragments de contenu {#managing-content-fragments}
 
 Découvrez comment utiliser la console Ressources pour gérer vos AEM Fragments de contenu, à la base de votre contenu sans en-tête.
 
-Les fragments de contenu sont stockés en tant que **Ressources**, et ils sont donc principalement gérés par l’intermédiaire de la console **Ressources**.
+Après avoir défini vos [modèles de fragments de contenu](#creating-a-content-model), vous pouvez les utiliser pour [créer vos fragments de contenu](#creating-a-content-fragment).
+
+L&#39;[éditeur de fragments de contenu](#opening-the-fragment-editor) fournit divers [modes](#modes-in-the-content-fragment-editor) pour vous permettre d&#39;effectuer les opérations suivantes :
+
+* [Modifier le ](#editing-the-content-of-your-fragment) contenu et  [gérer les variantes](#creating-and-managing-variations-within-your-fragment)
+* [Annoter votre fragment](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+* [Association de contenu à votre fragment](#associating-content-with-your-fragment)
+* [Configuration des métadonnées](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+* [Vue de l&#39;arborescence de structure](/help/assets/content-fragments/content-fragments-structure-tree.md)
+* [Prévisualisation de la représentation JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
+
 
 >[!NOTE]
 >
@@ -25,6 +35,10 @@ Les fragments de contenu sont stockés en tant que **Ressources**, et ils sont d
 >* lors de la création de pages ; voir [Création de pages avec des fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 >* pour la [Diffusion de contenu découplé utilisant des fragments de contenu avec GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
+
+>[!NOTE]
+>
+>Les fragments de contenu sont stockés en tant que **Ressources**, et ils sont donc principalement gérés par l’intermédiaire de la console **Ressources**.
 
 ## Création de fragments de contenu {#creating-content-fragments}
 
@@ -135,11 +149,15 @@ Pour ouvrir votre fragment à des fins de modification :
 
    ![éditeur de fragment](assets/cfm-managing-03.png)
 
-1. Après avoir apporté des modifications, utilisez **Enregistrer et fermer** ou **Annuler** selon les besoins.
+1. Après avoir apporté des modifications, utilisez **Save**, **Save &amp; close** ou **Close**, selon les besoins.
 
    >[!NOTE]
    >
-   >**Enregistrer et fermer** et **Annuler** quitteront l&#39;éditeur. Pour plus d&#39;informations sur le fonctionnement des deux options pour les fragments de contenu, voir [Enregistrer, Annuler et Versions](#save-cancel-and-versions).
+   >**Save &amp;** close est disponible via la  **** liste déroulante des options.
+
+   >[!NOTE]
+   >
+   >**Enregistrer et fermer** et **Fermer** quitteront l’éditeur. Pour plus d’informations sur le fonctionnement des différentes options pour les fragments de contenu, voir [Enregistrer, fermer et versions](#save-close-and-versions).
 
 ## Modes et actions dans l’éditeur de fragment de contenu {#modes-actions-content-fragment-editor}
 
@@ -181,21 +199,29 @@ Certaines fonctions de la barre d’outils supérieure sont disponibles dans dif
    * **Modifié** : orange
    * **Désactivé** : rouge
 
+* **** Savepermet d’accéder à l’option  **Enregistrer et** fermer.
+
 * Les trois points (**...La liste déroulante**) permet d’accéder à d’autres actions :
+   * **Mettre à jour les références de page**
+      * Ceci met à jour toutes les références de page.
    * **[Publication rapide](#publishing-and-referencing-a-fragment)**
    * **[Gérer la publication](#publishing-and-referencing-a-fragment)**
 
-## Enregistrement, annulation et versions  {#save-cancel-and-versions}
+<!--
+This updates any page references and ensures that the Dispatcher is flushed as required. -->
+
+## Enregistrer, fermer et versions {#save-close-and-versions}
 
 >[!NOTE]
 >
 >Les versions peuvent également être [créées, comparées et rétablies à partir de la chronologie](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
-L’éditeur possède deux options :
+L’éditeur propose différentes options :
 
-* **Enregistrer**
+* **** Enregistrer et  **Enregistrer et fermer**
 
-   Enregistre les dernières modifications et quitte l’éditeur.
+   * **** Saveenregistrer les dernières modifications et rester dans l&#39;éditeur.
+   * **Enregistrer et** fermer enregistrera les dernières modifications et quittera l&#39;éditeur.
 
    >[!CAUTION]
    >
@@ -203,20 +229,19 @@ L’éditeur possède deux options :
 
    >[!NOTE]
    >
-   >Pour rester dans l’éditeur, il suffit d’apporter une série de modifications avant de sélectionner **Enregistrer**.
+   >Il est possible de rester dans l&#39;éditeur, en effectuant une série de modifications, avant d&#39;enregistrer.
 
    >[!CAUTION]
    >
-   >En plus d&#39;enregistrer simplement vos modifications, **Save** met également à jour toutes les références et s&#39;assure que le Répartiteur est vidé selon les besoins. Le traitement de ces modifications peut prendre un certain temps. Cela peut donc avoir un impact sur les performances d’un système étendu/complexe/fortement chargé.
+   >En plus d&#39;enregistrer simplement vos modifications, les actions mettent également à jour les références et s&#39;assurent que le Répartiteur est vidé selon les besoins. Le traitement de ces modifications peut prendre un certain temps. Cela peut donc avoir un impact sur les performances d’un système étendu/complexe/fortement chargé.
    >
-   >
-   >Veuillez en tenir compte lorsque vous exécutez **Enregistrer**, puis rouvrez aussitôt l’éditeur de fragments afin d’apporter d’autres modifications et de les enregistrer.
+   >N’oubliez pas ce point lorsque vous utilisez **Enregistrer et fermer**, puis que vous entrez de nouveau rapidement dans l’éditeur de fragments pour effectuer et enregistrer d’autres modifications.
 
-* **Annuler**
+* **Fermer**
 
-   Ferme l’éditeur sans enregistrer les dernières modifications.
+   Quitte l&#39;éditeur sans enregistrer les dernières modifications (c&#39;est-à-dire depuis le dernier **Enregistrer**).
 
-Lorsque vous modifiez votre fragment de contenu, AEM crée automatiquement des versions pour que le contenu précédent puisse être restauré si vous **annulez** les modifications :
+Lors de la modification de votre fragment de contenu, AEM crée automatiquement des versions pour vous assurer que le contenu précédent peut être restauré si vous annulez vos modifications (en utilisant **Fermer** sans enregistrer) :
 
 1. Lorsqu’un fragment de contenu est ouvert pour modification, AEM vérifie l’existence d’un jeton basé sur les cookies indiquant s’il existe une *session de modification* :
 
@@ -232,7 +257,7 @@ Lorsque vous modifiez votre fragment de contenu, AEM crée automatiquement des v
    >Valeur par défaut, voir :
    >  `/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
-3. Si l’utilisateur choisit d’**annuler** la modification, la version créée au début de la session de modification est restaurée et le jeton est supprimé afin de mettre fin à la session de modification.
+3. Si l’utilisateur annule la modification, la version créée au début de la session de modification est restaurée et le jeton est supprimé pour terminer la session de modification.
 4. Si l’utilisateur choisit d’**enregistrer** les modifications apportées, les éléments/variations mis à jour sont conservés et le jeton est supprimé pour mettre fin à la session de modification.
 
 ## Modification du contenu du fragment {#editing-the-content-of-your-fragment}
@@ -296,7 +321,7 @@ Cette opération va ouvrir :
 
 * la version sélectionnée **v&lt;*x.y*>** (à droite).
 
-Elles seront affichées côte à côte, où :
+Ils seront présentés côte à côte, où :
 
 * Les différences sont mises en surbrillance.
 
