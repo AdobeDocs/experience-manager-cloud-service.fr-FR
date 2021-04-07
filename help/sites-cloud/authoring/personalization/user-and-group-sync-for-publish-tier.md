@@ -1,20 +1,20 @@
 ---
 title: 'Enregistrement, connexion et profil utilisateur '
-description: En savoir plus sur l’enregistrement, la connexion et le profil utilisateur au niveau Publication
+description: En savoir plus sur l'abonnement, la connexion, les données utilisateur et la synchronisation de groupes pour AEM en tant que Cloud Service
+exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 translation-type: tm+mt
-source-git-commit: 2c00c3723c3c84365044b5cd2fe6779de0360736
+source-git-commit: 4d76d8bac41e19168abb1819841dfc62be07ea0c
 workflow-type: tm+mt
-source-wordcount: '1164'
-ht-degree: 100%
+source-wordcount: '1177'
+ht-degree: 94%
 
 ---
-
 
 # Enregistrement, connexion et profil utilisateur {#registration-login-and-userprofile}
 
 ## Présentation {#introduction}
 
-Les applications web offrent souvent des fonctions de gestion de compte permettant aux utilisateurs finaux de s’inscrire sur un site web. Ils peuvent ainsi conserver leurs informations de profil utilisateur pour se connecter ultérieurement et bénéficier d’une expérience cohérente. Cet article décrit :
+Les Applications web offrent souvent des fonctions de gestion de compte permettant aux utilisateurs finaux de s’enregistrer sur un site Web, ce qui permet de conserver leurs données d’utilisateur, leur permettant de se connecter ultérieurement et de bénéficier d’une expérience cohérente. Cet article décrit les concepts suivants pour AEM en tant que Cloud Service :
 
 * L’enregistrement
 * La connexion
