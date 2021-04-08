@@ -3,9 +3,9 @@ title: 'Modification d’un Programme de production '
 description: Modification d’un Programme de production
 exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: 6ad0e83f865572ff6eb1c20ee6851c3eb48f2311
+source-git-commit: 87d4e7d17b6a035a1127b8f8599214bfd763644a
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -47,6 +47,6 @@ Pour modifier un programme de production, procédez comme suit :
 
 Peu de considérations doivent être examinées lors de la modification d’un programme :
 
-* Au moins une solution doit être sélectionnée pour un Programme, c&#39;est-à-dire que l&#39;utilisateur ne sera pas autorisé à désélectionner toutes les solutions pendant le processus de modification du programme.
+* Au moins une solution doit être sélectionnée pour un Programme : l’utilisateur n’est pas autorisé à désélectionner toutes les solutions pendant le processus de modification du programme.
 
 * Cliquez sur le bouton **Enregistrer**, si les solutions sélectionnées ont changé, les mises à jour des solutions apportées aux environnements prendront effet après le prochain déploiement.
