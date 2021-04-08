@@ -3,15 +3,15 @@ title: Visionneuses d’images
 description: Découvrez comment utiliser des visionneuses d’images dans Dynamic Media.
 feature: Visionneuses d’images
 topic: Professionnel
-role: Professionnel
+role: Business Practitioner
+exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2051'
 ht-degree: 68%
 
 ---
-
 
 # Visionneuses d’images {#image-sets}
 
@@ -43,11 +43,11 @@ Pour démarrer rapidement :
    >
    >Les ensembles par lots sont créés par IPS (Image Production System) dans le cadre de l’assimilation des ressources.
 
-1. [Chargez les images sources originales pour plusieurs vues.](#uploading-assets-in-image-sets)
+1. [Chargez les images sources originales pour plusieurs vues](#uploading-assets-in-image-sets).
 
    Chargez les images pour vos visionneuses d’images. N’oubliez pas que les utilisateurs peuvent effectuer un zoom sur les images dans la visionneuse d’images. Par conséquent, choisissez soigneusement vos images. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande. Experience Manager Assets prend en charge de nombreux formats de fichier d’images, mais il est recommandé d’utiliser des images TIFF, PNG et EPS sans perte.
 
-1. [Créez une visionneuse d’images.](#creating-image-sets)
+1. [Créez une visionneuse d’images](#creating-image-sets).
 
    Dans les visionneuses d’images, les utilisateurs cliquent sur les images miniatures dans la visionneuse d’images.
 
@@ -64,11 +64,11 @@ Pour démarrer rapidement :
    Pour créer ou modifier des paramètres prédéfinis de visionneuse, voir **[!UICONTROL Outils > Ressources > Paramètres prédéfinis de la visionneuse]**.
 
 1. (Facultatif) [Affichage des visionneuses d’images](/help/assets/dynamic-media/image-sets.md#viewing-image-sets) créées à l’aide de paramètres prédéfinis d’ensemble par lot.
-1. [Prévisualisez une visionneuse d’images.](/help/assets/dynamic-media/previewing-assets.md)
+1. [Prévisualisez une visionneuse d’images](/help/assets/dynamic-media/previewing-assets.md).
 
    Sélectionnez la visionneuse d’images pour pouvoir la prévisualiser. Pour examiner votre visionneuse d’images dans la visionneuse sélectionnée, appuyez sur les icônes de miniature. Vous pouvez choisir différentes visionneuses dans le menu **[!UICONTROL Visionneuses]**, disponible à partir de la liste déroulante du rail de gauche.
 
-1. [Publiez une visionneuse d’images.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+1. [Publiez une visionneuse d’images](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
    La publication d’une visionneuse d’images active la chaîne URL et d’incorporation. En outre, vous devez [publier tous les paramètres prédéfinis de visionneuse personnalisés](/help/assets/dynamic-media/managing-viewer-presets.md) que vous avez créés. Les paramètres prédéfinis de visionneuse prêts à l’emploi sont déjà publiés.
 
@@ -80,7 +80,7 @@ Pour démarrer rapidement :
 
    Voir [Liaison d’une visionneuse d’images à une page web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) et [Incorporation de la vidéo ou de la visionneuse d’images](/help/assets/dynamic-media/embed-code.md).
 
-Pour modifier des visionneuses d’images, voir [Modification de visionneuses d’images.](#editing-image-sets) Vous pouvez en outre afficher et modifier les [propriétés de la visionneuse d’images](/help/assets/manage-digital-assets.md#editing-properties).
+Pour modifier des visionneuses d’images, voir [Modification de visionneuses d’images](#editing-image-sets). Vous pouvez en outre afficher et modifier les [propriétés de la visionneuse d’images](/help/assets/manage-digital-assets.md#editing-properties).
 
 Si vous rencontrez des problèmes lors de la création des visionneuses, voir Images et visionneuses dans la section [Dépannage de Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets).
 
@@ -147,7 +147,7 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
 
    Le sélecteur de ressources vous permet de rechercher des ressources en saisissant un mot-clé, puis en appuyant ou en cliquant sur **[!UICONTROL Entrée]**. Vous pouvez également appliquer des filtres pour affiner vos résultats de recherche. Vous pouvez filtrer par chemin, collection, type de fichier et balise. Sélectionnez le filtre, puis appuyez sur l’icône **[!UICONTROL Filtrer]** dans la barre d’outils. Modifiez l’affichage en appuyant sur l’icône Affichage et en sélectionnant **[!UICONTROL Mode Colonnes]**, **[!UICONTROL Mode Carte]** ou **[!UICONTROL Mode Liste]**.
 
-   Voir [Utilisation de sélecteurs](/help/assets/dynamic-media/working-with-selectors.md).
+   Voir [Utilisation de sélecteurs](/help/assets/dynamic-media/working-with-selectors.md).
 
    ![6_5_imageset-addingassets](assets/6_5_imageset-addingassets.png)
 
