@@ -3,9 +3,9 @@ title: 'Modification d’un Programme de production '
 description: Modification d’un Programme de production
 exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: 8766b6fc6044a292b6dc7c2d9203a70d082edb01
+source-git-commit: 26cbd2369762050eb2e85d714b8f6b0ff129f171
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,17 @@ Les utilisateurs disposant des autorisations requises peuvent désormais modifie
 
 Pour modifier un programme de production, procédez comme suit :
 
-1. Accédez à la page **Modifier le Programme** à partir de la page *Aperçu* de Cloud Manager.
+1. Cliquez sur l&#39;option **Modifier le programme** de la page *Aperçu* de Cloud Manager.
 
-1. La page **Modifier le Programme** affiche trois options (**Sites** et **Ressources**) pour les programmes Production et Sandbox. De plus, vous pouvez sélectionner l&#39;option de module complémentaire **Commerce**, disponible sous **Sites**, comme illustré dans la figure ci-dessous.
+   ![](assets/edit-program-overview.png)
+
+1. La page **Modifier le Programme** affiche deux onglets **Général** et **Solutions et Ajoutes**.
+
+   Accédez à l&#39;onglet **Général** pour modifier la description du programme.
+
+   ![](assets/edit-program-general.png)
+
+   L&#39;onglet **Solutions &amp; Ajoutes-ons** affiche deux options, telles que **Sites** et **Actifs** pour les programmes Production et Sandbox. De plus, vous pouvez sélectionner l&#39;option de module complémentaire **Commerce**, disponible sous **Sites**, comme illustré dans la figure ci-dessous.
 
    ![](assets/edit-prg.png)
 
