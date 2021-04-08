@@ -6,10 +6,10 @@ topic: Professionnel
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt
-source-git-commit: e1ca8c3a26fae6e421a087ade03cfeddc7a94a0e
+source-git-commit: 4f2aa7d444d46aef959abc953e7a943f00cbb0c1
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 47%
+source-wordcount: '1924'
+ht-degree: 46%
 
 ---
 
@@ -45,11 +45,11 @@ Améliorations apportées par la version la plus récente de l’imagerie dynami
 
 * Amélioration du classement d’optimisation du référencement de Google pour les pages Web à l’aide de la dernière version d’Smart Imaging.
 * Sert le contenu optimisé immédiatement (au moment de l’exécution).
-* Mise en œuvre de la technologie Adobe Sensei pour effectuer la conversion en fonction de la qualité (qlt) spécifiée dans la demande d’image.
-* Possibilité de désactiver l’imagerie dynamique à l’aide du paramètre d’URL « bfc ».
+* Utilise la technologie Adobe Sensei pour la conversion en fonction de la qualité (`qlt`) spécifiée dans la demande d’image.
+* L’imagerie intelligente peut être désactivée à l’aide du paramètre d’URL `bfc`.
 * Indépendance vis-à-vis du temps de vie (TTL). Auparavant, un TTL minimal de 12 heures était obligatoire pour le fonctionnement de l’imagerie dynamique.
 * Auparavant, les images d’origine et dérivées étaient mises en cache et il s’agissait d’un processus en deux étapes pour invalider le cache. Dans la dernière version de Smart Imaging, seuls les dérivés sont mis en cache, ce qui permet un processus d’invalidation en une seule étape du cache.
-* Clients qui utilisent des en-têtes personnalisés dans leur ensemble de règles. Par exemple, &quot;Timing Allow Origine&quot;, &quot;X-Robot&quot; comme suggéré dans [Ajouter une valeur d&#39;en-tête personnalisée aux réponses d&#39;image|Dynamic Media Classic](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) bénéficient de la dernière version de Smart Imaging. Ces en-têtes ne sont pas bloqués, contrairement à la version précédente de Smart Imaging.
+* Les clients qui utilisent des en-têtes personnalisés dans leur ensemble de règles bénéficient de la dernière version de Smart Imaging, car ces en-têtes ne sont pas bloqués, contrairement à la version précédente de Smart Imaging. Par exemple, &quot;Timing Allow Origine&quot;, &quot;X-Robot&quot; comme suggéré dans [Ajouter une valeur d&#39;en-tête personnalisée aux réponses d&#39;image|Dynamic Media Classic](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
 ## L’imagerie dynamique entraîne-t-elle des frais de licence ? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
