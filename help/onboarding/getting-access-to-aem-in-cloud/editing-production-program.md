@@ -3,7 +3,7 @@ title: 'Modification d’un Programme de production '
 description: Modification d’un Programme de production
 exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: 26cbd2369762050eb2e85d714b8f6b0ff129f171
+source-git-commit: 6ad0e83f865572ff6eb1c20ee6851c3eb48f2311
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Les utilisateurs disposant des autorisations requises peuvent désormais modifier un programme de production, ce qui leur permet d’effectuer les opérations suivantes en libre-service :
 
-* Ajouter la solution Sites à un programme existant avec Ressources (ou inversement).
+* Ajouter la solution Sites à un programme existant avec Ressources (ou vice versa).
 * Supprimez des sites (ou des ressources) d’un programme existant avec des sites et des ressources.
 * Ajoutez ensuite les droits de solution inutilisés à un programme existant ou en tant que nouveau Programme.
 
@@ -33,12 +33,12 @@ Pour modifier un programme de production, procédez comme suit :
 
    ![](assets/edit-program-general.png)
 
-   L&#39;onglet **Solutions &amp; Ajoutes-ons** affiche deux options, telles que **Sites** et **Actifs** pour les programmes Production et Sandbox. De plus, vous pouvez sélectionner l&#39;option de module complémentaire **Commerce**, disponible sous **Sites**, comme illustré dans la figure ci-dessous.
+   L&#39;onglet **Solutions &amp; Ajoutes-ons** affiche deux options, telles que **Sites** et **Actifs** pour les programmes Production et Sandbox. Vous pouvez également sélectionner l&#39;option de module complémentaire **Commerce**, disponible sous **Sites**, comme illustré dans la figure ci-dessous.
 
    ![](assets/edit-prg.png)
 
    >[!NOTE]
-   >Au moins une solution doit être sélectionnée pour un Programme, c&#39;est-à-dire que l&#39;utilisateur ne sera pas autorisé à désélectionner toutes les solutions pendant le processus de modification du programme.
+   >Au moins une solution doit être sélectionnée pour un Programme, c’est-à-dire que l’utilisateur n’est pas autorisé à désélectionner toutes les solutions pendant le processus de modification du programme.
 
 1. Cliquez sur **Enregistrer** pour terminer le processus de programme de modification.
 
