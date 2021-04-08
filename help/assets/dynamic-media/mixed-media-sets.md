@@ -3,15 +3,15 @@ title: Visionneuses de médias mixtes
 description: Découvrez comment travailler avec des visionneuses de médias mixtes dans Dynamic Media..
 feature: Visionneuses de médias mixtes
 topic: Professionnel
-role: Professionnel
+role: Business Practitioner
+exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '1471'
+source-wordcount: '1469'
 ht-degree: 75%
 
 ---
-
 
 # Visionneuses de médias mixtes {#mixed-media-sets}
 
@@ -33,7 +33,7 @@ Pour démarrer rapidement, procédez comme suit :
 
    Commencez par charger les images et les vidéos pour les visionneuses de médias mixtes. Le cas échéant, créez les [Visionneuses d’images](/help/assets/dynamic-media/image-sets.md) et [Visionneuses à 360°](/help/assets/dynamic-media/spin-sets.md). Etant donné que les utilisateurs peuvent effectuer un zoom sur les images de la visionneuse de supports variés, veillez à tenir compte de la fonction de zoom lorsque vous choisissez des images. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande.
 
-1. [Créez une visionneuse de médias mixtes.](#creating-mixed-media-sets)
+1. [Créez une visionneuse de médias mixtes](#creating-mixed-media-sets).
 
    Pour créer une visionneuse de médias mixtes, dans la page Ressources, sélectionnez **[!UICONTROL Créer > Visionneuse de médias mixtes]**. Attribuez ensuite un nom à la visionneuse, sélectionnez des ressources et choisissez l’ordre dans lequel doivent apparaître les images.
 
@@ -47,11 +47,11 @@ Pour démarrer rapidement, procédez comme suit :
 
    Voir [Ajout et modification de paramètres prédéfinis de la visionneuse](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-1. [Prévisualisez une visionneuse de médias mixtes.](#previewing-mixed-media-sets)
+1. [Prévisualisez une visionneuse de médias mixtes](#previewing-mixed-media-sets).
 
    Sélectionnez la visionneuse de médias mixtes pour pouvoir la prévisualiser. Pour examiner votre visionneuse de supports variés dans la visionneuse sélectionnée, cliquez sur les icônes de miniature. Vous pouvez choisir différentes visionneuses dans le menu **[!UICONTROL Visionneuses]** disponible dans le menu déroulant du rail gauche.
 
-1. [Publiez une visionneuse de médias mixtes.](#publishing-mixed-media-sets)
+1. [Publiez une visionneuse de médias mixtes](#publishing-mixed-media-sets).
 
    La publication d’une visionneuse de médias mixtes active la chaîne URL et d’incorporation. Vous devez, en outre, [publier le paramètre prédéfini de la visionneuse](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets).
 
@@ -174,4 +174,3 @@ Pour obtenir des informations sur la publication d’une visionneuse de médias 
 >[!NOTE]
 >
 >Si la visionneuse de supports mixtes ne se retrouve pas entièrement dans le service de diffusion lors de sa première publication, publiez la visionneuse de supports mixtes une seconde fois.
-
