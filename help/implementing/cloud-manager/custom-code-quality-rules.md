@@ -1,14 +1,14 @@
 ---
 title: Règles de qualité du code personnalisé - Cloud Services
 description: Règles de qualité du code personnalisé - Cloud Services
+exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 translation-type: tm+mt
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+source-git-commit: d4fb51aa1b5f0bc469c961b0e7287758ec17e9e9
 workflow-type: tm+mt
 source-wordcount: '3278'
 ht-degree: 73%
 
 ---
-
 
 # Règles de qualité du code personnalisé {#custom-code-quality-rules}
 
@@ -613,7 +613,7 @@ Il a été établi depuis longtemps que l’arborescence de contenu /libs dans l
 Le fait qu’un même composant OSGi soit configuré plusieurs fois est un problème courant qui se produit sur les projets complexes. Cela crée une ambiguïté quant à la configuration qui sera exploitable. Cette règle est « compatible avec le mode d’exécution » en ce qu’elle identifie uniquement les problèmes où le même composant est configuré plusieurs fois dans le même mode d’exécution (ou combinaison de modes d’exécution).
 
 >[!NOTE]
->Cette règle crée des problèmes lorsque la même configuration, au même chemin, est définie dans plusieurs packages, y compris dans les cas où le même package est dupliqué dans la liste globale des packages créés. Par exemple, si la génération produit des packages nommés `com.myco:com.myco.ui.apps` et `com.myco:com.myco.all` où `com.myco:com.myco.all` incorpore `com.myco:com.myco.ui.apps`, toutes les configurations de `com.myco:com.myco.ui.apps` seront signalées comme duplicata. Il s’agit généralement de ne pas respecter les [directives relatives à la structure du package de contenu](/help/implementing/developing/aem-project-content-package-structure.md); dans cet exemple spécifique, il manque la propriété `<cloudManagerTarget>none</cloudManagerTarget>` du package `com.myco:com.myco.ui.apps`.
+>Cette règle crée des problèmes lorsque la même configuration, au même chemin, est définie dans plusieurs packages, y compris dans les cas où le même package est dupliqué dans la liste globale des packages créés. Par exemple, si la génération produit des packages nommés `com.myco:com.myco.ui.apps` et `com.myco:com.myco.all` où `com.myco:com.myco.all` incorpore `com.myco:com.myco.ui.apps`, toutes les configurations de `com.myco:com.myco.ui.apps` seront signalées comme duplicata. Il s’agit généralement de ne pas respecter les [directives relatives à la structure du package de contenu](/help/implementing/developing/introduction/aem-project-content-package-structure.md); dans cet exemple spécifique, il manque la propriété `<cloudManagerTarget>none</cloudManagerTarget>` du package `com.myco:com.myco.ui.apps`.
 
 #### Code non conforme {#non-compliant-code-osgi}
 
@@ -914,9 +914,3 @@ AEM Cloud Service interdit les définitions d&#39;index de recherche personnalis
 **Depuis** : version 2021.2.0
 
 AEM Cloud Service interdit les définitions d&#39;index de recherche personnalisée (c&#39;est-à-dire les noeuds de type `oak:QueryIndexDefinition`) de contenir une propriété nommée reindex. L’indexation à l’aide de cette propriété doit être mise à jour avant la migration vers AEM Cloud Service. Voir [Recherche de contenu et indexation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) pour plus d’informations.
-
-
-
-
-
-
