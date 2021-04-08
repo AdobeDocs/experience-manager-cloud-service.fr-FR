@@ -1,14 +1,14 @@
 ---
 title: 'Création d’un Programme de production '
-description: 'Création d’un Programme de production '
+description: Création d’un Programme de production
+exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 translation-type: tm+mt
-source-git-commit: 1aca6f0b23aa328ca364f7ab1d4c722bb5cbca9a
+source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '205'
 ht-degree: 0%
 
 ---
-
 
 # Création d’un Programme de production {#create-production-program}
 
@@ -29,11 +29,6 @@ Pour créer un programme de production, procédez comme suit :
 
 1. L&#39;utilisateur sélectionne les solutions à inclure dans le programme de l&#39;écran qui seront présentées après l&#39;écran ci-dessus.
 
-
-
-   >[!NOTE]
-   >
-   >L’écran ci-dessous s’affiche uniquement pour le segment de clients ayant acheté plusieurs solutions. Pour les clients qui n&#39;ont acheté qu&#39;une seule solution, l&#39;écran de sélection de la solution ci-dessous ne s&#39;affiche pas.
 
    ![](assets/set-up-prod2.png)
 
