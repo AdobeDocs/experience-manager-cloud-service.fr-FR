@@ -1,64 +1,53 @@
 ---
-title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.3.0
-description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.3.0
+title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.4.0
+description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.4.0
 feature: Informations sur la version
+exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: 69694f2067c53667803d38bbf7bc752f3b3afac6
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 16%
+source-wordcount: '327'
+ht-degree: 18%
 
 ---
 
+# Notes de mise à jour de Cloud Manager dans Adobe Experience Manager as a Cloud Service version 2021.4.0 {#release-notes}
 
-# Notes de mise à jour de Cloud Manager dans Adobe Experience Manager as a Cloud Service version 2021.3.0 {#release-notes}
-
-Cette page présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.3.0.
+Cette page présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.4.0.
 
 ## Date de publication {#release-date}
 
-La date de publication de Cloud Manager en tant que Cloud Service 2021.3.0 dans AEM est le 11 mars 2021.
-La prochaine version est prévue pour le 8 avril 2021.
+La date de publication de Cloud Manager en tant que Cloud Service 2021.4.0 est le 08 avril 2021.
+La prochaine version est prévue pour le 6 mai 2021.
 
-## Cloud Manager {#cloud-manager}
+### Nouveautés {#what-is-new-april}
 
-### Nouveautés {#what-is-new}
+* L’interface utilisateur met à jour les workflows d’Ajoute et de modification de Programme pour les rendre plus intuitifs.
 
-* Les clients disposant d’environnements avec des configurations de nom de domaine personnalisé préexistantes pour [Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) et [Noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) verront un message sur leurs configurations existantes et pourront se servir eux-mêmes via l’interface utilisateur.
+* Un utilisateur disposant des autorisations requises peut désormais envoyer le point de terminaison du commerce via l’interface utilisateur.
 
-* Les utilisateurs disposant des autorisations requises peuvent désormais modifier un Programme, ce qui leur permet d’effectuer les opérations suivantes en libre-service :
-   * Ajouter la solution Sites à un programme existant avec Ressources ou inversement.
-   * Supprimez des sites ou des ressources d’un programme existant avec des sites et des ressources.
-   * Ajoutez ensuite les droits de solution inutilisés à un programme existant ou en tant que nouveau Programme.
+* Les variables d’Environnement peuvent désormais être étendues à un service spécifique, qu’il s’agisse de l’auteur ou de la publication. Requiert AEM version `2021.03.5104.20210328T185548Z` ou supérieure.
 
-* **Le** libellé de mise à jour Push AEM sera désormais affiché pour les écrans Exécution du pipeline et Activité.
+* Le bouton **Gérer Git** s&#39;affiche sur la carte Pipelines même si aucun pipeline n&#39;a été configuré.
 
-* Si un environnement est mis en veille prolongée, mais qu&#39;une mise à jour AEM est également disponible, l&#39;état **Hibernated** prévaudra sur **Mise à jour disponible**.
+* La version de l’archétype de projet AEM utilisée par Cloud Manager a été mise à jour vers la version 27.
 
-* Les utilisateurs peuvent désormais voir leur ou leurs rôles Cloud Manager en sélectionnant l’option &quot;Rôle(s) de Vue Cloud Manager&quot; après avoir accédé à l’icône Profil utilisateur (en haut à droite) de l’environnement de travail unifié.
+* Les projets de la console de développement des Adobes I/O créés par Cloud Manager ne peuvent plus être modifiés ou supprimés involontairement.
 
-* Pour plus de clarté, l&#39;étiquette **Demande d&#39;approbation** a été réétiquetée à **Approbation de production**.
+* Lorsqu’un utilisateur ajoute un nouvel environnement, il est informé qu’une fois qu’un environnement est créé, il ne peut plus être déplacé dans une autre région.
 
-* Le libellé **Version** a été réétiqueté en **Balise Git** dans l&#39;écran d&#39;exécution du pipeline de production.
+* Les variables d’Environnement peuvent désormais être étendues à un service spécifique, qu’il s’agisse de l’auteur ou de la publication. Requiert AEM version 2021.03.5104.20210328T185548Z ou supérieure.
 
-* Les étiquettes qui définissent le comportement lorsque des mesures importantes ne respectent pas le seuil défini ont été réétiquetées pour refléter leur comportement réel : **Annuler immédiatement** et **Approuver immédiatement**.
+* Le message d&#39;erreur lors du démarrage d&#39;un pipeline lorsqu&#39;un environnement a été supprimé a été clarifié.
 
-* Les listes de classe et de méthode d’obsolescence ont été mises à jour en fonction de la version `2021.3.4997.20210303T022849Z-210225` du SDK Cloud Service AEM.
+* Les lots OSGi fournis par les projets Eclipse sont maintenant exclus de la règle `CQBP-84--dependencies`.
 
-* Le pipeline de production de Cloud Manager inclut désormais la fonctionnalité [Tests d’interface utilisateur personnalisés](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).
+### Correctifs {#bug-fixes-cm-april}
 
-### Correctifs {#bug-fixes}
+* Lors de la modification de la page de contrôle d’expérience d’un pipeline, un chemin d’entrée commençant par une barre oblique `( / )` n’entraîne plus l’blocage de l’étape dans l’état en attente.
 
-* Le contrôle de version du package a parfois été ignoré lors de la mise à niveau AEM Push.
+* Lors de la création d&#39;un nouveau pipeline de production, si aucun remplacement de contrôle du contenu n&#39;est ajouté par l&#39;utilisateur, la page d&#39;accueil par défaut n&#39;a pas été contrôlée.
 
-* Certains problèmes de qualité n&#39;ont pas été correctement détectés lorsque des paquets étaient incorporés dans d&#39;autres paquets.
+* La gravité des problèmes de `CloudServiceIncompatibleWorkflowProcess` était incorrecte dans le fichier CSV de publication téléchargeable.
 
-* Dans des situations obscures, le nom de programme par défaut généré à l&#39;ouverture de la boîte de dialogue Ajouter le Programme peut être un duplicata d&#39;un nom de programme existant.
-
-* Parfois, si l’utilisateur quitte la page d’exécution du pipeline immédiatement après le démarrage d’un pipeline, un message d’erreur s’affiche indiquant que l’action a échoué, bien que l’exécution ait effectivement début.
-
-* L’étape de création a été inutilement redémarrée lorsque les compilations de clients ont généré des packs non valides.
-
-* Il peut arriver que l’utilisateur voit un état &quot;principal&quot; vert en regard d’une Liste autorisée IP même si cette configuration n’a pas été déployée.
-
-* Tous les pipelines de production existants seront automatiquement activés avec l’étape Contrôle de l’expérience.
+* La vérification `Runmode` produisait des faux positifs sur les noeuds non-dossiers.
