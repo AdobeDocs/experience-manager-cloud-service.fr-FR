@@ -3,15 +3,15 @@ title: Diffusion de ressources Dynamic Media
 description: Découvrez comment diffuser des ressources Dynamic Media.
 feature: Gestion des ressources
 topic: Professionnel
-role: Professionnel
+role: Business Practitioner
+exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '319'
 ht-degree: 78%
 
 ---
-
 
 # Diffusion de ressources Dynamic Media{#delivering-dynamic-media-assets}
 
@@ -24,7 +24,7 @@ Avec Dynamic Media, vous disposez de plusieurs options :
 
    * Intégration de votre vidéo ou image à votre site web.
    * Liez des URL à votre application web. Utilisez la liaison lorsque vous souhaitez présenter un lecteur vidéo dans une fenêtre contextuelle ou modale.
-   * Si votre site est réactif, vous pouvez [diffuser des images optimisées.](/help/assets/dynamic-media/responsive-site.md)
+   * Si votre site est réactif, vous pouvez [diffuser des images optimisées](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
