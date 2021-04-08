@@ -3,15 +3,15 @@ title: Visionneuses à 360°
 description: Découvrez comment utiliser des visionneuses à 360° dans Dynamic Media.
 feature: Visionneuses à 360°
 topic: Professionnel
-role: Professionnel
+role: Business Practitioner
+exl-id: ed470472-62d9-4684-971b-30df3919c180
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1831'
 ht-degree: 77%
 
 ---
-
 
 # Visionneuses à 360 {#spin-sets}
 
@@ -39,11 +39,11 @@ Pour démarrer rapidement, procédez comme suit :
    >
    >Les ensembles par lots sont créés par IPS (Image Production System) dans le cadre de l’assimilation des ressources.
 
-1. [Chargez les images pour plusieurs vues.](#uploading-assets-for-spin-sets)
+1. [Chargez les images pour plusieurs vues](#uploading-assets-for-spin-sets).
 
    Au minimum, vous avez besoin de 8 à 12 prises de vue d’un élément pour une visionneuse à 360° unidimensionnelle et de 16 à 24 prises de vue pour une visionneuse à 360° bidimensionnelle. Les prises de vue doivent être réalisées à intervalles réguliers pour donner l&#39;impression que l&#39;objet tourne et est retourné. Par exemple, si une visionneuse à 360/12° unidimensionnelle comprend 12 prises de vue, faites pivoter l’élément de 30° (360/12) pour chaque prise de vue.
 
-1. [Créez une visionneuse à 360°.](#creating-spin-sets)
+1. [Création de visionneuses à 360°](#creating-spin-sets).
 
    Pour créer une visionneuse à 360°, sélectionnez **[!UICONTROL Créer > Visionneuse à 360°]**. Attribuez ensuite un nom à la visionneuse, sélectionnez des ressources et choisissez l’ordre dans lequel doivent apparaître les images.
 
@@ -59,11 +59,11 @@ Pour démarrer rapidement, procédez comme suit :
 
    Vous pouvez afficher les visionneuses créées par le biais des paramètres prédéfinis d’ensemble par lot et y accéder de trois manières différentes. Les visionneuses créées à l’aide de paramètres prédéfinis d’ensemble par lot ne s’affichent *pas* dans l’interface utilisateur.
 
-1. [Prévisualisez une visionneuse à 360°.](/help/assets/dynamic-media/previewing-assets.md)
+1. [Visionneuses](/help/assets/dynamic-media/previewing-assets.md) à 360° de prévisualisation.
 
    Sélectionnez la visionneuse à 360° pour pouvoir la prévisualiser. Faites pivoter la visionneuse à 360°. Vous pouvez choisir différentes visionneuses dans le menu **[!UICONTROL Visionneuses]** disponible dans le menu déroulant du rail gauche.
 
-1. [Publiez une visionneuse à 360°.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+1. [Publiez les visionneuses](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) à 360°.
 
    La publication d’une visionneuse à 360° active la chaîne d’URL et d’incorporation. Vous devez, en outre, [publier le paramètre prédéfini de la visionneuse](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -138,7 +138,7 @@ Cette section décrit comment créer des visionneuses à 360°.
 
    Si nécessaire, faites glisser l’icône Réorganiser d’un fichier à droite du nom de fichier de l’élément pour réorganiser les images vers le haut ou vers le bas de la liste définie.
 
-   ![Réorganisation de l’image 11 dans la visionneuse à 360° en la faisant glisser vers un nouvel emplacement.](assets/6_5_spinset-reorderassets.png)
+   ![Réorganisation de l’image 11 dans la visionneuse à 360° en la faisant glisser vers un nouvel emplacement](assets/6_5_spinset-reorderassets.png)
 
    Réorganisation de l’image 11 dans la visionneuse à 360° en la faisant glisser vers un nouvel emplacement.
 
