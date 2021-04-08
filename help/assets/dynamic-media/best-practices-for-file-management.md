@@ -4,15 +4,15 @@ description: '"Conseils et bonnes pratiques en matière de nommage, d’organisa
 contentOwner: Rick Brough
 feature: Gestion des ressources,Profils d’images,Profils vidéo
 topic: Professionnel
-role: Administrateur, Professionnel
+role: Administrator,Business Practitioner
+exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 62%
+source-wordcount: '501'
+ht-degree: 63%
 
 ---
-
 
 # Bonnes pratiques relatives à l’organisation de vos ressources numériques pour utiliser des profils d’image ou vidéo{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
@@ -26,7 +26,7 @@ Voici quelques conseils sur les bonnes pratiques relatives à l’organisation d
 
 * Organisez vos fichiers en fonction des métadonnées que vous leur ajoutez et non en fonction des dossiers où ils sont placés. Pour ce faire, vous pouvez ajouter des profils de métadonnées.
 
-   * Reportez-vous à la section [Profils de métadonnées.](/help/assets/metadata-profiles.md)
+   * Reportez-vous à la section [Profils de métadonnées](/help/assets/metadata-profiles.md).
    * Reportez-vous à la section [Métadonnées pour la gestion des ressources numériques](/help/assets/manage-metadata.md).
 
 * En général, votre collection de ressources numériques est en constante augmentation. Il est donc important d’avoir formalisé auparavant l’utilisation des métadonnées, la structure des dossiers et l’attribution de nom aux fichiers pour toutes vos ressources téléchargées. Grâce à cette normalisation, vous aurez l’assurance, au fur et à mesure que le nombre de vos ressources augmente, de pouvoir appliquer des profils de traitement aux dossiers avec une précision et une cohérence toujours plus grandes.
@@ -44,4 +44,3 @@ Voici quelques conseils sur les bonnes pratiques relatives à l’organisation d
 
 * Créez un répertoire de dossiers qui n’est pas susceptible de changer afin que les profils attribués restent fonctionnels.
 * Supposons qu’un fichier soit déjà publié, puis vous utilisez Adobe Experience Manager pour déplacer le fichier vers un autre dossier et le republier depuis son nouvel emplacement. L’emplacement d’origine de la ressource publiée est toujours disponible, ainsi que la ressource récemment republiée. Toutefois, l’actif publié d’origine est &quot;perdu&quot; pour le Experience Manager et ne peut pas être annulé. Par conséquent, il est recommandé d’annuler la publication des fichiers avant de les déplacer vers un autre dossier.
-
