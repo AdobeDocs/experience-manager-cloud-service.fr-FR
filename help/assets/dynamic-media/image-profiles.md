@@ -3,15 +3,15 @@ title: Profils d’image Dynamic Media
 description: '"Découvrez comment créer des Profils d’image Dynamic Media qui contiennent des paramètres pour le masquage flou, le recadrage intelligent ou l’échantillon intelligent, ou les deux. Ensuite, appliquez le profil à un dossier de fichiers d’image."'
 feature: Gestion des ressources,Profils d’images,Rendus
 topic: Professionnel
-role: Professionnel
+role: Business Practitioner
+exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '2707'
+source-wordcount: '2705'
 ht-degree: 74%
 
 ---
-
 
 # Profils d’image Dynamic Media {#image-profiles}
 
@@ -96,7 +96,7 @@ L’option **[!UICONTROL Accentuation]** propose les options de filtre suivantes
  </tbody>
 </table>
 
-L’accentuation est décrite dans [Accentuation des images.](/help/assets/dynamic-media/assets/sharpening_images.pdf)
+L’accentuation est décrite dans [Accentuation des images](/help/assets/dynamic-media/assets/sharpening_images.pdf).
 
 ## Création de profils d’image Dynamic Media {#creating-image-profiles}
 
@@ -248,7 +248,7 @@ Vous pouvez réexécuter une culture intelligente pour générer à nouveau les 
       * Si l’image possède un recadrage intelligent ou une nuance intelligente uniquement, faites glisser la poignée d’angle de la zone de recadrage sur l’image. Ajustez la taille de la zone visible du recadrage.
       * Si l’image comporte à la fois un recadrage intelligent et un échantillon dynamique, faites glisser la poignée d’angle de la zone de recadrage sur l’image. Ajustez la taille de la zone visible du recadrage. Ou appuyez sur la nuance intelligente située sous l’image (les nuances de couleur sont statiques), puis faites glisser la poignée d’angle de la zone de recadrage. Ajustez la taille de la zone visible de la nuance.
 
-      ![Redimensionnement du recadrage intelligent d’une image.](assets/edit_smart_crops-resize.png)
+      ![Redimensionnement du recadrage intelligent d’une image](assets/edit_smart_crops-resize.png).
 
    * Déplacez la zone de recadrage intelligent. Effectuez l’une des opérations suivantes :
 
