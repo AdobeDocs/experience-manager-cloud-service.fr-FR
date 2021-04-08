@@ -3,15 +3,15 @@ title: Bannières de carrousel
 description: Découvrez comment utiliser des bannières de carrousel dans Dynamic Media.
 feature: Bannières de carrousel
 topic: Professionnel
-role: Professionnel
+role: Business Practitioner
+exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4567'
+source-wordcount: '4565'
 ht-degree: 49%
 
 ---
-
 
 # Bannières de carrousel {#carousel-banners}
 
@@ -74,7 +74,7 @@ Pour démarrer rapidement :
 
    Pour créer un ensemble de carrousel dans Assets, appuyez sur **[!UICONTROL Créer]**, puis sélectionnez **[!UICONTROL Ensembles de carrousels]**. Ajoutez des ressources aux diapositives et appuyez sur **[!UICONTROL Enregistrer]**. Vous pouvez également modifier l’apparence et le comportement du carrousel directement dans l’éditeur.
 
-1. [Ajoutez des zones réactives ou cliquables dans une bannière d’image.](#adding-hotspots-or-image-maps-to-an-image-banner)
+1. [Ajoutez des zones réactives ou cliquables dans une bannière d’image](#adding-hotspots-or-image-maps-to-an-image-banner).
 
    Ajoutez une ou plusieurs zones réactives ou zones cliquables sur une bannière d’images. Ensuite, associez chacun à une action telle qu’un lien, une vue rapide ou un fragment d’expérience. Une fois que vous avez ajouté des zones réactives ou des zones cliquables, vous terminez cette tâche en modifiant l’ensemble de carrousel. La publication crée le code intégré que vous copiez et appliquez à la page d’entrée de votre site web.
 
@@ -92,7 +92,7 @@ Pour démarrer rapidement :
    * [Ajoutez une bannière de carrousel sur votre site Web en Experience Manager](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md). Si vous êtes client Sites Experience Manager, vous pouvez ajouter le carrousel défini directement à la page à l’aide du composant Interactive Media.
 
 
-Si vous devez modifier les visionneuses de carrousel, voir [modification des visionneuses de carrousel.](#editing-carousel-sets) De plus, vous pouvez afficher et modifier les [propriétés d’un ensemble de carrousel](/help/assets/manage-digital-assets.md#editing-properties).
+Si vous devez modifier les visionneuses de carrousel, voir [modification des visionneuses de carrousel](#editing-carousel-sets). De plus, vous pouvez afficher et modifier les [propriétés d’un ensemble de carrousel](/help/assets/manage-digital-assets.md#editing-properties).
 
 ## Identification des variables de zone réactive et de zone cliquable {#identifying-hotspot-and-image-map-variables}
 
@@ -252,7 +252,7 @@ Voir [Fragment d’expérience](/help/sites-cloud/authoring/fundamentals/experie
 
 Lorsque vous avez terminé de créer votre bannière de carrousel, vous pouvez éventuellement utiliser la Prévisualisation pour afficher une représentation de l’aspect de votre bannière de carrousel pour les clients.
 
-Voir [(Facultatif) Aperçu des bannières de carrousel.](#optional-previewing-carousel-banners)
+Voir [(Facultatif) Aperçu des bannières de carrousel](#optional-previewing-carousel-banners).
 
 >[!NOTE]
 >
@@ -370,7 +370,7 @@ Vous pouvez utiliser la Prévisualisation pour voir à quoi ressemble votre bann
 Lorsque vous êtes satisfait de la bannière de carrousel, vous pouvez la publier.
 Voir [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/dynamic-media/embed-code.md).
 Voir [Liaison d’URL à une application web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages AEM Sites.
-Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 Vous pouvez afficher un aperçu des bannières de carrousel dans l’éditeur de carrousel (méthode recommandée) ou dans la liste **[!UICONTROL Visionneuses]**.
 
@@ -407,7 +407,7 @@ Voir [Publication de ressources Dynamic Media](/help/assets/dynamic-media/publis
 Après avoir téléchargé des images de bannière pour créer un carrousel, ajouté des zones réactives ou des zones cliquables, ou les deux, à la bannière. Publication du jeu de carrousel. Vous êtes maintenant prêt à l’ajouter à votre page de site Web existante.
 
 >[!NOTE]
-Si vous êtes client AEM Sites, vous pouvez ajouter la bannière de carrousel directement dans votre page en faisant glisser le composant Interactive Media dans votre page. Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Si vous êtes client AEM Sites, vous pouvez ajouter la bannière de carrousel directement dans votre page en faisant glisser le composant Interactive Media dans votre page. Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 Cependant, si vous êtes un client Experience Manager Assets autonome, vous pouvez ajouter manuellement la bannière du carrousel au landing page de votre site Web.
 
