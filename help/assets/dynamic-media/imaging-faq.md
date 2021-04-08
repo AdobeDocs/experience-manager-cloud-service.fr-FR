@@ -6,7 +6,7 @@ topic: Professionnel
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt
-source-git-commit: 4f2aa7d444d46aef959abc953e7a943f00cbb0c1
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
 source-wordcount: '1924'
 ht-degree: 46%
@@ -137,7 +137,7 @@ Votre premier domaine personnalisé n’entraîne aucun coût supplémentaire av
 
 Vous lancez une demande d’utilisation de l’imagerie intelligente ; elle n&#39;est pas activée automatiquement.
 
-1. [Utilisez Admin Console pour créer un dossier d’assistance.](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. [Utilisez Admin Console pour créer un dossier d’assistance](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 1. Indiquez les informations suivantes dans votre dossier d’assistance :
 
    1. nom, adresse électronique et numéro de téléphone du contact principal.
