@@ -3,25 +3,25 @@ title: Intégration de la visionneuse de vidéos ou d’images Dynamic Media dan
 description: Découvrez comment intégrer des ressources d’images ou des vidéos Dynamic Media dans une page web.
 feature: Gestion des ressources
 topic: Professionnel
-role: Professionnel
+role: Business Practitioner
+exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '376'
 ht-degree: 96%
 
 ---
-
 
 # Intégration de la visionneuse de vidéos ou d’images Dynamic Media, ou de la visionneuse dimensionnelle dans une page web {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Utilisez la fonction **[!UICONTROL Code incorporé]** lorsque vous souhaitez lire une vidéo ou afficher une ressource incorporée dans une page web. Vous copiez le code incorporé dans le Presse-papiers afin de le coller dans vos pages web. Vous ne pouvez pas modifier le code dans la boîte de dialogue **[!UICONTROL Code incorporé]**.
 
-Vous devez incorporer les URL uniquement si vous _n’utilisez pas_ AEM comme outil de gestion de contenu web. Dans le cas contraire, [vous pouvez ajouter les ressources directement à votre page.](adding-dynamic-media-assets-to-pages.md)
+Vous devez incorporer les URL uniquement si vous _n’utilisez pas_ AEM comme outil de gestion de contenu web. Dans le cas contraire, [vous pouvez ajouter les ressources directement à votre page](adding-dynamic-media-assets-to-pages.md).
 
-Voir [Liaison d’URL à une application web.](linking-urls-to-yourwebapplication.md)
+Voir [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md).
 
-Consultez aussi [Diffusion d’images optimisées pour un site réactif.](responsive-site.md)
+Consultez aussi [Diffusion d’images optimisées pour un site réactif](responsive-site.md).
 
 >[!NOTE]
 >
