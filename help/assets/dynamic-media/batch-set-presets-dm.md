@@ -4,31 +4,31 @@ description: Découvrez comment automatiser la création de visionneuses d’ima
 contentOwner: Rick Brough
 feature: Paramètres d’image prédéfinis,Paramètres prédéfinis de la visionneuse
 topic: Professionnel
-role: Professionnel
+role: Business Practitioner
+exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '3435'
-ht-degree: 65%
+source-wordcount: '3446'
+ht-degree: 58%
 
 ---
 
-
 # À propos des paramètres prédéfinis de lot {#about-bsp}
 
-Utilisez les **[!UICONTROL paramètres prédéfinis de lot]** pour faciliter la création et l’organisation de différentes ressources dans une visionneuse d’images ou une visionneuse à 360° lorsque vous chargez des fichiers de ressources dans un dossier, individuellement ou par une ingestion en masse. Il est possible d’exécuter le paramètre prédéfini en même temps que les tâches d’importation de ressources planifiées dans [!DNL Dynamic Media]. Chaque paramètre prédéfini est un ensemble d’instructions indépendant possédant un nom unique. Il définit comment construire la visionneuse d’images ou la visionneuse à 360° à l’aide d’images correspondant aux conventions d’affectation des noms définies dans la recette du paramètre prédéfini.
+Utilisez **[!UICONTROL Paramètres prédéfinis d’ensemble par lot]** pour créer et organiser plusieurs fichiers dans une visionneuse d’images ou une visionneuse à 360° au moment où vous téléchargez des fichiers de fichiers dans un dossier, individuellement ou par assimilation en masse. Il est possible d’exécuter le paramètre prédéfini en même temps que les tâches d’importation de ressources planifiées dans [!DNL Dynamic Media]. Chaque paramètre prédéfini est un ensemble d’instructions indépendant possédant un nom unique. Il définit comment construire la visionneuse d’images ou la visionneuse à 360° à l’aide d’images correspondant aux conventions d’affectation des noms définies dans la recette du paramètre prédéfini.
 
 >[!IMPORTANT]
 >
->Si vous avez utilisé des paramètres prédéfinis d’ensemble par lot dans [!DNL Dynamic Media Classic] et que vous migrez de [!DNL Dynamic Media Classic] vers Adobe Experience Manager en tant que Cloud Service, vous devez recréer manuellement les définitions des paramètres prédéfinis d’ensemble par lot dans [!DNL Adobe Experience Manager as a Cloud Service].
+>Si vous avez utilisé des paramètres prédéfinis d’ensemble par lot dans [!DNL Dynamic Media Classic] et que vous migrez de [!DNL Dynamic Media Classic] vers Adobe Experience Manager en tant que Cloud Service, recréez manuellement les définitions des paramètres prédéfinis d’ensemble par lot dans [!DNL Adobe Experience Manager as a Cloud Service].
 
-**Bonne pratique** : lorsque vous utilisez des paramètres prédéfinis de lot, Adobe recommande le workflow suivant :
+**Recommandé**  - Lorsque vous utilisez des paramètres prédéfinis d’ensemble par lot, l’Adobe recommande le processus suivant :
 
 1. Créez un paramètre prédéfini de lot. Voir [Création d’un paramètre prédéfini de lot pour une visionneuse d’images ou une visionneuse à 360°](#creating-bsp).
 1. Créez un dossier de ressources ou utilisez un dossier de ressources existant et assurez-vous qu’il est synchronisé avec [!DNL Dynamic Media]. Voir [Création de dossiers](/help/assets/manage-digital-assets.md#creating-folders).
 1. Appliquez le paramètre prédéfini de lot au dossier de ressources. Voir [À propos de l’application des paramètres prédéfinis de lot aux dossiers](#apply-bsp).
 1. Chargez les images vers le dossier de ressources. Voir [Chargement de ressources pour les visionneuses d’images](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [Chargement de ressources pour les visionneuses à 360°](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets) ou [Ajout de ressources numériques à Adobe Experience Manager](/help/assets/add-assets.md#add-assets-to-experience-manager).
-1. Créez votre visionneuse d’images ou votre visionneuse à 360°. Voir [Visionneuses d’images](/help/assets/dynamic-media/image-sets.md) ou [Visionneuses à 360°](/help/assets/dynamic-media/spin-sets.md).
+1. La visionneuse d’images ou la visionneuse à 360° est générée automatiquement dans le dossier de votre choix.
 1. Publiez votre visionneuse d’images ou votre visionneuse à 360°. Voir [Publication de ressources Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Création d’un paramètre prédéfini de lot pour une visionneuse d’images ou une visionneuse à 360° {#creating-bsp}
@@ -60,7 +60,7 @@ En ce qui concerne l’automatisation de l’ordre des séquences, vous spécifi
 
 `.*_main,.*_alt[0-9]`
 
-Bien qu’une séquence de tri forcé soit possible, il est préférable de se baser autant que possible sur la numérotation alphanumérique pour l’ordre des séquences. En outre, vous pouvez utiliser les outils d’éditeur de visionneuse d’images ou de visionneuse à 360° de [!DNL Dynamic Media] pour réorganiser facilement l’ordre séquentiel des ressources, ou ajouter et supprimer de nouvelles ressources dans la visionneuse par une opération glisser-déposer.
+Bien qu’une séquence de tri forcé soit possible, il est préférable de se baser autant que possible sur la numérotation alphanumérique pour l’ordre des séquences. En outre, vous pouvez utiliser les outils de l’éditeur de visionneuse d’images ou de visionneuses à 360° dans [!DNL Dynamic Media] pour réorganiser l’ordre de séquence des fichiers, ou ajouter et supprimer de nouveaux fichiers dans la visionneuse à l’aide d’une opération de glisser-déposer.
 
 Lorsque vous avez terminé de créer un paramètre prédéfini de lot, vous l’appliquez à un ou plusieurs des dossiers créés. Voir [À propos de l’application des paramètres prédéfinis de lot aux dossiers](#apply-bsp).
 
@@ -87,7 +87,7 @@ Pour en savoir plus sur les options modifiables disponibles, voir [Détails des 
    * Sur la gauche de la page **[!UICONTROL Modifier le paramètre prédéfini d’ensemble par lot]**, sous **[!UICONTROL Correspondance]**, **[!UICONTROL Nom de base]** ou **[!UICONTROL Ordre des séquences]**, appuyez sur **[!UICONTROL Ajouter le groupe]**.
    * Le champ **[!UICONTROL Correspondance]** est obligatoire. **[!UICONTROL Le]** nom de base n&#39;est obligatoire que si le  **** champ de correspondance ne spécifie pas déjà un nom de base en utilisant un regroupement de crochets. Le **[!UICONTROL Tri séquentiel]** est facultatif.
    * Avec les listes déroulantes et les zones de texte du formulaire du groupe, spécifiez un groupe d’expressions que vous souhaitez utiliser pour définir les critères d’affectation de noms pour les ressources de la visionneuse d’images ou de la visionneuse à 360°.
-      * A mesure que vous sélectionnez et spécifiez des expressions pour un groupe, notez que la syntaxe d’expression standard réelle est reflétée près de l’angle inférieur droit de la page, sous l’en-tête **[!UICONTROL Résultats de la règle - RegX]** (appuyez n’importe où en dehors de la zone de formulaire pour afficher la chaîne d’expression régulière mise à jour dans l’angle inférieur droit). Ces chaînes d’expression régulière représentent le modèle que vous souhaitez mettre en correspondance dans une recherche de ressources [!DNL Dynamic Media] pour créer votre visionneuse d’images ou votre visionneuse à 360°.
+      * A mesure que vous sélectionnez et spécifiez des expressions pour un groupe, notez que la syntaxe d&#39;expression standard réelle est reflétée près de l&#39;angle inférieur droit de la page, sous l&#39;en-tête **[!UICONTROL Résultats de la règle - RegX]**. Pour afficher la chaîne d’expression régulière mise à jour dans l’angle inférieur droit, appuyez n’importe où en dehors de la zone de formulaire. Ces chaînes d’expression régulière représentent le modèle que vous souhaitez mettre en correspondance dans une recherche de ressources [!DNL Dynamic Media] pour créer votre visionneuse d’images ou votre visionneuse à 360°.
       * Pour supprimer un groupe ajouté, appuyez sur **[!UICONTROL X]**.
    * Lorsque vous ajoutez deux groupes ou plus, dans la liste déroulante **[!UICONTROL Et]**, sélectionnez **[!UICONTROL Et]** pour joindre un groupe récemment ajouté à un groupe d’expressions précédent ajouté. Ou, sélectionnez **[!UICONTROL Ou]** pour ajouter une alternative entre le groupe d’expressions précédent et le groupe créé. L’opérande **[!UICONTROL Ou]** est défini par l’utilisation d’un caractère de ligne verticale `|` dans la syntaxe de l’expression régulière elle-même.
 
@@ -99,7 +99,7 @@ Pour en savoir plus sur les options modifiables disponibles, voir [Détails des 
 
 1. Dans l’angle supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer]**.
 
-Vous êtes maintenant prêt à appliquer le paramètre prédéfini de lot à un ou plusieurs dossiers de ressources, à charger des ressources dans le dossier, puis à créer votre visionneuse d’images ou votre visionneuse à 360°. Voir [À propos de l’application des paramètres prédéfinis de lot aux dossiers](#apply-bsp).
+Vous êtes maintenant prêt à appliquer le paramètre prédéfini d’ensemble par lot à un dossier de fichiers. Ensuite, vous téléchargez des fichiers vers ce dossier. Ce flux de travail génère automatiquement la visionneuse d’images ou la visionneuse à 360°. Voir [A propos de l’application des paramètres prédéfinis d’ensemble par lot aux dossiers de fichiers](#apply-bsp).
 
 ### Détails des paramètres prédéfinis, convention d’affectation des noms et résultats des règles – RegX {#features-options-bsp}
 
@@ -112,7 +112,7 @@ Voir [Création d’un paramètre prédéfini de lot pour une visionneuse d’im
 | Nom du paramètre prédéfini | Lecture seule. Nom spécifié lors de la première création du lot. Si vous devez renommer le paramètre prédéfini, vous pouvez copier le paramètre prédéfini d’ensemble par lot existant et en spécifier un nouveau. Voir [Copie d’un paramètre prédéfini de lot existant](#copy-bsp). |
 | Type | Lecture seule. Le type a été spécifié lors de la première création du lot. La copie d’un paramètre prédéfini d’ensemble par lot existant ne vous permet pas de modifier son [!UICONTROL type]; vous devez créer un paramètre prédéfini à la place. |
 | Inclure les ressources dérivées | Facultatif. Pour que [!DNL Dynamic Media]’s IPS (Image Production System) intègre des images générées ou &quot;dérivées&quot; à votre visionneuse à 360° ou visionneuse d’images, sélectionnez **[!UICONTROL Oui]** (par défaut). Une ressource dérivée est une image qui n’a pas été directement chargée par un utilisateur. Au lieu de cela, la ressource a été produite par l’IPS lors du chargement d’une ressource principale. Par exemple, une ressource d’image générée par l’IPS à partir d’une page d’un fichier PDF, au moment où le fichier PDF a été chargé dans [!DNL Dynamic Media], est considérée comme une ressource dérivée. |
-| Dossier de destination | Facultatif. Si vous définissez un grand nombre de visionneuses d’images ou de visionneuses à 360°, l’Adobe vous conseille de conserver ces visionneuses à l’écart des dossiers contenant les fichiers eux-mêmes. Par conséquent, vous pouvez créer un dossier Visionneuses d’images ou Visionneuses à 360° et rediriger l’application pour y placer les visionneuses générées par lot.<br>Dans ce cas, spécifiez le dossier dans la structure de dossiers Ressources du Experience Manager (`/content/dam`) dont le paramètre prédéfini d’ensemble par lot est principal. Assurez-vous que le dossier est activé pour la synchronisation [!DNL Dynamic Media] afin de l’autoriser en tant que dossier de destination. Voir [Configuration de la publication sélective au niveau des dossiers dans Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>Un paramètre prédéfini d’ensemble par lot peut être affecté à plusieurs dossiers si vous l’appliquez au moyen des  **[!UICONTROL propriétés]** du dossier. Voir [Application de paramètres prédéfinis de lot à partir de la page Propriétés d’un dossier de ressources](#apply-bsp-to-folders-via-properties).<br>Si vous ne spécifiez pas de dossier, le paramètre prédéfini de lot est créé dans le même dossier que le dossier de téléchargement des ressources. |
+| Dossier de destination | Facultatif. Si vous définissez un grand nombre de visionneuses d’images ou de visionneuses à 360°, l’Adobe vous conseille de conserver ces visionneuses à l’écart des dossiers contenant les fichiers eux-mêmes. Par conséquent, vous pouvez créer un dossier Visionneuses d’images ou Visionneuses à 360° et rediriger l’application pour y placer les visionneuses générées par lot.<br>Dans ce cas, spécifiez le dossier dans la structure de dossiers Ressources du Experience Manager (`/content/dam`) dont le paramètre prédéfini d’ensemble par lot est principal. Assurez-vous que le dossier est activé pour la synchronisation [!DNL Dynamic Media] afin de l’autoriser en tant que dossier de destination. Voir [Configuration de la publication sélective au niveau des dossiers dans Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>Un paramètre prédéfini d’ensemble par lot peut être affecté à plusieurs dossiers si vous l’appliquez au moyen des  **[!UICONTROL propriétés]** du dossier. Voir [Application de paramètres prédéfinis de lot à partir de la page Propriétés d’un dossier de ressources](#apply-bsp-to-folders-via-properties).<br>Si vous ne spécifiez pas de dossier, la visionneuse d’images ou la visionneuse à 360° générée par le paramètre prédéfini d’ensemble par lot est créée dans le même dossier que le dossier de fichiers sur lequel vous avez téléchargé. |
 | **[!UICONTROL Définir la convention d’affectation des noms]** |  |
 | Préfixe<br>ou<br>Suffixe | Facultatif. Entrez un préfixe, un suffixe ou les deux dans les champs respectifs.<br>Les champs de préfixe et de suffixe vous permettent de créer autant de paramètres prédéfinis d’ensemble par lot à l’aide d’une autre convention d’affectation de nom de fichier personnalisée pour un ensemble de contenu particulier. Cette méthode est particulièrement utile dans les cas où il existe une exception à un schéma d’affectation de nom par défaut défini par une société.<br>Le préfixe ou le suffixe est ajouté au **[!UICONTROL nom de base]** que vous définissez dans la zone **[!UICONTROL Convention d’affectation des noms de ressources]**. En ajoutant un préfixe ou un suffixe, vous vous assurez que votre visionneuse d’images ou visionneuse à 360° est créée de manière exclusive et indépendante des autres fichiers. Cette opération peut également aider d’autres personnes à identifier les types de fichiers. Par exemple, pour déterminer un mode de couleur utilisé, vous pouvez ajouter comme préfixe ou suffixe `rgb` ou `cmyk`.<br>Bien que la spécification d’une convention d’affectation de nom d’ensemble ne soit pas nécessaire pour utiliser la fonctionnalité de paramètre prédéfini d’ensemble par lot, il est recommandé d’utiliser la convention d’affectation de nom d’ensemble. Cette pratique vous permet de définir autant d’éléments de votre convention d’affectation de nom que vous souhaitez regrouper dans une visionneuse afin de simplifier la création d’ensembles par lot. |
 | **[!UICONTROL Résultats de la règle – RegX]** |  |
@@ -120,15 +120,15 @@ Voir [Création d’un paramètre prédéfini de lot pour une visionneuse d’im
 | Convention d’affectation des noms de ressources – Nom de base | Lecture seule. Affiche la syntaxe d’expression régulière en fonction des options de formulaire de nom de base que vous avez sélectionnées ou du code brut que vous avez saisi. |
 | Ordre des séquences – Correspondance | Lecture seule. Affiche la syntaxe d’expression régulière en fonction des options de formulaire que vous avez sélectionnées ou du code brut que vous avez saisi. |
 
-## À propos de l’application de paramètres prédéfinis de lot aux dossiers {#apply-bsp}
+## A propos de l’application de paramètres prédéfinis d’ensemble par lot aux dossiers de fichiers {#apply-bsp}
 
-Lorsque vous affectez des paramètres prédéfinis de lot à un ou plusieurs dossiers, tous les sous-dossiers héritent automatiquement des paramètres prédéfinis de leur dossier parent.
+Lorsque vous affectez des paramètres prédéfinis d’ensemble par lot à un ou plusieurs dossiers de fichiers, tous les sous-dossiers héritent automatiquement des paramètres prédéfinis de son dossier parent.
 
-Vous pouvez appliquer plusieurs paramètres prédéfinis de lot à un dossier.
+Vous pouvez appliquer plusieurs paramètres prédéfinis d’ensemble par lot à un dossier de fichiers.
 
 Les dossiers auxquels un paramètre prédéfini de lot est affecté sont indiqués dans l’interface utilisateur et le nom du paramètre prédéfini s’affiche dans le dossier, dans la vue **[!UICONTROL Carte]**.
 
-Pour appliquer des paramètres prédéfinis d’ensemble par lot aux dossiers, utilisez l’une des deux méthodes suivantes :
+Pour appliquer des paramètres prédéfinis d’ensemble par lot aux dossiers de fichiers, utilisez l’une des deux méthodes suivantes :
 
 * [Appliquer des paramètres prédéfinis de lot aux dossiers de ressources à l’aide de la page Paramètre prédéfini de lot](#apply-bsp-to-folders-via-bsp-page). Cette méthode offre une flexibilité maximale. Vous pouvez appliquer un ou plusieurs paramètres prédéfinis à un ou plusieurs dossiers.
 * [Appliquer des paramètres prédéfinis de lot à partir de la page Propriétés d’un dossier de ressources](#apply-bsp-to-folders-via-properties). Cette méthode permet d’appliquer un ou plusieurs paramètres prédéfinis de lot à un seul dossier.
@@ -160,7 +160,7 @@ Retraitez les fichiers d’un dossier si vous effectuez l’une des deux situati
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-apply-via-properties2a.png)
 
-1. Sous **[!UICONTROL Paramètres prédéfinis d’ensemble par lot]**, sélectionnez le nom d’un paramètre prédéfini à appliquer dans la liste déroulante **[!UICONTROL Nom du paramètre prédéfini]**. La capture d’écran ci-dessus montre deux paramètres prédéfinis d’ensemble par lot sélectionnés appliqués au dossier.
+1. Sous **[!UICONTROL Paramètres prédéfinis d’ensemble par lot]**, sélectionnez le nom d’un paramètre prédéfini à appliquer dans la liste déroulante **[!UICONTROL Nom du paramètre prédéfini]**. La capture d’écran ci-dessus montre deux paramètres prédéfinis d’ensemble par lot sélectionnés appliqués au dossier Fichiers.
 
    S’il n’existe aucun nom de paramètre prédéfini de lot dans la zone de liste déroulante **[!UICONTROL Nom du paramètre prédéfini]**, cela signifie que vous n’avez pas encore créé ce paramètre. Voir [Création d’un paramètre prédéfini de lot pour une visionneuse d’images ou une visionneuse à 360°](#creating-bsp).
 
@@ -172,17 +172,17 @@ Retraitez les fichiers d’un dossier si vous effectuez l’une des deux situati
 
 Vous pouvez modifier un paramètre prédéfini de lot existant que vous avez créé. Vous pouvez modifier n’importe quel groupe d’expressions que vous avez créé pour la convention d’affectation des noms de ressource ou le tri séquentiel. Si nécessaire, vous pouvez également mettre à jour le dossier de destination et définir des conventions d’affectation des noms.
 
-Toutefois, vous ne pouvez pas modifier le nom ni le type de paramètre prédéfini (visionneuse d’images ou visionneuse à 360°). S’il devient nécessaire de modifier le nom d’un paramètre prédéfini, il suffit de copier le paramètre prédéfini existant et de spécifier un nouveau nom. Voir [Copie d’un paramètre prédéfini de lot](#copy-bsp).
+Toutefois, vous ne pouvez pas modifier le nom ni le type de paramètre prédéfini (visionneuse d’images ou visionneuse à 360°). S’il s’avère nécessaire de modifier le nom d’un paramètre prédéfini, copiez le paramètre prédéfini existant et spécifiez un nouveau nom. Voir [Copie d’un paramètre prédéfini de lot](#copy-bsp).
 
-Si vous modifiez un paramètre prédéfini de lot précédemment appliqué à un dossier, ce paramètre n’est appliqué qu’aux nouvelles ressources téléchargées dans le dossier.
+Si vous modifiez un paramètre prédéfini d’ensemble par lot précédemment appliqué à un dossier, le paramètre prédéfini d’ensemble par lot nouvellement modifié est appliqué uniquement aux nouveaux fichiers téléchargés dans ce dossier.
 
-Si vous souhaitez que le paramètre prédéfini nouvellement modifié soit réappliqué aux fichiers existants du dossier, vous devez retraiter le dossier. <!-- See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). -->Ainsi, les ressources existantes pourraient désormais être incluses dans une visionneuse d’images ou une visionneuse à 360° et y être ajoutées. En outre, les fichiers existants qui étaient déjà inclus dans la visionneuse d’images ou la visionneuse à 360° en fonction du paramètre prédéfini d’ensemble par lot précédent utilisé ne sont pas supprimés (en supposant qu’ils ne soient plus qualifiés en fonction du paramètre prédéfini récemment modifié) et s’affichent en l’état.
+Si vous souhaitez que le paramètre prédéfini nouvellement modifié soit réappliqué aux fichiers existants du dossier, vous devez retraiter le dossier. <!-- See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). -->Ainsi, les ressources existantes pourraient désormais être incluses dans une visionneuse d’images ou une visionneuse à 360° et y être ajoutées. En outre, les fichiers existants qui étaient déjà inclus dans la visionneuse d’images ou la visionneuse à 360°, en fonction du paramètre prédéfini d’ensemble par lot utilisé précédemment, ne sont pas supprimés et ne s’affichent pas en l’état. Ce scénario suppose qu’ils ne sont plus qualifiés en fonction du paramètre prédéfini récemment modifié.
 
 **Pour modifier un paramètre prédéfini de lot :**
 
 1. Appuyez sur le logo Adobe Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres prédéfinis de lot]**.
 1. Sur la page **[!UICONTROL Paramètres prédéfinis de lot]**, à gauche de la colonne **[!UICONTROL Nom du paramètre prédéfini]**, vérifiez le paramètre prédéfini de lot que vous souhaitez modifier.
-1. Dans la barre d’outils, appuyez sur **[!UICONTROL Modifier le paramètre prédéfini d’ensemble par lot.]**
+1. Dans la barre d’outils, appuyez sur **[!UICONTROL Modifier le paramètre prédéfini d’ensemble par lot]**.
 1. Modifiez le paramètre prédéfini selon vos besoins.
 1. Dans l’angle supérieur droit de la page **[!UICONTROL Paramètre prédéfini de lot]**, appuyez sur **[!UICONTROL Enregistrer]**.
 
@@ -194,7 +194,7 @@ Si vous copiez un paramètre prédéfini existant référencé par des dossiers 
 
 **Pour copier un paramètre prédéfini de lot existant :**
 
-1. Appuyez sur le logo Adobe Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres prédéfinis de lot.]**
+1. Appuyez sur le logo Adobe Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres prédéfinis de lot]**.
 1. Sur la page **[!UICONTROL Paramètres prédéfinis de lot]**, à gauche de la colonne **[!UICONTROL Nom du paramètre prédéfini]**, cochez la case du paramètre prédéfini de lot à copier.
 1. Dans la barre d’outils, appuyez sur **[!UICONTROL Copier]**.
 1. Dans la boîte de dialogue **[!UICONTROL Copier le paramètre prédéfini de lot]**, dans la zone de texte **[!UICONTROL Titre]**, saisissez un nouveau nom pour le paramètre prédéfini.
@@ -269,3 +269,4 @@ Si vous souhaitez *supprimer les paramètres prédéfinis* des dossiers à la pl
 >* [Visionneuses à 360°](/help/assets/dynamic-media/spin-sets.md)
 >* [Configuration de la publication sélective au niveau des dossiers dans Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)  - Voir &quot;Mode de synchronisation&quot; dans la rubrique pour en savoir plus sur la synchronisation d’un dossier unique  [!DNL Dynamic Media].
 >* [Création d&#39;une configuration Dynamic Media en Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)  - Voir &quot;Mode de synchronisation Dynamic Media&quot; dans la rubrique pour en savoir plus sur la synchronisation de tous les dossiers avec  [!DNL Dynamic Media].
+
