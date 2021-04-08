@@ -4,15 +4,15 @@ description: Découvrez les différentes méthodes de gestion et de modification
 contentOwner: AG
 mini-toc-levels: 1
 feature: Gestion des ressources,Publication,Collaboration,Traitement des ressources
-role: Professionnel, Architecte, Administrateur
+role: Business Practitioner,Architect,Administrator
+exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4346'
+source-wordcount: '4342'
 ht-degree: 99%
 
 ---
-
 
 # Gestion des ressources {#manage-assets}
 
@@ -285,7 +285,7 @@ Voir la section [Téléchargement de ressources à partir d’ [!DNL Experience 
 <!--
 >[!NOTE]
 >
->For more information specific to Dynamic Media, see [Publishing Dynamic Media Assets.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+>For more information specific to Dynamic Media, see [Publishing Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 -->
 
 1. Accédez à l’emplacement des ressources/du dossier que vous souhaitez publier.
