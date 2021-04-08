@@ -3,15 +3,15 @@ title: Profils vidéo Dynamic Media
 description: Dynamic Media est fourni avec un profil prédéfini de codage vidéo adaptatif. Les paramètres de ce profil prêt à l’emploi sont optimisés pour offrir à vos clients la meilleure expérience de visionnage possible. Vous pouvez également ajouter un recadrage intelligent à vos vidéos.
 feature: Gestion des ressources,Profils vidéo,Rendus
 topic: Professionnel
-role: Professionnel
+role: Business Practitioner
+exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '3668'
+source-wordcount: '3666'
 ht-degree: 69%
 
 ---
-
 
 # Profils vidéo Dynamic Media {#video-profiles}
 
@@ -37,7 +37,7 @@ Consultez également la section [Bonnes pratiques pour organiser vos ressources 
 >
 >Les métadonnées sont utiles lorsque vous recherchez des ressources. Les miniatures sont des images vidéo statiques qui sont générées lors du codage. Elles sont requises par le système de Experience Manager et utilisées dans l’interface utilisateur pour vous aider à identifier visuellement les vidéos dans la vue Cartes, la vue des résultats de la recherche et la vue de Liste des ressources. Vous pouvez afficher les miniatures générées lorsque vous appuyez sur l’icône Rendus (palette Peintre) d’une vidéo codée.
 
-Lorsque vous avez terminé de créer le Profil vidéo, vous l’appliquez à un ou plusieurs dossiers. Voir [Application d&#39;un Profil vidéo aux dossiers.](#applying-a-video-profile-to-folders)
+Lorsque vous avez terminé de créer le Profil vidéo, vous l’appliquez à un ou plusieurs dossiers. Voir [Application d’un Profil vidéo aux dossiers](#applying-a-video-profile-to-folders).
 
 Pour définir des paramètres de traitement avancés pour d’autres types de ressources, voir [Configuration du traitement des ressources](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
@@ -429,4 +429,3 @@ Vous pouvez supprimer un profil vidéo d’un dossier à partir du menu **[!UICO
 1. Appuyez ou cliquez sur le logo du Experience Manager et accédez à **[!UICONTROL Assets]**, puis au dossier dans lequel vous souhaitez supprimer un Profil vidéo.
 1. Dans le dossier, appuyez ou cliquez sur la coche afin de la sélectionner, puis appuyez sur **[!UICONTROL Propriétés]**.
 1. Sélectionnez l’onglet **[!UICONTROL Profils vidéo]**, choisissez **[!UICONTROL Aucun]** dans le menu déroulant, puis cliquez sur **[!UICONTROL Enregistrer et fermer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
-
