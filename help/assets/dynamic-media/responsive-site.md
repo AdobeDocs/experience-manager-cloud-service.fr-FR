@@ -3,15 +3,15 @@ title: Diffusion d’images optimisées pour un site réactif
 description: Découvrez comment utiliser la fonction de code réactif pour diffuser des images optimisées à partir de Dynamic Media.
 feature: Gestion des ressources
 topic: Professionnel
-role: Professionnel
+role: Business Practitioner
+exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '326'
 ht-degree: 99%
 
 ---
-
 
 # Diffusion d’images optimisées pour un site réactif {#delivering-optimized-images-for-a-responsive-site}
 
@@ -19,9 +19,9 @@ Utilisez la fonctionnalité de code réactif lorsque vous souhaitez partager le 
 
 Cette fonction a un sens si votre site web se trouve sur un composant WCM tiers. Cependant, si votre site web se trouve sur AEM à la place, un serveur d’images hors site effectue le rendu de l’image et le communique à la page web.
 
-Voir aussi [Incorporation de la visionneuse de vidéos dans une page web.](embed-code.md)
+Voir aussi [Incorporation de la visionneuse de vidéos dans une page web](embed-code.md).
 
-Voir aussi [Liaison d’URL à une application web.](linking-urls-to-yourwebapplication.md)
+Voir aussi [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md).
 
 **Pour diffuser des images optimisées pour un site réactif, procédez comme suit** :
 
