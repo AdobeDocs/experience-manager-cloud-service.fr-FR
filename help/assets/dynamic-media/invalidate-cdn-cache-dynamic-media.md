@@ -3,15 +3,15 @@ title: Invalidation du cache du réseau CDN par le biais de Dynamic Media
 description: '"Découvrez comment invalider votre contenu mis en cache CDN (Content Diffusion Network) afin de vous permettre de mettre rapidement à jour les ressources fournies par Dynamic Media, au lieu d’attendre l’expiration du cache."'
 feature: Gestion des ressources
 topic: Professionnel
-role: Administrateur, Professionnel
+role: Administrator,Business Practitioner
+exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 64%
+source-wordcount: '1303'
+ht-degree: 65%
 
 ---
-
 
 # Invalidation du cache du réseau CDN par le biais de Dynamic Media {#invalidating-cdn-cache-for-dm-assets-in-aem-cs}
 
@@ -27,7 +27,7 @@ Voir aussi [Présentation de la mise en cache dans Dynamic Media](https://helpx.
 
 *Partie 1 de 2 : création d’un modèle d’invalidation du réseau CDN*
 
-1. Dans AEM as a Cloud Service, appuyez sur **[!UICONTROL Outils > Ressources > Modèle d’invalidation du réseau de diffusion de contenu.]**
+1. Dans AEM as a Cloud Service, appuyez sur **[!UICONTROL Outils > Ressources > Modèle d’invalidation du réseau de diffusion de contenu]**.
 
    ![Fonction de validation du réseau CDN](/help/assets/assets-dm/cdn-invalidation-template.png)
 
@@ -40,7 +40,7 @@ Voir aussi [Présentation de la mise en cache dans Dynamic Media](https://helpx.
 
    ![Modèle d’invalidation du réseau CDN – Créer](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
-1. Dans le coin supérieur droit de la page **[!UICONTROL Modèle d’invalidation du réseau de diffusion de contenu]**, appuyez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL OK.]**<br>
+1. Dans le coin supérieur droit de la page **[!UICONTROL Modèle d’invalidation du réseau de diffusion de contenu]**, appuyez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL OK]**.<br>
 
    *Partie 2 de 2 : définition des options d’invalidation du réseau CDN*
    <br>
