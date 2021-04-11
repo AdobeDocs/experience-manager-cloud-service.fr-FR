@@ -7,10 +7,10 @@ feature: Gestion des ressources,Publication,Collaboration,Traitement des ressour
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 translation-type: tm+mt
-source-git-commit: e12638fdda7da178e8dc22163d5ffb822bd980bf
+source-git-commit: 78bddc170d2deacc39fd0bd32a65803987dc6a49
 workflow-type: tm+mt
-source-wordcount: '4362'
-ht-degree: 94%
+source-wordcount: '4508'
+ht-degree: 91%
 
 ---
 
@@ -624,4 +624,24 @@ Une collection est un ensemble de ressources classées. Vous pouvez utiliser des
 * Une collection peut comporter des ressources provenant de différents emplacements, car elle ne contient que les références à ces ressources. Chaque collection préserve l’intégrité du référentiel des ressources.
 * Vous pouvez partager des ressources avec plusieurs utilisateurs dont les niveaux de privilèges sont différents (modification, affichage, etc.).
 
-Pour plus d’informations sur la gestion des collections, voir [Gestion des collections](/help/assets/manage-collections.md).
+Pour plus d’informations sur la gestion des collections, voir [gestion des collections](/help/assets/manage-collections.md).
+
+## Masquer les ressources expirées lors de l’affichage des ressources dans l’application de bureau ou le lien de ressources d’Adobe {#hide-expired-assets-via-acp-api}
+
+[!DNL Experience Manager] application de bureau permet d’accéder au référentiel DAM depuis un bureau Windows ou Mac. Adobe Asset Link permet d’accéder aux ressources à partir des applications de bureau [!DNL Creative Cloud] prises en charge.
+
+Lors de la navigation dans des ressources de l&#39;interface utilisateur [!DNL Experience Manager], les ressources expirées ne s&#39;affichent pas. Pour empêcher l’affichage, la recherche et la récupération de fichiers expirés lors de la navigation dans des fichiers à partir d’une application de bureau et d’un lien d’actif, les administrateurs peuvent effectuer la configuration suivante. La configuration fonctionne pour tous les utilisateurs, quel que soit le privilège d’administrateur.
+
+Exécutez la commande CURL suivante. Assurez-vous de lire l’accès sur `/conf/global/settings/dam/acpapi/` pour les utilisateurs qui accèdent aux ressources. Les utilisateurs qui font partie du groupe `dam-user` ont l’autorisation par défaut.
+
+```curl
+curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/global/settings/dam/acpapi/configuration/_jcr_content' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'jcr:title=acpapiconfig' \
+--data-urlencode 'hideExpiredAssets=true' \
+--data-urlencode 'hideExpiredAssets@TypeHint=Boolean' \
+--data-urlencode 'jcr:primaryType=nt:unstructured' \
+--data-urlencode '../../jcr:primaryType=sling:Folder'
+```
+
+Pour en savoir plus, voir comment [parcourir les ressources DAM à l’aide de l’application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#browse-search-preview-assets) et [comment utiliser le lien de ressource d’Adobe](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
