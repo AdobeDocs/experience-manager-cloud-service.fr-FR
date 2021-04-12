@@ -4,7 +4,7 @@ description: Réseau de diffusion de contenu dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 translation-type: tm+mt
-source-git-commit: 16a0f4de0d7a32032abd4742cc06a086038d032b
+source-git-commit: b063fee5e088d6dfe5bd6be2b842e6bae48ee4a9
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 64%
@@ -47,7 +47,7 @@ Si un client doit utiliser son réseau de diffusion de contenu existant, il peut
 Instructions de configuration :
 
 1. Définissez l’en-tête `X-Forwarded-Host` avec le nom de domaine. Par exemple : `X-Forwarded-Host:example.com`.
-1. Définissez l’en-tête de l’hôte avec le domaine d’origine, qui est l’entrée du réseau de diffusion de contenu AEM. Par exemple : `Host: publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. Définissez l’en-tête de l’hôte avec le domaine d’origine, qui est l’entrée du réseau de diffusion de contenu AEM. Par exemple : `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Envoyez l’en-tête SNI à l’origine. Tout comme l’en-tête Host, l’en-tête SNI doit être le domaine d’origine.
 1. Définissez `X-Edge-Key` ou `X-AEM-Edge-Key` (si votre réseau de diffusion de contenu se décompose `X-Edge-*`). La valeur doit provenir d’Adobe.
    * Cela est nécessaire pour que le CDN de l&#39;Adobe puisse valider la source des requêtes et transmettre les en-têtes `X-Forwarded-*` à l&#39;application AEM. Par exemple, `X-Forwarded-Host` est utilisé par AEM pour déterminer l’en-tête hôte et `X-Forwarded-For` est utilisé pour déterminer l’adresse IP du client. Il incombe donc à l&#39;appelant de confiance (c&#39;est-à-dire au CDN géré par le client) de s&#39;assurer de l&#39;exactitude des en-têtes `X-Forwarded-*` (voir la note ci-dessous).
