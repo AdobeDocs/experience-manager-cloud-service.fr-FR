@@ -2,14 +2,14 @@
 title: Réseau de diffusion de contenu dans AEM as a Cloud Service
 description: Réseau de diffusion de contenu dans AEM as a Cloud Service
 feature: Dispatcher
+exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: 753d023e1b2c5b76ed5c402c002046cc2c5c1de4
 workflow-type: tm+mt
-source-wordcount: '696'
-ht-degree: 70%
+source-wordcount: '758'
+ht-degree: 63%
 
 ---
-
 
 # Réseau de diffusion de contenu dans AEM as a Cloud Service {#cdn}
 
@@ -46,10 +46,12 @@ Si un client doit utiliser son réseau de diffusion de contenu existant, il peut
 
 Instructions de configuration :
 
-1. Définissez l’en-tête `X-Forwarded-Host` avec le nom de domaine.
-1. Définissez l’en-tête de l’hôte avec le domaine d’origine, qui est l’entrée du réseau de diffusion de contenu AEM. La valeur doit provenir d’Adobe.
+1. Définissez l’en-tête `X-Forwarded-Host` avec le nom de domaine. Par exemple : `X-Forwarded-Host: example.com`.
+1. Définissez l’en-tête de l’hôte avec le domaine d’origine, qui est l’entrée du réseau de diffusion de contenu AEM. Par exemple : `Host: publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Envoyez l’en-tête SNI à l’origine. Tout comme l’en-tête Host, l’en-tête SNI doit être le domaine d’origine.
-1. Définissez `X-Edge-Key` ou `X-AEM-Edge-Key` (si votre réseau de diffusion de contenu efface X-Edge-*), qui est nécessaire pour acheminer correctement le trafic vers les serveurs AEM. La valeur doit provenir d’Adobe. Veuillez informer l&#39;Adobe si vous souhaitez un accès direct à l&#39;entrée du CDN de l&#39;Adobe (à bloquer lorsque `X-Edge-Key` n&#39;est pas présent).
+1. Définissez `X-Edge-Key` ou `X-AEM-Edge-Key` (si votre réseau de diffusion de contenu s&#39;efface `X-Edge-*`). La valeur doit provenir de l&#39;Adobe.
+   * Cela est nécessaire pour que le CDN de l&#39;Adobe puisse valider la source des requêtes et transmettre les en-têtes `X-Forwarded-*` à l&#39;application AEM. Par exemple, `X-Forwarded-Host` est utilisé par AEM pour déterminer l’en-tête hôte et `X-Forwarded-For` est utilisé pour déterminer l’adresse IP du client. Il incombe donc à l&#39;appelant de confiance (c&#39;est-à-dire au CDN géré par le client) de s&#39;assurer de l&#39;exactitude des en-têtes `X-Forwarded-*` (voir la note ci-dessous).
+   * Si vous le souhaitez, l&#39;accès à l&#39;entrée du CDN de l&#39;Adobe peut être bloqué lorsqu&#39;un `X-Edge-Key` n&#39;est pas présent. Veuillez informer l&#39;Adobe si vous avez besoin d&#39;un accès direct à l&#39;entrée du CDN de l&#39;Adobe (à bloquer).
 
 Avant d’accepter le trafic en direct, vous devez vérifier auprès de l’assistance clientèle de l’Adobe que le routage de trafic de bout en bout fonctionne correctement.
 
