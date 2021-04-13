@@ -3,15 +3,15 @@ title: Gestion des droits numériques dans  [!DNL Assets]
 description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans  [!DNL Experience Manager]  as a  [!DNL Cloud Service].
 contentOwner: AG
 feature: Gestion des ressources,DRM
-role: Professionnel, administrateur
+role: Business Practitioner,Administrator
+exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
 workflow-type: tm+mt
-source-wordcount: '1349'
-ht-degree: 99%
+source-wordcount: '1345'
+ht-degree: 98%
 
 ---
-
 
 # Gestion des droits numériques des ressources {#digital-rights-management-in-assets}
 
@@ -37,7 +37,7 @@ Vous pouvez consulter l’état d’expiration d’une ressource aux emplacement
 
 Vous pouvez rechercher des ressources arrivées à expiration, y compris les sous-ressources expirées dans le panneau de recherche.
 
-1. Dans la console [!DNL Assets], cliquez sur l’option **[!UICONTROL Rechercher]** de la barre d’outils pour afficher la zone Omni-recherche.
+1. Dans la console [!DNL Assets], cliquez sur **[!UICONTROL Rechercher]** dans la barre d’outils pour afficher la zone de recherche [!DNL Experience Manager].
 
 1. Avec le curseur dans la zone Omni-recherche, sélectionnez la touche `Enter` pour afficher la page des résultats de la recherche.
 
