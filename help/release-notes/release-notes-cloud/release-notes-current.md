@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: bea158d45f8f66febe47d0580074358ec2b69c16
+source-git-commit: b412ec6b554684b9b41fe6c8991124bc76e200af
 workflow-type: tm+mt
-source-wordcount: '1585'
-ht-degree: 12%
+source-wordcount: '1588'
+ht-degree: 13%
 
 ---
 
@@ -195,11 +195,13 @@ La date de publication de l’outil de transfert de contenu v1.3.0 est le 4 mars
 
 ### Date de publication {#release-date-bpa}
 
-La date de publication de la version 2.1.8 de Best Practices Analyzer est le 22 mars 2021.
+La date de publication pour la version 2.1.12 de Best Practices Analyzer est le 12 avril 2021.
 
-### Nouveautés de l’analyseur des meilleures pratiques {#what-is-new-bpa}
+### Correctifs {#bug-fixes-bpa-april}
 
-* Capacité à filtrer les résultats d&#39;ACS Commons du rapport BPA dans l&#39;interface utilisateur ainsi que du rapport exporté en tant que fichier CSV.
+* Des lignes de duplicata ont été vues dans le BPA rapporté. Ce problème a été résolu.
+* L&#39;interface utilisateur BPA de AEM version 6.4.2 affichait une erreur JS qui désactivait le bouton Générer le rapport. Ce problème a été résolu
+
 
 ## Outils de refactorisation du code {#code-refactoring-tools}
 
