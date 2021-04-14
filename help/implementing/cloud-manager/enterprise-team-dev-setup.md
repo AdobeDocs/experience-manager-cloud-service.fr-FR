@@ -2,9 +2,9 @@
 title: Configuration du développement d'équipe d'entreprise - Cloud Services
 description: Suivez cette page pour en savoir plus sur la configuration de Enterprise Team Development
 translation-type: tm+mt
-source-git-commit: 45425a824f33f9454a4a0481befbbcaf5fc36c8d
+source-git-commit: 8197defd4a73173106e1f013627547a085e51dab
 workflow-type: tm+mt
-source-wordcount: '1495'
+source-wordcount: '1496'
 ht-degree: 0%
 
 ---
@@ -82,8 +82,10 @@ Cette configuration du monde réel peut être utilisée comme un plan directeur 
 
 ### Considérations relatives à la configuration de plusieurs équipes {#considerations}
 
-Le plan d&#39;installation de plusieurs équipes décrit ci-dessus permet de le faire évoluer dans un plus grand nombre d&#39;équipes. Avec le référentiel de git de Cloud Manager et le pipeline de production, le code de production complet est toujours exécuté par toutes les portes de qualité, le traitant comme une unité de déploiement. Ainsi, le système de production est conservé *toujours sur* sans interruption ni temps d&#39;arrêt.
-En revanche, en l&#39;absence d&#39;un tel système, chaque équipe pouvant se déployer séparément, il est possible qu&#39;une mise à jour d&#39;une équipe unique puisse entraîner des problèmes de stabilité de la production. En outre, il nécessite une coordination et des temps d’arrêt planifiés pour déployer les mises à jour. Avec un nombre croissant d&#39;équipes, l&#39;effort de coordination deviendra beaucoup plus complexe et rapidement ingérable.
-Si un problème est détecté dans les barrières de qualité, la production n&#39;est pas affectée, et le problème peut être détecté et corrigé sans que le personnel de l&#39;Adobe ne soit requis pour intervenir. Sans Cloud Service et sans toujours tester l’ensemble du déploiement, des déploiements partiels peuvent provoquer des pannes nécessitant une demande d’annulation ou même une restauration complète à partir d’une sauvegarde. Les essais partiels pourraient aussi entraîner d&#39;autres problèmes qui devront être résolus après le fait qu&#39;ils nécessitent à nouveau la coordination et le soutien du personnel de l&#39;Adobe.
+>[!NOTE]
+>Pour toute configuration multi-équipe, il est essentiel de définir un modèle de gouvernance et un ensemble de normes que toutes les équipes doivent respecter. Le plan d&#39;installation de plusieurs équipes décrit ci-dessus permet de mettre à l&#39;échelle un plus grand nombre d&#39;équipes et vous pouvez utiliser ce plan comme point de départ.
 
-Pour toute configuration multi-équipe, il est essentiel de définir un modèle de gouvernance et un ensemble de normes que toutes les équipes doivent respecter. Vous pouvez utiliser le plan directeur comme point de départ.
+Avec le référentiel de git de Cloud Manager et le pipeline de production, le code de production complet est toujours exécuté par toutes les portes de qualité, le traitant comme une unité de déploiement. Ainsi, le système de production est conservé *toujours sur* sans interruption ni temps d&#39;arrêt.
+En revanche, en l&#39;absence d&#39;un tel système, chaque équipe pouvant se déployer séparément, il est possible qu&#39;une mise à jour d&#39;une équipe unique puisse entraîner des problèmes de stabilité de la production. En outre, il nécessite une coordination et des temps d’arrêt planifiés pour déployer les mises à jour. Avec un nombre croissant d&#39;équipes, l&#39;effort de coordination deviendra beaucoup plus complexe et rapidement ingérable.
+
+Si un problème est détecté dans les barrières de qualité, la production n&#39;est pas affectée, et le problème peut être détecté et corrigé sans que le personnel de l&#39;Adobe ne soit requis pour intervenir. Sans Cloud Service et sans toujours tester l’ensemble du déploiement, des déploiements partiels peuvent provoquer des pannes nécessitant une demande d’annulation ou même une restauration complète à partir d’une sauvegarde. Les essais partiels pourraient aussi entraîner d&#39;autres problèmes qui devront être résolus après le fait qu&#39;ils nécessitent à nouveau la coordination et le soutien du personnel de l&#39;Adobe.
