@@ -2,7 +2,7 @@
 title: Configuration du développement d'équipe d'entreprise - Cloud Services
 description: Suivez cette page pour en savoir plus sur la configuration de Enterprise Team Development
 translation-type: tm+mt
-source-git-commit: 8197defd4a73173106e1f013627547a085e51dab
+source-git-commit: ad72ea45681169551f5ce6801cec59d6c106b346
 workflow-type: tm+mt
 source-wordcount: '1496'
 ht-degree: 0%
@@ -68,7 +68,7 @@ La configuration dans le référentiel Git de Cloud Manager comporte deux branch
 * Une branche *stable de la version*, contenant le code de production de toutes les équipes
 * Une branche de développement ** contenant le code de développement de toutes les équipes
 
-Chaque poussée vers le référentiel git d’une équipe, que ce soit dans le développement ou dans la branche stable, déclenche une action [github](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). Tous les projets suivent la même configuration pour la branche stable. Une poussée sur la branche stable d’un projet est automatiquement poussée vers la branche stable dans le référentiel Git Cloud Manager. Le pipeline de production dans Cloud Manager est configuré pour être déclenché par une poussée vers la branche stable. Le pipeline de production est donc exécuté par chaque poussée d&#39;une équipe dans une branche stable et le déploiement de production est mis à jour si toutes les portes de qualité passent.
+Chaque poussée vers le référentiel git d’une équipe, que ce soit dans le développement ou dans la branche stable, déclenche une action [github](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). Tous les projets suivent la même configuration pour la branche stable. Une poussée sur la branche stable d’un projet est automatiquement poussée vers la branche stable dans le référentiel git de Cloud Manager. Le pipeline de production dans Cloud Manager est configuré pour être déclenché par une poussée vers la branche stable. Le pipeline de production est donc exécuté par chaque poussée d&#39;une équipe dans une branche stable et le déploiement de production est mis à jour si toutes les portes de qualité passent.
 
 ![](assets/team-setup2.png)
 
