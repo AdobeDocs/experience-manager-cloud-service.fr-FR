@@ -1,14 +1,14 @@
 ---
 title: Structure de projet AEM
 description: Découvrez comment définir des structures de package en vue d’un déploiement sur Adobe Experience Manager Cloud Service.
+exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 translation-type: tm+mt
-source-git-commit: f9a6dbec25b8154fda8069ff213aaaaa1d443ca1
+source-git-commit: 800c6db7fed43d706dcf1c26235b2f88ed0a5b62
 workflow-type: tm+mt
-source-wordcount: '2836'
-ht-degree: 99%
+source-wordcount: '2873'
+ht-degree: 97%
 
 ---
-
 
 # Structure de projet AEM
 
@@ -86,6 +86,10 @@ La structure de déploiement d’application recommandée est la suivante :
          + Utilisateurs du service
          + Groupes
          + Listes de contrôle d’accès (autorisations)
+
+>[!NOTE]
+>
+>Le même code doit être déployé sur tous les environnements. Cela est nécessaire pour garantir un niveau de confiance dans les validations de l&#39;environnement d&#39;étape également en production. Pour plus d&#39;informations, voir [Codage conservateur pour les restaurations](/help/implementing/deploying/overview.md#conservative-coding-for-rollbacks).
 
 
 ### Modules de contenu
