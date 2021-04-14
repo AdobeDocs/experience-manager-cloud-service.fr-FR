@@ -2,9 +2,9 @@
 title: Configuration du développement d'équipe d'entreprise - Cloud Services
 description: Suivez cette page pour en savoir plus sur la configuration de Enterprise Team Development
 translation-type: tm+mt
-source-git-commit: 1695f98cdf10c3bf35d651bd165fb9f2ee113abe
+source-git-commit: 45425a824f33f9454a4a0481befbbcaf5fc36c8d
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1495'
 ht-degree: 0%
 
 ---
@@ -61,14 +61,14 @@ Chaque équipe utilise un flux de travail git simplifié avec deux branches + N,
 * Pour chaque fonction, une nouvelle branche est créée.
 
 
-Le développement est effectué dans une branche de fonctionnalités, lorsque la fonction est mûrie, elle est fusionnée dans la branche de développement. Les fonctionnalités terminées et validées sont sélectionnées dans la branche de développement et fusionnées dans la branche stable. Toutes les modifications sont effectuées par le biais de requêtes d&#39;extraction (PR). Chaque PR est automatiquement validée par des portes de qualité. Sonar est utilisé pour vérifier la qualité du code et un ensemble de suites de tests est exécuté pour s’assurer que le nouveau code n’introduit aucune régression.
+Le développement est effectué dans une branche de fonctionnalités, lorsque la fonction est mûrie, elle est fusionnée dans la branche de développement. Les fonctionnalités terminées et validées sont sélectionnées dans la branche de développement et fusionnées dans la branche stable. Toutes les modifications sont effectuées par le biais de requêtes d&#39;extraction (PR). Chaque RP est automatiquement validé par des portes de qualité. Sonar est utilisé pour vérifier la qualité du code et un ensemble de suites de tests est exécuté pour s’assurer que le nouveau code n’introduit aucune régression.
 
-La configuration dans le référentiel de gits de Cloud Manager comporte deux branches :
+La configuration dans le référentiel Git de Cloud Manager comporte deux branches :
 
 * Une branche *stable de la version*, contenant le code de production de toutes les équipes
 * Une branche de développement ** contenant le code de développement de toutes les équipes
 
-Chaque poussée vers le référentiel git d’une équipe, que ce soit dans le développement ou dans la branche stable, déclenche une action [github](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). Tous les projets suivent la même configuration pour la branche stable : Une poussée de la branche stable d’un projet est automatiquement poussée vers la branche stable dans le référentiel de gits Cloud Manager. Le pipeline de production dans Cloud Manager est configuré pour être déclenché par une poussée vers la branche stable. Le pipeline de production est donc exécuté par chaque poussée d&#39;une équipe dans une branche stable et le déploiement de production est mis à jour si toutes les portes de qualité passent.
+Chaque poussée vers le référentiel git d’une équipe, que ce soit dans le développement ou dans la branche stable, déclenche une action [github](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). Tous les projets suivent la même configuration pour la branche stable. Une poussée sur la branche stable d’un projet est automatiquement poussée vers la branche stable dans le référentiel Git Cloud Manager. Le pipeline de production dans Cloud Manager est configuré pour être déclenché par une poussée vers la branche stable. Le pipeline de production est donc exécuté par chaque poussée d&#39;une équipe dans une branche stable et le déploiement de production est mis à jour si toutes les portes de qualité passent.
 
 ![](assets/team-setup2.png)
 
