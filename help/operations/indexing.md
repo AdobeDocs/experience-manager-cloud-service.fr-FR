@@ -1,14 +1,14 @@
 ---
 title: Recherche et indexation de contenu
 description: Recherche et indexation de contenu
+exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 translation-type: tm+mt
-source-git-commit: fd2009eab27ac14e722f2e9da28fc734834ab892
+source-git-commit: 28c3fb4c5c0da175ee84463d7c100bdb1b93bb30
 workflow-type: tm+mt
 source-wordcount: '1738'
 ht-degree: 73%
 
 ---
-
 
 # Recherche et indexation de contenu {#indexing}
 
@@ -169,7 +169,7 @@ La nouvelle version de l’application utilise la configuration suivante (modifi
 
 ### Annulation d&#39;une modification {#undoing-a-change}
 
-Il arrive qu’une modification de la définition d’un index doive être annulée. Les raisons peuvent être qu&#39;un changement a été fait par erreur, ou qu&#39;un changement n&#39;est plus nécessaire. Par exemple, la définition d&#39;index `damAssetAssetLucene-8-custom-3` a été créée par erreur et est déjà déployée. C&#39;est pourquoi vous pouvez revenir à la définition d&#39;index précédente `damAssetAssetLucene-8-custom-2`. Pour ce faire, vous devez ajouter un nouvel index appelé `damAssetAssetLucene-8-custom-4` qui contient la définition de l&#39;index précédent, `damAssetAssetLucene-8-custom-2`.
+Il arrive qu’une modification de la définition d’un index doive être annulée. Les raisons peuvent être qu&#39;un changement a été fait par erreur, ou qu&#39;un changement n&#39;est plus nécessaire. Par exemple, la définition d&#39;index `damAssetLucene-8-custom-3` a été créée par erreur et est déjà déployée. C&#39;est pourquoi vous pouvez revenir à la définition d&#39;index précédente `damAssetLucene-8-custom-2`. Pour ce faire, vous devez ajouter un nouvel index appelé `damAssetLucene-8-custom-4` qui contient la définition de l&#39;index précédent, `damAssetLucene-8-custom-2`.
 
 ### Suppression d’un index {#removing-an-index}
 
@@ -198,7 +198,7 @@ Si un index doit être supprimé dans une version ultérieure de l’application
     </acme.product-custom-3>
 ```
 
-S’il n’est plus nécessaire de personnaliser un index prêt à l’emploi, vous devez copier la définition d’index prêt à l’emploi. Par exemple, si vous avez déjà déployé `damAssetAssetLucene-8-custom-3`, mais que vous n&#39;avez plus besoin des personnalisations et que vous souhaitez revenir à l&#39;index `damAssetAssetLucene-8` par défaut, vous devez ajouter un index `damAssetAssetLucene-8-custom-4` contenant la définition d&#39;index de `damAssetAssetLucene-8`.
+S’il n’est plus nécessaire de personnaliser un index prêt à l’emploi, vous devez copier la définition d’index prêt à l’emploi. Par exemple, si vous avez déjà déployé `damAssetLucene-8-custom-3`, mais que vous n&#39;avez plus besoin des personnalisations et que vous souhaitez revenir à l&#39;index `damAssetLucene-8` par défaut, vous devez ajouter un index `damAssetLucene-8-custom-4` contenant la définition d&#39;index de `damAssetLucene-8`.
 
 ### Disponibilité de l&#39;index et tolérance aux pannes {#index-availability-and-fault-tolerance}
 
