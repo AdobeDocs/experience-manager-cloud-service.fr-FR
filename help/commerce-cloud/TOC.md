@@ -1,34 +1,37 @@
 ---
-sub-product: AEM Commerce as a Cloud Service
-user-guide-title: AEM Commerce en tant que Cloud Service
-breadcrumb-title: Guide commercial
-user-guide-description: Apprenez comment utiliser et administrer Experience Manager Commerce as a Cloud Service.
+sub-product: AEM Contenu et commerce en tant que Cloud Service
+user-guide-title: AEM Contenu et commerce en tant que Cloud Service
+breadcrumb-title: Guide AEM de contenu et de commerce
+user-guide-description: Découvrez comment utiliser et administrer le contenu et le commerce des Experience Manager en tant que Cloud Service.
 feature-set: Experience Manager Sites
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 4b4741926381818e44b2293f9bed86782e689c49
 workflow-type: tm+mt
-source-wordcount: '71'
-ht-degree: 100%
+source-wordcount: '99'
+ht-degree: 25%
 
 ---
 
 
-# Commerce {#commerce}
+# Contenu AEM et commerce {#content-and-commerce}
 
-+ [AEM Commerce as a Cloud Service](/help/commerce-cloud/home.md)
-+ [Présentation](overview.md)
-+ [Modifications notables](changes.md)
-+ Architecture {#architecture}
-   + [Intégration de Magento](architecture/magento.md)
-   + [Intégration commerciale tierce](architecture/third-party.md)
-+ [Prise en main](getting-started.md)
-+ [Développement avec le SDK AEM Cloud Service](develop.md)
-+ Configuration {#configure}
-   + [Utilisation de modèles multiples](configuring/multi-template-usage.md)
-   + [Configuration multi-magasin](configuring/multi-store-setup.md)
-   + [Configuration des URL pour l’optimisation du moteur de recherche](configuring/advanced-url-configuration.md)
-   + [Options de mise en cache](configuring/caching.md)
-+ Personnalisation {#customize}
-   + [Style des composants CIF](customizing/style-cif-component.md)
-   + [Personnalisation des composants CIF](customizing/customize-cif-components.md)
++ [Contenu AEM et commerce](/help/commerce-cloud/home.md)
++ [Modifications notables apportées au contenu AEM et au commerce en tant que Cloud Service](changes.md)
++ [Présentation et présentation](introduction.md)
++ Intégrations {#integrations}
+   + [Adobe Commerce](integrating/magento.md)
+   + [Solution commerciale tierce](integrating/third-party.md)
++ AEM Storefront {#storefront}
+   + [Prise en main](getting-started.md)
+   + Administration {#administering}
+      + [Configuration multi-magasin](configuring/multi-store-setup.md)
+      + [Utilisation de modèles multiples](configuring/multi-template-usage.md)
+      + [Configuration des URL pour l’optimisation du moteur de recherche](configuring/advanced-url-configuration.md)
+      + [Options de mise en cache](configuring/caching.md)
+   + Développement {#developing}
+      + [Développement avec AEM Cloud Service SDK](develop.md)
+      + [Style des composants CIF](customizing/style-cif-component.md)
+      + [Personnalisation des composants CIF](customizing/customize-cif-components.md)
+      + [Utilisation des sélecteurs de catalogue CIF](customizing/use-cif-pickers.md)
++ [Migration](migration.md)
 + [FAQ](faq.md)
