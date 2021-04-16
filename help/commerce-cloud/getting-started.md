@@ -9,10 +9,10 @@ kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 translation-type: tm+mt
-source-git-commit: e34592d24c8f6c17e6959db1d5c513feaf6381c8
+source-git-commit: 08e258d4e9cd67de3da2aa57c058036bd104472d
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 68%
+source-wordcount: '1071'
+ht-degree: 37%
 
 ---
 
@@ -33,28 +33,36 @@ Une fois que vous disposez du module complémentaire CIF, celui-ci est appliqué
 
 La deuxième étape s’effectue en libre-service pour chaque environnement AEM as a Cloud Service. Il existe d’autres configurations que vous devrez effectuer après l’approvisionnement initial du module complémentaire CIF.
 
-## Connexion d&#39;AEM à une solution de commerce {#magento}
+## Connexion d&#39;AEM à une solution commerciale {#magento}
 
 Pour connecter le module complémentaire CIF et les [AEM composants principaux CIF](https://github.com/adobe/aem-core-cif-components) à une solution commerciale, vous devez fournir l’URL du point de terminaison GraphQL via une variable d’environnement Cloud Manager. Le nom de la variable est `COMMERCE_ENDPOINT`. Une connexion sécurisée via HTTPS doit être configurée.
+
+Cette variable d’environnement est utilisée à deux endroits :
+
+- Appels GraphQL de AEM vers le serveur principal de commerce, via un client GraphQl partagé commun, utilisé par les composants principaux CIF AEM et les composants de projet client.
+- Configurez une URL de proxy GraphQL sur chaque environnement AEM la variable est définie sur `/api/graphql`. Il est utilisé par les outils de création de commerce AEM (module complémentaire CIF) et les composants côté client CIF.
+
 Une autre URL de point d’entrée GraphQL peut être utilisée pour chaque environnement AEM as a Cloud Service. De cette façon, les projets peuvent relier AEM environnements d&#39;évaluation à des systèmes d&#39;évaluation de commerce et à un environnement de production AEM à un système de production de commerce. Ce point d’entrée GraphQL doit être accessible au public, et les connexions VPN privées ou locales ne sont pas prises en charge. Vous pouvez éventuellement fournir un en-tête d’authentification afin d’utiliser des fonctions CIF supplémentaires nécessitant une authentification.
+
+Facultatif et uniquement pour Adobe Commerce Enterprise / Cloud, le module complémentaire CIF prend en charge l’utilisation de données de catalogue intermédiaire pour les auteurs d’AEM. Pour ce faire, vous devez configurer un jeton d’autorisation. Le jeton d’autorisation configuré n’est disponible et utilisé que sur les instances d’auteur AEM pour des raisons de sécurité. AEM instances de publication ne peuvent pas afficher les données par étapes.
 
 Il existe deux options pour configurer le point de terminaison :
 
-### 1) Via l’interface utilisateur de Cloud Manager (par défaut)
+### Via l’interface utilisateur de Cloud Manager (par défaut) {#cm-ui}
 
 Pour ce faire, vous pouvez ouvrir une boîte de dialogue sur la page Détails de l’Environnement. Lors de l’affichage de cette page pour un programme compatible Commerce, un bouton s’affiche si le point de terminaison n’est pas actuellement configuré :
 
-![Mise en œuvre finale du badge Écologique](/help/commerce-cloud/assets/commerce-cmui.png)
+![Informations sur l&#39;environnement CM](/help/commerce-cloud/assets/commerce-cmui.png)
 
 Cliquez sur ce bouton pour ouvrir une boîte de dialogue :
 
-![Mise en œuvre finale du badge Écologique](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
+![CM Commerce Endpoint](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
-Une fois le point de terminaison (et, éventuellement, le jeton) défini, le point de terminaison s’affiche sur la page de détails. Cliquez sur l’icône Modifier pour ouvrir la même boîte de dialogue où le point de terminaison peut être modifié si nécessaire.
+Une fois le point de terminaison (éventuellement un jeton d’authentification pour la prise en charge de catalogue intermédiaire) défini, le point de terminaison s’affiche dans la page de détails. Cliquez sur l’icône Modifier pour ouvrir la même boîte de dialogue où le point de terminaison peut être modifié si nécessaire.
 
-![Mise en œuvre finale du badge Écologique](/help/commerce-cloud/assets/commerce-cmui-done.png)
+![Informations sur l&#39;environnement CM](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
-### 2) Par Adobe I/O CLI
+### Par Adobe I/O CLI {#adobe-cli}
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
@@ -62,7 +70,7 @@ Pour connecter AEM à une solution commerciale via l’interface de ligne de com
 
 1. Procurez-vous la ligne de commande d’Adobe I/O avec le plug-in Cloud Manager.
 
-   Consultez la [documentation d’Adobe Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) relative à la manière de télécharger, de configurer et d’utiliser la [ligne de commande d’Adobe I/O](https://github.com/adobe/aio-cli) avec le [plug-in de ligne de commande Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+   Consultez la [documentation de Adobe Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) pour savoir comment télécharger, configurer et utiliser l’[interface de ligne de commande de l’Adobe I/O ](https://github.com/adobe/aio-cli) avec le [module d’interface de ligne de commande Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
 2. Authentification de l’interface de ligne de commande de l’Adobe I/O avec l’AEM en tant que programme Cloud Service
 
@@ -76,28 +84,58 @@ Pour connecter AEM à une solution commerciale via l’interface de ligne de com
 
    L’URL du point de terminaison GraphQL du commerce doit pointer vers le service GraphQl du commerce et utiliser une connexion HTTPS sécurisée. Par exemple : `https://demo.magentosite.cloud/graphql`.
 
+4. Activer les fonctionnalités de catalogue intermédiaire qui nécessitent une authentification (facultatif)
+
+   >[!NOTE]
+   >
+   >Cette fonctionnalité est disponible uniquement avec Adobe Commerce Enterprise ou Cloud Edition. Voir la section [Authentification basée sur un jeton](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens) pour en savoir plus.
+
+   Définissez la variable secrète `COMMERCE_AUTH_HEADER` dans Cloud Manager :
+
+   ```bash
+   aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization: Bearer <Access Token>"
+   ```
+
 >[!TIP]
 >
 >Pour vérifier, vous pouvez répertorier toutes les variables de Cloud Manager à l’aide de la commande suivante : `aio cloudmanager:list-environment-variables ENVIRONMENT_ID`
 
 Vous êtes ainsi prêt à utiliser AEM Commerce as a Cloud Service et vous pouvez déployer votre projet via Cloud Manager.
 
-## Activer les fonctionnalités nécessitant une authentification (facultatif) {#staging}
+## Configuration des magasins et des catalogues {#catalog}
 
->[!NOTE]
->
->Cette fonctionnalité est disponible uniquement avec Magento Enterprise Edition ou Magento Cloud.
+Le module complémentaire CIF et les [composants principaux CIF](https://github.com/adobe/aem-core-cif-components) peuvent être utilisés sur plusieurs structures de site AEM connectées à différents magasins de commerce (ou vues de stockage, etc.). Par défaut, le module complémentaire CIF est déployé avec une configuration par défaut se connectant au magasin et catalogue par défaut d&#39;Adobe Commerce (Magento).
 
-1. Connectez-vous à Magento et créez un jeton d’intégration. Voir la section [Authentification basée sur un jeton](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens) pour en savoir plus. Assurez-vous que le jeton d’intégration a *uniquement* accès aux ressources `Content -> Staging`. Copiez la valeur `Access Token`.
+Cette configuration peut être ajustée pour le projet via la configuration du Cloud Service CIF en procédant comme suit :
 
-1. Définissez la variable secrète `COMMERCE_AUTH_HEADER` dans Cloud Manager :
+1. Dans AEM accédez à Outils -> Cloud Services -> Configuration CIF
 
-   ```bash
-   aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization: Bearer <Access Token>"
-   ```
+2. Sélectionnez la configuration commerciale à modifier.
 
-   Voir la section [Connexion d’AEM Commerce à Magento](#magento) pour savoir comment configurer l’interface de ligne de commande Adobe I/O pour Cloud Manager.
+3. Ouvrez les propriétés de configuration via la barre d’actions.
 
-## Intégrations commerciales tierces {#integrations}
+![Configuration des Cloud Services CIF](/help/commerce-cloud/assets/cif-cloud-service-config.png)
 
-Pour les intégrations commerciales tierces, une [couche de mappage d’API](architecture/third-party.md) est nécessaire afin de connecter AEM Commerce as a Cloud Service et les composants principaux CIF à votre système Commerce. Cette couche de mappage d’API est généralement déployée sur Adobe I/O Runtime. Contactez votre représentant commercial pour connaître les intégrations disponibles et accéder à Adobe I/O Runtime.
+Les propriétés suivantes peuvent être configurées :
+
+- Client GraphQL : sélectionnez le client GraphQL configuré pour la communication d&#39;arrière-plan de commerce. En règle générale, cette option doit rester par défaut.
+- Vue de stockage : identifiant (Magento) de vue de stockage. Si elle est vide, la vue de stockage par défaut est utilisée.
+- Chemin d&#39;accès du proxy GraphQL : chemin d&#39;accès de l&#39;URL Proxy GraphQL dans AEM utilisé pour les demandes de proxy au point de terminaison GraphQL principal du commerce.
+   >[!NOTE]
+   >
+   > Dans la plupart des configurations, la valeur par défaut `/api/graphql` ne doit pas être modifiée. Seule une configuration avancée n&#39;utilisant pas le proxy GraphQL fourni doit modifier ce paramètre.
+- Activer la prise en charge de l&#39;UID du catalogue : activez la prise en charge de l&#39;UID plutôt que de l&#39;ID dans les appels GraphQL d&#39;arrière-plan du commerce.
+   >[!NOTE]
+   >
+   > La prise en charge des UID a été introduite dans Adobe Commerce (Magento) 2.4.2. Activez cette option uniquement si votre serveur principal de commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
+- Identifiant de Catégorie racine du catalogue - identifiant (UID ou ID) de la racine du catalogue de stockage
+
+La configuration illustrée ci-dessus est à titre de référence. Les projets doivent fournir leurs propres configurations.
+
+Pour des configurations plus complexes à l’aide de plusieurs structures de site AEM associées à différents catalogues commerciaux, consultez le [didacticiel Configuration de plusieurs magasins de commerce](configuring/multi-store-setup.md).
+
+## Ressources supplémentaires {#additional-resources}
+
+- [Archétype de projet AEM](https://github.com/adobe/aem-project-archetype)
+- [Magasin de référence Venia AEM](https://github.com/adobe/aem-cif-guides-venia)
+- [Configuration de plusieurs magasins commerciaux](configuring/multi-store-setup.md)
