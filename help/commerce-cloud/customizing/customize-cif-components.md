@@ -10,11 +10,12 @@ audience: developer
 feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
+exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
 translation-type: tm+mt
-source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
 workflow-type: tm+mt
-source-wordcount: '2550'
-ht-degree: 100%
+source-wordcount: '2554'
+ht-degree: 98%
 
 ---
 
@@ -39,7 +40,7 @@ Un environnement de développement local est nécessaire pour suivre ce tutoriel
 
 Vous avez également besoin d’un IDE GraphQL tel que [GraphiQL](https://github.com/graphql/graphiql) ou d’une extension de navigateur pour exécuter les exemples de code et les tutoriels. Si vous installez une extension de navigateur, assurez-vous que celle-ci permet de définir des en-têtes de requête. Dans Google Chrome, [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) est une extension pouvant réaliser cette tâche.
 
-## Clonage du projet Venia {#clone-venia-project}
+## Cloner le projet Venia {#clone-venia-project}
 
 Nous allons cloner le [projet Venia](https://github.com/adobe/aem-cif-guides-venia) puis remplacer les styles par défaut.
 
@@ -84,13 +85,13 @@ Le composant Teaser de produit va être étendu tout au long de ce tutoriel. Dan
 
    >[!NOTE]
    >
-   > Sachez que vous pouvez également configurer le produit affiché en configurant le composant à l’aide de la boîte de dialogue (en cliquant sur l’icône de *clé à molette*).
+   > Sachez que vous pouvez également configurer le produit affiché en configurant le composant à l’aide de la boîte de dialogue (en cliquant sur l’icône de _clé à molette_).
 
 4. Vous devriez maintenant voir un produit affiché par le teaser de produit. Le nom du produit et son prix sont des attributs par défaut qui sont affichés.
 
    ![Teaser de produit – style par défaut](../assets/customize-cif-components/product-teaser-default-style.png)
 
-## Ajout d’un attribut personnalisé dans Magento {#add-custom-attribute}
+## Ajouter un attribut personnalisé dans le Magento {#add-custom-attribute}
 
 Les produits et les données de produit affichés dans AEM sont stockés dans Magento. Ajoutez ensuite un nouvel attribut pour **Écologique** dans le cadre de l’attribut de produit défini avec l’interface utilisateur de Magento.
 
@@ -108,7 +109,7 @@ Les produits et les données de produit affichés dans AEM sont stockés dans Ma
 1. Remplissez le formulaire **New Attribute** (Nouvel attribut) avec les valeurs suivantes (conservez les paramètres par défaut des autres valeurs).
 
    | Jeu de champs | Libellé du champ | Valeur |
-   |-----------|-------------|---------|
+   | ----------------------------- | ------------------ | ---------------- |
    | Propriétés d’attribut | Attribute Label | **Écologique** |
    | Propriétés d’attribut | Catalog Input Type | **Oui/Non** |
    | Propriétés d’attribut avancées | Attribute Code | **eco_friendly** |
@@ -136,7 +137,7 @@ Les produits et les données de produit affichés dans AEM sont stockés dans Ma
    >
    > Pour plus d’informations sur la [gestion du cache, consultez le guide de l’utilisateur de Magento](https://docs.magento.com/user-guide/system/cache-management.html).
 
-## Utilisation d’un IDE GraphQL pour vérifier l’attribut {#use-graphql-ide}
+## Utiliser un IDE GraphQL pour vérifier l&#39;attribut {#use-graphql-ide}
 
 Avant de passer au code AEM, il est utile d’explorer le point d’entrée [Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) à l’aide d’un IDE GraphQL. L’intégration de Magento avec AEM s’effectue principalement par le biais d’une série de requêtes GraphQL. Comprendre et modifier les requêtes GraphQL est l’un des principaux moyens d’étendre les composants principaux CIF.
 
@@ -163,17 +164,17 @@ Ensuite, utilisez un IDE GraphQL pour vérifier que l’attribut `eco_friendly` 
 
    ```json
    {
-   "data": {
+     "data": {
        "products": {
-           "items": [
-               {
-               "name": "Valeria Two-Layer Tank",
-               "sku": "VT11",
-               "eco_friendly": 1
-               }
-           ]
+         "items": [
+           {
+             "name": "Valeria Two-Layer Tank",
+             "sku": "VT11",
+             "eco_friendly": 1
            }
+         ]
        }
+     }
    }
    ```
 
@@ -331,7 +332,7 @@ Utilisez l’[IDE de votre choix](https://docs.adobe.com/content/help/fr-FR/expe
 
    Maintenant que le modèle Sling a été mis à jour, le balisage de composant doit être mis à jour pour afficher un indicateur **Écologique** basé sur le modèle Sling.
 
-## Personnalisation du balisage du teaser de produit {#customize-markup-product-teaser}
+## Personnalisation du balisage du produit Teaser {#customize-markup-product-teaser}
 
 Une extension courante des composants AEM consiste à modifier le balisage généré par le composant. Il faut pour cela remplacer le [script HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html) utilisé par le composant afin d’effectuer le rendu de son balisage. HTL (HTML Template Language) est un langage de modèle léger que les composants AEM utilisent pour générer dynamiquement des balises en fonction du contenu créé, ce qui permet de réutiliser les composants. Le teaser de produit, par exemple, peut être réutilisé plusieurs fois pour afficher différents produits.
 
@@ -357,11 +358,13 @@ Dans notre cas, nous voulons générer une bannière au-dessus du teaser pour in
 
    ```html
    <!--/* productteaser.html */-->
-   <sly data-sly-use.product="com.venia.core.models.commerce.MyProductTeaser"
-       data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
-       data-sly-use.actionsTpl="actions.html"
-       data-sly-test.isConfigured="${properties.selection}"
-       data-sly-test.hasProduct="${product.url}">
+   <sly
+     data-sly-use.product="com.venia.core.models.commerce.MyProductTeaser"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-use.actionsTpl="actions.html"
+     data-sly-test.isConfigured="${properties.selection}"
+     data-sly-test.hasProduct="${product.url}"
+   ></sly>
    ```
 
    Notez que le modèle Sling de `MyProductTeaser` est utilisé et affecté à la variable `product`.
@@ -370,15 +373,21 @@ Dans notre cas, nous voulons générer une bannière au-dessus du teaser pour in
 
    ```html
    ...
-   <div data-sly-test="${isConfigured && hasProduct}" class="item__root" data-cmp-is="productteaser" data-virtual="${product.virtualProduct}">
-       <div data-sly-test="${product.showBadge}" class="item__badge">
-           <span>${properties.text || 'New'}</span>
-       </div>
-       <!--/* Insert call to Eco Friendly here */-->
-       <div data-sly-test="${product.ecoFriendly}" class="item__eco">
-           <span>Eco Friendly</span>
-       </div>
-   ...
+   <div
+     data-sly-test="${isConfigured && hasProduct}"
+     class="item__root"
+     data-cmp-is="productteaser"
+     data-virtual="${product.virtualProduct}"
+   >
+     <div data-sly-test="${product.showBadge}" class="item__badge">
+       <span>${properties.text || 'New'}</span>
+     </div>
+     <!--/* Insert call to Eco Friendly here */-->
+     <div data-sly-test="${product.ecoFriendly}" class="item__eco">
+       <span>Eco Friendly</span>
+     </div>
+     ...
+   </div>
    ```
 
    Lors de l’appel d’une méthode de modèle Sling dans HTL, les parties `get` et `is` de la méthode sont ignorées et la première lettre est une minuscule. `isShowBadge()` devient donc `.showBadge`, et `isEcoFriendly` devient `.ecoFriendly`. La valeur booléenne renvoyée par `.isEcoFriendly()` détermine si `<span>Eco Friendly</span>` est affiché.
@@ -423,7 +432,7 @@ Dans notre cas, nous voulons générer une bannière au-dessus du teaser pour in
    >
    > Vous pouvez également voir des arborescences des appels si l’attribut `eco_friendly` ne fait pas partie du jeu d’attributs du produit utilisé dans le teaser.
 
-## Ajout de styles au badge Écologique {#add-styles}
+## Styles d&#39;Ajoute pour le badge écologique {#add-styles}
 
 À ce stade, la logique indiquant à quel moment afficher le badge **Écologique** fonctionne, mais le texte brut pourrait profiter de certains styles. Ajoutez ensuite une icône et des styles au module `ui.frontend` pour terminer l’implémentation.
 
@@ -453,7 +462,7 @@ Dans notre cas, nous voulons générer une bannière au-dessus du teaser pour in
            width: 45px;
            height: 45px;
            text-indent: -9999px;
-           background: no-repeat center center url('../resources/images/eco_friendly.svg'); 
+           background: no-repeat center center url('../resources/images/eco_friendly.svg');
            }
        }
    ...
@@ -487,8 +496,8 @@ Examinez les fonctionnalités du badge **Nouveau** ayant déjà été mis en œu
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Archétype AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html)
-* [Composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components)
-* [Personnalisation des composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
-* [Personnalisation des composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/customizing.html)
-* [Prise en main d’AEM Sites](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [Archétype AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html)
+- [Composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components)
+- [Personnalisation des composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
+- [Personnalisation des composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/customizing.html)
+- [Prise en main d’AEM Sites](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
