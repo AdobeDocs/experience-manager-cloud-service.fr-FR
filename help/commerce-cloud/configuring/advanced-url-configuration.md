@@ -9,14 +9,14 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
+exl-id: 363cb465-c50a-422f-b149-b3f41c2ebc0f
 translation-type: tm+mt
-source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 100%
+source-wordcount: '792'
+ht-degree: 98%
 
 ---
-
 
 # Configurations d’URL avancées {#url}
 
@@ -32,7 +32,7 @@ Pour configurer le service `UrlProvider` en fonction des exigences SEO et des be
 >
 > Le projet de [magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia) (voir ci-dessous) comprend des exemples de configuration afin de démontrer l’utilisation d’URL personnalisées pour les pages de produits et de catégories.
 
-### Modèle d’URL de page de produits {#product}
+### Modèle d’URL de page de produit {#product}
 
 Ce modèle configure les URL des pages de produits avec les propriétés suivantes :
 
@@ -43,7 +43,7 @@ Ce modèle configure les URL des pages de produits avec les propriétés suivant
 * **Emplacement de l’identifiant de produit** : définit l’emplacement de l’identifiant qui sera utilisé pour récupérer les données du produit. La valeur par défaut est `SELECTOR`, l’autre valeur possible étant `SUFFIX`. Dans l’exemple d’URL précédent, cela signifie que l’identifiant `chaz-kangeroo-hoodie` sera utilisé pour récupérer les données du produit.
 * **Type d’identifiant de produit** : définit le type de l’identifiant à utiliser lors de la récupération des données de produit. La valeur par défaut est `URL_KEY`, l’autre valeur possible étant `SKU`. Avec l’exemple d’URL précédent, cela signifie que les données de produit seront récupérées avec un filtre GraphQL Magento tel que `filter:{url_key:{eq:"chaz-kangeroo-hoodie"}}`.
 
-### Modèle d’URL de la page de liste de produits {#product-list}
+### Modèle d’URL de page de Liste de produits {#product-list}
 
 Ce modèle configure les URL des pages de listes de catégories ou de produits avec les propriétés suivantes :
 
