@@ -1,14 +1,14 @@
 ---
 title: Prise en charge IMS d’Adobe Experience Manager as a Cloud Service
 description: Prise en charge IMS d’Adobe Experience Manager as a Cloud Service
+exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 translation-type: tm+mt
-source-git-commit: 70726c373d88f36cdcc9a4a1a944bc8d4c99238c
+source-git-commit: 460cefde9a203b4237aedf01b01e026d37eadfe6
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 100%
+source-wordcount: '1952'
+ht-degree: 95%
 
 ---
-
 
 # Prise en charge IMS d’Adobe Experience Manager as a Cloud Service {#ims-support-for-aem-as-a-cloud-service}
 
@@ -125,15 +125,15 @@ Vous trouverez ci-dessous les principales configurations OSGI qui doivent être 
 
 ### Gestion des produits et accès utilisateur dans Admin Console {#managing-products-and-user-access-in-admin-console}
 
-Lorsque l’administrateur du produit se connecte à Admin Console, il voit plusieurs instances de contexte du produit AEM Managed Services, comme illustré ci-dessous :
+Lorsque l’administrateur de produit se connecte au Admin Console, plusieurs instances de l’AEM s’affichent en tant que contexte de produit Cloud Service, comme illustré ci-dessous. Par exemple, sélectionnez l’un des produits de la page **Aperçu** :
 
 ![Connexion aux instances](/help/security/assets/ims6.png)
 
-Dans cet exemple, l’organisation **AEM-MS-Onboard** comporte 32 instances couvrant différents environnements et topologies tels que Intermédiaire ou Production.
+Une liste d’instances existantes s’affiche :
 
 ![Instances login2](/help/security/assets/ims7.png)
 
-Des profils de produit sont associés à chaque instance de contexte du produit. Ils sont utilisés pour attribuer l’accès aux utilisateurs et aux groupes avec le privilège requis.
+Sous chaque instance de contexte de produit, il y aura des instances couvrant les services d’auteur ou de publication dans les environnements de production, d’étape ou de développement. Chaque instance est associée aux rôles Profils de produits ou Cloud Manager. Ces profils de produit sont utilisés pour attribuer l’accès aux utilisateurs et aux groupes disposant des privilèges requis.
 
 Le profil **Administrator_xxx** sera utilisé pour accorder des privilèges d’administrateur à l’instance AEM associée, tandis que le profil **User_xxx** sera utilisé pour ajouter des utilisateurs ordinaires.
 
@@ -241,4 +241,3 @@ Pour accéder aux instances AEM, l’utilisateur doit être ajouté à un groupe
 Chaque instance de création possède un profil Administrateurs AEM et Utilisateurs AEM, et chaque instance de publication possède un profil Utilisateurs AEM. Si nécessaire, vous pouvez ajouter d’autres profils.
 
 Pour obtenir un accès de niveau administrateur à l’instance AEM, ajoutez l’utilisateur au profil Administrateurs AEM pour ce produit particulier.
-
