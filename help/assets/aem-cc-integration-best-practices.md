@@ -3,16 +3,16 @@ title: Bonnes pratiques pour l’intégration à [!DNL Adobe Creative Cloud]
 description: Bonnes pratiques pour intégrer un déploiement Experience Manager à Adobe Creative Cloud de façon à rationaliser les workflows de transfert de ressources et à obtenir un maximum d’efficacité.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Collaboration,Lien de ressources d’Adobe,Application de bureau Experience Manager
-role: Architecte, Professionnel, Administrateur
+feature: Collaboration,Lien de ressources d’Adobe,Application de bureau
+role: Architect,Business Practitioner,Administrator
+exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 522d0363c0207afbed2c51e9d54d921ce9b66c70
 workflow-type: tm+mt
-source-wordcount: '3306'
+source-wordcount: '3300'
 ht-degree: 99%
 
 ---
-
 
 # Bonnes pratiques d’intégration d’AEM et de Creative Cloud {#aem-and-creative-cloud-integration-best-practices}
 
