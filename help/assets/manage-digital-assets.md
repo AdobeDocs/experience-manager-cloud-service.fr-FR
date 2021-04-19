@@ -7,9 +7,9 @@ feature: Gestion des ressources,Publication,Collaboration,Traitement des ressour
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 translation-type: tm+mt
-source-git-commit: 78bddc170d2deacc39fd0bd32a65803987dc6a49
+source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
 workflow-type: tm+mt
-source-wordcount: '4508'
+source-wordcount: '4505'
 ht-degree: 91%
 
 ---
@@ -47,8 +47,6 @@ Voir [Ajout de ressources numériques à Experience Manager](add-assets.md).
 
 Si un utilisateur DAM charge une ou plusieurs ressources qui existent déjà dans le référentiel, [!DNL Experience Manager] détecte la duplication et en informe l’utilisateur. La fonctionnalité de détection des doublons est désactivée par défaut, car elle peut avoir un impact sur les performances en fonction de la taille du référentiel et du nombre de ressources chargées. Pour activer cette fonctionnalité, configurez le [!UICONTROL détecteur de duplication de ressources d’Adobe AEM Cloud]. Découvrez [comment définir des configurations OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr). La détection de duplication est basée sur la valeur `dam:sha1` unique stockée dans `jcr:content/metadata/dam:sha1`. Ainsi, les ressources en double sont détectées même si les noms de fichier sont différents.
 
-![Détecter la configuration OSGi des ressources en double](assets/duplicate-detection.png)
-
 Vous pouvez ajouter le fichier de configuration `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` dans le code personnalisé et le fichier peut contenir les éléments suivants :
 
 ```json
@@ -58,7 +56,7 @@ Vous pouvez ajouter le fichier de configuration `/apps/example/config.author/com
 }
 ```
 
-Une fois activé, Experience Manager envoie des notifications de ressources en double vers la boîte de réception. Il s’agit d’un résultat global correspondant à plusieurs doublons. Les utilisateurs peuvent choisir de supprimer les ressources en fonction des résultats.
+Une fois activé, le Experience Manager envoie des notifications des ressources du duplicata à la boîte de réception du Experience Manager. Il s’agit d’un résultat global correspondant à plusieurs doublons. Les utilisateurs peuvent choisir de supprimer les ressources en fonction des résultats.
 
 ![Notification de boîte de réception pour les ressources en double](assets/duplicate-detect-inbox-notification.png)
 
