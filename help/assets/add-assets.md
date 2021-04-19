@@ -2,15 +2,15 @@
 title: Ajout de vos ressources numériques à [!DNL Adobe Experience Manager].
 description: Ajoutez vos ressources numériques à [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 feature: Gestion des ressources,Télécharger
-role: Professionnel, administrateur
+role: Business Practitioner,Administrator
+exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
 workflow-type: tm+mt
-source-wordcount: '2023'
-ht-degree: 95%
+source-wordcount: '2059'
+ht-degree: 93%
 
 ---
-
 
 # Ajout de ressources numériques à Adobe Experience Manager {#add-assets-to-experience-manager}
 
@@ -223,6 +223,10 @@ Pour les dossiers auxquels un profil de traitement est affecté, le nom du profi
 ## Chargement ou ingestion de fichiers à l’aide d’API {#upload-using-apis}
 
 Les détails techniques du protocole et des API de chargement, ainsi que les liens vers les exemples de clients et le SDK Open Source, sont fournis dans la section [Chargement de ressources](developer-reference-material-apis.md#asset-upload-technical) de la documentation de référence du développeur.
+
+## Conseils, bonnes pratiques et limites {#tips-limitations}
+
+* Adobe recommande d’ajouter jusqu’à 1 000 ressources dans chaque dossier de [!DNL Experience Manager Assets]. Bien que vous puissiez ajouter d’autres ressources à un dossier, il est possible que vous rencontriez des problèmes de performances tels que la navigation plus lente vers ces dossiers.
 
 >[!MORELIKETHIS]
 >
