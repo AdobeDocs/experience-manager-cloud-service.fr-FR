@@ -3,10 +3,10 @@ title: Tâches de maintenance dans AEM as a Cloud Service
 description: Tâches de maintenance dans AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 256363d166591137b53d4a6b5a31436064dfb3d2
+source-git-commit: 7700ad89b1c2a3009c4b64c1af899a0130708a32
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 95%
+source-wordcount: '1122'
+ht-degree: 94%
 
 ---
 
@@ -147,4 +147,6 @@ Exemple de code 3
 
 | Configuration de la fenêtre de maintenance | Qui gère la configuration | Type de configuration | Emplacement | Exemple | Paramètres |
 |---|---|---|---|---|---|
-| Quotidienne | Client | Définition de nœud JCR | Voir l&#39;emplacement 2 ci-dessous | Voir l’exemple de code 2 ci-dessous | `windowSchedule= daily` (cette valeur ne doit pas être modifiée).  <br> `windowStartTime=HH:MM` en utilisant comme horloge 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance quotidienne doivent commencer à s’exécuter. <br> **** windowEndTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance quotidienne doivent arrêter de s’exécuter si elles ne sont pas déjà terminées. |
+| Quotidienne | Client | Définition de nœud JCR | Voir l’emplacement 1 ci-dessous | Voir l’exemple de code 1 ci-dessous | **** windowSchedule = daily (cette valeur ne doit pas être modifiée). <br> **** windowStartTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance quotidienne doivent commencer à s’exécuter. <br> **** windowEndTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance quotidienne doivent arrêter de s’exécuter si elles ne sont pas déjà terminées. |
+| Hebdomadaire | Client | Définition de nœud JCR | Voir l&#39;emplacement 2 ci-dessous | Voir l’exemple de code 2 ci-dessous | **** windowSchedule = hebdomadaire (cette valeur ne doit pas être modifiée). <br> **** windowStartTime = HH:MM dans un format horaire de 24 heures. Définit le moment où les Tâches de maintenance associées à la fenêtre de maintenance hebdomadaire doivent commencer à s&#39;exécuter. <br> **** windowEndTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance hebdomadaire doivent arrêter de s’exécuter si elles ne sont pas déjà terminées. <br> **windowScheduleWeekdays= Tableau de 2 valeurs comprises entre 1 et 7**  (par ex.  [5,5]). La première valeur du tableau désigne le jour de début planifié de la tâche et la seconde le jour de fin où la tâche doit être arrêtée. L’heure exacte du début et de la fin est régie par les paramètres windowStartTime et windowEndTime, respectivement. |
+
