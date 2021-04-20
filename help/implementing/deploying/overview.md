@@ -2,14 +2,14 @@
 title: Déploiement sur AEM as a Cloud Service
 description: 'Déploiement sur AEM as a Cloud Service '
 feature: Déploiement
+exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 translation-type: tm+mt
-source-git-commit: a5717e36c347e89f6b9e2f4f7dffc72dcab0b7d7
+source-git-commit: 9ff68805d4deabaf637cee9ab81ba9b366a8e762
 workflow-type: tm+mt
-source-wordcount: '3247'
+source-wordcount: '3266'
 ht-degree: 96%
 
 ---
-
 
 # Déploiement sur AEM as a Cloud Service {#deploying-to-aem-as-a-cloud-service}
 
@@ -101,7 +101,7 @@ Après le basculement vers la nouvelle version de l’application :
    * Dossiers (ajout, modification, suppression)
    * Modèles modifiables (ajout, modification, suppression)
    * Configuration tenant compte du contexte (tout sous `/conf`) (ajout, modification, suppression)
-   * Scripts (les modules peuvent déclencher des hooks d’installation à diverses étapes du processus d’installation de module)
+   * Scripts (les modules peuvent déclencher des hooks d’installation à diverses étapes du processus d’installation de module) : Consultez la [documentation relative aux fichiers Jackrabbit ](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) sur les crochets d’installation, qui incluent les utilisateurs autorisés à les exécuter).
 
 Il est possible de limiter l’installation de contenu modifiable à la création ou à la publication en incorporant des modules dans un dossier install.author ou install.publish sous `/apps`. La restructuration pour tenir compte de cette séparation a été effectuée dans AEM 6.5 et les détails relatifs à la restructuration recommandée du projet se trouvent dans la [documentation AEM 6.5.](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
@@ -112,7 +112,7 @@ En outre, il n’existe aucun mécanisme permettant d’annuler les modification
 
 Les modules tiers inclus doivent être validés comme compatibles avec AEM as a Cloud Service, sans quoi leur inclusion entraînera un échec du déploiement.
 
-Comme mentionné ci-dessus, les clients disposant de bases de code existantes doivent se conformer à l&#39;exercice de restructuration du référentiel rendu nécessaire par les modifications de référentiel 6.5 décrites dans la documentation [AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+Comme mentionné ci-dessus, les clients disposant de bases de code existantes doivent se conformer à l&#39;exercice de restructuration du référentiel rendu nécessaire par les modifications de référentiel 6.5 décrites dans la documentation [AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr)
 
 ## Repoinit {#repoinit}
 
