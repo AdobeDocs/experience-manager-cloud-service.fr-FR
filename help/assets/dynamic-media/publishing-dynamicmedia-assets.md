@@ -2,8 +2,8 @@
 title: Publication de ressources Dynamic Media
 description: Découvrez comment publier des ressources Dynamic Media.
 contentOwner: Rick Brough
-feature: Gestion des ressources
-topic: Professionnel
+feature: Asset Management
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
 translation-type: tm+mt

@@ -2,8 +2,8 @@
 title: Présentation d’Assets as a [!DNL Cloud Service]
 description: Nouveautés d’Assets as a [!DNL Cloud Service].
 contentOwner: AG
-feature: Gestion des ressources
-role: Professionnel, Responsable, Architecte
+feature: Asset Management
+role: Business Practitioner,Leader,Architect
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

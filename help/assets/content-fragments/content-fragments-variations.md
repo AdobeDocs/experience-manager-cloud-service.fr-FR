@@ -1,8 +1,8 @@
 ---
 title: Variations – création de contenu de fragment
 description: Comprenez comment les variations peuvent rendre encore plus souple votre contenu sans en-tête dans AEM en vous permettant de créer du contenu pour le fragment, puis de créer des variations de ce contenu selon vos besoins.
-feature: Fragments de contenu
-role: Professionnel
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

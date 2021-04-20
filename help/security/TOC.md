@@ -4,7 +4,7 @@ user-guide-title: Sécurité d’AEM as a Cloud Service
 breadcrumb-title: Guide de sécurité
 user-guide-description: Découvrez les sujets de sécurité importants concernant Experience Manager as a Cloud Service.
 feature-set: Experience Manager Sites
-feature: Configuration
+feature: Configuring
 role: Administrator
 translation-type: tm+mt
 source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4

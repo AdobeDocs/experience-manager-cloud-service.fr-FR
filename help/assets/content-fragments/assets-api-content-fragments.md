@@ -1,7 +1,7 @@
 ---
 title: Prise en charge des fragments de contenu d’Adobe Experience Manager as a Cloud Service dans l’API Assets HTTP
 description: Découvrez la prise en charge des fragments de contenu dans l’API HTTP Ressources, une partie importante de la fonction de diffusion sans tête AEM.
-feature: Fragments de contenu, API HTTP Ressources
+feature: Content Fragments,Assets HTTP API
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

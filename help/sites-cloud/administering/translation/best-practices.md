@@ -1,7 +1,7 @@
 ---
 title: Meilleures pratiques de traduction
 description: Découvrez les meilleures pratiques compilées par les équipes d'ingénierie et de conseil en Adobe pour vous aider à maîtriser les projets de traduction.
-feature: Copie de la langue
+feature: Language Copy
 role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1

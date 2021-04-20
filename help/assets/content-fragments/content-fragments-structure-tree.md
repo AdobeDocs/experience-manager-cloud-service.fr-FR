@@ -1,8 +1,8 @@
 ---
 title: Arborescence de la structure du fragment de contenu
 description: Utilisez la fonction Arborescence de structure de l’éditeur de fragments de contenu dans AEM pour mieux comprendre votre contenu sans en-tête.
-feature: Fragments de contenu
-role: Professionnel
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

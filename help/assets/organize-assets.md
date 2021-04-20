@@ -2,8 +2,8 @@
 title: Organisation des ressources numériques
 description: Organisez vos ressources numériques à l’aide de diverses méthodes fournies dans Adobe Experience Manager Assets.
 contentOwner: AG
-feature: Gestion des ressources, Balisage, Répartition des ressources
-role: Professionnel
+feature: Asset Management,Tagging,Asset Distribution
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

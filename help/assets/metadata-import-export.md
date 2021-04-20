@@ -2,8 +2,8 @@
 title: Importation et exportation des métadonnées de ressources par lot
 description: Cet article explique comment importer et exporter des métadonnées par lot.
 contentOwner: AG
-feature: 'Métadonnées  '
-role: Professionnel, administrateur
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

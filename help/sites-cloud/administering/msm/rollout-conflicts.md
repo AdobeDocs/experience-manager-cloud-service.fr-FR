@@ -1,7 +1,7 @@
 ---
 title: Conflits de déploiement
 description: Découvrez comment gérer et résoudre les conflits de déploiement multisite Manager.
-feature: Gestionnaire de plusieurs sites
+feature: Multi Site Manager
 role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1

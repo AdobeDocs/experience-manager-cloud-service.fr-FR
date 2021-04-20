@@ -2,7 +2,7 @@
 title: Statistiques sur les ressources
 description: Suivez les évaluations des utilisateurs et les statistiques d’utilisation des images utilisées dans les sites Web tiers, les campagnes marketing et les solutions créatives de l’Adobe.
 contentOwner: AG
-feature: Statistiques sur les ressources,Rapports sur les ressources
+feature: Asset Insights,Asset Reports
 role: Business Practitioner
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
 translation-type: tm+mt

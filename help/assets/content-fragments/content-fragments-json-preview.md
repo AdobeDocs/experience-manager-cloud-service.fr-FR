@@ -1,8 +1,8 @@
 ---
 title: Aperçu – Représentation JSON
 description: Découvrez comment prévisualisation facilement la représentation JSON de vos fragments de contenu lors de la mise en oeuvre de votre solution AEM sans tête.
-feature: Fragments de contenu
-role: Professionnel
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

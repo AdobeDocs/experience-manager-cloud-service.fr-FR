@@ -2,8 +2,8 @@
 title: Gestion des ressources vidéo
 description: Charger, prévisualiser, annoter et publier des ressources vidéo dans [!DNL Adobe Experience Manager].
 contentOwner: AG
-feature: Gestion des ressources,Publication,Collaboration,Vidéo
-role: Professionnel
+feature: Asset Management,Publishing,Collaboration,Video
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

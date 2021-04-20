@@ -3,7 +3,7 @@ title: Configuration de Dynamic Media
 description: Pour configurer Dynamic Media, vous devez configurer Dynamic Media et gérer les paramètres prédéfinis d’image et de visionneuse.
 contentOwner: Rick Brough
 topic: Administrator
-role: Administrateur, Professionnel
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

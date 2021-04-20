@@ -1,7 +1,7 @@
 ---
 title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.1.0
 description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.1.0
-feature: Informations sur la version
+feature: Release Information
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

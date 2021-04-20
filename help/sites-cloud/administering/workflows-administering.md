@@ -1,7 +1,7 @@
 ---
 title: Administration d’instances de workflow
 description: Découvrez comment administrer des instances de workflow
-feature: Administration
+feature: Administering
 role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1

@@ -2,8 +2,8 @@
 title: Paramètres prédéfinis de lot
 description: Découvrez comment automatiser la création de visionneuses d’images et de visionneuses à 360° à l’aide des paramètres prédéfinis de lot de Dynamic Media.
 contentOwner: Rick Brough
-feature: Paramètres d’image prédéfinis,Paramètres prédéfinis de la visionneuse
-topic: Professionnel
+feature: Image Presets,Viewer Presets
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 translation-type: tm+mt

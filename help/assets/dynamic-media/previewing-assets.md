@@ -1,9 +1,9 @@
 ---
 title: Aperçu des ressources
 description: Découvrez comment prévisualiser des ressources dans Dynamic Media.
-feature: Gestion des ressources
-topic: Professionnel
-role: Professionnel
+feature: Asset Management
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

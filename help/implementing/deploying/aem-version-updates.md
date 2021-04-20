@@ -1,7 +1,7 @@
 ---
 title: Mises à jour de la version d’AEM
 description: 'Mises à jour de la version d’AEM '
-feature: Déploiement
+feature: Deploying
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: Mise en filigrane des ressources
 description: Ajout d’un filigrane à vos ressources numériques.
 contentOwner: AG
-feature: Gestion des ressources,Publication
-role: Professionnel, administrateur
+feature: Asset Management,Publishing
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

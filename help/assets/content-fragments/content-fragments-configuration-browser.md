@@ -1,8 +1,8 @@
 ---
 title: Fragments de contenu - Explorateur de configurations
 description: Découvrez comment activer certaines fonctionnalités de fragment de contenu dans l’explorateur de configuration afin d’exploiter AEM puissantes fonctionnalités de diffusion sans tête.
-feature: Fragments de contenu
-role: Professionnel
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

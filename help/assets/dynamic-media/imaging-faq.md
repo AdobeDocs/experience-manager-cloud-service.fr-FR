@@ -1,8 +1,8 @@
 ---
 title: Imagerie dynamique
 description: '"Découvrez comment l''imagerie intelligente applique les caractéristiques d''affichage uniques de chaque utilisateur pour fournir automatiquement les images appropriées optimisées pour leur expérience, ce qui se traduit par de meilleures performances et un meilleur engagement."'
-feature: Gestion des ressources,Rendus
-topic: Professionnel
+feature: Asset Management,Renditions
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt

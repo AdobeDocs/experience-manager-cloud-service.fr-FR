@@ -1,8 +1,8 @@
 ---
 title: Visionneuses de médias mixtes
 description: Découvrez comment travailler avec des visionneuses de médias mixtes dans Dynamic Media..
-feature: Visionneuses de médias mixtes
-topic: Professionnel
+feature: Mixed Media Sets
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 translation-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 title: Configuration de la synchronisation de Live Copies
 description: Découvrez les puissantes options de synchronisation Live Copy disponibles et comment les configurer et les personnaliser en fonction des besoins de votre projet.
-feature: Gestionnaire de plusieurs sites
+feature: Multi Site Manager
 role: Administrator
 translation-type: tm+mt
 source-git-commit: fff94f476124d8a2a84c60c478fef624090192d1

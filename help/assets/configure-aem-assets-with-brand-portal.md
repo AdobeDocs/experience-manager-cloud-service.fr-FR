@@ -2,7 +2,7 @@
 title: Configuration d’AEM Assets as a [!DNL Cloud Service] avec Brand Portal
 description: Configuration d’AEM Assets avec Brand Portal.
 contentOwner: Vishabh Gupta
-feature: Portail de marque, Distribution des ressources, Configuration
+feature: Brand Portal,Asset Distribution,Configuration
 role: Administrator
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 translation-type: tm+mt

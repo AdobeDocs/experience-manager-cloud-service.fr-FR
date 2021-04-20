@@ -2,8 +2,8 @@
 title: Modification ou ajout de métadonnées
 description: Découvrez les métadonnées des ressources dans [!DNL Experience Manager Assets]  et les différentes façons de les modifier.
 contentOwner: AG
-feature: 'Métadonnées  '
-role: Professionnel, administrateur
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

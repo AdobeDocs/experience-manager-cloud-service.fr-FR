@@ -2,8 +2,8 @@
 title: Partage de ressources, de dossiers et de collections sous forme de lien
 description: Cet article décrit le partage de ressources, de dossiers et de collections dans les ressources d’ [!DNL Experience Manager Assets] sous forme de lien hypertexte.
 contentOwner: AG
-feature: Gestion des ressources,Collaboration,Distribution des ressources
-role: Professionnel, administrateur
+feature: Asset Management,Collaboration,Asset Distribution
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt
