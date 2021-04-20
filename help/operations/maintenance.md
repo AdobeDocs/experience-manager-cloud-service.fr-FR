@@ -3,10 +3,10 @@ title: Tâches de maintenance dans AEM as a Cloud Service
 description: Tâches de maintenance dans AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 7700ad89b1c2a3009c4b64c1af899a0130708a32
+source-git-commit: 4c1c14fae5819e7f7e1bf5d04350c54b6cbe80bb
 workflow-type: tm+mt
-source-wordcount: '1122'
-ht-degree: 94%
+source-wordcount: '925'
+ht-degree: 81%
 
 ---
 
@@ -57,9 +57,9 @@ Les clients peuvent planifier chacune des tâches de maintenance Purger le workf
     <td>Voir l’emplacement 1 ci-dessous</td>
     <td>Voir l’exemple de code 1 ci-dessous</td>
   <td>
-  <strong>windowSchedule</strong> = daily (cette valeur ne doit pas être modifiée)
-  <strong>windowStartTime</strong> = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance quotidienne doivent commencer à s’exécuter.
-  <strong>windowEndTime</strong> = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance quotidienne doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.
+  <strong>windowSchedule= daily</strong>  (cette valeur ne doit pas être modifiée) 
+  <strong>windowStartTime= HH:</strong> MMen utilisant comme horloge de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance quotidienne doivent commencer à s’exécuter.
+  <strong></strong>windowEndTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance quotidienne doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.
   </td> 
   </tr>
   <tr>
@@ -69,10 +69,10 @@ Les clients peuvent planifier chacune des tâches de maintenance Purger le workf
     <td>Voir l'emplacement 2 ci-dessous</td>
     <td>Voir l’exemple de code 2 ci-dessous</td>
     <td>
-    <strong>windowSchedule</strong> = hebdomadaire (cette valeur ne doit pas être modifiée)
-    <strong>windowStartTime</strong> = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance hebdomadaire doivent commencer à s’exécuter.
-    <strong>windowEndTime</strong> = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance hebdomadaire doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.
-    <strong>windowScheduleWeekdays = tableau de 2 valeurs comprises entre 1 et 7 (par exemple, [5,5]).</strong> La première valeur du tableau désigne le jour de début planifié de la tâche et la seconde le jour de fin où la tâche doit être arrêtée. L’heure exacte du début et de la fin est régie par les paramètres windowStartTime et windowEndTime, respectivement.
+    <strong>windowSchedule= hebdomadaire</strong>  (cette valeur ne doit pas être modifiée) 
+    <strong>windowStartTime= HH:</strong> MMen utilisant comme horloge 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance hebdomadaire doivent commencer à s’exécuter.
+    <strong></strong>windowEndTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance hebdomadaire doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.
+    <strong>windowScheduleWeekdays= Tableau de 2 valeurs comprises entre 1 et 7 (ex. [5,5])</strong> La première valeur du tableau est le jour de début où la tâche est planifiée et la seconde est le jour de fin où la tâche serait arrêtée. L’heure exacte du début et de la fin est régie par les paramètres windowStartTime et windowEndTime, respectivement.
     </td> 
   </tr>
   <tr>
@@ -82,11 +82,11 @@ Les clients peuvent planifier chacune des tâches de maintenance Purger le workf
     <td>Voir l'emplacement 3 ci-dessous</td>
     <td>Voir l’exemple de code 3 ci-dessous</td>
     <td>
-    <strong>windowSchedule</strong> = daily (cette valeur ne doit pas être modifiée)
-    <strong>windowStartTime</strong> = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance mensuelle doivent commencer à s’exécuter.
-    <strong>windowEndTime</strong> = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance mensuelle doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.
-    <strong>windowScheduleWeekdays = tableau de 2 valeurs comprises entre 1 et 7 (par exemple, [5,5]).</strong> La première valeur du tableau désigne le jour de début planifié de la tâche et la seconde le jour de fin où la tâche doit être arrêtée. L’heure exacte du début et de la fin est régie par les paramètres windowStartTime et windowEndTime, respectivement.
-    <strong>windowFirstLastStartDay – 0/1</strong> 0 pour planifier la première semaine du mois ou 1 pour planifier la dernière semaine du mois. En l’absence de valeur, les tâches sont planifiées chaque jour, comme régi par le paramètre windowScheduleWeekdays tous les mois.
+    <strong>windowSchedule= daily</strong>  (cette valeur ne doit pas être modifiée) 
+    <strong>windowStartTime= HH:</strong> MMen utilisant comme horloge de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance mensuelle doivent commencer à s’exécuter.
+    <strong></strong>windowEndTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance mensuelle doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.
+    <strong>windowScheduleWeekdays = Tableau de 2 valeurs comprises entre 1 et 7 (ex. [5,5])</strong> La première valeur du tableau est le jour de début où la tâche est planifiée et la seconde est le jour de fin où la tâche serait arrêtée. L’heure exacte du début et de la fin est régie par les paramètres windowStartTime et windowEndTime, respectivement.
+    <strong>windowFirstLastStartDay= 0/1</strong> 0 pour planifier la première semaine du mois ou 1 pour planifier la dernière semaine du mois. En l’absence de valeur, les tâches sont planifiées chaque jour, comme régi par le paramètre windowScheduleWeekdays tous les mois.
     </td> 
     </tr>
 </table>
@@ -144,9 +144,3 @@ Exemple de code 3
    windowScheduleWeekdays="[5,5]"
    windowStartTime="14:30"/>
 ```
-
-| Configuration de la fenêtre de maintenance | Qui gère la configuration | Type de configuration | Emplacement | Exemple | Paramètres |
-|---|---|---|---|---|---|
-| Quotidienne | Client | Définition de nœud JCR | Voir l’emplacement 1 ci-dessous | Voir l’exemple de code 1 ci-dessous | **** windowSchedule = daily (cette valeur ne doit pas être modifiée). <br> **** windowStartTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance quotidienne doivent commencer à s’exécuter. <br> **** windowEndTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance quotidienne doivent arrêter de s’exécuter si elles ne sont pas déjà terminées. |
-| Hebdomadaire | Client | Définition de nœud JCR | Voir l&#39;emplacement 2 ci-dessous | Voir l’exemple de code 2 ci-dessous | **** windowSchedule = hebdomadaire (cette valeur ne doit pas être modifiée). <br> **** windowStartTime = HH:MM dans un format horaire de 24 heures. Définit le moment où les Tâches de maintenance associées à la fenêtre de maintenance hebdomadaire doivent commencer à s&#39;exécuter. <br> **** windowEndTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance hebdomadaire doivent arrêter de s’exécuter si elles ne sont pas déjà terminées. <br> **windowScheduleWeekdays= Tableau de 2 valeurs comprises entre 1 et 7**  (par ex.  [5,5]). La première valeur du tableau désigne le jour de début planifié de la tâche et la seconde le jour de fin où la tâche doit être arrêtée. L’heure exacte du début et de la fin est régie par les paramètres windowStartTime et windowEndTime, respectivement. |
-
