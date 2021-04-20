@@ -3,7 +3,7 @@ title: Tâches de maintenance dans AEM as a Cloud Service
 description: Tâches de maintenance dans AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 8fbed9ddc872b8caf0a9b15a7578e34a817e4e42
+source-git-commit: c74da6ebf54f9455f427d5fdcfe55415543f4c73
 workflow-type: tm+mt
 source-wordcount: '925'
 ht-degree: 96%
@@ -57,11 +57,10 @@ Les clients peuvent planifier chacune des tâches de maintenance Purger le workf
     <td>Voir l’emplacement 1 ci-dessous</td>
     <td>Voir l’exemple de code 1 ci-dessous</td>
    <td>
-    <ul>
-    <li><strong>windowSchedule</strong> = daily (cette valeur ne doit pas être modifiée)</li>
-    <li><strong>windowStartTime</strong> = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance quotidienne doivent commencer à s’exécuter.</li>
-    <li><strong>windowEndTime</strong> = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance quotidienne doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.</li>
-    </ul> </td> 
+    <strong>windowSchedule</strong> = daily (cette valeur ne doit pas être modifiée)
+    <strong>windowStartTime</strong> = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance quotidienne doivent commencer à s’exécuter.
+    <strong>windowEndTime</strong> = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance quotidienne doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.
+    </td> 
   </tr>
   <tr>
     <td>Hebdomadaire</td>
