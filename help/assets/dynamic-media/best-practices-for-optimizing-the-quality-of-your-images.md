@@ -2,17 +2,16 @@
 title: Bonnes pratiques relatives à l’optimisation de la qualité des images
 description: Découvrez les meilleures pratiques que vous pouvez utiliser dans Dynamic Media pour optimiser la qualité de vos ressources d’images.
 contentOwner: Rick Brough
-feature: Asset Management
-topic: Business Practitioner
+feature: Gestion des ressources
 role: Business Practitioner
+exl-id: 2efc4a27-01d7-427f-9701-393497314402
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1454'
 ht-degree: 92%
 
 ---
-
 
 # Bonnes pratiques relatives à l’optimisation de la qualité des images {#best-practices-for-optimizing-the-quality-of-your-images}
 
@@ -125,4 +124,3 @@ Au fur et à mesure que vous testez, les suggestions générales suivantes s’a
 * Testez différents paramètres en temps réel, directement sur une URL.
 * Gardez à l’esprit que vous pouvez regrouper les commandes de diffusion d’images Dynamic Media dans un paramètre d’image prédéfini. Il s’agit en outre d’une bonne pratique. Un paramètre d’image prédéfini est, en fait, constitué de macros de commande d’URL avec des noms de paramètres prédéfinis personnalisés tels que `$thumb_low$` et `&product_high$`. Le nom du paramètre prédéfini personnalisé dans un chemin d’URL appelle ces paramètres prédéfinis. Cette fonctionnalité vous aide à gérer les commandes et les paramètres de qualité pour différents modèles d’utilisation des images sur vos sites web et raccourcit la longueur globale des URL.
 * Experience Manager propose également des méthodes plus avancées pour régler la qualité de l’image, telles que l’application d’une accentuation des images lors de l’assimilation. Pour affiner et optimiser les résultats de rendu, [Adobe Professional Services](https://www.adobe.com/fr/experience-cloud/consulting-services.html) peut vous aider à personnaliser vos informations et les meilleures pratiques.
-
