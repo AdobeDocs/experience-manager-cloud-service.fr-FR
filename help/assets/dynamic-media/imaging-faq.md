@@ -1,14 +1,13 @@
 ---
 title: Imagerie dynamique
 description: '"Découvrez comment l''imagerie intelligente applique les caractéristiques d''affichage uniques de chaque utilisateur pour fournir automatiquement les images appropriées optimisées pour leur expérience, ce qui se traduit par de meilleures performances et un meilleur engagement."'
-feature: Asset Management,Renditions
-topic: Business Practitioner
+feature: Gestion des ressources,Rendus
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1924'
+source-wordcount: '1922'
 ht-degree: 46%
 
 ---
