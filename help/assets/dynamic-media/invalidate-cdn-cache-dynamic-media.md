@@ -1,14 +1,13 @@
 ---
 title: Invalidation du cache du réseau CDN par le biais de Dynamic Media
 description: '"Découvrez comment invalider votre contenu mis en cache CDN (Content Diffusion Network) afin de vous permettre de mettre rapidement à jour les ressources fournies par Dynamic Media, au lieu d’attendre l’expiration du cache."'
-feature: Asset Management
-topic: Business Practitioner
+feature: Gestion des ressources
 role: Administrator,Business Practitioner
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1301'
 ht-degree: 65%
 
 ---
