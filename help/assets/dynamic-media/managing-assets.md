@@ -1,17 +1,16 @@
 ---
 title: À propos de la gestion des ressources Dynamic Media
 description: Découvrez comment utiliser des ressources Dynamic Media..
-feature: Asset Management
-topic: Business Practitioner
+feature: Gestion des ressources
 role: Administrator,Business Practitioner
+exl-id: 0dc6d577-a8ee-4dd5-8643-28862bb1394c
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 69%
+source-wordcount: '121'
+ht-degree: 70%
 
 ---
-
 
 # À propos de la gestion des ressources Dynamic Media {#managing-assets}
 
@@ -27,4 +26,3 @@ Les rubriques suivantes décrivent ce que vous pouvez faire pour gérer les ress
 * [Aperçu de ressources Dynamic Media](previewing-assets.md)
 * [Publication de ressources Dynamic Media](publishing-dynamicmedia-assets.md)
 * [Utilisation des sélecteurs](working-with-selectors.md)
-
