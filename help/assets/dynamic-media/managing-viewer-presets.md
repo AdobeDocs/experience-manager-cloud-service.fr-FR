@@ -1,14 +1,13 @@
 ---
 title: Gestion des paramètres prédéfinis de visionneuse
 description: Découvrez comment créer et gérer des paramètres prédéfinis de visionneuse dans Dynamic Media.
-feature: Viewer Presets,Viewers
-topic: Business Practitioner
+feature: Paramètres prédéfinis de la visionneuse,Visionneuses
 role: Business Practitioner
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '4245'
+source-wordcount: '4243'
 ht-degree: 71%
 
 ---
