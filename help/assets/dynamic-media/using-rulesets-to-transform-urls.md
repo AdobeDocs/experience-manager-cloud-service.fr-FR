@@ -1,16 +1,15 @@
 ---
 title: Utilisation de jeux de règles de transformation d’URL
 description: Découvrez comment déployer des jeux de règles dans Dynamic Media pour transformer les URL. Les jeux de règles sont des ensembles d’instructions écrits dans un langage de script (tel que JavaScript™) qui évaluent les données XML et effectuent certaines actions si ces données remplissent certaines conditions.
-topic: Business Practitioner
 role: Business Practitioner
+exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '766'
 ht-degree: 85%
 
 ---
-
 
 # Utilisation d’ensembles de règles pour transformer des URL {#using-rulesets-to-transform-urls}
 
@@ -81,4 +80,3 @@ Consultez également la section [Utilisation de « ressource » au lieu d’un
    Les conditions d’ensemble de règles sont appliquées aux demandes aux serveurs d’images Dynamic Media en ligne.
 
    Si vous modifiez le fichier du jeu de règles, les modifications sont immédiatement appliquées lorsque vous téléchargez et republiez le fichier mis à jour du jeu de règles.
-
