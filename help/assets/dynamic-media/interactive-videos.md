@@ -1,14 +1,13 @@
 ---
 title: Vidéos interactives
 description: Découvrez comment utiliser des vidéos interactives et Shoppable dans Dynamic Media.
-feature: Interactive Videos
-topic: Business Practitioner
+feature: Vidéos interactives
 role: Business Practitioner
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '6066'
+source-wordcount: '6064'
 ht-degree: 48%
 
 ---
@@ -55,7 +54,7 @@ Visionnez une présentation vidéo de 7 minutes 30 sur la [création des vidéo
 
 ### Webinaire « Succès des clients Adobe » {#adobe-customer-success-webinar}
 
-Le webinaire [Utilisation de vidéos interactives, de partage de liens et de partage YouTube dans les ressources Experience Manager](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/) vous explique comment utiliser la vidéo interactive et d’autres fonctionnalités pour lier des événements orientés conversion à votre contenu de marketing vidéo.
+Le webinaire [Utilisation de vidéos interactives, de partage de liens et de partage YouTube dans les ressources du Experience Manager](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/) vous explique comment utiliser la vidéo interactive et d’autres fonctionnalités pour lier des événements orientés conversion à votre contenu de marketing vidéo.
 
 ## Démarrage rapide : vidéos interactives {#quick-start-interactive-videos}
 
