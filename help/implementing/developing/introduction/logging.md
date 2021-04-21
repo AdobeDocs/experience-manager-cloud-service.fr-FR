@@ -1,16 +1,16 @@
 ---
-title: Journalisation
-description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou apprenez à demander la journalisation des données.
+title: Connexion d'AEM en tant que Cloud Service
+description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données dans AEM en tant que Cloud Service.
+exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 translation-type: tm+mt
-source-git-commit: 17ba5068b0df0724bcebeecb2323b7dcdc8d8cfa
+source-git-commit: e87b71dd5081b95ca3fd55e66455476c85a50f6c
 workflow-type: tm+mt
-source-wordcount: '2314'
-ht-degree: 95%
+source-wordcount: '2332'
+ht-degree: 94%
 
 ---
 
-
-# Journalisation {#logging}
+# Connexion de l&#39;AEM en tant que Cloud Service {#logging-for-aem-as-a-cloud-service}
 
 La plate-forme AEM as a Cloud Service permet aux clients d’inclure du code personnalisé destiné à créer des expériences incomparables pour leurs propres bases de clients. Dans cette optique, la journalisation est une fonction essentielle pour déboguer et comprendre l’exécution du code sur le développement local, ainsi que les environnements cloud, en particulier les environnements de développement AEM as a Cloud Service.
 
