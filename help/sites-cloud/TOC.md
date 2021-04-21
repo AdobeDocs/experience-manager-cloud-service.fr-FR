@@ -4,13 +4,12 @@ sub-product: Création de contenu dans AEM as a Cloud Service
 user-guide-title: Création de contenu dans AEM as a Cloud Service
 breadcrumb-title: Guide de création
 user-guide-description: Découvrez comment créer avec Experience Manager Sites as a Cloud Service et l’administrer.
-feature-set: Experience Manager Sites
-feature: Authoring
+feature: 'Création  '
 role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '308'
 ht-degree: 95%
 
 ---
@@ -86,7 +85,7 @@ ht-degree: 95%
    + [Administration des workflows](administering/workflows-administering.md)
    + Réutilisation du contenu {#reusing-content}
       + [MSM et traduction](administering/msm-and-translation.md)
-      + Gestionnaire de plusieurs sites {#msm}
+      + Multi Site Manager {#msm}
          + [Présentation des modules MSM et Live Copy](administering/msm/overview.md)
          + [Configuration de la synchronisation des Live Copies](administering/msm/live-copy-sync-config.md)
          + [Création et synchronisation de Live Copies](administering/msm/creating-live-copies.md)
