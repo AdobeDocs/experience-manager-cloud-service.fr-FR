@@ -1,17 +1,16 @@
 ---
 title: Application de paramètres d’image prédéfinis Dynamic Media
 description: Découvrez comment appliquer des paramètres d’image prédéfinis Dynamic Media.
-feature: Image Presets,Viewers,Renditions
-topic: Business Practitioner
+feature: Paramètres d’image prédéfinis, visionneuses, rendus
 role: Business Practitioner
+exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '309'
 ht-degree: 70%
 
 ---
-
 
 # Application de paramètres d’image prédéfinis Dynamic Media {#applying-image-presets}
 
@@ -51,4 +50,3 @@ Vous pouvez appliquer un paramètre d’image prédéfini à une image lorsque v
    >Si le fichier *et* le paramètre d’image prédéfini ne sont pas encore publiés, le bouton **[!UICONTROL URL]** (ou les boutons URL et RESS, le cas échéant) n’est pas disponible.
    >
    >Notez également que les paramètres prédéfinis de l’image sont automatiquement publiés sur un serveur Dynamic Media S7.
-
