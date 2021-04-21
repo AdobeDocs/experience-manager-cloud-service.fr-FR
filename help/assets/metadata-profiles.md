@@ -2,16 +2,16 @@
 title: Profils de métadonnées
 description: Découvrez les profils de métadonnées pour les ressources. Apprenez à créer un profil de métadonnées et à l’appliquer aux ressources d’un dossier.
 contentOwner: AG
-feature: Metadata
+feature: 'Métadonnées  '
 role: Business Practitioner,Administrator
+exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 7ad68c071d9a4089ec8612a3c55067dc0b072fc8
 workflow-type: tm+mt
-source-wordcount: '1230'
-ht-degree: 77%
+source-wordcount: '1236'
+ht-degree: 69%
 
 ---
-
 
 # Profils de métadonnées {#metadata-profiles}
 
@@ -63,13 +63,11 @@ Modifiez les propriétés suivantes pour le composant **[!UICONTROL Description]
 
 ## Application d’un profil de métadonnées à des dossiers {#applying-a-metadata-profile-to-folders}
 
-Lorsque vous affectez un profil de métadonnées à un dossier, tout sous-dossier hérite automatiquement du profil de son dossier parent. Cela signifie que vous ne pouvez affecter qu’un seul profil de métadonnées à un dossier. Nous vous conseillons donc de choisir avec la plus grande attention la structure du dossier dans lequel vous transférez, stockez, utilisez et archivez des ressources.
+Lorsque vous affectez un profil de métadonnées à un dossier, tout sous-dossier hérite automatiquement du profil de son dossier parent. L’héritage s’arrête lorsqu’un autre profil est appliqué à un sous-dossier. Vous ne pouvez affecter qu’un seul profil de métadonnées à un dossier. Par conséquent, réfléchissez soigneusement à la structure de dossiers dans laquelle vous téléchargez, stockez, utilisez et archivez les ressources.
 
-Si vous avez affecté un profil de métadonnées différent à un dossier, le nouveau profil remplace le précédent. Les ressources du dossier précédent restent inchangées. Le nouveau profil est appliqué aux ressources ajoutées ultérieurement au dossier.
+Si vous avez affecté un autre profil de métadonnées à un dossier, le nouveau profil remplace le profil précédent. Les fichiers de dossier existants n’ont pas changé. Le nouveau profil est appliqué aux ressources qui sont ajoutées au dossier après la modification. Vous pouvez appliquer des profils de métadonnées à des dossiers spécifiques ou à l’ensemble des ressources.
 
 Les dossiers auxquels un profil est affecté sont indiqués dans l’interface utilisateur par le nom du profil apparaissant dans le nom de la carte.
-
-Vous pouvez appliquer des profils de métadonnées à des dossiers spécifiques ou à l’ensemble des ressources.
 
 Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comporte déjà un profil de métadonnées que vous avez modifié. <!-- See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
