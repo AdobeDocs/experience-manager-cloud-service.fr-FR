@@ -1,17 +1,16 @@
 ---
 title: Application des paramètres prédéfinis de la visionneuse Dynamic Media
 description: Découvrez comment appliquer des paramètres prédéfinis de visionneuse dans Dynamic Media..
-feature: Viewer Presets,Viewers
-topic: Administrator,Business Practitioner
+feature: Paramètres prédéfinis de la visionneuse,Visionneuses
 role: Business Practitioner
+exl-id: bec6fff8-fd79-4537-b915-e68da98e117a
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 89%
+source-wordcount: '218'
+ht-degree: 90%
 
 ---
-
 
 # Application des paramètres prédéfinis de la visionneuse Dynamic Media {#applying-viewer-presets}
 
