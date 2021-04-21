@@ -1,14 +1,13 @@
 ---
 title: Vidéo
 description: Découvrez comment utiliser la vidéo dans Dynamic Media.
-feature: Video Profiles
-topic: Business Practitioner
+feature: Profils vidéo
 role: Business Practitioner
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '9512'
+source-wordcount: '9510'
 ht-degree: 70%
 
 ---
@@ -405,7 +404,7 @@ Supposons, par exemple, que la résolution de votre vidéo source soit équivale
 
 | Type de vidéo | Largeur x hauteur | Rapport de largeur | Rapport de hauteur |
 |--- |--- |--- |--- |
-| Source | 1 920 x 1 080 | 1 | 3 |
+| Source | 1 920 x 1 080 | 1 | 1 |
 | Codée | 960 x 540 | 2 | 2 |
 | Codée | 640 x 360 | 3 | 1 |
 | Codée | 480 x 270 | 4 | 4 |
@@ -420,9 +419,9 @@ Vous pouvez publier des fichiers vidéo gérés dans les ressources du Experienc
 
 Pour publier des fichiers vidéo sur YouTube, vous devez baliser des fichiers vidéo dans des fichiers Experience Manager avec des balises. Vous associez ces balises à une chaîne YouTube. Si la balise d’une ressource vidéo correspond à la balise d’une chaîne YouTube, la vidéo est publiée sur YouTube. La publication sur YouTube se produit avec une publication normale de la vidéo à condition qu’une balise associée soit utilisée.
 
-YouTube procède à son propre codage. Ainsi, le fichier vidéo d’origine téléchargé dans le Experience Manager est publié sur YouTube au lieu de tout rendu vidéo créé par le codage de Dynamic Media. Bien qu’il ne soit pas nécessaire de traiter les vidéos à l’aide de Dynamic Media, il est normal qu’elles le fassent au cas où un paramètre prédéfini de visionneuse serait nécessaire pour la lecture.
+YouTube procède à son propre codage. Ainsi, le fichier vidéo d’origine qui a été téléchargé dans le Experience Manager est publié sur YouTube au lieu de tout rendu vidéo créé par le codage de Dynamic Media. Bien qu’il ne soit pas nécessaire de traiter les vidéos à l’aide de Dynamic Media, il est normal qu’elles le fassent au cas où un paramètre prédéfini de visionneuse serait nécessaire pour la lecture.
 
-Lorsque vous ignorez le profil de traitement de la vidéo et publiez directement sur YouTube, cela signifie simplement que votre fichier vidéo dans le fichier Experience Manager n’obtient pas de miniature affichable. Cela signifie également que les vidéos qui ne sont pas codées ne fonctionnent avec aucun des types de ressources Dynamic Media.
+Lorsque vous ignorez le profil de traitement vidéo et publiez directement sur YouTube, cela signifie simplement que votre fichier vidéo dans le fichier Experience Manager n’obtient pas de miniature affichable. Cela signifie également que les vidéos qui ne sont pas codées ne fonctionnent avec aucun des types de ressources Dynamic Media.
 
 Pour garantir une authentification serveur à serveur sécurisée avec YouTube, la publication des vidéos sur les serveurs YouTube implique les tâches suivantes :
 
@@ -443,7 +442,7 @@ Pour effectuer une publication sur YouTube, vous avez besoin d’un compte Googl
 
 Il n’est pas nécessaire que le compte utilisé avec Google Cloud et le compte Google utilisé pour YouTube soient les mêmes.
 
-Google modifie régulièrement son interface utilisateur. Les étapes de publication des vidéos sur YouTube peuvent donc légèrement varier par rapport à ce qui est décrit ci-dessous. Cet avertissement s’applique également à YouTube lorsque vous tentez de vérifier si des vidéos y sont téléchargées.
+Google modifie régulièrement son interface utilisateur. Par conséquent, les étapes de publication des vidéos sur YouTube peuvent légèrement varier par rapport à ce qui est décrit ci-dessous. Cet avertissement s’applique également à YouTube lorsque vous tentez de vérifier si des vidéos y sont téléchargées.
 
 >[!NOTE]
 >
@@ -526,7 +525,7 @@ Pour configurer les paramètres de Google Cloud, procédez comme suit :
 
 1. Sous l’en-tête **[!UICONTROL Nom du produit affiché à l’intention des utilisateurs]**, dans le champ de texte, entrez ce qui doit s’afficher sur l’écran d’autorisation.
 
-   L’écran de consentement s’affiche pour l’administrateur du Experience Manager lorsqu’il s’authentifie sur YouTube. Le Experience Manager contacte YouTube pour obtenir sa permission.
+   L’écran de consentement s’affiche pour l’administrateur du Experience Manager lorsqu’il s’authentifie auprès de YouTube. Le Experience Manager contacte YouTube pour obtenir l&#39;autorisation.
 
 1. Cliquez sur **[!UICONTROL Continuer]**.
 1. Sur la page Ajouter des identifiants au projet, à l’étape 4, sous l’en-tête **[!UICONTROL Télécharger les identifiants]**, appuyez sur **[!UICONTROL Télécharger]**.
@@ -547,7 +546,7 @@ Pour publier des vidéos sur YouTube, vous devez disposer d’une ou de plusieur
 
 >[!CAUTION]
 >
->Assurez-vous d’avoir déjà configuré un ou plusieurs canaux dans YouTube *avant* d’ajouter des canaux sous Paramètres YouTube en Experience Manager (voir [Configuration de YouTube en Experience Manager](#setting-up-youtube-in-aem) ci-dessous). Si vous ne parvenez pas à configurer le canal, vous n&#39;êtes pas averti de l&#39;absence de canaux existants. L’authentification Google a lieu lorsque vous ajoutez une chaîne, mais il n’existe pas d’option permettant de choisir la chaîne vers laquelle la vidéo est envoyée.
+>Assurez-vous d&#39;avoir déjà configuré un ou plusieurs canaux dans YouTube *avant* d&#39;ajouter des canaux sous Paramètres YouTube dans le Experience Manager (voir [Configuration de YouTube en Experience Manager](#setting-up-youtube-in-aem) ci-dessous). Si vous ne parvenez pas à configurer le canal, vous n&#39;êtes pas averti de l&#39;absence de canaux existants. L’authentification Google a lieu lorsque vous ajoutez une chaîne, mais il n’existe pas d’option permettant de choisir la chaîne vers laquelle la vidéo est envoyée.
 
 Pour créer une chaîne YouTube :
 
@@ -557,7 +556,7 @@ Pour créer une chaîne YouTube :
 1. Sur la page Canaux, appuyez sur **[!UICONTROL Créer un canal]**.
 1. Sur la page Compte de marque, dans le champ nom du compte de marque, saisissez un nom d’entité professionnelle ou tout autre nom de chaîne de votre choix sous lequel vous souhaitez publier vos ressources vidéo, puis cliquez sur **[!UICONTROL Créer]**.
 
-   Rappelez-vous le nom que vous saisissez ici car vous devez le saisir de nouveau lorsque vous configurez YouTube en Experience Manager.
+   Rappelez-vous le nom que vous saisissez ici car vous devez le saisir à nouveau lorsque vous configurez YouTube en Experience Manager.
 
 1. (Facultatif) Si nécessaire, ajoutez d’autres chaînes.
 
@@ -567,11 +566,11 @@ Pour créer une chaîne YouTube :
 
 Pour publier sur vos vidéos sur YouTube, le Experience Manager associe des balises à un ou plusieurs canaux YouTube. Pour ajouter des balises pour la publication, voir [Administration des balises](/help/sites-cloud/authoring/features/tags.md).
 
-Ou, si vous avez l’intention d’utiliser les balises par défaut en Experience Manager, vous pouvez ignorer cette tâche et accéder à [Configuration de YouTube en Experience Manager](#setting-up-youtube-in-aem).
+Ou, si vous avez l’intention d’utiliser les balises par défaut dans le Experience Manager, vous pouvez ignorer cette tâche et accéder à [Configuration de YouTube dans Experience Manager](#setting-up-youtube-in-aem).
 
 >[!NOTE]
 >
->Une fois le Cloud Service configuré, aucune autre configuration n’est nécessaire pour activer l’agent de réplication de publication YouTube à ce stade. La raison en est qu&#39;il a été activé lors de l&#39;enregistrement de la configuration du Cloud Service.
+>Une fois le Cloud Service configuré, aucune autre configuration n’est nécessaire pour activer l’agent de réplication YouTube Publish à ce stade. La raison en est qu&#39;il a été activé lors de l&#39;enregistrement de la configuration du Cloud Service.
 
 <!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
@@ -585,15 +584,15 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 ### Setting up YouTube in Experience Manager {#setting-up-youtube-in-aem}
 
-A compter de la version 6.4 de Experience Manager, une nouvelle méthode d’interface utilisateur tactile a été introduite pour configurer la publication YouTube en Experience Manager. Selon l’instance installée du Experience Manager que vous utilisez, effectuez l’une des opérations suivantes :
+A compter de la version 6.4 de Experience Manager, une nouvelle méthode d’interface utilisateur tactile a été introduite pour configurer la publication YouTube dans le Experience Manager. Selon l’instance installée du Experience Manager que vous utilisez, effectuez l’une des opérations suivantes :
 
-* Pour configurer YouTube en Experience Manager avant la version 6.4, voir [Configuration de YouTube en Experience Manager avant la version 6.4](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before).
-* Pour configurer YouTube dans le Experience Manager 6.4 ou version ultérieure, voir [Configuration de YouTube dans le Experience Manager 6.4 et version ultérieure](#setting-up-youtube-in-aem-and-later).
+* Pour configurer YouTube dans le Experience Manager avant la version 6.4, voir [Configuration de YouTube dans le Experience Manager avant la version 6.4](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before).
+* Pour configurer YouTube dans Experience Manager 6.4 ou version ultérieure, voir [Configuration de YouTube dans Experience Manager 6.4 et version ultérieure](#setting-up-youtube-in-aem-and-later).
 
-#### Configuration de YouTube dans le Experience Manager 6.4 et versions ultérieures {#setting-up-youtube-in-aem-and-later}
+#### Configuration de YouTube dans Experience Manager 6.4 et versions ultérieures {#setting-up-youtube-in-aem-and-later}
 
 1. Veillez à vous connecter à votre instance Dynamic Media en tant qu’administrateur.
-1. Dans le coin supérieur gauche du Experience Manager, appuyez sur le logo du Experience Manager, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]**(icône en forme de marteau) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuration de publication YouTube]**.
+1. Dans le coin supérieur gauche du Experience Manager, appuyez sur le logo du Experience Manager, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]**(icône en forme de marteau) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuration de publication de YouTube]**.
 1. Appuyez sur **[!UICONTROL global]** (sans sélectionner cette option).
 
 1. Dans le coin supérieur droit de la page Global, appuyez sur **[!UICONTROL Créer]**.
@@ -757,13 +756,13 @@ Vous devez maintenant associer les balises que vous avez précédemment ajoutée
 >Dans le mode de publication **[!UICONTROL Immédiatement]**, la ressource chargée (une fois synchronisée avec IPS) est automatiquement publiée sur le système de diffusion. Cela vaut pour Dynamic Media, mais pas pour YouTube. Pour publier sur YouTube, vous devez le faire au moyen de l’auteur Experience Manager.
 
 >[!NOTE]
-Pour publier du contenu à partir de YouTube, le Experience Manager utilise le flux de travail **[!UICONTROL Publier sur YouTube]**, qui vous permet de surveiller la progression et de vue des informations d’échec.
+Pour publier du contenu à partir de YouTube, le Experience Manager utilise le processus **[!UICONTROL Publier vers YouTube]**, qui vous permet de surveiller la progression et de vue des informations d’échec.
 Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 Pour obtenir des informations de progression plus détaillées, vous pouvez surveiller le journal YouTube sous la réplication. Sachez toutefois que ce type de surveillance nécessite un accès administrateur.
 
 **Pour publier des vidéos sur votre chaîne YouTube :**
 
-1. En Experience Manager, accédez à un fichier vidéo que vous souhaitez publier sur votre canal YouTube.
+1. Dans le Experience Manager, accédez à un fichier vidéo que vous souhaitez publier sur votre canal YouTube.
 1. Sélectionnez la ressource vidéo (visionneuse de vidéos adaptative).
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Propriétés]**.
 1. Dans l’onglet De base, sous l’en-tête Métadonnées, cliquez sur **[!UICONTROL Boîte de dialogue Ouvrir la sélection]** à droite du champ Balises.
@@ -804,17 +803,17 @@ Pour lier les URL YouTube à votre application web, procédez comme suit :
 
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Propriétés]**.
 1. Cliquez sur l’onglet **[!UICONTROL Avancé]**.
-1. Sous l’en-tête Publication YouTube, dans la Liste URL YouTube, sélectionnez et copiez le texte de l’URL dans votre navigateur Web pour prévisualisation du fichier ou l’ajouter à votre page de contenu Web.
+1. Sous l’en-tête Publication YouTube, dans la Liste URL YouTube, sélectionnez et copiez le texte de l’URL dans votre navigateur Web pour prévisualisation du fichier ou pour l’ajouter à votre page de contenu Web.
 
 ### Annulation de la publication d’une vidéo pour la supprimer de YouTube  {#unpublishing-videos-to-remove-them-from-youtube}
 
 Lorsque vous annulez la publication d&#39;une ressource vidéo dans Experience Manager, la vidéo est supprimée de YouTube.
 
 >[!CAUTION]
-Si vous supprimez directement une vidéo sur YouTube, le Experience Manager n’en est pas conscient et continue à se comporter comme si la vidéo était toujours publiée sur YouTube. Annulez toujours la publication d’un fichier vidéo sur YouTube par Experience Manager.
+Si vous supprimez une vidéo directement à partir de YouTube, le Experience Manager n’est pas conscient et continue à se comporter comme si la vidéo était toujours publiée sur YouTube. Annulez toujours la publication d’un fichier vidéo à partir de YouTube par Experience Manager.
 
 >[!NOTE]
-Pour supprimer du contenu de YouTube, le Experience Manager utilise le flux de travail **[!UICONTROL Annuler la publication de YouTube]**, qui vous permet de surveiller la progression et de vue des informations d’échec.
+Pour supprimer du contenu de YouTube, le Experience Manager utilise le processus **[!UICONTROL Annuler la publication de YouTube]**, qui vous permet de surveiller la progression et de vue des informations d’échec.
 Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 Pour annuler la publication de vidéos afin de les supprimer de YouTube, procédez comme suit :
