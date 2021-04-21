@@ -9,10 +9,10 @@ feature: Ressources 3D
 role: Business Practitioner
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 58d09d12ce2e8415eb50c288eeab3167a92fae57
 workflow-type: tm+mt
-source-wordcount: '2269'
-ht-degree: 80%
+source-wordcount: '2251'
+ht-degree: 75%
 
 ---
 
@@ -102,7 +102,7 @@ De plus, les capacités de l’ordinateur client, par exemple un poste de travai
 
 Voir aussi [Prévisualisation de ressources à l’aide de l’interface logicielle](/help/assets/dynamic-media/previewing-assets.md).
 
-**Pour afficher et interagir avec une ressource 3D à l’aide de la page des détails de la ressource**
+**Pour afficher et interagir avec une ressource 3D à l’aide de la page des détails de la ressource:**
 
 1. Assurez-vous d’avoir chargé des ressources 3D dans Experience Manager.
 
@@ -114,20 +114,14 @@ Voir aussi [Prévisualisation de ressources à l’aide de l’interface logicie
 1. Pour ouvrir le fichier dans la page Détails, appuyez sur la carte du fichier 3D.
 1. Dans la page Détails de la ressource 3D, effectuez l&#39;une des opérations suivantes :
 
-   * **Tournez votre appareil photo** : faites tourner votre angle de vue autour de la scène et des objets 
-      * _Souris_ : cliquez avec le bouton gauche et faites glisser.
-      * _Écran tactile_ : appuyez sur un seul doigt et faites glisser.
-   * **Effectuer un panoramique avec la caméra** : basculez votre angle de vue vers la gauche, la droite, le haut ou le bas.
-      * _Souris_ : cliquez avec le bouton droit et faites glisser.
-      * _Écran tactile_ : appuyez avec deux doigts et faites glisser.
-   * **Zoom sur votre caméra**  : effectuez un zoom sur votre caméra pour vous déplacer dans et hors des zones de la scène 3D.
-      * _Souris_ : roulette de défilement.
-      * _Écran tactile_ : rapprocher les deux doigts.
-   * **Recentrer votre appareil photo**  - Recentrer votre appareil photo à un point sur un objet de la scène 3D.
-      * _Souris_ : double-cliquez.
-      * _Écran tactile_ : appuyez deux fois.
-   * **Réinitialiser**  : près de l&#39;angle inférieur droit de la page, appuyez sur l&#39;icône Réinitialiser pour rétablir le point de cible de la vue au centre de la ressource 3D. De plus, Réinitialiser rapproche ou éloigne l’angle de vue pour afficher la ressource dans son intégralité et à une taille raisonnable.
-   * **Mode**  plein écran : pour passer en mode plein écran, dans le coin inférieur droit de la page, appuyez sur l&#39;icône Plein écran.
+   | Mode | Description | Action de souris | Action de l’écran tactile |
+   | --- | --- | --- | --- |
+   | **Tournez votre appareil photo** | Faites tourner la vue autour de la scène 3D et des objets. | Cliquez avec le bouton gauche et faites glisser. | Appuyez sur un seul doigt et faites glisser. |
+   | **Panoramique de l’appareil photo** | Déplacez votre vue vers la gauche, la droite, vers le haut ou vers le bas. | Cliquez avec le bouton droit de la souris et faites glisser. | Appuyez sur deux doigts et faites glisser. |
+   | **Zoom de la caméra** | Déplacez-vous dans ou hors des zones de la scène 3D. | Roue de défilement. | Pincement à deux doigts. |
+   | **Recentrer votre caméra** | Recentrez votre caméra sur un objet de la scène 3D. | Double-cliquer. | Double appui. |
+   | **Réinitialiser** | Près du coin inférieur droit de la page, appuyez sur l&#39;icône Réinitialiser pour rétablir le point de cible de vue au centre de la ressource 3D. De plus, Réinitialiser rapproche ou éloigne l’angle de vue pour afficher la ressource dans son intégralité et à une taille raisonnable. |  |  |
+   | **Mode Plein écran** | Pour passer en mode plein écran, dans le coin inférieur droit de la page, appuyez sur l’icône Plein écran. |  |  |
 
 1. Dans l’angle supérieur droit de la page, appuyez sur **[!UICONTROL Fermer]** pour revenir à la page Ressources.
 
@@ -141,7 +135,7 @@ Lorsqu’une page web est en mode **[!UICONTROL Édition]**, aucune interaction 
 
 Voir aussi [Prévisualisation de ressources à l’aide de l’interface logicielle](/help/assets/dynamic-media/previewing-assets.md).
 
-**Pour afficher et interagir avec une ressource 3D dans un composant Média 3D**
+**Pour afficher et interagir avec une ressource 3D dans un composant Média 3D:**
 
 1. Lorsqu’une page web est en mode **[!UICONTROL Édition]**, effectuez l’une des opérations suivantes :
 
@@ -153,20 +147,14 @@ Ressource 3D entièrement interactive affichée en mode **[!UICONTROL Aperçu]**
 
 1. En mode **[!UICONTROL Aperçu]**, effectuez l’une des opérations suivantes :
 
-   * **Tournez votre appareil photo** : faites tourner votre angle de vue autour de la scène et des objets 
-      * _Souris_ : cliquez avec le bouton gauche et faites glisser.
-      * _Écran tactile_ : appuyez sur un seul doigt et faites glisser.
-   * **Panoramique de votre appareil photo**  - Panoramique de votre vue à gauche, à droite, vers le haut ou vers le bas.
-      * _Souris_ : cliquez avec le bouton droit et faites glisser.
-      * _Écran tactile_ : appuyez avec deux doigts et faites glisser.
-   * **Zoom sur votre caméra**  : effectuez un zoom sur votre caméra pour vous déplacer dans et hors des zones de la scène 3D.
-      * _Souris_ : roulette de défilement.
-      * _Écran tactile_ : rapprocher les deux doigts.
-   * **Recentrer votre appareil photo**  - Recentrer votre appareil photo à un point sur un objet de la scène 3D.
-      * _Souris_ : double-cliquez.
-      * _Écran tactile_ : appuyez deux fois.
-   * **Réinitialiser**  : près de l&#39;angle inférieur droit de la page, appuyez sur l&#39;icône Réinitialiser pour rétablir le point de cible de la vue au centre de la ressource 3D. De plus, Réinitialiser rapproche ou éloigne l’angle de vue pour afficher la ressource dans son intégralité et à une taille raisonnable.
-   * **Mode Plein écran** : pour passer en mode Plein écran, dans l’angle inférieur droit de la page, appuyez sur l’icône Plein écran.
+   | Mode | Description | Action de souris | Action de l’écran tactile |
+   | --- | --- | --- | --- |
+   | **Tournez votre appareil photo** | Faites tourner la vue autour de la scène 3D et des objets. | Cliquez avec le bouton gauche et faites glisser. | Appuyez sur un seul doigt et faites glisser. |
+   | **Panoramique de l’appareil photo** | Déplacez votre vue vers la gauche, la droite, vers le haut ou vers le bas. | Cliquez avec le bouton droit de la souris et faites glisser. | Appuyez sur deux doigts et faites glisser. |
+   | **Zoom de la caméra** | Déplacez-vous dans ou hors des zones de la scène 3D. | Roue de défilement. | Pincement à deux doigts. |
+   | **Recentrer votre caméra** | Recentrez votre caméra sur un objet de la scène 3D. | Double-cliquer. | Double appui. |
+   | **Réinitialiser** | Près du coin inférieur droit de la page, appuyez sur l&#39;icône Réinitialiser pour rétablir le point de cible de vue au centre de la ressource 3D. De plus, Réinitialiser rapproche ou éloigne l’angle de vue pour afficher la ressource dans son intégralité et à une taille raisonnable. |  |  |
+   | **Mode Plein écran** | Pour passer en mode plein écran, dans le coin inférieur droit de la page, appuyez sur l’icône Plein écran. |  |  |
 
 ## À propos de l’utilisation du composant Média 3D {#working-with-three-d-media-component}
 
@@ -174,9 +162,8 @@ Dynamic Media contient un composant Média 3D Dynamic Media que vous pouvez util
 
 * [Ajout du composant Média 3D au modèle de page](#adding-three-d-media-component-to-page-template)
 * [Ajout du composant Média 3D à une page web](#adding-the-three-d-media-component-to-a-web-page)
-   * [Facultatif – Configuration du composant Média 3D](#configuring-the-three-d-component)
+   * [Facultatif - Configuration du composant Média 3D](#configuring-the-three-d-component)
 * [Affectation d’une ressource 3D au composant Média 3D](#assigning-a-three-d-asset-to-the-component)
-
 
 ## Ajout du composant Média 3D au modèle de page {#adding-three-d-media-component-to-page-template}
 
@@ -261,7 +248,7 @@ Voir aussi [Publication de ressources Dynamic Media](/help/assets/dynamic-media/
 
 Voir aussi [Publication de pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).
 
-**Pour publier des ressources 3D Dynamic Media statiques**
+**Pour publier des ressources 3D Dynamic Media statiques:**
 
 1. Ouvrez un fichier 3D (format de fichier GLB, OBJ ou STL) pour le vue dans la page Détails.
 1. Dans la barre d’outils, appuyez sur **[!UICONTROL Publication rapide]**.
@@ -286,10 +273,10 @@ Voir aussi [Publication de pages](/help/sites-cloud/authoring/fundamentals/publi
 
 Utilisez les deux méthodes suivantes pour publier des ressources 3D Dynamic Media si *vous n’utilisez pas* Experience Manager comme système de gestion de contenu web.
 
-* **[!UICONTROL URL]** : utilisez **[!UICONTROL URL]** si vous avez recours à un système de gestion de contenu web tiers et que vous souhaitez lier des ressources 3D Dynamic Media à vos pages web à l’aide de la visionneuse Dimensionnel.
+* **[!UICONTROL URL]**  - Utilisez  **** URL si vous utilisez un système de gestion de contenu Web tiers et souhaitez lier des ressources Dynamic Media 3D à vos pages Web à l’aide de la visionneuse Dimensional.
 
    Voir [Liaison d’URL à une application web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
 
-* **[!UICONTROL Incorporer]** : utilisez l’option **[!UICONTROL Incorporer]** si vous souhaitez afficher une ressource 3D Dynamic Media incorporée dans une page web à l’aide de la visionneuse Dimensionnel. Vous copiez le code intégré dans le presse-papiers pour pouvoir le coller dans vos pages web. Vous ne pouvez pas modifier le code dans la boîte de dialogue **[!UICONTROL Incorporer]**.
+* **[!UICONTROL Incorporer]**  - Utilisez l’option  **** Incorporer lorsque vous souhaitez vue d’un fichier Dynamic Media 3D incorporé à une page Web à l’aide de la visionneuse Dimensional. Vous copiez le code intégré dans le presse-papiers pour pouvoir le coller dans vos pages web. Vous ne pouvez pas modifier le code dans la boîte de dialogue **[!UICONTROL Incorporer]**.
 
    Voir [Intégration de la visionneuse de vidéos ou d’images Dynamic Media, ou de la visionneuse Dimensionnel dans une page web](/help/assets/dynamic-media/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).
