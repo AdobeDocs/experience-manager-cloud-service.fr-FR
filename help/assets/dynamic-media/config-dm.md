@@ -1,13 +1,12 @@
 ---
 title: Configuration de Dynamic Media Cloud Service
 description: Découvrez comment configurer Dynamic Media dans Adobe Experience Manager en tant que Cloud Service.
-topic: Administrator
 role: Administrator,Business Practitioner
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '4054'
+source-wordcount: '4053'
 ht-degree: 56%
 
 ---
@@ -439,7 +438,7 @@ Le paramètre Scene7 Upload Connection synchronise les ressources du Experience 
 
 Pour mettre à jour la connexion de chargement vers Scene7 :
 
-1. Accédez à `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`.
+1. Accédez à `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`. 
 1. Dans le champ **[!UICONTROL Nombre de connexions]**, ou dans le champ **[!UICONTROL Principal délai d’expiration du travail]**, ou dans les deux, modifiez le nombre suivant vos besoins.
 
    Le paramètre **[!UICONTROL Nombre de connexions]** contrôle le nombre maximal de connexions HTTP autorisées pour le Experience Manager au transfert Dynamic Media. En règle générale, la valeur prédéfinie de dix connexions est suffisante.
