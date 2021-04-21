@@ -3,14 +3,13 @@ sub-product: Transition vers AEM as a Cloud Service
 user-guide-title: Transition vers AEM as a Cloud Service
 breadcrumb-title: Guide de déplacement
 user-guide-description: Découvrez le parcours de transition vers Cloud Service.
-feature-set: Experience Manager Sites
-feature: Deploying
+feature: Déploiement
 role: Architect, Developer
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 97%
+source-wordcount: '88'
+ht-degree: 100%
 
 ---
 
