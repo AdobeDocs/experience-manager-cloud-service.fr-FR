@@ -1,17 +1,16 @@
 ---
 title: Utilisation de vues rapides pour créer des fenêtres contextuelles personnalisées
 description: '"Découvrez comment la vue rapide par défaut est utilisée dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec les informations sur les produits pour générer un achat. Vous pouvez déclencher l’affichage d’un contenu personnalisé dans les fenêtres contextuelles."'
-topic: "Developer,Administrator,Business Practitioner"
-feature: Interactive Images,Interactive Videos,Carousel Banners
+feature: Images interactives, Vidéos interactives, Bannières de carrousel
 role: Administrator,Business Practitioner
+exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1034'
 ht-degree: 44%
 
 ---
-
 
 # Utilisation de vues rapides pour créer des fenêtres contextuelles personnalisées {#using-quickviews-to-create-custom-pop-ups}
 
@@ -262,4 +261,3 @@ callLe gestionnaire nécessite également un appel de fonction pour que la vue r
    `s7interactiveimageviewer.init()`
 
    Après avoir incorporé la visionneuse dans votre page hôte, assurez-vous que l’instance de visionneuse est créée. Veillez également à ce que les gestionnaires soient chargés avant l’appel de la visionneuse à l’aide de `init()`.
-
