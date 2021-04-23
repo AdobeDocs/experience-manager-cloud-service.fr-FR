@@ -3,10 +3,10 @@ title: Tâches de maintenance dans AEM as a Cloud Service
 description: Tâches de maintenance dans AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 4c1c14fae5819e7f7e1bf5d04350c54b6cbe80bb
+source-git-commit: 503983b81cfe84b0bafe328d4fb7faeff000c7dd
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 81%
+source-wordcount: '914'
+ht-degree: 82%
 
 ---
 
@@ -42,6 +42,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
 Les clients peuvent planifier chacune des tâches de maintenance Purger le workflow, Purger les tâches ad hoc et Purger le projet pour que ces tâches s’exécutent pendant les fenêtres de maintenance quotidienne, hebdomadaire ou mensuelle. Ces configurations doivent être modifiées directement dans le contrôle de code source. Le tableau ci-dessous décrit les paramètres de configuration disponibles pour chaque fenêtre.
 
 <table>
+ <tbody>
   <tr>
     <th>Configuration de la fenêtre de maintenance</th>
     <th>Qui gère la configuration</th>
@@ -54,12 +55,11 @@ Les clients peuvent planifier chacune des tâches de maintenance Purger le workf
     <td>Quotidienne</td>
     <td>Client</td>
     <td>Définition de nœud JCR</td>
-    <td>Voir l’emplacement 1 ci-dessous</td>
+    <td> <code>/apps/settings/granite/operations/maintenance/granite_daily</code></td>
     <td>Voir l’exemple de code 1 ci-dessous</td>
-  <td>
-  <strong>windowSchedule= daily</strong>  (cette valeur ne doit pas être modifiée) 
-  <strong>windowStartTime= HH:</strong> MMen utilisant comme horloge de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance quotidienne doivent commencer à s’exécuter.
-  <strong></strong>windowEndTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance quotidienne doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.
+  <td><p><code>windowSchedule= daily</code></p> (cette valeur ne doit pas être modifiée)
+  <p><code>windowStartTime= HH:MM</code> en utilisant comme horloge 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance quotidienne doivent commencer à s’exécuter.</p>
+  <p><code>windowEndTime= HH:MM</code> en utilisant comme horloge 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance quotidienne doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.</p>
   </td> 
   </tr>
   <tr>
@@ -89,6 +89,7 @@ Les clients peuvent planifier chacune des tâches de maintenance Purger le workf
     <strong>windowFirstLastStartDay= 0/1</strong> 0 pour planifier la première semaine du mois ou 1 pour planifier la dernière semaine du mois. En l’absence de valeur, les tâches sont planifiées chaque jour, comme régi par le paramètre windowScheduleWeekdays tous les mois.
     </td> 
     </tr>
+    </tbody>
 </table>
 
 Emplacements:
