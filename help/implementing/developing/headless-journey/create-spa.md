@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
 workflow-type: tm+mt
 source-wordcount: '1301'
 ht-degree: 34%
@@ -19,7 +19,7 @@ ht-degree: 34%
 >
 >TRAVAUX EN COURS - La création de ce document est en cours et ne doit pas être comprise comme complète ou définitive ni être utilisée à des fins de production.
 
-Dans cette suite facultative du [AEM Parcours de développement sans tête](#overview.md), vous découvrirez comment AEM peut combiner une diffusion sans tête avec les fonctionnalités CMS à pile complète traditionnelles et comment vous pouvez créer des SPA modifiables à l&#39;aide de la structure de l&#39;éditeur d&#39;, ainsi que l&#39;intégration de  externes, ce qui vous permettra de modifier le cas échéant.
+Dans cette suite facultative du [AEM Parcours de développement sans tête](overview.md), vous découvrirez comment AEM peut combiner une diffusion sans tête avec les fonctionnalités CMS à pile complète traditionnelles et comment vous pouvez créer des SPA modifiables à l&#39;aide de la structure de l&#39;éditeur d&#39;, ainsi que l&#39;intégration de  externes, ce qui vous permettra de modifier le cas échéant.
 
 ## L&#39;histoire jusqu&#39;à présent {#story-so-far}
 
