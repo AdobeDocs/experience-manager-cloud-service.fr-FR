@@ -3,10 +3,10 @@ title: Tâches de maintenance dans AEM as a Cloud Service
 description: Tâches de maintenance dans AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 5351b4b9ceed04c572bafc02f47d6fa666e5580d
+source-git-commit: 5892ef2998b8bb0e955998662a3cbe8aaa624e97
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '920'
+ht-degree: 87%
 
 ---
 
@@ -55,9 +55,10 @@ Les clients peuvent planifier chacune des tâches de maintenance Purger le workf
     <td>Quotidienne</td>
     <td>Client</td>
     <td>Définition de nœud JCR</td>
-    <td>Voir l’emplacement 1 ci-dessous</td>
-    <td>Voir l’exemple de code 1 ci-dessous</td>
-  <td><p><strong>windowSchedule= quotidien</strong></p> (cette valeur ne doit pas être modifiée)
+    <td>1</td>
+    <td>1</td>
+  <td>
+  <p><strong></strong>windowSchedule = daily (cette valeur ne doit pas être modifiée)</p>
   <p><strong></strong>windowStartTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance quotidienne doivent commencer à s’exécuter.</p>
   <p><strong></strong>windowEndTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance quotidienne doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.</p>
   </td> 
@@ -69,11 +70,11 @@ Les clients peuvent planifier chacune des tâches de maintenance Purger le workf
     <td>Voir l'emplacement 2 ci-dessous</td>
     <td>Voir l’exemple de code 2 ci-dessous</td>
     <td>
-    <strong>windowSchedule= hebdomadaire</strong>  (cette valeur ne doit pas être modifiée) 
-    <strong>windowStartTime= HH:</strong> MMen utilisant comme horloge 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance hebdomadaire doivent commencer à s’exécuter.
-    <strong></strong>windowEndTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance hebdomadaire doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.
-    <strong>windowScheduleWeekdays= Tableau de 2 valeurs comprises entre 1 et 7 (ex. [5,5])</strong> La première valeur du tableau est le jour de début où la tâche est planifiée et la seconde est le jour de fin où la tâche serait arrêtée. L’heure exacte du début et de la fin est régie par les paramètres windowStartTime et windowEndTime, respectivement.
-    </td> 
+    <p><strong></strong>windowSchedule = hebdomadaire (cette valeur ne doit pas être modifiée)</p>
+    <p><strong></strong>windowStartTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance hebdomadaire doivent commencer à s’exécuter.</p>
+    <p><strong></strong>windowEndTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance hebdomadaire doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.</p>
+    <p><strong>windowScheduleWeekdays= Tableau de 2 valeurs comprises entre 1 et 7 (ex. [5,5])</strong> La première valeur du tableau est le jour de début où la tâche est planifiée et la seconde est le jour de fin où la tâche serait arrêtée. L’heure exacte du début et de la fin est régie par les paramètres windowStartTime et windowEndTime, respectivement.</p>
+    </td>
   </tr>
   <tr>
     <td>Mensuel</td>
@@ -82,11 +83,11 @@ Les clients peuvent planifier chacune des tâches de maintenance Purger le workf
     <td>Voir l'emplacement 3 ci-dessous</td>
     <td>Voir l’exemple de code 3 ci-dessous</td>
     <td>
-    <strong>windowSchedule= daily</strong>  (cette valeur ne doit pas être modifiée) 
-    <strong>windowStartTime= HH:</strong> MMen utilisant comme horloge de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance mensuelle doivent commencer à s’exécuter.
-    <strong></strong>windowEndTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance mensuelle doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.
-    <strong>windowScheduleWeekdays = Tableau de 2 valeurs comprises entre 1 et 7 (ex. [5,5])</strong> La première valeur du tableau est le jour de début où la tâche est planifiée et la seconde est le jour de fin où la tâche serait arrêtée. L’heure exacte du début et de la fin est régie par les paramètres windowStartTime et windowEndTime, respectivement.
-    <strong>windowFirstLastStartDay= 0/1</strong> 0 pour planifier la première semaine du mois ou 1 pour planifier la dernière semaine du mois. En l’absence de valeur, les tâches sont planifiées chaque jour, comme régi par le paramètre windowScheduleWeekdays tous les mois.
+    <p><strong></strong>windowSchedule = daily (cette valeur ne doit pas être modifiée)</p>
+    <p><strong></strong>windowStartTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance mensuelle doivent commencer à s’exécuter.</p>
+    <p><strong></strong>windowEndTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance mensuelle doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.</p>
+    <p><strong>windowScheduleWeekdays = Tableau de 2 valeurs comprises entre 1 et 7 (ex. [5,5])</strong> La première valeur du tableau est le jour de début où la tâche est planifiée et la seconde est le jour de fin où la tâche serait arrêtée. L’heure exacte du début et de la fin est régie par les paramètres windowStartTime et windowEndTime, respectivement.</p>
+    <p><strong>windowFirstLastStartDay= 0/1</strong> 0 pour planifier la première semaine du mois ou 1 pour planifier la dernière semaine du mois. En l’absence de valeur, les tâches sont planifiées chaque jour, comme régi par le paramètre windowScheduleWeekdays tous les mois.</p>
     </td> 
     </tr>
     </tbody>
