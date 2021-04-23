@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
 workflow-type: tm+mt
-source-wordcount: '1649'
+source-wordcount: '1647'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ La complexité des dépendances au sein de la pile devient rapidement visible lo
 
 ## Limites de la Diffusion de pile complète {#limits}
 
-L’approche de pile complète crée un silo où toutes les expériences atterrissent dans un système unique. Les modifications ou les ajouts à un niveau du silo nécessitent des modifications à d&#39;autres niveaux, ce qui nécessite beaucoup de temps et coûte cher.
+L’approche de pile complète crée un silo où toutes les expériences atterrissent dans un système unique. Les modifications ou les ajouts au composant du silo nécessitent des modifications d&#39;autres composants, ce qui nécessite beaucoup de temps et coûte cher.
 
 Cela est particulièrement vrai pour la couche de présentation, qui dans les systèmes traditionnels, est souvent étroitement liée au CMS. Tout nouveau canal signifie généralement une mise à jour de la couche de présentation, qui affecte tous les autres canaux.
 
@@ -80,7 +80,7 @@ Une diffusion sans tête est possible en exposant un ensemble d’interfaces de 
 
 L’absence d’en-tête est un exemple de découplage du contenu de sa présentation. Ou dans un sens plus générique, découpler le front end de l&#39;arrière-plan de votre pile de services. Dans une configuration sans tête, la couche de présentation (la tête) est découplée de la gestion de contenu (la queue). Les deux interagissent uniquement par le biais d’appels d’API.
 
-Ce découplage signifie que chaque service de consommation (principal) peut développer son expérience en fonction du même contenu diffusé sur les API, ce qui garantit la réutilisation et la cohérence du contenu. Les services de consommation peuvent alors implémenter leurs propres couches de présentation, ce qui permet à la couche de gestion de contenu (l’extrémité arrière) de se mettre à l’échelle horizontalement.
+Ce découplage signifie que chaque service de consommation (principal) peut développer son expérience en fonction du même contenu diffusé sur les API, ce qui garantit la réutilisation et la cohérence du contenu. Les services de consommation peuvent alors mettre en oeuvre leurs propres couches de présentation, ce qui permet à la pile de gestions de contenu (l’arrière-plan) de se mettre à l’échelle horizontalement.
 
 ## Les fondements technologiques {#technology}
 
