@@ -2,20 +2,20 @@
 title: Utilisation des ressources connectées pour partager des ressources DAM dans  [!DNL Sites]
 description: Utilisez des ressources disponibles pour un déploiement [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] à distance.
 contentOwner: AG
-feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
+feature: Gestion des ressources,Ressources connectées,Distribution des ressources,Utilisateur et groupes
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 translation-type: tm+mt
-source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
+source-git-commit: bbc396fbe7b3c11f8011a32fa78577957422fcf2
 workflow-type: tm+mt
 source-wordcount: '2932'
-ht-degree: 85%
+ht-degree: 81%
 
 ---
 
 # Utilisation des ressources connectées pour partager des ressources DAM dans [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-Dans les grandes entreprises, l’infrastructure requise pour créer des sites web peut être distribuée. Il arrive que les fonctionnalités et les ressources numériques de création de sites web permettant de créer ces sites web se trouvent dans différents déploiements. Cette situation peut être motivée par la répartition géographique des déploiements existants, nécessaire pour travailler en tandem. Elle peut être aussi due à l’acquisition d’infrastructures hétérogènes que la société mère souhaite utiliser conjointement.
+Dans les grandes entreprises, l’infrastructure requise pour créer des sites web peut être distribuée. Il arrive que les fonctionnalités et les ressources numériques de création de sites web permettant de créer ces sites web se trouvent dans différents déploiements. Une des raisons peut être la répartition géographique des déploiements existants qui sont nécessaires pour travailler ensemble. Elle peut être aussi due à l’acquisition d’infrastructures hétérogènes que la société mère souhaite utiliser conjointement.
 
 Les utilisateurs peuvent créer des pages web dans [!DNL Experience Manager Sites]. [!DNL Experience Manager Assets] est le système de gestion des ressources numériques (DAM) qui fournit les ressources nécessaires pour les sites web. [!DNL Experience Manager] prend désormais en charge le cas d’utilisation ci-dessus en intégrant [!DNL Sites] et [!DNL Assets].
 
@@ -53,7 +53,7 @@ Les différents rôles impliqués pour configurer et utiliser la fonctionnalité
 |------|--------|-----------|-----|----------|
 | Administrateur [!DNL Sites] | Local | [!DNL Experience Manager] `administrators` | `admin` | Configurez [!DNL Experience Manager], ainsi que l’intégration au déploiement [!DNL Assets] distant. |
 | Utilisateur DAM | Local | `Authors` | `ksaner` | Utilisé pour afficher et dupliquer les ressources récupérées au niveau de `/content/DAM/connectedassets/`. |
-| Auteur [!DNL Sites] | Local | <ul><li>`Authors` (avec les droits d’accès en lecture sur l’instance DAM distante et l’accès en tant qu’auteur sur l’instance [!DNL Sites] locale) </li> <li>`dam-users` sur [!DNL Sites] local</li></ul> | `ksaner` | Les utilisateurs finaux sont des auteurs [!DNL Sites] qui utilisent cette intégration pour améliorer leur vélocité de contenu. Les auteurs recherchent et parcourent les ressources dans des fichiers DAM distants à l’aide de l’[!UICONTROL outil de recherche de contenu] et utilisent les images requises dans les pages web locales. Les identifiants de l’utilisateur DAM `ksaner` sont utilisés. |
+| Auteur [!DNL Sites] | Local | <ul><li>`Authors` (avec les droits d’accès en lecture sur l’instance DAM distante et l’accès en tant qu’auteur sur l’instance [!DNL Sites] locale) </li> <li>`dam-users` sur [!DNL Sites] local</li></ul> | `ksaner` | Les utilisateurs finaux sont [!DNL Sites] auteurs qui utilisent cette intégration pour améliorer la vitesse de leur contenu. Les auteurs peuvent rechercher et parcourir des ressources dans la gestion des actifs numériques distants à l&#39;aide de [!UICONTROL Outil de recherche de contenu] et à l&#39;aide des images requises dans les pages Web locales. Les identifiants de l’utilisateur DAM `ksaner` sont utilisés. |
 | Administrateur [!DNL Assets] | Distant | [!DNL Experience Manager] `administrators` | `admin` sur [!DNL Experience Manager] distant | Configurez le partage des ressources cross-origin (CORS). |
 | Utilisateur DAM | Distant | `Authors` | `ksaner` sur [!DNL Experience Manager] distant | Rôle d’auteur sur le déploiement [!DNL Experience Manager] distant. Recherchez et parcourez les ressources dans la fonction Ressources connectées à l’aide de l’[!UICONTROL outil de recherche de contenu]. |
 | Distributeur DAM (utilisateur technique) | Distant | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | `ksaner` sur [!DNL Experience Manager] distant | Cet utilisateur présent sur le déploiement distant est utilisé par le serveur local [!DNL Experience Manager] (et non le rôle d’auteur [!DNL Sites]) pour récupérer les ressources distantes, au nom de l’auteur [!DNL Sites]. Ce rôle n’est pas identique aux deux rôles `ksaner` ci-dessus et appartient à un groupe d’utilisateurs différent. |
@@ -148,7 +148,7 @@ Utilisez la configuration ci-dessus pour découvrir l’expérience de création
 
 1. Accédez à l’interface [!DNL Assets] sur le déploiement distant via **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]** dans l’espace de travail [!DNL Experience Manager]. Vous pouvez également accéder à `https://[assets_servername_ams]:[port]/assets.html/content/dam` dans un navigateur. Chargez les ressources de votre choix.
 1. Sur le déploiement [!DNL Sites], dans l’activateur de profil situé dans le coin supérieur droit, cliquez sur **[!UICONTROL Emprunter l’identité de]**. Indiquez `ksaner` comme nom d’utilisateur, sélectionnez l’option fournie, puis cliquez sur **[!UICONTROL OK]**.
-1. Ouvrez une page du site web We.Retail via **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL fr]** > **[!UICONTROL fr]**. Modifiez la page. Vous pouvez également accéder à `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` dans un navigateur pour modifier une page.
+1. Ouvrez une `We.Retail` page Web **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**. Modifiez la page. Vous pouvez également accéder à `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` dans un navigateur pour modifier une page.
 
    Cliquez sur **[!UICONTROL Activer/désactiver le panneau latéral]** dans le coin supérieur gauche de la page.
 
@@ -182,7 +182,7 @@ Les ressources récupérées peuvent être utilisées comme n’importe quelle a
 
 ### Vérifier l’utilisation d’une ressource sur plusieurs pages web {#asset-usage-references}
 
-[!DNL Experience Manager] permet aux utilisateurs de DAM de vérifier toutes les références à une ressource. Il permet de comprendre et de gérer l’utilisation d’une ressource pour les [!DNL Sites] à distance et les ressources composées. De nombreux auteurs de pages web sur le déploiement d’[!DNL Experience Manager Sites] peuvent utiliser une ressource sur un [!DNL Assets] distant dans différentes pages web. Pour simplifier la gestion des ressources et ne pas générer de références rompues, il est important que les utilisateurs de DAM vérifient l’utilisation de la ressource sur les pages web locales comme distantes. L’onglet [!UICONTROL Références] de la page [!UICONTROL Propriétés] d’une ressource liste les références locales et distantes de la ressource.
+[!DNL Experience Manager] permet aux utilisateurs de DAM de vérifier toutes les références à une ressource. Il permet de comprendre et de gérer l’utilisation d’une ressource pour les [!DNL Sites] à distance et les ressources composées. De nombreux auteurs de pages Web sur le déploiement de [!DNL Experience Manager Sites] peuvent utiliser une ressource sur un DAM distant dans différentes pages Web. Pour simplifier la gestion des ressources et ne pas générer de références rompues, il est important que les utilisateurs de DAM vérifient l’utilisation de la ressource sur les pages web locales comme distantes. L’onglet [!UICONTROL Références] de la page [!UICONTROL Propriétés] d’une ressource liste les références locales et distantes de la ressource.
 
 Pour afficher et gérer les références du déploiement [!DNL Assets], procédez comme suit :
 
@@ -191,7 +191,7 @@ Pour afficher et gérer les références du déploiement [!DNL Assets], procéde
 
    ![Références distantes dans la page Propriétés des ressources](assets/connected-assets-remote-reference.png)
 
-1. Les références des pages [!DNL Sites] indiquent le nombre total de références pour chaque [!DNL Sites] local. Il peut s’écouler un certain temps avant de trouver toutes les références et d’afficher le nombre total de références.
+1. Les références des pages [!DNL Sites] affichent le nombre total de références pour chaque [!DNL Sites] local. Il peut s’écouler un certain temps avant de trouver toutes les références et d’afficher le nombre total de références.
 1. La liste des références est interactive et les utilisateurs de DAM peuvent cliquer sur une référence pour ouvrir la page de référence. Si les références distantes ne peuvent pas être extraites pour une raison quelconque, une notification s’affiche pour informer l’utilisateur de l’échec de l’extraction.
 1. Les utilisateurs peuvent déplacer ou supprimer la ressource. Lors du déplacement ou de la suppression d’une ressource, le nombre total de références de toutes les ressources ou de tous les dossiers sélectionnés s’affiche dans une boîte de dialogue d’avertissement. Lors de la suppression d’un fichier pour lequel les références ne sont pas encore affichées, une boîte de dialogue d’avertissement s’affiche.
 
@@ -227,7 +227,7 @@ Pour afficher et gérer les références du déploiement [!DNL Assets], procéde
 * Les modifications simples non destructives et les modifications prises en charge par le composant `Image` peuvent être effectuées sur les ressources récupérées. Les ressources sont en lecture seule.
 * La seule méthode pour récupérer à nouveau la ressource consiste à la faire glisser sur une page. Il n’existe aucune prise en charge d’API ni aucune autre méthode pour récupérer à nouveau une ressource afin de la mettre à jour.
 * Si des ressources sont désaffectées de la gestion des ressources numériques (DAM), elles continuent d’être utilisées sur les pages [!DNL Sites].
-* Les entrées de référence distantes d’une ressource sont extraites de manière asynchrone. Les références et le nombre total ne sont pas évalués en temps réel et peuvent présenter des différences si un auteur de Sites utilise la ressource en même temps que l’utilisateur de DAM consulte la référence. Les utilisateurs de DAM peuvent actualiser la page et réessayer quelques minutes plus tard pour obtenir le nombre total.
+* Les entrées de référence distantes d’une ressource sont extraites de manière asynchrone. Les références et le nombre total ne sont pas en temps réel et il peut y avoir une différence si un auteur [!DNL Sites] utilise la ressource alors qu&#39;un utilisateur DAM consulte la référence. Les utilisateurs de DAM peuvent actualiser la page et réessayer quelques minutes plus tard pour obtenir le nombre total.
 
 ## Résolution des problèmes  {#troubleshoot}
 
