@@ -3,10 +3,10 @@ title: Tâches de maintenance dans AEM as a Cloud Service
 description: Tâches de maintenance dans AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: a1cf75a9ef6ebf6b61916296ec766255f0b549e0
+source-git-commit: c7e954e3ed49d6189d050b2c33c04a9266853758
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 87%
+source-wordcount: '919'
+ht-degree: 85%
 
 ---
 
@@ -39,7 +39,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
 | Purge du workflow | Client | Doit s’effectuer dans github. <br> Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous `/libs` en créant des propriétés sous le dossier `/apps/settings/granite/operations/maintenance/granite_weekly` ou `granite_daily`. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration. <br> Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le `granite_WorkflowPurgeTask`) avec les propriétés adéquates. <br> Configurez les propriétés OSGI. Consultez la [documentation sur les tâches de maintenance AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 | Purge du projet | Client | Doit s’effectuer dans github. <br> Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous `/libs` en créant des propriétés sous le dossier `/apps/settings/granite/operations/maintenance/granite_weekly` ou `granite_daily`. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration. <br> Activez la tâche de maintenance en ajoutant un nœud sous le nœud ci-dessus (nommez-le `granite_ProjectPurgeTask`) avec les propriétés adéquates. <br> Configurez les propriétés OSGI. Consultez la [documentation sur les tâches de maintenance AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
-Les clients peuvent planifier chacune des tâches de maintenance Purger le workflow, Purger les tâches ad hoc et Purger le projet pour que ces tâches s’exécutent pendant les fenêtres de maintenance quotidienne, hebdomadaire ou mensuelle. Ces configurations doivent être modifiées directement dans le contrôle de code source. Le tableau ci-dessous décrit les paramètres de configuration disponibles pour chaque fenêtre.
+Les clients peuvent planifier chacune des tâches de maintenance Purger le workflow, Purger les tâches ad hoc et Purger le projet pour que ces tâches s’exécutent pendant les fenêtres de maintenance quotidienne, hebdomadaire ou mensuelle. Ces configurations doivent être modifiées directement dans le contrôle de code source. Le tableau ci-dessous décrit les paramètres de configuration disponibles pour chaque fenêtre. Vous pouvez également consulter les emplacements et les exemples de code fournis après le tableau.
 
 <table>
  <tbody>
@@ -85,15 +85,15 @@ Les clients peuvent planifier chacune des tâches de maintenance Purger le workf
     </tbody>
 </table>
 
-Emplacements:
+**Emplacements**:
 
-1. /apps/settings/granite/operations/maintenance/granite_daily
-2. /apps/settings/granite/operations/maintenance/granite_weekly
-3. /apps/settings/granite/operations/maintenance/granite_mensuel
+* Quotidien - /apps/settings/granite/operations/maintenance/granite_daily
+* Hebdomadaire - /apps/settings/granite/operations/maintenance/granite_weekly
+* Mensuel - /apps/settings/granite/operations/maintenance/granite_mensuel
 
-Exemples de code :
+**Exemples** de code :
 
-Exemple de code 1
+Exemple de code 1 (quotidien)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -108,7 +108,7 @@ Exemple de code 1
  />
 ```
 
-Exemple de code 2
+Exemple de code 2 (hebdomadaire)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -123,7 +123,7 @@ Exemple de code 2
    windowStartTime="14:30"/>
 ```
 
-Exemple de code 3
+Exemple de code 3 (mensuel)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
