@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '1899'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >TRAVAUX EN COURS - La création de ce document est en cours et ne doit pas être comprise comme complète ou définitive ni être utilisée à des fins de production.
 
-Dans cette partie du [AEM Parcours de développement sans tête,](#overview.md) vous comprendrez les étapes de mise en oeuvre de votre première expérience sans tête en AEM, y compris les considérations de planification, et vous apprendrez également les meilleures pratiques pour rendre votre chemin aussi fluide que possible.
+Dans cette partie du [AEM Parcours de développement sans tête,](overview.md) vous comprendrez les étapes de mise en oeuvre de votre première expérience sans tête en AEM, y compris les considérations de planification, et vous apprendrez également les meilleures pratiques pour rendre votre chemin aussi fluide que possible.
 
 ## L&#39;histoire jusqu&#39;à présent {#story-so-far}
 
