@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '1647'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >TRAVAUX EN COURS - La création de ce document est en cours et ne doit pas être comprise comme complète ou définitive ni être utilisée à des fins de production.
 
-Dans cette partie du [AEM Parcours de développement sans tête,](#overview.md) découvrez comment la technologie sans tête est utilisée et pourquoi vous l&#39;utiliseriez.
+Dans cette partie du [AEM Parcours de développement sans tête,](overview.md) découvrez comment la technologie sans tête est utilisée et pourquoi vous l&#39;utiliseriez.
 
 ## Intention {#objective}
 
