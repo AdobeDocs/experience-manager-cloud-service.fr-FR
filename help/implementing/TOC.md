@@ -6,9 +6,9 @@ user-guide-description: Découvrez comment personnaliser votre déploiement d’
 feature: Outils de développement
 role: Developer, Architect
 translation-type: tm+mt
-source-git-commit: eb404db0cf45bf2ef5003c6e4c07c29758c8166b
+source-git-commit: f0357bb2b19d7d44066bf868c3ea3ce0dcf42461
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '972'
 ht-degree: 89%
 
 ---
@@ -168,6 +168,7 @@ ht-degree: 89%
    + [Module externe Content Package Maven](/help/implementing/developing/tools/maven-plugin.md)
    + [Outil AEM Repo](/help/implementing/developing/tools/repo-tool.md)
    + [Utilisation de CRXDE Lite ](/help/implementing/developing/tools/crxde.md)
+   + [Externalisateur de liens](/help/implementing/developing/tools/externalizer.md)
 + Personnalisation {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [Configuration de ContextHub](developing/personalization/configuring-contexthub.md)
