@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 5fd190b50f52a3182365a31e1539c5864f42afb4
+source-git-commit: d17583399b6792583e3e210005b62d360b91d05a
 workflow-type: tm+mt
-source-wordcount: '1641'
+source-wordcount: '1671'
 ht-degree: 4%
 
 ---
@@ -244,6 +244,7 @@ Maintenant que vous avez appris à modéliser votre structure et à créer du co
 
 ## Ressources supplémentaires {#additional-resources}
 
+* [Prise en main de AEM sans tête](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr)  - Une courte série de didacticiels vidéo présentant une vue d&#39;ensemble de l&#39;utilisation des fonctionnalités sans tête AEM, notamment la modélisation des données et GraphQL
 * [Utilisation de fragments](/help/assets/content-fragments/content-fragments.md)  de contenu : page de début des fragments de contenu
    * [Fragments de contenu dans l’explorateur](/help/assets/content-fragments/content-fragments-configuration-browser.md)  de configuration - activez la fonctionnalité Fragment de contenu dans l’explorateur de configuration.
    * [Modèles](/help/assets/content-fragments/content-fragments-models.md)  de fragment de contenu - création et modification de modèles de fragment de contenu
