@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '3087'
 ht-degree: 4%
@@ -19,7 +19,7 @@ ht-degree: 4%
 >
 >TRAVAUX EN COURS - La création de ce document est en cours et ne doit pas être comprise comme complète ou définitive ni être utilisée à des fins de production.
 
-Dans cette partie du [Parcours de développement AEM sans tête,](#overview.md) découvrez ce qui est nécessaire pour démarrer votre propre projet avec AEM sans tête.
+Dans cette partie du [Parcours de développement AEM sans tête,](overview.md) découvrez ce qui est nécessaire pour démarrer votre propre projet avec AEM sans tête.
 
 ## L&#39;histoire jusqu&#39;à présent {#story-so-far}
 
