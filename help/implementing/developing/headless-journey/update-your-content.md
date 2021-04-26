@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 6097cb8961f604ec2d3f5f6d602c927efc7344d5
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 3%
@@ -19,7 +19,7 @@ ht-degree: 3%
 >
 >TRAVAUX EN COURS - La création de ce document est en cours et ne doit pas être comprise comme complète ou définitive ni être utilisée à des fins de production.
 
-Dans cette partie du [AEM Parcours de développement sans affichage,](#overview.md) apprenez à utiliser l’API REST pour accéder au contenu de vos fragments de contenu et le mettre à jour.
+Dans cette partie du [AEM Parcours de développement sans affichage,](overview.md) apprenez à utiliser l’API REST pour accéder au contenu de vos fragments de contenu et le mettre à jour.
 
 ## L&#39;histoire jusqu&#39;à présent {#story-so-far}
 
