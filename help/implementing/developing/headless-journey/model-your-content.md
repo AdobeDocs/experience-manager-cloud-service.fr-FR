@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: d17583399b6792583e3e210005b62d360b91d05a
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '1671'
 ht-degree: 4%
@@ -19,7 +19,7 @@ ht-degree: 4%
 >
 >TRAVAUX EN COURS - La création de ce document est en cours et ne doit pas être comprise comme complète ou définitive ni être utilisée à des fins de production.
 
-Dans cette partie du [Parcours de développement AEM sans tête](#overview.md), vous pouvez apprendre à modéliser votre structure de contenu. Ensuite, réalisez cette structure pour Adobe Experience Manager (AEM) à l’aide de modèles de fragments de contenu et de fragments de contenu, pour réutilisation entre canaux.
+Dans cette partie du [Parcours de développement AEM sans tête](overview.md), vous pouvez apprendre à modéliser votre structure de contenu. Ensuite, réalisez cette structure pour Adobe Experience Manager (AEM) à l’aide de modèles de fragments de contenu et de fragments de contenu, pour réutilisation entre canaux.
 
 ## L&#39;histoire jusqu&#39;à présent {#story-so-far}
 
