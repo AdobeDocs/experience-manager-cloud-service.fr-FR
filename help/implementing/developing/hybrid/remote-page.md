@@ -1,11 +1,12 @@
 ---
 title: Composant RemotePage
 description: Le composant RemotePage est un composant de page personnalisé permettant de modifier les SPA React distantes dans AEM.
+exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
 translation-type: tm+mt
-source-git-commit: 9a1048f6d185d2d3229bab05b8e827845444d11c
+source-git-commit: a46a2b3951d2fcc8468b29b4fa2c1faada643243
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 74%
+source-wordcount: '340'
+ht-degree: 53%
 
 ---
 
@@ -28,10 +29,15 @@ Voir l&#39;article [Modification d&#39;un SPA externe dans AEM](editing-external
 * Activer CORS en développement
 * Configurer l’URL distante dans les propriétés de page
 * Effectuer le rendu de la SPA dans AEM
+* L’application Web doit utiliser un manifeste de fichier de bundler comme l’un des suivants et exposer un fichier `asset-manifest.json` à la racine du domaine qui liste dans un `entrypoints property` tous les fichiers CSS et JS à charger :
+   * https://github.com/shellscape/webpack-manifest-plugin
+   * https://github.com/webdeveric/webpack-assets-manifest
+   * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
+      ![exemple de propriété entrypoints](assets/asset-manifest-entrypoints.png)
+* L&#39;application doit être capable d&#39;initialiser dans un `<div id="root"></div>` sous l&#39;élément `body`. Si une autre annotation est attendue pour l’application à instancier, elle doit être ajustée en conséquence dans les scripts HTL du composant proxy qui possède une balise `sling:resourceSuperType="spa-project-core/components/remotepage`.
 
 ## Restrictions {#limitations}
 
-* L’implémentation actuelle du composant RemotePage ne prend en charge que les applications React distantes.
 * La page CSS interne définie dans le fichier HTML racine de l’application ainsi que la page CSS intégrée sur le nœud DOM racine ne seront pas disponibles lors du rendu à distance dans AEM.
 
 ## Détails techniques {#technical-details}
