@@ -5,10 +5,10 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 6097cb8961f604ec2d3f5f6d602c927efc7344d5
+source-git-commit: d17583399b6792583e3e210005b62d360b91d05a
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 53%
+source-wordcount: '764'
+ht-degree: 52%
 
 ---
 
@@ -130,6 +130,7 @@ Pour faciliter la conception et le développement de vos modèles de fragments d
 
 ## Ressources supplémentaires {#additional-resources}
 
+* [Prise en main de AEM sans tête](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr)  - Une courte série de didacticiels vidéo présentant une vue d&#39;ensemble de l&#39;utilisation des fonctionnalités sans tête AEM, notamment la modélisation des données et GraphQL
 * [GraphQL.org](https://graphql.org)
    * [Schémas](https://graphql.org/learn/schema/)
    * [Bibliothèques Java GraphQL](https://graphql.org/code/#java)
