@@ -1,18 +1,26 @@
 ---
 title: Utilisation de l’outil de mappage des utilisateurs
 description: Utilisation de l’outil de mappage des utilisateurs
+exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
 translation-type: tm+mt
-source-git-commit: 7c7ae680932849cf2ed0be3dc10618d55acc8366
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 62%
+source-wordcount: '1185'
+ht-degree: 58%
 
 ---
-
 
 # Utilisation de l’outil de mappage des utilisateurs {#user-mapping-tool}
 
 ## Présentation {#overview}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_usermapping"
+>title="Outil Mappage utilisateur"
+>abstract="L’outil de transfert de contenu vous permet de déplacer les utilisateurs et les groupes de votre système AEM existant vers AEM en tant que Cloud Service. Les utilisateurs et les groupes existants doivent être mappés à leurs ID IMS pour éviter que des utilisateurs et des groupes de duplicata ne soient associés à l’instance d’auteur du Cloud Service."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="Considérations importantes pour l’utilisation de l’outil de mappage des utilisateurs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool" text="Utilisation de l’outil de mappage des utilisateurs"
+
 
 Dans le cadre du parcours de transition vers Adobe Experience Manager (AEM) as a Cloud Service, vous devez déplacer les utilisateurs et les groupes du système AEM existant vers AEM as a Cloud Service. Cette opération fait appel à l’outil de transfert de contenu.
 
@@ -102,4 +110,3 @@ L’outil de mappage des utilisateurs est intégré à l’outil de transfert de
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
 1. Pour exécuter la phase d’extraction, reportez-vous à la section [Exécution de l’outil de transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool).
-
