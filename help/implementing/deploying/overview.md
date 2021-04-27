@@ -1,13 +1,13 @@
 ---
 title: Déploiement sur AEM as a Cloud Service
 description: 'Déploiement sur AEM as a Cloud Service '
-feature: Deploying
+feature: Déploiement
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 translation-type: tm+mt
-source-git-commit: 9ff68805d4deabaf637cee9ab81ba9b366a8e762
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '3266'
-ht-degree: 96%
+source-wordcount: '3334'
+ht-degree: 94%
 
 ---
 
@@ -163,6 +163,12 @@ Pour plus d’informations sur repoinit, voir la [documentation Sling](https://s
 above appears to be internal, to confirm with Brian -->
 
 ### Utilisation ponctuelle du gestionnaire de modules pour les modules de contenu modifiable {#package-manager-oneoffs-for-mutable-content-packages}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_packagemanager"
+>title="Package Manager - Migration des packages de contenu mutables"
+>abstract="Explorez l’utilisation du gestionnaire de packages pour les cas d’utilisation où un package de contenu doit être installé comme &quot;un seul&quot;, ce qui inclut l’importation de contenu spécifique de la production vers l’évaluation afin de déboguer un problème de production, le transfert de petit package de contenu de l’environnement sur site vers les environnements AEM Cloud, etc."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="Outil de transfert de contenu"
 
 Il existe des cas d’utilisation où un module de contenu doit être installé de façon ponctuelle. Par exemple, pour déboguer un problème de production, vous devez importer du contenu spécifique de la production vers l’évaluation. Pour ces scénarios, le gestionnaire de modules peut être utilisé dans les environnements AEM as a Cloud Service.
 
