@@ -1,16 +1,23 @@
 ---
 title: Présentation de l’outil de transfert de contenu
 description: Présentation de l’outil de transfert de contenu
+exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
 translation-type: tm+mt
-source-git-commit: 60e236eadea8983fcf087b94ce908e55421214ae
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 100%
+source-wordcount: '813'
+ht-degree: 84%
 
 ---
 
-
 # Présentation {#overview-content-transfer-tool}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_overview"
+>title="Présentation"
+>abstract="Outil de transfert de contenu est un outil développé par Adobe qui peut être utilisé pour déplacer le contenu existant d’une instance d’AEM source (sur site ou AMS) vers l’instance d’Cloud Service AEM cible. Cet outil transfère également automatiquement les entités principales (utilisateurs ou groupes)."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="Processus d&#39;Extraction"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="Processus d&#39;importation"
 
 Développé par Adobe, l’outil de transfert de contenu est utilisé pour déplacer du contenu existant entre une instance AEM source (on-premise ou AMS) et une instance AEM Cloud Service cible.
 
@@ -49,6 +56,12 @@ Lors de la phase d’ingestion, pour appliquer le contenu différentiel en plus 
 
 
 ## Conseils et bonnes pratiques {#best-practices}
+
+>id=&quot;aemcloud_ctt_guidelines&quot;
+>title=&quot;Lignes directrices et bonnes pratiques&quot;
+>abstract=&quot;Consultez les instructions et les meilleures pratiques relatives à l’utilisation de l’outil de transfert de contenu, y compris les tâches de nettoyage des révisions, les considérations relatives à l’espace disque, etc.&quot;
+>additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs&quot; text=&quot;Considérations importantes concernant l’utilisation de l’outil de transfert de contenu&quot;
+>additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations&quot; text=&quot;Considérations importantes concernant l’utilisation de l’outil de mappage utilisateur&quot;
 
 Consultez la section ci-dessous pour accéder aux conseils et connaître les bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu :
 
