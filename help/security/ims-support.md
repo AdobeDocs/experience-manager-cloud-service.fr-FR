@@ -3,10 +3,10 @@ title: Prise en charge IMS d’Adobe Experience Manager as a Cloud Service
 description: Prise en charge IMS d’Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 translation-type: tm+mt
-source-git-commit: 460cefde9a203b4237aedf01b01e026d37eadfe6
+source-git-commit: 75071cb1793b9b670ebbc029bf9fb41f4de119f9
 workflow-type: tm+mt
-source-wordcount: '1952'
-ht-degree: 95%
+source-wordcount: '2009'
+ht-degree: 92%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 95%
 * AEM as a Cloud Service inclut la prise en charge des instances AEM et de l’authentification basée sur Adobe IMS (Identity Management System) par Admin Console.
 * Admin Console permet aux administrateurs de gérer de manière centralisée tous les utilisateurs d’Experience Cloud.
 * Les utilisateurs et les groupes peuvent être affectés aux profils de produit associés à une instance AEM as a Cloud Service, ce qui leur permet de se connecter à cette instance.
+
+>[!TIP]
+>
+>Consultez notre cours Experience League [Configurer l&#39;accès à l&#39;AEM pour les administrateurs](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) pour découvrir comment les utilisateurs s&#39;authentifient à l&#39;aide de l&#39;Adobe IMS pour AEM en tant que Cloud Service et comment les utilisateurs, groupes d&#39;utilisateurs et Profils de produits Adobes IMS sont utilisés pour contrôler l&#39;accès à l&#39;AEM et à ses fonctionnalités. Adobe ID requis.
 
 ## Principales caractéristiques {#key-highlights}
 
