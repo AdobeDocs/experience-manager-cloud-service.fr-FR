@@ -1,14 +1,15 @@
 ---
-title: Balisage automatique des ressources grâce aux balises générées par l’IA
-description: Balisez des ressources grâce aux services d’intelligence artificielle en appliquant des balises commerciales contextuelles et descriptives à l’aide du service [!DNL Adobe Sensei] .
+title: Balisage automatique des ressources avec  [!DNL Adobe Sensei] service intelligent
+description: Balisez les ressources à l’aide d’un service artificiellement intelligent qui applique des balises commerciales contextuelles et descriptives.
 contentOwner: AG
-feature: Smart Tags,Tagging
+feature: Balises actives, balisage
 role: Administrator,Business Practitioner
+exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
 workflow-type: tm+mt
-source-wordcount: '2806'
-ht-degree: 87%
+source-wordcount: '2709'
+ht-degree: 84%
 
 ---
 
@@ -19,21 +20,19 @@ Les entreprises qui traitent des ressources numériques utilisent de plus en plu
 
 Comparé aux vocabulaires des langages naturels, le balisage basé sur la taxonomie métier aide à aligner les ressources avec les activités d’une entreprise et à veiller à ce que les mieux adaptées apparaissent dans les recherches. Par exemple, un constructeur de voitures peut baliser les images de voitures avec les noms de modèles afin de n’afficher que les images appropriées lors de recherches servant à concevoir une campagne de promotion.
 
-En arrière-plan, la fonctionnalité utilise la structure artificiellement intelligente de [Adobe Sensei](https://www.adobe.com/fr/sensei/experience-cloud-artificial-intelligence.html) pour former son algorithme de reconnaissance d’image à votre structure de balises et à votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes.
+En arrière-plan, la fonctionnalité utilise la structure artificiellement intelligente de [Adobe Sensei](https://www.adobe.com/fr/sensei/experience-cloud-artificial-intelligence.html) pour former son algorithme de reconnaissance d’image à votre structure de balises et à votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. Les nouveaux déploiements d’[!DNL Experience Manager Assets] sont intégrés avec [!DNL Adobe Developer Console] par défaut. Il est ainsi possible de configurer plus rapidement la fonctionnalité des balises intelligentes. Sur les déploiements plus anciens, les administrateurs peuvent [configurer manuellement l’intégration des balises intelligentes](/help/assets/smart-tags-configuration.md#aio-integration).
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-Vous pouvez baliser les types de ressources suivants :
-
-* **Images** : de nombreux formats d’images peuvent être balisés à l’aide du service de contenu dynamique Adobe Sensei. Vous pouvez [créer un modèle de formation](#train-model) puis [appliquer des balises intelligentes](#tag-assets) aux images.
-* **Ressources vidéo** : le balisage vidéo est activé par défaut dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. [Les vidéos sont automatiquement ](/help/assets/smart-tags-video-assets.md) marquées lorsque vous téléchargez de nouvelles vidéos ou retraitez des vidéos existantes.
-* **Ressources textuelles** : [!DNL Experience Manager Assets] balise automatiquement les ressources textuelles compatibles lors du chargement. En savoir plus sur [le balisage des ressources textuelles](#smart-tag-text-based-assets).
-
 ## Types de ressource pris en charge {#smart-tags-supported-file-formats}
 
-Les balises intelligentes sont appliquées aux types de fichiers pris en charge qui génèrent des rendus aux formats JPG et PNG. Cette fonctionnalité est prise en charge pour les types de ressources suivants :
+Vous pouvez baliser les types de ressources suivants :
+
+* **Images** : de nombreux formats d’images peuvent être balisés à l’aide du service de contenu dynamique Adobe Sensei. Vous pouvez [créer un modèle de formation](#train-model) puis [appliquer des balises intelligentes](#tag-assets) aux images. Les balises intelligentes sont appliquées aux types de fichiers pris en charge qui génèrent des rendus aux formats JPG et PNG.
+* **Ressources textuelles** : [!DNL Experience Manager Assets] balise automatiquement les ressources textuelles compatibles lors du chargement. En savoir plus sur [le balisage des ressources textuelles](#smart-tag-text-based-assets).
+* **Ressources vidéo** : le balisage vidéo est activé par défaut dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. [Les vidéos sont automatiquement ](/help/assets/smart-tags-video-assets.md) marquées lorsque vous téléchargez de nouvelles vidéos ou retraitez des vidéos existantes.
 
 | Images (types MIME) | Ressources textuelles (formats de fichier) | Fichiers vidéo (formats et codecs de fichier) |
 |----|-----|------|
@@ -58,15 +57,10 @@ Les balises intelligentes sont appliquées aux types de fichiers pris en charge 
 
 [!DNL Experience Manager] ajoute automatiquement les balises intelligentes aux ressources textuelles et vidéo par défaut. Pour ajouter automatiquement des balises intelligentes aux images, suivez la procédure ci-dessous.
 
-* [Intégration d’ [!DNL Adobe Experience Manager] à Adobe Developer Console](#integrate-aem-with-aio).
 * [Comprendre les directives et les modèles relatifs aux balises](#understand-tag-models-guidelines).
 * [Entraîner le modèle](#train-model).
 * [Baliser vos ressources numériques](#tag-assets).
 * [Gérer les balises et les recherches](#manage-smart-tags-and-searches).
-
->[!TIP]
->
->Les balises intelligentes ne s’appliquent qu’aux clients [!DNL Adobe Experience Manager Assets]. Elles sont disponibles à l’achat sous la forme d’un module complémentaire de [!DNL Experience Manager].
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
@@ -75,14 +69,6 @@ Les balises intelligentes sont appliquées aux types de fichiers pris en charge 
 Les ressources textuelles prises en charge sont automatiquement balisées par [!DNL Experience Manager Assets] lors du chargement. Ce paramètre est activé par défaut. L’efficacité des balises intelligentes ne dépend pas de la quantité de texte contenu dans la ressource, mais des mots-clés ou entités pertinents présents dans le texte de la ressource. Pour les ressources textuelles, les balises intelligentes sont les mots-clés qui apparaissent dans le texte, sans être nécessairement ceux qui décrivent le mieux la ressource. Pour les ressources prises en charge, [!DNL Experience Manager] extrait déjà le texte, qui est ensuite indexé et utilisé pour la recherche des ressources. Cependant, les balises intelligentes basées sur les mots-clés dans le texte fournissent des fonctionnalités de recherche dédiées, structurées et de priorité plus élevée, utilisées pour améliorer la recherche de ressources par rapport à un index de recherche complet.
 
 En comparaison, pour les images et les vidéos, les balises intelligentes sont activées en fonction de certains aspects visuels.
-
-## Intégration dֺ’[!DNL Experience Manager] à Adobe Developer Console {#integrate-aem-with-aio}
-
->[!IMPORTANT]
->
->Les nouveaux déploiements d’[!DNL Experience Manager Assets] sont intégrés avec [!DNL Adobe Developer Console] par défaut. Il est ainsi possible de configurer plus rapidement la fonctionnalité des balises intelligentes. Sur les déploiements plus anciens, les administrateurs peuvent [configurer manuellement l’intégration des balises intelligentes](/help/assets/smart-tags-configuration.md#aio-integration).
-
-Vous pouvez intégrer [!DNL Adobe Experience Manager] avec les balises intelligentes à l’aide d’[!DNL Adobe Developer Console]. Utilisez cette configuration pour accéder au service de balises intelligentes depuis [!DNL Experience Manager]. Voir [configurer [!DNL Experience Manager] pour baliser les actifs](smart-tags-configuration.md) pour les tâches de configuration des balises actives. En arrière-plan, le serveur [!DNL Experience Manager] authentifie vos informations d’identification du service auprès de la passerelle Adobe Developer Console avant de transférer votre demande au service de balises intelligentes.
 
 ## Comprendre les directives et les modèles relatifs aux balises {#understand-tag-models-guidelines}
 
@@ -155,7 +141,7 @@ Pour créer et entraîner un modèle pour vos balises spécifiques à votre entr
 
 Pour vérifier que le service de balises intelligentes est entraîné sur vos balises dans la série de ressources d’entraînement, examinez le rapport de workflow d’entraînement dans la console Rapports.
 
-1. Dans l’interface [!DNL Experience Manager], accédez à [!UICONTROL Outils] > [!UICONTROL Ressources] > **[!UICONTROL Rapports]**.
+1. Dans l&#39;interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
 1. Dans la page **[!UICONTROL Rapports de ressources]**, cliquez sur **[!UICONTROL Créer]**.
 1. Sélectionnez le rapport **[!UICONTROL Entraînement des balises intelligentes]**, puis cliquez sur **[!UICONTROL Suivant]** dans la barre d’outils.
 1. Indiquez un titre et une description pour le rapport. Sous **[!UICONTROL Planifier le rapport]**, laissez l’option **[!UICONTROL Maintenant]** sélectionnée. Si vous souhaitez planifier le rapport pour une date ultérieure, sélectionnez **[!UICONTROL Plus tard]** et spécifiez une date et une heure. Ensuite, cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
@@ -165,7 +151,7 @@ Pour vérifier que le service de balises intelligentes est entraîné sur vos ba
 
 ## Balisage des ressources {#tag-assets}
 
-Après avoir entraîné le service de balises intelligentes, vous pouvez déclencher le workflow de balisage pour appliquer automatiquement les balises appropriées sur une autre série de ressources similaire. Vous pouvez appliquer le workflow de balisage périodiquement ou en fonction des besoins, aussi bien aux ressources qu’aux dossiers.
+Après avoir formé le service Balises dynamiques, vous pouvez déclencher le processus de balisage pour appliquer automatiquement des balises à un autre ensemble de ressources. Vous pouvez appliquer le processus de balisage à la demande ou programmer son exécution périodique. aussi bien aux ressources qu’aux dossiers.
 
 ### Balisage des ressources à l’aide de la console de workflow {#tagging-assets-from-the-workflow-console}
 
@@ -224,7 +210,7 @@ Pour modérer les balises intelligentes de vos ressources :
 
 1. Accédez à la page [!UICONTROL Propriétés] de la ressource. Remarquez que la balise que vous avez convertie se voit attribuer une pertinence élevée et apparaît donc plus haut dans les résultats de la recherche.
 
-### Comprendre les résultats de recherche AEM avec les balises dynamiques {#understandsearch}
+### Comprendre les résultats de recherche AEM avec les balises dynamiques {#understand-search}
 
 Par défaut, la recherche AEM associe les termes de recherche avec une clause `AND`. L’utilisation de balises intelligentes ne modifie pas ce comportement par défaut. L’utilisation de balises actives ajoute une clause `OR` pour rechercher les termes recherchés dans les balises actives appliquées. Par exemple, pour la recherche de `woman running`. Les ressources avec les mots-clés `woman` ou `running` uniquement dans les métadonnées n’apparaissent pas dans les résultats de recherche par défaut. Toutefois, une ressource balisée avec `woman` ou `running` à l’aide de balises intelligentes apparaît dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de :
 
