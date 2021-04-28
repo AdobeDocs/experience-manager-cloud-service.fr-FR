@@ -3,14 +3,14 @@ title: Meilleures pratiques MSM
 description: Découvrez les meilleures pratiques compilées par les équipes d'ingénierie et de conseil en Adobe pour vous aider à maîtriser les opérations liées à l'AEM Gestionnaire de sites multiples.
 feature: Multi Site Manager
 role: Administrator
+exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 184de9c1391ade3abbf2c6d73f09a324e6fa7e3e
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1436'
 ht-degree: 33%
 
 ---
-
 
 # Meilleures pratiques MSM {#msm-best-practices}
 
@@ -37,6 +37,10 @@ Les avantages de l’utilisation d’une configuration de plan directeur sont qu
 Dans le cas où une configuration de plan directeur n&#39;est pas référencée, les déploiements ne peuvent être lancés qu&#39;à partir des Live Copies elles-mêmes, extrayant essentiellement le contenu de la source.
 
 Lors de la création d’un site avec Live Copy, il est avantageux de créer des configurations de plan afin de garantir la disponibilité de l’ensemble complet des fonctionnalités MSM.
+
+>[!NOTE]
+>
+> Notez que les CUG de l&#39;onglet Autorisations ne peuvent pas être déployés sur des Live Copies à partir de Blueprints. Veuillez en tenir compte lors de la configuration de Live Copy.
 
 ## Composants et synchronisation de conteneur {#components-and-container-synchronization}
 
