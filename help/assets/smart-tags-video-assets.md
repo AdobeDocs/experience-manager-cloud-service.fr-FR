@@ -1,16 +1,16 @@
 ---
 title: Balisage intelligent de vos ressources vidéo
 description: Experience Manager ajoute automatiquement des balises intelligentes contextuelles et descriptives aux vidéos en utilisant [!DNL Adobe Sensei].
-feature: Smart Tags,Tagging
+feature: Balises actives, balisage
 role: Administrator,Business Practitioner
+exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1186'
 ht-degree: 99%
 
 ---
-
 
 # Balisage intelligent de vos ressources vidéo {#video-smart-tags}
 
@@ -64,7 +64,7 @@ Pour rechercher des ressources vidéo en fonction des balises intelligentes gén
 
 Les résultats de la recherche affichent les ressources vidéo en fonction de la balise spécifiée.
 
-Les résultats de la recherche conjuguent les ressources vidéo avec des mots-clés recherchés dans les métadonnées et les ressources vidéo associées à des balises intelligentes avec les mots-clés recherchés. Cependant, les résultats de recherche qui correspondent à tous les termes de recherche dans les champs de métadonnées s’affichent en premier, suivis des résultats correspondant à l’un des termes de recherche des balises intelligentes. Pour plus d’informations, voir [Comprendre les résultats de recherches [!DNL Experience Manager] avec des balises intelligentes](smart-tags.md#understandsearch).
+Les résultats de la recherche conjuguent les ressources vidéo avec des mots-clés recherchés dans les métadonnées et les ressources vidéo associées à des balises intelligentes avec les mots-clés recherchés. Cependant, les résultats de recherche qui correspondent à tous les termes de recherche dans les champs de métadonnées s’affichent en premier, suivis des résultats correspondant à l’un des termes de recherche des balises intelligentes. Pour plus d’informations, voir [Comprendre les résultats de recherches [!DNL Experience Manager] avec des balises intelligentes](smart-tags.md#understand-search).
 
 ## Modération des balises intelligentes des vidéos {#moderate-video-smart-tags}
 
