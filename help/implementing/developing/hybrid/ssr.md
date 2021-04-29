@@ -1,14 +1,14 @@
 ---
 title: SPA et rendu côté serveur
 description: L’utilisation du rendu côté serveur dans votre SPA peut accélérer le chargement initial de la page, puis transmettre plus de rendu au client.
+exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
 translation-type: tm+mt
-source-git-commit: fc61f13fbf976c43fcdd6921178a9bd4e82fc68d
+source-git-commit: 4965bd30c02536efb81a26fff8da6e5f75dbfae4
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 97%
+source-wordcount: '1502'
+ht-degree: 92%
 
 ---
-
 
 # SPA et rendu côté serveur {#spa-and-server-side-rendering}
 
@@ -45,7 +45,9 @@ Les sections suivantes décrivent comment Adobe I/O Runtime peut être utilisé 
 
 >[!NOTE]
 >
->Adobe recommande une instance Adobe I/O Runtime distincte pour chaque environnement AEM (création, publication, évaluation, etc.).
+>Adobe recommande un espace de travail Adobe I/O Runtime distinct par environnement (stage, prod, testing, etc.). Cela permet de créer des modèles de cycle de vie de développement de systèmes (SDLC) standard avec différentes versions d’une application unique déployée sur différents environnements. Pour plus d&#39;informations, consultez le document [CI/CD pour Project Firefly Applications](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md).
+>
+>Un espace de travail distinct n’est pas nécessaire par instance (auteur, publication), sauf s’il existe des différences dans l’implémentation d’exécution par type d’instance.
 
 ## Configuration du moteur de rendu distant {#remote-content-renderer-configuration}
 
