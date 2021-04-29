@@ -1,14 +1,14 @@
 ---
 title: Utilisation de conditions de masquage
 description: Des conditions de masquage peuvent être utilisées pour déterminer si une ressource de composant est rendue ou non.
+exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
 translation-type: tm+mt
-source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
+source-git-commit: fa3280defb2a97954c5ab1b70e7600382e370606
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 100%
 
 ---
-
 
 # Utilisation de conditions de masquage {#using-hide-conditions}
 
@@ -72,7 +72,7 @@ Si un auteur de modèles choisit de désactiver l’option des pages enfants, un
 
    ![Évaluation de la condition de masquage](assets/hide-conditions-evaluation.png)
 
-1. La valeur de `disableChildren` est extraite de la configuration de conception et l’expression `${cdDesign.disableChildren}` est évaluée sur `false`, ce qui signifie que le rendu de l’option ne sera pas effectué dans le cadre du composant.
+1. La valeur de `disableChildren` est extraite de la configuration de conception et l’expression `${cqDesign.disableChildren}` est évaluée sur `false`, ce qui signifie que le rendu de l’option ne sera pas effectué dans le cadre du composant.
 
 1. L’option **Pages enfants** n’est plus rendue pour l’auteur de pages lors de l’utilisation du composant de liste.
 
