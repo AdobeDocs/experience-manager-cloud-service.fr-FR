@@ -4,14 +4,14 @@ description: Dans cette partie du Parcours AEM de développement sans tête, app
 hide: true
 hidefromtoc: true
 index: false
+exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: dc4f1e916620127ebf068fdcc6359041b49891cf
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1039'
 ht-degree: 2%
 
 ---
-
 
 # Comment vivre avec votre application sans en-tête {#go-live}
 
@@ -63,6 +63,8 @@ Le modèle de déploiement le plus courant avec AEM applications sans en-tête c
 3. Configuration de la mise en cache et de l’évolutivité
 
 ## Déploiement en environnement de production {#deploy-to-production}
+
+Une fois que vous avez testé tout votre code et votre contenu localement, vous êtes maintenant prêt à commencer un déploiement de production avec AEM.
 
 ### Structure du modèle par rapport à la sortie GraphQL {#structure-vs-output}
 
