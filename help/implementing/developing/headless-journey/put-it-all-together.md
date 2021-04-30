@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 254fb9dd-36c8-43ce-aaea-ceb4d079503d
 translation-type: tm+mt
-source-git-commit: dc4f1e916620127ebf068fdcc6359041b49891cf
+source-git-commit: e8eb9d2c96d24601e50c48f6846a8c8bac8b0252
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ Cet article s&#39;appuie sur ces principes fondamentaux pour vous aider à prép
 
 ## Intention {#objective}
 
+* Comprendre quel est le processus de développement local pour AEM
 * Installez AEM SDK pour obtenir un environnement d’exécution de développement local que vous pouvez utiliser pour tester votre contenu sur
-* Découvrez les outils de développement dont vous avez besoin
-* Testez votre code et votre contenu localement avant de passer en direct
+* Découvrez les outils de développement dont vous avez besoin pour travailler en dehors de l&#39;exécution de développement local
 
 ## Processus de développement local {#the-local-development-workflow}
 
