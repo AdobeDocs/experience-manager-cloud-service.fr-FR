@@ -3,9 +3,9 @@ title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 translation-type: tm+mt
-source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
+source-git-commit: ca03de9095a5b85bd93edba93097356fbcd2e9c8
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2675'
 ht-degree: 73%
 
 ---
@@ -14,11 +14,12 @@ ht-degree: 73%
 
 ## Points importants concernant l’utilisation de l’outil de transfert de contenu {#pre-reqs}
 
->id=&quot;aemcloud_ctt_prereqs&quot;
->title=&quot;Considérations importantes concernant l’utilisation de l’outil de transfert de contenu&quot;
->abstract=&quot;Examinez les points importants à prendre en compte pour utiliser l’outil de transfert de contenu, y compris les versions Java et AEM, les types de banque de données pris en charge, les groupes d’utilisateurs et plus encore.&quot;
->additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices&quot; text=&quot;Bonnes pratiques et directives&quot;
->additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#availability&quot; text=&quot;Outil de transfert de contenu téléchargé&quot;
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_prereqs"
+>title="Remarques importantes concernant l’utilisation de l’outil de transfert de contenu"
+>abstract="Examinez les points importants à prendre en compte pour utiliser l’outil de transfert de contenu, notamment les versions Java et AEM, les types de banque de données pris en charge, les groupes d’utilisateurs et bien plus encore."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="Bonnes pratiques et directives"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#availability" text="Téléchargement de l’outil de transfert de contenu"
 
 Consultez la section ci-dessous afin de comprendre les points importants à prendre en compte pour l’exécution de l’outil de transfert de contenu :
 
