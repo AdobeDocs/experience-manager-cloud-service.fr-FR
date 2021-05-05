@@ -4,14 +4,14 @@ description: Dans cette partie du Parcours de développement AEM sans fil, déco
 hide: true
 hidefromtoc: true
 index: false
+exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: 3d5ea8df4cefdb8c2bebe26333002a4680fa9fd4
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '327'
 ht-degree: 3%
 
 ---
-
 
 # Mise à jour de votre contenu via les API AEM Assets {#update-your-content}
 
@@ -23,12 +23,13 @@ Dans cette partie du [AEM Parcours de développement sans affichage,](overview.m
 
 ## L&#39;histoire jusqu&#39;à présent {#story-so-far}
 
-Dans le document précédent du parcours sans tête AEM, [Comment accéder à votre contenu par l&#39;intermédiaire des API de Diffusion AEM](access-your-content.md) vous avez appris à accéder à votre contenu sans tête par l&#39;intermédiaire de l&#39;API et vous devez maintenant :
+Dans le document précédent de l&#39;parcours sans tête AEM, [Comment accéder à votre contenu par l&#39;intermédiaire des API de Diffusion AEM](access-your-content.md) vous avez appris à accéder à votre contenu sans tête en AEM par l&#39;API GraphQL  et vous devez maintenant :
 
-* Découvrez ce qu&#39;est GraphQL et comment AEM API GraphQL fonctionne.
+* Avoir une bonne compréhension de GraphQL.
+* Découvrez comment fonctionne l’API AEM GraphQL.
 * Comprendre quelques exemples pratiques de requêtes.
 
-Cet article s’appuie sur ces principes de base pour vous aider à comprendre comment mettre à jour votre contenu sans en-tête existant dans AEM via l’API.
+Cet article s’appuie sur ces principes de base pour vous aider à comprendre comment mettre à jour votre contenu sans en-tête existant dans AEM via l’API REST.
 
 ## Intention {#objective}
 
@@ -44,7 +45,7 @@ Cet article s’appuie sur ces principes de base pour vous aider à comprendre c
 Maintenant que vous avez terminé cette partie du Parcours de développement AEM sans tête, vous devez :
 
 * Comprenez l’API HTTP AEM Assets.
-* Découvrez comment les fragments de contenu sont pris en charge dans l’API.
+* Découvrez comment les fragments de contenu sont pris en charge dans cette API.
 * Apprenez à utiliser un exemple de code et savez comment l’API fonctionne en pratique.
 
 Vous devriez continuer votre parcours sans tête AEM en examinant ensuite le document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) où vous apprendrez à prendre votre projet sans tête et à le préparer pour qu’il soit en direct.
