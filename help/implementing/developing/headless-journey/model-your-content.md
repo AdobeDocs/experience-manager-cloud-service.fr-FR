@@ -4,14 +4,14 @@ description: Dans cette partie du Parcours de développement AEM sans en-tête, 
 hide: true
 hidefromtoc: true
 index: false
+exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: 3d5ea8df4cefdb8c2bebe26333002a4680fa9fd4
 workflow-type: tm+mt
 source-wordcount: '1671'
 ht-degree: 4%
 
 ---
-
 
 # Comment modéliser votre contenu {#model-your-content}
 
@@ -51,7 +51,7 @@ Cet article s&#39;appuie sur ces principes de base pour vous permettre de compre
 
 ## Modélisation des données {#data-modeling}
 
-*C&#39;est un grand monde mauvais là-bas*.
+*C&#39;est un monde grand, mauvais là-bas*.
 
 Peut-être, peut-être pas, mais c&#39;est certainement un grand ***monde complexe*** et la modélisation des données est utilisée pour définir une représentation simplifiée d&#39;une très (très) petite sous-section, en utilisant l&#39;information spécifique nécessaire à un certain but.
 
@@ -244,10 +244,10 @@ Maintenant que vous avez appris à modéliser votre structure et à créer du co
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Prise en main de AEM sans tête](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr)  - Une courte série de didacticiels vidéo présentant une vue d&#39;ensemble de l&#39;utilisation des fonctionnalités sans tête AEM, notamment la modélisation des données et GraphQL
 * [Utilisation de fragments](/help/assets/content-fragments/content-fragments.md)  de contenu : page de début des fragments de contenu
    * [Fragments de contenu dans l’explorateur](/help/assets/content-fragments/content-fragments-configuration-browser.md)  de configuration - activez la fonctionnalité Fragment de contenu dans l’explorateur de configuration.
    * [Modèles](/help/assets/content-fragments/content-fragments-models.md)  de fragment de contenu - création et modification de modèles de fragment de contenu
    * [Gestion des fragments](/help/assets/content-fragments/content-fragments-managing.md)  de contenu - création et création de fragments de contenu ; cette page vous conduira à d&#39;autres sections détaillées
 * [AEM Schémas](/help/implementing/developing/headless-journey/access-your-content.md)  GraphQL - comment GraphQL réalise les modèles
 * [Exemple de structure de fragment de contenu](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
+* [Prise en main de AEM sans tête](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr)  - Une courte série de didacticiels vidéo présentant l&#39;utilisation des fonctionnalités sans tête AEM, y compris la modélisation des données et GraphQL
