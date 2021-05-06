@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 6e21c6ffe50d6c030873650e7dd26246dea76b59
+source-git-commit: 26bd32d88b04d107a24e5e601af6e01d309b8e0e
 workflow-type: tm+mt
-source-wordcount: '1473'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -140,14 +140,53 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 * Le champ de catégorie racine n’était pas affiché sous l’onglet Commerce dans les propriétés de page des pages de catégorie.
 
+
 ## Cloud Manager {#cloud-manager}
 
-Cette section décrit les Notes de mise à jour de Cloud Manager en AEM en tant que Cloud Service 2021.4.0.
+Cette section décrit les Notes de mise à jour de Cloud Manager dans AEM en tant que Cloud Service 2021.5.0 et 2021.4.0.
+
+### Date de publication {#release-date-cm-may}
+
+La date de publication de Cloud Manager en AEM Cloud Service 2021.5.0 est le 06 mai 2021.
+La prochaine version est prévue pour le 3 juin 2021.
+
+### Nouveautés {#what-is-new-may}
+
+* La règle de qualité PackageOverlaps détecte désormais les cas où le même package a été déployé plusieurs fois, c’est-à-dire dans plusieurs emplacements incorporés, dans le même jeu de packages déployé.
+
+* Le point de terminaison du référentiel dans l’API publique inclut désormais l’URL Git.
+
+* Le journal de déploiement téléchargé par un utilisateur de Cloud Manager sera plus instructif et comprendra désormais des détails sur les échecs et les scénarios de réussite.
+
+* Les échecs intermittents rencontrés lors de la publication du code à l&#39;Adobe git ont maintenant été résolus.
+
+* Le module complémentaire Commerce peut désormais être appliqué aux programmes Sandbox pendant le processus de modification du programme.
+
+* L’expérience Modifier le programme a été actualisée.
+
+* Le tableau Noms de domaine de la page Détails de l&#39;Environnement affiche jusqu&#39;à 250 noms de domaine par pagination.
+
+* L&#39;onglet Solutions des workflows de Programme d&#39;Ajoute et de Programme de modification affiche la solution, même si une seule solution est disponible pour le Programme.
+
+* Le message d’erreur dans le journal des étapes de génération lorsque la génération n’a pas produit de packages de contenu déployés n’était pas clair.
+
+### Correctifs {#bug-fixes-cm-may}
+
+* Il arrive que l’utilisateur voit un état &quot;principal&quot; vert en regard d’une Liste autorisée IP, même si cette configuration n’a pas été déployée.
+
+* Au lieu de supprimer les variables &quot;supprimées&quot;, l&#39;API des variables de pipeline les marquerait uniquement avec l&#39;état **DELETED**.
+
+* Certains problèmes de qualité du type de code ont eu une incidence incorrecte sur la cote de fiabilité.
+
+* Comme les domaines génériques ne sont pas pris en charge, l’interface utilisateur empêche l’utilisateur d’envoyer un domaine générique.
+
+* Lorsqu’une exécution de pipeline a été démarrée entre minuit et 1h heure UTC, la version d’artefact générée par Cloud Manager n’était pas garantie supérieure à une version créée le jour précédent.
+
+* Lors de la configuration du programme Sandbox, une fois que le projet avec un exemple de code a été créé, Gérer Git s&#39;affiche comme un lien à partir de la carte de héros dans la page Aperçu.
 
 ### Date de publication {#release-date-cm-april}
 
 La date de publication de Cloud Manager en tant que Cloud Service 2021.4.0 est le 08 avril 2021.
-La prochaine version est prévue pour le 6 mai 2021.
 
 ### Nouveautés {#what-is-new-april}
 
