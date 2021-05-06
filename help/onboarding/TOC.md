@@ -6,9 +6,9 @@ user-guide-description: Ce guide résume la procédure à suivre pour commencer 
 feature: Déploiement
 role: Architect, Developer
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 54c68264dfc900604bbddace09bb8986b4fa4010
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '677'
 ht-degree: 92%
 
 ---
@@ -78,7 +78,8 @@ ht-degree: 92%
       + [Suppression d’une liste d’adresses IP autorisées](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html?lang=fr)
       + [Contrôle du statut d’une liste d’adresses IP autorisées](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html?lang=fr)
    + Notes de mise à jour de Cloud Manager {#release-notes-cloud-manager}
-      + [Notes de mise à jour de la version actuelle (2021.4.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Notes de mise à jour de la version actuelle (2021.5.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Notes de mise à jour de la version 2021.4.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
       + [Notes de mise à jour de la version 2021.3.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
       + [Notes de mise à jour de la version 2021.2.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
       + [Notes de mise à jour de la version 2021.1.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
