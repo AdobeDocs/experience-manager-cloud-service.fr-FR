@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: 49e2141cd55a2d277d0e1d2d622097fa5f08a464
+source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1752'
 ht-degree: 4%
 
 ---
@@ -212,6 +212,20 @@ Le type de données peut être configuré pour permettre aux auteurs de fragment
    * Modifier directement le fragment référencé.
    * Créer un fragment de contenu, en fonction du modèle approprié.
 
+### Création de modèles de fragments de contenu {#creating-content-fragment-models}
+
+Tout d’abord, les modèles de fragments de contenu sont activés pour votre site, cela se fait dans le navigateur de configuration :
+
+![Définir la configuration](assets/cfm-configuration.png)
+
+Les modèles de fragments de contenu peuvent ensuite être modélisés :
+
+![Modèle de fragment de contenu ](assets/cfm-model.png)
+
+>[!NOTE]
+>
+>Voir Utilisation de fragments de contenu.
+
 ## Utilisation du modèle pour créer du contenu avec des fragments de contenu {#use-content-to-author-content}
 
 Les fragments de contenu reposent toujours sur un modèle de fragment de contenu. Le modèle fournit la structure, le fragment contient le contenu.
@@ -231,6 +245,16 @@ Une fois votre fragment créé, vous pouvez l’ouvrir dans l’éditeur de frag
 * Modifiez les métadonnées.
 * Afficher l&#39;arborescence.
 * Prévisualisation de la représentation JSON.
+
+### Création de fragments de contenu {#creating-content-fragments}
+
+Après avoir sélectionné le modèle approprié, un fragment de contenu est ouvert pour modification dans l’éditeur de fragments de contenu :
+
+![Éditeur de fragment de contenu](assets/cfm-editor.png)
+
+>[!NOTE]
+>
+>Voir Utilisation de fragments de contenu.
 
 ## Prise en main avec quelques exemples {#getting-started-examples}
 
