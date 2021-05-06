@@ -1,16 +1,16 @@
 ---
 title: Modèles de fragment de contenu
 description: Découvrez comment les modèles de fragments de contenu constituent la base de votre contenu sans en-tête dans AEM et comment créer des fragments de contenu avec du contenu structuré.
-feature: Content Fragments
+feature: Fragments de contenu
 role: Business Practitioner
+exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 9e299db2d111087bbca05624276e212d457d76d1
 workflow-type: tm+mt
-source-wordcount: '2203'
-ht-degree: 94%
+source-wordcount: '2309'
+ht-degree: 90%
 
 ---
-
 
 # Modèles de fragment de contenu {#content-fragment-models}
 
@@ -61,7 +61,7 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
    >
    >Lorsqu’un champ est **obligatoire**, le **libellé** indiqué dans le volet de gauche est signalé par un astérisque (*****).
 
-   ![propriétés](assets/cfm-models-03.png)
+![propriétés](assets/cfm-models-03.png)
 
 1. **Pour ajouter un champ**
 
@@ -111,6 +111,7 @@ Une sélection de types de données est disponible pour la définition de votre 
    * Permet aux auteurs de fragments d’accéder à des zones de balises et de les sélectionner.
 * **Référence de contenu**
    * Fait référence à d’autres contenus, tous types confondus ; peut être utilisée pour [créer du contenu imbriqué](#using-references-to-form-nested-content).
+   * Si une image est référencée, vous pouvez choisir d’afficher une miniature.
 * **Référence du fragment**
    * Fait référence à d’autres fragments de contenu, tous types confondus ; peut être utilisée pour [créer du contenu imbriqué](#using-references-to-form-nested-content).
    * Le type de données peut être configuré pour permettre aux auteurs de fragments de procéder aux opérations suivantes :
@@ -121,6 +122,13 @@ Une sélection de types de données est disponible pour la définition de votre 
       * Permettre à AEM de stocker directement JSON que vous avez copié/collé à partir d’un autre service.
       * Le fichier JSON est transmis et généré sous la forme JSON dans GraphQL.
       * Inclut la mise en surbrillance de la syntaxe JSON, la saisie semi-automatique et la mise en surbrillance des erreurs dans l’éditeur de fragments de contenu.
+* **Espace réservé pour tabulation**
+   * Permet l’introduction d’onglets à utiliser lors de la modification du contenu du fragment de contenu.
+Cette valeur sera affichée sous la forme d’un séparateur dans l’éditeur de modèles, séparant les sections de la liste des types de données de contenu. Chaque instance représente le début d’un nouvel onglet.
+Dans l’éditeur de fragments, chaque instance s’affiche sous la forme d’un onglet.
+
+      >[!NOTE]
+      Ce type de données est uniquement utilisé pour le formatage, il est ignoré par le schéma GraphQL AEM.
 
 ## Propriétés {#properties}
 
@@ -165,6 +173,8 @@ Cocher la case Translatable (Traduisible) d’un champ de l’éditeur de modèl
    * S’assurer que le nom de la propriété du champ est ajouté à la configuration de traduction, contexte `/content/dam/<tenant>`, s’il n’est pas déjà présent.
    * Pour GraphQL : définir une propriété `<translatable>` du champ Fragment de contenu sur `yes` afin d’autoriser le filtre de requête GraphQL pour la sortie JSON avec du contenu traductible uniquement.
 
+* Voir **[Référence du contenu](#content-reference)** pour plus d’informations sur ce type de données spécifique et ses propriétés.
+
 * Voir la section **[Référence du fragment (Fragments imbriqués)](#fragment-reference-nested-fragments)** pour plus d’informations sur ce type de données spécifique et ses propriétés.
 
 ## Validation {#validation}
@@ -181,12 +191,6 @@ Différents types de données incluent désormais la possibilité de définir le
    * Seules peuvent être référencées les images d’une plage prédéfinie de largeur et/ou de hauteur (en pixels).
 * **Référence du fragment**
    * Test d’un modèle de fragment de contenu spécifique.
-
-<!--
-  * Only predefined file types can be referenced.
-  * No more than the predefined number of assets can be referenced. 
-  * No more than the predefined number of fragments can be referenced.
--->
 
 ## Utilisation de références pour former un contenu imbriqué {#using-references-to-form-nested-content}
 
@@ -219,12 +223,14 @@ La référence de contenu permet de générer du contenu à partir d’une autre
 
 Outre les propriétés standard, vous pouvez spécifier les éléments suivants :
 
-* Le **chemin racine** pour tout contenu référencé.
-* Types de contenu pouvant être référencés.
-* Limites relatives aux tailles de fichier.
-* Limitations des images.
-   <!-- Check screenshot - might need update -->
-   ![Référence de contenu](assets/cfm-content-reference.png)
+* Le **chemin racine** pour tout contenu référencé
+* Types de contenu pouvant être référencés
+* Limites relatives aux tailles de fichier
+* Si une image est référencée :
+   * Afficher la miniature
+   * Limitations de hauteur et de largeur
+
+![Référence de contenu](assets/cfm-content-reference.png)
 
 ### Référence du fragment (fragments imbriqués) {#fragment-reference-nested-fragments}
 
@@ -272,7 +278,6 @@ Indique un chemin racine pour tout fragment référencé.
 
    * **fragmentreferencecomposite** : permet à l’auteur du fragment de créer un composite en sélectionnant plusieurs fragments.
 
-   <!-- Check screenshot - might need update -->
    ![Référence du fragment](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
@@ -405,17 +410,3 @@ Vous pouvez modifier les **propriétés** d&#39;un modèle de fragment de conten
    * **Balises**
    * **Description**
    * **Télécharger l’image**
-
-<!--
-* **GraphQL**
-  
-  >[!CAUTION]
-  >
-  >These properties are only required for [development purposes](/help/assets/content-fragments/graphql-api-content-fragments.md#schema-generation).
-  >
-  >Updating these properties can impact dependent applications.
-
-  * **API Name**
-  * **Single Query Field Name**
-  * **Multiple Query Field Name**
--->
