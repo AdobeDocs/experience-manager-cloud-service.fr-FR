@@ -1,53 +1,55 @@
 ---
-title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.4.0
-description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.4.0
-feature: Release Information
-exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
+title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.5.0
+description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.5.0
+feature: Informations sur la version
 translation-type: tm+mt
-source-git-commit: 69694f2067c53667803d38bbf7bc752f3b3afac6
+source-git-commit: e2d4bb7649fad3ee172c6f049ecfdedc71417ee2
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 18%
+source-wordcount: '362'
+ht-degree: 16%
 
 ---
 
-# Notes de mise à jour de Cloud Manager dans Adobe Experience Manager as a Cloud Service version 2021.4.0 {#release-notes}
 
-Cette page présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.4.0.
+# Notes de mise à jour de Cloud Manager dans Adobe Experience Manager as a Cloud Service version 2021.5.0 {#release-notes}
+
+Cette page présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.5.0.
 
 ## Date de publication {#release-date}
 
-La date de publication de Cloud Manager en tant que Cloud Service 2021.4.0 est le 08 avril 2021.
-La prochaine version est prévue pour le 6 mai 2021.
+La date de publication de Cloud Manager en AEM Cloud Service 2021.5.0 est le 06 mai 2021.
+La prochaine version est prévue pour le 3 juin 2021.
 
-### Nouveautés {#what-is-new-april}
+### Nouveautés {#what-is-new}
 
-* L’interface utilisateur met à jour les workflows d’Ajoute et de modification de Programme pour les rendre plus intuitifs.
+* La règle de qualité PackageOverlaps détecte désormais les cas où le même package a été déployé plusieurs fois, c’est-à-dire dans plusieurs emplacements incorporés, dans le même jeu de packages déployé.
 
-* Un utilisateur disposant des autorisations requises peut désormais envoyer le point de terminaison du commerce via l’interface utilisateur.
+* Le point de terminaison du référentiel dans l’API publique inclut désormais l’URL Git.
 
-* Les variables d’Environnement peuvent désormais être étendues à un service spécifique, qu’il s’agisse de l’auteur ou de la publication. Requiert AEM version `2021.03.5104.20210328T185548Z` ou supérieure.
+* Le journal de déploiement téléchargé par un utilisateur de Cloud Manager sera plus instructif et comprendra désormais des détails sur les échecs et les scénarios de réussite.
 
-* Le bouton **Gérer Git** s&#39;affiche sur la carte Pipelines même si aucun pipeline n&#39;a été configuré.
+* Les échecs intermittents rencontrés lors de la publication du code à l&#39;Adobe git ont maintenant été résolus.
 
-* La version de l’archétype de projet AEM utilisée par Cloud Manager a été mise à jour vers la version 27.
+* Le module complémentaire Commerce peut désormais être appliqué aux programmes Sandbox pendant le processus de modification du programme.
 
-* Les projets de la console de développement des Adobes I/O créés par Cloud Manager ne peuvent plus être modifiés ou supprimés involontairement.
+* L’expérience Modifier le programme a été actualisée.
 
-* Lorsqu’un utilisateur ajoute un nouvel environnement, il est informé qu’une fois qu’un environnement est créé, il ne peut plus être déplacé dans une autre région.
+* Le tableau Noms de domaine de la page Détails de l&#39;Environnement affiche jusqu&#39;à 250 noms de domaine par pagination.
 
-* Les variables d’Environnement peuvent désormais être étendues à un service spécifique, qu’il s’agisse de l’auteur ou de la publication. Requiert AEM version 2021.03.5104.20210328T185548Z ou supérieure.
+* L&#39;onglet Solutions des workflows de Programme d&#39;Ajoute et de Programme de modification affiche la solution, même si une seule solution est disponible pour le Programme.
 
-* Le message d&#39;erreur lors du démarrage d&#39;un pipeline lorsqu&#39;un environnement a été supprimé a été clarifié.
+* Le message d’erreur dans le journal des étapes de génération lorsque la génération n’a pas produit de packages de contenu déployés n’était pas clair.
 
-* Les lots OSGi fournis par les projets Eclipse sont maintenant exclus de la règle `CQBP-84--dependencies`.
+### Correctifs {#bug-fixes}
 
-### Correctifs {#bug-fixes-cm-april}
+* Il arrive que l’utilisateur voit un état &quot;principal&quot; vert en regard d’une Liste autorisée IP, même si cette configuration n’a pas été déployée.
 
-* Lors de la modification de la page de contrôle d’expérience d’un pipeline, un chemin d’entrée commençant par une barre oblique `( / )` n’entraîne plus l’blocage de l’étape dans l’état en attente.
+* Au lieu de supprimer les variables &quot;supprimées&quot;, l&#39;API des variables de pipeline les marquerait uniquement avec l&#39;état **DELETED**.
 
-* Lors de la création d&#39;un nouveau pipeline de production, si aucun remplacement de contrôle du contenu n&#39;est ajouté par l&#39;utilisateur, la page d&#39;accueil par défaut n&#39;a pas été contrôlée.
+* Certains problèmes de qualité du type de code ont eu une incidence incorrecte sur la cote de fiabilité.
 
-* La gravité des problèmes de `CloudServiceIncompatibleWorkflowProcess` était incorrecte dans le fichier CSV de publication téléchargeable.
+* Comme les domaines génériques ne sont pas pris en charge, l’interface utilisateur empêche l’utilisateur d’envoyer un domaine générique.
 
-* La vérification `Runmode` produisait des faux positifs sur les noeuds non-dossiers.
+* Lorsqu’une exécution de pipeline a été démarrée entre minuit et 1h heure UTC, la version d’artefact générée par Cloud Manager n’était pas garantie supérieure à une version créée le jour précédent.
+
+* Lors de la configuration du programme Sandbox, une fois que le projet avec un exemple de code a été créé, Gérer Git s&#39;affiche comme un lien à partir de la carte de héros dans la page Aperçu.
