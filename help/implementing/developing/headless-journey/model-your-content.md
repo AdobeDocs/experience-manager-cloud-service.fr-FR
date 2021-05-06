@@ -1,14 +1,14 @@
 ---
 title: Comment modéliser votre contenu
-description: Dans cette partie du Parcours de développement AEM sans en-tête, apprenez à modéliser votre contenu pour une diffusion sans en-tête AEM à l’aide de la modélisation des données à l’aide de modèles de fragments de contenu et de fragments de contenu.
+description: Dans cette partie du Parcours de développement AEM sans en-tête, apprenez à modéliser votre contenu pour une diffusion sans en-tête AEM à l’aide de la modélisation de contenu à l’aide de modèles de fragments de contenu et de fragments de contenu.
 hide: true
 hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: 3d5ea8df4cefdb8c2bebe26333002a4680fa9fd4
+source-git-commit: 49e2141cd55a2d277d0e1d2d622097fa5f08a464
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1686'
 ht-degree: 4%
 
 ---
@@ -38,10 +38,10 @@ Cet article s&#39;appuie sur ces principes de base pour vous permettre de compre
 
 * **Audience** : Début
 * **Objectif** : Découvrez comment modéliser votre structure de contenu, puis réalisez-la à l’aide de AEM Modèles de fragments de contenu et de fragments de contenu :
-   * Introduisez des concepts et une terminologie liés à la [modélisation des données](#data-modeling).
-   * Découvrez [pourquoi la modélisation des données est nécessaire pour la diffusion de contenu sans en-tête](#data-modeling-for-aem-headless).
-   * Découvrez [comment réaliser cette structure à l’aide de AEM Content Fragment Models](#create-structure-content-fragment-models) (et créez du contenu avec [Fragments de contenu](#use-content-to-author-content)).
-   * Découvrez [comment modéliser votre contenu](#getting-started-examples); principes avec des exemples de base.
+   * Présenter les concepts et la terminologie liés à la modélisation des données/du contenu.
+   * Découvrez pourquoi la modélisation de contenu est nécessaire pour la diffusion de contenu sans en-tête.
+   * Découvrez comment réaliser cette structure à l’aide de modèles AEM de fragments de contenu (et créez du contenu avec des fragments de contenu).
+   * Découvrez comment modéliser votre contenu ; principes avec des exemples de base.
 
 >[!NOTE]
 >
@@ -49,11 +49,15 @@ Cet article s&#39;appuie sur ces principes de base pour vous permettre de compre
 >
 >Nous ne tiendrons compte que des aspects qui présentent un intérêt lors de la modélisation des données à utiliser avec AEM sans en-tête.
 
-## Modélisation des données {#data-modeling}
+## Modélisation de contenu {#content-modeling}
 
 *C&#39;est un monde grand, mauvais là-bas*.
 
 Peut-être, peut-être pas, mais c&#39;est certainement un grand ***monde complexe*** et la modélisation des données est utilisée pour définir une représentation simplifiée d&#39;une très (très) petite sous-section, en utilisant l&#39;information spécifique nécessaire à un certain but.
+
+>[!NOTE]
+>
+>Comme AEM traite du contenu, nous faisons référence à la modélisation des données en tant que modélisation du contenu.
 
 Par exemple :
 
@@ -91,7 +95,7 @@ Les informations que nous voulons stocker à leur sujet sont les **attributs** (
 
 Ensuite, il y a différentes **relations** entre les entités. Par exemple, en général, une école n&#39;a qu&#39;un seul professeur principal, et de nombreux enseignants (et généralement le professeur principal est également enseignant).
 
-Le processus d&#39;analyse et de définition de ces informations, ainsi que les relations entre elles, s&#39;appelle **Data Modeling**.
+Le processus d&#39;analyse et de définition de ces informations, ainsi que les relations entre elles, est appelé **Modélisation de contenu**.
 
 ### Concepts de base {#basics}
 
@@ -128,9 +132,9 @@ Tout est un exercice d&#39;équilibre, mais la création d&#39;une structure tro
 
 * Affecte gravement les performances si la requête doit accéder à plusieurs fragments de contenu imbriqués (référencés) pour récupérer le contenu requis.
 
-## Modélisation des données pour AEM sans en-tête {#data-modeling-for-aem-headless}
+## Modélisation de contenu pour AEM sans en-tête {#content-modeling-for-aem-headless}
 
-La modélisation des données est un ensemble de techniques établies, souvent utilisées lors de bases de données de relations développées, alors qu&#39;est-ce que cela signifie pour AEM sans en-tête ?
+La modélisation des données est un ensemble de techniques établies, souvent utilisées lors de bases de données de relations développées, alors que signifie la modélisation de contenu pour AEM sans en-tête ?
 
 ### Pourquoi ? {#why}
 
@@ -142,7 +146,7 @@ Cela signifie que votre application connaît à l&#39;avance la forme de la rép
 
 AEM utilise les fragments de contenu pour fournir les structures nécessaires à la diffusion sans en-tête de votre contenu à vos applications.
 
-La structure de votre modèle de données est la suivante :
+La structure de votre modèle de contenu est la suivante :
 
 * réalisée par la définition de votre modèle de fragment de contenu,
 * utilisé comme base des fragments de contenu utilisés pour la génération de votre contenu.
@@ -173,7 +177,7 @@ Dans un modèle :
 1. **Data** Type vous permet de définir les attributs individuels.
 Par exemple, définissez le champ portant le nom d&#39;un enseignant sur **Texte** et ses années de service sur **Nombre**.
 1. Les types de données **Référence du contenu** et **Référence du fragment** vous permettent de créer des relations avec d&#39;autres contenus dans AEM.
-1. Le type de données **Référence du fragment** vous permet de réaliser plusieurs niveaux de structure en imbriquant vos fragments de contenu (selon le type de modèle). Il s’agit d’un élément essentiel pour la modélisation des données.
+1. Le type de données **Référence du fragment** vous permet de réaliser plusieurs niveaux de structure en imbriquant vos fragments de contenu (selon le type de modèle). Il s’agit d’un élément essentiel pour la modélisation du contenu.
 
 Par exemple :
 ![Modélisation de contenu avec des fragments de contenu](assets/headless-modeling-01.png "Modélisation de contenu avec des fragments de contenu")
@@ -250,4 +254,4 @@ Maintenant que vous avez appris à modéliser votre structure et à créer du co
    * [Gestion des fragments](/help/assets/content-fragments/content-fragments-managing.md)  de contenu - création et création de fragments de contenu ; cette page vous conduira à d&#39;autres sections détaillées
 * [AEM Schémas](/help/implementing/developing/headless-journey/access-your-content.md)  GraphQL - comment GraphQL réalise les modèles
 * [Exemple de structure de fragment de contenu](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-* [Prise en main de AEM sans tête](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr)  - Une courte série de didacticiels vidéo présentant l&#39;utilisation des fonctionnalités sans tête AEM, y compris la modélisation des données et GraphQL
+* [Prise en main de AEM sans tête](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr)  - Une courte série de didacticiels vidéo présentant l&#39;utilisation des fonctionnalités sans tête AEM, notamment la modélisation de contenu et GraphQL
