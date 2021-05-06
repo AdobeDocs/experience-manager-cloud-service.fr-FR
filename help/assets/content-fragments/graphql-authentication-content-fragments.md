@@ -1,15 +1,15 @@
 ---
 title: Authentification pour les requêtes AEM GraphQL distantes sur les fragments de contenu
 description: Comprenez l'authentification requise pour les requêtes GraphQL d'AEM distantes afin de sécuriser votre diffusion de contenu sans en-tête.
-feature: Content Fragments,GraphQL API
+feature: Fragments de contenu, API GraphQL
+exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: dab4c9393c26f5c3473e96fa96bf7ec51e81c6c5
 workflow-type: tm+mt
 source-wordcount: '235'
-ht-degree: 84%
+ht-degree: 75%
 
 ---
-
 
 # Authentification pour les requêtes AEM GraphQL distantes sur les fragments de contenu {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
@@ -19,7 +19,7 @@ Un des principaux cas d’utilisation de l’[API Adobe Experience Manager as a 
 >
 >Pour les tests et le développement, vous pouvez également directement accéder à l’API GraphQL d’AEM avec l’[interface GraphiQL](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface).
 
-Pour l’authentification, le service tiers doit utiliser un [jeton d’accès](#access-token), qui peut ensuite être [utilisé dans la requête GraphQL](#use-access-token-in-graphql-request).
+Pour l’authentification, le service tiers doit [récupérer un Jeton d&#39;accès](#retrieving-access-token), qui peut ensuite être [utilisé dans la requête GraphQL](#use-access-token-in-graphql-request).
 
 ## Récupération d’un jeton d’accès {#retrieving-access-token}
 
