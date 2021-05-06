@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: 861ef15a0060d51fd32e2d056871d1679f77a21e
+source-git-commit: 0c47dec1e96fc3137d17fc3033f05bf1ae278141
 workflow-type: tm+mt
-source-wordcount: '1931'
-ht-degree: 36%
+source-wordcount: '2181'
+ht-degree: 31%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 36%
 >
 >TRAVAUX EN COURS - La création de ce document est en cours et ne doit pas être comprise comme complète ou définitive ni être utilisée à des fins de production.
 
-Dans cette partie du [Parcours de développement AEM sans en-tête](overview.md), vous pouvez apprendre à utiliser les requêtes GraphQL pour accéder au contenu de vos fragments de contenu.
+Dans cette partie du [Parcours de développement AEM sans en-tête,](overview.md) vous pouvez apprendre à utiliser les requêtes GraphQL pour accéder au contenu de vos fragments de contenu et le transmettre à votre application (diffusion sans en-tête).
 
 ## L&#39;histoire jusqu&#39;à présent {#story-so-far}
 
@@ -135,9 +135,7 @@ Ces modèles de fragment de contenu :
 
 La **référence à un fragment** :
 
-* est particulièrement intéressante en lien avec GraphQL ;
-
-* est un type de données spécifique qui peut être utilisé lors de la définition d’un modèle de fragment de contenu ;
+* Est un type de données spécifique disponible lors de la définition d’un modèle de fragment de contenu.
 
 * fait référence à un autre fragment, en fonction d’un modèle de fragment de contenu spécifique ;
 
@@ -148,6 +146,24 @@ La **référence à un fragment** :
 ### Prévisualisation JSON {#json-preview}
 
 Pour faciliter la conception et le développement de vos modèles de fragments de contenu, vous pouvez prévisualisation la sortie JSON dans l’éditeur de fragments de contenu.
+
+### Création de modèles de fragments de contenu et de fragments de contenu {#creating-content-fragment-models-and-content-fragments}
+
+Tout d’abord, les modèles de fragments de contenu sont activés pour votre site, cela se fait dans le navigateur de configuration :
+
+![Définir la configuration](assets/cfm-configuration.png)
+
+Les modèles de fragments de contenu peuvent ensuite être modélisés :
+
+![Modèle de fragment de contenu ](assets/cfm-model.png)
+
+Après avoir sélectionné le modèle approprié, un fragment de contenu est ouvert pour modification dans l’éditeur de fragments de contenu :
+
+![Éditeur de fragment de contenu](assets/cfm-editor.png)
+
+>[!NOTE]
+>
+>Voir Utilisation de fragments de contenu.
 
 ## Génération de Schéma GraphQL à partir de fragments de contenu {#graphql-schema-generation-content-fragments}
 
@@ -239,9 +255,98 @@ Il fournit des fonctionnalités telles que la mise en surbrillance de la syntaxe
 
 ![Interface GraphiQL](assets/graphiql-interface.png "Interface GraphiQL")
 
-## Utilisation de l’API GraphQL AEM {#using-aem-graphiql}
+## Utilisation de l’API GraphQL d’AEM {#actually-using-aem-graphiql}
 
-Pour plus d’informations sur l’utilisation de l’API GraphQL AEM, ainsi que sur la configuration des éléments nécessaires, vous pouvez vous reporter à :
+Pour utiliser effectivement l’API GraphQL AEM dans une requête, nous pouvons utiliser les deux structures de base du modèle de fragment de contenu :
+
+* Entreprise
+   * Nom
+   * PDG (Personne)
+   * Employés (personnes)
+* Personne
+   * Nom
+   * Prénom
+
+Comme vous pouvez le voir, les champs PDG et Employés font référence aux fragments Personne.
+
+Les modèles de fragments seront utilisés :
+
+* lors de la création du contenu dans l’éditeur de fragments de contenu
+* pour générer les schémas GraphQL que vous allez requête
+
+Les requêtes peuvent être entrées dans l’interface GraphiQL, par exemple à l’adresse suivante :
+
+* `http://localhost:4502/content/graphiql.html `
+
+Une requête simple consiste à renvoyer le nom de toutes les entrées du schéma de Société. Vous demandez ici une liste de tous les noms de société :
+
+```xml
+query {
+  companyList {
+    items {
+      name
+    }
+  }
+}
+```
+
+Une requête un peu plus complexe consiste à sélectionner toutes les personnes qui n&#39;ont pas de nom &quot;Emplois&quot;. Ceci filtrera toutes les personnes pour celles qui ne portent pas le nom Tâches. Ceci est réalisé avec l&#39;opérateur EQUALS_NOT (il y en a beaucoup d&#39;autres) :
+
+```xml
+query {
+  personList(filter: {
+    name: {
+      _expressions: [
+        {
+          value: "Jobs"
+          _operator: EQUALS_NOT
+        }
+      ]
+    }
+  }) {
+    items {
+      name
+      firstName
+    }
+  }
+}
+```
+
+Vous pouvez également créer des requêtes plus complexes. Par exemple, requête pour toutes les sociétés qui ont au moins un employé nommé &quot;Smith&quot;. Cette requête illustre le filtrage pour toute personne du nom de &quot;Smith&quot;, renvoyant des informations à partir des fragments imbriqués :
+
+```xml
+query {
+  companyList(filter: {
+    employees: {
+      _match: {
+        name: {
+          _expressions: [
+            {
+              value: "Smith"
+            }
+          ]
+        }
+      }
+    }
+  }) {
+    items {
+      name
+      ceo {
+        name
+        firstName
+      }
+      employees {
+        name
+        firstName
+      }
+    }
+  }
+}
+```
+
+<!-- need code / curl / cli examples-->
+
+Pour obtenir des détails complets sur l’utilisation de l’API GraphQL AEM, ainsi que la configuration des éléments nécessaires, vous pouvez vous reporter aux éléments suivants :
 
 * Apprendre à utiliser GraphQL avec AEM
 * Exemple de structure de fragment de contenu
