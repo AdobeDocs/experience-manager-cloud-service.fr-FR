@@ -1,16 +1,21 @@
 ---
 title: Test de qualité du code – Cloud Services
 description: Test de qualité du code – Cloud Services
+exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 translation-type: tm+mt
-source-git-commit: 5a945cbb138aea64ecc6da3728827531569d6d63
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '869'
 ht-degree: 100%
 
 ---
 
-
 # Test de qualité du code {#code-quality-testing}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_codequalitytests"
+>title="Test de qualité du code"
+>abstract="Le test de qualité du code évalue la qualité du code de votre application. Il s’agit de l’objectif principal d’un pipeline dédié uniquement à la qualité du code. Cette étape est exécutée immédiatement après l’étape de création dans tous les pipelines, aussi bien en production que hors production."
 
 Le test de qualité du code évalue la qualité du code de votre application. Il s’agit de l’objectif principal d’un pipeline dédié uniquement à la qualité du code. Cette étape est exécutée immédiatement après l’étape de création dans tous les pipelines, aussi bien en production que hors production.
 
