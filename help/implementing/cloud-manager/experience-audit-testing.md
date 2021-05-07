@@ -1,16 +1,21 @@
 ---
 title: Tests de contrôle de l’expérience – Cloud Services
 description: Tests de contrôle de l’expérience – Cloud Services
+exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
 translation-type: tm+mt
-source-git-commit: c1ce44fb8a7b12818b58ff5ef661b9b447b9cd5c
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '577'
 ht-degree: 100%
 
 ---
 
-
 # Tests de contrôle de l’expérience {#experience-audit-testing}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_expaudittesting"
+>title="Tests de contrôle de l’expérience"
+>abstract="Le contrôle de l’experience est une fonctionnalité disponible dans les pipelines de production de Cloud Manager Sites, reposant sur Google Lighthouse, un outil open source de Google. Cette fonctionnalité est activée dans tous les pipelines de production de Cloud Manager."
 
 Le contrôle de l’experience est une fonctionnalité disponible dans les pipelines de production de Cloud Manager Sites, reposant sur Google Lighthouse, un outil open source de Google. Cette fonctionnalité est activée dans tous les pipelines de production de Cloud Manager.
 
@@ -61,4 +66,3 @@ En analysant en profondeur n’importe lequel des tests, vous obtiendrez des sco
 Cliquer sur les détails d’une page donnée fournit des informations sur les éléments de la page qui ont été évalués, ainsi que des conseils pour résoudre les problèmes si des opportunités d’amélioration sont détectées. Les détails des tests et les conseils associés sont fournis par Google Lighthouse.
 
 ![](/help/implementing/cloud-manager/assets/exp-audit-2.png)
-
