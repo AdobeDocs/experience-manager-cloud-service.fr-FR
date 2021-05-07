@@ -1,14 +1,14 @@
 ---
 title: Repository Modernizer
 description: Repository Modernizer
+exl-id: b89156a8-3d7d-4d36-89a2-beeda35bbc01
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 0ed18aad48f33fb0504d59a5f583b5a3dbea59f6
 workflow-type: tm+mt
 source-wordcount: '301'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
-
 
 # Repository Modernizer {#repo-modernizer}
 
@@ -22,7 +22,7 @@ Repository Modernizer crée une structure de projet AEM Cloud Service compatible
 
 * Le module `ui.apps` se déploie sur `/apps` et contient l’intégralité du code.
 
-* Le module `ui.content` se déploie sur des zones pouvant être écrites à l’exécution (par ex., `/content`, `/conf`, `/home` ou toute zone autre que `/apps`) et contient l’ensemble du contenu et de la configuration.
+* `ui.content` déploient les packages dans des zones pouvant être écrites à l’exécution (ex.  `/content`,  `/conf`,  `/home`  `/apps` ou autre) et contient tout le contenu et la configuration.
 
 * Le module `all` est un module de conteneur qui contient les sous-modules `ui.apps` et `ui.content`.
 
@@ -30,6 +30,8 @@ Repository Modernizer crée une structure de projet AEM Cloud Service compatible
 >La structure de projet est basée sur *Archetype 24* pour les modules et leurs `pom.xml/filter.xml files`. Pour plus d’informations, consultez [Archetype 24](https://github.com/adobe/aem-project-archetype).
 
 ## Utilisation de Repository Modernizer {#using-repo-modernizer}
+
+>[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
 
 * Par l’intermédiaire de la ligne de commande d’Adobe I/O : Il est recommandé d’utiliser Repository Modernizer via `aio-cli-plugin-aem-cloud-service-migration` (module externe de refactorisation de code AEM as a Cloud Service pour la ligne de commande d’Adobe I/O).
 
