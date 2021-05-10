@@ -5,10 +5,10 @@ feature: Vidéo 360 VR
 role: Business Practitioner
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 63%
+source-wordcount: '941'
+ht-degree: 59%
 
 ---
 
@@ -28,7 +28,7 @@ Voir également [Gestion des paramètres prédéfinis de visionneuse](/help/asse
 
 ## Vidéo 360 en action {#video-in-action}
 
-Appuyez sur [Station spatiale 360](http://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) pour ouvrir une fenêtre de navigateur et visionner une vidéo à 360 degrés. Pendant la lecture de la vidéo, faites glisser le pointeur vers un nouvel emplacement pour modifier l’angle de visualisation.
+Appuyez sur [Station spatiale 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) pour ouvrir une fenêtre de navigateur et visionner une vidéo à 360 degrés. Pendant la lecture de la vidéo, faites glisser le pointeur vers un nouvel emplacement pour modifier l’angle de visualisation.
 
 ![Exemple de vidéo 360](assets/6_5_360videoiss_simplified.png)
 *Image vidéo de la station spatiale 360*
@@ -93,7 +93,7 @@ Start by uploading 360 Videos.
 
 ## Prévisualisation d’une vidéo 360 {#previewing-video}
 
-Vous pouvez utiliser l’option de prévisualisation pour déterminer comment les clients voient votre vidéo 360 et vous assurer qu’elle se comporte comme prévu.
+Vous pouvez utiliser la Prévisualisation pour voir comment votre vidéo 360 s’affiche pour les clients et vous assurer qu’elle se comporte comme prévu.
 
 Voir également [Modification de paramètres de visionneuse prédéfinis](/help/assets/dynamic-media/managing-viewer-presets.md#editing-viewer-presets).
 
