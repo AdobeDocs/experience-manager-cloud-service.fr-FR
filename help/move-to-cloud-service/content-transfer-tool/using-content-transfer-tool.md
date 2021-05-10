@@ -3,9 +3,9 @@ title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 translation-type: tm+mt
-source-git-commit: 42c6d904fb484435572544147936b50b9a277dcf
+source-git-commit: d2b0fa9448ec3c1150d3c35860ffddb9e4d60d3e
 workflow-type: tm+mt
-source-wordcount: '2731'
+source-wordcount: '2729'
 ht-degree: 72%
 
 ---
@@ -53,7 +53,7 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * La *phase d’ingestion* de l’auteur réduira l’ensemble du déploiement de l’auteur. L’auteur AEM ne sera donc pas disponible pendant la totalité du processus d’ingestion. Assurez-vous également qu’aucun pipeline Cloud Manager n’est exécuté pendant que vous exécutez la phase d’*ingestion*.
 
-* Lorsque vous utilisez `Amazon S3` ou `Azure` comme magasin de données sur le système d&#39;AEM source, le magasin de données doit être configuré de sorte que les objets bloqués ne puissent pas être supprimés (déchets collectés). Il s&#39;agit d&#39;assurer l&#39;intégrité des données d&#39;index. Si vous ne le configurez pas de cette manière, les extractions risquent d’échouer en raison du manque d’intégrité des données de cet index.
+* Lorsque vous utilisez `Amazon S3` ou `Azure` comme magasin de données sur le système d&#39;AEM source, le magasin de données doit être configuré de sorte que les objets bloqués ne puissent pas être supprimés (déchets collectés). Ceci garantit l&#39;intégrité des données d&#39;index et l&#39;échec de la configuration de cette manière peut entraîner des extractions en échec en raison d&#39;un manque d&#39;intégrité de ces données d&#39;index.
 
 ## Disponibilité {#availability}
 
