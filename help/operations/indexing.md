@@ -3,10 +3,10 @@ title: Recherche et indexation de contenu
 description: Recherche et indexation de contenu
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 translation-type: tm+mt
-source-git-commit: 28c3fb4c5c0da175ee84463d7c100bdb1b93bb30
+source-git-commit: 1139b9f7014e68ab3d6ea7d720242e95786cc9e6
 workflow-type: tm+mt
-source-wordcount: '1738'
-ht-degree: 73%
+source-wordcount: '1761'
+ht-degree: 72%
 
 ---
 
@@ -57,6 +57,12 @@ Vous devez préparer un nouveau package de définition d’index qui contient la
 qui doit ensuite être placé dans `ui.apps/src/main/content/jcr_root`. Les dossiers de sous-racine ne sont pas pris en charge pour l’instant.
 
 Le package de l’exemple ci-dessus est nommé `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
+
+>[!NOTE]
+>
+>Tout package de contenu contenant des définitions d’index doit avoir la propriété suivante définie dans le fichier de propriétés du package de contenu, situé à `/META-INF/vault/properties.xml` :
+>
+>`noIntermediateSaves=true`
 
 ### Déploiement de définitions d’index {#deploying-index-definitions}
 
