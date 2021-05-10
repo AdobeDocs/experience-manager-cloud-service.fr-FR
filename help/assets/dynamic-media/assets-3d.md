@@ -9,9 +9,9 @@ feature: Ressources 3D
 role: Business Practitioner
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
 translation-type: tm+mt
-source-git-commit: 58d09d12ce2e8415eb50c288eeab3167a92fae57
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '2251'
+source-wordcount: '2248'
 ht-degree: 75%
 
 ---
@@ -250,8 +250,8 @@ Voir aussi [Publication de pages](/help/sites-cloud/authoring/fundamentals/publi
 
 **Pour publier des ressources 3D Dynamic Media statiques:**
 
-1. Ouvrez un fichier 3D (format de fichier GLB, OBJ ou STL) pour le vue dans la page Détails.
-1. Dans la barre d’outils, appuyez sur **[!UICONTROL Publication rapide]**.
+1. Ouvrez un fichier 3D (format de fichier GLB, OBJ ou STL).
+1. Sur la page Détails, sur la barre d’outils, appuyez sur **[!UICONTROL Publication rapide]**.
 
    ![3d-asset-quick-publish](/help/assets/dynamic-media/assets/3d-asset-quick-publisha.png)
 
