@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
+source-git-commit: 787af0d4994bf1871c48aadab74d85bd7c3c94fb
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1830'
 ht-degree: 4%
 
 ---
@@ -214,17 +214,21 @@ Le type de données peut être configuré pour permettre aux auteurs de fragment
 
 ### Création de modèles de fragments de contenu {#creating-content-fragment-models}
 
-Tout d’abord, les modèles de fragments de contenu sont activés pour votre site, cela se fait dans le navigateur de configuration :
+Au début même où vous devez activer les modèles de fragments de contenu pour votre site, cela se fait dans l’explorateur de configuration ; sous Outils -> Général -> Navigateur de configuration. Vous pouvez choisir de configurer l’entrée globale ou de créer une nouvelle configuration. Par exemple :
 
 ![Définir la configuration](assets/cfm-configuration.png)
 
-Les modèles de fragments de contenu peuvent ensuite être modélisés :
+>[!NOTE]
+>
+>Voir Ressources supplémentaires - Fragments de contenu dans l’explorateur de configuration
+
+Ensuite, les modèles de fragments de contenu peuvent être créés et la structure définie. Vous pouvez le faire sous Outils > Ressources > Modèles de fragment de contenu. Par exemple :
 
 ![Modèle de fragment de contenu ](assets/cfm-model.png)
 
 >[!NOTE]
 >
->Voir Utilisation de fragments de contenu.
+>Voir Ressources supplémentaires - Modèles de fragments de contenu.
 
 ## Utilisation du modèle pour créer du contenu avec des fragments de contenu {#use-content-to-author-content}
 
@@ -232,7 +236,9 @@ Les fragments de contenu reposent toujours sur un modèle de fragment de contenu
 
 ### Sélection du modèle approprié {#select-model}
 
-La première étape pour créer réellement votre contenu consiste à créer un fragment de contenu. Il est basé sur un modèle de fragment de contenu spécifique que vous sélectionnez comme première étape du processus de création.
+La première étape pour créer réellement votre contenu consiste à créer un fragment de contenu. Pour ce faire, utilisez Créer -> Fragment de contenu dans le dossier requis sous Ressources -> Fichiers. L&#39;assistant vous guidera tout au long des étapes.
+
+Un fragment de contenu est basé sur un modèle de fragment de contenu spécifique que vous sélectionnez comme première étape du processus de création.
 
 ### Création et modification de contenu structuré {#create-edit-structured-content}
 
@@ -254,7 +260,7 @@ Après avoir sélectionné le modèle approprié, un fragment de contenu est ouv
 
 >[!NOTE]
 >
->Voir Utilisation de fragments de contenu.
+>Voir Ressources supplémentaires - Utilisation de fragments de contenu.
 
 ## Prise en main avec quelques exemples {#getting-started-examples}
 
