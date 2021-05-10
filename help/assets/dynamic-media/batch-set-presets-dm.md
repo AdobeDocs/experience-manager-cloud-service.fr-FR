@@ -6,10 +6,10 @@ feature: Paramètres d’image prédéfinis,Paramètres prédéfinis de la visio
 role: Business Practitioner
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '3444'
-ht-degree: 58%
+source-wordcount: '3435'
+ht-degree: 57%
 
 ---
 
@@ -39,9 +39,9 @@ Pour vous aider à comprendre l’importance d’une convention d’affectation 
 
 La page **[!UICONTROL Paramètre prédéfini de lot]** de [!DNL Dynamic Media] permet de créer, modifier ou supprimer des paramètres prédéfinis de lot, mais aussi d’appliquer ces paramètres à des dossiers de ressources ou de les y supprimer. Vous pouvez utiliser les listes déroulantes du champ de formulaire pour définir un paramètre prédéfini de lot ou utiliser le champ **[!UICONTROL Code brut]**, qui vous permet de saisir la syntaxe d’expression régulière.
 
-Vous pouvez créer autant de paramètres prédéfinis de lot que nécessaire pour répondre aux besoins de toutes vos tâches d’ingestion de ressources.
+Vous pouvez créer de nombreux paramètres prédéfinis d’ensemble par lot afin de couvrir toutes les tâches d’assimilation de fichiers dont vous avez besoin.
 
-**À propos de la convention d’affectation des noms de ressources**
+### À propos de la convention d’affectation des noms de ressources
 
 La zone **[!UICONTROL Convention d’affectation de nom]** de la page **[!UICONTROL Paramètre prédéfini d’ensemble par lot]** contient deux éléments que vous pouvez utiliser pour définir votre paramètre prédéfini d’ensemble par lot : **[!UICONTROL Correspondance]** et **[!UICONTROL Nom de base]**. Ces éléments vous permettent de définir une convention d’affectation des noms et d’identifier la partie de la convention utilisée pour nommer la visionneuse dans laquelle ils se trouvent. <!-- While **[!UICONTROL Match]** is required, **[!UICONTROL Base Name]** is mandatory only if the **[!UICONTROL Match]** field does not already specify a base name through the use of a bracket grouping. -->
 
@@ -51,11 +51,11 @@ Par exemple, la syntaxe d’une expression régulière de correspondance littér
 
 `(\w+)-\w+-\w+`
 
-**À propos du tri séquentiel**
+### À propos du tri séquentiel
 
 Vous pouvez éventuellement définir l’ordre d’affichage des images après le regroupement de la visionneuse d’images ou de la visionneuse à 360° dans [!DNL Dynamic Media]. Par défaut, les ressources sont classées par ordre alphanumérique. Cependant, vous pouvez utiliser une liste d’expressions régulières séparées par des virgules pour définir l’ordre.
 
-En ce qui concerne l’automatisation de l’ordre des séquences, vous spécifiez des règles pour forcer le tri des fichiers d’une certaine manière, si nécessaire. Supposons, par exemple, que votre première ressource soit toujours nommée `_main` et que vous souhaitiez qu’elle soit suivie de `_alt1`, `_alt2`, `_alt3`, etc. Dans ce cas, vous pouvez créer une règle de tri séquentiel selon la syntaxe suivante :
+En ce qui concerne l’automatisation de l’ordre des séquences, vous spécifiez des règles pour forcer le tri des fichiers d’une certaine manière, si nécessaire. Supposons, par exemple, que votre première ressource soit toujours nommée `_main` et que vous souhaitiez qu’elle soit suivie de `_alt1`, `_alt2`, `_alt3`, etc. Dans ce cas, vous pouvez créer une règle d’ordre de séquence avec la syntaxe suivante :
 
 `.*_main,.*_alt[0-9]`
 
@@ -67,7 +67,7 @@ Lorsque vous avez terminé de créer un paramètre prédéfini de lot, vous l’
 
 **Pour créer un paramètre prédéfini de lot pour une visionneuse d’images ou une visionneuse à 360° :**
 
-1. Appuyez sur le logo Adobe Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres prédéfinis de lot]**.
+1. Appuyez sur le logo Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres prédéfinis de lot]**.
 
    ![bsp-create1.png](/help/assets/assets-dm/bsp-create1.png)
 
@@ -113,7 +113,7 @@ Voir [Création d’un paramètre prédéfini de lot pour une visionneuse d’im
 | Inclure les ressources dérivées | Facultatif. Pour que [!DNL Dynamic Media]’s IPS (Image Production System) intègre des images générées ou &quot;dérivées&quot; à votre visionneuse à 360° ou visionneuse d’images, sélectionnez **[!UICONTROL Oui]** (par défaut). Une ressource dérivée est une image qui n’a pas été directement chargée par un utilisateur. Au lieu de cela, la ressource a été produite par l’IPS lors du chargement d’une ressource principale. Par exemple, une ressource d’image générée par l’IPS à partir d’une page d’un fichier PDF, au moment où le fichier PDF a été chargé dans [!DNL Dynamic Media], est considérée comme une ressource dérivée. |
 | Dossier de destination | Facultatif. Si vous définissez un grand nombre de visionneuses d’images ou de visionneuses à 360°, l’Adobe vous conseille de conserver ces visionneuses à l’écart des dossiers contenant les fichiers eux-mêmes. Par conséquent, vous pouvez créer un dossier Visionneuses d’images ou Visionneuses à 360° et rediriger l’application pour y placer les visionneuses générées par lot.<br>Dans ce cas, spécifiez le dossier dans la structure de dossiers Ressources du Experience Manager (`/content/dam`) dont le paramètre prédéfini d’ensemble par lot est principal. Assurez-vous que le dossier est activé pour la synchronisation [!DNL Dynamic Media] afin de l’autoriser en tant que dossier de destination. Voir [Configuration de la publication sélective au niveau des dossiers dans Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>Un paramètre prédéfini d’ensemble par lot peut être affecté à plusieurs dossiers si vous l’appliquez au moyen des  **[!UICONTROL propriétés]** du dossier. Voir [Application de paramètres prédéfinis de lot à partir de la page Propriétés d’un dossier de ressources](#apply-bsp-to-folders-via-properties).<br>Si vous ne spécifiez pas de dossier, la visionneuse d’images ou la visionneuse à 360° générée par le paramètre prédéfini d’ensemble par lot est créée dans le même dossier que le dossier de fichiers sur lequel vous avez téléchargé. |
 | **[!UICONTROL Définir la convention d’affectation des noms]** |  |
-| Préfixe<br>ou<br>Suffixe | Facultatif. Entrez un préfixe, un suffixe ou les deux dans les champs respectifs.<br>Les champs de préfixe et de suffixe vous permettent de créer autant de paramètres prédéfinis d’ensemble par lot à l’aide d’une autre convention d’affectation de nom de fichier personnalisée pour un ensemble de contenu particulier. Cette méthode est particulièrement utile dans les cas où il existe une exception à un schéma d’affectation de nom par défaut défini par une société.<br>Le préfixe ou le suffixe est ajouté au **[!UICONTROL nom de base]** que vous définissez dans la zone **[!UICONTROL Convention d’affectation des noms de ressources]**. En ajoutant un préfixe ou un suffixe, vous vous assurez que votre visionneuse d’images ou visionneuse à 360° est créée de manière exclusive et indépendante des autres fichiers. Cette opération peut également aider d’autres personnes à identifier les types de fichiers. Par exemple, pour déterminer un mode de couleur utilisé, vous pouvez ajouter comme préfixe ou suffixe `rgb` ou `cmyk`.<br>Bien que la spécification d’une convention d’affectation de nom d’ensemble ne soit pas nécessaire pour utiliser la fonctionnalité de paramètre prédéfini d’ensemble par lot, il est recommandé d’utiliser la convention d’affectation de nom d’ensemble. Cette pratique vous permet de définir autant d’éléments de votre convention d’affectation de nom que vous souhaitez regrouper dans une visionneuse afin de simplifier la création d’ensembles par lot. |
+| Préfixe<br>ou<br>Suffixe | Facultatif. Entrez un préfixe, un suffixe ou les deux dans les champs respectifs.<br>Les champs de préfixe et de suffixe vous permettent de créer de nombreux paramètres prédéfinis d’ensemble par lot à l’aide d’une autre convention d’affectation de nom de fichier personnalisée pour un ensemble de contenu particulier. Cette méthode est particulièrement utile dans les cas où il existe une exception à un schéma d’affectation de nom par défaut défini par une société.<br>Le préfixe ou le suffixe est ajouté au **[!UICONTROL nom de base]** que vous définissez dans la zone **[!UICONTROL Convention d’affectation des noms de ressources]**. En ajoutant un préfixe ou un suffixe, vous vous assurez que votre visionneuse d’images ou visionneuse à 360° est créée de manière exclusive et indépendante des autres fichiers. Cette opération peut également aider d’autres personnes à identifier les types de fichiers. Par exemple, pour déterminer un mode de couleur utilisé, vous pouvez ajouter comme préfixe ou suffixe `rgb` ou `cmyk`.<br>Bien que la spécification d’une convention d’affectation de nom d’ensemble ne soit pas nécessaire pour utiliser la fonctionnalité de paramètre prédéfini d’ensemble par lot, il est recommandé d’utiliser la convention d’affectation de nom d’ensemble. Cette pratique vous permet de définir autant d’éléments de votre convention d’affectation de nom que vous souhaitez regrouper dans une visionneuse afin de simplifier la création d’ensembles par lot. |
 | **[!UICONTROL Résultats de la règle – RegX]** |  |
 | Convention d’affectation des noms de ressources – Correspondance | Lecture seule. Affiche la syntaxe d’expression régulière en fonction des options de formulaire de correspondance que vous avez sélectionnées ou du code brut que vous avez saisi. |
 | Convention d’affectation des noms de ressources – Nom de base | Lecture seule. Affiche la syntaxe d’expression régulière en fonction des options de formulaire de nom de base que vous avez sélectionnées ou du code brut que vous avez saisi. |
@@ -143,7 +143,7 @@ Retraitez les fichiers d’un dossier si vous effectuez l’une des deux situati
 
 ### Application de paramètres prédéfinis de lot aux dossiers de ressources à l’aide de la page Paramètres prédéfinis de lot {#apply-bsp-to-folders-via-bsp-page}
 
-1. Appuyez sur le logo Adobe Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres prédéfinis de lot]**.
+1. Appuyez sur le logo Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres prédéfinis de lot]**.
 1. Sur la page **[!UICONTROL Paramètres prédéfinis de lot]**, à gauche de la colonne **[!UICONTROL Nom du paramètre prédéfini]**, cochez la case de chaque paramètre prédéfini de lot à appliquer aux dossiers.
 1. Dans la barre d’outils, appuyez sur **[!UICONTROL Appliquer le paramètre prédéfini de lot aux dossiers]**.
 1. Sur la page **[!UICONTROL Sélectionner les dossiers]**, cochez la case de chaque dossier auquel vous voulez appliquer les paramètres prédéfinis d’ensemble par lot.
@@ -151,7 +151,7 @@ Retraitez les fichiers d’un dossier si vous effectuez l’une des deux situati
 
 ### Application de paramètres prédéfinis de lot à partir de la page Propriétés d’un dossier de ressources {#apply-bsp-to-folders-via-properties}
 
-1. Appuyez sur le logo Adobe Experience Manager et accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**.
+1. Appuyez sur le logo Experience Manager et accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**.
 1. Accédez au dossier auquel vous souhaitez appliquer un ou plusieurs paramètres prédéfinis de lot.
 1. Sur la page, à gauche de la colonne **[!UICONTROL Nom]**, cochez la case d’un dossier.
 1. Dans la barre d’outils, appuyez sur **[!UICONTROL Propriétés]**.
@@ -179,7 +179,7 @@ Si vous souhaitez que le paramètre prédéfini nouvellement modifié soit réap
 
 **Pour modifier un paramètre prédéfini de lot :**
 
-1. Appuyez sur le logo Adobe Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres prédéfinis de lot]**.
+1. Appuyez sur le logo Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres prédéfinis de lot]**.
 1. Sur la page **[!UICONTROL Paramètres prédéfinis de lot]**, à gauche de la colonne **[!UICONTROL Nom du paramètre prédéfini]**, vérifiez le paramètre prédéfini de lot que vous souhaitez modifier.
 1. Dans la barre d’outils, appuyez sur **[!UICONTROL Modifier le paramètre prédéfini d’ensemble par lot]**.
 1. Modifiez le paramètre prédéfini selon vos besoins.
@@ -193,7 +193,7 @@ Si vous copiez un paramètre prédéfini existant référencé par des dossiers 
 
 **Pour copier un paramètre prédéfini de lot existant :**
 
-1. Appuyez sur le logo Adobe Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres prédéfinis de lot]**.
+1. Appuyez sur le logo Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres prédéfinis de lot]**.
 1. Sur la page **[!UICONTROL Paramètres prédéfinis de lot]**, à gauche de la colonne **[!UICONTROL Nom du paramètre prédéfini]**, cochez la case du paramètre prédéfini de lot à copier.
 1. Dans la barre d’outils, appuyez sur **[!UICONTROL Copier]**.
 1. Dans la boîte de dialogue **[!UICONTROL Copier le paramètre prédéfini de lot]**, dans la zone de texte **[!UICONTROL Titre]**, saisissez un nouveau nom pour le paramètre prédéfini.
@@ -215,7 +215,7 @@ Vous pouvez utiliser deux méthodes pour supprimer des paramètres prédéfinis 
 
 ### Suppression des paramètres prédéfinis de lot des dossiers par le biais de la page Paramètres prédéfinis de lot {#remove-bsp-from-folders-via-bsp-page}
 
-1. Appuyez sur le logo Adobe Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres prédéfinis de lot]**.
+1. Appuyez sur le logo Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres prédéfinis de lot]**.
 1. Sur la page **[!UICONTROL Paramètres prédéfinis de lot]**, à gauche de la colonne **[!UICONTROL Nom du paramètre prédéfini]**, cochez la case d’un ou de plusieurs paramètres prédéfinis de lot à supprimer d’un ou plusieurs dossiers.
 1. Dans la barre d’outils, appuyez sur **[!UICONTROL Supprimer le paramètre prédéfini de lot des dossiers]**.
 
@@ -228,7 +228,7 @@ Vous pouvez utiliser deux méthodes pour supprimer des paramètres prédéfinis 
 
 ### Suppression de paramètres prédéfinis de lot à partir de la page Propriétés d’un dossier {#remove-bsp-from-folders-via-properties}
 
-1. Appuyez sur le logo Adobe Experience Manager et accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**.
+1. Appuyez sur le logo Experience Manager et accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**.
 1. Accédez au dossier dans lequel vous souhaitez supprimer un ou plusieurs paramètres prédéfinis de lot.
 1. Sur la page, à gauche de la colonne **[!UICONTROL Nom]**, cochez la case d’un dossier.
 1. Dans la barre d’outils, appuyez sur **[!UICONTROL Propriétés]**.
@@ -250,7 +250,7 @@ Si vous souhaitez *supprimer les paramètres prédéfinis* des dossiers à la pl
 
 **Pour supprimer des paramètres prédéfinis de lot :**
 
-1. Appuyez sur le logo Adobe Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres prédéfinis de lot]**.
+1. Appuyez sur le logo Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres prédéfinis de lot]**.
 1. Sur la page **[!UICONTROL Paramètres prédéfinis de lot]**, à gauche de la colonne **[!UICONTROL Nom du paramètre prédéfini]**, cochez la case d’un ou plusieurs paramètres prédéfinis de lot à supprimer.
 1. Dans la barre d’outils, appuyez sur **[!UICONTROL Supprimer les paramètres prédéfinis d’ensemble par lot]**.
 
