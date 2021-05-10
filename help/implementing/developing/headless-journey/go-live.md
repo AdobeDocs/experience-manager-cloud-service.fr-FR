@@ -107,7 +107,7 @@ Une fois que vous avez testé tout votre code et votre contenu localement, vous 
    * Utiliser les API du journal Splunk pour accéder aux performances du service et de l&#39;application
    * Contactez l’assistance clientèle si d’autres problèmes se produisent.
 
-## Résolution des incidents {#troubleshooting}
+## Résolution des problèmes {#troubleshooting}
 
 ### Débogage {#debugging}
 
