@@ -3,10 +3,10 @@ title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 translation-type: tm+mt
-source-git-commit: d55eb86afd9973e428c8738db181f79dcd55accb
+source-git-commit: 42c6d904fb484435572544147936b50b9a277dcf
 workflow-type: tm+mt
-source-wordcount: '2675'
-ht-degree: 73%
+source-wordcount: '2731'
+ht-degree: 72%
 
 ---
 
@@ -53,12 +53,13 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * La *phase d’ingestion* de l’auteur réduira l’ensemble du déploiement de l’auteur. L’auteur AEM ne sera donc pas disponible pendant la totalité du processus d’ingestion. Assurez-vous également qu’aucun pipeline Cloud Manager n’est exécuté pendant que vous exécutez la phase d’*ingestion*.
 
+* Lorsque vous utilisez `Amazon S3` ou `Azure` comme magasin de données sur le système d&#39;AEM source, le magasin de données doit être configuré de sorte que les objets bloqués ne puissent pas être supprimés (déchets collectés). Il s&#39;agit d&#39;assurer l&#39;intégrité des données d&#39;index. Si vous ne le configurez pas de cette manière, les extractions risquent d’échouer en raison du manque d’intégrité des données de cet index.
 
 ## Disponibilité {#availability}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_download"
->title="Téléchargement"
+>title="Télécharger"
 >abstract="Il est possible de télécharger l’outil de transfert de contenu dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le module par le biais du gestionnaire de modules sur votre instance source Adobe Experience Manager (AEM). Veillez à télécharger la dernière version."
 >additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="Notes de mise à jour"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Portail de distribution de logiciels"
@@ -248,7 +249,7 @@ Une fois le processus d’ingestion terminé, vous pouvez utiliser le contenu di
 >id="aemcloud_ctt_logs"
 >title="Affichage des journaux"
 >abstract="Une fois l&#39;Extraction de l&#39;embouteillage terminée, recherchez dans les journaux toute erreur ou avertissement. Toute erreur doit être corrigée immédiatement soit en traitant les problèmes signalés, soit en contactant l&#39;Adobe."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#troubleshooting" text="Résolution des incidents"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#troubleshooting" text="Résolution des problèmes"
 >additional-url="https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/support-for-experience-cloud.ug.html" text="Contacter le support technique d’Adobe"
 
 Une fois chaque étape terminée (extraction et assimilation), vérifiez les journaux et recherchez les erreurs.  Toute erreur doit être corrigée immédiatement soit en traitant les problèmes signalés, soit en contactant l&#39;Adobe.
