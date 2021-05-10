@@ -4,14 +4,14 @@ description: Dans cette partie du Parcours AEM développement sans tête, décou
 hide: true
 hidefromtoc: true
 index: false
+exl-id: d96f02b3-d650-4b9e-addf-409d31c80372
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: 7df3620e6f58336de2ac29dd496a888b17606d7f
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1651'
 ht-degree: 0%
 
 ---
-
 
 # En savoir plus sur le développement sans tête de CMS {#learn-about}
 
@@ -50,15 +50,15 @@ La complexité des dépendances au sein de la pile devient rapidement visible lo
 
 ## Limites de la Diffusion de pile complète {#limits}
 
-L’approche de pile complète crée un silo où toutes les expériences atterrissent dans un système unique. Les modifications ou les ajouts au composant du silo nécessitent des modifications d&#39;autres composants, ce qui nécessite beaucoup de temps et coûte cher.
+L’approche de pile complète crée un silo où toutes les expériences atterrissent dans un système unique. Les modifications ou les ajouts à un composant du silo nécessitent des modifications à d&#39;autres composants, ce qui peut entraîner des changements coûteux et chronophages.
 
-Cela est particulièrement vrai pour la couche de présentation, qui dans les systèmes traditionnels, est souvent étroitement liée au CMS. Tout nouveau canal signifie généralement une mise à jour de la couche de présentation, qui affecte tous les autres canaux.
+Cela est particulièrement vrai pour le système de présentation, qui dans les configurations traditionnelles, est souvent étroitement lié au CMS. Tout nouveau canal signifie généralement une mise à jour du système de présentation, qui peut affecter tous les autres canaux.
 
 ![La complexité augmente à mesure que des canaux sont ajoutés à une pile](assets/presentation-complexity.png)
 
-Les limites de ce silo naturel sont visibles lorsque vous réalisez combien d’efforts et de temps sont nécessaires pour coordonner les changements entre tous les composants de votre pile.
+Les limites de ce silo naturel peuvent devenir évidentes lorsque vous consacrez plus d&#39;efforts à la coordination des modifications entre tous les composants de votre pile.
 
-Les utilisateurs s’attendent à un engagement quel que soit la plate-forme ou le point de contact, ce qui nécessite une certaine agilité dans la manière dont vous proposez vos expériences.  Cette approche multicanal est la norme des expériences numériques et une approche à pile entière peut parfois s&#39;avérer inflexible.
+Les utilisateurs s’attendent à un engagement quel que soit la plate-forme ou le point de contact, ce qui nécessite une certaine agilité dans la manière dont vous proposez vos expériences.  Cette approche multicanal est la norme des expériences numériques et une approche à pile complète peut dans certaines circonstances s&#39;avérer inflexible.
 
 ## La tête sans tête {#the-head}
 
@@ -72,15 +72,15 @@ Lorsque nous parlons d&#39;un CMS sans tête, le CMS gère le contenu et continu
 
 Les services de consommation, qu’il s’agisse d’expériences AR, d’un webshop, d’expériences mobiles, d’applications Web progressives (PWA), etc., intègrent le contenu du CMS sans en-tête et fournissent leur propre rendu. Ils s&#39;occupent de donner leur propre tête pour votre contenu.
 
-Le fait d&#39;omettre la tête simplifie considérablement le CMS en supprimant une grande complexité. Cette opération déplace également la responsabilité de rendre le contenu aux services qui ont réellement besoin du contenu et qui sont souvent mieux adaptés à un tel rendu.
+En omettant la tête, vous simplifiez le CMS en supprimant la complexité. Cette opération déplace également la responsabilité de rendre le contenu aux services qui ont réellement besoin du contenu et qui sont souvent mieux adaptés à un tel rendu.
 
 ## Découplage {#decoupling}
 
 Une diffusion sans tête est possible en exposant un ensemble d’interfaces de programmation d’applications (API) robustes et flexibles, auxquelles toutes vos expériences peuvent s’appuyer. L’API sert de langage commun entre les services, les liant ensemble au niveau du contenu par le biais d’une diffusion de contenu normalisée, mais leur permettant de mettre en oeuvre leurs propres solutions.
 
-L’absence d’en-tête est un exemple de découplage du contenu de sa présentation. Ou dans un sens plus générique, découpler le front end de l&#39;arrière-plan de votre pile de services. Dans une configuration sans tête, la couche de présentation (la tête) est découplée de la gestion de contenu (la queue). Les deux interagissent uniquement par le biais d’appels d’API.
+L’absence d’en-tête est un exemple de découplage du contenu de sa présentation. Ou dans un sens plus générique, découpler le front end de l&#39;arrière-plan de votre pile de services. Dans une configuration sans tête, le système de présentation (la tête) est découplé de la gestion de contenu (la queue). Les deux interagissent uniquement par le biais d’appels d’API.
 
-Ce découplage signifie que chaque service de consommation (principal) peut développer son expérience en fonction du même contenu diffusé sur les API, ce qui garantit la réutilisation et la cohérence du contenu. Les services de consommation peuvent alors mettre en oeuvre leurs propres couches de présentation, ce qui permet à la pile de gestions de contenu (l’arrière-plan) de se mettre à l’échelle horizontalement.
+Ce découplage signifie que chaque service de consommation (principal) peut développer son expérience en fonction du même contenu diffusé sur les API, ce qui garantit la réutilisation et la cohérence du contenu. Les services de consommation peuvent alors mettre en oeuvre leurs propres systèmes de présentation, ce qui permet à la pile de gestions de contenu (l&#39;arrière-plan) de se mettre à l&#39;échelle horizontalement.
 
 ## Les fondements technologiques {#technology}
 
@@ -88,7 +88,7 @@ Une approche sans tête vous permet de créer une pile technologique qui peut s&
 
 Dans le passé, les API pour les CMS étaient généralement basées sur REST. Le transfert d&#39;État de représentation (REST) fournit des ressources sous forme de texte sans état. Cela permet de lire et de modifier les ressources à l’aide d’un jeu d’opérations prédéfini. REST a permis une grande interopérabilité entre les services sur le Web en assurant une représentation sans état du contenu.
 
-Et il est toujours nécessaire d&#39;avoir des API REST robustes. Cependant, les demandes REST peuvent être volumineuses et détaillées. Si plusieurs consommateurs effectuent des appels REST pour tous vos canaux, cette verbosité peut être affectée et les performances peuvent être affectées.
+Il est toujours nécessaire d’utiliser des API REST robustes. Cependant, les demandes REST peuvent être volumineuses et détaillées. Si plusieurs consommateurs effectuent des appels REST pour tous vos canaux, cette verbosité peut être affectée et les performances peuvent être affectées.
 
 La diffusion de contenu sans en-tête utilise souvent les API GraphQL. GraphQL permet un transfert sans état similaire, mais permet des requêtes plus ciblées, réduisant le nombre total de requêtes requises et améliorant les performances. Il est courant de voir les solutions utiliser un mélange de REST et GraphQL, en choisissant essentiellement le meilleur outil pour le travail à accomplir.
 
@@ -116,9 +116,9 @@ Il est impossible de prédire l&#39;avenir, mais l&#39;absence de tête vous don
 
 Au fil de ce parcours de développement, vous découvrirez comment AEM prend en charge la diffusion sans tête en plus de ses capacités de diffusion de pile complète.
 
-En tant que leader du secteur de la gestion de l’expérience numérique, l’Adobe se rend compte que la solution idéale à un réel défi auquel sont confrontés les créateurs d’expérience est rarement un choix binaire. C&#39;est pourquoi AEM ne prend pas seulement en charge les deux modèles, mais permet également de manière unique la combinaison homogène hybride des deux pour vous aider à mieux servir les consommateurs de votre contenu. Où qu&#39;ils soient.
+En tant que leader du secteur de la gestion de l&#39;expérience numérique, l&#39;Adobe se rend compte que la solution idéale aux défis du monde réel auxquels les créateurs d&#39;expériences sont confrontés est rarement un choix binaire. C&#39;est pourquoi AEM ne prend pas seulement en charge les deux modèles, mais permet également de manière unique la combinaison homogène hybride des deux, en mélangeant les avantages de la pile sans tête et complète, pour vous aider à mieux servir les consommateurs de votre contenu, où qu&#39;ils soient.
 
-Ce parcours se concentre sur le modèle de diffusion de contenu sans en-tête uniquement. Cependant, une fois que vous avez posé cette base de connaissances, vous pouvez explorer plus avant comment tirer parti de la puissance des deux modèles.
+Ce parcours se concentre sur le modèle de diffusion de contenu sans en-tête uniquement. Cependant, une fois que vous disposez de ces connaissances fondamentales, vous pouvez explorer plus avant comment tirer parti de la puissance des deux modèles.
 
 ## Eléments suivants {#what-is-next}
 
