@@ -1,15 +1,15 @@
 ---
 title: Bonnes pratiques relatives à l’optimisation de la qualité des images
-description: Découvrez les meilleures pratiques que vous pouvez utiliser dans Dynamic Media pour optimiser la qualité de vos ressources d’images.
+description: Découvrez les meilleures pratiques pour optimiser la qualité de vos fichiers d’image à l’aide de Dynamic Media.
 contentOwner: Rick Brough
 feature: Gestion des ressources
 role: Business Practitioner
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '1454'
-ht-degree: 92%
+source-wordcount: '1478'
+ht-degree: 79%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 92%
 
 L’optimisation de la qualité des images peut être un processus chronophage, car de nombreux facteurs contribuent à l’obtention de résultats acceptables. Le résultat est en partie subjectif car les individus perçoivent la qualité des images de manière différente. Une expérimentation structurée est la clé.
 
-AEM comprend plus de 100 commandes de diffusion d’images Dynamic Media permettant d’affiner et d’optimiser les images et le rendu. Les conseils suivants vous aideront à simplifier le processus et à obtenir rapidement de bons résultats en utilisant quelques commandes essentielles et en appliquant les bonnes pratiques.
+Adobe Experience Manager comprend plus de 100 commandes de diffusion d’images Dynamic Media pour le réglage et l’optimisation des images et des résultats de rendu. Les instructions suivantes peuvent vous aider à rationaliser le processus et à obtenir de bons résultats rapidement à l’aide de commandes essentielles et de pratiques recommandées.
 
 ## Bonnes pratiques relatives au format d’image (`&fmt=`) {#best-practices-for-image-format-fmt}
 
@@ -41,13 +41,13 @@ Pour le dimensionnement des images, il est recommandé d’utiliser `&wid=<value
 
 ## Bonnes pratiques relatives à l’accentuation des images {#best-practices-for-image-sharpening}
 
-L’accentuation des images est l’aspect le plus complexe du contrôle des images du site web, processus au cours duquel de nombreuses erreurs sont commises. Prenez le temps d’en savoir plus sur le fonctionnement de l’accentuation et du masquage flou dans AEM en vous référant aux ressources suivantes :
+L’accentuation des images est l’aspect le plus complexe du contrôle des images du site web, processus au cours duquel de nombreuses erreurs sont commises. Prenez le temps d’en savoir plus sur le fonctionnement de l’accentuation et du masquage flou en Experience Manager en consultant les ressources utiles suivantes :
 
-* Le livre blanc relatif aux bonnes pratiques [Accentuation des images dans Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) s’applique également à AEM.
+* Le livre blanc Meilleures pratiques [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf) s’applique également au Experience Manager.
 
-* Regardez [Utilisation de l’accentuation des images avec l’AEM Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
+* Regardez [Utilisation de l’accentuation des images avec le Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
-Avec AEM, vous pouvez accentuer les images lors de l’assimilation, lors de la distribution, ou les deux. En général, cependant, il est préférable d’accentuer les images en utilisant une seule méthode ou l’autre, mais pas les deux. L’accentuation des images lors de la distribution, sur une URL, produit généralement les meilleurs résultats.
+Avec Experience Manager, vous pouvez accentuer les images lors de l’assimilation, de la diffusion ou les deux. En général, cependant, il est préférable d’accentuer les images en utilisant une seule méthode ou l’autre, mais pas les deux. L’accentuation des images lors de la distribution, sur une URL, produit généralement les meilleurs résultats.
 
 Il existe deux méthodes d’accentuation des images que vous pouvez utiliser :
 
@@ -66,11 +66,11 @@ Il existe deux méthodes d’accentuation des images que vous pouvez utiliser :
 
       Pour plus d’informations sur la façon de définir ces trois paramètres, y compris les bonnes pratiques à appliquer avec le filtre, reportez-vous aux ressources suivantes :
 
-      Rubrique d’aide d’AEM sur l’accentuation d’une image.
+      * Le livre blanc Meilleures pratiques [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf) s’applique également au Experience Manager.
 
-      Livre blanc [Bonnes pratiques relatives à la qualité et à l’accentuation des images dans Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf).
+      * Regardez [Utilisation de l’accentuation des images avec le Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
-      * AEM permet également de contrôler un quatrième paramètre : monochrome (0,1). Ce paramètre détermine si le masquage flou est appliqué séparément à chaque composante de couleur en utilisant la valeur 0, ou à la luminosité/intensité de l’image en utilisant la valeur 1.
+      * Experience Manager vous permet également de contrôler un quatrième paramètre : monochrome (0,1). Ce paramètre détermine si le masquage flou est appliqué séparément à chaque composante de couleur en utilisant la valeur 0 ou à la luminosité/intensité de l’image en utilisant la valeur 1.
 
 
 
@@ -100,7 +100,7 @@ La bonne pratique pour la compression JPG consiste à utiliser `&qlt=85,0`.
 
 ## Bonnes pratiques relatives au dimensionnement JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
 
-`jpegSize`Le paramètre  est utile pour garantir qu’une image n’excède pas une certaine taille pour sa diffusion sur les appareils dont la mémoire est limitée.
+Le paramètre `jpegSize` est utile si vous souhaitez garantir qu&#39;une image ne dépasse pas une certaine taille pour la diffusion sur des périphériques dont la mémoire est limitée.
 
 * Ce paramètre est défini en kilo-octets (`jpegSize=&lt;size_in_kilobytes&gt;`). Il définit la taille maximale autorisée pour la diffusion de l’image.
 * `&jpegSize=` interagit avec le paramètre de compression JPG `&qlt=`. Si la réponse JPG avec le paramètre de compression JPG spécifié (`&qlt=`) ne dépasse pas la valeur jpegSize, l’image est renvoyée avec `&qlt=` tel que défini. Sinon, `&qlt=` est graduellement diminué jusqu’à ce que l’image soit ajustée à la taille maximale autorisée ou jusqu’à ce que le système détermine qu’il ne peut pas procéder à l’ajustement et renvoie une erreur.
@@ -123,4 +123,4 @@ Au fur et à mesure que vous testez, les suggestions générales suivantes s’a
 
 * Testez différents paramètres en temps réel, directement sur une URL.
 * Gardez à l’esprit que vous pouvez regrouper les commandes de diffusion d’images Dynamic Media dans un paramètre d’image prédéfini. Il s’agit en outre d’une bonne pratique. Un paramètre d’image prédéfini est, en fait, constitué de macros de commande d’URL avec des noms de paramètres prédéfinis personnalisés tels que `$thumb_low$` et `&product_high$`. Le nom du paramètre prédéfini personnalisé dans un chemin d’URL appelle ces paramètres prédéfinis. Cette fonctionnalité vous aide à gérer les commandes et les paramètres de qualité pour différents modèles d’utilisation des images sur vos sites web et raccourcit la longueur globale des URL.
-* Experience Manager propose également des méthodes plus avancées pour régler la qualité de l’image, telles que l’application d’une accentuation des images lors de l’assimilation. Pour affiner et optimiser les résultats de rendu, [Adobe Professional Services](https://www.adobe.com/fr/experience-cloud/consulting-services.html) peut vous aider à personnaliser vos informations et les meilleures pratiques.
+* Experience Manager propose également des méthodes plus avancées pour régler la qualité de l’image, telles que l’application d’une accentuation des images lors de l’assimilation. Pour optimiser les résultats de rendu, [les services de conseil à l&#39;Adobe](https://business.adobe.com/customers/consulting-services/main.html) peuvent vous aider à personnaliser vos informations et vos meilleures pratiques.
