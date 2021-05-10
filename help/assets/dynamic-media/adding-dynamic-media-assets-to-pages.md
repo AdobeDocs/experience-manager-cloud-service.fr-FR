@@ -6,10 +6,10 @@ feature: Gestion des ressources
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '3085'
-ht-degree: 70%
+source-wordcount: '3098'
+ht-degree: 61%
 
 ---
 
@@ -27,7 +27,7 @@ Si vous utilisez Experience Manager comme système de gestion de contenu web, vo
 
 L’ajout d’un composant Média 3D, Dynamic Media, Média interactif, Média panoramique, Recadrage intelligent de la vidéo ou Média vidéo 360 à une page est identique à l’ajout d’un composant sur n’importe quelle page.
 
-**Ajout d’un composant Dynamic Media à une page**
+**Pour ajouter un composant Dynamic Media à une page :**
 
 1. Dans Experience Manager, ouvrez la page où vous souhaitez ajouter le composant Dynamic Media.
 1. Dans le volet de gauche, appuyez sur l’icône **[!UICONTROL Composants]** puis définissez un filtre Dynamic Media.
@@ -130,7 +130,7 @@ L’affectation d’un paramètre prédéfini de visionneuse différent à chaqu
 
 Si vous ajoutez le composant Média dynamique et si l’option **[!UICONTROL Paramètres de média dynamique]** est vide ou s’il est impossible d’ajouter correctement une ressource, vérifiez les points suivants :
 
-* L’image possède un fichier pyramid tiff. Les images importées avant l’activation de Dynamic Media n’ont pas de fichier pyramidal tiff.
+* L’image possède un fichier pyramid tiff. Les images importées avant que vous n’activiez Dynamic Media ne comportent pas de fichier pyramidal tiff.
 
 #### En cas d’utilisation d’images  {#when-working-with-images}
 
@@ -140,45 +140,45 @@ Vous pouvez également configurer directement dans le composant les paramètres 
 
 Vous pouvez modifier les paramètres Dynamic Media ci-après en appuyant sur **[!UICONTROL Modifier]** dans le composant, puis sur **[!UICONTROL Paramètres de média dynamique]**.
 
-![dm-settings-image-preset](assets/dm-settings-image-preset.png)
+![Paramètres d’image prédéfinis Dynamic Media](assets/dm-settings-image-preset.png)
 
 >[!NOTE]
 >
 >Par défaut, le composant d’image Dynamic Media est adaptatif. Si vous souhaitez faire en sorte qu’il ait une taille fixe, définissez-la dans le composant de l’onglet **[!UICONTROL Avancé]** à l’aide des options **[!UICONTROL Largeur]** et **[!UICONTROL Hauteur]**.
 
-* **[!UICONTROL Paramètre]** prédéfini de visionneuse : sélectionnez un paramètre prédéfini de visionneuse existant dans la liste déroulante. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devez le rendre visible. Voir Gestion des paramètres prédéfinis de visionneuse. Vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse si vous utilisez un paramètre d’image prédéfini et inversement.
+* **[!UICONTROL Paramètre]**  prédéfini de visionneuse : sélectionnez un paramètre prédéfini de visionneuse existant dans la liste déroulante. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devez le rendre visible. Voir Gestion des paramètres prédéfinis de visionneuse. Vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse si vous utilisez un paramètre d’image prédéfini et inversement.
 
    Cette option est la seule disponible si vous visualisez des visionneuses d’images, des visionneuses à 360° ou des visionneuses de supports variés. Les paramètres prédéfinis de la visionneuse affichés sont également des paramètres prédéfinis appropriés de visionneuse uniquement intelligents.
 
-* **[!UICONTROL Modificateurs de visionneuse]** : les modificateurs de visionneuse prennent la forme d’une paire nom=valeur avec un délimiteur &amp; et permettent de modifier les visionneuses comme indiqué dans le Guide de référence des visionneuses. Un exemple de modificateur de visionneuse est `posterimage=img.jpg&caption=text.vtt,1`, qui définit une image différente pour la miniature de la vidéo et associe un fichier de légende/sous-titre à la vidéo.
+* **[!UICONTROL Modificateurs]**  de visionneuse : les modificateurs de visionneuse prennent la forme d’une paire nom=valeur avec un délimiteur &amp; et vous permettent de modifier les visionneuses comme l’indique le Guide de référence des visionneuses. Un exemple de modificateur de visionneuse est `posterimage=img.jpg&caption=text.vtt,1`, qui définit une image différente pour la miniature de la vidéo et associe un fichier de légende/sous-titre à la vidéo.
 
-* **[!UICONTROL Paramètre]** d&#39;image prédéfini : sélectionnez un paramètre d&#39;image prédéfini existant dans la liste déroulante. Si le paramètre d’image prédéfini que vous recherchez n’est pas visible, vous devez le rendre visible. Voir Gestion des paramètres d’image prédéfinis. Vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse si vous utilisez un paramètre d’image prédéfini et inversement.
-
-   Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de supports variés.
-
-* **[!UICONTROL Modificateurs]** d&#39;image : vous pouvez appliquer des effets d&#39;image en fournissant davantage de commandes d&#39;image. Ces commandes sont décrites dans la section Paramètres d’image prédéfinis et la référence de la commande Image Serving.
+* **[!UICONTROL Paramètre]**  d’image prédéfini : sélectionnez un paramètre d’image prédéfini existant dans la liste déroulante. Si le paramètre d’image prédéfini que vous recherchez n’est pas visible, vous devez le rendre visible. Voir Gestion des paramètres d’image prédéfinis. Vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse si vous utilisez un paramètre d’image prédéfini et inversement.
 
    Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de supports variés.
 
-* **[!UICONTROL Points d&#39;arrêt]** : si vous utilisez ce fichier sur un site réactif, vous devez ajouter les points d&#39;arrêt d&#39;image. Les points d’arrêt d’image doivent être séparés par des virgules (,). Cette option fonctionne lorsqu’il n’existe aucune valeur de hauteur ou largeur définie dans un paramètre d’image prédéfini.
+* **[!UICONTROL Modificateurs]**  d&#39;image : vous pouvez appliquer des effets d&#39;image en fournissant davantage de commandes d&#39;image. Ces commandes sont décrites dans la section Paramètres d’image prédéfinis et la référence de la commande Image Serving.
+
+   Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de supports variés.
+
+* **[!UICONTROL Points d’arrêt]**  : si vous utilisez ce fichier sur un site réactif, vous devez ajouter les points d’arrêt d’image. Les points d’arrêt d’image doivent être séparés par des virgules (,). Cette option fonctionne lorsqu’il n’existe aucune valeur de hauteur ou largeur définie dans un paramètre d’image prédéfini.
 
    Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de supports variés.
 
    Vous pouvez modifier les paramètres avancés ci-après en appuyant sur **[!UICONTROL Modifier]** dans le composant.
 
-* **[!UICONTROL Titre]** : modifiez le titre de l’image.
+* **[!UICONTROL Titre]**  - Modifie le titre de l&#39;image.
 
-* **[!UICONTROL Texte secondaire]** : ajoutez un titre à l’image pour les utilisateurs pour lesquels les graphiques sont désactivés.
-
-   Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de supports variés.
-
-* **[!UICONTROL URL, Ouvrir dans]** : vous pouvez définir une ressource pour ouvrir un lien. Définissez l’URL, puis dans le champ Ouvrir dans, indiquez si vous souhaitez l’ouvrir dans la même fenêtre ou une nouvelle fenêtre.
+* **[!UICONTROL Texte]**  de remplacement : Ajoutez un titre à l&#39;image pour les utilisateurs dont les graphiques sont désactivés.
 
    Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de supports variés.
 
-* **[!UICONTROL Largeur]** : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+* **[!UICONTROL URL, Ouvrir dans]**  : vous pouvez définir un fichier pour ouvrir un lien. Définissez l’URL, puis dans le champ Ouvrir dans, indiquez si vous souhaitez l’ouvrir dans la même fenêtre ou une nouvelle fenêtre.
 
-* **[!UICONTROL Hauteur]** : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+   Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de supports variés.
+
+* **[!UICONTROL Largeur]**  - Saisissez une valeur en pixels si vous souhaitez que l’image ait une taille fixe. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+
+* **[!UICONTROL Hauteur]**  - Saisissez une valeur en pixels si vous souhaitez que l&#39;image soit d&#39;une taille fixe. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
 
 
 #### En cas d’utilisation de vidéos {#when-working-with-video}
@@ -193,9 +193,9 @@ Vous pouvez modifier les paramètres Dynamic Media ci-après en cliquant sur **
 >
 >Par défaut le composant vidéo Dynamic Media est adaptatif. Si vous souhaitez lui donner une taille fixe, définissez-la sous l’onglet **[!UICONTROL Avancé]** du composant, grâce aux options **[!UICONTROL Largeur]** et **[!UICONTROL Hauteur]**.
 
-* **[!UICONTROL Paramètre prédéfini]** de visionneuse : sélectionnez un paramètre prédéfini existant dans la liste déroulante. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devez le rendre visible. Voir Gestion des paramètres prédéfinis de visionneuse.
+* **[!UICONTROL Paramètre]**  prédéfini de visionneuse : sélectionnez un paramètre prédéfini de visionneuse de vidéos existant dans la liste déroulante. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devez le rendre visible. Voir Gestion des paramètres prédéfinis de visionneuse.
 
-* **[!UICONTROL Modificateurs]** de visionneuse : les modificateurs de visionneuse prennent la forme d’une  `name=value` paire avec un  `&` délimiteur. Ils vous permettent de modifier les visionneuses comme l’indique le Guide de référence des visionneuses d’Adobes. Un exemple de modificateur de visionneuse est `posterimage=img.jpg&caption=text.vtt,1`
+* **[!UICONTROL Modificateurs]**  de visionneuse : les modificateurs de visionneuse prennent la forme d’une  `name=value` paire avec un  `&` délimiteur. Ils vous permettent de modifier les visionneuses comme l’indique le Guide de référence des visionneuses d’Adobes. Un exemple de modificateur de visionneuse est `posterimage=img.jpg&caption=text.vtt,1`
 
    Avec les modificateurs de visionneuse, vous pouvez, par exemple, effectuer les opérations suivantes :
 
@@ -204,11 +204,11 @@ Vous pouvez modifier les paramètres Dynamic Media ci-après en cliquant sur **
 
       Vous pouvez modifier les paramètres avancés ci-après en cliquant sur **[!UICONTROL Modifier]** dans le composant.
 
-* **[!UICONTROL Titre]** : modifiez le titre de la vidéo.
+* **[!UICONTROL Titre]**  - Modifiez le titre de la vidéo.
 
-* **[!UICONTROL Largeur]** : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+* **[!UICONTROL Largeur]**  - Saisissez une valeur en pixels si vous souhaitez que l’image ait une taille fixe. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
 
-* **[!UICONTROL Hauteur]** : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+* **[!UICONTROL Hauteur]**  - Saisissez une valeur en pixels si vous souhaitez que l&#39;image soit d&#39;une taille fixe. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
 
 #### Lorsque vous utilisez le recadrage intelligent {#when-working-with-smart-crop}
 
@@ -218,7 +218,7 @@ Voir [Utilisation du recadrage dynamique avec Experience Manager Assets Dynamic�
 
 Voir aussi [Profils d’image](/help/assets/dynamic-media/image-profiles.md).
 
-![dm-settings-smart-crop](assets/dm-settings-smart-crop.png)
+![Paramètres de recadrage intelligent Dynamic Media](assets/dm-settings-smart-crop.png)
 
 Vous pouvez modifier le paramètre Dynamic Media suivant en cliquant sur **[!UICONTROL Modifier]** dans le composant.
 
@@ -226,27 +226,27 @@ Vous pouvez modifier le paramètre Dynamic Media suivant en cliquant sur **[!UI
 >
 >Par défaut, le composant d’image Dynamic Media est adaptatif. Si vous souhaitez faire en sorte qu’il ait une taille fixe, définissez-la dans le composant de l’onglet **[!UICONTROL Avancé]** à l’aide des options **[!UICONTROL Largeur]** et **[!UICONTROL Hauteur]**.
 
-* **[!UICONTROL Modificateurs]** d&#39;image : vous pouvez appliquer des effets d&#39;image en fournissant davantage de commandes d&#39;image. Ces commandes sont décrites dans la section Paramètres d’image prédéfinis et la référence de la commande Image Serving.
+* **[!UICONTROL Modificateurs]**  d&#39;image : vous pouvez appliquer des effets d&#39;image en fournissant davantage de commandes d&#39;image. Ces commandes sont décrites dans la section Paramètres d’image prédéfinis et la référence de la commande Image Serving.
 
    Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de supports variés.
 
    Vous pouvez modifier les paramètres avancés ci-après en cliquant sur **[!UICONTROL Modifier]** dans le composant.
 
-* **[!UICONTROL Activer la correspondance]** des proportions : pour permettre à Dynamic Media de sélectionner un rendu de recadrage intelligent avec un format qui correspond le mieux au format de l&#39;image d&#39;origine, sélectionnez cette option.
+* **[!UICONTROL Activer la correspondance]**  des proportions : pour permettre à Dynamic Media de sélectionner un rendu de recadrage intelligent avec un format qui correspond le mieux au format de l&#39;image d&#39;origine, sélectionnez cette option.
 
-* **[!UICONTROL Titre]** : modifiez le titre d’une image avec recadrage intelligent.
+* **[!UICONTROL Titre]**  - Modifiez le titre de l&#39;image de recadrage dynamique.
 
-* **[!UICONTROL Texte secondaire]** : ajoutez un titre à l’image avec recadrage intelligent pour les utilisateurs pour lesquels les graphiques sont désactivés.
-
-   Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de supports variés.
-
-* **[!UICONTROL URL, Ouvrir dans]** : vous pouvez définir une ressource pour ouvrir un lien. Définissez l’URL, puis dans le champ Ouvrir dans, indiquez si vous souhaitez l’ouvrir dans la même fenêtre ou une nouvelle fenêtre.
+* **[!UICONTROL Texte]**  de remplacement : Ajoutez un titre à l&#39;image de recadrage dynamique pour les utilisateurs dont les graphiques sont désactivés.
 
    Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de supports variés.
 
-* **[!UICONTROL Largeur]** : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+* **[!UICONTROL URL, Ouvrir dans]**  : vous pouvez définir un fichier pour ouvrir un lien. Définissez l’URL, puis dans le champ Ouvrir dans, indiquez si vous souhaitez l’ouvrir dans la même fenêtre ou une nouvelle fenêtre.
 
-* **[!UICONTROL Hauteur]** : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+   Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de supports variés.
+
+* **[!UICONTROL Largeur]**  - Saisissez une valeur en pixels si vous souhaitez que l’image ait une taille fixe. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+
+* **[!UICONTROL Hauteur]**  - Saisissez une valeur en pixels si vous souhaitez que l&#39;image soit d&#39;une taille fixe. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
 
 ### Composant : Média interactif {#interactive-media-component}
 
@@ -271,21 +271,21 @@ L’affectation d’un paramètre prédéfini de visionneuse différent à chaqu
 
 Vous pouvez modifier les paramètres **[!UICONTROL Général]** ci-après en cliquant sur **[!UICONTROL Modifier]** dans le composant.
 
-* **[!UICONTROL Paramètre]** prédéfini de visionneuse : sélectionnez un paramètre prédéfini de visionneuse existant dans la liste déroulante. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devez le rendre visible. Les paramètres de visionneuse prédéfinis doivent être publiés avant de pouvoir être utilisés. Voir Gestion des paramètres prédéfinis de visionneuse.
+* **[!UICONTROL Paramètre]**  prédéfini de visionneuse : sélectionnez un paramètre prédéfini de visionneuse existant dans la liste déroulante. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devez le rendre visible. Les paramètres de visionneuse prédéfinis doivent être publiés avant de pouvoir être utilisés. Voir Gestion des paramètres prédéfinis de visionneuse.
 
-* **[!UICONTROL Titre]** : modifiez le titre de la vidéo.
+* **[!UICONTROL Titre]**  - Modifiez le titre de la vidéo.
 
-* **[!UICONTROL Largeur]** : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+* **[!UICONTROL Largeur]**  - Saisissez une valeur en pixels si vous souhaitez que l’image ait une taille fixe. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
 
-* **[!UICONTROL Hauteur]** : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+* **[!UICONTROL Hauteur]**  - Saisissez une valeur en pixels si vous souhaitez que l&#39;image soit d&#39;une taille fixe. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
 
    Vous pouvez modifier les paramètres **[!UICONTROL Ajouter au panier]** ci-après en cliquant sur **[!UICONTROL Modifier]** dans le composant.
 
-* **[!UICONTROL Afficher les ressources de produit]** : par défaut, cette valeur est sélectionnée. La ressource de produit affiche une image du produit telle que définie dans le module Commerce. Désactivez la case pour ne pas afficher la ressource de produit.
+* **[!UICONTROL Afficher le fichier]**  de produit : par défaut, cette valeur est sélectionnée. La ressource de produit affiche une image du produit telle que définie dans le module Commerce. Désactivez la case pour ne pas afficher la ressource de produit.
 
-* **[!UICONTROL Afficher le prix des produits]** : par défaut, cette valeur est sélectionnée. Le prix du produit affiche le prix de l’élément tel qu’il est défini dans le module Commerce. Désactivez la case pour ne pas afficher le prix du produit.
+* **[!UICONTROL Afficher le prix]**  du produit - Par défaut, cette valeur est sélectionnée. Le prix du produit affiche le prix de l’élément tel qu’il est défini dans le module Commerce. Désactivez la case pour ne pas afficher le prix du produit.
 
-* **[!UICONTROL Afficher le formulaire de produit]** : par défaut, cette valeur n’est pas sélectionnée. Le formulaire de produit contient toutes les variantes de produit, telles que la taille et la couleur. Désactivez la case pour ne pas afficher les variantes de produit.
+* **[!UICONTROL Afficher le formulaire]**  de produit - Par défaut, cette valeur n&#39;est pas sélectionnée. Le formulaire de produit contient toutes les variantes de produit, telles que la taille et la couleur. Désactivez la case pour ne pas afficher les variantes de produit.
 
 ### Composant : média panoramique {#panoramic-media-component}
 
@@ -309,11 +309,11 @@ L’affectation d’un paramètre prédéfini de visionneuse différent à chaqu
 >
 >Vous pouvez toutefois utiliser le même paramètre prédéfini de visionneuse pour tous les composants de média panoramique qui utilisent des éléments du même type, dans la page.
 
-![panoramic-media-viewer-preset](assets/panoramic-media-viewer-preset.png)
+![Paramètre prédéfini de visionneuse de médias panoramique](assets/panoramic-media-viewer-preset.png)
 
 Vous pouvez modifier le paramètre suivant en appuyant sur **[!UICONTROL Modifier]** dans le composant.
 
-* **[!UICONTROL Paramètre prédéfini]** de visionneuse : sélectionnez une visionneuse existante dans la liste déroulante Paramètre prédéfini de visionneuse.
+* **[!UICONTROL Paramètre]**  prédéfini de visionneuse : sélectionnez une visionneuse existante dans la liste déroulante Paramètre prédéfini de visionneuse.
 
 Si le paramètre prédéfini de la visionneuse que vous recherchez n’est pas visible, vérifiez qu’il est publié. Publiez les paramètres prédéfinis de la visionneuse avant de les utiliser. Voir [Gestion des paramètres prédéfinis de visionneuse](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -329,7 +329,7 @@ La visionneuse inclut une prise en charge native de la diffusion de ressources v
 
 Vous pouvez modifier le paramètre suivant en appuyant sur **[!UICONTROL Modifier]** dans le composant.
 
-* **[!UICONTROL Paramètre prédéfini]** de visionneuse : sélectionnez une visionneuse existante dans la liste déroulante Paramètre prédéfini de visionneuse. Utilisez Video360VR pour les utilisateurs finaux qui utilisent des lunettes de réalité virtuelle. Inclut les commandes de lecture vidéo de base et les fonctions de réseaux sociaux. Utilisez Video360_social, qui inclut les commandes de lecture vidéo de base. Le rendu vidéo est effectué en mode stéréo. Le contrôle manuel du point de vue est désactivé, mais la commande gyroscopique est activée. Il n&#39;y a aucune fonctionnalité de médias sociaux.
+* **[!UICONTROL Paramètre]**  prédéfini de visionneuse : sélectionnez une visionneuse existante dans la liste déroulante Paramètre prédéfini de visionneuse. Utilisez Video360VR pour les utilisateurs finaux qui utilisent des lunettes de réalité virtuelle. Inclut les commandes de lecture vidéo de base et les fonctions de réseaux sociaux. Utilisez Video360_social, qui inclut les commandes de lecture vidéo de base. Le rendu vidéo est effectué en mode stéréo. Le contrôle manuel du point de vue est désactivé, mais la commande gyroscopique est activée. Il n&#39;y a aucune fonctionnalité de médias sociaux.
 
 Si le paramètre prédéfini de la visionneuse que vous recherchez n’est pas visible, vérifiez qu’il est publié. Publiez les paramètres prédéfinis de la visionneuse avant de les utiliser. Voir [Gestion des paramètres prédéfinis de visionneuse](/help/assets/dynamic-media/managing-viewer-presets.md).
 
