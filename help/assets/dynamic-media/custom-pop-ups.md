@@ -1,18 +1,18 @@
 ---
 title: Utilisation de vues rapides pour créer des fenêtres contextuelles personnalisées
-description: '"Découvrez comment la vue rapide par défaut est utilisée dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec les informations sur les produits pour générer un achat. Vous pouvez déclencher l’affichage d’un contenu personnalisé dans les fenêtres contextuelles."'
+description: '"Découvrez comment la vue rapide par défaut est utilisée dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec les informations sur les produits pour générer un achat. Vous pouvez déclencher l’affichage d’un contenu personnalisé dans la fenêtre contextuelle de Windows®."'
 feature: Images interactives, Vidéos interactives, Bannières de carrousel
 role: Administrator,Business Practitioner
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 44%
+ht-degree: 43%
 
 ---
 
-# Utilisation de vues rapides pour créer des fenêtres contextuelles personnalisées {#using-quickviews-to-create-custom-pop-ups}
+# Utilisation de vues rapides pour créer une fenêtre contextuelle personnalisée sous Windows® {#using-quickviews-to-create-custom-pop-ups}
 
 La vue rapide par défaut est utilisée dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec les informations sur le produit pour générer un achat. Cependant, vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles. En fonction de la visionneuse que vous utilisez, les clients peuvent appuyer sur une zone réactive, une image miniature ou une zone cliquable pour afficher des informations ou du contenu associé.
 
@@ -24,7 +24,7 @@ Les vues rapides sont prises en charge par les lecteurs suivants dans Dynamic Me
 
 Bien que les fonctionnalités de chaque lecteur diffèrent, le processus de création d’une vue rapide est le même pour les trois lecteurs pris en charge.
 
-**Pour utiliser des vues rapides pour créer des fenêtres contextuelles personnalisées**
+**Pour utiliser des vues rapides pour créer des fenêtres contextuelles personnalisées sous Windows® :**
 
 1. Créez une vue rapide pour un fichier téléchargé.
 
@@ -101,8 +101,8 @@ Bien que les fonctionnalités de chaque lecteur diffèrent, le processus de cré
 
    Pour en savoir plus sur la méthode `setHandlers()`, rendez-vous sur la page suivante :
 
-   * Visionneuse d’images interactive : [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=fr)
-   * Visionneuse de vidéos interactive : [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=fr)
+   * Visionneuse d’images interactive - [resthandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=fr)
+   * Visionneuse de vidéos interactives - [resthandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=fr)
 
 1. Configurez maintenant le gestionnaire `quickViewActivate`.
 
