@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 92de2936fd6eb66198f0a096dd2e0020f14fccb8
+source-git-commit: 7f4b26fc7aca570fb1b1922a51ed77879c3b89b9
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 5%
+source-wordcount: '2002'
+ht-degree: 6%
 
 ---
 
@@ -223,6 +223,22 @@ La date de publication de Cloud Manager en tant que Cloud Service 2021.4.0 est l
 * La gravité des problèmes de `CloudServiceIncompatibleWorkflowProcess` était incorrecte dans le fichier CSV de publication téléchargeable.
 
 * La vérification `Runmode` produisait des faux positifs sur les noeuds non-dossiers.
+
+## Outil de transfert de contenu {#content-transfer-tool}
+
+### Date de publication {#release-date-ctt}
+
+La date de publication de l’outil de transfert de contenu v1.4.0 est le 11 mai 2021.
+
+### Nouveautés {#what-is-new-ctt-may}
+
+* Cette version de l’outil de transfert de contenu crée des rendus de texte pour les ressources migrées vers le Cloud Service. Les rendus de texte sont requis pour la prise en charge de la recherche de texte intégral sur les ressources imbriquées.
+* Le nombre maximal de jeux de migration d’outil de transfert de contenu qu’un utilisateur peut créer a été augmenté de 4 à 10.
+
+### Correctifs {#bug-fixes-ctt-may}
+
+* Plusieurs corrections de bogues liées à la fonction d’actualisation automatique dans l’interface utilisateur de l’outil de transfert de contenu.
+* L&#39;outil de transfert de contenu avec `wipe=true` a généré un index de compteur incorrect sur la cible. Ce problème a été résolu.
 
 ## Analyseur de bonnes pratiques {#best-practices-analyzer}
 
