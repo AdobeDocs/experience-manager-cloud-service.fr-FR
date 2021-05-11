@@ -5,10 +5,10 @@ feature: Bannières de carrousel
 role: Business Practitioner
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
 workflow-type: tm+mt
-source-wordcount: '4563'
-ht-degree: 49%
+source-wordcount: '4556'
+ht-degree: 48%
 
 ---
 
@@ -26,7 +26,7 @@ Sur votre site web, la bannière de carrousel peut se présenter comme suit :
 
 ![chlimage_1-439](assets/chlimage_1-439.png)
 
-Vous pouvez parcourir les images ici en cliquant sur les chiffres. De plus, les diapositives alternent automatiquement selon un intervalle personnalisable. Les images que vous ajoutez dans la bannière du carrousel prennent en charge les zones réactives et les zones cliquables. Les utilisateurs peuvent appuyer sur un hyperlien ou y accéder ou accéder à une fenêtre de vue rapide.
+Vous pouvez parcourir les images ici en cliquant sur les chiffres. De plus, les diapositives alternent automatiquement selon un intervalle personnalisable. Les images d’une bannière de carrousel prennent en charge les zones réactives et les zones cliquables. Les utilisateurs peuvent appuyer sur un hyperlien ou y accéder ou accéder à une fenêtre de vue rapide.
 
 Dans cet exemple, un utilisateur a appuyé ou cliqué sur une zone cliquable et a accédé à la fenêtre de vue rapide pour afficher des gants :
 
@@ -34,7 +34,7 @@ Dans cet exemple, un utilisateur a appuyé ou cliqué sur une zone cliquable et 
 
 ## Vidéo sur la création de bannières de carrousel {#watch-how-carousel-banners-are-created}
 
-Regardez une présentation guidée de 10 min et 33 s sur la [création de bannières de carrousel](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). Vous apprendrez également comment prévisualisation, modifier et diffuser des bannières de carrousel.
+Regardez une présentation pas à pas de [comment les bannières de carrousel sont créées](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (Durée : 10 minutes et 33 secondes). Vous apprendrez également comment prévisualisation, modifier et diffuser des bannières de carrousel.
 
 >[!NOTE]
 >
@@ -122,12 +122,12 @@ La plupart des implémentations de vue rapide utilisent le modèle suivant :
 * Les données de la vue rapide sont traduites dans le contenu en vue du rendu sur la page Web.
 * Enfin, le code frontal effectue le rendu visuel de ce contenu à l’écran.
 
-L’approche consiste ensuite à visiter différentes zones du site Web existant où la fonction vue rapide est mise en oeuvre. Ensuite, déclenchez la vue rapide et capturez l’URL Ajax envoyée par la page Web pour charger les données ou le contenu de la vue rapide.
+L’approche consiste ensuite à visiter différentes zones du site Web existant où la fonction vue rapide est mise en oeuvre. Ensuite, déclenchez la vue rapide et obtenez l’URL Ajax envoyée par la page Web pour charger les données ou le contenu de la vue rapide.
 
 Normalement, il n’est pas nécessaire d’utiliser des outils de débogage spécialisés. Les navigateurs web modernes incluent des inspecteurs web qui font un travail correct. Vous trouverez ci-dessous quelques exemples de navigateurs web qui incluent des inspecteurs web :
 
-* Pour afficher toutes les requêtes HTTP sortantes dans Google Chrome, appuyez sur la touche F12 (Windows) ou Commande-Option-I (Mac) pour ouvrir le panneau de l’outil de développement. Appuyez sur l’onglet Réseau.
-* Dans Firefox, vous pouvez activer le module externe Firebug en appuyant sur F12 (Windows) ou sur Command-Option-I (Mac). Utilisez l&#39;onglet Réseau ou l&#39;outil Inspecteur intégré et l&#39;onglet Réseau.
+* Pour afficher toutes les requêtes HTTP sortantes dans Google Chrome, appuyez sur la touche F12 (Windows®) ou Commande-Option-I (Mac) pour ouvrir le panneau de l’outil de développement. Appuyez sur l’onglet Réseau.
+* Dans Firefox, vous pouvez activer le module externe Firebug en appuyant sur F12 (Windows®) ou sur Command-Option-I (Mac). Utilisez l&#39;onglet Réseau ou l&#39;outil Inspecteur intégré et l&#39;onglet Réseau.
 
 Lorsque la surveillance du réseau est activée dans le navigateur, déclenchez la vue rapide sur la page.
 
@@ -191,7 +191,7 @@ Pour charger des bannières d’image, voir [Chargement de ressources](/help/ass
 >
 >Les utilisateurs non administrateurs doivent être ajoutés au groupe **[!UICONTROL dam-users]** de façon à pouvoir créer ou modifier des bannières de carrousel. Si vous rencontrez des problèmes lors de la création ou de la modification, consultez votre administrateur système qui peut vous ajouter au groupe **[!UICONTROL dam-users]**.
 
-**Pour créer un ensemble de carrousel**
+**Pour créer un ensemble de carrousel:**
 
 1. Dans Ressources, cherchez le dossier dans lequel vous souhaitez créer l’ensemble de carrousel, puis appuyez sur **[!UICONTROL Créer > Ensemble de carrousel]**.
 1. Dans la page de l’éditeur de bannière de carrousel, appuyez sur **[!UICONTROL Appuyer pour ouvrir le sélecteur de ressources]** pour sélectionner l’image de votre première diapositive.
@@ -217,19 +217,20 @@ Pour charger des bannières d’image, voir [Chargement de ressources](/help/ass
    Pour supprimer une diapositive, appuyez ou cliquez sur la diapositive, puis appuyez ou cliquez sur **[!UICONTROL Supprimer la diapositive]** dans la barre d’outils. Pour déplacer une diapositive, appuyez sur l’icône de réorganisation, maintenez la touche enfoncée et déplacez-vous à l’emplacement souhaité.
 
 1. Une fois que vous avez ajouté les images aux diapositives, vous pouvez ajouter à votre image une zone réactive, une zone cliquable, ou les deux. Voir [Ajout de zones réactives ou cliquables](#adding-hotspots-or-image-maps-to-an-image-banner).
-1. Vous pouvez modifier la conception visuelle et le comportement des jeux de carrousel. Appuyez ou cliquez sur les onglets Comportement et Aspect et réglez l’aspect de la bannière du carrousel ou le comportement de certains composants. Pour plus d’informations sur l’utilisation de l’éditeur de visionneuses, reportez-vous à la section [Gestion des paramètres prédéfinis de visionneuse](/help/assets/dynamic-media/viewer-presets.md).
+1. Vous pouvez modifier la conception visuelle et le comportement des jeux de carrousel. Appuyez ou cliquez sur les onglets **[!UICONTROL Comportement]** et **[!UICONTROL Aspect]** et réglez l&#39;affichage de la bannière du carrousel ou le comportement des composants spécifiques. Pour plus d’informations sur l’utilisation de l’éditeur de visionneuses, reportez-vous à la section [Gestion des paramètres prédéfinis de visionneuse](/help/assets/dynamic-media/viewer-presets.md).
 
    >[!NOTE]
    >
    >Pour les bannières de carrousel, vous pouvez ajuster les éléments suivants :
-   >    * Durée pendant laquelle une image est affichée. Par défaut, chaque image s’affiche pendant 9 secondes.
-   >    * Animation. Par défaut, la transition entre chaque diapositive est un fondu. Vous pouvez prévoir une transition affichant une diapositive.
-   >    * Style des boutons. Les utilisateurs peuvent faire alterner les bannières en appuyant sur chaque point ou numéro. Vous pouvez modifier l’emplacement d’affichage des boutons de définition des indicateurs (et s’ils sont de style numérique ou en pointillé) et leur taille.
-   >    * Modification du style de mise en évidence d’une zone cliquable ou de l’icône utilisée pour les zones réactives.
-   >    * Avant de modifier un paramètre prédéfini de visionneuse, choisissez le style sur lequel vous souhaitez baser le paramètre prédéfini. Si vous ne choisissez pas de style, lorsque vous début modifier le paramètre prédéfini de visionneuse, vous perdez toutes vos modifications si vous changez de paramètre prédéfini.
+   >
+   >* Durée pendant laquelle une image est affichée. Par défaut, chaque image s’affiche pendant 9 secondes.
+   >* Animation. Par défaut, la transition entre chaque diapositive est un fondu. Vous pouvez prévoir une transition affichant une diapositive.
+   >* Style des boutons. Les utilisateurs peuvent faire alterner les bannières en appuyant sur chaque point ou numéro. Vous pouvez modifier l’emplacement d’affichage des boutons de définition des indicateurs (et s’ils sont de style numérique ou en pointillé) et leur taille.
+   >* Modification du style de mise en évidence d’une zone cliquable ou de l’icône utilisée pour les zones réactives.
+   >* Avant de modifier un paramètre prédéfini de visionneuse, choisissez le style sur lequel vous souhaitez baser le paramètre prédéfini. Si vous ne choisissez pas de style, lorsque vous début modifier le paramètre prédéfini de visionneuse, vous perdez toutes vos modifications si vous changez de paramètre prédéfini.
 
 
-   Vous pouvez également prévisualisation à quoi ressemble la bannière du carrousel. Voir [(Facultatif) Aperçu des bannières de carrousel](#optional-previewing-carousel-banners).
+   Vous pouvez également prévisualisation l’aspect de la bannière du carrousel. Voir [(Facultatif) Aperçu des bannières de carrousel](#optional-previewing-carousel-banners).
 
 1. Lorsque vous avez terminé, appuyez sur **[!UICONTROL Enregistrer]**.
 
@@ -263,7 +264,7 @@ Si vous modifiez des images interactives avec des zones réactives et que vous r
 
 <!-- See also [Adding Image Maps](/help/assets/image-maps.md). -->
 
-**Ajout de zones réactives ou cliquables à une bannière d’image**
+**Ajout de zones réactives ou cliquables à une bannière d’image:**
 
 1. À partir de Ressources, accédez à l’ensemble de carrousel auquel vous souhaitez ajouter de l’interactivité.
 1. Sélectionnez l’ensemble de carrousel et appuyez sur **[!UICONTROL Modifier]**. L’éditeur de visionneuses de carrousel s’affiche.
@@ -316,7 +317,7 @@ Voir [Fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experi
          Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres prédéfinis de visionneuse qui ne comportent pas d’outils de partage sur les réseaux sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
-   Vous pouvez également prévisualisation à quoi ressemble la bannière du carrousel. Voir [(Facultatif) Aperçu des bannières de carrousel](#optional-previewing-carousel-banners).
+   Vous pouvez également prévisualisation l’aspect de la bannière du carrousel. Voir [(Facultatif) Aperçu des bannières de carrousel](#optional-previewing-carousel-banners).
 
 1. Appuyez sur **[!UICONTROL Enregistrer]**.
 1. Publiez l’ensemble de carrousel. La publication crée le code intégré ou l’URL que vous pouvez utiliser dans votre page web. Si vous êtes un client Sites Experience Manager, ajoutez le jeu de carrousel directement à votre page Web.
@@ -339,7 +340,7 @@ Vous pouvez effectuer diverses tâches de modification sur les jeux de carrousel
 * Supprimer l’ensemble de carrousel.
 * Ajouter ou modifier des zones réactives et des zones cliquables. Voir également [Utilisation de sélecteurs](/help/assets/dynamic-media/working-with-selectors.md).
 
-**Pour modifier un ensemble de carrousel**
+**Pour modifier un ensemble de carrousel:**
 
 1. Effectuez l’une des opérations suivantes :
 
@@ -364,7 +365,7 @@ Vous pouvez effectuer diverses tâches de modification sur les jeux de carrousel
 
 ## (Facultatif) Aperçu des bannières de carrousel {#optional-previewing-carousel-banners}
 
-Vous pouvez utiliser la Prévisualisation pour voir à quoi ressemble votre bannière de carrousel pour les clients. L’utilisation de la Prévisualisation vous permet également de tester les zones réactives et les zones cliquables de la bannière du carrousel afin de vous assurer qu’elles se comportent comme prévu.
+Vous pouvez utiliser la Prévisualisation pour voir comment la bannière du carrousel s’affiche pour les clients. L’utilisation de la Prévisualisation vous permet également de tester les zones réactives et les zones cliquables de la bannière du carrousel afin de vous assurer qu’elles se comportent comme prévu.
 
 Lorsque vous êtes satisfait de la bannière de carrousel, vous pouvez la publier.
 Voir [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/dynamic-media/embed-code.md).
@@ -373,7 +374,7 @@ Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages](/help/
 
 Vous pouvez afficher un aperçu des bannières de carrousel dans l’éditeur de carrousel (méthode recommandée) ou dans la liste **[!UICONTROL Visionneuses]**.
 
-**Pour obtenir un aperçu des bannières de carrousel**
+**Pour obtenir un aperçu des bannières de carrousel:**
 
 1. Dans **[!UICONTROL Ressources]**, accédez à une bannière de carrousel que vous avez créée et appuyez pour l’afficher.
 1. Appuyez sur **[!UICONTROL Modifier]**.
@@ -384,7 +385,7 @@ Vous pouvez afficher un aperçu des bannières de carrousel dans l’éditeur de
 1. Appuyez sur **[!UICONTROL Aperçu]**.
 1. Pour tester les actions associées, appuyez sur les zones réactives ou les zones cliquables de l’image.
 
-**Pour afficher un aperçu des bannières de carrousel à partir de la liste Visionneuses**
+**Pour afficher un aperçu des bannières de carrousel à partir de la liste Visionneuses:**
 
 1. Dans **[!UICONTROL Ressources]**, accédez à une bannière de carrousel que vous avez créée et appuyez pour l’afficher.
 1. Dans le coin supérieur gauche de la page Aperçu, cliquez sur l’icône Contenu.
@@ -452,6 +453,6 @@ Reportez-vous à la section [Identification des variables de zone réactive et d
 
 La dernière étape pour déclencher l’URL de vue rapide et activer le panneau vue rapide requiert très probablement l’assistance d’un informaticien principal de votre service informatique. Ils disposent des connaissances nécessaires pour savoir comment déclencher avec précision l’implémentation de la vue rapide à partir de l’étape appropriée, en disposant d’une URL de vue rapide prête à l’emploi.
 
-## Utilisation de vues rapides pour créer des fenêtres contextuelles personnalisées {#using-quickviews-to-create-custom-pop-ups}
+## Utilisation de vues rapides pour créer une fenêtre contextuelle personnalisée sous Windows® {#using-quickviews-to-create-custom-pop-ups}
 
-Voir [Utilisation de vues rapides pour créer des fenêtres contextuelles personnalisées](/help/assets/dynamic-media/custom-pop-ups.md).
+Voir [Utilisation de vues rapides pour créer une fenêtre contextuelle personnalisée Windows®](/help/assets/dynamic-media/custom-pop-ups.md).
