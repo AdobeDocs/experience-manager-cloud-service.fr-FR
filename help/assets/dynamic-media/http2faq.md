@@ -4,10 +4,10 @@ description: Découvrez la diffusion de contenu HTTP/2.
 role: Administrator,Business Practitioner
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 73%
+source-wordcount: '794'
+ht-degree: 69%
 
 ---
 
@@ -17,15 +17,13 @@ Adobe se réjouit d’annoncer la disponibilité de la diffusion de contenu HTTP
 
 >[!NOTE]
 >
->Cette fonctionnalité nécessite l’utilisation du CDN prêt à l’emploi fourni avec Adobe Experience Manager Dynamic Media. Aucun autre CDN personnalisé n’est pris en charge avec cette fonctionnalité.
+>Cette fonctionnalité nécessite l’utilisation du réseau Content Diffusion Network prêt à l’emploi, livré avec Adobe Experience Manager - Dynamic Media. Cette fonctionnalité ne prend pas en charge les autres réseaux de Diffusions de contenu personnalisés.
 
 ## Qu’est-ce que le HTTP/2 ? {#what-is-http}
 
 Le HTTP/2 améliore la communication entre les navigateurs et les serveurs, en accélérant le transfert d’informations tout en réduisant la puissance de traitement nécessaire.
 
-Le site web ci-dessous décrit simplement HTTP/2 et les avantages qu’il procure :
-
-[https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/](https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/)
+L&#39;article [Ce que vous devez savoir sur HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html) décrit HTTP/2 et ses avantages de manière simple et brève.
 
 ## Quels sont les principaux avantages à la transition vers HTTP/2 pour la diffusion de contenu ? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
