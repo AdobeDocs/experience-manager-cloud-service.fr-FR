@@ -1,14 +1,14 @@
 ---
 title: 'Présentation des Programmes Sandbox '
-description: 'Présentation des Programmes Sandbox '
+description: Présentation des Programmes Sandbox
+exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 translation-type: tm+mt
-source-git-commit: d98e3ba930690627bfbe9b90ce5cb93328c30503
+source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 79%
+source-wordcount: '303'
+ht-degree: 69%
 
 ---
-
 
 # Introduction aux Programmes Sandbox {#sandbox-programs}
 
@@ -38,5 +38,7 @@ Les programmes Sandbox possèdent les attributs suivants :
 1. **Mises à jour AEM :** les mises à jour AEM peuvent être appliquées manuellement aux environnements d’un programme Sandbox et ne sont pas automatiquement exécutées.
 Pour plus d&#39;informations, consultez [AEM mises à jour des Environnements Sandbox](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox).
 
-1. **Veille :** les environnements d’un programme Sandbox sont automatiquement mis en veille si aucune activité n’est détectée pendant une certaine période. Les environnements mis en veille peuvent être réactivés manuellement.
+1. **Veille :** les environnements d’un programme Sandbox sont automatiquement mis en veille si aucune activité n’est détectée pendant une certaine période. Les sandbox sont placées dans le noeud d’hibernation après 8 heures d’inactivité, après quoi elles peuvent être déshibernées. Les environnements mis en veille peuvent être réactivés manuellement.
 Pour plus d’informations, voir [Mise en veille et réactivation d’environnements Sandbox](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md).
+
+1. **Suppression** : Les sandbox sont supprimés après 6 mois d’hibernation continue, après quoi ils peuvent être recréés.
