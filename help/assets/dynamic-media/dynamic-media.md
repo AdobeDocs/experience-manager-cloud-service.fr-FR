@@ -4,16 +4,16 @@ description: Découvrez comment utiliser Dynamic Media pour diffuser des ressou
 role: Administrator,Business Practitioner
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 87%
+source-wordcount: '399'
+ht-degree: 72%
 
 ---
 
 # Utilisation de Dynamic Media  {#working-with-dynamic-media}
 
-[Dynamic Media](https://www.adobe.com/fr/marketing/experience-manager-assets/dynamic-media.html) fournit des ressources visuelles de marchandisage et de marketing à la demande, automatiquement dimensionnées pour une utilisation sur le web, les appareils mobiles et les réseaux sociaux. À partir d’un ensemble de ressources de sources originales, Dynamic Media génère et diffuse en temps réel plusieurs variantes d’un même contenu enrichi par le biais de son réseau mondial et évolutif, aux performances optimisées.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) fournit des ressources visuelles de marchandisage et de marketing à la demande, automatiquement dimensionnées pour une utilisation sur le web, les appareils mobiles et les réseaux sociaux. À partir d’un ensemble de ressources de sources originales, Dynamic Media génère et diffuse en temps réel plusieurs variantes d’un même contenu enrichi par le biais de son réseau mondial et évolutif, aux performances optimisées.
 
 Dynamic Media propose des expériences d’affichage interactives, notamment un zoom, une rotation à 360 degrés et une vidéo. Dynamic Media intègre de manière unique les workflows de la solution Adobe Experience Manager de gestion d’actifs numériques (Assets) afin de simplifier et de rationaliser le processus de Gestion de campagne numérique.
 
@@ -38,7 +38,7 @@ Les fonctionnalités uniquement incluses dans Dynamic Media sont les suivantes�
 * [Vidéo](video.md)
 * [Diffusion de ressources Dynamic Media](delivering-dynamic-media-assets.md)
 * [Gestion des ressources](managing-assets.md)
-* [Utilisation de vues rapides pour créer des fenêtres contextuelles personnalisées](custom-pop-ups.md)
+* [Utilisation de vues rapides pour créer des fenêtres contextuelles personnalisées sous Windows®](custom-pop-ups.md)
 
 Voir également [Configuration de Dynamic Media](administering-dynamic-media.md).
 
@@ -81,7 +81,7 @@ Les ressources activées pour Dynamic Media sont `pyramid.tiffs`.
 
 ### Modification des vues des ressources {#asset-views-change}
 
-Lorsque Dynamic Media est activé, vous pouvez effectuer un zoom avant et arrière en cliquant sur les boutons `+` et `-`. Vous pouvez également cliquer/appuyer pour effectuer un zoom sur une zone spécifique. L’option Revenir à cette version rétablit la version originale, et vous pouvez afficher l’image en mode plein écran en cliquant sur les flèches diagonales. Lorsque Dynamic Media est activé, cette fonctionnalité ressemble à celle-ci :
+Lorsque Dynamic Media est activé, vous pouvez effectuer un zoom avant ou arrière en cliquant sur les boutons `+` et `-`. Vous pouvez également cliquer/appuyer sur pour zoomer sur une certaine zone. L’option Rétablir vous amène à la version d’origine et vous pouvez afficher l’image en plein écran en cliquant sur les flèches diagonales. Dynamic Media activé s’affiche comme suit :
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
