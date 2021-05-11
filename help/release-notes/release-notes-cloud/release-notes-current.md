@@ -3,9 +3,9 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 8ca3fe045aba4ec9e546fee0700d1bec08e337fb
+source-git-commit: 92de2936fd6eb66198f0a096dd2e0020f14fccb8
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1906'
 ht-degree: 5%
 
 ---
@@ -72,6 +72,8 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 * Lorsque vous parcourez des ressources dans la vue des colonnes, un indicateur visuel affiche l’état approuvé ou rejeté de chaque ressource.
 
 * Lorsque vous parcourez des ressources dans la vue des colonnes, un indicateur visuel s’affiche pour les ressources arrivées à expiration.
+
+* Un type de données de zone de texte est disponible dans l’éditeur de métadonnées [!DNL Assets]. Vous pouvez utiliser cette option pour permettre aux utilisateurs de saisir des métadonnées dans un champ de texte de forme libre.
 
 ### Correctifs de bogues dans [!DNL Assets] {#bug-fixes-assets}
 
