@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: c9b8e14a3beca11b6f81f2d5e5983d6fd801bf3f
+source-git-commit: 4a36cd3206784c0e4e3ed3d7007c83f44f1d5ee0
 workflow-type: tm+mt
-source-wordcount: '1115'
-ht-degree: 51%
+source-wordcount: '1130'
+ht-degree: 49%
 
 ---
 
@@ -324,11 +324,10 @@ Maintenant que vous avez terminé cette partie du Parcours de développement AEM
 
 Vous devriez continuer votre parcours sans tête AEM en examinant ensuite le document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) où vous apprendrez à prendre votre projet sans tête et à le préparer pour qu’il soit en direct.
 
+[La manière de créer des applications d’une seule page (SPA) avec ](create-spa.md) AEM vous montrera également comment créer des SPA modifiables à l’aide de la structure de l’éditeur de  d’AEM, ainsi que comment intégrer des  externes, en activant des fonctions de modification si nécessaire.
+
 ## Ressources supplémentaires {#additional-resources}
 
-* [REST](https://fr.wikipedia.org/wiki/Representational_state_transfer)
-* [Principe HATEOAS](https://fr.wikipedia.org/wiki/HATEOAS)
-* [Format SIREN](https://github.com/kevinswiber/siren)
 * [API HTTP Assets](/help/assets/mac-api-assets.md)
 * [API REST de fragments de contenu](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [Référence d’API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
