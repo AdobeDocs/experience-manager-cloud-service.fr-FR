@@ -1,14 +1,14 @@
 ---
 title: 'Mise en veille et réactivation d’environnements Sandbox '
-description: 'Mise en veille et réactivation d’environnements Sandbox '
+description: Mise en veille et réactivation d’environnements Sandbox
+exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 translation-type: tm+mt
-source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
+source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 99%
+source-wordcount: '855'
+ht-degree: 95%
 
 ---
-
 
 # Mise en veille et réactivation d’environnements Sandbox {#hibernating-introduction}
 
@@ -121,8 +121,12 @@ Voici quelques considérations clés liées aux environnements mis en veille et 
 
 * Les mises à niveau d’AEM peuvent être appliquées aux environnements mis en veille, et les clients peuvent les déclencher manuellement à partir de Cloud Manager. L’environnement demeure en veille et la nouvelle version apparaît dans l’environnement une fois ce dernier réactivé.
 
->[!NOTE]
->Actuellement, Cloud Manager n’indique pas si un environnement est en veille.
+* Les sandbox sont placées dans le noeud d’hibernation après 8 heures d’inactivité, après quoi elles peuvent être déshibernées.
+
+* Les sandbox sont supprimés après 6 mois d’hibernation continue, après quoi ils peuvent être recréés.
+
+   >[!NOTE]
+   >Actuellement, Cloud Manager n’indique pas si un environnement est en veille.
 
 ## Mises à jour AEM des environnements Sandbox {#aem-updates-sandbox}
 
@@ -135,9 +139,4 @@ Reportez-vous à [Mise à jour de l’environnement](/help/implementing/cloud-ma
 >[!NOTE]
 >* Une mise à jour manuelle ne peut être exécutée que si l’environnement ciblé dispose d’un pipeline correctement configuré.
 >* Une mise à jour manuelle d’un environnement de *production* met automatiquement à jour l’environnement d’*évaluation*, et vice-versa. Le jeu d’environnements Production+Évaluation doit se trouver dans la même version AEM.
-
-
-
-
-
 
