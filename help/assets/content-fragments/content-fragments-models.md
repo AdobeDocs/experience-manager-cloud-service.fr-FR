@@ -5,7 +5,7 @@ feature: Fragments de contenu
 role: Business Practitioner
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 translation-type: tm+mt
-source-git-commit: 9e299db2d111087bbca05624276e212d457d76d1
+source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
 source-wordcount: '2309'
 ht-degree: 90%
@@ -170,7 +170,7 @@ Le contenu (du champ spécifique) doit être unique dans tous les fragments de c
 * **Translatable**
 Cocher la case Translatable (Traduisible) d’un champ de l’éditeur de modèles des fragments de contenu entraîne les conséquences suivantes :
 
-   * S’assurer que le nom de la propriété du champ est ajouté à la configuration de traduction, contexte `/content/dam/<tenant>`, s’il n’est pas déjà présent.
+   * S’assurer que le nom de la propriété du champ est ajouté à la configuration de traduction, contexte `/content/dam/<sites-configuration>`, s’il n’est pas déjà présent.
    * Pour GraphQL : définir une propriété `<translatable>` du champ Fragment de contenu sur `yes` afin d’autoriser le filtre de requête GraphQL pour la sortie JSON avec du contenu traductible uniquement.
 
 * Voir **[Référence du contenu](#content-reference)** pour plus d’informations sur ce type de données spécifique et ses propriétés.
