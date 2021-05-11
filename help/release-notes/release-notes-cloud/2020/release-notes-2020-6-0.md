@@ -1,14 +1,14 @@
 ---
 title: Notes de mise à jour d’Adobe Experience Manager as a Cloud Service version 2020.6.0
 description: Notes de mise à jour d’Experience Manager version 2020.6.0
+exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
-source-wordcount: '1955'
-ht-degree: 100%
+source-wordcount: '1951'
+ht-degree: 99%
 
 ---
-
 
 # Notes de mise à jour d’AEM as a Cloud Service 2020.6.0 {#release-notes}
 
@@ -110,7 +110,7 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 Les balises intelligentes améliorées permettent aux entreprises d’entraîner des modèles de balisage intelligent pour reconnaître les images en fonction de balises commerciales spécifiques aux clients, en plus des balises intelligentes génériques.
 
 Cette version apporte une nouvelle expérience utilisateur assistée qui permet de configurer l’entraînement des balises intelligentes pour des ensembles de balises spécifiques au client, mais aussi de les entraîner sur des ressources qui devront être reconnues et balisées plus tard. L’expérience est désormais plus intuitive.
-Entraînez des balises intelligentes améliorées pour un entraînement plus intuitif. Voir [comment ajouter des balises intelligentes aux ressources](/help/assets/smart-tags.md) et [configurer le balisage intelligent](/help/assets/smart-tags-configuration.md).
+Entraînez des balises intelligentes améliorées pour un entraînement plus intuitif. Voir [comment ajouter des balises actives aux ressources](/help/assets/smart-tags.md).
 
 **Prise en charge de l’ingestion, de la prévisualisation et de la diffusion des contenus 3D**
 
