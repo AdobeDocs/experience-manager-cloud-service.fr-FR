@@ -1,14 +1,14 @@
 ---
 title: Ajout d’un enregistrement TXT
 description: Ajout d’un nom de domaine personnalisé
+exl-id: d441de29-af41-4d3e-9155-531af9702841
 translation-type: tm+mt
-source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
+source-git-commit: 4903f97c1bf0e7c8e96d604feb005d9611a7d9bb
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 100%
 
 ---
-
 
 # Ajout d’un enregistrement TXT {#adding-txt}
 
@@ -27,8 +27,8 @@ Reportez-vous aux exemples du tableau ci-dessous.
 
 | Domaine | Nom | Valeur TXT |
 |--- |--- |---|
-| `example.com` | `_aemverification.example.com` | Affichée dans l’interface utilisateur de Cloud Manager et spécifique au domaine et à l’environnement de Cloud Manager |
-| `test.example.com` | `_aemverification.test.example.com` | Affichée dans l’interface utilisateur de Cloud Manager et spécifique au domaine et à l’environnement de Cloud Manager |
+| `example.com` | `_aemverification` | Affichée dans l’interface utilisateur de Cloud Manager et spécifique au domaine et à l’environnement de Cloud Manager |
+| `test.example.com` | `_aemverification` | Affichée dans l’interface utilisateur de Cloud Manager et spécifique au domaine et à l’environnement de Cloud Manager |
 
 Lorsque vous avez terminé, vous pouvez vérifier le résultat en exécutant : `dig _aemverification.[yourdomainname] -t txt`.
 Le résultat attendu doit afficher la valeur TXT fournie dans l’interface utilisateur de Cloud Manager.
@@ -37,4 +37,3 @@ Par exemple, si votre domaine est `example.com`, exécutez : `dig TXT _aemverif
 
 >[!NOTE]
 >Il existe également divers [outils de recherche DNS](https://www.ultratools.com/tools/dnsLookup), Google DoH peut être utilisé pour rechercher des entrées d’enregistrement TXT et déterminer si l’enregistrement TXT est manquant ou erroné.
-
