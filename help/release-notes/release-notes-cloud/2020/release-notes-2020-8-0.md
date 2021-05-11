@@ -1,14 +1,14 @@
 ---
 title: Notes de mise à jour de la version 2020.8.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service pour la version 2020.8.0.
+exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
 source-wordcount: '1050'
 ht-degree: 100%
 
 ---
-
 
 # Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
 
@@ -30,7 +30,7 @@ La section suivante décrit les notes de mise à jour générales d’Experience
 
 * Le transcodage vidéo est désormais pris en charge avec les microservices de ressources. Une nouvelle section de la configuration des [!UICONTROL Profils de traitement] permet de définir le débit et les dimensions d’une vidéo. Le format de sortie est MP4 avec le codec H.264. Pour plus d’informations, voir [Gestion des ressources vidéo](/help/assets/manage-video-assets.md#transcode-video). Pour accéder à d’autres options de transcodage et à la diffusion vidéo, utilisez le module complémentaire [!DNL Dynamic Media].
 
-* Pour les nouveaux déploiements d’[!DNL Experience Manager Assets], la fonctionnalité de balisage intelligent est désormais configurée par défaut. Il n’est pas nécessaire d’intégrer manuellement [!DNL Adobe Developer Console]. Sur les déploiements existants, les administrateurs [configurent l’intégration des balises intelligentes](/help/assets/smart-tags-configuration.md#aio-integration) comme auparavant.
+* Pour les nouveaux déploiements d’[!DNL Experience Manager Assets], la fonctionnalité de balisage intelligent est désormais configurée par défaut. Il n’est pas nécessaire d’intégrer manuellement [!DNL Adobe Developer Console]. Sur les déploiements existants, les administrateurs configurent l’intégration des balises intelligentes comme auparavant.
 
 * Une nouvelle [expérience de téléchargement de ressources](/help/assets/download-assets-from-aem.md) offre les avantages suivants :
 
