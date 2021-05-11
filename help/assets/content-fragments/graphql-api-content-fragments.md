@@ -4,9 +4,9 @@ description: Découvrez comment utiliser les fragments de contenu dans Adobe Exp
 feature: Fragments de contenu, API GraphQL
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 translation-type: tm+mt
-source-git-commit: dab4c9393c26f5c3473e96fa96bf7ec51e81c6c5
+source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
-source-wordcount: '3901'
+source-wordcount: '3935'
 ht-degree: 72%
 
 ---
@@ -121,20 +121,20 @@ Il existe deux types de points de terminaison en AEM :
 
 * Global
    * Disponible pour tous les sites.
-   * Ce point de terminaison peut utiliser tous les modèles de fragments de contenu de tous les locataires.
-   * S’il existe des modèles de fragments de contenu qui doivent être partagés entre les locataires, ceux-ci doivent être créés sous le client global.
-* Client:
-   * Correspond à une configuration de client, comme défini dans le [Navigateur de configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
+   * Ce point de terminaison peut utiliser tous les modèles de fragments de contenu de toutes les configurations de sites (définis dans l&#39;[navigateur de configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)).
+   * S’il existe des modèles de fragments de contenu qui doivent être partagés entre les configurations de sites, ceux-ci doivent être créés sous les configurations de sites globales.
+* Configurations de sites :
+   * Correspond à une configuration Sites, comme défini dans le [Navigateur de configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
    * Spécifique à un site/projet spécifique.
-   * Un point de terminaison spécifique au client utilisera les modèles de fragment de contenu de ce client spécifique avec ceux du client global.
+   * Un point de terminaison spécifique à la configuration Sites utilisera les modèles de fragments de contenu de cette configuration Sites spécifique avec ceux de la configuration Sites globale.
 
 >[!CAUTION]
 >
->L’éditeur de fragments de contenu peut autoriser un fragment de contenu d’un client à référencer un fragment de contenu d’un autre client (par le biais de stratégies).
+>L’éditeur de fragments de contenu peut autoriser un fragment de contenu d’une configuration de sites à référencer un fragment de contenu d’une autre configuration de sites (au moyen de stratégies).
 >
->Dans ce cas, tout le contenu ne peut pas être récupéré à l’aide d’un point de terminaison spécifique au client.
+>Dans ce cas, tout le contenu ne peut pas être récupéré à l&#39;aide d&#39;un point de terminaison spécifique à la configuration Sites.
 >
->L&#39;auteur du contenu doit contrôler ce scénario ; par exemple, il peut s’avérer utile d’envisager de placer des modèles de fragments de contenu partagés sous le client global.
+>L&#39;auteur du contenu doit contrôler ce scénario ; par exemple, il peut s’avérer utile d’envisager de placer des modèles de fragments de contenu partagés sous la configuration des sites globaux.
 
 Le chemin d’accès au référentiel de GraphQL pour AEM point de terminaison global est :
 
@@ -196,6 +196,10 @@ Sélectionnez le nouveau point de terminaison et **Publier** pour le rendre enti
 ## Interface GraphiQL {#graphiql-interface}
 
 Une implémentation de l’interface standard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) est disponible pour être utilisée avec AEM GraphQL. Cette interface peut être [installée avec AEM](#installing-graphiql-interface).
+
+>[!NOTE]
+>
+>GraphiQL est lié au point de terminaison global (et ne fonctionne pas avec d&#39;autres points de terminaison pour des configurations Sites spécifiques).
 
 Elle permet de saisir et tester directement les requêtes.
 
@@ -587,21 +591,21 @@ Après avoir préparé une requête avec une requête POST, elle peut être exé
 
 Cela est nécessaire, car les requêtes POST ne sont généralement pas mises en cache et si vous utilisez GET avec la requête comme paramètre, il existe un risque important que le paramètre devienne trop volumineux pour les services et intermédiaires HTTP.
 
-Les requêtes persistantes doivent toujours utiliser le point de terminaison associé à la configuration [appropriée (locataire)](#graphql-aem-endpoint); pour qu&#39;ils puissent utiliser l&#39;une ou l&#39;autre des méthodes suivantes, ou les deux :
+Les requêtes persistantes doivent toujours utiliser le point de terminaison associé à la [configuration de sites appropriée](#graphql-aem-endpoint); pour qu&#39;ils puissent utiliser l&#39;une ou l&#39;autre des méthodes suivantes, ou les deux :
 
 * Configuration globale et point de terminaison
 La requête a accès à tous les modèles de fragments de contenu.
-* Configuration(s) de client(s) spécifique(s) et point(s) de terminaison(s)
-La création d’une requête persistante pour une configuration de client spécifique requiert un point de terminaison spécifique au client correspondant (pour fournir l’accès aux modèles de fragment de contenu connexes).
-Par exemple, pour créer une requête persistante spécifiquement pour le client WKND, une configuration de client spécifique WKND correspondante et un point de terminaison spécifique WKND doivent être créés à l&#39;avance.
+* Configuration(s) et point(s) de terminaison(s) de sites spécifiques
+La création d&#39;une requête persistante pour une configuration Sites spécifique requiert un point de terminaison spécifique à la configuration Sites correspondant (pour fournir l&#39;accès aux modèles de fragments de contenu associés).
+Par exemple, pour créer une requête persistante spécifiquement pour la configuration des sites WKND, une configuration de sites spécifiques WKND correspondante et un point de terminaison spécifique WKND doivent être créés à l&#39;avance.
 
 >[!NOTE]
 >
 >Voir [Activation de la fonctionnalité de fragment de contenu dans le navigateur de configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) pour plus d’informations.
 >
->Les **Requêtes de persistance GraphQL** doivent être activées pour la configuration de locataire appropriée.
+>Les **Requêtes de persistance GraphQL** doivent être activées pour la configuration Sites appropriée.
 
-Par exemple, s’il existe une requête particulière appelée `my-query`, qui utilise un modèle `my-model` de la configuration du client `my-conf` :
+Par exemple, s&#39;il existe une requête particulière appelée `my-query`, qui utilise un modèle `my-model` de la configuration Sites `my-conf` :
 
 * Vous pouvez créer une requête à l&#39;aide du point de terminaison `my-conf` spécifique, puis la requête sera enregistrée comme suit :
    `/conf/my-conf/settings/graphql/persistentQueries/my-query`
