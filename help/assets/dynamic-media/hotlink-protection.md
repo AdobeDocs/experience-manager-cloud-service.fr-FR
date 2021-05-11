@@ -5,7 +5,7 @@ feature: Gestion des ressources
 role: Business Practitioner
 exl-id: 0198b3a3-173e-46ca-a845-3f58f8eab769
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 26%
@@ -14,7 +14,7 @@ ht-degree: 26%
 
 # Activation de la protection de lien dynamique dans Dynamic Media   {#activating-hotlink-protection-in-dynamic-media}
 
-La liaison rapide est le cas où un site Web tiers utilise du code HTML pour afficher une image de votre site Web. Il utilise votre bande passante chaque fois que l’image est demandée, car le navigateur du visiteur y accède directement depuis votre serveur. Hotlink *protection* est une méthode qui empêche les autres sites Web de créer des liens directs vers des images, des CSS ou du code JavaScript sur vos pages Web. Ce type de protection contribue à réduire l’utilisation inutile de bande passante sous votre compte Dynamic Media.
+La liaison rapide est le cas où un site Web tiers utilise du code HTML pour afficher une image de votre site Web. Il utilise votre bande passante chaque fois que l’image est demandée, car le navigateur du visiteur y accède directement depuis votre serveur. Hotlink *protection* est une méthode qui empêche les autres sites Web de créer des liens directs vers des images, des CSS ou des scripts JavaScript™ sur vos pages Web. Ce type de protection contribue à réduire l’utilisation inutile de bande passante sous votre compte Dynamic Media.
 
 [Adobe Customer ](https://helpx.adobe.com/fr/support.html) Carecan peut configurer un filtre de parrain au niveau du CDN. Cela permet de s’assurer que le contenu Dynamic Media n’est diffusé que sur les sites Web de votre liste des sites Web autorisés pour le domaine.
 
