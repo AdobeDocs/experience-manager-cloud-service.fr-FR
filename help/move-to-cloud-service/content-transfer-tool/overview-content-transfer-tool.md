@@ -3,10 +3,10 @@ title: Présentation de l’outil de transfert de contenu
 description: Présentation de l’outil de transfert de contenu
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
 translation-type: tm+mt
-source-git-commit: ca03de9095a5b85bd93edba93097356fbcd2e9c8
+source-git-commit: 1fb9814f10ef8eae87a7eef9f390700f2f2127d8
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 85%
+source-wordcount: '865'
+ht-degree: 77%
 
 ---
 
@@ -39,10 +39,11 @@ Le transfert de contenu comporte deux phases :
 
 Un *jeu de migration* possède les attributs suivants :
 
-* Au maximum, il est possible de créer et maintenir quatre jeux de migration à la fois pendant l’activité de transfert de contenu.
+* Au maximum dix jeux de migration peuvent être créés et conservés à la fois pendant l’activité de transfert de contenu.
 * Chaque jeu de migration doit avoir un nom unique.
 * Si un jeu de migration est inactif depuis plus de 30 jours, il est automatiquement supprimé.
 * Chaque fois que vous créez un jeu de migration, il est associé à un environnement spécifique. Vous ne pouvez effectuer une ingestion que dans une instance d’auteur ou de publication d’un même environnement.
+
 
 L’outil de transfert de contenu comporte une fonctionnalité pour traiter un complément de contenu différentiel. Dans ce cas, seules les modifications effectuées depuis l’activité de transfert de contenu précédente sont transférées.
 
@@ -81,3 +82,5 @@ La formule générale pour calculer l’espace disque disponible requis est la s
    * *volume de stockage des données* : l’outil de transfert de contenu utilise 64 Go, même si l’entrepôt de données en question est plus volumineux.
    * *volume de stockage des nœuds* : taille du répertoire de stockage des segments ou taille de la base de données MongoDB.
 Ainsi, pour un volume de stockage de segments de 20 Go, l’espace disque disponible requis est de 94 Go.
+
+* Un jeu de migration doit être conservé tout au long de l’activité de transfert de contenu pour prendre en charge les ajouts de contenu. Étant donné qu’un maximum de dix jeux de migration peuvent être créés et conservés à un moment donné pendant l’activité de transfert de contenu, il est recommandé de séparer le référentiel de contenu en conséquence pour vous assurer que vous n’êtes pas à court de jeux de migration.  pendant/structurer leur migration définie en conséquence.
