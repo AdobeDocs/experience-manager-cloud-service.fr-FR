@@ -4,10 +4,10 @@ description: Découvrez comment configurer Dynamic Media dans Adobe Experience M
 role: Administrator,Business Practitioner
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
 workflow-type: tm+mt
-source-wordcount: '4053'
-ht-degree: 56%
+source-wordcount: '4054'
+ht-degree: 55%
 
 ---
 
@@ -93,9 +93,9 @@ To migrate any custom viewer presets and configurations that you have created fr
    |---|---|
    | Entreprise | Nom du compte Dynamic Media. Il est possible que vous disposiez de plusieurs comptes Dynamic Media pour différentes sous-marques, divisions ou environnements d’évaluation/production. |
    | Chemin d’accès au dossier racine de l’entreprise | Chemin d’accès au dossier racine de votre entreprise. |
-   | Publier les ressources | Vous pouvez choisir parmi les trois options suivantes :<br>**[!UICONTROL Immédiatement ]** : lorsque des ressources sont chargées, le système les ingère et fournit instantanément l’URL/le code intégré. Aucune intervention n’est nécessaire de la part de l’utilisateur pour publier des ressources.<br>**[!UICONTROL A l&#39;Activation]** : Vous devez d’abord publier explicitement le fichier avant qu’un lien URL/Incorporer ne soit fourni.<br>**[!UICONTROL Publication ]**sélective : Les ressources sont publiées automatiquement pour une prévisualisation sécurisée uniquement. Ils peuvent également être explicitement publiés sur le Experience Manager en tant que Cloud Service sans être publiés sur DMS7 pour diffusion dans le domaine public. À l’avenir, cette option a pour objectif de publier des fichiers en tant que Cloud Service sur le Experience Manager et de publier des fichiers en Dynamic Media, mutuellement exclusifs. En d’autres termes, vous pouvez publier des ressources dans DMS7 afin d’utiliser des fonctionnalités telles que le recadrage intelligent ou les rendus dynamiques. Vous pouvez également publier des fichiers exclusivement en Experience Manager en tant que Cloud Service pour la prévisualisation ; ces mêmes ressources ne sont pas publiées dans DMS7 pour diffusion dans le domaine public. |
+   | Publier les ressources | Vous pouvez choisir parmi les trois options suivantes : <br>**[!UICONTROL Immédiatement ]**- Lorsque des fichiers sont téléchargés, le système les ingère et fournit l’URL/Incorporer instantanément. Aucune intervention n’est nécessaire de la part de l’utilisateur pour publier des ressources.<br>**[!UICONTROL À l’Activation]**  : vous devez publier explicitement le fichier avant qu’un lien URL/incorporé ne soit fourni.<br>**[!UICONTROL Publication ]**sélective : les ressources sont publiées automatiquement pour une prévisualisation sécurisée uniquement. Ils peuvent également être explicitement publiés sur le Experience Manager en tant que Cloud Service sans être publiés sur DMS7 pour diffusion dans le domaine public. À l’avenir, cette option a pour objectif de publier des fichiers en tant que Cloud Service sur le Experience Manager et de publier des fichiers en Dynamic Media, mutuellement exclusifs. En d’autres termes, vous pouvez publier des ressources dans DMS7 afin d’utiliser des fonctionnalités telles que le recadrage intelligent ou les rendus dynamiques. Vous pouvez également publier des fichiers exclusivement en Experience Manager en tant que Cloud Service pour la prévisualisation ; ces mêmes ressources ne sont pas publiées dans DMS7 pour diffusion dans le domaine public. |
    | Serveur d’aperçu sécurisé | Permet de définir le chemin URL de votre serveur d’aperçu des rendus sécurisé. En d’autres termes, une fois les rendus générés, le Experience Manager en tant que Cloud Service peut accéder en toute sécurité et prévisualisation aux rendus Dynamic Media distants (aucun binaire n’est renvoyé au Experience Manager en tant qu’instance Cloud Service).<br>À moins que vous ne disposiez d’un arrangement spécial pour utiliser votre propre serveur de société ou un serveur spécial, l’Adobe vous recommande de laisser ce paramètre tel qu’il est spécifié. |
-   | Synchroniser tout le contenu | Sélectionné par défaut. Désélectionnez cette option si vous souhaitez inclure ou exclure des ressources de la synchronisation avec Dynamic Media. La désélection de cette option vous permet de choisir l’un des deux modes de synchronisation Dynamic Media :<br>**[!UICONTROL Mode de synchronisation Dynamic Media]**<br>**[!UICONTROL Activer par défaut ]** : la configuration s’applique par défaut à tous les dossiers, sauf si vous marquez un dossier spécifique à exclure. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Désactivé par défaut]** : la configuration n’est appliquée à aucun dossier tant que vous ne marquez pas explicitement un dossier sélectionné pour synchronisation avec Dynamic Media.<br>Pour marquer un dossier sélectionné pour synchronisation vers Dynamic Media, sélectionnez un dossier de ressources, puis, dans la barre d’outils, appuyez sur  **[!UICONTROL Propriétés]**. Sous l’onglet **[!UICONTROL Détails]**, dans la liste déroulante **[!UICONTROL Mode de synchronisation Dynamic Media]**, choisissez l’une des trois options suivantes. Une fois le choix effectué, appuyez sur **[!UICONTROL Enregistrer]**. *À retenir : ces trois options ne sont pas disponibles si vous avez sélectionné auparavant **Synchroniser tout le contenu**.* Voir aussi [Utilisation de la publication sélective au niveau du dossier dans Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL Hérité&#x200B;]**: Aucune valeur de synchronisation explicite sur le dossier. Au lieu de cela, le dossier hérite de la valeur de synchronisation de l’un de ses dossiers ancêtres ou du mode par défaut dans la configuration du cloud. L’état détaillé pour les éléments hérités s’affiche par le biais d’une info-bulle.<br>**[!UICONTROL Activer pour les sous-dossiers]** : Incluez dans cette sous-arborescence tous les éléments à synchroniser avec Dynamic Media. Les paramètres propres au dossier remplacent le mode par défaut dans la configuration du cloud.<br>**[!UICONTROL Désactivé pour les sous-dossiers ]**: Exclure la synchronisation de tous les éléments de cette sous-arborescence vers Dynamic Media. |
+   | Synchroniser tout le contenu | Sélectionné par défaut. Désélectionnez cette option si vous souhaitez inclure ou exclure des ressources de la synchronisation avec Dynamic Media. La désélection de cette option vous permet de choisir l’un des deux modes de synchronisation Dynamic Media :<br>**[!UICONTROL Mode de synchronisation Dynamic Media]**<br>**[!UICONTROL Activer par défaut ]**: la configuration est appliquée par défaut à tous les dossiers, sauf si vous marquez un dossier spécifiquement à des fins d’exclusion. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Désactivé par défaut]** : la configuration n’est appliquée à aucun dossier tant que vous ne marquez pas explicitement un dossier sélectionné pour synchronisation avec Dynamic Media.<br>Pour marquer un dossier sélectionné pour synchronisation vers Dynamic Media, sélectionnez un dossier de ressources, puis, dans la barre d’outils, appuyez sur  **[!UICONTROL Propriétés]**. Sous l’onglet **[!UICONTROL Détails]**, dans la liste déroulante **[!UICONTROL Mode de synchronisation Dynamic Media]**, choisissez l’une des trois options suivantes. Une fois le choix effectué, appuyez sur **[!UICONTROL Enregistrer]**. *À retenir : ces trois options ne sont pas disponibles si vous avez sélectionné auparavant **Synchroniser tout le contenu**.* Voir aussi [Utilisation de la publication sélective au niveau du dossier dans Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL Hérité&#x200B;]**: aucune valeur de synchronisation explicite sur le dossier. Au lieu de cela, le dossier hérite de la valeur de synchronisation de l’un de ses dossiers ancêtres ou du mode par défaut dans la configuration du cloud. L’état détaillé pour les éléments hérités s’affiche par le biais d’une info-bulle.<br>**[!UICONTROL Activer pour les sous-dossiers]**  - Inclure tout ce qui se trouve dans cette sous-arborescence pour la synchronisation avec Dynamic Media. Les paramètres propres au dossier remplacent le mode par défaut dans la configuration du cloud.<br>**[!UICONTROL Désactivé pour les sous-dossiers ]**- Exclure tous les éléments de cette sous-arborescence de la synchronisation vers Dynamic Media. |
 
    >[!NOTE]
    >
@@ -116,7 +116,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >Cette notification de boîte de réception vous informe si la configuration a réussi ou non.
    > Pour plus d’informations, voir [Dépannage d’une nouvelle configuration Dynamic Media](#troubleshoot-dm-config) et [Votre boîte de réception](/help/sites-cloud/authoring/getting-started/inbox.md).
 
-1. Pour prévisualisation en toute sécurité le contenu Dynamic Media avant sa publication, Experience Manager en tant que Cloud Service utilise par défaut l’authentification par jeton. Cependant, vous pouvez également &quot;placer sur la liste autorisée&quot; davantage d’adresses IP pour permettre aux utilisateurs d’accéder au contenu de prévisualisation sécurisé. Pour configurer cette action, procédez comme suit : <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
+1. Pour prévisualisation en toute sécurité le contenu Dynamic Media avant sa publication, Experience Manager en tant que Cloud Service utilise par défaut la validation basée sur des jetons. Cependant, vous pouvez également &quot;placer sur la liste autorisée&quot; davantage d’adresses IP pour permettre aux utilisateurs d’accéder au contenu de prévisualisation sécurisé. Pour configurer cette action, procédez comme suit : <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
    * Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started) puis connectez-vous à votre compte. Vos informations d’identification et de connexion ont été fournies par l’Adobe au moment de l’attribution des privilèges d’accès. Si vous ne disposez pas de ces informations, contactez le service à la clientèle Adobe.
    * Dans la barre de navigation située dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Configuration de la publication]** > **[!UICONTROL Image Server]**.
@@ -139,7 +139,7 @@ Lorsqu’une nouvelle configuration Dynamic Media termine sa configuration, vous
 
 Voir aussi [Votre boîte de réception](/help/sites-cloud/authoring/getting-started/inbox.md).
 
-**Pour résoudre les problèmes liés à une nouvelle configuration Dynamic Media**
+**Pour résoudre les problèmes liés à une nouvelle configuration Dynamic Media:**
 
 1. Près de l’angle supérieur droit du Experience Manager en tant que page de Cloud Service, appuyez sur l’icône représentant une cloche, puis appuyez sur **[!UICONTROL Vue Tout]**.
 1. Sur la page Boîte de réception, appuyez sur la notification de succès pour accéder à un aperçu de l’état et des journaux de la configuration.
@@ -279,7 +279,7 @@ Vous pouvez définir les types de ressources traités par Dynamic Media et pers
 
 Voir la section [Chargement des ressources](/help/assets/add-assets.md).
 
-**Pour modifier les types MIME pour les formats pris en charge**
+**Pour modifier les types MIME pour les formats pris en charge:**
 
 1. Dans Experience Manager en tant que Cloud Service, cliquez sur le Experience Manager en tant que logo du Cloud Service pour accéder à la console de navigation globale, puis cliquez sur **[!UICONTROL Général > CRXDE Lite]**.
 1. Dans le rail de gauche, accédez à ce qui suit :
@@ -305,7 +305,7 @@ Voir la section [Chargement des ressources](/help/assets/add-assets.md).
 
 Vous pouvez ajouter des types MIME personnalisés pour les formats non pris en charge dans les ressources du Experience Manager. Pour vous assurer que tout nouveau noeud ajouté dans le CRXDE Lite n’est pas supprimé par le Experience Manager, déplacez le type MIME avant `image_`. Assurez-vous également que sa valeur activée est définie sur **[!UICONTROL false]**.
 
-**Pour ajouter des types MIME pour des formats non pris en charge**
+**Pour ajouter des types MIME pour des formats non pris en charge:**
 
 1. Depuis Experience Manager en tant que Cloud Service, appuyez sur **[!UICONTROL Outils > Opérations > Console Web]**.
 
@@ -325,7 +325,7 @@ Vous pouvez ajouter des types MIME personnalisés pour les formats non pris en c
 
 1. Entrez `DWG=image/vnd.dwg` dans le champ de texte vide que vous venez d’ajouter.
 
-   L&#39;exemple `DWG=image/vnd.dwg` n&#39;est fourni qu&#39;à titre d&#39;illustration. Le type MIME que vous ajoutez ici peut être tout autre format non pris en charge.
+   Le type MIME `DWG=image/vnd.dwg` n&#39;est utilisé qu&#39;à titre d&#39;exemple. Le type MIME que vous ajoutez ici peut être tout autre format non pris en charge.
 
    ![2019-08-02_16-36-36](assets/2019-08-02_16-36-36.png)
 
@@ -390,7 +390,7 @@ Voir aussi [Ajouter des types MIME pour les formats non pris en charge](#adding-
 
 La file d’attente de workflows Granite est utilisée pour le workflow **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques]**. Dans Dynamic Media, elle est utilisée pour l’intégration et le traitement des images.
 
-**Pour mettre à jour la file d’attente de workflows transitoires Granite**
+**Pour mettre à jour la file d’attente de workflows transitoires Granite:**
 
 1. Accédez à [https://&lt;serveur>/system/console/configMgr](https://localhost:4502/system/console/configMgr) et recherchez **Queue: Granite Transient Workflow Queue** (File d’attente : file d’attente de workflows transitoires Granite).
 
