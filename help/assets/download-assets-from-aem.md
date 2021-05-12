@@ -2,16 +2,16 @@
 title: Téléchargement de ressources
 description: Téléchargez des ressources depuis  [!DNL Adobe Experience Manager Assets]  et activez ou désactivez la fonctionnalité de téléchargement.
 contentOwner: AG
-feature: Asset Management
+feature: Gestion des ressources
 role: Business Practitioner
+exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: a14d5ec69889ef3d89e595cd837f182c499d0ebc
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 99%
+source-wordcount: '921'
+ht-degree: 93%
 
 ---
-
 
 # Téléchargement de ressources depuis [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
@@ -68,7 +68,7 @@ Pour télécharger des ressources, procédez comme suit :
 
 ## Activation du servlet de téléchargement de ressources {#enable-asset-download-servlet}
 
-Le servlet par défaut d’[!DNL Experience Manager] permet aux utilisateurs authentifiés d’émettre des demandes de téléchargement simultanées de grande taille et de taille arbitraire afin de créer des fichiers ZIP de ressources. La préparation des téléchargements peut avoir des conséquences sur les performances ou peut même surcharger le serveur et le réseau. Pour atténuer ces risques potentiels de déni de service, le composant OSGi `AssetDownloadServlet` est désactivé par défaut pour les instances de publication.
+Le servlet par défaut d’[!DNL Experience Manager] permet aux utilisateurs authentifiés d’émettre des demandes de téléchargement simultanées de grande taille et de taille arbitraire afin de créer des fichiers ZIP de ressources. La préparation des téléchargements peut avoir des conséquences sur les performances ou peut même surcharger le serveur et le réseau. Pour atténuer ces risques potentiels de déni de service, le composant OSGi `AssetDownloadServlet` est désactivé par défaut pour les instances de publication. Si vous n’avez pas besoin de la fonction de téléchargement sur les instances d’auteur, désactivez la servlet sur l’auteur.
 
 Pour permettre le téléchargement de fichiers depuis votre DAM (par exemple, lorsque vous utilisez un élément comme Asset Share Commons ou une autre implémentation de type portail), activez manuellement le servlet via une configuration OSGi. Adobe recommande de définir la taille de téléchargement autorisée sur la valeur la plus basse possible sans affecter les exigences de téléchargement au quotidien. Une valeur élevée peut avoir une incidence sur les performances.
 
@@ -86,7 +86,7 @@ Pour permettre le téléchargement de fichiers depuis votre DAM (par exemple, lo
 
 ## Désactivation du servlet de téléchargement de ressources {#disable-asset-download-servlet}
 
-Le `Asset Download Servlet` peut être désactivé sur les instances de publication [!DNL Experience Manager] en mettant à jour la configuration du Dispatcher afin de bloquer toute demande de téléchargement de ressources. Le servlet peut également être désactivé manuellement par l’intermédiaire de la console OSGi.
+Si vous n’avez pas besoin de la fonctionnalité de téléchargement, désactivez la servlet pour éviter tout risque de type DoS. `Asset Download Servlet` peut être désactivé sur une instance d&#39;auteur et de publication [!DNL Experience Manager] en mettant à jour la configuration du répartiteur pour bloquer toute demande de téléchargement de ressources. Le servlet peut également être désactivé manuellement par l’intermédiaire de la console OSGi.
 
 1. Pour bloquer les requêtes de téléchargement de ressources via une configuration de Dispatcher, modifiez la configuration `dispatcher.any` et ajoutez une nouvelle règle à la [section /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#configuring).
 
