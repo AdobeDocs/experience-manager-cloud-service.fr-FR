@@ -4,14 +4,14 @@ description: Dans cette partie du Parcours de développement AEM sans tête, vou
 hide: true
 hidefromtoc: true
 index: false
+exl-id: 257fc173-6bfb-4b60-b66c-6d6bdd5cf13f
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: 635768f63c604d1c1892de57c55693da6a0fe954
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '2017'
 ht-degree: 0%
 
 ---
-
 
 # Chemin vers votre première expérience à l’aide de AEM sans en-tête {#path-to-first-experience}
 
@@ -137,7 +137,14 @@ Maintenant que vous avez terminé cette partie du Parcours de développement AEM
 * connaître les outils et les configurations AEM nécessaires.
 * Découvrez les meilleures pratiques pour simplifier votre parcours sans tête, optimiser la génération de contenu et garantir la diffusion rapide du contenu.
 
-Vous devez poursuivre votre parcours sans tête AEM en examinant ensuite le document [Comment modéliser votre contenu en tant que AEM Content Models](model-your-content.md) où vous apprendrez à modéliser votre structure de contenu en AEM.
+Nous voulons que vous puissiez tirer parti de cette connaissance fondamentale pour comprendre pleinement la puissance et la flexibilité de AEM Headless afin que vous puissiez en profiter pour vos propres projets. Pour ce faire, vous avez des options.
+
+### Choisissez votre propre aventure {#choose-your-path}
+
+Quel que soit votre style d&#39;apprentissage, l&#39;Adobe veut que vous réussissiez à vous lancer dans votre projet AEM sans tête.
+
+* Si vous préférez **continuer à apprendre les concepts sans tête et les technologies sans tête AEM**, vous devez continuer votre parcours sans tête AEM en passant en revue le document [Comment modéliser votre contenu en tant que modèles de contenu](model-your-content.md) où vous apprendrez à modéliser votre structure de contenu dans les .
+* Si vous préférez **apprendre en faisant**, vous pouvez accéder directement au [didacticiel de mise en route AEM sans en-tête](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) où vous accédez directement au développement AEM sans en-tête en implémentant un projet simple pour exposer un contenu sans en-tête AEM.
 
 ## Ressources supplémentaires {#additional-resources}
 
