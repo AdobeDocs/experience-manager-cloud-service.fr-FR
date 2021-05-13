@@ -2,10 +2,10 @@
 title: Recherche et indexation de contenu
 description: Recherche et indexation de contenu
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 16afabcd80f9014684a5d3428a65d8b2c41c69c8
+source-git-commit: eae25dc48a7cd5d257e23b515f497588a13917ea
 workflow-type: tm+mt
-source-wordcount: '1829'
-ht-degree: 69%
+source-wordcount: '1780'
+ht-degree: 71%
 
 ---
 
@@ -208,7 +208,3 @@ Si un index doit être supprimé dans une version ultérieure de l’application
 ```
 
 S’il n’est plus nécessaire de personnaliser un index prêt à l’emploi, vous devez copier la définition d’index prêt à l’emploi. Par exemple, si vous avez déjà déployé `damAssetLucene-8-custom-3`, mais que vous n&#39;avez plus besoin des personnalisations et que vous souhaitez revenir à l&#39;index `damAssetLucene-8` par défaut, vous devez ajouter un index `damAssetLucene-8-custom-4` contenant la définition d&#39;index de `damAssetLucene-8`.
-
-### Disponibilité de l&#39;index et tolérance aux pannes {#index-availability-and-fault-tolerance}
-
-Il est recommandé de créer des index de duplicata pour les fonctions importantes (en gardant à l&#39;esprit la convention d&#39;attribution de noms pour les index mentionnés ci-dessus), de sorte qu&#39;en cas de corruption d&#39;index ou de événement imprévu de ce type, un index de secours est disponible pour répondre aux requêtes.
