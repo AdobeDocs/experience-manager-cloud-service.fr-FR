@@ -2,10 +2,9 @@
 title: Présentation de l’outil de transfert de contenu
 description: Présentation de l’outil de transfert de contenu
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
-translation-type: tm+mt
-source-git-commit: 1fb9814f10ef8eae87a7eef9f390700f2f2127d8
+source-git-commit: ccac613f7ceb27c6d4dea11f5dd4fdc1aaba9781
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '860'
 ht-degree: 77%
 
 ---
@@ -83,4 +82,4 @@ La formule générale pour calculer l’espace disque disponible requis est la s
    * *volume de stockage des nœuds* : taille du répertoire de stockage des segments ou taille de la base de données MongoDB.
 Ainsi, pour un volume de stockage de segments de 20 Go, l’espace disque disponible requis est de 94 Go.
 
-* Un jeu de migration doit être conservé tout au long de l’activité de transfert de contenu pour prendre en charge les ajouts de contenu. Étant donné qu’un maximum de dix jeux de migration peuvent être créés et conservés à un moment donné pendant l’activité de transfert de contenu, il est recommandé de séparer le référentiel de contenu en conséquence pour vous assurer que vous n’êtes pas à court de jeux de migration.  pendant/structurer leur migration définie en conséquence.
+* Un jeu de migration doit être conservé tout au long de l’activité de transfert de contenu pour prendre en charge les ajouts de contenu. Étant donné qu’un maximum de dix jeux de migration peuvent être créés et conservés à un moment donné pendant l’activité de transfert de contenu, il est recommandé de séparer le référentiel de contenu en conséquence pour vous assurer que vous n’êtes pas à court de jeux de migration.
