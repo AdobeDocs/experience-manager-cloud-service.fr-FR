@@ -5,10 +5,10 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 0960c354eb9a5156d9200b2c6f54761f1a8383a2
+source-git-commit: 309fae113f98111e8dc548226a7fba1b72f16248
 workflow-type: tm+mt
-source-wordcount: '1811'
-ht-degree: 1%
+source-wordcount: '1836'
+ht-degree: 2%
 
 ---
 
@@ -199,7 +199,8 @@ Vous devez continuer votre parcours sans tête AEM en examinant ensuite le docum
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Prise en main du déploiement AEM production sans affichage](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
-* [Présentation du déploiement sur AEM en tant que Cloud Service](/help/implementing/deploying/overview.md)
 * [Configuration D’Un Environnement D’AEM Local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
+* [SDK d’AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+* [Présentation du déploiement sur AEM en tant que Cloud Service](/help/implementing/deploying/overview.md)
 * [Utilisation de Cloud Manager pour déployer votre code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
+* [Intégration du référentiel Git de Cloud Manager à un référentiel Git externe et déploiement d’un projet AEM en tant que Cloud Service](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/master/help/implementing/developing/headless-journey/access-your-content.md)
