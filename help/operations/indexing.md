@@ -2,11 +2,10 @@
 title: Recherche et indexation de contenu
 description: Recherche et indexation de contenu
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-translation-type: tm+mt
-source-git-commit: 1139b9f7014e68ab3d6ea7d720242e95786cc9e6
+source-git-commit: 16afabcd80f9014684a5d3428a65d8b2c41c69c8
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 72%
+source-wordcount: '1829'
+ht-degree: 69%
 
 ---
 
@@ -49,6 +48,10 @@ La définition d&#39;index peut comprendre trois cas d&#39;utilisation :
 Pour les points 1 et 2 ci-dessus, vous devez créer une définition d’index dans le cadre de votre base de code personnalisé dans le calendrier de publication Cloud Manager correspondant. Pour plus d’informations, reportez-vous à [Déploiement vers AEM as a Cloud Service](/help/implementing/deploying/overview.md).
 
 ### Préparation de la nouvelle définition d&#39;index {#preparing-the-new-index-definition}
+
+>[!NOTE]
+>
+>Si vous personnalisez un index prêt à l&#39;emploi, par exemple `damAssetLucene-6`, copiez la dernière définition d&#39;index prêt à l&#39;emploi à partir d&#39;un *environnement Cloud Service* et ajoutez vos personnalisations au-dessus, cela garantit que les configurations requises ne sont pas supprimées par inadvertance. Par exemple, le noeud `tika` sous `/oak:index/damAssetLucene-6/tika` est un noeud obligatoire et doit également faire partie de votre index personnalisé et il n’existe pas sur le SDK Cloud.
 
 Vous devez préparer un nouveau package de définition d’index qui contient la définition d’index réelle, en suivant ce modèle de dénomination :
 
