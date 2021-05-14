@@ -4,11 +4,10 @@ description: Dynamic Media est fourni avec un profil prédéfini de codage vid�
 feature: Gestion des ressources,Profils vidéo,Rendus
 role: Business Practitioner
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '3664'
-ht-degree: 69%
+source-wordcount: '3665'
+ht-degree: 68%
 
 ---
 
@@ -101,7 +100,7 @@ La taille maximale de fichier vidéo prise en charge par le recadrage intelligen
 
 * Durée de cinq minutes
 * 30 images par seconde (i/s)
-* Taille de fichier de 300 Mo
+* Taille du fichier : 300 Mo.
 
 Adobe Sensei est limité à 9 000 images. C’est-à-dire cinq minutes à 30 i/s. Si votre vidéo présente une fréquence d’images supérieure, la durée de vidéo maximale prise en charge diminue. Par exemple, une vidéo de 60 i/s doit durer deux minutes et demie pour être prise en charge par Adobe Sensei et un recadrage intelligent.
 
@@ -211,7 +210,7 @@ Appuyez sur l’icône d’informations située en regard de chaque option pour 
 1. Procédez comme suit :
    * Dans le champ **[!UICONTROL Largeur]**, saisissez **[!UICONTROL auto]**.
    * Dans le champ **[!UICONTROL Hauteur]**, saisissez une valeur en pixels.
-Pour visualiser plus facilement la taille de la vidéo, appuyez sur l’icône d’informations de hauteur pour ouvrir la page **[!UICONTROL Calcul de la taille]**. Utilisez la page **[!UICONTROL Calcul de la taille]** pour définir les dimensions de votre choix pour la vidéo (encadré bleu). Lorsque vous avez terminé, dans le coin supérieur droit de la boîte de dialogue, appuyez sur **[!UICONTROL X]**.
+Pour visualiser plus facilement la taille de la vidéo, appuyez sur l’icône d’informations de hauteur pour ouvrir la page **[!UICONTROL Calcul de la taille]**. Utilisez la page **[!UICONTROL Calculateur de taille]** pour définir davantage la taille de la vidéo (zone bleue) comme vous le souhaitez. Lorsque vous avez terminé, dans le coin supérieur droit de la boîte de dialogue, appuyez sur **[!UICONTROL X]**.
 1. (Facultatif) Effectuez l’une des opérations suivantes :
 
    * Appuyez sur l&#39;onglet **[!UICONTROL Avancé]** et assurez-vous que la case **[!UICONTROL Utiliser les valeurs par défaut]** est cochée (recommandé).
@@ -244,7 +243,7 @@ Vous pouvez maintenant appliquer le profil aux dossiers contenant des vidéos. V
 
 Vous pouvez modifier un profil de codage vidéo existant pour tirer parti des paramètres de codage vidéo avancés qui ne se trouvent pas dans l’interface utilisateur lorsque vous créez ou modifiez un Profil vidéo dans le Experience Manager. Vous pouvez ajouter sur mesure un ou plusieurs paramètres avancés, tels que minBitrate et maxBitrate, à votre profil existant.
 
-**Pour utiliser des paramètres de codage vidéo personnalisés, procédez comme suit** :
+**Pour utiliser des paramètres de codage vidéo personnalisés ajoutés :**
 
 1. Appuyez sur le logo du Experience Manager, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL CRXDE Lite]**.
 1. À partir de la page CRXDE Lite, dans le panneau Explorateur à gauche, accédez au répertoire suivant :
@@ -271,7 +270,7 @@ Vous pouvez modifier un profil de codage vidéo existant pour tirer parti des pa
   </tr>
   <tr>
    <td><code>keyframe</code></td>
-   <td>Nombre cible d’images entre les images clés. Calculez cette valeur pour générer une image clé toutes les 2 à 10 secondes. Par exemple, à 30 images par seconde, l’intervalle entre les images clés est de 60 à 300.<br /> <br /> Des intervalles d’images clés plus bas améliorent le comportement de recherche de flux et de commutation de flux pour les codages vidéo adaptatifs et peuvent également améliorer la qualité des vidéos qui ont beaucoup de mouvement. Cependant, puisque les images clés augmentent la taille du fichier, un intervalle d’images clés moindre entraîne généralement une qualité de vidéo globalement moins bonne à un débit donné.</td>
+   <td>Nombre cible d’images entre les images clés. Calculez cette valeur de sorte que vous puissiez générer une image clé toutes les 2 à 10 secondes. Par exemple, à 30 images par seconde, l’intervalle entre les images clés est de 60 à 300.<br /> <br /> Des intervalles d’images clés plus bas améliorent le comportement de recherche de flux et de commutation de flux pour les codages vidéo adaptatifs et peuvent également améliorer la qualité des vidéos qui ont beaucoup de mouvement. Cependant, puisque les images clés augmentent la taille du fichier, un intervalle d’images clés moindre entraîne généralement une qualité de vidéo globalement moins bonne à un débit donné.</td>
    <td><code>String</code></td>
    <td><p>Numéro positif.</p> <p>La valeur par défaut est 300.</p> <p>La valeur recommandée pour HLS (HTTP Live Streaming) est comprise entre 60 et 90.</p> </td>
   </tr>
@@ -316,7 +315,7 @@ Consultez également la section [Pratiques recommandées pour le codage vidéo](
 
 Pour définir des paramètres de traitement avancés pour d’autres types de ressources, voir [Configuration du traitement des ressources](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
-**Pour modifier un profil vidéo** :
+**Pour modifier un Profil vidéo :**
 
 1. Appuyez sur le logo du Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils vidéo]**.
 1. Sur la page Profils vidéo, cochez un nom de profil vidéo.
@@ -383,7 +382,7 @@ Vous pouvez [surveiller la progression d’une tâche de traitement de profil vi
 
 #### Application d’un profil vidéo aux dossiers à partir des propriétés {#applying-video-profiles-to-folders-from-properties}
 
-1. Appuyez ou cliquez sur le logo du Experience Manager et accédez à **[!UICONTROL Ressources]**, puis au dossier auquel vous souhaitez appliquer un Profil vidéo.
+1. Appuyez sur le logo du Experience Manager et accédez à **[!UICONTROL Assets]**, puis au dossier auquel vous souhaitez appliquer un Profil vidéo.
 1. Dans le dossier, appuyez sur la coche pour la sélectionner, puis sur **[!UICONTROL Propriétés]**.
 1. Accédez à l’onglet **[!UICONTROL Profils vidéo]**, sélectionnez le profil dans le menu déroulant, puis cliquez sur **[!UICONTROL Enregistrer et fermer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
@@ -396,7 +395,7 @@ Outre l’application d’un profil à un dossier, vous pouvez en appliquer un g
 
 Voir aussi [Retraitement des ressources dans un dossier](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-**Pour appliquer un profil vidéo à l’ensemble des ressources :**
+**Pour appliquer un Profil vidéo globalement :**
 
 * Accédez au nœud suivant de CRXDE Lite : `/content/dam/jcr:content`. Ajoutez la propriété `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` et appuyez sur **[!UICONTROL Enregistrer tout]**.
 
