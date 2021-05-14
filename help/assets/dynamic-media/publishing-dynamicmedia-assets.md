@@ -5,11 +5,10 @@ contentOwner: Rick Brough
 feature: Gestion des ressources
 role: Business Practitioner
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 59%
+source-wordcount: '464'
+ht-degree: 56%
 
 ---
 
@@ -17,7 +16,7 @@ ht-degree: 59%
 
 Vous publiez vos ressources Dynamic Media en sélectionnant celles que vous avez déjà chargées et en appuyant sur **[!UICONTROL Publier]** ou **[!UICONTROL Publication rapide]**. Une fois vos ressources Dynamic Media publiées, vous pouvez les inclure dans une page web au moyen d’une URL ou d’une incorporation de code sur la page.
 
-Vous pouvez également publier immédiatement les ressources que vous chargez, sans intervention de l’utilisateur. Vous pouvez également publier ces ressources de manière sélective. Voir [Configuration de Dynamic Media](config-dm.md). Vous pouvez également publier des fichiers de manière sélective sur Dynamic Media ou Adobe Experience Manager, mutuellement exclusifs les uns des autres, en utilisant **[!UICONTROL Publication sélective]** au niveau du dossier. Voir [Utilisation de la publication sélective dans Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
+Vous pouvez également publier instantanément des fichiers que vous téléchargez, sans intervention de l’utilisateur. Vous pouvez également publier ces ressources de manière sélective. Voir [Configuration de Dynamic Media](config-dm.md). Vous pouvez également publier des fichiers de manière sélective sur Dynamic Media ou Adobe Experience Manager, mutuellement exclusifs les uns des autres, en utilisant **[!UICONTROL Publication sélective]** au niveau du dossier. Voir [Utilisation de la publication sélective dans Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
 
 En **[!UICONTROL mode Carte]**, une petite icône en forme de globe apparaît directement sous le nom d’une ressource et à gauche de la date et de l’heure pour indiquer qu’elle est publiée. En **[!UICONTROL mode Liste]**, une colonne **[!UICONTROL Publié]** indique les ressources qui sont publiées et celles qui ne le sont pas.
 
