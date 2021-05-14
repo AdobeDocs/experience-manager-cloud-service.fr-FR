@@ -4,32 +4,31 @@ description: Découvrez comment prévisualiser des ressources dans Dynamic Media
 feature: Gestion des ressources
 role: Business Practitioner
 exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1211'
-ht-degree: 82%
+source-wordcount: '1214'
+ht-degree: 78%
 
 ---
 
 # Aperçu des ressources {#previewing-assets}
 
-Vous pouvez utiliser la fonction Aperçu pour afficher une ressource numérique que vous avez chargée telle qu’elle sera présentée au client dans son navigateur web. La visionneuse par défaut incorporée inter-périphérique affectée à la ressource est utilisée pour l’aperçu.
+Vous pouvez utiliser la Prévisualisation pour voir comment s’affiche un fichier numérique que vous avez téléchargé lorsqu’il est affiché par un client dans son propre navigateur Web. La visionneuse par défaut incorporée inter-périphérique affectée à la ressource est utilisée pour l’aperçu.
 
 Une visionneuse est un ensemble de divers paramètres ou &quot;paramètres prédéfinis&quot;. Par exemple, la taille d’affichage de la visionneuse, le comportement de zoom, les modèles de couleurs, les bordures et les polices, qui déterminent la manière dont les utilisateurs vue des fichiers de média enrichi sur leurs écrans d’ordinateur et périphériques mobiles.
 
 En plus de la fonction Aperçu dédiée aux vidéos, aux visionneuses à 360° et aux visionneuses d’images, vous pouvez également prévisualiser une ressource à l’aide des paramètres prédéfinis de visionneuse que vous avez créés. Vous pouvez aussi utiliser des paramètres d’image prédéfinis pour prévisualiser des rendus d’images.
 
 * [Application de paramètres d’image prédéfinis](/help/assets/dynamic-media/image-presets.md)
-* [Application de paramètres prédéfinis de la visionneuse](/help/assets/dynamic-media/viewer-presets.md)
+* [Application de paramètres prédéfinis de visionneuse](/help/assets/dynamic-media/viewer-presets.md)
 
 >[!NOTE]
 >
->Lorsque vous vous trouvez sur une page Web (Sites) de Adobe Experience Manager, vous ne pouvez pas prévisualisation de ressources en mode **Modifier**. Accédez plutôt au mode **Prévisualisation** en cliquant sur **Prévisualisation** dans le coin supérieur droit de la page.
+>Lorsque vous vous trouvez sur une page Web (Sites) de Adobe Experience Manager, vous ne pouvez pas prévisualisation de ressources en mode **[!UICONTROL Modifier]**. Accédez plutôt au mode Prévisualisation en cliquant sur **[!UICONTROL Prévisualisation]** dans le coin supérieur droit de la page.
 
 Pour activer ou désactiver les paramètres prédéfinis de visionneuse dans l’interface utilisateur, voir [Gestion des paramètres prédéfinis de visionneuse](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-**Prévisualisation d’une ressource**
+**Prévisualisation d’une ressource:**
 
 1. Dans **[!UICONTROL Experience Manager]**, sur la page de **[!UICONTROL navigation]**, appuyez sur **[!UICONTROL Ressources]**, puis sur **[!UICONTROL Fichiers]** pour accéder aux ressources.
 1. Dans le coin supérieur droit de la page, dans la liste déroulante **[!UICONTROL Afficher]**, appuyez sur **[!UICONTROL Mode Liste]**.
@@ -58,7 +57,7 @@ Pour activer ou désactiver les paramètres prédéfinis de visionneuse dans l�
       <ul>
       <li><p><strong>Tournez votre appareil photo</strong> : faites tourner votre angle de vue autour de la scène et des objets 3D.</p> Souris : cliquez avec le bouton gauche et faites glisser.</p> Écran tactile : appuyez et faites glisser.</p></li>
       <li><p><strong>Panoramique</strong> : basculez votre angle de vue vers la gauche, la droite, le haut et le bas.</p> Souris : Cliquez avec le bouton droit de la souris et faites glisser.</p> Écran tactile : appuyez avec deux doigts et faites glisser.</p></li>
-      <li><p><strong>Zoom</strong> : permet de zoomer pour déplacer l’appareil dans et hors des zones de la scène 3D.</p> Souris : effectuez un défilement à l’aide de la roulette.</p> Écran tactile : effectuez un pincement du doigt.</p></li>
+      <li><p><strong>Zoom sur la caméra</strong>  : effectuez un zoom sur la caméra si vous souhaitez vous déplacer dans et hors des zones de la scène 3D.</p> Souris : effectuez un défilement à l’aide de la roulette.</p> Écran tactile : effectuez un pincement du doigt.</p></li>
       <li><p><strong>Recentrez votre appareil photo</strong> : faites tourner votre angle de vue autour de la scène et des objets 3D.</p> Souris : double-cliquez.</p> Écran tactile : appuyez deux fois.</li></ul></td>
       </tr>
       <tr>
