@@ -3,11 +3,10 @@ title: Utilisation de jeux de règles de transformation d’URL
 description: Découvrez comment déployer des jeux de règles dans Dynamic Media pour transformer les URL. Les jeux de règles sont des ensembles d’instructions écrits dans un langage de script (tel que JavaScript™) qui évaluent les données XML et effectuent certaines actions si ces données remplissent certaines conditions.
 role: Business Practitioner
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
 source-wordcount: '766'
-ht-degree: 85%
+ht-degree: 82%
 
 ---
 
@@ -31,7 +30,7 @@ Vous pouvez déployer des ensembles de règles dans Dynamic Media pour transfor
 
    Voir la section [Suppression des caractères spéciaux des URL](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
-Dans le cadre de Dynamic Media, les sites web qui utilisent un système XML pour gérer les informations de ressources peuvent charger des fichiers XML sur Dynamic Media. Vous pouvez désigner l’un de ces fichiers comme fichier d’ensemble de règles de prétraitement pour le service des ressources Dynamic Media. Ce fichier restructure le format du protocole URL standard pour répondre à la logique métier des systèmes intégrés avec Dynamic Media. Vous spécifiez un fichier XML pour servir de chemin d’accès au fichier des définitions d’ensembles de règles.
+Dans le cadre de Dynamic Media, les sites web qui utilisent un système XML pour gérer les informations de ressources peuvent charger des fichiers XML sur Dynamic Media. Vous pouvez désigner l’un de ces fichiers comme fichier d’ensemble de règles de prétraitement pour le service des ressources Dynamic Media. Ce fichier restructure le format de protocole URL standard pour répondre à la logique de société des systèmes intégrés à Dynamic Media. Vous spécifiez un fichier XML pour servir de chemin d’accès au fichier des définitions d’ensembles de règles.
 
 >[!CAUTION]
 >
@@ -71,7 +70,7 @@ Consultez également la section [Utilisation de « ressource » au lieu d’un
    * Dans le coin inférieur droit de la page, cliquez sur **[!UICONTROL Envoyer le téléchargement]**.
    * Sur la barre de Navigation générale, cliquez sur **[!UICONTROL Tâches]** afin de vérifier le statut de la tâche de chargement. Lorsque la colonne **[!UICONTROL État]** sur la page de la **[!UICONTROL Tâche]** indique Chargement terminé, passez aux étapes suivantes.
 
-1. Sur la barre de navigation située en haut de la page, cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Configuration de la publication > Serveur d’images]**.
+1. Sur la barre de navigation située en haut de la page, cliquez sur **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Configuration de la publication]** > **[!UICONTROL Serveur d’images]**.
 1. Sur la page du **[!UICONTROL Publication du serveur d’images]**, sous le groupe **[!UICONTROL Gestion de catalogue]**, localisez le **[!UICONTROL Chemin d’accès au fichier des définitions d’ensembles de règles]**, puis cliquez sur **[!UICONTROL Sélectionner]**.
 1. Sur la page **[!UICONTROL Sélectionner le fichier de définition de l’ensemble de règles (XML)]**, accédez à votre fichier d’ensemble de règles, puis dans le coin inférieur droit de la page, cliquez sur **[!UICONTROL Sélectionner]**.
 1. Dans le coin inférieur droit de la page Configuration, cliquez sur **[!UICONTROL Fermer]**.
