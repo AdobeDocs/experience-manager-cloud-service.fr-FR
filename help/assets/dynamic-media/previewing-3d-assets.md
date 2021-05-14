@@ -1,11 +1,10 @@
 ---
 title: Prévisualisation de fichiers 3D
 description: Découvrez comment prévisualiser des ressources 3D dans Dynamic Media.
-translation-type: tm+mt
-source-git-commit: 2fd39221eca36f520d0095339423ac2c6a0c322e
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 63%
+source-wordcount: '562'
+ht-degree: 55%
 
 ---
 
@@ -25,7 +24,7 @@ La prévisualisation 3D interactive dans le Experience Manager prend en charge l
 | Extension de fichier 3D | Format de fichier | Type MIME | Remarques |
 |---|---|---|---|
 | GLB | Transmission GL binaire | model/gltf-binary |  |
-| GLTF | Format de transmission GL | model/gltf+json | Consultez **la remarque** ci-dessous. |
+| GLTF | Format de transmission GL | model/gltf+json | Voir la **Note** ci-dessous. |
 | OBJ | Fichier d’objet 3D WaveFront | application/x-tgif |  |
 | STL | Stéréolithographie | application/vnd.ms-pki.stl |  |
 | DN | Adobe Dimension | model/x-adobe-dn | Prise en charge de l’assimilation uniquement, prévisualisation non disponible. |
@@ -46,19 +45,19 @@ La prévisualisation 3D interactive dans le Experience Manager prend en charge l
 
 Le temps d’ouverture d’un fichier 3D dans la page d’affichage des détails du fichier dépend de plusieurs facteurs, tels que la bande passante, la complexité de l’image et les latences sur le serveur.
 
-De plus, les capacités de l’ordinateur client, par exemple un poste de travail, un ordinateur portable ou un appareil mobile tactile, doivent être prises en compte lorsque vous manipulez la caméra de manière interactive. Un système relativement puissant avec de bonnes capacités graphiques peut rendre l’expérience interactive d’affichage en 3D plus fluide et plus favorable.
+En outre, les capacités de l&#39;ordinateur client (tel qu&#39;une station de travail, un ordinateur portable ou un périphérique tactile mobile) sont également importantes à prendre en compte lorsque vous manipulez la caméra de manière interactive. Un système relativement puissant avec de bonnes capacités graphiques peut rendre l’expérience interactive d’affichage en 3D plus fluide et plus favorable.
 
 **Pour prévisualisation de fichiers 3D dans le Experience Manager :**
 
 1. Assurez-vous d’avoir chargé des ressources 3D dans Experience Manager.
 Consultez [Formats pris en charge pour la prévisualisation 3D](#supported-3d-previewing-assets) et [Téléchargement de ressources](/help/assets/manage-digital-assets.md#uploading-assets).
-1. Dans Experience Manager, sur la page **[!UICONTROL Navigation]**, appuyez sur **[!UICONTROL Ressources > Fichiers]**.
+1. Depuis le Experience Manager, sur la page **[!UICONTROL Navigation]**, appuyez sur **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**.
 
    ![Page de navigation](/help/assets/dynamic-media/assets/navigation-assets.png)
 
 1. Près du coin supérieur droit de la page, dans la liste déroulante Mode, appuyez sur **[!UICONTROL Mode Carte]**, puis accédez au fichier 3D à prévisualiser.
 
-   ![Sélection de carte 3D](/help/assets/dynamic-media/assets/3d-card-select.png)
+   ![Sélection de la carte 3D](/help/assets/dynamic-media/assets/3d-card-select.png)
    _En mode Carte, appuyez sur la carte du fichier 3D à prévisualiser._
 
 1. Appuyez sur la carte du fichier 3D.
