@@ -4,11 +4,10 @@ description: Découvrez comment utiliser des visionneuses à 360° dans Dynamic�
 feature: Visionneuses à 360°
 role: Business Practitioner
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1829'
-ht-degree: 77%
+source-wordcount: '1830'
+ht-degree: 74%
 
 ---
 
@@ -16,7 +15,7 @@ ht-degree: 77%
 
 Une visionneuse à 360° simule l’action consistant à faire pivoter un objet pour l’examiner. Les visionneuses à 360° permettent de voir des éléments depuis tous les angles, révélant les détails visuels clés depuis chaque angle.
 
-Une visionneuse à 360° simule une expérience de visionnage à 360°. Dynamic Media fournit des visionneuses à 360° à axe unique avec lesquelles les observateurs peuvent faire pivoter un élément. En outre, les utilisateurs peuvent effectuer un zoom et un panoramique de « forme libre » sur n’importe quelle vue en quelques clics de souris. Ainsi, les utilisateurs peuvent examiner un élément de plus près, depuis un point de vue spécifique.
+Une visionneuse à 360° simule une expérience de visualisation à 360°. Dynamic Media fournit des visionneuses à 360° à axe unique avec lesquelles les observateurs peuvent faire pivoter un élément. En outre, les utilisateurs peuvent effectuer un zoom et un panoramique de « forme libre » sur n’importe quelle vue en quelques clics de souris. Ainsi, les utilisateurs peuvent examiner un élément de plus près, depuis un point de vue spécifique.
 
 Les visionneuses à 360° sont désignées par une bannière contenant le mot **[!UICONTROL SPINSET]**. En outre, si la visionneuse à 360° est publiée, la date de publication, indiquée par l’icône représentant la **[!UICONTROL Terre]**, figure sur la bannière avec la date de la dernière modification, indiquée par l’icône représentant un **[!UICONTROL crayon]**.
 
@@ -44,15 +43,15 @@ Pour démarrer rapidement, procédez comme suit :
 
 1. [Création de visionneuses à 360°](#creating-spin-sets).
 
-   Pour créer une visionneuse à 360°, sélectionnez **[!UICONTROL Créer > Visionneuse à 360°]**. Attribuez ensuite un nom à la visionneuse, sélectionnez des ressources et choisissez l’ordre dans lequel doivent apparaître les images.
+   Pour créer une visionneuse à 360°, sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Visionneuse à 360°]**, puis nommez la visionneuse, choisissez les ressources et choisissez l’ordre d’affichage des images.
 
-   Voir [Utilisation de sélecteurs](/help/assets/dynamic-media/working-with-selectors.md).
+   Voir [Utilisation de sélecteurs](/help/assets/dynamic-media/working-with-selectors.md).
 
 1. Configurez des [paramètres prédéfinis de visionneuse à 360°](/help/assets/dynamic-media/managing-viewer-presets.md), selon les besoins.
 
    Les administrateurs peuvent créer ou modifier les paramètres prédéfinis de visionneuse à 360°. Pour afficher votre visionneuse à 360° avec un paramètre prédéfini, sélectionnez la visionneuse puis, dans le menu contextuel du rail gauche, sélectionnez **Visionneuses**.
 
-   Pour créer ou modifier des paramètres prédéfinis de visionneuse, voir **[!UICONTROL Outils > Ressources > Paramètres prédéfinis de la visionneuse]**.
+   Pour créer ou modifier des paramètres prédéfinis de visionneuse, voir **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres prédéfinis de la visionneuse]**.
 
    Voir [Ajout et modification de paramètres prédéfinis de la visionneuse](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -90,7 +89,7 @@ Vous trouverez ci-dessous des bonnes pratiques relatives aux images de la vision
 * Utilisez un format d’image sans perte (formats TIFF et PNG recommandés).
 * Masquez toutes les images pour faire apparaître l’objet sur un fond blanc ou fortement contrasté. Ajoutez éventuellement des ombres.
 * Assurez-vous que les détails du produit sont bien éclairés et que leur mise au point est nette.
-* Utilisez un mannequin ou un modèle pour la prise de vue d’articles de mode. Souvent, le mannequin est masqué (avec un mannequin en verre) ou un mannequin stylisé/dressé est représenté sur l&#39;image. Vous pouvez créer une visionneuse à 360° « sur modèle » en définissant le nombre d’angles. Marquez chaque angle avec du ruban adhésif sur le sol afin de guider le modèle à regarder dans la direction de chaque prise de vue.
+* Utilisez un mannequin ou un modèle pour la prise de vue d’articles de mode. Souvent, le mannequin est masqué (avec un mannequin en verre) ou un mannequin stylisé/dressé est représenté sur l&#39;image. Vous pouvez créer une visionneuse à 360° « sur modèle » en définissant le nombre d’angles. Marquez chaque angle avec du ruban adhésif sur le sol pour que vous puissiez guider le modèle à suivre et regarder dans la direction de chaque prise de vue.
 
 ## Création d’une visionneuse à 360°  {#creating-spin-sets}
 
@@ -106,7 +105,7 @@ Cette section décrit comment créer des visionneuses à 360°.
 >
 >L’ordre dans lequel les images apparaissent dans une visionneuse à 360° a une importance. Assurez-vous de les commander pour que la rotation soit une vue lisse de 360 degrés.
 
-**Pour créer des visionneuses à 360°**
+**Pour créer des visionneuses à 360° :**
 
 1. Dans Assets, accédez à l’emplacement où vous souhaitez créer une visionneuse à 360°, cliquez sur **[!UICONTROL Créer]**, puis sélectionnez **[!UICONTROL Visionneuse à 360°]**. Vous pouvez également la créer depuis un dossier qui contient les ressources. L’éditeur de visionneuse à 360° s’affiche.
 
@@ -157,7 +156,7 @@ Vous pouvez créer des visionneuses à 360° dans l’interface utilisateur ou 
 >
 >Vous pouvez également afficher les visionneuses par le biais de l’interface utilisateur, comme indiqué dans [Modification d’une visionneuse à 360°](#editing-spin-sets).
 
-**Pour afficher des visionneuses à 360°**.
+**Pour afficher des visionneuses à 360° :**.
 
 1. Lors de l’ouverture des propriétés d’une ressource individuelle. Les propriétés indiquent les jeux dont la ressource sélectionnée fait partie (sous **[!UICONTROL Membre des visionneuses]**). Pour afficher l’ensemble, appuyez sur son nom.
 
@@ -183,7 +182,7 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses à 3
 * Appliquer des paramètres prédéfinis de visionneuse.
 * Supprimer la visionneuse à 360°.
 
-**Pour modifier une visionneuse à 360°**
+**Pour modifier une visionneuse à 360°, procédez comme suit :**
 
 1. Effectuez l’une des opérations suivantes :
 
