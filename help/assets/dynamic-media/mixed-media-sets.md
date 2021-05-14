@@ -4,17 +4,16 @@ description: Découvrez comment travailler avec des visionneuses de médias mixt
 feature: Visionneuses de médias mixtes
 role: Business Practitioner
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1467'
-ht-degree: 75%
+source-wordcount: '1471'
+ht-degree: 72%
 
 ---
 
 # Visionneuses de médias mixtes {#mixed-media-sets}
 
-Une visionneuse de médias mixtes permet d’offrir un mélange d’images, de visionneuses d’images, de visionneuses à 360° et de vidéos dans une même présentation.
+Les visionneuses de supports variés vous permettent de combiner en une seule présentation des images, des visionneuses d’images, des visionneuses à 360° et des vidéos.
 
 Les visionneuses de médias mixtes sont désignées par une bannière contenant les mots **[!UICONTROL Visionneuse de médias mixtes]**. En outre, si la visionneuse de médias mixtes est publiée, la date de publication, indiquée par l’icône représentant la **[!UICONTROL Terre]**, figure sur la bannière avec la date de dernière modification, indiquée par l’icône représentant un **[!UICONTROL crayon]**.
 
@@ -30,7 +29,7 @@ Pour démarrer rapidement, procédez comme suit :
 
 1. [Chargez vos ressources](#uploading-assets).
 
-   Commencez par charger les images et les vidéos pour les visionneuses de médias mixtes. Le cas échéant, créez les [Visionneuses d’images](/help/assets/dynamic-media/image-sets.md) et [Visionneuses à 360°](/help/assets/dynamic-media/spin-sets.md). Etant donné que les utilisateurs peuvent effectuer un zoom sur les images de la visionneuse de supports variés, veillez à tenir compte de la fonction de zoom lorsque vous choisissez des images. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande.
+   Commencez par charger les images et les vidéos pour les visionneuses de médias mixtes. Le cas échéant, créez les [Visionneuses d’images](/help/assets/dynamic-media/image-sets.md) et [Visionneuses à 360°](/help/assets/dynamic-media/spin-sets.md). Etant donné que les utilisateurs peuvent effectuer un zoom sur les images de la visionneuse de supports variés, veillez à tenir compte de la fonction de zoom lorsque vous choisissez des images. Assurez-vous que la taille des images est inférieure à 2 000 pixels.
 
 1. [Créez une visionneuse de médias mixtes](#creating-mixed-media-sets).
 
@@ -70,7 +69,7 @@ Si nécessaire, vous pouvez modifier [Visionneuses de supports variés](#editing
 
 ## Chargement des ressources {#uploading-assets}
 
-Commencez par charger les images et les vidéos pour les visionneuses de médias mixtes. N’oubliez pas que les utilisateurs peuvent effectuer un zoom sur les images dans la visionneuse de supports variés. Par conséquent, choisissez les images dont vous tenez compte de cette fonction de zoom. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande.
+Commencez par charger les images et les vidéos pour les visionneuses de médias mixtes. N’oubliez pas que les utilisateurs peuvent effectuer un zoom sur les images dans la visionneuse de supports variés. Par conséquent, choisissez les images dont vous tenez compte de cette fonction de zoom. Assurez-vous que la taille des images est inférieure à 2 000 pixels.
 
 En outre, si vous souhaitez ajouter des visionneuses à 360° ou des visionneuses d’images à la visionneuse de supports mixtes, créez-les également.
 
@@ -80,7 +79,7 @@ Vous pouvez ajouter des images, des visionneuses d’images, des visionneuses à
 
 Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatiquement ajoutées dans l’ordre alphanumérique. Vous pouvez réorganiser ou trier manuellement les fichiers après leur ajout.
 
-**Création d’une visionneuse de médias mixtes**
+**Création d’une visionneuse de médias mixtes:**
 
 1. Dans Assets, accédez à l’emplacement où vous souhaitez créer une visionneuse de médias mixtes, cliquez sur **[!UICONTROL Créer]**, puis sélectionnez **[!UICONTROL Visionneuse de médias mixtes]**. Vous pouvez également la créer depuis un dossier qui contient les ressources. L’éditeur de visionneuse de médias mixtes s’affiche.
 
@@ -126,7 +125,7 @@ Vous pouvez effectuer différentes tâches de modification des fichiers dans les
 * Appliquer des paramètres prédéfinis de visionneuse.
 * Modifier la vignette par défaut.
 
-**Modification d’une visionneuse de médias mixtes**
+**Modification d’une visionneuse de médias mixtes:**
 
 1. Effectuez l’une des opérations suivantes :
 
@@ -156,7 +155,7 @@ Vous pouvez effectuer différentes tâches de modification des fichiers dans les
 
    >[!NOTE]
    >
-   >* Pour modifier les ressources dans une visionneuse de médias mixtes – Accédez à la visionneuse de médias mixtes. Appuyez sur (ne sélectionnez pas) le jeu pour l’ouvrir dans la page Prévisualisation du jeu de Experience Manager. Dans le rail de gauche, cliquez sur l’icône lambda vers le bas pour ouvrir la liste déroulante, puis appuyez sur **[!UICONTROL Définir les membres]**. Dans la page Définir les membres, placez le pointeur sur une ressource, puis appuyez sur **[!UICONTROL Modifier]** (icône crayon) pour ouvrir la page de modification.
+   >* Pour modifier les ressources dans une visionneuse de médias mixtes – Accédez à la visionneuse de médias mixtes. Appuyez sur la visionneuse (ne la sélectionnez pas) pour l’ouvrir dans la page Prévisualisation du jeu de Experience Manager. Dans le rail de gauche, cliquez sur l’icône lambda vers le bas pour ouvrir la liste déroulante, puis appuyez sur **[!UICONTROL Définir les membres]**. Dans la page Définir les membres, placez le pointeur sur une ressource, puis appuyez sur **[!UICONTROL Modifier]** (icône crayon) pour ouvrir la page de modification.
       >
       >
    * Pour supprimer une visionneuse de médias mixtes dans son ensemble – À partir de n’importe quel mode d’affichage (Mode Carte ou Colonne, par exemple), accédez à la visionneuse de médias mixtes. Placez le pointeur de souris sur la visionneuse, puis appuyez sur **[!UICONTROL Sélectionner]** (icône de coche). Appuyez sur la touche **[!UICONTROL Retour arrière]** de votre clavier ou sur **[!UICONTROL Plus]** (trois points de suspension), puis appuyez sur **[!UICONTROL Supprimer]**.
