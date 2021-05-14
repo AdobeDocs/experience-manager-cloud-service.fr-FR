@@ -1,14 +1,13 @@
 ---
 title: Profils d’image Dynamic Media
-description: '"Découvrez comment créer des Profils d’image Dynamic Media qui contiennent des paramètres pour le masquage flou, le recadrage intelligent ou l’échantillon intelligent, ou les deux. Ensuite, appliquez le profil à un dossier de fichiers d’image."'
+description: Découvrez comment créer des Profils d’image Dynamic Media qui contiennent des paramètres pour le masquage flou, le recadrage intelligent ou l’échantillon intelligent, ou les deux. Ensuite, appliquez le profil à un dossier de fichiers d’image.
 feature: Gestion des ressources,Profils d’images,Rendus
 role: Business Practitioner
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '2703'
-ht-degree: 74%
+source-wordcount: '2714'
+ht-degree: 67%
 
 ---
 
@@ -45,14 +44,14 @@ Vous avez le choix entre deux options de recadrage d’image. Vous avez égaleme
      <li>Les valeurs sont : haut, bas, gauche et droite.</li>
      <li>Le coin supérieur gauche est considéré comme 0,0 et le rognage en pixels est calculé à partir de là.</li>
      <li>Point de départ du recadrage : la gauche est X et le haut est Y</li>
-     <li>Calcul horizontal : dimension horizontale en pixels de l’image originale moins la gauche puis moins la droite.</li>
+     <li>Calcul horizontal : taille horizontale en pixels de l’image d’origine moins Gauche, puis moins Droite.</li>
      <li>Calcul vertical : hauteur verticale en pixels moins le haut puis moins le bas.</li>
     </ul> <p>Prenons l’exemple d’une image de 4 000 x 3 000 pixels. Les valeurs utilisées sont les suivantes : haut=250, bas=500, gauche=300, droite=700.</p> <p>De l’angle supérieur gauche (300 250), recadrez à l’aide de l’espace de remplissage (4 000 300 700, 3 000 250 500 ou 3 000 2250).</p> </td>
   </tr>
   <tr>
    <td>Recadrage intelligent</td>
    <td>Recadrez des images en masse en fonction de leur point focal visuel.</td>
-   <td><p>Le recadrage dynamique utilise la puissance de l’intelligence artificielle d’Adobe Sensei afin d’automatiser rapidement le recadrage des images en masse. Il détecte automatiquement le point focal de n’importe quelle image et recadre de façon à capturer le point ciblé prévu, quelle que soit la taille de l’écran.</p> <p>Pour utiliser le recadrage intelligent, sélectionnez <strong>Recadrage intelligent</strong> dans la liste déroulante Options de recadrage, puis à droite de Recadrage d’image réactive, activez la fonction.</p> <p>Les tailles des points d’arrêt par défaut (Grand, Moyen, Petit) couvrent la gamme complète des tailles utilisées par la plupart des images sur les périphériques mobiles et tablettes, les ordinateurs de bureau et les bannières. Si vous le souhaitez, vous pouvez modifier les noms par défaut Grand, Moyen et Petit.</p> <p>Pour ajouter d’autres points d’arrêt, cliquez sur <strong>Ajouter un recadrage</strong> ; pour supprimer un recadrage, cliquez sur l’icône de corbeille.</p> </td>
+   <td><p>Le recadrage dynamique utilise la puissance de l’intelligence artificielle d’Adobe Sensei afin d’automatiser rapidement le recadrage des images en masse. Smart Crop détecte et recadre automatiquement le point focal de toute image pour acquérir le point d’intérêt prévu, quelle que soit la taille de l’écran.</p> <p>Pour utiliser le recadrage intelligent, sélectionnez <strong>Recadrage intelligent</strong> dans la liste déroulante Options de recadrage, puis à droite de Recadrage d’image réactive, activez la fonction.</p> <p>Les tailles des points d’arrêt par défaut (Grand, Moyen, Petit) couvrent la gamme complète des tailles utilisées par la plupart des images sur les périphériques mobiles et tablettes, les ordinateurs de bureau et les bannières. Si vous le souhaitez, vous pouvez modifier les noms par défaut Grand, Moyen et Petit.</p> <p>Pour ajouter d’autres points d’arrêt, cliquez sur <strong>Ajouter un recadrage</strong> ; pour supprimer un recadrage, cliquez sur l’icône de corbeille.</p> </td>
   </tr>
   <tr>
    <td>Échantillon de couleurs et d’images</td>
@@ -70,7 +69,7 @@ Utilisez le masque **[!UICONTROL Accentuation]** pour affiner l’effet d’un f
 
 >[!NOTE]
 >
->Le masque flou est appliqué uniquement aux rendus réduits au sein du PTIFF (pyramid tiff), dont la résolution est réduite de plus de 50 %. Cela signifie que les rendus de la plus grande taille au sein du tiff ne sont pas affectés par le masquage flou. En revanche, les rendus de plus petite taille, tels que les miniatures, sont modifiés (et affichent le masque flou).
+>Le masque flou est appliqué uniquement aux rendus réduits au sein du PTIFF (pyramid tiff), dont la résolution est réduite de plus de 50 %. Cela signifie que les rendus de la plus grande taille au sein du tiff ne sont pas affectés par le masquage flou. Tandis que les rendus de plus petite taille, tels que les miniatures, sont modifiés (et affichent le masque flou).
 
 L’option **[!UICONTROL Accentuation]** propose les options de filtre suivantes :
 
@@ -105,9 +104,9 @@ Voir [À propos des profils d’image et vidéo Dynamic Media](/help/assets/dyn
 
 Consultez également la section [Bonnes pratiques pour organiser vos ressources numériques en vue d’utiliser des profils de traitement](/help/assets/dynamic-media/best-practices-for-file-management.md).
 
-**Pour créer des profils d’image Dynamic Media**
+**Pour créer des profils d’image Dynamic Media:**
 
-1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils d’image]**.
+1. Appuyez sur le logo Adobe Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils d’image]**.
 1. Pour ajouter un Profil d’image, appuyez sur **[!UICONTROL Créer]**.
 1. Saisissez un nom de profil et les valeurs pour un masquage flou, un recadrage et/ou un échantillon.
 
@@ -121,7 +120,7 @@ Consultez également la section [Bonnes pratiques pour organiser vos ressources 
 
 ## Modification ou suppression de profils d’image Dynamic Media {#editing-or-deleting-image-profiles}
 
-1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils d’image]**.
+1. Appuyez sur le logo du Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils d’image]**.
 1. Sélectionnez le profil de l’image que vous souhaitez modifier ou supprimer. Pour le modifier, sélectionnez **[!UICONTROL Modifier le profil de traitement des images]**. Pour le supprimer, sélectionnez **[!UICONTROL Supprimer le ou les profils de traitement des images]**.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
@@ -152,7 +151,7 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 
 #### Application de profils d’image Dynamic Media à des dossiers à partir de l’interface utilisateur Profils {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
-1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils d’image]**.
+1. Appuyez sur le logo du Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils d’image]**.
 1. Sélectionnez le profil d’image à appliquer à un ou plusieurs dossiers.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
@@ -161,7 +160,7 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 
 #### Application de profils d’image Dynamic Media aux dossiers à partir des propriétés {#applying-image-profiles-to-folders-from-properties}
 
-1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Ressources]**, puis au dossier auquel vous souhaitez appliquer un profil d’image.
+1. Appuyez sur le logo du Experience Manager et accédez à **[!UICONTROL Ressources]**, puis au dossier auquel vous souhaitez appliquer un Profil d’image.
 1. Dans le dossier, appuyez sur la coche pour la sélectionner, puis sur **[!UICONTROL Propriétés]**.
 1. Appuyez sur l’onglet **[!UICONTROL Profils d’image]**. Dans la liste déroulante **[!UICONTROL Nom du profil]**, sélectionnez le profil, puis appuyez sur **[!UICONTROL Enregistrer et fermer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
@@ -173,7 +172,7 @@ Outre l’application d’un profil à un dossier, vous pouvez en appliquer un g
 
 Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comporte déjà un profil vidéo que vous avez modifié. Voir [Retraitement des ressources dans un dossier après avoir modifié son profil de traitement](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-**Pour appliquer un Profil d’image Dynamic Media globalement** :
+**Pour appliquer un Profil d’image Dynamic Media globalement :**
 
 1. Utilisez l’une des méthodes suivantes :
 
@@ -197,10 +196,9 @@ Vous pouvez réexécuter une culture intelligente pour générer à nouveau les 
 
 Voir aussi [Modification du recadrage intelligent ou de l’échantillon intelligent de plusieurs images](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
 
-**Pour modifier le recadrage intelligent ou l’échantillon intelligent d’une seule image**
+**Pour modifier le recadrage intelligent ou l’échantillon intelligent d’une seule image:**
 
-1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Ressources]**, puis au dossier auquel est appliqué un profil d’image de recadrage intelligent ou d’échantillon intelligent.
-
+1. Appuyez sur le logo du Experience Manager et accédez à **[!UICONTROL Assets]**, puis au dossier dans lequel un recadrage intelligent ou un Profil d’image d’échantillon dynamique est appliqué.
 1. Pour ouvrir son contenu, appuyez sur le dossier.
 1. Appuyez sur l’image dont vous voulez ajuster le recadrage intelligent ou l’échantillon intelligent.
 1. Dans la barre d’outils, appuyez sur **[!UICONTROL Recadrage intelligent]**.
@@ -217,15 +215,15 @@ Voir aussi [Modification du recadrage intelligent ou de l’échantillon intelli
 
 ## Modification du recadrage intelligent ou de l’échantillon intelligent de plusieurs images {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
-Après l’application d’un profil d’image (contenant un recadrage intelligent) sur un dossier, un recadrage est appliqué à toutes les images de ce dossier. Si vous le souhaitez, vous pouvez réaligner ou redimensionner *manuellement* la fenêtre de recadrage intelligent dans plusieurs images pour affiner davantage leur point focal.
+Une fois que vous avez appliqué un Profil d’image (contenant une recadrage dynamique) à un dossier, un recadrage est appliqué à toutes les images qu’il contient. Si vous le souhaitez, vous pouvez réaligner ou redimensionner *manuellement* la fenêtre de recadrage intelligent dans plusieurs images pour affiner davantage leur point focal.
 
 Une fois que vous avez modifié et enregistré un recadrage intelligent, le changement est propagé partout où vous utilisez le recadrage des images spécifiques.
 
 Vous pouvez réexécuter une culture intelligente pour générer à nouveau les cultures supplémentaires, si nécessaire.
 
-**Pour modifier le recadrage intelligent ou l’échantillon intelligent de plusieurs images**
+**Pour modifier le recadrage intelligent ou l’échantillon intelligent de plusieurs images:**
 
-1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Ressources]**, puis à un dossier auquel est appliqué un profil d’image de recadrage intelligent ou d’échantillon intelligent.
+1. Appuyez sur le logo du Experience Manager et accédez à **[!UICONTROL Assets]**, puis à un dossier dans lequel un recadrage intelligent ou un Profil d’image d’échantillon dynamique est appliqué.
 1. Sur le dossier, appuyez sur l’icône **[!UICONTROL Autres actions]** (...), puis sur **[!UICONTROL Recadrage intelligent]**.
 
 1. Sur la page **[!UICONTROL Modifier les recadrages intelligents]**, utilisez l’une des méthodes suivantes :
@@ -274,7 +272,7 @@ Vous pouvez supprimer un profil d’image appliqué à un dossier dans le menu *
 
 ### Suppression d’un profil d’image Dynamic Media d’un dossier au moyen de l’interface utilisateur Profils {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
-1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils d’image]**.
+1. Appuyez sur le logo du Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils d’image]**.
 1. Sélectionnez le profil d’image à supprimer d’un ou de plusieurs dossiers.
 1. Appuyez sur **[!UICONTROL Supprimer le Profil de traitement des dossiers]** et sélectionnez le ou les dossiers à utiliser pour supprimer le profil et appuyez sur **[!UICONTROL Supprimer]**.
 
@@ -282,7 +280,7 @@ Vous pouvez supprimer un profil d’image appliqué à un dossier dans le menu *
 
 ### Suppression d’un profil d’image Dynamic Media d’un dossier au moyen des propriétés {#removing-image-profiles-from-folders-via-properties}
 
-1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Ressources]**, puis au dossier duquel vous souhaitez supprimer un profil d’image.
+1. Appuyez sur le logo du Experience Manager et naviguez **[!UICONTROL Ressources]**, puis vers le dossier dans lequel vous souhaitez supprimer un Profil d’image.
 1. Dans le dossier, appuyez sur la coche pour le sélectionner, puis sur **[!UICONTROL Propriétés]**.
 1. Sélectionnez l’onglet **[!UICONTROL Profils d’image]**.
 1. Dans la liste déroulante **[!UICONTROL Nom du profil]**, sélectionnez **[!UICONTROL Aucun]**, puis appuyez sur **[!UICONTROL Enregistrer et fermer]**.
