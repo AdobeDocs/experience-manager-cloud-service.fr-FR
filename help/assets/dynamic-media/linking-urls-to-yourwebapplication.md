@@ -3,11 +3,10 @@ title: Liaison d’URL à une application web
 description: Découvrez comment lier des URL à votre application Web dans Dynamic Media.
 role: Business Practitioner
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 83%
+source-wordcount: '1275'
+ht-degree: 69%
 
 ---
 
@@ -15,7 +14,7 @@ ht-degree: 83%
 
 Vos applications et sites web accèdent aux services Dynamic Media par l’intermédiaire d’appels d’URL. Une fois que vous avez publié une ressource, Dynamic Media active une chaîne d’URL qui fait référence à la ressource. Vous pouvez coller ces URL dans un navigateur web à des fins de test.
 
-Vous ne pouvez lier à des URL que si vous *n’utilisez pas* AEM pour la gestion de contenu web. La liaison, à la différence de l’intégration, est utilisée lorsque vous souhaitez présenter un lecteur vidéo dans une fenêtre contextuelle ou modale. Dans le cas contraire, [vous pouvez ajouter les ressources directement à votre page.](adding-dynamic-media-assets-to-pages.md)
+Vous créez un lien vers les URL uniquement si vous n’utilisez *pas* Adobe Experience Manager comme WCM. La liaison - par opposition à l’incorporation - est utilisée lorsque vous souhaitez diffuser un lecteur vidéo sous la forme d’une fenêtre contextuelle ou modale. Si vous utilisez le Experience Manager comme WCM, [vous ajoutez les ressources directement sur votre page.](adding-dynamic-media-assets-to-pages.md)
 
 Pour placer ces chaînes URL dans vos pages et applications web, copiez-les depuis Dynamic Media.
 
@@ -47,7 +46,7 @@ Vous pouvez obtenir une chaîne URL qui est générée par un paramètre d’ima
 
 Il existe différents moyens d’obtenir une chaîne URL. Néanmoins, les étapes ci-dessous ne vous présentent qu’une seule méthode.
 
-**Obtention de l’URL d’une ressource**
+**Obtention de l’URL d’une ressource:**
 
 1. Accédez à la ressource *publiée* dont vous souhaitez copier l’URL du paramètre d’image ou de visionneuse prédéfini, puis appuyez sur la ressource pour l’ouvrir.
 
@@ -89,15 +88,15 @@ Dynamic Media prend en charge la diffusion des ressources statiques, qui sont d�
 * GIF animé
 * Fichiers audio
 * CSS
-* JavaScript (lorsque votre entreprise est configurée avec son propre domaine)
+* JavaScript™ (lorsque votre société est configurée avec son propre domaine)
 * PDF
 * SVG
 * XML
 * ZIP
 
-**Obtention de l’URL d’une ressource statique**
+**Obtention de l’URL d’une ressource statique:**
 
-1. Accédez à la ressource statique *publiée* dont vous souhaitez copier l’URL et appuyez ensuite dessus pour l’ouvrir.
+1. Accédez à la ressource statique *publiée* dont vous souhaitez copier l’URL et appuyez dessus pour l’ouvrir.
 
    N’oubliez pas que les URL ne peuvent être copiées qu’*après* la *publication* de la ressource statique.
 
@@ -117,7 +116,7 @@ Dynamic Media prend en charge la diffusion des ressources statiques, qui sont d�
 
 ## Obtention d’une URL de vidéo pour un rendu vidéo publié {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. Dans AEM, accédez à **[!UICONTROL Outils > Déploiement > Cloud > Cloud Services]**.
+1. En Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
 1. Sur la page **[!UICONTROL Cloud Services]**, faites défiler l’écran jusqu’au titre **[!UICONTROL Dynamic Media Cloud Services]**, puis cliquez sur **[!UICONTROL Afficher les configurations]**.
 1. Sous **[!UICONTROL Configurations disponibles]**, appuyez sur le nom de la configuration qui vous intéresse.
 
@@ -127,20 +126,20 @@ Dynamic Media prend en charge la diffusion des ressources statiques, qui sont d�
 
    `https://s7athens.macromedia.com:9090/DMGateway/`
 
-   (Le chemin ci-dessus est donné à titre d’illustration uniquement ; il ne s’agit pas de celui que vous allez copier.)
+   (Le chemin ci-dessus n&#39;est fourni qu&#39;à titre d&#39;explication ; il ne s’agit pas du chemin d’accès réel que vous copiez.)
 
 1. Sous **[!UICONTROL ID d’enregistrement]**, copiez le nom du client dans la dernière partie de l’ID.
 
    Par exemple, si l’ID d’enregistrement est `87654321|MyCompany`, le nom du client est `MyCompany`.
 
-1. Près du coin supérieur gauche de la page, appuyez sur **[!UICONTROL Cloud Services]** puis sur l’icône d’AEM et accédez à **[!UICONTROL Général > CRXDE Lite]**.
-1. Copiez le chemin URL du rendu vidéo à partir du référentiel JCR (Java Content Repository).
+1. Près du coin supérieur gauche de la page, appuyez sur **[!UICONTROL Cloud Services]**, puis sur l’icône du Experience Manager et accédez à **[!UICONTROL Général]** > **[!UICONTROL CRXDE Lite]**.
+1. Copiez l’intégralité du chemin du rendu vidéo depuis le JCR (Java™ Content Repository).
 
    Par exemple, le chemin de rendu de la vidéo peut ressembler à ce qui suit :
 
    `/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112f/avs/Momentum_1080-0x720-2600k.mp4`
 
-   (Le chemin ci-dessus est donné à titre d’illustration uniquement ; il ne s’agit pas de celui que vous allez copier.)
+   (Le chemin ci-dessus n&#39;est fourni qu&#39;à titre d&#39;explication ; il ne s’agit pas du chemin d’accès réel que vous copiez.)
 
 1. Pour former un chemin d’URL complet, disposez les informations copiées dans l’ordre suivant :
 
@@ -154,7 +153,7 @@ Dynamic Media prend en charge la diffusion des ressources statiques, qui sont d�
 
 ## Obtention d’une URL de vidéo pour la diffusion adaptative (HLS)  {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. Dans AEM, accédez à **[!UICONTROL Outils > Déploiement > Cloud > Cloud Services]**.
+1. En Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
 1. Sur la page **[!UICONTROL Cloud Services]**, faites défiler l’écran jusqu’au titre **[!UICONTROL Dynamic Media Cloud Services]**, puis cliquez sur **[!UICONTROL Afficher les configurations]**.
 1. Sous **[!UICONTROL Configurations disponibles]**, appuyez sur le nom de la configuration qui vous intéresse.
 1. Sur la page **[!UICONTROL Paramètres Dynamic Media Cloud Services]**, procédez comme suit :
@@ -163,7 +162,7 @@ Dynamic Media prend en charge la diffusion des ressources statiques, qui sont d�
 
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
-   (Le chemin ci-dessus est donné à titre d’illustration uniquement ; il ne s’agit pas de celui que vous allez copier.)
+   (Le chemin ci-dessus n&#39;est fourni qu&#39;à titre d&#39;explication ; il ne s’agit pas du chemin d’accès réel que vous copiez.)
 
    * Sous **[!UICONTROL ID d’enregistrement]**, copiez le nom du client dans la dernière partie de l’ID. Vous aurez besoin du nom de client copié plus loin dans ces étapes.
 
@@ -189,7 +188,7 @@ Dynamic Media prend en charge la diffusion des ressources statiques, qui sont d�
     </tbody>
    </table>
 
-1. Copiez le chemin complet de la ressource vidéo dans AEM, tel qu’il est traité par Dynamic Media. Vous aurez besoin de ce chemin d’accès de fichier vidéo copié plus loin dans ces étapes.
+1. Copiez le chemin d’accès complet à la ressource vidéo en Experience Manager, tel que traité par Dynamic Media. Vous aurez besoin de ce chemin d’accès de fichier vidéo copié plus loin dans ces étapes.
 
    Par exemple :
 
