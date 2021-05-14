@@ -4,11 +4,10 @@ description: Découvrez comment utiliser la fonction de code réactif pour diffu
 feature: Gestion des ressources
 role: Business Practitioner
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 99%
+source-wordcount: '328'
+ht-degree: 77%
 
 ---
 
@@ -16,13 +15,13 @@ ht-degree: 99%
 
 Utilisez la fonctionnalité de code réactif lorsque vous souhaitez partager le code de diffusion réactive avec votre développeur web. Utilisez la fonctionnalité de code réactif (**[!UICONTROL RESS]**) lorsque vous souhaitez partager le code de diffusion réactive avec votre développeur web.
 
-Cette fonction a un sens si votre site web se trouve sur un composant WCM tiers. Cependant, si votre site web se trouve sur AEM à la place, un serveur d’images hors site effectue le rendu de l’image et le communique à la page web.
+Cette fonction a un sens si votre site web se trouve sur un composant WCM tiers. Cependant, si votre site Web se trouve plutôt sur Adobe Experience Manager, un serveur d’images hors site effectue le rendu de l’image et la fournit à la page Web.
 
 Voir aussi [Incorporation de la visionneuse de vidéos dans une page web](embed-code.md).
 
 Voir aussi [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md).
 
-**Pour diffuser des images optimisées pour un site réactif, procédez comme suit** :
+**Pour diffuser des images optimisées pour un site réactif, procédez comme suit :**
 
 1. Accédez à l’image pour laquelle vous voulez fournir du code réactif et, dans le menu déroulant, appuyez sur **[!UICONTROL Rendus]**.
 
@@ -42,8 +41,8 @@ Voir aussi [Liaison d’URL à une application web](linking-urls-to-yourwebappli
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
-1. Dans la boîte de dialogue **[!UICONTROL Intégrer une image réactive]**, sélectionnez et copiez le texte du code réactif et collez-le dans votre site web pour accéder au fichier réactif.
-1. Modifiez les points d’arrêt par défaut dans le code incorporé pour qu’ils correspondent à ceux du site web réactif directement dans le code. Testez en outre les différentes résolutions d’image diffusées à différents points d’arrêt d’une page.
+1. Dans la boîte de dialogue **[!UICONTROL Incorporer l’image réactive]**, sélectionnez et copiez le texte du code réactif et collez-le dans votre site Web pour accéder à la ressource réactive.
+1. Modifiez les points d’arrêt par défaut dans le code incorporé pour qu’ils correspondent à ce qui se trouve dans le site Web réactif, directement dans le code. Testez en outre les différentes résolutions d’image diffusées à différents points d’arrêt d’une page.
 
 ## Utilisation du protocole HTTP/2 pour diffuser vos ressources Dynamic Media {#using-http-to-delivery-your-dynamic-media-assets}
 
