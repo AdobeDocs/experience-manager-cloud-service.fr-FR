@@ -3,10 +3,9 @@ title: Utilisation des sélecteurs
 description: Découvrez les méthodes que vous pouvez utiliser pour sélectionner des ressources sous forme d’images interactives, de vidéos interactives et de bannières de carrousel dans Dynamic Media.
 role: Business Practitioner
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '750'
 ht-degree: 52%
 
 ---
@@ -59,7 +58,7 @@ Utilisez le sélecteur de produits pour choisir un produit lorsque vous souhaite
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. En mode **[!UICONTROL Prévisualisation]**, vous pouvez appuyer sur la zone réactive ou la zone cliquable et voir à quoi ressemble la vue rapide.
+1. En mode **[!UICONTROL Prévisualisation]**, vous pouvez appuyer sur la zone réactive ou la zone cliquable et voir comment la vue rapide s’affiche.
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
