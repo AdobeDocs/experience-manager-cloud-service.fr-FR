@@ -4,8 +4,7 @@ description: Un profil d’image ou vidéo permet de déterminer les options à 
 feature: Gestion des ressources,Profils d’images,Profils vidéo
 role: Administrator,Business Practitioner
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-translation-type: tm+mt
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
 source-wordcount: '1282'
 ht-degree: 67%
@@ -89,7 +88,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 (Facultatif) La taille de lot par défaut dans le workflow de retraitement est de 50 ressources par tâche. Cette taille de lot optimale est régie par la taille moyenne des fichiers et les types MIME de fichiers sur lesquels le retraitement est exécuté. Une valeur plus élevée signifie que vous avez plusieurs fichiers dans une seule tâche de retraitement. Ainsi, la bannière de traitement reste plus longtemps sur les ressources du Experience Manager. Cependant, si la taille moyenne du fichier est inférieure ou égale à 1 Mo, il est recommandé d’augmenter la valeur à plusieurs 100, mais jamais à plus de 1 000. Si la taille moyenne du fichier est de plusieurs centaines de mégaoctets, l’Adobe vous recommande de réduire la taille du lot jusqu’à 10.
 
-**Pour ajuster éventuellement la taille du lot du processus** de retraitement :
+**Pour ajuster éventuellement la taille du lot du processus de retraitement :**
 
 1. Dans Experience Manager, appuyez sur **[!UICONTROL Adobe Experience Manager]** pour accéder à la console de navigation globale, puis appuyez sur l’icône **[!UICONTROL Outils]** (marteau) > **[!UICONTROL Workflow > Modèles]**.
 1. Sur la page Modèles de processus, en mode Carte ou Liste, sélectionnez **[!UICONTROL Scene7 : Retraiter les ressources]**.
