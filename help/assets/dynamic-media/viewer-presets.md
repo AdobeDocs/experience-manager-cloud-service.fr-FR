@@ -4,11 +4,10 @@ description: Découvrez comment appliquer des paramètres prédéfinis de vision
 feature: Paramètres prédéfinis de la visionneuse,Visionneuses
 role: Business Practitioner
 exl-id: bec6fff8-fd79-4537-b915-e68da98e117a
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 90%
+source-wordcount: '220'
+ht-degree: 73%
 
 ---
 
@@ -20,7 +19,8 @@ Si vous êtes un administrateur et que vous devez gérer, créer, trier et suppr
 
 Voir également [Publication de paramètres de visionneuse prédéfinis](managing-viewer-presets.md#publishing-viewer-presets).
 
-Il peut ne pas être nécessaire de publier les paramètres prédéfinis de la visionneuse selon le mode de publication que vous utilisez.
+Il n’est pas nécessaire de publier les paramètres prédéfinis de la visionneuse en fonction du mode de publication utilisé.
+
 Pour tout problème lié aux paramètres prédéfinis de visionneuse, consultez [Dépannage de Dynamic Media](troubleshoot-dm.md#viewers).
 
 ## Application d’un paramètre prédéfini de visionneuse Dynamic Media à une ressource {#applying-a-viewer-preset-to-an-asset}
@@ -32,7 +32,7 @@ Pour tout problème lié aux paramètres prédéfinis de visionneuse, consultez 
    * Les boutons **[!UICONTROL URL]** et **[!UICONTROL Incorporer]** s’affichent lorsque vous avez sélectionné un paramètre de visionneuse prédéfini.
    * Le système affiche plusieurs paramètres de visionneuse prédéfinis lorsque vous sélectionnez Visionneuses dans l’affichage des **[!UICONTROL détails d’une ressource]**. Vous pouvez augmenter le nombre de paramètres prédéfinis visibles. Voir [Augmentation du nombre de paramètres prédéfinis de visionneuse qui s’affichent](managing-viewer-presets.md).
 
-1. Sélectionnez une visionneuse dans le volet gauche pour l’appliquer à la ressource telle qu’elle figure dans le volet de droite. Vous pouvez également [copier l’URL à partager](linking-urls-to-yourwebapplication.md) avec d’autres utilisateurs.
+1. Sélectionnez une visionneuse dans le volet de gauche afin de l’appliquer à la ressource, comme le montre le volet de droite. Vous pouvez également [copier l’URL à partager](linking-urls-to-yourwebapplication.md) avec d’autres utilisateurs.
 
 ## Obtention d’une URL de paramètre prédéfini de visionneuse {#obtaining-viewer-preset-urls}
 
