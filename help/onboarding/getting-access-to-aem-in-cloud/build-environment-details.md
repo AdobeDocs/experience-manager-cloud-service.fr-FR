@@ -1,14 +1,13 @@
 ---
 title: Détails de l’environnement de génération
 description: Détails de l’environnement de génération – Cloud Services
-translation-type: tm+mt
-source-git-commit: 3e76f7273393f104347611a8f0238e3722714b2b
+exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
+source-git-commit: c3b70f513455dfeaac6bc20c05fc9c35dcddf73e
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 100%
+source-wordcount: '736'
+ht-degree: 96%
 
 ---
-
 
 # Présentation de l’environnement de génération {#understanding-build-environment}
 
@@ -34,7 +33,7 @@ Cloud Manager crée et teste votre code à l’aide d’un environnement de gén
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
-* Maven est configuré au niveau du système avec un fichier settings.xml qui inclut automatiquement le référentiel public Adobe **Artifact**. (Pour plus d’informations, consultez le [référentiel Maven public d’Adobe](https://repo.adobe.com/)).
+* Maven est configuré au niveau du système avec un fichier settings.xml qui inclut automatiquement le référentiel d&#39;Adobe public **Artifact** à l&#39;aide d&#39;un profil nommé `adobe-public`. (Pour plus d’informations, consultez le [référentiel Maven public d’Adobe](https://repo.adobe.com/)).
 
 >[!NOTE]
 >Bien que Cloud Manager ne définisse pas de version spécifique du `jacoco-maven-plugin`, la version utilisée doit être au moins `0.7.5.201505241946`.
