@@ -1,14 +1,13 @@
 ---
-title: Invalidation du cache de réseau CDN par le biais de Dynamic Media Classic
+title: Invalidation du cache CDN (Content Diffusion Network) au moyen de Dynamic Media Classic
 description: '"Découvrez comment invalider votre contenu mis en cache CDN (Content Diffusion Network) afin de vous permettre de mettre rapidement à jour les ressources fournies par Dynamic Media, au lieu d’attendre l’expiration du cache."'
 feature: Gestion des ressources,Dynamic Media Classic
 role: Administrator,Business Practitioner
 exl-id: 7e488699-5633-437f-9e2e-58c98aa13145
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 46%
+source-wordcount: '693'
+ht-degree: 42%
 
 ---
 
@@ -22,7 +21,7 @@ Les ressources Dynamic Media sont mises en cache par le réseau CDN (Content Dif
 
 >[!IMPORTANT]
 >
->Ces étapes s’appliquent uniquement à Dynamic Media dans AEM 6.5, Service Pack 5 ou version antérieure. <!-- If you are using Dynamic Media in AEM as a Cloud Service, [use the new steps found here](/help/assets/invalidate-cdn-cache-dynamic-media.md). -->
+>Ces étapes s’appliquent uniquement à Dynamic Media dans Adobe Experience Manager 6.5, Service Pack 5 ou version antérieure. <!-- If you are using Dynamic Media in AEM as a Cloud Service, [use the new steps found here](/help/assets/invalidate-cdn-cache-dynamic-media.md). -->
 
 Voir aussi [Présentation du cache dans Dynamic Media Classic](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
@@ -32,7 +31,7 @@ Voir aussi [Présentation du cache dans Dynamic Media Classic](https://helpx.a
 
    Vos informations d’identification et de connexion ont été fournies par l’Adobe au moment de l’attribution des privilèges d’accès. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
 
-1. Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**.
+1. Cliquez sur **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]**.
 1. Recherchez la zone de texte **[!UICONTROL Modèle d’invalidation sur le réseau de diffusion de contenu]** dans la section Serveurs de la page Paramètres généraux de l’application.
 
 1. Précisez le modèle utilisé pour invalider le cache du réseau de diffusion de contenu (CDN).
@@ -44,9 +43,9 @@ Voir aussi [Présentation du cache dans Dynamic Media Classic](https://helpx.a
    Si le modèle contient uniquement `<ID>`, Dynamic Media remplit `https://<server>/is/image` où `<server>` correspond au nom du serveur de publication défini dans Paramètres généraux et &lt;ID> aux actifs sélectionnés pour invalidation.
 
 1. Dans le coin inférieur droit de la page, appuyez sur **[!UICONTROL Fermer]**.
-1. Dans l’interface utilisateur Dynamic Media Classic (Scene7), sélectionnez un ou plusieurs fichiers, puis appuyez sur **[!UICONTROL Fichier > Invalider CDN]**. Une liste d’une ou de plusieurs URL générées à partir du modèle que vous avez créé et des ressources que vous avez sélectionnées s’affiche. Elle utilise l’URL du serveur répertoriée sous « Nom du serveur de publication » dans les paramètres généraux de l’application.
+1. Dans l’interface utilisateur Dynamic Media Classic (Scene7), sélectionnez un ou plusieurs fichiers, puis appuyez sur **[!UICONTROL Fichier]** > **[!UICONTROL Invalider CDN]**. Une liste d’une ou de plusieurs URL générées à partir du modèle que vous avez créé et des ressources que vous avez sélectionnées s’affiche. Elle utilise l’URL du serveur répertoriée sous « Nom du serveur de publication » dans les paramètres généraux de l’application.
 
-   Par exemple, avec le modèle d’invalidation défini à l’étape précédente, supposons que vous sélectionniez une seule image de ressource nommée `Backpack_B`. Lorsque vous appuyez sur **[!UICONTROL Fichier > Invalider le CDN]**, l’URL suivante est générée dans l’interface utilisateur de l’invalidation du CDN :
+   Par exemple, avec le modèle d’invalidation défini à l’étape précédente, supposons que vous sélectionniez une seule image de ressource nommée `Backpack_B`. Lorsque vous appuyez sur **[!UICONTROL Fichier]** > **[!UICONTROL Invalider CDN]**, l’URL suivante est générée dans l’interface utilisateur d’invalidation CDN :
 
    `https://server.com/is/image/Company/Backpack_B?$product$`
 
@@ -54,10 +53,10 @@ Voir aussi [Présentation du cache dans Dynamic Media Classic](https://helpx.a
 
    Après avoir appuyé sur **[!UICONTROL Continuer]**, un indicateur s’affiche qui vous donne une estimation du temps nécessaire pour vider le cache.
 
-   Si vous avez sélectionné plusieurs fichiers, puis appuyé sur **[!UICONTROL Fichier > Invalider CDN]**, chaque fichier est référencé dans l’URL **[!UICONTROL modèle]** enregistrée. Par conséquent, vous pouvez définir un **[!UICONTROL modèle d’invalidation CDN]** référençant chaque paramètre d’image prédéfini d’URL référencé sur votre site Web, tel que les détails du produit et les résultats de la recherche. Par la suite, lorsque vous sélectionnerez une ou plusieurs images à invalider dans le cache, les URL seront automatiquement renseignées dans l’interface.
+   Si vous avez sélectionné plusieurs fichiers, puis appuyé sur **[!UICONTROL Fichier]** > **[!UICONTROL Invalider le CDN]**, chaque fichier est référencé dans l&#39;**[!UICONTROL URL de modèle]** enregistrée. Par conséquent, vous pouvez définir un **[!UICONTROL modèle d’invalidation CDN]** référençant chaque paramètre d’image prédéfini d’URL référencé sur votre site Web, tel que les détails du produit et les résultats de la recherche. Par la suite, lorsque vous sélectionnerez une ou plusieurs images à invalider dans le cache, les URL seront automatiquement renseignées dans l’interface.
 
    >[!NOTE]
    >
-   >Lorsque vous sélectionnez des fichiers, puis appuyez sur **[!UICONTROL Fichier > Invalider CDN]**, Dynamic Media utilise un modèle CDN invalide pour créer automatiquement des URL à invalider à partir du CDN. Si rien n’est renseigné dans la zone de texte **[!UICONTROL Modèle d’invalidation sur le réseau de diffusion de contenu]**, la liste d’URL renvoyée est vide. La mise en cache sur le réseau de diffusion de contenu n’est pas basée sur les ressources ; elle est basée sur des URL. Il est donc nécessaire de connaître les URL complètes qui se trouvent sur votre site web. Dès que vous avez déterminé ces URL, vous pouvez les ajouter dans la zone de texte **[!UICONTROL Modèle d’invalidation sur le réseau de diffusion de contenu]** (voir les étapes précédentes). Vous pouvez ensuite sélectionner ces ressources et invalider les URL en une seule étape.
+   >Lorsque vous sélectionnez des ressources, puis appuyez sur **[!UICONTROL Fichier]** > **[!UICONTROL Invalider le CDN]**, Dynamic Media utilise un modèle CDN invalide pour créer automatiquement des URL à invalider à partir du CDN. Si rien n’est renseigné dans la zone de texte **[!UICONTROL Modèle d’invalidation sur le réseau de diffusion de contenu]**, la liste d’URL renvoyée est vide. La mise en cache sur le réseau de diffusion de contenu n’est pas basée sur les ressources ; elle est basée sur des URL. Il est donc nécessaire de connaître les URL complètes qui se trouvent sur votre site web. Dès que vous avez déterminé ces URL, vous pouvez les ajouter dans la zone de texte **[!UICONTROL Modèle d’invalidation sur le réseau de diffusion de contenu]** (voir les étapes précédentes). Vous pouvez ensuite sélectionner ces ressources et invalider les URL en une seule étape.
    >
-   >Une autre option consiste à ajouter des URL complètes dans la liste **[!UICONTROL Invalider sur le réseau de diffusion de contenu]**. Si vous optez pour cette méthode, il n’est pas nécessaire de sélectionner des ressources dans Dynamic Media Classic avant d’accéder à l’option **[!UICONTROL Fichier > Invalider sur le réseau de diffusion de contenu]**.
+   >Une autre option consiste à ajouter des URL complètes dans la liste **[!UICONTROL Invalider sur le réseau de diffusion de contenu]**. Si vous optez pour cette méthode, il n’est pas nécessaire de sélectionner des ressources dans Dynamic Media Classic avant d’accéder à l’option **[!UICONTROL Fichier]** > **[!UICONTROL Invalider sur le réseau de diffusion de contenu]**.
