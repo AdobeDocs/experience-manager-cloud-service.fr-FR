@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 257fc173-6bfb-4b60-b66c-6d6bdd5cf13f
-translation-type: tm+mt
-source-git-commit: 635768f63c604d1c1892de57c55693da6a0fe954
+source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2019'
 ht-degree: 0%
 
 ---
@@ -41,7 +40,7 @@ Ce document vous aide à comprendre les étapes nécessaires à la mise en oeuvr
 * connaître les outils et les configurations AEM nécessaires.
 * Découvrez les meilleures pratiques pour simplifier votre parcours sans tête, optimiser la génération de contenu et garantir la diffusion rapide du contenu.
 
-## Conditions préalables {#requirements}
+## Conditions requises {#requirements}
 
 Avant de poursuivre avec ce document, vérifiez que vous avez passé en revue le document précédent dans le Parcours de développement AEM sans affichage, [Prise en main de AEM sans affichage en tant que Cloud Service](getting-started.md) en vous assurant que vous :
 
@@ -141,9 +140,9 @@ Nous voulons que vous puissiez tirer parti de cette connaissance fondamentale po
 
 ### Choisissez votre propre aventure {#choose-your-path}
 
-Quel que soit votre style d&#39;apprentissage, l&#39;Adobe veut que vous réussissiez à vous lancer dans votre projet AEM sans tête.
+Quel que soit votre style d&#39;apprentissage, l&#39;Adobe veut que vous réussissiez dans la mise en route de votre projet AEM sans tête.
 
-* Si vous préférez **continuer à apprendre les concepts sans tête et les technologies sans tête AEM**, vous devez continuer votre parcours sans tête AEM en passant en revue le document [Comment modéliser votre contenu en tant que modèles de contenu](model-your-content.md) où vous apprendrez à modéliser votre structure de contenu dans les .
+* Si vous préférez continuer à **découvrir les concepts sans tête et les technologies AEM sans tête**, vous devez continuer votre parcours sans tête AEM en examinant ensuite le document [Comment modéliser votre contenu en tant que modèles de contenu](model-your-content.md) où vous apprendrez à modéliser votre structure de contenu dans les .
 * Si vous préférez **apprendre en faisant**, vous pouvez accéder directement au [didacticiel de mise en route AEM sans en-tête](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) où vous accédez directement au développement AEM sans en-tête en implémentant un projet simple pour exposer un contenu sans en-tête AEM.
 
 ## Ressources supplémentaires {#additional-resources}
