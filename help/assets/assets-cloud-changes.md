@@ -1,16 +1,15 @@
 ---
 title: Modifications notables apportées à [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]
 description: Modifications notables apportées à [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] par rapport à [!DNL Adobe Experience Manager 6.5].
-feature: Release Information
+feature: Informations sur la version
 role: Business Practitioner,Leader,Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 70068609e51f96c010204b8915593a52f610aded
+exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
+source-git-commit: bcb747517595943e1ed65d19424f002136877903
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 57%
 
 ---
-
 
 # Modifications notables apportées à [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#notable-changes}
 
@@ -53,7 +52,7 @@ Pour effectuer une validation de bout en bout du code et du processus, y compris
 |-----|-----|-----|
 | [Détection des ressources de duplicata](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | Fonctionne différemment. | Voir [comment il fonctionnait dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
 | [Pour les rendus FPO (Placement uniquement)](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html#configfporendition) | Fonctionne différemment |  |
-| Écriture différée des métadonnées | Pas de prise en charge. | Voir [écriture différée des métadonnées dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html). |
+| Écriture différée des métadonnées | Fonctionne différemment | Désactivé par défaut. Activez le lanceur de processus correspondant si nécessaire. L’écriture différée est gérée par les microservices de ressources. |
 | Traitement des fichiers transférés à l’aide de Package Manager | Il faut une intervention manuelle. | Retraiter manuellement à l’aide de l’action **[!UICONTROL Retraiter l’actif]**. |
 | Détection du type MIME | Pas de prise en charge. | Si vous téléchargez un fichier numérique sans extension ou avec une extension incorrecte, il se peut qu’il ne soit pas traité comme vous le souhaitez. Les utilisateurs peuvent toujours stocker les fichiers binaires sans extension dans la gestion des actifs numériques. Voir [détection de type MIME dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
 | Génération de sous-ressources pour les ressources composées | Pas de prise en charge. | Les cas d&#39;utilisation à charge ne sont pas satisfaits. Par exemple, l’annotation des fichiers PDF de plusieurs pages est affectée. Voir [création de sous-ressources dans  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
@@ -66,10 +65,10 @@ Pour effectuer une validation de bout en bout du code et du processus, y compris
 >Les ressources suivantes sont disponibles pour [!DNL Experience Manager] en tant que [!DNL Cloud Service] :
 >
 >* [Liste de fonctionnalités obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md)
->* [Une introduction](/help/overview/introduction.md)
->* [Nouveautés et différences](/help/overview/what-is-new-and-different.md)
->* [L&#39;architecture](/help/core-concepts/architecture.md)
->* [Modifications notables](/help/release-notes/aem-cloud-changes.md)
->* [Modifications notables [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
->* [Didacticiels vidéo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=fr)
+* [Une introduction](/help/overview/introduction.md)
+* [Nouveautés et différences](/help/overview/what-is-new-and-different.md)
+* [L&#39;architecture](/help/core-concepts/architecture.md)
+* [Modifications notables](/help/release-notes/aem-cloud-changes.md)
+* [Modifications notables [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
+* [Didacticiels vidéo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=fr)
 
