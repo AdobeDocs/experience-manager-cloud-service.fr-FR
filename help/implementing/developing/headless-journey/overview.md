@@ -4,14 +4,13 @@ description: Début ici pour un parcours guidé à travers les puissantes et fle
 hide: true
 hidefromtoc: true
 index: false
-translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
+source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 8%
+source-wordcount: '700'
+ht-degree: 3%
 
 ---
-
 
 # parcours de développement sans tête AEM {#aem-headless-developer-journey}
 
@@ -19,11 +18,11 @@ ht-degree: 8%
 >
 >TRAVAUX EN COURS - La création de ce document est en cours et ne doit pas être comprise comme complète ou définitive ni être utilisée à des fins de production.
 
-Début ici pour un parcours guidé à travers les puissantes et flexibles fonctionnalités sans tête de l&#39;AEM, leurs capacités, et comment les exploiter dans votre premier projet de développement.
+Début ici pour un parcours guidé à travers les puissantes et flexibles fonctionnalités sans tête de l&#39;AEM, leurs capacités, et comment les exploiter dans votre premier projet de développement sans tête.
 
 ## Présentation {#introduction}
 
-L’implémentation découplée devient de plus en plus importante pour offrir des expériences à votre public, où qu’il se trouve et quel que soit son canal.
+L’implémentation sans tête devient de plus en plus importante pour fournir des expériences à votre audience, où qu’elle soit et quel que soit son canal.
 
 L’implémentation sans en-tête interrompt la gestion des pages et des composants comme c’est le cas dans les solutions de pile complètes et se concentre sur la création de fragments de contenu réutilisables et neutres en canal, ainsi que sur leur diffusion entre canaux. Il s’agit d’un modèle de développement moderne et dynamique pour l’implémentation d’expériences Web.
 
@@ -52,3 +51,14 @@ Bien que vous puissiez accéder directement à une partie particulière du parco
 | 8 | [Mode de fonctionnement de votre application sans tête](go-live.md) | Découvrez comment déployer l&#39;application en direct et prendre votre code local en mode Git et le déplacer vers Cloud Manager Git pour le pipeline CI/CD. |
 | 9 | [Lancement de la publication](post-launch.md) | Découvrez comment conserver votre expérience sans tête. |
 | 10 | [Facultatif - Comment créer des applications d&#39;une seule page (SPA) avec AEM](create-spa.md) | Une fois que vous avez compris AEM fonctions sans en-tête, explorez comment combiner des diffusions sans en-tête et sans en-tête et comment créer des SPA modifiables à l’aide de la structure de l’éditeur d’. |
+
+## Eléments suivants {#what-is-next}
+
+Vous êtes maintenant prêt à commencer sur votre parcours sans tête d&#39;Adobe. Nous vous encourageons à passer à la partie suivante du parcours et à lire l&#39;article [En savoir plus sur le développement sans tête de CMS.](learn-about.md)
+
+### Choisissez votre propre aventure {#choose-your-path}
+
+Cependant, l&#39;Adobe veut que vous réussissiez à démarrer votre projet AEM sans tête, quel que soit votre style d&#39;apprentissage. Alors réfléchissez à ces deux options.
+
+* Si vous préférez continuer à **découvrir les concepts sans tête et les technologies AEM sans tête**, vous devez continuer votre parcours sans tête AEM comme recommandé en examinant le document [Comment modéliser votre contenu en tant que modèles de contenu AEM](model-your-content.md) où vous apprendrez à modéliser votre structure de contenu dans l&#39;.
+* Si vous préférez **apprendre en faisant**, vous pouvez accéder directement au [didacticiel de mise en route AEM sans en-tête](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) où vous accédez directement au développement AEM sans en-tête en implémentant un projet simple pour exposer un contenu sans en-tête AEM.
