@@ -2,11 +2,10 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-translation-type: tm+mt
-source-git-commit: d2b0fa9448ec3c1150d3c35860ffddb9e4d60d3e
+source-git-commit: 3b89e701e080f27f490a6c8a7bb38792c07d6abc
 workflow-type: tm+mt
-source-wordcount: '2729'
-ht-degree: 72%
+source-wordcount: '2769'
+ht-degree: 71%
 
 ---
 
@@ -54,6 +53,8 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 * La *phase d’ingestion* de l’auteur réduira l’ensemble du déploiement de l’auteur. L’auteur AEM ne sera donc pas disponible pendant la totalité du processus d’ingestion. Assurez-vous également qu’aucun pipeline Cloud Manager n’est exécuté pendant que vous exécutez la phase d’*ingestion*.
 
 * Lorsque vous utilisez `Amazon S3` ou `Azure` comme magasin de données sur le système d&#39;AEM source, le magasin de données doit être configuré de sorte que les objets bloqués ne puissent pas être supprimés (déchets collectés). Ceci garantit l&#39;intégrité des données d&#39;index et l&#39;échec de la configuration de cette manière peut entraîner des extractions en échec en raison d&#39;un manque d&#39;intégrité de ces données d&#39;index.
+
+* Si vous utilisez des index personnalisés, vous devez vous assurer de configurer les index personnalisés avec le noeud `tika` avant d’exécuter l’outil de transfert de contenu. Pour plus d&#39;informations, consultez [Préparation de la nouvelle définition d&#39;index](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition).
 
 ## Disponibilité {#availability}
 
@@ -285,7 +286,7 @@ Suivez les étapes ci-dessous :
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/delete-3.png)
 
-## Résolution des incidents {#troubleshooting}
+## Résolution des problèmes {#troubleshooting}
 
 ### ID d’objets blob manquants {#missing-blobs}
 
