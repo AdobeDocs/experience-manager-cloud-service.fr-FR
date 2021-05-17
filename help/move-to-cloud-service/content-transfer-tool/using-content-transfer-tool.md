@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 3b89e701e080f27f490a6c8a7bb38792c07d6abc
+source-git-commit: 9fdc139f5a945de931a2bebb95e5ea006e5b91be
 workflow-type: tm+mt
-source-wordcount: '2769'
-ht-degree: 71%
+source-wordcount: '2762'
+ht-degree: 66%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 71%
 
 Consultez la section ci-dessous afin de comprendre les points importants à prendre en compte pour l’exécution de l’outil de transfert de contenu :
 
-* La configuration minimale requise pour l’outil de transfert de contenu est AEM 6.3+ et JAVA 8. Si vous utilisez une version antérieure d’AEM, vous devrez mettre à niveau votre référentiel de contenu à la version AEM 6.5 pour utiliser l’outil de transfert de contenu.
+* La configuration minimale requise pour l’outil de transfert de contenu est AEM 6.3+ et JAVA 8. Si vous utilisez une version AEM inférieure, vous devez mettre à niveau votre référentiel de contenu vers AEM 6.5 pour utiliser l’outil de transfert de contenu.
 
-* Java doit être configuré dans l’environnement AEM, de sorte que la commande `java` puisse être exécutée par l’utilisateur démarrant AEM.
+* Java doit être configuré sur l&#39;environnement AEM, de sorte que la commande `java` puisse être exécutée par l&#39;utilisateur qui a début AEM.
 
 * Il est recommandé de désinstaller les anciennes versions de l&#39;outil de transfert de contenu lors de l&#39;installation de la version 1.3.0, car l&#39;outil a subi un changement d&#39;architecture majeur. Avec la version 1.3.0, vous devez également créer de nouveaux jeux de migration et réexécuter l’extraction et l’assimilation sur les nouveaux jeux de migration.
 
@@ -34,11 +34,11 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * Pour utiliser l’outil de transfert de contenu, vous devez être un utilisateur administrateur sur votre instance source et appartenir au groupe **administrateurs** local de l’AEM Cloud Service vers lequel vous transférez le contenu. Les utilisateurs non privilégiés ne pourront pas récupérer le jeton d’accès pour utiliser l’outil de transfert de contenu.
 
-* Si l’option **Effacer le contenu existant sur l’instance Cloud avant d’assimiler** est activée, elle supprime l’intégralité du référentiel existant et crée un nouveau référentiel dans lequel intégrer du contenu. Cela signifie que tous les paramètres sont réinitialisés, y compris les autorisations relatives à l’instance Cloud Service cible. Cela est également vrai pour un utilisateur administrateur ajouté au groupe **administrateurs**. L’utilisateur devra être réajouté au groupe **administrateurs** pour récupérer le jeton d&#39;accès pour CTT.
+* Si l’option **Effacer le contenu existant sur l’instance Cloud avant d’assimiler** est activée, elle supprime l’intégralité du référentiel existant et crée un nouveau référentiel dans lequel intégrer du contenu. Cela signifie que tous les paramètres sont réinitialisés, y compris les autorisations relatives à l’instance Cloud Service cible. Cela est également vrai pour un utilisateur administrateur ajouté au groupe **administrateurs**. L’utilisateur doit être réajouté au groupe **administrateurs** pour récupérer le jeton d&#39;accès pour CTT.
 
-* Le jeton d’accès peut expirer périodiquement, soit après une période spécifique, soit après la mise à niveau de l’environnement Cloud Service. Si le jeton d’accès a expiré, vous ne pourrez pas vous connecter à l’instance de Cloud Service et vous devrez récupérer le nouveau jeton d’accès. L’icône d’état associée à un jeu de migration existant prend l’aspect d’un nuage rouge et affiche un message si vous le survolez.
+* Le jeton d’accès peut expirer périodiquement, soit après une période spécifique, soit après la mise à niveau de l’environnement Cloud Service. Si le jeton d&#39;accès a expiré, vous ne pourrez pas vous connecter à l’instance du Cloud Service et vous devez récupérer le nouveau jeton d&#39;accès. L’icône d’état associée à un jeu de migration existant prend l’aspect d’un nuage rouge et affiche un message si vous le survolez.
 
-* L’outil de transfert de contenu n’effectue aucune analyse de contenu avant de transférer le contenu de l’instance source vers l’instance de cible. Par exemple, CTT ne fait pas de distinction entre le contenu publié et le contenu non publié lors de l’assimilation de contenu dans un environnement de publication. Le contenu spécifié dans le jeu de migration sera ingéré dans l’instance de cible choisie. L’utilisateur peut assimiler une visionneuse de migration à une instance d’auteur ou de publication, ou aux deux. Il est recommandé d’installer le CTT et l’instance d’auteur source lors du déplacement du contenu vers une instance de production afin de déplacer le contenu vers l’instance d’auteur de cible et d’installer de la même manière le CTT sur l’instance de publication source pour déplacer le contenu vers l’instance de publication de cible.
+* L’outil de transfert de contenu (CTT) n’effectue aucune analyse de contenu avant de transférer le contenu de l’instance source vers l’instance de cible. Par exemple, le CTT ne fait pas la distinction entre le contenu publié et le contenu non publié lors de l’assimilation de contenu dans un environnement de publication. Le contenu spécifié dans le jeu de migration sera ingéré dans l’instance de cible choisie. L’utilisateur peut assimiler une visionneuse de migration à une instance d’auteur ou de publication, ou aux deux. Il est recommandé d’installer le CTT sur l’instance d’auteur source lors du déplacement du contenu vers une instance de production pour déplacer le contenu vers l’instance d’auteur de cible et, de même, d’installer le CTT sur l’instance de publication source pour déplacer le contenu vers l’instance de publication de cible.
 
 * Les utilisateurs et les groupes transférés par l’outil de transfert de contenu sont uniquement ceux requis en fonction du contenu pour respecter les autorisations. Le processus d’*extraction* copie l’intégralité de `/home` dans le jeu de migration et le processus d’*ingestion* copie tous les utilisateurs et groupes référencés dans les listes de contrôle d’accès du contenu migré. Pour mapper automatiquement les utilisateurs et les groupes existants avec leurs ID IMS, reportez-vous à la section [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr#cloud-migration).
 
@@ -50,7 +50,7 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
       * Type d’environnement (évaluation ou production) dans lequel vous prévoyez d’importer des données.
       * ID de programme.
 
-* La *phase d’ingestion* de l’auteur réduira l’ensemble du déploiement de l’auteur. L’auteur AEM ne sera donc pas disponible pendant la totalité du processus d’ingestion. Assurez-vous également qu’aucun pipeline Cloud Manager n’est exécuté pendant que vous exécutez la phase d’*ingestion*.
+* La *phase d&#39;importation* de l&#39;auteur réduit le déploiement de l&#39;auteur dans son ensemble. L’auteur AEM ne sera donc pas disponible pendant la totalité du processus d’ingestion. Assurez-vous également qu’aucun pipeline Cloud Manager n’est exécuté pendant que vous exécutez la phase d’*ingestion*.
 
 * Lorsque vous utilisez `Amazon S3` ou `Azure` comme magasin de données sur le système d&#39;AEM source, le magasin de données doit être configuré de sorte que les objets bloqués ne puissent pas être supprimés (déchets collectés). Ceci garantit l&#39;intégrité des données d&#39;index et l&#39;échec de la configuration de cette manière peut entraîner des extractions en échec en raison d&#39;un manque d&#39;intégrité de ces données d&#39;index.
 
@@ -120,7 +120,7 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
    1. **Access Token** : renseignez le jeton d’accès.
 
       >[!NOTE]
-      >Vous pouvez récupérer le jeton d’accès à l’aide du bouton **Open access token** (Ouvrir le jeton d’accès). Vous devez vous assurer que vous appartenez au groupe d’administrateurs AEM dans l’instance Cloud Service cible.
+      >Vous pouvez récupérer le jeton d’accès à l’aide du bouton **Open access token** (Ouvrir le jeton d’accès). Vous devez vous assurer que vous appartenez au groupe d’administrateurs AEM dans l’instance de Cloud Service de cible.
 
    1. **Parameters** : sélectionnez les paramètres suivants pour créer le jeu de migration :
 
@@ -145,10 +145,10 @@ Consultez [Outil de mappage utilisateur](https://experienceleague.adobe.com/docs
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
-   Tous les jeux de migration existants de cet écran s’affichent sur la page *Overview* avec leur état actuel et les informations correspondantes. Certaines des icônes décrites ci-dessous peuvent apparaître.
+   Tous les jeux de migration existants sur cet écran s’affichent sur la page *Aperçu* avec leurs informations d’état et d’état actuelles. Certaines des icônes décrites ci-dessous peuvent apparaître.
 
    * Un *nuage de couleur rouge* indique que vous ne pouvez pas terminer le processus d’extraction.
-   * Un *nuage de couleur verte* indique que vous pouvez terminer le processus d’extraction.
+   * Un *nuage vert* indique que vous pouvez terminer le processus d&#39;extraction.
    * Une *icône de couleur jaune* indique que vous n’avez pas créé le jeu de migration existant et que celui ainsi indiqué a été créé par un autre utilisateur de la même instance.
 
 1. Sélectionnez un jeu de migration dans la page d’aperçu, puis cliquez sur **Properties** pour voir ou modifier les propriétés du jeu de migration. Lors de la modification des propriétés, il n’est pas possible de changer le nom du conteneur ou l’URL du service.
