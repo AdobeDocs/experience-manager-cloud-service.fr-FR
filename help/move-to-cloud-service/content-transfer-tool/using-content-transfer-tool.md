@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 9fdc139f5a945de931a2bebb95e5ea006e5b91be
+source-git-commit: 74816a99a74b86330efb5ff8ca37b4fe64fdbe8c
 workflow-type: tm+mt
 source-wordcount: '2762'
-ht-degree: 66%
+ht-degree: 65%
 
 ---
 
@@ -114,7 +114,7 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
    1. **Cloud Service Configuration** : renseignez l’URL de destination d’auteur AEM as a Cloud Service.
 
       >[!NOTE]
-      >Vous pouvez créer et gérer un maximum de quatre jeux de migration à la fois pendant l’activité de transfert de contenu.
+      >Vous pouvez créer et gérer un maximum de dix jeux de migration à la fois pendant l’activité de transfert de contenu.
       >En outre, vous devez créer une migration distincte pour chacun des environnements spécifiques : *Stage* (Évaluation), *Development* (Développement) ou *Production*.
 
    1. **Access Token** : renseignez le jeton d’accès.
