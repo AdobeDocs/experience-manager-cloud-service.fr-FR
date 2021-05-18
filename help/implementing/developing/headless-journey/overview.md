@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
-source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
+source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '772'
 ht-degree: 3%
 
 ---
@@ -55,8 +55,7 @@ Bien que vous puissiez accéder directement à une partie particulière du parco
 | 6 | [Mise à jour de votre contenu via les API de ressources AEM](update-your-content.md) | Découvrez comment utiliser l’API REST pour accéder à votre contenu Fragments de contenu et le mettre à jour. |
 | 7 | [Comment assembler tout cela : votre application et votre contenu en AEM sans en-tête](put-it-all-together.md) | Découvrez comment prendre votre projet AEM, y compris les fragments de contenu, vos appels GraphQL, vos appels d&#39;API REST et votre application, et comment le préparer pour qu&#39;il soit opérationnel. |
 | 8 | [Mode de fonctionnement de votre application sans tête](go-live.md) | Découvrez comment déployer l&#39;application en direct et prendre votre code local en mode Git et le déplacer vers Cloud Manager Git pour le pipeline CI/CD. |
-| 9 | [Lancement de la publication](post-launch.md) | Découvrez comment conserver votre expérience sans tête. |
-| 10 | [Facultatif - Comment créer des applications d&#39;une seule page (SPA) avec AEM](create-spa.md) | Une fois que vous avez compris AEM fonctions sans en-tête, explorez comment combiner des diffusions sans en-tête et sans en-tête et comment créer des SPA modifiables à l’aide de la structure de l’éditeur d’. |
+| 9 | [Facultatif - Comment créer des applications d&#39;une seule page (SPA) avec AEM](create-spa.md) | Une fois que vous avez compris AEM fonctions sans en-tête, explorez comment combiner des diffusions sans en-tête et sans en-tête et comment créer des SPA modifiables à l’aide de la structure de l’éditeur d’. |
 
 ## Eléments suivants {#what-is-next}
 
