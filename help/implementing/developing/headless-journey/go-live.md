@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 309fae113f98111e8dc548226a7fba1b72f16248
+source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
 workflow-type: tm+mt
-source-wordcount: '1836'
+source-wordcount: '1986'
 ht-degree: 2%
 
 ---
@@ -195,12 +195,28 @@ Maintenant que vous avez terminé cette partie du Parcours de développement AEM
 * Découvrez comment sécuriser et mettre à l’échelle votre application avant le lancement.
 * Découvrez comment surveiller les problèmes de performances et de débogage.
 
-Vous devez continuer votre parcours sans tête AEM en examinant ensuite le document [Lancement de la publication](post-launch.md) où vous apprendrez à conserver votre expérience sans tête.
+## Le Parcours Se Termine - Ou Est-Ce Le Cas ? {#journey-ends}
+
+Félicitations ! Vous avez terminé le Parcours AEM développement sans tête ! Vous devez maintenant comprendre :
+
+* Différence entre la diffusion de contenu sans en-tête et avec en-tête.
+* AEM fonctionnalités sans tête.
+* Comment organiser et AEM projet sans tête.
+* Comment créer du contenu sans en-tête en AEM.
+* Comment récupérer et mettre à jour du contenu sans en-tête dans AEM.
+* Comment vivre avec un projet AEM sans tête.
+* Que faire après le lancement.
+
+Vous avez déjà lancé votre premier projet AEM sans tête ou vous disposez maintenant de toutes les connaissances nécessaires pour le faire. Super boulot !
+
+Les magasins sans tête en AEM n&#39;ont pas besoin de s&#39;arrêter ici. Vous vous souviendrez peut-être dans la partie [Prise en main du parcours](getting-started.md#integration-levels) que nous avons discuté brièvement de la façon dont AEM non seulement prend en charge la diffusion sans tête et les modèles traditionnels à pile complète, mais aussi peut prendre en charge des modèles hybrides qui combinent les avantages des deux.
+
+Si ce type de flexibilité est nécessaire pour votre projet, passez à la partie facultative supplémentaire du parcours, [Comment créer des applications d&#39;une seule page (SPA) avec AEM.](create-spa.md)
 
 ## Ressources supplémentaires {#additional-resources}
 
 * [Configuration D’Un Environnement D’AEM Local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
 * [SDK d’AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
 * [Présentation du déploiement sur AEM en tant que Cloud Service](/help/implementing/deploying/overview.md)
-* [Utilisation de Cloud Manager pour déployer votre code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
+* [Utilisation de Cloud Manager pour déployer votre code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr)
 * [Intégration du référentiel Git de Cloud Manager à un référentiel Git externe et déploiement d’un projet AEM en tant que Cloud Service](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/master/help/implementing/developing/headless-journey/access-your-content.md)
