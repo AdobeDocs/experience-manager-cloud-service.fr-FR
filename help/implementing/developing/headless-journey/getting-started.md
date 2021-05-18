@@ -4,14 +4,13 @@ description: Dans cette partie du Parcours de développement AEM sans tête, dé
 hide: true
 hidefromtoc: true
 index: false
-translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+exl-id: a39877d9-f5a1-48f0-a021-cc9849bd8ecb
+source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
 workflow-type: tm+mt
 source-wordcount: '3087'
 ht-degree: 4%
 
 ---
-
 
 # Prise en main de AEM sans en-tête en tant que Cloud Service {#getting-started}
 
@@ -50,7 +49,7 @@ Pour le plus simple, AEM consiste en une instance d’auteur et une [instance de
 
 Le contenu commence sur l’instance d’auteur. C’est ici que les auteurs de contenu créent leur contenu. L’environnement auteur offre divers outils permettant aux auteurs de créer, organiser et réutiliser leur contenu.
 
-### Instance de publication {#publish}
+### Instance Publication {#publish}
 
 Une fois le contenu créé dans l’instance d’auteur, il doit être publié pour être disponible à d’autres services. Une instance de publication contient tout le contenu qui a été publié.
 
@@ -63,7 +62,8 @@ La réplication est l’acte de transfert de contenu de l’instance d’auteur 
 A son niveau le plus simple, la création d’expériences numériques en AEM nécessite les étapes suivantes :
 
 1. Vos auteurs de contenu créeront votre contenu sans en-tête dans l’instance d’auteur.
-1. Lorsque ce contenu est prêt, il est répliqué sur l’instance de publication. Les API peuvent ensuite être appelées pour récupérer ce contenu.
+1. Lorsque ce contenu est prêt, il est répliqué sur l’instance de publication.
+1. Les API peuvent ensuite être appelées pour récupérer ce contenu.
 
 AEM Headless tire parti de cette base technique en offrant des outils puissants pour gérer le contenu sans tête [décrit dans la section suivante.](#aem-headless-basics)
 
@@ -173,7 +173,7 @@ Les auteurs de contenu créent et gèrent le contenu qui est distribué sans enc
 
 Les auteurs de contenu doivent garder à l’esprit les bonnes pratiques suivantes.
 
-#### Plan de Localisation {#localization}
+#### Planification de la Localisation {#localization}
 
 Prévoir la traduction et la localisation dès le début du projet. Considérez le &quot;gestionnaire de projet d&#39;internationalisation&quot; comme une personne distincte dont la responsabilité est de définir quel contenu doit être traduit et ce qui ne l&#39;est pas, et quel contenu traduit peut être modifié par les producteurs de contenu régionaux ou locaux.
 
@@ -282,7 +282,7 @@ Vous devez poursuivre votre parcours sans tête AEM en examinant ensuite le docu
 
 Bien qu&#39;il soit recommandé de passer à la partie suivante du parcours de développement sans tête en examinant le document [Chemin vers votre première expérience en utilisant AEM sans tête,](path-to-first-experience.md) voici quelques ressources supplémentaires facultatives qui approfondissent certains concepts mentionnés dans ce document, mais qui ne sont pas nécessaires pour continuer sur le parcours sans tête.
 
-* [Introduction à l&#39;architecture de Adobe Experience Manager en tant que Cloud Service](/help/core-concepts/architecture.md)  - Comprendre l&#39;AEM en tant que Cloud Service
+* [Introduction à l&#39;architecture de l&#39;Adobe Experience Manager en tant que Cloud Service](/help/core-concepts/architecture.md)  - Comprendre l&#39;AEM en tant que Cloud Service
 * [AEM Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)  sans en-tête - Utilisez ces didacticiels pratiques pour découvrir comment utiliser les différentes options de diffusion de contenu vers des points de terminaison sans en-tête avec AEM et choisissez ce qui vous convient.
 * [Gestion de contenu sans en-tête utilisant les API](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses)  GraphQL - Suivez ce cours pour une présentation de l&#39;API GraphQL implémentée dans AEM. L’authentification via AdobeID est requise.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql)  - Ce projet GitHub comprend des exemples d&#39;applications qui mettent en évidence les API AEM GraphQL.
