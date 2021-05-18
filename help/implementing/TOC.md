@@ -5,10 +5,9 @@ breadcrumb-title: Guide d’implémentation
 user-guide-description: Découvrez comment personnaliser votre déploiement d’Experience Manager as a Cloud Service, y compris des rubriques sur le déploiement et le développement.
 feature: Outils de développement
 role: Developer, Architect
-translation-type: tm+mt
-source-git-commit: 77668ff0937c2af24d73da7f8d6b3c8956acb350
+source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '970'
 ht-degree: 89%
 
 ---
@@ -54,7 +53,7 @@ ht-degree: 89%
       + [Affichage et mise à jour d’une liste d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
       + [Application d’une liste d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
       + [Annulation de l’application d’une liste d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
-      + [Suppression d’une liste d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
+      + [Suppression d’une liste autorisée d’adresses IP](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [Contrôle du statut d’une liste d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
    + [FAQ sur Cloud Manager](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
 + Gestion de votre code {#managing-code}
@@ -65,11 +64,11 @@ ht-degree: 89%
    + [Configuration du développement d&#39;équipe d&#39;entreprise pour AEM en tant que Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
 + Développement pour AEM as a Cloud Service {#developing}
    + [Structure de projet AEM](developing/introduction/aem-project-content-package-structure.md)
-   + [Package de structure du référentiel de projet AEM](developing/introduction/repository-structure-package.md)
-   + [SDK AEM as a Cloud Service](developing/introduction/aem-as-a-cloud-service-sdk.md)
-   + [Conseils de développement pour AEM as a Cloud Service](developing/introduction/development-guidelines.md)
+   + [Module de structure du référentiel de projet AEM](developing/introduction/repository-structure-package.md)
+   + [SDK AEM as a Cloud Service](developing/introduction/aem-as-a-cloud-service-sdk.md)
+   + [Conseils de développement pour AEM as a Cloud Service](developing/introduction/development-guidelines.md)
    + [Journalisation](developing/introduction/logging.md)
-   + [Configurations et navigateur de configuration](developing/introduction/configurations.md)
+   + [Configurations et l’explorateur de configurations](developing/introduction/configurations.md)
    + [Fondements techniques d’AEM](/help/implementing/developing/introduction/aem-technologies.md)
    + [API d’AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Génération de jetons d’accès pour les API côté serveur](developing/introduction/generating-access-tokens-for-server-side-apis.md)
@@ -83,7 +82,6 @@ ht-degree: 89%
       + [Mise à jour de votre contenu via les API de ressources AEM](developing/headless-journey/update-your-content.md)
       + [Comment tout assembler](developing/headless-journey/put-it-all-together.md)
       + [Mode de fonctionnement de votre application sans tête](developing/headless-journey/go-live.md)
-      + [Lancement de la publication](developing/headless-journey/post-launch.md)
       + [Facultatif - Comment créer des applications d&#39;une seule page avec AEM](developing/headless-journey/create-spa.md)
    + [Couplage et découplage dans AEM](developing/headful-headless.md)
    + Développement full stack avec AEM {#full-stack}
@@ -102,25 +100,25 @@ ht-degree: 89%
          + [Modèles](developing/components/templates.md)
          + [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
          + [Système de style](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=fr)
-         + [Exportateur JSON pour les services de contenu](developing/components/json-exporter.md)
+         + [Exportateur JSON pour Content Services](developing/components/json-exporter.md)
          + [Activation de l’exportateur JSON pour un composant](developing/components/enabling-json-exporter.md)
          + [Éditeur d’image](developing/components/image-editor.md)
          + [Balises de décoration](developing/components/decoration-tag.md)
          + [Utilisation de conditions de masquage](developing/components/hide-conditions.md)
          + [Guide de référence des composants](developing/components/reference.md)
       + [Cadre de balisage AEM](/help/implementing/developing/introduction/tagging-framework.md)
-      + [Création d’un balisage dans les applications AEM](/help/implementing/developing/introduction/tagging-applications.md)
+      + [Création d’un balisage dans des applications AEM](/help/implementing/developing/introduction/tagging-applications.md)
       + Recherche {#search}
          + [API Query Builder](/help/implementing/developing/introduction/query-builder-api.md)
          + [Référence des prédicats de Query Builder](/help/implementing/developing/introduction/query-builder-predicates.md)
          + [Implémentation d’un évaluateur de prédicats personnalisé](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
       + [Pages d’erreur personnalisées](/help/implementing/developing/introduction/custom-error-page.md)
-      + [Types de nœud AEM](/help/implementing/developing/introduction/node-types.md)
+      + [Types de nœuds AEM](/help/implementing/developing/introduction/node-types.md)
       + [Instructions relatives aux API Java](/help/implementing/developing/introduction/java-api-guidelines.md)
    + Développement AEM sous forme hybride {#hybrid}
       + [Approche hybride et SPA avec AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
       + [Activation de l’exportateur JSON pour un composant](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=fr)
-      + [Introduction et présentation des SPA](developing/hybrid/introduction.md)
+      + [Introduction et présentation des applications sur une seule page (SPA)](developing/hybrid/introduction.md)
       + [Tutoriel sur SPA WKND](developing/hybrid/wknd-tutorial.md)
       + [Prise en main avec React](developing/hybrid/getting-started-react.md)
       + [Prise en main avec Angular](developing/hybrid/getting-started-angular.md)
@@ -129,7 +127,7 @@ ht-degree: 89%
       + [Présentation de l’éditeur de SPA](developing/hybrid/editor-overview.md)
       + [Plan directeur d’applications sur une seule page (SPA)](developing/hybrid/blueprint.md)
       + [Composant de page SPA](developing/hybrid/page-component.md)
-      + [Mappage du modèle dynamique sur le composant](developing/hybrid/model-to-component-mapping.md)
+      + [Mappage dynamique de modèle à composant](developing/hybrid/model-to-component-mapping.md)
       + [Routage de modèle](developing/hybrid/routing.md)
       + [Composant RemotePage](developing/hybrid/remote-page.md)
       + [Modification d’une SPA externe dans AEM](developing/hybrid/editing-external-spa.md)
@@ -141,7 +139,7 @@ ht-degree: 89%
    + Gestion de l’expérience découplée {#headless}
       + [Le découplage et AEM](developing/headless/introduction.md)
       + Guides de prise en main {#getting-started}
-         + [Création d’une configuration ](developing/headless/getting-started/create-configuration.md)
+         + [Création d’une configuration](developing/headless/getting-started/create-configuration.md)
          + [Création d’un modèle de fragment de contenu](developing/headless/getting-started/create-content-model.md)
          + [Création d’un dossier Ressources](developing/headless/getting-started/create-assets-folder.md)
          + [Création d’un fragment de contenu](developing/headless/getting-started/create-content-fragment.md)
@@ -166,8 +164,8 @@ ht-degree: 89%
 + Outils de développement {#developer-tools}
    + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
    + [Module externe Content Package Maven](/help/implementing/developing/tools/maven-plugin.md)
-   + [Outil AEM Repo](/help/implementing/developing/tools/repo-tool.md)
-   + [Utilisation de CRXDE Lite ](/help/implementing/developing/tools/crxde.md)
+   + [Outil AEM Repo](/help/implementing/developing/tools/repo-tool.md)
+   + [Utilisation de CRXDE Lite](/help/implementing/developing/tools/crxde.md)
    + [Externalisateur de liens](/help/implementing/developing/tools/externalizer.md)
 + Personnalisation {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
