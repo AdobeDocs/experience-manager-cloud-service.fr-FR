@@ -2,16 +2,15 @@
 title: Métadonnées XMP
 description: Découvrez la norme de métadonnées XMP (Extensible Metadata Platform) pour la gestion des métadonnées. Elle est utilisée par AEM comme format normalisé pour la création, le traitement et l’échange de métadonnées.
 contentOwner: AG
-feature: Metadata
+feature: 'Métadonnées  '
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
+source-git-commit: 1dc639265570b54c42d04f61178d8d2faec1b433
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 76%
+source-wordcount: '1000'
+ht-degree: 75%
 
 ---
-
 
 # Métadonnées XMP {#xmp-metadata}
 
@@ -75,9 +74,7 @@ XMP vous offre la possibilité d’ajouter une propriété `xml:lang` aux propri
 ## Écriture différée XMP sur les rendus {#xmp-writeback-to-renditions}
 
 Cette fonction d’écriture différée XMP dans [!DNL Adobe Experience Manager Assets] reproduit les modifications de métadonnées apportées aux rendus de la ressource d’origine.
-Lorsque vous modifiez les métadonnées d’un fichier depuis le composant Ressources ou lors du téléchargement du fichier, les modifications sont initialement stockées dans le noeud de métadonnées de la hiérarchie des ressources.
-
-La fonction Écriture différée XMP permet de propager les modifications de métadonnées à l’ensemble des rendus de la ressource ou uniquement à certains d’entre eux. La fonctionnalité n&#39;écrit que les propriétés de métadonnées qui utilisent l&#39;espace de nommage `jcr`, c&#39;est-à-dire qu&#39;une propriété nommée `dc:title` est réécrite, mais qu&#39;une propriété nommée `mytitle` ne l&#39;est pas.
+Lorsque vous modifiez les métadonnées d’un fichier dans [!DNL Assets] ou lorsque vous téléchargez le fichier, les modifications sont initialement stockées dans le noeud de métadonnées de la hiérarchie de fichiers. La fonction Écriture différée  permet de propager les modifications de métadonnées à l’ensemble des rendus de la ressource ou uniquement à certains d’entre eux. La fonctionnalité n&#39;écrit que les propriétés de métadonnées qui utilisent l&#39;espace de nommage `jcr`, c&#39;est-à-dire qu&#39;une propriété nommée `dc:title` est réécrite, mais qu&#39;une propriété nommée `mytitle` ne l&#39;est pas.
 
 Par exemple, imaginez un scénario où vous modifiez la propriété [!UICONTROL Title] de l’actif intitulé `Classic Leather` en `Nylon`.
 
@@ -93,7 +90,13 @@ Dans ce cas, [!DNL Assets] enregistre les modifications apportées à la propri�
 
 ### Activer l’écriture différée XMP {#enable-xmp-writeback}
 
-[!UICONTROL Le processus d’] écriture différée des métadonnées DAM permet d’enregistrer en écriture les métadonnées d’un fichier. Pour activer l’écriture différée, procédez comme suit :
+[!UICONTROL Le processus d’] écriture différée des métadonnées DAM permet d’enregistrer en écriture les métadonnées d’un fichier. Pour activer l’écriture différée, utilisez l’une des trois méthodes suivantes :
+
+* Utilisez les lanceurs.
+* Processus de début manuel `DAM MetaData Writeback`.
+* Configurez le processus pour qu’il fasse partie du post-traitement.
+
+Pour utiliser les lanceurs, procédez comme suit :
 
 1. En tant qu’administrateur, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Lanceurs]**.
 1. Sélectionnez le [!UICONTROL lanceur] pour lequel la colonne **[!UICONTROL Workflow]** affiche **[!UICONTROL DAM MetaData Writeback]**. Cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils.
@@ -102,16 +105,14 @@ Dans ce cas, [!DNL Assets] enregistre les modifications apportées à la propri�
 
 1. Sélectionnez **[!UICONTROL Activer]** dans la page **[!UICONTROL Propriétés du lanceur]**. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 
-Pour appliquer ce flux de travail à une ressource une seule fois, appliquez le flux de travail [!UICONTROL DAM Metadata Writeback] depuis le rail de gauche. Pour appliquer le processus à toutes les ressources téléchargées, ajoutez-le à un profil de post-traitement.
+Pour appliquer manuellement le flux de travail à une ressource une seule fois, appliquez le flux de travail [!UICONTROL DAM Metadata Writeback] depuis le rail de gauche.
+
+Pour appliquer le processus à toutes les ressources téléchargées, ajoutez-le à un profil de post-traitement.
 
 <!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
 ### Enable XMP writeback {#enable-xmp-writeback}
--->
 
-<!-- asgupta, Engg: Need attention here to update the configuration manager changes. -->
-
-<!-- 
 To enable the metadata changes to be propagated to the renditions of the asset when uploading it, modify the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration in Configuration Manager.
 
 1. To open Configuration Manager, access `https://[aem_server]:[port]/system/console/configMgr`.
