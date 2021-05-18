@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 74816a99a74b86330efb5ff8ca37b4fe64fdbe8c
+source-git-commit: e0c6a79e6a088423cbc47046f285fb1ac241c476
 workflow-type: tm+mt
-source-wordcount: '2762'
-ht-degree: 65%
+source-wordcount: '2721'
+ht-degree: 66%
 
 ---
 
@@ -18,7 +18,6 @@ ht-degree: 65%
 >title="Remarques importantes concernant l’utilisation de l’outil de transfert de contenu"
 >abstract="Examinez les points importants à prendre en compte pour utiliser l’outil de transfert de contenu, notamment les versions Java et AEM, les types de banque de données pris en charge, les groupes d’utilisateurs et bien plus encore."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="Bonnes pratiques et directives"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#availability" text="Téléchargement de l’outil de transfert de contenu"
 
 Consultez la section ci-dessous afin de comprendre les points importants à prendre en compte pour l’exécution de l’outil de transfert de contenu :
 
@@ -84,7 +83,7 @@ Il est possible de télécharger l’outil de transfert de contenu dans un fichi
 
 Consultez cette section pour effectuer une migration du contenu vers AEM as a Cloud Service (auteur/publication) à l’aide de l’outil de transfert de contenu :
 
-1. Sélectionnez le Adobe Experience Manager et accédez aux outils -> **Opérations** -> **Migration de contenu**.
+1. Sélectionnez l’Adobe Experience Manager et accédez aux outils -> **Opérations** -> **Migration de contenu**.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card01.png)
 
@@ -160,7 +159,6 @@ Consultez [Outil de mappage utilisateur](https://experienceleague.adobe.com/docs
 >id="aemcloud_ctt_extraction"
 >title="Extraction de contenu"
 >abstract="L’Extraction fait référence à l’extraction de contenu de l’instance d’AEM source dans une zone temporaire appelée jeu de migration. Un jeu de migration est un espace de stockage cloud fourni par Adobe pour stocker temporairement le contenu transféré entre l’instance AEM source et l’instance AEM Cloud Service."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="Processus d&#39;importation"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="Extraction supérieure"
 
 Pour extraire votre jeu de migration à partir de l’outil de transfert de contenu, procédez comme suit :
@@ -207,8 +205,7 @@ Une fois le processus d’extraction terminé, vous pouvez transférer le conten
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="Ingestion du contenu"
->abstract="L&#39;assimilation se rapporte à l&#39;assimilation de contenu du *jeu de migration* dans l&#39;instance de Cloud Service de cible. L’outil de transfert de contenu comporte une fonctionnalité pour traiter un complément de contenu différentiel. Dans ce cas, seules les modifications effectuées depuis l’activité de transfert de contenu précédente sont transférées."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="Processus d&#39;Extraction"
+>abstract="L&#39;importation désigne l&#39;assimilation de contenu à partir du jeu de migration vers l&#39;instance de Cloud Service de cible. L’outil de transfert de contenu comporte une fonctionnalité pour traiter un complément de contenu différentiel. Dans ce cas, seules les modifications effectuées depuis l’activité de transfert de contenu précédente sont transférées."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="Ingestion de complément"
 
 Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert de contenu, procédez comme suit :
