@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
-source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
+source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '782'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,13 @@ Ce guide vous guide dans les sujets les plus importants afin que vous puissiez :
 * Comprenez AEM fonctionnalités sans tête et comment elles fonctionnent ensemble pour offrir une expérience sans tête.
 * Ayez la possibilité de prendre les premières étapes de la mise en oeuvre de votre premier projet AEM sans tête.
 
-## Parcours sans en-tête {#the-journey}
+## Public {#audience}
+
+Ce parcours est conçu pour le développeur, qui expose les exigences, les étapes et l&#39;approche d&#39;un projet AEM sans tête du point de vue du développeur. Le parcours définira des personnes supplémentaires avec lesquelles le développeur doit interagir pour un projet réussi, mais le point de vue du parcours est celui du développeur.
+
+L&#39;information contenue dans ce parcours peut bien sûr être utile à d&#39;autres personnes, mais certaines informations seront superflues à certains rôles. Restez à l&#39;écoute pour les prochains parcours couvrant d&#39;autres rôles.
+
+## Parcours de développement sans tête {#the-journey}
 
 Vous allez explorer de nombreux sujets dans ce parcours. Les articles suivants vous donnent une connaissance fondamentale de l&#39;absence d&#39;en-tête en AEM et vous donnent un lien vers une documentation technique détaillée.
 
