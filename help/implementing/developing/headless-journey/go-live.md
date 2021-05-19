@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 4c743eede23f09f285d9da84b149226f7288fcc3
+source-git-commit: 7c30a7415cc424e7f417d92bad9eeb01877994d2
 workflow-type: tm+mt
-source-wordcount: '1886'
+source-wordcount: '1829'
 ht-degree: 2%
 
 ---
@@ -22,11 +22,11 @@ Dans cette partie du [Parcours de développement AEM sans en-tête](overview.md)
 
 ## L&#39;histoire jusqu&#39;à présent {#story-so-far}
 
-Dans le document précédent de l&#39;parcours sans tête AEM, [Comment assembler tout - Votre application et votre contenu dans AEM sans tête](put-it-all-together.md) vous avez appris à préparer votre propre projet sans tête pour qu&#39;il soit mis en ligne et vous devriez maintenant :
+Dans le document précédent du parcours sans tête AEM, [Comment mettre à jour votre contenu via les API AEM Assets](update-your-content.md) vous avez appris à mettre à jour votre contenu sans tête existant dans AEM via l&#39;API et vous devez maintenant :
 
-* Comprendre les exigences pour être opérationnel.
+* Comprenez l’API HTTP AEM Assets.
 
-Cet article s&#39;appuie sur ces principes de base pour vous permettre de comprendre comment mettre en oeuvre votre projet AEM sans tête.
+Cet article s&#39;appuie sur ces principes fondamentaux pour vous aider à préparer votre propre projet AEM sans tête pour qu&#39;il soit opérationnel.
 
 ## Intention {#objective}
 
@@ -151,13 +151,13 @@ Pour que les utilisateurs puissent bénéficier d’une expérience optimale lor
 * Vérifier les pages d&#39;état AEM pour l&#39;état actuel de disponibilité du service
 * Accès aux rapports de performances
    * Performances des diffusions
-      * Rapide (CDN) - vérifier le nombre d’appels, le taux de cache, les taux d’erreur, le trafic de charge utile
+      * Performances du CDN (Fastly) : contrôle du nombre d&#39;appels, du taux de cache, des taux d&#39;erreur et du trafic de charge utile
       * Serveurs d&#39;Origine : nombre d&#39;appels, taux d&#39;erreur, charges d&#39;UC, trafic de charge
    * Performances de l’auteur
       * Vérifier le nombre d’utilisateurs, de requêtes et de chargements
 * Accès aux rapports de performances spécifiques à l’application et à l’espace
    * Une fois le serveur opérationnel, vérifiez si les mesures générales sont vertes/orange/rouges, puis identifiez les problèmes spécifiques à l’application.
-   * Ouvrez les mêmes rapports que ceux ci-dessus filtrés dans l’application/l’espace (par exemple, bureau Photoshop, paywall, etc.).
+   * Ouvrir les mêmes rapports que ceux ci-dessus filtrés dans l’application ou l’espace (par exemple, bureau Photoshop, paywall)
    * Utiliser les API du journal Splunk pour accéder aux performances du service et de l&#39;application
    * Contactez l’assistance clientèle si d’autres problèmes se produisent.
 
@@ -181,15 +181,6 @@ Pour consigner efficacement un bogue avec l&#39;assistance au cas où vous aurie
 * Document d’un moyen de reproduire le problème
 * Document du contenu avec lequel la publication se reproduit
 * Consignez un problème sur le portail d&#39;assistance AEM avec la priorité appropriée.
-
-## Eléments suivants {#what-is-next}
-
-Maintenant que vous avez terminé cette partie du Parcours de développement AEM sans tête, vous devez :
-
-* Comprendre les principes de base de la réplication du contenu AEM et de la mise en cache.
-* Sachez comment configurer l&#39;outillage nécessaire pour simuler la mise en service de votre application sans tête.
-* Découvrez comment sécuriser et mettre à l’échelle votre application avant le lancement.
-* Découvrez comment surveiller les problèmes de performances et de débogage.
 
 ## Le Parcours Se Termine - Ou Est-Ce Le Cas ? {#journey-ends}
 
