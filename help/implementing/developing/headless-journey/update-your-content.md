@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
-translation-type: tm+mt
-source-git-commit: 4a36cd3206784c0e4e3ed3d7007c83f44f1d5ee0
+source-git-commit: 7c30a7415cc424e7f417d92bad9eeb01877994d2
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1117'
 ht-degree: 49%
 
 ---
@@ -215,7 +214,7 @@ Associated content is currently not exposed.
 
 ## Utilisation de l’API REST Assets {#using-aem-assets-rest-api}
 
-### Accédez à l’adresse {#access}
+### Accès {#access}
 
 L’API REST Assets utilise le point de terminaison `/api/assets` et nécessite le chemin d’accès de la ressource pour y accéder (sans le point de terminaison `/content/dam` en haut).
 
@@ -322,7 +321,11 @@ Maintenant que vous avez terminé cette partie du Parcours de développement AEM
 * Have experience with sample code and know how the API works in practice.
 -->
 
-Vous devriez continuer votre parcours sans tête AEM en examinant ensuite le document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) où vous apprendrez à prendre votre projet sans tête et à le préparer pour qu’il soit en direct.
+<!-- The "How to put it all together" page isn't going to be published until the first public release of the Headless SDK. Temporarily commenting out the reference below. -->
+
+<!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
+
+Vous devriez continuer votre parcours AEM sans tête en passant en revue le document [Comment vivre avec votre application sans tête](go-live.md) où vous mettez en ligne votre projet AEM sans tête !
 
 [La manière de créer des applications d’une seule page (SPA) avec ](create-spa.md) AEM vous montrera également comment créer des SPA modifiables à l’aide de la structure de l’éditeur de  d’AEM, ainsi que comment intégrer des  externes, en activant des fonctions de modification si nécessaire.
 
