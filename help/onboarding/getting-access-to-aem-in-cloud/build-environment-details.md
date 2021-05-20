@@ -33,7 +33,7 @@ Cloud Manager crée et teste votre code à l’aide d’un environnement de gén
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
-* Maven est configuré au niveau du système avec un fichier settings.xml qui inclut automatiquement le référentiel d&#39;Adobe public **Artifact** à l&#39;aide d&#39;un profil nommé `adobe-public`. (Pour plus d’informations, consultez le [référentiel Maven public d’Adobe](https://repo.adobe.com/)).
+* Maven est configuré au niveau du système avec un fichier settings.xml qui inclut automatiquement le référentiel **Artifact** de l’Adobe public à l’aide d’un profil nommé `adobe-public`. (Pour plus d’informations, consultez le [référentiel Maven public d’Adobe](https://repo.adobe.com/)).
 
 >[!NOTE]
 >Bien que Cloud Manager ne définisse pas de version spécifique du `jacoco-maven-plugin`, la version utilisée doit être au moins `0.7.5.201505241946`.
