@@ -1,14 +1,13 @@
 ---
 title: Notes de mise à jour de la version 2020.10.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.10.0.
-translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 100%
 
 ---
-
 
 # Notes de mise à jour pour [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 {#release-notes}
 
@@ -29,7 +28,7 @@ La version suivante (2020.11.0) sera publiée le 1er décembre 2020.
 
 * **[Dossiers ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)** : possibilité de créer des dossiers d’audience pour organiser, rechercher et sélectionner facilement des segments d’audience à utiliser pour les fonctionnalités de ciblage d’offre ContextHub.
 
-## [!DNL Adobe Experience Manager Assets] en tant que Cloud Service  {#assets}
+## [!DNL Adobe Experience Manager Assets] en tant que Cloud Service {#assets}
 
 * Balisage vidéo intelligent optimisé par **[!DNL Adobe Sensei]** : les utilisateurs de DAM peuvent exploiter des modèles d’IA afin d’analyser le contenu vidéo pour des balises spécifiques aux objets et actions afin de passer moins de temps à ajouter des balises et de consacrer plus de temps à utiliser les nombreuses informations exposées pour offrir une expérience adaptée aux clients. Voir [Balisage intelligent des ressources vidéo](/help/assets/smart-tags-video-assets.md).
 
