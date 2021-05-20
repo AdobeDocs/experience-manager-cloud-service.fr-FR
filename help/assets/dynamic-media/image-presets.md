@@ -1,7 +1,7 @@
 ---
 title: Application de paramètres d’image prédéfinis Dynamic Media
 description: Découvrez comment appliquer des paramètres d’image prédéfinis Dynamic Media.
-feature: Paramètres d’image prédéfinis, visionneuses, rendus
+feature: Paramètres d’image prédéfinis,Visionneuses,Rendus
 role: Business Practitioner
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
 source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
@@ -13,7 +13,7 @@ ht-degree: 56%
 
 # Application de paramètres d’image prédéfinis Dynamic Media {#applying-image-presets}
 
-Les paramètres d’image prédéfinis permettent aux fichiers de diffuser dynamiquement des images de différentes tailles, dans différents formats ou avec d’autres propriétés d’image, elles sont générées de manière dynamique. Vous pouvez choisir un paramètre prédéfini lors de l’exportation pour reformater les images selon les spécifications définies par votre administrateur.
+Les paramètres d’image prédéfinis permettent aux ressources de diffuser dynamiquement des images selon différentes tailles, dans différents formats ou avec d’autres propriétés d’image générées dynamiquement. Vous pouvez choisir un paramètre prédéfini lors de l’exportation afin de reformater les images selon les spécifications définies par votre administrateur.
 
 Vous pouvez en outre sélectionner un paramètre d’image prédéfini qui est réactif (désigné par le bouton **[!UICONTROL RESS]** une fois que vous l’avez sélectionné).
 
@@ -21,7 +21,7 @@ Vous pouvez en outre sélectionner un paramètre d’image prédéfini qui est r
 
 >[!NOTE]
 >
->L’imagerie intelligente fonctionne avec vos paramètres d’image prédéfinis existants. Il utilise les informations à la dernière milliseconde de diffusion pour réduire davantage la taille du fichier image en fonction de la vitesse de connexion du navigateur ou du réseau. Voir [Imagerie numérique](imaging-faq.md) pour plus d’informations.
+>L’imagerie dynamique fonctionne avec vos paramètres d’image prédéfinis existants. Il utilise des informations à la dernière milliseconde de la diffusion pour réduire davantage la taille du fichier image en fonction de la vitesse de connexion du navigateur ou du réseau. Voir [Imagerie numérique](imaging-faq.md) pour plus d’informations.
 
 Vous pouvez appliquer un paramètre d’image prédéfini à une image lorsque vous la prévisualisez.
 
@@ -41,11 +41,11 @@ Vous pouvez appliquer un paramètre d’image prédéfini à une image lorsque v
 
 1. Procédez de l’une des manières suivantes :
 
-   * Pour prévisualisation du paramètre d’image prédéfini, sélectionnez un rendu dynamique.
+   * Pour prévisualiser le paramètre d’image prédéfini, sélectionnez un rendu dynamique.
    * Pour afficher la fenêtre contextuelle, appuyez sur **[!UICONTROL URL]**, **[!UICONTROL Incorporer]** ou **[!UICONTROL RESS]**.
 
    >[!NOTE]
    >
-   >Si le fichier *et* le paramètre d’image prédéfini ne sont pas encore publiés, le bouton **[!UICONTROL URL]** (ou les boutons URL et RESS, le cas échéant) n’est pas disponible.
+   >Si la ressource *et* le paramètre d’image prédéfini ne sont pas encore publiés, le bouton **[!UICONTROL URL]** (ou les boutons URL et RESS, le cas échéant) n’est pas disponible.
    >
    >Notez également que les paramètres prédéfinis de l’image sont automatiquement publiés sur un serveur Dynamic Media S7.
