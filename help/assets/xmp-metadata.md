@@ -5,10 +5,10 @@ contentOwner: AG
 feature: 'Métadonnées  '
 role: Business Practitioner,Administrator
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: 1dc639265570b54c42d04f61178d8d2faec1b433
+source-git-commit: 212e4e7cfb93d5765f80003c42ba6afb9af45c13
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 75%
+source-wordcount: '1016'
+ht-degree: 74%
 
 ---
 
@@ -84,9 +84,9 @@ Dans ce cas, [!DNL Assets] enregistre les modifications apportées à la propri�
 
 ![métadonnées stockées dans le noeud de ressources du référentiel](assets/metadata_stored.png)
 
->[!NOTE]
+>[!IMPORTANT]
 >
->La fonction d&#39;écriture différée n&#39;est pas activée par défaut dans [!DNL Assets]. Voir comment [activer l’écriture différée des métadonnées](#enable-xmp-writeback).
+>La fonction d&#39;écriture différée n&#39;est pas activée par défaut dans [!DNL Assets]. Voir comment [activer l’écriture différée des métadonnées](#enable-xmp-writeback). Les modules multimédias pour les ressources numériques ne fonctionnent pas si l’écriture différée des métadonnées est activée. Lors de l’écriture différée, l’héritage est interrompu.
 
 ### Activer l’écriture différée XMP {#enable-xmp-writeback}
 
