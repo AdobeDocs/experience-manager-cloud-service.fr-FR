@@ -1,14 +1,13 @@
 ---
 title: 'Création d’une page pour les appareils mobiles '
 description: Lors de la création pour les appareils mobiles, vous pouvez basculer entre plusieurs émulateurs pour voir ce que l’utilisateur final voit.
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: fabd4468-3304-402f-9522-342da3bbae94
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 98%
 
 ---
-
 
 # Création d’une page pour les appareils mobiles {#authoring-a-page-for-mobile-devices}
 
