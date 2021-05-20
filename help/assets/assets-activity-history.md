@@ -2,16 +2,15 @@
 title: Flux d’activité dans la chronologie
 description: Cet article décrit comment afficher les journaux d’activité pour les ressources de la chronologie.
 contentOwner: AG
-feature: Asset Reports,Asset Management
+feature: Rapports de ressources, Gestion des ressources
 role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 8dd82c31-f88e-4407-9b6d-c87033d7a823
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 96%
+source-wordcount: '213'
+ht-degree: 98%
 
 ---
-
 
 # Affichage des journaux d’opération de ressource dans le flux d’activité {#activity-stream-in-timeline}
 
