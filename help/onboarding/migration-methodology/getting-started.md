@@ -1,14 +1,13 @@
 ---
 title: Migration vers Experience Manager as a Cloud Service
 description: Migration vers Experience Manager as a Cloud Service
-translation-type: tm+mt
-source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
+exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2117'
 ht-degree: 99%
 
 ---
-
 
 # Migration vers Adobe Experience Manager as a Cloud Service {#Overview}
 
@@ -86,7 +85,7 @@ Consultez les ressources d’aide autonome sur la configuration et le déploieme
 
 1. [Conseils et astuces sur le débogage](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html?lang=fr#debugging-aem-as-a-cloud-service)
 2. [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=fr#debugging)
-3. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/crxde-lite.html?lang=fr#debugging)  (disponible uniquement sur les environnements de développement SDK locaux et Cloud Experience Manager)
+3. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/crxde-lite.html?lang=fr#debugging)  (disponible uniquement dans les environnements SDK locaux et de développement cloud Experience Manager)
 4. [Journaux et journalisation](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=en#debugging)
    * [Journaux CM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html?lang=fr#debugging) (test d’unité de construction, analyse de code, image de construction, déploiement)
    * [Journaux Experience Manager Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=en#debugging) (aemerror, aemaccess, aemrequest, aemdispatcher, httpderror, httpaccess)
@@ -186,7 +185,7 @@ Lors de la phase de post-activation, vous devez veiller à nettoyer les fichiers
 
 >[!TIP]
 > Des outils sont disponibles pour résoudre les problèmes liés aux environnements AEM as a Cloud Service
->1. [Console développeur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=fr#aem-as-a-cloud-service-development-tools)
+>1. [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=fr#aem-as-a-cloud-service-development-tools)
 >2. [CRX/DE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/crxde-lite.html?lang=en#debugging)
 >3. [Gestion des journaux](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html?lang=en#using-cloud-manager)
 
