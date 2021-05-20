@@ -1,7 +1,6 @@
 ---
 title: Phase post-migration
 description: Phase post-migration
-translation-type: tm+mt
 source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
 source-wordcount: '226'
