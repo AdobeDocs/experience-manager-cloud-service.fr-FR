@@ -1,14 +1,13 @@
 ---
 title: Notes de mise à jour de la version 2020.3.0
 description: Notes de mise à jour de la version 2020.3.0
-translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+exl-id: 0393c789-3999-4e51-be83-269d6eabd3f3
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 100%
 
 ---
-
 
 # Notes de mise à jour d’AEM as a Cloud Service 2020.3.0 {#release-notes}
 
@@ -36,4 +35,3 @@ Suivez cette section pour en savoir plus sur les nouveautés et les mises à jou
 * La création simultanée d’environnements de développement dans le même programme Cloud Service pouvait rencontrer une condition dans laquelle un seul environnement avait pu être créé.
 * Les notifications Experience Cloud pour les programmes Cloud Service n’ont pas été systématiquement reçues.
 * Dans le cas de projets spécifiques, la règle *Les objets ResourceResolver doivent toujours être fermés* entraînait une exception de pointeur nul ; cela n’avait toutefois pas d’incidence sur l’exécution du pipeline.
-
