@@ -1,54 +1,54 @@
 ---
-title: Mise à jour de votre contenu via les API AEM Assets
-description: Dans cette partie du Parcours de développement AEM sans fil, découvrez comment utiliser l’API REST pour accéder au contenu de vos fragments de contenu et le mettre à jour.
+title: Comment mettre à jour votre contenu via les API AEM Assets
+description: Dans cette partie du Parcours de développement AEM sans affichage, découvrez comment utiliser l’API REST pour accéder au contenu de vos fragments de contenu et le mettre à jour.
 hide: true
 hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
-source-git-commit: 7c30a7415cc424e7f417d92bad9eeb01877994d2
+source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 49%
+source-wordcount: '1103'
+ht-degree: 50%
 
 ---
 
-# Mise à jour de votre contenu via les API AEM Assets {#update-your-content}
+# Comment mettre à jour votre contenu via les API AEM Assets {#update-your-content}
 
 >[!CAUTION]
 >
->TRAVAUX EN COURS - La création de ce document est en cours et ne doit pas être comprise comme complète ou définitive ni être utilisée à des fins de production.
+>OUTDATED - Ce contenu de brouillon a été remplacé par la nouvelle [documentation du Parcours développeur sans affichage.](/help/journey-headless/developer/overview.md)
 
-Dans cette partie du [AEM Parcours de développement sans affichage,](overview.md) apprenez à utiliser l’API REST pour accéder au contenu de vos fragments de contenu et le mettre à jour.
+Dans cette partie du [Parcours de développement AEM sans affichage,](overview.md) apprenez à utiliser l’API REST pour accéder au contenu de vos fragments de contenu et le mettre à jour.
 
 ## L&#39;histoire jusqu&#39;à présent {#story-so-far}
 
-Dans le document précédent de l&#39;parcours sans tête AEM, [Comment accéder à votre contenu par l&#39;intermédiaire des API de Diffusion AEM](access-your-content.md) vous avez appris à accéder à votre contenu sans tête en AEM par l&#39;API GraphQL  et vous devez maintenant :
+Dans le document précédent du parcours sans interface utilisateur AEM, [Comment accéder à votre contenu via AEM API de diffusion](access-your-content.md) vous avez appris à accéder à votre contenu sans interface utilisateur via l’API GraphQL d’ et vous devez maintenant :
 
-* Avoir une bonne compréhension de GraphQL.
-* Découvrez comment fonctionne l’API AEM GraphQL.
-* Comprendre quelques exemples pratiques de requêtes.
+* Avoir une compréhension de haut niveau de GraphQL.
+* Découvrez le fonctionnement de l’API GraphQL AEM.
+* Comprenez quelques exemples pratiques de requêtes.
 
-Cet article s’appuie sur ces principes de base pour vous aider à comprendre comment mettre à jour votre contenu sans en-tête existant dans AEM via l’API REST.
+Cet article s’appuie sur ces principes de base afin que vous compreniez comment mettre à jour votre contenu headless existant dans AEM via l’API REST.
 
 ## Intention {#objective}
 
 * **Audience** : Avancé
 * **Objectif** : Découvrez comment utiliser l’API REST pour accéder au contenu de vos fragments de contenu et le mettre à jour :
    * Présentation de l’API HTTP AEM Assets.
-   * Présente et discute de la prise en charge du fragment de contenu dans l’API.
-   * Illustrer les détails de l’API.
+   * Présenter et discuter de la prise en charge des fragments de contenu dans l’API.
+   * Illustrez les détails de l’API.
 
 <!--
   * Look at sample code to see how things work in practice.
 -->
 
-## Pourquoi avez-vous besoin de l’API HTTP Ressources pour le fragment de contenu {#why-http-api}
+## Pourquoi avez-vous besoin de l’API HTTP Assets pour le fragment de contenu {#why-http-api}
 
-Lors de l’étape précédente du Parcours sans en-tête, vous avez appris à utiliser l’API AEM GraphQL pour récupérer votre contenu à l’aide de requêtes.
+À l’étape précédente du Parcours sans affichage, vous avez appris à utiliser l’API GraphQL AEM pour récupérer votre contenu à l’aide de requêtes.
 
 Alors pourquoi une autre API est-elle nécessaire ?
 
-L’API HTTP Assets vous permet de **lire** votre contenu, mais il vous permet également de **créer**, **mettre à jour** et **supprimer** le contenu - actions qui ne sont pas possibles avec l’API GraphQL.
+L’API HTTP Assets vous permet de **Lire** votre contenu, mais elle vous permet également de **Créer**, **Mettre à jour** et **Supprimer** le contenu - des actions qui ne sont pas possibles avec l’API GraphQL.
 
 L’API REST Assets est disponible pour chaque installation prête à l’emploi d’une version récente d’Adobe Experience Manager as a Cloud Service.
 
@@ -59,9 +59,9 @@ L’API HTTP Assets englobe :
 * l’API REST Assets,
 * y compris la prise en charge des fragments de contenu
 
-L’implémentation actuelle de l’API HTTP Assets repose sur le style architectural **REST** et vous permet d’accéder au contenu (stocké dans l’AEM) via les opérations **CRUD** (Créer, Lire, Mettre à jour, Supprimer).
+L’implémentation actuelle de l’API HTTP Assets repose sur le style architectural **REST** et permet d’accéder au contenu (stocké dans AEM) via les opérations **CRUD** (Créer, Lire, Mettre à jour, Supprimer).
 
-Grâce à ces opérations, l’API vous permet d’utiliser Adobe Experience Manager en tant que Cloud Service en tant que CMS (Gestion de contenu System) sans tête en fournissant Content Services à une application frontale JavaScript. Ou toute autre application pouvant exécuter des requêtes HTTP et gérer les réponses JSON. Par exemple, les applications à page unique (SPA), basées sur une structure ou personnalisées, nécessitent du contenu fourni via une API, souvent au format JSON.
+Grâce à ces opérations, l’API vous permet d’utiliser Adobe Experience Manager comme Cloud Service en tant que système de gestion de contenu (CMS) sans interface utilisateur en fournissant Content Services à une application frontale JavaScript. Ou toute autre application pouvant exécuter des requêtes HTTP et gérer les réponses JSON. Par exemple, les applications d’une seule page (SPA), basées sur une structure ou personnalisées, nécessitent du contenu fourni via une API, souvent au format JSON.
 
 <!--
 >[!NOTE]
@@ -187,7 +187,7 @@ Assets can have multiple renditions. These are typically exposed as child entiti
 
 ## API HTTP Assets et fragments de contenu {#assets-http-api-content-fragments}
 
-Les fragments de contenu sont utilisés pour la diffusion sans en-tête et un fragment de contenu est un type spécial de fichier. Ils sont utilisés pour accéder à des données structurées, telles que des textes, des chiffres, des dates, entre autres.
+Les fragments de contenu sont utilisés pour une diffusion sans interface utilisateur graphique. Un fragment de contenu est un type spécial de ressource. Ils sont utilisés pour accéder à des données structurées, telles que des textes, des nombres, des dates, etc.
 
 <!--
 As there are several differences to *standard* assets (such as images or audio), some additional rules apply to handling them.
@@ -216,7 +216,7 @@ Associated content is currently not exposed.
 
 ### Accès {#access}
 
-L’API REST Assets utilise le point de terminaison `/api/assets` et nécessite le chemin d’accès de la ressource pour y accéder (sans le point de terminaison `/content/dam` en haut).
+L’API REST Assets utilise le point de terminaison `/api/assets` et requiert le chemin d’accès de la ressource pour y accéder (sans le `/content/dam` au début).
 
 * Cela signifie que pour accéder à la ressource à l’adresse suivante :
    * `/content/dam/path/to/asset`
@@ -305,16 +305,16 @@ Mode d’utilisation :
 
 `DELETE /{cfParentPath}/{cfName}`
 
-Pour plus d’informations sur l’utilisation de l’API REST AEM Assets, vous pouvez vous reporter à :
+Pour plus d’informations sur l’utilisation de l’API REST AEM Assets, vous pouvez référencer :
 
-* API HTTP des ressources Adobe Experience Manager (ressources supplémentaires)
+* API HTTP Adobe Experience Manager Assets (ressources supplémentaires)
 * Prise en charge des fragments de contenu dans l’API HTTP AEM Assets (ressources supplémentaires)
 
-## Eléments suivants {#whats-next}
+## Suite {#whats-next}
 
-Maintenant que vous avez terminé cette partie du Parcours de développement AEM sans tête, vous devez :
+Maintenant que vous avez terminé cette partie du Parcours de développement AEM sans affichage, vous devez :
 
-* Découvrez les bases de l’API HTTP AEM Assets.
+* Comprendre les principes de base de l’API HTTP AEM Assets.
 * Découvrez comment les fragments de contenu sont pris en charge dans cette API.
 
 <!--
@@ -325,9 +325,9 @@ Maintenant que vous avez terminé cette partie du Parcours de développement AEM
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-Vous devriez continuer votre parcours AEM sans tête en passant en revue le document [Comment vivre avec votre application sans tête](go-live.md) où vous mettez en ligne votre projet AEM sans tête !
+Continuez votre parcours sans interface AEM en consultant le document [Comment passer en ligne avec votre application sans interface](go-live.md) dans lequel vous mettez en ligne votre projet AEM sans interface utilisateur.
 
-[La manière de créer des applications d’une seule page (SPA) avec ](create-spa.md) AEM vous montrera également comment créer des SPA modifiables à l’aide de la structure de l’éditeur de  d’AEM, ainsi que comment intégrer des  externes, en activant des fonctions de modification si nécessaire.
+[La procédure de création d’applications d’une seule page (SPA) avec ](create-spa.md) AEM vous explique également comment créer des SPA modifiables à l’aide de la structure de l’éditeur de  d’Adobe, ainsi que comment intégrer des  externes, en activant les fonctionnalités d’édition selon les besoins.
 
 ## Ressources supplémentaires {#additional-resources}
 
