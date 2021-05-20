@@ -1,18 +1,17 @@
 ---
 title: Outils de modernisation d’AEM
-description: 'Outils de modernisation d’AEM '
-translation-type: tm+mt
-source-git-commit: 20aba41de904cf765037ef70fc137773fc602bc0
+description: Outils de modernisation d’AEM
+exl-id: bc6efab1-cea0-4808-9bd4-495cd871bd75
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 77%
 
 ---
 
-
 # Outils de modernisation d’AEM {#aem-moderization-tools}
 
-Les outils de modernisation de l&#39;AEM offrent une suite d&#39;utilitaires qui peuvent être utilisés pour convertir les fonctions d&#39;AEM héritées en fonctionnalités modernes et prises en charge de l&#39; en tant que Cloud Service.
+Les outils de modernisation d’AEM fournissent une suite d’utilitaires qui peuvent être utilisés pour convertir les fonctionnalités d’AEM héritées en fonctionnalités modernes et prises en charge d’en tant que Cloud Service.
 
 
 ## Présentation {#introduction}
@@ -32,4 +31,3 @@ Pour en savoir plus sur la planification, la configuration et le développement 
 ## Installation et mise en œuvre de la suite d’outils de modernisation d’AEM{#installing-implementing}
 
 Pour en savoir plus sur l’installation et la mise en œuvre, voir **[Ressource Git : suite d’outils de modernisation d’AEM](https://github.com/adobe/aem-modernize-tools)**.
-
