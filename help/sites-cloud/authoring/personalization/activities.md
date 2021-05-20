@@ -1,14 +1,13 @@
 ---
 title: Gestion des activités
 description: 'La console Activités vous permet de créer, d’organiser et de gérer les activités marketing de vos marques :'
-translation-type: tm+mt
-source-git-commit: dba848cb8d7bc42f37fb64131150c136e07dd24e
+exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2002'
 ht-degree: 99%
 
 ---
-
 
 # Gestion des activités  {#managing-activities}
 
@@ -39,10 +38,12 @@ Les activités sont présentées avec un libellé décrivant le type d’activit
 >Les types d’activités disponibles sont déterminés par ce qui suit :
 >
 >* Si l’option `xt_only` est activée sur le client Adobe Target (clientcode) utilisé sur AEM pour se connecter à Adobe Target, vous pouvez créer **uniquement** des activités XT dans AEM.
+   >
+   >
+* Si les options `xt_only` **ne sont pas** activées sur le client Adobe Target (clientcode), vous pouvez créer **à la fois** des activités XT et A/B dans AEM.
 >
->* Si les options `xt_only` **ne sont pas** activées sur le client Adobe Target (clientcode), vous pouvez créer **à la fois** des activités XT et A/B dans AEM.
 >
->**Remarque :** L’option `xt_only` est un paramètre appliqué à un certain client Adobe Target (clientcode) et peut uniquement être modifiée directement dans Adobe Target. Vous ne pouvez pas activer ni désactiver cette option dans AEM.
+**Remarque :** L’option `xt_only` est un paramètre appliqué à un certain client Adobe Target (clientcode) et peut uniquement être modifiée directement dans Adobe Target. Vous ne pouvez pas activer ni désactiver cette option dans AEM.
 
 >[!CAUTION]
 >
@@ -128,7 +129,7 @@ Vous devez publier les activités afin de les rendre disponibles. À l’inverse
 
 >[!NOTE]
 >
->Lors de l’annulation de la publication d’une activité, l’état de l’activité ne change pas, sauf si vous actualisez la page.
+>Lors de l’annulation de la publication d’une activité, son état ne change pas, sauf si vous actualisez la page.
 
 Pour publier des activités ou annuler leur publication :
 
