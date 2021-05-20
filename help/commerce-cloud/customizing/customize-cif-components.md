@@ -11,14 +11,12 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-translation-type: tm+mt
-source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
+source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 98%
 
 ---
-
 
 # Personnalisation des composants principaux AEM CIF {#customize-cif-components}
 
@@ -34,7 +32,7 @@ La marque Venia a récemment commencé à fabriquer des produits à l’aide de 
 
 ![Mise en œuvre finale du badge Écologique](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Un environnement de développement local est nécessaire pour suivre ce tutoriel. Cela inclut une instance AEM en cours d’exécution configurée et connectée à une instance Magento. Examinez les exigences et les étapes de la [configuration d’un développement local avec le SDK AEM as a Cloud Service](../develop.md). Pour suivre entièrement le tutoriel, vous avez besoin d’autorisations de façon à ajouter des [attributs à un produit](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) dans Magento.
 
@@ -91,7 +89,7 @@ Le composant Teaser de produit va être étendu tout au long de ce tutoriel. Dan
 
    ![Teaser de produit – style par défaut](../assets/customize-cif-components/product-teaser-default-style.png)
 
-## Ajouter un attribut personnalisé dans le Magento {#add-custom-attribute}
+## Ajout d’un attribut personnalisé dans le Magento {#add-custom-attribute}
 
 Les produits et les données de produit affichés dans AEM sont stockés dans Magento. Ajoutez ensuite un nouvel attribut pour **Écologique** dans le cadre de l’attribut de produit défini avec l’interface utilisateur de Magento.
 
@@ -137,7 +135,7 @@ Les produits et les données de produit affichés dans AEM sont stockés dans Ma
    >
    > Pour plus d’informations sur la [gestion du cache, consultez le guide de l’utilisateur de Magento](https://docs.magento.com/user-guide/system/cache-management.html).
 
-## Utiliser un IDE GraphQL pour vérifier l&#39;attribut {#use-graphql-ide}
+## Utilisation d’un IDE GraphQL pour vérifier l’attribut {#use-graphql-ide}
 
 Avant de passer au code AEM, il est utile d’explorer le point d’entrée [Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) à l’aide d’un IDE GraphQL. L’intégration de Magento avec AEM s’effectue principalement par le biais d’une série de requêtes GraphQL. Comprendre et modifier les requêtes GraphQL est l’un des principaux moyens d’étendre les composants principaux CIF.
 
@@ -332,7 +330,7 @@ Utilisez l’[IDE de votre choix](https://docs.adobe.com/content/help/fr-FR/expe
 
    Maintenant que le modèle Sling a été mis à jour, le balisage de composant doit être mis à jour pour afficher un indicateur **Écologique** basé sur le modèle Sling.
 
-## Personnalisation du balisage du produit Teaser {#customize-markup-product-teaser}
+## Personnalisation du balisage du teaser de produit {#customize-markup-product-teaser}
 
 Une extension courante des composants AEM consiste à modifier le balisage généré par le composant. Il faut pour cela remplacer le [script HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html) utilisé par le composant afin d’effectuer le rendu de son balisage. HTL (HTML Template Language) est un langage de modèle léger que les composants AEM utilisent pour générer dynamiquement des balises en fonction du contenu créé, ce qui permet de réutiliser les composants. Le teaser de produit, par exemple, peut être réutilisé plusieurs fois pour afficher différents produits.
 
@@ -432,7 +430,7 @@ Dans notre cas, nous voulons générer une bannière au-dessus du teaser pour in
    >
    > Vous pouvez également voir des arborescences des appels si l’attribut `eco_friendly` ne fait pas partie du jeu d’attributs du produit utilisé dans le teaser.
 
-## Styles d&#39;Ajoute pour le badge écologique {#add-styles}
+## Ajouter des styles pour le badge Écologique {#add-styles}
 
 À ce stade, la logique indiquant à quel moment afficher le badge **Écologique** fonctionne, mais le texte brut pourrait profiter de certains styles. Ajoutez ensuite une icône et des styles au module `ui.frontend` pour terminer l’implémentation.
 
