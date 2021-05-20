@@ -1,14 +1,13 @@
 ---
 title: Fragments d’expérience
 description: Extension des fragments d’expérience Adobe Experience Manager as a Cloud Service.
-translation-type: tm+mt
-source-git-commit: 625e56efdab2f41026988fb90b72c31ff876db57
+exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1660'
 ht-degree: 97%
 
 ---
-
 
 # Fragments d’expérience{#experience-fragments}
 
@@ -97,7 +96,7 @@ Pour créer un modèle de fragment d’expérience détecté par l’assistant *
    1. Et le nom du modèle doit commencer par :
       `experience-fragments`
 Cela permet aux utilisateurs de créer des fragments d’expérience dans /content/experience-fragments en tant que 
-`cq:allowedTemplates` de ce dossier contient tous les modèles dont le nom commence par  `experience-fragment`. Les clients peuvent mettre à jour cette propriété afin d’inclure leur propre schéma d’affectation de noms ou emplacement de modèle.
+`cq:allowedTemplates` de ce dossier comprend tous les modèles dont le nom commence par  `experience-fragment`. Les clients peuvent mettre à jour cette propriété afin d’inclure leur propre schéma d’affectation de noms ou emplacement de modèle.
 
 1. Les [modèles autorisés](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) peuvent être configurés dans la console des fragments d’expérience.
 
@@ -291,7 +290,7 @@ En entrée, la méthode reçoit les paramètres suivants :
 
 * `link`
 Les 
-`String` représentation du lien en cours de traitement. Il s’agit généralement d’une URL relative pointant vers la ressource sur l’instance de création.
+`String` Représentation du lien en cours de traitement. Il s’agit généralement d’une URL relative pointant vers la ressource sur l’instance de création.
 
 * `tag`
 Nom de l’élément HTML en cours de traitement.
