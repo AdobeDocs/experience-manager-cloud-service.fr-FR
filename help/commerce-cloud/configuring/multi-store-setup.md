@@ -1,5 +1,5 @@
 ---
-title: Configuration de plusieurs magasins commerciaux
+title: Configuration multi-magasin Commerce
 description: Découvrez comment faire correspondre plusieurs vues de stockage de Magento vers AEM. Cela permet aux projets de prendre en charge des cas d’utilisation à plusieurs clients et multilingues.
 sub-product: Commerce
 version: cloud-service
@@ -9,16 +9,15 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
-exl-id: 7f6e04a2-89e9-4613-8ea8-9dac1acea30b
-translation-type: tm+mt
-source-git-commit: 577e5cb9d465c794f29e1b7ed11d26a954e1c072
+exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
+source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 90%
 
 ---
 
-# Configuration de plusieurs magasins commerciaux {#multi-store}
+# Configuration multi-magasin de commerce {#multi-store}
 
 Les composants principaux AEM CIF peuvent être utilisés sur plusieurs structures de site AEM et la mise en œuvre du client GraphQL sous-jacent peut se connecter à différents magasins/vues de magasin Magento. Cela permet aux projets de mettre en œuvre des configurations multi-magasin/multi-site complexes.
 
@@ -48,7 +47,7 @@ Pour connecter un site AEM et les composants principaux AEM CIF à une vue de ma
 
    >[!TIP]
    >
-   > Les catalogues commerciaux peuvent être traités à l’aide d’ID ou d’UID. Les UID ont été introduits dans le Magento 2.4.2. Activez cette option uniquement si votre serveur principal de commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
+   > Les catalogues de commerce peuvent être traités à l’aide d’identifiants ou d’UID. Les UID ont été introduits dans Magento 2.4.2. Activez cette option uniquement si votre serveur principal Commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
 
 4. Affectez la configuration enfant à un site AEM
 
