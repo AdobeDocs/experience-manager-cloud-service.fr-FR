@@ -5,7 +5,6 @@ breadcrumb-title: Guide d’intégration
 user-guide-description: Ce guide résume la procédure à suivre pour commencer à utiliser Experience Manager as a Cloud Service, avec les informations d’accès et des informations importantes sur la protection des données.
 feature: Déploiement
 role: Architect, Developer
-translation-type: tm+mt
 source-git-commit: 54c68264dfc900604bbddace09bb8986b4fa4010
 workflow-type: tm+mt
 source-wordcount: '677'
@@ -17,23 +16,23 @@ ht-degree: 92%
 # Intégration {#onboarding}
 
 + [Intégration à AEM as a Cloud Service](/help/onboarding/home.md)
-+ Prise en main de AEM en tant que Cloud Service {#what-is-required}
-   + [Obtenez votre Adobe ID](what-is-required/get-your-adobe-id.md)
++ Prise en main d’AEM en tant que Cloud Service {#what-is-required}
+   + [Obtention de votre Adobe ID](what-is-required/get-your-adobe-id.md)
    + [Rôles de Cloud Manager](what-is-required/user-roles-permissions.md)
-   + [Tâches de l&#39;administrateur système](what-is-required/add-users-assign-cm-roles.md)
+   + [Tâches de l’administrateur système](what-is-required/add-users-assign-cm-roles.md)
    + [Accéder à Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
    + [Octroi de l’accès utilisateur à une instance AEM](/help/onboarding/what-is-required/accessing-aem-instance.md)
 + Programmes Cloud Manager {#getting-access}
    + [Présentation des programmes et des types de programmes](getting-access-to-aem-in-cloud/understand-program-types.md)
    + Programmes de production {#production-programs}
       + [Présentation](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)
-      + [Création d’un Programme de production](getting-access-to-aem-in-cloud/creating-production-program.md)
-      + [Modification d’un Programme de production](/help/onboarding/getting-access-to-aem-in-cloud/editing-production-program.md)
+      + [Création d’un programme de production](getting-access-to-aem-in-cloud/creating-production-program.md)
+      + [Modification d’un programme de production](/help/onboarding/getting-access-to-aem-in-cloud/editing-production-program.md)
    + Programmes Sandbox {#sandbox-programs}
       + [Présentation](getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
       + [Création d’un programme Sandbox](getting-access-to-aem-in-cloud/creating-sandbox-program.md)
-      + [Modification d&#39;un Programme de sandbox](/help/onboarding/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
-      + [Suppression d&#39;un Programme Sandbox](getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
+      + [Modification d’un programme Sandbox](/help/onboarding/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
+      + [Suppression d’un programme Sandbox](getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
       + [Mise en veille et réactivation d’environnements Sandbox](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
    + Utilisation de Cloud Manager {#using-cloud-manager}
       + [Gestion des environnements](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=fr)
