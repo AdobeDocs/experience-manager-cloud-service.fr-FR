@@ -1,14 +1,13 @@
 ---
 title: Notes de mise à jour d’Adobe Experience Manager as a Cloud Service version 2020.5.0
 description: Notes de mise à jour d’Experience Manager version 2020.5.0
-translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+exl-id: 8570d2c3-6d55-4914-94b2-f5d162e0c285
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 100%
 
 ---
-
 
 # Notes de mise à jour d’AEM as a Cloud Service 2020.5.0 {#release-notes}
 
@@ -49,5 +48,3 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 * La boîte de dialogue Créer l’environnement ne s’affichait pas correctement dans Safari.
 * Certaines cartes de la page d’aperçu n’affichaient pas correctement les noms des entités.
 * Dans certains cas, la création d’image ne parvenait pas à télécharger les modules client.
-
-
