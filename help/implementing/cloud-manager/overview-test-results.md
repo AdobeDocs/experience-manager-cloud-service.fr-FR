@@ -1,14 +1,13 @@
 ---
 title: Aperçu des résultats des tests – Cloud Services
 description: Aperçu des résultats des tests – Cloud Services
-translation-type: tm+mt
-source-git-commit: d03ef0afe91760e35ef4e8fb3e3f2c833cbf945c
+exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 100%
 
 ---
-
 
 # Présentation {#overview}
 
@@ -36,4 +35,3 @@ Ces tests peuvent être :
 
    >[!NOTE]
    > Les tests écrits par le client et les tests écrits par Adobe sont exécutés dans une infrastructure en conteneur conçue à cet effet.
-
