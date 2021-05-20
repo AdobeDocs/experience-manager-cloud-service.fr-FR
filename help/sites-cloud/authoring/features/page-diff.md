@@ -1,14 +1,13 @@
 ---
 title: Outil de comparaison des pages
 description: De fait, l’outil de comparaison des pages permet d’afficher côte à côte deux pages pour les comparer en mettant en évidence leurs différences.
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 100%
 
 ---
-
 
 # Outil de comparaison des pages {#page-diff}
 
@@ -24,7 +23,7 @@ De fait, l’outil de comparaison des pages permet d’afficher côte à côte d
 >
 >Consultez la section consacrée à l’[outil de comparaison des pages](/help/implementing/developing/introduction/page-diff.md#operation-details) pour plus d’informations sur cette fonction.
 
-## Utilisation {#use}
+## Utilisez {#use}
 
 L’outil de comparaison côte à côte permet de comparer les éléments suivants :
 
