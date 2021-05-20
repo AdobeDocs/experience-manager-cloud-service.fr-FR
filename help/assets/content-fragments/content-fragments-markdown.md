@@ -1,20 +1,19 @@
 ---
 title: Texte (Markdown)
-description: Découvrez comment l’éditeur de fragments de contenu utilise la syntaxe de balisage pour vous permettre de créer facilement du contenu sans en-tête.
-feature: Content Fragments
+description: Découvrez comment l’éditeur de fragment de contenu utilise la syntaxe Markdown pour vous permettre de créer facilement du contenu sans affichage.
+feature: Fragments de contenu
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '522'
 ht-degree: 93%
 
 ---
 
-
 # Texte (Markdown) {#markdown}
 
-Lorsque vous créez [](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l’éditeur de fragments de contenu utilise la syntaxe *markdown* pour vous permettre d’écrire facilement du contenu sans en-tête :
+Lorsque vous êtes [auteur](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l’éditeur de fragment de contenu utilise la syntaxe *markdown* pour vous permettre d’écrire facilement du contenu sans en-tête :
 
 ![Éditeur de balisage](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
