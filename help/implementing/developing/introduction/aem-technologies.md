@@ -1,14 +1,13 @@
 ---
 title: Fondements techniques d’AEM
 description: Présentation des fondements techniques d’AEM, y compris la manière dont AEM est structuré et les technologies fondamentales comme JCR, Sling et OSGi.
-translation-type: tm+mt
-source-git-commit: 750fded1564de2b11f6c104cc70befc4453405b4
+exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2187'
 ht-degree: 100%
 
 ---
-
 
 # Fondements techniques d’AEM {#aem-technical-foundations}
 
