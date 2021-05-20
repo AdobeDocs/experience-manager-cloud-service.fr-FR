@@ -2,18 +2,17 @@
 title: Références du développeur pour  [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
-feature: APIs,Assets HTTP API
+feature: API,API HTTP Assets
 role: Developer,Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 70068609e51f96c010204b8915593a52f610aded
+exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1394'
 ht-degree: 92%
 
 ---
 
-
-# [!DNL Adobe Experience Manager Assets] cas d’utilisation des développeurs, API et matériel de référence  {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] Cas d’utilisation pour les développeurs, API et documents de référence  {#assets-cloud-service-apis}
 
 L’article contient des recommandations, des documents de référence et des ressources pour les développeurs de [!DNL Assets] as a [!DNL Cloud Service]. Il comprend un nouveau module de chargement de ressources, des références d’API et des informations sur la prise en charge fournie dans les workflows de post-traitement.
 
@@ -23,7 +22,7 @@ L’article contient des recommandations, des documents de référence et des re
 
 >[!CAUTION]
 >
->Certaines API existent toujours, mais ne sont pas activement prises en charge (signalées par un ×). Dans la mesure du possible, n’utilisez pas ces API.
+>Certaines API existent toujours mais ne sont pas activement prises en charge (signalées par un ×). Dans la mesure du possible, n’utilisez pas ces API.
 
 | Niveau de prise en charge | Description |
 | ------------- | --------------------------- |
@@ -34,40 +33,40 @@ L’article contient des recommandations, des documents de référence et des re
 | Cas d’utilisation | [aem-upload](https://github.com/adobe/aem-upload) | [AEM / Sling / JCR](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) API Java | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=fr) | API HTTP [[!DNL Assets]  ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=fr#create-an-asset) | Servlets Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr) _(Prévisualisation)_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Binaire original** |  |  |  |  |  |  |
-| Créer l’original | obj | × | - | × | × | - |
-| Lire l’original | - | × | obj | obj | obj | - |
-| Mettre à jour l’original | obj | × | obj | × | × | - |
-| Supprimer l’original | - | obj | - | obj | obj | - |
-| Copier l’original | - | obj | - | obj | obj | - |
-| Déplacer l’original | - | obj | - | obj | obj | - |
+| Créer l’original | ✓ | × | - | × | × | - |
+| Lire l’original | - | × | ✓ | ✓ | ✓ | - |
+| Mettre à jour l’original | ✓ | × | ✓ | × | × | - |
+| Supprimer l’original | - | ✓ | - | ✓ | ✓ | - |
+| Copier l’original | - | ✓ | - | ✓ | ✓ | - |
+| Déplacer l’original | - | ✓ | - | ✓ | ✓ | - |
 | **Métadonnées** |  |  |  |  |  |  |
-| Créer des métadonnées | - | obj | obj | obj | obj | - |
-| Lire les métadonnées | - | obj | - | obj | obj | - |
-| Mettre à jour les métadonnées | - | obj | obj | obj | obj | - |
-| Supprimer les métadonnées | - | obj | obj | obj | obj | - |
-| Copier les métadonnées | - | obj | - | obj | obj | - |
-| Déplacer les métadonnées | - | obj | - | obj | obj | - |
+| Créer des métadonnées | - | ✓ | ✓ | ✓ | ✓ | - |
+| Lire les métadonnées | - | ✓ | - | ✓ | ✓ | - |
+| Mettre à jour les métadonnées | - | ✓ | ✓ | ✓ | ✓ | - |
+| Supprimer les métadonnées | - | ✓ | ✓ | ✓ | ✓ | - |
+| Copier les métadonnées | - | ✓ | - | ✓ | ✓ | - |
+| Déplacer les métadonnées | - | ✓ | - | ✓ | ✓ | - |
 | **Fragments de contenu (CF)** |  |  |  |  |  |  |
-| Créer un CF | - | obj | - | obj | - | - |
-| Lire un CF | - | obj | - | obj | - | obj |
-| Mettre à jour un CF | - | obj | - | obj | - | - |
-| Supprimer un CF | - | obj | - | obj | - | - |
-| Copier un CF | - | obj | - | obj | - | - |
-| Déplacer un CF | - | obj | - | obj | - | - |
+| Créer un CF | - | ✓ | - | ✓ | - | - |
+| Lire un CF | - | ✓ | - | ✓ | - | ✓ |
+| Mettre à jour un CF | - | ✓ | - | ✓ | - | - |
+| Supprimer un CF | - | ✓ | - | ✓ | - | - |
+| Copier un CF | - | ✓ | - | ✓ | - | - |
+| Déplacer un CF | - | ✓ | - | ✓ | - | - |
 | **Versions** |  |  |  |  |  |  |
-| Créer une version | obj | obj | - | - | - | - |
-| Lire une version | - | obj | - | - | - | - |
-| Supprimer une version | - | obj | - | - | - | - |
+| Créer une version | ✓ | ✓ | - | - | - | - |
+| Lire une version | - | ✓ | - | - | - | - |
+| Supprimer une version | - | ✓ | - | - | - | - |
 | **Dossiers** |  |  |  |  |  |  |
-| Créer un dossier | obj | obj | - | obj | - | - |
-| Lire un dossier | - | obj | - | obj | - | - |
-| Supprimer un dossier | obj | obj | - | obj | - | - |
-| Copier un dossier | obj | obj | - | obj | - | - |
-| Déplacer un dossier | obj | obj | - | obj | - | - |
+| Créer un dossier | ✓ | ✓ | - | ✓ | - | - |
+| Lire un dossier | - | ✓ | - | ✓ | - | - |
+| Supprimer un dossier | ✓ | ✓ | - | ✓ | - | - |
+| Copier un dossier | ✓ | ✓ | - | ✓ | - | - |
+| Déplacer un dossier | ✓ | ✓ | - | ✓ | - | - |
 
 ## Chargement de ressources {#asset-upload-technical}
 
-Dans [!DNL Experience Manager] en tant que [!DNL Cloud Service], vous pouvez directement télécharger les ressources vers l’enregistrement cloud à l’aide de l’API HTTP. Pour charger un fichier binaire, procédez comme suit :
+Dans [!DNL Experience Manager] sous la forme [!DNL Cloud Service], vous pouvez charger directement les ressources dans l’espace de stockage cloud à l’aide de l’API HTTP. Pour charger un fichier binaire, procédez comme suit :
 
 1. [Envoyez une requête HTTP](#initiate-upload). Cela permet d’informer le déploiement [!DNL Experience Manage] de votre intention de charger un nouveau fichier binaire.
 1. [Publiez le contenu du fichier binaire](#upload-binary) sur un ou plusieurs URI fournis par la requête de lancement.
@@ -118,8 +117,8 @@ Une seule requête peut être utilisée afin de lancer des chargements pour plus
 * `mimeType` (chaîne) : type MIME du fichier binaire correspondant, tel qu’il est fourni dans la requête de lancement. Cette valeur doit être incluse dans la requête de fin.
 * `uploadToken` (chaîne) : jeton de chargement du fichier binaire correspondant. Cette valeur doit être incluse dans la requête de fin.
 * `uploadURIs` (tableau) : liste des chaînes dont les valeurs sont des URI complets vers lesquels le contenu du fichier binaire doit être chargé (voir [Chargement d’un fichier binaire](#upload-binary)).
-* `minPartSize` (nombre) : Longueur minimale, en octets, des données pouvant être fournies à l’un des  `uploadURIs`URI s’il existe plusieurs URI.
-* `maxPartSize` (nombre) : Longueur maximale, en octets, des données pouvant être fournies à l’un des  `uploadURIs`URI s’il existe plusieurs URI.
+* `minPartSize` (nombre) : Longueur minimale, en octets, des données pouvant être fournies à l’un des  `uploadURIs`, s’il existe plusieurs URI.
+* `maxPartSize` (nombre) : Longueur maximale, en octets, des données pouvant être fournies à l’un des  `uploadURIs`, s’il existe plusieurs URI.
 
 ### Chargement d’un fichier binaire {#upload-binary}
 
