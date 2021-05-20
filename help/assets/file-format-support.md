@@ -2,10 +2,9 @@
 title: Formats de fichiers et types MIME pris en charge
 description: Formats de fichier et types MIME pris en charge par [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
 contentOwner: AG
-feature: Asset Management,Renditions
+feature: Gestion des ressources,Rendus
 role: Business Practitioner,Administrator
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-translation-type: tm+mt
 source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
 source-wordcount: '821'
@@ -39,17 +38,17 @@ Le tableau suivant décrit le niveau de prise en charge pour chaque format.
 
 | Format de fichier | Génération de miniatures | Extraction de texte intégral | Extraction de métadonnées | Largeur/Hauteur |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
-| AI | obj | - | obj | obj |
-| COLLAGE | - | - | obj | - |
-| DN | obj | - | obj | obj |
-| IDEAS | - | - | obj | - |
-| INDD | obj | - | obj | ✓ * |
-| INDT | - | - | obj | - |
-| PDF | obj | obj | obj | obj |
-| PROTO | - | - | obj | - |
-| PSB | obj | - | obj | obj |
-| PSD | obj | - | obj | obj |
-| XD | obj | - | obj | obj |
+| AI | ✓ | - | ✓ | ✓ |
+| COLLAGE | - | - | ✓ | - |
+| DN | ✓ | - | ✓ | ✓ |
+| IDEAS | - | - | ✓ | - |
+| INDD | ✓ | - | ✓ | ✓ * |
+| INDT | - | - | ✓ | - |
+| PDF | ✓ | ✓ | ✓ | ✓ |
+| PROTO | - | - | ✓ | - |
+| PSB | ✓ | - | ✓ | ✓ |
+| PSD | ✓ | - | ✓ | ✓ |
+| XD | ✓ | - | ✓ | ✓ |
 
 \* Pour les fichiers [!DNL Adobe InDesign] (INDD), la taille du rendu est déterminée par l’aperçu incorporé dans le fichier. Configurez les préférences dans [!DNL InDesign] (**[!UICONTROL Préférences > Gestion des fichiers > Toujours enregistrer les images d’aperçu avec les documents, Taille d’aperçu]**) pour incorporer un rendu plus grand.
 
@@ -57,29 +56,29 @@ Le tableau suivant décrit le niveau de prise en charge pour chaque format.
 
 | Format de fichier | Génération de miniatures | Extraction de métadonnées | Largeur/Hauteur | Recadrer |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
-| BMP | obj | - | obj | obj |
-| EPS | - | obj | - | - |
-| GIF | obj | obj | obj | obj |
-| JPEG | obj | obj | obj | obj |
-| PNG | obj | obj | obj | obj |
-| RVB | obj | obj | obj | obj |
-| RGBA | obj | obj | obj | obj |
-| SGI | obj | obj | obj | obj |
-| SVG | obj | - | obj | obj |
-| TIFF | obj | obj | obj | - |
+| BMP | ✓ | - | ✓ | ✓ |
+| EPS | - | ✓ | - | - |
+| GIF | ✓ | ✓ | ✓ | ✓ |
+| JPEG | ✓ | ✓ | ✓ | ✓ |
+| PNG | ✓ | ✓ | ✓ | ✓ |
+| RVB | ✓ | ✓ | ✓ | ✓ |
+| RGBA | ✓ | ✓ | ✓ | ✓ |
+| SGI | ✓ | ✓ | ✓ | ✓ |
+| SVG | ✓ | - | ✓ | ✓ |
+| TIFF | ✓ | ✓ | ✓ | - |
 
 ## Formats des images dans [!DNL Dynamic Media] {#image-support-dynamic-media}
 
 | Format | Transférer (format d’entrée) | Créer un paramètre d’image prédéfini (format de sortie) | Prévisualiser un rendu dynamique | Diffuser un rendu dynamique | Télécharger un rendu dynamique |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| BMP | obj | - | - | - | - |
-| EPS | obj | obj | obj | obj | obj |
-| GIF | obj | obj | obj | obj | obj |
-| JPEG | obj | obj | obj | obj | obj |
-| PICT | obj | - | - | - | - |
-| PNG | obj | obj | obj | obj | obj |
-| PSD   ‡ | obj | - | - | - | - |
-| TIFF | obj | obj | obj | obj | obj |
+| BMP | ✓ | - | - | - | - |
+| EPS | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PICT | ✓ | - | - | - | - |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PSD   ‡ | ✓ | - | - | - | - |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 ‡ L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par [!DNL Adobe Photoshop] et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
 
@@ -100,44 +99,44 @@ Voir [Utilisation de ressources 3D dans Dynamic Media](/help/assets/dynamic-med
 
 | Format | Stockage | Contrôle de version | Workflow | Publication | Contrôle d’accès | Aperçu de miniature | Aperçu 3D | Diffusion Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | obj | obj | obj | - | obj | obj | - | - |
-| gLB | obj | obj | obj | obj | obj | - | obj | obj |
-| gLTF | obj | obj | obj | - | obj | - | obj | - |
-| OBJ | obj | obj | obj | obj | obj | - | obj | obj |
-| STL | obj | obj | obj | obj | obj | - | obj | obj |
-| USDz | obj | obj | obj | obj | obj | - | - | obj |
+| DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ | - | ✓ | - | ✓ | - |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
 
 ## Formats [!DNL Camera RAW] {#camera-raw-formats}
 
 | Format de fichier | Génération de miniatures | Extraction de métadonnées | Largeur/Hauteur |
 | ----------- | -------------------- | ------------------- | ------------ |
-| 3FR | obj | obj | obj |
-| ARW | obj | obj | obj |
-| CR2 | obj | obj | obj |
-| CR3 | obj | obj | obj |
-| CRW | obj | obj | obj |
-| DCR | obj | obj | obj |
-| DNG | obj | obj | obj |
-| ERF | obj | obj | obj |
-| FFF | obj | obj | obj |
-| GPR | obj | obj | obj |
-| IIQ | obj | obj | obj |
-| KDC | obj | obj | obj |
-| MEF | obj | obj | obj |
-| MFW | obj | obj | obj |
-| MOS | obj | obj | obj |
-| MRW | obj | obj | obj |
-| NEF | obj | obj | obj |
-| NRW | obj | obj | obj |
-| ORF | obj | obj | obj |
-| PEF | obj | obj | obj |
-| RAF | obj | obj | obj |
-| RAW | obj | obj | obj |
-| RW2 | obj | obj | obj |
-| RWL | obj | obj | obj |
-| SRF | obj | obj | obj |
-| SRW | obj | obj | obj |
-| X3F | obj | obj | obj |
+| 3FR | ✓ | ✓ | ✓ |
+| ARW | ✓ | ✓ | ✓ |
+| CR2 | ✓ | ✓ | ✓ |
+| CR3 | ✓ | ✓ | ✓ |
+| CRW | ✓ | ✓ | ✓ |
+| DCR | ✓ | ✓ | ✓ |
+| DNG | ✓ | ✓ | ✓ |
+| ERF | ✓ | ✓ | ✓ |
+| FFF | ✓ | ✓ | ✓ |
+| GPR | ✓ | ✓ | ✓ |
+| IIQ | ✓ | ✓ | ✓ |
+| KDC | ✓ | ✓ | ✓ |
+| MEF | ✓ | ✓ | ✓ |
+| MFW | ✓ | ✓ | ✓ |
+| MOS | ✓ | ✓ | ✓ |
+| MRW | ✓ | ✓ | ✓ |
+| NEF | ✓ | ✓ | ✓ |
+| NRW | ✓ | ✓ | ✓ |
+| ORF | ✓ | ✓ | ✓ |
+| PEF | ✓ | ✓ | ✓ |
+| RAF | ✓ | ✓ | ✓ |
+| RAW | ✓ | ✓ | ✓ |
+| RW2 | ✓ | ✓ | ✓ |
+| RWL | ✓ | ✓ | ✓ |
+| SRF | ✓ | ✓ | ✓ |
+| SRW | ✓ | ✓ | ✓ |
+| X3F | ✓ | ✓ | ✓ |
 
 ## Formats de document {#document-formats}
 
@@ -145,61 +144,61 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 
 | Format de fichier | Génération de miniatures | Extraction de texte intégral | Largeur/Hauteur | Gestion des métadonnées | [Ressources connectées](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
-| DOC | - | - | - | obj | obj |
-| DOCX | obj | obj | obj | obj | obj |
-| EPUB | - | obj | - | - | - |
-| HTML | - | obj | - | obj | obj |
-| ODF | obj | obj | obj | - | - |
-| ODM | obj | obj | obj | - | - |
-| ODP | obj | obj | obj | - | - |
-| ODS | obj | obj | obj | - | - |
-| ODT | obj | obj | obj | obj | obj |
-| OFG | obj | obj | obj | - | - |
-| PDF | obj | obj | obj | obj | obj |
-| PPT | - | - | - | obj | obj |
-| PPTX | obj | obj | obj | obj | obj |
-| PS | - | - | obj | - | - |
-| RTF | - | obj | - | obj | obj |
-| TXT | - | obj | - | obj | obj |
-| XLS | - | - | - | obj | obj |
-| XLSX | obj | obj | obj | obj | obj |
-| XML | - | obj | - | - | - |
+| DOC | - | - | - | ✓ | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
+| EPUB | - | ✓ | - | - | - |
+| HTML | - | ✓ | - | ✓ | ✓ |
+| ODF | ✓ | ✓ | ✓ | - | - |
+| ODM | ✓ | ✓ | ✓ | - | - |
+| ODP | ✓ | ✓ | ✓ | - | - |
+| ODS | ✓ | ✓ | ✓ | - | - |
+| ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
+| OFG | ✓ | ✓ | ✓ | - | - |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PPT | - | - | - | ✓ | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PS | - | - | ✓ | - | - |
+| RTF | - | ✓ | - | ✓ | ✓ |
+| TXT | - | ✓ | - | ✓ | ✓ |
+| XLS | - | - | - | ✓ | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
+| XML | - | ✓ | - | - | - |
 
 ## Formats de document dans [!DNL Dynamic Media] {#document-support-dynamic-media}
 
 | Format | Transférer (format d’entrée) | Créer un paramètre d’image prédéfini (format de sortie) | Prévisualiser un rendu dynamique | Diffuser un rendu dynamique | Télécharger un rendu dynamique |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| AI | obj | - | - | - | - |
-| INDD | obj | - | - | - | - |
-| PDF | obj | obj | obj | obj | obj |
+| AI | ✓ | - | - | - | - |
+| INDD | ✓ | - | - | - | - |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 ## Formats vidéo {#video-formats}
 
 | Format de fichier | Génération de miniatures | Extraction de métadonnées | Largeur/Hauteur |
 | ----------- | -------------------- | ------------------- | ------------ |
-| 3G2 | - | obj | - |
-| 3GP | - | obj | - |
-| AVI | obj | obj | obj |
-| DIVX | obj | - | obj |
-| F4V | obj | obj | obj |
-| FLV | obj | obj | obj |
-| M2T | obj | - | obj |
-| M2TS | obj | - | obj |
-| M2V | obj | - | obj |
-| M4V | obj | obj | obj |
-| MKV | obj | - | obj |
-| MOV | obj | obj | obj |
-| MP4 | obj | obj | obj |
-| MPEG | obj | obj | obj |
-| MPG | obj | obj | obj |
-| MTS | obj | - | obj |
-| MXF | obj | - | obj |
-| OGV | obj | - | obj |
-| QT | obj | - | obj |
-| R3D | - | obj | obj |
-| SWF | obj | - | obj |
-| WebM | obj | - | obj |
-| WMV | obj | obj | obj |
+| 3G2 | - | ✓ | - |
+| 3GP | - | ✓ | - |
+| AVI | ✓ | ✓ | ✓ |
+| DIVX | ✓ | - | ✓ |
+| F4V | ✓ | ✓ | ✓ |
+| FLV | ✓ | ✓ | ✓ |
+| M2T | ✓ | - | ✓ |
+| M2TS | ✓ | - | ✓ |
+| M2V | ✓ | - | ✓ |
+| M4V | ✓ | ✓ | ✓ |
+| MKV | ✓ | - | ✓ |
+| MOV | ✓ | ✓ | ✓ |
+| MP4 | ✓ | ✓ | ✓ |
+| MPEG | ✓ | ✓ | ✓ |
+| MPG | ✓ | ✓ | ✓ |
+| MTS | ✓ | - | ✓ |
+| MXF | ✓ | - | ✓ |
+| OGV | ✓ | - | ✓ |
+| QT | ✓ | - | ✓ |
+| R3D | - | ✓ | ✓ |
+| SWF | ✓ | - | ✓ |
+| WebM | ✓ | - | ✓ |
+| WMV | ✓ | ✓ | ✓ |
 
 ## Formats vidéo dans [!DNL Dynamic Media] pour le transcodage {#video-dynamic-media-transcoding}
 
@@ -233,5 +232,5 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 >[!MORELIKETHIS]
 >
 >* [Traitement des ressources à l’aide des microservices de ressources](asset-microservices-overview.md)
->* [Formats de fichiers pris en hcarge pour le balisage intelligent des ressources textuelles](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+* [Formats de fichiers pris en hcarge pour le balisage intelligent des ressources textuelles](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
