@@ -1,14 +1,13 @@
 ---
 title: Création d’un balisage dans des applications AEM
 description: Utiliser des balises ou étendre des balises par programmation dans une application AEM personnalisée
-translation-type: tm+mt
-source-git-commit: 6b754a866be7979984d613b95a6137104be05399
+exl-id: a106dce1-5d51-406a-a563-4dea83987343
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 97%
 
 ---
-
 
 # Création d’un balisage dans des applications AEM {#building-tagging-into-aem-applications}
 
