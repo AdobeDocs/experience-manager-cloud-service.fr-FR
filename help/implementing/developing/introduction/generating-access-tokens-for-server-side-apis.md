@@ -1,14 +1,13 @@
 ---
 title: Génération de jetons d’accès pour les API côté serveur
 description: Découvrez comment faciliter la communication entre un serveur tiers et AEM as a Cloud Service en générant un jeton JWT sécurisé
-translation-type: tm+mt
-source-git-commit: 41b4bb3a63089c05750a40e910ee7578727d8b15
+exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 88%
 
 ---
-
 
 # Présentation {#introduction}
 
@@ -120,7 +119,7 @@ Pour plus d’informations sur les autorisations requises pour utiliser Develope
 
 >[!NOTE]
 >
->Le jeton d&#39;accès de développement local est valide pendant 24 heures au maximum après quoi il doit être régénéré selon la même méthode.
+>Le jeton d’accès au développement local est valide pendant un maximum de 24 heures, après quoi il doit être régénéré à l’aide de la même méthode.
 
 Les développeurs peuvent utiliser ce jeton pour émettre des appels depuis leur application de test non AEM vers l’environnement AEM as a Cloud Service. En règle générale, un développeur utilise ce jeton avec l’application non AEM sur son propre ordinateur portable. En outre, AEM as a Cloud Service est généralement un environnement distinct de la production.
 
@@ -141,11 +140,11 @@ Effectuez les appels d’API de serveur à serveur appropriés auprès de l’ap
 
 ## Révocation des informations d’identification du service {#service-credentials-revocation}
 
-Si les informations d’identification doivent être révoquées, vous devez soumettre une demande au service d’assistance clientèle en procédant comme suit :
+Si les informations d’identification doivent être révoquées, vous devez envoyer une demande au service clientèle en procédant comme suit :
 
 1. Désactivez l’utilisateur du compte technique pour Adobe Admin Console dans l’interface utilisateur :
-   * Dans Cloud Manager, appuyez sur **...** en regard de votre environnement. La page profils du produit s’ouvre.
-   * Cliquez maintenant sur le profil **AEM Utilisateurs** pour afficher une liste des utilisateurs.
-   * Cliquez sur l&#39;onglet **Identifiants d&#39;API**, puis recherchez l&#39;utilisateur de compte technique approprié et supprimez-le.
+   * Dans Cloud Manager, appuyez sur la touche **...** en regard de votre environnement. Cette action ouvre la page des profils de produit.
+   * Cliquez maintenant sur le profil **AEM Utilisateurs** pour afficher la liste des utilisateurs.
+   * Cliquez sur l’onglet **Informations d’identification de l’API**, puis recherchez l’utilisateur du compte technique approprié et supprimez-le.
 2. Contactez l’assistance clientèle et demandez que les informations d’identification du service pour cet environnement spécifique soient supprimées.
 3. Enfin, vous pouvez générer à nouveau les informations d’identification, comme décrit dans cette documentation. Assurez-vous également que le nouvel utilisateur de compte technique créé dispose des autorisations appropriées.
