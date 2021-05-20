@@ -4,7 +4,6 @@ description: Découvrez comment intégrer des ressources d’images ou des vidé
 feature: Gestion des ressources
 role: Business Practitioner
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
-translation-type: tm+mt
 source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
 source-wordcount: '377'
@@ -16,7 +15,7 @@ ht-degree: 88%
 
 Utilisez la fonction **[!UICONTROL Code incorporé]** lorsque vous souhaitez lire une vidéo ou afficher une ressource incorporée dans une page web. Vous copiez le code incorporé dans le Presse-papiers afin de le coller dans vos pages web. Vous ne pouvez pas modifier le code dans la boîte de dialogue **[!UICONTROL Code incorporé]**.
 
-Vous incorporez des URL uniquement si vous n’utilisez _pas_ Adobe Experience Manager comme WCM. Si vous utilisez le Experience Manager comme WCM, [vous ajoutez les ressources directement sur votre page](adding-dynamic-media-assets-to-pages.md).
+Vous n’incorporez les URL que si vous _et non_ utilisez Adobe Experience Manager comme système de gestion de contenu web. Si vous utilisez Experience Manager comme gestion de contenu web, [vous ajoutez les ressources directement sur votre page](adding-dynamic-media-assets-to-pages.md).
 
 Voir [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md).
 
