@@ -2,7 +2,6 @@
 title: Prise en charge IMS d’Adobe Experience Manager as a Cloud Service
 description: Prise en charge IMS d’Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-translation-type: tm+mt
 source-git-commit: 75071cb1793b9b670ebbc029bf9fb41f4de119f9
 workflow-type: tm+mt
 source-wordcount: '2009'
@@ -20,7 +19,7 @@ ht-degree: 92%
 
 >[!TIP]
 >
->Consultez notre cours Experience League [Configurer l&#39;accès à l&#39;AEM pour les administrateurs](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) pour découvrir comment les utilisateurs s&#39;authentifient à l&#39;aide de l&#39;Adobe IMS pour AEM en tant que Cloud Service et comment les utilisateurs, groupes d&#39;utilisateurs et Profils de produits Adobes IMS sont utilisés pour contrôler l&#39;accès à l&#39;AEM et à ses fonctionnalités. Adobe ID requis.
+>Consultez notre cours Experience League [Configuration de l’accès à l’AEM pour les administrateurs](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) pour une présentation de la manière dont les utilisateurs s’authentifient à l’aide d’Adobe IMS pour AEM en tant que Cloud Service et de la manière dont les utilisateurs, groupes d’utilisateurs et profils de produits d’Adobe sont utilisés pour contrôler l’accès à l’ et à ses fonctionnalités et fonctionnalités. Adobe ID requis.
 
 ## Principales caractéristiques {#key-highlights}
 
@@ -129,15 +128,15 @@ Vous trouverez ci-dessous les principales configurations OSGI qui doivent être 
 
 ### Gestion des produits et accès utilisateur dans Admin Console {#managing-products-and-user-access-in-admin-console}
 
-Lorsque l’administrateur de produit se connecte au Admin Console, plusieurs instances de l’AEM s’affichent en tant que contexte de produit Cloud Service, comme illustré ci-dessous. Par exemple, sélectionnez l’un des produits de la page **Aperçu** :
+Lorsque l’administrateur de produit se connecte à Admin Console, il voit plusieurs instances de l’AEM en tant que contexte de produit Cloud Service, comme illustré ci-dessous. Par exemple, sélectionnez l’un des produits de la page **Aperçu** :
 
 ![Connexion aux instances](/help/security/assets/ims6.png)
 
-Une liste d’instances existantes s’affiche :
+Une liste des instances existantes s’affiche :
 
 ![Instances login2](/help/security/assets/ims7.png)
 
-Sous chaque instance de contexte de produit, il y aura des instances couvrant les services d’auteur ou de publication dans les environnements de production, d’étape ou de développement. Chaque instance est associée aux rôles Profils de produits ou Cloud Manager. Ces profils de produit sont utilisés pour attribuer l’accès aux utilisateurs et aux groupes disposant des privilèges requis.
+Sous chaque instance Product Context, il y aura des instances couvrant les services Auteur ou Publication dans les environnements de production, d’évaluation ou de développement. Chaque instance sera associée aux rôles Profils de produit ou Cloud Manager. Ces profils de produit sont utilisés pour affecter l’accès aux utilisateurs et aux groupes avec les privilèges requis.
 
 Le profil **Administrator_xxx** sera utilisé pour accorder des privilèges d’administrateur à l’instance AEM associée, tandis que le profil **User_xxx** sera utilisé pour ajouter des utilisateurs ordinaires.
 
