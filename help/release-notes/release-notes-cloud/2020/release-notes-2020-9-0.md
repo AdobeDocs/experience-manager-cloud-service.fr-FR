@@ -1,14 +1,13 @@
 ---
 title: Notes de mise à jour de la version 2020.9.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service pour la version 2020.9.0.
-translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 100%
 
 ---
-
 
 # Notes de mise à jour pour [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
 
@@ -24,7 +23,7 @@ La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service ve
 
 * Le SDK JavaScript de l’éditeur d’application sur une seule page (SPA) [est désormais en source libre.](/help/implementing/developing/hybrid/reference-materials.md)
 
-## [!DNL Adobe Experience Manager Assets] en tant que Cloud Service  {#assets}
+## [!DNL Adobe Experience Manager Assets] en tant que Cloud Service {#assets}
 
 ### Nouveautés de [!DNL Assets] {#what-is-new-assets}
 
@@ -124,4 +123,3 @@ Consultez cette section pour découvrir les nouveautés et les mises à jour des
 * L’utilitaire Repository Modernizer peut être utilisé pour restructurer des modules de projet existants en modules compatibles avec la structure de projet définie pour AEM as a Cloud Service.
 
    Reportez-vous à [Ressource Git : Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) pour plus de détails.
-
