@@ -1,19 +1,18 @@
 ---
 title: Mises à jour de la version d’AEM
 description: 'Mises à jour de la version d’AEM '
-feature: Deploying
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Déploiement
+exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 100%
 
 ---
 
-
 # Mises à jour de la version d’AEM {#aem-version-updates}
 
-## Introduction {#introduction}
+## Présentation {#introduction}
 
 AEM as a Cloud Service utilise maintenant l’intégration et la distribution continues (CI/CD) pour s’assurer que vos projets bénéficient de la version d’AEM la plus récente. Les instances de production et d’évaluation sont donc mises à jour à la dernière version d’AEM sans interruption de service pour les utilisateurs.
 
@@ -47,4 +46,3 @@ Les mises à jour d’AEM passent par un pipeline de validation de produit inten
 Comme mentionné plus haut, les mises à jour n’entraînent dans la plupart des cas aucune interruption, y compris pour l’auteur, qui est une grappe de nœuds. Les mises à jour en continu sont possibles en raison de la *fonctionnalité de magasin de nœuds composites* dans Oak.
 
 Cette fonctionnalité permet à AEM de faire référence à plusieurs référentiels simultanément. Dans un déploiement en continu, la nouvelle version verte d’AEM contient son propre `/libs` (référentiel non modifiable basé sur TarMK), distinct de l’ancienne version bleue d’AEM, bien que les deux fassent référence à un référentiel modifiable partagé et basé sur DocumentMK qui contient des zones comme `/content`, `/conf`, `/etc` et d’autres. Comme les versions bleue et verte possèdent leur propre version de `/libs`, elles peuvent toutes deux être actives pendant la mise à jour en continu, se partageant le trafic jusqu’à ce que la version verte remplace complètement la bleue.
-
