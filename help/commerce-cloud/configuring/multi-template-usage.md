@@ -9,14 +9,13 @@ audience: marketer
 feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
+source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 100%
 
 ---
-
 
 # Création de plusieurs pages de catégories et de produits
 
