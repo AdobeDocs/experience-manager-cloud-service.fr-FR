@@ -1,7 +1,6 @@
 ---
 title: Configuration du panier et du Dispatcher
 description: Configuration du panier et du Dispatcher
-translation-type: tm+mt
 source-git-commit: cdeef662947c502a70b89b6565b347030b286b85
 workflow-type: tm+mt
 source-wordcount: '141'
