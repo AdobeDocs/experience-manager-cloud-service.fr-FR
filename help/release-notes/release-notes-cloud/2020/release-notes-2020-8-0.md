@@ -2,7 +2,6 @@
 title: Notes de mise à jour de la version 2020.8.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service pour la version 2020.8.0.
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-translation-type: tm+mt
 source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
 source-wordcount: '1050'
@@ -24,7 +23,7 @@ La section suivante décrit les notes de mise à jour générales d’Experience
 * Possibilité de [créer des lancements](/help/sites-cloud/authoring/launches/overview.md) dans l’[éditeur de SPA](/help/implementing/developing/hybrid/introduction.md) d’AEM.
 
 
-## [!DNL Adobe Experience Manager Assets] en tant que Cloud Service  {#assets}
+## [!DNL Adobe Experience Manager Assets] en tant que Cloud Service {#assets}
 
 ### Nouveautés de [!DNL Assets] {#what-is-new-assets}
 
