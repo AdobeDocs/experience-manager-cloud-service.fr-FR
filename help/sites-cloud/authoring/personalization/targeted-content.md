@@ -1,14 +1,13 @@
 ---
 title: Création de contenu ciblé en mode Ciblage
 description: Le mode Ciblage et le composant cible fournissent des outils permettant de créer du contenu pour les expériences.
-translation-type: tm+mt
-source-git-commit: 10aba35c0795ef946edce02e9396947fc6348514
+exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '5348'
 ht-degree: 100%
 
 ---
-
 
 # Création de contenu ciblé en mode Ciblage {#authoring-targeted-content-using-targeting-mode}
 
