@@ -1,165 +1,165 @@
 ---
-title: Comment vivre avec votre application sans en-tête
-description: Dans cette partie du Parcours AEM de développement sans tête, apprenez comment déployer une application sans tête en direct en emportant votre code local dans Git et en le déplaçant vers Cloud Manager Git pour le pipeline CI/CD.
+title: Comment passer à l’application sans affichage
+description: Dans cette partie du Parcours de développement AEM sans interface utilisateur, apprenez à déployer une application sans interface utilisateur en direct en prenant votre code local dans Git et en le déplaçant vers Cloud Manager Git pour le pipeline CI/CD.
 hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 7c30a7415cc424e7f417d92bad9eeb01877994d2
+source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1815'
 ht-degree: 2%
 
 ---
 
-# Comment vivre avec votre application sans en-tête {#go-live}
+# Comment passer à l’application sans affichage {#go-live}
 
 >[!CAUTION]
 >
->TRAVAUX EN COURS - La création de ce document est en cours et ne doit pas être comprise comme complète ou définitive ni être utilisée à des fins de production.
+>OUTDATED - Ce contenu de brouillon a été remplacé par la nouvelle [documentation du Parcours développeur sans affichage.](/help/journey-headless/developer/overview.md)
 
-Dans cette partie du [Parcours de développement AEM sans en-tête](overview.md), apprenez à déployer une application sans en-tête en direct en emportant votre code local dans Git et en le déplaçant vers Cloud Manager Git pour le pipeline CI/CD.
+Dans cette partie du [Parcours de développement AEM sans affichage](overview.md), apprenez à déployer une application sans interface en direct en prenant votre code local dans Git et en le déplaçant vers Cloud Manager Git pour le pipeline CI/CD.
 
 ## L&#39;histoire jusqu&#39;à présent {#story-so-far}
 
-Dans le document précédent du parcours sans tête AEM, [Comment mettre à jour votre contenu via les API AEM Assets](update-your-content.md) vous avez appris à mettre à jour votre contenu sans tête existant dans AEM via l&#39;API et vous devez maintenant :
+Dans le document précédent du parcours sans interface utilisateur AEM, [Comment mettre à jour votre contenu via les API AEM Assets](update-your-content.md) vous avez appris à mettre à jour votre contenu sans interface utilisateur à AEM via l’API et vous devez maintenant :
 
-* Comprenez l’API HTTP AEM Assets.
+* Comprendre l’API HTTP AEM Assets.
 
-Cet article s&#39;appuie sur ces principes fondamentaux pour vous aider à préparer votre propre projet AEM sans tête pour qu&#39;il soit opérationnel.
+Cet article s’appuie sur ces principes de base pour que vous compreniez comment préparer votre propre projet AEM sans tête pour qu’il passe en ligne.
 
 ## Intention {#objective}
 
-Ce document vous aide à comprendre l&#39;AEM canal de publication sans en-tête et les considérations de performances dont vous devez tenir compte avant de commencer à utiliser votre application.
+Ce document vous aide à comprendre le pipeline de publication sans interface utilisateur AEM et les considérations de performances que vous devez connaître avant de passer en ligne avec votre application.
 
-* Découvrez l’AEM SDK et l’outil de développement requis
-* Configuration d’un environnement d’exécution de développement local pour simuler votre contenu avant de le publier
-* Comprendre les bases de la réplication et de la mise en cache du contenu AEM
-* Sécurisation et mise à l’échelle de votre application avant le lancement
-* Surveillance des performances et débogage
+* En savoir plus sur le SDK AEM et sur l’outil de développement requis
+* Configuration d’un environnement d’exécution de développement local pour simuler votre contenu avant la mise en ligne
+* Présentation des notions de base sur la réplication et la mise en cache du contenu AEM
+* Sécurisez et mettez à l’échelle votre application avant Launch
+* Surveillance des performances et du débogage
 
 ## SDK AEM {#the-aem-sdk}
 
-Le SDK AEM est utilisé pour créer et déployer du code personnalisé. C&#39;est l&#39;outil principal dont vous avez besoin pour développer et tester votre application sans tête avant de passer en ligne. Il contient les artefacts suivants :
+Le SDK AEM est utilisé pour créer et déployer du code personnalisé. Il s’agit de l’outil principal dont vous avez besoin pour développer et tester votre application sans interface avant sa mise en ligne. Il contient les artefacts suivants :
 
-* Le fichier JAR de démarrage rapide : fichier JAR exécutable qui peut être utilisé pour configurer à la fois un auteur et une instance de publication.
-* Outils du répartiteur : module du répartiteur et ses dépendances pour les systèmes Windows et UNIX
-* Jar API Java - Dépendance Java Jar/Maven qui expose toutes les API Java autorisées qui peuvent être utilisées pour le développement par rapport aux AEM
-* Javadoc jar - les javadocs du jar API Java
+* Quickstart jar : fichier jar exécutable qui peut être utilisé pour configurer une instance d’auteur et une instance de publication.
+* Outils de Dispatcher : module de Dispatcher et ses dépendances pour les systèmes Windows et UNIX
+* Java API Jar : dépendance Java Jar/Maven qui expose toutes les API Java autorisées pouvant être utilisées pour le développement par rapport à AEM.
+* Javadoc jar : javadocs du jar de l’API Java
 
 ## Outils de développement supplémentaires {#additional-development-tools}
 
-Outre le SDK AEM, vous aurez besoin d’outils supplémentaires qui facilitent le développement et le test de votre code et contenu localement :
+Outre le SDK AEM, vous avez besoin d’outils supplémentaires qui facilitent le développement et le test local de votre code et contenu :
 
 * Java
 * Git
 * Apache Maven
 * Bibliothèque Node.js
-* L&#39;IDE de votre choix
+* L’IDE de votre choix
 
-AEM étant une application Java, vous devez installer Java et le SDK Java pour prendre en charge le développement d’AEM en tant que Cloud Service.
+Comme AEM est une application Java, vous devez installer Java et le SDK Java pour prendre en charge le développement d’AEM en tant que Cloud Service.
 
-Git est ce que vous utiliserez pour gérer le contrôle de code source et pour intégrer les modifications apportées à Cloud Manager, puis les déployer sur une instance de production.
+Git est ce que vous utiliserez pour gérer le contrôle de code source et pour archiver les modifications apportées à Cloud Manager, puis les déployer sur une instance de production.
 
-AEM utilise Apache Maven pour construire des projets générés à partir de l&#39;archétype AEM Maven Project. Tous les principaux IDE offrent une prise en charge de l&#39;intégration pour Maven.
+AEM utilise Apache Maven pour créer des projets générés à partir de l’archétype de projet AEM Maven. Tous les principaux IDE prennent en charge l’intégration de Maven.
 
-Node.js est un environnement d’exécution JavaScript utilisé pour travailler avec les actifs frontaux d’un sous-projet `ui.frontend` d’un projet AEM. Node.js est distribué avec npm, est de facto le gestionnaire de package Node.js, utilisé pour gérer les dépendances JavaScript.
+Node.js est un environnement d’exécution JavaScript utilisé pour fonctionner avec les ressources front-end du sous-projet `ui.frontend` d’un projet AEM. Node.js est distribué avec npm, qui est de facto le gestionnaire de modules Node.js utilisé pour gérer les dépendances JavaScript.
 
-## Composants d&#39;un système AEM en un coup d&#39;oeil {#components-of-an-aem-system-at-a-glance}
+## Composants d’un système AEM en un coup d’oeil {#components-of-an-aem-system-at-a-glance}
 
-Ensuite, jetons un coup d&#39;oeil aux parties constitutives d&#39;un environnement AEM.
+Regardons ensuite les parties constituantes d&#39;un environnement AEM.
 
-Un environnement AEM complet est constitué d’un auteur, d’une publication et d’un répartiteur. Ces mêmes composants seront rendus disponibles dans l’exécution de développement local afin de vous permettre de prévisualisation plus facilement de votre code et de votre contenu avant de commencer à travailler.
+Un environnement d’AEM complet est constitué d’un auteur, d’une publication et d’un Dispatcher. Ces mêmes composants seront disponibles dans l’exécution de développement local afin de vous permettre de prévisualiser plus facilement votre code et votre contenu avant la mise en ligne.
 
-* **Ce** service permet aux utilisateurs internes de créer, gérer et prévisualisation du contenu.
+* **Le** service Auteur permet aux utilisateurs internes de créer, gérer et prévisualiser du contenu.
 
-* **Le** service de publication est considéré comme l’environnement &quot;en direct&quot; et est généralement utilisé par les utilisateurs finaux pour interagir. Le contenu, après avoir été modifié et approuvé sur le service Auteur, est distribué au service Publication. Le modèle de déploiement le plus courant avec AEM applications sans en-tête consiste à faire en sorte que la version de production de l’application se connecte à un service de publication AEM.
+* **Le** service de publication est considéré comme l’environnement &quot;En ligne&quot; et est généralement ce avec lequel les utilisateurs finaux interagissent. Le contenu, après avoir été modifié et approuvé sur le service Auteur, est distribué au service Publication. Le modèle de déploiement le plus courant avec AEM applications sans interface utilisateur est de se connecter à la version de production de l’application à un service de publication AEM.
 
-* **Le** Dispatcher est un serveur Web statique auquel s&#39;ajoute le module de répartiteur d&#39;AEM. Ce module met en cache les pages web produites par l’instance de publication pour améliorer les performances.
+* **Dispatcher** est un serveur web statique qui est alimenté par le module Dispatcher d’AEM. Ce module met en cache les pages web produites par l’instance de publication pour améliorer les performances.
 
-## Processus de développement local {#the-local-development-workflow}
+## Workflow de développement local {#the-local-development-workflow}
 
-Le projet de développement local est construit sur Apache Maven et utilise Git pour le contrôle de code source. Pour mettre à jour le projet, les développeurs peuvent utiliser leur environnement de développement intégré préféré, tel que Eclipse, Visual Studio Code ou IntelliJ, entre autres.
+Le projet de développement local est basé sur Apache Maven et utilise Git pour le contrôle de code source. Pour mettre à jour le projet, les développeurs peuvent utiliser leur environnement de développement intégré préféré, tel qu’Eclipse, Visual Studio Code ou IntelliJ, entre autres.
 
-Pour tester le code ou les mises à jour de contenu qui seront ingérées par votre application sans en-tête, vous devez déployer les mises à jour sur l’exécution AEM locale, qui inclut les instances locales des services AEM d’auteur et de publication.
+Pour tester le code ou les mises à jour de contenu qui seront ingérées par votre application sans interface utilisateur, vous devez déployer les mises à jour sur le runtime AEM local, qui inclut les instances locales des services de création et de publication AEM.
 
-Veillez à prendre note des distinctions entre chaque composant dans l’AEM d’exécution locale, car il est important de tester vos mises à jour là où elles comptent le plus. Par exemple, testez les mises à jour de contenu sur l’auteur ou testez le nouveau code sur l’instance de publication.
+Veillez à tenir compte des différences entre chaque composant dans l’exécution AEM locale, car il est important de tester vos mises à jour là où elles comptent le plus. Par exemple, testez les mises à jour du contenu sur l’instance de création ou testez le nouveau code sur l’instance de publication.
 
-Dans un système de production, un répartiteur et un serveur HTTP Apache s’assoient toujours devant une instance de publication AEM. Ils fournissent des services de mise en cache et de sécurité pour le système AEM. Il est donc essentiel de tester le code et les mises à jour de contenu par rapport au répartiteur.
+Dans un système de production, un dispatcher et un serveur Apache http se trouvent toujours devant une instance de publication AEM. Ils fournissent des services de mise en cache et de sécurité pour le système AEM. Il est donc essentiel de tester le code et les mises à jour de contenu par rapport au dispatcher.
 
-## Aperçu de votre code et de votre contenu localement avec l’Environnement de développement local {#previewing-your-code-and-content-locally-with-the-local-development-environment}
+## Aperçu local de votre code et du contenu avec l’environnement de développement local {#previewing-your-code-and-content-locally-with-the-local-development-environment}
 
-Afin de préparer votre projet AEM sans tête pour le lancement, vous devez vous assurer que tous les éléments constitutifs de votre projet fonctionnent bien.
+Pour préparer votre projet sans interface AEM pour le lancement, vous devez vous assurer que toutes les parties constituantes de votre projet fonctionnent correctement.
 
-Pour ce faire, il faut tout assembler : le code, le contenu et la configuration et testez-le dans un environnement de développement local afin d’être prêt à l’emploi.
+Pour cela, vous devez tout assembler : code, contenu et configuration, puis testez-le dans un environnement de développement local pour vous préparer en temps réel.
 
-L&#39;environnement de développement local comprend trois domaines principaux :
+L&#39;environnement de développement local se compose de trois axes :
 
-1. Le projet AEM - contient tout le code, la configuration et le contenu personnalisés sur lesquels les AEM développeurs vont travailler
-1. L&#39;exécution locale de l&#39;AEM : versions locales des services d&#39;auteur et de publication AEM qui seront utilisés pour déployer le code du projet AEM
-1. Exécution du répartiteur local : version locale du serveur Web htttpd Apache qui inclut le module Répartiteur
+1. Le projet AEM : contient tout le code personnalisé, la configuration et le contenu sur lesquels les développeurs AEM vont travailler.
+1. Exécution locale de l’AEM : versions locales des services d’auteur et de publication AEM qui seront utilisés pour déployer le code du projet AEM
+1. Exécution locale de Dispatcher : version locale du serveur web Apache httpd qui comprend le module de Dispatcher.
 
-Une fois l’environnement de développement local configuré, vous pouvez simuler le contenu diffusé dans l’application React en déployant localement un serveur de noeud statique.
+Une fois l’environnement de développement local configuré, vous pouvez simuler la diffusion de contenu vers l’application React en déployant localement un serveur de noeuds statique.
 
-Pour obtenir une analyse plus approfondie de la configuration d’un environnement de développement local et de toutes les dépendances nécessaires à la prévisualisation du contenu, voir [Documentation sur le déploiement de la production](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites).
+Pour plus d’informations sur la configuration d’un environnement de développement local et sur toutes les dépendances nécessaires à l’aperçu du contenu, voir [Documentation sur le déploiement en production](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites).
 
-## Préparation de votre demande AEM sans en-tête pour Go-Live {#prepare-your-aem-headless-application-for-golive}
+## Préparation de votre application AEM sans affichage pour la mise en service {#prepare-your-aem-headless-application-for-golive}
 
-Il est maintenant temps de préparer votre AEM application sans tête pour le lancement, en suivant les meilleures pratiques décrites ci-dessous.
+Il est maintenant temps de préparer votre application AEM sans interface pour le lancement, en suivant les bonnes pratiques décrites ci-dessous.
 
-### Sécuriser et mettre à l’échelle votre application sans en-tête avant le lancement {#secure-and-scale-before-launch}
+### Sécurisez et mettez à l’échelle votre application sans affichage avant le lancement {#secure-and-scale-before-launch}
 
-1. Configurer [l&#39;authentification basée sur un jeton](/help/assets/content-fragments/graphql-authentication-content-fragments.md) avec vos requêtes GraphQL
-1. Configurez [Mise en cache](/help/implementing/dispatcher/caching.md).
+1. Configuration de l’[authentification basée sur les jetons](/help/assets/content-fragments/graphql-authentication-content-fragments.md) avec vos requêtes GraphQL
+1. Configurez la [mise en cache](/help/implementing/dispatcher/caching.md).
 
 ### Structure du modèle par rapport à la sortie GraphQL {#structure-vs-output}
 
-* Evitez de créer des requêtes qui génèrent plus de 15 kb de JSON (gzip compressé). Les fichiers JSON longs nécessitent beaucoup de ressources pour être analysés par l’application cliente.
-* Evitez plus de cinq niveaux imbriqués de hiérarchies de fragments. Les niveaux supplémentaires rendent difficile pour les auteurs de contenu de tenir compte de l’impact de leurs modifications.
-* Utilisez des requêtes à plusieurs objets au lieu de modéliser des requêtes avec des hiérarchies de dépendance dans les modèles. Cela permet une plus grande flexibilité à long terme pour restructurer la sortie JSON sans avoir à effectuer de nombreuses modifications de contenu.
+* Évitez de créer des requêtes qui génèrent plus de 15 ko de JSON (fichier compressé gzip). Les fichiers JSON longs consomment beaucoup de ressources pour que l’application cliente puisse les analyser.
+* Évitez plus de cinq niveaux imbriqués de hiérarchies de fragments. Les niveaux supplémentaires rendent difficile la prise en compte de l’impact de leurs modifications par les auteurs de contenu.
+* Utilisez des requêtes à plusieurs objets au lieu de modéliser des requêtes avec des hiérarchies de dépendances au sein des modèles. Cela offre une plus grande flexibilité à long terme pour restructurer la sortie JSON sans avoir à effectuer de nombreuses modifications de contenu.
 
-### Maximiser le taux d’accès au cache CDN {#maximize-cdn}
+### Maximiser le ratio cache-accès CDN {#maximize-cdn}
 
-* N&#39;utilisez pas de requêtes GraphQL directes, sauf si vous demandez du contenu en direct à la surface.
-   * Utilisez des requêtes persistantes chaque fois que possible.
-   * Fournissez un TTL CDN supérieur à 600 secondes pour que le CDN puisse les mettre en cache.
-   * AEM peut calculer l&#39;impact d&#39;un changement de modèle sur les requêtes existantes.
-* Fractionner les fichiers JSON/requêtes GraphQL entre un taux de changement de contenu faible et élevé afin de réduire le trafic client sur le réseau de diffusion de contenu et d’affecter un TTL plus élevé. Cela permet de réduire le nombre de CDN lors de la revalidation du fichier JSON avec le serveur d’origines.
-* Pour invalider activement le contenu du réseau de diffusion de contenu, utilisez la fonction Purger à l’aide de l’option Purger à l’aide de l’écran. Cela permet au CDN de retélécharger le contenu sans provoquer l’échec du cache.
+* N’utilisez pas de requêtes GraphQL directes, sauf si vous demandez du contenu en direct à la surface.
+   * Dans la mesure du possible, utilisez des requêtes persistantes.
+   * Fournissez un TTL CDN supérieur à 600 secondes pour que le CDN les mette en cache.
+   * AEM peut calculer l’impact d’une modification de modèle sur des requêtes existantes.
+* Partage des fichiers JSON/requêtes GraphQL entre un taux de changement de contenu faible et élevé afin de réduire le trafic client sur le réseau de diffusion de contenu et d’attribuer un TTL plus élevé. Cela minimise la revalidation du réseau de diffusion de contenu du fichier JSON avec le serveur d’origine.
+* Pour invalider activement le contenu du réseau de diffusion de contenu, utilisez la fonction Purge progressive. Cela permet au réseau de diffusion de contenu de télécharger à nouveau le contenu sans provoquer l’échec du cache.
 
-### Amélioration du temps de téléchargement du contenu sans en-tête {#improve-download-time}
+### Amélioration du temps de téléchargement du contenu sans affichage {#improve-download-time}
 
 * Assurez-vous que les clients HTTP utilisent HTTP/2.
-* Assurez-vous que les clients HTTP acceptent les en-têtes de demande de gzip.
-* Réduisez le nombre de domaines utilisés pour héberger JSON et les artefacts référencés.
-* Tirez parti de `Last-modified-since` pour actualiser les ressources.
-* Utilisez la sortie `_reference` du fichier JSON pour début de télécharger des fichiers sans avoir à analyser les fichiers JSON complets.
+* Assurez-vous que les clients HTTP acceptent la requête d’en-têtes pour gzip.
+* Réduisez le nombre de domaines utilisés pour héberger les artefacts JSON et référencés.
+* Utilisez `Last-modified-since` pour actualiser les ressources.
+* Utilisez la sortie `_reference` du fichier JSON pour commencer à télécharger des ressources sans avoir à analyser les fichiers JSON complets.
 
 ## Déploiement en environnement de production {#deploy-to-production}
 
-Une fois que vous avez vérifié que tout a été testé et fonctionne correctement, vous êtes prêt à transmettre vos mises à jour de code à un [référentiel Git centralisé dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).
+Une fois que vous avez vérifié que tout a été testé et fonctionne correctement, vous êtes prêt à envoyer vos mises à jour de code vers un [référentiel Git centralisé dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).
 
-Une fois les mises à jour téléchargées dans Cloud Manager, elles peuvent être déployées en tant que Cloud Service à l’AEM à l’aide du [pipeline CI/CD de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr).
+Une fois les mises à jour transférées vers Cloud Manager, elles peuvent être déployées vers AEM en tant que Cloud Service à l’aide du [pipeline CI/CD de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr).
 
-Vous pouvez début le déploiement de votre code en exploitant le pipeline de CD/CI de Cloud Manager, qui est traité en détail [ici](/help/implementing/deploying/overview.md).
+Vous pouvez commencer à déployer votre code en exploitant le pipeline CI/CD de Cloud Manager, qui est décrit en détail [ici](/help/implementing/deploying/overview.md).
 
 ## Surveillance des performances {#performance-monitoring}
 
-Pour que les utilisateurs puissent bénéficier d’une expérience optimale lors de l’utilisation de l’application AEM sans en-tête, il est important de surveiller les mesures de performances clés, comme indiqué ci-dessous :
+Pour que les utilisateurs disposent de la meilleure expérience possible lorsqu’ils utilisent AEM application sans interface utilisateur, il est important de surveiller les mesures de performances clés, comme indiqué ci-dessous :
 
-* Validation des versions de prévisualisation et de production de l’application
-* Vérifier les pages d&#39;état AEM pour l&#39;état actuel de disponibilité du service
-* Accès aux rapports de performances
+* Validation des versions d’aperçu et de production de l’application
+* Vérifier les pages d’état AEM de l’état actuel de disponibilité du service
+* Accès aux rapports de performance
    * Performances des diffusions
-      * Performances du CDN (Fastly) : contrôle du nombre d&#39;appels, du taux de cache, des taux d&#39;erreur et du trafic de charge utile
-      * Serveurs d&#39;Origine : nombre d&#39;appels, taux d&#39;erreur, charges d&#39;UC, trafic de charge
-   * Performances de l’auteur
-      * Vérifier le nombre d’utilisateurs, de requêtes et de chargements
+      * Performances du réseau de diffusion de contenu (Fastly) : vérifiez le nombre d’appels, le taux de mise en cache, les taux d’erreur et le trafic de charge utile.
+      * Serveurs d’origine : nombre d’appels, taux d’erreur, charge du processeur, trafic de charge utile.
+   * Performances de création
+      * Vérifier le nombre d’utilisateurs, de demandes et de chargements
 * Accès aux rapports de performances spécifiques à l’application et à l’espace
-   * Une fois le serveur opérationnel, vérifiez si les mesures générales sont vertes/orange/rouges, puis identifiez les problèmes spécifiques à l’application.
-   * Ouvrir les mêmes rapports que ceux ci-dessus filtrés dans l’application ou l’espace (par exemple, bureau Photoshop, paywall)
-   * Utiliser les API du journal Splunk pour accéder aux performances du service et de l&#39;application
-   * Contactez l’assistance clientèle si d’autres problèmes se produisent.
+   * Une fois le serveur ouvert, vérifiez si les mesures générales sont vert/orange/rouge, puis identifiez les problèmes spécifiques à l’application.
+   * Ouvrir les mêmes rapports ci-dessus filtrés dans l’application ou l’espace (par exemple, bureau Photoshop, paywall)
+   * Utilisation des API de journal Splunk pour accéder aux performances du service et de l’application
+   * Contactez le service clientèle si d’autres problèmes se produisent.
 
 ## Résolution des problèmes {#troubleshooting}
 
@@ -167,37 +167,37 @@ Pour que les utilisateurs puissent bénéficier d’une expérience optimale lor
 
 Suivez ces bonnes pratiques en tant qu’approche générale du débogage :
 
-* Valider les fonctionnalités et les performances avec la version prévisualisation de l’application
-* Valider les fonctionnalités et les performances avec la version de production de l’application
-* Validation avec la prévisualisation JSON de l’éditeur de fragments de contenu
-* Inspect le fichier JSON dans l’application cliente pour vérifier la présence de problèmes d’application ou de diffusion client
-* Inspect le fichier JSON à l’aide de GraphQL pour vérifier la présence de problèmes liés au contenu ou à l’AEM mis en cache
+* Validation des fonctionnalités et des performances avec la version d’aperçu de l’application
+* Validation des fonctionnalités et des performances avec la version de production de l’application
+* Validation à l’aide de l’aperçu JSON de l’éditeur de fragment de contenu
+* Inspect du JSON dans l’application cliente pour vérifier la présence de problèmes d’application cliente ou de diffusion
+* Inspect du JSON à l’aide de GraphQL pour vérifier la présence de problèmes liés au contenu mis en cache ou à l’AEM
 
-### Journalisation d&#39;un bogue avec prise en charge {#logging-a-bug-with-support}
+### Journalisation d’un bogue avec prise en charge {#logging-a-bug-with-support}
 
-Pour consigner efficacement un bogue avec l&#39;assistance au cas où vous auriez besoin d&#39;aide supplémentaire, procédez comme suit :
+Pour consigner efficacement un bogue avec l’assistance si vous avez besoin d’aide supplémentaire, procédez comme suit :
 
-* Si nécessaire, prenez des captures d&#39;écran du problème.
-* Document d’un moyen de reproduire le problème
-* Document du contenu avec lequel la publication se reproduit
-* Consignez un problème sur le portail d&#39;assistance AEM avec la priorité appropriée.
+* Si nécessaire, réalisez des captures d’écran du problème.
+* Documenter un moyen de reproduire le problème
+* Documenter le contenu reproduit par le problème
+* Consignez un problème via le portail d’assistance AEM avec la priorité appropriée.
 
-## Le Parcours Se Termine - Ou Est-Ce Le Cas ? {#journey-ends}
+## Le Parcours Se Termine - Ou Le Fait-Il ? {#journey-ends}
 
-Félicitations ! Vous avez terminé le Parcours AEM développement sans tête ! Vous devez maintenant comprendre :
+Félicitations ! Vous avez terminé le Parcours de développement AEM sans tête ! Vous devez maintenant comprendre les éléments suivants :
 
-* Différence entre la diffusion de contenu sans en-tête et avec en-tête.
-* AEM fonctionnalités sans tête.
-* Comment organiser et AEM projet sans tête.
-* Comment créer du contenu sans en-tête en AEM.
-* Comment récupérer et mettre à jour du contenu sans en-tête dans AEM.
-* Comment vivre avec un projet AEM sans tête.
-* Que faire après le lancement.
+* Différence entre diffusion de contenu sans interface utilisateur graphique et en mode plein écran.
+* AEM fonctionnalités sans interface.
+* Comment organiser et AEM un projet sans affichage.
+* Comment créer du contenu sans interface dans AEM.
+* Comment récupérer et mettre à jour du contenu sans affichage dans AEM.
+* Mise en ligne d’un projet AEM sans affichage.
+* Que faire après la mise en service.
 
 ## Ressources supplémentaires {#additional-resources}
 
 * [Présentation du déploiement sur AEM en tant que Cloud Service](/help/implementing/deploying/overview.md)
 * [SDK d’AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-* [Configuration D’Un Environnement D’AEM Local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
+* [Configuration D’Un Environnement AEM Local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
 * [Utilisation de Cloud Manager pour déployer votre code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
 * [Intégration du référentiel Git de Cloud Manager à un référentiel Git externe et déploiement d’un projet AEM en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html)
