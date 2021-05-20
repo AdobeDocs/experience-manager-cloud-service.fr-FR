@@ -1,14 +1,13 @@
 ---
 title: Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder.
 description: Query Builder, associé à AEM, met à votre disposition un moyen efficace et personnalisable d’appliquer des requêtes au référentiel de contenu.
-translation-type: tm+mt
-source-git-commit: 6b754a866be7979984d613b95a6137104be05399
+exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '667'
 ht-degree: 96%
 
 ---
-
 
 # Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder {#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
