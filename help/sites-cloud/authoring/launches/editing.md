@@ -1,14 +1,13 @@
 ---
 title: Modification de lancements
-description: 'Après avoir créé un lancement pour votre page (ou un jeu de pages), vous pouvez modifier le contenu dans la copie de lancement de la ou des pages. '
-translation-type: tm+mt
-source-git-commit: ba7a8f5027b71ebdee7c84ed35d374fe22645a5a
+description: Après avoir créé un lancement pour votre page (ou un jeu de pages), vous pouvez modifier le contenu dans la copie de lancement de la ou des pages.
+exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 91%
 
 ---
-
 
 # Modification de lancements {#editing-launches}
 
@@ -25,14 +24,14 @@ Lors de la modification de la page, une indication apparaît dans la barre d’o
 
 >[!NOTE]
 >
->Vous n’êtes pas autorisé à déplacer une page au cours d’un lancement. La tentative de cette action déclenchera un message d’avertissement :
+>Vous n’êtes pas autorisé à déplacer une page dans un lancement. Toute tentative de cette action déclenche un message d’avertissement :
 >
->* Avertissement : Cette page est la source du lancement. Le déplacement de la page n’est pas autorisé.
+>* Avertissement : Cette page est la source d’un lancement. Le déplacement de la page n’est pas autorisé.
 
 
 ### Modification de l’objet des pages de lancement en Live Copy {#editing-launch-pages-subject-to-a-live-copy}
 
-Si votre lancement est basé sur une [Live Copy](/help/sites-cloud/administering/msm/overview.md), vous allez :
+Si votre lancement est basé sur une [Live Copy](/help/sites-cloud/administering/msm/overview.md) , vous :
 
 * vous verrez des symboles de verrouillage (petits verrous) lors de la modification d’un composant (de son contenu ou de ses propriétés) ;
 * vous verrez l’onglet **Live Copy** dans **Propriétés de la page**.
