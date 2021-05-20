@@ -1,14 +1,13 @@
 ---
 title: Diagnostic ContextHub
 description: ContextHub fournit une page de diagnostic où vous avez accès à une vue d’ensemble du framework ContextHub
-translation-type: tm+mt
-source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
+exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 100%
 
 ---
-
 
 # Diagnostic ContextHub {#contexthub-diagnostics}
 
@@ -31,7 +30,7 @@ La section Magasins répertorie tous les magasins ContextHub qui ont été confi
 * **resourceType :** chemin du nœud du référentiel où le type de magasin est défini.
 * **clientlibs :** catégories des bibliothèques clientes chargées qui implémentent le type de magasin.
 
-## Modules  {#modules}
+## Modules {#modules}
 
 La section Modules répertorie tous les modules d’IU ContextHub qui ont été configurés. Chaque élément de la liste comprend les informations suivantes :
 
@@ -40,7 +39,7 @@ La section Modules répertorie tous les modules d’IU ContextHub qui ont été 
 * **resourceType :** chemin du nœud du référentiel où le type de module d’IU est défini.
 * **clientlibs :** catégories des bibliothèques clientes chargées qui implémentent le type de module d’IU.
 
-## Clientlibs  {#clientlibs}
+## Clientlibs {#clientlibs}
 
 La section Clientlibs répertorie tous les [dossiers de bibliothèque cliente](/help/implementing/developing/introduction/clientlibs.md) chargés par ContextHub. Les bibliothèques clientes sont classées comme suit :
 
@@ -48,7 +47,7 @@ La section Clientlibs répertorie tous les [dossiers de bibliothèque cliente](/
 * **ui.js :** bibliothèques clientes qui implémentent les types de modules d’IU et l’IU ContextHub.
 * **style.css :** fichiers CSS chargés à partir des bibliothèques clientes.
 
-## URL  {#urls}
+## URL {#urls}
 
 La section URL contient des liens vers les fonctionnalités de ContextHub :
 
