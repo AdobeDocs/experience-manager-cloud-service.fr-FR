@@ -3,14 +3,13 @@ title: Accès à Git
 seo-title: Accès à Git
 description: Cette page vous explique comment accéder au référentiel Git et le gérer.
 seo-description: Consultez cette page pour découvrir comment accéder à votre référentiel Git et le gérer.
-translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 100%
 
 ---
-
 
 # Accès à Git {#accessing-git}
 
@@ -45,4 +44,3 @@ Les points importants à prendre en compte pour gérer votre Git dans Cloud Man
 >[!NOTE]
 >
 >Un utilisateur peut extraire une copie de son code et effectuer des modifications dans le référentiel de code local. Une fois prêt, l’utilisateur peut valider les modifications de code dans le référentiel de code distant dans Cloud Manager.
-
