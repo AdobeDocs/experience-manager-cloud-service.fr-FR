@@ -1,23 +1,22 @@
 ---
 title: Traduction de contenu pour les sites multilingues
-description: Bénéficiez d'un aperçu de la manière de traduire du contenu pour les sites multilingues.
-feature: Language Copy
+description: Découvrez comment traduire du contenu pour des sites multilingues.
+feature: Copie de la langue
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '256'
 ht-degree: 61%
 
 ---
 
-
 # Traduction de contenu pour les sites multilingues {#translating-content-for-multilingual-sites}
 
-Automatisez la traduction du contenu et des ressources des pages pour créer et gérer des sites Web multilingues. Pour automatiser les processus de traduction, vous intégrez des fournisseurs de services de traduction à AEM et vous créez des projets pour traduire le contenu dans plusieurs langues. AEM prend en charge les workflows de traduction humaine et automatique.
+Automatisez la traduction du contenu et des ressources des pages pour créer et gérer des sites web multilingues. Pour automatiser les processus de traduction, vous intégrez des fournisseurs de services de traduction à AEM et vous créez des projets pour traduire le contenu dans plusieurs langues. AEM prend en charge les workflows de traduction humaine et automatique.
 
-* **Traduction humaine :** Le contenu est envoyé à votre fournisseur de traduction et traduit par des traducteurs professionnels. Une fois la traduction terminée, le contenu traduit est renvoyé et importé dans AEM. Lorsque votre fournisseur de traduction est intégré à AEM, le contenu est automatiquement transféré entre AEM et le fournisseur de traduction.
-* **Traduction automatique :** Le service de traduction automatique traduit immédiatement votre contenu.
+* **Traduction humaine :** le contenu est envoyé à votre fournisseur de traduction et traduit par des traducteurs professionnels. Une fois la traduction terminée, le contenu traduit est renvoyé et importé dans AEM. Lorsque votre fournisseur de traduction est intégré à AEM, le contenu est automatiquement transféré entre AEM et le fournisseur de traduction.
+* **Traduction automatique :** le service de traduction automatique traduit immédiatement votre contenu.
 
 La traduction du contenu implique les étapes suivantes :
 
@@ -32,8 +31,8 @@ Si votre fournisseur de services de traduction ne fournit pas de connecteur pour
 
 >[!NOTE]
 >
->Votre utilisateur doit être membre du groupe `project-administrators` pour utiliser les fonctionnalités de copie de langue.
+>Votre utilisateur doit être membre du groupe `project-administrators` pour utiliser les fonctions Copie de langue.
 
 ## Bonnes pratiques {#best-practices}
 
-La page [Bonnes pratiques de traduction](best-practices.md) contient des informations importantes concernant votre implémentation.
+La page [Meilleures pratiques de traduction](best-practices.md) contient des informations importantes concernant votre mise en oeuvre.
