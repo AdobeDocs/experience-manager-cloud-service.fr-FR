@@ -3,10 +3,9 @@ title: Bonnes pratiques pour l’intégration à [!DNL Adobe Creative Cloud]
 description: Bonnes pratiques pour intégrer un déploiement Experience Manager à Adobe Creative Cloud de façon à rationaliser les workflows de transfert de ressources et à obtenir un maximum d’efficacité.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Collaboration,Adobe Asset Link,Desktop App
+feature: Collaboration,Adobe Asset Link,application de bureau
 role: Architect,Business Practitioner,Administrator
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-translation-type: tm+mt
 source-git-commit: 522d0363c0207afbed2c51e9d54d921ce9b66c70
 workflow-type: tm+mt
 source-wordcount: '3300'
@@ -72,7 +71,7 @@ Choix de la fonctionnalité à utiliser
 
 Pour prendre en charge les cas d’utilisation de la distribution des ressources, d’autres solutions doivent être envisagées :
 
-* [AEM Assets Brand ](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) Portalon pour un module complémentaire configurable des ressources à publier.
+* [AEM Assets Brand ](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) Portal pour un module complémentaire configurable d’Assets afin de publier des ressources.
 
 * Les solutions personnalisées sont créées à partir de la base de code [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/).
 * [Partage de liens](/help/assets/share-assets.md) AEM pour partager des ressources ad hoc à l’aide de liens.
