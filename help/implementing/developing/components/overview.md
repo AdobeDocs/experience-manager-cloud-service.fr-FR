@@ -1,14 +1,13 @@
 ---
 title: Aperçu des composants
 description: Les composants sont des unités modulaires qui exécutent des fonctionnalités spécifiques pour présenter du contenu sur votre site web.
-translation-type: tm+mt
-source-git-commit: 83c27daae4e8ae2ae6a8f115c9da9527971c6ecb
+exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 100%
 
 ---
-
 
 # Aperçu des composants {#components-overview}
 
@@ -64,4 +63,3 @@ Une autre méthode consiste à utiliser CRXDE Lite pour obtenir la liste de tou
    `//element(*, cq:Component)`
 
 1. Cliquez sur **[!UICONTROL Exécuter]** pour répertorier les composants.
-
