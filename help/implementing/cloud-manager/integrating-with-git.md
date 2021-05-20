@@ -1,14 +1,13 @@
 ---
 title: Intégration de Git
 description: Intégration de Git - Cloud Services
-translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+exl-id: 57e71b8a-4546-4d7f-825c-a1637d08e608
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 100%
 
 ---
-
 
 # Intégration de Git à Adobe Cloud Manager {#git-integration}
 
