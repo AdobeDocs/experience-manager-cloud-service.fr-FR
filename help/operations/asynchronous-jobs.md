@@ -1,14 +1,13 @@
 ---
 title: Tâches asynchrones
 description: Adobe Experience Manager optimise les performances en exécutant de manière asynchrone certaines tâches gourmandes en ressources.
-translation-type: tm+mt
-source-git-commit: be817ff8265d9d45a80557c0e44949ba6562993c
+exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 100%
 
 ---
-
 
 # Opérations asynchrones {#asynchronous-operations}
 
@@ -144,6 +143,6 @@ Si le nombre de références aux pages à déplacer dépasse le nombre seuil, l�
 >[!MORELIKETHIS]
 >
 >* [Création et organisation des pages](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
->* [Importation et exportation des métadonnées de ressources par lot](/help/assets/metadata-import-export.md).
->* [Utilisez les ressources connectées pour partager des ressources DAM issues de déploiements distants](/help/assets/use-assets-across-connected-assets-instances.md).
+* [Importation et exportation des métadonnées de ressources par lot](/help/assets/metadata-import-export.md).
+* [Utilisez les ressources connectées pour partager des ressources DAM issues de déploiements distants](/help/assets/use-assets-across-connected-assets-instances.md).
 
