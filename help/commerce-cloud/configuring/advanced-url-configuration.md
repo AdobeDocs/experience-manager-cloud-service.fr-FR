@@ -9,9 +9,8 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
-exl-id: 363cb465-c50a-422f-b149-b3f41c2ebc0f
-translation-type: tm+mt
-source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
+exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
+source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 98%
@@ -43,7 +42,7 @@ Ce modèle configure les URL des pages de produits avec les propriétés suivant
 * **Emplacement de l’identifiant de produit** : définit l’emplacement de l’identifiant qui sera utilisé pour récupérer les données du produit. La valeur par défaut est `SELECTOR`, l’autre valeur possible étant `SUFFIX`. Dans l’exemple d’URL précédent, cela signifie que l’identifiant `chaz-kangeroo-hoodie` sera utilisé pour récupérer les données du produit.
 * **Type d’identifiant de produit** : définit le type de l’identifiant à utiliser lors de la récupération des données de produit. La valeur par défaut est `URL_KEY`, l’autre valeur possible étant `SKU`. Avec l’exemple d’URL précédent, cela signifie que les données de produit seront récupérées avec un filtre GraphQL Magento tel que `filter:{url_key:{eq:"chaz-kangeroo-hoodie"}}`.
 
-### Modèle d’URL de page de Liste de produits {#product-list}
+### Modèle d’URL de page de liste de produits {#product-list}
 
 Ce modèle configure les URL des pages de listes de catégories ou de produits avec les propriétés suivantes :
 
