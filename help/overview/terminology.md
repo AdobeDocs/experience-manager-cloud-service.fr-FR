@@ -1,14 +1,13 @@
 ---
 title: Présentation d’Adobe Experience Manager as a Cloud Service - Terminologie
-description: 'Présentation d’Adobe Experience Manager as a Cloud Service - Terminologie. '
-translation-type: tm+mt
-source-git-commit: 465172db5bbc3b1dc3b42164d759a45e0ff13a8e
+description: Présentation d’Adobe Experience Manager as a Cloud Service - Terminologie.
+exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 100%
 
 ---
-
 
 # Adobe Experience Manager as a Cloud Service - Terminologie {#adobe-experience-manager-as-a-cloud-service-terminology}
 
