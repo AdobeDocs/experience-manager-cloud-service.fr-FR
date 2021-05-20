@@ -2,7 +2,6 @@
 title: SPA et rendu côté serveur
 description: L’utilisation du rendu côté serveur dans votre SPA peut accélérer le chargement initial de la page, puis transmettre plus de rendu au client.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-translation-type: tm+mt
 source-git-commit: 4965bd30c02536efb81a26fff8da6e5f75dbfae4
 workflow-type: tm+mt
 source-wordcount: '1502'
@@ -18,7 +17,7 @@ Toutefois, cela peut entraîner des temps de chargement initiaux plus longs, en 
 
 ## Quand utiliser le rendu côté serveur {#when-to-use-ssr}
 
-Le rendu côté serveur n’est pas requis pour tous les projets. Bien que AEM appuie pleinement la stratégie SSR JS pour SPA, l&#39;Adobe ne recommande pas de la mettre en oeuvre systématiquement pour chaque projet.
+Le rendu côté serveur n’est pas requis pour tous les projets. Bien qu’AEM prenne entièrement en charge le rendu côté serveur JS pour SPA, Adobe ne recommande pas de le mettre en oeuvre systématiquement pour chaque projet.
 
 Lorsque vous décidez de mettre en œuvre le rendu côté serveur, vous devez d’abord estimer la complexité, les efforts et les coûts supplémentaires que ce rendu représente de manière réaliste pour le projet, y compris la maintenance à long terme. Une architecture SSR ne doit être choisie que lorsque la valeur ajoutée dépasse clairement les coûts estimés.
 
@@ -45,9 +44,9 @@ Les sections suivantes décrivent comment Adobe I/O Runtime peut être utilisé 
 
 >[!NOTE]
 >
->Adobe recommande un espace de travail Adobe I/O Runtime distinct par environnement (stage, prod, testing, etc.). Cela permet de créer des modèles de cycle de vie de développement de systèmes (SDLC) standard avec différentes versions d’une application unique déployée sur différents environnements. Pour plus d&#39;informations, consultez le document [CI/CD pour Project Firefly Applications](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md).
+>Adobe recommande un espace de travail Adobe I/O Runtime distinct par environnement (évaluation, production, test, etc.). Cela permet d’obtenir des modèles de cycle de vie de développement de systèmes classiques avec différentes versions d’une seule application déployée dans différents environnements. Pour plus d’informations, consultez le document [CI/CD pour les applications Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md) .
 >
->Un espace de travail distinct n’est pas nécessaire par instance (auteur, publication), sauf s’il existe des différences dans l’implémentation d’exécution par type d’instance.
+>Un espace de travail distinct n’est pas nécessaire par instance (auteur, publication), sauf s’il existe des différences dans l’implémentation du runtime par type d’instance.
 
 ## Configuration du moteur de rendu distant {#remote-content-renderer-configuration}
 
@@ -60,7 +59,7 @@ Cela s’effectue via le **service RemoteContentRenderer – Configuration d’u
 Les champs suivants sont disponibles pour la configuration :
 
 * **Modèle de chemin d’accès au contenu** : expression régulière afin de faire correspondre une partie du contenu, si nécessaire
-* **URL**  du point de terminaison distant - URL du point de terminaison responsable de la génération du contenu
+* **URL du point d’entrée distant**  : URL du point d’entrée responsable de la génération du contenu.
    * Utilisez le protocole HTTPS sécurisé si ce point d’entrée ne figure pas sur le réseau local.
 * **En-têtes de requête supplémentaires** : en-têtes supplémentaires à ajouter à la requête envoyée au point d’entrée distant
    * Modèle : `key=value`
