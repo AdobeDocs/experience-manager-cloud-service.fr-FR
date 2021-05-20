@@ -1,14 +1,13 @@
 ---
-title: 'Utilisation des workflows  '
+title: Utilisation des workflows
 description: Dans AEM, les workflows permettent d’automatiser une série d’étapes effectuées sur une page ou une ressource.
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: ed157646-abb3-45c6-bafd-7889bd93fdf3
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 100%
 
 ---
-
 
 # Utilisation des workflows   {#working-with-workflows}
 
@@ -27,5 +26,5 @@ En général :
 
 Les pages suivantes couvrent :
 
-* [Application de workflows aux pages ](/help/sites-cloud/authoring/workflows/applying.md)
+* [Application de workflows aux pages](/help/sites-cloud/authoring/workflows/applying.md)
 * [Participation aux workflows](/help/sites-cloud/authoring/workflows/participating.md)
