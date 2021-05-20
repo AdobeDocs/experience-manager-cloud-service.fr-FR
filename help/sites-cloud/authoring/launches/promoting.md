@@ -1,14 +1,13 @@
 ---
 title: Conversion de lancements
-description: 'Vous devez convertir les pages de lancement pour redéplacer le contenu vers la source (production) avant de le publier. '
-translation-type: tm+mt
-source-git-commit: 645d25753e4baa03ba4df0645a266b793ec64a49
+description: Vous devez convertir les pages de lancement pour redéplacer le contenu vers la source (production) avant de le publier.
+exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '817'
 ht-degree: 100%
 
 ---
-
 
 # Conversion de lancements {#promoting-launches}
 
@@ -39,6 +38,7 @@ Vous devez convertir les pages de lancement pour redéplacer le contenu vers la 
 >
 >* [Conversion d’un lancement imbriqué](#promoting-a-nested-launch) lorsqu’il existe plusieurs lancements dans la structure.
 >* [Lancements - Ordre des événements](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) pour en savoir plus sur la conversion et la publication automatiques.
+
 >
 
 
