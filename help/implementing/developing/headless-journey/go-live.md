@@ -1,18 +1,18 @@
 ---
-title: Comment passer à l’application sans affichage
+title: Comment mettre en ligne votre application sans affichage
 description: Dans cette partie du Parcours de développement AEM sans interface utilisateur, apprenez à déployer une application sans interface utilisateur en direct en prenant votre code local dans Git et en le déplaçant vers Cloud Manager Git pour le pipeline CI/CD.
 hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
+source-git-commit: bc717c544bd4f0449d358b831a5132f85fa85e86
 workflow-type: tm+mt
-source-wordcount: '1815'
+source-wordcount: '1818'
 ht-degree: 2%
 
 ---
 
-# Comment passer à l’application sans affichage {#go-live}
+# Comment passer en ligne avec votre application sans affichage {#go-live}
 
 >[!CAUTION]
 >
@@ -73,7 +73,7 @@ Un environnement d’AEM complet est constitué d’un auteur, d’une publicati
 
 * **Le** service Auteur permet aux utilisateurs internes de créer, gérer et prévisualiser du contenu.
 
-* **Le** service de publication est considéré comme l’environnement &quot;En ligne&quot; et est généralement ce avec lequel les utilisateurs finaux interagissent. Le contenu, après avoir été modifié et approuvé sur le service Auteur, est distribué au service Publication. Le modèle de déploiement le plus courant avec AEM applications sans interface utilisateur est de se connecter à la version de production de l’application à un service de publication AEM.
+* **Le** service de publication est considéré comme l’environnement &quot;En ligne&quot; et est généralement ce avec lequel les utilisateurs finaux interagissent. Le contenu, après avoir été modifié et appliqué sur le service Auteur, est distribué au service Publication. Le modèle de déploiement le plus courant avec AEM applications sans interface utilisateur est de se connecter à la version de production de l’application à un service de publication AEM.
 
 * **Dispatcher** est un serveur web statique qui est alimenté par le module Dispatcher d’AEM. Ce module met en cache les pages web produites par l’instance de publication pour améliorer les performances.
 
@@ -99,11 +99,11 @@ L&#39;environnement de développement local se compose de trois axes :
 1. Exécution locale de l’AEM : versions locales des services d’auteur et de publication AEM qui seront utilisés pour déployer le code du projet AEM
 1. Exécution locale de Dispatcher : version locale du serveur web Apache httpd qui comprend le module de Dispatcher.
 
-Une fois l’environnement de développement local configuré, vous pouvez simuler la diffusion de contenu vers l’application React en déployant localement un serveur de noeuds statique.
+Une fois l’environnement de développement local configuré, vous pouvez simuler la diffusion de contenu vers l’application React en déployant localement un serveur de noeud statique.
 
 Pour plus d’informations sur la configuration d’un environnement de développement local et sur toutes les dépendances nécessaires à l’aperçu du contenu, voir [Documentation sur le déploiement en production](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites).
 
-## Préparation de votre application AEM sans affichage pour la mise en service {#prepare-your-aem-headless-application-for-golive}
+## Préparation de votre application AEM sans affichage pour Go-Live {#prepare-your-aem-headless-application-for-golive}
 
 Il est maintenant temps de préparer votre application AEM sans interface pour le lancement, en suivant les bonnes pratiques décrites ci-dessous.
 
@@ -155,10 +155,10 @@ Pour que les utilisateurs disposent de la meilleure expérience possible lorsqu�
       * Serveurs d’origine : nombre d’appels, taux d’erreur, charge du processeur, trafic de charge utile.
    * Performances de création
       * Vérifier le nombre d’utilisateurs, de demandes et de chargements
-* Accès aux rapports de performances spécifiques à l’application et à l’espace
-   * Une fois le serveur ouvert, vérifiez si les mesures générales sont vert/orange/rouge, puis identifiez les problèmes spécifiques à l’application.
-   * Ouvrir les mêmes rapports ci-dessus filtrés dans l’application ou l’espace (par exemple, bureau Photoshop, paywall)
-   * Utilisation des API de journal Splunk pour accéder aux performances du service et de l’application
+* Accéder aux rapports de performances spécifiques à l’application et à l’espace
+   * Une fois le serveur ouvert, vérifiez si les mesures générales sont vert/orange/rouge, puis identifiez les problèmes d’application spécifiques.
+   * Ouvrez les rapports mentionnés ci-dessus, mais filtrez-les sur l’application ou l’espace (par exemple, bureau Photoshop, paywall).
+   * [Utilisation des ](/help/implementing/developing/introduction/logging.md#splunk-logs) API de journal Splunk pour accéder aux performances du service et de l’application
    * Contactez le service clientèle si d’autres problèmes se produisent.
 
 ## Résolution des problèmes {#troubleshooting}
@@ -169,7 +169,7 @@ Suivez ces bonnes pratiques en tant qu’approche générale du débogage :
 
 * Validation des fonctionnalités et des performances avec la version d’aperçu de l’application
 * Validation des fonctionnalités et des performances avec la version de production de l’application
-* Validation à l’aide de l’aperçu JSON de l’éditeur de fragment de contenu
+* Validation avec l’[aperçu JSON](/help/assets/content-fragments/content-fragments-json-preview.md) de l’éditeur de fragments de contenu
 * Inspect du JSON dans l’application cliente pour vérifier la présence de problèmes d’application cliente ou de diffusion
 * Inspect du JSON à l’aide de GraphQL pour vérifier la présence de problèmes liés au contenu mis en cache ou à l’AEM
 
@@ -180,7 +180,7 @@ Pour consigner efficacement un bogue avec l’assistance si vous avez besoin d�
 * Si nécessaire, réalisez des captures d’écran du problème.
 * Documenter un moyen de reproduire le problème
 * Documenter le contenu reproduit par le problème
-* Consignez un problème via le portail d’assistance AEM avec la priorité appropriée.
+* Consignez un problème via le portail d’assistance AEM avec la priorité de l’application.
 
 ## Le Parcours Se Termine - Ou Le Fait-Il ? {#journey-ends}
 
