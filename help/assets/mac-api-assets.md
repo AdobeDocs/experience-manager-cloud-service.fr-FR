@@ -2,13 +2,12 @@
 title: 'API HTTP Assets '
 description: Créer, lire, mettre à jour, supprimer et gérer des ressources numériques à l’aide de l’API HTTP dans [!DNL Experience Manager Assets].
 contentOwner: AG
-feature: Assets HTTP API,APIs
+feature: API HTTP Assets,API
 role: Developer,Architect,Administrator
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-translation-type: tm+mt
 source-git-commit: b989833b7f1fa0c3de91f96e28a21859d97294cb
 workflow-type: tm+mt
-source-wordcount: '1522'
+source-wordcount: '1519'
 ht-degree: 69%
 
 ---
@@ -17,32 +16,32 @@ ht-degree: 69%
 
 ## Présentation {#overview}
 
-L&#39;API HTTP [!DNL Assets] permet de créer-read-update-delete (CRUD) des opérations sur les ressources numériques, y compris sur les métadonnées, les rendus et les commentaires, ainsi que du contenu structuré utilisant les fragments de contenu [!DNL Experience Manager]. Elle est exposée sous `/api/assets` et est implémentée en tant qu’API REST. Elle inclut [la prise en charge des fragments de contenu](/help/assets/content-fragments/assets-api-content-fragments.md).
+L’API HTTP [!DNL Assets] permet d’effectuer des opérations CRUD (créer, lire, mettre à jour, supprimer) sur des ressources numériques, y compris sur les métadonnées, les rendus et les commentaires, ainsi que sur du contenu structuré à l’aide de [!DNL Experience Manager] fragments de contenu. Elle est exposée sous `/api/assets` et est implémentée en tant qu’API REST. Elle inclut [la prise en charge des fragments de contenu](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 Pour accéder à l’API, procédez comme suit :
 
 1. Ouvrez le document du service API à l’adresse `https://[hostname]:[port]/api.json`.
-1. Suivez le lien de service [!DNL Assets] menant à `https://[hostname]:[server]/api/assets.json`.
+1. Suivez le lien du service [!DNL Assets] pointant vers `https://[hostname]:[server]/api/assets.json`.
 
 La réponse de l’API est un fichier JSON pour certains types MIME et un code de réponse pour tous les types MIME. La réponse JSON est facultative et peut ne pas être disponible, par exemple pour les fichiers PDF. Vous pouvez faire appel au code de réponse pour d’autres analyses ou actions.
 
 >[!NOTE]
 >
->Tous les appels d’API liés au transfert ou à la mise à jour des ressources ou des binaires en général (tels que les rendus) sont abandonnés pour [!DNL Experience Manager] en tant que déploiement [!DNL Cloud Service]. Pour charger des fichiers binaires, utilisez plutôt des [API de chargement binaire direct](developer-reference-material-apis.md#asset-upload-technical).
+>Tous les appels d’API liés au chargement ou à la mise à jour de ressources ou de fichiers binaires en général (comme les rendus) sont obsolètes pour [!DNL Experience Manager] en tant que déploiement [!DNL Cloud Service]. Pour charger des fichiers binaires, utilisez plutôt des [API de chargement binaire direct](developer-reference-material-apis.md#asset-upload-technical).
 
 ## Fragments de contenu {#content-fragments}
 
-Un [fragment de contenu](/help/assets/content-fragments/content-fragments.md) est un type spécial de ressource. Il peut être utilisé pour accéder à des données structurées, telles que des textes, des chiffres, des dates, entre autres. Comme il existe plusieurs différences entre les ressources `standard` (telles que les images ou les documents), certaines règles supplémentaires s’appliquent à la gestion des fragments de contenu.
+Un [fragment de contenu](/help/assets/content-fragments/content-fragments.md) est un type spécial de ressource. Il peut être utilisé pour accéder à des données structurées, telles que des textes, des nombres, des dates, etc. Comme il existe plusieurs différences de ressources `standard` (telles que des images ou des documents), certaines règles supplémentaires s’appliquent pour gérer les fragments de contenu.
 
 Pour plus d’informations, voir [Prise en charge des fragments de contenu dans l’ [!DNL Experience Manager Assets] API HTTP](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 ## Modèle de données {#data-model}
 
-L&#39;API HTTP [!DNL Assets] expose deux éléments principaux, les dossiers et les ressources (pour les ressources standard). Il expose également des éléments plus détaillés pour les modèles de données personnalisés qui décrivent le contenu structuré dans les fragments de contenu. Voir [Modèles de données de fragments de contenu](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) pour plus d’informations.
+L’API HTTP [!DNL Assets] expose deux éléments principaux, les dossiers et les ressources (pour les ressources standard). Il expose également des éléments plus détaillés pour les modèles de données personnalisés qui décrivent le contenu structuré dans les fragments de contenu. Voir [Modèles de données de fragments de contenu](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) pour plus d’informations.
 
 ### Dossiers {#folders}
 
-Les dossiers sont comme des répertoires, comme dans les systèmes de fichiers traditionnels. Les dossiers peuvent contenir uniquement des ressources, des dossiers ou des dossiers et des ressources. Les dossiers se composent des éléments suivants :
+Les dossiers sont comme les répertoires dans les systèmes de fichiers traditionnels. Le dossier peut contenir uniquement des ressources, des dossiers ou des dossiers et des ressources. Les dossiers se composent des éléments suivants :
 
 **Entités** : les entités d’un dossier sont ses éléments enfants qui peuvent, à leur tour, être des dossiers et des ressources.
 
@@ -61,13 +60,13 @@ Les dossiers **Liens** présentent trois liens :
 * `parent` : lien vers le dossier parent.
 * `thumbnail` : (facultatif) lien vers une miniature de dossier.
 
-### Ressources {#assets}
+### Assets {#assets}
 
 Dans [!DNL Experience Manager], une ressource contient les éléments suivants :
 
 * Propriétés et métadonnées de la ressource.
 * Fichier binaire initialement chargé de la ressource.
-* Plusieurs rendus configurés. Il peut s’agir d’images de tailles différentes, de vidéos de codages différents ou de pages extraites de fichiers PDF ou [!DNL Adobe InDesign].
+* Plusieurs rendus tels que configurés. Il peut s’agir d’images de tailles différentes, de vidéos de codages différents ou de pages extraites de fichiers PDF ou [!DNL Adobe InDesign].
 * Commentaires facultatifs.
 
 Pour plus d’informations sur les éléments des fragments de contenu, voir [Prise en charge de fragments de contenu dans l’API HTTP Experience Manager Assets](/help/assets/content-fragments/assets-api-content-fragments.md).
@@ -80,7 +79,7 @@ Dans [!DNL Experience Manager], un dossier comprend les composants suivants :
 
 ## Fonctionnalités disponibles {#available-features}
 
-L&#39;API HTTP [!DNL Assets] comprend les fonctionnalités suivantes :
+L’API HTTP [!DNL Assets] comprend les fonctionnalités suivantes :
 
 * [Récupérer une liste de dossiers](#retrieve-a-folder-listing).
 * [Créer un dossier](#create-a-folder)
@@ -96,7 +95,7 @@ L&#39;API HTTP [!DNL Assets] comprend les fonctionnalités suivantes :
 
 >[!NOTE]
 >
->Pour faciliter la lisibilité, les exemples suivants omettent les notations cURL complètes. La notation est corrélée avec [Resty](https://github.com/micha/resty) qui est un wrapper de script pour cURL.
+>Pour faciliter la lisibilité, les exemples suivants omettent les notations cURL complètes. La notation correspond à [Resty](https://github.com/micha/resty) qui est un wrapper de script pour cURL.
 
 <!-- TBD: The Console Manager is not available now. So how to configure the below? 
 
@@ -123,12 +122,12 @@ Récupère une représentation Siren d’un dossier existant et de ses entités 
 
 ## Créer un dossier {#create-a-folder}
 
-Crée un `sling` : `OrderedFolder` au chemin d’accès donné. Si `*` est fourni à la place d’un nom de noeud, la servlet utilise le nom du paramètre comme nom de noeud. La demande accepte l’une des conditions suivantes :
+Crée un `sling` : `OrderedFolder` au chemin donné. Si `*` est fourni à la place d’un nom de noeud, le servlet utilise le nom du paramètre comme nom de noeud. La demande accepte l’une des conditions suivantes :
 
 * Représentation Siren du nouveau dossier
-* Ensemble de paires nom-valeur, codées en `application/www-form-urlencoded` ou `multipart`/ `form`- `data`. Elles sont utiles pour créer un dossier directement à partir d’un formulaire HTML.
+* Ensemble de paires nom-valeur, codées sous la forme `application/www-form-urlencoded` ou `multipart`/ `form`- `data`. Ces fonctions sont utiles pour créer un dossier directement à partir d’un formulaire HTML.
 
-En outre, les propriétés du dossier peuvent être spécifiées en tant que paramètres de requête d’URL.
+En outre, les propriétés du dossier peuvent être spécifiées en tant que paramètres de requête URL.
 
 Un appel d’API échoue avec un code de réponse `500` si le nœud parent du chemin d’accès fourni n’existe pas. Un appel renvoie un code de réponse `409` si le dossier existe.
 
@@ -148,11 +147,11 @@ Un appel d’API échoue avec un code de réponse `500` si le nœud parent du ch
 
 ## Créer une ressource {#create-an-asset}
 
-Voir [transfert de ressources](developer-reference-material-apis.md) pour plus d’informations sur la création d’une ressource. Vous ne pouvez pas créer de fichier à l’aide de l’API HTTP.
+Voir [Chargement de ressources](developer-reference-material-apis.md) pour plus d’informations sur la création d’une ressource. Vous ne pouvez pas créer de ressource à l’aide de l’API HTTP.
 
 ## Mettre à jour un fichier binaire de ressource {#update-asset-binary}
 
-Voir [transfert de ressources](developer-reference-material-apis.md) pour plus d’informations sur la mise à jour des fichiers binaires. Vous ne pouvez pas mettre à jour un fichier binaire à l’aide de l’API HTTP.
+Voir [Chargement de ressources](developer-reference-material-apis.md) pour plus d’informations sur la mise à jour des fichiers binaires de ressources. Vous ne pouvez pas mettre à jour un fichier binaire de ressource à l’aide de l’API HTTP.
 
 ## Mettre à jour les métadonnées d’une ressource {#update-asset-metadata}
 
@@ -200,7 +199,7 @@ Les mises à jour remplacent, respectivement, un rendu de ressource par les nouv
 
 ## Ajouter un commentaire pour une ressource {#create-an-asset-comment}
 
-**Paramètres** : Les paramètres sont  `message` pour le corps du message du commentaire et  `annotationData` pour les données d’annotation au format JSON.
+**Paramètres** : Les paramètres sont  `message` pour le corps de message du commentaire et  `annotationData` pour les données d’annotation au format JSON.
 
 **Requête** : `POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
 
@@ -238,7 +237,7 @@ Déplace un dossier ou une ressource de l’emplacement indiqué vers une nouvel
 
 * `X-Destination` – un nouvel URI de destination appartenant à la portée de la solution d’API pour copier la ressource.
 * `X-Depth` – `infinity` ou `0`. L’utilisation du code `0` entraîne la copie exclusive de la ressource et de ses propriétés, mais pas de ses enfants.
-* `X-Overwrite` - Utiliser soit  `T` pour supprimer de force une ressource existante, soit  `F` pour empêcher le remplacement d&#39;une ressource existante.
+* `X-Overwrite` - Utilisez soit  `T` pour supprimer de force une ressource existante, soit  `F` pour empêcher le remplacement d’une ressource existante.
 
 **Requête** : `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
@@ -269,9 +268,9 @@ Supprime une ressource (arborescence) pour le chemin indiqué.
 
 * Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne sont plus disponibles via l’interface web [!DNL Assets] ni par le biais de l’API HTTP. L’API renvoie un message d’erreur 404 si l’[!UICONTROL heure d’activation] se situe dans le futur ou si l’[!UICONTROL heure de désactivation] se situe dans le passé.
 
-* L’API HTTP Assets ne renvoie pas les métadonnées complètes. Les espaces de nommage sont codés en dur et seuls ces espaces de nommage sont renvoyés. Pour obtenir des métadonnées complètes, voir le chemin d’accès au fichier `/jcr_content/metadata.json`.
+* L’API HTTP Assets ne renvoie pas les métadonnées complètes. Les espaces de noms sont codés en dur et seuls ces espaces de noms sont renvoyés. Pour obtenir des métadonnées complètes, voir le chemin d’accès à la ressource `/jcr_content/metadata.json`.
 
-* Certaines propriétés de dossier ou de fichier sont mises en correspondance avec un préfixe différent lors de la mise à jour à l’aide d’API. Le préfixe `jcr` de `jcr:title`, `jcr:description` et `jcr:language` est remplacé par le préfixe `dc`. Par conséquent, dans le JSON renvoyé, `dc:title` et `dc:description` contiennent respectivement les valeurs de `jcr:title` et `jcr:description`.
+* Certaines propriétés de dossier ou de ressource sont mappées à un préfixe différent lors de la mise à jour à l’aide d’API. Le préfixe `jcr` de `jcr:title`, `jcr:description` et `jcr:language` est remplacé par le préfixe `dc`. Par conséquent, dans le JSON renvoyé, `dc:title` et `dc:description` contiennent respectivement les valeurs de `jcr:title` et `jcr:description`.
 
 >[!MORELIKETHIS]
 >
