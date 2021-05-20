@@ -1,14 +1,13 @@
 ---
 title: Guide de référence pour l’API JavaScript ContextHub
 description: L’API JavaScript ContextHub est disponible pour les scripts lorsque le composant ContextHub a été ajouté à la page
-translation-type: tm+mt
-source-git-commit: 3277d7470c1abdcc1f759c87e2c1a7ffb3390f47
+exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '4621'
 ht-degree: 100%
 
 ---
-
 
 # Guide de référence pour l’API JavaScript ContextHub {#contexthub-javascript-api-reference}
 
@@ -118,7 +117,7 @@ Représente un segment ContextHub. Utilisez `ContextHub.SegmentEngine.SegmentMan
 
 Renvoie le nom du segment sous forme de chaîne.
 
-#### getPath()   {#getpath}
+#### getPath()  {#getpath}
 
 Renvoie le chemin du référentiel pour la définition de segment sous forme de chaîne.
 
@@ -198,7 +197,7 @@ Une valeur `boolean` :
 
 Déclenche l’événement `ready` pour ce magasin. Cette fonction ne possède aucun paramètre et ne renvoie aucune valeur.
 
-#### clean()   {#clean}
+#### clean()  {#clean}
 
 Supprime toutes les données du magasin. La fonction ne possède aucun paramètre et aucune valeur de retour.
 
@@ -402,7 +401,7 @@ Renvoie la réponse brute mise en cache depuis le dernier appel au service JSONP
 
 Un objet qui représente la réponse brute.
 
-#### getServiceDetails()   {#getservicedetails}
+#### getServiceDetails()  {#getservicedetails}
 
 Récupère l’objet de service pour cet objet ContextHub.Store.JSONPStore. L’objet de service contient toutes les informations requises pour créer l’URL du service.
 
@@ -843,7 +842,7 @@ Crée une copie d’un objet de données et y ajoute l’arbre de données d’u
 
 Un objet contenant les données fusionnées.
 
-#### cleanup()   {#cleanup}
+#### cleanup()  {#cleanup}
 
 Crée une copie d’un objet, identifie et supprime les éléments de l’arbre de données qui ne contiennent aucune valeur, une valeur nulle ou indéfinie et renvoie la copie.
 
@@ -855,7 +854,7 @@ Crée une copie d’un objet, identifie et supprime les éléments de l’arbre 
 
 Copie de l’arbre qui est nettoyé.
 
-#### getItem()   {#getitem}
+#### getItem()  {#getitem}
 
 Récupère la valeur d’un objet pour une clé donnée.
 
@@ -912,7 +911,7 @@ Object {
 }
 ```
 
-#### getKeys()   {#getkeys}
+#### getKeys()  {#getkeys}
 
 Récupère toutes les clés de l’arbre de données d’un objet. En option, vous pouvez récupérer uniquement les clés des enfants d’une clé spécifique. Vous pouvez également spécifier un ordre de tri des clés récupérées.
 
@@ -1097,7 +1096,7 @@ Renvoie un type de magasin parmi les candidats enregistrés. Si plus d’un type
 
 Un objet qui représente le magasin candidat enregistré. Si le type de magasin demandé n’est pas enregistré, une erreur est générée.
 
-#### getSupportedStoreTypes()   {#getsupportedstoretypes}
+#### getSupportedStoreTypes()  {#getsupportedstoretypes}
 
 Renvoie les noms des magasins enregistrés en tant que magasins candidats. Cette fonction ne nécessite aucun paramètre.
 
