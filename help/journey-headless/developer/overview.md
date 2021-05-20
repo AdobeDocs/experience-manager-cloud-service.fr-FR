@@ -1,9 +1,9 @@
 ---
 title: AEM Parcours développeur sans tête
 description: Commencez ici pour un parcours guidé à travers les puissantes et flexibles fonctionnalités headless d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement.
-source-git-commit: ddd320ae703225584d4a2055d0f882d238d60987
+source-git-commit: 1ac93a066f808e7dd2ed7e34aa7635e9914a4ea9
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '736'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,7 @@ Bien que vous puissiez accéder directement à une partie spécifique du parcour
 | 4 | [Comment modéliser votre contenu](model-your-content.md) | Découvrez comment modéliser votre structure de contenu. Ensuite, réalisez cette structure pour Adobe Experience Manager (AEM) à l’aide des modèles de fragments de contenu et des fragments de contenu, en vue de la réutiliser sur plusieurs canaux. |
 | 5 | [Comment accéder à votre contenu via AEM API de diffusion](access-your-content.md) | Découvrez comment utiliser des requêtes GraphQL pour accéder au contenu de vos fragments de contenu. |
 | 6 | [Comment mettre à jour votre contenu via les API AEM ressources](update-your-content.md) | Découvrez comment utiliser l’API REST pour accéder au contenu de vos fragments de contenu et le mettre à jour. |
-| 7 | [Comment tout assembler : votre application et votre contenu dans AEM sans affichage](put-it-all-together.md) | Découvrez comment prendre votre projet AEM, y compris les fragments de contenu, vos appels GraphQL, vos appels API REST et votre application, et comment le préparer pour la mise en ligne. |
+| 7 | [Comment tout assembler : votre application et votre contenu dans AEM sans affichage](put-it-all-together.md) | Découvrez comment prendre votre projet AEM et le préparer pour la mise en ligne avec le SDK AEM sans affichage. |
 | 8 | [Comment mettre en ligne votre application sans interface](go-live.md) | Découvrez comment déployer l’application en direct et prendre votre code local dans Git et le déplacer vers Cloud Manager Git pour le pipeline CI/CD. |
 | 9 | [Facultatif - Comment créer des applications d’une seule page (SPA) avec AEM](create-spa.md) | Une fois que vous avez compris AEM fonctionnalités sans interface, découvrez comment combiner une diffusion sans interface utilisateur et sans interface utilisateur et comment créer des SPA modifiables à l’aide de la structure de l’éditeur d’. |
 
