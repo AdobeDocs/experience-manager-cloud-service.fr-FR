@@ -1,14 +1,13 @@
 ---
 title: Implémentation d’un connecteur AEM
 description: Implémentation d’un connecteur AEM
-translation-type: tm+mt
-source-git-commit: b77113ccc55f2063c684d49e2babdd7563b9d6fc
+exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '968'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
-
 
 Implémentation d’un connecteur AEM
 =============================
@@ -62,7 +61,7 @@ Les connecteurs doivent respecter les directives de conditionnement décrites da
 
 En outre, seul Adobe doit écrire du code dans `/libs` ; les clients et les partenaires écrivent du code dans `/apps`.
 
-Les connecteurs existants peuvent également être restructurés pour déplacer toute configuration qui aurait pu placer `/etc` dans d’autres dossiers de niveau supérieur, tels que `/conf`. Cette restructuration a été effectuée dans le cadre de AEM 6.5 et est décrite dans la [documentation AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html).
+Les connecteurs existants peuvent également être restructurés pour déplacer toute configuration qui aurait pu placer `/etc` dans d’autres dossiers de niveau supérieur, tels que `/conf`. Cette restructuration a été effectuée dans le cadre d’AEM 6.5 et est décrite dans la [documentation d’AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr).
 
 Il est recommandé de placer la majorité du code du connecteur sous `/apps/connectors/<vendor>` afin de promouvoir une structure de référentiel nette pour les clients qui ont plusieurs connecteurs.
 
