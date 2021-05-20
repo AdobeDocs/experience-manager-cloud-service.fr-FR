@@ -1,36 +1,35 @@
 ---
 title: Externalisation d’URL
-description: Externalizer est un service OSGi qui vous permet de transformer par programmation un chemin de ressource en une URL externe et absolue.
-translation-type: tm+mt
-source-git-commit: 4c584ceadaa358120d1d4b4cabd7e21ced814b31
+description: L’externaliseur est un service OSGi qui vous permet de transformer par programmation un chemin d’accès aux ressources en une URL externe et absolue.
+exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
+source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 18%
 
 ---
 
-
 # Externalisation d’URL {#externalizing-urls}
 
-En AEM, le **Externalizer** est un service OSGi qui vous permet de transformer par programmation un chemin de ressources (par ex. `/path/to/my/page`) dans une URL externe et absolue (par exemple, `https://www.mycompany.com/path/to/my/page`) en préfixant le chemin d’accès avec un DNS préconfiguré.
+Dans AEM, **Externalizer** est un service OSGi qui vous permet de transformer par programmation un chemin de ressource (par exemple, `/path/to/my/page`) dans une URL externe et absolue (par exemple, `https://www.mycompany.com/path/to/my/page`) en ajoutant un préfixe au chemin d’accès avec un DNS préconfiguré.
 
-Comme un AEM en tant qu’instance de Cloud Service ne peut pas connaître son URL visible en externe et qu’il est parfois nécessaire de créer un lien en dehors de l’étendue de la demande, ce service fournit un emplacement central pour configurer ces URL externes et les créer.
+Étant donné qu’une AEM en tant qu’instance de Cloud Service ne peut pas connaître son URL visible en externe et qu’il est parfois nécessaire de créer un lien en dehors du périmètre de la requête, ce service fournit un emplacement central pour configurer ces URL externes et les créer.
 
-Cet article explique comment configurer le service Externalizer et comment l&#39;utiliser. Pour les détails techniques du service, veuillez consulter le [Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html).
+Cet article explique comment configurer le service Externalizer et comment l’utiliser. Pour obtenir des détails techniques sur le service, reportez-vous aux [Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html).
 
-## Comportement par défaut de l’Externaliseur et comment remplacer {#default-behavior}
+## Comportement par défaut de l’externaliseur et comment remplacer {#default-behavior}
 
-Le service Externalizer est prêt à l’emploi et comporte des valeurs telles que `author-p12345-e6789.adobeaemcloud.com` et `publish-p12345-e6789.adobeaemcloud.com` déjà définies de sorte que, sans aucune intervention, votre AEM en tant qu’installation Cloud Service utilise votre domaine personnalisé.
+Par défaut, le service Externalizer a des valeurs telles que `author-p12345-e6789.adobeaemcloud.com` et `publish-p12345-e6789.adobeaemcloud.com` déjà définies. Ainsi, sans intervention, votre AEM en tant que Cloud Service utilise votre domaine personnalisé.
 
-Pour remplacer ces valeurs, utilisez les variables d’environnement de Cloud Manager comme décrit dans l’article [Configuration d’OSGi pour AEM en tant que Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) et définition des variables prédéfinies `AEM_CDN_DOMAIN_AUTHOR` et `AEM_CDN_DOMAIN_PUBLISH`.
+Pour remplacer ces valeurs, utilisez les variables d’environnement Cloud Manager comme décrit dans l’article [Configuration d’OSGi pour AEM en tant que Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) et définition des variables `AEM_CDN_DOMAIN_AUTHOR` prédéfinies et `AEM_CDN_DOMAIN_PUBLISH` prédéfinies.
 
 ## Configuration du service Externalizer {#configuring-the-externalizer-service}
 
-Le service Externalizer vous permet de définir de manière centralisée le domaine qui peut être utilisé pour préfixer par programmation les chemins de ressources. Le service Externalizer ne doit être utilisé que pour les applications avec un seul domaine.
+Le service Externalizer vous permet de définir de manière centralisée le domaine qui peut être utilisé pour préfixer par programmation les chemins d’accès aux ressources. Le service Externalizer ne doit être utilisé que pour les applications d’un seul domaine.
 
 >[!NOTE]
 >
->Comme lors de l&#39;application de toute configuration [OSGi pour AEM en tant que Cloud Service,](/help/implementing/deploying/overview.md#osgi-configuration) les étapes suivantes doivent être effectuées sur une instance de développeur locale, puis validées dans votre code de projet pour le déploiement.
+>Comme lors de l’application de toutes les configurations [OSGi pour AEM en tant que Cloud Service,](/help/implementing/deploying/overview.md#osgi-configuration) les étapes suivantes doivent être exécutées sur une instance de développeur locale, puis validées dans le code de votre projet pour le déploiement.
 
 Pour définir un mappage de domaine pour le service Externalizer, procédez comme suit :
 
@@ -38,9 +37,9 @@ Pour définir un mappage de domaine pour le service Externalizer, procédez comm
 
    `https://<host>:<port>/system/console/configMgr`
 
-1. Cliquez sur **Externalisateur de liens Day CQ** pour ouvrir la boîte de dialogue de configuration.
+1. Cliquez sur **Day CQ Link Externalizer** pour ouvrir la boîte de dialogue de configuration.
 
-   ![Configuration OSGi de Externalizer](./assets/externalizer-osgi.png)
+   ![Configuration OSGi de l’externaliseur](./assets/externalizer-osgi.png)
 
    >[!NOTE]
    >
@@ -62,15 +61,15 @@ Pour définir un mappage de domaine pour le service Externalizer, procédez comm
 
    Par exemple : `production https://my.production.instance`
 
-   Les noms de mappage suivants sont prédéfinis et doivent toujours être définis en fonction de leur utilisation AEM :
+   Les noms de mappage suivants sont prédéfinis et doivent toujours être définis car AEM s’y appuie :
 
-   * `local` - l&#39;instance locale
+   * `local` - instance locale
    * `author` - le DNS du système de création
-   * `publish` - DNS du site Web destiné au public
+   * `publish` - DNS du site web public
 
    >[!NOTE]
    >
-   >Une configuration personnalisée vous permet d’ajouter une nouvelle catégorie, telle que `production`, `staging` ou même des systèmes externes non AEM tels que `my-internal-webservice`. Il est utile d’éviter de coder en dur de telles URL à différents emplacements de la base de code d’un projet.
+   >Une configuration personnalisée vous permet d’ajouter une nouvelle catégorie, telle que `production`, `staging` ou même des systèmes externes non AEM tels que `my-internal-webservice`. Il est utile d’éviter de coder en dur de telles URL à différents endroits dans le code base d’un projet.
 
 1. Cliquez sur **Enregistrer** pour enregistrer vos modifications.
 
@@ -80,7 +79,7 @@ Cette section illustre quelques exemples d’utilisation du service Externalizer
 
 >[!NOTE]
 >
->Aucun lien absolu ne doit être créé dans le contexte du code HTML. Par conséquent, cet utilitaire ne devrait pas être utilisé dans de tels cas.
+>Aucun lien absolu ne doit être créé dans le contexte du code HTML. Par conséquent, cet utilitaire ne doit pas être utilisé dans de tels cas.
 
 * **Pour externaliser un chemin d’accès avec le domaine « publish » :**
 
@@ -88,7 +87,7 @@ Cette section illustre quelques exemples d’utilisation du service Externalizer
    String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";
    ```
 
-   En supposant le mappage de domaines :
+   En supposant le mappage de domaine :
 
    * `publish https://www.website.com`
 
@@ -102,7 +101,7 @@ Cette section illustre quelques exemples d’utilisation du service Externalizer
    String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";
    ```
 
-   En supposant le mappage de domaines :
+   En supposant le mappage de domaine :
 
    * `author https://author.website.com`
 
@@ -116,7 +115,7 @@ Cette section illustre quelques exemples d’utilisation du service Externalizer
    String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";
    ```
 
-   En supposant le mappage de domaines :
+   En supposant le mappage de domaine :
 
    * `local https://publish-3.internal`
 
