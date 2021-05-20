@@ -1,21 +1,20 @@
 ---
 title: Prise en charge des fragments de contenu d’Adobe Experience Manager as a Cloud Service dans l’API Assets HTTP
-description: Découvrez la prise en charge des fragments de contenu dans l’API HTTP Ressources, une partie importante de la fonction de diffusion sans tête AEM.
-feature: Content Fragments,Assets HTTP API
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+description: Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets, un élément important de la fonctionnalité de diffusion AEM sans interface.
+feature: Fragments de contenu, API HTTP Assets
+exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1958'
 ht-degree: 97%
 
 ---
 
-
 # Prise en charge des fragments de contenu dans l’API HTTP AEM Assets {#content-fragments-support-in-aem-assets-http-api}
 
 ## Présentation {#overview}
 
-Découvrez la prise en charge des fragments de contenu dans l’API HTTP Ressources, une partie importante de la fonction de diffusion sans tête AEM.
+Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets, un élément important de la fonctionnalité de diffusion AEM sans interface.
 
 >[!NOTE]
 >
@@ -50,7 +49,7 @@ L’API REST Assets :
 
 * met en œuvre le [format SIREN](https://github.com/kevinswiber/siren)
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 L’API REST Assets est disponible pour chaque installation prête à l’emploi d’une version récente d’Adobe Experience Manager as a Cloud Service.
 
@@ -209,7 +208,7 @@ L’API REST Assets expose l’accès aux propriétés d’un dossier (par exemp
 >
 >Selon le type des ressources et des dossiers enfants, la liste des entités enfants peut déjà contenir l’ensemble complet de propriétés qui définissent l’entité enfant respective. Une autre possibilité consiste à afficher uniquement un jeu limité de propriétés pour une entité dans cette liste d’entités enfants.
 
-### Ressources {#assets}
+### Assets {#assets}
 
 Si une ressource est demandée, la réponse renvoie ses métadonnées, telles que le titre, le nom et les autres informations, comme défini par le schéma des ressources respectives.
 
@@ -232,7 +231,7 @@ Les fragments de contenu :
 
 * Sont également considérés comme atomiques, c’est-à-dire que les éléments et les variations sont exposés dans les propriétés du fragment et non pas en tant que liens ou entités enfants. Cela permet un accès efficace à la charge utile d’un fragment.
 
-#### Modèles et fragments de contenu  {#content-models-and-content-fragments}
+#### Modèles et fragments de contenu {#content-models-and-content-fragments}
 
 Actuellement, les modèles qui définissent la structure d’un fragment de contenu ne sont pas exposés via une API HTTP. Par conséquent, le *consommateur* doit disposer d’informations sur le modèle d’un fragment (au moins un minimum), bien que la plupart des informations puissent être déduites de la charge utile (par exemple, les types de données, etc.). Font partie de la définition.
 
@@ -392,4 +391,3 @@ Pour plus d’informations, voir :
 
 * [Documentation de l’API HTTP Assets](/help/assets/mac-api-assets.md)
 * [Session AEM Gem : OAuth](https://helpx.adobe.com/fr/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
-
