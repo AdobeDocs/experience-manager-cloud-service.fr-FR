@@ -1,14 +1,13 @@
 ---
 title: Phase de planification
 description: Phase de planification
-translation-type: tm+mt
-source-git-commit: df3eb65817a00fe31eff466565b9de5e0a72ccae
+exl-id: 987cb929-7871-4fec-8ef5-4d2f5f2f2186
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 100%
 
 ---
-
 
 # Planification {#planning-phase}
 
@@ -60,4 +59,3 @@ Une fois le niveau d’effort estimé pour passer à Cloud Service, vous devez i
 Si vous n’avez pas encore défini d’indicateurs de performance clés (IPC), il est recommandé de les établir pour votre implémentation d’Adobe Experience Manager (AEM). Votre équipe pourra ainsi se concentrer sur l’essentiel.
 
 Pour savoir comment choisir les IPC appropriés pour vos objectifs métier, voir [Développement d’indicateurs de performance clés](https://guided.adobe.com/welcome/aem/part6.html).
-
