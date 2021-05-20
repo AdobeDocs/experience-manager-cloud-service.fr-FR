@@ -8,8 +8,7 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-translation-type: tm+mt
-source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
+source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 85%
@@ -28,7 +27,7 @@ Le développement de projets AEM Commerce basés sur Commerce Integration Framew
 
 >[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
 
-Un environnement de développement local est recommandé pour travailler avec des projets CIF. L&#39;Ajoute du FCI, qui est prévue pour l&#39;AEM en tant que Cloud Service, est également disponible pour le développement local. Il peut être téléchargé à partir du [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+Un environnement de développement local est recommandé pour travailler avec des projets CIF. Le module complémentaire CIF fourni pour AEM en tant que Cloud Service est également disponible pour le développement local. Il peut être téléchargé à partir du [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 Le module complémentaire est fourni sous la forme d’une archive de fonctionnalités Sling. Le fichier zip disponible sur le portail de distribution de logiciels comprend deux fichiers archivés de fonctionnalités Sling, l’un pour l’auteur AEM et l’autre pour les instances de publication AEM.
 
@@ -83,7 +82,7 @@ Pour le développement local du module complémentaire CIF avec le SDK AEM as a 
    set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
    ```
 
-   Cette variable est utilisée par AEM pour se connecter à votre système commercial. En outre, le module complémentaire CIF inclut un proxy inverse local pour rendre le point de terminaison Commerce GraphQL disponible localement. Il est utilisé par les outils de création CIF (console de produit et sélecteurs) et pour les composants CIF côté client effectuant des appels GraphQL directs.
+   Cette variable est utilisée par AEM pour se connecter à votre système commercial. En outre, le module complémentaire CIF inclut un proxy inverse local pour rendre le point d’entrée GraphQL de Commerce disponible localement. Il est utilisé par les outils de création CIF (console de produit et sélecteurs) et pour les composants CIF côté client effectuant des appels GraphQL directs.
 
    Cette variable doit également être configurée pour l’environnement AEM as a Cloud Service. Pour plus d’informations sur les variables, voir [Configuration d’OSGi pour AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#local-development).
 
@@ -101,7 +100,7 @@ Pour le développement local du module complémentaire CIF avec le SDK AEM as a 
 
 >[!NOTE]
 >
->Assurez-vous que vous avez début AEM en tant que SDK Cloud Service dans la même fenêtre de terminal que la variable d’environnement a été définie à l’étape 5. Si vous le début dans une fenêtre de terminal distincte ou que vous cliquez par doublon sur le fichier .jar, assurez-vous que la variable d&#39;environnement est visible.
+>Assurez-vous de commencer AEM en tant que SDK Cloud Service dans la même fenêtre de terminal que la variable d’environnement a été définie à l’étape 5. Si vous le lancez dans une fenêtre de terminal distincte ou que vous double-cliquez sur le fichier .jar, assurez-vous que la variable d’environnement est visible.
 
 Vérifiez la configuration via la console OSGI : `http://localhost:4502/system/console/osgi-installer`. La liste doit inclure les bundles liés au module complémentaire CIF, le module de contenu et les configurations OSGI, comme défini dans le fichier de modèle de fonctionnalité.
 
@@ -135,7 +134,7 @@ mvn -B archetype:generate \
  -D includeCommerce=y
 ```
 
-Les composants de base CIF peuvent être utilisés dans n&#39;importe quel projet en incluant le package `all` fourni ou individuellement en utilisant le package de contenu CIF et les lots OSGI associés. Pour ajouter manuellement des composants principaux CIF à un projet, utilisez les dépendances suivantes :
+Les composants principaux CIF peuvent être utilisés dans n’importe quel projet en incluant le module `all` fourni ou individuellement en utilisant le module de contenu CIF et les lots OSGI associés. Pour ajouter manuellement des composants principaux CIF à un projet, utilisez les dépendances suivantes :
 
 ```java
 <dependency>
@@ -169,7 +168,7 @@ Les composants de base CIF peuvent être utilisés dans n&#39;importe quel proje
 
 ### Utilisation du magasin de référence Venia AEM
 
-Une deuxième manière de démarrer un projet CIF consiste à cloner et à utiliser le [magasin de référence Venia AEM](https://github.com/adobe/aem-cif-guides-venia). Le magasin de référence Venia AEM est un exemple d’application storefront de référence qui illustre l’utilisation des composants principaux CIF pour AEM. Il s’agit d’un ensemble d’exemples de bonnes pratiques et d’un point de départ potentiel pour développer votre propre fonctionnalité.
+Une deuxième manière de démarrer un projet CIF consiste à cloner et à utiliser le [magasin de référence Venia AEM](https://github.com/adobe/aem-cif-guides-venia). Le magasin de référence Venia AEM est un exemple d’application storefront de référence qui illustre l’utilisation des composants principaux CIF pour AEM. Il s’agit d’un ensemble de bonnes pratiques et d’un point de départ potentiel pour développer vos propres fonctionnalités.
 
 Pour commencer à utiliser le magasin de référence Venia AEM, il vous suffit de cloner le référentiel Git et de personnaliser le projet en fonction de vos besoins.
 
