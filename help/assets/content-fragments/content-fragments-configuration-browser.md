@@ -1,10 +1,9 @@
 ---
 title: Fragments de contenu - Explorateur de configurations
-description: Découvrez comment activer certaines fonctionnalités de fragment de contenu dans l’explorateur de configuration afin d’exploiter AEM puissantes fonctionnalités de diffusion sans tête.
+description: Découvrez comment activer certaines fonctionnalités de fragments de contenu dans l’explorateur de configurations afin d’exploiter AEM puissantes fonctionnalités de diffusion sans interface utilisateur.
 feature: Fragments de contenu
 role: Business Practitioner
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-translation-type: tm+mt
 source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
 source-wordcount: '288'
@@ -14,7 +13,7 @@ ht-degree: 73%
 
 # Fragments de contenu - Explorateur de configurations {#content-fragments-configuration-browser}
 
-Découvrez comment activer certaines fonctionnalités de fragment de contenu dans l’explorateur de configuration afin d’exploiter AEM puissantes fonctionnalités de diffusion sans tête.
+Découvrez comment activer certaines fonctionnalités de fragments de contenu dans l’explorateur de configurations afin d’exploiter AEM puissantes fonctionnalités de diffusion sans interface utilisateur.
 
 ## Activation de la fonctionnalité de fragments de contenu pour votre instance {#enable-content-fragment-functionality-instance}
 
@@ -25,10 +24,10 @@ Avant d’utiliser les fragments de contenu, vous devez utiliser l’**Explorate
 
 >[!CAUTION]
 >
->Si vous n’activez pas **Modèles de fragments de contenu** :
+>Si vous n’activez pas les **modèles de fragment de contenu** :
 >
->* l&#39;option **Créer** ne sera pas disponible pour la création de nouveaux modèles.
->* vous ne pourrez pas [sélectionner la configuration Sites pour créer le point final associé](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint).
+>* L’option **Créer** ne sera pas disponible pour la création de modèles.
+>* vous ne pourrez pas [sélectionner la configuration Sites pour créer le point d’entrée ](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint) associé.
 
 
 Pour activer la fonctionnalité de fragments de contenu, vous devez :
