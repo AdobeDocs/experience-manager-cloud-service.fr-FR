@@ -3,7 +3,7 @@ title: Gestion des métadonnées des ressources numériques
 description: Découvrez les types de métadonnées ainsi que l’organisation et le traitement des fichiers par  [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] en fonction de leurs métadonnées.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Gestion des ressources,Métadonnées
+feature: Gestion des ressources, métadonnées
 role: Business Practitioner,Architect,Administrator
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
 source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
@@ -122,11 +122,11 @@ Enterprise Manager Assets vous permet de modifier les métadonnées de plusieu
    >Lorsque vous sélectionnez plusieurs ressources, la plus petite forme parent commune est sélectionnée. En d’autres termes, la page [!UICONTROL Propriétés] affiche uniquement les champs de métadonnées communs aux pages [!UICONTROL Propriétés] de toutes les ressources individuelles.
 
 1. Modifiez les propriétés de métadonnées des ressources sélectionnées dans les différents onglets.
-1. Pour vue à l’éditeur de métadonnées d’un fichier spécifique, annulez la sélection des fichiers restants dans la liste. Les champs de l’éditeur de métadonnées sont renseignés avec les métadonnées de la ressource particulière.
+1. Pour afficher l’éditeur de métadonnées pour une ressource spécifique, annulez la sélection des ressources restantes dans la liste. Les champs de l’éditeur de métadonnées sont renseignés avec les métadonnées de la ressource particulière.
 
    >[!NOTE]
    >
-   >* Dans la page [!UICONTROL Propriétés], vous pouvez supprimer des ressources de la liste de ressources en annulant la sélection. La liste des ressources contient toutes les ressources sélectionnées par défaut. Les métadonnées des ressources que vous supprimez de la liste ne sont pas mises à jour.
+   >* Sur la page [!UICONTROL Propriétés] , vous pouvez supprimer des ressources de la liste des ressources en annulant la sélection. La liste des ressources contient toutes les ressources sélectionnées par défaut. Les métadonnées des ressources que vous supprimez de la liste ne sont pas mises à jour.
    >* En haut de la liste des ressources, cochez la case située en regard de l’option **[!UICONTROL Titre]** pour passer de la sélection des ressources à l’effacement de la liste, et inversement.
 
 
