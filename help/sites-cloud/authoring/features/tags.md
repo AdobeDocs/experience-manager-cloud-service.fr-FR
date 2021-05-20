@@ -1,14 +1,13 @@
 ---
 title: Utilisation des balises
 description: Les balises sont un moyen simple et rapide de classer le contenu de votre site web.
-translation-type: tm+mt
-source-git-commit: 96bde8b7f169256b352c1663f902b874afd6a73b
+exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 100%
 
 ---
-
 
 # Utilisation des balises {#using-tags}
 
