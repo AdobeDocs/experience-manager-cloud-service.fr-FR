@@ -1,8 +1,7 @@
 ---
 title: Guide de démarrage rapide sur la création de fragments de contenu découplés
-description: Découvrez comment utiliser AEM Fragments de contenu pour concevoir, créer, traiter et utiliser du contenu indépendant des pages pour une diffusion sans en-tête.
+description: Découvrez comment utiliser AEM fragments de contenu pour concevoir, créer, organiser et utiliser du contenu indépendant des pages pour une diffusion sans interface utilisateur.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-translation-type: tm+mt
 source-git-commit: 088fa5c90d549c52ca2832bd026be4fcddb31b78
 workflow-type: tm+mt
 source-wordcount: '392'
@@ -12,7 +11,7 @@ ht-degree: 89%
 
 # Guide de démarrage rapide sur la création de fragments de contenu découplés {#creating-content-fragments}
 
-Découvrez comment utiliser AEM Fragments de contenu pour concevoir, créer, traiter et utiliser du contenu indépendant des pages pour une diffusion sans en-tête.
+Découvrez comment utiliser AEM fragments de contenu pour concevoir, créer, organiser et utiliser du contenu indépendant des pages pour une diffusion sans interface utilisateur.
 
 ## Que sont les fragments de contenu ? {#what-are-content-fragments}
 
