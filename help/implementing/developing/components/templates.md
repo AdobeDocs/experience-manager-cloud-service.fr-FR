@@ -1,14 +1,13 @@
 ---
 title: Modèles de page
 description: Les modèles de page sont utilisés lors de la création d’une page qui servira de base à la nouvelle page
-translation-type: tm+mt
-source-git-commit: 73e7f9a5b0976ebd5228c182d47c1058290f7629
+exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '3296'
 ht-degree: 100%
 
 ---
-
 
 # Modèles de page {#page-templates}
 
@@ -451,7 +450,7 @@ Définit le contenu initial dont une nouvelle page disposera au moment de sa cr�
 * Le nœud `root` contient une liste de composants permettant de définir les éléments qui seront disponibles dans la page créée.
 * Si du contenu est ajouté à un composant en mode de structure et que ce composant est ensuite déverrouillé (ou inversement), ce contenu est utilisé comme contenu initial.
 
-### Disposition {#layout}
+### Mise en page {#layout}
 
 Lorsque vous [modifiez un modèle, vous pouvez définir la mise en page](/help/sites-cloud/authoring/features/templates.md), qui utilise une [mise en page réactive standard](/help/sites-cloud/authoring/features/responsive-layout.md).
 
@@ -489,7 +488,6 @@ Les stratégies de page vous permettent de définir la [stratégie de contenu](#
    * Définir la propriété de statut sur le nœud `jcr:content`.
 
       * Par exemple, sous :
-
          `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Définissez la propriété :
@@ -502,7 +500,6 @@ Les stratégies de page vous permettent de définir la [stratégie de contenu](#
 
    * [Définissez le ou les chemins d’accès des modèles autorisés dans les **Propriétés de page**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) de la page appropriée ou de la page racine d’une sous-branche.
    * Définissez la propriété :
-
       `cq:allowedTemplates`
 Sur le 
 nœud `jcr:content` de la branche requise.
@@ -584,10 +581,12 @@ Le diagramme suivant illustre le processus d’évaluation de modèle :
 >Par conséquent, Adobe vous recommande de commencer simplement, en définissant :
 >
 >* uniquement la propriété `cq:allowedTemplates` ;
+   >
+   >
+* uniquement sur la racine du site.
 >
->* uniquement sur la racine du site.
 >
->Pour consulter un exemple, reportez-vous au contenu du [tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) : `/content/wknd/jcr:content`
+Pour consulter un exemple, reportez-vous au contenu du [tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) : `/content/wknd/jcr:content`
 >
 >Les propriétés `allowedPaths`, `allowedParents` et `allowedChildren` peuvent également être placées sur les modèles pour définir des règles plus élaborées. Cependant, dans la mesure du possible, il est *beaucoup* plus simple de définir d’autres propriétés `cq:allowedTemplates` dans des sous-sections du site si des restrictions supplémentaires des modèles autorisés s’imposent.
 >
