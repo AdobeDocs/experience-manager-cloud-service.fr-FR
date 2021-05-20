@@ -1,14 +1,13 @@
 ---
 title: Activation des fonctionnalités d’application web progressive
 description: AEM Sites permet à l’auteur du contenu d’activer des fonctionnalités d’application web progressive sur n’importe quel site par le biais d’une configuration simple plutôt que par un codage.
-translation-type: tm+mt
-source-git-commit: f130fe34e5c57b9fc78697374a5a9772da3c4c17
+exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2032'
 ht-degree: 75%
 
 ---
-
 
 # Activation des fonctionnalités d’application web progressive {#enabling-pwa}
 
@@ -29,7 +28,7 @@ Avant d’utiliser cette fonctionnalité, il est recommandé de discuter de cett
 
 >[!NOTE]
 >
->Les fonctionnalités décrites dans ce document devraient être mises à disposition avec la version de [mars 2021 de AEM en tant que Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr)
+>Les fonctionnalités décrites dans ce document doivent être mises à disposition avec la version de [mars 2021 d’AEM en tant que Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr)
 
 ## Présentation {#introduction}
 
@@ -46,22 +45,22 @@ En PWA, l’utilisateur dispose d’une copie locale du site, ce qui lui permet 
 >
 >Les applications web progressives sont une technologie en évolution et la prise en charge de l’installation d’applications locales et d’autres fonctionnalités [dépend du navigateur utilisé.](https://developer.mozilla.org/fr/docs/Web/Progressive_web_apps/Installable_PWAs#summary)
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Pour pouvoir utiliser les fonctionnalités PWA sur votre site, l’environnement de votre projet requiert deux éléments :
 
-1. [Utilisez les ](#adjust-components) composants principaux pour tirer parti de cette fonctionnalité
+1. [Utilisation des ](#adjust-components) composants principaux pour tirer parti de cette fonctionnalité
 1. [Ajustez les règles de votre Dispatcher](#adjust-dispatcher) pour exposer les fichiers requis.
 
 L’auteur devra coordonner ces étapes techniques avec l’équipe de développement. Ces étapes ne sont requises qu’une seule fois par site.
 
-### Utilisez les composants de base.{#adjust-components}
+### Utilisation des composants de base {#adjust-components}
 
-Les composants de base de la version 2.15.0 et des versions ultérieures prennent entièrement en charge les fonctionnalités PWA des sites AEM. Comme AEMaaCS inclut toujours la dernière version des composants principaux, vous pouvez tirer parti des fonctionnalités de PWA prêtes à l’emploi. Votre projet AEMaaCS répond automatiquement à cette exigence.
+La version 2.15.0 des composants principaux et versions ultérieures prennent entièrement en charge les fonctionnalités de PWA des sites AEM. Comme AEMaaCS inclut toujours la dernière version des composants principaux, vous pouvez tirer parti des fonctionnalités de PWA prêtes à l’emploi. Votre projet AEMaaCS satisfait automatiquement à cette exigence.
 
 >[!NOTE]
 >
->L&#39;Adobe ne recommande pas d&#39;utiliser les fonctionnalités PWA sur les composants ou composants personnalisés non [étendus à partir des composants principaux.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=fr)
+>Adobe ne recommande pas d’utiliser les fonctionnalités de PWA sur des composants personnalisés ou des composants non [étendus à partir des composants principaux.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=fr)
 <!--
 Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker,](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) which supports the PWA features.
 
@@ -98,7 +97,7 @@ File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filt
 /0102 { /type "allow" /extension "webmanifest" /path "/content/*/manifest" }
 ```
 
-Selon votre projet, vous pouvez inclure différents types d’extensions aux règles de réécriture. L&#39;extension `webmanifest` peut s&#39;avérer utile pour inclure dans les conditions de réécriture lorsque vous avez introduit une règle qui masque et redirige les requêtes vers `/content/<projectName>`.
+Selon votre projet, vous pouvez inclure différents types d’extensions aux règles de réécriture. L’extension `webmanifest` peut être utile pour inclure dans les conditions de réécriture lorsque vous avez introduit une règle qui masque et redirige les requêtes vers `/content/<projectName>`.
 
 ```text
 RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
@@ -141,7 +140,7 @@ Maintenant que vous avez [configuré votre site pour prendre en charge le PWA,](
 
 1. Accédez au site par le biais d’un [navigateur compatible.](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)
 1. Une nouvelle icône s’affiche dans la barre d’adresse du navigateur, indiquant que le site peut être installé en tant qu’application locale.
-   * Selon le navigateur, l’icône peut varier et le navigateur peut également afficher une notification (comme une bannière ou une boîte de dialogue) indiquant qu’il est possible de procéder à l’installation en tant qu’application locale.
+   * Selon le navigateur, l’icône peut varier et le navigateur peut également afficher une notification (une bannière ou une boîte de dialogue, par exemple) indiquant qu’il est possible de l’installer en tant qu’application locale.
 1. Installez l’application.
 1. L’application sera installée sur l’écran d’accueil de votre appareil.
 1. Ouvrez l’application, parcourez le site et vérifiez que les pages sont disponibles hors ligne.
@@ -208,25 +207,25 @@ Toutes les fonctionnalités PWA ne sont pas disponibles pour AEM Sites. Il exis
 
 * Les pages ne sont pas automatiquement synchronisées ni mises à jour si l’utilisateur n’utilise pas l’application.
 
-Adobe fait également les recommandations suivantes lorsque vous implémentez le PWA.
+Adobe effectue également les recommandations suivantes lorsque vous implémentez PWA.
 
-### Réduisez le nombre de ressources à mettre en cache. {#minimize-precache}
+### Réduisez le nombre de ressources à pré-mettre en cache. {#minimize-precache}
 
-Adobe vous conseille de limiter le nombre de pages à mettre en cache.
+Adobe vous conseille de limiter le nombre de pages à pré-mettre en cache.
 
-* Incorporer des bibliothèques pour réduire le nombre d’entrées à gérer lors de la mise en cache préalable.
+* Incorporer des bibliothèques afin de réduire le nombre d’entrées à gérer lors de la pré-mise en cache.
 * Limitez le nombre de variations d’image à pré-mettre en cache.
 
-### Activez le PWA une fois les scripts et feuilles de style du projet stabilisés. {#pwa-stabilized}
+### Activez PWA une fois que les scripts et les feuilles de style du projet sont stabilisés. {#pwa-stabilized}
 
-Les bibliothèques clientes sont fournies avec l’ajout d’un sélecteur de cache observant le modèle suivant `lc-<checksumHash>-lc`. Chaque fois qu’un des fichiers (et dépendances) qui compose une modification de bibliothèque, ce sélecteur change. Si vous avez répertorié une bibliothèque cliente à mettre en cache par le service-worker et que vous souhaitez vous référer à une nouvelle version, vous récupérez et mettez à jour manuellement l’entrée. Par conséquent, nous vous conseillons de configurer votre site pour qu&#39;il soit un PWA une fois les scripts et feuilles de style du projet stabilisés.
+Les bibliothèques clientes sont fournies avec l’ajout d’un sélecteur de cache observant le modèle suivant `lc-<checksumHash>-lc`. Chaque fois que l’un des fichiers (et dépendances) qui compose une bibliothèque change, ce sélecteur change. Si vous avez répertorié une bibliothèque-client à pré-mettre en cache par le service-worker et que vous souhaitez vous référer à une nouvelle version, vous récupérez manuellement et mettez à jour l’entrée. Par conséquent, nous vous conseillons de configurer votre site pour qu’il devienne un PWA une fois les scripts et les feuilles de style du projet stabilisés.
 
 ### Réduisez le nombre de variations d’image. {#minimize-variations}
 
-Le composant d’image des composants principaux AEM détermine l’un des principaux rendus à récupérer. Ce mécanisme inclut également un horodatage correspondant à l&#39;heure de la dernière modification de cette ressource. Ce mécanisme complique la configuration du pré-cache du PWA.
+Le composant d’image des composants principaux AEM détermine l’un des composants principaux front-end le meilleur rendu à récupérer. Ce mécanisme inclut également un horodatage correspondant à l’heure de dernière modification de cette ressource. Ce mécanisme complique la configuration du pré-cache du PWA.
 
-Lors de la configuration du pré-cache, l’utilisateur doit liste toutes les variations de chemin d’accès qui peuvent être récupérées. Ces variations sont composées de paramètres tels que la qualité et la largeur. Il est fortement conseillé de réduire le nombre de ces variations à un maximum de trois - petit, moyen, grand. Vous pouvez le faire via la boîte de dialogue de stratégie de contenu du [composant d&#39;image.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=fr)
+Lors de la configuration du pré-cache, l’utilisateur doit répertorier toutes les variations de chemin pouvant être récupérées. Ces variations sont composées de paramètres tels que la qualité et la largeur. Il est vivement conseillé de réduire le nombre de ces variations à un maximum de trois : petite, moyenne, grande. Vous pouvez le faire via la boîte de dialogue content-policy du [composant Image.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=fr)
 
-Si elle n&#39;est pas configurée avec précaution, la consommation de mémoire et de réseau peut avoir un impact important sur les performances de votre PWA. De même, si vous avez l’intention de prédéfinir, disons, 50 images et d’avoir 3 largeurs par image, l’utilisateur qui gère le site devra conserver une liste de 150 entrées au maximum dans la section de pré-cache du PWA des propriétés de la page.
+S’il n’est pas configuré correctement, la consommation de mémoire et de réseau peut fortement impacter les performances de votre PWA. En outre, si vous avez l’intention de prédéfinir, disons, 50 images et d’avoir 3 largeurs par image, l’utilisateur qui gère le site devra conserver une liste de 150 entrées au maximum dans la section de pré-mise en cache du PWA des propriétés de la page.
 
-Adobe vous conseille également de configurer votre site pour qu’il soit PWA une fois que l’utilisation des images du projet s’est stabilisée.
+Adobe vous conseille également de configurer votre site pour qu’il devienne un PWA une fois que l’utilisation des images du projet est stabilisée.
