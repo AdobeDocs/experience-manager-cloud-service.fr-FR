@@ -11,7 +11,6 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72bc
-translation-type: tm+mt
 source-git-commit: 7adef41690044067ef4fe6af31fcb2f6ea222d83
 workflow-type: tm+mt
 source-wordcount: '2567'
@@ -33,7 +32,7 @@ Dans ce tutoriel, un nouveau style ressemblant à une carte sera mis en œuvre p
 
 ![Ce que vous allez créer](../assets/style-cif-component/what-you-will-build.png)
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Un environnement de développement local est nécessaire pour suivre ce tutoriel. Cela inclut une instance AEM en cours d’exécution configurée et connectée à une instance Magento. Examinez les exigences et les étapes de la [configuration d’un développement local avec le SDK AEM as a Cloud Service](../develop.md).
 
@@ -66,7 +65,7 @@ Nous allons cloner le [projet Venia](https://github.com/adobe/aem-cif-guides-ven
 
    ![Storefont configuré avec le thème Venia](../assets/style-cif-component/venia-store-configured.png)
 
-## Bibliothèques client et module ui.frontend {#introduction-to-client-libraries}
+## Bibliothèques clientes et module ui.frontend {#introduction-to-client-libraries}
 
 Le code CSS et JavaScript responsable du rendu du thème/des styles du storefront est géré dans AEM par une [bibliothèque cliente](/help/implementing/developing/introduction/clientlibs.md) (ou clientlib, en court). Les bibliothèques clientes offrent un mécanisme permettant d’organiser le code CSS et Javascript dans le code d’un projet, puis de diffuser sur la page.
 
@@ -82,7 +81,7 @@ Le module `ui.frontend` est également un module Maven et intégré au projet pl
 
 ## Mettre le style du teaser à jour {#ui-frontend-module}
 
-Ensuite, apportez une petite modification au style Teaser pour voir comment fonctionnent le module `ui.frontend` et les bibliothèques clientes. Utilisez l’[IDE de votre choix](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) pour importer le projet Venia. Les captures d’écran utilisées proviennent de l’[IDE Visual Studio Code](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
+Apportez ensuite une légère modification au style du teaser pour voir comment fonctionnent le module `ui.frontend` et les bibliothèques clientes. Utilisez l’[IDE de votre choix](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) pour importer le projet Venia. Les captures d’écran utilisées proviennent de l’[IDE Visual Studio Code](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
 
 1. Accédez au module **ui.frontend** et développez-le, puis développez la hiérarchie de dossiers comme suit : `ui.frontend/src/main/styles/commerce` :
 
@@ -136,7 +135,7 @@ Ensuite, apportez une petite modification au style Teaser pour voir comment fonc
 
    ![Fichier CSS du site compilé](../assets/style-cif-component/comiled-site-css.png)
 
-   Le fichier est la version compilée et réduite de tous les fichiers Sass du projet.
+   Le fichier est la version compilée et minimisée de tous les fichiers Sass du projet.
 
    >[!NOTE]
    >
@@ -287,7 +286,7 @@ Il existe plusieurs options pour inclure une bibliothèque côté client. Examin
 
    Utiliser des stratégies de modèle et de page pour gérer l’inclusion des bibliothèques clientes présente l’avantage de permettre de changer la stratégie par modèle. Par exemple, il se peut que vous gériez deux marques différentes au sein de la même instance AEM. Chaque marque comporte son propre style ou *thème*, mais les bibliothèques et le code de base sont les mêmes. Autre exemple : si vous disposez d’une bibliothèque cliente plus grande que vous ne souhaitez afficher que sur certaines pages, vous pouvez créer une stratégie de page unique réservée à ce modèle.
 
-## Développement de Webpack local {#local-webpack-development}
+## Développement Webpack local {#local-webpack-development}
 
 Dans l’exercice précédent, nous avons apporté une mise à jour à un fichier Sass dans le module `ui.frontend`, puis, après avoir créé Maven, nous avons déployé les modifications dans AEM. Nous allons maintenant nous pencher sur l’utilisation d’un serveur webpack-dev-server pour développer rapidement les styles front-end.
 
@@ -331,7 +330,7 @@ Le serveur webpack-dev-server crée des proxys des images et d’une partie du c
 
    >[!CAUTION]
    >
-   > Si vous obtenez une erreur liée à Sass, arrêtez le serveur et exécutez la commande `npm rebuild node-sass` et répétez les étapes ci-dessus. Cela peut se produire si vous disposez d’une version de `npm` et de `node` différente de celle spécifiée dans le projet `aem-cif-guides-venia/pom.xml`.
+   > Si vous obtenez une erreur liée à Sass, arrêtez le serveur, exécutez la commande `npm rebuild node-sass` et répétez les étapes ci-dessus. Cela peut se produire si vous disposez d’une version de `npm` et de `node` différente de celle spécifiée dans le projet `aem-cif-guides-venia/pom.xml`.
 
 1. Accédez au dossier [http://localhost:8080/](http://localhost:8080/) dans un nouvel onglet avec le même navigateur qu’une instance d’AEM connectée. Vous devriez voir la page d’accueil Venia via le serveur webpack-dev-server :
 
@@ -460,7 +459,7 @@ Une fois que le code du projet a été déployé dans AEM, les modifications app
 
    ![Plusieurs teasers de produits](../assets/style-cif-component/multiple-teasers-final.png)
 
-## Résolution des incidents {#troubleshooting}
+## Résolution des problèmes {#troubleshooting}
 
 Vous pouvez vérifier dans [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp) que le fichier CSS mis à jour a été déployé : [http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css](http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css)
 
