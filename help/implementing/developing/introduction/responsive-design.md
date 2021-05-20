@@ -1,7 +1,6 @@
 ---
 title: Responsive Design
 description: Le Responsive Design permet d’afficher les mêmes expériences sur plusieurs appareils selon différentes orientations.
-translation-type: tm+mt
 source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
 workflow-type: tm+mt
 source-wordcount: '492'
