@@ -1,14 +1,13 @@
 ---
 title: 'Création et gestion d’offres  '
 description: Utilisez la console Offres pour créer des offres que vous pourrez utiliser dans le cadre d’expériences associées à des activités
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 100%
 
 ---
-
 
 # Création et gestion d’offres   {#creating-and-managing-offers}
 
