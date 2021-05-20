@@ -1,14 +1,13 @@
 ---
 title: Création de modèles de page
 description: Le modèle définit la structure de la page créée et, à l’aide de l’éditeur de modèles, les tâches de création et de gestion des modèles ne sont plus réservées aux développeurs.
-translation-type: tm+mt
-source-git-commit: 7cceaf3942b60f13004d606de9a7e0408f528671
+exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '4600'
 ht-degree: 100%
 
 ---
-
 
 # Création de modèles de page {#creating-page-templates}
 
@@ -235,7 +234,7 @@ Le sélecteur **Mode** de la barre d’outils permet de sélectionner et de modi
 
 * [Structure](#editing-a-template-structure-template-author)
 * [Contenu initial](#editing-a-template-initial-content-author)
-* [Disposition](#editing-a-template-layout-template-author)
+* [Mise en page](#editing-a-template-layout-template-author)
 
 ![Sélecteur de mode de l’éditeur de modèles](/help/sites-cloud/authoring/assets/templates-mode.png)
 
