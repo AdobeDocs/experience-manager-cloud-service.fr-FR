@@ -1,77 +1,75 @@
 ---
-title: Processus de configuration - Présentation
-description: Processus de configuration - Présentation
-translation-type: tm+mt
+title: Processus de configuration - Aperçu
+description: Processus de configuration - Aperçu
 source-git-commit: bb5a84c915e9b94bed021dacefd75b4e18fa9eb3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '340'
+ht-degree: 12%
 
 ---
 
 
 # AEM en tant que Cloud Service : Intégration et accès
 
-Cette page liste les ressources d’auto-assistance sur le processus de mise en service du Experience Manager en tant que Cloud Service.
+Cette page répertorie les ressources d’aide autonome sur le processus d’approvisionnement de Experience Manager en tant que Cloud Service.
 
-## AEM en tant que processus d&#39;approvisionnement Cloud Service
+## Présentation du processus d’attribution des privilèges d’accès AEM as a Cloud Service
 
 Cette section répertorie les principaux articles sur les sujets suivants :
 
 * Accès à AEM en tant que Cloud Service
-* Adobe Experience Manager en tant que processus d’intégration et d’approvisionnement Cloud Service
+* Processus d’intégration et de configuration d’Adobe Experience Manager as a Cloud Service
 * Aide et ressources
 
 
 ### Accès à AEM en tant que Cloud Service
 
-Une fois l’approvisionnement automatique terminé :
+Une fois la mise en service automatique terminée :
 
-* Droits d&#39;accès accordés - L&#39;Adobe créera une organisation au sein du système Identity Management Adobe (IMS)
-* Par défaut, l’administrateur désigné disposera des autorisations d’administrateur.
-* L’administrateur peut ajouter des utilisateurs et des rôles pour d’autres membres de l’équipe par l’intermédiaire du Admin Console.
-* Examinez les autorisations basées sur les rôles pour les utilisateurs afin de déterminer les affectations d’autorisations dans Cloud Manager.
+* Droits d’accès accordés : Adobe crée une organisation dans Adobe Identity Management System (IMS).
+* Par défaut, un administrateur désigné disposera des autorisations d’administrateur.
+* L’administrateur peut ajouter des utilisateurs et des rôles pour d’autres membres de l’équipe via le Admin Console
+* Vérification des autorisations basées sur les rôles pour les utilisateurs afin de déterminer les affectations d’autorisations dans Cloud Manager
 
-> ![processview.jpg](./assets/processOverview.jpg)
+> ![processsouveraineté.jpg](./assets/processOverview.jpg)
 
 
-Pour plus d&#39;informations, consultez [L&#39;intégration d&#39;un Experience Manager en tant que Cloud Service sur Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en).
+Pour plus d’informations, voir [Intégration à Experience Manager en tant que Cloud Service sur Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)
 
 ### Ressources et liens
 
 • [Prise en charge IMS d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=fr)\
-・ [Permissions basées sur les rôles dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=en#what-is-required)\
+・ [Autorisations basées sur les rôles dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=en#what-is-required)\
 • [Accès à Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#getting-access)
 
 
-## Adobe Experience Manager en tant que processus d’intégration Cloud Service
+## Processus d’intégration d’Adobe Experience Manager as a Cloud Service
 
-### 1. Le bon de commande déclenche l&#39;approvisionnement automatique.
+### 1. Le bon de commande déclenche la mise en service automatique.
 
-### 2. Organisations embarquées à Adobe Admin Console :
+### 2. Organisations intégrées à Adobe Admin Console :
 
->   ![processview2.jpg](./assets/processOverview2.jpg)
-
+>   ![processsview2.jpg](./assets/processOverview2.jpg)
 * Administrateur système :
-   * Fournir AEM programmes et environnements.
-   * Accédez au Admin Console pour les tâches d’administration.
-   * Demande un domaine pour confirmer la propriété de chaque domaine
+   * Configuration des programmes et des environnements AEM.
+   * Accédez à Admin Console pour les tâches administratives.
+   * Demande à un domaine de confirmer la propriété du domaine respectif
    * Configuration des annuaires utilisateur.
    * Configuration IDP.
 * Administrateur AEM:
    * Gérez les groupes locaux, les autorisations et les privilèges.
 
-### 3. Utilisateurs embarqués et gestion des accès dans le Admin Console :
+### 3. Utilisateurs intégrés et gérer l’accès dans Admin Console :
 
->   ![processview3.jpg](./assets/processOverview3.jpg)
+>   ![processsview3.jpg](./assets/processOverview3.jpg)
 
-Trois méthodes pour les utilisateurs embarqués, en fonction de la taille et des préférences :
-* Création manuelle d’utilisateurs dans le Admin Console
+Trois méthodes d’intégration des utilisateurs, selon la taille et la préférence :
+* Création manuelle d’utilisateurs dans Admin Console
 * Téléchargement du fichier .csv
-* Synchroniser les utilisateurs à partir d’Enterprise Principal
+* Synchronisation des utilisateurs à partir d’Enterprise Principal
 Répertoire
 
-### 4. L&#39;administrateur configure l&#39;organisation et accorde aux utilisateurs et aux groupes l&#39;accès aux environnements
+### 4. L’administrateur configure l’organisation et accorde aux utilisateurs et aux groupes l’accès aux environnements.
 
 ## Aide et ressources
 
