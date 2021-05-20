@@ -3,14 +3,13 @@ title: Gestion des ressources numériques
 description: Découvrez les différentes méthodes de gestion et de modification des ressources.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Publishing,Collaboration,Asset Processing
+feature: Gestion des ressources,Publication,Collaboration,Traitement des ressources
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-translation-type: tm+mt
 source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
 workflow-type: tm+mt
 source-wordcount: '4505'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -56,7 +55,7 @@ Vous pouvez ajouter le fichier de configuration `/apps/example/config.author/com
 }
 ```
 
-Une fois activé, le Experience Manager envoie des notifications des ressources du duplicata à la boîte de réception du Experience Manager. Il s’agit d’un résultat global correspondant à plusieurs doublons. Les utilisateurs peuvent choisir de supprimer les ressources en fonction des résultats.
+Une fois activé, Experience Manager envoie des notifications de ressources en double à la boîte de réception du Experience Manager. Il s’agit d’un résultat global correspondant à plusieurs doublons. Les utilisateurs peuvent choisir de supprimer les ressources en fonction des résultats.
 
 ![Notification de boîte de réception pour les ressources en double](assets/duplicate-detect-inbox-notification.png)
 
@@ -278,27 +277,27 @@ De plus, désactivez le bouton Forcer la suppression à l’aide d’un recouvre
 
 Voir la section [Téléchargement de ressources à partir d’ [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
-## Publier ou annuler la publication des ressources {#publish-assets}
+## Publication ou annulation de la publication de ressources {#publish-assets}
 
-1. Accédez à l’emplacement du fichier ou du dossier de fichiers que vous souhaitez publier ou que vous souhaitez supprimer de l’environnement de publication (annuler la publication).
+1. Accédez à l’emplacement de la ressource ou du dossier de ressources que vous souhaitez publier ou que vous souhaitez supprimer de l’environnement de publication (annuler la publication).
 
-1. Sélectionnez le fichier ou le dossier à publier ou annuler la publication, puis sélectionnez l’option **[!UICONTROL Gérer la publication]** ![gérer l’option de publication](assets/do-not-localize/globe-publication.png) dans la barre d’outils. Pour publier rapidement, vous pouvez également sélectionner l’option **[!UICONTROL Publication rapide]** dans la barre d’outils. Si le dossier que vous souhaitez publier comprend un sous-dossier vide, ce dernier n’est pas publié.
+1. Sélectionnez la ressource ou le dossier à publier ou dont vous souhaitez annuler la publication, puis sélectionnez l’option **[!UICONTROL Gérer la publication]** ![gérer la publication](assets/do-not-localize/globe-publication.png) dans la barre d’outils. Pour publier rapidement, vous pouvez également sélectionner l’option **[!UICONTROL Publication rapide]** dans la barre d’outils. Si le dossier que vous souhaitez publier comprend un sous-dossier vide, ce dernier n’est pas publié.
 
 1. Sélectionnez l’option **[!UICONTROL Publier]** ou **[!UICONTROL Annuler la publication]** selon les besoins.
 
    ![Action Annuler la publication](assets/unpublish_action.png)
-   *Figure : Options de publication et d’annulation de publication et option de planification.*
+   *Figure : les options Publier et Annuler la publication et l’option de planification.*
 
-1. Sélectionnez **[!UICONTROL Maintenant]** pour agir immédiatement sur la ressource ou **[!UICONTROL Plus tard]** pour planifier l&#39;action. Sélectionnez une date et une heure si vous choisissez l’option **[!UICONTROL Plus tard]**. Cliquez sur **[!UICONTROL Next]** (Suivant).
+1. Sélectionnez **[!UICONTROL Maintenant]** pour agir immédiatement sur la ressource ou sélectionnez **[!UICONTROL Plus tard]** pour planifier l’action. Sélectionnez une date et une heure si vous choisissez l’option **[!UICONTROL Plus tard]** . Cliquez sur **[!UICONTROL Suivant]**.
 
-1. Lors de la publication, si une ressource fait référence à d’autres ressources, ses références sont répertoriées dans l’assistant. Seules les références affichées, qui sont soit non publiées, soit modifiées depuis la dernière publication. Sélectionnez les références que vous souhaitez publier.
+1. Lors de la publication, si une ressource fait référence à d’autres ressources, ses références sont répertoriées dans l’assistant. Seules les références qui ne sont pas publiées ou modifiées depuis la dernière publication s’affichent. Sélectionnez les références que vous souhaitez publier.
 
-1. Lors de l’annulation de publication, si un fichier référence d’autres ressources, choisissez les références que vous souhaitez annuler la publication. Cliquez sur **[!UICONTROL Annuler la publication]**. Dans la boîte de dialogue de confirmation, cliquez sur **[!UICONTROL Annuler]** pour arrêter l’action ou sur **[!UICONTROL Annuler la publication]** pour confirmer que les ressources doivent être annulées à la date spécifiée.
+1. Lors de l’annulation de la publication, si une ressource fait référence à d’autres ressources, sélectionnez les références dont vous souhaitez annuler la publication. Cliquez sur **[!UICONTROL Annuler la publication]**. Dans la boîte de dialogue de confirmation, cliquez sur **[!UICONTROL Annuler]** pour arrêter l’action ou sur **[!UICONTROL Annuler la publication]** pour confirmer que les ressources doivent être dépubliées à la date spécifiée.
 
-Comprenez les restrictions et conseils suivants liés à la publication ou à l’annulation de publication de fichiers ou de dossiers :
+Découvrez les limites et conseils suivants liés à la publication ou à l’annulation de la publication de ressources ou de dossiers :
 
 * L’option [!UICONTROL Gérer la publication] est disponible uniquement pour les comptes d’utilisateurs disposant d’autorisations de réplication.
-* Lors de l’annulation de la publication d’une ressource complexe, annulez uniquement la publication de la ressource. Evitez d’annuler la publication des références, car elles peuvent être référencées par d’autres ressources publiées.
+* Lors de l’annulation de la publication d’une ressource complexe, annulez uniquement la publication de la ressource. Évitez d’annuler la publication des références, car celles-ci peuvent être référencées par d’autres ressources publiées.
 * Les dossiers vides ne sont pas publiés.
 * Si vous publiez une ressource qui est en cours de traitement, seul le contenu original est publié. Les rendus sont absents. Vous pouvez attendre la fin du traitement avant de publier ou republier la ressource une fois le traitement terminé.
 
@@ -622,15 +621,15 @@ Une collection est un ensemble de ressources classées. Vous pouvez utiliser des
 * Une collection peut comporter des ressources provenant de différents emplacements, car elle ne contient que les références à ces ressources. Chaque collection préserve l’intégrité du référentiel des ressources.
 * Vous pouvez partager des ressources avec plusieurs utilisateurs dont les niveaux de privilèges sont différents (modification, affichage, etc.).
 
-Pour plus d’informations sur la gestion des collections, voir [gestion des collections](/help/assets/manage-collections.md).
+Pour plus d’informations sur la gestion des collections, voir [Gestion des collections](/help/assets/manage-collections.md).
 
-## Masquer les ressources expirées lors de l’affichage des ressources dans l’application de bureau ou le lien de ressources d’Adobe {#hide-expired-assets-via-acp-api}
+## Masquer les ressources expirées lors de l’affichage de ressources dans l’appli de bureau ou Adobe Asset Link {#hide-expired-assets-via-acp-api}
 
-[!DNL Experience Manager] application de bureau permet d’accéder au référentiel DAM depuis un bureau Windows ou Mac. Adobe Asset Link permet d’accéder aux ressources à partir des applications de bureau [!DNL Creative Cloud] prises en charge.
+[!DNL Experience Manager] L’appli de bureau permet d’accéder au référentiel DAM à partir de l’appli de bureau Windows ou Mac. Adobe Asset Link permet d’accéder aux ressources à partir des applications de bureau [!DNL Creative Cloud] prises en charge.
 
-Lors de la navigation dans des ressources de l&#39;interface utilisateur [!DNL Experience Manager], les ressources expirées ne s&#39;affichent pas. Pour empêcher l’affichage, la recherche et la récupération de fichiers expirés lors de la navigation dans des fichiers à partir d’une application de bureau et d’un lien d’actif, les administrateurs peuvent effectuer la configuration suivante. La configuration fonctionne pour tous les utilisateurs, quel que soit le privilège d’administrateur.
+Lors de la navigation dans des ressources de l’interface utilisateur [!DNL Experience Manager], les ressources parvenues à expiration ne s’affichent pas. Pour empêcher l’affichage, la recherche et la récupération de fichiers parvenus à expiration lors de la navigation dans des fichiers à partir d’une application de bureau et d’un lien d’actif, les administrateurs peuvent appliquer la configuration suivante. La configuration fonctionne pour tous les utilisateurs, quel que soit le privilège d’administrateur.
 
-Exécutez la commande CURL suivante. Assurez-vous de lire l’accès sur `/conf/global/settings/dam/acpapi/` pour les utilisateurs qui accèdent aux ressources. Les utilisateurs qui font partie du groupe `dam-user` ont l’autorisation par défaut.
+Exécutez la commande CURL suivante. Assurez-vous que les utilisateurs qui accèdent aux ressources ont accès en lecture à `/conf/global/settings/dam/acpapi/`. Les utilisateurs appartenant au groupe `dam-user` disposent par défaut d’une autorisation.
 
 ```curl
 curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/global/settings/dam/acpapi/configuration/_jcr_content' \
@@ -642,4 +641,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Pour en savoir plus, voir comment [parcourir les ressources DAM à l’aide de l’application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#browse-search-preview-assets) et [comment utiliser le lien de ressource d’Adobe](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+Pour en savoir plus, voir [parcourir les ressources DAM à l’aide de l’appli de bureau ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#browse-search-preview-assets) et [comment utiliser Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
