@@ -1,14 +1,13 @@
 ---
 title: Guide de prise en main pour la création découplée d’une configuration
-description: Créez une configuration comme première étape pour commencer à utiliser AEM sans en-tête en tant que Cloud Service.
-translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+description: Créez une configuration comme première étape pour commencer à utiliser headless dans AEM as a Cloud Service.
+exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 94%
 
 ---
-
 
 # Guide de prise en main pour la création découplée d’une configuration {#creating-configuration}
 
