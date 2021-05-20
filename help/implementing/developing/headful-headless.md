@@ -1,14 +1,13 @@
 ---
 title: Couplage et découplage dans AEM
 description: Il est possible de mettre en œuvre des projets AEM selon des modèles couplés et découplés, sans que toutefois ce choix soit binaire. AEM offre la flexibilité nécessaire pour exploiter les avantages des deux modèles dans un même projet.
-translation-type: tm+mt
-source-git-commit: 772717b7ad3baa17a58e251c128663035eb89931
+exl-id: 709850ca-7757-47ab-9625-f411121cde2c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 100%
 
 ---
-
 
 # Couplage et découplage dans AEM {#headful-headless}
 
