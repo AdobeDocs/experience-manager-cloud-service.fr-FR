@@ -15,29 +15,29 @@ ht-degree: 66%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_prereqs"
->title="Remarques importantes concernant l’utilisation de l’outil de transfert de contenu"
->abstract="Examinez les points importants à prendre en compte pour utiliser l’outil de transfert de contenu, notamment les versions Java et AEM, les types de banque de données pris en charge, les groupes d’utilisateurs et bien plus encore."
+>title="Points importants concernant l’utilisation de l’outil de transfert de contenu"
+>abstract="Examinez les points importants à prendre en compte pour utiliser l’outil de transfert de contenu, notamment les versions Java et AEM, les types d’entrepôt de données pris en charge, les considérations relatives aux groupes d’utilisateurs, etc."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="Bonnes pratiques et directives"
 
 Consultez la section ci-dessous afin de comprendre les points importants à prendre en compte pour l’exécution de l’outil de transfert de contenu :
 
-* La configuration minimale requise pour l’outil de transfert de contenu est AEM 6.3+ et JAVA 8. Si vous utilisez une version AEM inférieure, vous devez mettre à niveau votre référentiel de contenu vers AEM 6.5 pour utiliser l’outil de transfert de contenu.
+* La configuration minimale requise pour l’outil de transfert de contenu est AEM 6.3+ et JAVA 8. Si vous utilisez une version d’AEM inférieure, vous devez mettre à niveau votre référentiel de contenu vers AEM 6.5 pour utiliser l’outil de transfert de contenu.
 
-* Java doit être configuré sur l&#39;environnement AEM, de sorte que la commande `java` puisse être exécutée par l&#39;utilisateur qui a début AEM.
+* Java doit être configuré dans l&#39;environnement AEM, de sorte que la commande `java` puisse être exécutée par l&#39;utilisateur qui lance AEM.
 
-* Il est recommandé de désinstaller les anciennes versions de l&#39;outil de transfert de contenu lors de l&#39;installation de la version 1.3.0, car l&#39;outil a subi un changement d&#39;architecture majeur. Avec la version 1.3.0, vous devez également créer de nouveaux jeux de migration et réexécuter l’extraction et l’assimilation sur les nouveaux jeux de migration.
+* Il est recommandé de désinstaller les anciennes versions de l’outil de transfert de contenu lors de l’installation de la version 1.3.0, car l’outil a subi un changement d’architecture majeur. Avec la version 1.3.0, vous devez également créer de nouveaux jeux de migration et relancer l’extraction et l’ingestion sur les nouveaux jeux de migration.
 
 * L’outil de transfert de contenu peut être utilisé avec les types de magasin de données suivants : File Data Store, S3 Data Store, Shared S3 Data Store et Azure Blob Store Data Store.
 
 * Si vous utilisez un *environnement sandbox*, assurez-vous que celui-ci est à jour et mis à niveau vers la dernière version. Si vous utilisez un *environnement de production*, il est automatiquement mis à jour.
 
-* Pour utiliser l’outil de transfert de contenu, vous devez être un utilisateur administrateur sur votre instance source et appartenir au groupe **administrateurs** local de l’AEM Cloud Service vers lequel vous transférez le contenu. Les utilisateurs non privilégiés ne pourront pas récupérer le jeton d’accès pour utiliser l’outil de transfert de contenu.
+* Pour utiliser l’outil de transfert de contenu, vous devez être un utilisateur administrateur sur votre instance source et appartenir au groupe **administrateurs** local de l’instance de Cloud Service vers laquelle vous transférez du contenu. Les utilisateurs non privilégiés ne pourront pas récupérer le jeton d’accès pour utiliser l’outil de transfert de contenu.
 
-* Si l’option **Effacer le contenu existant sur l’instance Cloud avant d’assimiler** est activée, elle supprime l’intégralité du référentiel existant et crée un nouveau référentiel dans lequel intégrer du contenu. Cela signifie que tous les paramètres sont réinitialisés, y compris les autorisations relatives à l’instance Cloud Service cible. Cela est également vrai pour un utilisateur administrateur ajouté au groupe **administrateurs**. L’utilisateur doit être réajouté au groupe **administrateurs** pour récupérer le jeton d&#39;accès pour CTT.
+* Si l’option **Effacer le contenu existant sur l’instance cloud avant l’ingestion** est activée, le paramètre Effacer le contenu existant avant l’ingestion supprime l’intégralité du référentiel existant et crée un nouveau référentiel dans lequel ingérer du contenu. Cela signifie que tous les paramètres sont réinitialisés, y compris les autorisations relatives à l’instance Cloud Service cible. C’est également le cas pour un utilisateur administrateur ajouté au groupe **administrateurs** . L’utilisateur doit être ajouté à nouveau au groupe **administrateurs** pour récupérer le jeton d’accès pour CTT.
 
-* Le jeton d’accès peut expirer périodiquement, soit après une période spécifique, soit après la mise à niveau de l’environnement Cloud Service. Si le jeton d&#39;accès a expiré, vous ne pourrez pas vous connecter à l’instance du Cloud Service et vous devez récupérer le nouveau jeton d&#39;accès. L’icône d’état associée à un jeu de migration existant prend l’aspect d’un nuage rouge et affiche un message si vous le survolez.
+* Le jeton d’accès peut expirer périodiquement, soit après une période spécifique, soit après la mise à niveau de l’environnement Cloud Service. Si le jeton d’accès a expiré, vous ne pourrez pas vous connecter à l’instance du Cloud Service et vous devez récupérer le nouveau jeton d’accès. L’icône d’état associée à un jeu de migration existant prend l’aspect d’un nuage rouge et affiche un message si vous le survolez.
 
-* L’outil de transfert de contenu (CTT) n’effectue aucune analyse de contenu avant de transférer le contenu de l’instance source vers l’instance de cible. Par exemple, le CTT ne fait pas la distinction entre le contenu publié et le contenu non publié lors de l’assimilation de contenu dans un environnement de publication. Le contenu spécifié dans le jeu de migration sera ingéré dans l’instance de cible choisie. L’utilisateur peut assimiler une visionneuse de migration à une instance d’auteur ou de publication, ou aux deux. Il est recommandé d’installer le CTT sur l’instance d’auteur source lors du déplacement du contenu vers une instance de production pour déplacer le contenu vers l’instance d’auteur de cible et, de même, d’installer le CTT sur l’instance de publication source pour déplacer le contenu vers l’instance de publication de cible.
+* L’outil de transfert de contenu (CTT) n’effectue aucune analyse de contenu avant de transférer le contenu de l’instance source vers l’instance cible. Par exemple, le CTT ne fait pas la distinction entre le contenu publié et le contenu non publié lors de l’ingestion de contenu dans un environnement de publication. Le contenu spécifié dans le jeu de migration sera ingéré dans l’instance cible choisie. L’utilisateur peut ingérer un jeu de migration dans une instance d’auteur ou de publication ou les deux. Il est recommandé d’installer CTT sur l’instance d’auteur source lors du déplacement du contenu vers une instance de production afin de déplacer le contenu vers l’instance d’auteur cible, ainsi que d’installer CTT sur l’instance de publication source pour déplacer le contenu vers l’instance de publication cible.
 
 * Les utilisateurs et les groupes transférés par l’outil de transfert de contenu sont uniquement ceux requis en fonction du contenu pour respecter les autorisations. Le processus d’*extraction* copie l’intégralité de `/home` dans le jeu de migration et le processus d’*ingestion* copie tous les utilisateurs et groupes référencés dans les listes de contrôle d’accès du contenu migré. Pour mapper automatiquement les utilisateurs et les groupes existants avec leurs ID IMS, reportez-vous à la section [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr#cloud-migration).
 
@@ -49,11 +49,11 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
       * Type d’environnement (évaluation ou production) dans lequel vous prévoyez d’importer des données.
       * ID de programme.
 
-* La *phase d&#39;importation* de l&#39;auteur réduit le déploiement de l&#39;auteur dans son ensemble. L’auteur AEM ne sera donc pas disponible pendant la totalité du processus d’ingestion. Assurez-vous également qu’aucun pipeline Cloud Manager n’est exécuté pendant que vous exécutez la phase d’*ingestion*.
+* La *phase d’ingestion* de l’auteur réduit l’ensemble du déploiement de l’auteur. L’auteur AEM ne sera donc pas disponible pendant la totalité du processus d’ingestion. Assurez-vous également qu’aucun pipeline Cloud Manager n’est exécuté pendant que vous exécutez la phase d’*ingestion*.
 
-* Lorsque vous utilisez `Amazon S3` ou `Azure` comme magasin de données sur le système d&#39;AEM source, le magasin de données doit être configuré de sorte que les objets bloqués ne puissent pas être supprimés (déchets collectés). Ceci garantit l&#39;intégrité des données d&#39;index et l&#39;échec de la configuration de cette manière peut entraîner des extractions en échec en raison d&#39;un manque d&#39;intégrité de ces données d&#39;index.
+* Lors de l’utilisation de `Amazon S3` ou `Azure` comme entrepôt de données sur le système d’AEM source, l’entrepôt de données doit être configuré de sorte que les objets blob stockés ne puissent pas être supprimés (nettoyage de la mémoire). Cela garantit l’intégrité des données d’index et un échec de configuration de cette manière peut entraîner des extractions ayant échoué en raison d’un manque d’intégrité de ces données d’index.
 
-* Si vous utilisez des index personnalisés, vous devez vous assurer de configurer les index personnalisés avec le noeud `tika` avant d’exécuter l’outil de transfert de contenu. Pour plus d&#39;informations, consultez [Préparation de la nouvelle définition d&#39;index](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition).
+* Si vous utilisez des index personnalisés, vous devez veiller à configurer les index personnalisés avec le noeud `tika` avant d’exécuter l’outil de transfert de contenu. Pour plus d’informations, voir [Préparation de la nouvelle définition d’index](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) .
 
 ## Disponibilité {#availability}
 
@@ -75,15 +75,15 @@ Il est possible de télécharger l’outil de transfert de contenu dans un fichi
 >id="aemcloud_ctt_demo"
 >title="Exécution de l’outil de transfert de contenu"
 >abstract="Découvrez comment utiliser l’outil de transfert de contenu pour migrer le contenu vers AEM en tant que Cloud Service (auteur/publication)."
->additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Voir Démo"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=fr#migration" text="Didacticiel - Utilisation de l’outil de transfert de contenu"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Voir Démonstration"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=fr#migration" text="Tutoriel - Utilisation de l’outil de transfert de contenu"
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
 
 Consultez cette section pour effectuer une migration du contenu vers AEM as a Cloud Service (auteur/publication) à l’aide de l’outil de transfert de contenu :
 
-1. Sélectionnez l’Adobe Experience Manager et accédez aux outils -> **Opérations** -> **Migration de contenu**.
+1. Sélectionnez Adobe Experience Manager et accédez à Outils -> **Opérations** -> **Migration de contenu**.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card01.png)
 
@@ -100,9 +100,9 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
    >[!NOTE]
    >Si vous disposez de jeux de migration, la console affiche la liste de ces jeux avec leur état actuel.
 
-   De plus, cliquez sur **Créer une configuration de mappage utilisateur** pour accéder à l&#39;[outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
+   Cliquez également sur **Créer une configuration de mappage utilisateur** pour accéder à l’ [outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
 
-1. Renseignez les champs de l’écran **Créer une visionneuse de migration**, comme décrit ci-dessous.
+1. Renseignez les champs de l’écran **Créer un jeu de migration**, comme décrit ci-dessous.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
 
@@ -119,14 +119,14 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
    1. **Access Token** : renseignez le jeton d’accès.
 
       >[!NOTE]
-      >Vous pouvez récupérer le jeton d’accès à l’aide du bouton **Open access token** (Ouvrir le jeton d’accès). Vous devez vous assurer que vous appartenez au groupe d’administrateurs AEM dans l’instance de Cloud Service de cible.
+      >Vous pouvez récupérer le jeton d’accès à l’aide du bouton **Open access token** (Ouvrir le jeton d’accès). Vous devez vous assurer que vous appartenez au groupe des administrateurs AEM dans l’instance du Cloud Service cible.
 
    1. **Parameters** : sélectionnez les paramètres suivants pour créer le jeu de migration :
 
       1. **Include version** : sélectionnez les options requises.
 
-      1. **Inclure le mappage à partir des utilisateurs et groupes** IMS : Sélectionnez l’option permettant d’inclure le mappage à partir des utilisateurs et groupes IMS.
-Consultez [Outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr) pour plus de détails.
+      1. **Inclure le mappage des utilisateurs et groupes IMS** : Sélectionnez l’option pour inclure le mappage à partir des utilisateurs et groupes IMS.
+Pour plus d’informations, voir [Outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr) .
 
       1. **Paths to be included** : utilisez le navigateur de chemins pour sélectionner les chemins objets de la migration. Le sélecteur de chemin accepte les entrées effectuées par saisie ou par sélection.
 
@@ -135,19 +135,19 @@ Consultez [Outil de mappage utilisateur](https://experienceleague.adobe.com/docs
          >* `/apps`
          >* `/libs`
          >* `/home`
-         >* `/etc` (certains  `/etc` chemins peuvent être sélectionnés dans le CTT)
+         >* `/etc` (certains  `/etc` chemins peuvent être sélectionnés dans CTT)
 
 
-1. Cliquez sur **Enregistrer** après avoir renseigné tous les champs de l’écran de détails **Créer une visionneuse de migration**.
+1. Cliquez sur **Enregistrer** après avoir renseigné tous les champs de l’écran de détails **Créer un jeu de migration** .
 
 1. Vous voyez alors le jeu de migration défini dans la page *Overview* (Aperçu).
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
-   Tous les jeux de migration existants sur cet écran s’affichent sur la page *Aperçu* avec leurs informations d’état et d’état actuelles. Certaines des icônes décrites ci-dessous peuvent apparaître.
+   Tous les jeux de migration existants de cet écran s’affichent sur la page *Overview* avec leur état actuel et les informations de statut. Certaines des icônes décrites ci-dessous peuvent apparaître.
 
    * Un *nuage de couleur rouge* indique que vous ne pouvez pas terminer le processus d’extraction.
-   * Un *nuage vert* indique que vous pouvez terminer le processus d&#39;extraction.
+   * Un *nuage vert* indique que vous pouvez terminer le processus d’extraction.
    * Une *icône de couleur jaune* indique que vous n’avez pas créé le jeu de migration existant et que celui ainsi indiqué a été créé par un autre utilisateur de la même instance.
 
 1. Sélectionnez un jeu de migration dans la page d’aperçu, puis cliquez sur **Properties** pour voir ou modifier les propriétés du jeu de migration. Lors de la modification des propriétés, il n’est pas possible de changer le nom du conteneur ou l’URL du service.
@@ -158,8 +158,8 @@ Consultez [Outil de mappage utilisateur](https://experienceleague.adobe.com/docs
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction"
 >title="Extraction de contenu"
->abstract="L’Extraction fait référence à l’extraction de contenu de l’instance d’AEM source dans une zone temporaire appelée jeu de migration. Un jeu de migration est un espace de stockage cloud fourni par Adobe pour stocker temporairement le contenu transféré entre l’instance AEM source et l’instance AEM Cloud Service."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="Extraction supérieure"
+>abstract="L’extraction fait référence à l’extraction de contenu de l’instance d’AEM source dans une zone temporaire appelée jeu de migration. Un jeu de migration est un espace de stockage cloud fourni par Adobe pour stocker temporairement le contenu transféré entre l’instance AEM source et l’instance AEM Cloud Service."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="Extraction de complément"
 
 Pour extraire votre jeu de migration à partir de l’outil de transfert de contenu, procédez comme suit :
 
@@ -204,8 +204,8 @@ Une fois le processus d’extraction terminé, vous pouvez transférer le conten
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
->title="Ingestion du contenu"
->abstract="L&#39;importation désigne l&#39;assimilation de contenu à partir du jeu de migration vers l&#39;instance de Cloud Service de cible. L’outil de transfert de contenu comporte une fonctionnalité pour traiter un complément de contenu différentiel. Dans ce cas, seules les modifications effectuées depuis l’activité de transfert de contenu précédente sont transférées."
+>title="Ingestion de contenu"
+>abstract="L’ingestion fait référence à l’ingestion de contenu à partir du jeu de migration vers l’instance de Cloud Service cible. L’outil de transfert de contenu comporte une fonctionnalité pour traiter un complément de contenu différentiel. Dans ce cas, seules les modifications effectuées depuis l’activité de transfert de contenu précédente sont transférées."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="Ingestion de complément"
 
 Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert de contenu, procédez comme suit :
@@ -213,11 +213,11 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
 1. Pour démarrer l’extraction, sélectionnez un jeu de migration dans la page *Overview*, puis cliquez sur **Ingest** (Ingérer). La boîte de dialogue **Migration Set ingestion** (Ingestion du jeu de migration) s’affiche. Cliquez sur **Ingest** pour démarrer la phase d’ingestion. Il est possible d’ingérer en même temps du contenu vers les instances d’auteur et de publication.
 
    >[!IMPORTANT]
-   >Lorsque l’option **Effacer le contenu existant sur l’instance cloud avant l’ingestion** est activée, elle supprime l’intégralité du référentiel existant et crée un référentiel dans lequel intégrer du contenu. Cela signifie que tous les paramètres sont réinitialisés, y compris les autorisations relatives à l’instance Cloud Service cible. Cela est également vrai pour un utilisateur administrateur ajouté au groupe **administrateurs**.
+   >Lorsque l’option **Effacer le contenu existant sur l’instance cloud avant l’ingestion** est activée, elle supprime l’intégralité du référentiel existant et crée un référentiel dans lequel intégrer du contenu. Cela signifie que tous les paramètres sont réinitialisés, y compris les autorisations relatives à l’instance Cloud Service cible. C’est également le cas pour un utilisateur administrateur ajouté au groupe **administrateurs** .
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
-   De plus, cliquez sur **Service à la clientèle** pour enregistrer un ticket, comme le montre la figure ci-dessus. Consultez également la section [Considérations importantes pour l’utilisation de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) pour en savoir plus.
+   Cliquez également sur **Assistance clientèle** pour enregistrer un ticket, comme illustré dans la figure ci-dessus. Voir également la section [Points importants concernant l’utilisation de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) pour en savoir plus.
 
 1. Une fois l’ingestion terminée, l’état du champ **PUBLISH INGESTION** passe à **FINISHED**.
 
@@ -238,7 +238,7 @@ Une fois le processus d’ingestion terminé, vous pouvez utiliser le contenu di
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    >[!IMPORTANT]
-   >Vous devez désactiver l’option **Wipe existing content on Cloud instance before ingestion** (Effacer le contenu existant sur l’instance cloud avant l’ingestion) pour empêcher la suppression du contenu existant de l’activité d’ingestion précédente. De plus, cliquez sur **Service à la clientèle** pour enregistrer un ticket, comme le montre la figure précédente.
+   >Vous devez désactiver l’option **Wipe existing content on Cloud instance before ingestion** (Effacer le contenu existant sur l’instance cloud avant l’ingestion) pour empêcher la suppression du contenu existant de l’activité d’ingestion précédente. Cliquez également sur **Assistance clientèle** pour enregistrer un ticket, comme illustré dans la figure précédente.
 
 
 ### Affichage des journaux d’un jeu de migration {#viewing-logs-migration-set}
@@ -246,11 +246,11 @@ Une fois le processus d’ingestion terminé, vous pouvez utiliser le contenu di
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_logs"
 >title="Affichage des journaux"
->abstract="Une fois l&#39;Extraction de l&#39;embouteillage terminée, recherchez dans les journaux toute erreur ou avertissement. Toute erreur doit être corrigée immédiatement soit en traitant les problèmes signalés, soit en contactant l&#39;Adobe."
+>abstract="Une fois l’extraction de l’ingestion terminée, recherchez dans les journaux les erreurs/avertissements éventuels. Toute erreur doit être corrigée immédiatement, soit en traitant les problèmes signalés, soit en contactant l’assistance Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#troubleshooting" text="Résolution des problèmes"
 >additional-url="https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/support-for-experience-cloud.ug.html" text="Contacter le support technique d’Adobe"
 
-Une fois chaque étape terminée (extraction et assimilation), vérifiez les journaux et recherchez les erreurs.  Toute erreur doit être corrigée immédiatement soit en traitant les problèmes signalés, soit en contactant l&#39;Adobe.
+Une fois chaque étape terminée (extraction et ingestion), vérifiez les journaux et recherchez les erreurs.  Toute erreur doit être corrigée immédiatement, soit en traitant les problèmes signalés, soit en contactant l’assistance Adobe.
 
 Vous pouvez afficher les journaux d’un jeu de migration existant à l’aide de la page *Overview*.
 Suivez les étapes ci-dessous :
