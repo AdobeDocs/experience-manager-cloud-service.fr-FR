@@ -1,20 +1,19 @@
 ---
 title: Variations – création de contenu de fragment
-description: Comprenez comment les variations peuvent rendre encore plus souple votre contenu sans en-tête dans AEM en vous permettant de créer du contenu pour le fragment, puis de créer des variations de ce contenu selon vos besoins.
-feature: Content Fragments
+description: Découvrez comment les variations peuvent rendre votre contenu sans interface dans AEM encore plus flexible en vous permettant de créer du contenu pour le fragment, puis de créer des variantes de ce contenu selon vos besoins.
+feature: Fragments de contenu
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: af05aae6-d535-4007-ba81-7f41213ff152
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '2259'
+source-wordcount: '2257'
 ht-degree: 92%
 
 ---
 
-
 # Variations – création de contenu de fragment {#variations-authoring-fragment-content}
 
-[Les ](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) variantes sont une fonctionnalité importante des fragments de contenu AEM, car elles vous permettent de créer et de modifier des copies du contenu original pour une utilisation sur des canaux spécifiques et/ou des scénarios, ce qui rend la diffusion de contenu sans tête encore plus flexible.
+[](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) Les variations sont une fonctionnalité importante des fragments de contenu d’AEM, car elles permettent de créer et de modifier des copies du contenu maître pour les utiliser sur des canaux spécifiques et/ou dans des scénarios, ce qui rend la diffusion de contenu sans interface encore plus flexible.
 
 À partir de l’onglet **variations**, vous pouvez :
 
@@ -45,8 +44,8 @@ Lorsque vous ouvrez votre fragment de contenu pour le modifier, l’onglet **Var
 
 Par exemple :
 
-![éditeur plein écran](assets/cfm-variations-02.png)
-Vous pouvez :
+![éditeur plein écran ](assets/cfm-variations-02.png)
+:
 
 * effectuer des modifications directement dans l’onglet **Variations**.
 
@@ -58,7 +57,7 @@ Vous pouvez :
    * voir davantage d’options de modification (pour le format [Texte enrichi](#rich-text)) ;
    * accéder à un éventail d’[actions](#actions).
 
-* Pour les champs **Référence du fragment**, l&#39;option **[Modifier le fragment de contenu](#fragment-references-edit-content-fragment)** peut être disponible, selon la définition du modèle.
+* Pour les champs **Référence du fragment** , l’option **[Modifier le fragment de contenu](#fragment-references-edit-content-fragment)** peut être disponible, selon la définition du modèle.
 
 ### Éditeur plein écran {#full-screen-editor}
 
@@ -167,9 +166,9 @@ Si le modèle de fragment de contenu contient des références à un fragment, l
 
 #### Modifier le fragment de contenu {#fragment-references-edit-content-fragment}
 
-L’option **Modifier le fragment de contenu** ouvre ce fragment dans un nouvel onglet d’éditeur (dans le même onglet de navigateur).
+L’option **Modifier le fragment de contenu** ouvre ce fragment dans un nouvel onglet de l’éditeur (dans le même onglet du navigateur).
 
-Si vous sélectionnez à nouveau l’onglet d’origine (par exemple, **Little Pony Inc.**), cet onglet secondaire sera fermé (dans ce cas, **Adam Smith**).
+Si vous sélectionnez à nouveau l’onglet d’origine (par exemple, **Little Pony Inc.**), cet onglet secondaire se ferme (dans ce cas, **Adam Smith**).
 
 ![Références à un fragment](assets/cfm-variations-editreference.png)
 
@@ -246,8 +245,8 @@ D’autres langues sont disponibles en tant que modules de modèle de langues da
    * Toutes les phrases à éliminer sont biffées en rouge.
    * Cliquez sur n’importe quelle phrase en surbrillance pour la conserver dans le contenu résumé.
    * Cliquez sur n’importe quelle phrase qui ne figure pas en surbrillance pour l’éliminer.
-   * Les statistiques de synthèse sont présentées : **Réel** et **Cible**-
-   * Vous pouvez **Prévisualisation** les modifications.
+   * Les statistiques de synthèse s’affichent : **Réel** et **Cible**-
+   * Vous pouvez **prévisualiser** les modifications.
 
    ![comparaison des résumés](assets/cfm-variations-06.png)
 
@@ -369,7 +368,7 @@ Il existe différentes méthodes pour ajouter des [images](/help/assets/content-
    * **Marquage** : la référence restera intégrée au fragment.
 
 
-## Gestion des variations  {#managing-variations}
+## Gestion des variations {#managing-variations}
 
 ### Création d’une variation {#creating-a-variation}
 
@@ -425,7 +424,7 @@ Vous ne pouvez pas supprimer le **Maître**.
 
 ### Synchronisation avec le maître {#synchronizing-with-master}
 
-Le **Maître** fait partie intégrante d’un fragment de contenu et, par définition, il contient la copie maître du contenu, tandis que les variations contiennent les versions individuelles et personnalisées de ce contenu. Lorsque le Principal est mis à jour, il est possible que ces modifications soient également pertinentes pour les variations et, par conséquent, doivent être propagées à elles.
+Le **Maître** fait partie intégrante d’un fragment de contenu et, par définition, il contient la copie maître du contenu, tandis que les variations contiennent les versions individuelles et personnalisées de ce contenu. Lorsque le Principal est mis à jour, il est possible que ces modifications soient également pertinentes pour les variations et, par conséquent, qu’elles doivent être propagées.
 
 Lors de la modification d’une variation, vous pouvez accéder à l’action de synchronisation de l’élément actuel de la variation avec le maître. Vous pouvez ainsi copier automatiquement les modifications apportées au Maître sur la variation requise.
 
