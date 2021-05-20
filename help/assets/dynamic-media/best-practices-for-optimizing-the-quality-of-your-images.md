@@ -1,11 +1,10 @@
 ---
 title: Bonnes pratiques relatives à l’optimisation de la qualité des images
-description: Découvrez les meilleures pratiques pour optimiser la qualité de vos fichiers d’image à l’aide de Dynamic Media.
+description: Découvrez les bonnes pratiques pour optimiser la qualité de vos ressources d’image à l’aide de Dynamic Media.
 contentOwner: Rick Brough
 feature: Gestion des ressources
 role: Business Practitioner
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-translation-type: tm+mt
 source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
 source-wordcount: '1478'
@@ -17,13 +16,13 @@ ht-degree: 79%
 
 L’optimisation de la qualité des images peut être un processus chronophage, car de nombreux facteurs contribuent à l’obtention de résultats acceptables. Le résultat est en partie subjectif car les individus perçoivent la qualité des images de manière différente. Une expérimentation structurée est la clé.
 
-Adobe Experience Manager comprend plus de 100 commandes de diffusion d’images Dynamic Media pour le réglage et l’optimisation des images et des résultats de rendu. Les instructions suivantes peuvent vous aider à rationaliser le processus et à obtenir de bons résultats rapidement à l’aide de commandes essentielles et de pratiques recommandées.
+Adobe Experience Manager comprend plus de 100 commandes de diffusion d’images Dynamic Media pour l’optimisation et le réglage des images et des résultats de rendu. Les instructions suivantes peuvent vous aider à rationaliser le processus et à obtenir de bons résultats rapidement à l’aide de commandes essentielles et de pratiques recommandées.
 
 ## Bonnes pratiques relatives au format d’image (`&fmt=`) {#best-practices-for-image-format-fmt}
 
 * Les formats JPG et PNG sont les mieux adaptés pour obtenir des images de bonne qualité, d’une taille et d’un volume gérables.
 * Si aucune commande de format n’est fournie dans l’URL, Dynamic Media Image Delivery utilise par défaut le format JPG pour la distribution.
-* Le format JPG compresse selon un ratio 10:1 et produit habituellement des tailles de fichier image plus petites. Le format PNG compresse les images à un rapport d’environ 2:1, sauf si les images contiennent un arrière-plan blanc. Néanmoins, en règle générale, les fichiers PNG sont plus volumineux que les fichiers JPG.
+* Le format JPG compresse selon un ratio 10:1 et produit habituellement des tailles de fichier image plus petites. Le format PNG se compresse à un ratio d’environ 2:1, sauf lorsque les images contiennent un arrière-plan blanc. Néanmoins, en règle générale, les fichiers PNG sont plus volumineux que les fichiers JPG.
 * Le format JPG utilise une compression avec perte, ce qui signifie que des éléments (pixels) sont supprimés au cours de la compression. Par contre, le format PNG utilise une compression sans perte.
 * Généralement, le format JPG compresse les images photographiques avec une plus grande fidélité que les images de synthèse avec des bords nets et un fort contraste.
 * Si les images contiennent de la transparence, utilisez le format PNG, car le format JPG ne prend pas en charge cette caractéristique.
@@ -41,13 +40,13 @@ Pour le dimensionnement des images, il est recommandé d’utiliser `&wid=<value
 
 ## Bonnes pratiques relatives à l’accentuation des images {#best-practices-for-image-sharpening}
 
-L’accentuation des images est l’aspect le plus complexe du contrôle des images du site web, processus au cours duquel de nombreuses erreurs sont commises. Prenez le temps d’en savoir plus sur le fonctionnement de l’accentuation et du masquage flou en Experience Manager en consultant les ressources utiles suivantes :
+L’accentuation des images est l’aspect le plus complexe du contrôle des images du site web, processus au cours duquel de nombreuses erreurs sont commises. Prenez le temps d’en savoir plus sur le fonctionnement de l’accentuation et du masquage flou en Experience Manager en vous référant aux ressources utiles suivantes :
 
-* Le livre blanc Meilleures pratiques [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf) s’applique également au Experience Manager.
+* L’article technique des bonnes pratiques [Adobe de la qualité d’image Dynamic Media Classic et des bonnes pratiques d’accentuation](/help/assets/dynamic-media/assets/sharpening_images.pdf) s’applique également à Experience Manager.
 
-* Regardez [Utilisation de l’accentuation des images avec le Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
+* Regardez [Utilisation de l’accentuation d’image avec Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
-Avec Experience Manager, vous pouvez accentuer les images lors de l’assimilation, de la diffusion ou les deux. En général, cependant, il est préférable d’accentuer les images en utilisant une seule méthode ou l’autre, mais pas les deux. L’accentuation des images lors de la distribution, sur une URL, produit généralement les meilleurs résultats.
+Experience Manager vous permet d’accentuer les images lors de l’ingestion, de la diffusion ou des deux. Toutefois, il est généralement préférable d’accentuer les images à l’aide d’une seule méthode ou d’une autre, mais pas des deux. L’accentuation des images lors de la distribution, sur une URL, produit généralement les meilleurs résultats.
 
 Il existe deux méthodes d’accentuation des images que vous pouvez utiliser :
 
@@ -66,11 +65,11 @@ Il existe deux méthodes d’accentuation des images que vous pouvez utiliser :
 
       Pour plus d’informations sur la façon de définir ces trois paramètres, y compris les bonnes pratiques à appliquer avec le filtre, reportez-vous aux ressources suivantes :
 
-      * Le livre blanc Meilleures pratiques [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf) s’applique également au Experience Manager.
+      * L’article technique des bonnes pratiques [Adobe de la qualité d’image Dynamic Media Classic et des bonnes pratiques d’accentuation](/help/assets/dynamic-media/assets/sharpening_images.pdf) s’applique également à Experience Manager.
 
-      * Regardez [Utilisation de l’accentuation des images avec le Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
+      * Regardez [Utilisation de l’accentuation d’image avec Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
-      * Experience Manager vous permet également de contrôler un quatrième paramètre : monochrome (0,1). Ce paramètre détermine si le masquage flou est appliqué séparément à chaque composante de couleur en utilisant la valeur 0 ou à la luminosité/intensité de l’image en utilisant la valeur 1.
+      * Experience Manager vous permet également de contrôler un quatrième paramètre : monochrome (0,1). Ce paramètre détermine si le masquage flou est appliqué séparément à chaque composant de couleur en utilisant la valeur 0 ou à la luminosité/intensité de l’image en utilisant la valeur 1.
 
 
 
@@ -100,7 +99,7 @@ La bonne pratique pour la compression JPG consiste à utiliser `&qlt=85,0`.
 
 ## Bonnes pratiques relatives au dimensionnement JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
 
-Le paramètre `jpegSize` est utile si vous souhaitez garantir qu&#39;une image ne dépasse pas une certaine taille pour la diffusion sur des périphériques dont la mémoire est limitée.
+Le paramètre `jpegSize` est utile si vous souhaitez garantir qu’une image ne dépasse pas une certaine taille pour sa diffusion sur des appareils dont la mémoire est limitée.
 
 * Ce paramètre est défini en kilo-octets (`jpegSize=&lt;size_in_kilobytes&gt;`). Il définit la taille maximale autorisée pour la diffusion de l’image.
 * `&jpegSize=` interagit avec le paramètre de compression JPG `&qlt=`. Si la réponse JPG avec le paramètre de compression JPG spécifié (`&qlt=`) ne dépasse pas la valeur jpegSize, l’image est renvoyée avec `&qlt=` tel que défini. Sinon, `&qlt=` est graduellement diminué jusqu’à ce que l’image soit ajustée à la taille maximale autorisée ou jusqu’à ce que le système détermine qu’il ne peut pas procéder à l’ajustement et renvoie une erreur.
@@ -119,8 +118,8 @@ Si l’image doit être davantage optimisée, accentuez-la progressivement (masq
 
 Si le résultat de l’accentuation n’est toujours pas satisfaisant, augmentez le rayon par incréments décimaux. Pour chaque incrément décimal, repartez de la valeur 1,75 et augmentez graduellement jusqu’à 4. Répétez ce processus jusqu’à obtention du résultat souhaité. Bien que les valeurs ci-dessus représentent une approche que les studios de création ont validée, gardez à l’esprit que vous pouvez commencer par d’autres valeurs et suivre d’autres stratégies. Le résultat, et sa réussite, sont subjectifs. C’est pourquoi l’expérimentation est si importante.
 
-Au fur et à mesure que vous testez, les suggestions générales suivantes s’avèrent utiles pour optimiser votre flux de travail :
+Lors de votre test, les suggestions générales suivantes s’avèrent utiles pour optimiser votre workflow :
 
 * Testez différents paramètres en temps réel, directement sur une URL.
 * Gardez à l’esprit que vous pouvez regrouper les commandes de diffusion d’images Dynamic Media dans un paramètre d’image prédéfini. Il s’agit en outre d’une bonne pratique. Un paramètre d’image prédéfini est, en fait, constitué de macros de commande d’URL avec des noms de paramètres prédéfinis personnalisés tels que `$thumb_low$` et `&product_high$`. Le nom du paramètre prédéfini personnalisé dans un chemin d’URL appelle ces paramètres prédéfinis. Cette fonctionnalité vous aide à gérer les commandes et les paramètres de qualité pour différents modèles d’utilisation des images sur vos sites web et raccourcit la longueur globale des URL.
-* Experience Manager propose également des méthodes plus avancées pour régler la qualité de l’image, telles que l’application d’une accentuation des images lors de l’assimilation. Pour optimiser les résultats de rendu, [les services de conseil à l&#39;Adobe](https://business.adobe.com/customers/consulting-services/main.html) peuvent vous aider à personnaliser vos informations et vos meilleures pratiques.
+* Experience Manager propose également des méthodes plus avancées pour régler la qualité des images, telles que l’application de l’accentuation des images lors de l’ingestion. Pour optimiser les résultats de rendu, les [services de conseil de l’Adobe](https://business.adobe.com/customers/consulting-services/main.html) peuvent vous aider à personnaliser les informations et les bonnes pratiques.
