@@ -1,14 +1,13 @@
 ---
 title: Application de workflows aux pages
 description: Lors de la création de pages, vous avez la possibilité d’utiliser des workflows pour exécuter des actions sur vos pages. Il est possible d’appliquer plusieurs workflows.
-translation-type: tm+mt
-source-git-commit: b551a0b0d85d264feabf78942a381c4239fdbadb
+exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 100%
 
 ---
-
 
 # Application de workflows aux pages   {#applying-workflows-to-pages}
 
