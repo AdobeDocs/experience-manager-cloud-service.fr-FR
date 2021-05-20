@@ -1,14 +1,13 @@
 ---
 title: Détails de la configuration du projet
 description: Détails de la configuration du projet – Cloud Services
-translation-type: tm+mt
-source-git-commit: 207d0742e8bf46065c7e20bec7d88b0776c246b2
+exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 100%
 
 ---
-
 
 # Configuration du projet {#project-setup-details}
 
