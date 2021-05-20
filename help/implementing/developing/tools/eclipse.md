@@ -1,14 +1,13 @@
 ---
 title: AEM Developer Tools for Eclipse
-description: Outils de développement AEM pour Eclipse
-translation-type: tm+mt
-source-git-commit: c40d668cb6dcf5c3e2d09504b547457306a99c85
+description: AEM Outils de développement pour Eclipse
+exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1182'
 ht-degree: 100%
 
 ---
-
 
 # AEM Developer Tools for Eclipse{#aem-developer-tools-for-eclipse}
 
@@ -26,7 +25,7 @@ Il offre plusieurs fonctionnalités qui facilitent le développement d’AEM :
 * Amorçage simple de projets AEM avec un assistant de création de projet spécifique
 * Modification facile des propriétés JCR
 
-## Conditions préalables {#requirements}
+## Conditions requises {#requirements}
 
 Avant d’utiliser AEM Developer Tools, vous devez :
 
@@ -199,7 +198,7 @@ Si vous souhaitez recréer un package à partir de votre projet, cliquez avec le
 
 Vous disposez désormais d’un dossier cible créé avec votre package (nommé par ex. `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
-## Résolution des incidents {#troubleshooting}
+## Résolution des problèmes {#troubleshooting}
 
 ### Résolution d’une définition de projet non valide {#resolving-invalid-project-definition}
 
