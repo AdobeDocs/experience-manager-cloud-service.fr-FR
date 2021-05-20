@@ -2,16 +2,15 @@
 title: Architecture de [!DNL Assets]
 description: Architecture d’Adobe Experience Manager Assets as a [!DNL Cloud Service]
 contentOwner: AG
-feature: Asset Management,Asset Compute Microservices
+feature: Gestion des ressources, microservices Asset compute
 role: Architect
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 0440c6a0-97c7-440e-a96e-629825d34a73
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '92'
+source-wordcount: '91'
 ht-degree: 94%
 
 ---
-
 
 # Architecture de la solution Assets as a [!DNL Cloud Service] {#assets-architecture}
 
@@ -22,6 +21,6 @@ Pour consulter un aperçu de l’architecture des microservices de ressources, r
 >[!MORELIKETHIS]
 >
 >* [Aperçu et nouveautés](/help/assets/overview.md)
->* [Formats de fichiers et types MIME pris en charge](file-format-support.md)
->* [Aperçu des microservices de ressources](asset-microservices-overview.md)
+* [Formats de fichiers et types MIME pris en charge](file-format-support.md)
+* [Présentation des microservices de ressources](asset-microservices-overview.md)
 
