@@ -1,8 +1,7 @@
 ---
-title: Connexion d'AEM en tant que Cloud Service
-description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données dans AEM en tant que Cloud Service.
+title: Journalisation d’AEM en tant que Cloud Service
+description: Découvrez comment configurer des paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données dans AEM en tant que Cloud Service.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-translation-type: tm+mt
 source-git-commit: e87b71dd5081b95ca3fd55e66455476c85a50f6c
 workflow-type: tm+mt
 source-wordcount: '2332'
@@ -10,7 +9,7 @@ ht-degree: 94%
 
 ---
 
-# Connexion de l&#39;AEM en tant que Cloud Service {#logging-for-aem-as-a-cloud-service}
+# Journalisation d’AEM en tant que Cloud Service {#logging-for-aem-as-a-cloud-service}
 
 La plate-forme AEM as a Cloud Service permet aux clients d’inclure du code personnalisé destiné à créer des expériences incomparables pour leurs propres bases de clients. Dans cette optique, la journalisation est une fonction essentielle pour déboguer et comprendre l’exécution du code sur le développement local, ainsi que les environnements cloud, en particulier les environnements de développement AEM as a Cloud Service.
 
@@ -381,7 +380,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tr>
 <tr>
 <td>Agent utilisateur</td>
-<td>"Mozilla/5.0 (Macintosh ; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, comme Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
+<td>"Mozilla/5.0 (Macintosh); Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, comme Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
 </tr>
 </tbody>
 </table>
@@ -599,11 +598,11 @@ Les propriétés ci-dessus doivent être spécifiées pour chaque combinaison de
 >
 >Le transfert Splunk pour les environnements de programme de test Sandbox n’est pas pris en charge.
 
-Assurez-vous que la requête initiale comprend tous les environnements de développement qui doivent être activés, en plus des environnements d’étape/produit.
+Assurez-vous que la requête initiale inclut tous les environnements de développement qui doivent être activés, en plus des environnements d’évaluation/de production.
 
-Si de nouveaux environnements de développement créés après la requête initiale sont destinés à un transfert de code source, mais qu’ils ne sont pas activés, une requête supplémentaire doit être envoyée.
+Si des environnements de développement créés après la requête initiale sont destinés à un transfert Splunk, mais qu’il n’est pas activé, une requête supplémentaire doit être effectuée.
 
-Notez également que si des environnements de développement ont été demandés, il est possible que d&#39;autres environnements de développement qui ne figurent pas dans la requête ou même les environnements de sandbox aient activé le transfert de Splunk et partagent un index Splunk. Les clients peuvent utiliser le champ `aem_env_id` pour distinguer ces environnements.
+Notez également que si des environnements de développement ont été demandés, il est possible que d’autres environnements de développement qui ne figurent pas dans la requête ou même les environnements de test aient activé le transfert Splunk et partagent un index Splunk. Les clients peuvent utiliser le champ `aem_env_id` pour faire la distinction entre ces environnements.
 
 Vous trouverez ci-dessous un exemple de demande d’assistance :
 
