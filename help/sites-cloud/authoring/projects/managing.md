@@ -1,14 +1,13 @@
 ---
 title: Gestion de projets
 description: La console Projets vous permet d’organiser un projet en regroupant les ressources dans une seule entité à laquelle vous pouvez accéder et que vous pouvez gérer.
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 100%
 
 ---
-
 
 # Gestion de projets {#managing-projects}
 
@@ -136,8 +135,7 @@ Pour activer/désactiver un projet :
 1. Dans la console **Projets**, ouvrez votre projet, puis recherchez la mosaïque **Informations sur le projet**.
 
    >[!NOTE]
-   >
-   >Vous pourriez être amené à ajouter cette mosaïque, si ce n’est pas déjà fait dans votre projet. Voir [Ajout de mosaïques](#adding-items-to-a-tile).
+   Vous pourriez être amené à ajouter cette mosaïque, si ce n’est pas déjà fait dans votre projet. Voir [Ajout de mosaïques](#adding-items-to-a-tile).
 
 1. Appuyez/cliquez sur **Modifier**.
 1. Basculez la valeur du sélecteur entre **Actif** et **Inactif**.
