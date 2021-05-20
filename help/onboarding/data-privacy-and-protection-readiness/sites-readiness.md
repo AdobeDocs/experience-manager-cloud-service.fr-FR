@@ -1,42 +1,41 @@
 ---
-title: Règlement sur la protection des données et la confidentialité des données - Adobe Experience Manager en tant que site Cloud Service Prêt
-description: 'Découvrez Adobe Experience Manager en tant que site Cloud Service pris en charge par les divers règlements sur la protection des données et la confidentialité des données ; y compris le règlement général de l''UE sur la protection des données (RGPD), la loi sur la protection des renseignements personnels des consommateurs de Californie et la façon de se conformer lors de la mise en oeuvre d''une nouvelle AEM en tant que projet Cloud Service. '
-translation-type: tm+mt
-source-git-commit: 7b5a427853075054d56bc7ea6569d5d839e282a1
+title: Règlement sur la protection et la confidentialité des données - Préparation d’Adobe Experience Manager en tant que Cloud Service Sites
+description: Découvrez la prise en charge d’Adobe Experience Manager as a Cloud Service Sites pour les différents règlements sur la protection et la confidentialité des données ; notamment le règlement général sur la protection des données (RGPD) de l’UE, la loi sur la protection de la vie privée des consommateurs de Californie et la manière de se conformer lors de la mise en oeuvre d’une nouvelle AEM en tant que projet Cloud Service.
+exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1036'
 ht-degree: 43%
 
 ---
 
-
-# Adobe Experience Manager en tant que site Cloud Service Prêt pour la protection des données et la confidentialité des données {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager en tant que site Cloud Service Préparation aux réglementations sur la protection et la confidentialité des données {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
->Le contenu de ce document ne constitue pas un conseil juridique et ne se substitue pas à un conseil juridique.
+>Le contenu de ce document ne constitue pas un avis juridique et ne vise pas à remplacer un avis juridique.
 >
->Veuillez consulter le service juridique de votre société pour obtenir des conseils sur les réglementations relatives à la protection des données et à la confidentialité des données.
+>Veuillez consulter le service juridique de votre entreprise pour obtenir des conseils concernant les réglementations sur la protection des données et la confidentialité des données.
 
 >[!NOTE]
 >
->Pour plus d&#39;informations sur la réponse des Adobes aux questions de confidentialité et sur ce que cela signifie pour vous en tant que client d&#39;Adobe, voir [Centre de confidentialité des Adobes](https://www.adobe.com/privacy.html).
+>Pour plus d’informations sur la réponse de l’Adobe aux problèmes de confidentialité et sur ce que cela signifie pour vous en tant que client Adobe, voir [Centre de traitement des données personnelles de l’Adobe](https://www.adobe.com/privacy.html).
 
-Adobe Experience Manager en tant que site Cloud Service est prêt à aider les clients à respecter leurs obligations en matière de confidentialité et de protection des données. Cette page guide les clients tout au long des procédures de traitement de ces demandes en AEM Sites. Elle décrit l’emplacement des données privées stockées et la procédure pour les supprimer manuellement ou à l’aide de code.
+Adobe Experience Manager as a Cloud Service Sites est prêt à aider les clients à respecter leurs obligations en matière de confidentialité et de protection des données. Cette page guide les clients à travers les procédures de gestion de ces requêtes dans AEM Sites. Elle décrit l’emplacement des données privées stockées et la procédure pour les supprimer manuellement ou à l’aide de code.
 
-Pour plus d&#39;informations, consultez le [Centre de confidentialité des Adobes](https://www.adobe.com/privacy.html).
+Pour plus d’informations, voir [Centre de traitement des données personnelles des Adobes](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >
->Voir [Adobe Experience Manager as a Cloud Service Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) pour plus de détails.
+>Voir [Adobe Experience Manager as a Cloud Service Readiness for Data Protection and Data Privacy regulation](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) pour plus d’informations.
 
 ## Niveau de création AEM {#aem-author-tier}
 
-Les comptes d’utilisateurs et le contenu du CDU sur le serveur d’auteur sont traités dans la [documentation de AEM Foundation](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md).
+Les comptes utilisateur et le contenu généré par l’utilisateur sur le serveur de création sont traités dans la [documentation AEM Foundation](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md).
 
 ## Niveau de publication AEM {#aem-publish-tier}
 
-Les comptes utilisateur utilisés pour authentifier les visiteurs sur le site et le contenu UGC sur le serveur de publication sont traités dans la [documentation de AEM Foundation](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md).
+Les comptes utilisateur utilisés pour authentifier les visiteurs sur le site et le contenu généré par l’utilisateur sur le serveur de publication sont abordés dans la [documentation AEM Foundation](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md).
 
 Par défaut, les composants AEM Sites ne stockent pas les données de formulaire saisies par les visiteurs sur le serveur de publication. Il est recommandé de transférer les données vers un système tiers ou vers Adobe Campaign pour traitement ultérieur.
 
@@ -46,43 +45,43 @@ Par défaut, les composants AEM Sites ne stockent pas les données de formulaire
 AEM has a [cookie opt-out service](/help/sites-developing/cookie-optout.md ) that can be used for managing the opt-in/opt-out for users.
 -->
 
-Adobe Experience Manager fait l’objet d’un service d’exclusion des cookies qui est utilisé pour gérer l’inclusion/exclusion des utilisateurs.
+Adobe Experience Manager est soumis à un service d’exclusion des cookies utilisé pour gérer l’inclusion/exclusion des utilisateurs.
 
 Pour exclure :
 
 1. Accédez à:
    [Centre de traitement des données personnelles des Adobes - Exclusion](https://www.adobe.com/privacy/opt-out.html)
 
-1. Faites défiler l&#39;écran jusqu&#39;à **Services** - **Données d&#39;utilisation du service Experience Cloud**.
+1. Faites défiler l’écran jusqu’à **Services** - **Données d’utilisation du service Experience Cloud**.
 
 1. Sélectionnez le lien référencé ; actuellement intitulé **ici**.
 
-1. Vous recevrez les détails suivants, ainsi que les options pour opt-out ou dans :
+1. Les informations suivantes s’affichent, ainsi que les options d’exclusion ou de participation :
 
-   * Pour exclure l’agrégation et l’analyse des données relatives à votre visite sur ce site, il est nécessaire d’installer un cookie sur votre navigateur. Ce cookie identifie que vous avez choisi de ne pas participer.
+   * Pour exclure l’agrégation et l’analyse des données relatives à votre visite sur ce site, il est nécessaire d’installer un cookie sur votre navigateur. Ce cookie identifie que vous avez exercé votre droit d’opposition.
 
-      Si vous supprimez le cookie d’exclusion, ou si vous changez d’ordinateur ou de navigateur Web, vous devrez à nouveau vous désinscrire.
+      Si vous supprimez le cookie d’exclusion, ou si vous changez d’ordinateur ou de navigateur Web, vous devez procéder à nouveau à l’exclusion.
 
-      Exclusion - Exclure mon compte de l&#39;agrégation et de l&#39;analyse des sessions du visiteur (installer le `amcglobal.sc.omtrdc.net` cookie d&#39;exclusion) - Cliquez ici.
+      Exclusion : excluez-moi de l’agrégation et de l’analyse des sessions du visiteur (installez le `amcglobal.sc.omtrdc.net` cookie d’exclusion) - Cliquez ici.
 
-      Inscription : incluez-moi dans l&#39;agrégation et l&#39;analyse des sessions de visiteur (n&#39;installez pas le `amcglobal.sc.omtrdc.net` cookie d&#39;exclusion) - Cliquez ici.
+      Opt-in : incluez-moi dans l’agrégation et l’analyse de la session du visiteur (n’installez pas le `amcglobal.sc.omtrdc.net` cookie d’exclusion) - Cliquez ici.
    Suivez les étapes ci-dessus pour accéder aux liens réels.
 
    >[!NOTE]
    >
-   > La section **2 contient une autre description. Confidentiel.** de l&#39; [Adobe Conditions générales d&#39;utilisation](https://www.adobe.com/fr/legal/terms.html).
+   > La section **2 contient une description supplémentaire. Confidentiel.** de la section Conditions d’utilisation générales de l’ [Adobe](https://www.adobe.com/fr/legal/terms.html).
 
 ## Analytics Foundation {#analytics-foundation}
 
-AEM Sites comprend une intégration facultative avec Analytics Foundation qui utilise les fonctionnalités du service Adobe Analytics On-demand.
+AEM Sites comprend une intégration facultative avec Analytics Foundation qui utilise les fonctionnalités du service à la demande Adobe Analytics.
 
-Pour plus d&#39;informations sur la gestion des demandes de sujet de données liées à Adobe Analytics, voir [Adobe Analytics and Data Privacy](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html).
+Pour plus d’informations sur la gestion des demandes des titulaires de données liées à Adobe Analytics, voir [Adobe Analytics et Confidentialité des données](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html).
 
-## Fondation de la personnalisation par Cible {#personalization-foundation-by-target}
+## Base de personnalisation par Target {#personalization-foundation-by-target}
 
-AEM Sites inclut une intégration facultative à la base de personnalisation par Cible qui utilise les fonctionnalités du service à la demande Adobe Target.
+AEM Sites comprend une intégration facultative avec Personalization Foundation par Target, qui utilise les fonctionnalités du service à la demande Adobe Target.
 
-Pour plus d&#39;informations sur la gestion des demandes de personnes concernées liées à Adobe Target, voir [Adobe Target - Règlement sur la protection des données et la protection des données générales](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+Pour plus d’informations sur la gestion des demandes des titulaires de données liées à Adobe Target, voir [Adobe Target - Confidentialité et Règlement général sur la protection des données](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 
@@ -98,10 +97,10 @@ Par défaut, ces données sur les visiteurs ne sont pas stockées dans AEM ; AE
 
 Le propriétaire du site doit mettre en œuvre un composant d’exclusion en suivant les instructions ci-après.
 
-Ces instructions mettent en œuvre la souscription comme valeur par défaut. Ainsi, un visiteur de site Web doit clairement accepter, avant que toute donnée personnelle ne soit stockée dans la persistance (côté client) du navigateur.
+Ces instructions mettent en œuvre la souscription comme valeur par défaut. Ainsi, un visiteur du site web doit clairement accepter, avant que toute donnée personnelle ne soit stockée dans la persistance (côté client) du navigateur.
 
 * Le composant d’exclusion doit être inclus à chaque fois que le composant ContextHub est inclus.
-* Les termes et conditions relatifs à la protection des données et à la confidentialité du site Web doivent être affichés au visiteur du site Web, ce qui leur permet de :
+* Les conditions générales relatives à la protection des données et à la confidentialité du site web doivent être présentées au visiteur du site web, ce qui lui permet de :
 
    * d’accepter ;
    * de refuser ;
