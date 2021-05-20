@@ -1,14 +1,13 @@
 ---
 title: Ajout d’un certificat SSL – Gestion des certificats SSL
 description: Ajout d’un certificat SSL – Gestion des certificats SSL
-translation-type: tm+mt
-source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
+exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 100%
 
 ---
-
 
 # Ajout d’un certificat SSL {#adding-an-ssl-certificate}
 
