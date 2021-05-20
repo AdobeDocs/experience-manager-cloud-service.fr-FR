@@ -1,14 +1,13 @@
 ---
 title: Fragments de contenu
 description: Les fragments de contenu d’Adobe Experience Manager as a Cloud Service vous permettent de concevoir, de créer, d’organiser et d’utiliser du contenu indépendant des pages
-translation-type: tm+mt
-source-git-commit: be65ba65fb6bbd7634da882ef8337565f1fce477
+exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 100%
 
 ---
-
 
 # Fragments de contenu {#content-fragments}
 
@@ -24,8 +23,10 @@ En même temps que l’outil d’exportation JSON mis à jour, les fragments de
 >
 >* Les **fragments de contenu** sont des contenus éditoriaux, composés essentiellement de texte et des images associées. Il s’agit exclusivement de contenu, sans aucun élément de conception ni de mise en page.
 >* Les **fragments d’expérience** désignent un contenu entièrement mis en page et donc les fragments d’une page web.
+
 >
->Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
+>
+Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
 
 >[!CAUTION]
 >
@@ -70,8 +71,8 @@ Grâce aux fragments de contenu :
    >
    >Pour plus d’informations sur les autres fonctionnalités d’édition, voir aussi :
    >
-   >* [Mise en page réactive](/help/sites-cloud/authoring/features/responsive-layout.md)
-   >* [Modification du contenu de la page](/help/sites-cloud/authoring/fundamentals/editing-content.md)
+   >* [Mise en page réactive  ](/help/sites-cloud/authoring/features/responsive-layout.md)
+   * [Modification du contenu de la page](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 
 ### Sélection de l’élément ou de la variation {#selecting-the-element-or-variation}
@@ -79,8 +80,7 @@ Grâce aux fragments de contenu :
 Ouvrez la boîte de dialogue **Configuration** du fragment pour configurer le fragment à utiliser dans la page active. La boîte de dialogue peut dépendre du composant utilisé.
 
 >[!NOTE]
->
->Voir aussi [Composants principaux, le composant de fragment de contenu](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/content-fragment-component.html)
+Voir aussi [Composants principaux, le composant de fragment de contenu](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/content-fragment-component.html)
 
 Dans la boîte de dialogue de configuration appropriée, vous pouvez sélectionner les paramètres disponibles, parmi lesquels :
 
@@ -93,8 +93,7 @@ Dans la boîte de dialogue de configuration appropriée, vous pouvez sélectionn
    * Une sélection est disponible en fonction du modèle utilisé.
 
    >[!NOTE]
-   >
-   >Les éléments disponibles dépendent du modèle utilisé.
+   Les éléments disponibles dépendent du modèle utilisé.
 
 * **Variation**
    * Le **maître** par défaut sera toujours disponible.
@@ -109,8 +108,7 @@ Dans la boîte de dialogue de configuration appropriée, vous pouvez sélectionn
 Vous pouvez ouvrir la source du fragment à modifier (la ressource) à l’aide de l’icône **Modifier** située dans la barre d’outils du composant. Vous pourrez ainsi [modifier et gérer le fragment de contenu](/help/assets/content-fragments/content-fragments.md).
 
 >[!CAUTION]
->
->Comme toujours, la modification de la source du fragment affectera toutes les pages qui font référence à ce fragment de contenu.
+Comme toujours, la modification de la source du fragment affectera toutes les pages qui font référence à ce fragment de contenu.
 
 ### Ajout de contenu intermédiaire    {#adding-in-between-content}
 
@@ -125,27 +123,21 @@ Dans le cas du contenu intermédiaire, plusieurs possibilités vous sont offerte
 * Utiliser du [contenu associé](#using-associated-content) comme source de contenu intermédiaire.
 
 >[!CAUTION]
->
->Le contenu intermédiaire est du contenu de page. Il n’est pas stocké dans le fragment de contenu.
+Le contenu intermédiaire est du contenu de page. Il n’est pas stocké dans le fragment de contenu.
 
 ![Insérer le composant](/help/sites-cloud/authoring/assets/content-fragments-insert.png)
 
 >[!NOTE]
->
->Vous pouvez également [insérer des ressources visuelles (images) dans le fragment proprement dit](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
->
->Les ressources visuelles insérées dans le fragment sont liées au paragraphe précédent dans le fragment. Cela signifie que vous ne pouvez pas placer le contenu intermédiaire entre une ressource visuelle et le paragraphe précédent. Si vous avez besoin de ce niveau de connexion, vous pouvez ajouter l’image au fragment (en tant que [fragment de média mixte](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)).
+Vous pouvez également [insérer des ressources visuelles (images) dans le fragment proprement dit](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+Les ressources visuelles insérées dans le fragment sont liées au paragraphe précédent dans le fragment. Cela signifie que vous ne pouvez pas placer le contenu intermédiaire entre une ressource visuelle et le paragraphe précédent. Si vous avez besoin de ce niveau de connexion, vous pouvez ajouter l’image au fragment (en tant que [fragment de média mixte](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)).
 
 >[!CAUTION]
->
->Une fois le contenu intermédiaire ajouté à un fragment de votre page, la modification de la structure du fragment de contenu sous-jacent (c’est-à-dire dans l’éditeur de fragment de contenu) risque de donner lieu à des résultats erronés/inattendus.
->
->Si cela se produit, le contenu intermédiaire est conservé tel quel :
->
->* Les composants intermédiaires occupent une position absolue dans la séquence de composants du flux de fragments. Cette position ne varie pas, même en cas de modification du contenu des paragraphes dans le fragment.
->
->  Cela peut donner l’impression que le positionnement relatif a changé, dans la mesure où les paragraphes intermédiaires n’ont aucune relation contextuelle avec les paragraphes (de fragment) près desquels ils sont placés.
->* À moins que ces deux structures de paragraphes ne soient en conflit ; dans ce cas, le contenu intermédiaire n’est pas affiché (bien qu’il soit toujours présent en interne).
+Une fois le contenu intermédiaire ajouté à un fragment de votre page, la modification de la structure du fragment de contenu sous-jacent (c’est-à-dire dans l’éditeur de fragment de contenu) risque de donner lieu à des résultats erronés/inattendus.
+Si cela se produit, le contenu intermédiaire est conservé tel quel :
+* Les composants intermédiaires occupent une position absolue dans la séquence de composants du flux de fragments. Cette position ne varie pas, même en cas de modification du contenu des paragraphes dans le fragment.
+
+Cela peut donner l’impression que le positionnement relatif a changé, dans la mesure où les paragraphes intermédiaires n’ont aucune relation contextuelle avec les paragraphes (de fragment) près desquels ils sont placés.
+* À moins que ces deux structures de paragraphes ne soient en conflit ; dans ce cas, le contenu intermédiaire n’est pas affiché (bien qu’il soit toujours présent en interne).
 
 
 ### Utilisation de contenu associé    {#using-associated-content}
@@ -153,12 +145,10 @@ Dans le cas du contenu intermédiaire, plusieurs possibilités vous sont offerte
 Si vous avez [associé du contenu](/help/assets/content-fragments/content-fragments-assoc-content.md) au [fragment de contenu](/help/assets/content-fragments/content-fragments.md), ces ressources seront disponibles à partir du panneau latéral (après avoir placé le fragment sur la page de contenu). Le contenu associé est en fait une source spéciale de contenu pour le [contenu intermédiaire](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
->
->Différentes méthodes permettent d’ajouter des [ressources visuelles (des images, par exemple)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
+Différentes méthodes permettent d’ajouter des [ressources visuelles (des images, par exemple)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
 
 >[!NOTE]
->
->Si plusieurs fragments de contenu sont présents dans une page, l’onglet **Contenu associé** présente les ressources associées à tous les fragments.
+Si plusieurs fragments de contenu sont présents dans une page, l’onglet **Contenu associé** présente les ressources associées à tous les fragments.
 
 Une fois que vous avez ajouté un fragment avec du contenu associé à votre page, un nouvel onglet (**Contenu associé**) est ouvert dans le panneau latéral.
 
