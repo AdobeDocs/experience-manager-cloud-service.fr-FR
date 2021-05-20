@@ -4,14 +4,13 @@ description: Mettez en place des workflows de révision pour les ressources dans
 contentOwner: AG
 feature: Collections,Collaboration
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '795'
 ht-degree: 99%
 
 ---
-
 
 # Vérification de ressources dans des dossiers et des collections {#review-folder-assets-and-collections}
 
@@ -109,4 +108,3 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
    **Mode Liste**
 
    ![collection_reviewstatuslistview](assets/collection_reviewstatuslistview.png)
-
