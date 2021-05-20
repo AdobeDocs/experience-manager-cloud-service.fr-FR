@@ -1,14 +1,13 @@
 ---
 title: Configuration du pipeline CI/CD - Cloud Services
 description: Configuration du pipeline CI/CD - Cloud Services
-translation-type: tm+mt
-source-git-commit: 97c3ddd5331d55c5d9b45a29251f584e4bac878b
+exl-id: d2024b42-9042-46a0-879e-110b214c7285
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 96%
 
 ---
-
 
 # Configuration du pipeline CI-CD {#configure-ci-cd-pipeline}
 
@@ -74,8 +73,8 @@ Pour configurer le comportement et les préférences de votre pipeline, procéde
    Cela s’avère utile pour les clients qui souhaitent davantage de processus automatisés. Les options disponibles sont les suivantes :
 
    * **Demander à chaque fois** : il s’agit du paramètre par défaut, qui nécessite une intervention manuelle lors de n’importe quel échec important.
-   * **Annuler immédiatement**  - Si cette option est sélectionnée, le pipeline sera annulé chaque fois qu&#39;une défaillance importante se produit. Cette option émule essentiellement un utilisateur rejetant manuellement chaque échec.
-   * **Approuver immédiatement**  - Si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu&#39;une défaillance importante se produit. Cette option émule essentiellement la validation manuelle de l’utilisateur à chaque échec.
+   * **Annuler immédiatement**  : si cette option est sélectionnée, le pipeline est annulé chaque fois qu’un échec important se produit. Cette option émule essentiellement un utilisateur rejetant manuellement chaque échec.
+   * **Approuver immédiatement**  : si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Cette option émule essentiellement la validation manuelle de l’utilisateur à chaque échec.
 
 
 1. Les paramètres du pipeline de production comprennent un troisième onglet intitulé **Contrôle de l’expérience**. Cette option fournit un tableau pour les chemins d’URL qui doivent toujours être inclus dans le contrôle de l’expérience.
