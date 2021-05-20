@@ -1,14 +1,13 @@
 ---
 title: Utilisation des adaptateurs Sling
 description: Sling propose un modèle Adaptateur permettant de convertir facilement les objets qui mettent en œuvre l’interface Adaptable
-translation-type: tm+mt
-source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
+exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2234'
 ht-degree: 100%
 
 ---
-
 
 # Utilisation des adaptateurs Sling {#using-sling-adapters}
 
@@ -72,7 +71,7 @@ Cependant, il n’existe pas de règle absolue : l’objet peut soit être une 
 
 Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `adaptTo-targets` possibles. Cependant, pour des sous-classes spécifiques, telles que la ressource basée sur JCR, cela s’avère souvent impossible. Dans ce cas, les implémentations de `AdapterFactory` font généralement partie des classes privées d’un lot et ne sont donc pas exposées dans une API cliente ni répertoriées dans les JavaDocs. En théorie, il serait possible d’accéder à toutes les implémentations `AdapterFactory` à partir de l’exécutable de service [OSGi](/help/implementing/deploying/configuring-osgi.md) et d’observer leurs configurations « adaptables » (sources et cibles), mais pas de les mapper entre elles. En définitive, cela dépend de la logique interne, qui doit être documentée, d’où cette référence.
 
-## Référence  {#reference}
+## Référence {#reference}
 
 ### Sling {#sling}
 
@@ -338,7 +337,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 |---|---|
 | [ReplicationStatus](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/ReplicationStatus.html) | Renvoie l’état de réplication pour le nœud racine utilisateur/groupe. |
 
-#### Gestion des ressources numériques (DAM) {#dam}
+#### Gestion des ressources numériques (DAM)  {#dam}
 
 **Asset** s’adapte à :
 
