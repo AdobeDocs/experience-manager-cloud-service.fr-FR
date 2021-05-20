@@ -1,14 +1,13 @@
 ---
 title: Modifications notables apportées à Adobe Experience Manager (AEM) as a Cloud Service
 description: Modifications notables apportées à Adobe Experience Manager (AEM) as a Cloud Service
-translation-type: tm+mt
-source-git-commit: 515e462e942d58758a11e0a9bd3b1c3990a4dcf9
+exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 93%
 
 ---
-
 
 # Modifications notables apportées à Adobe Experience Manager (AEM) as a Cloud Service {#notable-changes-aem-cloud}
 
@@ -17,11 +16,11 @@ AEM Cloud Service offre une foule de nouvelles fonctionnalités et possibilités
 >[!NOTE]
 >Ce document met en évidence les modifications notables apportées à AEM dans son ensemble. Pour plus d’informations et connaître les changements spécifiques à une solution, voir :
 >
->* [Introduction à Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
->* [Nouveautés et différences](/help/overview/what-is-new-and-different.md) entre Adobe Experience Manager as a Cloud Service avec les versions précédentes
->* [Architecture](/help/core-concepts/architecture.md) d’Adobe Experience Manager as a Cloud Service
->* [Modifications notables apportées à AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
->* [Modifications notables apportées à AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
+>* [Introduction à Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
+* [Nouveautés et différences](/help/overview/what-is-new-and-different.md) entre Adobe Experience Manager as a Cloud Service avec les versions précédentes
+* [Architecture](/help/core-concepts/architecture.md) d’Adobe Experience Manager as a Cloud Service
+* [Modifications notables apportées à AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+* [Modifications notables apportées à AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 
 
 Les principales différences sont les suivantes :
@@ -65,7 +64,7 @@ La console web, qui était utilisée dans les versions précédentes d’AEM pou
 
 ## Les modifications apportées au référentiel de publication ne sont pas autorisées {#changes-to-publish-repo}
 
-Outre les modifications apportées au dossier `/home` sur la couche Publication, les modifications directes apportées au référentiel de publication ne sont pas autorisées sur AEM Cloud Service. Dans les versions précédentes d’AEM ou d’AEM sur site sur AMS, des modifications de code pouvaient être apportées directement au référentiel de publication. Certaines limitations peuvent être atténuées de différentes manières :
+Outre les modifications apportées au dossier `/home` au niveau de publication, les modifications directes apportées au référentiel de publication ne sont pas autorisées sur AEM Cloud Service. Dans les versions antérieures d’AEM on-premise ou d’AEM sur AMS, les modifications de code peuvent être apportées directement au référentiel de publication. Certaines limites peuvent être atténuées comme suit :
 
 * Pour le contenu et la configuration basée sur le contenu : effectuez les modifications sur l’instance d’auteur et publiez-les.
 * Pour le code et la configuration : effectuez les modifications dans le référentiel GIT et exécutez le pipeline CI/CD pour les déployer.
