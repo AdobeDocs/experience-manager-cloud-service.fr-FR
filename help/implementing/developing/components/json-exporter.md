@@ -1,14 +1,13 @@
 ---
 title: Exportateur JSON pour Content Services
 description: AEM Content Services est conçu pour généraliser la description et la diffusion de contenu dans/à partir d’AEM à des canaux autres que des pages web. Il assure la diffusion du contenu aux canaux autres que les pages web AEM classiques, à l’aide de méthodes normalisées qui peuvent être utilisées par tous les clients.
-translation-type: tm+mt
-source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
+exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 100%
 
 ---
-
 
 # Exportateur JSON pour Content Services {#json-exporter-for-content-services}
 
