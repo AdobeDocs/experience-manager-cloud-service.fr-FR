@@ -1,8 +1,7 @@
 ---
 title: 'Enregistrement, connexion et profil utilisateur '
-description: En savoir plus sur l'abonnement, la connexion, les données utilisateur et la synchronisation de groupes pour AEM en tant que Cloud Service
+description: En savoir plus sur l’enregistrement, la connexion, les données utilisateur et la synchronisation de groupe pour AEM en tant que Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-translation-type: tm+mt
 source-git-commit: 4d76d8bac41e19168abb1819841dfc62be07ea0c
 workflow-type: tm+mt
 source-wordcount: '1177'
@@ -14,7 +13,7 @@ ht-degree: 94%
 
 ## Présentation {#introduction}
 
-Les Applications web offrent souvent des fonctions de gestion de compte permettant aux utilisateurs finaux de s’enregistrer sur un site Web, ce qui permet de conserver leurs données d’utilisateur, leur permettant de se connecter ultérieurement et de bénéficier d’une expérience cohérente. Cet article décrit les concepts suivants pour AEM en tant que Cloud Service :
+Les applications Web offrent souvent des fonctionnalités de gestion de compte pour que les utilisateurs finaux s’enregistrent sur un site Web, ce qui conserve leurs données utilisateur, leur permettant de se connecter ultérieurement et de profiter d’une expérience cohérente. Cet article décrit les concepts suivants pour AEM en tant que Cloud Service :
 
 * L’enregistrement
 * La connexion
@@ -26,7 +25,7 @@ Les Applications web offrent souvent des fonctions de gestion de compte permetta
 >
 >Pour que la fonctionnalité décrite dans cet article soit opérationnelle, la fonction de synchronisation des données utilisateur doit être activée, ce qui nécessite, pour le moment, une demande au service clientèle indiquant le programme et les environnements appropriés. Si elles ne sont pas activées, les informations utilisateur seront conservées pendant une courte période (1 à 24 heures) avant de disparaître.
 
-## Enregistrement {#registration}
+## L’enregistrement {#registration}
 
 Lorsqu’un utilisateur final s’enregistre pour un compte sur une application AEM, un compte d’utilisateur est créé sur le service de publication d’AEM, tel qu’il est reflété sur une ressource d’utilisateur sous `/home/users` dans le référentiel JCR.
 
@@ -47,7 +46,7 @@ Il est possible d’écrire un code d’enregistrement personnalisé qui reprend
 
 Dans certains cas, l’enregistrement ou la création d’utilisateurs a déjà été effectué(e) dans des infrastructures situées en dehors d’AEM. Dans ce scénario, l’enregistrement utilisateur est créé dans AEM lors de la connexion.
 
-## Connexion {#login}
+## La connexion {#login}
 
 Une fois un utilisateur final enregistré sur le service de publication AEM, il peut se connecter pour disposer d’un accès authentifié (à l’aide de mécanismes d’autorisation AEM) et obtenir des données persistantes, spécifiques à l’utilisateur, comme les données de profil.
 
