@@ -2,7 +2,6 @@
 title: Utilisation de conditions de masquage
 description: Des conditions de masquage peuvent être utilisées pour déterminer si une ressource de composant est rendue ou non.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-translation-type: tm+mt
 source-git-commit: fa3280defb2a97954c5ab1b70e7600382e370606
 workflow-type: tm+mt
 source-wordcount: '620'
