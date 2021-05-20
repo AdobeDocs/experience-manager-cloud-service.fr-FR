@@ -1,9 +1,8 @@
 ---
 title: Authentification pour les requêtes AEM GraphQL distantes sur les fragments de contenu
-description: Comprenez l'authentification requise pour les requêtes GraphQL d'AEM distantes afin de sécuriser votre diffusion de contenu sans en-tête.
+description: Comprenez l’authentification requise pour les requêtes GraphQL d’AEM distante afin de sécuriser votre diffusion de contenu sans interface.
 feature: Fragments de contenu, API GraphQL
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
-translation-type: tm+mt
 source-git-commit: dab4c9393c26f5c3473e96fa96bf7ec51e81c6c5
 workflow-type: tm+mt
 source-wordcount: '235'
@@ -13,13 +12,13 @@ ht-degree: 75%
 
 # Authentification pour les requêtes AEM GraphQL distantes sur les fragments de contenu {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-Un des principaux cas d’utilisation de l’[API Adobe Experience Manager as a Cloud Service (AEM) GraphQL pour la diffusion de fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md) consiste à accepter les requêtes distantes provenant d’applications ou de services tiers. Ces requêtes distantes peuvent nécessiter un accès aux API authentifiées pour sécuriser la diffusion de contenu sans en-tête.
+Un des principaux cas d’utilisation de l’[API Adobe Experience Manager as a Cloud Service (AEM) GraphQL pour la diffusion de fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md) consiste à accepter les requêtes distantes provenant d’applications ou de services tiers. Ces requêtes distantes peuvent nécessiter un accès à l’API authentifié afin de sécuriser la diffusion de contenu sans interface utilisateur.
 
 >[!NOTE]
 >
 >Pour les tests et le développement, vous pouvez également directement accéder à l’API GraphQL d’AEM avec l’[interface GraphiQL](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface).
 
-Pour l’authentification, le service tiers doit [récupérer un Jeton d&#39;accès](#retrieving-access-token), qui peut ensuite être [utilisé dans la requête GraphQL](#use-access-token-in-graphql-request).
+Pour l’authentification, le service tiers doit [récupérer un jeton d’accès](#retrieving-access-token), qui peut ensuite être [utilisé dans la requête GraphQL](#use-access-token-in-graphql-request).
 
 ## Récupération d’un jeton d’accès {#retrieving-access-token}
 
