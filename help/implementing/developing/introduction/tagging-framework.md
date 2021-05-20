@@ -1,14 +1,13 @@
 ---
 title: Cadre de balisage AEM
 description: Balisage de contenu et utilisation du cadre de balisage AEM afin de la classer et de l’organiser.
-translation-type: tm+mt
-source-git-commit: 4bf023068aa69fb6b69c6f2443703ea2bbbf7d42
+exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1567'
 ht-degree: 100%
 
 ---
-
 
 # Le cadre de balisage AEM {#aem-tagging-framework}
 
