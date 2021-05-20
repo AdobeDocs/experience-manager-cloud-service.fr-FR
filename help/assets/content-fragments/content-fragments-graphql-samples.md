@@ -1,27 +1,26 @@
 ---
 title: Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes
-description: Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu sans encombre en explorant des exemples de contenu et de requêtes.
-feature: Content Fragments,GraphQL API
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+description: Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu sans interface en explorant des exemples de contenu et de requêtes.
+feature: Fragments de contenu, API GraphQL
+exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 94%
 
 ---
 
-
 # Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes {#learn-graphql-with-aem-sample-content-queries}
 
-Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu sans encombre en explorant des exemples de contenu et de requêtes.
+Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu sans interface en explorant des exemples de contenu et de requêtes.
 
 >[!NOTE]
 >
 >Il est préférable de lire cette page à la lumière des sections suivantes :
 >
 >* [Fragments de contenu](/help/assets/content-fragments/content-fragments.md)
->* [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
->* [API GraphQL d’AEM à utiliser avec des fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md)
+* [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
+* [API GraphQL d’AEM à utiliser avec des fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
 Pour prendre en main les requêtes GraphQL et leur fonctionnement avec les fragments de contenu AEM, il peut être utile de consulter quelques exemples pratiques.
@@ -38,14 +37,11 @@ Pour obtenir de l’aide à ce sujet, voir les éléments suivants :
 Consultez ces exemples de requêtes pour accéder à des illustrations de création de requêtes, ainsi qu’à des exemples de résultats.
 
 >[!NOTE]
->
->Selon votre instance, vous pouvez accéder directement à l’interface [Graph *i* QL incluse avec l’API GraphQL d’AEM](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) pour envoyer et tester des requêtes.
->
->Par exemple : `http://localhost:4502/content/graphiql.html`
+Selon votre instance, vous pouvez accéder directement à l’interface [Graph *i* QL incluse avec l’API GraphQL d’AEM](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) pour envoyer et tester des requêtes.
+Par exemple : `http://localhost:4502/content/graphiql.html`
 
 >[!NOTE]
->
->Les exemples de requêtes sont basés sur l’[exemple de structure de fragment de contenu à utiliser avec GraphQL](#content-fragment-structure-graphql)
+Les exemples de requêtes sont basés sur l’[exemple de structure de fragment de contenu à utiliser avec GraphQL](#content-fragment-structure-graphql)
 
 ### Exemple de requête – Tous les schémas et types de données disponibles {#sample-all-schemes-datatypes}
 
@@ -275,7 +271,7 @@ query {
 
 ### Exemple de requête – Un fragment de ville unique et spécifique {#sample-single-specific-city-fragment}
 
-Il s’agit d’une requête de renvoi des détails d’une entrée de fragment unique à un emplacement spécifique du référentiel.
+Il s’agit d’une requête pour renvoyer les détails d’une entrée de fragment unique à un emplacement spécifique dans le référentiel.
 
 **Exemple de requête**
 
@@ -606,9 +602,9 @@ query {
 }
 ```
 
-### Exemple de Requête - Toutes les aventures dont `_path` commence par un préfixe spécifique {#sample-wknd-all-adventures-cycling-path-filter}
+### Exemple de requête : toutes les aventures dont la balise `_path` commence par un préfixe spécifique {#sample-wknd-all-adventures-cycling-path-filter}
 
-Tout `adventures` où `_path` début avec un préfixe spécifique (`/content/dam/wknd/en/adventures/cycling`).
+`adventures` où `_path` commence par un préfixe spécifique (`/content/dam/wknd/en/adventures/cycling`).
 
 **Exemple de requête**
 
@@ -1104,8 +1100,7 @@ Ces exemples de requêtes sont basés sur le projet WKND. Il s’agit des élém
    `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
 >[!NOTE]
->
->Les résultats pouvant être volumineux, ils ne sont pas reproduits ici.
+Les résultats pouvant être volumineux, ils ne sont pas reproduits ici.
 
 ### Exemple de requête pour tous les fragments de contenu d’un modèle donné avec les propriétés spécifiées {#sample-wknd-all-model-properties}
 
@@ -1250,8 +1245,7 @@ Cette requête interroge :
    * parmi cela, le chemin d’accès et l’auteur du fragment référencé (imbriqué).
 
 >[!NOTE]
->
->Le champ `referencearticle` a le type de données `fragment-reference`.
+Le champ `referencearticle` a le type de données `fragment-reference`.
 
 **Exemple de requête**
 
@@ -1278,8 +1272,7 @@ Cette requête interroge :
    * avec des références de fragments à d’autres fragments de types de modèles spécifiques `article` et `adventure`.
 
 >[!NOTE]
->
->Le champ `fragments` présente le type de données `fragment-reference`, avec les modèles `Article`, `Adventure` sélectionnés.
+Le champ `fragments` présente le type de données `fragment-reference`, avec les modèles `Article`, `Adventure` sélectionnés.
 
 ```xml
 {
@@ -1353,8 +1346,7 @@ La requête suivante renvoie toutes les références de contenu en utilisant `_r
 La requête suivante renvoie tous les `attachments` – un champ spécifique (sous-groupe) de type `content-reference` :
 
 >[!NOTE]
->
->Le champ `attachments` présente le type de données `content-reference`, avec différents formulaires sélectionnés.
+Le champ `attachments` présente le type de données `content-reference`, avec différents formulaires sélectionnés.
 
 ```xml
 {
@@ -1395,8 +1387,7 @@ Cette requête interroge :
    * à l’intérieur de cela, les références intégrées RTE.
 
 >[!NOTE]
->
->Les références en ligne RTE sont alimentées dans `_references`.
+Les références en ligne RTE sont alimentées dans `_references`.
 
 **Exemple de requête**
 
@@ -1610,4 +1601,4 @@ Les fragments suivants sont utilisés pour le modèle approprié.
 | San Francisco |  États-Unis |  883306 |  city:beach<br>city:na |
 | San Jose |  États-Unis |  102635 |  city:na |
 | Stuttgart |  Allemagne |  634830 |  city:emea |
-|  Zurich |  Suisse |  415367 |  ville:capital<br>ville:emea |
+|  Zurich |  Suisse |  415367 |  city:Capital<br>city:emea |
