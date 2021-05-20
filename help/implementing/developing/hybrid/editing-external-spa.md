@@ -1,8 +1,8 @@
 ---
 title: Modification d’une SPA externe dans AEM
 description: Ce document décrit les étapes recommandées pour charger une SPA autonome vers une instance AEM, ajouter des sections de contenu modifiables et permettre la création.
-translation-type: tm+mt
-source-git-commit: bb8ab907dbeb422db410328f9c559c6794c16a8f
+exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2127'
 ht-degree: 100%
@@ -17,7 +17,7 @@ Lorsque vous décidez du [niveau d’intégration](/help/implementing/developing
 
 Ce document décrit les étapes recommandées pour charger une SPA autonome vers une instance AEM, ajouter des sections de contenu modifiables et permettre la création.
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Les conditions préalables sont simples.
 
@@ -333,5 +333,5 @@ Les documents de référence suivants peuvent être utiles pour comprendre le fo
 * [Prise en main des SPA dans AEM avec React](/help/implementing/developing/hybrid/getting-started-react.md)
 * [Documents de référence relatifs aux SPA (référence de l’API)](/help/implementing/developing/hybrid/reference-materials.md)
 * [Plan directeur d’applications sur une seule page (SPA) et PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
-* [Routage du modèle de SPA ](/help/implementing/developing/hybrid/routing.md)
-* [SPA et rendu côté serveur ](/help/implementing/developing/hybrid/ssr.md)
+* [Routage du modèle de SPA](/help/implementing/developing/hybrid/routing.md)
+* [SPA et rendu côté serveur](/help/implementing/developing/hybrid/ssr.md)
