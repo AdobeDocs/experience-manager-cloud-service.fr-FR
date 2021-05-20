@@ -2,16 +2,15 @@
 title: Métadonnées en cascade
 description: Cet article décrit comment définir des métadonnées en cascade pour des ressources.
 contentOwner: AG
-feature: Metadata
+feature: 'Métadonnées  '
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '958'
 ht-degree: 100%
 
 ---
-
 
 # Métadonnées en cascade {#cascading-metadata}
 
