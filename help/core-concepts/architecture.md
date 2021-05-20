@@ -1,14 +1,13 @@
 ---
 title: Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service
-description: 'Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service. '
-translation-type: tm+mt
-source-git-commit: 6b68c52235bae033b429a2d4c84f7c31c75b0fa2
+description: Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service.
+exl-id: fb169e85-ac19-4962-93d9-abaed812f948
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1671'
 ht-degree: 100%
 
 ---
-
 
 # Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service {#an-introduction-to-the-architecture-adobe-experience-manager-as-a-cloud-service}
 
@@ -82,7 +81,7 @@ Un programme AEM est le conteneur qui comprend les éléments suivants :
 |  Élément de programme |  Nombre |
 |--- |--- |
 | Référentiel de code (Git) |  1 |
-| Image de base (Sites ou Assets) |  1 |
+| Image de base (Sites ou Assets) |  3 |
 | Ensemble d’environnements d’évaluation et de production (1:1) | 0 ou 1 |
 | Environnements hors production (développement ou démonstration) | 0 à N |
 | Pipeline pour chaque environnement | 0 ou 1 |
