@@ -1,14 +1,13 @@
 ---
 title: Prise en main des SPA dans AEM avec React
 description: Cet article présente un exemple de SPA, explique comment cette application est structurée et vous permet de prendre rapidement en main votre propre SPA à l’aide du framework React.
-translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 100%
 
 ---
-
 
 # Prise en main des SPA dans AEM avec React {#getting-started-with-spas-in-aem-using-react}
 
@@ -26,9 +25,9 @@ Cet article résume le fonctionnement de base d’une SPA simple et ce que vous 
 
 Pour plus de détails sur le fonctionnement des SPA dans AEM, consultez les documents suivants :
 
-* [Introduction et présentation des SPA](introduction.md)
-* [Aperçu de l’éditeur de SPA](editor-overview.md)
-* [Plan directeur d’applications sur une sule page (SPA)](blueprint.md)
+* [Introduction et présentation des applications sur une seule page (SPA)](introduction.md)
+* [Présentation de l’éditeur de SPA](editor-overview.md)
+* [Plan directeur d’applications sur une seule page (SPA)](blueprint.md)
 
 >[!NOTE]
 >
