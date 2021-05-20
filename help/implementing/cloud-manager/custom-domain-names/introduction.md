@@ -1,14 +1,13 @@
 ---
 title: Introduction – Noms de domaine personnalisés
 description: Introduction – Noms de domaine personnalisés
-translation-type: tm+mt
-source-git-commit: e99c8552e2afff677c08c859dd1044287053a40e
+exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 100%
 
 ---
-
 
 # Présentation {#introduction}
 
