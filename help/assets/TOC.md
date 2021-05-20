@@ -4,10 +4,9 @@ user-guide-title: Guide d’Assets as a Cloud Service
 breadcrumb-title: Guide d’Assets
 user-guide-description: Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager Assets
-translation-type: tm+mt
 source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '480'
 ht-degree: 98%
 
 ---
@@ -21,7 +20,7 @@ ht-degree: 98%
 + [[!DNL Assets] Architecture](architecture.md)
 + [Formats de fichiers pris en charge](file-format-support.md)
 + [Présentation des microservices de ressources](asset-microservices-overview.md)
-+ [Accessibilité dans [!DNL Assets]](accessibility.md)
++ [Accessibilité dans  [!DNL Assets]](accessibility.md)
 + Gestion des ressources numériques {#manage}
    + [Partage de ressources](share-assets.md)
    + [Surveillance des activités et des tâches de gestion des ressources numériques (DAM)](assets-activity-history.md)
@@ -30,7 +29,7 @@ ht-degree: 98%
    + [Recherche de ressources](search-assets.md)
    + [Tâches courantes de gestion des ressources](manage-digital-assets.md)
    + [Balises intelligentes pour les images](smart-tags.md)
-   + [Balises intelligentes pour vos ressources vidéo](smart-tags-video-assets.md)
+   + [Balisage intelligent de vos ressources vidéo](smart-tags-video-assets.md)
    + [Organisation des ressources](organize-assets.md)
    + [Utilisation de ressources [!DNL Adobe Stock] dans AEM](aem-assets-adobe-stock.md)
    + [Gestion des collections](manage-collections.md)
@@ -55,8 +54,8 @@ ht-degree: 98%
    + [API HTTP Assets](mac-api-assets.md)
    + [Prise en charge des fragments de contenu dans l’API HTTP Assets](content-fragments/assets-api-content-fragments.md)
    + [API AEM GraphQL pour les fragments de contenu](content-fragments/graphql-api-content-fragments.md)
-   + [Authentification pour les requêtes GraphQL AEM distantes sur les fragments de contenu](content-fragments/graphql-authentication-content-fragments.md)
-   + [API AEM GraphQL avec les fragments de contenu – Exemple de contenu et requêtes](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+   + [Authentification pour les requêtes AEM GraphQL distantes sur les fragments de contenu](content-fragments/graphql-authentication-content-fragments.md)
+   + [API GraphQL d’AEM avec fragments de contenu – Exemple de contenu et requêtes](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Ressources connectées](use-assets-across-connected-assets-instances.md)
    + [Rapports de ressources](asset-reports.md)
    + [Métadonnées en cascade](cascading-metadata.md)
@@ -66,7 +65,7 @@ ht-degree: 98%
 + Partage et distribution de ressources {#brand-portal}
    + [Configuration d’ [!DNL Assets] avec [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Publication de ressources sur [!DNL Brand Portal]](publish-to-brand-portal.md)
-   + [Publication de fichiers  [!DNL Brand Portal] depuis [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=fr)
+   + [Publication de ressources  [!DNL Brand Portal] à partir de [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=fr)
 + Fragments de contenu {#content-fragments}
    + [Utilisation de fragments de contenu](content-fragments/content-fragments.md)
    + [Diffusion découplée avec des fragments de contenu et GraphQL](content-fragments/content-fragments-graphql.md)
@@ -79,13 +78,13 @@ ht-degree: 98%
    + [Fragments de contenu – considérations sur la suppression](content-fragments/content-fragments-delete.md)
    + [Texte (Markdown)](content-fragments/content-fragments-markdown.md)
    + [Arborescence de la structure](/help/assets/content-fragments/content-fragments-structure-tree.md)
-   + [Prévisualisation – Représentation JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
+   + [Aperçu – Représentation JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
 + Dynamic Media {#dynamicmedia}
    + [Newsletter sur Dynamic Media par Experience League](dynamic-media/dynamic-media-newsletter.md)
    + [Configuration de Dynamic Media](dynamic-media/administering-dynamic-media.md)
    + [Utilisation de Dynamic Media](dynamic-media/dynamic-media.md)
    + [Configuration de Dynamic Media](dynamic-media/config-dm.md)
-   + [Résolution des problèmes liés à Dynamic Media](dynamic-media/troubleshoot-dm.md)
+   + [Résolution des problèmes liés à Dynamic Media](dynamic-media/troubleshoot-dm.md)
    + [Accessibilité dans Dynamic Media](dynamic-media/accessibility-dm.md)
    + [Gestion des ressources Dynamic Media](dynamic-media/managing-assets.md)
    + [Bonnes pratiques relatives à l’optimisation de la qualité des images](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
@@ -93,11 +92,11 @@ ht-degree: 98%
    + [Profils d’image](dynamic-media/image-profiles.md)
    + [Profils vidéo](dynamic-media/video-profiles.md)
    + [Gestion des paramètres prédéfinis d’image Dynamic Media](dynamic-media/managing-image-presets.md)
-   + [Application des paramètres prédéfinis d’image Dynamic Media](dynamic-media/image-presets.md)
+   + [Application de paramètres d’image prédéfinis Dynamic Media](dynamic-media/image-presets.md)
    + [Gestion des paramètres prédéfinis de la visionneuse Dynamic Media](dynamic-media/managing-viewer-presets.md)
    + [Application des paramètres prédéfinis de la visionneuse Dynamic Media](dynamic-media/viewer-presets.md)
    + [Paramètres prédéfinis de lot](dynamic-media/batch-set-presets-dm.md)
-   + [Invalidation du cache CDN via Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+   + [Invalidation du cache du réseau CDN par le biais de Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
    + [Invalidation du cache de réseau CDN par le biais de Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [Imagerie dynamique](dynamic-media/imaging-faq.md)
    + [Diffusion de ressources Dynamic Media](dynamic-media/delivering-dynamic-media-assets.md)
