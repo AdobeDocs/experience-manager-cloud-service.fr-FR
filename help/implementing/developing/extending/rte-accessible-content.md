@@ -2,14 +2,13 @@
 title: Configurez l’éditeur de texte enrichi pour créer des pages web et des sites accessibles.
 description: Découvrez comment configurer l’éditeur de texte enrichi pour créer des sites accessibles dans [!DNL Adobe Experience Manager].
 contentOwner: AG
-translation-type: tm+mt
-source-git-commit: 96c59974a868779df6979818bea0d942060cf5bc
+exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 100%
 
 ---
-
 
 # Configuration de l’éditeur de texte enrichi pour créer des sites accessibles {#configure-rte-accessible-sites}
 
@@ -149,5 +148,5 @@ In a `Table`, set the attribute to the DOM element or or remove it from the DOM 
 >[!MORELIKETHIS]
 >
 >* [Guide rapide relatif aux normes WCAG](/help/onboarding/accessibility/quick-guide-wcag.md)
->* [Création de contenu accessible dans Experience Manager](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
+* [Création de contenu accessible dans Experience Manager](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
 
