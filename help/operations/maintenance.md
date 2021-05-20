@@ -2,7 +2,6 @@
 title: Tâches de maintenance dans AEM as a Cloud Service
 description: Tâches de maintenance dans AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-translation-type: tm+mt
 source-git-commit: 068ae08fddd482e4367b4bf1c8cc3776bbb4cc6b
 workflow-type: tm+mt
 source-wordcount: '920'
@@ -39,7 +38,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
 | Purge du workflow | Client | Doit s’effectuer dans github. <br> Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous `/libs` en créant des propriétés sous le dossier `/apps/settings/granite/operations/maintenance/granite_weekly` ou `granite_daily`. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration. <br> Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le `granite_WorkflowPurgeTask`) avec les propriétés adéquates. <br> Configurez les propriétés OSGI. Consultez la [documentation sur les tâches de maintenance AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 | Purge du projet | Client | Doit s’effectuer dans github. <br> Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous `/libs` en créant des propriétés sous le dossier `/apps/settings/granite/operations/maintenance/granite_weekly` ou `granite_daily`. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration. <br> Activez la tâche de maintenance en ajoutant un nœud sous le nœud ci-dessus (nommez-le `granite_ProjectPurgeTask`) avec les propriétés adéquates. <br> Configurez les propriétés OSGI. Consultez la [documentation sur les tâches de maintenance AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
-Les clients peuvent planifier chacune des tâches de maintenance Purger le workflow, Purger les tâches ad hoc et Purger le projet pour que ces tâches s’exécutent pendant les fenêtres de maintenance quotidienne, hebdomadaire ou mensuelle. Ces configurations doivent être modifiées directement dans le contrôle de code source. Le tableau ci-dessous décrit les paramètres de configuration disponibles pour chaque fenêtre. Vous pouvez également consulter les emplacements et les exemples de code fournis après le tableau.
+Les clients peuvent planifier chacune des tâches de maintenance Purger le workflow, Purger les tâches ad hoc et Purger le projet pour que ces tâches s’exécutent pendant les fenêtres de maintenance quotidienne, hebdomadaire ou mensuelle. Ces configurations doivent être modifiées directement dans le contrôle de code source. Le tableau ci-dessous décrit les paramètres de configuration disponibles pour chaque fenêtre. Consultez également les emplacements et les exemples de code fournis après le tableau.
 
 <table>
  <tbody>
@@ -67,7 +66,7 @@ Les clients peuvent planifier chacune des tâches de maintenance Purger le workf
     <p><strong></strong>windowSchedule = hebdomadaire (cette valeur ne doit pas être modifiée)</p>
     <p><strong></strong>windowStartTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance hebdomadaire doivent commencer à s’exécuter.</p>
     <p><strong></strong>windowEndTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance hebdomadaire doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.</p>
-    <p><strong>windowScheduleWeekdays= Tableau de 2 valeurs comprises entre 1 et 7 (ex. [5,5])</strong> La première valeur du tableau est le jour de début où la tâche est planifiée et la seconde est le jour de fin où la tâche serait arrêtée. L’heure exacte du début et de la fin est régie par les paramètres windowStartTime et windowEndTime, respectivement.</p>
+    <p><strong>windowScheduleWeekdays= tableau de 2 valeurs comprises entre 1 et 7 (par ex. [5,5])</strong> La première valeur du tableau est le jour de début planifié de la tâche et la seconde est le jour de fin où la tâche serait arrêtée. L’heure exacte du début et de la fin est régie par les paramètres windowStartTime et windowEndTime, respectivement.</p>
     </td>
   </tr>
   <tr>
@@ -78,7 +77,7 @@ Les clients peuvent planifier chacune des tâches de maintenance Purger le workf
     <p><strong></strong>windowSchedule = daily (cette valeur ne doit pas être modifiée)</p>
     <p><strong></strong>windowStartTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance mensuelle doivent commencer à s’exécuter.</p>
     <p><strong></strong>windowEndTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance mensuelle doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.</p>
-    <p><strong>windowScheduleWeekdays=Tableau de 2 valeurs comprises entre 1 et 7 (ex. [5,5])</strong> La première valeur du tableau est le jour de début où la tâche est planifiée et la seconde est le jour de fin où la tâche serait arrêtée. L’heure exacte du début et de la fin est régie par les paramètres windowStartTime et windowEndTime, respectivement.</p>
+    <p><strong>windowScheduleWeekdays=Tableau de 2 valeurs comprises entre 1 et 7 (par ex. [5,5])</strong> La première valeur du tableau est le jour de début planifié de la tâche et la seconde est le jour de fin où la tâche serait arrêtée. L’heure exacte du début et de la fin est régie par les paramètres windowStartTime et windowEndTime, respectivement.</p>
     <p><strong>windowFirstLastStartDay= 0/1</strong> 0 pour planifier la première semaine du mois ou 1 pour planifier la dernière semaine du mois. En l’absence de valeur, les tâches sont planifiées chaque jour, comme régi par le paramètre windowScheduleWeekdays tous les mois.</p>
     </td> 
     </tr>
@@ -89,7 +88,7 @@ Les clients peuvent planifier chacune des tâches de maintenance Purger le workf
 
 * Quotidien - /apps/settings/granite/operations/maintenance/granite_daily
 * Hebdomadaire - /apps/settings/granite/operations/maintenance/granite_weekly
-* Mensuel - /apps/settings/granite/operations/maintenance/granite_mensuel
+* Mensuel - /apps/settings/granite/operations/maintenance/granite_month
 
 **Exemples** de code :
 
