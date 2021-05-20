@@ -1,14 +1,13 @@
 ---
 title: Index Converter
 description: Convertisseur d’index
-translation-type: tm+mt
-source-git-commit: 3fe19282f9e96d503f4e8be05553c6f48a6f19b6
+exl-id: e6a3ec6d-cc02-4f5b-8b1d-ea481d6884ca
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 100%
 
 ---
-
 
 # Index Converter {#index-converter}
 
@@ -42,6 +41,3 @@ Si l’[index Ensure Oak](https://adobe-consulting-services.github.io/acs-aem-co
 * En tant qu’utilitaire autonome : Index Converter peut également être exécuté en tant qu’utilitaire autonome.
 
    Voir **[Ressource Git : aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** pour découvrir comment utiliser cet outil.
-
-
-
