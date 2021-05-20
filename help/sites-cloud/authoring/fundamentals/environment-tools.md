@@ -1,14 +1,13 @@
 ---
 title: Environnement et outils de création
 description: L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu.
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2152'
 ht-degree: 99%
 
 ---
-
 
 # Environnement et outils de création {#authoring-the-environment-and-tools}
 
@@ -191,7 +190,7 @@ Cliquez sur le composant pour mettre en surbrillance le composant dans l’édit
 
    ![Bouton Modifier l’arborescence de contenu](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* Page qui fait partie d’une [livecopy](/help/sites-cloud/administering/msm/overview.md), où les composants sont hérités d’une autre page.
+* Page qui fait partie d’une [Live Copy](/help/sites-cloud/administering/msm/overview.md), où les composants sont hérités d’une autre page.
 
 >[!NOTE]
 >
@@ -250,7 +249,7 @@ L’icône Informations sur la page (icône d’égaliseur) ouvre un menu qui fo
 * [Ouvrir les propriétés](/help/sites-cloud/authoring/fundamentals/page-properties.md)
 * [Déployer la page](/help/sites-cloud/administering/msm/overview.md#msm-from-the-ui)
 * [Démarrer le processus](/help/sites-cloud/authoring/workflows/applying.md#starting-a-workflow-from-the-page-editor)
-* [Verrouiller la page](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)
+* [Verrouillage de la page](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)
 * [Publier la page](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-pages-1)
 * [Annuler la publication de la page](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)
 * [Modifier le modèle](/help/sites-cloud/authoring/features/templates.md)
