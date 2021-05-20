@@ -1,14 +1,13 @@
 ---
 title: Contrôle du statut de liste autorisée IP
 description: Contrôle du statut de liste autorisée IP
-translation-type: tm+mt
-source-git-commit: e99c8552e2afff677c08c859dd1044287053a40e
+exl-id: 5ddea04f-3720-4663-90a8-9399019bfcbe
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 78%
 
 ---
-
 
 # Contrôle du statut de liste autorisée IP {#check-allow-list-status}
 
@@ -42,14 +41,13 @@ Une fois l’opération de suppression terminée, la liste autorisée IP :
    * L’état reste Échec de la suppression jusqu’à ce que tous les échecs soient effacés. L’utilisateur doit sélectionner Supprimer dans le menu **...** à l’extrémité droite de la ligne du tableau pour effacer tout échec.
    * L’utilisateur ne sera pas autorisé à mettre à jour la Liste autorisée IP tant que l’état est Échec.
 
-## Configurations CDN préexistantes pour les Listes autorisées IP {#pre-existing-cdn}
+## Configurations de réseau de diffusion de contenu préexistantes pour les Listes autorisées IP {#pre-existing-cdn}
 
-Les clients disposant d’environnements qui incluent des configurations CDN préexistantes pour les Listes autorisées IP, les certificats SSL ou les noms de domaine personnalisés voient le message suivant dans les pages de détails **Liste autorisée IP** et **Environnement**. Le message affiché dans l’interface utilisateur disparaît une fois que le client a effectué la migration complète de toutes les configurations d’environnement préexistantes via l’interface utilisateur et il peut s’écouler entre 1 et 2 jours ouvrés avant que le message ne disparaisse.
+Les clients avec des environnements qui incluent des configurations CDN préexistantes pour les Listes autorisées IP, les certificats SSL ou les noms de domaine personnalisés verront le message suivant dans la **Liste autorisée IP** et la page de détails **Environnement**. Le message affiché dans l’interface utilisateur disparaît une fois que le client a entièrement migré toutes les configurations d’environnement préexistantes via l’interface utilisateur et il peut prendre 1 à 2 jours ouvrables pour que le message disparaisse.
 
 >[!NOTE]
->Pour afficher et gérer les configurations préexistantes, elles doivent être ajoutées via l’interface utilisateur. Pour plus d&#39;informations, consultez [Ajouter une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md).
+>Pour afficher et gérer les configurations préexistantes, elles doivent être ajoutées via l’interface utilisateur. Pour plus d’informations, voir [Ajout d’une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) .
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-message2.png)
-
