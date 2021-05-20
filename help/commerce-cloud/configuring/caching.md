@@ -1,9 +1,8 @@
 ---
 title: Mise en cache et performances
 description: Découvrez les différentes configurations disponibles pour activer GraphQL et la mise en cache de contenu afin d’optimiser les performances de votre implémentation commerciale.
-exl-id: 8b969821-5073-4540-a997-95c74a11e4f0
-translation-type: tm+mt
-source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
+exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f0
+source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
 workflow-type: tm+mt
 source-wordcount: '848'
 ht-degree: 99%
@@ -12,7 +11,7 @@ ht-degree: 99%
 
 # Mise en cache et performances {#caching}
 
-## Mise en cache de la réponse GraphQL et des composants {#graphql}
+## Mise en cache des réponses des composants et de GraphQL {#graphql}
 
 Les composants principaux AEM CIF prennent déjà en charge la mise en cache des réponses GraphQL pour les composants individuels. Cette fonctionnalité peut être utilisée pour réduire considérablement le nombre d’appels d’arrière-plan GraphQL. Une mise en cache efficace peut être réalisée, en particulier pour les requêtes qui se répètent, comme la récupération de l’arborescence des catégories pour un composant de navigation ou la récupération de toutes les valeurs d’agrégations/de facettes disponibles affichées sur les pages de recherche de produits et de catégories.
 
@@ -46,7 +45,7 @@ en considérant que le [magasin de référence Venia](https://github.com/adobe/a
 
 La mise en cache d’autres composants doit être définie projet par projet, généralement en coordination avec la mise en cache configurée au niveau du Dispatcher. N’oubliez pas qu’il n’y a pas d’invalidation active de ces caches. Par conséquent, la durée de mise en cache doit être soigneusement définie. Il n’existe aucune valeur « universelle » qui correspondrait à tous les projets et cas d’utilisation possibles. Assurez-vous de définir une stratégie de mise en cache au niveau du projet qui correspond au mieux aux exigences de votre projet.
 
-## Mise en cache du répartiteur {#dispatcher}
+## Mise en cache de Dispatcher {#dispatcher}
 
 La mise en cache de pages ou de fragments AEM dans le [Dispatcher AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html) constitue une bonne pratique pour un projet AEM. En règle générale, elle repose sur des techniques d’invalidation qui garantissent qu’un contenu modifié dans AEM est correctement mis à jour dans le Dispatcher. Il s’agit d’une fonctionnalité essentielle de la stratégie de mise en cache du Dispatcher AEM.
 
