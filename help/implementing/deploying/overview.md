@@ -3,7 +3,6 @@ title: Déploiement sur AEM as a Cloud Service
 description: 'Déploiement sur AEM as a Cloud Service '
 feature: Déploiement
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-translation-type: tm+mt
 source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
 source-wordcount: '3334'
@@ -50,7 +49,7 @@ La vidéo suivante présente un aperçu général du déploiement du code vers A
 
 Les clients déploient le code personnalisé dans les environnements cloud via Cloud Manager. Il est à noter que Cloud Manager transforme des modules de contenu assemblés localement en artefact conforme au modèle de fonctionnalité Sling, qui décrit une application AEM as a Cloud Service lors de l’exécution dans un environnement cloud. Par conséquent, lorsque vous examinez les modules dans le gestionnaire de modules sur les environnements cloud, le nom inclut « cp2fm » et toutes les métadonnées des modules transformés sont supprimées. Ils ne peuvent pas être interactifs, ce qui signifie qu’ils ne peuvent pas être téléchargés, répliqués, ni ouverts. Vous trouverez [ici](https://github.com/apache/sling-org-apache-sling-feature-cpconverter) une documentation détaillée sur le convertisseur.
 
-Les packages de contenu écrits pour AEM en tant qu’applications Cloud Service doivent avoir une séparation nette entre le contenu non modifiable et le contenu mutable et Cloud Manager n’installera que le contenu mutable, générant également un message tel que :
+Les modules de contenu écrits pour AEM en tant qu’applications de Cloud Service doivent avoir une séparation nette entre le contenu non modifiable et le contenu modifiable. De plus, Cloud Manager n’installera que le contenu modifiable, ce qui génère également un message du type :
 
 `Generated content-package <PACKAGE_ID> located in file <PATH> is of MIXED type`
 
@@ -64,7 +63,7 @@ Les modifications d’application dues au modèle de déploiement bleu/vert éta
 
 Pour les clients qui disposent de bases de code, il est essentiel de passer par l’exercice de restructuration du référentiel décrit dans la documentation d’AEM en vue de s’assurer que le contenu qui se trouvait auparavant sous /etc est déplacé vers le bon emplacement.
 
-Certaines restrictions supplémentaires s’appliquent à ces packages de code, par exemple [les crochets d’installation](http://jackrabbit.apache.org/filevault/installhooks.html) ne sont pas pris en charge.
+Certaines restrictions supplémentaires s’appliquent à ces modules de code, par exemple [install hooks](http://jackrabbit.apache.org/filevault/installhooks.html) ne sont pas pris en charge.
 
 ## Configuration OSGI {#osgi-configuration}
 
@@ -101,9 +100,9 @@ Après le basculement vers la nouvelle version de l’application :
    * Dossiers (ajout, modification, suppression)
    * Modèles modifiables (ajout, modification, suppression)
    * Configuration tenant compte du contexte (tout sous `/conf`) (ajout, modification, suppression)
-   * Scripts (les modules peuvent déclencher des hooks d’installation à diverses étapes du processus d’installation de module) : Consultez la [documentation relative aux fichiers Jackrabbit ](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) sur les crochets d’installation, qui incluent les utilisateurs autorisés à les exécuter).
+   * Scripts (les modules peuvent déclencher des hooks d’installation à diverses étapes du processus d’installation de module) : Voir la [documentation Jackrabbit filevault](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) sur les hooks d’installation, qui incluent les utilisateurs autorisés à les exécuter).
 
-Il est possible de limiter l’installation de contenu modifiable à la création ou à la publication en incorporant des modules dans un dossier install.author ou install.publish sous `/apps`. La restructuration pour tenir compte de cette séparation a été effectuée dans AEM 6.5 et les détails relatifs à la restructuration recommandée du projet se trouvent dans la [documentation AEM 6.5.](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+Il est possible de limiter l’installation de contenu modifiable à la création ou à la publication en incorporant des modules dans un dossier install.author ou install.publish sous `/apps`. La restructuration pour refléter cette séparation a été effectuée dans AEM 6.5 et les détails relatifs à la restructuration de projet recommandée sont disponibles dans la [documentation AEM 6.5.](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
 >Les modules de contenu sont déployés sur tous les types d’environnements (développement, évaluation et production). Il n’est pas possible de limiter le déploiement à un environnement spécifique. Cette limitation est en place pour garantir l’option d’une série de tests d’exécution automatisée. Le contenu spécifique à un environnement nécessite une installation manuelle via le gestionnaire de modules.
@@ -112,7 +111,7 @@ En outre, il n’existe aucun mécanisme permettant d’annuler les modification
 
 Les modules tiers inclus doivent être validés comme compatibles avec AEM as a Cloud Service, sans quoi leur inclusion entraînera un échec du déploiement.
 
-Comme mentionné ci-dessus, les clients disposant de bases de code existantes doivent se conformer à l&#39;exercice de restructuration du référentiel rendu nécessaire par les modifications de référentiel 6.5 décrites dans la documentation [AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr)
+Comme mentionné ci-dessus, les clients disposant de bases de code doivent se conformer à l’exercice de restructuration du référentiel nécessaire par les modifications du référentiel 6.5 décrites dans la [documentation AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr)
 
 ## Repoinit {#repoinit}
 
@@ -166,8 +165,8 @@ above appears to be internal, to confirm with Brian -->
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
->title="Package Manager - Migration des packages de contenu mutables"
->abstract="Explorez l’utilisation du gestionnaire de packages pour les cas d’utilisation où un package de contenu doit être installé comme &quot;un seul&quot;, ce qui inclut l’importation de contenu spécifique de la production vers l’évaluation afin de déboguer un problème de production, le transfert de petit package de contenu de l’environnement sur site vers les environnements AEM Cloud, etc."
+>title="Gestionnaire de modules - Migration de modules de contenu modifiable"
+>abstract="Explorez l’utilisation du gestionnaire de packages pour les cas d’utilisation où un module de contenu doit être installé &quot;un par un&quot;, ce qui inclut l’importation de contenu spécifique de la production vers l’évaluation afin de déboguer un problème de production, le transfert de petit module de contenu de l’environnement on-premise vers les environnements AEM cloud, etc."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="Outil de transfert de contenu"
 
 Il existe des cas d’utilisation où un module de contenu doit être installé de façon ponctuelle. Par exemple, pour déboguer un problème de production, vous devez importer du contenu spécifique de la production vers l’évaluation. Pour ces scénarios, le gestionnaire de modules peut être utilisé dans les environnements AEM as a Cloud Service.
