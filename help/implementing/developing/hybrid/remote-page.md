@@ -2,7 +2,6 @@
 title: Composant RemotePage
 description: Le composant RemotePage est un composant de page personnalisé permettant de modifier les SPA React distantes dans AEM.
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
-translation-type: tm+mt
 source-git-commit: eaa59b6ecfa50c4a6b4e316e5e305e48cb3d5676
 workflow-type: tm+mt
 source-wordcount: '352'
@@ -18,23 +17,23 @@ Lorsque vous décidez du [niveau d’intégration](/help/implementing/developing
 
 Le composant RemotePage récupère toutes les ressources nécessaires à partir du `asset-manifest.json` généré par l’application et l’utilise pour effectuer le rendu des SPA dans AEM.
 
-* La page distante vous permet d&#39;injecter les scripts et feuilles de style d&#39;un SPA dans le corps d&#39;un composant AEM Page.
-* Les Composants Frontières virtuels permettent de marquer les sections comme modifiables dans AEM SPA Editor.
+* RemotePage vous permet d’injecter les scripts et les feuilles de style d’un SPA dans le corps d’un composant AEM Page.
+* Les composants frontend virtuels permettent de marquer les sections comme étant modifiables dans AEM SPA Editor.
 * Ensemble, un SPA hébergé sur un autre domaine peut être rendu modifiable dans AEM.
 
-Voir l&#39;article [Modification d&#39;un SPA externe dans AEM](editing-external-spa.md) pour plus d&#39;informations sur les SPA externes modifiables dans l&#39;.
+Voir l’article [Modification d’un SPA externe dans AEM](editing-external-spa.md) pour plus d’informations sur les  externes modifiables dans.
 
-## Conditions préalables {#requirements}
+## Conditions requises {#requirements}
 
 * Activer CORS en développement
 * Configurer l’URL distante dans les propriétés de page
 * Effectuer le rendu de la SPA dans AEM
-* L’application Web doit utiliser un manifeste de fichier de bundler comme l’un des suivants et exposer un fichier `asset-manifest.json` à la racine du domaine qui liste dans un `entrypoints property` tous les fichiers CSS et JS à charger :
+* L’application web doit utiliser un manifeste de ressource de bundler comme l’un des suivants et exposer un fichier `asset-manifest.json` à la racine du domaine qui répertorie dans un `entrypoints property` tous les fichiers CSS et JS à charger :
    * https://github.com/shellscape/webpack-manifest-plugin
    * https://github.com/webdeveric/webpack-assets-manifest
    * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
-      ![exemple de propriété entrypoints](assets/asset-manifest-entrypoints.png)
-* L&#39;application doit être capable d&#39;initialiser dans un `<div id="root"></div>` sous l&#39;élément `body`. Si une autre annotation est attendue pour l’application à instancier, elle doit être ajustée en conséquence dans les scripts HTL du composant proxy qui possède une balise `sling:resourceSuperType="spa-project-core/components/remotepage`.
+      ![Exemple de propriété entrypoints](assets/asset-manifest-entrypoints.png)
+* L’application doit pouvoir être initialisée dans un `<div id="root"></div>` sous l’élément `body` . Si une autre balise est attendue pour l’application, elle doit être ajustée en conséquence dans les scripts HTL du composant proxy qui possède une balise `sling:resourceSuperType="spa-project-core/components/remotepage`.
 
 ## Restrictions {#limitations}
 
