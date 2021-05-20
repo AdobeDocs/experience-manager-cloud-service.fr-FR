@@ -1,14 +1,13 @@
 ---
 title: Utilisation des bibliothèques côté client dans AEM as a Cloud Service
 description: AEM fournit des dossiers de bibliothèques côté client qui vous permettent de stocker le code côté client (clientlibs) dans le référentiel, de le classer dans des catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client.
-translation-type: tm+mt
-source-git-commit: d4c031e17c0c83e44b687474502252c89ed37922
+exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2571'
 ht-degree: 100%
 
 ---
-
 
 # Utilisation des bibliothèques côté client dans AEM as a Cloud Service {#using-client-side-libraries}
 
