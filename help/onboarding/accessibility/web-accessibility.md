@@ -1,14 +1,13 @@
 ---
 title: Adobe Experience Manager as a Cloud Service et directives d’accessibilité web
 description: Introduction à Adobe Experience Manager as a Cloud Service et directives d’accessibilité web
-translation-type: tm+mt
-source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
+exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 100%
 
 ---
-
 
 # Adobe Experience Manager as a Cloud Service et directives d’accessibilité web {#aem-and-the-web-accessibility-guidelines}
 
@@ -66,4 +65,3 @@ En utilisant Adobe Experience Manager, les auteurs de contenu et/ou les propri
 ## L’accessibilité chez Adobe   {#accessibility-at-adobe}
 
 Pour plus d’informations, consultez le [Centre de ressources sur l’accessibilité Adobe](https://www.adobe.com/accessibility/).
-
