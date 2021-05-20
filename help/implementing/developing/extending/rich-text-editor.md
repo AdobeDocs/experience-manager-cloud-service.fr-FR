@@ -2,14 +2,13 @@
 title: Configurez l’éditeur de texte enrichi pour créer du contenu dans [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Configurez l’éditeur de texte enrichi pour créer du contenu dans [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
-translation-type: tm+mt
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1969'
 ht-degree: 100%
 
 ---
-
 
 # Configuration de l’éditeur de texte enrichi {#configure-the-rich-text-editor}
 
@@ -131,8 +130,10 @@ Le tableau ci-dessous répertorie les modules externes actuels et indique les in
 >* **Nom** : `configPath`
 >* **Type** : `String`
 >* **Valeur** : chemin du nœud qui contient la configuration proprement dite.
+
 >
->Ne donnez pas le nom `config` au nœud de configuration de l’éditeur de texte enrichi (RTE). Autrement, les configurations de l’éditeur de texte enrichi prennent effet seulement pour les administrateurs et non pour les utilisateurs du groupe `content-author`.
+>
+Ne donnez pas le nom `config` au nœud de configuration de l’éditeur de texte enrichi (RTE). Autrement, les configurations de l’éditeur de texte enrichi prennent effet seulement pour les administrateurs et non pour les utilisateurs du groupe `content-author`.
 
 Configurez les propriétés suivantes qui s’appliquent uniquement au mode de modification dans la boîte de dialogue :
 
@@ -159,8 +160,10 @@ Le [composant textuel Core Components](https://docs.adobe.com/content/help/fr-FR
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
+
 >
->Pour créer votre propre composant textuel, copiez le composant ci-dessus au lieu de modifier ces composants.
+>
+Pour créer votre propre composant textuel, copiez le composant ci-dessus au lieu de modifier ces composants.
 
 ## Configuration de la barre d’outils de l’éditeur de texte enrichi  {#dialogfullscreen}
 
@@ -217,7 +220,7 @@ Les séparateurs (`|`) dans un groupe d’options peuvent être spécifiés par 
 
 Le nœud pop-up sous le mode en ligne ou plein écran contient la liste des éléments contextuels utilisés. Chaque nœud enfant sous le nœud `popovers` (éléments contextuels) est nommé en fonction du module externe (format, par exemple). Il possède des « éléments » de propriété contenant la liste des fonctions du module externe (format#bold, par exemple).
 
-## Paramètres de l’interface utilisateur de l’éditeur de texte enrichi et stratégies de contenu   {#rtecontentpolicies}
+## Paramètres de l’interface utilisateur de l’éditeur de texte enrichi et stratégies de contenu  {#rtecontentpolicies}
 
 Les administrateurs peuvent contrôler les options de l’éditeur de texte enrichi à l’aide de stratégies de contenu, au lieu de procéder à la configuration en suivant les instructions ci-dessus, par exemple. Les stratégies de contenu définissent les propriétés de conception d’un composant lorsqu’il est utilisé dans le cadre d’un [modèle modifiable](/help/sites-cloud/authoring/features/templates.md). Par exemple, si un composant textuel qui utilise l’éditeur de texte enrichi est employé avec un modèle modifiable, la stratégie de contenu peut définir que l’option Gras doit être disponible, au même titre que quelques options de mise en forme de paragraphe. Les stratégies de contenu sont réutilisables et peuvent être appliquées à plusieurs modèles.
 
@@ -281,6 +284,6 @@ Vous trouverez, ci-dessous, un exemple de fragment de code pour associer la comm
 >[!MORELIKETHIS]
 >
 >* [Configuration des modules externes d’éditeur de texte enrichi](configure-rich-text-editor-plug-ins.md)
->* [Utilisation de l’éditeur de texte enrichi pour la création](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
->* [Configuration de l’éditeur de texte enrichi pour les sites accessibles](rte-accessible-content.md)
+* [Utilisation de l’éditeur de texte enrichi pour la création](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
+* [Configuration de l’éditeur de texte enrichi pour les sites accessibles](rte-accessible-content.md)
 
