@@ -1,10 +1,10 @@
 ---
 title: AEM Parcours développeur sans tête
 description: Commencez ici pour un parcours guidé à travers les puissantes et flexibles fonctionnalités headless d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement.
-source-git-commit: 1ac93a066f808e7dd2ed7e34aa7635e9914a4ea9
+source-git-commit: bec1e901e19abc9ae99dbf95878e51c9b000a5ee
 workflow-type: tm+mt
 source-wordcount: '736'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ Commencez ici pour un parcours guidé à travers les puissantes et flexibles fon
 
 L’implémentation sans affichage devient de plus en plus importante pour diffuser des expériences à votre audience, où qu’elle soit et quel que soit le canal.
 
-L’implémentation sans affichage interrompt la gestion des pages et des composants, comme c’est le cas dans les solutions de pile complètes. Elle se concentre sur la création de fragments de contenu réutilisables et neutres pour les canaux et sur leur diffusion cross-canal. Il s’agit d’un modèle de développement moderne et dynamique pour l’implémentation d’expériences Web.
+L’implémentation sans affichage interrompt la gestion des pages et des composants, comme c’est le cas dans les solutions de pile complètes. Elle se concentre sur la création de fragments de contenu réutilisables et neutres pour les canaux et sur leur diffusion cross-canal. Il s’agit d’un modèle de développement moderne et dynamique permettant d’implémenter des expériences numériques.
 
 Ce guide vous guide tout au long des sujets les plus importants afin que vous puissiez :
 
