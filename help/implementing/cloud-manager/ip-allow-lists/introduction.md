@@ -1,14 +1,13 @@
 ---
 title: Introduction – Listes autorisées IP dans Cloud Manager
 description: Introduction – Listes autorisées IP dans Cloud Manager
-translation-type: tm+mt
-source-git-commit: 1304a0cfa67c38943b1a36c105fbd5eafb3f8c4f
+exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 100%
 
 ---
-
 
 # Présentation {#introduction}
 
@@ -21,9 +20,9 @@ Les listes autorisées d’adresses IP peuvent être ajoutées une fois et appli
 
 La page Liste autorisée IP de l’interface utilisateur Cloud Manager ou la page Détails de l’environnement permet à un utilisateur disposant d’autorisations d’effectuer plusieurs tâches afin de gérer les listes autorisées IP de vos environnements, y compris :
 
-* [Ajout d’une liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
+* [Ajout d’une liste d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
    >[!NOTE]
    > Vous pouvez ajouter une fois et réutiliser ou appliquer la règle autant de fois que vous le voulez dans les services d’environnement du programme.
 * [Affichage ou mise à jour d’une liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
 * [Application ou annulation de l’application d’une liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-* [Suppression d’une liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
+* [Suppression d’une liste autorisée d’adresses IP](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
