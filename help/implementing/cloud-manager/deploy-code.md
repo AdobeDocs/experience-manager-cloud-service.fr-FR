@@ -11,7 +11,7 @@ ht-degree: 90%
 
 # Déploiement de votre code {#deploy-your-code}
 
-## Déploiement du code avec Cloud Manager en AEM en tant que Cloud Service {#deploying-code-with-cloud-manager}
+## Déploiement du code avec Cloud Manager dans AEM en tant que Cloud Service {#deploying-code-with-cloud-manager}
 
 Une fois que vous avez configuré votre pipeline de production (référentiel, environnement et environnement de test), vous êtes prêt à déployer votre code.
 
@@ -49,17 +49,17 @@ Une fois que vous avez configuré votre pipeline de production (référentiel, e
       ![](assets/stage-deployment.png)
    Le **test dans l’environnement intermédiaire** comprend les étapes suivantes :
 
-   * **Test** fonctionnel du produit : Les exécutions du pipeline Cloud Manager prendront en charge l’exécution de tests exécutés par rapport à l’environnement d’affichage.
+   * **Tests fonctionnels du produit** : Les exécutions du pipeline Cloud Manager prennent en charge l’exécution de tests par rapport à l’environnement intermédiaire.
 Pour plus d’informations, voir [Tests fonctionnels du produit](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing).
 
-   * **Tests** fonctionnels personnalisés : Cette étape du pipeline est toujours présente et ne peut pas être ignorée. Cependant, si aucun fichier JAR de test n’est généré par la compilation, le test réussit par défaut.\
+   * **Tests fonctionnels personnalisés** : Cette étape du pipeline est toujours présente et ne peut pas être ignorée. Cependant, si aucun fichier JAR de test n’est généré par la compilation, le test réussit par défaut.\
       Pour plus d’informations, voir [Tests fonctionnels personnalisés](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing).
 
-   * **Tests** d&#39;interface utilisateur personnalisés : Cette étape est une fonctionnalité facultative qui permet à nos clients de créer et d&#39;exécuter automatiquement des tests d&#39;interface utilisateur pour leurs applications. Les tests de l’interface utilisateur sont des tests basés sur Selenium placés dans une image Docker afin de permettre un large choix de langues et de cadres (tels que Java et Maven, Node et WebDriver.io, ou tout autre cadre et technologie basé sur Selenium).
-Consultez [Tests personnalisés de l&#39;interface utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/functional-testing.html?lang=en#custom-ui-testing) pour plus d&#39;informations.
+   * **Tests de l’interface utilisateur personnalisée** : Cette étape est une fonctionnalité facultative qui permet à nos clients de créer et d’exécuter automatiquement des tests d’interface utilisateur pour leurs applications. Les tests de l’interface utilisateur sont des tests basés sur Selenium placés dans une image Docker afin de permettre un large choix de langues et de cadres (tels que Java et Maven, Node et WebDriver.io, ou tout autre cadre et technologie basé sur Selenium).
+Pour plus d’informations, voir [Tests de l’interface utilisateur personnalisée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/functional-testing.html?lang=en#custom-ui-testing) .
 
 
-   * **Audit** d’expérience : Cette étape du pipeline est toujours présente et ne peut pas être ignorée. Lorsqu’un pipeline de production est exécuté, une étape de contrôle de l’expérience est incluse après les tests fonctionnels personnalisés qui exécuteront les contrôles. Les pages configurées sont envoyées au service et évaluées. Les résultats sont informatifs et permettent à l’utilisateur de voir les scores et les différences existant entre les scores précédents et actuels. Ces connaissances sont utiles pour déterminer si une régression sera introduite avec le déploiement actuel.
+   * **Audit de l’expérience** : Cette étape du pipeline est toujours présente et ne peut pas être ignorée. Lorsqu’un pipeline de production est exécuté, une étape de contrôle de l’expérience est incluse après les tests fonctionnels personnalisés qui exécuteront les contrôles. Les pages configurées sont envoyées au service et évaluées. Les résultats sont informatifs et permettent à l’utilisateur de voir les scores et les différences existant entre les scores précédents et actuels. Ces connaissances sont utiles pour déterminer si une régression sera introduite avec le déploiement actuel.
 Pour plus d’informations, voir [Compréhension des résultats du contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md).
 
       ![](assets/stage-testing.png)
