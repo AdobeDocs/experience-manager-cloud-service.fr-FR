@@ -1,14 +1,13 @@
 ---
 title: Utilisation de l’analyseur des bonnes pratiques
 description: Utilisation de l’analyseur des bonnes pratiques
-translation-type: tm+mt
-source-git-commit: 3d1aa714bacc74f77672ce2d7265da5239a6c6ff
+exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2512'
 ht-degree: 93%
 
 ---
-
 
 # Utilisation de l’analyseur des bonnes pratiques {#using-best-practices-analyzer}
 
@@ -16,7 +15,7 @@ ht-degree: 93%
 >id="aemcloud_bpa_using"
 >title="Utilisation de l’analyseur des bonnes pratiques"
 >abstract="Consultez la documentation relative à l’utilisation de l’analyseur des bonnes pratiques (anciennement Cloud Readiness Analyzer) et du rapport généré. Le rapport de l’analyseur des bonnes pratiques permet de mieux comprendre le degré de préparation général à la mise à niveau."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Considérations importantes concernant l’utilisation de l’analyseur des bonnes pratiques {#imp-considerations}
 
@@ -94,23 +93,23 @@ Pendant sa régénération, le rapport affiche la progression en termes de pourc
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
 
 
-#### Utilisation de Filtres dans le rapport Analyseur des meilleures pratiques {#bpa-filters}
+#### Utilisation de filtres dans le rapport Analyseur des bonnes pratiques {#bpa-filters}
 
-Pour filtrer les résultats relatifs à [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), procédez comme suit :
+Pour filtrer les résultats liés à [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), procédez comme suit :
 
-1. Cliquez sur l’icône du rail de gauche sur le côté gauche de la page. Ceci affichera le **filtre de licence CC Commons**. Cliquez sur **ACS Commons Filter** pour afficher la case à cocher interactive comme illustré dans l&#39;image ci-dessous.
+1. Cliquez sur l’icône du rail de gauche sur le côté gauche de la page. Cela affichera le **filtre ACS Commons**. Cliquez sur le **filtre ACS Commons** pour afficher la case à cocher interactive comme illustré dans l’image ci-dessous.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
-L&#39;icône de rail gauche apparaît uniquement si le BPA détecte l&#39;utilisation de ACS Commons.
+L’icône du rail de gauche n’apparaîtra que si le BPA détecte l’utilisation d’ACS Commons.
 
-1. Désélectionnez la case pour filtrer toutes les conclusions liées à ACS Commons. Vous devriez voir un **nombre de recherches filtrées** sur le rapport, comme illustré dans l&#39;image ci-dessous. Le filtre est également appliqué au rapport lorsqu’il est exporté au format CSV (valeurs séparées par des virgules).
+1. Désélectionnez la case pour filtrer tous les résultats liés à ACS Commons. Un **nombre de résultats filtrés** devrait s’afficher sur le rapport, comme illustré dans l’image ci-dessous. Le filtre est également appliqué au rapport lorsqu’il est exporté au format CSV (valeurs séparées par des virgules).
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-Les conclusions de l&#39;ACS Commons ne doivent pas être ignorées. Consultez la [documentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) pour déterminer la compatibilité avec AEM en tant que Cloud Service.
+Les résultats d’ACS Commons ne doivent pas être ignorés. Consultez la [documentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) pour déterminer la compatibilité avec AEM en tant que Cloud Service.
 
 
 ### Adobe Experience Manager 6.2 et 6.1 {#aem-specific-versions}
