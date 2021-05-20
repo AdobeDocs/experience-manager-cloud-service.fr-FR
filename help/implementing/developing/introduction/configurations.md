@@ -1,7 +1,6 @@
 ---
 title: Configurations et l’explorateur de configurations
 description: Description des configurations AEM et de leur gestion des paramètres d’espace de travail dans AEM.
-translation-type: tm+mt
 source-git-commit: 47d2ff211b5c00457793dc7bd321df1139cfc327
 workflow-type: tm+mt
 source-wordcount: '1496'
