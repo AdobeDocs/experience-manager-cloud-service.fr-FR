@@ -1,14 +1,13 @@
 ---
 title: Suppression d’un nom de domaine personnalisé
 description: Suppression d’un nom de domaine personnalisé
-translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+exl-id: febe647b-46df-47cb-b542-c05bf03ac88d
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 100%
 
 ---
-
 
 # Suppression d’un nom de domaine personnalisé {#deleting-cdn}
 
