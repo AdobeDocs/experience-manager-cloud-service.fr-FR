@@ -1,14 +1,13 @@
 ---
 title: Prise en main des SPA dans AEM avec Angular
 description: Cet article présente un exemple de SPA, explique comment cette application est structurée et vous permet de prendre rapidement en main votre propre SPA à l’aide du framework Angular.
-translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 100%
 
 ---
-
 
 # Prise en main des SPA dans AEM avec Angular {#getting-started-with-spas-in-aem-using-angular}
 
@@ -26,9 +25,9 @@ Cet article résume le fonctionnement de base d’une SPA simple et ce que vous 
 
 Pour plus de détails sur le fonctionnement des SPA dans AEM, consultez les documents suivants :
 
-* [Introduction et présentation des SPA](introduction.md)
-* [Aperçu de l’éditeur de SPA](editor-overview.md)
-* [Plan directeur d’applications sur une sule page (SPA)](blueprint.md)
+* [Introduction et présentation des applications sur une seule page (SPA)](introduction.md)
+* [Présentation de l’éditeur de SPA](editor-overview.md)
+* [Plan directeur d’applications sur une seule page (SPA)](blueprint.md)
 
 >[!NOTE]
 >
