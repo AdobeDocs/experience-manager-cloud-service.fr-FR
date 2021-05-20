@@ -1,14 +1,13 @@
 ---
 title: Publication de pages
 description: Publication et annulation de la publication de pages à l’aide d’AEM
-translation-type: tm+mt
-source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
+exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1717'
 ht-degree: 100%
 
 ---
-
 
 # Publication de pages {#publishing-pages}
 
@@ -90,8 +89,8 @@ Si vous modifiez une page, vous pouvez la publier directement à partir de l’�
 
 La console Sites propose deux options de publication :
 
-* [Publication rapide](#quick-publish)
-* [Gérer la publication](#manage-publication)
+* [Publication rapide ](#quick-publish)
+* [Gérer la publication ](#manage-publication)
 
 #### Publication rapide  {#quick-publish}
 
