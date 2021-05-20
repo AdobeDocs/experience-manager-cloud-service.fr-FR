@@ -1,14 +1,13 @@
 ---
 title: Notes de mise à jour de la version 2020.11.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.11.0.
-translation-type: tm+mt
-source-git-commit: ef8df0176c0541acc3cb6cb52d564d9bfee0bfea
+exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 100%
 
 ---
-
 
 # Notes de mise à jour pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -29,7 +28,7 @@ La version suivante (2020.12.0) sera publiée le 17 décembre 2020.
 
 * **Tri des pages de la Live Copy disponibles pour déploiement** : nouvelle option pour trier les pages de la Live Copy disponibles pour déploiement à l’aide des propriétés [!UICONTROL Nom], [!UICONTROL Date de dernière modification] et [!UICONTROL Date du dernier déploiement]. La [!UICONTROL Date du dernier déploiement] pour une page est une nouvelle propriété introduite.
 
-## [!DNL Adobe Experience Manager Assets] en tant que Cloud Service  {#assets}
+## [!DNL Adobe Experience Manager Assets] en tant que Cloud Service {#assets}
 
 ### Nouveautés d’[!DNL Assets] et [!DNL Dynamic Media] {#what-is-new-assets}
 
