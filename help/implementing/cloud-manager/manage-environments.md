@@ -1,14 +1,13 @@
 ---
 title: Gestion des environnements – Cloud Service
 description: Gestion des environnements – Cloud Service
-translation-type: tm+mt
-source-git-commit: 1aca6f0b23aa328ca364f7ab1d4c722bb5cbca9a
+exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 97%
 
 ---
-
 
 # Gestion des environnements {#manage-environments}
 
@@ -113,7 +112,7 @@ L’option de suppression est également disponible si vous cliquez sur **Détai
 
 >[!NOTE]
 >
->Cette fonction n’est pas disponible pour les environnements de production/d’étape définis dans un programme de production configuré à des fins de production. Cette fonction est toutefois disponible pour les environnements de production/d’évaluation dans un programme Sandbox.
+>Cette fonctionnalité n’est pas disponible pour l’environnement de production/d’évaluation défini dans un programme de production configuré à des fins de production. Cette fonction est toutefois disponible pour les environnements de production/d’évaluation dans un programme Sandbox.
 
 ## Gestion de l’accès {#managing-access}
 
@@ -159,9 +158,9 @@ Vous pouvez exécuter les actions suivantes sur le service de publication pour v
 
 1. [Suppression d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
-1. [Vérification de l’état du ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) nom de domaine personnalisé ou d’un certificat [ ](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn)SSL.
+1. [Vérification de l’état du ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) nom de domaine personnalisé ou d’un certificat  [SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn).
 
-1. [Vérification du statut d&#39;une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
+1. [Vérification de l’état des Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
 
 ## Gestion des listes autorisées d’adresses IP {#manage-ip-allow-lists}
 
@@ -190,5 +189,3 @@ Suivez les étapes ci-dessous pour annuler l’application d’une liste d’adr
 1. Identifiez la ligne où apparaît la règle de liste autorisée IP que vous souhaitez annuler.
 1. Sélectionnez le menu **...** à l’extrémité droite de la ligne.
 1. Sélectionnez l’option **Annuler l’application** et confirmez votre envoi.
-
-
