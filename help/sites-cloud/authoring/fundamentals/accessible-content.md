@@ -1,14 +1,13 @@
 ---
 title: Création de contenu accessible pour Adobe Experience Manager as a Cloud Service (conformité WCAG 2.1)
 description: Utilisez AEM as a Cloud Service pour rendre le contenu web accessible et utilisable par les personnes en situation de handicap
-translation-type: tm+mt
-source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
+exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '14060'
 ht-degree: 100%
 
 ---
-
 
 # Création de contenu accessible (conformité WCAG 2.1) {#creating-accessible-content-wcag-conformance}
 
@@ -289,7 +288,7 @@ Suivez les instructions de la section [Audio-description ou version de remplacem
 * [Compréhension du critère de réussite 1.2.5](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html)
 * [Comment remplir le critère de réussite 1.2.5](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded)
 
-### Adaptable (1.3)  {#adaptable}
+### Adaptable (1.3) {#adaptable}
 
 [Règle 1.3 – Adaptable : créer un contenu qui puisse être présenté de différentes manières sans perte d’information ni de structure (par exemple avec une mise en page simplifiée).](https://www.w3.org/TR/WCAG/#adaptable)
 
@@ -360,6 +359,7 @@ Veillez à ce que vos pages web aient la structure appropriée en utilisant, le 
       >
       >* `<b>` pour `<strong>`
       >* `<i>` pour `<em>`
+
       >
       >Ils sont identiques dans la pratique, mais `<strong>` et `<em>` sont préférables, car il s’agit de code HTML correct sémantiquement. Votre équipe de développement peut configurer l’éditeur de texte enrichi pour qu’il utilise `<strong>` et `<em>` (au lieu de `<b>` et `<i>`) lors du développement de votre instance de projet.
 
@@ -461,7 +461,7 @@ Veillez à ce que les informations qui reposent sur des caractéristiques visuel
 * [Compréhension du critère de réussite 1.3.3](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)
 * [Comment remplir le critère de réussite 1.3.3](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics)
 
-### Perceptible (1.4)  {#distinguishable}
+### Perceptible (1.4) {#distinguishable}
 
 [Règle 1.4 – Perceptible : faciliter la perception visuelle et auditive du contenu par l’utilisateur, notamment en séparant le premier plan de l’arrière-plan.](https://www.w3.org/TR/WCAG/#distinguishable)
 
