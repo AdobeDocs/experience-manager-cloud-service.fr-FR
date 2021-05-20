@@ -2,7 +2,6 @@
 title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.4.0
 description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.4.0
 feature: Informations sur la version
-translation-type: tm+mt
 source-git-commit: e2d4bb7649fad3ee172c6f049ecfdedc71417ee2
 workflow-type: tm+mt
 source-wordcount: '327'
@@ -17,37 +16,37 @@ Cette page présente les notes de mise à jour de Cloud Manager dans AEM as a Cl
 
 ## Date de publication {#release-date}
 
-La date de publication de Cloud Manager en tant que Cloud Service 2021.4.0 est le 08 avril 2021.
+La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.4.0 est le 8 avril 2021.
 La prochaine version est prévue pour le 6 mai 2021.
 
 ### Nouveautés {#what-is-new-april}
 
-* L’interface utilisateur met à jour les workflows d’Ajoute et de modification de Programme pour les rendre plus intuitifs.
+* Mises à jour de l’interface utilisateur des workflows Ajouter et modifier le programme pour le rendre plus intuitif.
 
 * Un utilisateur disposant des autorisations requises peut désormais envoyer le point de terminaison du commerce via l’interface utilisateur.
 
-* Les variables d’Environnement peuvent désormais être étendues à un service spécifique, qu’il s’agisse de l’auteur ou de la publication. Requiert AEM version `2021.03.5104.20210328T185548Z` ou supérieure.
+* Les variables d’environnement peuvent désormais être incluses dans un service spécifique, qu’il s’agisse de création ou de publication. Nécessite AEM version `2021.03.5104.20210328T185548Z` ou supérieure.
 
-* Le bouton **Gérer Git** s&#39;affiche sur la carte Pipelines même si aucun pipeline n&#39;a été configuré.
+* Le bouton **Gérer Git** s’affiche sur la carte Pipelines même si aucun pipeline n’a été configuré.
 
-* La version de l’archétype de projet AEM utilisée par Cloud Manager a été mise à jour vers la version 27.
+* La version de l’archétype de projet AEM utilisé par Cloud Manager a été mise à jour vers la version 27.
 
-* Les projets de la console de développement des Adobes I/O créés par Cloud Manager ne peuvent plus être modifiés ou supprimés involontairement.
+* Les projets dans Adobe I/O Developer Console créés par Cloud Manager ne peuvent plus être modifiés ou supprimés involontairement.
 
-* Lorsqu’un utilisateur ajoute un nouvel environnement, il est informé qu’une fois qu’un environnement est créé, il ne peut plus être déplacé dans une autre région.
+* Lorsqu’un utilisateur ajoute un nouvel environnement, il est informé qu’une fois qu’un environnement est créé, il ne peut pas être déplacé vers une autre région.
 
-* Les variables d’Environnement peuvent désormais être étendues à un service spécifique, qu’il s’agisse de l’auteur ou de la publication. Requiert AEM version 2021.03.5104.20210328T185548Z ou supérieure.
+* Les variables d’environnement peuvent désormais être incluses dans un service spécifique, qu’il s’agisse de création ou de publication. Nécessite AEM version 2021.03.5104.20210328T185548Z ou ultérieure.
 
-* Le message d&#39;erreur lors du démarrage d&#39;un pipeline lorsqu&#39;un environnement a été supprimé a été clarifié.
+* Le message d’erreur lors du démarrage d’un pipeline lorsqu’un environnement a été supprimé a été clarifié.
 
-* Les lots OSGi fournis par les projets Eclipse sont maintenant exclus de la règle `CQBP-84--dependencies`.
+* Les lots OSGi fournis par les projets Eclipse sont désormais exclus de la règle `CQBP-84--dependencies`.
 
 ### Correctifs {#bug-fixes-cm-april}
 
-* Lors de la modification de la page de contrôle d’expérience d’un pipeline, un chemin d’entrée commençant par une barre oblique `( / )` n’entraîne plus l’blocage de l’étape dans l’état en attente.
+* Lors de la modification de la page de contrôle de l’expérience d’un pipeline, un chemin d’entrée commençant par une barre oblique `( / )` n’entraîne plus le blocage de l’étape à l’état en attente.
 
-* Lors de la création d&#39;un nouveau pipeline de production, si aucun remplacement de contrôle du contenu n&#39;est ajouté par l&#39;utilisateur, la page d&#39;accueil par défaut n&#39;a pas été contrôlée.
+* Lorsqu’un nouveau pipeline de production est créé, si aucun remplacement d’audit de contenu n’est ajouté par l’utilisateur, la page d’accueil par défaut n’a pas été contrôlée.
 
-* La gravité des problèmes de `CloudServiceIncompatibleWorkflowProcess` était incorrecte dans le fichier CSV de publication téléchargeable.
+* Les problèmes pour `CloudServiceIncompatibleWorkflowProcess` étaient de gravité incorrecte dans le fichier CSV de problème téléchargeable.
 
 * La vérification `Runmode` produisait des faux positifs sur les noeuds non-dossiers.
