@@ -14,9 +14,9 @@ ht-degree: 77%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="Présentation"
->abstract="Outil de transfert de contenu est un outil développé par Adobe qui peut être utilisé pour déplacer le contenu existant d’une instance d’AEM source (sur site ou AMS) vers l’instance d’Cloud Service AEM cible. Cet outil transfère également automatiquement les entités principales (utilisateurs ou groupes)."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="Processus d&#39;Extraction"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="Processus d&#39;importation"
+>abstract="L’outil de transfert de contenu est un outil développé par Adobe qui peut être utilisé pour déplacer du contenu existant d’une instance d’AEM source (on-premise ou AMS) vers l’instance d’Cloud Service AEM cible. Cet outil transfère également automatiquement les entités principales (utilisateurs ou groupes)."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="Processus d’extraction"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="Processus d’ingestion"
 
 Développé par Adobe, l’outil de transfert de contenu est utilisé pour déplacer du contenu existant entre une instance AEM source (on-premise ou AMS) et une instance AEM Cloud Service cible.
 
@@ -38,7 +38,7 @@ Le transfert de contenu comporte deux phases :
 
 Un *jeu de migration* possède les attributs suivants :
 
-* Au maximum dix jeux de migration peuvent être créés et conservés à la fois pendant l’activité de transfert de contenu.
+* Au maximum, dix jeux de migration peuvent être créés et gérés à la fois pendant l’activité de transfert de contenu.
 * Chaque jeu de migration doit avoir un nom unique.
 * Si un jeu de migration est inactif depuis plus de 30 jours, il est automatiquement supprimé.
 * Chaque fois que vous créez un jeu de migration, il est associé à un environnement spécifique. Vous ne pouvez effectuer une ingestion que dans une instance d’auteur ou de publication d’un même environnement.
@@ -60,9 +60,9 @@ Lors de la phase d’ingestion, pour appliquer le contenu différentiel en plus 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_guidelines"
 >title="Conseils et bonnes pratiques"
->abstract="Consultez les directives et les meilleures pratiques pour utiliser l&#39;outil de transfert de contenu, y compris les tâches de nettoyage de la révision, les considérations relatives à l&#39;espace disque, etc."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs" text="Remarques importantes concernant l’utilisation de l’outil de transfert de contenu"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="Considérations importantes pour l’utilisation de l’outil de mappage des utilisateurs"
+>abstract="Consultez les instructions et les bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu, notamment les tâches de nettoyage des révisions, les considérations relatives à l’espace disque, etc."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs" text="Points importants concernant l’utilisation de l’outil de transfert de contenu"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="Points importants concernant l’utilisation de l’outil de mappage des utilisateurs"
 
 Consultez la section ci-dessous pour accéder aux conseils et connaître les bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu :
 
@@ -82,4 +82,4 @@ La formule générale pour calculer l’espace disque disponible requis est la s
    * *volume de stockage des nœuds* : taille du répertoire de stockage des segments ou taille de la base de données MongoDB.
 Ainsi, pour un volume de stockage de segments de 20 Go, l’espace disque disponible requis est de 94 Go.
 
-* Un jeu de migration doit être conservé tout au long de l’activité de transfert de contenu pour prendre en charge les ajouts de contenu. Étant donné qu’un maximum de dix jeux de migration peuvent être créés et conservés à un moment donné pendant l’activité de transfert de contenu, il est recommandé de séparer le référentiel de contenu en conséquence pour vous assurer que vous n’êtes pas à court de jeux de migration.
+* Un jeu de migration doit être conservé tout au long de l’activité de transfert de contenu pour prendre en charge les compléments de contenu. Etant donné qu’un maximum de dix jeux de migration peuvent être créés et conservés à la fois pendant l’activité de transfert de contenu, il est recommandé de séparer le référentiel de contenu en conséquence pour vous assurer de ne pas être à court de jeux de migration.
