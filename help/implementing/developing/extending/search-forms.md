@@ -1,14 +1,13 @@
 ---
 title: Configuration des formulaires de recherche
 description: Configuration des formulaires de recherche pour Adobe Experience Manager as a Cloud Service.
-translation-type: tm+mt
-source-git-commit: c48274f76db764e1cbad459e644d5fb4b753a086
+exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2043'
 ht-degree: 100%
 
 ---
-
 
 # Configuration des formulaires de recherche {#configuring-search-forms}
 
