@@ -1,10 +1,9 @@
 ---
 title: Modèles de fragment de contenu
-description: Découvrez comment les modèles de fragments de contenu constituent la base de votre contenu sans en-tête dans AEM et comment créer des fragments de contenu avec du contenu structuré.
+description: Découvrez comment les modèles de fragment de contenu constituent la base de votre contenu headless dans AEM et comment créer des fragments de contenu avec du contenu structuré.
 feature: Fragments de contenu
 role: Business Practitioner
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-translation-type: tm+mt
 source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
 source-wordcount: '2309'
@@ -14,11 +13,11 @@ ht-degree: 90%
 
 # Modèles de fragment de contenu {#content-fragment-models}
 
-Les modèles de fragments de contenu dans AEM définissent la structure du contenu de vos [fragments de contenu,](/help/assets/content-fragments/content-fragments.md) servant de base à votre contenu sans en-tête.
+Les modèles de fragment de contenu d’AEM définissent la structure du contenu de vos [fragments de contenu,](/help/assets/content-fragments/content-fragments.md) servant de base à votre contenu sans en-tête.
 
 Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 
-1. [Activez la fonctionnalité Modèle de fragment de contenu pour votre instance](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+1. [Activez la fonctionnalité Modèle de fragment de contenu pour votre instance.](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. [Créez](#creating-a-content-fragment-model) et [configurez](#defining-your-content-fragment-model) vos modèles de fragments de contenu.
 1. [Activez les modèles de fragments de contenu](#enabling-disabling-a-content-fragment-model) à utiliser pour la création de fragments de contenu.
 1. [Autorisez vos modèles de fragments de contenu sur les dossiers de ressources](#allowing-content-fragment-models-assets-folder) en configurant des **stratégies**.
@@ -124,15 +123,15 @@ Une sélection de types de données est disponible pour la définition de votre 
       * Inclut la mise en surbrillance de la syntaxe JSON, la saisie semi-automatique et la mise en surbrillance des erreurs dans l’éditeur de fragments de contenu.
 * **Espace réservé pour tabulation**
    * Permet l’introduction d’onglets à utiliser lors de la modification du contenu du fragment de contenu.
-Cette valeur sera affichée sous la forme d’un séparateur dans l’éditeur de modèles, séparant les sections de la liste des types de données de contenu. Chaque instance représente le début d’un nouvel onglet.
+Il s’affiche sous forme de séparateur dans l’éditeur de modèles, ce qui sépare les sections de la liste des types de données de contenu. Chaque instance représente le début d’un nouvel onglet.
 Dans l’éditeur de fragments, chaque instance s’affiche sous la forme d’un onglet.
 
       >[!NOTE]
-      Ce type de données est uniquement utilisé pour le formatage, il est ignoré par le schéma GraphQL AEM.
+      Ce type de données est uniquement utilisé à des fins de mise en forme. Il est ignoré par le schéma GraphQL AEM.
 
 ## Propriétés {#properties}
 
-De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propriétés, les détails supplémentaires sont les suivants :
+De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propriétés, vous trouverez ci-dessous des détails supplémentaires :
 
 * **Rendu comme**
 Les différentes options permettant de réaliser/rendre le champ dans un fragment. Il est ainsi souvent possible de définir si l’auteur verra une seule instance du champ ou s’il sera autorisé à créer plusieurs instances.
@@ -213,7 +212,7 @@ AEM dispose d’une protection récurrente pour :
 * Références du contenu
 Cela empêche l’utilisateur d’ajouter une référence au fragment actif. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
 
-* Références de fragments dans GraphQL
+* Références de fragment dans GraphQL
 Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur null à la première occurrence.
 
 
@@ -228,7 +227,7 @@ Outre les propriétés standard, vous pouvez spécifier les éléments suivants�
 * Limites relatives aux tailles de fichier
 * Si une image est référencée :
    * Afficher la miniature
-   * Limitations de hauteur et de largeur
+   * Limites de hauteur et de largeur
 
 ![Référence de contenu](assets/cfm-content-reference.png)
 
@@ -314,7 +313,7 @@ Un modèle peut également être désactivé afin que :
 
 * Le modèle ne soit plus disponible comme base pour la création de *nouveaux* fragments de contenu.
 * Toutefois :
-   * Le schéma GraphQL continue à être généré et peut toujours être interrogé (afin d’éviter d’avoir un impact sur l’API JSON).
+   * Le schéma GraphQL continue à être généré et peut toujours faire l’objet d’une requête (afin d’éviter tout impact sur l’API JSON).
    * Tout fragment de contenu basé sur le modèle peut toujours être interrogé et renvoyé à partir du point d’entrée GraphQL.
 * Le modèle ne peut plus être référencé, mais les références existantes sont conservées intactes et peuvent toujours être interrogées et renvoyées à partir du point d’entrée GraphQL.
 
@@ -403,7 +402,7 @@ L’état publié sera indiqué dans la console.
 
 ## Modèle de fragment de contenu - Propriétés {#content-fragment-model-properties}
 
-Vous pouvez modifier les **propriétés** d&#39;un modèle de fragment de contenu :
+Vous pouvez modifier les **propriétés** d’un modèle de fragment de contenu :
 
 * **De base**
    * **Titre du modèle**
