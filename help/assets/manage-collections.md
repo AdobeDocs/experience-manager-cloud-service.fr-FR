@@ -3,16 +3,15 @@ title: Gestion des collections de ressources numériques
 description: Découvrez le concept de collection dans Adobe Experience Manager Assets. Apprenez à créer, gérer, modifier et partager des collections avec d’autres utilisateurs.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Collections,Asset Management
+feature: Collections,Gestion des ressources
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '2402'
+source-wordcount: '2400'
 ht-degree: 97%
 
 ---
-
 
 # Gestion des collections {#manage-collections}
 
@@ -136,7 +135,7 @@ Vous pouvez modifier simultanément les métadonnées de plusieurs collections. 
    >
    >Le mode d’ajout fonctionne uniquement avec les champs pouvant contenir plusieurs valeurs. Pour les champs ne pouvant contenir qu’une seule valeur, les nouvelles métadonnées ne sont pas ajoutées à la valeur existante dans le champ, même si vous sélectionnez **[!UICONTROL Mode d’ajout]**.
 
-## Recherche {#searching}
+## Rechercher {#searching}
 
 La fonctionnalité Recherche des collections prend en charge à la fois la [recherche de collections](#search-collections) et la [recherche de ressources dans une collection](#search-within-collections).
 
@@ -197,7 +196,7 @@ Pour personnaliser la page [!UICONTROL Propriétés] de métadonnées, notamment
    >
    >Les métadonnées que vous ajoutez pour les collections sélectionnées remplacent les métadonnées précédentes de ces collections, à l’exception des balises. Toutes les balises que vous ajoutez dans le champ **[!UICONTROL Balises]** sont ajoutées à la liste existante des balises dans les métadonnées.
 
-1. Pour vue des propriétés de métadonnées d’une collection spécifique, annulez la sélection des collections restantes dans la liste des collections. Les champs de l’éditeur de métadonnées sont renseignés avec les métadonnées de la collection particulière.
+1. Pour afficher les propriétés de métadonnées d’une collection spécifique, annulez la sélection des collections restantes dans la liste des collections. Les champs de l’éditeur de métadonnées sont renseignés avec les métadonnées de la collection particulière.
 
    >[!NOTE]
    >
