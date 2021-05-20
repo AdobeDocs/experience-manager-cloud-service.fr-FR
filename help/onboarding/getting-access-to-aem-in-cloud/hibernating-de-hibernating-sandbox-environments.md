@@ -2,7 +2,6 @@
 title: 'Mise en veille et réactivation d’environnements Sandbox '
 description: Mise en veille et réactivation d’environnements Sandbox
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-translation-type: tm+mt
 source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
 workflow-type: tm+mt
 source-wordcount: '855'
@@ -15,7 +14,7 @@ ht-degree: 95%
 Les environnements de programme Sandbox passent en *mode veille* si aucune activité n’est détectée pendant une certaine période.
 
 >[!NOTE]
->La veille est unique aux environnements de programme Sandbox. Les environnements du programme de production n&#39;hibernent pas.
+>La veille est unique aux environnements de programme Sandbox. Les environnements de programme de production ne sont pas en veille.
 
 ## Mise en veille {#hibernation-introduction}
 
@@ -121,9 +120,9 @@ Voici quelques considérations clés liées aux environnements mis en veille et 
 
 * Les mises à niveau d’AEM peuvent être appliquées aux environnements mis en veille, et les clients peuvent les déclencher manuellement à partir de Cloud Manager. L’environnement demeure en veille et la nouvelle version apparaît dans l’environnement une fois ce dernier réactivé.
 
-* Les sandbox sont placées dans le noeud d’hibernation après 8 heures d’inactivité, après quoi elles peuvent être déshibernées.
+* Les environnements de test sont placés dans le noeud de veille après 8 heures d’inactivité, après quoi ils peuvent être réactivés.
 
-* Les sandbox sont supprimés après 6 mois d’hibernation continue, après quoi ils peuvent être recréés.
+* Les environnements de test sont supprimés après 6 mois de mise en veille continue, après quoi ils peuvent être recréés.
 
    >[!NOTE]
    >Actuellement, Cloud Manager n’indique pas si un environnement est en veille.
