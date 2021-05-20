@@ -1,14 +1,13 @@
 ---
 title: Problèmes connus
 description: Notes de mise à jour spécifiques aux problèmes connus avec Adobe Experience Manager as a Cloud Service
-translation-type: tm+mt
-source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 100%
 
 ---
-
 
 # Problèmes connus {#known-issues}
 
@@ -44,6 +43,6 @@ Quelques fonctionnalités des ressources Adobe Experience Manager qui dépende
 >[!MORELIKETHIS]
 >
 >* [Changements majeurs dans AEM](aem-cloud-changes.md)
->* [Fonctionnalités obsolètes et supprimées](deprecated-removed-features.md)
->* [Notes de mise à jour](home.md)
+* [Fonctionnalités obsolètes et supprimées](deprecated-removed-features.md)
+* [Notes de mise à jour](home.md)
 
