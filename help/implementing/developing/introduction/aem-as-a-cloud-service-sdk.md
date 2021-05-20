@@ -1,14 +1,13 @@
 ---
 title: SDK AEM as a Cloud Service
 description: Aperçu du SDK AEM as a Cloud Service
-translation-type: tm+mt
-source-git-commit: 6b754a866be7979984d613b95a6137104be05399
+exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 99%
 
 ---
-
 
 # SDK d’AEM as a Cloud Service {#aem-as-a-cloud-service-sdk}
 
