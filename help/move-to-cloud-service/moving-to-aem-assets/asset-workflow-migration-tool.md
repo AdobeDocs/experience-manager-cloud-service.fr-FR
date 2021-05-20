@@ -1,14 +1,13 @@
 ---
 title: Outil de migration des workflows de ressources
-description: 'Outil de migration des workflows de ressources '
-translation-type: tm+mt
-source-git-commit: 3a438de3c460d4dc5a8b8617f0ec0eefc56f1665
+description: Outil de migration des workflows de ressources
+exl-id: 18490295-ead6-4691-8983-a6d4054e4264
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 100%
 
 ---
-
 
 # Outil de migration des workflows de ressources {#asset-workflow-migration}
 
