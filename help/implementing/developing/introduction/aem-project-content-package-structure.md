@@ -2,7 +2,6 @@
 title: Structure de projet AEM
 description: Découvrez comment définir des structures de package en vue d’un déploiement sur Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-translation-type: tm+mt
 source-git-commit: ba5817714d46511c75ec2dd796b2ebd90adecb57
 workflow-type: tm+mt
 source-wordcount: '2873'
@@ -89,7 +88,7 @@ La structure de déploiement d’application recommandée est la suivante :
 
 >[!NOTE]
 >
->Le même code doit être déployé sur tous les environnements. Cela est nécessaire pour garantir un niveau de confiance dans les validations de l&#39;environnement d&#39;étape également en production. Pour plus d&#39;informations, consultez la section [Modes d&#39;exécution](/help/implementing/deploying/overview.md#runmodes).
+>Le même code doit être déployé dans tous les environnements. Cela est nécessaire afin de garantir un niveau de confiance dans l’environnement intermédiaire également en production. Pour plus d’informations, voir la section [Modes d’exécution](/help/implementing/deploying/overview.md#runmodes).
 
 
 ### Modules de contenu
@@ -143,7 +142,7 @@ Par exemple, un projet AEM incluant deux applications AEM de fournisseurs peut s
 
 Les modules doivent être marqués avec le type déclaré.
 
-+ Les modules conteneurs doivent définir leur `packageType` sur `container`. Les packages de conteneur ne doivent pas contenir directement les lots OSGi, les configurations OSGi et ne sont pas autorisés à utiliser [Hooks d&#39;installation](http://jackrabbit.apache.org/filevault/installhooks.html).
++ Les modules conteneurs doivent définir leur `packageType` sur `container`. Les modules conteneurs ne doivent pas contenir directement les bundles OSGi et les configurations OSGi et ne sont pas autorisés à utiliser les [hooks d’installation](http://jackrabbit.apache.org/filevault/installhooks.html).
 + Les modules de code (non modifiables) doivent définir leur `packageType` sur `application`.
 + Les modules de contenu (modifiables) doivent définir leur `packageType` sur `content`.
 
@@ -206,7 +205,7 @@ Notez que les modules de contenu (`<packageType>content</packageType>`) n’ont 
 >
 >Pour obtenir un fragment de code complet, reportez-vous à la section [Fragments de code XML POM](#xml-repository-structure-package) ci-dessous.
 
-## Intégration de sous-modules dans le module conteneur {#embeddeds}
+## Intégration de sous-modules dans le module conteneur{#embeddeds}
 
 Les modules de contenu ou de code sont placés dans un dossier « sidecar » spécial et peuvent être ciblés en vue d’une installation sur AEM Author, AEM Publish, ou les deux, à l’aide de la configuration `<embeddeds>` du plug-in Maven FileVault. Notez que la configuration `<subPackages>` ne doit pas être utilisée.
 
