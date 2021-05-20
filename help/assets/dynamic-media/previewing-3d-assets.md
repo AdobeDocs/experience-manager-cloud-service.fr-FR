@@ -9,22 +9,22 @@ ht-degree: 55%
 ---
 
 
-# Prévisualisation de fichiers 3D dans Adobe Experience Manager{#previewing-3d-assets}
+# Prévisualisation de ressources 3D dans Adobe Experience Manager{#previewing-3d-assets}
 
 Experience Manager prend en charge le téléchargement, la diffusion et l’aperçu interactif des ressources 3D dans le cadre du processus de création.
 
-La visionneuse 3D interactive est disponible à partir de la page des détails de la ressource dans le Experience Manager. La visionneuse comprend, entre autres, un ensemble de contrôles de caméra interactifs qui permettent d’orbiter, de zoomer et de faire un panoramique sur la ressource 3D.
+La visionneuse 3D interactive est disponible à partir de la page des détails de la ressource dans Experience Manager. La visionneuse comprend, entre autres, un ensemble de contrôles de caméra interactifs qui permettent d’orbiter, de zoomer et de faire un panoramique sur la ressource 3D.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Formats pris en charge pour la prévisualisation 3D en Experience Manager{#supported-3d-previewing-assets}
+## Formats pris en charge pour l’aperçu 3D en Experience Manager{#supported-3d-previewing-assets}
 
-La prévisualisation 3D interactive dans le Experience Manager prend en charge les formats de fichier suivants :
+L’aperçu 3D interactif dans Experience Manager prend en charge les formats de fichier suivants :
 
 | Extension de fichier 3D | Format de fichier | Type MIME | Remarques |
 |---|---|---|---|
 | GLB | Transmission GL binaire | model/gltf-binary |  |
-| GLTF | Format de transmission GL | model/gltf+json | Voir la **Note** ci-dessous. |
+| GLTF | Format de transmission GL | model/gltf+json | Voir la **note** ci-dessous. |
 | OBJ | Fichier d’objet 3D WaveFront | application/x-tgif |  |
 | STL | Stéréolithographie | application/vnd.ms-pki.stl |  |
 | DN | Adobe Dimension | model/x-adobe-dn | Prise en charge de l’assimilation uniquement, prévisualisation non disponible. |
@@ -32,7 +32,7 @@ La prévisualisation 3D interactive dans le Experience Manager prend en charge l
 
 >[!NOTE]
 >
->Si les matériaux ne s’affichent pas en prévisualisation d’un modèle gLTF, veillez à ce qu’ils soient correctement nommés et dans un dossier `textures` situé dans le même dossier racine que le modèle, comme suit :
+>Si les matériaux ne sont pas rendus dans l’aperçu d’un modèle gLTF, assurez-vous qu’ils sont correctement nommés et dans un dossier `textures` dans le même dossier racine que le modèle, comme suit :
 
     Asset (folder)
     model.gltf
@@ -41,17 +41,17 @@ La prévisualisation 3D interactive dans le Experience Manager prend en charge l
     material_0_baseColor.jpeg
     material_0_normal.jpeg
 
-## Considérations relatives aux performances lors de la prévisualisation de ressources 3D dans Experience Manager{#performance-3d-previewing-assets}
+## Considérations de performance lors de la prévisualisation de ressources 3D en Experience Manager{#performance-3d-previewing-assets}
 
 Le temps d’ouverture d’un fichier 3D dans la page d’affichage des détails du fichier dépend de plusieurs facteurs, tels que la bande passante, la complexité de l’image et les latences sur le serveur.
 
-En outre, les capacités de l&#39;ordinateur client (tel qu&#39;une station de travail, un ordinateur portable ou un périphérique tactile mobile) sont également importantes à prendre en compte lorsque vous manipulez la caméra de manière interactive. Un système relativement puissant avec de bonnes capacités graphiques peut rendre l’expérience interactive d’affichage en 3D plus fluide et plus favorable.
+En outre, les capacités de l’ordinateur client (poste de travail, ordinateur portable ou appareil mobile tactile, par exemple) sont également importantes à prendre en compte lorsque vous manipulez la caméra de manière interactive. Un système relativement puissant avec de bonnes capacités graphiques peut rendre l’expérience interactive d’affichage en 3D plus fluide et plus favorable.
 
-**Pour prévisualisation de fichiers 3D dans le Experience Manager :**
+**Pour prévisualiser des ressources 3D dans Experience Manager :**
 
 1. Assurez-vous d’avoir chargé des ressources 3D dans Experience Manager.
 Consultez [Formats pris en charge pour la prévisualisation 3D](#supported-3d-previewing-assets) et [Téléchargement de ressources](/help/assets/manage-digital-assets.md#uploading-assets).
-1. Depuis le Experience Manager, sur la page **[!UICONTROL Navigation]**, appuyez sur **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**.
+1. Dans Experience Manager, sur la page **[!UICONTROL Navigation]**, appuyez sur **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**.
 
    ![Page de navigation](/help/assets/dynamic-media/assets/navigation-assets.png)
 
@@ -60,7 +60,7 @@ Consultez [Formats pris en charge pour la prévisualisation 3D](#supported-3d-pr
    ![Sélection de la carte 3D](/help/assets/dynamic-media/assets/3d-card-select.png)
    _En mode Carte, appuyez sur la carte du fichier 3D à prévisualiser._
 
-1. Appuyez sur la carte du fichier 3D.
+1. Appuyez sur la carte de la ressource 3D.
 
    ![Prévisualisation 3D interactive](/help/assets/dynamic-media/assets/3d-preview.png)
    _Prévisualisation interactive d’un fichier 3D dans la page d’affichage des détails du fichier._
@@ -69,10 +69,10 @@ Consultez [Formats pris en charge pour la prévisualisation 3D](#supported-3d-pr
    | Mode | Description | Action de souris | Action de l’écran tactile |
    | --- | --- | --- | --- |
    | **Tournez votre appareil photo** | Faites tourner la vue autour de la scène 3D et des objets. | Cliquez avec le bouton gauche et faites glisser. | Appuyez sur un seul doigt et faites glisser. |
-   | **Panoramique de l’appareil photo** | Déplacez votre vue vers la gauche, la droite, vers le haut ou vers le bas. | Cliquez avec le bouton droit de la souris et faites glisser. | Appuyez sur deux doigts et faites glisser. |
-   | **Zoom de la caméra** | Se déplace dans et hors des zones de la scène 3D. | Roue de défilement. | Pincement à deux doigts. |
-   | **Recentrer votre caméra** | Recentrez votre caméra sur un objet de la scène 3D. | Double-cliquer. | Double appui. |
-   | **Réinitialiser** | Près du coin inférieur droit de la page, appuyez sur l&#39;icône Réinitialiser pour rétablir le point de cible de vue au centre de la ressource 3D. De plus, Réinitialiser rapproche ou éloigne l’angle de vue pour afficher la ressource dans son intégralité et à une taille raisonnable. |  |  |
-   | **Mode Plein écran** | Pour passer en mode plein écran, dans le coin inférieur droit de la page, appuyez sur l’icône Plein écran. |  |  |
+   | **Panoramique** | Faites défiler votre vue vers la gauche, la droite, le haut ou le bas. | Cliquez avec le bouton droit de la souris et faites glisser. | Appuyez avec deux doigts et faites glisser. |
+   | **Zoom sur la caméra** | Se déplacer dans et hors des zones de la scène 3D. | Roue de défilement. | Pincement à deux doigts. |
+   | **Recréez votre appareil photo** | Recentrez l’angle de vue sur un point d’un objet de la scène 3D. | Double-cliquer. | Double appui. |
+   | **Réinitialiser** | Dans le coin inférieur droit de la page, appuyez sur l’icône Réinitialiser pour rétablir le point d’affichage cible au centre de la ressource 3D. De plus, Réinitialiser rapproche ou éloigne l’angle de vue pour afficher la ressource dans son intégralité et à une taille raisonnable. |  |  |
+   | **Mode Plein écran** | Pour passer en mode Plein écran, dans le coin inférieur droit de la page, appuyez sur l’icône Plein écran. |  |  |
 
 1. Lorsque vous avez terminé, en haut à droite de la page, appuyez sur **[!UICONTROL Fermer]**.
