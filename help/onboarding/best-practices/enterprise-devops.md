@@ -1,7 +1,6 @@
 ---
-title: Opérations de développement d’entreprise
+title: Opérations de développement d’entreprise (DevOps)
 description: Découvrez les processus, les méthodes et les communications requis pour faciliter le déploiement et simplifier la collaboration.
-translation-type: tm+mt
 source-git-commit: 5fe4eb9f9cad4ad2f1d259ebb5fa0302ea5c515f
 workflow-type: tm+mt
 source-wordcount: '1001'
@@ -10,7 +9,7 @@ ht-degree: 100%
 ---
 
 
-# Opérations de développement d’entreprise{#enterprise-devops}
+# Opérations de développement d’entreprise (DevOps){#enterprise-devops}
 
 Les opérations de développement couvrent les processus, les méthodes et les communications requis pour :
 
@@ -65,7 +64,7 @@ L’environnement intermédiaire doit être un miroir de l’environnement de pr
 * Il peut servir pour les tests finaux (de conception, des fonctionnalités et des interfaces) avant le déploiement sur les environnements de production.
 * L’environnement intermédiaire ne peut pas toujours être identique à l’environnement de production ; toutefois, il doit s’en rapprocher le plus possible afin de permettre les tests de performance et de charge.
 
-### Production : création et publication   {#production-author-and-publish}
+### Production : création et publication  {#production-author-and-publish}
 
 L’environnement de production est constitué des environnements requis pour [créer et publier](/help/sites-cloud/authoring/getting-started/concepts.md) votre mise en œuvre.
 
@@ -89,7 +88,7 @@ Le contenu qui a été activé est regroupé en module et placé dans la file d�
 
 De façon à répliquer à l’inverse les données dans un environnement de publication vers l’environnement de création, un écouteur de réplication dans l’environnement de création interroge l’environnement de publication et récupère le contenu dans la boîte d’envoi de la réplication inverse de l’environnement de publication.
 
-#### Publication   {#publish}
+#### Publication  {#publish}
 
 L’environnement de publication est généralement situé dans la zone démilitarisée (DMZ). Il s’agit de l’environnement dans lequel les visiteurs accèdent à votre contenu (par exemple, par le biais d’un site web ou sous forme d’application mobile) et interagissent avec lui, qu’il soit public ou se trouve sur votre réseau intranet. Un environnement de publication :
 
