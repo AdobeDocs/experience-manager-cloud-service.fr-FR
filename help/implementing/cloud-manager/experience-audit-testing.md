@@ -2,7 +2,6 @@
 title: Tests de contrôle de l’expérience – Cloud Services
 description: Tests de contrôle de l’expérience – Cloud Services
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-translation-type: tm+mt
 source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
 source-wordcount: '577'
