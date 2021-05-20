@@ -1,14 +1,13 @@
 ---
 title: Mappage du modèle dynamique avec les composants pour les SPA
 description: Cet article décrit le fonctionnement du mappage du modèle dynamique avec les composants dans le SDK JavaScript SPA pour AEM.
-translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+exl-id: 3a7b3f26-4a09-40c1-af03-bb8408a68e57
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 100%
 
 ---
-
 
 # Mappage du modèle dynamique avec les composants pour les SPA {#dynamic-model-to-component-mapping-for-spas}
 
