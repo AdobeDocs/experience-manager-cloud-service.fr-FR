@@ -1,14 +1,13 @@
 ---
 title: Présentation de la sécurité dans AEM as a Cloud Service
 description: Présentation de la sécurité dans AEM as a Cloud Service
-translation-type: tm+mt
-source-git-commit: 75d9e5817448489790cc0e4004db59e0f330af71
+exl-id: 19b123de-5db5-4fa8-81ec-e5438fed3f7f
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 100%
 
 ---
-
 
 # Présentation de la sécurité dans AEM as a Cloud Service {#cloud-service-security-overview}
 
