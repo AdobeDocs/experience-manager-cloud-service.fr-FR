@@ -51,7 +51,7 @@ Avant d’entamer la lecture de ce guide de démarrage rapide, nous vous proposo
 >Il existe plusieurs raccourcis clavier qui peuvent faciliter l’expérience de création.
 >
 >* [Raccourcis clavier lors de la modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-* [Raccourcis clavier pour les consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+>* [Raccourcis clavier pour les consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
 ### Recherche de votre page {#finding-your-page}
@@ -159,8 +159,10 @@ Pour modifier votre page :
    * [Copiez (et collez)](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) un composant :
 
       * Ouvrez la barre d’outils du composant en appuyant ou en cliquant. Cliquez sur les icônes **Copier** puis **Coller** suivant vos besoins.
+
    >[!NOTE]
-   Vous pouvez **coller** les composants sur la même page ou sur une autre. Si vous collez un composant sur une autre page qui était déjà ouverte avant l’opération de couper/copier, il vous faut actualiser la page en question.
+   >
+   >Vous pouvez **coller** les composants sur la même page ou sur une autre. Si vous collez un composant sur une autre page qui était déjà ouverte avant l’opération de couper/copier, il vous faut actualiser la page en question.
 
    * [Supprimer](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) un composant :
 
@@ -176,7 +178,8 @@ Pour modifier votre page :
    * Revenez au mode d’édition (ou sélectionnez un autre mode) à l’aide du sélecteur déroulant **Modifier**.
 
    >[!NOTE]
-   Pour naviguer en suivant les liens figurant dans le contenu, vous devez utiliser le [mode Aperçu](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode).
+   >
+   >Pour naviguer en suivant les liens figurant dans le contenu, vous devez utiliser le [mode Aperçu](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode).
 
 ### Modification des propriétés de page    {#editing-the-page-properties}
 
@@ -251,8 +254,10 @@ Ces actions peuvent être déclenchées en procédant comme suit :
    * Supprimer :
 
       * Vous serez alors invité à confirmer l’opération.
+
    >[!NOTE]
-   La suppression n’est pas proposée comme action rapide.
+   >
+   >La suppression n’est pas proposée comme action rapide.
 
 ### Verrouillage d’une page (puis déverrouillage) {#locking-your-page-then-unlocking}
 
