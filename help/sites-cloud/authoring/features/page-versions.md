@@ -1,14 +1,13 @@
 ---
 title: Utilisation des versions de page
 description: Création, comparaison et restauration des versions d’une page
-translation-type: tm+mt
-source-git-commit: 83c6301cd804ea1bb41204cf68d9a8de0b373678
+exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 100%
 
 ---
-
 
 # Utilisation des versions de page {#working-with-page-versions}
 
@@ -116,6 +115,7 @@ Cette méthode permet de rétablir des versions de pages spécifiées dans le do
    >Si :
    >* vous avez sélectionné une seule page, qui n’a jamais eu de page enfant,
    >* ou aucune des pages du dossier ne comporte de version,
+
    >
    >l’affichage sera vide, car aucune version n’est applicable.
 
@@ -189,7 +189,7 @@ Pour comparer la version actuelle de la page avec une version précédente :
 
 1. Sélectionnez **Comparer à actuel**. L’[outil de comparaison des pages](/help/sites-cloud/authoring/features/page-diff.md) s’ouvre et affiche les différences.
 
-## Distorsion du temps Timewarp  {#timewarp}
+## Distorsion du temps Timewarp {#timewarp}
 
 La fonction de distorsion du temps Timewarp permet de simuler l’état *publié* d’une page à des moments spécifiques dans le passé.
 
