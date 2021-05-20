@@ -1,14 +1,13 @@
 ---
 title: Fragments d’expérience
 description: Utilisez des fragments d’expérience Adobe Experience Manager as a Cloud Service pour rendre vos expériences réutilisables et flexibles.
-translation-type: tm+mt
-source-git-commit: b7a2e86de27dbfcdecaf3a2bc1984678b7b69375
+exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 100%
 
 ---
-
 
 # Fragments d’expérience {#experience-fragments}
 
@@ -224,7 +223,7 @@ Vous pouvez créer des variations du fragment d’expérience, selon vos besoins
 
 1. Définissez les propriétés requises :
 
-   * **Template**
+   * **Modèle**
    * **Titre**
    * **Nom** : si rien n’est indiqué dans ce champ, le nom est déduit du titre
    * **Description**
