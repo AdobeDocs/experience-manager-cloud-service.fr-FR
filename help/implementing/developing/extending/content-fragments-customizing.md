@@ -2,7 +2,6 @@
 title: Personnalisation et extensions de fragments de contenu
 description: Un fragment de contenu étend une ressource standard.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-translation-type: tm+mt
 source-git-commit: 24da05afce75a16ed2223130ac1825b10ee964e1
 workflow-type: tm+mt
 source-wordcount: '1818'
@@ -295,7 +294,7 @@ Une session de modification est lancée lorsque l’utilisateur ouvre un fragmen
 Techniquement, toutes les modifications sont effectuées sur du contenu *dynamique*, comme pour toute autre modification dans AEM. Lorsque la session de modification est lancée, une version de l’état actuel non modifié est créée. Si un utilisateur annule une modification, cette version est restaurée. Si l’utilisateur clique sur **Enregistrer**, rien de spécifique n’est fait, car toutes les modifications ont été exécutées sur le contenu *en dynamique*. Toutes les modifications sont donc déjà conservées. En outre, si l’utilisateur clique sur **Enregistrer**, un traitement en arrière-plan (comme la création d’informations de recherche de texte intégral et/ou la gestion de ressources variées) se déclenche.
 
 Il existe des mesures de sécurité pour les cas limites ; par exemple, si l’utilisateur tente de quitter l’éditeur sans enregistrer ni annuler la session de modification. En outre, un enregistrement automatique périodique est disponible pour empêcher la perte de données.
-Notez que deux utilisateurs peuvent modifier le même fragment de contenu simultanément et peuvent donc remplacer les modifications de l’autre. Pour éviter cela, le fragment de contenu doit être verrouillé en appliquant l’action *Passage en caisse* de l’administration DAM sur le fragment.
+Notez que deux utilisateurs peuvent modifier simultanément le même fragment de contenu et, par conséquent, remplacer les modifications de l’autre. Pour éviter cela, le fragment de contenu doit être verrouillé en appliquant l’action *Checkout* de l’administration DAM sur le fragment.
 
 ## Exemples {#examples}
 
