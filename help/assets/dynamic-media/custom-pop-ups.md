@@ -1,10 +1,9 @@
 ---
-title: Utilisation de vues rapides pour créer des fenêtres contextuelles personnalisées
-description: '"Découvrez comment la vue rapide par défaut est utilisée dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec les informations sur les produits pour générer un achat. Vous pouvez déclencher l’affichage d’un contenu personnalisé dans la fenêtre contextuelle de Windows®."'
+title: Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées
+description: '"Découvrez comment l’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec les informations sur les produits pour générer un achat. Vous pouvez déclencher un contenu personnalisé à afficher dans la fenêtre contextuelle Windows®."'
 feature: Images interactives, Vidéos interactives, Bannières de carrousel
 role: Administrator,Business Practitioner
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-translation-type: tm+mt
 source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
 workflow-type: tm+mt
 source-wordcount: '1034'
@@ -12,29 +11,29 @@ ht-degree: 43%
 
 ---
 
-# Utilisation de vues rapides pour créer une fenêtre contextuelle personnalisée sous Windows® {#using-quickviews-to-create-custom-pop-ups}
+# Utilisation d’aperçus rapides pour créer une fenêtre contextuelle personnalisée® {#using-quickviews-to-create-custom-pop-ups}
 
-La vue rapide par défaut est utilisée dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec les informations sur le produit pour générer un achat. Cependant, vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles. En fonction de la visionneuse que vous utilisez, les clients peuvent appuyer sur une zone réactive, une image miniature ou une zone cliquable pour afficher des informations ou du contenu associé.
+L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec les informations sur les produits pour générer un achat. Cependant, vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles. Selon la visionneuse que vous utilisez, les clients peuvent appuyer sur une zone réactive, une miniature ou une zone cliquable pour afficher des informations ou du contenu connexe.
 
-Les vues rapides sont prises en charge par les lecteurs suivants dans Dynamic Media :
+Les aperçus rapides sont pris en charge par les visionneuses suivantes dans Dynamic Media :
 
 * Images interactives (zones réactives cliquables)
 * Vidéo interactive (miniatures cliquables pendant la lecture vidéo)
 * Bannières carrousel (zones réactives cliquables ou zones cliquables)
 
-Bien que les fonctionnalités de chaque lecteur diffèrent, le processus de création d’une vue rapide est le même pour les trois lecteurs pris en charge.
+Bien que les fonctionnalités de chaque visionneuse diffèrent, le processus de création d’un aperçu rapide est le même dans les trois visionneuses prises en charge.
 
-**Pour utiliser des vues rapides pour créer des fenêtres contextuelles personnalisées sous Windows® :**
+**Pour utiliser des aperçus rapides afin de créer une fenêtre contextuelle personnalisée® :**
 
-1. Créez une vue rapide pour un fichier téléchargé.
+1. Création d’un aperçu rapide pour une ressource chargée.
 
-   En règle générale, vous créez une vue rapide lorsque vous modifiez un fichier en vue de l’utiliser avec la visionneuse que vous utilisez.
+   En règle générale, vous créez un aperçu rapide au moment où vous modifiez une ressource pour l’utiliser avec la visionneuse que vous utilisez.
 
    <table>
     <tbody>
     <tr>
     <td><strong>Visionneuse utilisée</strong></td>
-    <td><strong>Pour créer la vue rapide, procédez comme suit :</strong></td>
+    <td><strong>Pour créer l’aperçu rapide, procédez comme suit :</strong></td>
     </tr>
     <tr>
     <td>Images interactives</td>
@@ -57,7 +56,7 @@ Bien que les fonctionnalités de chaque lecteur diffèrent, le processus de cré
     <tbody>
     <tr>
     <td><strong>Visionneuse utilisée</strong><br /> </td>
-    <td><strong>Pour intégrer la visionneuse à votre site Web, procédez comme suit :</strong></td>
+    <td><strong>Pour intégrer la visionneuse à votre site web, procédez comme suit :</strong></td>
     </tr>
     <tr>
     <td>Image interactive</td>
@@ -74,9 +73,9 @@ Bien que les fonctionnalités de chaque lecteur diffèrent, le processus de cré
     </tbody>
    </table>
 
-1. La visionneuse que vous utilisez doit savoir comment utiliser la vue rapide.
+1. La visionneuse que vous utilisez doit savoir comment utiliser l’aperçu rapide.
 
-   Le lecteur utilise un gestionnaire appelé `QuickViewActive`.
+   La visionneuse utilise un gestionnaire appelé `QuickViewActive`.
 
    **Exemple** Supposons que vous utilisiez le code d’intégration suivant dans votre page web pour une image interactive :
 
@@ -86,7 +85,7 @@ Bien que les fonctionnalités de chaque lecteur diffèrent, le processus de cré
 
    `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
 
-   **A l’aide de l’exemple de code incorporé ci-dessus, vous disposez du code suivant :**
+   **En utilisant l’exemple de code d’intégration ci-dessus, vous obtenez le code suivant :**
 
    ```xml
    s7interactiveimageviewer.setHandlers({
@@ -101,15 +100,15 @@ Bien que les fonctionnalités de chaque lecteur diffèrent, le processus de cré
 
    Pour en savoir plus sur la méthode `setHandlers()`, rendez-vous sur la page suivante :
 
-   * Visionneuse d’images interactive - [resthandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=fr)
-   * Visionneuse de vidéos interactives - [resthandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=fr)
+   * Visionneuse d’images interactive - [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=fr)
+   * Visionneuse vidéo interactive - [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=fr)
 
 1. Configurez maintenant le gestionnaire `quickViewActivate`.
 
-   Le gestionnaire `quickViewActivate` contrôle les vues rapides dans le lecteur. Le gestionnaire contient la liste de variable et les appels de fonction à utiliser avec la vue rapide. Le code incorporé fournit le mappage pour le jeu de variables SKU dans la vue rapide. Il effectue également un exemple d&#39;appel de fonction `loadQuickView`.
+   Le gestionnaire `quickViewActivate` contrôle les aperçus rapides dans la visionneuse. Le gestionnaire contient la liste de variables et les appels de fonctions à utiliser avec l’aperçu rapide. Le code incorporé fournit un mappage pour la variable SKU définie dans l’aperçu rapide. Il effectue également un exemple d’appel de fonction `loadQuickView`.
 
    **Variables**
-mappingMap à utiliser dans votre page Web pour la valeur SKU et les variables génériques contenues dans la vue rapide :
+mapping de variableMap à utiliser dans votre page web pour la valeur de SKU et les variables génériques contenues dans l’aperçu rapide :
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -117,15 +116,15 @@ mappingMap à utiliser dans votre page Web pour la valeur SKU et les variables g
 
    `var sku=inData.sku`
 
-   Faites également correspondre d’autres variables de la vue rapide, comme dans l’exemple suivant :
+   Mappez également d’autres variables à partir de l’aperçu rapide, comme dans l’exemple suivant :
 
    ```
    var <i>variable2</i>= inData.<i>quickviewVariable2</i>
     var <i>variable3</i>= inData.<i>quickviewVariable3</i>
    ```
 
-   **Fonction**
-callLe gestionnaire nécessite également un appel de fonction pour que la vue rapide fonctionne. La fonction est supposée être accessible par votre page hôte. Le code d’intégration fournit un exemple d’appel de fonction :
+   **Appel de fonction**
+: le gestionnaire nécessite également un appel de fonction pour que l’aperçu rapide fonctionne. La fonction est supposée être accessible par votre page hôte. Le code d’intégration fournit un exemple d’appel de fonction :
 
    `loadQuickView(sku)`
 
@@ -140,12 +139,12 @@ callLe gestionnaire nécessite également un appel de fonction pour que la vue r
 1. Procédez comme suit :
 
    * Décommentez la section setHandlers du code d’intégration.
-   * Faites correspondre les variables supplémentaires contenues dans la vue rapide.
+   * Mappez toutes les variables supplémentaires contenues dans l’aperçu rapide.
 
-      * Mettez à jour l&#39;appel `loadQuickView(sku,*var1*,*var2*)` si vous ajoutez d&#39;autres variables.
+      * Mettez à jour l’appel `loadQuickView(sku,*var1*,*var2*)` si vous ajoutez d’autres variables.
    * Créez une fonction `loadQuickView` () simple sur la page, à l’extérieur de la visionneuse.
 
-      Par exemple, les éléments suivants écrivent la valeur du SKU dans la console du navigateur :
+      Par exemple, le code suivant écrit la valeur de SKU dans la console du navigateur :
 
    ```xml
    function loadQuickView(sku){
@@ -155,11 +154,11 @@ callLe gestionnaire nécessite également un appel de fonction pour que la vue r
 
    * Chargez une page HTML de test sur un serveur web et ouvrez-la.
 
-      Les variables de la vue rapide sont mises en correspondance. L&#39;appel de fonction est en place. Et la console du navigateur écrit la valeur de la variable dans la console du navigateur. Il effectue cette opération à l’aide de la fonction d’exemple fournie.
+      Les variables de l’aperçu rapide sont mappées. L’appel de fonction est en place. Et la console du navigateur écrit la valeur de la variable dans la console du navigateur. Il effectue cette opération à l’aide de l’exemple de fonction fourni.
 
 
 
-1. Vous pouvez désormais utiliser une fonction pour appeler une fenêtre contextuelle simple dans la vue rapide. L’exemple suivant utilise une balise `DIV` pour une fenêtre contextuelle.
+1. Vous pouvez désormais utiliser une fonction pour appeler une fenêtre contextuelle simple dans l’aperçu rapide. L’exemple suivant utilise une balise `DIV` pour une fenêtre contextuelle.
 1. Mettez en forme la balise `DIV` de la fenêtre contextuelle comme suit. Ajoutez un style supplémentaire selon vos besoins.
 
    ```xml
@@ -174,7 +173,7 @@ callLe gestionnaire nécessite également un appel de fonction pour que la vue r
 
 1. Placez la balise `DIV` de la fenêtre contextuelle dans le corps de la page HTML.
 
-   L’un des éléments est défini avec un identifiant mis à jour avec la valeur SKU lorsque l’utilisateur appelle une vue rapide. L’exemple comprend également un bouton unique pour masquer à nouveau la fenêtre contextuelle une fois qu’elle devient visible.
+   L’un des éléments est défini avec un ID mis à jour avec la valeur de SKU lorsque l’utilisateur appelle un aperçu rapide. L’exemple comprend également un bouton unique pour masquer à nouveau la fenêtre contextuelle une fois qu’elle devient visible.
 
    ```xml
    <div id="quickview_div" >
@@ -185,7 +184,7 @@ callLe gestionnaire nécessite également un appel de fonction pour que la vue r
    </div>
    ```
 
-1. Pour mettre à jour la valeur SKU dans la fenêtre contextuelle, ajoutez une fonction. Rendez la fenêtre contextuelle visible en remplaçant la fonction simple créée à l’étape 5 par ce qui suit :
+1. Pour mettre à jour la valeur de SKU dans la fenêtre contextuelle, ajoutez une fonction. Rendez la fenêtre contextuelle visible en remplaçant la fonction simple créée à l’étape 5 par ce qui suit :
 
    ```xml
    <script type="text/javascript">
@@ -196,12 +195,12 @@ callLe gestionnaire nécessite également un appel de fonction pour que la vue r
    </script>
    ```
 
-1. Téléchargez une page HTML de test sur votre serveur web et ouvrez-la. Le lecteur affiche la fenêtre contextuelle `DIV` lorsqu’un utilisateur appelle une vue rapide.
+1. Téléchargez une page HTML de test sur votre serveur web et ouvrez-la. La visionneuse affiche la fenêtre contextuelle `DIV` lorsqu’un utilisateur appelle un aperçu rapide.
 1. **Affichage de la fenêtre contextuelle personnalisée en mode plein écran**
 
    Certaines visionneuses, comme la visionneuse de vidéos interactives, prennent en charge l’affichage en mode plein écran. Toutefois, l’utilisation de la fenêtre contextuelle comme décrit dans les étapes précédentes provoque l’affichage de celle-ci derrière la visionneuse en mode plein écran.
 
-   Pour afficher la fenêtre contextuelle en mode standard et plein écran, joignez-la au conteneur de la visionneuse. Dans ce cas, utilisez une deuxième méthode de gestionnaire, `initComplete`.
+   Pour que la fenêtre contextuelle s’affiche en mode standard et plein écran, joignez la fenêtre contextuelle au conteneur de la visionneuse. Dans ce cas, utilisez une deuxième méthode de gestionnaire, `initComplete`.
 
    Le gestionnaire `initComplete` est appelé une fois la visionneuse initialisée.
 
@@ -233,7 +232,7 @@ callLe gestionnaire nécessite également un appel de fonction pour que la vue r
    * Identification du conteneur de la visionneuse.
    * Association de la fenêtre contextuelle au conteneur de la visionneuse.
 
-1. L’intégralité du code setHandlers est similaire à ce qui suit (la visionneuse de vidéos interactives a été utilisée) :
+1. Votre code setHandlers entier est similaire à ce qui suit (la visionneuse de vidéo interactive a été utilisée) :
 
    ```xml
    s7interactivevideoviewer.setHandlers({
@@ -260,4 +259,4 @@ callLe gestionnaire nécessite également un appel de fonction pour que la vue r
 
    `s7interactiveimageviewer.init()`
 
-   Après avoir incorporé la visionneuse dans votre page hôte, assurez-vous que l’instance de visionneuse est créée. Veillez également à ce que les gestionnaires soient chargés avant l’appel de la visionneuse à l’aide de `init()`.
+   Après avoir intégré la visionneuse dans votre page hôte, assurez-vous que l’instance de visionneuse est créée. Veillez également à ce que les gestionnaires soient chargés avant l’appel de la visionneuse à l’aide de `init()`.
