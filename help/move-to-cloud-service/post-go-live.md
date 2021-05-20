@@ -1,14 +1,13 @@
 ---
 title: Phase de post-activation
 description: Phase de post-activation
-translation-type: tm+mt
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '233'
+ht-degree: 100%
 
 ---
-
 
 # Post-activation {#post-go-live}
 
