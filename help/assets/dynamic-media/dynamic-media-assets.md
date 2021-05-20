@@ -1,7 +1,6 @@
 ---
 title: Utilisation de Dynamic Media
 description: Dynamic Media fournit des ressources visuelles de marchandisage et de marketing à la demande, automatiquement dimensionnées pour une utilisation sur le web, les appareils mobiles et les réseaux sociaux. À partir d’un ensemble de ressources de sources originales, Dynamic Media génère et diffuse en temps réel plusieurs variantes d’un même contenu enrichi par le biais de son réseau mondial et évolutif, aux performances optimisées.
-translation-type: tm+mt
 source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
 source-wordcount: '170'
@@ -14,7 +13,7 @@ ht-degree: 67%
 
 [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) fournit des ressources visuelles de marchandisage et de marketing à la demande, automatiquement dimensionnées pour une utilisation sur le web, les appareils mobiles et les réseaux sociaux. À partir d’un ensemble de ressources de sources originales, Dynamic Media génère et diffuse en temps réel plusieurs variantes d’un même contenu enrichi par le biais de son réseau mondial et évolutif, aux performances optimisées.
 
-Dynamic Media propose des expériences d’affichage interactives, notamment un zoom, une rotation à 360 degrés et une vidéo. Dynamic Media intègre de manière unique les workflows de la solution Adobe Experience Manager de gestion d’actifs numériques (Assets) afin de simplifier et de rationaliser le processus de Gestion de campagne numérique.
+Dynamic Media offre des expériences d’affichage interactif, notamment le zoom, la rotation à 360 degrés et la vidéo. Dynamic Media intègre de manière unique les workflows de la solution Adobe Experience Manager Digital Asset Management (Assets) afin de simplifier et rationaliser le processus de gestion des campagnes numériques.
 
 L’utilisation de Dynamic Media n’est pas disponible dans l’interface utilisateur classique. Consultez la section [Utilisation de Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) qui traite de l’interface utilisateur tactile.
 
