@@ -1,10 +1,9 @@
 ---
 title: Configuration de Dynamic Media
-description: Pour configurer Dynamic Media, vous devez configurer Dynamic Media et gérer les paramètres prédéfinis d’image et de visionneuse.
+description: Pour configurer Dynamic Media, vous devez configurer Dynamic Media et gérer les paramètres d’image et de visionneuse prédéfinis.
 contentOwner: Rick Brough
 role: Administrator,Business Practitioner
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-translation-type: tm+mt
 source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
 source-wordcount: '181'
@@ -30,8 +29,8 @@ Si vous administrez Dynamic Media, les rubriques suivantes peuvent vous intére
 
 * [Configuration de Dynamic Media](config-dm.md)
 * [Gestion des paramètres d’image prédéfinis](managing-image-presets.md)
-* [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md)
-* [Résolution des problèmes liés à Dynamic Media](troubleshoot-dm.md)
+* [Gestion des paramètres prédéfinis de visionneuse ](managing-viewer-presets.md)
+* [Résolution des problèmes liés à Dynamic Media](troubleshoot-dm.md)
 
 Voir aussi les rubriques suivantes :
 
@@ -42,5 +41,5 @@ Voir aussi les rubriques suivantes :
 >
 >**Si vous effectuez une mise à niveau :**
 >
->* Une fois Adobe Experience Manager en cours d’exécution, Dynamic Media est automatiquement activé pour toutes les ressources que vous téléchargez (sauf si l’administrateur système l’a explicitement désactivée). Si vous utilisez une instance mise à niveau de Experience Manager et que vous découvrez Dynamic Media, vous devez probablement retraiter vos ressources pour les rendre activées pour Dynamic Media. Voir [Retraitement des ressources dans un dossier](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>* Une fois qu’Adobe Experience Manager est en cours d’exécution, toute ressource que vous chargez est automatiquement activée par Dynamic Media (sauf si l’administrateur système l’a explicitement désactivée). Si vous utilisez une instance mise à niveau de Experience Manager et que vous découvrez Dynamic Media, vous devez probablement retraiter vos ressources pour les rendre compatibles avec Dynamic Media. Voir [Retraitement des ressources dans un dossier](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
