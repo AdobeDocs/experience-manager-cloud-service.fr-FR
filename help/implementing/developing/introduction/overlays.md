@@ -1,14 +1,13 @@
 ---
 title: Recouvrements pour Adobe Experience Manager as a Cloud Service
 description: AEM as a Cloud Service applique le principe des recouvrements pour vous permettre d’étendre et de personnaliser les consoles et d’autres fonctionnalités.
-translation-type: tm+mt
-source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
+exl-id: 24bdb1a9-6d77-43c7-a75e-28e6e0fd7608
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 100%
 
 ---
-
 
 # Recouvrements dans AEM as a Cloud Service {#overlays-in-aem}
 
