@@ -1,14 +1,13 @@
 ---
 title: Guide de démarrage rapide pour la création de pages
 description: Guide de haut niveau conçu pour vous aider à commencer à créer rapidement du contenu de page
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1585'
 ht-degree: 100%
 
 ---
-
 
 # Guide de démarrage rapide pour la création de pages {#quick-guide-to-authoring-pages}
 
@@ -52,7 +51,7 @@ Avant d’entamer la lecture de ce guide de démarrage rapide, nous vous proposo
 >Il existe plusieurs raccourcis clavier qui peuvent faciliter l’expérience de création.
 >
 >* [Raccourcis clavier lors de la modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
->* [Raccourcis clavier pour les consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+* [Raccourcis clavier pour les consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
 ### Recherche de votre page {#finding-your-page}
@@ -161,8 +160,7 @@ Pour modifier votre page :
 
       * Ouvrez la barre d’outils du composant en appuyant ou en cliquant. Cliquez sur les icônes **Copier** puis **Coller** suivant vos besoins.
    >[!NOTE]
-   >
-   >Vous pouvez **coller** les composants sur la même page ou sur une autre. Si vous collez un composant sur une autre page qui était déjà ouverte avant l’opération de couper/copier, il vous faut actualiser la page en question.
+   Vous pouvez **coller** les composants sur la même page ou sur une autre. Si vous collez un composant sur une autre page qui était déjà ouverte avant l’opération de couper/copier, il vous faut actualiser la page en question.
 
    * [Supprimer](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) un composant :
 
@@ -178,8 +176,7 @@ Pour modifier votre page :
    * Revenez au mode d’édition (ou sélectionnez un autre mode) à l’aide du sélecteur déroulant **Modifier**.
 
    >[!NOTE]
-   >
-   >Pour naviguer en suivant les liens figurant dans le contenu, vous devez utiliser le [mode Aperçu](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode).
+   Pour naviguer en suivant les liens figurant dans le contenu, vous devez utiliser le [mode Aperçu](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode).
 
 ### Modification des propriétés de page    {#editing-the-page-properties}
 
@@ -255,8 +252,7 @@ Ces actions peuvent être déclenchées en procédant comme suit :
 
       * Vous serez alors invité à confirmer l’opération.
    >[!NOTE]
-   >
-   >La suppression n’est pas proposée comme action rapide.
+   La suppression n’est pas proposée comme action rapide.
 
 ### Verrouillage d’une page (puis déverrouillage) {#locking-your-page-then-unlocking}
 
