@@ -2,10 +2,10 @@
 title: Ajout d’un nom de domaine personnalisé
 description: Ajout d’un nom de domaine personnalisé
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 100%
+source-wordcount: '559'
+ht-degree: 98%
 
 ---
 
@@ -20,6 +20,8 @@ Un utilisateur doit être un propriétaire d’entreprise ou un responsable du d
 * Les noms de domaine ne peuvent pas être ajoutés aux environnements tant qu’un pipeline en cours d’exécution est attaché à ces environnements.
 
 * Il n’est possible d’ajouter qu’un seul nom de domaine à la fois. Toutefois, les domaines ne peuvent pas contenir de caractères génériques. Les domaines personnalisés côté auteur ne sont pas pris en charge.
+
+* AEM en tant que Cloud Service ne prend pas en charge les domaines génériques.
 
 * Chaque environnement Cloud Manager peut héberger jusqu’à 100 domaines personnalisés.
 
