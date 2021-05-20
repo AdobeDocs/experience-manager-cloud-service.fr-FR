@@ -1,18 +1,17 @@
 ---
 title: Guide de démarrage rapide sur la création de modèles de fragments de contenu découplés
-description: Définissez la structure du contenu que vous allez créer et diffuser à l’aide de fonctionnalités AEM sans en-tête à l’aide de modèles de fragments de contenu.
-translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+description: Définissez la structure du contenu que vous allez créer et diffuser à l’aide AEM fonctionnalités sans interface utilisateur graphique à l’aide des modèles de fragment de contenu.
+exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 91%
 
 ---
 
-
 # Guide de démarrage rapide sur la création de modèles de fragments de contenu découplés {#creating-content-fragment-models}
 
-Définissez la structure du contenu que vous allez créer et diffuser à l’aide de fonctionnalités AEM sans en-tête à l’aide de modèles de fragments de contenu.
+Définissez la structure du contenu que vous allez créer et diffuser à l’aide AEM fonctionnalités sans interface utilisateur graphique à l’aide des modèles de fragment de contenu.
 
 ## Que sont les modèles de fragments de contenu ? {#what-are-content-fragment-models}
 
