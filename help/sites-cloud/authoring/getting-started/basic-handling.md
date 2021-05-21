@@ -202,7 +202,7 @@ Plusieurs ressources d’aide sont disponibles :
    >Pour une présentation de tous les raccourcis clavier, reportez-vous à la documentation suivante :
    >
    >* [Raccourcis clavier lors de la modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-   >* [Raccourcis clavier pour les consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+   * [Raccourcis clavier pour les consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
 ## Barre d’outils d’actions {#actions-toolbar}
@@ -222,8 +222,7 @@ En raison des restrictions d’espace dans certaines fenêtres, la barre d’out
 ![Options supplémentaires](/help/sites-cloud/authoring/assets/additional-options.png)
 
 >[!NOTE]
->
->Les icônes individuelles disponibles sont documentées par rapport à la console, à la fonction ou au scénario approprié.
+Les icônes individuelles disponibles sont documentées par rapport à la console, à la fonction ou au scénario approprié.
 
 ## Actions rapides  {#quick-actions}
 
@@ -244,8 +243,7 @@ Vous pouvez afficher, parcourir et sélectionner (pour effectuer d’autres opé
 * [Mode Liste](#list-view)
 
 >[!NOTE]
->
->Par défaut, AEM Assets n’affiche pas les rendus d’origine des ressources dans l’interface utilisateur sous la forme de miniatures, et ce, quel que soit le mode. Si vous êtes administrateur, vous pouvez utiliser des incrustations pour configurer AEM Assets afin d’afficher les rendus d’origine sous la forme de miniatures.
+Par défaut, AEM Assets n’affiche pas les rendus d’origine des ressources dans l’interface utilisateur sous la forme de miniatures, et ce, quel que soit le mode. Si vous êtes administrateur, vous pouvez utiliser des incrustations pour configurer AEM Assets afin d’afficher les rendus d’origine sous la forme de miniatures.
 
 ### Sélection de ressources  {#selecting-resources}
 
@@ -375,8 +373,7 @@ La sélection d’une ressource dans la colonne de gauche affiche les ressources
 * Modifiez l’ordre des éléments à l’aide de la barre verticale en pointillés tout à droite de chaque élément de la liste.
 
    >[!NOTE]
-   >
-   >La modification de l’ordre fonctionne uniquement dans un dossier ordonné dont la valeur `jcr:primaryType` est `sling:OrderedFolder`.
+   La modification de l’ordre fonctionne uniquement dans un dossier ordonné dont la valeur `jcr:primaryType` est `sling:OrderedFolder`.
 
    ![Ordre des colonnes](/help/sites-cloud/authoring/assets/column-order.png)
 
@@ -395,8 +392,7 @@ Par exemple, dans la console **Sites**, vous pouvez sélectionner le contenu uni
 Si Contenu uniquement est sélectionné, alors seule l’icône de rail s’affiche. Si n’importe quelle autre option est sélectionnée, le nom des options apparaît en regard de l’icône de rail.
 
 >[!NOTE]
->
->Des [raccourcis clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) sont disponibles pour basculer rapidement entre les options d’affichage du rail.
+Des [raccourcis clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) sont disponibles pour basculer rapidement entre les options d’affichage du rail.
 
 ### Arborescence de contenu {#content-tree}
 
@@ -407,9 +403,8 @@ En utilisant le panneau latéral d’arborescence de contenu en même temps qu�
 ![Arborescence de contenu](/help/sites-cloud/authoring/assets/content-tree.png)
 
 >[!NOTE]
->
->Une fois qu’une entrée est sélectionnée dans la vue hiérarchique, les touches fléchées peuvent être utilisées pour naviguer rapidement au sein de la hiérarchie.
->Voir les [raccourcis clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) pour plus d’informations.
+Une fois qu’une entrée est sélectionnée dans la vue hiérarchique, les touches fléchées peuvent être utilisées pour naviguer rapidement au sein de la hiérarchie.
+Voir les [raccourcis clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) pour plus d’informations.
 
 ### Chronologie {#timeline}
 
