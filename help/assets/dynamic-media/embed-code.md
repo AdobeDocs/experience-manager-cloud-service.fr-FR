@@ -7,7 +7,7 @@ exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
 source-wordcount: '377'
-ht-degree: 88%
+ht-degree: 90%
 
 ---
 
@@ -43,7 +43,7 @@ Consultez aussi [Diffusion d’images optimisées pour un site réactif](respons
 
    Voir [Publication de paramètres d’image prédéfinis](managing-image-presets.md#publishing-image-presets).
 
-1. Dans le rail de gauche, sélectionnez la liste déroulante et appuyez sur **[!UICONTROL Visionneuses]**.
+1. Dans le rail de gauche, sélectionnez la liste déroulante et appuyez ensuite sur **[!UICONTROL Visionneuses]**.
 1. Dans le rail de gauche, appuyez sur un nom de paramètre prédéfini de la visionneuse. Le paramètre de visionneuse prédéfini est appliqué à la ressource.
 1. Appuyez sur **[!UICONTROL Incorporer]**.
 1. Dans la boîte de dialogue **[!UICONTROL Code intégré]**, copiez l’ensemble du code dans le Presse-papiers, puis appuyez sur **[!UICONTROL Fermer]**.
