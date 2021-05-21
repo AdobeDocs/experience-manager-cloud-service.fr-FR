@@ -1,43 +1,43 @@
 ---
-title: Gestionnaire de sites multiples et traduction
-description: Découvrez comment réutiliser votre contenu dans votre projet et gérer des sites web multilingues dans AEM.
+title: Multi Site Manager et traduction
+description: Découvrez comment réutiliser votre contenu dans tout votre projet et comment gérer des sites web multilingues dans AEM.
 feature: Administration
 role: Administrator
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '373'
-ht-degree: 36%
+ht-degree: 100%
 
 ---
 
-# Gestionnaire de sites multiples et traduction {#msm-and-translation}
+# Multi Site Manager et traduction {#msm-and-translation}
 
-Adobe Experience Manager un gestionnaire multisite intégré et des outils de traduction simplifie la localisation de votre contenu.
+L’intégration de Multi Site Manager et d’outils de traduction à Adobe Experience Manager simplifie la localisation de votre contenu.
 
-* Multi Site Manager (MSM) et ses fonctionnalités Live Copy vous permettent d’utiliser le même contenu de site à plusieurs emplacements, tout en autorisant des variations :
-   * [Réutilisation de contenu : Multi Site Manager et Live Copy](msm/overview.md)
-* La traduction permet d’automatiser la traduction du contenu des pages afin de créer et gérer des sites web multilingues :
+* Multi Site Manager (MSM) et ses fonctionnalités Live Copy vous permettent d’utiliser le même contenu de site à plusieurs emplacements, tout en permettant des variations :
+   * [Réutilisation de contenu : Multi Site Manager et Live Copy](msm/overview.md)
+* La traduction vous permet d’automatiser la traduction du contenu des pages pour créer et tenir à jour des sites web multilingues :
    * [Traduction de contenu pour les sites multilingues](translation/overview.md)
 
-Ces deux fonctionnalités peuvent être combinées pour prendre en charge les sites web [multinationaux et multilingues](#multinational-and-multilingual-sites).
+Ces deux fonctions peuvent être combinées pour gérer les sites web qui sont à la fois [internationaux et multilingues](#multinational-and-multilingual-sites).
 
 ## Sites internationaux et multilingues {#multinational-and-multilingual-sites}
 
-Vous pouvez créer efficacement du contenu pour les sites internationaux et multilingues par l’utilisation conjointe de Multi Site Manager et du workflow de traduction.
+Vous pouvez créer efficacement du contenu pour les sites internationaux et multilingues par l’utilisation conjointe de Multi Site Manager et du workflow de traduction.
 
-En règle générale, vous créez un site maître dans une langue et pour un pays spécifique, puis vous utilisez ce contenu comme base pour les autres sites, en utilisant la traduction si nécessaire.
+Vous pouvez généralement créer un gabarit de site dans une langue, pour un pays spécifique, puis utiliser ce contenu comme base des autres sites, à l’aide de la traduction si nécessaire.
 
 1. [Traduisez](translation/overview.md) le site de gabarit dans différentes langues.
-1. Utilisez [Multi Site Manager](msm/overview.md) pour effectuer les tâches suivantes :
-   1. Réutilisez le contenu du site maître et ses traductions pour créer des sites pour d’autres pays et cultures.
-   1. Si nécessaire, désolidarisez des éléments des Live Copies pour ajouter des détails de localisation.
+1. Utilisez [Multi Site Manager](msm/overview.md) pour effectuer les tâches suivantes :
+   1. Réutilisez le contenu du site de gabarit et ses traductions afin de créer des sites pour d’autres pays et cultures.
+   1. Si nécessaire, désolidarisez les éléments des Live Copies pour ajouter les détails de localisation.
 
 >[!TIP]
 >
->Limitez l’utilisation de Multi Site Manager au contenu d’une seule langue.
+>Limitez l’utilisation de Multi Site Manager au contenu d’une seule langue.
 >
->Par exemple, utilisez le gabarit anglais pour créer la version anglaise des pages pour les États-Unis, le Canada, la Grande-Bretagne, etc. et utiliser le gabarit français pour créer la version française des pages pour la France, la Suisse, le Canada, etc.
+>Par exemple, utilisez le gabarit anglais pour créer la version anglaise des pages pour les États-Unis, le Canada, le Royaume-Uni, etc. et utilisez le gabarit français pour créer la version française des pages pour la France, la Suisse, le Canada, etc.
 
 Le diagramme suivant illustre la manière dont les principaux concepts sont en corrélation (mais n’affiche pas tous les niveaux/éléments impliqués) :
 
@@ -45,15 +45,15 @@ Le diagramme suivant illustre la manière dont les principaux concepts sont en c
 
 Dans ces scénarios et dans d’autres scénarios comparables, MSM ne gère pas les différentes versions de langues en tant que telles.
 
-* [](msm/overview.md) MSM gère le déploiement du contenu traduit d’un plan directeur (c’est-à-dire un gabarit global) vers les Live Copies (c’est-à-dire les sites locaux), dans les limites d’une langue.
+* [MSM](msm/overview.md) gère le déploiement du contenu traduit d’un plan directeur (par exemple, un gabarit mondial) vers des Live Copies (par exemple, les sites locaux), dans les limites d’une langue.
 * Les fonctionnalités d’intégration de [traduction](translation/overview.md) d’AEM, combinées aux services de gestion de traduction tiers, gèrent les langues et le contenu de traduction dans ces différentes langues.
 
 Pour les cas d’utilisation plus avancés, MSM peut également être utilisé dans les gabarits de langue.
 
 >[!TIP]
 >
->Dans tous les cas, il est recommandé de lire les meilleures pratiques suivantes :
+>Dans tous les cas, il est recommandé de lire les bonnes pratiques suivantes :
 >
->* [Bonnes pratiques pour MSM](msm/best-practices.md)
-* [Meilleures pratiques de traduction](translation/best-practices.md)
+>* [Bonnes pratiques liées à MSM](msm/best-practices.md)
+* [Bonnes pratiques de traduction](translation/best-practices.md)
 
