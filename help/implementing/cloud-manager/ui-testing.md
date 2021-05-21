@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
 source-wordcount: '1087'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -19,8 +19,8 @@ ht-degree: 96%
 Les tests de l’interface utilisateur sont des tests basés sur Selenium placés dans une image Docker afin de permettre un large choix de langues et de cadres (tels que Java et Maven, Node et WebDriver.io, ou tout autre cadre et technologie basé sur Selenium). L’image Docker peut être créée avec des outils standard, mais elle doit respecter certaines conventions lors de son exécution. Lors de l’exécution de l’image Docker, un serveur Selenium est automatiquement mis en service. Les conventions d’exécution décrites ci-dessous permettent à votre code de test d’accéder à la fois au serveur Selenium et aux instances AEM testées.
 
 >[!NOTE]
-> Les pipelines d’évaluation et de production créés avant le 10 février 2021 doivent être mis à jour afin d’utiliser les tests d’interface utilisateur comme décrit sur cette page.
-> Voir [Configuration de votre pipeline CI-CD](/help/implementing/cloud-manager/configure-pipeline.md) pour plus d’informations sur la configuration du pipeline.
+> Les pipelines d’évaluation et de production créés avant le 10 février 2021 doivent être mis à jour pour pouvoir utiliser les tests d’interface utilisateur décrits sur cette page.
+> Consultez [Configuration de votre pipeline CI-CD](/help/implementing/cloud-manager/configure-pipeline.md) pour plus d’informations sur la configuration du pipeline.
 
 ## Création de tests de l’interface utilisateur {#building-ui-tests}
 
@@ -139,9 +139,9 @@ Les variables d’environnement suivantes seront transmises à votre image Docke
 Avant le début des tests, l’image Docker doit garantir que le serveur Selenium est opérationnel. L’attente du service de Selenium est un processus en deux étapes :
 
 1. Lecture de l’URL du service Selenium à partir de la variable d’environnement `SELENIUM_BASE_URL`.
-2. Sondage à intervalle régulier vers le [point d’entrée d’état](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready) exposé par l’API Selenium.
+2. Sondage à intervalle régulier vers le [point d’entrée de statut](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready) exposé par l’API Selenium.
 
-Une fois que le point d’entrée d’état de Selenium donne une réponse positive, les tests peuvent débuter.
+Une fois que le point d’entrée de statut de Selenium donne une réponse positive, les tests peuvent débuter.
 
 ### Génération de rapports de test {#generate-test-reports}
 
