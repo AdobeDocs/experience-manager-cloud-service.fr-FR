@@ -7,7 +7,7 @@ exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
 source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 56%
+ht-degree: 85%
 
 ---
 
@@ -21,13 +21,13 @@ Vous pouvez en outre sélectionner un paramètre d’image prédéfini qui est r
 
 >[!NOTE]
 >
->L’imagerie dynamique fonctionne avec vos paramètres d’image prédéfinis existants. Il utilise des informations à la dernière milliseconde de la diffusion pour réduire davantage la taille du fichier image en fonction de la vitesse de connexion du navigateur ou du réseau. Voir [Imagerie numérique](imaging-faq.md) pour plus d’informations.
+>L’imagerie dynamique fonctionne avec vos paramètres d’image prédéfinis existants. Elle utilise les informations disponibles à la dernière milliseconde avant la diffusion pour réduire encore la taille du fichier image en fonction de la vitesse de connexion du navigateur ou du réseau. Voir [Imagerie numérique](imaging-faq.md) pour plus d’informations.
 
 Vous pouvez appliquer un paramètre d’image prédéfini à une image lorsque vous la prévisualisez.
 
 **Pour appliquer les paramètres d’image prédéfinis Dynamic Media:**
 
-1. Ouvrez la ressource et, dans le rail de gauche, appuyez sur la liste déroulante, puis sur **[!UICONTROL Rendus]**.
+1. Ouvrez la ressource et, dans le rail de gauche, sélectionnez dans la liste déroulante l’option **[!UICONTROL Rendus]**.
 
    >[!NOTE]
    >
