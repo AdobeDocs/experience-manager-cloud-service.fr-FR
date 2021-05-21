@@ -11,7 +11,7 @@ exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
 workflow-type: tm+mt
 source-wordcount: '1071'
-ht-degree: 37%
+ht-degree: 38%
 
 ---
 
@@ -26,7 +26,7 @@ L’intégration à AEM Commerce as a Cloud Service est un processus à deux ét
 1. Activation d’AEM Commerce as a Cloud Service et approvisionnement du module complémentaire CIF
 2. Connexion d’AEM Commerce en tant que Cloud Service à votre solution commerciale
 
-La première étape de l’intégration est effectuée par Adobe. Pour plus d’informations sur la tarification et l’approvisionnement, contactez votre représentant commercial.
+La première étape d’intégration est effectuée par Adobe. Pour plus d’informations sur la tarification et l’approvisionnement, contactez votre représentant commercial.
 
 Une fois que vous disposez du module complémentaire CIF, celui-ci est appliqué à tout programme Cloud Manager existant. Si vous n’avez pas de programme Cloud Manager, vous devrez en créer un. Pour plus d’informations, voir [Configuration de votre programme](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/getting-started/setting-up-program.html).
 
@@ -67,7 +67,7 @@ Une fois le point de terminaison (éventuellement un jeton d’authentification 
 
 Pour connecter AEM à une solution commerciale via l’interface de ligne de commande d’Adobe I/O, procédez comme suit :
 
-1. Procurez-vous la ligne de commande d’Adobe I/O avec le plug-in Cloud Manager.
+1. Procurez-vous l’Adobe I/O CLI avec le plug-in Cloud Manager.
 
    Consultez la [documentation d’Adobe Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) pour savoir comment télécharger, configurer et utiliser l’[interface de ligne de commande de l’Adobe I/O](https://github.com/adobe/aio-cli) avec le [module d’interface de ligne de commande de Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
