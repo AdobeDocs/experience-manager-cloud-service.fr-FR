@@ -5,7 +5,7 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2283'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -23,11 +23,11 @@ Lors de la mise à jour d’AEM as a Cloud Service, il y aura des instances où
 
 S’il est nécessaire d’identifier l’instance principale dans la grappe, l’API Apache Sling Discovery peut être utilisée pour le détecter.
 
-## État en mémoire {#state-in-memory}
+## Statut en mémoire {#state-in-memory}
 
-L’état ne doit pas être conservé dans la mémoire, mais conservé dans le référentiel, sans quoi il peut se perdre si une instance est arrêtée.
+Le statut ne doit pas être conservé dans la mémoire, mais conservé dans le référentiel, sans quoi il peut se perdre si une instance est arrêtée.
 
-## État sur le système de fichiers {#state-on-the-filesystem}
+## Statut sur le système de fichiers {#state-on-the-filesystem}
 
 Le système de fichiers de l’instance ne doit pas être utilisé dans AEM as a Cloud Service. Le disque est éphémère et sera effacé lorsque les instances sont recyclées. L’utilisation limitée du système de fichiers pour le stockage temporaire lié au traitement des demandes uniques est possible, mais ne doit pas être excessive dans le cas des fichiers volumineux. En effet, elle peut avoir un impact négatif sur le quota d’utilisation des ressources et rencontrer des limitations de disque.
 
@@ -143,9 +143,9 @@ Vous pouvez utiliser comme raccourci la commande d’interface de ligne de comma
 
 Pour plus d’informations, consultez [cette page](/help/release-notes/home.md).
 
-Les développeurs peuvent générer des informations d’état et résoudre diverses ressources.
+Les développeurs peuvent générer des informations de statut et résoudre diverses ressources.
 
-Comme illustré ci-dessous, les informations d’état disponibles incluent l’état des bundles, des composants, des configurations OSGi, des index Oak, des services OSGi et des tâches Sling.
+Comme illustré ci-dessous, les informations de statut disponibles incluent l’état des bundles, des composants, des configurations OSGi, des index Oak, des services OSGi et des tâches Sling.
 
 ![Console de développement 1](/help/implementing/developing/introduction/assets/devconsole1.png)
 
@@ -159,7 +159,7 @@ Comme illustré ci-dessous, les développeurs peuvent résoudre les dépendances
 
 ![Console de développement 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Pour les programmes de production, l’accès à Developer Console est défini par &quot;Cloud Manager - Rôle de développeur&quot; dans le Admin Console, tandis que pour les programmes Sandbox, Developer Console est disponible pour tout utilisateur disposant d’un profil de produit qui lui donne accès à AEM en tant que Cloud Service. Pour tous les programmes, « Cloud Manager – Rôle de développeur » est nécessaire pour les vidages d’état. Les utilisateurs doivent également être définis dans le profil de produit Utilisateurs d’AEM ou Administrateurs d’AEM sur les services de création et de publication afin d’afficher les données de vidage d’état des deux services. Pour plus d’informations sur la configuration des autorisations des utilisateurs, voir [Documentation de Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+Pour les programmes de Production, l’accès à Developer Console est défini par la mention « Cloud Manager – Rôle de développeur » dans l’Admin Console. Pour les programmes Sandbox, Developer Console est disponible pour tout utilisateur disposant d’un profil de produit lui permettant d’accéder à AEM as a Cloud Service. Pour tous les programmes, « Cloud Manager – Rôle de développeur » est nécessaire pour les vidages de statut. Les utilisateurs doivent également être définis dans le profil de produit Utilisateurs d’AEM ou Administrateurs d’AEM sur les services de création et de publication afin d’afficher les données de vidage d’état des deux services. Pour plus d’informations sur la configuration des autorisations des utilisateurs, voir [Documentation de Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### Service de test et de production AEM {#aem-staging-and-production-service}
 
