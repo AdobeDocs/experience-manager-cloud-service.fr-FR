@@ -8,7 +8,7 @@ exl-id: 2efc4a27-01d7-427f-9701-393497314402
 source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
 source-wordcount: '1478'
-ht-degree: 79%
+ht-degree: 85%
 
 ---
 
@@ -22,7 +22,7 @@ Adobe Experience Manager comprend plus de 100 commandes de diffusion d’images 
 
 * Les formats JPG et PNG sont les mieux adaptés pour obtenir des images de bonne qualité, d’une taille et d’un volume gérables.
 * Si aucune commande de format n’est fournie dans l’URL, Dynamic Media Image Delivery utilise par défaut le format JPG pour la distribution.
-* Le format JPG compresse selon un ratio 10:1 et produit habituellement des tailles de fichier image plus petites. Le format PNG se compresse à un ratio d’environ 2:1, sauf lorsque les images contiennent un arrière-plan blanc. Néanmoins, en règle générale, les fichiers PNG sont plus volumineux que les fichiers JPG.
+* Le format JPG compresse selon un ratio 10:1 et produit habituellement des tailles de fichier image plus petites. Le format PNG compresse les images selon un rapport d’environ 2:1, sauf si elles contiennent un arrière-plan blanc. Néanmoins, en règle générale, les fichiers PNG sont plus volumineux que les fichiers JPG.
 * Le format JPG utilise une compression avec perte, ce qui signifie que des éléments (pixels) sont supprimés au cours de la compression. Par contre, le format PNG utilise une compression sans perte.
 * Généralement, le format JPG compresse les images photographiques avec une plus grande fidélité que les images de synthèse avec des bords nets et un fort contraste.
 * Si les images contiennent de la transparence, utilisez le format PNG, car le format JPG ne prend pas en charge cette caractéristique.
@@ -44,9 +44,9 @@ L’accentuation des images est l’aspect le plus complexe du contrôle des ima
 
 * L’article technique des bonnes pratiques [Adobe de la qualité d’image Dynamic Media Classic et des bonnes pratiques d’accentuation](/help/assets/dynamic-media/assets/sharpening_images.pdf) s’applique également à Experience Manager.
 
-* Regardez [Utilisation de l’accentuation d’image avec Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
+* Regardez [Utilisation de l’accentuation d’image avec Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html?lang=fr#dynamic-media).
 
-Experience Manager vous permet d’accentuer les images lors de l’ingestion, de la diffusion ou des deux. Toutefois, il est généralement préférable d’accentuer les images à l’aide d’une seule méthode ou d’une autre, mais pas des deux. L’accentuation des images lors de la distribution, sur une URL, produit généralement les meilleurs résultats.
+Experience Manager vous permet d’accentuer les images lors de l’ingestion, de la diffusion ou des deux. En général, cependant, il est préférable d’accentuer les images en utilisant une seule méthode ou l’autre, mais pas les deux. L’accentuation des images lors de la distribution, sur une URL, produit généralement les meilleurs résultats.
 
 Il existe deux méthodes d’accentuation des images que vous pouvez utiliser :
 
@@ -118,8 +118,8 @@ Si l’image doit être davantage optimisée, accentuez-la progressivement (masq
 
 Si le résultat de l’accentuation n’est toujours pas satisfaisant, augmentez le rayon par incréments décimaux. Pour chaque incrément décimal, repartez de la valeur 1,75 et augmentez graduellement jusqu’à 4. Répétez ce processus jusqu’à obtention du résultat souhaité. Bien que les valeurs ci-dessus représentent une approche que les studios de création ont validée, gardez à l’esprit que vous pouvez commencer par d’autres valeurs et suivre d’autres stratégies. Le résultat, et sa réussite, sont subjectifs. C’est pourquoi l’expérimentation est si importante.
 
-Lors de votre test, les suggestions générales suivantes s’avèrent utiles pour optimiser votre workflow :
+Au fur et à mesure que vous testez, les suggestions générales suivantes sont utiles pour optimiser votre flux de travail :
 
 * Testez différents paramètres en temps réel, directement sur une URL.
-* Gardez à l’esprit que vous pouvez regrouper les commandes de diffusion d’images Dynamic Media dans un paramètre d’image prédéfini. Il s’agit en outre d’une bonne pratique. Un paramètre d’image prédéfini est, en fait, constitué de macros de commande d’URL avec des noms de paramètres prédéfinis personnalisés tels que `$thumb_low$` et `&product_high$`. Le nom du paramètre prédéfini personnalisé dans un chemin d’URL appelle ces paramètres prédéfinis. Cette fonctionnalité vous aide à gérer les commandes et les paramètres de qualité pour différents modèles d’utilisation des images sur vos sites web et raccourcit la longueur globale des URL.
-* Experience Manager propose également des méthodes plus avancées pour régler la qualité des images, telles que l’application de l’accentuation des images lors de l’ingestion. Pour optimiser les résultats de rendu, les [services de conseil de l’Adobe](https://business.adobe.com/customers/consulting-services/main.html) peuvent vous aider à personnaliser les informations et les bonnes pratiques.
+* Gardez à l’esprit que vous pouvez regrouper les commandes de diffusion d’images Dynamic Media dans un paramètre d’image prédéfini. Il s’agit en outre d’une bonne pratique. Un paramètre d’image prédéfini est, en fait, constitué de macros de commande d’URL avec des noms de paramètres prédéfinis personnalisés tels que `$thumb_low$` et `&product_high$`. Le nom du paramètre prédéfini personnalisé dans un chemin URL appelle ces paramètres prédéfinis. Cette fonctionnalité vous aide à gérer les commandes et les paramètres de qualité pour différents modèles d’utilisation des images sur vos sites web et raccourcit la longueur globale des URL.
+* Experience Manager propose également des méthodes plus élaborées permettant d’optimiser la qualité des images, par exemple en accentuant les images lors de l’ingestion. Pour optimiser les résultats de rendu, les [services de conseil de l’Adobe](https://business.adobe.com/customers/consulting-services/main.html) peuvent vous aider à personnaliser les informations et les bonnes pratiques.
