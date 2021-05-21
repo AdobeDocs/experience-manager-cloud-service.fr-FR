@@ -8,7 +8,7 @@ exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
 workflow-type: tm+mt
 source-wordcount: '2357'
-ht-degree: 82%
+ht-degree: 92%
 
 ---
 
@@ -19,7 +19,7 @@ Les entreprises qui traitent des ressources numériques utilisent de plus en plu
 
 Comparé aux vocabulaires des langages naturels, le balisage basé sur la taxonomie métier aide à aligner les ressources avec les activités d’une entreprise et à veiller à ce que les mieux adaptées apparaissent dans les recherches. Par exemple, un constructeur de voitures peut baliser les images de voitures avec les noms de modèles afin de n’afficher que les images appropriées lors de recherches servant à concevoir une campagne de promotion.
 
-En arrière-plan, la fonctionnalité utilise la structure artificiellement intelligente d’[Adobe Sensei](https://www.adobe.com/fr/sensei/experience-cloud-artificial-intelligence.html) pour entraîner son algorithme de reconnaissance d’image sur votre structure de balises et votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. [!DNL Experience Manager Assets] les déploiements sont intégrés avec  [!DNL Adobe Developer Console] par défaut.
+En arrière-plan, cette fonctionnalité utilise le cadre d’intelligence artificielle d’[Adobe Sensei](https://www.adobe.com/fr/sensei/experience-cloud-artificial-intelligence.html) pour entraîner son algorithme de reconnaissance d’images par rapport à votre structure de balises et de votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. [!DNL Experience Manager Assets] les déploiements sont intégrés avec  [!DNL Adobe Developer Console] par défaut.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -31,7 +31,7 @@ Vous pouvez baliser les types de ressources suivants :
 
 * **Images** : de nombreux formats d’images peuvent être balisés à l’aide du service de contenu dynamique Adobe Sensei. Vous [créez un modèle de formation](#train-model), puis les images téléchargées sont automatiquement balisées. Les balises intelligentes sont appliquées aux types de fichiers pris en charge qui génèrent des rendus aux formats JPG et PNG.
 * **Ressources textuelles** : [!DNL Experience Manager Assets] balise automatiquement les ressources textuelles compatibles lors du chargement.
-* **Ressources vidéo** : le balisage vidéo est activé par défaut dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. [Les vidéos sont automatiquement ](/help/assets/smart-tags-video-assets.md) balisées lorsque vous chargez de nouvelles vidéos ou retraitez des vidéos existantes.
+* **Ressources vidéo** : le balisage vidéo est activé par défaut dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. [Les vidéos sont automatiquement balisées](/help/assets/smart-tags-video-assets.md) lorsque vous chargez de nouvelles vidéos ou que vous retraitez des vidéos existantes.
 
 | Images (types MIME) | Ressources textuelles (formats de fichier) | Fichiers vidéo (formats et codecs de fichier) |
 |----|-----|------|
@@ -69,11 +69,11 @@ Avant de créer un modèle de balise et d’entraîner le service, identifiez un
 
 ### Instructions d’entraînement {#training-guidelines}
 
-Assurez-vous que les images du jeu d’entraînement sont conformes aux directives suivantes :
+Vérifiez que les images figurant dans la série de formation sont conformes aux instructions suivantes :
 
 **Quantité et taille :** 10 images au minimum et 50 images au maximum par balise.
 
-**Cohérence** : Assurez-vous que les images d’une balise sont visuellement similaires. Il est préférable d’ajouter ensemble les balises portant sur les mêmes aspects visuels (comme le même type d’objets dans une image) dans un modèle de balise unique. Par exemple, il est déconseillé d’incorporer une balise `my-party` pour toutes ces images (en situation d’entraînement), car elles ne sont pas similaires visuellement.
+**Cohérence** : assurez-vous que les images pour la même balise sont visuellement similaires. Il est préférable d’ajouter les balises portant sur les mêmes aspects visuels (par exemple, un même type d’objet dans une image) dans un modèle de balise unique. Par exemple, il est déconseillé d’incorporer une balise `my-party` pour toutes ces images (en situation d’entraînement), car elles ne sont pas similaires visuellement.
 
 ![Images d’illustration donnant un exemple d’instructions d’entraînement](assets/do-not-localize/coherence.png)
 
@@ -89,9 +89,9 @@ Assurez-vous que les images du jeu d’entraînement sont conformes aux directiv
 
 ![Images d’illustration donnant un exemple d’instructions d’entraînement](assets/do-not-localize/completeness.png)
 
-**Nombre de balises** : Adobe recommande d’entraîner un modèle à l’aide d’au moins deux balises distinctes et d’au moins dix images différentes pour chaque balise. Dans un modèle de balise unique, n’ajoutez pas plus de 50 balises.
+**Nombre de balises** : Adobe recommande d’entraîner un modèle à l’aide, au moins, de deux balises distinctes et 10 images différentes pour chaque balise. Dans un modèle de balise unique, n’ajoutez pas plus de 50 balises.
 
-**Nombre d&#39;exemples** : Pour chaque balise, ajoutez au moins dix exemples. Cependant, Adobe recommande environ 30 exemples. Pour chaque balise, 50 exemples au maximum sont pris en charge.
+**Nombre d’exemples** : pour chaque balise, ajoutez au moins 10 exemples. Cependant, Adobe recommande environ 30 exemples. Pour chaque balise, 50 exemples au maximum sont pris en charge.
 
 **Empêcher les faux positifs et les conflits** : Adobe recommande de créer un modèle de balise unique pour un aspect visuel donné. Organisez les modèles de balises de manière à éviter le chevauchement des balises entre les modèles. Par exemple, n’utilisez pas de balises communes comme `sneakers` dans deux noms de modèles de balises différents `shoes` et `footwear`. Le processus d’entraînement remplace un modèle de balise entraîné par l’autre en cas de mot-clé commun.
 
@@ -122,13 +122,13 @@ Pour créer et entraîner un modèle pour vos balises spécifiques à votre entr
    ![Afficher le statut de la formation](assets/smart-tags-training-status.png)
 
 1. Pour avoir un aperçu des miniatures des images sélectionnées, cliquez sur l’accordéon situé face à une balise. Vous pouvez modifier votre sélection en cliquant sur **[!UICONTROL Ajouter les ressources]**. Une fois la sélection effectuée, cliquez sur **[!UICONTROL Envoyer]**. L’interface utilisateur affiche une notification au bas de la page indiquant que l’entraînement est lancé.
-1. Vérifiez l’état de l’entraînement dans la colonne **[!UICONTROL État]** pour chaque modèle de balise. Les états possibles sont [!UICONTROL En Attente], [!UICONTROL Entraîné(s)] et [!UICONTROL Échec].
+1. Vérifiez le statut de l’entraînement dans la colonne **[!UICONTROL Statut]** pour chaque modèle de balise. Les statuts possibles sont [!UICONTROL En Attente], [!UICONTROL Entraîné(s)] et [!UICONTROL Échec].
 
-![Workflow d’entraînement du modèle de balisage pour les balises intelligentes](assets/smart-tag-model-training-flow.png)
+![Workflow d’entraînement du modèle de balisage pour le balisage intelligent](assets/smart-tag-model-training-flow.png)
 
 *Figure : Étapes du workflow d’entraînement du modèle de balisage.*
 
-### Affichage de l’état et du rapport d’entraînement {#training-status}
+### Affichage du statut et du rapport d’entraînement {#training-status}
 
 Pour vérifier que le service de balises intelligentes est entraîné sur vos balises dans la série de ressources d’entraînement, examinez le rapport de workflow d’entraînement dans la console Rapports.
 
@@ -137,7 +137,7 @@ Pour vérifier que le service de balises intelligentes est entraîné sur vos ba
 1. Sélectionnez le rapport **[!UICONTROL Entraînement des balises intelligentes]**, puis cliquez sur **[!UICONTROL Suivant]** dans la barre d’outils.
 1. Indiquez un titre et une description pour le rapport. Sous **[!UICONTROL Planifier le rapport]**, laissez l’option **[!UICONTROL Maintenant]** sélectionnée. Si vous souhaitez planifier le rapport pour une date ultérieure, sélectionnez **[!UICONTROL Plus tard]** et spécifiez une date et une heure. Ensuite, cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
 1. Dans la page **[!UICONTROL Rapports de ressources]**, sélectionnez le rapport que vous avez généré. Pour afficher le rapport, cliquez sur **[!UICONTROL Afficher]** dans la barre d’outils.
-1. Passez en revue les détails du rapport. Le rapport affiche l’état d’identification des balises que vous avez entraînées. La couleur verte de la colonne **[!UICONTROL État de l’entraînement]** indique que le service de balises intelligentes est entraîné pour la balise. La couleur jaune indique que le service n’est pas complètement entraîné pour une balise particulière. Dans ce cas, ajoutez d’autres images avec la balise particulière et exécutez le workflow d’entraînement pour l’entraînement complet du service sur la balise. Si vous ne voyez pas vos balises dans ce rapport, lancez à nouveau le workflow d’entraînement pour ces balises.
+1. Passez en revue les détails du rapport. Le rapport affiche le statut d’identification des balises que vous avez entraînées. La couleur verte de la colonne **[!UICONTROL Statut de l’entraînement]** indique que le service de balises intelligentes est entraîné pour la balise. La couleur jaune indique que le service n’est pas complètement entraîné pour une balise particulière. Dans ce cas, ajoutez d’autres images avec la balise particulière et exécutez le workflow d’entraînement pour l’entraînement complet du service sur la balise. Si vous ne voyez pas vos balises dans ce rapport, lancez à nouveau le workflow d’entraînement pour ces balises.
 1. Pour télécharger le rapport, sélectionnez-le dans la liste, puis cliquez sur **[!UICONTROL Télécharger]** dans la barre d’outils. Le rapport est téléchargé sous la forme d’une feuille de calcul [!DNL Microsoft Excel].
 
 <!--
@@ -189,11 +189,11 @@ Vous pouvez organiser les balises intelligentes pour supprimer toute balise non 
 
 La modération de balises intelligentes contribue également à affiner les résultats des recherches de ressources basées sur des balises, en garantissant que vos ressources apparaissent dans les résultats de la recherche pour les balises les plus pertinentes. Essentiellement, cela réduit les risques que des ressources non pertinentes apparaissent dans les résultats de la recherche.
 
-Vous pouvez également attribuer un rang supérieur à une balise afin d’accroître la pertinence de la balise pour la ressource. La promotion d’une balise pour une ressource augmente les risques qu’une ressource apparaisse dans les résultats de la recherche lorsqu’une recherche est basée sur cette balise.
+Vous pouvez également attribuer un rang supérieur à une balise pour accroître sa pertinence pour la ressource. La promotion d’une balise pour une ressource augmente les risques qu’une ressource apparaisse dans les résultats de la recherche lorsqu’une recherche est basée sur cette balise.
 
 Pour modérer les balises intelligentes de vos ressources :
 
-1. Dans le champ de recherche, recherchez des ressources en fonction d’une balise .
+1. Dans le champ de recherche, recherchez des ressources sur la base d’une balise.
 
 1. Examinez les résultats de la recherche pour identifier les ressources que vous ne trouvez pas pertinentes.
 
@@ -209,7 +209,7 @@ Pour modérer les balises intelligentes de vos ressources :
 
 ### Comprendre les [!DNL Experience Manager] résultats de recherche avec des balises intelligentes {#understand-search}
 
-Par défaut, la recherche [!DNL Experience Manager] combine les termes de recherche avec une clause `AND`. L’utilisation de balises intelligentes ne modifie pas ce comportement par défaut. L’utilisation de balises intelligentes ajoute une clause `OR` pour trouver l’un des termes recherchés dans les balises intelligentes appliquées. Par exemple, pour la recherche de `woman running`. Les ressources avec les mots-clés `woman` ou `running` uniquement dans les métadonnées n’apparaissent pas dans les résultats de recherche par défaut. Toutefois, une ressource balisée avec `woman` ou `running` à l’aide de balises intelligentes apparaît dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de :
+Par défaut, la recherche [!DNL Experience Manager] combine les termes de recherche avec une clause `AND`. L’utilisation de balises intelligentes ne modifie pas ce comportement par défaut. Elle ajoute une clause `OR` pour trouver l’un des termes de recherche dans les balises intelligentes. Par exemple, pour la recherche de `woman running`. Les ressources avec les mots-clés `woman` ou `running` uniquement dans les métadonnées n’apparaissent pas dans les résultats de recherche par défaut. Toutefois, une ressource balisée avec `woman` ou `running` à l’aide de balises intelligentes apparaît dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de :
 
 * ressources avec les mots-clés `woman` et `running` dans les métadonnées ;
 
@@ -230,12 +230,12 @@ Le balisage intelligent amélioré est basé sur des modèles d’apprentissage 
 * Le balisage est disponible dans les langues prises en charge par [!DNL Experience Manager]. Vous trouverez la liste des langues dans les [Notes de mise à jour du service de contenu dynamique](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html?lang=fr#languages).
 * Les balises qui ne sont pas gérées de manière réaliste sont liées :
 
-   * Aspects non visuels et abstraits. Par exemple, l’année ou la saison de la sortie d’un produit, l’humeur ou l’émotion évoquée par une image, la connotation subjective d’une vidéo, etc.
+   * Aspects non visuels et abstraits. par exemple, l’année ou la saison de la sortie d’un produit, l’humeur ou l’émotion suscitées par une image, la connotation subjective d’une vidéo, etc. ;
    * à des différences visuelles fines pour des produits tels que des chemises avec ou sans col, ou de petits logos incorporés sur des produits.
 
 <!-- TBD: Add limitations related to text-based assets. -->
 
-Pour rechercher des ressources avec des balises intelligentes (standard ou améliorées), utilisez la recherche [!DNL Assets] (recherche de texte intégral). Il n’y a aucun prédicat de recherche distinct pour les balises intelligentes.
+Pour rechercher des ressources à l’aide de balises intelligentes (standard ou améliorées), utilisez la recherche de texte intégral d’[!DNL Assets]. Il n’y a aucun prédicat de recherche distinct pour les balises intelligentes.
 
 >[!NOTE]
 >
