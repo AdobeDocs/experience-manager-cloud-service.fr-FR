@@ -5,7 +5,7 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1266'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Un utilisateur disposant des autorisations requises peut créer les types d’en
    | Développement | Oui | Oui si Sites est inclus | Oui | Oui | Pipeline hors production |
 
    >[!NOTE]
-   >La production et le test sont disponibles en duo et sont utilisés à des fins de test et de production. L’utilisateur ne pourra pas créer uniquement un environnement de production ou de test.
+   >La production et le test sont disponibles en duo et sont utilisés à des fins de test et de production.  L’utilisateur ne pourra pas créer uniquement un environnement de production ou de test.
 
 ## Ajout de l’environnement {#adding-environments}
 
@@ -56,7 +56,7 @@ Un utilisateur disposant des autorisations requises peut créer les types d’en
 
    ![](assets/add-environment-image1.png)
 
-1. Cliquez sur **Enregistrer** pour ajouter un environnement avec les critères renseignés. Désormais, l’écran *Aperçu* affiche la carte à partir de laquelle vous pouvez configurer votre pipeline.
+1. Cliquez sur **Enregistrer** pour ajouter un environnement avec les critères renseignés.  Désormais, l’écran *Aperçu* affiche la carte à partir de laquelle vous pouvez configurer votre pipeline.
 
    >[!NOTE]
    >Si vous n’avez pas encore configuré votre pipeline hors production, l’écran *Aperçu* affiche la carte d’où vous pouvez créer votre pipeline hors production.
@@ -112,7 +112,7 @@ L’option de suppression est également disponible si vous cliquez sur **Détai
 
 >[!NOTE]
 >
->Cette fonctionnalité n’est pas disponible pour l’environnement de production/d’évaluation défini dans un programme de production configuré à des fins de production. Cette fonction est toutefois disponible pour les environnements de production/d’évaluation dans un programme Sandbox.
+>Cette fonction n’est pas disponible pour l’environnement de production/d’évaluation défini dans une configuration de programme de production. Cette fonction est toutefois disponible pour les environnements de production/d’évaluation dans un programme Sandbox.
 
 ## Gestion de l’accès {#managing-access}
 
@@ -158,9 +158,9 @@ Vous pouvez exécuter les actions suivantes sur le service de publication pour v
 
 1. [Suppression d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
-1. [Vérification de l’état du ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) nom de domaine personnalisé ou d’un certificat  [SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn).
+1. [Vérification de l’état d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) ou d’un [certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn).
 
-1. [Vérification de l’état des Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
+1. [Vérification de l’état d’une liste d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
 
 ## Gestion des listes autorisées d’adresses IP {#manage-ip-allow-lists}
 
