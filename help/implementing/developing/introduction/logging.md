@@ -5,7 +5,7 @@ exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 source-git-commit: e87b71dd5081b95ca3fd55e66455476c85a50f6c
 workflow-type: tm+mt
 source-wordcount: '2332'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -592,17 +592,17 @@ Dans la demande d’assistance, les clients doivent indiquer :
 * le port Splunk ;
 * le jeton Splunk HEC. Pour plus d’informations, consultez [cette page](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples).
 
-Les propriétés ci-dessus doivent être spécifiées pour chaque combinaison de type programme/environnement appropriée. Par exemple, si un client souhaite des environnements de développement, d’évaluation et de production, il doit fournir trois ensembles d’informations, comme indiqué ci-dessous.
+Les propriétés ci-dessus doivent être spécifiées pour chaque combinaison de type programme/environnement appropriée.  Par exemple, si un client souhaite des environnements de développement, d’évaluation et de production, il doit fournir trois ensembles d’informations, comme indiqué ci-dessous.
 
 >[!NOTE]
 >
 >Le transfert Splunk pour les environnements de programme de test Sandbox n’est pas pris en charge.
 
-Assurez-vous que la requête initiale inclut tous les environnements de développement qui doivent être activés, en plus des environnements d’évaluation/de production.
+Assurez-vous que la requête initiale comprend tous les environnements de développement qui doivent être activés, en plus des environnements d’évaluation/de production.
 
-Si des environnements de développement créés après la requête initiale sont destinés à un transfert Splunk, mais qu’il n’est pas activé, une requête supplémentaire doit être effectuée.
+Si de nouveaux environnements de développement créés après la requête initiale sont destinés à un transfert de Splunk, mais qu’ils ne sont pas activés, une requête supplémentaire doit être envoyée.
 
-Notez également que si des environnements de développement ont été demandés, il est possible que d’autres environnements de développement qui ne figurent pas dans la requête ou même les environnements de test aient activé le transfert Splunk et partagent un index Splunk. Les clients peuvent utiliser le champ `aem_env_id` pour faire la distinction entre ces environnements.
+Notez également que si des environnements de développement ont été demandés, il est possible que d’autres environnements de développement qui ne figurent pas dans la requête ou même les environnements Sandbox aient activé le transfert de Splunk et en partagent un index. Les clients peuvent utiliser le champ `aem_env_id` pour distinguer ces environnements.
 
 Vous trouverez ci-dessous un exemple de demande d’assistance :
 
