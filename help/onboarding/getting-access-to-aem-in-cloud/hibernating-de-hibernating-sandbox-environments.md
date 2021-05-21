@@ -14,7 +14,7 @@ ht-degree: 95%
 Les environnements de programme Sandbox passent en *mode veille* si aucune activité n’est détectée pendant une certaine période.
 
 >[!NOTE]
->La veille est unique aux environnements de programme Sandbox. Les environnements de programme de production ne sont pas en veille.
+>La veille est unique aux environnements de programme Sandbox. Les environnements de programme de production ne connaissent pas de veille.
 
 ## Mise en veille {#hibernation-introduction}
 
@@ -108,7 +108,7 @@ Tout utilisateur disposant d’un profil de produit qui lui donne accès à AEM 
 
 ## Accès à un environnement mis en veille {#accessing-hibernated-environment}
 
-Dans le cadre d’une requête de navigateur par rapport au niveau de création ou de publication d’un environnement mis en veille, l’utilisateur rencontre une page d’entrée décrivant l’état de mise en veille de l’environnement, comme indiqué dans la figure ci-dessous :
+Dans le cadre d’une requête de navigateur par rapport au niveau de création ou de publication d’un environnement mis en veille, l’utilisateur rencontre une page d’entrée décrivant le statut de mise en veille de l’environnement, comme indiqué dans la figure ci-dessous :
 
 ![](assets/de-hibernation-img5.png)
 
