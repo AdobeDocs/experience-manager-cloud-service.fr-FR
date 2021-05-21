@@ -1,11 +1,11 @@
 ---
-title: 'Création d’une page pour les appareils mobiles '
+title: Création d’une page pour les appareils mobiles
 description: Lors de la création pour les appareils mobiles, vous pouvez basculer entre plusieurs émulateurs pour voir ce que l’utilisateur final voit.
 exl-id: fabd4468-3304-402f-9522-342da3bbae94
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Les périphériques sont regroupés en fonction des catégories : fonction, int
 
 >[!NOTE]
 >
->Pour créer un site mobile en fonction d’un site standard existant, créez une Live Copy du site standard. Voir [Création de Live Copies.](/help/sites-cloud/administering/msm/creating-live-copies.md)
+>Pour créer un site mobile en fonction d’un site standard existant, créez une Live Copy du site standard. Voir la section [Création de Live Copies](/help/sites-cloud/administering/msm/creating-live-copies.md).
 >
 >Les développeurs d’AEM peuvent créer de nouveaux groupes d’appareils. Consultez Création de filtres de groupe d’appareils.
 
@@ -33,7 +33,7 @@ Utilisez la procédure suivante pour créer une page mobile :
 1. Modifiez une page de contenu.
 1. Basculez vers l’émulateur de votre choix en cliquant sur l’icône **Émulateur** en haut de la page.
 
-   ![Icône Emulateur](/help/sites-cloud/authoring/assets/emulator.png)
+   ![Icône Émulateur](/help/sites-cloud/authoring/assets/emulator.png)
 
 1. Faites glisser des composants de l’explorateur de composants ou de ressources vers la page.
 1. [Modifiez la disposition réactive](/help/sites-cloud/authoring/features/responsive-layout.md) de la page et de ses composants en fonction de l’appareil sélectionné.
