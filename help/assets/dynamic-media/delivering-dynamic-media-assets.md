@@ -7,7 +7,7 @@ exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 67%
+ht-degree: 82%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 67%
 
 La diffusion des ressources Dynamic Media (vidéos et images) dépend de la mise en œuvre de votre site web.
 
-Avec Dynamic Media, vous disposez de plusieurs options :
+Avec Dynamic Media, vous disposez de plusieurs options :
 
 * Si votre site web est hébergé sur Adobe Experience Manager, vous souhaitez ajouter les ressources Dynamic Media directement à votre page.
 * Si votre site web n’est pas en Experience Manager, vous avez le choix entre :
@@ -26,7 +26,7 @@ Avec Dynamic Media, vous disposez de plusieurs options :
 
 >[!NOTE]
 >
->L’imagerie dynamique fonctionne avec vos paramètres d’image prédéfinis existants. Il utilise des informations à la dernière milliseconde de la diffusion pour réduire davantage la taille du fichier image en fonction de la vitesse de connexion du navigateur ou du réseau. Voir [Imagerie numérique](/help/assets/dynamic-media/imaging-faq.md) pour plus d’informations.
+>L’imagerie dynamique fonctionne avec vos paramètres d’image prédéfinis existants. Elle utilise les informations disponibles à la dernière milliseconde avant la diffusion pour réduire encore la taille du fichier image en fonction de la vitesse de connexion du navigateur ou du réseau. Voir [Imagerie numérique](/help/assets/dynamic-media/imaging-faq.md) pour plus d’informations.
 
 Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
@@ -44,4 +44,4 @@ Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
 Experience Manager prend désormais en charge la diffusion de tout le contenu Dynamic Media (images et vidéo) sur HTTP/2. En d’autres termes, une URL publiée ou un code intégré pour l’image ou la vidéo peut être intégré dans toute application acceptant une ressource hébergée. Cette ressource publiée est alors distribuée par le biais du protocole HTTP/2. Cette méthode de distribution améliore la communication entre les navigateurs et les serveurs, ce qui permet d’améliorer les temps de réponse et de chargement de toutes vos ressources Dynamic Media.
 
-Pour en savoir plus, voir [HTTP/2 Diffusion de contenu - Questions fréquentes](/help/assets/dynamic-media/http2faq.md).
+Pour en savoir plus, consultez [Foire aux questions sur la diffusion HTTP/2 du contenu](/help/assets/dynamic-media/http2faq.md).
