@@ -5,7 +5,7 @@ exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
 source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
 source-wordcount: '1185'
-ht-degree: 58%
+ht-degree: 94%
 
 ---
 
@@ -29,33 +29,33 @@ L’un des changements majeurs apportés à AEM as a Cloud Service est l’utili
 
 ### Cas exceptionnels {#exceptional-cases}
 
-Les cas spécifiques suivants seront consignés :
+Les cas spécifiques suivants seront consignés :
 
-1. Si un utilisateur ne possède pas d’adresse électronique dans le champ `profile/email` de son noeud *jcr* , l’utilisateur ou le groupe en question sera migré, mais pas mappé.
+1. Si un utilisateur n’a pas d’adresse électronique dans le champ `profile/email` de son nœud *jcr*, l’utilisateur ou le groupe en question sera migré, mais pas mappé.
 
-1. Si un message électronique donné est introuvable sur le système Adobe Identity Management (IMS) pour l’ID d’organisation utilisé (ou si l’ID IMS ne peut pas être récupéré pour une autre raison), l’utilisateur ou le groupe en question sera migré, mais pas mappé.
+1. Si un courrier électronique donné est introuvable sur le système IMS (Adobe Identity Management System) pour l’ID d’organisation utilisé (ou si l’ID IMS ne peut pas être récupéré pour une autre raison), l’utilisateur ou le groupe en question sera migré, mais pas mappé.
 
 1. Si l’utilisateur est actuellement désactivé, il est traité de la même manière que s’il n’était pas désactivé. Il fera l’objet d’une migration et d’un mappage normaux et restera désactivé sur l’instance cloud.
 
-1. Si un utilisateur existe sur l’instance de Cloud Service AEM cible avec le même nom d’utilisateur (rep:principalName) que l’un des utilisateurs sur l’instance AEM source, l’utilisateur ou le groupe en question ne sera pas migré.
+1. Si un utilisateur existe sur l’instance d’AEM Cloud Service cible avec le même nom d’utilisateur (rep:principalName) que l’un des utilisateurs de l’instance d’AEM source, l’utilisateur ou le groupe en question ne fera pas l’objet d’une migration.
 
-### Remarques supplémentaires {#additional-considerations}
+### Remarques complémentaires {#additional-considerations}
 
-* Si le paramètre **Effacer le contenu existant sur l’instance cloud avant l’ingestion** est défini, les utilisateurs déjà transférés sur l’instance du Cloud Service seront supprimés avec l’ensemble du référentiel existant et un nouveau référentiel sera créé pour ingérer du contenu dans . Cela réinitialise également tous les paramètres, y compris les autorisations sur l’instance du Cloud Service cible. C’est le cas pour un utilisateur administrateur ajouté au groupe **administrateurs**. L’utilisateur administrateur doit être ajouté de nouveau au groupe **administrateurs** pour récupérer le jeton d’accès pour CTT.
+* Si le paramètre **Effacer le contenu existant sur l’instance cloud avant l’ingestion** est défini, les utilisateurs déjà transférés sur l’instance de Cloud Service seront supprimés avec l’ensemble du référentiel existant, et un nouveau référentiel sera créé pour intégrer du contenu. Cette opération réinitialise également tous les paramètres, y compris les autorisations sur l’instance Cloud Service cible, et est effective pour un utilisateur administrateur ajouté au groupe **administrateurs**. L’utilisateur administrateur doit être réajouté au groupe **administrateurs** pour récupérer le jeton d’accès à l’outil de transfert de contenu (CTT).
 
-* Il est recommandé de supprimer tout utilisateur existant de l’instance AEM Cloud Service cible avant d’exécuter CTT avec le mappage utilisateur. Cela permet d’éviter tout conflit entre la migration des utilisateurs de l’instance AEM source vers l’instance AEM cible. Des conflits se produiront lors de l’ingestion si le même utilisateur existe sur l’instance d’AEM source et l’instance AEM cible.
+* Il est recommandé de supprimer tout utilisateur existant de l’instance d’AEM Cloud Service cible avant d’exécuter CTT avec mappage d’utilisateur. Cela permet d’éviter tout conflit entre la migration des utilisateurs de l’instance AEM source vers l’instance AEM cible. Des conflits surviendront lors de l’ingestion si un même utilisateur existe sur l’instance AEM source et l’instance AEM cible.
 
-* Lorsque des compléments de contenu sont effectués, si le contenu n’est pas transféré car il n’a pas été modifié depuis le transfert précédent, les utilisateurs et les groupes associés à ce contenu ne seront pas transférés non plus, même si les utilisateurs et les groupes ont changé entre-temps. En effet, les utilisateurs et les groupes sont migrés avec le contenu auquel ils sont associés.
+* Lorsque des rechargements de contenu sont effectués, si le contenu n’est pas transféré parce qu’il n’a pas été modifié depuis le transfert précédent, les utilisateurs et les groupes associés à ce contenu ne seront pas transférés non plus, même si les utilisateurs et les groupes ont changé entre-temps. En effet, les utilisateurs et les groupes font l’objet d’un migration avec le contenu auquel ils sont associés.
 
-* L’ingestion échoue dans les cas suivants :
+* L’ingestion échoue dans les cas suivants :
 
-1. Si l’instance de Cloud Service de l’AEM cible a un utilisateur avec un nom d’utilisateur différent mais la même adresse électronique que l’un des utilisateurs sur l’instance AEM source.
+1. Si l’instance AEM Cloud Service cible a un utilisateur dont le nom d’utilisateur est différent mais la même adresse électronique que l’un des utilisateurs de l’instance AEM source.
 
-1. S’il existe deux utilisateurs sur l’instance d’AEM source avec des noms d’utilisateur différents mais la même adresse électronique. AEM en tant que Cloud Service ne permet pas à deux utilisateurs d’avoir la même adresse électronique.
+1. S’il y a deux utilisateurs sur l’instance AEM source avec des noms d’utilisateur différents mais la même adresse électronique. AEM as a Cloud Service ne permet pas à deux utilisateurs d’avoir la même adresse électronique.
 
 ## Utilisation de l’outil de mappage des utilisateurs {#using-user-mapping-tool}
 
-L’outil de mappage des utilisateurs utilise une API qui lui permet de rechercher des utilisateurs Adobe Identity Management System (IMS) par courrier électronique et de renvoyer leurs identifiants IMS. Cette API nécessite que l’utilisateur crée un ID client pour son organisation, un secret client et un jeton d’accès ou de porteur.
+L’outil de mappage des utilisateurs utilise une API pour rechercher les utilisateurs du système Adobe IMS (Identity Management System) par email et renvoyer leur ID IMS. Cette API nécessite que l’utilisateur crée un ID client pour son organisation, un secret client et un jeton d’accès ou de porteur.
 
 Suivez les étapes ci-dessous pour configurer ces éléments :
 
