@@ -5,7 +5,7 @@ exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
 source-git-commit: 4965bd30c02536efb81a26fff8da6e5f75dbfae4
 workflow-type: tm+mt
 source-wordcount: '1502'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -17,7 +17,7 @@ Toutefois, cela peut entraîner des temps de chargement initiaux plus longs, en 
 
 ## Quand utiliser le rendu côté serveur {#when-to-use-ssr}
 
-Le rendu côté serveur n’est pas requis pour tous les projets. Bien qu’AEM prenne entièrement en charge le rendu côté serveur JS pour SPA, Adobe ne recommande pas de le mettre en oeuvre systématiquement pour chaque projet.
+Le rendu côté serveur n’est pas requis pour tous les projets. Bien qu’AEM prenne pleinement en charge le rendu côté serveur JS pour les SPA, Adobe ne recommande pas de le mettre en œuvre systématiquement pour chaque projet.
 
 Lorsque vous décidez de mettre en œuvre le rendu côté serveur, vous devez d’abord estimer la complexité, les efforts et les coûts supplémentaires que ce rendu représente de manière réaliste pour le projet, y compris la maintenance à long terme. Une architecture SSR ne doit être choisie que lorsque la valeur ajoutée dépasse clairement les coûts estimés.
 
@@ -59,7 +59,7 @@ Cela s’effectue via le **service RemoteContentRenderer – Configuration d’u
 Les champs suivants sont disponibles pour la configuration :
 
 * **Modèle de chemin d’accès au contenu** : expression régulière afin de faire correspondre une partie du contenu, si nécessaire
-* **URL du point d’entrée distant**  : URL du point d’entrée responsable de la génération du contenu.
+* **URL du point d’entrée distant** : URL du point d’entrée responsable de la génération du contenu
    * Utilisez le protocole HTTPS sécurisé si ce point d’entrée ne figure pas sur le réseau local.
 * **En-têtes de requête supplémentaires** : en-têtes supplémentaires à ajouter à la requête envoyée au point d’entrée distant
    * Modèle : `key=value`
