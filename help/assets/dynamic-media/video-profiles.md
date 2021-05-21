@@ -31,7 +31,7 @@ Consultez également la section [Bonnes pratiques pour organiser vos ressources 
 
 >[!NOTE]
 >
->Pour générer les métadonnées d’une vidéo et les miniatures d’image vidéo associées, la vidéo elle-même doit passer par le processus de codage dans Dynamic Media. Dans Adobe Experience Manager, le workflow **[!UICONTROL Vidéo de codage Dynamic Media]** code la vidéo si vous avez activé Dynamic Media et configuré des Cloud Services vidéo. Ce workflow capture l’historique de traitement des workflows et les informations d’échec. Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Si vous avez activé Dynamic Media et configuré des Cloud Services vidéo, le workflow **[!UICONTROL Vidéo de codage Dynamic Media]** prend automatiquement effet lorsque vous chargez une vidéo. (Si vous n’utilisez pas Dynamic Media, le workflow **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]** prend effet.)
+>Pour générer les métadonnées d’une vidéo et les miniatures d’image vidéo associées, la vidéo elle-même doit passer par le processus de codage dans Dynamic Media. Dans Adobe Experience Manager, le workflow **[!UICONTROL Vidéo de codage Dynamic Media]** code la vidéo si vous avez activé Dynamic Media et configuré des Cloud Services vidéo. Ce workflow capture l’historique de traitement des workflows et les informations d’échec. Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Si vous avez activé Dynamic Media et configuré des Cloud Services vidéo, le workflow **[!UICONTROL Vidéo de codage Dynamic Media]** prend automatiquement effet lorsque vous chargez une vidéo. (Si vous n’utilisez pas Dynamic Media, le workflow **[!UICONTROL Ressource de mise à jour DAM]** prend effet.)
 >
 >Les métadonnées sont utiles lorsque vous recherchez des ressources. Les miniatures sont des images vidéo statiques qui sont générées lors du codage. Elles sont requises par le système du Experience Manager et utilisées dans l’interface utilisateur pour vous aider à identifier visuellement les vidéos en mode Carte, dans les résultats de recherche et dans la liste des ressources. Vous pouvez voir les miniatures générées lorsque vous appuyez sur l’icône Rendus (palette d’un peintre) d’une vidéo codée.
 
@@ -145,7 +145,7 @@ Si les valeurs ne sont pas les mêmes, vous pouvez continuer à créer le profil
 
 Voir aussi [Création d’un profil de codage vidéo pour la diffusion en continu progressive](#creating-a-video-encoding-profile-for-progressive-streaming).
 
-Consultez également la section [Pratiques recommandées pour le codage vidéo](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
+Consultez également la section [Bonnes pratiques en matière de codage vidéo](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
 Pour définir des paramètres de traitement avancés pour d’autres types de ressources, voir [Configuration du traitement des ressources](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
@@ -194,7 +194,7 @@ Les codecs de format vidéo pris en charge sont H.264 (.mp4) et WebM.
 
 Voir aussi [Création d’un profil de codage vidéo pour la diffusion en continu adaptative](#creating-a-video-encoding-profile-for-adaptive-streaming).
 
-Consultez également la section [Pratiques recommandées pour le codage vidéo](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
+Consultez également la section [Bonnes pratiques en matière de codage vidéo](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
 Pour définir des paramètres de traitement avancés pour d’autres types de ressources, voir [Configuration du traitement des ressources](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
@@ -311,7 +311,7 @@ Vous pouvez modifier les profils vidéo que vous avez créés pour ajouter, modi
 
 Par défaut, vous ne pouvez pas modifier le profil **[!UICONTROL Codage vidéo adaptatif]** prédéfini prêt à l’emploi fourni avec Dynamic Media. Vous pouvez aussi facilement copier le profil et l’enregistrer sous un nouveau nom. Vous pouvez ensuite modifier les paramètres prédéfinis souhaités dans le profil copié.
 
-Consultez également la section [Pratiques recommandées pour le codage vidéo](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
+Consultez également la section [Bonnes pratiques en matière de codage vidéo](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
 Pour définir des paramètres de traitement avancés pour d’autres types de ressources, voir [Configuration du traitement des ressources](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
@@ -353,7 +353,7 @@ Appuyez sur l’icône d’information pour obtenir une description de la diffus
 
 ## Application d’un profil vidéo à des dossiers {#applying-a-video-profile-to-folders}
 
-Lorsque vous affectez un profil vidéo à un dossier, tout sous-dossier hérite automatiquement du profil de son dossier parent. Ainsi, vous ne pouvez affecter qu’un seul profil vidéo à un dossier. Par conséquent, réfléchissez attentivement à la structure de dossiers dans laquelle vous chargez, stockez, utilisez et archivez des ressources.
+Lorsque vous affectez un profil vidéo à un dossier, tout sous-dossier hérite automatiquement du profil de son dossier parent. Ainsi, vous ne pouvez affecter qu’un seul profil vidéo à un dossier. Ainsi, réfléchissez soigneusement à la structure de dossiers de l’emplacement où vous téléchargez, stockez, utilisez et archivez les ressources.
 
 Si vous avez affecté un profil vidéo différent à un dossier, le nouveau profil remplace le précédent. Les ressources du dossier précédent restent inchangées. Le nouveau profil sera appliqué aux ressources ajoutées ultérieurement au dossier.
 
