@@ -5,22 +5,22 @@ exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 source-git-commit: ee12a6a81a6852d9ffff674cea69e36c37c0ea65
 workflow-type: tm+mt
 source-wordcount: '257'
-ht-degree: 0%
+ht-degree: 46%
 
 ---
 
 # Modification d’un programme de production {#create-production-program}
 
-Les utilisateurs disposant des autorisations requises peuvent désormais modifier un programme de production, ce qui leur permet d’effectuer les opérations suivantes en libre-service :
+Les utilisateurs disposant des autorisations requises peuvent désormais modifier un programme de production, ce qui leur permet d’effectuer les opérations suivantes en libre-service :
 
 * Ajoutez la solution Sites à un programme existant avec Assets (ou vice versa).
-* Supprimez Sites (ou Assets) d’un programme existant avec Sites et Assets.
-* Ajoutez le deuxième droit de solution inutilisé à un programme existant ou en tant que nouveau programme.
+* Supprimer Sites (ou Assets) d’un programme existant contenant à la fois Sites et Assets.
+* Ajouter un deuxième droit non utilisé sur une solution à un programme existant ou à titre de nouveau programme.
 
    >[!NOTE]
-   >Un utilisateur possédant le rôle Propriétaire de l’entreprise doit être connecté pour pouvoir modifier le programme.
+   >Un utilisateur doté du rôle Propriétaire de l’entreprise doit être connecté pour pouvoir modifier le programme.
 
-Pour modifier un programme de production, procédez comme suit :
+Pour modifier un programme de production, procédez comme suit :
 
 1. Cliquez sur l’option **Modifier le programme** de la page *Aperçu* de Cloud Manager.
 
@@ -42,10 +42,10 @@ Pour modifier un programme de production, procédez comme suit :
 1. Cliquez sur **Enregistrer** pour terminer le processus de modification du programme.
 
 
-## Considérations lors de la modification d’un programme {#considerations-editing}
+## Considérations relatives à la modification d’un programme {#considerations-editing}
 
-Peu de considérations doivent être prises en compte lors de la modification d’un programme :
+Quelques considérations doivent être prises en compte lors de la modification d’un programme :
 
 * Au moins une solution doit être sélectionnée pour un programme, c’est-à-dire que l’utilisateur n’est pas autorisé à désélectionner toutes les solutions pendant le workflow Modifier le programme.
 
-* En cliquant sur le bouton **Enregistrer**, si les solutions sélectionnées ont changé, les mises à jour des solutions aux environnements prendront effet après le prochain déploiement.
+* Lorsque vous cliquez sur le bouton **Enregistrer** et que des modifications ont été apportées à la sélection des solutions, les mises à jour des solutions apportées aux environnements prendront effet après le prochain déploiement.
