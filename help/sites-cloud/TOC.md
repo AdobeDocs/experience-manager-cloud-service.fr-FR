@@ -9,7 +9,7 @@ role: Business Practitioner
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '308'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -86,12 +86,12 @@ ht-degree: 95%
       + [MSM et traduction](administering/msm-and-translation.md)
       + Multi Site Manager {#msm}
          + [Présentation de MSM et Live Copy](administering/msm/overview.md)
-         + [Configuration de la synchronisation de Live Copies](administering/msm/live-copy-sync-config.md)
+         + [Configuration de la synchronisation des Live Copies](administering/msm/live-copy-sync-config.md)
          + [Création et synchronisation de Live Copies](administering/msm/creating-live-copies.md)
-         + [Console Aperçu de la Live Copy](administering/msm/live-copy-overview.md)
+         + [Console Aperçu de Live Copy](administering/msm/live-copy-overview.md)
          + [Conflits de déploiement](administering/msm/rollout-conflicts.md)
-         + [Meilleures pratiques MSM](administering/msm/best-practices.md)
-         + [Dépannage et FAQ](administering/msm/troubleshooting.md)
+         + [Bonnes pratiques MSM](administering/msm/best-practices.md)
+         + [Résolution des problèmes et FAQ](administering/msm/troubleshooting.md)
       + Traduction {#translation}
          + [Traduction de contenu pour les sites multilingues](administering/translation/overview.md)
          + [Préparation du contenu à traduire](administering/translation/preparation.md)
@@ -100,7 +100,7 @@ ht-degree: 95%
          + [Identification du contenu à traduire](administering/translation/rules.md)
          + [Configuration de la structure d’intégration de traduction](administering/translation/integration-framework.md)
          + [Connexion à Microsoft Translator](administering/translation/connect-ms-translator.md)
-         + [Meilleures pratiques de traduction](administering/translation/best-practices.md)
+         + [Bonnes pratiques de traduction](administering/translation/best-practices.md)
 + Intégration d’AEM as a Cloud Service {#integrations}
    + [Intégration à Adobe Analytics](integrating/integrating-adobe-analytics.md)
    + [Intégration à Adobe Target](integrating/integrating-adobe-target.md)
