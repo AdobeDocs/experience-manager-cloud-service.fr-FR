@@ -8,7 +8,7 @@ exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 78%
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ Le framework de création de rapports [!DNL Assets] exploite des tâches [!DNL S
 
 L’interface de gestion de rapports est intuitive et inclut des options et des commandes précises pour accéder aux rapports archivés, ainsi qu’afficher les états d’exécution des rapports (réussite, échec et en file d’attente).
 
-Lorsqu’un rapport est généré, vous êtes averti via <!-- through an email (optional) and --> une notification de boîte de réception. Vous pouvez afficher, télécharger ou supprimer un rapport de la page de liste des rapports, où tous les rapports générés précédemment sont affichés.
+Lorsqu’un rapport est généré, vous êtes averti par <!-- through an email (optional) and --> une notification de boîte de réception. Vous pouvez afficher, télécharger ou supprimer un rapport de la page de liste des rapports, où tous les rapports générés précédemment sont affichés.
 
 ## Génération de rapports {#generate-reports}
 
@@ -90,13 +90,13 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
 1. Cliquez sur **[!UICONTROL Suivant]** dans la barre d’outils.
 
-1. Sur la page **[!UICONTROL Configurer les colonnes]**, certaines colonnes sont sélectionnées pour apparaître dans le rapport par défaut. Vous pouvez sélectionner plus de colonnes. Annulez la sélection d&#39;une colonne pour l&#39;exclure du rapport.
+1. Sur la page **[!UICONTROL Configurer les colonnes]**, certaines colonnes sont sélectionnées pour apparaître dans le rapport par défaut. Vous pouvez sélectionner plus de colonnes. Annulez la sélection d’une colonne pour l’exclure dans le rapport.
 
-   ![Sélectionner ou annuler la sélection des colonnes du rapport](assets/configure_columns.png)
+   ![Sélectionner ou annuler la sélection des colonnes d’un rapport](assets/configure_columns.png)
 
    Pour afficher un chemin de propriété ou un nom de colonne personnalisé, configurez les propriétés du binaire de ressource sous le nœud `jcr:content` dans CRX. Vous pouvez également l’ajouter dans le sélecteur de chemin de propriété.
 
-   ![Sélectionner ou annuler la sélection des colonnes du rapport](assets/custom_columns.png)
+   ![Sélectionner ou annuler la sélection des colonnes d’un rapport](assets/custom_columns.png)
 
 1. Cliquez sur **[!UICONTROL Créer]** dans la barre d’outils. Un message indique que la génération du rapport a été lancée.
 1. Sur la page [!UICONTROL Rapports de ressources], l’état de la génération des rapports repose sur l’état actuel de la tâche de rapport ; par exemple [!UICONTROL Réussite], [!UICONTROL Échec], [!UICONTROL En file d’attente] ou [!UICONTROL Planifié]. Le même état s’affiche dans la boîte de réception des notifications. Pour afficher la page du rapport, cliquez sur le lien du rapport. Vous pouvez également sélectionner le rapport et cliquer sur **[!UICONTROL Afficher]** dans la barre d’outils.
@@ -132,11 +132,11 @@ Pour ajouter des colonnes personnalisées à ces rapports, procédez comme suit�
 1. Dans le [!DNL Manager interface], cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
 1. Sur la page [!UICONTROL Rapports de ressources], cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
 
-1. Sur la page **[!UICONTROL Créer un rapport]** , choisissez un rapport à créer. Cliquez sur **[!UICONTROL Suivant]**.
+1. Dans la page **[!UICONTROL Créer un rapport]**, choisissez un rapport à créer. Cliquez sur **[!UICONTROL Suivant]**.
 
 1. Configurez les détails du rapport, tels que le titre, la description, la miniature, le chemin du dossier et la période, le cas échéant. Cliquez sur **[!UICONTROL Suivant]**.
 
-1. Sélectionnez les informations applicables dans la liste **[!UICONTROL Colonnes par défaut]**. Pour afficher une colonne personnalisée, indiquez le nom de la colonne sous **[!UICONTROL Colonnes personnalisées]**.
+1. Sélectionnez les informations applicables dans la liste **[!UICONTROL Colonnes par défaut]**. Pour afficher une colonne personnalisée, spécifiez son nom sous **[!UICONTROL Colonnes personnalisées]**.
 
    ![Spécifier le nom de la colonne personnalisée du rapport](assets/custom_columns-1.png)
 
@@ -162,7 +162,7 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 
 ## Informations de dépannage {#tips-troubleshoot}
 
-* Si le [!UICONTROL rapport Utilisation du disque] ne s’affiche pas et que vous utilisez [!DNL Dynamic Media], vérifiez que toutes les ressources sont correctement traitées. Pour résoudre ce problème, retraitez les ressources et générez à nouveau le rapport.
+* Si le [!UICONTROL rapport d’utilisation des disques] n’est pas généré et si vous utilisez [!DNL Dynamic Media], assurez-vous que toutes les ressources sont traitées correctement. Pour résoudre ce problème, retraitez les ressources puis générez de nouveau le rapport.
 
 <!-- These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
 
