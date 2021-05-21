@@ -8,7 +8,7 @@ exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
 source-git-commit: 212e4e7cfb93d5765f80003c42ba6afb9af45c13
 workflow-type: tm+mt
 source-wordcount: '1016'
-ht-degree: 74%
+ht-degree: 83%
 
 ---
 
@@ -73,24 +73,24 @@ XMP vous offre la possibilité d’ajouter une propriété `xml:lang` aux propri
 
 ## Écriture différée XMP sur les rendus {#xmp-writeback-to-renditions}
 
-Cette fonction d’écriture différée XMP dans [!DNL Adobe Experience Manager Assets] réplique les modifications apportées aux métadonnées aux rendus de la ressource d’origine.
+Cette fonction d’écriture différée XMP dans [!DNL Adobe Experience Manager Assets] reproduit les modifications de métadonnées apportées aux rendus de la ressource d’origine.
 Lorsque vous modifiez les métadonnées d’une ressource à partir de [!DNL Assets] ou lors du chargement de la ressource, les modifications sont initialement stockées dans le noeud de métadonnées de la hiérarchie de la ressource. La fonction Écriture différée  permet de propager les modifications de métadonnées à l’ensemble des rendus de la ressource ou uniquement à certains d’entre eux. La fonction réécrit uniquement les propriétés de métadonnées qui utilisent l’espace de noms `jcr`, c’est-à-dire qu’une propriété nommée `dc:title` est réécrite, mais qu’une propriété nommée `mytitle` ne l’est pas.
 
 Supposons, par exemple, que vous remplaciez la propriété [!UICONTROL Title] de la ressource intitulée `Classic Leather` par `Nylon`.
 
 ![métadonnées](assets/metadata.png)
 
-Dans ce cas, [!DNL Assets] enregistre les modifications apportées à la propriété **[!UICONTROL Titre]** dans le paramètre `dc:title` pour les métadonnées stockées dans la hiérarchie de la ressource.
+Dans ce cas, [!DNL Assets] enregistre les modifications apportées à la propriété **[!UICONTROL Titre]** dans le paramètre `dc:title` des métadonnées stockées dans la hiérarchie de la ressource.
 
 ![métadonnées stockées dans le noeud de ressource du référentiel](assets/metadata_stored.png)
 
 >[!IMPORTANT]
 >
->La fonction d’écriture différée n’est pas activée par défaut dans [!DNL Assets]. Découvrez comment [activer l’écriture différée des métadonnées](#enable-xmp-writeback). MSM pour les ressources numériques ne fonctionne pas avec l’écriture différée des métadonnées activée. Lors de l’écriture différée, l’héritage est interrompu.
+>La fonction d’écriture différée n’est pas activée par défaut dans [!DNL Assets]. Voir à ce propos la section [activer l’écriture différée des métadonnées](#enable-xmp-writeback). MSM pour les ressources numériques ne fonctionne pas avec l’écriture différée des métadonnées activée. Lors de l’écriture différée, l’héritage est interrompu.
 
 ### Activer l’écriture différée XMP {#enable-xmp-writeback}
 
-[!UICONTROL Le workflow ] Écriture différée des métadonnées de gestion des actifs numériques est utilisé pour écrire les métadonnées d’une ressource. Pour activer l’écriture différée, effectuez l’une des trois méthodes suivantes :
+Le workflow d’[!UICONTROL écriture différée des métadonnées DAM] permet d’effectuer l’écriture différée des métadonnées d’une ressource. Pour activer l’écriture différée, effectuez l’une des trois méthodes suivantes :
 
 * Utilisez des lanceurs.
 * Démarrez manuellement le workflow `DAM MetaData Writeback`.
@@ -98,12 +98,12 @@ Dans ce cas, [!DNL Assets] enregistre les modifications apportées à la propri�
 
 Pour utiliser les lanceurs, procédez comme suit :
 
-1. En tant qu’administrateur, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Lanceurs]**.
-1. Sélectionnez le [!UICONTROL lanceur] pour lequel la colonne **[!UICONTROL Workflow]** affiche **[!UICONTROL Écriture différée des métadonnées de gestion des actifs numériques]**. Cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils.
+1. En tant qu’administrateur, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Lanceurs]**.
+1. Sélectionnez le [!UICONTROL lanceur] pour lequel la colonne **[!UICONTROL Workflow]** affiche **[!UICONTROL Écriture différée des métadonnées de gestion des actifs numériques (DAM)]**. Cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils.
 
    ![Sélectionnez le lanceur d’écriture différée des métadonnées DAM pour modifier ses propriétés et l’activer.](assets/launcher-properties-metadata-writeback1.png)
 
-1. Sélectionnez **[!UICONTROL Activer]** sur la page **[!UICONTROL Propriétés du lanceur]**. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
+1. Sélectionnez **[!UICONTROL Activer]** dans la page **[!UICONTROL Propriétés du lanceur]**. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 
 Pour appliquer manuellement le workflow à une ressource une seule fois, appliquez le workflow [!UICONTROL Écriture différée des métadonnées de gestion des actifs numériques] à partir du rail de gauche.
 
