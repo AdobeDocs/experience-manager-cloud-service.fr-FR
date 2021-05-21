@@ -5,7 +5,7 @@ exl-id: 17a5f951-84e4-4a15-8919-985451e3b527
 source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
 workflow-type: tm+mt
 source-wordcount: '430'
-ht-degree: 88%
+ht-degree: 90%
 
 ---
 
@@ -15,9 +15,9 @@ Cette page répertorie les ressources d’aide autonome sur la sécurité dans E
 
 ## Principaux articles relatifs à la sécurité {#key-articles}
 
-* [Présentation de la sécurité d’AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
-* [Prise en charge IMS d’AEM as a Cloud Service](ims-support.md)
-* [Prise en charge des mêmes cookies de site pour AEM en tant que Cloud Service](same-site-cookie-support.md)
+* [Présentation de la sécurité dans AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
+* [Prise en charge IMS d’AEM as a Cloud Service](ims-support.md)
+* [Prise en charge des mêmes cookies de site pour AEM as a Cloud Service](same-site-cookie-support.md)
 
 ## Guides relatifs à Experience Manager as a Cloud Service {#aem-guides}
 
@@ -45,6 +45,6 @@ Cette page répertorie les ressources d’aide autonome sur la sécurité dans E
 * [Documentation sur les composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 * [Documentation Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Tutoriels sur Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/cloud-service/overview.html)
+* [Tutoriels sur Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/fr/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Forum de la communauté AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
