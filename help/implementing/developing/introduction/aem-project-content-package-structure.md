@@ -5,7 +5,7 @@ exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 source-git-commit: ba5817714d46511c75ec2dd796b2ebd90adecb57
 workflow-type: tm+mt
 source-wordcount: '2873'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -124,7 +124,7 @@ La structure de déploiement d’application recommandée est la suivante :
       + `site-b.ui.config` déploie les configurations OSGi requises par le site B
       + `site-b.ui.content` déploie le contenu et la configuration requis par le site B
 
-### Modules d’applications supplémentaires{#extra-application-packages}
+### Modules d’applications supplémentaires {#extra-application-packages}
 
 Si d’autres projets AEM, eux-mêmes composés de leur propre code et de leurs propres modules de contenu, sont utilisés par le déploiement AEM, leurs modules conteneurs doivent être incorporés dans le module `all` du projet.
 
@@ -142,7 +142,7 @@ Par exemple, un projet AEM incluant deux applications AEM de fournisseurs peut s
 
 Les modules doivent être marqués avec le type déclaré.
 
-+ Les modules conteneurs doivent définir leur `packageType` sur `container`. Les modules conteneurs ne doivent pas contenir directement les bundles OSGi et les configurations OSGi et ne sont pas autorisés à utiliser les [hooks d’installation](http://jackrabbit.apache.org/filevault/installhooks.html).
++ Les modules conteneurs doivent définir leur `packageType` sur `container`. Les packages de conteneur ne doivent pas contenir directement les lots OSGi, les configurations OSGi et ne sont pas autorisés à utiliser de [hooks d’installation](http://jackrabbit.apache.org/filevault/installhooks.html).
 + Les modules de code (non modifiables) doivent définir leur `packageType` sur `application`.
 + Les modules de contenu (modifiables) doivent définir leur `packageType` sur `content`.
 
@@ -161,7 +161,7 @@ Par défaut, Adobe Cloud Manager collecte tous les modules générés par la ver
 >
 >Pour obtenir un fragment de code complet, reportez-vous à la section [Fragments de code XML POM](#pom-xml-snippets) ci-dessous.
 
-## Repo Init{#repo-init}
+## Repo Init {#repo-init}
 
 Repo Init fournit des instructions, ou scripts, qui définissent les structures JCR, allant des structures de nœud courantes comme les arborescences de dossiers, aux utilisateurs, aux utilisateurs de service, aux groupes et à la définition d’ACL.
 
@@ -408,7 +408,7 @@ Dans chaque projet générant un module, **à l’exception** du projet conteneu
     ...
 ```
 
-### Repo Init{#snippet-repo-init}
+### Repo Init {#snippet-repo-init}
 
 Les scripts Repo Init sont définis dans la configuration d’usine OSGi `RepositoryInitializer` via la propriété `scripts`. Puisque ces scripts sont définis dans les configurations OSGi, ils peuvent être facilement définis par le mode d’exécution à l’aide de la sémantique de dossier `../config.<runmode>` habituelle.
 
