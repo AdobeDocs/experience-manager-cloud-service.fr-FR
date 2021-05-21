@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Gestion des ressources
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 715e6e56294172989aa8e512b5cbc6679312e379
+source-git-commit: 1069bbe8483a6504305f48cad43aec9e1c0d5169
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 93%
+source-wordcount: '921'
+ht-degree: 88%
 
 ---
 
@@ -24,14 +24,14 @@ Les types de ressources Visionneuses d’images, Visionneuses à 360°, Visionne
 
 Vous pouvez télécharger des ressources Experience Manager à l’aide des méthodes suivantes :
 
-* [Interface utilisateur d’Experience Manager](#download-in-aem)
+* [Interface utilisateur d’Experience Manager](#download-assets)
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=fr)
 * [Appli de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#download-assets)
 
-## Téléchargement de ressources à l’aide de l’interface [!DNL Experience Manager] {#download-in-aem}
+## Téléchargement de ressources à l’aide de l’interface [!DNL Experience Manager] {#download-assets}
 
-Le service de téléchargement asynchrone fournit un framework permettant le téléchargement transparent de ressources de grande taille. Les fichiers plus petits sont téléchargés en temps réel depuis l’interface utilisateur. Les fichiers volumineux sont téléchargés de manière asynchrone et les utilisateurs sont informés de l’achèvement de l’opération par le biais de notifications Experience Manager dans la boîte de réception. Voir [Présentation de la boîte de réception d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=fr).
+Le service de téléchargement asynchrone fournit un framework permettant le téléchargement transparent de ressources de grande taille. Les fichiers plus petits sont téléchargés en temps réel depuis l’interface utilisateur. [!DNL Experience Manager] ne archive pas les téléchargements de ressources uniques où le fichier d’origine est téléchargé. Cette fonctionnalité permet des téléchargements plus rapides. Les fichiers volumineux sont téléchargés de manière asynchrone et [!DNL Experience Manager] sont avertis de la fin par le biais de notifications dans la boîte de réception. Voir [comprendre [!DNL Experience Manager] Boîte de réception](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 ![Notification de téléchargement](assets/download-notification.png)
 
@@ -51,7 +51,7 @@ Pour télécharger des ressources, procédez comme suit :
 
    *Figure : Options de la boîte de dialogue Télécharger.*
 
-1. Dans la boîte de dialogue Télécharger, sélectionnez les options de téléchargement de votre choix.
+1. Dans la boîte de dialogue de téléchargement, sélectionnez les options de téléchargement de votre choix.
 
    | Option de téléchargement | Description |
    |---|---|
