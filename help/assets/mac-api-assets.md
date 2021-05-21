@@ -1,5 +1,5 @@
 ---
-title: 'API HTTP Assets '
+title: API HTTP Assets
 description: Créer, lire, mettre à jour, supprimer et gérer des ressources numériques à l’aide de l’API HTTP dans [!DNL Experience Manager Assets].
 contentOwner: AG
 feature: API HTTP Assets,API
@@ -8,7 +8,7 @@ exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 source-git-commit: b989833b7f1fa0c3de91f96e28a21859d97294cb
 workflow-type: tm+mt
 source-wordcount: '1519'
-ht-degree: 69%
+ht-degree: 79%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 69%
 
 ## Présentation {#overview}
 
-L’API HTTP [!DNL Assets] permet d’effectuer des opérations CRUD (créer, lire, mettre à jour, supprimer) sur des ressources numériques, y compris sur les métadonnées, les rendus et les commentaires, ainsi que sur du contenu structuré à l’aide de [!DNL Experience Manager] fragments de contenu. Elle est exposée sous `/api/assets` et est implémentée en tant qu’API REST. Elle inclut [la prise en charge des fragments de contenu](/help/assets/content-fragments/assets-api-content-fragments.md).
+L’API HTTP [!DNL Assets] permet d’effectuer des opérations CRUD (créer, lire, mettre à jour, supprimer) sur des ressources numériques, notamment les métadonnées, les rendus et les commentaires, ainsi que sur des contenus structurés grâce à des fragments de contenu [!DNL Experience Manager]. Elle est exposée sous `/api/assets` et est implémentée en tant qu’API REST. Elle inclut [la prise en charge des fragments de contenu](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 Pour accéder à l’API, procédez comme suit :
 
@@ -31,13 +31,13 @@ La réponse de l’API est un fichier JSON pour certains types MIME et un code d
 
 ## Fragments de contenu {#content-fragments}
 
-Un [fragment de contenu](/help/assets/content-fragments/content-fragments.md) est un type spécial de ressource. Il peut être utilisé pour accéder à des données structurées, telles que des textes, des nombres, des dates, etc. Comme il existe plusieurs différences de ressources `standard` (telles que des images ou des documents), certaines règles supplémentaires s’appliquent pour gérer les fragments de contenu.
+Un [fragment de contenu](/help/assets/content-fragments/content-fragments.md) est un type de ressource spécial. Il peut être utilisé pour accéder à des données structurées, telles que des textes, des nombres, des dates, etc. Comme il existe plusieurs différences de ressources `standard` (telles que les images ou les documents), certaines règles supplémentaires s’appliquent pour gérer les fragments de contenu.
 
-Pour plus d’informations, voir [Prise en charge des fragments de contenu dans l’ [!DNL Experience Manager Assets] API HTTP](/help/assets/content-fragments/assets-api-content-fragments.md).
+Pour plus d’informations, consultez [Prise en charge de fragments de contenu dans l’API HTTP d’ [!DNL Experience Manager Assets] .](/help/assets/content-fragments/assets-api-content-fragments.md)
 
 ## Modèle de données {#data-model}
 
-L’API HTTP [!DNL Assets] expose deux éléments principaux, les dossiers et les ressources (pour les ressources standard). Il expose également des éléments plus détaillés pour les modèles de données personnalisés qui décrivent le contenu structuré dans les fragments de contenu. Voir [Modèles de données de fragments de contenu](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) pour plus d’informations.
+L’API HTTP d’[!DNL Assets] présente deux éléments principaux : des dossiers et des ressources (pour les ressources standard). Il expose également des éléments plus détaillés pour les modèles de données personnalisés qui décrivent le contenu structuré dans les fragments de contenu. Pour plus d’informations, consultez [Modèles de données de fragments de contenu](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments).
 
 ### Dossiers {#folders}
 
@@ -79,19 +79,19 @@ Dans [!DNL Experience Manager], un dossier comprend les composants suivants :
 
 ## Fonctionnalités disponibles {#available-features}
 
-L’API HTTP [!DNL Assets] comprend les fonctionnalités suivantes :
+L’API HTTP d’[!DNL Assets] offre les fonctionnalités suivantes :
 
-* [Récupérer une liste de dossiers](#retrieve-a-folder-listing).
+* [Récupérer une liste de dossiers](#retrieve-a-folder-listing)
 * [Créer un dossier](#create-a-folder)
 * [Créer une ressource (obsolète)](#create-an-asset)
-* [Mettre à jour le fichier binaire d’une ressource (obsolète)](#update-asset-binary).
-* [Mettre à jour les métadonnées d’une ressource](#update-asset-metadata).
-* [Créer un rendu de ressource](#create-an-asset-rendition).
-* [Mettre à jour un rendu de ressource](#update-an-asset-rendition).
-* [Créer un commentaire de ressource](#create-an-asset-comment).
-* [Copier un dossier ou une ressource](#copy-a-folder-or-asset).
-* [Déplacer un dossier ou une ressource](#move-a-folder-or-asset).
-* [Supprimer un dossier, une ressource ou un rendu](#delete-a-folder-asset-or-rendition).
+* [Mettre à jour le fichier binaire d’une ressource (obsolète)](#update-asset-binary)
+* [Mettre à jour les métadonnées d’une ressource](#update-asset-metadata)
+* [Créer un rendu de ressource](#create-an-asset-rendition)
+* [Mettre à jour un rendu de ressource](#update-an-asset-rendition)
+* [Créer un commentaire de ressource](#create-an-asset-comment)
+* [Copier un dossier ou une ressource](#copy-a-folder-or-asset)
+* [Déplacer un dossier ou une ressource](#move-a-folder-or-asset)
+* [Supprimer un dossier, une ressource ou un rendu](#delete-a-folder-asset-or-rendition)
 
 >[!NOTE]
 >
@@ -147,11 +147,11 @@ Un appel d’API échoue avec un code de réponse `500` si le nœud parent du ch
 
 ## Créer une ressource {#create-an-asset}
 
-Voir [Chargement de ressources](developer-reference-material-apis.md) pour plus d’informations sur la création d’une ressource. Vous ne pouvez pas créer de ressource à l’aide de l’API HTTP.
+Pour plus d’informations sur la création d’une ressource, consultez [Chargement de ressources](developer-reference-material-apis.md). Vous ne pouvez pas créer de ressource à l’aide de l’API HTTP.
 
 ## Mettre à jour un fichier binaire de ressource {#update-asset-binary}
 
-Voir [Chargement de ressources](developer-reference-material-apis.md) pour plus d’informations sur la mise à jour des fichiers binaires de ressources. Vous ne pouvez pas mettre à jour un fichier binaire de ressource à l’aide de l’API HTTP.
+Pour plus d’informations sur la mise à jour de fichiers binaires de ressources, consultez [Chargement de ressources](developer-reference-material-apis.md). Vous ne pouvez pas mettre à jour un fichier binaire de ressources à l’aide de l’API HTTP.
 
 ## Mettre à jour les métadonnées d’une ressource {#update-asset-metadata}
 
