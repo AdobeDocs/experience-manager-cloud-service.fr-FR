@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Gestion des ressources,Publication,Collaboration,Traitement des ressources
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
+source-git-commit: 6c1320d43b551247e63962dd52ada58d463fb92e
 workflow-type: tm+mt
-source-wordcount: '4505'
-ht-degree: 92%
+source-wordcount: '4502'
+ht-degree: 90%
 
 ---
 
@@ -250,9 +250,7 @@ De plus, désactivez le bouton Forcer la suppression à l’aide d’un recouvre
 
 1. Accédez à l’emplacement des ressources que vous souhaitez supprimer.
 
-1. Sélectionnez la ressource et appuyez/cliquez sur l’icône **[!UICONTROL Supprimer]** de la barre d’outils.
-
-   ![delete_icon](assets/delete_icon.png)
+1. Sélectionnez la ressource, puis cliquez sur **[!UICONTROL Supprimer]** ![delete_icon](assets/do-not-localize/delete-icon.png) dans la barre d’outils.
 
 1. Dans la boîte de dialogue de confirmation, cliquez sur :
 
@@ -260,7 +258,7 @@ De plus, désactivez le bouton Forcer la suppression à l’aide d’un recouvre
    * **[!UICONTROL Supprimer]** pour confirmer l’action :
 
       * Si la ressource ne comporte aucune référence, elle est supprimée.
-      * Si la ressource comporte des références, un message d’erreur vous informe qu’**une ou plusieurs ressources sont référencées.** Vous pouvez sélectionner **[!UICONTROL Forcer la suppression]** ou **[!UICONTROL Annuler]**.
+      * Si la ressource comporte des références, un message d’erreur vous informe qu’**[!UICONTROL une ou plusieurs ressources sont référencées]**. Vous pouvez sélectionner **[!UICONTROL Forcer la suppression]** ou **[!UICONTROL Annuler]**.
 
    >[!NOTE]
    >
@@ -268,14 +266,11 @@ De plus, désactivez le bouton Forcer la suppression à l’aide d’un recouvre
 
    >[!NOTE]
    >
-   >Pour résoudre ou supprimer les références entrantes provenant d’autres pages, mettez à jour les références appropriées avant de supprimer une ressource.
-   >
-   >
-   >De plus, désactivez le bouton Forcer la suppression à l’aide d’un recouvrement afin d’empêcher les utilisateurs de supprimer des ressources référencées et de conserver des liens rompus.
+   >Pour résoudre ou supprimer les références entrantes provenant d’autres pages, mettez à jour les références appropriées avant de supprimer une ressource. Vous pouvez interdire la suppression des ressources référencées, car elle entraîne des liens rompus. Désactivez le bouton Forcer la suppression à l’aide d’une superposition.
 
 ## Téléchargement de ressources {#download-assets}
 
-Voir la section [Téléchargement de ressources à partir d’ [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
+Voir [Téléchargement de ressources à partir de [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
 ## Publication ou annulation de la publication de ressources {#publish-assets}
 
