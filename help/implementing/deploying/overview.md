@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
 source-wordcount: '3334'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -63,7 +63,7 @@ Les modifications d’application dues au modèle de déploiement bleu/vert éta
 
 Pour les clients qui disposent de bases de code, il est essentiel de passer par l’exercice de restructuration du référentiel décrit dans la documentation d’AEM en vue de s’assurer que le contenu qui se trouvait auparavant sous /etc est déplacé vers le bon emplacement.
 
-Certaines restrictions supplémentaires s’appliquent à ces modules de code, par exemple [install hooks](http://jackrabbit.apache.org/filevault/installhooks.html) ne sont pas pris en charge.
+Certaines restrictions supplémentaires s’appliquent à ces packages de code, les [hooks d’installation](http://jackrabbit.apache.org/filevault/installhooks.html) ne sont par exemple pas pris en charge.
 
 ## Configuration OSGI {#osgi-configuration}
 
@@ -135,14 +135,14 @@ Il est préférable d’opter pour repoinit pour ces scénarios de modification 
 * Repoinit est un jeu d’instructions relativement sûr, car vous contrôlez explicitement l’action à entreprendre. En outre, les seules opérations prises en charge sont les ajouts, à l’exception de quelques cas liés à la sécurité qui permettent de supprimer des utilisateurs, des utilisateurs du service et des groupes. En revanche, la suppression d’un élément dans l’approche du module de contenu modifiable est explicite ; lorsque vous définissez un filtre, tout élément couvert par ce filtre sera supprimé. Néanmoins, il faut être prudent car, pour tout contenu, il existe des scénarios où la présence d’un nouveau contenu peut modifier le comportement de l’application.
 * Repoinit effectue des opérations atomiques et rapides. Cependant, les modules de contenu modifiable peuvent fortement dépendre des performances selon les structures couvertes par un filtre. Même si vous mettez à jour un nœud unique, un instantané d’une grande arborescence peut être créé.
 * Il est possible de valider les instructions repoinit sur un environnement de développement local au moment de l’exécution, car elles seront exécutées lorsque la configuration OSGi sera enregistrée.
-* Les instructions repoinit sont atomiques et explicites, et ignorent si l’état correspond déjà.
+* Les instructions repoinit sont atomiques et explicites, et sont ignorées si le statut correspond déjà.
 
 Lorsque Cloud Manager déploie l’application, il exécute ces instructions, indépendamment de l’installation des modules de contenu.
 
 Pour créer des instructions repoinit, procédez comme suit :
 
 1. Ajoutez une configuration OSGi pour le PID d’usine `org.apache.sling.jcr.repoinit.RepositoryInitializer` dans un dossier de configuration du projet. Utilisez un nom explicite pour la configuration, tel que **org.apache.sling.jcr.repoinit.RepositoryInitializer~initstructure**.
-1. Ajoutez des instructions repoinit à la propriété de script de la configuration. La syntaxe et les options sont décrites dans la [documentation Sling](https://sling.apache.org/documentation/bundles/repository-initialization.html). Notez que vous devez créer explicitement un dossier parent avant leurs dossiers enfants. Par exemple, une création explicite de `/content` avant `/content/myfolder`, et avant `/content/myfolder/mysubfolder`. Pour que les listes de contrôle d’accès soient définies sur des structures de bas niveau, il est recommandé de les définir sur un niveau supérieur et de travailler avec une restriction `rep:glob`. Par exemple, `(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))`.
+1. Ajoutez des instructions repoinit à la propriété de script de la configuration. La syntaxe et les options sont décrites dans la [documentation Sling](https://sling.apache.org/documentation/bundles/repository-initialization.html). Notez que vous devez créer explicitement un dossier parent avant leurs dossiers enfants. Par exemple, une création explicite de `/content` avant `/content/myfolder`, et avant `/content/myfolder/mysubfolder`. Pour que les listes de contrôle d’accès soient définies sur des structures de bas niveau, il est recommandé de les définir sur un niveau supérieur et de travailler avec une restriction `rep:glob`.  Par exemple, `(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))`.
 1. Validez l’environnement de développement local au moment de l’exécution.
 
 <!-- last statement in step 2 to be clarified with Brian -->
@@ -173,7 +173,7 @@ Il existe des cas d’utilisation où un module de contenu doit être installé 
 
 Le gestionnaire de modules étant un concept d’exécution, il n’est pas possible d’installer du contenu ni du code dans le référentiel non modifiable. Par conséquent, ces modules doivent être constitués uniquement de contenu modifiable (principalement `/content` ou `/conf`). Si le module comprend du contenu mixte (modifiable et non modifiable), seul le contenu modifiable sera installé.
 
-Les modules de contenu (modifiable ou non) installés via Cloud Manager s’affichent dans un état figé au sein de l’interface utilisateur du gestionnaire de modules AEM. Ces modules ne peuvent pas être réinstallés, recréés, ni même téléchargés. Ils sont répertoriés avec le suffixe **« cp2fm »**, indiquant que leur installation a été gérée par Cloud Manager.
+Les modules de contenu (modifiable ou non) installés via Cloud Manager s’affichent dans un statut figé au sein de l’interface utilisateur du gestionnaire de modules AEM. Ces modules ne peuvent pas être réinstallés, recréés, ni même téléchargés. Ils sont répertoriés avec le suffixe **« cp2fm »**, indiquant que leur installation a été gérée par Cloud Manager.
 
 ### Inclusion de modules tiers {#including-third-party}
 
@@ -236,14 +236,14 @@ Comme les mises à jour d’AEM, les versions des clients sont déployées à l�
 * La version bleue est active, tandis qu’une version finale verte est créée et disponible.
 * S’il existe des définitions d’index nouvelles ou mises à jour, les index correspondants sont traités. Notez que le déploiement bleu utilisera toujours les anciens index, mais le vert utilisera toujours les nouveaux.
 * La version verte commence alors que la version bleue est encore en service.
-* La version bleue fonctionne et reste en service pendant que la version verte est contrôlée pour vérifier l’état de préparation au moyen de contrôles d’intégrité.
+* La version bleue fonctionne et reste en service pendant que la version verte est contrôlée pour vérifier le statut de préparation au moyen de contrôles d’intégrité.
 * Les nœuds verts qui sont prêts acceptent le trafic et remplacent les nœuds bleus, qui sont désactivés.
 * Au fil du temps, les nœuds bleus sont remplacés par des nœuds verts jusqu’à ce que seuls les nœuds verts restent, ce qui permet de terminer le déploiement.
 * Tout contenu modifiable nouveau ou modifié est déployé.
 
 ## Index {#indexes}
 
-Les nouveaux index ou les index modifiés entraîneront une étape supplémentaire d’indexation ou de réindexation avant que la nouvelle version (verte) puisse prendre en charge le trafic. Vous trouverez dans [cet article](/help/operations/indexing.md) des informations détaillées sur la gestion des index dans AEM as a Cloud Service. Vous pouvez vérifier l’état de la tâche d’indexation sur la page de version Cloud Manager et vous recevrez une notification lorsque la nouvelle version sera prête à recevoir le trafic.
+Les nouveaux index ou les index modifiés entraîneront une étape supplémentaire d’indexation ou de réindexation avant que la nouvelle version (verte) puisse prendre en charge le trafic. Vous trouverez dans [cet article](/help/operations/indexing.md) des informations détaillées sur la gestion des index dans AEM as a Cloud Service. Vous pouvez vérifier le statut de la tâche d’indexation sur la page de version Cloud Manager et vous recevrez une notification lorsque la nouvelle version sera prête à recevoir le trafic.
 
 >[!NOTE]
 >
