@@ -5,7 +5,7 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '343'
-ht-degree: 71%
+ht-degree: 82%
 
 ---
 
@@ -41,9 +41,9 @@ La suppression du nom de domaine personnalisé est en cours.
 La suppression du nom de domaine personnalisé a échoué. Vous devez réessayer. Consultez [Suppression d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) pour en savoir plus.
 
 
-## Configurations de réseau de diffusion de contenu préexistantes pour les Listes autorisées IP {#pre-existing-cdn}
+## Configurations CDN préexistantes pour les listes autorisées d’adresses IP {#pre-existing-cdn}
 
-Les clients avec des environnements qui incluent des configurations CDN préexistantes pour les Listes autorisées IP, les certificats SSL ou les noms de domaine personnalisés verront le message suivant dans la **Liste autorisée IP** et la page de détails **Environnement**. Le message affiché dans l’interface utilisateur disparaît une fois que le client a entièrement migré toutes les configurations d’environnement préexistantes via l’interface utilisateur et il peut prendre 1 à 2 jours ouvrables pour que le message disparaisse.
+Les clients avec des environnements qui incluent des configurations CDN préexistantes pour les Listes autorisées IP, les certificats SSL ou les noms de domaine personnalisés verront le message suivant dans la **Liste autorisée IP** et la page de détails **Environnement**. Le message affiché dans l’interface utilisateur disparaît une fois que le client a effectué la migration complète de toutes les configurations d’environnement préexistantes via l’interface utilisateur et il peut s’écouler entre 1 et 2 jours ouvrés avant que le message ne disparaisse.
 
 >[!NOTE]
 >Pour afficher et gérer les configurations préexistantes, elles doivent être ajoutées via l’interface utilisateur. Pour plus d’informations, voir [Ajout d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) .
