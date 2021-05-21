@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
 source-wordcount: '3935'
-ht-degree: 72%
+ht-degree: 78%
 
 ---
 
@@ -25,10 +25,10 @@ L’utilisation de l’API GraphQL dans AEM permet la diffusion efficace de frag
 
 >[!NOTE]
 >
->GraphQL est actuellement utilisé comme Cloud Service dans deux scénarios (distincts) dans Adobe Experience Manager (AEM) :
+>GraphQL est actuellement utilisé dans deux scénarios (distincts) dans Adobe Experience Manager (AEM) as a Cloud Service :
 >
 >* [AEM Commerce utilise des données d’une plateforme Commerce via GraphQL](/help/commerce-cloud/integrating/magento.md).
->* Les fragments de contenu AEM fonctionnent avec l’API GraphQL AEM (une mise en oeuvre personnalisée, basée sur GraphQL standard) pour fournir du contenu structuré à utiliser dans vos applications.
+>* Les fragments de contenu d’AEM fonctionnent conjointement avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard), pour fournir du contenu structuré à utiliser dans vos applications.
 
 
 ## L’API GraphQL {#graphql-api}
@@ -250,20 +250,20 @@ Par exemple, si un utilisateur a créé un modèle de fragment de contenu nommé
 
    ![Modèle de fragment de contenu à utiliser avec GraphQL](assets/cfm-graphqlapi-01.png "Modèle de fragment de contenu à utiliser avec GraphQL")
 
-1. Le schéma GraphQL correspondant (sortie de la documentation automatique GraphiQL) :
+1. Le schéma GraphQL correspondant (sortie de la documentation automatique GraphiQL) :
    ![Schéma GraphQL basé sur le modèle de fragment de contenu](assets/cfm-graphqlapi-02.png "Schéma GraphQL basé sur le modèle de fragment de contenu")
 
    Cela montre que le type généré `ArticleModel` contient plusieurs [champs](#fields).
 
    * Trois d’entre eux ont été contrôlés par l’utilisateur : `author`, `main` et `referencearticle`.
 
-   * Les autres champs ont été ajoutés automatiquement par AEM et représentent des méthodes utiles pour fournir des informations sur un certain fragment de contenu ; dans cet exemple, `_path`, `_metadata` et `_variations`. Ces [champs d’assistance](#helper-fields) sont marqués d’un `_` précédent afin de faire la distinction entre ce qui a été défini par l’utilisateur et ce qui a été généré automatiquement.
+   * Les autres champs ont été ajoutés automatiquement par AEM et représentent des méthodes utiles pour fournir des informations sur un certain fragment de contenu ; dans cet exemple, `_path`, `_metadata` et `_variations`. Ces [champs d’assistance](#helper-fields) sont précédés d’un `_` pour distinguer ce qui a été défini par l’utilisateur de ce qui a été généré automatiquement.
 
 1. Après qu’un utilisateur a créé un fragment de contenu reposant sur le modèle d’article, il peut être interrogé via GraphQL. Vous trouverez des exemples à la section [Exemples de Requêtes](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries) (basée sur un [modèle de structure de fragment de contenu à utiliser avec GraphQL](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)).
 
 Dans GraphQL pour AEM, le schéma est flexible. Cela signifie qu’il est généré automatiquement à chaque fois qu’un modèle de fragment de contenu est créé, mis à jour ou supprimé. Les caches de schémas de données sont également actualisés lorsque vous mettez à jour un modèle de fragment de contenu.
 
-Le service Sites GraphQL écoute (en arrière-plan) toutes les modifications apportées à un modèle de fragment de contenu. Lorsque des mises à jour sont détectées, seule cette partie du schéma est régénérée. Cette optimisation permet de gagner du temps et d’offrir une certaine stabilité.
+Le service Sites GraphQL écoute (en arrière-plan) toutes les modifications apportées à un modèle de fragment de contenu. Lorsque des mises à jour sont détectées, seule cette partie du schéma est régénérée. Cette optimisation permet de gagner du temps et d’apporter de la stabilité.
 
 Par exemple, si vous :
 
@@ -314,7 +314,7 @@ GraphQL pour AEM prend en charge une liste de types. Tous les types de données 
 | Modèle de fragment de contenu – Type de données | Type GraphQL | Description |
 |--- |--- |--- |
 | Texte sur une seule ligne | Chaîne, [Chaîne] |  Utilisé pour les chaînes simples telles que les noms d’auteurs, les noms d’emplacements, etc.. |
-| Texte multi-lignes | Chaîne |  Utilisé pour générer du texte, tel que le corps d’un article |
+| Texte multi-lignes | Chaîne |  Utilisé pour la sortie de texte, tel que le corps d’un article |
 | Nombre |  Flottant, [Flottant] | Utilisé pour afficher le nombre à virgule flottante et les nombres réguliers |
 | Booléen |  Booléen |  Utilisé pour afficher les cases à cocher → simples instructions vrai/faux |
 | Date et heure | Calendrier |  Utilisé pour afficher la date et l’heure au format ISO 8086 : Selon le type sélectionné, trois versions sont disponibles dans AEM GraphQL : `onlyDate`, `onlyTime`, `dateTime` |
@@ -534,7 +534,7 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 
 * Si vous prévoyez une liste de résultats :
    * Ajoutez `List` au nom du modèle ; par exemple, `cityList`
-   * Voir [Exemple de requête – Toutes les informations sur toutes les villes ](#sample-all-information-all-cities)
+   * Voir [Exemple de requête – Toutes les informations sur toutes les villes](#sample-all-information-all-cities)
 
 * Si vous souhaitez utiliser un OU logique :
    * Utilisez ` _logOp: OR`
@@ -543,33 +543,33 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 * L’opérateur logique ET existe également, mais est (souvent) implicite
 
 * Vous pouvez appliquer des requêtes aux noms de champ qui correspondent aux champs du modèle de fragment de contenu.
-   * Voir [Exemple de requête – Détails complets relatifs au PDG et aux employés d’une entreprise ](#sample-full-details-company-ceos-employees)
+   * Voir [Exemple de requête – Détails complets relatifs au PDG et aux employés d’une entreprise](#sample-full-details-company-ceos-employees)
 
-* Outre les champs de votre modèle, il existe certains champs générés par le système (précédés de traits de soulignement) :
+* Outre les champs de votre modèle, il existe certains champs générés par le système (précédés d’un trait de soulignement) :
 
    * Pour le contenu :
 
       * `_locale` : pour afficher la langue ; basé sur Language Manager
-         * Voir [Exemple de requête pour plusieurs fragments de contenu d’un paramètre régional donné ](#sample-wknd-multiple-fragments-given-locale)
+         * Voir [Exemple de requête pour plusieurs fragments de contenu d’un paramètre régional donné](#sample-wknd-multiple-fragments-given-locale)
       * `_metadata` : pour afficher les métadonnées de votre fragment
          * Voir [Modèle de recherche de métadonnées – Répertorier les métadonnées des prix intitulés GB](#sample-metadata-awards-gb)
       * `_model` : autoriser l’interrogation d’un modèle de fragment de contenu (chemin et titre)
          * Voir [Exemple de requête pour un modèle de fragment de contenu à partir d’un modèle](#sample-wknd-content-fragment-model-from-model)
-      * `_path` : le chemin d’accès à votre fragment de contenu dans le référentiel ;
+      * `_path` : chemin d’accès au fragment de contenu dans le référentiel.
          * Voir [Exemple de requête – Un fragment de ville unique et spécifique](#sample-single-specific-city-fragment)
       * `_reference` : pour afficher les références ; y compris les références intégrées dans l’éditeur de texte enrichi
-         * Voir [Exemple de requête pour plusieurs fragments de contenu avec des références préalablement récupérées ](#sample-wknd-multiple-fragments-prefetched-references)
+         * Voir [Exemple de requête pour plusieurs fragments de contenu avec des références préalablement récupérées](#sample-wknd-multiple-fragments-prefetched-references)
       * `_variation` : pour afficher des variantes spécifiques dans votre fragment de contenu
          * Voir [Exemple de requête – Toutes les villes avec une variante nommée](#sample-cities-named-variation)
    * Et les opérations :
 
-      * `_operator` : pour appliquer des opérateurs spécifiques ; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`,, `STARTS_WITH`
+      * `_operator` : pour appliquer des opérateurs spécifiques ; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
          * Voir [Exemple de requête – Toutes les personnes qui ne portent pas le nom « Jobs »](#sample-all-persons-not-jobs)
          * Voir [Exemple de requête : toutes les aventures où `_path` commence par un préfixe spécifique](#sample-wknd-all-adventures-cycling-path-filter)
       * `_apply` : pour appliquer des conditions spécifiques ; par exemple `AT_LEAST_ONCE`
-         * Voir [Exemple de requête : effectuer un filtrage sur un tableau avec un élément qui doit se produire au moins une fois ](#sample-array-item-occur-at-least-once)
+         * Voir [Exemple de requête : effectuer un filtrage sur un tableau avec un élément qui doit se produire au moins une fois](#sample-array-item-occur-at-least-once)
       * `_ignoreCase` : pour ignorer la casse lors de l’application de la requête
-         * Voir [Exemple de requête : toutes les villes dont le nom contient SAN, indépendamment de la casse ](#sample-all-cities-san-ignore-case)
+         * Voir [Exemple de requête : toutes les villes dont le nom contient SAN, indépendamment de la casse](#sample-all-cities-san-ignore-case)
 
 
 
@@ -582,7 +582,7 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 * Les types d’union GraphQL sont pris en charge :
 
    * Utilisez `... on`
-      * Voir [Exemple de requête pour un fragment de contenu d’un modèle spécifique avec une référence de contenu ](#sample-wknd-fragment-specific-model-content-reference)
+      * Voir [Exemple de requête pour un fragment de contenu d’un modèle spécifique avec une référence de contenu](#sample-wknd-fragment-specific-model-content-reference)
 
 ## Requêtes conservées (cache) {#persisted-queries-caching}
 
@@ -801,12 +801,12 @@ Vous trouverez ci-dessous les étapes nécessaires à la conservation d’une re
    >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    >```
 
-## Requête du point d’entrée GraphQL à partir d’un site Web externe {#query-graphql-endpoint-from-external-website}
+## Requête du point d’entrée GraphQL à partir d’un site web externe {#query-graphql-endpoint-from-external-website}
 
-Pour accéder au point d’entrée GraphQL à partir d’un site web externe, vous devez configurer les éléments suivants :
+Pour accéder au point d’entrée GraphQL à partir d’un site web externe, vous devez configurer les éléments suivants :
 
 * [Filtre CORS](#cors-filter)
-* [Filtre de référent](#referrer-filter)
+* [Filtre Référent](#referrer-filter)
 
 ### Filtre CORS {#cors-filter}
 
@@ -814,9 +814,9 @@ Pour accéder au point d’entrée GraphQL à partir d’un site web externe, vo
 >
 >Pour un aperçu détaillé de la politique de partage des ressources CORS dans AEM, voir [Description du partage des ressources Cross-Origin (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=fr#understand-cross-origin-resource-sharing-(cors)).
 
-Pour accéder au point d’entrée GraphQL, une stratégie CORS doit être configurée dans le référentiel Git du client. Pour ce faire, ajoutez un fichier de configuration OSGi CORS approprié pour le ou les points de terminaison souhaités.
+Pour accéder au point d’entrée GraphQL, une stratégie CORS doit être configurée dans le référentiel Git du client. Vous devez pour cela ajouter un fichier de configuration CORS OSGi approprié pour le ou les points d’entrée souhaités.
 
-Cette configuration doit spécifier une origine de site web de confiance `alloworigin` ou `alloworiginregexp` pour laquelle l’accès doit être accordé.
+Cette configuration doit spécifier une origine de site web approuvée `alloworigin` ou `alloworiginregexp` pour laquelle l’accès doit être accordé.
 
 Par exemple, pour accorder l’accès au point d’entrée GraphQL et au point d’entrée de requêtes persistantes pour `https://my.domain`, vous pouvez utiliser :
 
@@ -853,18 +853,18 @@ Par exemple, pour accorder l’accès au point d’entrée GraphQL et au point d
 }
 ```
 
-Si vous avez configuré un chemin d’accès Vanity pour le point de terminaison, vous pouvez également l’utiliser dans `allowedpaths`.
+Si vous avez configuré un chemin d’accès Vanity pour le point d’entrée, vous pouvez également l’utiliser dans `allowedpaths`.
 
-### Filtre de référent {#referrer-filter}
+### Filtre Référent {#referrer-filter}
 
 Outre la configuration CORS, un filtre Référent doit être configuré pour autoriser l’accès à partir d’hôtes tiers.
 
-Pour ce faire, ajoutez un fichier de configuration du filtre de référent OSGi approprié qui :
+Pour ce faire, ajoutez un fichier de configuration de filtre Référent OSGi approprié qui :
 
-* spécifie un nom d’hôte de site Web approuvé ; soit `allow.hosts` soit `allow.hosts.regexp`,
+* spécifie un nom d’hôte de site web approuvé ; soit `allow.hosts`, soit `allow.hosts.regexp`,
 * accorde l’accès pour ce nom d’hôte.
 
-Par exemple, pour accorder l’accès aux requêtes avec le référent `my.domain`, vous pouvez :
+Par exemple, pour accorder l’accès aux requêtes avec le référent `my.domain`, vous pouvez :
 
 ```xml
 {
