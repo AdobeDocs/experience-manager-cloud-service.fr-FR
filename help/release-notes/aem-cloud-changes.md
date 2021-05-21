@@ -5,7 +5,7 @@ exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ La console web, qui était utilisée dans les versions précédentes d’AEM pou
 
 ## Les modifications apportées au référentiel de publication ne sont pas autorisées {#changes-to-publish-repo}
 
-Outre les modifications apportées au dossier `/home` au niveau de publication, les modifications directes apportées au référentiel de publication ne sont pas autorisées sur AEM Cloud Service. Dans les versions antérieures d’AEM on-premise ou d’AEM sur AMS, les modifications de code peuvent être apportées directement au référentiel de publication. Certaines limites peuvent être atténuées comme suit :
+Outre les modifications apportées au dossier `/home` dans la couche Publication, les modifications directes apportées au référentiel de publication ne sont pas autorisées sur AEM Cloud Service. Dans les versions précédentes d’AEM ou d’AEM on AMS, des modifications de code pouvaient être apportées directement au référentiel de publication. Certaines limitations peuvent être atténuées de différentes manières :
 
 * Pour le contenu et la configuration basée sur le contenu : effectuez les modifications sur l’instance d’auteur et publiez-les.
 * Pour le code et la configuration : effectuez les modifications dans le référentiel GIT et exécutez le pipeline CI/CD pour les déployer.
