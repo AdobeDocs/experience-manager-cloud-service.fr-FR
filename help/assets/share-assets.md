@@ -8,7 +8,7 @@ exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '755'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
@@ -170,7 +170,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Activation des actions de bureau à utiliser avec l’application de bureau {#desktop-actions}
 
-À partir de l’interface utilisateur d’[!DNL Assets] ouverte dans un navigateur, vous pouvez explorer l’emplacement des ressources ou extraire et ouvrir une ressource pour la modifier dans votre application de bureau. Ces options sont appelées actions de bureau. Pour les activer, voir [Activation des actions de bureau dans [!DNL Assets] l’interface web](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#desktopactions-v2).
+À partir de l’interface utilisateur d’[!DNL Assets] ouverte dans un navigateur, vous pouvez explorer l’emplacement des ressources ou extraire et ouvrir une ressource pour la modifier dans votre application de bureau. Ces options sont appelées actions de bureau ; pour les activer, voir [Activation des actions de bureau dans l’interface web  [!DNL Assets] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#desktopactions-v2).
 
 ![Activation des actions de bureau à utiliser comme raccourci dans une application de bureau](assets/enable_desktop_actions.png)
 
@@ -184,8 +184,8 @@ Voir [comment configurer [!DNL Assets] pour l’utiliser avec [!DNL Adobe Asset 
 
 * Les collections ou les dossiers de ressources dont le nom contient un espace blanc risquent de ne pas être partagés.
 * Si les utilisateurs ne peuvent pas télécharger les ressources partagées, contactez votre administrateur AEM pour connaître les [limites de téléchargement](#maxdatasize).
-* Pour qu’un utilisateur puisse prévisualiser une vidéo partagée à l’aide du partage de liens, la vidéo doit disposer d’un rendu vidéo statique disponible à l’emplacement `/jcr:content/renditions` dans le noeud de la vidéo dans le référentiel. L’aperçu ne dépend pas de la disponibilité d’un rendu [!DNL Dynamic Media].
-* Lors du téléchargement d’une ressource vidéo via le partage de lien, les rendus [!DNL Dynamic Media] ne sont pas inclus dans l’archive téléchargée.
+* Pour qu’un utilisateur puisse prévisualiser une vidéo partagée à l’aide du partage de liens, la vidéo doit disposer d’un rendu vidéo statique disponible à l’emplacement `/jcr:content/renditions` du nœud de la vidéo, dans le référentiel. La prévisualisation ne dépend pas de la disponibilité d’un rendu [!DNL Dynamic Media].
+* Lors du téléchargement d’une ressource vidéo via le partage de liens, les rendus [!DNL Dynamic Media] ne sont pas inclus dans l’archive téléchargée.
 
 <!--
 * If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your AEM administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not. 
