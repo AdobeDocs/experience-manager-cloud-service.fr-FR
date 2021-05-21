@@ -8,7 +8,7 @@ role: Architect, Developer
 source-git-commit: 54c68264dfc900604bbddace09bb8986b4fa4010
 workflow-type: tm+mt
 source-wordcount: '677'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 92%
 # Intégration {#onboarding}
 
 + [Intégration à AEM as a Cloud Service](/help/onboarding/home.md)
-+ Prise en main d’AEM en tant que Cloud Service {#what-is-required}
++ Prise en main d’AEM as a Cloud Service {#what-is-required}
    + [Obtention de votre Adobe ID](what-is-required/get-your-adobe-id.md)
    + [Rôles de Cloud Manager](what-is-required/user-roles-permissions.md)
    + [Tâches de l’administrateur système](what-is-required/add-users-assign-cm-roles.md)
@@ -62,7 +62,7 @@ ht-degree: 92%
       + [Obtention d’un nom de domaine personnalisé](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/get-custom-domain-name.html?lang=fr)
       + [Ajout d’un nom de domaine personnalisé](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html?lang=fr)
       + [Ajout d’un enregistrement TXT](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html?lang=fr)
-      + [Vérification de l’état du nom de domaine personnalisé ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=fr)
+      + [Vérification de l’état du nom de domaine personnalisé](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=fr)
       + [Configuration des paramètres DNS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html?lang=fr)
       + [Vérification du statut de l’enregistrement DNS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=fr)
       + [Affichage et mise à jour du nom de domaine personnalisé](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html?lang=fr)
@@ -104,7 +104,7 @@ ht-degree: 92%
    + [Migration vers Adobe Experience Manager as a Cloud Service](migration-methodology/getting-started.md)
 + Bonnes pratiques {#best-practices}
    + [Gestion de l’optimisation et des URL](best-practices/seo-and-url-management.md)
-   + [Évaluation des IPC](best-practices/assessing-kpis.md)
+   + [Évaluation des indicateurs de performance clés](best-practices/assessing-kpis.md)
    + [Alignement des indicateurs de performance clés](best-practices/aligning-kpis.md)
    + [Choisir la bonne équipe](best-practices/choose-right-team.md)
 + [Présentation des consoles des outils](tools-consoles.md)
