@@ -5,7 +5,7 @@ exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1885'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -120,7 +120,7 @@ Cloud Manager a évolué sous la forme d’un portail en libre-service où les p
 
 * Réception de notifications relatives à des événements de cycle de vie importants pour ces composants (par exemple, mises à jour de produits).
 
-Cloud Manager crée des environnements dans des centres de données dans de nombreuses régions géographiques, ce qui permet une couverture globale. Les points de présence du réseau CDN (PoPs) assurent la diffusion de contenu à faible latence pour les clients situés dans le monde entier.
+Cloud Manager crée des environnements dans les centres de données dans de nombreuses régions géographiques, ce qui permet une couverture mondiale. Les points de présence CDN (PoP) assurent une diffusion de contenu à faible latence pour les clients du monde entier.
 
 >[!NOTE]
 >Reportez-vous à [Accès à Experience Manager as a Cloud Service](/help/onboarding/what-is-required/accessing-aem-instance.md) pour prendre en main Cloud Manager dans AEM as a Cloud Service.
