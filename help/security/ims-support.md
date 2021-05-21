@@ -82,7 +82,7 @@ Pour gérer facilement la création d’utilisateurs, un fichier `.csv` peut êt
 
 L’outil de synchronisation des utilisateurs (ou UST, User Sync Tool) permet aux clients d’entreprise de créer ou de gérer des utilisateurs Adobe utilisant Active Directory. Cela fonctionne également pour d’autres services d’annuaire OpenLDAP testés. Les utilisateurs cibles sont les administrateurs d’identité informatique (administrateurs d’annuaire d’entreprise ou système) qui pourront installer et configurer l’outil. Cet outil Open Source est personnalisable, de telle sorte que les clients puissent le modifier en fonction de vos exigences spécifiques.
 
-Lorsque la synchronisation des utilisateurs s’exécute, elle récupère une liste d’utilisateurs à partir de l’annuaire Active Directory de l’organisation et la compare à la liste des utilisateurs dans Admin Console. Elle appelle ensuite l’API de gestion des utilisateurs Adobe pour synchroniser Admin Console avec le répertoire de l’organisation. Le flux des modifications est entièrement unidirectionnel. Les modifications effectuées dans Admin Console ne sont pas transférées vers l’annuaire.
+Lorsque la synchronisation des utilisateurs s’exécute, elle récupère une liste d’utilisateurs à partir de l’annuaire Active Directory de l’organisation et la compare à la liste des utilisateurs dans Admin Console.  Elle appelle ensuite l’API de gestion des utilisateurs Adobe pour synchroniser Admin Console avec le répertoire de l’organisation. Le flux des modifications est entièrement unidirectionnel. Les modifications effectuées dans Admin Console ne sont pas transférées vers l’annuaire.
 
 Cet outil permet à l’administrateur système de mapper les groupes d’utilisateurs dans l’annuaire du client avec la configuration de produits et les groupes d’utilisateurs dans Admin Console.
 
@@ -116,7 +116,7 @@ Le fonctionnement de l’API User Management utilisée par l’outil de synchron
 >
 >La configuration IMS requise pour AEM sera automatiquement définie lorsque les environnements et instances AEM seront fournis. Cependant, l’administrateur peut la modifier en fonction de ses besoins à l’aide de la méthode décrite [ici](/help/implementing/deploying/overview.md).
 
-La configuration IMS requise pour AEM sera automatiquement définie lorsque les environnements et instances AEM seront fournis. Les administrateurs du client peuvent modifier une partie de la configuration en fonction de leurs besoins.
+La configuration IMS requise pour AEM sera automatiquement définie lorsque les environnements et instances AEM seront fournis.  Les administrateurs du client peuvent modifier une partie de la configuration en fonction de leurs besoins.
 
 L’approche globale consiste à configurer Adobe IMS en tant que fournisseur OAuth. Le **gestionnaire de synchronisation par défaut Apache Jackrabbit Oak** peut être modifié comme pour la synchronisation LDAP.
 
@@ -204,7 +204,7 @@ Comme illustré ci-dessous, le groupe **AEM-GRP_008** hérite des autorisations 
 
 ### Accès à Cloud Manager {#accessing-cloud-manager}
 
-Pour pouvoir accéder à Cloud Manager ou à des environnements as a Cloud Service, vous devez être affecté aux profils du produit Cloud Manager.
+Pour pouvoir accéder à Cloud Manager ou à AEM as a Cloud Service, vous devez être affecté aux profils du produit Cloud Manager.
 
 Reportez-vous à Définitions de rôle pour en savoir plus sur les rôles des utilisateurs qui régissent la disponibilité de fonctionnalités spécifiques dans Cloud Manager.
 
