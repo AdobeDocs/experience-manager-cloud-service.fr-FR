@@ -2,10 +2,10 @@
 title: Gestion des environnements – Cloud Service
 description: Gestion des environnements – Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 0dc99c6e5e34e6115a61e18de77cfd040057d832
 workflow-type: tm+mt
 source-wordcount: '1266'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -62,7 +62,7 @@ Un utilisateur disposant des autorisations requises peut créer les types d’en
    >Si vous n’avez pas encore configuré votre pipeline hors production, l’écran *Aperçu* affiche la carte d’où vous pouvez créer votre pipeline hors production.
 
 
-## Affichage de l’environnement {#viewing-environment}
+## Détails de l’environnement {#viewing-environment}
 
 La carte **Environnements** de la page Aperçu répertorie jusqu’à trois environnements.
 
@@ -111,7 +111,6 @@ L’option de suppression est également disponible si vous cliquez sur **Détai
 
 
 >[!NOTE]
->
 >Cette fonction n’est pas disponible pour l’environnement de production/d’évaluation défini dans une configuration de programme de production. Cette fonction est toutefois disponible pour les environnements de production/d’évaluation dans un programme Sandbox.
 
 ## Gestion de l’accès {#managing-access}
