@@ -6,7 +6,7 @@ exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1422'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -271,7 +271,7 @@ query {
 
 ### Exemple de requête – Un fragment de ville unique et spécifique {#sample-single-specific-city-fragment}
 
-Il s’agit d’une requête pour renvoyer les détails d’une entrée de fragment unique à un emplacement spécifique dans le référentiel.
+Il s’agit d’une requête qui renvoie les détails d’une entrée de fragment unique vers un emplacement spécifique dans le référentiel.
 
 **Exemple de requête**
 
