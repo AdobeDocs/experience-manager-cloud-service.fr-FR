@@ -1,41 +1,41 @@
 ---
-title: Meilleures pratiques MSM
-description: Découvrez les bonnes pratiques compilées par les équipes d’ingénierie et de conseil d’Adobe pour vous aider à prendre en main AEM Multi Site Manager.
+title: Bonnes pratiques MSM
+description: Découvrez les bonnes pratiques compilées par les équipes d’ingénierie et de recherche d’Adobe pour vous aider à maîtriser AEM Multi Site Manager (MSM).
 feature: Multi Site Manager
 role: Administrator
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 source-git-commit: 184de9c1391ade3abbf2c6d73f09a324e6fa7e3e
 workflow-type: tm+mt
 source-wordcount: '1436'
-ht-degree: 33%
+ht-degree: 98%
 
 ---
 
-# Meilleures pratiques MSM {#msm-best-practices}
+# Bonnes pratiques MSM {#msm-best-practices}
 
 ## Général {#general}
 
 MSM est une structure configurable pour automatiser le déploiement de contenu. Les mises en œuvre impliquent souvent des parties importantes d’un site web, ainsi que plusieurs organisations et zones géographiques. Il est donc vivement recommandé de planifier les mises en œuvre MSM avec autant d’attention que lorsque vous planifiez votre site web :
 
-* Planifiez soigneusement **la structure et les flux de contenu** avant de commencer la mise en oeuvre.
-* **Personnalisez autant que nécessaire, mais le moins possible.** Bien que MSM prenne en charge un haut degré de personnalisation (par exemple, des configurations de déploiement), la meilleure pratique pour les performances, la fiabilité et la mise à niveau de votre site web est généralement de minimiser la personnalisation.
-* Créez rapidement un modèle de **gouvernance** et formez les utilisateurs en conséquence, afin d’assurer le succès. Une bonne pratique du point de vue de la gouvernance consiste à **minimiser l’autorité des producteurs de contenu locaux** pour allouer/connecter du contenu à d’autres utilisateurs locaux et à leurs Live Copies respectives. En effet, les héritages enchaînés non gouvernés peuvent considérablement accroître la complexité d’une structure MSM et compromettre ses performances et sa fiabilité.
-* Une fois qu’un plan existe pour votre structure, vos flux de contenu, l’automatisation et la gouvernance, **prototypez et testez minutieusement votre système** avant de commencer une mise en oeuvre en direct.
-* Gardez à l’esprit que les **conseillers en Adobe et les principaux intégrateurs système** ont une expérience approfondie de la planification et de la mise en oeuvre de l’automatisation du contenu avec MSM, afin qu’ils puissent vous aider à prendre en main votre projet MSM et tout au long de sa mise en oeuvre.
+* **Planifiez la structure et les flux de contenu** avec soin avant de commencer la mise en œuvre.
+* **Personnalisez autant que nécessaire, mais le moins possible.** Bien que MSM prenne en charge un haut degré de personnalisation (par exemple, les configurations de déploiement), la meilleure pratique pour favoriser les performances, la fiabilité et l’amélioration de votre site web est généralement de minimiser la personnalisation.
+* Établissez un modèle de **gouvernance** dès le début et formez les utilisateurs en conséquence, afin de garantir la réussite. Du point de vue de la gouvernance, une bonne pratique consiste à **minimiser l’autorité des producteurs du contenu** sur l’allocation/l’association du contenu à d’autres utilisateurs locaux et à leurs Live Copies respectives. Cela est dû au fait que les héritages par enchaînement non gouvernés peuvent considérablement augmenter la complexité d’une structure MSM et dégrader ses performances et sa stabilité.
+* Une fois qu’un plan existe pour la structure, les flux de contenu, l’automatisation et la gouvernance, **prototypez et testez intégralement le système**, avant de commencer la mise en œuvre en direct.
+* Gardez à l’esprit que les **intégrateurs système de premier plan et les consultants Adobe** possèdent une expérience approfondie dans la planification et la mise en œuvre de l’automatisation de contenu avec MSM. Ils peuvent donc vous aider lors du lancement de votre projet MSM et tout au long de sa mise en œuvre.
 
-## Sources de Live Copy et configurations de plan directeur {#live-copy-sources-and-blueprint-configurations}
+## Configurations de plan directeur et de sources Live Copy {#live-copy-sources-and-blueprint-configurations}
 
-Gardez à l’esprit qu’une Live Copy peut être créée à l’aide des [pages ordinaires](creating-live-copies.md#creating-a-live-copy-of-a-page) ou d’une [configuration de plan directeur](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Les deux cas d’utilisation sont valides.
+N’oubliez pas qu’une Live Copy peut être créée avec des [pages ordinaires](creating-live-copies.md#creating-a-live-copy-of-a-page) ou une [configuration de plan directeur](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Les deux cas d’utilisation sont valides.
 
 Les avantages de l’utilisation d’une configuration de plan directeur sont qu’elle :
 
-* Autoriser l’auteur à utiliser l’option **Déploiement** sur un plan directeur afin de pousser explicitement les modifications apportées aux Live Copies qui héritent de ce plan directeur.
-* Autoriser l’auteur à utiliser **Créer un site** afin de sélectionner facilement des langues et de configurer la structure de la Live Copy.
-* Définissez une configuration de déploiement par défaut pour les Live Copies ayant une relation avec le plan directeur.
+* permet à l’auteur d’utiliser l’option **Déploiement** sur un plan directeur afin de pousser explicitement les modifications vers les Live Copies qui héritent de ce plan directeur ;
+* permet à l’auteur d’utiliser **Créer un site**. L’utilisateur peut ainsi sélectionner facilement les langues et configurer la structure de la Live Copy.
+* définit une configuration de déploiement par défaut pour les Live Copies partageant une relation avec le plan directeur.
 
-Si aucune configuration de plan directeur n’est référencée, les déploiements ne peuvent être lancés qu’à partir des Live Copies elles-mêmes, extrayant essentiellement le contenu de la source.
+Dans le cas où aucune configuration de plan directeur n’est référencée, les déploiements peuvent uniquement être lancés à partir des Live Copies elles-mêmes, en extrayant essentiellement le contenu de la source.
 
-Lors de la création d’un site avec Live Copy, il est avantageux de créer des configurations de plan directeur pour assurer la disponibilité de l’ensemble de fonctionnalités MSM complet.
+Lors de la création d’un site avec une Live Copy, il est pratique de créer des configurations de plan directeur pour garantir la disponibilité du jeu complet de fonctions MSM.
 
 >[!NOTE]
 >
@@ -58,73 +58,73 @@ Pour prendre en charge l’imbrication des composants de façon à ce que les co
 
 ## Créer un site {#create-site}
 
-Notez que AEM propose deux méthodes principales pour créer des Live Copies :
+Notez qu’AEM propose deux méthodes principales pour créer des Live Copies :
 
-* Lorsque [création d’une Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-page) : cette méthode peut être considérée comme l’approche plus générique, qui vous permet de créer des Live Copies à partir de n’importe quelle page. La structure de contenu d’une Live Copy correspond exactement à la source.
+* Lors de la [création d’une Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-page) - Cela peut être considéré comme une approche plus générique, qui vous permet de créer des Live Copies de n’importe quelle page. La structure de contenu d’une Live Copy correspond exactement à la source.
 
-* Lorsque [création d’un site](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration), il s’agit d’une approche plus spécialisée, principalement pour la création de sites web avec une structure multilingue.
+* Lors de la [création d’un site](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) - Il s’agit d’une approche plus spécialisée, principalement pour créer des sites web avec une structure multilingue.
 
-Voici quelques points à prendre en compte lors de la création d’un site :
+Voici quelques points à garder à l’esprit lors de la création d’un site :
 
 * Pour créer un site, vous avez besoin d’une [configuration de plan directeur](creating-live-copies.md#managing-blueprint-configurations).
-* Pour permettre la sélection des chemins de langue à créer dans un nouveau site, les racines de langue correspondantes doivent exister dans le plan directeur (source).
-* Une fois qu’un [nouveau site a été créé en tant que Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (à l’aide de **Créer**, puis **Site**), les deux premiers niveaux de cette Live Copy sont *superficiels*. Les enfants de la page n’appartiennent pas à la relation activée, mais un déploiement descend toujours si une relation activée correspondant au déclencheur est détectée.
+* Pour permettre la sélection des chemins de langue afin de créer un site, les racines de langue correspondantes doivent exister dans le plan directeur (source).
+* Une fois qu’un [site a été créé comme une Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (en sélectionnant **Créer**, puis **Site**), les deux premiers niveaux de cette Live Copy sont *peu profonds*. Les enfants de la page n’appartiennent pas à la relation activée, mais un déploiement descend toujours si une relation activée correspondant au déclencheur est détectée.
 
-Il est utile d’éviter :
+Nous vous conseillons d’éviter :
 
-* Ajouter manuellement des langues dans le plan directeur (sous le premier niveau).
-* L’ajout manuel de contenu directement sous la racine de langue, car cela n’entraîne pas l’acheminement automatique de ce nouveau contenu vers la Live Copy au moment du déploiement.
+* d’ajouter manuellement des langues dans le plan directeur (sous le premier niveau) ;
+* d’ajouter manuellement du contenu directement sous la racine de la langue n’entraîne pas l’envoi automatique de ce nouveau contenu à la Live Copy au moment du déploiement.
 
 ## MSM et sites web multilingues {#msm-and-multilingual-websites}
 
 MSM peut aider à la création de sites web multilingues de deux façons :
 
-Lors de la création de gabarits de langue, tenez compte des points suivants :
+Lors de la création de gabarits de langue, gardez à l’esprit les points suivants :
 
 * Bien que MSM lui-même **ne fournisse pas la traduction de contenu**, il peut être intégré à des connecteurs de traduction tiers qui proposent ce service. Veuillez noter que :
-   * MSM vous permet d’annuler l’héritage au niveau de la page et/ou du composant. Cela permet d’éviter le remplacement du contenu traduit (d’une Live Copy, avec du contenu non encore traduit d’un plan directeur) lors du déploiement suivant.
+   * MSM vous permet d’annuler l’héritage au niveau des pages et des composants. Cela évite de remplacer le contenu traduit (dans une Live Copy, avec le contenu pas encore traduit d’un plan directeur) lors du déploiement suivant.
       * Certains connecteurs de traduction tiers automatisent cette gestion des héritages MSM.
       * Contactez votre prestataire de services de traduction pour plus d’informations.
       * Une autre méthode pour créer et traduire les gabarits de langue est d’utiliser des copies de langue conjointement à la structure d’intégration de traduction prête à l’emploi d’AEM.
 
-Pour plus d’informations, voir [Traduction du contenu des sites multilingues](/help/sites-cloud/administering/translation/overview.md) et [Meilleures pratiques de traduction.](/help/sites-cloud/administering/translation/best-practices.md)
+Pour plus d’informations, voir [Traduction du contenu des sites multilingues](/help/sites-cloud/administering/translation/overview.md) et [Meilleures pratiques de traduction](/help/sites-cloud/administering/translation/best-practices.md).
 
 ## Modifications de structure et déploiements {#structure-changes-and-rollouts}
 
-Les modifications apportées à la structure de contenu dans un plan directeur/une arborescence source sont répercutées différemment dans une Live Copy. Cela dépend du type de modification :
+Les modifications apportées à la structure du contenu dans un plan directeur/une arborescence source sont répercutées différemment dans une Live Copy. Cela dépend du type de modification :
 
-* **** La création de pages dans un plan directeur entraîne la création de pages correspondantes dans des Live Copies après déploiement avec la configuration de déploiement standard.
-* **** La suppression de pages dans un plan directeur entraîne la suppression des pages correspondantes des Live Copies après déploiement avec la configuration de déploiement standard.
-* **** Le déplacement de pages dans un plan directeur  **** n’entraîne pas le déplacement des pages correspondantes dans des Live Copies après déploiement avec la configuration de déploiement standard :
-   * La raison de ce comportement est que le déplacement d’une page comprend implicitement une suppression de page. Cela peut entraîner un comportement inattendu lors de la publication, car la suppression de pages sur l’auteur désactive automatiquement le contenu correspondant lors de la publication. Cela peut également avoir un effet supplémentaire sur les éléments associés, tels que les liens, les signets et autres.
-      * L’héritage du contenu dans les pages Live Copy respectives est mis à jour pour refléter le nouvel emplacement de leurs sources dans le plan directeur.
-      * Pour réaliser pleinement un déplacement de page d’un plan directeur vers des Live Copies, tenez compte des [bonnes pratiques de déplacement de page.](#page-move)
+* La **création** de pages dans un plan directeur entraîne la création des pages correspondantes dans des Live Copies après déploiement avec la configuration de déploiement standard.
+* La **suppression** de pages dans un plan directeur entraîne la suppression des pages correspondantes dans les Live Copies après déploiement avec la configuration de déploiement standard.
+* Le **déplacement** de pages dans un plan directeur **n’entraîne pas** le déplacement des pages correspondantes dans des Live Copies après déploiement avec la configuration de déploiement standard :
+   * La raison de ce comportement est que le déplacement d’une page comprend implicitement une suppression de page. Cela peut provoquer un comportement inattendu lors de la publication, la suppression des pages sur l’instance de création désactivant automatiquement le contenu correspondant sur l’instance de publication. Cela peut également avoir un effet de bord sur les éléments associés, comme les liens, les signets, etc.
+      * L’héritage de contenu dans les pages de Live Copies respectives est mis à jour pour refléter le nouvel emplacement de leurs sources dans le plan directeur.
+      * Pour réaliser un déplacement de page d’un plan directeur vers des Live Copies, prenez en compte les [bonnes pratiques suivantes](#page-move).
 
 ### Bonnes pratiques de déplacement de page {#page-move}
 
-Lorsque vous envisagez de déplacer des pages dans une Live Copy, tenez compte des bonnes pratiques suivantes.
+Lorsque vous envisagez de déplacer des pages dans une Live Copy, tenez compte des bonnes pratiques suivantes.
 
 >[!NOTE]
 >
->Les éléments suivants fonctionnent uniquement avec le déclencheur [Au déploiement](live-copy-sync-config.md#rollout-triggers).
+>Ces actions ne fonctionnent uniquement avec le [déclencheur En cas de déploiement](live-copy-sync-config.md#rollout-triggers).
 
 1. Créez une configuration de déploiement personnalisée.
    * Cette nouvelle configuration doit inclure l’action `PageMoveAction`.
    * N’ajoutez pas d’autres actions à cette configuration.
-1. Positionnez la nouvelle configuration.
-   * Pour déployer entièrement le déplacement de page tout en supprimant les pages respectives à leur ancien emplacement dans la Live Copy :
-      * Placez la configuration que vous venez de créer avant la configuration de déploiement standard. La configuration de déploiement standard s’occupe de la suppression des pages dans leurs anciens emplacements.
-      * Pour déployer le déplacement de la page tout en conservant les pages respectives à leurs anciens emplacements dans les Live Copies (en dupliquant essentiellement le contenu) :
-         * Placez la configuration que vous venez de créer après la configuration de déploiement standard. Cela permet de s’assurer qu’aucun contenu n’est supprimé dans la Live Copy ou désactivé de la publication.
+1. Placez la nouvelle configuration.
+   * Pour déployer entièrement le déplacement de page tout en supprimant les pages respectives de leur ancien emplacement dans la Live Copy :
+      * Placez la configuration que vous venez de créer avant la configuration de déploiement standard. La configuration de déploiement standard se charge de supprimer les pages de leurs anciens emplacements.
+      * Pour déployer le déplacement de page tout en conservant les pages respectives à leurs anciens emplacements dans les Live Copies (ce qui revient essentiellement à dupliquer le contenu) :
+         * Placez la configuration que vous venez de créer après la configuration de déploiement standard. Cela permet de s’assurer qu’aucun contenu n’est supprimé dans la Live Copy ni désactivé sur l’instance de publication.
 
 ## Personnalisation des déploiements {#customizing-rollouts}
 
-Les configurations de déploiement MSM sont fortement personnalisables. Vous devez savoir que l’automatisation des déploiements peut avoir des conséquences importantes. Il est recommandé de planifier très soigneusement avant de vous engager dans les activités suivantes :
+Les configurations de déploiement MSM sont fortement personnalisables. Vous devez savoir que l’automatisation des déploiements peut avoir des conséquences importantes. En règle générale, il est recommandé de vous préparer soigneusement avant de vous engager dans les activités suivantes :
 
-* Automatisation des déploiements tels que avec les déclencheurs [onModify](#onmodify)
-* Personnalisation des [types/propriétés de noeud](#node-types-properties)
+* Automatisation des déploiements, par exemple avec des [déclencheurs onModify](#onmodify)
+* Personnalisation des [propriétés ou des types de nœuds](#node-types-properties)
 * Démarrage des workflows suivants
-* Activation du contenu dans le cadre de déploiements
+* Activation de contenu dans le cadre de déploiements
 
 ### onModify {#onmodify}
 
@@ -136,17 +136,17 @@ Lorsque vous utilisez le [déclencheur de déploiement](live-copy-sync-config.md
    * L’architecture basée sur les événements ne peut pas garantir la séquence des événements transmise au gestionnaire de déploiements.
 * L’utilisation d’une telle configuration de déploiement est susceptible d’entraîner des conflits de validation en cas de mises à jour simultanées de la même ressource.
 
-Par conséquent, il est recommandé d’utiliser uniquement les déclencheurs `onModify` si les avantages du lancement du déploiement automatique l’emportent sur les problèmes de performances potentiels.
+Par conséquent, il est recommandé d’utiliser uniquement les déclencheurs `onModify` si les avantages du lancement de déploiement automatique l’emportent sur les problèmes de performance potentiels.
 
 ### Types/propriétés de nœuds {#node-types-properties}
 
-Outre la personnalisation des actions de déploiement, MSM vous permet de personnaliser les propriétés de noeud en cours de déploiement. La configuration [MSM OSGi vous permet d’exclure les types de noeuds](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) de la copie de la source vers la Live Copy.
+En plus de personnaliser les actions de déploiement, MSM vous permet de personnaliser les propriétés des nœuds qui sont déployés. La [configuration OSGi MSM vous permet d’exclure des types de nœuds](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) de la copie de la source vers la Live Copy.
 
 ## Informations supplémentaires {#further-information}
 
-Reportez-vous aux articles suivants pour plus d’informations sur MSM et Live Copy.
+Reportez-vous aux articles suivants pour plus d’informations sur MSM et la Live Copy.
 
 * [Création et synchronisation de Live Copies](creating-live-copies.md)
-* [Console Aperçu de la Live Copy](live-copy-overview.md)
-* [Configuration de la synchronisation de Live Copies](live-copy-sync-config.md)
+* [Console Aperçu de Live Copy](live-copy-overview.md)
+* [Configuration de la synchronisation des Live Copies](live-copy-sync-config.md)
 * [Conflits de déploiement de MSM](rollout-conflicts.md)
