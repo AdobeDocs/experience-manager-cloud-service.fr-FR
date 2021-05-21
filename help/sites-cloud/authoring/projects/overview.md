@@ -5,7 +5,7 @@ exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1273'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ Vous pouvez donner au lien un nom facile à reconnaître et changer de miniature
 
 ### Informations sur le projet {#project-info}
 
-La mosaïque Informations sur le projet fournit des informations générales sur le projet, notamment sa description, son état (actif ou inactif), son échéance et ses membres. En outre, vous pouvez ajouter une miniature de projet qui sera visible dans la page principale Projets.
+La mosaïque Informations sur le projet fournit des informations générales sur le projet, notamment sa description, son statut (actif ou inactif), son échéance et ses membres. En outre, vous pouvez ajouter une miniature de projet qui sera visible dans la page principale Projets.
 
 ![Informations sur le projet](/help/sites-cloud/authoring/assets/project-info.png)
 
@@ -111,7 +111,7 @@ Des membres d’équipe peuvent être attribués et supprimés de cette mosaïqu
 
 ### Tâche de traduction {#translation-job}
 
-La mosaïque Tâche de traduction est l’endroit où vous commencez une traduction et où vous pouvez voir l’état de toutes vos traductions. Pour configurer votre traduction, consultez [Création de projets de traduction](/help/assets/translate-assets.md).
+La mosaïque Tâche de traduction est l’endroit où vous commencez une traduction et où vous pouvez voir le statut de toutes vos traductions. Pour configurer votre traduction, consultez [Création de projets de traduction](/help/assets/translate-assets.md).
 
 ![Tâche de traduction](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 
@@ -131,7 +131,7 @@ Vous pouvez ajouter et supprimer des membres de l’équipe. De plus, vous pouve
 
 ### Workflows {#workflows}
 
-Vous pouvez configurer votre projet pour qu’il suive certains workflows. Si des workflows sont actifs, leur état s’affiche dans la mosaïque **Workflows** de la console Projets.
+Vous pouvez configurer votre projet pour qu’il suive certains workflows. Si des workflows sont actifs, leur statut s’affiche dans la mosaïque **Workflows** de la console Projets.
 
 ![Workflows](/help/sites-cloud/authoring/assets/project-workflows.png)
 
@@ -147,7 +147,7 @@ La mosaïque Lancements présente tous les programmes qui ont été demandés av
 
 ### Tâches {#tasks}
 
-Les tâches vous permettent de surveiller l’état de toutes les activités associées à un projet, y compris des workflows. Les tâches sont décrites en détail à la section [Utilisation des tâches](/help/sites-cloud/authoring/projects/tasks.md).
+Les tâches vous permettent de surveiller le statut de toutes les activités associées à un projet, y compris des workflows. Les tâches sont décrites en détail à la section [Utilisation des tâches](/help/sites-cloud/authoring/projects/tasks.md).
 
 ![Tâches](/help/sites-cloud/authoring/assets/projects-tasks.png)
 
@@ -157,11 +157,11 @@ AEM est fourni avec trois modèles prêts à l’emploi :
 
 * Un projet simple : un modèle de référence pour tous les projets auxquels les autres catégories ne sont pas adaptées. Il comprend trois rôles de base (propriétaires, éditeurs et observateurs) et quatre workflows (Approbation de projet, Demander un lancement, Demander la page d’entrée et Demander un courrier électronique).
 * Un projet de média : un modèle de référence pour des activités multimédias. Il comprend plusieurs rôles de projet relatifs aux médias (photographes, éditeurs, rédacteurs, concepteurs, propriétaires et observateurs). Il comprend également deux workflows liés au contenu multimédia : Demander la copie (pour demander et réviser du texte) et Projet de séance photo du produit (pour gérer des photos relatives à des produits).
-* Un [projet de traduction](/help/sites-cloud/administering/translation/overview.md) : un exemple de référence pour la gestion des activités liées à la traduction. Il prévoit trois rôles de base (propriétaires, éditeurs et observateurs). Il comprend deux workflows accessibles dans l’interface utilisateur Workflows.
+* Un [projet de traduction](/help/sites-cloud/administering/translation/overview.md) : modèle de référence pour gérer des activités liées à la traduction. Il prévoit trois rôles de base (propriétaires, éditeurs et observateurs). Il comprend deux workflows accessibles dans l’interface utilisateur Workflows.
 
 En fonction du modèle sélectionné, plusieurs options s’offrent à vous, notamment en termes de rôles utilisateur et de workflows.
 
-## Rôles utilisateur dans un projet   {#user-roles-in-a-project}
+## Rôles utilisateur dans un projet  {#user-roles-in-a-project}
 
 Différents rôles utilisateur sont définis dans un modèle de projet et utilisés pour deux principales raisons :
 
@@ -172,9 +172,9 @@ Pour vous permettre de gérer les autorisations de sécurité et de contrôle, t
 
 | Rôle | Description | Autorisations | Appartenance à un groupe |
 |---|---|---|---|
-| Observateur | Un utilisateur disposant de ce rôle peut afficher les détails du projet, y compris son état. | Droits en lecture seule sur un projet | Groupe `workflow-users` |
+| Observateur | Un utilisateur disposant de ce rôle peut afficher les détails du projet, y compris son statut. | Droits en lecture seule sur un projet | Groupe `workflow-users` |
 | Éditeur | Un utilisateur disposant de ce rôle peut charger et modifier le contenu d’un projet. | Accès en lecture et en écriture à un projet, aux métadonnées associées et aux ressources connexes ; droits permettant à l’utilisateur de charger une liste de plans ou une séance photo et de passer en revue et d’approuver des ressources ; droits en écriture sur /etc/commerce ; droits de modification sur un projet spécifique | Groupe workflow-users |
-| Propriétaire | Un utilisateur disposant de ce rôle peut lancer un projet. Le propriétaire peut créer un projet, lancer une tâche pour un projet et déplacer les ressources approuvées vers le dossier Production. Toutes les autres tâches de projet peuvent également être visualisées et implémentées par le propriétaire. | Droits en écriture sur `/etc/commerce` | `dam-users` groupe (pour pouvoir créer un projet), groupe project-administrators (pour pouvoir créer un projet et déplacer des ressources) |
+| Propriétaire | Un utilisateur disposant de ce rôle peut lancer un projet. Le propriétaire peut créer un projet, lancer une tâche pour un projet et déplacer les ressources approuvées vers le dossier Production. Toutes les autres tâches de projet peuvent également être visualisées et implémentées par le propriétaire. | Droits en écriture sur `/etc/commerce` | Groupe `dam-users` (pour pouvoir créer un projet), groupe administrateurs-projet (pour pouvoir déplacer des ressources) |
 
 >[!NOTE]
 >
