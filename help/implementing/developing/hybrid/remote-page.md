@@ -5,7 +5,7 @@ exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
 source-git-commit: eaa59b6ecfa50c4a6b4e316e5e305e48cb3d5676
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 55%
+ht-degree: 74%
 
 ---
 
@@ -17,11 +17,11 @@ Lorsque vous décidez du [niveau d’intégration](/help/implementing/developing
 
 Le composant RemotePage récupère toutes les ressources nécessaires à partir du `asset-manifest.json` généré par l’application et l’utilise pour effectuer le rendu des SPA dans AEM.
 
-* RemotePage vous permet d’injecter les scripts et les feuilles de style d’un SPA dans le corps d’un composant AEM Page.
-* Les composants frontend virtuels permettent de marquer les sections comme étant modifiables dans AEM SPA Editor.
-* Ensemble, un SPA hébergé sur un autre domaine peut être rendu modifiable dans AEM.
+* Le composant RemotePage vous permet d’injecter les scripts et feuilles de style d’un SPA dans le corps d’un composant Page AEM.
+* Les composants virtuels en front-end permettent d’indiquer les sections qui sont modifiables dans l’éditeur d’application monopage d’AEM.
+* Grâce à cela, un SPA hébergé sur un autre domaine peut être rendu modifiable dans AEM.
 
-Voir l’article [Modification d’un SPA externe dans AEM](editing-external-spa.md) pour plus d’informations sur les  externes modifiables dans.
+Consultez l’article [Modification d’un SPA externe dans AEM](editing-external-spa.md) pour plus d’informations sur les SPA externes modifiables dans AEM.
 
 ## Conditions requises {#requirements}
 
