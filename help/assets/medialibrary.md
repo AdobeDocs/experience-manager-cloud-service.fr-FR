@@ -8,7 +8,7 @@ exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
@@ -35,11 +35,11 @@ Les clients qui disposent d’une licence [!DNL Sites] ont le droit d’utiliser
 
 Media Library est installé dans le cadre de Sites. Aucune licence ou package supplémentaire n’est nécessaire au-delà de la licence et de l’installation de Sites.
 
-## [!DNL Assets] versus Media Library  {#assets-and-media-library}
+## [!DNL Assets] face à  Media Library {#assets-and-media-library}
 
 Experience Manager Assets offre des fonctionnalités de gestion des actifs numériques d’entreprise. La fonctionnalité Assets est fournie avec [!DNL Experience Manager] dans un seul module. Toutefois, les utilisateurs qui n’ont pas acheté de licence Assets ne sont pas autorisés à utiliser les fonctionnalités avancées de gestion des actifs numériques. Sans licence Assets, seules les [fonctions Media Library](#use-media-library) sont disponibles.
 
-Si vous souhaitez empêcher l’utilisation involontaire des fonctionnalités [!DNL Assets] que vous n’avez pas sous licence, supprimez tous les workflows, composants, taxonomies, options spécifiques à [!DNL Assets] et l’administrateur [!DNL Assets] de [!DNL Experience Manager]. Cela empêche vos utilisateurs d’utiliser accidentellement des fonctionnalités [!DNL Assets] que vous n’avez pas sous licence.
+Si vous souhaitez empêcher l’utilisation involontaire des fonctionnalités [!DNL Assets] que vous n’avez pas sous licence, supprimez tous les workflows, composants, taxonomies, options spécifiques à [!DNL Assets] et l’administrateur [!DNL Assets] de [!DNL Experience Manager]. Cela empêche vos utilisateurs d’utiliser accidentellement des fonctionnalités d’[!DNL Assets] pour lesquelles vous ne disposez pas de licence.
 
 ## Utiliser Media Library {#use-media-library}
 
@@ -92,5 +92,5 @@ Pour utiliser la fonctionnalité Media Library, vous pouvez utiliser l’interfa
 >[!MORELIKETHIS]
 >
 >* [Fonctionnalités de gestion des actifs numériques dans [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=fr)
->* [[!DNL Experience Manager] as a [!DNL Cloud Service] description du produit](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* [[!DNL Experience Manager] as a [!DNL Cloud Service] description du produit](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
 
