@@ -1,76 +1,76 @@
 ---
-title: Personnes de droite, rôles appropriés
-description: Personnes de droite, rôles appropriés
+title: Les bonnes personnes, les bonnes fonctions
+description: Les bonnes personnes, les bonnes fonctions
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '825'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# **Tout d’abord, configurez les bonnes personnes dans les rôles appropriés.**
+# **Il faut, pour commencer, que les bonnes personnes exercent les bonnes fonctions.**
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_chooseteam"
 >title="Choisir la bonne équipe"
->abstract="Placez les bonnes personnes dans les tâches appropriées pour contribuer à la réussite de votre déploiement Adobe Experience Manager."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="Alignement des indicateurs de performance clés"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=en" text="Évaluation des IPC"
+>abstract="Placer les bonnes personnes aux bons postes pour aider à la réussite de votre déploiement Adobe Experience Manager."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=fr" text="Alignement des indicateurs de performance clés"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=fr" text="Évaluation des indicateurs de performance clés"
 
-Il est probable que dans votre entreprise, plusieurs départements possèdent différents aspects de l’expérience numérique. Sans gouvernance, le moment est propice à des débats sans fin, à des luttes intestines et à la confusion.
+Il est probable qu’au sein de votre organisation, plusieurs départements possèdent différents aspects de l’expérience numérique. Sans gouvernance, cette phase est propice à un débat sans fin, à des querelles intestines et à la confusion.
 
-La gouvernance numérique commence par déterminer qui est responsable de quoi et qui fait quel travail centré sur le numérique. Vous devrez peut-être faire un certain recrutement stratégique pour ajouter les compétences nécessaires. Un défi encore plus grand est de provoquer un changement de culture — en construisant un large soutien pour la nouvelle technologie et en aidant les gens à s&#39;habituer à de nouvelles façons de faire les choses. Un élément clé de cet effort est la création d&#39;une communauté numérique, qui permet aux gens d&#39;apprendre les uns des autres et de s&#39;entraider.
+La phase initiale de la gouvernance numérique consiste à déterminer qui est responsable de quoi et qui effectue un certain nombre de tâches fondées sur le numérique. Vous devrez peut-être procéder à des embauches stratégiques pour incorporer les compétences nécessaires. Un autre défi encore plus important est d’opérer un changement de culture en construisant un large soutien à la nouvelle technologie et en aidant les personnes concernées à se familiariser avec de nouvelles façons de faire les choses. L’un des éléments clés de cet effort réside dans la création d’une communauté numérique qui permet aux gens d’apprendre mutuellement et de s’entraider.
 
-Pour l’instant, nous allons nous concentrer sur la mise à la disposition des personnes appropriées dans les tâches appropriées pour vous aider à piloter votre déploiement Adobe Experience Manager. Pour chaque produit de base — Sites Experience Manager et Ressources de Experience Manager — nous avons fourni une liste des rôles que vous devrez remplir, ainsi que les compétences, les niveaux d’expertise et les attributs qui rendent les personnes efficaces dans les différents rôles.
+Pour l’instant, nous nous concentrerons sur la mise en place des bonnes personnes aux bons postes pour aider à la réussite de votre déploiement Adobe Experience Manager. Pour chaque produit de base – Experience Manager Sites et Experience Manager Assets – nous avons établi une liste de fonctions que vous devrez remplir, ainsi que les compétences, les niveaux d’expertise et les attributs qui rendent les gens efficaces dans ces différentes fonctions.
 
-Cette semaine, vous avez pour mission d’examiner les deux listes avec votre équipe de mise en oeuvre et de vous assurer que vous disposez de personnes possédant les qualifications appropriées pour chaque rôle.
+Votre tâche cette semaine consiste à passer en revue ces deux listes avec votre équipe de mise en œuvre et de vous assurer de disposer de personnes possédant les qualifications adéquates à chaque rôle.
 
-## **Rôles clés des sites Experience Manager AEM**
+## **Fonctions clés pour AEM Experience Manager Sites**
 
-Une équipe gagnante a besoin de neuf personnes sur les bons sièges — tout comme votre équipe de déploiement. Votre succès avec Adobe Experience Manager Sites dépend de la force des membres de votre équipe et de leur collaboration. Vérifiez que ces neuf rôles sont attribués.
+Une équipe gagnante a besoin de neuf personnes aux bons postes – tout comme votre équipe chargée du déploiement. Votre réussite avec Adobe Experience Manager Sites dépend de la force des membres de votre équipe et de leur capacité à travailler ensemble. Assurez-vous que ces neuf fonctions sont attribuées
 aux personnes ayant les qualifications suggérées.
 
-| Rôle | Compétences | Niveau de fonctionnalité | Qualités |
+| Rôle | Compétences | Niveau de capacité | Qualités |
 |--- |--- |--- |--- |
-| Chef de projet | certification PMP, certification Agile, expérience de gestion des risques | Expert | Juste, cohérent, responsable, organisé, positif, accessible, prêt à adopter le changement |
-| Principal de script | certification ScrumMaster, certification Agile, expérience de facilitation | Expert | Cohérent, créatifs |
-| Propriétaire du produit | certifications rapides, compréhension approfondie des besoins de l’entreprise | Expert | Équilibré, confiant |
-| Les technologies de l&#39;information mènent à la sécurité, aux infrastructures, aux outils | Certification CISM, certification des développeurs de composants Adobe Experience Manager | Expert | Orienté détail |
-| Stratèges/Utilisateurs experts | Compétence dans Adobe Experience Manager Sites | Novice to Expert | Tenace, curieuse, minutieuse, ouverte d&#39;esprit, prête à accepter le changement, la collaboration |
-| AQ/UAT Lead | Certification agile, compréhension du SDLC | Novice à Intermédiaire | Conçu sur les détails, lecteur de processus, cohérent |
-| Architecte technique | Expérience sur l&#39;infrastructure informatique | Expert | Conçu sur les détails, piloté par les processus, cohérent |
-| Développeur principal | Certification mobile, expérience en programmation informatique et informatique | Novice à Intermédiaire | Conçu sur les détails, piloté par les processus, cohérent |
-| Développeur front-end | Certification agile, compréhension du code HTML, CSS et JavaScript | Novice à Intermédiaire | Conçu sur les détails, piloté par les processus, cohérent |
+| Chef de projet | Certification PMP, certification Agile, expérience de gestion des risques | Expert | Juste, cohérent, responsable, organisé, positif, accessible, prêt à accepter le changement |
+| Scrum Master | Certification ScrumMaster, certification Agile, expérience de facilitation | Expert | Cohérent, créatif |
+| Responsable du produit | Certification Agile, compréhension approfondie des besoins commerciaux | Expert | Équilibré, confiant |
+| Responsables informatiques pour la sécurité, l’infrastructure, les outils | Certification CISM, certification Adobe Experience Manager Component Developer | Expert | Souci du détail |
+| Stratèges/utilisateurs expérimentés | Compétence sur Adobe Experience Manager Sites | Novice à expert | Tenace, curieux, minutieux, ouverture d’esprit, prêt à accepter le changement, collaboratif |
+| Responsable Assurance qualité/Tests de validation utilisateur | Certification Agile, compréhension du cycle de vie du développement logiciel (SDLC) | Novice à intermédiaire | Souci du détail, motivé par les processus, cohérence |
+| Architecte technique | Expérience en infrastructure informatique | Expert | Souci du détail, motivé par les processus, cohérence |
+| Développeur back-end | Certification Agile, expérience en programmation et en informatique | Novice à intermédiaire | Souci du détail, motivé par les processus, cohérence |
+| Développeur front-end | Certification Agile, compréhension des langages HTML et JavaScript, des propriétés CSS | Novice à intermédiaire | Souci du détail, motivé par les processus, cohérence |
 
-Maintenant que vous savez quels rôles sont requis, consultez le graphique ci-dessous pour voir quand chaque rôle entre en jeu dans le processus de mise en oeuvre.
+Maintenant que vous connaissez les fonctions requises, consultez le graphique ci-dessous pour savoir à quel moment chaque rôle entre en jeu dans le processus de mise en œuvre.
 
 <br>
 
 ![](assets/team_involvement.png)
 
-**Consultez cette liste avec votre** équipe de mise en oeuvre et assurez-vous que vous disposez de personnes possédant les qualifications appropriées pour chaque rôle. Les membres de l’équipe qui connaissent moins bien Adobe Experience Cloud peuvent utiliser les [ressources d’apprentissage Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) pour être certifiés par le biais de l’[apprentissage numérique Adobe](https://learning.adobe.com/certification.html).
+**Examinez les deux listes avec votre équipe chargée de la mise en œuvre** et assurez-vous que vous disposez de personnes possédant les qualifications appropriées dans chaque fonction. Les membres de l’équipe qui connaissent moins bien Adobe Experience Cloud peuvent utiliser les ressources de formation [Experience League](https://experienceleague.adobe.com/?lang=fr#recommended/solutions/experience-manager) pour obtenir leur certification par le biais d’[Adobe Digital Learning](https://learning.adobe.com/certification.html).
 
-## **Rôles clés pour AEM Experience Manager Assets**
+## **Fonctions clés d’AEM Experience Manager Assets**
 
-De Architecte à ScrumMaster, chaque rôle dans cette équipe est indispensable — y compris le bibliothécaire de la gestion des actifs numériques.
+De l’architecte au scrum master, chaque fonction au sein de cette équipe est indispensable – y compris le bibliothécaire de la gestion des actifs numériques (DAM).
 
-Vous disposez peut-être déjà de la plupart des personnes dont vous avez besoin pour exécuter une mise en oeuvre Adobe Experience Manager Assets réussie. Cette liste est similaire à celle d’Adobe Experience Manager Sites, avec un ajout important : vous aurez besoin d’un bibliothécaire pour vous assurer que vos ressources numériques sont organisées et étiquetées de manière à les rendre faciles à trouver.
+Vous disposez peut-être déjà de la plupart des personnes nécessaires pour mettre en œuvre avec succès Adobe Experience Manager Assets. Cette liste est similaire à celle d’Adobe Experience Manager Sites, avec un élément additionnel important : vous aurez besoin d’un bibliothécaire pour vous assurer que vos ressources numériques sont organisées et étiquetées de façon à les rendre faciles à trouver.
 
-| Rôle | Compétences | Niveau de fonctionnalité | Qualités |
+| Rôle | Compétences | Niveau de capacité | Qualités |
 |--- |--- |--- |--- |
-| Chef de projet | certification PMP, certification Agile, expérience de gestion des risques | Expert | Juste, cohérent, responsable, organisé, positif, accessible, prêt à adopter le changement |
-| Principal de script | certification ScrumMaster, certification Agile, expérience de facilitation | Expert | Cohérent, créatifs |
-| Propriétaire du produit | certifications rapides, compréhension approfondie des besoins de l’entreprise | Expert | Équilibré, confiant |
-| Les technologies de l&#39;information mènent à la sécurité, aux infrastructures, aux outils | Certification CISM, certification des développeurs de composants Adobe Experience Manager | Expert | Orienté détail |
-| Stratèges/Utilisateurs experts | Compétence dans Adobe Experience Manager Sites | Novice to Expert | Tenace, curieuse, minutieuse, ouverte d&#39;esprit, prête à accepter le changement, la collaboration |
-| AQ/UAT Lead | Certification agile, compréhension du SDLC | Novice à Intermédiaire | Conçu sur les détails, lecteur de processus, cohérent |
-| Architecte technique | Expérience sur l&#39;infrastructure informatique | Expert | Conçu sur les détails, piloté par les processus, cohérent |
-| Développeur principal | Certification mobile, expérience en programmation informatique et informatique | Novice à Intermédiaire | Conçu sur les détails, piloté par les processus, cohérent |
-| Développeur front-end | Certification agile, compréhension du code HTML, CSS et JavaScript | Novice à Intermédiaire | Conçu sur les détails, piloté par les processus, cohérent |
-| Bibliothèque DAM | Études et diplômes en sciences de la bibliothèque | Expert | Orientée sur les détails, axée sur les processus, organisée |
+| Chef de projet | Certification PMP, certification Agile, expérience de gestion des risques | Expert | Juste, cohérent, responsable, organisé, positif, accessible, prêt à accepter le changement |
+| Principal de script | Certification ScrumMaster, certification Agile, expérience de facilitation | Expert | Cohérent, créatif |
+| Responsable du produit | Certification Agile, compréhension approfondie des besoins commerciaux | Expert | Équilibré, confiant |
+| Responsables informatiques pour la sécurité, l’infrastructure, les outils | Certification CISM, certification Adobe Experience Manager Component Developer | Expert | Souci du détail |
+| Stratèges/utilisateurs expérimentés | Compétence sur Adobe Experience Manager Sites | Novice à expert | Tenace, curieux, minutieux, ouverture d’esprit, prêt à accepter le changement, collaboratif |
+| Responsable Assurance qualité/Tests de validation utilisateur | Certification Agile, compréhension du cycle de vie du développement logiciel (SDLC) | Novice à intermédiaire | Souci du détail, motivé par les processus, cohérence |
+| Architecte technique | Expérience en infrastructure informatique | Expert | Souci du détail, motivé par les processus, cohérence |
+| Développeur back-end | Certification Agile, expérience en programmation et en informatique | Novice à intermédiaire | Souci du détail, motivé par les processus, cohérence |
+| Développeur front-end | Certification Agile, compréhension des langages HTML et JavaScript, des propriétés CSS | Novice à intermédiaire | Souci du détail, motivé par les processus, cohérence |
+| Bibliothécaire DAM | Expérience et diplôme en sciences des bibliothèques | Expert | Souci du détail, motivé par les processus, organisé |
 
-Maintenant que vous savez quels rôles sont requis, consultez le graphique ci-dessous pour voir quand chaque rôle entre en jeu dans le processus de mise en oeuvre.
+Maintenant que vous connaissez les fonctions requises, consultez le graphique ci-dessous pour savoir à quel moment chaque rôle entre en jeu dans le processus de mise en œuvre.
 
 <br>
 
@@ -78,4 +78,4 @@ Maintenant que vous savez quels rôles sont requis, consultez le graphique ci-de
 
 >[!TIP]
 >
-> En savoir plus sur Adobe Experience Cloud et exploiter les ressources sur [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) et être certifié via [Adobe Digital Learning](https://learning.adobe.com/certification.html).
+> En savoir plus sur Adobe Experience Cloud, exploiter les ressources sur [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) et obtenir une certification par [Adobe Digital Learning](https://learning.adobe.com/certification.html).
