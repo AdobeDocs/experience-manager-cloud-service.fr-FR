@@ -7,7 +7,7 @@ exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 source-git-commit: 1d0343dc7940566b88ad490bb8fb08a5ad4ff5c2
 workflow-type: tm+mt
 source-wordcount: '718'
-ht-degree: 85%
+ht-degree: 93%
 
 ---
 
@@ -21,10 +21,10 @@ Avec Adobe Experience Manager (AEM) en tant que Cloud Service, vous pouvez utili
 
 >[!NOTE]
 >
->GraphQL est actuellement utilisé comme Cloud Service dans deux scénarios (distincts) dans Adobe Experience Manager (AEM) :
+>GraphQL est actuellement utilisé dans deux scénarios (distincts) dans Adobe Experience Manager (AEM) as a Cloud Service :
 >
->* [AEM Commerce utilise des données d’une plateforme commerciale via GraphQL](/help/commerce-cloud/integrating/magento.md).
->* [Les fragments de contenu AEM fonctionnent avec l’API AEM GraphQL (une mise en oeuvre personnalisée, basée sur GraphQL standard), pour fournir du contenu structuré à utiliser dans vos applications](/help/assets/content-fragments/graphql-api-content-fragments.md).
+>* [AEM Commerce utilise les données d’une plateforme commerciale par le biais de GraphQL](/help/commerce-cloud/integrating/magento.md).
+>* [AEM Content Fragments de contenu fonctionnent conjointement avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard) pour fournir un contenu structuré à utiliser dans vos applications](/help/assets/content-fragments/graphql-api-content-fragments.md).
 
 
 ## CMS découplé {#headless-cms}
@@ -45,7 +45,7 @@ En termes de création de fragments de contenu dans AEM, cela signifie que :
 
 GraphQL est :
 
-* « *...un langage de requête pour les API et un environnement d’exécution pour répondre à ces requêtes avec vos données existantes* ». 
+* « *...un langage de requête pour les API et un environnement d’exécution pour répondre à ces requêtes avec vos données existantes* ».
 
    Voir [GraphQL.org](https://graphql.org)
 
