@@ -9,7 +9,7 @@ role: Administrator,Business Practitioner
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '612'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -20,19 +20,19 @@ Dynamic Media prend en charge les technologies d’assistance et de contrôle du
 
 ## Prise en charge de l’accessibilité du clavier dans Dynamic Media {#keyboard-support-in-dm}
 
-Dynamic Media étant un plug-in d’Assets Experience Manager, la plupart des commandes au clavier sont identiques à celles des ressources Experience Manager. Par exemple, le bouton `Cancel` de Dynamic Media a la même mise en surbrillance que dans les ressources Experience Manager. Il réagit également à la clé `Spacebar` comme dans Experience Manager Assets. Voir [raccourcis clavier dans Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Dynamic Media étant un plug-in d’Experience Manager Assets, la plupart des commandes de clavier produisent le même résultat que dans Experience Manager Assets. Par exemple, le bouton `Cancel` de Dynamic Media a la même mise en surbrillance que dans Experience Manager Assets. Il réagit également à la touche `Spacebar` de la même manière que dans Experience Manager Assets. Consultez les [Raccourcis clavier dans Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
-Les touches prises en charge par les éléments d’interface utilisateur individuels dans Dynamic Media sont, dans la plupart des cas, évidentes et faciles à trouver. Voici ce que permet le contrôle clavier dans Dynamic Media :
+Les raccourcis de touches prises en charge par des éléments personnalisés de l’interface utilisateur dans Dynamic Media sont, dans la plupart des cas, évidents et faciles à trouver. Voici ce que permet le contrôle clavier dans Dynamic Media :
 
 * Possibilité d’utiliser les touches `Tab` et `Shift+Tab` pour naviguer entre les éléments interactifs de la page.
 `Tab` permet d’activer le focus d’entrée sur l’élément d’interface utilisateur suivant dans l’ordre de tabulation ; `Shift+Tab` rétablit le focus d’entrée sur l’élément d’interface utilisateur précédent.
 Le parcours du focus suit l’emplacement naturel des éléments de l’interface utilisateur à l’écran et se déplace de gauche à droite, puis de haut en bas. En outre, si un champ comporte une erreur, vous pouvez appuyer sur `Tab` pour y placer le focus.
-* Possibilité d’utiliser les clés `Spacebar` et `Enter` pour activer les éléments standard de l’interface utilisateur, tels que les boutons et les listes déroulantes.
-* Possibilité de voir la mise en surbrillance du clavier sur l’élément actif. L’élément d’interface utilisateur qui a le focus d’entrée a reçu une indication de focus visuelle sous la forme d’une bordure rendue autour de l’élément d’interface utilisateur.
+* Possibilité d’utiliser les touches `Spacebar` et `Enter` pour activer les éléments standard de l’interface utilisateur, tels que les boutons et les listes déroulantes.
+* Possibilité de voir la mise en surbrillance du clavier sur l’élément actif. L’élément d’interface utilisateur avec le focus recevait une indication de focus visuelle sous la forme d’une bordure.
 * Dans l’éditeur de zones réactives, vous pouvez utiliser des touches personnalisées, telles que les touches fléchées, pour interagir avec des éléments complexes de l’interface utilisateur afin de repositionner les zones réactives.
-* Dans l’éditeur de vidéo interactive, vous pouvez utiliser `Spacebar` pour sélectionner une image et l’ajouter à un segment. De plus, vous pouvez utiliser la clé `Backspace` pour supprimer l’élément sélectionné de l’onglet **[!UICONTROL Contenu]**. La touche `Tab` permet par ailleurs de naviguer entre les éléments interactifs de la page.
-* Dans l’éditeur Recadrage d’image/Recadrage intelligent, vous pouvez effectuer les opérations suivantes :
-   * Utilisez les touches fléchées pour recadrer la taille du cadre, ou repositionner l’image, ou les deux.
+* Dans l’éditeur de vidéo interactive, vous pouvez utiliser `Spacebar` pour sélectionner une image et l’ajouter à un segment. De plus, vous pouvez utiliser la touche `Backspace` pour supprimer l’élément sélectionné de l’onglet **[!UICONTROL Contenu]**. La touche `Tab` permet par ailleurs de naviguer entre les éléments interactifs de la page.
+* Dans l’éditeur Recadrage d’image/Recadrage d’image intelligent, vous pouvez effectuer les opérations suivantes :
+   * Vous pouvez utiliser les touches fléchées pour recadrer la taille du cadre ou repositionner l’image, ou les deux.
    * Le premier arrêt `Tab` met en surbrillance l’ensemble du cadre d’image. Vous pouvez ensuite utiliser les touches fléchées du clavier pour repositionner le cadre.
    * Les quatre arrêts `Tab` suivants sont les quatre coins du cadre. Lorsque la cible d’action est placée sur un angle de cadre, le coin est mis en surbrillance. Encore une fois, vous pouvez utiliser les touches fléchées du clavier pour déplacer le coin ciblé.
 Voir [Modification du recadrage intelligent ou de l’échantillon intelligent d’une seule image](/help/assets/dynamic-media/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
@@ -47,13 +47,13 @@ Voir [Modification du recadrage intelligent ou de l’échantillon intelligent d
 
 ## Prise en charge des technologies d’assistance dans Dynamic Media {#assistive-technology=support-for-dm}
 
-Les éléments de l’interface utilisateur de Dynamic Media fonctionnent avec des technologies d’assistance telles que les lecteurs d’écran. Par exemple, il reconnaît les repères sur une page lorsque vous naviguez entre les repères à l’aide du raccourci clavier `D` ou des régions à l’aide du raccourci clavier `R`. Elle décrit également la section lors de la navigation à l’aide du raccourci clavier de la section `H`.
+Les éléments de l’interface utilisateur de Dynamic Media fonctionnent avec des technologies d’assistance telles que les lecteurs d’écran. Elle reconnaît par exemple les repères sur une page lorsque vous naviguez entre les repères à l’aide du raccourci clavier `D` ou entre les régions à l’aide du raccourci clavier `R`. Elle décrit également la section lors de la navigation à l’aide du raccourci clavier de la section `H`.
 
 ## Prise en charge de l’accessibilité du clavier dans les visionneuses Dynamic Media {#keyboard-accessibility-for-dm-viewers}
 
 Tous les composants prêts à l’emploi des visionneuses Dynamic Media prennent en charge l’accessibilité du clavier pour vos clients.
 
-Voir [Accessibilité clavier et navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=fr) dans le Guide de référence des visionneuses Dynamic Media.
+Consultez [Accessibilité du clavier et navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=fr) dans le Guide de référence des visionneuses Dynamic Media.
 
 ## Prise en charge des technologies d’assistance dans les visionneuses Dynamic Media {#assistive-technology=support-for-dm-viewers}
 
