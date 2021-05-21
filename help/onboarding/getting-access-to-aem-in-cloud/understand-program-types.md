@@ -1,19 +1,19 @@
 ---
-title: Présentation des types de programme et de programme
-description: Présentation des types de programme et de programme - Cloud Services
+title: Présentation du programme et des types de programmes
+description: Présentation du programme et des types de programmes - Cloud Services
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '329'
-ht-degree: 13%
+ht-degree: 63%
 
 ---
 
 # Présentation des programmes et des types de programmes {#understanding-programs}
 
-Dans Cloud Manager, l’entité Tenant se trouve en haut de l’écran et peut comporter plusieurs programmes. Chaque programme ne peut pas contenir plus d’un environnement de production et plusieurs environnements hors production.
+Dans Cloud Manager, l’entité cliente se trouve tout en haut de l’écran et peut comporter plusieurs programmes. Chaque programme ne peut contenir qu’un environnement de production mais peut compter plusieurs environnements autres que de production.
 
-Le diagramme suivant présente la hiérarchie des entités dans Cloud Manager.
+Le diagramme suivant présente la hiérarchie des entités dans Cloud Manager.
 
 ![image](assets/program-types1.png)
 
@@ -36,11 +36,11 @@ $ git clone {URL}
 
 ## Types de programme {#program-types}
 
-Un utilisateur peut créer un programme **Sandbox** ou **Production**.
+Un utilisateur peut créer un programme **Sandbox** ou de **Production**.
 
-* Un *programme de production* est créé pour activer le trafic en direct au moment approprié à l’avenir.
-Pour plus d’informations, voir [Présentation des programmes de production](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md).
+* Un *Programme de production* est créé pour activer dans le futur le trafic actif au moment approprié.
+Consultez [Présentation des programmes de production](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md) pour plus d’informations.
 
 
-* Un *programme Sandbox* est généralement créé à des fins de formation, d’exécution de démonstration, d’activation, de preuves de concept ou de documentation. Il n’est pas destiné à transporter du trafic en direct et aura des restrictions qu’un programme de production ne mettra pas en place. Elle comprend les sites et les ressources et est automatiquement renseignée avec une branche Git qui inclut un exemple de code, un environnement de développement et un pipeline hors production.
-Pour plus d’informations, voir [Présentation des programmes Sandbox](/help/onboarding/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) .
+* Un *programme Sandbox* est généralement créé pour les besoins de formation, à des fins de démonstration, d’activation, de preuve de concept ou de documentation. Ces programmes ne sont pas destinés à gérer un trafic réel et comporteront des restrictions absentes d’un programme de production. Ils incluront Sites et Assets et seront pourvus automatiquement d’une branche Git comprenant un exemple de code, un environnement de développement et un pipeline non productif.
+Consultez [Présentation des programmes Sandbox](/help/onboarding/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) pour plus d’informations.
