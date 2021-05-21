@@ -5,14 +5,14 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 6c1320d43b551247e63962dd52ada58d463fb92e
 workflow-type: tm+mt
 source-wordcount: '1996'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
 
-# Notes de mise à jour actuelles pour[!DNL Adobe Experience Manager]as a Cloud Service {#release-notes}
+# Notes de la mise à jour actuelle d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante présente les notes de mise à jour générales de la version actuelle (la plus récente) de [!DNL Experience Manager] en tant que Cloud Service.
+La section suivante concerne les notes de mise à jour générales de la version actuelle (la plus récente) d’[!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >À partir de là, vous pouvez accéder aux notes de mise à jour des versions précédentes. par exemple, pour ceux de 2020, 2021 et ainsi de suite.
@@ -34,7 +34,7 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Nouveautés de [!DNL Sites] {#what-is-new-sites}
+### Nouveautés d’[!DNL Sites] {#what-is-new-sites}
 
 * Points de terminaison GraphQL : il est désormais possible d’activer l’API GraphQL AEM pour les configurations AEM Sites individuelles et de créer des points de terminaison GraphQL personnalisés pour ces configurations à l’aide d’une nouvelle interface utilisateur de la console GraphQL. L’interface utilisateur permet également de gérer les points d’entrée GraphQL.
 
@@ -44,7 +44,7 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 * Modèles de contenu, nouveau type de données Espace réservé d’onglet : le nouveau type de données Espace réservé d’onglet permet de regrouper les types de données dans des sections qui seront rendues sous les onglets de l’éditeur de fragment de contenu.
 
-### Correctifs de bogues dans [!DNL Sites] {#bug-fixes-sites}
+### Bogues corrigés dans [!DNL Sites] {#bug-fixes-sites}
 
 * Fragments de contenu : le déplacement de fragments de contenu ou de dossiers met désormais à jour les références imbriquées dans le fragment (CQ-4320815)
 
@@ -52,7 +52,7 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 ## [!DNL Adobe Experience Manager Assets] as a  [!DNL Cloud Service] {#assets}
 
-### Nouveautés de [!DNL Assets] {#what-is-new-assets}
+### Nouveautés d’[!DNL Assets] {#what-is-new-assets}
 
 * [!DNL Experience Manager] ne archive pas les téléchargements de ressources uniques où le fichier d’origine est téléchargé. Cette amélioration permet des téléchargements plus rapides. Voir [téléchargement de ressources](/help/assets/download-assets-from-aem.md).
 
@@ -72,7 +72,7 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 * Un type de données de zone de texte est disponible dans l’éditeur de métadonnées [!DNL Assets]. Vous pouvez utiliser cette option pour permettre à vos utilisateurs de saisir des métadonnées dans un champ de texte à structure libre.
 
-### Correctifs de bogues dans [!DNL Assets] {#bug-fixes-assets}
+### Bogues corrigés dans [!DNL Assets] {#bug-fixes-assets}
 
 * Lorsque vous tentez de déplacer plusieurs ressources ou dossiers, une erreur est consignée dans la console et l’opération de déplacement n’est pas terminée. L’opération de déplacement échoue si le titre ne peut pas être mis à jour. (CQ-4322080)
 
@@ -88,7 +88,7 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 ## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
-### Nouveautés de [!DNL Forms] {#what-is-new-forms}
+### Nouveautés d’[!DNL Forms] {#what-is-new-forms}
 
 Vous pouvez utiliser [AEM Forms as aCloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) pour créer des formulaires numériques, connecter des formulaires à des sources de données existantes, intégrer des formulaires à Adobe Sign pour ajouter des signatures électroniques aux formulaires, générer un document d’enregistrement (DoR) afin d’archiver les formulaires envoyés sous forme de fichiers PDF. Le service peut également convertir vos PDF forms existants en formulaires numériques. Outre les fonctionnalités AEM Forms standard, le service propose plusieurs fonctionnalités natives dans le cloud, telles que la mise à l’échelle automatique, le zéro temps d’arrêt pour les mises à niveau et l’environnement de développement natif dans le cloud. Lisez [cet article de blog](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html) pour en savoir plus sur les fonctionnalités d’AEM Forms en tant que Cloud Service.
 
@@ -114,7 +114,7 @@ Vous pouvez utiliser [AEM Forms as aCloud Service](https://experienceleague.adob
 
    Vous pouvez utiliser un XDP comme modèle de document d’enregistrement sur les instances de Cloud Service et AEM Forms comme SDK Cloud Service (environnement de développement local). Auparavant, la prise en charge était limitée aux instances de Cloud Service uniquement.
 
-### Correctifs de bogues dans [!DNL Forms] {#bug-fixes-forms}
+### Bogues corrigés dans [!DNL Forms] {#bug-fixes-forms}
 
 * Lorsqu’un formulaire adaptatif configuré pour ne pas générer de document d’enregistrement est envoyé à un processus AEM configuré pour générer un document d’enregistrement, aucun message d’erreur n’est affiché et la tâche ne parvient pas à envoyer.
 
