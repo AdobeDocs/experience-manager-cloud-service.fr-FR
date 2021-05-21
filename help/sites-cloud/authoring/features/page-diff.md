@@ -28,9 +28,9 @@ De fait, l’outil de comparaison des pages permet d’afficher côte à côte d
 L’outil de comparaison côte à côte permet de comparer les éléments suivants :
 
 * [Versions](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page) : la version actuelle d’une page et sa version antérieure.
-* [](/help/sites-cloud/administering/msm/creating-live-copies.md#comparing-a-live-copy-page-with-a-blueprint-page)Live Copies : une Live Copy et son plan directeur
+* [Live Copies](/help/sites-cloud/administering/msm/creating-live-copies.md#comparing-a-live-copy-page-with-a-blueprint-page) : une Live Copy et son plan directeur
 * [Lancements](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) : un lancement et sa source
-* [](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies)Copies de langue : une page avant et après (re)traduction
+* [Copies de langue](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies) : une page avant et après (re)traduction
 
 Reportez-vous aux rubriques correspondantes afin de connaître la procédure de comparaison pour ces différents éléments.
 
