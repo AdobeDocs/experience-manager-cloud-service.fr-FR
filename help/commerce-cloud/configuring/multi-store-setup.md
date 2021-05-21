@@ -62,4 +62,4 @@ Pour connecter un site AEM et les composants principaux AEM CIF à une vue de ma
 * [Sites web, magasins et vues Magento](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 * [Composants principaux AEM CIF – Configuration multi-magasin/site](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
 * [Utilisation de Multi Site Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
-* [Réutilisation de contenu : Multi Site Manager et Live Copy](/help/sites-cloud/administering/msm/overview.md)
+* [Réutilisation de contenu : Multi Site Manager et Live Copy](/help/sites-cloud/administering/msm/overview.md)
