@@ -9,7 +9,7 @@ exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
 source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
 workflow-type: tm+mt
 source-wordcount: '1857'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -122,11 +122,11 @@ Enterprise Manager Assets vous permet de modifier les métadonnées de plusieu
    >Lorsque vous sélectionnez plusieurs ressources, la plus petite forme parent commune est sélectionnée. En d’autres termes, la page [!UICONTROL Propriétés] affiche uniquement les champs de métadonnées communs aux pages [!UICONTROL Propriétés] de toutes les ressources individuelles.
 
 1. Modifiez les propriétés de métadonnées des ressources sélectionnées dans les différents onglets.
-1. Pour afficher l’éditeur de métadonnées pour une ressource spécifique, annulez la sélection des ressources restantes dans la liste. Les champs de l’éditeur de métadonnées sont renseignés avec les métadonnées de la ressource particulière.
+1. Pour afficher l’éditeur de métadonnées concernant une ressource spécifique, désélectionnez les autres ressources dans la liste. Les champs de l’éditeur de métadonnées sont renseignés avec les métadonnées de la ressource particulière.
 
    >[!NOTE]
    >
-   >* Sur la page [!UICONTROL Propriétés] , vous pouvez supprimer des ressources de la liste des ressources en annulant la sélection. La liste des ressources contient toutes les ressources sélectionnées par défaut. Les métadonnées des ressources que vous supprimez de la liste ne sont pas mises à jour.
+   >* Dans la page [!UICONTROL Propriétés], vous pouvez supprimer des ressources de la liste des ressources en les désélectionnant. La liste des ressources contient toutes les ressources sélectionnées par défaut. Les métadonnées des ressources que vous supprimez de la liste ne sont pas mises à jour.
    >* En haut de la liste des ressources, cochez la case située en regard de l’option **[!UICONTROL Titre]** pour passer de la sélection des ressources à l’effacement de la liste, et inversement.
 
 
