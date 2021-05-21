@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
 source-wordcount: '480'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 98%
 + [[!DNL Assets] Architecture](architecture.md)
 + [Formats de fichiers pris en charge](file-format-support.md)
 + [Présentation des microservices de ressources](asset-microservices-overview.md)
-+ [Accessibilité dans  [!DNL Assets]](accessibility.md)
++ [Accessibilité dans [!DNL Assets]](accessibility.md)
 + Gestion des ressources numériques {#manage}
    + [Partage de ressources](share-assets.md)
    + [Surveillance des activités et des tâches de gestion des ressources numériques (DAM)](assets-activity-history.md)
@@ -65,7 +65,7 @@ ht-degree: 98%
 + Partage et distribution de ressources {#brand-portal}
    + [Configuration d’ [!DNL Assets] avec [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Publication de ressources sur [!DNL Brand Portal]](publish-to-brand-portal.md)
-   + [Publication de ressources  [!DNL Brand Portal] à partir de [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=fr)
+   + [Publication de ressources depuis [!DNL Brand Portal] vers [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=fr)
 + Fragments de contenu {#content-fragments}
    + [Utilisation de fragments de contenu](content-fragments/content-fragments.md)
    + [Diffusion découplée avec des fragments de contenu et GraphQL](content-fragments/content-fragments-graphql.md)
@@ -123,5 +123,5 @@ ht-degree: 98%
    + [Utilisation de la publication sélective dans Dynamic Media](dynamic-media/selective-publishing.md)
    + [Utilisation des sélecteurs](dynamic-media/working-with-selectors.md)
    + [FAQ sur la diffusion de contenu HTTP/2](dynamic-media/http2faq.md)
-   + [Fin de prise en charge de la visionneuse Flash](dynamic-media/flash-viewers-eol.md)
+   + [Fin de prise en charge des visionneuses Flash](dynamic-media/flash-viewers-eol.md)
    + [Fin de vie des visionneuses DHTML](dynamic-media/dhtml-viewer-endoflifefaqs.md)
