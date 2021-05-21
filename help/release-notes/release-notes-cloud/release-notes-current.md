@@ -2,9 +2,9 @@
 title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 7f4b26fc7aca570fb1b1922a51ed77879c3b89b9
+source-git-commit: 6c1320d43b551247e63962dd52ada58d463fb92e
 workflow-type: tm+mt
-source-wordcount: '2002'
+source-wordcount: '1996'
 ht-degree: 6%
 
 ---
@@ -54,19 +54,17 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 ### Nouveautés de [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Experience Manager] ne archive pas les téléchargements de ressources uniques où le fichier d’origine est téléchargé. Cette amélioration permet des téléchargements plus rapides.
+* [!DNL Experience Manager] ne archive pas les téléchargements de ressources uniques où le fichier d’origine est téléchargé. Cette amélioration permet des téléchargements plus rapides. Voir [téléchargement de ressources](/help/assets/download-assets-from-aem.md).
 
-* Lorsqu’une ressource est téléchargée via l’option linkshare, vous pouvez désormais choisir de télécharger ou non les rendus. Auparavant, tous les rendus de ressources étaient téléchargés.
-
-* Les administrateurs peuvent configurer [!DNL Experience Manager] pour supprimer la source des ressources après une ingestion de ressources en masse. Voir [ingestion de ressources en bloc](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Lorsque vous téléchargez une ressource via une option linkshare, vous pouvez désormais choisir de télécharger ou non les rendus. Auparavant, tous les rendus de ressources étaient téléchargés. Voir [options de téléchargement](/help/assets/download-assets-from-aem.md).
 
 * Lors de l’exécution d’un contrôle de l’intégrité pour importer des ressources en bloc, Experience Manager fournit désormais plus d’informations sur les raisons des échecs. Voir [ingestion de ressources en bloc](/help/assets/add-assets.md#asset-bulk-ingestor).
 
 * Lors de l’importation de ressources à l’aide de l’outil d’importation en bloc, les administrateurs ont désormais la possibilité de supprimer les fichiers source une fois l’importation réussie. Voir [ingestion de ressources en bloc](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* Lors de la modification d’un schéma de métadonnées, un nouveau champ de sélecteur de chemin racine permet aux administrateurs d’effectuer rapidement et facilement la sélection, réduisant ainsi le temps de configuration.
+* Lors de la modification d’un schéma de métadonnées, un nouveau champ de sélecteur de chemin racine permet aux administrateurs d’effectuer rapidement et facilement la sélection. Cette amélioration permet de réduire le temps de configuration des métadonnées.
 
-* Les métadonnées de nombreuses ressources peuvent être importées en bloc à l’aide d’un fichier CSV et exportées dans un fichier CSV. Le format de date par défaut est désormais `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Les utilisateurs peuvent utiliser un format différent en mettant à jour l’en-tête de colonne. Par exemple, ajoutez `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` comme en-tête de colonne dans le fichier CSV au lieu du mot `Date`.
+* Les métadonnées de nombreuses ressources peuvent être importées en bloc à l’aide d’un fichier CSV et exportées dans un fichier CSV. Le format de date par défaut est désormais `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Les utilisateurs peuvent utiliser un format différent en mettant à jour l’en-tête de colonne. Par exemple, ajoutez `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` comme en-tête de colonne dans le fichier CSV au lieu du mot `Date`. Voir [Importation de métadonnées](/help/assets/metadata-import-export.md).
 
 * Lorsque vous parcourez des ressources en mode Colonne, un indicateur visuel affiche l’état approuvé ou rejeté de chaque ressource.
 
