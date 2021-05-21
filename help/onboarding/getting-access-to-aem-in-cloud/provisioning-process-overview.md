@@ -50,7 +50,8 @@ Pour plus d’informations, voir [Intégration à Experience Manager en tant que
 ### 2. Organisations intégrées à Adobe Admin Console :
 
 >   ![processsview2.jpg](./assets/processOverview2.jpg)
->* Administrateur système :
+
+* Administrateur système :
    * Configuration des programmes et des environnements AEM.
    * Accédez à Admin Console pour les tâches administratives.
    * Demande à un domaine de confirmer la propriété du domaine respectif
