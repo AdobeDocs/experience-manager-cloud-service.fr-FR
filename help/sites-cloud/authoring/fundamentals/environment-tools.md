@@ -5,7 +5,7 @@ exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2152'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -178,7 +178,7 @@ Cliquez sur le chevron en regard d’un composant pour réduire ou développer c
 
 ![Extension du chevron de l’arborescence de contenu](/help/sites-cloud/authoring/assets/content-tree-chevron.png)
 
-Cliquez sur le composant pour mettre en surbrillance le composant dans l’éditeur de page. Les actions disponibles dépendent de l’état de la page :
+Cliquez sur le composant pour mettre en surbrillance le composant dans l’éditeur de page. Les actions disponibles dépendent du statut de la page :
 
 * Par exemple, une page de base :
 
@@ -190,7 +190,7 @@ Cliquez sur le composant pour mettre en surbrillance le composant dans l’édit
 
    ![Bouton Modifier l’arborescence de contenu](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* Page qui fait partie d’une [Live Copy](/help/sites-cloud/administering/msm/overview.md), où les composants sont hérités d’une autre page.
+* Une page faisant partie d’une page [Live Copy](/help/sites-cloud/administering/msm/overview.md), où les composants sont hérités d’une autre page.
 
 >[!NOTE]
 >
@@ -224,8 +224,8 @@ Sélectionnez le type de référence approprié pour en savoir plus. Dans certai
 * **Liens entrants**, fournit la liste de pages qui font référence à cette page, ainsi qu’un lien direct vers l’option **Modifier** pour l’une de ces deux pages lorsque vous sélectionnez un lien spécifique.
 * Les instances du contenu emprunté et prêté à l’aide du composant **Référence** vous permettent de naviguer jusqu’à la page de référence.
 * [Lancements](/help/sites-cloud/authoring/launches/overview.md) donne accès aux lancements associés.
-* [](/help/sites-cloud/administering/msm/overview.md)Live Copies affiche les chemins d’accès à toutes les Live Copies basées sur la ressource sélectionnée.
-* [Plan directeur](/help/sites-cloud/administering/msm/best-practices.md), fournit des détails et diverses actions
+* [Live Copies](/help/sites-cloud/administering/msm/overview.md) affiche les chemins d’accès à toutes les Live Copies basées sur la ressource sélectionnée.
+* Le [plan directeur](/help/sites-cloud/administering/msm/best-practices.md) fournit des détails et la possibilité de diverses actions.
 * [Copies de langue](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel), fournit des détails et diverses actions
 
 ## Événements – Chronologie {#events-timeline}
@@ -253,7 +253,7 @@ L’icône Informations sur la page (icône d’égaliseur) ouvre un menu qui fo
 * [Publier la page](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-pages-1)
 * [Annuler la publication de la page](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)
 * [Modifier le modèle](/help/sites-cloud/authoring/features/templates.md)
-* [Afficher comme publié(e) ](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
+* [Afficher comme publié(e)](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 * [Afficher en administrateur](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
 * [Aide](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)
 * [Convertir le lancement](/help/sites-cloud/authoring/launches/promoting.md) (uniquement si la page correspond à un lancement)
@@ -267,8 +267,8 @@ Lors de la modification d’une page, plusieurs modes permettent d’effectuer d
 * [Modifier](/help/sites-cloud/authoring/fundamentals/editing-content.md) : mode à utiliser lors de la modification du contenu de la page.
 * [Disposition](/help/sites-cloud/authoring/features/responsive-layout.md) : permet de créer et de modifier une disposition réactive en fonction du type d’appareil utilisé (si la page est basée sur un conteneur de mises en page).
 * [Ciblage](/help/sites-cloud/authoring/personalization/targeted-content.md) : optimise la pertinence du contenu grâce au ciblage et aux mesures à l’échelle de tous les canaux.
-* [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) : permet d’afficher l’état d’une page à un moment donné.
-* [État de Live Copy](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) : donne un aperçu rapide de l’état de la live copy et des composants qui sont ou non hérités.
+* [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) : permet d’afficher le statut d’une page à un moment donné.
+* [Statut de la Live Copy](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) : donne un aperçu rapide du statut de la Live Copy et des composants qui sont ou non hérités.
 * [Aperçu](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) : permet d’afficher la page comme elle sera présentée dans l’environnement de publication ou de naviguer au moyen des liens figurant dans le contenu.
 * [Annoter](/help/sites-cloud/authoring/fundamentals/annotations.md) : permet d’ajouter ou d’afficher des annotations sur la page.
 
