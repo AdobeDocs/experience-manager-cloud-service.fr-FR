@@ -276,7 +276,7 @@ Le graphique suivant montre le workflow global de création de vidéos qui sont 
 
 ## Bonnes pratiques en matière de codage de vidéos {#best-practices-for-encoding-videos}
 
-Le workflow **Vidéo de codage Dynamic Media** code la vidéo si vous avez activé Dynamic Media et configuré des Cloud Services vidéo. Ce workflow capture l’historique de traitement des workflows et les informations d’échec. Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](#monitoring-video-encoding-and-youtube-publishing-progress). Si vous avez activé Dynamic Media et configuré des Cloud Services vidéo, le workflow **[!UICONTROL Vidéo de codage Dynamic Media]** prend automatiquement effet lorsque vous chargez une vidéo. (Si vous n’utilisez pas Dynamic Media, le workflow **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]** prend effet.)
+Le workflow **Vidéo de codage Dynamic Media** code la vidéo si vous avez activé Dynamic Media et configuré des Cloud Services vidéo. Ce workflow capture l’historique de traitement des workflows et les informations d’échec. Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](#monitoring-video-encoding-and-youtube-publishing-progress). Si vous avez activé Dynamic Media et configuré des Cloud Services vidéo, le workflow **[!UICONTROL Vidéo de codage Dynamic Media]** prend automatiquement effet lorsque vous chargez une vidéo. (Si vous n’utilisez pas Dynamic Media, le workflow **[!UICONTROL Ressource de mise à jour DAM]** prend effet.)
 
 Vous trouverez ci-dessous quelques conseils sur les bonnes pratiques de codage des fichiers source vidéo.
 
@@ -335,7 +335,7 @@ Le débit correspond à la quantité de données encodées pour produire une seu
 Lorsque vous sélectionnez l’encodage du débit, vous avez le choix entre deux types :
 
 * **[!UICONTROL Encodage à débit constant]**  (CBR) : pendant l’encodage CBR, le débit ou le nombre de bits par seconde est conservé pendant tout le processus d’encodage. L’encodage CBR maintient le débit défini selon votre configuration sur l’intégralité de la vidéo. En outre, le codage CBR n’optimise pas la qualité des fichiers multimédias, mais économise de l’espace de stockage.
- Utilisez le codage CBR si votre vidéo présente globalement un niveau de mouvement similaire. Le codage CBR est le plus souvent utilisé pour diffuser le contenu vidéo en continu. Voir également [Utilisation de paramètres de codage vidéo personnalisés](/help/assets/dynamic-media/video-profiles.md#using-custom-added-video-encoding-parameters).
+Utilisez le codage CBR si votre vidéo présente globalement un niveau de mouvement similaire. Le codage CBR est le plus souvent utilisé pour diffuser le contenu vidéo en continu. Voir également [Utilisation de paramètres de codage vidéo personnalisés](/help/assets/dynamic-media/video-profiles.md#using-custom-added-video-encoding-parameters).
 
 * **[!UICONTROL Codage de débit variable]** (VBR) : le codage VBR ajuste le débit en le diminuant et selon la limite supérieure que vous avez définie, en fonction des données demandées par le compresseur. Cette fonctionnalité signifie que, lors d’un processus de codage VBR, le débit du fichier multimédia augmente ou diminue dynamiquement en fonction des besoins de débit du fichier multimédia.
 Le VBR prend plus de temps au codage, mais garantit de meilleurs résultats, avec une qualité de fichier multimédia supérieure. Le codage VBR est couramment utilisé pour la diffusion http progressive de contenu vidéo.
@@ -773,7 +773,7 @@ Pour obtenir des informations de progression plus détaillées, vous pouvez surv
 1. Dans le coin supérieur droit de la page des propriétés de la vidéo, cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Publication rapide]**.
 
-   Voir aussi [Utilisation de la gestion des publications avec des sites Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring).
+   Voir aussi [Utilisation de la gestion des publications avec des sites Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=fr#page-authoring).
 
    Vous avez la possibilité de vérifier la vidéo publiée sur votre chaîne YouTube.
 
