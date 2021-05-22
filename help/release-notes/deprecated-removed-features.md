@@ -2,10 +2,10 @@
 title: Fonctionnalités obsolètes et supprimées
 description: Notes de mise à jour spécifiques aux fonctionnalités obsolètes et supprimées dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 8c26dbcc77113b86ab28ab52e0b6564fa5ed538a
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 49%
+source-wordcount: '448'
+ht-degree: 48%
 
 ---
 
@@ -43,4 +43,4 @@ Cette section répertorie les fonctionnalités qui ont été supprimées de [!DN
 | [!DNL Dynamic Media] | Les intégrations précédentes avec [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html?lang=fr#integration) et le [mode hybride de Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html?lang=fr#dynamic)[!DNL Experience Manager] ne sont pas disponibles dans as a [!DNL Cloud Service]. | Utilisez [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) fourni avec [!DNL Experience Manager] comme [!DNL Cloud Service]. |
 | [!DNL Sites] | Composant Portal Director et Portlet | Ces fonctionnalités ont été abandonnées dans [!DNL Experience Manager] 6.4 et ont été supprimées de [!DNL Experience Manager]. |
 | [!DNL Sites] | Importateur de conception | Cette fonctionnalité a été supprimée, car les sections non modifiables du référentiel [!DNL Experience Manager] ne sont pas accessibles au moment de l’exécution. |
-| [!DNL Assets] | [[!DNL Assets] partage avec Marketing Cloud Assets Core Service et les ](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/integration/configure-assets-cc-integration.html) services Creative Cloud non disponibles. | Pour l’intégration avec [!DNL Adobe Creative Cloud], utilisez [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html). |
+| [!DNL Assets] | [!DNL Assets] le partage avec Marketing Cloud Assets Core Service et les services Creative Cloud n’est pas disponible. | Pour l’intégration avec [!DNL Adobe Creative Cloud], utilisez [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html). |
