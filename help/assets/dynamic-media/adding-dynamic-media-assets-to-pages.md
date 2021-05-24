@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Gestion des ressources
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: 0824f77c35fc97a5bf703036d299c37b75935301
 workflow-type: tm+mt
-source-wordcount: '3098'
-ht-degree: 84%
+source-wordcount: '3242'
+ht-degree: 80%
 
 ---
 
@@ -165,6 +165,17 @@ Vous pouvez modifier les paramètres Dynamic Media ci-après en appuyant sur **
 
    Vous pouvez modifier les paramètres avancés ci-après en appuyant sur **[!UICONTROL Modifier]** dans le composant.
 
+* **[!UICONTROL Optimiser pour les appareils]**  à résolution plus élevée : cochez (par défaut) la case pour autoriser l’optimisation du rapport DPR (Device Pixel Ratio).
+
+   Voir aussi [A propos de l’optimisation du rapport pixels d’appareil](/help/assets/dynamic-media/imaging-faq.md#dpr).
+
+   Notez que toutes les valeurs RGPD d’imagerie dynamique Dynamic Media Adobe Experience Manager sont ignorées.
+
+   L’option **[!UICONTROL Optimiser pour les appareils à résolution plus élevée]** n’est affichée que lorsque la valeur suivante est vraie :
+   * Sous Type de paramètre prédéfini, **[!UICONTROL Paramètre d’image prédéfini]** est sélectionné et **[!UICONTROL RESS_IP]** est sélectionné dans la liste déroulante **[!UICONTROL Paramètre d’image prédéfini]** .
+
+   ![paramètre de rapport pixels d’appareil pour le paramètre d’image prédéfini](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
+
 * **[!UICONTROL Titre]**  : modifiez le titre de l’image.
 
 * **[!UICONTROL Texte de remplacement]**  : ajoutez un titre à l’image pour les utilisateurs pour lesquels les graphiques sont désactivés.
@@ -178,7 +189,6 @@ Vous pouvez modifier les paramètres Dynamic Media ci-après en appuyant sur **
 * **[!UICONTROL Largeur]**  : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
 
 * **[!UICONTROL Hauteur]**  : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
-
 
 #### En cas d’utilisation de vidéos {#when-working-with-video}
 
@@ -232,6 +242,18 @@ Vous pouvez modifier le paramètre Dynamic Media suivant en cliquant sur **[!UI
    Vous pouvez modifier les paramètres avancés ci-après en cliquant sur **[!UICONTROL Modifier]** dans le composant.
 
 * **[!UICONTROL Activer la correspondance du rapport d’aspect]**  : pour permettre à Dynamic Media de sélectionner un rendu de recadrage intelligent avec un rapport d’aspect qui correspond le mieux au rapport d’aspect de l’image d’origine, sélectionnez cette option.
+
+* **[!UICONTROL Optimiser pour les appareils]**  à résolution plus élevée : cochez (par défaut) la case pour autoriser l’optimisation du rapport DPR (Device Pixel Ratio).
+
+   Voir aussi [A propos de l’optimisation du rapport pixels d’appareil](/help/assets/dynamic-media/imaging-faq.md#dpr).
+
+   Notez que toutes les valeurs RGPD d’imagerie dynamique Dynamic Media Adobe Experience Manager sont ignorées.
+
+   L’option **[!UICONTROL Optimiser pour les appareils à résolution plus élevée]** n’est affichée que lorsque la valeur suivante est vraie :
+
+   * Sous Type de paramètre prédéfini, l’option **[!UICONTROL Recadrage intelligent]** est sélectionnée.
+
+   ![paramètre de rapport pixels d’appareil pour le recadrage intelligent](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
 
 * **[!UICONTROL Titre]**  : modifiez le titre de l’image avec recadrage intelligent.
 
