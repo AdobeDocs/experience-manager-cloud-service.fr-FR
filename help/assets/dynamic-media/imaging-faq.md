@@ -4,10 +4,10 @@ description: Découvrez comment l’imagerie dynamique avec Adobe Sensei AI appl
 feature: Gestion des ressources,Rendus
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: eef1760407986e47876416c90df6dfb6f5693c1a
+source-git-commit: f500dd32a3f71357ced9687800945604a3455b48
 workflow-type: tm+mt
 source-wordcount: '2634'
-ht-degree: 54%
+ht-degree: 53%
 
 ---
 
@@ -98,7 +98,7 @@ Améliorations apportées par la version la plus récente de l’imagerie dynami
 
 ## L’imagerie dynamique entraîne-t-elle des frais de licence ? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-Non. L’imagerie dynamique est inclus dans votre licence existante. Cette règle est vraie pour Dynamic Media Classic ou pour Experience Manager Dynamic Media (On-premise, AMS et Experience Manager as a Cloud Service).
+Non. L’imagerie dynamique est inclus dans votre licence existante. Cette règle est vraie pour Dynamic Media Classic ou Experience Manager - Dynamic Media (On-prem, AMS et Experience Manager en tant que Cloud Service).
 
 >[!NOTE]
 >
@@ -174,7 +174,7 @@ Pour pouvoir utiliser l’imagerie dynamique, le compte Dynamic Media Classic 
 
 Pour rechercher vos domaines, ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started), puis connectez-vous au ou aux comptes de votre société.
 
-Appuyez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**. Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié]**. Si vous utilisez actuellement un domaine générique, vous pouvez demander à passer à votre propre domaine personnalisé. Faites cette demande de transition lorsque vous soumettez un ticket d’assistance technique.
+Appuyez sur **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]**. Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié]**. Si vous utilisez actuellement un domaine générique, vous pouvez demander à passer à votre propre domaine personnalisé. Faites cette demande de transition lorsque vous soumettez un ticket d’assistance technique.
 
 Votre premier domaine personnalisé n’entraîne aucun coût supplémentaire avec une licence Dynamic Media.
 
