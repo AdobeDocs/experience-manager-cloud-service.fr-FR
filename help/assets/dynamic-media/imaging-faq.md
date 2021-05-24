@@ -1,13 +1,13 @@
 ---
 title: Imagerie dynamique
-description: '"Découvrez comment l’imagerie dynamique applique les caractéristiques de visualisation uniques de chaque utilisateur pour diffuser automatiquement les images appropriées optimisées pour leur expérience, ce qui se traduit par de meilleures performances et un meilleur engagement."'
+description: Découvrez comment l’imagerie dynamique avec Adobe Sensei AI applique les caractéristiques d’affichage uniques de chaque utilisateur afin de diffuser automatiquement les images appropriées optimisées pour son expérience, ce qui se traduit par de meilleures performances et un meilleur engagement.
 feature: Gestion des ressources,Rendus
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: eef1760407986e47876416c90df6dfb6f5693c1a
 workflow-type: tm+mt
-source-wordcount: '1922'
-ht-degree: 78%
+source-wordcount: '2634'
+ht-degree: 54%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 78%
 
 La technologie d’imagerie dynamique applique les fonctionnalités d’intelligence artificielle d’Adobe Sensei et fonctionne avec les « paramètres d’image prédéfinis » existants. Elle permet d’améliorer les performances de la diffusion d’images en optimisant automatiquement le format, la taille et la qualité des images en fonction des fonctionnalités du navigateur client.
 
->[!NOTE]
+>[!IMPORTANT]
 >
->Cette fonctionnalité nécessite l’utilisation du réseau de diffusion de contenu prêt à l’emploi (CDN) fourni avec Adobe Experience Manager Dynamic Media. Aucun autre réseau CDN personnalisé n’est pris en charge avec cette fonctionnalité.
+>L’imagerie dynamique requiert que vous utilisiez le réseau de diffusion de contenu prêt à l’emploi (CDN) fourni avec Adobe Experience Manager - Dynamic Media. Aucun autre réseau CDN personnalisé n’est pris en charge avec cette fonctionnalité.
 
 L’imagerie dynamique tire également parti de sa parfaite intégration dans un service CDN (réseau de diffusion de contenu) haut de gamme proposé par Adobe afin d’offrir un gain de performance accru. Ce service trouve l’itinéraire Internet optimal entre les serveurs, les réseaux et les points de connexion. Il trouve un itinéraire ayant la latence la plus faible et le taux de perte de paquets le plus faible au lieu d’utiliser l’itinéraire par défaut sur Internet.
 
@@ -35,13 +35,60 @@ Les exemples de ressources d’image suivants illustrent l’optimisation suppl�
 
 De la même manière que ci-dessus, Adobe a également exécuté un test avec 7 009 URL provenant de sites clients actifs. Ils ont pu optimiser de 38 % en moyenne leur taille de fichier au format JPEG. Pour les fichiers PNG au format WebP, cette taille de fichier au pu être optimisée de 31 % en moyenne. Ce type d’optimisation est possible grâce à la fonctionnalité d’imagerie dynamique.
 
+Sur le web mobile, les défis sont aggravés par deux facteurs :
+
+* Large éventail d’appareils avec différents facteurs de formulaire et affichages haute résolution.
+* Bande passante réseau limitée.
+
+En termes d’images, l’objectif est d’offrir des images de la meilleure qualité possible.
+
+### A propos de l’optimisation du rapport pixels d’appareil {#dpr}
+
+Le rapport pixel d’appareil (DPR), également appelé rapport pixel CSS, est la relation entre les pixels physiques et les pixels logiques d’un appareil. Surtout avec l’avènement des écrans rétine, la résolution en pixels des appareils mobiles modernes augmente à un rythme rapide.
+
+L’activation de l’optimisation du rapport de pixels du périphérique effectue le rendu de l’image à la résolution native de l’écran, ce qui la rend crise.
+
+L’activation de l’imagerie dynamique La configuration du RGPD ajuste automatiquement l’image demandée en fonction de la densité en pixels de l’affichage à partir duquel la demande est diffusée. Actuellement, la densité en pixels de l’affichage provient des valeurs d’en-tête Akamai CDN.
+
+| Valeurs autorisées dans l’URL d’une image | Description |
+|---|---|
+| `dpr=off` | Désactivez l’optimisation du RGPD au niveau de l’URL d’une image individuelle. |
+| `dpr=on,dprValue` | Remplacez la valeur RPD détectée par l’imagerie dynamique par une valeur personnalisée (comme détectée par une logique côté client ou par d’autres moyens). La valeur autorisée pour `dprValue` est n’importe quel nombre supérieur à 0. Les valeurs spécifiées de 1.5, 2 ou 3 sont typiques. |
+
+>[!NOTE]
+>
+>* Vous pouvez utiliser `dpr=on,dprValue` même si le paramètre RGPD au niveau de la société est désactivé.
+>* En raison de l’optimisation du RPD, lorsque l’image créée est supérieure au paramètre MaxPix Dynamic Media , la largeur MaxPix est toujours reconnue en conservant les proportions de l’image.
+
+
+| Taille de l’image demandée | Valeur DPR | Taille de l’image diffusée |
+|---|---|---|
+| 816x500 | 1 | 816x500 |
+| 816x500 | 2 | 1 632 x 1 000 |
+
+Voir aussi [Lorsque vous utilisez des images](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) et [Lorsque vous utilisez le recadrage intelligent](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
+
+### A propos de l&#39;optimisation de la bande passante du réseau {#network-bandwidth-optimization}
+
+L’activation de la bande passante réseau ajuste automatiquement la qualité de l’image diffusée en fonction de la bande passante réseau réelle. Pour une bande passante réseau insuffisante, l’optimisation du RPD est automatiquement désactivée, même si elle est déjà activée.
+
+Si vous le souhaitez, votre entreprise peut se désabonner de l’optimisation de la bande passante du réseau au niveau de l’image individuelle en ajoutant `network=off` à l’URL de l’image.
+
+| Valeur autorisée dans l’URL d’une image | Description |
+|---|---|
+| `network=off` | Désactive l’optimisation du réseau au niveau de l’URL d’une image individuelle. |
+
+>[!NOTE]
+>
+>Les valeurs RPD et bande passante réseau sont basées sur les valeurs côté client détectées du réseau de diffusion de contenu groupé. Ces valeurs sont parfois inexactes. Par exemple, l’iPhone5 avec DPR=2 et l’iPhone12 avec DPR=3 affichent toutes deux DPR=2. Néanmoins, pour les appareils à haute résolution, envoyer DPR=2 est préférable à envoyer DPR=1. Bientôt : Adobe travaille sur le code côté client pour déterminer précisément le RGPD d’un utilisateur final.
+
 ## Quels sont les principaux avantages de la plus récente technologie d’imagerie dynamique ? {#what-are-the-key-benefits-of-smart-imaging}
 
 Le chargement des images représente la majeure partie du temps de chargement d’une page. Toute amélioration de ces performances peut ainsi offrir des avantages significatifs en termes de taux de conversion, de temps passé sur une page et de taux de rebond du site.
 
 Améliorations apportées par la version la plus récente de l’imagerie dynamique :
 
-* Amélioration du classement d’optimisation du référencement Google pour les pages web à l’aide de la dernière technologie d’imagerie dynamique.
+* Amélioration du classement d’optimisation du référencement Google pour les pages web qui utilisent la dernière technologie d’imagerie dynamique.
 * Diffusion immédiate de contenus optimisés (au moment de l’exécution).
 * Utilise la technologie Adobe Sensei pour la conversion en fonction de la qualité (`qlt`) spécifiée dans la demande d’image.
 * L’imagerie dynamique peut être désactivée à l’aide du paramètre d’URL `bfc`.
@@ -49,7 +96,7 @@ Améliorations apportées par la version la plus récente de l’imagerie dynami
 * Auparavant également, les images d’origine et dérivées étaient mises en cache et un processus en deux étapes était nécessaire pour invalider le cache. Avec la technologie d’imagerie dynamique la plus récente, seules les images dérivées sont mises en cache, ce qui rend possible un processus d’invalidation du cache en une seule étape.
 * Les clients qui utilisent des en-têtes personnalisés dans leur jeu de règles bénéficient de la dernière version de l’imagerie dynamique, car ces en-têtes ne sont pas bloqués, contrairement à la version précédente de l’imagerie dynamique. Par exemple, &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot; comme suggéré dans [Ajout d’une valeur d’en-tête personnalisée aux réponses d’image|Dynamic Media Classic](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-## L’imagerie dynamique entraîne-t-elle des frais de licence ? {#are-there-any-licensing-costs-associated-with-smart-imaging}
+## L’imagerie dynamique entraîne-t-elle des frais de licence ? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
 Non. L’imagerie dynamique est inclus dans votre licence existante. Cette règle est vraie pour Dynamic Media Classic ou pour Experience Manager Dynamic Media (On-premise, AMS et Experience Manager as a Cloud Service).
 
@@ -57,7 +104,7 @@ Non. L’imagerie dynamique est inclus dans votre licence existante. Cette règl
 >
 >L’imagerie dynamique n’est pas disponible pour les clients Dynamic Media - Hybrid.
 
-## Comment fonctionne l’imagerie dynamique ? {#how-does-smart-imaging-work}
+## Comment fonctionne l’imagerie dynamique ? {#how-does-smart-imaging-work}
 
 Lorsqu’une image est demandée par un consommateur, l’imagerie dynamique vérifie les caractéristiques de l’utilisateur et la convertit au format d’image approprié en fonction du navigateur utilisé. Ces conversions de format s’effectuent de manière à garantir une représentation fidèle. L’imagerie dynamique convertit automatiquement les images dans différents formats en fonction des capacités du navigateur de la manière suivante.
 
@@ -118,7 +165,7 @@ Pour connaître les conditions préalables requises pour l’imagerie dynamique,
 
 L’imagerie dynamique fonctionne avec les images diffusées sur HTTP ou HTTPS. Elle fonctionne également sur HTTP/2.
 
-## Puis-je utiliser l’imagerie dynamique ? {#am-i-eligible-to-use-smart-imaging}
+## Puis-je utiliser l’imagerie dynamique ? {#am-i-eligible-to-use-smart-imaging}
 
 Pour pouvoir utiliser l’imagerie dynamique, le compte Dynamic Media Classic ou Dynamic Media sur Experience Manager de votre entreprise doit répondre aux conditions suivantes :
 
@@ -133,7 +180,17 @@ Votre premier domaine personnalisé n’entraîne aucun coût supplémentaire av
 
 ## Quelle est la marche à suivre afin d’activer l’imagerie dynamique pour mon compte ? {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
 
-Vous devez envoyer la demande d’utilisation d’imagerie dynamique ; celle-ci n’est pas activée automatiquement.
+Vous lancez la demande d’utilisation de l’imagerie dynamique ; il n’est pas activé automatiquement.
+
+Par défaut, l’imagerie dynamique RGPD et l’optimisation du réseau sont désactivés pour un compte d’entreprise Dynamic Media. Si vous souhaitez activer l’une ou l’autre de ces améliorations prêtes à l’emploi, créez un cas de prise en charge comme décrit ci-dessous.
+
+Le calendrier de publication de l’imagerie dynamique RGPD et de l’optimisation du réseau est le suivant :
+
+| Région   | Date cible |
+|---|---|
+| Amérique du Nord | 24 mai 2021 |
+| Europe, Moyen-Orient, Afrique | 25 juin 2021 |
+| Asie-Pacifique | 19 juillet 2021 |
 
 1. [Utilisez Admin Console pour créer un dossier d’assistance](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 1. Indiquez les informations suivantes dans votre dossier de support :
@@ -143,7 +200,7 @@ Vous devez envoyer la demande d’utilisation d’imagerie dynamique ; celle-ci
 
       Pour rechercher vos domaines, ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous au ou aux comptes de votre société.
 
-      Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**.
+      Cliquez sur **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]**.
 
       Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié]**.
    1. Vérifiez que vous utilisez le CDN via Adobe et non le CDN géré avec une relation directe.
@@ -151,18 +208,18 @@ Vous devez envoyer la demande d’utilisation d’imagerie dynamique ; celle-ci
 
       Pour rechercher vos domaines, ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous au ou aux comptes de votre société.
 
-      Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**.
+      Cliquez sur **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]**.
 
       Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié]**. Si vous utilisez actuellement un domaine Dynamic Media Classic générique, vous pouvez demander une migration vers votre domaine personnalisé dans le cadre de cette transition.
    1. Indiquez si vous souhaitez qu’il fonctionne en HTTP/2.
 
 1. L’Assistance clientèle Adobe vous inscrira sur la liste d’attente des clients pour l’imagerie dynamique en se basant sur l’ordre dans lequel les demandes ont été envoyées.
 1. Dès qu’Adobe est prêt à traiter votre demande, vous serez contacté par l’Assistance clientèle afin de programmer une date cible.
-1. **Facultatif** : Vous avez la possibilité de tester l’imagerie dynamique dans le cadre de l’évaluation avant qu’Adobe ne mette la nouvelle fonctionnalité en production.
+1. **Facultatif** : Vous pouvez éventuellement tester l’imagerie dynamique dans l’évaluation avant qu’Adobe ne mette la nouvelle fonctionnalité en production.
 1. Une fois la procédure achevée, vous en serez informé par l’équipe d’Assistance clientèle.
 1. Pour tirer pleinement parti des améliorations de performances de l’imagerie dynamique, Adobe recommande de définir le délai d’expiration (TTL) sur 24 heures ou plus. Ce paramètre définit la période pendant laquelle les ressources sont mises en cache par le réseau de diffusion de contenu. Pour modifier ce paramètre :
 
-   1. Si vous utilisez Dynamic Media Classic, cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Configuration de la publication > Serveur d’images]**. Définissez la valeur **[!UICONTROL Délai d’expiration par défaut du cache de client]** sur 24 ou plus.
+   1. Si vous utilisez Dynamic Media Classic, cliquez sur **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Configuration de la publication]** > **[!UICONTROL Image Server]**. Définissez la valeur **[!UICONTROL Délai d’expiration par défaut du cache de client]** sur 24 ou plus.
    1. Si vous utilisez Dynamic Media, [procédez comme suit](config-dm.md). Définissez la valeur **[!UICONTROL Expiration]** sur 24 heures ou plus.
 
 ## Dans quel délai puis-je m’attendre à ce que l’imagerie dynamique soit activée pour mon compte ? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
@@ -179,10 +236,10 @@ La page web d’un client ne présente aucun risque. Cependant, la transition à
 
 Au cours de la transition initiale, les images non mises en cache accèdent directement aux serveurs d’origine d’Adobe jusqu’à ce que le cache soit reconstitué. C’est pour cette raison qu’Adobe prévoit de ne gérer que quelques transitions à la fois afin d’offrir des performances acceptables lors de l’extraction des demandes du site d’origine. Pour la plupart des utilisateurs, le cache est entièrement reconstitué au niveau du réseau CDN sous 1 à 2 jours.
 
-## Comment puis-je vérifier si l’imagerie dynamique fonctionne comme prévu ? {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
+## Comment puis-je vérifier si l’imagerie dynamique fonctionne comme prévu ?{#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
-1. Une fois que l’imagerie dynamique est activée sur votre compte, chargez une URL d’image Dynamic Media Classic ou Adobe Experience Manager - Dynamic Media sur le navigateur.
-1. Ouvrez le volet de Chrome pour les développeurs en cliquant sur **[!UICONTROL Afficher > Développeur > Outils de développement]** dans le navigateur. Vous pouvez également sélectionner l’outil de développement de navigateur de votre choix.
+1. Une fois votre compte configuré avec l’imagerie dynamique, chargez une URL d’image Dynamic Media Classic ou Adobe Experience Manager - Dynamic Media sur le navigateur.
+1. Ouvrez le volet de Chrome pour les développeurs en cliquant sur **[!UICONTROL Afficher]** > **[!UICONTROL Développeur]** > **[!UICONTROL Outils de développement]** dans le navigateur. Vous pouvez également sélectionner l’outil de développement de navigateur de votre choix.
 
 1. Assurez-vous que le cache est désactivé lorsque les outils de développement sont ouverts.
 
@@ -202,14 +259,26 @@ Au cours de la transition initiale, les images non mises en cache accèdent dire
 
 Oui. Vous pouvez désactiver l’imagerie dynamique en ajoutant le modificateur `bfc=off` à l’URL.
 
-## Quel « réglage » est disponible ? Existe-t-il des paramètres ou des comportements pouvant être définis ? (#tuning-settings)
+## Puis-je demander que le RPD et l’optimisation du réseau soient désactivés au niveau de l’entreprise ? {#dpr-companylevel-turnoff}
+
+Oui. Pour désactiver le RPD et l’optimisation du réseau dans votre entreprise, créez un cas de support, comme décrit précédemment dans cette rubrique.
+
+## Quel « réglage » est disponible ? Existe-t-il des paramètres ou des comportements pouvant être définis ? {#tuning-settings}
 
 Actuellement, vous pouvez éventuellement activer ou désactiver l’imagerie dynamique. Aucun autre réglage n’est disponible.
 
-## Si l’imagerie dynamique gère les paramètres de qualité, existe-t-il des valeurs minimales et maximales que nous pouvons définir ? Par exemple, est-il possible de définir une qualité « non inférieure à 60 » et « non supérieure à 80 » ? (#minimum-maximum)
+## Si l’imagerie dynamique gère les paramètres de qualité, existe-t-il des valeurs minimales et maximales que nous pouvons définir ? Par exemple, est-il possible de définir une qualité « non inférieure à 60 » et « non supérieure à 80 » ? {#minimum-maximum}
 
 Il n’existe aucune fonctionnalité de configuration de ce type dans la technologie actuelle d’imagerie dynamique.
 
-## Dans certains cas, c’est une image JPEG qui est renvoyée au navigateur Chrome au lieu d’une image WebP. Pourquoi cela arrive-t-il ? (#jpeg-webp)
+## Dans certains cas, c’est une image JPEG qui est renvoyée au navigateur Chrome au lieu d’une image WebP. Pourquoi cela arrive-t-il ? {#jpeg-webp}
 
 L’imagerie dynamique détermine si la conversion apporte ou non un bénéfice. Elle ne renvoie la nouvelle image que si la conversion parvient à réduire la taille du fichier avec une qualité comparable.
+
+## Comment l’imagerie dynamique est-elle compatible avec les composants Adobe Experience Manager Sites et les visionneuses Dynamic Media ?
+
+* Les composants principaux des sites Experience Manager sont configurés par défaut pour l’optimisation du RPD. Pour éviter les images surdimensionnées en raison de l’optimisation du RGPD de l’imagerie dynamique côté serveur, `dpr=off` est toujours ajouté aux images Dynamic Media des composants principaux des sites Experience Manager.
+* Étant donné que le composant Dynamic Media Foundation est configuré par défaut pour l’optimisation du RGPD, afin d’éviter les images surdimensionnées en raison de l’optimisation de l’imagerie dynamique côté serveur, `dpr=off` est toujours ajouté aux images du composant Dynamic Media Foundation. Même si le client désélectionne l’optimisation du RGPD dans le composant Foundation DM, le RGPD de l’imagerie dynamique côté serveur ne démarre pas. En résumé, dans le composant de base DM, l’optimisation du RPD entre en vigueur en fonction du paramètre au niveau du composant de base DM uniquement.
+* Toute optimisation du RGPD côté visionneuse fonctionne en tandem avec l’optimisation du RGPD de l’imagerie dynamique côté serveur et n’entraîne pas de surdimensionnement des images. En d’autres termes, là où le RGPD est géré par la visionneuse, par exemple la vue principale uniquement dans une visionneuse avec zoom activé, les valeurs du RGPD de l’imagerie dynamique côté serveur ne sont pas déclenchées. De même, lorsque les éléments de visionneuse, tels que les échantillons et les miniatures, ne sont pas gérés en vertu du RGPD, la valeur du RGPD d’imagerie dynamique côté serveur est déclenchée.
+
+Voir aussi [Lorsque vous utilisez des images](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) et [Lorsque vous utilisez le recadrage intelligent](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
