@@ -1,16 +1,18 @@
 ---
 title: Conditions préalables pour l’outil de transfert de contenu
 description: Conditions préalables pour l’outil de transfert de contenu
-source-git-commit: ebe12a71df610a68c43048667136e331c1bd8f86
+source-git-commit: f70959efd9d0382c083ac05b9ccd63cf79947bc2
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '222'
 ht-degree: 1%
 
 ---
 
 # Conditions préalables pour l’outil de transfert de contenu {#prerequisites}
 
-Le tableau suivant résume les conditions préalables requises pour l’utilisation de l’outil de transfert de contenu. Veuillez consulter toutes les considérations ci-dessous :
+Le tableau suivant résume les conditions préalables requises pour l’utilisation de l’outil de transfert de contenu.
+
+Veuillez consulter toutes les considérations ci-dessous :
 
 | Considérations | Éléments actuellement pris en charge |
 |--- |--- |
@@ -18,3 +20,7 @@ Le tableau suivant résume les conditions préalables requises pour l’utilisat
 | Taille de l’entrepôt de segments | L’outil de transfert de contenu prend actuellement en charge jusqu’à 83 Go sur *Auteur* et 31 Go sur *Publier*. |
 | Taille totale du référentiel de contenu <br>*(entrepôt de contenu + entrepôt de données)* | L’outil de transfert de contenu est conçu pour transférer du contenu jusqu’à 10 To. Tout ce qui dépasse 10 To n’est actuellement pas pris en charge. Créez un ticket d’assistance auprès de l’assistance clientèle d’Adobe pour discuter des options relatives au contenu de plus de 10 To. |
 | Contenu sur les chemins immuables | L’outil de transfert de contenu ne fonctionne pas pour la migration du contenu dans des chemins immuables tels que `“/etc”`. <br>Pour en savoir plus sur la restructuration des référentiels et les modèles de workflows, voir  [Restructuration ](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) des référentiels communs . |
+
+## Suite {#whats-next}
+
+Une fois que vous avez examiné les conditions préalables requises, vous pouvez apprendre à exécuter l’outil de transfert de contenu. Pour plus d’informations, voir [Utilisation de l’outil de transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md) .
