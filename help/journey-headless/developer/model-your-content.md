@@ -1,7 +1,7 @@
 ---
 title: Comment modéliser votre contenu
 description: Dans cette partie du Parcours de développement AEM sans affichage, apprenez à modéliser votre contenu pour AEM diffusion sans affichage à l’aide de la modélisation de contenu avec des modèles de fragment de contenu et des fragments de contenu.
-source-git-commit: ddd320ae703225584d4a2055d0f882d238d60987
+source-git-commit: 816c08b9351b3ce2fd4f31974d707e9d4a4eea27
 workflow-type: tm+mt
 source-wordcount: '1802'
 ht-degree: 5%
@@ -17,7 +17,7 @@ Dans cette partie du [Parcours de développement AEM sans affichage](overview.md
 
 Au début [Découvrez le développement CMS sans affichage](learn-about.md) la diffusion de contenu sans affichage et pourquoi elle doit être utilisée. Ensuite, [Prise en main d’AEM sans tête en tant que Cloud Service](getting-started.md) décrit AEM sans tête dans le contexte de votre propre projet.
 
-Dans le document précédent du parcours sans interface utilisateur AEM, [Chemin d’accès à votre première expérience à l’aide d’AEM sans affichage](/help/implementing/developing/headless-journey/path-to-first-experience.md), vous avez ensuite appris les étapes nécessaires à la mise en oeuvre de votre premier projet. Après l’avoir lu, vous devez :
+Dans le document précédent du parcours sans interface utilisateur AEM, [Chemin d’accès à votre première expérience à l’aide d’AEM sans affichage](path-to-first-experience.md), vous avez ensuite appris les étapes nécessaires à la mise en oeuvre de votre premier projet. Après l’avoir lu, vous devez :
 
 * Comprendre les points importants de la planification pour concevoir votre contenu
 * Découvrez les étapes à suivre pour implémenter sans interface utilisateur graphique en fonction des exigences de niveau d’intégration.
@@ -274,6 +274,6 @@ Maintenant que vous avez appris à modéliser votre structure et à créer du co
    * [Fragments de contenu dans l’explorateur de configurations](/help/assets/content-fragments/content-fragments-configuration-browser.md)  : activez la fonctionnalité Fragment de contenu dans l’explorateur de configurations.
    * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)  : création et modification de modèles de fragment de contenu
    * [Gestion des fragments](/help/assets/content-fragments/content-fragments-managing.md)  de contenu : création et création de fragments de contenu ; cette page vous mènera à d’autres sections détaillées
-* [AEM les schémas GraphQL](/help/implementing/developing/headless-journey/access-your-content.md)  - la manière dont GraphQL réalise les modèles
+* [AEM les schémas GraphQL](access-your-content.md)  - la manière dont GraphQL réalise les modèles
 * [Exemple de structure de fragment de contenu](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [Prise en main d’AEM sans affichage](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr)  - Une courte série de tutoriels vidéo donnant un aperçu de l’utilisation AEM fonctionnalités sans affichage, notamment la modélisation de contenu et GraphQL.
