@@ -1,9 +1,9 @@
 ---
 title: Conditions préalables pour l’outil de transfert de contenu
 description: Conditions préalables pour l’outil de transfert de contenu
-source-git-commit: f70959efd9d0382c083ac05b9ccd63cf79947bc2
+source-git-commit: ea179642442b7b246df3096fa52d94f9b5e865ac
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '261'
 ht-degree: 1%
 
 ---
@@ -18,9 +18,9 @@ Veuillez consulter toutes les considérations ci-dessous :
 |--- |--- |
 | Version d’AEM | L’outil de transfert de contenu ne peut être exécuté que sur AEM version 6.3 ou ultérieure. Pour pouvoir utiliser l’outil de transfert de contenu avec AEM version 6.2 ou antérieure, une mise à niveau statique du référentiel de contenu vers AEM 6.5 est requise. Il n’est pas nécessaire de mettre à niveau le code vers AEM 6.5 pour cela. |
 | Taille de l’entrepôt de segments | L’outil de transfert de contenu prend actuellement en charge jusqu’à 83 Go sur *Auteur* et 31 Go sur *Publier*. |
-| Taille totale du référentiel de contenu <br>*(entrepôt de contenu + entrepôt de données)* | L’outil de transfert de contenu est conçu pour transférer du contenu jusqu’à 10 To. Tout ce qui dépasse 10 To n’est actuellement pas pris en charge. Créez un ticket d’assistance auprès de l’assistance clientèle d’Adobe pour discuter des options relatives au contenu de plus de 10 To. |
-| Contenu sur les chemins immuables | L’outil de transfert de contenu ne fonctionne pas pour la migration du contenu dans des chemins immuables tels que `“/etc”`. <br>Pour en savoir plus sur la restructuration des référentiels et les modèles de workflows, voir  [Restructuration ](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) des référentiels communs . |
+| Taille totale du référentiel de contenu <br>*(entrepôt de segments + entrepôt de données)* | L’outil de transfert de contenu est conçu pour transférer du contenu jusqu’à 10 To. Tout ce qui dépasse 10 To n’est actuellement pas pris en charge. Créez un ticket d’assistance auprès de l’assistance clientèle d’Adobe pour discuter des options relatives au contenu de plus de 10 To. |
+| Contenu sur les chemins immuables | L’outil de transfert de contenu ne peut pas être utilisé pour migrer le contenu dans des chemins immuables tels que `“/etc”`. Certains `"/etc"` chemins peuvent être sélectionnés uniquement pour prendre en charge [AEM Forms vers AEM Forms en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets). Pour tous les autres cas d’utilisation, reportez-vous à la section [Restructuration des référentiels communs](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) pour en savoir plus sur la restructuration des référentiels. |
 
 ## Suite {#whats-next}
 
-Une fois que vous avez examiné les conditions préalables requises, vous pouvez apprendre à exécuter l’outil de transfert de contenu. Pour plus d’informations, voir [Utilisation de l’outil de transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md) .
+Une fois que vous avez examiné les conditions préalables et déterminé si vous pouvez utiliser l’outil de transfert de contenu dans votre projet de migration, reportez-vous à la section [Bonnes pratiques et remarques supplémentaires](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md) lors de l’utilisation de l’outil de transfert de contenu.
