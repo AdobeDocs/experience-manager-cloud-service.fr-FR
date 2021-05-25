@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: e0c6a79e6a088423cbc47046f285fb1ac241c476
+source-git-commit: d8ea69fc36a6565d245fe3c01484200b2e744c6c
 workflow-type: tm+mt
-source-wordcount: '2721'
-ht-degree: 79%
+source-wordcount: '2833'
+ht-degree: 76%
 
 ---
 
@@ -54,6 +54,8 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 * Lors de l’utilisation de `Amazon S3` ou `Azure` comme entrepôt de données sur le système d’AEM source, l’entrepôt de données doit être configuré de sorte que les objets blob stockés ne puissent pas être supprimés (nettoyage de la mémoire). Cela garantit l’intégrité des données d’index et un échec de configuration de cette manière peut entraîner des extractions ayant échoué en raison d’un manque d’intégrité de ces données d’index.
 
 * Si vous utilisez des index personnalisés, vous devez veiller à configurer les index personnalisés avec le noeud `tika` avant d’exécuter l’outil de transfert de contenu. Pour plus d’informations, voir [Préparation de la nouvelle définition d’index](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) .
+
+* Si vous avez l’intention d’effectuer des ajouts, il est essentiel que la structure de contenu du contenu existant ne soit pas modifiée du moment où l’extraction initiale est prise au moment de l’exécution de l’extraction de complément. Les cumuls ne peuvent pas être exécutés sur du contenu dont la structure a été modifiée depuis l’extraction initiale. Veillez à limiter cette opération pendant le processus de migration.
 
 ## Disponibilité {#availability}
 
@@ -189,6 +191,7 @@ L’outil de transfert de contenu comporte une fonctionnalité pour traiter un c
 
 >[!NOTE]
 >Suite au transfert initial d’un contenu, il est recommandé d’effectuer fréquemment des compléments différentiels pour réduire la période de gel du transfert final de contenu différentiel avant de passer en ligne sur Cloud Service.
+>En outre, il est essentiel que la structure de contenu du contenu existant ne soit pas modifiée du moment où l’extraction initiale est prise au moment de l’exécution de l’extraction de complément. Les cumuls ne peuvent pas être exécutés sur du contenu dont la structure a été modifiée depuis l’extraction initiale. Veillez à limiter cette opération pendant le processus de migration.
 
 Une fois le processus d’extraction terminé, vous pouvez transférer le contenu différentiel à l’aide de la méthode d’extraction de complément. Suivez les étapes ci-dessous :
 
