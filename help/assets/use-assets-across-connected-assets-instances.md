@@ -5,18 +5,18 @@ contentOwner: AG
 feature: Gestion des ressources,Ressources connectées,Distribution des ressources,Utilisateurs et groupes
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: bbc396fbe7b3c11f8011a32fa78577957422fcf2
+source-git-commit: 6163b150e014ad8449e6b64a191213f72daf4410
 workflow-type: tm+mt
-source-wordcount: '2932'
-ht-degree: 81%
+source-wordcount: '2966'
+ht-degree: 78%
 
 ---
 
 # Utilisation des ressources connectées pour partager des ressources DAM dans [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-Dans les grandes entreprises, l’infrastructure requise pour créer des sites web peut être distribuée. Il arrive que les fonctionnalités et les ressources numériques de création de sites web permettant de créer ces sites web se trouvent dans différents déploiements. L’une des raisons peut être la répartition géographique des déploiements existants qui sont nécessaires pour travailler ensemble. Elle peut être aussi due à l’acquisition d’infrastructures hétérogènes que la société mère souhaite utiliser conjointement.
+Dans les grandes entreprises, l’infrastructure requise pour créer des sites web peut être distribuée. Il arrive que les fonctionnalités et les ressources numériques de création de sites web permettant de créer ces sites web se trouvent dans différents déploiements. L’une des raisons peut être la répartition géographique des déploiements existants qui sont nécessaires pour travailler ensemble. Une autre raison peut être l’acquisition d’infrastructures hétérogènes, dont différentes versions [!DNL Experience Manager] que la société mère souhaite utiliser conjointement.
 
-Les utilisateurs peuvent créer des pages web dans [!DNL Experience Manager Sites]. [!DNL Experience Manager Assets] est le système de gestion des ressources numériques (DAM) qui fournit les ressources nécessaires pour les sites web. [!DNL Experience Manager] prend désormais en charge le cas d’utilisation ci-dessus en intégrant [!DNL Sites] et [!DNL Assets].
+La fonctionnalité Ressources connectées prend en charge le cas d’utilisation ci-dessus en intégrant [!DNL Experience Manager Sites] et [!DNL Experience Manager Assets]. Les utilisateurs peuvent créer des pages web dans [!DNL Sites] qui utilisent les ressources numériques à partir de déploiements [!DNL Assets] distincts.
 
 ## Présentation de la fonction Ressources connectées {#overview-of-connected-assets}
 
@@ -127,7 +127,7 @@ Pour configurer cette connexion, procédez comme suit.
 1. Configurez [!DNL Dynamic Media] sur les déploiements [!DNL Sites] locaux et [!DNL Assets] distants. Suivez les instructions de la section [configuration [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
    * Utilisez le même nom de société dans toutes les configurations.
-   * Sur [!DNL Sites] local, en [!UICONTROL mode de synchronisation Dynamic Media], sélectionnez **[!UICONTROL Désactivé par défaut]**. Le déploiement de Sites nécessite uniquement un accès en lecture seule au compte [!DNL Dynamic Media].
+   * Sur [!DNL Sites] local, en [!UICONTROL mode de synchronisation Dynamic Media], sélectionnez **[!UICONTROL Désactivé par défaut]**. Le déploiement [!DNL Sites] ne nécessite qu’un accès en lecture seule au compte [!DNL Dynamic Media].
    * Sur [!DNL Sites] local, dans l’option **[!UICONTROL Publier les ressources]**, sélectionnez **[!UICONTROL Publication sélective]**. Ne sélectionnez pas **[!UICONTROL Synchroniser tout le contenu]**.
    * Sur le déploiement [!DNL Assets] distant, en [!UICONTROL mode de synchronisation Dynamic Media], sélectionnez **[!UICONTROL Activé par défaut]**.
 
@@ -205,8 +205,9 @@ Pour afficher et gérer les références du déploiement [!DNL Assets], procéde
 * Les ressources locales ne sont pas synchronisées avec les ressources d’origine sur le déploiement distant. Tout retrait, modification ou suppression d’autorisation sur le déploiement DAM n’est pas propagé en aval.
 * Les ressources locales sont des copies en lecture seule. Les composants [!DNL Experience Manager] effectuent des modifications non destructives des ressources. Aucune autre modification n’est autorisée.
 * Les ressources récupérées localement sont disponibles à des fins d’écriture uniquement. Les workflows de mise à jour de ressources ne peuvent pas être appliqués et les métadonnées ne peuvent pas être modifiées.
-* Seules les images et les formats de document répertoriés sont pris en charge. Les fragments de contenu et d’expérience ne sont pas pris en charge.
-* [!DNL Experience Manager] ne récupère pas les schémas de métadonnées. Il n’est donc pas possible d’afficher toutes les métadonnées extraites. Si le schéma est mis à jour séparément, toutes les propriétés sont affichées.
+* Lors de l’utilisation de [!DNL Dynamic Media] dans les pages [!DNL Sites], la ressource d’origine n’est pas récupérée et stockée sur le déploiement local. Le noeud `dam:Asset`, les métadonnées et les rendus générés par le déploiement [!DNL Assets] sont tous récupérés sur le déploiement [!DNL Sites].
+* Seules les images et les formats de document répertoriés sont pris en charge. [!DNL Content Fragments] et ne  [!DNL Experience Fragments] sont pas pris en charge.
+* [!DNL Experience Manager] ne récupère pas les schémas de métadonnées. Il n’est donc pas possible d’afficher toutes les métadonnées extraites. Si le schéma est mis à jour séparément sur le déploiement [!DNL Sites] , toutes les propriétés de métadonnées sont affichées.
 * Tous les auteurs [!DNL Sites] disposent de droits d’accès en lecture sur les copies récupérées, même s’ils n’en ont pas sur le déploiement DAM distant.
 * Il n’existe aucune prise en charge API pour personnaliser l’intégration.
 * Cette fonctionnalité permet de rechercher et d’utiliser aisément des ressources distantes. Pour rendre de nombreuses ressources distantes disponibles sur le déploiement local en une fois, envisagez de migrer les ressources.
@@ -216,8 +217,8 @@ Pour afficher et gérer les références du déploiement [!DNL Assets], procéde
 
 * Le déploiement de [!DNL Assets] sur [!DNL Adobe Managed Services] est pris en charge.
 * [!DNL Sites] peut se connecter à un seul référentiel [!DNL Assets] à la fois.
-* Une licence [!DNL Assets] s’exécutant en tant que référentiel distant.
-* Une ou plusieurs licences [!DNL Sites] s’exécutant comme un déploiement de création local.
+* Une licence [!DNL Assets] fonctionnant en tant que référentiel distant est requise.
+* Une ou plusieurs licences [!DNL Sites] fonctionnant en tant que déploiement de création local sont requises.
 
 ### Utilisation {#usage}
 
