@@ -2,7 +2,7 @@
 title: Développement découplé pour AEM Sites as a Cloud Service
 description: Découvrez comment AEM en tant que Cloud Service de puissantes fonctionnalités sans interface telles que les modèles de contenu, les fragments de contenu et l’API GraphQL fonctionnent ensemble pour vous permettre de gérer vos expériences de manière centralisée et de les diffuser sur l’ensemble des canaux.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 469579cfe10227ab22bbe055d4c503d8ea978150
+source-git-commit: 816c08b9351b3ce2fd4f31974d707e9d4a4eea27
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 61%
@@ -53,6 +53,6 @@ Un certain nombre de ressources sont disponibles pour que vous puissiez commence
 
 | Ressource | Description | Type | Public | Est. Heure |
 |---|---|---|---|---|
-| [Parcours de développement sans tête](/help/implementing/developing/headless-journey/overview.md) | Pour une vue d&#39;ensemble complète des fonctionnalités AEM sans tête, de la théorie de l&#39;absence de tête à la mise en ligne de votre premier projet sans tête, commencez ici. | Guide d’ | Développeurs | 1 heure |
+| [Parcours de développement sans tête](/help/journey-headless/developer/overview.md) | Pour une vue d&#39;ensemble complète des fonctionnalités AEM sans tête, de la théorie de l&#39;absence de tête à la mise en ligne de votre premier projet sans tête, commencez ici. | Guide d’ | Développeurs | 1 heure |
 | [Guide de prise en main sans affichage](/help/implementing/developing/headless/getting-started/introduction.md) | Pour un bref résumé des principales fonctionnalités AEM sans interface, consultez cet aperçu de démarrage rapide. | Démarrage rapide | Développeurs, Administrateurs | 20 minutes |
 | [Prise en main d’AEM tutoriel pratique sans affichage](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | Si vous préférez une approche pratique, ce tutoriel aborde directement la création d’un projet simple sans tête. | Tutoriel | Développeurs | 2 heures |
