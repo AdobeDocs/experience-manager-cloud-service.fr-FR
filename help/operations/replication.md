@@ -2,9 +2,9 @@
 title: Réplication
 description: Distribution et dépannage de la réplication.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: eb92c66f2b9e8e6ec859114da2de049747ec251e
+source-git-commit: 1ba960a930e180f4114f78607a3eb4bd5ec3edaf
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '802'
 ht-degree: 39%
 
 ---
@@ -82,7 +82,7 @@ Vous pouvez également y parvenir en créant un modèle de processus qui utilise
 
 * `replicateAsParticipant` (valeur booléenne, valeur par défaut :  `false`). S’il est configuré comme `true`, la réplication utilise la balise `userid` de l’entité qui a exécuté l’étape de participant.
 * `enableVersion` (valeur booléenne, valeur par défaut :  `true`). Ce paramètre détermine si une nouvelle version est créée lors de la réplication.
-* `agentId` (valeur de chaîne, la valeur par défaut signifie que tous les agents activés sont utilisés).
+* `agentId` (valeur de chaîne, la valeur par défaut signifie que tous les agents activés sont utilisés). Il est recommandé d’être explicite sur l’agentId ; par exemple, définissez la valeur : publier
 * `filters` (valeur de chaîne, valeur par défaut, tous les chemins sont activés). Les valeurs disponibles sont les suivantes :
    * `onlyActivated` : seuls les chemins qui ne sont pas marqués comme activés seront activés.
    * `onlyModified` - activez uniquement les chemins déjà activés et dont la date de modification est postérieure à la date d’activation.
