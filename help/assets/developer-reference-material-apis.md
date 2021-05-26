@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API,API HTTP Assets
 role: Developer,Architect,Administrator
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
 workflow-type: tm+mt
-source-wordcount: '1394'
+source-wordcount: '1406'
 ht-degree: 92%
 
 ---
@@ -64,7 +64,7 @@ L’article contient des recommandations, des documents de référence et des re
 | Copier un dossier | ✓ | ✓ | - | ✓ | - | - |
 | Déplacer un dossier | ✓ | ✓ | - | ✓ | - | - |
 
-## Chargement de ressources {#asset-upload-technical}
+## Chargement de ressources {#asset-upload}
 
 Dans [!DNL Experience Manager] sous la forme [!DNL Cloud Service], vous pouvez charger directement les ressources dans l’espace de stockage cloud à l’aide de l’API HTTP. Pour charger un fichier binaire, procédez comme suit :
 
@@ -73,6 +73,9 @@ Dans [!DNL Experience Manager] sous la forme [!DNL Cloud Service], vous pouvez c
 1. [Envoyez une requête HTTP](#complete-upload) pour informer le serveur que le contenu du fichier binaire a bien été chargé.
 
 ![Présentation du protocole de chargement binaire direct](assets/add-assets-technical.png)
+
+>[!IMPORTANT]
+Exécutez ces étapes dans une application externe et non dans la JVM [!DNL Experience Manager].
 
 Cette approche permet une gestion évolutive et plus performante des chargements de ressources. Les différences par rapport à [!DNL Experience Manager] 6.5 sont les suivantes :
 
