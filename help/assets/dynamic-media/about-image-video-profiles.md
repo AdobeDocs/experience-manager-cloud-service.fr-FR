@@ -4,10 +4,10 @@ description: Un profil d’image ou vidéo permet de déterminer les options à 
 feature: Gestion des ressources, Profils d’image, Profils vidéo
 role: Administrator,Business Practitioner
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 90%
+source-wordcount: '1269'
+ht-degree: 86%
 
 ---
 
@@ -42,13 +42,13 @@ Supposons que vous ayez créé un profil d’image Dynamic Media et que vous l�
 
 Vous pouvez exécuter le workflow de retraitement sur une ressource pour laquelle le traitement a échoué la première fois. Même si vous n’avez pas modifié de profil d’image ou vidéo, ou si vous avez déjà appliqué un profil d’image ou vidéo, vous pouvez toujours exécuter, à tout moment, le workflow de retraitement sur un dossier de ressources.
 
-Vous pouvez, au besoin, régler la taille de lot du workflow de retraitement sur une valeur comprise entre 50 (valeur par défaut) et 1 000 ressources. Lorsque vous exécutez le workflow _Scene7 : Retraiter les ressources_ sur un dossier, les ressources sont regroupées par lots, puis envoyées au serveur Dynamic Media en vue du traitement. Après le traitement, les métadonnées de chaque ressource de l’ensemble du jeu de lots sont mises à jour dans Adobe Experience Manager. Si la taille du lot est importante, il est possible que le traitement soit retardé. Si le lot est trop petit, cela peut entraîner un trop grand nombre d’allers-retours avec le serveur Dynamic Media.
+Vous pouvez, au besoin, régler la taille de lot du workflow de retraitement sur une valeur comprise entre 50 (valeur par défaut) et 1 000 ressources. Lorsque vous exécutez le workflow _Scene7 : Retraiter les ressources_ sur un dossier, les ressources sont regroupées par lots, puis envoyées au serveur Dynamic Media en vue du traitement. Après le traitement, les métadonnées de chaque ressource de l’ensemble du jeu de lots sont mises à jour dans [!DNL Adobe Experience Manager]. Si la taille du lot est importante, il est possible que le traitement soit retardé. Si le lot est trop petit, cela peut entraîner un trop grand nombre d’allers-retours avec le serveur Dynamic Media.
 
 Voir [Réglage de la taille du lot du workflow de retraitement](#adjusting-load).
 
 >[!NOTE]
 >
->Si vous effectuez une migration groupée des ressources de Dynamic Media Classic vers Experience Manager, activez l’agent de réplication Migration sur le serveur Dynamic Media. Une fois la migration terminée, veillez à désactiver l’agent.
+>Si vous effectuez une migration en masse des ressources de Dynamic Media Classic vers [!DNL Experience Manager], activez l’agent de réplication Migration sur le serveur Dynamic Media. Une fois la migration terminée, veillez à désactiver l’agent.
 >
 >L’agent de publication Migration doit être désactivé sur le serveur Dynamic Media afin que le workflow de retraitement fonctionne comme prévu.
 
@@ -59,7 +59,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 -->
 
 **Pour retraiter des ressources Dynamic Media dans un dossier :**
-1. Dans Experience Manager, à partir de la page Ressources, accédez à un dossier de ressources auquel un profil d’image ou vidéo est affecté et pour lequel vous souhaitez appliquer le **Scene7 : Workflow Retraiter la ressource**.
+1. Dans [!DNL Experience Manager], à partir de la page Ressources, accédez à un dossier de ressources auquel un profil d’image ou vidéo est affecté et pour lequel vous souhaitez appliquer le Scene7 **: Workflow Retraiter la ressource**.
 
    Le nom du profil s’affiche directement sous le nom du dossier dans le Mode Carte lorsque le Profil d’image ou le Profil vidéo lui est affecté.
 
@@ -82,15 +82,15 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. Cliquez sur **[!UICONTROL Début]**, puis sur **[!UICONTROL Confirmer]**.
 
-   Pour surveiller le workflow ou vérifier sa progression, cliquez sur **[!UICONTROL Outils > Processus]** dans la page de console principale d’Experience Manager. Sélectionnez un workflow dans la page Instances de processus. Dans la barre de menus, cliquez sur **[!UICONTROL Ouvrir l’historique]**. Vous pouvez également arrêter, suspendre ou renommer un workflow sélectionné à partir de la même page Instances de processus.
+   Pour surveiller le workflow ou vérifier sa progression, dans la page de la console principale [!DNL Experience Manager], cliquez sur **[!UICONTROL Outils > Workflow]**. Sélectionnez un workflow dans la page Instances de processus. Dans la barre de menus, cliquez sur **[!UICONTROL Ouvrir l’historique]**. Vous pouvez également arrêter, suspendre ou renommer un workflow sélectionné à partir de la même page Instances de processus.
 
 ### Réglage de la taille du lot du workflow de retraitement {#adjusting-load}
 
-(Facultatif) La taille de lot par défaut dans le workflow de retraitement est de 50 ressources par tâche. Cette taille optimale est déterminée par la taille moyenne des ressources et les types MIME des ressources sur lesquelles le retraitement est exécuté. Une valeur plus élevée signifie qu’une seule tâche de retraitement comprendra de nombreux fichiers. La bannière de traitement reste donc plus longtemps sur Experience Manager Assets. Cependant, si la taille de fichier moyenne est inférieure ou égale à 1 Mo, il est recommandé d’augmenter la valeur à plusieurs 100, mais jamais plus de 1 000. Si la taille de fichier moyenne est de plusieurs centaines de mégaoctets, Adobe vous recommande de réduire la taille du lot jusqu’à 10.
+(Facultatif) La taille de lot par défaut dans le workflow de retraitement est de 50 ressources par tâche. Cette taille optimale est déterminée par la taille moyenne des ressources et les types MIME des ressources sur lesquelles le retraitement est exécuté. Une valeur plus élevée signifie qu’une seule tâche de retraitement comprendra de nombreux fichiers. Ainsi, la bannière de traitement reste plus longtemps sur les ressources [!DNL Experience Manager]. Cependant, si la taille de fichier moyenne est inférieure ou égale à 1 Mo, il est recommandé d’augmenter la valeur à plusieurs 100, mais jamais plus de 1 000. Si la taille de fichier moyenne est de plusieurs centaines de mégaoctets, Adobe vous recommande de réduire la taille du lot jusqu’à 10.
 
 **Pour régler éventuellement la taille du lot du workflow de retraitement, procédez comme suit :**
 
-1. Dans Experience Manager, appuyez sur **[!UICONTROL Adobe Experience Manager]** pour accéder à la console de navigation globale, puis appuyez sur l’icône **[!UICONTROL Outils]** (marteau) > **[!UICONTROL Workflow > Modèles]**.
+1. Dans [!DNL Experience Manager], appuyez sur **[!UICONTROL Adobe Experience Manager]** pour accéder à la console de navigation globale, puis appuyez sur l’icône **[!UICONTROL Outils]** (marteau) > **[!UICONTROL Processus > Modèles]**.
 1. Sur la page Modèles de processus, en mode Carte ou Liste, sélectionnez **[!UICONTROL Scene7 : Retraiter les ressources]**.
 
    ![Page Modèles de processus avec le workflow Scene7 : Retraiter les ressources sélectionné en mode Carte](/help/assets/dynamic-media/assets/reprocess-assets7.png)
