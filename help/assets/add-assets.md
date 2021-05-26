@@ -4,7 +4,7 @@ description: Ajoutez vos ressources numériques à [!DNL Adobe Experience Manage
 feature: Gestion des ressources,Télécharger
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 5657d53b37ec3db5338cc44177d3e7100188c5d0
+source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 85%
@@ -128,7 +128,7 @@ L’outil d’ingestion de ressources en masse peut traiter efficacement un trè
 
 Pour charger un plus grand nombre de fichiers, utilisez l’une des méthodes suivantes. Voir aussi les [cas d’utilisation et méthodes](#upload-methods-comparison)
 
-* [API de chargement de ressources](developer-reference-material-apis.md#asset-upload-technical) : utilisez un script ou un outil de chargement personnalisé qui utilise les API pour ajouter un traitement supplémentaire des ressources (par exemple, traduire des métadonnées ou renommer des fichiers), si nécessaire.
+* [API de chargement de ressources](developer-reference-material-apis.md#asset-upload) : utilisez un script ou un outil de chargement personnalisé qui utilise les API pour ajouter un traitement supplémentaire des ressources (par exemple, traduire des métadonnées ou renommer des fichiers), si nécessaire.
 * Application de bureau [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) : utile pour les professionnels de la création et du marketing qui chargent des ressources depuis leur système de fichiers local. Utilisez-la pour charger des dossiers imbriqués disponibles en local.
 * [Outil d’ingestion en masse](#asset-bulk-ingestor) : utilisez-le pour l’ingestion de grandes quantités de ressources, occasionnellement ou au départ, lors du déploiement de [!DNL Experience Manager].
 
@@ -209,7 +209,7 @@ Pour les dossiers auxquels un profil de traitement est affecté, le nom du profi
 
 ## Chargement ou ingestion de fichiers à l’aide d’API {#upload-using-apis}
 
-Les détails techniques du protocole et des API de chargement, ainsi que les liens vers les exemples de clients et le SDK Open Source, sont fournis dans la section [Chargement de ressources](developer-reference-material-apis.md#asset-upload-technical) de la documentation de référence du développeur.
+Les détails techniques du protocole et des API de chargement, ainsi que les liens vers les exemples de clients et le SDK Open Source, sont fournis dans la section [Chargement de ressources](developer-reference-material-apis.md#asset-upload) de la documentation de référence du développeur.
 
 ## Conseils, bonnes pratiques et limites {#tips-limitations}
 
@@ -231,5 +231,5 @@ Les détails techniques du protocole et des API de chargement, ainsi que les lie
 >* Application de bureau [[!DNL Adobe Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr)
 >* [À propos d’ [!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
->* [Référence technique pour le chargement de ressources](developer-reference-material-apis.md#asset-upload-technical)
+>* [Référence technique pour le chargement de ressources](developer-reference-material-apis.md#asset-upload)
 
