@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API,API HTTP Assets
 role: Developer,Architect,Administrator
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
+source-git-commit: 597098cd94d1e40dc45870fd2c0b986f80eb2038
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1407'
 ht-degree: 92%
 
 ---
@@ -75,7 +75,7 @@ Dans [!DNL Experience Manager] sous la forme [!DNL Cloud Service], vous pouvez c
 ![Présentation du protocole de chargement binaire direct](assets/add-assets-technical.png)
 
 >[!IMPORTANT]
-Exécutez ces étapes dans une application externe et non dans la JVM [!DNL Experience Manager].
+Exécutez les étapes ci-dessus dans une application externe et non dans la JVM [!DNL Experience Manager].
 
 Cette approche permet une gestion évolutive et plus performante des chargements de ressources. Les différences par rapport à [!DNL Experience Manager] 6.5 sont les suivantes :
 
