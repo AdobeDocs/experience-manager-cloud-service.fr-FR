@@ -5,10 +5,10 @@ contentOwner: AG
 feature: API,API HTTP Assets
 role: Developer,Architect,Administrator
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 597098cd94d1e40dc45870fd2c0b986f80eb2038
+source-git-commit: 5243b02a8168da82674989b9f5abb65af6613096
 workflow-type: tm+mt
-source-wordcount: '1407'
-ht-degree: 92%
+source-wordcount: '1420'
+ht-degree: 90%
 
 ---
 
@@ -66,7 +66,7 @@ L’article contient des recommandations, des documents de référence et des re
 
 ## Chargement de ressources {#asset-upload}
 
-Dans [!DNL Experience Manager] sous la forme [!DNL Cloud Service], vous pouvez charger directement les ressources dans l’espace de stockage cloud à l’aide de l’API HTTP. Pour charger un fichier binaire, procédez comme suit :
+Dans [!DNL Experience Manager] sous la forme [!DNL Cloud Service], vous pouvez charger directement les ressources dans l’espace de stockage cloud à l’aide de l’API HTTP. Les étapes de téléchargement d’un fichier binaire sont les suivantes. Exécutez ces étapes dans une application externe et non dans la JVM [!DNL Experience Manager].
 
 1. [Envoyez une requête HTTP](#initiate-upload). Cela permet d’informer le déploiement [!DNL Experience Manage] de votre intention de charger un nouveau fichier binaire.
 1. [Publiez le contenu du fichier binaire](#upload-binary) sur un ou plusieurs URI fournis par la requête de lancement.
