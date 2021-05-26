@@ -3,10 +3,10 @@ title: Utilisation des sélecteurs
 description: Découvrez les méthodes que vous pouvez utiliser pour sélectionner des ressources sous forme d’images interactives, de vidéos interactives et de bannières de carrousel dans Dynamic Media.
 role: Business Practitioner
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 52%
+source-wordcount: '731'
+ht-degree: 62%
 
 ---
 
@@ -22,7 +22,7 @@ Par exemple, dans cette bannière de carrousel, vous utilisez le sélecteur de p
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-Lorsque vous sélectionnez (au lieu de saisir manuellement) l’emplacement des zones réactives ou des zones cliquables, vous utilisez le sélecteur. Le sélecteur de sites ne fonctionne que si vous êtes un client Adobe Experience Manager Sites. Le sélecteur de produits nécessite également Experience Manager Commerce.
+Lorsque vous sélectionnez (au lieu de saisir manuellement) l’emplacement des zones réactives ou des zones cliquables, vous utilisez le sélecteur. Le sélecteur de sites ne fonctionne que si vous êtes un client [!DNL Adobe Experience Manager Sites]. Le sélecteur de produits nécessite également [!DNL Experience Manager Commerce].
 
 ## Sélection de produits dans Dynamic Media {#selecting-products}
 
@@ -42,11 +42,11 @@ Utilisez le sélecteur de produits pour choisir un produit lorsque vous souhaite
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   Vous pouvez modifier l’emplacement où Experience Manager recherche les données de produit en appuyant sur **[!UICONTROL Parcourir]** et en accédant à un autre dossier.
+   Vous pouvez modifier l’emplacement où [!DNL Experience Manager] recherche les données de produit en appuyant sur **[!UICONTROL Parcourir]** et en accédant à un autre dossier.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Appuyez sur **[!UICONTROL Trier par]** pour indiquer si le Experience Manager trie du plus récent au plus ancien ou du plus ancien au plus récent.
+   Appuyez sur **** Trier pour indiquer si trie du plus récent au plus ancien ou du plus ancien au plus récent.[!DNL Experience Manager]
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -64,7 +64,7 @@ Utilisez le sélecteur de produits pour choisir un produit lorsque vous souhaite
 
 ## Sélection de sites dans Dynamic Media {#selecting-sites}
 
-Utilisez le sélecteur de site pour choisir une page web lorsque vous souhaitez qu’une zone réactive ou une zone cliquable pointe vers une page web gérée sur des sites Experience Manager.
+Utilisez le sélecteur de site pour choisir une page web lorsque vous souhaitez qu’une zone réactive ou une zone cliquable pointe vers une page web gérée sur [!DNL Experience Manager] sites.
 
 1. Accédez à l’ensemble de carrousels, à l’image interactive ou à la vidéo interactive, puis appuyez sur l’onglet **[!UICONTROL Actions]** (disponible uniquement si vous avez défini une zone réactive ou une zone cliquable).
 
@@ -72,7 +72,7 @@ Utilisez le sélecteur de site pour choisir une page web lorsque vous souhaitez 
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Appuyez sur l’icône **[!UICONTROL Sélecteur de site]** (dossier avec loupe) et accédez à une page de vos sites de Experience Manager à laquelle vous souhaitez lier la zone réactive ou la zone cliquable.
+1. Appuyez sur l’icône **[!UICONTROL Sélecteur de sites]** (dossier avec loupe) et accédez à une page parmi vos sites à laquelle vous voulez relier la zone réactive ou la zone cliquable.[!DNL Experience Manager]
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -80,7 +80,7 @@ Utilisez le sélecteur de site pour choisir une page web lorsque vous souhaitez 
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. En mode **[!UICONTROL Aperçu]** si vous appuyez sur la zone réactive ou la zone cliquable, vous accédez à la page du site du Experience Manager que vous avez spécifiée.
+1. En mode **[!UICONTROL Aperçu]**, si vous appuyez sur la zone réactive ou la zone cliquable, vous accédez à la page  Site que vous avez spécifiée.[!DNL Experience Manager]
 
 ## Sélection de ressources dans Dynamic Media {#selecting-assets}
 
@@ -97,7 +97,7 @@ Reportez-vous également à la section [Sélecteur de ressources](/help/assets/s
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   Vous pouvez modifier l’emplacement où Experience Manager recherche les ressources en accédant à un autre dossier dans le champ **[!UICONTROL Chemin]**.
+   Vous pouvez modifier l’emplacement où [!DNL Experience Manager] recherche les ressources en accédant à un autre dossier dans le champ **[!UICONTROL Chemin]**.
 
    Appuyez sur **[!UICONTROL Collection]** pour rechercher uniquement des ressources dans les collections.
 
