@@ -2,16 +2,23 @@
 title: Modifications notables apportées à Adobe Experience Manager (AEM) as a Cloud Service
 description: Modifications notables apportées à Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 71f05dda4ccd52c66bbf1d9025900976f07227f3
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 100%
+source-wordcount: '882'
+ht-degree: 94%
 
 ---
 
 # Modifications notables apportées à Adobe Experience Manager (AEM) as a Cloud Service {#notable-changes-aem-cloud}
 
 AEM Cloud Service offre une foule de nouvelles fonctionnalités et possibilités pour gérer vos projets AEM. Cependant, il existe plusieurs différences entre les ressources AEM Sites sur site ou dans Adobe Managed Service par rapport à AEM Cloud Service. Ce document met en lumière les différences importantes.
+
+>[!CONTEXTUALHELP]
+>id="aem_cloud_notable_changes"
+>title="Modifications notables apportées à AEM en tant que Cloud Service"
+>abstract="Dans cet onglet, vous pouvez afficher le contenu qui vous aidera à comprendre les différences entre AEM on premise ou dans Adobe Managed Services, par rapport à AEM en tant que Cloud Service."
+>additional-url="https://video.tv.adobe.com/v/330543" text="Evolution de l&#39;AEM en tant que Cloud Service"
+
 
 >[!NOTE]
 >Ce document met en évidence les modifications notables apportées à AEM dans son ensemble. Pour plus d’informations et connaître les changements spécifiques à une solution, voir :
