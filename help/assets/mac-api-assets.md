@@ -5,7 +5,7 @@ contentOwner: AG
 feature: API HTTP Assets,API
 role: Developer,Architect,Administrator
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: b989833b7f1fa0c3de91f96e28a21859d97294cb
+source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 79%
@@ -27,7 +27,7 @@ La réponse de l’API est un fichier JSON pour certains types MIME et un code d
 
 >[!NOTE]
 >
->Tous les appels d’API liés au chargement ou à la mise à jour de ressources ou de fichiers binaires en général (comme les rendus) sont obsolètes pour [!DNL Experience Manager] en tant que déploiement [!DNL Cloud Service]. Pour charger des fichiers binaires, utilisez plutôt des [API de chargement binaire direct](developer-reference-material-apis.md#asset-upload-technical).
+>Tous les appels d’API liés au chargement ou à la mise à jour de ressources ou de fichiers binaires en général (comme les rendus) sont obsolètes pour [!DNL Experience Manager] en tant que déploiement [!DNL Cloud Service]. Pour charger des fichiers binaires, utilisez plutôt des [API de chargement binaire direct](developer-reference-material-apis.md#asset-upload).
 
 ## Fragments de contenu {#content-fragments}
 
