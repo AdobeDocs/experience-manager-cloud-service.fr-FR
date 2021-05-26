@@ -6,10 +6,10 @@ topic-tags: introduction
 content-type: reference
 feature: Accessibilité
 role: Administrator,Business Practitioner
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 100%
+source-wordcount: '600'
+ht-degree: 95%
 
 ---
 
@@ -20,7 +20,7 @@ Dynamic Media prend en charge les technologies d’assistance et de contrôle du
 
 ## Prise en charge de l’accessibilité du clavier dans Dynamic Media {#keyboard-support-in-dm}
 
-Dynamic Media étant un plug-in d’Experience Manager Assets, la plupart des commandes de clavier produisent le même résultat que dans Experience Manager Assets. Par exemple, le bouton `Cancel` de Dynamic Media a la même mise en surbrillance que dans Experience Manager Assets. Il réagit également à la touche `Spacebar` de la même manière que dans Experience Manager Assets. Consultez les [Raccourcis clavier dans Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Comme Dynamic Media est un plug-in de [!DNL Experience Manager Assets], la plupart des commandes au clavier sont identiques à celles de [!DNL Experience Manager Assets]. Par exemple, le bouton `Cancel` de Dynamic Media a la même mise en surbrillance que dans [!DNL Experience Manager Assets]. Il réagit également à la clé `Spacebar` comme dans [!DNL Experience Manager Assets]. Consultez les [Raccourcis clavier dans Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
 Les raccourcis de touches prises en charge par des éléments personnalisés de l’interface utilisateur dans Dynamic Media sont, dans la plupart des cas, évidents et faciles à trouver. Voici ce que permet le contrôle clavier dans Dynamic Media :
 
