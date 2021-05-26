@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Gestion des ressources
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 0824f77c35fc97a5bf703036d299c37b75935301
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '3242'
-ht-degree: 80%
+source-wordcount: '3226'
+ht-degree: 78%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 80%
 
 Pour ajouter la fonction Dynamic Media aux ressources que vous utilisez sur des sites web, vous pouvez ajouter le composant **Dynamic Media**, **Média interactif**, **Média panoramique** ou **Média vidéo 360** directement à la page. Vous passez en mode Mise en page, puis vous activez les composants Dynamic Media. Vous ajoutez ensuite ces composants à la page, puis des ressources au composant. Les composants Dynamic Media sont intelligents : ils savent si vous ajoutez une image ou une vidéo, et les options de configuration disponibles changent en conséquence.
 
-Si vous utilisez Experience Manager comme système de gestion de contenu web, vous pouvez ajouter les ressources Dynamic Media directement à la page. Si vous faites appel à un tiers pour votre gestion de contenu web, [liez](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ou [incorporez](/help/assets/dynamic-media/embed-code.md) vos ressources. Pour un site web tiers réactif, reportez-vous à la section [Diffusion d’images optimisées sur un site réactif](/help/assets/dynamic-media/responsive-site.md).
+Vous ajoutez directement des ressources Dynamic Media à la page si vous utilisez [!DNL Adobe Experience Manager] comme gestion de contenu web. Si vous faites appel à un tiers pour votre gestion de contenu web, [liez](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ou [incorporez](/help/assets/dynamic-media/embed-code.md) vos ressources. Pour un site web tiers réactif, reportez-vous à la section [Diffusion d’images optimisées sur un site réactif](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
->Veillez à publier les ressources avant de les ajouter aux pages dans Experience Manager. Voir [Publication de ressources Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+>Veillez à publier les ressources avant de les ajouter aux pages dans [!DNL Experience Manager]. Voir [Publication de ressources Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Ajout d’un composant Dynamic Media à une page {#adding-a-dynamic-media-component-to-a-page}
 
@@ -28,7 +28,7 @@ L’ajout d’un composant Média 3D, Dynamic Media, Média interactif, Média p
 
 **Pour ajouter un composant Dynamic Media à une page :**
 
-1. Dans Experience Manager, ouvrez la page où vous souhaitez ajouter le composant Dynamic Media.
+1. Dans [!DNL Experience Manager], ouvrez la page dans laquelle vous souhaitez ajouter le composant Dynamic Media.
 1. Dans le volet de gauche, appuyez sur l’icône **[!UICONTROL Composants]** puis définissez un filtre Dynamic Media.
 
    Si aucune liste de composants Dynamic Media n’est disponible, vous devrez probablement activer ceux que vous souhaitez utiliser. Voir [Activation des composants Dynamic Media](#enabling-dynamic-media-components).
@@ -55,7 +55,7 @@ L’ajout d’un composant Média 3D, Dynamic Media, Média interactif, Média p
 
 Si aucun composant Dynamic Media n’est disponible pour ajouter une page, cela signifie probablement que vous devez activer les composants que vous souhaitez utiliser.
 
-1. Dans Experience Manager, ouvrez la page où vous souhaitez ajouter le composant Dynamic Media.
+1. Dans [!DNL Experience Manager], ouvrez la page dans laquelle vous souhaitez ajouter le composant Dynamic Media.
 1. Dans la partie située à gauche de la barre d’outils à proximité du haut de la page, appuyez sur l’icône Informations de la page, puis sur **[!UICONTROL Éditer le modèle]** dans la liste déroulante.
 
    ![edit-template](/help/assets/assets-dm/edit-template.png)
@@ -106,7 +106,7 @@ Les composants Dynamic Media disponibles comprennent les suivants :
 
 >[!NOTE]
 >
->Ces composants ne sont pas disponibles par défaut et doivent être rendus disponibles via l’éditeur de modèles avant utilisation. Une fois les composants disponibles dans l’éditeur de modèles, vous pouvez les ajouter à votre page comme vous le feriez avec tout autre composant Experience Manager.
+>Ces composants ne sont pas disponibles par défaut et doivent être rendus disponibles via l’éditeur de modèles avant utilisation. Une fois qu’elles sont disponibles dans l’éditeur de modèles, vous pouvez ajouter les composants à votre page comme vous le feriez pour tout autre composant [!DNL Experience Manager].
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
@@ -169,7 +169,7 @@ Vous pouvez modifier les paramètres Dynamic Media ci-après en appuyant sur **
 
    Voir aussi [A propos de l’optimisation du rapport pixels d’appareil](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   Notez que toutes les valeurs RGPD d’imagerie dynamique Dynamic Media Adobe Experience Manager sont ignorées.
+   Notez que toute valeur [!DNL Experience Manager] Dynamic Media Smart Imaging DPR est ignorée.
 
    L’option **[!UICONTROL Optimiser pour les appareils à résolution plus élevée]** n’est affichée que lorsque la valeur suivante est vraie :
    * Sous Type de paramètre prédéfini, **[!UICONTROL Paramètre d’image prédéfini]** est sélectionné et **[!UICONTROL RESS_IP]** est sélectionné dans la liste déroulante **[!UICONTROL Paramètre d’image prédéfini]** .
@@ -247,7 +247,7 @@ Vous pouvez modifier le paramètre Dynamic Media suivant en cliquant sur **[!UI
 
    Voir aussi [A propos de l’optimisation du rapport pixels d’appareil](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   Notez que toutes les valeurs RGPD d’imagerie dynamique Dynamic Media Adobe Experience Manager sont ignorées.
+   Notez que toute valeur [!DNL Experience Manager] Dynamic Media Smart Imaging DPR est ignorée.
 
    L’option **[!UICONTROL Optimiser pour les appareils à résolution plus élevée]** n’est affichée que lorsque la valeur suivante est vraie :
 
