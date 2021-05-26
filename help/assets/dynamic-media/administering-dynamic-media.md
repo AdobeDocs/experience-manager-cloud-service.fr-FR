@@ -4,10 +4,10 @@ description: Pour installer Dynamic Media, vous devez configurer Dynamic Media
 contentOwner: Rick Brough
 role: Administrator,Business Practitioner
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 81%
+source-wordcount: '177'
+ht-degree: 68%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 81%
 
 >[!NOTE]
 >
->This documentation describes Dynamic Media capabilites, which are integrated directly into Experience Manager. If you are using Dynamic Media Classic (previously called Scene7) integrated into Experience Manager, see [Dynamic Media Classic integration documentation](/help/sites-cloud/administering/integrating-scene7.md).
+>This documentation describes Dynamic Media capabilites, which are integrated directly into [!DNL Experience Manager]. If you are using Dynamic Media Classic (previously called Scene7) integrated into [!DNL Experience Manager], see [Dynamic Media Classic integration documentation](/help/sites-cloud/administering/integrating-scene7.md).
 >
->See [Dual Use Scenario](/help/sites-cloud/administering/integrating-scene7.md#dual-use-scenario) for times when you may want to use Experience Manager integrated with Dynamic Media Classic along with Dynamic Media.
+>See [Dual Use Scenario](/help/sites-cloud/administering/integrating-scene7.md#dual-use-scenario) for times when you may want to use [!DNL Experience Manager] integrated with Dynamic Media Classic along with Dynamic Media.
 
 -->
 
@@ -41,5 +41,5 @@ Voir aussi les rubriques suivantes :
 >
 >**Si vous effectuez une mise à niveau :**
 >
->* Une fois qu’Adobe Experience Manager est en cours d’exécution, toute ressource que vous chargez est automatiquement activée par Dynamic Media (sauf si l’administrateur système l’a explicitement désactivée). Si vous utilisez une instance d’Experience Manager mise à niveau et que Dynamic Media est nouveau pour vous, vous devrez peut-être retraiter vos ressources pour les rendre compatibles avec Dynamic Media. Voir [Retraitement des ressources dans un dossier](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>* Une fois l’Adobe [!DNL Experience Manager] en cours d’exécution, toute ressource que vous chargez est automatiquement activée par Dynamic Media (sauf si l’administrateur système l’a explicitement désactivée). Si vous utilisez une instance mise à niveau de [!DNL Experience Manager] et que vous découvrez Dynamic Media, vous devez probablement retraiter vos ressources pour les rendre compatibles avec Dynamic Media. Voir [Retraitement des ressources dans un dossier](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
