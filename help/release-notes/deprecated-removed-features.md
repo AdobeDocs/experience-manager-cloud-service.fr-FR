@@ -2,14 +2,20 @@
 title: Fonctionnalités obsolètes et supprimées
 description: Notes de mise à jour spécifiques aux fonctionnalités obsolètes et supprimées dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 8c26dbcc77113b86ab28ab52e0b6564fa5ed538a
+source-git-commit: 725cc82aa5794b53e5a43d95359fe1fd148b59ac
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 48%
+source-wordcount: '484'
+ht-degree: 45%
 
 ---
 
 # Fonctionnalités obsolètes et supprimées {#deprecated-and-removed-features}
+
+>[!CONTEXTUALHELP]
+>id="aem_cloud_deprecated_features"
+>title="Fonctionnalités obsolètes et supprimées dans AEM en tant que Cloud Service"
+>abstract="AEM en tant que Cloud Service dispose d’un modèle de déploiement natif dans le cloud. Certaines fonctionnalités ont été remplacées par des homologues natifs du cloud et cet onglet affiche ces fonctionnalités."
+
 
 Adobe étudie constamment les fonctionnalités du produit de façon à les réinventer au fil du temps ou à remplacer les fonctions plus anciennes par des variantes plus modernes, pour améliorer la valeur client globale, le tout en faisant toujours attention à la compatibilité ascendante. En outre, comme [!DNL Adobe Experience Manager] en tant que [!DNL Cloud Service] fournit un modèle de déploiement natif dans le cloud, certaines fonctionnalités ont été remplacées par des homologues natives dans le cloud.
 
