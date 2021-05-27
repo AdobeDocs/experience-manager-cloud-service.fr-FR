@@ -2,10 +2,10 @@
 title: Notes de mise à jour d’Adobe Experience Manager (AEM) as a Cloud Service.
 description: Notes de mise à jour d’Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
+source-git-commit: f4d646e3898f568d17cfb09bd2974fc55a1260c4
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 89%
+source-wordcount: '663'
+ht-degree: 48%
 
 ---
 
@@ -13,9 +13,29 @@ ht-degree: 89%
 
 | Produit | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2021.04.0 |
+| Version | 2021.05.0 |
 | Type | Mises à jour continues |
 | Date de disponibilité | Mise à jour continue |
+
+## Préparation d’une version {#how-to-prepare}
+
+Avec le modèle de mise à jour continue dans [!DNL Adobe Experience Manager] en tant que Cloud Service, l’application est mise à jour automatiquement de manière continue. Il existe deux types de mises à jour : les mises à jour de fonctionnalités et les mises à jour critiques :
+
+* Les nouvelles fonctionnalités sont publiées avec une fréquence mensuelle prévisible et sont axées sur les nouvelles fonctionnalités et les innovations de produits.
+* Les mises à jour critiques sont fréquentes et portent sur les mises à jour de sécurité, les correctifs de bogues et les améliorations de performances. Ainsi, [!DNL Adobe Experience Manager] en tant que Cloud Service est toujours à jour avec les correctifs critiques.
+
+En plus de la vitesse d’innovation, [!DNL Adobe Experience Manager] en tant que Cloud Service offre la possibilité de prévisualiser les fonctionnalités à venir un mois complet à l’avance avant que les fonctionnalités ne soient mises en production. Cela vous permet d’évaluer l’impact d’une prochaine version sur leur organisation en testant les fonctionnalités de votre propre environnement personnalisé et en formant/préparant les utilisateurs internes bien à l’avance.
+
+>[!NOTE]
+>
+>La version préliminaire n’est effectuée que pour les mises à jour mensuelles des fonctionnalités, et non pour les mises à jour critiques.
+
+Pour préparer une version :
+
+1. Marquez vos calendriers : Vérifiez les dates clés des versions mensuelles de la [feuille de route des versions du Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service) et marquez vos calendriers pour vous préparer aux activités clés afin de vous préparer à la version.
+1. Consultez les notes de mise à jour : Lisez les [notes de mise à jour actuelles](/help/release-notes/release-notes-cloud/release-notes-current.md) pour vous familiariser avec les fonctionnalités de version et de version préliminaire.
+1. Accédez aux nouvelles fonctionnalités et essayez-les : Activez le [canal de version préliminaire](/help/release-notes/prerelease.md) dans vos environnements hors production et commencez à essayer les fonctionnalités à évaluer dans vos environnements personnalisés.
+1. Formation des utilisateurs : Utilisez la documentation et les ressources Experience League pour mettre les utilisateurs au courant rapidement des nouvelles fonctionnalités et les familiariser avec celles-ci.
 
 ## Principales informations sur les versions {#key-articles}
 
@@ -33,7 +53,7 @@ ht-degree: 89%
 | [Présentation](/help/overview/home.md) | Ce guide présente Experience Manager as a Cloud Service, avec une introduction, la terminologie, etc. |
 | [Concepts de base](/help/core-concepts/home.md) | Ce guide présente les concepts de base d’Experience Manager as a Cloud Service, y compris l’architecture du nouveau service. |
 | [Guide de l’utilisateur relatif à la sécurité](/help/security/home.md) | Découvrez les sujets de sécurité importants concernant Experience Manager as a Cloud Service. |
-| [Intégration](/help/onboarding/home.md) | Ce guide résume la procédure à suivre pour commencer à utiliser Experience Manager as a Cloud Service, avec les informations d’accès et des informations importantes sur la protection des données. |
+| [Intégration](/help/onboarding/home.md) | Ce guide résume la procédure à suivre pour commencer à utiliser Experience Manager en tant que Cloud Service, y compris la manière d’obtenir un accès et des informations importantes sur la protection des données. |
 | [Guide de l’utilisateur de Sites](/help/sites-cloud/home.md) | Découvrez comment créer avec Experience Manager Sites as a Cloud Service et l’administrer. |
 | [Guide de l’utilisateur d’Assets](/help/assets/home.md) | Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service. |
 | [Transition vers AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Découvrez le parcours de transition vers Cloud Service. |
@@ -45,12 +65,12 @@ ht-degree: 89%
 
 ## Autres ressources relatives à Experience Manager {#other-resources}
 
-* [Mises à jour récentes de la documentation](https://helpx.adobe.com/fr/experience-manager/documentation-updates.html#AEMasaCloudService)
+* [Mises à jour récentes de la documentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=fr)
 * [Documentation Dispatcher](/help/implementing/dispatcher/overview.md)
-* [Documentation HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
-* [Documentation sur les composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
-* [Documentation Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Documentation HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr)
+* [Documentation sur les composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
+* [Documentation Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Tutoriels sur Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/fr/experience-manager-learn/cloud-service/overview.html)
+* [Tutoriels sur Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=fr)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Forum de la communauté AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
