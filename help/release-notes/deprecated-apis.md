@@ -1,0 +1,118 @@
+---
+title: API obsolètes
+description: Notes de mise à jour spécifiques aux API obsolètes et supprimées dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+source-git-commit: 3c4b8f8d9b252cfc90823c475a4e21eefd1dfcf7
+workflow-type: tm+mt
+source-wordcount: '393'
+ht-degree: 7%
+
+---
+
+
+# API obsolètes {#deprecated-apis}
+
+Vous trouverez ci-dessous une liste exhaustive des API AEM obsolètes et de leur date de suppression prévue. Les clients doivent supprimer les API d’ici la date de suppression prévue de leur code. Toute utilisation de l’API au-delà de la date de suppression génère des erreurs dans le SDK/l’environnement de développement local et le processus de création de Cloud Manager.
+
+
+<table>
+<thead>
+  <tr>
+    <th>Package/Classe</th>
+    <th>Commentaires</th>
+    <th>Date d’obsolescence</th>
+    <th>Date de suppression de la cible</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>org.apache.sling.commons.auth<br>org.apache.sling.commons.auth.spi</td>
+    <td>Utiliser les interfaces SPI Core Auth/Auth Core de Sling comme alternative</td>
+    <td>2015</td>
+    <td>7/30/21</td>
+  </tr>
+  <tr>
+    <td>org.apache.sling.runmode</td>
+    <td></td>
+    <td>2015</td>
+    <td>7/30/21</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.jcrclustersupport</td>
+    <td>Utiliser l’API Discovery de Sling comme alternative</td>
+    <td>2015</td>
+    <td>7/30/21</td>
+  </tr>
+  <tr>
+    <td>org.apache.sling.settings</td>
+    <td>AEM en tant que Cloud Service ne prend pas en charge les modes d’exécution ou l’accès au système de fichiers au moment de l’exécution. </td>
+    <td>10/5/20</td>
+    <td>6/1/21</td>
+  </tr>
+  <tr>
+    <td>org.apache.fop.apps</td>
+    <td></td>
+    <td>3/1/21</td>
+    <td>6/1/21</td>
+  </tr>
+  <tr>
+    <td>org.apache.jackrabbit.vault.util.xml.xerces.dom<br>org.apache.jackrabbit.vault.util.xml.xerces.util<br>org.apache.jackrabbit.vault.util.xml.xerces.xni<br>org.apache.jackrabbit.vault.util.xml.xerces.xni.parser</td>
+    <td></td>
+    <td>3/5/21</td>
+    <td>6/6/21</td>
+  </tr>
+  <tr>
+    <td>org.json</td>
+    <td>L’implémentation Apache Johnzon de <a href="https://johnzon.apache.org/index.html">javax.json</a> est recommandée et doit être utilisée. </td>
+    <td>4/30/21</td>
+    <td>7/30/21</td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.cm<br>org.apache.felix.cm.file</td>
+    <td>Les gestionnaires de persistance personnalisés ne sont pas pris en charge dans AEM en tant que Cloud Service.</td>
+    <td>4/30/21</td>
+    <td>7/30/21</td>
+  </tr>
+  <tr>
+    <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
+    <td>Commons Lang 2 est en mode de maintenance. Commons Lang 3 devrait être utilisé à la place.</td>
+    <td>4/30/21</td>
+    <td>7/30/21</td>
+  </tr>
+  <tr>
+    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
+    <td>Commons Collections 3 est en mode de maintenance. Les collections Commons 4 doivent être utilisées à la place.</td>
+    <td>4/30/21</td>
+    <td>7/30/21</td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.systemready</td>
+    <td>Il est recommandé d’utiliser plutôt l’API Apache Felix HealthCheck .</td>
+    <td>4/30/21</td>
+    <td>7/30/21</td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n</td>
+    <td>La console web Felix n’est pas prise en charge dans les environnements cloud</td>
+    <td>4/30/21</td>
+    <td>7/30/21</td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.http.jetty<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.jmx<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.handler.jmx<br>org.eclipse.jetty.server.jmx<br>org.eclipse.jetty.server.nio<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.jmx<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.preventers<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread<br>org.eclipse.jetty.util.thread.strategy<br>org.eclipse.jetty.webapp<br>org.eclipse.jetty.websocket.api<br>org.eclipse.jetty.websocket.api.annotations<br>org.eclipse.jetty.websocket.api.extensions<br>org.eclipse.jetty.websocket.api.util<br>org.eclipse.jetty.websocket.client<br>org.eclipse.jetty.websocket.client.io<br>org.eclipse.jetty.websocket.client.masks<br>org.eclipse.jetty.websocket.common<br>org.eclipse.jetty.websocket.common.events<br>org.eclipse.jetty.websocket.common.events.annotated<br>org.eclipse.jetty.websocket.common.extensions<br>org.eclipse.jetty.websocket.common.extensions.compress<br>org.eclipse.jetty.websocket.common.extensions.fragment<br>org.eclipse.jetty.websocket.common.extensions.identity<br>org.eclipse.jetty.websocket.common.frames<br>org.eclipse.jetty.websocket.common.io<br>org.eclipse.jetty.websocket.common.io.http<br>org.eclipse.jetty.websocket.common.io.payload<br>org.eclipse.jetty.websocket.common.message<br>org.eclipse.jetty.websocket.common.scopes<br>org.eclipse.jetty.websocket.common.util<br>org.eclipse.jetty.websocket.server<br>org.eclipse.jetty.websocket.server.pathmap<br>org.eclipse.jetty.websocket.servlet<br>org.eclipse.jetty.xml<br>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.jmx<br>org.eclipse.jetty.client.util</td>
+    <td>Les packages Eclipse Jetty et Felix Http Jetty ne sont plus pris en charge.</td>
+    <td>5/27/21</td>
+    <td>8/26/21</td>
+  </tr>
+  <tr>
+    <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
+    <td>L’utilisation de cette API n’est pas prise en charge dans AEM en tant que Cloud Service.</td>
+    <td>5/27/21</td>
+    <td>7/30/21</td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.metatype<br>org.apache.felix.scr<br>org.apache.felix.scr.info</td>
+    <td>Le métatype Apache Felix et les API SCR sont obsolètes.  Utilisez plutôt le métatype OSGi et les API de service déclaratif .</td>
+    <td>5/27/21</td>
+    <td>8/26/21</td>
+  </tr>
+</tbody>
+</table>
