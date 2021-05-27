@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Gestion des ressources
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 1069bbe8483a6504305f48cad43aec9e1c0d5169
+source-git-commit: 6480ae8abe194dc5561658ccbd87a30447959721
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 88%
+source-wordcount: '1016'
+ht-degree: 78%
 
 ---
 
 # Téléchargement de ressources depuis [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
-Vous pouvez télécharger des ressources, dont des rendus statiques et dynamiques. Vous pouvez également envoyer des liens vers des ressources par courrier électronique, directement depuis [!DNL Adobe Experience Manager Assets]. Les ressources téléchargées sont compressées dans un fichier ZIP. La taille maximale du fichier ZIP compressé est de 1 Go pour la tâche d’exportation. Un maximum de 500 ressources par tâche d’exportation est autorisé.
+Vous pouvez télécharger des ressources, dont des rendus statiques et dynamiques. Vous pouvez également envoyer des liens vers des ressources par courrier électronique, directement depuis [!DNL Adobe Experience Manager Assets]. Les ressources téléchargées sont compressées dans un fichier ZIP. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
 
 >[!NOTE]
 >
@@ -25,6 +25,7 @@ Les types de ressources Visionneuses d’images, Visionneuses à 360°, Visionne
 Vous pouvez télécharger des ressources Experience Manager à l’aide des méthodes suivantes :
 
 * [Interface utilisateur d’Experience Manager](#download-assets)
+* [Partage de liens](#link-share-download)
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=fr)
 * [Appli de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#download-assets)
@@ -63,6 +64,16 @@ Pour télécharger des ressources, procédez comme suit :
    | **[!UICONTROL Rendu(s) dynamique(s)]** | Sélectionnez cette option pour générer une série de rendus alternatifs en temps réel. Lorsque vous sélectionnez cette option, vous sélectionnez également les rendus à créer dynamiquement dans la liste [Paramètre d’image prédéfini](/help/assets/dynamic-media/image-presets.md). <br>De plus, vous pouvez sélectionner la taille, l’unité de mesure, le format, l’espace colorimétrique, la résolution, ainsi que les éventuels modificateurs d’image (pour inverser l’image, par exemple). Cette option n’est disponible que si vous avez activé [!DNL Dynamic Media]. |
 
 1. Dans la boîte de dialogue, cliquez sur **[!UICONTROL Télécharger]**.
+
+## Télécharger des ressources partagées à l’aide du partage de lien {#link-share-download}
+
+Le partage de ressources à l’aide d’un lien est un moyen pratique de le mettre à la disposition des personnes intéressées sans avoir à se connecter au préalable à [!DNL Assets]. Pour générer une URL permettant de partager des ressources, utilisez la fonction [Partage de liens](/help/assets/share-assets.md#sharelink).
+
+Lorsque les utilisateurs téléchargent des ressources à partir de liens partagés, [!DNL Assets] utilise un service asynchrone qui offre des téléchargements plus rapides et ininterrompus. Les ressources à télécharger sont placées en file d’attente en arrière-plan dans une boîte de réception dans les archives ZIP de taille de fichier gérable. Pour les téléchargements très volumineux, le téléchargement est divisé en fichiers de 100 Go.
+
+La boîte de réception affiche l’état du traitement de chaque archive. Une fois le traitement terminé, vous pouvez télécharger les archives à partir de la boîte de réception.
+
+![Boîte de réception de téléchargement](assets/download-inbox.png)
 
 ## Activation du servlet de téléchargement de ressources {#enable-asset-download-servlet}
 
