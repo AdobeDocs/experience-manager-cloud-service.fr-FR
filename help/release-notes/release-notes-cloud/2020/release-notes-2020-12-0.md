@@ -1,10 +1,10 @@
 ---
-title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Notes de mise à jour de la version 2020.12.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Notes de mise à jour de la version 2020.12.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: aeee895e4a4b959125d08091619988d0ffa09ace
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '693'
 ht-degree: 100%
 
 ---
