@@ -1,14 +1,14 @@
 ---
-title: Partage de ressources, de dossiers et de collections sous forme de lien
-description: Cet article décrit le partage de ressources, de dossiers et de collections dans les ressources d’ [!DNL Experience Manager Assets] sous forme de lien hypertexte.
+title: Distribution et partage de ressources, dossiers et collections
+description: Distribuez vos ressources numériques à l’aide de méthodes telles que le partage sous forme de lien, le téléchargement et via  [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link].
 contentOwner: AG
 feature: Gestion des ressources,Collaboration,Distribution des ressources
 role: Business Practitioner,Administrator
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 9d9e8d63d0f8cca97eb5a6f2ad026b24e3c6506d
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 98%
+source-wordcount: '754'
+ht-degree: 93%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 [!DNL Adobe Experience Manager Assets] vous permet de partager des ressources, des dossiers et des collections avec des membres de votre entreprise et des tiers, notamment des partenaires et des fournisseurs. Procédez comme suit pour partager des ressources à partir d’[!DNL Experience Manager Assets] as a [!DNL Cloud Service] :
 
-* Partager des ressources en tant que lien.
+* [Partager des ressources en tant que lien](#sharelink).
 * [Télécharger des ressources et les partager séparément.](/help/assets/download-assets-from-aem.md)
 * Partagez à l’aide de [[!DNL Experience Manager] l’appli de bureau ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr).
 * Partagez à l’aide de [[!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html).
@@ -26,10 +26,12 @@ ht-degree: 98%
 
 Pour générer une URL pour les ressources que vous souhaitez partager avec des utilisateurs, utilisez la boîte de dialogue Partage de lien. Les utilisateurs disposant de privilèges d’administrateur ou avec des autorisations de lecture à l’emplacement `/var/dam/share` peuvent afficher les liens partagés avec eux. Le partage de ressources au moyen d’un lien est très pratique dans la mesure où il permet à des tiers d’y accéder sans avoir besoin de se connecter au préalable à [!DNL Assets].
 
+![Boîte de dialogue Partage de liens](assets/link-share-dialog.png)
+
 >[!NOTE]
 >
 >* Vous devez disposer de l’autorisation Modifier l’ACL pour le dossier ou la ressource que vous souhaitez partager sous forme d’un lien.
->* Avant de partager un lien avec les utilisateurs, assurez-vous que [les emails sortants sont activés](/help/implementing/developing/introduction/development-guidelines.md#sending-email). Dans le cas contraire, une erreur se produira.
+>* Avant de partager un lien avec des utilisateurs, [activez les emails sortants](/help/implementing/developing/introduction/development-guidelines.md#sending-email). Dans le cas contraire, une erreur se produira.
 
 
 1. Dans l’interface utilisateur [!DNL Assets], sélectionnez la ressource à partager sous forme de lien.
