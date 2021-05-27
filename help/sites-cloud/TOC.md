@@ -6,10 +6,10 @@ breadcrumb-title: Guide de création
 user-guide-description: Découvrez comment créer avec Experience Manager Sites as a Cloud Service et l’administrer.
 feature: 'Création  '
 role: Business Practitioner
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: e736b80e0bee80b5f3df6451b63b306c546d0912
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 100%
+source-wordcount: '310'
+ht-degree: 99%
 
 ---
 
@@ -34,6 +34,7 @@ ht-degree: 100%
       + [Modification du contenu de la page](authoring/fundamentals/editing-content.md)
       + [Éditeur de texte enrichi](authoring/fundamentals/rich-text-editor.md)
       + [Propriétés de page](authoring/fundamentals/page-properties.md)
+      + [Aperçu du contenu](authoring/fundamentals/previewing-content.md)
       + [Publication de pages](authoring/fundamentals/publishing-pages.md)
       + [Fragments de contenu](authoring/fundamentals/content-fragments.md)
       + [Fragments d’expérience](authoring/fundamentals/experience-fragments.md)
