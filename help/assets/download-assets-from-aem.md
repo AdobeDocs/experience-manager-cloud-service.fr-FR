@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Gestion des ressources
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 6480ae8abe194dc5561658ccbd87a30447959721
+source-git-commit: 4c3007b9e38f8a18d61b781ddbcd00bd45b67729
 workflow-type: tm+mt
-source-wordcount: '1016'
-ht-degree: 78%
+source-wordcount: '896'
+ht-degree: 88%
 
 ---
 
@@ -24,8 +24,9 @@ Les types de ressources Visionneuses d’images, Visionneuses à 360°, Visionne
 
 Vous pouvez télécharger des ressources Experience Manager à l’aide des méthodes suivantes :
 
+<!-- * [Link Share](#link-share-download) -->
+
 * [Interface utilisateur d’Experience Manager](#download-assets)
-* [Partage de liens](#link-share-download)
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=fr)
 * [Appli de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#download-assets)
@@ -65,15 +66,17 @@ Pour télécharger des ressources, procédez comme suit :
 
 1. Dans la boîte de dialogue, cliquez sur **[!UICONTROL Télécharger]**.
 
-## Télécharger des ressources partagées à l’aide du partage de lien {#link-share-download}
+<!-- TBD: Commenting from May release because the feature is moved to June release 2021.6.0.
+## Download assets shared using link sharing {#link-share-download}
 
-Le partage de ressources à l’aide d’un lien est un moyen pratique de le mettre à la disposition des personnes intéressées sans avoir à se connecter au préalable à [!DNL Assets]. Pour générer une URL permettant de partager des ressources, utilisez la fonction [Partage de liens](/help/assets/share-assets.md#sharelink).
+Sharing assets using a link is a convenient way to make it available to interested people without them having to first log in to [!DNL Assets]. To generate a URL to share assets, use the [Link Share functionality](/help/assets/share-assets.md#sharelink). 
 
-Lorsque les utilisateurs téléchargent des ressources à partir de liens partagés, [!DNL Assets] utilise un service asynchrone qui offre des téléchargements plus rapides et ininterrompus. Les ressources à télécharger sont placées en file d’attente en arrière-plan dans une boîte de réception dans les archives ZIP de taille de fichier gérable. Pour les téléchargements très volumineux, le téléchargement est divisé en fichiers de 100 Go.
+When users download assets from shared links, [!DNL Assets] uses an asynchronous service that offers faster and and uninterrupted downloads. The assets to be downloaded are queued in the background in an inbox into ZIP archives of manageable file size. For very large downloads, the download is chunked into files of 100 GB in size.
 
-La boîte de réception affiche l’état du traitement de chaque archive. Une fois le traitement terminé, vous pouvez télécharger les archives à partir de la boîte de réception.
+The inbox displays the processing status of each archive. Once the processing is complete, you can download the archives from the inbox.
 
-![Boîte de réception de téléchargement](assets/download-inbox.png)
+![Download inbox](assets/download-inbox.png)
+-->
 
 ## Activation du servlet de téléchargement de ressources {#enable-asset-download-servlet}
 
