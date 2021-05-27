@@ -2,10 +2,10 @@
 title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 740b710cf21ef967f140ef1984268d9e82ea4059
+source-git-commit: 4c3007b9e38f8a18d61b781ddbcd00bd45b67729
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 13%
+source-wordcount: '939'
+ht-degree: 14%
 
 ---
 
@@ -61,9 +61,9 @@ La version suivante (2021.6.0) sera publiée le 24 juin 2021.
 * Le téléchargement de fichiers très volumineux bloque le [!DNL Experience Manager desktop app]. (CQ-4320942)
 * Les options de la barre d’outils sont différentes lorsque la même collection est sélectionnée à partir d’un dossier et lorsqu’elle est sélectionnée à partir d’un résultat de recherche. (CQ-4321406)
 
-#### Nouveautés de Dynamic Media {#what-is-new-dm}
+#### Nouveautés d’[!DNL Dynamic Media] {#what-is-new-dm}
 
-* L’imagerie dynamique RGPD (Device Pixel Ratio) et l’optimisation de la bande passante du réseau vous permettent de diffuser des images de meilleure qualité de manière efficace, sur des appareils dotés d’écrans haute résolution et d’une bande passante réseau limitée. Pour plus d’informations, voir [FAQ sur l’imagerie dynamique](/help/assets/dynamic-media/imaging-faq.md).
+* Le ratio de pixels d’appareil d’imagerie dynamique (RPD) et l’optimisation de la bande passante du réseau permettent de diffuser des images de meilleure qualité de manière efficace, sur les appareils dotés d’écrans haute résolution et d’une bande passante réseau limitée. Voir [FAQ sur l’imagerie dynamique](/help/assets/dynamic-media/imaging-faq.md).
 
    >[!NOTE]
    >
@@ -78,7 +78,7 @@ La version suivante (2021.6.0) sera publiée le 24 juin 2021.
    * Asie-Pacifique 19 juillet 2021.
 
 
-* Prise en charge du format d’image AVIF nouvelle génération dans la diffusion Dynamic Media (modificateur d’URL fmt).
+* Prise en charge du format d’image AVIF nouvelle génération dans la diffusion [!DNL Dynamic Media] (modificateur d’URL fmt).
 
    >[!NOTE]
    >
