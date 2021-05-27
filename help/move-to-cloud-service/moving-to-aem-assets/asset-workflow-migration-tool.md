@@ -2,10 +2,10 @@
 title: Outil de migration des workflows de ressources
 description: Outil de migration des workflows de ressources
 exl-id: 18490295-ead6-4691-8983-a6d4054e4264
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a0fb2714bc74c620d90153746930757301e62fd7
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 100%
+source-wordcount: '276'
+ht-degree: 76%
 
 ---
 
@@ -32,6 +32,8 @@ Les workflows offrent un niveau de prise en charge de la migration variable. Con
 * `NUI_MIGRATED` : migré vers un [profil de traitement pour Asset Compute Service](/help/assets/asset-microservices-configure-and-use.md).
 * `UNSUPPORTED` : actuellement non pris en charge dans [!DNL Experience Manager Assets] as a Cloud Service.
 
-## Installation de l’outil de migration des workflows de ressources {#installing-tool}
+## Utilisation de l’outil de migration des workflows de ressources {#use-workflow-migrator}
 
-Pour en savoir plus sur l’installation et la création de code à partir de la source, voir **[Ressource Git : AEM Assets as a Cloud Service – Migration des workflows](https://github.com/adobe/aem-cloud-migration)**.
+* **[!DNL Adobe I/O]Interface en ligne de commande** : Adobe recommande d’utiliser l’outil de migration des workflows de ressources via  `aio-cli-plugin-aem-cloud-service-migration` ([!DNL Experience Manager] en tant que module externe de refactorisation du  [!DNL Cloud Service] code pour l’ [!DNL Adobe I/O] interface de ligne de commande). Pour savoir comment installer et utiliser le module externe, voir [Ressource Git : aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction).
+
+* **Utilitaire** autonome : L’outil de migration des workflows de ressources peut également être exécuté en tant qu’utilitaire autonome. Pour en savoir plus sur l’installation et la création de code à partir de la source, voir **[Ressource Git: [!DNL Experience Manager Assets] as a [!DNL Cloud Service] - migration des workflows](https://github.com/adobe/aem-cloud-migration)**.
