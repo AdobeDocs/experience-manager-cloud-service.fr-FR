@@ -1,9 +1,9 @@
 ---
 title: '[!DNL Adobe Experience Manager] canal de version prédéfinie du Cloud Service'
 description: '[!DNL Adobe Experience Manager] canal de version prédéfinie du Cloud Service'
-source-git-commit: 7519c937fdc36711a5f558d787257cee713baf7e
+source-git-commit: 4ee9a5744cdcec00dd497a00b0d8dbf288a5adcb
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '752'
 ht-degree: 3%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 3%
 [!DNL Adobe Experience Manager] as a Cloud Service offre de nouvelles fonctionnalités à une cadence mensuelle, conformément au planning des  [versions de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service). Pour vous familiariser avec les fonctionnalités programmées pour le mois suivant, les clients peuvent s’abonner au canal de version préliminaire, accessible en configurant de manière appropriée dans des environnements de développement de programme standard ou dans tout environnement de programme de test. Les clients peuvent prévisualiser les modifications apportées à la console Sites, ainsi que créer du code par rapport à toute nouvelle API de version préliminaire.
 
 La liste des fonctionnalités de version préliminaire pour un mois donné est publiée dans les [notes de mise à jour mensuelles](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
+>[!VIDEO](/help/release-notes/assets/prerelease-overview.mp4)
 
 ## Comment activer la version préliminaire {#enable-prerelease}
 
@@ -110,8 +112,7 @@ Pour créer à partir du SDK de version préliminaire :
 1. Si vous êtes satisfait de son fonctionnement local, validez le code d’une branche de développement et utilisez un pipeline hors production Cloud Manager pour le déploiement dans un environnement qui s’abonne au canal de version préliminaire.
 
 >[!CAUTION]
-> 
-> L’`aem-prerelease-sdk-api` artifactId ne doit jamais être utilisé lors d’un déploiement dans l’environnement intermédiaire ou de production. Utilisez toujours aem-sdk-api lors d’un déploiement via le pipeline de production. De même, les API de version préliminaire de référencement de code ne doivent pas être déployées via le pipeline de production.
+L’`aem-prerelease-sdk-api` artifactId ne doit jamais être utilisé lors d’un déploiement dans l’environnement intermédiaire ou de production. Utilisez toujours aem-sdk-api lors d’un déploiement via le pipeline de production. De même, les API de version préliminaire de référencement de code ne doivent pas être déployées via le pipeline de production.
 
 Le [module externe maven Analyzer de build du SDK CS AEM version 1.0 et ultérieure](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=fr#developing) détectera si l’api de version préliminaire est utilisée dans un projet en examinant les dépendances. Si l’analyseur le trouve, il utilisera l’api sdk de version préliminaire pour analyser le projet.
 
