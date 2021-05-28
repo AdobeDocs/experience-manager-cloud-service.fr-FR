@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2020.9.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service pour la version 2020.9.0.
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 100%
+source-wordcount: '724'
+ht-degree: 99%
 
 ---
 
@@ -34,7 +34,7 @@ La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service ve
    * Publication sélective : il est désormais possible pour une équipe marketing d’accéder à des images de recadrage intelligent [!DNL Dynamic Media] et à des rendus dynamiques synchronisés avec [!DNL Dynamic Media] afin de pouvoir créer des supports promotionnels, le tout sans avoir à publier ces ressources sur [!DNL Dynamic Media] pour une diffusion globale. La publication [!DNL Experience Manager] et [!DNL Dynamic Media] est découplée et peut se produire séparément à cette fin. Voir [Publication sélective](/help/assets/dynamic-media/selective-publishing.md).
    * Les administrateurs peuvent désormais réinitialiser le mot de passe de [!DNL Dynamic Media] Cloud Service reçu lors de l’approvisionnement. La réinitialisation peut être effectuée dans l’interface utilisateur de [!DNL Experience Manager], sans qu’il soit nécessaire d’utiliser l’application de bureau [!DNL Dynamic Media Classic].
 
-* Pour en savoir plus sur les améliorations suivantes, voir [Nouveautés de Brand Portal](https://docs.adobe.com/content/help/fr-FR/experience-manager-brand-portal/using/introduction/whats-new.html).
+* Pour en savoir plus sur les améliorations suivantes, voir [Nouveautés de Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
 
    * Aperçu PDF amélioré avec l’intégration du SDK Adobe Document Cloud View.
    * Fonction de téléchargement en un clic.
