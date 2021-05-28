@@ -2,10 +2,10 @@
 title: ' de contenu AEM et Commerce'
 description: Ressources d’aide autonome et liens vers la documentation d’AEM Content and Commerce
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 73%
+source-wordcount: '394'
+ht-degree: 71%
 
 ---
 
@@ -44,10 +44,10 @@ Cette page répertorie les ressources d’aide autonome concernant AEM Content a
 ## Autres ressources relatives à Experience Manager {#other-resources}
 
 * [Documentation Dispatcher](/help/implementing/dispatcher/overview.md)
-* [Documentation HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
-* [Documentation sur les composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
-* [Documentation Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Documentation HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr)
+* [Documentation sur les composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
+* [Documentation Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Tutoriels sur Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/cloud-service/overview.html)
+* [Tutoriels sur Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=fr)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Forum de la communauté AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
