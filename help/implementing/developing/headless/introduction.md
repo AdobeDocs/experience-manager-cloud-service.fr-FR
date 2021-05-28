@@ -2,10 +2,10 @@
 title: Développement découplé pour AEM Sites as a Cloud Service
 description: Découvrez comment AEM en tant que Cloud Service de puissantes fonctionnalités sans interface telles que les modèles de contenu, les fragments de contenu et l’API GraphQL fonctionnent ensemble pour vous permettre de gérer vos expériences de manière centralisée et de les diffuser sur l’ensemble des canaux.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 816c08b9351b3ce2fd4f31974d707e9d4a4eea27
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 61%
+source-wordcount: '487'
+ht-degree: 59%
 
 ---
 
@@ -45,7 +45,7 @@ AEM as a Cloud Service est un outil couple pour le modèle d’implémentation d
 1. API de contenu pour la diffusion
    * L’API GraphQL d’AEM prend en charge la diffusion de fragments de contenu.
    * L’API REST AEM Assets prend en charge les opérations CRUD sur les fragments de contenu.
-   * La diffusion directe de contenu est également possible avec l’[exportation JSON du composant principal de fragment de contenu.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/content-fragment-component.html)
+   * La diffusion directe de contenu est également possible avec l’[exportation JSON du composant principal de fragment de contenu.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 ## Vos premières étapes avec AEM sans affichage {#first-steps}
 
