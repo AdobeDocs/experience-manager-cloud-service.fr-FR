@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
-source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 90%
+source-wordcount: '380'
+ht-degree: 88%
 
 ---
 
@@ -61,5 +61,5 @@ Pour connecter un site AEM et les composants principaux AEM CIF à une vue de ma
 
 * [Sites web, magasins et vues Magento](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 * [Composants principaux AEM CIF – Configuration multi-magasin/site](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
-* [Utilisation de Multi Site Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
+* [Utilisation de Multi Site Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [Réutilisation de contenu : Multi Site Manager et Live Copy](/help/sites-cloud/administering/msm/overview.md)
