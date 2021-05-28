@@ -2,10 +2,10 @@
 title: Modification des propriétés de page
 description: Définissez les propriétés requises pour une page
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1909'
-ht-degree: 100%
+source-wordcount: '1907'
+ht-degree: 99%
 
 ---
 
@@ -148,7 +148,7 @@ Configuration de la miniature de la page
 
 * **Partage sur les réseaux sociaux**
 
-   Définit les options de partage disponibles sur la page. Affiche les options disponibles pour le [composant principal de partage](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/sharing.html).
+   Définit les options de partage disponibles sur la page. Affiche les options disponibles pour le [composant principal de partage](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html).
 
    * **Activer le partage utilisateur pour Facebook**
    * **Activer le partage utilisateur pour Pinterest**
