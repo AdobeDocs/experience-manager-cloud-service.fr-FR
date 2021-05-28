@@ -2,10 +2,10 @@
 title: Outil convertisseur du Dispatcher AEM
 description: Outil convertisseur du Dispatcher AEM
 exl-id: 97eb4f3f-dc03-461a-8d7e-164065bd1e4c
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 100%
+source-wordcount: '337'
+ht-degree: 97%
 
 ---
 
@@ -25,13 +25,13 @@ Le Dispatcher est l’outil de mise en cache et/ou d’équilibrage de charge d�
 >[!NOTE]
 >L’utilisation la plus courante du Dispatcher consiste à mettre en cache les réponses d’une **instance de publication AEM** pour améliorer la réactivité et la sécurité du site web publié en externe.
 
-Référez-vous à [Présentation de Dispatcher](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html) pour savoir comment le Dispatcher effectue la mise en cache, renvoie des documents et réalise l’équilibrage de charge.
+Référez-vous à [Présentation de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) pour savoir comment le Dispatcher effectue la mise en cache, renvoie des documents et réalise l’équilibrage de charge.
 
 ### Configuration et test d’Apache et de Dispatcher {#dispatcher-configurations-cloud}
 
 Vous devez savoir comment structurer les configurations Apache et Dispatcher d’AEM as a Cloud Service, mais aussi comment valider et exécuter le service localement avant son déploiement dans les environnements cloud.
 
-Pour plus d’informations, voir [Dispatcher en mode cloud](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html).
+Pour plus d’informations, voir [Dispatcher en mode cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html).
 
 ## Convertisseur du Dispatcher AEM {#aem-dispatcher-converter}
 
