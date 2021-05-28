@@ -2,10 +2,10 @@
 title: Migration vers le module complémentaire CIF (Commerce Integration Framework) AEM
 description: Comment migrer vers le module complémentaire CIF (Commerce Integration Framework) d’AEM à partir d’une ancienne version
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
-source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 22%
+source-wordcount: '489'
+ht-degree: 21%
 
 ---
 
@@ -27,7 +27,7 @@ Le connecteur CIF précédemment disponible ne peut plus être installé. Le cod
 
 ## Structure du projet
 
-Découvrez la [AEM structure de projet](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) et les caractéristiques d’AEM en tant que Cloud Service. Adaptez la configuration de votre projet à la disposition d’AEM as a Cloud Service.
+Découvrez la [AEM structure de projet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr) et les caractéristiques d’AEM en tant que Cloud Service. Adaptez la configuration de votre projet à la disposition d’AEM as a Cloud Service.
 Par rapport aux déploiements AEM 6.5, il existe deux différences principales :
 
 * Le bundle OSGI du client GraphQL **ne doit plus** être inclus dans le projet AEM ; il est déployé via le module complémentaire CIF.
