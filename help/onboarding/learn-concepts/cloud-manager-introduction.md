@@ -1,0 +1,55 @@
+---
+title: Découvrez Cloud Manager
+description: Consultez cette page pour en savoir plus sur Cloud Manager, les programmes Cloud Manager et les environnements.
+source-git-commit: 58d4626da9fccd405cbc32d4a562641359352157
+workflow-type: tm+mt
+source-wordcount: '582'
+ht-degree: 19%
+
+---
+
+
+# Présentation de Cloud Manager {#intro-cloud-manager}
+
+Cloud Manager est un composant essentiel d’AEM en tant que Cloud Service et constitue le point d’entrée unique de votre équipe.
+
+Pour prendre en charge les clients disposant de configurations de développement d’entreprise, AEM as a Cloud Service s’intègre entièrement à Cloud Manager et à ses pipelines CI/CD conçus spécifiquement pour garantir des tests approfondis et une qualité de code optimale pour offrir des expériences exceptionnelles.
+
+Pour que les clients puissent commencer rapidement avec AEM en tant que Cloud Service, Cloud Manager fournit tout ce dont ils ont besoin pour commencer en libre-service, notamment la possibilité de créer vos ressources et environnements cloud. Ainsi, vos développeurs AEM peuvent accéder au référentiel Git via Cloud Manager. Grâce à Cloud Manager, les équipes de développement peuvent travailler à la validation fréquente des modifications en libre-service.
+
+Votre administrateur système sera chargé de configurer votre équipe Cloud Manager, qui comprendra les personnes qui créeront vos ressources cloud et vos développeurs. Reportez-vous à [Configuration du développement d’équipe d’entreprise pour AEM as a Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md) pour découvrir comment Cloud Manager prend en charge la configuration du développement d’équipe d’entreprise.
+
+## Programmes Cloud Manager {#cloud-manager-programs}
+
+Les programmes Cloud Manager représentent des ensembles d’environnements Cloud Manager prenant en charge des ensembles logiques d’initiatives commerciales, correspondant généralement à un contrat de niveau de service (SLA) acheté. Par exemple, un programme peut représenter les ressources AEM pour prendre en charge les sites Web publics globaux, tandis qu’un autre programme représente un DAM central interne. Regardez cette vidéo pour en savoir plus.
+
+Un utilisateur peut créer un programme **Sandbox** ou de **Production**.
+
+* Un *Programme de production* est créé pour activer dans le futur le trafic actif au moment approprié.
+Consultez [Présentation des programmes de production](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md) pour plus d’informations.
+
+* Un *programme Sandbox* est généralement créé pour les besoins de formation, à des fins de démonstration, d’activation, de preuve de concept ou de documentation. Ces programmes ne sont pas destinés à gérer un trafic réel et comporteront des restrictions absentes d’un programme de production. Ils incluront Sites et Assets et seront pourvus automatiquement d’une branche Git comprenant un exemple de code, un environnement de développement et un pipeline non productif.
+Consultez [Présentation des programmes Sandbox](/help/onboarding/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) pour plus d’informations.
+
+## Environnements de Cloud Manager {#cloud-manager-environments}
+
+Vos environnements cloud seront créés, accessibles et visualisés via Cloud Manager. Il peut s’agir d’un environnement de production, d’un environnement intermédiaire ou d’un environnement de développement. Les différents environnements prennent en charge différents objectifs et peuvent être utilisés à l’aide de différents pipelines CI/CD. Les environnements sont composés de services tels que :
+
+* [Services de création AEM](#author-services)
+* [Services de publication AEM](publish-services)
+* [Services de Dispatcher](#dispatcher-services)
+
+   >[!NOTE]
+   > Reportez-vous à la vidéo [Utilisation des environnements Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en#cloud-manager) pour en savoir plus sur les environnements disponibles. Voir également [Gestion des environnements](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en) pour en savoir plus sur les types d’environnement qu’un utilisateur peut créer et sur la manière dont l’utilisateur peut créer un environnement.
+
+### Service AEM Author {#author-services}
+
+Le service AEM Author est inclus dans un environnement dans lequel le contenu du site et les ressources numériques sont créés, gérés et mis à jour. En règle générale, seuls les utilisateurs internes ont accès au service de création et se trouvent derrière un écran de connexion. Le service de création est conçu comme un environnement de création et de prévisualisation.
+
+### Service de publication AEM {#publish-services}
+
+Le service de publication AEM est inclus dans un environnement qui héberge l’expérience de l’utilisateur final, comme un site web. Il s’agit du service que les visiteurs du site vont afficher et avec lequel ils interagiront. En règle générale, le service de publication est disponible publiquement.
+
+### Service de Dispatcher AEM {#dispatcher-services}
+
+Dispatcher est un module `Apache HTTP Web server` qui fournit une couche de sécurité et de performances se trouvant devant le service de publication AEM.
