@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Gestion des ressources,Ressources connectées,Distribution des ressources,Utilisateurs et groupes
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 6163b150e014ad8449e6b64a191213f72daf4410
+source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
 workflow-type: tm+mt
 source-wordcount: '2966'
-ht-degree: 78%
+ht-degree: 77%
 
 ---
 
@@ -198,7 +198,7 @@ Pour afficher et gérer les références du déploiement [!DNL Assets], procéde
 
 ## Restrictions et bonnes pratiques {#tip-and-limitations}
 
-* Pour obtenir des informations sur l’utilisation des ressources, configurez la fonctionnalité [Asset Insight](/help/assets/assets-insights.md) sur l’instance [!DNL Sites].
+* Pour obtenir des informations sur l’utilisation des ressources, configurez la fonctionnalité [Statistiques sur les ressources](/help/assets/assets-insights.md) sur l’instance [!DNL Sites].
 
 ### Autorisations et gestion des ressources {#permissions-and-managing-assets}
 
