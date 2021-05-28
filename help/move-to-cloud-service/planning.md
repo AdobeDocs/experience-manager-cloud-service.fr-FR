@@ -2,10 +2,10 @@
 title: Phase de planification
 description: Phase de planification
 exl-id: 987cb929-7871-4fec-8ef5-4d2f5f2f2186
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 100%
+source-wordcount: '470'
+ht-degree: 98%
 
 ---
 
@@ -25,13 +25,13 @@ AEM as a Cloud Service offre de très nombreuses fonctionnalités et possibilit�
 
 Cependant, un certain nombre de différences existent entre AEM On-Premise ou Adobe Managed Services par rapport à AEM as a Cloud Service.
 
-Pour comprendre ces différences importantes, voir [Modifications notables d’AEM Cloud Service](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/release-notes/aem-cloud-changes.html).
+Pour comprendre ces différences importantes, voir [Modifications notables d’AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=fr).
 
 ## Fonctionnalités obsolètes {#deprecated-features}
 
 Adobe étudie constamment les fonctionnalités du produit de façon à les réinventer au fil du temps ou à remplacer les fonctions plus anciennes par des variantes plus modernes, pour améliorer la valeur client globale, le tout en faisant toujours attention à la compatibilité ascendante.
 
-Pour en savoir plus sur les caractéristiques et les fonctionnalités signalées comme étant obsolètes dans Experience Manager as a Cloud Service, voir [Fonctionnalités obsolètes](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features).
+Pour en savoir plus sur les caractéristiques et les fonctionnalités signalées comme étant obsolètes dans Experience Manager as a Cloud Service, voir [Fonctionnalités obsolètes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features).
 
 ## Présentation de la phase de planification {#introduction}
 
