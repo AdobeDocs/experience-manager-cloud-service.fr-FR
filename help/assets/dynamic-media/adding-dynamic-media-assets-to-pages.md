@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Gestion des ressources
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+source-git-commit: 8442353b016ccd143b7265b5f20901a11bd48102
 workflow-type: tm+mt
-source-wordcount: '3226'
-ht-degree: 78%
+source-wordcount: '3084'
+ht-degree: 80%
 
 ---
 
@@ -112,7 +112,7 @@ Les composants Dynamic Media disponibles comprennent les suivants :
 
 ### Composant : Média dynamique {#dynamic-media-component}
 
-Le composant Média dynamique est dynamique ; il propose des options différentes selon que vous ajoutez une image ou une vidéo. Le composant prend en charge les paramètres d’image prédéfinis, ainsi que les visionneuses d’images telles que les visionneuses d’images, les visionneuses à 360°, les visionneuses de médias mixtes et le contenu vidéo. En outre, la visionneuse est réactive : la taille de l’écran change automatiquement en fonction de la taille à l’écran. Toutes les visionneuses sont des visionneuses HTML5.
+Le composant Dynamic Media est dynamique. Que vous ajoutiez une image ou une vidéo, plusieurs options s’offrent à vous. Le composant prend en charge les paramètres d’image prédéfinis, ainsi que les visionneuses d’images telles que les visionneuses d’images, les visionneuses à 360°, les visionneuses de médias mixtes et le contenu vidéo. En outre, la visionneuse est réactive : la taille de l’écran change automatiquement en fonction de la taille à l’écran. Toutes les visionneuses sont des visionneuses HTML5.
 
 >[!NOTE]
 >
@@ -165,16 +165,16 @@ Vous pouvez modifier les paramètres Dynamic Media ci-après en appuyant sur **
 
    Vous pouvez modifier les paramètres avancés ci-après en appuyant sur **[!UICONTROL Modifier]** dans le composant.
 
-* **[!UICONTROL Optimiser pour les appareils]**  à résolution plus élevée : cochez (par défaut) la case pour autoriser l’optimisation du rapport DPR (Device Pixel Ratio).
+<!-- CQDOC-17915 HIDDEN AS OF MAY 28 2021 AS PER EMAIL FROM APOORVA MAY 28 2021* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
 
-   Voir aussi [A propos de l’optimisation du rapport pixels d’appareil](/help/assets/dynamic-media/imaging-faq.md#dpr).
+  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   Notez que toute valeur [!DNL Experience Manager] Dynamic Media Smart Imaging DPR est ignorée.
+  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
 
-   L’option **[!UICONTROL Optimiser pour les appareils à résolution plus élevée]** n’est affichée que lorsque la valeur suivante est vraie :
-   * Sous Type de paramètre prédéfini, **[!UICONTROL Paramètre d’image prédéfini]** est sélectionné et **[!UICONTROL RESS_IP]** est sélectionné dans la liste déroulante **[!UICONTROL Paramètre d’image prédéfini]** .
+  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
+  * Under Preset Type, **[!UICONTROL Image Preset]** is selected, and **[!UICONTROL RESS_IP]** is selected from the **[!UICONTROL Image Preset]** drop-down list.
 
-   ![paramètre de rapport pixels d’appareil pour le paramètre d’image prédéfini](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
+  ![device pixel ratio setting for image preset](/help/assets/dynamic-media/assets/dpr-ress-ip.png) -->
 
 * **[!UICONTROL Titre]**  : modifiez le titre de l’image.
 
@@ -243,17 +243,17 @@ Vous pouvez modifier le paramètre Dynamic Media suivant en cliquant sur **[!UI
 
 * **[!UICONTROL Activer la correspondance du rapport d’aspect]**  : pour permettre à Dynamic Media de sélectionner un rendu de recadrage intelligent avec un rapport d’aspect qui correspond le mieux au rapport d’aspect de l’image d’origine, sélectionnez cette option.
 
-* **[!UICONTROL Optimiser pour les appareils]**  à résolution plus élevée : cochez (par défaut) la case pour autoriser l’optimisation du rapport DPR (Device Pixel Ratio).
+<!-- CQDOC-17915 HIDDEN AS OF MAY 28 2021 AS PER EMAIL FROM APOORVA MAY 28 2021* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization. 
 
-   Voir aussi [A propos de l’optimisation du rapport pixels d’appareil](/help/assets/dynamic-media/imaging-faq.md#dpr).
+  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   Notez que toute valeur [!DNL Experience Manager] Dynamic Media Smart Imaging DPR est ignorée.
+  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
 
-   L’option **[!UICONTROL Optimiser pour les appareils à résolution plus élevée]** n’est affichée que lorsque la valeur suivante est vraie :
+  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
 
-   * Sous Type de paramètre prédéfini, l’option **[!UICONTROL Recadrage intelligent]** est sélectionnée.
+  * Under Preset Type, **[!UICONTROL Smart Crop]** option is selected.
 
-   ![paramètre de rapport pixels d’appareil pour le recadrage intelligent](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
+  ![device pixel ratio setting for smart crop](/help/assets/dynamic-media/assets/dpr-smartcrop.png) -->
 
 * **[!UICONTROL Titre]**  : modifiez le titre de l’image avec recadrage intelligent.
 
@@ -273,7 +273,7 @@ Vous pouvez modifier le paramètre Dynamic Media suivant en cliquant sur **[!UI
 
 Le composant Interactive Media est destiné aux ressources présentant des éléments interactifs tels que des zones réactives ou des zones cliquables. Si vous disposez d’une image interactive, d’une vidéo interactive ou d’une bannière de carrousel, utilisez le composant **[!UICONTROL Interactive Media]**.
 
-Le composant Média interactif est dynamique : il propose des options différentes selon que vous ajoutez une image ou une vidéo. En outre, la visionneuse est réactive : la taille de l’écran change automatiquement en fonction de la taille de l’écran. Toutes les visionneuses sont des visionneuses HTML5.
+Le composant Interactive Media est dynamique. Que vous ajoutiez une image ou une vidéo, plusieurs options s’offrent à vous. En outre, la visionneuse est réactive : la taille de l’écran change automatiquement en fonction de la taille de l’écran. Toutes les visionneuses sont des visionneuses HTML5.
 
 >[!NOTE]
 >
