@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2020.11.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.11.0.
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 100%
+source-wordcount: '1265'
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ La version suivante (2020.12.0) sera publiée le 17 décembre 2020.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### Nouveautés de [!DNL Sites] {#what-is-new-sites}
+### Nouveautés d’[!DNL Sites] {#what-is-new-sites}
 
 * **[Lancement de la gestion de hiérarchie](/help/sites-cloud/authoring/launches/managing-pages.md) et de la fonction [Future Timewarp](/help/sites-cloud/authoring/launches/preview.md)** : nouvelle interface utilisateur pour ajouter ou supprimer des pages lors d’un lancement. De plus, le site de navigation affiche l’état futur des lancements grâce à Timewarp.
 
@@ -105,7 +105,7 @@ Pour plus d’informations, consultez [Gestion des environnements](/help/impleme
 
 ### Workflows {#workflows}
 
-* La prise en charge de la recherche des instances de workflow a été ajoutée en fonction du titre du workflow, du modèle de workflow, de l’état, de l’initiateur, du chemin d’accès à la charge utile et de la date de début. Voir [Instances des workflows de recherche](https://docs.adobe.com/content/help/fr/experience-manager-cloud-service/sites/administering/workflows-administering.html).
+* La prise en charge de la recherche des instances de workflow a été ajoutée en fonction du titre du workflow, du modèle de workflow, de l’état, de l’initiateur, du chemin d’accès à la charge utile et de la date de début. Voir [Instances des workflows de recherche](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html).
 
 ### Synchronisation des données utilisateur du niveau Publication {#user-sync}
 
@@ -121,7 +121,7 @@ La nouvelle [syntaxe httpd -t](/help/implementing/dispatcher/disp-overview.md#lo
 
 ## Outil de transfert de contenu {#content-transfer-tool}
 
-Consultez cette section pour découvrir les nouveautés et les mises à jour de l’[outil de transfert de contenu](https://docs.adobe.com/content/help/fr/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) version 1.1.12.
+Consultez cette section pour découvrir les nouveautés et les mises à jour de l’[outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) version 1.1.12.
 
 ### Nouveautés {#what-is-new-ctt}
 
