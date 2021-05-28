@@ -2,14 +2,21 @@
 title: Introduction – Listes autorisées IP dans Cloud Manager
 description: Introduction – Listes autorisées IP dans Cloud Manager
 exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 100%
+source-wordcount: '287'
+ht-degree: 94%
 
 ---
 
 # Présentation {#introduction}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_ipallowlist"
+>title="Gestion des Listes autorisées IP"
+>abstract="AEM as a Cloud Service a accès à Internet, et la sécurité est gérée par l’authentification et l’autorisation des utilisateurs. La liste des adresses IP autorisées est une fonctionnalité de Cloud Manager permettant de contrôler l’accès et de le limiter aux utilisateurs de confiance uniquement. Cette fonctionnalité permet aux utilisateurs autorisés de créer des listes autorisées d’adresses IP de confiance à partir desquelles les utilisateurs de leurs sites peuvent accéder à leurs domaines AEM."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html?lang=fr" text="Ajout d’une Liste autorisée IP"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/view-update-ip-allow-list.html?lang=fr" text="Affichage et mise à jour d’une Liste autorisée IP"
 
 AEM as a Cloud Service a accès à Internet, et la sécurité est gérée par l’authentification et l’autorisation des utilisateurs. La liste des adresses IP autorisées est une fonctionnalité de Cloud Manager permettant de contrôler l’accès et de le limiter aux utilisateurs de confiance uniquement. Cette fonctionnalité permet aux utilisateurs autorisés de créer des listes autorisées d’adresses IP de confiance à partir desquelles les utilisateurs de leurs sites peuvent accéder à leurs domaines AEM.
 
