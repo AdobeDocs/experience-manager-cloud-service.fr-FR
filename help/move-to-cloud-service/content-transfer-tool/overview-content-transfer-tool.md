@@ -2,10 +2,10 @@
 title: Présentation de l’outil de transfert de contenu
 description: Présentation de l’outil de transfert de contenu
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
-source-git-commit: ccac613f7ceb27c6d4dea11f5dd4fdc1aaba9781
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 77%
+source-wordcount: '858'
+ht-degree: 78%
 
 ---
 
@@ -66,7 +66,7 @@ Lors de la phase d’ingestion, pour appliquer le contenu différentiel en plus 
 
 Consultez la section ci-dessous pour accéder aux conseils et connaître les bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu :
 
-* Il est conseillé de procéder à un [nettoyage de révision](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/deploying/deploying/revision-cleanup.html) et à des [contrôles de cohérence de l’entrepôt de données](https://helpx.adobe.com/fr/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) sur le référentiel **source** pour identifier les problèmes potentiels et réduire la taille du référentiel.
+* Il est conseillé de procéder à un [nettoyage de révision](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) et à des [contrôles de cohérence de l’entrepôt de données](https://helpx.adobe.com/fr/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) sur le référentiel **source** pour identifier les problèmes potentiels et réduire la taille du référentiel.
 
 * Si le réseau de diffusion de contenu (CDN) de l’instance d’auteur AEM Cloud est configuré pour disposer d’une liste blanche d’adresses IP, il faut s’assurer que les adresses IP de l’environnement source sont aussi ajoutées à la liste autorisée pour que l’environnement source et l’environnement AEM Cloud puissent communiquer entre eux.
 
