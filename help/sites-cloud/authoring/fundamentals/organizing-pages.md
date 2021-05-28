@@ -2,10 +2,10 @@
 title: Création et organisation des pages
 description: Comment créer et organiser des pages avec AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2554'
-ht-degree: 100%
+source-wordcount: '2552'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ Vous pouvez également vous aider de [dossiers](#creating-a-new-folder) pour org
 
 La structure d’un site web est construite comme une arborescence qui contient vos pages de contenu. Les noms de ces pages de contenu sont utilisés pour former les URL, tandis que les titres sont affichés lorsque le contenu de la page est affiché.
 
-Voici un exemple tiré du site [Tutoriel WKND](https://docs.adobe.com/content/help/fr/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), sur lequel on consulte un article concernant les skateparks (`la-skateparks`) :
+Voici un exemple tiré du site [Tutoriel WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), sur lequel on consulte un article concernant les skateparks (`la-skateparks`) :
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
