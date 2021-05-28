@@ -3,9 +3,9 @@ title: Déploiement sur AEM as a Cloud Service
 description: 'Déploiement sur AEM as a Cloud Service '
 feature: Déploiement
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: abc41d6d9388a8ca63643bd2afd09982811ac490
+source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
-source-wordcount: '3350'
+source-wordcount: '3290'
 ht-degree: 94%
 
 ---
@@ -20,8 +20,10 @@ La mise à jour de la [version d’AEM](/help/implementing/deploying/aem-version
 
 Le reste de ce document décrit la manière dont les développeurs doivent adapter leurs pratiques afin de s’adapter aux mises à jour de version d’AEM as a Cloud Service et aux mises à jour client.
 
+<!--
 >[!NOTE]
->Il est recommandé aux clients disposant de bases de code de passer par l’exercice de restructuration du référentiel décrit dans la [documentation d’AEM](https://docs.adobe.com/help/fr-FR/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
+>It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
+-->
 
 ## Versions client {#customer-releases}
 
@@ -40,8 +42,10 @@ La vidéo suivante présente un aperçu général du déploiement du code vers A
 
 >[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
+<!--
 >[!NOTE]
->Il est recommandé aux clients disposant de bases de code de passer par l’exercice de restructuration du référentiel décrit dans la [documentation d’AEM](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
+>It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html). 
+-->
 
 ## Déploiement de modules de contenu via Cloud Manager et le gestionnaire de modules {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
@@ -102,7 +106,7 @@ Après le basculement vers la nouvelle version de l’application :
    * Configuration tenant compte du contexte (tout sous `/conf`) (ajout, modification, suppression)
    * Scripts (les modules peuvent déclencher des hooks d’installation à diverses étapes du processus d’installation de module) : Voir la [documentation Jackrabbit filevault](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) sur les hooks d’installation. Notez qu’AEM CS utilise actuellement la version 3.4.0 de Filevault, qui limite l’installation des hooks aux administrateurs, aux utilisateurs système et aux membres du groupe administrateurs).
 
-Il est possible de limiter l’installation de contenu modifiable à la création ou à la publication en incorporant des modules dans un dossier install.author ou install.publish sous `/apps`. La restructuration pour refléter cette séparation a été effectuée dans AEM 6.5 et les détails relatifs à la restructuration de projet recommandée sont disponibles dans la [documentation AEM 6.5.](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+Il est possible de limiter l’installation de contenu modifiable à la création ou à la publication en incorporant des modules dans un dossier install.author ou install.publish sous `/apps`. La restructuration pour refléter cette séparation a été effectuée dans AEM 6.5 et les détails relatifs à la restructuration de projet recommandée sont disponibles dans la [documentation AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr)
 
 >[!NOTE]
 >Les modules de contenu sont déployés sur tous les types d’environnements (développement, évaluation et production). Il n’est pas possible de limiter le déploiement à un environnement spécifique. Cette limitation est en place pour garantir l’option d’une série de tests d’exécution automatisée. Le contenu spécifique à un environnement nécessite une installation manuelle via le gestionnaire de modules.
@@ -111,7 +115,7 @@ En outre, il n’existe aucun mécanisme permettant d’annuler les modification
 
 Les modules tiers inclus doivent être validés comme compatibles avec AEM as a Cloud Service, sans quoi leur inclusion entraînera un échec du déploiement.
 
-Comme mentionné ci-dessus, les clients disposant de bases de code doivent se conformer à l’exercice de restructuration du référentiel nécessaire par les modifications du référentiel 6.5 décrites dans la [documentation AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr)
+Comme mentionné ci-dessus, les clients disposant de bases de code doivent se conformer à l’exercice de restructuration du référentiel nécessaire par les modifications du référentiel 6.5 décrites dans la [documentation AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 ## Repoinit {#repoinit}
 
