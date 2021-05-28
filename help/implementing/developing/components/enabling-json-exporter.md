@@ -2,10 +2,10 @@
 title: Activation de l’exportateur JSON pour un composant
 description: Les composants peuvent être adaptés pour générer l’exportation JSON de leur contenu en fonction d’un framework de modeleur.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 100%
+source-wordcount: '478'
+ht-degree: 97%
 
 ---
 
@@ -28,7 +28,7 @@ Il faut d’abord définir un modèle Sling pour le composant.
 
 >[!NOTE]
 >
->Pour obtenir un exemple d’utilisation des modèles Sling, consultez l’article sur le [développement d’exportateurs de modèles Sling dans AEM](https://docs.adobe.com/content/help/fr/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
+>Pour obtenir un exemple d’utilisation des modèles Sling, consultez l’article sur le [développement d’exportateurs de modèles Sling dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
 
 La classe de mise en œuvre des modèles Sling doit être annotée comme suit :
 
@@ -70,7 +70,7 @@ L’interface de modèle doit être correctement annotée afin de définir les m
 
 ## Exemple {#example}
 
-[Les composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) prennent en charge l’exportation JSON et peuvent être utilisés comme référence.
+[Les composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) prennent en charge l’exportation JSON et peuvent être utilisés comme référence.
 
 Pour obtenir un exemple, consultez la mise en œuvre du modèle Sling sur le composant principal de l’image et son interface annotée.
 
@@ -81,4 +81,4 @@ Pour plus d’informations, voir :
 * [Fragments de contenu dans le guide de l’utilisateur d’Assets](/help/assets/content-fragments/content-fragments.md)
 * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
 * [Création à l’aide de fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [Composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) et [composant Fragment de contenu](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/content-fragment-component.html)
+* [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) et [composant Fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
