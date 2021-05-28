@@ -2,9 +2,9 @@
 title: Règlement sur la protection et la confidentialité des données - Préparation d’Adobe Experience Manager en tant que Cloud Service Sites
 description: Découvrez la prise en charge d’Adobe Experience Manager as a Cloud Service Sites pour les différents règlements sur la protection et la confidentialité des données ; notamment le règlement général sur la protection des données (RGPD) de l’UE, la loi sur la protection de la vie privée des consommateurs de Californie et la manière de se conformer lors de la mise en oeuvre d’une nouvelle AEM en tant que projet Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1032'
 ht-degree: 43%
 
 ---
@@ -75,13 +75,13 @@ Pour exclure :
 
 AEM Sites comprend une intégration facultative avec Analytics Foundation qui utilise les fonctionnalités du service à la demande Adobe Analytics.
 
-Pour plus d’informations sur la gestion des demandes des titulaires de données liées à Adobe Analytics, voir [Adobe Analytics et Confidentialité des données](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html).
+Pour plus d’informations sur la gestion des demandes des titulaires de données liées à Adobe Analytics, voir [Adobe Analytics et Confidentialité des données](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
 
 ## Base de personnalisation par Target {#personalization-foundation-by-target}
 
 AEM Sites comprend une intégration facultative avec Personalization Foundation par Target, qui utilise les fonctionnalités du service à la demande Adobe Target.
 
-Pour plus d’informations sur la gestion des demandes des titulaires de données liées à Adobe Target, voir [Adobe Target - Confidentialité et Règlement général sur la protection des données](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+Pour plus d’informations sur la gestion des demandes des titulaires de données liées à Adobe Target, voir [Adobe Target - Confidentialité et Règlement général sur la protection des données](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 
