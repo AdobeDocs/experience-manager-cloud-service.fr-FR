@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1011'
-ht-degree: 87%
+source-wordcount: '1001'
+ht-degree: 85%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 87%
 
 Le développement de projets AEM Commerce basés sur Commerce Integration Framework (CIF) pour AEM as a Cloud Service suit les mêmes règles et bonnes pratiques que les autres projets AEM dans AEM as a Cloud Service. Veuillez d’abord examiner les éléments suivants :
 
-- [Structure de projet AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)
-- [SDK AEM as a Cloud Service](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)
-- [Conseils de développement pour AEM as a Cloud Service](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
+- [Structure de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr)
+- [SDK AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)
+- [Conseils de développement pour AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
 
 ## Développement local avec le SDK AEM as a Cloud Service {#local}
 
@@ -31,13 +31,13 @@ Un environnement de développement local est recommandé pour travailler avec de
 
 Le module complémentaire est fourni sous la forme d’une archive de fonctionnalités Sling. Le fichier zip disponible sur le portail de distribution de logiciels comprend deux fichiers archivés de fonctionnalités Sling, l’un pour l’auteur AEM et l’autre pour les instances de publication AEM.
 
-**Vous découvrez AEM as a Cloud Service ?** Consultez un [guide plus détaillé de configuration d’environnement de développement local à l’aide du SDK AEM as a Cloud Service](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+**Vous découvrez AEM as a Cloud Service ?** Consultez un [guide plus détaillé de configuration d’environnement de développement local à l’aide du SDK AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 
 ### Logiciels requis
 
 Les logiciels suivants doivent être installés localement :
 
-- [SDK AEM as a Cloud Service](https://docs.adobe.com/content/help/fr-FR/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
+- [SDK AEM as a Cloud Service](https://experienceleague.adobe.com/docs/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
 - [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) (3.3.9 ou version ultérieure)
 - [Node.js v10+](https://nodejs.org/en/)
