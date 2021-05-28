@@ -2,10 +2,10 @@
 title: Notes de mise à jour d’Adobe Experience Manager as a Cloud Service version 2020.6.0
 description: Notes de mise à jour d’Experience Manager version 2020.6.0
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1951'
-ht-degree: 99%
+source-wordcount: '1941'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 
 ### Nouveautés {#whats-new-2020.6.0}
 
-La version 2.9.0 des [composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) est maintenant disponible dans AEM Sites, notamment :
+La version 2.9.0 des [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) est maintenant disponible dans AEM Sites, notamment :
 
 * Intégration entre la [couche de données du client Adobe](https://github.com/adobe/adobe-client-data-layer) et les composants principaux
 * Attributs d’ID HTML configurables pour tous les composants
@@ -60,11 +60,11 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 
 * Un utilisateur possédant le rôle *Propriétaire de l’entreprise* dans Cloud Manager peut désormais supprimer un programme Sandbox depuis la landing page (par le biais d’un bouton d’action rapide sur la carte Programme) ou depuis le programme.
 
-   Pour plus d’informations, voir [Suppression d’un programme Sandbox](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html).
+   Pour plus d’informations, voir [Suppression d’un programme Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html).
 
 * Un utilisateur du programme Sandbox possédant le rôle *Propriétaire d’entreprise* ou *Responsable de déploiement* dans Cloud Manager peut désormais supprimer ses jeux d’environnements de production et d’évaluation via l’interface utilisateur de Cloud Manager. L’option de suppression est désormais disponible à partir de la carte Environnement dans la page **Aperçu du programme**, mais aussi dans la page **Environnements**. La sélection de l’option de suppression dans l’environnement de production ou d’évaluation supprime également l’autre dans le jeu d’environnements.
 
-   Pour plus d’informations, voir [Suppression d’un programme Sandbox](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html).
+   Pour plus d’informations, voir [Suppression d’un programme Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html).
 
 * Repères sur la landing page pour informer l’utilisateur sur la navigation de base.
 
@@ -76,11 +76,11 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 
 * Un utilisateur possédant le rôle SysAdmin dispose désormais d’un accès d’un simple clic à l’emplacement d’Admin Console d’où peuvent être gérés les rôles des utilisateurs ou les autorisations d’accès à Cloud Manager. Un bouton **Gérer l’accès** est désormais disponible dans la landing page en regard du bouton **Ajouter le programme**.
 
-   Pour plus d’informations, voir [Tâches SysAdmin](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks).
+   Pour plus d’informations, voir [Tâches SysAdmin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks).
 
 * Un utilisateur possédant le rôle SysAdmin dispose désormais d’un accès en un clic à l’instance d’auteur directement à partir de Cloud Manager.
 
-   Pour plus d’informations, voir [Gestion de l’accès à l’instance d’auteur](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem).
+   Pour plus d’informations, voir [Gestion de l’accès à l’instance d’auteur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem).
 
 * Le journal de génération inclut désormais la liste des artefacts détectés, y compris les packages de contenu ignorés.
 
