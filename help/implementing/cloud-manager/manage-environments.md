@@ -2,9 +2,9 @@
 title: Gestion des environnements – Cloud Service
 description: Gestion des environnements – Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 0dc99c6e5e34e6115a61e18de77cfd040057d832
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1264'
 ht-degree: 99%
 
 ---
@@ -128,7 +128,7 @@ Sélectionnez **Console Développeur** dans le menu déroulant de la carte **Env
 
 Seul un utilisateur possédant le rôle de développeur aura accès à **Developer Console**. L’exception concerne les programmes Sandbox, où tout utilisateur ayant accès au programme Cloud Manager Sandbox aura accès à **Developer Console**.
 
-Pour plus d’informations, voir [Mise en veille et réactivation d’environnements Sandbox](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction).
+Pour plus d’informations, voir [Mise en veille et réactivation d’environnements Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction).
 
 
 ![](assets/environ-devconsole.png)
