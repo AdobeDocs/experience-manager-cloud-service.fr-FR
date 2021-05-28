@@ -2,10 +2,10 @@
 title: Création de contenu accessible pour Adobe Experience Manager as a Cloud Service (conformité WCAG 2.1)
 description: Utilisez AEM as a Cloud Service pour rendre le contenu web accessible et utilisable par les personnes en situation de handicap
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '14060'
-ht-degree: 100%
+source-wordcount: '14050'
+ht-degree: 99%
 
 ---
 
@@ -68,15 +68,15 @@ Autre avantage utile : les équivalents textuels permettent aux moteurs de rech
 
 #### Comment procéder – Contenu non textuel (1.1.1)  {#how-to-meet-non-text-content}
 
-Pour les images statiques, la règle de base consiste à fournir un équivalent textuel. Vous pouvez, pour ce faire, utiliser le champ **Texte de remplacement** ; voir, par exemple, la section du composant principal **[Image](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/image.html)**.
+Pour les images statiques, la règle de base consiste à fournir un équivalent textuel. Vous pouvez, pour ce faire, utiliser le champ **Texte de remplacement** ; voir, par exemple, la section du composant principal **[Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=fr)**.
 
 >[!NOTE]
 >
->Certains composants principaux prêts à l’emploi, tels que **[Carrousel](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/carousel.html)**, ne fournissent pas de champ **Texte de remplacement** pour ajouter des descriptions de texte de remplacement à des images individuelles. Il existe cependant le champ **Étiquette** (onglet **[Accessibilité](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) pour l’ensemble du composant.
+>Certains composants principaux prêts à l’emploi, tels que **[Carrousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**, ne fournissent pas de champ **Texte de remplacement** pour ajouter des descriptions de texte de remplacement à des images individuelles. Il existe cependant le champ **Étiquette** (onglet **[Accessibilité](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) pour l’ensemble du composant.
 >
 >Lors de l’implémentation de ces versions pour votre instance AEM, votre équipe de développement devra configurer ces composants pour prendre en charge l’attribut `alt` afin que les auteurs puissent l’ajouter au contenu (voir Ajout de la prise en charge d’éléments et d’attributs HTML supplémentaires).
 >
->Certains composants principaux prêts à l’emploi, tels que **[Carrousel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)**, ne fournissent pas de champ **Texte de remplacement** pour ajouter des descriptions de texte de remplacement à des images individuelles. Il existe cependant le champ **Étiquette** (onglet **[Accessibilité](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) pour l’ensemble du composant.
+>Certains composants principaux prêts à l’emploi, tels que **[Carrousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**, ne fournissent pas de champ **Texte de remplacement** pour ajouter des descriptions de texte de remplacement à des images individuelles. Il existe cependant le champ **Étiquette** (onglet **[Accessibilité](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) pour l’ensemble du composant.
 >
 >Lors de l’implémentation de ces versions pour votre instance AEM, votre équipe de développement devra configurer ces composants pour prendre en charge l’attribut `alt` afin que les auteurs puissent l’ajouter au contenu (voir [Ajout de la prise en charge d’éléments et d’attributs HTML supplémentaires](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
@@ -359,6 +359,7 @@ Veillez à ce que vos pages web aient la structure appropriée en utilisant, le 
       >
       >* `<b>` pour `<strong>`
       >* `<i>` pour `<em>`
+
       >
       >Ils sont identiques dans la pratique, mais `<strong>` et `<em>` sont préférables, car il s’agit de code HTML correct sémantiquement. Votre équipe de développement peut configurer l’éditeur de texte enrichi pour qu’il utilise `<strong>` et `<em>` (au lieu de `<b>` et `<i>`) lors du développement de votre instance de projet.
 
