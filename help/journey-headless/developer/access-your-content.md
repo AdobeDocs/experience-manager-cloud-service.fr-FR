@@ -1,7 +1,7 @@
 ---
 title: Accès à votre contenu via les API de diffusion AEM
 description: Dans cette partie du Parcours de développement AEM sans affichage, découvrez comment utiliser les requêtes GraphQL pour accéder au contenu de vos fragments de contenu.
-source-git-commit: 8e96827f9353d6ffdf1e01645f2bc8bdaac2610f
+source-git-commit: 8be8308c15ede115c21ccca8f91a13a23356d0b1
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 18%
@@ -242,7 +242,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Avant de commencer avec des requêtes sur votre contenu, vous devez :
 
 * Activation de votre point de terminaison
-   * Utilisation des outils -> Sites -> GraphQL
+   * Utilisation des outils -> Ressources -> GraphQL
    * [Activation de votre point d’entrée GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
 
 * Installer GraphiQL (si nécessaire)
