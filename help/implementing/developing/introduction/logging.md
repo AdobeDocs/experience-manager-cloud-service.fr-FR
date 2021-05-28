@@ -2,10 +2,10 @@
 title: Journalisation d’AEM en tant que Cloud Service
 description: Découvrez comment configurer des paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données dans AEM en tant que Cloud Service.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: e87b71dd5081b95ca3fd55e66455476c85a50f6c
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2332'
-ht-degree: 98%
+source-wordcount: '2330'
+ht-degree: 97%
 
 ---
 
@@ -549,7 +549,7 @@ Les journaux AEM se trouvent dans le dossier `crx-quickstart/logs`, où vous pou
 * Journal des requêtes HTTP AEM : `request.log`
 * Journal des accès HTTP AEM : `access.log`
 
-Les journaux de couche Apache, y compris de Dispatcher, se trouvent dans le conteneur Docker qui contient Dispatcher. Consultez la [documentation de Dispatcher](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) pour savoir comment le démarrer.
+Les journaux de couche Apache, y compris de Dispatcher, se trouvent dans le conteneur Docker qui contient Dispatcher. Consultez la [documentation de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) pour savoir comment le démarrer.
 
 Pour récupérer les journaux :
 
