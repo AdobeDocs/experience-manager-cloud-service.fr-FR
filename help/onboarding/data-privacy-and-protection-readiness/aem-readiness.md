@@ -2,9 +2,9 @@
 title: Règlements sur la protection et la confidentialité des données - Adobe Experience Manager en tant que Cloud Service prêt
 description: Découvrez la prise en charge d’Adobe Experience Manager en tant que Cloud Service pour les différents règlements sur la protection et la confidentialité des données ; notamment le règlement général sur la protection des données (RGPD) de l’UE, la loi sur la protection de la vie privée des consommateurs de Californie et la manière de se conformer lors de la mise en oeuvre d’une nouvelle AEM en tant que projet Cloud Service.
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '729'
 ht-degree: 2%
 
 ---
@@ -94,6 +94,6 @@ Voir [Préparation d’AEM Sites aux réglementations sur la protection et la co
 Ces intégrations d’Adobe Experience Manager as a Cloud Service sont compatibles avec les services prêts à l’emploi et la protection des données (par exemple, RGPD). Aucune donnée personnelle provenant d’Adobe Target ou d’Adobe Analytics n’est stockée dans AEM par rapport aux intégrations.
 Pour plus d’informations, voir :
 
-* [Adobe Target - Présentation de la confidentialité](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/privacy.html)
+* [Adobe Target - Présentation de la confidentialité](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/privacy.html)
 
-* [Processus relatif à la confidentialité des données Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-workflow.html)
+* [Processus relatif à la confidentialité des données Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html)
