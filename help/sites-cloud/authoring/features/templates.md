@@ -2,9 +2,9 @@
 title: Création de modèles de page
 description: Le modèle définit la structure de la page créée et, à l’aide de l’éditeur de modèles, les tâches de création et de gestion des modèles ne sont plus réservées aux développeurs.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '4600'
+source-wordcount: '4596'
 ht-degree: 100%
 
 ---
@@ -91,7 +91,7 @@ Lors de la création d’un modèle modifiable :
 >
 >Ne saisissez jamais d’informations qui doivent être internationalisées dans un modèle. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->Pour les éléments de modèle tels que les en-têtes et les pieds de page qui doivent être localisés, utilisez les [fonctionnalités de localisation des composants principaux.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/get-started/localization.html)
+>Pour les éléments de modèle tels que les en-têtes et les pieds de page qui doivent être localisés, utilisez les [fonctionnalités de localisation des composants principaux.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=fr)
 
 ### Création d’un dossier de modèles - Administrateur {#creating-a-template-folder-admin}
 
@@ -532,7 +532,7 @@ Même si l’ensemble du contenu créé en mode **Structure** est visible en mod
 >
 >Le contenu initial est destiné à préparer les composants et la mise en page, point de départ de la création du contenu. Il n’est pas destiné à constituer un contenu réel laissé tel quel. C’est pour cette raison que le contenu initial ne peut pas être traduit.
 >
->Si vous devez inclure du texte traduisible dans votre modèle, par exemple dans les en-têtes ou les pieds de page, vous pouvez utiliser les [fonctions de localisation des composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html).
+>Si vous devez inclure du texte traduisible dans votre modèle, par exemple dans les en-têtes ou les pieds de page, vous pouvez utiliser les [fonctions de localisation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
 
 ### Modification d’un modèle - Disposition - Créateur de modèles {#editing-a-template-layout-template-author}
 
