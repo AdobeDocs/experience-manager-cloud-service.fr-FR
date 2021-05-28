@@ -2,10 +2,10 @@
 title: Phase de post-activation
 description: Phase de post-activation
 exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 79%
+source-wordcount: '314'
+ht-degree: 73%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 79%
 >id="aemcloud_golive_troubleshooting"
 >title="Résolution des incidents liés à AEM"
 >abstract="Consultez les bonnes pratiques de développement continu et gérez les journaux avec des outils tels que Developer Console et CRXDE Lite pour résoudre les problèmes liés à AEM"
->additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="Accès aux journaux et leur gestion"
->additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="Outils de développement AEM as a Cloud Service"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="Accès aux journaux et leur gestion"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="Outils de développement AEM as a Cloud Service"
 
 
 Lors de la phase de post-activation, vous devez veiller à nettoyer les fichiers temporaires, revoir les bonnes pratiques de développement continu et gérer les journaux.
@@ -32,7 +32,7 @@ Les outils suivants sont disponibles pour résoudre les problèmes liés aux env
 
 Des environnements de débogage pour développeur d’AEM as a Cloud Service sont disponibles dans Developer Console pour les environnements de développement, d’évaluation et de production.
 
-Pour en savoir plus sur les outils de développement, voir [Implémentation pour AEM as a Cloud Service](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools).
+Pour en savoir plus sur les outils de développement, voir [Implémentation pour AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools).
 
 ## CRX/DE Lite {#crxde-lite}
 
@@ -47,7 +47,7 @@ Pour savoir comment développer votre application AEM avec CRX/DE Lite, voir [D�
 
 Les utilisateurs peuvent accéder à la liste des fichiers journaux disponibles pour l’environnement sélectionné.
 
-Pour savoir comment accéder aux journaux et les gérer via l’interface utilisateur ou à l’aide d’une API via Cloud Manager, voir [Accès aux journaux et leur gestion](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html).
+Pour savoir comment accéder aux journaux et les gérer via l’interface utilisateur ou à l’aide d’une API via Cloud Manager, voir [Accès aux journaux et leur gestion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html?lang=fr).
 
 ### Assistance supplémentaire {#additional-support}
 
