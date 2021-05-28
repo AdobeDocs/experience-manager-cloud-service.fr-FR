@@ -1,18 +1,18 @@
 ---
-title: Statistiques sur les ressources
+title: Assets Insights
 description: Effectuez le suivi des évaluations des utilisateurs et des statistiques d’utilisation des images utilisées dans les sites web tiers, les campagnes marketing et les solutions de création de l’Adobe.
 contentOwner: AG
 feature: Statistiques sur les ressources, rapports sur les ressources
 role: Business Practitioner,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: 212e4e7cfb93d5765f80003c42ba6afb9af45c13
+source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
 workflow-type: tm+mt
 source-wordcount: '796'
-ht-degree: 76%
+ht-degree: 65%
 
 ---
 
-# Statistiques sur les ressources {#asset-insights}
+# Assets Insights {#asset-insights}
 
 La fonctionnalité Statistiques sur les ressources vous permet de suivre les évaluations des utilisateurs et les statistiques d’utilisation des images utilisées dans les sites web tiers, les campagnes marketing et les solutions de création d’Adobe. Elle permet d’obtenir des informations sur les performances et la popularité des images.
 
@@ -20,7 +20,7 @@ La fonction Statistiques sur les ressources capture les détails de l’activit�
 
 Pour que la fonction Statistiques sur les ressources capture les statistiques d’utilisation des images à partir d’un site web, vous devez inclure le code intégré de l’image dans celui du site web.
 
-Pour permettre à Statistiques sur les ressources d’afficher les statistiques d’utilisation des ressources, configurez d’abord la fonction pour récupérer les données de rapport à partir de [!DNL Adobe Analytics]. Pour plus d’informations, consultez la section [Configuration des statistiques sur les ressources](#configure-asset-insights). Pour utiliser cette fonctionnalité, achetez la licence [!DNL Adobe Analytics] séparément.
+Pour permettre à Assets Insights d’afficher les statistiques d’utilisation des ressources, configurez d’abord la fonction pour récupérer les données de rapport à partir de [!DNL Adobe Analytics]. Pour plus d’informations, voir [Configuration des statistiques sur les ressources](#configure-asset-insights). Pour utiliser cette fonctionnalité, achetez la licence [!DNL Adobe Analytics] séparément.
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
 
    >[!NOTE]
    >
-   >Étant donné que la fonction Statistiques sur les ressources récupère généralement les données de solutions de [!DNL Adobe Analytics] de manière périodique, la section Solutions peut ne pas afficher les données les plus récentes. La période pendant laquelle les données sont affichées dépend de la planification de l’opération de récupération que la fonction Statistiques sur les ressources exécute pour récupérer les données d’Analytics.
+   >Étant donné que la fonction Statistiques sur les ressources récupère généralement les données de solutions de [!DNL Adobe Analytics] de manière périodique, la section Solutions peut ne pas afficher les données les plus récentes. La période pour laquelle les données sont affichées dépend du planning de l’opération de récupération exécutée par Assets Insights pour récupérer les données Analytics.
 
 1. Pour afficher les statistiques de performances de l’actif sous forme graphique sur une période donnée, sélectionnez une période dans la section **[!UICONTROL Statistiques de performances]**. Les détails, y compris les clics et les impressions, sont affichés sous forme de lignes de tendance dans un graphique.
 
@@ -75,7 +75,7 @@ Vous pouvez afficher les scores de toutes les ressources d’un dossier simultan
 
 ## Schedule background job {#scheduling-background-job}
 
-Asset Insights fetches usage data for assets from Adobe Analytics report suites in a periodic manner. By default, Asset Insights runs a background job every 24 hours at 2 AM to the fetch data. However, you can modify both the frequency and the time by configuring the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service from the web console.
+Assets Insights fetches usage data for assets from Adobe Analytics report suites in a periodic manner. By default, Assets Insights runs a background job every 24 hours at 2 AM to the fetch data. However, you can modify both the frequency and the time by configuring the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service from the web console.
 
 1. Click the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Open the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service configuration.
@@ -87,7 +87,7 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 
 ## Configuration des statistiques sur les ressources {#configure-asset-insights}
 
-[!DNL Experience Manager Assets] récupère les données d’utilisation des ressources numériques utilisées par des sites web tiers à partir de [!DNL Adobe Analytics]. Pour permettre à la fonction Statistiques sur les ressources de récupérer ces données et de générer des informations, commencez par la configurer afin qu’elle s’intègre à [!DNL Adobe Analytics].
+[!DNL Experience Manager Assets] récupère les données d’utilisation des ressources numériques utilisées par des sites web tiers à partir de [!DNL Adobe Analytics]. Pour permettre à Assets Insights de récupérer ces données et de générer des informations, configurez d’abord la fonction à intégrer à [!DNL Adobe Analytics].
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 
    *Figure : Configuration d’Adobe Analytics pour les statistiques sur les ressources dans[!DNL Experience Manager]*
 
-1. Cliquez sur **[!UICONTROL Authentifier]**. Une fois que [!DNL Experience Manager] a authentifié vos identifiants, dans la liste **[!UICONTROL Suite de rapports]**, sélectionnez une suite de rapports Adobe Analytics à partir de laquelle la fonction Statistiques sur les ressources doit récupérer les données. Cliquez sur **[!UICONTROL Ajouter]**.
+1. Cliquez sur **[!UICONTROL Authentifier]**. Une fois que [!DNL Experience Manager] a authentifié vos informations d’identification, dans la liste **[!UICONTROL Suite de rapports]** , sélectionnez une suite de rapports Adobe Analytics à partir de laquelle vous souhaitez que les statistiques sur les ressources récupèrent les données. Cliquez sur **[!UICONTROL Ajouter]**.
 1. Une fois que [!DNL Experience Manager] a configuré votre suite de rapports, cliquez sur **[!UICONTROL Terminé]**.
 
 ### Suivi de page {#page-tracker}
@@ -120,11 +120,11 @@ Une fois que vous avez configuré votre compte Adobe Analytics, le code de suivi
 
 <!--
 
-## Using demo package for Asset Insights {#using-demo-package-for-asset-insights}
+## Using demo package for Assets Insights {#using-demo-package-for-asset-insights}
 
-Using the demo package, you can enable Adobe Asset Insights to capture data from and generate insights for a sample web page.
+Using the demo package, you can enable Adobe Assets Insights to capture data from and generate insights for a sample web page.
 
-1. Configure Asset Insights using the instructions in [Configure Asset Insights](#configure-asset-insights).
+1. Configure Assets Insights using the instructions in [Configure Assets Insights](#configure-asset-insights).
 1. Download the sample [!DNL Experience Manager Assets] package from below and install the package from CRXDE package manager.
 
    [Get File](assets/insightsdemo.zip)
