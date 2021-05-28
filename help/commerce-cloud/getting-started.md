@@ -8,16 +8,16 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 38%
+source-wordcount: '1065'
+ht-degree: 36%
 
 ---
 
 # Prise en main d’AEM Commerce as a Cloud Service {#start}
 
-Pour commencer à utiliser AEM Commerce as a Cloud Service, votre instance Experience Manager Cloud Service doit être configurée avec le module complémentaire CIF (Commerce Integration Framework). Le module complémentaire CIF est un module supplémentaire ajouté à [AEM Sites as a Cloud Service](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/sites/home.html).
+Pour commencer à utiliser AEM Commerce as a Cloud Service, votre instance Experience Manager Cloud Service doit être configurée avec le module complémentaire CIF (Commerce Integration Framework). Le module complémentaire CIF est un module supplémentaire ajouté à [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/home.html).
 
 ## Intégration {#onboarding}
 
@@ -28,7 +28,7 @@ L’intégration à AEM Commerce as a Cloud Service est un processus à deux ét
 
 La première étape d’intégration est effectuée par Adobe. Pour plus d’informations sur la tarification et l’approvisionnement, contactez votre représentant commercial.
 
-Une fois que vous disposez du module complémentaire CIF, celui-ci est appliqué à tout programme Cloud Manager existant. Si vous n’avez pas de programme Cloud Manager, vous devrez en créer un. Pour plus d’informations, voir [Configuration de votre programme](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/getting-started/setting-up-program.html).
+Une fois que vous disposez du module complémentaire CIF, celui-ci est appliqué à tout programme Cloud Manager existant. Si vous n’avez pas de programme Cloud Manager, vous devrez en créer un. Pour plus d’informations, voir [Configuration de votre programme](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html).
 
 La deuxième étape s’effectue en libre-service pour chaque environnement AEM as a Cloud Service. Il existe d’autres configurations que vous devrez effectuer après l’approvisionnement initial du module complémentaire CIF.
 
@@ -69,7 +69,7 @@ Pour connecter AEM à une solution commerciale via l’interface de ligne de com
 
 1. Procurez-vous l’Adobe I/O CLI avec le plug-in Cloud Manager.
 
-   Consultez la [documentation d’Adobe Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) pour savoir comment télécharger, configurer et utiliser l’[interface de ligne de commande de l’Adobe I/O](https://github.com/adobe/aio-cli) avec le [module d’interface de ligne de commande de Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+   Consultez la [documentation d’Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr) pour savoir comment télécharger, configurer et utiliser l’[interface de ligne de commande de l’Adobe I/O](https://github.com/adobe/aio-cli) avec le [module d’interface de ligne de commande de Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
 2. Authentification de l’interface de ligne de commande de l’Adobe I/O avec l’AEM en tant que programme de Cloud Service
 
