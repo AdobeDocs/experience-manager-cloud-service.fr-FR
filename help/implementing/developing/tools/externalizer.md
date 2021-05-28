@@ -2,10 +2,10 @@
 title: Externalisation d’URL
 description: L’externaliseur est un service OSGi qui vous permet de transformer par programmation un chemin d’accès aux ressources en une URL externe et absolue.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: ce43bdc94f14faa69add16139e22ea3f34dfc52f
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 19%
+source-wordcount: '565'
+ht-degree: 15%
 
 ---
 
@@ -15,7 +15,7 @@ Dans AEM, **Externalizer** est un service OSGi qui vous permet de transformer pa
 
 Étant donné qu’une AEM en tant qu’instance de Cloud Service ne peut pas connaître son URL visible en externe et qu’il est parfois nécessaire de créer un lien en dehors du périmètre de la requête, ce service fournit un emplacement central pour configurer ces URL externes et les créer.
 
-Cet article explique comment configurer le service Externalizer et comment l’utiliser. Pour obtenir des détails techniques sur le service, reportez-vous aux [Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html).
+Cet article explique comment configurer le service Externalizer et comment l’utiliser. Pour obtenir des détails techniques sur le service, reportez-vous aux [Javadocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Comportement par défaut de l’externaliseur et comment remplacer {#default-behavior}
 
@@ -125,4 +125,4 @@ Cette section illustre quelques exemples d’utilisation du service Externalizer
 
 >[!TIP]
 >
->Vous trouverez d’autres exemples dans les [Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html).
+>Vous trouverez d’autres exemples dans les [Javadocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html).
