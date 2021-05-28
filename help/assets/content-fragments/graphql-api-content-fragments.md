@@ -3,7 +3,7 @@ title: API GraphQL d’AEM à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser des fragments de contenu dans Adobe Experience Manager (AEM) en tant que Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu sans interface.
 feature: Fragments de contenu, API GraphQL
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
+source-git-commit: 8be8308c15ede115c21ccca8f91a13a23356d0b1
 workflow-type: tm+mt
 source-wordcount: '3935'
 ht-degree: 78%
@@ -158,7 +158,7 @@ Pour activer un point d’entrée GraphQL, vous devez d’abord disposer d’une
 
 Pour activer le point de terminaison correspondant :
 
-1. Accédez à **Outils**, **Sites**, puis sélectionnez **GraphQL**.
+1. Accédez à **Outils**, **Ressources**, puis sélectionnez **GraphQL**.
 1. Sélectionnez **Créer**.
 1. La boîte de dialogue **Créer un point d’entrée GraphQL** s’ouvre. Vous pouvez y indiquer les informations suivantes :
    * **Nom** : nom du point de terminaison ; vous pouvez saisir du texte.
@@ -168,7 +168,7 @@ Pour activer le point de terminaison correspondant :
    >
    >L’avertissement suivant s’affiche dans la boîte de dialogue :
    >
-   >* *Les points d’entrée GraphQL peuvent présenter des problèmes de sécurité et de performance des données si ils ne sont pas gérés de manière adaptée. Veillez à définir les autorisations appropriées après la création d’un point d’entrée.*
+   >* *Les points d&#39;entrée GraphQL peuvent présenter des problèmes de sécurité et de performances des données s&#39;ils ne sont pas gérés de manière adaptée. Veillez à définir les autorisations appropriées après la création d&#39;un point d&#39;entrée.*
 
 
 1. Confirmez avec **Créer**.
