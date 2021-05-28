@@ -2,9 +2,9 @@
 title: Plan directeur d’applications sur une seule page (SPA)
 description: Ce document décrit le contrat général et indépendant du framework que tout framework de SPA devrait respecter afin de mettre en œuvre des composants de SPA modifiables dans AEM.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2058'
+source-wordcount: '2056'
 ht-degree: 100%
 
 ---
@@ -77,7 +77,7 @@ Le modèle de page utilise l’outil d’exportation de modèle JSON, lui-même 
 * `:itemsOrder` : liste triée des enfants. L’objet carte JSON ne garantit pas l’ordre de ses champs. En disposant de la carte et du tableau actif, le consommateur de l’API bénéficie des avantages des deux structures.
 * `:path` : chemin d’accès au contenu d’un élément (présent sur les éléments qui représentent une page).
 
-Voir aussi [Prise en main d’AEM Content Services](https://docs.adobe.com/content/help/fr/experience-manager-learn/getting-started-with-aem-headless/overview.html).
+Voir aussi [Prise en main d’AEM Content Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr).
 
 ### Module spécifique au framework {#framework-specific-module}
 
@@ -173,6 +173,7 @@ Par exemple :
 >
 >* `"new section"` : indique que l’élément en cours est l’espace réservé du conteneur.
 >* `"aem-Grid-newComponent"` : normalise le composant pour la création de dispositions.
+
 >
 
 
