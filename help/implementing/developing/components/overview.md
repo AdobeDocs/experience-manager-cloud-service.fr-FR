@@ -2,9 +2,9 @@
 title: Aperçu des composants
 description: Les composants sont des unités modulaires qui exécutent des fonctionnalités spécifiques pour présenter du contenu sur votre site web.
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '387'
 ht-degree: 100%
 
 ---
@@ -26,7 +26,7 @@ Les composants dans AEM :
 * possèdent une interface utilisateur standardisée ;
 * sont associés à un comportement de modification qui peut être configuré ;
 * utilisent des boîtes de dialogue créées à l’aide de sous-éléments basés sur les composants de l’interface utilisateur Granite ;
-* sont développés à l’aide de [HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html) ;
+* sont développés à l’aide de [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) ;
 * peuvent être développés pour créer des composants personnalisés qui étendent les fonctionnalités par défaut.
 
 Compte tenu de la nature modulaire des composants, vous pouvez effectuer les opérations suivantes :
@@ -44,7 +44,7 @@ Chaque composant AEM :
 
 ## Composants principaux AEM {#aem-core-components}
 
-[Les composants principaux AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) sont un ensemble de composants WCM (Web Content Management, gestion de contenu web) normalisés pour AEM dont l’objectif est d’accélérer le développement et de réduire les coûts de maintenance de vos sites web.
+[Les composants principaux AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) sont un ensemble de composants WCM (Web Content Management, gestion de contenu web) normalisés pour AEM dont l’objectif est d’accélérer le développement et de réduire les coûts de maintenance de vos sites web.
 
 Les composants principaux sont fournis avec AEM as a Cloud Service et le [tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) illustre la manière d’implémenter et d’utiliser les composants. Les composants sont fournis avec l’intégralité du code source et peuvent être utilisés tels quels ou comme points de départ pour des composants modifiés ou étendus.
 
