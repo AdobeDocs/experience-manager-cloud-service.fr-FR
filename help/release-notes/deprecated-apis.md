@@ -1,9 +1,9 @@
 ---
 title: API obsolètes
 description: Notes de mise à jour spécifiques aux API obsolètes et supprimées dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
-source-git-commit: 3c4b8f8d9b252cfc90823c475a4e21eefd1dfcf7
+source-git-commit: 788727ce2e6b26f5da647c9ffd8267d958e3b226
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '394'
 ht-degree: 7%
 
 ---
@@ -46,7 +46,7 @@ Vous trouverez ci-dessous une liste exhaustive des API AEM obsolètes et de leur
     <td>org.apache.sling.settings</td>
     <td>AEM en tant que Cloud Service ne prend pas en charge les modes d’exécution ou l’accès au système de fichiers au moment de l’exécution. </td>
     <td>10/5/20</td>
-    <td>6/1/21</td>
+    <td>Fin 2021</td>
   </tr>
   <tr>
     <td>org.apache.fop.apps</td>
