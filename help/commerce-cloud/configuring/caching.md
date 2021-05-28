@@ -2,10 +2,10 @@
 title: Mise en cache et performances
 description: Découvrez les différentes configurations disponibles pour activer GraphQL et la mise en cache de contenu afin d’optimiser les performances de votre implémentation commerciale.
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f0
-source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 99%
+source-wordcount: '842'
+ht-degree: 98%
 
 ---
 
@@ -47,11 +47,11 @@ La mise en cache d’autres composants doit être définie projet par projet, g�
 
 ## Mise en cache de Dispatcher {#dispatcher}
 
-La mise en cache de pages ou de fragments AEM dans le [Dispatcher AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html) constitue une bonne pratique pour un projet AEM. En règle générale, elle repose sur des techniques d’invalidation qui garantissent qu’un contenu modifié dans AEM est correctement mis à jour dans le Dispatcher. Il s’agit d’une fonctionnalité essentielle de la stratégie de mise en cache du Dispatcher AEM.
+La mise en cache de pages ou de fragments AEM dans le [Dispatcher AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) constitue une bonne pratique pour un projet AEM. En règle générale, elle repose sur des techniques d’invalidation qui garantissent qu’un contenu modifié dans AEM est correctement mis à jour dans le Dispatcher. Il s’agit d’une fonctionnalité essentielle de la stratégie de mise en cache du Dispatcher AEM.
 
 Outre le CIF du contenu géré par AEM pur, une page peut généralement afficher des données commerciales récupérées dynamiquement à partir de Magento via GraphQL. Bien que la structure de la page elle-même puisse ne jamais changer, le contenu commercial peut changer, par exemple si certaines données de produit (nom, prix, etc.) changent dans Magento.
 
-Pour que vous soyez certain que les pages CIF peuvent être mises en cache pendant une durée limitée dans le Dispatcher AEM, nous vous recommandons donc d’utiliser l’[invalidation de cache basée sur la durée](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (également appelée mise en cache basée sur TTL) lors de la mise en cache de pages CIF dans le Dispatcher AEM. Cette fonctionnalité peut être configurée en AEM avec le package [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) supplémentaire.
+Pour que vous soyez certain que les pages CIF peuvent être mises en cache pendant une durée limitée dans le Dispatcher AEM, nous vous recommandons donc d’utiliser l’[invalidation de cache basée sur la durée](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (également appelée mise en cache basée sur TTL) lors de la mise en cache de pages CIF dans le Dispatcher AEM. Cette fonctionnalité peut être configurée en AEM avec le package [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) supplémentaire.
 
 Avec la mise en cache TTL, un développeur définit généralement une ou plusieurs durées de mise en cache pour les pages AEM sélectionnées. Ainsi, les pages CIF ne sont mises en cache dans le Dispatcher AEM que pendant la durée configurée et le contenu est fréquemment mis à jour.
 
@@ -63,4 +63,4 @@ Avec la mise en cache TTL, un développeur définit généralement une ou plusie
 
 - [Magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia)
 - [Configuration de la mise en cache GraphQL](https://github.com/adobe/commerce-cif-graphql-client#caching)
-- [AEM Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
+- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
