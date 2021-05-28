@@ -2,14 +2,22 @@
 title: Phase de post-activation
 description: Phase de post-activation
 exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 100%
+source-wordcount: '322'
+ht-degree: 79%
 
 ---
 
 # Post-activation {#post-go-live}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_troubleshooting"
+>title="Résolution des incidents liés à AEM"
+>abstract="Consultez les bonnes pratiques de développement continu et gérez les journaux avec des outils tels que Developer Console et CRXDE Lite pour résoudre les problèmes liés à AEM"
+>additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="Accès aux journaux et leur gestion"
+>additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="Outils de développement AEM as a Cloud Service"
+
 
 Lors de la phase de post-activation, vous devez veiller à nettoyer les fichiers temporaires, revoir les bonnes pratiques de développement continu et gérer les journaux.
 
@@ -43,4 +51,10 @@ Pour savoir comment accéder aux journaux et les gérer via l’interface utilis
 
 ### Assistance supplémentaire {#additional-support}
 
-Si vous avez des questions concernant l’accès à Cloud Service, contactez votre représentant Adobe ou rendez-vous sur le portail d’assistance Adobe AEM CQ.
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_support"
+>title="Aide et assistance"
+>abstract="Contactez notre équipe d’assistance AEM pour obtenir des éclaircissements ou pour répondre à toute question."
+>additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Prise en charge de l’Experience Cloud"
+
+Si vous avez des questions sur l’accès à Cloud Service, contactez votre représentant d’Adobe ou [Assistance pour les Experience Cloud](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) pour plus d’informations.
