@@ -3,10 +3,10 @@ title: Mises à jour de la version d’AEM
 description: 'Mises à jour de la version d’AEM '
 feature: Déploiement
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 100%
+source-wordcount: '395'
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ Les mises à jour de la version d’AEM sont de deux types :
 
 Les mises à jour d’AEM passent par un pipeline de validation de produit intense et entièrement automatisé, impliquant plusieurs étapes permettant de ne pas perturber le service des systèmes en production. Les contrôles d’intégrité servent à surveiller l’état de l’application. Si ces contrôles échouent lors d’une mise à jour d’AEM as a Cloud Service, la version ne sera pas publiée et Adobe examinera les raisons pour lesquelles la mise à jour a provoqué ce comportement inattendu.
 
-[Les tests de produits et les tests fonctionnels du client](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing), qui empêchent que les mises à niveau de produit et les publications de code client interrompent la production, sont également validés lors d’une mise à jour de la version d’AEM.
+[Les tests de produits et les tests fonctionnels du client](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing), qui empêchent que les mises à niveau de produit et les publications de code client interrompent la production, sont également validés lors d’une mise à jour de la version d’AEM.
 
 >[!NOTE]
 >
