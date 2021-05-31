@@ -2,10 +2,10 @@
 title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: dc66eca7b789cf3be1aeae3d63935362ab6f918a
+source-git-commit: 3452f877960a0067aa4eb1041e58a0b0e64340dd
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 14%
+source-wordcount: '957'
+ht-degree: 13%
 
 ---
 
@@ -25,6 +25,10 @@ La section suivante concerne les notes de mise à jour générales de la version
 
 La date de publication de [!DNL Adobe Experience Manager] en tant que Cloud Service 2021.5.0 est le 27 mai 2021.
 La version suivante (2021.6.0) sera publiée le 24 juin 2021.
+
+## Vidéo de publication {#release-video}
+
+Regardez la vidéo [Présentation de la version de mai 2021](https://video.tv.adobe.com/v/333602) pour un résumé des fonctionnalités ajoutées.
 
 ## AEM as a Cloud Service Foundation {#foundation}
 
