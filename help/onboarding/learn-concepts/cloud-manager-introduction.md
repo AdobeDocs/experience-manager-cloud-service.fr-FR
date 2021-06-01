@@ -1,7 +1,7 @@
 ---
 title: Découvrez Cloud Manager
 description: Consultez cette page pour en savoir plus sur Cloud Manager, les programmes Cloud Manager et les environnements.
-source-git-commit: 58d4626da9fccd405cbc32d4a562641359352157
+source-git-commit: 7985512f664dce33aa8d3ccd7e7fdc49e63e81f8
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 19%
@@ -36,7 +36,7 @@ Consultez [Présentation des programmes Sandbox](/help/onboarding/getting-access
 Vos environnements cloud seront créés, accessibles et visualisés via Cloud Manager. Il peut s’agir d’un environnement de production, d’un environnement intermédiaire ou d’un environnement de développement. Les différents environnements prennent en charge différents objectifs et peuvent être utilisés à l’aide de différents pipelines CI/CD. Les environnements sont composés de services tels que :
 
 * [Services de création AEM](#author-services)
-* [Services de publication AEM](publish-services)
+* [Services de publication AEM](#publish-services)
 * [Services de Dispatcher](#dispatcher-services)
 
    >[!NOTE]
