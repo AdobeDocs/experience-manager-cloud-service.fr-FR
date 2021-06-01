@@ -2,10 +2,10 @@
 title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3452f877960a0067aa4eb1041e58a0b0e64340dd
+source-git-commit: 40897b9194de56251da73cbea8718845882f98af
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 13%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -142,7 +142,23 @@ La prochaine version est prévue pour le 10 juin 2021.
 
 ## Outil de transfert de contenu {#content-transfer-tool}
 
-### Date de publication {#release-date-ctt}
+### Date de publication {#release-date-ctt-latest}
+
+La date de publication de l’outil de transfert de contenu v1.4.6 est le 27 mai 2021.
+
+### Nouveautés {#what-is-new-ctt-latest}
+
+* Une nouvelle instruction de journalisation a été ajoutée au journal des erreurs du démarrage rapide si l’utilisateur ne dispose pas de l’autorisation d’exécution sur le fichier exécutable Java.
+
+* Lorsqu’un utilisateur supprime un jeu de migration de l’interface utilisateur de CTT, où une extraction a été effectuée, le dossier `tmp` associé à ce jeu de migration est supprimé afin d’économiser de l’espace.
+
+### Correctifs {#bug-fixes-ctt-latest}
+
+* Lors de la suppression d’un jeu de migration, un message d’erreur peut parfois s’afficher dans l’interface utilisateur de CTT. Ce problème a été résolu.
+
+* Lors de l’exécution du mappage des utilisateurs, si les utilisateurs avaient la même adresse électronique sur la cible et l’hôte, mais des noms d’utilisateur différents, l’ingestion entière échouait. Ce problème a été résolu. Dans un scénario de conflit de ce type, l’utilisateur/le groupe est ignoré et consigné comme conflit dans le fichier journal.
+
+### Date de publication {#release-date-ctt-may}
 
 La date de publication de l’outil de transfert de contenu v1.4.0 est le 11 mai 2021.
 
