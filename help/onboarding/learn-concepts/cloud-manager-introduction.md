@@ -1,10 +1,10 @@
 ---
 title: Découvrez Cloud Manager
 description: Consultez cette page pour en savoir plus sur Cloud Manager, les programmes Cloud Manager et les environnements.
-source-git-commit: 7985512f664dce33aa8d3ccd7e7fdc49e63e81f8
+source-git-commit: 185a933e12ad81689168ad88574019ed219db06d
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 19%
+source-wordcount: '596'
+ht-degree: 20%
 
 ---
 
@@ -21,7 +21,7 @@ Votre administrateur système sera chargé de configurer votre équipe Cloud Man
 
 ## Programmes Cloud Manager {#cloud-manager-programs}
 
-Les programmes Cloud Manager représentent des ensembles d’environnements Cloud Manager prenant en charge des ensembles logiques d’initiatives commerciales, correspondant généralement à un contrat de niveau de service (SLA) acheté. Par exemple, un programme peut représenter les ressources AEM pour prendre en charge les sites Web publics globaux, tandis qu’un autre programme représente un DAM central interne. Regardez cette vidéo pour en savoir plus.
+Les programmes Cloud Manager représentent des ensembles d’environnements Cloud Manager prenant en charge des ensembles logiques d’initiatives commerciales, correspondant généralement à un contrat de niveau de service (SLA) acheté. Par exemple, un programme peut représenter les ressources AEM pour prendre en charge les sites Web publics globaux, tandis qu’un autre programme représente un DAM central interne. Regardez cette [vidéo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en) pour en savoir plus sur l’utilisation des programmes Cloud Manager.
 
 Un utilisateur peut créer un programme **Sandbox** ou de **Production**.
 
@@ -40,7 +40,7 @@ Vos environnements cloud seront créés, accessibles et visualisés via Cloud Ma
 * [Services de Dispatcher](#dispatcher-services)
 
    >[!NOTE]
-   > Reportez-vous à la vidéo [Utilisation des environnements Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en#cloud-manager) pour en savoir plus sur les environnements disponibles. Voir également [Gestion des environnements](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en) pour en savoir plus sur les types d’environnement qu’un utilisateur peut créer et sur la manière dont l’utilisateur peut créer un environnement.
+   > Reportez-vous à la vidéo [Utilisation des environnements Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=fr#cloud-manager) pour en savoir plus sur les environnements disponibles. Voir également [Gestion des environnements](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en) pour en savoir plus sur les types d’environnement qu’un utilisateur peut créer et sur la manière dont l’utilisateur peut créer un environnement.
 
 ### Service AEM Author {#author-services}
 
