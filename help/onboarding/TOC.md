@@ -5,9 +5,9 @@ breadcrumb-title: Guide d’intégration
 user-guide-description: Ce guide résume la procédure à suivre pour commencer à utiliser Experience Manager as a Cloud Service, avec les informations d’accès et des informations importantes sur la protection des données.
 feature: Déploiement
 role: Architect, Developer
-source-git-commit: 9d9cdcb1b7f08fbfbaa4b0ec19f1b039334329ee
+source-git-commit: c430d28d046e312c19a4e96bd4e978fb41f2eed4
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '704'
 ht-degree: 95%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 95%
 + Découvrez les concepts d’intégration {#onboarding-concepts}
    + [Administrateur système](/help/onboarding/learn-concepts/system-administrator.md)
    + [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
-   + [Système Identity Management](/help/onboarding/learn-concepts/ims.md)
+   + [Adobe Identity Management System](/help/onboarding/learn-concepts/ims.md)
    + [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
    + [Présentation de Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
    + [AEM en tant qu’équipe de Cloud Service et profils de produits](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
