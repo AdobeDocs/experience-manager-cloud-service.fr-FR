@@ -2,7 +2,7 @@
 title: Ajout d’annotations de page
 description: Utilisez le mode d’annotation pour laisser des annotations et des schémas sur les pages, car vous utiliserez des pense-bêtes pour faciliter le processus de révision du contenu.
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 5d533354a29237aeafc00e5570ede3ab00b721fd
+source-git-commit: feee00bf5adae0821fe770c8882641994cee2dbf
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 34%
@@ -45,7 +45,7 @@ Les annotations ne sont visibles qu’en mode Annotation .
 
 1. Cliquez ou appuyez sur l’annotation pour ouvrir la boîte de dialogue d’annotation et afficher ses détails.
 
-   ![Détails de l’annotation](/help/sites-cloud/authoring/assets/annotation-sketches.png)
+   ![Détails de l’annotation](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
 1. Pour quitter le mode Annotation et revenir au mode précédemment utilisé, appuyez/cliquez sur le bouton x situé à droite de la barre d’outils supérieure.
 
