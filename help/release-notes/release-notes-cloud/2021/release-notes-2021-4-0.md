@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.4.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2021.4.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: aeee895e4a4b959125d08091619988d0ffa09ace
+source-git-commit: 20bb4eaf8cdf0208b145087d27123c25c6293f9f
 workflow-type: tm+mt
-source-wordcount: '1475'
-ht-degree: 12%
+source-wordcount: '1496'
+ht-degree: 15%
 
 ---
 
@@ -86,6 +86,8 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 * Vous pouvez utiliser des points de suspension comme annotation pour passer en revue les ressources. Lorsqu’une petite ellipse est utilisée, elle chevauche le numéro de l’annotation dans la version imprimée. (CQ-4316792)
 
+* L’option de publication rapide ne s’affiche pas lorsqu’une ressource est sélectionnée dans les résultats de recherche après l’avoir recherchée. (CQ-4317748)
+
 ## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
 ### Nouveautés d’[!DNL Forms] {#what-is-new-forms}
@@ -158,7 +160,7 @@ La prochaine version est prévue pour le 6 mai 2021.
 
 * Le bouton **Gérer Git** s’affiche sur la carte Pipelines même si aucun pipeline n’a été configuré.
 
-* La version de l’archétype de projet AEM utilisé par Cloud Manager a été mise à jour vers la version 27.
+* La version de l’archétype de projet AEM utilisée par Cloud Manager a été mise à jour vers la version 27.
 
 * Les projets dans Adobe I/O Developer Console créés par Cloud Manager ne peuvent plus être modifiés ou supprimés involontairement.
 
@@ -166,9 +168,9 @@ La prochaine version est prévue pour le 6 mai 2021.
 
 * Les variables d’environnement peuvent désormais être incluses dans un service spécifique, qu’il s’agisse de création ou de publication. Nécessite AEM version 2021.03.5104.20210328T185548Z ou ultérieure.
 
-* Le message d’erreur lors du démarrage d’un pipeline lorsqu’un environnement a été supprimé a été clarifié.
+* Le message d’erreur généré lors du démarrage d’un pipeline lorsqu’un environnement a été supprimé a été clarifié.
 
-* Les lots OSGi fournis par les projets Eclipse sont désormais exclus de la règle `CQBP-84--dependencies`.
+* Les lots OSGi fournis par les projets Eclipse sont maintenant exclus de la règle `CQBP-84--dependencies`.
 
 ### Correctifs {#bug-fixes-cm-april}
 
@@ -178,7 +180,7 @@ La prochaine version est prévue pour le 6 mai 2021.
 
 * Les problèmes pour `CloudServiceIncompatibleWorkflowProcess` étaient de gravité incorrecte dans le fichier CSV de problème téléchargeable.
 
-* La vérification `Runmode` produisait des faux positifs sur les noeuds non-dossiers.
+* La vérification `Runmode` produisait des faux positifs sur les nœuds n’appartenant pas au dossier.
 
 ## Analyseur de bonnes pratiques {#best-practices-analyzer}
 
