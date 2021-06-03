@@ -1,9 +1,9 @@
 ---
 title: AEM en tant qu’équipe de Cloud Service et profils de produit
 description: Consultez cette page pour en savoir plus sur AEM en tant qu’équipe de Cloud Service et les profils de produit.
-source-git-commit: 312b1ce7dc660d1bb4fe199be0e7403069d30161
+source-git-commit: fbf2ddff7d3b54f76afbd2431a6b5d5772620fd3
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '655'
 ht-degree: 1%
 
 ---
@@ -11,14 +11,17 @@ ht-degree: 1%
 
 # AEM en tant qu’équipe de Cloud Service et profils de produit {#product-profiles}
 
-AEM en tant que Cloud Service est l’offre entièrement native du cloud qui fournit AEM en tant que service. Elle fournit l’AEM de manière native au cloud, avec de nouveaux attributs comme toujours activé, toujours à jour, toujours sécurisé et toujours à grande échelle. En même temps, elle conserve la proposition de valeur principale que AEM fournit en tant que plateforme personnalisable aux clients et permet aux équipes de niveau entreprise d’intégrer dans leur procédure de développement et de diffusion. Pour en savoir plus sur AEM en tant que Cloud Service, voir [Présentation d’Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=fr) .
+## Profils de produit {#profiles}
 
-Votre AEM en tant que membre de l’équipe de Cloud Service sera ajoutée et affectée à un ou plusieurs des profils de produit suivants via Admin Console lors de l’intégration.
+Lorsque vous accordez à un utilisateur l’accès à une solution d’Adobe spécifique, vous ne souhaitez pas nécessairement lui accorder un accès complet. Les profils de produit permettent à chaque solution d’avoir son propre jeu d’autorisations utilisateur. Elles sont disponibles et accessibles via Adobe Admin Console.
 
+Pour en savoir plus sur les [profils de produit AEM en tant que Cloud Service](#aem-product-profiles) et [profils de produit Cloud Manager](#cloud-manager-product-profiles), consultez comment ces profils fonctionnent de concert pendant la configuration de votre équipe.
 
 ## Profils de produit AEM en tant que Cloud Service {#aem-product-profiles}
 
-Les profils de produit suivants sont disponibles dans AEM en tant qu’équipe de Cloud Service :
+AEM en tant que Cloud Service est l’offre entièrement native du cloud qui fournit AEM en tant que service. Elle fournit l’AEM de manière native au cloud, avec de nouveaux attributs comme toujours activé, toujours à jour, toujours sécurisé et toujours à grande échelle. En même temps, elle conserve la proposition de valeur principale que AEM fournit en tant que plateforme personnalisable aux clients et permet aux équipes de niveau entreprise d’intégrer dans leur procédure de développement et de diffusion. Pour en savoir plus sur AEM en tant que Cloud Service, voir [Présentation d’Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=fr) .
+
+Votre AEM en tant que membre de l’équipe de Cloud Service sera ajoutée et affectée à un ou plusieurs des profils de produit suivants via Admin Console lors de l’intégration.
 
 * **Administrateur AEM** : Un administrateur AEM est généralement affecté aux développeurs, en particulier les développeurs qui devront avoir accès aux environnements de développement, par exemple. Le profil de produit Administrateurs AEM sera utilisé pour accorder des privilèges d’administrateur à l’instance AEM associée.
 
@@ -52,4 +55,4 @@ Votre équipe Cloud Manager comprend au moins :
 * Un développeur
 
    >[!NOTE]
-   >Pour pouvoir accéder à AEM en tant que Cloud Service, les utilisateurs doivent appartenir à l’un des deux profils de produit `AEM Users-xxx` ou `AEM Administrators-xxx`. Vous devez disposer d’autorisations sur l’instance. Les autorisations nécessaires pour administrer Cloud Manager associé ne seront pas suffisantes.
+   >Pour pouvoir accéder à AEM en tant que Cloud Service, les utilisateurs doivent appartenir à l’un des deux profils de produit `AEM Users-xxx` ou `AEM Administrators-xxx`, vous devez disposer d’autorisations sur l’instance. Les autorisations nécessaires pour administrer Cloud Manager associé ne seront pas suffisantes.
