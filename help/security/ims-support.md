@@ -2,10 +2,10 @@
 title: Prise en charge IMS d’Adobe Experience Manager as a Cloud Service
 description: Prise en charge IMS d’Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: c71a27961b469f8f729394b80a804321faf597f4
 workflow-type: tm+mt
 source-wordcount: '2007'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -163,7 +163,7 @@ Pour les autres utilisateurs, la connexion via IMS peut être utilisée une fois
 
 >[!NOTE]
 >
->Tout utilisateur peut être créé dans IMS à l’aide d’un Adobe ID ou d’un Federated ID. Si un utilisateur est configuré à l’aide d’un Adobe ID, il est authentifié lors de la connexion à l’aide du fournisseur d’identité de son entreprise.
+>Tout utilisateur peut être créé dans IMS à l’aide d’un Adobe ID ou d’un Federated ID. Si un utilisateur est configuré à l’aide de Federated ID, il est authentifié à l’aide du fournisseur d’identité de sa société pour se connecter.
 
 Il est alors redirigé vers l’écran de connexion IMS et il doit saisir ses informations d’identification :
 
