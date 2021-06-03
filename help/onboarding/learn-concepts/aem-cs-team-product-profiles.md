@@ -1,9 +1,9 @@
 ---
 title: AEM en tant qu’équipe de Cloud Service et profils de produit
 description: Consultez cette page pour en savoir plus sur AEM en tant qu’équipe de Cloud Service et les profils de produit.
-source-git-commit: 529b70daf58a98fd5fcbe758a2c86ac8322f945b
+source-git-commit: 02e954d294100a17fff327742fa442fc4759860c
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '666'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 ## Profils de produit {#profiles}
 
-Lorsque vous accordez à un utilisateur l’accès à une solution d’Adobe spécifique, vous ne souhaitez pas nécessairement lui accorder un accès complet. Les profils de produit permettent à chaque solution d’avoir son propre jeu d’autorisations utilisateur. Elles sont disponibles et accessibles via Adobe Admin Console.
+Lorsque vous accordez à un utilisateur l’accès à une solution d’Adobe spécifique, vous ne souhaitez pas nécessairement lui accorder un accès complet. Les profils de produit permettent à chaque solution d’avoir son propre jeu d’autorisations utilisateur. Elles sont disponibles et accessibles à partir de [Adobe Admin Console](/help/onboarding/learn-concepts/admin-console.md).
 
 Pour en savoir plus sur les [profils de produit AEM en tant que Cloud Service](#aem-product-profiles) et [profils de produit Cloud Manager](#cloud-manager-product-profiles), consultez comment ces profils fonctionnent de concert pendant la configuration de votre équipe.
 
@@ -40,13 +40,13 @@ Cloud Manager dispose de profils de produit préconfigurés ou, plus simplement,
 
 Chacun des profils de produit est associé à des autorisations spécifiques. Par exemple, si vous êtes dans le rôle d’un :
 
-* **Propriétaire de l’entreprise**, vous êtes autorisé à ajouter un nouveau programme ou à modifier un programme, à ajouter ou mettre à jour un environnement, à ajouter/modifier/supprimer le pipeline et à exécuter n’importe quel pipeline, ainsi qu’à déployer le code pour AEM la qualité de l’environnement ou du code.
+* **Propriétaire de l’entreprise**, vous avez l’autorisation d’ajouter un nouveau programme ou de modifier un programme, d’ajouter ou de mettre à jour un environnement, d’ajouter/modifier/supprimer le pipeline et d’exécuter n’importe quel pipeline, ainsi que de déployer du code pour AEM la qualité de l’environnement ou du code.
 
 * **Deployment Manager** vous permet d’ajouter ou de mettre à jour un environnement, d’exécuter n’importe quel pipeline et de déployer du code dans AEM environnement ou qualité du code.
 
 * **Développeur**, vous êtes autorisé à générer un jeton d’accès personnel pour accéder à Git.
 
-* **Gestionnaire de programmes**, vous êtes autorisé à accéder à Git.
+* **Gestionnaire de programmes**, vous avez l’autorisation de planifier des pipelines, de remplacer les points de contrôle qualité à 3 niveaux et de fournir l’approbation de production.
 
 Un utilisateur peut être affecté à plusieurs profils de produit. Par exemple, l’attribution des rôles Propriétaire de l’entreprise et Responsable de déploiement à un utilisateur leur donne la combinaison ou la somme de ces autorisations.
 
@@ -57,4 +57,4 @@ Votre équipe Cloud Manager comprend au moins :
 * Un développeur
 
    >[!NOTE]
-   >Pour pouvoir accéder à AEM en tant que Cloud Service, les utilisateurs doivent appartenir à l’un des deux profils de produit `AEM Users-xxx` ou `AEM Administrators-xxx`, vous devez disposer d’autorisations sur l’instance. Les autorisations nécessaires pour administrer Cloud Manager associé ne seront pas suffisantes.
+   >Pour pouvoir accéder à AEM en tant que Cloud Service, les utilisateurs doivent appartenir à l’un des deux profils de produit tels que `AEM Users` ou `AEM Administrators`. Vous devez disposer d’autorisations sur l’instance, mais les autorisations pour administrer Cloud Manager associé ne seront pas suffisantes.
