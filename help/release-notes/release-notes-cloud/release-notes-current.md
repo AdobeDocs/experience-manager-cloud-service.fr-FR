@@ -2,10 +2,10 @@
 title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 40897b9194de56251da73cbea8718845882f98af
+source-git-commit: 181cda0c3f4ec48262ccbe2743ba75bb0d213934
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1349'
+ht-degree: 20%
 
 ---
 
@@ -97,6 +97,29 @@ Regardez la vidéo [Présentation de la version de mai 2021](https://video.tv.ad
    * Asie-Pacifique 24 juin 2021.
 
 
+## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
+
+### Nouveautés d’[!DNL Forms] {#what-is-new-forms}
+
+* **Aide contextuelle** : Ajout d’une aide contextuelle pour l’éditeur de formulaires adaptatifs, l’éditeur de modèles et l’éditeur de thèmes afin d’aider les auteurs à mieux comprendre les différentes fonctionnalités des éditeurs.
+* **Messages d’erreur dans le navigateur** Propriétés : Ajout de messages d’erreur pour chaque propriété dans le navigateur Propriétés du Forms adaptatif . Ces messages aident à comprendre les valeurs autorisées pour un champ.
+
+### Fonctionnalité bêta à venir de [!DNL Forms] {#what-is-new-forms-prerelease}
+
+Service Output as a Cloud : Le service Output vous permet de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode batch synchrone et asynchrone. Le service Output permet de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
+
+* Générer des documents de formulaire définitifs en complétant des fichiers de modèle avec des données XML.
+* Générez des formulaires de sortie dans divers formats, y compris les flux d’impression PDF non interactifs.
+* Générer des fichiers PDF d’impression à partir de fichiers PDF de formulaire XFA.
+
+Vous pouvez écrire sur formscsbeta@adobe.com pour vous inscrire au programme bêta.
+
+### Correctifs d’[!DNL Forms] {#forms-bugs-fixed}
+
+* Dans une étape Affecter une tâche des processus AEM Forms, lorsque vous remplacez l’icône par défaut des boutons d’action par une icône corail, le processus cesse de fonctionner et consigne une exception. Le workflow fonctionne comme prévu lorsque des icônes par défaut sont utilisées.
+* Dans le calque de mise en page, lorsque vous modifiez le nombre de colonnes, ouvrez le calque d’édition et faites glisser certains composants dans un panneau, les zones bleues carrées apparaissent dans la zone de contenu de l’éditeur de formulaires adaptatifs et l’éditeur ne répond plus.
+* Le message d’erreur d’une option d’éditeur de règles liée à la fourniture de l’URL d’une ressource adaptative ou externe est trop long et n’est pas convivial.
+
 ## Cloud Manager {#cloud-manager}
 
 Cette section présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.5.0.
@@ -108,9 +131,9 @@ La prochaine version est prévue pour le 10 juin 2021.
 
 ### Nouveautés {#what-is-new-may}
 
-* La règle de qualité PackageOverlaps détecte désormais les cas où le même package a été déployé plusieurs fois, c’est-à-dire dans plusieurs emplacements incorporés, dans le même ensemble de packages déployé.
+* La règle de qualité PackageOverlaps détecte désormais les cas dans lesquels le même package a été déployé plusieurs fois, c’est-à-dire dans de multiples emplacements incorporés, dans le même ensemble de packages déployé.
 
-* Le point de terminaison du référentiel dans l’API publique inclut désormais l’URL Git.
+* Le point d’entrée du référentiel dans l’API publique inclut désormais l’URL Git.
 
 * Le journal de déploiement téléchargé par un utilisateur de Cloud Manager sera plus informatif et comprendra désormais des détails sur les échecs et les scénarios de succès.
 
@@ -118,7 +141,7 @@ La prochaine version est prévue pour le 10 juin 2021.
 
 * Le module complémentaire Commerce peut désormais être appliqué aux programmes Sandbox pendant le workflow Modifier le programme .
 
-* L’expérience de modification du programme a été actualisée.
+* L’expérience de l’action Modifier le programme a été actualisée.
 
 * Le tableau Noms de domaine de la page Détails de l’environnement affiche jusqu’à 250 noms de domaine par pagination.
 
@@ -132,11 +155,11 @@ La prochaine version est prévue pour le 10 juin 2021.
 
 * Au lieu de supprimer des variables &quot;supprimées&quot;, l’API des variables de pipelines ne les marquerait que avec le statut **DELETED**.
 
-* Certains problèmes de qualité du type d’odeur de code affectaient incorrectement l’évaluation de fiabilité.
+* Certains problèmes de qualité de code de type smell avaient une incidence incorrecte sur la cote de fiabilité.
 
 * Comme les domaines génériques ne sont pas pris en charge, l’interface utilisateur ne permet pas à l’utilisateur d’envoyer un domaine de caractères génériques.
 
-* Lorsqu’une exécution de pipeline était lancée entre minuit et 1h du matin (UTC), il n’était pas garanti que la version d’artefact générée par Cloud Manager était supérieure à une version créée le jour précédent.
+* Lorsqu’une exécution de pipeline était démarrée entre minuit et 1 h UTC, il n’était pas garanti que la version d’artefact générée par Cloud Manager soit supérieure à la version créée le jour précédent.
 
 * Lors de la configuration du programme Sandbox, une fois que le projet avec un exemple de code a été créé, Gérer Git s’affiche sous la forme d’un lien à partir de la carte principale de la page Aperçu.
 
