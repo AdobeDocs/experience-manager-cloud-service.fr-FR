@@ -4,9 +4,9 @@ description: Découvrez comment utiliser la vidéo dans Dynamic Media.
 feature: Profils vidéo
 role: Business Practitioner
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 94ee4dde39a59dff0b351a36dacf66d9f4b22872
 workflow-type: tm+mt
-source-wordcount: '9475'
+source-wordcount: '9471'
 ht-degree: 68%
 
 ---
@@ -499,7 +499,7 @@ Google modifie régulièrement son interface utilisateur. Par conséquent, les �
 
 1. Appuyez sur **[!UICONTROL De quels identifiants ai-je besoin ?]**
 1. Sur la page **[!UICONTROL Ajouter des identifiants au projet]**, à l’étape 2, sous l’en-tête **[!UICONTROL Créer un ID client OAuth 2.0]**, dans le champ Nom, saisissez un nom unique si vous le souhaitez. Vous pouvez également utiliser le nom par défaut spécifié par Google.
-1. Sous l’en-tête **[!UICONTROL Origines JavaScript™ autorisées]** , dans le champ de texte, saisissez le chemin suivant, en substituant vos propres domaine et numéro de port dans le chemin, puis appuyez sur **[!UICONTROL Entrée]** pour ajouter le chemin à la liste :
+1. Sous l’en-tête **[!UICONTROL Origines JavaScript autorisées]** , dans le champ de texte, saisissez le chemin suivant, en substituant vos propres domaine et numéro de port dans le chemin, puis appuyez sur **[!UICONTROL Entrée]** pour ajouter le chemin à la liste :
 
    `https://<servername.domain>:<port_number>`
 
@@ -607,7 +607,7 @@ Laissez la page Créer une configuration YouTube ouverte ; vous y reviendrez dan
 1. Revenez à la boîte de dialogue Paramètres du compte YouTube. Dans le champ **[!UICONTROL Configuration JSON]**, collez le texte JSON.
 1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer]**.
 
-   Vous allez maintenant configurer les canaux YouTube dans Experience Manager.
+   Configurez maintenant les canaux YouTube en Experience Manager.
 
 1. Appuyez sur **[!UICONTROL Ajouter un canal]**.
 1. Dans la boîte de dialogue Paramètres de chaîne, saisissez le nom de la chaîne que vous avez créée lors de la tâche **[!UICONTROL Ajout d’une ou plusieurs chaînes YouTube]** précédemment.
@@ -623,7 +623,7 @@ Laissez la page Créer une configuration YouTube ouverte ; vous y reviendrez dan
 
 1. Appuyez sur **[!UICONTROL Autoriser]**.
 
-   Vous allez maintenant configurer des balises pour la publication.
+   Configurez maintenant des balises pour la publication.
 
 1. **[!UICONTROL Configuration de balises pour la publication]** : sur la page Services cloud > YouTube, appuyez sur l’icône en forme de crayon pour modifier la liste des balises que vous souhaitez utiliser.
 1. Pour afficher la liste des balises disponibles dans Experience Manager, appuyez sur l’icône de liste déroulante (flèche pointant vers le bas).
@@ -653,7 +653,7 @@ Laissez la boîte de dialogue Paramètres du compte YouTube ouverte. vous y revi
 1. Revenez à la boîte de dialogue Paramètres du compte YouTube. Dans le champ **[!UICONTROL Configuration JSON]**, collez le texte JSON.
 1. Appuyez sur **[!UICONTROL OK]**.
 
-   Vous allez maintenant configurer les canaux YouTube dans Experience Manager.
+   Configurez maintenant les canaux YouTube en Experience Manager.
 
 1. À droite des **[!UICONTROL Canaux disponibles]**, appuyez sur **+** (icône représentant un signe plus).
 1. Dans la boîte de dialogue Paramètres de chaîne YouTube, dans le champ Titre, saisissez le nom de la chaîne que vous avez créée lors de la tâche **[!UICONTROL Ajout d’une ou plusieurs chaînes YouTube]** précédemment.
@@ -669,7 +669,7 @@ Laissez la boîte de dialogue Paramètres du compte YouTube ouverte. vous y revi
 
 1. Appuyez sur **[!UICONTROL Autoriser]**.
 
-   Vous allez maintenant configurer des balises pour la publication.
+   Configurez maintenant des balises pour la publication.
 
 1. **[!UICONTROL Configuration de balises pour la publication]** : sur la page Services cloud > YouTube, appuyez sur l’icône en forme de crayon pour modifier la liste des balises que vous souhaitez utiliser.
 1. Pour afficher la liste des balises disponibles dans Experience Manager, appuyez sur l’icône de liste déroulante (flèche pointant vers le bas).
@@ -1057,7 +1057,7 @@ Les sous-titres offrent également une meilleure accessibilité en utilisant des
 >[!NOTE]
 Le lecteur vidéo utilisé doit prendre en charge l’affichage des sous-titres.
 
-Dynamic Media peut convertir les fichiers de sous-titres au format JSON (JavaScript™ Object Notation). Cette conversion signifie que vous pouvez intégrer le texte JSON dans une page web sous forme de transcription masquée complète de la vidéo. Les moteurs de recherche peuvent ensuite analyser/indexer le contenu pour faciliter la découverte des vidéos et donner aux clients plus de détails sur le contenu vidéo.
+Dynamic Media peut convertir les fichiers de sous-titres au format JSON (JavaScript Object Notation). Cette conversion signifie que vous pouvez intégrer le texte JSON dans une page web sous forme de transcription masquée complète de la vidéo. Les moteurs de recherche peuvent ensuite analyser/indexer le contenu pour faciliter la découverte des vidéos et donner aux clients plus de détails sur le contenu vidéo.
 
 Voir [Diffusion de contenu statique (sans image)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html?lang=fr#image-serving-api) pour plus d’informations sur l’utilisation de la fonction JSON dans une URL.
 
