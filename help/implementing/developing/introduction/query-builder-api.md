@@ -2,10 +2,10 @@
 title: API Query Builder
 description: La fonctionnalité du Query Builder Asset Share est exposée via une API Java et une API REST.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '2009'
-ht-degree: 92%
+source-wordcount: '2039'
+ht-degree: 91%
 
 ---
 
@@ -13,11 +13,11 @@ ht-degree: 92%
 
 Query Builder offre un moyen simple pour effectuer des requêtes sur le référentiel de contenu d’AEM. La fonctionnalité est exposée par le biais d’une API Java et d’une API REST. Ce document décrit ces API.
 
-Query Builder côté serveur ([`QueryBuilder`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html)) accepte une description de requête, crée et exécute une requête XPath, filtre éventuellement le jeu de résultats et, si vous le souhaitez, extrait également des facettes.
+Query Builder côté serveur ([`QueryBuilder`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html)) accepte une description de requête, crée et exécute une requête XPath, filtre éventuellement le jeu de résultats et, si vous le souhaitez, extrait également des facettes.
 
-La description de requête correspond simplement à un ensemble de prédicats ([`Predicate`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/search/Predicate.html)). Par exemple, un prédicat de texte intégral correspond à la fonction `jcr:contains()` dans XPath.
+La description de requête correspond simplement à un ensemble de prédicats ([`Predicate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/Predicate.html)). Par exemple, un prédicat de texte intégral correspond à la fonction `jcr:contains()` dans XPath.
 
-Pour chaque type de prédicat, il existe un composant Évaluateur ([`PredicateEvaluator`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) qui sait comment en effectuer la gestion pour XPath, pour le filtrage et pour l’extraction de facettes. Il est très facile de créer des évaluateurs personnalisés, qui sont activés via l’exécutable du composant OSGi.
+Pour chaque type de prédicat, il existe un composant Évaluateur ([`PredicateEvaluator`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) qui sait comment en effectuer la gestion pour XPath, pour le filtrage et pour l’extraction de facettes. Il est très facile de créer des évaluateurs personnalisés, qui sont activés via l’exécutable du composant OSGi.
 
 L’API REST permet d’accéder exactement aux mêmes fonctionnalités via HTTP, les réponses étant envoyées au format JSON.
 
@@ -125,7 +125,7 @@ Par défaut, Query Builder fournit également le nombre d’accès. Suivant la 
 
 L’interface utilisateur peut, par exemple, adapter la méthode suivante :
 
-* Obtenez et affichez le nombre exact d’accès totaux ([SearchResult.getTotalMatches()](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) ou total dans la réponse `querybuilder.json`) qui est inférieur ou égal à 100 ;
+* Obtenez et affichez le nombre exact d’accès totaux ([SearchResult.getTotalMatches()](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) ou total dans la réponse `querybuilder.json`) qui est inférieur ou égal à 100 ;
 * Définissez `guessTotal` sur 100 tout en effectuant l’appel vers Query Builder.
 
 * La réponse peut générer le résultat suivant :
@@ -347,9 +347,9 @@ p.nodedepth=5
 
 Pour plus de prédicats, consultez la [page de référence des prédicats de Query Builder](query-builder-predicates.md).
 
-Vous pouvez également consulter le [JavaDoc relatif aux `PredicateEvaluator`classes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html). Ce JavaDoc contient la liste des propriétés que vous pouvez utiliser.
+Vous pouvez également consulter le [JavaDoc relatif aux `PredicateEvaluator`classes](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html). Ce JavaDoc contient la liste des propriétés que vous pouvez utiliser.
 
-Le préfixe du nom de classe (par exemple, `similar` dans [`SimilarityPredicateEvaluator`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)), est la *propriété principale* de la classe. Cette propriété est également le nom du prédicat à utiliser dans la requête (en minuscules).
+Le préfixe du nom de classe (par exemple, `similar` dans [`SimilarityPredicateEvaluator`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)), est la *propriété principale* de la classe. Cette propriété est également le nom du prédicat à utiliser dans la requête (en minuscules).
 
 Pour ces propriétés principales, vous pouvez raccourcir la requête et utiliser `similar=/content/en` au lieu de la variante complète `similar.similar=/content/en`. La forme complète doit être utilisée pour toutes les propriétés non principales d’une classe.
 
@@ -421,13 +421,13 @@ Les requêtes peuvent être stockées dans le référentiel de manière à pouvo
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
 ```
 
-Si vous utilisez la méthode [`QueryBuilder#storeQuery`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-), la `Query` donnée est stockée dans le référentiel sous la forme d’un fichier ou d’une propriété suivant la valeur de l’argument `createFile`. L’exemple suivant illustre l’enregistrement d’une `Query` sous `/mypath/getfiles` en tant que fichier :
+Si vous utilisez la méthode [`QueryBuilder#storeQuery`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-), la `Query` donnée est stockée dans le référentiel sous la forme d’un fichier ou d’une propriété suivant la valeur de l’argument `createFile`. L’exemple suivant illustre l’enregistrement d’une `Query` sous `/mypath/getfiles` en tant que fichier :
 
 ```java
 builder.storeQuery(query, "/mypath/getfiles", true, session);
 ```
 
-Toutes les requêtes stockées précédemment peuvent être chargées à partir du référentiel en utilisant la méthode [`QueryBuilder#loadQuery`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html#loadQuery-java.lang.String-javax.jcr.Session-) :
+Toutes les requêtes stockées précédemment peuvent être chargées à partir du référentiel en utilisant la méthode [`QueryBuilder#loadQuery`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html#loadQuery-java.lang.String-javax.jcr.Session-) :
 
 ```java
 Query loadQuery(String path, Session session) throws RepositoryException, IOException
@@ -521,10 +521,10 @@ com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 
 | **Javadoc** | **Description** |
 |---|---|
-| [com.day.cq.search](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/search/package-summary.html) | API Query Builder et Query de base |
-| [com.day.cq.search.result](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/search/result/package-summary.html) | API Result |
-| [com.day.cq.search.facets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/search/facets/package-summary.html) | Facettes |
-| [com.day.cq.search.facets.buckets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/search/facets/buckets/package-summary.html) | Intervalles (contenus dans les facettes) |
-| [com.day.cq.search.eval](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/package-summary.html) | Évaluateurs de prédicats |
-| [com.day.cq.search.facets.extractors](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Extracteurs de facettes (pour les évaluateurs) |
-| [com.day.cq.search.writer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/search/writer/package-summary.html) | JSON Result Hit Writer pour servlet Query Builder (`/bin/querybuilder.json`) |
+| [com.day.cq.search](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/package-summary.html) | API Query Builder et Query de base |
+| [com.day.cq.search.result](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/result/package-summary.html) | API Result |
+| [com.day.cq.search.facets](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/facets/package-summary.html) | Facettes |
+| [com.day.cq.search.facets.buckets](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/facets/buckets/package-summary.html) | Intervalles (contenus dans les facettes) |
+| [com.day.cq.search.eval](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/package-summary.html) | Évaluateurs de prédicats |
+| [com.day.cq.search.facets.extractors](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Extracteurs de facettes (pour les évaluateurs) |
+| [com.day.cq.search.writer](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/writer/package-summary.html) | JSON Result Hit Writer pour servlet Query Builder (`/bin/querybuilder.json`) |
