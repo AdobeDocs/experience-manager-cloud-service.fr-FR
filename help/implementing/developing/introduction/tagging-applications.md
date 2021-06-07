@@ -2,10 +2,10 @@
 title: Création d’un balisage dans des applications AEM
 description: Utiliser des balises ou étendre des balises par programmation dans une application AEM personnalisée
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 95%
+source-wordcount: '758'
+ht-degree: 97%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 95%
 
 Dans un contexte de programmation par balises ou d’extension de balises dans une application AEM personnalisée, ce document décrit l’utilisation de
 
-* [l’API de balisage ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html)
+* [l’API de balisage ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html)
 
 qui interagit avec le
 
@@ -26,7 +26,7 @@ Pour plus d’informations sur le balisage :
 
 ## Vue d’ensemble de l’API de balisage {#overview-of-the-tagging-api}
 
-L’implémentation du [cadre de balisage](tagging-framework.md) dans AEM permet la gestion des balises et du contenu des balises à l’aide de l’API JCR. `TagManager` garantit que les balises saisies en tant que valeurs dans la propriété de table de chaînes `cq:tags` ne sont pas dupliquées, supprime les `TagID` pointant vers des balises non existantes et met à jour les `TagID` pour les balises déplacées ou fusionnées. `TagManager` utilise un écouteur d’observation JCR qui annule les modifications incorrectes. Les principales classes sont stockées dans le module [com.day.cq.tagging](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html) :
+L’implémentation du [cadre de balisage](tagging-framework.md) dans AEM permet la gestion des balises et du contenu des balises à l’aide de l’API JCR. `TagManager` garantit que les balises saisies en tant que valeurs dans la propriété de table de chaînes `cq:tags` ne sont pas dupliquées, supprime les `TagID` pointant vers des balises non existantes et met à jour les `TagID` pour les balises déplacées ou fusionnées. `TagManager` utilise un écouteur d’observation JCR qui annule les modifications incorrectes. Les principales classes sont stockées dans le module [com.day.cq.tagging](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html) :
 
 * `JcrTagManagerFactory` – renvoie une implémentation JCR d’un `TagManager`. C’est l’implémentation de référence de l’API de balisage.
 * `TagManager` – permet de résoudre et de créer des balises par chemins et noms.
@@ -142,13 +142,13 @@ Par exemple, lorsque la balise **Animals** est ajoutée à la page **Products**,
 
 L’API côté serveur dispose de méthodes liées à `title` localisées :
 
-* [`com.day.cq.tagging.Tag`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/tagging/Tag.html)
+* [`com.day.cq.tagging.Tag`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/Tag.html)
    * `getLocalizedTitle(Locale locale)`
    * `getLocalizedTitlePaths()`
    * `getLocalizedTitles()`
    * `getTitle(Locale locale)`
    * `getTitlePath(Locale locale)`
-* [`com.day.cq.tagging.TagManager`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/tagging/TagManager.html)
+* [`com.day.cq.tagging.TagManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/TagManager.html)
    * `canCreateTagByTitle(String tagTitlePath, Locale locale)`
    * `createTagByTitle(String tagTitlePath, Locale locale)`
    * `resolveByTitle(String tagTitlePath, Locale locale)`
