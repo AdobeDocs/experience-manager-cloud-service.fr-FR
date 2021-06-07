@@ -3,9 +3,9 @@ title: Mise en cache dans AEM as a Cloud Service
 description: 'Mise en cache dans AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1530'
 ht-degree: 98%
 
 ---
@@ -124,7 +124,7 @@ Avant AEM as a Cloud Service, il existait deux manières d’invalider le cache 
 2. Appeler directement l’API `invalidate.cache` (par exemple, `POST /dispatcher/invalidate.cache`)
 
 L’approche d’API `invalidate.cache` du Dispatcher ne sera plus prise en charge puisqu’elle ne concerne qu’un nœud Dispatcher spécifique. AEM as a Cloud Service fonctionne au niveau du service, et non au niveau du nœud individuel. Les instructions d’invalidation figurant sur la page [Invalidation des pages mises en cache à partir d’AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) ne sont donc plus valides pour AEM as a Cloud Service.
-À la place, l’agent de vidage de réplication doit être utilisé. Cette opération peut être réalisée en utilisant l’API de réplication. La documentation de l’API de réplication est disponible [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/replication/Replicator.html). Pour obtenir un exemple de vidage du cache, consultez la [page d’exemple de l’API](https://helpx.adobe.com/fr/experience-manager/using/aem64_replication_api.html), et plus particulièrement, l’exemple `CustomStep` qui émet une action de réplication de type ACTIVATE pour tous les agents disponibles. Le point d’entrée de l’agent de vidage n’est pas configurable, mais il est préconfiguré pour pointer sur le Dispatcher, conformément au service de publication exécutant l’agent de vidage. L’agent de vidage peut généralement être déclenché par des événements ou des workflows OSGi.
+À la place, l’agent de vidage de réplication doit être utilisé. Cette opération peut être réalisée en utilisant l’API de réplication. La documentation de l’API de réplication est disponible [ici](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/Replicator.html). Pour obtenir un exemple de vidage du cache, consultez la [page d’exemple de l’API](https://helpx.adobe.com/fr/experience-manager/using/aem64_replication_api.html), et plus particulièrement, l’exemple `CustomStep` qui émet une action de réplication de type ACTIVATE pour tous les agents disponibles. Le point d’entrée de l’agent de vidage n’est pas configurable, mais il est préconfiguré pour pointer sur le Dispatcher, conformément au service de publication exécutant l’agent de vidage. L’agent de vidage peut généralement être déclenché par des événements ou des workflows OSGi.
 
 Le schéma ci-dessous illustre cela.
 
