@@ -1,0 +1,50 @@
+---
+title: Ajout d’un module complémentaire Screens à un programme existant dans Cloud Manager
+description: Cette page décrit l’ajout d’un module complémentaire Screens à un programme existant dans Cloud Manager pour Screens en tant que Cloud Service.
+hide: true
+hidefromtoc: true
+index: false
+source-git-commit: 9d3c43f863cff3117186cd6bcf358a7069a6b255
+workflow-type: tm+mt
+source-wordcount: '267'
+ht-degree: 2%
+
+---
+
+
+# Ajout d’un module complémentaire Screens à un programme existant dans Cloud Manager {#adding-screens-program}
+
+Cette section décrit comment ajouter Screens en tant que module complémentaire à un programme existant dans Cloud Manager.
+
+>[!NOTE]
+>Pour en savoir plus sur les programmes Cloud Manager, voir [Présentation des programmes et des types de programme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) .
+
+## Intention {#objective}
+
+Les étapes suivantes vous permettront d’apprendre à ajouter un module complémentaire Screens à un programme existant dans Cloud Manager.
+
+## Procédure d’ajout d’un module complémentaire Screens à un programme existant dans Cloud Manager {#edit-programs-screens-cloud}
+
+Pour ajouter Screens en tant que module complémentaire à un programme existant, procédez comme suit :
+
+1. Accéder à Cloud Manager.
+
+   >[!NOTE]
+   >Pour en savoir plus sur Cloud Manager, voir [Présentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en) .
+
+1. Accédez à votre projet et cliquez sur l’option **Modifier le programme** de la page **Aperçu** de Cloud Manager.
+
+   ![image](/help/screens-cloud/assets/onboarding/add-onexisting1.png)
+
+   >[!NOTE]
+   >La page **Modifier le programme** affiche deux onglets **Général** et **Solutions et modules complémentaires**.
+
+1. L’onglet **Solutions et modules complémentaires** affiche des options, telles que Sites, Ressources et Screens. Sélectionnez l’option de module complémentaire **Screens**, comme illustré dans la figure ci-dessous.
+
+   ![image](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
+
+1. Cliquez sur **Mettre à jour** une fois que vous avez sélectionné vos options.
+
+## Suite {#whats-next}
+
+Une fois que vous avez appris à ajouter Screens en tant que module complémentaire à un programme Cloud Manager existant et que votre programme s’affiche sous Programmes et produits de Cloud Manager, vous êtes prêt à passer à l’étape suivante du processus d’intégration, à savoir [Création d’une branche pour votre projet dans Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).
