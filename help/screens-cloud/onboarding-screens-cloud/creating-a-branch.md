@@ -1,0 +1,48 @@
+---
+title: Création d'une branche
+description: Cette page décrit la création d’une branche dans Cloud Manager pour Screens en tant que Cloud Service.
+hide: true
+hidefromtoc: true
+index: false
+source-git-commit: f1a21aa8ff832bd8fa460a2ef8013b8e3d1acfde
+workflow-type: tm+mt
+source-wordcount: '226'
+ht-degree: 2%
+
+---
+
+
+# Création d’une branche dans Cloud Manager {#create-branch-screens-cloud}
+
+Cette section décrit comment créer une branche pour votre programme dans Cloud Manager.
+
+>[!NOTE]
+>Reportez-vous à [Utilisation de l’assistant dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/using-the-wizard.html?lang=en) pour savoir comment créer un projet d’application AEM dans Cloud Manager à l’aide de l’assistant.
+
+## Intention {#objective}
+
+La section suivante décrit comment créer une branche pour votre programme dans Cloud Manager à l’aide de l’assistant.
+
+## Procédure de création d’une branche pour votre projet Screens dans Cloud Manager {#steps-branch-creation}
+
+1. Accédez à Cloud Manager et sélectionnez l’icône pour accéder à la page Aperçu de Cloud Manager .
+
+1. Cliquez sur **Créer** pour créer votre branche et votre projet.
+
+   ![image](/help/screens-cloud/assets/onboarding/create-branch1.png)
+
+1. Sélectionnez le **Titre** et **Nouveau nom de branche** dans l’assistant **Créer une branche et un projet** et cliquez sur **Créer**.
+
+   ![image](/help/screens-cloud/assets/onboarding/create-branch2.png)
+
+1. La carte d’appel à l’action s’affiche sur la page **Aperçu** de Cloud Manager ; elle met à jour l’état en tant que création de projet en cours.
+
+   ![image](/help/screens-cloud/assets/onboarding/create-branch3.png)
+
+1. Une fois la création du projet terminée, la mise à jour de la carte d’appel à l’action s’affiche sur la page **Aperçu** de Cloud Manager.
+
+   ![image](/help/screens-cloud/assets/onboarding/create-branch4.png)
+
+## Suite {#whats-next}
+
+Une fois que vous avez appris à créer une branche pour votre projet dans Cloud Manager, vous êtes prêt à passer à l’étape suivante du processus d’intégration : [Création et configuration de l’environnement](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md).
