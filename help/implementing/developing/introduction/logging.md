@@ -2,9 +2,9 @@
 title: Journalisation d’AEM en tant que Cloud Service
 description: Découvrez comment configurer des paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données dans AEM en tant que Cloud Service.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: a4b21fe922d7b4ff77b01425e0a8cf1c904d7922
+source-git-commit: 599f32afbee7514ddad6396bd35707cea5dcca14
 workflow-type: tm+mt
-source-wordcount: '2333'
+source-wordcount: '2305'
 ht-degree: 94%
 
 ---
@@ -253,16 +253,18 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
 
-**Format du journal**
+<!--
+
+**Log Format**
 
 <table>
 <tbody>
 <tr>
-<td>ID du nœud AEM as a Cloud Service</td>
+<td>AEM as a Cloud Service node ID</td>
 <td>cm-p1235-e2644-aem-author-59555cb5b8-8kgr2</td>
 </tr>
 <tr>
-<td>Adresse IP du client</td>
+<td>IP address of the Client</td>
 <td>-</td>
 </tr>
 <tr>
@@ -270,11 +272,11 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 <td>myuser@adobe.com</td>
 </tr>
 <tr>
-<td>Date et heure</td>
+<td>Date and time</td>
 <td>30/Apr/2020:17:37:14 +0000</td>
 </tr>
 <tr>
-<td>Méthode HTTP</td>
+<td>HTTP method</td>
 <td>GET</td>
 </tr>
 <tr>
@@ -282,27 +284,42 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 <td>/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css</td>
 </tr>
 <tr>
-<td>Protocole</td>
+<td>Protocol</td>
 <td>HTTP/1.1</td>
 </tr>
 <tr>
-<td>Statut de réponse HTTP</td>
+<td>HTTP response status</td>
 <td>200</td>
 </tr>
 <tr>
-<td>Temps de requête HTTP en millisecondes</td>
+<td>HTTP request time in milliseconds</td>
 <td>1141</td>
 </tr>
 <tr>
-<td>Référent</td>
+<td>Referrer</td>
 <td><code>"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"</code></td>
 </tr>
 <tr>
-<td>Agent utilisateur</td>
+<td>User agent</td>
 <td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
 </tr>
 </tbody>
 </table>
+
+-->
+
+| AEM en tant qu’ID de noeud de Cloud Service | cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 |
+|---|---|
+| Adresse IP du client | - |
+| User | myuser@adobe.com |
+| Date et heure | 30/Apr/2020:17:37:14 +0000 |
+| Méthode HTTP | GET |
+| URL | `/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css` |
+| Protocole | HTTP/1.1 |
+| Statut de réponse HTTP | 200 |
+| Temps de requête HTTP en millisecondes | 1141 |
+| Référent | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` |
+| Agent utilisateur | `"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"` |
 
 ### Configuration du journal d’accès HTTP {#configuring-the-http-access-log}
 
@@ -380,7 +397,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tr>
 <tr>
 <td>Agent utilisateur</td>
-<td>"Mozilla/5.0 (Macintosh); Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, comme Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
+<td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
 </tr>
 </tbody>
 </table>
