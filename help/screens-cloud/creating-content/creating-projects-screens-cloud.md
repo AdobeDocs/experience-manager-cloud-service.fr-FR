@@ -4,10 +4,10 @@ description: Cette page décrit comment créer un projet dans Screens en tant qu
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 46d1fcd548ca304563f8a0ba0410be053bcccee8
+source-git-commit: 2e572e0b25e1add25016191b55a78eea050b4ad0
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 0%
+source-wordcount: '363'
+ht-degree: 1%
 
 ---
 
@@ -26,15 +26,38 @@ Pour créer un projet dans Screens en tant que Cloud Service, procédez comme su
 
 1. Accédez à Fournisseur de contenu Screens.
 
-1. Cliquez sur **Créer un projet Screens** dans le coin supérieur droit de la barre d’actions.
+   >[!NOTE]
+   >Reportez-vous à [Utilisation du fournisseur de contenu Screens](/help/screens-cloud/setting-up-project/using-screens-content-provider.md) pour savoir comment accéder au fournisseur de contenu Screens pour créer votre projet.
+
+1. Cliquez sur **Créer** —> **Créer une entité** dans le coin supérieur droit de la barre d’actions.
+
+   ![](/help/screens-cloud/assets/create-content/create-project1.png)
+
+1. Sélectionnez **Projet Screens** dans l’assistant **Créer**. Cliquez sur **Suivant**.
+
+   ![](/help/screens-cloud/assets/create-content/create-project2.png)
 
 1. Saisissez le **Titre** de votre projet dans la boîte de dialogue **Créer un projet Screens**, par exemple *FirstDigitalExperience*.
+
+   ![](/help/screens-cloud/assets/create-content/create-project3.png)
 
    >[!NOTE]
    >Le champ **Nom** est automatiquement renseigné dans la boîte de dialogue **Créer un projet Screens** en fonction du titre que vous choisissez.
 
-1. Cliquez sur **Enregistrer**. Votre projet Screens s’affiche, intitulé *FirstDigitalExperience* dans le fournisseur de contenu Screens.
+1. Cliquez sur **Créer**. Votre projet Screens s’affiche, intitulé *FirstDigitalExperience* dans le fournisseur de contenu Screens.
 
+   ![](/help/screens-cloud/assets/create-content/create-project4.png)
+
+
+   Ou,
+
+   1. Cliquez sur **Créer un projet Screens** dans la barre d’actions.
+
+      ![](/help/screens-cloud/assets/create-content/create-project7.png)
+
+   1. Saisissez le **titre** de votre projet. Cliquez sur **Enregistrer**.
+
+      ![](/help/screens-cloud/assets/create-content/create-project6.png)
    Maintenant que vous avez configuré un projet AEM Screens, vous pouvez commencer à ajouter des canaux et des emplacements à votre projet.
 
 ### Suppression d’un projet existant {#deleting-project}
@@ -45,6 +68,9 @@ Pour supprimer un projet existant du fournisseur de contenu Screens, procédez c
 1. Accédez à Fournisseur de contenu Screens.
 1. Sélectionnez le projet que vous souhaitez supprimer.
 1. Cliquez sur **Supprimer** de la barre d’actions pour supprimer le projet.
+
+   ![](/help/screens-cloud/assets/create-content/create-project5.png)
+
 1. Cliquez sur **Supprimer** pour confirmer la suppression du projet.
 
    >[!NOTE]
