@@ -2,7 +2,7 @@
 title: Test de qualité du code – Cloud Services
 description: Test de qualité du code – Cloud Services
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 64023bbdccd8d173b15e3984d0af5bb59a2c1447
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 100%
@@ -25,7 +25,7 @@ Voir [Configuration de votre pipeline CI-CD](/help/implementing/cloud-manager/co
 Au cours du test de qualité du code, le code source est analysé afin de s’assurer qu’il répond à certains critères de qualité. Actuellement, cette analyse est implémentée par une combinaison de SonarQube et d’examens au niveau du package de contenu à l’aide d’OakPAL. Il existe plus de 100 règles combinant des règles Java génériques et des règles spécifiques à AEM. Certaines des règles spécifiques à AEM sont créées en fonction des bonnes pratiques de l’équipe d’ingénierie AEM et sont appelées [Règles de qualité du code personnalisées](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 >[!NOTE]
->Vous pouvez télécharger la liste complète des règles [ici](/help/implementing/cloud-manager/assets/CodeQuality-rules-CS.xlsx).
+>Vous pouvez télécharger la liste complète des règles [ici](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
 
 **Point de contrôle à trois niveaux**
 
