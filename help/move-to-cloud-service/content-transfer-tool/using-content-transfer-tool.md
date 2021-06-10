@@ -2,22 +2,16 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 0d664997a66d790d5662e10ac0afd0dca7cc7fac
 workflow-type: tm+mt
-source-wordcount: '2829'
-ht-degree: 76%
+source-wordcount: '2785'
+ht-degree: 77%
 
 ---
 
 # Utilisation de l’outil de transfert de contenu {#using-content-transfer-tool}
 
 ## Points importants concernant l’utilisation de l’outil de transfert de contenu {#pre-reqs}
-
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_prereqs"
->title="Points importants concernant l’utilisation de l’outil de transfert de contenu"
->abstract="Examinez les points importants à prendre en compte pour utiliser l’outil de transfert de contenu, notamment les versions Java et AEM, les types d’entrepôt de données pris en charge, les considérations relatives aux groupes d’utilisateurs, etc."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="Bonnes pratiques et directives"
 
 Consultez la section ci-dessous afin de comprendre les points importants à prendre en compte pour l’exécution de l’outil de transfert de contenu :
 
