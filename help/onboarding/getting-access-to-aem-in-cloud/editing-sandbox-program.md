@@ -2,7 +2,7 @@
 title: 'Modification d’un programme Sandbox '
 description: Modification d’un programme Sandbox
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
-source-git-commit: ee12a6a81a6852d9ffff674cea69e36c37c0ea65
+source-git-commit: 8974217f8a3db6cfe96082fe2ed0277c243fa7e1
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 46%
@@ -30,7 +30,7 @@ Pour modifier un programme Sandbox, procédez comme suit :
 
    Accédez à l’onglet **Général** pour modifier la description du programme.
 
-   ![](assets/edit-program-general.png)
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/edit-program-sandboxa.png)
 
    L’onglet **Solutions et modules complémentaires** affiche deux options, telles que **Sites** et **Ressources** pour les programmes Production et Sandbox. Vous pouvez également sélectionner l’option de module complémentaire **Commerce**, disponible sous **Sites**, comme illustré dans la figure ci-dessous.
 
@@ -39,7 +39,7 @@ Pour modifier un programme Sandbox, procédez comme suit :
    >[!NOTE]
    >Au moins une solution doit être sélectionnée pour un programme, c’est-à-dire que l’utilisateur n’est pas autorisé à désélectionner toutes les solutions pendant le workflow Modifier le programme.
 
-1. Cliquez sur **Enregistrer** pour terminer le processus de modification du programme.
+1. Cliquez sur **Mettre à jour** pour terminer le processus de modification du programme.
 
 
 ## Considérations relatives à la modification d’un programme {#considerations-editing}
