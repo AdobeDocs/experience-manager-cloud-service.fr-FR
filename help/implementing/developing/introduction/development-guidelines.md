@@ -2,10 +2,10 @@
 title: Conseils de développement pour AEM as a Cloud Service
 description: Conseils de développement pour AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 7fc99376522238f74eb24efd93f079c03f854aa1
+source-git-commit: f5ed5561ed19938b4c647666ff7a6a470d307cf7
 workflow-type: tm+mt
-source-wordcount: '2302'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -215,6 +215,10 @@ Afin de vérifier que le trafic est effectivement sortant sur l’adresse IP dé
 
 AEM as a Cloud Service exige que le courrier sortant soit chiffré. Les sections ci-dessous décrivent comment demander, configurer et envoyer des emails.
 
+>[!NOTE]
+>
+>Le service de messagerie peut être configuré avec la prise en charge d’OAuth2. Pour plus d’informations, voir [Prise en charge OAuth2 pour le service de messagerie](/help/security/oauth2-support-for-mail-service.md).
+
 ### Demande d’accès {#requesting-access}
 
 Par défaut, les emails sortants sont désactivés. Pour les activer, soumettez un ticket d’assistance contenant :
@@ -238,7 +242,7 @@ AEM CS exige que le courrier soit envoyé par le biais du port 465. Si un serve
 
 Dans AEM, les emails doivent être envoyés à l’aide du [service de messagerie Day CQ OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
-Voir la [documentation d’AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) pour plus d’informations sur la configuration des paramètres des emails. Pour AEM as a Cloud Service, les ajustements suivants doivent être apportés au service `com.day.cq.mailer.DefaultMailService OSGI` :
+Pour plus d’informations sur la configuration des paramètres des emails, voir la [documentation AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) . Pour AEM as a Cloud Service, les ajustements suivants doivent être apportés au service `com.day.cq.mailer.DefaultMailService OSGI` :
 
 Si le port 465 a été demandé :
 
