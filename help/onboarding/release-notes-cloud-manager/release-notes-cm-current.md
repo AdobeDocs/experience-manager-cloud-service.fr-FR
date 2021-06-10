@@ -2,56 +2,58 @@
 title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.5.0
 description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.5.0
 feature: Informations sur la version
-source-git-commit: 13d45a02169fc99be60d73dde91dbc8c2ce03ef8
+source-git-commit: d30f81b8d12a4136d96cdfd1fb8c3e9927c015d1
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '394'
 ht-degree: 17%
 
 ---
 
 
-# Notes de mise à jour de Cloud Manager dans Adobe Experience Manager as a Cloud Service version 2021.5.0 {#release-notes}
+# Notes de mise à jour de Cloud Manager dans Adobe Experience Manager as a Cloud Service version 2021.6.0 {#release-notes}
 
-Cette page présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.5.0.
+Cette page présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.6.0.
 
 >[!NOTE]
 >Pour afficher les notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service, cliquez [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=fr).
 
 ## Date de publication {#release-date}
 
-La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.5.0 est le 6 mai 2021.
-La prochaine version est prévue pour le 10 juin 2021.
+La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.6.0 est le 10 juin 2021.
+La prochaine version est prévue pour le 15 juillet 2021.
 
 ### Nouveautés {#what-is-new}
 
-* La règle de qualité PackageOverlaps détecte désormais les cas où le même package a été déployé plusieurs fois, c’est-à-dire dans plusieurs emplacements incorporés, dans le même ensemble de packages déployé.
+* Le service Preview sera déployé de manière progressive dans tous les programmes. Les clients seront avertis dans le produit lorsque leur programme sera activé pour le service de prévisualisation. Pour plus d’informations, voir [Accès au service d’aperçu](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
-* Le point de terminaison du référentiel dans l’API publique inclut désormais l’URL Git.
+* Les dépendances Maven téléchargées lors de l’étape de création seront désormais mises en cache entre les exécutions de pipeline. Cette fonctionnalité sera activée pour les clients au cours des prochaines semaines.
 
-* Le journal de déploiement téléchargé par un utilisateur de Cloud Manager sera plus informatif et comprendra désormais des détails sur les échecs et les scénarios de succès.
+* Le nom du programme peut maintenant être modifié à partir de la boîte de dialogue de modification du programme.
 
-* Les échecs intermittents rencontrés lors de la publication du code vers le git d’Adobe ont maintenant été résolus.
+* Le nom de branche par défaut utilisé lors de la création du projet et dans la commande push par défaut via la gestion des workflows git a été remplacé par `main`.
 
-* Le module complémentaire Commerce peut désormais être appliqué aux programmes Sandbox pendant le workflow Modifier le programme .
+* La modification de l’expérience du programme dans l’interface utilisateur a été actualisée.
 
-* L’expérience *Modifier le programme* a été actualisée.
+* La règle de qualité `ImmutableMutableMixCheck` a été mise à jour afin de classer les noeuds `/oak:index` comme étant immuables.
 
-* Le tableau Noms de domaine de la page Détails de l’environnement affiche jusqu’à 250 noms de domaine par pagination.
+* Les règles de qualité `CQBP-84` et `CQBP-84--dependencies` ont été consolidées dans une seule règle.
 
-* L’onglet **Solutions et modules complémentaires** dans les workflows **Ajouter un programme** et **Modifier le programme** affichera la solution, même si une seule solution est disponible pour le programme.
+* Pour éviter toute confusion, les lignes de segment AEM de publication et Publier Dispatcher sur la page Détails de l’environnement ont été consolidées.
 
-* Le message d’erreur dans le journal de l’étape de génération lorsque la version ne produisait aucun module de contenu déployé n’était pas clair.
+* Une nouvelle règle de qualité du code a été ajoutée pour valider la structure des index `damAssetLucene`. Pour plus d’informations, voir [Index Lucene Oak des ressources DAM personnalisées](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) .
+
+* La page Détails de l’environnement affiche désormais plusieurs noms de domaine pour les services de publication et de prévisualisation (le cas échéant). Pour plus d’informations, voir [Détails de l’environnement](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) .
 
 ### Correctifs {#bug-fixes}
 
-* Parfois, l’utilisateur peut voir un état &quot;principal&quot; vert en regard d’une Liste autorisée IP même lorsque cette configuration n’a pas été déployée.
+* Les définitions de noeud JCR contenant une nouvelle ligne après le nom de l’élément racine n’étaient pas correctement analysées.
 
-* Au lieu de supprimer des variables &quot;supprimées&quot;, l’API des variables de pipelines ne les marquerait que avec le statut **DELETED**.
+* L’API de liste des référentiels ne filtre pas les référentiels supprimés.
 
-* Certains problèmes de qualité du type d’odeur de code affectaient incorrectement l’évaluation de fiabilité.
+* Un message d’erreur incorrect s’affichait lorsqu’une valeur non valide était fournie pour l’étape de planification.
 
-* Comme les domaines génériques ne sont pas pris en charge, l’interface utilisateur ne permet pas à l’utilisateur d’envoyer un domaine de caractères génériques.
+* Parfois, l’utilisateur peut voir un état *principal* en regard d’une Liste autorisée IP même lorsque cette configuration n’a pas été déployée.
 
-* Lorsqu’une exécution de pipeline était lancée entre minuit et 1h du matin (UTC), il n’était pas garanti que la version d’artefact générée par Cloud Manager était supérieure à une version créée le jour précédent.
+* Certaines séquences de modification de programme peuvent empêcher la création ou la modification du pipeline de production.
 
-* Lors de la configuration du programme Sandbox, une fois que le projet avec un exemple de code a été créé, Gérer Git s’affiche sous la forme d’un lien à partir de la carte principale de la page Aperçu.
+* Certaines séquences de modification de programme peuvent entraîner l’affichage d’un message trompeur sur la page **Aperçu** pour exécuter à nouveau la configuration du programme.
