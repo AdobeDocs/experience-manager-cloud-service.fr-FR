@@ -2,7 +2,7 @@
 title: Gestion des environnements – Cloud Service
 description: Gestion des environnements – Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: fd142b6814e73d85a4239488bda11a662f33d9cf
+source-git-commit: c4e788527ab0be8b54f9a0baed2e4e2677129898
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 78%
@@ -93,11 +93,11 @@ Prévisualisez l’expérience finale d’un site web avant qu’il n’atteigne
 
    Un utilisateur disposant des autorisations requises doit effectuer l’une des opérations suivantes pour *déverrouiller* l’accès au service d’aperçu et fournir l’accès souhaité :
 
-   1. Créez une Liste autorisée IP appropriée et appliquez-la au service de prévisualisation. Suivez cette procédure immédiatement en annulant l’application de `Preview Default [Env ID] IP Allow List` à partir du service d’aperçu.
+   * Créez une Liste autorisée IP appropriée et appliquez-la au service de prévisualisation. Suivez cette procédure immédiatement en annulant l’application de `Preview Default [Env ID] IP Allow List` à partir du service d’aperçu.
 
-      OU,
+      *OU*,
 
-   1. Utilisez le workflow Mettre à jour la Liste autorisée IP pour supprimer l’adresse IP par défaut et ajouter les adresses IP, le cas échéant. Pour en savoir plus, voir [Affichage et mise à jour d’une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md).
+   * Utilisez le workflow Mettre à jour la Liste autorisée IP pour supprimer l’adresse IP par défaut et ajouter les adresses IP, le cas échéant. Pour en savoir plus, voir [Affichage et mise à jour d’une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md) .
 
       >[!NOTE]
       >Les étapes ci-dessus doivent être effectuées avant de partager l’URL du service de prévisualisation avec l’une de vos équipes afin de vous assurer que les membres appropriés de votre équipe peuvent accéder à l’URL de prévisualisation.
