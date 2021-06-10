@@ -2,9 +2,9 @@
 title: Gestion des environnements – Cloud Service
 description: Gestion des environnements – Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: c4e788527ab0be8b54f9a0baed2e4e2677129898
+source-git-commit: 8e8764dd39e2bc664a577c863a04a7e4c5e99fd0
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1626'
 ht-degree: 78%
 
 ---
@@ -102,7 +102,7 @@ Prévisualisez l’expérience finale d’un site web avant qu’il n’atteigne
       >[!NOTE]
       >Les étapes ci-dessus doivent être effectuées avant de partager l’URL du service de prévisualisation avec l’une de vos équipes afin de vous assurer que les membres appropriés de votre équipe peuvent accéder à l’URL de prévisualisation.
 
-      Une fois l’accès au service de prévisualisation déverrouillé, l’icône de verrouillage ne s’affiche plus, comme illustré ci-dessous.
+      Une fois l’accès au service de prévisualisation déverrouillé, l’icône de verrouillage (comme illustré dans la figure ci-dessous) ne s’affiche plus.
 
       ![](/help/implementing/cloud-manager/assets/preview-service1.png)
 
