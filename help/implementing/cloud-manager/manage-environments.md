@@ -2,7 +2,7 @@
 title: Gestion des environnements – Cloud Service
 description: Gestion des environnements – Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 0a0bb01dfc2786edc4ebd331ddad44b12ca64fa2
+source-git-commit: fd142b6814e73d85a4239488bda11a662f33d9cf
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 78%
@@ -91,22 +91,22 @@ Prévisualisez l’expérience finale d’un site web avant qu’il n’atteigne
 
 1. **Verrouillage** de Liste autorisée IP par défaut : Lors de la première création, vous devez désappliquer activement la Liste autorisée IP par défaut du service de prévisualisation de votre environnement afin d’activer l’accès.
 
+   Un utilisateur disposant des autorisations requises doit effectuer l’une des opérations suivantes pour *déverrouiller* l’accès au service d’aperçu et fournir l’accès souhaité :
+
+   1. Créez une Liste autorisée IP appropriée et appliquez-la au service de prévisualisation. Suivez cette procédure immédiatement en annulant l’application de `Preview Default [Env ID] IP Allow List` à partir du service d’aperçu.
+
+      OU,
+
+   1. Utilisez le workflow Mettre à jour la Liste autorisée IP pour supprimer l’adresse IP par défaut et ajouter les adresses IP, le cas échéant. Pour en savoir plus, voir [Affichage et mise à jour d’une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md).
+
+      >[!NOTE]
+      >Les étapes ci-dessus doivent être effectuées avant de partager l’URL du service de prévisualisation avec l’une de vos équipes afin de vous assurer que les membres appropriés de votre équipe peuvent accéder à l’URL de prévisualisation.
+
+      Une fois l’accès au service de prévisualisation déverrouillé, l’icône de verrouillage ne s’affiche plus, comme illustré ci-dessous.
+
+      ![](/help/implementing/cloud-manager/assets/preview-service1.png)
+
 1. **Publier le contenu à prévisualiser** : Vous pouvez publier du contenu dans le service d’aperçu à l’aide de l’interface utilisateur de gestion de publication d’AEM. Pour plus d’informations, voir [Aperçu du contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) .
-
-Un utilisateur disposant des autorisations requises doit effectuer l’une des opérations suivantes pour *déverrouiller* l’accès au service d’aperçu et fournir l’accès souhaité :
-
-1. Créez une Liste autorisée IP appropriée et appliquez-la au service de prévisualisation. Suivez cette procédure immédiatement en annulant l’application de `Preview Default [Env ID] IP Allow List` à partir du service d’aperçu.
-
-   OU,
-
-1. Utilisez le workflow Mettre à jour la Liste autorisée IP pour supprimer l’adresse IP par défaut et ajouter les adresses IP, le cas échéant. Pour en savoir plus, voir [Affichage et mise à jour d’une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md).
-
-   >[!NOTE]
-   >Les étapes ci-dessus doivent être effectuées avant de partager l’URL du service de prévisualisation avec l’une de vos équipes afin de vous assurer que les membres appropriés de votre équipe peuvent accéder à l’URL de prévisualisation.
-
-   Une fois l’accès au service de prévisualisation déverrouillé, l’icône de verrouillage ne s’affiche plus, comme illustré ci-dessous.
-
-   ![](/help/implementing/cloud-manager/assets/preview-service1.png)
 
 ## Mise à jour de l’environnement {#updating-dev-environment}
 
