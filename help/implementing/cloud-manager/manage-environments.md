@@ -2,10 +2,10 @@
 title: Gestion des environnements – Cloud Service
 description: Gestion des environnements – Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f9dbf2983bb67d60b0f89199bd8da938423b2e2c
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 99%
+source-wordcount: '1620'
+ht-degree: 78%
 
 ---
 
@@ -61,7 +61,6 @@ Un utilisateur disposant des autorisations requises peut créer les types d’en
    >[!NOTE]
    >Si vous n’avez pas encore configuré votre pipeline hors production, l’écran *Aperçu* affiche la carte d’où vous pouvez créer votre pipeline hors production.
 
-
 ## Détails de l’environnement {#viewing-environment}
 
 La carte **Environnements** de la page Aperçu répertorie jusqu’à trois environnements.
@@ -76,8 +75,36 @@ La carte **Environnements** de la page Aperçu répertorie jusqu’à trois envi
 
 1. Sélectionnez l’un des environnements de la liste pour afficher les détails de l’environnement.
 
-   ![](assets/environment-view-3.png)
+   >[!NOTE]
+   >Le service Preview sera déployé de manière progressive dans tous les programmes. Les clients seront avertis dans le produit lorsque leur programme sera activé pour le service de prévisualisation. Voir la section [Accès au service d’aperçu](#access-preview-service) pour plus d’informations.
 
+   ![](assets/environ-preview1.png)
+
+
+### Accès au service d’aperçu {#access-preview-service}
+
+La fonctionnalité Service d’aperçu fournit un service d’aperçu (publication) supplémentaire à chaque AEM en tant qu’environnement de Cloud Service via Cloud Manager.
+
+Prévisualisez l’expérience finale d’un site web avant qu’il n’atteigne l’environnement de publication et soit disponible publiquement. Quelques pointeurs avant de pouvoir afficher et utiliser le service d’aperçu :
+
+1. **AEM version** : Votre environnement doit être AEM version  `2021.5.5343.20210542T070738Z` ou supérieure. Pour ce faire, vérifiez qu’un pipeline de mise à jour a bien été exécuté sur votre environnement.
+
+1. **Verrouillage** de Liste autorisée IP par défaut : Lors de la première création, vous devez désappliquer activement la Liste autorisée IP par défaut du service de prévisualisation de votre environnement afin d’activer l’accès.
+
+1. **Publier le contenu à prévisualiser** : Vous pouvez publier du contenu dans le service d’aperçu à l’aide de l’interface utilisateur de gestion de publication d’AEM. Pour plus d’informations, voir [Aperçu du contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) .
+
+Un utilisateur disposant des autorisations requises doit effectuer l’une des opérations suivantes pour *déverrouiller* l’accès au service d’aperçu et fournir l’accès souhaité :
+
+1. Créez une Liste autorisée IP appropriée et appliquez-la au service de prévisualisation. Suivez cette procédure immédiatement en annulant l’application de `Preview Default [Env ID] IP Allow List` à partir du service d’aperçu.
+
+   OU,
+
+1. Utilisez le workflow Mettre à jour la Liste autorisée IP pour supprimer l’adresse IP par défaut et ajouter les adresses IP, le cas échéant. Pour en savoir plus, voir [Affichage et mise à jour d’une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md).
+
+   >[!NOTE]
+   >Les étapes ci-dessus doivent être effectuées avant de partager l’URL du service de prévisualisation avec l’une de vos équipes afin de vous assurer que les membres appropriés de votre équipe peuvent accéder à l’URL de prévisualisation.
+
+   Une fois l’accès au service de prévisualisation déverrouillé, l’icône de verrouillage ne s’affiche plus.
 
 ## Mise à jour de l’environnement {#updating-dev-environment}
 
@@ -145,9 +172,13 @@ De plus, vous pouvez vous connecter localement à partir de la page de résumé 
 
 ![](assets/environ-login-locally-2.png)
 
+
 ## Gestion des noms de domaine personnalisés {#manage-cdn}
 
 Accédez à la page de détails **Environnements** à partir de la page de Résumé des environnements.
+
+>[!NOTE]
+>Les noms de domaine personnalisés sont désormais pris en charge dans Cloud Manager pour les programmes Sites pour les services de publication et d’aperçu. Chaque environnement Cloud Manager peut héberger jusqu’à 250 domaines personnalisés.
 
 Vous pouvez exécuter les actions suivantes sur le service de publication pour votre environnement, comme décrit ci-dessous :
 
@@ -161,9 +192,13 @@ Vous pouvez exécuter les actions suivantes sur le service de publication pour v
 
 1. [Vérification de l’état d’une liste d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
 
+
 ## Gestion des listes autorisées d’adresses IP {#manage-ip-allow-lists}
 
 Accédez à la page de détails de l’environnement à partir de la page Résumé des environnements. Vous pouvez exécuter ici les actions suivantes sur le ou les services de publication et/ou de création pour votre environnement.
+
+>[!NOTE]
+>La fonctionnalité de Liste autorisée IP est désormais prise en charge dans Cloud Manager pour les services d’auteur, de publication et d’aperçu (disponibles dans les programmes Sites).
 
 ### Application d’une liste d’adresses IP autorisées {#apply-ip-allow-list}
 
