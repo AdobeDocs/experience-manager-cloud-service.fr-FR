@@ -2,7 +2,7 @@
 title: Gestion des environnements – Cloud Service
 description: Gestion des environnements – Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 11d12e43de7a71a59f565379e95ba57b13180fed
+source-git-commit: ed7436ed0dec228898cfe6795c698e98499f94c9
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 76%
@@ -87,7 +87,7 @@ La fonctionnalité Service d’aperçu fournit un service d’aperçu (publicati
 
 Prévisualisez l’expérience finale d’un site web avant qu’il n’atteigne l’environnement de publication et soit disponible publiquement. Quelques pointeurs avant de pouvoir afficher et utiliser le service d’aperçu :
 
-1. **AEM version** : Votre environnement doit être AEM version  `2021.5.5343.20210542T070738Z` ou supérieure. Pour ce faire, vérifiez qu’un pipeline de mise à jour a bien été exécuté sur votre environnement.
+1. **AEM version** : Votre environnement doit être AEM version  `2021.05.5368.20210529T101701Z` ou supérieure. Pour ce faire, vérifiez qu’un pipeline de mise à jour a bien été exécuté sur votre environnement.
 
 1. **Verrouillage de Liste autorisée IP par défaut** : Une fois le service de prévisualisation créé, une Liste autorisée IP par défaut lui est appliquée, intitulée  `Preview Default [Env ID]`.
 
