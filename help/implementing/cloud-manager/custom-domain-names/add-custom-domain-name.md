@@ -2,10 +2,10 @@
 title: Ajout d’un nom de domaine personnalisé
 description: Ajout d’un nom de domaine personnalisé
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: 1eb9423b0128c952bc16cf0b8dff95b0e86964a0
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 98%
+source-wordcount: '610'
+ht-degree: 92%
 
 ---
 
@@ -23,7 +23,7 @@ Un utilisateur doit être un propriétaire d’entreprise ou un responsable du d
 
 * AEM en tant que Cloud Service ne prend pas en charge les domaines génériques.
 
-* Chaque environnement Cloud Manager peut héberger jusqu’à 100 domaines personnalisés.
+* Chaque environnement Cloud Manager peut héberger jusqu’à 250 domaines personnalisés.
 
 * Le même nom de domaine ne peut pas être utilisé sur plusieurs environnements.
 
@@ -39,7 +39,7 @@ Suivez les étapes ci-dessous pour ajouter un nom de domaine personnalisé à pa
 
 1. Cliquez sur le bouton **Ajouter le domaine** pour ouvrir la boîte de dialogue **Ajouter le nom de domaine**.
 
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create2.png)
+   ![](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
 1. Entrez le nom de domaine personnalisé dans **Nom de domaine**.
 
@@ -47,6 +47,11 @@ Suivez les étapes ci-dessous pour ajouter un nom de domaine personnalisé à pa
    >Vous ne devez pas inclure `http://`, `https://` ni d’espace lors de la saisie dans votre domaine.
 
 1. Sélectionnez l’**environnement** dont le service de publication sera associé au nom de domaine.
+
+1. Sélectionnez le service **Publier** ou **Aperçu**.
+
+   >[!NOTE]
+   >Les noms de domaine personnalisés sont désormais pris en charge dans Cloud Manager pour les programmes Sites pour les services de publication et d’aperçu. Chaque environnement Cloud Manager peut héberger jusqu’à 250 domaines personnalisés. Pour en savoir plus sur le service de prévisualisation, voir [Service de prévisualisation](/help/implementing/cloud-manager/manage-environments.md#preview-service).
 
 1. Sélectionnez le **certificat SSL du domaine** dans la liste déroulante et sélectionnez **Continuer**.
 
