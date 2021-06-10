@@ -2,7 +2,7 @@
 title: Gestion des environnements – Cloud Service
 description: Gestion des environnements – Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 7e4d75d90b3f6fad024304781225dfcef6df0e2b
+source-git-commit: 11d12e43de7a71a59f565379e95ba57b13180fed
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 76%
@@ -89,7 +89,7 @@ Prévisualisez l’expérience finale d’un site web avant qu’il n’atteigne
 
 1. **AEM version** : Votre environnement doit être AEM version  `2021.5.5343.20210542T070738Z` ou supérieure. Pour ce faire, vérifiez qu’un pipeline de mise à jour a bien été exécuté sur votre environnement.
 
-1. **Verrouillage** de Liste autorisée IP par défaut : Une fois le service de prévisualisation créé, une Liste autorisée IP par défaut lui est appliquée, intitulée  `Preview Default [Env ID]`.
+1. **Verrouillage de Liste autorisée IP par défaut** : Une fois le service de prévisualisation créé, une Liste autorisée IP par défaut lui est appliquée, intitulée  `Preview Default [Env ID]`.
 
    >[!NOTE]
    >Lors de la première création, vous devez désappliquer activement la Liste autorisée IP par défaut du service de prévisualisation de votre environnement afin d’activer l’accès.
