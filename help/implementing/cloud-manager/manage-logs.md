@@ -2,10 +2,10 @@
 title: Gérer les journaux – Cloud Service
 description: Gérer les journaux – Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 2411c2d1472abaa2af7b2a71938d753bb98db95c
+source-git-commit: 8a70a343be8a6843436f1df26adae5b1935ad4c3
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 78%
+source-wordcount: '275'
+ht-degree: 69%
 
 ---
 
@@ -13,11 +13,13 @@ ht-degree: 78%
 
 Les utilisateurs peuvent accéder à la liste des fichiers journaux disponibles pour l’environnement sélectionné à l’aide de la carte d’environnement. Les utilisateurs peuvent accéder à la liste des fichiers journaux disponibles pour l’environnement sélectionné.
 
-Ces fichiers peuvent être téléchargés soit par le biais de l’interface utilisateur, soit à partir de la page **Aperçu** :
+## Journaux de téléchargement {#download-logs}
+
+Ces fichiers peuvent être téléchargés via l’interface utilisateur, soit à partir de la carte **Environnements** de la page **Aperçu** :
 
 ![](assets/download-logs1.png)
 
-Ou encore à partir de la page **Environnements** :
+Ou, dans la page Détails de l’environnement :
 
 ![](assets/download-logs.png)
 
@@ -28,13 +30,13 @@ Ou encore à partir de la page **Environnements** :
 
 ## Téléchargement des journaux du service d’aperçu {#download-preview-service}
 
-L’utilisateur peut télécharger les journaux pour le service d’aperçu.
+Suivez les étapes ci-dessous pour télécharger les journaux du service de prévisualisation
 
 1. Accédez à la carte **Environnements** à partir de la page **Aperçu** de Cloud Manager.
 
-1. Sélectionnez les journaux de téléchargement dans le menu ... .
+1. Sélectionnez **Télécharger les journaux** dans la section **...** .
 
-1. Dans les options de liste déroulante de service, sélectionnez **Aperçu** ou **Aperçu du Dispatcher**, puis cliquez sur l’icône de téléchargement.
+1. Dans le menu déroulant **Service**, sélectionnez **Aperçu** ou **Aperçu du Dispatcher**, puis cliquez sur l’icône de téléchargement.
 
    >[!NOTE]
    >Cette action peut également être effectuée à partir de la page Détails de l’environnement .
