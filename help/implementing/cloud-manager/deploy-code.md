@@ -2,10 +2,10 @@
 title: Déploiement de votre code - Cloud Services
 description: Déploiement de votre code - Cloud Services
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 782035708467693ec7648b1fd701c329a0b5f7c8
+source-git-commit: 64023bbdccd8d173b15e3984d0af5bb59a2c1447
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 98%
+source-wordcount: '616'
+ht-degree: 93%
 
 ---
 
@@ -70,46 +70,7 @@ Pour plus d’informations, voir [Compréhension des résultats du contrôle de 
 
 ## Processus de déploiement {#deployment-process}
 
-La section suivante décrit le déploiement des packages AEM et dispatcher dans les phases intermédiaires et de production.
-
-Cloud Manager télécharge tous les fichiers target/*.zip générés par le processus de création vers un emplacement de stockage.  Ces artefacts sont récupérés à partir de cet emplacement pendant les phases de déploiement du pipeline.
-
-Lorsque Cloud Manager se déploie sur des topologies autres que de production, l’objectif est de réaliser le déploiement aussi rapidement que possible ; les artefacts sont donc déployés simultanément sur tous les nœuds, comme suit :
-
-1. Cloud Manager détermine si chaque artefact est un package AEM ou dispatcher.
-1. Cloud Manager supprime tous les dispatchers de l’équilibreur de charge pour isoler l’environnement pendant le déploiement.
-
-   Sauf configuration contraire, vous pouvez ignorer les modifications de l’équilibreur de charge dans les déploiements de développement et en environnement intermédiaire, c’est-à-dire détacher et attacher des étapes dans les deux pipelines hors production, pour les environnements de développement et le pipeline de production, pour les environnements intermédiaires.
-
-   >[!NOTE]
-   >
-   >Cette fonctionnalité devrait principalement être utilisée par les clients 1-1-1.
-
-1. Chaque artefact AEM est déployé sur chacune des instances AEM par le biais des API de Package Manager, avec des dépendances de packages qui déterminent l’ordre de déploiement.
-
-   Pour en savoir plus sur l’utilisation de packages pour installer de nouvelles fonctionnalités, transférer du contenu entre des instances et sauvegarder le contenu du référentiel, reportez-vous à la section Utilisation de packages.
-
-   >[!NOTE]
-   >
-   >Tous les artefacts AEM sont déployés à la fois sur l’instance de création et les instances de publication. Les modes d’exécution doivent être utilisés lorsque des configurations spécifiques à un nœud sont requises. Pour en savoir plus sur la façon dont les modes d’exécution vous permettent d’ajuster votre instance AEM à des fins spécifiques, consultez Modes d’exécution.
-
-1. L’artefact dispatcher est déployé sur chaque dispatcher comme suit :
-
-   1. Les configurations actuelles sont sauvegardées et copiées vers un emplacement temporaire.
-   1. Toutes les configurations sont supprimées, à l’exception des fichiers non modifiables. Pour plus d’informations, consultez la section Gestion des configurations du Dispatcher. Cela permet de vider les répertoires pour qu’aucun fichier orphelin ne soit abandonné.
-   1. L’artefact est extrait dans le répertoire `httpd`.  Les fichiers non modifiables ne sont pas remplacés. Toute modification apportée aux fichiers non modifiables dans votre référentiel git sera ignorée au moment du déploiement.  Ces fichiers sont essentiels à la structure du dispatcher AMS et ne peuvent pas être modifiés.
-   1. Apache effectue un test de configuration. Si aucune erreur n’est trouvée, le service est rechargé. Si une erreur se produit, les configurations sont restaurées à partir de la sauvegarde, le service est rechargé et l’erreur est renvoyée à Cloud Manager.
-   1. Chaque chemin spécifié dans la configuration de pipeline est invalidé ou purgé du cache du dispatcher.
-
-   >[!NOTE]
-   >
-   >Cloud Manager exige que l’artefact du dispatcher contienne le jeu de fichiers complet.  Tous les fichiers de configuration du dispatcher doivent être présents dans le référentiel git. Les fichiers ou dossiers manquants entraînent l’échec du déploiement.
-
-1. Après le déploiement réussi de tous les packages AEM et de dispatcher sur tous les nœuds, les dispatchers sont ajoutés à l’équilibreur de charge et le déploiement est terminé.
-
-   >[!NOTE]
-   >
-   >Vous pouvez ignorer les modifications de l’équilibreur de charge dans les déploiements de développement et d’évaluation, c’est-à-dire, détacher et attacher des étapes dans les deux pipelines hors production, pour les environnements de développement et le pipeline de production, pour les environnements d’évaluation.
+Tous les déploiements de Cloud Service suivent un processus continu pour garantir un temps d’arrêt nul. Pour en savoir plus, voir [Fonctionnement des déploiements en continu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#how-rolling-deployments-work) .
 
 ### Phase de déploiement en production {#deployment-production-phase}
 
