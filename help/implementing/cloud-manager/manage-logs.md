@@ -2,10 +2,10 @@
 title: Gérer les journaux – Cloud Service
 description: Gérer les journaux – Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 2411c2d1472abaa2af7b2a71938d753bb98db95c
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 100%
+source-wordcount: '264'
+ht-degree: 78%
 
 ---
 
@@ -25,6 +25,21 @@ Ou encore à partir de la page **Environnements** :
 >Quel que soit l’emplacement d’ouverture, la même boîte de dialogue s’affiche et permet de télécharger un fichier journal.
 
 ![](assets/download-logs2.png)
+
+## Téléchargement des journaux du service d’aperçu {#download-preview-service}
+
+L’utilisateur peut télécharger les journaux pour le service d’aperçu.
+
+1. Accédez à la carte **Environnements** à partir de la page **Aperçu** de Cloud Manager.
+
+1. Sélectionnez les journaux de téléchargement dans le menu ... .
+
+1. Dans les options de liste déroulante de service, sélectionnez **Aperçu** ou **Aperçu du Dispatcher**, puis cliquez sur l’icône de téléchargement.
+
+   >[!NOTE]
+   >Cette action peut également être effectuée à partir de la page Détails de l’environnement .
+
+   ![](assets/download-preview.png)
 
 
 ## Journaux disponibles via l’API {#logs-through-api}
