@@ -1,14 +1,21 @@
 ---
 title: Conditions préalables pour l’outil de transfert de contenu
 description: Conditions préalables pour l’outil de transfert de contenu
-source-git-commit: becb8368af8a8228bf3248bde66ad7164187a9c4
+source-git-commit: 0d664997a66d790d5662e10ac0afd0dca7cc7fac
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 1%
+source-wordcount: '322'
+ht-degree: 6%
 
 ---
 
 # Conditions préalables pour l’outil de transfert de contenu {#prerequisites}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_prereqs"
+>title="Points importants concernant l’utilisation de l’outil de transfert de contenu"
+>abstract="Examinez les points importants à prendre en compte pour utiliser l’outil de transfert de contenu, notamment les versions Java et AEM, les types d’entrepôt de données pris en charge, les considérations relatives aux groupes d’utilisateurs, etc."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=fr#pre-reqs" text="Points importants concernant l’utilisation de l’outil de transfert de contenu"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="Bonnes pratiques et directives"
 
 Le tableau suivant résume les conditions préalables requises pour l’utilisation de l’outil de transfert de contenu.
 
