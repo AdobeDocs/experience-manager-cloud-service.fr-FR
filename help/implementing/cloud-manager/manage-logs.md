@@ -2,37 +2,39 @@
 title: Gérer les journaux – Cloud Service
 description: Gérer les journaux – Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: fa1dd46798d2b8f9b0476e5ad8eb74679fb4beb7
+source-git-commit: d44a4239205b88f05ab5ae9ef3263e6549f998fc
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 72%
+source-wordcount: '235'
+ht-degree: 68%
 
 ---
 
 # Accès aux journaux et leur gestion {#manage-logs}
 
-Les utilisateurs peuvent accéder à la liste des fichiers journaux disponibles pour l’environnement sélectionné à l’aide de la carte d’environnement. 
+Les utilisateurs peuvent accéder à la liste des fichiers journaux disponibles pour l’environnement sélectionné à l’aide de la carte **Environnements** de la page **Aperçu** ou de la page Détails de l’environnement.
 
 ## Journaux de téléchargement {#download-logs}
 
-Pour télécharger les journaux, procédez comme suit :
+Suivez les étapes ci-dessous pour télécharger les journaux.
 
-1. Vous pouvez télécharger les journaux via l’interface utilisateur, soit à partir de la carte **Environnements** à partir de la page **Aperçu** :
+1. Accédez à la carte **Environnements** à partir de la page **Aperçu**.
 
-![](assets/download-logs1.png)
+1. Sélectionnez **Télécharger les journaux** dans la section **...** .
 
-Ou, dans la page Détails de l’environnement :
+   ![](assets/download-logs1.png)
 
-![](assets/download-logs.png)
+   *Ou*,
 
->[!NOTE]
->Quel que soit l’emplacement d’ouverture, la même boîte de dialogue s’affiche et permet de télécharger un fichier journal.
+   Sur la page Détails de l’environnement :
 
-1. Sélectionnez **Télécharger les journaux** dans la zone **...** .
+   ![](assets/download-logs.png)
 
-1. Dans le menu déroulant **Service**, sélectionnez des options telles que **Aperçu** ou **Prévisualiser Dispatcher**, puis cliquez sur l’icône de téléchargement. Cette action peut également être effectuée à partir de la page Détails de l’environnement .
+   >[!NOTE]
+   >Quel que soit l’emplacement d’ouverture, la même boîte de dialogue s’affiche et permet de télécharger un fichier journal.
 
-![](assets/download-preview.png)
+1. Dans le menu déroulant **Service**, sélectionnez des options telles que **Aperçu** ou **Prévisualiser Dispatcher**, puis cliquez sur l’icône de téléchargement.
+
+   ![](assets/download-preview.png)
 
 
 ## Journaux disponibles via l’API {#logs-through-api}
