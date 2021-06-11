@@ -2,10 +2,10 @@
 title: 'Présentation des programmes Sandbox '
 description: Présentation des programmes Sandbox
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
+source-git-commit: 1ecadc0d2b45ee8c94af8d91b35dbd40b08e89b5
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 88%
+source-wordcount: '299'
+ht-degree: 79%
 
 ---
 
@@ -19,7 +19,7 @@ Un sandbox est généralement créé pour servir à la formation, à l’exécut
 
 Les environnements créés dans un sandbox ne sont pas configurés pour la mise à l’échelle automatique. Par conséquent, ils ne conviennent pas aux tests de performances ou de charge.
 
-Les programmes Sandbox comprennent les sites et les ressources et sont automatiquement renseignés avec un référentiel Git, un environnement de développement et un pipeline hors production.  Le référentiel Git est renseigné avec un exemple de projet basé sur l’archétype de projet AEM.
+Les programmes Sandbox comprennent [!DNL Sites] et [!DNL Assets] et sont automatiquement renseignés avec un référentiel Git, un environnement de développement et un pipeline hors production.  Le référentiel Git est renseigné avec un exemple de projet basé sur l’archétype de projet AEM.
 
 Consultez [Présentation des programmes et des types de programmes](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) pour en savoir plus sur les types de programmes.
 
@@ -32,7 +32,7 @@ Les programmes Sandbox possèdent les attributs suivants :
    * Création d’un environnement de développement
    * Création d’un canal hors production se déployant vers l’environnement de développement (déploiement de branche principale vers l’environnement de développement)
 
-1. **Solutions :** les programmes Sandbox incluent AEM Sites et Assets.
+1. **Solutions :** les programmes Sandbox incluent les AEM  [!DNL Sites] et  [!DNL Assets].
 
 1. **Mises à jour AEM :** les mises à jour AEM peuvent être appliquées manuellement aux environnements d’un programme Sandbox et ne sont pas automatiquement exécutées.
 Pour plus d’informations, consultez [Mises à jour AEM des environnements Sandbox](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox).
