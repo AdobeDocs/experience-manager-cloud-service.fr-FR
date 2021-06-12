@@ -4,10 +4,10 @@ description: Découvrir comment utiliser les images interactives dans Dynamic M
 feature: Images interactives
 role: Business Practitioner
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
 workflow-type: tm+mt
-source-wordcount: '4263'
-ht-degree: 92%
+source-wordcount: '4245'
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,7 @@ Voici une bannière shoppable dotée d’une fenêtre pop-up d’aperçu rapide.
 
 ![chlimage_1-152](assets/chlimage_1-368.png)
 
-Voir [les images interactives en action](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html) sur la page web illustrée ci-dessus.
+Voir [les images interactives en action](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html) sur la page web illustrée ci-dessus.
 
 ## Découvrir comment les bannières d’images interactives sont créées {#watch-how-interactive-image-banners-are-created}
 
@@ -29,7 +29,7 @@ Regardez une présentation détaillée de [comment les bannières d’images int
 
 La description suivante du workflow étape par étape est conçue pour vous aider à démarrer et à utiliser rapidement les images interactives dans Adobe Experience Manager Assets.
 
-Recherchez le titre **Exemple** dans certaines tâches de démarrage rapide. Il contient un court tutoriel reposant sur [l’exemple de page web suivant qui ne contient pas encore d’images interactives](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html).
+Recherchez le titre **Exemple** dans certaines tâches de démarrage rapide. Il contient un court tutoriel reposant sur [l’exemple de page web suivant qui ne contient pas encore d’images interactives](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html).
 
 
 
@@ -147,7 +147,7 @@ Consultez les exemples suivants d’URL d’aperçu rapide et les variables de z
 
 **Exemple**
 
-Vous pouvez appliquer la même approche utilisée dans les trois exemples ci-dessus à la [page web de démonstration](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html).
+Vous pouvez appliquer la même approche utilisée dans les trois exemples ci-dessus à la [page web de démonstration](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html).
 
 La page web de démonstration comporte plusieurs miniatures de produit, chacune disposant d’un bouton d’aperçu rapide libellé « En voir plus ». L’outil de débogage de votre navigateur web étant toujours activé, cliquez sur chaque bouton et notez les URL d’aperçus rapides enregistrées. Une fois que vous avez activé les quatre aperçus rapides du produit disponibles sur la page, vous obtenez la liste suivante des demandes d’aperçu rapide qui sont envoyées au serveur principal :
 
@@ -339,13 +339,13 @@ Le code intégré copié est défini pour un environnement réactif afin qu’il
 
 **Exemple**
 
-En prenant comme exemple le [site web de démonstration](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html), notez que l’image des trois personnes est une balise `IMG` statique :
+En prenant comme exemple le [site web de démonstration](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html), notez que l’image des trois personnes est une balise `IMG` statique :
 
 ```xml
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-L’intégration est aussi simple que de supprimer la balise `IMG` et de la remplacer par le code intégré copié à partir des ressources du Experience Manager. Vous pouvez voir que le résultat [montre l’image interactive Shoppable sur la page avec trois zones réactives en cercle](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html).
+L’intégration est aussi simple que de supprimer la balise `IMG` et de la remplacer par le code intégré copié à partir des ressources du Experience Manager. Vous pouvez voir que le résultat [montre l’image interactive Shoppable sur la page avec trois zones réactives en cercle](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html).
 
 >[!NOTE]
 À ce stade, les zones réactives de l’image interactive Shoppable du site web de démonstration sont en mode affichage uniquement. Elles ne sont pas encore intégrées aux aperçus rapides existants.
@@ -490,7 +490,7 @@ Voici le code source complet :
  s7interactiveimageviewer.init();
 ```
 
-Le [site web de démonstration final avec l’image interactive entièrement intégrée](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html).
+Le [site web de démonstration final avec l’image interactive entièrement intégrée](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html).
 
 ## Utilisation d’aperçus rapides afin de créer des fenêtres pop-up personnalisées {#using-quickviews-to-create-custom-pop-ups}
 
