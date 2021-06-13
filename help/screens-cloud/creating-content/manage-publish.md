@@ -4,10 +4,10 @@ description: Cette page décrit comment publier un canal dans Screens en tant qu
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2f49c34a0d45e4fe2793f0a5bfe04f85dbb892ad
+source-git-commit: bb0cbbeed98d38a3f22eea0a306c6c76b552aacd
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 0%
+source-wordcount: '315'
+ht-degree: 16%
 
 ---
 
@@ -32,13 +32,22 @@ Ce document vous aide à comprendre la création d’un projet pour votre projet
 
 Pour publier le canal, procédez comme suit :
 
-1. Naviguez et sélectionnez le canal de votre projet, par exemple **FirstDigitalExperience** —> Canaux —> ChannelFood.
+1. Accédez au canal de votre projet et sélectionnez-le, par exemple **FirstDigitalExperience** —> **Canaux** —> **LoopingChannelOne**.
+
+   ![](/help/screens-cloud/assets/create-content/managepub-1.png)
 
 1. Cliquez sur **Gérer la publication** dans la barre d’actions.
 
-1. Sélectionnez l’action Publier et Planifier comme maintenant dans l’assistant Gérer la publication et cliquez sur **Suivant**.
+1. Sélectionnez **Action** comme **Publier** et **Planification** comme **Maintenant** dans l’ **assistant Gérer la publication** et cliquez sur **Suivant**.
+
+   ![](/help/screens-cloud/assets/create-content/managepub-2.png)
+
+   >[!NOTE]
+   >Cliquez sur **+ Inclure les enfants** dans la barre d’actions et désactivez toutes les options pour publier tous les modules de votre projet, puis cliquez sur Ajouter pour publier. Par défaut, toutes les cases seront cochées et vous devrez les décocher manuellement pour publier tous les modules de votre projet.
 
 1. Après avoir sélectionné le canal à partir de l’assistant **Gérer la publication** , cliquez sur **Publier** pour publier le canal.
+
+   ![](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
 ## Suite {#whats-next}
@@ -48,4 +57,4 @@ Maintenant que vous avez publié vos canaux dans le projet, vous pouvez :
 * Créer et gérer des emplacements à partir du fournisseur de contenu Screens
 * Création et gestion de lecteurs à partir du fournisseur de services Screens
 
-   Continuez votre parcours d’administrateur réseau Screens en tant qu’administrateur réseau de Cloud Service en consultant le document.
+   Continuez votre parcours Screens en tant que Cloud Service en consultant le document.
