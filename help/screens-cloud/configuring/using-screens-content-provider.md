@@ -1,12 +1,12 @@
 ---
 title: Utilisation du fournisseur de contenu Screens
-description: Cette page décrit l’utilisation du fournisseur de contenu Screens.
+description: Cette page décrit comment utiliser le fournisseur de contenu Screens pour créer du contenu.
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '179'
 ht-degree: 1%
 
 ---
@@ -32,5 +32,6 @@ Une fois que vous êtes connecté au fournisseur de contenu Screens, vous êtes 
 
 ## Suite {#whats-next}
 
-Une fois que vous avez appris à accéder au fournisseur de contenu Screens, vous pouvez accéder à l’étape suivante : Création et gestion de projets dans Screens en tant que Cloud Service.
+Maintenant que vous avez appris à accéder au fournisseur de contenu Screens, vous devez continuer votre parcours Screens en tant que Cloud Service en consultant le document [Création et gestion de projets dans Screens en tant que Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
+
 
