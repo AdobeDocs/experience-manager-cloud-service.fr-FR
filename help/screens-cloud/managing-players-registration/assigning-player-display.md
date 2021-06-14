@@ -4,9 +4,9 @@ description: Cette page décrit comment attribuer un lecteur à un affichage dan
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '218'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ Une fois le projet configuré, vous devez attribuer le lecteur à un affichage p
 
 ## Intention {#objective}
 
-Ce document vous aide à comprendre comment créer et gérer des affichages dans le fournisseur de services Screens. Après lecture, vous devriez être en mesure d’apprendre à attribuer un lecteur à un affichage.
+Ce document vous aide à comprendre comment attribuer un lecteur à un affichage dans le fournisseur de services Screens. Il s’agit des dernières étapes obligatoires avant que le contenu ne commence à être lu dans Screens en tant que lecteur Cloud Service.
 
 ## Étapes pour attribuer un lecteur à un affichage {#create-display}
 
@@ -36,7 +36,7 @@ Pour attribuer un lecteur à un affichage, procédez comme suit :
 
 1. Une fois que vous avez cliqué sur Sélectionner, l’affichage affecté s’affiche sous le panneau **AFFICHAGE ATTRIBUÉ** .
 
-   Désormais, l’affichage est attribué à votre lecteur et le canal commence à lire le contenu. Le lecteur doit maintenant télécharger et commencer à lire le contenu. Félicitations ! 
+   Désormais, l’affichage est attribué à votre lecteur et le canal commence à lire le contenu. Le lecteur doit maintenant télécharger et commencer à lire le contenu. **Félicitations!**
 
    ![image](/help/screens-cloud/assets/player/output.gif)
 
