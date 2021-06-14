@@ -4,10 +4,10 @@ description: Cette page décrit comment utiliser le fournisseur de contenu Scree
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: 864c9cf72b0c552867422ee59bf85b11b9673ac7
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +28,11 @@ La section suivante décrit comment utiliser le fournisseur de contenu Screens, 
 >**Prérequis**
 >Avant de commencer à lire cette section, reportez-vous à la section [Configuration du fournisseur de services Screens](/help/screens-cloud/setting-up-project/setting-up-screens-services-provider.md) pour savoir comment accéder à cette interface utilisateur à partir du fournisseur de services Screens.
 
-Une fois que vous êtes connecté au fournisseur de contenu Screens, vous êtes prêt à créer votre contenu lors de la lecture du contenu.
+Une fois que vous êtes connecté au fournisseur de contenu Screens, vous êtes prêt à créer votre contenu lors de la lecture du contenu. Utilisez le fournisseur de contenu Screens pour créer et gérer :
+
+* Projets
+* Canaux
+* Emplacements
 
 ## Suite {#whats-next}
 
