@@ -4,15 +4,15 @@ description: Cette page décrit comment installer des lecteurs dans Screens en t
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '262'
 ht-degree: 2%
 
 ---
 
 
-# Installation des lecteurs dans Screens en tant que Cloud Service {#installing-players-screens-cloud}
+# Installation et configuration des lecteurs dans Screens en tant que Cloud Service {#installing-players-screens-cloud}
 
 La section ci-dessous décrit comment installer des lecteurs AEM Screens enregistrés sur des instances d’AEM on-premise. De plus, vous devez réinitialiser le lecteur existant en usine, puis enregistrer le nouveau lecteur en tant que Cloud Service dans AEM Screens.
 
