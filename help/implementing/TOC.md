@@ -5,10 +5,10 @@ breadcrumb-title: Guide d’implémentation
 user-guide-description: Découvrez comment personnaliser votre déploiement d’Experience Manager as a Cloud Service, y compris des rubriques sur le déploiement et le développement.
 feature: Outils de développement
 role: Developer, Architect
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 9e64772ac26888e5c1f4c77ffce6048286357e93
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 95%
+source-wordcount: '898'
+ht-degree: 96%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 95%
       + [Annulation de l’application d’une liste d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
       + [Suppression d’une liste autorisée d’adresses IP](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [Contrôle du statut d’une liste d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
-   + [FAQ relative à Cloud Manager](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
+   + [FAQ sur Cloud Manager](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
 + Gestion de votre code {#managing-code}
    + [Gestion des versions du projet Maven](cloud-manager/project-version-handling.md)
    + [Accès à Git](cloud-manager/accessing-git.md)
@@ -70,7 +70,7 @@ ht-degree: 95%
    + [Journalisation](developing/introduction/logging.md)
    + [Configurations et l’explorateur de configurations](developing/introduction/configurations.md)
    + [Fondements techniques d’AEM](/help/implementing/developing/introduction/aem-technologies.md)
-   + [API d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [API d’AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)
    + [Génération de jetons d’accès pour les API côté serveur](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + [Couplage et découplage dans AEM](developing/headful-headless.md)
    + Développement full stack avec AEM {#full-stack}
