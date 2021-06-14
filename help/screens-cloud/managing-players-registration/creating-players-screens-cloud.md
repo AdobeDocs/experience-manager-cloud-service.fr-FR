@@ -4,18 +4,22 @@ description: Cette page décrit comment créer et gérer des lecteurs dans Scree
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8c58378660d865e90a0f5e562119c510cf86343a
+source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 13%
+source-wordcount: '282'
+ht-degree: 12%
 
 ---
 
 
 # Création et gestion des lecteurs dans Screens en tant que Cloud Service {#creating-players-screens-cloud}
 
-Une fois que vous avez publié les canaux de votre projet AEM Screens, vous devez créer des lecteurs.
+Une fois que vous avez publié les canaux de votre projet AEM Screens, vous devez créer des lecteurs à partir du fournisseur de services Screens.
+
 Un *lecteur* exécute le logiciel du lecteur pour produire une sortie visuelle. Il peut contrôler l’affichage d’une partie recadrée, redimensionnée ou traduite de l’expérience ou du contenu communs. La configuration d’écran est associée à un affichage, mais peut être remplacée si un problème technique survient.
+
+>[!NOTE]
+>Vous pouvez également mettre en oeuvre les étapes mentionnées dans ce guide, après avoir installé le lecteur Screens.
 
 ## Intention {#objective}
 
@@ -26,10 +30,12 @@ Ce document vous aide à comprendre la création et la gestion de lecteurs pour 
 
 ## Création d’un lecteur {#creating-players}
 
-Pour créer l’affichage à partir du fournisseur de services Screens, procédez comme suit :
+Pour créer le lecteur à partir du fournisseur de services Screens, procédez comme suit :
 
-1. Accédez au fournisseur de services Screens à partir de votre instance de Cloud Service AEM.
-1. Sélectionnez l’onglet **Affichages** dans la barre de navigation de gauche et cliquez sur Créer dans le coin supérieur droit de l’écran.
+1. Accédez au fournisseur de services Screens.
+
+1. Sélectionnez l’onglet **Affichages** dans le panneau de navigation de gauche et cliquez sur Créer dans le coin supérieur droit de l’écran.
+
 1. Sélectionnez **Affichage**.
 1. Saisissez le titre **ChannelFoodDisplay** dans Nom d’affichage, puis cliquez sur Créer.
 1. L’affichage intitulé ChannelFoodDisplay est désormais enregistré dans la liste d’affichage.
