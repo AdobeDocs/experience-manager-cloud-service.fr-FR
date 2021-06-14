@@ -4,9 +4,9 @@ description: Cette page décrit comment publier un canal dans Screens en tant qu
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bb0cbbeed98d38a3f22eea0a306c6c76b552aacd
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '308'
 ht-degree: 16%
 
 ---
@@ -52,9 +52,4 @@ Pour publier le canal, procédez comme suit :
 
 ## Suite {#whats-next}
 
-Maintenant que vous avez publié vos canaux dans le projet, vous pouvez :
-
-* Créer et gérer des emplacements à partir du fournisseur de contenu Screens
-* Création et gestion de lecteurs à partir du fournisseur de services Screens
-
-   Continuez votre parcours Screens en tant que Cloud Service en consultant le document.
+Maintenant que vous avez publié vos canaux dans le projet, vous devez continuer votre parcours Screens en tant que Cloud Service en consultant le document [Installation et configuration des lecteurs dans Screens en tant que Cloud Service](/help/screens-cloud/creating-content/manage-publish.md).
