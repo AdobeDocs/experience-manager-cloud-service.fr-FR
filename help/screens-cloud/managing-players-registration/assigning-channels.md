@@ -4,10 +4,10 @@ description: Cette page décrit comment attribuer un canal à un affichage dans 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2514255c20a87a2e469c1678e6aee20a517eb9ab
+source-git-commit: 8108589cb69c31e1b6d838476efc56684a97728e
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 18%
+source-wordcount: '289'
+ht-degree: 37%
 
 ---
 
@@ -18,9 +18,7 @@ Une fois le projet configuré, vous devez attribuer le canal à un affichage pou
 
 ## Intention {#objective}
 
-Ce document vous aide à comprendre comment attribuer un canal à un affichage, une fois que votre affichage est prêt et que le contenu du canal est renseigné. Après lecture, vous devez :
-
-* Découvrez comment attribuer un canal à un affichage à partir du fournisseur de services Screens.
+Ce document vous aide à comprendre comment attribuer un canal à un affichage, une fois que votre affichage est prêt et que vous avez ajouté du contenu à votre canal et que vous l’avez publié. Après avoir lu, vous devriez être en mesure d’attribuer un canal à un affichage à partir du fournisseur de services Screens.
 
 ## Prérequis {#prerequisites}
 
@@ -35,10 +33,24 @@ Suivez les étapes ci-dessous pour attribuer un canal à un affichage :
 
 1. Accédez à Fournisseur de services Screens et sélectionnez **Affichages** dans le panneau de navigation de gauche.
 
-1. Sélectionnez l’affichage, par exemple ChannelFoodDisplay dans la liste, puis cliquez sur Attribuer un canal pour attribuer un canal à l’affichage.
+1. Cliquez sur **Attribuer le canal** à l’affichage.
 
-1. Sélectionnez le canal, par exemple ChannelFood dans la liste déroulante. Définissez la priorité et l’activation, puis cliquez sur Créer.
+   ![image](/help/screens-cloud/assets/display/assignchannel-1.png)
+
+1. Renseignez les champs suivants à partir de la boîte de dialogue **Attribuer un canal** .
+
+   1. Sélectionnez le nom du canal dans la liste déroulante.
+   1. Choisissez la priorité.
+
+      >[!NOTE]
+      >La priorité est utilisée pour contrôler les attributions au cas où plusieurs d’entre elles correspondent aux critères de lecture. Celle présentant la valeur la plus élevée est toujours prioritaire par rapport aux valeurs plus faibles. Par exemple, s’il existe deux canaux A et B, A ayant une priorité de 1 et B une priorité de 2, alors le canal B est affiché, car il présente une priorité supérieure à celle de A.
+   1. Sélectionnez la date de début et la date de fin dans **Activation**.
+
+      ![image](/help/screens-cloud/assets/display/assignchannel-2.png)
+
+1. Cliquez sur **Créer**. Le contenu attribué à un canal s’affiche pour cet affichage, comme illustré dans la figure ci-dessous.
+
+   ![image](/help/screens-cloud/assets/display/assignchannel-3.png)
 
 
-   Une fois que vous avez cliqué sur Créer , vous verrez le canal qui est attribué à cet affichage.
 
