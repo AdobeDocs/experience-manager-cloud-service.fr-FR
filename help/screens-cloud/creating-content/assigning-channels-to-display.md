@@ -4,7 +4,7 @@ description: Cette page décrit comment attribuer un canal à un affichage dans 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 40%
@@ -71,4 +71,4 @@ Suivez les étapes ci-dessous pour attribuer un canal à un affichage :
 
 ## Suite {#whats-next}
 
-Maintenant que vous avez attribué le canal à un affichage, vous devez continuer votre parcours Screens en tant que Cloud Service en consultant le document **Installation et configuration du lecteur Screens pour AEM en tant que Cloud Service**.
+Maintenant que vous avez attribué le canal à un affichage, vous devez continuer votre parcours Screens en tant que Cloud Service en consultant le document [Installation et configuration du lecteur Screens pour AEM en tant que Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).
