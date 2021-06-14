@@ -2,9 +2,9 @@
 title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3f579f6871da8e8b2fcea921e5abf57dfc14f5f8
+source-git-commit: f447303d3618eb2e9ea38873c88ed04280670218
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1685'
 ht-degree: 15%
 
 ---
@@ -143,7 +143,7 @@ La prochaine version est prévue pour le 15 juillet 2021.
 
 * La règle de qualité `ImmutableMutableMixCheck` a été mise à jour afin de classer les noeuds `/oak:index` comme étant immuables.
 
-* Les règles de qualité `CQBP-84` et `CQBP-84--dependencies` ont été consolidées dans une seule règle.
+* Les règles de qualité `CQBP-84` et `CQBP-84--dependencies` ont été consolidées dans une seule règle. Dans le cadre de cette consolidation, l’analyse des dépendances identifie plus précisément les problèmes des dépendances tierces qui sont déployés sur le runtime AEM.
 
 * Pour éviter toute confusion, les lignes de segment AEM de publication et Publier Dispatcher sur la page Détails de l’environnement ont été consolidées.
 
