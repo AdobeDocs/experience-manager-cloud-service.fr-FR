@@ -1,18 +1,18 @@
 ---
-title: Configuration du fournisseur de services Screens
-description: Cette page décrit la configuration du fournisseur de services Screens.
+title: Accès au fournisseur de services Screens
+description: Cette page décrit comment accéder au fournisseur de services Screens.
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '211'
 ht-degree: 1%
 
 ---
 
 
-# Configuration du fournisseur de services Screens {#setup-screens-services-provider}
+# Accès au fournisseur de services Screens {#setup-screens-services-provider}
 
 ## Présentation {#introduction}
 
@@ -44,5 +44,5 @@ Suivez les étapes ci-dessous pour configurer le fournisseur de services Screens
 
 ## Suite {#whats-next}
 
-Une fois que vous avez appris à configurer le fournisseur de services Screens, accédez à Fournisseur de contenu Screens pour plus d’informations.
+Une fois que vous avez appris à configurer le fournisseur de services Screens, accédez à [Utilisation du fournisseur de contenu Screens](/help/screens-cloud/configuring/using-screens-content-provider.md) pour plus d’informations.
 
