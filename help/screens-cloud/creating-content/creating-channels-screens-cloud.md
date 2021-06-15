@@ -4,10 +4,10 @@ description: Cette page décrit comment créer et gérer des canaux dans Screens
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ece3fae8b65b4dbdc38e63a211a3f55f4eb91333
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 15%
+source-wordcount: '540'
+ht-degree: 16%
 
 ---
 
@@ -19,10 +19,10 @@ Une fois que vous avez créé un projet AEM Screens, vous devez créer des canau
 
 ## Intention {#objective}
 
-Ce document vous aide à comprendre la création et la gestion de canaux pour votre projet AEM Screens dans le fournisseur de contenu Screens. Après lecture, vous devez :
+Ce document vous aide à comprendre la création et la gestion de canaux pour votre projet AEM Screens dans le fournisseur de contenu Screens. Après lecture, vous devez être :
 
-* Découvrez comment créer des canaux pour le fournisseur de contenu Screens.
-* Gérez vos canaux dans un projet AEM Screens, en termes de portée.
+* Découvrez comment créer des canaux pour le fournisseur de contenu Screens
+* gestion et modification du contenu de vos canaux
 
 ## Procédure de création d’un canal de séquence dans Screens en tant que Cloud Service {#create-new-channel}
 
@@ -44,7 +44,7 @@ Pour créer un canal de séquence dans Screens en tant que Cloud Service, procé
 
    ![](/help/screens-cloud/assets/create-content/channel-create2.png)
    >[!NOTE]
-   > L’assistant **Créer** fournit différents types de modèles lors de la création d’un canal. Pour plus d’informations, reportez-vous à la section Modèles disponibles de l’assistant de création .
+   > L’assistant **Créer** fournit différents types de modèles lors de la création d’un canal. Pour plus d’informations, reportez-vous à la section [Modèles disponibles](#available-templates) de l’assistant de création.
 
 1. Saisissez le nom de votre canal de séquence, par exemple **LoopingChannelOne** et cliquez sur **Créer**.
 
@@ -52,7 +52,7 @@ Pour créer un canal de séquence dans Screens en tant que Cloud Service, procé
 
    Un **LoopingChannelOne** apparaît désormais dans le dossier Canaux de votre projet AEM Screens.
 
-1. Une fois que vous avez créé le canal, vous pouvez maintenant ajouter du contenu à votre canal. Reportez-vous à la section [Ajout de contenu à un canal](#add-content) pour savoir comment ajouter des ressources (images/vidéos) à votre canal.
+   Une fois que vous avez créé le canal, vous pouvez maintenant ajouter du contenu à votre canal. Reportez-vous à la section [Ajout de contenu à un canal](#add-content) pour savoir comment ajouter des ressources (images/vidéos) à votre canal.
 
 ## Gestion d’un canal {#managing-channels}
 
@@ -82,7 +82,7 @@ Pour ajouter du contenu à un canal ou modifier son contenu, suivez les étapes 
 
 ## Modèles disponibles dans l’assistant de création {#available-templates}
 
-Les modèles suivants sont disponibles lors de l’utilisation de l’assistant de canal **Créer** , tel que :
+Les modèles suivants sont disponibles lors de l’utilisation de l’assistant de canal **Créer** :
 
 | Modèles disponibles | Description |
 |--- |--- |
