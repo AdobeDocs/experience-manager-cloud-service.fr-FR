@@ -4,9 +4,9 @@ description: Cette page décrit comment créer un projet dans Screens en tant qu
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 7e1e1a96b4657c536b999b6deaccfe8d537263bd
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ La première étape de la mise en oeuvre d’un projet dans Screens en tant que 
 
 ## Intention {#objective}
 
-Ce document vous aide à comprendre comment créer un projet pour votre projet AEM Screens dans le fournisseur de contenu Screens. Après lecture, vous devriez être en mesure de créer votre projet AEM Screens, en termes de portée.
+Ce document vous aide à comprendre comment créer un projet AEM Screens dans le fournisseur de contenu Screens. Après lecture, vous devriez être en mesure de créer votre projet AEM Screens, en termes de portée.
 
 ## Création d’un projet {#create-new-project}
 
@@ -40,13 +40,9 @@ Pour créer un projet dans Screens en tant que Cloud Service, procédez comme su
    >[!NOTE]
    >Le champ **Nom** est automatiquement renseigné dans la boîte de dialogue **Créer un projet Screens** en fonction du titre que vous choisissez.
 
-1. Cliquez sur **Enregistrer**. Votre projet Screens s’affiche, intitulé *FirstDigitalExperience* dans le fournisseur de contenu Screens.
+1. Cliquez sur **Enregistrer**. Votre projet Screens s’affiche, intitulé *FirstDigitalExperience* dans le fournisseur de contenu Screens. Votre projet apparaît dans le fournisseur de contenu Screens, avec deux dossiers intitulés **Emplacements** et **Canaux**.
 
    ![](/help/screens-cloud/assets/create-content/create-screens-project3.png)
-
-1. Votre projet apparaît dans le fournisseur de contenu Screens, avec deux dossiers intitulés **Emplacements** et **Canaux**.
-
-   ![](/help/screens-cloud/assets/create-content/create-screens-project4.png)
 
    Maintenant que vous avez configuré un projet AEM Screens, vous pouvez commencer à ajouter des canaux et des emplacements à votre projet.
 
