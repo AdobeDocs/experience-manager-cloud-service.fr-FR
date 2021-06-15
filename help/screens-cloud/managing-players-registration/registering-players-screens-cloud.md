@@ -4,9 +4,9 @@ description: Cette page décrit comment enregistrer des lecteurs dans Screens en
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '395'
 ht-degree: 1%
 
 ---
@@ -18,10 +18,10 @@ Une fois que vous avez installé et configuré les lecteurs pour Screens en tant
 
 ## Intention {#objective}
 
-Ce document vous aide à comprendre l’enregistrement des lecteurs dans le fournisseur de services Screens. Après lecture, vous devez :
+Ce document vous aide à comprendre l’enregistrement des lecteurs dans le fournisseur de services Screens. Après lecture, vous devriez être en mesure de :
 
-* Découvrez comment enregistrer des lecteurs.
-* Gérez vos canaux dans un projet AEM Screens, en termes de portée.
+* comprendre comment enregistrer des lecteurs
+* Comment terminer le processus d’enregistrement auprès du fournisseur de services Screens
 
 ## Procédure d’enregistrement d’un lecteur Screens {#register-players}
 
@@ -66,3 +66,6 @@ Pour enregistrer votre lecteur, procédez comme suit :
 
    ![image](/help/screens-cloud/assets/player/register-player6.png)
 
+## Suite {#whats-next}
+
+Maintenant que vous avez installé et configuré le lecteur en mode cloud, vous devez continuer votre parcours Screens en tant que Cloud Service en consultant le document [Attribution du lecteur à un affichage dans Screens en tant que Cloud Service](/help/screens-cloud/managing-players-registration/assigning-player-display.md) du fournisseur de services Screens.
