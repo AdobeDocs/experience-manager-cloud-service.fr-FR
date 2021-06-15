@@ -4,9 +4,9 @@ description: Cette page présente un aperçu de l’utilisation de Cloud Acceler
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: a8e6b9e2c001c135bf2739ef873e75c22b8c025e
+source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '480'
 ht-degree: 4%
 
 ---
@@ -54,14 +54,41 @@ Suivez les étapes ci-dessous pour créer un projet
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-3.png)
 
-   Sélectionnez le projet et survolez-le avec la souris pour le modifier ou le supprimer, comme illustré dans la figure ci-dessous.
+1. Le projet est maintenant créé et s’affiche sur la page d’entrée **Cloud Acceleration Manager** .
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing.png)
 
 1. Cliquez sur la carte du projet pour accéder au projet. Vous accédez alors à la page d’entrée du projet.
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-5.png)
 
+## Gestion du projet {#manage-project}
+
+Vous pouvez modifier le nom, la description, l’image miniature ou supprimer le projet.
+
+### Modification du projet {#edit-project}
+
+Pour modifier votre projet, procédez comme suit :
+
+1. Sélectionnez le projet, survolez-le avec la souris, puis cliquez sur l’icône en forme de crayon pour le modifier, comme illustré dans la figure ci-dessous.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+
+1. Vous pouvez modifier le nom, la description et même télécharger une nouvelle image ou en modifier une existante à partir de la boîte de dialogue **Modifier le projet**.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-edit.png)
+
+1. Cliquez sur **Mettre à jour** pour valider vos modifications.
+
+### Suppression du projet {#delete-project}
+
+Pour supprimer votre projet, procédez comme suit :
+
+1. Sélectionnez le projet, survolez-le avec la souris, puis cliquez sur l’icône de compartiment pour supprimer le projet, comme illustré dans la figure ci-dessous.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+
+1. Cliquez sur **Supprimer** pour confirmer l’étape.
 
 ## Suite {#whats-next}
 
