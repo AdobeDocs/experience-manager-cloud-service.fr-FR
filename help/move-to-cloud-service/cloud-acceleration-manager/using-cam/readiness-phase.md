@@ -4,9 +4,9 @@ description: Cette page présente un aperçu de la phase de préparation de Clou
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 5af319d30198329fd2312c11d88bf326bc4cdae7
+source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '349'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,12 @@ La phase de préparation comprend :
 * [Analyse des bonnes pratiques](#best-practices-analysis)
 * [Planification et configuration](#planning-setup)
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+Cliquez sur la carte de votre projet pour ouvrir la page d’entrée du projet et accédez à la section **Préparation**, comme illustré dans la figure ci-dessous.
+
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+
+>[!NOTE]
+>Pour en savoir plus, voir [Création et gestion d’un projet dans Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md).
 
 ## Utilisation de la carte d’analyse des bonnes pratiques {#best-practices-analysis}
 
