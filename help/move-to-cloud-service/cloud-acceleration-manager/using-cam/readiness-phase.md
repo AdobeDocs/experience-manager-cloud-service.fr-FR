@@ -4,9 +4,9 @@ description: Cette page présente un aperçu de la phase de préparation de Clou
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
+source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '350'
 ht-degree: 3%
 
 ---
@@ -56,7 +56,7 @@ Suivez les étapes ci-dessous pour utiliser la carte Analyse des bonnes pratique
    * Utilisez l’icône Détails pour afficher les détails de chaque recherche de rapport.
    * Le téléchargement d’un nouveau rapport réinitialise toutes les évaluations.
 
-## Utilisation de la planification et de la configuration {#planning-setup}
+## Utilisation de la carte Planification et configuration {#planning-setup}
 
 Consultez cette section pour découvrir la carte de l’activité Planification et configuration .
 
