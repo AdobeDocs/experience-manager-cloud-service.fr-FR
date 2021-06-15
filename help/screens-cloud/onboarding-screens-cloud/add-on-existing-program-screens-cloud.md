@@ -4,10 +4,10 @@ description: Cette page décrit l’ajout d’un module complémentaire Screens 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9d3c43f863cff3117186cd6bcf358a7069a6b255
+source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 2%
+source-wordcount: '269'
+ht-degree: 1%
 
 ---
 
@@ -27,7 +27,7 @@ Les étapes suivantes vous permettront d’apprendre à ajouter un module compl�
 
 Pour ajouter Screens en tant que module complémentaire à un programme existant, procédez comme suit :
 
-1. Accéder à Cloud Manager.
+1. Accédez à [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
    >Pour en savoir plus sur Cloud Manager, voir [Présentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en) .
