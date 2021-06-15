@@ -4,10 +4,10 @@ description: Cette page présente un aperçu de la phase de mise en oeuvre dans 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 5af319d30198329fd2312c11d88bf326bc4cdae7
+source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 3%
+source-wordcount: '563'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,14 @@ La phase de mise en oeuvre comprend :
 * [AEM en tant que déploiement Cloud Service](#aem-as-a-cloud-service-deployment)
 * [Transfert de contenu](#content-transfer)
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-1.png)
+
+Cliquez sur la carte de votre projet pour ouvrir la page d’entrée du projet et accédez à la section **Mise en oeuvre**, comme illustré dans la figure ci-dessous.
+
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-1.png)
+
+>[!NOTE]
+>Pour en savoir plus, voir [Création et gestion d’un projet dans Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md).
+
 
 ## Utilisation de la carte de développement locale {#local-development}
 
@@ -62,13 +69,13 @@ La carte AEM as a Cloud Service Deployment fournit tout le contenu approprié qu
 
 Consultez cette section pour découvrir AEM comme carte d’activité Carte de déploiement Cloud Service :
 
-1. Cliquez sur le bouton **Afficher** de la carte **AEM en tant que déploiement de Cloud Service**.
+1. Cliquez sur le bouton **Afficher** de la carte d’activité **AEM en tant que Cloud Service Deployment** .
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-4.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-6.png)
 
 1. Un carrousel de contenu contenant des informations pertinentes pour cette phase du parcours de migration s’affiche.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-7.png)
 
 
 ## Utilisation de la carte de transfert de contenu {#content-transfer}
@@ -77,17 +84,25 @@ La carte d’activité Transfert de contenu fournit des conseils et des considé
 
 Suivez cette section pour explorer la carte d’activité Transfert de contenu :
 
-1. Cliquez sur le bouton **Afficher** à partir de la carte **Développement local**.
+1. Cliquez sur le bouton **Afficher** à partir de la carte d’activité **Transfert de contenu**.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-4.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-8.png)
 
 1. Un carrousel de contenu contenant des informations pertinentes pour cette phase du parcours de migration s’affiche.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-9.png)
 
->[!NOTE]
->Veuillez consulter les [conditions préalables](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) et les [bonnes pratiques et instructions](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en) avant d’utiliser l’outil de transfert de contenu.
+   >[!NOTE]
+   >Veuillez consulter les [conditions préalables](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) et les [bonnes pratiques et instructions](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en) avant d’utiliser l’outil de transfert de contenu.
 
-Un nouveau calculateur d’outil de transfert de contenu a été fourni pour estimer le temps nécessaire à l’exécution de l’activité de transfert de contenu. Vous pouvez utiliser le curseur de taille du référentiel de contenu pour sélectionner la taille qui s’applique à votre projet. Les délais de transfert varient selon les phases d’extraction et d’ingestion. Pour estimer la taille du référentiel AEM, vous pouvez exécuter le rapport Utilisation du disque sous `http://HOST:PORT/etc/reports/diskusage.html`.
+### Estimation de l’activité de l’outil de transfert de contenu {#calculating}
+
+Un nouveau calculateur d’outil de transfert de contenu a été fourni pour estimer le temps nécessaire à l’exécution de l’activité de transfert de contenu. Vous pouvez utiliser le curseur de taille du référentiel de contenu pour sélectionner la taille qui s’applique à votre projet. Les délais de transfert varient selon les phases d’extraction et d’ingestion.
+
+Pour estimer la taille du référentiel AEM, vous pouvez exécuter le rapport Utilisation du disque sous `http://HOST:PORT/etc/reports/diskusage.html`.
 
 Vous pouvez également estimer la taille des chemins de référentiel spécifiques à l’aide du paramètre `path`, par exemple `http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`.
+
+## Suite {#whats-next}
+
+Une fois que vous avez appris à vous connecter à Cloud Acceleration Manager et à utiliser la phase de mise en oeuvre, vous êtes prêt à passer à l’étape suivante, Utilisation de la phase de GoLive.
