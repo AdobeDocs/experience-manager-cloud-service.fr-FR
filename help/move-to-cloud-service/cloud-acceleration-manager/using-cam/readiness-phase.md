@@ -4,9 +4,9 @@ description: Cette page présente un aperçu de la phase de préparation de Clou
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b1be8759dd246a8819e8546e3c72f391e26a8dc5
+source-git-commit: 5af319d30198329fd2312c11d88bf326bc4cdae7
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '312'
 ht-degree: 3%
 
 ---
@@ -18,20 +18,20 @@ Une fois que vous avez créé un projet dans Cloud Acceleration Manager, vous po
 
 La phase de préparation comprend :
 
-* Analyse des bonnes pratiques
-* Planification et configuration
+* [Analyse des bonnes pratiques](#best-practices-analysis)
+* [Planification et configuration](#planning-setup)
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
 
-## Utilisation de l’analyse des bonnes pratiques {#best-practices-analysis}
+## Utilisation de la carte d’analyse des bonnes pratiques {#best-practices-analysis}
 
-Suivez les étapes ci-dessous pour utiliser l’analyse des bonnes pratiques :
+Suivez les étapes ci-dessous pour utiliser la carte Analyse des bonnes pratiques :
 
 1. Cliquez sur le bouton **Réviser** de la carte **Analyse des bonnes pratiques**.
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
 
-1. Suivez ces étapes pour télécharger l’analyseur des bonnes pratiques et l’exécuter sur un clone de votre système AEM.
+1. Suivez ces étapes pour télécharger BPA (Best Practices Analyzer) et l’exécuter sur un clone de votre système AEM.
 
    1. Accédez au portail [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) et téléchargez l’analyseur des bonnes pratiques sous la forme d’un fichier zip.
 
@@ -46,9 +46,9 @@ Suivez les étapes ci-dessous pour utiliser l’analyse des bonnes pratiques :
 
 1. Consultez et explorez le tableau de bord de l’analyse des bonnes pratiques dans CAM.
 
-   * Cliquer sur chaque carte ouvre l’onglet associé.
-   * Tous les onglets de rapport (y compris le filtrage) peuvent être mis en signet pour le partage ou une récupération ultérieure.
-   * Afficher les détails de chaque résultat de rapport via l&#39;icône de détail
+   * Cliquez sur chaque carte pour ouvrir son onglet associé.
+   * Vous pouvez mettre en signet tous les onglets du rapport (y compris le filtrage) pour le partage ou une récupération ultérieure.
+   * Utilisez l’icône Détails pour afficher les détails de chaque recherche de rapport.
    * Le téléchargement d’un nouveau rapport réinitialise toutes les évaluations.
 
 ## Utilisation de la planification et de la configuration {#planning-setup}
@@ -66,8 +66,5 @@ Consultez cette section pour découvrir la carte de l’activité Planification 
 ## Suite {#whats-next}
 
 Une fois que vous avez appris à vous connecter à Cloud Acceleration Manager et à créer un projet, vous êtes prêt à passer à l’étape suivante, à l’aide de la phase de mise en oeuvre.
-
-
-
 
 
