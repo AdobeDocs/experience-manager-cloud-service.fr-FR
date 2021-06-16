@@ -4,10 +4,10 @@ description: Découvrez comment l’éditeur de fragment de contenu utilise la s
 feature: Fragments de contenu
 role: Business Practitioner
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 93%
+source-wordcount: '524'
+ht-degree: 90%
 
 ---
 
@@ -165,7 +165,7 @@ Vous pouvez mettre du texte en gras comme suit :
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Pour désigner une plage de code, entourez-la de guillemets obliques (`). Contrairement à un bloc de code préformaté, une plage de code indique du code dans un paragraphe normal.
+Pour indiquer une plage de code, entourez-la de guillemets antiretour (&amp;grave;). Contrairement à un bloc de code préformaté, une plage de code indique du code dans un paragraphe normal.
 
 Par exemple :
 
