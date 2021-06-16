@@ -4,9 +4,9 @@ description: Cette page présente un aperçu de la phase de préparation de Clou
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8f219a2b59f3526824cf4c93cb7a0f6fe99eabc7
+source-git-commit: 92c1119682ab381a7e107b15470abdc8444bd18c
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '452'
 ht-degree: 3%
 
 ---
@@ -61,28 +61,35 @@ Suivez les étapes ci-dessous pour utiliser la carte Analyse des bonnes pratique
 
 1. Consultez et explorez le tableau de bord de l’analyse des bonnes pratiques dans CAM. Pour plus d’informations, reportez-vous à la section ci-dessous [Examen du rapport d’analyse des bonnes pratiques](#analysis-report) .
 
+   >[!NOTE]
+   >Le téléchargement d’un nouveau rapport réinitialise toutes les évaluations.
+
 ### Rapport Analyse des bonnes pratiques {#analysis-report}
 
-Consultez les cartes suivantes disponibles dans la page des rapports :
+Consultez les cartes suivantes disponibles sur la page Rapport d’analyse des bonnes pratiques :
 
 >[!NOTE]
->Le téléchargement d’un nouveau rapport réinitialise toutes les évaluations.
+> Avec chaque carte, vous pouvez :
+>* cliquer sur chaque carte pour ouvrir son onglet associé ;
+>* mettre en signet tous les onglets du rapport (y compris le filtrage) pour le partage ou une récupération ultérieure ;
+>* utiliser l’icône de détails pour afficher les détails de chaque résultat de rapport ;
 
-1. **Propriétés** du rapport : Cette carte fournit des informations dans les propriétés du rapport, telles que la date du rapport, la durée, les filtres, la date de téléchargement, etc.
 
-1. **Report Overview** :
+#### Propriétés du rapport {#report-properties}
 
-   Cette fiche présente les résultats du rapport
+Cette carte fournit des informations dans les propriétés du rapport, telles que la date du rapport, la durée, les filtres, la date de téléchargement, etc.
 
-1. **Évaluation des bonnes pratiques**
+#### Aperçu du rapport {#report-overview}
 
-1. **Évaluation de la complexité de la migration**
+Cette fiche présente les résultats du rapport
 
-   >[!NOTE]
-   > De plus, vous pouvez :
-   >* cliquer sur chaque carte pour ouvrir son onglet associé ;
-   >* mettre en signet tous les onglets du rapport (y compris le filtrage) pour le partage ou une récupération ultérieure ;
-   >* utiliser l’icône de détails pour afficher les détails de chaque résultat de rapport ;
+#### Évaluation des bonnes pratiques {#best-practices-assessment}
+
+Cette carte fournit une
+
+#### Évaluation de la complexité de la migration {#migration-complexity-assessment}
+
+Cette carte fournit les
 
 
 ## Utilisation de la carte Planification et configuration {#planning-setup}
