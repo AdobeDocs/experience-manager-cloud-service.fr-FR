@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Accessibilité, Gestion des ressources
 role: Business Practitioner,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
 workflow-type: tm+mt
 source-wordcount: '1915'
 ht-degree: 99%
@@ -86,7 +86,7 @@ Les actions suivantes d’[!DNL Assets] fonctionnent avec les raccourcis clavier
 | Mode Colonnes de l’interface utilisateur d’[!DNL Assets] | Touches fléchées Haut et Bas | Accéder aux fichiers et aux dossiers dans la même hiérarchie. |
 | Mode Colonnes de l’interface utilisateur d’[!DNL Assets] | Touches fléchées gauche et droite | Accéder aux fichiers et aux dossiers situés au-dessus ou au-dessous du dossier en cours. |
 | Navigation dans les dossiers d’[!DNL Assets] | `/` | Lancer la recherche en ouvrant la zone Omni-recherche. |
-| Console [!DNL Assets] | ` | Activer/désactiver les rails |
+| Console [!DNL Assets] |  | Activer/désactiver les rails |
 | Console [!DNL Assets] | `Alt + 1` | Ouvrir l’arborescence de contenu. |
 | Console [!DNL Assets] | `Alt + 2` | Ouvrez le rail de gauche [!UICONTROL Navigation]. |
 | Console [!DNL Assets] | `Alt + 3` | Afficher la [!UICONTROL Chronologie] d’une ressource sélectionnée. |
