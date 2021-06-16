@@ -4,9 +4,9 @@ description: Cette page présente un aperçu de la phase de préparation de Clou
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
+source-git-commit: 8f219a2b59f3526824cf4c93cb7a0f6fe99eabc7
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '441'
 ht-degree: 3%
 
 ---
@@ -21,12 +21,18 @@ La phase de préparation comprend :
 * [Analyse des bonnes pratiques](#best-practices-analysis)
 * [Planification et configuration](#planning-setup)
 
-Cliquez sur la carte de votre projet pour ouvrir la page d’entrée du projet et accédez à la section **Préparation**, comme illustré dans la figure ci-dessous.
+Suivez les étapes ci-dessous pour accéder à la phase de préparation :
 
-![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+1. Cliquez sur la carte de votre projet pour ouvrir la page d’entrée du projet.
 
->[!NOTE]
->Pour en savoir plus, voir [Création et gestion d’un projet dans Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md).
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing1.png)
+
+1. Accédez à la section **Préparation**, comme illustré dans la figure ci-dessous.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+
+   >[!NOTE]
+   >Pour en savoir plus, voir [Création et gestion d’un projet dans Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md).
 
 ## Utilisation de la carte d’analyse des bonnes pratiques {#best-practices-analysis}
 
@@ -49,12 +55,35 @@ Suivez les étapes ci-dessous pour utiliser la carte Analyse des bonnes pratique
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
 
-1. Consultez et explorez le tableau de bord de l’analyse des bonnes pratiques dans CAM.
+1. Une fois que vous avez chargé un nouveau rapport, le rapport Analyse des bonnes pratiques s’affiche.
 
-   * Cliquez sur chaque carte pour ouvrir son onglet associé.
-   * Vous pouvez mettre en signet tous les onglets du rapport (y compris le filtrage) pour le partage ou une récupération ultérieure.
-   * Utilisez l’icône Détails pour afficher les détails de chaque recherche de rapport.
-   * Le téléchargement d’un nouveau rapport réinitialise toutes les évaluations.
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+
+1. Consultez et explorez le tableau de bord de l’analyse des bonnes pratiques dans CAM. Pour plus d’informations, reportez-vous à la section ci-dessous [Examen du rapport d’analyse des bonnes pratiques](#analysis-report) .
+
+### Rapport Analyse des bonnes pratiques {#analysis-report}
+
+Consultez les cartes suivantes disponibles dans la page des rapports :
+
+>[!NOTE]
+>Le téléchargement d’un nouveau rapport réinitialise toutes les évaluations.
+
+1. **Propriétés** du rapport : Cette carte fournit des informations dans les propriétés du rapport, telles que la date du rapport, la durée, les filtres, la date de téléchargement, etc.
+
+1. **Report Overview** :
+
+   Cette fiche présente les résultats du rapport
+
+1. **Évaluation des bonnes pratiques**
+
+1. **Évaluation de la complexité de la migration**
+
+   >[!NOTE]
+   > De plus, vous pouvez :
+   >* cliquer sur chaque carte pour ouvrir son onglet associé ;
+   >* mettre en signet tous les onglets du rapport (y compris le filtrage) pour le partage ou une récupération ultérieure ;
+   >* utiliser l’icône de détails pour afficher les détails de chaque résultat de rapport ;
+
 
 ## Utilisation de la carte Planification et configuration {#planning-setup}
 
