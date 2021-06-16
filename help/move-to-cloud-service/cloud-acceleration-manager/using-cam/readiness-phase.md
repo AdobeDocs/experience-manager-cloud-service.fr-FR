@@ -4,10 +4,10 @@ description: Cette page présente un aperçu de la phase de préparation de Clou
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 92c1119682ab381a7e107b15470abdc8444bd18c
+source-git-commit: 991ead30264d40bc222b852aa1578787bc27bee3
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 3%
+source-wordcount: '511'
+ht-degree: 4%
 
 ---
 
@@ -68,6 +68,8 @@ Suivez les étapes ci-dessous pour utiliser la carte Analyse des bonnes pratique
 
 Consultez les cartes suivantes disponibles sur la page Rapport d’analyse des bonnes pratiques :
 
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+
 >[!NOTE]
 > Avec chaque carte, vous pouvez :
 >* cliquer sur chaque carte pour ouvrir son onglet associé ;
@@ -77,11 +79,26 @@ Consultez les cartes suivantes disponibles sur la page Rapport d’analyse des b
 
 #### Propriétés du rapport {#report-properties}
 
-Cette carte fournit des informations dans les propriétés du rapport, telles que la date du rapport, la durée, les filtres, la date de téléchargement, etc.
+Cette carte fournit des informations sur les propriétés du rapport, telles que la date du rapport, la durée, les filtres, la date de téléchargement et les détails d’Adobe Experience Manager (AEM).
+
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
 
 #### Aperçu du rapport {#report-overview}
 
 Cette fiche présente les résultats du rapport
+
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
+
+Cliquez sur ce rapport pour ouvrir l’onglet **Rapport**, comme illustré dans la figure ci-dessous.
+
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
+
+Vous pouvez filtrer le rapport selon son importance, son sous-type ou son nombre.
+
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview3.png)
+
+>[!NOTE]
+>Reportez-vous à la section [Interprétation du rapport Analyseur des bonnes pratiques](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) pour en savoir plus sur les catégories de résultats et les niveaux d’importance.
 
 #### Évaluation des bonnes pratiques {#best-practices-assessment}
 
