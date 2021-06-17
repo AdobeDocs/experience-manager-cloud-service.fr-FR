@@ -3,10 +3,10 @@ title: Dispatcher en mode cloud
 description: 'Dispatcher en mode cloud '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 6eb200fe661873374258a5953a07b38b2251da43
+source-git-commit: cf42e530136d5eb8afe7204ae0af1353b1f31cbd
 workflow-type: tm+mt
-source-wordcount: '4233'
-ht-degree: 74%
+source-wordcount: '4247'
+ht-degree: 73%
 
 ---
 
@@ -36,7 +36,7 @@ Les outils Dispatcher font partie du SDK global d’AEM as a Cloud Service et fo
 
 Les outils Dispatcher, qui font partie du [SDK AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), peuvent être téléchargés sous la forme d’un fichier zip sur le portail de [distribution de logiciels](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html). Toute nouvelle configuration disponible dans cette nouvelle version des outils de Dispatcher peut être utilisée pour le déploiement dans les environnements cloud exécutant cette version d’AEM dans le cloud ou une version ultérieure.
 
-Décompressez le SDK, qui regroupe les outils Dispatcher pour macOS/Linux et Windows.
+Décompressez le SDK, qui regroupe les outils Dispatcher pour macOS, Linux et Windows.
 
 **Pour macOS/Linux**, rendez l’artefact de l’outil Dispatcher exécutable et exécutez-le. Il extrait automatiquement les fichiers des outils Dispatcher sous le répertoire dans lequel vous l’avez stocké (où `version` est la version des outils Dispatcher).
 
@@ -112,7 +112,7 @@ Ce fichier est inclus dans vos fichiers `.vhost`. Il contient un ensemble de rè
 
 * `conf.d/variables/custom.vars`
 
-Ce fichier est inclus dans vos fichiers `.vhost`. Vous pouvez y placer des définitions pour les variables Apache.
+Ce fichier est inclus dans vos fichiers `.vhost`. Vous pouvez ajouter des définitions pour les variables Apache à cet emplacement.
 
 * `conf.d/variables/global.vars`
 
@@ -253,6 +253,7 @@ Le tableau ci-dessous présente les modules Apache pris en charge :
 | `mod_rewrite` | [https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html) |
 | `mod_security` | [https://modsecurity.org/](https://modsecurity.org/) |
 | `mod_setenvif` | [https://httpd.apache.org/docs/2.4/mod/mod_setenvif.html](https://httpd.apache.org/docs/2.4/mod/mod_setenvif.html) |
+| `mod_ssl (only the SSLProxyEngine directive)` | [https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslproxyengine](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslproxyengine) |
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
@@ -365,7 +366,7 @@ Notez qu’il n’existe pas de version par défaut des fichiers de variables.
 **Deprecated configuration layout detected, enabling compatibility mode**
 
 Ce message indique que votre configuration présente la disposition version 1 obsolète, contenant une
-configuration Apache complète et des fichiers avec des préfixes `ams_`. Bien que ceci soit toujours pris en charge pour les versions antérieures
+configuration Apache complète et des fichiers avec des préfixes `ams_`. Bien que ceci soit toujours pris en charge pour l’envers
 , vous devez passer à la nouvelle mise en page.
 
 ## Validation locale de la syntaxe de configuration de Dispatcher pour qu’apache httpd puisse démarrer {#local-validation}
