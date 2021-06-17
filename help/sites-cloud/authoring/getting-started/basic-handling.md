@@ -2,10 +2,10 @@
 title: Manipulation de base
 description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: b1266893cde4001366df153d0302282f7612c6ed
 workflow-type: tm+mt
-source-wordcount: '2864'
-ht-degree: 100%
+source-wordcount: '2876'
+ht-degree: 98%
 
 ---
 
@@ -71,7 +71,7 @@ Les consoles suivantes sont disponibles à partir du panneau de navigation :
 | Projets | La console Projets vous donne un accès direct à vos projets. [Les projets sont des tableaux de bord virtuels](/help/sites-cloud/authoring/projects/overview.md) qui peuvent être utilisés pour créer une équipe. Vous pouvez ensuite donner à cette équipe un accès aux ressources, aux workflows et aux tâches, ce qui permet aux utilisateurs de travailler vers un objectif commun. |
 | Sites | Les consoles Sites permettent de [créer, d’afficher et de gérer des sites](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) exécutés sur votre instance AEM. Grâce à ces consoles, vous pouvez créer, modifier, copier, déplacer et supprimer des pages, démarrer des workflows et publier des pages. |
 | Fragments d’expérience | Un [fragment d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) est une expérience autonome qui peut être réutilisée sur l’ensemble des canaux et qui présente des variations, ce qui vous évite de devoir copier et coller à plusieurs reprises des expériences ou des parties d’expériences. |
-| Assets | La console Assets vous permet d’importer et de gérer des ressources numériques telles que des images, des vidéos, des documents et des fichiers audio. Ces ressources peuvent ensuite être utilisées par n’importe quel site s’exécutant sur la même instance AEM.<!--add some kind of assets link--> |
+| Assets | La console Ressources vous permet d’importer et de gérer des [ressources numériques telles que des images, des vidéos, des documents et des fichiers audio](/help/assets/overview.md). Ces ressources peuvent ensuite être utilisées par n’importe quel site s’exécutant sur la même instance AEM. Vous pouvez également créer et gérer des [fragments de contenu](/help/assets/content-fragments/content-fragments.md) à partir de la console Ressources. |
 | Personnalisation | Cette console propose un ensemble d’outils de [création de contenu ciblé et de présentation d’expériences personnalisées.](/help/sites-cloud/authoring/personalization/overview.md) |
 
 ## Panneau Outils {#tools-panel}
@@ -202,7 +202,7 @@ Plusieurs ressources d’aide sont disponibles :
    >Pour une présentation de tous les raccourcis clavier, reportez-vous à la documentation suivante :
    >
    >* [Raccourcis clavier lors de la modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-   >* [Raccourcis clavier pour les consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+   * [Raccourcis clavier pour les consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
 ## Barre d’outils d’actions {#actions-toolbar}
@@ -222,8 +222,7 @@ En raison des restrictions d’espace dans certaines fenêtres, la barre d’out
 ![Options supplémentaires](/help/sites-cloud/authoring/assets/additional-options.png)
 
 >[!NOTE]
->
->Les icônes individuelles disponibles sont documentées par rapport à la console, à la fonction ou au scénario approprié.
+Les icônes individuelles disponibles sont documentées par rapport à la console, à la fonction ou au scénario approprié.
 
 ## Actions rapides  {#quick-actions}
 
@@ -244,8 +243,7 @@ Vous pouvez afficher, parcourir et sélectionner (pour effectuer d’autres opé
 * [Mode Liste](#list-view)
 
 >[!NOTE]
->
->Par défaut, AEM Assets n’affiche pas les rendus d’origine des ressources dans l’interface utilisateur sous la forme de miniatures, et ce, quel que soit le mode. Si vous êtes administrateur, vous pouvez utiliser des incrustations pour configurer AEM Assets afin d’afficher les rendus d’origine sous la forme de miniatures.
+Par défaut, AEM Assets n’affiche pas les rendus d’origine des ressources dans l’interface utilisateur sous la forme de miniatures, et ce, quel que soit le mode. Si vous êtes administrateur, vous pouvez utiliser des incrustations pour configurer AEM Assets afin d’afficher les rendus d’origine sous la forme de miniatures.
 
 ### Sélection de ressources  {#selecting-resources}
 
@@ -375,8 +373,7 @@ La sélection d’une ressource dans la colonne de gauche affiche les ressources
 * Modifiez l’ordre des éléments à l’aide de la barre verticale en pointillés tout à droite de chaque élément de la liste.
 
    >[!NOTE]
-   >
-   >La modification de l’ordre fonctionne uniquement dans un dossier ordonné dont la valeur `jcr:primaryType` est `sling:OrderedFolder`.
+   La modification de l’ordre fonctionne uniquement dans un dossier ordonné dont la valeur `jcr:primaryType` est `sling:OrderedFolder`.
 
    ![Ordre des colonnes](/help/sites-cloud/authoring/assets/column-order.png)
 
@@ -395,8 +392,7 @@ Par exemple, dans la console **Sites**, vous pouvez sélectionner le contenu uni
 Si Contenu uniquement est sélectionné, alors seule l’icône de rail s’affiche. Si n’importe quelle autre option est sélectionnée, le nom des options apparaît en regard de l’icône de rail.
 
 >[!NOTE]
->
->Des [raccourcis clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) sont disponibles pour basculer rapidement entre les options d’affichage du rail.
+Des [raccourcis clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) sont disponibles pour basculer rapidement entre les options d’affichage du rail.
 
 ### Arborescence de contenu {#content-tree}
 
@@ -407,9 +403,8 @@ En utilisant le panneau latéral d’arborescence de contenu en même temps qu�
 ![Arborescence de contenu](/help/sites-cloud/authoring/assets/content-tree.png)
 
 >[!NOTE]
->
->Une fois qu’une entrée est sélectionnée dans la vue hiérarchique, les touches fléchées peuvent être utilisées pour naviguer rapidement au sein de la hiérarchie.
->Voir les [raccourcis clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) pour plus d’informations.
+Une fois qu’une entrée est sélectionnée dans la vue hiérarchique, les touches fléchées peuvent être utilisées pour naviguer rapidement au sein de la hiérarchie.
+Voir les [raccourcis clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) pour plus d’informations.
 
 ### Chronologie {#timeline}
 
