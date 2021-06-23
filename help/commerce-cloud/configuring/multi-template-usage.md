@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
+source-git-commit: 4c6f7cafba4be20d7501fbe33b38c843a638305c
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 100%
+source-wordcount: '134'
+ht-degree: 79%
 
 ---
 
@@ -26,3 +26,7 @@ Les [composant principaux AEM CIF](https://github.com/adobe/aem-core-cif-compone
 Vous trouverez plus d’informations sur ce sujet à partir des ressources suivantes :
 
 - [Composants principaux AEM CIF – Configuration de pages multi-catalogue](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
+
+## Ressources connexes
+
+Il est également possible de cibler de manière dynamique des régions spécifiques d’une page et de réutiliser le même modèle. Découvrez comment [enrichir les données de produit avec le contenu AEM associé](./enrich-product-associated-content.md).
