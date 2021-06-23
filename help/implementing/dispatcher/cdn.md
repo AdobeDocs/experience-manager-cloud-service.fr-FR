@@ -3,10 +3,10 @@ title: Réseau de diffusion de contenu dans AEM as a Cloud Service
 description: Réseau de diffusion de contenu dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: 6c48b25d78ecbf3e30f42b2c2e69687b1f3094b8
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 86%
+source-wordcount: '891'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ AEM as a Cloud Service est fourni avec un réseau de diffusion de contenu inté
 
 Le réseau de diffusion de contenu géré par AEM satisfait à la plupart des exigences de performances et de sécurité du client. Pour le niveau de publication, les clients peuvent éventuellement privilégier leur propre réseau de diffusion de contenu, mais il leur appartiendra de le gérer. Ce choix sera possible au cas par cas, en fonction de certaines conditions préalables, y compris, mais sans s’y limiter, le fait que le client possède une ancienne intégration avec son fournisseur de réseau de diffusion de contenu, et qu’il soit difficile de l’abandonner.
 
-## Réseau de diffusion de contenu géré par AEM {#aem-managed-cdn}
+## Réseau de diffusion de contenu géré AEM  {#aem-managed-cdn}
 
 Suivez les étapes des sections ci-dessous pour utiliser l’interface utilisateur en libre-service de Cloud Manager afin de préparer la diffusion de contenu à l’aide du réseau de diffusion de contenu prêt à l’emploi d’AEM :
 
@@ -60,15 +60,19 @@ Instructions de configuration :
 1. Définissez l’en-tête `X-Forwarded-Host` avec le nom de domaine. Par exemple : `X-Forwarded-Host:example.com`.
 1. Définissez l’en-tête de l’hôte avec le domaine d’origine, qui est l’entrée du réseau de diffusion de contenu AEM. Par exemple : `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Envoyez l’en-tête SNI à l’origine. Tout comme l’en-tête d’hôte, l’en-tête SNI doit être le domaine d’origine.
-1. Définissez `X-Edge-Key` ou `X-AEM-Edge-Key` (si votre réseau de diffusion de contenu supprime `X-Edge-*`). La valeur doit provenir d’Adobe.
-   * Cela est nécessaire afin que le réseau de diffusion de contenu de l’Adobe puisse valider la source des requêtes et transmettre les en-têtes `X-Forwarded-*` à l’application AEM. Par exemple, `X-Forwarded-Host` est utilisé par AEM pour déterminer l’en-tête de l’hôte et `X-Forwarded-For` est utilisé pour déterminer l’adresse IP du client. Il incombe donc à l’appelant de confiance (c’est-à-dire au réseau de diffusion de contenu géré par le client) de s’assurer que les en-têtes `X-Forwarded-*` sont corrects (voir la note ci-dessous).
-   * En option, l’accès à l’entrée du réseau de diffusion de contenu d’Adobe peut être bloqué lorsqu’une balise `X-Edge-Key` n’est pas présente. Veuillez indiquer à Adobe si vous avez besoin d’un accès direct à l’entrée du CDN d’Adobe (à bloquer).
+1. Paramétrez `X-Edge-Key` ou `X-AEM-Edge-Key` (si votre réseau de diffusion de contenu efface `X-Edge-*`). La valeur doit provenir d’Adobe.
+   * Ce paramétrage est nécessaire afin que le réseau de diffusion de contenu d’Adobe puisse valider la source des requêtes et transmettre les en-têtes `X-Forwarded-*` à l’application AEM. Par exemple, `X-Forwarded-Host` est utilisé par AEM pour déterminer l’en-tête de l’hôte et `X-Forwarded-For` est utilisé pour déterminer l’adresse IP du client. Il incombe donc à l’appelant approuvé (c’est-à-dire au réseau de diffusion de contenu géré par le client) de s’assurer que les en-têtes `X-Forwarded-*` sont corrects (voir la note ci-dessous).
+   * L’accès à l’entrée du réseau de diffusion de contenu d’Adobe peut être aussi bloqué lorsqu’une balise `X-Edge-Key` n’est pas présente. Informez Adobe si vous avez besoin d’un accès direct à l’entrée du CDN d’Adobe (à bloquer).
 
 Avant d’accepter le trafic en direct, vous devez vérifier auprès du service clientèle d’Adobe que le trafic de bout en bout fonctionne correctement.
 
 >[!NOTE]
 >
 >Les clients qui gèrent leur propre réseau de diffusion de contenu doivent garantir l’intégrité des en-têtes envoyés au réseau de diffusion de contenu AEM. Par exemple, il est recommandé aux clients d’effacer tous les en-têtes `X-Forwarded-*` et de les définir sur des valeurs connues et contrôlées. Par exemple, `X-Forwarded-For` doit contenir l’adresse IP du client, tandis que `X-Forwarded-Host` doit contenir l’hôte du site.
+
+>[!NOTE]
+>
+>Les environnements de programme Sandbox ne prennent pas en charge un réseau de diffusion de contenu fourni par le client.
 
 Les performances peuvent diminuer en raison du saut supplémentaire, bien que les sauts entre le réseau de diffusion du client et celui géré par AEM puissent être efficaces.
 
