@@ -2,10 +2,10 @@
 title: Modifications notables apportées à Adobe Experience Manager (AEM) as a Cloud Service
 description: Modifications notables apportées à Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: 71f05dda4ccd52c66bbf1d9025900976f07227f3
+source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 94%
+source-wordcount: '810'
+ht-degree: 89%
 
 ---
 
@@ -114,10 +114,4 @@ Pour la transition d’un projet à partir d’AMS ou d’une installation sur s
 
 ## Gestion et diffusion des ressources {#asset-handling}
 
-Le chargement, le traitement et le téléchargement des ressources ont été optimisés dans Assets as a Cloud Service. Cela se traduit par un dimensionnement plus efficace, ainsi que des chargements et des téléchargements plus rapides. Cela peut toutefois avoir une incidence sur certains codes personnalisés existants.
-
-* Le workflow par défaut de **Mise à jour des ressources DAM** dans les versions précédentes d’AEM n’est plus disponible.
-* Les composants de site web qui diffusent un fichier binaire **sans transformation** doivent utiliser le téléchargement direct.
-   * Le servlet Sling GET a été modifié afin d’effectuer cette opération par défaut.
-* Les composants de site web qui diffusent un fichier binaire **avec transformation** (redimensionnement via servlet, par exemple) peuvent continuer à fonctionner normalement.
-* Les ressources qui arrivent par le biais de Package Manager nécessitent un retraitement manuel à l’aide de l’action **Retraiter les ressources** dans l’interface d’Assets.
+Le chargement, le traitement et le téléchargement des ressources sont optimisés en tant que Cloud Service dans Experience Manager Assets. Il est désormais plus efficace, permet une mise à l’échelle plus rapide et des téléchargements et téléchargements plus rapides. Cela a également un impact sur le code personnalisé existant et sur certaines opérations. Voir les [modifications apportées à [!DNL Assets]](/help/assets/assets-cloud-changes.md).
