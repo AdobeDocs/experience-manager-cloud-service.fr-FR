@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Balises intelligentes, Balisage
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
+source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
 workflow-type: tm+mt
 source-wordcount: '2357'
 ht-degree: 92%
@@ -175,7 +175,7 @@ Pour vérifier que le service de balises intelligentes est entraîné sur vos ba
 [!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 -->
 
-## Balisage de ressources avec des balises intelligentes {#tag-assets}
+## Balisage de ressources à l’aide de balises intelligentes {#tag-assets}
 
 Tous les types de ressources pris en charge sont automatiquement balisés par [!DNL Experience Manager Assets] lors du chargement. Le balisage est activé par défaut. [!DNL Experience Manager] applique les balises appropriées en temps quasi réel.  <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
@@ -207,7 +207,7 @@ Pour modérer les balises intelligentes de vos ressources :
 
 1. Accédez à la page [!UICONTROL Propriétés] de la ressource. Remarquez que la balise que vous avez convertie se voit attribuer une pertinence élevée et apparaît donc plus haut dans les résultats de la recherche.
 
-### Comprendre les [!DNL Experience Manager] résultats de recherche avec des balises intelligentes {#understand-search}
+### Présentation des [!DNL Experience Manager] résultats de recherche avec des balises intelligentes {#understand-search}
 
 Par défaut, la recherche [!DNL Experience Manager] combine les termes de recherche avec une clause `AND`. L’utilisation de balises intelligentes ne modifie pas ce comportement par défaut. Elle ajoute une clause `OR` pour trouver l’un des termes de recherche dans les balises intelligentes. Par exemple, pour la recherche de `woman running`. Les ressources avec les mots-clés `woman` ou `running` uniquement dans les métadonnées n’apparaissent pas dans les résultats de recherche par défaut. Toutefois, une ressource balisée avec `woman` ou `running` à l’aide de balises intelligentes apparaît dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de :
 
