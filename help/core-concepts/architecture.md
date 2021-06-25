@@ -2,10 +2,10 @@
 title: Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service
 description: Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service.
 exl-id: fb169e85-ac19-4962-93d9-abaed812f948
-source-git-commit: 74b2720eae1fbc986cd1a252180a4b7f4187ed16
+source-git-commit: 4067db2234b29e4ffbe3e76f25afd9d8642a1973
 workflow-type: tm+mt
-source-wordcount: '1728'
-ht-degree: 96%
+source-wordcount: '1782'
+ht-degree: 84%
 
 ---
 
@@ -88,7 +88,7 @@ Un programme AEM est le conteneur qui comprend les éléments suivants :
 |  Élément de programme |  Nombre |
 |--- |--- |
 | Référentiel de code (Git) |  1 |
-| Image de base (Sites ou Assets) |  3 |
+| Image de base (Sites ou Assets) |  1 |
 | Ensemble d’environnements d’évaluation et de production (1:1) | 0 ou 1 |
 | Environnements hors production (développement ou démonstration) | 0 à N |
 | Pipeline pour chaque environnement | 0 ou 1 |
@@ -99,7 +99,7 @@ Initialement, deux types de programmes sont disponibles pour AEM as a Cloud Ser
 
 * AEM Cloud Assets Service
 
-Ces deux programmes permettent d’accéder à un certain nombre de fonctionnalités. Le niveau Auteur comprend toutes les fonctionnalités Sites et Assets pour l’ensemble des programmes, mais les programmes Assets sont dépourvus, par défaut, du niveau Publication.
+Ces deux programmes permettent d’accéder à un certain nombre de fonctionnalités. Le niveau Auteur contiendra toutes les fonctionnalités Sites et Ressources pour tous les programmes, mais les programmes Assets n’auront pas de niveau Publication ni de niveau Aperçu par défaut.
 
 ## Architecture d’exécution {#runtime-architecture}
 
@@ -120,6 +120,8 @@ Cette nouvelle architecture comporte différents éléments principaux :
       * La connexion au niveau Auteur est gérée par Adobe Identity Management Services (IMS).
 
       * L’intégration et le traitement des ressources utilisent un service de calcul dédié d’Assets.
+   * Le niveau d’aperçu comprend un noeud d’aperçu unique. Utilisé pour l’assurance qualité du contenu avant publication au niveau de publication.
+
    * Le niveau Publication comprend plusieurs nœuds au sein d’une seule batterie de publication : ils peuvent fonctionner indépendamment les uns des autres. Chaque nœud est constitué d’un éditeur AEM et d’un serveur web équipé du module AEM Dispatcher. La mise à l’échelle s’effectue automatiquement en fonction des besoins en matière de trafic sur le site.
 
       * Les utilisateurs finaux, ou les visiteurs du site, consultent le site web via le service AEM Publish.
@@ -129,15 +131,15 @@ Cette nouvelle architecture comporte différents éléments principaux :
 
    * L’architecture comprend uniquement un environnement de création.
 
-* Les niveaux Auteur et Publication lisent et conservent le contenu depuis/vers un service de référentiel de contenu.
+* Les niveaux Auteur, Aperçu et Publication lisent et conservent le contenu depuis/vers un service de référentiel de contenu.
 
-   * Le niveau Publication lit uniquement du contenu en provenance du calque de persistance.
+   * Les niveaux de publication et d’aperçu ne lisent que le contenu du calque de persistance.
 
    * Quant au niveau Auteur, il lit du contenu en provenance du calque de persistance et l’écrit sur ce calque.
 
-   * L’espace de stockage Blobs est partagé sur l’ensemble du niveau Auteur et Publication ; les fichiers ne sont pas *déplacés*.
+   * Le stockage des objets blob est partagé sur l’ensemble des niveaux de publication, d’aperçu et d’auteur ; Les fichiers ne sont pas *déplacés*.
 
-   * Lorsque le contenu est approuvé à partir du niveau Auteur, cela indique qu’il peut être activé et donc envoyé au calque de persistance de la couche Publication. Cela se produit au moyen du service de réplication, un pipeline de middleware. Ce pipeline reçoit le nouveau contenu ; les différents nœuds du service de publication s’abonnent au contenu envoyé vers le pipeline.
+   * Lorsque le contenu est approuvé à partir du niveau Auteur, cela indique qu’il peut être activé et donc envoyé au calque de persistance du niveau Publication ; ou éventuellement au niveau d’aperçu. Cela se produit au moyen du service de réplication, un pipeline de middleware. Ce pipeline reçoit le nouveau contenu, avec les noeuds individuels du service de publication (ou service de prévisualisation) abonnés au contenu transmis au pipeline.
 
       >[!NOTE]
       >
@@ -147,15 +149,15 @@ Cette nouvelle architecture comporte différents éléments principaux :
 
    * L’accès aux niveaux Auteur et Publication s’effectue toujours via la répartition de charge. La mise à jour est toujours garantie grâce aux nœuds actifs de chacun des niveaux.
 
-   * Pour le niveau Publication, un service CDN (Continuous Delivery Network) est également disponible en tant que premier point d’entrée.
+   * Pour les niveaux de publication et d’aperçu, un service CDN (Continuous Delivery Network) est également disponible en tant que premier point d’entrée.
 
 * Pour les instances de démonstration d’AEM as a Cloud Service, l’architecture est simplifiée sous la forme d’un nœud Auteur unique. Il ne présente donc pas toutes les caractéristiques de l’environnement de développement, d’évaluation ou de production standard. Cela signifie également qu’il peut y avoir des temps d’arrêt, et que les opérations de sauvegarde/restauration ne sont pas prises en charge.
 
 ## Architecture de déploiement {#deployment-architecture}
 
-Cloud Manager gère toutes les mises à jour des instances d’AEM as a Cloud Service. Cela est obligatoire, dans la mesure où il s’agit du seul moyen de créer, de tester et de déployer l’application du client, tant sur le niveau Auteur que sur le niveau Publication. Ces mises à jour peuvent être déclenchées soit par Adobe lorsqu’une nouvelle version du service cloud AEM est prête, soit par le client lorsqu’une nouvelle version de son application est prête.
+Cloud Manager gère toutes les mises à jour des instances d’AEM as a Cloud Service. Il est obligatoire, car il s’agit du seul moyen de créer, de tester et de déployer l’application client, tant sur les niveaux Auteur, Aperçu que Publication. Ces mises à jour peuvent être déclenchées soit par Adobe lorsqu’une nouvelle version du service cloud AEM est prête, soit par le client lorsqu’une nouvelle version de son application est prête.
 
-Sur le plan technique, cela est mis en œuvre grâce au concept de pipeline de déploiement, couplé à chaque environnement à l’intérieur d’un programme. Lorsqu’un pipeline Cloud Manager est en cours d’exécution, il crée une version de l’application du client, tant pour le niveau Auteur que pour le niveau Publication. Pour ce faire, il combine les modules client les plus récents à la dernière image de base Adobe. Une fois les nouvelles images créées et testées, Cloud Manager automatise entièrement le basculement vers la dernière version de l’image en mettant à jour tous les nœuds de service à l’aide d’un schéma de mise à jour continue. Cela n’entraîne aucun temps d’arrêt pour le service d’auteur ni pour le service de publication.
+Sur le plan technique, cela est mis en œuvre grâce au concept de pipeline de déploiement, couplé à chaque environnement à l’intérieur d’un programme. Lorsqu’un pipeline Cloud Manager est en cours d’exécution, il crée une nouvelle version de l’application cliente, tant pour l’auteur que pour l’aperçu et les niveaux de publication. Pour ce faire, il combine les modules client les plus récents à la dernière image de base Adobe. Une fois les nouvelles images créées et testées, Cloud Manager automatise entièrement le basculement vers la dernière version de l’image en mettant à jour tous les nœuds de service à l’aide d’un schéma de mise à jour continue. Cela n’entraîne aucun temps d’arrêt pour le service d’auteur ni pour le service de publication.
 
 <!--- needs reworking -->
 
