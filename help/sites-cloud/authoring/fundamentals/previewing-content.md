@@ -1,13 +1,13 @@
 ---
 title: Aperçu du contenu
 description: Découvrez comment utiliser le service d’aperçu AEM pour prévisualiser le contenu avant sa mise en ligne.
-source-git-commit: 9b4ac173c55380cbc06de64677470818aa801df4
+exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
+source-git-commit: 53a3fb91dcf093d55e80c7dfcdef3a7855731841
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
-
 
 # Aperçu du contenu {#previewing-content}
 
@@ -38,3 +38,27 @@ https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
 
 Voir [Gestion des environnements](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) pour plus d’informations sur la manière d’obtenir les URL de vos environnements.
 
+## Configuration des paramètres OSGi pour le niveau de prévisualisation {#configuring-osgi-settings-for-the-preview-tier}
+
+Les valeurs de propriété OSGI de leur niveau d’aperçu sont héritées du niveau de publication, mais les valeurs du niveau d’aperçu peuvent être différenciées du niveau de publication à l’aide de valeurs spécifiques à l’environnement définissant le paramètre de service avec la valeur &quot;aperçu&quot;. Prenez l’exemple ci-dessous d’une propriété OSGI qui détermine l’URL d’un point de terminaison d’intégration :
+
+```
+[
+{
+"name":"INTEGRATION_URL",
+"type":"string",
+"value":"http://s2.integrationvendor.com",
+"service": "preview"
+}
+]
+```
+
+Pour plus d’informations, voir [cette section](/help/implementing/deploying/configuring-osgi.md#author-vs-publish-configuration) de la documentation de configuration OSGi.
+
+## Débogage de l’aperçu à l’aide de Developer Console {#debugging-preview-using-the-developer-console}
+
+Pour déboguer le niveau d’aperçu à l’aide de Developer Console, procédez comme suit :
+
+* Dans [Developer Console](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools), sélectionnez **— All Preview —** ou un environnement de production qui inclut **prev** dans son nom.
+* Générer les informations pertinentes pour l&#39;instance d&#39;aperçu
+Voir [Gestion des environnements](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) pour plus d’informations sur la manière d’obtenir les URL de vos environnements.
