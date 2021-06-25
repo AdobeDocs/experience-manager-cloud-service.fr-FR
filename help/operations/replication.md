@@ -2,10 +2,10 @@
 title: Réplication
 description: Distribution et dépannage de la réplication.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1ba960a930e180f4114f78607a3eb4bd5ec3edaf
+source-git-commit: 3cafd809cba2d844ee4507c41eb1b5302ad5b6ba
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 39%
+source-wordcount: '1071'
+ht-degree: 28%
 
 ---
 
@@ -82,7 +82,7 @@ Vous pouvez également y parvenir en créant un modèle de processus qui utilise
 
 * `replicateAsParticipant` (valeur booléenne, valeur par défaut :  `false`). S’il est configuré comme `true`, la réplication utilise la balise `userid` de l’entité qui a exécuté l’étape de participant.
 * `enableVersion` (valeur booléenne, valeur par défaut :  `true`). Ce paramètre détermine si une nouvelle version est créée lors de la réplication.
-* `agentId` (valeur de chaîne, la valeur par défaut signifie que tous les agents activés sont utilisés). Il est recommandé d’être explicite sur l’agentId ; par exemple, définissez la valeur : publier
+* `agentId` (valeur string, la valeur par défaut signifie que seuls les agents pour la publication sont utilisés). Il est recommandé d’être explicite sur l’agentId ; par exemple, définissez la valeur : publier. La définition de l’agent sur `preview` entraîne la publication sur le service d’aperçu.
 * `filters` (valeur de chaîne, valeur par défaut, tous les chemins sont activés). Les valeurs disponibles sont les suivantes :
    * `onlyActivated` : seuls les chemins qui ne sont pas marqués comme activés seront activés.
    * `onlyModified` - activez uniquement les chemins déjà activés et dont la date de modification est postérieure à la date d’activation.
@@ -111,6 +111,66 @@ Vous trouverez ci-dessous des exemples de journaux générés lors d’un exempl
 **Prise en charge de la reprise**
 
 Le workflow traite le contenu par blocs, chacun représentant un sous-ensemble du contenu complet à publier. Si, pour une raison quelconque, le workflow est arrêté par le système, il redémarre et traite le bloc qui n’a pas encore été traité. Une instruction de journal indique que le contenu a été repris à partir d’un chemin spécifique.
+
+### API de réplication {#replication-api}
+
+Vous pouvez publier du contenu à l’aide de l’API de réplication présentée dans AEM en tant que Cloud Service.
+
+Pour plus d’informations, voir la [documentation de l’API](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html).
+
+**Utilisation de base de l’API**
+
+```
+@Reference
+Replicator replicator;
+@Reference
+ReplicationStatusProvider replicationStatusProvider;
+
+....
+Session session = ...
+// Activate a single page to all agents, which are active by default
+replicator.replicate(session,ReplicationActionType.ACTIVATE,"/content/we-retail/en");
+// Activate multiple pages (but try to limit it to approx 100 at max)
+replicator.replicate(session,ReplicationActionType.ACTIVATE, new String[]{"/content/we-retail/en","/content/we-retail/de"});
+
+// ways to get the replication status
+Resource enResource = resourceResolver.getResource("/content/we-retail/en");
+Resource deResource = resourceResolver.getResource("/content/we-retail/de");
+ReplicationStatus enStatus = enResource.adaptTo(ReplicationStatus.class);
+// if you need to get the status for more more than 1 resource at once, this approach is more performant
+Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchReplicationStatus(enResource,deResource);
+```
+
+**Réplication avec des agents spécifiques**
+
+Lors de la réplication des ressources comme dans l’exemple ci-dessus, seuls les agents principaux par défaut seront utilisés. Dans AEM en tant que Cloud Service, il s’agit uniquement de l’agent nommé &quot;publish&quot;, qui connecte l’auteur au niveau de publication.
+
+Pour prendre en charge la fonctionnalité d’aperçu, un nouvel agent appelé &quot;aperçu&quot; a été ajouté, qui n’est pas principal par défaut. Cet agent est utilisé pour connecter l’auteur au niveau d’aperçu. Si vous souhaitez répliquer uniquement par le biais de l’agent de prévisualisation, vous devez sélectionner explicitement cet agent de prévisualisation via un `AgentFilter`.
+
+Voir l’exemple ci-dessous pour savoir comment procéder :
+
+```
+private static final String PREVIEW_AGENT = "preview";
+
+ReplicationStatus beforeStatus = enResource.adaptTo(ReplicationStatus.class); // beforeStatus.isActivated == false
+
+ReplicationOptions options = new ReplicationOptions();
+options.setFilter(new AgentFilter() {
+  @Override
+  public boolean isIncluded (Agent agent) {
+    return agent.getId().equals(PREVIEW_AGENT);
+  }
+});
+// will replicate only to preview
+replicator.replicate(session,ReplicationActionType.ACTIVATE,"/content/we-retail/en", options);
+
+ReplicationStatus afterStatus = enResource.adaptTo(ReplicationStatus.class); // afterStatus.isActivated == false
+ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); // previewStatus.isActivated == true
+```
+
+Si vous ne fournissez pas un tel filtre et n’utilisez que l’agent &quot;publish&quot;, l’agent &quot;preview&quot; n’est pas utilisé et l’action de réplication n’affecte pas le niveau de prévisualisation.
+
+L’ensemble `ReplicationStatus` d’une ressource n’est modifié que si l’action de réplication comprend au moins un agent principal par défaut. Dans l’exemple ci-dessus, ce n’est pas le cas, car la réplication utilise uniquement l’agent &quot;aperçu&quot;. Par conséquent, vous devez utiliser la nouvelle méthode `getStatusForAgent()`, qui permet d’interroger le statut d’un agent spécifique. Cette méthode fonctionne également pour l’agent &quot;publish&quot;. Elle renvoie une valeur non nulle si une action de réplication a été effectuée à l’aide de l’agent fourni.
 
 ## Résolution des problèmes {#troubleshooting}
 
