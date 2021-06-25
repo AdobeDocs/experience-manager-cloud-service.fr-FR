@@ -2,20 +2,20 @@
 title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: f447303d3618eb2e9ea38873c88ed04280670218
+source-git-commit: 344a42f31444d30e9304b3a2198b1a4df17aa9c0
 workflow-type: tm+mt
-source-wordcount: '1685'
-ht-degree: 15%
+source-wordcount: '1663'
+ht-degree: 44%
 
 ---
 
 
-# Notes de la mise à jour actuelle d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour actuelles pour[!DNL Adobe Experience Manager]as a Cloud Service {#release-notes}
 
 La section suivante concerne les notes de mise à jour générales de la version actuelle (la plus récente) d’[!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
->À partir de là, vous pouvez accéder aux notes de mise à jour des versions précédentes. par exemple, pour ceux de 2020, 2021 et ainsi de suite.
+>À partir de là, vous pouvez accéder aux notes de mise à jour des versions précédentes ; par exemple, celles de 2020, 2021 et ainsi de suite.
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ La section suivante concerne les notes de mise à jour générales de la version
 
 ## Date de publication {#release-date}
 
-La date de publication de [!DNL Adobe Experience Manager] en tant que Cloud Service 2021.5.0 est le 27 mai 2021.
+La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service version 2021.5.0 est le 27 mai 2021.
 La version suivante (2021.6.0) sera publiée le 24 juin 2021.
 
 ## Vidéo de publication {#release-video}
@@ -32,7 +32,7 @@ Regardez la vidéo [Présentation de la version de mai 2021](https://video.tv.ad
 
 ## AEM as a Cloud Service Foundation {#foundation}
 
-### Nouveautés d’AEM as a Cloud Service Foundation {#what-is-new-foundation}
+### Nouveautés d’AEM en tant que fondation Cloud Service {#what-is-new-foundation}
 
 * [Canal de version préliminaire](/help/release-notes/prerelease.md) : Prévisualisez les fonctionnalités à venir pendant un mois complet avant qu’elles ne soient mises en production.
 
@@ -42,7 +42,7 @@ Regardez la vidéo [Présentation de la version de mai 2021](https://video.tv.ad
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Nouveautés d’[!DNL Sites] {#what-is-new-sites}
+### Nouveautés d’[!DNL Sites]  {#what-is-new-sites}
 
 * Vous pourrez bientôt vérifier le contenu sur un nouveau [niveau d’aperçu](/help/sites-cloud/authoring/fundamentals/previewing-content.md) pour simuler l’aspect final de l’expérience comme vous le feriez sur le niveau Publication. Cette fonctionnalité est activée par l’assistant de publication gérée d’AEM Sites qui vous permet désormais de choisir une destination de publication entre Publier ou Aperçu. Les expériences sur la prévisualisation sont ensuite accessibles via une URL dédiée. Après la validation sur l’aperçu, le contenu peut être publié de l’auteur à la publication comme d’habitude. L’activation du service de prévisualisation dans AEM en tant qu’environnements de Cloud Service sera progressivement déployée au cours des prochaines semaines.
 
@@ -60,46 +60,20 @@ Regardez la vidéo [Présentation de la version de mai 2021](https://video.tv.ad
 
    ![Nombre de ressources dans un dossier affichées dans l’interface](/help/assets/assets/browse-folder-number-of-assets.png)
 
-### Correctifs d’[!DNL Assets] {#assets-bugs-fixed}
+### Correctifs d’[!DNL Assets]  {#assets-bugs-fixed}
 
 * Le téléchargement de fichiers très volumineux bloque le [!DNL Experience Manager desktop app]. (CQ-4320942)
 * Les options de la barre d’outils sont différentes lorsque la même collection est sélectionnée à partir d’un dossier et lorsqu’elle est sélectionnée à partir d’un résultat de recherche. (CQ-4321406)
 
-#### Nouveautés d’[!DNL Dynamic Media] {#what-is-new-dm}
+#### Nouveautés d’[!DNL Dynamic Media]  {#what-is-new-dm}
 
 * Le ratio de pixels d’appareil d’imagerie dynamique (RPD) et l’optimisation de la bande passante du réseau permettent de diffuser des images de meilleure qualité de manière efficace, sur les appareils dotés d’écrans haute résolution et d’une bande passante réseau limitée. Voir [FAQ sur l’imagerie dynamique](/help/assets/dynamic-media/imaging-faq.md).
 
-   >[!NOTE]
-   >
-   >La date de publication des améliorations de l’imagerie dynamique ci-dessus est la suivante :
-   >
-   >* Amérique du Nord, le 24 mai 2021, dans l&#39;Alliance du Nord,
-      >
-      >
-   * Europe, Moyen-Orient et Afrique, 25 juin 2021,
-      >
-      >
-   * Asie-Pacifique 19 juillet 2021.
-
-
-* Prise en charge du format d’image AVIF nouvelle génération dans la diffusion [!DNL Dynamic Media] (modificateur d’URL fmt).
-
-   >[!NOTE]
-   >
-   >La date de publication de la prise en charge d’AVIF est la suivante :
-   >
-   >* Amérique du Nord, 10 mai 2021,
-      >
-      >
-   * Europe, Moyen-Orient et Afrique 24 mai 2021,
-      >
-      >
-   * Asie-Pacifique 24 juin 2021.
-
+* Prise en charge du format d’image AVIF nouvelle génération dans la diffusion [!DNL Dynamic Media] (modificateur d’URL `fmt`). Pour plus d’informations et de détails sur la chronologie, voir [API de traitement et de rendu d’images fmt](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
 ## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
-### Nouveautés d’[!DNL Forms] {#what-is-new-forms}
+### Nouveautés d’[!DNL Forms]  {#what-is-new-forms}
 
 * **Aide contextuelle** : Ajout d’une aide contextuelle pour l’éditeur de formulaires adaptatifs, l’éditeur de modèles et l’éditeur de thèmes afin d’aider les auteurs à mieux comprendre les différentes fonctionnalités des éditeurs.
 * **Messages d’erreur dans le navigateur** Propriétés : Ajout de messages d’erreur pour chaque propriété dans le navigateur Propriétés du Forms adaptatif . Ces messages aident à comprendre les valeurs autorisées pour un champ.
@@ -114,7 +88,7 @@ Service Output as a Cloud : Le service Output vous permet de combiner des modèl
 
 Vous pouvez écrire sur formscsbeta@adobe.com pour vous inscrire au programme bêta.
 
-### Correctifs d’[!DNL Forms] {#forms-bugs-fixed}
+### Correctifs d’[!DNL Forms]  {#forms-bugs-fixed}
 
 * Dans une étape Affecter une tâche des processus AEM Forms, lorsque vous remplacez l’icône par défaut des boutons d’action par une icône corail, le processus cesse de fonctionner et consigne une exception. Le workflow fonctionne comme prévu lorsque des icônes par défaut sont utilisées.
 * Dans le calque de mise en page, lorsque vous modifiez le nombre de colonnes, ouvrez le calque d’édition et faites glisser certains composants dans un panneau, les zones bleues carrées apparaissent dans la zone de contenu de l’éditeur de formulaires adaptatifs et l’éditeur ne répond plus.
@@ -122,12 +96,12 @@ Vous pouvez écrire sur formscsbeta@adobe.com pour vous inscrire au programme b�
 
 ## Cloud Manager {#cloud-manager}
 
-Cette section présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service 2021.6.0 et 2021.5.0.
+Cette section présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.6.0 et 2021.5.0.
 
 ## Date de publication {#release-date-june-cm}
 
 La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.6.0 est le 10 juin 2021.
-La prochaine version est prévue pour le 15 juillet 2021.
+La prochaine version est prévue pour le 15 juillet 2021.
 
 ### Nouveautés {#what-is-new-junecm}
 
@@ -137,11 +111,11 @@ La prochaine version est prévue pour le 15 juillet 2021.
 
 * Le nom du programme peut maintenant être modifié à partir de la boîte de dialogue de modification du programme.
 
-* Le nom de branche par défaut utilisé lors de la création du projet et dans la commande push par défaut via la gestion des workflows git a été remplacé par `main`.
+* Le nom de branche par défaut utilisé lors de la création du projet et dans la commande push par défaut dans les workflows de gestion git a été remplacé par `main`.
 
-* La modification de l’expérience du programme dans l’interface utilisateur a été actualisée.
+* L’expérience de modification d’un programme dans l’interface utilisateur a été actualisée.
 
-* La règle de qualité `ImmutableMutableMixCheck` a été mise à jour afin de classer les noeuds `/oak:index` comme étant immuables.
+* La règle de qualité `ImmutableMutableMixCheck` a été mise à jour afin de classer les nœuds `/oak:index` comme étant immuables.
 
 * Les règles de qualité `CQBP-84` et `CQBP-84--dependencies` ont été consolidées dans une seule règle. Dans le cadre de cette consolidation, l’analyse des dépendances identifie plus précisément les problèmes des dépendances tierces qui sont déployés sur le runtime AEM.
 
@@ -155,11 +129,11 @@ La prochaine version est prévue pour le 15 juillet 2021.
 
 ### Correctifs {#bug-fixes-junecm}
 
-* Les définitions de noeud JCR contenant une nouvelle ligne après le nom de l’élément racine n’étaient pas correctement analysées.
+* Les définitions de nœud JCR contenant une nouvelle ligne après le nom de l’élément racine n’étaient pas correctement analysées.
 
-* L’API de liste des référentiels ne filtre pas les référentiels supprimés.
+* L’API de liste des référentiels ne filtrait pas les référentiels supprimés.
 
-* Un message d’erreur incorrect s’affichait lorsqu’une valeur non valide était fournie pour l’étape de planification.
+* Un message d’erreur incorrect s’affichait lorsqu’une valeur non valide était fournie lors de l’étape de planification.
 
 * Parfois, l’utilisateur peut voir un état *principal* en regard d’une Liste autorisée IP même lorsque cette configuration n’a pas été déployée.
 
@@ -170,47 +144,47 @@ La prochaine version est prévue pour le 15 juillet 2021.
 
 ### Date de publication {#release-date-cm-may}
 
-La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.5.0 est le 6 mai 2021.
+La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.5.0 est le 6 mai 2021.
 
 ### Nouveautés {#what-is-new-may}
 
-* La règle de qualité PackageOverlaps détecte désormais les cas dans lesquels le même package a été déployé plusieurs fois, c’est-à-dire dans de multiples emplacements incorporés, dans le même ensemble de packages déployé.
+* La règle de qualité PackageOverlaps détecte désormais les cas où le même package a été déployé plusieurs fois, c’est-à-dire dans plusieurs emplacements incorporés, dans le même ensemble de packages déployé.
 
-* Le point d’entrée du référentiel dans l’API publique inclut désormais l’URL Git.
+* Le point d’entrée du référentiel dans l’API publique inclut désormais l’URL de Git.
 
-* Le journal de déploiement téléchargé par un utilisateur de Cloud Manager sera plus informatif et comprendra désormais des détails sur les échecs et les scénarios de succès.
+* Le journal de déploiement téléchargé par un utilisateur de Cloud Manager sera plus informatif et comprendra désormais des détails sur les échecs et les scénarios de succès.
 
 * Les échecs intermittents rencontrés lors de la publication du code vers le git d’Adobe ont maintenant été résolus.
 
-* Le module complémentaire Commerce peut désormais être appliqué aux programmes Sandbox pendant le workflow Modifier le programme .
+* Le module complémentaire Commerce peut désormais être appliqué aux programmes Sandbox au cours du processus Modifier le programme.
 
-* L’expérience de l’action Modifier le programme a été actualisée.
+* L’expérience de modification du programme a été actualisée.
 
-* Le tableau Noms de domaine de la page Détails de l’environnement affiche jusqu’à 250 noms de domaine par pagination.
+* Le tableau Noms de domaine de la page Détails de l’environnement affiche jusqu’à 250 noms de domaine par pagination.
 
-* L’onglet Solutions des workflows Ajouter un programme et Modifier le programme affiche la solution, même si une seule solution est disponible pour le programme.
+* L’onglet Solutions des processus Ajouter un programme et Modifier le programme affiche la solution, même si une seule solution est disponible pour le programme.
 
-* Le message d’erreur dans le journal de l’étape de génération lorsque la version ne produisait aucun module de contenu déployé n’était pas clair.
+* Si la génération ne produisait aucun module de contenu, le message d’erreur du journal de l’étape de génération n’était pas clair.
 
 ### Correctifs {#bug-fixes-cm-may}
 
-* Parfois, l’utilisateur peut voir un état &quot;principal&quot; vert en regard d’une Liste autorisée IP même lorsque cette configuration n’a pas été déployée.
+* Il peut arriver que l’utilisateur voit un état « actif » vert en regard d’une liste d’adresses IP autorisées même si cette configuration n’a pas été déployée.
 
-* Au lieu de supprimer des variables &quot;supprimées&quot;, l’API des variables de pipelines ne les marquerait que avec le statut **DELETED**.
+* Au lieu de supprimer des variables marquées comme « deleted », l’API des variables de pipelines se contentait de les marquer avec le statut **DELETED**.
 
-* Certains problèmes de qualité de code de type smell avaient une incidence incorrecte sur la cote de fiabilité.
+* Certains problèmes de qualité de type Smell de code affectaient de façon incorrecte la note de fiabilité.
 
 * Comme les domaines génériques ne sont pas pris en charge, l’interface utilisateur ne permet pas à l’utilisateur d’envoyer un domaine de caractères génériques.
 
-* Lorsqu’une exécution de pipeline était démarrée entre minuit et 1 h UTC, il n’était pas garanti que la version d’artefact générée par Cloud Manager soit supérieure à la version créée le jour précédent.
+* Lorsqu’une exécution de pipeline était lancée entre minuit et 1h du matin (UTC), il n’était pas garanti que la version d’artefact générée par Cloud Manager était supérieure à une version créée le jour précédent.
 
-* Lors de la configuration du programme Sandbox, une fois que le projet avec un exemple de code a été créé, Gérer Git s’affiche sous la forme d’un lien à partir de la carte principale de la page Aperçu.
+* Lors de la configuration du programme Sandbox, une fois que le projet doté d’un exemple de code a été créé, Gérer Git s’affiche sous la forme d’un lien à partir de la carte principale de la page Aperçu.
 
 ## Outil de transfert de contenu {#content-transfer-tool}
 
 ### Date de publication {#release-date-ctt-latest}
 
-La date de publication de l’outil de transfert de contenu v1.4.6 est le 27 mai 2021.
+La date de publication de l’outil de transfert de contenu version v1.4.6 est le 27 mai 2021.
 
 ### Nouveautés {#what-is-new-ctt-latest}
 
@@ -226,16 +200,16 @@ La date de publication de l’outil de transfert de contenu v1.4.6 est le 27 mai
 
 ### Date de publication {#release-date-ctt-may}
 
-La date de publication de l’outil de transfert de contenu v1.4.0 est le 11 mai 2021.
+La date de publication de l’outil de transfert de contenu version v1.4.0 est le 11 mai 2021.
 
 ### Nouveautés {#what-is-new-ctt-may}
 
-* Cette version de l’outil de transfert de contenu crée des rendus de texte pour les ressources migrées vers Cloud Service. Les rendus de texte sont nécessaires pour prendre en charge la recherche de texte intégral sur les ressources ingérées.
-* Le nombre maximal de jeux de migration de l’outil de transfert de contenu qu’un utilisateur peut créer a été augmenté de 4 à 10.
+* Cette version de l’outil de transfert de contenu crée des rendus de texte pour les ressources qui ont bénéficié d’une migration vers Cloud Service. Les rendus de texte sont nécessaires pour prendre en charge la recherche de texte intégral sur les ressources ingérées.
+* Le nombre maximal de jeux de migration de l’outil de transfert de contenu qu’un utilisateur peut créer a été augmenté de 4 à 10.
 
 ### Correctifs {#bug-fixes-ctt-may}
 
-* Plusieurs correctifs de bogues liés à la fonction d’actualisation automatique dans l’interface utilisateur de l’outil de transfert de contenu.
+* Plusieurs correctifs de bogues liés à la fonction d’actualisation automatique dans l’interface utilisateur de l’outil de transfert de contenu ont été appliqués.
 * L’outil de transfert de contenu avec `wipe=true` générait un index de compteur incorrect sur la cible. Ce problème a été résolu.
 
 ## Module complémentaire Commerce {#cloud-services-commerce}
