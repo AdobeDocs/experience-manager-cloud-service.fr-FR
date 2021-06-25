@@ -3,10 +3,10 @@ title: Configuration d’OSGi pour Adobe Experience Manager as a Cloud Service
 description: 'Configuration d’OSGi à l’aide de valeurs secrètes et spécifiques aux environnements '
 feature: Déploiement
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 7baacc953c88e1beb13be9878b635b6e5273dea2
+source-git-commit: b28202a4e133f046b50477c07eb5a37271532c90
 workflow-type: tm+mt
-source-wordcount: '2850'
-ht-degree: 94%
+source-wordcount: '2927'
+ht-degree: 95%
 
 ---
 
@@ -53,6 +53,10 @@ Par exemple, si AEM utilise les modes d’exécution author et dev, les nœuds d
 Si plusieurs configurations correspondant au même PID sont applicables, la configuration comportant le nombre le plus élevé de modes d’exécution correspondants est appliquée.
 
 La granularité de cette règle se trouve au niveau du PID. Vous ne pouvez pas définir certaines propriétés pour le même PID dans `/apps/example/config.author/` et des propriétés plus spécifiques dans `/apps/example/config.author.dev/` pour le même PID. La configuration comportant le nombre le plus élevé de modes d’exécution correspondants est effective pour tout le PID.
+
+>[!NOTE]
+>
+>Un `config.preview` dossier de configuration OSGI **ne peut pas** être déclaré de la même manière qu’un dossier `config.publish` peut être déclaré. Au lieu de cela, le niveau d’aperçu hérite de sa configuration OSGI des valeurs du niveau de publication.
 
 Pour le développement local, un paramètre de démarrage en mode d’exécution peut être transmis de façon à indiquer la configuration OSGI de mode d’exécution à utiliser.
 
@@ -112,14 +116,14 @@ Les valeurs de configuration intégrées sont considérées comme l’approche s
 * Les valeurs sont implicitement liées aux déploiements de code.
 * Elles ne nécessitent aucune autre considération ni coordination de déploiement.
 
-Lorsque vous définissez une valeur de configuration OSGi, commencez par des valeurs intégrées et sélectionnez uniquement des configurations secrètes ou spécifiques à un environnement si nécessaire pour le cas d’utilisation.
+Lorsque vous définissez une valeur de configuration OSGi, commencez avec des valeurs intégrées, et ne sélectionnez que les configurations secrètes ou spécifiques à un environnement, si le cas d’utilisation le nécessite.
 
 ### Cas d’utilisation de valeurs de configuration non secrètes spécifiques à un environnement {#when-to-use-non-secret-environment-specific-configuration-values}
 
-N’utilisez de configurations spécifiques à un environnement (`$[env:ENV_VAR_NAME]`) que pour les valeurs de configuration non secrètes lorsque ces valeurs varient selon les environnements de développement. Cela inclut les instances de développement en local et les environnements de développement Adobe Experience Manager as a Cloud Service. Pour les environnements d’évaluation et de production Adobe Experience Manager as a Cloud Service, évitez d’utiliser des configurations non secrètes spécifiques à des environnements.
+N’utilisez des configurations spécifiques à un environnement (`$[env:ENV_VAR_NAME]`) que pour les valeurs de configuration non secrètes lorsque les valeurs varient pour le niveau d’aperçu ou varient selon les environnements de développement. Cela inclut les instances de développement en local et les environnements de développement Adobe Experience Manager as a Cloud Service. Outre la définition de valeurs uniques pour le niveau d’aperçu, évitez d’utiliser des configurations non secrètes spécifiques à un environnement pour Adobe Experience Manager en tant qu’environnements intermédiaires ou de production de Cloud Service.
 
-* Utilisez des configurations non secrètes spécifiques à des environnements uniquement pour les valeurs de configuration qui diffèrent selon les environnements de développement, y compris les instances de développement en local.
-* Utilisez plutôt les valeurs intégrées standard dans les configurations OSGi pour les valeurs non secrètes d’évaluation et de production. À cet égard, il n’est pas recommandé d’utiliser des configurations spécifiques à un environnement pour faciliter les modifications de configuration au moment de l’exécution dans les environnements d’évaluation et de production ; ces modifications doivent être introduites par le biais du processus de gestion du code source.
+* N’utilisez des configurations non secrètes spécifiques à un environnement que pour les valeurs de configuration qui diffèrent entre le niveau de publication et de prévisualisation, ou pour les valeurs qui diffèrent entre les environnements de développement, y compris les instances de développement locales.
+* Outre le scénario où le niveau d’aperçu doit varier du niveau de publication, utilisez les valeurs intégrées standard dans les configurations OSGi pour les valeurs non secrètes de test et de production. À cet égard, il n’est pas recommandé d’utiliser des configurations spécifiques à un environnement pour faciliter les modifications de configuration au moment de l’exécution dans les environnements d’évaluation et de production ; ces modifications doivent être introduites par le biais du processus de gestion du code source.
 
 ### Cas d’utilisation de valeurs secrètes de configuration spécifiques à un environnement {#when-to-use-secret-environment-specific-configuration-values}
 
@@ -143,7 +147,7 @@ Notez que les noms des fichiers de configuration OSGi d’usine appliquent la co
 1. Enregistrez les modifications dans le nouveau fichier `.cfg.json`.
 1. Ajoutez et validez votre nouveau fichier de configuration OSGi sur Git.
 
-### Génération de configurations OSGi à l’aide de l’environnement d’exécution Quickstart du SDK AEM  {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
+### Génération de configurations OSGi à l’aide de l’environnement d’exécution Quickstart du SDK AEM {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
 
 Il est possible d’utiliser la console web AEM de l’environnement d’exécution Quickstart Jar du SDK AEM pour configurer les composants OSGi et exporter les configurations OSGi au format JSON. La console facilite la configuration des composants OSGi fournis par AEM dont les propriétés OSGi et leurs formats de valeurs ne sont pas nécessairement bien maîtrisés par le développeur chargé de définir les configurations OSGi du projet AEM.
 
@@ -170,7 +174,7 @@ Il est possible d’utiliser la console web AEM de l’environnement d’exécut
 1. Ajoutez et validez votre nouveau fichier de configuration OSGi sur Git.
 
 
-## Formats des propriétés de configuration OSGi  {#osgi-configuration-property-formats}
+## Formats des propriétés de configuration OSGi   {#osgi-configuration-property-formats}
 
 ### Valeurs intégrées {#inline-values}
 
@@ -220,7 +224,7 @@ Les valeurs des variables ne doivent pas dépasser 2 048 caractères.
 
 >[!NOTE]
 >
->Les noms de variables précédés de `INTERNAL_` sont réservés par Adobe. Toutes les variables définies par le client commençant par ce préfixe seront ignorées.
+>Les noms de variables précédés de la mention `INTERNAL_` sont réservés par Adobe. Toutes les variables définies par le client commençant par ce préfixe seront ignorées.
 
 ### Valeurs par défaut {#default-values}
 
@@ -255,10 +259,10 @@ Si, par exemple, `$[secret:server_password]` est utilisé, un fichier texte nomm
 Si une propriété OSGI nécessite des valeurs différentes pour la création et la publication :
 
 * Des dossiers OSGi `config.author` et `config.publish` distincts sont nécessaires, comme décrit dans la section [Résolution du mode d’exécution](#runmode-resolution).
-* Deux options permettent de créer des noms de variable indépendants qui doivent être utilisés :
-   * la première option, recommandée : dans tous les dossiers OSGI (comme `config.author` et `config.publish`) déclarés pour définir des valeurs différentes, utilisez le même nom de variable. Par exemple :
-      `$[env:ENV_VAR_NAME;default=<value>]`, où la valeur par défaut correspond à la valeur par défaut de ce niveau (auteur ou publication). Lors de la définition de la variable d’environnement via [l’API Cloud Manager](#cloud-manager-api-format-for-setting-properties) ou via un client, différenciez les niveaux à l’aide du paramètre &quot;service&quot;, comme décrit dans cette [documentation de référence de l’API](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables). Le paramètre &quot;service&quot; lie la valeur de la variable au niveau OSGI approprié.
-   * la deuxième option, qui consiste à déclarer des variables distinctes à l’aide d’un préfixe tel que `author_<samevariablename>` et `publish_<samevariablename>` ;
+* Deux options permettent de créer des noms de variable indépendants :
+   * la première option, recommandée : dans tous les dossiers OSGI (comme `config.author` et `config.publish`) déclarés pour définir des valeurs différentes, utilisez le même nom de variable. Par exemple :
+      `$[env:ENV_VAR_NAME;default=<value>]`, où la valeur par défaut correspond à la valeur par défaut de ce niveau (auteur ou publication). Lors de la définition de la variable d’environnement par le biais de [l’API Cloud Manager](#cloud-manager-api-format-for-setting-properties) ou d’un client, différenciez les niveaux à l’aide du paramètre « service », comme décrit dans cette [documentation de référence de l’API](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables). Le paramètre « service » lie la valeur de la variable au niveau OSGI approprié. Il peut s’agir de &quot;création&quot;, &quot;publication&quot; ou &quot;aperçu&quot;.
+   * la deuxième option, qui consiste à déclarer des variables distinctes à l’aide d’un préfixe tel que `author_<samevariablename>` et `publish_<samevariablename>` ;
 
 ### Exemples de configurations {#configuration-examples}
 
