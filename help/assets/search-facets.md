@@ -1,13 +1,13 @@
 ---
 title: Facettes de recherche
 description: Cet article décrit comment créer, modifier et utiliser les facettes de recherche dans AEM.
-feature: Recherche, métadonnées
+feature: Recherche, Métadonnées
 role: Business Practitioner,Administrator
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: fbc8039057075248d5de4f030ee36a952592e609
 workflow-type: tm+mt
-source-wordcount: '2378'
-ht-degree: 99%
+source-wordcount: '2361'
+ht-degree: 100%
 
 ---
 
@@ -145,7 +145,7 @@ Le prédicat `Tags` vous permet de rechercher des ressources sur la base des bal
 1. Indiquez les balises sur la base desquelles vous souhaitez rechercher des ressources ou faites votre sélection dans la liste des suggestions.
 1. Sélectionnez **[!UICONTROL Correspondre à tous les critères]** pour rechercher les ressources qui contiennent toutes les balises que vous spécifiez.
 
-## Ajout d’autres prédicats {#adding-other-predicates}
+## Ajout d’autres prédicats  {#adding-other-predicates}
 
 Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous pouvez ajouter les autres prédicats suivants au panneau Rechercher :
 
@@ -168,7 +168,7 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
     </ul> </td>
   </tr>
   <tr>
-   <td>Chemin Navigateur</td>
+   <td>Chemin  Navigateur</td>
    <td>Prédicat de recherche permettant de rechercher des ressources dans des dossiers et des sous-dossiers à un chemin d’accès racine préconfiguré.</td>
    <td>
     <ul>
@@ -218,7 +218,7 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Date Plage</p> </td>
+   <td><p>Date  Plage</p> </td>
    <td><p>Prédicat de recherche permettant de rechercher des ressources créées pendant une période spécifiée pour une propriété de date. Vous pouvez spécifier des dates de début et de fin dans le panneau Rechercher à l’aide des sélecteurs de date.</p> </td>
    <td>
     <ul>
@@ -268,17 +268,6 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
     <ul>
      <li>Libellé</li>
      <li>Nom de la propriété</li>
-     <li>Description</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>Évaluation</td>
-   <td>Prédicat de recherche permettant de rechercher des ressources en fonction de leur évaluation moyenne. </td>
-   <td>
-    <ul>
-     <li>Libellé</li>
-     <li>Nom de la propriété</li>
-     <li>Chemin d’accès aux options</li>
      <li>Description</li>
     </ul> </td>
   </tr>
