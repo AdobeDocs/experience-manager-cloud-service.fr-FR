@@ -4,10 +4,10 @@ description: Modifications notables apportées à  [!DNL Adobe Experience Manage
 feature: Informations sur la version
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
+source-git-commit: fbc8039057075248d5de4f030ee36a952592e609
 workflow-type: tm+mt
-source-wordcount: '830'
-ht-degree: 93%
+source-wordcount: '850'
+ht-degree: 91%
 
 ---
 
@@ -59,6 +59,7 @@ Pour effectuer une validation de bout en bout du code et du processus, y compris
 | Génération de sous-ressources pour les ressources composites | Pas de prise en charge. | Les cas d’utilisation dépendants ne sont pas remplis. Par exemple, l’annotation de fichiers PDF de plusieurs pages est affectée. Voir la section [Création de sous-ressources dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html?lang=fr#generate-subassets). |
 | Page d’accueil | Pas de prise en charge. | Voir la section [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html?lang=fr) |
 | Extraction de ressources à partir de l’archive ZIP | Pas de prise en charge. | Voir la section [extraction ZIP dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=fr#extractzip). |
+| Évaluation des ressources | Pas de prise en charge. | Le widget de l’éditeur de schéma de métadonnées qui fournissait l’option d’évaluation des ressources n’est pas pris en charge. |
 | IU classique | Pas de prise en charge. | Seule l’interface utilisateur tactile est disponible. |
 
 >[!MORELIKETHIS]
