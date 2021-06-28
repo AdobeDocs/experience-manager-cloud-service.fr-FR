@@ -2,9 +2,9 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: d08fc076306c54f8551c9df499efa0ded7bcc131
+source-git-commit: 5c5ddac1a3b948d1efbd06aa188ac6d8d897d37f
 workflow-type: tm+mt
-source-wordcount: '2918'
+source-wordcount: '2929'
 ht-degree: 90%
 
 ---
@@ -205,11 +205,11 @@ Une fois le processus d’extraction terminé, vous pouvez transférer le conten
 >id="aemcloud_ctt_ingestion"
 >title="Ingestion de contenu"
 >abstract="L’ingestion désigne l’ingestion de contenu à partir du jeu de migration dans l’instance Cloud Service cible. L’outil de transfert de contenu comporte une fonctionnalité pour traiter un complément de contenu différentiel. Dans ce cas, seules les modifications effectuées depuis l’activité de transfert de contenu précédente sont transférées."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=fr#top-up-ingestion-process" text="Ingestion de complément"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="Ingestion de complément"
 
 Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert de contenu, procédez comme suit :
 >[!NOTE]
->Si Amazon S3 ou Azure Data Store est utilisé comme type d’entrepôt de données, vous pouvez exécuter l’étape facultative de précopie afin d’accélérer considérablement la phase d’ingestion. Pour plus d’informations, voir [Ingestion avec AzCopy] .
+>Si Amazon S3 ou Azure Data Store est utilisé comme type d’entrepôt de données, vous pouvez exécuter l’étape facultative de précopie afin d’accélérer considérablement la phase d’ingestion. Pour plus d’informations, voir [Ingestion avec AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) .
 
 1. Sélectionnez un jeu de migration à partir de la page *Overview* et cliquez sur **Ingest** pour commencer l’ingestion. La boîte de dialogue **Migration Set ingestion** (Ingestion du jeu de migration) s’affiche. Cliquez sur **Ingest** pour démarrer la phase d’ingestion. Il est possible d’ingérer en même temps du contenu vers les instances d’auteur et de publication.
 
@@ -221,7 +221,7 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
-   De plus, cliquez sur **Assistance clientèle** pour enregistrer un ticket, comme le montre la figure ci-dessus. Consultez également [Points importants concernant l’utilisation de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=fr#pre-reqs) pour en savoir plus.
+   De plus, cliquez sur **Assistance clientèle** pour enregistrer un ticket, comme le montre la figure ci-dessus. Consultez également [Points importants concernant l’utilisation de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) pour en savoir plus.
 
 1. Une fois l’ingestion terminée, l’état du champ **PUBLISH INGESTION** passe à **FINISHED**.
 
@@ -251,7 +251,7 @@ Une fois le processus d’ingestion terminé, vous pouvez utiliser le contenu di
 >id="aemcloud_ctt_logs"
 >title="Affichage des journaux"
 >abstract="Une fois l’extraction de l’ingestion terminée, recherchez dans les journaux les erreurs/avertissements éventuels. Toute erreur doit être corrigée immédiatement soit en traitant les problèmes signalés, soit en contactant l’assistance d’Adobe."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=fr#troubleshooting" text="Résolution des problèmes"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#troubleshooting" text="Résolution des problèmes"
 >additional-url="https://helpx.adobe.com/fr/enterprise/admin-guide.html/fr/enterprise/using/support-for-experience-cloud.ug.html" text="Contacter le support technique d’Adobe"
 
 Une fois chaque étape terminée (extraction et ingestion), vérifiez les journaux et recherchez les erreurs.  Toute erreur doit être corrigée immédiatement soit en traitant les problèmes signalés, soit en contactant l’assistance d’Adobe.
