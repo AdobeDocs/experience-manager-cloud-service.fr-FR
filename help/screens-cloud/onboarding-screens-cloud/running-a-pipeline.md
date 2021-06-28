@@ -1,13 +1,10 @@
 ---
 title: Exécution d’un pipeline
 description: Cette page décrit l’exécution d’un pipeline pour Screens en tant que projet Cloud Service dans Cloud Manager.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '320'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -19,7 +16,7 @@ Cette section décrit comment exécuter le pipeline et déployer le code corresp
 >[!NOTE]
 >Voir [Configuration de votre pipeline CD-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) et [Déployer votre code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=fr) pour savoir comment exécuter le pipeline pour votre programme dans Cloud Manager.
 
-## Intention {#objective}
+## Objectif {#objective}
 
 La section suivante décrit comment configurer le pipeline CI/CD et déployer votre code pour votre programme dans Cloud Manager.
 
@@ -57,6 +54,6 @@ La section suivante décrit comment configurer le pipeline CI/CD et déployer vo
 
    ![image](/help/screens-cloud/assets/onboarding/run-pipeline5.png)
 
-## Suite {#whats-next}
+## Et après ? {#whats-next}
 
 Une fois que vous avez appris à configurer un environnement pour votre programme dans Cloud Manager, vous êtes prêt à passer à l’étape suivante du processus d’intégration : [Accès au fournisseur de services Screens](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md).
