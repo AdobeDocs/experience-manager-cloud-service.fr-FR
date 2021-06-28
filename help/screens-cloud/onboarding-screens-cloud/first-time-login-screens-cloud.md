@@ -1,13 +1,10 @@
 ---
 title: Première connexion à Screens en tant que Cloud Service
 description: Cette page décrit les premières étapes de la prise en main de Screens en tant que Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '230'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -31,6 +28,6 @@ Une fois que vous avez reçu l’identifiant d’organisation Adobe Identity Man
 >[!NOTE]
 >Les utilisateurs ont accès au profil de produit Cloud Service AEM afin de pouvoir se connecter à AEM à l’aide d’Adobe ID ou de Federated ID.
 
-## Suite {#whats-next}
+## Et après ? {#whats-next}
 
 Maintenant que vous disposez d’un identifiant de l’organisation IMS et que vous avez ajouté en tant qu’utilisateur à Adobe Admin Console, vous pouvez ajouter un module complémentaire [Screens au nouveau programme](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) ou à [un programme existant](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md) pour Screens en tant que Cloud Service dans Cloud Manager.
