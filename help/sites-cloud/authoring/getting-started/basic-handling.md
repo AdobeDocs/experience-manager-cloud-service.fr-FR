@@ -2,9 +2,9 @@
 title: Manipulation de base
 description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: b1266893cde4001366df153d0302282f7612c6ed
+source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
 workflow-type: tm+mt
-source-wordcount: '2876'
+source-wordcount: '2881'
 ht-degree: 98%
 
 ---
@@ -31,7 +31,7 @@ Une fois connecté, vous accédez au [panneau de navigation](#navigation-panel).
 
 La console **Sites** est utilisée dans ce document pour garantir une bonne compréhension de l’utilisation de base d’AEM. Cliquez ou appuyez sur **Sites** pour commencer.
 
-## Navigation dans le produit {#product-navigation}
+## Navigation dans le produit  {#product-navigation}
 
 La première fois que vous accédez à une console, un didacticiel de navigation du produit démarre. Prenez quelques instants pour cliquer ou appuyer sur divers éléments afin de vous familiariser avec le fonctionnement de base d’AEM.
 
@@ -51,7 +51,7 @@ Vous pouvez fermer le panneau de navigation globale en cliquant ou en appuyant s
 
 La navigation globale se compose de deux panneaux, représentés par des icônes dans la marge gauche de l’écran :
 
-* **[Navigation](#navigation-panel)** : représenté par une boussole et le panneau par défaut lorsque vous vous connectez à AEM
+* **[Navigation](#navigation-panel)** : représenté par une boussole  et le panneau par défaut lorsque vous vous connectez à AEM
 * **[Outils](#tools-panel)** : représenté par un marteau
 
 Les options disponibles dans ces panneaux sont décrites ci-dessous.
@@ -162,7 +162,7 @@ L’en-tête est toujours affiché en haut de l’écran. La plupart des options
 
    ![Passer au contenu principal](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
 
-## Accès à l’aide {#accessing-help}
+## Accès à l’Aide    {#accessing-help}
 
 Plusieurs ressources d’aide sont disponibles :
 
@@ -315,7 +315,7 @@ La sélection d’une ressource dans la colonne de gauche affiche les ressources
    * Modèle sur lequel la page est basée
    * Modification des détails
    * Langue de la page
-   * Détails de la publication
+   * Publication et aperçu des détails
 
 
 ### Mode Carte {#card-view}
@@ -361,6 +361,7 @@ La sélection d’une ressource dans la colonne de gauche affiche les ressources
    * **Nom** : nom de la page ; cela peut s’avérer utile dans un environnement de création multilingue, dans la mesure où il fait partie de l’URL de la page et où il ne change pas, quelle que soit la langue.
    * **Modifié** : date de la dernière modification et nom de l’utilisateur responsable de la modification.
    * **Publié** : état de la publication.
+   * **Aperçu**  - Aperçu de l’état
    * **Modèle** : modèle sur lequel la page est basée.
    * **Workflow** : workflow actuellement appliqué à la page. D’autres informations sont disponibles lorsque vous déplacez la souris ou lorsque vous ouvrez la chronologie.
    * **Analyse de la page**
@@ -420,7 +421,7 @@ La colonne Chronologie permet d’effectuer les actions suivantes :
 
       * Commentaires
       * [Annotations](/help/sites-cloud/authoring/fundamentals/annotations.md)
-      * [Activités  ](/help/sites-cloud/authoring/personalization/activities.md)
+      * [Activités ](/help/sites-cloud/authoring/personalization/activities.md)
       * [Lancements](/help/sites-cloud/authoring/launches/overview.md)
       * [Versions](/help/sites-cloud/authoring/features/page-versions.md)
       * [Workflows](/help/sites-cloud/authoring/workflows/overview.md)
