@@ -5,10 +5,10 @@ breadcrumb-title: Guide de déplacement
 user-guide-description: Découvrez le parcours de transition vers Cloud Service.
 feature: Déploiement
 role: Architect, Developer
-source-git-commit: 64794b387efe6995cda6b58fb19ba36a04cbe577
+source-git-commit: a3a90868b64a0639f8a065c8c4d6ef6410094f3d
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 94%
+source-wordcount: '97'
+ht-degree: 90%
 
 ---
 
@@ -27,6 +27,7 @@ ht-degree: 94%
    + Outil de transfert de contenu {#content-transfer-tool}
       + [Présentation](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [Conditions préalables pour l’outil de transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/prerequisites-content-transfer-tool.md)
+      + [Gestion des référentiels de contenu volumineux](/help/move-to-cloud-service/content-transfer-tool/handling-large-content-repositories.md)
       + [Utilisation de l’outil de mappage des utilisateurs](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
       + [Utilisation de l’outil de transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + Outils de refactorisation du code {#refactoring-tools}
