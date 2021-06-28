@@ -2,10 +2,10 @@
 title: Modification des propriétés de page
 description: Définissez les propriétés requises pour une page
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
 workflow-type: tm+mt
-source-wordcount: '1907'
-ht-degree: 99%
+source-wordcount: '1930'
+ht-degree: 98%
 
 ---
 
@@ -157,7 +157,7 @@ Configuration de la miniature de la page
 
 ### Cloud Services {#cloud-services}
 
-* **Configurations du service cloud** - Définit les propriétés des services cloud
+* **Configurations du service cloud**  - Définit les propriétés des services cloud
 
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
@@ -197,7 +197,7 @@ Cet onglet n’est visible que pour les pages qui servent de plan directeur. Les
 
 * **Configurations du déploiement** - Détermine les circonstances dans lesquelles les modifications seront diffusées à la Live Copy.
 
-### Live Copy {#live-copy}
+### Live Copy  {#live-copy}
 
 * **Synchroniser** - Synchroniser la Live Copy avec le plan directeur, en conservant les modifications locales.
 * **Réinitialiser** - Réinitialiser la Live Copy à l’état de plan directeur, en supprimant les modifications locales.
@@ -218,6 +218,12 @@ Cet onglet n’est visible que pour les pages qui servent de plan directeur. Les
    * **Hériter des configurations de déploiement du parent** - Si cette option est cochée, la configuration de déploiement est héritée du parent de la page.
    * **Choisir la configuration de déploiement** - Définit les circonstances dans lesquelles les modifications seront propagées à partir du plan directeur et disponibles uniquement lorsque **Hériter des configurations de déploiement du parent** n’est pas sélectionné
 
+### Aperçu {#preview}
+
+Lorsqu’un environnement de prévisualisation est activé, les éléments suivants s’affichent :
+
+* URL de prévisualisation : URL utilisée pour accéder au contenu dans l’environnement de prévisualisation.
+
 ## Modification des propriétés de page {#editing-page-properties-1}
 
 * Dans la console **Sites** :
@@ -225,7 +231,7 @@ Cet onglet n’est visible que pour les pages qui servent de plan directeur. Les
    * En cliquant ou en appuyant sur **Propriétés**
       * Pour une seule page
       * Pour plusieurs pages (un seul sous-ensemble des propriétés est disponible pour la modification en masse)
-* Dans l’éditeur de page :
+* À partir de l’éditeur de page:
    * En sélectionnant **Informations sur la page** (puis **Ouvrir les propriétés**)
 
 ### À partir de la console Sites – Une seule page {#from-the-sites-console-single-page}
@@ -235,7 +241,7 @@ Cliquez ou appuyez sur **Propriétés** pour définir les propriétés de la pag
 1. Dans la console **Sites**, accédez à l’emplacement de la page pour laquelle afficher et modifier les propriétés.
 1. Sélectionnez l’option **Propriétés** pour la page requise, en utilisant :
    * [Actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
-   * [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
+   * [Mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
    * Les propriétés de la page affichées dans les onglets appropriés.
 1. Affichez ou modifiez les propriétés selon les besoins.
 1. Puis cliquez sur **Enregistrer** pour enregistrer vos modifications et sur **Fermer** pour revenir à la console.
