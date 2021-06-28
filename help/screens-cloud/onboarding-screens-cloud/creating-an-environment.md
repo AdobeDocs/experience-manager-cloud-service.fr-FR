@@ -1,13 +1,10 @@
 ---
 title: Création d'une branche
 description: Cette page décrit la création d’une branche dans Cloud Manager pour Screens en tant que Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 0042b0ba6b652a61ee0ac880bc5b4db8aa679359
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '206'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -19,7 +16,7 @@ Cette section décrit comment créer un environnement pour votre programme dans 
 >[!NOTE]
 >Reportez-vous à [Gestion des environnements dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en) pour savoir comment l’utilisateur peut créer un environnement.
 
-## Intention {#objective}
+## Objectif {#objective}
 
 La section suivante décrit la création d’un environnement pour votre programme dans Cloud Manager.
 
@@ -41,7 +38,7 @@ Une fois la création du projet terminée, la mise à jour de la carte d’appel
 
    ![image](/help/screens-cloud/assets/onboarding/add-environ3a.png)
 
-## Suite {#whats-next}
+## Et après ? {#whats-next}
 
 Une fois que vous avez appris à configurer un environnement pour votre programme dans Cloud Manager, vous êtes prêt à passer à l’étape suivante du processus d’intégration : [Exécution du pipeline](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).
 
