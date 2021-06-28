@@ -2,9 +2,9 @@
 title: Aperçu du contenu
 description: Découvrez comment utiliser le service d’aperçu AEM pour prévisualiser le contenu avant sa mise en ligne.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: e31fd00b05832e84f87221287f79038acbdb8ec3
+source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,15 @@ Vous pouvez publier du contenu dans le service d’aperçu à l’aide de l’in
 
 1. Cliquez sur **Suivant**, puis sur **Publier** pour confirmer.
 
-Pour voir le contenu de la prévisualisation, ajoutez **preview** à l’URL de publication de votre instance de production. L’URL doit être construite comme suit :
+1. Une boîte de dialogue affiche les URL d’accès au contenu dans l’environnement Aperçu.
 
-```
-https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
-```
+   Ou pour afficher le contenu de la prévisualisation, vous pouvez également ajouter **preview** à l’URL de publication de votre instance de production.
+
+   L’URL doit être construite comme suit :
+
+   ```
+   https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
+   ```
 
 Voir [Gestion des environnements](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) pour plus d’informations sur la manière d’obtenir les URL de vos environnements.
 
