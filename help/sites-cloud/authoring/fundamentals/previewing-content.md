@@ -2,9 +2,9 @@
 title: Aperçu du contenu
 description: Découvrez comment utiliser le service d’aperçu AEM pour prévisualiser le contenu avant sa mise en ligne.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: f5e37a4ac8b179ac869609edc87f52858607ad36
+source-git-commit: e31fd00b05832e84f87221287f79038acbdb8ec3
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
 
 Voir [Gestion des environnements](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) pour plus d’informations sur la manière d’obtenir les URL de vos environnements.
 
-Le contenu peut également être publié pour la prévisualisation à l’aide d’un [processus Publier l’arborescence de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/replication.html?lang=en#publish-content-tree-workflow) avec le paramètre agentId défini pour la prévisualisation ou à l’aide de l’[API de réplication](/help/operations/replication.md#replication-api) avec un AgentFilter configuré pour la prévisualisation.
+Le contenu peut également être publié pour la prévisualisation à l’aide d’un [processus Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) avec le paramètre agentId défini pour la prévisualisation ou à l’aide de l’[API de réplication](/help/operations/replication.md#replication-api) avec un AgentFilter configuré pour la prévisualisation.
 
 ## Configuration des paramètres OSGi pour le niveau de prévisualisation {#configuring-osgi-settings-for-the-preview-tier}
 
