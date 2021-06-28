@@ -1,7 +1,7 @@
 ---
 title: Gestion des référentiels de contenu volumineux
 description: Cette section décrit la gestion des référentiels de contenu volumineux
-source-git-commit: 00f189c2c446836cb3f92677516152168734c43d
+source-git-commit: 1299a4bd4e4139c971680e439a3b366162af0de2
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 2%
@@ -38,13 +38,13 @@ Consultez cette section pour savoir comment configurer l’utilisation d’AzCop
 
 ### 0. Déterminer la taille totale de tout le contenu de l’entrepôt de données {#determine-total-size}
 
-#### Stockage de données Azure Blob
+#### Stockage de données Azure Blob {#azure-blob-storage}
 
 Sur la page des propriétés du conteneur du portail Azure, utilisez le bouton **Calculer la taille** pour déterminer la taille de tout le contenu du conteneur. Par exemple :
 
 ![image](/help/move-to-cloud-service/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
-#### Entrepôt de données S3 Amazon
+#### Entrepôt de données S3 Amazon {#amazon-data}
 
 Vous pouvez utiliser l’onglet Mesures du conteneur pour déterminer la taille de tout le contenu du conteneur. Par exemple :
 
@@ -67,7 +67,7 @@ Sur l’instance d’AEM source, dans crx-quickstart/cloud-migration , créez un
 
 Le contenu de ce fichier de configuration sera différent selon que votre instance d’AEM source utilise un entrepôt de données Azure ou Amazon S3.
 
-#### Stockage de données Azure Blob
+#### Stockage de données Azure Blob {#azure-blob-storage-data}
 
 Votre fichier azcopy.config doit inclure les propriétés suivantes (veillez à utiliser les azCopyPath et azureSas corrects pour votre instance).
 
@@ -80,7 +80,7 @@ azCopyPath=/usr/bin/azcopy
 azureSas=https://example-resource.blob.core.windows.net/example-container?sig=--REDACTED--
 ```
 
-#### Entrepôt de données S3 Amazon
+#### Entrepôt de données S3 Amazon {#amazon-data-store}
 
 Votre fichier azcopy.config doit inclure les propriétés suivantes (veillez à utiliser les valeurs correctes pour votre instance).
 
