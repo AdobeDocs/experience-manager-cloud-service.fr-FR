@@ -1,10 +1,7 @@
 ---
 title: Publication d’un canal dans Screens en tant que Cloud Service
 description: Cette page décrit comment publier un canal dans Screens en tant que Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 3da578d544ab82c61bdfecc0b470b1cd3315f996
+source-git-commit: 148fb0adf5c8ed60053225e84ddc42532fd7483c
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 17%
@@ -21,7 +18,7 @@ Vous pouvez publier du contenu à partir d’AEM Screens. La fonction Gérer la 
 >[!IMPORTANT]
 >Une fois que vous avez créé votre ou vos canaux dans votre projet, il est obligatoire de les publier afin d’afficher le ou les canaux en mode Liste des stocks dans le fournisseur de services AEM Screens.
 
-## Intention {#objective}
+## Objectif {#objective}
 
 Ce document vous aide à comprendre la publication du contenu modifié sur le fournisseur et le lecteur Screens Services. Après lecture, vous devriez être en mesure de :
 
@@ -50,6 +47,6 @@ Pour publier le canal, procédez comme suit :
    ![](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
-## Suite {#whats-next}
+## Et après ? {#whats-next}
 
 Maintenant que vous avez publié vos canaux dans le projet, vous devez continuer votre parcours Screens en tant que Cloud Service en consultant le document [Installation et configuration des lecteurs dans Screens en tant que Cloud Service](/help/screens-cloud/creating-content/manage-publish.md).
