@@ -3,7 +3,7 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: c7cba6217ec960219c607b76ab7f2f096af7459a
+source-git-commit: 10439fbe448152209211a8a1755ffe862f9cf48c
 workflow-type: tm+mt
 source-wordcount: '1663'
 ht-degree: 44%
@@ -70,7 +70,7 @@ Regardez la vidéo [Présentation de la version de mai 2021](https://video.tv.ad
 
 * Le ratio de pixels d’appareil d’imagerie dynamique (RPD) et l’optimisation de la bande passante du réseau permettent de diffuser des images de meilleure qualité de manière efficace, sur les appareils dotés d’écrans haute résolution et d’une bande passante réseau limitée. Voir [FAQ sur l’imagerie dynamique](/help/assets/dynamic-media/imaging-faq.md).
 
-* Prise en charge du format d’image AVIF nouvelle génération dans la diffusion [!DNL Dynamic Media] (modificateur d’URL `fmt`). Pour plus d’informations et de détails sur la chronologie, voir [API de traitement et de rendu d’images fmt](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
+* Prise en charge du format d’image AVIF nouvelle génération dans la diffusion [!DNL Dynamic Media] (modificateur d’URL `fmt`). Pour plus d’informations et de détails sur la chronologie, voir [API de traitement et de rendu d’images fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
 ## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
