@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
+source-git-commit: 1c967d4114cae67da9e0c2cda14458329ecd7156
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 24%
+source-wordcount: '1254'
+ht-degree: 22%
 
 ---
 
@@ -154,5 +154,25 @@ Vous pouvez écrire sur [!DNL formscsbeta@adobe.com] pour vous inscrire au progr
 * Les composants principaux de Commerce prennent en charge la collecte de données Adobe Commerce Sensei Recs
 * Amélioration des URL compatibles avec l’optimisation pour les moteurs de recherche pour les pages de catégorie
 * Prise en charge des en-têtes HTTP personnalisés par site/configuration
+
+## Outil de transfert de contenu {#content-transfer-tool}
+
+### Date de publication {#release-date-ctt-latest}
+
+La date de publication de l’outil de transfert de contenu version 1.5.4 est le 28 juin 2021.
+
+### Nouveautés {#what-is-new-ctt-latest}
+
+* Prise en charge d’une étape facultative [pré-copie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) ajoutée à l’utilisation avec le CTT. L’étape de précopie peut être utilisée pour accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu lorsque l’instance d’AEM source est configurée pour utiliser un entrepôt de données Amazon S3 ou Azure Blob Storage.
+
+* Une barrière de sécurité a été ajoutée au CTT pour empêcher les utilisateurs d’arrêter une ingestion et de corrompre les données une fois qu’elles ont atteint le point critique pendant la phase d’ingestion.
+
+* Les journaux d’extraction sont devenus plus descriptifs pour faciliter le dépannage.
+
+* Ajout de messages d’état d’ingestion plus descriptifs dans l’interface utilisateur.
+
+### Correctifs {#bug-fixes-ctt-latest}
+
+* Lors de l’arrêt d’une ingestion sur l’instance d’auteur, l’interface utilisateur a remplacé une ingestion précédemment terminée sur l’instance de publication sur `STOPPED` à partir de `FINISHED`. Ce problème a été résolu.
 
 
