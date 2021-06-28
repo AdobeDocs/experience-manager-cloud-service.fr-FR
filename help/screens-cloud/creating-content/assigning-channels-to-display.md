@@ -1,13 +1,10 @@
 ---
 title: Affectation d’un canal à un affichage dans Screens en tant que Cloud Service
 description: Cette page décrit comment attribuer un canal à un affichage dans Screens en tant que Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 40%
+ht-degree: 41%
 
 ---
 
@@ -16,7 +13,7 @@ ht-degree: 40%
 
 Une fois le projet configuré, vous devez attribuer le canal à un affichage pour afficher le contenu.
 
-## Intention {#objective}
+## Objectif {#objective}
 
 Ce document vous aide à comprendre comment attribuer un canal à un affichage, une fois que votre affichage est prêt et que vous avez ajouté du contenu à votre canal et que vous l’avez publié. Après avoir lu, vous devriez être en mesure d’attribuer un canal à un affichage à partir du fournisseur de services Screens.
 
@@ -27,7 +24,7 @@ Avant d’exécuter les étapes ci-dessous pour attribuer un canal à un afficha
 * Création et gestion des affichages
 * Création et gestion des canaux
 
-## Étapes pour attribuer un canal à un affichage {#assign-channel-to-display}
+## Procédure d’attribution d’un canal à un affichage {#assign-channel-to-display}
 
 Suivez les étapes ci-dessous pour attribuer un canal à un affichage :
 
@@ -69,6 +66,6 @@ Suivez les étapes ci-dessous pour attribuer un canal à un affichage :
    ![image](/help/screens-cloud/assets/display/assignchannel-3.png)
 
 
-## Suite {#whats-next}
+## Et après ? {#whats-next}
 
 Maintenant que vous avez attribué le canal à un affichage, vous devez continuer votre parcours Screens en tant que Cloud Service en consultant le document [Installation et configuration du lecteur Screens pour AEM en tant que Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).
