@@ -1,13 +1,10 @@
 ---
 title: Création et gestion des affichages dans Screens en tant que Cloud Service
 description: Cette page décrit comment créer et gérer des affichages dans Screens en tant que Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 5c6f79fce71ce0fcb1f77f90faf3621000daac0f
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '283'
-ht-degree: 14%
+ht-degree: 16%
 
 ---
 
@@ -18,13 +15,13 @@ Une fois que vous avez publié votre canal, il est temps de créer un affichage 
 
 Un affichage est un groupe virtuel d’écrans généralement positionnés les uns à côté des autres. L’affichage est en général permanent dans une installation. C’est l’objet avec lequel les auteurs de contenu travaillent. Ils le désignent par ailleurs toujours par le terme d’affichage logique pour le distinguer de ses équivalents physiques.
 
-## Intention {#objective}
+## Objectif {#objective}
 
-Ce document vous aide à comprendre comment créer et gérer des affichages dans le fournisseur de services Screens. Après lecture, vous devez :
+Ce document vous aide à comprendre comment créer et gérer des affichages dans le fournisseur de services Screens. Après l’avoir lu, vous devriez :
 
 * Découvrez comment créer des affichages.
 
-## Étapes de création d’un affichage {#create-display}
+## Procédure de création d’un affichage {#create-display}
 
 Pour créer l’affichage à partir du fournisseur de services Screens, procédez comme suit :
 
@@ -53,6 +50,6 @@ Sélectionnez l’affichage et cliquez sur **Supprimer** dans la partie inférie
 
 ![image](/help/screens-cloud/assets/display/disp-5.png)
 
-## Suite {#whats-next}
+## Et après ? {#whats-next}
 
 Maintenant que vous avez appris à créer et gérer des affichages pour votre projet, vous devez continuer votre parcours Screens en tant que Cloud Service en consultant le document [Attribution d’un canal à un affichage dans Screens en tant que Cloud Service](/help/screens-cloud/creating-content/assigning-channels-to-display.md).
