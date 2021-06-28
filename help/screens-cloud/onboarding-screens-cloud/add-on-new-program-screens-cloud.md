@@ -1,10 +1,7 @@
 ---
 title: Ajout d’un module complémentaire Screens à un nouveau programme dans Cloud Manager
 description: Cette page décrit l’ajout d’un module complémentaire Screens à un nouveau programme dans Cloud Manager pour Screens en tant que Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 11%
@@ -19,11 +16,11 @@ Cette section décrit comment ajouter Screens en tant que module complémentaire
 >[!NOTE]
 >Pour en savoir plus sur les programmes Cloud Manager, voir [Présentation des programmes et des types de programme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) .
 
-## Intention {#objective}
+## Objectif {#objective}
 
 La section suivante décrit comment ajouter Screens en tant que module complémentaire à un nouveau programme dans Cloud Manager.
 
-## Étapes pour ajouter Screens en tant que module complémentaire à un nouveau programme dans Cloud Manager {#add-screens-add-on}
+## Procédure d’ajout d’Screens en tant que module complémentaire à un nouveau programme dans Cloud Manager {#add-screens-add-on}
 
 Pour ajouter Screens en tant que module complémentaire à un nouveau programme dans Cloud Manager, procédez comme suit :
 
@@ -48,7 +45,7 @@ Pour ajouter Screens en tant que module complémentaire à un nouveau programme 
 
    ![image](/help/screens-cloud/assets/onboarding/onboard-screens-addon4.png)
 
-## Suite {#whats-next}
+## Et après ? {#whats-next}
 
 Une fois que vous avez appris à ajouter Screens en tant que module complémentaire à un programme Cloud Manager existant et que votre programme s’affiche sous Programmes et produits de Cloud Manager, vous êtes prêt à passer à l’étape suivante du processus d’intégration, à savoir [Création d’une branche pour votre projet dans Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).
 
