@@ -1,13 +1,10 @@
 ---
 title: Enregistrement des lecteurs dans Screens en tant que Cloud Service
 description: Cette page décrit comment enregistrer des lecteurs dans Screens en tant que Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '395'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -16,7 +13,7 @@ ht-degree: 1%
 
 Une fois que vous avez installé et configuré les lecteurs pour Screens en tant que Cloud Service, vous devez enregistrer les lecteurs.
 
-## Intention {#objective}
+## Objectif {#objective}
 
 Ce document vous aide à comprendre l’enregistrement des lecteurs dans le fournisseur de services Screens. Après lecture, vous devriez être en mesure de :
 
@@ -66,6 +63,6 @@ Pour enregistrer votre lecteur, procédez comme suit :
 
    ![image](/help/screens-cloud/assets/player/register-player6.png)
 
-## Suite {#whats-next}
+## Et après ? {#whats-next}
 
 Maintenant que vous avez installé et configuré le lecteur en mode cloud, vous devez continuer votre parcours Screens en tant que Cloud Service en consultant le document [Attribution du lecteur à un affichage dans Screens en tant que Cloud Service](/help/screens-cloud/managing-players-registration/assigning-player-display.md) du fournisseur de services Screens.
