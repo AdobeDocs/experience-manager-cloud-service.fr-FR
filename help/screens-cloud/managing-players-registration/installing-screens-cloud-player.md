@@ -1,10 +1,7 @@
 ---
 title: Installation et configuration des lecteurs dans Screens en tant que Cloud Service
 description: Cette page décrit comment installer et configurer des lecteurs dans Screens en tant que Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 2%
@@ -16,7 +13,7 @@ ht-degree: 2%
 
 Cette section décrit comment installer des lecteurs AEM Screens enregistrés sur des instances d’AEM on-premise. De plus, vous devez réinitialiser le lecteur existant en usine, puis enregistrer le nouveau lecteur par rapport à AEM Screens en tant que Cloud Service.
 
-## Intention {#objective}
+## Objectif {#objective}
 
 Ce document vous aide à comprendre comment configurer votre lecteur avant d’enregistrer les lecteurs. Après lecture, vous devriez être en mesure de comprendre :
 
@@ -46,6 +43,6 @@ Pour mettre à jour votre lecteur, procédez comme suit :
 
 1. Cliquez sur **Confirmer** qui s’affiche lorsque vous passez en mode cloud, annule l’enregistrement du lecteur.
 
-## Suite {#whats-next}
+## Et après ? {#whats-next}
 
 Maintenant que vous avez installé et configuré le lecteur en mode cloud, vous devez continuer votre parcours Screens en tant que Cloud Service en consultant le document [Enregistrement des lecteurs dans Screens en tant que Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) du fournisseur de services Screens.
