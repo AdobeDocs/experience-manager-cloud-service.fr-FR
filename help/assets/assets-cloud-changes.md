@@ -4,10 +4,10 @@ description: Modifications notables apportées à  [!DNL Adobe Experience Manage
 feature: Informations sur la version
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: e3efbaf5cb590b079ccc228a0f130ecec198d2ff
+source-git-commit: ab40ce5b9b57f83562cf279b75979795f5433eda
 workflow-type: tm+mt
-source-wordcount: '858'
-ht-degree: 88%
+source-wordcount: '925'
+ht-degree: 82%
 
 ---
 
@@ -60,6 +60,7 @@ Pour effectuer une validation de bout en bout du code et du processus, y compris
 | Page d’accueil | Pas de prise en charge. | Voir la section [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html?lang=fr) |
 | Extraction de ressources à partir de l’archive ZIP | Pas de prise en charge. | Voir la section [extraction ZIP dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=fr#extractzip). |
 | Évaluations des ressources | Pas de prise en charge. | Le widget d’évaluation dans l’éditeur de schéma de métadonnées n’est pas pris en charge. |
+| Filtre de distribution de contenu | Pas de prise en charge. | `ContentDispositionFilter` est un cas d’utilisation courant qui permet aux administrateurs de configurer [!DNL Experience Manager] pour qu’ils diffusent des fichiers HTML et qu’ils ouvrent des fichiers PDF en ligne au lieu de les télécharger. Sur les instances de publication, vous pouvez gérer la disposition à l’aide de la configuration de Dispatcher. Sur les instances d’auteur, Adobe ne recommande pas de modifier l’en-tête de disposition du contenu. Voir [Filtre de disposition du contenu dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html). |
 | IU classique | Pas de prise en charge. | Seule l’interface utilisateur tactile est disponible. |
 
 >[!MORELIKETHIS]
