@@ -1,7 +1,7 @@
 ---
 title: Gestion des référentiels de contenu volumineux
 description: Cette section décrit la gestion des référentiels de contenu volumineux
-source-git-commit: a3a90868b64a0639f8a065c8c4d6ef6410094f3d
+source-git-commit: 00f189c2c446836cb3f92677516152168734c43d
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 2%
@@ -134,7 +134,6 @@ Les objets Blob qui ont été copiés avant l’erreur seront automatiquement ig
 Avec la version 1.5.4 de l’outil de transfert de contenu, nous avons ajouté la prise en charge d’AzCopy à l’ingestion par auteur.
 
 >[!NOTE]
->
 > Il est recommandé d’exécuter l’ingestion par l’auteur en premier. Cela permettra d’accélérer l’ingestion de publication lorsqu’elle est exécutée ultérieurement.
 
 Pour tirer parti d’AzCopy lors de l’ingestion, nous vous demandons de vous trouver sur une AEM en tant que version Cloud Service d’au moins la version 2021.6.5561.
