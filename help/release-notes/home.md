@@ -2,10 +2,10 @@
 title: Notes de mise à jour d’Adobe Experience Manager (AEM) as a Cloud Service.
 description: Notes de mise à jour d’Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: f4d646e3898f568d17cfb09bd2974fc55a1260c4
+source-git-commit: 7085772d60f589418f7aeb50083906fab495c376
 workflow-type: tm+mt
 source-wordcount: '663'
-ht-degree: 48%
+ht-degree: 53%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 48%
 
 | Produit | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2021.05.0 |
+| Version | 2021.06.0 |
 | Type | Mises à jour continues |
 | Date de disponibilité | Mise à jour continue |
 
@@ -35,7 +35,7 @@ Pour préparer une version :
 1. Marquez vos calendriers : Vérifiez les dates clés des versions mensuelles de la [feuille de route des versions du Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service) et marquez vos calendriers pour vous préparer aux activités clés afin de vous préparer à la version.
 1. Consultez les notes de mise à jour : Lisez les [notes de mise à jour actuelles](/help/release-notes/release-notes-cloud/release-notes-current.md) pour vous familiariser avec les fonctionnalités de version et de version préliminaire.
 1. Accédez aux nouvelles fonctionnalités et essayez-les : Activez le [canal de version préliminaire](/help/release-notes/prerelease.md) dans vos environnements hors production et commencez à essayer les fonctionnalités à évaluer dans vos environnements personnalisés.
-1. Formation des utilisateurs : Utilisez la documentation et les ressources Experience League pour mettre les utilisateurs au courant rapidement des nouvelles fonctionnalités et les familiariser avec celles-ci.
+1. Formation des utilisateurs : Utilisez la documentation et les ressources Experience League pour mettre les utilisateurs au courant rapidement et maîtrisant les nouvelles fonctionnalités.
 
 ## Principales informations sur les versions {#key-articles}
 
@@ -45,7 +45,7 @@ Pour préparer une version :
 * [Problèmes connus](known-issues.md)
 * [Fonctionnalités obsolètes et supprimées](deprecated-removed-features.md)
 
-## Guides relatifs à Experience Manager as a Cloud Service {#aem-guides}
+## Guides de Experience Manager en tant que Cloud Service {#aem-guides}
 
 | Guide de l’utilisateur | Description |
 |---|---|
@@ -57,8 +57,8 @@ Pour préparer une version :
 | [Guide de l’utilisateur de Sites](/help/sites-cloud/home.md) | Découvrez comment créer avec Experience Manager Sites as a Cloud Service et l’administrer. |
 | [Guide de l’utilisateur d’Assets](/help/assets/home.md) | Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service. |
 | [Transition vers AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Découvrez le parcours de transition vers Cloud Service. |
-| [Guide de l’utilisateur relatif à l’implémentation](/help/implementing/home.md) | Découvrez comment créer et personnaliser des expériences à l’aide AEM fonctionnalités puissantes en explorant ces rubriques de développement et de déploiement. |
-| [Parcours de développement sans tête](/help/journey-headless/developer/overview.md) | Découvrez ce parcours guidé à travers les puissantes et flexibles fonctionnalités sans interface d’AEM pour vous préparer à votre premier projet sans interface. |
+| [Guide de l’utilisateur relatif à l’implémentation](/help/implementing/home.md) | Découvrez comment créer et personnaliser des expériences à l’aide des puissantes fonctionnalités d’AEM en explorant ces rubriques de développement et de déploiement. |
+| [Parcours de développement découplé](/help/journey-headless/developer/overview.md) | Découvrez cette visite guidée à travers les puissantes et flexibles fonctionnalités découplées d’AEM pour vous préparer à votre premier projet découplé. |
 | [Guide de l’utilisateur des connecteurs](/help/connectors/home.md) | Découvrez comment intégrer des connecteurs dans Experience Manager as a Cloud Service. |
 | [Guide de l’utilisateur relatif aux opérations](/help/operations/home.md) | Découvrez les opérations principales d’Experience Manager as a Cloud Service, telles que les tâches d’indexation et de maintenance. |
 | [Guide de l’utilisateur de Commerce](/help/commerce-cloud/home.md) | Découvrez Commerce Integration Framework dans AEM as a Cloud Service. |
