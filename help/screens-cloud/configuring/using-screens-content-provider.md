@@ -1,10 +1,10 @@
 ---
 title: Utilisation du fournisseur de contenu Screens
 description: Cette page décrit comment utiliser le fournisseur de contenu Screens pour créer du contenu.
-source-git-commit: 00a4601b9c01309425e1a8df952387024167465b
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 4%
+source-wordcount: '209'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,7 @@ La section suivante décrit comment utiliser le fournisseur de contenu Screens, 
 
 >[!NOTE]
 >**Prérequis**
->Avant de commencer à lire cette section, consultez Configuration du fournisseur de services Screens pour savoir comment accéder à cette interface utilisateur à partir du fournisseur de services Screens.
+>Avant de commencer à lire cette section, reportez-vous à la section [Configuration du fournisseur de services Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en) pour savoir comment accéder à cette interface utilisateur à partir du fournisseur de services Screens.
 
 Une fois que vous êtes connecté au fournisseur de contenu Screens, vous êtes prêt à créer votre contenu lors de la lecture du contenu. Utilisez le fournisseur de contenu Screens pour créer et gérer :
 
@@ -33,6 +33,6 @@ Une fois que vous êtes connecté au fournisseur de contenu Screens, vous êtes 
 
 ## Et après ? {#whats-next}
 
-Maintenant que vous avez appris à accéder au fournisseur de contenu Screens, vous devez continuer votre parcours Screens en tant que Cloud Service en consultant le document Création et gestion de projets dans Screens en tant que Cloud Service.
+Maintenant que vous avez appris à accéder au fournisseur de contenu Screens, vous devez continuer votre parcours Screens en tant que Cloud Service en consultant le document [Création et gestion d’un projet dans Screens en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en).
 
 
