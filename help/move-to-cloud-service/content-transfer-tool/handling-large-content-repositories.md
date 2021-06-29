@@ -1,7 +1,7 @@
 ---
 title: Gestion des référentiels de contenu volumineux
 description: Cette section décrit la gestion des référentiels de contenu volumineux
-source-git-commit: 1299a4bd4e4139c971680e439a3b366162af0de2
+source-git-commit: 3611b9ede7c7f516c4773ac4b22e8ba9b14b5220
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 2%
@@ -80,7 +80,7 @@ azCopyPath=/usr/bin/azcopy
 azureSas=https://example-resource.blob.core.windows.net/example-container?sig=--REDACTED--
 ```
 
-#### Entrepôt de données S3 Amazon {#amazon-data-store}
+#### Entrepôt de données S3 Amazon {#amazon-sdata-store}
 
 Votre fichier azcopy.config doit inclure les propriétés suivantes (veillez à utiliser les valeurs correctes pour votre instance).
 
@@ -134,7 +134,7 @@ Les objets Blob qui ont été copiés avant l’erreur seront automatiquement ig
 Avec la version 1.5.4 de l’outil de transfert de contenu, nous avons ajouté la prise en charge d’AzCopy à l’ingestion par auteur.
 
 >[!NOTE]
-> Il est recommandé d’exécuter l’ingestion par l’auteur en premier. Cela permettra d’accélérer l’ingestion de publication lorsqu’elle est exécutée ultérieurement.
+>Il est recommandé d’exécuter l’ingestion par l’auteur en premier. Cela permettra d’accélérer l’ingestion de publication lorsqu’elle est exécutée ultérieurement.
 
 Pour tirer parti d’AzCopy lors de l’ingestion, nous vous demandons de vous trouver sur une AEM en tant que version Cloud Service d’au moins la version 2021.6.5561.
 
