@@ -1,9 +1,9 @@
 ---
 title: Création d’un projet dans Screens en tant que Cloud Service
 description: Cette page décrit comment créer un projet dans Screens en tant que Cloud Service.
-source-git-commit: c8c8eec6aab6e66e3e4eb96525e6f4f55633a5a0
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -61,4 +61,4 @@ Pour supprimer un projet existant du fournisseur de contenu Screens, procédez c
 
 ## Et après ? {#whats-next}
 
-Maintenant que vous avez configuré un projet AEM Screens, vous pouvez créer un canal et ajouter du contenu aux canaux. Reportez-vous à la section [Création et gestion des canaux] pour savoir comment créer et gérer du contenu dans les canaux.
+Maintenant que vous avez configuré un projet AEM Screens, vous pouvez créer un canal et ajouter du contenu aux canaux. Voir [Création et gestion d’un canal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en) pour savoir comment créer et gérer du contenu dans les canaux.
