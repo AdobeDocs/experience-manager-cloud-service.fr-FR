@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1c967d4114cae67da9e0c2cda14458329ecd7156
+source-git-commit: 2d0fc0351c62f920376c9d36f4919f827c711afc
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 22%
+source-wordcount: '1384'
+ht-degree: 21%
 
 ---
 
@@ -143,6 +143,27 @@ Vous pouvez écrire sur [!DNL formscsbeta@adobe.com] pour vous inscrire au progr
 
 * Lorsqu’un champ est validé avant d’envoyer des données au service principal via le modèle de données de formulaire (FDM), les validations réussissent, mais le service de modèle de données de formulaire ne parvient pas à appeler après validation.
 * Lorsque vous envoyez un formulaire contenant un champ de téléchargement HTML standard d’un appareil iOS Apple, le contenu du fichier n’est parfois pas envoyé et un fichier de 0 octet est reçu à l’autre bout. Il s’agit d’un problème connu dans Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+
+## AEM Screens {#aem-screens}
+
+Cette section présente les notes de mise à jour de Screens en tant que Cloud Service.
+
+### Date de publication {#release-date-june-screens}
+
+La date de publication d’AEM Screens as a Cloud Service est le 24 juin 2021.
+
+### Nouveautés {#what-is-new-screens-june}
+
+>[!NOTE]
+>Consultez le [Guide d’AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en) pour obtenir les connaissances de base requises pour réussir l’installation, la configuration et l’exécution de Screens en tant que Cloud Service et reportez-vous à la documentation technique des concepts détaillés.
+
+* La gestion de l’enregistrement des périphériques en masse signifie que la mise en service d’un grand nombre de périphériques de lecture est plus rapide et plus efficace.
+
+* Amélioration des options de recherche et de filtrage pour chacune des vues d’inventaire Périphérique, Affichage et Canal.
+
+* L’instantané de la santé de l’appareil permet de gagner du temps en fournissant un état critique en un coup d’oeil.
+
+* La page Détails de l’objet offre un résumé des informations les plus pertinentes pour chaque objet de votre projet.
 
 ## Module complémentaire CIF {#cloud-services-cif}
 
