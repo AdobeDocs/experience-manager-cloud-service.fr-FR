@@ -4,10 +4,10 @@ description: Pour installer Dynamic Media, vous devez configurer Dynamic Media
 contentOwner: Rick Brough
 role: Administrator,Business Practitioner
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+source-git-commit: 5e9cf9494ce9d54dd1d3b7818b3b975b2acb4e3c
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 68%
+ht-degree: 57%
 
 ---
 
@@ -41,5 +41,5 @@ Voir aussi les rubriques suivantes :
 >
 >**Si vous effectuez une mise à niveau :**
 >
->* Une fois l’Adobe [!DNL Experience Manager] en cours d’exécution, toute ressource que vous chargez est automatiquement activée par Dynamic Media (sauf si l’administrateur système l’a explicitement désactivée). Si vous utilisez une instance mise à niveau de [!DNL Experience Manager] et que vous découvrez Dynamic Media, vous devez probablement retraiter vos ressources pour les rendre compatibles avec Dynamic Media. Voir [Retraitement des ressources dans un dossier](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>* Une fois l’Adobe [!DNL Experience Manager] en cours d’exécution, toute ressource que vous chargez est automatiquement activée par Dynamic Media (sauf si l’administrateur système l’a explicitement désactivée). Si vous utilisez une instance mise à niveau de [!DNL Experience Manager] et que vous découvrez Dynamic Media, vous devez probablement retraiter vos ressources pour les rendre compatibles avec Dynamic Media. Voir [Retraiter les ressources dans un dossier](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
