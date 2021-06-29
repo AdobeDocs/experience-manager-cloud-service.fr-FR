@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Rapports de ressources,Gestion des ressources
 role: Administrator,Business Practitioner
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 088531133faa4c7f071a8c27fe11d1ccd5f50c0b
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 94%
+source-wordcount: '872'
+ht-degree: 100%
 
 ---
 
 # Rapports de ressources {#asset-reports}
 
-Les rapports de ressources vous permettent d’évaluer l’utilité de votre déploiement [!DNL Adobe Experience Manager Assets]. Avec [!DNL Assets], vous pouvez générer divers rapports pour vos ressources numériques. Les rapports fournissent des informations utiles sur l’utilisation de votre système, la manière dont les utilisateurs interagissent avec les ressources et les ressources <!-- downloaded and --> partagées.
+Les rapports de ressources vous permettent d’évaluer l’utilité de votre déploiement [!DNL Adobe Experience Manager Assets]. Avec [!DNL Assets], vous pouvez générer divers rapports pour vos ressources numériques. Les rapports fournissent des informations utiles concernant votre utilisation du système, la façon dont les utilisateurs interagissent avec les ressources et la façon dont les ressources sont téléchargées et partagées.<!-- downloaded and -->
 
 Utilisez les informations figurant dans les rapports de manière à obtenir des mesures de succès essentielles pour évaluer l’adoption d’[!DNL Assets] au sein de votre entreprise et par les clients.
 
@@ -22,7 +22,7 @@ Le framework de création de rapports [!DNL Assets] exploite des tâches [!DNL S
 
 L’interface de gestion de rapports est intuitive et inclut des options et des commandes précises pour accéder aux rapports archivés, ainsi qu’afficher les états d’exécution des rapports (réussite, échec et en file d’attente).
 
-Lorsqu’un rapport est généré, vous êtes averti par <!-- through an email (optional) and --> une notification de boîte de réception. Vous pouvez afficher, télécharger ou supprimer un rapport de la page de liste des rapports, où tous les rapports générés précédemment sont affichés.
+Lorsqu’un rapport est généré, vous êtes averti par <!-- through an email (optional) and --> une notification de boîte de réception. Vous pouvez afficher, télécharger ou supprimer un rapport de la page de liste des rapports, où tous les rapports précédemment générés sont affichés.
 
 ## Génération de rapports {#generate-reports}
 
@@ -105,7 +105,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
    Cliquez sur **[!UICONTROL Télécharger]** dans la barre d’outils pour télécharger le rapport au format CSV.
 
-## Ajout de colonnes personnalisées aux rapports {#add-custom-columns}
+## Ajout de colonnes personnalisées   aux rapports  {#add-custom-columns}
 
 Vous pouvez ajouter des colonnes personnalisées aux rapports suivants pour afficher davantage de données en fonction de vos besoins :
 
@@ -120,7 +120,6 @@ Vous pouvez ajouter des colonnes personnalisées aux rapports suivants pour affi
 -->
 
 * Chargement
-* Téléchargement
 * Expiration
 * Modification
 * Publication
