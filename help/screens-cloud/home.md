@@ -1,10 +1,10 @@
 ---
 title: AEM Screens en tant que Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation d’Adobe Experience Manager Screens as a Cloud Service
-source-git-commit: 79eac4a2bf7d891dcd99c90f518fffeca279b3b7
+source-git-commit: 8d68844d67b6025b5dbb7351ed123765afe742bc
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 69%
+source-wordcount: '452'
+ht-degree: 68%
 
 ---
 
@@ -18,9 +18,11 @@ Cette page répertorie les ressources d’aide autonome concernant AEM Screens e
 
 ## Principaux articles relatifs au contenu et à AEM Screens as a Cloud Service {#key-articles}
 
-* [Présentation d’AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/overview/introduction.html?lang=en)
-* [Intégration à AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en)
+* [Présentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/overview/introduction.html?lang=en)
+* [Intégration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en)
+* [Configuration des services Screens et du fournisseur de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)
 * [Création d’un projet dans Screens en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en)
+* [Installation du lecteur Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en)
 
 ## Guides de Experience Manager en tant que Cloud Service {#aem-guides}
 
