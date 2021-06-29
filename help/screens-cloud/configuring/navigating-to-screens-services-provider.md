@@ -1,7 +1,7 @@
 ---
 title: Accès au fournisseur de services Screens
 description: Cette page décrit comment accéder au fournisseur de services Screens.
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+source-git-commit: e856724c678195d632461c9dc99dcf1bfd1c79a1
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 2%
@@ -28,7 +28,7 @@ Suivez les étapes ci-dessous pour configurer le fournisseur de services Screens
 
 1. Accédez à Fournisseur de services Screens à partir de [ici](https://experience.adobe.com/screens).
 
-   >[!NOTE]
+   >[!CAUTION]
    >Si vous avez accès à plusieurs organisations, veillez à vous être connecté à la bonne organisation. Pour modifier votre organisation, cliquez sur le nom de l’organisation dans le coin supérieur droit de l’écran et sélectionnez l’organisation à laquelle vous avez besoin d’accéder.
 
 1. Sélectionnez **Canaux** dans la barre de navigation de gauche et cliquez sur **ouvrir dans le fournisseur de contenu**.
