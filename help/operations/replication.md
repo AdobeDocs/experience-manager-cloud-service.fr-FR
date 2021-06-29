@@ -2,10 +2,10 @@
 title: Réplication
 description: Distribution et dépannage de la réplication.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1c18c0f669222d3864b1f203b423f860c200024a
+source-git-commit: eba9ce7c80fc785e44f13ded5227828b6f04f7bb
 workflow-type: tm+mt
 source-wordcount: '1185'
-ht-degree: 67%
+ht-degree: 65%
 
 ---
 
@@ -42,17 +42,17 @@ Pour réaliser la réplication automatique dans ce cas, vous devez activer **Aut
 Pour exécuter une activation d’arborescence :
 
 1. Dans le menu Accueil AEM, accédez à **Outils > Déploiement > Distribution**.
-2. Sélectionnez la carte **forwardPublisher**.
-3. Une fois dans l’interface utilisateur de la console web forwardPublisher, sélectionnez **Distribute** (Distribuer).
+2. Sélectionnez la carte **publish**
+3. Une fois dans l’interface utilisateur de la console Web de publication, **sélectionnez Distribute**
 
-   ![Distribuer](assets/distribute.png "Distribuer")
+   ![Distribuer](assets/publish-distribute.png "Distribuer")
 4. Sélectionnez le chemin dans l’explorateur de chemins d’accès, choisissez d’ajouter un nœud, une arborescence ou supprimez-les, si nécessaire, puis sélectionnez **Submit** (Envoyer).
 
 ### Workflow de publication de l’arborescence de contenu {#publish-content-tree-workflow}
 
 Vous pouvez déclencher une réplication d’arborescence en choisissant **Outils – Workflow – Modèles** et en copiant le modèle de workflow prêt à l’emploi **Publier l’arborescence de contenu**, comme illustré ci-dessous :
 
-![](/help/operations/assets/publishcontenttreeworkflow.png)
+![](/help/operations/assets/publish-distribute.png)
 
 Ne modifiez pas ou n’appelez pas le modèle d’origine. Assurez-vous plutôt de copier le modèle, puis de modifier ou d’appeler cette copie.
 
@@ -191,13 +191,13 @@ Vous trouverez des informations plus détaillées sur la gestion de la publicati
 Pour résoudre les problèmes de réplication, accédez aux files d’attente de réplication dans l’interface utilisateur web du service d’auteur AEM :
 
 1. Dans le menu Accueil AEM, accédez à **Outils > Déploiement > Distribution**.
-2. Sélectionnez la carte **forwardPublisher**.
-   ![État](assets/status.png "État")
+2. Sélectionnez la carte **publish**
+   ![État](assets/publish-status.png "État")
 3. Vérifiez l’état de la file d’attente qui doit être de couleur verte.
 4. Vous pouvez tester la connexion au service de réplication.
 5. Sélectionnez l’onglet **Logs** (Journaux) qui affiche l’historique des publications de contenu.
 
-![Journaux](assets/logs.png "Journaux")
+![Journaux](assets/publish-logs.png "Journaux")
 
 S’il n’a pas été possible de publier le contenu, l’intégralité de la publication est restaurée à partir du service de publication AEM.
 Dans ce cas, les files d’attente doivent être examinées afin d’identifier les éléments qui ont provoqué l’annulation de la publication. Suite à un clic sur une file d’attente signalée par un état rouge, celle contenant des éléments en attente s’affiche. Il est possible d’y effacer un ou tous les éléments, si nécessaire.
