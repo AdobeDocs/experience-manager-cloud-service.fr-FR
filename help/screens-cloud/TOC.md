@@ -3,7 +3,7 @@ sub-product: AEM Screens en tant que Cloud Service
 user-guide-title: AEM Screens en tant que Cloud Service
 breadcrumb-title: AEM Screens en tant que Cloud Service
 user-guide-description: Présentation d’AEM Screens en tant que Cloud Service.
-source-git-commit: c5e6a3a309bbb4750c8a553eba0c444ce030637b
+source-git-commit: 1d788b37d549d86270156cb43548a7c62fc1165f
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 7%
@@ -35,6 +35,6 @@ ht-degree: 7%
    + [Création et gestion d’un affichage dans le fournisseur de services Screens](/help/screens-cloud/creating-content/creating-displays-screens-cloud.md)
    + [Attribution d’un canal à un affichage](/help/screens-cloud/creating-content/assigning-channels-to-display.md)
    + Gestion du lecteur et de l’enregistrement {#manage-player-registration}
-   + [Installation du lecteur Screens](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
-   + [Enregistrement du lecteur](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
-   + [Attribution d’un lecteur à un affichage](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
+      + [Installation du lecteur Screens](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
+      + [Enregistrement du lecteur](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
+      + [Attribution d’un lecteur à un affichage](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
