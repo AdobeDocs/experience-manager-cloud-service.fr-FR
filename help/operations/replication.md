@@ -2,10 +2,10 @@
 title: Réplication
 description: Distribution et dépannage de la réplication.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 405922266ed15c2db135921132c89fa459b38d1b
+source-git-commit: 1c18c0f669222d3864b1f203b423f860c200024a
 workflow-type: tm+mt
-source-wordcount: '1155'
-ht-degree: 69%
+source-wordcount: '1185'
+ht-degree: 67%
 
 ---
 
@@ -34,6 +34,10 @@ Pour réaliser la réplication automatique dans ce cas, vous devez activer **Aut
 ![Configuration OSGi d’activation et de désactivation du déclenchement](/help/operations/assets/replication-on-off-trigger.png)
 
 ### Activation d’une arborescence {#tree-activation}
+
+>[!NOTE]
+>
+>Cette approche doit être considérée comme obsolète, car elle ne conserve pas les états et est moins évolutive que les autres approches. Il est recommandé à l’Adobe d’utiliser plutôt des méthodes de gestion de publication ou de workflow.
 
 Pour exécuter une activation d’arborescence :
 
