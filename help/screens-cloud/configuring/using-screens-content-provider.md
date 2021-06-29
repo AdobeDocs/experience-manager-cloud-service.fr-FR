@@ -1,9 +1,9 @@
 ---
 title: Utilisation du fournisseur de contenu Screens
 description: Cette page décrit comment utiliser le fournisseur de contenu Screens pour créer du contenu.
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+source-git-commit: ffeb82345ad2fe243e09f227d495afca70da5977
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '220'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ## Objectif {#objective}
 
-La section suivante décrit comment utiliser le fournisseur de contenu Screens, une fois que vous avez configuré le fournisseur de services Screens.
+La section suivante décrit l’utilisation du fournisseur de contenu Screens, une fois que vous avez configuré [Fournisseur de services Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en).
 
 ## Utilisation du fournisseur de contenu Screens {#screens-content-provider}
 
@@ -25,7 +25,9 @@ La section suivante décrit comment utiliser le fournisseur de contenu Screens, 
 >**Prérequis**
 >Avant de commencer à lire cette section, reportez-vous à la section [Configuration du fournisseur de services Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en) pour savoir comment accéder à cette interface utilisateur à partir du fournisseur de services Screens.
 
-Une fois que vous êtes connecté au fournisseur de contenu Screens, vous êtes prêt à créer votre contenu lors de la lecture du contenu. Utilisez le fournisseur de contenu Screens pour créer et gérer :
+Une fois que vous êtes connecté au fournisseur de contenu Screens, vous êtes prêt à créer votre contenu lors de la lecture du contenu.
+
+Vous devez utiliser le fournisseur de contenu Screens pour créer et gérer :
 
 * Projets
 * Canaux
