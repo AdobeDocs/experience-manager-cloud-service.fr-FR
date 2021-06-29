@@ -2,10 +2,10 @@
 title: Réplication
 description: Distribution et dépannage de la réplication.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 3cafd809cba2d844ee4507c41eb1b5302ad5b6ba
+source-git-commit: 405922266ed15c2db135921132c89fa459b38d1b
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 28%
+source-wordcount: '1155'
+ht-degree: 69%
 
 ---
 
@@ -21,7 +21,9 @@ Adobe Experience Manager as a Cloud Service utilise la fonctionnalité de [distr
 
 ### Publication/annulation de publication rapide – Publication/annulation de publication planifiée {#publish-unpublish}
 
-Ces fonctionnalités standard d’AEM pour les auteurs sont inchangées avec AEM Cloud Service.
+Cela vous permet de publier immédiatement la ou les pages sélectionnées, sans les options supplémentaires possibles grâce à l’approche Gérer la publication .
+
+Pour plus d’informations, voir [Gestion de la publication](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
 ### Heures d’activation et de désactivation – Configuration du déclenchement {#on-and-off-times-trigger-configuration}
 
@@ -42,32 +44,32 @@ Pour exécuter une activation d’arborescence :
    ![Distribuer](assets/distribute.png "Distribuer")
 4. Sélectionnez le chemin dans l’explorateur de chemins d’accès, choisissez d’ajouter un nœud, une arborescence ou supprimez-les, si nécessaire, puis sélectionnez **Submit** (Envoyer).
 
-### Processus de publication de l’arborescence de contenu {#publish-content-tree-workflow}
+### Workflow de publication de l’arborescence de contenu {#publish-content-tree-workflow}
 
-Vous pouvez déclencher une réplication d’arborescence en choisissant **Outils - Processus - Modèles** et en copiant le modèle de workflow d’usine **Publier l’arborescence de contenu**, comme illustré ci-dessous :
+Vous pouvez déclencher une réplication d’arborescence en choisissant **Outils – Workflow – Modèles** et en copiant le modèle de workflow prêt à l’emploi **Publier l’arborescence de contenu**, comme illustré ci-dessous :
 
 ![](/help/operations/assets/publishcontenttreeworkflow.png)
 
-Ne modifiez pas ou n’appelez pas le modèle d’origine. Veillez plutôt à copier le modèle, puis à le modifier ou à l’appeler.
+Ne modifiez pas ou n’appelez pas le modèle d’origine. Assurez-vous plutôt de copier le modèle, puis de modifier ou d’appeler cette copie.
 
-Comme tous les workflows, il peut également être appelé via l’API. Pour plus d’informations, voir [Interaction avec les workflows par programmation](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=en#extending-aem).
+Comme tous les workflows, il peut également être appelé via l’API. Pour plus d’informations, voir [Interaction avec les workflows par programmation](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=fr#extending-aem).
 
-Vous pouvez également y parvenir en créant un modèle de processus qui utilise l’étape de processus `Publish Content Tree` :
+Vous pouvez également y parvenir en créant un modèle de workflow qui utilise l’étape`Publish Content Tree` :
 
-1. Sur la page d’accueil AEM as a Cloud Service, accédez à **Outils - Workflow - Modèles**
-1. Sur la page Modèles de processus , appuyez sur **Créer** dans le coin supérieur droit de l’écran.
-1. Ajoutez un titre et un nom à votre modèle. Pour plus d’informations, voir [Création de modèles de processus](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)
+1. Sur la page d’accueil d’AEM as a Cloud Service, accédez à **Outils – Workflow – Modèles**
+1. Sur la page Modèles de workflow, appuyez sur **Créer** dans l’angle supérieur droit de l’écran.
+1. Ajoutez un titre et un nom à votre modèle. Pour plus d’informations, voir [Création de modèles de workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=fr)
 1. Sélectionnez le modèle nouvellement créé dans la liste, puis appuyez sur **Modifier**.
-1. Dans la fenêtre suivante, placez l’étape du processus dans le flux de modèle actuel :
+1. Dans la fenêtre suivante, faites un glisser-déposer de l’étape du processus dans le flux de modèle actuel :
 
    ![Étape du processus](/help/operations/assets/processstep.png)
 
-1. Cliquez sur l’étape Processus dans le flux et sélectionnez **Configurer** en appuyant sur l’icône de clé à molette.
+1. Cliquez sur l’étape Processus dans le flux et sélectionnez **Configurer** en appuyant sur l’icône en forme de clé à molette.
 1. Cliquez sur l’onglet **Processus** et sélectionnez `Publish Content Tree` dans la liste déroulante.
 
-   ![Treeactivation](/help/operations/assets/newstep.png)
+   ![Activation d’arborescence](/help/operations/assets/newstep.png)
 
-1. Définissez des paramètres supplémentaires dans le champ **Arguments**. Plusieurs arguments séparés par des virgules peuvent être associés. Par exemple :
+1. Définissez des paramètres supplémentaires dans le champ **Arguments**. Il est possible d’associer plusieurs arguments séparés par des virgules. Par exemple :
 
    `enableVersion=true,agentId=publish`
 
@@ -76,17 +78,17 @@ Vous pouvez également y parvenir en créant un modèle de processus qui utilise
    >
    >Pour obtenir la liste des paramètres, reportez-vous à la section **Paramètres** ci-dessous.
 
-1. Appuyez sur **Done** (Terminé) pour enregistrer le modèle Workflow.
+1. Appuyez sur **Terminé** pour enregistrer le modèle de workflow.
 
 **Paramètres**
 
-* `replicateAsParticipant` (valeur booléenne, valeur par défaut :  `false`). S’il est configuré comme `true`, la réplication utilise la balise `userid` de l’entité qui a exécuté l’étape de participant.
-* `enableVersion` (valeur booléenne, valeur par défaut :  `true`). Ce paramètre détermine si une nouvelle version est créée lors de la réplication.
+* `replicateAsParticipant` (valeur booléenne, valeur par défaut : `false`). S’il est configuré comme `true`, la réplication utilise la balise `userid` de l’entité qui a exécuté l’étape de participant.
+* `enableVersion` (valeur booléenne, valeur par défaut : `true`). Ce paramètre détermine si une nouvelle version est créée lors de la réplication.
 * `agentId` (valeur string, la valeur par défaut signifie que seuls les agents pour la publication sont utilisés). Il est recommandé d’être explicite sur l’agentId ; par exemple, définissez la valeur : publier. La définition de l’agent sur `preview` entraîne la publication sur le service d’aperçu.
-* `filters` (valeur de chaîne, valeur par défaut, tous les chemins sont activés). Les valeurs disponibles sont les suivantes :
-   * `onlyActivated` : seuls les chemins qui ne sont pas marqués comme activés seront activés.
-   * `onlyModified` - activez uniquement les chemins déjà activés et dont la date de modification est postérieure à la date d’activation.
-   * Vous pouvez utiliser la commande OU avec une barre verticale &quot;|&quot;. Par exemple, `onlyActivated|onlyModified`.
+* `filters` (valeur de chaîne, valeur par défaut, tous les chemins sont activés). Les valeurs disponibles sont les suivantes :
+   * `onlyActivated` : seuls les chemins qui ne sont pas marqués comme activés seront activés.
+   * `onlyModified` : activez uniquement les chemins déjà activés et dont la date de modification est postérieure à la date d’activation.
+   * Vous pouvez utiliser la commande OU avec une barre verticale « | ». Par exemple, `onlyActivated|onlyModified`.
 
 **Journalisation**
 
@@ -94,11 +96,11 @@ Lorsque l’étape du workflow d’activation de l’arborescence démarre, elle
 
 Une dernière instruction INFO sera alors consignée une fois que l’étape du workflow aura répliqué tous les chemins.
 
-De plus, vous pouvez augmenter le niveau de journalisation des enregistreurs sous `com.day.cq.wcm.workflow.process.impl` en DEBUG/TRACE pour obtenir encore plus d’informations sur le journal.
+De plus, vous pouvez augmenter le niveau de journalisation des enregistreurs sous `com.day.cq.wcm.workflow.process.impl` en le fixant à DEBUG/TRACE pour obtenir encore plus d’informations sur le journal.
 
-En cas d’erreur, l’étape du workflow s’arrête avec une balise `WorkflowException` qui enveloppe l’exception sous-jacente.
+En cas d’erreur, l’étape du workflow s’arrête avec une balise `WorkflowException` qui représente l’exception sous-jacente.
 
-Vous trouverez ci-dessous des exemples de journaux générés lors d’un exemple de workflow d’arborescence de contenu de publication :
+Vous trouverez ci-dessous des exemples de journaux générés lors d’un exemple de workflow de publication d’arborescence de contenu :
 
 ```
 21.04.2021 19:14:55.566 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.treeactivation.TreeActivationWorkflowProcess TreeActivation options: replicateAsParticipant=false(userid=workflow-process-service), agentId=publish, chunkSize=100, filter=, enableVersion=false
@@ -171,6 +173,14 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 Si vous ne fournissez pas un tel filtre et n’utilisez que l’agent &quot;publish&quot;, l’agent &quot;preview&quot; n’est pas utilisé et l’action de réplication n’affecte pas le niveau de prévisualisation.
 
 L’ensemble `ReplicationStatus` d’une ressource n’est modifié que si l’action de réplication comprend au moins un agent principal par défaut. Dans l’exemple ci-dessus, ce n’est pas le cas, car la réplication utilise uniquement l’agent &quot;aperçu&quot;. Par conséquent, vous devez utiliser la nouvelle méthode `getStatusForAgent()`, qui permet d’interroger le statut d’un agent spécifique. Cette méthode fonctionne également pour l’agent &quot;publish&quot;. Elle renvoie une valeur non nulle si une action de réplication a été effectuée à l’aide de l’agent fourni.
+
+### Gérer la publication  {#manage-publication}
+
+La méthode Gérer la publication propose plus d’options que Publication rapide, dont la possibilité d’inclure des pages enfants, de personnaliser les références ou encore de lancer n’importe quel workflow applicable. Elle offre également la possibilité de publier la page à une date ultérieure.
+
+L’inclusion des enfants d’un dossier pour l’option &quot;Publier plus tard&quot; appelle le workflow Publier l’arborescence de contenu, décrit dans cet article.
+
+Vous trouverez des informations plus détaillées sur la gestion de la publication dans la [documentation sur les principes de publication](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
 ## Résolution des problèmes {#troubleshooting}
 
