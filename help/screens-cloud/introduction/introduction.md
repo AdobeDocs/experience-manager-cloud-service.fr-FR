@@ -1,9 +1,9 @@
 ---
 title: AEM Screens en tant que Cloud Service
 description: Cette page présente AEM Screens en tant que Cloud Service.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ AEM Screens as a Cloud Service est une solution de signalétique digitale qui pe
 
 Screens en tant que Cloud Service comporte deux composants principaux, à savoir :
 
-* **Fournisseur de contenu**, qui est le module complémentaire Screens s’exécutant sur AEM Cloud Service ou sur Adobe Managed Services (AMS). Le fournisseur de contenu Screens permet à l’auteur de contenu de créer et de gérer des canaux. Les auteurs de contenu peuvent ajouter du nouveau contenu, le modifier sans se soucier des détails de la création d’affichages ou de l’enregistrement du lecteur. Le fournisseur de contenu fournit une abstraction des détails sous-jacents du développement du contenu, des affichages ou de l’enregistrement du lecteur.
+* **[Fournisseur de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en)**, qui est le module complémentaire Screens s’exécutant sur AEM Cloud Service ou sur Adobe Managed Services (AMS). Le fournisseur de contenu Screens permet à l’auteur de contenu de créer et de gérer des canaux. Les auteurs de contenu peuvent ajouter du nouveau contenu, le modifier sans se soucier des détails de la création d’affichages ou de l’enregistrement du lecteur. Le fournisseur de contenu fournit une abstraction des détails sous-jacents du développement du contenu, des affichages ou de l’enregistrement du lecteur.
 
-* **Fournisseur de services**, qui est le service de gestion de la signalétique digitale s’exécutant sur le runtime Adobe I/O. Le fournisseur de services Screens permet à l’auteur, aux développeurs et aux administrateurs de contenu de gérer les affichages et les lecteurs pour la lecture du contenu une fois le contenu ajouté aux canaux. En outre, le fournisseur de services Screens informe l’orchestrateur de l’endroit et du moment où le contenu va être lu à un niveau élevé.
+* **[Fournisseur de services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)**, qui est le service de gestion de la signalétique digitale s’exécutant sur le runtime Adobe I/O. Le fournisseur de services Screens permet à l’auteur, aux développeurs et aux administrateurs de contenu de gérer les affichages et les lecteurs pour la lecture du contenu une fois le contenu ajouté aux canaux. En outre, le fournisseur de services Screens informe l’orchestrateur de l’endroit et du moment où le contenu va être lu à un niveau élevé.
 
 
 ## Présentation de l’architecture {#architectural-overview}
