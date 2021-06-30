@@ -3,9 +3,9 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c256699a64bd68285b4110d003f3391713c7a19a
+source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1430'
 ht-degree: 20%
 
 ---
@@ -97,12 +97,23 @@ La prochaine version est prévue pour le 15 juillet 2021.
    * Prise en charge de [!DNL Assets Essentials].
    * Possibilité de se connecter automatiquement à [!DNL Experience Manager] sous la forme [!DNL Cloud Service] ou [!DNL Assets Essentials].
 
+* L’[outil d’ingestion en bloc de ressources](/help/assets/add-assets.md#asset-bulk-ingestor) vous permet d’ajouter des métadonnées lors d’une ingestion en masse.
+
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Assets] {#beta-features-assets}
 
 * Les paramètres d’affichage sont améliorés pour permettre aux utilisateurs de choisir une vue par défaut et un paramètre de tri par défaut.
+
+   ![Définition de la vue par défaut dans Paramètres d’affichage](/help/assets/assets/view-settings-for-defaults.png)
+
 * La fonctionnalité de téléchargement de Linkshare utilise des téléchargements asynchrones qui augmentent la vitesse de téléchargement.
+
 * Les utilisateurs peuvent rechercher et filtrer les dossiers en fonction des prédicats de propriété.
-* [!DNL Experience Manager Assets] incorpore la visionneuse PDF optimisée par  [!DNL Adobe Document Cloud] pour prévisualiser les documents pris en charge. Cette fonctionnalité permet aux utilisateurs de prévisualiser des fichiers PDF et d’autres fichiers multi-pages sans traitement complexe. Cela améliore la parité des fonctionnalités avec [!DNL Experience Manager] 6.5.
+
+   ![Filtrage des dossiers de recherche à l’aide de prédicats de recherche](/help/assets/assets/search-folders-via-predicates.png)
+
+* [!DNL Experience Manager Assets] incorpore la visionneuse PDF pour prévisualiser les formats de document pris en charge. Il est optimisé par [!DNL Adobe Document Cloud]. Cette fonctionnalité permet aux utilisateurs de prévisualiser des fichiers PDF et d’autres fichiers multi-pages sans traitement complexe. Cela améliore la parité des fonctionnalités avec [!DNL Experience Manager] 6.5.
+
+   ![Aperçu des fichiers PDF dans à  [!DNL Experience Manager] l’aide de la visionneuse PDF](/help/assets/assets/preview-pdf-file-viewer.png)
 
 ### Correctifs d’[!DNL Assets]  {#bugs-fixed-assets}
 
