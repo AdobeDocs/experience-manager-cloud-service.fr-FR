@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ed24f9ad81e7686f0a33260c44011628bc7c4cf9
+source-git-commit: bed5a88a545efa4dbfe5c20f4713c0c6adb9847b
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 20%
+source-wordcount: '1544'
+ht-degree: 19%
 
 ---
 
@@ -111,7 +111,7 @@ La prochaine version est prévue pour le 15 juillet 2021.
 
    ![Filtrage des dossiers de recherche à l’aide de prédicats de recherche](/help/assets/assets/search-folders-via-predicates.png)
 
-* [!DNL Experience Manager Assets] incorpore la visionneuse PDF pour prévisualiser les formats de document pris en charge. Il est optimisé par [!DNL Adobe Document Cloud]. Cette fonctionnalité permet aux utilisateurs de prévisualiser des fichiers PDF et d’autres fichiers multi-pages sans traitement complexe. Cela améliore la parité des fonctionnalités avec [!DNL Experience Manager] 6.5.
+* [!DNL Experience Manager Assets] incorpore la visionneuse PDF pour prévisualiser les formats de document pris en charge. Il est optimisé par [!DNL Adobe Document Cloud]. Cette fonctionnalité permet aux utilisateurs de prévisualiser des fichiers PDF et d’autres fichiers multi-pages sans traitement complexe. Cela améliore la parité des fonctionnalités avec [!DNL Experience Manager] 6.5. Les commandes disponibles dans l’aperçu sont le zoom, la navigation vers les pages, la désancrage des commandes et l’affichage en plein écran. La visionneuse PDF intégrée prend en charge les formats de fichiers AI, DOCX, INDD, PDF et PSD. Vous pouvez ajouter des commentaires à la ressource elle-même, mais les commentaires et annotations dans le fichier PDF ne sont pas pris en charge.
 
    ![Aperçu des fichiers PDF dans à  [!DNL Experience Manager] l’aide de la visionneuse PDF](/help/assets/assets/preview-pdf-file-viewer.png)
 
