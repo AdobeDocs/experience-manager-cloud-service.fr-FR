@@ -2,10 +2,10 @@
 title: Réplication
 description: Distribution et dépannage de la réplication.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: eba9ce7c80fc785e44f13ded5227828b6f04f7bb
+source-git-commit: 225c47db1af35b29d79ebd16fa437681987b1372
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 65%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,6 +32,14 @@ Les autres possibilités d’**Heure d’activation** et d’**Heure de désacti
 Pour réaliser la réplication automatique dans ce cas, vous devez activer **Auto Replicate** (Réplication automatique) dans **On Off Trigger Configuration** (Configuration d’activation et de désactivation du déclenchement) de la [configuration OSGi](/help/implementing/deploying/configuring-osgi.md) :
 
 ![Configuration OSGi d’activation et de désactivation du déclenchement](/help/operations/assets/replication-on-off-trigger.png)
+
+### Gérer la publication  {#manage-publication}
+
+La méthode Gérer la publication propose plus d’options que Publication rapide, dont la possibilité d’inclure des pages enfants, de personnaliser les références ou encore de lancer n’importe quel workflow applicable. Elle offre également la possibilité de publier la page à une date ultérieure.
+
+L’inclusion des enfants d’un dossier pour l’option &quot;Publier plus tard&quot; appelle le workflow Publier l’arborescence de contenu, décrit dans cet article.
+
+Vous trouverez des informations plus détaillées sur la gestion de la publication dans la [documentation sur les principes de publication](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
 ### Activation d’une arborescence {#tree-activation}
 
@@ -177,14 +185,6 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 Si vous ne fournissez pas un tel filtre et n’utilisez que l’agent &quot;publish&quot;, l’agent &quot;preview&quot; n’est pas utilisé et l’action de réplication n’affecte pas le niveau de prévisualisation.
 
 L’ensemble `ReplicationStatus` d’une ressource n’est modifié que si l’action de réplication comprend au moins un agent principal par défaut. Dans l’exemple ci-dessus, ce n’est pas le cas, car la réplication utilise uniquement l’agent &quot;aperçu&quot;. Par conséquent, vous devez utiliser la nouvelle méthode `getStatusForAgent()`, qui permet d’interroger le statut d’un agent spécifique. Cette méthode fonctionne également pour l’agent &quot;publish&quot;. Elle renvoie une valeur non nulle si une action de réplication a été effectuée à l’aide de l’agent fourni.
-
-### Gérer la publication  {#manage-publication}
-
-La méthode Gérer la publication propose plus d’options que Publication rapide, dont la possibilité d’inclure des pages enfants, de personnaliser les références ou encore de lancer n’importe quel workflow applicable. Elle offre également la possibilité de publier la page à une date ultérieure.
-
-L’inclusion des enfants d’un dossier pour l’option &quot;Publier plus tard&quot; appelle le workflow Publier l’arborescence de contenu, décrit dans cet article.
-
-Vous trouverez des informations plus détaillées sur la gestion de la publication dans la [documentation sur les principes de publication](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
 ## Résolution des problèmes {#troubleshooting}
 
