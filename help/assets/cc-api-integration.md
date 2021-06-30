@@ -1,0 +1,58 @@
+---
+title: Automatisation du contenu pour l’intégration de Creative Cloud
+description: Génération de variantes des ressources à l’aide de l’intégration de Creative Cloud
+contentOwner: AG
+feature: Chargement,Traitement des ressources,Publication,Asset compute Microservices,Workflow
+role: Business Practitioner,Administrator
+source-git-commit: 05f2bfac12d37b8ef9940e3381c709891cabe236
+workflow-type: tm+mt
+source-wordcount: '544'
+ht-degree: 0%
+
+---
+
+
+# Générer des variantes de ressources à l’aide de l’intégration [!DNL Adobe Creative Cloud] {#content-automation}
+
+Le module complémentaire d’automatisation du contenu intègre Experience Manager Assets en tant que Cloud Service et les API Adobe Creative Cloud pour traiter vos ressources de manière créative à grande échelle. Experience Manager utilise des [microservices de ressources](/help/assets/asset-microservices-overview.md) basés sur le cloud pour tirer parti des fonctionnalités de Adobe Creative Cloud et automatiser la création de ressources et la gestion des médias.
+
+Pour modifier des ressources dans [!DNL Adobe Photoshop] et [!DNL Adobe Lightroom], il n’est pas nécessaire de les télécharger, de les modifier et de les transférer vers [!DNL Experience Manager Assets]. Il vous suffit de créer et configurer un profil de traitement, d’appliquer le profil à un dossier et de charger les ressources dans le dossier. Les ressources chargées dans le dossier sont traitées pour créer différentes variantes de cette ressource. Le traitement en masse et la modification des ressources, sans effort et cohérents, ont permis d’économiser des efforts manuels et d’accroître la vitesse du contenu. En outre, les développeurs et les partenaires peuvent étendre les microservices de ressources avec un accès direct à ces API et inclure une logique personnalisée.
+
+Les utilisateurs peuvent créer des profils de traitement afin d’automatiser les opérations de création suivantes sur leurs ressources :
+
+**Réglage automatique** : Utilise l’intelligence artificielle pour analyser le contenu de l’image et corrige intelligemment la lumière et les couleurs en fonction des attributs uniques de l’image.
+**Hauteur** automatique : Utilise l’intelligence artificielle pour analyser le contenu de l’image et corriger la perspective biaisée dans les images. Par exemple, pour créer des horizons de niveau.
+**Paramètres prédéfinis** Lightroom : Applique une apparence définie par l’utilisateur aux images afin d’obtenir un aspect cohérent à l’aide de paramètres prédéfinis personnalisés.
+**Découpage d’image** : Utilise l’intelligence artificielle pour créer une sélection autour d’objets importants et supprimer l’arrière-plan à l’aide d’une seule commande.
+**Masque d’image** : Utilise l’intelligence artificielle pour créer un masque autour d’objets importants à l’aide d’une seule commande.
+**Actions Photoshop** : Applique une série de tâches (dans Photoshop) à un fichier ou à un lot de fichiers.
+**Remplacement d’objet dynamique** : Effectue une personnalisation à grande échelle en vous permettant de permuter des images tout en conservant tous les effets et ajustements appliqués à un fichier PSD.
+
+## Utilisation d’un profil de traitement pour traiter des ressources {#process-assets}
+
+Pour utiliser des profils de traitement afin de créer automatiquement des variations, procédez comme suit :
+
+1. Contactez le service clientèle d’Adobe pour acquérir la licence.
+1. Accédez à Outils > Ressources > Profils de traitement.
+1. Sélectionnez Créer, puis spécifiez un nom.
+1. Sélectionnez l&#39;onglet Créatif . Spécifiez le dossier de sortie, puis sélectionnez [!UICONTROL Ajouter ] pour ajouter des configurations créatives. Indiquez le nom du rendu (ou le nom de sortie), l’extension (ou le type de fichier), sélectionnez Qualité (ou les paramètres de sortie), sélectionnez Inclut et Exclut les listes de type MIME (ou saisissez un filtre de ressource d’entrée) et sélectionnez l’opération de création requise.
+1. Pour certaines opérations, un paramètre supplémentaire (ressource) est requis. Indiquez des valeurs pour ces paramètres supplémentaires si nécessaire.
+
+1. Ajoutez d’autres opérations créatives dans le cadre du même profil de traitement ou enregistrez le profil.
+
+1. Appliquez le profil de traitement à un dossier. Sélectionnez Propriétés du dossier, Traitement des ressources, puis le profil de traitement créé.
+
+Une fois le profil de traitement appliqué à un dossier DAM, toutes les ressources chargées ou mises à jour dans ce dossier (ou dans les sous-dossiers, sauf si elles ont été remplacées) exécutent les opérations définies en plus du traitement standard.
+
+Pour traiter manuellement les ressources existantes, sélectionnez les ressources, sélectionnez l’option **[!UICONTROL Retraiter]**, puis sélectionnez le profil de traitement requis.
+
+## Conseils et restrictions {#limitations-best-practices}
+
+* [!DNL Experience Manager] limite le traitement des ressources à 300 requêtes par minute par environnement et à 700 requêtes par minute par organisation.
+* La taille du fichier est limitée à 4 Go pour les opérations de l’API [!DNL Adobe Photoshop] et 1 Go pour les opérations [!DNL Adobe Lightroom].
+
+>[!MORELIKETHIS]
+>
+>* [Configurer et utiliser les microservices de ressources via des profils de traitement](/help/assets/asset-microservices-configure-and-use.md).
+>* [ [!DNL Experience Manager] Intégration avec [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
+
