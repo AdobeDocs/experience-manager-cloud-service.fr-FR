@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c61b24781cce58644c5f7100e5b4f47e8ac90047
+source-git-commit: c256699a64bd68285b4110d003f3391713c7a19a
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 21%
+source-wordcount: '1395'
+ht-degree: 20%
 
 ---
 
@@ -90,14 +90,12 @@ La prochaine version est prévue pour le 15 juillet 2021.
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#ga-features-assets}
 
-* La fonctionnalité d’automatisation du contenu permet à [!DNL Experience Manager Assets] d’exploiter les API [!DNL Adobe Creative Cloud] pour automatiser la production de ressources à grande échelle. Elle améliore la vitesse du contenu en réduisant considérablement le temps nécessaire et les itérations pour créer des variantes d’une même ressource. La fonctionnalité ne nécessite aucun code et fonctionne depuis la gestion des ressources numériques.
+* La fonctionnalité d’automatisation du contenu permet à [!DNL Experience Manager Assets] d’exploiter les API [!DNL Adobe Creative Cloud] pour automatiser la production de ressources à grande échelle. Elle améliore la vitesse du contenu en réduisant considérablement le temps nécessaire et les itérations pour créer des variantes d’une même ressource. La fonctionnalité ne nécessite aucune programmation et ne fonctionne pas dans la gestion des ressources numériques. Voir [Génération de variantes de ressources à l’aide de l’intégration de Creative Cloud](/help/assets/cc-api-integration.md).
+
 * [!DNL Adobe Asset Link] La version v3.0 pour  [!DNL Adobe Photoshop],  [!DNL Adobe Illustrator],  [!DNL Adobe InDesign] et  [!DNL Adobe Asset Link] v2.0 pour  [!DNL Adobe XD] est publiée. Il fournit les éléments suivants :
 
    * Prise en charge de [!DNL Assets Essentials].
    * Possibilité de se connecter automatiquement à [!DNL Experience Manager] sous la forme [!DNL Cloud Service] ou [!DNL Assets Essentials].
-
-<!-- TBD: Checking with PMs if AAE release should be mentioned here.
--->
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Assets] {#beta-features-assets}
 
