@@ -4,9 +4,9 @@ description: Génération de variantes des ressources à l’aide de l’intégr
 contentOwner: AG
 feature: Chargement,Traitement des ressources,Publication,Asset compute Microservices,Workflow
 role: Business Practitioner,Administrator
-source-git-commit: 05f2bfac12d37b8ef9940e3381c709891cabe236
+source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -20,31 +20,37 @@ Pour modifier des ressources dans [!DNL Adobe Photoshop] et [!DNL Adobe Lightroo
 
 Les utilisateurs peuvent créer des profils de traitement afin d’automatiser les opérations de création suivantes sur leurs ressources :
 
-**Réglage automatique** : Utilise l’intelligence artificielle pour analyser le contenu de l’image et corrige intelligemment la lumière et les couleurs en fonction des attributs uniques de l’image.
-**Hauteur** automatique : Utilise l’intelligence artificielle pour analyser le contenu de l’image et corriger la perspective biaisée dans les images. Par exemple, pour créer des horizons de niveau.
-**Paramètres prédéfinis** Lightroom : Applique une apparence définie par l’utilisateur aux images afin d’obtenir un aspect cohérent à l’aide de paramètres prédéfinis personnalisés.
-**Découpage d’image** : Utilise l’intelligence artificielle pour créer une sélection autour d’objets importants et supprimer l’arrière-plan à l’aide d’une seule commande.
-**Masque d’image** : Utilise l’intelligence artificielle pour créer un masque autour d’objets importants à l’aide d’une seule commande.
-**Actions Photoshop** : Applique une série de tâches (dans Photoshop) à un fichier ou à un lot de fichiers.
-**Remplacement d’objet dynamique** : Effectue une personnalisation à grande échelle en vous permettant de permuter des images tout en conservant tous les effets et ajustements appliqués à un fichier PSD.
+* **Réglage automatique** : Utilise l’intelligence artificielle pour analyser le contenu de l’image et corrige intelligemment la lumière et les couleurs en fonction des attributs uniques de l’image.
+* **Hauteur** automatique : Utilise l’intelligence artificielle pour analyser le contenu de l’image et corriger la perspective biaisée dans les images. Par exemple, pour créer des horizons de niveau.
+* **Paramètres prédéfinis** Lightroom : Applique une apparence définie par l’utilisateur aux images afin d’obtenir un aspect cohérent à l’aide de paramètres prédéfinis personnalisés.
+* **Découpage d’image** : Utilise l’intelligence artificielle pour créer une sélection autour d’objets importants et supprimer l’arrière-plan à l’aide d’une seule commande.
+* **Masque d’image** : Utilise l’intelligence artificielle pour créer un masque autour d’objets importants à l’aide d’une seule commande.
+* **Actions Photoshop** : Applique une série de tâches (dans Photoshop) à un fichier ou à un lot de fichiers.
+* **Remplacement d’objet dynamique** : Effectue une personnalisation à grande échelle en vous permettant de permuter des images tout en conservant tous les effets et ajustements appliqués à un fichier PSD.
 
 ## Utilisation d’un profil de traitement pour traiter des ressources {#process-assets}
 
 Pour utiliser des profils de traitement afin de créer automatiquement des variations, procédez comme suit :
 
-1. Contactez le service clientèle d’Adobe pour acquérir la licence.
-1. Accédez à Outils > Ressources > Profils de traitement.
-1. Sélectionnez Créer, puis spécifiez un nom.
-1. Sélectionnez l&#39;onglet Créatif . Spécifiez le dossier de sortie, puis sélectionnez [!UICONTROL Ajouter ] pour ajouter des configurations créatives. Indiquez le nom du rendu (ou le nom de sortie), l’extension (ou le type de fichier), sélectionnez Qualité (ou les paramètres de sortie), sélectionnez Inclut et Exclut les listes de type MIME (ou saisissez un filtre de ressource d’entrée) et sélectionnez l’opération de création requise.
-1. Pour certaines opérations, un paramètre supplémentaire (ressource) est requis. Indiquez des valeurs pour ces paramètres supplémentaires si nécessaire.
+1. Contactez [l’Assistance clientèle d’Adobe](https://experienceleague.adobe.com/#support) pour recevoir la licence.
+
+1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de traitement]**.
+
+1. Sélectionnez **[!UICONTROL Créer]**, puis spécifiez un **[!UICONTROL Nom]**.
+
+1. Sélectionnez l’onglet **[!UICONTROL Creative]**, indiquez le dossier de sortie, puis sélectionnez **[!UICONTROL Ajouter]** pour ajouter des configurations créatives.
+
+1. Indiquez **[!UICONTROL Nom du rendu]** (ou nom de sortie), **[!UICONTROL Extension]** (ou type de fichier), sélectionnez **[!UICONTROL Qualité]** (ou paramètres de sortie), sélectionnez Inclut et Exclut les listes de type MIME (ou saisissez un filtre de ressource d’entrée) et sélectionnez l’opération de création requise.
+
+1. Certaines opérations nécessitent un paramètre supplémentaire (ressource). Si nécessaire, indiquez des valeurs pour ces paramètres supplémentaires.
 
 1. Ajoutez d’autres opérations créatives dans le cadre du même profil de traitement ou enregistrez le profil.
 
-1. Appliquez le profil de traitement à un dossier. Sélectionnez Propriétés du dossier, Traitement des ressources, puis le profil de traitement créé.
+1. Appliquez le profil de traitement à un dossier. Sur la page **[!UICONTROL Propriétés]** d’un dossier, sélectionnez **[!UICONTROL Traitement des ressources]**, puis sélectionnez le profil de traitement à appliquer.
 
-Une fois le profil de traitement appliqué à un dossier DAM, toutes les ressources chargées ou mises à jour dans ce dossier (ou dans les sous-dossiers, sauf si elles ont été remplacées) exécutent les opérations définies en plus du traitement standard.
+Une fois le profil de traitement appliqué à un dossier DAM, toutes les ressources chargées ou mises à jour dans ce dossier exécutent les opérations définies en plus du traitement standard. Les sous-dossiers héritent des mêmes profils que ceux appliqués aux dossiers parents. Les utilisateurs peuvent remplacer cet héritage.
 
-Pour traiter manuellement les ressources existantes, sélectionnez les ressources, sélectionnez l’option **[!UICONTROL Retraiter]**, puis sélectionnez le profil de traitement requis.
+Pour traiter les ressources existantes, sélectionnez les ressources, sélectionnez l’option **[!UICONTROL Retraiter]**, puis sélectionnez le profil de traitement requis.
 
 ## Conseils et restrictions {#limitations-best-practices}
 
