@@ -4,10 +4,10 @@ user-guide-title: Guide d’Assets as a Cloud Service
 breadcrumb-title: Guide d’Assets
 user-guide-description: Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
+source-git-commit: ec5510d68c2c38be7755070e84b98d519c10e02a
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 100%
+source-wordcount: '484'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [Aperçu et nouveautés](overview.md)
 + [Modifications notables apportées à [!DNL Assets] as a [!DNL Cloud Service]](assets-cloud-changes.md)
-+ [[!DNL Assets] Architecture](architecture.md)
++ [Architecture d’[!DNL Assets]](architecture.md)
 + [Formats de fichiers pris en charge](file-format-support.md)
 + [Présentation des microservices de ressources](asset-microservices-overview.md)
 + [Accessibilité dans [!DNL Assets]](accessibility.md)
@@ -45,6 +45,7 @@ ht-degree: 100%
    + [Archivage et extraction des ressources à modifier](check-out-and-submit-assets.md)
    + [Gestion des droits numériques des ressources](drm.md)
    + [Mise en filigrane de ressources](watermark-assets.md)
+   + [Traitement des ressources à l’aide des API [!DNL Creative Cloud] ](cc-api-integration.md)
 + Configuration, administration et extension d’[!DNL Assets] {#admin}
    + [Documents pour les développeurs et guides de référence des API](developer-reference-material-apis.md)
    + [Schéma de métadonnées de dossier](folder-metadata-schema.md)
