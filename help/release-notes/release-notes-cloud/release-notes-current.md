@@ -3,9 +3,9 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: e4f49fd71451805d48d5f22dcf2f6d097a4d8d10
+source-git-commit: f8864341be5026f7e5aaf1112f69e76bdc6cbe8f
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1524'
 ht-degree: 18%
 
 ---
@@ -138,7 +138,7 @@ La prochaine version est prévue pour le 15 juillet 2021.
 
 ## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
-### Nouveautés d’[!DNL Forms]  {#what-is-new-forms}
+### Nouvelles fonctionnalités de [!DNL Forms] {#what-is-new-forms}
 
 * Les administrateurs Forms peuvent filtrer les colonnes personnalisées dans AEM boîte de réception.
 * Les développeurs Forms peuvent utiliser l’éditeur de thèmes et le calque de style de l’éditeur de formulaire adaptatif pour appliquer un style au composant captcha.
@@ -152,8 +152,6 @@ La prochaine version est prévue pour le 15 juillet 2021.
    * Générer des documents en renseignant les fichiers de modèle avec des données XML.
    * Générez des formulaires de sortie dans divers formats, y compris les flux d’impression PDF non interactifs.
    * Générer des fichiers PDF d’impression à partir d’un formulaire XFA au format PDF et d’un formulaire Adobe Acrobat (AcroForm).
-
-* **Externalisateur de données de variable** : Vous pouvez enregistrer les données des variables de workflow AEM sur un système de stockage externe géré par votre entreprise.
 
 Vous pouvez écrire sur [!DNL formscsbeta@adobe.com] pour vous inscrire au programme bêta.
 
