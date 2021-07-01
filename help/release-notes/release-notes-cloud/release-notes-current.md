@@ -3,9 +3,9 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f8864341be5026f7e5aaf1112f69e76bdc6cbe8f
+source-git-commit: 3574bc45dbcd39e3d4b6ed809cc61eb7464fe873
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1577'
 ht-degree: 18%
 
 ---
@@ -211,5 +211,21 @@ La date de publication de l’outil de transfert de contenu version 1.5.4 est le
 ### Correctifs {#bug-fixes-ctt-latest}
 
 * Lors de l’arrêt d’une ingestion sur l’instance d’auteur, l’interface utilisateur a remplacé une ingestion précédemment terminée sur l’instance de publication sur `STOPPED` à partir de `FINISHED`. Ce problème a été résolu.
+
+## Analyseur des bonnes pratiques {#best-practices-analyzer}
+
+### Date de publication {#release-date-bpa}
+
+La date de publication de la version 2.1.16 de l’analyseur des bonnes pratiques est le 30 juin 2021.
+
+### Nouveautés {#what-is-new-bpa-latest}
+
+* Possibilité de détecter et de générer des rapports sur les noeuds enfants manquants dans les dossiers situés sous `/content/dam`.
+
+* Possibilité de détecter et de générer des rapports sur la version de l’analyseur des bonnes pratiques utilisée.
+
+### Correctifs {#bug-fixes-bpa-latest}
+
+* Correction d’une erreur de journalisation liée à la structure de référentiel non prise en charge (URS).
 
 
