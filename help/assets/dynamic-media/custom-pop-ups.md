@@ -1,29 +1,29 @@
 ---
-title: Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées
-description: '"Découvrez comment l’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec les informations sur les produits pour générer un achat. Vous pouvez déclencher un contenu personnalisé à afficher dans la fenêtre contextuelle Windows®."'
-feature: Images interactives, Vidéos interactives, Bannières de carrousel
+title: Création de fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide
+description: '"Découvrez comment l’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec les informations sur les produits pour générer un achat. Vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles Windows®."'
+feature: Images interactives,Vidéos interactives,Bannières de carrousel
 role: Administrator,Business Practitioner
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
+source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 93%
+source-wordcount: '1009'
+ht-degree: 82%
 
 ---
 
-# Utilisation d’aperçus rapides pour créer une fenêtre contextuelle personnalisée® {#using-quickviews-to-create-custom-pop-ups}
+# Création d’une fenêtre contextuelle personnalisée® à l’aide de l’aperçu rapide {#using-quickviews-to-create-custom-pop-ups}
 
-L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Cependant, vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles. En fonction de la visionneuse que vous utilisez, les clients peuvent appuyer sur une zone réactive, une image miniature ou une zone cliquable pour afficher des informations ou du contenu associé.
+L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Cependant, vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles. Selon la visionneuse que vous utilisez, les clients peuvent sélectionner une zone réactive, une miniature ou une zone cliquable pour afficher des informations ou du contenu connexe.
 
-Les aperçus rapides sont pris en charge par les visionneuses suivantes dans Dynamic Media :
+L’aperçu rapide est pris en charge par les visionneuses suivantes dans Dynamic Media :
 
-* Images interactives (zones réactives cliquables)
-* Vidéo interactive (miniatures cliquables pendant la lecture vidéo)
-* Bannières carrousel (zones réactives cliquables ou zones cliquables)
+* Images interactives (zones réactives sélectionnables)
+* Vidéo interactive (images miniatures sélectionnables lors de la lecture vidéo)
+* Bannières de carrousel (zones réactives ou zones cliquables sélectionnables)
 
 Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus de création d’un aperçu rapide est identique pour les trois visionneuses prises en charge.
 
-**Pour utiliser des aperçus rapides afin de créer une fenêtre contextuelle personnalisée® :**
+**Pour créer une fenêtre contextuelle personnalisée® à l’aide de l’aperçu rapide :**
 
 1. Créez un aperçu rapide pour une ressource téléchargée.
 
@@ -33,7 +33,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
     <tbody>
     <tr>
     <td><strong>Visionneuse utilisée</strong></td>
-    <td><strong>Pour créer l’aperçu rapide, procédez comme suit :</strong></td>
+    <td><strong>Pour créer l’aperçu rapide, procédez comme suit :</strong></td>
     </tr>
     <tr>
     <td>Images interactives</td>
@@ -100,15 +100,14 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 
    Pour en savoir plus sur la méthode `setHandlers()`, rendez-vous sur la page suivante :
 
-   * Visionneuse d’images interactive - [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=fr)
-   * Visionneuse vidéo interactive - [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=fr)
+   * Visionneuse d’images interactive – [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=fr)
+   * Visionneuse de vidéos interactives – [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=fr)
 
 1. Configurez maintenant le gestionnaire `quickViewActivate`.
 
-   Le gestionnaire `quickViewActivate` contrôle les aperçus rapides dans la visionneuse. Le gestionnaire contient les appels de la liste de variables et de fonctions utilisables avec l’aperçu rapide. Le code incorporé fournit le mappage pour le jeu de variables SKU dans l’aperçu rapide. Il effectue également un exemple d’appel de fonction `loadQuickView`.
+   Le gestionnaire `quickViewActivate` contrôle l’aperçu rapide dans la visionneuse. Le gestionnaire contient les appels de la liste de variables et de fonctions utilisables avec l’aperçu rapide. Le code incorporé fournit un mappage pour la variable SKU définie dans l’aperçu rapide. Il effectue également un exemple d’appel de fonction `loadQuickView`.
 
-   **Correspondance de variables**
-Mappez les variables utilisables dans votre page web avec la valeur de SKU et les variables génériques dans l’aperçu rapide :
+   **Correspondance de variables** Mappez les variables utilisables dans votre page web avec la valeur de SKU et les variables génériques dans l’aperçu rapide :
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -116,15 +115,14 @@ Mappez les variables utilisables dans votre page web avec la valeur de SKU et le
 
    `var sku=inData.sku`
 
-   Mappez d’autres variables à partir de l’aperçu rapide également, comme dans ce qui suit :
+   Mappez également d’autres variables à partir de l’aperçu rapide, comme dans l’exemple suivant :
 
    ```
    var <i>variable2</i>= inData.<i>quickviewVariable2</i>
     var <i>variable3</i>= inData.<i>quickviewVariable3</i>
    ```
 
-   **Appel de fonction**
-Le gestionnaire nécessite également un appel de fonction pour que l’aperçu rapide fonctionne. La fonction est supposée être accessible par votre page hôte. Le code d’intégration fournit un exemple d’appel de fonction :
+   **Appel de fonction** Le gestionnaire nécessite également un appel de fonction pour que l’aperçu rapide fonctionne. La fonction est supposée être accessible par votre page hôte. Le code d’intégration fournit un exemple d’appel de fonction :
 
    `loadQuickView(sku)`
 
@@ -154,7 +152,7 @@ Le gestionnaire nécessite également un appel de fonction pour que l’aperçu 
 
    * Chargez une page HTML de test sur un serveur web et ouvrez-la.
 
-      Les variables de l’aperçu rapide sont mises en correspondance. L’appel de fonction est en place. Et la console du navigateur écrit la valeur de la variable dans la console du navigateur. Cette opération s’appuie sur l’exemple de fonction fourni.
+      Les variables de l’aperçu rapide sont mappées. L’appel de fonction est en place. Et la console du navigateur écrit la valeur de la variable dans la console du navigateur. Cette opération s’appuie sur l’exemple de fonction fourni.
 
 
 
@@ -173,7 +171,7 @@ Le gestionnaire nécessite également un appel de fonction pour que l’aperçu 
 
 1. Placez la balise `DIV` de la fenêtre contextuelle dans le corps de la page HTML.
 
-   L’un des éléments est défini avec un ID qui est mis à jour avec la valeur de SKU lorsque l’utilisateur appelle un aperçu rapide. L’exemple comprend également un bouton unique pour masquer à nouveau la fenêtre contextuelle une fois qu’elle devient visible.
+   L’un des éléments est défini avec un ID mis à jour avec la valeur de SKU lorsque l’utilisateur appelle un aperçu rapide. L’exemple comprend également un bouton unique pour masquer à nouveau la fenêtre contextuelle une fois qu’elle devient visible.
 
    ```xml
    <div id="quickview_div" >
