@@ -2,13 +2,13 @@
 title: Traitement des ressources à l’aide des microservices de ressources
 description: Traitez vos ressources numériques à l’aide de microservices de traitement des ressources évolutifs et natifs en mode cloud.
 contentOwner: AG
-feature: Microservices Asset compute,Workflow,Informations de mise à jour,Traitement des ressources
+feature: Microservices Asset Compute,Workflow,Informations de mise à jour,Traitement des ressources
 role: Architect,Administrator
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 99%
+source-wordcount: '828'
+ht-degree: 85%
 
 ---
 
@@ -25,7 +25,7 @@ Adobe Experience Manager as a [!DNL Cloud Service] permet d’exploiter, en mode
 * Le cas échéant, les services natifs de traitement de fichiers Adobe sont utilisés, ce qui se traduit par un résultat fidèle et une [gestion efficace des formats propriétaires Adobe](file-format-support.md).
 * Possibilité de configurer le workflow de post-traitement de manière à ajouter des actions et des intégrations spécifiques à l’utilisateur.
 
-L’utilisation des microservices de ressources permet de se passer d’outils et de méthodes de rendu tiers (comme ImageMagick et le transcodage FFmpeg) et de simplifier les configurations, tout en fournissant des fonctionnalités de base pour les types de fichiers courants par défaut.
+Les microservices de ressources permettent d’éviter la nécessité d’outils et de méthodes de rendu tiers (tels que le transcodage [!DNL ImageMagick] et FFmpeg) et de simplifier les configurations, tout en fournissant des fonctionnalités de base pour les formats de fichiers courants par défaut.
 
 ## Architecture de haut niveau {#asset-microservices-architecture}
 
@@ -40,21 +40,21 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 Les principales étapes de l’ingestion et du traitement des ressources à l’aide des microservices de ressources sont les suivantes :
 
-* Les clients, tels que les navigateurs web ou Adobe Asset Link, envoient une requête de chargement à Experience Manager et commencent directement le transfert du binaire vers l’espace de stockage cloud.
-* Une fois le chargement terminé, le client en informe Experience Manager.
-* Experience Manager envoie une requête de traitement aux microservices de ressources. Le contenu de la requête dépend de la configuration des profils de traitement dans Experience Manager, lesquels indiquent les rendus à générer.
+* Les clients, tels que les navigateurs web ou Adobe Asset Link, envoient une demande de chargement à [!DNL Experience Manager] et commencent directement à charger le fichier binaire dans l’espace de stockage cloud.
+* Une fois le chargement terminé, le client en informe [!DNL Experience Manager].
+* [!DNL Experience Manager] envoie une demande de traitement aux microservices de ressources. Le contenu de la requête dépend de la configuration des profils de traitement dans [!DNL Experience Manager] qui spécifient les rendus à générer.
 * Le serveur back-end des microservices de ressources reçoit la requête et, en fonction de cette dernière, la transmet à un ou plusieurs microservices. Chaque microservice accède directement au fichier binaire d’origine depuis l’espace de stockage cloud des binaires.
 * Les résultats du traitement, tels que les rendus, sont stockés dans cet espace.
-* Experience Manager est averti que le traitement est terminé, avec des pointeurs directs vers les binaires générés (rendus). Les rendus générés sont disponibles dans Experience Manager pour la ressource chargée.
+* Experience Manager est averti que le traitement est terminé, avec des pointeurs directs vers les binaires générés (rendus). Les rendus générés sont disponibles dans [!DNL Experience Manager] pour la ressource chargée.
 
 Il s’agit du flux d’ingestion et de traitement de base des ressources. S’il est configuré, Experience Manager peut également démarrer un modèle de workflow personnalisé pour effectuer le post-traitement de la ressource. Il est possible, par exemple, d’exécuter des étapes personnalisées spécifiques à votre environnement, telles que récupérer des informations d’un système d’entreprise et les ajouter aux propriétés de la ressource.
 
 L’ingestion et le flux de traitement sont des concepts clés de l’architecture des microservices de ressources d’Experience Manager.
 
 * **Accès binaire direct** : les ressources sont transportées (et chargées) dans l’espace de stockage des binaires, une fois la configuration effectuée pour les environnements Experience Manager. Elles sont ensuite chargées dans [!DNL Experience Manager], puis dans les microservices de ressources. Enfin, les clients y ont accès directement pour mener à bien leur travail. Cela réduit la charge sur les réseaux et la duplication des binaires stockés.
-* **Traitement externalisé** : le traitement des ressources s’effectue en dehors de l’environnement [!DNL Experience Manager], d’où une économie des ressources (processeur et mémoire), afin de fournir des fonctionnalités de gestion des ressources numériques essentielles et de permettre aux utilisateurs finaux d’effectuer des tâches interactives sur le système.
+* **Traitement externalisé** : Le traitement des ressources s’effectue en dehors de l’ [!DNL Experience Manager] environnement et enregistre ses ressources (processeur et mémoire) pour fournir des fonctionnalités de gestion des ressources numériques (DAM) essentielles et pour prendre en charge le travail interactif avec le système pour les utilisateurs finaux.
 
-## Chargement de ressources avec accès direct aux binaires {#asset-upload-with-direct-binary-access}
+## Chargement de ressources avec accès binaire direct {#asset-upload-with-direct-binary-access}
 
 Les clients Experience Manager, qui font partie de l’offre de produit, prennent tous en charge le chargement avec un accès direct aux binaires par défaut. Cela comprend notamment le chargement au moyen de l’interface web, d’Adobe Asset Link et de l’application de bureau [!DNL Experience Manager].
 
