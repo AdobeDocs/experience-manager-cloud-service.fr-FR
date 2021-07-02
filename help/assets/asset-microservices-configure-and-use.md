@@ -2,13 +2,13 @@
 title: Configuration et utilisation des microservices de ressources
 description: Configurez et utilisez des microservices de ressources basés sur le cloud pour traiter des ressources à grande échelle.
 contentOwner: AG
-feature: Microservices Asset compute,Workflow,Traitement des ressources
+feature: Microservices Asset Compute,Workflow,Traitement des ressources
 role: Architect,Administrator
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
 workflow-type: tm+mt
-source-wordcount: '2582'
-ht-degree: 99%
+source-wordcount: '2635'
+ht-degree: 94%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 Les microservices de ressource permettent un traitement évolutif et résilient des ressources à l’aide d’applications basées sur le cloud (également appelées secondaires). Adobe gère les services pour une gestion optimale des différents types de ressources et des options de traitement.
 
-Les microservices de ressources vous permettent de traiter un [large éventail de types de fichiers](/help/assets/file-format-support.md), dans des formats prêts à l’emploi plus nombreux que les versions précédentes d’[!DNL Experience Manager]. Par exemple, l’extraction de miniatures des formats PSD et PSB est désormais possible ; elle nécessitait auparavant des solutions tierces telles qu’ImageMagick.
+Les microservices de ressources vous permettent de traiter un [large éventail de types de fichiers](/help/assets/file-format-support.md), dans des formats prêts à l’emploi plus nombreux que les versions précédentes d’[!DNL Experience Manager]. Par exemple, l’extraction de miniatures des formats PSD et PSB est désormais possible, mais des solutions tierces telles que [!DNL ImageMagick] étaient auparavant nécessaires.
 
 Le traitement des ressources dépend de la configuration des **[!UICONTROL profils de traitement]**. Experience Manager fournit une configuration par défaut de base et permet aux administrateurs d’ajouter une configuration de traitement des ressources plus spécifique. Les administrateurs créent, gèrent et modifient les configurations des workflows de post-traitement, y compris la personnalisation facultative. La personnalisation des workflows permet aux développeurs d’étendre l’offre par défaut.
 
@@ -33,7 +33,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 ## Présentation des options de traitement des ressources {#get-started}
 
-Experience Manager autorise les niveaux de traitement suivants.
+[!DNL Experience Manager] permet de traiter les niveaux suivants.
 
 | Option | Description | Cas d’utilisation couverts |
 |---|---|---|
@@ -206,17 +206,26 @@ Assurez-vous que la dernière étape de chaque workflow de post-traitement est `
 
 ### Configuration de l’exécution du workflow de post-traitement {#configure-post-processing-workflow-execution}
 
-Pour configurer les modèles du workflow de post-traitement à exécuter pour les ressources chargées ou mises à jour dans le système une fois le traitement des microservices de ressources terminé, il convient de configurer le service d’exécution de workflow personnalisé.
+Une fois le traitement des ressources chargées terminé par les microservices de ressources, vous pouvez définir le post-traitement afin de traiter davantage certaines ressources. Pour configurer le post-traitement à l’aide de modèles de workflow, vous pouvez effectuer l’une des opérations suivantes :
+
+* Configurez le service d’exécution de workflow personnalisé.
+* Appliquez un modèle de workflow dans le dossier [!UICONTROL Propriétés].
 
 Cet outil d’exécution de workflow DAM personnalisé (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) est un service OSGi qui propose deux options de configuration :
 
-* Workflows de post-traitement par chemin d’accès (`postProcWorkflowsByPath`) : plusieurs modèles de workflow peuvent être répertoriés en fonction de différents chemins de référentiel. Les chemins d’accès et les modèles doivent être séparés par un signe « deux-points ». Les chemins de référentiel simples sont pris en charge et doivent être associés à un modèle de workflow dans le chemin d’accès `/var`. Par exemple : `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* Workflows de post-traitement par chemin d’accès (`postProcWorkflowsByPath`) : plusieurs modèles de workflow peuvent être répertoriés en fonction de différents chemins de référentiel. Séparez les chemins et les modèles à l’aide d’un deux-points. Les chemins de référentiel simples sont pris en charge. Mappez-les à un modèle de workflow dans le chemin `/var`. Par exemple : `/content/dam/my-brand:/var/workflow/models/my-workflow`.
 * Workflows de post-traitement par expression (`postProcWorkflowsByExpression`) : plusieurs modèles de workflows peuvent être répertoriés en fonction de différentes expressions régulières. Les expressions et les modèles doivent être séparés par un signe « deux-points ». L’expression régulière doit pointer directement vers le nœud Ressource et non vers l’un des rendus ou fichiers. Par exemple : `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 >[!NOTE]
 >
 >La configuration du service d’exécution de workflow personnalisé est la configuration d’un service OSGi. Pour en savoir plus sur le déploiement d’une configuration OSGi, voir [Déploiement sur Experience Manager](/help/implementing/deploying/overview.md).
 >Contrairement aux déploiements des Managed Services et On-Premise Services d’[!DNL Experience Manager], la console web OSGi n’est pas directement disponible dans les déploiements Cloud Service.
+
+Pour appliquer un modèle de workflow dans le dossier [!UICONTROL Propriétés], procédez comme suit :
+
+1. Créer un modèle de processus.
+1. Sélectionnez un dossier, cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils, puis cliquez sur l’onglet **[!UICONTROL Traitement des ressources]**.
+1. Sous **[!UICONTROL Processus de démarrage automatique]**, sélectionnez le processus requis, fournissez le titre du processus, puis enregistrez les modifications.
 
 Pour plus d’informations sur les étapes de workflow standard pouvant être utilisées dans le workflow de post-traitement, voir [Étapes du workflow de post-traitement](developer-reference-material-apis.md#post-processing-workflows-steps) (en anglais) dans la documentation de référence du développeur.
 
