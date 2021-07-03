@@ -2,9 +2,9 @@
 title: Gestion de projets
 description: La console Projets vous permet d’organiser un projet en regroupant les ressources dans une seule entité à laquelle vous pouvez accéder et que vous pouvez gérer.
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '915'
 ht-degree: 100%
 
 ---
@@ -25,8 +25,11 @@ Sans configuration supplémentaire, AEM propose les modèles suivants pour crée
 
 * Projet simple
 * Projet de média
-* Projet de séance photo du produit
 * Projet de traduction
+
+<!-- Hiding product photoshoot via cqdoc-18072 as it is not available in Skyline.
+* Product Photo Shoot Project 
+-->
 
 Les étapes de création d’un projet sont identiques d’un projet à l’autre. La différence entre les types de projets porte sur les [rôles utilisateur](/help/sites-cloud/authoring/projects/overview.md) et les [workflows](/help/sites-cloud/authoring/projects/workflows.md) disponibles.  Pour créer un projet :
 
@@ -41,7 +44,7 @@ Les étapes de création d’un projet sont identiques d’un projet à l’autr
 
 1. Cliquez/appuyez sur **Créer**. Le message de confirmation vous demande si vous voulez ouvrir votre projet ou revenir à la console.
 
-### Association de ressources à un projet   {#associating-resources-with-your-project}
+### Association de ressources à un projet {#associating-resources-with-your-project}
 
 Dans la mesure où les projets permettent de regrouper les ressources dans une seule entité, il convient d’associer des ressources à votre projet. Ces ressources sont connues sous le nom de **mosaïques**. Les types de ressources que vous pouvez ajouter sont décrits dans la section [Mosaïques de projet](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
@@ -86,7 +89,7 @@ Pour ajouter des éléments à une mosaïque :
 
    ![Ajout d’un élément à une mosaïque](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
 
-1. Ajoutez un élément à la mosaïque comme vous le feriez pour créer une mosaïque. Les mosaïques de projets sont décrites [ici](/help/sites-cloud/authoring/projects/overview.md#project-tiles). Dans cet exemple, un autre worfklow a été ajouté.
+1. Ajoutez un élément à la mosaïque comme vous le feriez pour créer une mosaïque. Les mosaïques de projets sont décrites [ici](/help/sites-cloud/authoring/projects/overview.md#project-tiles). Dans cet exemple, un autre workflow a été ajouté.
 
    ![Autre élément ajouté à une mosaïque](/help/sites-cloud/authoring/assets/projects-workflows-2.png)
 
@@ -135,8 +138,7 @@ Pour activer/désactiver un projet :
 1. Dans la console **Projets**, ouvrez votre projet, puis recherchez la mosaïque **Informations sur le projet**.
 
    >[!NOTE]
-   >
-   >Vous pourriez être amené à ajouter cette mosaïque, si ce n’est pas déjà fait dans votre projet. Voir [Ajout de mosaïques](#adding-items-to-a-tile).
+   Vous pourriez être amené à ajouter cette mosaïque, si ce n’est pas déjà fait dans votre projet. Voir [Ajout de mosaïques](#adding-items-to-a-tile).
 
 1. Appuyez/cliquez sur **Modifier**.
 1. Basculez la valeur du sélecteur entre **Actif** et **Inactif**.
