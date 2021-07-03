@@ -2,10 +2,10 @@
 title: Schéma de métadonnées de dossier
 description: Découvrez comment créer des schémas de métadonnées pour des dossiers de ressources dans [!DNL Experience Manager Assets]
 contentOwner: AG
-feature: 'Métadonnées  '
-role: Business Practitioner,Administrator
+feature: Métadonnées
+role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1030'
 ht-degree: 100%
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 [!DNL Adobe Experience Manager Assets] vous permet de créer des schémas de métadonnées pour des dossiers de ressources. Ces schémas définissent la disposition et les métadonnées affichées dans les pages de propriétés des dossiers.
 
-## Ajout d’un formulaire de schéma de métadonnées de dossier {#add-a-folder-metadata-schema-form}
+## Ajout d’un formulaire de schéma de métadonnées de dossier  {#add-a-folder-metadata-schema-form}
 
 Utilisez l’éditeur Formulaires de schéma de métadonnées de dossier pour créer et modifier des schémas de métadonnées pour les dossiers.
 
