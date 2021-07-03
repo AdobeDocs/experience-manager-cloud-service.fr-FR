@@ -2,10 +2,10 @@
 title: Modification ou ajout de métadonnées
 description: Découvrez les métadonnées des ressources dans [!DNL Experience Manager Assets]  et les différentes façons de les modifier.
 contentOwner: AG
-feature: 'Métadonnées  '
-role: Business Practitioner,Administrator
+feature: Métadonnées
+role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 100%
@@ -18,7 +18,7 @@ Les métadonnées sont des informations supplémentaires sur la ressource qui pe
 
 Étant donné que les entreprises ont besoin de vocabulaires de métadonnées contrôlés et fiables, [!DNL Experience Manager Assets] ne permet pas l’ajout ad hoc de nouvelles propriétés de métadonnées. Bien que les auteurs ne puissent pas ajouter de nouveaux champs de métadonnées aux ressources, les développeurs le peuvent. Voir [Création d’une propriété de métadonnées pour les ressources](meta-edit.md#editing-metadata-schema).
 
-## Modification des métadonnées d’une ressource {#editing-metadata-for-an-asset}
+## Modification des métadonnées d’une ressource  {#editing-metadata-for-an-asset}
 
 Pour modifier des métadonnées, procédez comme suit :
 
