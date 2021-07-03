@@ -1,18 +1,18 @@
 ---
 title: Assets Insights
-description: Effectuez le suivi des évaluations des utilisateurs et des statistiques d’utilisation des images utilisées dans les sites web tiers, les campagnes marketing et les solutions de création de l’Adobe.
+description: Effectuez le suivi des évaluations des utilisateurs et des statistiques d’utilisation des images utilisées dans les sites web tiers, les campagnes marketing et les solutions de création d’Adobe.
 contentOwner: AG
 feature: Statistiques sur les ressources, rapports sur les ressources
-role: Business Practitioner,Leader
+role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '796'
-ht-degree: 65%
+ht-degree: 80%
 
 ---
 
-# Assets Insights {#asset-insights}
+# Informations sur les ressources {#asset-insights}
 
 La fonctionnalité Statistiques sur les ressources vous permet de suivre les évaluations des utilisateurs et les statistiques d’utilisation des images utilisées dans les sites web tiers, les campagnes marketing et les solutions de création d’Adobe. Elle permet d’obtenir des informations sur les performances et la popularité des images.
 
@@ -24,14 +24,14 @@ Pour permettre à Assets Insights d’afficher les statistiques d’utilisation 
 
 >[!NOTE]
 >
->Les statistiques sont prises en charge et fournies uniquement pour les images.
+>Les statistiques sont uniquement prises en charge et fournies pour les images.
 
 ## Affichage des statistiques pour une image {#viewing-statistics-for-an-image}
 
 Vous pouvez afficher les scores de statistiques sur les ressources à partir de la page des métadonnées.
 
-1. Dans l’interface utilisateur Assets, sélectionnez l’image, puis cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils.
-1. Sur la page Propriétés, cliquez sur **[!UICONTROL Statistiques]**.
+1. Dans l’interface utilisateur d’Assets, sélectionnez l’image, puis appuyez sur **[!UICONTROL Propriétés]** dans la barre d’outils.
+1. Sur la page Propriétés, appuyez sur **[!UICONTROL Statistiques]**.
 1. Consultez les détails d’utilisation de la ressource dans l’onglet **[!UICONTROL Statistiques]**. La section **[!UICONTROL Score]** indique les scores totaux d’utilisation et de performances d’une ressource.
 
    Le score d’utilisation indique le nombre de fois que la ressource est utilisée dans diverses solutions.
@@ -42,7 +42,7 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
 
    * **[!UICONTROL Ressource]** : nombre de fois où la ressource faisait partie d’une collection ou d’une ressource composite.
    * **[!UICONTROL Web et mobile]** : nombre de fois où la ressource faisait partie de sites web et d’applications.
-   * **[!UICONTROL Social]** : Nombre de fois où la ressource a été utilisée dans d’autres solutions, telles qu’une  [!DNL Adobe Campaign].
+   * **[!UICONTROL Social]** : nombre de fois où la ressource a été utilisée dans d’autres solutions, telles qu’[!DNL Adobe Campaign].
    * **[!UICONTROL Email]** : nombre de fois où la ressource a été utilisée dans des campagnes par email.
 
    ![usage_statistics](assets/usage_statistics.png)
@@ -59,7 +59,7 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
    >
    >Contrairement à la section Solutions, la section Statistiques de performances affiche les données les plus récentes.
 
-1. Pour obtenir le code incorporé de la ressource que vous incluez sur les sites web afin d’obtenir les données de performances, cliquez sur **[!UICONTROL Obtenir le code intégré]** sous la miniature de la ressource. <!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+1. Pour obtenir le code intégré de la ressource que vous incluez sur les sites web afin d’obtenir les données de performances, cliquez sur **[!UICONTROL Obtenir le code intégré]** au-dessous de la vignette de la ressource. <!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -68,7 +68,7 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
 Vous pouvez afficher les scores de toutes les ressources d’un dossier simultanément à l’aide du **[!UICONTROL mode Statistiques]**.
 
 1. Dans l’IU Assets, accédez au dossier contenant les ressources dont vous souhaitez consulter les statistiques.
-1. Cliquez sur l’option Mise en page de la barre d’outils, puis sélectionnez **[!UICONTROL Vue des statistiques]**.
+1. Cliquez sur l’option Mise en page de la barre d’outils, puis sélectionnez **[!UICONTROL Mode Statistiques]**.
 1. La page affiche les scores d’utilisation pour les ressources. Comparez les évaluations des différentes ressources et tirez-en des conclusions.
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
@@ -105,7 +105,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
    *Figure : Configuration d’Adobe Analytics pour les statistiques sur les ressources dans[!DNL Experience Manager]*
 
 1. Cliquez sur **[!UICONTROL Authentifier]**. Une fois que [!DNL Experience Manager] a authentifié vos informations d’identification, dans la liste **[!UICONTROL Suite de rapports]** , sélectionnez une suite de rapports Adobe Analytics à partir de laquelle vous souhaitez que les statistiques sur les ressources récupèrent les données. Cliquez sur **[!UICONTROL Ajouter]**.
-1. Une fois que [!DNL Experience Manager] a configuré votre suite de rapports, cliquez sur **[!UICONTROL Terminé]**.
+1. Une fois qu’[!DNL Experience Manager] a configuré votre suite de rapports, appuyez sur **[!UICONTROL Terminé]**.
 
 ### Suivi de page {#page-tracker}
 
