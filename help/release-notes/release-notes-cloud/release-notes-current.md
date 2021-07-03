@@ -3,9 +3,9 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 3574bc45dbcd39e3d4b6ed809cc61eb7464fe873
+source-git-commit: eade8d0faf0121260b0822abcab6fae174a796e6
 workflow-type: tm+mt
-source-wordcount: '1577'
+source-wordcount: '1586'
 ht-degree: 18%
 
 ---
@@ -105,7 +105,9 @@ La prochaine version est prévue pour le 15 juillet 2021.
 
    ![Définition de la vue par défaut dans Paramètres d’affichage](/help/assets/assets/view-settings-for-defaults.png)
 
-* La fonctionnalité de téléchargement de Linkshare utilise des téléchargements asynchrones qui augmentent la vitesse de téléchargement.
+* La fonctionnalité de téléchargement de Linkshare utilise des téléchargements asynchrones qui augmentent la vitesse de téléchargement. Voir [Téléchargement des ressources partagées à l’aide du partage de liens](/help/assets/download-assets-from-aem.md#link-share-download).
+
+   ![Boîte de réception de téléchargement](/help/assets/assets/download-inbox.png)
 
 * Les utilisateurs peuvent rechercher et filtrer les dossiers en fonction des prédicats de propriété.
 
