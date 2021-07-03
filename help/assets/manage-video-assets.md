@@ -3,16 +3,16 @@ title: Gestion des ressources vidéo
 description: Charger, prévisualiser, annoter et publier des ressources vidéo dans [!DNL Adobe Experience Manager].
 contentOwner: AG
 feature: Gestion des ressources,Publication,Collaboration,Vidéo
-role: Business Practitioner
+role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '624'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Gestion des ressources vidéo {#manage-video-assets}
+# Gestion des ressources vidéo  {#manage-video-assets}
 
 Le format vidéo est un élément essentiel des ressources numériques d’une entreprise. [!DNL Adobe Experience Manager] propose des solutions et des fonctionnalités matures pour gérer l’ensemble du cycle de vie de vos ressources vidéo après leur création.
 
