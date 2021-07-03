@@ -2,18 +2,18 @@
 title: Ajout de vos ressources numériques à [!DNL Adobe Experience Manager].
 description: Ajoutez vos ressources numériques à [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 feature: Gestion des ressources,Télécharger
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '2067'
-ht-degree: 85%
+ht-degree: 98%
 
 ---
 
-# Ajoutez des ressources numériques à [!DNL Adobe Experience Manager] en tant que [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
+# Ajoutez vos ressources numériques à [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
 
-[!DNL Adobe Experience Manager Assets] accepte de nombreux types de ressources numériques provenant de nombreuses sources. Il stocke les binaires et les rendus créés. Il peut effectuer le traitement des ressources à l’aide de divers services de workflow et [!DNL Adobe Sensei], ce qui permet la distribution via de nombreux canaux sur de nombreuses surfaces.
+[!DNL Adobe Experience Manager Assets] accepte différents types de ressources numériques provenant de nombreuses sources. Il stocke les binaires et les rendus créés. Il peut aussi effectuer le traitement des ressources à l’aide de divers services de workflow et [!DNL Adobe Sensei], ce qui permet la distribution via de nombreux canaux sur différentes surfaces.
 
 [!DNL Adobe Experience Manager] enrichit le contenu binaire des fichiers numériques chargés avec des métadonnées enrichies, des balises intelligentes, des rendus et autres services de gestion des ressources numériques (DAM). Vous pouvez charger divers types de fichiers, tels que des images, des documents et des fichiers d’images brutes, depuis votre dossier local ou un lecteur réseau vers [!DNL Experience Manager Assets].
 
@@ -33,7 +33,7 @@ Vous pouvez également choisir d’effectuer un traitement supplémentaire sur l
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Utile lorsque les créatifs et les professionnels du marketing travaillent sur des ressources à partir des applications de bureau [!DNL Creative Cloud] prises en charge. | Créatif, professionnel du marketing |
 | [Outil d’ingestion en masse de ressources](#asset-bulk-ingestor) | Recommandé pour les migrations à grande échelle et les ingestions en masse occasionnelles. Uniquement pour les magasins de données pris en charge. | Administrateur, développeur |
 
-## Chargement des ressources {#upload-assets}
+## Charger des ressources {#upload-assets}
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
@@ -105,9 +105,9 @@ Vous pouvez charger une ressource avec le même chemin d’accès (même nom et 
 
 * Remplacer la ressource existante : si vous remplacez une ressource existante, les métadonnées de la ressource et les modifications antérieures (annotations, recadrage, etc.) apportées à une ressource existante sont supprimées.
 * Créer une autre version : une nouvelle version de la ressource existante est créée dans le référentiel. Vous pouvez afficher les deux versions dans le [!UICONTROL Journal] et revenir à la version précédente si nécessaire.
-* Conserver les deux : Si vous choisissez de conserver les deux ressources, la nouvelle ressource est renommée.
+* Conserver les deux : si vous choisissez de conserver les deux ressources, la nouvelle ressource est renommée.
 
-Pour conserver le duplicata de ressource dans [!DNL Assets], cliquez sur **[!UICONTROL Conserver]**. Pour supprimer la ressource en double que vous avez chargée, cliquez sur **[!UICONTROL Supprimer]**.
+Pour conserver le duplicata de ressource dans [!DNL Assets], cliquez sur **[!UICONTROL Conserver]**. Pour supprimer la ressource en double que vous avez chargée, appuyez/cliquez sur **[!UICONTROL Supprimer]**.
 
 ### Gestion des noms de fichier et caractères interdits {#filename-handling}
 
@@ -163,14 +163,14 @@ Procédez de la manière suivante pour configurer l’outil :
    * [!UICONTROL Exécution à vide] : appelez une série de tests de l’ingestion en masse.
    * [!UICONTROL Exécuter] : exécutez la configuration sélectionnée.
    * [!UICONTROL Arrêter] : terminez une configuration active.
-   * [!UICONTROL Planification] : Définissez une planification unique ou récurrente pour l’ingestion de ressources.
+   * [!UICONTROL Planification] : définir une planification unique ou récurrente pour l’ingestion de ressources.
    * [!UICONTROL État de la tâche] : afficher l’état de la configuration lorsqu’elle est utilisée dans une tâche d’importation en cours ou pour une tâche terminée.
-   * [!UICONTROL Historique des tâches] : Instances précédentes de la tâche.
+   * [!UICONTROL Historique des tâches] : instances précédentes de la tâche.
    * [!UICONTROL Afficher les ressources] : afficher le dossier cible s’il existe.
 
    ![Options de la barre d’outils pour les configurations d’ingestion](assets/bulk-ingest-toolbar-options.png)
 
-Pour planifier un import en bloc ponctuel ou récurrent, procédez comme suit :
+Pour planifier un import en bloc ponctuel ou récurrent, procédez comme suit :
 
 1. Créez une configuration d’importation en bloc.
 1. Sélectionnez la configuration et sélectionnez **[!UICONTROL Planification]** dans la barre d’outils.
@@ -211,17 +211,17 @@ Pour les dossiers auxquels un profil de traitement est affecté, le nom du profi
 
 Les détails techniques du protocole et des API de chargement, ainsi que les liens vers les exemples de clients et le SDK Open Source, sont fournis dans la section [Chargement de ressources](developer-reference-material-apis.md#asset-upload) de la documentation de référence du développeur.
 
-## Conseils, bonnes pratiques et limites {#tips-limitations}
+## Conseils, bonnes pratiques et restrictions {#tips-limitations}
 
-* Le chargement binaire direct est une nouvelle méthode de chargement de ressources. Il est pris en charge par défaut par les clients et fonctionnalités du produit, comme l’interface utilisateur [!DNL Experience Manager], [!DNL Adobe Asset Link] et l’appli de bureau [!DNL Experience Manager]. Tout code personnalisé personnalisé ou étendu par les équipes techniques des clients doit utiliser les nouvelles API et les nouveaux protocoles de chargement.
+* Le chargement binaire direct est une nouvelle méthode de chargement de ressources. Il est pris en charge par défaut par les clients et fonctionnalités du produit, comme l’interface utilisateur d’[!DNL Experience Manager], [!DNL Adobe Asset Link] et l’appli de bureau [!DNL Experience Manager]. Le code personnalisé ou étendu par les équipes techniques des clients doit utiliser les nouvelles API et les nouveaux protocoles de chargement.
 
-* Adobe recommande d’ajouter, dans [!DNL Experience Manager Assets], pas plus de 1 000 ressources par dossier. Bien que vous puissiez ajouter d’autres ressources à un dossier, il est possible que vous rencontriez des problèmes de performances, tels qu’une navigation plus lente vers ces dossiers.
+* Adobe recommande de ne pas ajouter plus de 1 000 ressources par dossier dans [!DNL Experience Manager Assets]. Bien que vous puissiez ajouter d’autres ressources à un dossier, il est possible que vous rencontriez des problèmes de performances, notamment une navigation plus lente vers ces dossiers.
 
 * Lorsque vous sélectionnez **[!UICONTROL Remplacer]** dans la boîte de dialogue [!UICONTROL Conflit de noms], l’ID de la ressource est régénéré pour la nouvelle ressource. Cet ID est différent de celui de la ressource précédente. Si [Assets Insights](/help/assets/assets-insights.md) est activé pour effectuer le suivi des impressions ou des clics avec [!DNL Adobe Analytics], l’ID de ressource régénéré invalide les données capturées pour la ressource sur [!DNL Analytics].
 
 * Certaines méthodes de chargement n’empêchent pas le chargement de ressources dont les noms de fichier contiennent des [caractères interdits](#filename-handling). Les caractères sont remplacés par le symbole `-`.
 
-* Le téléchargement de ressources à l’aide du navigateur prend uniquement en charge les listes de fichiers plats et non les hiérarchies de dossiers imbriqués. Pour charger toutes les ressources dans un dossier imbriqué, utilisez [l’appli de bureau ](#upload-assets-desktop-clients).
+* Le téléchargement de ressources à l’aide du navigateur prend uniquement en charge les listes de fichiers plats et non les hiérarchies de dossiers imbriqués. Pour charger toutes les ressources dans un dossier imbriqué, utilisez l’[appli de bureau ](#upload-assets-desktop-clients).
 
 <!-- TBD: Link to file name handling in DA docs when it is documented. 
 -->
