@@ -3,12 +3,12 @@ title: Accessibilité dans [!DNL Experience Manager Assets]
 description: Découvrez comment les fonctionnalités d’accessibilité d’ [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]  aident les utilisateurs en situation de handicap.
 contentOwner: AG
 feature: Accessibilité, Gestion des ressources
-role: Business Practitioner,Architect,Leader
+role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1915'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Les utilisateurs en situation de handicap font fréquemment appel au matériel e
 * Matériel d’assistance, y compris commandes de commutation, affichages en braille actualisables et autres périphériques d’entrée sur ordinateur.
 * Outils d’agrandissement de l’interface utilisateur.
 
-## Cas d’utilisation d’[!DNL Experience Manager Assets] accessibles {#accessible-assets-use-cases}
+## Cas d’utilisation d’[!DNL Experience Manager Assets] accessibles  {#accessible-assets-use-cases}
 
 Dans [!DNL Experience Manager], les fonctionnalités d’accessibilité répondent à deux exigences clés des utilisateurs de [!DNL Experience Manager] et de leurs clients.
 
