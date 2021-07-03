@@ -3,8 +3,8 @@ title: Automatisation du contenu pour l’intégration de Creative Cloud
 description: Génération de variantes des ressources à l’aide de l’intégration de Creative Cloud
 contentOwner: AG
 feature: Chargement,Traitement des ressources,Publication,Asset compute Microservices,Workflow
-role: Business Practitioner,Administrator
-source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
+role: User,Admin
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 0%
