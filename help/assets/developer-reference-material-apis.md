@@ -3,16 +3,16 @@ title: Références du développeur pour  [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 feature: API,API HTTP Assets
-role: Developer,Architect,Administrator
+role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 9d0fbffa0f66deb230a85fa8d09f9f3be45db3f8
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1420'
-ht-degree: 90%
+ht-degree: 97%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] Cas d’utilisation pour les développeurs, API et documents de référence  {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] Cas d’utilisation pour les développeurs, API et documents de référence {#assets-cloud-service-apis}
 
 L’article contient des recommandations, des documents de référence et des ressources pour les développeurs de [!DNL Assets] as a [!DNL Cloud Service]. Il comprend un nouveau module de chargement de ressources, des références d’API et des informations sur la prise en charge fournie dans les workflows de post-traitement.
 
@@ -66,7 +66,7 @@ L’article contient des recommandations, des documents de référence et des re
 
 ## Chargement de ressources {#asset-upload}
 
-Dans [!DNL Experience Manager] sous la forme [!DNL Cloud Service], vous pouvez charger directement les ressources dans l’espace de stockage cloud à l’aide de l’API HTTP. Les étapes de téléchargement d’un fichier binaire sont les suivantes. Exécutez ces étapes dans une application externe et non dans la JVM [!DNL Experience Manager].
+Dans [!DNL Experience Manager] as a [!DNL Cloud Service], vous pouvez charger directement les ressources dans l’espace de stockage cloud à l’aide de l’API HTTP. Les étapes de téléchargement d’un fichier binaire sont les suivantes. Exécutez ces étapes dans une application externe et non dans la JVM [!DNL Experience Manager].
 
 1. [Envoyez une requête HTTP](#initiate-upload). Cela permet d’informer le déploiement [!DNL Experience Manage] de votre intention de charger un nouveau fichier binaire.
 1. [Publiez le contenu du fichier binaire](#upload-binary) sur un ou plusieurs URI fournis par la requête de lancement.
@@ -120,8 +120,8 @@ Une seule requête peut être utilisée afin de lancer des chargements pour plus
 * `mimeType` (chaîne) : type MIME du fichier binaire correspondant, tel qu’il est fourni dans la requête de lancement. Cette valeur doit être incluse dans la requête de fin.
 * `uploadToken` (chaîne) : jeton de chargement du fichier binaire correspondant. Cette valeur doit être incluse dans la requête de fin.
 * `uploadURIs` (tableau) : liste des chaînes dont les valeurs sont des URI complets vers lesquels le contenu du fichier binaire doit être chargé (voir [Chargement d’un fichier binaire](#upload-binary)).
-* `minPartSize` (nombre) : Longueur minimale, en octets, des données pouvant être fournies à l’un des  `uploadURIs`, s’il existe plusieurs URI.
-* `maxPartSize` (nombre) : Longueur maximale, en octets, des données pouvant être fournies à l’un des  `uploadURIs`, s’il existe plusieurs URI.
+* `minPartSize` (nombre) : longueur minimale, en octets, des données pouvant être fournies à l’un des `uploadURIs`, s’il en existe plusieurs.
+* `maxPartSize`(nombre) : longueur maximale, en octets, des données pouvant être fournies à l’un des `uploadURIs`, s’il en existe plusieurs.
 
 ### Chargement d’un fichier binaire {#upload-binary}
 
@@ -242,5 +242,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
-* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+* SDK [[!DNL Experience Cloud] as a [!DNL Cloud Service]  ](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 
