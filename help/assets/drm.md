@@ -3,9 +3,9 @@ title: Gestion des droits numériques dans  [!DNL Assets]
 description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans  [!DNL Experience Manager]  as a  [!DNL Cloud Service].
 contentOwner: AG
 feature: Gestion des ressources, DRM
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: 7256300afd83434839c21a32682919f80097f376
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1345'
 ht-degree: 98%
