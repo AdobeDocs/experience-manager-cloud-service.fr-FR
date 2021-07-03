@@ -3,12 +3,12 @@ title: Téléchargement de ressources
 description: Téléchargez des ressources depuis  [!DNL Adobe Experience Manager Assets]  et activez ou désactivez la fonctionnalité de téléchargement.
 contentOwner: AG
 feature: Gestion des ressources
-role: Business Practitioner
+role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 4c3007b9e38f8a18d61b781ddbcd00bd45b67729
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -31,9 +31,9 @@ Vous pouvez télécharger des ressources Experience Manager à l’aide des mét
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=fr)
 * [Appli de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#download-assets)
 
-## Téléchargement de ressources à l’aide de l’interface [!DNL Experience Manager] {#download-assets}
+## Téléchargement de ressources à l’aide de l’interface [!DNL Experience Manager]  {#download-assets}
 
-Le service de téléchargement asynchrone fournit un framework permettant le téléchargement transparent de ressources de grande taille. Les fichiers plus petits sont téléchargés en temps réel depuis l’interface utilisateur. [!DNL Experience Manager] ne archive pas les téléchargements de ressources uniques où le fichier d’origine est téléchargé. Cette fonctionnalité permet des téléchargements plus rapides. Les fichiers volumineux sont téléchargés de manière asynchrone et [!DNL Experience Manager] sont avertis de la fin par le biais de notifications dans la boîte de réception. Voir [comprendre [!DNL Experience Manager] Boîte de réception](/help/sites-cloud/authoring/getting-started/inbox.md).
+Le service de téléchargement asynchrone fournit un framework permettant le téléchargement transparent de ressources de grande taille. Les fichiers plus petits sont téléchargés en temps réel depuis l’interface utilisateur. [!DNL Experience Manager] n’archive pas les téléchargements de ressources uniques où le fichier d’origine est téléchargé. Cette fonctionnalité permet des téléchargements plus rapides. Les fichiers volumineux sont téléchargés de manière asynchrone et [!DNL Experience Manager] notifie l’achèvement de l’opération par le biais de notifications dans la boîte de réception. Voir la section [comprendre la Boîte de réception  [!DNL Experience Manager]  ](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 ![Notification de téléchargement](assets/download-notification.png)
 
@@ -53,7 +53,7 @@ Pour télécharger des ressources, procédez comme suit :
 
    *Figure : Options de la boîte de dialogue Télécharger.*
 
-1. Dans la boîte de dialogue de téléchargement, sélectionnez les options de téléchargement de votre choix.
+1. Dans la boîte de dialogue Télécharger, sélectionnez les options de téléchargement de votre choix.
 
    | Option de téléchargement | Description |
    |---|---|
@@ -98,7 +98,7 @@ Pour permettre le téléchargement de fichiers depuis votre DAM (par exemple, lo
 
 ## Désactivation du servlet de téléchargement de ressources {#disable-asset-download-servlet}
 
-Si vous n’avez pas besoin de la fonctionnalité de téléchargement, désactivez le servlet pour éviter tout risque de déni de service. La fonction `Asset Download Servlet` peut être désactivée sur les instances [!DNL Experience Manager] d’auteur et de publication en mettant à jour la configuration du Dispatcher afin de bloquer toute demande de téléchargement de ressources. Le servlet peut également être désactivé manuellement par l’intermédiaire de la console OSGi.
+Si vous n’avez pas besoin de la fonctionnalité de téléchargement, désactivez le servlet pour éviter tout risque de déni de service. Le `Asset Download Servlet` peut être désactivé sur les instances d’auteur et de publication d’[!DNL Experience Manager] en mettant à jour la configuration du Dispatcher afin de bloquer toute demande de téléchargement de ressources. Le servlet peut également être désactivé manuellement par l’intermédiaire de la console OSGi.
 
 1. Pour bloquer les requêtes de téléchargement de ressources via une configuration de Dispatcher, modifiez la configuration `dispatcher.any` et ajoutez une nouvelle règle à la [section /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#configuring).
 
