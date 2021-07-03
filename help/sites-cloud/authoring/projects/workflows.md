@@ -2,9 +2,9 @@
 title: Utilisation des workflows de projet
 description: Plusieurs workflows de projet sont directement disponibles.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '542'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,6 @@ Selon le modèle de projet sélectionné, certains workflows sont disponibles :
 |  | **Projet simple** | **Projet de média** | **Projet de traduction** |
 |---|:-:|:-:|:-:|
 | Demander la copie |  | x |  |
-| Séance photo du produit |  | x |  |
 | Approbation de projet | x |  |  |
 | Demander le lancement | x |  |  |
 | Demander la page d’entrée | x |  |  |
@@ -48,7 +47,7 @@ Pour plus d’informations sur l’utilisation des workflows dans AEM, reportez-
 
 Cette section décrit les workflows disponibles pour les projets.
 
-## Workflow de demande de copie {#request-copy-workflow}
+## Workflow de demande de copie  {#request-copy-workflow}
 
 Ce workflow vous permet de demander un manuscrit à un utilisateur, puis de l’approuver. Pour démarrer le workflow de demande de copie :
 
