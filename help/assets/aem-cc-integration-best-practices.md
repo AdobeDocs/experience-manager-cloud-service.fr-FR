@@ -3,13 +3,13 @@ title: Bonnes pratiques pour l’intégration à [!DNL Adobe Creative Cloud]
 description: Bonnes pratiques pour intégrer un déploiement Experience Manager à Adobe Creative Cloud de façon à rationaliser les workflows de transfert de ressources et à obtenir un maximum d’efficacité.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Collaboration,Adobe Asset Link,application de bureau
-role: Architect,Business Practitioner,Administrator
+feature: Collaboration,Adobe Asset Link,Application de bureau
+role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 522d0363c0207afbed2c51e9d54d921ce9b66c70
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '3300'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Lisez ce qui suit pour savoir quelles intégrations choisir entre poste de trava
 >
 >Le partage de dossiers d’AEM vers Creative Cloud est maintenant obsolète et n’est plus traité ci-après. Adobe recommande des fonctionnalités plus récentes, telles qu’Adobe Asset Link ou l’application de bureau AEM, pour fournir aux utilisateurs créatifs un accès aux ressources gérées dans AEM.
 
-## Besoins en matière de collaboration des créatifs, spécialistes marketing et utilisateurs de DAM {#collaboration-need-of-creatives-marketers-and-dam-users}
+## Besoins en matière de collaboration des créatifs, spécialistes marketing et utilisateurs de DAM  {#collaboration-need-of-creatives-marketers-and-dam-users}
 
 | Conditions requises | Cas d’utilisation | Surfaces impliquées |
 |---|---|---|
@@ -85,7 +85,7 @@ Pour prendre en charge les cas d’utilisation de la distribution des ressources
 * **Ressources prêtes après création :** ressources prêtes à être partagées avec l’équipe élargie ou sélectionnées/approuvées par l’équipe créative pour le partage avec les équipes marketing ou métier.
 
 * **Approbation des ressources :** processus d’approbation traitant des ressources déjà transférées dans la gestion des ressources numériques (DAM), qui inclut généralement les approbations de marque, les validations juridiques, etc.
-* **Ressource finale :** ressource qui a passé l’ensemble des approbations/balisages de métadonnées et qui est prête à être utilisée par l’équipe élargie. Une telle ressource est stockée dans la gestion des ressources numériques (DAM) et est accessible à tous les utilisateurs (ou à tous les utilisateurs intéressés). Il peut être utilisé dans les canaux marketing ou par des équipes créatives pour créer des conceptions.
+* **Ressource finale :** ressource qui a passé l’ensemble des   approbations/balisages de métadonnées et qui est prête à être utilisée par l’équipe élargie. Une telle ressource est stockée dans la gestion des ressources numériques (DAM) et est accessible à tous les utilisateurs (ou à tous les utilisateurs intéressés). Il peut être utilisé dans les canaux marketing ou par des équipes créatives pour créer des conceptions.
 
 * **Mise à jour/modification mineure des ressources :** modification rapide et petite d’une ressource numérique. Cette opération est souvent effectuée en réponse à une demande de retouche ou de modification mineure, de révision ou d’approbation de fichier (par exemple, repositionnement, modification de la taille du texte, ajustement de la saturation/luminosité, couleur, etc.).
 * **Mise à jour/modification majeure des ressources :** modification d’une ressource numérique qui nécessite un travail considérable et qui doit parfois être effectuée sur une plus longue période de temps. Celle-ci implique généralement plusieurs modifications. La ressource doit être enregistrée plusieurs fois lors de la mise à jour. En règle générale, les mises à jour majeures de la ressource entraînent le passage à une étape en cours.
@@ -126,7 +126,7 @@ Quelques points importants à savoir concernant cette intégration :
 Les utilisateurs créatifs utilisant les applications Creative Cloud avec l’extension Adobe Asset Link ont accès aux ressources déjà sous licence d’Adobe Stock dans AEM et peuvent aussi utiliser le panneau Bibliothèques Creative Cloud pour rechercher, prévisualiser et obtenir des licences pour les ressources Adobe Stock.
 Les ressources d’Adobe Stock sous licence et enregistrées dans AEM sont accessibles aux équipes élargies qui accèdent au déploiement AEM Assets, tandis que les équipes créatives obtenant une licence pour des ressources d’Adobe Stock via le panneau Bibliothèques Creative Cloud y ont uniquement accès par défaut dans leur compte Creative Cloud.
 
-## À propos du stockage de ressources dans un système de gestion des ressources numériques (DAM) {#about-storing-assets-in-a-dam}
+## À propos du stockage de ressources dans un système de gestion des ressources numériques (DAM)  {#about-storing-assets-in-a-dam}
 
 Pour établir un workflow efficace entre les équipes créatives et marketing/métier, et sélectionner les meilleures fonctionnalités de prise en charge, il est important de comprendre quand et pourquoi les ressources sont stockées dans la gestion des ressources numériques (DAM).
 
@@ -167,7 +167,7 @@ Voici quelques exemples de mises à jour qui ne sont généralement pas pertinen
 * Les premières versions des ressources transférées avant qu’elles ne soient prêtes pour révision par le marketing
 * Les modifications fréquentes de la ressource par l’équipe créative pendant la phase de travail en cours et avant que l’équipe créative ne décide que la ressource est prête
 
-### Accès des utilisateurs à la gestion des ressources numériques (DAM) {#user-access-to-dam}
+### Accès des utilisateurs à la gestion des ressources numériques (DAM)  {#user-access-to-dam}
 
 AEM Assets prend en charge deux types d’utilisateurs selon leur accès au déploiement d’AEM Assets. En règle générale, les utilisateurs à l’intérieur du réseau d’entreprise (pare-feu) ont un accès direct à la gestion des ressources numériques (DAM). Les autres utilisateurs à l’extérieur du réseau d’entreprise n’auront pas d’accès direct. Le type d’utilisateur détermine les intégrations qui peuvent être utilisées du point de vue technique.
 
@@ -177,7 +177,7 @@ En règle générale, les équipes créatives internes, de même que les agences
 
 Dans ce cas, Adobe Asset Link ou l’application de bureau AEM permet d’accéder facilement aux ressources finales/approuvées et d’enregistrer les ressources préparées par les créatifs dans la gestion des ressources numériques (DAM).
 
-#### Utilisateurs créatifs sans accès à la gestion des ressources numériques (DAM) {#creative-users-without-access-to-dam}
+#### Utilisateurs créatifs sans accès à la gestion des ressources numériques (DAM)  {#creative-users-without-access-to-dam}
 
 Les agences externes et les indépendants sans accès direct à l’instance de la gestion des ressources numériques peuvent avoir besoin de l’accès aux ressources approuvées ou souhaiter ajouter leurs nouvelles créations dans la gestion des ressources numériques (DAM).
 
@@ -208,11 +208,11 @@ L’approche recommandée dans ce cas consiste à utiliser une option dans l’a
 
 Dans certains cas, il est possible que vous deviez charger simultanément un plus grand nombre de fichiers dans la gestion des ressources numériques (DAM), par exemple :
 
-* Chargement des résultats de séances photo ou de projets de plus grande envergure
+* Chargement des résultats de  séances photo ou de projets de plus grande envergure
 * Chargement de ressources fournies par les agences de création
 * Transfert de ressources sélectionnées à partir d’un plus grand ensemble si la sélection est effectuée en dehors de la gestion des ressources numériques (DAM)
 
-Notez que cette description fait référence aux chargements de fichiers du point de vue des opérations (par exemple, chaque semaine ou à chaque séance photo), comme composante normale du workflow de l’utilisateur de bureau. Les migrations de ressources de grande taille ne sont pas abordées ici.
+Notez que cette description fait référence aux chargements de fichiers du point de vue des opérations (par exemple, chaque semaine ou à chaque   séance photo), comme composante normale du workflow de l’utilisateur de bureau. Les migrations de ressources de grande taille ne sont pas abordées ici.
 
 Vous pouvez utiliser les fonctionnalités de transfert suivantes :
 
