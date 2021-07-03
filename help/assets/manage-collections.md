@@ -4,12 +4,12 @@ description: Découvrez le concept de collection dans Adobe Experience Manager A
 contentOwner: AG
 mini-toc-levels: 1
 feature: Collections,Gestion des ressources
-role: Business Practitioner
+role: User
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '2400'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -223,7 +223,7 @@ Vous pouvez ajouter une collection à une autre collection, créant ainsi une co
 >
 >Les collections dynamiques ne peuvent pas être imbriquées. En d’autres termes, elles ne peuvent pas comporter d’autres collections.
 
-## Recherches enregistrées {#saved-searches}
+## Recherches enregistrées  {#saved-searches}
 
 Dans l’interface utilisateur d’Assets, vous pouvez rechercher ou filtrer des ressources selon des règles, critères de recherche ou facettes de recherche personnalisées. Si vous enregistrez ces éléments en tant que **[!UICONTROL recherches enregistrées]**, vous pouvez y accéder ultérieurement à partir de la liste **[!UICONTROL Recherches enregistrées]** du panneau Filtrer. La création d’une recherche enregistrée entraîne celle d’une collection dynamique.
 
