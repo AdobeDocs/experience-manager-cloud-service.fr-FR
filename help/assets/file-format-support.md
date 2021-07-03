@@ -3,16 +3,16 @@ title: Formats de fichiers et types MIME pris en charge
 description: Formats de fichier et types MIME pris en charge par [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
 contentOwner: AG
 feature: Gestion des ressources,Rendus
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '821'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Formats de fichiers pris en charge [!DNL Assets] {#supported-file-formats}
+# Formats de fichiers pris en charge [!DNL Assets]  {#supported-file-formats}
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] prend en charge les fonctionnalités de base de gestion de contenu (stockage, gestion des métadonnées en ligne, contrôle de version, chargement et téléchargement, etc.) pour tout fichier binaire, quel que soit son format. [!DNL Adobe Experience Manager Assets] prend en charge un large éventail de formats de fichiers et chaque fonctionnalité de produit prend en charge différents formats.
 
@@ -106,7 +106,7 @@ Voir [Utilisation de ressources 3D dans Dynamic Media](/help/assets/dynamic-med
 | STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
 | USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
 
-## Formats [!DNL Camera RAW] {#camera-raw-formats}
+## Formats [!DNL Camera RAW]  {#camera-raw-formats}
 
 | Format de fichier | Génération de miniatures | Extraction de métadonnées | Largeur/Hauteur |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -232,5 +232,5 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 >[!MORELIKETHIS]
 >
 >* [Traitement des ressources à l’aide des microservices de ressources](asset-microservices-overview.md)
-* [Formats de fichiers pris en hcarge pour le balisage intelligent des ressources textuelles](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+* [Formats de fichiers pris en charge pour le balisage intelligent des ressources textuelles](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
