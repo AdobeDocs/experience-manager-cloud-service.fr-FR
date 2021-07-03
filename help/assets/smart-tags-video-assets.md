@@ -2,12 +2,12 @@
 title: Balisage intelligent de vos ressources vidéo
 description: Experience Manager ajoute automatiquement des balises intelligentes contextuelles et descriptives aux vidéos en utilisant [!DNL Adobe Sensei].
 feature: Balises intelligentes, Balisage
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1186'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Les balises intelligentes appliquées sont triées par ordre décroissant de [sc
 >
 >Il est conseillé de revoir ces balises générées automatiquement pour vous assurer qu’elles sont conformes à votre marque et à ses valeurs.
 
-## Balisage intelligent des vidéos existantes dans la gestion des ressources numériques (DAM) {#smart-tag-existing-videos}
+## Balisage intelligent des vidéos existantes dans la gestion des ressources numériques (DAM)  {#smart-tag-existing-videos}
 
 Les ressources vidéo présentes dans la gestion des ressources numériques (DAM) ne sont pas balisées automatiquement. Vous devez [!UICONTROL retraiter les ressources] manuellement pour générer leurs balises intelligentes.
 
@@ -105,7 +105,7 @@ Pour exclure (opt-out) la génération automatique de balises intelligentes des 
 
 ## Score de confiance {#confidence-score-video-tag}
 
-[!DNL Adobe Experience Manager] applique un seuil minimal de confiance aux balises intelligentes d’objet et d’action pour éviter toute surcharge en balises, ce qui pourrait ralentir l’indexation. Les résultats de la recherche de ressources sont classés en fonction des scores de confiance, ce qui améliore généralement ces résultats au-delà de ce qu’une inspection des balises affectées aux ressources vidéo suggèrerait. Les balises inexactes présentent souvent des scores de confiance faibles, de sorte qu’elles apparaissent rarement en haut de la liste des balises intelligentes des ressources.
+[!DNL Adobe Experience Manager] applique un seuil minimal de confiance aux balises intelligentes d’objet et d’action pour éviter toute surcharge en balises, ce qui pourrait ralentir l’indexation. Les résultats de la recherche de ressources sont classés en fonction des scores de confiance, ce qui améliore généralement ces résultats au-delà de ce qu’une inspection des balises affectées aux ressources vidéo suggérerait. Les balises inexactes présentent souvent des scores de confiance faibles, de sorte qu’elles apparaissent rarement en haut de la liste des balises intelligentes des ressources.
 
 Le seuil par défaut pour les balises d’action et d’objet dans [!DNL Adobe Experience Manager] est de 0,7 (il doit être compris entre 0 et 1). Si certaines ressources vidéo ne sont pas munies d’une balise spécifique, c’est que l’algorithme donne un score de confiance inférieur à 70 % d’assurance pour les balises possédant une prédiction. Le seuil par défaut n’est pas systématiquement optimal pour tous les utilisateurs. Vous pouvez donc modifier la valeur du score de confiance dans la configuration OSGI.
 
