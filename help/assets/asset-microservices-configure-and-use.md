@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Microservices Asset Compute,Workflow,Traitement des ressources
 role: Architect,Administrator
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
-source-wordcount: '2635'
-ht-degree: 94%
+source-wordcount: '2678'
+ht-degree: 89%
 
 ---
 
@@ -181,7 +181,7 @@ Pour vérifier que les ressources sont traitées, prévisualisez les rendus gén
 
 ## Workflows de post-traitement {#post-processing-workflows}
 
-S’il s’avère qu’un traitement supplémentaire des ressources est nécessaire, mais qu’il ne peut pas être effectué à l’aide des profils de traitement, des workflows de post-traitement peuvent être ajoutés à la configuration. Cela permet d’ajouter un traitement entièrement personnalisé en plus du traitement configurable à l’aide des microservices de ressources.
+S’il s’avère qu’un traitement supplémentaire des ressources est nécessaire, mais qu’il ne peut pas être effectué à l’aide des profils de traitement, des workflows de post-traitement peuvent être ajoutés à la configuration. Le post-traitement permet d’ajouter un traitement entièrement personnalisé en plus du traitement configurable à l’aide des microservices de ressources.
 
 Les workflows de post-traitement, s’ils sont configurés, sont automatiquement exécutés par [!DNL Experience Manager] une fois le traitement des microservices terminé. Il n’est pas nécessaire d’ajouter manuellement des lanceurs de workflows pour les déclencher. Voici quelques exemples :
 
@@ -196,38 +196,41 @@ Pour ajouter une configuration de workflow de post-traitement à [!DNL Experienc
 * Ajoutez l’étape [!UICONTROL Processus terminé du workflow Ressource de mise à jour DAM] à la fin. En ajoutant cette étape, vous êtes certain que Experience Manager sait à quel moment le traitement se termine et la ressource peut être marquée comme traitée ; en d’autres termes, *Nouvelle* s’affiche sur la ressource.
 * Création d’une configuration pour le service d’exécution de workflow personnalisé, lequel permet de configurer l’exécution d’un modèle de workflow de post-traitement selon le chemin d’accès (emplacement du dossier) ou une expression régulière.
 
+Pour plus d’informations sur les étapes de workflow standard pouvant être utilisées dans le workflow de post-traitement, voir [Étapes du workflow de post-traitement](developer-reference-material-apis.md#post-processing-workflows-steps) (en anglais) dans la documentation de référence du développeur.
+
 ### Création de modèles de workflow de post-traitement {#create-post-processing-workflow-models}
 
 Les modèles de workflow de post-traitement sont des modèles de workflow [!DNL Experience Manager]standard. Créez des modèles différents si un autre traitement doit être exécuté pour différents emplacements de référentiel ou types de ressource.
 
-Les étapes de traitement doivent être ajoutées en fonction des besoins. Vous pouvez utiliser n’importe quelle étape prise en charge, ainsi que n’importe quelle étape de workflow implémentée sur mesure.
+Les étapes de traitement sont ajoutées si nécessaire. Vous pouvez utiliser à la fois les étapes prises en charge disponibles, ainsi que toute étape de workflow implémentée sur mesure.
 
 Assurez-vous que la dernière étape de chaque workflow de post-traitement est `DAM Update Asset Workflow Completed Process`. La dernière étape permet de s’assurer qu’Experience Manager sait quand le traitement des ressources est terminé.
 
 ### Configuration de l’exécution du workflow de post-traitement {#configure-post-processing-workflow-execution}
 
-Une fois le traitement des ressources chargées terminé par les microservices de ressources, vous pouvez définir le post-traitement afin de traiter davantage certaines ressources. Pour configurer le post-traitement à l’aide de modèles de workflow, vous pouvez effectuer l’une des opérations suivantes :
+Une fois que les microservices de ressources ont terminé le traitement des ressources chargées, vous pouvez définir un workflow de post-traitement pour continuer le traitement des ressources. Pour configurer le post-traitement à l’aide de modèles de workflow, vous pouvez effectuer l’une des opérations suivantes :
 
-* Configurez le service d’exécution de workflow personnalisé.
-* Appliquez un modèle de workflow dans le dossier [!UICONTROL Propriétés].
+* [Appliquez un modèle de workflow dans Propriétés](#apply-workflow-model-to-folder) du dossier.
+* [Configurez le service](#configure-custom-workflow-runner-service) d’exécution de workflow personnalisé.
 
-Cet outil d’exécution de workflow DAM personnalisé (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) est un service OSGi qui propose deux options de configuration :
+#### Application d’un modèle de workflow à un dossier {#apply-workflow-model-to-folder}
 
-* Workflows de post-traitement par chemin d’accès (`postProcWorkflowsByPath`) : plusieurs modèles de workflow peuvent être répertoriés en fonction de différents chemins de référentiel. Séparez les chemins et les modèles à l’aide d’un deux-points. Les chemins de référentiel simples sont pris en charge. Mappez-les à un modèle de workflow dans le chemin `/var`. Par exemple : `/content/dam/my-brand:/var/workflow/models/my-workflow`.
-* Workflows de post-traitement par expression (`postProcWorkflowsByExpression`) : plusieurs modèles de workflows peuvent être répertoriés en fonction de différentes expressions régulières. Les expressions et les modèles doivent être séparés par un signe « deux-points ». L’expression régulière doit pointer directement vers le nœud Ressource et non vers l’un des rendus ou fichiers. Par exemple : `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
-
->[!NOTE]
->
->La configuration du service d’exécution de workflow personnalisé est la configuration d’un service OSGi. Pour en savoir plus sur le déploiement d’une configuration OSGi, voir [Déploiement sur Experience Manager](/help/implementing/deploying/overview.md).
->Contrairement aux déploiements des Managed Services et On-Premise Services d’[!DNL Experience Manager], la console web OSGi n’est pas directement disponible dans les déploiements Cloud Service.
-
-Pour appliquer un modèle de workflow dans le dossier [!UICONTROL Propriétés], procédez comme suit :
+Pour les cas d’utilisation standard de post-traitement, pensez à utiliser la méthode pour appliquer un workflow à un dossier. Pour appliquer un modèle de workflow dans le dossier [!UICONTROL Propriétés], procédez comme suit :
 
 1. Créer un modèle de processus.
 1. Sélectionnez un dossier, cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils, puis cliquez sur l’onglet **[!UICONTROL Traitement des ressources]**.
 1. Sous **[!UICONTROL Processus de démarrage automatique]**, sélectionnez le processus requis, fournissez le titre du processus, puis enregistrez les modifications.
 
-Pour plus d’informations sur les étapes de workflow standard pouvant être utilisées dans le workflow de post-traitement, voir [Étapes du workflow de post-traitement](developer-reference-material-apis.md#post-processing-workflows-steps) (en anglais) dans la documentation de référence du développeur.
+   ![Application d’un workflow de post-traitement à un dossier dans ses propriétés](assets/post-processing-profile-workflow-for-folders.png)
+
+#### Configuration du service d’exécution de processus personnalisé {#configure-custom-workflow-runner-service}
+
+Vous pouvez configurer le service d’exécution de workflow personnalisé pour les configurations avancées qui ne peuvent pas être réalisées facilement en appliquant un workflow à un dossier. Par exemple, un workflow qui utilise une expression régulière. Le gestionnaire de processus personnalisé de la gestion des actifs numériques Adobe CQ (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) est un service OSGi. Il propose les deux options de configuration suivantes :
+
+* Workflows de post-traitement par chemin d’accès (`postProcWorkflowsByPath`) : plusieurs modèles de workflow peuvent être répertoriés en fonction de différents chemins de référentiel. Séparez les chemins et les modèles à l’aide d’un deux-points. Les chemins de référentiel simples sont pris en charge. Mappez-les à un modèle de workflow dans le chemin `/var`. Par exemple : `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* Workflows de post-traitement par expression (`postProcWorkflowsByExpression`) : plusieurs modèles de workflows peuvent être répertoriés en fonction de différentes expressions régulières. Les expressions et les modèles doivent être séparés par un signe « deux-points ». L’expression régulière doit pointer directement vers le nœud Ressource et non vers l’un des rendus ou fichiers. Par exemple : `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
+
+Pour savoir comment déployer une configuration OSGi, voir [déploiement sur [!DNL Experience Manager]](/help/implementing/deploying/overview.md).
 
 ## Bonnes pratiques et restrictions {#best-practices-limitations-tips}
 
