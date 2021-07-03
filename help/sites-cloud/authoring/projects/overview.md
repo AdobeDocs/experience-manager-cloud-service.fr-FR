@@ -2,10 +2,10 @@
 title: Projets
 description: Les projets vous permettent de regrouper des ressources dans une seule entité dont l’environnement commun et partagé facilite la gestion de vos projets.
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 100%
+source-wordcount: '1256'
+ht-degree: 96%
 
 ---
 
@@ -42,7 +42,7 @@ Dans AEM, la console Projets permet d’accéder à vos projets et de les gérer
 * L’option **Activer/désactiver les projets actifs** vous permet de basculer entre tous les projets et uniquement ceux qui sont actifs.
 * L’option **Afficher la vue Statistiques** permet d’afficher les statistiques de projet relatives à la réalisation de tâches.
 
-## Mosaïques de projet {#project-tiles}
+## Mosaïques de projet  {#project-tiles}
 
 Dans la console Projets, vous devez associer différents types d’informations à vos projets. Elles sont connues sous le nom de **mosaïques**. Toutes les mosaïques, ainsi que le type d’informations qu’elles contiennent, sont décrites dans cette section.
 
@@ -156,7 +156,7 @@ Les tâches vous permettent de surveiller le statut de toutes les activités ass
 AEM est fourni avec trois modèles prêts à l’emploi :
 
 * Un projet simple : un modèle de référence pour tous les projets auxquels les autres catégories ne sont pas adaptées. Il comprend trois rôles de base (propriétaires, éditeurs et observateurs) et quatre workflows (Approbation de projet, Demander un lancement, Demander la page d’entrée et Demander un courrier électronique).
-* Un projet de média : un modèle de référence pour des activités multimédias. Il comprend plusieurs rôles de projet relatifs aux médias (photographes, éditeurs, rédacteurs, concepteurs, propriétaires et observateurs). Il comprend également deux workflows liés au contenu multimédia : Demander la copie (pour demander et réviser du texte) et Projet de séance photo du produit (pour gérer des photos relatives à des produits).
+* Un projet de média : un modèle de référence pour des activités multimédias. Il comprend plusieurs rôles de projet relatifs aux médias (photographes, éditeurs, rédacteurs, concepteurs, propriétaires et observateurs). Il demande également la copie pour demander et réviser du texte.
 * Un [projet de traduction](/help/sites-cloud/administering/translation/overview.md) : modèle de référence pour gérer des activités liées à la traduction. Il prévoit trois rôles de base (propriétaires, éditeurs et observateurs). Il comprend deux workflows accessibles dans l’interface utilisateur Workflows.
 
 En fonction du modèle sélectionné, plusieurs options s’offrent à vous, notamment en termes de rôles utilisateur et de workflows.
@@ -173,7 +173,7 @@ Pour vous permettre de gérer les autorisations de sécurité et de contrôle, t
 | Rôle | Description | Autorisations | Appartenance à un groupe |
 |---|---|---|---|
 | Observateur | Un utilisateur disposant de ce rôle peut afficher les détails du projet, y compris son statut. | Droits en lecture seule sur un projet | Groupe `workflow-users` |
-| Éditeur | Un utilisateur disposant de ce rôle peut charger et modifier le contenu d’un projet. | Accès en lecture et en écriture à un projet, aux métadonnées associées et aux ressources connexes ; droits permettant à l’utilisateur de charger une liste de plans ou une séance photo et de passer en revue et d’approuver des ressources ; droits en écriture sur /etc/commerce ; droits de modification sur un projet spécifique | Groupe workflow-users |
+| Éditeur | Un utilisateur disposant de ce rôle peut charger et modifier le contenu d’un projet. | Accès en lecture et en écriture sur un projet, les métadonnées associées et les ressources associées ; des privilèges permettant de charger une liste de plans, de réviser et d’approuver des ressources ; autorisation d’écriture sur /etc/commerce ; modification de l’autorisation sur un projet spécifique | Groupe workflow-users |
 | Propriétaire | Un utilisateur disposant de ce rôle peut lancer un projet. Le propriétaire peut créer un projet, lancer une tâche pour un projet et déplacer les ressources approuvées vers le dossier Production. Toutes les autres tâches de projet peuvent également être visualisées et implémentées par le propriétaire. | Droits en écriture sur `/etc/commerce` | Groupe `dam-users` (pour pouvoir créer un projet), groupe administrateurs-projet (pour pouvoir déplacer des ressources) |
 
 >[!NOTE]
