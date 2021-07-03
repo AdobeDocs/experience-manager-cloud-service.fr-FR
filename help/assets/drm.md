@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Gestion des ressources, DRM
 role: Business Practitioner,Administrator
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
 source-wordcount: '1345'
 ht-degree: 98%
@@ -14,7 +14,7 @@ ht-degree: 98%
 
 # Gestion des droits numériques des ressources {#digital-rights-management-in-assets}
 
-Les ressources numériques sont souvent associées à une licence qui prévoit les conditions et la durée de leur utilisation. Dans la mesure où [!DNL Adobe Experience Manager Assets] est entièrement intégré à la plate-forme [!DNL Experience Manager], vous pouvez contrôler efficacement les informations sur l’expiration et l’état des ressources. Vous pouvez également associer des informations de licence à des ressources.
+Les ressources numériques sont souvent associées à une licence qui prévoit les conditions et la durée de leur utilisation. Étant donné que [!DNL Adobe Experience Manager Assets] est entièrement intégré à la plateforme [!DNL Experience Manager], vous pouvez gérer efficacement les informations d’expiration et d’état des ressources. Vous pouvez également associer des informations de licence à des ressources.
 
 ## Expiration de ressources {#asset-expiration}
 
@@ -36,7 +36,7 @@ Vous pouvez consulter l’état d’expiration d’une ressource aux emplacement
 
 Vous pouvez rechercher des ressources arrivées à expiration, y compris les sous-ressources expirées dans le panneau de recherche.
 
-1. Dans la console [!DNL Assets], cliquez sur **[!UICONTROL Rechercher]** dans la barre d’outils pour afficher la zone de recherche [!DNL Experience Manager].
+1. Dans la console [!DNL Assets], cliquez sur l’option **[!UICONTROL Rechercher]** de la barre d’outils pour afficher la zone [!DNL Experience Manager].
 
 1. Avec le curseur dans la zone Omni-recherche, sélectionnez la touche `Enter` pour afficher la page des résultats de la recherche.
 
@@ -72,7 +72,7 @@ Pour que la console [!DNL Assets] affiche les ressources composites référencé
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
-## États d’une ressource {#asset-states}
+## États d’un élément {#asset-states}
 
 La console [!DNL Assets] peut afficher différents états des ressources. En fonction de l’état actuel d’une ressource donnée, le mode Carte affiche un libellé décrivant son état (par exemple, expiré, modifié, approuvé, rejeté, etc.).
 
