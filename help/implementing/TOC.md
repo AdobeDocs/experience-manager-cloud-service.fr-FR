@@ -5,10 +5,10 @@ breadcrumb-title: Guide d’implémentation
 user-guide-description: Découvrez comment personnaliser votre déploiement d’Experience Manager as a Cloud Service, y compris des rubriques sur le déploiement et le développement.
 feature: Outils de développement
 role: Developer, Architect
-source-git-commit: 9e64772ac26888e5c1f4c77ffce6048286357e93
+source-git-commit: cde8552925a6b0ceb2c30694f127233b05dcc73c
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 96%
+source-wordcount: '885'
+ht-degree: 99%
 
 ---
 
@@ -55,13 +55,13 @@ ht-degree: 96%
       + [Annulation de l’application d’une liste d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
       + [Suppression d’une liste autorisée d’adresses IP](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [Contrôle du statut d’une liste d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
-   + [FAQ sur Cloud Manager](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
+   + [FAQ relative à Cloud Manager](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
 + Gestion de votre code {#managing-code}
    + [Gestion des versions du projet Maven](cloud-manager/project-version-handling.md)
    + [Accès à Git](cloud-manager/accessing-git.md)
    + [Intégration de Git à Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
    + [Utilisation de plusieurs référentiels Git source](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
-   + [Configuration du développement de l’équipe d’entreprise pour AEM en tant que Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
+   + [Configuration du développement de l’équipe Grands comptes pour AEM as a Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
 + Développement pour AEM as a Cloud Service {#developing}
    + [Structure de projet AEM](developing/introduction/aem-project-content-package-structure.md)
    + [Module de structure du référentiel de projet AEM](developing/introduction/repository-structure-package.md)
@@ -70,7 +70,7 @@ ht-degree: 96%
    + [Journalisation](developing/introduction/logging.md)
    + [Configurations et l’explorateur de configurations](developing/introduction/configurations.md)
    + [Fondements techniques d’AEM](/help/implementing/developing/introduction/aem-technologies.md)
-   + [API d’AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)
+   + [Documents de référence sur les API](/help/implementing/developing/reference-materials.md)
    + [Génération de jetons d’accès pour les API côté serveur](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + [Couplage et découplage dans AEM](developing/headful-headless.md)
    + Développement full stack avec AEM {#full-stack}
@@ -103,10 +103,9 @@ ht-degree: 96%
          + [Implémentation d’un évaluateur de prédicats personnalisé](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
       + [Pages d’erreur personnalisées](/help/implementing/developing/introduction/custom-error-page.md)
       + [Types de nœuds AEM](/help/implementing/developing/introduction/node-types.md)
-      + [Instructions relatives aux API Java](/help/implementing/developing/introduction/java-api-guidelines.md)
    + Gestion de l’expérience découplée {#headless}
       + [Le découplage et AEM](developing/headless/introduction.md)
-      + [Parcours de développement sans tête](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
+      + [Parcours de développement découplé](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html?lang=fr)
       + Guides de prise en main {#getting-started}
          + [Présentation](developing/headless/getting-started/introduction.md)
          + [Création d’une configuration](developing/headless/getting-started/create-configuration.md)
@@ -147,7 +146,7 @@ ht-degree: 96%
       + [Routage de modèle](developing/hybrid/routing.md)
       + [Composant RemotePage](developing/hybrid/remote-page.md)
       + [Modification d’une SPA externe dans AEM](developing/hybrid/editing-external-spa.md)
-      + [Composants composites dans SPA](developing/hybrid/composite-components.md)
+      + [Composants composites dans les SPA](developing/hybrid/composite-components.md)
       + [Rendu côté serveur](developing/hybrid/ssr.md)
       + [Activation de l’exportateur JSON pour un composant](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [Intégration de Launch](developing/hybrid/launch-integration.md)
@@ -158,7 +157,7 @@ ht-degree: 96%
    + [Outil AEM Repo](/help/implementing/developing/tools/repo-tool.md)
    + [Utilisation de CRXDE Lite](/help/implementing/developing/tools/crxde.md)
    + [L’externaliseur de liens](/help/implementing/developing/tools/externalizer.md)
-+ Personnalisation {#personalization}
++ Personnalisation  {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [Configuration de ContextHub](developing/personalization/configuring-contexthub.md)
    + [Ajout de ContextHub aux pages](developing/personalization/adding-contexthub.md)
