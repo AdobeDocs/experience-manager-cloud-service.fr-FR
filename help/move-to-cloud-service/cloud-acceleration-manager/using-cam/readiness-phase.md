@@ -4,9 +4,9 @@ description: Cette page présente un aperçu de la phase de préparation de Clou
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 991ead30264d40bc222b852aa1578787bc27bee3
+source-git-commit: ed196db516a112dad8d6ac9a2917f0a90a0195f1
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '515'
 ht-degree: 4%
 
 ---
@@ -79,17 +79,17 @@ Consultez les cartes suivantes disponibles sur la page Rapport d’analyse des b
 
 #### Propriétés du rapport {#report-properties}
 
-Cette carte fournit des informations sur les propriétés du rapport, telles que la date du rapport, la durée, les filtres, la date de téléchargement et les détails d’Adobe Experience Manager (AEM).
+La carte **Propriétés du rapport** fournit des informations sur les propriétés du rapport, telles que la date du rapport, la durée, les filtres, la date de transfert et les détails d’Adobe Experience Manager (AEM).
 
 ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
 
 #### Aperçu du rapport {#report-overview}
 
-Cette fiche présente les résultats du rapport
+Cette carte **Aperçu du rapport** fournit les résultats du rapport, comme illustré dans la figure ci-dessous.
 
 ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
-Cliquez sur ce rapport pour ouvrir l’onglet **Rapport**, comme illustré dans la figure ci-dessous.
+Cliquez sur ce rapport pour ouvrir l’onglet **Rapport**.
 
 ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
 
@@ -121,7 +121,7 @@ Consultez cette section pour découvrir la carte de l’activité Planification 
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
 
-## Suite {#whats-next}
+## Et après ? {#whats-next}
 
 Une fois que vous avez appris à vous connecter à Cloud Acceleration Manager et à créer un projet, vous êtes prêt à passer à l’étape suivante, à l’aide de la phase de mise en oeuvre.
 
