@@ -4,9 +4,9 @@ description: Cette page présente un aperçu de la phase de préparation de Clou
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ed196db516a112dad8d6ac9a2917f0a90a0195f1
+source-git-commit: b5b6a4a84c57805770ec1c72741c2d56d4711309
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '594'
 ht-degree: 4%
 
 ---
@@ -102,12 +102,23 @@ Vous pouvez filtrer le rapport selon son importance, son sous-type ou son nombre
 
 #### Évaluation des bonnes pratiques {#best-practices-assessment}
 
-Cette carte fournit une
+L’option Évaluation des bonnes pratiques fournit une évaluation de votre instance d’AEM actuelle et fournit des conseils sur les prochaines étapes pour adopter AEM bonnes pratiques. Vous pouvez consulter les informations suivantes dans cet onglet :
+
+* Présentation de l’instance AEM
+* Composants et modèles personnalisés
+* Autres résultats
+* Ralentir les requêtes
+* Tâches de maintenance
 
 #### Évaluation de la complexité de la migration {#migration-complexity-assessment}
 
-Cette carte fournit les
+L’option Évaluation de la complexité de la migration permet d’évaluer la complexité de la migration de la mise en oeuvre d’AEM existante vers AEM en tant que Cloud Service. Vous pouvez consulter les informations suivantes dans cet onglet :
 
+* Présentation de l’instance AEM
+* Évaluation
+* Considérations relatives à la migration de contenu
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## Utilisation de la carte Planification et configuration {#planning-setup}
 
@@ -119,10 +130,8 @@ Consultez cette section pour découvrir la carte de l’activité Planification 
 
 1. Un carrousel de contenu contenant des informations pertinentes pour cette phase du parcours de migration s’affiche.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ## Et après ? {#whats-next}
 
 Une fois que vous avez appris à vous connecter à Cloud Acceleration Manager et à créer un projet, vous êtes prêt à passer à l’étape suivante, à l’aide de la phase de mise en oeuvre.
-
-
