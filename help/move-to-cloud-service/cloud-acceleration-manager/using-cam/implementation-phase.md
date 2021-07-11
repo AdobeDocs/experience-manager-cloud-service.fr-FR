@@ -4,10 +4,10 @@ description: Cette page présente un aperçu de la phase de mise en oeuvre dans 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
+source-git-commit: 8063afa2df9f5007f686afcc4162abde56c188ef
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -75,7 +75,7 @@ Consultez cette section pour découvrir AEM comme carte d’activité Carte de d
 
 1. Un carrousel de contenu contenant des informations pertinentes pour cette phase du parcours de migration s’affiche.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-7.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/aem-deployment-card.png)
 
 
 ## Utilisation de la carte de transfert de contenu {#content-transfer}
@@ -90,10 +90,10 @@ Suivez cette section pour explorer la carte d’activité Transfert de contenu :
 
 1. Un carrousel de contenu contenant des informations pertinentes pour cette phase du parcours de migration s’affiche.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-9.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/content-transfertool-card.png)
 
    >[!NOTE]
-   >Veuillez consulter les [conditions préalables](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) et les [bonnes pratiques et instructions](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en) avant d’utiliser l’outil de transfert de contenu.
+   >Veuillez consulter les [conditions préalables](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) et les [bonnes pratiques et instructions](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=fr) avant d’utiliser l’outil de transfert de contenu.
 
 ### Estimation de l’activité de l’outil de transfert de contenu {#calculating}
 
@@ -103,6 +103,6 @@ Pour estimer la taille du référentiel AEM, vous pouvez exécuter le rapport Ut
 
 Vous pouvez également estimer la taille des chemins de référentiel spécifiques à l’aide du paramètre `path`, par exemple `http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`.
 
-## Suite {#whats-next}
+## Et après ? {#whats-next}
 
 Une fois que vous avez appris à vous connecter à Cloud Acceleration Manager et à utiliser la phase de mise en oeuvre, vous êtes prêt à passer à l’étape suivante, Utilisation de la phase de GoLive.
