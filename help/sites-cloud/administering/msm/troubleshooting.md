@@ -2,9 +2,9 @@
 title: Résolution des problèmes et FAQ concernant MSM
 description: Découvrez comment résoudre les problèmes les plus courants liés à MSM et comment obtenir des réponses aux questions les plus courantes à ce sujet.
 feature: Multi Site Manager
-role: Administrator
+role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 100%
@@ -58,13 +58,13 @@ La connaissance de ces propriétés peut également s’avérer utile pour inter
 
 Vous trouverez ci-dessous quelques questions fréquentes concernant MSM et la Live Copy.
 
-### Pourquoi certaines propriétés (par exemple le titre, les annotations) ne sont-elles pas mises à jour lors d’un déploiement MSM ? {#missing-properties}
+### Pourquoi certaines propriétés (par exemple le titre, les annotations) ne sont-elles pas mises à jour lors d’un déploiement MSM ?  {#missing-properties}
 
 Les actions de synchronisation MSM sont hautement configurables. Les propriétés ou composants qui sont modifiés lors des déploiements dépendent directement des propriétés de ces configurations.
 
 Consultez [cet article](best-practices.md) pour plus d’informations à ce sujet.
 
-### Comment puis-je supprimer les autorisations de déploiement pour un groupe d’auteurs ? {#remove-rollout-permissions}
+### Comment puis-je supprimer les autorisations de déploiement pour un groupe d’auteurs ?  {#remove-rollout-permissions}
 
 Aucun privilège de **déploiement** ne peut être défini ou supprimé pour les entités d’AEM (utilisateurs ou groupes).
 
@@ -73,7 +73,7 @@ Vous pouvez cependant :
 * modifier l’interface utilisateur du produit pour masquer les actions de déploiement pour une entité de sécurité donnée ;
 * supprimer les privilèges d’écriture de l’arborescence Live Copy pour les auteurs qui ne sont pas autorisés à procéder à un déploiement.
 
-### Pourquoi les pages Live Copy présentent-elles le suffixe « _msm_move » ? {#moved-pages}
+### Pourquoi les pages Live Copy présentent-elles le suffixe « _msm_move » ?  {#moved-pages}
 
 Si une page de plan est déployée, elle mettra à jour sa page Live Copy ou créera une page Live Copy si elle n’existait pas encore (par exemple, lorsqu’elle est déployée pour la première fois ou que la page Live Copy a été supprimée manuellement).
 
