@@ -2,12 +2,12 @@
 title: Visionneuses d’images
 description: Découvrez comment utiliser des visionneuses d’images dans Dynamic Media.
 feature: Visionneuses d’images
-role: Business Practitioner
+role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2050'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Par exemple, supposons que vous souhaitez présenter les images d’une casquett
 >
 >Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources avec l’interface utilisateur tactile](/help/assets/manage-digital-assets.md).
 
-## Démarrage rapide : Visionneuses d’images {#quick-start-image-sets}
+## Démarrage rapide : Visionneuses d’images  {#quick-start-image-sets}
 
 Pour démarrer rapidement :
 
@@ -43,7 +43,7 @@ Pour démarrer rapidement :
 
 1. [Chargez les images sources originales pour plusieurs vues](#uploading-assets-in-image-sets).
 
-   Chargez les images pour vos visionneuses d’images. N’oubliez pas que les utilisateurs peuvent effectuer un zoom sur les images dans la visionneuse d’images. Par conséquent, choisissez soigneusement vos images. Assurez-vous que la taille des images est d’au moins 2 000 pixels. Experience Manager Assets prend en charge de nombreux formats de fichier image, mais les formats sans perte TIFF, PNG et EPS sont recommandés.
+   Chargez les images pour vos visionneuses d’images. N’oubliez pas que les utilisateurs peuvent effectuer un zoom sur les images dans la visionneuse d’images. Par conséquent, choisissez soigneusement vos images. Assurez-vous que les images font au moins 2 000 pixels dans leur plus grande dimension. Experience Manager Assets prend en charge de nombreux formats de fichier image, mais les formats sans perte TIFF, PNG et EPS sont recommandés.
 
 1. [Créez une visionneuse d’images](#creating-image-sets).
 
@@ -84,7 +84,7 @@ Si vous rencontrez des problèmes lors de la création des visionneuses, voir Im
 
 ## Chargement de ressources pour les visionneuses d’images {#uploading-assets-in-image-sets}
 
-Commencez par charger les ressources d’images pour les visionneuses d’images. N’oubliez pas que les utilisateurs peuvent effectuer un zoom sur les images dans la visionneuse d’images. Par conséquent, choisissez soigneusement vos images. Assurez-vous que les images font au moins 2 000 pixels dans leur taille la plus grande pour un détail de zoom optimal. Dynamic Media peut générer des images faisant jusqu’à 25 mégapixels chacune. Par exemple, vous pouvez utiliser une image de 5 000 x 5 000 mégapixels ou toute autre combinaison de taille pouvant atteindre 25 mégapixels.
+Commencez par charger les ressources d’images pour les visionneuses d’images. N’oubliez pas que les utilisateurs peuvent effectuer un zoom sur les images dans la visionneuse d’images. Par conséquent, choisissez soigneusement vos images. Assurez-vous que les images font au moins 2 000 pixels dans leur plus grande dimension pour obtenir un détail de zoom optimal. Dynamic Media peut générer des images faisant jusqu’à 25 mégapixels chacune. Par exemple, vous pouvez utiliser une image de 5 000 x 5 000 mégapixels ou toute autre combinaison de taille pouvant atteindre 25 mégapixels.
 
 Les visionneuses d’images prennent en charge de nombreux formats de fichier image, mais les formats sans perte TIFF, PNG et EPS sont recommandés.
 
@@ -94,9 +94,9 @@ Vous pouvez charger des images pour les visionneuses d’images comme vous le fe
 
 Avant de créer une visionneuse d’images, assurez-vous que la taille et le format des images sont corrects.
 
-Pour créer une visionneuse d’images à plusieurs vues, vous avez besoin d’images qui montrent un élément depuis différents points de vue ainsi que différents aspects du même élément. L’objectif est de mettre en évidence les fonctionnalités importantes d’un élément afin que les visiteurs aient une vue d’ensemble complète de son apparence ou de ce qu’il fait.
+Pour créer une visionneuse d’images à plusieurs vues, vous avez besoin d’images qui montrent un élément depuis différents points de vue ainsi que différents aspects du même élément. L’objectif est de mettre en avant les fonctionnalités importantes d’un élément afin que les utilisateurs aient un tableau complet de son apparence et son fonctionnement.
 
-Comme les utilisateurs peuvent zoomer sur les images dans les visionneuses d’images, assurez-vous que la taille la plus grande des images est d’au moins 2 000 pixels. Experience Manager Assets prend en charge de nombreux formats de fichier image, mais les formats sans perte TIFF, PNG et EPS sont recommandés.
+Comme les utilisateurs peuvent zoomer sur les images dans les visionneuses d’images, assurez-vous que la plus grande dimension des images comporte au moins 2000 pixels. Experience Manager Assets prend en charge de nombreux formats de fichier image, mais les formats sans perte TIFF, PNG et EPS sont recommandés.
 
 >[!NOTE]
 >
@@ -123,7 +123,7 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
 >
 >Les visionneuses d’images ne sont pas prises en charge pour les ressources dont le nom de fichier contient une virgule « , ».
 
-**Pour créer une visionneuse d’images:**
+**Pour créer une visionneuse d’images :**
 
 1. Dans Adobe Experience Manager, appuyez sur le logo d’Experience Manager pour accéder à la console de navigation globale.
 1. Appuyez sur **[!UICONTROL Navigation > Ressources]**. Naviguez jusqu’à l’emplacement où vous souhaitez créer une visionneuse d’images, puis appuyez sur **[!UICONTROL Créer > Visionneuse d’images]** pour ouvrir la page de l’éditeur de visionneuse d’images.
@@ -206,7 +206,7 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
 * Appliquer des paramètres prédéfinis de visionneuse.
 * Supprimer la visionneuse d’images.
 
-**Pour modifier les visionneuses d’images:**
+**Pour modifier les visionneuses d’images :**
 
 1. Effectuez l’une des opérations suivantes :
 
