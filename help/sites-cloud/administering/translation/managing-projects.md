@@ -2,9 +2,9 @@
 title: Gestion de projets de traduction
 description: Découvrez comment créer et gérer des projets de traduction automatique et humaine dans AEM.
 feature: Copie de la langue
-role: Administrator
+role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '3827'
 ht-degree: 100%
@@ -309,7 +309,7 @@ Le tableau ci-dessous décrit les différents statuts qu’une tâche ou un él�
 
 Pour afficher le statut des différents fichiers de la tâche, cliquez ou appuyez sur le bouton de sélection de la mosaïque.
 
-### Définition du délai des tâches de traduction {#setting-the-due-date-of-translation-jobs}
+### Définition du délai des tâches de traduction  {#setting-the-due-date-of-translation-jobs}
 
 Spécifiez la date à laquelle le fournisseur de traduction doit renvoyer les fichiers traduits. La définition du délai ne fonctionne correctement que lorsque le fournisseur de traduction auquel vous faites appel prend en charge cette fonctionnalité.
 
