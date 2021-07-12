@@ -2,9 +2,9 @@
 title: Configuration de la structure d’intégration de traduction
 description: Découvrez comment configurer la structure d’intégration de traduction pour l’intégrer à des services de traduction tiers.
 feature: Copie de la langue
-role: Administrator
+role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1383'
 ht-degree: 100%
@@ -45,7 +45,7 @@ Vous pouvez créer plusieurs configurations de cloud pour le même connecteur, s
 
 Une fois que vous avez configuré une connexion, vous pouvez créer la configuration de la structure d’intégration de traduction qui l’utilise.
 
-## Création d’une configuration de l’intégration de traduction {#creating-a-translation-integration-configuration}
+## Création d’une configuration de l’intégration de traduction  {#creating-a-translation-integration-configuration}
 
 Créez une configuration de structure d’intégration de traduction pour spécifier comment traduire le contenu. La configuration contient les informations suivantes :
 
