@@ -2,16 +2,16 @@
 title: Assistant Copie de la langue
 description: Apprenez à utiliser l’assistant Copie de la langue dans AEM.
 feature: Copie de la langue
-role: Administrator
+role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 100%
 
 ---
 
-# Assistant Copie de la langue {#language-copy-wizard}
+# Assistant Copie de la langue  {#language-copy-wizard}
 
 L’assistant Copie de la langue est une expérience guidée pour créer et gérer la structure du contenu multilingue. L’assistant facilite et accélère la création d’une copie de langue.
 
