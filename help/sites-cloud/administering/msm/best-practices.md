@@ -2,12 +2,12 @@
 title: Bonnes pratiques MSM
 description: Découvrez les bonnes pratiques compilées par les équipes d’ingénierie et de recherche d’Adobe pour vous aider à maîtriser AEM Multi Site Manager (MSM).
 feature: Multi Site Manager
-role: Administrator
+role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 184de9c1391ade3abbf2c6d73f09a324e6fa7e3e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1436'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Lors de la création d’un site avec une Live Copy, il est pratique de créer 
 
 >[!NOTE]
 >
-> Notez que les groupes d’utilisateurs fermés dans l’onglet Autorisations ne peuvent pas être déployés sur des Live Copies à partir de plans directeurs. Veuillez en tenir compte lors de la configuration de Live Copy.
+> Notez que les groupes d’utilisateurs fermés dans l’onglet Autorisations ne peuvent pas être déployés dans des Live Copies à partir de plans directeurs. Veuillez en tenir compte lors de la configuration de Live Copy.
 
 ## Composants et synchronisation de conteneur {#components-and-container-synchronization}
 
