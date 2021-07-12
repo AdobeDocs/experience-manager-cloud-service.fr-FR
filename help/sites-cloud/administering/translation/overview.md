@@ -2,9 +2,9 @@
 title: Traduction de contenu pour les sites multilingues
 description: Bénéficiez d’un aperçu de la traduction de contenu pour les sites multilingues.
 feature: Copie de la langue
-role: Administrator
+role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 100%
