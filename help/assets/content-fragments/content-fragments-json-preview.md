@@ -1,19 +1,19 @@
 ---
 title: Aperçu – Représentation JSON
-description: Découvrez comment prévisualiser facilement la représentation JSON de vos fragments de contenu lors de la mise en oeuvre de votre solution AEM sans interface.
+description: Découvrez comment prévisualiser facilement la représentation JSON de vos fragments de contenu lors de la mise en œuvre de votre solution AEM découplée.
 feature: Fragments de contenu
-role: Business Practitioner
+role: User
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '115'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
 # Aperçu – Représentation JSON {#preview-json-representation}
 
-Lors du développement des modèles de fragments de contenu dans le cadre de votre mise en oeuvre AEM sans interface utilisateur, vous pouvez consulter un exemple de sortie JSON pour un fragment de contenu, en fonction d’un modèle. Vous pourrez ainsi, par exemple, avoir une idée de l’aspect du résultat final. Cela peut s’avérer utile lors de la validation de la structure JSON du modèle, avec peut-être un exemple de contenu par type de données.
+Au cours du développement de modèles pour les fragments de contenu dans le cadre de votre mise en œuvre AEM découplée, vous souhaiterez éventuellement voir l’exemple de sortie JSON pour un fragment de contenu, basé sur un modèle. Vous pourrez ainsi, par exemple, avoir une idée de l’aspect du résultat final. Cela peut s’avérer utile lors de la validation de la structure JSON du modèle, avec peut-être un exemple de contenu par type de données.
 
 Utilisation de l’icône **Aperçu** :
 
