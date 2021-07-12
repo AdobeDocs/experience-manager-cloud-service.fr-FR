@@ -1,18 +1,18 @@
 ---
 title: Utilisation de jeux de règles de transformation d’URL
-description: Découvrez comment déployer des ensembles de règles dans Dynamic Media pour transformer des URL. Les ensembles de règles sont des ensembles d’instructions écrites dans un langage de script (JavaScript™, par exemple) qui évaluent les données XML et prennent certaines mesures si ces données remplissent certaines conditions.
-role: Business Practitioner
+description: Découvrez comment déployer des ensembles de règles dans Dynamic Media pour transformer les URL. Les ensembles de règles sont des ensembles d’instructions écrites dans un langage de scripts (comme JavaScript™) qui évaluent des données XML et déclenchent certaines actions si ces données remplissent des conditions spécifiques.
+role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '766'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 # Utilisation d’ensembles de règles pour transformer des URL {#using-rulesets-to-transform-urls}
 
-Vous pouvez déployer des ensembles de règles dans Dynamic Media pour transformer les URL. Les ensembles de règles sont des ensembles d’instructions écrites dans un langage de script (JavaScript™, par exemple) qui évaluent les données XML et prennent certaines mesures si ces données remplissent certaines conditions. Chaque règle définit au moins une condition et une action. Une règle évalue si les données XML remplissent les conditions et, si tel est le cas, déclenche les actions appropriées. Les exemples d’ensembles de règles comprennent les éléments suivants :
+Vous pouvez déployer des ensembles de règles dans Dynamic Media pour transformer les URL. Les ensembles de règles sont des ensembles d’instructions écrites dans un langage de scripts (comme JavaScript™) qui évaluent des données XML et déclenchent certaines actions si ces données remplissent des conditions spécifiques. Chaque règle définit au moins une condition et une action. Une règle évalue si les données XML remplissent les conditions et, si tel est le cas, déclenche les actions appropriées. Les exemples d’ensembles de règles comprennent les éléments suivants :
 
 * Ajout d’un suffixe de type MIME. De nombreux services et sites web ont besoin de suffixes d’image, comme l’ajout de `.jpg` à une URL.
 * Création d’un chemin de dossier vers l’URL pour le SEO (Search Engine Optimization, ou optimisation du moteur de recherche).
@@ -30,7 +30,7 @@ Vous pouvez déployer des ensembles de règles dans Dynamic Media pour transfor
 
    Voir la section [Suppression des caractères spéciaux des URL](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
-Dans le cadre de Dynamic Media, les sites web qui utilisent un système XML pour gérer les informations de ressources peuvent charger des fichiers XML sur Dynamic Media. Vous pouvez désigner l’un de ces fichiers comme fichier d’ensemble de règles de prétraitement pour le service des ressources Dynamic Media. Ce fichier restructure le format du protocole URL standard pour répondre à la logique de l’entreprise des systèmes intégrés à Dynamic Media. Vous spécifiez un fichier XML pour servir de chemin d’accès au fichier des définitions d’ensembles de règles.
+Dans le cadre de Dynamic Media, les sites web qui utilisent un système XML pour gérer les informations de ressources peuvent charger des fichiers XML sur Dynamic Media. Vous pouvez désigner l’un de ces fichiers comme fichier d’ensemble de règles de prétraitement pour le service des ressources Dynamic Media. Ce fichier restructure le format du protocole URL standard pour répondre à la logique d’entreprise des systèmes intégrés avec Dynamic Media. Vous spécifiez un fichier XML pour servir de chemin d’accès au fichier des définitions d’ensembles de règles.
 
 >[!CAUTION]
 >
@@ -66,8 +66,8 @@ Consultez également la section [Utilisation de « ressource » au lieu d’un
    * Dans la boîte de dialogue **[!UICONTROL Ouvrir]**, naviguez jusqu’à votre fichier d’ensemble de règles (XML).
    * Sélectionnez le fichier, puis cliquez sur **[!UICONTROL Ouvrir]**.
    * Sur le côté droit de la page **[!UICONTROL Charger]**, sélectionnez un dossier de destination pour le fichier d’ensemble de règles.
-   * Dans la partie inférieure de la page, assurez-vous que l’option Publier après le téléchargement est cochée.
-   * Dans le coin inférieur droit de la page, cliquez sur **[!UICONTROL Envoyer le téléchargement]**.
+   * Près du bas de la page, assurez-vous que l’option Publier après le chargement est cochée.
+   * Dans l’angle inférieur droit de la page, cliquez sur **[!UICONTROL Soumettre le chargement]**.
    * Sur la barre de Navigation générale, cliquez sur **[!UICONTROL Tâches]** afin de vérifier le statut de la tâche de chargement. Lorsque la colonne **[!UICONTROL État]** sur la page de la **[!UICONTROL Tâche]** indique Chargement terminé, passez aux étapes suivantes.
 
 1. Sur la barre de navigation située en haut de la page, cliquez sur **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Configuration de la publication]** > **[!UICONTROL Serveur d’images]**.
@@ -78,4 +78,4 @@ Consultez également la section [Utilisation de « ressource » au lieu d’un
 
    Les conditions d’ensemble de règles sont appliquées aux demandes aux serveurs d’images Dynamic Media en ligne.
 
-   Si vous modifiez le fichier d’ensemble de règles, les modifications sont immédiatement appliquées lorsque vous rechargez et republiez le fichier d’ensemble de règles mis à jour.
+   Si vous modifiez le fichier d’ensemble de règles, celles-ci sont immédiatement appliquées lorsque vous rechargez et publiez à nouveau le fichier d’ensemble de règles mis à jour.
