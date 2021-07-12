@@ -2,12 +2,12 @@
 title: Intégration de la visionneuse de vidéos ou d’images Dynamic Media dans une page web
 description: Découvrez comment intégrer des ressources d’images ou des vidéos Dynamic Media dans une page web.
 feature: Gestion des ressources
-role: Business Practitioner
+role: User
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
-source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '377'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 90%
 
 Utilisez la fonction **[!UICONTROL Code incorporé]** lorsque vous souhaitez lire une vidéo ou afficher une ressource incorporée dans une page web. Vous copiez le code incorporé dans le Presse-papiers afin de le coller dans vos pages web. Vous ne pouvez pas modifier le code dans la boîte de dialogue **[!UICONTROL Code incorporé]**.
 
-Vous n’incorporez les URL que si vous _et non_ utilisez Adobe Experience Manager comme système de gestion de contenu web. Si vous utilisez Experience Manager comme gestion de contenu web, [vous ajoutez les ressources directement sur votre page](adding-dynamic-media-assets-to-pages.md).
+Vous devez incorporer les URL uniquement si vous _n’utilisez pas_ Adobe Experience Manager comme outil de gestion de contenu web. Dans le cas contraire, [vous pouvez ajouter les ressources directement à votre page](adding-dynamic-media-assets-to-pages.md).
 
 Voir [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md).
 
@@ -49,7 +49,7 @@ Consultez aussi [Diffusion d’images optimisées pour un site réactif](respons
 1. Dans la boîte de dialogue **[!UICONTROL Code intégré]**, copiez l’ensemble du code dans le Presse-papiers, puis appuyez sur **[!UICONTROL Fermer]**.
 1. Collez le code intégré dans vos pages web.
 
-## Utilisation de HTTP/2 pour diffuser vos ressources Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
+## Utilisation de HTTP/2 pour diffuser vos ressources Dynamic Media   {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2 est le nouveau protocole web qui améliore la manière dont les serveurs et les navigateurs communiquent. Il permet un transfert rapide d’informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media peuvent désormais être diffusées sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
 
