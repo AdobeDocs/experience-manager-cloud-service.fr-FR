@@ -2,16 +2,16 @@
 title: Images interactives
 description: Découvrir comment utiliser les images interactives dans Dynamic Media.
 feature: Images interactives
-role: Business Practitioner
+role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '4245'
-ht-degree: 90%
+ht-degree: 98%
 
 ---
 
-# Images interactives {#interactive-images}
+# Images interactives{#interactive-images}
 
 Vous pouvez facilement créer des expériences riches et attrayantes pour vos clients à partir d’images statiques en ajoutant des zones réactives « shoppable » aux images par glisser-déposer. Les zones réactives Shoppable rassemblent des informations supplémentaires sur un produit ou un service avec une fonctionnalité directe de point de vente de type « Ajouter au panier » ou « Acheter ». Les clients peuvent appuyer sur ces zones réactives qui pointent directement vers le produit ou le service, permettent d’ajouter le produit ou service au panier, ou les dirigent vers une page web. Les expériences directes de ce type augmentent l’engagement et les conversions des clients sur votre site web.
 
@@ -23,11 +23,11 @@ Voir [les images interactives en action](https://experienceleague.adobe.com/tool
 
 ## Découvrir comment les bannières d’images interactives sont créées {#watch-how-interactive-image-banners-are-created}
 
-Regardez une présentation détaillée de [comment les bannières d’images interactives sont créées](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (10 minutes et 33 secondes). Apprenez également à prévisualiser, modifier et diffuser des bannières d’images interactives.
+Regardez une présentation détaillée concernant [les méthodes de création de bannières d’images interactives](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (10 minutes et 33 secondes). Apprenez également à prévisualiser, modifier et diffuser des bannières d’images interactives.
 
 ## Démarrage rapide : images interactives {#quick-start-interactive-images}
 
-La description suivante du workflow étape par étape est conçue pour vous aider à démarrer et à utiliser rapidement les images interactives dans Adobe Experience Manager Assets.
+La description suivante du workflow étape par étape est conçue pour vous aider à mettre en route rapidement les images interactives dans Adobe Experience Manager Assets.
 
 Recherchez le titre **Exemple** dans certaines tâches de démarrage rapide. Il contient un court tutoriel reposant sur [l’exemple de page web suivant qui ne contient pas encore d’images interactives](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html).
 
@@ -38,7 +38,7 @@ Le tutoriel permet d’illustrer les étapes d’intégration d’images interac
 Étapes des images interactives :
 
 1. **(Facultatif) Identification des variables de zone réactive**. Si vous utilisez Adobe Experience Manager Assets et Dynamic Media de manière autonome, identifiez les variables dynamiques utilisées dans votre mise en œuvre d’aperçu rapide existante. Cela vous permet de saisir des données de zone réactive lors de la création de l’image interactive. Voir [(Facultatif) Identification des variables de zone réactive](#optional-identifying-hotspot-variables).
-Toutefois, si vous utilisez des sites Experience Manager ou Experience Manager eCommerce, ou les deux, cette étape n’est pas nécessaire.
+Cependant, si vous utilisez Experience Manager Sites ou Experience Manager eCommerce, ou les deux, cette étape n’est pas nécessaire.
 
 1. **(Facultatif) Création d’un paramètre prédéfini de visionneuse d’images interactives**. Personnalisez l’image utilisée pour représenter des zones réactives. Vous n’avez pas besoin de créer votre propre paramètre prédéfini de visionneuse d’images interactives si vous envisagez plutôt d’utiliser le paramètre prédéfini de visionneuse d’images interactives prêt à l’emploi `Shoppable_Banner`.
 Voir [(Facultatif) Création d’un paramètre prédéfini de visionneuse d’images interactives](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset).
@@ -62,7 +62,7 @@ Si vous utilisez un gestionnaire de contenu web tiers, intégrez la nouvelle vid
 >Cette tâche n’est nécessaire que si les conditions ci-dessous sont vraies :
 >
 >* Vous souhaitez ajouter de l’interactivité à votre image en déclenchant des aperçus rapides.
->* Votre implémentation d’Experience Manager n’utilise *pas* de structure d’intégration eCommerce pour extraire les données de produit dans Experience Manager à partir de toute solution d’e-commerce. Ces solutions comprennent IBM® WebSphere® Commerce, Elastic Path, SAP Hybris ou Intershop.
+>* Votre implémentation d’Experience Manager n’utilise *pas* de structure d’intégration eCommerce pour extraire les données de produit dans Experience Manager à partir de toute solution d’e-commerce. De telles solutions peuvent inclure IBM WebSphere® Commerce, Elastic Path, SAP Hybris ou Intershop.
 
 >
 >
@@ -85,7 +85,7 @@ La plupart des implémentations d’aperçu rapide utilisent le modèle suivant�
 * Les données de l’aperçu rapide sont traduites en contenu en préparation du rendu sur la page web.
 * Enfin, le code en front-end effectue le rendu visuel de ce contenu à l’écran.
 
-L’approche consiste ensuite à visiter différentes zones du site web existant dans lequel la fonction Aperçu rapide est implémentée. Ensuite, déclenchez l’aperçu rapide et acquérez l’URL Ajax envoyée par la page web pour charger les données ou le contenu de l’aperçu rapide.
+L’approche consiste ensuite à visiter différentes zones du site web existant dans lequel la fonction Aperçu rapide est implémentée. Ensuite, déclenchez l’Aperçu rapide et capturez l’URL Ajax envoyée par la page web pour charger les données ou le contenu de l’aperçu rapide.
 
 Normalement, il n’est pas nécessaire d’utiliser des outils de débogage spécialisés. Les navigateurs web modernes incluent des inspecteurs web qui font un travail correct. Vous trouverez ci-dessous quelques exemples de navigateurs web qui incluent des inspecteurs web :
 
@@ -167,15 +167,15 @@ Compte tenu de ces informations, l’intégralité de l’URL de l’aperçu rap
 
 Sur la base de cette analyse, vous utiliseriez `categoryId` et `SKU` pour les zones réactives.
 
-Vous êtes maintenant prêt à charger une bannière d’image et à y ajouter des zones réactives à l’aide de la fonction d’image interactive Shoppable dans Ressources Experience Manager.
+Vous êtes à présent prêt à charger une bannière d’image et à y ajouter des zones réactives à l’aide de la fonctionnalité d’images interactives Shoppable d’Experience Manager Assets.
 
-## (Facultatif) Création d’un paramètre prédéfini de visionneuse d’images interactives {#optional-creating-an-interactive-image-viewer-preset}
+## (Facultatif) Création d’un paramètre prédéfini de visionneuse d’images interactives  {#optional-creating-an-interactive-image-viewer-preset}
 
-Vous pouvez choisir d’utiliser le paramètre prédéfini de visionneuse d’images interactives prêt à l’emploi `Shoppable_Banner` fourni avec les ressources du Experience Manager. Vous pouvez également créer votre propre paramètre prédéfini de visionneuse personnalisé à utiliser avec les images interactives.
+Vous pouvez choisir d’utiliser la valeur par défaut, le paramètre prédéfini de visionneuse d’images interactives, appelé « `Shoppable_Banner` », qui est fourni avec Experience Manager Assets. Vous pouvez également créer votre propre paramètre prédéfini de visionneuse personnalisé à utiliser avec les images interactives.
 
 Lorsque vous créez un paramètre prédéfini de visionneuse d’images interactives, vous pouvez déterminer l’aspect des zones réactives de la bannière d’image. Dans le cadre de la création du paramètre prédéfini de visionneuse, vous pouvez choisir d’utiliser une image de zone réactive provenant d’une galerie d’images prédéfinies.
 
-Une fois le paramètre prédéfini de visionneuse enregistré, il est automatiquement activé sur la page de liste Paramètre prédéfini de la visionneuse dans Ressources du Experience Manager. Cette fonctionnalité signifie qu’elle est visible dans le composant Interactive Media et chaque fois que vous affichez une ressource. Cependant, pour *diffuser* une bannière interactive avec ce paramètre prédéfini de visionneuse, *publiez* également votre paramètre prédéfini de visionneuse. Cette règle s’applique aux paramètres prédéfinis de visionneuse personnalisés ou prêts à l’emploi.
+Une fois que vous avez enregistré le paramètre prédéfini de visionneuse, il est activé automatiquement dans la page de liste Paramètre prédéfini de visionneuse dans Experience Manager Assets. Cette fonctionnalité signifie qu’elle est visible dans le composant Interactive Media et chaque fois que vous affichez une ressource. Cependant, pour *diffuser* une bannière interactive avec ce paramètre prédéfini de visionneuse, *publiez* également votre paramètre prédéfini de visionneuse. Cette règle s’applique aux paramètres prédéfinis de visionneuse personnalisés ou prêts à l’emploi.
 
 **Pour créer un paramètre prédéfini de la visionneuse pour les images interactives**
 
@@ -264,7 +264,7 @@ Si vous modifiez des images interactives avec des zones réactives et que vous r
 
    * Appuyez sur **[!UICONTROL Aperçu rapide]**.
 
-      * Si vous êtes un client Sites ou eCommerce Experience Manager, appuyez ou cliquez sur l’icône Sélecteur de produit (loupe) pour ouvrir la page Sélectionner un produit . Appuyez sur le produit que vous souhaitez utiliser puis appuyez sur **Sélectionner** dans le coin supérieur droit de la page. Vous voici de retour dans la page de gestion des zones réactives.
+      * Si vous êtes client Experience Manager Sites ou AEM eCommerce, appuyez ou cliquez sur l’icône de sélecteur de produit (loupe) afin d’afficher la page Sélectionner un produit. Appuyez sur le produit que vous souhaitez utiliser puis appuyez sur **Sélectionner** dans le coin supérieur droit de la page. Vous voici de retour dans la page de gestion des zones réactives.
       * Si vous *n’êtes pas* client Experience Manager Sites ou eCommerce :
 
          * Consultez [Identification des variables de zone réactive](#optional-identifying-hotspot-variables) ; vous devez définir ces variables.
@@ -281,7 +281,7 @@ Si vous modifiez des images interactives avec des zones réactives et que vous r
 
    * Appuyez sur **[!UICONTROL Fragment d’expérience]**.
 
-      * Si vous êtes client Sites Experience Manager, appuyez ou cliquez sur l’icône Rechercher (loupe) pour ouvrir la page Fragment d’expérience. Appuyez sur le fragment d’expérience que vous souhaitez utiliser. Appuyez ensuite sur **[!UICONTROL Sélectionner]** dans le coin supérieur droit de la page. Vous voici de retour dans la page de gestion des zones réactives.
+      * Si vous êtes client Experience Manager Sites, appuyez ou cliquez sur l’icône Rechercher (loupe) afin d’ouvrir la page Fragment d’expérience. Appuyez sur le fragment d’expérience que vous souhaitez utiliser. Appuyez ensuite sur **[!UICONTROL Sélectionner]** dans le coin supérieur droit de la page. Vous voici de retour dans la page de gestion des zones réactives.
 Voir [Fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
       * Indiquez la largeur et la hauteur du fragment d’expérience tel que vous souhaitez qu’il apparaisse dans la bannière.
@@ -305,7 +305,7 @@ Voir [Fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experi
 
 ### (Facultatif) Aperçu des images interactives  {#optional-previewing-interactive-images}
 
-Vous pouvez utiliser l’aperçu pour afficher une représentation de votre image interactive telle qu’elle s’affiche pour les clients. La prévisualisation vous permet également de tester les zones réactives de l’image afin de vous assurer qu’elles se comportent comme prévu.
+Vous pouvez utiliser la prévisualisation pour afficher une représentation de l’aspect de votre image interactive telle qu’elle apparaîtra à vos clients. La prévisualisation vous permet également de tester les zones réactives de l’image afin de vous assurer qu’elles se comportent comme prévu.
 
 Lorsque vous êtes satisfait de l’image interactive, vous pouvez la publier.
 Voir [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/dynamic-media/embed-code.md).
@@ -327,9 +327,9 @@ Voir [Publication de ressources](/help/assets/dynamic-media/publishing-dynamicme
 
 Lorsque vous chargez une image de bannière, que vous ajoutez des zones réactives à l’image et que vous publiez l’image interactive, vous pouvez l’ajouter dans une page de votre site web.
 
-Si vous êtes client Sites Experience Manager, vous pouvez ajouter l’image interactive en faisant glisser le composant Interactive Media sur votre page. Reportez-vous à [Ajout de ressources Dynamic Media aux pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Si vous êtes un client Experience Manager Sites, vous pouvez ajouter l’image interactive en faisant glisser le composant Interactive Media dans votre page. Reportez-vous à [Ajout de ressources Dynamic Media aux pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
-Si vous êtes client Experience Manager Assets autonome, vous pouvez ajouter manuellement l’image interactive à votre site web, comme décrit dans cette section.
+Si vous êtes un client Experience Manager Assets autonome, vous pouvez ajouter manuellement l’image interactive à votre site web, comme indiqué dans cette section.
 
 1. Copiez le code intégré de l’image interactive publiée.
 Voir [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/dynamic-media/embed-code.md).
@@ -345,7 +345,7 @@ En prenant comme exemple le [site web de démonstration](https://experienceleagu
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-L’intégration est aussi simple que de supprimer la balise `IMG` et de la remplacer par le code intégré copié à partir des ressources du Experience Manager. Vous pouvez voir que le résultat [montre l’image interactive Shoppable sur la page avec trois zones réactives en cercle](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html).
+L’intégration revient simplement à supprimer la balise `IMG` et à la remplacer par le code intégré copié à partir d’Experience Manager Assets. Vous pouvez voir que le résultat [montre l’image interactive Shoppable sur la page avec trois zones réactives en cercle](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html).
 
 >[!NOTE]
 À ce stade, les zones réactives de l’image interactive Shoppable du site web de démonstration sont en mode affichage uniquement. Elles ne sont pas encore intégrées aux aperçus rapides existants.
@@ -377,7 +377,7 @@ L’implémentation d’aperçus rapides existante représente normalement une c
 
 Ces appels ne représentent pas nécessairement des appels d’API publics indépendants qui sont appelés en suivant la logique de la page web à partir d’une étape arbitraire. Il s’agit plutôt d’un appel chaîné où chaque étape suivante est masquée dans la dernière phase (rappel) de l’étape précédente.
 
-Lorsque l’image interactive shoppable remplace l’étape 1 et partiellement l’étape 2, l’utilisateur touche une zone réactive à l’intérieur de l’image shoppable. Cette interaction utilisateur est gérée par le lecteur de contenu. La visionneuse renvoie un événement à la page web qui contient toutes les données de zone réactive précédemment ajoutées aux ressources du Experience Manager.
+Lorsque l’image interactive shoppable remplace l’étape 1 et partiellement l’étape 2, l’utilisateur touche une zone réactive à l’intérieur de l’image shoppable. Cette interaction utilisateur est gérée par le lecteur de contenu. La visionneuse renvoie un événement à la page web qui contient toutes les données des zones réactives ajoutées précédemment dans Experience Manager Assets.
 
 Dans ce type de gestionnaire d’événements, le code en front-end effectue les opérations suivantes :
 
@@ -446,7 +446,7 @@ En utilisant les exemples précédents d’URL d’aperçu rapide, vous pouvez v
  </tbody>
 </table>
 
-La dernière étape permettant de déclencher l’URL d’aperçu rapide et d’activer le panneau d’aperçu rapide nécessite l’assistance d’un informaticien compétent de votre travail. Celui-ci sait comment déclencher précisément l’implémentation de l’aperçu rapide à l’aide de l’étape appropriée, avec une URL d’aperçu rapide prête à l’emploi.
+La dernière étape nécessaire pour déclencher l’URL d’aperçu rapide et activer le panneau d’aperçu rapide requiert l’assistance d’un informaticien front-end de votre équipe. Celui-ci sait comment déclencher précisément l’implémentation de l’aperçu rapide à l’aide de l’étape appropriée, avec une URL d’aperçu rapide prête à l’emploi.
 
 Vous pouvez voir comment ces étapes sont appliquées au site web de démonstration afin d’intégrer complètement une image interactive Shoppable dans le code d’aperçu rapide. Précédemment, la structure de l’URL d’aperçu rapide a été identifiée comme suit :
 
@@ -492,6 +492,6 @@ Voici le code source complet :
 
 Le [site web de démonstration final avec l’image interactive entièrement intégrée](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html).
 
-## Utilisation d’aperçus rapides afin de créer des fenêtres pop-up personnalisées {#using-quickviews-to-create-custom-pop-ups}
+## Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées {#using-quickviews-to-create-custom-pop-ups}
 
-Voir [Utilisation d’aperçus rapides pour créer une fenêtre contextuelle personnalisée®](/help/assets/dynamic-media/custom-pop-ups.md).
+Consultez [Utilisation d’aperçus rapides afin de créer des fenêtres pop-up Windows® personnalisées®](/help/assets/dynamic-media/custom-pop-ups.md).
