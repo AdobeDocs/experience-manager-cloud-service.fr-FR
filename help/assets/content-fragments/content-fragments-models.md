@@ -1,19 +1,19 @@
 ---
 title: Modèles de fragment de contenu
-description: Découvrez comment les modèles de fragment de contenu constituent la base de votre contenu headless dans AEM et comment créer des fragments de contenu avec du contenu structuré.
+description: Découvrez comment les modèles de fragment de contenu constituent la base de votre contenu découplé dans AEM et comment créer des fragments de contenu avec du contenu structuré.
 feature: Fragments de contenu
-role: Business Practitioner
+role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2309'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Modèles de fragment de contenu {#content-fragment-models}
 
-Les modèles de fragment de contenu d’AEM définissent la structure du contenu de vos [fragments de contenu,](/help/assets/content-fragments/content-fragments.md) servant de base à votre contenu sans en-tête.
+Les modèles de fragment de contenu d’AEM définissent la structure du contenu de vos [fragments de contenu](/help/assets/content-fragments/content-fragments.md) et servent de base à votre contenu découplé.
 
 Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 
@@ -30,7 +30,7 @@ Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 
    >[!CAUTION]
    >
-   >Si[ l’utilisation des modèles de contenu du fragment n’a pas été activée](/help/assets/content-fragments/content-fragments-configuration-browser.md), l’option **Créer** n’est pas disponible.
+   >Si l’[utilisation des modèles de contenu du fragment n’a pas été activée](/help/assets/content-fragments/content-fragments-configuration-browser.md), l’option **Créer** n’est pas disponible.
 
 1. Spécifiez le **Titre du modèle**. Vous pouvez également ajouter des **balises**, une **description** et sélectionner **Activer le modèle** pour [activer le modèle](#enabling-disabling-a-content-fragment-model), si nécessaire.
 
@@ -38,7 +38,7 @@ Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 
 1. Utilisez le bouton **Créer** pour enregistrer le modèle vide. Un message indique que l’action a réussi. Vous pouvez alors sélectionner **Ouvrir** pour publier immédiatement le modèle ou **Terminé** pour revenir à la console.
 
-## Définition de votre modèle de fragment de contenu {#defining-your-content-fragment-model}
+## Définition de votre modèle de fragment de contenu  {#defining-your-content-fragment-model}
 
 Le modèle de fragment de contenu définit effectivement la structure des fragments de contenu résultants à l’aide d’une sélection de **[Types de données](#data-types)**. Grâce à l’éditeur de modèles, vous pouvez ajouter des instances de types de données, puis les configurer pour créer les champs requis :
 
@@ -123,7 +123,7 @@ Une sélection de types de données est disponible pour la définition de votre 
       * Inclut la mise en surbrillance de la syntaxe JSON, la saisie semi-automatique et la mise en surbrillance des erreurs dans l’éditeur de fragments de contenu.
 * **Espace réservé pour tabulation**
    * Permet l’introduction d’onglets à utiliser lors de la modification du contenu du fragment de contenu.
-Il s’affiche sous forme de séparateur dans l’éditeur de modèles, ce qui sépare les sections de la liste des types de données de contenu. Chaque instance représente le début d’un nouvel onglet.
+Il s’affiche sous forme de séparateur dans l’éditeur de modèles et permet de séparer les sections de la liste des types de données de contenu. Chaque instance représente le début d’un nouvel onglet.
 Dans l’éditeur de fragments, chaque instance s’affiche sous la forme d’un onglet.
 
       >[!NOTE]
@@ -131,7 +131,7 @@ Dans l’éditeur de fragments, chaque instance s’affiche sous la forme d’un
 
 ## Propriétés {#properties}
 
-De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propriétés, vous trouverez ci-dessous des détails supplémentaires :
+De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propriétés, les détails supplémentaires sont les suivants :
 
 * **Rendu comme**
 Les différentes options permettant de réaliser/rendre le champ dans un fragment. Il est ainsi souvent possible de définir si l’auteur verra une seule instance du champ ou s’il sera autorisé à créer plusieurs instances.
@@ -170,9 +170,9 @@ Le contenu (du champ spécifique) doit être unique dans tous les fragments de c
 Cocher la case Translatable (Traduisible) d’un champ de l’éditeur de modèles des fragments de contenu entraîne les conséquences suivantes :
 
    * S’assurer que le nom de la propriété du champ est ajouté à la configuration de traduction, contexte `/content/dam/<sites-configuration>`, s’il n’est pas déjà présent.
-   * Pour GraphQL : définir une propriété `<translatable>` du champ Fragment de contenu sur `yes` afin d’autoriser le filtre de requête GraphQL pour la sortie JSON avec du contenu traductible uniquement.
+   * Pour GraphQL : définir une propriété `<translatable>` du champ Fragment de contenu sur `yes` afin d’autoriser le filtre de requête GraphQL pour la sortie JSON avec du contenu traduisible uniquement.
 
-* Voir **[Référence du contenu](#content-reference)** pour plus d’informations sur ce type de données spécifique et ses propriétés.
+* Consultez la section **[Référence de contenu](#content-reference)** pour plus d’informations sur ce type de données spécifique et ses propriétés.
 
 * Voir la section **[Référence du fragment (Fragments imbriqués)](#fragment-reference-nested-fragments)** pour plus d’informations sur ce type de données spécifique et ses propriétés.
 
@@ -212,8 +212,8 @@ AEM dispose d’une protection récurrente pour :
 * Références du contenu
 Cela empêche l’utilisateur d’ajouter une référence au fragment actif. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
 
-* Références de fragment dans GraphQL
-Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur null à la première occurrence.
+* Références de fragments dans GraphQL
+Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
 
 
 ### Référence de contenu {#content-reference}
@@ -225,9 +225,9 @@ Outre les propriétés standard, vous pouvez spécifier les éléments suivants�
 * Le **chemin racine** pour tout contenu référencé
 * Types de contenu pouvant être référencés
 * Limites relatives aux tailles de fichier
-* Si une image est référencée :
+* Si une image est référencée :
    * Afficher la miniature
-   * Limites de hauteur et de largeur
+   * Limites de hauteur et de largeur pour l’image
 
 ![Référence de contenu](assets/cfm-content-reference.png)
 
@@ -313,7 +313,7 @@ Un modèle peut également être désactivé afin que :
 
 * Le modèle ne soit plus disponible comme base pour la création de *nouveaux* fragments de contenu.
 * Toutefois :
-   * Le schéma GraphQL continue à être généré et peut toujours faire l’objet d’une requête (afin d’éviter tout impact sur l’API JSON).
+   * Le schéma GraphQL continue à être généré et peut toujours être interrogé (pour éviter tout impact sur l’API JSON).
    * Tout fragment de contenu basé sur le modèle peut toujours être interrogé et renvoyé à partir du point d’entrée GraphQL.
 * Le modèle ne peut plus être référencé, mais les références existantes sont conservées intactes et peuvent toujours être interrogées et renvoyées à partir du point d’entrée GraphQL.
 
@@ -400,9 +400,9 @@ Pour annuler la publication d’un modèle de fragment de contenu :
 1. Sélectionnez votre modèle, puis l’option **Annuler la publication** dans la barre d’outils.
 L’état publié sera indiqué dans la console.
 
-## Modèle de fragment de contenu - Propriétés {#content-fragment-model-properties}
+## Modèle de fragment de contenu – Propriétés {#content-fragment-model-properties}
 
-Vous pouvez modifier les **propriétés** d’un modèle de fragment de contenu :
+Vous pouvez modifier les **propriétés** d’un modèle de fragment de contenu :
 
 * **De base**
    * **Titre du modèle**
