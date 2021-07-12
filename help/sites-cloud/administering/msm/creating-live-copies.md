@@ -2,12 +2,12 @@
 title: Création et synchronisation de Live Copies
 description: Découvrez comment créer et synchroniser des Live Copies pour utiliser votre contenu plusieurs fois sur votre site.
 feature: Multi Site Manager
-role: Administrator
+role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 243e72f477f5c4b0507b80b6ef16d6f5246c739e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '4277'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -41,15 +41,15 @@ Après avoir créé la configuration de plan directeur, configurez les propriét
 
 Lorsque votre configuration de plan directeur est utilisée, vous pouvez l’associer à une configuration de déploiement qui détermine comment les Live Copies de la source ou du plan directeur sont synchronisées. Voir [Spécification des configurations de déploiement à utiliser](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use).
 
-### Création et modification de configurations de plan directeur {#creating-editing-blueprint-configurations}
+### Création et modification de configurations de plans directeurs {#creating-editing-blueprint-configurations}
 
-Les configurations de plan directeur sont considérées comme des données non modifiables et ne sont donc pas modifiables au moment de l’exécution. Pour cette raison, toutes les modifications de configuration doivent être déployées via Git à l’aide du pipeline CI/CD.
+Les configurations de plans directeurs sont considérées comme des données non modifiables et ne sont donc pas modifiables au moment de l’exécution. Toutes les modifications de configuration doivent donc être déployées via Git à l’aide du pipeline CI/CD.
 
-Vous trouverez plus d’informations dans l’article [Modifications notables apportées à Adobe Experience Manager (AEM) en tant que Cloud Service.](/help/release-notes/aem-cloud-changes.md)
+Vous trouverez plus d’informations dans l’article [Modifications notables apportées à Adobe Experience Manager (AEM) as a Cloud Service.](/help/release-notes/aem-cloud-changes.md)
 
-Les étapes suivantes sont disponibles pour un administrateur sur une instance de développement locale uniquement à des fins de test et de développement. Ces options ne sont disponibles dans aucune instance cloud AEMaaCS.
+Les étapes suivantes ne sont mises à la disposition d’un administrateur sur une instance de développement locale qu’à des fins de test et de développement. Ces options ne sont disponibles dans aucune instance cloud AEMaaCS.
 
-#### Création locale d’une configuration de plan directeur {#creating-a-blueprint-configuration}
+#### Création d’une configuration de plan directeur locale {#creating-a-blueprint-configuration}
 
 Pour créer une configuration de plan directeur :
 
@@ -68,7 +68,7 @@ Pour créer une configuration de plan directeur :
 
 1. L’option **Créer** crée la configuration de plan directeur selon votre spécification.
 
-### Modification ou suppression d’une configuration de plan directeur Localement{#editing-or-deleting-a-blueprint-configuration}
+### Modification ou suppression d’une configuration de plan directeur  Localement{#editing-or-deleting-a-blueprint-configuration}
 
 Vous pouvez modifier ou supprimer une configuration de plan directeur existante :
 
@@ -122,7 +122,7 @@ Pour créer une Live Copy :
    >
    >Le chemin de destination ne peut pas être dans le chemin source.
 
-1. Entrer :
+1. Enter:
 
    * Le **Titre** de la page.
    * Le **Nom** utilisé dans l’URL.
@@ -137,7 +137,7 @@ Pour créer une Live Copy :
 1. (Facultatif) Pour spécifier une ou plusieurs configurations de déploiement à utiliser pour la Live Copy, utilisez la liste déroulante **Configurations de déploiement** pour les sélectionner. Les configurations sélectionnées s’affichent sous le sélecteur déroulant.
 1. Cliquez ou appuyez sur **Créer**. Un message de confirmation s’affiche, dans lequel vous pouvez sélectionner **Ouvrir** ou **Terminé**.
 
-### Création d’une Live Copy d’un site à partir d’une configuration de plan directeur {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
+### Création d’une Live Copy d’un site à partir d’une configuration de plan directeur  {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
 Créez une Live Copy à l’aide d’une configuration de plan directeur pour créer un site en fonction du contenu de plan directeur (source). Lorsque vous créez une Live Copy à partir d’une configuration de plan directeur, vous sélectionnez une ou plusieurs branches de langue de la source de plan directeur à copier, puis vous sélectionnez les chapitres à copier à partir des branches de langue. Consultez [Création d’une configuration de plan directeur](#creating-a-blueprint-configuration).
 
@@ -245,7 +245,7 @@ Les déploiements sont traités comme des tâches asynchrones et peuvent être v
 
 #### Déploiement d’un plan directeur à partir du rail de référence {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. Dans la console **Sites** , sélectionnez la page dans la Live Copy et ouvrez le panneau **[Références](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** (dans la barre d’outils).
+1. Dans la console **Sites**, sélectionnez la page dans la Live Copy et ouvrez le panneau **[Références](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** (via la barre d’outils).
 1. Sélectionnez l’option **Plan directeur** dans la liste pour afficher les plans directeurs associés à cette page.
 1. Sélectionnez le plan directeur requis dans la liste.
 1. Cliquez ou appuyez sur **Déployer**.
