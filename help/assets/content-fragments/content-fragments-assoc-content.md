@@ -1,19 +1,19 @@
 ---
 title: Contenu associé
-description: Découvrez comment AEM fonctionnalité de contenu associé fournit la connexion afin que les ressources puissent éventuellement être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu, ajoutant ainsi une flexibilité supplémentaire à la diffusion de contenu sans en-tête.
+description: Découvrez comment la fonctionnalité de contenu associé d’AEM assure la connexion afin que les ressources puissent éventuellement être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu, ce qui apporte une flexibilité supplémentaire à la diffusion de contenu en mode découplé.
 feature: Fragments de contenu
-role: Business Practitioner
+role: User
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '246'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
-# Contenu associé {#associated-content}
+# Contenu associé{#associated-content}
 
-La fonctionnalité AEM contenu associé fournit la connexion afin que les ressources puissent éventuellement être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu. Vous bénéficiez ainsi d’une certaine souplesse pour la diffusion de contenu sans interface utilisateur graphique grâce à [la disponibilité d’une gamme de ressources auxquelles accéder lors de l’utilisation du fragment de contenu sur une page,](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content), tout en réduisant le temps nécessaire pour rechercher la ressource appropriée.
+La fonctionnalité de contenu associé d’AEM assure la connexion afin que les ressources puissent éventuellement être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu. Vous bénéficiez ainsi d’une certaine souplesse pour la diffusion de votre contenu découplé, [car vous disposez d’une gamme de ressources auxquelles accéder lors de l’utilisation du fragment de contenu sur une page.](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) Cela permet aussi de réduire le temps nécessaire pour rechercher la ressource appropriée.
 
 ## Ajout de contenu associé {#adding-associated-content}
 
