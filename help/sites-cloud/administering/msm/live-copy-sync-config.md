@@ -2,16 +2,16 @@
 title: Configuration de la synchronisation des Live Copies
 description: Découvrez les puissantes options de synchronisation des Live Copies disponibles et comment les configurer et les personnaliser en fonction des besoins de votre projet.
 feature: Multi Site Manager
-role: Administrator
+role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2339'
 ht-degree: 100%
 
 ---
 
-# Configuration de la synchronisation de Live Copies {#configuring-live-copy-synchronization}
+# Configuration de la synchronisation des Live Copies {#configuring-live-copy-synchronization}
 
 Adobe Experience Manager apporte un certain nombre de configurations de synchronisation prêtes à l’emploi. Avant d’utiliser les Live Copies, tenez compte des points suivants pour définir comment et quand elles sont synchronisées avec leur contenu source.
 
