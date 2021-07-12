@@ -1,13 +1,13 @@
 ---
-title: Invalidation du cache CDN (réseau de diffusion de contenu) par le biais de Dynamic Media
-description: '"Découvrez comment invalider le contenu mis en cache de votre réseau de diffusion de contenu (CDN) pour vous permettre de mettre rapidement à jour les ressources diffusées par Dynamic Media, au lieu d’attendre que le cache arrive à expiration."'
+title: Invalidation du cache CDN (réseau de diffusion de contenu) par le biais de Dynamic Media
+description: « Apprenez comment l’invalidation du contenu de réseau de diffusion de continu (CDN) en cache vous permet de mettre à jour rapidement les ressources diffusées par Dynamic Media, au lieu d’attendre l’expiration du cache. »
 feature: Gestion des ressources
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1308'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -21,11 +21,11 @@ Les ressources Dynamic Media sont mises en cache par le réseau de diffusion de 
 
 Voir aussi [Présentation de la mise en cache dans Dynamic Media](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
-**Pour invalider le cache du réseau CDN au moyen de Dynamic Media:**
+**Pour invalider le cache du réseau CDN au moyen de Dynamic Media :**
 
 *Partie 1 de 2 : création d’un modèle d’invalidation du réseau CDN*
 
-1. Dans Adobe Experience Manager as a Cloud Service, appuyez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Modèle d’invalidation du réseau de diffusion de contenu]**.
+1. Dans Experience Manager as a Cloud Service, appuyez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Modèle d’invalidation du réseau de diffusion de contenu]**.
 
    ![Fonction de validation du réseau CDN](/help/assets/assets-dm/cdn-invalidation-template.png)
 
@@ -34,7 +34,7 @@ Voir aussi [Présentation de la mise en cache dans Dynamic Media](https://helpx.
    | Scénario | Option |
    | --- | --- |
    | J’ai déjà créé un modèle d’invalidation du réseau CDN dans le passé à l’aide de Dynamic Media Classic. | Le champ de texte **[!UICONTROL Créer un modèle]** est prérenseigné avec vos données de modèle. Dans ce cas, vous pouvez modifier le modèle ou passer à l’étape suivante. |
-   | Je dois créer un modèle. Que dois-je entrer ? | Dans le champ de texte **[!UICONTROL Créer un modèle]** , saisissez une URL d’image (y compris des paramètres d’image prédéfinis ou des modificateurs) référençant `<ID>`, au lieu d’un ID d’image spécifique comme dans l’exemple suivant :<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br>Si le modèle contient uniquement `<ID>`, Dynamic Media renseigne `https://<publishserver_name>/is/image/<company_name>/<ID>` où `<publishserver_name>` est le nom de votre serveur de publication défini dans les paramètres généraux dans Dynamic Media Classic . `<company_name>` est le nom de la racine de votre société associée à cette instance de Experience Manager et `<ID>` est les ressources sélectionnées par le biais du sélecteur de ressources à invalider.<br>Tous les paramètres prédéfinis/modificateurs suivants  `<ID>` sont copiés tels quels dans la définition d’URL.<br>Seules les images (c’est-à-dire `/is/image`) peuvent être formées automatiquement en fonction du modèle.<br>Pour `/is/content/`, l’ajout de ressources telles que des vidéos ou des fichiers PDF à l’aide du sélecteur de ressources ne génère pas automatiquement d’URL. Au lieu de cela, vous devez spécifier ces ressources dans le modèle d’invalidation du réseau CDN ou vous pouvez ajouter manuellement l’URL à ces ressources dans *Partie 2 de 2 : définition des options d’invalidation du réseau CDN*.<br>**Exemples :**<br> Dans ce premier exemple, le modèle d’invalidation contient `<ID>` avec l’URL de ressource `/is/content`. Par exemple, `http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>`. Dynamic Media forme l’URL en fonction de ce chemin d’accès, `<ID>` correspondant aux ressources sélectionnées par le biais du sélecteur de ressources que vous souhaitez invalider.<br>Dans ce deuxième exemple, le modèle d’invalidation contient l’URL complète de la ressource utilisée dans vos propriétés web avec `/is/content` (indépendamment du sélecteur de ressources). Par exemple, `http://my.publishserver.com:8080/is/content/dms7snapshot/backpack` où backpack correspond à l’ID de ressource.<br>Les formats de ressources pris en charge dans Dynamic Media peuvent être invalidés. Les types de fichiers de ressources *non* pris en charge pour l’invalidation du réseau CDN sont les suivants : PostScript®, Encapsulated PostScript®, Adobe Illustrator, Adobe InDesign, Microsoft® PowerPoint, Microsoft® Excel, Microsoft® Word et Rich Text Format.<br>Lorsque vous créez le modèle, faites très attention à la syntaxe et aux fautes de frappe ; Dynamic Media n’effectue aucune validation de modèle.<br>Spécifiez des URL pour les recadrages intelligents d’images dans ce modèle d’invalidation du réseau CDN ou dans le champ de texte **[!UICONTROL Ajouter une URL]** dans *Partie 2 : définition des options d’invalidation CDN.*<br>**Important :** Chaque entrée d’un modèle d’invalidation du réseau CDN doit se trouver sur sa propre ligne.<br>*L’exemple de modèle suivant est fourni à titre d’explication uniquement.* |
+   | Je dois créer un modèle. Que dois-je entrer ? | Dans le champ de texte **[!UICONTROL Créer un modèle]**, saisissez une URL d’image (comprenant les paramètres d’image prédéfinis ou des modificateurs) référençant `<ID>`, au lieu d’un ID d’image spécifique comme dans l’exemple suivant :<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br>. Si le modèle contient uniquement `<ID>`, Dynamic Media renseigne `https://<publishserver_name>/is/image/<company_name>/<ID>` avec `<publishserver_name>` comme nom de serveur de publication défini dans les paramètres généraux dans Dynamic Media Classic. `<company_name>` est le nom de la racine de votre société associée à cette instance de Experience Manager et `<ID>` correspond aux ressources sélectionnées par le biais du sélecteur de ressources à invalider.<br>Tout paramètre prédéfini ou modificateur placé après `<ID>` est copié en l’état dans la définition d’URL.<br>Seules les images (c’est-à-dire `/is/image`) peuvent être formées automatiquement en fonction du modèle.<br>Pour `/is/content/`, l’ajout de ressources telles que des vidéos ou des fichiers PDF à l’aide du sélecteur de ressources ne génère pas automatiquement d’URL. Au lieu de cela, vous devez spécifier ces ressources dans le modèle d’invalidation du réseau CDN ou vous pouvez ajouter manuellement l’URL à ces ressources dans *Partie 2 de 2 : définition des options d’invalidation du réseau CDN*.<br>**Exemples :**<br> Dans ce premier exemple, le modèle d’invalidation contient `<ID>` avec l’URL de ressource `/is/content`. Par exemple, `http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>`. Dynamic Media forme l’URL en fonction de ce chemin d’accès, `<ID>` correspondant aux ressources sélectionnées par le biais du sélecteur de ressources que vous souhaitez invalider.<br>Dans ce deuxième exemple, le modèle d’invalidation contient l’URL complète de la ressource utilisée dans vos propriétés web avec `/is/content` (indépendamment du sélecteur de ressources). Par exemple, `http://my.publishserver.com:8080/is/content/dms7snapshot/backpack` où backpack correspond à l’ID de ressource.<br>Les formats de ressources pris en charge dans Dynamic Media peuvent être invalidés. Les types de fichiers de ressources *non* pris en charge pour l’invalidation du réseau CDN comprennent les types PostScript®, Encapsulated PostScript®, Adobe Illustrator, Adobe InDesign, Microsoft® PowerPoint, Microsoft® Excel, Microsoft® Word et Rich Text Format.<br>Lorsque vous créez le modèle, faites très attention à la syntaxe et aux fautes de frappe ; Dynamic Media n’effectue aucune validation de modèle.<br>Spécifiez des URL pour les recadrages intelligents d’images dans ce modèle d’invalidation du réseau CDN ou dans le champ de texte **[!UICONTROL Ajouter une URL]** dans *Partie 2 : définition des options d’invalidation CDN.*<br>**Important :**Chaque entrée d’un modèle d’invalidation du réseau CDN doit se trouver sur sa propre ligne.<br>*L’exemple suivant de modèle est fourni à titre d’illustration uniquement.* |
 
    ![Modèle d’invalidation du réseau CDN – Créer](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
@@ -43,7 +43,7 @@ Voir aussi [Présentation de la mise en cache dans Dynamic Media](https://helpx.
    *Partie 2 de 2 : définition des options d’invalidation du réseau CDN*
    <br>
 
-1. Dans Experience Manager en tant que Cloud Service, appuyez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Invalidation du réseau de diffusion de contenu]**.
+1. Dans Experience Manager as a Cloud Service, appuyez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Invalidation du réseau de diffusion de contenu]**.
 
    ![Fonction de validation du réseau CDN](/help/assets/assets-dm/cdn-invalidation-path.png)
 
@@ -64,7 +64,7 @@ Voir aussi [Présentation de la mise en cache dans Dynamic Media](https://helpx.
    | **[!UICONTROL Ajouter une URL]** | Ajoutez ou collez manuellement des chemins d’URL complets aux ressources Dynamic Media dont vous souhaitez invalider le cache de réseau CDN. Utilisez cette option si vous n’avez pas créé de modèle d’invalidation du réseau CDN dans ***Partie 1 de 2 : création d’un modèle d’invalidation du réseau CDN*** et n’avez que quelques ressources à invalider.<br>**Important :** Chaque URL que vous ajoutez doit se trouver sur sa propre ligne.<br>Vous pouvez invalider jusqu’à 1 000 URL à la fois. Si le nombre d’URL indiqué dans le champ de texte URL **[!UICONTROL Ajouter une URL]** est supérieur à 1 000, vous ne pouvez pas appuyer sur **[!UICONTROL Suivant]**. Dans ce cas, vous devez appuyer sur **[!UICONTROL X]** à droite d’une ressource sélectionnée ou sur une URL ajoutée manuellement pour la supprimer de la liste d’invalidation.<br>Spécifiez des URL pour les recadrages intelligents d’images dans le modèle d’invalidation du réseau CDN ou dans ce champ de texte **[!UICONTROL Ajouter une URL]**. |
 
 1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Suivant]**.
-1. Sur la page **[!UICONTROL Invalidation du réseau de diffusion de contenu]** - **[!UICONTROL Confirmer]**, dans la zone de liste **[!UICONTROL URL]**, une liste d’une ou plusieurs URL générées à partir du modèle d’invalidation du réseau de diffusion de contenu que vous avez créé précédemment et des ressources que vous venez d’ajouter.
+1. Sur la page **[!UICONTROL Invalidation du réseau de diffusion de contenu]**- **[!UICONTROL Confirmer]**, dans la zone de liste **[!UICONTROL URL]**, apparaît une liste d’une ou plusieurs URL générées à partir du modèle d’invalidation du réseau CDN que vous avez créé précédemment et les ressources que vous venez d’ajouter.
 
    Par exemple, en suivant le cas de modèle d’invalidation du réseau CDN utilisé dans les étapes précédentes, supposons que vous ayez ajouté une ressource unique nommée `spinset`. Lorsque vous appuyez sur **[!UICONTROL Outils > Ressources > Invalidation du réseau de diffusion de contenu]**, les cinq URL suivantes sont générées dans l’interface utilisateur **[!UICONTROL Invalidation du réseau de diffusion de contenu – Confirmer]** :
 
