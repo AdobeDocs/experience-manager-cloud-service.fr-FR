@@ -2,18 +2,18 @@
 title: Visionneuses de médias mixtes
 description: Découvrez comment travailler avec des visionneuses de médias mixtes dans Dynamic Media..
 feature: Visionneuses de médias mixtes
-role: Business Practitioner
+role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1471'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-# Visionneuses de médias mixtes {#mixed-media-sets}
+# Visionneuses de médias mixtes{#mixed-media-sets}
 
-Les visionneuses de médias mixtes vous permettent de combiner en une seule présentation des images, des visionneuses d’images, des visionneuses à 360° et des vidéos.
+Une visionneuse de médias mixtes permet d’offrir un mélange d’images, de visionneuses d’images, de visionneuses à 360° et de vidéos dans une même présentation.
 
 Les visionneuses de médias mixtes sont désignées par une bannière contenant les mots **[!UICONTROL Visionneuse de médias mixtes]**. En outre, si la visionneuse de médias mixtes est publiée, la date de publication, indiquée par l’icône représentant la **[!UICONTROL Terre]**, figure sur la bannière avec la date de dernière modification, indiquée par l’icône représentant un **[!UICONTROL crayon]**.
 
@@ -29,7 +29,7 @@ Pour démarrer rapidement, procédez comme suit :
 
 1. [Chargez vos ressources](#uploading-assets).
 
-   Commencez par charger les images et les vidéos pour les visionneuses de médias mixtes. Le cas échéant, créez les [Visionneuses d’images](/help/assets/dynamic-media/image-sets.md) et [Visionneuses à 360°](/help/assets/dynamic-media/spin-sets.md). Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse de médias mixtes, assurez-vous de tenir compte du zoom lorsque vous sélectionnez des images. Assurez-vous que la taille des images est d’au moins 2 000 pixels.
+   Commencez par charger les images et les vidéos pour les visionneuses de médias mixtes. Le cas échéant, créez les [Visionneuses d’images](/help/assets/dynamic-media/image-sets.md) et [Visionneuses à 360°](/help/assets/dynamic-media/spin-sets.md). Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse de médias mixtes, assurez-vous de tenir compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2 000 pixels dans leur plus grande dimension.
 
 1. [Créez une visionneuse de médias mixtes](#creating-mixed-media-sets).
 
@@ -69,11 +69,11 @@ Si nécessaire, vous pouvez modifier les [Visionneuses de médias mixtes](#editi
 
 ## Chargement des ressources {#uploading-assets}
 
-Commencez par charger les images et les vidéos pour les visionneuses de médias mixtes. N’oubliez pas que les utilisateurs peuvent effectuer un zoom sur les images dans la visionneuse de médias mixtes. Ainsi, choisissez les images en gardant à l’esprit cette fonction de zoom. Assurez-vous que la taille des images est d’au moins 2 000 pixels.
+Commencez par charger les images et les vidéos pour les visionneuses de médias mixtes. N’oubliez pas que les utilisateurs peuvent effectuer un zoom sur les images dans la visionneuse de médias mixtes. Ainsi, choisissez les images en gardant à l’esprit cette fonction de zoom. Assurez-vous que les images font au moins 2 000 pixels dans leur plus grande dimension.
 
 Si vous souhaitez ajouter des visionneuses à 360° ou des visionneuses d’images à la visionneuse de médias mixtes, créez-les aussi.
 
-## Création d’une visionneuse de médias mixtes {#creating-mixed-media-sets}
+## Création d’une visionneuse de médias mixtes  {#creating-mixed-media-sets}
 
 Vous pouvez ajouter des images, des visionneuses d’images, des visionneuses à 360° et des vidéos à votre visionneuse de médias mixtes. Assurez-vous que les fichiers, visionneuses d’images et visionneuses à 360° sont prêts pour la publication avant de les ajouter à la visionneuse de médias mixtes.
 
@@ -125,7 +125,7 @@ Vous pouvez effectuer différentes tâches de modification sur les ressources da
 * Appliquer des paramètres prédéfinis de visionneuse.
 * Modifier la vignette par défaut.
 
-**Modification d’une visionneuse de médias mixtes:**
+**Modification d’une visionneuse de médias mixtes :**
 
 1. Effectuez l’une des opérations suivantes :
 
@@ -145,7 +145,7 @@ Vous pouvez effectuer différentes tâches de modification sur les ressources da
 
       >[!NOTE]
       >
-      >* Pour supprimer une visionneuse de médias mixtes dans son ensemble, depuis n’importe quel mode d’affichage (**[!UICONTROL Carte]** ou **[!UICONTROL Colonnes]**, par exemple), accédez à la visionneuse de médias mixtes. Pointez sur la ressource, puis appuyez sur l’icône en forme de coche pour la sélectionner. Appuyez sur la touche **[!UICONTROL Retour arrière]** du clavier ou sur **[!UICONTROL Plus]** (points de suspension) dans la barre d’outils, puis appuyez sur **[!UICONTROL Supprimer]**.
+      >* Pour supprimer une visionneuse de médias mixtes dans son ensemble, depuis n’importe quel mode d’affichage (**[!UICONTROL Carte]** ou **[!UICONTROL Colonnes]**, par exemple), accédez à la visionneuse de médias mixtes. Placez le pointeur de la souris sur la ressource, puis appuyez sur l’icône de coche pour pouvoir la sélectionner. Appuyez sur la touche **[!UICONTROL Retour arrière]** du clavier ou sur **[!UICONTROL Plus]** (points de suspension) dans la barre d’outils, puis appuyez sur **[!UICONTROL Supprimer]**.
          >
          >
       * Vous pouvez modifier les fichiers d’une visionneuse de médias mixtes en accédant à la visionneuse. Dans le rail de gauche, appuyez sur **[!UICONTROL Définir les membres]**, puis sur l’icône **[!UICONTROL Crayon]** d’une ressource individuelle pour ouvrir la fenêtre de modification.
@@ -155,7 +155,7 @@ Vous pouvez effectuer différentes tâches de modification sur les ressources da
 
    >[!NOTE]
    >
-   >* Pour modifier les ressources dans une visionneuse de médias mixtes – Accédez à la visionneuse de médias mixtes. Appuyez sur la visionneuse (sans la sélectionner) pour l’ouvrir dans la page Aperçu du jeu de Experience Manager. Dans le rail de gauche, cliquez sur l’icône lambda vers le bas pour ouvrir la liste déroulante, puis appuyez sur **[!UICONTROL Définir les membres]**. Dans la page Définir les membres, placez le pointeur sur une ressource, puis appuyez sur **[!UICONTROL Modifier]** (icône crayon) pour ouvrir la page de modification.
+   >* Pour modifier les ressources dans une visionneuse de médias mixtes – Accédez à la visionneuse de médias mixtes. Appuyez sur (ne sélectionnez pas) la visionneuse pour pouvoir l’ouvrir dans la page Aperçu de la visionneuse Experience Manager. Dans le rail de gauche, cliquez sur l’icône lambda vers le bas pour ouvrir la liste déroulante, puis appuyez sur **[!UICONTROL Définir les membres]**. Dans la page Définir les membres, placez le pointeur sur une ressource, puis appuyez sur **[!UICONTROL Modifier]** (icône crayon) pour ouvrir la page de modification.
       >
       >
    * Pour supprimer une visionneuse de médias mixtes dans son ensemble – À partir de n’importe quel mode d’affichage (Mode Carte ou Colonne, par exemple), accédez à la visionneuse de médias mixtes. Placez le pointeur de souris sur la visionneuse, puis appuyez sur **[!UICONTROL Sélectionner]** (icône de coche). Appuyez sur la touche **[!UICONTROL Retour arrière]** de votre clavier ou sur **[!UICONTROL Plus]** (trois points de suspension), puis appuyez sur **[!UICONTROL Supprimer]**.
