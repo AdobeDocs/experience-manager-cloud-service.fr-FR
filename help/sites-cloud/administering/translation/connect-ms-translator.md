@@ -2,9 +2,9 @@
 title: Connexion à Microsoft Translator
 description: Découvrez comment connecter AEM à Microsoft Translator pour automatiser votre processus de traduction.
 feature: Copie de la langue
-role: Administrator
+role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 100%
@@ -66,7 +66,7 @@ Les pages de configuration de Microsoft Translator fournissent un lien pratique
 1. Appuyez ou cliquez sur **Modifier**.
 1. Dans la fenêtre **Modifier la configuration**, appuyez ou cliquez sur **Personnaliser le traducteur**. Utilisez la page web de Microsoft qui s’ouvre pour personnaliser votre service.
 
-## Activation des configurations du service de traducteur {#activating-the-translator-service-configurations}
+## Activation des configurations du service de traducteur   {#activating-the-translator-service-configurations}
 
 Vous devez activer les configurations de service cloud pour prendre en charge le contenu traduit qui est répliqué vers l’instance de publication. Utilisez la méthode de [publication d’une arborescence](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-and-unpublishing-a-tree) pour activer les nœuds de référentiel qui contiennent les configurations Microsoft Translator. Les nœuds se trouvent sous les nœuds parents suivants :
 
