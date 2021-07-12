@@ -2,16 +2,16 @@
 title: Réutilisation de contenu - Multi Site Manager et Live Copy
 description: Découvrez comment réutiliser du contenu avec les puissantes fonctionnalités de Live Copies et de Multi Site Manager AEM.
 feature: Multi Site Manager
-role: Administrator
+role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2685'
 ht-degree: 100%
 
 ---
 
-# Réutilisation de contenu : Multi Site Manager et Live Copy {#multi-site-manager-and-live-copy}
+# Réutilisation de contenu : Multi Site Manager et Live Copy {#multi-site-manager-and-live-copy}
 
 Multi Site Manager (MSM) vous permet d’utiliser le même contenu à plusieurs endroits différents. Pour ce faire, MSM utilise sa fonctionnalité Live Copy.
 
@@ -30,7 +30,7 @@ Cette page présente un aperçu de la réutilisation du contenu avec MSM. Les pa
 * [Conflits de déploiement de MSM](rollout-conflicts.md)
 * [Bonnes pratiques MSM](best-practices.md)
 
-## Scénarios possibles {#possible-scenarios}
+## Scénarios possibles  {#possible-scenarios}
 
 Il existe de nombreux cas d’utilisation pour MSM et les Live Copies. Voici quelques scénarios :
 
