@@ -2,16 +2,16 @@
 title: Préparation du contenu à traduire
 description: Découvrez comment préparer le contenu à traduire.
 feature: Copie de la langue
-role: Administrator
+role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 100%
 
 ---
 
-# Préparation du contenu à traduire {#preparing-content-for-translation}
+# Préparation du contenu à traduire  {#preparing-content-for-translation}
 
 Les sites web multilingues fournissent généralement une certaine quantité de contenu dans plusieurs langues. Le site est créé dans une langue, puis traduit dans d’autres langues. En général, les sites multilingues comportent des branches de pages, chaque branche contenant les pages du site dans une langue distincte.
 
@@ -134,8 +134,10 @@ Les racines de langues peuvent désormais être regroupées dans des nœuds, par
 >
 >* `/content/wknd/language-masters/en`
 >* `/content/wknd/language-masters/americas/central-america/es`
+
 >
-> Cette copie de langue `es` n’est pas détectée car elle se trouve à deux niveaux (`americas/central-america`) du nœud `en`.
+> 
+Cette copie de langue `es` n’est pas détectée car elle se trouve à deux niveaux (`americas/central-america`) du nœud `en`.
 
 >[!TIP]
 >
