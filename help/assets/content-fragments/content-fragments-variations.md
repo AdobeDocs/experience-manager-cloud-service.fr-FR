@@ -1,21 +1,21 @@
 ---
 title: Variations – création de contenu de fragment
-description: Découvrez comment les variations peuvent rendre votre contenu sans interface dans AEM encore plus flexible en vous permettant de créer du contenu pour le fragment, puis de créer des variantes de ce contenu selon vos besoins.
+description: Découvrez comment les variations peuvent rendre votre contenu découplé dans AEM encore plus flexible en vous permettant de créer du contenu pour un fragment, puis de créer des variantes de ce contenu selon vos besoins.
 feature: Fragments de contenu
-role: Business Practitioner
+role: User
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2257'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Variations – création de contenu de fragment {#variations-authoring-fragment-content}
+# Variations – création de contenu de fragment{#variations-authoring-fragment-content}
 
-[](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) Les variations sont une fonctionnalité importante des fragments de contenu d’AEM, car elles permettent de créer et de modifier des copies du contenu maître pour les utiliser sur des canaux spécifiques et/ou dans des scénarios, ce qui rend la diffusion de contenu sans interface encore plus flexible.
+Les [variations](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sont une fonction importante des fragments de contenu AEM car elles permettent de créer et de modifier des copies du contenu maître pour une utilisation sur des canaux spécifiques ou dans des cas spécifiques, ce qui rend la diffusion de votre contenu découplé encore plus flexible.
 
-À partir de l’onglet **variations**, vous pouvez :
+À partir de l’onglet **Variations**, vous pouvez :
 
 * [saisir le contenu](#authoring-your-content) de votre fragment ;
 * [créer et gérer les variations](#managing-variations) du contenu **maître** ;
@@ -45,7 +45,7 @@ Lorsque vous ouvrez votre fragment de contenu pour le modifier, l’onglet **Var
 Par exemple :
 
 ![éditeur plein écran ](assets/cfm-variations-02.png)
-:
+Vous pouvez :
 
 * effectuer des modifications directement dans l’onglet **Variations**.
 
@@ -57,7 +57,7 @@ Par exemple :
    * voir davantage d’options de modification (pour le format [Texte enrichi](#rich-text)) ;
    * accéder à un éventail d’[actions](#actions).
 
-* Pour les champs **Référence du fragment** , l’option **[Modifier le fragment de contenu](#fragment-references-edit-content-fragment)** peut être disponible, selon la définition du modèle.
+* Pour les champs **Référence de fragment**, l’option **[Modifier le fragment de contenu](#fragment-references-edit-content-fragment)** peut être disponible, selon la définition du modèle.
 
 ### Éditeur plein écran {#full-screen-editor}
 
@@ -245,7 +245,7 @@ D’autres langues sont disponibles en tant que modules de modèle de langues da
    * Toutes les phrases à éliminer sont biffées en rouge.
    * Cliquez sur n’importe quelle phrase en surbrillance pour la conserver dans le contenu résumé.
    * Cliquez sur n’importe quelle phrase qui ne figure pas en surbrillance pour l’éliminer.
-   * Les statistiques de synthèse s’affichent : **Réel** et **Cible**-
+   * Les statistiques de synthèse s’affichent : **Réel** et **Cible**-
    * Vous pouvez **prévisualiser** les modifications.
 
    ![comparaison des résumés](assets/cfm-variations-06.png)
@@ -368,7 +368,7 @@ Il existe différentes méthodes pour ajouter des [images](/help/assets/content-
    * **Marquage** : la référence restera intégrée au fragment.
 
 
-## Gestion des variations {#managing-variations}
+## Gestion des variations  {#managing-variations}
 
 ### Création d’une variation {#creating-a-variation}
 
@@ -424,7 +424,7 @@ Vous ne pouvez pas supprimer le **Maître**.
 
 ### Synchronisation avec le maître {#synchronizing-with-master}
 
-Le **Maître** fait partie intégrante d’un fragment de contenu et, par définition, il contient la copie maître du contenu, tandis que les variations contiennent les versions individuelles et personnalisées de ce contenu. Lorsque le Principal est mis à jour, il est possible que ces modifications soient également pertinentes pour les variations et, par conséquent, qu’elles doivent être propagées.
+Le **Maître** fait partie intégrante d’un fragment de contenu et, par définition, il contient la copie maître du contenu, tandis que les variations contiennent les versions individuelles et personnalisées de ce contenu. Lorsque le maître est mis à jour, il est possible que ces modifications soient également liées aux variations et qu’elles doivent, par conséquent, être appliquées à celles-ci.
 
 Lors de la modification d’une variation, vous pouvez accéder à l’action de synchronisation de l’élément actuel de la variation avec le maître. Vous pouvez ainsi copier automatiquement les modifications apportées au Maître sur la variation requise.
 
@@ -448,7 +448,7 @@ Le transfert des modifications n’est pas proposé *entre une variation et le *
 
 1. Le maître et la variation seront affichés côte à côte :
 
-   * le contenu ajouté figure en vert (ajouté à la variation) ;
+   * le contenu ajouté figure en vert  (ajouté à la variation) ;
    * le contenu supprimé (de la variation) figure en rouge.
    * le texte remplacé apparaît en bleu
 
