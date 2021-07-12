@@ -2,9 +2,9 @@
 title: Vidéo 360/VR
 description: Découvrez comment utiliser les vidéos à 360° et de réalité virtuelle (VR) dans Dynamic Media.
 feature: Vidéo 360 VR
-role: Business Practitioner
+role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: 5e9cf9494ce9d54dd1d3b7818b3b975b2acb4e3c
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 79%
