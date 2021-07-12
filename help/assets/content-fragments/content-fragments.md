@@ -1,19 +1,19 @@
 ---
 title: Utilisation de fragments de contenu
-description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) en tant que Cloud Service vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages, idéal pour une diffusion sans interface utilisateur de page.
+description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages de façon idéale pour une diffusion découplée.
 feature: Fragments de contenu
-role: Business Practitioner
+role: User
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2037'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Utilisation de fragments de contenu {#working-with-content-fragments}
 
-Avec Adobe Experience Manager (AEM) en tant que Cloud Service, les fragments de contenu vous permettent de concevoir, créer, organiser et [publier du contenu indépendant des pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md) Ils vous permettent de préparer du contenu prêt à être utilisé à plusieurs emplacements/sur plusieurs canaux, idéal pour une diffusion sans interface.
+Avec Adobe Experience Manager (AEM) as a Cloud Service, les fragments de contenu vous permettent de concevoir, de créer, d’organiser et de [publier du contenu indépendant des pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Ils vous permettent de préparer du contenu prêt à être utilisé à plusieurs emplacements ou sur plusieurs canaux, idéal pour une diffusion découplée.
 
 Les fragments de contenu contiennent du contenu structuré :
 
@@ -53,7 +53,7 @@ Cette page et les suivantes portent sur les tâches de création, de configurati
 >* [Personnalisation et extensions de fragments de contenu](/help/implementing/developing/extending/content-fragments-customizing.md)
 * [Fragments de contenu – Configuration des composants pour le rendu](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 * [Prise en charge des fragments de contenu dans l’API HTTP AEM Assets ](/help/assets/content-fragments/assets-api-content-fragments.md)
-* [API GraphQL d’AEM à utiliser avec des fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md)
+* [API AEM GraphQL à utiliser avec des fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
 Le nombre de canaux de communication augmente tous les ans. En règle générale, les canaux font référence au mécanisme de diffusion :
@@ -82,7 +82,7 @@ Les **fragments de contenu** et les **[fragments d’expérience](/help/sites-cl
 Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
 Pour plus d’informations, voir également [Présentation des fragments de contenu et d’expérience dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=fr#content-fragments).
 
-## Fragments de contenu et Content Services {#content-fragments-and-content-services}
+## Fragments de contenu et Content Services  {#content-fragments-and-content-services}
 
 AEM Content Services est conçu pour généraliser la description et la diffusion de contenu dans/à partir d’AEM à des canaux autres que des pages web.
 
@@ -99,7 +99,7 @@ Les fragments de contenu AEM peuvent être utilisés pour décrire et gérer du
 Associé aux fonctionnalités d’exportation JSON des composants de base AEM, ce contenu structuré peut ensuite être utilisé pour livrer le contenu AEM à des canaux autres que les pages AEM.
 
 >[!NOTE]
-Voir [Le découplage et AEM](/help/implementing/developing/headless/introduction.md) pour une introduction au développement découplé pour AEM Sites as a Cloud Service.
+Consultez [Le découplage et AEM](/help/implementing/developing/headless/introduction.md) pour une introduction au développement découplé pour AEM Sites as a Cloud Service.
 
 >[!NOTE]
 AEM prend également en charge la traduction des fragments de contenu.
