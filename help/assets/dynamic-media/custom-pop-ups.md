@@ -2,9 +2,9 @@
 title: Création de fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide
 description: '"Découvrez comment l’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec les informations sur les produits pour générer un achat. Vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles Windows®."'
 feature: Images interactives,Vidéos interactives,Bannières de carrousel
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 82%
