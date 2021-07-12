@@ -2,9 +2,9 @@
 title: Conflits de déploiement
 description: Découvrez comment gérer et résoudre les conflits de déploiement en cas de gestion de plusieurs sites.
 feature: Multi Site Manager
-role: Administrator
+role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 100%
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 Des conflits peuvent apparaître si de nouvelles pages portant le même nom de page sont créées dans la branche de plan directeur et dans une branche de Live Copy dépendante. Ces conflits doivent être gérés et résolus lors du déploiement.
 
-## Gestion des conflits {#conflict-handling}
+## Gestion des conflits  {#conflict-handling}
 
 Lorsqu’il y a des pages en conflit (dans les branches Plan directeur et Live Copy), MSM permet de définir comment elles doivent être gérées (voire si elles doivent l’être).
 
