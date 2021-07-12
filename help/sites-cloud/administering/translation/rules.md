@@ -2,9 +2,9 @@
 title: Identification du contenu à traduire
 description: Découvrez comment les règles de traduction identifient le contenu à traduire.
 feature: Copie de la langue
-role: Administrator
+role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 100%
@@ -215,7 +215,7 @@ Le résultat dans le fichier xml ressemble à ce qui suit :
 <property inherit="true" name="jcr:language" translate="false" updateDestinationLanguage="true"/>
 ```
 
-## Modification manuelle du fichier de règles {#editing-the-rules-file-manually}
+## Modification manuelle du fichier de règles  {#editing-the-rules-file-manually}
 
 Le fichier `translation_rules.xml` qui est installé avec AEM contient un ensemble par défaut de règles de traduction. Vous pouvez modifier le fichier pour prendre en charge les exigences de vos projets de traduction. Par exemple, vous pouvez ajouter des règles de sorte que le contenu de vos composants personnalisés soit traduit.
 
