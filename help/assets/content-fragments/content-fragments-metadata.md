@@ -1,19 +1,19 @@
 ---
 title: Métadonnées – propriétés des fragments
-description: Découvrez comment afficher et modifier les propriétés de métadonnées des fragments de contenu dans AEM pour ajuster votre contenu sans affichage.
+description: Découvrez comment afficher et modifier les propriétés de métadonnées des fragments de contenu dans AEM pour ajuster votre contenu découplé.
 feature: Fragments de contenu
-role: Business Practitioner
+role: User
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '142'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
 # Métadonnées – propriétés des fragments {#metadata-fragment-properties}
 
-Découvrez comment afficher et modifier les propriétés de métadonnées des fragments de contenu dans AEM pour ajuster votre contenu sans affichage.
+Découvrez comment afficher et modifier les propriétés de métadonnées des fragments de contenu dans AEM pour ajuster votre contenu découplé.
 
 ## Modification des propriétés/métadonnées {#editing-properties-meta-data}
 
