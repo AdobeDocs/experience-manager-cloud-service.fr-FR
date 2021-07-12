@@ -2,9 +2,9 @@
 title: Bonnes pratiques de traduction
 description: Découvrez les bonnes pratiques compilées par les équipes d’ingénierie et de consulting d’Adobe qui vous aideront à mener à bien vos projets de traduction.
 feature: Copie de la langue
-role: Administrator
+role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 100%
@@ -24,7 +24,7 @@ La création ou le développement d’une présence mondiale sur le web peut êt
 * Si les ressources le permettent, il est préférable de gérer l’activité de traduction avec une équipe centrale qui peut développer une expertise dans les outils, les processus et les relations avec les fournisseurs nécessaires.
 * **Planifiez**, **prototypez** et **testez** votre structure et vos processus globaux en vous assurant qu’ils soutiennent votre activité et que vous bénéficiez de l’appui nécessaire de la part des parties prenantes des différentes zones géographiques.
 
-## Structure du site {#site-structure}
+## Structure du site  {#site-structure}
 
 * Lors de la conception de la structure de votre site, commencez par examiner votre contenu et déterminer où et dans quelle langue il est rédigé. Cet emplacement doit être le niveau supérieur de votre site.
 * Il est recommandé d’adopter une **structure basée sur les langues** ne comportant pas de plus de 3 niveaux entre le niveau supérieur auteur et les sites des pays.
