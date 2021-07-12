@@ -2,16 +2,16 @@
 title: Console Aperçu de Live Copy
 description: Découvrez les principes de base de la console d’aperçu de Live Copy pour comprendre rapidement le statut des Live Copies afin de synchroniser le contenu.
 feature: Multi Site Manager
-role: Administrator
+role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 100%
 
 ---
 
-# Console Aperçu de la Live Copy {#live-copy-overview-console}
+# Console Aperçu de Live Copy {#live-copy-overview-console}
 
 L’**aperçu de Live Copy** vous permet :
 
@@ -57,7 +57,7 @@ L’**aperçu de la Live Copy** peut être ouvert lorsque lors de l’affichage 
 
 1. Utilisez **Fermer** pour fermer l’aperçu et retourner à la console **Sites**.
 
-## Utilisation de l’aperçu de la Live Copy {#using-the-live-copy-overview}
+## Utilisation de l’aperçu de la Live Copy  {#using-the-live-copy-overview}
 
 La fenêtre **Aperçu de Live Copy** donne un aperçu du statut des Live Copies liées à la page sélectionnée.
 
