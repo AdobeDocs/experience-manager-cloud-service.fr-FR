@@ -1,12 +1,12 @@
 ---
 title: FAQ sur la diffusion de contenu HTTP/2
 description: Découvrez la diffusion de contenu HTTP/2.
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '794'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -16,15 +16,15 @@ Adobe se réjouit d’annoncer la disponibilité de la diffusion de contenu HTTP
 
 >[!NOTE]
 >
->Cette fonctionnalité nécessite l’utilisation du réseau de diffusion de contenu prêt à l’emploi fourni avec Adobe Experience Manager - Dynamic Media. Aucun autre réseau de diffusion de contenu personnalisé n’est pris en charge avec cette fonctionnalité.
+>Cette fonctionnalité nécessite l’utilisation du réseau réseau de diffusion de contenu prêt à l’emploi fourni avec Adobe Experience Manager – Dynamic Media. Aucun autre réseau réseau de diffusion de contenu personnalisé n’est pris en charge avec cette fonctionnalité.
 
-## Qu’est-ce que le HTTP/2 ? {#what-is-http}
+## Qu’est-ce que le HTTP/2 ?  {#what-is-http}
 
 Le HTTP/2 améliore la communication entre les navigateurs et les serveurs, en accélérant le transfert d’informations tout en réduisant la puissance de traitement nécessaire.
 
-L’article du site Web [Ce que vous devez savoir sur HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html) décrit le HTTP/2 et ses avantages d’une manière brève et simple.
+L’article du site web [What you must know about HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html) décrit le HTTP/2 et ses avantages d’une manière brève et simple.
 
-## Quels sont les principaux avantages à la transition vers HTTP/2 pour la diffusion de contenu ? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
+## Quels sont les principaux avantages à la transition vers HTTP/2 pour la diffusion de contenu ?  {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
 L’amélioration des performances varie considérablement en fonction de nombreux facteurs. Par exemple, le code de votre site web, la manière dont vous utilisez Dynamic Media, le périphérique, l’écran et l’emplacement du client.
 
@@ -37,7 +37,7 @@ La démonstration suivante illustre la différence entre le chargement HTTP/1 et
 
 [https://http2.akamai.com/demo](https://http2.akamai.com/demo)
 
-## Puis-je passer à HTTP/2 ? {#am-i-eligible-to-switch-over-to-http}
+## Puis-je passer à HTTP/2 ?  {#am-i-eligible-to-switch-over-to-http}
 
 Pour utiliser HTTP/2, vous devez satisfaire aux exigences suivantes :
 
@@ -49,7 +49,7 @@ Pour utiliser HTTP/2, vous devez satisfaire aux exigences suivantes :
 
    Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**. Recherchez le champ intitulé **Nom du serveur publié**. Si vous utilisez actuellement un domaine Dynamic Media générique, vous pouvez demander une migration vers votre domaine personnalisé dans le cadre de cette transition.
 
-## Quel est le processus d’activation de HTTP/2 pour mon compte Dynamic Media ? {#what-is-the-process-for-enabling-http-for-my-dm-account}
+## Quel est le processus d’activation de HTTP/2 pour mon compte Dynamic Media ?  {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
 [Utilisez l’Admin Console pour créer un dossier de support](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) et demander à passer en HTTP/2 ; ce processus n’est pas automatique.
 
@@ -76,7 +76,7 @@ Pour utiliser HTTP/2, vous devez satisfaire aux exigences suivantes :
 
 
 
-## Quand puis-je espérer passer à HTTP/2 ? {#when-can-i-expect-to-be-transitioned-over-to-http}
+## Quand puis-je espérer passer à HTTP/2 ?  {#when-can-i-expect-to-be-transitioned-over-to-http}
 
 Les demandes sont traitées dans l’ordre dans lequel elles sont reçues par le support technique.
 
