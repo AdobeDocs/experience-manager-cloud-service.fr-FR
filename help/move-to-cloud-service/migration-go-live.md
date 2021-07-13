@@ -1,15 +1,20 @@
 ---
 title: Phase de migration active
 description: Phase de migration active
-source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
+source-git-commit: 819a94f3ec10268bca4ebbb30f4a6f44fb460bca
 workflow-type: tm+mt
-source-wordcount: '49'
-ht-degree: 83%
+source-wordcount: '83'
+ht-degree: 49%
 
 ---
 
 
 # Activation {#golive-migration}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_prep"
+>title="Préparation de l’activation"
+>abstract="Pour garantir une activation fluide et réussie d’AEM en tant que Cloud Service, vous devez prévoir des périodes de gel du code et du contenu, des itérations de test, des compléments de contenu, des tests de performance, des tests de sécurité, etc."
 
 Pour garantir une activation fluide et réussie d’AEM as a Cloud Service, vous pouvez procéder comme suit :
 
