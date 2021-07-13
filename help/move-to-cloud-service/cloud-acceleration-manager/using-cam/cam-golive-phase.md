@@ -1,10 +1,10 @@
 ---
 title: Phase de mise en service dans Cloud Acceleration Manager
 description: Cette page présente un aperçu de la phase d’activation de Cloud Acceleration Manager.
-source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
+source-git-commit: 22ee20401a8c576ae56547cf678b9f5c0d69362d
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 1%
+source-wordcount: '150'
+ht-degree: 2%
 
 ---
 
@@ -12,8 +12,6 @@ ht-degree: 1%
 # Phase de mise en service dans Cloud Accelerated Manager {#golive-phase-cam}
 
 La carte Go Live fournit tout le contenu pertinent qui met en évidence la préparation, les actions spécifiques à entreprendre et une prise en compte approfondie pour garantir une activation fluide et réussie d’AEM en tant que Cloud Service.
-
-La phase de GoLive comprend [Go Live](#go-live).
 
 Cliquez sur la carte de votre projet pour ouvrir la page d’entrée du projet et accédez à la section **Go Live**, comme illustré dans la figure ci-dessous.
 
@@ -31,6 +29,6 @@ Consultez cette section pour explorer la carte d’activité GoLive :
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/golive-1.png)
 
-1. Un carrousel de contenu contenant des informations pertinentes pour cette phase du parcours de migration s’affiche.
+1. Un carrousel de contenu affiche des informations pertinentes pour cette phase du parcours de migration.
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/golive-2.png)
