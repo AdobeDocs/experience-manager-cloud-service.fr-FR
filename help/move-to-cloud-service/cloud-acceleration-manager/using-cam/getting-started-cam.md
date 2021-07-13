@@ -1,10 +1,7 @@
 ---
 title: Prise en main de Cloud Acceleration Manager
 description: Cette page présente un aperçu de l’utilisation de Cloud Acceleration Manager et de sa prise en main.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
+source-git-commit: c9fb45208ea8611ec8bcbc641ea23ad21ebfe09e
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 4%
@@ -16,7 +13,7 @@ ht-degree: 4%
 
 Cloud Acceleration Manager (CAM) est une application gratuite basée sur le cloud qui fournit une évaluation de la mise en oeuvre de l’AEM actuelle d’un client et aide à gérer son parcours à AEM en tant que Cloud Service en suivant la méthodologie de migration recommandée par l’Adobe.
 
-## Intention {#objective}
+## Objectif {#objective}
 
 Ce document vous aide à comprendre comment commencer à utiliser la gestion de l’accélération cloud (CAM). Après lecture, vous devriez être en mesure de :
 
@@ -90,6 +87,6 @@ Pour supprimer votre projet, procédez comme suit :
 
 1. Cliquez sur **Supprimer** pour confirmer l’étape.
 
-## Suite {#whats-next}
+## Et après ? {#whats-next}
 
 Une fois que vous avez appris à vous connecter à Cloud Acceleration Manager et à créer un projet, vous êtes prêt à passer à l’étape suivante, Utilisation de la phase de préparation.
