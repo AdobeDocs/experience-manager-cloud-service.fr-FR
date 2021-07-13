@@ -1,10 +1,10 @@
 ---
 title: Phase de mise en service dans Cloud Acceleration Manager
 description: Cette page présente un aperçu de la phase d’activation de Cloud Acceleration Manager.
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 2%
+source-wordcount: '157'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ Cliquez sur la carte de votre projet pour ouvrir la page d’entrée du projet e
 ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/golive-1.png)
 
 >[!NOTE]
->Pour en savoir plus, voir Création et gestion d’un projet dans Cloud Acceleration Manager .
+>Pour en savoir plus, voir [Création et gestion d’un projet dans Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en#create-project).
 
 
 ## Utilisation de la carte d’activité GoLive {#go-live}
