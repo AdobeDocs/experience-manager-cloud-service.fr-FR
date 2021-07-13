@@ -5,10 +5,10 @@ breadcrumb-title: Guide de déplacement
 user-guide-description: Découvrez le parcours de transition vers Cloud Service.
 feature: Déploiement
 role: Architect, Developer
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 69%
+source-wordcount: '127'
+ht-degree: 70%
 
 ---
 
@@ -19,6 +19,7 @@ ht-degree: 69%
 + Phases du parcours de transition {#phases}
    + [Préparation](/help/move-to-cloud-service/migration-readiness.md)
    + [Mise en œuvre](/help/move-to-cloud-service/migration-implementation.md)
+   + [Activation](/help/move-to-cloud-service/migration-go-live.md)
    + [Publication activée](/help/move-to-cloud-service/migration-post-go-live.md)
 + Cloud Accelerated Manager {#cloud-acceleration-manager}
    + Présentation de Cloud Accelerated Manager {#introduction-cam}
