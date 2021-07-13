@@ -1,9 +1,9 @@
 ---
 title: Phase de mise en oeuvre dans Cloud Accelerated Manager
 description: Cette page présente un aperçu de la phase de mise en oeuvre dans Cloud Acceleration Manager.
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '585'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ Cliquez sur la carte de votre projet pour ouvrir la page d’entrée du projet e
 ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-1.png)
 
 >[!NOTE]
->Pour en savoir plus, voir Création et gestion d’un projet dans Cloud Acceleration Manager .
+>Pour en savoir plus, voir [Création et gestion d’un projet dans Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en#create-project).
 
 
 ## Utilisation de la carte de développement locale {#local-development}
@@ -102,4 +102,4 @@ Vous pouvez également estimer la taille des chemins de référentiel spécifiqu
 
 ## Et après ? {#whats-next}
 
-Une fois que vous avez appris à vous connecter à Cloud Acceleration Manager et à utiliser la phase de mise en oeuvre, vous êtes prêt à passer à l’étape suivante, Utilisation de la phase de GoLive.
+Une fois que vous avez appris à vous connecter à Cloud Acceleration Manager et à utiliser la phase de mise en oeuvre, vous êtes prêt à passer à l’étape suivante, [À l’aide de la phase Go Live](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=en).
