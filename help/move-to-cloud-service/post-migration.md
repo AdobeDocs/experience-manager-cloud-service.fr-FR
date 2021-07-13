@@ -1,7 +1,7 @@
 ---
 title: Phase post-migration
 description: Phase post-migration
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 96%
@@ -18,7 +18,6 @@ Les outils suivants sont disponibles pour résoudre les problèmes liés aux env
 * **Developer Console**
 * **CRXDE Lite**
 * **Gestion des journaux**
-
 
 ## Developer Console {#developer-console}
 
