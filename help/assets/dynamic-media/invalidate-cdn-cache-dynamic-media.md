@@ -1,17 +1,17 @@
 ---
-title: Invalidation du cache CDN (réseau de diffusion de contenu) par le biais de Dynamic Media
-description: « Apprenez comment l’invalidation du contenu de réseau de diffusion de continu (CDN) en cache vous permet de mettre à jour rapidement les ressources diffusées par Dynamic Media, au lieu d’attendre l’expiration du cache. »
+title: Invalidation du cache CDN (réseau de diffusion de contenu) par le biais de Dynamic Media
+description: Découvrez comment invalider le contenu mis en cache de votre réseau de diffusion de contenu (CDN) pour vous permettre de mettre rapidement à jour les ressources diffusées par Dynamic Media, au lieu d’attendre que le cache arrive à expiration.
 feature: Gestion des ressources
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
-source-wordcount: '1308'
-ht-degree: 100%
+source-wordcount: '1311'
+ht-degree: 82%
 
 ---
 
-# Invalidation du cache du réseau CDN par le biais de Dynamic Media {#invalidating-cdn-cache-for-dm-assets-in-aem-cs}
+# Invalidation du cache CDN via Dynamic Media {#invalidating-cdn-cache-for-dm-assets-in-aem-cs}
 
 Les ressources Dynamic Media sont mises en cache par le réseau de diffusion de contenu (CDN) pour une diffusion rapide à vos clients. Cependant, lorsque vous apportez des mises à jour à ces ressources, vous souhaiterez peut-être que ces modifications prennent effet immédiatement sur votre site web. La purge ou l’invalidation du cache du réseau CDN vous permet de mettre rapidement à jour les ressources distribuées par Dynamic Media. Il n’est plus nécessaire d’attendre que le cache expire à l’aide d’une valeur TTL (Time To Live) (dix heures par défaut). Au lieu de cela, vous pouvez envoyer une requête depuis l’interface utilisateur de Dynamic Media pour que le cache arrive à expiration en quelques minutes.
 
@@ -19,13 +19,13 @@ Les ressources Dynamic Media sont mises en cache par le réseau de diffusion de 
 >
 >Cette fonctionnalité nécessite l’utilisation du réseau CDN prêt à l’emploi fourni avec Adobe Experience Manager Dynamic Media. Aucun autre réseau CDN personnalisé n’est pris en charge avec cette fonctionnalité.
 
-Voir aussi [Présentation de la mise en cache dans Dynamic Media](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
+Voir aussi [Présentation du cache dans Dynamic Media ](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
 **Pour invalider le cache du réseau CDN au moyen de Dynamic Media :**
 
 *Partie 1 de 2 : création d’un modèle d’invalidation du réseau CDN*
 
-1. Dans Experience Manager as a Cloud Service, appuyez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Modèle d’invalidation du réseau de diffusion de contenu]**.
+1. Dans Adobe Experience Manager as a Cloud Service, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Modèle d’invalidation du réseau de diffusion de contenu]**.
 
    ![Fonction de validation du réseau CDN](/help/assets/assets-dm/cdn-invalidation-template.png)
 
@@ -38,12 +38,12 @@ Voir aussi [Présentation de la mise en cache dans Dynamic Media](https://helpx.
 
    ![Modèle d’invalidation du réseau CDN – Créer](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
-1. Dans le coin supérieur droit de la page **[!UICONTROL Modèle d’invalidation du réseau de diffusion de contenu]**, appuyez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL OK]**.<br>
+1. Dans le coin supérieur droit de la page **[!UICONTROL Modèle d’invalidation du réseau de diffusion de contenu]**, sélectionnez **[!UICONTROL Enregistrer]**, puis sélectionnez **[!UICONTROL OK]**.<br>
 
    *Partie 2 de 2 : définition des options d’invalidation du réseau CDN*
    <br>
 
-1. Dans Experience Manager as a Cloud Service, appuyez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Invalidation du réseau de diffusion de contenu]**.
+1. Dans Experience Manager en tant que Cloud Service, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Invalidation du réseau de diffusion de contenu]**.
 
    ![Fonction de validation du réseau CDN](/help/assets/assets-dm/cdn-invalidation-path.png)
 
@@ -61,18 +61,18 @@ Voir aussi [Présentation de la mise en cache dans Dynamic Media](https://helpx.
    | **[!UICONTROL Invalider les paramètres d’image prédéfinis associés à la ressource dans le réseau de diffusion de contenu]** | (Facultatif) Lorsque vous cochez cette option, les ressources sélectionnées et toutes les URL de paramètres d’image prédéfinis associées sont automatiquement formées en vue de l’invalidation du cache.<br>Les ressources et leurs URL prédéfinies associées sont automatiquement formées en vue de l’invalidation. Cette option fonctionne uniquement pour les ressources d’image. |
    | **[!UICONTROL Invalidation en fonction d’un modèle]** | (Facultatif) Cochez cette option afin de n’utiliser que le modèle défini pour la formation d’URL. |
    | **[!UICONTROL Ajouter des ressources]** | Utilisez le sélecteur de ressources pour sélectionner les ressources que vous souhaitez invalider. Vous pouvez sélectionner des ressources publiées ou non publiées.<br>La mise en cache sur le réseau CDN repose sur des URL et non sur des ressources. Il est donc nécessaire de connaître les URL complètes qui se trouvent sur votre site web. Après avoir déterminé ces URL, vous pouvez les ajouter au modèle. Vous pouvez ensuite sélectionner et ajouter ces ressources et invalider les URL en une seule étape. <br>Utilisez cette option avec les options **[!UICONTROL Invalider les paramètres d’image prédéfinis associés à la ressource dans le réseau de diffusion de contenu]** ou **[!UICONTROL Invalidation en fonction d’un modèle]**, ou les deux. |
-   | **[!UICONTROL Ajouter une URL]** | Ajoutez ou collez manuellement des chemins d’URL complets aux ressources Dynamic Media dont vous souhaitez invalider le cache de réseau CDN. Utilisez cette option si vous n’avez pas créé de modèle d’invalidation du réseau CDN dans ***Partie 1 de 2 : création d’un modèle d’invalidation du réseau CDN*** et n’avez que quelques ressources à invalider.<br>**Important :** Chaque URL que vous ajoutez doit se trouver sur sa propre ligne.<br>Vous pouvez invalider jusqu’à 1 000 URL à la fois. Si le nombre d’URL indiqué dans le champ de texte URL **[!UICONTROL Ajouter une URL]** est supérieur à 1 000, vous ne pouvez pas appuyer sur **[!UICONTROL Suivant]**. Dans ce cas, vous devez appuyer sur **[!UICONTROL X]** à droite d’une ressource sélectionnée ou sur une URL ajoutée manuellement pour la supprimer de la liste d’invalidation.<br>Spécifiez des URL pour les recadrages intelligents d’images dans le modèle d’invalidation du réseau CDN ou dans ce champ de texte **[!UICONTROL Ajouter une URL]**. |
+   | **[!UICONTROL Ajouter une URL]** | Ajoutez ou collez manuellement des chemins d’URL complets aux ressources Dynamic Media dont vous souhaitez invalider le cache de réseau CDN. Utilisez cette option si vous n’avez pas créé de modèle d’invalidation du réseau CDN dans ***Partie 1 de 2 : création d’un modèle d’invalidation du réseau CDN*** et n’avez que quelques ressources à invalider.<br>**Important :** Chaque URL que vous ajoutez doit se trouver sur sa propre ligne.<br>Vous pouvez invalider jusqu’à 1 000 URL à la fois. Si le nombre d’URL dans le champ de texte **[!UICONTROL Ajouter une URL]** est supérieur à 1 000, vous ne pouvez pas sélectionner **[!UICONTROL Suivant]**. Dans ce cas, vous devez sélectionner **[!UICONTROL X]** à droite d’une ressource sélectionnée ou une URL ajoutée manuellement pour la supprimer de la liste d’invalidation.<br>Spécifiez des URL pour les recadrages intelligents d’images dans le modèle d’invalidation du réseau CDN ou dans ce champ de texte **[!UICONTROL Ajouter une URL]**. |
 
-1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Suivant]**.
+1. Près du coin supérieur droit de la page, sélectionnez **[!UICONTROL Suivant]**.
 1. Sur la page **[!UICONTROL Invalidation du réseau de diffusion de contenu]**- **[!UICONTROL Confirmer]**, dans la zone de liste **[!UICONTROL URL]**, apparaît une liste d’une ou plusieurs URL générées à partir du modèle d’invalidation du réseau CDN que vous avez créé précédemment et les ressources que vous venez d’ajouter.
 
-   Par exemple, en suivant le cas de modèle d’invalidation du réseau CDN utilisé dans les étapes précédentes, supposons que vous ayez ajouté une ressource unique nommée `spinset`. Lorsque vous appuyez sur **[!UICONTROL Outils > Ressources > Invalidation du réseau de diffusion de contenu]**, les cinq URL suivantes sont générées dans l’interface utilisateur **[!UICONTROL Invalidation du réseau de diffusion de contenu – Confirmer]** :
+   Par exemple, en suivant le cas de modèle d’invalidation du réseau CDN utilisé dans les étapes précédentes, supposons que vous ayez ajouté une ressource unique nommée `spinset`. Lorsque vous accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Invalidation du réseau de diffusion de contenu]**, les cinq URL suivantes sont générées dans l’interface utilisateur **[!UICONTROL Invalidation du réseau de diffusion de contenu - Confirmer]** :
 
    ![Invalidation du réseau de diffusion de contenu – Confirmer](/help/assets/assets-dm/cdn-invalidation-confirm-2.png)
 
-   Si nécessaire, appuyez sur **X** à droite d’une URL pour supprimer cette URL du processus d’invalidation.
+   Si nécessaire, sélectionnez **X** à droite d’une URL pour la supprimer du processus d’invalidation.
 
-1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Envoyer]** pour lancer le processus d’invalidation du réseau CDN.
+1. Près du coin supérieur droit de la page, sélectionnez **[!UICONTROL Submit]** pour lancer le processus d’invalidation du réseau de diffusion de contenu.
 
 ## Résolution des erreurs d’invalidation du réseau CDN
 
@@ -83,7 +83,7 @@ Dans tous les cas, soit le lot entier est traité pour invalidation, soit le lot
 | *Échec de la récupération des URL pour les ressources sélectionnées.* | Se produit dans l’un des scénarios suivants :<br>- Une configuration Dynamic Media est introuvable.<br>- Il existe une exception lors de la récupération d’un utilisateur de service par l’intermédiaire duquel la configuration Dynamic Media est lue.<br>- Le serveur de publication ou le dossier racine d’entreprise utilisé pour former les URL est absent de la configuration Dynamic Media. |
 | *Certaines URL ne sont pas correctement définies. Correction et renvoi.* | Se produit si l’API d’invalidation du cache du réseau CDN IPS renvoie une erreur. L’erreur indique que l’URL fait référence à une autre entreprise ou qu’elle n’est pas valide selon la validation effectuée par l’API cdnCacheInvalidation d’IPS. |
 | *Échec de l’invalidation du cache de réseau CDN.* | Se produit si la requête d’invalidation du cache de réseau CDN échoue pour une autre raison. |
-| *Aucune URL entrée pour être invalidée.* | Se produit si aucune URL n’est présente sur la page **[!UICONTROL Invalidation du réseau de diffusion de contenu]** – **[!UICONTROL Confirmer]** et que vous appuyez sur **[!UICONTROL Envoyer]**. |
+| *Aucune URL entrée pour être invalidée.* | Se produit si aucune URL n’est présente dans la page **[!UICONTROL Invalidation du réseau de diffusion de contenu]** - **[!UICONTROL Confirmer]** et que vous sélectionnez **[!UICONTROL Envoyer]**. |
 
 
-<!--  | I do not want to create a template. | Near the upper-right corner of the page, tap **[!UICONTROL Cancel]**, then continue with ***Part 2: Working with CDN Invalidation***. Note that while you are not required to create a template to use CDN Invalidation, Adobe recommends that you create one, especially if you have numerous assets that you need to update immediately, on a regular basis. The template is used at the time you set CDN invalidation options. | -->
+<!--  | I do not want to create a template. | Near the upper-right corner of the page, select **[!UICONTROL Cancel]**, then continue with ***Part 2: Working with CDN Invalidation***. Note that while you are not required to create a template to use CDN Invalidation, Adobe recommends that you create one, especially if you have numerous assets that you need to update immediately, on a regular basis. The template is used at the time you set CDN invalidation options. | -->
