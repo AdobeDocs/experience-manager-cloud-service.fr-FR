@@ -1,9 +1,9 @@
 ---
 title: Gestion des référentiels de contenu volumineux
 description: Cette section décrit la gestion des référentiels de contenu volumineux
-source-git-commit: c19878b41970f4cd34083395ab11cf82c1db667e
+source-git-commit: 67c6c8af76b414600975fe349f025c7bf7acef5e
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1185'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 >id="aemcloud_ctt_precopy"
 >title="Gestion des référentiels de contenu volumineux"
 >abstract="Pour accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu afin de déplacer le contenu vers AEM en tant que Cloud Service, CTT peut utiliser AzCopy comme étape de précopie facultative. Une fois cette étape préalable configurée, dans la phase d’extraction, AzCopy copie les blobs d’Amazon S3 ou Azure Blob Storage vers le magasin blob du jeu de migration. Au cours de la phase d’ingestion, AzCopy copie les objets blob du magasin d’objets blob du jeu de migration vers l’AEM de destination en tant que magasin blob du Cloud Service."
->additional-url="https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10" text="Prise en main d’AzCopy"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step" text="Prise en main de l’étape AzCopy en tant que pré-copie"
 
 La copie d’un grand nombre de objets Blob avec l’outil de transfert de contenu (CTT) peut prendre plusieurs jours.
 Pour accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu afin de déplacer le contenu vers AEM en tant que Cloud Service, le CTT peut utiliser [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) comme étape de précopie facultative. Cette étape de précopie peut être utilisée lorsque l’instance d’AEM source est configurée pour utiliser un entrepôt de données Amazon S3 ou Azure Blob Storage.  Une fois cette étape préalable configurée, dans la phase d’extraction, AzCopy copie les blobs d’Amazon S3 ou Azure Blob Storage vers le magasin blob du jeu de migration. Au cours de la phase d’ingestion, AzCopy copie les objets blob du magasin d’objets blob du jeu de migration vers l’AEM de destination en tant que magasin blob du Cloud Service.
