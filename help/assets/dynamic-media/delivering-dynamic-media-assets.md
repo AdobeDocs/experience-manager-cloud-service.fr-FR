@@ -1,17 +1,17 @@
 ---
-title: Diffusion de ressources Dynamic Media
+title: Diffusion de ressources Dynamic Media
 description: Découvrez comment diffuser des ressources Dynamic Media.
 feature: Gestion des ressources
 role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
-# Diffusion de ressources Dynamic Media{#delivering-dynamic-media-assets}
+# Diffusion de ressources Dynamic Media{#delivering-dynamic-media-assets}
 
 La diffusion des ressources Dynamic Media (vidéos et images) dépend de la mise en œuvre de votre site web.
 
@@ -30,14 +30,14 @@ Avec Dynamic Media, vous disposez de plusieurs options :
 
 Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
-* [Ajout de ressources Dynamic Media aux pages web](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+* [Ajout de ressources Dynamic Media aux pages web](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 * [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/dynamic-media/embed-code.md)
-* [Activation de la protection de lien dynamique dans Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
+* [Activation de la protection de lien dynamique dans Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
 * [Liaison d’URL à une application web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [Diffusion d’images optimisées pour un site réactif](/help/assets/dynamic-media/responsive-site.md)
 * [Diffusion de contenu HTTP/2 ](/help/assets/dynamic-media/http2faq.md)
-* [Invalidation du cache du réseau CDN par le biais de Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-* [Invalidation du cache de réseau CDN par le biais de Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
+* [Invalidation du cache CDN via Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+* [Invalidation du cache CDN via Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
 * [Utilisation de jeux de règles de transformation d’URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
 ## Diffusion de ressources Dynamic Media via HTTP/2  {#http-delivery-of-dynamic-media-assets}
