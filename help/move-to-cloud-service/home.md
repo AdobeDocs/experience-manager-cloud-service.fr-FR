@@ -2,10 +2,10 @@
 title: Transition vers AEM as a Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation concernant la transition entre Adobe Experience Manager as a Cloud Service et AEM as a Cloud Service
 exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 91%
+source-wordcount: '657'
+ht-degree: 74%
 
 ---
 
@@ -19,28 +19,33 @@ ht-degree: 91%
 
 ## Avantages de la transition vers AEM as a Cloud Service {#benefits-aem-moving-to-aem-guide}
 
-AEM as a Cloud Service constitue une base technologique évolutive, sécurisée et agile pour les plates-formes Experience Manager Sites et Assets, qui permet aux spécialistes du marketing et de l’informatique de se concentrer sur la diffusion à grande échelle d’expériences performantes.
+AEM as a Cloud Service constitue une base technologique évolutive, sécurisée et agile pour les ressources, Forms et Screens Experience Manager, qui permet aux marketeurs et aux informaticiens de se concentrer sur la diffusion à grande échelle d’expériences percutantes.
 
 Avec AEM as a Cloud Service, vos équipes peuvent se concentrer sur l’innovation plutôt que sur la planification des mises à niveau de produits. Les nouvelles fonctionnalités du produit sont soigneusement testées et mises en permanence à la disposition de vos équipes, qui ont toujours accès à l’application la plus avancée.
 
 ## Présentation du processus de transition vers Cloud Service {#understanding-move}
 
-Le parcours de transition vers Cloud Service comprend trois phases : planification, exécution et post-activation.
+Le parcours de transition vers Cloud Service comprend les phases suivantes :
+
+* Préparation
+* Mise en œuvre
+* Activation
+* Publication activée
 
 Pour une transition réussie et fluide, vous devez veiller à une planification adéquate et respecter les bonnes pratiques décrites du présent guide.
 
-La figure ci-dessous est une représentation graphique du parcours recommandé de transition vers Cloud Service.
+La figure ci-dessous présente une représentation graphique du parcours de transition recommandé à AEM en tant que Cloud Service.
 
-![image](/help/move-to-cloud-service/assets/home-img1.png)
-
-Pour en savoir plus sur les différentes phases du parcours de transition vers Cloud Service, voir les sections suivantes :
-
-* **[Planification](/help/move-to-cloud-service/planning.md)**
-* **[Exécution](/help/move-to-cloud-service/execution.md)**
-* **[Post-activation](/help/move-to-cloud-service/post-go-live.md)**
+![image](/help/move-to-cloud-service/assets/move-aemcloud-process.png)
 
 
-## Guides relatifs à Experience Manager as a Cloud Service {#aem-guides}
+## Cloud Accelerated Manager {#cloud-acceleration-manager}
+
+Cloud Acceleration Manager est une application cloud conçue pour guider vos équipes informatiques tout au long du parcours de transition, de la planification à la mise en ligne sur Cloud Service. Configurez vos équipes pour une migration réussie avec les bonnes pratiques, conseils, documentation et outils recommandés par l’Adobe pour vous aider à chaque phase du parcours à AEM en tant que Cloud Service.
+
+Reportez-vous à Prise en main de Cloud Acceleration Manager pour démarrer votre parcours de migration.
+
+## Guides de Experience Manager en tant que Cloud Service {#aem-guides}
 
 | Guide de l’utilisateur | Description |
 |---|---|
@@ -51,9 +56,10 @@ Pour en savoir plus sur les différentes phases du parcours de transition vers C
 | [Guide de l’utilisateur relatif à la sécurité](/help/security/home.md) | Découvrez les sujets de sécurité importants concernant Experience Manager as a Cloud Service. |
 | [Intégration](/help/onboarding/home.md) | Ce guide résume la procédure à suivre pour commencer à utiliser Experience Manager as a Cloud Service, avec les informations d’accès et des informations importantes sur la protection des données. |
 | [Guide de l’utilisateur de Sites](/help/sites-cloud/home.md) | Découvrez comment créer avec Experience Manager Sites as a Cloud Service et l’administrer. |
-| [Guide de l’utilisateur d’Assets](/help/assets/home.md) | Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service. |
-| [Guide de l’utilisateur relatif à l’implémentation](/help/implementing/home.md) | Découvrez comment créer et personnaliser des expériences à l’aide AEM fonctionnalités puissantes en explorant ces rubriques de développement et de déploiement. |
-| [Parcours de développement sans tête](/help/journey-headless/developer/overview.md) | Découvrez ce parcours guidé à travers les puissantes et flexibles fonctionnalités sans interface d’AEM pour vous préparer à votre premier projet sans interface. |
+| [Guide de l’utilisateur d’Assets](/help/assets/home.md) | Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service. |
+| [Guide de l’utilisateur de Screens](/help/screens-cloud/home.md) | Découvrez comment utiliser et administrer des Experience Manager Screens en tant que Cloud Service. |
+| [Guide de l’utilisateur relatif à l’implémentation](/help/implementing/home.md) | Découvrez comment créer et personnaliser des expériences à l’aide des puissantes fonctionnalités d’AEM en explorant ces rubriques de développement et de déploiement. |
+| [Parcours de développement découplé](/help/journey-headless/developer/overview.md) | Découvrez cette visite guidée à travers les puissantes et flexibles fonctionnalités découplées d’AEM pour vous préparer à votre premier projet découplé. |
 | [Guide de l’utilisateur des connecteurs](/help/connectors/home.md) | Découvrez comment intégrer des connecteurs dans Experience Manager as a Cloud Service. |
 | [Guide de l’utilisateur relatif aux opérations](/help/operations/home.md) | Découvrez les opérations principales d’Experience Manager as a Cloud Service, telles que les tâches d’indexation et de maintenance. |
 | [Guide de l’utilisateur de Commerce](/help/commerce-cloud/home.md) | Découvrez Commerce Integration Framework dans AEM as a Cloud Service. |
