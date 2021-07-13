@@ -1,9 +1,9 @@
 ---
 title: Phase de préparation dans Cloud Accelerated Manager
 description: Cette page présente un aperçu de la phase de préparation de Cloud Acceleration Manager.
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '604'
 ht-degree: 4%
 
 ---
@@ -133,4 +133,4 @@ Consultez cette section pour découvrir la carte de l’activité Planification 
 
 ## Et après ? {#whats-next}
 
-Une fois que vous avez appris à vous connecter à Cloud Acceleration Manager et à créer un projet, vous êtes prêt à passer à l’étape suivante, à l’aide de la phase de mise en oeuvre.
+Une fois que vous avez appris à vous connecter à Cloud Acceleration Manager et à créer un projet, vous êtes prêt à passer à l’étape suivante, à l’aide de la [phase d’implémentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).
