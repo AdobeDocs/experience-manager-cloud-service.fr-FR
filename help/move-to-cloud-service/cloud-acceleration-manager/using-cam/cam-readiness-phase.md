@@ -1,17 +1,17 @@
 ---
 title: Phase de préparation dans Cloud Accelerated Manager
 description: Cette page présente un aperçu de la phase de préparation de Cloud Acceleration Manager.
-source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
+source-git-commit: 177e24d20bc97e4a7f2be749771463d7e79005c4
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 4%
+source-wordcount: '670'
+ht-degree: 12%
 
 ---
 
 
 # Phase de préparation dans Cloud Accelerated Manager {#readiness-phase-cam}
 
-Une fois que vous avez créé un projet dans Cloud Acceleration Manager, vous pouvez commencer à exécuter les outils disponibles pendant la phase de préparation.
+Une fois que vous avez créé un projet dans Cloud Acceleration Manager, vous pouvez commencer l’évaluation de votre mise en oeuvre AEM actuelle dans la phase de préparation.
 
 La phase de préparation comprend :
 
@@ -39,7 +39,10 @@ Suivez les étapes ci-dessous pour utiliser la carte Analyse des bonnes pratique
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
 
-1. Suivez ces étapes pour télécharger BPA (Best Practices Analyzer) et l’exécuter sur un clone de votre système AEM.
+1. Pour télécharger BPA (Best Practices Analyzer), procédez comme suit :
+
+   >[!NOTE]
+   >Pour éviter toute incidence sur les instances critiques de l’entreprise, il est recommandé d’exécuter BPA dans un environnement de création aussi proche que possible de l’environnement de production concernant la personnalisation, la configuration, les contenus et les applications utilisateur. Vous pouvez également l’exécuter sur un clone de l’environnement de création de production.
 
    1. Accédez au portail [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) et téléchargez l’analyseur des bonnes pratiques sous la forme d’un fichier zip.
 
@@ -82,7 +85,7 @@ La carte **Propriétés du rapport** fournit des informations sur les propriét�
 
 #### Aperçu du rapport {#report-overview}
 
-Cette carte **Aperçu du rapport** fournit les résultats du rapport, comme illustré dans la figure ci-dessous.
+Cette carte **Aperçu du rapport** fournit les résultats du rapport et les niveaux de gravité qui s’appliquent lors de l’évaluation de la préparation à AEM en tant que Cloud Service, comme illustré dans la figure ci-dessous.
 
 ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
@@ -123,14 +126,14 @@ Vous pouvez consulter les informations suivantes dans cet onglet :
 
 Consultez cette section pour découvrir la carte de l’activité Planification et configuration .
 
-1. Cliquez sur le bouton **Afficher** de la carte **Planification et configuration** qui fournit tout le contenu approprié qui vous aidera à planifier et à configurer votre migration AEM.
+1. Cliquez sur le bouton **Afficher** à partir de la carte **Planification et configuration**. Cette carte fournit tout le contenu approprié qui vous aidera à planifier et à configurer votre migration AEM.
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-view.png)
 
-1. Un carrousel de contenu contenant des informations pertinentes pour cette phase du parcours de migration s’affiche.
+1. Un carrousel de contenu affiche toutes les informations pertinentes pour cette phase du parcours de migration.
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ## Et après ? {#whats-next}
 
-Une fois que vous avez appris à vous connecter à Cloud Acceleration Manager et à créer un projet, vous êtes prêt à passer à l’étape suivante, à l’aide de la [phase d’implémentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).
+Une fois que vous avez appris à vous connecter à Cloud Acceleration Manager et à créer un projet, vous êtes prêt à passer à l’étape suivante de la [phase d’implémentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).
