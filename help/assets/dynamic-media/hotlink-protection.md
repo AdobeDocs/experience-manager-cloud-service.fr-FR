@@ -1,17 +1,17 @@
 ---
-title: Activation de la protection de lien dynamique dans Dynamic Media
+title: Activation de la protection de lien dynamique dans Dynamic Media
 description: Découvrez comment activer la protection de lien dynamique dans Dynamic Media.
 feature: Gestion des ressources
 role: User
 exl-id: 0198b3a3-173e-46ca-a845-3f58f8eab769
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
-# Activation de la protection de lien dynamique dans Dynamic Media  {#activating-hotlink-protection-in-dynamic-media}
+# Activation de la protection de lien dynamique dans Dynamic Media {#activating-hotlink-protection-in-dynamic-media}
 
 On parle de lien dynamique lorsqu’un site web tiers utilise du code HTML pour afficher une image de votre site web. Il utilise votre bande passante chaque fois que l’image est demandée, car le navigateur du visiteur y accède directement depuis votre serveur. La *protection* de lien dynamique est une méthode qui empêche d’autres sites web d’établir un lien direct vers des images ou du contenu CSS ou JavaScript™ figurant sur vos pages web. Ce type de protection contribue à réduire l’utilisation inutile de bande passante sous votre compte Dynamic Media.
 
