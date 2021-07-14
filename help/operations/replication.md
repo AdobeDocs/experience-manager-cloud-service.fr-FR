@@ -2,10 +2,10 @@
 title: Réplication
 description: Distribution et dépannage de la réplication.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: e6e5fb6eebcd39b46dc4234999e18de9b8e3950e
+source-git-commit: 891658143d44d5bbb0e46c488e078892e2484c08
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 65%
+source-wordcount: '1189'
+ht-degree: 61%
 
 ---
 
@@ -200,4 +200,4 @@ Pour résoudre les problèmes de réplication, accédez aux files d’attente de
 ![Journaux](assets/publish-logs.png "Journaux")
 
 S’il n’a pas été possible de publier le contenu, l’intégralité de la publication est restaurée à partir du service de publication AEM.
-Dans ce cas, les files d’attente doivent être examinées afin d’identifier les éléments qui ont provoqué l’annulation de la publication. Suite à un clic sur une file d’attente signalée par un état rouge, celle contenant des éléments en attente s’affiche. Il est possible d’y effacer un ou tous les éléments, si nécessaire.
+Dans ce cas, la file d’attente principale modifiable affichera un état rouge et doit être examinée afin d’identifier le ou les éléments qui ont provoqué l’annulation de la publication. En cliquant sur cette file d’attente, les éléments en attente s’affichent, à partir desquels un seul élément ou tous les éléments peuvent être effacés si nécessaire.
