@@ -1,12 +1,12 @@
 ---
 title: Résolution des problèmes liés à Dynamic Media
-description: Conseils de dépannage lors de l’utilisation de Dynamic Media.
+description: Conseils de dépannage lorsque vous utilisez Dynamic Media.
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 100%
+source-wordcount: '992'
+ht-degree: 93%
 
 ---
 
@@ -16,13 +16,13 @@ La rubrique suivante décrit la résolution des problèmes liés à Dynamic Medi
 
 ## Nouvelle configuration Dynamic Media {#new-dm-config}
 
-Voir [Résolution des problèmes liés à une nouvelle configuration Dynamic Media](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config).
+Voir [Dépannage d’une nouvelle configuration Dynamic Media](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config).
 
 ## Général (toutes les ressources) {#general-all-assets}
 
 Vous trouverez ci-après quelques astuces et conseils généraux concernant toutes les ressources.
 
-### Propriétés de l’état de synchronisation des ressources  {#asset-synchronization-status-properties}
+### Propriétés de l’état de synchronisation des ressources {#asset-synchronization-status-properties}
 
 Vous pouvez passer en revue les propriétés de ressource suivantes dans CRXDE Lite pour vérifier que la synchronisation de la ressource depuis Adobe Experience Manager vers Dynamic Media s’est déroulée correctement :
 
@@ -137,7 +137,7 @@ Si vous êtes confronté à des problèmes au niveau de la vidéo, reportez-vous
     </ul> </td>
    <td>
     <ol>
-     <li>Vérifiez que la configuration de Dynamic Media sous Cloud Services est correctement effectuée.</li>
+     <li>Vérifiez que la configuration Dynamic Media sous Cloud Services est correctement configurée.</li>
      <li>Vérifiez que le dossier contient un profil vidéo. Vérifiez également le profil vidéo.</li>
     </ol> </td>
   </tr>
@@ -179,11 +179,11 @@ Si vous rencontrez des problèmes avec les visionneuses, reportez-vous aux conse
   <tr>
    <td>Les paramètres prédéfinis de la visionneuse ne sont pas publiés.</td>
    <td><p>Accédez à la page de diagnostic du gestionnaire d’échantillons : <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observez les valeurs calculées. Dans le cadre d’un fonctionnement correct, vous devriez voir :</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Remarque</strong> : Environ 10 minutes peuvent être nécessaires après la configuration des paramètres cloud de Dynamic Media pour que les ressources de visionneuse se synchronisent.</p> <p>S’il reste des ressources non activées, cliquez sur l’un des boutons <strong>Répertorier toutes les ressources non activées</strong> pour afficher des informations détaillées.</p> </td>
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Remarque</strong> : Environ 10 minutes peuvent être nécessaires après la configuration des paramètres cloud de Dynamic Media pour que les ressources de visionneuse se synchronisent.</p> <p>Si les ressources non activées restent, sélectionnez l’un des boutons <strong>Lister toutes les ressources non activées</strong> pour afficher les détails.</p> </td>
    <td>
     <ol>
      <li>Accédez à la liste des paramètres prédéfinis de la visionneuse dans les outils d’administration : <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>Sélectionnez tous les paramètres prédéfinis de visionneuse, puis cliquez sur <strong>Publier</strong>.</li>
+     <li>Sélectionnez tous les paramètres prédéfinis de la visionneuse, puis <strong>Publier</strong>.</li>
      <li>Revenez au gestionnaire d’échantillons et notez que le nombre de ressources non activées est maintenant égal à zéro.</li>
     </ol> </td>
   </tr>
