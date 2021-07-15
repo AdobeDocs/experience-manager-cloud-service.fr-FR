@@ -2,16 +2,24 @@
 title: 'Création d’un programme de production '
 description: Création d’un programme de production
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 8766b6fc6044a292b6dc7c2d9203a70d082edb01
+source-git-commit: e51ab417af5aa77019e8ba3fa5c452c9b25b2d35
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 80%
+source-wordcount: '246'
+ht-degree: 93%
 
 ---
 
 # Création d’un programme de production {#create-production-program}
 
 Un programme de *production* est destiné à un utilisateur qui connaît AEM et Cloud Manager et qui est prêt à se lancer dans l’écriture, la compilation et le test de code puis à le déployer en production.
+
+Regardez les tutoriels vidéo en deux parties ci-dessous pour savoir comment créer un programme dans Cloud Manager :
+
+>[!VIDEO](https://video.tv.adobe.com/v/334953)
+
+>[!VIDEO](https://video.tv.adobe.com/v/334954)
+
+Ou,
 
 Pour créer un programme de production, procédez comme suit :
 
@@ -26,12 +34,12 @@ Pour créer un programme de production, procédez comme suit :
 
    ![](assets/create-prod1.png)
 
-1. L’utilisateur sélectionne les solutions à inclure dans le programme dans l’écran présenté après l’écran ci-dessus. Une fois que vous avez sélectionné la ou les solutions requises, cliquez sur **Créer**.
+1. L’utilisateur sélectionne les solutions à inclure dans le programme dans l’écran présenté après l’écran ci-dessus. Une fois la ou les solutions obligatoires sélectionnées, cliquez sur **Créer**.
 
 
    ![](assets/setup-prod-select.png)
 
-   De plus, vous pouvez sélectionner l’option de module complémentaire **Commerce** sous **Sites**, comme illustré dans la figure ci-dessous, puis cliquer sur **Créer**.
+   Vous pouvez également sélectionner l’option de module complémentaire **Commerce** sous **Sites**, comme illustré dans l’image ci-dessous, puis cliquer sur **Créer**.
 
    ![](assets/setup-prod-commerce.png)
 
