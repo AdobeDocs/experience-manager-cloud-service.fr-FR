@@ -3,10 +3,10 @@ title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service versio
 description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.7.0
 feature: Informations sur la version
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 40e5d00abc3caceadbbb26097d6891f62e2cdbd6
+source-git-commit: e24610cef6d134ddf9ce8abe9a5893deac08eeb6
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 23%
+source-wordcount: '349'
+ht-degree: 24%
 
 ---
 
@@ -32,7 +32,7 @@ La prochaine version est prévue pour le 12 août 2021.
 
 * Le nombre maximal de certificats SSL pris en charge est passé à 20 par programme.
 
-* Le nombre maximal de domaines pouvant être configurés est passé à 500 par environnement.
+* Le nombre maximal de domaines pouvant être configurés a été porté à 500 par environnement.
 
 * Les boutons **Gérer Git** ont été renommés **Accéder aux informations Git** et la boîte de dialogue a été actualisée visuellement.
 
@@ -46,11 +46,9 @@ La prochaine version est prévue pour le 12 août 2021.
 
 * Le message d’erreur affiché lorsque le nombre maximal de certificats SSL a été atteint n’était pas utile.
 
-* Dans certains cas, il peut y avoir une incohérence dans la version affichée dans la carte du pipeline sur la page d’aperçu.
+* Dans certains cas, il peut y avoir une incohérence dans la version affichée dans la carte de pipeline de la page **Aperçu**.
 
 * L’assistant d’ajout de programme indiquait de manière incorrecte que le nom ne peut pas être modifié après la création.
-
-* Dans certains cas, l’aperçu n’était pas une option disponible lors de la liaison d’une Liste autorisée IP à un environnement.
 
 ### Problèmes connus {#known-issues}
 
