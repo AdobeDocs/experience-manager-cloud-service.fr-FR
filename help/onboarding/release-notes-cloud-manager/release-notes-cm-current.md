@@ -3,10 +3,10 @@ title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service versio
 description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.7.0
 feature: Informations sur la version
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 06dca3b3e94b27f592681e661cd5c9883c0f6422
+source-git-commit: 40e5d00abc3caceadbbb26097d6891f62e2cdbd6
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 24%
+source-wordcount: '366'
+ht-degree: 23%
 
 ---
 
@@ -28,13 +28,15 @@ La prochaine version est prévue pour le 12 août 2021.
 
 * L’adresse IP sortante sortante sera désormais consignée dans le fichier journal de l’étape de création.
 
-* Les environnements d’évaluation et de production exécutant d’anciennes versions d’AEM signalent désormais l’état &quot;Mise à jour disponible&quot;.
+* Les environnements d’évaluation et de production exécutant d’anciennes versions d’AEM signalent désormais l’état de **Mise à jour disponible**.
 
 * Le nombre maximal de certificats SSL pris en charge est passé à 20 par programme.
 
-* Augmentation Le nombre maximal de domaines pouvant être configurés est passé à 500 par environnement.
+* Le nombre maximal de domaines pouvant être configurés est passé à 500 par environnement.
 
-* Les boutons Gérer Git ont été renommés Accéder aux informations Git et la boîte de dialogue a été actualisée visuellement.
+* Les boutons **Gérer Git** ont été renommés **Accéder aux informations Git** et la boîte de dialogue a été actualisée visuellement.
+
+* La version de l’archétype de projet AEM utilisée par Cloud Manager a été mise à jour vers la version 28.
 
 ### Correctifs {#bug-fixes}
 
