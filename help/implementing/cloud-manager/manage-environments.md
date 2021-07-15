@@ -2,7 +2,7 @@
 title: Gestion des environnements – Cloud Service
 description: Gestion des environnements – Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: ed7436ed0dec228898cfe6795c698e98499f94c9
+source-git-commit: 06de896e0f8180dc1acbbf490345527b92c15d40
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 76%
@@ -67,7 +67,7 @@ La carte **Environnements** de la page Aperçu répertorie jusqu’à trois envi
 
 1. Sélectionnez le bouton **Tout afficher** pour accéder à la page de résumé **Environnement** afin d’afficher un tableau contenant une liste complète d’environnements.
 
-   ![](assets/environment-view-1.png)
+   ![](/help/implementing/cloud-manager/assets/environment-showall.png)
 
 1. La page **Environnements** affiche la liste de tous les environnements existants.
 
@@ -81,7 +81,7 @@ La carte **Environnements** de la page Aperçu répertorie jusqu’à trois envi
    ![](assets/environ-preview1.png)
 
 
-### Accès au service d’aperçu {#access-preview-service}
+### Accès au service de prévisualisation {#access-preview-service}
 
 La fonctionnalité Service d’aperçu fournit un service d’aperçu (publication) supplémentaire à chaque AEM en tant qu’environnement de Cloud Service via Cloud Manager.
 
