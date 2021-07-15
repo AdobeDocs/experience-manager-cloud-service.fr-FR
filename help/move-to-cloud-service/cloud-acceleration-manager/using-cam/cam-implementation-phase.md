@@ -1,7 +1,7 @@
 ---
 title: Phase de mise en oeuvre dans Cloud Accelerated Manager
 description: Cette page présente un aperçu de la phase de mise en oeuvre dans Cloud Acceleration Manager.
-source-git-commit: 83da3b647e47022a41160f2007d90dc7b23db671
+source-git-commit: 97833dd5b962d8f2a0f50a911d7c41ca17a1a0fe
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 5%
@@ -54,9 +54,9 @@ Consultez cette section pour découvrir la carte d’activité Refactorisation d
 
 1. La page affiche la liste des activités de refactorisation du code organisées par niveau de gravité. Pour en savoir plus, cliquez sur les deux icônes en surbrillance.
 
-   La page affiche les considérations relatives à la refactorisation du code dans trois onglets différents.
+   La page affiche les considérations relatives à la refactorisation du code dans trois onglets différents :
 
-   * Présentation:
+   * Présentation
    * Dispatcher
    * Tests
 
