@@ -5,10 +5,10 @@ breadcrumb-title: Guide d’implémentation
 user-guide-description: Découvrez comment personnaliser votre déploiement d’Experience Manager as a Cloud Service, y compris des rubriques sur le déploiement et le développement.
 feature: Outils de développement
 role: Developer, Architect
-source-git-commit: cde8552925a6b0ceb2c30694f127233b05dcc73c
+source-git-commit: 1b52e4af946239309da6eb44d326106d6f552490
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 99%
+source-wordcount: '910'
+ht-degree: 96%
 
 ---
 
@@ -186,5 +186,8 @@ ht-degree: 99%
 + Présentation de la diffusion de contenu {#content-delivery}
    + [Flux de diffusion de contenu](dispatcher/overview.md)
    + [Dispatcher en mode cloud](dispatcher/disp-overview.md)
+   + [Validation et débogage à l’aide des outils de Dispatcher](dispatcher/validation-debug.md)
+   + [Migration de la configuration de Dispatcher d’AMS vers AEM en tant que Cloud Service](dispatcher/ams-aem.md)
+   + [Validation et débogage à l’aide de l’héritage des outils Dispatcher](dispatcher/validation-debug-legacy.md)
    + [Réseau de diffusion de contenu dans AEM as a Cloud Service](dispatcher/cdn.md)
    + [Mise en cache dans AEM as a Cloud Service](dispatcher/caching.md)
