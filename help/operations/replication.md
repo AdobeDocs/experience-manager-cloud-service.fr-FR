@@ -2,10 +2,10 @@
 title: Réplication
 description: Distribution et dépannage de la réplication.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 891658143d44d5bbb0e46c488e078892e2484c08
+source-git-commit: 4f647b76860eac8e7c76df4a4ccb7f069534aea4
 workflow-type: tm+mt
-source-wordcount: '1189'
-ht-degree: 61%
+source-wordcount: '1229'
+ht-degree: 59%
 
 ---
 
@@ -55,6 +55,10 @@ Pour exécuter une activation d’arborescence :
 
    ![Distribuer](assets/publish-distribute.png "Distribuer")
 4. Sélectionnez le chemin dans l’explorateur de chemins d’accès, choisissez d’ajouter un nœud, une arborescence ou supprimez-les, si nécessaire, puis sélectionnez **Submit** (Envoyer).
+
+Pour de meilleures performances, suivez les instructions suivantes lorsque vous utilisez cette fonctionnalité :
+* La taille totale du module de contenu généré pour la réplication doit être inférieure à 5 Mo.
+* Il est recommandé de répliquer moins de 100 chemins à la fois, avec une limite de 500 chemins d’accès stricte.
 
 ### Workflow de publication de l’arborescence de contenu {#publish-content-tree-workflow}
 
