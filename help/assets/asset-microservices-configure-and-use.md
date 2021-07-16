@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Microservices Asset Compute,Workflow,Traitement des ressources
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: cf2cd9726150a286d3328e68cf52857fb262e805
 workflow-type: tm+mt
 source-wordcount: '2678'
 ht-degree: 89%
@@ -75,7 +75,7 @@ Pour créer un profil de traitement standard, procédez comme suit :
 
 1. Les administrateurs accèdent à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de traitement]**. Cliquez sur **[!UICONTROL Créer]**.
 1. Fournissez un nom qui vous aide à identifier de manière unique le profil lors de l’application à un dossier.
-1. Pour générer des rendus FPO, dans l’onglet **[!UICONTROL Standard]**, activez l’option **[!UICONTROL Créer le rendu FPO]**. Saisissez une valeur **[!UICONTROL Qualité]** comprise entre 1 et 100.
+1. Pour générer des rendus FPO, dans l’onglet **[!UICONTROL Image]**, activez **[!UICONTROL Créer le rendu FPO]**. Saisissez une valeur **[!UICONTROL Qualité]** comprise entre 1 et 100.
 1. Pour générer d’autres rendus, cliquez sur **[!UICONTROL Ajouter nouveau]** et fournissez les informations suivantes :
 
    * Nom de fichier de chaque rendu.
