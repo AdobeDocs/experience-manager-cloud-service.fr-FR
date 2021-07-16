@@ -2,10 +2,10 @@
 title: Réplication
 description: Distribution et dépannage de la réplication.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 4f647b76860eac8e7c76df4a4ccb7f069534aea4
+source-git-commit: a585fd8994c00014243f628ac0abbcb6571137f6
 workflow-type: tm+mt
-source-wordcount: '1229'
-ht-degree: 59%
+source-wordcount: '1338'
+ht-degree: 54%
 
 ---
 
@@ -57,8 +57,8 @@ Pour exécuter une activation d’arborescence :
 4. Sélectionnez le chemin dans l’explorateur de chemins d’accès, choisissez d’ajouter un nœud, une arborescence ou supprimez-les, si nécessaire, puis sélectionnez **Submit** (Envoyer).
 
 Pour de meilleures performances, suivez les instructions suivantes lorsque vous utilisez cette fonctionnalité :
-* La taille totale du module de contenu généré pour la réplication doit être inférieure à 5 Mo.
 * Il est recommandé de répliquer moins de 100 chemins à la fois, avec une limite de 500 chemins d’accès stricte.
+* La taille totale du contenu répliqué doit être inférieure à 5 Mo. Cela inclut uniquement les noeuds et les propriétés, mais pas les fichiers binaires, qui incluent des modules de workflow et des modules de contenu.
 
 ### Workflow de publication de l’arborescence de contenu {#publish-content-tree-workflow}
 
@@ -189,6 +189,11 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 Si vous ne fournissez pas un tel filtre et n’utilisez que l’agent &quot;publish&quot;, l’agent &quot;preview&quot; n’est pas utilisé et l’action de réplication n’affecte pas le niveau de prévisualisation.
 
 L’ensemble `ReplicationStatus` d’une ressource n’est modifié que si l’action de réplication comprend au moins un agent principal par défaut. Dans l’exemple ci-dessus, ce n’est pas le cas, car la réplication utilise uniquement l’agent &quot;aperçu&quot;. Par conséquent, vous devez utiliser la nouvelle méthode `getStatusForAgent()`, qui permet d’interroger le statut d’un agent spécifique. Cette méthode fonctionne également pour l’agent &quot;publish&quot;. Elle renvoie une valeur non nulle si une action de réplication a été effectuée à l’aide de l’agent fourni.
+
+
+**Chemin d’accès et limites de taille de l’API de réplication**
+
+Il est recommandé de répliquer moins de 100 chemins, 500 étant la limite stricte. Au-delà de la limite stricte, une exception ReplicationException est générée. Si la logique de votre application ne nécessite pas de réplication atomique, cette limite peut être dépassée en définissant ReplicationOptions.setUseAtomicCalls sur false, qui acceptera un nombre quelconque de chemins d’accès, mais créera en interne des compartiments pour rester en dessous de cette limite. La quantité de contenu transmise par appel de réplication ne doit pas dépasser 5 Mo, ce qui inclut les noeuds et les propriétés, mais pas les binaires (les packages de workflow et les packages de contenu sont considérés comme des binaires).
 
 ## Résolution des problèmes {#troubleshooting}
 
