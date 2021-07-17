@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Gestion des ressources
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 96%
+source-wordcount: '471'
+ht-degree: 85%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 96%
 
 Adobe Experience Manager Assets as a [!DNL Cloud Service] offre aux entreprises une solution PaaS cloud native pour qu’elles puissent non seulement exécuter rapidement et efficacement leurs opérations de gestion des ressources numériques et Dynamic Media, mais aussi utiliser des fonctionnalités intelligentes de nouvelle génération, telles que l’intelligence artificielle ou l’apprentissage automatique, à partir d’un système toujours à jour, toujours disponible et qui apprend en permanence.
 
-L’ingestion simultanée d’un grand nombre de ressources ou de ressources complexes est une tâche gourmande en ressources pour une instance d’auteur AEM. L’instance principale consomme beaucoup de ressources processeur, mémoire et E/S lorsque des ressources sont ajoutées, traitées ou migrées. Ces problèmes de performances ont un impact sur l’expérience de création et la navigation des utilisateurs finaux.
+L’ingestion simultanée de nombreuses ressources ou de ressources complexes est une tâche gourmande en ressources pour une instance d’auteur de Experience Manager. L’instance principale consomme beaucoup de ressources processeur, mémoire et E/S lorsque des ressources sont ajoutées, traitées ou migrées. Ces problèmes de performances ont un impact sur l’expérience de création et la navigation des utilisateurs finaux.
 
 Les entreprises ont besoin de la prise en charge d’un large éventail de formats de fichier et de résolutions de contenu pour les cas d’utilisation sur plusieurs appareils, dans plusieurs zones géographiques et plusieurs langues. Les besoins en matière de traitement et de stockage des ressources exigent des ressources et des capacités qui peuvent surcharger une solution traditionnelle. Parfois, les limites techniques du traitement des ressources ne produisent pas les résultats escomptés et, à d’autres moments, le coût du stockage constitue un obstacle aux marges bénéficiaires.
 
-Pour commencer, il faut comprendre les [avantages de l’offre cloud native](#solution-benefits). Découvrez les [modifications notables apportées à AEM as a  [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) qui ont également eu un impact sur Experience Manager Assets, suivies des [modifications notables apportées à Assets](/help/assets/assets-cloud-changes.md).
+Pour commencer, il faut comprendre les [avantages de l’offre cloud native](#solution-benefits). Découvrez les [modifications notables apportées à Experience Manager en tant que [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) qui ont également eu un impact sur les ressources du Experience Manager, suivies des [modifications notables apportées à Assets](/help/assets/assets-cloud-changes.md).
 
-Lisez la suite pour connaître les [détails sur les nouvelles fonctionnalités Assets](#whats-new-assets) et les [problèmes connus](/help/release-notes/known-issues.md). Consultez la liste des [fonctionnalités obsolètes ou supprimées](/help/release-notes/deprecated-removed-features.md) pour savoir ce qui a été supprimé dans cette version et consultez cette [liste des fonctionnalités à venir](/help/release-notes/known-issues.md#upcoming-assets-capabilities) pour savoir ce qui est à venir. Enfin, utilisez ce [glossaire](/help/overview/terminology.md) pour mieux comprendre les termes AEM.
+Lisez la suite pour connaître les [détails sur les nouvelles fonctionnalités Assets](#whats-new-assets) et les [problèmes connus](/help/release-notes/known-issues.md). Consultez la liste des [fonctionnalités obsolètes ou supprimées](/help/release-notes/deprecated-removed-features.md) pour savoir ce qui a été supprimé dans cette version et consultez cette [liste des fonctionnalités à venir](/help/release-notes/known-issues.md#upcoming-assets-capabilities) pour savoir ce qui est à venir. Enfin, utilisez ce [glossaire](/help/overview/terminology.md) pour comprendre les termes Experience Manager.
 
 ## Avantages de la solution {#solution-benefits}
 
@@ -35,7 +35,7 @@ Voici les principaux avantages d’Assets as a [!DNL Cloud Service]. Pour en sav
 * **Logiciel le plus récent** : toujours actualisé et toujours à jour. Tous les utilisateurs ne disposent que des derniers logiciels avec tous les correctifs, fonctionnalités, sécurité et correctifs disponibles. Les développeurs et les intégrateurs utilisent les derniers jeux d’API sans problèmes de prise en charge de plusieurs versions.
 * **Toujours en ligne** : « zéro temps mort » grâce à l’instance déployée dans une grappe avec des sauvegardes et une redondance. Les mises à niveau sont également conformes à l’objectif de zéro temps mort.
 * **Surveillance constante** : la surveillance du système est automatisée et les contrôles et déclencheurs intégrés permettent de maintenir les performances, la disponibilité et la robustesse globales.
-* **Déploiements sans tracas** : Les AEM dans les opérations cloud sont entièrement automatisées et ne nécessitent aucune intervention manuelle. Pour les déploiements automatisés, le composant Cloud Manager (CM) automatise la création d’images Docker déployables contenant votre code personnalisé.
+* **Déploiements sans tracas** : Les opérations Experience Manager en mode cloud sont entièrement automatisées et ne nécessitent aucune intervention manuelle. Pour les déploiements automatisés, le composant Cloud Manager (CM) automatise la création d’images Docker déployables contenant votre code personnalisé.
 
 ## Nouvelles fonctionnalités d’Assets {#whats-new-assets}
 
