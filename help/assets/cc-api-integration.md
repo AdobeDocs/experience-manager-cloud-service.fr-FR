@@ -4,7 +4,7 @@ description: Génération de variantes des ressources à l’aide de l’intégr
 contentOwner: AG
 feature: Chargement,Traitement des ressources,Publication,Asset compute Microservices,Workflow
 role: User,Admin
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: f21f8bf7975fd4e82785a4c368cf4956096608d4
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -42,7 +42,8 @@ Pour utiliser des profils de traitement afin de créer automatiquement des varia
 
 1. Sélectionnez l’onglet **[!UICONTROL Creative]**, indiquez le dossier de sortie, puis sélectionnez **[!UICONTROL Ajouter]** pour ajouter une configuration créative.
 
-1. Indiquez **[!UICONTROL Nom du rendu]** (ou nom de sortie), **[!UICONTROL Extension]** (ou type de fichier), sélectionnez **[!UICONTROL Qualité]** (ou paramètres de sortie), **[!UICONTROL Inclut]** et **[!UICONTROL Exclut]** les listes de type MIME (ou filtre de ressource d’entrée) et sélectionnez l’opération de création requise.
+1. Indiquez **[!UICONTROL Nom du rendu]** (ou nom de sortie), **[!UICONTROL Extension]** (ou type de fichier), sélectionnez **[!UICONTROL Qualité]** (ou paramètres de sortie), **[!UICONTROL Inclut]** et **[!UICONTROL Exclut]** les listes de type MIME (ou un filtre de ressource d’entrée) et sélectionnez l’opération de création requise. 10/><br/>
+
    ![onglet créatif dans le profil de traitement](assets/creative-processing-profile.png)
 
 1. Certaines opérations nécessitent des paramètres supplémentaires (ressource). Si nécessaire, indiquez des valeurs pour ces paramètres supplémentaires.
