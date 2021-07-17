@@ -5,20 +5,20 @@ contentOwner: AG
 feature: Gestion des ressources, Traduction
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '2590'
-ht-degree: 100%
+source-wordcount: '2587'
+ht-degree: 94%
 
 ---
 
 # Ressources multilingues {#multilingual-assets}
 
-Les ressources multilingues sont des ressources comportant des fichiers binaires, des métadonnées et des balises dans plusieurs langues. En règle générale, les fichiers binaires, les métadonnées et les balises d’une ressource existent dans une langue, et sont ensuite traduits dans d’autres langues pour être utilisés dans des projets multilingues. Adobe Experience Manager (AEM) Assets vous permet d’automatiser les workflows de traduction des ressources (y compris les fichiers binaires, les métadonnées et les balises) pour générer des ressources dans d’autres langues à utiliser dans des projets multilingues.
+Les ressources multilingues sont des ressources comportant des fichiers binaires, des métadonnées et des balises dans plusieurs langues. En règle générale, les fichiers binaires, les métadonnées et les balises d’une ressource existent dans une langue, et sont ensuite traduits dans d’autres langues pour être utilisés dans des projets multilingues. Adobe Experience Manager Assets vous permet d’automatiser les processus de traduction des ressources (y compris les fichiers binaires, les métadonnées et les balises) afin de générer des ressources dans d’autres langues à utiliser dans des projets multilingues.
 
-Pour automatiser les workflows de traduction, vous intégrez des fournisseurs de services de traduction à AEM et créez des projets pour traduire les ressources dans plusieurs langues. AEM prend en charge les workflows de traduction humaine et automatique.
+Pour automatiser les processus de traduction, vous intégrez des fournisseurs de services de traduction à Experience Manager et créez des projets pour traduire des ressources dans plusieurs langues. Experience Manager prend en charge les workflows de traduction humaine et automatique.
 
-Traduction humaine : les ressources traduites sont renvoyées et importées dans AEM. Lorsque votre fournisseur de traduction est intégré à AEM, les ressources sont envoyées automatiquement entre AEM et le fournisseur de traduction.
+Traduction humaine : Les ressources traduites sont renvoyées et importées dans Experience Manager. Lorsque votre fournisseur de traduction est intégré à Experience Manager, les ressources sont automatiquement envoyées entre Experience Manager et le fournisseur de traduction.
 
 Traduction automatique : le service de traduction automatique traduit instantanément les métadonnées et les balises des ressources.
 
@@ -36,13 +36,13 @@ One of these articles is a copy of [Preparing Content for Translation](https://e
 <!-- 
 Translating assets includes the following:
 
-1. [Connecting AEM with the translation service provider](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
+1. [Connecting Experience Manager with the translation service provider](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
 1. [Creating translation integration framework configurations](/help/sites-administering/tc-tic.md)
 1. [Preparing assets for translation](prepare-assets-for-translation.md)
 1. [Applying translation cloud services to folders](transition-cloud-services.md)
 1. [Create translation projects](translation-projects.md)
 
-If your translation service provider does not provide a connector to integrate with AEM, use an [alternative process](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
+If your translation service provider does not provide a connector to integrate with Experience Manager, use an [alternative process](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
 
 Also see, [Creating translation projects for content fragments](creating-translation-projects-for-content-fragments.md).
 
@@ -52,7 +52,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 Les ressources multilingues sont des ressources comportant des fichiers binaires, des métadonnées et des balises dans plusieurs langues. En règle générale, les fichiers binaires, les métadonnées et les balises d’une ressource existent dans une langue, et sont ensuite traduits dans d’autres langues pour être utilisés dans des projets multilingues.
 
-Dans Adobe Experience Manager (AEM) Assets, les ressources multilingues se trouvent dans des dossiers, chaque dossier contenant les ressources dans une langue différente.
+Dans Adobe Experience Manager Assets, les ressources multilingues sont incluses dans des dossiers, où chaque dossier contient les ressources dans une langue différente.
 
 Chaque dossier de langue est appelé une copie de langue. Le dossier racine d’une copie de langue, nommé racine de langue, identifie la langue du contenu de la copie de langue. Par exemple, `/content/dam/it` est la racine de langue italienne de la copie en italien. Les copies de langue doivent utiliser une [racine de langue correctement configurée](#create-a-language-root) pour que la langue correcte soit ciblée lors de la traduction des ressources source.
 
@@ -89,7 +89,7 @@ Par exemple, la page racine de la copie en italien de l’exemple de hiérarchie
 
 ### Affichage des racines de langue {#view-language-roots}
 
-L’IU optimisée pour les écrans tactiles propose un panneau Références qui affiche la liste des racines de langue créées dans AEM Assets.
+L’IU optimisée pour les écrans tactiles propose un panneau Références qui affiche la liste des racines de langue créées dans [!DNL Assets].
 
 1. Dans la console Ressources, choisissez le gabarit de langue pour lequel vous souhaitez créer des copies de langue.
 1. Appuyez ou cliquez sur l’icône de navigation globale et sélectionnez **[!UICONTROL Références]** pour ouvrir le panneau Références.
@@ -169,9 +169,9 @@ Si vous utilisez cette option, l’ensemble de ressources est ajouté à un proj
 
 ### Création de copies de langue temporaires {#creating-temporary-language-copies}
 
-Lorsque vous exécutez un workflow de traduction pour mettre à jour une copie de langue avec les versions modifiées des ressources d’origine, la copie de langue existante est conservée jusqu’à ce que vous approuviez la ou les ressources traduites. AEM Assets stocke les nouvelles ressources traduites dans un emplacement temporaire et met à jour la copie de langue existante après votre approbation explicite des ressources. Si vous rejetez les ressources, la copie de langue reste inchangée.
+Lorsque vous exécutez un workflow de traduction pour mettre à jour une copie de langue avec les versions modifiées des ressources d’origine, la copie de langue existante est conservée jusqu’à ce que vous approuviez la ou les ressources traduites. [!DNL Assets] stocke les nouvelles ressources traduites dans un emplacement temporaire et met à jour la copie de langue existante après votre approbation explicite des ressources. Si vous rejetez les ressources, la copie de langue reste inchangée.
 
-1. Cliquez/appuyez sur le dossier racine source sous **[!UICONTROL Copies de langue]** pour lequel vous avez déjà créé une copie de langue, puis cliquez/appuyez sur **[!UICONTROL Afficher dans Assets]** afin d’ouvrir le dossier dans AEM Assets.
+1. Cliquez/appuyez sur le dossier racine source sous **[!UICONTROL Copies de langue]** pour lequel vous avez déjà créé une copie de langue, puis cliquez/appuyez sur **[!UICONTROL Afficher dans Assets]** afin d’ouvrir le dossier dans [!DNL Assets].
 1. Dans l’interface utilisateur d’Assets, sélectionnez une ressource que vous avez déjà traduite et cliquez/appuyez sur l’icône **[!UICONTROL Modifier]** dans la barre d’outils pour ouvrir la ressource en mode d’édition.
 1. Modifiez la ressource et enregistrez les modifications.
 1. Exécutez les étapes 2 à 14 de la procédure [Ajouter à un projet de traduction existant](#add-to-existing-translation-project) pour mettre à jour la copie de langue.
@@ -234,7 +234,7 @@ Utilisez l’option **Créer uniquement la structure** pour créer une hiérarch
 
 ## Application de services cloud de traduction à des dossiers {#applying-translation-cloud-services-to-folders}
 
-Adobe Experience Manager (AEM) vous offre des services de traduction basés sur le cloud du fournisseur de traduction de votre choix afin de vous assurer que vos ressources sont traduites en fonction de vos besoins.
+Adobe Experience Manager vous permet de bénéficier des services de traduction cloud du fournisseur de traduction de votre choix pour vous assurer que vos ressources sont traduites en fonction de vos besoins.
 
 Vous pouvez appliquer le service cloud de traduction directement à votre dossier de ressources afin qu’elles puissent être utilisées au cours des workflows de traduction.
 
@@ -263,7 +263,7 @@ L’application de services cloud directement à votre dossier de ressources él
 Si vous souhaitez appliquer un connecteur personnalisé pour les services de traduction que vous souhaitez utiliser dans les workflows. Pour appliquer un connecteur personnalisé, installez d’abord le connecteur à partir de Package Manager. Configurez ensuite le connecteur depuis la console Cloud Services. Une fois le connecteur configuré, il est disponible dans la liste des connecteurs de l’onglet Cloud Services décrits dans la section [Application des services de traduction](#applying-the-translation-services). Une fois que vous avez appliqué le connecteur personnalisé et exécuté des workflows de traduction, la mosaïque **[!UICONTROL Résumé de traduction]** du projet de traduction affiche les détails du connecteur dans les sections **[!UICONTROL Fournisseur]** et **[!UICONTROL Méthode]**.
 
 1. Installez le connecteur depuis le gestionnaire de modules.
-1. Cliquez/appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Déploiement > Services Cloud]**.
+1. Cliquez/appuyez sur le logo du Experience Manager, puis accédez à **[!UICONTROL Outils > Déploiement > Cloud Services]**.
 1. Localisez le connecteur que vous avez installé sous **[!UICONTROL Services tiers]** sur la page **[!UICONTROL Services Cloud]**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
