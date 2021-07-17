@@ -4,10 +4,10 @@ description: 'La newsletter Dynamic Media d’Experience League est un bulleti
 feature: Gestion des ressources
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '1147'
-ht-degree: 100%
+source-wordcount: '1150'
+ht-degree: 96%
 
 ---
 
@@ -123,15 +123,15 @@ Explorez de précieuses ressources d’acquisition de connaissances, telles que 
    * Découvrez des ressources et informations qui vous permettent de gérer correctement vos ressources à forte valeur ajoutée afin de fournir en toute confiance des expériences qui font que vos visiteurs reviendront.
    * Découvrez le prochain webinaire sur la protection de vos ressources numériques.
    * Découvrez les prochaines étapes de l’Adobe Insider Tour.
-   * Découvrez des fonctionnalités intéressantes disponibles lorsque vous disposez de Dynamic Media dans Experience Manager Assets (AEM Assets).
+   * Fonctionnalités intéressantes disponibles lorsque vous disposez de Dynamic Media dans Experience Manager Assets (Experience Manager Assets).
    * Ajoutez des vidéos à 360 degrés et des miniatures vidéo personnalisées à votre site web.
-   * Rencontrez Andrew Hathaway, conseiller principal en solutions Dynamic Media au sein d’AEM Assets.
+   * Rencontrez Andrew Hathaway, conseiller principal en solutions pour Dynamic Media au sein de Experience Manager Assets.
 
 * **[Juin 2019, numéro 06](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_06_2019_June.html)**
 
    Dans ce numéro :
 
-   * Regardez des vidéos qui mettent en évidence l’utilité de la mise à niveau vers Dynamic Media dans AEM Assets.
+   * Visionnez des vidéos qui mettent en évidence le côté pratique de la mise à niveau vers Dynamic Media dans Experience Manager Assets.
    * Regardez des tutoriels vidéo importants dans Experience League.
    * Apprenez-en plus sur le prochain Adobe Insider Tour.
    * Découvrez comment vous pouvez protéger vos ressources numériques contre le piratage.
