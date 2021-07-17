@@ -4,10 +4,10 @@ user-guide-title: Guide d’Assets as a Cloud Service
 breadcrumb-title: Guide d’Assets
 user-guide-description: Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: f3d2fafa4f10cb6538ba3e814987f75b466080fc
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 99%
+source-wordcount: '479'
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 99%
    + [Balises intelligentes pour les images](smart-tags.md)
    + [Balisage intelligent de vos ressources vidéo](smart-tags-video-assets.md)
    + [Organisation des ressources](organize-assets.md)
-   + [Utilisation de ressources [!DNL Adobe Stock] dans AEM](aem-assets-adobe-stock.md)
+   + [Utilisation des  [!DNL Adobe Stock] ressources](aem-assets-adobe-stock.md)
    + [Gestion des collections](manage-collections.md)
    + [Présentation des métadonnées](manage-metadata.md)
    + [Intégration avec [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
@@ -54,9 +54,9 @@ ht-degree: 99%
    + [Facettes de recherche](search-facets.md)
    + [API HTTP Assets](mac-api-assets.md)
    + [Prise en charge des fragments de contenu dans l’API HTTP Assets](content-fragments/assets-api-content-fragments.md)
-   + [API AEM GraphQL pour les fragments de contenu](content-fragments/graphql-api-content-fragments.md)
-   + [Authentification pour les requêtes AEM GraphQL distantes sur les fragments de contenu](content-fragments/graphql-authentication-content-fragments.md)
-   + [API GraphQL d’AEM avec fragments de contenu – Exemple de contenu et requêtes](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+   + [API GraphQL pour les fragments de contenu](content-fragments/graphql-api-content-fragments.md)
+   + [Authentification pour les requêtes GraphQL distantes sur les fragments de contenu](content-fragments/graphql-authentication-content-fragments.md)
+   + [API GraphQL avec les fragments de contenu – Exemple de contenu et requêtes](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Ressources connectées](use-assets-across-connected-assets-instances.md)
    + [Rapports de ressources](asset-reports.md)
    + [Métadonnées en cascade](cascading-metadata.md)
