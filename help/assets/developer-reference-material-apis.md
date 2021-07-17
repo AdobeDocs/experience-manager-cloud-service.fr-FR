@@ -5,10 +5,10 @@ contentOwner: AG
 feature: API,API HTTP Assets
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 3051475d20d5b534b74c84f9d541dcaf1a5492f9
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 94%
+source-wordcount: '1436'
+ht-degree: 90%
 
 ---
 
@@ -69,7 +69,7 @@ L’article contient des recommandations, des documents de référence et des re
 Dans [!DNL Experience Manager] as a [!DNL Cloud Service], vous pouvez charger directement les ressources dans l’espace de stockage cloud à l’aide de l’API HTTP. Les étapes de téléchargement d’un fichier binaire sont les suivantes. Exécutez ces étapes dans une application externe et non dans la JVM [!DNL Experience Manager].
 
 1. [Envoyez une requête HTTP](#initiate-upload). Cela permet d’informer le déploiement [!DNL Experience Manage] de votre intention de charger un nouveau fichier binaire.
-1. [Publiez le contenu du fichier binaire](#upload-binary) sur un ou plusieurs URI fournis par la requête de lancement.
+1. [PUT du contenu du ](#upload-binary) fichier binaire sur un ou plusieurs URI fournis par la demande de lancement.
 1. [Envoyez une requête HTTP](#complete-upload) pour informer le serveur que le contenu du fichier binaire a bien été chargé.
 
 ![Présentation du protocole de chargement binaire direct](assets/add-assets-technical.png)
@@ -113,7 +113,7 @@ Une seule requête peut être utilisée afin de lancer des chargements pour plus
 }
 ```
 
-* `completeURI` (chaîne) : appelez cet URI lorsque le chargement du fichier binaire est terminé. Il peut s’agir d’un URI absolu ou relatif, et les clients doivent être en mesure de gérer l’un ou l’autre. En d’autres termes, la valeur peut être `"https://author.acme.com/content/dam.completeUpload.json"` ou `"/content/dam.completeUpload.json"` ; voir [Fin du chargement](#complete-upload).
+* `completeURI` (chaîne) : appelez cet URI lorsque le chargement du fichier binaire est terminé. Il peut s’agir d’un URI absolu ou relatif, et les clients doivent être en mesure de gérer l’un ou l’autre. En d’autres termes, la valeur peut être `"https://[aem_server]:[port]/content/dam.completeUpload.json"` ou `"/content/dam.completeUpload.json"` ; voir [Fin du chargement](#complete-upload).
 * `folderPath` (chaîne) : chemin d’accès complet au dossier dans lequel le fichier binaire est chargé.
 * `(files)` (tableau) : liste des éléments dont la longueur et l’ordre correspondent à la longueur et à l’ordre de la liste des informations binaires fournies dans la requête de lancement.
 * `fileName` (chaîne) : nom du fichier binaire correspondant, tel qu’il est fourni dans la requête de lancement. Cette valeur doit être incluse dans la requête de fin.
@@ -125,7 +125,7 @@ Une seule requête peut être utilisée afin de lancer des chargements pour plus
 
 ### Chargement d’un fichier binaire {#upload-binary}
 
-La sortie de lancement d’un chargement comprend une ou plusieurs valeurs d’URI de chargement. Si plusieurs URI sont fournis, le client divise le fichier binaire en plusieurs parties et réalise une requête POST de chaque partie à chaque URI, dans l’ordre. Utilisez tous les URI. Assurez-vous que la taille de chaque partie soit sur la plage spécifiée dans la réponse au lancement. Les nœuds de bordure CDN permettent d’accélérer le chargement de fichiers binaires requis.
+La sortie de lancement d’un chargement comprend une ou plusieurs valeurs d’URI de chargement. Si plusieurs URI sont fournis, le client divise le fichier binaire en plusieurs parties et effectue des requêtes PUT de chaque partie vers chaque URI, dans l’ordre. Utilisez tous les URI. Assurez-vous que la taille de chaque partie soit sur la plage spécifiée dans la réponse au lancement. Les nœuds de bordure CDN permettent d’accélérer le chargement de fichiers binaires requis.
 
 Pour ce faire, une méthode consiste à calculer la taille de la partie en fonction du nombre d’URI de chargement fournis par l’API. Voici un exemple en supposant que la taille totale du fichier binaire soit de 20 000 octets et que le nombre d’URI de chargement soit de 2. Procédez ensuite comme suit :
 
@@ -154,9 +154,7 @@ Si la ressource existe et que ni `createVersion` ni `replace` n’est spécifié
 
 Comme c’est le cas pour le processus de lancement, les données de la requête de fin peuvent contenir des informations pour plusieurs fichiers.
 
-Le processus de chargement d’un binaire n’est pas terminé tant que l’URL complète n’est pas appelée pour le fichier. Une ressource est traitée une fois le processus de chargement terminé. Le traitement ne commence pas même si le fichier binaire de la ressource est complètement chargé, mais que le processus de chargement n’est pas terminé.
-
-En cas de succès, le serveur répond avec un code d’état `200`.
+Le processus de chargement d’un binaire n’est pas terminé tant que l’URL complète n’est pas appelée pour le fichier. Une ressource est traitée une fois le processus de chargement terminé. Le traitement ne commence pas même si le fichier binaire de la ressource est complètement chargé, mais que le processus de chargement n’est pas terminé. Si le téléchargement est réussi, le serveur répond avec un code d’état `200`.
 
 ### Bibliothèque de chargement Open Source {#open-source-upload-library}
 
