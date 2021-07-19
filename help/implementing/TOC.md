@@ -5,10 +5,10 @@ breadcrumb-title: Guide d’implémentation
 user-guide-description: Découvrez comment personnaliser votre déploiement d’Experience Manager as a Cloud Service, y compris des rubriques sur le déploiement et le développement.
 feature: Outils de développement
 role: Developer, Architect
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 99%
+source-wordcount: '913'
+ht-degree: 96%
 
 ---
 
@@ -180,11 +180,15 @@ ht-degree: 99%
    + [Déploiement sur AEM as a Cloud Service](deploying/overview.md)
    + [Mises à jour de la version d’AEM](deploying/aem-version-updates.md)
    + [Configuration d’OSGi pour AEM as a Cloud Service](deploying/configuring-osgi.md)
+   + [API de configuration OSGi](deploying/osgi-configuration-api.md)
 + Niveau de création {#author-tier}
    + [Accès au niveau de création](/help/implementing/author-tier/accessing-the-author-tier.md)
    + [Sécurisation du niveau de création](/help/implementing/author-tier/securing-the-author-tier.md)
 + Présentation de la diffusion de contenu {#content-delivery}
    + [Flux de diffusion de contenu](dispatcher/overview.md)
    + [Dispatcher en mode cloud](dispatcher/disp-overview.md)
+   + [Validation et débogage à l’aide des outils de Dispatcher](dispatcher/validation-debug.md)
+   + [Migration de la configuration de Dispatcher d’AMS vers AEM en tant que Cloud Service](dispatcher/ams-aem.md)
+   + [Validation et débogage à l’aide de l’héritage des outils Dispatcher](dispatcher/validation-debug-legacy.md)
    + [Réseau de diffusion de contenu dans AEM as a Cloud Service](dispatcher/cdn.md)
    + [Mise en cache dans AEM as a Cloud Service](dispatcher/caching.md)
