@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Métadonnées
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 98%
+source-wordcount: '669'
+ht-degree: 92%
 
 ---
 
 # Importation et exportation des métadonnées de ressources par lot   {#import-and-export-asset-metadata-in-bulk}
 
-AEM Assets permet d’importer des métadonnées de ressources par lot à l’aide d’un fichier CSV. Vous pouvez effectuer des mises à jour par lot pour les ressources récemment transférées ou les ressources existantes en important un fichier CSV. Vous pouvez également assimiler des métadonnées de ressources par lot à partir d’un système tiers au format CSV.
+Adobe Experience Manager Assets vous permet d’importer des métadonnées de ressources en bloc à l’aide d’un fichier CSV. Vous pouvez effectuer des mises à jour par lot pour les ressources récemment transférées ou les ressources existantes en important un fichier CSV. Vous pouvez également assimiler des métadonnées de ressources par lot à partir d’un système tiers au format CSV.
 
 ## Importation de métadonnées   {#import-metadata}
 
@@ -47,7 +47,7 @@ Pour ajouter une date et un horodatage au cours de l’importation de métadonn�
 
 ## Exportation des métadonnées {#export-metadata}
 
-Vous pouvez exporter des métadonnées pour plusieurs ressources au format CSV. Les métadonnées sont exportées de manière asynchrone et n’ont aucun impact sur les performances du système. Pour exporter des métadonnées, AEM parcourt les propriétés du nœud de ressource `jcr:content/metadata` et de ses nœuds enfants et exporte les propriétés de métadonnées dans un fichier CSV.
+Vous pouvez exporter des métadonnées pour plusieurs ressources au format CSV. Les métadonnées sont exportées de manière asynchrone et n’ont aucun impact sur les performances du système. Pour exporter des métadonnées, Experience Manager parcourt les propriétés du noeud de ressource `jcr:content/metadata` et de ses noeuds enfants et exporte les propriétés de métadonnées dans un fichier CSV.
 
 Voici quelques cas d’utilisation pour l’exportation de métadonnées par lot :
 
