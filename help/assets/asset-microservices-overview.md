@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Microservices Asset Compute,Workflow,Informations de mise à jour,Traitement des ressources
 role: Architect,Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
 source-wordcount: '828'
-ht-degree: 83%
+ht-degree: 85%
 
 ---
 
@@ -43,7 +43,7 @@ Les principales étapes de l’ingestion et du traitement des ressources à l’
 * Les clients, tels que les navigateurs web ou Adobe Asset Link, envoient une demande de chargement à [!DNL Experience Manager] et commencent directement à charger le fichier binaire dans l’espace de stockage cloud.
 * Une fois le chargement terminé, le client en informe [!DNL Experience Manager].
 * [!DNL Experience Manager] envoie une demande de traitement aux microservices de ressources. Le contenu de la requête dépend de la configuration des profils de traitement dans [!DNL Experience Manager] qui spécifient les rendus à générer.
-* Le serveur principal des microservices de ressources reçoit la demande et la transmet à un ou plusieurs microservices en fonction de celle-ci. Chaque microservice accède directement au fichier binaire d’origine depuis l’espace de stockage cloud des binaires.
+* Le serveur back-end des microservices de ressources reçoit la requête et, en fonction de cette dernière, la transmet à un ou plusieurs microservices. Chaque microservice accède directement au fichier binaire d’origine depuis l’espace de stockage cloud des binaires.
 * Les résultats du traitement, tels que les rendus, sont stockés dans cet espace.
 * Experience Manager est averti que le traitement est terminé, avec des pointeurs directs vers les binaires générés (rendus). Les rendus générés sont disponibles dans [!DNL Experience Manager] pour la ressource chargée.
 
