@@ -2,7 +2,7 @@
 title: Ajout d’un nom de domaine personnalisé
 description: Ajout d’un nom de domaine personnalisé
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 94%
@@ -23,7 +23,7 @@ Un utilisateur doit être un propriétaire d’entreprise ou un responsable du d
 
 * AEM as a Cloud Service ne prend pas en charge les domaines génériques.
 
-* Chaque environnement Cloud Manager peut héberger jusqu’à 250 domaines personnalisés.
+* Chaque environnement Cloud Manager peut héberger jusqu’à 500 domaines personnalisés.
 
 * Le même nom de domaine ne peut pas être utilisé sur plusieurs environnements.
 
