@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Gestion des ressources,Balisage,Distribution des ressources
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 95%
+source-wordcount: '450'
+ht-degree: 97%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 95%
 
 L’ensemble des ressources numériques, des métadonnées et du contenu des documents Microsoft Office et PDF sont extraits et rendus utilisables dans une requête. La recherche permet un filtrage sophistiqué des ressources et respecte entièrement les autorisations appropriées. Les métadonnées sont traitées en détail dans la section Métadonnées dans la gestion des actifs numériques.
 
-Experience Manager Assets prend en charge plusieurs méthodes d’organisation du contenu. Vous pouvez l’organiser de façon hiérarchique à l’aide de dossiers ou de manière ad hoc, non classée à l’aide de balises. Les utilisateurs peuvent modifier les balises dans l’éditeur de ressources de gestion des actifs numériques où les sous-ressources, rendus et métadonnées sont affichés.
+AEM Assets prend en charge plusieurs manières d’organiser le contenu. Vous pouvez l’organiser de façon hiérarchique à l’aide de dossiers ou de manière ad hoc, non classée à l’aide de balises. Les utilisateurs peuvent modifier les balises dans l’éditeur de ressources de gestion des actifs numériques où les sous-ressources, rendus et métadonnées sont affichés.
 
 ## Création de dossiers   {#create-folders}
 
-Lorsque vous organisez une collection de ressources, comme toutes les images *Nature*, vous pouvez créer des dossiers pour les conserver ensemble. Vous pouvez utiliser des dossiers pour classer et organiser vos ressources. [!DNL Assets] ne nécessite pas de classer les ressources dans des dossiers pour mieux fonctionner.
+Lorsque vous organisez une collection de ressources, comme toutes les images *Nature*, vous pouvez créer des dossiers pour les conserver ensemble. Vous pouvez utiliser des dossiers pour classer et organiser vos ressources. AEM Assets ne nécessite pas de classer les ressources dans des dossiers pour mieux fonctionner.
 
 >[!NOTE]
 >
