@@ -4,8 +4,8 @@ description: Configuration du pipeline CI/CD - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
 source-git-commit: 8b8e65c68d8a835e19ddf34fe30981da7ad265d8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '791'
+ht-degree: 91%
 
 ---
 
