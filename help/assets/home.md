@@ -4,10 +4,10 @@ description: Ressources d’aide autonome et liens vers la documentation [!DNL A
 feature: Gestion des ressources
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 100%
+source-wordcount: '299'
+ht-degree: 86%
 
 ---
 
@@ -33,8 +33,8 @@ Les ressources d’auto-assistance suivantes sont disponibles pour [!DNL Experie
 | [Guide de l’utilisateur relatif à la sécurité](/help/security/home.md) | Découvrez les sujets de sécurité importants concernant [!DNL Experience Manager] as a [!DNL Cloud Service]. |
 | [Intégration](/help/onboarding/home.md) | Prise en main d’[!DNL Experience Manager] as a [!DNL Cloud Service] – accédez aux données importantes et protégez-les. |
 | [Guide de l’utilisateur de Sites](/help/sites-cloud/home.md) | Découvrez comment créer et administrer [!DNL Experience Manager Sites] as a [!DNL Cloud Service]. |
-| [Guide de l’utilisateur relatif à l’implémentation](/help/implementing/home.md) | Découvrez comment créer et personnaliser des expériences à l’aide des puissantes fonctionnalités d’AEM en explorant ces rubriques de développement et de déploiement. |
-| [Parcours de développement découplé](/help/journey-headless/developer/overview.md) | Découvrez cette visite guidée à travers les puissantes et flexibles fonctionnalités découplées d’AEM pour vous préparer à votre premier projet découplé. |
+| [Guide de l’utilisateur relatif à l’implémentation](/help/implementing/home.md) | Découvrez comment créer et personnaliser des expériences à l’aide de fonctionnalités puissantes de Experience Manager en explorant ces rubriques de développement et de déploiement. |
+| [Parcours de développement découplé](/help/journey-headless/developer/overview.md) | Découvrez ce parcours guidé à travers les puissantes et flexibles fonctionnalités headless de Experience Manager pour vous préparer à votre premier projet sans tête. |
 | [Passage à  [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) | Comprenez le parcours de transition vers [!DNL Experience Manager] as a [!DNL Cloud Service]. |
 | [Guide de l’utilisateur des connecteurs](/help/connectors/home.md) | Découvrez comment intégrer des connecteurs dans [!DNL Experience Manager] as a [!DNL Cloud Service]. |
 | [Guide de l’utilisateur relatif aux opérations](/help/operations/home.md) | Découvrez les opérations principales d’[!DNL Experience Manager] as a [!DNL Cloud Service], telles que les tâches d’indexation et de maintenance. |
