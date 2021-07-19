@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: d30384566f08b8819d3263b12939217cafb3399e
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '1943'
-ht-degree: 18%
+source-wordcount: '1586'
+ht-degree: 21%
 
 ---
 
@@ -41,44 +41,7 @@ Regardez la vidéo [Aperçu de la version de juin 2021](https://video.tv.adobe.c
 
 ## Cloud Manager {#cloud-manager}
 
-Cette section présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.7.0 et 2021.6.0.
-
-### Date de publication {#release-cm-july}
-
-La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.7.0 est le 15 juillet 2021.
-La prochaine version est prévue pour le 12 août 2021.
-
-### Nouveautés {#what-is-new-cm-july}
-
-* Les clients peuvent désormais utiliser les JDK Azul 8 et 11 pour leurs processus de génération Cloud Manager et peuvent choisir d’utiliser l’un de ces JDK pour les modules externes Maven compatibles avec les chaînes d’outils *ou* l’exécution complète du processus Maven.
-
-* L’adresse IP sortante sortante sera désormais consignée dans le fichier journal de l’étape de création.
-
-* Les environnements d’évaluation et de production exécutant d’anciennes versions d’AEM signalent désormais l’état de **Mise à jour disponible**.
-
-* Le nombre maximal de certificats SSL pris en charge est passé à 20 par programme.
-
-* Le nombre maximal de domaines pouvant être configurés a été porté à 500 par environnement.
-
-* Les boutons **Gérer Git** ont été renommés **Accéder aux informations Git** et la boîte de dialogue a été actualisée visuellement.
-
-* La version de l’archétype de projet AEM utilisée par Cloud Manager a été mise à jour vers la version 28.
-
-### Correctifs {#bug-fixes-cm-july}
-
-* Dans certains cas, l’aperçu n’était pas une option disponible lors de la liaison d’une Liste autorisée IP à un environnement.
-
-* La navigation manuelle vers la page des détails de l’exécution pour une exécution non existante n’affichait pas d’erreur, juste un écran de chargement sans fin.
-
-* Le message d’erreur affiché lorsque le nombre maximal de certificats SSL a été atteint n’était pas utile.
-
-* Dans certains cas, il peut y avoir une incohérence dans la version affichée dans la carte de pipeline de la page **Aperçu**.
-
-* L’assistant d’ajout de programme indiquait de manière incorrecte que le nom ne peut pas être modifié après la création.
-
-### Problèmes connus {#known-issues-cm-july}
-
-Les clients qui passent à l’utilisation des JDK Azul doivent savoir que toutes les applications existantes ne seront pas compilées sans erreur sur le JDK Azul. Il est vivement recommandé de tester localement avant de basculer.
+Cette section présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.6.0 et 2021.5.0.
 
 ### Date de publication {#release-date-june-cm}
 
@@ -219,16 +182,6 @@ La date de publication d’AEM Screens as a Cloud Service est le 24 juin 2021.
 * L’instantané de la santé de l’appareil permet de gagner du temps en fournissant un état critique en un coup d’oeil.
 
 * La page Détails de l’objet offre un résumé des informations les plus pertinentes pour chaque objet de votre projet.
-
-## Cloud Accelerated Manager {#cam}
-
-### Date de publication {#release-date-july-cam}
-
-La date de publication de Cloud Acceleration Manager est le 15 juillet 2021.
-
-## Nouveautés {#what-is-new-cam}
-
-Cloud Acceleration Manager est une application cloud conçue pour guider vos équipes informatiques tout au long du parcours de transition, de la planification à la mise en ligne sur Cloud Service. Configurez vos équipes pour une migration réussie avec les bonnes pratiques, conseils, documentation et outils recommandés par l’Adobe pour vous aider à chaque phase du parcours à AEM en tant que Cloud Service. En savoir plus [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
 
 ## Module complémentaire CIF {#cloud-services-cif}
 
