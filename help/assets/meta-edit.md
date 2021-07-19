@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Métadonnées
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 100%
+source-wordcount: '427'
+ht-degree: 90%
 
 ---
 
@@ -28,7 +28,7 @@ Pour modifier des métadonnées, procédez comme suit :
    * À partir de la miniature de la ressource, sélectionnez l’action rapide **[!UICONTROL Afficher les propriétés]**.
    * Sur la page de la ressource, cliquez/appuyez sur **[!UICONTROL Afficher les propriétés]** dans la barre d’outils.
 
-   La page de la ressource affiche toutes les métadonnées de celle-ci. Ces métadonnées sont automatiquement extraites lorsqu’elles sont chargées (assimilées) dans AEM Assets.
+   La page de la ressource affiche toutes les métadonnées de celle-ci. Ces métadonnées ont été automatiquement extraites lorsqu’elles ont été chargées (ingérées) dans Experience Manager Assets.
 
 1. Apportez des modifications aux métadonnées dans les différents onglets, le cas échéant. Une fois que vous avez terminé, cliquez/appuyez sur **[!UICONTROL Enregistrer]** dans la barre d’outils pour enregistrer vos modifications. Cliquez/appuyez sur **[!UICONTROL Fermer]** pour revenir à l’interface web d’Assets.
 
@@ -36,7 +36,7 @@ Pour modifier des métadonnées, procédez comme suit :
    >
    >Si un champ de texte est vide, cela signifie qu’aucune métadonnée n’a été définie. Vous pouvez saisir une valeur dans le champ et l’enregistrer pour ajouter cette propriété de métadonnées.
 
-Toute modification apportée aux métadonnées d’une ressource est écrite dans les données XMP du binaire d’origine. Cette modification est apportée par le biais du workflow d’écriture différée des métadonnées d’AEM. Les modifications apportées aux propriétés existantes (telles que `dc:title`) sont écrasées et les propriétés qui viennent d’être créées (notamment les propriétés personnalisées telles que `cq:tags`) sont ajoutées en même temps que le schéma.
+Toute modification apportée aux métadonnées d’une ressource est écrite dans les données XMP du binaire d’origine. Cette opération s’effectue par le biais d’un workflow d’écriture différée des métadonnées de Experience Manager. Les modifications apportées aux propriétés existantes (telles que `dc:title`) sont écrasées et les propriétés qui viennent d’être créées (notamment les propriétés personnalisées telles que `cq:tags`) sont ajoutées en même temps que le schéma.
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 
@@ -44,9 +44,9 @@ Toute modification apportée aux métadonnées d’une ressource est écrite dan
 
 Pour en savoir plus sur la modification d’un schéma de métadonnées, consultez la section [Modification de formulaires de schéma de métadonnées](metadata-schemas.md#edit-metadata-schema-forms).
 
-## Enregistrement d’un espace de noms personnalisé dans AEM {#registering-a-custom-namespace-within-aem}
+## Enregistrement d’un espace de noms personnalisé dans Experience Manager {#registering-a-custom-namespace-within-aem}
 
-Vous pouvez ajouter vos propres espaces de noms à AEM. Tout comme il existe des espaces de noms prédéfinis tels que cq, jcr et sling, vous pouvez disposer d’un espace de noms pour le traitement des données XML et des métadonnées de votre référentiel.
+Vous pouvez ajouter vos propres espaces de noms dans Experience Manager. Tout comme il existe des espaces de noms prédéfinis tels que cq, jcr et sling, vous pouvez disposer d’un espace de noms pour le traitement des données XML et des métadonnées de votre référentiel.
 
 1. Accédez à la page d’administration du type de nœud *https://&lt;hôte>:&lt;port>/crx/explorer/nodetypes/index.jsp*.
 1. Cliquez ou appuyez sur **[!UICONTROL Espaces de noms]** en haut de la page. La page d’administration des espaces de noms s’affiche dans une fenêtre.
