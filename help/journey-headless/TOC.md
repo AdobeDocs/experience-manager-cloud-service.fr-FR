@@ -5,10 +5,10 @@ breadcrumb-title: Parcours de développement découplé AEM
 user-guide-description: Faites vos premiers pas dans cette visite guidée pour découvrir les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre projet.
 feature: Outils de développement
 role: Developer, Architect
-source-git-commit: bc7a8460c10706e9dd398f1aa2a0b3fc608fdafb
+source-git-commit: 0048cd094b24c7ef1fb326c6a7419b700e87df23
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 77%
+source-wordcount: '122'
+ht-degree: 100%
 
 ---
 
@@ -26,11 +26,3 @@ ht-degree: 77%
    + [Comment assembler l’ensemble](developer/put-it-all-together.md)
    + [Comment mettre en ligne votre application découplée](developer/go-live.md)
    + [Facultatif – Comment créer des applications sur une seule page (SPA) avec AEM](developer/create-spa.md)
-+ AEM Parcours de localisation sans affichage {#localization}
-   + [Présentation de la localisation sans affichage dans AEM](localization/overview.md)
-   + [Prise en main de la localisation AEM sans interface](localization/getting-started.md)
-   + [Découvrez le contenu sans interface et comment le localiser dans AEM](localization/learn-about.md)
-   + [Configuration du connecteur de traduction](localization/configure-connector.md)
-   + [Configuration des règles de traduction](localization/translation-rules.md)
-   + [Traduire le contenu](localization/translate-content.md)
-   + [Publier le contenu traduit](localization/publish-content.md)
