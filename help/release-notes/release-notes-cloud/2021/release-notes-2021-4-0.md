@@ -2,15 +2,15 @@
 title: Notes de mise à jour de la version 2021.4.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2021.4.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 20bb4eaf8cdf0208b145087d27123c25c6293f9f
+source-git-commit: e3540331e3194dce5dcd88e4f785f15ef682f062
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 15%
+source-wordcount: '1535'
+ht-degree: 92%
 
 ---
 
 
-# Notes de la mise à jour actuelle d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour actuelles pour[!DNL Adobe Experience Manager]as a Cloud Service {#release-notes}
 
 La section suivante concerne les notes de mise à jour générales de la version actuelle (la plus récente) d’[!DNL Experience Manager] as a Cloud Service.
 
@@ -23,48 +23,50 @@ La section suivante concerne les notes de mise à jour générales de la version
 
 ## Date de publication {#release-date}
 
-La date de publication de [!DNL Adobe Experience Manager] en tant que Cloud Service 2021.4.0 est le 6 mai 2021.
-La version suivante (2021.5.0) sera publiée le 27 mai 2021.
+La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service version 2021.4.0 est le 6 mai 2021.
+La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 ## AEM as a Cloud Service Foundation{#aem-as-a-cloud-service-foundation}
 
 ### Nouveautés {#what-is-new-foundation}
 
-* [Processus](/help/operations/replication.md#publish-content-tree-workflow)  Publier l’arborescence de contenu : une nouvelle étape et un nouveau modèle de processus offrent des performances accrues lors de la publication de hiérarchies de contenu profondes.
+* [Processus Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) - Une nouvelle étape et un nouveau modèle de processus offrent des performances accrues lors de la publication de hiérarchies de contenu profondes.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Nouveautés d’[!DNL Sites] {#what-is-new-sites}
+### Nouveautés d’[!DNL Sites]  {#what-is-new-sites}
 
-* Points de terminaison GraphQL : il est désormais possible d’activer l’API GraphQL AEM pour les configurations AEM Sites individuelles et de créer des points de terminaison GraphQL personnalisés pour ces configurations à l’aide d’une nouvelle interface utilisateur de la console GraphQL. L’interface utilisateur permet également de gérer les points d’entrée GraphQL.
+* Points d’entrée GraphQL - Il est désormais possible d’activer l’API GraphQL AEM pour les configurations d’AEM Sites individuelles et de créer des points d’entrée GraphQL personnalisés pour ces configurations à l’aide d’une nouvelle interface utilisateur de la console GraphQL. L’interface utilisateur permet également de gérer les points d’entrée GraphQL.
 
-* Modèles de contenu, type de données Date&amp;Time amélioré : il est désormais possible de configurer le type de date Date&amp;Time afin de n’autoriser la création que des informations de date, d’heure ou de date et d’heure.
+* Modèles de contenu, type de données Date&amp;Time amélioré - Il est désormais possible de configurer le type de date Date&amp;Time afin d’autoriser la création des informations de date uniquement, d’heure uniquement ou les informations de date et d’heure.
 
-* Modèles de contenu, type de données Balises amélioré : il est désormais possible de configurer le type de données Balises pour permettre la création de balises uniques ou multiples.
+* Modèles de contenu, type de données Balises amélioré - Il est désormais possible de configurer le type de données Balises pour permettre la création de balises uniques ou multiples.
 
-* Modèles de contenu, nouveau type de données Espace réservé d’onglet : le nouveau type de données Espace réservé d’onglet permet de regrouper les types de données dans des sections qui seront rendues sous les onglets de l’éditeur de fragment de contenu.
+* Modèles de contenu, nouveau type de données Espace réservé d’onglet - Le nouveau type de données Espace réservé d’onglet permet de regrouper les types de données dans des sections qui seront rendues sous les onglets de l’éditeur de fragment de contenu.
 
 ### Bogues corrigés dans [!DNL Sites] {#bug-fixes-sites}
 
-* Fragments de contenu : le déplacement de fragments de contenu ou de dossiers met désormais à jour les références imbriquées dans le fragment (CQ-4320815)
+* Fragments de contenu - Le déplacement de fragments de contenu ou de dossiers met désormais à jour les références imbriquées dans le fragment (CQ-4320815).
 
-* GraphQL : les requêtes persistantes prennent désormais en charge les points de terminaison définis par l’utilisateur et spécifiques aux configurations AEM Sites (CQ-4315928).
+* GraphQL - Les requêtes persistantes prennent désormais en charge les points d’entrée définis par l’utilisateur et spécifiques aux configurations AEM Sites (CQ-4315928).
 
 ## [!DNL Adobe Experience Manager Assets] as a  [!DNL Cloud Service] {#assets}
 
-### Nouveautés d’[!DNL Assets] {#what-is-new-assets}
+### Nouveautés d’[!DNL Assets]  {#what-is-new-assets}
 
-* [!DNL Experience Manager] ne archive pas les téléchargements de ressources uniques où le fichier d’origine est téléchargé. Cette amélioration permet des téléchargements plus rapides.
+* [!DNL Experience Manager] n’archive pas les téléchargements de ressources uniques où le fichier d’origine est téléchargé. Cette amélioration permet des téléchargements plus rapides.
 
 * Lorsqu’une ressource est téléchargée via l’option linkshare, vous pouvez désormais choisir de télécharger ou non les rendus. Auparavant, tous les rendus de ressources étaient téléchargés.
 
-* Les administrateurs peuvent configurer [!DNL Experience Manager] pour supprimer la source des ressources après une ingestion de ressources en masse. Voir [ingestion de ressources en bloc](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Les administrateurs peuvent configurer [!DNL Experience Manager] pour supprimer la source des ressources après une ingestion de ressources en masse. Voir la section [Ingestion de ressources en bloc](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* Lors de l’exécution d’un contrôle de l’intégrité pour importer des ressources en bloc, Experience Manager fournit désormais plus d’informations sur les raisons des échecs. Voir [ingestion de ressources en bloc](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Lors de l’exécution d’un contrôle de l’intégrité pour importer des ressources en bloc, Experience Manager fournit désormais plus d’informations sur les raisons des échecs. Voir la section [Ingestion de ressources en bloc](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* Lors de l’importation de ressources à l’aide de l’outil d’importation en bloc, les administrateurs ont désormais la possibilité de supprimer les fichiers source une fois l’importation réussie. Voir [ingestion de ressources en bloc](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Lors de l’importation de ressources à l’aide de l’outil d’importation en bloc, les administrateurs ont désormais la possibilité de supprimer les fichiers source une fois l’importation réussie. Voir la section [Ingestion de ressources en bloc](/help/assets/add-assets.md#asset-bulk-ingestor).
 
 * Lors de la modification d’un schéma de métadonnées, un nouveau champ de sélecteur de chemin racine permet aux administrateurs d’effectuer rapidement et facilement la sélection, réduisant ainsi le temps de configuration.
+
+* Lors de la modification d’un schéma de métadonnées, un type de données est ajouté, qui fournit une zone de texte de forme libre dans l’éditeur de métadonnées. Les utilisateurs peuvent utiliser cette zone de texte pour saisir du texte de forme libre en tant que métadonnées d’une ressource. Voir [Éditeur de schéma de métadonnées](/help/assets/metadata-schemas.md).
 
 * Les métadonnées de nombreuses ressources peuvent être importées en bloc à l’aide d’un fichier CSV et exportées dans un fichier CSV. Le format de date par défaut est désormais `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Les utilisateurs peuvent utiliser un format différent en mettant à jour l’en-tête de colonne. Par exemple, ajoutez `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` comme en-tête de colonne dans le fichier CSV au lieu du mot `Date`.
 
@@ -74,7 +76,7 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 ### Bogues corrigés dans [!DNL Assets] {#bug-fixes-assets}
 
-* Lorsque vous tentez de déplacer plusieurs ressources ou dossiers, une erreur est consignée dans la console et l’opération de déplacement n’est pas terminée. L’opération de déplacement échoue si le titre ne peut pas être mis à jour. (CQ-4322080)
+* Lorsque vous tentez de déplacer plusieurs ressources ou dossiers, une erreur est consignée dans la console et l’opération de déplacement n’est pas effectuée. L’opération de déplacement échoue si le titre ne peut pas être mis à jour. (CQ-4322080)
 
 * Un champ de métadonnées peut être masqué en fonction d’une règle de sorte que, lorsqu’une condition prédéfinie est remplie, les métadonnées ne soient pas obligatoires. Toutefois, ces champs de métadonnées masqués s’affichent sous forme de champs obligatoires. (CQ-4321285)
 
@@ -90,52 +92,52 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 ## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
-### Nouveautés d’[!DNL Forms] {#what-is-new-forms}
+### Nouveautés d’[!DNL Forms]  {#what-is-new-forms}
 
-* **Utilisation de la méthode d’authentification d’identité des identifiants de gouvernement dans Adobe Sign enabled Adaptive Forms**
+* **Utilisation de la méthode d’authentification d’identité ID gouvernement dans les formulaires adaptatifs prenant en charge Adobe Sign**
 
-   Optimisé par des algorithmes d’apprentissage automatique avancés, le processus d’identification des gouvernements d’Adobe Sign permet aux entreprises du monde entier d’assurer une authentification de haute qualité de l’identité de leur destinataire. Désormais, vous pouvez utiliser la méthode d’authentification d’identité des identifiants de gouvernement dans Forms adaptatif activé par Adobe Sign.
+   Optimisé par des algorithmes d’apprentissage automatique avancés, le processus d’ID gouvernement d’Adobe Sign permet aux entreprises du monde entier de sécuriser une authentification de grande qualité de l’identité de leur destinataire. Vous pouvez maintenant utiliser la méthode d’authentification d’identité ID gouvernement dans les formulaires adaptatifs prenant en charge Adobe Sign.
 
-   La carte d’identité officielle est une méthode d’authentification d’identité premium qui demande au destinataire de [télécharger l’image d’un document d’identité émis par le gouvernement (permis de conduire, carte d’identité nationale, passeport)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html), puis d’évaluer ce document pour s’assurer qu’il est authentique.
+   ID gouvernement est une méthode d’authentification d’identité Premium qui demande au destinataire de [charger l’image d’un document d’identité émis par le gouvernement (permis de conduire, carte d’identité nationale, passeport)](https://helpx.adobe.com/fr/sign/using/adobesign-authentication-government-id.html), puis qui évalue ce document pour s’assurer qu’il est authentique.
 
-* **Prise en charge de l’utilisation de l’expérience de signature dans les formulaires pour les envois de formulaires adaptatifs asynchrones**
+* **Prise en charge de l’utilisation de l’expérience de signature dans les formulaires pour les envois asynchrones de formulaires adaptatifs**
 
-   Vous pouvez désormais utiliser l’expérience de signature dans le formulaire pour les envois asynchrones de formulaires adaptatifs. Vous pouvez également incorporer un formulaire adaptatif dans une page [!DNL Experience Manager Sites] et utiliser l’expérience de signature dans le formulaire pour les envois de formulaire adaptatif.
+   Vous pouvez maintenant utiliser l’expérience de signature dans les formulaires pour les envois asynchrones de formulaires adaptatifs. Vous avez également la possibilité d’incorporer un formulaire adaptatif dans une page [!DNL Experience Manager Sites] et d’utiliser l’expérience de signature dans les formulaires pour les envois de formulaires adaptatifs.
 
-* **Prise en charge de l’utilisation d’une variable pour spécifier une pièce jointe lors du préremplissage d’un formulaire adaptatif pour une étape Affecter une tâche**
+* **Prise en charge de l’utilisation d’une variable pour spécifier une pièce jointe lors du remplissage préalable d’un formulaire adaptatif pour une étape d’affectation d’une tâche**
 
-   Lors du préremplissage d’un formulaire adaptatif pour une étape Affecter une tâche, vous pouvez désormais utiliser une variable de type document pour sélectionner une pièce jointe d’entrée pour le formulaire adaptatif.
+   Lors du remplissage préalable d’un formulaire adaptatif pour une étape d’affectation d’une tâche, vous pouvez désormais utiliser une variable de type document pour sélectionner une pièce jointe d’entrée pour le formulaire adaptatif.
 
 * **Prise en charge de l’utilisation de l’option littérale pour définir la valeur d’une variable de type JSON**
 
-   Vous pouvez utiliser l’option littérale pour définir la valeur d’une variable de type JSON à l’étape de définition de la variable d’un workflow AEM. L’option littérale vous permet de spécifier un fichier JSON sous la forme d’une chaîne.
+   Vous pouvez utiliser l’option littérale pour définir la valeur d’une variable de type JSON à l’étape de définition de la variable d’un processus AEM. L’option littérale vous permet de spécifier un fichier JSON sous la forme d’une chaîne.
 
-* **Utilisation de l’environnement de développement local pour créer un document d’enregistrement (DE)**
+* **Utilisation de l’environnement de développement local pour créer un document d’enregistrement**
 
-   Vous pouvez utiliser un XDP comme modèle de document d’enregistrement sur les instances de Cloud Service et AEM Forms comme SDK Cloud Service (environnement de développement local). Auparavant, la prise en charge était limitée aux instances de Cloud Service uniquement.
+   Vous pouvez utiliser un fichier XDP comme modèle de document d’enregistrement sur les instances de Cloud Service et dans le SDK AEM Forms as a Cloud Service (environnement de développement local). Auparavant, la prise en charge était limitée uniquement aux instances de Cloud Service.
 
 ### Bogues corrigés dans [!DNL Forms] {#bug-fixes-forms}
 
-* Lorsqu’un formulaire adaptatif configuré pour ne pas générer de document d’enregistrement est envoyé à un processus AEM configuré pour générer un document d’enregistrement, aucun message d’erreur n’est affiché et la tâche ne parvient pas à envoyer.
+* Lorsqu’un formulaire adaptatif configuré pour ne pas générer de document d’enregistrement est envoyé à un processus AEM configuré pour générer un document d’enregistrement, aucun message d’erreur ne s’affiche et la tâche ne parvient pas à effectuer l’envoi.
 
 ### Autres mises à jour {#misc-2021-04-0-forms}
 
-* Pour faciliter la reconnaissance du contenu, le service génère désormais des miniatures en direct pour les fichiers XDP, PDF dynamique et de schéma.
-* Permet de déplacer un fichier PDF vers un dossier placé dans l’interface utilisateur d’AEM Forms.
+* Pour faciliter la reconnaissance du contenu, le service génère maintenant des vignettes dynamiques pour les fichiers de schéma, XDP et PDF dynamiques.
+* Ajout de la possibilité de déplacer un fichier PDF vers un dossier placé dans l’interface utilisateur d’AEM Forms.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Nouveautés {#what-is-new-commerce}
 
-* Prise en charge de l’UID de catégorie : cette option ouvre les intégrations commerciales tierces pour les systèmes qui utilisent des chaînes pour les ID de catégorie.
+* Prise en charge de l’UID de catégorie - Cette option ouvre les intégrations commerciales tierces pour les systèmes qui utilisent des chaînes pour les ID de catégorie.
 
-* Extension AEM pour PWA Studio, y compris exemple d’intégration
+* Extension AEM pour PWA Studio, avec un exemple d’intégration
 
 * Nouveau composant principal de navigation CIF qui étend le composant principal de navigation WCM
 
-* Indicateur visuel pour les données de catalogue intermédiaires dans AEM storefront
+* Indicateur visuel pour les données de catalogue intermédiaires dans AEM Storefront
 
-* Le point de terminaison Commerce peut désormais être configuré via l’interface utilisateur de Cloud Manager.
+* Le point d’entrée Commerce peut désormais être configuré via l’interface utilisateur de Cloud Manager.
 
 ### Correctifs {#bug-fixes-commerce}
 
@@ -147,49 +149,49 @@ Cette section présente les notes de mise à jour de Cloud Manager dans AEM as a
 
 ### Date de publication {#release-date-cm-april}
 
-La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.4.0 est le 8 avril 2021.
-La prochaine version est prévue pour le 6 mai 2021.
+La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.4.0 est le 8 avril 2021.
+La prochaine version est prévue pour le 6 mai 2021.
 
 ### Nouveautés {#what-is-new-april}
 
-* Mises à jour de l’interface utilisateur des workflows Ajouter et modifier le programme pour le rendre plus intuitif.
+* Mises à jour de l’interface utilisateur des workflows Ajouter et Modifier le programme pour la rendre plus intuitive.
 
-* Un utilisateur disposant des autorisations requises peut désormais envoyer le point de terminaison du commerce via l’interface utilisateur.
+* Un utilisateur disposant des autorisations requises peut désormais envoyer le point d’entrée de Commerce grâce à l’interface utilisateur.
 
 * Les variables d’environnement peuvent désormais être incluses dans un service spécifique, qu’il s’agisse de création ou de publication. Nécessite AEM version `2021.03.5104.20210328T185548Z` ou supérieure.
 
 * Le bouton **Gérer Git** s’affiche sur la carte Pipelines même si aucun pipeline n’a été configuré.
 
-* La version de l’archétype de projet AEM utilisée par Cloud Manager a été mise à jour vers la version 27.
+* L’archétype de projet AEM utilisé par Cloud Manager a été mis à jour à la version 27.
 
-* Les projets dans Adobe I/O Developer Console créés par Cloud Manager ne peuvent plus être modifiés ou supprimés involontairement.
+* Il n’est plus possible de modifier ni de supprimer involontairement les projets créés par Cloud Manager dans Adobe I/O Developer Console.
 
 * Lorsqu’un utilisateur ajoute un nouvel environnement, il est informé qu’une fois qu’un environnement est créé, il ne peut pas être déplacé vers une autre région.
 
-* Les variables d’environnement peuvent désormais être incluses dans un service spécifique, qu’il s’agisse de création ou de publication. Nécessite AEM version 2021.03.5104.20210328T185548Z ou ultérieure.
+* Les variables d’environnement peuvent désormais être incluses dans un service spécifique, qu’il s’agisse de création ou de publication. Nécessite AEM version 2021.03.5104.20210328T185548Z, ou ultérieure.
 
-* Le message d’erreur généré lors du démarrage d’un pipeline lorsqu’un environnement a été supprimé a été clarifié.
+* Le message d’erreur, lors de la suppression d’un environnement au démarrage d’un pipeline, a été clarifié.
 
-* Les lots OSGi fournis par les projets Eclipse sont maintenant exclus de la règle `CQBP-84--dependencies`.
+* Les lots OSGi fournis par les projets Eclipse sont désormais exclus de la règle `CQBP-84--dependencies`.
 
 ### Correctifs {#bug-fixes-cm-april}
 
-* Lors de la modification de la page de contrôle de l’expérience d’un pipeline, un chemin d’entrée commençant par une barre oblique `( / )` n’entraîne plus le blocage de l’étape à l’état en attente.
+* Lors de la modification de la page de contrôle de l’expérience d’un pipeline, un chemin d’entrée commençant par une barre oblique `( / )` n’entraîne plus le blocage de l’étape à l’état En attente.
 
-* Lorsqu’un nouveau pipeline de production est créé, si aucun remplacement d’audit de contenu n’est ajouté par l’utilisateur, la page d’accueil par défaut n’a pas été contrôlée.
+* Lorsqu’un pipeline de production est créé, si aucun remplacement d’audit de contenu n’est ajouté par l’utilisateur, la page d’accueil par défaut n’a pas été contrôlée.
 
-* Les problèmes pour `CloudServiceIncompatibleWorkflowProcess` étaient de gravité incorrecte dans le fichier CSV de problème téléchargeable.
+* La gravité des problèmes de `CloudServiceIncompatibleWorkflowProcess` était incorrecte dans le fichier CSV de problème téléchargeable.
 
-* La vérification `Runmode` produisait des faux positifs sur les nœuds n’appartenant pas au dossier.
+* La vérification `Runmode` produisait des faux positifs sur les nœuds autres que des dossiers.
 
-## Analyseur de bonnes pratiques {#best-practices-analyzer}
+## Analyseur des bonnes pratiques {#best-practices-analyzer}
 
 ### Date de publication {#release-date-bpa}
 
-La date de publication de la version 2.1.12 de l’analyseur des bonnes pratiques est le 12 avril 2021.
+La date de publication de l’analyseur de bonnes pratiques v2.1.12 est le 12 avril 2021.
 
 ### Correctifs {#bug-fixes-bpa-april}
 
-* Des lignes en double ont été affichées dans le rapport BPA. Ce problème a été résolu.
-* L’interface utilisateur BPA de AEM version 6.4.2 renvoyait une erreur JS qui désactivait le bouton Générer le rapport. Ce problème a été résolu
+* Des lignes en double étaient affichées dans le rapport BPA. Ce problème a été résolu.
+* L’interface utilisateur BPA d’AEM version 6.4.2 renvoyait une erreur JS qui désactivait le bouton Générer le rapport. Ce problème a été résolu
 
