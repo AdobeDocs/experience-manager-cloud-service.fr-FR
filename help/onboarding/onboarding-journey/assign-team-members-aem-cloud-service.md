@@ -4,7 +4,7 @@ description: Consultez cette page pour savoir comment affecter des membres de l�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8b30fc9494e152aa742cf17c02f982f5c9479473
+source-git-commit: b45d5824afee9e2d540ea7cb41b199b517f26b25
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 ## Objectif {#objective}
 
-Ce document vous aide à comprendre les étapes que doit suivre votre administrateur système pour affecter les membres de votre équipe à AEM en tant que profils de produit Cloud Service et pourquoi il est essentiel de permettre à vos auteurs AEM de se lancer dans leur parcours avec AEM.
+Ce document vous aide à comprendre les étapes que votre administrateur système doit suivre pour affecter les membres de votre équipe à AEM en tant que profils de produit Cloud Service et pourquoi il est essentiel de permettre à vos auteurs AEM de se lancer dans leur parcours avec AEM.
 
 Après avoir lu cette section, vous devez :
 
