@@ -4,10 +4,10 @@ user-guide-title: Guide d’Assets as a Cloud Service
 breadcrumb-title: Guide d’Assets
 user-guide-description: Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: f97e2f327aa8f49d0a15f3852aa5d8b37f960005
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 98%
+source-wordcount: '481'
+ht-degree: 94%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 98%
    + [Gestion des droits numériques des ressources](drm.md)
    + [Mise en filigrane de ressources](watermark-assets.md)
    + [Traitement des ressources à l’aide des API [!DNL Creative Cloud] ](cc-api-integration.md)
-+ Configuration, administration et extension d’[!DNL Assets] {#admin}
++ Configurer, administrer et étendre [!DNL Assets] {#admin}
    + [Documents pour les développeurs et guides de référence des API](developer-reference-material-apis.md)
    + [Schéma de métadonnées de dossier](folder-metadata-schema.md)
    + [Utilisation des profils d’image et vidéo](/help/assets/dynamic-media/about-image-video-profiles.md)
@@ -112,8 +112,8 @@ ht-degree: 98%
    + [Images interactives](dynamic-media/interactive-images.md)
    + [Vidéos interactives](dynamic-media/interactive-videos.md)
    + [Vidéo 360 VR](dynamic-media/360-video.md)
-   + [Intégration des visionneuses Dynamic Media à Adobe Analytics et Adobe Launch](dynamic-media/launch.md)
-   + [Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées](dynamic-media/custom-pop-ups.md)
+   + [Intégration des visionneuses Dynamic Media aux balises Adobe Analytics et Adobe Experience Platform](dynamic-media/tags.md)
+   + [Utilisation de l’aperçu rapide pour créer des fenêtres contextuelles personnalisées](dynamic-media/custom-pop-ups.md)
    + [Diffusion d’images optimisées pour un site réactif](dynamic-media/responsive-site.md)
    + [Aperçu de ressources Dynamic Media](dynamic-media/previewing-assets.md)
    + [Ajout de ressources Dynamic Media aux pages](dynamic-media/adding-dynamic-media-assets-to-pages.md)
