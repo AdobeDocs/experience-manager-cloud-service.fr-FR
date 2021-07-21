@@ -4,10 +4,10 @@ description: Découvrez comment créer des profils d’image Dynamic Media conte
 feature: Gestion des ressources, Profils d’image, Rendus
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: b6f25c59e7b0cd239a91dc9eb629957905a77574
+source-git-commit: 02af43ae7a8aa579f4679fbed4626718b895d453
 workflow-type: tm+mt
-source-wordcount: '2714'
-ht-degree: 78%
+source-wordcount: '2762'
+ht-degree: 76%
 
 ---
 
@@ -160,9 +160,15 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 
 #### Application de profils d’image Dynamic Media à des dossiers à partir des propriétés {#applying-image-profiles-to-folders-from-properties}
 
-1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Ressources]**. Accédez ensuite au dossier parent du dossier auquel vous souhaitez appliquer un profil d’image.
-1. Dans le dossier, cochez la case pour la sélectionner, puis sélectionnez **[!UICONTROL Propriétés]**.
-1. Sélectionnez l’onglet **[!UICONTROL Profils d’image.]** Dans la liste déroulante **[!UICONTROL Nom du profil]**, sélectionnez le profil, puis **[!UICONTROL Enregistrer et fermer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
+1. Appuyez sur le logo du Experience Manager et accédez à **[!UICONTROL Ressources]**.
+1. Accédez à un dossier ** (et non à une ressource) auquel vous souhaitez appliquer un profil d’image.
+1. Selon la vue dans laquelle vous vous trouvez, effectuez l’une des opérations suivantes :
+   * En mode Carte, placez le pointeur sur le dossier, puis cochez la case pour le sélectionner.
+   * En mode Colonnes ou Liste, cochez la case située à gauche du nom du dossier.
+1. Dans la barre d’outils, sélectionnez **[!UICONTROL Propriétés]**.
+1. Sélectionnez l’onglet **[!UICONTROL Traitement Dynamic Media]** .
+1. Sous **[!UICONTROL Profil d’image]**, dans la liste déroulante **[!UICONTROL Nom du profil]**, sélectionnez le profil à appliquer.
+1. Près du coin supérieur droit de la page, sélectionnez **[!UICONTROL Enregistrer et fermer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
