@@ -4,10 +4,10 @@ description: Consultez cette page pour découvrir comment commencer à utiliser 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bb0931d0a6c53c850013b0162b9c027daec39ceb
+source-git-commit: 491ee21a31ec8496d28b88ba52770516bccc7388
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 12%
+source-wordcount: '709'
+ht-degree: 11%
 
 ---
 
@@ -47,7 +47,7 @@ Bien que vous puissiez accéder directement à une partie spécifique du parcour
 | Numéro | Article | Description |
 |---|---|---|
 | 0 | Parcours d’intégration | Ce document |
-| 1 | Découvrez les concepts d’intégration, tels que :<br>Administrateur système<br>Admin Console<br>Adobe Identity Management System<br>Adobe ID<br>Présentation de Cloud Manager<br>AEM en tant qu’équipe Cloud Service et profils de produit<br>Prise en charge des Adobes | Découvrez les concepts d’intégration. |
+| 1 | Découvrez les concepts d’intégration, tels que :<br>[Administrateur système](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)<br>[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)<br>[Adobe Identity Management System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html?lang=en)<br>[Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)<br>[Présentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)<br>[AEM en tant qu’équipe Cloud Service et profils de produits&lt;a1 1/><br>[Prise en charge des Adobes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/onboarding-help-resources.html?lang=en)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en) | Découvrez les concepts d’intégration. |
 | 2 | Prise en main de l’intégration | En savoir plus sur la connexion à Admin Console et la vérification de votre profil en tant qu’administrateur système |
 | 3 | Affectation de membres d’équipe à des profils de produit Cloud Manager | Passez en revue les profils de produit Cloud Manager et apprenez à affecter des membres de l’équipe aux profils de produit Cloud Manager. |
 | 4 | Configuration de ressources Cloud via Cloud Manager | Découvrez comment vos ressources cloud sont créées et qui peut le faire. Découvrez également comment votre programme cloud et vos environnements sont créés. |
