@@ -4,9 +4,9 @@ description: Consultez cette page pour découvrir comment commencer à utiliser 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 021146e4e1d65c7fe81ed3dba70b32daf34b9704
+source-git-commit: 806a5a50dee4addc4acd2be50ee501a3985e32d0
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '500'
 ht-degree: 2%
 
 ---
@@ -21,25 +21,19 @@ En tant qu’administrateur système, ce document résume les premières étapes
 
 Après avoir lu cette section, vous devriez être en mesure de :
 
-* Comprendre ce qui est Admin Console
 * Accès et connexion à Admin Console
 * Vérification de vos privilèges en tant qu’administrateur système via Admin Console
 
-## Présentation du Admin Console {#login-admin-console}
-
-Après avoir signé le contrat, Adobe Managed Services (AMS) démarre l’intégration du client.
-
-Une fois votre contrat signé, l’Adobe termine la mise en service de votre organisation. L’administrateur système de votre organisation recevra alors un e-mail de bienvenue lui permettant d’effectuer des tâches de l’administrateur système, telles que l’ajout d’utilisateurs et leur affectation à des rôles.
-
-Adobe Admin Console est un emplacement central où administrer et gérer vos licences de produit et utilisateurs Adobes. Votre administrateur système se connectera à la console d’administration Adobe pour ajouter ou supprimer des utilisateurs, etc. Cliquez [ici](https://adminconsole.adobe.com/) pour accéder à Adobe Admin Console.
+>[!NOTE]
+>Avant de commencer le processus d’intégration, veillez à en savoir plus sur Adobe Admin Console. Adobe Admin Console est un emplacement central où administrer et gérer vos licences de produit et utilisateurs Adobes. Votre administrateur système se connectera à la console d’administration Adobe pour ajouter ou supprimer des utilisateurs, etc. Voir [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en) pour en savoir plus.
 
 
-## Procédure de connexion à Admin Console {#steps-admin-console}
+## Connexion à Admin Console {#steps-admin-console}
 
 Pour accéder à Admin Console et passer en revue votre rôle d’administrateur système à partir du Admin Console, procédez comme suit :
 
 >[!NOTE]
->Vous devez être administrateur système pour pouvoir effectuer les étapes suivantes avec succès.
+>Pour réussir les étapes suivantes, vous devez être administrateur système.
 
 1. Cliquez sur **Commencer** dans l’e-mail de bienvenue, comme illustré dans la figure ci-dessous, pour accéder au Admin Console ou accéder directement au Admin Console à partir de [ici](https://adminconsole.adobe.com).
 
