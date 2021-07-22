@@ -1,17 +1,17 @@
 ---
-title: Prise en main du Parcours d’intégration
+title: Prise en main du processus d’intégration
 description: Consultez cette page pour découvrir comment commencer à utiliser le parcours d’intégration
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 806a5a50dee4addc4acd2be50ee501a3985e32d0
+source-git-commit: e7fd4fb6175f6aeb0c7e5cead14d1844f6f69bc5
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '498'
 ht-degree: 2%
 
 ---
 
-# Prise en main du Parcours d’intégration {#getting-started}
+# Prise en main du processus d’intégration {#getting-started}
 
 L’intégration est le processus au cours duquel un administrateur système désigné configure AEM en tant que Cloud Service pour votre organisation. Cela inclut l’approvisionnement initial des ressources cloud et l’affectation des utilisateurs aux rôles appropriés en fonction de leurs responsabilités professionnelles, après quoi chaque membre peut se connecter et accéder à son AEM en tant que ressources de Cloud Service.
 
@@ -67,5 +67,5 @@ Pour accéder à Admin Console et passer en revue votre rôle d’administrateur
 
 ## Et après ? {#whats-next}
 
-Maintenant que vous êtes connecté à Admin Console et que vous avez vérifié votre profil en tant qu’administrateur système, vous devez continuer votre parcours d’intégration en consultant le document Attribution de membres de l’équipe aux profils de produit Cloud Manager .
+Maintenant que vous êtes connecté à Admin Console et que vous avez vérifié votre profil en tant qu’administrateur système, vous devez poursuivre votre parcours d’intégration en consultant le document Attribution de membres de l’équipe aux profils de produit Cloud Manager .
 
