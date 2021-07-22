@@ -4,10 +4,10 @@ description: Utilisez la fonction Arborescence de structure de l’éditeur de f
 feature: Fragments de contenu
 role: User
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 61e3b1d883afe0e9a873991fb8fd148de0fbcd4f
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 100%
+source-wordcount: '105'
+ht-degree: 62%
 
 ---
 
@@ -19,6 +19,10 @@ Dans l’éditeur de fragments de contenu, vous pouvez sélectionner l’icône 
 
 ![Arborescence de la structure du fragment de contenu](assets/cfm-structuretree-01.png)
 
-Cette opération ouvre une représentation de la structure du fragment dans le volet de gauche :
+Une représentation de la structure du fragment s’ouvre alors dans le volet de gauche. Vous pouvez ainsi parcourir et atteindre les fragments référencés.
+
+>[!NOTE]
+>
+>À l’aide des chemins de navigation du panneau principal, vous pouvez revenir à votre point de départ.
 
 ![Arborescence de la structure du fragment de contenu](assets/cfm-structuretree-02.png)
