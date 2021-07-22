@@ -4,9 +4,9 @@ description: Consultez cette page pour découvrir comment commencer à utiliser 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 6046b29408a9bd61c8bbd809b73f2ba6e5a339da
+source-git-commit: e7fd4fb6175f6aeb0c7e5cead14d1844f6f69bc5
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '643'
 ht-degree: 8%
 
 ---
@@ -19,8 +19,8 @@ Nous vous félicitons de commencer votre parcours avec AEM as a Cloud Service !
 
 Ce guide vous guide tout au long des sujets les plus importants afin que vous puissiez :
 
-* Comprendre pleinement ce que vous attendez du parcours d’intégration de l’AEM en tant que Cloud Service.
-* Ayez permis à votre équipe de se mettre en route et de prendre les premières mesures nécessaires pour apprendre à créer et développer du contenu pour votre AEM en tant qu’application Cloud Service.
+* Compréhension complète de ce à quoi s’attendre lors de l’intégration de l’AEM en tant que Cloud Service.
+* Permet à votre équipe de se mettre en route et de commencer à apprendre à créer et développer du contenu pour votre application AEM en tant qu’application de Cloud Service.
 
 Cela signifie :
 
@@ -35,6 +35,8 @@ L’intégration est le processus au cours duquel un [administrateur système](h
 
 Le parcours d’intégration est illustré ci-dessous et chaque étape du parcours est décrite en détail dans les sections suivantes.
 
+![](/help/onboarding/onboarding-journey/assets/onboarding-journey.png)
+
 ## Exploration du Parcours d’intégration {#exploring-onboarding-journey}
 
 Vous allez explorer de nombreux sujets dans ce parcours. Les articles suivants vous donnent une connaissance fondamentale des étapes d’intégration d’AEM en tant que Cloud Service. Bien que vous puissiez accéder directement à une partie spécifique du parcours, de nombreux concepts sont présentés dans des articles précédents. Par conséquent, si vous êtes nouveau dans l’intégration, nous vous recommandons de commencer au début et de progresser de manière séquentielle.
@@ -45,9 +47,9 @@ Vous allez explorer de nombreux sujets dans ce parcours. Les articles suivants v
 | 1 | Découvrez les concepts d’intégration, tels que :<br>[Administrateur système](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)<br>[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)<br>[Adobe Identity Management System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html?lang=en)<br>[Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)<br>[Présentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)<br>[AEM en tant qu’équipe Cloud Service et profils de produits&lt;a1 1/><br>[Prise en charge des Adobes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/onboarding-help-resources.html?lang=en)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en) | Découvrez les concepts d’intégration. |
 | 2 | Prise en main de l’intégration | En savoir plus sur la connexion à Admin Console et la vérification de votre profil en tant qu’administrateur système |
 | 3 | Affectation de membres d’équipe à des profils de produit Cloud Manager | Passez en revue les profils de produit Cloud Manager et apprenez à affecter des membres de l’équipe aux profils de produit Cloud Manager. |
-| 4 | Configuration de ressources Cloud via Cloud Manager | Découvrez comment vos ressources cloud sont créées et qui peut le faire. Découvrez également comment votre programme cloud et vos environnements sont créés. |
+| 4 | Configuration de ressources Cloud via Cloud Manager | Découvrez comment vos ressources cloud sont créées et qui peut le faire. En outre, découvrez comment vos programmes et environnements cloud sont créés. |
 | 5 | Affecter des membres de l’équipe à AEM en tant que profils de produit Cloud Service | Découvrez comment l’administrateur système assigne les membres de votre équipe à AEM en tant que profils de produit Cloud Service. |
-| 6 | Formation des développeurs AEM et des responsables de déploiement | Découvrez comment en tant que développeur vous pouvez accéder à Cloud Manager Git et le gérer, ainsi que comment en tant que responsable de déploiement, configurer des pipelines et déployer du code dans Cloud Manager. |
+| 6 | Formation des développeurs AEM et des responsables de déploiement | Découvrez comment, en tant que développeur, vous pouvez accéder à Cloud Manager Git et en tant que responsable de déploiement, vous pouvez configurer des pipelines et déployer du code dans Cloud Manager. |
 | 7 | Chemin d’apprentissage pour les utilisateurs AEM | Découvrez comment, en tant qu’auteur AEM, vous pouvez accéder à AEM en tant qu’instance de Cloud Service et vous familiariser avec la création de contenu pour l’instance d’Cloud Service d’. |
 
 ## Et après ? {#what-is-next}
