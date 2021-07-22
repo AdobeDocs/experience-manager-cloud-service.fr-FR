@@ -4,9 +4,9 @@ description: Consultez cette page pour savoir comment affecter des membres de l�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 21fae2eff51e46ee026cebe135c8a16625ed8f10
+source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1384'
 ht-degree: 2%
 
 ---
@@ -155,12 +155,11 @@ Félicitations ! Désormais, votre nouvelle équipe Cloud Manager, y compris le
 
 ## Eléments suivants {#whats-next}
 
-En tant qu’administrateur système affecté au rôle *Propriétaire de l’entreprise*, vous devez accéder à Cloud Manager et vous connecter à celui-ci.
->[!NOTE]
->Reportez-vous à la section [Accès à Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en) pour savoir comment vous connecter et accéder à Cloud Manager.
+1. En tant qu’administrateur système affecté au rôle *Propriétaire de l’entreprise*, vous devez accéder à Cloud Manager et vous connecter. Reportez-vous à la section [Accès à Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en) pour savoir comment vous connecter et accéder à Cloud Manager.
 
-Un utilisateur de Cloud Manager possédant le rôle Propriétaire de l’entreprise peut se connecter et configurer vos ressources cloud, y compris vos programmes et environnements. Votre équipe d’experts pourra ainsi commencer à accéder à AEM en tant que Cloud Service dès que possible.
-Une fois que votre propriétaire d’entreprise a configuré vos ressources cloud, les développeurs et les responsables de déploiement qui ont été ajoutés avec succès aux profils de produit Cloud Manager peuvent accéder à Cloud Manager et se familiariser avec la manière dont ils peuvent continuer leur parcours d’apprentissage.
+1. Ensuite, un utilisateur de Cloud Manager possédant le rôle *Propriétaire de l’entreprise* peut se connecter et configurer vos ressources cloud, y compris votre programme cloud et vos environnements. Votre équipe d’experts pourra ainsi commencer à accéder à AEM en tant que Cloud Service dès que possible.
+
+1. Une fois que le *propriétaire d’entreprise* a configuré vos ressources cloud, les *développeurs* et *responsables de déploiement* qui ont été ajoutés avec succès aux profils de produit Cloud Manager peuvent accéder à Cloud Manager et se familiariser avec la manière dont ils peuvent continuer leur parcours d’apprentissage.
 
 ## Ressources supplémentaires {#additional-resources}
 
