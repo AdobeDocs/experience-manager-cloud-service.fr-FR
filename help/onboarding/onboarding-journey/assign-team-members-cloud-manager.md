@@ -4,9 +4,9 @@ description: Consultez cette page pour savoir comment affecter des membres de l�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8b30fc9494e152aa742cf17c02f982f5c9479473
+source-git-commit: 57b29f8ef6c65b5a752aca680557e75ba55f64bd
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1299'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Affectation de membres d’équipe à des profils de produit Cloud Manager {#assign-team-members}
 
-Une fois que vous avez appris à vous connecter à Admin Console et que vous avez consulté vos privilèges en tant qu’administrateur système, vous êtes prêt à affecter des membres de l’équipe aux profils de produit Cloud Manager.
+Une fois que vous avez appris à vous connecter à [Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en) et que vous avez consulté vos privilèges en tant qu’[administrateur système](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en), vous êtes prêt à affecter des membres de l’équipe aux profils de produit Cloud Manager.
 
 ## Objectif {#objective}
 
@@ -24,24 +24,43 @@ Après avoir lu cette section, vous devriez être en mesure de :
 
 * Comprenez pourquoi et comment ajouter des membres de l’équipe.
 * Découvrez trois profils de produit Cloud Manager différents, tels que Propriétaire d’entreprise, Responsable de déploiement et Développeur.
-* Affectez des membres de l’équipe à des profils de produit Cloud Manager (Propriétaire de l’entreprise, Responsable de déploiement et Développeur).
+* Affectez des membres de l’équipe à des profils de produit Cloud Manager tels que Propriétaire de l’entreprise, Responsable de déploiement et Développeur.
+
+## Prérequis {#prerequisites}
+
+Les conditions préalables suivantes doivent être prises en compte avant de commencer cette section. Vous devez être un :
+
+* Un administrateur système et comprenez [Profils produit Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles).
+* Comprend les [bases de Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en).
+* Posséder des informations sur les membres de votre équipe. Un administrateur système doit avoir les noms et adresses électroniques ainsi que les rôles et responsabilités des membres de l’équipe qui devront accéder à AEM en tant que Cloud Service.
+
+   >[!NOTE]
+   >Dans le cadre de l’intégration, nous vous recommandons d’ajouter initialement des utilisateurs qui participeront aux tâches immédiates, tels que les administrateurs, les développeurs et les auteurs de contenu. Vous pouvez continuer l’intégration sans ajouter tous les utilisateurs. Une fois l’intégration terminée, vous pouvez mettre à l’échelle un plus grand nombre d’utilisateurs ultérieurement.
 
 ## Vérification des profils de produit Cloud Manager {#review-product-profiles}
 
 Dans Admin Console, vous pouvez voir la liste des profils Cloud Manager.
 
 >[!NOTE]
->Avant de passer en revue les profils de produit Cloud Manager à partir d’Admin Console, il est recommandé de consulter les profils de produit Cloud Manager disponibles.
+>Avant de passer en revue les profils de produit Cloud Manager à partir de Admin Console, il est recommandé de consulter les [Profils de produit Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) disponibles.
 
 Suivez les étapes ci-dessous pour afficher la liste des profils Cloud Manager :
 
-1. Connectez-vous à Adobe Admin Console. Sur la page **Aperçu**, sélectionnez Adobe Experience Manager as a Cloud service dans la carte Produits et services .
+1. Connectez-vous à [Adobe Admin Console](https://adminconsole.adobe.com/). Sur la page **Aperçu**, sélectionnez **Adobe Experience Manager as a Cloud Service** dans la carte **Produits et services**.
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team1.png)
 
    >[!NOTE]
    >Pour savoir comment utiliser Admin Console, voir Connexion à Admin Console .
 
 
-1. Accédez à l’instance de gestion du cloud à partir du tableau avec la liste de toutes les instances. La liste des profils de produits Cloud Manager préconfigurés s’affiche.
+1. Accédez à l’instance **Cloud Manager** à partir du tableau avec la liste de toutes les instances.
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team2.png)
+
+1. La liste des [profils de produits Cloud Manager préconfigurés s’affiche ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles).
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team3.png)
 
 
 ## Affectation d’utilisateurs au profil de produit du propriétaire de l’entreprise {#assign-users-business-owner}
@@ -83,7 +102,7 @@ Félicitations ! Désormais, votre nouvelle équipe Cloud Manager, y compris le
    >[!NOTE]
    >Un utilisateur peut être ajouté au profil de produit Deployment Manager après la création de ressources Cloud Manager.
 
-## Affecter des utilisateurs au profil de produit du développeur {#assign-users-developer}
+## Affectation d’utilisateurs au profil de produit développeur {#assign-users-developer}
 
 1. Identifiez le ou les utilisateurs qui géreront les programmes Cloud Manager et ajoutez-les au profil de produit Propriétaire de l’entreprise . L’administrateur système doit être la première personne à accéder à Cloud Manager et à se connecter à ce dernier. Vous devez d’abord vous ajouter (administrateur système) au profil de produit Propriétaire de l’entreprise .
 
@@ -102,7 +121,7 @@ Félicitations ! Désormais, votre nouvelle équipe Cloud Manager, y compris le
 
 En tant qu’administrateur système affecté au rôle *Propriétaire de l’entreprise*, vous devez accéder à Cloud Manager et vous connecter à celui-ci.
 >[!NOTE]
->Reportez-vous à la section Accès à Cloud Manager pour savoir comment vous connecter et accéder à Cloud Manager.
+>Reportez-vous à la section [Accès à Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en) pour savoir comment vous connecter et accéder à Cloud Manager.
 
 Un utilisateur de Cloud Manager possédant le rôle Propriétaire de l’entreprise peut se connecter et configurer vos ressources cloud, y compris vos programmes et environnements. Votre équipe d’experts pourra ainsi commencer à accéder à AEM en tant que Cloud Service dès que possible.
 Une fois que votre propriétaire d’entreprise a configuré vos ressources cloud, les développeurs et les responsables de déploiement qui ont été ajoutés avec succès aux profils de produit Cloud Manager peuvent accéder à Cloud Manager et se familiariser avec la manière dont ils peuvent continuer leur parcours d’apprentissage.
