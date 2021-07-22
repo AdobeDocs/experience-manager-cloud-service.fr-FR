@@ -4,10 +4,10 @@ description: Découvrez comment afficher et modifier les propriétés de métado
 feature: Fragments de contenu
 role: User
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 4d20b83c3324e5c082c26e2fa700f03763da2d19
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 100%
+source-wordcount: '208'
+ht-degree: 68%
 
 ---
 
@@ -34,5 +34,7 @@ Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments 
    * **Titre**
    * **Description**
    * **Balises**
+      * [](/help/sites-cloud/authoring/features/tags.md) Les balises sont particulièrement puissantes lors de l’organisation de vos fragments, car elles peuvent être utilisées pour la classification et la taxonomie du contenu. Les balises peuvent être utilisées dans le but de rechercher du contenu (par balises) et d’appliquer des opérations en bloc.
+Par exemple, vous pouvez baliser les fragments pertinents en tant que &quot;lancement de Noël&quot; pour ne les parcourir que sous forme de sous-ensemble ou les copier pour les utiliser avec un autre lancement futur dans un nouveau dossier.
    * Créé (affichage uniquement)
    ![métadonnées](assets/cfm-metadata-02.png)
