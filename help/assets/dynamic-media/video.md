@@ -4,10 +4,10 @@ description: Découvrez comment utiliser la vidéo dans Dynamic Media.
 feature: Profils vidéo
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 769b2da78c7bd01c77c2ee996b145fc54fddea42
 workflow-type: tm+mt
-source-wordcount: '9467'
-ht-degree: 81%
+source-wordcount: '9459'
+ht-degree: 80%
 
 ---
 
@@ -151,7 +151,7 @@ La diffusion de vidéo adaptative en continu est prise en charge sur différente
 
 Dynamic Media prend en charge la lecture vidéo pour mobiles au format vidéo MP4 H.264. Les appareils BlackBerry® qui prennent en charge ce format vidéo sont répertoriés dans la liste : [Formats vidéo pris en charge sur Blackberry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
-Les terminaux Windows® qui prennent en charge ce format vidéo sont répertoriés dans la liste : [Formats vidéo pris en charge sur Windows® Phone](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105)?redirectedfrom=MSDN)
+Vous trouverez les appareils Windows® qui prennent en charge ce format vidéo dans les [formats vidéo pris en charge sur Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs).
 
 * Lecture de la vidéo à l’aide des paramètres prédéfinis de la visionneuse Dynamic Media Video, tels que :
 
@@ -301,7 +301,7 @@ Le tableau ci-dessous décrit la taille recommandée, le format et le débit min
 
 Vous pouvez obtenir les métadonnées d’un fichier en les affichant à l’aide d’un outil d’édition vidéo ou d’une application d’extraction de métadonnées. Voici les instructions d’utilisation de MediaInfo, une application tierce permettant d’extraire les métadonnées d’un fichier vidéo :
 
-1. Visitez cette page web : [https://mediainfo.sourceforge.net/en/Download](https://mediainfo.sourceforge.net/en/Download).
+1. Accédez à [Téléchargement MediaInfo](https://mediaarea.net/en/MediaInfo/Download).
 1. Sélectionnez et téléchargez le programme d’installation pour la version avec interface graphique utilisateur, puis suivez les instructions d’installation.
 1. Après l’installation, cliquez avec le bouton droit sur le fichier vidéo (Windows® uniquement) et sélectionnez MediaInfo, ou bien ouvrez MediaInfo et faites glisser votre fichier vidéo dans l’application. Toutes les métadonnées de votre fichier vidéo, telles que sa largeur, sa hauteur et le nombre d’images par seconde, sont alors visibles à l’écran.
 
