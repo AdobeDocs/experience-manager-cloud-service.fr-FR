@@ -4,9 +4,9 @@ description: Découvrez comment créer et gérer des paramètres prédéfinis de
 feature: Paramètres prédéfinis de visionneuse, Visionneuses
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
+source-git-commit: 769b2da78c7bd01c77c2ee996b145fc54fddea42
 workflow-type: tm+mt
-source-wordcount: '4233'
+source-wordcount: '4231'
 ht-degree: 76%
 
 ---
@@ -68,7 +68,7 @@ Tous les paramètres de visionneuse prédéfinis fournis avec Dynamic Media sont
 * iPad Apple
 * Smartphone Android™
 * Tablette Android™
-* Pour la vidéo, la capacité de lecture MP4 supplémentaire est fournie pour [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) et [Windows® Phone](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105)).
+* Pour la vidéo, la capacité de lecture MP4 supplémentaire est fournie pour [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) et [Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs).
 
 ### Types de médias riches pour les paramètres prédéfinis de visionneuse {#rich-media-types-for-viewer-presets}
 
