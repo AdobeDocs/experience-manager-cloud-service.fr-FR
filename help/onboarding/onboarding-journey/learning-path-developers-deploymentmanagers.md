@@ -4,9 +4,9 @@ description: Consultez cette page pour découvrir les étapes suivantes à suivr
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b45d5824afee9e2d540ea7cb41b199b517f26b25
+source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '338'
 ht-degree: 6%
 
 ---
@@ -47,7 +47,7 @@ Pour en savoir plus sur ce sujet, rendez-vous ici
 
 ## Eléments suivants {#whats-next}
 
-Développeurs et responsables de déploiement sont maintenant prêts à vous familiariser avec la manière de développer du code dans AEMaaCS. Pour en savoir plus ou trouver d’autres parcours d’apprentissage, reportez-vous à la section Ressources supplémentaires ci-dessous.
+Développeurs et responsables de déploiement sont maintenant prêts à vous familiariser avec la manière de développer du code dans AEM en tant que Cloud Service. Pour en savoir plus ou trouver d’autres parcours d’apprentissage, reportez-vous à la section Ressources supplémentaires ci-dessous.
 
 ## Ressources supplémentaires {#additional-resources}
 
