@@ -2,10 +2,10 @@
 title: Conditions préalables pour l’outil de transfert de contenu
 description: Conditions préalables pour l’outil de transfert de contenu
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: 84cca61f8c56e70377c61f5adcdd98c22fbb09a7
+source-git-commit: ac44eeda36a7c8e1232bfd3275fb872e6523f87d
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 15%
+source-wordcount: '474'
+ht-degree: 14%
 
 ---
 
@@ -28,6 +28,7 @@ Veuillez consulter toutes les considérations ci-dessous :
 | Taille de l’entrepôt de segments | Jusqu’à 83 Go sur *Auteur* et 31 Go sur *Publication* sont actuellement pris en charge. Créez un ticket d’assistance auprès de l’assistance clientèle d’Adobe pour discuter des options relatives à la taille de la boutique de segments au-dessus de ces limites. |
 | Taille totale du référentiel de contenu <br>*(entrepôt de segments + entrepôt de données)* | L’outil de transfert de contenu est conçu pour transférer du contenu jusqu’à 10 To pour le type d’entrepôt de données basé sur les fichiers. Tout ce qui dépasse 10 To n’est actuellement pas pris en charge. Créez un ticket d’assistance auprès de l’assistance clientèle d’Adobe pour discuter des options relatives au contenu de plus de 10 To. <br>Pour les types d’entrepôt de données Amazon S3 et Azure Data Store, une étape de  [ ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step) copie préalable facultative peut être utilisée pour accélérer considérablement le processus de transfert de contenu et prendre en charge une taille de stockage de données supérieure à 10 To. |
 | Taille totale de l’index | La taille totale de l’index de 25 Go au maximum est actuellement prise en charge. Créez un ticket d’assistance auprès de l’assistance clientèle d’Adobe pour discuter des options relatives à la taille d’index supérieure à cette limite. |
+| Longueur du nom du noeud | La longueur d’un nom de noeud doit être de 150 octets ou moins. Les noms de noeud de plus de 150 octets doivent être raccourcis pour être &lt;= 150 octets afin d’être pris en charge par le magasin de noeuds Document dans AEM en tant que Cloud Service. Les assimilations échouent si ces noms de noeuds longs ne sont pas corrigés. |
 | Contenu sur les chemins immuables | L’outil de transfert de contenu ne peut pas être utilisé pour migrer le contenu dans des chemins immuables. Pour transférer le contenu de `/etc`, seuls certains `/etc` chemins peuvent être sélectionnés, mais uniquement pour prendre en charge [AEM Forms vers AEM Forms as a3/>. ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets) Pour tous les autres cas d’utilisation, reportez-vous à la section [Restructuration des référentiels communs](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) pour en savoir plus sur la restructuration des référentiels. |
 
 ## Et après ? {#whats-next}
