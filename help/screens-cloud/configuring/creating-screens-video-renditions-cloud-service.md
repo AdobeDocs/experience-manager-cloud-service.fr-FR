@@ -1,9 +1,9 @@
 ---
 title: Création de rendus vidéo Screens dans Screens en tant que Cloud Service
 description: Cette page décrit comment créer des rendus vidéo Screens en tant que Cloud Service dans Screens.
-source-git-commit: b8691bb77079eeb7efd141ce89c44c5a312262b3
+source-git-commit: ec939ac6a91523a9ba64a555943eba8e6da071eb
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '326'
 ht-degree: 1%
 
 ---
@@ -20,13 +20,24 @@ Ce guide explique comment créer des rendus vidéo utilisés dans les lecteurs S
 
 ## Procédure de création de rendus vidéo Screens en tant que Cloud Service {#steps-creating-screens-video-renditions}
 
-1. Accédez aux canaux dans l’interface utilisateur de Screens Cloud.
-1. Cliquez sur Adobe Experience Manager dans le coin supérieur gauche pour accéder au fournisseur de contenu Screens, c’est-à-dire AEM en tant que Cloud Service.
-1. Cliquez maintenant sur la section Outils dans la navigation principale, puis sur &quot;Ressources&quot; et ensuite sur &quot;Profils de traitement&quot;.
+1. Accédez à votre canal dans le fournisseur de contenu Screens.
 
-1. Cliquez sur &quot;Créer&quot; pour créer un profil de traitement.
-1. Attribuez un nom tel que &quot;ScreensProcessingProfile&quot;.
-1. Accédez à l’onglet Vidéo pour ajouter un codage vidéo et cliquez sur &quot;Ajouter nouveau&quot;.
+   >[!NOTE]
+   >Pour plus d’informations, voir [Utilisation du fournisseur de contenu Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) .
+
+1. Cliquez sur la section Outils de la barre de navigation de gauche, puis sur **Ressources** et cliquez sur **Profils de traitement**.
+
+   ![](/help/screens-cloud/assets/configure/screens-cp-3.png)
+
+1. Cliquez sur **Créer** pour créer un profil de traitement.
+
+   ![](/help/screens-cloud/assets/configure/screens-video-2.png)
+
+1. Saisissez le **nom**, par exemple **ScreensProcessingProfile**.
+
+   ![](/help/screens-cloud/assets/configure/screens-video-3.png)
+
+1. Accédez à l’onglet **Vidéo** pour ajouter un codage vidéo, puis cliquez sur **Ajouter nouveau**.
 
 
    >[!IMPORTANT]
