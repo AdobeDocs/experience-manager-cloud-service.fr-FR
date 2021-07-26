@@ -2,10 +2,10 @@
 title: Conditions préalables pour l’outil de transfert de contenu
 description: Conditions préalables pour l’outil de transfert de contenu
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: ac44eeda36a7c8e1232bfd3275fb872e6523f87d
+source-git-commit: 40f27004e82266d363f034bb9d2858b8f3a4958d
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 14%
+source-wordcount: '488'
+ht-degree: 13%
 
 ---
 
@@ -25,7 +25,7 @@ Veuillez consulter toutes les considérations ci-dessous :
 | Considérations | Éléments actuellement pris en charge |
 |--- |--- |
 | Version d’AEM | L’outil de transfert de contenu ne peut être exécuté que sur AEM version 6.3 ou ultérieure. Pour pouvoir utiliser l’outil de transfert de contenu avec AEM version 6.2 ou antérieure, une mise à niveau statique du référentiel de contenu vers AEM 6.5 est requise. Il n’est pas nécessaire de mettre à niveau le code vers AEM 6.5 pour cela. |
-| Taille de l’entrepôt de segments | Jusqu’à 83 Go sur *Auteur* et 31 Go sur *Publication* sont actuellement pris en charge. Créez un ticket d’assistance auprès de l’assistance clientèle d’Adobe pour discuter des options relatives à la taille de la boutique de segments au-dessus de ces limites. |
+| Taille de l’entrepôt de segments | Un référentiel existant qui contient moins de 55 millions de noeuds JCR et jusqu’à 83 Go (taille de compactage en ligne) sur *Auteur* et 31 Go sur *Publier* est actuellement pris en charge. Créez un ticket d’assistance auprès de l’assistance clientèle d’Adobe pour discuter des options relatives à la taille de la boutique de segments au-dessus de ces limites. |
 | Taille totale du référentiel de contenu <br>*(entrepôt de segments + entrepôt de données)* | L’outil de transfert de contenu est conçu pour transférer du contenu jusqu’à 10 To pour le type d’entrepôt de données basé sur les fichiers. Tout ce qui dépasse 10 To n’est actuellement pas pris en charge. Créez un ticket d’assistance auprès de l’assistance clientèle d’Adobe pour discuter des options relatives au contenu de plus de 10 To. <br>Pour les types d’entrepôt de données Amazon S3 et Azure Data Store, une étape de  [ ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step) copie préalable facultative peut être utilisée pour accélérer considérablement le processus de transfert de contenu et prendre en charge une taille de stockage de données supérieure à 10 To. |
 | Taille totale de l’index | La taille totale de l’index de 25 Go au maximum est actuellement prise en charge. Créez un ticket d’assistance auprès de l’assistance clientèle d’Adobe pour discuter des options relatives à la taille d’index supérieure à cette limite. |
 | Longueur du nom du noeud | La longueur d’un nom de noeud doit être de 150 octets ou moins. Les noms de noeud de plus de 150 octets doivent être raccourcis pour être &lt;= 150 octets afin d’être pris en charge par le magasin de noeuds Document dans AEM en tant que Cloud Service. Les assimilations échouent si ces noms de noeuds longs ne sont pas corrigés. |
