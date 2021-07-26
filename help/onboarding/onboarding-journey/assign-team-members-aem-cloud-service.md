@@ -4,9 +4,9 @@ description: Consultez cette page pour savoir comment affecter des membres de l�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
+source-git-commit: c2301227eb65bedb77acd9754e2bc4b62527863d
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '779'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Après avoir lu cette section, vous devez comprendre :
 
 ## Présentation {#introduction}
 
-Pour que l’accès à AEM en tant qu’utilisateurs Cloud Service soit accordé, vous devez appartenir à l’un des deux profils de produit, tels que *AEM Utilisateurs* ou *Administrateurs*. Les membres de votre équipe doivent recevoir des autorisations sur l’instance AEM, car les autorisations d’administration de Cloud Manager ne seront pas suffisantes. En savoir plus.
+Pour que l’accès à AEM en tant qu’utilisateurs Cloud Service soit accordé, il faut appartenir à l’un des deux profils de produit, tels que `AEM Users` ou `AEM Administrators`. Les membres de votre équipe doivent recevoir des autorisations sur l’instance AEM, car les autorisations d’administration de Cloud Manager ne seront pas suffisantes. En savoir plus.
 
 >[!NOTE]
 >Chaque utilisateur affecté à AEM profil de produit User par l’administrateur système disposera d’un accès (lecture seule) à Cloud Manager.
@@ -45,24 +45,22 @@ Avant de commencer à lire cette section, vous devez tenir compte des conditions
    >Dans le cadre de l’intégration, nous vous recommandons d’ajouter initialement des utilisateurs qui participeront aux tâches immédiates, tels que les administrateurs, les développeurs et les auteurs de contenu. Vous pouvez continuer l’intégration sans ajouter tous les utilisateurs. Une fois l’intégration terminée, vous pouvez mettre à l’échelle un plus grand nombre d’utilisateurs ultérieurement.
 
 
-1. Connexion à Admin Console
-(Identique à auparavant)
+1. Connectez-vous à [Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en). Pour plus d’informations, voir Connexion à Admin Console .
 
-1. Vérification des AEM en tant que profils de produit Cloud Service
-Dans Admin Console, vous pouvez voir la liste des profils Cloud Manager. Pour ce faire :
+1. Examinez [AEM en tant que profils de produit Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles).
+
+Pour afficher la liste des profils Cloud Manager à partir de Adobe Admin Console, procédez comme suit :
 
 1. Une fois connecté à Adobe Admin Console, sélectionnez Adobe Experience Manager as a Cloud service dans la carte Produits et services :
 
 1. Accédez à l’instance (instance Auteur de l’environnement de développement) et sélectionnez-la, comme illustré dans l’illustration ci-dessous.
-
-
 
    Vous pouvez désormais voir la liste des profils de produit d’AEM en tant que Cloud Service qui devront être attribués à un utilisateur en fonction de son rôle. Pour en savoir plus à ce sujet, accédez à AEM as a Cloud Service Product Profiles.
 
 
 ## Ajout de membres de l’équipe à AEM profil de produit utilisateur ou AEM administrateur {#add-team-members}
 
-Pour pouvoir accéder à AEM en tant qu’instance de Cloud Service, les utilisateurs doivent appartenir à l’un des deux profils de produit &quot;Utilisateurs AEM&quot; ou &quot;Administrateurs d’AEM&quot;.
+Pour pouvoir accéder à AEM en tant qu’instance de Cloud Service, les utilisateurs doivent appartenir à l’un des deux profils de produit `AEM Users` ou `AEM Administrators`.
 
 >[!NOTE]
 >Vous devez disposer d’autorisations sur l’instance, mais les autorisations pour administrer Cloud Manager ne seront pas suffisantes. En savoir plus.
@@ -87,5 +85,5 @@ Les utilisateurs que vous avez affectés à AEM en tant que profils de produit C
 
 ## Ressources supplémentaires {#additional-resources}
 
-Configuration de l’accès à AEM (présentation vidéo)
-Guide de démarrage rapide pour la création de pages
+* [Configuration de l’accès à AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en)
+* [Guide rapide pour la création de pages](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=en)
