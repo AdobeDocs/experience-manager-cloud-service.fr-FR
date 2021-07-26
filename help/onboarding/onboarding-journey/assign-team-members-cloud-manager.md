@@ -4,9 +4,9 @@ description: Consultez cette page pour savoir comment affecter des membres de l�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
+source-git-commit: 037add45b8dd11422f771057839b17eaaed1d2fe
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1418'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ Une fois que vous avez appris à vous connecter à [Admin Console](https://exper
 
 ## Objectif {#objective}
 
-Ce document résume la manière d’affecter des membres de l’équipe à des profils de produit Cloud Manager à partir du Admin Console.
+Ce document résume la manière d’affecter des membres de l’équipe à des profils de produit Cloud Manager à partir de Adobe Admin Console.
 
 Après avoir lu cette section, vous devriez être en mesure de :
 
@@ -39,7 +39,7 @@ Les conditions préalables suivantes doivent être prises en compte avant de com
 
 ## Vérification des profils de produit Cloud Manager {#review-product-profiles}
 
-Dans Admin Console, vous pouvez voir la liste des profils Cloud Manager.
+Dans Adobe Admin Console, vous pouvez voir la liste des profils Cloud Manager.
 
 >[!NOTE]
 >Avant de passer en revue les profils de produit Cloud Manager à partir de Admin Console, il est recommandé de consulter les [Profils de produit Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) disponibles.
@@ -98,7 +98,7 @@ Les étapes suivantes vous guideront :
 
 1. Cliquez sur **Enregistrer**. Un e-mail de bienvenue est envoyé à l’utilisateur que vous avez ajouté. L’utilisateur invité peut accéder à Cloud Manager en cliquant sur le lien contenu dans l’e-mail de bienvenue et en se connectant à l’aide de son Adobe ID.
 
-Félicitations ! Désormais, votre nouvelle équipe Cloud Manager, y compris le rôle &quot;Propriétaire de l’entreprise&quot; qui vous a été attribué, a été configurée. Les membres recevront un e-mail de bienvenue les invitant à se connecter et à accéder à Cloud Manager. En tant que propriétaire d’entreprise, vous n’êtes qu’à une étape de la connexion à Cloud Manager et de l’activation de la création de vos ressources cloud.
+   Félicitations ! Désormais, votre nouvelle équipe Cloud Manager, y compris le rôle &quot;Propriétaire de l’entreprise&quot; qui vous a été attribué, a été configurée. Les membres recevront un e-mail de bienvenue les invitant à se connecter et à accéder à Cloud Manager. En tant que propriétaire d’entreprise, vous n’êtes qu’à une étape de la connexion à Cloud Manager et de l’activation de la création de vos ressources cloud.
 
 ## Affectation d’utilisateurs au profil de produit Deployment Manager {#assign-users-deployment-manager}
 
@@ -155,7 +155,7 @@ Félicitations ! Désormais, votre nouvelle équipe Cloud Manager, y compris le
 
 ## Eléments suivants {#whats-next}
 
-Maintenant que vous en savez plus sur trois profils de produit Cloud Manager différents, tels que Propriétaire d’entreprise, Responsable de déploiement et Développeur, et que des membres de l’équipe sont affectés à des profils de produit Cloud Manager tels que Propriétaire d’entreprise, Responsable de déploiement et Développeur, vous devez poursuivre votre parcours d’intégration en consultant ensuite le document Configuration des ressources via Cloud Manager, dans lequel vous apprendrez :
+Maintenant que vous en savez plus sur trois profils de produit Cloud Manager différents, tels que Propriétaire d’entreprise, Responsable de déploiement et Développeur, et que des membres de l’équipe sont affectés à des profils de produit Cloud Manager tels que Propriétaire d’entreprise, Responsable de déploiement et Développeur, vous devez poursuivre votre parcours d’intégration en consultant ensuite le document Configuration des ressources Cloud via Cloud Manager, dans lequel vous apprendrez :
 
 1. En tant qu’administrateur système affecté au rôle *Propriétaire de l’entreprise*, vous devez accéder à Cloud Manager et vous connecter à celui-ci.
 
