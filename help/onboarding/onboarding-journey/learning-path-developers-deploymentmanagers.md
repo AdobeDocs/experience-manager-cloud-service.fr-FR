@@ -4,10 +4,10 @@ description: Consultez cette page pour découvrir les étapes suivantes à suivr
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
+source-git-commit: d3f721d66cc6b0c9191f8d84d4adc0326ef68d73
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 6%
+source-wordcount: '407'
+ht-degree: 5%
 
 ---
 
@@ -51,19 +51,19 @@ Développeurs et responsables de déploiement sont maintenant prêts à vous fam
 
 ## Ressources supplémentaires {#additional-resources}
 
-* Accès à la gestion des comptes Git et Git à partir de Cloud Manager
+* [Accès à la gestion des comptes Git et Git à partir de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
 
-* Environnement de développement local pour AEM en tant que Cloud Service
+* [Environnement de développement local pour AEM en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 
-* Prise en main d’AEM Sites (tutoriel)
+* [Prise en main d’AEM Sites (tutoriel)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
-* Prise en main de l’éditeur SPA d’AEM et de React | Adobe Experience Manager
+* [Prise en main de l’éditeur SPA d’AEM et de React | Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=en)
 
-* Prise en main de l’Éditeur AEM SPA et d’Angular
+* [Prise en main de l’Éditeur AEM SPA et d’Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=en)
 
-* Prise en main d’AEM sans affichage - GraphQL
+* [Prise en main d’AEM sans affichage - GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=en)
 
-* Prise en main d’AEM SPA Editor pour les développeurs
+* [Prise en main d’AEM Éditeur SPA pour les développeurs](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 
 ### Cours d’Experience League {#experience-league-courses}
 
