@@ -1,10 +1,10 @@
 ---
 title: Création de rendus vidéo Screens dans Screens en tant que Cloud Service
 description: Cette page décrit comment créer des rendus vidéo Screens en tant que Cloud Service dans Screens.
-source-git-commit: ec939ac6a91523a9ba64a555943eba8e6da071eb
+source-git-commit: 0badd4209b35b4c8cdfa765a08b5d9db749f52b5
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 1%
+source-wordcount: '333'
+ht-degree: 0%
 
 ---
 
@@ -39,20 +39,30 @@ Ce guide explique comment créer des rendus vidéo utilisés dans les lecteurs S
 
 1. Accédez à l’onglet **Vidéo** pour ajouter un codage vidéo, puis cliquez sur **Ajouter nouveau**.
 
+   ![](/help/screens-cloud/assets/configure/screens-video-4a.png)
+
+1. Saisissez le **Nom de codage** tel que , **screens-fullhd** et le **Débit** **2500**.
+
+   ![](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
-   >Veillez à utiliser le nom du codage commençant par &quot;screens-&quot;. Seuls ces rendus vidéo seront considérés comme lisant l’expérience vidéo dans Screens en tant que Cloud Service. Saisissez le débit qui convient à vos vidéos (2 500 Kbit/s pour une vidéo de 720 px et 5 000 Kbit/s pour une vidéo de 1 080 px).
+   >Veillez à utiliser le nom du codage commençant par &quot;screens-&quot;. Seuls ces rendus vidéo seront considérés comme pouvant lire l’expérience vidéo dans Screens en tant que Cloud Service. Saisissez le débit qui fonctionne avec vos vidéos (2 500 Kbit/s pour une vidéo de 720 px et 5 000 Kbit/s pour une vidéo de 1 080 px).
 
    >[!NOTE]
-   >Plusieurs rendus vidéo peuvent être ajoutés avec des valeurs de largeur/hauteur/débit/débit variables en fonction de vos besoins, mais n’oubliez pas que tous les écrans - rendus seront téléchargés par les appareils Screens, même si l’appareil ne lit que le rendu vidéo.
+   >Vous pouvez ajouter plusieurs rendus vidéo avec des valeurs de largeur/hauteur/débit/débit variables pour utiliser vos vidéos. N’oubliez pas que tous les rendus Screens seront téléchargés par les appareils Screens, même si l’appareil ne lit que le rendu vidéo.
 
-1. Cliquez sur Enregistrer.
+1. Cliquez sur **Enregistrer**.
 
-1. Sélectionnez le profil de traitement et cliquez sur &quot;Appliquer le profil au(x) dossier(s)&quot;
+1. Sélectionnez le profil de traitement et cliquez sur **Appliquer le profil au(x) dossier(s)**.
 
-1. Sélectionnez le ou les dossiers dans lesquels les vidéos Screens sont conservées et cliquez sur Appliquer .
+   ![](/help/screens-cloud/assets/configure/screens-video-5.png)
 
-1. Vous pouvez créer plusieurs profils de traitement et les appliquer aux dossiers correspondants, de sorte que les vidéos contenues dans ces dossiers obtiennent les rendus vidéo spécifiques.
+1. Sélectionnez le ou les dossiers dans lesquels les vidéos Screens sont conservées et cliquez sur **Appliquer**.
 
-1. Lorsque vous chargez des vidéos dans le dossier où le profil de traitement est appliqué, les vidéos sont traitées et les rendus configurés sont créés, qui seront utilisés par les périphériques Screens pour lire les vidéos.
+   ![](/help/screens-cloud/assets/configure/screens-video-6.png)
+
+   >[!NOTE]
+   >* Vous pouvez créer plusieurs profils de traitement et les appliquer aux dossiers correspondants, de sorte que les vidéos contenues dans ces dossiers obtiennent les rendus vidéo spécifiques.
+   >* Lorsque vous chargez des vidéos dans le dossier où le profil de traitement est appliqué, les vidéos sont traitées et les rendus configurés sont créés, qui sont ensuite utilisés par les périphériques Screens pour lire les vidéos.
+
 
