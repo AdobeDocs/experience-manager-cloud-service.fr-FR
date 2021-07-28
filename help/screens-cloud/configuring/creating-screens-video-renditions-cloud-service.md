@@ -1,9 +1,9 @@
 ---
 title: Création de rendus vidéo dans Screens en tant que Cloud Service
 description: Cette page décrit comment créer des rendus vidéo dans Screens en tant que Cloud Service.
-source-git-commit: 102aab1d550e950ea880d9b9288bdab41866add6
+source-git-commit: e24c368811f0c3e61dc0a48c32ef7368f5fc00f5
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -13,14 +13,14 @@ ht-degree: 0%
 
 ## Présentation {#introduction}
 
-Ce guide explique comment créer des rendus vidéo utilisés dans les lecteurs Screens.
+Cette section décrit comment créer des rendus vidéo utilisés dans les lecteurs Screens.
 
 >[!IMPORTANT]
 >Les étapes mises en évidence dans cette section doivent être configurées si vous envisagez d’utiliser des vidéos dans les canaux Screens.
 
 ## Procédure de création de rendus vidéo dans Screens en tant que Cloud Service {#steps-creating-screens-video-renditions}
 
-Suivez les étapes ci-dessous pour créer des rendus vidéo dans Screens as a Cloud Service à partir du fournisseur de contenu Screens :
+Pour créer des rendus vidéo dans Screens en tant que Cloud Service à partir du fournisseur de contenu Screens, procédez comme suit :
 
 1. Accédez à votre canal dans le fournisseur de contenu Screens.
 
