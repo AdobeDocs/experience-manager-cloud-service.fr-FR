@@ -2,10 +2,10 @@
 title: Création et organisation des pages
 description: Comment créer et organiser des pages avec AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 93e0eac6e329c7a0c54cf592b097014d39a8eb17
 workflow-type: tm+mt
-source-wordcount: '2552'
-ht-degree: 99%
+source-wordcount: '2560'
+ht-degree: 95%
 
 ---
 
@@ -238,7 +238,7 @@ Après avoir créé une page ou accédé à une page existante (dans la console)
 1. Sélectionnez votre page à l’aide de l’une des fonctionnalités suivantes :
 
    * [Actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
-   * le [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) et la barre d’outils
+   * Le [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) et la barre d’outils
 
    Sélectionnez ensuite l’icône **Modifier** :
 
@@ -258,33 +258,36 @@ Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplace
 1. Sélectionnez votre page à l’aide de l’une des options suivantes :
 
    * [Actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
-   * le [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) et la barre d’outils
+   * Le [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) et la barre d’outils
 
    Sélectionnez ensuite l’icône de page **Copier** :
 
    ![Copier](/help/sites-cloud/authoring/assets/copy.png)
 
-   >[!NOTE]
-   >
-   >En mode de sélection, cette page est fermée dès qu’elle est copiée.
-
 1. Accédez à l’emplacement destiné à la nouvelle copie de la page.
-1. L’icône **Coller** est disponible avec une flèche déroulante directement à droite :
+1. Appuyez ou cliquez sur l’icône **Coller** qui est devenue disponible.
 
    ![Coller](/help/sites-cloud/authoring/assets/paste.png)
 
-   Vous pouvez effectuer l’une des actions suivantes :
+1. La boîte de dialogue Coller présente un résumé de la transaction de collage et permet d’effectuer les opérations suivantes :
+   * **Nouveau nom du site :** modifiez le nom de la page collée.
+   * **Coller sans enfants :** Omettez les pages enfants de la page sélectionnée lors du collage (les pages enfants par défaut sont collées).
 
-   1. Sélectionner l’icône de page **Coller** : une copie de la page d’origine et de toutes les pages enfants sera créée à cet emplacement.
-   1. Sélectionner la flèche déroulante pour afficher l’option **Coller sans enfants**. Une copie de la page d’origine sera créée à cet emplacement ; les pages enfants ne seront pas copiées.
+   ![Boîte de dialogue Coller](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-   >[!NOTE]
-   >
-   >Si vous copiez la page à un emplacement où il existe une page du même nom que l’original, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `beach` existe déjà, une nouvelle page portant le nom `beach` deviendra `beach1`.
+1. Appuyez ou cliquez sur le bouton **Coller** pour confirmer la transaction de collage et créer la ou les nouvelles pages.
+
+>[!NOTE]
+>
+>Si vous copiez la page à un emplacement où il existe une page du même nom que l’original, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `beach` existe déjà, une nouvelle page portant le nom `beach` deviendra `beach1`.
+
+>[!NOTE]
+>
+>Si vous démarrez l’action de collage en mode de sélection, celle-ci se ferme automatiquement dès que la page est copiée.
 
 ### Déplacement ou changement de nom d’une page {#moving-or-renaming-a-page}
 
-La procédure pour déplacer ou renommer une page est plus ou moins la même et est gérée par le même assistant. Cet assistant permet d’effectuer les opérations suivantes :
+La procédure de déplacement ou de changement de nom d’une page est pratiquement la même et les deux actions sont gérées par l’assistant Déplacer la page . Cet assistant permet d’effectuer les opérations suivantes :
 
 * Renommer une page sans la déplacer
 * Déplacer la page sans la renommer
@@ -296,7 +299,7 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
 1. Sélectionnez votre page à l’aide de l’une des options suivantes :
 
    * [Actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
-   * le [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) et la barre d’outils
+   * Le [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) et la barre d’outils
 
    Sélectionnez ensuite l’icône de page **Déplacer** :
 
@@ -412,7 +415,7 @@ L’état des tâches asynchrones peut être vérifié dans le [**tableau de bor
 >
 >Si une page est déjà publiée, la publication est automatiquement annulée avant la suppression.
 
-### Verrouillage d’une page {#locking-a-page}
+### Verrouillage d’une page    {#locking-a-page}
 
 Vous pouvez [verrouiller ou déverrouiller une page](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) à partir d’une console ou lorsque vous modifiez une page. Les deux environnements indiquent également si une page est verrouillée ou non.
 
