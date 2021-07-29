@@ -2,10 +2,10 @@
 title: Utilisation de l’analyseur des bonnes pratiques
 description: Utilisation de l’analyseur des bonnes pratiques
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 36ead0181ab9d1a0eb874d8e3584df2e4c760f30
 workflow-type: tm+mt
-source-wordcount: '2506'
-ht-degree: 92%
+source-wordcount: '2522'
+ht-degree: 98%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 92%
 >id="aemcloud_bpa_using"
 >title="Utilisation de l’analyseur des bonnes pratiques"
 >abstract="Consultez la documentation relative à l’utilisation de l’analyseur des bonnes pratiques (anciennement Cloud Readiness Analyzer) et du rapport généré. Le rapport de l’analyseur des bonnes pratiques permet de mieux comprendre le degré de préparation général à la mise à niveau."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Considérations importantes concernant l’utilisation de l’analyseur des bonnes pratiques {#imp-considerations}
 
@@ -78,7 +78,7 @@ Consultez cette section pour savoir comment afficher le rapport de l’analyseur
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
 
-1. Vous avez la possibilité de télécharger le rapport au format CSV (valeurs séparées par des virgules) en cliquant sur **Exporter au format CSV**, comme illustré dans la figure ci-dessous.
+1. Vous avez la possibilité de télécharger le rapport au format CSV (valeurs séparées par une virgule) en cliquant sur **Exporter au format CSV**, comme le montre l’illustration ci-dessous.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
@@ -93,9 +93,9 @@ Pendant sa régénération, le rapport affiche la progression en termes de pourc
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
 
 
-#### Utilisation de filtres dans le rapport Analyseur des bonnes pratiques {#bpa-filters}
+#### Utilisation de filtres dans le rapport Analyseur des bonnes pratiques (BPA)  {#bpa-filters}
 
-Pour filtrer les résultats liés à [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), procédez comme suit :
+Pour filtrer les résultats liés à [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), procédez comme suit :
 
 1. Cliquez sur l’icône du rail de gauche sur le côté gauche de la page. Cela affichera le **filtre ACS Commons**. Cliquez sur le **filtre ACS Commons** pour afficher la case à cocher interactive comme illustré dans l’image ci-dessous.
 
@@ -109,7 +109,7 @@ L’icône du rail de gauche n’apparaîtra que si le BPA détecte l’utilisat
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-Les résultats d’ACS Commons ne doivent pas être ignorés. Consultez la [documentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) pour déterminer la compatibilité avec AEM en tant que Cloud Service.
+Les résultats d’ACS Commons ne doivent pas être ignorés. Consultez la [documentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) pour déterminer le niveau de compatibilité avec AEM as a Cloud Service.
 
 
 ### Adobe Experience Manager 6.2 et 6.1 {#aem-specific-versions}
@@ -127,6 +127,7 @@ Dans toutes les versions, le détecteur de motifs inclus peut s’exécuter de m
 id="aemcloud_bpa_interpreting"
 title="Interprétation du rapport de l’analyseur des bonnes pratiques"
 abstract="Il existe deux options pour afficher les sorties de rapport de l’analyseur des bonnes pratiques : IU et CSV. Lorsque l’analyseur des bonnes pratiques est exécuté dans l’instance AEM, le rapport de l’IU s’affiche sous la forme de résultats dans la fenêtre des outils. Le format CSV du rapport contient des informations générées à partir de la sortie du détecteur de motifs, triées et organisées par types de catégories, sous-types et niveaux d’importance."
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="Rapport Analyse des bonnes pratiques"
 additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=fr" text="Présentation des catégories de rapports de l’analyseur des bonnes pratiques"
 
 Lorsque l’analyseur des bonnes pratiques est exécuté dans l’instance AEM, le rapport s’affiche sous la forme de résultats dans la fenêtre des outils.
