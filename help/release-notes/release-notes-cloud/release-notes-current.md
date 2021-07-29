@@ -3,9 +3,9 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 21c4bf1a961ab74165f50feb78ce14cc1fa84725
+source-git-commit: 9ef41bc9f60f16a2fdf1900466db8bad99e619e9
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1286'
 ht-degree: 10%
 
 ---
@@ -140,17 +140,17 @@ L’API `com.day.cq.dam.api.collection.SmartCollection` n’est pas disponible d
 
 * `bulk-offline-update-service` ne comportait aucune autorisation pour certains environnements.
 
-* Mettez à jour le lien d’aide pour qu’il corresponde à la nouvelle documentation cloud de screens.
+* Mise à jour du lien d’aide afin qu’il corresponde à la nouvelle documentation cloud screens.
 
-* Annulation de l’affectation des listes de lecture et refus de la suppression des listes de lecture affectées au(x) lecteur(s).
+* Déattribuez des listes de lecture et désactivez la suppression des listes de lecture auxquelles un ou plusieurs lecteurs sont affectés. Cela fonctionne désormais.
 
-* Le lecteur télécharge désormais à nouveau les ressources lorsque le cache &quot;ALL&quot; est effacé.
+* Le lecteur retélécharge désormais les ressources lorsque le cache &quot;ALL&quot; est effacé.
 
 * La planification des répétitions fonctionne maintenant si l’*heure de fin* est définie pour le jour suivant.
 
-* `Back&Forward` fonctionne désormais dans l’interface utilisateur cloud de Screens.
+* `Back&Forward` fonctionne désormais dans Screens en tant qu’interface utilisateur de Cloud Service.
 
-* Les balises portant le même nom mais avec des espaces de noms différents n’ont pas pu être créés.
+* Les balises portant le même nom mais avec des espaces de noms différents n’ont pas pu être créés auparavant.
 
 ## [!DNL Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
