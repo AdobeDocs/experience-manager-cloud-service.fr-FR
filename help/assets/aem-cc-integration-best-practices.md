@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Application de bureau
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
+source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
 workflow-type: tm+mt
-source-wordcount: '3383'
-ht-degree: 58%
+source-wordcount: '3451'
+ht-degree: 57%
 
 ---
 
@@ -32,6 +32,7 @@ Lisez ce qui suit pour savoir quelles intégrations choisir entre poste de trava
 | Simplifier l’expérience pour les créatifs utilisant un poste de travail | Simplifiez l’accès aux ressources à partir d’une gestion des ressources numériques ([!DNL Assets]) pour les professionnels de la création ou, plus largement, pour les utilisateurs de bureau travaillant dans des applications de création de ressources natives. Ils ont besoin d’une méthode simple et simple pour découvrir, utiliser (ouvrir), modifier et enregistrer les modifications dans Experience Manager, ainsi que charger de nouveaux fichiers. | Poste de travail Windows ou Mac ; applications Creative Cloud |
 | Fournir des ressources de haute qualité et prêtes à l’emploi à partir de [!DNL Adobe Stock] | Les spécialistes marketing accélèrent le processus de création de contenu en contribuant à la recherche et à la découverte de ressources. Les créatifs utilisent les ressources approuvées directement dans leurs outils de création. | [!DNL Assets];  [!DNL Adobe Stock] le marché; Champs de métadonnées |
 | Distribution et partage de ressources par sociétés | Les services internes/succursales locales et les partenaires externes, les distributeurs et les agences utilisent les ressources approuvées, partagées par la société mère. La société souhaite partager de manière sécurisée et transparente les ressources créées pour une réutilisation plus large. | [!DNL Brand Portal], [!DNL Asset Share Commons] |
+| Générer automatiquement des variations prédéfinies des ressources chargées | Traitez automatiquement les ressources à l’aide de la technologie de transformation et de gestion des médias unique d’un Adobe pour les actions prédéfinies. Créez une logique personnalisée pour définir vos propres actions à l’aide des API et des microservices de ressources. | Interface utilisateur d’[!DNL Assets] |
 
 ## Offres d’Adobe pour répondre aux besoins en matière de collaboration {#adobe-offerings-to-support-the-collaboration-need}
 
@@ -41,6 +42,7 @@ Lisez ce qui suit pour savoir quelles intégrations choisir entre poste de trava
 | Les utilisateurs professionnels simplifient l’ouverture et l’utilisation des ressources, la modification et le chargement des modifications dans [!DNL Experience Manager] et le chargement de nouveaux fichiers dans [!DNL Experience Manager] à partir de l’environnement de bureau. Ils utilisent une intégration générique pour ouvrir n’importe quel type de ressource dans l’application de bureau native, y compris les applications autres qu’Adobe. | Application de bureau [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr) | Application de bureau Experience Manager sur un poste de travail Windows et Mac |
 | Les marketeurs et les utilisateurs professionnels découvrent, prévisualisent, attribuent une licence et enregistrent les ressources Adobe Stock et les gèrent depuis Experience Manager. Les ressources sous licence et enregistrées fournissent des métadonnées Adobe Stock pour une meilleure gouvernance. | [Intégration d’Experience Manager et d’Adobe Stock](aem-assets-adobe-stock.md) | [!DNL Experience Manager] interface web |
 | Améliorez la collaboration entre les concepteurs de produits numériques et les marketeurs. Permet aux concepteurs d’utiliser les ressources numériques dans les modèles de conception et de structure filaire sur la zone de travail Adobe XD. | [[!DNL Adobe Asset Link] pour [!DNL Adobe XD]](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
+| Les marketeurs peuvent créer automatiquement des variations et des dérivés en fonction des ressources chargées et des actions prédéfinies créées à l’aide de la personnalisation. Utilisez cette automatisation pour améliorer la vitesse du contenu et réduire les efforts manuels. | [Automatisation du contenu](/help/assets/cc-api-integration.md) | [!DNL Experience Manager Assets] interface web |
 
 Cet article se concentre principalement sur les deux premiers aspects des besoins de collaboration. La distribution et la source des ressources à grande échelle sont brièvement mentionnées comme cas d’utilisation. Pour répondre à ces besoins, pensez à Adobe Brand Portal ou à Asset Share Commons. D’autres solutions telles que [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html), des solutions qui peuvent être créées en fonction des [composants Asset Share Commons](https://opensource.adobe.com/asset-share-commons/), [Partage de liens](share-assets.md), à l’aide de [l’interface utilisateur web des ressources Experience Manager](/help/assets/manage-digital-assets.md) doivent être examinées en fonction de besoins spécifiques.
 
