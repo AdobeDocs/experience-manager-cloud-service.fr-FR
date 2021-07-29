@@ -2,10 +2,10 @@
 title: Publication de pages
 description: Publication et annulation de la publication de pages à l’aide d’AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 232ef0198888e55806bd1358d12829035c140c75
 workflow-type: tm+mt
 source-wordcount: '1717'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -46,11 +46,6 @@ Selon votre emplacement, vous pouvez effectuer la publication :
 >* Ce workflow a peut-être été personnalisé par votre équipe de développement.
 >* Un message s’affiche brièvement pour vous informer que le workflow a été déclenché.
 
-
-<!--
->* This [workflow may have been customized](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) by your development team.
->* A message will be displayed briefly to notify you that the workflow was triggered.
--->
 
 >[!NOTE]
 >
@@ -112,9 +107,9 @@ Pour publier une page avec l’option Publication rapide :
 >
 >L’option de publication rapide est dite superficielle ; en d’autres termes, seules la ou les pages sélectionnées sont publiées (les éventuelles pages enfants ne le sont pas).
 
-#### Gérer la publication   {#manage-publication}
+#### Gérer la publication  {#manage-publication}
 
-La méthode **Gérer la publication** propose plus d’options que Publication rapide, dont la possibilité d’inclure des pages enfants, de personnaliser les références ou encore de lancer n’importe quel workflow applicable. Elle offre également la possibilité de publier la page à une date ultérieure.
+**Gérer la** publication offre plus d’options que Publier  **rapidement**, ce qui permet d’inclure des pages enfants, de personnaliser les références et de démarrer les workflows applicables. Il offre également la possibilité de publier à une date ultérieure.
 
 Pour modifier ou annuler la publication d’une page à l’aide de l’option Gérer la publication :
 
@@ -124,46 +119,42 @@ Pour modifier ou annuler la publication d’une page à l’aide de l’option G
 
 1. L’assistant **Gérer la publication** démarre. La première étape, **Options**, vous permet d’effectuer les opérations suivantes :
 
-   * Publier ou annuler la publication des pages sélectionnées.
-   * Effectuer une action maintenant ou ultérieurement.
+   * **Action**
 
-   La publication différée lance un workflow pour modifier la ou les pages sélectionnées à l’heure indiquée. Si vous optez pour une annulation différée de la publication, un workflow est lancé pour annuler la publication de la ou des pages sélectionnées à une heure déterminée.
+      Publier ou annuler la publication des pages sélectionnées.
 
-   Pour annuler une publication/annulation de publication ultérieurement, rendez-vous dans la console Processus pour mettre un terme au workflow correspondant. <!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
+   * **Planification**
 
+      Effectuer une action maintenant ou ultérieurement.
+
+      La publication différée lance un workflow pour modifier la ou les pages sélectionnées à l’heure indiquée. Si vous optez pour une annulation différée de la publication, un workflow est lancé pour annuler la publication de la ou des pages sélectionnées à une heure déterminée.
+
+      >[!NOTE]
+      >
+      >Pour annuler une publication/annulation de publication ultérieure, rendez-vous dans la [console Processus](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) pour mettre un terme au processus correspondant.
    ![Options de gestion de la publication](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
-   Cliquez sur **Suivant** pour continuer.
+1. Cliquez sur **Suivant** pour continuer.
 
 1. Au cours de l’étape suivante de l’assistant Gérer la publication, **Portée**, vous pouvez définir la portée de la publication ou de l’annulation de la publication ; par exemple, inclure des pages enfants et/ou des références.
 
    ![Gérer la portée de la publication](/help/sites-cloud/authoring/assets/publishing-manage-publication-scope.png)
 
+   **Ajouter du contenu**
+
    Vous pouvez sélectionner le bouton **Ajouter du contenu** pour ajouter des pages à la liste des pages à publier, au cas où vous auriez omis d’en sélectionner une avant de lancer l’assistant Gérer la publication.
 
-   Le bouton Ajouter du contenu lance l’[explorateur de chemins d’accès](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser), qui vous permet de sélectionner du contenu.
+   Si vous sélectionnez le bouton **Ajouter du contenu** , le [navigateur de chemins](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) démarre pour permettre la sélection de contenu.
 
    Sélectionnez les pages souhaitées, puis cliquez sur **Sélectionner** pour ajouter le contenu à l’assistant ou sur **Annuler** pour annuler la sélection et revenir à l’assistant.
 
-   De retour dans l’assistant, vous pouvez sélectionner un élément dans la liste afin de configurer d’autres options :
+   **Supprimer la sélection**
 
-   * Inclure ses enfants.
-   * Le supprimer de la sélection.
-   * Gérer ses références publiées.
+   De retour dans l’assistant, vous pouvez sélectionner un élément de la liste pour le supprimer de la sélection.
 
    ![Sélection de pages dans la boîte de dialogue Gérer la publication](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-   La boîte de dialogue qui s’ouvre lorsque vous cliquez sur **Inclure les enfants** vous permet d’effectuer les opérations suivantes :
-
-   * Inclure seulement les enfants immédiats.
-   * Inclure seulement les pages modifiées.
-   * Inclure seulement les pages déjà publiées.
-
-   Cliquez sur **Ajouter** pour ajouter les pages enfants à la liste des pages à publier ou dont la publication doit être annulée sur la base des options sélectionnées. Cliquez sur **Annuler** pour annuler la sélection et revenir à l’assistant.
-
-   ![Gérer la publication : option Inclure les enfants](/help/sites-cloud/authoring/assets/publishing-include-children.png)
-
-   De retour dans l’assistant, les pages ajoutées sont affichées en fonction des options que vous avez sélectionnées dans la boîte de dialogue Inclure les enfants.
+   **Références publiées**
 
    Vous pouvez afficher et modifier les références à publier ou dont la publication doit être annulée pour une page. Pour ce faire, sélectionnez la page, puis cliquez sur le bouton **Références publiées**.
 
@@ -177,30 +168,42 @@ Pour modifier ou annuler la publication d’une page à l’aide de l’option G
 
    ![Sélection de pages dans la boîte de dialogue Gérer la publication](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
+   **Inclure les enfants**
+
+   >[!NOTE]
+   >
+   >Voir [Publication et annulation de la publication d’une arborescence](#publishing-and-unpublishing-a-tree)
+
+   Cliquez sur **Inclure les enfants** pour ouvrir une boîte de dialogue vous permettant d’effectuer les opérations suivantes :
+
+   * **Inclure les enfants**
+   * **Inclure seulement les enfants immédiats**
+   * **Inclure seulement les pages modifiées**
+   * **Inclure seulement les pages déjà publiées**
+
+   Activez les options requises et confirmez avec **OK** l’ajout des pages enfants à la liste des pages à publier ou dont la publication doit être annulée en fonction des options de sélection. Cliquez sur **Annuler** pour annuler la sélection et revenir à l’assistant.
+
+   ![Gérer la publication : option Inclure les enfants](/help/sites-cloud/authoring/assets/publishing-include-children.png)
+
 1. Pour terminer, cliquez sur **Publier**.
 
    De retour dans la console Sites, un message de notification s’affiche pour confirmer la publication.
 
 1. Si les pages publiées sont associées à des workflows, elles peuvent être affichées dans une dernière étape de l’assistant de publication intitulée **Workflows**.
 
+   ![Sélection de pages dans la boîte de dialogue Gérer la publication](/help/sites-cloud/authoring/assets/publishing-manage-publication-workflow.png)
+
    >[!NOTE]
    >
    >L’étape **Workflows** est affichée en fonction des droits dont dispose ou non votre utilisateur. Pour plus d’informations, reportez-vous à la remarque précédente sur cette page concernant les privilèges de publication, ainsi qu’aux sections Gestion de l’accès aux workflows et [Application de workflows aux pages](/help/sites-cloud/authoring/workflows/applying.md).
-   <!--
-   >The **Workflows** step will be shown based on what rights your user may or may not have. See the previous note on this page regarding publishing privileges as well as [Managing Access to Workflows](/help/sites-administering/workflows-managing.md) and [Applying Workflows to Pages](/help/sites-cloud/authoring/workflows/applying.md) for details.
-   -->
 
    Les ressources sont regroupées en fonction des workflows déclenchés et de chaque option proposée pour :
 
    * définir le titre du workflow ;
    * conserver le module de workflow, à condition que le workflow dispose d’une prise en charge multi-ressource ;
-
-   <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
-    -->
-
    * définir le titre du module de workflow, si l’option de conservation du module de workflow a été sélectionnée.
 
-   Cliquez sur **Publier** ou **Publier ultérieurement** pour terminer la publication.
+1. Cliquez sur **Publier** ou **Publier ultérieurement** pour terminer la publication.
 
 ## Annulation de la publication des pages {#unpublishing-pages}
 
@@ -211,24 +214,28 @@ Vous pouvez annuler la publication d’une ou de plusieurs pages [en procédant 
 * [À partir de l’éditeur de page](#unpublishing-from-the-editor)
 * [À partir de la console Sites](#unpublishing-from-the-console)
 
-### Annulation de la publication à partir de l’éditeur   {#unpublishing-from-the-editor}
+### Annulation de la publication à partir de l’éditeur  {#unpublishing-from-the-editor}
 
 Lors de la modification d’une page, si vous souhaitez annuler sa publication, sélectionnez **Annuler la publication de la page** dans le menu **Informations sur la page**, comme vous le feriez pour [publier la page](#publishing-from-the-editor).
 
-### Annulation de la publication à partir de la console   {#unpublishing-from-the-console}
+### Annulation de la publication à partir de la console  {#unpublishing-from-the-console}
 
 De la même façon que vous [utilisez l’option Gérer la publication pour publier une page](#manage-publication), vous pouvez l’utiliser pour annuler la publication.
 
 1. Sélectionnez la ou les pages dans la console Sites et cliquez ensuite sur le bouton **Gérer la publication**.
 1. L’assistant **Gérer la publication** démarre. Dans la première étape, **Options**, sélectionnez **Annuler la publication** au lieu de l’option par défaut, à savoir **Publier**.
 
-   ![Annulation de la publication](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
+   ![Annulation de la publication - Options](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
 
    À l’instar de l’option de publication différée, qui lance un workflow permettant de publier cette version de la page à l’heure indiquée, la désactivation différée lance un workflow pour annuler la publication de la ou des pages sélectionnées à une heure spécifique.
 
-   Pour annuler une publication/annulation de publication ultérieurement, rendez-vous dans la console Processus pour mettre un terme au workflow correspondant. <!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
+   >[!NOTE]
+   >
+   >Pour annuler une publication/annulation de publication ultérieure, rendez-vous dans la [console Processus](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) pour mettre un terme au processus correspondant.
 
 1. Pour finaliser l’annulation de la publication, complétez les différentes étapes de l’assistant, comme vous le feriez pour [publier la page](#manage-publication).
+
+   ![Annulation de la publication - Portée](/help/sites-cloud/authoring/assets/publishing-unpublish-scope.png)
 
 ## Publication et annulation de la publication d’une arborescence {#publishing-and-unpublishing-a-tree}
 
@@ -242,18 +249,18 @@ Pour ce faire, vous pouvez utiliser l’option [Gérer la publication](#manage-p
 
    ![Sélection de pages dans la boîte de dialogue Gérer la publication](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-1. Dans la boîte de dialogue **Inclure les enfants**, désélectionnez les options suivantes :
+1. Dans la boîte de dialogue **Inclure les enfants** :
 
-   * Inclure seulement les enfants immédiats
-   * Inclure seulement les pages déjà publiées
+   * sélectionnez **Inclure les enfants**
+   * désélectionnez **Inclure uniquement les enfants immédiats**
+   * désélectionnez **Inclure uniquement les pages déjà publiées**
+   * configurer **Inclure uniquement les pages modifiées** selon les besoins
 
-   Ces options sont sélectionnées par défaut. Vous devez donc penser à les désélectionner. Cliquez sur **Ajouter** pour confirmer et ajouter le contenu à l’opération de publication ou d’annulation de la publication.
+   Ces options sont sélectionnées par défaut. N’oubliez pas de les configurer. Confirmez la sélection avec **OK** pour ajouter le contenu à la publication/annulation de la publication.
 
-   ![Inclusion des enfants lors de la l’annulation de la publication](/help/sites-cloud/authoring/assets/publishing-tree-children.png)
+   ![Inclusion d’enfants pour la publication d’arborescence](/help/sites-cloud/authoring/assets/publishing-include-children-tree.png)
 
-1. L’assistant **Gérer la publication** répertorie le contenu de l’arborescence à des fins de révision. Vous pouvez personnaliser davantage la sélection en ajoutant d’autres pages ou en supprimant celles qui sont sélectionnées.
-
-   ![Options de gestion de la publication](/help/sites-cloud/authoring/assets/publishing-tree-select.png)
+1. Dans l’assistant **Gérer la publication** , vous pouvez personnaliser davantage la sélection en ajoutant des pages supplémentaires ou en supprimant celles sélectionnées.
 
    N’oubliez pas que vous pouvez également passer en revue les références à publier au moyen de l’option **Références publiées**.
 
