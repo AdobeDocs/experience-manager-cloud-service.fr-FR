@@ -5,10 +5,10 @@ breadcrumb-title: Guide d’implémentation
 user-guide-description: Découvrez comment personnaliser votre déploiement d’Experience Manager as a Cloud Service, y compris des rubriques sur le déploiement et le développement.
 feature: Outils de développement
 role: Developer, Architect
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: ee32ab3659ee4696caa55b945b6b7895d94914a9
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 96%
+source-wordcount: '921'
+ht-degree: 95%
 
 ---
 
@@ -172,7 +172,9 @@ ht-degree: 96%
    + [Extension des fragments d’expérience](developing/extending/experience-fragments.md)
    + [Personnalisation et extensions de fragments de contenu](developing/extending/content-fragments-customizing.md)
    + [Fragments de contenu – Configuration des composants pour le rendu](developing/extending/content-fragments-configuring-components-rendering.md)
-   + [Configuration des formulaires de recherche](developing/extending/search-forms.md)
+   + Gérer le Forms de recherche {#manage-search-forms}
+      + [Configuration des formulaires de recherche](developing/extending/search-forms.md)
+      + [Configuration des filtres de recherche pour la boîte de réception](developing/extending/configure-inbox-search-rail.md)
    + [Configuration de l’éditeur de texte enrichi](/help/implementing/developing/extending/rich-text-editor.md)
    + [Configuration des modules externes d’éditeur de texte enrichi](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
    + [Configuration de l’éditeur de texte enrichi pour créer des sites accessibles](/help/implementing/developing/extending/rte-accessible-content.md)
