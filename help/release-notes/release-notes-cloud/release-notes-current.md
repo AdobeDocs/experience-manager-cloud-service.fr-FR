@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ec1e83b344b0d237db479f66fbb761db2d8923d5
+source-git-commit: 21c4bf1a961ab74165f50feb78ce14cc1fa84725
 workflow-type: tm+mt
-source-wordcount: '1187'
-ht-degree: 11%
+source-wordcount: '1280'
+ht-degree: 10%
 
 ---
 
@@ -127,6 +127,30 @@ Les clients qui passent à l’utilisation des JDK Azul doivent savoir que toute
 ### Correctifs d’[!DNL Assets]  {#assets-bugs-fixed}
 
 L’API `com.day.cq.dam.api.collection.SmartCollection` n’est pas disponible dans [!DNL Experience Manager] sous la forme [!DNL Cloud Service]. (CQ-4326322)
+
+## [!DNL Experience Manager Screens] as a  [!DNL Cloud Service] {#screens}
+
+### Correctifs {#bug-fixes-screens}
+
+* Les paramètres du fournisseur de contenu sont désormais validés lors de la création ou de la mise à jour.
+
+* Toutes les vues d’affichage comportent une colonne de dossiers.
+
+* Vous pouvez développer la structure de contenu Screens.
+
+* `bulk-offline-update-service` ne comportait aucune autorisation pour certains environnements.
+
+* Mettez à jour le lien d’aide pour qu’il corresponde à la nouvelle documentation cloud de screens.
+
+* Annulation de l’affectation des listes de lecture et refus de la suppression des listes de lecture affectées au(x) lecteur(s).
+
+* Le lecteur télécharge désormais à nouveau les ressources lorsque le cache &quot;ALL&quot; est effacé.
+
+* La planification des répétitions fonctionne maintenant si l’*heure de fin* est définie pour le jour suivant.
+
+* `Back&Forward` fonctionne désormais dans l’interface utilisateur cloud de Screens.
+
+* Les balises portant le même nom mais avec des espaces de noms différents n’ont pas pu être créés.
 
 ## [!DNL Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
