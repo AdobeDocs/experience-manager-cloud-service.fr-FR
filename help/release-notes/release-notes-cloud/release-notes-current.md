@@ -3,9 +3,9 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 9ef41bc9f60f16a2fdf1900466db8bad99e619e9
+source-git-commit: 76d068de881edce2324ceb73f1a724ff0f5f585c
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1313'
 ht-degree: 10%
 
 ---
@@ -156,22 +156,21 @@ L’API `com.day.cq.dam.api.collection.SmartCollection` n’est pas disponible d
 
 ### Nouveautés d’[!DNL Forms]  {#what-is-new-forms}
 
-* Vous pouvez désormais utiliser le service Automated forms conversion pour convertir des PDF forms en français, en allemand et en espagnol en formulaires adaptatifs.
+* Vous pouvez désormais utiliser le service Automated forms conversion pour [convertir les PDF forms en français, en allemand et en espagnol](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) en formulaires adaptatifs.
 * Ajout d’un panneau distinct à l’éditeur de modèles pour afficher les erreurs liées aux composants de formulaire adaptatif. Cela permet de consolider toutes les erreurs de formulaire adaptatif à un seul emplacement et de réduire le temps de résolution.
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Forms] {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: Les API de communication vous aident à combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode synchrone. Les API vous permettent de créer des applications qui vous permettent :
+* **[!DNL AEM Forms as a Cloud Service - Communications]**:  [Communication ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) APIshelp vous permet de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode synchrone. Les API vous permettent de créer des applications qui vous permettent :
    * Générer des documents en renseignant les fichiers de modèle avec des données XML.
    * Générez des formulaires de sortie dans divers formats, y compris les flux d’impression PDF non interactifs.
    * Générez des fichiers PDF d’impression à partir d’un formulaire XFA au format PDF et d’un formulaire Adobe Acrobat.
 
 * **Externalisateur de données variables** : vous pouvez enregistrer les données variables des workflows AEM sur un système de stockage externe géré par votre entreprise.
 
-* **Document d’enregistrement** basé sur Acrobat : Vous pouvez également utiliser Adobe Acrobat Form PDF (Acrobat PDF) comme modèle de document d’enregistrement en plus du modèle de formulaire basé sur XFA.
+* **Document d’enregistrement** basé sur Acrobat : Vous pouvez également  [utiliser Adobe Acrobat Form PDF (Acrobat PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html)  comme modèle de document d’enregistrement en plus du modèle de formulaire basé sur XFA.
 
-* **Connecteur** de magasin de données Microsoft Azure : Vous pouvez désormais connecter le modèle de données de formulaire au stockage Microsoft Azure. Il vous permet de stocker et de récupérer des données de formulaire adaptatif dans le stockage Microsoft Azure en tant que BLOB.
-
+* **Connecteur** de magasin de données Microsoft Azure : Vous pouvez désormais  [connecter le modèle de données de formulaire au stockage Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). Il vous permet de récupérer et de stocker des données de formulaire adaptatif dans le stockage Microsoft Azure en tant que BLOB.
 
 ## Cloud Accelerated Manager {#cam}
 
