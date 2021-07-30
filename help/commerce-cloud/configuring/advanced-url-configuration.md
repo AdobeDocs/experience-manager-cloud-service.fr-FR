@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 490a93cfcfdac5ba209e52b1de3e1f823e80d26f
+source-git-commit: fe0e93d6f9ab16bf469e52e2b758f5e3f8600413
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '744'
+ht-degree: 48%
 
 ---
 
@@ -41,7 +41,7 @@ Cela configure les URL des pages de produits et prend en charge les options suiv
 * `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}`
 
-où, dans le cas du [magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia)
+Dans le cas du [magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia) :
 
 * `{{page}}` sera remplacé par  `/content/venia/us/en/products/product-page`
 * `{{sku}}` sera remplacé par le SKU du produit, par exemple  `VP09`
@@ -58,7 +58,7 @@ Cela configure les URL des pages de liste de catégories ou de produits et prend
 * `{{page}}.html/{{url_path}}.html` (par défaut)
 * `{{page}}.html/{{url_key}}.html`
 
-où, dans le cas du [magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia)
+Dans le cas du [magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia) :
 
 * `{{page}}` sera remplacé par  `/content/venia/us/en/products/category-page`
 * `{{url_key}}` sera remplacé par la  `url_key` propriété de la catégorie.
@@ -70,7 +70,7 @@ Avec les données d’exemple ci-dessus, une URL de page de catégorie formatée
 > 
 > `url_path` est une concaténation de `url_keys` des ancêtres d’un produit ou d’une catégorie et de `url_key` du produit ou de la catégorie séparés par une barre oblique `/`.
 
-## Formats D’Url Personnalisés {#custom-url-format}
+## Formats d’URL personnalisés {#custom-url-format}
 
 Pour fournir un format d’URL personnalisé, un projet peut implémenter l’[`UrlFormat` interface](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) et enregistrer l’implémentation comme service OSGI, en l’utilisant comme page de catégorie ou format d’URL de page de produit. La propriété de service `UrlFormat#PROP_USE_AS` indique lequel des formats prédéfinis configurés à remplacer :
 
