@@ -4,10 +4,10 @@ user-guide-title: Guide d’Assets as a Cloud Service
 breadcrumb-title: Guide d’Assets
 user-guide-description: Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: f97e2f327aa8f49d0a15f3852aa5d8b37f960005
+source-git-commit: 6a7634dd96b620979b7087e1c51a829ba708a496
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 94%
+source-wordcount: '484'
+ht-degree: 70%
 
 ---
 
@@ -81,7 +81,7 @@ ht-degree: 94%
    + [Arborescence de la structure](/help/assets/content-fragments/content-fragments-structure-tree.md)
    + [Aperçu – Représentation JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
 + Dynamic Media {#dynamicmedia}
-   + [Newsletter sur Dynamic Media par Experience League](dynamic-media/dynamic-media-newsletter.md)
+   + [Archivage de la newsletter Dynamic Media par un Experience League](dynamic-media/dynamic-media-newsletter.md)
    + [Configuration de Dynamic Media](dynamic-media/administering-dynamic-media.md)
    + [Utilisation de Dynamic Media](dynamic-media/dynamic-media.md)
    + [Configuration de Dynamic Media](dynamic-media/config-dm.md)
@@ -92,37 +92,37 @@ ht-degree: 94%
    + [Bonnes pratiques relatives à la gestion des fichiers](dynamic-media/best-practices-for-file-management.md)
    + [Profils d’image](dynamic-media/image-profiles.md)
    + [Profils vidéo](dynamic-media/video-profiles.md)
-   + [Gestion des paramètres prédéfinis d’image Dynamic Media](dynamic-media/managing-image-presets.md)
-   + [Application de paramètres d’image prédéfinis Dynamic Media](dynamic-media/image-presets.md)
-   + [Gestion des paramètres prédéfinis de la visionneuse Dynamic Media](dynamic-media/managing-viewer-presets.md)
-   + [Application des paramètres prédéfinis de la visionneuse Dynamic Media](dynamic-media/viewer-presets.md)
+   + [Gestion des paramètres d’image prédéfinis Dynamic Media](dynamic-media/managing-image-presets.md)
+   + [Application de paramètres d’image prédéfinis Dynamic Media](dynamic-media/image-presets.md)
+   + [Gestion des paramètres prédéfinis de la visionneuse Dynamic Media](dynamic-media/managing-viewer-presets.md)
+   + [Application de paramètres prédéfinis de visionneuse Dynamic Media](dynamic-media/viewer-presets.md)
    + [Paramètres prédéfinis de lot](dynamic-media/batch-set-presets-dm.md)
-   + [Invalidation du cache du réseau CDN par le biais de Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-   + [Invalidation du cache de réseau CDN par le biais de Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
+   + [Invalidation du cache CDN via Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+   + [Invalidation du cache CDN via Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [Imagerie dynamique](dynamic-media/imaging-faq.md)
-   + [Diffusion de ressources Dynamic Media](dynamic-media/delivering-dynamic-media-assets.md)
-   + [Activation de la protection de lien dynamique dans Dynamic Media](dynamic-media/hotlink-protection.md)
+   + [Diffusion de ressources Dynamic Media](dynamic-media/delivering-dynamic-media-assets.md)
+   + [Activation de la protection de lien dynamique dans Dynamic Media](dynamic-media/hotlink-protection.md)
    + [Prise en charge 3D](dynamic-media/assets-3d.md)
    + [Visionneuses d’images](dynamic-media/image-sets.md)
    + [Images panoramiques](dynamic-media/panoramic-images.md)
    + [Visionneuses de médias mixtes](dynamic-media/mixed-media-sets.md)
    + [Visionneuses à 360°](dynamic-media/spin-sets.md)
-   + [Vidéo](dynamic-media/video.md)
+   + [Vidéo dans Dynamic Media](dynamic-media/video.md)
    + [Bannières de carrousel](dynamic-media/carousel-banners.md)
    + [Images interactives](dynamic-media/interactive-images.md)
    + [Vidéos interactives](dynamic-media/interactive-videos.md)
    + [Vidéo 360 VR](dynamic-media/360-video.md)
    + [Intégration des visionneuses Dynamic Media aux balises Adobe Analytics et Adobe Experience Platform](dynamic-media/tags.md)
-   + [Utilisation de l’aperçu rapide pour créer des fenêtres contextuelles personnalisées](dynamic-media/custom-pop-ups.md)
-   + [Diffusion d’images optimisées pour un site réactif](dynamic-media/responsive-site.md)
-   + [Aperçu de ressources Dynamic Media](dynamic-media/previewing-assets.md)
-   + [Ajout de ressources Dynamic Media aux pages](dynamic-media/adding-dynamic-media-assets-to-pages.md)
-   + [Incorporation de la visionneuse Dynamic Video ou d’images dans une page web](dynamic-media/embed-code.md)
-   + [Liaison d’URL à une application web](dynamic-media/linking-urls-to-yourwebapplication.md)
+   + [Création de fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide](dynamic-media/custom-pop-ups.md)
+   + [Diffuser des images optimisées pour un site réactif](dynamic-media/responsive-site.md)
+   + [Aperçu des ressources Dynamic Media](dynamic-media/previewing-assets.md)
+   + [Ajout de ressources Dynamic Media aux pages](dynamic-media/adding-dynamic-media-assets-to-pages.md)
+   + [Incorporation de la visionneuse de vidéos ou d’images dynamique dans une page web](dynamic-media/embed-code.md)
+   + [Liaison d’URL à votre application web](dynamic-media/linking-urls-to-yourwebapplication.md)
    + [Utilisation de jeux de règles de transformation d’URL](dynamic-media/using-rulesets-to-transform-urls.md)
-   + [Publication de ressources Dynamic Media](dynamic-media/publishing-dynamicmedia-assets.md)
+   + [Publication de ressources Dynamic Media](dynamic-media/publishing-dynamicmedia-assets.md)
    + [Utilisation de la publication sélective dans Dynamic Media](dynamic-media/selective-publishing.md)
-   + [Utilisation des sélecteurs](dynamic-media/working-with-selectors.md)
+   + [Utilisation de sélecteurs](dynamic-media/working-with-selectors.md)
    + [FAQ sur la diffusion de contenu HTTP/2](dynamic-media/http2faq.md)
    + [Fin de prise en charge des visionneuses Flash](dynamic-media/flash-viewers-eol.md)
    + [Fin de vie des visionneuses DHTML](dynamic-media/dhtml-viewer-endoflifefaqs.md)
