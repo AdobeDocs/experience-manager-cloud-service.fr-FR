@@ -2,14 +2,14 @@
 title: Notes de mise à jour de la version 2020.7.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.7.0.
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
 workflow-type: tm+mt
 source-wordcount: '1038'
 ht-degree: 97%
 
 ---
 
-# Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 {#release-notes}
+# Notes de mise à jour pour [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 {#release-notes}
 
 La section suivante décrit les notes de mise à jour générales d’Experience Manager as a Cloud Service 2020.7.0.
 
@@ -31,7 +31,7 @@ Les connecteurs [!DNL Experience Manager] as a Cloud Service pour [!DNL Adobe Ta
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-### Nouveautés d’[!DNL Assets] {#what-is-new-assets}
+### Nouveautés d’[!DNL Assets]  {#what-is-new-assets}
 
 * [!DNL Asset Compute Service] est un service évolutif et extensible permettant de traiter les ressources. Les administrateurs peuvent configurer [!DNL Experience Manager] pour appeler des applications personnalisées créées à l’aide du [!DNL Asset Compute Service]. Les développeurs peuvent utiliser ce service pour créer des applications personnalisées spécialisées qui répondent à des cas d’utilisation complexes. Ce service web peut générer des miniatures pour différents types de fichiers et des rendus d’images haute qualité à partir de formats de fichiers Adobe, coder des vidéos (à venir), extraire des métadonnées, extraire du texte intégral en tant que précurseur de l’indexation et exécuter une ressource via tous les services [!DNL Sensei] disponibles. Voir [Utilisation des microservices de ressources et des profils de traitement](/help/assets/asset-microservices-configure-and-use.md).
 
@@ -88,12 +88,12 @@ La date de publication de la mise à jour 2020.7.0 de [!UICONTROL Cloud Manager
 
 * Les pipelines de Cloud Manager prennent désormais en charge les variables et les secrets définis par le client.
 
-   Pour plus d’informations, consultez [Variables de pipeline](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).
+   Pour plus d’informations, consultez Variables de pipeline.
 
 * Les référentiels Maven privés liés à l’authentification sont désormais pris en charge.
 
 * Le conteneur de création Cloud Manager prend désormais en charge Java 8 et Java 11.
-Consultez [Utilisation de la prise en charge de Java 11](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) pour plus d’informations.
+Consultez Utilisation de la prise en charge de Java 11 pour plus d’informations.
 
 ### Correctifs {#bug-fixes-cm}
 
