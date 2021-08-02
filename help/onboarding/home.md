@@ -2,10 +2,10 @@
 title: Intégration à Adobe Experience Manager as a Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation concernant l’intégration à Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 3e3296f2c7cbc5c960560a3a6c380875e2ca64bd
+source-git-commit: d7d138c7442ee8bee7a1ad69144b26d74d364eee
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 24%
+source-wordcount: '942'
+ht-degree: 86%
 
 ---
 
@@ -14,33 +14,33 @@ ht-degree: 24%
 >[!CONTEXTUALHELP]
 >id="aemcloud_onboarding_overview"
 >title="Présentation de l’intégration"
->abstract="Que vous déployiez une nouvelle application ou migriez une application existante, ce guide vous sert de point de départ pour vous assurer que votre application est optimisée et prête à réussir sur Cloud Service. Vous aurez besoin de l’aide d’Adobe ID et de votre administrateur système pour que les utilisateurs soient ajoutés à Cloud Manager à leurs rôles attribués et aux autorisations associées."
+>abstract="Qu’il s’agisse de déployer une nouvelle application ou d’effectuer la migration d’une application existante, ce guide sert de point de départ pour vous assurer que votre application est optimisée et prête à fonctionner avec succès sur Cloud Service. Vous aurez besoin de votre Adobe ID et de l’aide de votre administrateur système pour ajouter les utilisateurs à Cloud Manager avec leurs rôles attribués et les autorisations associées."
 
-Félicitations de commencer votre parcours avec AEM en tant que Cloud Service ! Que vous déployiez une nouvelle application ou migriez une application existante, ce guide vous sert de point de départ pour vous assurer que votre application est optimisée et prête à réussir sur Cloud Service.
+Nous vous félicitons de commencer votre parcours avec AEM as a Cloud Service ! Qu’il s’agisse de déployer une nouvelle application ou d’effectuer la migration d’une application existante, ce guide sert de point de départ pour vous assurer que votre application est optimisée et prête à fonctionner avec succès sur Cloud Service. 
 
-Ce guide vous aidera, ainsi que votre équipe, à démarrer rapidement avec Cloud Manager. Vous aurez besoin de l’aide d’Adobe ID et de votre administrateur système pour que les utilisateurs soient ajoutés à Cloud Manager à leurs rôles attribués (appelés Profils de produit dans Admin Console) et aux autorisations associées. Les instructions de l’administrateur système pour ce faire via Admin Console sont décrites. La liste des rôles de Cloud Manager, appelés profils de produit en Admin Console et leurs autorisations associées, est détaillée afin que vous puissiez déterminer les rôles nécessaires aux différents utilisateurs de votre entreprise.
+Ce guide vous aidera, ainsi que votre équipe, à prendre en main rapidement Cloud Manager. Vous aurez besoin de votre Adobe ID et de l’aide de votre administrateur système pour ajouter les utilisateurs à Cloud Manager avec leurs rôles attribués (appelés Profils de produit dans Admin Console) et les autorisations associées. Les instructions dont l’administrateur système a besoin pour effectuer cette opération à l’aide d’Admin Console sont indiquées. La liste des rôles de Cloud Manager, appelés profils de produit dans Admin Console et leurs autorisations associées, est détaillée afin que vous puissiez déterminer les rôles nécessaires aux différents utilisateurs de votre entreprise.
 
-L’image suivante illustre votre parcours d’intégration, en commençant par l’e-mail de bienvenue reçu par votre administrateur système, et culminant avec l’accès des utilisateurs à Cloud Manager pour AEM en tant que Cloud Service.
+L’image suivante illustre votre parcours d’intégration, depuis le courrier électronique de bienvenue reçu par votre administrateur système jusqu’à l’accès des utilisateurs à Cloud Manager pour AEM as a Cloud Service.
 
 ![](/help/onboarding/what-is-required/assets/cust-journey.png)
 
 ## Principaux articles relatifs à l’intégration {#key-articles}
 
-Cette section couvre les articles clés axés sur votre parcours lorsque vous commencez par AEM en tant que Cloud Service :
+Cette section aborde les articles clés concernant votre parcours lorsque vous commence à utiliser AEM as a Cloud Service :
 
 **À quoi vous attendre lors de l’intégration**
 
-Une fois votre contrat signé, les événements suivants auront lieu :
+Une fois votre contrat signé, le déroulement des événements sera le suivant :
 
-1. Adobe terminera la mise en service de votre organisation. L’administrateur système de votre entreprise recevra alors un e-mail de bienvenue lui permettant de réaliser les [tâches de l’administrateur système](/help/onboarding/what-is-required/add-users-assign-cm-roles.md), notamment d’ajouter des utilisateurs, de les affecter à des rôles, et de leur accorder ainsi l’accès approprié à Cloud Manager.
+1. Adobe terminera la mise en service de votre organisation. L’administrateur système de votre entreprise recevra alors un courrier électronique de bienvenue pour réaliser les [tâches d’administration système](/help/onboarding/what-is-required/add-users-assign-cm-roles.md), notamment ajouter des utilisateurs, les affecter à des rôles et leur accorder ainsi l’accès approprié à Cloud Manager.
 
-1. Les utilisateurs ajoutés par votre administrateur système recevront à leur tour un e-mail de bienvenue leur permettant ainsi de [accéder à Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md). Les utilisateurs peuvent désormais utiliser leur Adobe ID pour se connecter et commencer leur parcours avec Cloud Manager à partir de cet emplacement.
+1. Les utilisateurs ajoutés par votre administrateur système recevront à leur tour un e-mail de bienvenue qui leur permettra d’[accéder à Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md). Les utilisateurs peuvent désormais utiliser leur Adobe ID pour se connecter et commencer leur parcours avec Cloud Manager.
 
 1. Un administrateur système peut [octroyer aux utilisateurs l’accès à une instance AEM](/help/onboarding/what-is-required/accessing-aem-instance.md) à des fins de développement.
 
-**[Obtention de votre Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)**
+**[Obtention de votre Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)**
 
-Vous aurez besoin de l’aide d’Adobe ID et de votre administrateur système pour que les utilisateurs soient ajoutés à Cloud Manager à leurs rôles attribués.
+Vous aurez besoin de votre Adobe ID et de l’aide de votre administrateur système pour ajouter les utilisateurs à Cloud Manager avec leurs rôles attribués.
 
 **[Rôles de Cloud Manager](/help/onboarding/what-is-required/user-roles-permissions.md)**
 
@@ -48,20 +48,20 @@ Votre administrateur système peut ajouter des utilisateurs et les affecter à d
 
 **[Tâches de l’administrateur système](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
 
-Les administrateurs système gèrent tous les aspects de leurs utilisateurs, de l’accès aux autorisations. Cet utilisateur est la première personne à avoir accès à l’exécution de tâches dans Admin Console et Cloud Manager.
-Les pages de documentation suivantes contiennent des informations décrivant les tâches organisationnelles de base :
+Les administrateurs système gèrent tous les aspects de leurs utilisateurs, depuis l’accès jusqu’aux autorisations. Cet utilisateur est la première personne à avoir accès à l’exécution de tâches dans Admin Console et Cloud Manager.
+Les pages de documentation suivantes contiennent des informations décrivant les tâches organisationnelles de base :
 
 * Ajout d’utilisateurs
 * Affectation des utilisateurs à des rôles et autorisations Cloud Manager
 
 **[Accéder à Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
-Maintenant que vous avez été ajouté en tant qu’utilisateur et affecté à un rôle Cloud Manager, vous pouvez accéder à Cloud Manager pour commencer à utiliser votre parcours Cloud avec AEM. Les utilisateurs sont prêts à effectuer diverses tâches, telles que [créer un programme](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [ajouter un environnement](/help/implementing/cloud-manager/manage-environments.md), [accéder à Git](/help/implementing/cloud-manager/accessing-git.md), [configurer un pipeline](/help/implementing/cloud-manager/configure-pipeline.md) et [déployer le code](/help/implementing/cloud-manager/deploy-code.md).
-Cloud Manager est une partie importante d’AEM en tant que Cloud Service. Il permet aux entreprises de gérer elles-mêmes [!DNL Experience Manager] dans le cloud. Il comprend une structure d’intégration et de diffusion continues (CI/CD) qui permet aux équipes informatiques et aux partenaires d’implémentation d’accélérer la diffusion des personnalisations ou des mises à jour sans compromettre les performances ou la sécurité. À l’aide de l’interface utilisateur, vous pouvez configurer et lancer le pipeline CI/CD.
+Maintenant que vous avez été ajouté en tant qu’utilisateur et qu’un rôle Cloud Manager vous a été affecté, vous pouvez accéder à Cloud Manager pour entamer votre parcours dans le Cloud avec AEM. Les utilisateurs sont prêts à effectuer diverses tâches, telles que la création d’un programme, l’ajout d’un environnement, [l’accès à Git](/help/implementing/cloud-manager/accessing-git.md), [la configuration d’un pipeline](/help/implementing/cloud-manager/configure-pipeline.md) et [le déploiement du code](/help/implementing/cloud-manager/deploy-code.md).
+Cloud Manager est une partie importante d’AEM as a Cloud Service. Il permet aux entreprises de gérer elles-mêmes [!DNL Experience Manager] dans le cloud. Il comprend une structure d’intégration et de diffusion continues (CI/CD) qui permet aux équipes informatiques et aux partenaires d’implémentation d’accélérer la diffusion des personnalisations ou des mises à jour sans compromettre les performances ou la sécurité. Grâce à l’interface utilisateur, vous pouvez configurer et lancer le pipeline CI/CD.
 
 **[Octroi de l’accès utilisateur à une instance AEM](/help/onboarding/what-is-required/accessing-aem-instance.md)**
 
-Suivez cette section pour découvrir comment un administrateur système ou un utilisateur ayant créé un environnement peut accorder à d’autres utilisateurs l’accès à une instance AEM.
+Découvrez avec cette section comment un administrateur système ou un utilisateur ayant créé un environnement peut accorder à d’autres utilisateurs l’accès à une instance AEM.
 
 ## [!DNL Experience Manager as a Cloud Service] Guides {#aem-guides}
 
@@ -75,8 +75,8 @@ Suivez cette section pour découvrir comment un administrateur système ou un ut
 | [Guide de l’utilisateur de Sites](/help/sites-cloud/home.md) | Découvrez comment créer et administrer [!DNL Experience Manager Sites] en tant que Cloud Service. |
 | [Guide de l’utilisateur d’Assets](/help/assets/home.md) | Comprendre comment utiliser et administrer [!DNL Experience Manager Assets as a Cloud Service]. |
 | [Transition vers AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Découvrez le parcours de transition vers Cloud Service |
-| [Guide de l’utilisateur relatif à l’implémentation](/help/implementing/home.md) | Découvrez comment créer et personnaliser des expériences à l’aide AEM fonctionnalités puissantes en explorant ces rubriques de développement et de déploiement. |
-| [Parcours de développement sans tête](/help/journey-headless/developer/overview.md) | Découvrez ce parcours guidé à travers les puissantes et flexibles fonctionnalités sans interface d’AEM pour vous préparer à votre premier projet sans interface. |
+| [Guide de l’utilisateur relatif à l’implémentation](/help/implementing/home.md) | Découvrez comment créer et personnaliser des expériences à l’aide des puissantes fonctionnalités d’AEM en explorant ces rubriques de développement et de déploiement. |
+| [Parcours de développement découplé](/help/journey-headless/developer/overview.md) | Découvrez cette visite guidée à travers les puissantes et flexibles fonctionnalités découplées d’AEM pour vous préparer à votre premier projet découplé. |
 | [Guide de l’utilisateur des connecteurs](/help/connectors/home.md) | Découvrez comment intégrer des connecteurs dans [!DNL Experience Manager as a Cloud Service]. |
 | [Guide de l’utilisateur relatif aux opérations](/help/operations/home.md) | Découvrez les opérations principales d’[!DNL Experience Manager as a Cloud Service] , telles que les tâches d’indexation et de maintenance. |
 | [Guide de l’utilisateur de Commerce](/help/commerce-cloud/home.md) | Découvrez Commerce Integration Framework sur [!DNL Experience Manager as a Cloud Service]. |
