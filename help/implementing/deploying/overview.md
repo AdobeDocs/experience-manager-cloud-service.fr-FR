@@ -3,10 +3,10 @@ title: Déploiement sur AEM as a Cloud Service
 description: 'Déploiement sur AEM as a Cloud Service '
 feature: Déploiement
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
+source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
 workflow-type: tm+mt
 source-wordcount: '3290'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -53,7 +53,7 @@ La vidéo suivante présente un aperçu général du déploiement du code vers A
 
 Les clients déploient le code personnalisé dans les environnements cloud via Cloud Manager. Il est à noter que Cloud Manager transforme des modules de contenu assemblés localement en artefact conforme au modèle de fonctionnalité Sling, qui décrit une application AEM as a Cloud Service lors de l’exécution dans un environnement cloud. Par conséquent, lorsque vous examinez les modules dans le gestionnaire de modules sur les environnements cloud, le nom inclut « cp2fm » et toutes les métadonnées des modules transformés sont supprimées. Ils ne peuvent pas être interactifs, ce qui signifie qu’ils ne peuvent pas être téléchargés, répliqués, ni ouverts. Vous trouverez [ici](https://github.com/apache/sling-org-apache-sling-feature-cpconverter) une documentation détaillée sur le convertisseur.
 
-Les modules de contenu écrits pour AEM en tant qu’applications de Cloud Service doivent avoir une séparation nette entre le contenu non modifiable et le contenu modifiable. De plus, Cloud Manager n’installera que le contenu modifiable, ce qui génère également un message du type :
+Les modules de contenu écrits pour les applications AEM as a Cloud Service doivent présenter une distinction claire entre le contenu modifiable et non modifiable, et Cloud Manager n’installera que le contenu modifiable, en renvoyant un message du type :
 
 `Generated content-package <PACKAGE_ID> located in file <PATH> is of MIXED type`
 
@@ -104,9 +104,9 @@ Après le basculement vers la nouvelle version de l’application :
    * Dossiers (ajout, modification, suppression)
    * Modèles modifiables (ajout, modification, suppression)
    * Configuration tenant compte du contexte (tout sous `/conf`) (ajout, modification, suppression)
-   * Scripts (les modules peuvent déclencher des hooks d’installation à diverses étapes du processus d’installation de module) : Voir la [documentation Jackrabbit filevault](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) sur les hooks d’installation. Notez qu’AEM CS utilise actuellement la version 3.4.0 de Filevault, qui limite l’installation des hooks aux administrateurs, aux utilisateurs système et aux membres du groupe administrateurs).
+   * Scripts (les modules peuvent déclencher des hooks d’installation à diverses étapes du processus d’installation de module : Voir la [documentation Jackrabbit filevault](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) sur les hooks d’installation. Notez qu’AEM CS utilise actuellement la version 3.4.0 de Filevault, qui limite l’installation des hooks aux administrateurs, aux utilisateurs système et aux membres du groupe administrateurs).
 
-Il est possible de limiter l’installation de contenu modifiable à la création ou à la publication en incorporant des modules dans un dossier install.author ou install.publish sous `/apps`. La restructuration pour refléter cette séparation a été effectuée dans AEM 6.5 et les détails relatifs à la restructuration de projet recommandée sont disponibles dans la [documentation AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr)
+Il est possible de limiter l’installation de contenu modifiable à la création ou à la publication en incorporant des modules dans un dossier install.author ou install.publish sous `/apps`. Une restructuration pour refléter cette séparation a été réalisée dans AEM 6.5 et les détails relatifs à la restructuration de projet recommandée sont disponibles dans la [documentation d’AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr).
 
 >[!NOTE]
 >Les modules de contenu sont déployés sur tous les types d’environnements (développement, évaluation et production). Il n’est pas possible de limiter le déploiement à un environnement spécifique. Cette limitation est en place pour garantir l’option d’une série de tests d’exécution automatisée. Le contenu spécifique à un environnement nécessite une installation manuelle via le gestionnaire de modules.
@@ -115,7 +115,7 @@ En outre, il n’existe aucun mécanisme permettant d’annuler les modification
 
 Les modules tiers inclus doivent être validés comme compatibles avec AEM as a Cloud Service, sans quoi leur inclusion entraînera un échec du déploiement.
 
-Comme mentionné ci-dessus, les clients disposant de bases de code doivent se conformer à l’exercice de restructuration du référentiel nécessaire par les modifications du référentiel 6.5 décrites dans la [documentation AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+Comme mentionné ci-dessus, les clients disposant de bases de code doivent se conformer à l’exercice de restructuration du référentiel rendu nécessaire par les modifications de référentiel dans la version 6.5 comme décrit dans la [documentation d’AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html).
 
 ## Repoinit {#repoinit}
 
@@ -169,9 +169,9 @@ above appears to be internal, to confirm with Brian -->
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
->title="Gestionnaire de modules - Migration de modules de contenu modifiable"
->abstract="Explorez l’utilisation du gestionnaire de packages pour les cas d’utilisation où un module de contenu doit être installé &quot;un par un&quot;, ce qui inclut l’importation de contenu spécifique de la production vers l’évaluation afin de déboguer un problème de production, le transfert de petit module de contenu de l’environnement on-premise vers les environnements AEM cloud, etc."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="Outil de transfert de contenu"
+>title="Gestionnaire de modules – Migration de modules de contenu modifiable"
+>abstract="Explorez l’utilisation du gestionnaire de modules pour les cas d’utilisation où un module de contenu doit être installé un par un, ce qui inclut l’importation de contenu spécifique de l’environnement de production vers l’environnement d’évaluation afin de déboguer un problème de production, le transfert de petits modules de contenu de l’environnement on-premise vers les environnements AEM cloud, etc."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=fr#cloud-migration" text="Outil de transfert de contenu"
 
 Il existe des cas d’utilisation où un module de contenu doit être installé de façon ponctuelle. Par exemple, pour déboguer un problème de production, vous devez importer du contenu spécifique de la production vers l’évaluation. Pour ces scénarios, le gestionnaire de modules peut être utilisé dans les environnements AEM as a Cloud Service.
 
@@ -181,7 +181,7 @@ Les modules de contenu (modifiable ou non) installés via Cloud Manager s’aff
 
 ### Inclusion de modules tiers {#including-third-party}
 
-Il est courant pour les clients d’inclure des modules préconfigurés provenant de sources tierces, telles que des fournisseurs de logiciels comme les partenaires de traduction d’Adobe. Il est recommandé d’héberger ces modules au sein d’un référentiel distant et de les référencer dans le `pom.xml`. Cela est possible pour les référentiels publics et pour les référentiels privés avec protection par mot de passe, comme décrit dans [Référentiels Maven protégés par mot de passe](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
+Il est courant pour les clients d’inclure des modules préconfigurés provenant de sources tierces, telles que des fournisseurs de logiciels comme les partenaires de traduction d’Adobe. Il est recommandé d’héberger ces modules au sein d’un référentiel distant et de les référencer dans le `pom.xml`. Cela est possible pour les référentiels publics et pour les référentiels privés avec protection par mot de passe, comme décrit dans [Référentiels Maven protégés par mot de passe](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
 
 S’il n’est pas possible de stocker le module dans un référentiel distant, les clients peuvent le placer dans un référentiel Maven local basé sur un système de fichiers, qui est validé dans SCM dans le cadre du projet et référencé par toutes les dépendances. Ce référentiel serait alors déclaré dans les fichiers pom du projet, comme illustré ci-dessous :
 
