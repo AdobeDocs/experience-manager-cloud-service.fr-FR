@@ -2,7 +2,7 @@
 title: Nouveautés et différences – Adobe Experience Manager as a Cloud Service
 description: Nouveautés et différences – Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
 workflow-type: tm+mt
 source-wordcount: '1883'
 ht-degree: 100%
@@ -88,7 +88,7 @@ Les mises à jour de la version d’AEM sont de deux types :
 
    * Elles sont publiées selon un calendrier mensuel prévisible.
 
-## Cloud Manager {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 Adobe Cloud Manager fait partie intégrante de l’approche de mise à niveau continue d’AEM as a Cloud Service, car il contrôle toutes les mises à jour appliquées à vos instances, ce qui est obligatoire.
 
@@ -112,7 +112,7 @@ Plus précisément, le nombre et le type des programmes AEM pouvant être créé
 
 Cloud Manager a évolué sous la forme d’un portail en libre-service où les principaux composants d’AEM as a Cloud Service peuvent être créés et configurés :
 
-* Création et gestion de nouveaux programmes. Pour plus d’informations, consultez [Présentation des programmes et des types de programmes](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md).
+* Création et gestion de nouveaux programmes. Pour plus d’informations, consultez [Présentation des programmes et des types de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md).
 
 * Création et gestion des environnements AEM dans ces programmes. Pour plus d’informations, consultez [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md).
 
@@ -189,7 +189,7 @@ En raison de la séparation stricte du code et du contenu, les développeurs peu
 
 * Listes ACL et autorisations
 
-* Utilisateurs du service et groupes d’utilisateurs
+* Utilisateurs et groupes d’utilisateurs du service
 
 ### Développement local {#aem-as-a-cloud-service-developing-local-development}
 
@@ -253,7 +253,7 @@ Adobe Experience Manager Sites as a Cloud Service vous permet de fournir à vos 
 
 Pour plus d’informations, reportez-vous à l’aperçu proposé dans [Modifications apportées à Sites](/help/sites-cloud/sites-cloud-changes.md).
 
-## AEM Assets {#aem-assets}
+## AEM Assets {#aem-assets}
 
 Adobe Experience Manager Assets as a Cloud Service offre aux entreprises une solution PaaS cloud native pour qu’elles puissent non seulement exécuter rapidement et efficacement leurs opérations de gestion des ressources numériques et Dynamic Media, mais aussi utiliser des fonctionnalités intelligentes de nouvelle génération, telles que l’intelligence artificielle ou l’apprentissage automatique, à partir d’un système toujours à jour, toujours disponible et toujours à l’écoute.
 
