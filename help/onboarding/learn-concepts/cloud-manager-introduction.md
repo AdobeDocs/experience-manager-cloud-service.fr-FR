@@ -1,13 +1,13 @@
 ---
 title: Découvrez Cloud Manager
 description: Consultez cette page pour en savoir plus sur Cloud Manager, les programmes Cloud Manager et les environnements.
-source-git-commit: 185a933e12ad81689168ad88574019ed219db06d
+exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
+source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 20%
 
 ---
-
 
 # Présentation de Cloud Manager {#intro-cloud-manager}
 
@@ -26,12 +26,12 @@ Les programmes Cloud Manager représentent des ensembles d’environnements Clou
 Un utilisateur peut créer un programme **Sandbox** ou de **Production**.
 
 * Un *Programme de production* est créé pour activer dans le futur le trafic actif au moment approprié.
-Consultez [Présentation des programmes de production](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md) pour plus d’informations.
+Consultez Présentation des programmes de production pour plus d’informations.
 
 * Un *programme Sandbox* est généralement créé pour les besoins de formation, à des fins de démonstration, d’activation, de preuve de concept ou de documentation. Ces programmes ne sont pas destinés à gérer un trafic réel et comporteront des restrictions absentes d’un programme de production. Ils incluront Sites et Assets et seront pourvus automatiquement d’une branche Git comprenant un exemple de code, un environnement de développement et un pipeline non productif.
-Consultez [Présentation des programmes Sandbox](/help/onboarding/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) pour plus d’informations.
+Consultez Présentation des programmes Sandbox pour plus d’informations.
 
-## Environnements de Cloud Manager {#cloud-manager-environments}
+## Environnements Cloud Manager {#cloud-manager-environments}
 
 Vos environnements cloud seront créés, accessibles et visualisés via Cloud Manager. Il peut s’agir d’un environnement de production, d’un environnement intermédiaire ou d’un environnement de développement. Les différents environnements prennent en charge différents objectifs et peuvent être utilisés à l’aide de différents pipelines CI/CD. Les environnements sont composés de services tels que :
 
@@ -50,6 +50,6 @@ Le service AEM Author est inclus dans un environnement dans lequel le contenu du
 
 Le service de publication AEM est inclus dans un environnement qui héberge l’expérience de l’utilisateur final, comme un site web. Il s’agit du service que les visiteurs du site vont afficher et avec lequel ils interagiront. En règle générale, le service de publication est disponible publiquement.
 
-### Service de Dispatcher AEM {#dispatcher-services}
+### Service AEM Dispatcher {#dispatcher-services}
 
 Dispatcher est un module `Apache HTTP Web server` qui fournit une couche de sécurité et de performances se trouvant devant le service de publication AEM.
