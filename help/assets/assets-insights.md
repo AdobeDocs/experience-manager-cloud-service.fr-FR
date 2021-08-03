@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Statistiques sur les ressources, rapports sur les ressources
 role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: def144cecaa7672e7af1807a5157730014c550b2
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 80%
+source-wordcount: '813'
+ht-degree: 75%
 
 ---
 
@@ -67,8 +67,8 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
 
 Vous pouvez afficher les scores de toutes les ressources d’un dossier simultanément à l’aide du **[!UICONTROL mode Statistiques]**.
 
-1. Dans l’IU Assets, accédez au dossier contenant les ressources dont vous souhaitez consulter les statistiques.
-1. Cliquez sur l’option Mise en page de la barre d’outils, puis sélectionnez **[!UICONTROL Mode Statistiques]**.
+1. Dans l’interface utilisateur Assets, accédez au dossier contenant les ressources pour lesquelles vous souhaitez afficher des informations.
+1. Cliquez sur l’option **[!UICONTROL Disposition]** dans la barre d’outils, puis sélectionnez **[!UICONTROL Vue des statistiques]**.
 1. La page affiche les scores d’utilisation pour les ressources. Comparez les évaluations des différentes ressources et tirez-en des conclusions.
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
@@ -95,7 +95,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 1. Dans [!DNL Experience Manager], cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]**.
 
-   ![chlimage_1-72](assets/chlimage_1-72.png)
+   ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. Cliquez sur la carte **[!UICONTROL Configuration des statistiques]**.
 1. Dans l’assistant, sélectionnez un centre de données et fournissez vos informations d’identification, notamment le nom de votre société, votre nom d’utilisateur et votre secret partagé.
@@ -117,6 +117,29 @@ Une fois que vous avez configuré votre compte Adobe Analytics, le code de suivi
 
 1. Sur la page **[!UICONTROL Navigation]**, cliquez sur la carte **[!UICONTROL Dispositif de suivi de la page de statistiques]**.
 1. Cliquez sur **[!UICONTROL Télécharger]** pour télécharger le code de suivi de page.
+
+<!--
+Add page tracker code, CQDOC-18045, 30/07/2021
+-->
+L’exemple de fragment de code suivant affiche le code de suivi de page inclus dans un exemple de page web :
+
+```xml
+ <head>
+            <script type="text/javascript" src="http://localhost:4502/xxxx/etc.clientlibs/dam/clientlibs/sitecatalyst/appmeasurement.js"></script>
+            <script type="text/javascript" src="http://localhost:4502/xxxx/etc.clientlibs/dam/clientlibs/foundation/assetinsights/pagetracker.js"></script>
+            <script type="text/javascript">
+                                assetAnalytics.attrTrackable = 'trackable';
+                assetAnalytics.defaultTrackable = false;
+                assetAnalytics.attrAssetID = 'aem-asset-id';
+                assetAnalytics.assetImpressionPollInterval = 200; // interval in millis
+                assetAnalytics.charsLimitForGET = 2000; // bytes
+                assetAnalytics.dispatcher.init("assetstesting","abc.net","bee","list1","eVar3","event8","event7");
+            </script>
+
+ </head>
+```
+
+
 
 <!--
 
