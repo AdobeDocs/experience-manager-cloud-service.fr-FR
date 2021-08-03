@@ -2,10 +2,10 @@
 title: Gestion des environnements – Cloud Service
 description: Gestion des environnements – Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 529fbdcba9fc4c1432beef1b63ff89079a900224
 workflow-type: tm+mt
-source-wordcount: '1652'
-ht-degree: 76%
+source-wordcount: '1618'
+ht-degree: 78%
 
 ---
 
@@ -74,9 +74,6 @@ La carte **Environnements** de la page Aperçu répertorie jusqu’à trois envi
    ![](assets/environment-view-2.png)
 
 1. Sélectionnez l’un des environnements de la liste pour afficher les détails de l’environnement.
-
-   >[!NOTE]
-   >Le service Preview sera déployé de manière progressive dans tous les programmes. Les clients seront avertis dans le produit lorsque leur programme sera activé pour le service de prévisualisation. Voir la section [Accès au service d’aperçu](#access-preview-service) pour plus d’informations.
 
    ![](assets/environ-preview1.png)
 
