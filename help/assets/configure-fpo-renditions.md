@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Rendus
 exl-id: null
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 69f1ac34dc24f92cae47e1bfcffb39f6f3b03b7b
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '456'
 ht-degree: 8%
 
 ---
@@ -27,7 +27,7 @@ Vous trouverez ci-dessous les étapes de génération des rendus FPO :
 
 ## Création d’un profil de traitement {#create-processing-profile}
 
-Pour générer des rendus FPO, vous créez un **[!UICONTROL profil de traitement]**. Les profils utilisent des microservices de ressources natifs dans le cloud pour le traitement. Pour plus d’informations, voir [Création de profils de traitement pour les microservices de ressources](asset-microservices-configure-and-use.md).
+Pour générer des rendus FPO, créez un **[!UICONTROL profil de traitement]**. Les profils utilisent des microservices de ressources natifs dans le cloud pour le traitement. Pour plus d’informations, voir [Création de profils de traitement pour les microservices de ressources](asset-microservices-configure-and-use.md).
 
 Sélectionnez **[!UICONTROL Créer le rendu FPO]** pour générer le rendu FPO. Si vous le souhaitez, cliquez sur **[!UICONTROL Ajouter nouveau]** pour ajouter d’autres paramètres de rendu au même profil.
 
