@@ -2,9 +2,9 @@
 title: Réplication
 description: Distribution et dépannage de la réplication.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: d00514eb3a840fe1fc5c021c84d61261f9dfe4f1
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1347'
 ht-degree: 54%
 
 ---
@@ -45,7 +45,7 @@ Vous trouverez des informations plus détaillées sur la gestion de la publicati
 
 >[!NOTE]
 >
->Cette approche doit être considérée comme obsolète, car elle ne conserve pas les états et est moins évolutive que les autres approches. Il est recommandé à l’Adobe d’utiliser plutôt des méthodes de gestion de publication ou de workflow.
+>Cette approche doit être considérée comme obsolète et sera supprimée le ou après le 30 septembre 2021, car elle ne conserve pas les états et est moins évolutive que les autres approches. Il est recommandé à l’Adobe d’utiliser plutôt des méthodes de gestion de publication ou de workflow.
 
 Pour exécuter une activation d’arborescence :
 
