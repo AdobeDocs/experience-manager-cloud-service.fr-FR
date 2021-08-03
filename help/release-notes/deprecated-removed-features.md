@@ -2,10 +2,10 @@
 title: Fonctionnalités obsolètes et supprimées
 description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et supprimées dans  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 1adcde525454e779adbd251b9a31f4e456b28998
+source-git-commit: 8742c4058a5b89a0d6aca0d6e58ed993b01d084d
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 92%
+source-wordcount: '513'
+ht-degree: 87%
 
 ---
 
@@ -38,6 +38,7 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 | [!DNL Assets] | Chargement direct de ressources vers [!DNL Experience Manager]. Consultez [API de chargement de ressources obsolètes](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Utilisez le [chargement de binaire direct](/help/assets/add-assets.md). Pour plus d’informations techniques, consultez [API de transfert direct](/help/assets/developer-reference-material-apis.md#upload-binary). |
 | [!DNL Assets] | [Certaines étapes](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) du workflow `DAM Asset Update` ne sont pas prises en charge, notamment l’appel d’outils de ligne de commande tels que [!DNL ImageMagick]. | [Les microservices de ressources](/help/assets/asset-microservices-overview.md) remplacent de nombreux workflows. Pour le traitement personnalisé, utilisez des [workflows de post-traitement](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | Transcodage FFmpeg des vidéos. | Pour la génération de miniatures FFmpeg, utilisez les [microservices de ressources](/help/assets/asset-microservices-overview.md). Pour le transcodage FFmpeg, utilisez [Dynamic Media](/help/assets/manage-video-assets.md). |
+| [!DNL Foundation] | Interface utilisateur de réplication de l’arborescence sous l’onglet &quot;Répartir&quot; de l’agent de réplication (suppression après le 30 septembre 2021) | [Gestion ](/help/operations/replication.md#manage-publication) des approches de workflow de l’arborescence de contenu de  [ ](/help/operations/replication.md#publish-content-tree-workflow) publication ou de publication |
 
 ## Fonctionnalités supprimées {#removed-features}
 
@@ -50,3 +51,4 @@ Cette section répertorie les capacités et fonctionnalités qui ont été suppr
 | [!DNL Sites] | Composant Portal Director et Portlet | Ces fonctionnalités ont été abandonnées dans [!DNL Experience Manager] 6.4 et ont été supprimées d’[!DNL Experience Manager]. |
 | [!DNL Sites] | Importateur de conception | Cette fonctionnalité a été supprimée, car les sections non modifiables du référentiel de [!DNL Experience Manager] ne sont pas accessibles au moment de l’exécution. |
 | [!DNL Assets] |  Le partage d’[!DNL Assets] avec le service principal Marketing Cloud Assets et les services Creative Cloud n’est pas disponible. | Pour l’intégration à [!DNL Adobe Creative Cloud], utilisez [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html). |
+| [!DNL Foundation] | Prise en charge des sources de données Apache Sling (lot OSGi org.apache.sling.datasource). | N/A |
