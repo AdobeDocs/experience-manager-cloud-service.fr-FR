@@ -4,9 +4,9 @@ description: Consultez cette page pour savoir comment affecter des membres de l�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bb29126590751edcb1f99731de0ee4ee004f017d
+source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '822'
 ht-degree: 2%
 
 ---
@@ -102,7 +102,7 @@ Les étapes ci-dessous doivent être suivies par un administrateur système qui 
 
 ## Eléments suivants {#whats-next}
 
-Les utilisateurs que vous avez affectés à AEM en tant que profils de produit Cloud Service sont maintenant prêts à apprendre à accéder à l’instance de création et à vous familiariser avec la création de pages dans AEM en tant que Cloud Service. Vous devez suivre le chemin, en consultant ensuite le document Chemin d’apprentissage pour les utilisateurs AEM.
+Les utilisateurs que vous avez affectés à AEM en tant que profils de produit Cloud Service sont maintenant prêts à apprendre à accéder à l’instance de création et à vous familiariser avec la création de pages dans AEM en tant que Cloud Service. Vous devez suivre le chemin, en consultant ensuite le document Chemin d’apprentissage pour les utilisateurs AEM ou Chemin d’apprentissage pour les développeurs et les responsables de déploiement.
 
 ## Ressources supplémentaires {#additional-resources}
 
