@@ -4,10 +4,10 @@ description: Consultez cette page pour savoir comment configurer des ressources 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 5a909976909eb7ce2c008d2eac9ffb60e906023e
+source-git-commit: 7fc39615e29a5523b4d2b0e159a10be5771f5120
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 1%
+source-wordcount: '1370'
+ht-degree: 14%
 
 ---
 
@@ -44,9 +44,21 @@ Consultez les sections ci-dessous pour savoir comment créer vos [programmes de 
 
 ## Accéder à Cloud Manager {#navigate-cloud-manager}
 
-1. L’utilisateur *Propriétaire de l’entreprise* recevra un e-mail de bienvenue à partir duquel il pourra commencer ou, s’il ne parvient pas à le trouver, accédez directement à [Adobe Experience Cloud](https://experience.adobe.com/#/@ccs/home) et connectez-vous à l’aide de votre Adobe ID.
+L’utilisateur *Propriétaire de l’entreprise* recevra un e-mail de bienvenue à partir duquel il pourra commencer ou, s’il ne parvient pas à le trouver, accédez directement à [Adobe Experience Cloud](https://experience.adobe.com) et connectez-vous à l’aide de votre Adobe ID.
 
-   ![](/help/onboarding/onboarding-journey/assets/setup-resources1.png)
+Pour accéder à Cloud Manager, procédez comme suit :
+
+1. Dans l’e-mail de bienvenue, cliquez sur **Commencer**, comme illustré dans l’illustration ci-dessous.
+   ![](/help/onboarding/onboarding-journey/assets/get-started-email.png)
+
+1. Vous accédez à la page **Programmes et produits** de Cloud Manager.
+
+   >[!IMPORTANT]
+   >Vous pouvez également accéder directement à la page de connexion de Cloud Manager à partir de [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+
+De plus, vous pouvez accéder à la page **Programmes et produits** de Cloud Manager à partir de la page d’accueil de Adobe Experience Cloud. Suivez les étapes ci-dessous :
+
+1. Accédez directement à [Adobe Experience Cloud](https://experience.adobe.com) et connectez-vous à l’aide de votre Adobe ID.
 
 1. Sur la page d’accueil de Adobe Experience Cloud, sélectionnez **Experience Manager**.
 
@@ -56,11 +68,37 @@ Consultez les sections ci-dessous pour savoir comment créer vos [programmes de 
 
    ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
 
-1. La page d’entrée de Cloud Manager s’affiche, comme illustré dans la figure ci-dessous.
+1. Une fois votre connexion établie, vous êtes dirigé vers la page d’entrée de Cloud Manager, comme indiqué ci-dessous.
 
-   ![](/help/onboarding/onboarding-journey/assets/setup-resources4.png)
+   >[!NOTE]
+   >Selon les rôles affectés dans [!UICONTROL Cloud Manager] et l’état de l’application, vous verrez plusieurs écrans lors de l’utilisation de l’interface utilisateur de [!UICONTROL Cloud Manager].
 
-1. Vérifiez que le profil de produit Propriétaire de l’entreprise vous a été attribué. Pour ce faire, sélectionnez votre profil en haut à droite, comme illustré ci-dessous.
+   L’une des trois options suivantes s’affiche :
+
+   * **Lorsqu’aucun programme n’existe dans Cloud Manager**
+
+      S’il n’existe aucun programme dans votre organisation, votre page d’entrée vous demande de créer votre premier programme, comme le montre la figure ci-dessous.
+      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+
+   * **Lorsque des programmes existent déjà dans Cloud Manager**
+
+      Si des programmes existent déjà dans votre organisation, votre page d’entrée vous demande d’ajouter un autre programme et d’afficher tous vos programmes existants, comme le montre la figure ci-dessous.
+
+      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+
+   * **Lorsqu’un programme existe et qu’un utilisateur est administrateur système**
+
+      Si des programmes existent déjà dans votre organisation et que vous êtes administrateur système, votre page d’entrée affiche le bouton **Gérer l’accès** avec l’option **Ajouter un programme**, comme dans l’illustration ci-dessous.
+
+      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+
+
+
+## Vérification des rôles utilisateur {#verify-user-roles}
+
+Une fois que vous êtes connecté à Cloud Manager, suivez les étapes ci-dessous pour vérifier que le profil de produit Propriétaire de l’entreprise vous a été attribué :
+
+1. Sélectionnez votre profil en haut à droite, comme illustré ci-dessous.
 
    ![](/help/onboarding/onboarding-journey/assets/setup-resources5.png)
 
