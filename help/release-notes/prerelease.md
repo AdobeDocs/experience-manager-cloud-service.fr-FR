@@ -1,15 +1,15 @@
 ---
 title: '[!DNL Adobe Experience Manager] canal de version prédéfinie du Cloud Service'
 description: '[!DNL Adobe Experience Manager] canal de version prédéfinie du Cloud Service'
-source-git-commit: 4ee9a5744cdcec00dd497a00b0d8dbf288a5adcb
+exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
+source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
 workflow-type: tm+mt
 source-wordcount: '752'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
-
-# [!DNL Adobe Experience Manager] canal de version prédéfinie du Cloud Service  {#prerelease-channel}
+# [!DNL Adobe Experience Manager] canal de version prédéfinie du Cloud Service {#prerelease-channel}
 
 
 ## Présentation {#introduction}
@@ -20,7 +20,7 @@ La liste des fonctionnalités de version préliminaire pour un mois donné est p
 
 >[!VIDEO](/help/release-notes/assets/prerelease-overview.mp4)
 
-## Comment activer la version préliminaire {#enable-prerelease}
+## Activation de la version préliminaire {#enable-prerelease}
 
 Les fonctionnalités de la version préliminaire peuvent être expérimentées de différentes manières :
 
@@ -54,7 +54,7 @@ La variable peut être supprimée ou redéfinie sur une autre valeur si vous sou
 
 Vous pouvez voir les nouvelles fonctionnalités dans la console Sites dans le SDK Quickstart local et le code par rapport aux nouvelles API dans la version préliminaire en demandant à votre projet Maven de référencer la version préliminaire `API Jar` située dans Maven Central. Vous pouvez également voir ces fonctionnalités de version préliminaire sur votre ordinateur local en démarrant le SDK Quickstart standard en mode bêta :
 
-* Téléchargez le SDK à partir du portail de distribution de logiciels et procédez à l’installation comme décrit dans la section [Accès à l’AEM en tant que SDK Cloud Service](/help/implementing/developing/aem-as-a-cloud-service-sdk.md#accessing-the-aem-as-a-cloud-service-sdk.)
+* Téléchargez le SDK à partir du portail de distribution de logiciels et installez-le comme décrit dans la section [Accès à l’AEM en tant que SDK Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 * Lors du lancement du démarrage rapide du SDK, incluez l’argument `-r prerelease`.
 * La valeur est *sticky*. Elle ne peut donc être sélectionnée que lors du premier démarrage. Réinstallez le SDK pour modifier l’option de ligne de commande.
 
