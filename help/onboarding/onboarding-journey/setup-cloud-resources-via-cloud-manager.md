@@ -4,9 +4,9 @@ description: Consultez cette page pour savoir comment configurer des ressources 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 7fc39615e29a5523b4d2b0e159a10be5771f5120
+source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
 workflow-type: tm+mt
-source-wordcount: '1370'
+source-wordcount: '1387'
 ht-degree: 14%
 
 ---
@@ -54,7 +54,7 @@ Pour accéder à Cloud Manager, procédez comme suit :
 1. Vous accédez à la page **Programmes et produits** de Cloud Manager.
 
    >[!IMPORTANT]
-   >Vous pouvez également accéder directement à la page de connexion de Cloud Manager à partir de [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+   >Vous pouvez également accéder directement à la page de connexion de Cloud Manager à partir de [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Mettez cette page en signet pour plus d’informations et pour accéder directement à la page d’entrée de Cloud Manager.
 
 De plus, vous pouvez accéder à la page **Programmes et produits** de Cloud Manager à partir de la page d’accueil de Adobe Experience Cloud. Suivez les étapes ci-dessous :
 
@@ -91,7 +91,6 @@ De plus, vous pouvez accéder à la page **Programmes et produits** de Cloud Man
       Si des programmes existent déjà dans votre organisation et que vous êtes administrateur système, votre page d’entrée affiche le bouton **Gérer l’accès** avec l’option **Ajouter un programme**, comme dans l’illustration ci-dessous.
 
       ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
-
 
 
 ## Vérification des rôles utilisateur {#verify-user-roles}
