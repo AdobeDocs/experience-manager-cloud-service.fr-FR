@@ -2,16 +2,16 @@
 title: Déploiement de votre code - Cloud Services
 description: Déploiement de votre code - Cloud Services
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 64023bbdccd8d173b15e3984d0af5bb59a2c1447
+source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
 workflow-type: tm+mt
 source-wordcount: '616'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
 # Déploiement de votre code {#deploy-your-code}
 
-## Déploiement du code avec Cloud Manager dans AEM en tant que Cloud Service {#deploying-code-with-cloud-manager}
+## Déploiement de code avec Cloud Manager dans AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
 Une fois que vous avez configuré votre pipeline de production (référentiel, environnement et environnement de test), vous êtes prêt à déployer votre code.
 
@@ -41,7 +41,7 @@ Une fois que vous avez configuré votre pipeline de production (référentiel, e
    Le **déploiement en environnement intermédiaire** comprend les étapes suivantes :
 
    * Validation : cette étape permet de s’assurer que le pipeline est configuré pour utiliser les ressources actuellement disponibles ; par exemple, la branche configurée existe, les environnements sont disponibles, etc.
-   * Test de création et d’unité : cette étape exécute un processus de création en conteneur. Voir [Détails d’environnement de génération](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md) pour plus d’informations sur l’environnement de génération.
+   * Test de création et d’unité : cette étape exécute un processus de création en conteneur. Voir [Détails d’environnement de génération](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) pour plus d’informations sur l’environnement de génération.
    * Analyse du code : cette étape évalue la qualité du code de votre application. Voir [Test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md) pour plus d’informations sur le processus de test.
    * Compiler des images : cette étape comprend un fichier journal du processus utilisé pour compiler des images. Ce processus est responsable de la transformation du contenu et des modules du Dispatcher générés par l’étape de compilation en images Docker et en configuration Kubernetes.
    * Déploiement dans l’environnement d’évaluation.
