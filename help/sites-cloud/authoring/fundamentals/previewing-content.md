@@ -2,9 +2,9 @@
 title: Aperçu du contenu
 description: Découvrez comment utiliser le service d’aperçu AEM pour prévisualiser le contenu avant sa mise en ligne.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
+source-git-commit: 78c5649c6b9c04cb459f5730161affeb452c916c
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->La fonctionnalité Aperçu fait partie de la version 2021.5.0 et sera déployée progressivement au cours des prochaines semaines.
+>Pour activer la fonction d’aperçu sur les environnements créés avant le 3 août 2021, vérifiez que l’environnement se trouve dans AEM version 2021.05.5368.20210529T101701Z ou ultérieure, puis exécutez un pipeline initié par le client.
 
 AEM propose un service d’aperçu de site conçu pour permettre aux développeurs et aux auteurs de contenu de prévisualiser l’expérience finale d’un site web avant qu’il n’atteigne l’environnement de publication et soit disponible publiquement.
 
 Il facilite la prévisualisation des expériences de page qui ne seraient pas visibles autrement à partir de l’environnement de création, comme les transitions de page et tout autre contenu côté publication uniquement.
+
+Lisez également [l’accès au service de prévisualisation](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## Publication de contenu en vue de la prévisualisation {#publishing-content-to-preview}
 
@@ -40,7 +42,7 @@ Vous pouvez publier du contenu dans le service d’aperçu à l’aide de l’in
    https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
    ```
 
-Voir [Gestion des environnements](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) pour plus d’informations sur la manière d’obtenir les URL de vos environnements.
+Voir [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md) pour plus d’informations sur la manière d’obtenir les URL de vos environnements.
 
 Le contenu peut également être publié pour la prévisualisation à l’aide d’un [processus Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) avec le paramètre agentId défini pour la prévisualisation ou à l’aide de l’[API de réplication](/help/operations/replication.md#replication-api) avec un AgentFilter configuré pour la prévisualisation.
 
@@ -67,4 +69,4 @@ Pour déboguer le niveau d’aperçu à l’aide de Developer Console, procédez
 
 * Dans [Developer Console](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools), sélectionnez **— All Preview —** ou un environnement de production qui inclut **prev** dans son nom.
 * Générer les informations pertinentes pour l&#39;instance d&#39;aperçu
-Voir [Gestion des environnements](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) pour plus d’informations sur la manière d’obtenir les URL de vos environnements.
+Voir [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md) pour plus d’informations sur la manière d’obtenir les URL de vos environnements.
