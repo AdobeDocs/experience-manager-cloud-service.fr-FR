@@ -4,10 +4,10 @@ description: Consultez cette page pour découvrir les étapes suivantes à suivr
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: d3f721d66cc6b0c9191f8d84d4adc0326ef68d73
+source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 5%
+source-wordcount: '456'
+ht-degree: 7%
 
 ---
 
@@ -17,10 +17,10 @@ ht-degree: 5%
 
 Ce document permet aux développeurs et aux responsables de déploiement d’accéder à Cloud Manager et de se familiariser avec la manière dont ils peuvent se préparer au parcours de formation.
 
-Après l’avoir lu, vous devriez :
+Après avoir lu ce document, vous devez :
 
-* En tant que développeur, vous devriez être en mesure de comprendre comment accéder à Cloud Manager Git et le gérer.
-* En tant que responsable de déploiement, vous devriez être en mesure de comprendre comment configurer des pipelines et déployer votre code dans Cloud Manager.
+* En tant que développeur, vous pouvez comprendre comment accéder à Cloud Manager Git et le gérer.
+* En tant que responsable de déploiement, vous pouvez comprendre comment configurer des pipelines et déployer votre code dans Cloud Manager.
 
 ## Présentation {#introduction}
 
@@ -39,11 +39,13 @@ Vous comprenez comment accéder à Cloud Manager et vous connecter.
 
 ## Gérer Git {#manage-git}
 
-Pour en savoir plus sur ce sujet, rendez-vous ici.
+Vous pouvez accéder à votre référentiel Git et le gérer à l’aide de la gestion de compte Git en libre-service à partir de l’interface utilisateur de Cloud Manager.
+Pour en savoir plus sur cette rubrique, voir [Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en).
 
 ## Configurer le pipeline {#setup-pipeline}
 
-Pour en savoir plus sur ce sujet, rendez-vous ici
+Vous pouvez configurer votre pipeline de production ou hors production à partir de l’interface utilisateur de Cloud Manager.
+Pour en savoir plus sur cette rubrique, voir [Configuration de votre pipeline CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en).
 
 ## Eléments suivants {#whats-next}
 
