@@ -3,10 +3,10 @@ title: Configuration d’OSGi pour Adobe Experience Manager as a Cloud Service
 description: 'Configuration d’OSGi à l’aide de valeurs secrètes et spécifiques aux environnements '
 feature: Déploiement
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: b28202a4e133f046b50477c07eb5a37271532c90
+source-git-commit: 2555e5e1545f198a235d44f8cb07e25d7490d1d5
 workflow-type: tm+mt
-source-wordcount: '2927'
-ht-degree: 95%
+source-wordcount: '2934'
+ht-degree: 94%
 
 ---
 
@@ -224,7 +224,7 @@ Les valeurs des variables ne doivent pas dépasser 2 048 caractères.
 
 >[!NOTE]
 >
->Les noms de variables précédés de la mention `INTERNAL_` sont réservés par Adobe. Toutes les variables définies par le client commençant par ce préfixe seront ignorées.
+>Les noms de variables précédés de la mention `INTERNAL_` sont réservés par Adobe. Toutes les variables définies par le client commençant par ce préfixe seront ignorées. Les clients ne doivent pas non plus faire référence à ces variables.
 
 ### Valeurs par défaut {#default-values}
 
