@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Métadonnées
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 7ea0e6c2d277199fc5216aab70e587bd23ac6baa
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 100%
+source-wordcount: '1061'
+ht-degree: 96%
 
 ---
 
@@ -101,13 +101,13 @@ L’onglet **[!UICONTROL Créer le formulaire]** répertorie les éléments de f
 
 ### Modification d’éléments de formulaire {#editing-form-items}
 
-Pour modifier les propriétés d’éléments de formulaire, appuyez/cliquez sur le composant et modifiez l’ensemble ou un sous-ensemble des propriétés suivantes dans l’onglet **[!UICONTROL Paramètres]**.
+Pour modifier les propriétés d’éléments de formulaire, appuyez/cliquez sur le composant et modifiez l’ensemble ou un sous-ensemble des propriétés suivantes dans l’onglet **[!UICONTROL Paramètres.]** Il est recommandé de ne mapper qu’un champ à une propriété donnée dans le schéma de métadonnées. Sinon, le dernier champ ajouté mappé à la propriété est sélectionné par le système.
 
 **[!UICONTROL Libellé du champ]** : nom de la propriété de métadonnées qui s’affiche sur la page des propriétés du dossier.
 
 **[!UICONTROL Associer à la propriété]** : cette propriété spécifie le chemin d’accès relatif au nœud de dossier dans le référentiel CRX où il est enregistré. Elle commence par « **./** », ce qui indique que le chemin est situé sous le nœud du dossier.
 
-Les valeurs admises pour cette propriété sont les suivantes :
+Voici des exemples de valeurs valides pour une propriété :
 
 * `./jcr:content/metadata/dc:title` : stocke la valeur dans le nœud de métadonnées du dossier en tant que propriété `dc:title`.
 
