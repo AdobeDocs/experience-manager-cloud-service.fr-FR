@@ -5,10 +5,10 @@ contentOwner: AG
 feature: 'Métadonnées '
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: 1d7148e71e5a145a8dc62782e5f4dfb65e2a816b
+source-git-commit: a7da1deb71a7c6ebf9c73b8d33877fb56b73be47
 workflow-type: tm+mt
-source-wordcount: '2562'
-ht-degree: 97%
+source-wordcount: '2594'
+ht-degree: 95%
 
 ---
 
@@ -105,13 +105,13 @@ L’onglet **[!UICONTROL Créer le formulaire]** répertorie les éléments de f
 
 #### Modification du composant de métadonnées {#edit-the-metadata-component}
 
-Pour modifier les propriétés d’un composant de métadonnées dans le formulaire, cliquez sur le composant et modifiez l’ensemble ou un sous-ensemble des propriétés suivantes dans l’onglet **[!UICONTROL Paramètres]**.
+Pour modifier les propriétés d’un composant de métadonnées dans le formulaire, cliquez sur le composant et modifiez l’ensemble ou un sous-ensemble des propriétés suivantes dans l’onglet **[!UICONTROL Paramètres.]** Il est recommandé de ne mapper qu’un champ à une propriété donnée dans le schéma de métadonnées. Sinon, le dernier champ ajouté mappé à la propriété est sélectionné par le système.
 
 **Libellé du champ** : nom de la propriété de métadonnées qui s’affiche sur la page des propriétés de la ressource.
 
 **Associer à la propriété** : cette propriété spécifie le chemin ou le nom relatif du nœud de la ressource où elle est enregistrée dans le référentiel CRX. Elle commence par `./` pour indiquer que le chemin d’accès se situe sous le nœud de la ressource.
 
-Les valeurs admises pour cette propriété sont les suivantes :
+Voici des exemples de valeurs valides pour une propriété :
 
 * `./jcr:content/metadata/dc:title` : stocke la valeur dans le nœud de métadonnées de la ressource en tant que propriété `dc:title`.
 
