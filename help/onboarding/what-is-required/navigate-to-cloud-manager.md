@@ -2,10 +2,10 @@
 title: Accès à Cloud Manager
 description: Consultez cette page pour savoir comment accéder à la page d’entrée de Cloud Manager.
 exl-id: 9cf25d1d-a351-4ea0-b2e9-1df6ca4915b7
-source-git-commit: 149776bdd7acce3e00710e50600d9bd1d7cc6b9b
+source-git-commit: 058622fd2628656c7b2fb3a02445724ca6a62f3b
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 80%
+source-wordcount: '515'
+ht-degree: 79%
 
 ---
 
@@ -24,6 +24,8 @@ Une fois que votre administrateur système vous a accordé l’accès à Cloud 
 
    >[!IMPORTANT]
    >Vous pouvez également accéder directement à la page de connexion de Cloud Manager à partir de [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Mettez cette page en signet pour plus d’informations et pour accéder directement à la page d’entrée de Cloud Manager.
+
+1. Vous serez redirigé vers la page d’entrée de Cloud Manager.
 
 De plus, vous pouvez également accéder à la page **Programmes et produits** de Cloud Manager à partir de la page d’accueil de Adobe Experience Cloud. Suivez les étapes ci-dessous :
 
