@@ -2,10 +2,10 @@
 title: Tests fonctionnels – Cloud Services
 description: Tests fonctionnels – Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 006fd74a9c4f4d5321bb3d0b35b5c9d49def7bc4
+source-git-commit: cf2e206b0ad186e0f4caa4a2ec9c34faf2078b76
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 98%
+source-wordcount: '900'
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="Tests fonctionnels"
->abstract="Les tests fonctionnels sont classés en trois types : Tests fonctionnels du produit, tests fonctionnels personnalisés et tests de l’interface utilisateur personnalisée"
+>abstract="Les tests fonctionnels sont classés en trois types : tests fonctionnels du produit, tests fonctionnels personnalisés et tests de l’interface utilisateur personnalisés"
 
 Les tests fonctionnels sont classés en trois types :
 
@@ -62,9 +62,21 @@ Pour que leurs tests d’interface utilisateur soient créés et exécutés, les
 
 *Nom du fichier* : `testing.properties`
 
-*Contenu* : `one line: ui-tests.version=1`
+*Contenu* : `ui-tests.version=1`
 
 S’il ne se trouve pas dans le fichier `tar.gz` créé, les tests de l’interface utilisateur vont s’accumuler et leur exécution va être ignorée.
+
+Pour ajouter un fichier `testing.properties` dans l’artefact créé, ajoutez une instruction `include` dans le fichier `assembly-ui-test-docker-context.xml` (dans le sous-module de tests de l’interface utilisateur) :
+
+    &quot;
+    [...]
+    &lt;includes>
+    &lt;include>&lt;/include>
+    &lt;include>Dockerfilewait-for-grid.&lt;/include>
+    &lt;include>shtesting.properties&lt;/include> &lt;!- module de test d’opt-in dans Cloud Manager —>
+    &lt;/include>
+    [...]
+    &quot;
 
 >[!NOTE]
 >Les pipelines de production créés avant le 10 février 2021 devront être mis à jour afin d’utiliser les tests d’interface utilisateur décrits dans cette section. Cela signifie essentiellement que l’utilisateur doit modifier le pipeline de production et cliquer sur **Enregistrer** dans l’interface utilisateur, et ce, même si aucune modification n’a été apportée.
