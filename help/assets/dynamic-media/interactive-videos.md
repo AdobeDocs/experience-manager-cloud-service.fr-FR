@@ -19,7 +19,7 @@ Une fois la vidéo terminée, un résumé visuel de toutes les offres s’affich
 
 Voir aussi [Images interactives](/help/assets/dynamic-media/interactive-images.md).
 
-## Vidéos interactives à l’œuvre  {#interactive-video-in-action}
+## Vidéos interactives à l’œuvre {#interactive-video-in-action}
 
 Pour voir une vidéo interactive Shoppable en action, sélectionnez [Démonstrations en direct](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), faites défiler la page jusqu’à l’en-tête **[!UICONTROL Médias Shoppable]**, puis sélectionnez la vidéo Shoppable pour commencer la lecture.
 
@@ -45,7 +45,7 @@ There was a link here that showed the video frame of an interactive video and wh
 >
 >Si vous créez une vidéo interactive pour lancer une page web lorsqu’un utilisateur sélectionne une image miniature, certains périphériques empêchent l’ouverture de la page web contextuelle. Dans ce cas, modifiez le paramètre de blocage des fenêtres contextuelles sur le dispositif. Par exemple, sur un iPhone 6 Apple, accédez à **[!UICONTROL Paramètres]** > **[!UICONTROL Safari]** > **[!UICONTROL Bloquer les fenêtres contextuelles]**, puis faites glisser la commande sur **[!UICONTROL Désactivé]**. Désormais, lorsque vous lisez une vidéo interactive et sélectionnez une miniature, vous êtes invité à ouvrir la fenêtre contextuelle. Si vous acceptez, la page web s’affiche.
 
-### Découvrez comment les vidéos interactives sont créées  {#watch-how-interactive-videos-are-created}
+### Découvrez comment les vidéos interactives sont créées {#watch-how-interactive-videos-are-created}
 
 Regardez une présentation sur [la manière dont les vidéos interactives sont créées](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) (7 minutes et 30 secondes).
 (Même si la présentation vidéo est personnalisée grâce à Assets on Demand, les principes et les étapes restent compatibles avec les vidéos interactives dans Adobe Experience Manager Assets.)
