@@ -3,7 +3,7 @@ title: Guide de démarrage rapide pour la création de pages
 description: Guide de haut niveau conçu pour vous aider à commencer à créer rapidement du contenu de page
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1585'
 ht-degree: 100%
 
@@ -42,7 +42,7 @@ Avant d’entamer la lecture de ce guide de démarrage rapide, nous vous proposo
    * **Les liens ne sont pas disponibles pour la navigation** lorsque vous êtes en mode d’**édition**. Pour naviguer à l’aide de liens, vous devez [afficher un aperçu de la page](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) à l’aide de l’une des fonctionnalités suivantes :
 
       * [Mode Aperçu](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)
-      * [Afficher comme publié(e) ](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
+      * [Afficher comme publié(e)](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 
 * Les versions ne sont pas lancées/créées à partir de l’éditeur de pages. Cette opération s’effectue dans la console **Sites** (via l’option **Créer** ou [Chronologie](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) pour une ressource sélectionnée).
 
@@ -51,7 +51,7 @@ Avant d’entamer la lecture de ce guide de démarrage rapide, nous vous proposo
 >Il existe plusieurs raccourcis clavier qui peuvent faciliter l’expérience de création.
 >
 >* [Raccourcis clavier lors de la modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
->* [Raccourcis clavier pour les consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+* [Raccourcis clavier pour les consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
 ### Recherche de votre page {#finding-your-page}
@@ -76,14 +76,14 @@ Il existe plusieurs moyens de rechercher une page. Vous pouvez soit naviguer, so
 
 Pour [créer une page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) :
 
-1. [Accédez à l’emplacement où créer la page.](#finding-your-page)
+1. [Accédez à l’emplacement](#finding-your-page) où créer la page.
 1. Cliquez sur l’icône **Créer** et sélectionnez **Page** dans la liste :
 
    ![Bouton Créer](/help/sites-cloud/authoring/assets/create.png)
 
 1. Un assistant s’ouvre, qui vous aidera à collecter les informations nécessaires lors de la [création de votre page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page). Suivez les instructions à l’écran.
 
-### Sélection de la page pour d’autres actions   {#selecting-your-page-for-further-action}
+### Sélection de la page pour d’autres actions {#selecting-your-page-for-further-action}
 
 Sélectionnez une page pour y effectuer des actions. Ce faisant, la barre d’outils est automatiquement mise à jour afin de présenter les actions appropriées pour cette ressource.
 
@@ -159,10 +159,8 @@ Pour modifier votre page :
    * [Copiez (et collez)](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) un composant :
 
       * Ouvrez la barre d’outils du composant en appuyant ou en cliquant. Cliquez sur les icônes **Copier** puis **Coller** suivant vos besoins.
-
    >[!NOTE]
-   >
-   >Vous pouvez **coller** les composants sur la même page ou sur une autre. Si vous collez un composant sur une autre page qui était déjà ouverte avant l’opération de couper/copier, il vous faut actualiser la page en question.
+   Vous pouvez **coller** les composants sur la même page ou sur une autre. Si vous collez un composant sur une autre page qui était déjà ouverte avant l’opération de couper/copier, il vous faut actualiser la page en question.
 
    * [Supprimer](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) un composant :
 
@@ -178,10 +176,9 @@ Pour modifier votre page :
    * Revenez au mode d’édition (ou sélectionnez un autre mode) à l’aide du sélecteur déroulant **Modifier**.
 
    >[!NOTE]
-   >
-   >Pour naviguer en suivant les liens figurant dans le contenu, vous devez utiliser le [mode Aperçu](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode).
+   Pour naviguer en suivant les liens figurant dans le contenu, vous devez utiliser le [mode Aperçu](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode).
 
-### Modification des propriétés de page    {#editing-the-page-properties}
+### Modification des propriétés de page {#editing-the-page-properties}
 
 Vous pouvez [modifier les propriétés de page](/help/sites-cloud/authoring/fundamentals/page-properties.md) de deux (principales) façons :
 
@@ -233,7 +230,7 @@ Il existe deux méthodes principales pour [publier une page](/help/sites-cloud/a
 
    Pour plus d’informations, voir [Publication de pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages).
 
-### Déplacement, copier-coller ou suppression d’une page    {#move-copy-and-paste-or-delete-your-page}
+### Déplacement, copier-coller ou suppression d’une page {#move-copy-and-paste-or-delete-your-page}
 
 Ces actions peuvent être déclenchées en procédant comme suit :
 
@@ -254,10 +251,8 @@ Ces actions peuvent être déclenchées en procédant comme suit :
    * Supprimer :
 
       * Vous serez alors invité à confirmer l’opération.
-
    >[!NOTE]
-   >
-   >La suppression n’est pas proposée comme action rapide.
+   La suppression n’est pas proposée comme action rapide.
 
 ### Verrouillage d’une page (puis déverrouillage) {#locking-your-page-then-unlocking}
 
@@ -285,7 +280,7 @@ Un [accès rapide aux références](/help/sites-cloud/authoring/fundamentals/env
 
 1. Appuyez ou cliquez sur le type de référence requis pour afficher d’autres détails et (le cas échéant) accomplir d’autres actions.
 
-### Création d’une version d’une page    {#creating-a-version-of-your-page}
+### Création d’une version d’une page {#creating-a-version-of-your-page}
 
 Pour créer une [version](/help/sites-cloud/authoring/features/page-versions.md) de votre page :
 
