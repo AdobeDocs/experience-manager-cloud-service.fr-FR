@@ -3,7 +3,7 @@ title: Développement et outil de comparaison des pages
 description: Découvrez le fonctionnement de l’outil de comparaison des pages et son impact sur un développeur
 exl-id: 03c08616-2203-4b90-bed6-4836266e2507
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '336'
 ht-degree: 100%
 
