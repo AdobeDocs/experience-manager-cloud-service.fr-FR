@@ -1,9 +1,9 @@
 ---
-title: Notifications - Cloud Service
-description: Notifications - Cloud Service
+title: Notifications – Cloud Service
+description: Notifications – Cloud Service
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '192'
 ht-degree: 100%
 
