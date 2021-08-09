@@ -1,18 +1,18 @@
 ---
 title: Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes
-description: Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu sans interface en explorant des exemples de contenu et de requêtes.
-feature: Fragments de contenu, API GraphQL
+description: Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu en mode découplé en explorant des exemples de contenu et de requêtes.
+feature: Fragments de contenu,API GraphQL
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1422'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes {#learn-graphql-with-aem-sample-content-queries}
 
-Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu sans interface en explorant des exemples de contenu et de requêtes.
+Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu en mode découplé en explorant des exemples de contenu et de requêtes.
 
 >[!NOTE]
 >
@@ -20,7 +20,7 @@ Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu sans inter
 >
 >* [Fragments de contenu](/help/assets/content-fragments/content-fragments.md)
 * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
-* [API GraphQL d’AEM à utiliser avec des fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md)
+* [API AEM GraphQL à utiliser avec des fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
 Pour prendre en main les requêtes GraphQL et leur fonctionnement avec les fragments de contenu AEM, il peut être utile de consulter quelques exemples pratiques.
@@ -37,7 +37,7 @@ Pour obtenir de l’aide à ce sujet, voir les éléments suivants :
 Consultez ces exemples de requêtes pour accéder à des illustrations de création de requêtes, ainsi qu’à des exemples de résultats.
 
 >[!NOTE]
-Selon votre instance, vous pouvez accéder directement à l’interface [Graph *i* QL incluse avec l’API GraphQL d’AEM](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) pour envoyer et tester des requêtes.
+Selon votre instance, vous pouvez accéder directement à l’interface [Graph *i* QL incluse avec l’API AEM GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) pour envoyer et tester des requêtes.
 Par exemple : `http://localhost:4502/content/graphiql.html`
 
 >[!NOTE]
@@ -602,9 +602,9 @@ query {
 }
 ```
 
-### Exemple de requête : toutes les aventures dont la balise `_path` commence par un préfixe spécifique {#sample-wknd-all-adventures-cycling-path-filter}
+### Exemple de requête : toutes les aventures dont la balise `_path` commence par un préfixe spécifique {#sample-wknd-all-adventures-cycling-path-filter}
 
-`adventures` où `_path` commence par un préfixe spécifique (`/content/dam/wknd/en/adventures/cycling`).
+Toutes les `adventures` où `_path` commence par un préfixe spécifique (`/content/dam/wknd/en/adventures/cycling`).
 
 **Exemple de requête**
 
@@ -1601,4 +1601,4 @@ Les fragments suivants sont utilisés pour le modèle approprié.
 | San Francisco |  États-Unis |  883306 |  city:beach<br>city:na |
 | San Jose |  États-Unis |  102635 |  city:na |
 | Stuttgart |  Allemagne |  634830 |  city:emea |
-|  Zurich |  Suisse |  415367 |  city:Capital<br>city:emea |
+|  Zurich |  Suisse |  415367 |  city:capital<br>city:emea |
