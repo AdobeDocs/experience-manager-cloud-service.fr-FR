@@ -3,7 +3,7 @@ title: Configuration de la segmentation avec ContextHub
 description: Découvrez comment configurer la segmentation à l’aide de ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1692'
 ht-degree: 100%
 
@@ -139,7 +139,7 @@ Vous pouvez imbriquer plusieurs opérateurs ET et OU selon les besoins.
 
 À l’aide du composant Référence de script, l’évaluation d’une propriété de segment peut être déléguée à un script externe. Une fois le script correctement configuré, il peut être utilisé comme n’importe quel autre composant d’une condition de segment.
 
-#### Définition d’une référence de script  {#defining-a-script-to-reference}
+#### Définition d’une référence de script {#defining-a-script-to-reference}
 
 1. Ajoutez le fichier `contexthub.segment-engine.scripts` à la propriété clientlib.
 1. Implémentez une fonction qui renvoie une valeur. Par exemple :
@@ -256,7 +256,7 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 >
 > Il est impossible de déplacer un segment d’un dossier à un autre.
 
-## Test de l’application d’un segment  {#testing-the-application-of-a-segment}
+## Test de l’application d’un segment {#testing-the-application-of-a-segment}
 
 Une fois le segment défini, les résultats potentiels peuvent être testés avec **[ContextHub](contexthub.md).**
 
@@ -285,6 +285,6 @@ Si vous avez configuré une activité et une expérience, vous pouvez tester fac
 1. Basculez vers le mode Aperçu et, avec ContextHub, passez à une personne qui ne correspond pas à la segmentation configurée pour l’expérience.
 1. Passez à une personne qui correspond à la segmentation configurée pour l’expérience et constatez que l’expérience change en conséquence.
 
-## Utilisation de votre segment  {#using-your-segment}
+## Utilisation de votre segment {#using-your-segment}
 
 Les segments sont utilisés afin de contrôler le contenu affiché pour des audiences cible spécifiques. Voir [Gestion des audiences](audiences.md) pour plus d’informations sur les audiences et les segments et [Création de contenu ciblé](targeted-content.md) pour plus d’informations sur l’utilisation des audiences et des segments afin de cibler du contenu.
