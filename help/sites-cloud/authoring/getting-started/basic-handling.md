@@ -31,7 +31,7 @@ Une fois connecté, vous accédez au [panneau de navigation](#navigation-panel).
 
 La console **Sites** est utilisée dans ce document pour garantir une bonne compréhension de l’utilisation de base d’AEM. Cliquez ou appuyez sur **Sites** pour commencer.
 
-## Navigation dans le produit  {#product-navigation}
+## Navigation dans le produit {#product-navigation}
 
 La première fois que vous accédez à une console, un didacticiel de navigation du produit démarre. Prenez quelques instants pour cliquer ou appuyer sur divers éléments afin de vous familiariser avec le fonctionnement de base d’AEM.
 
@@ -51,12 +51,12 @@ Vous pouvez fermer le panneau de navigation globale en cliquant ou en appuyant s
 
 La navigation globale se compose de deux panneaux, représentés par des icônes dans la marge gauche de l’écran :
 
-* **[Navigation](#navigation-panel)** : représenté par une boussole  et le panneau par défaut lorsque vous vous connectez à AEM
+* **[Navigation](#navigation-panel)** : représenté par une boussole et le panneau par défaut lorsque vous vous connectez à AEM
 * **[Outils](#tools-panel)** : représenté par un marteau
 
 Les options disponibles dans ces panneaux sont décrites ci-dessous.
 
-### Panneau de navigation  {#navigation-panel}
+### Panneau de navigation {#navigation-panel}
 
 Panneau de navigation :
 
@@ -224,7 +224,7 @@ En raison des restrictions d’espace dans certaines fenêtres, la barre d’out
 >[!NOTE]
 Les icônes individuelles disponibles sont documentées par rapport à la console, à la fonction ou au scénario approprié.
 
-## Actions rapides  {#quick-actions}
+## Actions rapides {#quick-actions}
 
 Dans le [mode Carte](#card-view), certaines actions, en plus d’être disponibles dans la barre d’outils, le sont également sous la forme d’icônes d’actions rapides. Les icônes d’actions rapides sont disponibles pour un seul élément à la fois et évitent d’avoir à présélectionner l’action.
 
@@ -245,7 +245,7 @@ Vous pouvez afficher, parcourir et sélectionner (pour effectuer d’autres opé
 >[!NOTE]
 Par défaut, AEM Assets n’affiche pas les rendus d’origine des ressources dans l’interface utilisateur sous la forme de miniatures, et ce, quel que soit le mode. Si vous êtes administrateur, vous pouvez utiliser des incrustations pour configurer AEM Assets afin d’afficher les rendus d’origine sous la forme de miniatures.
 
-### Sélection de ressources  {#selecting-resources}
+### Sélection de ressources {#selecting-resources}
 
 La sélection d’une ressource en particulier dépend de la combinaison du mode et de l’appareil :
 
@@ -421,7 +421,7 @@ La colonne Chronologie permet d’effectuer les actions suivantes :
 
       * Commentaires
       * [Annotations](/help/sites-cloud/authoring/fundamentals/annotations.md)
-      * [Activités ](/help/sites-cloud/authoring/personalization/activities.md)
+      * [Activités](/help/sites-cloud/authoring/personalization/activities.md)
       * [Lancements](/help/sites-cloud/authoring/launches/overview.md)
       * [Versions](/help/sites-cloud/authoring/features/page-versions.md)
       * [Workflows](/help/sites-cloud/authoring/workflows/overview.md)
