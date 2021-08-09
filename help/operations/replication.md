@@ -33,7 +33,7 @@ Pour réaliser la réplication automatique dans ce cas, vous devez activer **Aut
 
 ![Configuration OSGi d’activation et de désactivation du déclenchement](/help/operations/assets/replication-on-off-trigger.png)
 
-### Gérer la publication  {#manage-publication}
+### Gérer la publication {#manage-publication}
 
 La méthode Gérer la publication propose plus d’options que Publication rapide, dont la possibilité d’inclure des pages enfants, de personnaliser les références ou encore de lancer n’importe quel workflow applicable. Elle offre également la possibilité de publier la page à une date ultérieure.
 
