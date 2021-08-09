@@ -3,7 +3,7 @@ title: Notes de mise à jour de la version 2020.3.0
 description: Notes de mise à jour de la version 2020.3.0
 exl-id: 0393c789-3999-4e51-be83-269d6eabd3f3
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '245'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ Suivez cette section pour en savoir plus sur les nouveautés et les mises à jou
 * Le journal de l’étape de création est désormais disponible pendant l’exécution de l’étape.
 * Certains messages de la page des détails d’exécution de pipeline ont été modifiés pour plus de clarté.
 
-### Correctifs  {#bug-fixes}
+### Correctifs {#bug-fixes}
 
 * Les fichiers journaux des étapes de test fonctionnel personnalisé et de produit ne pouvaient pas être téléchargés via l’interface utilisateur.
 * Lorsque la création du référentiel git d’un programme Cloud Service échouait, les utilisateurs ayant le rôle Gestionnaire de déploiement ne pouvaient parfois pas récupérer de cet échec.
