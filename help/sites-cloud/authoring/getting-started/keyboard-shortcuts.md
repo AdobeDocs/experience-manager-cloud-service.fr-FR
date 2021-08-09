@@ -1,15 +1,15 @@
 ---
-title: 'Raccourcis clavier pour les consoles  '
+title: Raccourcis clavier pour les consoles
 description: Utilisez ces raccourcis clavier pour gagner du temps lors de la création
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '346'
 ht-degree: 100%
 
 ---
 
-# Raccourcis clavier pour les consoles   {#keyboard-shortcuts-for-consoles}
+# Raccourcis clavier pour les consoles {#keyboard-shortcuts-for-consoles}
 
 Les raccourcis suivants sont disponibles pour les consoles Sites, Assets, Utilisateurs, Groupes, Projets et Fragments d’expérience.
 
@@ -25,7 +25,7 @@ Les raccourcis suivants sont disponibles pour les consoles Sites, Assets, Utilis
 | Consoles | `?` | Aide des raccourcis clavier |
 |  | `/` | Appeler la [recherche](/help/sites-cloud/authoring/getting-started/search.md) |
 |  | `Alt+`&lt;`Number`> | Choisir l’option de [sélecteur de rail](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) à afficher |
-|  | &grave; | Masquer le rail |
+|  | ` | Masquer le rail |
 |  | `e` | Modifier |
 |  | `p` | Propriétés |
 |  | `m` | Déplacer |
@@ -34,7 +34,7 @@ Les raccourcis suivants sont disponibles pour les consoles Sites, Assets, Utilis
 |  | `Backspace` | Supprimer |
 | Pages des propriétés | `Ctrl+s` | Enregistrer |
 
-Les combinaisons de touches sont répertoriées avec les touches de modification [Windows](#os-specific-modifier-keys).
+Les combinaisons de touches sont répertoriées avec les [touches de modification](#os-specific-modifier-keys) Windows.
 
 ## Touches de modification spécifiques aux systèmes d’exploitation {#os-specific-modifier-keys}
 
