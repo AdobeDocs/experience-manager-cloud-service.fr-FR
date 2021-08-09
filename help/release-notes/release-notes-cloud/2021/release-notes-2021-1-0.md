@@ -64,7 +64,7 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.1.0 es
 
 ### Correctifs {#bug-fixes-cloud-manager}
 
-* L’instance de production de ressources peut occasionnellement afficher l’état de Brand Portal sur la page de détails **Environnements** comme étant *En attente* sans permettre à l’utilisateur d’effectuer une action.
+* L’instance de production de ressources peut occasionnellement afficher le statut de Brand Portal sur la page de détails **Environnements** comme étant *En attente* sans permettre à l’utilisateur d’effectuer une action.
 
 * Lors d’une réactivation après mise en veille dans Cloud Manager, un message d’échec s’affichait parfois, même lorsque la réactivation était correctement lancée.
 
@@ -72,7 +72,7 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.1.0 es
 
 ## Outils de refactorisation du code {#code-refactoring-tools}
 
-### Nouveautés de [!DNL Code Refactoring Tools] {#what-is-new-crt}
+### Nouveautés d’[!DNL Code Refactoring Tools]  {#what-is-new-crt}
 
 * Publication de la nouvelle version du plug-in AIO-CLI. La dernière version de ce plug-in comprend des correctifs pour le Dispatcher Converter et le Repository Modernizer AEM et prend également en charge un nouvel utilitaire : Index Converter. Consultez [Expérience unifiée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=fr#benefits) pour en savoir plus sur ce plug-in.
 
@@ -107,8 +107,8 @@ Pour plus d’informations, voir la documentation [ici](https://experienceleague
 
 La date de publication de l’outil de transfert de contenu v1.2.2 est le 1er février 2021.
 
-### Nouveautés de [!DNL Content Transfer Tool] {#what-is-new-ctt}
+### Nouveautés d’[!DNL Content Transfer Tool]  {#what-is-new-ctt}
 
-* Fonctionnalité et interface utilisateur nouvelles ajoutées à l’outil de transfert de contenu - Outil de mappage des utilisateurs. Cette fonctionnalité mappe automatiquement les utilisateurs et les groupes existants avec leur identifiant IMS (Identity Management System) Adobe au cours de l’activité de migration de contenu. Pour plus d’informations, consultez [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr).
+* Fonctionnalité et interface utilisateur nouvelles ajoutées à l’outil de transfert de contenu – Outil de mappage des utilisateurs. Cette fonctionnalité mappe automatiquement les utilisateurs et les groupes existants avec leur identifiant IMS (Identity Management System) Adobe au cours de l’activité de migration de contenu. Pour plus d’informations, consultez [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr).
 * L’outil de transfert de contenu assure désormais la migration de tous les groupes et utilisateurs référencés dans le jeu de migration, y compris les enfants.
 * Les utilisateurs sont autorisés à sélectionner certains chemins sous `/etc` lors de la création de jeux de migration.
