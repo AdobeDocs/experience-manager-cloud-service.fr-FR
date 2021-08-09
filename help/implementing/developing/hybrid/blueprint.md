@@ -173,6 +173,7 @@ Par exemple :
 >
 >* `"new section"` : indique que l’élément en cours est l’espace réservé du conteneur.
 >* `"aem-Grid-newComponent"` : normalise le composant pour la création de dispositions.
+
 >
 
 
