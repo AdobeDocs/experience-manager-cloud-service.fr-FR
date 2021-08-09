@@ -45,7 +45,7 @@ Vous pouvez créer plusieurs configurations de cloud pour le même connecteur, s
 
 Une fois que vous avez configuré une connexion, vous pouvez créer la configuration de la structure d’intégration de traduction qui l’utilise.
 
-## Création d’une configuration de l’intégration de traduction  {#creating-a-translation-integration-configuration}
+## Création d’une configuration de l’intégration de traduction {#creating-a-translation-integration-configuration}
 
 Créez une configuration de structure d’intégration de traduction pour spécifier comment traduire le contenu. La configuration contient les informations suivantes :
 
