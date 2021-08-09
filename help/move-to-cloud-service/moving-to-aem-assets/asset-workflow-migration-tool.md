@@ -4,8 +4,8 @@ description: Outil de migration des workflows de ressources
 exl-id: 18490295-ead6-4691-8983-a6d4054e4264
 source-git-commit: d443ab32e5d2dddded58693483a2bda825ea3048
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '276'
+ht-degree: 76%
 
 ---
 
