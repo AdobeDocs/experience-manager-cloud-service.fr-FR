@@ -5,7 +5,7 @@ exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '446'
-ht-degree: 88%
+ht-degree: 96%
 
 ---
 
@@ -16,12 +16,12 @@ Cette page répertorie les ressources d’aide autonome sur l’implémentation 
 ## Principaux articles relatifs à l’implémentation {#key-articles}
 
 * [Gestion des environnements avec Cloud Manager](cloud-manager/manage-environments.md)
-* [Déploiement d’AEM en tant que Cloud Service](deploying/overview.md)
+* [Déploiement d’AEM as a Cloud Service](deploying/overview.md)
 * [Développement pour AEM as a Cloud Service](developing/introduction/development-guidelines.md)
-* [Parcours de développement sans tête](/help/journey-headless/developer/overview.md)
+* [Parcours de développement découplé](/help/journey-headless/developer/overview.md)
 * [Dispatcher sur AEM as a Cloud Service](dispatcher/overview.md)
 
-## Guides relatifs à Experience Manager as a Cloud Service {#aem-guides}
+## Guides de Experience Manager en tant que Cloud Service {#aem-guides}
 
 | Guide de l’utilisateur | Description |
 |---|---|
@@ -32,13 +32,13 @@ Cette page répertorie les ressources d’aide autonome sur l’implémentation 
 | [Guide de l’utilisateur relatif à la sécurité](/help/security/home.md) | Découvrez les sujets de sécurité importants concernant Experience Manager as a Cloud Service. |
 | [Intégration](/help/onboarding/home.md) | Ce guide résume la procédure à suivre pour commencer à utiliser Experience Manager as a Cloud Service, avec les informations d’accès et des informations importantes sur la protection des données. |
 | [Guide de l’utilisateur de Sites](/help/sites-cloud/home.md) | Découvrez comment créer avec Experience Manager Sites as a Cloud Service et l’administrer. |
-| [Guide de l’utilisateur d’Assets](/help/assets/home.md) | Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service. |
-| [Guide de l’utilisateur relatif à l’implémentation](/help/implementing/home.md) | Découvrez comment créer et personnaliser des expériences à l’aide AEM fonctionnalités puissantes. |
-| [Parcours de développement sans tête](/help/journey-headless/developer/overview.md) | Découvrez ce parcours guidé à travers les puissantes et flexibles fonctionnalités sans interface d’AEM pour vous préparer à votre premier projet sans interface. |
+| [Guide de l’utilisateur d’Assets](/help/assets/home.md) | Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service. |
+| [Guide de l’utilisateur relatif à l’implémentation](/help/implementing/home.md) | Découvrez comment créer et personnaliser des expériences à l’aide des fonctionnalités puissantes d’AEM. |
+| [Parcours de développement découplé](/help/journey-headless/developer/overview.md) | Découvrez cette visite guidée à travers les puissantes et flexibles fonctionnalités découplées d’AEM pour vous préparer à votre premier projet découplé. |
 | [Transition vers AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Découvrez le parcours de transition vers Cloud Service. |
 | [Guide de l’utilisateur des connecteurs](/help/connectors/home.md) | Découvrez comment intégrer des connecteurs dans Experience Manager as a Cloud Service. |
 | [Guide de l’utilisateur relatif aux opérations](/help/operations/home.md) | Découvrez les opérations principales d’Experience Manager as a Cloud Service, telles que les tâches d’indexation et de maintenance. |
-| [Guide de l’utilisateur relatif au commerce](/help/commerce-cloud/home.md) | Découvrez Commerce Integration Framework dans AEM as a Cloud Service. |
+| [Guide de l’utilisateur de Commerce](/help/commerce-cloud/home.md) | Découvrez Commerce Integration Framework dans AEM as a Cloud Service. |
 
 ## Autres ressources relatives à Experience Manager {#other-resources}
 
