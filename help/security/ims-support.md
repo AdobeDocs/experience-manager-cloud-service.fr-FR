@@ -5,7 +5,7 @@ exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: c71a27961b469f8f729394b80a804321faf597f4
 workflow-type: tm+mt
 source-wordcount: '2007'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 91%
 
 >[!TIP]
 >
->Consultez notre cours Experience League [Configuration de l’accès à l’AEM pour les administrateurs](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) pour une présentation de la manière dont les utilisateurs s’authentifient à l’aide d’Adobe IMS pour AEM en tant que Cloud Service et de la manière dont les utilisateurs, groupes d’utilisateurs et profils de produits d’Adobe sont utilisés pour contrôler l’accès à l’ et à ses fonctionnalités et fonctionnalités. Adobe ID requis.
+>Consultez notre cours Experience League [Configuration de l’accès AEM pour les administrateurs](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem). Vous y trouverez une présentation de la manière dont les utilisateurs s’authentifient à l’aide d’Adobe IMS pour AEM as a Cloud Service et dont les utilisateurs, groupes d’utilisateurs et profils de produits d’Adobe sont utilisés pour contrôler l’accès à AEM et à ses fonctionnalités. Adobe ID requis.
 
 ## Principales caractéristiques {#key-highlights}
 
@@ -32,7 +32,7 @@ AEM as a Cloud Service ne prend en charge l’authentification IMS que pour les 
 
 ## Architecture {#architecture}
 
-L’authentification IMS fonctionne à l’aide du protocole OAuth entre AEM et le point de terminaison Adobe IMS. Une fois qu’un utilisateur a été ajouté à IMS et possède une identité Adobe, il peut se connecter au service de création AEM à l’aide des informations d’identification IMS.
+L’authentification IMS fonctionne à l’aide du protocole OAuth entre AEM et le point d’entrée Adobe IMS. Une fois qu’un utilisateur a été ajouté à IMS et possède une identité Adobe, il peut se connecter au service de création AEM à l’aide des informations d’identification IMS.
 
 Le flux d’identifiant de connexion utilisateur est indiqué ci-dessous, l’utilisateur sera redirigé vers IMS et éventuellement vers le fournisseur d’identité client pour la SSO, puis redirigé vers AEM.
 
@@ -128,15 +128,15 @@ Vous trouverez ci-dessous les principales configurations OSGI qui doivent être 
 
 ### Gestion des produits et accès utilisateur dans Admin Console {#managing-products-and-user-access-in-admin-console}
 
-Lorsque l’administrateur de produit se connecte à Admin Console, il voit plusieurs instances de l’AEM en tant que contexte de produit Cloud Service, comme illustré ci-dessous. Par exemple, sélectionnez l’un des produits de la page **Aperçu** :
+Lorsque l’administrateur du produit se connecte à Admin Console, il voit plusieurs instances de contexte du produit AEM as a Cloud Service, comme illustré ci-dessous. Par exemple, sélectionnez l’un des produits de la page **Aperçu** :
 
 ![Connexion aux instances](/help/security/assets/ims6.png)
 
-Une liste des instances existantes s’affiche :
+La liste des instances existantes s’affiche :
 
 ![Instances login2](/help/security/assets/ims7.png)
 
-Sous chaque instance Product Context, il y aura des instances couvrant les services Auteur ou Publication dans les environnements de production, d’évaluation ou de développement. Chaque instance sera associée aux rôles Profils de produit ou Cloud Manager. Ces profils de produit sont utilisés pour affecter l’accès aux utilisateurs et aux groupes avec les privilèges requis.
+Sous chaque instance de contexte de produit, il y a des instances couvrant les services Auteur ou Publication dans les environnements de production, d’évaluation ou de développement. Chaque instance est associée aux rôles Profils de produit ou Cloud Manager. Ces profils de produits servent à attribuer l’accès aux utilisateurs et aux groupes avec le privilège requis.
 
 Le profil **Administrator_xxx** sera utilisé pour accorder des privilèges d’administrateur à l’instance AEM associée, tandis que le profil **User_xxx** sera utilisé pour ajouter des utilisateurs ordinaires.
 
