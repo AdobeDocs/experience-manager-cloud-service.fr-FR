@@ -14,7 +14,7 @@ exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72b
 source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
 source-wordcount: '2549'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -36,7 +36,7 @@ Dans ce tutoriel, un nouveau style ressemblant à une carte sera mis en œuvre p
 
 Un environnement de développement local est nécessaire pour suivre ce tutoriel. Cela inclut une instance AEM en cours d’exécution configurée et connectée à une instance Magento. Examinez les exigences et les étapes de la [configuration d’un développement local avec le SDK AEM as a Cloud Service](../develop.md).
 
-## Cloner le projet Venia {#clone-venia-project}
+## Clonage du projet Venia {#clone-venia-project}
 
 Nous allons cloner le [projet Venia](https://github.com/adobe/aem-cif-guides-venia) puis remplacer les styles par défaut.
 
@@ -65,7 +65,7 @@ Nous allons cloner le [projet Venia](https://github.com/adobe/aem-cif-guides-ven
 
    ![Storefont configuré avec le thème Venia](../assets/style-cif-component/venia-store-configured.png)
 
-## Bibliothèques clientes et module ui.frontend {#introduction-to-client-libraries}
+## Bibliothèques client et module ui.frontend {#introduction-to-client-libraries}
 
 Le code CSS et JavaScript responsable du rendu du thème/des styles du storefront est géré dans AEM par une [bibliothèque cliente](/help/implementing/developing/introduction/clientlibs.md) (ou clientlib, en court). Les bibliothèques clientes offrent un mécanisme permettant d’organiser le code CSS et Javascript dans le code d’un projet, puis de diffuser sur la page.
 
@@ -135,7 +135,7 @@ Apportez ensuite une légère modification au style du teaser pour voir comment 
 
    ![Fichier CSS du site compilé](../assets/style-cif-component/comiled-site-css.png)
 
-   Le fichier est la version compilée et minimisée de tous les fichiers Sass du projet.
+   Le fichier constitue la version compilée et minimisée de tous les fichiers Sass du projet.
 
    >[!NOTE]
    >
@@ -227,7 +227,7 @@ Vérifiez ensuite l’inclusion des bibliothèques clientes sur la page.
 
    ![Afficher comme publié(e) ](../assets/style-cif-component/view-as-published.png)
 
-   La page s’ouvre sans aucun code javascript AEM Author chargé, lequel apparaîtrait sur le site publié. Notez que le paramètre de requête `?wcmmode=disabled` est ajouté à l’URL. Lors du développement du code CSS et JavaScript, il est recommandé d’utiliser ce paramètre pour simplifier la page sans intervention d’AEM Author.
+   La page s’ouvre sans aucun code javascript AEM Author chargé, lequel apparaîtrait sur le site publié. Notez que le paramètre de requête `?wcmmode=disabled` est annexé à l’URL. Lors du développement du code CSS et JavaScript, il est recommandé d’utiliser ce paramètre pour simplifier la page sans intervention d’AEM Author.
 
 1. Affichez la source de la page ; vous devriez pouvoir constater que plusieurs bibliothèques clientes sont incluses :
 
@@ -286,7 +286,7 @@ Il existe plusieurs options pour inclure une bibliothèque côté client. Examin
 
    Utiliser des stratégies de modèle et de page pour gérer l’inclusion des bibliothèques clientes présente l’avantage de permettre de changer la stratégie par modèle. Par exemple, il se peut que vous gériez deux marques différentes au sein de la même instance AEM. Chaque marque comporte son propre style ou *thème*, mais les bibliothèques et le code de base sont les mêmes. Autre exemple : si vous disposez d’une bibliothèque cliente plus grande que vous ne souhaitez afficher que sur certaines pages, vous pouvez créer une stratégie de page unique réservée à ce modèle.
 
-## Développement Webpack local {#local-webpack-development}
+## Développement de webpack local {#local-webpack-development}
 
 Dans l’exercice précédent, nous avons apporté une mise à jour à un fichier Sass dans le module `ui.frontend`, puis, après avoir créé Maven, nous avons déployé les modifications dans AEM. Nous allons maintenant nous pencher sur l’utilisation d’un serveur webpack-dev-server pour développer rapidement les styles front-end.
 
