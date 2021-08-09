@@ -5,7 +5,7 @@ exl-id: d631d6df-7507-4752-862b-9094af9759a0
 source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
 source-wordcount: '1847'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Ce document décrit comment utiliser Maven pour gérer ces tâches. Cependant, i
 
 ## Modules et structure de projet AEM {#aem-project-structure}
 
-AEM as a Cloud Service adhère aux dernières bonnes pratiques en matière de gestion de modules et de structure de projet, telles qu’elles sont implémentées par le dernier AEM Project Archetype.
+AEM as a Cloud Service adhère aux bonnes pratiques les plus récentes en matière de gestion de modules et de structure de projet, telles qu’elles sont implémentées par le dernier archétype de projet AEM.
 
 >[!TIP]
 >
@@ -106,7 +106,7 @@ Crée un module de contenu déjà défini sur une instance AEM.
 
 #### Paramètres {#parameters}
 
-Tous les paramètres de l’objectif build sont décrits dans la section [Paramètres communs](#common-parameters).
+Tous les paramètres de l’objectif de build sont décrits dans la section [Paramètres communs](#common-parameters).
 
 ### install {#install}
 
