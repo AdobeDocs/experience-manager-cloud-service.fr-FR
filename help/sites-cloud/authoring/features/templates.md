@@ -132,7 +132,7 @@ Vous devez créer un dossier de modèles pour votre projet afin de contenir les 
 >
 >Adobe ne recommande pas d’avoir plus de 1 000 modèles en raison des impacts potentiels sur le rendement.
 
-### Définition des propriétés des modèles - Créateur de modèles  {#defining-template-properties-template-author}
+### Définition des propriétés des modèles – Créateur de modèles {#defining-template-properties-template-author}
 
 Un modèle peut posséder les propriétés suivantes :
 
@@ -167,7 +167,7 @@ Pour définir la miniature du modèle :
    * Si l’aperçu ne vous satisfait pas, cliquez ou appuyez sur **Effacer** pour télécharger une autre image ou pour générer à nouveau la miniature.
 1. Lorsque vous êtes satisfait de la miniature, cliquez ou appuyez sur **Enregistrer et Fermer**.
 
-### Activation et autorisation d’un modèle - Créateur de modèles  {#enabling-and-allowing-a-template-template-author}
+### Activation et autorisation d’un modèle – Créateur de modèles {#enabling-and-allowing-a-template-template-author}
 
 Pour utiliser un modèle lors de la création d’une page, vous devez effectuer les deux tâches suivantes :
 
@@ -226,7 +226,7 @@ Dans la mesure où il est référencé lors du rendu d’une page, le modèle (t
 1. Sélectionnez les **Politiques de contenu** à publier en tandem.
 1. Sélectionnez **Publier** dans la barre d’outils pour terminer l’action.
 
-## Modification des modèles - Créateurs de modèles  {#editing-templates-template-authors}
+## Modification des modèles – Créateurs de modèles {#editing-templates-template-authors}
 
 Lors de la création ou de la modification d’un modèle, vous pouvez définir différents aspects. La modification de modèles est similaire à la création de pages.
 
@@ -268,7 +268,7 @@ Lorsqu’un composant a été déverrouillé, vous pouvez définir le [contenu i
 >
 >En mode **Contenu initial** (et dans les pages créées), les composants déverrouillés qui possèdent un parent accessible (c’est-à-dire, les composants dans un conteneur de mises en page) peuvent être supprimés.
 
-#### Disposition {#template-layout}
+#### Mise en page {#template-layout}
 
 Vous pouvez prédéfinir la [disposition](#editing-a-template-layout-template-author) du modèle pour les formats d’appareil de votre choix. Le mode **Disposition** pour la création de modèles comporte la même fonctionnalité que le mode [**Disposition** pour la création de pages](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
 
@@ -544,7 +544,7 @@ Vous pouvez définir la disposition du modèle pour différents appareils. La [m
 
 ![Modifier la mise en page d’un modèle](/help/sites-cloud/authoring/assets/templates-edit-layout.png)
 
-### Modification d’un modèle - Conception de page - Créateur/développeur de modèles {#editing-a-template-page-policy-template-author-developer}
+### Modification d’un modèle – Conception de page – Créateur/développeur de modèles {#editing-a-template-page-policy-template-author-developer}
 
 La stratégie de page, y compris les bibliothèques clientes requises, est conservée sous l’option **Stratégie de page** du menu **Informations sur la page**.
 
