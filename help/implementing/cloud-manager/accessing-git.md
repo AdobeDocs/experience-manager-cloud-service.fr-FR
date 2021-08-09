@@ -5,7 +5,7 @@ description: Cette page vous explique comment accéder au référentiel Git et l
 seo-description: Consultez cette page pour découvrir comment accéder à votre référentiel Git et le gérer.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '218'
 ht-degree: 100%
 
@@ -38,7 +38,7 @@ Les points importants à prendre en compte pour gérer votre Git dans Cloud Man
 
 * **URL** : URL du référentiel
 * **Nom d’utilisateur** : nom d’utilisateur
-* **Mot de passe** : valeur affichée lorsque vous cliquez sur le bouton **Générer un mot de passe** .
+* **Mot de passe** : valeur affichée lorsque vous cliquez sur le bouton **Générer un mot de passe**.
 
 
 >[!NOTE]
