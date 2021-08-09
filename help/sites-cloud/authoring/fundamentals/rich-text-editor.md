@@ -1,9 +1,9 @@
 ---
-title: Utilisation de l’éditeur de texte enrichi dans  [!DNL Adobe Experience Manager]  pour créer du contenu.
+title: Utilisation de l’éditeur de texte enrichi dans [!DNL Adobe Experience Manager] pour créer du contenu.
 description: Utilisation de l’éditeur de texte enrichi [!DNL Experience Manager] pour créer du contenu.
 exl-id: 15c175f8-11de-4475-87a9-920219a4c004
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '286'
 ht-degree: 100%
 
