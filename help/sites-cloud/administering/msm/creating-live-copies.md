@@ -21,7 +21,7 @@ Une configuration de plan directeur identifie un site web existant que vous souh
 
 >[!TIP]
 >
->Les configurations de plan directeur permettent d’appliquer des modifications de contenu à des Live Copies. Voir [Live Copies - Source, plans directeurs et configurations de plan directeur](overview.md#source-blueprints-and-blueprint-configurations).
+>Les configurations de plan directeur permettent d’appliquer des modifications de contenu à des Live Copies. Voir [Live Copies – Source, plans directeurs et configurations de plan directeur](overview.md#source-blueprints-and-blueprint-configurations).
 
 Lorsque vous créez une configuration de plan directeur, vous sélectionnez un modèle qui définit la structure interne du plan directeur. Le modèle de plan directeur par défaut suppose que le site web source présente les caractéristiques suivantes :
 
@@ -68,7 +68,7 @@ Pour créer une configuration de plan directeur :
 
 1. L’option **Créer** crée la configuration de plan directeur selon votre spécification.
 
-### Modification ou suppression d’une configuration de plan directeur  Localement{#editing-or-deleting-a-blueprint-configuration}
+### Modification ou suppression d’une configuration de plan directeur Localement{#editing-or-deleting-a-blueprint-configuration}
 
 Vous pouvez modifier ou supprimer une configuration de plan directeur existante :
 
@@ -137,7 +137,7 @@ Pour créer une Live Copy :
 1. (Facultatif) Pour spécifier une ou plusieurs configurations de déploiement à utiliser pour la Live Copy, utilisez la liste déroulante **Configurations de déploiement** pour les sélectionner. Les configurations sélectionnées s’affichent sous le sélecteur déroulant.
 1. Cliquez ou appuyez sur **Créer**. Un message de confirmation s’affiche, dans lequel vous pouvez sélectionner **Ouvrir** ou **Terminé**.
 
-### Création d’une Live Copy d’un site à partir d’une configuration de plan directeur  {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
+### Création d’une Live Copy d’un site à partir d’une configuration de plan directeur {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
 Créez une Live Copy à l’aide d’une configuration de plan directeur pour créer un site en fonction du contenu de plan directeur (source). Lorsque vous créez une Live Copy à partir d’une configuration de plan directeur, vous sélectionnez une ou plusieurs branches de langue de la source de plan directeur à copier, puis vous sélectionnez les chapitres à copier à partir des branches de langue. Consultez [Création d’une configuration de plan directeur](#creating-a-blueprint-configuration).
 
@@ -176,7 +176,7 @@ Pour créer une Live Copy d’un site à partir d’une configuration de plan d
 1. Utilisez la liste déroulante **Chapitres initiaux** pour sélectionner les sections du plan directeur à inclure dans la Live Copy. Tous les chapitres disponibles sont inclus par défaut mais peuvent être supprimés.
 1. Saisissez les valeurs des propriétés restantes, puis sélectionnez **Créer**. Dans la boîte de dialogue de confirmation, sélectionnez **Terminé** pour retourner à la console **Sites** ou **Ouvrir le site** pour ouvrir la page racine du site.
 
-### Création d’une Live Copy dans une Live Copy (configuration de plan directeur)  {#creating-a-live-copy-inside-a-live-copy-blueprint-configuration}
+### Création d’une Live Copy dans une Live Copy (configuration de plan directeur) {#creating-a-live-copy-inside-a-live-copy-blueprint-configuration}
 
 Lorsque vous créez une Live Copy à l’intérieur de la Live Copy existante (créée avec une configuration de plan directeur), vous pouvez insérer n’importe quelle copie de langue ou n’importe quel chapitre qui n’était pas inclus lors de la création initiale de la Live Copy.
 
@@ -225,7 +225,7 @@ Déployez une page de plan directeur pour pousser les modifications de contenu v
 >
 >Ces [conflits doivent être traités et résolus lors du déploiement](rollout-conflicts.md).
 
-#### Déploiement d’un plan directeur à partir des propriétés de page  {#rolling-out-a-blueprint-from-page-properties}
+#### Déploiement d’un plan directeur à partir des propriétés de page {#rolling-out-a-blueprint-from-page-properties}
 
 1. Dans la console **Sites**, sélectionnez la page dans le plan directeur et ouvrez les propriétés.
 1. Ouvrez l’onglet **Plan directeur**.
@@ -307,7 +307,7 @@ Synchronisez une Live Copy pour extraire des modifications de la source vers la
 
    Une confirmation est demandée ; utilisez **Synchroniser** pour continuer.
 
-#### Synchronisation d’une Live Copy à partir de l’aperçu de la Live Copy  {#synchronize-a-live-copy-from-the-live-copy-overview}
+#### Synchronisation d’une Live Copy à partir de l’aperçu de la Live Copy {#synchronize-a-live-copy-from-the-live-copy-overview}
 
 L’[action Synchroniser est également disponible dans l’aperçu de la Live Copy](live-copy-overview.md#using-the-live-copy-overview), lorsqu’une page Live Copy est sélectionnée.
 
@@ -339,7 +339,7 @@ Pour modifier le contenu de Live Copy, vous pouvez :
 >
 >Ces [conflits doivent être traités et résolus lors du déploiement](rollout-conflicts.md).
 
-### Ajout de composants à une page Live Copy  {#adding-components-to-a-live-copy-page}
+### Ajout de composants à une page Live Copy {#adding-components-to-a-live-copy-page}
 
 Vous pouvez ajouter des composants à une page Live Copy à tout moment. Le statut d’héritage de la Live Copy et de son système de paragraphes ne conditionne pas votre capacité à ajouter des composants.
 
@@ -457,11 +457,11 @@ Pour spécifier ou changer la profondeur :
    >
    >Le passage à une Live Copy superficielle prend effet immédiatement et est irréversible.
    >
-   >Voir [Live Copies - Composition](overview.md#live-copies-composition) pour plus d’informations.
+   >Voir [Live Copies – Composition](overview.md#live-copies-composition) pour plus d’informations.
 
 1. Cliquez ou appuyez sur **Enregistrer** pour conserver vos mises à jour.
 
-### Annulation de l’héritage pour un composant  {#cancelling-inheritance-for-a-component}
+### Annulation de l’héritage pour un composant {#cancelling-inheritance-for-a-component}
 
 Annulez l’héritage Live Copy d’un composant afin que ce composant ne soit plus synchronisé avec le composant source. Vous pouvez activer l’héritage ultérieurement si nécessaire.
 
@@ -507,7 +507,7 @@ Utilisez la procédure suivante pour annuler l’héritage du système de paragr
 1. Faites glisser un composant existant vers un nouvel emplacement sur la page.
 1. Dans la boîte de dialogue **Annuler l’héritage**, confirmez l’action en cliquant sur **Oui**.
 
-### Remplacement des propriétés d’une page Live Copy  {#overriding-properties-of-a-live-copy-page}
+### Remplacement des propriétés d’une page Live Copy {#overriding-properties-of-a-live-copy-page}
 
 Par défaut, les propriétés de page d’une page Live Copy sont héritées de la page source et ne sont pas modifiables.
 
@@ -532,7 +532,7 @@ Vous pourrez par la suite réactiver l’héritage pour une propriété, si néc
 
 1. Dans la boîte de dialogue de confirmation **Annuler l’héritage**, cliquez ou appuyez sur **Oui**.
 
-### Rétablissement des propriétés d’une page de la Live Copy  {#revert-properties-of-a-live-copy-page}
+### Rétablissement des propriétés d’une page de la Live Copy {#revert-properties-of-a-live-copy-page}
 
 Pour activer l’héritage d’une propriété, appuyez ou cliquez sur l’icône **Inverser l’héritage** qui apparaît en regard de la propriété.
 
@@ -557,7 +557,7 @@ La réinitialisation affecte les modifications que vous avez apportées aux prop
 
 1. Dans la boîte de dialogue **Réinitialiser la Live Copy**, confirmez en cliquant sur **Réinitialiser**.
 
-#### Réinitialisation d’une page Live Copy à partir de l’aperçu de la Live Copy  {#reset-a-live-copy-page-from-the-live-copy-overview}
+#### Réinitialisation d’une page Live Copy à partir de l’aperçu de la Live Copy {#reset-a-live-copy-page-from-the-live-copy-overview}
 
 L’action [**Réinitialiser** est également disponible dans l’aperçu de la Live Copy](live-copy-overview.md#using-the-live-copy-overview), lorsqu’une page Live Copy est sélectionnée.
 
@@ -638,7 +638,7 @@ Pour désolidariser une Live Copy :
 
 1. Une boîte de dialogue de confirmation s’affiche. Sélectionnez **Désolidariser** pour exécuter l’opération.
 
-### Désolidarisation d’une page Live Copy à partir de l’aperçu de la Live Copy  {#detach-a-live-copy-page-from-the-live-copy-overview}
+### Désolidarisation d’une page Live Copy à partir de l’aperçu de la Live Copy {#detach-a-live-copy-page-from-the-live-copy-overview}
 
 L’[action Désolidariser est également disponible dans l’aperçu de la Live Copy](live-copy-overview.md#using-the-live-copy-overview), lorsqu’une page Live Copy est sélectionnée.
 
