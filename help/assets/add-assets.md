@@ -221,7 +221,7 @@ Les détails techniques du protocole et des API de chargement, ainsi que les lie
 
 * Certaines méthodes de chargement n’empêchent pas le chargement de ressources dont les noms de fichier contiennent des [caractères interdits](#filename-handling). Les caractères sont remplacés par le symbole `-`.
 
-* Le téléchargement de ressources à l’aide du navigateur prend uniquement en charge les listes de fichiers plats et non les hiérarchies de dossiers imbriqués. Pour charger toutes les ressources dans un dossier imbriqué, utilisez l’[appli de bureau ](#upload-assets-desktop-clients).
+* Le téléchargement de ressources à l’aide du navigateur prend uniquement en charge les listes de fichiers plats et non les hiérarchies de dossiers imbriqués. Pour charger toutes les ressources dans un dossier imbriqué, utilisez l’[appli de bureau](#upload-assets-desktop-clients).
 
 <!-- TBD: Link to file name handling in DA docs when it is documented. 
 -->
