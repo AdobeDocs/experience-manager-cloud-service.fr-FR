@@ -95,7 +95,7 @@ Outre l’affichage des annotations, le mode Annotation vous permet de créer, m
 >
 >La définition d’un type de composant individuel détermine s’il est possible d’ajouter une annotation sur des instances de ce composant.
 
-## Suppression d’annotations et de schémas {#deleting-annotations}
+## Suppression d’annotations et d’esquisses {#deleting-annotations}
 
 Les annotations et leurs schémas associés peuvent être supprimés.
 
@@ -113,7 +113,7 @@ Les annotations et leurs schémas associés peuvent être supprimés.
 >
 >La suppression d’un composant supprime toutes les annotations et tous les schémas associés à cette ressource, quelle que soit leur position sur la page dans son ensemble.
 
-## Suppression de schémas uniquement {#deleting-sketches}
+## Suppression des schémas uniquement {#deleting-sketches}
 
 Vous pouvez supprimer uniquement des schémas spécifiques au lieu de l’ensemble de l’annotation avec tous les schémas associés.
 
