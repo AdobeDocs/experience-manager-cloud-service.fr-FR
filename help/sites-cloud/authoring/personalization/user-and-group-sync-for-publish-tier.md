@@ -1,11 +1,11 @@
 ---
 title: 'Enregistrement, connexion et profil utilisateur '
-description: En savoir plus sur l’enregistrement, la connexion, les données utilisateur et la synchronisation de groupe pour AEM en tant que Cloud Service
+description: En savoir plus sur l’enregistrement, la connexion, les données utilisateur et la synchronisation de groupe pour AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 source-git-commit: 4d76d8bac41e19168abb1819841dfc62be07ea0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1177'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 94%
 
 ## Présentation {#introduction}
 
-Les applications Web offrent souvent des fonctionnalités de gestion de compte pour que les utilisateurs finaux s’enregistrent sur un site Web, ce qui conserve leurs données utilisateur, leur permettant de se connecter ultérieurement et de profiter d’une expérience cohérente. Cet article décrit les concepts suivants pour AEM en tant que Cloud Service :
+Les applications web offrent souvent des fonctions de gestion de compte permettant aux utilisateurs finaux de s’inscrire sur un site web. Ils peuvent ainsi conserver leurs informations de données utilisateur pour se connecter ultérieurement et bénéficier d’une expérience cohérente. Cet article décrit les concepts suivants pour AEM as a Cloud Service :
 
 * L’enregistrement
 * La connexion
@@ -98,7 +98,7 @@ Les informations de profil utilisateur peuvent être écrites et lues de deux ma
 
 ### Magasins de données tiers {#third-party-data-stores}
 
-Les données de l’utilisateur final peuvent être envoyées à des fournisseurs tiers, comme les systèmes de gestion de la relation client (CRM). Elles sont récupérées par le biais d’API lors de la connexion de l’utilisateur à AEM et conservées (ou actualisées) sur le nœud de profil de l’utilisateur AEM, puis utilisées le cas échéant par AEM. 
+Les données de l’utilisateur final peuvent être envoyées à des fournisseurs tiers, comme les systèmes de gestion de la relation client (CRM). Elles sont récupérées par le biais d’API lors de la connexion de l’utilisateur à AEM et conservées (ou actualisées) sur le nœud de profil de l’utilisateur AEM, puis utilisées le cas échéant par AEM.
 
 Il est possible d’accéder en temps réel à des services tiers pour récupérer des attributs de profil. Toutefois, il est important de s’assurer que cela n’ait pas d’impact significatif sur le traitement des demandes dans AEM.
 
