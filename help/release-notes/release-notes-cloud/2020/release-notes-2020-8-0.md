@@ -9,14 +9,14 @@ ht-degree: 98%
 
 ---
 
-# Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
+# Notes de mise à jour pour [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
 
 La section suivante décrit les notes de mise à jour générales d’Experience Manager as a Cloud Service 2020.8.0.
 
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### Nouveautés de [!DNL Sites] {#what-is-new-sites}
+### Nouveautés d’[!DNL Sites]  {#what-is-new-sites}
 
 * Possibilité de [restaurer les pages et les sous-pages (arborescences de page) dans une version antérieure](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions).
 
@@ -25,7 +25,7 @@ La section suivante décrit les notes de mise à jour générales d’Experience
 
 ## [!DNL Adobe Experience Manager Assets] en tant que Cloud Service {#assets}
 
-### Nouveautés de [!DNL Assets] {#what-is-new-assets}
+### Nouveautés d’[!DNL Assets]  {#what-is-new-assets}
 
 * Le transcodage vidéo est désormais pris en charge avec les microservices de ressources. Une nouvelle section de la configuration des [!UICONTROL Profils de traitement] permet de définir le débit et les dimensions d’une vidéo. Le format de sortie est MP4 avec le codec H.264. Pour plus d’informations, voir [Gestion des ressources vidéo](/help/assets/manage-video-assets.md#transcode-video). Pour accéder à d’autres options de transcodage et à la diffusion vidéo, utilisez le module complémentaire [!DNL Dynamic Media].
 
@@ -55,7 +55,7 @@ La section suivante décrit les notes de mise à jour générales d’Experience
 
 * La version 2.0.3 d’[!DNL AEM Desktop app] est désormais disponible. Elle améliore la compatibilité avec le Service Pack [!DNL Experience Manager] 6.5.5 et comporte une liste de compatibilité du système d’exploitation client mise à jour. Les versions de [!DNL Windows] 7 et [!DNL macOS] antérieures à la version 10.14 ne sont pas prises en charge.
 
-### Correctifs d’[!DNL Assets] {#bugs-fixed}
+### Correctifs d’[!DNL Assets]  {#bugs-fixed}
 
 * Les options Mettre en relation et Ne plus mettre en relation ne répondent pas lorsque l’utilisateur clique pour la première fois. (CQ-4299022)
 * Lors du téléchargement d’une ressource, si vous sélectionnez l’option permettant de le recevoir par courrier électronique, l’email n’est pas envoyé. (CQ-4299146)
@@ -68,7 +68,7 @@ La section suivante décrit les notes de mise à jour générales d’Experience
 
 * Les sélecteurs de produits et de catégories ont été améliorés pour permettre aux spécialistes du marketing de sélectionner un produit par le biais de l’unité de gestion de stock (SKU) ou une catégorie à l’aide de l’identifiant de catégorie.
 
-## Cloud Manager {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 ### Date de publication {#release-date-cm}
 
