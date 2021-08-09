@@ -3,7 +3,7 @@ title: Présentation de l’analyseur de bonnes pratiques
 description: Présentation de l’analyseur de bonnes pratiques
 exl-id: 2c45f527-3bcd-489b-a3be-b5c6f371429e
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '351'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ L’outil génère un rapport destiné à identifier les domaines de reconfigura
 
 ## Rapport de l’analyseur de bonnes pratiques {#bpa-report}
 
-Le rapport de l’analyseur de bonnes pratiques permet de mieux comprendre le degré de préparation général à la mise à niveau. Ses résultats sont organisés par catégories de problèmes qui devront être résolus avant un déploiement réussi dans AEM as a Cloud Service.
+Le rapport de l’analyseur des bonnes pratiques permet de mieux comprendre le degré de préparation général à la mise à niveau. Ses résultats sont organisés par catégories de problèmes qui devront être résolus avant un déploiement réussi dans AEM as a Cloud Service.
 
 Le rapport de l’analyseur de bonnes pratiques comprend les catégories suivantes :
 
@@ -35,6 +35,6 @@ Le rapport de l’analyseur de bonnes pratiques comprend les catégories suivant
 Les liens contenus dans le rapport de l’analyseur de bonnes pratiques apportent des informations supplémentaires sur les catégories, les implications possibles et les solutions associées à ces catégories.
 
 >[!NOTE]
->Le rapport accélère le processus d’évaluation du délai et du coût de la transition vers AEM as a Cloud Service en apportant des informations qui, en son absence, auraient dû être collectées et évaluées manuellement.
+>Le rapport d’analyse des meilleures pratiques accélère le processus d’évaluation du délai et du coût de la transition vers AEM as a Cloud Service en apportant des informations qui, en son absence, auraient dû être collectées et évaluées manuellement.
 
 Vous pouvez également télécharger le rapport de l’analyseur de bonnes pratiques depuis votre instance AEM. Reportez-vous à la section [Affichage du rapport de l’analyseur de bonnes pratiques](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) pour plus d’informations.
