@@ -3,9 +3,9 @@ title: SPA et rendu côté serveur
 description: L’utilisation du rendu côté serveur dans votre SPA peut accélérer le chargement initial de la page, puis transmettre plus de rendu au client.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
 source-git-commit: 4965bd30c02536efb81a26fff8da6e5f75dbfae4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1502'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -44,9 +44,9 @@ Les sections suivantes décrivent comment Adobe I/O Runtime peut être utilisé 
 
 >[!NOTE]
 >
->Adobe recommande un espace de travail Adobe I/O Runtime distinct par environnement (évaluation, production, test, etc.). Cela permet d’obtenir des modèles de cycle de vie de développement de systèmes classiques avec différentes versions d’une seule application déployée dans différents environnements. Pour plus d’informations, consultez le document [CI/CD pour les applications Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md) .
+>Adobe recommande un espace de travail Adobe I/O Runtime distinct par environnement (évaluation, production, test, etc.). Il est ainsi possible d’obtenir des modèles de cycle de vie de développement de systèmes (SDLC) types, avec différentes versions d’une application unique, déployée dans différents environnements. Pour plus d’informations, consultez le document [CI/CD pour les applications Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md).
 >
->Un espace de travail distinct n’est pas nécessaire par instance (auteur, publication), sauf s’il existe des différences dans l’implémentation du runtime par type d’instance.
+>Un espace de travail distinct n’est pas nécessaire pour chaque instance (auteur, publication), sauf s’il existe des différences dans l’implémentation de l’environnement d’exécution (runtime) par type d’instance.
 
 ## Configuration du moteur de rendu distant {#remote-content-renderer-configuration}
 
@@ -181,11 +181,11 @@ La configuration du gestionnaire par défaut doit être établie comme décrit d
 Pour qu’un servlet récupère et renvoie du contenu pouvant être injecté dans la page :
 
 1. Assurez-vous que votre serveur distant est accessible.
-1. Ajoutez l’un des fragments de code suivants au modèle HTML d’un composant AEM.
+1. Ajoutez l’un des fragments de code suivants au modèle HTL d’un composant AEM.
 1. Vous pouvez éventuellement créer ou modifier les configurations OSGi.
 1. Parcourir le contenu de votre site
 
-En général, le modèle HTML d’un composant de page est le principal destinataire d’une telle fonctionnalité.
+En général, le modèle HTL d’un composant de page est le principal destinataire d’une telle fonctionnalité.
 
 ```html
 <sly data-sly-resource="${resource @ resourceType='cq/remote/content/renderer/request/handler'}" />
