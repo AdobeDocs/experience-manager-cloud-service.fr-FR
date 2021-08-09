@@ -33,7 +33,7 @@ La présentation repose sur les fonctionnalités AEM standard et l’exemple d�
 >
 >Tout projet AEM doit exploiter l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets SPA à l’aide de React ou d’Angular et exploite le SDK SPA.
 
-### Qu’est-ce qu’une SPA ? {#what-is-a-spa}
+### Qu’est-ce qu’une SPA ?  {#what-is-a-spa}
 
 Une application sur une seule page (SPA) diffère d’une page conventionnelle en cela qu’elle est rendue côté client et qu’elle est principalement pilotée par JavaScript, en utilisant les appels Ajax pour charger les données et mettre la page à jour dynamiquement. La plupart ou la totalité du contenu est récupérée une fois au chargement d’une seule page avec des ressources supplémentaires chargées de manière asynchrone, selon les besoins, en fonction de l’interaction de l’utilisateur avec la page.
 
@@ -41,7 +41,7 @@ Cela limite la nécessité d’actualiser la page et offre à l’utilisateur un
 
 L’éditeur de SPA AEM permet aux développeurs front-end de créer des SPA qui peuvent être intégrées à un site AEM, ce qui permet aux créateurs de contenu de modifier le contenu SPA aussi facilement qu’un autre contenu AEM.
 
-### Pourquoi une SPA ? {#why-a-spa}
+### Pourquoi une SPA ?  {#why-a-spa}
 
 Plus rapide, fluide et ressemblant davantage à une application native, une SPA, de par son fonctionnement, offre une expérience très attrayante, non seulement pour le visiteur de la page web, mais aussi pour les spécialistes du marketing et les développeurs.
 
@@ -62,7 +62,7 @@ Plus rapide, fluide et ressemblant davantage à une application native, une SPA,
 * Les développeurs veulent une séparation nette entre les aspects liés au contenu et à la présentation.
 * Une séparation nette rend le système plus extensible tout en autorisant un développement front-end indépendant.
 
-### Comment fonctionne une SPA ? {#how-does-a-spa-work}
+### Comment fonctionne une SPA ?  {#how-does-a-spa-work}
 
 L’idée principale sous-jacente à une SPA est que les appels à un serveur et la dépendance envers un serveur sont réduits afin de minimiser les retards liés à la latence du serveur, de sorte que la SPA s’approche de la réactivité d’une application native.
 
@@ -78,7 +78,7 @@ Parce que le rendu est effectué côté client, les éléments de la page réagi
 >
 >Pour obtenir des détails techniques sur le fonctionnement des SPA dans AEM, consultez les articles suivants :
 >* [Prise en main des SPA dans AEM avec React](getting-started-react.md)
->* [Prise en main des SPA dans AEM avec Angular](getting-started-angular.md)
+* [Prise en main des SPA dans AEM avec Angular](getting-started-angular.md)
 
 Pour observer de plus près la conception, l’architecture et le workflow technique de l’éditeur de SPA, consultez l’article :
 * [Présentation de l’éditeur de SPA](editor-overview.md).
@@ -113,9 +113,8 @@ Lorsqu’une SPA est créée pour exploiter l’éditeur de SPA AEM, le créateu
 D’autres outils de création, tels que le glisser-déposer de composants supplémentaires sur la page, la réorganisation des composants et la modification de la mise en page, sont pris en charge comme dans toute application AEM non SPA.
 
 >[!NOTE]
->
->L’éditeur de SPA ne modifie pas le modèle objet de document (DOM) de l’application. La SPA elle-même est responsable du DOM.
->Pour découvrir le fonctionnement de cet aspect, passez à la section suivante de cet article, [Applications SPA et éditeur de SPA AEM](#spa-apps-and-the-aem-spa-editor).
+L’éditeur de SPA ne modifie pas le modèle objet de document (DOM) de l’application. La SPA elle-même est responsable du DOM.
+Pour découvrir le fonctionnement de cet aspect, passez à la section suivante de cet article, [Applications SPA et éditeur de SPA AEM](#spa-apps-and-the-aem-spa-editor).
 
 ## Applications SPA et éditeur de SPA AEM {#spa-apps-and-the-aem-spa-editor}
 
@@ -223,17 +222,15 @@ Dans la section suivante, nous allons examiner le contrat qui permet à l’édi
    Certains noms de classe spécifiques sont également ajoutés en vue de marquer les espaces réservés, ainsi que pour la fonctionnalité de glisser-déposer des ressources.
 
    >[!NOTE]
-   >
-   >Ce comportement diffère des pages générées côté serveur dans AEM, où un élément `cq` est inséré pour chaque composant modifiable.
-   >Cette approche dans l’éditeur de SPA élimine la nécessité d’injecter des éléments personnalisés, en n’utilisant qu’un attribut de données supplémentaire, ce qui rend le balisage plus simple pour le développeur frontal.
+   Ce comportement diffère des pages générées côté serveur dans AEM, où un élément `cq` est inséré pour chaque composant modifiable.
+   Cette approche dans l’éditeur de SPA élimine la nécessité d’injecter des éléments personnalisés, en n’utilisant qu’un attribut de données supplémentaire, ce qui rend le balisage plus simple pour le développeur frontal.
 
 ## Couplage et découplage dans AEM {#headful-headless}
 
-Les SPA peuvent être activés avec différents niveaux d’intégration au sein d’AEM, y compris pour les SPA développés et gérés en dehors d’AEM. De plus, les SPA peuvent être exploités dans AEM tout en utilisant AEM pour diffuser du contenu vers d’autres points de terminaison, et ce, en mode headless.
+Les SPA peuvent être activés avec différents niveaux d’intégration au sein d’AEM, y compris pour les SPA développés et gérés en dehors d’AEM. De plus, les SPA peuvent être exploités dans AEM tout en utilisant AEM pour diffuser du contenu vers d’autres points de terminaison, et ce, en mode découplé.
 
 >[!TIP]
->
->Consultez le document [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) pour plus d’informations.
+Consultez le document [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) pour plus d’informations.
 
 ## Étapes suivantes {#next-steps}
 
