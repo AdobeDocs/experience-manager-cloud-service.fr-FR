@@ -1,6 +1,6 @@
 ---
 title: Prévisualisation de fichiers 3D
-description: Découvrez comment prévisualiser des ressources 3D  dans Dynamic Media.
+description: Découvrez comment prévisualiser des ressources 3D dans Dynamic Media.
 feature: Ressources 3D
 role: User
 exl-id: null
