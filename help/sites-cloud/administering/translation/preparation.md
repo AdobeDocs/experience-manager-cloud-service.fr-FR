@@ -11,7 +11,7 @@ ht-degree: 100%
 
 ---
 
-# Préparation du contenu à traduire  {#preparing-content-for-translation}
+# Préparation du contenu à traduire {#preparing-content-for-translation}
 
 Les sites web multilingues fournissent généralement une certaine quantité de contenu dans plusieurs langues. Le site est créé dans une langue, puis traduit dans d’autres langues. En général, les sites multilingues comportent des branches de pages, chaque branche contenant les pages du site dans une langue distincte.
 
@@ -64,8 +64,8 @@ Créez une racine de langue comme page racine d’une copie de langue qui identi
 
 Pour créer la racine de langue, créez une page, puis utilisez le code de langue ISO comme valeur de la propriété **Nom**. Le code de la langue doit être dans l’un des formats suivants :
 
-* `<language-code>` - Le code de langue pris en charge est un code à deux lettres défini par la norme ISO-639-1, par exemple `en`.
-* `<language-code>_<country-code>` ou `<language-code>-<country-code>` - Le code pays pris en charge est un code à deux lettres, en minuscules ou en majuscules, défini par la norme ISO-3166, par exemple `en_US`, `en_us`, `en-gb`, `en_GB`.
+* `<language-code>` – Le code de langue pris en charge est un code à deux lettres défini par la norme ISO-639-1, par exemple `en`.
+* `<language-code>_<country-code>` ou `<language-code>-<country-code>` – Le code pays pris en charge est un code à deux lettres, en minuscules ou en majuscules, défini par la norme ISO-3166, par exemple `en_US`, `en_us`, `en-gb`, `en_GB`.
 
 Vous pouvez utiliser l’un de ces formats en fonction de la structure choisie pour votre site international.  Par exemple, la racine de la copie de langue française du site WKND est définie sur `fr` en tant que propriété de **Nom**. Notez que la propriété **Nom** est utilisée comme nom du nœud de page dans le référentiel et détermine donc le chemin d’accès à la page (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
@@ -82,7 +82,7 @@ Vous pouvez utiliser l’un de ces formats en fonction de la structure choisie p
 
 1. Cliquez ou appuyez sur **Créer**. Dans la boîte de dialogue de confirmation, cliquez ou appuyez sur **Terminé** pour revenir à la console Sites ou sur **Ouvrir** pour ouvrir la copie de langue.
 
-## Affichage de le statut des racines de langue  {#seeing-the-status-of-language-roots}
+## Affichage de le statut des racines de langue {#seeing-the-status-of-language-roots}
 
 AEM contient un rail **Références** qui affiche une liste des racines de langue créées.
 
@@ -134,8 +134,10 @@ Les racines de langues peuvent désormais être regroupées dans des nœuds, par
 >
 >* `/content/wknd/language-masters/en`
 >* `/content/wknd/language-masters/americas/central-america/es`
+
 >
-> Cette copie de langue `es` n’est pas détectée car elle se trouve à deux niveaux (`americas/central-america`) du nœud `en`.
+> 
+Cette copie de langue `es` n’est pas détectée car elle se trouve à deux niveaux (`americas/central-america`) du nœud `en`.
 
 >[!TIP]
 >
