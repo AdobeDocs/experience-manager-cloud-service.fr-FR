@@ -3,13 +3,13 @@ title: Consoles Outils
 description: Découvrez les différentes consoles Outils disponibles dans AEM.
 exl-id: 9cc7c82d-62ef-4226-874a-b5d8e76604af
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '189'
 ht-degree: 100%
 
 ---
 
-# Consoles Outils{#tools-consoles}
+# Consoles Outils {#tools-consoles}
 
 Les consoles **Outils** permettent d’accéder à différents outils spécialisés pour administrer des sites web, des ressources numériques et d’autres aspects du référentiel de contenu.
 
