@@ -42,9 +42,9 @@ L’initiateur de ces actions peut vérifier leur état dans une nouvelle interf
 >[!NOTE]
 L’utilisateur du système n’a pas besoin de modifier cette nouvelle fonctionnalité pour pouvoir l’utiliser. Cette modification est simplement consignée dans ce document, car elle constitue un changement de comportement par rapport aux versions sur site précédentes d’AEM.
 
-## Nouveau site de référence et tutoriel{#new-reference-site-and-tutorial}
+## Nouveau site de référence et tutoriel {#new-reference-site-and-tutorial}
 
-[WKND](https://wknd.site/), le nouveau site de référence AEM, a été mis à jour et publié afin de présenter les bonnes pratiques de création d’un site web avec AEM, ainsi que l’ensemble complet des fonctionnalités, composants et modèles de déploiement disponibles dans AEM. Le nouveau site de référence et le tutoriel[](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) qui l’accompagne abordent des sujets fondamentaux tels que la configuration de projet, les composants principaux, les modèles modifiables, les bibliothèques client et le développement de composants avec Adobe Experience Manager Sites.
+[WKND](https://wknd.site/), le nouveau site de référence AEM, a été mis à jour et publié afin de présenter les bonnes pratiques de création d’un site web avec AEM, ainsi que l’ensemble complet des fonctionnalités, composants et modèles de déploiement disponibles dans AEM. Le nouveau site de référence et le [tutoriel qui l’accompagne](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) abordent des sujets fondamentaux tels que la configuration de projet, les composants principaux, les modèles modifiables, les bibliothèques client et le développement de composants avec Adobe Experience Manager Sites.
 
 Auparavant, We.Retail était installé par défaut avec AEM (sauf lorsqu’il était démarré en mode de production). Désormais, aucun site de référence ne sera installé par défaut. Au lieu de cela, vous trouverez le [git repo](https://github.com/adobe/aem-guides-wknd/) et [le tutoriel associé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) au code du site de référence WKND mis à jour.
 
