@@ -21,7 +21,7 @@ Il assure la diffusion du contenu aux canaux autres que les pages web AEM class
 
 Comme les fragments de contenu utilisent du contenu structuré, vous pouvez fournir des services de contenu à l’aide de l’exportateur JSON pour diffuser le contenu de toute page AEM au format du modèle de données JSON. Ce contenu peut ensuite être utilisé dans vos propres applications.
 
-## Exportateur JSON avec les composants principaux des fragments de contenu  {#json-exporter-with-content-fragment-core-components}
+## Exportateur JSON avec les composants principaux des fragments de contenu {#json-exporter-with-content-fragment-core-components}
 
 Grâce à l’exportateur JSON AEM, vous pouvez diffuser le contenu des pages AEM au format du modèle de données JSON. Ce contenu peut ensuite être utilisé dans vos propres applications.
 
@@ -72,7 +72,7 @@ Voir également :
 * API HTTP Assets
    * [API HTTP Assets](/help/assets/developer-reference-material-apis.md)
 * Modèles Sling :
-   * [Modèles Sling - Association d’une classe de modèles à un type de ressource depuis la version 1.3.0](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
+   * [Modèles Sling – Association d’une classe de modèles à un type de ressource depuis la version 1.3.0](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 * AEM avec JSON :
    * [Activation de l’exportateur JSON pour un composant](enabling-json-exporter.md)
 
