@@ -11,7 +11,7 @@ ht-degree: 100%
 
 ---
 
-# Assistant Copie de la langue  {#language-copy-wizard}
+# Assistant Copie de la langue {#language-copy-wizard}
 
 L’assistant Copie de la langue est une expérience guidée pour créer et gérer la structure du contenu multilingue. L’assistant facilite et accélère la création d’une copie de langue.
 
