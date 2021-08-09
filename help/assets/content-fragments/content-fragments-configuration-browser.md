@@ -19,15 +19,15 @@ Découvrez comment activer certaines fonctionnalités de fragments de contenu da
 
 Avant d’utiliser les fragments de contenu, vous devez utiliser l’**Explorateur de configurations** pour activer les éléments suivants :
 
-* **Modèles de fragment de contenu** - obligatoire
-* **Requêtes persistantes GraphQL** - facultatif
+* **Modèles de fragment de contenu** – obligatoire
+* **Requêtes persistantes GraphQL** – facultatif
 
 >[!CAUTION]
 >
 >Si vous n’activez pas les **modèles de fragment de contenu** :
 >
 >* L’option **Créer** ne sera pas disponible pour la création de modèles.
->* Vous ne pourrez pas [sélectionner la configuration Sites pour créer le point d’entrée ](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint) associé.
+>* Vous ne pourrez pas [sélectionner la configuration Sites pour créer le point d’entrée](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint) associé.
 
 
 Pour activer la fonctionnalité de fragments de contenu, vous devez :
