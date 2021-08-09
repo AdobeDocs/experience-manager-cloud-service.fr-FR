@@ -3,7 +3,7 @@ title: Modèles de page
 description: Les modèles de page sont utilisés lors de la création d’une page qui servira de base à la nouvelle page
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3296'
 ht-degree: 100%
 
@@ -212,7 +212,7 @@ Pour créer un dossier, vous pouvez procéder de l’une des façons suivantes 
 >
 >Dans l’[explorateur de configurations](/help/implementing/developing/introduction/configurations.md#using-configuration-browser), vous pouvez modifier le dossier global et activer l’option **Modèles modifiables** si vous souhaitez créer des modèles dans ce dossier. Il ne s’agit toutefois pas de la méthode recommandée.
 
-### ACL et groupes  {#acls-and-groups}
+### ACL et groupes {#acls-and-groups}
 
 Une fois vos dossiers de modèles créés (soit via CRXDE, soit à l’aide de l’explorateur de configurations), des listes de contrôle d’accès (ACL) doivent être définies pour les groupes appropriés afin que les dossiers de modèles garantissent une protection adéquate.
 
@@ -477,7 +477,7 @@ Fournit une référence relative à la stratégie de contenu pour le système de
 
 Les stratégies de page vous permettent de définir la [stratégie de contenu](#content-policies) de la page (système de paragraphes principal), soit dans le modèle soit dans les pages créées.
 
-### Activation et autorisation d’un modèle à utiliser  {#enabling-and-allowing-a-template-for-use}
+### Activation et autorisation d’un modèle à utiliser {#enabling-and-allowing-a-template-for-use}
 
 1. **Activation du modèle**
 
@@ -488,7 +488,6 @@ Les stratégies de page vous permettent de définir la [stratégie de contenu](#
    * Définir la propriété de statut sur le nœud `jcr:content`.
 
       * Par exemple, sous :
-
          `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Définissez la propriété :
@@ -501,7 +500,6 @@ Les stratégies de page vous permettent de définir la [stratégie de contenu](#
 
    * [Définissez le ou les chemins d’accès des modèles autorisés dans les **Propriétés de page**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) de la page appropriée ou de la page racine d’une sous-branche.
    * Définissez la propriété :
-
       `cq:allowedTemplates`
 Sur le 
 nœud `jcr:content` de la branche requise.
@@ -583,10 +581,12 @@ Le diagramme suivant illustre le processus d’évaluation de modèle :
 >Par conséquent, Adobe vous recommande de commencer simplement, en définissant :
 >
 >* uniquement la propriété `cq:allowedTemplates` ;
+   >
+   >
+* uniquement sur la racine du site.
 >
->* uniquement sur la racine du site.
 >
->Pour consulter un exemple, reportez-vous au contenu du [tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) : `/content/wknd/jcr:content`
+Pour consulter un exemple, reportez-vous au contenu du [tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) : `/content/wknd/jcr:content`
 >
 >Les propriétés `allowedPaths`, `allowedParents` et `allowedChildren` peuvent également être placées sur les modèles pour définir des règles plus élaborées. Cependant, dans la mesure du possible, il est *beaucoup* plus simple de définir d’autres propriétés `cq:allowedTemplates` dans des sous-sections du site si des restrictions supplémentaires des modèles autorisés s’imposent.
 >
