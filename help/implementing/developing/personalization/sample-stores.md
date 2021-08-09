@@ -1,15 +1,15 @@
 ---
-title: 'Exemples de magasins candidats ContextHub '
+title: Exemples de magasins candidats ContextHub
 description: ContextHub fournit plusieurs exemples de magasins candidats que vous pouvez utiliser dans vos solutions
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '466'
 ht-degree: 100%
 
 ---
 
-# Exemples de magasins candidats ContextHub  {#sample-contexthub-store-candidates}
+# Exemples de magasins candidats ContextHub {#sample-contexthub-store-candidates}
 
 ContextHub fournit plusieurs exemples de magasins candidats que vous pouvez utiliser dans vos solutions. Les informations suivantes sont fournies pour chaque exemple :
 
@@ -107,7 +107,7 @@ Le magasin utilise une arborescence de données similaire à l’exemple suivant
 >
 >Voir [cet article de blog Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) pour plus de détails sur les changements dans Chrome.
 
-## Exemple de magasin candidat contexthub.surferinfo   {#contexthub-surferinfo-sample-store-candidate}
+## Exemple de magasin candidat contexthub.surferinfo {#contexthub-surferinfo-sample-store-candidate}
 
 Stocke des informations sur l’environnement client actuel, telles que l’appareil, la fenêtre, le navigateur, la date et l’heure.
 
@@ -307,7 +307,7 @@ L’arborescence de données de magasin est similaire à l’exemple suivant :
 }
 ```
 
-## Exemple de magasin candidat granite.profile   {#granite-profile-sample-store-candidate}
+## Exemple de magasin candidat granite.profile {#granite-profile-sample-store-candidate}
 
 Stocke des informations sur l’utilisateur actuel.
 
