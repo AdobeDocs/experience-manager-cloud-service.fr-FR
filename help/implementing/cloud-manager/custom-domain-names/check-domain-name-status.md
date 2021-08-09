@@ -5,7 +5,7 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 source-git-commit: 417939cb7a206d2b98b5e631a09307edc6724c17
 workflow-type: tm+mt
 source-wordcount: '343'
-ht-degree: 80%
+ht-degree: 97%
 
 ---
 
@@ -43,10 +43,10 @@ La suppression du nom de domaine personnalisé a échoué. Vous devez réessayer
 
 ## Configurations préexistantes du réseau de diffusion de contenu pour les noms de domaine personnalisés {#pre-existing-cdn}
 
-Les clients avec des environnements qui incluent des configurations CDN préexistantes pour les Listes autorisées IP, les certificats SSL ou les noms de domaine personnalisés verront le message suivant dans la **Liste autorisée IP** et la page de détails **Environnement**. Le message affiché dans l’interface utilisateur disparaît une fois que le client a effectué la migration complète de toutes les configurations d’environnement préexistantes via l’interface utilisateur et il peut s’écouler entre 1 et 2 jours ouvrés avant que le message ne disparaisse.
+Les clients disposant d’environnements qui incluent des configurations CDN préexistantes pour les listes autorisées d’adresses IP, des certificats SSL ou des noms de domaines personnalisés voient le message suivant dans les pages de détails **Liste autorisée d’adresses IP** et **Environnement**. Le message affiché dans l’interface utilisateur disparaît une fois que le client a effectué la migration complète de toutes les configurations d’environnement préexistantes via l’interface utilisateur et il peut s’écouler entre 1 et 2 jours ouvrés avant que le message ne disparaisse.
 
 >[!NOTE]
->Pour afficher et gérer les configurations préexistantes, elles doivent être ajoutées via l’interface utilisateur. Pour plus d’informations, voir [Ajout d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) .
+>Pour afficher et gérer les configurations préexistantes, celles-ci doivent être ajoutées via l’interface utilisateur. Pour plus d’informations, consultez la section [Affichage et mise à jour du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
 
