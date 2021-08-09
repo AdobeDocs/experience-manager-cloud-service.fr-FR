@@ -5,7 +5,7 @@ exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
 source-wordcount: '3659'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Il est également possible de remplacer une boîte de dialogue de composant en u
 
 Ainsi, vous avez seulement besoin de redéfinir les modifications à apporter et non pas toute la boîte de dialogue.
 
-### Logique de contenu et balisage de rendu {#content-logic-and-rendering-markup}
+### Logique de contenu et balisage de rendu   {#content-logic-and-rendering-markup}
 
 Votre composant est rendu dans le langage [HTML.](https://www.w3schools.com/htmL/html_intro.asp) Votre composant doit définir les balises HTML nécessaires pour réaliser le rendu du contenu selon les besoins, dans les environnements de création et de publication.
 
@@ -101,31 +101,31 @@ La définition d’un composant peut être décomposée comme suit :
 #### Propriétés vitales {#vital-properties}
 
 * **Nœud racine** :
-   * `<mycomponent> (cq:Component)` - Nœud de hiérarchie du composant.
+   * `<mycomponent> (cq:Component)` – Nœud de hiérarchie du composant.
 * **Propriétés vitales** :
-   * `jcr:title` - Titre du composant, utilisé par exemple comme une étiquette lorsque le composant est répertorié dans le [navigateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) et la [console des composants](/help/sites-cloud/authoring/features/components-console.md)
-   * `jcr:description` - Description du composant affichée lorsque l’on place le curseur de la souris au-dessus dans le navigateur de composants et la console de composants
+   * `jcr:title` – Titre du composant, utilisé par exemple comme une étiquette lorsque le composant est répertorié dans le [navigateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) et la [console des composants](/help/sites-cloud/authoring/features/components-console.md)
+   * `jcr:description` – Description du composant affichée lorsque l’on place le curseur de la souris au-dessus dans le navigateur de composants et la console de composants
    * Voir la section [Icône de composant](#component-icon) pour plus de détails.
 * **Nœuds enfants essentiels** :
-   * `cq:editConfig (cq:EditConfig)` - Définit les propriétés de modification du composant et permet au composant d’apparaître dans le navigateur de composants
+   * `cq:editConfig (cq:EditConfig)` – Définit les propriétés de modification du composant et permet au composant d’apparaître dans le navigateur de composants
       * Si le composant présente une boîte de dialogue, elle apparaît automatiquement dans le navigateur de composants ou le sidekick, même si le cq:editConfig n’existe pas.
-   * `cq:childEditConfig (cq:EditConfig)` - Contrôle les aspects de l’IU de création pour les composants enfants qui ne définissent pas leur propre `cq:editConfig`.
-   * `cq:dialog (nt:unstructured)` - Boîte de dialogue pour ce composant. Définit l’interface permettant à l’utilisateur de configurer le composant et/ou de modifier le contenu.
-   * `cq:design_dialog (nt:unstructured)` - Modification de la conception du composant
+   * `cq:childEditConfig (cq:EditConfig)` – Contrôle les aspects de l’IU de création pour les composants enfants qui ne définissent pas leur propre `cq:editConfig`.
+   * `cq:dialog (nt:unstructured)` – Boîte de dialogue pour ce composant. Définit l’interface permettant à l’utilisateur de configurer le composant et/ou de modifier le contenu.
+   * `cq:design_dialog (nt:unstructured)` – Modification de la conception du composant
 
 #### Icône de composant {#component-icon}
 
 L’icône ou l’abréviation du composant est définie via les propriétés JCR du composant lorsque le composant est créé par le développeur. Ces propriétés sont évaluées dans l’ordre suivant, la première propriété valide trouvée étant utilisée.
 
-1. `cq:icon` - Propriété de chaîne pointant vers une icône standard dans la [bibliothèque de l’IU Coral](https://opensource.adobe.com/coral-spectrum/examples/#icon) à afficher dans le navigateur de composants
+1. `cq:icon` – Propriété de chaîne pointant vers une icône standard dans la [bibliothèque de l’IU Coral](https://opensource.adobe.com/coral-spectrum/examples/#icon) à afficher dans le navigateur de composants
    * Utilisez la valeur de l’attribut HTML de l’icône Coral.
-1. `abbreviation` - Propriété de chaîne servant à personnaliser l’abréviation du nom du composant dans le navigateur de composants
+1. `abbreviation` – Propriété de chaîne servant à personnaliser l’abréviation du nom du composant dans le navigateur de composants
    * L’abréviation devrait être limitée à deux caractères.
    * La saisie d’une chaîne vide crée l’abréviation à partir des deux premiers caractères de la propriété `jcr:title`.
       * Par exemple « Im » pour Image
       * Le titre localisé sera utilisé pour construire l’abréviation.
    * L’abréviation n’est traduite que si le composant possède une propriété `abbreviation_commentI18n`, qui est ensuite utilisée comme indice de traduction.
-1. `cq:icon.png` ou `cq:icon.svg` - Icône du composant, affichée dans le navigateur de composants
+1. `cq:icon.png` ou `cq:icon.svg` – Icône du composant, affichée dans le navigateur de composants
    * La taille des icônes des composants standard est de 20 x 20 pixels.
       * Les icônes plus grandes sont réduites (côté client).
    * La couleur recommandée est rgb(112, 112, 112) > # 707070
@@ -187,15 +187,15 @@ Si nous examinons le composant **Texte**, nous voyons plusieurs de ces élément
 
 Les propriétés d’intérêt particulier sont les suivantes :
 
-* `jcr:title` - Titre du composant utilisé pour identifier le composant dans le navigateur de composants.
-* `jcr:description` - Description du composant.
-* `sling:resourceSuperType` - Indique le chemin de l’héritage lors de l’extension d’un composant (en remplaçant une définition).
+* `jcr:title` – Titre du composant utilisé pour identifier le composant dans le navigateur de composants.
+* `jcr:description` – Description du composant.
+* `sling:resourceSuperType` – Indique le chemin de l’héritage lors de l’extension d’un composant (en remplaçant une définition).
 
 Les nœuds d’enfant d’un intérêt particulier sont les suivants :
 
-* `cq:editConfig` - Contrôle les aspects visuels du composant lors de la modification.
-* `cq:dialog` - Définit la boîte de dialogue de modification du contenu de ce composant.
-* `cq:design_dialog` - Spécifie les options de modification de conception pour le composant.
+* `cq:editConfig` – Contrôle les aspects visuels du composant lors de la modification.
+* `cq:dialog` – Définit la boîte de dialogue de modification du contenu de ce composant.
+* `cq:design_dialog` – Spécifie les options de modification de conception pour le composant.
 
 ### Boîtes de dialogue {#dialogs}
 
@@ -352,13 +352,13 @@ Vous trouverez un exemple d’utilisation de ce modèle dans les composants prin
 
 ### Configuration avec des nœuds enfants cq:EditConfig {#configuring-with-cq-editconfig-child-nodes}
 
-#### Dépôt de ressources dans une boîte de dialogue - cq:dropTargets {#cq-droptargets}
+#### Dépôt de ressources dans une boîte de dialogue – cq:dropTargets {#cq-droptargets}
 
 Le nœud `cq:dropTargets` (type de nœud `nt:unstructured`) définit la cible de dépôt pouvant accepter une ressource déplacée à partir du Content Finder. Il s’agit d’un nœud de type `cq:DropTargetConfig`.
 
 Le nœud enfant de type `cq:DropTargetConfig` définit une cible de dépôt dans le composant.
 
-### Modification locale - cq:inplaceEditing {#cq-inplaceediting}
+### Modification locale – cq:inplaceEditing {#cq-inplaceediting}
 
 Un éditeur local permet à l’utilisateur de modifier le contenu directement dans le flux de contenu, sans avoir besoin d’ouvrir une boîte de dialogue. Par exemple, les composants **Texte** et **Titre** standard possèdent tous deux un éditeur local.
 
@@ -381,7 +381,7 @@ La configuration suivante active la modification locale du composant et définit
         editorType="plaintext"/>
 ```
 
-### Gestion des événements de champ - cq:listeners {#cq-listeners}
+### Gestion des événements de champ – cq:listeners {#cq-listeners}
 
 La méthode de gestion des événements dans les champs de boîte de dialogue est appliquée avec les écouteurs d’une [bibliothèque cliente personnalisée.](/help/implementing/developing/introduction/clientlibs.md)
 
