@@ -3,7 +3,7 @@ title: 'Configuration des paramètres DNS '
 description: Configuration des paramètres DNS
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '328'
 ht-degree: 100%
 
