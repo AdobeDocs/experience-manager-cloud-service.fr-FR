@@ -31,7 +31,7 @@ Les clients doivent déposer un ticket d’assistance, décrivant le problème r
 AEM as a Cloud Service prend en charge :
 
 * La récupération à un point dans le temps sur 24 heures, ce qui signifie que le système peut être restauré à n’importe quel stade au cours des dernières 24 heures.
-* La restauration à partir d’un horodatage spécifique défini par Adobe, capturé une fois par jour pendant les 7 derniers jours.  Tous les messages de réplication (suppressions, mises à jour, création) seront conservés.
+* La restauration à partir d’un horodatage spécifique défini par Adobe, capturé une fois par jour pendant les 7 derniers jours. Tous les messages de réplication (suppressions, mises à jour, création) seront conservés.
 
 Dans tous les cas, la version du code personnalisé est la version capturée à partir du dernier déploiement réussi avant le point de restauration.
 
