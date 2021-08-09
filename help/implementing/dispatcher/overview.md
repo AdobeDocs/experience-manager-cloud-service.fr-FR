@@ -3,7 +3,7 @@ title: Présentation du flux de diffusion de contenu
 description: Présentation du flux de diffusion de contenu
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '209'
 ht-degree: 100%
 
