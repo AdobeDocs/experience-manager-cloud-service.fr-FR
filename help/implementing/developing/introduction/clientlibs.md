@@ -26,7 +26,7 @@ Les bibliothèques côté client sont la solution intégrée pour la diffusion d
 >
 >Les développeurs front-end qui créent du code CSS et JavaScript pour les projets AEM doivent également se familiariser avec l’[archétype de projet AEM et son processus de création frontale automatisé](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html).
 
-## Que sont les bibliothèques côté client ? {#what-are-clientlibs}
+## Que sont les bibliothèques côté client ?  {#what-are-clientlibs}
 
 Les sites requièrent du code JavaScript et CSS, ainsi que des ressources statiques telles que des icônes et des polices web, pour être traités côté client. Une bibliothèque client constitue le mécanisme d’AEM utilisé pour référencer (par catégorie si nécessaire) et traiter ces ressources.
 
@@ -209,7 +209,7 @@ Vous pouvez incorporer du code d’une bibliothèque cliente dans une autre bibl
 
 Incorporer du code s’avère utile pour fournir l’accès aux bibliothèques qui sont stockées dans des zones sécurisées du référentiel.
 
-#### Dossiers de bibliothèques clientes spécifiques à une application  {#app-specific-client-library-folders}
+#### Dossiers de bibliothèques clientes spécifiques à une application {#app-specific-client-library-folders}
 
 Il est conseillé de conserver tous les fichiers associés à une application dans leur dossier d’application sous `/app`. Il est également recommandé d’empêcher les internautes d’accéder au dossier `/app`. Pour répondre à ces deux exigences, créez sous `/etc` un dossier de bibliothèques clientes qui incorpore la bibliothèque cliente qui est située sous `/app`.
 
@@ -340,7 +340,7 @@ compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advance
 
 Pour plus d’informations sur les options GCC, consultez la [documentation de GCC](https://developers.google.com/closure/compiler/docs/compilation_levels).
 
-#### Définition de l’outil de minification par défaut du système   {#set-system-default-minifier}
+#### Définition de l’outil de minification par défaut du système {#set-system-default-minifier}
 
 YUI est défini comme outil de minification par défaut dans AEM. Pour le définir sur GCC, procédez comme suit.
 
