@@ -13,11 +13,11 @@ exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '380'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
-# Configuration multi-magasin de commerce {#multi-store}
+# Configuration multi-magasin Commerce {#multi-store}
 
 Les composants principaux AEM CIF peuvent être utilisés sur plusieurs structures de site AEM et la mise en œuvre du client GraphQL sous-jacent peut se connecter à différents magasins/vues de magasin Magento. Cela permet aux projets de mettre en œuvre des configurations multi-magasin/multi-site complexes.
 
@@ -47,7 +47,7 @@ Pour connecter un site AEM et les composants principaux AEM CIF à une vue de ma
 
    >[!TIP]
    >
-   > Les catalogues de commerce peuvent être traités à l’aide d’identifiants ou d’UID. Les UID ont été introduits dans Magento 2.4.2. Activez cette option uniquement si votre serveur principal Commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
+   > Les catalogues de commerce peuvent être traités à l’aide d’identifiants ou d’UID. Les UID ont été introduits dans Magento 2.4.2. Activez cette option uniquement si votre serveur principal Commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
 
 4. Affectez la configuration enfant à un site AEM
 
