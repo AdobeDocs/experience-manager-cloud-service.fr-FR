@@ -45,7 +45,7 @@ Lors du remplacement d’une ressource Dynamic Media (nom et emplacement identiq
 
 * La création d’une version n’est pas prise en charge dans Dynamic Media. La nouvelle version remplace la ressource existante lors de la diffusion.
 
-## Images et visionneuses  {#images-and-sets}
+## Images et visionneuses {#images-and-sets}
 
 Si des problèmes surviennent avec les images et les visionneuses, reportez-vous aux conseils de dépannage ci-dessous.
 
