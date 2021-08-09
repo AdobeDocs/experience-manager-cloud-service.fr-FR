@@ -14,4 +14,4 @@ ht-degree: 100%
 
 Depuis le 31 janvier 2014, la plateforme de la visionneuse DHTML n’est officiellement plus prise en charge.
 
-Consultez le [Guide de référence des visionneuses Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) pour connaître les dernières visionneuses prises en charge.
+Consultez le [Guide de référence des visionneuses Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=fr) pour connaître les dernières visionneuses prises en charge.
