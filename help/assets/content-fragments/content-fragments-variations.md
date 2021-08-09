@@ -44,7 +44,7 @@ Lorsque vous ouvrez votre fragment de contenu pour le modifier, l’onglet **Var
 
 Par exemple :
 
-![éditeur plein écran ](assets/cfm-variations-02.png)
+![éditeur plein écran](assets/cfm-variations-02.png)
 Vous pouvez :
 
 * effectuer des modifications directement dans l’onglet **Variations**.
@@ -368,7 +368,7 @@ Il existe différentes méthodes pour ajouter des [images](/help/assets/content-
    * **Marquage** : la référence restera intégrée au fragment.
 
 
-## Gestion des variations  {#managing-variations}
+## Gestion des variations {#managing-variations}
 
 ### Création d’une variation {#creating-a-variation}
 
@@ -385,7 +385,7 @@ Pour créer une variation, procédez comme suit :
    >[!NOTE]
    Lors de la création d’une variation, c’est toujours le **Maître** qui est copié et non pas la variation ouverte.
 
-### Modification d’une variation  {#editing-a-variation}
+### Modification d’une variation {#editing-a-variation}
 
 Vous pouvez apporter des modifications au contenu de la variation après avoir :
 
@@ -409,7 +409,7 @@ Pour renommer une variation existante :
 >[!NOTE]
 Cette opération concerne uniquement le **Titre** de la variation.
 
-### Suppression d’une variation  {#deleting-a-variation}
+### Suppression d’une variation {#deleting-a-variation}
 
 Pour supprimer une variation existante :
 
@@ -448,7 +448,7 @@ Le transfert des modifications n’est pas proposé *entre une variation et le *
 
 1. Le maître et la variation seront affichés côte à côte :
 
-   * le contenu ajouté figure en vert  (ajouté à la variation) ;
+   * le contenu ajouté figure en vert (ajouté à la variation) ;
    * le contenu supprimé (de la variation) figure en rouge.
    * le texte remplacé apparaît en bleu
 
