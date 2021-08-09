@@ -1,18 +1,18 @@
 ---
 title: Développement découplé pour AEM Sites as a Cloud Service
-description: Découvrez comment AEM en tant que Cloud Service de puissantes fonctionnalités sans interface telles que les modèles de contenu, les fragments de contenu et l’API GraphQL fonctionnent ensemble pour vous permettre de gérer vos expériences de manière centralisée et de les diffuser sur l’ensemble des canaux.
+description: Découvrez comment les puissantes fonctionnalités d’AEM as a Cloud Service telles que les modèles de contenu, les fragments de contenu et l’API GraphQL fonctionnent ensemble pour vous permettre de gérer vos expériences de manière centralisée et de les diffuser sur l’ensemble des canaux.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '487'
-ht-degree: 59%
+ht-degree: 98%
 
 ---
 
 
 # Développement découplé pour AEM Sites as a Cloud Service {#headless-development}
 
-Découvrez comment AEM en tant que Cloud Service de puissantes fonctionnalités sans interface telles que les modèles de contenu, les fragments de contenu et l’API GraphQL fonctionnent ensemble pour vous permettre de gérer vos expériences de manière centralisée et de les diffuser sur l’ensemble des canaux.
+Découvrez comment les puissantes fonctionnalités d’AEM as a Cloud Service telles que les modèles de contenu, les fragments de contenu et l’API GraphQL fonctionnent ensemble pour vous permettre de gérer vos expériences de manière centralisée et de les diffuser sur l’ensemble des canaux.
 
 ## Présentation {#overview}
 
@@ -36,23 +36,23 @@ AEM as a Cloud Service est un outil couple pour le modèle d’implémentation d
 
 1. Modèles de contenu
    * Les modèles de contenu sont une représentation structurée du contenu.
-   * Ils sont définies par des architectes des informations dans l’éditeur de modèles de fragments de contenu AEM.
+   * Ils sont définis par des architectes des informations dans l’éditeur de modèles de fragments de contenu AEM.
    * Les modèles de contenu servent de base aux fragments de contenu.
 1. Fragments de contenu
    * Les fragments de contenu sont des instanciations de modèles de contenu.
    * Ils sont créés par les auteurs de contenu à l’aide de l’éditeur de fragments de contenu d’AEM.
    * Ils sont stockés dans AEM Assets et gérés dans l’interface utilisateur d’administration d’Assets.
 1. API de contenu pour la diffusion
-   * L’API GraphQL d’AEM prend en charge la diffusion de fragments de contenu.
+   * L’API AEM GraphQL prend en charge la diffusion de fragments de contenu.
    * L’API REST AEM Assets prend en charge les opérations CRUD sur les fragments de contenu.
    * La diffusion directe de contenu est également possible avec l’[exportation JSON du composant principal de fragment de contenu.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
-## Vos premières étapes avec AEM sans affichage {#first-steps}
+## Vos premiers pas avec AEM découplé {#first-steps}
 
-Un certain nombre de ressources sont disponibles pour que vous puissiez commencer à utiliser AEM fonctionnalités sans interface. Ils sont conçus pour différents cas d’utilisation, mais ils donnent tous une vue d’ensemble complète des fonctionnalités AEM sans interface.
+Un certain nombre de ressources sont disponibles pour que vous puissiez commencer à utiliser les fonctionnalités d’AEM découplé. Elles sont conçues pour différents cas d’utilisation, mais donnent toutes une vue d’ensemble complète des fonctionnalités d’AEM découplé.
 
-| Ressource | Description | Type | Public | Est. Heure |
+| Ressource | Description | Type | Public | Temps estimé |
 |---|---|---|---|---|
-| [Parcours de développement sans tête](/help/journey-headless/developer/overview.md) | Pour une vue d&#39;ensemble complète des fonctionnalités AEM sans tête, de la théorie de l&#39;absence de tête à la mise en ligne de votre premier projet sans tête, commencez ici. | Guide d’ | Développeurs | 1 heure |
-| [Guide de prise en main sans affichage](/help/implementing/developing/headless/getting-started/introduction.md) | Pour un bref résumé des principales fonctionnalités AEM sans interface, consultez cet aperçu de démarrage rapide. | Démarrage rapide | Développeurs, Administrateurs | 20 minutes |
-| [Prise en main d’AEM tutoriel pratique sans affichage](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | Si vous préférez une approche pratique, ce tutoriel aborde directement la création d’un projet simple sans tête. | Tutoriel | Développeurs | 2 heures |
+| [Parcours de développement découplé](/help/journey-headless/developer/overview.md) | Pour une vue d’ensemble complète des fonctionnalités d’AEM découplé, depuis la théorie du mode découplé jusqu’à la mise en ligne de votre premier projet, c’est ici. | Guide des | Développeurs | 1 heure |
+| [Guide de prise en main du mode découplé](/help/implementing/developing/headless/getting-started/introduction.md) | Pour un bref résumé des principales fonctionnalités d’AEM découplé, consultez cet aperçu de démarrage rapide. | Démarrage rapide | Développeurs, Administrateurs | 20 minutes |
+| [Prise en main avec le tutoriel pratique d’AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=fr) | Si vous préférez une approche pratique, ce tutoriel aborde directement la création d’un projet simple en mode découplé. | Tutoriel | Développeurs | 2 heures |
