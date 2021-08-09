@@ -5,7 +5,7 @@ exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
 source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
 source-wordcount: '2039'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ L’API REST permet d’accéder exactement aux mêmes fonctionnalités via HTTP
 >
 >L’API QueryBuilder est créée à l’aide de l’API JCR. Vous pouvez également interroger le JCR Adobe Experience Manager en utilisant l’API JCR depuis un lot OSGi. Pour plus d’informations, voir [Interrogation des données Adobe Experience Manager à l’aide de l’API JCR](https://helpx.adobe.com/fr/experience-manager/using/querying-experience-manager-data-using1.html).
 
-## Session Gem  {#gem-session}
+## Session Gem {#gem-session}
 
 [AEM Gems](https://helpx.adobe.com/fr/experience-manager/kt/eseminars/gems/aem-index.html) est une série de sessions techniques approfondies sur Adobe Experience Manager dispensées par des experts Adobe.
 
@@ -353,7 +353,7 @@ Le préfixe du nom de classe (par exemple, `similar` dans [`SimilarityPredicateE
 
 Pour ces propriétés principales, vous pouvez raccourcir la requête et utiliser `similar=/content/en` au lieu de la variante complète `similar.similar=/content/en`. La forme complète doit être utilisée pour toutes les propriétés non principales d’une classe.
 
-## Exemple d’utilisation de l’API Query Builder  {#example-query-builder-api-usage}
+## Exemple d’utilisation de l’API Query Builder {#example-query-builder-api-usage}
 
 ```java
    String fulltextSearchTerm = "WKND";
@@ -517,7 +517,7 @@ com.day.cq.search.impl.builder.QueryImpl filtering predicates: {nodename=nodenam
 com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 ```
 
-## Liens JavaDoc   {#javadoc-links}
+## Liens JavaDoc {#javadoc-links}
 
 | **Javadoc** | **Description** |
 |---|---|
