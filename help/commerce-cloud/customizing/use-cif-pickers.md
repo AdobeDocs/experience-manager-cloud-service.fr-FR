@@ -37,7 +37,7 @@ Le champ de produit permet de naviguer jusqu’au produit qu’un utilisateur so
 
 Le champ de sélecteur de produits prend en charge les propriétés facultatives suivantes :
 
-- selectionId (id, uid, sku, slg, combinedSlug, combinedSku) : permet de choisir l’attribut de produit à renvoyer par le sélecteur (par défaut = id). L’utilisation du sku renvoie le SKU du produit sélectionné, tandis que l’utilisation de combineSku renvoie une chaîne du type base#variant avec le SKU du produit de base et la variante sélectionnée, ou un seul SKU si un produit de base est sélectionné.
+- selectionId (id, uid, sku, slg, combinedSlug, combinedSku) : permet de choisir l’attribut de produit à renvoyer par le sélecteur (par défaut = id). L’utilisation du sku renvoie le SKU du produit sélectionné, tandis que l’utilisation de combinedSku renvoie une chaîne du type base#variant avec le SKU du produit de base et la variante sélectionnée, ou un seul SKU si un produit de base est sélectionné.
 - filter (folderOrProduct, folderOrProductOrVariant) : filtre le contenu que le sélecteur soit rendre lors de la navigation dans l’arborescence du produit. folderOrProduct : effectue le rendu des dossiers et des produits. folderOrProductOrVariant : effectue le rendu des dossiers, des produits et des variantes de produits. Si un produit ou une variante de produit est rendu, il ou elle devient également sélectionnable dans le sélecteur. (par défaut = folderOrProduct)
 - multiple (true, false) : permet de sélectionner un ou plusieurs produits (par défaut = false).
 - emptyText : pour configurer la valeur de texte vide du champ de sélecteur.
