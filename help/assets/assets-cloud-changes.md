@@ -51,7 +51,7 @@ Pour effectuer une validation de bout en bout du code et du processus, y compris
 
 | Fonctions ou cas d’utilisation | Statut dans [!DNL Experience Manager] as a [!DNL Cloud Service] | Commentaires |
 |-----|-----|-----|
-| [Détection des doublons de ressources ](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | Fonctionne différemment. | Renseignez-vous sur [son fonctionnement dans  [!DNL Experience Manager]  6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=fr). |
+| [Détection des doublons de ressources ](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | Fonctionne différemment. | Renseignez-vous sur [son fonctionnement dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=fr). |
 | [Pour les rendus FPO (avec positionnement uniquement)](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html#configfporendition) | Fonctionne différemment. |  |
 | Écriture différée des métadonnées | Fonctionne différemment. | Désactivé par défaut. Activez le lanceur de processus correspondant si nécessaire. L’écriture différée est gérée par les microservices de ressources. |
 | Traitement des ressources chargées à l’aide du gestionnaire de modules | Nécessite une intervention manuelle. | Retraitez manuellement les ressources à l’aide de l’action **[!UICONTROL Retraiter la ressource]**. |
