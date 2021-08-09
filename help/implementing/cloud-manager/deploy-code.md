@@ -1,6 +1,6 @@
 ---
-title: Déploiement de votre code - Cloud Services
-description: Déploiement de votre code - Cloud Services
+title: Déploiement de votre code – Cloud Services
+description: Déploiement de votre code – Cloud Services
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
 workflow-type: tm+mt
