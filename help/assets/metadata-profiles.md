@@ -2,7 +2,7 @@
 title: Profils de métadonnées
 description: Découvrez les profils de métadonnées pour les ressources. Apprenez à créer un profil de métadonnées et à l’appliquer aux ressources d’un dossier.
 contentOwner: AG
-feature: 'Métadonnées '
+feature: Métadonnées
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
@@ -108,7 +108,7 @@ Lorsque vous supprimez un profil de métadonnées d’un dossier, tout sous-doss
 
 Vous pouvez supprimer un profil de métadonnées d’un dossier à partir du menu **Outils** ou, si vous êtes dans le dossier, à partir de **Propriétés**. Cette section décrit comment supprimer des profils de métadonnées des dossiers des deux manières.
 
-### Suppression de profils de métadonnées d’un dossier via l’interface utilisateur des profils  {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
+### Suppression de profils de métadonnées d’un dossier via l’interface utilisateur des profils {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
 1. Cliquez sur le logo du Experience Manager et accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**.
 1. Sélectionnez le profil de métadonnées à supprimer d’un ou de plusieurs dossiers.
