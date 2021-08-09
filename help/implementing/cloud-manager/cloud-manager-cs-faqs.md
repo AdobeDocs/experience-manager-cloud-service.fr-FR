@@ -1,11 +1,11 @@
 ---
-title: Cloud Manager - FAQ relative à Cloud Services
+title: Cloud Manager – FAQ relative à Cloud Services
 seo-title: FAQ relative à Cloud Manager
 description: Consultez la FAQ relative à Cloud Manager for Cloud Services pour obtenir un certain nombre de conseils de dépannage
-seo-description: Consultez cette page pour obtenir des réponses concernant les questions les plus fréquentes sur Cloud Manager - Cloud Services
+seo-description: Consultez cette page pour obtenir des réponses concernant les questions les plus fréquentes sur Cloud Manager – Cloud Services
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1152'
 ht-degree: 100%
 
