@@ -46,7 +46,7 @@ La version suivante (2021.1.0) sera publiée le 28 janvier 2021.
 
 La date de publication de Cloud Manager dans AEM as a Cloud Service 2020.12.0 est le 10 décembre 2020.
 
-### Nouveautés de [!DNL Cloud Manager] {#what-is-new-cm}
+### Nouveautés d’[!DNL Cloud Manager]  {#what-is-new-cm}
 
 * Gestion en libre-service des [certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) et des [noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
@@ -62,7 +62,7 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2020.12.0 e
 
 ## Outils de refactorisation du code {#code-refactoring-tools}
 
-### Nouveautés de [!DNL Code Refactoring Tools] {#what-is-new-crt}
+### Nouveautés d’[!DNL Code Refactoring Tools]  {#what-is-new-crt}
 
 * Publication de la nouvelle version du plug-in AIO-CLI. La dernière version de ce plug-in comprend des correctifs pour le Dispatcher Converter et le Repository Modernizer AEM et prend également en charge un nouvel utilitaire : Index Converter. Consultez [Expérience unifiée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=fr#benefits) pour en savoir plus sur ce plug-in.
 
@@ -78,7 +78,7 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2020.12.0 e
 
 La date de publication de l’outil de transfert de contenu version v1.1.20 est le 8 janvier 2021.
 
-### Nouveautés de [!DNL Content Transfer Tool] {#what-is-new-ctt}
+### Nouveautés d’[!DNL Content Transfer Tool]  {#what-is-new-ctt}
 
 * Les utilisateurs peuvent désormais savoir si leur jeton d’accès a expiré en pointant vers l’icône de statut de l’interface utilisateur de l’outil de transfert de contenu (CTT). Ils seront également avertis dans l’interface utilisateur des détails du jeu de migration qu’ils ne peuvent pas se connecter à leur instance de Cloud Service.
 
