@@ -13,7 +13,7 @@ ht-degree: 100%
 
 Cette page donne un aperçu des composants AEM (Adobe Experience Manager), tels que ceux [utilisés pour la création de pages](/help/sites-cloud/authoring/fundamentals/components.md).
 
-## Que sont les composants ? {#what-are-components}
+## Que sont les composants ?  {#what-are-components}
 
 Les composants dans AEM :
 
@@ -42,7 +42,7 @@ Chaque composant AEM :
 * est un ensemble de scripts qui exécutent complètement une fonction spécifique ;
 * peut fonctionner de manière isolée, c’est-à-dire soit dans AEM, soit dans un portail.
 
-## Composants principaux AEM {#aem-core-components}
+## AEM Core Components {#aem-core-components}
 
 [Les composants principaux AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) sont un ensemble de composants WCM (Web Content Management, gestion de contenu web) normalisés pour AEM dont l’objectif est d’accélérer le développement et de réduire les coûts de maintenance de vos sites web.
 
