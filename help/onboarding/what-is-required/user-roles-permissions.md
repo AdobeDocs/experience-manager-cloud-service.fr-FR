@@ -38,14 +38,14 @@ Pour afficher vos rôles dans Cloud Manager, connectez-vous à l’interface uti
 
 ### Profil de produit d’intégration {#integration-product-profile}
 
-En plus de ce qui précède, Cloud Manager crée automatiquement un profil de produits nommé « Intégrations - Cloud Service ». Ce profil de produit est utilisé pour les intégrations entre Adobe Experience Manager et d’autres produits d’Adobe. Ce profil de produit **ne doit pas** être supprimé. Si vous supprimez accidentellement ce profil, il doit être recréé manuellement. Le nom d’affichage de ce profil **doit** être `CM_CS_DEFAULT`.
+En plus de ce qui précède, Cloud Manager crée automatiquement un profil de produits nommé « Intégrations – Cloud Service ». Ce profil de produit est utilisé pour les intégrations entre Adobe Experience Manager et d’autres produits d’Adobe. Ce profil de produit **ne doit pas** être supprimé. Si vous supprimez accidentellement ce profil, il doit être recréé manuellement. Le nom d’affichage de ce profil **doit** être `CM_CS_DEFAULT`.
 
 
 ## Rôles utilisateur et autorisations {#permissions}
 
 [!UICONTROL Cloud Manager] dispose de rôles préconfigurés avec les autorisations appropriées. Par exemple, un développeur développe du code et a l’autorisation de placer le code dans le référentiel Git. Un propriétaire d’entreprise dispose également d’autorisations différentes lui permettant d’ajouter et de modifier des programmes, d’ajouter des environnements et d’approuver des déploiements.
 
-Chacun des rôles est associé à des autorisations spécifiques. Par exemple, si vous êtes dans le rôle d’un :
+Chacun des rôles est associé à des autorisations spécifiques. Par exemple, si vous êtes dans le rôle d’un :
 
 * ***Propriétaire de l’entreprise***, vous êtes autorisé à ajouter un nouveau programme ou à modifier un programme, à ajouter ou mettre à jour un environnement et à exécuter n’importe quel pipeline.
 
@@ -61,7 +61,7 @@ Le tableau suivant résume les rôles et les autorisations associées dans Cloud
 
 | Autorisation | Description | Propriétaire de l’entreprise | Responsable de déploiement | Responsable de programme | Développeur |
 |--- |--- |--- |--- |--- |--- |
-| Ajouter un programme<br>Modifier le programme | Ajout d’un nouveau programme.<br>Modification d’un programme - Ajout ou suppression de solutions ou de modules complémentaires | x |  |  |  |
+| Ajouter un programme<br>Modifier le programme | Ajout d’un nouveau programme.<br>Modification d’un programme – Ajout ou suppression de solutions ou de modules complémentaires | x |  |  |  |
 | Créer un environnement | Créer des environnements Prod+Éval, Dév, etc. | x | x |  |  |
 | Mettre à jour l’environnement | Mettre à jour Prod+Éval, Dév, Environnements. | x | x |  |  |
 | Suppression de l’environnement de dév | Supprimer les environnements de développement. | x | x |  |  |
