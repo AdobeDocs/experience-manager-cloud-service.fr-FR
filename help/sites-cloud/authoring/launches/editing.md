@@ -3,7 +3,7 @@ title: Modification de lancements
 description: Après avoir créé un lancement pour votre page (ou un jeu de pages), vous pouvez modifier le contenu dans la copie de lancement de la ou des pages.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '555'
 ht-degree: 100%
 
@@ -75,7 +75,7 @@ Vous pouvez à tout moment ajouter ou supprimer des pages vers/depuis la plage d
 >
 >Pour ajouter des pages à un lancement, celles-ci doivent se trouver sous une racine de langue commune (c’est-à-dire, sur un seul site).
 
-## Modification d’une configuration de lancement  {#editing-a-launch-configuration}
+## Modification d’une configuration de lancement {#editing-a-launch-configuration}
 
 Vous pouvez à tout moment modifier les propriétés d’un lancement :
 
@@ -86,9 +86,9 @@ Vous pouvez à tout moment modifier les propriétés d’un lancement :
       * Sélectionnez **Modifier les propriétés**.
       * Les détails s’affichent.
 1. Effectuez les modifications requises, puis confirmez avec **Enregistrer**.
-   * Consultez [Lancements - Ordre des événements](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) pour plus d’informations sur l’objectif et l’interaction des champs **Date de lancement** et **Prêt pour la production**.
+   * Consultez [Lancements – Ordre des événements](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) pour plus d’informations sur l’objectif et l’interaction des champs **Date de lancement** et **Prêt pour la production**.
 
-## Identification du statut de lancement d’une page  {#discovering-the-launch-status-of-a-page}
+## Identification du statut de lancement d’une page {#discovering-the-launch-status-of-a-page}
 
 Le statut s’affiche lorsque vous sélectionnez un lancement spécifique dans l’onglet Références (voir [Lancements dans les références (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)).
 
