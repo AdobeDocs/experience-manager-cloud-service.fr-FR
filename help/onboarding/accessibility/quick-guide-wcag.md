@@ -3,7 +3,7 @@ title: Guide rapide relatif à WCAG 2.1
 description: Guide rapide relatif à WCAG 2.1
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1774'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ Adobe Experience Manager (AEM) as a Cloud Service a été développé afin de m
 
 >[!NOTE]
 >
->WCAG 2.1 met à jour la version précédente, WCAG 2.0, de 2008. Voir [WCAG 2.1 - Comparaison avec WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
+>WCAG 2.1 met à jour la version précédente, WCAG 2.0, de 2008. Voir [WCAG 2.1 – Comparaison avec WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
 
 >[!NOTE]
 >
