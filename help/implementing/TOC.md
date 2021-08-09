@@ -7,7 +7,7 @@ feature: Outils de développement
 role: Developer, Architect
 source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1035'
 ht-degree: 95%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 95%
    + Création d’un projet d’application AEM {#create-application-project}
       + [Utilisation de l’assistant](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [Configuration du projet](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
-      + [Présentation de l’environnement de création](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+      + [Présentation de l’environnement de génération](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
    + [Gestion des environnements](cloud-manager/manage-environments.md)
    + [Configuration de votre pipeline CI/CD](cloud-manager/configure-pipeline.md)
    + [Déploiement de votre code](cloud-manager/deploy-code.md)
@@ -164,7 +164,7 @@ ht-degree: 95%
       + API de diffusion {#delivery-api}
          + [API REST de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=fr)
          + [API GraphQL de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html?lang=fr)
-         + [API GraphQL d’AEM avec fragments de contenu – Exemple de contenu et requêtes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html?lang=fr)
+         + [API AEM GraphQL avec fragments de contenu – Exemple de contenu et requêtes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html?lang=fr)
          + [Authentification pour les requêtes AEM GraphQL distantes sur les fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html?lang=fr)
    + Développement hybride et SPA AEM {#hybrid}
       + [Approche hybride et SPA avec AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
@@ -193,7 +193,7 @@ ht-degree: 95%
    + [Outil AEM Repo](/help/implementing/developing/tools/repo-tool.md)
    + [Utilisation de CRXDE Lite](/help/implementing/developing/tools/crxde.md)
    + [L’externaliseur de liens](/help/implementing/developing/tools/externalizer.md)
-+ Personnalisation  {#personalization}
++ Personnalisation {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [Configuration de ContextHub](developing/personalization/configuring-contexthub.md)
    + [Ajout de ContextHub aux pages](developing/personalization/adding-contexthub.md)
