@@ -51,7 +51,7 @@ Grâce aux fragments de contenu :
    * Peuvent se fier à du contenu multimédia associé toujours pertinent.
    * Peuvent créer des variations de contenu ad hoc à la volée tout en garantissant leur gestion centralisée dans le fragment.
 
-## Ajout d’un fragment de contenu à une page   {#adding-a-content-fragment-to-your-page}
+## Ajout d’un fragment de contenu à une page {#adding-a-content-fragment-to-your-page}
 
 1. Ouvrez la page à modifier.
 2. Ajoutez le composant **Fragment de contenu** à partir du navigateur **Composants** ou **Insérer un nouveau composant**.
@@ -71,7 +71,7 @@ Grâce aux fragments de contenu :
    >
    >Pour plus d’informations sur les autres fonctionnalités d’édition, voir aussi :
    >
-   >* [Mise en page réactive  ](/help/sites-cloud/authoring/features/responsive-layout.md)
+   >* [Mise en page réactive](/help/sites-cloud/authoring/features/responsive-layout.md)
    * [Modification du contenu de la page](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 
@@ -103,14 +103,14 @@ Dans la boîte de dialogue de configuration appropriée, vous pouvez sélectionn
 
    * Attribut d’**identification HTML** à appliquer au composant.
 
-### Connexion rapide à l’éditeur de fragment    {#quick-connection-to-fragment-editor}
+### Connexion rapide à l’éditeur de fragment {#quick-connection-to-fragment-editor}
 
 Vous pouvez ouvrir la source du fragment à modifier (la ressource) à l’aide de l’icône **Modifier** située dans la barre d’outils du composant. Vous pourrez ainsi [modifier et gérer le fragment de contenu](/help/assets/content-fragments/content-fragments.md).
 
 >[!CAUTION]
 Comme toujours, la modification de la source du fragment affectera toutes les pages qui font référence à ce fragment de contenu.
 
-### Ajout de contenu intermédiaire    {#adding-in-between-content}
+### Ajout de contenu intermédiaire {#adding-in-between-content}
 
 Lorsqu’un fragment de contenu particulier est ajouté à la page, un espace réservé **Faire glisser les composants ici** est présent entre chaque paragraphe HTML (en haut/en bas) du fragment.
 
@@ -140,7 +140,7 @@ Cela peut donner l’impression que le positionnement relatif a changé, dans la
 * À moins que ces deux structures de paragraphes ne soient en conflit ; dans ce cas, le contenu intermédiaire n’est pas affiché (bien qu’il soit toujours présent en interne).
 
 
-### Utilisation de contenu associé    {#using-associated-content}
+### Utilisation de contenu associé {#using-associated-content}
 
 Si vous avez [associé du contenu](/help/assets/content-fragments/content-fragments-assoc-content.md) au [fragment de contenu](/help/assets/content-fragments/content-fragments.md), ces ressources seront disponibles à partir du panneau latéral (après avoir placé le fragment sur la page de contenu). Le contenu associé est en fait une source spéciale de contenu pour le [contenu intermédiaire](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
