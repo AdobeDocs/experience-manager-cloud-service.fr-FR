@@ -20,7 +20,7 @@ La version suivante (2020.11.0) sera publiée le 1er décembre 2020.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### Nouveautés d’[!DNL Sites] {#what-is-new-sites}
+### Nouveautés d’[!DNL Sites]  {#what-is-new-sites}
 
 * **[Composants principaux 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)** : AEM as a Cloud Service bénéficie des mises à jour automatiques de la dernière version des composants principaux. La version 2.12.0 comprend les dernières améliorations apportées par la communauté, telles qu’[un nouveau gestionnaire de formulaires POST ;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html?lang=fr#post-data) la possibilité d’inclure des balises CSS, JavaScript et de métadonnées[ personnalisées par le biais d’une configuration contextuelle ;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=fr#context-aware-loading) ainsi qu’un utilitaire [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html?lang=fr#enabling-custom-components) pour simplifier l’intégration de la couche de données Adobe dans les composants personnalisés. Voir la [liste des modifications](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) dans la version 2.12.0.
 
@@ -63,7 +63,7 @@ La version suivante (2020.11.0) sera publiée le 1er décembre 2020.
 
 La date de publication de Cloud Manager dans AEM as a Cloud Service 2020.10.0 est le 2 octobre 2020.
 
-### Nouveautés de [!DNL Cloud Manager] {#what-is-new-cm}
+### Nouveautés d’[!DNL Cloud Manager]  {#what-is-new-cm}
 
 * La page Environnements a été repensée.
 
@@ -98,7 +98,7 @@ Voir [Affichage de l’environnement](/help/implementing/cloud-manager/manage-en
 
 ### Workflows {#workflows}
 
-* La prise en charge de la recherche des instances de workflow a été ajoutée en fonction du titre du workflow, du modèle de workflow, de l’état, de l’initiateur, du chemin d’accès à la charge utile et de la date de début. Voir [Recherche d’instances de workflow](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html).
+* La prise en charge de la recherche des instances de workflow a été ajoutée en fonction du titre du workflow, du modèle de workflow, de l’état, de l’initiateur, du chemin d’accès à la charge utile et de la date de début. Voir [Instances des workflows de recherche](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html).
 
 ## Outil de transfert de contenu {#content-transfer-tool}
 
