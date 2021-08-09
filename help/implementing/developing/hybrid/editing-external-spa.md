@@ -3,7 +3,7 @@ title: Modification d’une SPA externe dans AEM
 description: Ce document décrit les étapes recommandées pour charger une SPA autonome vers une instance AEM, ajouter des sections de contenu modifiables et permettre la création.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2127'
 ht-degree: 100%
 
@@ -75,9 +75,9 @@ Dans cet exemple, `ModelManager` est initialisé et un `ModelStore` vide est cr�
 
 `initializationAsync` peut éventuellement accepter un objet `options` comme paramètre :
 
-* `path` - Lors de l’initialisation, le modèle au niveau du chemin d’accès défini est récupéré et stocké dans le `ModelStore`. Vous pouvez l’utiliser pour récupérer le `rootModel` à l’initialisation, si nécessaire.
-* `modelClient` - Permet de fournir un client personnalisé chargé de récupérer le modèle.
-* `model` - Un objet `model` transmis en tant que paramètre généralement renseigné lors de l’[utilisation de SSR.](/help/implementing/developing/hybrid/ssr.md)
+* `path` – Lors de l’initialisation, le modèle au niveau du chemin d’accès défini est récupéré et stocké dans le `ModelStore`. Vous pouvez l’utiliser pour récupérer le `rootModel` à l’initialisation, si nécessaire.
+* `modelClient` – Permet de fournir un client personnalisé chargé de récupérer le modèle.
+* `model` – Un objet `model` transmis en tant que paramètre généralement renseigné lors de l’[utilisation de SSR.](/help/implementing/developing/hybrid/ssr.md)
 
 ### Composants feuille AEM modifiables {#authorable-leaf-components}
 
