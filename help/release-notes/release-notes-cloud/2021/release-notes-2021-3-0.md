@@ -1,15 +1,15 @@
 ---
 title: Notes de mise à jour de la version 2021.3.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2021.3.0.
-source-git-commit: 3ff105507f4d42f5858a7e3a4c703d9135b36e5b
+exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
+source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
 workflow-type: tm+mt
 source-wordcount: '1318'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
-
-# Notes de la mise à jour actuelle d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour actuelles pour[!DNL Adobe Experience Manager]as a Cloud Service {#release-notes}
 
 La section suivante concerne les notes de mise à jour générales de la version actuelle (la plus récente) d’[!DNL Experience Manager] as a Cloud Service.
 
@@ -22,18 +22,18 @@ La section suivante concerne les notes de mise à jour générales de la version
 
 ## Date de publication {#release-date}
 
-La date de publication de [!DNL Adobe Experience Manager] en tant que Cloud Service 2021.3.0 est le 25 mars 2021.
+La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service version 2021.3.0 est le 25 mars 2021.
 La version suivante (2021.4.0) sera publiée le 29 avril 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 * Il est désormais possible d’activer [une version d’application web progressive (PWA) d’un site](/help/sites-cloud/authoring/features/enable-pwa.md) au niveau du projet grâce à une configuration simple.
-* Extensions de modèle de fragment de contenu : permettent désormais de définir des types de données de texte multiligne en tant que listes à champs multiples.
-* Améliorations de l’expérience utilisateur de l’éditeur de fragments de contenu : les fragments enfants imbriqués s’affichent désormais dans le chemin de navigation et offrent une vue améliorée des actions de publication, d’enregistrement et d’enregistrement et de sortie.
+* Extensions de modèle de fragment de contenu : elles permettent désormais de définir des types de données de texte multiligne en tant que listes à champs multiples.
+* Améliorations de l’expérience utilisateur de l’éditeur de fragments de contenu : les fragments enfants imbriqués s’affichent désormais dans le chemin de navigation et offrent une vue améliorée des actions (publication, enregistrement, enregistrement et sortie).
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nouveautés d’[!DNL Assets] {#what-is-new-assets}
+### Nouveautés d’[!DNL Assets]  {#what-is-new-assets}
 
 <!-- TBD: refine this list of features and enh. for Feb release.
 
@@ -45,26 +45,26 @@ Ability to select a root path. select if a minimum number of tags is required.
 
 Add a Boolean or radio widget type to metadata schema setup. -->
 
-* [!DNL Experience Manager] étend la fonctionnalité Ressources connectées pour prendre en charge l’utilisation des  [!DNL Dynamic Media] images dans les composants principaux pris en charge. Voir [Utilisation des ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md).
-* Les administrateurs de Experience Manager peuvent planifier des assimilations de ressources en masse à une date ou une heure spécifique. En outre, les administrateurs peuvent planifier des ingérations récurrentes en fonction de la date et de l’heure. Voir [ingestion de ressources en bloc](/help/assets/add-assets.md#asset-bulk-ingestor).
+* [!DNL Experience Manager] étend la fonctionnalité Ressources connectées pour prendre en charge l’utilisation des images [!DNL Dynamic Media] dans les composants principaux pris en charge. Voir [Utilisation des ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md).
+* Les administrateurs d’Experience Manager peuvent planifier des ingestions de ressources en masse à une date ou une heure spécifique. En outre, ils peuvent planifier des ingestions récurrentes en fonction de la date et de l’heure. Voir la section [Ingestion de ressources en bloc](/help/assets/add-assets.md#asset-bulk-ingestor).
 
 ### Bogues corrigés dans [!DNL Assets] {#bug-fixes-assets}
 
-* La page de copyright ne s’affiche pas lorsque vous tentez de télécharger plusieurs ressources gérées par les droits d’auteur. (CQ-4314403)
+* La page de copyright ne s’affiche pas lorsque vous tentez de télécharger plusieurs ressources assorties de droits d’auteur. (CQ-4314403)
 * Lorsque vous choisissez de modifier un fichier INDD, la résolution change de manière inattendue. (CQ-4317376)
-* Seule la dernière page du modèle d’InDesign figure dans le rendu PDF. (CQ-4317305)
+* Seule la dernière page du modèle InDesign figure dans le rendu PDF. (CQ-4317305)
 * L’ouverture du sélecteur de balises prend du temps lorsque le sélecteur fait partie d’un schéma de métadonnées complexe. (CQ-4316426)
-* Lors du téléchargement d’une ressource portant le même nom de fichier que celui existant, la boîte de dialogue de conflit de noms ne s’affiche pas pour inviter l’utilisateur à créer une version. (CQ-4315424)
-* Les propriétés de métadonnées de dossier peuvent être définies et enregistrées à partir du menu contextuel dans la page Propriétés d’un dossier. Bien que la sélection soit enregistrée dans le référentiel, elle ne s’affiche pas lorsque les propriétés de métadonnées du dossier sont à nouveau ouvertes. (CQ-4314429)
-* Les ressources dont le nom de fichier contient des espaces ou des caractères spéciaux sont téléchargées à l’aide du navigateur. (CQ-4318381)
+* Lors du chargement d’une ressource portant le même nom de fichier que celui existant, la boîte de dialogue de conflit de noms ne s’affiche pas pour inviter l’utilisateur à créer une version. (CQ-4315424)
+* Les propriétés des métadonnées de dossier peuvent être définies et enregistrées à partir du menu contextuel dans la page Propriétés d’un dossier. Bien que la sélection soit enregistrée dans le référentiel, elle ne s’affiche pas lorsque les propriétés des métadonnées de dossier sont à nouveau ouvertes. (CQ-4314429)
+* Les ressources dont le nom de fichier contient des espaces ou des caractères spéciaux sont chargées à l’aide du navigateur. (CQ-4318381)
 
 ## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
-AEM Forms a aidé de nombreuses entreprises à offrir de superbes expériences d’intégration et d’inscription au cours des années. Ces expériences ont permis aux entreprises de convertir des prospects en ventes, de traiter des données client capturées, de fournir des expériences réactives en fonction du profil d’audience, etc. Désormais, AEM Forms est disponible en tant que service cloud.
+AEM Forms a aidé de nombreuses entreprises à produire de superbes expériences d’intégration et d’inscription au cours des années. Ces expériences ont permis à ces entreprises de convertir des prospects en ventes, de traiter des données client capturées, de fournir des expériences réactives en fonction du profil d’audience, etc. Désormais, AEM Forms est disponible en tant que service cloud.
 
-Vous pouvez utiliser [AEM Forms as aCloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) pour créer des formulaires numériques, connecter des formulaires à des sources de données existantes, intégrer des formulaires à Adobe Sign pour ajouter des signatures électroniques aux formulaires, générer un document d’enregistrement (DoR) afin d’archiver les formulaires envoyés sous forme de fichiers PDF. Le service peut également convertir vos PDF forms existants en formulaires numériques. Outre les fonctionnalités AEM Forms standard, le service propose plusieurs fonctionnalités natives dans le cloud, telles que la mise à l’échelle automatique, le zéro temps d’arrêt pour les mises à niveau et l’environnement de développement natif dans le cloud. Lisez [cet article de blog](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html) pour en savoir plus sur les fonctionnalités d’AEM Forms en tant que Cloud Service.
+Vous pouvez utiliser [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html?lang=fr) pour créer des formulaires numériques, connecter des formulaires à des sources de données existantes, intégrer des formulaires avec Adobe Sign pour ajouter des signatures électroniques aux formulaires, générer un document d’enregistrement pour archiver les formulaires envoyés sous forme de fichiers PDF. Le service peut également convertir vos formulaires PDF existants en versions numériques. Outre les fonctionnalités AEM Forms standard, le service propose plusieurs fonctionnalités natives dans le cloud, telles que la mise à l’échelle automatique, la notion de zéro temps d’arrêt pour les mises à niveau et l’environnement de développement natif dans le cloud. Lisez [cet article de blog](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html) pour en savoir plus sur les fonctionnalités d’AEM Forms as a Cloud Service.
 
-Vous pouvez contacter votre représentant d’Adobe pour une démonstration ou pour vous inscrire au service.
+Vous pouvez contacter votre représentant Adobe pour une démonstration ou pour vous abonner au service.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -94,8 +94,8 @@ La prochaine version est prévue pour le 8 avril 2021.
 
 * Les utilisateurs disposant des autorisations requises peuvent désormais modifier un programme, ce qui leur permet d’effectuer les opérations suivantes en libre-service :
 
-   * Ajoutez la solution Sites à un programme existant avec Assets ou inversement.
-   * Supprimez Sites ou Assets d’un programme existant avec Sites et Assets.
+   * Ajouter la solution Sites à un programme existant avec Assets, ou inversement.
+   * Supprimer Sites ou Assets d’un programme existant contenant à la fois Sites et Assets.
    * Ajouter un deuxième droit non utilisé sur une solution à un programme existant ou à titre de nouveau programme.
 
 * Le libellé **Mise à jour Push AEM** sera désormais affiché pour les écrans *Exécution du pipeline* et *Activité*.
@@ -106,13 +106,13 @@ La prochaine version est prévue pour le 8 avril 2021.
 
 * Pour plus de clarté, l’étiquette **Application à approuver** a été réétiquetée à **Approbation de production**.
 
-* Le libellé **Version** a été réétiqueté en **Balise Git** dans l’écran d’exécution du pipeline de production.
+* Le libellé **Version** a été renommé **Balise Git** dans l’écran d’exécution du pipeline de production.
 
-* Les étiquettes qui définissent le comportement lorsque des mesures importantes ne correspondent pas au seuil défini ont été réétiquetées afin de refléter leur comportement réel : **Annuler immédiatement** et **Approuver immédiatement**.
+* Les libellés qui définissent le comportement lorsque des mesures importantes ne respectent pas le seuil défini ont été réétiquetées afin de refléter leur comportement réel : **Annuler immédiatement** et **Approuver immédiatement**.
 
 * Les listes de classe et de méthode d’obsolescence ont été mises à jour en fonction de la version `2021.3.4997.20210303T022849Z-210225` du SDK AEM Cloud Service.
 
-* Le pipeline de production de Cloud Manager comprend désormais la fonctionnalité [Tests d’interface utilisateur personnalisés](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) .
+* Le pipeline de production de Cloud Manager inclut désormais la fonctionnalité de [test d’interface utilisateur personnalisée](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).
 
 ### Correctifs {#bug-fixes-cm-march}
 
@@ -134,7 +134,7 @@ La prochaine version est prévue pour le 8 avril 2021.
 
 ### Date de publication {#release-date-ctt}
 
-La date de publication de l’outil de transfert de contenu v1.3.4 est le 19 mars 2021.
+La date de publication de l’outil de transfert de contenu version v1.3.4 est le 19 mars 2021.
 
 ### Correctifs {#bug-fixes-ctt}
 
@@ -153,11 +153,11 @@ La date de publication de l’outil de transfert de contenu version v1.3.0 est 
 
 * Lors de la migration de contenus à partir d’un chemin d’accès spécifique, CTT extrayait des ressources non liées. Ce problème a été résolu
 
-## Analyseur de bonnes pratiques {#best-practices-analyzer}
+## Analyseur des bonnes pratiques {#best-practices-analyzer}
 
 ### Date de publication {#release-date-bpa}
 
-La date de publication de la version 2.1.8 de l’analyseur des bonnes pratiques est le 22 mars 2021.
+La date de publication de l’analyseur de bonnes pratiques v2.1.8 est le 22 mars 2021.
 
 ### Nouveautés de l’analyseur de bonnes pratiques {#what-is-new-bpa}
 
