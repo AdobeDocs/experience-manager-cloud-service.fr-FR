@@ -2,7 +2,7 @@
 title: Les schémas de métadonnées définissent la disposition de la page des propriétés de métadonnées.
 description: Le schéma de métadonnées définit la mise en page de la page de propriétés, ainsi que les propriétés de métadonnées affichées pour les ressources. Apprenez à créer un schéma de métadonnées personnalisé, à le modifier et à l’appliquer aux ressources.
 contentOwner: AG
-feature: 'Métadonnées '
+feature: Métadonnées
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
 source-git-commit: 7ea0e6c2d277199fc5216aab70e587bd23ac6baa
@@ -135,7 +135,7 @@ Pour garantir que le composant s’affiche correctement dans le formulaire de sc
 
 Si vous sélectionnez l’option **[!UICONTROL Obligatoire]**, vous pouvez rechercher des fichiers dont les métadonnées obligatoires sont manquantes. Dans le panneau **[!UICONTROL Filtres]**, développez le prédicat **[!UICONTROL Validation des métadonnées]** et sélectionnez l’option **[!UICONTROL Non valide]**. Les résultats de la recherche affichent des fichiers dont les métadonnées obligatoires que vous avez configurées via le formulaire de schéma sont manquantes.
 
-Si vous ajoutez le composant Métadonnées contextuelles à un onglet d’un formulaire de schéma, le composant apparaît sous forme de liste sur la page Propriétés des ressources auxquelles ce   schéma particulier est appliqué. La liste inclut tous les autres onglets, à l’exception de celui auquel vous avez appliqué le composant Métadonnées contextuelles. Actuellement, cette fonctionnalité fournit des fonctions de base pour contrôler l’affichage des métadonnées en fonction du contexte.
+Si vous ajoutez le composant Métadonnées contextuelles à un onglet d’un formulaire de schéma, le composant apparaît sous forme de liste sur la page Propriétés des ressources auxquelles ce schéma particulier est appliqué. La liste inclut tous les autres onglets, à l’exception de celui auquel vous avez appliqué le composant Métadonnées contextuelles. Actuellement, cette fonctionnalité fournit des fonctions de base pour contrôler l’affichage des métadonnées en fonction du contexte.
 
 Pour afficher un onglet sur la page Propriétés en plus de l’onglet auquel le composant Métadonnées contextuelles est appliqué, sélectionnez-le dans la liste. L’onglet est ajouté à la page Propriétés.
 
@@ -169,7 +169,7 @@ Pour supprimer un formulaire, sélectionnez-le puis cliquez sur l’icône Suppr
 >* Vous ne pouvez pas supprimer les formulaires de schéma de métadonnées par défaut dans [!DNL Assets].
 
 
-## Formulaires de schéma pour les types MIME  {#schema-forms-for-mime-types}
+## Formulaires de schéma pour les types MIME {#schema-forms-for-mime-types}
 
 [!DNL Experience Manager] fournit des formulaires par défaut pour plusieurs types MIME prêts à l’emploi. Vous pouvez toutefois ajouter des formulaires personnalisés pour les ressources de plusieurs types MIME.
 
@@ -230,7 +230,7 @@ L’héritage des métadonnées par les ressources est basé sur le schéma appl
 1. Cliquez sur **OK** pour fermer le message de confirmation.
 1. Accédez au dossier auquel vous avez appliqué le schéma de métadonnées modifié.
 
-## Définition des métadonnées obligatoires  {#defining-mandatory-metadata}
+## Définition des métadonnées obligatoires {#defining-mandatory-metadata}
 
 Vous pouvez définir des champs obligatoires au niveau d’un dossier, qui s’appliquent aux ressources chargées dans ce dossier. Si vous chargez des ressources présentant des métadonnées manquantes dans des champs obligatoires précédemment définis, une indication visuelle de métadonnées manquantes apparaît sur les ressources en mode Carte.
 
