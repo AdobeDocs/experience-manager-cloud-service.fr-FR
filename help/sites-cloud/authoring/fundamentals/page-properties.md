@@ -21,7 +21,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Titre et balises**
 
-   * **Titre** - Le titre de la page est affiché à divers emplacements ; dans la liste de l’onglet **Sites Web** et les vues de carte/liste **Sites**, par exemple
+   * **Titre** – Le titre de la page est affiché à divers emplacements ; dans la liste de l’onglet **Sites Web** et les vues de carte/liste **Sites**, par exemple
       * Ce champ est obligatoire.
    * **Balises** - Vous pouvez ajouter des balises sur la page, ou en supprimer, en mettant à jour la liste dans la zone de sélection.
       * La balise sélectionnée est alors répertoriée sous la zone de sélection. Vous pouvez supprimer une balise de cette liste à l’aide du symbole x.
@@ -31,7 +31,7 @@ Les propriétés sont réparties sur plusieurs onglets.
       * Vous pouvez faire votre choix parmi les balises existantes dans la liste déroulante.
       * Un « x » apparaît lorsque vous passez le pointeur de la souris sur une entrée de balise dans la zone de sélection ; vous pouvez vous en servir pour supprimer cette balise de la page.
       * Pour plus d’informations sur les balises, voir [Utilisation des balises](/help/sites-cloud/authoring/features/tags.md).
-   * **Masquer dans la navigation** - Indique si la page doit être affichée ou masquée dans la navigation entre les pages du site qui en résulte.
+   * **Masquer dans la navigation** – Indique si la page doit être affichée ou masquée dans la navigation entre les pages du site qui en résulte.
 
 * **Valorisation de marque**
 
@@ -44,27 +44,27 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **ID HTML**
 
-   * **ID** - Identification HTML à appliquer au composant.
+   * **ID** – Identification HTML à appliquer au composant.
 
 * **Autres titres et descriptions**
 
-   * **Titre de la page** - Titre - à utiliser sur la page. Habituellement utilisé par les composants du titre. Si ce champ reste vide, le **titre** est utilisé.
-   * **Titre de navigation** - Vous pouvez spécifier un titre distinct à utiliser dans la navigation (par exemple, si vous souhaitez qu’il soit plus concis). Si ce champ est vide, le **Titre** est utilisé.
-   * **Sous-titre** - Sous-titre - à utiliser sur la page.
-   * **Description** - Votre description de la page, son objectif ou tout autre détail que vous souhaiteriez ajouter.
+   * **Titre de la page** – Titre à utiliser sur la page. Habituellement utilisé par les composants du titre. Si ce champ reste vide, le **titre** est utilisé.
+   * **Titre de navigation** – Vous pouvez spécifier un titre distinct à utiliser dans la navigation (par exemple, si vous souhaitez qu’il soit plus concis). Si ce champ est vide, le **Titre** est utilisé.
+   * **Sous-titre** – Sous-titre à utiliser sur la page.
+   * **Description** – Votre description de la page, son objectif ou tout autre détail que vous souhaiteriez ajouter.
 
 * **Heure d’activation/de désactivation**
 
-   * **Heure d’activation** - Date et heure auxquelles la page publiée sera rendue visible (rendue) dans l’environnement de publication. La page doit être publiée, soit manuellement, soit par réplication automatique préconfigurée.
+   * **Heure d’activation** – Date et heure auxquelles la page publiée sera rendue visible (rendue) dans l’environnement de publication. La page doit être publiée, soit manuellement, soit par réplication automatique préconfigurée.
 
       >[!NOTE]
       >
-      > Voir [Heures d’activation et de désactivation - Configuration du déclenchement](/help/operations/replication.md#on-and-off-times-trigger-configuration) pour en savoir plus sur la configuration de la réplication automatique associée.
+      > Voir [Heures d’activation et de désactivation – Configuration du déclenchement](/help/operations/replication.md#on-and-off-times-trigger-configuration) pour en savoir plus sur la configuration de la réplication automatique associée.
 
       * Si elle a déjà été [publiée (manuellement)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md), cette page reste inactive (masquée) jusqu’à son rendu au moment spécifié.
       * Si elle n’est pas publiée et configurée pour la réplication automatique, la page est automatiquement publiée, puis rendue au moment spécifié.
       * Si elle n’est pas publiée et n’est pas configurée pour la réplication automatique, la page n’est pas publiée automatiquement. Un message 404 s’affiche donc lors d’une tentative d’accès à la page.
-   * **Heure de désactivation** - Similaire à l’**heure d’activation**, souvent utilisée en combinaison avec cette dernière, définit l’heure à laquelle la page publiée sera masquée dans l’environnement de publication.
+   * **Heure de désactivation** – Similaire à l’**heure d’activation**, souvent utilisée en combinaison avec cette dernière, définit l’heure à laquelle la page publiée sera masquée dans l’environnement de publication.
 
    * Laissez ces champs (**Heure d’activation** et **Heure de désactivation**) vides pour les pages que vous souhaitez publier immédiatement et qui sont disponibles dans l’environnement de publication jusqu’à ce qu’elles soient désactivées (scénario normal).
 
@@ -83,10 +83,10 @@ Les propriétés sont réparties sur plusieurs onglets.
    >* ne doit pas être définie sur une page existante.
 
 
-   * **Ajouter** - Appuyez ou cliquez pour afficher un champ afin de définir une URL d’origine pour la page.
+   * **Ajouter** – Appuyez ou cliquez pour afficher un champ afin de définir une URL d’origine pour la page.
       * Appuyez ou cliquez de nouveau pour ajouter plusieurs éléments.
       * Appuyez ou cliquez sur l’icône **Supprimer** pour supprimer l’URL Vanity.
-   * **Rediriger l’URL Vanity** - Indique si vous souhaitez que la page utilise l’URL Vanity.
+   * **Rediriger l’URL Vanity** – Indique si vous souhaitez que la page utilise l’URL Vanity.
 
 
 
@@ -95,11 +95,11 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Paramètres**
 
-   * **Langue** - Langue de la page.
-   * **Racine de la langue** - Cette option doit être activée si la page est la racine d’une copie de langue.
-   * **Rediriger** - Indique la page vers laquelle cette page doit être automatiquement redirigée.
-   * **Conception** - Indique si la page doit être affichée ou masquée dans la navigation entre les pages du site qui en résulte.
-   * **Alias** - Indique un alias à utiliser avec cette page.
+   * **Langue** – Langue de la page.
+   * **Racine de la langue** – Cette option doit être activée si la page est la racine d’une copie de langue.
+   * **Rediriger** – Indique la page vers laquelle cette page doit être automatiquement redirigée.
+   * **Conception** – Indique si la page doit être affichée ou masquée dans la navigation entre les pages du site qui en résulte.
+   * **Alias** – Indique un alias à utiliser avec cette page.
 
    >[!NOTE]
    >
@@ -115,34 +115,34 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Configuration**
 
-   * **Configuration du cloud** - Chemin d’accès à la configuration
+   * **Configuration du cloud** – Chemin d’accès à la configuration
 
 * **Paramètres de modèles**
 
-   * **Modèles autorisés** - [Définit la liste des modèles qui seront disponibles](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) dans cette sous-branche
+   * **Modèles autorisés** – [Définit la liste des modèles qui seront disponibles](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) dans cette sous-branche
 
 * **Exigence d’authentification**
 
-   * **Activer** - Activer l’utilisation de l’authentification pour accéder à la page
+   * **Activer** – Activer l’utilisation de l’authentification pour accéder à la page
 
       >[!NOTE]
       >
       >Les groupes d’utilisateurs fermés pour la page sont définis dans l’onglet **[Autorisations](#permissions)**.
 
-   * **Page de connexion** - Page à utiliser pour la connexion
+   * **Page de connexion** – Page à utiliser pour la connexion
 
 * **Exportation**
 
-   * **Configuration de l’exportation** - Spécifie une configuration d’exportation.
+   * **Configuration de l’exportation** – Spécifie une configuration d’exportation.
 
 ### Miniature {#thumbnail}
 
 Configuration de la miniature de la page
 
-* **Générer l’aperçu** - Génère un aperçu de la page à utiliser comme miniature.
-* **Télécharger l’image** - Transfère une image à utiliser comme miniature
-* **Sélectionner une image** - Sélectionne une ressource existante à utiliser comme miniature.
-* **Rétablir** - Cette option n’est disponible qu’après avoir effectué une modification de la miniature. Si vous ne souhaitez pas conserver votre modification, vous pouvez la rétablir avant de l’enregistrer.
+* **Générer l’aperçu** – Génère un aperçu de la page à utiliser comme miniature.
+* **Télécharger l’image** – Transfère une image à utiliser comme miniature
+* **Sélectionner une image** – Sélectionne une ressource existante à utiliser comme miniature.
+* **Rétablir** – Cette option n’est disponible qu’après avoir effectué une modification de la miniature. Si vous ne souhaitez pas conserver votre modification, vous pouvez la rétablir avant de l’enregistrer.
 
 ### Réseaux sociaux {#social-media}
 
@@ -157,7 +157,7 @@ Configuration de la miniature de la page
 
 ### Cloud Services {#cloud-services}
 
-* **Configurations du service cloud**  - Définit les propriétés des services cloud
+* **Configurations de Cloud Service**  - Définition des propriétés des services cloud
 
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
@@ -166,12 +166,12 @@ Configuration de la miniature de la page
 
 * **Configurations ContextHub**
 
-   * **Chemin ContextHub** - Définit la [configuration ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)
-   * **Chemin d’accès aux segments** - Définit le chemin d’accès aux [segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
+   * **Chemin ContextHub** – Définit la [configuration ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)
+   * **Chemin d’accès aux segments** – Définit le chemin d’accès aux [segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 
 * **Configuration du ciblage**
 
-   * **Marque** - Définit une [marque pour spécifier la portée du ciblage](/help/sites-cloud/authoring/personalization/targeted-content.md).
+   * **Marque** – Définit une [marque pour spécifier la portée du ciblage](/help/sites-cloud/authoring/personalization/targeted-content.md).
    >[!NOTE]
    >Cette option nécessite que le compte utilisateur figure dans le groupe `Target Administrators`.
 
@@ -193,16 +193,16 @@ Configuration de la miniature de la page
 
 Cet onglet n’est visible que pour les pages qui servent de plan directeur. Les plans directeurs servent de base aux Live Copies pour [la gestion multisite.](/help/sites-cloud/administering/msm/overview.md)
 
-* **Live Copies actuelles** - Listes de pages basées sur (c.-à-d. Live Copies de) cette page de plan directeur.
+* **Live Copies actuelles** – Listes de pages basées sur (c.-à-d. Live Copies de) cette page de plan directeur.
 
-* **Configurations du déploiement** - Détermine les circonstances dans lesquelles les modifications seront diffusées à la Live Copy.
+* **Configurations du déploiement** – Détermine les circonstances dans lesquelles les modifications seront diffusées à la Live Copy.
 
-### Live Copy  {#live-copy}
+### Live Copy {#live-copy}
 
-* **Synchroniser** - Synchroniser la Live Copy avec le plan directeur, en conservant les modifications locales.
-* **Réinitialiser** - Réinitialiser la Live Copy à l’état de plan directeur, en supprimant les modifications locales.
-* **Suspendre** - Suspendre la Live Copy des modifications de déploiement supplémentaires.
-* **Désolidariser** - Désolidariser la Live Copy du plan directeur
+* **Synchroniser** – Synchroniser la Live Copy avec le plan directeur, en conservant les modifications locales.
+* **Réinitialiser** – Réinitialiser la Live Copy à l’état de plan directeur, en supprimant les modifications locales.
+* **Suspendre** – Suspendre la Live Copy des modifications de déploiement supplémentaires.
+* **Désolidariser** – Désolidariser la Live Copy du plan directeur
 
 * **Source**
 
@@ -214,9 +214,9 @@ Cet onglet n’est visible que pour les pages qui servent de plan directeur. Les
 
 * **Configuration**
 
-   * **Héritage de Live Copy** - Si cette option est cochée, la configuration de la Live Copy est effective sur tous les enfants.
-   * **Hériter des configurations de déploiement du parent** - Si cette option est cochée, la configuration de déploiement est héritée du parent de la page.
-   * **Choisir la configuration de déploiement** - Définit les circonstances dans lesquelles les modifications seront propagées à partir du plan directeur et disponibles uniquement lorsque **Hériter des configurations de déploiement du parent** n’est pas sélectionné
+   * **Héritage de Live Copy** – Si cette option est cochée, la configuration de la Live Copy est effective sur tous les enfants.
+   * **Hériter des configurations de déploiement du parent** – Si cette option est cochée, la configuration de déploiement est héritée du parent de la page.
+   * **Choisir la configuration de déploiement** – Définit les circonstances dans lesquelles les modifications seront propagées à partir du plan directeur et disponibles uniquement lorsque **Hériter des configurations de déploiement du parent** n’est pas sélectionné
 
 ### Aperçu {#preview}
 
