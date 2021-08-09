@@ -26,7 +26,7 @@ Cette page décrit les outils de Dispatcher, ainsi que la manière de les télé
 Les outils Dispatcher font partie du SDK global d’AEM as a Cloud Service et fournissent les éléments suivants :
 
 * Une structure de fichiers classique contenant les fichiers de configuration à inclure dans un projet maven pour le Dispatcher.
-* Outil permettant aux clients de confirmer que la configuration du Dispatcher inclut uniquement des directives prises en charge AEM as a Cloud Service.        En outre, l’outil confirme également que la syntaxe correcte afin qu’Apache puisse démarrer correctement.
+* Outil permettant aux clients de confirmer que la configuration du Dispatcher inclut uniquement des directives prises en charge AEM as a Cloud Service. En outre, l’outil confirme également que la syntaxe correcte afin qu’Apache puisse démarrer correctement.
 * Une image du Docker qui rend le Dispatcher accessible localement
 
 ## Téléchargement et extraction des outils {#extracting-the-sdk}
