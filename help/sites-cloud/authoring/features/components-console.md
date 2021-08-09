@@ -3,7 +3,7 @@ title: Console des composants
 description: La console Composants vous permet de parcourir tous les composants définis pour votre instance.
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '275'
 ht-degree: 100%
 
