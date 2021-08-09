@@ -5,7 +5,7 @@ exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '1941'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -102,14 +102,14 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 
 * Le lien vers Developer Console directement à partir de Cloud Manager n’affiche pas l’option permettant de mettre en veille/réactiver un environnement de programme Sandbox. Pour résoudre ce problème, une fois dans Developer Console, ajoutez le motif `#release-cm-p1234-e5678` à la fin de l’URL, où *1234* correspond à l’identifiant de programme et *5678* à l’identifiant d’environnement. Ce problème sera traité dans une prochaine version.
 
-## Nouveautés d’[!DNL Adobe Experience Manager Assets] {#aem-assets}
+## Nouveautés de la version  [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
 **Expérience utilisateur assistée pour les balises intelligentes améliorées, optimisée par Adobe Sensei**
 
 Les balises intelligentes améliorées permettent aux entreprises d’entraîner des modèles de balisage intelligent pour reconnaître les images en fonction de balises commerciales spécifiques aux clients, en plus des balises intelligentes génériques.
 
 Cette version apporte une nouvelle expérience utilisateur assistée qui permet de configurer l’entraînement des balises intelligentes pour des ensembles de balises spécifiques au client, mais aussi de les entraîner sur des ressources qui devront être reconnues et balisées plus tard. L’expérience est désormais plus intuitive.
-Entraînez des balises intelligentes améliorées pour un entraînement plus intuitif. Voir [Comment ajouter des balises intelligentes aux ressources](/help/assets/smart-tags.md).
+Entraînez des balises intelligentes améliorées pour un entraînement plus intuitif. Voir la section [Comment ajouter des balises intelligentes aux ressources](/help/assets/smart-tags.md).
 
 **Prise en charge de l’ingestion, de la prévisualisation et de la diffusion des contenus 3D**
 
