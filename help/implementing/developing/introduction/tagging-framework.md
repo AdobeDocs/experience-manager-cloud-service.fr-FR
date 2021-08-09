@@ -3,7 +3,7 @@ title: Cadre de balisage AEM
 description: Balisage de contenu et utilisation du cadre de balisage AEM afin de la classer et de l’organiser.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1567'
 ht-degree: 100%
 
@@ -196,7 +196,7 @@ La lecture d’une propriété `cq:tags` d’un nœud de contenu implique la ré
 
 1. S’il n’existe aucune correspondance sous `/content/cq:tags`, aucune balise n’est renvoyée.
 1. Si la propriété `cq:movedTo` est définie pour la balise, l’ID de balise référencé est suivi.
-   *  Cette étape est répétée aussi longtemps que la balise suivie contient la propriété `cq:movedTo`.
+   * Cette étape est répétée aussi longtemps que la balise suivie contient la propriété `cq:movedTo`.
 1. Si la balise suivie n’est pas associée à une propriété `cq:movedTo`, elle est lue.
 
 Pour publier la modification lorsqu’une balise a été déplacée ou fusionnée, le nœud `cq:Tag` et tous ses liens retours doivent être répliqués. Cette opération est réalisée automatiquement lorsque la balise est activée dans la console d’administration des balises.
