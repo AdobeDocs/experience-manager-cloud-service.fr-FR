@@ -92,5 +92,5 @@ Pour utiliser la fonctionnalité Media Library, vous pouvez utiliser l’interfa
 >[!MORELIKETHIS]
 >
 >* [Fonctionnalités de gestion des actifs numériques dans [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=fr)
->* Description du produit[[!DNL Experience Manager] as a [!DNL Cloud Service] ](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* Description du produit [[!DNL Experience Manager] as a [!DNL Cloud Service] ](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
 
