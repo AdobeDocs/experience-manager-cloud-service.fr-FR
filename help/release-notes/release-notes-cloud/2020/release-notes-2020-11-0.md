@@ -20,7 +20,7 @@ La version suivante (2020.12.0) sera publiée le 17 décembre 2020.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### Nouveautés d’[!DNL Sites] {#what-is-new-sites}
+### Nouveautés d’[!DNL Sites]  {#what-is-new-sites}
 
 * **[Lancement de la gestion de hiérarchie](/help/sites-cloud/authoring/launches/managing-pages.md) et de la fonction [Future Timewarp](/help/sites-cloud/authoring/launches/preview.md)** : nouvelle interface utilisateur pour ajouter ou supprimer des pages lors d’un lancement. De plus, le site de navigation affiche l’état futur des lancements grâce à Timewarp.
 
@@ -87,7 +87,7 @@ La version suivante (2020.12.0) sera publiée le 17 décembre 2020.
 
 La date de publication de Cloud Manager dans AEM as a Cloud Service 2020.11.0 est le 12 novembre 2020.
 
-### Nouveautés de [!DNL Cloud Manager] {#what-is-new-cm}
+### Nouveautés d’[!DNL Cloud Manager]  {#what-is-new-cm}
 
 * Une nouvelle option de menu **Connexion locale** est désormais disponible pour les utilisateurs à partir des options du menu Environnement dans la carte **Environnements** et les pages de résumé des **environnements**.
 Pour plus d’informations, consultez [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md#login-locally).
@@ -131,13 +131,13 @@ Consultez cette section pour découvrir les nouveautés et les mises à jour de 
 
 * L’outil de transfert de contenu ignorait les fichiers de contenu si le jeu de migration contenait des chemins dont les noms de fichiers étaient partiellement similaires. Ce problème a été résolu.
 
-## Analyseur de bonnes pratiques {#best-practices-analyzer}
+## Analyseur des bonnes pratiques {#best-practices-analyzer}
 
 ### Date de publication {#release-date-bpa}
 
 La date de publication de l’analyseur de bonnes pratiques est le 13 novembre 2020.
 
-### Nouveautés de [!DNL Best Practices Analyzer] {#what-is-new-bpa}
+### Nouveautés d’[!DNL Best Practices Analyzer]  {#what-is-new-bpa}
 
 * Cloud Readiness Analyzer est désormais appelé Analyseur de bonnes pratiques (Best Practices Analyzer, BPA). L’analyseur de bonnes pratiques réalise une évaluation des bonnes pratiques de votre mise en œuvre d’AEM en cours et permet d’évaluer plus efficacement la capacité de passer d’une instance AEM existante à AEM as a Cloud Service.
 
