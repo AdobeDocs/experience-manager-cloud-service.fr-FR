@@ -3,7 +3,7 @@ title: Création de lancements
 description: Vous pouvez créer un lancement afin de permettre la mise à jour d’une nouvelle version des pages web existantes en vue d’une activation future.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1045'
 ht-degree: 100%
 
@@ -25,7 +25,8 @@ Vous pouvez éventuellement indiquer la **date de lancement** (et l’heure) pou
 >
 >* `/libs/launches/templates/outofscope`
 >
->Ces pages ne peuvent pas être modifiées. Le message suivant s’affiche :
+>
+Ces pages ne peuvent pas être modifiées. Le message suivant s’affiche :
 >
 >* **Cette page ne fait pas partie du lancement. Accéder à la page de production**
 
