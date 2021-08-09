@@ -3,7 +3,7 @@ title: Affichage, mise à jour et remplacement d’un nom de domaine personnalis
 description: Affichage, mise à jour et remplacement d’un nom de domaine personnalisé
 exl-id: 33da9270-b73c-46e5-9cd4-5b4eb3928396
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '70'
 ht-degree: 100%
 
