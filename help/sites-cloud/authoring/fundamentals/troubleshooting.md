@@ -3,7 +3,7 @@ title: Résolution des problèmes d’AEM lors de la création
 description: Problèmes pouvant survenir lors de l’utilisation d’AEM
 exl-id: b9c0584d-255e-486d-b829-09e07499ecd2
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '235'
 ht-degree: 100%
 
@@ -17,9 +17,9 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
 * **Problème** :
    * Vous avez modifié une page et l’avez publiée sur le site de publication, mais l’*ancienne* version de la page est toujours visible sur le site de publication.
-* **Raison**:
+* **Raison** :
    * Les raisons peuvent être multiples, mais sont généralement liées à la mémoire cache (de votre navigateur local ou du dispatcher), bien qu’il s’agisse parfois d’un problème de la file d’attente de réplication.
-* **Solutions**:
+* **Solutions** :
    * Plusieurs solutions sont possibles :
    * Vérifiez que la page a bien été répliquée. Vérifiez l’état de la page et, si nécessaire, l’état de la file d’attente de réplication.
    * Effacez la mémoire cache du navigateur local et accédez de nouveau à votre page.
@@ -32,7 +32,7 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
 * **Problème** :
    * La plage entière des actions de composants applicables n’est pas visible lors de la modification d’une page de contenu dans l’environnement de création.
-* **Raison**:
+* **Raison** :
    * Dans de rares cas, une action précédente peut avoir un impact sur la barre d’outils.
-* **Solution**:
+* **Solution** :
    * Actualisez la page.
