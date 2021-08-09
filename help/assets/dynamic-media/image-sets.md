@@ -29,7 +29,7 @@ Par exemple, supposons que vous souhaitez présenter les images d’une casquett
 >
 >Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources avec l’interface utilisateur tactile](/help/assets/manage-digital-assets.md).
 
-## Démarrage rapide : Visionneuses d’images  {#quick-start-image-sets}
+## Démarrage rapide : Visionneuses d’images {#quick-start-image-sets}
 
 Pour démarrer rapidement :
 
@@ -238,6 +238,6 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
 
 Voir [Aperçu des ressources](/help/assets/dynamic-media/previewing-assets.md).
 
-## Publication de visionneuses d’images  {#publishing-image-sets}
+## Publication de visionneuses d’images {#publishing-image-sets}
 
 Voir [Publier les ressources](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
