@@ -3,7 +3,7 @@ title: Ajout de ContextHub à des pages et accès à des magasins
 description: Ajoutez ContextHub à vos pages pour activer les fonctionnalités ContextHub et créer un lien vers les bibliothèques JavaScript ContextHub
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '927'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ Pour activer les fonctionnalités et créer un lien vers les bibliothèques Java
 
 Notez que vous devez également déterminer si la barre d’outils ContextHub apparaît ou non dans le mode Aperçu. Voir [Affichage et masquage de l’IU ContextHub](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
 
-## À propos des magasins ContextHub  {#about-contexthub-stores}
+## À propos des magasins ContextHub {#about-contexthub-stores}
 
 Utilisez des magasins ContextHub pour conserver des données contextuelles. ContextHub fournit les types de magasins suivants, qui constituent la base de tous les types :
 
@@ -36,7 +36,7 @@ Utilisez des magasins ContextHub pour conserver des données contextuelles. Cont
 
 Tous les types de magasins sont des extensions de la classe [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core). Pour plus d’informations sur la création d’un type de magasin, voir [Création de magasins personnalisés](extending-contexthub.md#creating-custom-store-candidates). Pour plus d’informations sur les exemples de types de magasins, voir [Exemples de candidats au titre de magasins ContextHub](sample-stores.md).
 
-### Modes de persistance  {#persistence-modes}
+### Modes de persistance {#persistence-modes}
 
 Les magasins ContextHub utilisent l’un des modes de persistance suivants :
 
