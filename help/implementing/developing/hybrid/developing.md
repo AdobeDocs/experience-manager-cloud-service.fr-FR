@@ -54,7 +54,7 @@ Tout routage statique va à l’encontre du [principe de portabilité](#portabil
 
 ## Archétype de projet AEM {#aem-project-archetype}
 
-Tout projet AEM doit exploiter l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets SPA à l’aide de React ou d’Angular et utilise le SDK SPA.
+Un projet AEM doit tirer parti de l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets SPA à l’aide de React ou d’Angular et tire parti du SDK SPA.
 
 ## Modèles de conception de SPA {#spa-design-models}
 
@@ -97,9 +97,9 @@ En règle générale, si votre SPA respecte les [principes de développement de 
 
 Respectez les étapes suivantes pour préparer l’utilisation de votre SPA existante dans AEM.
 
-1. **Rendez vos composants JS modulaires.** - Permettez leur rendu dans n’importe quel ordre, position et taille.
-1. **Utilisez les conteneurs fournis par notre SDK pour placer vos composants à l’écran.** - AEM fournit un composant de système de paragraphe et de page que vous pouvez utiliser.
-1. **Créez un composant AEM pour chaque composant JS.** - Les composants AEM définissent la boîte de dialogue et la sortie JSON.
+1. **Rendez vos composants JS modulaires.** – Permettez leur rendu dans n’importe quel ordre, position et taille.
+1. **Utilisez les conteneurs fournis par notre SDK pour placer vos composants à l’écran.** – AEM fournit un composant de système de paragraphe et de page que vous pouvez utiliser.
+1. **Créez un composant AEM pour chaque composant JS.** – Les composants AEM définissent la boîte de dialogue et la sortie JSON.
 
 ## Instructions destinées aux développeurs front-end {#instructions-for-front-end-developers}
 
