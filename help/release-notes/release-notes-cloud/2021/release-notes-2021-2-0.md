@@ -3,9 +3,9 @@ title: Notes de mise à jour de la version 2021.2.0 d’ [!DNL Adobe Experience
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2021.2.0.
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
 source-git-commit: b842f70bd53676d23229e24edb4a957ff7613824
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1237'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ La section suivante présente les notes de mise à jour générales d’[!DNL Ex
 ## Date de publication {#release-date}
 
 La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service version 2021.2.0 est le 25 février 2021.
-La version suivante (2021.3.0) sera publiée le 25 mars 2021.
+La version suivante (2021.3.0) sera publiée le 25 mars 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
@@ -51,32 +51,32 @@ La version suivante (2021.3.0) sera publiée le 25 mars 2021.
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-## Nouveautés de [!DNL Assets] {#what-is-new-assets}
+## Nouveautés d’[!DNL Assets] {#what-is-new-assets}
 
-* Les ressources peuvent être sources à l’aide de [!DNL Experience Manager Assets Brand Portal]. Il permet d’obtenir des ressources auprès des utilisateurs de l’agence pour de nouvelles campagnes marketing, séances photo et projets.
+* Les ressources peuvent être sourcées à l’aide de [!DNL Experience Manager Assets Brand Portal]. Il permet d’obtenir des ressources auprès des utilisateurs de l’agence pour de nouvelles campagnes marketing, séances photo et projets.
 
-* [!DNL Experience Manager Assets] as a  [!DNL Cloud Service] a le droit d’avoir une  [!DNL Brand Portal] instance préconfigurée. L’utilisateur [!DNL Cloud Manager] peut activer [!DNL Brand Portal] sur [!DNL Experience Manager Assets] sous la forme [!DNL Cloud Service]. Voir [Activation de Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=fr).
+* [!DNL Experience Manager Assets] as a [!DNL Cloud Service] est autorisé à avoir une instance [!DNL Brand Portal] préconfigurée. L’utilisateur de [!DNL Cloud Manager] peut activer [!DNL Brand Portal] dans [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. Consultez [Activation de Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=fr).
 
-* Les entreprises peuvent désormais sources des ressources à l’aide de [!DNL Brand Portal]. La fonction d’approvisionnement des ressources exploite [!DNL Brand Portal] pour aider les clients à interagir avec les utilisateurs de l’agence pour sources de ressources pour de nouvelles campagnes marketing, séances photo et projets. Voir [approvisionnement des ressources dans [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
+* Les entreprises peuvent désormais approvisionner des ressources à l’aide de [!DNL Brand Portal]. La fonction d’approvisionnement des ressources s’appuie sur [!DNL Brand Portal] pour aider les clients à s’engager auprès des utilisateurs en agence pour approvisionner les ressources nécessaires à de nouvelles campagnes marketing, des séances de photos et des projets. Voir [Approvisionnement des ressources dans [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=fr).
 
-* Le rapport d’utilisation [!DNL Brand Portal] affiche désormais uniquement les utilisateurs principaux. Les utilisateurs inactifs ne s’affichent pas maintenant. Les utilisateurs principaux sont ceux dont le compte est affecté à un profil de produit dans la balise [!DNL Admin Console]. Voir [[!DNL Brand Portal] rapports](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
+* Le rapport d’utilisation de [!DNL Brand Portal] n’affiche désormais que les utilisateurs actifs. Les utilisateurs inactifs ne s’affichent pas. Les utilisateurs principaux sont ceux dont le compte est affecté à un profil de produit dans l’[!DNL Admin Console]. Voir la section relative aux rapports [[!DNL Brand Portal] ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html?lang=fr).
 
-* Dans [!DNL Brand Portal], un nouveau paramètre de téléchargement est ajouté. Il permet de créer un dossier distinct pour chaque ressource lors du téléchargement de dossiers, de collections, etc. Consultez [Paramètres de téléchargement](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
+* Un nouveau paramètre de téléchargement est introduit dans [!DNL Brand Portal], ce qui vous permet de créer un dossier distinct pour chaque fichier lors du téléchargement de dossiers, de collections, etc. Voir [Paramètres de téléchargement](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html?lang=fr).
 
-## Correctifs de bogues dans [!DNL Assets] {#bug-fixes-assets}
+## Bogues corrigés dans [!DNL Assets] {#bug-fixes-assets}
 
-* Lorsque plusieurs ressources sont sélectionnées pour mettre à jour les propriétés, une erreur se produit parfois ou les propriétés d’une ressource désélectionnée sont mises à jour. (CQ-4316532)
-* Lorsque vous essayez d’ouvrir [!UICONTROL Rail de recherche d’administrateurs de ressources], la page reste vide et cliquez sur [!UICONTROL Modifier] > [!UICONTROL Paramètres] génère une erreur. (CQ-4315079)
-* Lorsqu’une nouvelle version d’une ressource existante est créée après la résolution du conflit de dénomination, les métadonnées de la ressource d’origine sont écrasées. (CQ-4313594)
-* Lorsqu’une ressource contenant du texte d’annotation long est imprimée, le texte de l’annotation est ajusté, même si de l’espace est disponible. (CQ-4314101)
+* Lorsque plusieurs ressources sont sélectionnées pour mettre à jour les propriétés, il arrive parfois qu’une erreur se produise ou que les propriétés d’une ressource désélectionnée soient mises à jour. (CQ-4316532)
+* Lorsque vous tentez d’ouvrir le [!UICONTROL rail de recherche d’administrateurs de ressources], la page reste vide et le fait de cliquer sur [!UICONTROL Modifier] > [!UICONTROL Paramètres] génère une erreur. (CQ-4315079)
+* Lorsqu’une nouvelle version d’une ressource existante est créée après la résolution du conflit d’affectation de nom, les métadonnées de la ressource d’origine sont remplacées. (CQ-4313594)
+* Lors de l’impression d’un fichier avec un texte d’annotation long, le texte de l’annotation est ajusté, même s’il existe un espace disponible. (CQ-4314101)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Nouveautés {#what-is-new-commerce}
 
-* Gestion de l’expérience du produit : Enrichissez les pages du catalogue de produits individuellement avec les fragments d’expérience.
+* Gestion de l’expérience des produits : enrichissez les pages du catalogue de produits individuellement grâce aux fragments d’expérience.
 
-* Étendez les propriétés de la console de produit pour afficher les ressources liées et les fragments d’expérience, y compris l’action permettant d’accéder rapidement au contenu associé.
+* Propriétés étendues de la console de produits pour afficher les ressources liées et les fragments d’expérience, y compris les actions permettant d’accéder rapidement au contenu associé.
 
 * Publication du site de référence de CIF Venia – 2021.02.24 qui comprend les derniers composants principaux de CIF version 1.8.0. Pour plus d’informations, consultez [Site de référence de CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24).
 
@@ -91,31 +91,31 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.2.0 est
 ### Nouveautés {#what-is-new-cloud-manager}
 
 
-* Les clients Assets pourront désormais choisir quand et où déployer leur instance Brand Portal en libre-service via l’interface utilisateur de Cloud Manager. Pour un programme ordinaire (autre qu’un environnement de test) avec la solution Assets, Brand Portal peut désormais être configuré dans l’environnement de production. La mise en service ne peut être effectuée qu’une seule fois dans l’environnement de production.
+* Les clients Assets peuvent désormais choisir quand et où déployer leur instance de Brand Portal en libre-service via l’interface utilisateur de Cloud Manager. Pour un programme standard (autre que l’environnement de test – Sandbox) avec la solution Assets, Brand Portal peut désormais être mis en service sur l’environnement de production. L’approvisionnement ne peut être effectué qu’une seule fois sur l’environnement de production.
 
-* L’archétype de projet AEM utilisé dans Project et Sandbox Creation a été mis à jour vers la version 25.
+* L’archétype de projet AEM utilisé dans la création de projet et de sandbox a été mis à jour à la version 25.
 
 * La liste des API obsolètes identifiées lors de l’analyse du code a été affinée afin d’inclure d’autres classes et méthodes obsolètes dans les dernières versions du SDK Cloud Service.
 
-* Profil SonarQube pour Cloud Manager mis à jour afin de supprimer la règle Sonar squid:S2142. Cela n’entre plus en conflit avec les contrôles d’interruption de threads.
+* Le profil SonarQube pour Cloud Manager a été mis à jour pour supprimer la règle Sonar squid:S2142. Il n’y aura plus de conflit avec les contrôles d’interruption de thread.
 
-* L’interface utilisateur de Cloud Manager informera l’utilisateur qui ne pourra pas ajouter/mettre à jour temporairement le nom de domaine, car l’environnement associé est associé à un pipeline en cours d’exécution ou est actuellement en attente de l’étape d’approbation.
+* L’interface utilisateur de Cloud Manager informe un utilisateur qui ne pourrait pas temporairement ajouter/mettre à jour le nom de domaine, car l’environnement associé dispose soit d’un pipeline en cours d’exécution qui lui est associé, soit une étape d’approbation en attente.
 
-* Les propriétés définies dans les fichiers `pom.xml` clients avec le préfixe sonar seront désormais supprimées dynamiquement afin d’éviter les échecs d’analyse de génération et de qualité.
+* Les propriétés définies dans les fichiers `pom.xml` clients précédés d’un préfixe sonar seront désormais supprimées dynamiquement afin d’éviter les échecs d’analyse de la génération et de la qualité.
 
-* L’interface utilisateur de Cloud Manager informe l’utilisateur qui ne peut pas sélectionner de certificat SSL pour le moment s’il est utilisé par un nom de domaine en cours de déploiement.
+* L’interface utilisateur de Cloud Manager informe un utilisateur qui ne peut pas temporairement sélectionner un certificat SSL s’il est utilisé par un nom de domaine en cours de déploiement.
 
-* Des règles de qualité du code supplémentaires ont été ajoutées pour couvrir les problèmes de compatibilité du Cloud Service.
+* Des règles de qualité de code supplémentaires ont été ajoutées pour résoudre les problèmes de compatibilité de Cloud Service.
 
 ### Correctifs {#bug-fixes-cloud-manager}
 
-* La correspondance d’un certificat SSL avec un nom de domaine n’est plus sensible à la casse.
+* La correspondance entre un certificat SSL et un nom de domaine n’est plus sensible à la casse.
 
-* L’interface utilisateur de Cloud Manager informe désormais un utilisateur si le certificat de clés privées ne respecte pas la limite de 2 048 bits avec un message d’erreur approprié.
+* L’interface utilisateur de Cloud Manager informe désormais un utilisateur si les clés privées du certificat ne respectent pas la limite de 2 048 bits avec un message d’erreur approprié.
 
-* L’interface utilisateur de Cloud Manager informe l’utilisateur qui ne peut pas sélectionner de certificat SSL pour le moment s’il est utilisé par un nom de domaine en cours de déploiement.
+* L’interface utilisateur de Cloud Manager informe un utilisateur qui ne peut pas temporairement sélectionner un certificat SSL s’il est utilisé par un nom de domaine en cours de déploiement.
 
-* Dans certains cas, un problème interne peut entraîner le blocage de la suppression de l’environnement.
+* Dans certains cas, un problème interne peut bloquer la suppression d’un environnement.
 
 * Certains échecs de pipeline étaient incorrectement signalés comme des erreurs de pipeline.
 
@@ -123,11 +123,11 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.2.0 est
 
 ### Date de publication {#release-date-ctt}
 
-La date de publication de l’outil de transfert de contenu v1.2.4 est le 10 février 2021.
+La date de publication de l’outil de transfert de contenu version v1.2.4 est le 10 février 2021.
 
 ### Correctifs {#bug-fixes-ctt}
 
-* Lors du mappage de plusieurs utilisateurs, les identifiants IMS de certains utilisateurs étaient incorrectement mappés. Ce problème a été résolu.
+* Lors du mappage de plusieurs utilisateurs, les ID d’IMS de certains utilisateurs étaient incorrectement mappés. Ce problème a été résolu.
 
 ### Date de publication {#release-date-ctt-feb}
 
@@ -135,7 +135,7 @@ La date de publication de l’outil de transfert de contenu v1.2.2 est le 1er f
 
 ### Nouveautés de l’outil de transfert de contenu {#what-is-new-ctt}
 
-* Fonctionnalité et interface utilisateur nouvelles ajoutées à l’outil de transfert de contenu - Outil de mappage des utilisateurs. Cette fonctionnalité mappe automatiquement les utilisateurs et les groupes existants avec leur identifiant IMS (Identity Management System) Adobe au cours de l’activité de migration de contenu.
+* Fonctionnalité et interface utilisateur nouvelles ajoutées à l’outil de transfert de contenu – Outil de mappage des utilisateurs. Cette fonctionnalité mappe automatiquement les utilisateurs et les groupes existants avec leur identifiant IMS (Identity Management System) Adobe au cours de l’activité de migration de contenu.
 Pour plus d’informations, consultez [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr).
 * L’outil de transfert de contenu assure désormais la migration de tous les groupes et utilisateurs référencés dans le jeu de migration, y compris les enfants.
 * Les utilisateurs sont autorisés à sélectionner certains chemins sous `/etc` lors de la création de jeux de migration.
@@ -144,24 +144,24 @@ Pour plus d’informations, consultez [Utilisation de l’outil de mappage des u
 
 ### Date de publication {#release-date-bpa}
 
-La date de publication de la version 2.1.2 de l’analyseur des bonnes pratiques est le 18 février 2021.
+La date de publication de l’analyseur de bonnes pratiques v2.1.2 est le 18 février 2021.
 
-### Nouveautés de l’analyseur des bonnes pratiques {#what-is-new-bpa}
+### Nouveautés de l’analyseur de bonnes pratiques {#what-is-new-bpa}
 
-* Possibilité de détecter l’utilisation de l’implémentation d’AEM Forms et d’AEM Forms et d’indiquer les zones pertinentes pour la migration vers AEM Forms as a Cloud Service.
-* Possibilité de détecter et de générer des rapports sur l’utilisation et le nombre de composants et de modèles personnalisés.
-* Possibilité de détecter le type de magasin de noeuds et de magasin de données utilisé.
+* Capacité à détecter l’utilisation d’AEM Forms et la mise en œuvre d’AEM Forms et à indiquer les zones pertinentes pour la migration vers AEM Forms as a Cloud Service.
+* Capacité à détecter et à générer des rapports sur l’utilisation et le nombre de composants et de modèles personnalisés.
+* Capacité à détecter le type de stockage de nœuds et de stockage de données utilisé.
 * Capacité à détecter l’utilisation de Dynamic Media.
-* Possibilité de détecter la version Java utilisée.
+* Capacité à détecter la version Java utilisée.
 
 ## Outils de refactorisation du code {#code-refactoring-tools}
 
 ### Nouveautés des outils de refactorisation du code {#what-is-new-crt}
 
 * Publication de la nouvelle version du plug-in AIO-CLI. La dernière version de ce module comprend plusieurs correctifs pour Repository Modernizer.
-Pour en savoir plus sur ce module, voir [Expérience unifiée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=fr#benefits) .
+Consultez [Expérience unifiée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=fr#benefits) pour en savoir plus sur ce plug-in.
 
 ### Correctifs {#bug-fixes-crt}
 
-* Plusieurs correctifs ont été apportés sur Repository Modernizer.
-Voir [Ressource GitHub : aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) pour plus d’informations.
+* Plusieurs correctifs ont été apportés à Repository Modernizer.
+Consultez [Ressource GitHub : aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) pour plus d’informations.
