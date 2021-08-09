@@ -1,5 +1,5 @@
 ---
-title: Réutilisation de contenu - Multi Site Manager et Live Copy
+title: Réutilisation de contenu – Multi Site Manager et Live Copy
 description: Découvrez comment réutiliser du contenu avec les puissantes fonctionnalités de Live Copies et de Multi Site Manager AEM.
 feature: Multi Site Manager
 role: Admin
@@ -30,11 +30,11 @@ Cette page présente un aperçu de la réutilisation du contenu avec MSM. Les pa
 * [Conflits de déploiement de MSM](rollout-conflicts.md)
 * [Bonnes pratiques MSM](best-practices.md)
 
-## Scénarios possibles  {#possible-scenarios}
+## Scénarios possibles {#possible-scenarios}
 
 Il existe de nombreux cas d’utilisation pour MSM et les Live Copies. Voici quelques scénarios :
 
-* **Multinationales - Entreprise mondiale à locale**
+* **Multinationales – Entreprise mondiale à locale**
 
    Un cas d’utilisation type pris en charge par MSM consiste à réutiliser du contenu dans plusieurs sites internationaux utilisant la même langue. Cela permet de réutiliser le contenu de base, tout en autorisant des variantes nationales.
 
@@ -64,7 +64,7 @@ Il existe de nombreux cas d’utilisation pour MSM et les Live Copies. Voici qu
    >
    >Consultez [Traduction de contenu pour les sites multilingues](/help/sites-cloud/administering/translation/overview.md) pour cet exemple.
 
-* **National - Siège social et filiales régionales**
+* **National – Siège social et filiales régionales**
 
    Une autre possibilité est qu’une entreprise disposant d’un réseau de concessionnaires souhaite créer des sites web distincts pour chaque concession, chacun de ces sites étant une variante du site principal fourni par le siège social. Il peut s’agir d’une entreprise unique ayant plusieurs sites régionaux ou d’un système de franchise nationale constitué d’un franchisé central et de plusieurs franchisés locaux.
 
@@ -135,7 +135,7 @@ MSM est directement accessible dans l’interface utilisateur à l’aide de dif
 
    * Cette console vous permet [d’afficher et de gérer votre plan directeur et ses Live Copies.](live-copy-overview.md)
 
-* **Plans directeurs** (**Outils** - **Sites**)
+* **Plans directeurs** (**Outils** – **Sites**)
 
    * Cette console vous permet de [créer et de gérer vos configurations de plan directeur.](creating-live-copies.md#creating-a-blueprint-configuration)
 
@@ -191,7 +191,7 @@ Dans l’exemple précédent, `/content/wknd/language-masters/en` est le site ga
 * Les auteurs apportent des modifications aux pages sous `/content/wknd/language-masters/en`.
 * Une fois la synchronisation déclenchée, MSM synchronise ces modifications vers les Live Copies.
 
-### Live Copies - Composition {#live-copies-composition}
+### Live Copies – Composition {#live-copies-composition}
 
 >[!NOTE]
 >
@@ -276,7 +276,7 @@ Le déploiement est l’action MSM centrale qui synchronise les Live Copies ave
 
 Une configuration de déploiement définit quand et comment une Live Copy est synchronisée avec le contenu source. Une configuration de déploiement consiste en un déclencheur et d’une ou plusieurs actions de synchronisation :
 
-* **Déclencheur** - Un déclencheur est un événement qui provoque la synchronisation d’une action en direct, comme l’activation d’une page source. MSM définit les déclencheurs que vous pouvez utiliser.
+* **Déclencheur** – Un déclencheur est un événement qui provoque la synchronisation d’une action en direct, comme l’activation d’une page source. MSM définit les déclencheurs que vous pouvez utiliser.
 * **Actions de synchronisation** : les actions de synchronisation sont exécutées sur Live Copy pour la synchroniser avec la source. Par exemple, la copie de contenu, l’organisation de nœuds enfants et l’activation de la page Live Copy sont des actions de synchronisation. MSM propose un certain nombre d’actions de synchronisation.
 
 >[!NOTE]
@@ -331,7 +331,7 @@ Les étapes suivantes décrivent la procédure standard d’utilisation de MSM p
 
 MSM fournit des outils afin que votre implémentation puisse s’adapter aux complexités exceptionnelles pouvant résulter du partage de contenu.
 
-* **Configurations de déploiement personnalisées** - [Créez une configuration de déploiement](live-copy-sync-config.md#creating-a-rollout-configuration) lorsque les configurations de déploiement installées ne répondent pas à vos besoins. Vous pouvez utiliser n’importe quel déclencheur de déploiement et action de synchronisation disponibles.
+* **Configurations de déploiement personnalisées** – [Créez une configuration de déploiement](live-copy-sync-config.md#creating-a-rollout-configuration) lorsque les configurations de déploiement installées ne répondent pas à vos besoins. Vous pouvez utiliser n’importe quel déclencheur de déploiement et action de synchronisation disponibles.
 
 <!--
 * **Custom Synchronization Actions** - [Create a custom synchronization action](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) when the installed actions do not meet your specific application requirements. MSM provides a Java API for creating custom synchronization actions.
