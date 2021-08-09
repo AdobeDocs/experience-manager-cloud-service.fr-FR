@@ -3,9 +3,9 @@ title: Vérification du statut d’un certificat SSL – Gestion des certificats
 description: Vérification du statut d’un certificat SSL – Gestion des certificats SSL
 exl-id: 59d81356-2fa9-43db-bfa5-c2896c530eaa
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '236'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -26,10 +26,10 @@ indique que malgré plusieurs notifications, votre certificat SSL a expiré.
 
 ## Configurations CDN préexistantes pour les listes autorisées d’adresses IP {#pre-existing-cdn}
 
-Les clients avec des environnements qui incluent des configurations CDN préexistantes pour les Listes autorisées IP, les certificats SSL ou les noms de domaine personnalisés verront le message suivant dans la **Liste autorisée IP** et la page de détails **Environnement**. Le message affiché dans l’interface utilisateur disparaît une fois que le client a effectué la migration complète de toutes les configurations d’environnement préexistantes via l’interface utilisateur et il peut s’écouler entre 1 et 2 jours ouvrés avant que le message ne disparaisse.
+Les clients disposant d’environnements qui incluent des configurations CDN préexistantes pour les listes autorisées d’adresses IP, des certificats SSL ou des noms de domaines personnalisés voient le message suivant dans les pages de détails **Liste autorisée d’adresses IP** et **Environnement**. Le message affiché dans l’interface utilisateur disparaît une fois que le client a effectué la migration complète de toutes les configurations d’environnement préexistantes via l’interface utilisateur et il peut s’écouler entre 1 et 2 jours ouvrés avant que le message ne disparaisse.
 
 >[!NOTE]
->Pour afficher et gérer les configurations préexistantes, elles doivent être ajoutées via l’interface utilisateur. Pour plus d’informations, voir [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) .
+>Pour afficher et gérer les configurations préexistantes, elles doivent être ajoutées via l’interface utilisateur. Consultez la section [Obtention d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) pour plus d’informations.
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
 
