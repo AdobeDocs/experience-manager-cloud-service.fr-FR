@@ -60,9 +60,9 @@ Pour prendre en charge l’imbrication des composants de façon à ce que les co
 
 Notez qu’AEM propose deux méthodes principales pour créer des Live Copies :
 
-* Lors de la [création d’une Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-page) - Cela peut être considéré comme une approche plus générique, qui vous permet de créer des Live Copies de n’importe quelle page. La structure de contenu d’une Live Copy correspond exactement à la source.
+* Lors de la [création d’une Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-page) – Cela peut être considéré comme une approche plus générique, qui vous permet de créer des Live Copies de n’importe quelle page. La structure de contenu d’une Live Copy correspond exactement à la source.
 
-* Lors de la [création d’un site](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) - Il s’agit d’une approche plus spécialisée, principalement pour créer des sites web avec une structure multilingue.
+* Lors de la [création d’un site](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) – Il s’agit d’une approche plus spécialisée, principalement pour créer des sites web avec une structure multilingue.
 
 Voici quelques points à garder à l’esprit lors de la création d’un site :
 
