@@ -9,7 +9,7 @@ ht-degree: 97%
 
 ---
 
-# Activation de l’exportateur JSON pour un composant{#enabling-json-export-for-a-component} 
+# Activation de l’exportateur JSON pour un composant {#enabling-json-export-for-a-component}
 
 Les composants peuvent être adaptés pour générer l’exportation JSON de leur contenu en fonction d’un framework de modeleur.
 
@@ -22,7 +22,7 @@ Cela signifie que le composant doit avoir un modèle Sling pour effectuer une ex
 * [Définition d’un modèle Sling pour le composant](#define-a-sling-model-for-the-component)
 * [Annotation de l’interface du modèle Sling](#annotate-the-sling-model-interface)
 
-## Définition d’un modèle Sling pour le composant  {#define-a-sling-model-for-the-component}
+## Définition d’un modèle Sling pour le composant {#define-a-sling-model-for-the-component}
 
 Il faut d’abord définir un modèle Sling pour le composant.
 
