@@ -3,7 +3,7 @@ title: Ajout d’un enregistrement TXT
 description: Ajout d’un nom de domaine personnalisé
 exl-id: d441de29-af41-4d3e-9155-531af9702841
 source-git-commit: 4903f97c1bf0e7c8e96d604feb005d9611a7d9bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '299'
 ht-degree: 100%
 
