@@ -199,10 +199,10 @@ Comme tout autre projet, un projet de traduction est constitué de mosaïques co
 
 ![Projet de traduction](../assets/translation-project.png)
 
-* **Résumé** - Aperçu du projet
-* **Tâches** - Une ou plusieurs tâches de traduction
-* **Équipe** - Utilisateurs collaborant au projet de traduction
-* **Tâches** - Éléments à compléter au cours de l’activité de traduction
+* **Résumé** – Aperçu du projet
+* **Tâches** – Une ou plusieurs tâches de traduction
+* **Équipe** – Utilisateurs collaborant au projet de traduction
+* **Tâches** – Éléments à compléter au cours de l’activité de traduction
 
 Utilisez les commandes et les boutons contenant des points de suspension en haut et en bas des mosaïques (respectivement) pour les contrôles d’accès et les différentes options.
 
@@ -273,7 +273,7 @@ Dans votre projet de traduction, cliquez ou appuyez sur les points de suspension
 * **Configuration du cloud** : configuration de cloud du connecteur du service de traduction utilisé pour le projet
 * **Méthode de traduction** : processus de traduction, **Traduction humaine** ou **Traduction automatique**
 * **Fournisseur de traduction** : prestataire de services de traduction qui effectue la traduction
-* **Catégorie de contenu** : (traduction automatique) - La catégorie de contenu utilisée pour la traduction
+* **Catégorie de contenu** : (traduction automatique) – La catégorie de contenu utilisée pour la traduction
 * **Informations d’identification du fournisseur de traduction** : informations d’identification de connexion au fournisseur
 * **Promouvoir automatiquement les lancements de traduction** : après réception du contenu traduit, les lancements de traduction sont automatiquement promus.
    * **Supprimer le lancement après la promotion** : si les lancements de traduction sont automatiquement promus, supprimez le lancement après la promotion.
@@ -309,7 +309,7 @@ Le tableau ci-dessous décrit les différents statuts qu’une tâche ou un él�
 
 Pour afficher le statut des différents fichiers de la tâche, cliquez ou appuyez sur le bouton de sélection de la mosaïque.
 
-### Définition du délai des tâches de traduction  {#setting-the-due-date-of-translation-jobs}
+### Définition du délai des tâches de traduction {#setting-the-due-date-of-translation-jobs}
 
 Spécifiez la date à laquelle le fournisseur de traduction doit renvoyer les fichiers traduits. La définition du délai ne fonctionne correctement que lorsque le fournisseur de traduction auquel vous faites appel prend en charge cette fonctionnalité.
 
