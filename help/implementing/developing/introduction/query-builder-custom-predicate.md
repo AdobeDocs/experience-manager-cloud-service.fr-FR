@@ -1,11 +1,11 @@
 ---
-title: Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder.
+title: Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder
 description: Query Builder, associé à AEM, met à votre disposition un moyen efficace et personnalisable d’appliquer des requêtes au référentiel de contenu.
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
 source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
 source-wordcount: '667'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -108,7 +108,7 @@ Tout d’abord, vous devez mettre à jour les dépendances Maven de votre projet
 >
 >La portée de la dépendance `cq-search` est définie sur `provided`, car `cq-search` sera fourni par le conteneur `OSGi`.
 
-Le fragment suivant présente les différences dans le fichier `pom.xml` au [format diff unifié.](https://fr.wikipedia.org/wiki/Diff#Unified_format)
+Le fragment suivant présente les différences dans le fichier `pom.xml` au [format diff unifié](https://fr.wikipedia.org/wiki/Diff#Unified_format).
 
 ```text
 @@ -120,6 +120,12 @@
