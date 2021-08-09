@@ -41,7 +41,7 @@ Les propriétés et nœuds suivants peuvent être appliqués aux composants pour
    * **`class {String}` :** cette propriété peut être utilisée pour spécifier des noms de classe CSS à ajouter à l’élément wrapper.
    * D’autres noms de propriété seront ajoutés comme attributs HTML avec la même valeur String que celle fournie.
 
-## Contrôles de script  {#script-controls}
+## Contrôles de script {#script-controls}
 
 En règle générale, le comportement de l’élément wrapper dans HTL peut être résumé comme suit :
 
