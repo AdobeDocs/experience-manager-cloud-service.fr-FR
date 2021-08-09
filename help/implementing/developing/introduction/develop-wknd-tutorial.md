@@ -9,7 +9,7 @@ ht-degree: 88%
 
 ---
 
-# Prise en main du développement d’AEM Sites – Tutoriel WKND {#getting-started-developing-aem-sites-wknd-tutorial}
+# Prise en main du développement d’AEM Sites – Tutoriel WKND{#getting-started-developing-aem-sites-wknd-tutorial}
 
 ## Présentation {#overview}
 
