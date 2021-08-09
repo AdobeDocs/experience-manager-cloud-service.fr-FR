@@ -5,7 +5,7 @@ exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 source-git-commit: eae25dc48a7cd5d257e23b515f497588a13917ea
 workflow-type: tm+mt
 source-wordcount: '1780'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 71%
 
 ## Changements dans AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service}
 
-Avec AEM en tant que Cloud Service, l’Adobe passe d’un modèle basé sur l’instance AEM à une vue basée sur les services avec des conteneurs n-x, pilotés par des pipelines CI/CD dans Cloud Manager. Au lieu de configurer et de gérer les index sur des instances AEM uniques, la configuration d’index doit être spécifiée avant un déploiement. Les changements de configuration dans la production enfreignent clairement les politiques CI/CD. Il en va de même pour les modifications d’index, car elles peuvent avoir un impact sur la stabilité et les performances du système si elles ne sont pas spécifiées testées et réindexées avant de les mettre en production.
+Avec AEM as a Cloud Service, Adobe s’éloigne d’un modèle centré sur les instances AEM pour passer à une vue basée sur les services avec des conteneurs n-x pilotés par des pipelines CI/CD dans Cloud Manager. Au lieu de configurer et de gérer les index sur des instances AEM uniques, la configuration d’index doit être spécifiée avant un déploiement. Les changements de configuration dans la production enfreignent clairement les politiques CI/CD. Il en va de même pour les changements d’index, car ceux-ci peuvent avoir un impact sur la stabilité et les performances du système s’ils ne sont pas testés et réindexés avant leur mise en production.
 
 Voici la liste des principaux changements par rapport à AEM version 6.5 et antérieure :
 
@@ -39,7 +39,7 @@ Voici la liste des principaux changements par rapport à AEM version 6.5 et ant
 
 ## Utilisation {#how-to-use}
 
-La définition d’index peut comprendre les trois cas d’utilisation suivants :
+La définition d’index peut comprendre les trois cas d’utilisation suivants :
 
 1. Ajouter une nouvelle définition d’index client.
 1. Mettre à jour une définition d’index existante. Cela signifie ajouter une nouvelle version d’une définition d’index existante.
@@ -51,7 +51,7 @@ Pour les points 1 et 2 ci-dessus, vous devez créer une définition d’index d
 
 >[!NOTE]
 >
->Si vous personnalisez un index prêt à l’emploi, par exemple `damAssetLucene-6`, copiez la dernière définition d’index prêt à l’emploi à partir d’un *environnement de Cloud Service* et ajoutez vos personnalisations en haut, cela garantit que les configurations requises ne sont pas supprimées par inadvertance. Par exemple, le noeud `tika` sous `/oak:index/damAssetLucene-6/tika` est un noeud obligatoire et doit également faire partie de votre index personnalisé et il n’existe pas dans le SDK Cloud.
+>Si vous personnalisez un index prêt à l’emploi, par exemple `damAssetLucene-6`, copiez la dernière définition d’index prêt à l’emploi à partir d’un *environnement de Cloud Service* et ajoutez vos personnalisations pour garantir que les configurations requises ne sont pas supprimées par inadvertance. Par exemple, le nœud `tika` sous `/oak:index/damAssetLucene-6/tika` est un nœud obligatoire et doit également faire partie de votre index personnalisé ; il n’existe pas dans le SDK Cloud.
 
 Vous devez préparer un nouveau package de définition d’index qui contient la définition d’index réelle, en suivant ce modèle de dénomination :
 
@@ -63,7 +63,7 @@ Le package de l’exemple ci-dessus est nommé `com.adobe.granite:new-index-cont
 
 >[!NOTE]
 >
->La propriété suivante doit être définie pour tout module de contenu contenant des définitions d’index dans le fichier de propriétés du module de contenu, situé à l’emplacement `/META-INF/vault/properties.xml` :
+>La propriété suivante doit être définie pour tout module de contenu contenant des définitions d’index dans le fichier de propriétés du module de contenu, situé à l’emplacement `/META-INF/vault/properties.xml` :
 >
 >`noIntermediateSaves=true`
 
@@ -87,11 +87,11 @@ Une fois la nouvelle définition d’index ajoutée, la nouvelle application doi
 
 ## Gestion des index à l’aide de déploiements bleu/vert {#index-management-using-blue-green-deployments}
 
-### Qu’est-ce que la gestion des index ? {#what-is-index-management}
+### Qu’est-ce que la gestion des index ?  {#what-is-index-management}
 
 La gestion des index consiste à ajouter, supprimer et modifier des index. Changer la *définition* d’un index est rapide, mais appliquer le changement (opération souvent appelée « création d’un index » ou, pour les index existants, « réindexation ») nécessite du temps. Cette opération n’est pas instantanée : le référentiel doit être analysé pour que les données soient indexées.
 
-### Qu’est-ce que le déploiement bleu/vert ? {#what-is-blue-green-deployment}
+### Qu’est-ce que le déploiement bleu/vert ?  {#what-is-blue-green-deployment}
 
 Le déploiement bleu/vert peut réduire les temps d’inactivité. Il autorise également des mises à niveau sans interruption de service et des restaurations rapides. L’ancienne version de l’application (bleue) s’exécute en même temps que la nouvelle version (verte).
 
@@ -119,7 +119,7 @@ Lors du développement ou de l’utilisation d’installations sur site, les ind
 
 Avec des déploiements bleu/vert, il n’existe pas de temps d’arrêt. Toutefois, pour la gestion des index, cela nécessite que les index ne soient utilisés que par certaines versions de l’application. Par exemple, lorsque vous ajoutez un index dans la version 2 de l’application, vous ne souhaitez pas que cet index soit déjà utilisé par la version 1 de l’application. L’inverse vaut également lorsqu’un index est supprimé : un index supprimé dans la version 2 est toujours nécessaire dans la version 1. Lors de la modification d’une définition d’index, nous voulons que l’ancienne version de l’index soit utilisée uniquement pour la version 1 et la nouvelle version de l’index uniquement pour la version 2.
 
-Le tableau suivant présente cinq définitions d’index : l’index `cqPageLucene` est utilisé dans les deux versions, tandis que l’index `damAssetLucene-custom-1` est utilisé uniquement dans la version 2.
+Le tableau suivant présente cinq définitions d’index : l’index `cqPageLucene` est utilisé dans les deux versions tandis que index `damAssetLucene-custom-1` l’est uniquement dans la version 2.
 
 >[!NOTE]
 >
@@ -152,7 +152,7 @@ Actuellement, la gestion des index n’est prise en charge que pour les index de
 
 ### Ajout d’un index {#adding-an-index}
 
-Pour ajouter un index nommé `/oak:index/acme.product-custom-1` à utiliser dans une nouvelle version de l&#39;application et ultérieurement, l&#39;index doit être configuré comme suit :
+Pour ajouter un index nommé « `/oak:index/acme.product-custom-1` » à utiliser dans une nouvelle version de l’application et ultérieurement, l’index doit être configuré comme suit :
 
 `acme.product-1-custom-1`
 
@@ -162,7 +162,7 @@ Comme ci-dessus, cette règle garantit que l’index n’est utilisé que par la
 
 ### Modification d’un index {#changing-an-index}
 
-Lorsqu’un index existant est modifié, un nouvel index doit être ajouté avec la définition d’index modifiée. Par exemple, considérez que l’index existant `/oak:index/acme.product-custom-1` a été modifié. L’ancien index est stocké sous `/oak:index/acme.product-custom-1` et le nouvel index sous `/oak:index/acme.product-custom-2`.
+Lorsqu’un index existant est modifié, un nouvel index doit être ajouté avec la définition d’index modifiée. Par exemple, imaginons que l’index existant « `/oak:index/acme.product-custom-1` » a été modifié. L’ancien index est stocké sous `/oak:index/acme.product-custom-1` et le nouvel index sous `/oak:index/acme.product-custom-2`.
 
 L’ancienne version de l’application utilise la configuration suivante :
 
@@ -174,17 +174,17 @@ La nouvelle version de l’application utilise la configuration suivante (modifi
 
 >[!NOTE]
 >
->Les définitions d’index sur AEM en tant que Cloud Service peuvent ne pas correspondre entièrement aux définitions d’index sur une instance de développement locale. L’instance de développement ne dispose pas d’une configuration Tika, alors qu’AEM en tant qu’instances de Cloud Service en a une. Si vous personnalisez un index avec une configuration Tika, conservez la configuration Tika.
+>Les définitions d’index dans AEM as a Cloud Service peuvent ne pas correspondre entièrement aux définitions d’index sur une instance de développement locale. L’instance de développement ne dispose pas d’une configuration Tika, alors que les instances AEM as a Cloud Service en ont une. Si vous personnalisez un index avec une configuration Tika, conservez la configuration Tika.
 
 ### Annulation d’une modification {#undoing-a-change}
 
-Parfois, une modification de la définition d’index doit être annulée. Les raisons peuvent être qu&#39;un changement a été fait par erreur, ou qu&#39;un changement n&#39;est plus nécessaire. Par exemple, la définition d’index `damAssetLucene-8-custom-3` a été créée par erreur et est déjà déployée. Pour cette raison, vous souhaiterez peut-être revenir à la définition d’index précédente `damAssetLucene-8-custom-2`. Pour ce faire, vous devez ajouter un nouvel index appelé `damAssetLucene-8-custom-4` contenant la définition de l’index précédent, `damAssetLucene-8-custom-2`.
+Parfois, une modification de la définition d’index doit être annulée. Les raisons peuvent être qu’un changement a été fait par erreur ou qu’un changement n’est plus nécessaire. Par exemple, la définition d’index `damAssetLucene-8-custom-3` a été créée par erreur et est déjà déployée. Pour cette raison, vous souhaiterez peut-être revenir à la définition d’index précédente `damAssetLucene-8-custom-2`. Pour ce faire, vous devez ajouter un nouvel index appelé `damAssetLucene-8-custom-4` contenant la définition de l’index précédent, `damAssetLucene-8-custom-2`.
 
 ### Suppression d’un index {#removing-an-index}
 
-Les éléments suivants s’appliquent uniquement aux index personnalisés. Les index de produit ne peuvent pas être supprimés, car ils sont utilisés par AEM.
+Les éléments suivants s’appliquent uniquement aux index personnalisés. Les index de produit ne peuvent pas être supprimés car ils sont utilisés par AEM.
 
-Si un index doit être supprimé dans une version ultérieure de l’application, vous pouvez définir un index vide (un index vide qui n’est jamais utilisé et ne contient aucune donnée), avec un nouveau nom. Pour les besoins de cet exemple, vous pouvez le nommer `/oak:index/acme.product-custom-3`. Cette opération remplace l’index `/oak:index/acme.product-custom-2`. Une fois `/oak:index/acme.product-custom-2` supprimé par le système, l’index vide `/oak:index/acme.product-custom-3` peut également être supprimé. Voici un exemple d’index vide de ce type :
+Si un index doit être supprimé dans une version ultérieure de l’application, vous pouvez définir un index vide (un index vide qui n’est jamais utilisé et ne contient aucune donnée), avec un nouveau nom. Pour les besoins de cet exemple, vous pouvez le nommer `/oak:index/acme.product-custom-3`. Cette opération remplace l’index `/oak:index/acme.product-custom-2`. Une fois `/oak:index/acme.product-custom-2` supprimé par le système, l’index vide `/oak:index/acme.product-custom-3` peut également être supprimé. Voici un exemple d’index vide de ce type :
 
 ```xml
 <acme.product-custom-3
