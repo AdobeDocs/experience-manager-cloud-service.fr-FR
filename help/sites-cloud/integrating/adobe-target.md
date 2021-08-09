@@ -22,7 +22,7 @@ Intégrez vos sites AEM à Adobe Target pour personnaliser le contenu dans vos 
 
 >[!NOTE]
 >
->Les clients Adobe Experience Manager as a Cloud Service qui ne disposent pas d’un compte Target existant peuvent demander l’accès au package Target Foundation pour Experience Cloud.  Le package Foundation offre une utilisation limitée en volume de Target.
+>Les clients Adobe Experience Manager as a Cloud Service qui ne disposent pas d’un compte Target existant peuvent demander l’accès au Target Foundation Pack pour Experience Cloud. Le Foundation Pack offre une utilisation limitée en volume de Target.
 
 
 Pour assurer l’intégration à Target, effectuez les tâches suivantes :
@@ -69,7 +69,7 @@ Une fois l’intégration terminée, vous pouvez [créer du contenu ciblé](http
 >
 >Lorsque vous ciblez un composant dans le mode Auteur AEM, il effectue une série d’appels côté serveur vers Adobe Target afin d’enregistrer la campagne, de configurer des offres et de récupérer des segments Adobe Target (si cela est configuré). Aucun appel côté serveur n’est effectué depuis la publication AEM vers Adobe Target.
 
-## Sources d’informations sur le contexte  {#background-information-sources}
+## Sources d’informations sur le contexte {#background-information-sources}
 
 Intégrer AEM as a Cloud Service à Adobe Target nécessite des connaissances sur Adobe Target, la gestion des activités AEM et la gestion des audiences AEM. Vous devez connaître les éléments suivants :
 
