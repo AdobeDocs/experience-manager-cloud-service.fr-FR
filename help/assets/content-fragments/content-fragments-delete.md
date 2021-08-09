@@ -1,6 +1,6 @@
 ---
 title: Fragments de contenu – considérations sur la suppression
-description: Examinez ces points importants avant de définir vos stratégies de suppression de fragments de contenu dans AEM. Les fragments de contenu forment un puissant outil de diffusion de contenu en mode découplé. Les implications de leur suppression doivent être soigneusement examinées.
+description: Examinez ces points importants avant de définir vos stratégies de suppression de fragments de contenu dans AEM. Les fragments de contenu forment un puissant outil de diffusion de contenu découplé. Les implications de leur suppression doivent être soigneusement examinées.
 feature: Fragments de contenu
 role: User
 exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
@@ -13,9 +13,9 @@ ht-degree: 100%
 
 # Fragments de contenu – considérations sur la suppression {#content-fragments-delete-considerations}
 
-Examinez ces points importants avant de définir vos stratégies de suppression de fragments de contenu dans AEM. Les fragments de contenu forment un puissant outil de diffusion de contenu en mode découplé. Les implications de leur suppression doivent être soigneusement examinées.
+Examinez ces points importants avant de définir vos stratégies de suppression de fragments de contenu dans AEM. Les fragments de contenu forment un puissant outil de diffusion de contenu découplé. Les implications de leur suppression doivent être soigneusement examinées.
 
-## Autorisations - Supprimer ou ne pas supprimer {#permissions-delete-or-not-delete}
+## Autorisations – Supprimer ou ne pas supprimer {#permissions-delete-or-not-delete}
 
 Pouvoir supprimer du contenu est une capacité puissante, mais potentiellement sensible. Pour cette raison, de nombreux secteurs d’activité doivent limiter et contrôler la manière dont ces privilèges sont distribués.
 
@@ -49,7 +49,7 @@ Par exemple, lors de la manipulation des variantes, mais également lors de la m
 
 >[!NOTE]
 >
->Les autorisations de suppression, requises pour modifier/mettre à jour un fragment de contenu, sont incluses dans l’autorisation Supprimer<!-- The delete permissions, required to edit/update a Content Fragment, are included in the Delete permission [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). --> affectée via la gestion des utilisateurs et/ou des groupes. 
+>Les autorisations de suppression, requises pour modifier/mettre à jour un fragment de contenu, sont incluses dans l’autorisation Supprimer<!-- The delete permissions, required to edit/update a Content Fragment, are included in the Delete permission [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). --> affectée via la gestion des utilisateurs et/ou des groupes.
 
 Les autorisations nécessaires à la modification/mise à jour d’un fragment doivent être appliquées au nœud contenant le fragment de contenu ou à un nœud parent approprié (à n’importe quel niveau sous `/content/dam`/). Lorsqu’elles sont affectées à un tel nœud parent, les autorisations sont appliquées à tous les nœuds figurant dans cette branche.
 
