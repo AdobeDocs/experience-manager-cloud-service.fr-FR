@@ -1,15 +1,15 @@
 ---
-title: Journalisation d’AEM en tant que Cloud Service
-description: Découvrez comment configurer des paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données dans AEM en tant que Cloud Service.
+title: Connexion à AEM as a Cloud Service
+description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou apprenez à demander la journalisation des données dans AEM as a Cloud Service.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 source-git-commit: 0c2a6753ab6c7fdf8cd8235b9071b21dcfff1e74
 workflow-type: tm+mt
 source-wordcount: '2305'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
-# Journalisation d’AEM en tant que Cloud Service {#logging-for-aem-as-a-cloud-service}
+# Connexion à AEM as a Cloud Service {#logging-for-aem-as-a-cloud-service}
 
 La plate-forme AEM as a Cloud Service permet aux clients d’inclure du code personnalisé destiné à créer des expériences incomparables pour leurs propres bases de clients. Dans cette optique, le service de journalisation est une fonction essentielle pour déboguer et comprendre l’exécution du code sur le développement local, ainsi que les environnements cloud, en particulier l’AEM en tant qu’environnements de développement de Cloud Service.
 
@@ -209,7 +209,7 @@ La clé pour comprendre ce journal est de mapper les paires de requête HTTP et 
 <tbody>
 <tr>
 <td>Date et heure</td>
-<td>29/Apr/2020:19:14:21 +0000</td>
+<td>29/Apr/2020:19:14:21 +000</td>
 </tr>
 <tr>
 <td>ID de paire de requête/réponse</td>
@@ -257,7 +257,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 |---|---|
 | Adresse IP du client | - |
 | User | myuser@adobe.com |
-| Date et heure | 30/Apr/2020:17:37:14 +0000 |
+| Date et heure | 30/Apr/2020:17:37:14 +000 |
 | Méthode HTTP | GET |
 | URL | `/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css` |
 | Protocole | HTTP/1.1 |
@@ -314,7 +314,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tr>
 <tr>
 <td>Date et heure</td>
-<td>01/May/2020:00:09:46 +0000</td>
+<td>01/May/2020:00:09:46 +000</td>
 </tr>
 <tr>
 <td>Méthode HTTP</td>
@@ -433,7 +433,7 @@ Define REWRITE_LOG_LEVEL Debug
 <tbody>
 <tr>
 <td>Date et heure</td>
-<td>[17/Jul/2020:23:48:16 +0000]</td>
+<td>[17/Jul/2020:23:48:16 +000]</td>
 </tr>
 <tr>
 <td>Nom du pod</td>
