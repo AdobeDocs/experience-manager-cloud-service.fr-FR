@@ -3,9 +3,9 @@ title: Contrôle du statut de liste autorisée IP
 description: Contrôle du statut de liste autorisée IP
 exl-id: 5ddea04f-3720-4663-90a8-9399019bfcbe
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '463'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -43,10 +43,10 @@ Une fois l’opération de suppression terminée, la liste autorisée IP :
 
 ## Configurations de réseau de diffusion de contenu préexistantes pour les listes autorisées IP {#pre-existing-cdn}
 
-Les clients avec des environnements qui incluent des configurations CDN préexistantes pour les Listes autorisées IP, les certificats SSL ou les noms de domaine personnalisés verront le message suivant dans la **Liste autorisée IP** et la page de détails **Environnement**. Le message affiché dans l’interface utilisateur disparaît une fois que le client a effectué la migration complète de toutes les configurations d’environnement préexistantes via l’interface utilisateur et il peut s’écouler entre 1 et 2 jours ouvrés avant que le message ne disparaisse.
+Les clients disposant d’environnements qui incluent des configurations CDN préexistantes pour les listes autorisées d’adresses IP, des certificats SSL ou des noms de domaines personnalisés voient le message suivant dans les pages de détails **Liste autorisée d’adresses IP** et **Environnement**. Le message affiché dans l’interface utilisateur disparaît une fois que le client a effectué la migration complète de toutes les configurations d’environnement préexistantes via l’interface utilisateur et il peut s’écouler entre 1 et 2 jours ouvrés avant que le message ne disparaisse.
 
 >[!NOTE]
->Pour afficher et gérer les configurations préexistantes, elles doivent être ajoutées via l’interface utilisateur. Pour plus d’informations, voir [Ajout d’une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) .
+>Pour afficher et gérer les configurations préexistantes, elles doivent être ajoutées via l’interface utilisateur. Pour plus d’informations, voir [Ajout d’une liste autorisée d’adresses IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md).
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
 
