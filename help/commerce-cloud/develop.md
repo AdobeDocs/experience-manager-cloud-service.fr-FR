@@ -11,7 +11,7 @@ exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 source-git-commit: a548e33d5958c28cf4db002bc3b1d8b086f3b236
 workflow-type: tm+mt
 source-wordcount: '1001'
-ht-degree: 85%
+ht-degree: 97%
 
 ---
 
@@ -82,11 +82,11 @@ Pour le développement local du module complémentaire CIF avec le SDK AEM as a 
    set COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
    ```
 
-   Cette variable est utilisée par AEM pour se connecter à votre système commercial. En outre, le module complémentaire CIF inclut un proxy inverse local pour rendre le point d’entrée GraphQL de Commerce disponible localement. Il est utilisé par les outils de création CIF (console de produit et sélecteurs) et pour les composants CIF côté client effectuant des appels GraphQL directs.
+   Cette variable est utilisée par AEM pour se connecter à votre système commercial. De plus, le module complémentaire CIF inclut un proxy inverse local pour rendre le point d’entrée GraphQL Commerce disponible localement. Il est utilisé par les outils de création CIF (console de produit et sélecteurs) et pour les composants CIF côté client effectuant des appels GraphQL directs.
 
    Cette variable doit également être configurée pour l’environnement AEM as a Cloud Service. Pour plus d’informations sur les variables, voir [Configuration d’OSGi pour AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#local-development).
 
-1. (Facultatif) Pour activer les fonctionnalités de catalogue intermédiaire, vous devez créer un jeton d’intégration pour votre instance de Magento. Suivez les étapes décrites dans [Prise en main](./getting-started.md#staging) pour créer le jeton.
+1. (Facultatif) Pour activer les fonctionnalités de catalogue par étapes, vous devez créer un jeton d’intégration pour votre instance de Magento. Suivez les étapes décrites dans [Prise en main](./getting-started.md#staging) pour créer le jeton.
 
    Définissez un secret OSGi portant le nom `COMMERCE_AUTH_HEADER` sur la valeur suivante :
 
@@ -100,7 +100,7 @@ Pour le développement local du module complémentaire CIF avec le SDK AEM as a 
 
 >[!NOTE]
 >
->Assurez-vous de commencer AEM en tant que SDK Cloud Service dans la même fenêtre de terminal que la variable d’environnement a été définie à l’étape 5. Si vous le lancez dans une fenêtre de terminal distincte ou que vous double-cliquez sur le fichier .jar, assurez-vous que la variable d’environnement est visible.
+>Veillez à démarrer le SDK AEM as a Cloud Service dans la même fenêtre de terminal selon la variable d’environnement définie à l’étape 5. Si vous le lancez dans une fenêtre de terminal distincte ou que vous double-cliquez sur le fichier .jar, assurez-vous que la variable d’environnement est visible.
 
 Vérifiez la configuration via la console OSGI : `http://localhost:4502/system/console/osgi-installer`. La liste doit inclure les bundles liés au module complémentaire CIF, le module de contenu et les configurations OSGI, comme défini dans le fichier de modèle de fonctionnalité.
 
@@ -134,7 +134,7 @@ mvn -B archetype:generate \
  -D includeCommerce=y
 ```
 
-Les composants principaux CIF peuvent être utilisés dans n’importe quel projet en incluant le module `all` fourni ou individuellement en utilisant le module de contenu CIF et les lots OSGI associés. Pour ajouter manuellement des composants principaux CIF à un projet, utilisez les dépendances suivantes :
+Les composants principaux CIF peuvent être utilisés dans n’importe quel projet en incluant le module `all` fourni ou individuellement en utilisant le module de contenu CIF et les bundles OSGI associés. Pour ajouter manuellement des composants principaux CIF à un projet, utilisez les dépendances suivantes :
 
 ```java
 <dependency>
@@ -168,7 +168,7 @@ Les composants principaux CIF peuvent être utilisés dans n’importe quel proj
 
 ### Utilisation du magasin de référence Venia AEM
 
-Une deuxième manière de démarrer un projet CIF consiste à cloner et à utiliser le [magasin de référence Venia AEM](https://github.com/adobe/aem-cif-guides-venia). Le magasin de référence Venia AEM est un exemple d’application storefront de référence qui illustre l’utilisation des composants principaux CIF pour AEM. Il s’agit d’un ensemble de bonnes pratiques et d’un point de départ potentiel pour développer vos propres fonctionnalités.
+Une deuxième manière de démarrer un projet CIF consiste à cloner et à utiliser le [magasin de référence Venia AEM](https://github.com/adobe/aem-cif-guides-venia). Le magasin de référence Venia AEM est un exemple d’application storefront de référence qui illustre l’utilisation des composants principaux CIF pour AEM. Cette application offre des exemples de bonnes pratiques, ainsi qu’un point de départ potentiel pour développer vos propres fonctionnalités.
 
 Pour commencer à utiliser le magasin de référence Venia AEM, il vous suffit de cloner le référentiel Git et de personnaliser le projet en fonction de vos besoins.
 
