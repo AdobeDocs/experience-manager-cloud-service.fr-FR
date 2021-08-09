@@ -4,7 +4,7 @@ sub-product: Création de contenu dans AEM as a Cloud Service
 user-guide-title: Création de contenu dans AEM as a Cloud Service
 breadcrumb-title: Guide de création
 user-guide-description: Découvrez comment créer avec Experience Manager Sites as a Cloud Service et l’administrer.
-feature: 'Création '
+feature: Création
 role: User
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
@@ -25,7 +25,7 @@ ht-degree: 99%
       + [Manipulation de base](authoring/getting-started/basic-handling.md)
       + [Rechercher](authoring/getting-started/search.md)
       + [Configuration de l’environnement du compte](authoring/getting-started/account-environment.md)
-      + [Votre boîte de réception ](authoring/getting-started/inbox.md)
+      + [Votre boîte de réception](authoring/getting-started/inbox.md)
       + [Raccourcis clavier](authoring/getting-started/keyboard-shortcuts.md)
    + Principes de création {#fundamentals}
       + [Environnement et outils](authoring/fundamentals/environment-tools.md)
@@ -50,7 +50,7 @@ ht-degree: 99%
       + [Versions de page](authoring/features/page-versions.md)
       + [Outil de comparaison des pages](authoring/features/page-diff.md)
       + [Console des composants](authoring/features/components-console.md)
-      + [Mise en page réactive ](authoring/features/responsive-layout.md)
+      + [Mise en page réactive](authoring/features/responsive-layout.md)
       + [Utilisation des balises](authoring/features/tags.md)
       + [Activation des fonctionnalités d’application web progressive](authoring/features/enable-pwa.md)
    + Projets {#projects}
@@ -69,7 +69,7 @@ ht-degree: 99%
       + [Utilisation des workflows](authoring/workflows/overview.md)
       + [Application de workflows aux pages](authoring/workflows/applying.md)
       + [Participation aux workflows](authoring/workflows/participating.md)
-   + Personnalisation  {#personalization}
+   + Personnalisation {#personalization}
       + [Présentation de la personnalisation](authoring/personalization/overview.md)
       + [Aperçu des pages à l’aide des données ContextHub](authoring/personalization/contexthub.md)
       + [Création de contenu ciblé en mode Ciblage](authoring/personalization/targeted-content.md)
@@ -77,7 +77,7 @@ ht-degree: 99%
       + [Structuration de la gestion multisite du contenu ciblé](authoring/personalization/multisite-structure.md)
       + [Gestion des activités](authoring/personalization/activities.md)
       + [Gestion des audiences](authoring/personalization/audiences.md)
-      + [Création et gestion d’offres ](authoring/personalization/offers.md)
+      + [Création et gestion d’offres](authoring/personalization/offers.md)
       + [Compréhension de la segmentation](authoring/personalization/segmentation.md)
       + [Configuration de la segmentation avec ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
       + [Enregistrement, connexion et profil utilisateur](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
