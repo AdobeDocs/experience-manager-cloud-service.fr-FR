@@ -20,7 +20,7 @@ Dynamic Media offre des expériences de visualisation interactives, notamment de
 >
 >A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
 
-## Tâches que vous pouvez effectuer avec Dynamic Media   {#what-you-can-do-with-dynamic-media}
+## Tâches que vous pouvez effectuer avec Dynamic Media {#what-you-can-do-with-dynamic-media}
 
 Dynamic Media permet de gérer les ressources avant de les publier. L’utilisation générale des ressources est décrite en détail à la rubrique [Utilisation de ressources numériques](/help/assets/manage-digital-assets.md). Les rubriques générales incluent le chargement, le téléchargement, la modification et la publication des ressources, l’affichage et la modification des propriétés et la recherche de ressources.
 
