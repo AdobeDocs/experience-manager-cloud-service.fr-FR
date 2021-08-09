@@ -3,7 +3,7 @@ title: Expérience unifiée pour les outils de refactorisation du code
 description: Expérience unifiée pour les outils de refactorisation du code
 exl-id: 856bce12-7d5e-4f8c-b252-7752bcbeebc4
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '264'
 ht-degree: 100%
 
