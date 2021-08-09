@@ -3,7 +3,7 @@ title: Utilisation de CRXDE Lite
 description: CRXDE Lite fait partie du démarrage rapide d’AEM et vous permet d’accéder au référentiel et de le modifier dans vos environnements de développement locaux depuis le navigateur.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1705'
 ht-degree: 100%
 
@@ -70,8 +70,8 @@ Double-cliquez sur un fichier dans le **volet Explorateur** pour afficher son co
 
 Une fois le fichier modifié dans le **volet de modification**, les outils suivants sont disponibles dans la barre d’outils :
 
-* **Afficher dans l’arborescence** - affiche le fichier dans l’arborescence du référentiel.
-* **Rechercher/Remplacer** - effectue une recherche ou un remplacement.
+* **Afficher dans l’arborescence** – affiche le fichier dans l’arborescence du référentiel.
+* **Rechercher/Remplacer** – effectue une recherche ou un remplacement.
 
 Double-cliquez sur la ligne d’état du **volet de modification** pour ouvrir la boîte de dialogue **Aller à la ligne** et entrer un numéro de ligne spécifique.
 
@@ -85,13 +85,12 @@ L’onglet **Contrôle d’accès** affiche les autorisations en fonction du che
 
 Les autorisations sont ventilées dans les catégories suivantes.
 
-* **Politiques de contrôle d’accès applicables** - les politiques qui peuvent être appliquées à la sélection en cours
-* **Stratégies de contrôle d’accès local** - les stratégies actuelles appliquées localement à la sélection en cours
-* **Stratégies de contrôle d’accès en vigueur** - les stratégies actuelles appliquées à la sélection en cours, qui peuvent être définies localement ou héritées des nœuds parents
+* **Politiques de contrôle d’accès applicables** – les politiques qui peuvent être appliquées à la sélection en cours
+* **Stratégies de contrôle d’accès local** – les stratégies actuelles appliquées localement à la sélection en cours
+* **Stratégies de contrôle d’accès en vigueur** – les stratégies actuelles appliquées à la sélection en cours, qui peuvent être définies localement ou héritées des nœuds parents
 
 >[!NOTE]
->
->Pour pouvoir voir les informations de contrôle d’accès, l’utilisateur connecté à CRXDE Lite doit avoir le droit de lire les entrées ACL.
+Pour pouvoir voir les informations de contrôle d’accès, l’utilisateur connecté à CRXDE Lite doit avoir le droit de lire les entrées ACL.
 
 ### Onglet Réplication {#replication-tab}
 
@@ -113,16 +112,16 @@ Le **bouton Actualiser** actualise la sélection actuelle. Les modifications des
 
 Le bouton **Enregistrer tout** enregistre toutes les modifications que vous avez apportées. Tant que vous ne décidez pas d’enregistrer, les modifications sont temporaires. Elles seront perdues lorsque vous quitterez la console.
 
-* **Rétablir** - ignore toutes les modifications que vous avez apportées au nœud sélectionné depuis le dernier enregistrement, puis recharge l’état actuel du référentiel pour le nœud sélectionné
-* **Rétablir tout** - ignore toutes les modifications que vous avez apportées au référentiel entier depuis le dernier enregistrement, puis recharge l’état actuel du référentiel
+* **Rétablir** – ignore toutes les modifications que vous avez apportées au nœud sélectionné depuis le dernier enregistrement, puis recharge l’état actuel du référentiel pour le nœud sélectionné
+* **Rétablir tout** – ignore toutes les modifications que vous avez apportées au référentiel entier depuis le dernier enregistrement, puis recharge l’état actuel du référentiel
 
 ### Bouton Créer {#create-button}
 
 Le **bouton Créer** est un menu déroulant permettant de créer les éléments suivants sous le nœud sélectionné :
 
-* Nœud - un nœud de type arbitraire
-* Fichier - un nœud `nt:file` et son sous-nœud nt:resource
-* Dossier - un nœud `nt:folder`
+* Nœud – un nœud de type arbitraire
+* Fichier – un nœud `nt:file` et son sous-nœud nt:resource
+* Dossier – un nœud `nt:folder`
 
 ### Bouton Supprimer {#delete-button}
 
@@ -152,12 +151,12 @@ Le bouton **Mixins** permet d’ajouter des types de mixin au type de nœud. Les
 
 Le **bouton Outils** est un menu déroulant avec les outils suivants disponibles :
 
-* **Configuration du serveur** - pour accéder à la console Felix (également disponible sur `https://<host>:<port>/system/console/configMgr`)
-* **Requête** - pour interroger le référentiel
-* **Privilèges** - pour afficher et ajouter des privilèges
-* **Contrôle d’accès de test** - pour tester l’autorisation pour un contrôle d’accès et/ou principal
-* **Exporter le type de nœud** - pour exporter les types de nœud dans le système en tant que notation CND
-* **Importer le type de nœud** - pour importer les types de nœud en utilisant la notation CND.
+* **Configuration du serveur** – pour accéder à la console Felix (également disponible sur `https://<host>:<port>/system/console/configMgr`)
+* **Requête** – pour interroger le référentiel
+* **Privilèges** – pour afficher et ajouter des privilèges
+* **Contrôle d’accès de test** – pour tester l’autorisation pour un contrôle d’accès et/ou principal
+* **Exporter le type de nœud** – pour exporter les types de nœud dans le système en tant que notation CND
+* **Importer le type de nœud** – pour importer les types de nœud en utilisant la notation CND.
 
 ### Widget de connexion {#login-widget}
 
@@ -191,9 +190,8 @@ Pour créer un nœud avec CRXDE Lite :
 Vous pouvez désormais adapter le nœud à vos besoins en modifiant les propriétés ou en ajoutant de nouveaux nœuds.
 
 >[!NOTE]
->
->La plupart des opérations de modification, y compris **Créer un nœud**, conserve toutes les modifications en mémoire et les stocke dans le référentiel lors de l’enregistrement uniquement (avec le bouton [**Enregistrer tout**](#save-all-button)). Cependant, certaines opérations telles que le déplacement sont automatiquement conservées.
->La validation du nœud nouvellement créé qui est ou non autorisé par le type de nœud du nœud parent est également effectuée par le référentiel lors de l’enregistrement des modifications. Si vous recevez un message d’erreur lors de l’enregistrement d’un nœud, vérifiez si la structure du contenu est valide (par exemple, vous ne pouvez pas créer un nœud `nt:unstructured` en tant qu’enfant du nœud `nt:folder`).
+La plupart des opérations de modification, y compris **Créer un nœud**, conserve toutes les modifications en mémoire et les stocke dans le référentiel lors de l’enregistrement uniquement (avec le bouton [**Enregistrer tout**](#save-all-button)). Cependant, certaines opérations telles que le déplacement sont automatiquement conservées.
+La validation du nœud nouvellement créé qui est ou non autorisé par le type de nœud du nœud parent est également effectuée par le référentiel lors de l’enregistrement des modifications. Si vous recevez un message d’erreur lors de l’enregistrement d’un nœud, vérifiez si la structure du contenu est valide (par exemple, vous ne pouvez pas créer un nœud `nt:unstructured` en tant qu’enfant du nœud `nt:folder`).
 
 ## Création d’une propriété {#creating-a-property}
 
