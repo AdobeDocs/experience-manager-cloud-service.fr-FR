@@ -3,7 +3,7 @@ title: Modification du contenu de la page
 description: Une fois votre page créée, vous pouvez modifier le contenu pour effectuer les mises à jour dont vous avez besoin.
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2974'
 ht-degree: 100%
 
@@ -269,7 +269,7 @@ Deux méthodes permettent d’ajouter et/ou de modifier le contenu dans les comp
 * Ouvrez la [boîte de dialogue de composant pour l’édition](#component-edit-dialog).
 * [Faites glisser et déposez un élément](#drag-and-drop-assets-into-component) depuis l’explorateur de ressources pour ajouter directement du contenu.
 
-### Boîte de dialogue de modification du composant  {#component-edit-dialog}
+### Boîte de dialogue de modification du composant {#component-edit-dialog}
 
 Vous pouvez ouvrir un composant pour modifier le contenu à l’aide de l’[icône Modifier (crayon) de la barre d’outils Composant](#component-toolbar).
 
@@ -408,7 +408,7 @@ Par exemple :
 
 Les [Annotations](/help/sites-cloud/authoring/fundamentals/annotations.md) permettent aux réviseurs et aux autres créateurs de fournir des commentaires sur votre contenu. Elles sont souvent utilisées à des fins de révision et de validation.
 
-## Aperçu des pages  {#previewing-pages}
+## Aperçu des pages {#previewing-pages}
 
 Deux options sont disponibles pour prévisualiser une page :
 
