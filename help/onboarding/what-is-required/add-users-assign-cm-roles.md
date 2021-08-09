@@ -43,6 +43,6 @@ Un administrateur système effectue les tâches organisationnelles suivantes :
    ![](/help/onboarding/what-is-required/assets/admin-console-3.png)
 
    >[!NOTE]
-   >Pour en savoir plus sur les rôles et les autorisations proposés dans Cloud Manager, consultez [Rôles Cloud Manager](/help/onboarding/what-is-required/user-roles-permissions.md) .
+   >Pour en savoir plus sur les rôles et les autorisations proposés dans Cloud Manager, consultez [Rôles Cloud Manager](/help/onboarding/what-is-required/user-roles-permissions.md).
 
    Vous avez maintenant ajouté des utilisateurs au contexte de produit Adobe Experience Manager as a Cloud Service et disposez de la configuration avec les rôles ou profils de produit appropriés.
