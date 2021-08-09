@@ -1,17 +1,17 @@
 ---
 title: Guide de démarrage rapide sur la création d’un dossier de ressources découplées
-description: Utilisez des modèles de fragment de contenu AEM pour définir la structure des fragments de contenu, à la base de votre contenu sans interface utilisateur.
+description: Utilisez des modèles de fragment de contenu AEM pour définir la structure des fragments de contenu, à la base de votre contenu découplé.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '383'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Guide de démarrage rapide sur la création d’un dossier de ressources découplées {#creating-an-assets-folder}
 
-Utilisez des modèles de fragment de contenu AEM pour définir la structure des fragments de contenu, à la base de votre contenu sans interface utilisateur. Ces fragments sont ensuite stockés dans des dossiers de ressources.
+Utilisez des modèles de fragment de contenu AEM pour définir la structure des fragments de contenu, à la base de votre contenu découplé. Ces fragments sont ensuite stockés dans des dossiers de ressources.
 
 ## Qu’est-ce qu’un dossier de ressources ? {#what-is-an-assets-folder}
 
