@@ -3,7 +3,7 @@ title: Outil de comparaison des pages
 description: De fait, l’outil de comparaison des pages permet d’afficher côte à côte deux pages pour les comparer en mettant en évidence leurs différences.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '622'
 ht-degree: 100%
 
@@ -34,7 +34,7 @@ L’outil de comparaison côte à côte permet de comparer les éléments suivan
 
 Reportez-vous aux rubriques correspondantes afin de connaître la procédure de comparaison pour ces différents éléments.
 
-### Présentation des différences  {#presentation-of-differences}
+### Présentation des différences {#presentation-of-differences}
 
 La présentation des différences reste la même, quel que soit le contenu à comparer.
 
@@ -63,7 +63,7 @@ L’outil de comparaison détecte les modifications effectuées sur les composan
 >
 >Lorsque vous comparez des copies de langue, la mise en surbrillance est désactivée. En effet, dans la mesure où la traduction modifie tout le contenu, la mise en surbrillance ne présente aucun intérêt.
 
-### Affichage en mode plein écran  {#fullscreen-and-exiting}
+### Affichage en mode plein écran {#fullscreen-and-exiting}
 
 Si vous souhaitez vous concentrer sur un contenu spécifique, vous pouvez cliquer sur l’icône du mode plein écran pour l’un ou l’autre des deux « côtés » de votre comparaison. Cela vous permet d’afficher la version en plein écran dans la fenêtre du navigateur.
 
