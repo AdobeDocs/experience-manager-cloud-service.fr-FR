@@ -18,7 +18,7 @@ ht-degree: 95%
 
 Dynamic Media prend en charge les technologies d’assistance et de contrôle du clavier, telles que les lecteurs d’écran JAWS et NVDA, dans l’interface utilisateur de création.
 
-## Prise en charge de l’accessibilité du clavier dans Dynamic Media  {#keyboard-support-in-dm}
+## Prise en charge de l’accessibilité du clavier dans Dynamic Media {#keyboard-support-in-dm}
 
 Comme Dynamic Media est un plug-in de [!DNL Experience Manager Assets], la plupart des commandes au clavier sont identiques à celles de [!DNL Experience Manager Assets]. Par exemple, le bouton `Cancel` de Dynamic Media a la même mise en surbrillance que dans [!DNL Experience Manager Assets]. Il réagit également à la clé `Spacebar` comme dans [!DNL Experience Manager Assets]. Consultez les [Raccourcis clavier dans Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
