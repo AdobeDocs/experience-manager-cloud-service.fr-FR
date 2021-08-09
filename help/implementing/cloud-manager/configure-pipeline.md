@@ -1,11 +1,11 @@
 ---
-title: Configuration du pipeline CI/CD - Cloud Services
-description: Configuration du pipeline CI/CD - Cloud Services
+title: Configuration du pipeline CI/CD – Cloud Services
+description: Configuration du pipeline CI/CD – Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
 source-wordcount: '791'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -130,9 +130,9 @@ Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle c
 
    * **Modifier** : permet de modifier les paramètres du pipeline.
    * **Détails**  : fournit des détails sur l’exécution du pipeline.
-   * **Compilation** : permet d’accéder à la page d’exécution, à partir de laquelle le pipeline peut être exécuté.
-   * **Accès aux informations sur le référentiel**  : permet à l’utilisateur d’obtenir les informations nécessaires pour accéder au référentiel Git de Cloud Manager.
-   * **En savoir plus**  : accède à la documentation du pipeline CI/CD.
+   * **Build** : permet d’accéder à la page d’exécution, à partir de laquelle le pipeline peut être exécuté.
+   * **Accéder aux informations sur le référentiel** : permet à l’utilisateur d’obtenir les informations nécessaires pour accéder au référentiel Git de Cloud Manager.
+   * **En savoir plus** : suivez ce lient pour en savoir plus sur les ressources de documentation du pipeline CI/CD.
 
 ## Étapes suivantes {#the-next-steps}
 
