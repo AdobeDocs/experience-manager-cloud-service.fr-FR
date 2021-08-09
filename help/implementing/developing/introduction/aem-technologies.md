@@ -146,7 +146,7 @@ Tous les scripts Sling sont stockés dans des sous-dossiers `/apps` (modifiables
 
 Un certain nombre d’autres points sont à noter :
 
-* Si la méthode (GET, POST) est requise, elle est indiquée en majuscules selon la spécification HTTP, par ex. `jobs.POST.esp`. 
+* Si la méthode (GET, POST) est requise, elle est indiquée en majuscules selon la spécification HTTP, par ex. `jobs.POST.esp`.
 * Différents moteurs de script sont pris en charge, mais les scripts courants recommandés sont HTL et JavaScript.
 
 La liste des moteurs de script pris en charge par l’instance donnée d’AEM figure dans la Felix Management Console (`http://<host>:<port>/system/console/slingscripting`).
