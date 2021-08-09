@@ -131,7 +131,7 @@ Si vous ajoutez le composant Média dynamique et si l’option **[!UICONTROL Par
 
 * L’image possède un fichier pyramid tiff. Les images importées avant l’activation de Dynamic Media ne possèdent pas de fichier pyramid tiff.
 
-#### En cas d’utilisation d’images  {#when-working-with-images}
+#### En cas d’utilisation d’images {#when-working-with-images}
 
 Le composant Média dynamique permet d’ajouter des images dynamiques, notamment des visionneuses d’images, à 360 ° et de supports variés. Vous pouvez effectuer un zoom avant et arrière, faire pivoter une image dans une visionneuse à 360° ou sélectionner une image dans un autre type de visionneuse.
 
