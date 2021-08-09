@@ -1,11 +1,11 @@
 ---
 title: Gestion des versions du projet Maven
-description: Gestion des versions du projet Maven - Cloud Services
+description: Gestion des versions du projet Maven – Cloud Services
 exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
 source-git-commit: 4761d93fe4fc186dd92ba897f62b8de967d8b890
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '258'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Cette version est affichée sur la page des détails d’exécution du pipeline,
 Si la version originale du projet répond à certains critères, la version mise à jour du projet Maven fusionne la version originale du projet et la version générée par Cloud Manager. Toutefois, la balise utilise toujours la version générée. Pour que cette fusion se produise, la version originale du projet doit être formée avec exactement trois segments de version, par exemple 1.0.0 ou 1.2.3, mais pas 1.0 ou 1, et la version originale ne doit pas se terminer par -SNAPSHOT.
 
 >[!NOTE]
->Cette valeur de version de projet d’origine doit être définie de manière statique dans l’élément `<version>` du fichier `pom.xml` de niveau supérieur dans la branche du référentiel git.
+>Cette valeur de version de projet d’origine doit être définie de manière statique dans l’élément `<version>` du fichier `pom.xml` de niveau supérieur dans la branche du référentiel Git.
 
 Si la version d’origine ne répond pas à ces critères, la version générée sera ajoutée à la version d’origine en tant que segment de nouvelle version. La version générée sera également légèrement modifiée pour inclure un tri et une gestion corrects des versions. Par exemple, en supposant une version générée de 2019.926.121356.0000020490 :
 
