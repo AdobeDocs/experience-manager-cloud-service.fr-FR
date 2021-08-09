@@ -3,7 +3,7 @@ title: Tests de l’interface utilisateur – Cloud Services
 description: Tests de l’interface utilisateur – Cloud Services
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1087'
 ht-degree: 100%
 
