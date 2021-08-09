@@ -3,7 +3,7 @@ title: 'Affichage, mise à jour et remplacement d’un certificat SSL – Gestio
 description: Affichage, mise à jour et remplacement d’un certificat SSL – Gestion des certificats SSL
 exl-id: 662494b1-a710-4822-97ef-057043ef89ba
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '404'
 ht-degree: 100%
 
