@@ -63,7 +63,7 @@ Vous pouvez activer Brand Portal au moment de la création des environnements p
 **Voir également** :
 * [Ajouter des utilisateurs et des rôles dans AEM Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=en)
 
-* [Gestion des environnements dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=fr#using-cloud-manager)
+* [Gestion des environnements dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=fr#adding-environments)
 
 
 **Connectez-vous à votre client Brand Portal** :
@@ -77,7 +77,7 @@ dans lequel l’identifiant client est l’organisation IMS.
 Suivez les étapes suivantes si vous n’êtes pas sûr de l’URL de Brand Portal :
 
 1. Connectez-vous à l’[Admin Console](http://adminconsole.adobe.com/) et accédez à **[!UICONTROL Produits]**.
-1. Dans le rail de gauche, sélectionnez **[!UICONTROL Brand Portal Adobe Experience Manager - Brand Portal]**.
+1. Dans le rail de gauche, sélectionnez **[!UICONTROL Brand Portal Adobe Experience Manager – Brand Portal]**.
 1. Cliquez sur **[!UICONTROL Accéder à Brand Portal]** pour ouvrir directement Brand Portal dans le navigateur.
 
    Vous pouvez également copier l’URL du client Brand Portal à partir du lien **[!UICONTROL Accéder à Brand Portal]** et la coller dans votre navigateur pour ouvrir l’interface de Brand Portal.
@@ -132,7 +132,7 @@ Vous pouvez maintenant effectuer les tâches suivantes :
 * [Publication de ressources à partir d’AEM Assets sur Brand Portal](publish-to-brand-portal.md)
 * [Publication de dossiers à partir d’AEM Assets sur Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Publication de collections à partir d’AEM Assets sur Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [Publication de ressources de Brand Portal vers AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=fr) - Découverte de ressources dans Brand Portal
+* [Publication de ressources de Brand Portal vers AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=fr) – Découverte de ressources dans Brand Portal
 * [Publication de paramètres prédéfinis, de schémas et de facettes sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [Publication de balises sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
@@ -253,7 +253,7 @@ Dans Adobe Developer Console, les projets et les API sont configurés au niveau 
 
 Procédez comme suit pour générer les informations d’identification du compte de service et la charge utile JWT :
 
-1. Connectez-vous à Adobe Developer Console avec les privilèges d’administrateur système sur l’organisation IMS (client Brand Portal). L’URL par défaut est  [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. Connectez-vous à Adobe Developer Console avec les privilèges d’administrateur système sur l’organisation IMS (client Brand Portal). L’URL par défaut est [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    >[!NOTE]
