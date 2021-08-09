@@ -3,7 +3,7 @@ title: ContextHub
 description: ContextHub est une structure pour stocker, manipuler et présenter des données contextuelles
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '287'
 ht-degree: 100%
 
@@ -44,6 +44,6 @@ Chaque magasin ContextHub est une instance d’un type de magasin prédéfini :
 * Les développeurs peuvent [créer des types de magasin personnalisés](extending-contexthub.md#creating-custom-store-candidates).
 * Les développeurs peuvent [accéder aux données du magasin](adding-contexthub.md#interacting-with-contexthub-stores) via Javascript.
 
-## Segmentation  {#segmentation}
+## Segmentation {#segmentation}
 
 ContextHub propose un moteur de segmentation qui gère les segments et détermine les segments qui sont résolus pour le contexte actuel. Plusieurs segments sont définis. Vous pouvez utiliser l’API Javascript pour [déterminer les segments résolus](adding-contexthub.md#determining-resolved-contexthub-segments).
