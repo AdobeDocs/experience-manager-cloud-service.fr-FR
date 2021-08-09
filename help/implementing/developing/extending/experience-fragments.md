@@ -3,9 +3,9 @@ title: Fragments d’expérience
 description: Extension des fragments d’expérience Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1660'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -96,7 +96,7 @@ Pour créer un modèle de fragment d’expérience détecté par l’assistant *
    1. Et le nom du modèle doit commencer par :
       `experience-fragments`
 Cela permet aux utilisateurs de créer des fragments d’expérience dans /content/experience-fragments en tant que 
-`cq:allowedTemplates` de ce dossier comprend tous les modèles dont le nom commence par  `experience-fragment`. Les clients peuvent mettre à jour cette propriété afin d’inclure leur propre schéma d’affectation de noms ou emplacement de modèle.
+propriété `cq:allowedTemplates` de ce dossier qui comprend tous les modèles dont le nom commence par `experience-fragment`. Les clients peuvent mettre à jour cette propriété afin d’inclure leur propre schéma d’affectation de noms ou emplacement de modèle.
 
 1. Les [modèles autorisés](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) peuvent être configurés dans la console des fragments d’expérience.
 
@@ -121,7 +121,7 @@ La seule configuration supplémentaire consiste à s’assurer que les composant
 The only additional configuration is to ensure that the components are [allowed on the template, this is achieved with the Content Policy](/help/sites-developing/page-templates-editable.md#content-policies).
 -->
 
-## Fournisseur de réécriture de liens de fragments d’expérience - HTML {#the-experience-fragment-link-rewriter-provider-html}
+## Fournisseur de réécriture de liens de fragments d’expérience – HTML {#the-experience-fragment-link-rewriter-provider-html}
 
 Dans AEM, vous avez la possibilité de créer des fragments d’expérience. Un fragment d’expérience :
 
@@ -289,8 +289,8 @@ S’agissant de la variation du fragment d’expérience concernée par le proce
 En entrée, la méthode reçoit les paramètres suivants :
 
 * `link`
-Les 
-`String` Représentation du lien en cours de traitement. Il s’agit généralement d’une URL relative pointant vers la ressource sur l’instance de création.
+La 
+représentation `String` du lien en cours de traitement. Il s’agit généralement d’une URL relative pointant vers la ressource sur l’instance de création.
 
 * `tag`
 Nom de l’élément HTML en cours de traitement.
