@@ -4,7 +4,7 @@ description: Découvrez comment configurer l’éditeur de texte enrichi pour cr
 contentOwner: AG
 exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '508'
 ht-degree: 100%
 
