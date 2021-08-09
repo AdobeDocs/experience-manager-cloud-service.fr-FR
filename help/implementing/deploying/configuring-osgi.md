@@ -174,7 +174,7 @@ Il est possible d’utiliser la console web AEM de l’environnement d’exécut
 1. Ajoutez et validez votre nouveau fichier de configuration OSGi sur Git.
 
 
-## Formats des propriétés de configuration OSGi   {#osgi-configuration-property-formats}
+## Formats des propriétés de configuration OSGi {#osgi-configuration-property-formats}
 
 ### Valeurs intégrées {#inline-values}
 
