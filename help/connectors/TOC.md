@@ -6,7 +6,7 @@ user-guide-description: Découvrez comment intégrer des connecteurs dans Experi
 feature: Outils de développement
 role: Developer
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '51'
 ht-degree: 100%
 
