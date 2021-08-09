@@ -3,7 +3,7 @@ title: Routage du modèle de SPA
 description: Concernant les applications sur une seule page (SPA) dans AEM, c’est l’application qui est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '441'
 ht-degree: 100%
 
