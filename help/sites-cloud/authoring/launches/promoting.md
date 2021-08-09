@@ -3,7 +3,7 @@ title: Conversion de lancements
 description: Vous devez convertir les pages de lancement pour redéplacer le contenu vers la source (production) avant de le publier.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '817'
 ht-degree: 100%
 
@@ -37,7 +37,8 @@ Vous devez convertir les pages de lancement pour redéplacer le contenu vers la 
 >Il s’agit de l’action manuelle consistant à convertir les pages de lancement lorsqu’il existe un seul niveau de lancement. Voir :
 >
 >* [Conversion d’un lancement imbriqué](#promoting-a-nested-launch) lorsqu’il existe plusieurs lancements dans la structure.
->* [Lancements - Ordre des événements](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) pour en savoir plus sur la conversion et la publication automatiques.
+>* [Lancements – Ordre des événements](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) pour en savoir plus sur la conversion et la publication automatiques.
+
 >
 
 
@@ -90,7 +91,7 @@ Lorsque vous modifiez une page de lancement, l’action **Convertir le lancement
 >
 >Cette option est disponible pour les lancements simples et [imbriqués](#promoting-a-nested-launch).
 
-## Promotion d’un lancement imbriqué  {#promoting-a-nested-launch}
+## Promotion d’un lancement imbriqué {#promoting-a-nested-launch}
 
 Après avoir créé un lancement imbriqué, vous pouvez le convertir en pages source, y compris la source racine (production).
 
