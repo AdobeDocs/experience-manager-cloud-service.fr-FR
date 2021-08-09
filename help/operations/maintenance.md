@@ -5,7 +5,7 @@ exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 source-git-commit: 22228ebfbc754551f93907502c53427ba43983b3
 workflow-type: tm+mt
 source-wordcount: '992'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -60,9 +60,9 @@ Les clients peuvent planifier chacune des tâches de maintenance Purger le workf
     <td>Client</td>
     <td>Définition de nœud JCR</td>
   <td>
-  <p><strong></strong>windowSchedule = daily (cette valeur ne doit pas être modifiée)</p>
-  <p><strong></strong>windowStartTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance quotidienne doivent commencer à s’exécuter.</p>
-  <p><strong></strong>windowEndTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance quotidienne doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.</p>
+  <p><strong>windowSchedule=daily</strong> (cette valeur ne doit pas être modifiée)</p>
+  <p><strong>windowStartTime=HH:MM</strong> dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance quotidienne doivent commencer à s’exécuter.</p>
+  <p><strong>windowEndTime=HH:MM</strong> dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance quotidienne doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.</p>
   </td> 
   </tr>
   <tr>
@@ -70,10 +70,10 @@ Les clients peuvent planifier chacune des tâches de maintenance Purger le workf
     <td>Client</td>
     <td>Définition de nœud JCR</td>
     <td>
-    <p><strong></strong>windowSchedule = hebdomadaire (cette valeur ne doit pas être modifiée)</p>
-    <p><strong></strong>windowStartTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance hebdomadaire doivent commencer à s’exécuter.</p>
-    <p><strong></strong>windowEndTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance hebdomadaire doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.</p>
-    <p><strong>windowScheduleWeekdays= tableau de 2 valeurs comprises entre 1 et 7 (par ex. [5,5])</strong> La première valeur du tableau est le jour de début planifié de la tâche et la seconde est le jour de fin où la tâche serait arrêtée. L’heure exacte du début et de la fin est régie par les paramètres windowStartTime et windowEndTime, respectivement.</p>
+    <p><strong>windowSchedule=weekly</strong> (cette valeur ne doit pas être modifiée)</p>
+    <p><strong>windowStartTime=HH:MM</strong> dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance hebdomadaire doivent commencer à s’exécuter.</p>
+    <p><strong>windowEndTime=HH:MM</strong> dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance hebdomadaire doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.</p>
+    <p><strong>windowScheduleWeekdays= tableau de 2 valeurs de 1 à 7 (ex. : [5,5])</strong> La première valeur du tableau désigne le jour de début planifié de la tâche et la seconde le jour de fin où la tâche doit être arrêtée. L’heure exacte du début et de la fin est régie par les paramètres windowStartTime et windowEndTime, respectivement.</p>
     </td>
   </tr>
   <tr>
@@ -81,23 +81,23 @@ Les clients peuvent planifier chacune des tâches de maintenance Purger le workf
     <td>Client</td>
     <td>Définition de nœud JCR</td>
     <td>
-    <p><strong></strong>windowSchedule = daily (cette valeur ne doit pas être modifiée)</p>
-    <p><strong></strong>windowStartTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance mensuelle doivent commencer à s’exécuter.</p>
-    <p><strong></strong>windowEndTime = HH:MM dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance mensuelle doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.</p>
-    <p><strong>windowScheduleWeekdays=Tableau de 2 valeurs comprises entre 1 et 7 (par ex. [5,5])</strong> La première valeur du tableau est le jour de début planifié de la tâche et la seconde est le jour de fin où la tâche serait arrêtée. L’heure exacte du début et de la fin est régie par les paramètres windowStartTime et windowEndTime, respectivement.</p>
+    <p><strong>windowSchedule=daily</strong> (cette valeur ne doit pas être modifiée)</p>
+    <p><strong>windowStartTime=HH:MM</strong> dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance mensuelle doivent commencer à s’exécuter.</p>
+    <p><strong>windowEndTime=HH:MM</strong> dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance mensuelle doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.</p>
+    <p><strong>windowScheduleWeekdays= tableau de 2 valeurs de 1 à 7 (ex. : [5,5])</strong> La première valeur du tableau désigne le jour de début planifié de la tâche et la seconde le jour de fin où la tâche doit être arrêtée. L’heure exacte du début et de la fin est régie par les paramètres windowStartTime et windowEndTime, respectivement.</p>
     <p><strong>windowFirstLastStartDay= 0/1</strong> 0 pour planifier la première semaine du mois ou 1 pour planifier la dernière semaine du mois. En l’absence de valeur, les tâches sont planifiées chaque jour, comme régi par le paramètre windowScheduleWeekdays tous les mois.</p>
     </td> 
     </tr>
     </tbody>
 </table>
 
-**Emplacements**:
+**Emplacements** :
 
-* Quotidien - /apps/settings/granite/operations/maintenance/granite_daily
-* Hebdomadaire - /apps/settings/granite/operations/maintenance/granite_weekly
-* Mensuel - /apps/settings/granite/operations/maintenance/granite_month
+* Quotidien – /apps/settings/granite/operations/maintenance/granite_daily
+* Hebdomadaire – /apps/settings/granite/operations/maintenance/granite_weekly
+* Mensuel – /apps/settings/granite/operations/maintenance/granite_monthly
 
-**Exemples** de code :
+**Exemples de code** :
 
 Exemple de code 1 (quotidien)
 
