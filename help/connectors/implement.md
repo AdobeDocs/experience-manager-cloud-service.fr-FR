@@ -3,9 +3,9 @@ title: Implémentation d’un connecteur AEM
 description: Implémentation d’un connecteur AEM
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '968'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
