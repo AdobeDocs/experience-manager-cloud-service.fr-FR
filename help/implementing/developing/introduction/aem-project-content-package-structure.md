@@ -5,7 +5,7 @@ exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '2869'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -88,7 +88,7 @@ La structure de déploiement d’application recommandée est la suivante :
 
 >[!NOTE]
 >
->Le même code doit être déployé dans tous les environnements. Cela est nécessaire afin de garantir un niveau de confiance dans l’environnement intermédiaire également en production. Pour plus d’informations, voir la section [Modes d’exécution](/help/implementing/deploying/overview.md#runmodes).
+>Le même code doit être déployé dans tous les environnements. C’est indispensable pour garantir que la confiance dans l’environnement d’évaluation s’applique également en production. Pour plus d’informations, voir la section [Modes d’exécution](/help/implementing/deploying/overview.md#runmodes).
 
 
 ### Modules de contenu
@@ -147,7 +147,7 @@ Les modules doivent être marqués avec le type déclaré.
 + Les modules de contenu (modifiables) doivent définir leur `packageType` sur `content`.
 
 
-Pour plus d’informations, consultez la [documentation d’Apache Jackrabbit FileVault - Package Maven Plugin](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) et le [fragment de code de configuration FileVault Maven](#marking-packages-for-deployment-by-adoube-cloud-manager) ci-dessous.
+Pour plus d’informations, consultez la [documentation d’Apache Jackrabbit FileVault – Package Maven Plugin](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) et le [fragment de code de configuration FileVault Maven](#marking-packages-for-deployment-by-adoube-cloud-manager) ci-dessous.
 
 >[!TIP]
 >
@@ -205,7 +205,7 @@ Notez que les modules de contenu (`<packageType>content</packageType>`) n’ont 
 >
 >Pour obtenir un fragment de code complet, reportez-vous à la section [Fragments de code XML POM](#xml-repository-structure-package) ci-dessous.
 
-## Intégration de sous-modules dans le module conteneur{#embeddeds}
+## Intégration de sous-packages dans le package conteneur{#embeddeds}
 
 Les modules de contenu ou de code sont placés dans un dossier « sidecar » spécial et peuvent être ciblés en vue d’une installation sur AEM Author, AEM Publish, ou les deux, à l’aide de la configuration `<embeddeds>` du plug-in Maven FileVault. Notez que la configuration `<subPackages>` ne doit pas être utilisée.
 
@@ -283,7 +283,7 @@ L’ajout de dépendances Maven suivant les pratiques Maven standard et l’inco
 >
 >Pour obtenir un fragment de code complet, reportez-vous à la section [Fragments de code XML POM](#xml-3rd-party-maven-repositories) ci-dessous.
 
-## Dépendances entre les modules `ui.apps` et `ui.content` {#package-dependencies}
+## Dépendances entre les modules `ui.apps` et `ui.content`  {#package-dependencies}
 
 Pour assurer l’installation correcte des modules, il est recommandé d’établir des dépendances entre les modules.
 
@@ -332,7 +332,7 @@ Les modules de code et de contenu qui sont déployés sous la forme de sous-modu
 
 Le projet `all/pom.xml` du conteneur ne déclare **pas** de `<packageType>`.
 
-#### Types de modules de code (non modifiable) {#immutable-package-types}
+#### Types de modules de code (non modifiable)  {#immutable-package-types}
 
 Les modules de code doivent définir leur `packageType` sur `application`.
 
@@ -359,7 +359,7 @@ Dans le fichier `ui.apps/pom.xml`, la directive de configuration de version `<pa
     ...
 ```
 
-#### Types de modules de contenu (modifiable) {#mutable-package-types}
+#### Types de modules de contenu (modifiable)  {#mutable-package-types}
 
 Les modules de contenu doivent définir leur `packageType` sur `content`.
 
@@ -456,7 +456,7 @@ Dans le fichier `ui.apps/pom.xml`, ainsi que dans tout autre fichier `pom.xml` q
     ...
 ```
 
-### Intégration de sous-modules dans le module conteneur {#xml-embeddeds}
+### Intégration de sous-packages dans le package conteneur {#xml-embeddeds}
 
 Dans le fichier `all/pom.xml`, ajoutez les directives `<embeddeds>` suivantes à la déclaration du plug-in `filevault-package-maven-plugin`. Pour rappel, n’utilisez **pas** la configuration `<subPackages>`, car elle inclut les sous-modules dans `/etc/packages` plutôt que dans `/apps/my-app-packages/<application|content|container>/install(.author|.publish)?`.
 
@@ -571,7 +571,7 @@ Dans le fichier `pom.xml` du projet Reactor, ajoutez toute directive de référe
 </repositories>
 ```
 
-### Dépendances entre les modules `ui.apps` et `ui.content` {#xml-package-dependencies}
+### Dépendances entre les modules `ui.apps` et `ui.content`  {#xml-package-dependencies}
 
 Dans le fichier `ui.content/pom.xml`, ajoutez les directives `<dependencies>` suivantes à la déclaration du plug-in `filevault-package-maven-plugin`.
 
@@ -624,4 +624,4 @@ Dans le fichier `all/pom.xml`, ajoutez le plug-in `maven-clean-plugin` qui netto
 ## Ressources supplémentaires {#additional-resources}
 
 + [Gestion des packages à l’aide de Maven](/help/implementing/developing/tools/maven-plugin.md)
-+ [Module Maven de package de contenu FileVault](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [Plug-in FileVault Content Package Maven](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
