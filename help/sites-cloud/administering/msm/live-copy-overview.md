@@ -57,7 +57,7 @@ L’**aperçu de la Live Copy** peut être ouvert lorsque lors de l’affichage 
 
 1. Utilisez **Fermer** pour fermer l’aperçu et retourner à la console **Sites**.
 
-## Utilisation de l’aperçu de la Live Copy  {#using-the-live-copy-overview}
+## Utilisation de l’aperçu de la Live Copy {#using-the-live-copy-overview}
 
 La fenêtre **Aperçu de Live Copy** donne un aperçu du statut des Live Copies liées à la page sélectionnée.
 
@@ -80,8 +80,8 @@ Lorsque vous sélectionnez une page de plan directeur, les actions suivantes son
 
 ![Actions d’aperçu de Live Copy pour un plan](../assets/live-copy-overview-actions-blueprint.png)
 
-* **Modifier** - Ouvrez le plan directeur pour le modifier.
-* **[Déployer](overview.md#rollout-and-synchronize)** - Effectuez un déploiement pour pousser les modifications de la source vers la Live Copy.
+* **Modifier** – Ouvrez le plan directeur pour le modifier.
+* **[Déployer](overview.md#rollout-and-synchronize)** – Effectuez un déploiement pour pousser les modifications de la source vers la Live Copy.
 
 ### Actions d’une page de Live Copy {#actions-for-a-live-copy-page}
 
@@ -89,13 +89,13 @@ Lorsque vous sélectionnez une page de Live Copy, les actions suivantes sont di
 
 ![Actions d’aperçu de Live Copy pour une Live Copy](../assets/live-copy-overview-actions.png)
 
-* **Modifier** - Ouvrez la page de la Live Copy pour la modifier.
-* **[État de la relation](#relationship-status)** - Affichez des informations sur l’état et l’héritage.
-* **[Synchroniser](overview.md#rollout-and-synchronize)** - Synchronisez une Live Copy pour extraire des modifications de la source vers la Live Copy.
-* **[Réinitialiser](creating-live-copies.md#resetting-a-live-copy-page)** - Réinitialisez une page Live Copy pour supprimer toutes les annulations d’héritage et restaurer la page au même statut que la page source.
-* **[Suspendre](overview.md#suspending-and-cancelling-inheritance-and-synchronization)** - Désactive temporairement les relations directes entre une Live Copy et sa page de plan directeur.
-* **[Reprendre](creating-live-copies.md#resuming-inheritance-for-a-page)** - La reprise vous permet de rétablir une relation suspendue.
-* **[Désolidariser](overview.md#detaching-a-live-copy)** - Supprime définitivement la relation directe entre une Live Copy et sa page de plan directeur.
+* **Modifier** – Ouvrez la page de la Live Copy pour la modifier.
+* **[État de la relation](#relationship-status)** – Affichez des informations sur l’état et l’héritage.
+* **[Synchroniser](overview.md#rollout-and-synchronize)** – Synchronisez une Live Copy pour extraire des modifications de la source vers la Live Copy.
+* **[Réinitialiser](creating-live-copies.md#resetting-a-live-copy-page)** – Réinitialisez une page Live Copy pour supprimer toutes les annulations d’héritage et restaurer la page au même statut que la page source.
+* **[Suspendre](overview.md#suspending-and-cancelling-inheritance-and-synchronization)** – Désactive temporairement les relations directes entre une Live Copy et sa page de plan directeur.
+* **[Reprendre](creating-live-copies.md#resuming-inheritance-for-a-page)** – La reprise vous permet de rétablir une relation suspendue.
+* **[Désolidariser](overview.md#detaching-a-live-copy)** – Supprime définitivement la relation directe entre une Live Copy et sa page de plan directeur.
 
 ## État de la relation {#relationship-status}
 
@@ -110,7 +110,7 @@ Cet onglet fournit des informations détaillées sur le statut de la relation en
 
 ![Onglet État de la relation](../assets/live-copy-relationship-status.png)
 
-### Live Copy  {#live-copy-tab}
+### Live Copy {#live-copy-tab}
 
 Cet onglet vous permet d’afficher et de modifier la configuration de la Live Copy.
 
