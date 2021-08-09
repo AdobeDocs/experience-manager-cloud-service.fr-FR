@@ -3,7 +3,7 @@ title: Diagnostic ContextHub
 description: ContextHub fournit une page de diagnostic où vous avez accès à une vue d’ensemble du framework ContextHub
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '440'
 ht-degree: 100%
 
@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # Diagnostic ContextHub {#contexthub-diagnostics}
 
-ContextHub fournit une page de diagnostic où vous avez accès à une vue d’ensemble du framework ContextHub. Pour ouvrir la page, accédez à la page `contexthub.diagnostics.html` de votre instance de création AEM par exemple :
+ContextHub fournit une page de diagnostics qui affiche un aperçu de sa structure. Pour ouvrir la page, accédez à la page `contexthub.diagnostics.html` de votre instance de création AEM par exemple :
 
 `http://<host>:<port>/conf/<site>/settings/cloudsettings/default/contexthub.diagnostics.html`
 
