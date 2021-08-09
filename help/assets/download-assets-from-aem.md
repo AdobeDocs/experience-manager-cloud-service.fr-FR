@@ -1,6 +1,6 @@
 ---
 title: Téléchargement de ressources
-description: Téléchargez des ressources depuis  [!DNL Adobe Experience Manager Assets]  et activez ou désactivez la fonctionnalité de téléchargement.
+description: Téléchargez des ressources depuis [!DNL Adobe Experience Manager Assets] et activez ou désactivez la fonctionnalité de téléchargement.
 contentOwner: AG
 feature: Gestion des ressources
 role: User
@@ -33,7 +33,7 @@ Vous pouvez télécharger des ressources Experience Manager à l’aide des mét
 
 ## Téléchargement de ressources à l’aide de l’interface [!DNL Experience Manager]  {#download-assets}
 
-Le service de téléchargement asynchrone fournit un framework permettant le téléchargement transparent de ressources de grande taille. Les fichiers plus petits sont téléchargés en temps réel depuis l’interface utilisateur. [!DNL Experience Manager] n’archive pas les téléchargements de ressources uniques où le fichier d’origine est téléchargé. Cette fonctionnalité permet des téléchargements plus rapides. Les fichiers volumineux sont téléchargés de manière asynchrone et [!DNL Experience Manager] notifie l’achèvement de l’opération par le biais de notifications dans la boîte de réception. Voir la section [comprendre la Boîte de réception  [!DNL Experience Manager]  ](/help/sites-cloud/authoring/getting-started/inbox.md).
+Le service de téléchargement asynchrone fournit un framework permettant le téléchargement transparent de ressources de grande taille. Les fichiers plus petits sont téléchargés en temps réel depuis l’interface utilisateur. [!DNL Experience Manager] n’archive pas les téléchargements de ressources uniques où le fichier d’origine est téléchargé. Cette fonctionnalité permet des téléchargements plus rapides. Les fichiers volumineux sont téléchargés de manière asynchrone et [!DNL Experience Manager] notifie l’achèvement de l’opération par le biais de notifications dans la boîte de réception. Voir la section [comprendre la Boîte de réception [!DNL Experience Manager]  ](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 ![Notification de téléchargement](assets/download-notification.png)
 
