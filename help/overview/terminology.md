@@ -1,6 +1,6 @@
 ---
-title: Présentation d’Adobe Experience Manager as a Cloud Service - Terminologie
-description: Présentation d’Adobe Experience Manager as a Cloud Service - Terminologie.
+title: Présentation d’Adobe Experience Manager as a Cloud Service – Terminologie
+description: Présentation d’Adobe Experience Manager as a Cloud Service – Terminologie.
 exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
 source-git-commit: 4067db2234b29e4ffbe3e76f25afd9d8642a1973
 workflow-type: tm+mt
@@ -9,7 +9,7 @@ ht-degree: 97%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service - Terminologie {#adobe-experience-manager-as-a-cloud-service-terminology}
+# Adobe Experience Manager as a Cloud Service – Terminologie {#adobe-experience-manager-as-a-cloud-service-terminology}
 
 Les termes suivants sont utilisés par rapport à Adobe Experience Manager (AEM) as a Cloud Service :
 
