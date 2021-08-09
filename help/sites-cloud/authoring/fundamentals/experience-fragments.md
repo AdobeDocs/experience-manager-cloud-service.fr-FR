@@ -3,7 +3,7 @@ title: Fragments d’expérience
 description: Utilisez des fragments d’expérience Adobe Experience Manager as a Cloud Service pour rendre vos expériences réutilisables et flexibles.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1492'
 ht-degree: 100%
 
@@ -45,7 +45,7 @@ Les auteurs souhaitent utiliser AEM uniquement dans une optique de création, m
 >
 Si vous rencontrez des problèmes, contactez votre administrateur système.
 
-## Quand utiliser les fragments d’expérience ?   {#when-should-you-use-experience-fragments}
+## Quand utiliser les fragments d’expérience ? {#when-should-you-use-experience-fragments}
 
 Les fragments d’expérience doivent être utilisés dans les cas suivants :
 
@@ -120,7 +120,7 @@ Pour créer et configurer un dossier pour vos fragments d’expérience, il est 
    Voir :
    `http://localhost:4502/mnt/overlay/cq/experience-fragments/content/experience-fragments/folderproperties.html/content/experience-fragments/wknd`
 
-   ![Propriétés des fragments d’expérience - Modèles autorisés](/help/sites-cloud/authoring/assets/xf-folders-templates.png)
+   ![Propriétés des fragments d’expérience – Modèles autorisés](/help/sites-cloud/authoring/assets/xf-folders-templates.png)
 
    >[!NOTE]
    >
@@ -325,13 +325,13 @@ Les détails sont affichés dans toutes les vues de la console **Éditeur de Fra
    ![Propriétés du fragment d’expérience](/help/sites-cloud/authoring/assets/xf-17.png)
 
    * **De base**
-      * **Titre** - obligatoire
+      * **Titre** – obligatoire
       * **Description**
       * **Balises**
-      * **Nombre total de variations** - informations uniquement
-      * **Nombre de variations web** - informations uniquement
-      * **Nombre de variations non-web** - informations uniquement
-      * **Nombre de pages utilisant ce fragment** - informations uniquement
+      * **Nombre total de variations** – informations uniquement
+      * **Nombre de variations web** – informations uniquement
+      * **Nombre de variations non-web** – informations uniquement
+      * **Nombre de pages utilisant ce fragment** – informations uniquement
    * **Cloud Services**
       * **Configuration du cloud**
       * **Configuration de Cloud Services**
@@ -350,7 +350,7 @@ Utiliser le sélecteur `.plain.` de l’URL permet d’accéder au rendu HTML b
 >
 >Même s’il est directement disponible à partir du navigateur, [le principal objectif consiste à autoriser d’autres applications (des applications web tierces et des implémentations mobiles personnalisées, par exemple) à accéder directement au contenu du composant Fragment d’expérience en utilisant uniquement l’URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
-## Exportation de fragments d’expérience    {#exporting-experience-fragments}
+## Exportation de fragments d’expérience {#exporting-experience-fragments}
 
 Par défaut, les fragments d’expérience sont fournis au format HTML. Ils peuvent être utilisés à la fois par AEM et les canaux tiers.
 
