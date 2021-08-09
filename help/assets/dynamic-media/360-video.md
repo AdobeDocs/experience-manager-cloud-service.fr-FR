@@ -25,7 +25,7 @@ Voir [Utilisation de vidéos 360 Dynamic Media et d’une miniature vidéo pers
 
 Voir également [Gestion des paramètres prédéfinis de visionneuse](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-## Vidéo 360 en action  {#video-in-action}
+## Vidéo 360 en action {#video-in-action}
 
 Sélectionnez [Station spatiale 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) pour ouvrir une fenêtre de navigateur et regarder une vidéo à 360 degrés. Pendant la lecture vidéo, faites glisser le pointeur vers un nouvel emplacement pour modifier l’angle de vue.
 
