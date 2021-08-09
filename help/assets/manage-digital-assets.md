@@ -318,7 +318,7 @@ Les groupes d’utilisateurs fermés constituent un moyen supplémentaire de lim
 1. Publiez le dossier, puis tentez d’y accéder à partir de l’instance de publication. Un écran de connexion s’affiche.
 1. Si vous êtes membre d’un groupe d’utilisateurs fermé, saisissez vos informations d’identification de sécurité. Le dossier s’affiche après qu’[!DNL Experience Manager] vous a authentifié.
 
-## Recherche de ressources   {#search-assets}
+## Recherche de ressources {#search-assets}
 
 La recherche de ressources est essentielle pour l’utilisation d’un système de gestion des ressources numériques, que ce soit pour une utilisation plus poussée par les créatifs, pour une gestion robuste des ressources par les utilisateurs et spécialistes marketing ou pour l’administration par les administrateurs DAM.
 
@@ -415,7 +415,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 1. Appuyez/cliquez sur l’icône **[!UICONTROL Annoter]** à partir de l’une des options suivantes :
 
    * [Actions rapides](#quick-actions)
-   * Dans la barre d’outils, après avoir sélectionné la ressource   ou avoir accédé à la page de la ressource
+   * Dans la barre d’outils, après avoir sélectionné la ressource ou avoir accédé à la page de la ressource
 
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
@@ -648,4 +648,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Pour en savoir plus, découvrez comme [parcourir les ressources DAM à l’aide de l’appli de bureau ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#browse-search-preview-assets) et [comment utiliser Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.htm).
+Pour en savoir plus, découvrez comme [parcourir les ressources DAM à l’aide de l’appli de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#browse-search-preview-assets) et [comment utiliser Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
