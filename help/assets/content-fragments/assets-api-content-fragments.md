@@ -1,12 +1,12 @@
 ---
 title: Prise en charge des fragments de contenu d’Adobe Experience Manager as a Cloud Service dans l’API Assets HTTP
-description: Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets, un élément important de la fonctionnalité de diffusion AEM sans interface.
+description: Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets, un élément important de la fonctionnalité de diffusion d’AEM découplé.
 feature: Fragments de contenu, API HTTP Assets
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
 source-wordcount: '1956'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 97%
 
 ## Présentation {#overview}
 
-Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets, un élément important de la fonctionnalité de diffusion AEM sans interface.
+Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets, un élément important de la fonctionnalité de diffusion d’AEM découplé.
 
 >[!NOTE]
 >
@@ -148,7 +148,7 @@ Si l’API REST Assets est utilisée dans un environnement sans conditions d’a
 >Pour plus d’informations, voir :
 >
 >* [CORS/AEM expliqué](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
->* [Vidéo - Développement pour CORS et AEM](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+>* [Vidéo – Développement pour CORS et AEM](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
 
 >
 
@@ -258,7 +258,7 @@ L’utilisation peut varier selon que vous utilisez un environnement d’auteur 
 
 >[!NOTE]
 >
->Pour plus d’informations, voir la [Référence d’API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). En particulier, [API Adobe Experience Manager Assets - Fragments de contenu](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
+>Pour plus d’informations, voir la [Référence d’API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). En particulier, [API Adobe Experience Manager Assets – Fragments de contenu](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
 
 ### Lecture/Diffusion {#read-delivery}
 
@@ -375,11 +375,11 @@ Affiché dans le scénario suivant :
    }
    ```
 
-## Référence d’API  {#api-reference}
+## Référence d’API {#api-reference}
 
 Pour accéder aux références d’API détaillées :
 
-* [API Adobe Experience Manager Assets - Fragments de contenu](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [API Adobe Experience Manager Assets – Fragments de contenu](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 
 * [API HTTP Assets](/help/assets/mac-api-assets.md)
 
