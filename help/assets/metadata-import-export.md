@@ -12,11 +12,11 @@ ht-degree: 92%
 
 ---
 
-# Importation et exportation des métadonnées de ressources par lot   {#import-and-export-asset-metadata-in-bulk}
+# Importation et exportation des métadonnées de ressources par lot {#import-and-export-asset-metadata-in-bulk}
 
 Adobe Experience Manager Assets vous permet d’importer des métadonnées de ressources en bloc à l’aide d’un fichier CSV. Vous pouvez effectuer des mises à jour par lot pour les ressources récemment transférées ou les ressources existantes en important un fichier CSV. Vous pouvez également assimiler des métadonnées de ressources par lot à partir d’un système tiers au format CSV.
 
-## Importation de métadonnées   {#import-metadata}
+## Importation de métadonnées {#import-metadata}
 
 L’importation de métadonnées est asynchrone et ne nuit pas aux performances du système. La mise à jour simultanée des métadonnées de plusieurs ressources peut nécessiter beaucoup de ressources en raison de l’activité générée par les microservices de ressources dédiés à l’écriture différée de métadonnées. Adobe vous recommande de planifier toute opération par lot pendant les périodes au cours desquelles vos serveurs sont le moins sollicités afin que les performances des autres utilisateurs ne soient pas affectées.
 
