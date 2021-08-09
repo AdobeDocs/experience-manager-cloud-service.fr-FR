@@ -1,15 +1,15 @@
 ---
-title: Guide de prise en main sans affichage
-description: Grâce à ce guide de démarrage rapide, découvrez les fonctionnalités essentielles d’AEM en tant que Cloud Service de puissantes fonctionnalités sans interface telles que les modèles de contenu, les fragments de contenu et l’API GraphQL.
+title: Guide de prise en main du mode découplé
+description: Grâce à ce guide de démarrage rapide, découvrez les fondamentaux des puissantes fonctionnalités en mode découplé comme les modèles de contenu, les fragments de contenu et l’API GraphQL.
 source-git-commit: 8dc9bf522a9b1c750ae8c92659cc83b444cb3c94
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '257'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 
-# Guide de prise en main sans affichage {#introduction}
+# Guide de prise en main du mode découplé {#introduction}
 
 Les guides de prise en main du découplage proposent un chemin d’accès simple pour la création, la gestion et la diffusion d’expériences avec AEM as a Cloud Service en cinq étapes. Chaque guide s’appuie sur le précédent ; il est donc recommandé de les étudier en détail et dans l’ordre.
 
