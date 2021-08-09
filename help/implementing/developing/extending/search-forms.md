@@ -3,7 +3,7 @@ title: Configuration des formulaires de recherche
 description: Configuration des formulaires de recherche pour Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2043'
 ht-degree: 100%
 
@@ -627,7 +627,7 @@ Les configurations personnalisées doivent être supprimées à partir de la con
 
 1. La configuration personnalisée est supprimée et la valeur par défaut est rétablie (le symbole de cadenas réapparaît dans la console).
 
-### Ajout de prédicats d’options  {#adding-options-predicates}
+### Ajout de prédicats d’options {#adding-options-predicates}
 
 Les prédicats d’options (options, propriété d’options) permettent de configurer un élément à rechercher. Ils servent généralement à rechercher un élément directement sous la page, par exemple, une propriété sur le nœud de page.
 
