@@ -1,15 +1,15 @@
 ---
-title: 'Exporter au format CSV  '
+title: Exporter au format CSV
 description: Exportez les informations relatives à vos pages vers un fichier CSV situé sur votre système local
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '199'
 ht-degree: 100%
 
 ---
 
-# Exporter au format CSV   {#export-to-csv}
+# Exporter au format CSV {#export-to-csv}
 
 L’option **Créer une exportation CSV** vous permet d’exporter les informations relatives à vos pages vers un fichier CSV situé sur votre système local.
 
@@ -24,7 +24,7 @@ L’option **Créer une exportation CSV** vous permet d’exporter les informati
 L’assistant **Créer une exportation CSV** vous permet de sélectionner les éléments suivants :
 
 * Propriétés à exporter
-   * Métadonnées  
+   * Métadonnées
       * Nom
       * Modifié
       * Publié
