@@ -19,13 +19,13 @@ La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service ve
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### Nouveautés de [!DNL Sites] {#what-is-new-sites}
+### Nouveautés d’[!DNL Sites]  {#what-is-new-sites}
 
 * Le SDK JavaScript de l’éditeur d’application sur une seule page (SPA) [est désormais en source libre.](/help/implementing/developing/hybrid/reference-materials.md)
 
 ## [!DNL Adobe Experience Manager Assets] en tant que Cloud Service {#assets}
 
-### Nouveautés de [!DNL Assets] {#what-is-new-assets}
+### Nouveautés d’[!DNL Assets]  {#what-is-new-assets}
 
 * L’application de filigrane aux fichiers d’images est prise en charge pour les rendus générés avec les microservices de ressources. Elle peut être configurée en tant que profil de traitement et utilise un fichier PNG en tant que filigrane. Voir [Application d’un filigrane à vos ressources](/help/assets/watermark-assets.md).
 
