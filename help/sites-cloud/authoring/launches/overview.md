@@ -3,7 +3,7 @@ title: Lancements
 description: La fonction Lancements permet de développer efficacement du contenu en vue d’une publication ultérieure. Les lancements permettent de préparer les modifications pour une publication à venir, tout en conservant vos pages actuelles.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '907'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ Vous pouvez également :
 * Naviguer dans le contenu de la branche de lancement pour ajoute ou supprimer des pages, si nécessaire.
 * Obtenir un aperçu de l’aspect du contenu publié à une date/heure future spécifique.
 
-À l’approche du trimestre suivant, vous convertissez les pages de lancement pour pouvoir modifier les pages source (contenant le contenu mis à jour). Vous pouvez convertir toutes les pages ou uniquement celles que vous avez modifiées. 
+À l’approche du trimestre suivant, vous convertissez les pages de lancement pour pouvoir modifier les pages source (contenant le contenu mis à jour). Vous pouvez convertir toutes les pages ou uniquement celles que vous avez modifiées.
 
 Les lancements peuvent également être :
 
@@ -55,20 +55,20 @@ La fonction Lancements vous permet de :
 
 * Modifier la configuration de lancement :
    * Ajoutez ou supprimez des pages et/ou des branches vers/à partir du lancement.
-   * Modifiez des propriétés de lancement, comme le **titre**, la **date de lancement** et l’indicateur **Prêt pour la production**. 
+   * Modifiez des propriétés de lancement, comme le **titre**, la **date de lancement** et l’indicateur **Prêt pour la production**.
 * Vous pouvez convertir et modifier le contenu manuellement ou automatiquement :
    * Manuellement :
       * Convertissez votre contenu de lancement en **Cible** (pages source) lorsqu’il est prêt à être publié.
       * Modifiez le contenu des pages source (après les avoir à nouveau converties).
       * Convertissez toutes les pages ou uniquement celles qui ont été modifiées.
-   * Automatiquement, ce qui implique les étapes suivantes : 
+   * Automatiquement, ce qui implique les étapes suivantes :
       * Le champ **Date de** **lancement** (**En direct**) : ce paramètre peut être défini lors de la création ou de la modification du lancement.
       * L’indicateur **Prêt pour la production** : cette option n’est sélectionnable que lors de la modification d’un lancement.
       * Si l’indicateur **Prêt pour la production** est défini, le lancement sera automatiquement converti en pages de production à la **date** de **lancement** (**En direct**) spécifiée. Après la promotion, les pages de production sont automatiquement publiées.\
          Si aucune date n’a été définie, l’indicateur n’a aucun effet.
 * Mettez à jour vos pages source et de lancement en parallèle :
-   * Les modifications apportées aux pages source sont automatiquement appliquées à la copie de lancement (si elle a été configurée avec un héritage, c’est-à-dire comme Live Copy). 
-   * Les modifications apportées à la copie de lancement peuvent l’être sans interrompre les mises à jour automatiques ou modifier les pages source. 
+   * Les modifications apportées aux pages source sont automatiquement appliquées à la copie de lancement (si elle a été configurée avec un héritage, c’est-à-dire comme Live Copy).
+   * Les modifications apportées à la copie de lancement peuvent l’être sans interrompre les mises à jour automatiques ou modifier les pages source.
 
    ![Actions en parallèle](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
@@ -86,7 +86,7 @@ La fonction Lancements vous permet de :
 >
 >La création et la modification de lancements exigent des droits d’accès à `/content/launches`, comme avec le groupe par défaut `content-authors`.
 >
->Si vous rencontrez des difficultés, contactez votre administrateur système. 
+>Si vous rencontrez des difficultés, contactez votre administrateur système.
 
 ## Lancements dans les références (console de sites) {#launches-in-references-sites-console}
 
