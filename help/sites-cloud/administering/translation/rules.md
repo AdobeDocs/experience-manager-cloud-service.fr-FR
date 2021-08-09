@@ -215,7 +215,7 @@ Le résultat dans le fichier xml ressemble à ce qui suit :
 <property inherit="true" name="jcr:language" translate="false" updateDestinationLanguage="true"/>
 ```
 
-## Modification manuelle du fichier de règles  {#editing-the-rules-file-manually}
+## Modification manuelle du fichier de règles {#editing-the-rules-file-manually}
 
 Le fichier `translation_rules.xml` qui est installé avec AEM contient un ensemble par défaut de règles de traduction. Vous pouvez modifier le fichier pour prendre en charge les exigences de vos projets de traduction. Par exemple, vous pouvez ajouter des règles de sorte que le contenu de vos composants personnalisés soit traduit.
 
@@ -225,7 +225,7 @@ Si vous modifiez le fichier `translation_rules.xml`, conservez une copie de sauv
 >
 >Après avoir créé le module de contenu, recréez le module chaque fois que vous modifiez le fichier.
 
-## Exemple de fichier de règles de traduction  {#example-translation-rules-file}
+## Exemple de fichier de règles de traduction {#example-translation-rules-file}
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><nodelist>
