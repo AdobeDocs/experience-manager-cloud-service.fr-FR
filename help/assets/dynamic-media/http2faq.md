@@ -16,7 +16,7 @@ Adobe se réjouit d’annoncer la disponibilité de la diffusion de contenu HTTP
 
 >[!NOTE]
 >
->Cette fonctionnalité nécessite l’utilisation du réseau réseau de diffusion de contenu prêt à l’emploi fourni avec Adobe Experience Manager – Dynamic Media. Aucun autre réseau réseau de diffusion de contenu personnalisé n’est pris en charge avec cette fonctionnalité.
+>Cette fonctionnalité nécessite l’utilisation du réseau de diffusion de contenu prêt à l’emploi fourni avec Adobe Experience Manager – Dynamic Media. Aucun autre réseau de diffusion de contenu personnalisé n’est pris en charge avec cette fonctionnalité.
 
 ## Qu’est-ce que le HTTP/2 ?  {#what-is-http}
 
@@ -37,7 +37,7 @@ La démonstration suivante illustre la différence entre le chargement HTTP/1 et
 
 [https://http2.akamai.com/demo](https://http2.akamai.com/demo)
 
-## Puis-je passer à HTTP/2 ?  {#am-i-eligible-to-switch-over-to-http}
+## Puis-je passer à HTTP/2 ? {#am-i-eligible-to-switch-over-to-http}
 
 Pour utiliser HTTP/2, vous devez satisfaire aux exigences suivantes :
 
@@ -84,12 +84,12 @@ Les demandes sont traitées dans l’ordre dans lequel elles sont reçues par le
 >
 >Le délai d’exécution est long car la transition vers le HTTP/2 implique l’effacement du cache. Par conséquent, seules quelques transitions client peuvent être traitées simultanément.
 
-## Quels risques présente la transition vers HTTP/2 ?  {#what-are-the-risks-with-moving-to-http}
+## Quels risques présente la transition vers HTTP/2 ? {#what-are-the-risks-with-moving-to-http}
 
 La transition vers HTTP/2 efface le cache au niveau du CDN, car elle implique la définition d’une nouvelle configuration de CDN.
 
 Le contenu non mis en cache atteint directement les serveurs Adobe d’origine jusqu’à ce que le cache soit reconstruit. Grâce à cette action, Adobe prévoit de gérer plusieurs transitions client à la fois. Cette méthode garantit des performances acceptables lors de l’extraction de requêtes à partir de l’origine.
 
-## Comment puis-je vérifier si une URL ou un site web est activé avec HTTP/2 ?  {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
+## Comment puis-je vérifier si une URL ou un site web est activé avec HTTP/2 ? {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
 Téléchargez une extension à utiliser avec votre navigateur web. Pour Firefox et Chrome, il existe une extension appelée **[!UICONTROL HTTP/2 and SPDY Indicator]**. Les navigateurs ne prennent en charge HTTP/2 qu’en mode sécurisé. Par conséquent, appelez une URL avec le protocole HTTPS pour vérifier. Si le HTTP/2 est pris en charge, l’extension comprend un symbole Flash de couleur bleue et un en-tête « X-Firefox-Spdy » : « h2 ».
