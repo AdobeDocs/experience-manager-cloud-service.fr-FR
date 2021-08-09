@@ -1,5 +1,5 @@
 ---
-title: Vidéo dans Dynamic Media
+title: Vidéo dans Dynamic Media
 description: Découvrez comment utiliser la vidéo dans Dynamic Media.
 feature: Profils vidéo
 role: User
@@ -15,7 +15,7 @@ ht-degree: 80%
 
 Cette section décrit l’utilisation de vidéos dans Dynamic Media.
 
-## Démarrage rapide : vidéos  {#quick-start-videos}
+## Démarrage rapide : vidéos {#quick-start-videos}
 
 Le processus détaillé décrit ci-après vise à vous aider à maîtriser rapidement les opérations liées aux visionneuses de vidéos adaptatives dans Dynamic Media. Chaque étape comporte des renvois à des rubriques contenant de plus amples informations.
 
@@ -179,7 +179,7 @@ Vous pouvez combiner dans un unique lecteur la possibilité de concevoir les com
 
 Consultez également [Visionneuses pour Experience Manager Assets uniquement](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) dans le [Guide de référence des visionneuses de médias dynamiques](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
-### Lecture vidéo sur les ordinateurs de bureau et les appareils mobiles à l’aide de la visionneuse de vidéos HTML5  {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
+### Lecture vidéo sur les ordinateurs de bureau et les appareils mobiles à l’aide de la visionneuse de vidéos HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 Pour la diffusion en flux continu de la vidéo adaptative sur un poste de travail et un appareil mobile, les vidéos utilisées pour le changement de débit reposent sur toutes les vidéos MP4 dans la visionneuse de vidéos adaptative.
 
@@ -266,7 +266,7 @@ Le tableau ci-dessous décrit l’appareil, le navigateur et la méthode de lect
  </tbody>
 </table>
 
-## Architecture de la solution vidéo Dynamic Media  {#architecture-of-dynamic-media-video-solution}
+## Architecture de la solution vidéo Dynamic Media {#architecture-of-dynamic-media-video-solution}
 
 Le graphique suivant montre le workflow global de création de vidéos qui sont chargées et codées par le biais de DMGateway (dans le mode Hybride Dynamic Media) et mises à disposition pour une consommation publique.
 
