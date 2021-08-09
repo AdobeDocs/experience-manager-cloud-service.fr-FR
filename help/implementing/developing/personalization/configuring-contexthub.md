@@ -3,7 +3,7 @@ title: Configuration de ContextHub
 description: Découvrez comment configurer ContextHub.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1683'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ Pour configurer le service, vous pouvez utiliser la [Console web](/help/implemen
 
 Si l’IU ContextHub est activée, elle s’affiche uniquement sur les pages sur les instances de création AEM. L’IU ne s’affiche pas sur les pages des instances de publication.
 
-## Ajout des modes et des modules d’IU ContextHub  {#adding-contexthub-ui-modes-and-modules}
+## Ajout des modes et des modules d’IU ContextHub {#adding-contexthub-ui-modes-and-modules}
 
 Configurez les modes et les modules d’IU qui apparaissent dans la barre d’outils ContextHub en mode d’aperçu :
 
@@ -39,7 +39,7 @@ Les modes d’IU s’affichent sous forme d’une série d’icônes dans la par
 
 Les icônes sont des références de la [bibliothèque d’icônes CoralUI](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons).
 
-### Ajout d’un mode d’IU  {#adding-a-ui-mode}
+### Ajout d’un mode d’IU {#adding-a-ui-mode}
 
 Ajoutez un mode d’IU afin de regrouper les modules ContextHub associés. Lorsque vous créez le mode d’IU, vous fournissez le titre et l’icône figurant dans la barre d’outils ContextHub.
 
@@ -53,12 +53,12 @@ Ajoutez un mode d’IU afin de regrouper les modules ContextHub associés. Lorsq
 1. Saisissez les valeurs pour les propriétés suivantes :
 
    * Titre du mode d’IU : titre qui identifie le mode d’IU.
-   * Icône de mode : sélecteur de l’[icône de CoralUI](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) à utiliser ; par exemple `coral-Icon--user`.
+   * Icône de mode : sélecteur de l’[icône de CoralUI](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) à utiliser ; par exemple `coral-Icon--user`.
    * Activé : sélectionnez cette option pour afficher le mode d’IU dans la barre d’outils ContextHub.
 
 1. Cliquez ou appuyez sur Enregistrer.
 
-### Ajout d’un module d’IU  {#adding-a-ui-module}
+### Ajout d’un module d’IU {#adding-a-ui-module}
 
 Ajoutez un module d’IU ContextHub à un mode d’IU afin qu’il s’affiche dans la barre d’outils ContextHub pour prévisualiser le contenu d’une page. Lorsque vous ajoutez un module d’IU, vous créez une instance d’un type de module qui est enregistré auprès de ContextHub. Pour ajouter un module d’IU, vous devez connaître le nom du type de module associé.
 
@@ -93,11 +93,11 @@ Les propriétés du module d’IU incluent une configuration de détails où vou
 1. (Facultatif) Pour désactiver la configuration de magasin par défaut, saisissez un objet JSON afin de configurer le module d’IU.
 1. Cliquez ou appuyez sur Enregistrer.
 
-## Création d’un magasin ContextHub  {#creating-a-contexthub-store}
+## Création d’un magasin ContextHub {#creating-a-contexthub-store}
 
 Créez un magasin ContextHub pour conserver les données utilisateur et accéder aux données selon vos besoins. Les magasins ContextHub sont basés sur des candidats de magasins enregistrés. Lorsque vous créez le magasin, vous avez besoin de la valeur du paramètre storeType avec lequel le candidat de magasin a été enregistré. (Voir [Création de candidats de magasins personnalisés](extending-contexthub.md#creating-custom-store-candidates).)
 
-### Configuration de magasin détaillée  {#detailed-store-configuration}
+### Configuration de magasin détaillée {#detailed-store-configuration}
 
 Lorsque vous configurez un magasin, la propriété Configuration de détails vous permet de fournir des valeurs pour les propriétés spécifiques au magasin. La valeur est basée sur le paramètre `config` de la fonction `init` du magasin. Par conséquent, la nécessité de fournir ou non cette valeur et son format dépend du magasin.
 
@@ -132,7 +132,7 @@ AEM fournit des exemples de candidats de magasins sur lesquels vous pouvez baser
 1. (Facultatif) Pour remplacer la configuration de magasin par défaut, saisissez un objet JSON dans la case Configuration des détails (JSON).
 1. Cliquez ou appuyez sur Enregistrer.
 
-## Exemple : en utilisant un service JSONP  {#example-using-a-jsonp-service}
+## Exemple : en utilisant un service JSONP {#example-using-a-jsonp-service}
 
 Cet exemple illustre comment configurer un magasin et afficher les données dans un module d’IU. Dans cet exemple, le service MD5 du site jsontest.com est utilisé comme source de données pour un magasin. Le service renvoie le code de hachage MD5 d’une chaîne donnée, au format JSON.
 
@@ -145,7 +145,7 @@ Le magasin contexthub.generic-jsonp est configuré de sorte qu’il stocke les d
 }
 ```
 
-### Création d’un magasin contexthub.generic-jsonp  {#creating-a-contexthub-generic-jsonp-store}
+### Création d’un magasin contexthub.generic-jsonp {#creating-a-contexthub-generic-jsonp-store}
 
 L’exemple de candidat de magasin contexthub.generic-jsonp vous permet de récupérer les données d’un service JSONP ou web qui renvoie des données JSON. Pour ce candidat de magasin, utilisez la configuration de magasin afin de fournir les détails du service JSONP à utiliser.
 
@@ -201,7 +201,7 @@ Utilisez la procédure décrite dans [Ajout d’un module d’IU](#adding-a-ui-m
 
 Une procédure de débogage pour ContextHub peut être activée afin de permettre la résolution des incidents. Le mode de débogage peut être activé via la configuration de ContextHub ou CRXDE.
 
-### Via la configuration  {#via-the-configuration}
+### Via la configuration {#via-the-configuration}
 
 Modifiez la configuration de ContextHub et cochez l’option **Débogage**.
 
