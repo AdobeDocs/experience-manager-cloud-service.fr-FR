@@ -25,7 +25,7 @@ Il existe plusieurs scénarios d’utilisation :
 
 * Obtenir des objets spécifiques à l’implémentation.
 
-    Par exemple, une implémentation basée sur JCR de l’interface [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) permet d’accéder à l’objet [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) JCR sous-jacent.
+   Par exemple, une implémentation basée sur JCR de l’interface [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) permet d’accéder à l’objet [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) JCR sous-jacent.
 
 * Création de raccourcis d’objets qui nécessitent la transmission d’objets de contexte internes.
 
@@ -136,7 +136,7 @@ Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `ada
    <td>S’il s’agit d’une ressource basée sur un nœud JCR.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html">Page </a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html">Page</a></td>
    <td>S’il s’agit d’une ressource basée sur un nœud JCR et que le nœud est <code>cq:Page</code> (ou <code>cq:PseudoPage</code>).</td>
   </tr>
   <tr>
@@ -337,7 +337,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 |---|---|
 | [ReplicationStatus](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/ReplicationStatus.html) | Renvoie l’état de réplication pour le nœud racine utilisateur/groupe. |
 
-#### Gestion des ressources numériques (DAM)  {#dam}
+#### Gestion des ressources numériques (DAM) {#dam}
 
 **Asset** s’adapte à :
 
