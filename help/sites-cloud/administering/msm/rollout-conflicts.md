@@ -15,7 +15,7 @@ ht-degree: 100%
 
 Des conflits peuvent apparaître si de nouvelles pages portant le même nom de page sont créées dans la branche de plan directeur et dans une branche de Live Copy dépendante. Ces conflits doivent être gérés et résolus lors du déploiement.
 
-## Gestion des conflits  {#conflict-handling}
+## Gestion des conflits {#conflict-handling}
 
 Lorsqu’il y a des pages en conflit (dans les branches Plan directeur et Live Copy), MSM permet de définir comment elles doivent être gérées (voire si elles doivent l’être).
 
