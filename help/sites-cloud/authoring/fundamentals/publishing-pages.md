@@ -84,10 +84,10 @@ Si vous modifiez une page, vous pouvez la publier directement à partir de l’�
 
 La console Sites propose deux options de publication :
 
-* [Publication rapide ](#quick-publish)
-* [Gérer la publication ](#manage-publication)
+* [Publication rapide](#quick-publish)
+* [Gérer la publication](#manage-publication)
 
-#### Publication rapide  {#quick-publish}
+#### Publication rapide {#quick-publish}
 
 L’option **Publication rapide** concerne les cas simples. Elle publie immédiatement la ou les pages sélectionnées sans aucune autre interaction. De ce fait, toute autre référence non publiée l’est aussi automatiquement.
 
@@ -107,7 +107,7 @@ Pour publier une page avec l’option Publication rapide :
 >
 >L’option de publication rapide est dite superficielle ; en d’autres termes, seules la ou les pages sélectionnées sont publiées (les éventuelles pages enfants ne le sont pas).
 
-#### Gérer la publication  {#manage-publication}
+#### Gérer la publication {#manage-publication}
 
 **Gérer la** publication offre plus d’options que Publier  **rapidement**, ce qui permet d’inclure des pages enfants, de personnaliser les références et de démarrer les workflows applicables. Il offre également la possibilité de publier à une date ultérieure.
 
@@ -214,11 +214,11 @@ Vous pouvez annuler la publication d’une ou de plusieurs pages [en procédant 
 * [À partir de l’éditeur de page](#unpublishing-from-the-editor)
 * [À partir de la console Sites](#unpublishing-from-the-console)
 
-### Annulation de la publication à partir de l’éditeur  {#unpublishing-from-the-editor}
+### Annulation de la publication à partir de l’éditeur {#unpublishing-from-the-editor}
 
 Lors de la modification d’une page, si vous souhaitez annuler sa publication, sélectionnez **Annuler la publication de la page** dans le menu **Informations sur la page**, comme vous le feriez pour [publier la page](#publishing-from-the-editor).
 
-### Annulation de la publication à partir de la console  {#unpublishing-from-the-console}
+### Annulation de la publication à partir de la console {#unpublishing-from-the-console}
 
 De la même façon que vous [utilisez l’option Gérer la publication pour publier une page](#manage-publication), vous pouvez l’utiliser pour annuler la publication.
 
