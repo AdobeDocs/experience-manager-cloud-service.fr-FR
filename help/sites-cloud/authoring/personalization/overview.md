@@ -3,7 +3,7 @@ title: Personnalisation et ciblage de contenu
 description: Découvrez comment AEM peut créer du contenu personnalisé
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '518'
 ht-degree: 100%
 
@@ -15,11 +15,11 @@ ht-degree: 100%
 
 AEM propose un ensemble d’outils permettant de créer du contenu ciblé et de présenter des expériences personnalisées.
 
-## Mode Ciblage   {#targeting-mode}
+## Mode Ciblage {#targeting-mode}
 
 [Créez du contenu ciblé à l’aide du mode Ciblage d’AEM. ](/help/sites-cloud/authoring/personalization/targeted-content.md) Le mode Ciblage et le composant Cible fournissent des outils permettant de créer du contenu pour les expériences de vos activités de marketing.
 
-## Activités   {#activities}
+## Activités {#activities}
 
 Les activités définissent et organisent vos efforts de marketing. Les activités englobent les audiences ciblées et la période pendant laquelle le ciblage est appliqué.
 
@@ -39,7 +39,7 @@ Par exemple, une activité définit les expériences destinées à deux audience
 
 Vous définissez des expériences pour une activité. Vous pouvez utiliser la [console Activités](/help/sites-cloud/authoring/personalization/activities.md#adding-editing-an-activity-using-the-activities-console) ou le [mode de ciblage](/help/sites-cloud/authoring/personalization/targeted-content.md#adding-and-removing-experiences-using-targeting-mode) pour ajouter des expériences à une activité.
 
-## Offres   {#offers}
+## Offres {#offers}
 
 Une offre constitue du contenu qui s’affiche à un endroit d’une page pour créer une expérience. Utilisez différentes offres pour différentes expériences afin d’optimiser l’efficacité du contenu destiné à vos audiences.
 
@@ -47,7 +47,7 @@ Par exemple, la page pour les femmes de l’exemple peut utiliser des offres en 
 
 Utilisez la [console Offres](/help/sites-cloud/authoring/personalization/offers.md) pour créer des offres que vous pouvez utiliser dans plusieurs expériences. Créez des offres à utiliser une seule fois ou ajoutez des offres issues d’une bibliothèque d’offres lors de la [création de contenu ciblé](/help/sites-cloud/authoring/personalization/targeted-content.md).
 
-## Moteur de ciblage    {#targeting-engine}
+## Moteur de ciblage {#targeting-engine}
 
 Le moteur de ciblage est le mécanisme sous-jacent à la logique du contenu ciblé. Les [activités](/help/sites-cloud/authoring/personalization/activities.md) sont configurées pour utiliser l’un des deux moteurs de ciblage disponibles : AEM et Adobe Target.
 
