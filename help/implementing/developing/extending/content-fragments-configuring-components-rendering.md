@@ -3,7 +3,7 @@ title: Fragments de contenu – Configuration des composants pour le rendu
 description: Fragments de contenu – Configuration des composants pour le rendu
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '518'
 ht-degree: 100%
 
@@ -25,12 +25,15 @@ Il est recommandé d’utiliser les composants principaux.
 >[!CAUTION]
 >
 >* **Si vous n’avez pas besoin des [services avancés](#definition-of-advanced-services-that-need-configuration)** décrits ci-dessous, vous pouvez ignorer cette configuration.
+   >
+   >
+* **Lorsque vous étendez ou utilisez les composants prêts à l’emploi**, il n’est pas recommandé de modifier la configuration OSGi.
+   >
+   >
+* **Vous pouvez créer de A à Z un composant n’utilisant que l’API de fragments de contenu, sans services avancés**. Cependant, dans ce cas, vous devrez développer votre composant de sorte qu’il traite le traitement approprié.
 >
->* **Lorsque vous étendez ou utilisez les composants prêts à l’emploi**, il n’est pas recommandé de modifier la configuration OSGi.
 >
->* **Vous pouvez créer de A à Z un composant n’utilisant que l’API de fragments de contenu, sans services avancés**. Cependant, dans ce cas, vous devrez développer votre composant de sorte qu’il traite le traitement approprié.
->
->Il est donc recommandé d’utiliser les composants principaux.
+Il est donc recommandé d’utiliser les composants principaux.
 
 ## Définition des services avancés nécessitant une configuration {#definition-of-advanced-services-that-need-configuration}
 
