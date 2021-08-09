@@ -5,11 +5,11 @@ exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
 source-wordcount: '1808'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
-# Personnalisation et extensions de fragments de contenu {#customizing-and-extending-content-fragments}
+# Personnalisation et extensions de fragments de contenu{#customizing-and-extending-content-fragments}
 
 Dans Adobe Experience Manager as a Cloud Service, un fragment de contenu étend une ressource standard ; voir :
 
@@ -165,7 +165,7 @@ Les fragments de contenu peuvent être intégrés à :
 
    * Le formulaire de schéma respectif est intégré à l’éditeur de fragments.
 
-## API de gestion des fragments de contenu – côté serveur  {#the-content-fragment-management-api-server-side}
+## API de gestion des fragments de contenu – côté serveur {#the-content-fragment-management-api-server-side}
 
 Vous pouvez utiliser l’API côté serveur pour accéder à vos fragments de contenu ; voir :
 
@@ -175,7 +175,7 @@ Vous pouvez utiliser l’API côté serveur pour accéder à vos fragments de co
 >
 >Il est fortement conseillé d’utiliser l’API côté serveur plutôt que d’accéder directement à la structure du contenu.
 
-### Interfaces principales  {#key-interfaces}
+### Interfaces principales {#key-interfaces}
 
 Les trois interfaces suivantes peuvent faire office de points d’entrée :
 
@@ -235,15 +235,15 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
 
 
 
-### Adaptation – utilisation d’adaptTo()  {#adapting-using-adaptto}
+### Adaptation – utilisation d’adaptTo() {#adapting-using-adaptto}
 
 Ce qui suit peut être adapté :
 
 * `ContentFragment` peut être adapté en :
 
-   * `Resource` - ressource Sling sous-jacente ; la mise à jour directe de la `Resource` sous-jacente nécessite la reconstruction de l’objet `ContentFragment`.
+   * `Resource` – ressource Sling sous-jacente ; la mise à jour directe de la `Resource` sous-jacente nécessite la reconstruction de l’objet `ContentFragment`.
 
-   * `Asset` - abstraction `Asset` DAM représentant le fragment de contenu ; la mise à jour directe de la `Asset` sous-jacente nécessite la reconstruction de l’objet `ContentFragment`.
+   * `Asset` – abstraction `Asset` DAM représentant le fragment de contenu ; la mise à jour directe de la `Asset` sous-jacente nécessite la reconstruction de l’objet `ContentFragment`.
 
 * `ContentElement` peut être adapté en :
 
@@ -267,7 +267,7 @@ Il convient de noter les éléments suivants :
 
    * La suppression de variations existantes par l’intermédiaire d’un élément, à l’aide de `ContentElement.removeVariation()`, ne mettra pas à jour les structures de données globales affectées à la variation. Pour garantir le maintien de la synchronisation de ces structures, utilisez plutôt `ContentFragment.removeVariation()`, ce qui supprime globalement une variation.
 
-## API de gestion des fragments de contenu – côté client  {#the-content-fragment-management-api-client-side}
+## API de gestion des fragments de contenu – côté client {#the-content-fragment-management-api-client-side}
 
 >[!CAUTION]
 >
@@ -294,7 +294,7 @@ Une session de modification est lancée lorsque l’utilisateur ouvre un fragmen
 Techniquement, toutes les modifications sont effectuées sur du contenu *dynamique*, comme pour toute autre modification dans AEM. Lorsque la session de modification est lancée, une version de l’état actuel non modifié est créée. Si un utilisateur annule une modification, cette version est restaurée. Si l’utilisateur clique sur **Enregistrer**, rien de spécifique n’est fait, car toutes les modifications ont été exécutées sur le contenu *en dynamique*. Toutes les modifications sont donc déjà conservées. En outre, si l’utilisateur clique sur **Enregistrer**, un traitement en arrière-plan (comme la création d’informations de recherche de texte intégral et/ou la gestion de ressources variées) se déclenche.
 
 Il existe des mesures de sécurité pour les cas limites ; par exemple, si l’utilisateur tente de quitter l’éditeur sans enregistrer ni annuler la session de modification. En outre, un enregistrement automatique périodique est disponible pour empêcher la perte de données.
-Notez que deux utilisateurs peuvent modifier simultanément le même fragment de contenu et, par conséquent, remplacer les modifications de l’autre. Pour éviter cela, le fragment de contenu doit être verrouillé en appliquant l’action *Checkout* de l’administration DAM sur le fragment.
+Notez que deux utilisateurs peuvent modifier simultanément le même fragment de contenu et donc remplacer leurs modifications mutuelles. Pour éviter cela, le fragment de contenu doit être verrouillé en appliquant au fragment l’action *Extraction* d’administration du système DAM.
 
 ## Exemples {#examples}
 
@@ -316,7 +316,7 @@ if (fragmentResource != null) {
 }
 ```
 
-### Exemple : création d’un fragment de contenu  {#example-creating-a-new-content-fragment}
+### Exemple : création d’un fragment de contenu {#example-creating-a-new-content-fragment}
 
 Pour créer un fragment de contenu par programmation, vous devez utiliser un
 modèle `FragmentTemplate` adapté d’une ressource de modèle.
@@ -329,7 +329,7 @@ FragmentTemplate tpl = modelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
-### Exemple : spécification de l’intervalle d’enregistrement automatique  {#example-specifying-the-auto-save-interval}
+### Exemple : spécification de l’intervalle d’enregistrement automatique {#example-specifying-the-auto-save-interval}
 
 L’[intervalle d’enregistrement automatique](/help/assets/content-fragments/content-fragments-managing.md#save-close-and-versions) (exprimé en secondes) peut être défini à l’aide de Configuration Manager (ConfMgr) :
 
