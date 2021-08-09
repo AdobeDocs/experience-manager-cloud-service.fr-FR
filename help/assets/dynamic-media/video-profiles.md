@@ -55,7 +55,7 @@ Le tableau ci-après identifie les profils de codage recommandés pour la diffus
    <td><strong>Débit vidéo (kbit/s)</strong></td>
    <td><strong>Taux de rafraîchissement vidéo (i/s)</strong></td>
    <td><strong>Codec audio</strong></td>
-   <td><strong>Débit audio  (kbit/s)</strong></td>
+   <td><strong>Débit audio (kbit/s)</strong></td>
   </tr>
   <tr>
    <td><p>MP4 H.264 (mp4)</p> </td>
