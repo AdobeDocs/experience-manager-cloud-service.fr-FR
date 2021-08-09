@@ -4,8 +4,8 @@ description: Conseils de développement pour AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: f5ed5561ed19938b4c647666ff7a6a470d307cf7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2322'
+ht-degree: 96%
 
 ---
 
@@ -127,7 +127,7 @@ Les images mémoire de threads dans les environnements Cloud sont collectés en 
 
 Pour le développement local, les développeurs ont un accès complet à CRXDE Lite (`/crx/de`) et à la console web AEM (`/system/console`).
 
-Notez que lors du développement local (à l’aide du SDK), `/apps` et `/libs` peuvent être écrits directement, ce qui diffère des environnements Cloud dans lesquels ces dossiers de niveau supérieur sont immuables.
+Notez qu’en cas de développement local (à l’aide du SDK), les `/apps` et `/libs` peuvent être modifiés directement, ce qui diffère des environnements Cloud dans lesquels ces dossiers de niveau supérieur sont immuables.
 
 ### Outils de développement AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
@@ -256,6 +256,6 @@ Si le port 587 a été demandé (autorisé seulement si le serveur de messageri
 
 La propriété `smtp.starttls` sera automatiquement définie par AEM as a Cloud Service au moment de son exécution sur une valeur appropriée. Par conséquent, si `smtp.tls` est défini sur true, `smtp.startls` est ignoré. Si `smtp.ssl` est défini sur false, `smtp.starttls` est défini sur true. Cette règle s’applique indépendamment des valeurs de `smtp.starttls` définies dans votre configuration OSGI.
 
-## [!DNL Assets] directives de développement et cas pratiques  {#use-cases-assets}
+## [!DNL Assets] directives de développement et cas pratiques {#use-cases-assets}
 
 Pour en savoir plus sur les cas d’utilisation de développement, les recommandations et les documents de référence pour Assets as a Cloud Service, voir [Références pour les développeurs pour Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
