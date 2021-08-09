@@ -1,15 +1,15 @@
 ---
-title: 'Mise en page réactive  '
+title: Mise en page réactive
 description: AEM permet de réaliser une mise en page réactive pour vos pages
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1765'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Mise en page réactive   {#responsive-layout}
+# Mise en page réactive {#responsive-layout}
 
 AEM permet de réaliser une mise en page réactive pour vos pages à l’aide du composant **Conteneur de mises en page**.
 
@@ -181,7 +181,7 @@ Le mode **Mise en page** peut être activé de deux façons.
 
 * À l’aide du [menu de mode de la barre d’outils](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), en sélectionnant le mode **Mise en page**.
    * Sélectionnez le mode **Mise en page** de la même façon que vous passeriez en mode **Édition** ou en mode **Ciblage**.
-   * Le mode **Mise en page** est un mode persistant, ce qui signifie qu’il reste sélectionné jusqu’à ce que vous choisissiez un autre mode à l’aide du sélecteur de mode.****
+   * Le mode **Mise en page** est un **mode** persistant, ce qui signifie qu’il reste sélectionné jusqu’à ce que vous choisissiez un autre mode à l’aide du sélecteur de mode.
 * Lors de la [modification d’un composant individuel.](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)
    * L’option **Mise en page** du menu Actions rapides du composant permet de passer au mode **Mise en page**.
    * Le mode **Mise en page** persiste pendant la modification du composant et bascule vers le mode d’**édition** lorsqu’un autre composant est sélectionné.
@@ -230,9 +230,9 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
    >
    >Dans l’exemple ci-dessus, les actions de flottement et de masquage sont disponibles, car ce conteneur de mises en page est imbriqué dans un conteneur de mises en page parent.
 
-   * **Afficher les**
-composants : sélectionnez les composants parents pour afficher la barre d’outils d’action avec le 
-**Afficher les** composants masqués . Dans cet exemple, deux composants sont masqués.
+   * **Afficher les composants**
+Sélectionnez les composants parents pour afficher la barre d’outils comportant 
+l’option **Afficher les composants masqués**. Dans cet exemple, deux composants sont masqués.
 
       ![Afficher les composants](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
    Si vous sélectionnez l’option **Afficher les composants masqués**, les composants actuellement masqués s’affichent en bleu à leur position initiale.
