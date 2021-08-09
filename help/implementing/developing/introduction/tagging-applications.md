@@ -5,7 +5,7 @@ exl-id: a106dce1-5d51-406a-a563-4dea83987343
 source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ JcrTagManagerFactory jcrTagManagerFactory;
 TagManager tagManager = jcrTagManagerFactory.getTagManager(session);
 ```
 
-Dans le contexte standard de Sling, vous pouvez également effectuer une adaptation à un `TagManager` à partir du `ResourceResolver` : 
+Dans le contexte standard de Sling, vous pouvez également effectuer une adaptation à un `TagManager` à partir du `ResourceResolver` :
 
 ```java
 TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
@@ -113,7 +113,7 @@ tagManager.deleteTag(tag);
 
 ### Réplication de balises {#replicating-tags}
 
-Il est possible d’utiliser le service de réplication (`Replicator`) avec des balises dans la mesure où elles sont de type `nt:hierarchyNode` : 
+Il est possible d’utiliser le service de réplication (`Replicator`) avec des balises dans la mesure où elles sont de type `nt:hierarchyNode` :
 
 ```java
 replicator.replicate(session, replicationActionType, tagPath);
@@ -123,7 +123,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 Tag Garbage Collector est un service d’arrière-plan qui nettoie les balises masquées et inutilisées. Les balises masquées et inutilisées sont des balises sous `/content/cq:tags` avec une propriété `cq:movedTo` qui ne sont pas utilisées sur un noeud de contenu. Elles ont un décompte de zéro. Avec ce processus de suppression à l’arrière-plan, le nœud de contenu (c’est-à-dire la propriété `cq:tags`) n’a pas besoin d’être mis à jour lors du déplacement ou de la fusion. Les références de la propriété `cq:tags` sont automatiquement mises à jour lorsque la propriété `cq:tags` est mise à jour, par ex. via la boîte de dialogue des propriétés de la page.
 
-Tag Garbage Collector s’exécute par défaut une fois par jour. Cette fréquence peut être configurée sur : 
+Tag Garbage Collector s’exécute par défaut une fois par jour. Cette fréquence peut être configurée sur :
 
 `http://<host>:<port>/system/console/configMgr/com.day.cq.tagging.impl.TagGarbageCollector`
 
