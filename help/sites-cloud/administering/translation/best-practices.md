@@ -24,7 +24,7 @@ La création ou le développement d’une présence mondiale sur le web peut êt
 * Si les ressources le permettent, il est préférable de gérer l’activité de traduction avec une équipe centrale qui peut développer une expertise dans les outils, les processus et les relations avec les fournisseurs nécessaires.
 * **Planifiez**, **prototypez** et **testez** votre structure et vos processus globaux en vous assurant qu’ils soutiennent votre activité et que vous bénéficiez de l’appui nécessaire de la part des parties prenantes des différentes zones géographiques.
 
-## Structure du site  {#site-structure}
+## Structure du site {#site-structure}
 
 * Lors de la conception de la structure de votre site, commencez par examiner votre contenu et déterminer où et dans quelle langue il est rédigé. Cet emplacement doit être le niveau supérieur de votre site.
 * Il est recommandé d’adopter une **structure basée sur les langues** ne comportant pas de plus de 3 niveaux entre le niveau supérieur auteur et les sites des pays.
@@ -37,7 +37,7 @@ La création ou le développement d’une présence mondiale sur le web peut êt
 * Utilisez MSM pour créer des sites de pays à partir des gabarits de langue traduits et déployer le contenu sur les sites partageant la même langue. Par exemple, le gabarit de langue française peut être déployé sur les sites de France, de Belgique et de Suisse.
 * Planifiez, prototypez et testez avant de lancer la mise en œuvre.
 
-## Processus et méthodes de traduction  {#translation-processes-and-methods}
+## Processus et méthodes de traduction {#translation-processes-and-methods}
 
 * Faites appel à un **prestataire de services de localisation (LSP en anglais)** habitué aux tâches de traduction et maîtrisant les activités de localisation associées. Les LSP peuvent vous aider à ajuster l’échelle de votre activité internationale en fournissant un éventail de ressources et de technologies pour accroître l’efficacité et économiser sur les coûts de traduction :
    * Certains LSP sont à la fois des fournisseurs de services et de technologie. Il existe également des fournisseurs de technologie autonomes qui permettent à plusieurs LSP de participer à leur plateforme de traduction.
