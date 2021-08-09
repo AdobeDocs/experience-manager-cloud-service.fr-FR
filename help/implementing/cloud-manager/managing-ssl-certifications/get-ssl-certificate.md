@@ -3,7 +3,7 @@ title: Obtention d’un certificat SSL – Gestion des certificats SSL
 description: Obtention d’un certificat SSL – Gestion des certificats SSL
 exl-id: a3a247e5-164a-4c9c-aeed-bde882635e6f
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '253'
 ht-degree: 100%
 
