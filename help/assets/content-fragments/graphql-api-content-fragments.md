@@ -1,23 +1,23 @@
 ---
-title: API GraphQL d’AEM à utiliser avec des fragments de contenu
-description: Découvrez comment utiliser des fragments de contenu dans Adobe Experience Manager (AEM) en tant que Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu sans interface.
-feature: Fragments de contenu, API GraphQL
+title: API AEM GraphQL à utiliser avec des fragments de contenu
+description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
+feature: Fragments de contenu,API GraphQL
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 8be8308c15ede115c21ccca8f91a13a23356d0b1
 workflow-type: tm+mt
 source-wordcount: '3935'
-ht-degree: 78%
+ht-degree: 99%
 
 ---
 
 
-# API GraphQL d’AEM à utiliser avec des fragments de contenu {#graphql-api-for-use-with-content-fragments}
+# API AEM GraphQL à utiliser avec des fragments de contenu {#graphql-api-for-use-with-content-fragments}
 
-Découvrez comment utiliser des fragments de contenu dans Adobe Experience Manager (AEM) en tant que Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu sans interface.
+Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 
-AEM en tant qu’API GraphQL de Cloud Service utilisée avec les fragments de contenu repose principalement sur l’API GraphQL Open Source standard.
+L’API GraphQL d’AEM as a Cloud Service utilisée avec des fragments de contenu repose principalement sur l’API open source standard GraphQL.
 
-L’utilisation de l’API GraphQL dans AEM permet la diffusion efficace de fragments de contenu aux clients JavaScript dans les implémentations CMS sans interface :
+L’utilisation de l’API GraphQL dans AEM permet la diffusion efficace de fragments de contenu aux clients JavaScript dans les implémentations CMS découplées :
 
 * en évitant les demandes d’API itératives comme avec REST ;
 * en veillant à ce que la diffusion soit limitée aux exigences spécifiques ;
@@ -27,7 +27,7 @@ L’utilisation de l’API GraphQL dans AEM permet la diffusion efficace de frag
 >
 >GraphQL est actuellement utilisé dans deux scénarios (distincts) dans Adobe Experience Manager (AEM) as a Cloud Service :
 >
->* [AEM Commerce utilise des données d’une plateforme Commerce via GraphQL](/help/commerce-cloud/integrating/magento.md).
+>* [AEM Commerce utilise les données d’une plateforme commerciale par le biais de GraphQL](/help/commerce-cloud/integrating/magento.md).
 >* Les fragments de contenu d’AEM fonctionnent conjointement avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard), pour fournir du contenu structuré à utiliser dans vos applications.
 
 
@@ -69,7 +69,7 @@ Pour plus d’informations sur l’API GraphQL, voir les sections suivantes (par
 
 La mise en œuvre GraphQL pour AEM repose sur la bibliothèque Java GraphQL standard. Voir :
 
-* [graphQL.org - Java](https://graphql.org/code/#java)
+* [graphQL.org – Java](https://graphql.org/code/#java)
 
 * [GraphQL Java sur GitHub](https://github.com/graphql-java)
 
@@ -106,7 +106,7 @@ Vous pouvez également effectuer les opérations suivantes :
 * [Requêtes persistantes, mises en cache](#persisted-queries-caching)
 
 >[!NOTE]
->Vous pouvez tester et déboguer des requêtes GraphQL à l’aide de l’IDE [GraphiQL](#graphiql-interface).
+>Vous pouvez tester et déboguer des requêtes GraphQL à l’aide de l’[IDE GraphiQL](#graphiql-interface).
 
 ## Point d’entrée GraphQL pour AEM {#graphql-aem-endpoint}
 
@@ -116,63 +116,63 @@ Le point d’entrée est le chemin utilisé pour accéder à GraphQL pour AEM. A
 * envoyer vos requêtes GraphQL ;
 * recevoir les réponses (à vos requêtes GraphQL).
 
-Il existe deux types de points de terminaison dans AEM :
+Dans AEM , il existe deux types de points d’entrée :
 
 * Global
    * Disponible pour tous les sites.
-   * Ce point de terminaison peut utiliser tous les modèles de fragment de contenu de toutes les configurations Sites (définis dans le [navigateur de configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)).
-   * S’il existe des modèles de fragment de contenu qui doivent être partagés entre les configurations Sites, ils doivent être créés sous les configurations Sites globales.
-* Configurations de sites :
-   * Correspond à une configuration Sites, comme défini dans le [navigateur de configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
+   * Ce point d’entrée peut utiliser tous les modèles de fragment de contenu de toutes les configurations Sites (définis dans l’[explorateur de configurations](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)).
+   * S’il existe des modèles de fragment de contenu à partager entre les configurations Sites, ils doivent être créés sous les configurations Sites globales.
+* Configurations Sites :
+   * Correspond à une configuration Sites, comme défini dans l’[explorateur de configurations](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
    * Spécifique à un site/projet spécifique.
-   * Un point de terminaison spécifique à la configuration Sites utilisera les modèles de fragment de contenu de cette configuration Sites spécifique, ainsi que ceux de la configuration Sites globale.
+   * Un point d’entrée spécifique à la configuration Sites utilisera les modèles de fragment de contenu de cette configuration Sites spécifique, ainsi que ceux de la configuration Sites globale.
 
 >[!CAUTION]
 >
->L’éditeur de fragment de contenu peut permettre à un fragment de contenu d’une configuration Sites de référencer un fragment de contenu d’une autre configuration Sites (via des stratégies).
+>L’éditeur de fragment de contenu peut permettre à un fragment de contenu d’une configuration Sites de référencer un fragment de contenu d’une autre configuration Sites (à l’aide de stratégies).
 >
->Dans ce cas, tout le contenu ne peut pas être récupéré à l’aide d’un point de terminaison spécifique à la configuration Sites.
+>Dans ce cas, tout le contenu ne peut pas être récupéré à l’aide d’un point d’entrée spécifique à la configuration Sites.
 >
->L’auteur du contenu doit contrôler ce scénario ; par exemple, il peut s’avérer utile de placer des modèles de fragment de contenu partagés sous la configuration de sites globaux.
+>L’auteur du contenu doit contrôler ce scénario ; par exemple, il peut être utile de placer des modèles de fragment de contenu partagés sous la configuration de sites globaux.
 
-Le chemin d’accès au référentiel de GraphQL pour AEM point d’entrée global est le suivant :
+Le chemin d’accès au référentiel du point d’entrée global GraphQL pour AEM est :
 
 `/content/cq:graphql/global/endpoint`
 
-Pour lequel votre application peut utiliser le chemin d’accès suivant dans l’URL de requête :
+Pour lequel votre application peut utiliser le chemin d’accès suivant dans l’URL de la requête :
 
 `/content/_cq_graphql/global/endpoint.json`
 
-Pour activer un point de terminaison pour GraphQL pour AEM, vous devez :
+Pour activer le point d’entrée de GraphQL pour AEM, vous devez procéder comme suit :
 
 * [Activation de votre point d’entrée GraphQL](#enabling-graphql-endpoint)
 * [Publication de votre point d’entrée GraphQL](#publishing-graphql-endpoint)
 
 ### Activation de votre point d’entrée GraphQL {#enabling-graphql-endpoint}
 
-Pour activer un point d’entrée GraphQL, vous devez d’abord disposer d’une configuration appropriée. Voir [Fragments de contenu - Explorateur de configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+Pour activer un point d’entrée GraphQL, vous devez d’abord disposer d’une configuration appropriée. Voir [Fragments de contenu – Explorateur de configurations](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 
 >[!CAUTION]
 >
->Si[ l’utilisation des modèles de contenu du fragment n’a pas été activée](/help/assets/content-fragments/content-fragments-configuration-browser.md), l’option **Créer** n’est pas disponible.
+>Si l’[utilisation des modèles de contenu du fragment n’a pas été activée](/help/assets/content-fragments/content-fragments-configuration-browser.md), l’option **Créer** n’est pas disponible.
 
-Pour activer le point de terminaison correspondant :
+Pour activer le point d’entrée correspondant :
 
 1. Accédez à **Outils**, **Ressources**, puis sélectionnez **GraphQL**.
 1. Sélectionnez **Créer**.
-1. La boîte de dialogue **Créer un point d’entrée GraphQL** s’ouvre. Vous pouvez y indiquer les informations suivantes :
-   * **Nom** : nom du point de terminaison ; vous pouvez saisir du texte.
-   * **Utilisez le schéma GraphQL fourni par** : utilisez la liste déroulante pour sélectionner le site/projet requis.
+1. La boîte de dialogue **Créer un point d’entrée GraphQL** s’ouvre. Vous pouvez spécifier ici les éléments suivants :
+   * **Nom** : nom du point d’entrée ; vous pouvez saisir du texte.
+   * **Utiliser le schéma GraphQL fourni par** : utilisez la liste déroulante pour sélectionner le site/projet requis.
 
    >[!NOTE]
    >
-   >L’avertissement suivant s’affiche dans la boîte de dialogue :
+   >L’avertissement suivant s’affiche dans la boîte de dialogue :
    >
-   >* *Les points d&#39;entrée GraphQL peuvent présenter des problèmes de sécurité et de performances des données s&#39;ils ne sont pas gérés de manière adaptée. Veillez à définir les autorisations appropriées après la création d&#39;un point d&#39;entrée.*
+   >* *Les points d’entrée GraphQL peuvent présenter des problèmes de sécurité et de performance des données s’ils ne sont pas gérés de manière adaptée. Veillez à définir les autorisations appropriées après la création d’un point d’entrée.*
 
 
 1. Confirmez avec **Créer**.
-1. La boîte de dialogue **Étapes suivantes** fournit un lien direct vers la console de sécurité afin que vous puissiez vous assurer que le nouveau point de terminaison dispose des autorisations appropriées.
+1. La boîte de dialogue **Étapes suivantes** fournit un lien direct vers la console de sécurité afin que vous puissiez vous assurer que le nouveau point d’entrée dispose des autorisations appropriées.
 
    >[!CAUTION]
    >
@@ -182,15 +182,15 @@ Pour activer le point de terminaison correspondant :
 
 ### Publication de votre point d’entrée GraphQL {#publishing-graphql-endpoint}
 
-Sélectionnez le nouveau point de terminaison et **Publier** pour le rendre entièrement disponible dans tous les environnements.
+Sélectionnez le nouveau point d’entrée et **Publier** pour le rendre entièrement disponible dans tous les environnements.
 
 >[!CAUTION]
 >
 >Le point d’entrée est accessible à tous.
 >
->Sur les instances de publication, cela peut poser un problème de sécurité, car les requêtes GraphQL peuvent imposer une charge importante sur le serveur.
+>Cela peut entraîner un problème de sécurité sur les instances de publication, car les requêtes GraphQL peuvent imposer une charge importante au serveur.
 >
->Vous devez configurer des listes de contrôle d’accès adaptées à votre cas d’utilisation sur le point de terminaison .
+>Vous devez configurer des listes de contrôle d’accès pour le point d’entrée en fonction de votre cas d’utilisation.
 
 ## Interface GraphiQL {#graphiql-interface}
 
@@ -198,7 +198,7 @@ Une implémentation de l’interface standard [GraphiQL](https://graphql.org/lea
 
 >[!NOTE]
 >
->GraphiQL est lié au point de terminaison global (et ne fonctionne pas avec d’autres points de terminaison pour des configurations Sites spécifiques).
+>GraphiQL est liée au point d’entrée global (et ne fonctionne pas avec d’autres points d’entrée pour des configurations Sites spécifiques).
 
 Elle permet de saisir et tester directement les requêtes.
 
@@ -212,7 +212,7 @@ Vous disposez de fonctionnalités telles que la mise en surbrillance de la synta
 
 ### Installation de l’interface AEM GraphiQL {#installing-graphiql-interface}
 
-L’interface utilisateur de GraphiQL peut être installée sur AEM avec un package dédié : le module [GraphiQL Content Package v0.0.6 (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip).
+L’interface utilisateur de GraphiQL peut être installée sur AEM avec un package dédié : [GraphiQL Content Package v0.0.6 (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip).
 
 ## Cas d’utilisation pour les environnements de création et de publication {#use-cases-author-publish-environments}
 
@@ -283,13 +283,13 @@ Par exemple, si vous :
 
 Le schéma est desservi par le même point d’entrée que les requêtes GraphQL, le client gérant le fait que le schéma est appelé avec l’extension `GQLschema`. Par exemple, l’exécution d’une requête `GET` simple sur `/content/cq:graphql/global/endpoint.GQLschema` entraîne la sortie du schéma avec le type de contenu : `text/x-graphql-schema;charset=iso-8859-1`.
 
-### Génération de schémas - Modèles non publiés {#schema-generation-unpublished-models}
+### Génération de schémas – Modèles non publiés {#schema-generation-unpublished-models}
 
 Lorsque des fragments de contenu sont imbriqués, il se peut qu’un modèle de fragment de contenu parent soit publié, mais pas un modèle référencé.
 
 >[!NOTE]
 >
->L’interface utilisateur d’AEM empêche cela, mais si la publication est effectuée par programmation ou avec des modules de contenu, elle peut se produire.
+>L’interface utilisateur d’AEM empêche cela, mais si la publication est effectuée par programmation ou avec des modules de contenu, elle peut être effectuée.
 
 Dans ce cas, AEM génère un schéma *incomplet* pour le modèle de fragment de contenu parent. Cela signifie que la référence au fragment, qui dépend du modèle non publié, est supprimée du schéma.
 
@@ -313,11 +313,11 @@ GraphQL pour AEM prend en charge une liste de types. Tous les types de données 
 
 | Modèle de fragment de contenu – Type de données | Type GraphQL | Description |
 |--- |--- |--- |
-| Texte sur une seule ligne | Chaîne, [Chaîne] |  Utilisé pour les chaînes simples telles que les noms d’auteurs, les noms d’emplacements, etc.. |
-| Texte multi-lignes | Chaîne |  Utilisé pour la sortie de texte, tel que le corps d’un article |
+| Une seule ligne de texte | Chaîne, [Chaîne] |  Utilisé pour les chaînes simples telles que les noms d’auteurs, les noms d’emplacements, etc.. |
+| Plusieurs lignes de texte | Chaîne |  Utilisé pour la sortie de texte, tel que le corps d’un article |
 | Nombre |  Flottant, [Flottant] | Utilisé pour afficher le nombre à virgule flottante et les nombres réguliers |
 | Booléen |  Booléen |  Utilisé pour afficher les cases à cocher → simples instructions vrai/faux |
-| Date et heure | Calendrier |  Utilisé pour afficher la date et l’heure au format ISO 8086 : Selon le type sélectionné, trois versions sont disponibles dans AEM GraphQL : `onlyDate`, `onlyTime`, `dateTime` |
+| Date et heure | Calendrier |  Utilisé pour afficher la date et l’heure au format ISO 8086 : Selon le type sélectionné, trois versions sont disponibles dans AEM GraphQL : `onlyDate`, `onlyTime`, `dateTime` |
 | Énumération |  Chaîne |  Utilisé pour afficher une option à partir d’une liste d’options définies lors de la création du modèle |
 |  Balises |  [Chaîne] |  Utilisé pour afficher une liste de chaînes représentant les balises utilisées dans AEM |
 | Référence de contenu |  Chaîne |  Utilisé pour afficher le chemin vers une autre ressource dans AEM |
@@ -362,7 +362,7 @@ Pour récupérer un fragment de contenu unique d’un type spécifique, vous dev
 
 Voir [Exemple de requête – Un fragment de ville unique et spécifique](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment).
 
-#### Métadonnées   {#metadata}
+#### Métadonnées {#metadata}
 
 Par le biais de GraphQL, AEM expose également les métadonnées d’un fragment de contenu. Les métadonnées sont les informations qui décrivent un fragment de contenu, comme le titre d’un fragment de contenu, le chemin d’accès à la miniature, la description d’un fragment de contenu, la date de création, etc.
 
@@ -436,7 +436,7 @@ Voir [Modèle de requête – Toutes les villes avec une variante nommée](/help
 
 ## Variables GraphQL {#graphql-variables}
 
-GraphQL permet de placer des variables dans la requête. Pour plus d’informations, voir la [documentation GraphQL pour les variables](https://graphql.org/learn/queries/#variables).
+GraphQL permet de placer des variables dans la requête. Pour plus d’informations, voir la [documentation GraphQL des Variables](https://graphql.org/learn/queries/#variables).
 
 Par exemple, pour obtenir tous les fragments de contenu de type `Article` qui présentent une variation spécifique, vous pouvez spécifier la variable `variation` dans GraphiQL.
 
@@ -525,7 +525,7 @@ Pour accéder à d’autres exemples, voir :
 
 * [Modèles de requêtes basées sur le projet WKND](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
 
-## GraphQL pour AEM - Résumé des extensions {#graphql-extensions}
+## GraphQL pour AEM – Résumé des extensions {#graphql-extensions}
 
 Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la spécification GraphQL standard. Pour les requêtes GraphQL avec AEM, il existe quelques extensions :
 
@@ -565,7 +565,7 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 
       * `_operator` : pour appliquer des opérateurs spécifiques ; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
          * Voir [Exemple de requête – Toutes les personnes qui ne portent pas le nom « Jobs »](#sample-all-persons-not-jobs)
-         * Voir [Exemple de requête : toutes les aventures où `_path` commence par un préfixe spécifique](#sample-wknd-all-adventures-cycling-path-filter)
+         * Voir [Exemple de requête – Toutes les aventures où `_path` commence par un préfixe spécifique](#sample-wknd-all-adventures-cycling-path-filter)
       * `_apply` : pour appliquer des conditions spécifiques ; par exemple `AT_LEAST_ONCE`
          * Voir [Exemple de requête : effectuer un filtrage sur un tableau avec un élément qui doit se produire au moins une fois](#sample-array-item-occur-at-least-once)
       * `_ignoreCase` : pour ignorer la casse lors de l’application de la requête
@@ -590,13 +590,13 @@ Après avoir préparé une requête avec une requête POST, elle peut être exé
 
 Cela est nécessaire, car les requêtes POST ne sont généralement pas mises en cache et si vous utilisez GET avec la requête comme paramètre, il existe un risque important que le paramètre devienne trop volumineux pour les services et intermédiaires HTTP.
 
-Les requêtes persistantes doivent toujours utiliser le point de terminaison associé à la [configuration Sites appropriée](#graphql-aem-endpoint) ; afin qu’ils puissent utiliser l’une des fonctionnalités ou les deux :
+Les requêtes persistantes doivent toujours utiliser le point d’entrée associé à la [configuration Sites appropriée](#graphql-aem-endpoint) afin qu’ils puissent utiliser l’une des fonctionnalités ou les deux :
 
-* Configuration globale et point de terminaison
+* Configuration globale et point d’entrée
 La requête a accès à tous les modèles de fragment de contenu.
-* Configuration(s) de sites spécifiques et point(s) de fin
-La création d’une requête persistante pour une configuration Sites spécifique nécessite un point de terminaison spécifique à la configuration Sites correspondant (pour fournir l’accès aux modèles de fragment de contenu associés).
-Par exemple, pour créer une requête persistante spécifique à la configuration de sites WKND, une configuration de sites spécifique à WKND correspondante et un point de terminaison spécifique à WKND doivent être créés à l’avance.
+* Configuration(s) de sites spécifiques et point(s) d’entrée
+La création d’une requête persistante pour une configuration Sites spécifique nécessite un point d’entrée spécifique à la configuration Sites correspondant (pour fournir l’accès aux modèles de fragment de contenu associés).
+Par exemple, pour créer une requête persistante spécifique à la configuration WKND Sites, une configuration de sites spécifique à WKND correspondante et un point d’entrée spécifique à WKND doivent être créés à l’avance.
 
 >[!NOTE]
 >
@@ -604,18 +604,18 @@ Par exemple, pour créer une requête persistante spécifique à la configuratio
 >
 >Les **Requêtes de persistance GraphQL** doivent être activées pour la configuration Sites appropriée.
 
-Par exemple, s’il existe une requête spécifique appelée `my-query`, qui utilise un modèle `my-model` de la configuration Sites `my-conf` :
+Par exemple, s’il existe une requête spécifique appelée `my-query`, qui utilise un modèle `my-model` de la configuration Sites `my-conf` :
 
-* Vous pouvez créer une requête à l’aide du point de terminaison `my-conf` spécifique, puis la requête sera enregistrée comme suit :
+* Vous pouvez créer une requête à l’aide du point d’entrée `my-conf` spécifique, puis la requête sera enregistrée comme suit :
    `/conf/my-conf/settings/graphql/persistentQueries/my-query`
-* Vous pouvez créer la même requête à l’aide du point de terminaison `global`, mais la requête sera enregistrée comme suit :
+* Vous pouvez créer la même requête à l’aide du point d’entrée `global`, mais elle sera dans ce cas enregistrée comme suit :
    `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
 >
 >Il s’agit de deux requêtes différentes, enregistrées sous des chemins différents.
 >
->Il se trouve qu&#39;ils utilisent le même modèle - mais via différents points de terminaison.
+>Il se trouve qu’elles utilisent le même modèle – mais via différents points d’entrée.
 
 
 Vous trouverez ci-dessous les étapes nécessaires à la conservation d’une requête donnée :
@@ -818,7 +818,7 @@ Pour accéder au point d’entrée GraphQL, une stratégie CORS doit être confi
 
 Cette configuration doit spécifier une origine de site web approuvée `alloworigin` ou `alloworiginregexp` pour laquelle l’accès doit être accordé.
 
-Par exemple, pour accorder l’accès au point d’entrée GraphQL et au point d’entrée de requêtes persistantes pour `https://my.domain`, vous pouvez utiliser :
+Par exemple, pour accorder l’accès au point d’entrée GraphQL et aux requêtes persistantes pour `https://my.domain`, vous pouvez utiliser :
 
 ```xml
 {
@@ -925,8 +925,8 @@ Questions soulevées :
 
 1. **Q** : « *En quoi l’API GraphQL pour AEM est-elle différente de l’API Query Builder ?* »
 
-   * **R** : « *L’API GraphQL d’AEM offre un contrôle total sur la sortie JSON et est une norme du secteur pour les requêtes de contenu.
-AEM prévoit d’investir dans l’API GraphQL d’AEM.* »
+   * **R** : « *L’API AEM GraphQL offre un contrôle total sur la sortie JSON et est une norme du secteur pour les requêtes de contenu.
+AEM prévoit d’investir dans l’API AEM GraphQL.* »
 
 ## Tutoriel – Prise en main d’AEM découplé et de GraphQL {#tutorial}
 
