@@ -78,7 +78,7 @@ Parce que le rendu est effectué côté client, les éléments de la page réagi
 >
 >Pour obtenir des détails techniques sur le fonctionnement des SPA dans AEM, consultez les articles suivants :
 >* [Prise en main des SPA dans AEM avec React](getting-started-react.md)
-* [Prise en main des SPA dans AEM avec Angular](getting-started-angular.md)
+>* [Prise en main des SPA dans AEM avec Angular](getting-started-angular.md)
 
 Pour observer de plus près la conception, l’architecture et le workflow technique de l’éditeur de SPA, consultez l’article :
 * [Présentation de l’éditeur de SPA](editor-overview.md).
@@ -113,8 +113,9 @@ Lorsqu’une SPA est créée pour exploiter l’éditeur de SPA AEM, le créateu
 D’autres outils de création, tels que le glisser-déposer de composants supplémentaires sur la page, la réorganisation des composants et la modification de la mise en page, sont pris en charge comme dans toute application AEM non SPA.
 
 >[!NOTE]
-L’éditeur de SPA ne modifie pas le modèle objet de document (DOM) de l’application. La SPA elle-même est responsable du DOM.
-Pour découvrir le fonctionnement de cet aspect, passez à la section suivante de cet article, [Applications SPA et éditeur de SPA AEM](#spa-apps-and-the-aem-spa-editor).
+>
+>L’éditeur de SPA ne modifie pas le modèle objet de document (DOM) de l’application. La SPA elle-même est responsable du DOM.
+>Pour découvrir le fonctionnement de cet aspect, passez à la section suivante de cet article, [Applications SPA et éditeur de SPA AEM](#spa-apps-and-the-aem-spa-editor).
 
 ## Applications SPA et éditeur de SPA AEM {#spa-apps-and-the-aem-spa-editor}
 
@@ -222,15 +223,17 @@ Dans la section suivante, nous allons examiner le contrat qui permet à l’édi
    Certains noms de classe spécifiques sont également ajoutés en vue de marquer les espaces réservés, ainsi que pour la fonctionnalité de glisser-déposer des ressources.
 
    >[!NOTE]
-   Ce comportement diffère des pages générées côté serveur dans AEM, où un élément `cq` est inséré pour chaque composant modifiable.
-   Cette approche dans l’éditeur de SPA élimine la nécessité d’injecter des éléments personnalisés, en n’utilisant qu’un attribut de données supplémentaire, ce qui rend le balisage plus simple pour le développeur frontal.
+   >
+   >Ce comportement diffère des pages générées côté serveur dans AEM, où un élément `cq` est inséré pour chaque composant modifiable.
+   >Cette approche dans l’éditeur de SPA élimine la nécessité d’injecter des éléments personnalisés, en n’utilisant qu’un attribut de données supplémentaire, ce qui rend le balisage plus simple pour le développeur frontal.
 
 ## Couplage et découplage dans AEM {#headful-headless}
 
 Les SPA peuvent être activés avec différents niveaux d’intégration au sein d’AEM, y compris pour les SPA développés et gérés en dehors d’AEM. De plus, les SPA peuvent être exploités dans AEM tout en utilisant AEM pour diffuser du contenu vers d’autres points de terminaison, et ce, en mode découplé.
 
 >[!TIP]
-Consultez le document [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) pour plus d’informations.
+>
+>Consultez le document [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) pour plus d’informations.
 
 ## Étapes suivantes {#next-steps}
 

@@ -51,9 +51,9 @@ Cette page et les suivantes portent sur les tâches de création, de configurati
 >
 >* [Création de page à partir de fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 >* [Personnalisation et extensions de fragments de contenu](/help/implementing/developing/extending/content-fragments-customizing.md)
-* [Fragments de contenu – Configuration des composants pour le rendu](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
-* [Prise en charge des fragments de contenu dans l’API HTTP AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
-* [API AEM GraphQL à utiliser avec des fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [Fragments de contenu – Configuration des composants pour le rendu](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
+>* [Prise en charge des fragments de contenu dans l’API HTTP AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
+>* [API AEM GraphQL à utiliser avec des fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
 Le nombre de canaux de communication augmente tous les ans. En règle générale, les canaux font référence au mécanisme de diffusion :
@@ -75,9 +75,10 @@ Les fragments de contenu vous permettent de :
 Ces fragments de contenu peuvent ensuite être assemblés pour offrir diverses expériences sur de multiples canaux.
 
 >[!NOTE]
-Les **fragments de contenu** et les **[fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** représentent deux fonctions distinctes d’AEM :
-* Les **fragments de contenu** sont du contenu éditorial, qui peut être utilisé pour accéder à des données structurées, y compris du texte, des chiffres et des dates. Il s’agit d’un contenu pur, avec définition et structure, mais sans conception visuelle et/ou mise en page supplémentaires.
-* Les **fragments d’expérience** désignent un contenu parfaitement mis en page : un fragment de page web.
+>
+>Les **fragments de contenu** et les **[fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** représentent deux fonctions distinctes d’AEM :
+>* Les **fragments de contenu** sont du contenu éditorial, qui peut être utilisé pour accéder à des données structurées, y compris du texte, des chiffres et des dates. Il s’agit d’un contenu pur, avec définition et structure, mais sans conception visuelle et/ou mise en page supplémentaires.
+>* Les **fragments d’expérience** désignent un contenu parfaitement mis en page : un fragment de page web.
 
 Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
 Pour plus d’informations, voir également [Présentation des fragments de contenu et d’expérience dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=fr#content-fragments).
@@ -99,13 +100,16 @@ Les fragments de contenu AEM peuvent être utilisés pour décrire et gérer du
 Associé aux fonctionnalités d’exportation JSON des composants de base AEM, ce contenu structuré peut ensuite être utilisé pour livrer le contenu AEM à des canaux autres que les pages AEM.
 
 >[!NOTE]
-Consultez [Le découplage et AEM](/help/implementing/developing/headless/introduction.md) pour une introduction au développement découplé pour AEM Sites as a Cloud Service.
+>
+>Consultez [Le découplage et AEM](/help/implementing/developing/headless/introduction.md) pour une introduction au développement découplé pour AEM Sites as a Cloud Service.
 
 >[!NOTE]
-AEM prend également en charge la traduction des fragments de contenu.
+>
+>AEM prend également en charge la traduction des fragments de contenu.
 
 >[!NOTE]
-AEM prend également en charge la traduction des fragments de contenu. Consultez [Traduction des actifs](/help/assets/translate-assets.md) pour plus d’informations.
+>
+>AEM prend également en charge la traduction des fragments de contenu. Consultez [Traduction des actifs](/help/assets/translate-assets.md) pour plus d’informations.
 
 ## Type de contenu {#content-type}
 
@@ -144,7 +148,8 @@ Les ressources peuvent être utilisées avec un fragment de contenu de plusieurs
    * Voir [Insertion de ressources dans votre fragment](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) dans l’éditeur de fragment pour plus d’informations.
 
    >[!NOTE]
-   Les ressources visuelles insérées dans le fragment de contenu sont liées au paragraphe précédent. Lorsque le fragment est ajouté à une page, ces ressources sont déplacées avec le paragraphe en question lorsque du contenu intermédiaire est ajouté.
+   >
+   >Les ressources visuelles insérées dans le fragment de contenu sont liées au paragraphe précédent. Lorsque le fragment est ajouté à une page, ces ressources sont déplacées avec le paragraphe en question lorsque du contenu intermédiaire est ajouté.
 
 * **Contenu associé**
 
@@ -188,10 +193,12 @@ Les ressources de fragment de contenu se composent des parties suivantes (direct
    * Sont liées au texte précédent (paragraphe).
 
       >[!CAUTION]
-      Des ressources peuvent être supprimées (par inadvertance) d’un fragment lors du passage au format texte brut.
+      >
+      >Des ressources peuvent être supprimées (par inadvertance) d’un fragment lors du passage au format texte brut.
 
       >[!NOTE]
-      Les ressources peuvent également être ajoutées en tant que [contenu supplémentaire (intermédiaire)](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) lors de l’utilisation d’un fragment sur une page en utilisant le contenu associé ou les ressources du navigateur de ressources.
+      >
+      >Les ressources peuvent également être ajoutées en tant que [contenu supplémentaire (intermédiaire)](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) lors de l’utilisation d’un fragment sur une page en utilisant le contenu associé ou les ressources du navigateur de ressources.
 
 * **Contenu associé**
 
@@ -215,7 +222,8 @@ Les ressources de fragment de contenu se composent des parties suivantes (direct
          * Lors de la modification des **métadonnées** dans l’éditeur de fragment
 
    >[!CAUTION]
-   Les profils de traitement de métadonnées ne s’appliquent pas aux fragments de contenu.
+   >
+   >Les profils de traitement de métadonnées ne s’appliquent pas aux fragments de contenu.
 
 * **Maître**
 
@@ -248,7 +256,8 @@ Contenu intermédiaire :
 * Le contenu associé peut être utilisé, tout comme les ressources et/ou les composants du navigateur approprié.
 
 >[!CAUTION]
-Le contenu intermédiaire est du contenu de page. Il n’est pas stocké dans le fragment de contenu.
+>
+>Le contenu intermédiaire est du contenu de page. Il n’est pas stocké dans le fragment de contenu.
 
 ### Conditions requises pour utiliser des fragments {#required-by-fragments}
 

@@ -19,8 +19,8 @@ Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu en mode d�
 >Il est préférable de lire cette page à la lumière des sections suivantes :
 >
 >* [Fragments de contenu](/help/assets/content-fragments/content-fragments.md)
-* [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
-* [API AEM GraphQL à utiliser avec des fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
+>* [API AEM GraphQL à utiliser avec des fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
 Pour prendre en main les requêtes GraphQL et leur fonctionnement avec les fragments de contenu AEM, il peut être utile de consulter quelques exemples pratiques.
@@ -37,11 +37,13 @@ Pour obtenir de l’aide à ce sujet, voir les éléments suivants :
 Consultez ces exemples de requêtes pour accéder à des illustrations de création de requêtes, ainsi qu’à des exemples de résultats.
 
 >[!NOTE]
-Selon votre instance, vous pouvez accéder directement à l’interface [Graph *i* QL incluse avec l’API AEM GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) pour envoyer et tester des requêtes.
-Par exemple : `http://localhost:4502/content/graphiql.html`
+>
+>Selon votre instance, vous pouvez accéder directement à l’interface [Graph *i* QL incluse avec l’API AEM GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) pour envoyer et tester des requêtes.
+>Par exemple : `http://localhost:4502/content/graphiql.html`
 
 >[!NOTE]
-Les exemples de requêtes sont basés sur l’[exemple de structure de fragment de contenu à utiliser avec GraphQL](#content-fragment-structure-graphql)
+>
+>Les exemples de requêtes sont basés sur l’[exemple de structure de fragment de contenu à utiliser avec GraphQL](#content-fragment-structure-graphql)
 
 ### Exemple de requête – Tous les schémas et types de données disponibles {#sample-all-schemes-datatypes}
 
@@ -1100,7 +1102,8 @@ Ces exemples de requêtes sont basés sur le projet WKND. Il s’agit des élém
    `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
 >[!NOTE]
-Les résultats pouvant être volumineux, ils ne sont pas reproduits ici.
+>
+>Les résultats pouvant être volumineux, ils ne sont pas reproduits ici.
 
 ### Exemple de requête pour tous les fragments de contenu d’un modèle donné avec les propriétés spécifiées {#sample-wknd-all-model-properties}
 
@@ -1245,7 +1248,8 @@ Cette requête interroge :
    * parmi cela, le chemin d’accès et l’auteur du fragment référencé (imbriqué).
 
 >[!NOTE]
-Le champ `referencearticle` a le type de données `fragment-reference`.
+>
+>Le champ `referencearticle` a le type de données `fragment-reference`.
 
 **Exemple de requête**
 
@@ -1272,7 +1276,8 @@ Cette requête interroge :
    * avec des références de fragments à d’autres fragments de types de modèles spécifiques `article` et `adventure`.
 
 >[!NOTE]
-Le champ `fragments` présente le type de données `fragment-reference`, avec les modèles `Article`, `Adventure` sélectionnés.
+>
+>Le champ `fragments` présente le type de données `fragment-reference`, avec les modèles `Article`, `Adventure` sélectionnés.
 
 ```xml
 {
@@ -1346,7 +1351,8 @@ La requête suivante renvoie toutes les références de contenu en utilisant `_r
 La requête suivante renvoie tous les `attachments` – un champ spécifique (sous-groupe) de type `content-reference` :
 
 >[!NOTE]
-Le champ `attachments` présente le type de données `content-reference`, avec différents formulaires sélectionnés.
+>
+>Le champ `attachments` présente le type de données `content-reference`, avec différents formulaires sélectionnés.
 
 ```xml
 {
@@ -1387,7 +1393,8 @@ Cette requête interroge :
    * à l’intérieur de cela, les références intégrées RTE.
 
 >[!NOTE]
-Les références en ligne RTE sont alimentées dans `_references`.
+>
+>Les références en ligne RTE sont alimentées dans `_references`.
 
 **Exemple de requête**
 

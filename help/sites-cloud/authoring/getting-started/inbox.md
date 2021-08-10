@@ -28,8 +28,8 @@ Vous recevez ces notifications dans votre propre boîte de réception où vous p
 >Pour plus d’informations sur les types d’éléments, voir aussi :
 >
 >* [Projets](/help/sites-cloud/authoring/projects/overview.md)
-* [Projets – Utilisation des tâches](/help/sites-cloud/authoring/projects/tasks.md)
-* [Workflows](/help/sites-cloud/authoring/workflows/overview.md)
+>* [Projets – Utilisation des tâches](/help/sites-cloud/authoring/projects/tasks.md)
+>* [Workflows](/help/sites-cloud/authoring/workflows/overview.md)
 
 
 ## Boîte de réception dans l’en-tête {#inbox-in-the-header}
@@ -39,7 +39,8 @@ Dans les deux consoles, le nombre actuel d’éléments présents dans votre bo�
 ![Aperçu de la boîte de réception dans l’en-tête](/help/sites-cloud/authoring/assets/inbox-header.png)
 
 >[!NOTE]
-Certaines opérations sont également répertoriées en [mode Carte de la ressource appropriée](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view).
+>
+>Certaines opérations sont également répertoriées en [mode Carte de la ressource appropriée](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view).
 
 ## Ouverture de la boîte de réception {#opening-the-inbox}
 
@@ -55,7 +56,8 @@ Pour ouvrir la boîte de réception des notifications AEM :
    ![Paramètres d’affichage de la boîte de réception](/help/sites-cloud/authoring/assets/inbox-view-settings.png)
 
 >[!NOTE]
-La boîte de réception fonctionne comme une console. Vous pouvez ainsi utiliser la [navigation globale](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) ou la fonction de [recherche](/help/sites-cloud/authoring/getting-started/search.md) pour accéder à un autre emplacement lorsque vous avez terminé.
+>
+>La boîte de réception fonctionne comme une console. Vous pouvez ainsi utiliser la [navigation globale](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) ou la fonction de [recherche](/help/sites-cloud/authoring/getting-started/search.md) pour accéder à un autre emplacement lorsque vous avez terminé.
 
 ### Boîte de réception – Mode Liste {#inbox-list-view}
 
@@ -108,7 +110,8 @@ Vous pouvez définir des paramètres d’affichage pour les deux modes (Liste et
 ## Action sur un élément {#taking-action-on-an-item}
 
 >[!NOTE]
-Bien qu’il soit possible de sélectionner plusieurs éléments, des actions ne peuvent être entreprises que sur un seul élément à la fois.
+>
+>Bien qu’il soit possible de sélectionner plusieurs éléments, des actions ne peuvent être entreprises que sur un seul élément à la fois.
 
 1. Pour agir sur un élément, sélectionnez la miniature de l’élément souhaité. Les icônes des actions applicables à cet élément apparaissent dans la barre d’outils :
 
@@ -128,8 +131,9 @@ Bien qu’il soit possible de sélectionner plusieurs éléments, des actions ne
    * Créer un projet à partir de l’élément
 
    >[!NOTE]
-   Pour plus d’informations, voir :
-   * Éléments de workflow – [Participation aux workflows](/help/sites-cloud/authoring/workflows/participating.md)
+   >
+   >Pour plus d’informations, voir :
+   >* Éléments de workflow – [Participation aux workflows](/help/sites-cloud/authoring/workflows/participating.md)
 
 
 2. Une action démarre en fonction de l’élément sélectionné, par exemple :
@@ -184,8 +188,9 @@ Pour certaines tâches, vous pouvez créer un [projet](/help/sites-cloud/authori
 1. Sélectionnez la tâche appropriée en appuyant/cliquant sur la miniature.
 
    >[!NOTE]
-   Seules les tâches créées à l’aide de l’option **Créer** de la **boîte de réception** peuvent être utilisées pour créer un projet.
-   Les éléments de travail (d’un workflow) ne peuvent pas être utilisés pour créer un projet.
+   >
+   >Seules les tâches créées à l’aide de l’option **Créer** de la **boîte de réception** peuvent être utilisées pour créer un projet.
+   >Les éléments de travail (d’un workflow) ne peuvent pas être utilisés pour créer un projet.
 
 1. Sélectionnez **Créer un projet** depuis la barre d’outils pour ouvrir l’assistant.
 1. Sélectionnez le modèle approprié, puis **Suivant**.
@@ -201,8 +206,10 @@ Pour certaines tâches, vous pouvez créer un [projet](/help/sites-cloud/authori
    * **Avancé**
 
       * **Nom**
+
    >[!NOTE]
-   Pour plus d’informations, voir [Création d’un projet](/help/sites-cloud/authoring/projects/managing.md#creating-a-project).
+   >
+   >Pour plus d’informations, voir [Création d’un projet](/help/sites-cloud/authoring/projects/managing.md#creating-a-project).
 
 1. Sélectionnez **Créer** pour confirmer l’action.
 
@@ -221,4 +228,5 @@ Vous pouvez filtrer les éléments répertoriés :
    ![Filtre de recherche dans les boîtes de réception](/help/sites-cloud/authoring/assets/inbox-search-filter.png)
 
    >[!NOTE]
-   En [mode Liste](#inbox-view-settings), vous pouvez également configurer l’ordre de tri dans les [paramètres d’affichage](#inbox-list-view).
+   >
+   >En [mode Liste](#inbox-view-settings), vous pouvez également configurer l’ordre de tri dans les [paramètres d’affichage](#inbox-list-view).
