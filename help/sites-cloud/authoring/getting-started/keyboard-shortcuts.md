@@ -25,7 +25,7 @@ Les raccourcis suivants sont disponibles pour les consoles Sites, Assets, Utilis
 | Consoles | `?` | Aide des raccourcis clavier |
 |  | `/` | Appeler la [recherche](/help/sites-cloud/authoring/getting-started/search.md) |
 |  | `Alt+`&lt;`Number`> | Choisir l’option de [sélecteur de rail](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) à afficher |
-|  | ` | Masquer le rail |
+|  | &grave; | Masquer le rail |
 |  | `e` | Modifier |
 |  | `p` | Propriétés |
 |  | `m` | Déplacer |
