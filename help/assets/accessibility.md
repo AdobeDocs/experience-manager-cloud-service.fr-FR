@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Accessibilité, Gestion des ressources
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
+source-git-commit: 60acec6116f624188b484ffa1abd657cd4301e77
 workflow-type: tm+mt
 source-wordcount: '1915'
 ht-degree: 100%
@@ -60,7 +60,7 @@ Les utilisateurs en situation de handicap font fréquemment appel au matériel e
 
 Dans [!DNL Experience Manager], les fonctionnalités d’accessibilité répondent à deux exigences clés des utilisateurs de [!DNL Experience Manager] et de leurs clients.
 
-* Pour les concepteurs et les créateurs de contenu, il existe des fonctionnalités permettant de créer et de publier du contenu accessible, qui est ensuite utilisé par leurs clients et les visiteurs du site web. Le contenu peut être utilisé par des personnes présentant un handicap à l’aide de technologies d’assistance. Pour plus d’informations, reportez-vous aux [Directives d’accessibilité web](/help/onboarding/accessibility/web-accessibility.md).
+* Pour les concepteurs et les créateurs de contenu, il existe des fonctionnalités permettant de créer et de publier du contenu accessible, qui est ensuite utilisé par leurs clients et les visiteurs du site web. Le contenu peut être utilisé par des personnes présentant un handicap à l’aide de technologies d’assistance. Pour plus d’informations, reportez-vous aux [Directives d’accessibilité web](/help/compliance/accessibility/quick-guide-wcag.md).
 * [!DNL Experience Manager] permet de plus à ses utilisateurs et à ses administrateurs en situation de handicap d’accéder à l’interface utilisateur et aux contrôles pour créer et gérer du contenu. La personne présentant un handicap peut faire appel aux technologies d’assistance pour naviguer, utiliser et gérer les fonctionnalités d’[!DNL Assets].
 
 Les principales fonctionnalités d’[!DNL Assets] sont plus accessibles qu’auparavant et sont régulièrement mises à jour afin d’améliorer la conformité aux normes mondiales. Les opérations CRUD d’[!DNL Assets] intègrent un certain degré d’accessibilité Les workflows DAM tels que l’ajout, la gestion, la recherche et la distribution de ressources sont accessibles à l’aide de raccourcis clavier, d’un texte de lecteur d’écran, d’un contraste de couleur, etc.
@@ -226,6 +226,6 @@ Pour rédiger des commentaires, poser des questions et demander des amélioratio
 >[!MORELIKETHIS]
 >
 >* [Notes de mise à jour des améliorations apportées à chaque version](/help/release-notes/release-notes-cloud/release-notes-current.md).
->* Conseils en matière d’accessibilité d’[[!DNL Adobe Experience Manager] ](/help/onboarding/accessibility/web-accessibility.md)
+>* Conseils en matière d’accessibilité d’[[!DNL Adobe Experience Manager] ](/help/compliance/accessibility/web-accessibility.md)
 >* [Rapports de conformité (ACR) et liste VPAT (Modèle volontaire d’accessibilité des produits) pour les solutions d’Adobe](https://www.adobe.com/accessibility/compliance.html).
 
