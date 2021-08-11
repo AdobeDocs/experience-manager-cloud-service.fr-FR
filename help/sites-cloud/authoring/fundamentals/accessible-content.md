@@ -2,7 +2,7 @@
 title: Création de contenu accessible pour Adobe Experience Manager as a Cloud Service (conformité WCAG 2.1)
 description: Utilisez AEM as a Cloud Service pour rendre le contenu web accessible et utilisable par les personnes en situation de handicap
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
 workflow-type: tm+mt
 source-wordcount: '14050'
 ht-degree: 99%
@@ -23,7 +23,7 @@ En introduction, le consortium propose une série de sections et de documents an
 
 En outre, voir :
 
-* Notre [Guide rapide relatif à WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md).
+* Notre [Guide rapide relatif à WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md).
 * Les [rapports de conformité à l’accessibilité pour les solutions Adobe](https://www.adobe.com/accessibility/compliance.html).
 * [Accessibilité dans Assets](/help/assets/accessibility.md)
 * [Configuration de l’éditeur de texte enrichi pour produire du contenu accessible](/help/implementing/developing/extending/rte-accessible-content.md)
