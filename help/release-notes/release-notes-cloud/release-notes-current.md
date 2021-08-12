@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 14dc3b308a839040fdf2efe42d2fa4ce35253df0
+source-git-commit: 3f16144a95bdb3da08c15f15613031cdd069a977
 workflow-type: tm+mt
-source-wordcount: '1309'
-ht-degree: 21%
+source-wordcount: '1406'
+ht-degree: 20%
 
 ---
 
@@ -182,6 +182,21 @@ La prochaine version est prévue pour le 12 août 2021.
 ### Problèmes connus {#known-issues-cm-july}
 
 Les clients basculant sur les JDK Azul doivent savoir que toutes les applications existantes ne seront pas compilées sans erreur sur le JDK Azul. Il est vivement recommandé d’exécuter un test local avant de basculer.
+
+## Outil de transfert de contenu {#content-transfer-tool}
+
+### Date de publication {#release-date-ctt-latest}
+
+La date de publication de l’outil de transfert de contenu v1.5.6 est le 11 août 2021.
+
+### Correctifs {#bug-fixes-ctt}
+
+* Dans certains cas, tous les utilisateurs n’ont pas été migrés vers l’instance cible. Pour obtenir ce correctif, CTT v1.5.6 est requis avec aem-ethos-tools 1.2.354 ou version ultérieure sur l’AEM cible en tant qu’instance de Cloud Service.
+
+* Le bouton **Arrêter l’ingestion** était désactivé lors de l’ingestion vers l’instance de publication. Cela n’est pas nécessaire, car il n’existe aucune étape de restauration de mongo pendant l’ingestion de publication.
+
+* CTT n’a pas nettoyé le répertoire `/tmp` après une extraction réussie. Cela entraînait parfois des problèmes d’espace disque.
+
 
 ## Cloud Accelerated Manager {#cam}
 
