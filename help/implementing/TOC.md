@@ -5,9 +5,9 @@ breadcrumb-title: Guide d’implémentation
 user-guide-description: Découvrez comment personnaliser votre déploiement d’Experience Manager as a Cloud Service, y compris des rubriques sur le déploiement et le développement.
 feature: Outils de développement
 role: Developer, Architect
-source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
+source-git-commit: a9b81e6bcefc95cac305f8387928cf515939aef0
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1043'
 ht-degree: 95%
 
 ---
@@ -18,8 +18,9 @@ ht-degree: 95%
 + [Implémentation d’applications pour AEM as a Cloud Service](/help/implementing/home.md)
 + Utilisation de Cloud Manager {#using-cloud-manager}
    + Notes de mise à jour de Cloud Manager {#release-notes-cloud-manager}
-      + [Notes de mise à jour de la version actuelle (2021.7.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Notes de mise à jour de la version actuelle (2021.8.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2021 {#2021}
+         + [Notes de mise à jour de la version 2021.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
          + [Notes de mise à jour de la version 2021.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
          + [Notes de mise à jour de la version 2021.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
          + [Notes de mise à jour de la version 2021.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
@@ -64,6 +65,7 @@ ht-degree: 95%
       + [Tests de contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md)
       + [Tests de l’interface utilisateur](/help/implementing/cloud-manager/ui-testing.md)
    + [Accès aux journaux et leur gestion](cloud-manager/manage-logs.md)
+   + [Création de rapports de contrat SLA](cloud-manager/sla-reporting.md)
    + [Présentation des notifications](cloud-manager/notifications.md)
    + Gestion des certificats SSL {#manage-ssl-certificates}
       + [Présentation](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
@@ -94,7 +96,8 @@ ht-degree: 95%
    + [FAQ relative à Cloud Manager](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
 + Gestion de votre code {#managing-code}
    + [Gestion des versions du projet Maven](cloud-manager/project-version-handling.md)
-   + [Accès à Git](cloud-manager/accessing-git.md)
+   + [Référentiels dans Cloud Manager](cloud-manager/cloud-manager-repositories.md)
+   + [Accès aux référentiels](cloud-manager/accessing-repos.md)
    + [Intégration de Git à Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
    + [Utilisation de plusieurs référentiels Git source](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
    + [Configuration du développement de l’équipe Grands comptes pour AEM as a Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
