@@ -2,7 +2,7 @@
 title: Compliance
 description: Conformité
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
+source-git-commit: b994725c4af3c108aa7c957c8669181379b6728c
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 85%
@@ -15,11 +15,11 @@ Cette page répertorie les ressources d’aide autonome fournissant des informat
 
 ## Principaux articles de présentation {#key-articles}
 
-* [Préparation aux réglementations sur la protection et la confidentialité des données](aem-readiness.md)
-* [Préparation de base aux réglementations sur la protection et la confidentialité des données](foundation-readiness.md)
-* [Préparation des sites aux réglementations sur la protection et la confidentialité des données](sites-readiness.md)
-* [Instructions relatives à l’accessibilité web](web-accessibility.md)
-* [Guide rapide relatif à WCAG 2.1](quick-guide-wcag.md)
+* [Préparation aux réglementations sur la protection et la confidentialité des données](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
+* [Préparation de base aux réglementations sur la protection et la confidentialité des données](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
+* [Préparation des sites aux réglementations sur la protection et la confidentialité des données](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
+* [Instructions relatives à l’accessibilité web](/help/compliance/accessibility/web-accessibility.md)
+* [Guide rapide relatif à WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
 
 ## Guides de Experience Manager en tant que Cloud Service {#aem-guides}
 
