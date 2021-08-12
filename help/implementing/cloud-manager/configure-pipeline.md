@@ -2,10 +2,10 @@
 title: Configuration du pipeline CI/CD – Cloud Services
 description: Configuration du pipeline CI/CD – Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: bcbb0cc739c3be8e39585dd752af1b1da801a434
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 95%
+source-wordcount: '955'
+ht-degree: 78%
 
 ---
 
@@ -107,6 +107,35 @@ Pour configurer le comportement et les préférences de votre pipeline, procéde
 
    ![](assets/configure-pipeline5.png)
 
+### Modification d’un pipeline de production {#editing-prod-pipeline}
+
+Vous pouvez modifier les configurations de pipeline à partir de la page **Aperçu du programme**.
+
+Pour modifier le pipeline configuré, procédez comme suit :
+
+1. Accédez à la carte **Pipelines** à partir de la page **Aperçu du programme**.
+
+1. Cliquez sur **Modifier** dans la carte **Pipelines** .
+
+   ![](assets/configure-pipeline/edit-pipeline-1.png)
+
+1. L’onglet **Code source** vous permet de mettre à jour le référentiel. Cliquez sur **Accéder à Repo Info** pour mettre à jour le référentiel.
+
+   >[!NOTE]
+   >Voir [Ajout et gestion des référentiels](/help/implementing/cloud-manager/cloud-manager-repositories.md#add-manage-repos) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
+
+   ![](assets/configure-pipeline/edit-pipeline-2.png)
+
+
+1. L’onglet **Environnements** vous permet de mettre à jour les options d’évaluation et de production.
+
+   ![](assets/configure-pipeline/edit-pipeline-3.png)
+
+1. L’option **Audit de l’expérience** vous permet de mettre à jour ou d’ajouter de nouvelles pages.
+
+   ![](assets/configure-pipeline/edit-pipeline-4.png)
+
+1. Cliquez sur **Enregistrer** une fois la modification du pipeline terminée.
 
 ## Pipelines de qualité de code et hors production uniquement {#non-production-pipelines}
 
@@ -133,6 +162,22 @@ Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle c
    * **Build** : permet d’accéder à la page d’exécution, à partir de laquelle le pipeline peut être exécuté.
    * **Accéder aux informations sur le référentiel** : permet à l’utilisateur d’obtenir les informations nécessaires pour accéder au référentiel Git de Cloud Manager.
    * **En savoir plus** : suivez ce lient pour en savoir plus sur les ressources de documentation du pipeline CI/CD.
+
+### Modification d’un pipeline hors production {#editing-nonprod-pipeline}
+
+Vous pouvez modifier les configurations de pipeline à partir de la page **Aperçu du programme**.
+
+Suivez les étapes ci-dessous pour modifier le pipeline hors production configuré :
+
+1. Accédez à la carte **Pipelines** à partir de la page **Aperçu du programme**.
+
+1. Sélectionnez l’onglet **Non-production** et cliquez sur **Modifier** après avoir sélectionné les pipelines de votre choix.
+
+   ![](assets/configure-pipeline/non-prod-edit-1.png)
+
+1. Sélectionnez le référentiel de votre choix et cliquez sur **Enregistrer**.
+
+   ![](assets/configure-pipeline/non-prod-edit2.png)
 
 ## Étapes suivantes {#the-next-steps}
 
