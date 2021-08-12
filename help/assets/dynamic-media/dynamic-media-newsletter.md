@@ -4,10 +4,10 @@ description: 'La newsletter Dynamic Media par Experience League est une newslett
 feature: Gestion des ressources
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: af6ff1545c3aee8b67c47e97142419f1fdf0928e
+source-git-commit: 07f7ec3fae8af6739e49d5bce55a980aca391e06
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 80%
+source-wordcount: '1043'
+ht-degree: 78%
 
 ---
 
@@ -51,7 +51,7 @@ Dans cette newsletter archivée, vous trouverez des ressources précieuses pour 
    * Regardez les webinaires Skill Builder à la demande pour Dynamic Media Classic.
    * Regardez les sessions Dynamic Media du sommet Adobe en ligne 2020.
    * En savoir plus sur les audits gratuits Dynamic Media Classic d’Adobe.
-   * Faites la connaissance de John Monroe, responsable de programme senior pour les services de la réussite client.
+   * Rencontrez `John Monroe`, responsable de programme senior pour les services de succès client.
 
 * **[Février 2020, numéro 2](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
@@ -72,7 +72,7 @@ Dans cette newsletter archivée, vous trouverez des ressources précieuses pour 
    * Un audit gratuit pour vous aider à tirer le meilleur parti de Dynamic Media Classic.
    * Une saison record d’achats des fêtes pour les clients utilisant les médias riches Adobe.
    * Votre guide de sélection d’une solution de gestion des ressources numériques (DAM) qui répondra à vos besoins dès aujourd’hui et vous préparera pour le futur avec les médias riches.
-   * Faites la connaissance de Mark Dean, spécialiste des médias numériques.
+   * Rencontrez `Mark Dean`, spécialiste des médias numériques.
 
 * **[Novembre 2019, numéro 11](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_11_2019_Nov.html)**
 
@@ -103,7 +103,7 @@ Dans cette newsletter archivée, vous trouverez des ressources précieuses pour 
    * Découvrez comment l’équipe Dynamic Media peut vous aider à vous préparer à une journée de trafic de visiteurs plus élevé que la normale.
    * Une deuxième chance de suivre deux webinaires de la série Skill Builder.
    * Regardez le webinaire à la demande sur la protection de vos ressources numériques contre le piratage.
-   * Rencontrez Bridget Roman, responsable principale de marketing produit pour Experience Manager Assets.
+   * Rencontrez `Bridget Roman`, responsable marketing produit senior pour Experience Manager Assets.
    * Prendre en main Dynamic Media et Dynamic Media Classic dans Experience League.
 
 * **[Août 2019, numéro 08](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
