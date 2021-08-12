@@ -2,10 +2,10 @@
 title: Guides de l’utilisateur d’Adobe Experience Manager as a Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation d’Adobe Experience Manager as a Cloud Service
 exl-id: 1dbeb42c-3c84-407a-bc7b-d9f0403ee73a
-source-git-commit: 390b06ab7bede2dfac9011ebd78f4dbd1dc62df4
+source-git-commit: 90e9dd3c9c61a1e3f0aa1681475afa4e4d12106b
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 90%
+source-wordcount: '430'
+ht-degree: 88%
 
 ---
 
@@ -32,6 +32,7 @@ Cette page répertorie les guides de l’utilisateur autonomes pour Experience 
 | [Guide de l’utilisateur des connecteurs](/help/connectors/home.md) | Découvrez comment intégrer des connecteurs dans Experience Manager as a Cloud Service. |
 | [Guide de l’utilisateur relatif aux opérations](/help/operations/home.md) | Découvrez les opérations principales d’Experience Manager as a Cloud Service, telles que les tâches d’indexation et de maintenance. |
 | [Guide de l’utilisateur de Commerce](/help/commerce-cloud/home.md) | Découvrez Commerce Integration Framework dans AEM as a Cloud Service. |
+| [Guide de l’utilisateur de conformité](/help/compliance/home.md) | Découvrez la conformité dans AEM as a Cloud Service. |
 
 ## Autres ressources relatives à Experience Manager {#other-resources}
 
