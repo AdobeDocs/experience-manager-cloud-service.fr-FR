@@ -2,9 +2,9 @@
 title: Référentiels Cloud Manager
 description: Référentiels Cloud Manager
 exl-id: Cloud Manager Repositories
-source-git-commit: d2a8329fff12be6581f2ee2caf7f9764c765d0e6
+source-git-commit: cebc603aab9c558239588f574f52568d05081b34
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,9 @@ ht-degree: 0%
 # Référentiels Cloud Manager {#cloud-manager-repos}
 
 Les référentiels créés et disponibles dans Cloud Manager peuvent être affichés et gérés à partir de la page Référentiels .
+
+>[!NOTE]
+>Il existe une limite de 300 référentiels pour tous les programmes d’une société donnée ou du [système Identity Management ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html) de l’Adobe.
 
 ## Ajout et gestion des référentiels {#add-manage-repos}
 
@@ -32,6 +35,9 @@ Suivez les étapes ci-dessous pour afficher et gérer les référentiels dans Cl
    ![](assets/repos/repo-1.png)
 
 1. Sélectionnez **Enregistrer**. Le référentiel que vous venez de créer s’affiche dans le tableau, comme illustré ci-dessous.
+
+   >[!NOTE]
+   >Il existe un référentiel *Principal* unique ou une branche pour un pipeline donné. Avec la [prise en charge du sous-module Git](#git-submodule-support), de nombreuses branches secondaires peuvent être incluses au moment de la création.
 
    ![](assets/repos/create-repo3.png)
 
