@@ -5,10 +5,10 @@ breadcrumb-title: Parcours de développement découplé AEM
 user-guide-description: Faites vos premiers pas dans cette visite guidée pour découvrir les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre projet.
 feature: Outils de développement
 role: Developer, Architect
-source-git-commit: bcfe00727e443e2598beb4dbdeee90644447211c
+source-git-commit: 15ecba196c76acc0f11869ca8f91e9e268ea5601
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 57%
+source-wordcount: '234'
+ht-degree: 48%
 
 ---
 
@@ -32,6 +32,11 @@ ht-degree: 57%
    + [Principes de base de la création sans affichage avec AEM](author/basics.md)
    + [En savoir plus sur l’utilisation de références dans les fragments de contenu](author/references.md)
    + [En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu](author/metadata-tagging.md)
++ parcours d’architecture de contenu sans affichage {#content-architect}
+   + [Présentation du Parcours de l’architecture de contenu sans affichage AEM](architect/overview.md)
+   + [Modélisation de contenu pour sans affichage avec AEM - Introduction](architect/introduction.md)
+   + [Découvrez les bases de la modélisation de contenu pour sans affichage avec AEM](architect/basics.md)
+   + [En savoir plus sur la création de modèles de fragment de contenu dans AEM](architect/model-structure.md)
 + AEM Parcours de traduction sans affichage {#translation}
    + [Présentation de la localisation sans affichage dans AEM](translation/overview.md)
    + [Prise en main de la localisation AEM sans interface](translation/getting-started.md)
