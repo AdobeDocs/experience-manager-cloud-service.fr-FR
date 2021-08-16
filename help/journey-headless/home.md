@@ -1,10 +1,10 @@
 ---
 title: AEM Parcours sans affichage
 description: Commencez ici pour un aperçu des parcours guidés disponibles pour comprendre AEM puissantes fonctionnalités sans interface.
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 13%
+source-wordcount: '612'
+ht-degree: 12%
 
 ---
 
@@ -52,5 +52,7 @@ Les Parcours de documentation suivants sont disponibles pour les rubriques sans 
 |---|---|---|
 | [Parcours de développement découplé](/help/journey-headless/developer/overview.md) | Découvrez les technologies sans interface, ce qu’elles apportent à l’expérience utilisateur, comment AEM prend en charge les modèles sans interface et comment mettre en oeuvre votre propre projet de développement sans interface de A à Z. | Développeurs |
 | [Parcours de traduction sans affichage](/help/journey-headless/translation/overview.md) | Découvrez les technologies sans interface, pourquoi elles peuvent être utilisées dans votre projet et comment créer et mettre à jour des projets de traduction dans AEM de A à Z. | Spécialistes de traduction |
+| [Parcours de création sans affichage](/help/journey-headless/author/overview.md) | Commencez ici pour un parcours guidé à travers les puissantes fonctionnalités et flexibles d’AEM sans interface, leurs fonctionnalités et comment modéliser votre contenu sur votre premier projet sans interface. | Architectes |
+| [Parcours Architecte sans tête](/help/journey-headless/architect/overview.md) | Commencez ici pour découvrir les fonctionnalités puissantes, flexibles et sans interface d’Adobe Experience Manager en tant que Cloud Service et comment modéliser le contenu de votre projet. | Créateurs et auteurs de contenu |
 
 Restez en ligne pour les [prochains parcours couvrant des rôles supplémentaires.](/help/journey-documentation/home.md#journeys)
