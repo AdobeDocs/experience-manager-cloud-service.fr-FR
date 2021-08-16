@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 3f16144a95bdb3da08c15f15613031cdd069a977
+source-git-commit: 2f08b1487c1a7fc7b94678e78f8fd72054ff51cb
 workflow-type: tm+mt
-source-wordcount: '1406'
-ht-degree: 20%
+source-wordcount: '1632'
+ht-degree: 19%
 
 ---
 
@@ -144,7 +144,39 @@ XML Documentation pour Experience Manager as a Cloud Service est disponible en g
 
 ## Cloud Manager {#cloud-manager}
 
-Cette section présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.7.0.
+Cette section présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.8.0 et 2021.7.0.
+
+## Date de publication {#release-date-cm-aug}
+
+La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.8.0 est le 12 août 2021.
+La prochaine version est prévue pour le 9 septembre 2021.
+
+### Nouveautés {#what-is-new-aug}
+
+* Les clients Cloud Service peuvent désormais afficher les rapports Contrat de niveau de service (SLA) dans Cloud Manager. Elle sera disponible progressivement au cours des prochains mois.
+Voir [Rapports SLA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html) pour en savoir plus.
+
+* Le type et la gravité des règles de qualité IndexType et `IndexDamAssetLucene` ont été modifiés. Il s’agit désormais des deux bogues du bloqueur *serverity*.
+
+* De nouvelles règles de qualité d’index Oak ont été introduites pour couvrir les configurations asynchrones et tika.
+
+* Augmentez le nombre maximal de certificats SSL par programme à 50.
+
+* Fonctionnalité de libre-service permettant aux utilisateurs de créer et de gérer plusieurs référentiels via l’interface utilisateur de Cloud Manager.
+
+* SonarQube lisait inutilement les données de l’historique Git. Sur les bases de code volumineuses, cela peut entraîner une pénalité de performance de build inutile.
+
+* Une API est désormais disponible pour invalider le cache de dépendance Maven par pipeline.
+
+* L’archétype de projet AEM utilisé par Cloud Manager a été mis à jour à la version 29.
+
+### Correctifs {#bug-fixes-aug}
+
+* Mettre à jour L’état Disponible ne doit pas s’afficher lorsque la dernière version est inférieure à la version actuelle.
+
+* L’intégration initiale échouait pour les nouvelles organisations dont les noms étaient très longs.
+
+* Parfois, lorsqu’un pipeline est déclenché deux fois pour une raison quelconque, l’une des exécutions échoue avec l’erreur *impossible de mettre à jour l’état d’exécution du pipeline*.
 
 ### Date de publication {#release-cm-july}
 
