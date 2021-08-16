@@ -5,9 +5,9 @@ breadcrumb-title: Guide d’intégration
 user-guide-description: Ce guide résume la procédure à suivre pour commencer à utiliser Experience Manager as a Cloud Service, avec les informations d’accès et des informations importantes sur la protection des données.
 feature: Déploiement
 role: Architect, Developer
-source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
+source-git-commit: e029e0ffc7e8b1177f83354598307e411b756642
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '133'
 ht-degree: 84%
 
 ---
@@ -37,4 +37,3 @@ ht-degree: 84%
    + [Évaluation des indicateurs de performance clés](best-practices/assessing-kpis.md)
    + [Alignement des indicateurs de performance clés](best-practices/aligning-kpis.md)
    + [Choisir la bonne équipe](best-practices/choose-right-team.md)
-+ [Présentation des consoles des outils](tools-consoles.md)
