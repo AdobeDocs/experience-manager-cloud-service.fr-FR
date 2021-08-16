@@ -5,10 +5,10 @@ breadcrumb-title: Parcours de développement découplé AEM
 user-guide-description: Faites vos premiers pas dans cette visite guidée pour découvrir les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre projet.
 feature: Outils de développement
 role: Developer, Architect
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: bcfe00727e443e2598beb4dbdeee90644447211c
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 71%
+source-wordcount: '198'
+ht-degree: 57%
 
 ---
 
@@ -26,6 +26,12 @@ ht-degree: 71%
    + [Comment assembler l’ensemble](developer/put-it-all-together.md)
    + [Comment mettre en ligne votre application découplée](developer/go-live.md)
    + [Facultatif – Comment créer des applications sur une seule page (SPA) avec AEM](developer/create-spa.md)
++ AEM Parcours de création de contenu sans affichage {#content-author}
+   + [AEM Parcours de création de contenu sans affichage - Aperçu](author/overview.md)
+   + [Création pour sans affichage avec AEM - Introduction](author/introduction.md)
+   + [Principes de base de la création sans affichage avec AEM](author/basics.md)
+   + [En savoir plus sur l’utilisation de références dans les fragments de contenu](author/references.md)
+   + [En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu](author/metadata-tagging.md)
 + AEM Parcours de traduction sans affichage {#translation}
    + [Présentation de la localisation sans affichage dans AEM](translation/overview.md)
    + [Prise en main de la localisation AEM sans interface](translation/getting-started.md)
