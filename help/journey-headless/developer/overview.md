@@ -2,10 +2,10 @@
 title: Parcours de développement découplé AEM
 description: Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 62%
+source-wordcount: '1176'
+ht-degree: 58%
 
 ---
 
@@ -86,3 +86,6 @@ Les parcours de documentation vous montrent comment AEM résoudre un problème d
 Ces parcours sont conçus pour être autonomes. Cependant, un certain nombre d’entre elles peuvent être liées. Consultez ces parcours supplémentaires pour plus d’informations sur la manière dont AEM puissantes fonctionnalités fonctionnent ensemble.
 
 * [AEM Parcours](/help/journey-headless/translation/overview.md)  de traduction sans interface - Ce parcours de documentation vous donne une large compréhension de la technologie sans interface, de la manière dont AEM diffuse du contenu sans interface et de la manière dont vous pouvez le traduire.
+* [Parcours](/help/journey-headless/author/overview.md)  de création sans tête : commencez ici pour un parcours guidé à travers les puissantes fonctionnalités et flexibles d’AEM sans tête, leurs fonctionnalités et comment modéliser votre contenu sur votre premier projet sans tête.
+* [Parcours](/help/journey-headless/architect/overview.md)  Architecte sans tête : commencez ici pour découvrir les fonctionnalités puissantes, flexibles et sans tête d’Adobe Experience Manager en tant que Cloud Service, ainsi que comment modéliser du contenu pour votre projet.
+* [AEM en tant que documentation technique](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr)  de Cloud Service : si vous maîtrisez déjà les technologies AEM et sans interface, vous pouvez consulter directement nos documents techniques détaillés.
