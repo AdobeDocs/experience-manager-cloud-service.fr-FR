@@ -1,9 +1,9 @@
 ---
 title: AEM Parcours de documentation
 description: Les Parcours de documentation fournissent une structure narrative dans AEM documentation en liant des fonctionnalités complexes et disparates afin de résoudre un objectif commercial d’une manière conforme aux bonnes pratiques. Conçu pour les AEM débutants, parcours présente les concepts et les fonctionnalités pour atteindre un objectif de A à Z.
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1262'
 ht-degree: 2%
 
 ---
@@ -86,7 +86,8 @@ Plusieurs Parcours de documentation sont déjà disponibles. Puisque chaque parc
 | Parcours | Description |
 |---|---|
 | [Parcours de développement découplé](/help/journey-headless/developer/overview.md) | Commencez ici pour découvrir comment AEM prend en charge les modèles de développement sans interface et comment lancer votre projet, de la planification à la mise en oeuvre, en passant par la mise en service. |
-| Parcours de création sans affichage | Commencez ici pour découvrir comment créer et gérer du contenu headless dans AEM. |
+| [Parcours de création sans affichage](/help/journey-headless/author/overview.md) | Commencez ici pour un parcours guidé à travers les puissantes fonctionnalités et flexibles d’AEM sans interface, leurs fonctionnalités et comment modéliser votre contenu sur votre premier projet sans interface. |
+| [Parcours Architecte sans tête](/help/journey-headless/architect/overview.md) | Commencez ici pour découvrir les fonctionnalités puissantes, flexibles et sans interface d’Adobe Experience Manager en tant que Cloud Service et comment modéliser le contenu de votre projet. |
 | [Parcours de traduction sans affichage](/help/journey-headless/translation/overview.md) | Commencez ici pour découvrir comment configurer et gérer vos projets de traduction sans interface utilisateur graphique dans AEM. |
 | parcours d’intégration AEM | Bientôt ! |
 | parcours Commerce AEM | Bientôt ! |
