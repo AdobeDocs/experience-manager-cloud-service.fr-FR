@@ -1,20 +1,21 @@
 ---
-sub-product: Parcours de développement découplé AEM
-user-guide-title: Parcours de développement découplé AEM
-breadcrumb-title: Parcours de développement découplé AEM
+sub-product: AEM Parcours sans affichage
+user-guide-title: AEM Parcours sans affichage
+breadcrumb-title: AEM Parcours sans affichage
 user-guide-description: Faites vos premiers pas dans cette visite guidée pour découvrir les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre projet.
 feature: Outils de développement
 role: Developer, Architect
-source-git-commit: c4c6da1219a110ecfc7f24a19d3a775201fb8069
+source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
 workflow-type: tm+mt
 source-wordcount: '234'
-ht-degree: 48%
+ht-degree: 41%
 
 ---
 
 
-# Parcours découplé AEM {#headless-journey}
+# AEM Parcours sans affichage {#headless-journey}
 
++ [AEM Parcours sans affichage](/help/journey-headless/home.md)
 + Parcours de développement découplé AEM {#developer}
    + [Comprendre le découplage dans AEM](developer/overview.md)
    + [En savoir plus sur le développement CMS découplé](developer/learn-about.md)
