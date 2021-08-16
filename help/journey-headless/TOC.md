@@ -5,7 +5,7 @@ breadcrumb-title: Parcours de développement découplé AEM
 user-guide-description: Faites vos premiers pas dans cette visite guidée pour découvrir les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre projet.
 feature: Outils de développement
 role: Developer, Architect
-source-git-commit: 15ecba196c76acc0f11869ca8f91e9e268ea5601
+source-git-commit: c4c6da1219a110ecfc7f24a19d3a775201fb8069
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 48%
@@ -38,9 +38,9 @@ ht-degree: 48%
    + [Découvrez les bases de la modélisation de contenu pour sans affichage avec AEM](architect/basics.md)
    + [En savoir plus sur la création de modèles de fragment de contenu dans AEM](architect/model-structure.md)
 + AEM Parcours de traduction sans affichage {#translation}
-   + [Présentation de la localisation sans affichage dans AEM](translation/overview.md)
-   + [Prise en main de la localisation AEM sans interface](translation/getting-started.md)
-   + [Découvrez le contenu sans interface et comment le localiser dans AEM](translation/learn-about.md)
+   + [Comprendre la traduction sans tête dans AEM](translation/overview.md)
+   + [Prise en main de AEM traduction sans interface](translation/getting-started.md)
+   + [Découvrez le contenu sans interface et comment traduire en AEM](translation/learn-about.md)
    + [Configuration du connecteur de traduction](translation/configure-connector.md)
    + [Configuration des règles de traduction](translation/translation-rules.md)
    + [Traduire le contenu](translation/translate-content.md)
