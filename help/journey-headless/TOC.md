@@ -5,7 +5,7 @@ breadcrumb-title: AEM Parcours sans affichage
 user-guide-description: Faites vos premiers pas dans cette visite guidée pour découvrir les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre projet.
 feature: Outils de développement
 role: Developer, Architect
-source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
+source-git-commit: fe1d8f29e59f1f54c4f8e3a419103926005c0e48
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 41%
@@ -27,17 +27,17 @@ ht-degree: 41%
    + [Comment assembler l’ensemble](developer/put-it-all-together.md)
    + [Comment mettre en ligne votre application découplée](developer/go-live.md)
    + [Facultatif – Comment créer des applications sur une seule page (SPA) avec AEM](developer/create-spa.md)
-+ AEM Parcours de création de contenu sans affichage {#content-author}
++ parcours d’architecture de contenu sans affichage {#architect}
+   + [Présentation du Parcours de l’architecture de contenu sans affichage AEM](architect/overview.md)
+   + [Modélisation de contenu pour sans affichage avec AEM - Introduction](architect/introduction.md)
+   + [Découvrez les bases de la modélisation de contenu pour sans affichage avec AEM](architect/basics.md)
+   + [En savoir plus sur la création de modèles de fragment de contenu dans AEM](architect/model-structure.md)
++ AEM Parcours de création de contenu sans affichage {#author}
    + [AEM Parcours de création de contenu sans affichage - Aperçu](author/overview.md)
    + [Création pour sans affichage avec AEM - Introduction](author/introduction.md)
    + [Principes de base de la création sans affichage avec AEM](author/basics.md)
    + [En savoir plus sur l’utilisation de références dans les fragments de contenu](author/references.md)
    + [En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu](author/metadata-tagging.md)
-+ parcours d’architecture de contenu sans affichage {#content-architect}
-   + [Présentation du Parcours de l’architecture de contenu sans affichage AEM](architect/overview.md)
-   + [Modélisation de contenu pour sans affichage avec AEM - Introduction](architect/introduction.md)
-   + [Découvrez les bases de la modélisation de contenu pour sans affichage avec AEM](architect/basics.md)
-   + [En savoir plus sur la création de modèles de fragment de contenu dans AEM](architect/model-structure.md)
 + AEM Parcours de traduction sans affichage {#translation}
    + [Comprendre la traduction sans tête dans AEM](translation/overview.md)
    + [Prise en main de AEM traduction sans interface](translation/getting-started.md)
