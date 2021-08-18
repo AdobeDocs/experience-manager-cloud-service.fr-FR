@@ -4,7 +4,7 @@ description: Consultez cette page pour découvrir comment commencer à utiliser 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 037add45b8dd11422f771057839b17eaaed1d2fe
+source-git-commit: 1ce3849cee513d061df0664ca50d400e6cf41a8d
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Prise en main du processus d’intégration {#getting-started}
 
-L’intégration est le processus au cours duquel un [administrateur système](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) désigné configure AEM en tant que Cloud Service pour votre organisation. Cela inclut l’approvisionnement initial des ressources cloud et l’affectation des utilisateurs aux rôles appropriés en fonction de leurs responsabilités professionnelles. Ensuite, chaque membre peut se connecter et accéder à son AEM en tant que ressources Cloud Service.
+L’intégration est le processus au cours duquel un [administrateur système](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) désigné configure AEM en tant que Cloud Service pour votre organisation. Cela inclut l’approvisionnement initial des ressources cloud et l’affectation des utilisateurs à des rôles en fonction de leurs responsabilités professionnelles. Par conséquent, chaque membre peut se connecter et accéder à son AEM en tant que ressources de Cloud Service.
 
 ## Objectif {#objective}
 
@@ -55,11 +55,11 @@ Pour accéder à Admin Console et passer en revue votre rôle d’administrateur
 
    ![](/help/onboarding/onboarding-journey/assets/get-started2.png)
 
-1. Une fois que vous avez cliqué sur **Administrateurs** à partir de la carte **Utilisateurs**, à l’étape précédente, vous pouvez effectuer une recherche en saisissant votre adresse électronique, votre nom d’utilisateur, votre prénom ou votre nom Adobe ID.
+1. Une fois que vous avez cliqué sur **Administrateurs** à partir de la carte **Utilisateurs**, vous pouvez effectuer une recherche en saisissant votre adresse électronique, votre nom d’utilisateur, votre prénom ou votre nom Adobe ID.
 
    ![](/help/onboarding/onboarding-journey/assets/get-started3.png)
 
-1. La recherche doit renvoyer votre enregistrement d’email avec **Système** sous la colonne intitulée **RÔLE ADMIN**, comme illustré ci-dessous. Cela confirme que vous êtes administrateur système.
+1. La recherche doit trouver votre enregistrement d’email. En outre, le **RÔLE D’ADMINISTRATION** doit afficher **Système**, comme illustré ci-dessous. Cela confirme que vous êtes administrateur système. Ceci confirme votre rôle en tant qu’administrateur système.
 
    ![](/help/onboarding/onboarding-journey/assets/get-started4.png)
 
