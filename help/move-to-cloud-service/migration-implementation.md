@@ -2,9 +2,9 @@
 title: Phase de mise en oeuvre
 description: Phase de mise en oeuvre
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
+source-git-commit: 82e22f0a0684491b5071fa232a0f90fb87da6992
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '943'
 ht-degree: 94%
 
 ---
@@ -98,7 +98,7 @@ Les exécutions du pipeline Cloud Manager for Cloud Services prennent en charge 
 
 Consultez [Test de qualité du code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing) pour en savoir plus sur l’écriture de scripts de test et sur la couverture recommandée d’au moins 50 %.
 
-Vous pouvez en outre consulter la section [Présentation des règles de qualité du code personnalisé](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-code-quality-rules.html?lang=fr) pour en savoir plus sur les règles de qualité du code personnalisé exécutées par Cloud Manager et créées conformément aux bonnes pratiques en matière d’ingénierie AEM.
+Vous pouvez en outre consulter la section [Présentation des règles de qualité du code personnalisé](/help/implementing/cloud-manager/custom-code-quality-rules.md) pour en savoir plus sur les règles de qualité du code personnalisé exécutées par Cloud Manager et créées conformément aux bonnes pratiques en matière d’ingénierie AEM.
 
 L’utilisation de Cloud Manager est le seul mécanisme de déploiement de code pour les environnements Cloud Service.
 
