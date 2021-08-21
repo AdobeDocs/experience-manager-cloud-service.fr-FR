@@ -4,9 +4,9 @@ description: Consultez cette page pour découvrir les étapes suivantes à suivr
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
+source-git-commit: 85cf0d69fcc3dcaadf3259576d277698eeb826fe
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '476'
 ht-degree: 7%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 ## Objectif {#objective}
 
-Ce document permet aux développeurs et aux responsables de déploiement d’accéder à Cloud Manager et de se familiariser avec la manière dont ils peuvent se préparer au parcours de formation.
+Ce document permet aux développeurs et aux responsables de déploiement d’accéder à Cloud Manager et de se familiariser avec la préparation de leurs parcours d’apprentissage.
 
 Après avoir lu ce document, vous devez :
 
@@ -33,23 +33,25 @@ Si vous lisez cette section, il est probable que vous soyez affecté à un profi
 
 ## Prérequis {#prerequisites}
 
-Votre administrateur système a affecté des développeurs et des responsables de déploiement à leurs profils de produit respectifs. Les développeurs doivent en outre être affectés au profil de produit Utilisateurs AEM ou Administrateurs AEM .\
-Les ressources cloud ont été configurées.
-Vous comprenez comment accéder à Cloud Manager et vous connecter.
+Avant de commencer, assurez-vous que :
 
-## Gérer Git {#manage-git}
+* Votre administrateur système a affecté des développeurs et des responsables de déploiement à leurs profils de produit respectifs. Les développeurs doivent en outre être affectés au profil de produit Utilisateurs AEM ou Administrateurs AEM .
+* Les ressources cloud ont été configurées.
+* Vous comprenez comment accéder à Cloud Manager et vous connecter.
+
+## Gestion de GitHub {#manage-git}
 
 Vous pouvez accéder à votre référentiel Git et le gérer à l’aide de la gestion de compte Git en libre-service à partir de l’interface utilisateur de Cloud Manager.
 Pour en savoir plus sur cette rubrique, voir [Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en).
 
-## Configurer le pipeline {#setup-pipeline}
+## Configurer un pipeline {#setup-pipeline}
 
 Vous pouvez configurer votre pipeline de production ou hors production à partir de l’interface utilisateur de Cloud Manager.
 Pour en savoir plus sur cette rubrique, voir [Configuration de votre pipeline CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en).
 
 ## Eléments suivants {#whats-next}
 
-Développeurs et responsables de déploiement sont maintenant prêts à vous familiariser avec la manière de développer du code dans AEM en tant que Cloud Service. Pour en savoir plus ou trouver d’autres parcours d’apprentissage, reportez-vous à la section Ressources supplémentaires ci-dessous.
+Développeurs et responsables de déploiement sont maintenant prêts à vous familiariser avec la manière de développer du code dans AEM en tant que Cloud Service. Pour en savoir plus ou trouver d’autres parcours d’apprentissage, reportez-vous à la section Ressources supplémentaires ci-dessous. Pour en savoir plus sur le parcours d’apprentissage pour les auteurs de contenu, voir Chemin d’apprentissage pour les auteurs AEM.
 
 ## Ressources supplémentaires {#additional-resources}
 
