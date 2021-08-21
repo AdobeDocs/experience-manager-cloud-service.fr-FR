@@ -4,9 +4,9 @@ description: Consultez cette page pour savoir comment affecter des membres de l�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
+source-git-commit: 85cf0d69fcc3dcaadf3259576d277698eeb826fe
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '820'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ Après avoir lu cette section, vous devez comprendre :
 
 ## Présentation {#introduction}
 
-Pour que l’accès à AEM en tant qu’utilisateurs Cloud Service soit accordé, il faut appartenir à l’un des deux profils de produit, tels que `AEM Users` ou `AEM Administrators`. Les membres de votre équipe doivent recevoir des autorisations sur l’instance AEM, car les autorisations d’administration de Cloud Manager ne seront pas suffisantes. En savoir plus.
+Pour que l’accès à AEM en tant qu’utilisateurs Cloud Service soit accordé, il faut qu’il s’agisse de l’un des deux profils de produit suivants :  `AEM Users` ou `AEM Administrators`. Les membres de votre équipe doivent recevoir des autorisations sur l’instance AEM, car les autorisations d’administration de Cloud Manager ne seront pas suffisantes. En savoir plus.
 
 >[!NOTE]
 >Chaque utilisateur affecté à AEM profil de produit User par l’administrateur système disposera d’un accès (lecture seule) à Cloud Manager.
