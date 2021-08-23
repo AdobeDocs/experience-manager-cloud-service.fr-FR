@@ -3,9 +3,9 @@ title: 'Affecter des membres de l’équipe à AEM en tant que profils de produi
 description: Consultez cette page pour savoir comment affecter des membres de l’équipe à AEM en tant que profils de produit Cloud Service
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '818'
 ht-degree: 2%
 
 ---
@@ -101,7 +101,7 @@ Les étapes ci-dessous doivent être suivies par un administrateur système qui 
 
 ## Eléments suivants {#whats-next}
 
-Les utilisateurs que vous avez affectés à AEM en tant que profils de produit Cloud Service sont maintenant prêts à apprendre à accéder à l’instance de création et à vous familiariser avec la création de pages dans AEM en tant que Cloud Service. Vous devez suivre le chemin, en consultant ensuite le document Chemin d’apprentissage pour les utilisateurs AEM ou Chemin d’apprentissage pour les développeurs et les responsables de déploiement.
+Les utilisateurs que vous avez affectés à AEM en tant que profils de produit Cloud Service sont maintenant prêts à apprendre à accéder à l’instance de création et à vous familiariser avec la création de pages dans AEM en tant que Cloud Service. Suivez le chemin d’accès en consultant le document Chemin d’apprentissage pour [AEM utilisateurs](/help/onboarding/onboarding-journey/learning-path-aem-users.md) ou pour [développeurs et responsables de déploiement](/help/onboarding/onboarding-journey/learning-path-developers-deploymentmanagers.md).
 
 ## Ressources supplémentaires {#additional-resources}
 
