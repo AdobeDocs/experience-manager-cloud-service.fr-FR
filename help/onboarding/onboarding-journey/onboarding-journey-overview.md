@@ -3,7 +3,7 @@ title: Parcours d’intégration
 description: Consultez cette page pour découvrir comment commencer à utiliser le parcours d’intégration
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 47524cd63e0592f20818a1918423fdaf45970115
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 7%
@@ -64,4 +64,4 @@ Vous allez explorer de nombreux sujets dans ce parcours. Les articles suivants v
 
 ## Et après ? {#what-is-next}
 
-Vous êtes maintenant prêt à prendre en main votre Parcours d’intégration. Nous vous encourageons à passer à la partie suivante du parcours et à lire l’article Prise en main du processus d’intégration .
+Vous êtes maintenant prêt à prendre en main votre Parcours d’intégration. Nous vous encourageons à passer à la partie suivante du parcours et à lire l’article [Prise en main du processus d’intégration](/help/onboarding/onboarding-journey/get-started-onboarding-journey.md).
