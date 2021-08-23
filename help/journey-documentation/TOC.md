@@ -5,7 +5,7 @@ breadcrumb-title: AEM Parcours de documentation
 user-guide-description: Faites vos premiers pas dans cette visite guidée pour découvrir les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre projet.
 feature: Outils de développement
 role: Developer, Architect
-source-git-commit: c4c6da1219a110ecfc7f24a19d3a775201fb8069
+source-git-commit: 93d7e7159cefba687ce085eda32d8da44e60fdc5
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 25%
@@ -40,15 +40,14 @@ Please note that all links to other guides need to be absolute references with l
    + [Configuration des règles de traduction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/translation-rules.html)
    + [Traduire le contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/translate-content.html)
    + [Publier le contenu traduit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/publish-content.html)
-+ AEM Parcours de création de contenu sans affichage {#content-author}
-   + [AEM Parcours de création de contenu sans affichage - Aperçu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-author/overview.md)
-   + [Création pour sans affichage avec AEM - Introduction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-author/introduction.md)
-   + [Principes de base de la création sans affichage avec AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-author/basics.md)
-   + [En savoir plus sur l’utilisation de références dans les fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-author/references.md)
-   + [En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-author/metadata-tagging.md)
-+ parcours d’architecture de contenu sans affichage {#content-architect}
-   + [Présentation du Parcours de l’architecture de contenu sans affichage AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-architect/overview.md)
-   + [Modélisation de contenu pour sans affichage avec AEM - Introduction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-architect/introduction.md)
-   + [Découvrez les bases de la modélisation de contenu pour sans affichage avec AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-architect/basics.md)
-   + [En savoir plus sur la création de modèles de fragment de contenu dans AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-architect/model-structure.md)
-
++ AEM Parcours de création de contenu sans affichage {#author}
+   + [AEM Parcours de création de contenu sans affichage - Aperçu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/overview.md)
+   + [Création pour sans affichage avec AEM - Introduction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/introduction.md)
+   + [Principes de base de la création sans affichage avec AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/basics.md)
+   + [En savoir plus sur l’utilisation de références dans les fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/references.md)
+   + [En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/metadata-tagging.md)
++ parcours d’architecture de contenu sans affichage {#architect}
+   + [Présentation du Parcours de l’architecture de contenu sans affichage AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/overview.md)
+   + [Modélisation de contenu pour sans affichage avec AEM - Introduction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/introduction.md)
+   + [Découvrez les bases de la modélisation de contenu pour sans affichage avec AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/basics.md)
+   + [En savoir plus sur la création de modèles de fragment de contenu dans AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/model-structure.md)
