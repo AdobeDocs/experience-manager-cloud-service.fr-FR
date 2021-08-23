@@ -3,7 +3,7 @@ title: Formation des développeurs et des responsables de déploiement
 description: Consultez cette page pour découvrir les étapes suivantes à suivre après l’accès, si vous êtes un développeur ou un responsable de déploiement
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 7%
@@ -50,7 +50,7 @@ Pour en savoir plus sur cette rubrique, voir [Configuration de votre pipeline CI
 
 ## Eléments suivants {#whats-next}
 
-Développeurs et responsables de déploiement sont maintenant prêts à vous familiariser avec la manière de développer du code dans AEM en tant que Cloud Service. Pour en savoir plus ou trouver d’autres parcours d’apprentissage, reportez-vous à la section Ressources supplémentaires ci-dessous. Pour en savoir plus sur le parcours d’apprentissage pour les auteurs de contenu, voir Chemin d’apprentissage pour les auteurs AEM.
+Développeurs et responsables de déploiement sont maintenant prêts à vous familiariser avec la manière de développer du code dans AEM en tant que Cloud Service. Pour en savoir plus ou trouver d’autres parcours d’apprentissage, reportez-vous à la section Ressources supplémentaires ci-dessous. Pour en savoir plus sur le parcours d’apprentissage pour les auteurs de contenu, voir [Chemin d’apprentissage pour les auteurs AEM](/help/onboarding/onboarding-journey/learning-path-aem-users.md).
 
 ## Ressources supplémentaires {#additional-resources}
 
