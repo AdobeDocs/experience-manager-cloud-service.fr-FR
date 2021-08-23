@@ -2,10 +2,10 @@
 title: Parcours de développement découplé AEM
 description: Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
+source-git-commit: d7d647e2114ed808ad29ed0802d838d257a9df03
 workflow-type: tm+mt
-source-wordcount: '1176'
-ht-degree: 58%
+source-wordcount: '1252'
+ht-degree: 55%
 
 ---
 
@@ -32,6 +32,10 @@ Ce guide vous accompagne tout au long des sujets les plus importants afin que vo
 Les Parcours de documentation sont conçus autour des principes de bonnes pratiques, reposant sur les dernières recherches d’Adobe, l’expérience de mise en oeuvre éprouvée des consultants Adobe, ainsi que les commentaires des projets clients.
 
 Si vous souhaitez savoir comment Adobe recommande de résoudre des cas d’entreprise sans interface avec AEM, AEM Parcours sans interface sont les points de départ.
+
+>[!TIP]
+>
+> Si vous préférez **apprendre en faisant** et que vous êtes féru de technologie, consultez les tutoriels AEM sans affichage, qui sont organisés par API et structure et sont disponibles dans la [section Ressources supplémentaires](#additional-resources) à la fin de ce document.
 
 ## Public {#audience}
 
@@ -85,6 +89,7 @@ Les parcours de documentation vous montrent comment AEM résoudre un problème d
 
 Ces parcours sont conçus pour être autonomes. Cependant, un certain nombre d’entre elles peuvent être liées. Consultez ces parcours supplémentaires pour plus d’informations sur la manière dont AEM puissantes fonctionnalités fonctionnent ensemble.
 
+* [AEM tutoriels sans affichage](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)  - Si vous préférez apprendre par le travail et êtes plus intéressé par les questions techniques, suivez nos tutoriels pratiques organisés par API et structure, qui explorent la création et l’utilisation d’applications basées sur AEM sans affichage.
 * [AEM Parcours](/help/journey-headless/translation/overview.md)  de traduction sans interface - Ce parcours de documentation vous donne une large compréhension de la technologie sans interface, de la manière dont AEM diffuse du contenu sans interface et de la manière dont vous pouvez le traduire.
 * [Parcours](/help/journey-headless/author/overview.md)  de création sans tête : commencez ici pour un parcours guidé à travers les puissantes fonctionnalités et flexibles d’AEM sans tête, leurs fonctionnalités et comment modéliser votre contenu sur votre premier projet sans tête.
 * [Parcours](/help/journey-headless/architect/overview.md)  Architecte sans tête : commencez ici pour découvrir les fonctionnalités puissantes, flexibles et sans tête d’Adobe Experience Manager en tant que Cloud Service, ainsi que comment modéliser du contenu pour votre projet.
