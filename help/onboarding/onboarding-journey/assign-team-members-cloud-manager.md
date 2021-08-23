@@ -3,7 +3,7 @@ title: 'Affectation de membres d’équipe à des profils de produit Cloud Manag
 description: Consultez cette page pour savoir comment affecter des membres de l’équipe à des profils de produit Cloud Manager
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 3%
@@ -157,7 +157,7 @@ Les étapes suivantes vous guideront :
 
 ## Eléments suivants {#whats-next}
 
-Vous avez découvert trois profils de produit Cloud Manager différents, tels que Propriétaire de l’entreprise, Responsable de déploiement et Développeur. Ensuite, vous avez affecté des membres de l’équipe à des profils de produit Cloud Manager tels que Propriétaire de l’entreprise, Responsable de déploiement et Développeur. Vous êtes maintenant prêt à poursuivre votre parcours d’intégration en consultant ensuite le document Configuration de ressources Cloud via Cloud Manager, dans lequel vous apprendrez :
+Vous avez découvert trois profils de produit Cloud Manager différents, tels que Propriétaire de l’entreprise, Responsable de déploiement et Développeur. Ensuite, vous avez affecté des membres de l’équipe à des profils de produit Cloud Manager tels que Propriétaire de l’entreprise, Responsable de déploiement et Développeur. Vous êtes maintenant prêt à poursuivre votre parcours d’intégration en consultant le document [Configuration de ressources cloud via Cloud Manager](/help/onboarding/onboarding-journey/setup-cloud-resources-via-cloud-manager.md), dans lequel vous apprendrez :
 
 1. En tant qu’administrateur système affecté au rôle *Propriétaire de l’entreprise*, vous devez accéder à Cloud Manager et vous connecter à celui-ci.
 
