@@ -1,10 +1,10 @@
 ---
-title: 'Affectation de membres d’équipe à AEM en tant que profils de produit Cloud Service '
+title: 'Affecter des membres de l’équipe à AEM en tant que profils de produit Cloud Service '
 description: Consultez cette page pour savoir comment affecter des membres de l’équipe à AEM en tant que profils de produit Cloud Service
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 85cf0d69fcc3dcaadf3259576d277698eeb826fe
+source-git-commit: f0d7886c0bf88fe42d05a1cdd6eb03b07b165c52
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 2%
@@ -12,7 +12,7 @@ ht-degree: 2%
 ---
 
 
-# Affectation de membres d’équipe à AEM en tant que profils de produit Cloud Service {#assign-team-members-cloud-service}
+# Affecter des membres de l’équipe à AEM en tant que profils de produit Cloud Service {#assign-team-members-cloud-service}
 
 ## Objectif {#objective}
 
