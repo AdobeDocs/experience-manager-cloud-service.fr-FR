@@ -3,7 +3,7 @@ title: Prise en main du processus d’intégration
 description: Consultez cette page pour découvrir comment commencer à utiliser le parcours d’intégration
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 1%
@@ -66,5 +66,5 @@ Pour accéder à Admin Console et passer en revue votre rôle d’administrateur
 
 ## Et après ? {#whats-next}
 
-Maintenant que vous êtes connecté à Admin Console et que vous avez vérifié votre profil en tant qu’administrateur système, vous devez poursuivre votre parcours d’intégration en consultant le document Attribution de membres de l’équipe aux profils de produit Cloud Manager .
+Maintenant que vous êtes connecté à Admin Console et que vous avez vérifié votre profil en tant qu’administrateur système, vous devez poursuivre votre parcours d’intégration en consultant le document [Affecter des membres de l’équipe aux profils de produit Cloud Manager](/help/onboarding/onboarding-journey/assign-team-members-cloud-manager.md).
 
