@@ -4,10 +4,10 @@ description: Consultez cette page pour découvrir comment commencer à utiliser 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ec7a48165a5e1a30026b41a8cf1d63457ab922d
+source-git-commit: ae7b9f45b0a50bf6816c85934997c7562718c2be
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 8%
+source-wordcount: '834'
+ht-degree: 7%
 
 ---
 
@@ -36,6 +36,17 @@ L’intégration est le processus au cours duquel un [administrateur système](h
 Le parcours d’intégration est illustré ci-dessous et chaque étape du parcours est décrite en détail dans les sections suivantes.
 
 ![](/help/onboarding/onboarding-journey/assets/onboarding-journey.png)
+
+Ce parcours est conçu pour un personnage Administrateur système qui présente les exigences, les étapes et l’approche. Le parcours définit des personnes supplémentaires avec lesquelles l’administrateur système doit interagir pour qu’un projet soit réussi, mais le point de vue du parcours est celui d’un administrateur.
+
+Voici les personnages qui interagissent dans ce parcours.
+
+| Personnage | Description | Rôle dans le Parcours |
+|---|---|---|
+| Administrateur système | Fournit la configuration initiale des ressources cloud et l’affectation des utilisateurs aux rôles appropriés en fonction de leurs responsabilités professionnelles. Chaque membre peut alors se connecter et accéder à son AEM en tant que ressources de Cloud Service. | Gère tous les aspects de leurs utilisateurs, de l’accès aux autorisations. |
+| Auteur AEM | Crée et révise le contenu (il peut s’agir de plusieurs types ; par exemple, pages, ressources, publications) avant qu’elles ne soient publiées sur votre site web. | Une fois les autorisations accordées, peut démarrer le parcours de leur propre responsable de déploiement. |
+| Développeur | Expérience dans le développement d’applications AEM qui consomment du contenu provenant de différentes sources | Une fois les autorisations accordées, peut démarrer leur propre parcours de développement. |
+| Responsable de déploiement | Ajoute ou met à jour un environnement, exécute tout pipeline et déploie le code sur AEM environnement ou qualité du code. | Une fois les autorisations accordées, peut démarrer le parcours de leur propre responsable de déploiement. |
 
 ## Exploration du Parcours d’intégration {#exploring-onboarding-journey}
 
