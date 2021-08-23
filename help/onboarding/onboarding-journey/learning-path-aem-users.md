@@ -2,9 +2,8 @@
 title: Chemin d’apprentissage pour les utilisateurs AEM
 description: Suivez cette page pour découvrir les étapes suivantes après l’accès, si vous êtes un utilisateur AEM
 hide: true
-hidefromtoc: true
 index: false
-source-git-commit: e4b0b026e72e3956503966cfc7a57b657501f0f8
+source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 3%
