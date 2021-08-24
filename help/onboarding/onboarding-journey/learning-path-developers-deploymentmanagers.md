@@ -3,10 +3,10 @@ title: Formation des développeurs et des responsables de déploiement
 description: Consultez cette page pour découvrir les étapes suivantes à suivre après l’accès, si vous êtes un développeur ou un responsable de déploiement
 hide: true
 index: false
-source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
+source-git-commit: 53b98708044a7df8c4d24f25046c098f1a307743
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 7%
+source-wordcount: '566'
+ht-degree: 6%
 
 ---
 
@@ -68,3 +68,14 @@ Développeurs et responsables de déploiement sont maintenant prêts à vous fam
 
 * [Prise en main d’AEM Éditeur SPA pour les développeurs](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 
+## Cours d’Experience League {#exp-league-courses}
+
+Suivez les cours de la ligue d’expérience pour en savoir plus. Vérifiez que vous êtes inscrit pour accéder aux cours :
+
+* [Sites traditionnels](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+
+* [Éditeur de SPA](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+
+* [Headless](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+
+* [Commerce](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
