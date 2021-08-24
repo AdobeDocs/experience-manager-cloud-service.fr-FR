@@ -3,10 +3,10 @@ title: Chemin d’apprentissage pour les utilisateurs AEM
 description: Suivez cette page pour découvrir les étapes suivantes après l’accès, si vous êtes un utilisateur AEM
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 3%
+source-wordcount: '383'
+ht-degree: 4%
 
 ---
 
@@ -36,9 +36,22 @@ L’administrateur système doit avoir effectué toutes les étapes nécessaires
 
 Pour accéder à l’auteur, procédez comme suit :
 
-1. Pour accéder à Cloud Manager, procédez comme suit. Vous pouvez également accéder directement à Cloud Manager et vous connecter.
+1. Accédez directement à [Adobe Experience Cloud](https://experience.adobe.com) et connectez-vous à l’aide de votre Adobe ID.
+
+1. Sur la page d’accueil de Adobe Experience Cloud, sélectionnez **Experience Manager**.
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources2.png)
+
+1. Vous accédez alors à la page d’accueil AEM. À partir de là, lancez **Cloud Manager** .
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
+
+   >[!IMPORTANT]
+   >Vous pouvez également accéder directement à la page de connexion de Cloud Manager à partir de [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Mettez cette page en signet à des fins de référence ultérieure et pour accéder directement à la page d’entrée de Cloud Manager.
 
 1. Sur la page **Aperçu** de Cloud Manager, cliquez sur le lien de création à partir de la carte **Environnements**.
+
+   ![](/help/onboarding/onboarding-journey/assets/author-environ.png)
 
 1. Un nouvel onglet s’ouvre, dans lequel vous pouvez vous connecter à l’environnement de création à l’aide d’Adobe ID.
 
