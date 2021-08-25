@@ -2,10 +2,10 @@
 title: Bonnes pratiques de gestion des URL et de l’optimisation pour les moteurs de recherche pour Adobe Experience Manager Sites as a Cloud Service
 description: Bonnes pratiques de gestion des URL et de l’optimisation pour les moteurs de recherche pour Adobe Experience Manager Sites as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: 41afc50b2c5feebb086e78ba2065f59e874d37fc
+source-git-commit: b7ed0d16b9cd4ba9fdfaa20e17f3c3c73659f914
 workflow-type: tm+mt
-source-wordcount: '3124'
-ht-degree: 100%
+source-wordcount: '3641'
+ht-degree: 79%
 
 ---
 
@@ -46,7 +46,6 @@ Voici quelques conseils généraux sur la façon d’optimiser les URL pour les 
    * Si vous utilisez des sélecteurs sur une page, il est préférable d’opter pour des sélecteurs avec une valeur sémantique.
    * Si une personne ne peut pas lire votre URL, un moteur de recherche ne le peut pas non plus.
    * Par exemple :
-
       `mybrand.com/products/product-detail.product-category.product-name.html`
 est préférable à 
 `mybrand.com/products/product-detail.1234.html`
@@ -81,7 +80,7 @@ est préférable à
 
    * Il arrive que des sites soient diffusés via `http` jusqu’à ce qu’un utilisateur arrive sur une page avec, par exemple, un formulaire de passage en caisse ou de connexion, où il passe alors en `https`. En cas de liaison depuis cette page, si l’utilisateur peut revenir aux pages `http` et y accéder par `https`, le moteur de recherche les suit comme deux pages distinctes.
 
-   * Actuellement, Google préfère les pages `https` aux pages `http`. Pour cette raison, il est parfois plus facile pour tous les acteurs de diffuser l’ensemble du site par `https`.
+   * Actuellement, Google préfère les pages `https` aux pages `http`. C’est pourquoi il est souvent plus facile pour tous de diffuser l’ensemble du site par `https`.
 
 ### Configuration du serveur {#server-configuration}
 
@@ -97,7 +96,7 @@ En termes de configuration du serveur, vous pouvez accomplir les étapes suivant
 
 ## Configurations AEM {#aem-configurations}
 
-Cette section décrit les étapes requises de façon à configurer AEM afin qu’il suive ces recommandations d’optimisation pour les moteurs de recherche.
+Cette section décrit les étapes de mise en oeuvre nécessaires pour configurer AEM pour suivre ces recommandations d’optimisation pour les moteurs de recherche.
 
 ### Utilisation de sélecteurs Sling {#using-sling-selectors}
 
@@ -184,7 +183,7 @@ Si un auteur souhaite qu’une page soit accessible depuis un autre emplacement 
 
 #### Noms de pages localisés {#localized-page-names}
 
-Vous pouvez afficher les noms de pages localisés pour les utilisateurs de contenu traduit. Par exemple :
+Vous pouvez afficher des noms de page localisés pour les utilisateurs de contenu traduit. Par exemple :
 
 * plutôt que de demander à un utilisateur hispanophone d’accéder à :
    `www.mydomain.com/es/home.html`
@@ -358,14 +357,34 @@ Lorsque vous placez le fichier `robots.txt` à la racine du site, il est possibl
 
 Les robots d’indexation utilisent les plans de site XML pour mieux comprendre la structure des sites web. Bien que le fait de fournir un plan de site ne garantisse pas un meilleur référencement sur les moteurs de recherche, c’est une pratique recommandée. Vous pouvez conserver manuellement un fichier XML sur le serveur web afin qu’il soit utilisé comme plan de site, mais il est conseillé de le générer par programmation, ce qui garantit que, lorsque les auteurs créent du contenu, le plan de site reflète automatiquement leurs modifications.
 
-Pour générer un plan de site par programmation, enregistrez une servlet Sling qui écoute les appels de `sitemap.xml`. La servlet peut ensuite utiliser la ressource fournie par le biais de l’API de servlet pour afficher la page en cours et ses enfants, produisant ainsi le XML. Le fichier XML est alors mis en cache sur le Dispatcher. Cet emplacement doit être référencé dans la propriété sitemap du fichier `robots.txt`. En outre, une règle de vidage personnalisée doit être mise en œuvre pour veiller à vider ce fichier chaque fois qu’une nouvelle page est activée.
+AEM utilise le [module Apache Sling Sitemap](https://github.com/apache/sling-org-apache-sling-sitemap) pour générer des plans de site XML, qui offre un large éventail d’options pour les développeurs et les éditeurs afin de tenir à jour un plan de site XML de sites.
+
+Le module Apache Sling Sitemap fait la distinction entre un plan de site de niveau supérieur et un plan de site imbriqué, tous deux générés pour toute ressource dont la propriété `sling:sitemapRoot` est définie sur `true`. En règle générale, les plans de site sont rendus à l’aide de sélecteurs situés au chemin du plan de site de niveau supérieur de l’arborescence, qui est la ressource qui n’a aucun autre ancêtre racine du plan de site. Cette racine de plan de site de niveau supérieur expose également l’index de plan de site, qui est normalement ce que le propriétaire d’un site doit configurer dans le portail de configuration du moteur de recherche ou ajouter à la `robots.txt` du site.
+
+Prenons l’exemple d’un site qui définit une racine de plan de site de niveau supérieur à `my-page` et une racine de plan de site imbriquée à `my-page/news`, afin de générer un plan de site dédié pour les pages de la sous-arborescence des actualités. Les URL pertinentes résultantes seraient :
+
+* https://www.mydomain.com/my-brand/my-page.sitemap-index.xml
+* https://www.mydomain.com/my-brand/my-page.sitemap.xml
+* https://www.mydomain.com/my-brand/my-page.sitemap.news-sitemap.html
 
 >[!NOTE]
 >
->Vous pouvez enregistrer une servlet Sling pour écouter le sélecteur `sitemap` avec l’extension `xml`. Ainsi, la servlet traite la requête à chaque fois qu’une URL demandée se termine par :
->    `/<path-to>/page.sitemap.xml`
->Vous pouvez alors obtenir la ressource demandée par la requête et générer un plan de site à partir de ce point dans l’arborescence de contenu à l’aide des API JCR.
->L’avantage d’une telle approche se révèle lorsque plusieurs sites sont diffusés à partir d’une même instance. Une requête `/content/siteA.sitemap.xml` génère un plan de site pour `siteA`, tandis que la requête `/content/siteB.sitemap.xml` génère un plan de site pour `siteB` sans devoir écrire du code supplémentaire.
+> Les sélecteurs `sitemap` et `sitemap-index` peuvent interférer avec les implémentations personnalisées. Si vous ne souhaitez pas utiliser la fonction de produit, configurez votre propre servlet qui diffuse ces sélecteurs avec une valeur `service.ranking` supérieure à 0.
+
+Dans la configuration par défaut, la boîte de dialogue Propriétés de la page permet de marquer une page comme racine du plan du site. Ainsi, comme décrit ci-dessus, générez un plan du site lui-même et ses descendants. Ce comportement est implémenté par des implémentations de l’interface `SitemapGenerator` et peut être étendu en ajoutant d’autres implémentations. Cependant, comme la fréquence de régénération des plans de site XML dépend fortement des workflows et des charges de travail de création de contenu, le produit ne fournit aucune configuration `SitemapScheduler`. Cela permet à la fonctionnalité de souscrire efficacement.
+
+Pour activer la tâche en arrière-plan qui génère les plans de site XML, `SitemapScheduler` doit être configuré. Pour ce faire, créez une configuration OSGI pour le PID `org.apache.sling.sitemap.impl.SitemapScheduler`. L’expression du planificateur `0 0 0 * * ?` peut être utilisée comme point de départ pour régénérer tous les plans de site XML une fois par jour à minuit.
+
+![Plan de site Apache Sling - Planificateur](assets/sling-sitemap-scheduler.png)
+
+La tâche de génération du plan de site peut s’exécuter sur les instances de niveau création et publication. Dans la plupart des cas, il est recommandé d’exécuter la génération sur les instances de niveau publication, car seules des URL canoniques appropriées peuvent être générées (en raison des règles de mappage de ressource Sling généralement présentes uniquement sur les instances de niveau publication). Cependant, il est possible de plug-in d’une implémentation personnalisée du mécanisme d’externalisation utilisé pour générer les URL canoniques en implémentant l’interface `SitemapLinkExternalizer`. Si une implémentation personnalisée est en mesure de générer les URL canoniques d’un plan de site sur les instances de niveau auteur, la balise `SitemapScheduler` peut être configurée pour le mode d’exécution de création et la charge de travail de génération du plan de site XML peut être répartie entre les instances de la grappe de services de création. Dans ce scénario, une attention particulière doit être accordée à la gestion de contenu qui n’a pas encore été publié, qui a été modifié ou qui n’est visible que par un groupe d’utilisateurs restreint.
+
+Outre les points d’extension Apache Sling Sitemap [SitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/SitemapGenerator.html) et [SitemapLinkExternalizer](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/common/SitemapLinkExternalizer.html) décrits ci-dessus, ainsi que le [SitemapExtensionProvider](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/builder/SitemapExtensionProvider.html), l’AEM mise en oeuvre spécifique définit également deux points d’extension :
+
+* Un [SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html) peut être mis en oeuvre pour supprimer des pages des plans de site XML générés par le générateur de plans de site de l’arborescence de page spécifique à AEM Sites.
+* Un [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) ou [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) peut être implémenté pour filtrer les produits ou les catégories des plans de site XML générés par les [frameworks d’intégration de commerce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) générateurs de plans de site spécifiques.
+
+De plus, la fonctionnalité mise en oeuvre pour les plans de site XML peut également être utilisée dans différents cas d’utilisation, par exemple pour ajouter le lien canonique ou des variantes linguistiques à l’en-tête d’une page. Pour plus d’informations, reportez-vous à l’interface [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) .
 
 ### Création de redirections 301 pour les URL héritées {#creating-redirects-for-legacy-urls}
 
@@ -395,3 +414,4 @@ Pour plus d’informations, voir les ressources supplémentaires suivantes :
 * [https://www.internetmarketingninjas.com/blog/search-engine-optimization/301-redirects/](https://www.internetmarketingninjas.com/blog/search-engine-optimization/301-redirects/)
 * [https://github.com/Adobe-Marketing-Cloud/tools/tree/master/dispatcher/redirectTester](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/dispatcher/redirectTester)
 * [https://adobe-consulting-services.github.io/](https://adobe-consulting-services.github.io/)
+* [https://github.com/apache/sling-org-apache-sling-sitemap](https://github.com/apache/sling-org-apache-sling-sitemap)
