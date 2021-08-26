@@ -3,9 +3,9 @@ title: Prise en charge des miniatures pour les vidéos dans Screens en tant que 
 description: Cette page décrit comment ajouter la prise en charge des miniatures pour les vidéos dans Screens en tant que Cloud Service.
 hide: true
 index: false
-source-git-commit: ea96e811c0164e3cc7d323e734c1617d3c0e9308
+source-git-commit: bd1efae4453e2c3a73eb962c4e6b4b4b9ba064d2
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -45,11 +45,19 @@ Suivez les étapes ci-dessous pour utiliser des miniatures dans les vidéos :
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
-1. Modifiez les propriétés du composant vidéo.
+1. Sélectionnez la vidéo et cliquez sur l’icône *clé à molette* pour ouvrir les propriétés vidéo.
 
-1. Faites glisser une image du sélecteur de ressources vers la zone de dépôt Miniatures .
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
-1. Prévisualisez le canal.
+1. La boîte de dialogue **Vidéo** s’ouvre, dans laquelle vous pouvez afficher la zone de dépôt **Miniature**.
+
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+
+1. Faites glisser une image du sélecteur de ressources vers la zone de dépôt **Miniature** et cliquez sur **Terminé**.
+
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
+
+1. Cliquez sur **Aperçu**.
 
 1. Si une vidéo est définie sur le composant, elle est lue. Si ce n’est pas le cas, et que la miniature est définie, la miniature est lue. Sinon, le composant est considéré comme non configuré et sera ignoré.
 
