@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: a3e884347e87358d7e0ab8d0fe9d416f15b184ab
+source-git-commit: 03151f72a86e708a0a91c141d5901a9fb7a311a5
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 27%
+source-wordcount: '1192'
+ht-degree: 30%
 
 ---
 
@@ -62,19 +62,32 @@ Regardez la vidéo [Aperçu de la version d’août 2021](https://video.tv.adobe
 
 ### Nouveautés de [!DNL Forms] {#what-is-new-forms}
 
-* Le service Automated forms conversion peut [convertir les PDF forms en italien et portugais](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=fr#language-specific-meta-model) en Forms adaptatif.
+<!-- * Automated Forms Conversion service can [convert PDF Forms in Italian and Portuguese language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) to Adaptive Forms. -->
+
+* AEM projet Archetype pour Forms as a Cloud Service comprend désormais [4 nouveaux thèmes et modèles de données de formulaire pour Microsoft Dynamics et Salesforce.com](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment).
 
 * **Document d’enregistrement** basé sur Acrobat : AEM Forms as a Cloud Service prend en charge l’utilisation d’ [Adobe Acrobat Form PDF (Acrobat PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=fr)  comme modèle de document d’enregistrement en plus des modèles de formulaire basés sur XFA.
 
 * **Connecteur de magasin de données Microsoft Azure** : vous pouvez désormais [connecter le modèle de données de formulaire au stockage Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=fr). Il vous permet de récupérer et de stocker des données de formulaire adaptatif dans le stockage Microsoft Azure en tant qu’objet BLOB.
 
+### Fonction bêta de [!DNL Forms] {#aug-what-is-new-forms-prerelease}
+
+* **Connecteur de stockage unifié :** le connecteur de stockage unifié vous permet de connecter vos sources de données à un workflow AEM ou à un formulaire adaptatif sans conserver de données dans le stockage AEM Forms Cloud Service. Il vous permet de traiter en toute sécurité les informations d’identification personnelles et de stocker les informations directement dans l’entrepôt de données Azure.
+
+* **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API Communications](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=fr) vous permet de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode synchrone. Les API permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
+   * Générer des documents en complétant des fichiers de modèle avec des données XML.
+   * Générer des formulaires dans divers formats, y compris les flux d’impression PDF non interactifs.
+   * Générer des fichiers PDF d’impression à partir d’un formulaire XFA au format PDF et d’un formulaire Adobe Acrobat.
+
+Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au programme bêta.
+
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Forms] {#prerelease-features-forms}
 
-* **Utilisation des rôles Adobe Sign dans un formulaire** adaptatif : Les niveaux de service d’entreprise et d’entreprise d’Adobe Sign ont la possibilité d’étendre les rôles des destinataires du contrat, au-delà du simple signataire, afin de mieux répondre aux exigences de leur workflow. Vous pouvez maintenant permettre à chaque destinataire d’accord de configurer son rôle dans un formulaire adaptatif, avec le signataire comme rôle par défaut.
+* **Utilisation des rôles Adobe Sign dans un formulaire** adaptatif : Les niveaux de service d’entreprise et d’entreprise d’Adobe Sign ont la possibilité d’étendre les rôles des destinataires du contrat, au-delà du simple signataire, afin de mieux répondre aux exigences de leur workflow. Vous pouvez désormais [permettre à chaque destinataire d’accord de configurer son rôle dans un formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html?#addsignerstoanadaptiveform), avec le rôle par défaut Signer.
 
 * **Analytics pour le Forms** adaptatif : Vous pouvez désormais capturer et suivre le comportement de l’utilisateur final via Adobe Analytics pour Forms adaptatif afin de rassembler les informations sur l’utilisateur final. Il permet de prendre des décisions éclairées basées sur les données afin d’améliorer l’expérience de l’utilisateur final.
 
-* **Connectez facilement AEM Forms à Microsoft Dynamics et Salesforce.com** : Le service fournit des modèles de données et de configuration de source de données prêts à l’emploi pour Microsoft Dynamics et Salesforce.com, ce qui permet aux développeurs de configurer plus rapidement et plus facilement Microsoft Dynamics et Salesforce.com comme sources de données pour un formulaire adaptatif.
+* **Connectez facilement AEM Forms à Microsoft Dynamics et Salesforce.com** : Le service fournit des modèles de données et de configuration de source de données prêts à l’emploi pour Microsoft Dynamics et Salesforce.com, ce qui rend  [plus rapide et plus facile pour les développeurs de configurer Microsoft Dynamics et Salesforce.com comme sources de données pour un formulaire](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html) adaptatif.
 
 ## Module complémentaire CIF {#cloud-services-cif}
 
