@@ -1,9 +1,9 @@
 ---
 title: Installation et configuration des lecteurs dans Screens en tant que Cloud Service
 description: Cette page décrit comment installer et configurer des lecteurs dans Screens en tant que Cloud Service.
-source-git-commit: 1fc06f987bb40d940bbec9c37e6d58c2c1ca9266
+source-git-commit: d5970e27773433c9e6e7175a103768ae591e87ba
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '558'
 ht-degree: 1%
 
 ---
@@ -49,11 +49,11 @@ Le lecteur signale différentes mesures de lecture pour chaque `ping` qui corres
 
 La surveillance de base de la lecture dans un lecteur AEM Screens vous permet d’effectuer les opérations suivantes :
 
-* Surveillez à distance si un lecteur lit correctement le contenu
+* Surveillez à distance si un lecteur lit correctement le contenu.
 
-* Améliorer la réactivité des écrans vierges ou des expériences rompues dans le champ
+* Améliorez la réactivité des écrans vierges ou des expériences rompues dans le champ.
 
-* Réduire le risque d’afficher une expérience rompue à l’utilisateur final
+* Réduit le risque d’afficher une expérience rompue à l’utilisateur final.
 
 ### Présentation des propriétés {#understand-properties}
 
@@ -78,11 +78,11 @@ Les propriétés suivantes sont incluses dans chaque `ping` :
 
 Vous trouverez ci-dessous quelques limites à la surveillance de lecture de base :
 
-* Comme le lecteur signale son propre état de lecture au serveur, il a besoin d’une principale connexion.
+* Le lecteur signale son propre état de lecture au serveur ; il nécessite donc une connexion principale.
 
 * La propriété `isContentRendering` qui vérifie le GPU nécessite actuellement de nombreuses ressources pour être activée par défaut et nécessite une inclusion explicite dans les préférences du lecteur. Il est recommandé de ne pas l’utiliser conjointement avec les vidéos.
 
-* Pris en charge pour les canaux de séquence.
+* Cette fonctionnalité est prise en charge pour les canaux de séquence.
 
 ## Et après ? {#whats-next}
 
