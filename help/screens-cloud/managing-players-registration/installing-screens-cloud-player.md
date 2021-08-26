@@ -1,9 +1,9 @@
 ---
 title: Installation et configuration des lecteurs dans Screens en tant que Cloud Service
 description: Cette page décrit comment installer et configurer des lecteurs dans Screens en tant que Cloud Service.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 6afb71803ae24bed2d5d5662a7cdd4af5637e329
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '490'
 ht-degree: 2%
 
 ---
@@ -42,6 +42,38 @@ Pour mettre à jour votre lecteur, procédez comme suit :
    ![image](/help/screens-cloud/assets/player/installplayer-1.png)
 
 1. Cliquez sur **Confirmer** qui s’affiche lorsque vous passez en mode cloud, annule l’enregistrement du lecteur.
+
+## Surveillance de lecture de base {#playback-monitoring}
+
+Le lecteur signale différentes mesures de lecture pour chaque `ping` qui correspond par défaut à 30 secondes. Selon les mesures, vous pouvez détecter différents cas de périphérie, tels que des problèmes de blocage, d’écran vide et de planification. Vous pouvez ainsi comprendre et résoudre les problèmes liés à l’appareil et accélérer ainsi les enquêtes et les mesures correctives.
+
+La surveillance de base de la lecture dans un lecteur AEM Screens vous permet d’effectuer les opérations suivantes :
+
+* Surveillez à distance si un lecteur lit correctement le contenu
+
+* Améliorer la réactivité des écrans vierges ou des expériences rompues dans le champ
+
+* Réduire le risque d’afficher une expérience rompue à l’utilisateur final
+
+### Présentation des propriétés {#understand-properties}
+
+Les propriétés suivantes sont incluses dans chaque `ping` :
+
+| Propriété | Description |
+|---|---|
+| id {string} | l’identifiant du lecteur |
+| activeChannel {string} | chemin du canal en cours de lecture ou valeur nulle si rien n’est planifié |
+| activeElements {string} | chaîne séparée par des virgules, éléments actuellement visibles dans tous les canaux de séquence de lecture (plusieurs dans le cas d’une disposition multizone) |
+| isDefaultContent {boolean} | true si le canal de lecture est considéré comme un canal par défaut ou de secours (c’est-à-dire qu’il a la priorité 1 et aucun planning) |
+| hasContentChanged {boolean} | true si le contenu a changé au cours des 5 dernières minutes, false dans le cas contraire |
+| lastContentChange {string} | date et heure de la dernière modification du contenu |
+
+>[!NOTE]
+>Vous pouvez éventuellement activer une propriété plus avancée à partir des préférences du lecteur (activer la surveillance de lecture), à savoir :
+>|Property|Description|
+>|—|—|
+>|isContentRendering {boolean}|true si le GPU peut confirmer qu’il lit du contenu réel (en fonction de l’analyse des pixels)|
+
 
 ## Et après ? {#whats-next}
 
