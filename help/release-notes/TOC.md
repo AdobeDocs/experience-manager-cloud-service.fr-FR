@@ -1,13 +1,13 @@
 ---
-sub-product: Notes de mise à jour d’AEM as a Cloud Service
+sub-product: Release Notes for AEM as a Cloud Service
 user-guide-title: Notes de mise à jour d’AEM as a Cloud Service
 breadcrumb-title: Notes de mise à jour
 user-guide-description: Ce guide fournit des informations importantes sur la dernière version d’Experience Manager as a Cloud Service, notamment sur les nouvelles fonctionnalités, celles obsolètes et supprimées, ainsi que les problèmes connus.
-feature: Informations sur la version
+feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9ef460d470ffc17966a2336fe46b60fd9d9759e7
+source-git-commit: 5ad46fe8478ac22d7a263ead24ea6dc13b158c67
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '121'
 ht-degree: 96%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 96%
 + Notes de mise à jour {#release-notes}
    + [Notes de mise à jour de la version actuelle](/help/release-notes/release-notes-cloud/release-notes-current.md)
    + 2021 {#2021}
+      + [Notes de mise à jour de la version 2021.7.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-7-0.md)
       + [Notes de mise à jour de la version 2021.6.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-6-0.md)
       + [Notes de mise à jour de la version 2021.5.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-5-0.md)
       + [Notes de mise à jour de la version 2021.4.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-4-0.md)

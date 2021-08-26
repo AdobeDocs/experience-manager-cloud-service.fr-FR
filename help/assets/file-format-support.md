@@ -2,12 +2,12 @@
 title: Formats de fichiers et types MIME pris en charge
 description: Formats de fichier et types MIME pris en charge par [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
 contentOwner: AG
-feature: Gestion des ressources,Rendus
+feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 0c2c69423a042f6ef5b0dd0a2bdbcacc7103ddae
+source-git-commit: a3e884347e87358d7e0ab8d0fe9d416f15b184ab
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '792'
 ht-degree: 100%
 
 ---
@@ -159,7 +159,7 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 | PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PS | - | - | ✓ | - | - |
 | RTF | - | ✓ | - | ✓ | ✓ |
-| TXT | - | ✓ | - | ✓ | ✓ |
+| TXT | ✓ | ✓ | - | ✓ | ✓ |
 | XLS | - | - | - | ✓ | ✓ |
 | XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | - | ✓ | - | - | - |
@@ -228,5 +228,5 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 >[!MORELIKETHIS]
 >
 >* [Traitement des ressources à l’aide des microservices de ressources](asset-microservices-overview.md)
-* [Formats de fichiers pris en charge pour le balisage intelligent des ressources textuelles](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+>* [Formats de fichiers pris en hcarge pour le balisage intelligent des ressources textuelles](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
