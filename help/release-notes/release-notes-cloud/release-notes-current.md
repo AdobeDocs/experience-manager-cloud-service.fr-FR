@@ -3,7 +3,7 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 6277325b80f1cdb8735f88b5ad856e405572bffe
+source-git-commit: 2451a29b71b113f28ffc00737ed825381dd5ad07
 workflow-type: tm+mt
 source-wordcount: '1367'
 ht-degree: 27%
@@ -91,7 +91,7 @@ Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au progra
 
 * **Connectez facilement AEM Forms à Microsoft Dynamics et Salesforce.com** : Le service fournit des modèles de données et de configuration de source de données prêts à l’emploi pour Microsoft Dynamics et Salesforce.com, ce qui rend  [plus rapide et plus facile pour les développeurs de configurer Microsoft Dynamics et Salesforce.com comme sources de données pour un formulaire](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html) adaptatif.
 
-## [!DNL Screens] as a  [!DNL Cloud Service] {#screens}
+## [!DNL Experience Manager Screens] as a  [!DNL Cloud Service] {#screens}
 
 ### Nouveautés {#what-is-new-screens}
 
