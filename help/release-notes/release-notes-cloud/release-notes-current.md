@@ -3,9 +3,9 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 03151f72a86e708a0a91c141d5901a9fb7a311a5
+source-git-commit: 8dae2fd4b830cfe77b1f8c65a24e6f0fb7456dc8
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1197'
 ht-degree: 30%
 
 ---
@@ -64,7 +64,7 @@ Regardez la vidéo [Aperçu de la version d’août 2021](https://video.tv.adobe
 
 <!-- * Automated Forms Conversion service can [convert PDF Forms in Italian and Portuguese language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) to Adaptive Forms. -->
 
-* AEM projet Archetype pour Forms as a Cloud Service comprend désormais [4 nouveaux thèmes et modèles de données de formulaire pour Microsoft Dynamics et Salesforce.com](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment).
+* AEM projet Archetype pour Forms as a Cloud Service comprend désormais le thème [Canvas 3.0 et les modèles de données de formulaire pour Microsoft Dynamics et Salesforce.com](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment).
 
 * **Document d’enregistrement** basé sur Acrobat : AEM Forms as a Cloud Service prend en charge l’utilisation d’ [Adobe Acrobat Form PDF (Acrobat PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=fr)  comme modèle de document d’enregistrement en plus des modèles de formulaire basés sur XFA.
 
@@ -72,7 +72,9 @@ Regardez la vidéo [Aperçu de la version d’août 2021](https://video.tv.adobe
 
 ### Fonction bêta de [!DNL Forms] {#aug-what-is-new-forms-prerelease}
 
-* **Connecteur de stockage unifié :** le connecteur de stockage unifié vous permet de connecter vos sources de données à un workflow AEM ou à un formulaire adaptatif sans conserver de données dans le stockage AEM Forms Cloud Service. Il vous permet de traiter en toute sécurité les informations d’identification personnelles et de stocker les informations directement dans l’entrepôt de données Azure.
+* **Unified Storage Connector :** utilisez Unified Storage Connector pour externaliser les données en cours de traitement dans les référentiels gérés par le client. Par exemple, vous pouvez
+   * Activez la fonctionnalité d’enregistrement et de reprise de Forms Portal et stockez les brouillons de formulaires adaptatifs dans un référentiel de données géré par le client.
+   * Stocker les données AEM processus en cours (AEM données des variables de processus) qui contiennent des données personnelles sensibles (SPD) dans un référentiel géré par le client.
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API Communications](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=fr) vous permet de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode synchrone. Les API permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
    * Générer des documents en complétant des fichiers de modèle avec des données XML.
