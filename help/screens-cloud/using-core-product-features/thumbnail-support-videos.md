@@ -1,11 +1,10 @@
 ---
 title: Prise en charge des miniatures pour les vidéos dans Screens en tant que Cloud Service
 description: Cette page décrit comment ajouter la prise en charge des miniatures pour les vidéos dans Screens en tant que Cloud Service.
-hide: true
-index: false
-source-git-commit: bd1efae4453e2c3a73eb962c4e6b4b4b9ba064d2
+index: true
+source-git-commit: cd06e409ec085fcc77fc7bb466169de3a14dba40
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
@@ -63,14 +62,12 @@ Suivez les étapes ci-dessous pour utiliser des miniatures dans les vidéos :
 
 ## Cas d’utilisation pris en charge lors de l’utilisation de miniatures dans des vidéos {#understand-use-case}
 
-Reportez-vous aux cas d’utilisation suivants lors de l’utilisation de miniatures dans des vidéos.
+La miniature dans les vidéos prend en charge les cas d’utilisation suivants :
 
-Un composant vidéo avec :
+* Un composant vidéo sans configuration sera ignoré.
 
-* *aucune* configuration ne sera ignorée.
+* Un composant vidéo dont seule la miniature est définie lit la miniature.
 
-* *seul le* paramètre de miniature lit la miniature.
+* Un composant vidéo avec la vidéo et la miniature est lu.
 
-* *Les paramètres vidéo et miniature* liront la vidéo.
-
-* *la visionneuse vidéo* lit la miniature en cas d’erreur de lecture ou passe simplement à l’élément suivant si la miniature n’est pas configurée.
+* Un composant vidéo avec la visionneuse de vidéos lit la miniature, en cas d’erreur de lecture, ou passe simplement à l’élément suivant si la miniature n’est pas configurée.
