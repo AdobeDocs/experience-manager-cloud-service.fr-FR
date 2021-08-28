@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 2451a29b71b113f28ffc00737ed825381dd5ad07
+source-git-commit: 1ae9a03c76e6ef1e84ac9f3402c1e48b07fdac8c
 workflow-type: tm+mt
-source-wordcount: '1367'
-ht-degree: 27%
+source-wordcount: '1384'
+ht-degree: 26%
 
 ---
 
@@ -99,6 +99,7 @@ Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au progra
 Voir [Surveillance de lecture de base](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) pour plus d’informations.
 
 * Prise en charge des miniatures pour les vidéos dans Screens en tant que Cloud Service. Un auteur de contenu peut définir une miniature pour les vidéos afin que l’image puisse être utilisée comme espace réservé et tester correctement la lecture et le ciblage du contenu, pendant que la vidéo réelle est en cours de finalisation par l’équipe appropriée. L’image peut également être utilisée, au cas où la lecture de la vidéo échouerait.
+Pour plus d’informations, voir [Prise en charge des miniatures pour les vidéos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html?lang=en) .
 
 ### Correctifs {#bug-fixes-screens}
 
