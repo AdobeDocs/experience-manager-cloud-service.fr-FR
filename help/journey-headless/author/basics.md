@@ -4,9 +4,9 @@ description: Découvrez les concepts et les mécanismes de création de contenu 
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
+source-git-commit: d925333421b4a9ec1e2a7c553b43e042bb1e6fbe
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1693'
 ht-degree: 6%
 
 ---
@@ -73,7 +73,7 @@ Dans la console, vous pouvez sélectionner des dossiers pour accéder à votre f
 
 La console **Ressources** contient des **barres d’outils d’action** dédiées et des **actions rapides** que vous pouvez utiliser après avoir sélectionné une ressource (par exemple, un dossier ou un fragment de contenu).
 
-Les actions rapides sont disponibles pour une seule ressource :
+Les actions rapides sont disponibles pour une seule ressource. Voir **Bâle** dans l’exemple ci-dessous :
 
 ![Actions rapides](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
 
@@ -101,7 +101,7 @@ Nous devrons passer en revue les éléments du début à la fin, mais il se peut
 
 #### Création d’un dossier {#creating-folder}
 
-Pour ce faire, créez une série de dossiers dans la section **Fichiers** de la console Ressources. Sélectionnez l’option **Créer** (en haut à droite), suivie de **Créer un dossier** :
+Pour ce faire, créez une série de dossiers dans la section **Fichiers** de la console Ressources. Sélectionnez l’option **Créer** (en haut à droite), suivie de **Dossier** :
 
 ![Option Créer un dossier](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -113,7 +113,7 @@ Une boîte de dialogue s’ouvre, dans laquelle vous pouvez saisir les détails,
 
 Cette section est légèrement plus avancée. Vous n’en avez pas vraiment besoin si vous commencez à essayer des choses, mais c’est *très* utile lorsque vous avez beaucoup de fragments. Il est donc bon de le savoir - même si vous ne l&#39;utilisez pas encore tout à fait.
 
-Votre architecte de contenu aura créé tous les modèles de fragment de contenu requis pour votre projet actuel, ainsi que peut-être d’autres projets également. Pour simplifier les choses pour vos auteurs, vous pouvez limiter la liste des modèles disponibles pour un dossier spécifique.
+Votre architecte de contenu aura créé tous les modèles de fragment de contenu requis pour votre projet actuel, ainsi que peut-être d’autres projets également. Pour vous aider à simplifier les choses, ainsi que pour les autres auteurs, vous pouvez limiter la liste des modèles disponibles pour un dossier spécifique.
 
 Après avoir créé votre dossier, vous pouvez ouvrir le dossier **Propriétés**. Il existe ici différents onglets avec des informations et des détails de configuration sur le dossier. En particulier pour les fragments de contenu, vous pouvez utiliser l’onglet **Stratégies** pour définir des chemins et/ou balises spécifiques pour ce dossier. Cela limite les modèles de fragment de contenu disponibles dans le dossier, car cela signifie que les modèles de fragment de contenu doivent satisfaire à ces exigences avant de pouvoir être utilisés pour générer des fragments dans ce dossier.
 
@@ -147,7 +147,7 @@ Cette fois, un assistant s’ouvre. La première étape consiste à sélectionne
 
 ![Créer un fragment de contenu - sélectionnez Modèle](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
 
-Après avoir continué avec **Suivant**, vous pouvez fournir les détails de votre fragment :
+Après avoir continué avec **Suivant**, vous pouvez fournir les détails (**De base** et **Avancé**) pour votre fragment :
 
 ![Créer un fragment de contenu - indiquez le nom](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
