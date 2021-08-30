@@ -5,15 +5,15 @@ breadcrumb-title: Guide d’intégration
 user-guide-description: Ce guide résume la procédure à suivre pour commencer à utiliser Experience Manager as a Cloud Service, avec les informations d’accès et des informations importantes sur la protection des données.
 feature: Deploying
 role: Admin, User, Developer
-source-git-commit: cef35b897c85040989150b1da1f868c1d7a10716
+source-git-commit: e4d8ba9975ef612d5ca346888914b19dba56db3b
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 79%
+source-wordcount: '111'
+ht-degree: 70%
 
 ---
 
 
-# Intégration {#onboarding}
+# Commencer votre expérience d’intégration {#onboarding-experience}
 
 + [Intégration à AEM as a Cloud Service](/help/onboarding/home.md)
 + Découvrez les concepts d’intégration {#onboarding-concepts}
@@ -24,6 +24,7 @@ ht-degree: 79%
    + [Présentation de Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
    + [AEM en tant qu’équipe de Cloud Service et profils de produits](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
    + [Prise en charge des Adobes](/help/onboarding/learn-concepts/onboarding-help-resources.md)
++ [Parcours d’intégration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html)
 + Prise en main d’AEM as a Cloud Service {#what-is-required}
    + [Obtenez votre Adobe ID](what-is-required/get-your-adobe-id.md)
    + [Rôles de Cloud Manager](what-is-required/user-roles-permissions.md)
