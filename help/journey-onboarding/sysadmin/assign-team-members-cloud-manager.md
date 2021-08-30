@@ -1,10 +1,9 @@
 ---
 title: 'Affectation de membres d’équipe à des profils de produit Cloud Manager '
 description: Consultez cette page pour savoir comment affecter des membres de l’équipe à des profils de produit Cloud Manager
-hide: true
 index: false
 role: Admin, User, Developer
-source-git-commit: e58ee2d3669cfce25b354bd78047119c4132c64e
+source-git-commit: a9eacc44c6be9101fae131c6fb6b95612efeac53
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 3%

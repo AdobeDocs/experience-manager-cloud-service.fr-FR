@@ -1,10 +1,9 @@
 ---
 title: 'Affecter des membres de l’équipe à AEM en tant que profils de produit Cloud Service '
 description: Consultez cette page pour savoir comment affecter des membres de l’équipe à AEM en tant que profils de produit Cloud Service
-hide: true
 index: false
 role: Admin, User, Developer
-source-git-commit: c7f8ef3b1bb120d393118f41a21c55b52bf023e9
+source-git-commit: a9eacc44c6be9101fae131c6fb6b95612efeac53
 workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 2%
