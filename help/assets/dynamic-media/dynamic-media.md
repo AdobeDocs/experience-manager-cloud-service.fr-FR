@@ -3,10 +3,10 @@ title: Utilisation de Dynamic Media
 description: Découvrez comment utiliser Dynamic Media pour diffuser des ressources pour une utilisation sur le web, les appareils mobiles et les réseaux sociaux.
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: 6933f053e11320d8201922723879983084c52209
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 97%
+source-wordcount: '398'
+ht-degree: 88%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 97%
 
 [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) fournit des ressources visuelles de marchandisage et de marketing à la demande, automatiquement dimensionnées pour une utilisation sur le web, les appareils mobiles et les réseaux sociaux. À partir d’un ensemble de ressources de sources originales, Dynamic Media génère et diffuse en temps réel plusieurs variantes d’un même contenu enrichi par le biais de son réseau mondial et évolutif, aux performances optimisées.
 
-Dynamic Media offre des expériences de visualisation interactives, notamment des fonctions vidéo, de zoom et de rotation à 360°. Cette fonctionnalité intègre de manière unique les processus de la solution de gestion des ressources numériques Adobe Experience Manager (Assets), afin de simplifier et rationaliser le processus de gestion des campagnes numériques.
+Dynamic Media offre des expériences d’affichage interactif, notamment le zoom, la rotation 360° et la vidéo. Dynamic Media intègre de manière unique les workflows de la solution Adobe Experience Manager Digital Asset Management (Assets) afin de simplifier et rationaliser le processus de gestion des campagnes numériques.
 
 <!-- >[!NOTE]
 >

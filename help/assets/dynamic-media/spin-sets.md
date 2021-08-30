@@ -1,13 +1,13 @@
 ---
 title: Visionneuses à 360°
 description: Découvrez comment utiliser des visionneuses à 360° dans Dynamic Media.
-feature: Visionneuses à 360°
+feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 78%
+source-wordcount: '1815'
+ht-degree: 77%
 
 ---
 
@@ -103,7 +103,7 @@ Cette section décrit comment créer des visionneuses à 360°.
 
 >[!NOTE]
 >
->L’ordre dans lequel les images apparaissent dans une visionneuse à 360° a une importance. Veillez à les mettre dans le bon ordre afin que la rotation soit une vue à 360° parfaite.
+>L’ordre dans lequel les images apparaissent dans une visionneuse à 360° a une importance. Veillez à les classer de sorte que la rotation soit une vue lisse de 360°.
 
 **Pour créer des visionneuses à 360° :**
 

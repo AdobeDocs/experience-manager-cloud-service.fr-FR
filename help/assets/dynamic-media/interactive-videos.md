@@ -1,12 +1,12 @@
 ---
 title: Vidéos interactives
 description: Découvrez comment utiliser des vidéos interactives et Shoppable dans Dynamic Media.
-feature: Vidéos interactives
+feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '5941'
+source-wordcount: '5938'
 ht-degree: 73%
 
 ---
@@ -25,7 +25,7 @@ Pour voir une vidéo interactive Shoppable en action, sélectionnez [Démonstrat
 
 * Pendant la lecture, lorsque les produits sont utilisés dans la vidéo, le produit identique s’affiche à droite sous forme de miniature.
 
-* Pour suspendre la vidéo et ouvrir l’aperçu rapide du produit, sélectionnez la miniature. Par exemple, sélectionnez l’image miniature de KitchenAid dans la vidéo pour afficher le mixeur à 360° ou effectuez un zoom avant pour afficher les détails du mixeur.
+* Pour suspendre la vidéo et ouvrir l’aperçu rapide du produit, sélectionnez la miniature. Par exemple, sélectionnez l’image miniature de KitchenAid dans la vidéo pour afficher une visionneuse à 360° du mixeur ou effectuez un zoom avant pour afficher les détails du mixeur.
 
 Voir aussi [Utilisation de la vidéo interactive avec Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=fr#dynamic-media)
 
@@ -99,8 +99,7 @@ Si vous utilisez un gestionnaire de contenu web (WCM) tiers, vous devez intégre
 >* Votre mise en œuvre d’Experience Manager *n’utilise pas* de framework d’intégration de commerce électronique pour extraire des données de produit dans Experience Manager à partir d’une solution de commerce électronique, comme IBM® WebSphere® Commerce, Elastic Path, SAP Hybris ou Intershop. <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 
 >
->
-Si votre mise en œuvre d’Experience Manager utilise l’e-commerce, vous pouvez ignorer cette tâche et passer à la tâche suivante.
+>Si votre mise en œuvre d’Experience Manager utilise l’e-commerce, vous pouvez ignorer cette tâche et passer à la tâche suivante.
 
 Commencez par identifier les variables dynamiques utilisées par votre mise en œuvre existante d’aperçu rapide pour faire correspondre les miniatures de produits à l’aperçu rapide des produits correspondants lors du processus de création de vidéo interactive.
 
