@@ -3,9 +3,9 @@ sub-product: Onboarding Journey
 user-guide-title: Parcours d’intégration
 breadcrumb-title: Parcours d’intégration
 user-guide-description: Commencez ici pour obtenir un parcours guidé conçu pour un personnage Administrateur système, exposant les exigences, les étapes et l’approche. Le parcours définit des personnes supplémentaires avec lesquelles l’administrateur système doit interagir pour qu’un projet soit réussi, mais le point de vue du parcours est celui d’un administrateur.
-feature: Developer Tools
+feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: e58ee2d3669cfce25b354bd78047119c4132c64e
+source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%
