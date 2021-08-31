@@ -2,10 +2,10 @@
 title: Modification des propriétés de page
 description: Définissez les propriétés requises pour une page
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
+source-git-commit: 34247d8de3dc1a243eaac152b1d2036f9c237303
 workflow-type: tm+mt
-source-wordcount: '1930'
-ht-degree: 98%
+source-wordcount: '1955'
+ht-degree: 96%
 
 ---
 
@@ -55,11 +55,14 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Heure d’activation/de désactivation**
 
-   * **Heure d’activation** – Date et heure auxquelles la page publiée sera rendue visible (rendue) dans l’environnement de publication. La page doit être publiée, soit manuellement, soit par réplication automatique préconfigurée.
+   >[!NOTE]
+   >
+   > Voir [Heures d’activation et de désactivation – Configuration du déclenchement](/help/operations/replication.md#on-and-off-times-trigger-configuration) pour en savoir plus sur la configuration de la réplication automatique associée.
 
-      >[!NOTE]
-      >
-      > Voir [Heures d’activation et de désactivation – Configuration du déclenchement](/help/operations/replication.md#on-and-off-times-trigger-configuration) pour en savoir plus sur la configuration de la réplication automatique associée.
+   >[!NOTE]
+   >Si **Heure d’activation** ou **Heure de désactivation** se trouve dans le passé et que la réplication automatique est configurée, l’action appropriée est déclenchée immédiatement.
+
+   * **Heure d’activation** – Date et heure auxquelles la page publiée sera rendue visible (rendue) dans l’environnement de publication. La page doit être publiée, soit manuellement, soit par réplication automatique préconfigurée.
 
       * Si elle a déjà été [publiée (manuellement)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md), cette page reste inactive (masquée) jusqu’à son rendu au moment spécifié.
       * Si elle n’est pas publiée et configurée pour la réplication automatique, la page est automatiquement publiée, puis rendue au moment spécifié.
@@ -87,8 +90,6 @@ Les propriétés sont réparties sur plusieurs onglets.
       * Appuyez ou cliquez de nouveau pour ajouter plusieurs éléments.
       * Appuyez ou cliquez sur l’icône **Supprimer** pour supprimer l’URL Vanity.
    * **Rediriger l’URL Vanity** – Indique si vous souhaitez que la page utilise l’URL Vanity.
-
-
 
 
 ### Avancé {#advanced}
