@@ -4,7 +4,7 @@ description: Consultez cette page pour découvrir comment commencer à utiliser 
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: e7cdb26b588c1dc8a8cd9634ac45927c3cee10c6
+source-git-commit: 533e6cb780f908cfa4a30831bab7b80174872f24
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 1%
@@ -35,7 +35,7 @@ Pour accéder à Admin Console et passer en revue votre rôle d’administrateur
 >[!NOTE]
 >Pour réussir les étapes suivantes, vous devez être administrateur système.
 
-1. Cliquez sur **Commencer** dans l’e-mail de bienvenue, comme illustré dans la figure ci-dessous, pour accéder au Admin Console ou accéder directement au Admin Console à partir de [ici](https://adminconsole.adobe.com).
+1. Cliquez sur **Commencer** à partir de votre e-mail de bienvenue, comme illustré dans la figure ci-dessous, pour accéder à Admin Console ou directement à Admin Console à partir de [ici](https://adminconsole.adobe.com).
 
    >[!NOTE]
    >En tant qu’administrateur système, vous recevrez plusieurs emails. Recherchez l’e-mail de bienvenue qui vous fournit les informations sur le nom de l’organisation auquel vous avez accès et cliquez sur **Commencer**. Si vous ne trouvez pas l’adresse électronique, accédez directement à [Admin Console](https://adminconsole.adobe.com/).
