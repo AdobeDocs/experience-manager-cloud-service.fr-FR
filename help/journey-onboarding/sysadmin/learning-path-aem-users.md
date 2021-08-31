@@ -4,9 +4,9 @@ description: Suivez cette page pour découvrir les étapes suivantes après l’
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
+source-git-commit: 1b594017570cb2d8e144cbdf8ea56acdf8256a6d
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '381'
 ht-degree: 4%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 4%
 
 Ce document permet à votre AEM en tant qu’auteur de contenu Cloud Service d’accéder à Adobe Experience Manager (AEM).
 
-Après lecture, vous devez comprendre :
+Après lecture, vous devez comprendre comment :
 
-* Comment accéder à Cloud Manager.
-* Accès à AEM en tant qu’instance de Cloud Service.
-* Créez du contenu pour AEM en tant que Cloud Service.
+* Accès à Cloud Manager
+* Accès à AEM en tant qu’instance de Cloud Service
+* Création de contenu pour AEM en tant que Cloud Service
 
 ## Présentation  {#introduction}
 
