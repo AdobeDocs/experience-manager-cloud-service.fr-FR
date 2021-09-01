@@ -1,23 +1,29 @@
 ---
 title: Guide de prise en main du mode découplé
 description: Grâce à ce guide de démarrage rapide, découvrez les fondamentaux des puissantes fonctionnalités en mode découplé comme les modèles de contenu, les fragments de contenu et l’API GraphQL.
-source-git-commit: 8dc9bf522a9b1c750ae8c92659cc83b444cb3c94
-workflow-type: ht
-source-wordcount: '257'
-ht-degree: 100%
+exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
+source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 75%
 
 ---
 
-
 # Guide de prise en main du mode découplé {#introduction}
 
-Les guides de prise en main du découplage proposent un chemin d’accès simple pour la création, la gestion et la diffusion d’expériences avec AEM as a Cloud Service en cinq étapes. Chaque guide s’appuie sur le précédent ; il est donc recommandé de les étudier en détail et dans l’ordre.
+Les Guides de prise en main sans tête présentent un chemin simple pour créer, gérer et diffuser des expériences à l’aide d’AEM en tant que Cloud Service en cinq étapes pour les utilisateurs déjà familiarisés avec AEM et la technologie sans tête. Chaque guide s’appuie sur le précédent ; il est donc recommandé de les étudier en détail et dans l’ordre.
 
 1. [Création d’une configuration](create-configuration.md)
 1. [Création d’un modèle de fragment de contenu](create-content-model.md)
 1. [Création d’un dossier Ressources](create-assets-folder.md)
 1. [Création d’un fragment de contenu](create-content-fragment.md)
 1. [Accès aux fragments de contenu et leur diffusion](create-api-request.md)
+
+>[!TIP]
+>
+>Ce guide de prise en main suppose des connaissances en AEM et en technologies sans tête.
+>
+>Si vous découvrez AEM ou sans interface, reportez-vous à nos [Parcours de documentation sans interface](/help/journey-headless/home.md) pour une introduction de bout en bout à la fois sans interface et comment AEM le prend en charge.
 
 ## Public {#audience}
 

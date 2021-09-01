@@ -1,10 +1,10 @@
 ---
 title: AEM Parcours de traduction sans affichage
 description: Commencez ici pour un parcours guidé en traduisant votre contenu sans tête à l’aide AEM puissants outils de traduction.
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 9de8b0b295808d0f0fa5bc21a74345e2ba2655d4
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 8%
@@ -38,7 +38,7 @@ Si vous connaissez déjà l&#39;AEM, l&#39;absence de tête et la traduction, vo
 
 Les Parcours de documentation sont conçus autour des principes de bonnes pratiques, reposant sur les dernières recherches d’Adobe, l’expérience de mise en oeuvre éprouvée des consultants Adobe, ainsi que les commentaires des projets clients.
 
-Si vous souhaitez savoir comment Adobe recommande de résoudre des cas d’entreprise sans interface avec AEM, AEM Parcours sans interface sont les points de départ.
+Si vous souhaitez savoir comment Adobe recommande de résoudre des cas d’entreprise sans interface avec AEM, [AEM Parcours sans interface](/help/journey-headless/home.md) sont les points de départ.
 
 ## Public {#audience}
 

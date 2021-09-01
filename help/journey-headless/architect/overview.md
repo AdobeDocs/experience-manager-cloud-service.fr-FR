@@ -1,13 +1,13 @@
 ---
 title: AEM Parcours d’architecture de contenu sans affichage
 description: Commencez ici pour un parcours guidé à travers les puissantes fonctionnalités et flexibles d’AEM sans interface, leurs fonctionnalités et comment modéliser votre contenu sur votre premier projet sans interface.
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 1fb3665007439940617c48fd61de7a7c19aee8d2
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 29%
+source-wordcount: '789'
+ht-degree: 25%
 
 ---
 
@@ -27,6 +27,14 @@ Ce guide vous accompagne tout au long des sujets les plus importants afin que vo
 * Comprendre ce qu’est la diffusion de contenu sans interface et ses avantages.
 * Découvrez comment modéliser votre contenu pour AEM fonctionnalités sans interface.
 * Vous pouvez suivre les premières étapes pour modéliser votre contenu pour votre premier projet AEM sans interface.
+
+## AEM Parcours de documentation {#documentation-journeys}
+
+[A Documentation ](/help/journey-documentation/home.md) Journey rassemble de nombreux sujets et fonctionnalités différents et peut-être complexes en fournissant un récit qui aide le lecteur, qui peut être nouveau à AEM, comprendre et résoudre un problème d&#39;entreprise du début à la fin, tout en assumant un minimum de connaissances préalables ou AEM.
+
+Les Parcours de documentation sont conçus autour des principes de bonnes pratiques, reposant sur les dernières recherches d’Adobe, l’expérience de mise en oeuvre éprouvée des consultants Adobe, ainsi que les commentaires des projets clients.
+
+Si vous souhaitez savoir comment Adobe recommande de résoudre des cas d’entreprise sans interface avec AEM, [AEM Parcours sans interface](/help/journey-headless/home.md) sont les points de départ.
 
 ## Public {#audience}
 

@@ -1,10 +1,10 @@
 ---
 title: En savoir plus sur la création de modèles de fragment de contenu dans AEM
 description: Découvrez les concepts et les mécanismes de modélisation du contenu pour votre CMS sans affichage à l’aide de modèles de fragments de contenu.
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
 workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 19%

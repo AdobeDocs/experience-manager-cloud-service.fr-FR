@@ -2,10 +2,10 @@
 title: Parcours de développement découplé AEM
 description: Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: d7d647e2114ed808ad29ed0802d838d257a9df03
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
-source-wordcount: '1252'
-ht-degree: 55%
+source-wordcount: '1201'
+ht-degree: 54%
 
 ---
 
@@ -15,11 +15,9 @@ Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnali
 
 ## Présentation {#introduction}
 
-L’implémentation découplée devient de plus en plus importante pour offrir des expériences à votre public, où qu’il se trouve et quel que soit son canal.
-
 L’implémentation découplée renonce à la gestion des pages et des composants, comme c’est généralement le cas avec les solutions complètes, et se concentre sur la création de fragments de contenu réutilisables et neutres du point de vue du canal, ainsi que sur leur diffusion entre canaux. Il s’agit d’un modèle de développement moderne et dynamique pour l’implémentation d’expériences numériques.
 
-Ce guide vous accompagne tout au long des sujets les plus importants afin que vous puissiez :
+Ce guide vous guide tout au long des rubriques d’implémentation les plus headless d’AEM afin que vous puissiez :
 
 * comprendre pleinement ce qu’est la diffusion de contenu découplé et ses avantages ;
 * comprendre les fonctionnalités découplées AEM et comment elles s’associent pour vous offrir une expérience découplée ;
@@ -31,11 +29,11 @@ Ce guide vous accompagne tout au long des sujets les plus importants afin que vo
 
 Les Parcours de documentation sont conçus autour des principes de bonnes pratiques, reposant sur les dernières recherches d’Adobe, l’expérience de mise en oeuvre éprouvée des consultants Adobe, ainsi que les commentaires des projets clients.
 
-Si vous souhaitez savoir comment Adobe recommande de résoudre des cas d’entreprise sans interface avec AEM, AEM Parcours sans interface sont les points de départ.
+Si vous souhaitez savoir comment Adobe recommande de résoudre des cas d’entreprise sans interface avec AEM, [AEM Parcours sans interface](/help/journey-headless/home.md) sont les points de départ.
 
 >[!TIP]
 >
-> Si vous préférez **apprendre en faisant** et que vous êtes féru de technologie, consultez les tutoriels AEM sans affichage, qui sont organisés par API et structure et sont disponibles dans la [section Ressources supplémentaires](#additional-resources) à la fin de ce document.
+> Si vous préférez **apprendre en faisant** et que vous êtes techniquement intéressé, consultez les tutoriels AEM sans affichage, qui sont organisés par API et structure et sont disponibles dans la [section Ressources supplémentaires](#additional-resources) à la fin de ce document.
 
 ## Public {#audience}
 
@@ -43,13 +41,12 @@ Ce parcours est conçu à l’intention des développeurs et présente les exige
 
 Voici les personnages qui interagissent dans ce parcours.
 
-| Personnage | Description | Rôle dans le Parcours |
+| Personnage | Description | Rôle dans ce Parcours |
 |---|---|---|
-| Développeur | Expérience dans le développement d’applications sans interface utilisateur graphique qui consomment du contenu provenant de différentes sources | Public cible de ce parcours |
+| Développeur (audience cible) | Expérience dans le développement d’applications sans interface utilisateur graphique qui consomment du contenu provenant de différentes sources | Public cible de ce parcours |
 | Auteur de contenu | Crée et gère le contenu diffusé sans interface | Les auteurs de contenu créent du contenu que le développeur diffuse sans interface. |
 | Administrateur | Gère la configuration et la configuration de base d’AEM | Le développeur travaille avec l’administrateur pour apporter les modifications de configuration nécessaires au développement. |
 | Architecte de contenu | Analyse les exigences relatives aux données qui doivent être distribuées sans interface et définit la structure de ces données | Les développeurs travaillent avec l’architecte de contenu pour comprendre la structure des données et les exigences nécessaires pour les diffuser en toute sécurité. |
-| Spécialiste de traduction | Définit le contenu à traduire et gère ces workflows. | Le spécialiste de traduction travaille avec l’architecte de contenu pour définir l’organisation initiale du contenu et peut avoir besoin de travailler avec le développeur pour toute exigence spécifique à la traduction. |
 
 L&#39;information dans ce parcours peut bien sûr être utile à tous les acteurs, mais certaines informations peuvent être superflues à certains rôles. Restez en ligne pour les [prochains parcours couvrant des rôles supplémentaires.](/help/journey-documentation/home.md#journeys)
 

@@ -1,10 +1,10 @@
 ---
 title: AEM Parcours sans affichage
 description: Commencez ici pour un aperçu des parcours guidés disponibles pour comprendre AEM puissantes fonctionnalités sans interface.
-source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 12%
+source-wordcount: '459'
+ht-degree: 14%
 
 ---
 
@@ -30,19 +30,11 @@ Si vous souhaitez savoir comment Adobe recommande de résoudre des cas d’entre
 
 ## Audiences {#audiences}
 
-Les Parcours sans affichage sont conçus pour plusieurs intervenants, exposant les exigences, les étapes et l’approche de la mise en oeuvre de solutions sans interface selon différents points de vue. Un parcours est défini pour une personne spécifique, mais il définit également des personnes supplémentaires avec lesquelles le lecteur interagit.
+Les Parcours sans affichage sont conçus pour des personnalités variées, exposant les exigences, les étapes et l’approche de la mise en oeuvre de solutions sans interface selon différents points de vue.
 
-Voici les personnages qui interagissent dans les Parcours sans affichage.
+Un parcours individuel est défini pour une personne ou une audience spécifique, mais définit également des personnages supplémentaires avec lesquels le lecteur interagit.
 
-| Personnage | Description | Rôle dans le Parcours |
-|---|---|---|
-| Développeur | Expérience dans le développement d’applications sans interface utilisateur graphique qui consomment du contenu provenant de différentes sources | Le développeur travaille avec les auteurs, les administrateurs et les architectes pour comprendre les données et créer une application sans interface qui consomme ces données. |
-| Auteur de contenu | Crée et gère le contenu diffusé sans interface | Les auteurs de contenu créent du contenu que le développeur diffuse sans interface. |
-| Administrateur | Gère la configuration et la configuration de base d’AEM | Le développeur travaille avec l’administrateur pour apporter les modifications de configuration nécessaires au développement. |
-| Architecte de contenu | Analyse les exigences relatives aux données qui doivent être distribuées sans interface et définit la structure de ces données | Les développeurs travaillent avec l’architecte de contenu pour comprendre la structure des données et les exigences nécessaires pour les diffuser en toute sécurité. |
-| Spécialiste de traduction | Définit le contenu à traduire et gère ces workflows. | Le spécialiste de traduction travaille avec l’architecte de contenu pour définir l’organisation initiale du contenu et peut travailler avec le développeur pour toute exigence spécifique à la traduction. |
-
-L&#39;information dans ces parcours peut bien sûr être utile à tous les acteurs, mais certaines informations peuvent être superflues à certains rôles.
+Les informations contenues dans les parcours peuvent bien sûr être utiles à plusieurs acteurs, mais un parcours est ciblé sur un personnage spécifique et certaines informations peuvent être superflues pour certains rôles.
 
 ## Parcours sans affichage {#headless-journeys}
 

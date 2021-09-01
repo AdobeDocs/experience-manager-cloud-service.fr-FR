@@ -1,10 +1,10 @@
 ---
 title: AEM Parcours d’architecture de contenu sans affichage
 description: Cette section présente les fonctionnalités puissantes, flexibles et sans interface d’Adobe Experience Manager en tant que Cloud Service et explique comment modéliser le contenu de votre projet.
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 37%

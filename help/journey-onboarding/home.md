@@ -1,10 +1,10 @@
 ---
 title: Parcours d’intégration
 description: Commencez ici pour une présentation du parcours d’intégration guidé disponible pour comprendre l’expérience d’intégration.
-source-git-commit: 7a8d21e9a5cd4f1767e55aaf68114199a6a0d1cf
+source-git-commit: 9cea7a8a7adf363b6b969a1a427ebf7ff473469b
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 5%
+source-wordcount: '462'
+ht-degree: 4%
 
 ---
 
@@ -24,6 +24,14 @@ Cela signifie :
 * Votre équipe est configurée et a accès aux ressources cloud,
 * Les auteurs AEM auront accès à AEM en tant que Cloud Service,
 * Les développeurs AEM et les responsables de déploiement auront accès à AEM en tant que Cloud Service.
+
+## AEM Parcours de documentation {#documentation-journeys}
+
+[A Documentation ](/help/journey-documentation/home.md) Journey rassemble de nombreux sujets et fonctionnalités différents et peut-être complexes en fournissant un récit qui aide le lecteur, qui peut être nouveau à AEM, comprendre et résoudre un problème d&#39;entreprise du début à la fin, tout en assumant un minimum de connaissances préalables ou AEM.
+
+Les Parcours de documentation sont conçus autour des principes de bonnes pratiques, reposant sur les dernières recherches d’Adobe, l’expérience de mise en oeuvre éprouvée des consultants Adobe, ainsi que les commentaires des projets clients.
+
+Si vous souhaitez savoir comment Adobe recommande de mettre en place une équipe chargée de la création de contenu pour votre AEM en tant qu’application de Cloud Service, voici où commencer.
 
 ## Audiences {#audiences}
 
