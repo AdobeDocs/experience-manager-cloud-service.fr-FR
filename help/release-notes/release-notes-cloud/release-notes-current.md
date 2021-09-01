@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1ae9a03c76e6ef1e84ac9f3402c1e48b07fdac8c
+source-git-commit: f2c0b3cca634b10b1b39532465968619d53b4e65
 workflow-type: tm+mt
-source-wordcount: '1384'
-ht-degree: 26%
+source-wordcount: '1427'
+ht-degree: 25%
 
 ---
 
@@ -95,7 +95,7 @@ Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au progra
 
 ### Nouveautés {#what-is-new-screens}
 
-* En tant qu’auteur de contenu, vous pouvez maintenant définir une miniature pour les vidéos afin que vous puissiez utiliser cette image comme espace réservé et tester correctement la lecture et le ciblage du contenu, pendant que la vidéo réelle est en cours de finalisation par l’équipe appropriée.
+* Screens en tant que Cloud Service prend désormais en charge la surveillance de lecture de base. Le lecteur signale désormais diverses mesures de lecture pour chaque &quot;ping&quot; (30 secondes par défaut). En fonction des mesures, il permet de détecter différents cas de périphérie (expérience bloquée, écran vide, problème de planification, etc.). Cette fonctionnalité permet à l’équipe de surveiller à distance si un lecteur lit correctement du contenu, améliore la réactivité aux écrans vierges ou aux expériences rompues sur le champ et réduit le risque d’afficher une expérience rompue à l’utilisateur final.
 Voir [Surveillance de lecture de base](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) pour plus d’informations.
 
 * Prise en charge des miniatures pour les vidéos dans Screens en tant que Cloud Service. Un auteur de contenu peut définir une miniature pour les vidéos afin que l’image puisse être utilisée comme espace réservé et tester correctement la lecture et le ciblage du contenu, pendant que la vidéo réelle est en cours de finalisation par l’équipe appropriée. L’image peut également être utilisée, au cas où la lecture de la vidéo échouerait.
