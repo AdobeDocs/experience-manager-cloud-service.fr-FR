@@ -1,10 +1,9 @@
 ---
 title: Formation des développeurs et des responsables de déploiement
 description: Consultez cette page pour découvrir les étapes suivantes à suivre après l’accès, si vous êtes un développeur ou un responsable de déploiement
-index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
+source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
 workflow-type: tm+mt
 source-wordcount: '566'
 ht-degree: 6%

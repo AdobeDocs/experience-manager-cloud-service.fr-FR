@@ -1,10 +1,9 @@
 ---
 title: Chemin d’apprentissage pour les utilisateurs AEM
 description: Suivez cette page pour découvrir les étapes suivantes après l’accès, si vous êtes un utilisateur AEM
-index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 1b594017570cb2d8e144cbdf8ea56acdf8256a6d
+source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 4%
