@@ -2,10 +2,10 @@
 title: Intégration à Adobe Experience Manager as a Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation concernant l’intégration à Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 786ff1c2e715869ecd12cf54ede0fb650e8ef33f
+source-git-commit: a37b460d467e6e86394ae4baa61f044486c73b24
 workflow-type: tm+mt
 source-wordcount: '934'
-ht-degree: 85%
+ht-degree: 83%
 
 ---
 
@@ -36,7 +36,7 @@ Une fois votre contrat signé, le déroulement des événements sera le suivant�
 
 1. Les utilisateurs ajoutés par votre administrateur système recevront à leur tour un e-mail de bienvenue leur permettant de naviguer jusqu’à Cloud Manager. Les utilisateurs peuvent désormais utiliser leur Adobe ID pour se connecter et commencer leur parcours avec Cloud Manager.
 
-1. Un administrateur système peut [octroyer aux utilisateurs l’accès à une instance AEM](/help/onboarding/what-is-required/accessing-aem-instance.md) à des fins de développement.
+1. Un administrateur système peut accorder aux utilisateurs l’accès à une instance AEM à des fins de développement.
 
 **Obtention de votre Adobe ID**
 
@@ -59,7 +59,7 @@ Les pages de documentation suivantes contiennent des informations décrivant les
 Maintenant que vous avez été ajouté en tant qu’utilisateur et qu’un rôle Cloud Manager vous a été affecté, vous pouvez accéder à Cloud Manager pour entamer votre parcours dans le Cloud avec AEM. Les utilisateurs sont prêts à effectuer diverses tâches, telles que la création d’un programme, l’ajout d’un environnement, l’accès à Git, la [configuration d’un pipeline](/help/implementing/cloud-manager/configure-pipeline.md) et le [déploiement du code](/help/implementing/cloud-manager/deploy-code.md).
 Cloud Manager est une partie importante d’AEM as a Cloud Service. Il permet aux entreprises de gérer elles-mêmes [!DNL Experience Manager] dans le cloud. Il comprend une structure d’intégration et de diffusion continues (CI/CD) qui permet aux équipes informatiques et aux partenaires d’implémentation d’accélérer la diffusion des personnalisations ou des mises à jour sans compromettre les performances ou la sécurité. Grâce à l’interface utilisateur, vous pouvez configurer et lancer le pipeline CI/CD.
 
-**[Octroi de l’accès utilisateur à une instance AEM](/help/onboarding/what-is-required/accessing-aem-instance.md)**
+* **Octroi de l’accès utilisateur à une instance AEM**
 
 Découvrez avec cette section comment un administrateur système ou un utilisateur ayant créé un environnement peut accorder à d’autres utilisateurs l’accès à une instance AEM.
 

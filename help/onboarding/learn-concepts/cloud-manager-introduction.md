@@ -2,7 +2,7 @@
 title: Découvrez Cloud Manager
 description: Consultez cette page pour en savoir plus sur Cloud Manager, les programmes Cloud Manager et les environnements.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 900bcfd2b05b7c996c7ef51118d1f09a16020332
+source-git-commit: a37b460d467e6e86394ae4baa61f044486c73b24
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 23%
@@ -38,7 +38,7 @@ De plus, vous pouvez également accéder à la page Programmes et produits de Cl
 
 1. Cliquez sur **Launch** à l’aide de la carte Cloud Manager. Une fois que vous êtes connecté à Cloud Manager, vous êtes prêt à utiliser l’interface utilisateur.
 
-Une fois votre connexion établie, vous êtes dirigé vers la page d’entrée de Cloud Manager, comme indiqué ci-dessous.
+   Une fois votre connexion établie, vous êtes dirigé vers la page d’entrée de Cloud Manager, comme indiqué ci-dessous.
 
 ## Programmes Cloud Manager {#cloud-manager-programs}
 

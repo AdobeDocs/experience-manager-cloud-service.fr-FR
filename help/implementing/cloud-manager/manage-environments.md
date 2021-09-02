@@ -2,9 +2,9 @@
 title: Gestion des environnements – Cloud Service
 description: Gestion des environnements – Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 529fbdcba9fc4c1432beef1b63ff89079a900224
+source-git-commit: c25756f16f5e86958c1cc9224e51d07c4d864da4
 workflow-type: tm+mt
-source-wordcount: '1618'
+source-wordcount: '1608'
 ht-degree: 78%
 
 ---
@@ -145,8 +145,6 @@ L’option de suppression est également disponible si vous cliquez sur **Détai
 ## Gestion de l’accès {#managing-access}
 
 Sélectionnez **Gérer l’accès** dans le menu déroulant de la carte **Environnements**. Vous pouvez accéder directement à l’instance d’auteur et gérer l’accès pour votre environnement.
-
-Consultez [Gestion de l’accès à l’instance d’auteur](/help/onboarding/what-is-required/accessing-aem-instance.md) pour en savoir plus.
 
 ![](assets/environ-access.png)
 
