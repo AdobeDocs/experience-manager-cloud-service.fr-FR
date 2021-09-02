@@ -3,9 +3,9 @@ title: Chemin d’apprentissage pour les utilisateurs AEM
 description: Suivez cette page pour découvrir les étapes suivantes après l’accès, si vous êtes un utilisateur AEM
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+source-git-commit: 12ca20c750d7332ebfaf62c781cbe5ec386c2d64
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '356'
 ht-degree: 4%
 
 ---
@@ -36,18 +36,12 @@ L’administrateur système doit avoir effectué toutes les étapes nécessaires
 
 Pour accéder à l’auteur, procédez comme suit :
 
-1. Accédez directement à [Adobe Experience Cloud](https://experience.adobe.com) et connectez-vous à l’aide de votre Adobe ID.
+1. Accédez directement à la page de connexion de Cloud Manager à partir de [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-1. Sur la page d’accueil de Adobe Experience Cloud, sélectionnez **Experience Manager**.
+   >[!NOTE]
+   >Veuillez mettre en signet le lien [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) pour référence ultérieure et pour vous aider à accéder directement à la page d’entrée de Cloud Manager.
 
-   ![](/help/journey-onboarding/assets/setup-resources2.png)
-
-1. Vous accédez alors à la page d’accueil AEM. À partir de là, lancez **Cloud Manager** .
-
-   ![](/help/journey-onboarding/assets/setup-resources3.png)
-
-   >[!IMPORTANT]
-   >Vous pouvez également accéder directement à la page de connexion de Cloud Manager à partir de [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Mettez cette page en signet à des fins de référence ultérieure et pour accéder directement à la page d’entrée de Cloud Manager.
+1. Sélectionnez le programme sur la page **Programmes et produits** de Cloud Manager pour lancer la page **Aperçu**.
 
 1. Sur la page **Aperçu** de Cloud Manager, cliquez sur le lien de création à partir de la carte **Environnements**.
 
