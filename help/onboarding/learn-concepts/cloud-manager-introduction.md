@@ -2,9 +2,9 @@
 title: Découvrez Cloud Manager
 description: Consultez cette page pour en savoir plus sur Cloud Manager, les programmes Cloud Manager et les environnements.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 4b6d02bc93a904c8ca666d027923fa5df88d1934
+source-git-commit: 4d1d6357e26e8c3ffbadfcae99f7ae7a091db1d3
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '675'
 ht-degree: 19%
 
 ---
@@ -18,6 +18,17 @@ Pour prendre en charge les clients disposant de configurations de développement
 Pour que les clients puissent commencer rapidement avec AEM en tant que Cloud Service, Cloud Manager fournit tout ce dont ils ont besoin pour commencer en libre-service, notamment la possibilité de créer vos ressources et environnements cloud. Ainsi, vos développeurs AEM peuvent accéder au référentiel Git via Cloud Manager. Grâce à Cloud Manager, les équipes de développement peuvent travailler à la validation fréquente des modifications en libre-service.
 
 Votre administrateur système sera chargé de configurer votre équipe Cloud Manager, qui comprendra les personnes qui créeront vos ressources cloud et vos développeurs. Reportez-vous à [Configuration du développement d’équipe d’entreprise pour AEM as a Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md) pour découvrir comment Cloud Manager prend en charge la configuration du développement d’équipe d’entreprise.
+
+## Accès à la page de présentation de Cloud Manager {#navigate-cloud-manager}
+
+Pour accéder à Cloud Manager, procédez comme suit :
+
+1. Accédez directement à la page de connexion de Cloud Manager à partir de [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+
+   >[!NOTE]
+   >Mettez cette page en signet à des fins de référence ultérieure et pour accéder directement à la page d’entrée de Cloud Manager.
+
+1. Sélectionnez le programme sur la page **Programmes et produits** de Cloud Manager pour lancer la page **Aperçu**.
 
 ## Programmes Cloud Manager {#cloud-manager-programs}
 
