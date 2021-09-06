@@ -2,10 +2,10 @@
 title: Découvrez Cloud Manager
 description: Consultez cette page pour en savoir plus sur Cloud Manager, les programmes Cloud Manager et les environnements.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: a37b460d467e6e86394ae4baa61f044486c73b24
+source-git-commit: a21116e9ea59e608590151dc2682ff6e73dde9ed
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 23%
+source-wordcount: '907'
+ht-degree: 36%
 
 ---
 
@@ -39,6 +39,26 @@ De plus, vous pouvez également accéder à la page Programmes et produits de Cl
 1. Cliquez sur **Launch** à l’aide de la carte Cloud Manager. Une fois que vous êtes connecté à Cloud Manager, vous êtes prêt à utiliser l’interface utilisateur.
 
    Une fois votre connexion établie, vous êtes dirigé vers la page d’entrée de Cloud Manager, comme indiqué ci-dessous.
+
+## Permissions basées sur les rôles dans Cloud Manager {#role-based-permissions}
+
+| Autorisation | Description | Propriétaire de l’entreprise | Responsable de déploiement | Responsable de programme | Développeur |
+|--- |--- |--- |--- |--- |--- |
+| Ajouter un programme<br>Modifier le programme | Ajout d’un nouveau programme.<br>Modification d’un programme – Ajout ou suppression de solutions ou de modules complémentaires | x |  |  |  |
+| Créer un environnement | Créer des environnements Prod+Éval, Dév, etc. | x | x |  |  |
+| Mettre à jour l’environnement | Mettre à jour Prod+Éval, Dév, Environnements. | x | x |  |  |
+| Suppression de l’environnement de dév | Supprimer les environnements de développement. | x | x |  |  |
+| Configuration du pipeline | Configurer ou modifier un pipeline. |  | x |  |  |
+| Exécution du pipeline | Démarrer le pipeline. | x | x |  |  |
+| Exécution du pipeline | Refuser/approuver des échecs importants de 3 niveaux. | x | x | x |  |
+| Exécution du pipeline | Fournit l’approbation de GoLive. | x | x | x |  |
+| Exécution du pipeline | Planning du déploiement en production. | x | x | x |  |
+| Suppression de pipeline | Permet la suppression d’un pipeline. |  | x |  |  |
+| Annuler l’exécution | Annuler l’exécution actuelle. |  | x |  |  |
+| Génération d’un jeton d’accès personnel | Accéder à Git. |  | x |  | x |
+
+>[!NOTE]
+>Un utilisateur peut être affecté à plusieurs rôles. Par exemple, l’attribution des rôles Propriétaire de l’entreprise et Responsable de déploiement à un utilisateur leur donne la combinaison ou la somme de ces autorisations.
 
 ## Programmes Cloud Manager {#cloud-manager-programs}
 

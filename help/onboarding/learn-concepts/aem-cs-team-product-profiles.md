@@ -1,13 +1,13 @@
 ---
 title: AEM en tant qu’équipe de Cloud Service et profils de produit
 description: Consultez cette page pour en savoir plus sur AEM en tant qu’équipe de Cloud Service et les profils de produit.
-source-git-commit: 976fc51be0ba8c407ff7d6f7c1a6efecbbdad5c9
+exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
+source-git-commit: 56ca8e80081e62ceb3f5fc2bf9c32aa3bcee12c6
 workflow-type: tm+mt
 source-wordcount: '664'
-ht-degree: 1%
+ht-degree: 8%
 
 ---
-
 
 # AEM en tant qu’équipe de Cloud Service et profils de produit {#product-profiles}
 
@@ -36,13 +36,13 @@ Votre AEM en tant que membre de l’équipe de Cloud Service sera ajoutée et af
 
 Cloud Manager dispose de profils de produit préconfigurés ou, plus simplement, d’autorisations basées sur les rôles. L’administrateur système est chargé de configurer votre équipe Cloud Manager en attribuant le à ces profils de produit. Il doit se familiariser avec ces profils de produit et avec les membres de l’équipe à qui les affecter.
 >[!NOTE]
->Pour plus d’informations, voir [Autorisations basées sur les rôles dans Cloud Manager](/help/onboarding/what-is-required/user-roles-permissions.md).
+>Pour plus d’informations, voir [Autorisations basées sur les rôles dans Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md##role-based-permissions).
 
-Chacun des profils de produit est associé à des autorisations spécifiques. Par exemple, si vous êtes dans le rôle d’un :
+Chacun des profils de produit est associé à des autorisations spécifiques. Par exemple, si vous êtes dans le rôle d’un :
 
 * **Propriétaire de l’entreprise**, vous avez l’autorisation d’ajouter un nouveau programme ou de modifier un programme, d’ajouter ou de mettre à jour un environnement, d’ajouter/modifier/supprimer le pipeline et d’exécuter n’importe quel pipeline, ainsi que de déployer du code pour AEM la qualité de l’environnement ou du code.
 
-* **Deployment Manager** vous permet d’ajouter ou de mettre à jour un environnement, d’exécuter n’importe quel pipeline et de déployer du code dans AEM environnement ou qualité du code.
+* **Responsable de déploiement** vous permet d’ajouter ou de mettre à jour un environnement, d’exécuter n’importe quel pipeline et de déployer du code dans AEM environnement ou gérer la qualité du code.
 
 * **Développeur**, vous êtes autorisé à générer un jeton d’accès personnel pour accéder à Git.
 
