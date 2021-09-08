@@ -3,9 +3,9 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 2d75c44420c5211d99e8e2e1eabea79ebf6b5162
+source-git-commit: 56f799b7583c82694f20de096855d6c5c1741f49
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1473'
 ht-degree: 25%
 
 ---
@@ -154,7 +154,7 @@ Voir [Rapports SLA](https://experienceleague.adobe.com/docs/experience-manager-c
 
 * L’intégration initiale échouait pour les nouvelles organisations dont les noms étaient très longs.
 
-* Parfois, lorsqu’un pipeline est déclenché deux fois pour une raison quelconque, l’une ou l’autre des occurrences échoue avec l’erreur *impossible de mettre à jour l’état d’exécution du pipeline*.
+* Parfois, lorsqu’un pipeline est déclenché deux fois pour une raison quelconque, l’une ou l’autre des exécutions échoue avec l’erreur *Impossible de mettre à jour l’état d’exécution du pipeline*.
 
 ## Outil de transfert de contenu {#content-transfer-tool}
 
@@ -169,4 +169,20 @@ La date de publication de l’outil de transfert de contenu v1.5.6 est le 11 ao�
 * Le bouton **Arrêter l’ingestion** était désactivé lors de l’ingestion vers l’instance de publication. Cela n’est pas nécessaire, car il n’existe aucune étape de restauration de mongo pendant l’ingestion de publication.
 
 * CTT n’a pas nettoyé le répertoire `/tmp` après une extraction réussie. Cela entraînait parfois des problèmes d’espace disque.
+
+## Analyseur des bonnes pratiques {#best-practices-analyzer}
+
+### Date de publication {#release-date-bpa-latest}
+
+La date de publication de la version 2.1.18 de l’analyseur des bonnes pratiques est le 2 septembre 2021.
+
+### Nouveautés {#what-is-new}
+
+* Possibilité de détecter et de générer des rapports sur le nombre total de noeuds.
+
+* Possibilité de détecter et de générer des rapports sur le type et la taille du magasin de noeuds.
+
+### Correctifs {#bug-fixes-bpa}
+
+* BPA détectait faussement la présence de Commerce Integration Framework.
 
