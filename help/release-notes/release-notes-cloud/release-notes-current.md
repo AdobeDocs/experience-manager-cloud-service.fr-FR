@@ -3,7 +3,7 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
+source-git-commit: e06a8d28eef4faaa23603adc846033ab5ef55000
 workflow-type: tm+mt
 source-wordcount: '1630'
 ht-degree: 24%
@@ -131,6 +131,8 @@ La prochaine version est prévue pour le 7 octobre 2021.
 
 ### Nouveautés {#what-is-new-cm-sept}
 
+* L’archétype de projet AEM utilisé par Cloud Manager a été mis à jour à la version 30.
+
 * Les cartes de programme sur la page d’entrée de Cloud Manager et l’expérience associée ont été actualisées.
 
 * Le journal des étapes de qualité du code comprend désormais des informations de journalisation en mode verbeux sur le processus d’analyse OakPal.
@@ -139,7 +141,6 @@ La prochaine version est prévue pour le 7 octobre 2021.
 
 * Cliquez directement sur la carte Programme pour accéder à la page Aperçu de Cloud Manager .
 
-* L’archétype de projet AEM utilisé par Cloud Manager a été mis à jour à la version 30.
 
 ### Correctifs {#bug-fixes-sept}
 
