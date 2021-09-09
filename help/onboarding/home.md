@@ -2,10 +2,10 @@
 title: Intégration à Adobe Experience Manager as a Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation concernant l’intégration à Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: e45f3265feb7fbe9e3de5bd8975fa28e2b8c7e13
+source-git-commit: 91b84e3c312d3f1e01ccaa9a5d541a69ef3c4da6
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 76%
+source-wordcount: '556'
+ht-degree: 58%
 
 ---
 
@@ -18,24 +18,17 @@ ht-degree: 76%
 
 Nous vous félicitons de commencer votre parcours avec AEM as a Cloud Service ! Qu’il s’agisse de déployer une nouvelle application ou d’effectuer la migration d’une application existante, ce guide sert de point de départ pour vous assurer que votre application est optimisée et prête à fonctionner avec succès sur Cloud Service.
 
-Ce guide vous aidera, ainsi que votre équipe, à prendre en main rapidement Cloud Manager. Vous aurez besoin de votre Adobe ID et de l’aide de votre administrateur système pour ajouter les utilisateurs à Cloud Manager avec leurs rôles attribués (appelés Profils de produit dans Admin Console) et les autorisations associées. Les instructions dont l’administrateur système a besoin pour effectuer cette opération à l’aide d’Admin Console sont indiquées. La liste des rôles de Cloud Manager, appelés profils de produit dans Admin Console et leurs autorisations associées, est détaillée afin que vous puissiez déterminer les rôles nécessaires aux différents utilisateurs de votre entreprise.
+## Expérience d’intégration {#audience}
 
-L’image suivante illustre votre parcours d’intégration, depuis le courrier électronique de bienvenue reçu par votre administrateur système jusqu’à l’accès des utilisateurs à Cloud Manager pour AEM as a Cloud Service.
+L’intégration est le processus au cours duquel un [administrateur système](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) désigné configure AEM en tant que Cloud Service pour votre organisation. Cela inclut l’approvisionnement initial des ressources cloud et l’affectation des utilisateurs aux rôles appropriés en fonction de leurs responsabilités professionnelles, après quoi chaque membre peut se connecter et accéder à son AEM en tant que ressources de Cloud Service.
 
-![](/help/onboarding/what-is-required/assets/cust-journey.png)
+Le parcours d’intégration est illustré ci-dessous et chaque étape du parcours est décrite en détail dans les sections suivantes.
 
-Voir [Parcours d’intégration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html) pour commencer à utiliser l’expérience d’intégration.
+![](/help/journey-onboarding/assets/onboarding-journey.png)
 
->[!NOTE]
->Avant de vous plonger dans le parcours d’intégration, il est recommandé de consulter la section Formation sur les concepts d’intégration qui couvre les sujets suivants :
->* [Administrateur système](/help/onboarding/learn-concepts/system-administrator.md)
->* [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
->* [Adobe Identity Management System](/help/onboarding/learn-concepts/ims.md)
->* [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
->* [Présentation de Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
->* [AEM en tant qu’équipe de Cloud Service et profils de produits](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
->* [Prise en charge des Adobes](/help/onboarding/learn-concepts/onboarding-help-resources.md)
+Ce parcours est conçu pour un personnage Administrateur système qui présente les exigences, les étapes et l’approche. Le parcours définit des personnes supplémentaires avec lesquelles l’administrateur système doit interagir pour qu’un projet soit réussi, mais le point de vue du parcours est celui d’un administrateur.
 
+Voir [Parcours d’intégration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en) pour commencer à utiliser l’expérience d’intégration.
 
 ## [!DNL Experience Manager as a Cloud Service] Guides {#aem-guides}
 

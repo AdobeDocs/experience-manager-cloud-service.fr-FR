@@ -3,24 +3,15 @@ title: Parcours d’intégration
 description: Consultez cette page pour découvrir comment commencer à utiliser le parcours d’intégration
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+exl-id: fa88a919-af6a-4266-b38c-647706decba4
+source-git-commit: 91b84e3c312d3f1e01ccaa9a5d541a69ef3c4da6
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 7%
+source-wordcount: '401'
+ht-degree: 10%
 
 ---
 
 # Parcours d’intégration {#onboarding-jourrney}
-
-## Expérience d’intégration {#audience}
-
-L’intégration est le processus au cours duquel un [administrateur système](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) désigné configure AEM en tant que Cloud Service pour votre organisation. Cela inclut l’approvisionnement initial des ressources cloud et l’affectation des utilisateurs aux rôles appropriés en fonction de leurs responsabilités professionnelles, après quoi chaque membre peut se connecter et accéder à son AEM en tant que ressources de Cloud Service.
-
-Le parcours d’intégration est illustré ci-dessous et chaque étape du parcours est décrite en détail dans les sections suivantes.
-
-![](/help/journey-onboarding/assets/onboarding-journey.png)
-
-Ce parcours est conçu pour un personnage Administrateur système qui présente les exigences, les étapes et l’approche. Le parcours définit des personnes supplémentaires avec lesquelles l’administrateur système doit interagir pour qu’un projet soit réussi, mais le point de vue du parcours est celui d’un administrateur.
 
 ## Exploration du Parcours d’intégration {#exploring-onboarding-journey}
 
