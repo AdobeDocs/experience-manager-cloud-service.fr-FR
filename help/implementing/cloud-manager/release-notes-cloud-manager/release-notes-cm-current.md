@@ -1,52 +1,42 @@
 ---
-title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.8.0
-description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.8.0
-feature: Informations sur la version
-exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: d04194bd83ced844dffc94da35c996d363c5ba30
+title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.9.0
+description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.9.0
+feature: Release Information
+source-git-commit: 07a80076493070cb5e754a4cfbafe51cfcd6442e
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 32%
+source-wordcount: '239'
+ht-degree: 40%
 
 ---
 
-# Notes de mise à jour de Cloud Manager dans Adobe Experience Manager as a Cloud Service version 2021.8.0 {#release-notes}
+# Notes de mise à jour de Cloud Manager dans Adobe Experience Manager as a Cloud Service version 2021.9.0 {#release-notes}
 
-Cette page présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.8.0.
+Cette page présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.9.0.
 
 >[!NOTE]
 >Pour afficher les notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service, cliquez [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=fr).
 
 ## Date de publication {#release-date}
 
-La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.8.0 est le 12 août 2021.
-La prochaine version est prévue pour le 9 septembre 2021.
+La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.9.0 est le 9 septembre 2021.
+La prochaine version est prévue pour le 7 octobre 2021.
 
 ### Nouveautés {#what-is-new}
 
-* Les clients Cloud Service peuvent désormais afficher les rapports Contrat de niveau de service (SLA) dans Cloud Manager. Elle sera disponible progressivement au cours des prochains mois.
-Voir [Rapports SLA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html) pour en savoir plus.
+* Les cartes de programme sur la page d’entrée de Cloud Manager et l’expérience associée ont été actualisées.
 
-* Le type et la gravité des règles de qualité IndexType et `IndexDamAssetLucene` ont été modifiés. Il s’agit désormais des deux bogues du bloqueur *serverity*.
+* Le journal des étapes de qualité du code comprend désormais des informations de journalisation en mode verbeux sur le processus d’analyse OakPal.
 
-* De nouvelles règles de qualité d’index Oak ont été introduites pour couvrir les configurations asynchrones et tika.
+* Les options de menu de la page Activité comprennent désormais une option **Télécharger le journal** pour les exécutions du Générateur de code terminées. Si vous sélectionnez cette option, le journal de l’étape de création sera téléchargé.
 
-* Augmentez le nombre maximal de certificats SSL par programme à 50.
+* Cliquez directement sur la carte Programme pour accéder à la page Aperçu de Cloud Manager .
 
-* Fonctionnalité de libre-service permettant aux utilisateurs de créer et de gérer plusieurs référentiels via l’interface utilisateur de Cloud Manager.
-
-* SonarQube lisait inutilement les données de l’historique Git. Sur les bases de code volumineuses, cela peut entraîner une pénalité de performance de build inutile.
-
-* Une API est désormais disponible pour invalider le cache de dépendance Maven par pipeline.
-
-* L’archétype de projet AEM utilisé par Cloud Manager a été mis à jour à la version 29.
+* L’archétype de projet AEM utilisé par Cloud Manager a été mis à jour à la version 30.
 
 ### Correctifs {#bug-fixes}
 
-* Mettre à jour L’état Disponible ne doit pas s’afficher lorsque la dernière version est inférieure à la version actuelle.
+* L’utilisateur voit désormais un message plus compréhensible lorsqu’il tente d’ajouter une nouvelle Liste autorisée IP dans un programme qui a atteint le nombre maximal autorisé de Listes autorisées IP configurables.
 
-* L’intégration initiale échouait pour les nouvelles organisations dont les noms étaient très longs.
-
-* Parfois, lorsqu’un pipeline est déclenché deux fois pour une raison quelconque, l’une des exécutions échoue avec l’erreur *impossible de mettre à jour l’état d’exécution du pipeline*.
+* Une URL incorrecte a été copiée lors de la sélection de l’option de menu Copier l’URL dans l’écran Référentiels .
 
 

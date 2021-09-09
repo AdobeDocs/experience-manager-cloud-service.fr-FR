@@ -5,9 +5,9 @@ breadcrumb-title: Guide d’implémentation
 user-guide-description: Découvrez comment personnaliser votre déploiement d’Experience Manager as a Cloud Service, y compris des rubriques sur le déploiement et le développement.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+source-git-commit: 07a80076493070cb5e754a4cfbafe51cfcd6442e
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1036'
 ht-degree: 94%
 
 ---
@@ -18,8 +18,9 @@ ht-degree: 94%
 + [Implémentation d’applications pour AEM as a Cloud Service](/help/implementing/home.md)
 + Utilisation de Cloud Manager {#using-cloud-manager}
    + Notes de mise à jour de Cloud Manager {#release-notes-cloud-manager}
-      + [Notes de mise à jour de la version actuelle (2021.8.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Notes de mise à jour de la version actuelle (2021.9.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2021 {#2021}
+         + [Notes de mise à jour de la version 2021.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
          + [Notes de mise à jour de la version 2021.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
          + [Notes de mise à jour de la version 2021.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
          + [Notes de mise à jour de la version 2021.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
@@ -96,7 +97,7 @@ ht-degree: 94%
    + [FAQ relative à Cloud Manager](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
 + Gestion de votre code {#managing-code}
    + [Gestion des versions du projet Maven](cloud-manager/project-version-handling.md)
-   + [Référentiels dans Cloud Manager](cloud-manager/cloud-manager-repositories.md)
+   + [Référentiels dans Cloud Manager](cloud-manager/cloud-manager-repositories.md)
    + [Accès aux référentiels](cloud-manager/accessing-repos.md)
    + [Intégration de Git à Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
    + [Utilisation de plusieurs référentiels Git source](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
