@@ -2,10 +2,10 @@
 title: Personnalisation et extensions de fragments de contenu
 description: Un fragment de contenu étend une ressource standard.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c43b55243a73285b78447e32beb16b25608f6d3c
 workflow-type: tm+mt
 source-wordcount: '1808'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -16,10 +16,6 @@ Dans Adobe Experience Manager as a Cloud Service, un fragment de contenu étend 
 * [Création et gestion des fragments de contenu](/help/assets/content-fragments/content-fragments.md) et [Création de pages avec des fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md) pour plus d’informations sur les fragments de contenu.
 
 * [Gestion des ressources](/help/assets/manage-digital-assets.md) pour plus d’informations sur les ressources standard.
-
-<!-- Removing the extend-asset-editor article for now as I'm unsure of its accuracy. Hence commenting this link.
-* [Managing Assets](/help/assets/manage-digital-assets.md) and [Customizing and Extending the Asset Editor](/help/assets/extend-asset-editor.md) for further information about standard assets.
--->
 
 ## Architecture {#architecture}
 
@@ -134,7 +130,7 @@ Les fragments de contenu peuvent être intégrés à :
 
 * **Des traductions**
 
-   Les fragments de contenu sont entièrement intégrés au workflow de traduction AEM. Au niveau architectural, cela présente les implications suivantes :
+   Les fragments de contenu sont entièrement intégrés au [processus AEM de traduction](/help/sites-cloud/administering/translation/overview.md). Au niveau architectural, cela présente les implications suivantes :
 
    * Les traductions d’un fragment de contenu sont en fait des fragments distincts, par exemple :
 

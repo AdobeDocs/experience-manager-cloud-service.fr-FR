@@ -2,14 +2,14 @@
 title: Utilisation de Sling Resource Merger dans Adobe Experience Manager as a Cloud Service
 description: Sling Resource Merger propose des services pour accéder à des ressources et les fusionner.
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
+workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 100%
 
 ---
 
-# Utilisation de Sling Resource Merger dans AEM as a Cloud Service{#using-the-sling-resource-merger-in-aem}
+# Utilisation de Sling Resource Merger dans AEM as a Cloud Service {#using-the-sling-resource-merger-in-aem}
 
 ## Objectif {#purpose}
 
@@ -24,8 +24,6 @@ Avec Sling Resource Merger, les ressources et/ou propriétés de recouvrement/re
 * Le contenu de la définition personnalisée a une priorité plus élevée que celle d’origine (en d’autres termes, elle la *recouvre* ou elle la *remplace*).
 
 * Si nécessaire, les [propriétés](#properties) définies dans la personnalisation indiquent comment utiliser le contenu fusionné à partir de l’original.
-
-<!-- Still links to reference material in 6.5 -->
 
 >[!CAUTION]
 >
@@ -49,6 +47,7 @@ Sling Resource Merger est utilisé dans AEM pour deux raisons principales :
 >* Les recouvrements dépendent des [chemins de recherche](/help/implementing/developing/introduction/overlays.md#search-paths).
 >
 >* Les remplacements ne dépendent pas des chemins de recherche. Ils utilisent la propriété `sling:resourceSuperType` pour établir la connexion.
+
 >
 >Cependant, les remplacements sont souvent définis sous `/apps`, car une pratique recommandée dans AEM as a Cloud Service consiste à définir des personnalisations sous `/apps`, du fait que vous ne devez rien changer sous `/libs`.
 
@@ -194,7 +193,7 @@ Ces éléments, en liaison avec les fonctionnalités standard, vous permettent d
    1. Créez le nœud correspondant sous `/apps`
    1. Créez la propriété `sling:hideChildren` :
 
-      * type: `String[]`
+      * type : `String[]`
       * value : liste des nœuds enfants (tels que définis dans `/libs`) à masquer/ignorer
 
       Le caractère générique &amp;ast; peut être utilisé pour masquer/ignorer tous les nœuds enfants.
@@ -211,7 +210,7 @@ Ces éléments, en liaison avec les fonctionnalités standard, vous permettent d
 
          Cela spécifie le nœud (comme dans `/libs`) devant lequel le nœud actif doit être positionné :
 
-         * type: `String`
+         * type : `String`
          * value: `<before-SiblingName>`
 
 ### Appel de Sling Resource Merger à partir de votre code {#invoking-the-sling-resource-merger-from-your-code}
@@ -242,17 +241,3 @@ Sling Resource Merger comprend deux fournisseurs de ressources personnalisés�
 
       * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
 
-<!--
-### Example of Usage {#example-of-usage}
-
-Some examples are covered:
-
-* Overlay:
-
-    * [Customizing the Consoles](/help/sites-developing/customizing-consoles-touch.md)
-    * [Customizing Page Authoring](/help/sites-developing/customizing-page-authoring-touch.md)
-
-* Override:
-
-    * [Configuring your Page Properties](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)
--->
