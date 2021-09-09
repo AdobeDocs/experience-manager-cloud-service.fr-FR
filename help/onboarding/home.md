@@ -2,10 +2,10 @@
 title: Intégration à Adobe Experience Manager as a Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation concernant l’intégration à Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 91b84e3c312d3f1e01ccaa9a5d541a69ef3c4da6
+source-git-commit: 0354f4782ff02d0c0d890ec6a99262b6b5002729
 workflow-type: tm+mt
-source-wordcount: '556'
-ht-degree: 58%
+source-wordcount: '542'
+ht-degree: 59%
 
 ---
 
@@ -22,13 +22,13 @@ Nous vous félicitons de commencer votre parcours avec AEM as a Cloud Service !
 
 L’intégration est le processus au cours duquel un [administrateur système](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) désigné configure AEM en tant que Cloud Service pour votre organisation. Cela inclut l’approvisionnement initial des ressources cloud et l’affectation des utilisateurs aux rôles appropriés en fonction de leurs responsabilités professionnelles, après quoi chaque membre peut se connecter et accéder à son AEM en tant que ressources de Cloud Service.
 
-Le parcours d’intégration est illustré ci-dessous et chaque étape du parcours est décrite en détail dans les sections suivantes.
+Le parcours d’intégration est illustré ci-dessous.
 
 ![](/help/journey-onboarding/assets/onboarding-journey.png)
 
 Ce parcours est conçu pour un personnage Administrateur système qui présente les exigences, les étapes et l’approche. Le parcours définit des personnes supplémentaires avec lesquelles l’administrateur système doit interagir pour qu’un projet soit réussi, mais le point de vue du parcours est celui d’un administrateur.
 
-Voir [Parcours d’intégration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en) pour commencer à utiliser l’expérience d’intégration.
+Voir [Parcours d’intégration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en) pour commencer à utiliser votre expérience d’intégration.
 
 ## [!DNL Experience Manager as a Cloud Service] Guides {#aem-guides}
 
