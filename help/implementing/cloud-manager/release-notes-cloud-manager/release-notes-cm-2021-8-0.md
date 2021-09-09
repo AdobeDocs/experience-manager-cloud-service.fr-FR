@@ -2,8 +2,7 @@
 title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.8.0
 description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.8.0
 feature: Release Information
-exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 07a80076493070cb5e754a4cfbafe51cfcd6442e
+source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 62%
@@ -48,5 +47,3 @@ Voir [Rapports SLA](https://experienceleague.adobe.com/docs/experience-manager-c
 * L’intégration initiale échouait pour les nouvelles organisations dont les noms étaient très longs.
 
 * Parfois, lorsqu’un pipeline est déclenché deux fois pour une raison quelconque, l’une ou l’autre des exécutions échoue avec l’erreur *Impossible de mettre à jour l’état d’exécution du pipeline*.
-
-
