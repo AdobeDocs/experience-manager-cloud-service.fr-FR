@@ -1,10 +1,10 @@
 ---
 title: Configurations de Dispatcher dans Screens en tant que Cloud Service
 description: Cette page décrit les configurations du Dispatcher dans Screens en tant que Cloud Service.
-source-git-commit: b00856e1be8842c4e9fa6ed4ada9129926c73ef5
+source-git-commit: f7a201ed72011df2ed603528ad80cf191c9f2d77
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 5%
+source-wordcount: '135'
+ht-degree: 4%
 
 ---
 
@@ -17,9 +17,7 @@ Cette section décrit les configurations du Dispatcher pour Screens en tant que 
 
 Autorisez les filtres et règles de mise en cache suivants dans les Dispatchers pour les instances de publication dans Screens en tant que Cloud Service.
 
-### Filtres {#filters}
-
-## Filtres AEM Screens
+### Filtres AEM Screens {#filters}
 
 ```
 ## # Content Configurations
@@ -32,12 +30,12 @@ Autorisez les filtres et règles de mise en cache suivants dans les Dispatchers 
 /0210 { /type "allow" /method "GET" /url "/etc.clientlibs/*" }
 ```
 
-## Règles de cache {#cache-rules}
+### Règles de cache {#cache-rules}
 
 * Ajoutez `/statfileslevel "10"` à la section `/cache` dans `publish_farm.any`/.
 
    >[!NOTE]
-   >Cela prend en charge la mise en cache jusqu’à 10 niveaux à partir du docroot du cache et invalide lorsque le contenu est publié plutôt que d’invalider tout. Vous pouvez modifier ce niveau en fonction de la profondeur de la structure de contenu.
+   >Cette règle de cache prend en charge la mise en cache jusqu’à 10 niveaux à partir de la docroot du cache et invalide lorsque le contenu est publié plutôt que d’invalider tout. Vous pouvez modifier ce niveau en fonction de la profondeur de configuration de votre structure de contenu.
 
 * Ajoutez ce qui suit à la section `/invalidate` dans `publish_farm.any`.
 
@@ -56,7 +54,7 @@ Autorisez les filtres et règles de mise en cache suivants dans les Dispatchers 
         {
         /glob "/content/screens/*.html"
         /type "allow"
-            }
+        }
    
    ## Allow Dispatcher Cache for Screens offline manifests
    
