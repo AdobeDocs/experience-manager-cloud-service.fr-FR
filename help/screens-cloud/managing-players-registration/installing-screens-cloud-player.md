@@ -1,13 +1,13 @@
 ---
 title: Installation et configuration des lecteurs dans Screens en tant que Cloud Service
 description: Cette page décrit comment installer et configurer des lecteurs dans Screens en tant que Cloud Service.
-source-git-commit: d5970e27773433c9e6e7175a103768ae591e87ba
+exl-id: a022738a-c543-4629-a244-f70fa294fe7f
+source-git-commit: 3367977496d3edad0f6f1e27e98eac95c791e870
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
-
 
 # Installation et configuration des lecteurs dans Screens en tant que Cloud Service {#installing-players-screens-cloud}
 
@@ -45,9 +45,9 @@ Pour mettre à jour votre lecteur, procédez comme suit :
 
 ## Surveillance de lecture de base {#playback-monitoring}
 
-Le lecteur signale différentes mesures de lecture pour chaque `ping` qui correspond par défaut à 30 secondes. Selon les mesures, vous pouvez détecter différents cas de périphérie, tels que des problèmes de blocage, d’écran vide et de planification. Vous pouvez ainsi comprendre et résoudre les problèmes liés à l’appareil et accélérer ainsi les enquêtes et les mesures correctives.
+Le lecteur signale différentes mesures de lecture pour chaque `ping` qui correspond par défaut à 30 secondes. Sur la base de ces mesures, nous pouvons détecter divers cas de périphérie, tels que des problèmes de blocage, d’écran vide et de planification. Cela nous permet de comprendre et de résoudre les problèmes liés à l’appareil et d’accélérer ainsi les enquêtes et les mesures correctives avec vous.
 
-La surveillance de base de la lecture dans un lecteur AEM Screens vous permet d’effectuer les opérations suivantes :
+La surveillance de base de la lecture dans un lecteur AEM Screens nous permet d’effectuer les opérations suivantes :
 
 * Surveillez à distance si un lecteur lit correctement le contenu.
 
@@ -80,9 +80,11 @@ Vous trouverez ci-dessous quelques limites à la surveillance de lecture de base
 
 * Le lecteur signale son propre état de lecture au serveur ; il nécessite donc une connexion principale.
 
-* La propriété `isContentRendering` qui vérifie le GPU nécessite actuellement de nombreuses ressources pour être activée par défaut et nécessite une inclusion explicite dans les préférences du lecteur. Il est recommandé de ne pas l’utiliser conjointement avec les vidéos.
+* La propriété `isContentRendering` qui vérifie le GPU nécessite actuellement trop de ressources pour être activée par défaut et nécessite une inclusion explicite dans les préférences du lecteur. Il est recommandé de ne pas l’utiliser conjointement avec les vidéos en production.
 
-* Cette fonctionnalité est prise en charge pour les canaux de séquence.
+* Cette fonctionnalité est uniquement prise en charge pour les canaux de séquence et ne couvre pas encore le cas d’utilisation des canaux interactifs (SPA).
+
+* Les mesures ne sont pas encore entièrement exposées aux clients. Nous nous efforçons d’activer prochainement un mécanisme de reporting et d’alerte de type tableau de bord.
 
 ## Et après ? {#whats-next}
 
