@@ -3,10 +3,10 @@ title: Mise en cache dans AEM as a Cloud Service
 description: 'Mise en cache dans AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 7634c146ca6f8cd4a218b07dae0c063ab581f221
+source-git-commit: 993f5fa5b602354b03ab1635da660ae67fff7653
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 96%
+source-wordcount: '1572'
+ht-degree: 93%
 
 ---
 
@@ -58,7 +58,7 @@ Cela peut s’avérer utile, par exemple, lorsque votre logique commerciale néc
    { /glob "*" /type "allow" }
    ```
 
-* Pour empêcher la mise en cache d’un contenu spécifique, définissez l’en-tête Cache-Control sur *private*. Par exemple, les éléments suivants empêcheraient la mise en cache du contenu html situé sous un répertoire nommé **secure** :
+* Pour empêcher le contenu spécifique d’être mis en cache **sur le CDN**, définissez l’en-tête Cache-Control sur *private*. Par exemple, les éléments suivants empêcheraient la mise en cache du contenu html situé sous un répertoire nommé **secure** sur le réseau de diffusion de contenu :
 
    ```
       <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
@@ -70,6 +70,9 @@ Cela peut s’avérer utile, par exemple, lorsque votre logique commerciale néc
 
    >[!NOTE]
    >D’autres méthodes, y compris le [projet ACS Commons AEM dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), ne remplaceront pas les valeurs.
+
+   >[!NOTE]
+   >Notez que Dispatcher peut toujours mettre en cache le contenu en fonction de ses propres [règles de mise en cache](https://helpx.adobe.com/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html). Pour rendre le contenu réellement privé, veillez à ce qu’il ne soit pas mis en cache par Dispatcher.
 
 ### Bibliothèques côté client (js, css) {#client-side-libraries}
 
