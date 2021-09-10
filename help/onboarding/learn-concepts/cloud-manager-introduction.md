@@ -2,7 +2,7 @@
 title: Découvrez Cloud Manager
 description: Consultez cette page pour en savoir plus sur Cloud Manager, les programmes Cloud Manager et les environnements.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: a21116e9ea59e608590151dc2682ff6e73dde9ed
+source-git-commit: c206bc241bccf6f8a5bfb4946d6231f53438861a
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 36%
@@ -17,7 +17,7 @@ Pour prendre en charge les clients disposant de configurations de développement
 
 Pour que les clients puissent commencer rapidement avec AEM en tant que Cloud Service, Cloud Manager fournit tout ce dont ils ont besoin pour commencer en libre-service, notamment la possibilité de créer vos ressources et environnements cloud. Ainsi, vos développeurs AEM peuvent accéder au référentiel Git via Cloud Manager. Grâce à Cloud Manager, les équipes de développement peuvent travailler à la validation fréquente des modifications en libre-service.
 
-Votre administrateur système sera chargé de configurer votre équipe Cloud Manager, qui comprendra les personnes qui créeront vos ressources cloud et vos développeurs. Reportez-vous à [Configuration du développement d’équipe d’entreprise pour AEM as a Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md) pour découvrir comment Cloud Manager prend en charge la configuration du développement d’équipe d’entreprise.
+Votre administrateur système sera chargé de configurer votre équipe Cloud Manager, qui comprendra les personnes qui créeront vos ressources cloud et vos développeurs. Reportez-vous à [Configuration du développement d’équipe d’entreprise pour AEM as a Cloud Service](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md) pour découvrir comment Cloud Manager prend en charge la configuration du développement d’équipe d’entreprise.
 
 ## Accès à la page de présentation de Cloud Manager {#navigate-cloud-manager}
 

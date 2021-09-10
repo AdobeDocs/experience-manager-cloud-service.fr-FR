@@ -2,7 +2,7 @@
 title: Présentation du programme et des types de programmes
 description: Présentation du programme et des types de programmes – Cloud Services
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: 81f891b579fc6fb5b6241e38fe5859605fe6f4e1
+source-git-commit: aae4d942ef1e7ffd0065de73c3fbd044a19c3e8e
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 100%
@@ -23,7 +23,7 @@ Le programme Cloud Manager est fourni avec son propre référentiel Git.
 
 Pour qu’un utilisateur puisse accéder au référentiel Git de Cloud Manager, il doit utiliser un client Git avec un outil de ligne de commande, un client Git visuel autonome ou l’IDE de l’utilisateur tel qu’Eclipse, IntelliJ ou NetBeans.
 
-Une fois le client Git configuré, vous pouvez gérer votre référentiel Git à partir de l’interface utilisateur de Cloud Manager. Pour en savoir plus sur la gestion de Git à l’aide de l’interface utilisateur de Cloud Manager, voir la section [Accès à Git](/help/implementing/cloud-manager/accessing-repos.md).
+Une fois le client Git configuré, vous pouvez gérer votre référentiel Git à partir de l’interface utilisateur de Cloud Manager. Pour en savoir plus sur la gestion de Git à l’aide de l’interface utilisateur de Cloud Manager, voir la section [Accès à Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 Pour commencer à développer l’application AEM Cloud, une copie locale du code de l’application doit être effectuée en l’extrayant du référentiel Cloud Manager vers un emplacement de l’ordinateur local où l’utilisateur souhaite créer son référentiel.
 

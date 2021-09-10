@@ -2,7 +2,7 @@
 title: Configuration du pipeline CI/CD – Cloud Services
 description: Configuration du pipeline CI/CD – Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 90d75ddd0ace3eff8c3e1cde68208cf0a483ef86
+source-git-commit: c206bc241bccf6f8a5bfb4946d6231f53438861a
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 78%
@@ -122,7 +122,7 @@ Pour modifier le pipeline configuré, procédez comme suit :
 1. L’onglet **Code source** vous permet de mettre à jour le référentiel. Cliquez sur **Accéder à Repo Info** pour mettre à jour le référentiel.
 
    >[!NOTE]
-   >Voir [Ajout et gestion des référentiels](/help/implementing/cloud-manager/cloud-manager-repositories.md#add-manage-repos) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
+   >Voir [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
 
    ![](assets/configure-pipeline/edit-pipeline-2.png)
 
