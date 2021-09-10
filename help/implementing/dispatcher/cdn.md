@@ -3,10 +3,10 @@ title: Réseau de diffusion de contenu dans AEM as a Cloud Service
 description: Réseau de diffusion de contenu dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: b8466ace384657d972a55e39dbd2fcdac1a9d0b9
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 88%
+source-wordcount: '926'
+ht-degree: 86%
 
 ---
 
@@ -65,6 +65,12 @@ Instructions de configuration :
    * L’accès à l’entrée du réseau de diffusion de contenu d’Adobe peut être aussi bloqué lorsqu’une balise `X-AEM-Edge-Key` n’est pas présente. Informez Adobe si vous avez besoin d’un accès direct à l’entrée du CDN d’Adobe (à bloquer).
 
 Avant d’accepter le trafic en direct, vous devez vérifier auprès du service clientèle d’Adobe que le trafic de bout en bout fonctionne correctement.
+
+Après avoir obtenu le `X-AEM-Edge-Key`, vous pouvez tester que la requête est correctement acheminée comme suit :
+
+```
+curl publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
+```
 
 Veuillez noter que lorsque vous utilisez votre propre réseau de diffusion de contenu, il n’est pas nécessaire d’installer les domaines et les certificats dans Cloud Manager. Le routage dans le réseau de diffusion de contenu Adobe sera effectué à l’aide du domaine par défaut `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 
