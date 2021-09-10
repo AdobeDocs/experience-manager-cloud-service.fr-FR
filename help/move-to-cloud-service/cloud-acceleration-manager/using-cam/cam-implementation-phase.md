@@ -1,13 +1,13 @@
 ---
 title: Phase de mise en oeuvre dans Cloud Accelerated Manager
 description: Cette page présente un aperçu de la phase de mise en oeuvre dans Cloud Acceleration Manager.
-source-git-commit: 97833dd5b962d8f2a0f50a911d7c41ca17a1a0fe
+exl-id: 4ea13f12-7251-448f-9f54-c8d710aef2ba
+source-git-commit: e786fe40d97294b4ab5e8657920f2ecbb401d8e9
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '674'
 ht-degree: 5%
 
 ---
-
 
 # Phase de mise en oeuvre dans Cloud Accelerated Manager {#implementation-phase-cam}
 
@@ -60,21 +60,16 @@ Consultez cette section pour découvrir la carte d’activité Refactorisation d
    * Dispatcher
    * Tests
 
-   L’onglet **Aperçu** affiche une liste des activités de refactorisation du code.
+>[!NOTE]
+>Consultez le contenu de ces onglets pour comprendre certaines zones supplémentaires qui ne sont pas couvertes par l’analyseur des bonnes pratiques.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-1.png)
+L’onglet **Dispatcher** fournit des informations sur la structure de l’AEM en tant que configuration Apache et Dispatcher Cloud Service, ainsi que sur la validation et l’exécution localement avant son déploiement dans les environnements cloud. Elle présente en outre le débogage dans les environnements cloud.
 
-   L’onglet **Dispatcher** fournit des informations sur la structure de l’AEM en tant que configuration Apache et Dispatcher Cloud Service, ainsi que sur la validation et l’exécution localement avant son déploiement dans les environnements cloud. Elle présente en outre le débogage dans les environnements cloud.
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
+L’onglet **Tests** fournit des informations sur les tests fonctionnels, de contrôle de l’expérience et de l’interface utilisateur.
 
-   L’onglet **Tests** fournit des informations sur les tests fonctionnels, de contrôle de l’expérience et de l’interface utilisateur.
-
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
-
-
-   >[!NOTE]
-   >En outre, consultez le contenu des onglets de la page pour comprendre certaines zones supplémentaires qui ne sont pas couvertes par l’analyseur des bonnes pratiques.
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
 
 
 ## Utilisation d’AEM comme carte de déploiement de Cloud Service {#aem-as-a-cloud-service-deployment}
