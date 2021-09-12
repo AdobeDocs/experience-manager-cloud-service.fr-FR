@@ -2,9 +2,9 @@
 title: Notes de mise à jour d’Adobe Experience Manager (AEM) as a Cloud Service.
 description: Notes de mise à jour d’Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: bd2a2fb37b7a89a41687e15eacf9dbb767cb272f
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '661'
 ht-degree: 53%
 
 ---
@@ -32,7 +32,7 @@ En plus de la vitesse d’innovation, [!DNL Adobe Experience Manager] en tant qu
 
 Pour préparer une version :
 
-1. Marquez vos calendriers : Vérifiez les dates clés des versions mensuelles de la [feuille de route des versions du Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service) et marquez vos calendriers pour vous préparer aux activités clés afin de vous préparer à la version.
+1. Marquez vos calendriers : Vérifiez les dates clés des versions mensuelles de la [feuille de route des versions du Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) et marquez vos calendriers pour vous préparer aux activités clés afin de vous préparer à la version.
 1. Consultez les notes de mise à jour : Lisez les [notes de mise à jour actuelles](/help/release-notes/release-notes-cloud/release-notes-current.md) pour vous familiariser avec les fonctionnalités de version et de version préliminaire.
 1. Accédez aux nouvelles fonctionnalités et essayez-les : Activez le [canal de version préliminaire](/help/release-notes/prerelease.md) dans vos environnements hors production et commencez à essayer les fonctionnalités à évaluer dans vos environnements personnalisés.
 1. Formation des utilisateurs : Utilisez la documentation et les ressources Experience League pour mettre les utilisateurs au courant rapidement et maîtrisant les nouvelles fonctionnalités.

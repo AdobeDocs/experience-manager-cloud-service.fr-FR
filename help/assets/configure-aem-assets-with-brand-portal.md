@@ -2,12 +2,12 @@
 title: Configuration d’AEM Assets as a [!DNL Cloud Service] avec Brand Portal
 description: Configuration d’AEM Assets avec Brand Portal.
 contentOwner: Vishabh Gupta
-feature: Brand Portal,Distribution de ressources,Configuration
+feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '2409'
+source-wordcount: '2396'
 ht-degree: 98%
 
 ---
@@ -25,7 +25,7 @@ L’utilisateur de Cloud Manager active Brand Portal pour une instance AEM As
 Vous avez besoin des éléments suivants pour activer Brand Portal sur votre instance AEM Assets as a [!DNL Cloud Service] :
 
 * Une instance AEM Assets as a [!DNL Cloud Service] opérationnelle.
-* Utilisateur ayant accès à Cloud Manager, affecté aux Profils du produit Cloud Manager. Consultez [Accès à Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=fr#accessing-cloud-manager) pour plus d’informations.
+* Utilisateur ayant accès à Cloud Manager, affecté aux Profils du produit Cloud Manager. Consultez [Accès à Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) pour plus d’informations.
 
 >[!NOTE]
 >
@@ -61,9 +61,9 @@ Vous pouvez activer Brand Portal au moment de la création des environnements p
 >Si la configuration cloud existante de Brand Portal et de l’instance AEM Assets as a [!DNL Cloud Service] utilisent la même organisation IMS (org1), il vous suffit d’activer Brand Portal à partir de Cloud Manager.
 
 **Voir également** :
-* [Ajouter des utilisateurs et des rôles dans AEM Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=en)
+* [Ajouter des utilisateurs et des rôles dans AEM Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
 
-* [Gestion des environnements dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=fr#adding-environments)
+* [Gestion des environnements dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments)
 
 
 **Connectez-vous à votre client Brand Portal** :
@@ -445,7 +445,7 @@ You can now:
 * [Publish assets from AEM Assets to Brand Portal](publish-to-brand-portal.md)
 * [Publish folders from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Publish collections from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en) - Asset Sourcing in Brand Portal
+* [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - Asset Sourcing in Brand Portal
 * [Publish presets, schemas, and facets to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [Publish tags to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 

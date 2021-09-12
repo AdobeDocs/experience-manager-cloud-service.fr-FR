@@ -1,12 +1,12 @@
 ---
 title: Intégration des visionneuses Dynamic Media avec Adobe Analytics et les balises Experience Platform
 description: Découvrez l’extension Visionneuses Dynamic Media pour les balises Experience Platform et les visionneuses Dynamic Media 5.13. Elle permet aux clients d’Adobe Analytics et des balises Platform d’utiliser des événements et des données spécifiques aux visionneuses Dynamic Media dans leur configuration de balises Experience Platform.
-feature: Rapports de ressources
+feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 13dbce0d8ad25fec47460a41c5ea3e355a4dd486
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '6681'
+source-wordcount: '6675'
 ht-degree: 58%
 
 ---
@@ -231,7 +231,7 @@ L’exemple de configuration ci-dessus affecte également la durée de vie de la
 
 Dans tous les cas, les valeurs des éléments de données pilotées par les visionneuses Dynamic Media ne sont pas stockées sur le stockage local ou sur le serveur ; elles sont conservées uniquement dans la bibliothèque de balises Experience Platform côté client. Les valeurs de cet élément de données disparaissent lors du rechargement de la page web.
 
-En règle générale, l’éditeur d’éléments de données prend en charge la [sélection de la durée de stockage](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=en#create-a-data-element). Toutefois, les éléments de données qui utilisent l’extension Visionneuses Dynamic Media ne prennent en charge que l’option de durée de stockage **[!UICONTROL Aucune]**. La définition d’une autre valeur est possible dans l’interface utilisateur, mais le comportement de l’élément de données n’est pas défini dans ce cas. L’extension gère elle-même la valeur de l’élément de données qui conserve la valeur de l’argument d’événement de visionneuse pendant tout le cycle de vie de la visionneuse.
+En règle générale, l’éditeur d’éléments de données prend en charge la [sélection de la durée de stockage](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html#create-a-data-element). Toutefois, les éléments de données qui utilisent l’extension Visionneuses Dynamic Media ne prennent en charge que l’option de durée de stockage **[!UICONTROL Aucune]**. La définition d’une autre valeur est possible dans l’interface utilisateur, mais le comportement de l’élément de données n’est pas défini dans ce cas. L’extension gère elle-même la valeur de l’élément de données qui conserve la valeur de l’argument d’événement de visionneuse pendant tout le cycle de vie de la visionneuse.
 
 ### À propos des règles dans l’extension Visionneuses Dynamic Media {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -443,7 +443,7 @@ Voir aussi le [Guide de mise en œuvre d’Analytics](https://experienceleague.a
 
    Si aucune suite de rapports n’est disponible, votre administrateur Adobe Analytics ou vous-même devez en créer une avant de poursuivre la configuration.
 
-   Voir [Rapports et suites de rapports](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html?lang=fr#manage-report-suites) et [Création d’une suite de rapports](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=fr#manage-report-suites).
+   Voir [Rapports et suites de rapports](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html?lang=fr#manage-report-suites) et [Création d’une suite de rapports](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html#manage-report-suites).
 
    Dans Adobe Analytics, les suites de rapports sont gérées sous **[!UICONTROL Admin]** > **[!UICONTROL Suites de rapports]**.
 
