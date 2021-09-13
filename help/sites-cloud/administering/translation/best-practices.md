@@ -1,17 +1,21 @@
 ---
 title: Bonnes pratiques de traduction
 description: Découvrez les bonnes pratiques compilées par les équipes d’ingénierie et de consulting d’Adobe qui vous aideront à mener à bien vos projets de traduction.
-feature: Copie de la langue
+feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 100%
+source-wordcount: '875'
+ht-degree: 95%
 
 ---
 
 # Bonnes pratiques de traduction {#translation-best-practices}
+
+>[!TIP]
+>
+>Si vous commencez à traduire du contenu, reportez-vous à notre [Parcours de traduction Sites,](/help/journey-sites/translation/overview.md) , qui est un chemin guidé vers la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
 
 ## Général {#general}
 

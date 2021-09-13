@@ -1,13 +1,13 @@
 ---
 title: Multi Site Manager et traduction
 description: Découvrez comment réutiliser votre contenu dans tout votre projet et comment gérer des sites web multilingues dans AEM.
-feature: Administration
+feature: Administering
 role: Admin
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 100%
+source-wordcount: '410'
+ht-degree: 90%
 
 ---
 
@@ -21,6 +21,10 @@ L’intégration de Multi Site Manager et d’outils de traduction à Adobe E
    * [Traduction de contenu pour les sites multilingues](translation/overview.md)
 
 Ces deux fonctions peuvent être combinées pour gérer les sites web qui sont à la fois [internationaux et multilingues](#multinational-and-multilingual-sites).
+
+>[!TIP]
+>
+>Si vous commencez à traduire du contenu, reportez-vous à notre [Parcours de traduction Sites,](/help/journey-sites/translation/overview.md) , qui est un chemin guidé vers la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
 
 ## Sites internationaux et multilingues {#multinational-and-multilingual-sites}
 
@@ -55,5 +59,5 @@ Pour les cas d’utilisation plus avancés, MSM peut également être utilisé d
 >Dans tous les cas, il est recommandé de lire les bonnes pratiques suivantes :
 >
 >* [Bonnes pratiques liées à MSM](msm/best-practices.md)
-* [Bonnes pratiques de traduction](translation/best-practices.md)
+>* [Bonnes pratiques de traduction](translation/best-practices.md)
 

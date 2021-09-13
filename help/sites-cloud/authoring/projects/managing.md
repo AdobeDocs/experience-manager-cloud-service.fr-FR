@@ -2,10 +2,10 @@
 title: Gestion de projets
 description: La console Projets vous permet d’organiser un projet en regroupant les ressources dans une seule entité à laquelle vous pouvez accéder et que vous pouvez gérer.
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
+source-git-commit: 54a098d8986c8bbd740bed50f8625c1025d2f6f4
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 100%
+source-wordcount: '894'
+ht-degree: 95%
 
 ---
 
@@ -15,7 +15,7 @@ La console Projets permet d’organiser un projet en regroupant les ressources d
 
 Dans la console **Projets**, vous pouvez appliquer des actions à vos projets :
 
-![Console Projets](/help/sites-cloud/authoring/assets/projects-console-detail.png)
+![Console Projets](/help/sites-cloud/authoring/assets/projects-console.png)
 
 Dans la console Projets, vous pouvez créer un projet, lui associer des ressources et supprimer un projet ou des liens vers des ressources. Vous pouvez ouvrir une mosaïque pour afficher son contenu et lui ajouter des éléments. Cette rubrique décrit les procédures correspondantes.
 
@@ -40,7 +40,7 @@ Les étapes de création d’un projet sont identiques d’un projet à l’autr
 
 1. Définissez le **titre** et la **description**, puis ajoutez une **miniature** s’il y a lieu. Vous pouvez également ajouter ou supprimer des utilisateurs et définir le groupe auquel ils appartiennent. Ensuite, cliquez sur **Avancé** pour ajouter le nom utilisé dans l’URL.
 
-   ![Ajout des détails du projet](/help/sites-cloud/authoring/assets/projects-title.png)
+   ![Ajout des détails du projet](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
 1. Cliquez/appuyez sur **Créer**. Le message de confirmation vous demande si vous voulez ouvrir votre projet ou revenir à la console.
 
@@ -85,13 +85,11 @@ Dans certaines mosaïques, vous pouvez ajouter plusieurs éléments. Par exemple
 
 Pour ajouter des éléments à une mosaïque :
 
-1. Dans la console **Projets**, accédez au projet, puis cliquez sur l’icône d’ajout (+) dans la mosaïque à laquelle vous souhaitez ajouter un élément.
+1. Dans **Projets**, accédez au projet et appuyez ou cliquez sur le chevron vers le bas de la mosaïque à laquelle vous souhaitez ajouter un élément.
 
-   ![Ajout d’un élément à une mosaïque](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
+   ![Ajout d’un élément à une mosaïque](/help/sites-cloud/authoring/assets/project-workflows.png)
 
 1. Ajoutez un élément à la mosaïque comme vous le feriez pour créer une mosaïque. Les mosaïques de projets sont décrites [ici](/help/sites-cloud/authoring/projects/overview.md#project-tiles). Dans cet exemple, un autre workflow a été ajouté.
-
-   ![Autre élément ajouté à une mosaïque](/help/sites-cloud/authoring/assets/projects-workflows-2.png)
 
 ### Ouverture d’une mosaïque {#opening-a-tile}
 
@@ -99,19 +97,17 @@ Vous pouvez voir les éléments qui ont été ajoutés à une mosaïque ou modif
 
 Pour ouvrir une mosaïque afin d’afficher ou de modifier des éléments :
 
-1. Dans la console Projets, cliquez/appuyez sur les points de suspension (...)
+1. Dans la console Projets, cliquez/appuyez sur les points de suspension (...) au bas de la carte.
 
-   ![Ouverture d’une mosaïque](/help/sites-cloud/authoring/assets/projects-open-tile.png)
+   ![Ouverture d’une mosaïque](/help/sites-cloud/authoring/assets/project-links.png)
 
 1. AEM répertorie les éléments contenus dans cette mosaïque. Vous pouvez activer le mode de sélection pour modifier ou supprimer des éléments.
 
-   ![Mosaïque ouverte](/help/sites-cloud/authoring/assets/projects-opened-tile.png)
+   ![Mosaïque ouverte](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
 ## Affichage des statistiques d’un projet {#viewing-project-statistics}
 
-Pour afficher les statistiques de projet, dans la console **Projets**, cliquez sur **Afficher la vue Statistiques**. Le niveau d’avancement de chaque projet s’affiche. Cliquez une nouvelle fois sur **Afficher la vue Statistiques** pour accéder à la console **Projets**.
-
-![Statistiques du projet](/help/sites-cloud/authoring/assets/projects-stats.png)
+Vous pouvez afficher les statistiques du projet dans la console **Projets**.
 
 ### Affichage d’une chronologie de projet {#viewing-a-project-timeline}
 
@@ -138,12 +134,11 @@ Pour activer/désactiver un projet :
 1. Dans la console **Projets**, ouvrez votre projet, puis recherchez la mosaïque **Informations sur le projet**.
 
    >[!NOTE]
-   >
-   >Vous pourriez être amené à ajouter cette mosaïque, si ce n’est pas déjà fait dans votre projet. Voir [Ajout de mosaïques](#adding-items-to-a-tile).
+   Vous pourriez être amené à ajouter cette mosaïque, si ce n’est pas déjà fait dans votre projet. Voir [Ajout de mosaïques](#adding-items-to-a-tile).
 
 1. Appuyez/cliquez sur **Modifier**.
 1. Basculez la valeur du sélecteur entre **Actif** et **Inactif**.
 
-   ![Activation d’un projet](/help/sites-cloud/authoring/assets/projects-activate.png)
+   ![Activation d’un projet](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
 1. Cliquez/appuyez sur **Terminé** pour enregistrer vos modifications.

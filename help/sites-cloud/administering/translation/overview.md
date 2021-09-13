@@ -1,13 +1,13 @@
 ---
 title: Traduction de contenu pour les sites multilingues
 description: Bénéficiez d’un aperçu de la traduction de contenu pour les sites multilingues.
-feature: Copie de la langue
+feature: Language Copy
 role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 100%
+source-wordcount: '292'
+ht-degree: 86%
 
 ---
 
@@ -17,6 +17,10 @@ Automatisez la traduction du contenu de pages et de ressources pour créer et te
 
 * **Traduction humaine :** le contenu est envoyé à votre fournisseur de traduction et traduit par des traducteurs professionnels. Une fois la traduction terminée, le contenu traduit est renvoyé et importé dans AEM. Lorsque votre fournisseur de traduction est intégré à AEM, le contenu est automatiquement transféré entre AEM et le fournisseur de traduction.
 * **Traduction automatique :** le service de traduction automatique traduit immédiatement votre contenu.
+
+>[!TIP]
+>
+>Si vous commencez à traduire du contenu, reportez-vous à notre [Parcours de traduction Sites,](/help/journey-sites/translation/overview.md) , qui est un chemin guidé vers la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
 
 La traduction du contenu implique les étapes suivantes :
 

@@ -2,10 +2,10 @@
 title: Utilisation de tâches
 description: Les tâches représentent les éléments de travail à effectuer sur le contenu. Elles sont utilisées dans les projets pour déterminer le niveau de réalisation des tâches en cours
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '580'
-ht-degree: 100%
+source-git-commit: fef0aef0d440eaedbf1a88cba0640e1f98e85e3e
+workflow-type: tm+mt
+source-wordcount: '578'
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ Si un projet contient des tâches associées, une mosaïque Tâches s’affiche 
 * Pourcentage de tâches actives
 * Pourcentage de tâches en retard
 
-![Mosaïque Tâches](/help/sites-cloud/authoring/assets/projects-tasks.png)
+![Mosaïque Tâches](/help/sites-cloud/authoring/assets/projects-tasks-breakdown.png)
 
 ### Affichage ou modification des tâches dans un projet {#viewing-or-modifying-the-tasks-in-a-project}
 
@@ -47,7 +47,7 @@ Cliquez sur les points de suspension (...) dans la mosaïque Tâches pour affich
 
 #### Détails de la tâche {#task-details}
 
-Pour plus d’informations sur une tâche particulière, dans la liste Tâches, cliquez/appuyez sur la tâche pour ouvrir la fenêtre **Détails de la tâche**.
+Pour plus d’informations sur une tâche particulière, dans la liste Tâches, appuyez/cliquez sur la tâche et **Ouvrez**.
 
 ![Détails de la tâche](/help/sites-cloud/authoring/assets/projects-task-details.png)
 

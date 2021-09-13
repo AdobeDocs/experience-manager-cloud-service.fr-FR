@@ -2,10 +2,10 @@
 title: Utilisation des workflows de projet
 description: Plusieurs workflows de projet sont directement disponibles.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
+source-git-commit: 89972691dadb9573160ba16a220c5b7cb3ae9742
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 100%
+source-wordcount: '452'
+ht-degree: 99%
 
 ---
 
@@ -21,15 +21,14 @@ Les workflows de projet disponibles et prêts à l’emploi sont les suivants :
 
 Selon le modèle de projet sélectionné, certains workflows sont disponibles :
 
-|  | **Projet simple** | **Projet de média** | **Projet de traduction** |
-|---|:-:|:-:|:-:|
-| Demander la copie |  | x |  |
-| Approbation de projet | x |  |  |
-| Demander le lancement | x |  |  |
-| Demander la page d’entrée | x |  |  |
-| Adresse de demande | x |  |  |
-| DAM Créer copie de langue&amp;ast; |  |  | x |
-| DAM Créer et traduire copie de langue&amp;ast; |  |  | x |
+|  | **Projet simple** | **Projet de traduction** |
+|---|:-:|:-:|
+| Workflow d’approbation de projet | x |  |
+| Demander le lancement | x |  |
+| Demander la page d’entrée | x |  |
+| Adresse de demande | x |  |
+| DAM Créer copie de langue&amp;ast; |  | x |
+| DAM Créer et traduire copie de langue&amp;ast; |  | x |
 
 >[!NOTE]
 >
@@ -47,19 +46,6 @@ Pour plus d’informations sur l’utilisation des workflows dans AEM, reportez-
 
 Cette section décrit les workflows disponibles pour les projets.
 
-## Workflow de demande de copie {#request-copy-workflow}
-
-Ce workflow vous permet de demander un manuscrit à un utilisateur, puis de l’approuver. Pour démarrer le workflow de demande de copie :
-
-1. Dans votre projet de média, sélectionnez l’option de connexion **+** dans la mosaïque **Workflows**, puis sélectionnez le workflow **Demander la copie**.
-1. Saisissez un titre de manuscrit et un bref résumé de votre demande. Le cas échéant, entrez un nombre de mots cible, la priorité de la tâche et une date d’échéance.
-
-   ![Workflow de demande de copie](/help/sites-cloud/authoring/assets/projects-request-copy.png)
-
-1. Cliquez sur **Créer**. Le workflow commence. La tâche apparaît dans la mosaïque **Tâches**.
-
-   ![Demande de copie ajoutée](/help/sites-cloud/authoring/assets/projects-request-copy-add.png)
-
 ## Workflow d’approbation de projet {#project-approval-workflow}
 
 Dans le workflow d’approbation de projet, vous attribuez du contenu à un utilisateur et passez en revue ce contenu, puis vous l’approuvez.
@@ -70,8 +56,6 @@ Dans le workflow d’approbation de projet, vous attribuez du contenu à un util
    ![Demande d’approbation](/help/sites-cloud/authoring/assets/projects-approval.png)
 
 1. Cliquez sur **Créer**. Le workflow commence. La tâche apparaît dans la mosaïque **Tâches**.
-
-   ![Demande d’approbation ajoutée](/help/sites-cloud/authoring/assets/projects-approval-add.png)
 
 ## Workflow Demander le lancement {#request-launch-workflow}
 
@@ -86,4 +70,4 @@ Ce workflow vous permet de demander un lancement.
 
 ## Workflow Créer (et traduire) la copie de la langue pour les ressources {#create-and-translate-language-copy-workflow-for-assets}
 
-Les workflows **Créer une copie de langue** et **Créer et traduire la copie de langue** sont présentés en détail dans la section Création de copies de langue pour les ressources.
+Les workflows **Créer une copie de langue** et **Créer et traduire la copie de langue**[ sont présentés en détail dans la section Création de copies de langue pour les ressources.](/help/assets/translate-assets.md)
