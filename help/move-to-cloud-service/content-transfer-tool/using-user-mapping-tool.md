@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de mappage des utilisateurs
 description: Utilisation de l’outil de mappage des utilisateurs
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: a9119ac04762c91230d52d6418b7808bca7e9f9f
+source-git-commit: 3adbaf4735b65125178a24a223100d50e132967a
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 93%
+source-wordcount: '1315'
+ht-degree: 84%
 
 ---
 
@@ -50,11 +50,10 @@ Les cas spécifiques suivants seront consignés :
 
 * Lorsque des rechargements de contenu sont effectués, si le contenu n’est pas transféré parce qu’il n’a pas été modifié depuis le transfert précédent, les utilisateurs et les groupes associés à ce contenu ne seront pas transférés non plus, même si les utilisateurs et les groupes ont changé entre-temps. En effet, les utilisateurs et les groupes font l’objet d’un migration avec le contenu auquel ils sont associés.
 
-* L’ingestion échoue dans les cas suivants :
+* Si l’instance de Cloud Service de l’AEM cible a un utilisateur avec un nom d’utilisateur différent mais la même adresse électronique que l’un des utilisateurs sur l’instance d’AEM source et que le mappage de l’utilisateur est activé, un message d’erreur est écrit dans les journaux et l’utilisateur de l’source ne sera pas transféré, car un seul utilisateur avec une adresse électronique donnée est autorisé sur le système cible.
 
-1. Si l’instance AEM Cloud Service cible a un utilisateur dont le nom d’utilisateur est différent mais la même adresse électronique que l’un des utilisateurs de l’instance AEM source.
+* Si deux utilisateurs de l’instance d’AEM source ont la même adresse électronique et que le mappage des utilisateurs est activé, un message d’erreur est écrit dans les journaux et l’un des utilisateurs d’AEM source ne sera pas transféré, car un seul utilisateur disposant d’une adresse électronique donnée est autorisé sur le système cible.
 
-1. S’il y a deux utilisateurs sur l’instance AEM source avec des noms d’utilisateur différents mais la même adresse électronique. AEM as a Cloud Service ne permet pas à deux utilisateurs d’avoir la même adresse électronique.
 
 ## Utilisation de l’outil de mappage des utilisateurs {#using-user-mapping-tool}
 
