@@ -4,10 +4,10 @@ user-guide-title: Guide d’Assets as a Cloud Service
 breadcrumb-title: Guide d’Assets
 user-guide-description: Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: 69f1ac34dc24f92cae47e1bfcffb39f6f3b03b7b
+source-git-commit: 8ed1d93a11c326df449164d35c7433f21b64d187
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 69%
+source-wordcount: '483'
+ht-degree: 68%
 
 ---
 
@@ -41,6 +41,7 @@ ht-degree: 69%
    + [Profils de métadonnées](metadata-profiles.md)
    + [Schéma de métadonnées](metadata-schemas.md)
    + [Gestion des ressources vidéo](manage-video-assets.md)
+   + [Réutilisation des ressources à l’aide de MSM](reuse-assets-using-msm.md)
    + [Téléchargement de ressources](download-assets-from-aem.md)
    + [Archivage et extraction des ressources à modifier](check-out-and-submit-assets.md)
    + [Gestion des droits numériques des ressources](drm.md)
@@ -58,7 +59,7 @@ ht-degree: 69%
    + [Authentification pour les requêtes GraphQL distantes sur les fragments de contenu](content-fragments/graphql-authentication-content-fragments.md)
    + [API GraphQL avec fragments de contenu – Exemple de contenu et requêtes](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Ressources connectées](use-assets-across-connected-assets-instances.md)
-   + [Génération de rendus FPO pour Adobe InDesign](configure-fpo-renditions.md)
+   + [Générer pour placement uniquement les rendus](configure-fpo-renditions.md)
    + [Rapports de ressources](asset-reports.md)
    + [Métadonnées en cascade](cascading-metadata.md)
    + [Métadonnées XMP](xmp-metadata.md)
