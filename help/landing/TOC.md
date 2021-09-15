@@ -1,12 +1,12 @@
 ---
-sub-product: Aide d’Adobe Experience Manager as a Cloud Service
+sub-product: Adobe Experience Manager as a Cloud Service Help
 user-guide-title: Aide d’Adobe Experience Manager as a Cloud Service
-feature: Informations sur la version
+feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 918f1bf1471fb66be4adfef8e26f2f5f9d887616
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 64%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +16,6 @@ ht-degree: 64%
 + [Experience Manager as a Cloud Service](/help/landing/home.md)
 + [Présentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html)
 + [Notes de mise à jour](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html?lang=fr)
-+ [Concepts de base d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/home.html)
 + [Sécurité d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/home.html)
 + [Intégration à AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html)
 + [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/home.html)

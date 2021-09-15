@@ -2,10 +2,10 @@
 title: Intégration à Adobe Experience Manager as a Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation concernant l’intégration à Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 7f641dc31ebe6e3847c98ed5ec44c74c6bbdf6bc
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 60%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -35,9 +35,8 @@ Le parcours d’intégration illustré ci-dessous est conçu pour un personnage 
 | Guide de l’utilisateur | Description |
 |---|---|
 | [Page d’accueil d’Experience Manager as a Cloud Service](/help/landing/home.md) | Pour une présentation de la documentation d’Experience Manager as a Cloud Service, commencez ici. |
-| [Présentation](/help/overview/home.md) | Ce guide présente [!DNL Experience Manager as a Cloud Service], ainsi qu’une introduction, la terminologie, etc. |
+| [Présentation](/help/overview/home.md) | Ce guide présente [!DNL Experience Manager as a Cloud Service], avec une introduction, la terminologie, l’architecture, etc. |
 | [Notes de mise à jour](/help/release-notes/home.md) | Ce guide fournit des informations importantes sur la dernière version de [!DNL Experience Manager as a Cloud Service], notamment sur les nouvelles fonctionnalités, celles obsolètes et supprimées, ainsi que les problèmes connus. |
-| [Concepts de base](/help/core-concepts/home.md) | Ce guide présente les concepts de base d’[!DNL Experience Manager as a Cloud Service] , y compris l’architecture du nouveau service. |
 | [Guide de l’utilisateur relatif à la sécurité](/help/security/home.md) | Découvrez les sujets de sécurité importants concernant [!DNL Experience Manager as a Cloud Service]. |
 | [Guide de l’utilisateur de Sites](/help/sites-cloud/home.md) | Découvrez comment créer et administrer [!DNL Experience Manager Sites] en tant que Cloud Service. |
 | [Guide de l’utilisateur d’Assets](/help/assets/home.md) | Comprendre comment utiliser et administrer [!DNL Experience Manager Assets as a Cloud Service]. |

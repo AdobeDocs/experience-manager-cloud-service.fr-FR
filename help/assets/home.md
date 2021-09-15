@@ -1,13 +1,13 @@
 ---
 title: Guide d’[!DNL Assets] as a [!DNL Cloud Service]
 description: Ressources d’aide autonome et liens vers la documentation [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]
-feature: Gestion des ressources
+feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: 60acec6116f624188b484ffa1abd657cd4301e77
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 86%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,6 @@ Les ressources d’auto-assistance suivantes sont disponibles pour [!DNL Experie
 | [[!DNL Experience Manager] as a [!DNL Cloud Service] Accueil](/help/landing/home.md) | Documentation complète d’[!DNL Experience Manager] as a [!DNL Cloud Service]. |
 | [Présentation](/help/overview/home.md) | Présentation générale et glossaire d’[!DNL Experience Manager] as a [!DNL Cloud Service]. |
 | [Notes de mise à jour](/help/release-notes/home.md) | Notes de mise à jour, nouveautés, fonctionnalités obsolètes et supprimées et problèmes connus. |
-| [Concepts de base](/help/core-concepts/home.md) | Ce guide présente les concepts de base d’[!DNL Experience Manager] as a [!DNL Cloud Service], y compris l’architecture du nouveau service. |
 | [Guide de l’utilisateur relatif à la sécurité](/help/security/home.md) | Découvrez les sujets de sécurité importants concernant [!DNL Experience Manager] as a [!DNL Cloud Service]. |
 | [Intégration](/help/onboarding/home.md) | Prise en main d’[!DNL Experience Manager] as a [!DNL Cloud Service] – accédez aux données importantes et protégez-les. |
 | [Guide de l’utilisateur de Sites](/help/sites-cloud/home.md) | Découvrez comment créer et administrer [!DNL Experience Manager Sites] as a [!DNL Cloud Service]. |
