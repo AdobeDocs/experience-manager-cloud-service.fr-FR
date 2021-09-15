@@ -1,13 +1,13 @@
 ---
 title: En savoir plus sur le développement CMS découplé
 description: Dans cette partie du parcours de développement découplé AEM, découvrez la technologie découplée et pourquoi l’utiliser.
-source-git-commit: ddd320ae703225584d4a2055d0f882d238d60987
-workflow-type: ht
+exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 100%
 
 ---
-
 
 # En savoir plus sur le développement CMS découplé {#learn-about}
 
@@ -64,7 +64,7 @@ Lorsque nous parlons d’un CMS découplé (ou sans tête), il s’agit d’un s
 
 Les services consommateurs (expériences de réalité augmentée, boutiques web, expériences mobiles, applications web progressives (PWA), etc.) récupèrent le contenu du CMS découplé et fournissent leur propre rendu. Ils se chargent de fournir leurs propres têtes à votre contenu.
 
-Omettre la tête (en mode découplé) permet de simplifier CMS en éliminant sa complexité. Vous pouvez ainsi transférer la responsabilité de rendu du contenu vers les services qui en ont réellement besoin et qui sont souvent mieux adaptés pour cela.
+Omettre la tête (en mode découplé) permet de simplifier le CMS en éliminant sa complexité. Vous pouvez ainsi transférer la responsabilité de rendu du contenu vers les services qui en ont réellement besoin et qui sont souvent mieux adaptés pour cela.
 
 ## Découplage {#decoupling}
 
@@ -82,7 +82,7 @@ Dans le passé, les API pour CMS étaient généralement basées sur REST. L’a
 
 Des API REST robustes restent nécessaires. Toutefois, les requêtes REST peuvent être volumineuses et extrêmement détaillées. Si plusieurs consommateurs effectuent des appels REST pour tous vos canaux, il peut y avoir une incidence sur la diversité des composés et les performances.
 
-La diffusion de contenu en mode découplé s’appuie souvent sur les API GraphQL. GraphQL permet un transfert sans état similaire, mais avec des requêtes plus ciblées, ce qui diminue le nombre total de requêtes requises et améliore les performances. Il est courant de voir les solutions conjuguer REST et GraphQL en choisissant essentiellement le meilleur outil pour la tâche à accomplir.
+La diffusion de contenu en mode découplé s’appuie souvent sur les API GraphQL. GraphQL permet un transfert similaire, sans enregistrement de l’état, mais avec des requêtes plus ciblées, ce qui diminue le nombre total de requêtes requises et améliore les performances. Il est courant de voir les solutions conjuguer REST et GraphQL en choisissant essentiellement le meilleur outil pour la tâche à accomplir.
 
 Quelle que soit l’API choisie, en définissant un système découplé basé sur des API courantes, vous pouvez tirer parti du navigateur le plus récent et d’autres technologies web, comme les applications web progressives (PWA). Les API créent une interface standard facilement extensible et adaptable.
 
@@ -112,7 +112,7 @@ En tant que leader du secteur de la gestion de l’expérience digitale, Adobe s
 
 Ce parcours se concentre exclusivement sur le modèle de diffusion de contenu en mode découplé. Cependant, une fois que vous disposez de ces connaissances fondamentales, vous pouvez explorer plus en détail la manière d’exploiter la puissance des deux modèles.
 
-## Et après ?{#what-is-next}
+## Et après ? {#what-is-next}
 
 Merci de vous être engagé sur ce parcours découplé AEM ! Maintenant que vous avez lu ce document, vous devriez :
 
@@ -126,5 +126,5 @@ Appuyez-vous sur ces connaissances et continuez votre parcours découplé AEM en
 
 Bien qu’il soit recommandé de passer à la partie suivante du parcours de développement découplé en examinant le document [Prise en main d’AEM découplé as a Cloud Service](getting-started.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre le parcours découplé.
 
-* [Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service](/help/core-concepts/architecture.md) – Comprendre la structure d’AEM as a Cloud Service
+* [Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) – Comprendre la structure d’AEM as a Cloud Service
 * [Tutoriels sur AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) – Ces tutoriels pratiques vous permettront de découvrir comment utiliser, avec AEM, les différentes options de diffusion de contenu vers des points de terminaison en mode découplé et choisir ce qui vous convient.

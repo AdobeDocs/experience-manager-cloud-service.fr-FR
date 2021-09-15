@@ -2,8 +2,8 @@
 title: Nouveautés
 description: Nouveautés d’Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: f854aaf8-e84d-4904-832f-f72433590920
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ Adobe Experience Manager (AEM) as a Cloud Service consiste en une plate-forme n
 
 Pour une présentation générale de l’Adobe Experience Manager as a Cloud Service, voir :
 * [Introduction à AEM as a Cloud Service](/help/overview/introduction.md)
-* [Architecture](/help/core-concepts/architecture.md) d’Adobe Experience Manager as a Cloud Service
+* [Architecture](/help/overview/architecture.md) d’Adobe Experience Manager as a Cloud Service
 * [Présentation d’AEM as a Cloud Service – Nouveautés et différences](/help/overview/what-is-new-and-different.md)
 
 <!-- Please link to introduction or what's new of Sites. -->

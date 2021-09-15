@@ -2,7 +2,7 @@
 title: Premiers pas vers votre première expérience d’utilisation d’AEM découplé
 description: Dans cette partie du parcours de développement découplé AEM, vous découvrirez les étapes de mise en œuvre de votre première expérience découplée dans AEM, notamment des considérations concernant sa planification, et découvrirez également les bonnes pratiques pour rendre votre parcours aussi fluide que possible.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '2016'
 ht-degree: 87%
@@ -147,7 +147,7 @@ Bien qu’il soit recommandé de passer à la partie suivante du parcours de dé
 * [Tutoriels AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) : utilisez ces tutoriels pratiques découvrir comment utiliser les différentes options de diffusion de contenu vers des points d’entrée découplés avec AEM et choisissez ce qui vous convient.
 * [Gestion de contenu en mode découplé à l’aide des API GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) – Suivez ce cours pour bénéficier d’une présentation de l’API GraphQL implémentée dans AEM. L’authentification à l’aide de l’Adobe ID est requise.
 * [Guides AEM WKND – GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) : ce projet GitHub comprend des exemples d’applications qui mettent en évidence l’API AEM GraphQL.
-* [Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service](/help/core-concepts/architecture.md) : aperçu complet de l’architecture AEM.
+* [Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) : aperçu complet de l’architecture AEM.
 * [Guide de prise en main du découplage](/help/implementing/developing/headless/introduction.md#getting-started) : présentation rapide des fonctionnalités découplées AEM pour les utilisateurs qui connaissent déjà AEM.
 * [Créer des modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) : documentation technique sur les modèles de fragment de contenu.
 * [Créer des fragments de contenu](/help/assets/content-fragments/content-fragments.md) : documentation technique sur les fragments de contenu.
