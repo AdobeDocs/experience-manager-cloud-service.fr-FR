@@ -4,8 +4,8 @@ description: Guide de migration de Experience Manager en tant que Cloud Service 
 exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
 source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2112'
+ht-degree: 97%
 
 ---
 
