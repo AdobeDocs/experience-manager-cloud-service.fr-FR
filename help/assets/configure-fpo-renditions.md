@@ -4,12 +4,13 @@ description: Générez des rendus FPO de nouvelles ressources et de ressources e
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
-source-git-commit: 1152ce8be74b5049d4c28cb49d925f55fb09585b
+source-git-commit: 7e82c3c5490c2f6d43167e6784cdbbb60f811a6f
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 8%
 
 ---
+
 
 # Générer pour placement uniquement les rendus pour Adobe InDesign {#fpo-renditions}
 
@@ -20,7 +21,9 @@ Assets fournit des rendus utilisés uniquement pour placement (FPO). Ces rendus 
 Experience Manager as a Cloud Service offre des fonctionnalités de traitement des ressources natives dans le cloud pour générer les rendus FPO. Utilisez les microservices de ressources pour la génération de rendu. Vous pouvez configurer la génération de rendu des ressources nouvellement chargées et des ressources qui existent dans Experience Manager.
 
 Vous trouverez ci-dessous les étapes de génération des rendus FPO :
+
 1. [Création d’un profil de traitement](#create-processing-profile).
+
 1. Configurez Experience Manager pour utiliser ce profil afin de [traiter les nouvelles ressources](#generate-renditions-of-new-assets).
 1. Utilisez les profils pour [traiter les ressources existantes](#generate-renditions-of-existing-assets).
 

@@ -1,12 +1,12 @@
 ---
 title: Profils d’image Dynamic Media
 description: Découvrez comment créer des profils d’image Dynamic Media contenant des paramètres pour le masquage flou et le recadrage intelligent, ou les échantillons intelligents, ou les deux. Ensuite, appliquez le profil à un dossier de ressources d’image.
-feature: Gestion des ressources, Profils d’image, Rendus
+feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 02af43ae7a8aa579f4679fbed4626718b895d453
+source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
-source-wordcount: '2762'
+source-wordcount: '2757'
 ht-degree: 76%
 
 ---
@@ -102,7 +102,7 @@ Pour définir des paramètres de traitement avancés pour d’autres types de re
 
 Voir [À propos des profils d’image et vidéo Dynamic Media](/help/assets/dynamic-media/about-image-video-profiles.md).
 
-Consultez également la section [Bonnes pratiques pour organiser vos ressources numériques en vue d’utiliser des profils de traitement](/help/assets/dynamic-media/best-practices-for-file-management.md).
+Consultez également la section [Bonnes pratiques pour organiser vos ressources numériques en vue d’utiliser des profils de traitement](/help/assets/organize-assets.md).
 
 **Pour créer des profils d’image Dynamic Media :**
 

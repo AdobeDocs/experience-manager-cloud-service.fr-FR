@@ -4,14 +4,14 @@ description: Découvrez comment utiliser la vidéo dans Dynamic Media.
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: d174ff3a27d9a0a3d89bb146b847cf253b8afbdc
 workflow-type: tm+mt
-source-wordcount: '9497'
+source-wordcount: '9427'
 ht-degree: 80%
 
 ---
 
-# Vidéo{#video}
+# Vidéo {#video}
 
 Cette section décrit l’utilisation de vidéos dans Dynamic Media.
 
@@ -37,7 +37,6 @@ Le processus détaillé décrit ci-après vise à vous aider à maîtriser rapid
    * Associez le profil de traitement vidéo à un ou plusieurs dossiers dans lequel vous allez charger les vidéos issues de sources originales.
 
       * [Application d’un profil vidéo à des dossiers](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
-      * En savoir plus sur les [bonnes pratiques relatives à l’organisation des ressources numériques en vue de l’utilisation de profils de traitement](/help/assets/dynamic-media/best-practices-for-file-management.md).
       * En savoir plus sur [l’organisation des ressources numériques](/help/assets/organize-assets.md).
    * Chargez les vidéos issues de sources originales dans les dossiers. Lorsque vous ajoutez des vidéos au dossier, elles sont codées selon le profil de traitement vidéo affecté au dossier.
 
@@ -54,9 +53,7 @@ Le processus détaillé décrit ci-après vise à vous aider à maîtriser rapid
 
    * Organisez, parcourez et recherchez des ressources vidéo
 
-      * [Organisation des ](/help/assets/organize-assets.md)
-ressources numériquesEn savoir plus sur les  [bonnes pratiques relatives à l’organisation de vos ressources numériques en vue de l’utilisation de profils de traitement](/help/assets/dynamic-media/best-practices-for-file-management.md)
-
+      * [Organisation des ressources numériques](/help/assets/organize-assets.md)
       * [Recherche de ](/help/assets/search-assets.md#custompredicates) ressources vidéo ou  [recherche de ressources](/help/assets/manage-digital-assets.md#search-assets)
    * Prévisualisez et publiez des ressources vidéo
 
@@ -64,41 +61,27 @@ ressources numériquesEn savoir plus sur les  [bonnes pratiques relatives à l�
          [Prévisualisation de ](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) vidéos ou  [Prévisualisation de ressources](/help/assets/dynamic-media/previewing-assets.md)
          [Gestion des rendus vidéo](/help/assets/manage-digital-assets.md#managing-renditions)
 
+      * [Gestion des paramètres prédéfinis de visionneuse](/help/assets/dynamic-media/managing-viewer-presets.md)
+      * [Publier des ressources](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+   * Utiliser des métadonnées vidéo
 
-<!-- Commented video-renditions.md as the file is not published yet and will lead to broken link.
-        * View the source video and encoded renditions of the video along with its associated thumbnails:
-          [Previewing videos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) or [Previewing assets](/help/assets/dynamic-media/previewing-assets.md)
-          [Viewing video renditions](/help/assets/video-renditions.md)
-          [Managing video renditions](/help/assets/manage-digital-assets.md#managing-renditions) -->
+      * Modifiez les propriétés de la vidéo telles que le titre, la description, les balises et les champs de métadonnées personnalisés :
+         [Modification des propriétés vidéo](/help/assets/manage-digital-assets.md#editing-properties)
 
-    * [Gestion des paramètres prédéfinis de la visionneuse](/help/assets/dynamic-media/managing-viewer-presets.md)
-    * [Publication des ressources](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
-    
-    * Utilisation des métadonnées vidéo
+      * [Gestion des métadonnées des ressources numériques](/help/assets/manage-metadata.md)
+      * [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+   * Examiner, approuver et annoter des vidéos et conserver le contrôle total des versions
 
-<!--      * View the properties of an encoded video rendition such as frame rate, audio and video bitrate, and codec:
-          [Viewing video rendition properties](/help/assets/video-renditions.md) -->
+      * [Annotation de ](/help/assets/manage-video-assets.md#annotate-video-assets) vidéos ou  [annotation de ressources](/help/assets/manage-digital-assets.md#annotating)
 
-    * Modifier les propriétés d’une vidéo, telles que le titre, la description, les balises et les champs de métadonnées personnalisés :
-    [Modification des propriétés vidéo](/help/assets/manage-digital-assets.md#edit-properties)
-    
-    * [Gestion des métadonnées pour les ressources numériques](/help/assets/manage-metadata.md)
-    * [Schémas de métadonnées](/help/assets/metadata-schemas.md)
-    
-    * Réviser, approuver et annoter les vidéos, et conserver un contrôle de version total
-    
-    * [Annotation des vidéos](/help/assets/manage-video-assets.md#annotate-video-video-assets) ou [Annotation des ressources](/help/assets/manage-digital-assets.md#annotating)
-    
-    * [Création d’une version](/help/assets/manage-digital-assets.md#asset-versioning)
-    * [Démarrage d’un workflow sur une ressource](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
+      * [Créer une version](/help/assets/manage-digital-assets.md#asset-versioning)
+      * [Démarrage d’un workflow sur une ressource](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
 
-<!-- Removing assets-workflow.md file link as it is not applicable anymore. Workflows are replaced by processing profiles.
-        * [Creating a version](/help/assets/manage-digital-assets.md#asset-versioning)
-        * [Applying workflows to assets](/help/assets/assets-workflow.md) or see [Starting a workflow on an asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
--->
+      * [Examiner les ressources des dossiers](/help/assets/bulk-approval.md)
+      * [Projets](/help/sites-cloud/authoring/projects/overview.md)
 
-    * [Révision de ressources situées dans un dossier](/help/assets/bulk-approval.md)
-    * [Projets](/help/sites-cloud/authoring/projects/overview.md)
+
+
 
 1. Pour **publier les vidéos Dynamic Media**, effectuez l’une des opérations suivantes :
 

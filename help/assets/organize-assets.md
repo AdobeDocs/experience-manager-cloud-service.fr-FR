@@ -1,49 +1,106 @@
 ---
-title: Organisation des ressources numériques
-description: Organisez vos ressources numériques à l’aide de diverses méthodes fournies dans Adobe Experience Manager Assets.
+title: Organisez vos ressources numériques.
+description: Organisez vos ressources numériques, images, fichiers, dossiers, etc. à l’aide de Experience Manager.
 contentOwner: AG
-feature: Gestion des ressources,Balisage,Distribution des ressources
+feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 843d6660fc2a2048d138601b4b74ee9f2faa54c9
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 95%
+source-wordcount: '762'
+ht-degree: 5%
 
 ---
 
-# Organisation des ressources numériques {#organize-digital-assets}
+# Organisez vos ressources numériques. {#organize-digital-assets}
 
-L’ensemble des ressources numériques, des métadonnées et du contenu des documents Microsoft Office et PDF sont extraits et rendus utilisables dans une requête. La recherche permet un filtrage sophistiqué des ressources et respecte entièrement les autorisations appropriées. Les métadonnées sont traitées en détail dans la section Métadonnées dans la gestion des actifs numériques.
+Toutes les ressources numériques, les métadonnées et le contenu des documents Microsoft® Office et PDF sont extraits et peuvent faire l’objet de recherches. La recherche permet un filtrage sophistiqué des ressources et respecte entièrement les autorisations appropriées. Les métadonnées sont traitées en détail dans la section Métadonnées dans la gestion des actifs numériques.
 
-Experience Manager Assets prend en charge plusieurs méthodes d’organisation du contenu. Vous pouvez l’organiser de façon hiérarchique à l’aide de dossiers ou de manière ad hoc, non classée à l’aide de balises. Les utilisateurs peuvent modifier les balises dans l’éditeur de ressources de gestion des actifs numériques où les sous-ressources, rendus et métadonnées sont affichés.
+[!DNL Experience Manager Assets] prend en charge plusieurs méthodes d’organisation du contenu. Vous pouvez les organiser de manière hiérarchique à l’aide de dossiers ou les organiser de manière ad hoc et non ordonnée, par exemple à l’aide de balises. Les utilisateurs peuvent modifier des balises dans l’éditeur de ressources de gestion des actifs numériques où s’affichent des sous-ressources, des rendus et des métadonnées.
 
-## Création de dossiers   {#create-folders}
+<!-- Commenting to pull down the existing content before applying changes wrt CQDOC-15930
+## Create folders {#create-folders}
 
-Lorsque vous organisez une collection de ressources, comme toutes les images *Nature*, vous pouvez créer des dossiers pour les conserver ensemble. Vous pouvez utiliser des dossiers pour classer et organiser vos ressources. [!DNL Assets] ne nécessite pas de classer les ressources dans des dossiers pour mieux fonctionner.
+When organizing a collection of assets, for example, all *Nature* images, you can create folders to keep them together. You can use folders to categorize and organize your assets. [!DNL Assets] does not require you to organize assets in folders to work better.
 
 >[!NOTE]
 >
->Le partage d’un dossier de ressources (dans Marketing Cloud) de type `sling:OrderedFolder` n’est pas pris en charge. Si vous souhaitez partager un dossier, ne sélectionnez pas Ordonné lors de la création du dossier.
+>Sharing an Assets folder (in Marketing Cloud) of the type `sling:OrderedFolder`, is not supported. If you want to share a folder, do not select Ordered when creating a folder.
 
-1. Dans le dossier Ressources numériques, accédez à l’emplacement où vous souhaitez créer un dossier.
-1. Dans le menu, cliquez sur **[!UICONTROL Créer]**. Sélectionnez **[!UICONTROL Nouveau dossier]**.
-1. Dans le champ **[!UICONTROL Titre]**, indiquez le nom du dossier. Par défaut, DAM utilise le titre que vous avez fourni comme nom du dossier. Une fois le dossier créé, vous pouvez remplacer le nom par défaut et entrer un autre nom de dossier.
-1. Cliquez sur **[!UICONTROL Créer]**. Le dossier apparaît dans le dossier Ressources numériques.
+1. Navigate to the place in your digital assets folder where you want to create a new folder.
+1. In the menu, click **[!UICONTROL Create]**. Select **[!UICONTROL New Folder]**.
+1. In the **[!UICONTROL Title]** field, provide a folder name. By default, DAM uses the title that you provided as the folder name. Once the folder is created, you can override the default and specify another folder name.
+1. Click **[!UICONTROL Create]**. Your folder is displayed in the digital assets folder.
 
-## Ajout de propriétés CUG à des dossiers {#add-cug-properties-to-folders}
+## Add CUG properties to folders {#add-cug-properties-to-folders}
 
-Dans Assets, vous pouvez limiter les utilisateurs autorisés à accéder à certains dossiers en les faisant appartenir à un groupe d’utilisateurs fermé (CUG). Pour faire appartenir un dossier à un groupe d’utilisateurs fermé :
+You can limit who can access certain folders in Assets by making the folder part of a closed user group (CUG). To make a folder part of a CUG:
 
-1. Dans Assets, cliquez avec le bouton droit sur le dossier auquel souhaitez ajouter des propriétés CUG, puis sélectionnez **Propriétés**.
-1. Cliquez sur l’onglet **CUG**.
-1. Cochez la case **Activé** pour que le dossier et les ressources qu’il contient ne soient accessibles que par un groupe d’utilisateurs fermé.
-1. Pour ajouter ces informations, accédez à la page de connexion, le cas échéant. Ajoutez les groupes admis en cliquant sur **Ajouter un élément**. Si nécessaire, ajoutez le domaine. Cliquez sur **OK** pour enregistrer vos modifications.
+1. In Assets, right-click the folder you want to add closed user group properties for and select **Properties**.  
+1. Click the **CUG** tab.
+1. Select the **Enabled** check box to make the folder and its assets available only to a closed user group.  
+1. Browse to the login page, if there is one, to add that information. Add admitted groups by clicking **Add item**. If necessary, add the realm. Click **OK** to save your changes.
 
-## Utilisation de balises pour organiser les ressources {#use-tags-to-organize-assets}
+## Use tags to organize assets {#use-tags-to-organize-assets}
 
-Vous pouvez utiliser des dossiers, des balises ou les deux pour organiser des ressources. Lorsque vous ajoutez des balises aux ressources, vous facilitez leur récupération lors d’une recherche. Pour ajouter des balises à une ressource, procédez comme suit :
+You can use folders or tags or both to organize assets. Adding tags to assets makes them more easy to retrieve during a search. To add tags to an asset, follow these steps:
 
-1. Dans Digital Asset Manager, double-cliquez sur la ressource pour l’ouvrir.
-1. Dans la zone **Balises**, ouvrez le menu pour afficher les balises disponibles. Sélectionnez les balises appropriées. Pour supprimer une balise, pointez dessus et cliquez sur `X`.
-1. Cliquez sur **Enregistrer** pour enregistrer les balises ajoutées.
+1. In the Digital Asset Manager, double-click the asset to open it.
+1. In the **Tags** area, open the menu to reveal the available tags. Select tags as appropriate. To delete a tag, hover the pointer over the tag and click `X` to delete it.
+1. Click **Save** to save any tags you added.
+
+Date24/08/2021
+-->
+
+## Organisation des ressources dans des dossiers {#organize-using-folders}
+
+La méthode la plus simple pour organiser les ressources consiste à les enregistrer dans des dossiers. Cela revient à organiser les fichiers dans des dossiers de votre système de fichiers local. Pour plus d’informations sur la création et la gestion des dossiers, voir [Gestion des ressources](manage-digital-assets.md). La manière dont vous nommez les fichiers et les dossiers, organisez les sous-dossiers et gérez les fichiers dans ces dossiers peut avoir un impact significatif sur la manière dont ces ressources sont traitées. Grâce à des stratégies d’attribution de noms de fichiers et de dossiers cohérentes et appropriées, ainsi qu’à de bonnes pratiques de métadonnées, vous pouvez tirer le meilleur parti de votre référentiel de ressources numériques.
+
+* En règle générale, votre référentiel de ressources numériques est toujours en croissance. Il est donc important de formaliser l’utilisation des métadonnées, la structure des dossiers et l’attribution de noms aux fichiers au début du cycle de création de contenu.
+* Utilisez les dossiers uniquement pour imposer une structure de stockage cohérente pour vos ressources numériques. Cette cohérence aide votre processus et gère mieux vos ressources. Par exemple, les ressources placées dans les types de dossiers suivants peuvent vous aider à séparer les ressources :
+
+   * **Dossiers** de développement : contient les ressources numériques que vous utilisez actuellement.
+   * **Dossiers** clients : contient des ressources numériques en fonction des clients ou des noms de projet.
+   * **Dossiers** Principal : contient des ressources numériques sources originales.
+   * **Dossiers** de rendu : contient des rendus et des copies des ressources numériques sources originales.
+   * **Dossiers de taille de fichier** : contient des ressources numériques en fonction des tailles de fichier petite, moyenne ou volumineuse.
+   * **Dossiers intermédiaires** : contient des ressources numériques prêtes à être publiées sur votre site web.
+   * **Dossiers de type MIME** : contient des ressources numériques qui sont spécifiques à des types MIME tels que des images, des documents et des fichiers multimédia.
+   * **Dossiers d’archives** : contient des ressources numériques retirées.
+   * **Dossiers basés sur des dates** : contient des ressources numériques en fonction d’une date de création ou d’une date de dernière modification.
+
+* Créez un répertoire de dossiers susceptibles de ne pas changer, de sorte que toute personnalisation ou automatisation continue de fonctionner. Par exemple, les profils de traitement affectés continuent à fonctionner.
+* Si une ressource est déjà publiée, utilisez [!DNL Experience Manager] pour la déplacer vers un autre dossier et la republier à partir de son nouvel emplacement. L’emplacement de la ressource publiée d’origine est toujours disponible avec la ressource qui vient d’être republiée. La ressource publiée d’origine, cependant, est *perdue* par [!DNL Experience Manager] et ne peut pas être annulée. Par conséquent, il est recommandé d’abord d’annuler la publication d’une ressource, puis de la déplacer vers un autre dossier.
+
+## Organisation des ressources à l’aide de balises {#use-tags-to-organize-assets}
+
+À l’aide de balises, en tant que métadonnées, vous pouvez facilement rechercher des ressources, créer des collections à l’aide des résultats de recherche, améliorer le classement de certaines ressources et appliquer des algorithmes d’IA d’Adobe Sensei pour la découverte de ressources.
+
+[!DNL Adobe Experience Manager Assets] utilise un algorithme d’auto-apprentissage pour créer des balises hautement descriptives qui vous permettent de trouver la ressource appropriée en quelques clics seulement. Le balisage intelligent utilise Adobe Sensei, l’intelligence artificielle et la structure d’apprentissage automatique, qui peuvent être formés pour reconnaître et appliquer des balises standard et commerciales à l’imagerie. Les balises intelligentes peuvent également identifier le contenu, les mots individuels ou les expressions et appliquer automatiquement des balises descriptives aux ressources.
+
+Pour plus d’informations, voir les articles suivants :
+
+* [Modification des métadonnées de ressource](meta-edit.md)
+* [Balises intelligentes dans Assets](smart-tags.md)
+
+## Organisation en tant que collections {#organize-as-collections}
+
+Avec les collections de ressources dans [!DNL Experience Manager Assets], vous pouvez rationaliser la possibilité de créer, modifier et partager des ressources entre les utilisateurs. Créez plusieurs types de collections en fonction de leur utilisation, y compris des collections qui contiennent une liste de référence statique de ressources, dossiers et collections, ainsi que des collections qui extraient des ressources en fonction de critères de recherche. Vous pouvez créer des collections avec des ressources provenant de différents emplacements et les partager avec plusieurs utilisateurs disposant de différents niveaux d’accès, d’affichage et de modification des privilèges.
+
+Pour plus d’informations, voir [Gestion des collections](manage-collections.md)
+
+
+## Utilisation de profils pour organiser vos ressources {#organize-to-use-profiles}
+
+Un profil de traitement contient des commandes [!DNL Assets] de traitement qui s’appliquent aux ressources qui sont chargées dans des dossiers prédéfinis. Les profils sont utilisés pour automatiser le traitement du contenu d’un dossier ou de ressources fraîchement chargées. Vous pouvez utiliser des profils pour mieux organiser vos ressources.
+
+La normalisation de l’utilisation des métadonnées, de l’attribution des noms de fichiers et de la structure des dossiers vous permet d’appliquer des profils de traitement à vos dossiers avec une précision et une cohérence accrues.
+
+>[!MORELIKETHIS]
+>
+>* [Utilisation des microservices de ressources et des profils de traitement](asset-microservices-configure-and-use.md)
+>* [Profils de métadonnées](metadata-profiles.md)
+>* [Profils vidéo](/help/assets/dynamic-media/video-profiles.md)
+>* [Profils d’image Dynamic Media](/help/assets/dynamic-media/image-profiles.md)
+
+
