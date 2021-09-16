@@ -4,7 +4,7 @@ description: Modifications notables apportées à  [!DNL Adobe Experience Manage
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: baa08b242e83d944bd7474c50e115a7c4b49900d
+source-git-commit: ab2cc4e62886eaf67099d16312d255ea38686c9d
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 68%
@@ -74,7 +74,7 @@ Pour effectuer une validation de bout en bout du code et du processus, y compris
 >* [Liste des fonctionnalités obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md)
 >* [Une introduction](/help/overview/introduction.md)
 >* [Nouveautés et différences](/help/overview/what-is-new-and-different.md)
->* [L’architecture](/help/core-concepts/architecture.md)
+>* [L’architecture](/help/overview/architecture.md)
 >* [Modifications notables](/help/release-notes/aem-cloud-changes.md)
 >* [Modifications notables [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
 >* [Tutoriels vidéo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=fr)
