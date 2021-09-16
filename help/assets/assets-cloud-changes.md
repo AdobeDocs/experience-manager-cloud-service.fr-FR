@@ -4,10 +4,10 @@ description: Modifications notables apportées à  [!DNL Adobe Experience Manage
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
+source-git-commit: baa08b242e83d944bd7474c50e115a7c4b49900d
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 69%
+source-wordcount: '997'
+ht-degree: 68%
 
 ---
 
@@ -64,6 +64,7 @@ Pour effectuer une validation de bout en bout du code et du processus, y compris
 | [Téléchargement du rapport](/help/assets/asset-reports.md) | Pas de prise en charge. | Pour l’instant, le rapport de téléchargement qui informe de l’utilisation des ressources n’est pas disponible. Voir [rapport de téléchargement dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html). |
 | Modèle de séance photo du produit | Pas de prise en charge. | Voir [modèle de séance photo du produit dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html). |
 | Traduction dynamique | Pas de prise en charge. | [La ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) traduction intelligente n’est pas prise en charge dans  [!DNL Experience Manager] as a  [!DNL Cloud Service]. |
+| WebDAV | Pas de prise en charge. | Pour obtenir des solutions de remplacement, reportez-vous à la section [[!DNL Creative Cloud] intégration](/help/assets/aem-cc-integration-best-practices.md) ou [matériel de référence destiné aux développeurs](/help/assets/developer-reference-material-apis.md). |
 | IU classique | Pas de prise en charge. | Seule l’interface utilisateur tactile est disponible. |
 
 >[!MORELIKETHIS]
