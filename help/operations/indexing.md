@@ -2,10 +2,10 @@
 title: Recherche et indexation de contenu
 description: Recherche et indexation de contenu
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: eae25dc48a7cd5d257e23b515f497588a13917ea
+source-git-commit: 8e978616bd1409c12e8a40eeeeb828c853faa408
 workflow-type: tm+mt
-source-wordcount: '1780'
-ht-degree: 100%
+source-wordcount: '2098'
+ht-degree: 84%
 
 ---
 
@@ -208,3 +208,12 @@ Si un index doit être supprimé dans une version ultérieure de l’application
 ```
 
 S’il n’est plus nécessaire de personnaliser un index prêt à l’emploi, vous devez copier la définition d’index prête à l’emploi. Par exemple, si vous avez déjà déployé `damAssetLucene-8-custom-3`, mais que vous n’avez plus besoin des personnalisations et que vous souhaitez revenir à l’index `damAssetLucene-8` par défaut, vous devez ajouter un index `damAssetLucene-8-custom-4` contenant la définition d’index de `damAssetLucene-8`.
+
+## Optimisations des index
+
+Apache Jackrabbit Oak permet des configurations d’index flexibles pour gérer efficacement les requêtes de recherche. Bien que les optimisations d’index puissent ne pas jouer un rôle majeur pour les projets de petite ou moyenne taille, il est impératif que les projets avec de grands référentiels de contenu et une vitesse de contenu supérieure effectuent des améliorations ciblées d’efficacité pour l’indexation. Les index non optimisés et les index de secours doivent être autant que possible évités. Il est recommandé de prendre des mesures proactives pour vous assurer que des index adaptés et optimisés sont disponibles pour toutes vos requêtes dans AEM. En l’absence d’index approprié, les requêtes parcourent le référentiel entier ; de telles requêtes doivent être identifiées en analysant les fichiers journaux afin d’optimiser les définitions d’index en conséquence, car une requête traversée de référentiel est la méthode de requête la moins efficace dans AEM. Pour plus d’informations, voir [cette page](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes).
+
+### Index de texte intégral Lucene sur AEM en tant que Cloud Service
+
+L’index de texte intégral lucene2 indexe par défaut tout le contenu du référentiel AEM et est donc extrêmement inefficace en raison de sa taille dépendante du référentiel. L’index en texte intégral Lucene a été abandonné en interne et ne sera plus déployé en tant que Cloud Service dans AEM à partir de septembre 2021. Par conséquent, il n’est plus utilisé côté produit dans AEM en tant que Cloud Service et il ne doit pas être nécessaire pour exécuter le code client. Pour AEM en tant qu’environnements de Cloud Service avec des index Lucene courants, Adobe travaille avec les clients individuellement pour une approche coordonnée afin de compenser cet index et d’utiliser des index meilleurs et optimisés. Si, contrairement à toutes les attentes, un index de texte intégral est réellement nécessaire pour exécuter des requêtes dans le code personnalisé, la définition d’index analogue à l’index Lucene doit être créée sous un nom différent pour éviter des conflits lors de la maintenance.
+Cette optimisation ne s’applique pas aux autres environnements AEM, qui sont hébergés sur site ou gérés par Adobe Managed Services, sauf indication contraire d’Adobe.
