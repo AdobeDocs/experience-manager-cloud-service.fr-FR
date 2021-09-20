@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 5c5ddac1a3b948d1efbd06aa188ac6d8d897d37f
+source-git-commit: 2f811c5c6ccbb1d05aa1825dd110e0c9d5e6b219
 workflow-type: tm+mt
-source-wordcount: '2929'
-ht-degree: 90%
+source-wordcount: '3063'
+ht-degree: 86%
 
 ---
 
@@ -286,6 +286,23 @@ Suivez les étapes ci-dessous :
 1. Cliquez sur **Delete** dans la boîte de dialogue **Delete Migration Set** pour confirmer la suppression.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/delete-3.png)
+
+
+## Exécution de l’outil de transfert de contenu sur une instance de publication {#running-ctt-on-publish}
+
+Il est recommandé que lors du déplacement du contenu vers une instance de publication, CTT soit installé sur l’instance de publication source pour déplacer le contenu vers l’instance de publication cible. Suivez l’approche recommandée, comme décrit ci-dessous :
+
+* Utilisez la même version du CTT que celle utilisée sur l’instance d’auteur.
+
+* Un seul noeud de publication doit être migré. Il doit être supprimé de l’équilibreur de charge avant de commencer l’extraction.
+
+* Lors de la création du jeu de migration, utilisez l’URL de l’environnement AEMaaCS de création.
+
+* Lors de l’ingestion pour la publication, le niveau de publication ne sera PAS réduit (contrairement à l’auteur). Par mesure de précaution, évitez les opérations d’écriture initiées par l’utilisateur, telles que :
+
+   * Distribution de contenu de l’auteur AEMaaCS à la publication dans cet environnement
+   * Synchronisation des utilisateurs entre les instances de publication
+
 
 ## Résolution des problèmes {#troubleshooting}
 
