@@ -2,10 +2,10 @@
 title: Recherche et indexation de contenu
 description: Recherche et indexation de contenu
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 10dea59cb196487adc1300b52dd9edc5afb33cb3
+source-git-commit: 4c747623df70b30f4cd6c6bf6bbb950851469091
 workflow-type: tm+mt
-source-wordcount: '2038'
-ht-degree: 87%
+source-wordcount: '2057'
+ht-degree: 85%
 
 ---
 
@@ -35,7 +35,9 @@ Voici la liste des principaux changements par rapport à AEM version 6.5 et ant
 
 1. Les clients peuvent voir si la tâche d’indexation est terminée sur la page de version Cloud Manager et recevront une notification lorsque la nouvelle version sera prête à recevoir le trafic.
 
-1. Limites : actuellement, la gestion des index dans AEM as a Cloud Service n’est prise en charge que pour les index de type lucene.
+1. Restrictions :
+* Actuellement, la gestion des index sur AEM en tant que Cloud Service n’est prise en charge que pour les index de type lucene.
+* Seuls les analyseurs standard sont pris en charge (c’est-à-dire ceux fournis avec le produit). Les analyseurs personnalisés ne sont pas pris en charge.
 
 ## Utilisation {#how-to-use}
 
