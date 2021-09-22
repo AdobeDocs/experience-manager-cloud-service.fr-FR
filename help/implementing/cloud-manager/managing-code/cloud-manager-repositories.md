@@ -1,10 +1,10 @@
 ---
 title: Référentiels Cloud Manager
 description: Référentiels Cloud Manager
-source-git-commit: f2a93373d6f3d6e92dc170fd98315b5989b2b296
+source-git-commit: 66cc18f0449668f62c416482e27a72ea1baec0a1
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 87%
+source-wordcount: '595'
+ht-degree: 68%
 
 ---
 
@@ -39,9 +39,25 @@ Suivez les étapes ci-dessous pour afficher et gérer les référentiels dans Cl
 
    ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-1. Vous pouvez sélectionner le référentiel et cliquer sur les options de menu à l’extrémité droite de la table pour **Copier l’URL du référentiel**, **Afficher et mettre à jour** ou **Supprimer** votre référentiel, comme illustré dans la figure ci-dessous.
+1. Vous pouvez sélectionner le référentiel et cliquer sur les options de menu à l’extrémité droite de la table dans **Copier l’URL du référentiel** ou **Afficher et mettre à jour** ou **Supprimer** votre référentiel, comme illustré dans la figure ci-dessous.
 
    ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
+
+## Suppression d’un référentiel {#delete-repo}
+
+Pour supprimer un référentiel dans Cloud Manager, procédez comme suit :
+>[!NOTE]
+>La suppression d’un référentiel entraînera :
+>1. Rendre le nom du référentiel supprimé inutilisable pour de nouveaux référentiels qui pourront être créés ultérieurement. Un message d’erreur, comme illustré ci-dessous, s’affiche dans ce cas :
+   >*Le nom du référentiel doit être unique au sein de l’organisation.*
+>1. Rendre le référentiel supprimé indisponible dans Cloud Manager et ne peut donc pas être lié à un pipeline.
+
+
+1. Sur la page **Aperçu du programme**, cliquez sur l’onglet **Référentiels** et accédez à la page **Référentiels**.
+
+1. Sélectionnez le référentiel et cliquez sur les options de menu tout à droite du tableau. Cliquez sur **Supprimer** pour supprimer le référentiel, comme illustré dans la figure ci-dessous.
+
+   ![](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 
 
 ## Prise en charge des sous-modules Git {#git-submodule-support}
