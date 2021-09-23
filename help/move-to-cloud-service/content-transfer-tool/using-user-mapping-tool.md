@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de mappage des utilisateurs
 description: Utilisation de l’outil de mappage des utilisateurs
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: 3adbaf4735b65125178a24a223100d50e132967a
+source-git-commit: c8e7c6c45d898029b55bcfc09f7f2b7051d03031
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 84%
+source-wordcount: '1375'
+ht-degree: 80%
 
 ---
 
@@ -63,11 +63,12 @@ Suivez les étapes ci-dessous pour configurer ces éléments :
 
 1. Accédez à la [Adobe Developer Console](https://console.adobe.io) à l’aide de votre Adobe ID.
 1. Créez un projet ou ouvrez un formulaire existant.
-1. Ajoutez une API.
-1. Sélectionnez l’API Gestion des utilisateurs.
+1. Ajouter une API - Cliquez sur **Ajouter au projet** et sélectionnez **API**
+1. Sélectionnez l’API Gestion des utilisateurs.  Vous devrez peut-être obtenir des autorisations pour disposer de cette option.
 1. Créez des informations d’identification JWT.
-1. Générez une paire de clés ou chargez une clé publique (RSA ne convient pas).
-1. Générez un jeton d’accès (ou jeton JWT ou jeton au porteur).
+1. Générez une paire de clés ou chargez une clé publique (RSA ne convient pas).  Il existe un bouton, **Générer une paire de clés publique/privée**, qui vous permet de le faire.  Veillez à enregistrer les clés publique et privée.
+1. Accédez à l’API User Management.
+1. Générez un jeton d’accès (ou jeton porteur) en collant votre contenu de clé privée dans la zone de texte et en cliquant sur **Générer un jeton**.
 1. Enregistrez en lieu sûr ces informations, notamment l’**ID client**, le **secret client**, l’**ID de compte technique**, l’**adresse électronique du compte technique**, l’**ID d’organisation** et le **jeton d’accès**.
 
 ## Interface utilisateur {#user-interface}
