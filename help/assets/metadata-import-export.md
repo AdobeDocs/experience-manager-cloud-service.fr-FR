@@ -2,13 +2,13 @@
 title: Importation et exportation des métadonnées de ressources par lot
 description: Cet article explique comment importer et exporter des métadonnées par lot.
 contentOwner: AG
-feature: Métadonnées
+feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 561df1d2a2f7b900470084d28b832b4c7a568d3e
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 92%
+source-wordcount: '667'
+ht-degree: 88%
 
 ---
 
@@ -34,7 +34,7 @@ L’importation de métadonnées est asynchrone et ne nuit pas aux performances 
    | Taille du lot | Nombre de ressources dans un lot pour lesquelles les métadonnées doivent être importées. La valeur par défaut est 50. La valeur maximale est 100. |
    | Séparateur de champs | La valeur par défaut est `,` (une virgule). Vous pouvez spécifier n’importe quel autre caractère. |
    | Délimiteur à plusieurs valeurs | Séparateur des valeurs de métadonnées. La valeur par défaut est `|`. |
-   | Lancer les workflows | Faux par défaut. Lorsque la valeur est définie sur `true` et que les paramètres par défaut du lanceur sont utilisés pour le workflow Écriture différée des métadonnées de gestion des ressources numériques (DAM) (qui écrit des métadonnées dans les données XMP binaires). L’activation des workflows de lancement ralentit le système. |
+   | Lancer les workflows | Faux par défaut. Lorsque la valeur est définie sur `true` et que les paramètres par défaut sont en vigueur pour le workflow Écriture différée des métadonnées de gestion des actifs numériques (qui écrit des métadonnées dans les données XMP binaires). L’activation des workflows ralentit le système. |
    | Nom de colonne du chemin d’accès à la ressource | Définit le nom de la colonne du fichier CSV avec des ressources. |
 
 1. Cliquez sur **[!UICONTROL Importer]** dans la barre d’outils. Une fois les métadonnées importées, une notification est envoyée à votre boîte de réception de notifications. Accédez à la page de propriété des ressources et vérifiez que les valeurs des métadonnées sont correctement importées pour les ressources.
