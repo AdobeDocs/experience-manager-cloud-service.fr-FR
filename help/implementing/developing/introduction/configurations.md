@@ -1,10 +1,10 @@
 ---
 title: Configurations et l’explorateur de configurations
 description: Description des configurations AEM et de leur gestion des paramètres d’espace de travail dans AEM.
-source-git-commit: 47d2ff211b5c00457793dc7bd321df1139cfc327
+source-git-commit: 4892f644929bc308762ca4fb8a2ebfb85e5fb5e2
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 100%
+source-wordcount: '1498'
+ht-degree: 99%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 Les configurations AEM permettent de gérer les paramètres dans AEM et servent d’espaces de travail.
 
-## Qu’est-ce qu’une configuration ? {#what-is-a-configuration}
+## Qu’est-ce qu’une configuration ?  {#what-is-a-configuration}
 
 Une configuration peut être considérée sous deux angles différents.
 
@@ -33,10 +33,10 @@ L’administrateur AEM ainsi que les auteurs peuvent considérer les configurati
 
 Des configurations peuvent être créées pour de nombreuses fonctionnalités différentes dans AEM.
 
-* [Configurations de cloud](/help/implementing/developing/introduction/configurations.md)
 * [Segments Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
 * [Modèles modifiables](/help/sites-cloud/authoring/features/templates.md)
+* diverses configurations de cloud
 
 ### Exemple {#administrator-example}
 
@@ -79,10 +79,10 @@ Il est très simple de créer une nouvelle configuration dans AEM à l’aide de
       * Il sera généré automatiquement en fonction du titre et adapté selon les [conventions d’appellation AEM.](naming-conventions.md)
       * Il peut être adapté si nécessaire.
 1. Vérifiez le type de configuration que vous souhaitez autoriser.
-   * [Configurations de cloud](/help/implementing/developing/introduction/configurations.md)
    * [Segments Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
    * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
    * [Modèles modifiables](/help/sites-cloud/authoring/features/templates.md)
+   * diverses configurations de cloud
 1. Appuyez ou cliquez sur **Créer**.
 
 >[!TIP]
