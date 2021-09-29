@@ -2,9 +2,9 @@
 title: Recherche et indexation de contenu
 description: Recherche et indexation de contenu
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 4c747623df70b30f4cd6c6bf6bbb950851469091
+source-git-commit: 6e8ea8c4db2004ed26ee0cd6c5c3d047c3a1815b
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '2061'
 ht-degree: 85%
 
 ---
@@ -73,7 +73,7 @@ Le package de l’exemple ci-dessus est nommé `com.adobe.granite:new-index-cont
 
 >[!NOTE]
 >
->Le plug-in Jackrabbit Filevault Maven Package version **1.1.0** présente un problème connu qui empêche d’ajouter `oak:index` aux modules `<packageType>application</packageType>`. Pour contourner ce problème, utilisez la version **1.0.4**.
+>Le plug-in Jackrabbit Filevault Maven Package version **1.1.0** présente un problème connu qui empêche d’ajouter `oak:index` aux modules `<packageType>application</packageType>`. Vous devez mettre à jour vers une version plus récente de ce module externe.
 
 Les définitions d’index sont désormais marquées comme personnalisées et versionnées :
 
