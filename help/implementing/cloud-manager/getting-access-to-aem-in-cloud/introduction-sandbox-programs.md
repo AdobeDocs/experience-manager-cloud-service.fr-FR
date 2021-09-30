@@ -2,10 +2,10 @@
 title: 'Présentation des programmes Sandbox '
 description: Présentation des programmes Sandbox
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
+source-git-commit: 7e51fb98c76a5913ef237aca3b66c73a8263f4ff
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 91%
+source-wordcount: '320'
+ht-degree: 85%
 
 ---
 
@@ -21,7 +21,10 @@ Les environnements créés dans un sandbox ne sont pas configurés pour la mise 
 
 Les programmes Sandbox comprennent [!DNL Sites] et [!DNL Assets] et sont automatiquement renseignés avec un référentiel Git, un environnement de développement et un pipeline hors production.  Le référentiel Git est renseigné avec un exemple de projet basé sur l’archétype de projet AEM.
 
-Consultez Présentation des programmes et des types de programmes pour en savoir plus sur les types de programmes.
+>[!NOTE]
+>Les domaines personnalisés et les Listes autorisées IP ne sont pas disponibles dans les programmes Sandbox.
+
+Consultez [Présentation des programmes et des types de programmes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/understand-program-types.html?lang=en) pour en savoir plus sur les types de programmes.
 
 ### Attributs des programmes Sandbox {#attributes-sandbox}
 

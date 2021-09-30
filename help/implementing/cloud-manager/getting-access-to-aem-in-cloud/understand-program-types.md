@@ -2,10 +2,10 @@
 title: Présentation du programme et des types de programmes
 description: Présentation du programme et des types de programmes – Cloud Services
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: aae4d942ef1e7ffd0065de73c3fbd044a19c3e8e
+source-git-commit: 7e51fb98c76a5913ef237aca3b66c73a8263f4ff
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 100%
+source-wordcount: '349'
+ht-degree: 94%
 
 ---
 
@@ -39,8 +39,8 @@ $ git clone {URL}
 Un utilisateur peut créer un programme **Sandbox** ou de **Production**.
 
 * Un *Programme de production* est créé pour activer dans le futur le trafic actif au moment approprié.
-Consultez Présentation des programmes de production pour plus d’informations.
+Consultez [Présentation des programmes de production](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/introduction-production-programs.html?lang=en) pour plus d’informations.
 
 
 * Un *programme Sandbox* est généralement créé pour les besoins de formation, à des fins de démonstration, d’activation, de preuve de concept ou de documentation. Ces programmes ne sont pas destinés à gérer un trafic réel et comporteront des restrictions absentes d’un programme de production. Ils incluront Sites et Assets et seront pourvus automatiquement d’une branche Git comprenant un exemple de code, un environnement de développement et un pipeline non productif.
-Consultez Présentation des programmes Sandbox pour plus d’informations.
+Consultez [Présentation des programmes Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sandbox-programs/introduction-sandbox-programs.html?lang=en) pour plus d’informations.
