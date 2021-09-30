@@ -2,7 +2,7 @@
 title: Structure de projet AEM
 description: Découvrez comment définir des structures de package en vue d’un déploiement sur Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 798cd0f459b668dc372a88773ed6221927e7d02e
+source-git-commit: 1cf9834d840709ed340aaef235860d7c6d26c6d5
 workflow-type: tm+mt
 source-wordcount: '2880'
 ht-degree: 99%
@@ -70,7 +70,7 @@ La structure de déploiement d’application recommandée est la suivante :
       + `/apps/settings`
    + Listes de contrôle d’accès (autorisations)
       + Tout `rep:policy` pour tout chemin d’accès sous `/apps`
-   + [Scripts précompilés](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/using/developing/archetype/precompiled-bundled-scripts.html)
+   + [Scripts précompilés](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
 
 + Le module `ui.config` contient toutes les [configurations OSGi](/help/implementing/deploying/configuring-osgi.md) :
    + Dossier d’organisation contenant des définitions de configuration OSGi spécifiques au mode d’exécution
