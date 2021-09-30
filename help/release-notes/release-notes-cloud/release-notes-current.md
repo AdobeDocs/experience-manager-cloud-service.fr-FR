@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 534fd193181fe22392fb598625d3a018a4a09e69
+source-git-commit: 29af6f91f5aeb6ad971a35637f1635e0b038a57f
 workflow-type: tm+mt
 source-wordcount: '1628'
-ht-degree: 24%
+ht-degree: 39%
 
 ---
 
@@ -26,7 +26,7 @@ La section suivante concerne les notes de mise à jour générales de la version
 ## Date de publication {#release-date}
 
 La date de publication de la version actuelle de [!DNL Adobe Experience Manager] en tant que [!DNL Cloud Service] (2021.8.0) est le 26 août 2021.
-La version suivante (2021.9.0) date du 30 septembre 2021.
+La version suivante (2021.9.0) date du 4 octobre 2021.
 
 ## Vidéo de publication {#release-video}
 
@@ -66,15 +66,15 @@ Regardez la vidéo [Aperçu de la version d’août 2021](https://video.tv.adobe
 
 * AEM projet Archetype pour Forms as a Cloud Service comprend désormais [des modèles de données de formulaire pour Microsoft Dynamics et Salesforce.com](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment).
 
-* **Document d’enregistrement** basé sur Acrobat : AEM Forms as a Cloud Service prend en charge l’utilisation d’ [Adobe Acrobat Form PDF (Acrobat PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=fr)  comme modèle de document d’enregistrement en plus des modèles de formulaire basés sur XFA.
+* **Document d’enregistrement basé sur Acrobat** : AEM Forms as a Cloud Service prend en charge l’utilisation d’[Adobe Acrobat Form PDF (Acrobat PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=fr) comme modèle de document d’enregistrement en plus des modèles de formulaire basés sur XFA.
 
 * **Connecteur de magasin de données Microsoft Azure** : vous pouvez désormais [connecter le modèle de données de formulaire au stockage Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=fr). Il vous permet de récupérer et de stocker des données de formulaire adaptatif dans le stockage Microsoft Azure en tant qu’objet BLOB.
 
 ### Fonction bêta de [!DNL Forms] {#aug-what-is-new-forms-prerelease}
 
-* **Unified Storage Connector :** utilisez Unified Storage Connector pour externaliser les données en cours de traitement dans les référentiels gérés par le client. Par exemple, vous pouvez
-   * Activez la fonctionnalité d’enregistrement et de reprise de Forms Portal et stockez les brouillons de formulaires adaptatifs dans un référentiel de données géré par le client.
-   * Stocker les données AEM processus en cours (AEM données des variables de processus) qui contiennent des données personnelles sensibles (SPD) dans un référentiel géré par le client.
+* **Connecteur de stockage unifié :** utilisez le connecteur de stockage unifié pour externaliser les données en cours de traitement dans les référentiels gérés par le client. Par exemple, vous pouvez effectuer les actions suivantes :
+   * Activer la fonctionnalité d’enregistrement et de reprise de Forms Portal et stocker les brouillons de formulaires adaptatifs dans un référentiel de données géré par le client.
+   * Stocker les données de workflows AEM en cours (données des variables de workflows AEM) qui contiennent des données personnelles sensibles (SPD) dans un référentiel géré par le client.
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API Communications](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=fr) vous permet de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode synchrone. Les API permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
    * Générer des documents en complétant des fichiers de modèle avec des données XML.
@@ -85,9 +85,9 @@ Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au progra
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Forms] {#prerelease-features-forms}
 
-* **Utilisation des rôles Adobe Sign dans un formulaire** adaptatif : Les niveaux de service d’entreprise et d’entreprise d’Adobe Sign ont la possibilité d’étendre les rôles des destinataires du contrat, au-delà du simple signataire, afin de mieux répondre aux exigences de leur workflow. Vous pouvez désormais [permettre à chaque destinataire d’accord de configurer son rôle dans un formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html?#addsignerstoanadaptiveform), avec le rôle par défaut Signer.
+* **Utilisation des rôles Adobe Sign dans un formulaire adaptatif** : les niveaux de service professionnel et entreprise d’Adobe Sign offrent la possibilité d’étendre les rôles des destinataires du contrat au-delà du simple signataire, afin de mieux répondre aux exigences de leur workflow. Vous pouvez désormais [permettre à chaque destinataire de contrat de configurer son rôle dans un formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html?#addsignerstoanadaptiveform), avec le rôle Signer par défaut.
 
-* **Analytics pour le Forms** adaptatif : Vous pouvez désormais capturer et suivre le comportement de l’utilisateur final via Adobe Analytics pour Forms adaptatif afin de rassembler les informations sur l’utilisateur final. Il permet de prendre des décisions éclairées basées sur les données afin d’améliorer l’expérience de l’utilisateur final.
+* **Analytics pour les formulaires adaptatifs** : vous pouvez désormais capturer et suivre le comportement de l’utilisateur final via Adobe Analytics pour les formulaires adaptatifs afin de rassembler les informations sur l’utilisateur final. Il permet de prendre des décisions éclairées basées sur les données afin d’améliorer l’expérience de l’utilisateur final.
 
 * **Connectez facilement AEM Forms à Microsoft Dynamics et Salesforce.com** : Le service fournit des modèles de données et de configuration de source de données prêts à l’emploi pour Microsoft Dynamics et Salesforce.com, ce qui rend  [plus rapide et plus facile pour les développeurs de configurer Microsoft Dynamics et Salesforce.com comme sources de données pour un formulaire](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html) adaptatif.
 
@@ -127,26 +127,26 @@ Cette section présente les notes de mise à jour de Cloud Manager dans AEM as a
 ## Date de publication {#release-date-cm-sept}
 
 La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.9.0 est le 9 septembre 2021.
-La prochaine version est prévue pour le 7 octobre 2021.
+La prochaine version est prévue pour le 7 octobre 2021.
 
 ### Nouveautés {#what-is-new-cm-sept}
 
 * L’archétype de projet AEM utilisé par Cloud Manager a été mis à jour à la version 30.
 
-* Les cartes de programme sur la page d’entrée de Cloud Manager et l’expérience associée ont été actualisées.
+* Les cartes de programme de la page d’entrée de Cloud Manager et l’expérience associée ont été actualisées.
 
 * Le journal des étapes de qualité du code comprend désormais des informations de journalisation en mode verbeux sur le processus d’analyse OakPal.
 
-* Les options de menu de la page Activité comprennent désormais une option **Télécharger le journal** pour les exécutions du Générateur de code terminées. Si vous sélectionnez cette option, le journal de l’étape de création sera téléchargé.
+* Les options de menu de la page Activité comprennent désormais une option **Télécharger le journal** pour les exécutions du Générateur de code terminées. Si vous sélectionnez cette option, le journal de l’étape de compilation sera téléchargé.
 
-* Cliquez directement sur la carte Programme pour accéder à la page Aperçu de Cloud Manager .
+* Cliquez directement sur la carte Programme pour accéder à la page Aperçu de Cloud Manager.
 
 
 ### Correctifs {#bug-fixes-sept}
 
 * L’utilisateur voit désormais un message plus compréhensible lorsqu’il tente d’ajouter une nouvelle Liste autorisée IP dans un programme qui a atteint le nombre maximal autorisé de Listes autorisées IP configurables.
 
-* Une URL incorrecte a été copiée lors de la sélection de l’option de menu Copier l’URL dans l’écran Référentiels .
+* Une URL erronée a été copiée lors de la sélection de l’option de menu Copier l’URL dans l’écran Référentiels.
 
 ## Date de publication {#release-date-cm-aug}
 
