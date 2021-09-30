@@ -2,10 +2,10 @@
 title: Gérer les journaux – Cloud Service
 description: Gérer les journaux – Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: d44a4239205b88f05ab5ae9ef3263e6549f998fc
+source-git-commit: b3c26b4e7ad588e0d3214350792d05e55e9db44c
 workflow-type: tm+mt
 source-wordcount: '235'
-ht-degree: 68%
+ht-degree: 60%
 
 ---
 
@@ -41,7 +41,7 @@ Suivez les étapes ci-dessous pour télécharger les journaux.
 
 Outre le téléchargement de journaux par le biais l’interface utilisateur, les journaux seront disponibles via l’API et l’interface de ligne de commande.
 
-Par exemple, pour télécharger les fichiers journaux d’un environnement spécifique, la commande pourrait ressembler à ceci :
+Par exemple, pour télécharger les fichiers journaux d’un environnement spécifique, la commande serait similaire à la commande
 
 ```java
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
