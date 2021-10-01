@@ -1,13 +1,13 @@
 ---
 title: Phase de préparation dans Cloud Accelerated Manager
 description: Cette page présente un aperçu de la phase de préparation de Cloud Acceleration Manager.
-source-git-commit: 177e24d20bc97e4a7f2be749771463d7e79005c4
+exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
+source-git-commit: 2436d7a7a0127219f3d7cb383b857431ba2a2bb4
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '682'
 ht-degree: 12%
 
 ---
-
 
 # Phase de préparation dans Cloud Accelerated Manager {#readiness-phase-cam}
 
@@ -54,6 +54,9 @@ Suivez les étapes ci-dessous pour utiliser la carte Analyse des bonnes pratique
 1. Cliquez sur **Charger un nouveau rapport** pour charger le rapport BPA dans le CAM.
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
+
+   >[!IMPORTANT]
+   >Le rapport ne peut pas être chargé si vous êtes en mode Incognito du navigateur.
 
 1. Une fois que vous avez chargé un nouveau rapport, le rapport Analyse des bonnes pratiques s’affiche.
 
