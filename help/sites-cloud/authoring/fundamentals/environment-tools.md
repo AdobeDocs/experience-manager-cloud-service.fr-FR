@@ -2,16 +2,16 @@
 title: Environnement et outils de création
 description: L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu.
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '2152'
+source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
+workflow-type: tm+mt
+source-wordcount: '2154'
 ht-degree: 100%
 
 ---
 
 # Environnement et outils de création {#authoring-the-environment-and-tools}
 
-L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu. Les outils proposés sont accessibles dans les divers éditeurs de pages et consoles.
+L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu. : Les outils fournis sont accessibles dans plusieurs consoles et éditeurs de page.
 
 ## Gestion de votre site {#managing-your-site}
 
@@ -35,7 +35,7 @@ Vous pouvez modifier une page dans l’éditeur de page. Par exemple :
 >
 >Vous pouvez ignorer cette présentation ou la revoir à tout moment en la sélectionnant dans le menu **Informations sur la page**.
 
-## Accès à l’aide {#accessing-help}
+## Accès à l’Aide    {#accessing-help}
 
 Lorsque vous modifiez une page, l’**Aide** est accessible depuis :
 
@@ -269,6 +269,7 @@ Lors de la modification d’une page, plusieurs modes permettent d’effectuer d
 * [Ciblage](/help/sites-cloud/authoring/personalization/targeted-content.md) : optimise la pertinence du contenu grâce au ciblage et aux mesures à l’échelle de tous les canaux.
 * [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) : permet d’afficher le statut d’une page à un moment donné.
 * [Statut de la Live Copy](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) : donne un aperçu rapide du statut de la Live Copy et des composants qui sont ou non hérités.
+* [Mode Développeur](/help/implementing/developing/tools/developer-mode.md)
 * [Aperçu](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) : permet d’afficher la page comme elle sera présentée dans l’environnement de publication ou de naviguer au moyen des liens figurant dans le contenu.
 * [Annoter](/help/sites-cloud/authoring/fundamentals/annotations.md) : permet d’ajouter ou d’afficher des annotations sur la page.
 
@@ -282,8 +283,8 @@ Vous pouvez accéder à ces modes en cliquant sur les icônes dans le coin supé
 >* L’accès à certains modes implique que vous disposiez des droits ou autorisations appropriés.
 >* Le mode Développeur n’est pas accessible sur les appareils mobiles en raison de restrictions d’espace.
 >* Utilisez le [raccourci clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) pour permuter entre l’**Aperçu** et le mode actuellement sélectionné (par ex. **Modifier**, **Disposition**, etc.).
->
 
+>
 
 
 ## Sélection du chemin d’accès {#path-selection}
@@ -304,7 +305,7 @@ Vous pouvez également effectuer une saisie dans le champ de chemin d’accès. 
 
 ![Bouton Ouvrir la boîte de dialogue de sélection](/help/sites-cloud/authoring/assets/path-selection-completion.png)
 
-### Explorateur de chemins d’accès {#path-browser}
+### Chemin Navigateur {#path-browser}
 
 L’explorateur de chemins d’accès est organisé de la même façon que le [mode Colonnes](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) de la console Sites afin de permettre une sélection plus détaillée des ressources.
 

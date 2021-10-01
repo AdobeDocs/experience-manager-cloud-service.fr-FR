@@ -5,9 +5,9 @@ breadcrumb-title: Guide d’implémentation
 user-guide-description: Découvrez comment personnaliser votre déploiement d’Experience Manager as a Cloud Service, y compris des rubriques sur le déploiement et le développement.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 8ee0eef4a46b2e2ebe0e94812db68e369bc0dfd0
+source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1040'
 ht-degree: 93%
 
 ---
@@ -192,6 +192,7 @@ ht-degree: 93%
       + [Intégration de Launch](developing/hybrid/launch-integration.md)
       + [Documents de référence SPA](developing/hybrid/reference-materials.md)
 + Outils de développement {#developer-tools}
+   + [Mode Développeur](/help/implementing/developing/tools/developer-mode.md)
    + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
    + [Module externe Content Package Maven](/help/implementing/developing/tools/maven-plugin.md)
    + [Outil AEM Repo](/help/implementing/developing/tools/repo-tool.md)
