@@ -2,10 +2,10 @@
 title: Conditions préalables pour l’outil de transfert de contenu
 description: Conditions préalables pour l’outil de transfert de contenu
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: 40f27004e82266d363f034bb9d2858b8f3a4958d
+source-git-commit: 2c0874ca14b9dd91ef62f2af85a9961b07c1b60b
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 13%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,6 +30,7 @@ Veuillez consulter toutes les considérations ci-dessous :
 | Taille totale de l’index | La taille totale de l’index de 25 Go au maximum est actuellement prise en charge. Créez un ticket d’assistance auprès de l’assistance clientèle d’Adobe pour discuter des options relatives à la taille d’index supérieure à cette limite. |
 | Longueur du nom du noeud | La longueur d’un nom de noeud doit être de 150 octets ou moins. Les noms de noeud de plus de 150 octets doivent être raccourcis pour être &lt;= 150 octets afin d’être pris en charge par le magasin de noeuds Document dans AEM en tant que Cloud Service. Les assimilations échouent si ces noms de noeuds longs ne sont pas corrigés. |
 | Contenu sur les chemins immuables | L’outil de transfert de contenu ne peut pas être utilisé pour migrer le contenu dans des chemins immuables. Pour transférer le contenu de `/etc`, seuls certains `/etc` chemins peuvent être sélectionnés, mais uniquement pour prendre en charge [AEM Forms vers AEM Forms as a3/>. ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets) Pour tous les autres cas d’utilisation, reportez-vous à la section [Restructuration des référentiels communs](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) pour en savoir plus sur la restructuration des référentiels. |
+| Valeur de propriété de noeud dans MongoDB | Les valeurs des propriétés de noeud stockées dans MongoDB ne doivent pas dépasser 16 Mo. Cela est appliqué par MongoDB. Les ingérations échouent si des valeurs de propriété sont supérieures à cette limite. Avant d’exécuter une extraction, exécutez ce script [oak-run](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/1.38.0/oak-run-1.38.0.jar). Vérifiez toutes les valeurs de propriété volumineuses et validez si elles sont nécessaires. Ceux qui dépassent 16 Mo devront être convertis en valeurs binaires. |
 
 ## Et après ? {#whats-next}
 
