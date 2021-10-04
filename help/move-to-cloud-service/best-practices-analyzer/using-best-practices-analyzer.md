@@ -2,10 +2,10 @@
 title: Utilisation de l’analyseur des bonnes pratiques
 description: Utilisation de l’analyseur des bonnes pratiques
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 36ead0181ab9d1a0eb874d8e3584df2e4c760f30
+source-git-commit: a6b3ff2ede7046e91562eff1a1eb0d86e5dd6d6f
 workflow-type: tm+mt
-source-wordcount: '2522'
-ht-degree: 98%
+source-wordcount: '2591'
+ht-degree: 95%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 98%
 >id="aemcloud_bpa_using"
 >title="Utilisation de l’analyseur des bonnes pratiques"
 >abstract="Consultez la documentation relative à l’utilisation de l’analyseur des bonnes pratiques (anciennement Cloud Readiness Analyzer) et du rapport généré. Le rapport de l’analyseur des bonnes pratiques permet de mieux comprendre le degré de préparation général à la mise à niveau."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Considérations importantes concernant l’utilisation de l’analyseur des bonnes pratiques {#imp-considerations}
 
@@ -91,6 +91,19 @@ Vous pouvez forcer l’analyseur des bonnes pratiques à effacer son cache et à
 Pendant sa régénération, le rapport affiche la progression en termes de pourcentage achevé, comme le montre l’illustration ci-dessous.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
+
+1. Cliquez sur l’icône **Imprimer l’aperçu**, comme illustré ci-dessous pour faciliter la partage.
+
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
+
+1. Cliquez sur **Aperçu de l’impression** pour ouvrir un nouvel onglet où les rapports sont affichés dans un aperçu imprimable. Cliquez sur **Imprimer** pour imprimer le rapport au format PDF afin d’en faciliter la partage.
+
+   >[!IMPORTANT]
+   * L’option **Enregistrer au format PDF** est recommandée et prise en charge pour les fonctionnalités ci-dessus.
+   * Si le bouton d’impression du navigateur est utilisé, il n’imprime qu’une seule page.
+
+
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 
 #### Utilisation de filtres dans le rapport Analyseur des bonnes pratiques (BPA)  {#bpa-filters}
