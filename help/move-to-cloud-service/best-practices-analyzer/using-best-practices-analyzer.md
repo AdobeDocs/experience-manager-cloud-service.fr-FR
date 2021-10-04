@@ -2,10 +2,10 @@
 title: Utilisation de l’analyseur des bonnes pratiques
 description: Utilisation de l’analyseur des bonnes pratiques
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: a6b3ff2ede7046e91562eff1a1eb0d86e5dd6d6f
+source-git-commit: 090902d65a9bd4c4d83722534a2d9fb78bac314d
 workflow-type: tm+mt
-source-wordcount: '2591'
-ht-degree: 95%
+source-wordcount: '2522'
+ht-degree: 98%
 
 ---
 
@@ -92,18 +92,6 @@ Pendant sa régénération, le rapport affiche la progression en termes de pourc
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
 
-1. Cliquez sur l’icône **Imprimer l’aperçu**, comme illustré ci-dessous pour faciliter la partage.
-
-   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
-
-1. Cliquez sur **Aperçu de l’impression** pour ouvrir un nouvel onglet où les rapports sont affichés dans un aperçu imprimable. Cliquez sur **Imprimer** pour imprimer le rapport au format PDF afin d’en faciliter la partage.
-
-   >[!IMPORTANT]
-   * L’option **Enregistrer au format PDF** est recommandée et prise en charge pour les fonctionnalités ci-dessus.
-   * Si le bouton d’impression du navigateur est utilisé, il n’imprime qu’une seule page.
-
-
-   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 
 #### Utilisation de filtres dans le rapport Analyseur des bonnes pratiques (BPA)  {#bpa-filters}
