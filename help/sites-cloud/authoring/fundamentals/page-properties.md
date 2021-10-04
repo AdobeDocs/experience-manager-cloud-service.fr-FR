@@ -2,10 +2,10 @@
 title: Modification des propriétés de page
 description: Définissez les propriétés requises pour une page
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 34247d8de3dc1a243eaac152b1d2036f9c237303
+source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
 workflow-type: tm+mt
-source-wordcount: '1955'
-ht-degree: 96%
+source-wordcount: '1966'
+ht-degree: 93%
 
 ---
 
@@ -101,14 +101,9 @@ Les propriétés sont réparties sur plusieurs onglets.
    * **Rediriger** – Indique la page vers laquelle cette page doit être automatiquement redirigée.
    * **Conception** – Indique si la page doit être affichée ou masquée dans la navigation entre les pages du site qui en résulte.
    * **Alias** – Indique un alias à utiliser avec cette page.
-
-   >[!NOTE]
-   >
-   >L’alias définit la propriété `sling:alias` afin de définir un nom d’alias pour la ressource (cela n’affecte que la ressource, et non le chemin).
-   >
-   >Par exemple, si vous définissez l’alias `latin-lang` pour le nœud `/content/we-retail/spanish`, cette page est accessible via `/content/we-retail/latin-language`.
-   >
-   >Pour plus d’informations, voir Noms de page localisés sous Bonnes pratiques relatives à la gestion des URL et à l’optimisation du moteur de recherche.
+      * Par exemple, si vous définissez un alias `private` pour la page `/content/wknd/us/en/magazine/members-only`, cette page est également accessible via `/content/wknd/us/en/magazine/private`
+      * La création d’un alias définit la propriété `sling:alias` sur le noeud de page, ce qui affecte uniquement la ressource, et non le chemin du référentiel.
+      * Les pages accessibles par alias dans l&#39;éditeur ne peuvent pas être publiées. [Les ](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) options de publication dans l’éditeur ne sont disponibles que pour les pages accessibles à partir de leur chemin d’accès réel.
 
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
