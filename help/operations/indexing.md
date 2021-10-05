@@ -2,10 +2,10 @@
 title: Recherche et indexation de contenu
 description: Recherche et indexation de contenu
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 8df5e800cd08fa0eb08edca06e98786a1864db84
+source-git-commit: dd62f1c0a5c679508c3cf8cc8a1460d86a777759
 workflow-type: tm+mt
-source-wordcount: '2139'
-ht-degree: 82%
+source-wordcount: '2157'
+ht-degree: 81%
 
 ---
 
@@ -213,12 +213,12 @@ S’il n’est plus nécessaire de personnaliser un index prêt à l’emploi, v
 
 ## Optimisations des index
 
-Apache Jackrabbit Oak permet des configurations d’index flexibles pour gérer efficacement les requêtes de recherche. Les index sont particulièrement importants pour les référentiels plus volumineux. Les index non optimisés et les index de secours doivent être autant que possible évités. Assurez-vous que toutes les requêtes sont soutenues par un index approprié. Les requêtes sans index approprié peuvent lire des milliers de noeuds, qui sont ensuite consignés comme avertissement. Ces requêtes doivent être identifiées en analysant les fichiers journaux, afin d&#39;optimiser les définitions d&#39;index. Pour plus d’informations, voir [cette page](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes).
+Apache Jackrabbit Oak permet des configurations d’index flexibles pour gérer efficacement les requêtes de recherche. Les index sont particulièrement importants pour les référentiels plus volumineux. Assurez-vous que toutes les requêtes sont soutenues par un index approprié. Les requêtes sans index approprié peuvent lire des milliers de noeuds, qui sont ensuite consignés comme avertissement. Ces requêtes doivent être identifiées en analysant les fichiers journaux, afin d&#39;optimiser les définitions d&#39;index. Pour plus d’informations, voir [cette page](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes).
 
 ### Index de texte intégral Lucene sur AEM en tant que Cloud Service
 
-L’index en texte intégral `/oak:index/lucene-2` peut devenir très volumineux, car il indexe par défaut tous les noeuds du référentiel AEM. L’index en texte intégral Lucene a été abandonné en interne et ne sera plus déployé en tant que Cloud Service dans AEM à partir de septembre 2021. Par conséquent, il n’est plus utilisé côté produit dans AEM en tant que Cloud Service et il ne doit pas être nécessaire pour exécuter le code client. Pour AEM en tant qu’environnements de Cloud Service avec des index Lucene courants, Adobe travaille avec les clients individuellement pour une approche coordonnée afin de compenser cet index et d’utiliser des index meilleurs et optimisés. Si cet index est requis pour les requêtes personnalisées, en tant que solution temporaire, une copie de cet index doit être créée, en utilisant un nom différent, par exemple `/oak:index/acme.lucene-1-custom-1`, comme décrit [ici](/help/operations/indexing.md).
-Cette optimisation ne s’applique pas aux autres environnements AEM, qui sont hébergés sur site ou gérés par Adobe Managed Services, sauf indication contraire d’Adobe.
+L’index en texte intégral `/oak:index/lucene-2` peut devenir très volumineux, car il indexe par défaut tous les noeuds du référentiel AEM.  À compter de septembre 2021, l’Adobe prévoit de supprimer cet index, qui ne sera plus déployé en tant que Cloud Service dans AEM. Par conséquent, il n’est plus utilisé côté produit dans AEM en tant que Cloud Service et il ne doit pas être nécessaire pour exécuter le code client. Pour AEM en tant qu’environnements de Cloud Service avec des index Lucene courants, Adobe travaille avec les clients individuellement pour une approche coordonnée afin de compenser cet index et d’utiliser des index meilleurs et optimisés. Aucune action n’est requise par les clients sans autre préavis de la part de l’Adobe. Les clients d’AEM en tant que Cloud Service seront informés par Adobe lorsqu’il est nécessaire d’agir en ce qui concerne cette optimisation. Si cet index est requis pour les requêtes personnalisées, en tant que solution temporaire, une copie de cet index doit être créée, en utilisant un nom différent, par exemple `/oak:index/acme.lucene-1-custom-1`, comme décrit [ici](/help/operations/indexing.md).
+Cette optimisation ne s’applique pas par défaut aux autres environnements AEM, qui sont hébergés sur site ou gérés par Adobe Managed Services.
 
 ## Optimisations des requêtes
 
