@@ -2,10 +2,10 @@
 title: Recherche et indexation de contenu
 description: Recherche et indexation de contenu
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 6e8ea8c4db2004ed26ee0cd6c5c3d047c3a1815b
+source-git-commit: 8df5e800cd08fa0eb08edca06e98786a1864db84
 workflow-type: tm+mt
-source-wordcount: '2061'
-ht-degree: 85%
+source-wordcount: '2139'
+ht-degree: 82%
 
 ---
 
@@ -219,3 +219,9 @@ Apache Jackrabbit Oak permet des configurations d’index flexibles pour gérer 
 
 L’index en texte intégral `/oak:index/lucene-2` peut devenir très volumineux, car il indexe par défaut tous les noeuds du référentiel AEM. L’index en texte intégral Lucene a été abandonné en interne et ne sera plus déployé en tant que Cloud Service dans AEM à partir de septembre 2021. Par conséquent, il n’est plus utilisé côté produit dans AEM en tant que Cloud Service et il ne doit pas être nécessaire pour exécuter le code client. Pour AEM en tant qu’environnements de Cloud Service avec des index Lucene courants, Adobe travaille avec les clients individuellement pour une approche coordonnée afin de compenser cet index et d’utiliser des index meilleurs et optimisés. Si cet index est requis pour les requêtes personnalisées, en tant que solution temporaire, une copie de cet index doit être créée, en utilisant un nom différent, par exemple `/oak:index/acme.lucene-1-custom-1`, comme décrit [ici](/help/operations/indexing.md).
 Cette optimisation ne s’applique pas aux autres environnements AEM, qui sont hébergés sur site ou gérés par Adobe Managed Services, sauf indication contraire d’Adobe.
+
+## Optimisations des requêtes
+
+L’outil **Performances des requêtes** vous permet d’observer les requêtes JCR populaires et lentes. De plus, il peut analyser les requêtes et afficher diverses informations sur, notamment si un index est utilisé ou non pour cette requête.
+
+Contrairement à AEM on premise, AEM en tant que Cloud Service n’affiche plus l’outil **Performances des requêtes** dans l’interface utilisateur. Il est désormais disponible via Developer Console (dans Cloud Manager) sur l’onglet **Requêtes** .
