@@ -4,14 +4,18 @@ description: Découvrez comment les modèles de fragment de contenu constituent 
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: c82fdc8245846c4fa5daff898aec109579acc2fc
+source-git-commit: ce6741f886cc87b1be5b32dbf34e454d66a3608b
 workflow-type: tm+mt
-source-wordcount: '2256'
-ht-degree: 100%
+source-wordcount: '2772'
+ht-degree: 81%
 
 ---
 
 # Modèles de fragment de contenu {#content-fragment-models}
+
+>[!NOTE]
+>
+>La fonction [Modèles de fragment de contenu verrouillés (publiés)](#locked-published-content-fragment-models) est en version bêta.
 
 Les modèles de fragment de contenu d’AEM définissent la structure du contenu de vos [fragments de contenu](/help/assets/content-fragments/content-fragments.md) et servent de base à votre contenu découplé.
 
@@ -127,8 +131,7 @@ Il s’affiche sous forme de séparateur dans l’éditeur de modèles et permet
 Dans l’éditeur de fragments, chaque instance s’affiche sous la forme d’un onglet.
 
       >[!NOTE]
-      >
-      >Ce type de données est uniquement utilisé à des fins de mise en forme. Il est ignoré par le schéma GraphQL AEM.
+      Ce type de données est uniquement utilisé à des fins de mise en forme. Il est ignoré par le schéma GraphQL AEM.
 
 ## Propriétés {#properties}
 
@@ -162,12 +165,10 @@ Le contenu (du champ spécifique) doit être unique dans tous les fragments de c
    Par exemple, un champ **Une seule ligne de texte** appelé `Country` dans le modèle de fragment de contenu ne peut pas avoir la valeur `Japan` dans deux fragments de contenu dépendants. Un avertissement sera émis en cas de tentative concernant la deuxième instance.
 
    >[!NOTE]
-   >
-   >L’unicité est assurée par la racine de langue.
+   L’unicité est assurée par la racine de langue.
 
    >[!NOTE]
-   >
-   >Les variations peuvent avoir la même valeur *unique* que les variations du même fragment, mais pas la même valeur que celle utilisée dans une variation d’autres fragments.
+   Les variations peuvent avoir la même valeur *unique* que les variations du même fragment, mais pas la même valeur que celle utilisée dans une variation d’autres fragments.
 
 * Consultez la section **[Référence de contenu](#content-reference)** pour plus d’informations sur ce type de données spécifique et ses propriétés.
 
@@ -209,17 +210,15 @@ Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’
    * Permet d’inclure/récupérer des données structurées.
 
       >[!NOTE]
-      >
-      >Cette méthode présente un intérêt particulier en conjonction avec la [Diffusion de contenu découplé utilisant des fragments de contenu à l’aide de GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+      Cette méthode présente un intérêt particulier en conjonction avec la [Diffusion de contenu découplé utilisant des fragments de contenu à l’aide de GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
    * Peut être configurée pour une ou plusieurs références (dans le fragment résultant).
 
 >[!NOTE]
->
->AEM dispose d’une protection récurrente pour :
->* Références du contenu
->Cela empêche l’utilisateur d’ajouter une référence au fragment actif. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
->* Références de fragments dans GraphQL
->Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
+AEM dispose d’une protection récurrente pour :
+* Références du contenu
+Cela empêche l’utilisateur d’ajouter une référence au fragment actif. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
+* Références de fragments dans GraphQL
+Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
 
 
 ### Référence de contenu {#content-reference}
@@ -261,8 +260,7 @@ type CompanyModel {
 ```
 
 >[!NOTE]
->
->Cette méthode présente un intérêt particulier en conjonction avec la [Diffusion de contenu découplé utilisant des fragments de contenu à l’aide de GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+Cette méthode présente un intérêt particulier en conjonction avec la [Diffusion de contenu découplé utilisant des fragments de contenu à l’aide de GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
 Outre les propriétés standard, vous pouvez définir les éléments suivants :
 
@@ -287,9 +285,8 @@ Indique un chemin racine pour tout fragment référencé.
    ![Référence du fragment](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
->
->Un mécanisme de protection contre les répétitions est en place. Il interdit à l’utilisateur de sélectionner le fragment de contenu actif dans la référence au fragment. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
->Il existe également une protection contre les répétitions pour les références de fragments dans GraphQL. Si vous créez une requête profonde entre deux fragments de contenu qui se référencent mutuellement, elle renvoie la valeur « null ».
+Un mécanisme de protection contre les répétitions est en place. Il interdit à l’utilisateur de sélectionner le fragment de contenu actif dans la référence au fragment. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
+Il existe également une protection contre les répétitions pour les références de fragments dans GraphQL. Si vous créez une requête profonde entre deux fragments de contenu qui se référencent mutuellement, elle renvoie la valeur « null ».
 
 ## Modèle de fragment de contenu – Propriétés {#content-fragment-model-properties}
 
@@ -347,8 +344,7 @@ Pour désactiver un modèle marqué comme **Activé**, utilisez l’option **Dé
 Pour mettre en œuvre une gouvernance du contenu, vous pouvez configurer des **Stratégies** sur le dossier de ressources pour contrôler les modèles de fragment de contenu autorisés pour la création de fragments dans ce dossier.
 
 >[!NOTE]
->
->Le mécanisme est similaire à [l’autorisation de modèles de page](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) pour une page et ses enfants, dans les propriétés avancées d’une page.
+Le mécanisme est similaire à [l’autorisation de modèles de page](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) pour une page et ses enfants, dans les propriétés avancées d’une page.
 
 Pour configurer les **stratégies** des **modèles de fragments de contenu autorisés** :
 
@@ -380,8 +376,7 @@ Les modèles de fragment de contenu autorisés pour un dossier sont résolus com
 ## Suppression d’un modèle de fragment de contenu {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
->
->La suppression d’un modèle de fragment de contenu peut avoir un impact sur les fragments dépendants.
+La suppression d’un modèle de fragment de contenu peut avoir un impact sur les fragments dépendants.
 
 Pour supprimer un modèle de fragment de contenu :
 
@@ -391,8 +386,7 @@ Pour supprimer un modèle de fragment de contenu :
 1. Sélectionnez votre modèle, puis utilisez l’option **de suppression** de la barre d’outils.
 
    >[!NOTE]
-   >
-   >Si le modèle est référencé, un avertissement s’affiche. Prenez alors les mesures qui s’imposent.
+   Si le modèle est référencé, un avertissement s’affiche. Prenez alors les mesures qui s’imposent.
 
 ## Publication d’un modèle de fragment de contenu {#publishing-a-content-fragment-model}
 
@@ -407,8 +401,7 @@ Pour publier un modèle de fragment de contenu :
 L’état publié sera indiqué dans la console.
 
    >[!NOTE]
-   >
-   >Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection indique cela, ainsi que le fait que le modèle sera publié avec le fragment.
+   Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection indique cela, ainsi que le fait que le modèle sera publié avec le fragment.
 
 ## Annulation de la publication d’un modèle de fragment de contenu {#unpublishing-a-content-fragment-model}
 
@@ -422,28 +415,82 @@ Pour annuler la publication d’un modèle de fragment de contenu :
 1. Sélectionnez votre modèle, puis l’option **Annuler la publication** dans la barre d’outils.
 L’état publié sera indiqué dans la console.
 
-<!--
-## Locked Content Fragment Models {#locked-content-fragment-models}
+Si vous essayez d’annuler la publication d’un modèle actuellement utilisé par un ou plusieurs fragments, un avertissement d’erreur vous en informe :
 
-This feature provides governance for Content Fragment Models that have been published. 
+![Message d’erreur de modèle de fragment de contenu lors de l’annulation de la publication d’un modèle en cours d’utilisation](assets/cfm-model-unpublish-error.png)
 
-The challenge:
+Le message vous invite à vérifier le panneau [Références](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) pour approfondir l’analyse :
 
-* Content Fragment Models determine the schema for GraphQL queries in AEM. 
+![Modèle de fragment de contenu dans les références](assets/cfm-model-references.png)
 
-  * AEM GraphQL schemas are created as soon as a Content Fragment Model is created, and they can exist on both author and publish environments. 
+## Modèles de fragment de contenu verrouillés (publiés) {#locked-published-content-fragment-models}
 
-  * Schemas on publish are the most critical as they provide the foundation for live delivery of Content Fragment content in JSON format.  
+>[!NOTE]
+La fonction Modèles de fragment de contenu verrouillés (publiés) est en version bêta.
 
-* Problems can occur when Content Fragment Models are modified, or in other words edited. This means that the schema changes, which in turn may affect existing GraphQL queries. 
+Cette fonctionnalité fournit une gouvernance pour les modèles de fragment de contenu qui ont été publiés.
 
-* Adding new fields to a Content Fragment Model should (typically) not have any detrimental effects. However, modifying existing data fields (for example, their name) or deleting field definitions, will break existing GraphQL queries when they are requesting these fields. 
+### Le défi {#the-challenge}
 
-The solution:
+* Les modèles de fragment de contenu déterminent le schéma des requêtes GraphQL dans AEM.
 
-* To make users aware of the risks when editing models that are already used for live content delivery (i.e. that have been published). Also, to avoid unintended changes. As either of these might break queries if the modified models are re-published. 
+   * AEM les schémas GraphQL sont créés dès qu’un modèle de fragment de contenu est créé. Ils peuvent exister dans les environnements de création et de publication.
 
-* To address this issue, Content Fragment Models are put in a READ-ONLY mode on author - as soon as they have been published. 
+   * Les schémas lors de la publication sont les plus critiques, car ils fournissent les bases de la diffusion en direct du contenu de fragment de contenu au format JSON.
 
-* In READ-ONLY mode, users can still see contents and structure of models but they cannot edit them. 
--->
+* Des problèmes peuvent survenir lorsque des modèles de fragment de contenu sont modifiés ou, en d’autres termes, modifiés. Cela signifie que le schéma change, ce qui peut à son tour affecter les requêtes GraphQL existantes.
+
+* L’ajout de nouveaux champs à un modèle de fragment de contenu ne doit (généralement) avoir aucun effet négatif. Toutefois, la modification de champs de données existants (par exemple, leur nom) ou la suppression de définitions de champ rompt les requêtes GraphQL existantes lorsqu’elles demandent ces champs.
+
+### Les exigences {#the-requirements}
+
+* Pour sensibiliser les utilisateurs aux risques lors de la modification de modèles déjà utilisés pour la diffusion de contenu en direct, c’est-à-dire des modèles qui ont été publiés).
+
+* En outre, pour éviter des modifications imprévues.
+
+L’un ou l’autre de ces modèles peut interrompre les requêtes si les modèles modifiés sont republiés.
+
+### La solution {#the-solution}
+
+Pour résoudre ces problèmes, les modèles de fragment de contenu sont *verrouillés* en mode LECTURE SEULE sur l’auteur - dès qu’ils ont été publiés. Ceci est indiqué par **Verrouillé** :
+
+![Carte du modèle de fragment de contenu verrouillé](assets/cfm-model-locked.png)
+
+Lorsque le modèle est **verrouillé** (en mode LECTURE SEULE), vous pouvez voir le contenu et la structure des modèles, mais vous ne pouvez pas les modifier.
+
+Vous pouvez gérer les modèles **verrouillés** à partir de la console ou de l’éditeur de modèles :
+
+* Console
+
+   Dans la console, vous pouvez gérer le mode LECTURE SEULE avec les actions **Déverrouiller** et **Verrouiller** dans la barre d’outils :
+
+   ![Barre d’outils du modèle de fragment de contenu verrouillé](assets/cfm-model-locked.png)
+
+   * Vous pouvez **Déverrouiller** un modèle pour activer les modifications.
+
+      Si vous sélectionnez **Déverrouiller**, un avertissement s’affiche et vous devez confirmer l’action **Déverrouiller** :
+      ![Message lors du déverrouillage du modèle de fragment de contenu](assets/cfm-model-unlock-message.png)
+
+      Vous pouvez ensuite ouvrir le modèle pour le modifier.
+
+   * Vous pouvez également **Verrouiller** le modèle par la suite.
+   * La republication du modèle le remet immédiatement en mode **Verrouillé** (LECTURE SEULE).
+
+* Éditeur de modèles
+
+   * Lorsque vous ouvrez un modèle verrouillé, trois actions s’affichent : **Annuler**, **Afficher uniquement la lecture**, **Modifier** :
+
+      ![Message lors de l’affichage d’un modèle de fragment de contenu verrouillé](assets/cfm-model-editor-lock-message.png)
+
+   * Si vous sélectionnez **Afficher uniquement la lecture**, vous pouvez voir le contenu et la structure du modèle :
+
+      ![Affichage en lecture seule - modèle de fragment de contenu verrouillé](assets/cfm-model-editor-locked-view-only.png)
+
+   * Si vous sélectionnez **Modifier**, vous pouvez modifier et enregistrer vos mises à jour :
+
+      ![Modifier : modèle de fragment de contenu verrouillé](assets/cfm-model-editor-locked-edit.png)
+
+      >[!NOTE]
+      Un avertissement peut toujours s’afficher en haut de l’écran, mais c’est le cas lorsque le modèle est déjà utilisé par les fragments de contenu existants.
+
+   * **** L’annulation vous ramène à la console.

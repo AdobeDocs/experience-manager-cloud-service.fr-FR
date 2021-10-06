@@ -1,17 +1,16 @@
 ---
 title: Compliance
 description: Conformité
-exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '382'
+ht-degree: 82%
 
 ---
 
-# Conformité à AEM en tant que Cloud Service {#aem-compliance}
+# Conformité dans AEM as a Cloud Service {#aem-compliance}
 
-Cette page répertorie les ressources d’aide autonome fournissant des informations sur la conformité en tant que Cloud Service dans Experience Manager.
+Cette page répertorie les ressources d’aide autonome fournissant des informations sur la conformité dans Experience Manager as a Cloud Service.
 
 ## Principaux articles de présentation {#key-articles}
 
@@ -21,7 +20,7 @@ Cette page répertorie les ressources d’aide autonome fournissant des informat
 * [Instructions relatives à l’accessibilité web](/help/compliance/accessibility/web-accessibility.md)
 * [Guide rapide relatif à WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
 
-## Guides de Experience Manager en tant que Cloud Service {#aem-guides}
+## Guides as a Cloud Service Experience Manager {#aem-guides}
 
 | Guide de l’utilisateur | Description |
 |---|---|

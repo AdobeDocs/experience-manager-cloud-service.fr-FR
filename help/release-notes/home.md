@@ -2,10 +2,10 @@
 title: Notes de mise à jour d’Adobe Experience Manager (AEM) as a Cloud Service.
 description: Notes de mise à jour d’Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 72c1e85fca032f82a2755f9ca601625e1a3f7461
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '636'
+ht-degree: 51%
 
 ---
 
@@ -13,18 +13,18 @@ ht-degree: 0%
 
 | Produit | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2021.08.0 |
+| Version | 2021.09.0 |
 | Type | Mises à jour continues |
 | Date de disponibilité | Mise à jour continue |
 
 ## Préparation d’une version {#how-to-prepare}
 
-Avec le modèle de mise à jour continue dans [!DNL Adobe Experience Manager] en tant que Cloud Service, l’application est mise à jour automatiquement de manière continue. Il existe deux types de mises à jour : les mises à jour de fonctionnalités et les mises à jour critiques :
+Avec le modèle de version continue as a Cloud Service dans [!DNL Adobe Experience Manager], l’application est mise à jour automatiquement de manière continue. Il existe deux types de mises à jour : les mises à jour de fonctionnalités et les mises à jour critiques :
 
 * Les nouvelles fonctionnalités sont publiées avec une fréquence mensuelle prévisible et sont axées sur les nouvelles fonctionnalités et les innovations de produits.
-* Les mises à jour critiques sont fréquentes et portent sur les mises à jour de sécurité, les correctifs de bogues et les améliorations de performances. Ainsi, [!DNL Adobe Experience Manager] en tant que Cloud Service est toujours à jour avec les correctifs critiques.
+* Les mises à jour critiques sont fréquentes et portent sur les mises à jour de sécurité, les correctifs de bogues et les améliorations de performances. Cela garantit que [!DNL Adobe Experience Manager] as a Cloud Service est toujours à jour avec les correctifs critiques.
 
-En plus de la vitesse d’innovation, [!DNL Adobe Experience Manager] en tant que Cloud Service offre la possibilité de prévisualiser les fonctionnalités à venir un mois complet à l’avance avant que les fonctionnalités ne soient mises en production. Cela vous permet d’évaluer l’impact d’une prochaine version sur leur organisation en testant les fonctionnalités de votre propre environnement personnalisé et en formant/préparant les utilisateurs internes bien à l’avance.
+En plus de la vitesse d’innovation, [!DNL Adobe Experience Manager] as a Cloud Service offre également la possibilité de prévisualiser les fonctionnalités à venir un mois complet à l’avance avant que les fonctionnalités ne soient mises en production. Cela vous permet d’évaluer l’impact d’une prochaine version sur leur organisation en testant les fonctionnalités de votre propre environnement personnalisé et en formant/préparant les utilisateurs internes bien à l’avance.
 
 >[!NOTE]
 >
@@ -45,14 +45,14 @@ Pour préparer une version :
 * [Problèmes connus](known-issues.md)
 * [Fonctionnalités obsolètes et supprimées](deprecated-removed-features.md)
 
-## Guides de Experience Manager en tant que Cloud Service {#aem-guides}
+## Guides as a Cloud Service Experience Manager {#aem-guides}
 
 | Guide de l’utilisateur | Description |
 |---|---|
 | [Page d’accueil d’Experience Manager as a Cloud Service](/help/landing/home.md) | Pour une présentation de la documentation d’Experience Manager as a Cloud Service, commencez ici. |
 | [Présentation](/help/overview/home.md) | Ce guide présente Experience Manager as a Cloud Service, avec une introduction, la terminologie, etc. |
 | [Guide de l’utilisateur relatif à la sécurité](/help/security/home.md) | Découvrez les sujets de sécurité importants concernant Experience Manager as a Cloud Service. |
-| [Intégration](/help/onboarding/home.md) | Ce guide résume la procédure à suivre pour commencer à utiliser Experience Manager en tant que Cloud Service, y compris la manière d’obtenir un accès et des informations importantes sur la protection des données. |
+| [Intégration](/help/onboarding/home.md) | Ce guide résume la prise en main d’Experience Manager as a Cloud Service, notamment la manière d’obtenir un accès et des informations importantes sur la protection des données. |
 | [Guide de l’utilisateur de Sites](/help/sites-cloud/home.md) | Découvrez comment créer avec Experience Manager Sites as a Cloud Service et l’administrer. |
 | [Guide de l’utilisateur d’Assets](/help/assets/home.md) | Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service. |
 | [Transition vers AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Découvrez le parcours de transition vers Cloud Service. |

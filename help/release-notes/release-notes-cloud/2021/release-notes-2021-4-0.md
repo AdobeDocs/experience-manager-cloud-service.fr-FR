@@ -1,8 +1,7 @@
 ---
 title: Notes de mise à jour de la version 2021.4.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2021.4.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: e3540331e3194dce5dcd88e4f785f15ef682f062
+source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 92%
@@ -30,29 +29,29 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 ### Nouveautés {#what-is-new-foundation}
 
-* [Processus Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) - Une nouvelle étape et un nouveau modèle de processus offrent des performances accrues lors de la publication de hiérarchies de contenu profondes.
+* [Processus Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) – Une nouvelle étape et un nouveau modèle de processus offrent des performances accrues lors de la publication de hiérarchies de contenu profondes.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Nouveautés d’[!DNL Sites]  {#what-is-new-sites}
+### Nouveautés de [!DNL Sites] {#what-is-new-sites}
 
-* Points d’entrée GraphQL - Il est désormais possible d’activer l’API GraphQL AEM pour les configurations d’AEM Sites individuelles et de créer des points d’entrée GraphQL personnalisés pour ces configurations à l’aide d’une nouvelle interface utilisateur de la console GraphQL. L’interface utilisateur permet également de gérer les points d’entrée GraphQL.
+* Points d’entrée GraphQL – Il est désormais possible d’activer l’API AEM GraphQL pour les configurations d’AEM Sites individuelles et de créer des points d’entrée GraphQL personnalisés pour ces configurations à l’aide d’une nouvelle interface utilisateur de la console GraphQL. L’interface utilisateur permet également de gérer les points d’entrée GraphQL.
 
-* Modèles de contenu, type de données Date&amp;Time amélioré - Il est désormais possible de configurer le type de date Date&amp;Time afin d’autoriser la création des informations de date uniquement, d’heure uniquement ou les informations de date et d’heure.
+* Modèles de contenu, type de données Date&amp;Time amélioré – Il est désormais possible de configurer le type de date Date&amp;Time afin d’autoriser la création des informations de date uniquement, d’heure uniquement ou les informations de date et d’heure.
 
-* Modèles de contenu, type de données Balises amélioré - Il est désormais possible de configurer le type de données Balises pour permettre la création de balises uniques ou multiples.
+* Modèles de contenu, type de données Balises amélioré – Il est désormais possible de configurer le type de données Balises pour permettre la création de balises uniques ou multiples.
 
-* Modèles de contenu, nouveau type de données Espace réservé d’onglet - Le nouveau type de données Espace réservé d’onglet permet de regrouper les types de données dans des sections qui seront rendues sous les onglets de l’éditeur de fragment de contenu.
+* Modèles de contenu, nouveau type de données Espace réservé d’onglet – Le nouveau type de données Espace réservé d’onglet permet de regrouper les types de données dans des sections qui seront rendues sous les onglets de l’éditeur de fragment de contenu.
 
-### Bogues corrigés dans [!DNL Sites] {#bug-fixes-sites}
+### Correctifs dans [!DNL Sites] {#bug-fixes-sites}
 
-* Fragments de contenu - Le déplacement de fragments de contenu ou de dossiers met désormais à jour les références imbriquées dans le fragment (CQ-4320815).
+* Fragments de contenu – Le déplacement de fragments de contenu ou de dossiers met désormais à jour les références imbriquées dans le fragment (CQ-4320815).
 
-* GraphQL - Les requêtes persistantes prennent désormais en charge les points d’entrée définis par l’utilisateur et spécifiques aux configurations AEM Sites (CQ-4315928).
+* GraphQL – Les requêtes persistantes prennent désormais en charge les points d’entrée définis par l’utilisateur et spécifiques aux configurations AEM Sites (CQ-4315928).
 
 ## [!DNL Adobe Experience Manager Assets] as a  [!DNL Cloud Service] {#assets}
 
-### Nouveautés d’[!DNL Assets]  {#what-is-new-assets}
+### Nouveautés de [!DNL Assets] {#what-is-new-assets}
 
 * [!DNL Experience Manager] n’archive pas les téléchargements de ressources uniques où le fichier d’origine est téléchargé. Cette amélioration permet des téléchargements plus rapides.
 
@@ -74,7 +73,7 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 * Lorsque vous parcourez des ressources en mode Colonne, un indicateur visuel s’affiche pour les ressources expirées.
 
-### Bogues corrigés dans [!DNL Assets] {#bug-fixes-assets}
+### Correctifs dans [!DNL Assets] {#bug-fixes-assets}
 
 * Lorsque vous tentez de déplacer plusieurs ressources ou dossiers, une erreur est consignée dans la console et l’opération de déplacement n’est pas effectuée. L’opération de déplacement échoue si le titre ne peut pas être mis à jour. (CQ-4322080)
 
@@ -92,7 +91,7 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 ## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
-### Nouveautés d’[!DNL Forms]  {#what-is-new-forms}
+### Nouveautés de [!DNL Forms] {#what-is-new-forms}
 
 * **Utilisation de la méthode d’authentification d’identité ID gouvernement dans les formulaires adaptatifs prenant en charge Adobe Sign**
 
@@ -116,9 +115,9 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
    Vous pouvez utiliser un fichier XDP comme modèle de document d’enregistrement sur les instances de Cloud Service et dans le SDK AEM Forms as a Cloud Service (environnement de développement local). Auparavant, la prise en charge était limitée uniquement aux instances de Cloud Service.
 
-### Bogues corrigés dans [!DNL Forms] {#bug-fixes-forms}
+### Correctifs dans [!DNL Forms] {#bug-fixes-forms}
 
-* Lorsqu’un formulaire adaptatif configuré pour ne pas générer de document d’enregistrement est envoyé à un processus AEM configuré pour générer un document d’enregistrement, aucun message d’erreur ne s’affiche et la tâche ne parvient pas à effectuer l’envoi.
+* Lorsqu’un formulaire adaptatif configuré pour ne pas générer de document d’enregistrement est envoyé à un workflow AEM configuré pour générer un document d’enregistrement, aucun message d’erreur ne s’affiche et la tâche ne parvient pas à effectuer l’envoi.
 
 ### Autres mises à jour {#misc-2021-04-0-forms}
 
@@ -129,7 +128,7 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 ### Nouveautés {#what-is-new-commerce}
 
-* Prise en charge de l’UID de catégorie - Cette option ouvre les intégrations commerciales tierces pour les systèmes qui utilisent des chaînes pour les ID de catégorie.
+* Prise en charge de l’UID de catégorie – Cette option ouvre les intégrations commerciales tierces pour les systèmes qui utilisent des chaînes pour les ID de catégorie.
 
 * Extension AEM pour PWA Studio, avec un exemple d’intégration
 
@@ -143,7 +142,7 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 * Le champ de catégorie racine n’était pas affiché sous l’onglet Commerce dans les propriétés de page des pages de catégorie.
 
-## Cloud Manager {#cloud-manager}
+## Cloud Manager  {#cloud-manager}
 
 Cette section présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.4.0.
 

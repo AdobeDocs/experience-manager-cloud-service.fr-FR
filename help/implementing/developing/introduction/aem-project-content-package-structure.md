@@ -2,9 +2,9 @@
 title: Structure de projet AEM
 description: Découvrez comment définir des structures de package en vue d’un déploiement sur Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 1cf9834d840709ed340aaef235860d7c6d26c6d5
+source-git-commit: 6548e05850d5499f1ce7d1f23f2cea2adb9d06fd
 workflow-type: tm+mt
-source-wordcount: '2880'
+source-wordcount: '2878'
 ht-degree: 99%
 
 ---
@@ -270,7 +270,7 @@ Il vous suffit d’ajouter les entrées `<filter root="/apps/<my-app>-packages"/
 
 ## Incorporation de modules tiers {#embedding-3rd-party-packages}
 
-Tous les modules doivent être disponibles via le [référentiel d’artefacts Maven public d’Adobe](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) ou un référentiel d’artefacts Maven tiers accessible au public pouvant être référencé.
+Tous les modules doivent être disponibles via le [référentiel d’artefacts Maven public d’Adobe](https://repo1.maven.org/maven2/com/adobe/) ou un référentiel d’artefacts Maven tiers accessible au public pouvant être référencé.
 
 Si les modules tiers se trouvent dans le **référentiel d’artefacts Maven public d’Adobe**, aucune configuration supplémentaire n’est nécessaire pour qu’Adobe Cloud Manager puisse résoudre les artefacts.
 
