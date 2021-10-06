@@ -3,10 +3,10 @@ title: Configuration du Cloud Service Dynamic Media
 description: Découvrez la configuration de Dynamic Media dans Adobe Experience Manager as a Cloud Service.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 6933f053e11320d8201922723879983084c52209
+source-git-commit: 49302452b9544b9414ec49ce2862d9913fbfc6a6
 workflow-type: tm+mt
-source-wordcount: '4057'
-ht-degree: 77%
+source-wordcount: '4054'
+ht-degree: 76%
 
 ---
 
@@ -31,11 +31,11 @@ Avec la nouvelle architecture, Experience Manager est responsable des ressource
 >Les fonctionnalités de la liste suivante nécessitent que vous utilisiez le réseau de diffusion de contenu prêt à l’emploi fourni avec Dynamic Media d’Adobe Experience Manager. Les autres réseaux de diffusion de contenu personnalisés ne sont pas pris en charge avec ces fonctionnalités.
 >
 >* [Imagerie dynamique](/help/assets/dynamic-media/imaging-faq.md)
-* [Invalidation du cache](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-* [Protection des liens dynamiques](/help/assets/dynamic-media/hotlink-protection.md)
-* [Diffusion de contenu HTTP/2](/help/assets/dynamic-media/http2faq.md)
-* Redirection d’URL au niveau du réseau de diffusion de contenu
-* Akamai ChinaCDN (pour une diffusion optimale en Chine)
+>* [Invalidation du cache](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+>* [Protection des liens dynamiques](/help/assets/dynamic-media/hotlink-protection.md)
+>* [Diffusion de contenu HTTP/2](/help/assets/dynamic-media/http2faq.md)
+>* Redirection d’URL au niveau du réseau de diffusion de contenu
+>* Akamai ChinaCDN (pour une diffusion optimale en Chine)
 
 
 <!-- OBSOLETE CONTENT
@@ -62,10 +62,10 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 <!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
-1. Dans Experience Manager en tant que Cloud Service, sélectionnez le Experience Manager en tant que logo de Cloud Service pour accéder à la console de navigation globale.
+1. Dans Experience Manager as a Cloud Service, sélectionnez le logo as a Cloud Service du Experience Manager pour accéder à la console de navigation globale.
 1. Sur la gauche de la console, sélectionnez l’icône Outils, puis accédez à **[!UICONTROL Cloud Services > Configuration Dynamic Media]**.
 1. Sur la page du navigateur de configuration Dynamic Media, dans le volet de gauche, sélectionnez **[!UICONTROL global]** (ne sélectionnez pas l’icône de dossier située à gauche de **[!UICONTROL global]**). Sélectionnez ensuite **[!UICONTROL Créer]**.
-1. Sur la page **[!UICONTROL Créer une configuration Dynamic Media]**, saisissez un titre, l’adresse email du compte Dynamic Media et un mot de passe, puis sélectionnez votre région. Ces informations vous sont fournies par Adobe dans l’e-mail de mise en service. Contactez l’assistance clientèle si vous ne l’avez pas reçu cet e-mail.
+1. Sur la page **[!UICONTROL Créer une configuration Dynamic Media]**, saisissez un titre, l’adresse email du compte Dynamic Media et un mot de passe, puis sélectionnez votre région. Ces informations vous sont fournies par Adobe dans l’e-mail de mise en service. Si vous n’avez pas reçu cet e-mail, contactez le service clientèle d’Adobe.
 1. Sélectionnez **[!UICONTROL Connexion à Dynamic Media]**.
 1. Dans la boîte de dialogue **[!UICONTROL Modifier le mot de passe]**, dans le champ **[!UICONTROL Nouveau mot de passe]**, saisissez un nouveau mot de passe composé de 8 à 25 caractères. Le mot de passe doit contenir au moins une occurrence de chacun des types de caractères suivants :
 
@@ -97,8 +97,11 @@ To migrate any custom viewer presets and configurations that you have created fr
    | Synchroniser tout le contenu | Sélectionné par défaut. Désélectionnez cette option si vous souhaitez inclure ou exclure des ressources de la synchronisation avec Dynamic Media. La désélection de cette option vous permet de choisir l’un des deux modes de synchronisation Dynamic Media :<br>**[!UICONTROL Mode de synchronisation Dynamic Media]**<br>**[!UICONTROL Activer par défaut ]** : la configuration s’applique par défaut à tous les dossiers, sauf si vous marquez un dossier spécifique à exclure. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Désactivé par défaut]** : la configuration n’est appliquée à aucun dossier tant que vous ne marquez pas explicitement un dossier sélectionné pour synchronisation avec Dynamic Media.<br>Pour marquer un dossier sélectionné en vue de sa synchronisation avec Dynamic Media, sélectionnez un dossier de ressources, puis, dans la barre d’outils, sélectionnez  **[!UICONTROL Propriétés]**. Sous l’onglet **[!UICONTROL Détails]**, dans la liste déroulante **[!UICONTROL Mode de synchronisation Dynamic Media]**, choisissez l’une des trois options suivantes. Une fois que vous avez terminé, sélectionnez **[!UICONTROL Enregistrer]**. *À retenir : ces trois options ne sont pas disponibles si vous avez sélectionné auparavant **Synchroniser tout le contenu**.* Voir aussi  [Utilisation de la publication sélective au niveau du dossier dans Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL Hérité&#x200B;]** : aucune valeur de synchronisation explicite sur le dossier. Au lieu de cela, le dossier hérite de la valeur de synchronisation de l’un de ses dossiers ancêtres ou du mode par défaut dans la configuration du cloud. Le statut détaillé de l’héritage s’affiche par le biais d’une info-bulle.<br>**[!UICONTROL Activé pour les sous-dossiers]** : incluez tous les éléments de cette sous-arborescence dans la synchronisation avec Dynamic Media. Les paramètres propres au dossier remplacent le mode par défaut dans la configuration du cloud.<br>**[!UICONTROL Désactivé pour les sous-dossiers ]** : excluez tous les éléments de cette sous-arborescence de la synchronisation avec Dynamic Media. |
 
    >[!NOTE]
-   Le contrôle de version n’est pas pris en charge dans Dynamic Media. En outre, l’activation différée ne s’applique que si l’option **[!UICONTROL Publier des ressources]** dans la page de configuration de Dynamic Media est définie sur **[!UICONTROL Dès l’activation]**, puis uniquement jusqu’à la première activation de la ressource.
-   Une fois qu’une ressource est activée, toutes les mises à jour sont immédiatement publiées en direct sur la livraison S7.
+   >
+   >Le contrôle de version n’est pas pris en charge dans Dynamic Media. En outre, l’activation différée ne s’applique que si l’option **[!UICONTROL Publier des ressources]** dans la page de configuration de Dynamic Media est définie sur **[!UICONTROL Dès l’activation]**, puis uniquement jusqu’à la première activation de la ressource.
+   >
+   >
+   >Une fois qu’une ressource est activée, toutes les mises à jour sont immédiatement publiées en direct sur la livraison S7.
 
    ![dynamicmediaconfiguration2updated](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
@@ -106,13 +109,15 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. Dans la boîte de dialogue **[!UICONTROL Configuration de Dynamic Media]**, sélectionnez **[!UICONTROL OK]** pour commencer la configuration.
 
    >[!IMPORTANT]
-   Une fois la nouvelle configuration Dynamic Media terminée, vous recevez une notification d’état dans la boîte de réception d’Experience Manager as a Cloud Service.
-   Cette notification de boîte de réception vous informe si la configuration a réussi ou non.
-Voir [Dépannage d’une nouvelle configuration Dynamic Media](#troubleshoot-dm-config) et [Votre boîte de réception](/help/sites-cloud/authoring/getting-started/inbox.md) pour plus d’informations.
+   >
+   >Une fois la nouvelle configuration Dynamic Media terminée, vous recevez une notification d’état dans la boîte de réception d’Experience Manager as a Cloud Service.
+   >
+   >Cette notification de boîte de réception vous informe si la configuration a réussi ou non.
+   > Voir [Dépannage d’une nouvelle configuration Dynamic Media](#troubleshoot-dm-config) et [Votre boîte de réception](/help/sites-cloud/authoring/getting-started/inbox.md) pour plus d’informations.
 
 1. Pour prévisualiser en toute sécurité le contenu Dynamic Media avant qu’il ne soit publié, Experience Manager as a Cloud Service utilise par défaut la validation basée sur les jetons. Cependant, vous pouvez également « placer en liste autorisée » d’autres adresses IP pour permettre aux utilisateurs d’accéder à l’aperçu sécurisé du contenu. Pour configurer cette action, procédez comme suit :<!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
-   * Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started) puis connectez-vous à votre compte. Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne possédez pas ces informations, contactez l’Assistance clientèle d’Adobe.
+   * Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started) puis connectez-vous à votre compte. Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez le service clientèle d’Adobe.
    * Dans la barre de navigation située dans le coin supérieur droit de la page, accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Configuration de la publication]** > **[!UICONTROL Serveur d’images]**.
    * Sur la page Publication du serveur d’images, dans la liste déroulante **[!UICONTROL Contexte de publication]**, sélectionnez **[!UICONTROL Test de l’hébergeur d’images]**.
    * Pour le filtre d’adresses client, sélectionnez **[!UICONTROL Ajouter]**.
@@ -135,14 +140,14 @@ Voir aussi [Votre boîte de réception](/help/sites-cloud/authoring/getting-star
 
 **Pour résoudre les problèmes liés à une nouvelle configuration Dynamic Media:**
 
-1. Près du coin supérieur droit de la page Experience Manager en tant que Cloud Service, sélectionnez l’icône représentant une cloche, puis sélectionnez **[!UICONTROL Afficher tout]**.
+1. Près du coin supérieur droit de la page as a Cloud Service de l’Experience Manager, sélectionnez l’icône représentant une cloche, puis sélectionnez **[!UICONTROL Afficher tout]**.
 1. Sur la page Boîte de réception, sélectionnez la notification de succès pour afficher un aperçu de l’état et des journaux de la configuration.
 
    Si la configuration a échoué, sélectionnez la notification d&#39;échec de la même manière que la capture d&#39;écran suivante.
 
    ![Échec de la configuration de Dynamic Media](/help/assets/dynamic-media/assets/dmconfig-fail-notification.png)
 
-1. Sur la page **[!UICONTROL DMSETUP]**, passez en revue les détails de configuration qui décrivent l’échec. En particulier, notez les messages d’erreur ou les codes d’erreur. Contactez l’Assistance clientèle Adobe et partagez ces informations.
+1. Sur la page **[!UICONTROL DMSETUP]**, passez en revue les détails de configuration qui décrivent l’échec. En particulier, notez les messages d’erreur ou les codes d’erreur. Contactez le service clientèle d’Adobe avec ces informations.
 
    ![Page de configuration Dynamic Media](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
 
@@ -161,7 +166,7 @@ Si nécessaire, vous pouvez vérifier l’orthographe d’un mot de passe saisi 
 
 Le mot de passe modifié est enregistré lorsque vous sélectionnez **[!UICONTROL Enregistrer]** dans le coin supérieur droit de la page **[!UICONTROL Modifier la configuration Dynamic Media]** .
 
-1. Dans Experience Manager en tant que Cloud Service, sélectionnez le Experience Manager en tant que logo de Cloud Service pour accéder à la console de navigation globale.
+1. Dans Experience Manager as a Cloud Service, sélectionnez le logo as a Cloud Service du Experience Manager pour accéder à la console de navigation globale.
 1. Sur la gauche de la console, sélectionnez l’icône Outils, puis accédez à **[!UICONTROL Cloud Services > Configuration Dynamic Media]**.
 1. Sur la page du navigateur de configuration Dynamic Media, dans le volet de gauche, sélectionnez **[!UICONTROL global]**. Ne sélectionnez pas l’icône de dossier située à gauche de **[!UICONTROL global]**. Sélectionnez ensuite **[!UICONTROL Modifier]**.
 1. Sur la page **[!UICONTROL Modifier la configuration Dynamic Media]**, directement sous le champ **[!UICONTROL Mot de passe]**, sélectionnez **[!UICONTROL Modifier le mot de passe]**.
@@ -275,7 +280,7 @@ Voir [Chargement de ressources](/help/assets/add-assets.md).
 
 **Pour modifier les types MIME pour les formats pris en charge :**
 
-1. Dans Experience Manager en tant que Cloud Service, sélectionnez le Experience Manager en tant que logo de Cloud Service pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Général > CRXDE Lite]**.
+1. Dans Experience Manager as a Cloud Service, sélectionnez le logo as a Cloud Service du Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Général > CRXDE Lite]**.
 1. Dans le rail de gauche, accédez à ce qui suit :
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -293,7 +298,7 @@ Voir [Chargement de ressources](/help/assets/add-assets.md).
    * Répétez les étapes 3 et 4 pour modifier d’autres types de MIME.
    * Dans la barre de menus de la page du CRXDE Lite, sélectionnez **[!UICONTROL Enregistrer tout]**.
 
-1. Dans le coin supérieur gauche de la page, sélectionnez **[!UICONTROL CRXDE Lite]** pour revenir à Experience Manager en tant que Cloud Service.
+1. Dans le coin supérieur gauche de la page, sélectionnez **[!UICONTROL CRXDE Lite]** pour revenir à l’as a Cloud Service Experience Manager.
 
 #### Ajout de types MIME pour les formats non pris en charge {#adding-mime-types-for-unsupported-formats}
 
@@ -301,7 +306,7 @@ Vous pouvez ajouter des types de MIME personnalisés pour les formats non pris e
 
 **Pour ajouter des types MIME pour des formats non pris en charge:**
 
-1. Dans Experience Manager en tant que Cloud Service, accédez à **[!UICONTROL Outils > Opérations > Console web]**.
+1. Depuis Experience Manager as a Cloud Service, accédez à **[!UICONTROL Outils > Opérations > Console web]**.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
@@ -328,7 +333,7 @@ Vous pouvez ajouter des types de MIME personnalisés pour les formats non pris e
    À ce stade, vous pouvez fermer l’onglet du navigateur dans lequel la page de configuration de la console web d’Adobe Experience Manager est ouverte.
 
 1. Revenez à l’onglet du navigateur qui contient votre console Experience Manager as a Cloud Service.
-1. Depuis Experience Manager en tant que Cloud Service, accédez à **[!UICONTROL Outils > Général > CRXDE Lite]**.
+1. Depuis Experience Manager as a Cloud Service, accédez à **[!UICONTROL Outils > Général > CRXDE Lite]**.
 
    ![2019-08-02_16-55-41](assets/2019-08-02_16-55-41.png)
 
@@ -386,10 +391,12 @@ La file d’attente de workflows Granite est utilisée pour le workflow **[!UICO
 
 **Pour mettre à jour la file d’attente de workflows transitoires Granite :**
 
-1. Accédez à [https://&lt;serveur>/system/console/configMgr](https://localhost:4502/system/console/configMgr) et recherchez **Queue: Granite Transient Workflow Queue** (File d’attente : file d’attente de workflows transitoires Granite).
+1. Accédez à la **Configuration de la console web Adobe Experience Manager** à l’adresse `http://<host>:<port>/system/console/configMgr`
+1. Recherchez **File d’attente : File d’attente des workflows transitoires Granite**.
 
    >[!NOTE]
-   Il est nécessaire d’effectuer une recherche par texte au lieu d’utiliser une URL directe, car le PID OSGi est généré dynamiquement.
+   >
+   >Il est nécessaire d’effectuer une recherche par texte au lieu d’utiliser une URL directe, car le PID OSGi est généré dynamiquement.
 
 1. Dans le champ **[!UICONTROL Maximum Parallel Jobs]** (Nombre maximal de tâches en parallèle), modifiez le nombre en fonction de la valeur souhaitée.
 
@@ -412,7 +419,8 @@ La file d’attente de workflows Granite est utilisée pour les workflows non tr
 1. Accédez à `https://<server>/system/console/configMgr` et recherchez **Queue: Granite Workflow Queue** (File d’attente : file d’attente de workflows Granite).
 
    >[!NOTE]
-   Il est nécessaire d’effectuer une recherche par texte au lieu d’utiliser une URL directe, car le PID OSGi est généré dynamiquement.
+   >
+   >Il est nécessaire d’effectuer une recherche par texte au lieu d’utiliser une URL directe, car le PID OSGi est généré dynamiquement.
 
 1. Dans le champ **[!UICONTROL Maximum Parallel Jobs]** (Nombre maximal de tâches en parallèle), modifiez le nombre en fonction de la valeur souhaitée.
 
