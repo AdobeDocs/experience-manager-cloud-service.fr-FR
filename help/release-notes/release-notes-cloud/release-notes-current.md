@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: e9fa68869ca92945c44a79b783fbc8a53a875e81
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '1570'
-ht-degree: 40%
+source-wordcount: '1628'
+ht-degree: 47%
 
 ---
 
@@ -25,89 +25,71 @@ La section suivante concerne les notes de mise à jour générales de la version
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle de [!DNL Adobe Experience Manager] en tant que [!DNL Cloud Service] (2021.9.0) est le 6 octobre 2021.
-La version suivante (2021.10.0) date du 28 octobre 2021.
+La date de publication de la version actuelle de [!DNL Adobe Experience Manager] en tant que [!DNL Cloud Service] (2021.8.0) est le 26 août 2021.
+La version suivante (2021.9.0) date du 4 octobre 2021.
 
 ## Vidéo de publication {#release-video}
 
-Regardez la vidéo [Présentation de la version de septembre 2021](https://video.tv.adobe.com/v/337381) pour un résumé des fonctionnalités ajoutées.
+Regardez la vidéo [Aperçu de la version d’août 2021](https://video.tv.adobe.com/v/336277) pour un résumé des fonctionnalités ajoutées.
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### Nouvelle fonctionnalité du canal de version préliminaire [!DNL Sites] {#sites-prerelease-features}
-
-* Les modèles de fragment de contenu sont désormais automatiquement définis en lecture seule une fois publiés, afin d’éviter de rompre involontairement les requêtes d’API en direct après la republication d’un modèle modifié. Les utilisateurs sont avertis lorsqu’ils tentent de modifier un modèle publié. La modification est possible lorsque vous acceptez l’avertissement.
-
-## [!DNL Experience Manager Assets] as a  [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
+
+* Lors du partage de ressources numériques sous la forme d’un lien, les utilisateurs peuvent copier immédiatement l’URL dans le Presse-papiers. Cette amélioration vous permet de partager vos ressources plus rapidement et plus facilement. Cette fonctionnalité permet un partage de ressources plus rapide et pratique.
+
+   ![Option Copier l’URL lors du partage d’une ressource en tant que lien](/help/assets/assets/link-share-copy-URL-option.png)
+   *Figure : Lors du partage d’une ressource en tant que lien, vous pouvez désormais copier l’URL pour la partager séparément.*
+
+* Lorsque vous chargez des fichiers TXT, les microservices de ressources génèrent automatiquement une miniature. La miniature PNG est un rendu de fichier TXT qui aide les utilisateurs à identifier le contenu ou les fichiers dans une certaine mesure, sans ouvrir les fichiers. Cette fonctionnalité ne nécessite aucune configuration et fonctionne par défaut.
+
+   ![Un rendu d’un fichier TXT est automatiquement généré par  [!DNL Assets] au format PNG.](/help/assets/assets/thumbnail-rendition-txt-file.png)
+   *Figure : Un rendu d’un fichier TXT est automatiquement généré pour vous aider à identifier le fichier sans l’ouvrir.*
+
+### Nouvelle fonctionnalité du canal de version préliminaire [!DNL Assets] {#assets-prerelease-features}
 
 * Les utilisateurs peuvent désormais trier les ressources affichées dans les résultats de recherche en mode Colonnes et Carte. Le tri fonctionne sur les colonnes Nom, Créé, Modifié ou Aucun.
 
    ![Trier les résultats de la recherche  [!DNL Assets] en mode Colonnes et Carte](/help/assets/assets/sort-searched-assets.png)
    *Figure : Triez les résultats de la recherche  [!DNL Assets] en mode Colonnes et Carte.*
 
-* Pour appeler par programmation le traitement à l’aide des microservices de ressources, une nouvelle API est introduite. Les développeurs peuvent désormais appliquer un profil de traitement existant au niveau du dossier à une ou plusieurs ressources spécifiques d’un dossier. Le profil de traitement est appliqué en fonction des mises à jour des propriétés de métadonnées personnalisées. Voir `AssetProcessor` dans la [[!DNL Experience Manager] référence de l’API](https://www.adobe.io/experience-manager/reference-materials/). Comme auparavant, il est possible d’[utiliser les microservices de ressources de l’interface utilisateur](/help/assets/asset-microservices-configure-and-use.md).
+### Correctifs de [!DNL Assets] {#assets-bugs-fixed}
 
-<!-- Leave this commented.
-
-### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
-
-Apparently, no new Assets features in Sep beta channel.
-A/V transcription feature via CQ-4303854 has moved to Oct beta now.
-
-### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
-
-No customer-reported bugs fixed in Sep release.
-CQ-4328183 was not reported on CS so not documented here.
--->
+* Lorsqu’un membre du groupe de contributeurs accède à la console [!DNL Assets] , une requête `POST` supplémentaire est générée pour tenter de créer une collection. Cette requête n’est pas obligatoire, elle échoue en raison de problèmes d’autorisation et crée de nombreuses erreurs dans les journaux. (CQ-4328856)
+* Lorsque les utilisateurs affichent une ressource et sélectionnent la [!UICONTROL Chronologie] dans le menu contextuel du panneau de gauche, une erreur s’affiche. Dans les journaux, de nombreux avertissements sont consignés en raison d’une mauvaise requête. (CQ-4328919)
 
 ## [!DNL Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
-### Nouveautés de [!DNL Forms] {#what-is-new-forms-sep-2021}
+### Nouveautés de [!DNL Forms] {#what-is-new-forms}
 
-* **Utilisation des rôles Adobe Sign dans un formulaire adaptatif** : les niveaux de service professionnel et entreprise d’Adobe Sign offrent la possibilité d’étendre les rôles des destinataires du contrat au-delà du simple signataire, afin de mieux répondre aux exigences de leur workflow. Vous pouvez désormais [permettre à chaque destinataire de contrat de configurer son rôle dans un formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform), avec le rôle Signer par défaut.
+<!-- * Automated Forms Conversion service can [convert PDF Forms in Italian and Portuguese language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) to Adaptive Forms. -->
 
-* **Analytics pour les formulaires adaptatifs** : vous pouvez désormais capturer et suivre le comportement de l’utilisateur final via Adobe Analytics pour les formulaires adaptatifs afin de rassembler les informations sur l’utilisateur final. Il permet de prendre des décisions éclairées basées sur les données afin d’améliorer l’expérience de l’utilisateur final.
+* AEM projet Archetype pour Forms as a Cloud Service comprend désormais des [modèles de données de formulaire pour Microsoft Dynamics et Salesforce.com](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment).
 
-* **Connectez facilement AEM Forms à Microsoft Dynamics et à Salesforce** : le service fournit des modèles de données et de configuration de source de données prêts à l’emploi pour Microsoft Dynamics et Salesforce, ce qui permet aux développeurs de configurer [plus rapidement et plus facilement Microsoft Dynamics et Salesforce en tant que sources de données pour un formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=en).
+* **Document d’enregistrement basé sur Acrobat** : AEM Forms as a Cloud Service prend en charge l’utilisation d’[Adobe Acrobat Form PDF (Acrobat PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=fr) comme modèle de document d’enregistrement en plus des modèles de formulaire basés sur XFA.
 
-* **Signer électroniquement un formulaire adaptatif à l’aide de DocuSign :**  vous pouvez utiliser DocuSign pour signer électroniquement un formulaire adaptatif. Le service fournit une action d’envoi personnalisée pour utiliser DocuSign avec un formulaire adaptatif. Vous pouvez installer le package disponible sur Distribution logicielle pour importer l’action d’envoi.
+* **Connecteur de magasin de données Microsoft Azure** : vous pouvez désormais [connecter le modèle de données de formulaire au stockage Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=fr). Il vous permet de récupérer et de stocker des données de formulaire adaptatif dans le stockage Microsoft Azure en tant qu’objet BLOB.
 
-### Fonctionnalités bêta de [!DNL Forms] {#sep-what-is-new-forms-prerelease}
+### Fonction bêta de [!DNL Forms] {#aug-what-is-new-forms-prerelease}
 
 * **Connecteur de stockage unifié :** utilisez le connecteur de stockage unifié pour externaliser les données en cours de traitement dans les référentiels gérés par le client. Par exemple, vous pouvez effectuer les actions suivantes :
    * Activer la fonctionnalité d’enregistrement et de reprise de Forms Portal et stocker les brouillons de formulaires adaptatifs dans un référentiel de données géré par le client.
    * Stocker les données de workflows AEM en cours (données des variables de workflows AEM) qui contiennent des données personnelles sensibles (SPD) dans un référentiel géré par le client.
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API Communications](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=en) vous permet de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode synchrone. Les API permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
+* **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API Communications](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=fr) vous permet de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode synchrone. Les API permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
    * Générer des documents en complétant des fichiers de modèle avec des données XML.
    * Générer des formulaires dans divers formats, y compris les flux d’impression PDF non interactifs.
    * Générer des fichiers PDF d’impression à partir d’un formulaire XFA au format PDF et d’un formulaire Adobe Acrobat.
 
 Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au programme bêta.
 
-## Module complémentaire CIF {#cloud-services-cif}
+### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Forms] {#prerelease-features-forms}
 
-### Nouveautés {#what-is-new-cif}
+* **Utilisation des rôles Adobe Sign dans un formulaire adaptatif** : les niveaux de service professionnel et entreprise d’Adobe Sign offrent la possibilité d’étendre les rôles des destinataires du contrat au-delà du simple signataire, afin de mieux répondre aux exigences de leur workflow. Vous pouvez désormais [permettre à chaque destinataire de contrat de configurer son rôle dans un formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html?#addsignerstoanadaptiveform), avec le rôle Signer par défaut.
 
-* Le nouvel onglet &quot;Contenu commercial associé&quot; dans l’éditeur de sites améliore l’efficacité de l’auteur en accédant rapidement au contenu produit AEM approprié pour le contexte actuel.
+* **Analytics pour les formulaires adaptatifs** : vous pouvez désormais capturer et suivre le comportement de l’utilisateur final via Adobe Analytics pour les formulaires adaptatifs afin de rassembler les informations sur l’utilisateur final. Il permet de prendre des décisions éclairées basées sur les données afin d’améliorer l’expérience de l’utilisateur final.
 
-   ![Contenu commercial associé](/help/assets/CIF/associated-commerce-content.png)
-
-* Amélioration de l’interface utilisateur du sélecteur de produits pour une meilleure expérience utilisateur, une efficacité accrue et une prise en charge du catalogue de produits complexe
-
-   ![Nouveau sélecteur de produits](/help/assets/CIF/product-picker.png)
-
-* Respect de la propriété &quot;include_in_menu&quot; dans le composant de navigation
-
-### Correctifs {#bug-fixes-cif}
-
-* Le vidage du cache du menu ne fonctionne pas comme prévu.
-
-* Erreurs JS lors de l’étape de déploiement AEM CS et lorsque vous n’utilisez pas les composants côté client
-
-* Impossible de créer une configuration cloud CIF dans les dossiers comportant un noeud sling:configs
+* **Connectez facilement AEM Forms à Microsoft Dynamics et Salesforce.com** : Le service fournit des modèles de données et de configuration de source de données prêts à l’emploi pour Microsoft Dynamics et Salesforce.com, ce qui rend  [plus rapide et plus facile pour les développeurs de configurer Microsoft Dynamics et Salesforce.com en tant que sources de données pour un formulaire](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html) adaptatif.
 
 ## [!DNL Experience Manager Screens] as a  [!DNL Cloud Service] {#screens}
 
@@ -127,27 +109,16 @@ Pour plus d’informations, voir [Prise en charge des miniatures pour les vidéo
 
 * Les entrées de balise associées n’ont pas été supprimées lors de la suppression des listes de lecture.
 
-## [!DNL Experience Manager as a Cloud Service] Foundation {#foundation}
 
-### Nouvelles fonctionnalités de [!DNL Experience Manager as a Cloud Service] {#foundation-features}
+## Module complémentaire CIF {#cloud-services-cif}
 
-**Mise en réseau avancée**
+### Nouveautés {#what-is-new-cif}
 
->[!INFO]
->
->La fonctionnalité de mise en réseau avancée fait partie de la version 2021.9.0 et sera activée pour les clients à la mi-octobre.
+* Nouvelle interface utilisateur du sélecteur de catégorie pour une meilleure expérience utilisateur, une efficacité accrue et une meilleure prise en charge d’un catalogue de produits complexe
 
-[!DNL Adobe Experience Manager] as a propose  [!DNL Cloud Service] désormais plusieurs types de fonctionnalités de mise en réseau avancées, notamment :
+   ![Nouveau sélecteur de catégorie](/help/assets/CIF/category-picker.png)
 
-* Sortie de port flexible pour libérer le trafic des ports non standard. Maintenant possible sans contacter l’assistance Adobe.
-* Adresse IP sortante dédiée pour évacuer le trafic AEM as a Cloud Service à partir d’une adresse IP unique, prenant désormais en charge tous les ports.
-* VPN pour sécuriser le trafic entre votre infrastructure et AEM as a Cloud Service.
-
-Pour plus d’informations, notamment sur la mise en réseau avancée en libre-service à l’aide des API de Cloud Manager, consultez la [documentation](/help/security/configuring-advanced-networking.md) .
-
-**Optimisations des index**
-
-Pour améliorer les performances des requêtes de recherche et de l’indexation, l’index de texte intégral lucene-2 n’est plus inclus dans la balise [!DNL Adobe Experience Manager] de cette version. [!DNL Cloud Service] Afin de supprimer cet index de texte intégral sur les environnements AEM conformément aux clients AEM, Adobe Engineering travaille individuellement et de manière proactive avec les clients pour une suppression douce et durable de l’index de texte intégral Lucene. Pour plus d’informations, consultez la [!DNL Adobe Experience Manager] [!DNL Cloud Service] [documentation](/help/operations/indexing.md#index-optimizations) et contactez directement notre service clientèle si vous avez des questions.
+* Meilleure prise en charge d’A11Y pour les composants principaux CIF
 
 ## Cloud Manager  {#cloud-manager}
 
@@ -170,38 +141,57 @@ La prochaine version est prévue pour le 7 octobre 2021.
 
 * Cliquez directement sur la carte Programme pour accéder à la page Aperçu de Cloud Manager.
 
+
 ### Correctifs {#bug-fixes-sept}
 
 * L’utilisateur voit désormais un message plus compréhensible lorsqu’il tente d’ajouter une nouvelle Liste autorisée IP dans un programme qui a atteint le nombre maximal autorisé de Listes autorisées IP configurables.
 
 * Une URL erronée a été copiée lors de la sélection de l’option de menu Copier l’URL dans l’écran Référentiels.
 
-## Cloud Accelerated Manager {#cam}
+## Date de publication {#release-date-cm-aug}
 
-### Date de publication {#release-date-october-cam}
+La date de publication de Cloud Manager dans AEM version as a Cloud Service 2021.8.0 est le 12 août 2021.
 
-La date de publication de Cloud Acceleration Manager est le 4 octobre 2021.
+### Nouveautés {#what-is-new-aug}
 
-### Nouveautés {#what-is-new-cam}
+* Les clients Cloud Service peuvent désormais afficher les rapports Contrat de niveau de service (SLA) dans Cloud Manager. Elle sera disponible progressivement au cours des prochains mois.
+Voir [Rapports SLA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html) pour en savoir plus.
 
-* Cloud Acceleration Manager permet désormais aux utilisateurs d’afficher les rapports BPA dans un aperçu imprimable, ce qui permet une impression ou une impression simples à PDF pour une partageabilité facile. Reportez-vous aux étapes 6 et 7 de la section [Utilisation de la carte d’analyse des bonnes pratiques](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+* Le type et la gravité des règles de qualité IndexType et `IndexDamAssetLucene` ont été modifiés. Il s’agit désormais des deux bogues du bloqueur *serverity*.
+
+* De nouvelles règles de qualité d’index Oak ont été introduites pour couvrir les configurations asynchrones et tika.
+
+* Augmentez le nombre maximal de certificats SSL par programme à 50.
+
+* Fonctionnalité de libre-service pour permettre aux utilisateurs de créer et de gérer plusieurs référentiels via l’interface utilisateur de Cloud Manager.
+
+* SonarQube lisait inutilement les données de l’historique Git. Avec les bases de code volumineuses, cela pouvait entraîner une pénalité de performance de build inutile.
+
+* Une API est désormais disponible pour invalider le cache de dépendance Maven par pipeline.
+
+* L’archétype de projet AEM utilisé par Cloud Manager a été mis à jour à la version 29.
+
+### Correctifs {#bug-fixes-aug}
+
+* Le statut Mise à jour disponible ne doit pas s’afficher lorsque la dernière version est inférieure à la version présente.
+
+* L’intégration initiale échouait pour les nouvelles organisations dont les noms étaient très longs.
+
+* Parfois, lorsqu’un pipeline est déclenché deux fois pour une raison quelconque, l’une ou l’autre des exécutions échoue avec l’erreur *Impossible de mettre à jour l’état d’exécution du pipeline*.
 
 ## Outil de transfert de contenu {#content-transfer-tool}
 
 ### Date de publication {#release-date-ctt-latest}
 
-La date de publication de l’outil de transfert de contenu v1.6.0 est le 4 octobre 2021.
+La date de publication de l’outil de transfert de contenu v1.5.6 est le 11 août 2021.
 
-### Nouveautés {#what-is-new-ctt}
+### Correctifs {#bug-fixes-ctt}
 
-* Amélioration du mappage des utilisateurs avec une expérience utilisateur simplifiée, y compris les fonctionnalités suivantes répertoriées ci-dessous. Pour plus d’informations, voir [Utilisation de l’outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr#using-user-mapping-tool).
-   * Tester la connexion à l’API User Management avant d’exécuter le mappage utilisateur
-   * Ignorer les erreurs et poursuivre avec élégance l’activité Mappage des utilisateurs
-   * Le mappage utilisateur n’échoue plus si le jeton d’accès expire (après 24 heures). Le mappage utilisateur peut être exécuté à nouveau à partir de l’endroit où il s’est arrêté pour la dernière fois.
+* Dans certains cas, tous les utilisateurs n’ont pas été migrés vers l’instance cible. Pour obtenir ce correctif, CTT v1.5.6 est requis avec aem-ethos-tools 1.2.354 ou version ultérieure sur l’instance as a Cloud Service de l’AEM cible.
 
-* Pour accroître la robustesse du CTT, le contenu peut être ingéré simultanément sur l’instance d’auteur ou l’instance de publication.
+* Le bouton **Arrêter l’ingestion** était désactivé lors de l’ingestion vers l’instance de publication. Cela n’est pas nécessaire, car il n’existe aucune étape de restauration de mongo pendant l’ingestion de publication.
 
-* Lorsque des versions sont incluses, le chemin `/var/audit` est automatiquement inclus pour migrer les événements de contrôle.
+* CTT n’a pas nettoyé le répertoire `/tmp` après une extraction réussie. Cela entraînait parfois des problèmes d’espace disque.
 
 ## Analyseur des bonnes pratiques {#best-practices-analyzer}
 
@@ -218,3 +208,4 @@ La date de publication de la version 2.1.18 de l’analyseur des bonnes pratique
 ### Correctifs {#bug-fixes-bpa}
 
 * BPA détectait faussement la présence de Commerce Integration Framework.
+

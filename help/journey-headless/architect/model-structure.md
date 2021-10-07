@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 117d79b277118f39dfc442957989095bab5670b9
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 16%
+source-wordcount: '603'
+ht-degree: 19%
 
 ---
 
@@ -101,10 +101,6 @@ Les modèles de fragment de contenu doivent être publiés avant ou pendant la p
 >
 >Si un auteur tente de publier un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection l’indique et le modèle est publié avec le fragment.
 
-Dès qu’un modèle est publié, il est *verrouillé* en mode LECTURE SEULE sur l’auteur. Cela a pour but d’empêcher les modifications qui provoqueraient des erreurs dans les schémas et requêtes GraphQL existants, en particulier dans l’environnement de publication. Il est indiqué dans la console par **Verrouillé**.
-
-Lorsque le modèle est **verrouillé** (en mode LECTURE SEULE), vous pouvez voir le contenu et la structure des modèles, mais vous ne pouvez pas les modifier directement ; mais vous pouvez gérer les modèles **verrouillés** à partir de la console ou de l’éditeur de modèles.
-
 ## Et après ? {#whats-next}
 
 Maintenant que vous en savez plus sur les bases, l’étape suivante consiste à commencer à créer vos propres modèles de fragment de contenu.
@@ -130,8 +126,6 @@ Maintenant que vous en savez plus sur les bases, l’étape suivante consiste à
       * [Publication d’un modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
 
       * [Annulation de la publication d’un modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
-
-      * [Modèles de fragment de contenu verrouillés (publiés)](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 
 * Guides de prise en main
 

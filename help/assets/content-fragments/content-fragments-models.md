@@ -4,18 +4,14 @@ description: Découvrez comment les modèles de fragment de contenu constituent 
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: ce6741f886cc87b1be5b32dbf34e454d66a3608b
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '2772'
-ht-degree: 81%
+source-wordcount: '2256'
+ht-degree: 100%
 
 ---
 
 # Modèles de fragment de contenu {#content-fragment-models}
-
->[!NOTE]
->
->La fonction [Modèles de fragment de contenu verrouillés (publiés)](#locked-published-content-fragment-models) est en version bêta.
 
 Les modèles de fragment de contenu d’AEM définissent la structure du contenu de vos [fragments de contenu](/help/assets/content-fragments/content-fragments.md) et servent de base à votre contenu découplé.
 
@@ -415,82 +411,28 @@ Pour annuler la publication d’un modèle de fragment de contenu :
 1. Sélectionnez votre modèle, puis l’option **Annuler la publication** dans la barre d’outils.
 L’état publié sera indiqué dans la console.
 
-Si vous essayez d’annuler la publication d’un modèle actuellement utilisé par un ou plusieurs fragments, un avertissement d’erreur vous en informe :
+<!--
+## Locked Content Fragment Models {#locked-content-fragment-models}
 
-![Message d’erreur de modèle de fragment de contenu lors de l’annulation de la publication d’un modèle en cours d’utilisation](assets/cfm-model-unpublish-error.png)
+This feature provides governance for Content Fragment Models that have been published. 
 
-Le message vous invite à vérifier le panneau [Références](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) pour approfondir l’analyse :
+The challenge:
 
-![Modèle de fragment de contenu dans les références](assets/cfm-model-references.png)
+* Content Fragment Models determine the schema for GraphQL queries in AEM. 
 
-## Modèles de fragment de contenu verrouillés (publiés) {#locked-published-content-fragment-models}
+  * AEM GraphQL schemas are created as soon as a Content Fragment Model is created, and they can exist on both author and publish environments. 
 
->[!NOTE]
-La fonction Modèles de fragment de contenu verrouillés (publiés) est en version bêta.
+  * Schemas on publish are the most critical as they provide the foundation for live delivery of Content Fragment content in JSON format.  
 
-Cette fonctionnalité fournit une gouvernance pour les modèles de fragment de contenu qui ont été publiés.
+* Problems can occur when Content Fragment Models are modified, or in other words edited. This means that the schema changes, which in turn may affect existing GraphQL queries. 
 
-### Le défi {#the-challenge}
+* Adding new fields to a Content Fragment Model should (typically) not have any detrimental effects. However, modifying existing data fields (for example, their name) or deleting field definitions, will break existing GraphQL queries when they are requesting these fields. 
 
-* Les modèles de fragment de contenu déterminent le schéma des requêtes GraphQL dans AEM.
+The solution:
 
-   * AEM les schémas GraphQL sont créés dès qu’un modèle de fragment de contenu est créé. Ils peuvent exister dans les environnements de création et de publication.
+* To make users aware of the risks when editing models that are already used for live content delivery (i.e. that have been published). Also, to avoid unintended changes. As either of these might break queries if the modified models are re-published. 
 
-   * Les schémas lors de la publication sont les plus critiques, car ils fournissent les bases de la diffusion en direct du contenu de fragment de contenu au format JSON.
+* To address this issue, Content Fragment Models are put in a READ-ONLY mode on author - as soon as they have been published. 
 
-* Des problèmes peuvent survenir lorsque des modèles de fragment de contenu sont modifiés ou, en d’autres termes, modifiés. Cela signifie que le schéma change, ce qui peut à son tour affecter les requêtes GraphQL existantes.
-
-* L’ajout de nouveaux champs à un modèle de fragment de contenu ne doit (généralement) avoir aucun effet négatif. Toutefois, la modification de champs de données existants (par exemple, leur nom) ou la suppression de définitions de champ rompt les requêtes GraphQL existantes lorsqu’elles demandent ces champs.
-
-### Les exigences {#the-requirements}
-
-* Pour sensibiliser les utilisateurs aux risques lors de la modification de modèles déjà utilisés pour la diffusion de contenu en direct, c’est-à-dire des modèles qui ont été publiés).
-
-* En outre, pour éviter des modifications imprévues.
-
-L’un ou l’autre de ces modèles peut interrompre les requêtes si les modèles modifiés sont republiés.
-
-### La solution {#the-solution}
-
-Pour résoudre ces problèmes, les modèles de fragment de contenu sont *verrouillés* en mode LECTURE SEULE sur l’auteur - dès qu’ils ont été publiés. Ceci est indiqué par **Verrouillé** :
-
-![Carte du modèle de fragment de contenu verrouillé](assets/cfm-model-locked.png)
-
-Lorsque le modèle est **verrouillé** (en mode LECTURE SEULE), vous pouvez voir le contenu et la structure des modèles, mais vous ne pouvez pas les modifier.
-
-Vous pouvez gérer les modèles **verrouillés** à partir de la console ou de l’éditeur de modèles :
-
-* Console
-
-   Dans la console, vous pouvez gérer le mode LECTURE SEULE avec les actions **Déverrouiller** et **Verrouiller** dans la barre d’outils :
-
-   ![Barre d’outils du modèle de fragment de contenu verrouillé](assets/cfm-model-locked.png)
-
-   * Vous pouvez **Déverrouiller** un modèle pour activer les modifications.
-
-      Si vous sélectionnez **Déverrouiller**, un avertissement s’affiche et vous devez confirmer l’action **Déverrouiller** :
-      ![Message lors du déverrouillage du modèle de fragment de contenu](assets/cfm-model-unlock-message.png)
-
-      Vous pouvez ensuite ouvrir le modèle pour le modifier.
-
-   * Vous pouvez également **Verrouiller** le modèle par la suite.
-   * La republication du modèle le remet immédiatement en mode **Verrouillé** (LECTURE SEULE).
-
-* Éditeur de modèles
-
-   * Lorsque vous ouvrez un modèle verrouillé, trois actions s’affichent : **Annuler**, **Afficher uniquement la lecture**, **Modifier** :
-
-      ![Message lors de l’affichage d’un modèle de fragment de contenu verrouillé](assets/cfm-model-editor-lock-message.png)
-
-   * Si vous sélectionnez **Afficher uniquement la lecture**, vous pouvez voir le contenu et la structure du modèle :
-
-      ![Affichage en lecture seule - modèle de fragment de contenu verrouillé](assets/cfm-model-editor-locked-view-only.png)
-
-   * Si vous sélectionnez **Modifier**, vous pouvez modifier et enregistrer vos mises à jour :
-
-      ![Modifier : modèle de fragment de contenu verrouillé](assets/cfm-model-editor-locked-edit.png)
-
-      >[!NOTE]
-      Un avertissement peut toujours s’afficher en haut de l’écran, mais c’est le cas lorsque le modèle est déjà utilisé par les fragments de contenu existants.
-
-   * **** L’annulation vous ramène à la console.
+* In READ-ONLY mode, users can still see contents and structure of models but they cannot edit them. 
+-->
