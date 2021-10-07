@@ -232,7 +232,7 @@ ht-degree: 92%
    + [Flux de diffusion de contenu](dispatcher/overview.md)
    + [Dispatcher en mode cloud](dispatcher/disp-overview.md)
    + [Validation et débogage à l’aide des outils de Dispatcher](dispatcher/validation-debug.md)
-   + [Migration de la configuration de Dispatcher d’AMS vers AEM en tant que Cloud Service](dispatcher/ams-aem.md)
+   + [Migration de la configuration du Dispatcher d’AMS vers AEM as a Cloud Service](dispatcher/ams-aem.md)
    + [Validation et débogage à l’aide de l’héritage des outils Dispatcher](dispatcher/validation-debug-legacy.md)
    + [Réseau de diffusion de contenu dans AEM as a Cloud Service](dispatcher/cdn.md)
    + [Mise en cache dans AEM as a Cloud Service](dispatcher/caching.md)

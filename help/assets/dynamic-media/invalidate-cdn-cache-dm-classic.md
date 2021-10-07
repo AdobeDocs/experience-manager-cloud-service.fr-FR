@@ -1,13 +1,13 @@
 ---
 title: Invalidation du cache CDN (réseau de diffusion de contenu) par le biais de Dynamic Media Classic
 description: Découvrez comment invalider le contenu mis en cache de votre réseau de diffusion de contenu (CDN) pour vous permettre de mettre rapidement à jour les ressources diffusées par Dynamic Media, au lieu d’attendre que le cache arrive à expiration.
-feature: Gestion des ressources,Dynamic Media Classic
+feature: Asset Management,Dynamic Media Classic
 role: Admin,User
 exl-id: 7e488699-5633-437f-9e2e-58c98aa13145
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 72%
+source-wordcount: '693'
+ht-degree: 70%
 
 ---
 
@@ -29,7 +29,7 @@ Voir aussi [Présentation du cache dans Dynamic Media Classic](https://helpx.a
 
 1. Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started) puis connectez-vous à votre compte.
 
-   Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
+   Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez le service clientèle.
 
 1. Accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]**.
 1. Recherchez la zone de texte **[!UICONTROL Modèle d’invalidation sur le réseau de diffusion de contenu]** dans la section Serveurs de la page Paramètres généraux de l’application.
@@ -43,7 +43,7 @@ Voir aussi [Présentation du cache dans Dynamic Media Classic](https://helpx.a
    Si le modèle contient uniquement `<ID>`, Dynamic Media renseigne `https://<server>/is/image`, où `<server>` désigne le nom du serveur de publication défini dans les paramètres généraux et où &lt;ID> correspond aux ressources dont la validité doit être annulée.
 
 1. Dans le coin inférieur droit de la page, sélectionnez **[!UICONTROL Fermer]**.
-1. Dans l’interface utilisateur de Dynamic Media Classic (Scene7), sélectionnez une ou plusieurs ressources, puis accédez à **[!UICONTROL Fichier]** > **[!UICONTROL Invalider le réseau de diffusion de contenu]**. La liste qui s’affiche alors se compose d’une ou de plusieurs URL générées à partir du modèle que vous avez créé et des ressources que vous avez sélectionnées. Elle utilise l’URL du serveur répertoriée sous « Nom du serveur de publication » dans les paramètres généraux de l’application.
+1. Dans l’interface utilisateur de Dynamic Media Classic (Scene7), sélectionnez une ou plusieurs ressources, puis accédez à **[!UICONTROL Fichier]** > **[!UICONTROL Invalider CDN]**. La liste qui s’affiche alors se compose d’une ou de plusieurs URL générées à partir du modèle que vous avez créé et des ressources que vous avez sélectionnées. Elle utilise l’URL du serveur répertoriée sous « Nom du serveur de publication » dans les paramètres généraux de l’application.
 
    Par exemple, avec le modèle d’invalidation défini à l’étape précédente, supposons que vous sélectionniez une seule image de ressource nommée `Backpack_B`. Lorsque vous accédez à **[!UICONTROL Fichier]** > **[!UICONTROL Invalider le CDN]**, l’URL suivante est générée dans l’interface utilisateur d’invalidation du CDN :
 

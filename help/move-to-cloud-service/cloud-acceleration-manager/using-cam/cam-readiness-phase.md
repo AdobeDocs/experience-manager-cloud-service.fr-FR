@@ -71,10 +71,10 @@ Suivez les étapes ci-dessous pour utiliser la carte Analyse des bonnes pratique
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. Cliquez sur **Aperçu de l’impression** pour ouvrir un nouvel onglet avec le rapport affiché dans un aperçu imprimable. Cliquez sur **Imprimer** pour imprimer le rapport au format PDF afin d’en faciliter la partage.
+1. Cliquez sur **Aperçu de l’impression** pour ouvrir un nouvel onglet avec le rapport affiché dans un aperçu imprimable. Cliquez sur **Imprimer** pour imprimer le rapport dans un format PDF afin d’en faciliter la partage.
 
    >[!IMPORTANT]
-   >* L’option **Enregistrer au format PDF** est recommandée et prise en charge pour les fonctionnalités ci-dessus.
+   >* L’option **Enregistrer en tant que PDF** est recommandée et prise en charge pour les fonctionnalités ci-dessus.
    >* Si le bouton d’impression du navigateur est utilisé, il n’imprime qu’une seule page.
 
 
@@ -101,7 +101,7 @@ La carte **Propriétés du rapport** fournit des informations sur les propriét�
 
 #### Aperçu du rapport {#report-overview}
 
-Cette carte **Aperçu du rapport** fournit les résultats du rapport et les niveaux de gravité qui s’appliquent lors de l’évaluation de la préparation à AEM en tant que Cloud Service, comme illustré dans la figure ci-dessous.
+Cette carte **Aperçu du rapport** fournit les résultats du rapport et les niveaux de gravité qui s’appliquent lors de l’évaluation de la préparation à AEM as a Cloud Service, comme illustré dans la figure ci-dessous.
 
 ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
@@ -128,7 +128,7 @@ L’option Évaluation des bonnes pratiques fournit une évaluation de votre ins
 
 #### Évaluation de la complexité de la migration {#migration-complexity-assessment}
 
-L’option Évaluation de la complexité de la migration permet d’évaluer la complexité de la migration de la mise en oeuvre d’AEM existante vers AEM en tant que Cloud Service.
+L’option Évaluation de la complexité de la migration permet d’évaluer la complexité de la migration de la mise en oeuvre AEM existante vers AEM as a Cloud Service.
 
 Vous pouvez consulter les informations suivantes dans cet onglet :
 

@@ -36,7 +36,7 @@ Voici la liste des principaux changements par rapport à AEM version 6.5 et ant
 1. Les clients peuvent voir si la tâche d’indexation est terminée sur la page de version Cloud Manager et recevront une notification lorsque la nouvelle version sera prête à recevoir le trafic.
 
 1. Restrictions :
-* Actuellement, la gestion des index sur AEM en tant que Cloud Service n’est prise en charge que pour les index de type lucene.
+* Actuellement, la gestion des index sur AEM as a Cloud Service n’est prise en charge que pour les index de type lucene.
 * Seuls les analyseurs standard sont pris en charge (c’est-à-dire ceux fournis avec le produit). Les analyseurs personnalisés ne sont pas pris en charge.
 
 ## Utilisation {#how-to-use}
@@ -215,13 +215,13 @@ S’il n’est plus nécessaire de personnaliser un index prêt à l’emploi, v
 
 Apache Jackrabbit Oak permet des configurations d’index flexibles pour gérer efficacement les requêtes de recherche. Les index sont particulièrement importants pour les référentiels plus volumineux. Assurez-vous que toutes les requêtes sont soutenues par un index approprié. Les requêtes sans index approprié peuvent lire des milliers de noeuds, qui sont ensuite consignés comme avertissement. Ces requêtes doivent être identifiées en analysant les fichiers journaux, afin d&#39;optimiser les définitions d&#39;index. Pour plus d’informations, voir [cette page](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes).
 
-### Index de texte intégral Lucene sur AEM en tant que Cloud Service {#index-lucene}
+### Index de texte intégral Lucene sur AEM as a Cloud Service {#index-lucene}
 
-L’index en texte intégral `/oak:index/lucene-2` peut devenir très volumineux, car il indexe par défaut tous les noeuds du référentiel AEM.  À compter de septembre 2021, l’Adobe prévoit de supprimer cet index, qui ne sera plus déployé en tant que Cloud Service dans AEM. Par conséquent, il n’est plus utilisé côté produit dans AEM en tant que Cloud Service et il ne doit pas être nécessaire pour exécuter le code client. Pour AEM en tant qu’environnements de Cloud Service avec des index Lucene courants, Adobe travaille avec les clients individuellement pour une approche coordonnée afin de compenser cet index et d’utiliser des index meilleurs et optimisés. Aucune action n’est requise par les clients sans autre préavis de la part de l’Adobe. Les clients d’AEM en tant que Cloud Service seront informés par Adobe lorsqu’il est nécessaire d’agir en ce qui concerne cette optimisation. Si cet index est requis pour les requêtes personnalisées, en tant que solution temporaire, une copie de cet index doit être créée, en utilisant un nom différent, par exemple `/oak:index/acme.lucene-1-custom-1`, comme décrit [ici](/help/operations/indexing.md).
+L’index en texte intégral `/oak:index/lucene-2` peut devenir très volumineux, car il indexe par défaut tous les noeuds du référentiel AEM.  À compter de septembre 2021, l’Adobe prévoit de supprimer cet index, qui ne sera plus déployé dans AEM as a Cloud Service. En tant que tel, il n’est plus utilisé côté produit dans AEM as a Cloud Service et il ne doit pas être nécessaire pour exécuter le code client. Pour AEM environnements as a Cloud Service avec des index Lucene courants, Adobe travaille avec les clients individuellement pour une approche coordonnée afin de compenser cet index et d’utiliser des index optimisés et meilleurs. Aucune action n’est requise par les clients sans autre préavis de la part de l’Adobe. AEM clients as a Cloud Service seront informés par Adobe lorsqu’il est nécessaire d’agir en ce qui concerne cette optimisation. Si cet index est requis pour les requêtes personnalisées, en tant que solution temporaire, une copie de cet index doit être créée, en utilisant un nom différent, par exemple `/oak:index/acme.lucene-1-custom-1`, comme décrit [ici](/help/operations/indexing.md).
 Cette optimisation ne s’applique pas par défaut aux autres environnements AEM hébergés sur site ou gérés par Adobe Managed Services.
 
 ## Optimisations des requêtes {#index-query}
 
 L’outil **Performances des requêtes** vous permet d’observer les requêtes JCR populaires et lentes. De plus, il peut analyser les requêtes et afficher diverses informations sur, notamment si un index est utilisé ou non pour cette requête.
 
-Contrairement à AEM on premise, AEM en tant que Cloud Service n’affiche plus l’outil **Performances des requêtes** dans l’interface utilisateur. Il est désormais disponible via Developer Console (dans Cloud Manager) sur l’onglet **Requêtes** .
+Contrairement à AEM on premise, AEM as a Cloud Service n’affiche plus l’outil **Performances des requêtes** dans l’interface utilisateur. Il est désormais disponible via Developer Console (dans Cloud Manager) sur l’onglet **Requêtes** .

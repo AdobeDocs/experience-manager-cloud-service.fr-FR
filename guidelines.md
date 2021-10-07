@@ -1,6 +1,8 @@
 ---
-source-git-commit: 51f1220bba554fb4a1b2ad38b9de1430ff2a5530
-translation-type: tm+mt
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
+workflow-type: tm+mt
+source-wordcount: '753'
+ht-degree: 91%
 
 ---
 # Instructions relatives à la contribution à la documentation d’Adobe Experience Manager
@@ -9,7 +11,7 @@ translation-type: tm+mt
 
 Nous savons que les utilisateurs d’Adobe Experience Manager travaillent dans des environnements très concurrentiels, afin de créer des expériences numériques qui les distingueront de leurs concurrents. Par conséquent, lorsqu’Adobe fournit de nouveaux outils avancés dans AEM, il est essentiel que ces outils soient complétés par une documentation précise et claire pour permettre au client d’exploiter immédiatement son investissement AEM et maximiser le ROI.
 
-L’objectif de la documentation AEM est de la placer entre les mains des utilisateurs d’AEM dès que possible. Par conséquent, nous privilégions une documentation précise et utilisable et nous la mettons à jour et l’améliorons constamment.
+L’objectif de la documentation AEM est de la placer entre les mains des utilisateurs d’AEM dès que possible. Nous privilégions donc une documentation précise et utilisable, et nous la mettons à jour et l’améliorons constamment.
 
 ## Contributions à la documentation
 
@@ -27,17 +29,17 @@ La documentation d’AEM couvre les cas d’utilisation standard. Les cas d’ut
 
 ### En général, nous ne documentons pas les bogues ni leurs solutions.
 
-La documentation AEM couvre les cas d’utilisation standard. Pour cette raison, les bogues, leurs effets et leurs solutions ne sont généralement pas documentés.
+La documentation d’AEM couvre les cas d’utilisation standard. Pour cette raison, les bogues, leurs effets et leurs solutions ne sont généralement pas documentés.
 
 Les exceptions à cette règle concernent les notes de mise à jour qui répertorient les problèmes connus ainsi que les solutions possibles après approbation par l’équipe de gestion des produits AEM.
 
 ### Les contributions à la documentation ne sont pas destinées à répondre aux questions techniques.
 
-Toute opinion susceptible d’améliorer la documentation AEM est la bienvenue sous forme de contributions. Toutefois, les commentaires, les demandes et les demandes d’extraction sont destinés uniquement aux *contributions*. Ils ne sont pas censés être utilisés pour répondre à vos questions sur l’utilisation d’AEM, pour implémenter votre projet AEM ni pour résoudre des problèmes techniques.
+Toute opinion susceptible d’améliorer la documentation AEM est la bienvenue sous forme de contributions. Toutefois, les commentaires, les demandes et les demandes d’extraction sont destinés uniquement aux *contributions*. Leur finalité n’est pas de répondre à vos questions sur l’utilisation et la mise en œuvre d’AEM ou la résolution de problèmes techniques.
 
-Toute question relative à l’utilisation d’AEM ou à la résolution d’erreurs techniques doit être soumise au moyen du processus d’assistance classique via le [Portail d’assistance entreprise d’Experience Cloud](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html) ou posée à la [communauté Experience Manager](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager).
+Toute question relative à l’utilisation d’AEM ou d’erreurs techniques doit être soumise au moyen du processus d’assistance classique par le biais du [portail d’assistance Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home) ou posée à la [communauté des Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
 
-***Les contributions à la documentation d’AEM ne remplacent pas celles de l’assistance clientèle Adobe*** et toute contribution de ce type qui recherche des réponses aux questions liées au support technique sera rejetée.
+***Les contributions à la documentation AEM ne remplacent pas l’*** assistance clientèle d’Adobe et toute contribution de ce type visant à obtenir des réponses à des questions d’assistance sera refusée.
 
 ### Les contributions doivent clairement référencer les pages de documentation concernées.
 

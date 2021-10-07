@@ -26,7 +26,7 @@ L’un des changements majeurs apportés à AEM as a Cloud Service est l’utili
 
 ### Outil de mappage des utilisateurs {#mapping-tool}
 
-L’outil de transfert de contenu (sans mappage utilisateur) migre les utilisateurs et les groupes associés au contenu en cours de migration. L’outil de mappage des utilisateurs fait partie de l’outil de transfert de contenu. Son seul objectif est de modifier les utilisateurs et les groupes afin qu’ils puissent être correctement reconnus par IMS, la fonctionnalité d’authentification unique utilisée par AEM en tant que Cloud Service. Une fois ces modifications effectuées, l’outil de transfert de contenu migre les utilisateurs et les groupes du contenu spécifié comme d’habitude.
+L’outil de transfert de contenu (sans mappage utilisateur) migre les utilisateurs et les groupes associés au contenu en cours de migration. L’outil de mappage des utilisateurs fait partie de l’outil de transfert de contenu. Son seul objectif est de modifier les utilisateurs et les groupes afin qu’ils puissent être correctement reconnus par IMS, la fonctionnalité d’authentification unique utilisée par AEM as a Cloud Service. Une fois ces modifications effectuées, l’outil de transfert de contenu migre les utilisateurs et les groupes du contenu spécifié comme d’habitude.
 
 ## Points importants {#important-considerations}
 
@@ -50,7 +50,7 @@ Les cas spécifiques suivants seront consignés :
 
 * Lorsque des rechargements de contenu sont effectués, si le contenu n’est pas transféré parce qu’il n’a pas été modifié depuis le transfert précédent, les utilisateurs et les groupes associés à ce contenu ne seront pas transférés non plus, même si les utilisateurs et les groupes ont changé entre-temps. En effet, les utilisateurs et les groupes font l’objet d’un migration avec le contenu auquel ils sont associés.
 
-* Si l’instance de Cloud Service de l’AEM cible a un utilisateur avec un nom d’utilisateur différent mais la même adresse électronique que l’un des utilisateurs sur l’instance d’AEM source et que le mappage de l’utilisateur est activé, un message d’erreur est écrit dans les journaux et l’utilisateur de l’source ne sera pas transféré, car un seul utilisateur avec une adresse électronique donnée est autorisé sur le système cible.
+* Si l’instance AEM Cloud Service cible comporte un utilisateur avec un nom d’utilisateur différent mais la même adresse électronique que l’un des utilisateurs sur l’instance d’AEM source et que le mappage d’utilisateur est activé, un message d’erreur est écrit dans les journaux et l’utilisateur de l’AEM source n’est pas transféré, car un seul utilisateur avec une adresse électronique donnée est autorisé sur le système cible.
 
 * Si deux utilisateurs de l’instance d’AEM source ont la même adresse électronique et que le mappage des utilisateurs est activé, un message d’erreur est écrit dans les journaux et l’un des utilisateurs d’AEM source ne sera pas transféré, car un seul utilisateur disposant d’une adresse électronique donnée est autorisé sur le système cible.
 

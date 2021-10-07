@@ -2,15 +2,15 @@
 title: Automatisation du contenu pour l’intégration de Creative Cloud
 description: Génération de variantes des ressources à l’aide de l’intégration de Creative Cloud
 contentOwner: AG
-feature: Chargement,Traitement des ressources,Publication,Asset compute Microservices,Workflow
+feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
-source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
+exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
-
 
 # Générer des variantes de ressources à l’aide de l’intégration [!DNL Adobe Creative Cloud] {#content-automation}
 
@@ -32,7 +32,7 @@ Les utilisateurs peuvent créer des profils de traitement afin d’automatiser l
 
    ![Paramètre prédéfini Lightroom](/help/assets/assets/content-automation-lrpresets.png)
 
-   *Figure : Adobes un paramètre prédéfini Lightroom afin d’améliorer la qualité de l’image de manière cohérente pour de nombreuses images.*
+   *Figure : Paramètre prédéfini Adobe Lightroom pour améliorer la qualité de l’image de manière cohérente pour de nombreuses images.*
 
 * **Découpage d’image** : Utilise l’intelligence artificielle pour créer une sélection autour d’objets importants et supprimer l’arrière-plan à l’aide d’une seule commande.
 
@@ -46,7 +46,7 @@ Les utilisateurs peuvent créer des profils de traitement afin d’automatiser l
 
    ![Actions Photoshop](/help/assets/assets/content-automation-psactions.png)
 
-* **Remplacement d’objet dynamique** : Effectue une personnalisation à grande échelle en vous permettant de permuter des images tout en conservant tous les effets et ajustements appliqués dans un fichier PSD.
+* **Remplacement d’objet dynamique** : Effectue une personnalisation à grande échelle en vous permettant de permuter des images tout en conservant tous les effets et ajustements appliqués dans un fichier de PSD.
 
    ![Remplacer des objets intelligemment](/help/assets/assets/content-automation-objectreplace.png)
 
@@ -54,7 +54,7 @@ Les utilisateurs peuvent créer des profils de traitement afin d’automatiser l
 
 Pour utiliser des profils de traitement afin de créer automatiquement des variations, procédez comme suit :
 
-1. Contactez [l’Assistance clientèle d’Adobe](https://experienceleague.adobe.com/#support) pour recevoir la licence.
+1. Contactez le [service clientèle d’Adobe](https://experienceleague.adobe.com/#support) pour recevoir la licence.
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de traitement]**.
 

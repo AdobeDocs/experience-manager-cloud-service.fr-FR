@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
 source-wordcount: '2402'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -138,7 +138,7 @@ Vous pouvez maintenant effectuer les tâches suivantes :
 * [Publication de paramètres prédéfinis, de schémas et de facettes sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [Publication de balises sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-Pour plus d’informations, voir [Publication de balises sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html).
+Pour plus d’informations, voir [Publication de balises sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=fr).
 
 **Journaux de distribution**
 
@@ -178,7 +178,7 @@ Outre le processus d’automatisation de l’activation de Brand Portal sur AEM
 
 >[!NOTE]
 >
->Contactez l’assistance Adobe si vous rencontrez un problème lors de l’activation de votre client Brand Portal.
+>Contactez le service clientèle si vous rencontrez un problème lors de l’activation de votre client Brand Portal.
 
 ## Configuration manuelle à l’aide de la Developer Console Adobe {#manual-configuration}
 
