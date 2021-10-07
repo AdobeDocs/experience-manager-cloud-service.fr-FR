@@ -5,10 +5,10 @@ breadcrumb-title: Guide de déplacement
 user-guide-description: Découvrez le parcours de transition vers Cloud Service.
 feature: Deploying
 role: Architect, Developer
-source-git-commit: f193c4e81b9b16d07e7ccff6c2f9705b7234f80b
+source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 62%
+source-wordcount: '136'
+ht-degree: 63%
 
 ---
 
@@ -38,7 +38,10 @@ ht-degree: 62%
       + [Présentation](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [Conditions préalables pour l’outil de transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/prerequisites-content-transfer-tool.md)
       + [Gestion des référentiels de contenu volumineux](/help/move-to-cloud-service/content-transfer-tool/handling-large-content-repositories.md)
-      + [Utilisation de l’outil de mappage des utilisateurs](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
+      + Outil de mappage des utilisateurs {#user-mapping-tool}
+         + [Présentation](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
+         + [Points importants](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
+         + [Utilisation de l’outil de mappage des utilisateurs](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
       + [Utilisation de l’outil de transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + Outils de refactorisation du code {#refactoring-tools}
    + [Expérience unifiée](/help/move-to-cloud-service/unified-experience.md)
@@ -47,4 +50,4 @@ ht-degree: 62%
    + [Migration des workflows de ressources](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
    + [Convertisseur du Dispatcher AEM](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
    + [Outils de modernisation d’AEM](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
-+ [Guide de migration de Experience Manager en tant que Cloud Service pour les partenaires](/help/move-to-cloud-service/getting-started.md)
++ [Guide de migration vers Experience Manager as a Cloud Service pour les partenaires](/help/move-to-cloud-service/getting-started.md)
