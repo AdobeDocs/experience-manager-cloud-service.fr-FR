@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: cf5fd3f483876eab8e9ec7bf22fae5dd1c6aa147
 workflow-type: tm+mt
-source-wordcount: '1570'
-ht-degree: 40%
+source-wordcount: '1507'
+ht-degree: 42%
 
 ---
 
@@ -47,8 +47,11 @@ Regardez la vidéo [Présentation de la version de septembre 2021](https://video
    ![Trier les résultats de la recherche  [!DNL Assets] en mode Colonnes et Carte](/help/assets/assets/sort-searched-assets.png)
    *Figure : Triez les résultats de la recherche  [!DNL Assets] en mode Colonnes et Carte.*
 
-* Pour appeler par programmation le traitement à l’aide des microservices de ressources, une nouvelle API est introduite. Les développeurs peuvent désormais appliquer un profil de traitement existant au niveau du dossier à une ou plusieurs ressources spécifiques d’un dossier. Le profil de traitement est appliqué en fonction des mises à jour des propriétés de métadonnées personnalisées. Voir `AssetProcessor` dans la [[!DNL Experience Manager] référence de l’API](https://www.adobe.io/experience-manager/reference-materials/). Comme auparavant, il est possible d’[utiliser les microservices de ressources de l’interface utilisateur](/help/assets/asset-microservices-configure-and-use.md).
+<!-- TBD: 'Unpublishing' this feature as suggested by engineering.
 
+* To programmatically invoke processing using asset microservices, a new API is introduced. Developers can now apply an existing folder-level processing profile on one or more specific assets in a folder. The processing profile gets applied based on custom metadata properties updates. See `AssetProcessor` in the [[!DNL Experience Manager] API reference](https://www.adobe.io/experience-manager/reference-materials/). As before, it is possible to [use asset microservices from the user interface](/help/assets/asset-microservices-configure-and-use.md).
+
+-->
 <!-- Leave this commented.
 
 ### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
