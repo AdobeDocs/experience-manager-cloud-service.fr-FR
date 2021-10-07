@@ -1,10 +1,10 @@
 ---
 title: Points importants concernant l’outil de mappage des utilisateurs
 description: Points importants concernant l’outil de mappage des utilisateurs
-source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
+source-git-commit: 60e67e92f4f1ecaaf12c58f16f4324868d223934
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 71%
+source-wordcount: '521'
+ht-degree: 67%
 
 ---
 
@@ -35,3 +35,7 @@ Les cas spécifiques suivants seront consignés :
 * Si l’instance AEM Cloud Service cible comporte un utilisateur avec un nom d’utilisateur différent mais la même adresse électronique que l’un des utilisateurs sur l’instance d’AEM source et que le mappage d’utilisateur est activé, un message d’erreur est écrit dans les journaux et l’utilisateur de l’AEM source n’est pas transféré, car un seul utilisateur avec une adresse électronique donnée est autorisé sur le système cible.
 
 * Si deux utilisateurs de l’instance d’AEM source ont la même adresse électronique et que le mappage des utilisateurs est activé, un message d’erreur est écrit dans les journaux et l’un des utilisateurs d’AEM source ne sera pas transféré, car un seul utilisateur disposant d’une adresse électronique donnée est autorisé sur le système cible.
+
+### Eléments suivants {#whats-next}
+
+Une fois que vous avez pris connaissance des considérations importantes et des cas exceptionnels, vous êtes prêt à utiliser l’outil. Voir [Utilisation de l’outil de mappage utilisateur](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md) pour plus d’informations.
