@@ -5,7 +5,7 @@ breadcrumb-title: Guide de déplacement
 user-guide-description: Découvrez le parcours de transition vers Cloud Service.
 feature: Deploying
 role: Architect, Developer
-source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
+source-git-commit: 70811e1ba231dbd9a4bdf8764a4d93ba49413d0e
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 63%
@@ -38,11 +38,11 @@ ht-degree: 63%
       + [Présentation](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [Conditions préalables pour l’outil de transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/prerequisites-content-transfer-tool.md)
       + [Gestion des référentiels de contenu volumineux](/help/move-to-cloud-service/content-transfer-tool/handling-large-content-repositories.md)
+      + [Utilisation de l’outil de transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
       + Outil de mappage des utilisateurs {#user-mapping-tool}
          + [Présentation](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
          + [Points importants](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
          + [Utilisation de l’outil de mappage des utilisateurs](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
-      + [Utilisation de l’outil de transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + Outils de refactorisation du code {#refactoring-tools}
    + [Expérience unifiée](/help/move-to-cloud-service/unified-experience.md)
    + [Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
