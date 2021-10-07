@@ -2,9 +2,9 @@
 title: Fondements techniques d’AEM
 description: Présentation des fondements techniques d’AEM, y compris la manière dont AEM est structuré et les technologies fondamentales comme JCR, Sling et OSGi.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 8ba7968ee7f4d3c808740054bf841dbaf9dd4254
+source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2186'
 ht-degree: 99%
 
 ---
@@ -34,9 +34,9 @@ Les couches de référentiel de contenu et de logique métier sous-jacentes sont
 
 ## Référentiel de contenu Java {#java-content-repository}
 
-La norme Java Content Repository (JCR), [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html), spécifie un moyen, indépendant du fournisseur et de l’implémentation, d’accéder au contenu d’un référentiel de contenu à un niveau granulaire et de manière bidirectionnelle. La spécification est gérée par Adobe Research (Suisse) AG.
+La norme Java Content Repository (JCR), [JSR 283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html), spécifie un moyen, indépendant du fournisseur et de l’implémentation, d’accéder au contenu d’un référentiel de contenu à un niveau granulaire et de manière bidirectionnelle. La spécification est gérée par Adobe Research (Suisse) AG.
 
-Le package [JCR API 2.0](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html), `javax.jcr.*`, est utilisé pour l’accès direct et la manipulation du contenu du référentiel.
+Le package [JCR API 2.0](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), `javax.jcr.*`, est utilisé pour l’accès direct et la manipulation du contenu du référentiel.
 
 AEM est basé sur un JCR.
 

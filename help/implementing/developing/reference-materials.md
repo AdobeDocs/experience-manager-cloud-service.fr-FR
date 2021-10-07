@@ -1,9 +1,10 @@
 ---
 title: Documents de référence sur les API
 description: AEM dispose d’API complètes et puissantes que vous pouvez exploiter pour votre projet d’expérience numérique.
-source-git-commit: f8d16e515de5ce740398d45a30038793fe021b69
+exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
+source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '664'
 ht-degree: 30%
 
 ---
@@ -18,7 +19,7 @@ Les API suivantes sont essentielles pour AEM.
 
 | API | Description |
 |---|---|
-| [Adobe Experience Manager en tant que Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) | abstractions de produits telles que pages, ressources, workflows, etc. |
+| [Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) | abstractions de produits telles que pages, ressources, workflows, etc. |
 | [IU Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Pile Web ouverte d’Adobe, fournissant divers composants essentiels (notez que les matériaux Granite 6.5 s’appliquent à AEMaaCS). |
 | [IU Coral](https://opensource.adobe.com/coral-spectrum/documentation/) | Style visuel d’Adobe pour les interfaces utilisateur cloud, conçu pour assurer la cohérence de l’expérience utilisateur |
 
@@ -34,7 +35,7 @@ AEM repose sur un certain nombre d’API Open Source supplémentaires.
 |---|---|
 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | Structure web qui utilise un référentiel de contenu Java (JCR) pour stocker et gérer du contenu |
 | [Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | Mise en oeuvre d’un référentiel de contenu Java (JCR) hiérarchique évolutif et haute performance à utiliser comme base pour les sites web modernes de classe mondiale |
-| [Référentiel de contenu Java](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) | Spécification de la version 2.0 de JCR |
+| [Référentiel de contenu Java](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) | Spécification de la version 2.0 de JCR |
 | [Apache Felix](https://felix.apache.org) | Mise en oeuvre de la structure et de la plateforme de service Open Services Gateway Initiative (OSGi) |
 
 ## Instructions relatives aux préférences d’API {#guidelines}
@@ -43,7 +44,7 @@ AEM repose sur les quatre principaux ensembles d’API Java suivants, dans l’o
 
 | Priorité | API | Description |
 |---|---|---|
-| 1 | [Adobe Experience Manager en tant que Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) | abstractions de produits telles que pages, ressources, workflows, etc. |
+| 1 | [Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) | abstractions de produits telles que pages, ressources, workflows, etc. |
 | 2 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | abstractions REST et basées sur des ressources telles que les ressources, les mappages de valeurs et les requêtes HTTP. |
 | 3 | [Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | Extraits de données et de contenu tels que le noeud, les propriétés et les sessions. |
 | 4 | [Apache Felix](https://felix.apache.org/) | abstractions du conteneur d’applications OSGi telles que les composants de services et (OSGi). |
