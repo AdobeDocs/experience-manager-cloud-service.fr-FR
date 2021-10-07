@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: cde5514a0585dc0c882369e7603a62366d009a8c
 workflow-type: tm+mt
-source-wordcount: '3104'
-ht-degree: 84%
+source-wordcount: '3216'
+ht-degree: 81%
 
 ---
 
@@ -50,6 +50,8 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 * Si vous utilisez des index personnalisés, vous devez veiller à les configurer avec le nœud `tika` avant d’exécuter l’outil de transfert de contenu. Pour plus d’informations, voir la section [Préparation de la nouvelle définition d’index](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=fr#preparing-the-new-index-definition).
 
 * Si vous avez l’intention d’effectuer des ajouts, il est essentiel que la structure de contenu du contenu existant ne soit pas modifiée du moment où l’extraction initiale est prise au moment de l’exécution de l’extraction de complément. Les cumuls ne peuvent pas être exécutés sur du contenu dont la structure a été modifiée depuis l’extraction initiale. Veillez à limiter cette opération pendant le processus de migration.
+
+* Si vous envisagez d’inclure des versions dans un jeu de migration et que vous effectuez des compléments avec `wipe=false`, vous devez désactiver la purge de version en raison d’une limitation actuelle de l’outil de transfert de contenu. Si vous préférez conserver la purge de version activée et effectuer des compléments dans un jeu de migration, vous devez effectuer l’ingestion sous la forme `wipe=true`.
 
 ## Disponibilité {#availability}
 
@@ -120,6 +122,8 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
    1. **Parameters** : sélectionnez les paramètres suivants pour créer le jeu de migration :
 
       1. **Include version** : sélectionnez les options requises. Lorsque des versions sont incluses, le chemin `/var/audit` est automatiquement inclus pour migrer les événements de contrôle.
+      >[!NOTE]
+      >Si vous envisagez d’inclure des versions dans un jeu de migration et que vous effectuez des compléments avec `wipe=false`, vous devez désactiver la purge de version en raison d’une limitation actuelle de l’outil de transfert de contenu. Si vous préférez conserver la purge de version activée et effectuer des compléments dans un jeu de migration, vous devez effectuer l’ingestion sous la forme `wipe=true`.
 
       1. **Inclure le mappage des utilisateurs à partir des utilisateurs et groupes IMS** : sélectionnez l’option permettant d’inclure le mappage à partir des utilisateurs et groupes IMS.
 Pour plus d’informations, consultez [Outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr).
@@ -132,6 +136,7 @@ Pour plus d’informations, consultez [Outil de mappage des utilisateurs](https:
          >* `/libs`
          >* `/home`
          >* `/etc` (il est possible de sélectionner certains chemins `/etc` dans le CTT)
+
 
 
 1. Cliquez sur **Enregistrer** après avoir rempli tous les champs de l’écran **Créer un jeu de migration**.
