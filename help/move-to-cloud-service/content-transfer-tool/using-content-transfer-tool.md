@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '3063'
-ht-degree: 86%
+source-wordcount: '3104'
+ht-degree: 84%
 
 ---
 
@@ -31,7 +31,7 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * Le jeton d’accès peut expirer périodiquement, soit après une période spécifique, soit après la mise à niveau de l’environnement Cloud Service. Si le jeton d’accès a expiré, vous ne pourrez pas vous connecter à l’instance de Cloud Service et vous devrez récupérer le nouveau jeton d’accès. L’icône d’état associée à un jeu de migration existant prend l’aspect d’un nuage rouge et affiche un message si vous le survolez.
 
-* L’outil de transfert de contenu (CTT) n’effectue aucune analyse avant de transférer le contenu de l’instance source vers l’instance cible. Par exemple, le CTT ne fait pas de distinction entre le contenu publié et le contenu non publié lors de l’ingestion de contenu dans un environnement de publication. Quel que soit le contenu spécifié dans le jeu de migration, il sera ingéré dans l’instance cible choisie. L’utilisateur peut ingérer un jeu de migration dans une instance d’auteur ou de publication, ou les deux. Il est recommandé, tout en déplaçant le contenu vers une instance de production, d’installer le CTT sur l’instance d’auteur source afin de déplacer le contenu vers l’instance d’auteur cible. De même, il est recommandé d’installer le CTT dans l’instance de publication source pour déplacer le contenu vers l’instance de publication cible.
+* L’outil de transfert de contenu (CTT) n’effectue aucune analyse avant de transférer le contenu de l’instance source vers l’instance cible. Par exemple, le CTT ne fait pas de distinction entre le contenu publié et le contenu non publié lors de l’ingestion de contenu dans un environnement de publication. Quel que soit le contenu spécifié dans le jeu de migration, il sera ingéré dans l’instance cible choisie. L’utilisateur peut ingérer un jeu de migration dans une instance d’auteur ou de publication, ou les deux. Il est recommandé, tout en déplaçant le contenu vers une instance de production, d’installer le CTT sur l’instance d’auteur source afin de déplacer le contenu vers l’instance d’auteur cible. De même, il est recommandé d’installer le CTT dans l’instance de publication source pour déplacer le contenu vers l’instance de publication cible. Pour plus d’informations, voir [Exécution de l’outil de transfert de contenu sur une instance de publication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-ctt-on-publish) .
 
 * Les utilisateurs et les groupes transférés par l’outil de transfert de contenu sont uniquement ceux requis en fonction du contenu pour respecter les autorisations. Le processus d’*extraction* copie l’intégralité de `/home` dans le jeu de migration et le processus d’*ingestion* copie tous les utilisateurs et groupes référencés dans les listes de contrôle d’accès du contenu migré. Pour mapper automatiquement les utilisateurs et les groupes existants avec leurs ID IMS, reportez-vous à la section [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr#cloud-migration).
 
@@ -119,7 +119,7 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
 
    1. **Parameters** : sélectionnez les paramètres suivants pour créer le jeu de migration :
 
-      1. **Include version** : sélectionnez les options requises.
+      1. **Include version** : sélectionnez les options requises. Lorsque des versions sont incluses, le chemin `/var/audit` est automatiquement inclus pour migrer les événements de contrôle.
 
       1. **Inclure le mappage des utilisateurs à partir des utilisateurs et groupes IMS** : sélectionnez l’option permettant d’inclure le mappage à partir des utilisateurs et groupes IMS.
 Pour plus d’informations, consultez [Outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr).
@@ -155,7 +155,7 @@ Pour plus d’informations, consultez [Outil de mappage des utilisateurs](https:
 >id="aemcloud_ctt_extraction"
 >title="Extraction de contenu"
 >abstract="L’extraction fait référence à l’extraction de contenu de l’instance AEM source dans une zone temporaire appelée jeu de migration. Un jeu de migration est un espace de stockage cloud fourni par Adobe pour stocker temporairement le contenu transféré entre l’instance AEM source et l’instance AEM Cloud Service."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=fr#top-up-extraction-process" text="Extraction de complément"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="Extraction de complément"
 
 Pour extraire votre jeu de migration à partir de l’outil de transfert de contenu, procédez comme suit :
 >[!NOTE]
@@ -211,7 +211,7 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
 >[!NOTE]
 >Si Amazon S3 ou Azure Data Store est utilisé comme type d’entrepôt de données, vous pouvez exécuter l’étape facultative de précopie afin d’accélérer considérablement la phase d’ingestion. Pour plus d’informations, voir [Ingestion avec AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) .
 
-1. Sélectionnez un jeu de migration à partir de la page *Overview* et cliquez sur **Ingest** pour commencer l’ingestion. La boîte de dialogue **Migration Set ingestion** (Ingestion du jeu de migration) s’affiche. Cliquez sur **Ingest** pour démarrer la phase d’ingestion. Il est possible d’ingérer en même temps du contenu vers les instances d’auteur et de publication.
+1. Sélectionnez un jeu de migration à partir de la page *Overview* et cliquez sur **Ingest** pour commencer l’ingestion. La boîte de dialogue **Migration Set ingestion** (Ingestion du jeu de migration) s’affiche. Le contenu peut être ingéré simultanément sur l’instance d’auteur ou l’instance de publication. Sélectionnez l’instance à laquelle ingérer le contenu. Cliquez sur **Ingest** pour démarrer la phase d’ingestion.
 
    >[!IMPORTANT]
    >Si l’ingestion avec une précopie est utilisée (pour S3 ou Azure Data Store), il est recommandé d’exécuter l’ingestion par l’auteur en premier seul. Cela permettra d’accélérer l’ingestion de publication lorsqu’elle est exécutée ultérieurement.
@@ -219,11 +219,11 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
    >[!IMPORTANT]
    >Lorsque l’option **Effacer le contenu existant sur l’instance cloud avant l’ingestion** est activée, elle supprime l’intégralité du référentiel existant et crée un référentiel dans lequel intégrer du contenu. Cela signifie que tous les paramètres sont réinitialisés, y compris les autorisations relatives à l’instance Cloud Service cible. C’est également vrai pour un utilisateur administrateur ajouté au groupe **administrateurs**.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-03.png)
 
    De plus, cliquez sur **Assistance clientèle** pour enregistrer un ticket, comme le montre la figure ci-dessus. Consultez également [Points importants concernant l’utilisation de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) pour en savoir plus.
 
-1. Une fois l’ingestion terminée, l’état du champ **PUBLISH INGESTION** passe à **FINISHED**.
+1. Une fois l’ingestion terminée, l’état est mis à jour vers **FINISHED**.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
@@ -239,7 +239,7 @@ Une fois le processus d’ingestion terminé, vous pouvez utiliser le contenu di
 
 1. Accédez à la page *Overview* et sélectionnez le jeu de migration pour lequel vous souhaitez effectuer l’ingestion de complément. Cliquez sur **Ingest** pour démarrer l’extraction de complément. La boîte de dialogue **Migration Set ingestion** (Ingestion du jeu de migration) s’affiche.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-02.png)
 
    >[!IMPORTANT]
    >Vous devez désactiver l’option **Effacer le contenu existant sur l’instance cloud avant l’ingestion** pour empêcher la suppression du contenu existant de l’activité d’ingestion précédente. De plus, cliquez sur **Assistance clientèle** pour enregistrer un ticket, comme le montre la figure précédente.

@@ -2,10 +2,10 @@
 title: Conseils de développement pour AEM as a Cloud Service
 description: Conseils de développement pour AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '2375'
-ht-degree: 94%
+source-wordcount: '2073'
+ht-degree: 87%
 
 ---
 
@@ -169,68 +169,6 @@ Les clients n’auront pas accès aux outils de développement pour les environn
 
 Adobe surveille les performances de l’application et prend des mesures pour remédier à cette détérioration. Actuellement, il n’est pas possible d’observer les mesures d’application.
 
-## Adresse IP Egress dédiée {#dedicated-egress-ip-address}
-
-Sur demande, AEM as a Cloud Service fournira une adresse IP statique, dédiée, pour le trafic sortant HTTP (port 80) et HTTPS (port 443) programmé en code Java.
-
-### Avantages {#benefits}
-
-Cette adresse IP dédiée peut améliorer la sécurité lors de l’intégration avec les fournisseurs SaaS (comme un fournisseur de solutions de gestion de la relation client) ou d’autres intégrations en dehors d’AEM as a Cloud Service qui offrent une liste d’adresses IP autorisées. L’ajout de l’adresse IP dédiée à la liste autorisée garantit que seul le trafic provenant de l’instance AEM as a Cloud Service du client sera autorisé à circuler dans le service externe. Cela s’ajoute au trafic provenant de toute autre adresse IP autorisée.
-
-Si la fonction d’adresse IP dédiée n’est pas activée, le trafic provenant d’AEM as a Cloud Service passe par un jeu d’adresses IP partagées avec d’autres clients.
-
-### Configuration {#configuration}
-
-Pour activer une adresse IP dédiée, envoyez une demande au service clientèle, qui fournira les informations d’adresse IP. La demande doit spécifier chaque environnement et des demandes supplémentaires doivent être effectuées si de nouveaux environnements requièrent cette fonctionnalité après la demande initiale. Les environnements de programme de test Sandbox ne sont pas pris en charge.
-
-### Utilisation de la fonctionnalité {#feature-usage}
-
-Cette fonctionnalité est compatible avec les bibliothèques ou le code Java qui génèrent du trafic sortant, à condition qu’ils utilisent les propriétés système Java standard pour les configurations de proxy. Dans la pratique, cela devrait inclure la plupart des bibliothèques courantes.
-
-Voici un exemple de code :
-
-```java
-public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
-  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
-  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
-  URLConnection connection = finalUrl.openConnection();
-  connection.addRequestProperty("Accept", "application/json");
-  connection.addRequestProperty("X-API-KEY", apiKey);
-
-  try (InputStream responseStream = connection.getInputStream(); Reader responseReader = new BufferedReader(new InputStreamReader(responseStream, Charsets.UTF_8))) {
-    return new JSONObject(new JSONTokener(responseReader));
-  }
-}
-```
-
-Certaines bibliothèques nécessitent une configuration explicite pour utiliser les propriétés système Java standard pour les configurations de proxy.
-
-Exemple utilisant Apache HttpClient qui nécessite des appels explicites à
-[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) ou utilisez
-[`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()) :
-
-```java
-public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
-  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
-  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
-
-  HttpClient httpClient = HttpClientBuilder.create().useSystemProperties().build();
-  HttpGet request = new HttpGet(finalUrl.toURI());
-  request.setHeader("Accept", "application/json");
-  request.setHeader("X-API-KEY", apiKey);
-  HttpResponse response = httpClient.execute(request);
-  String result = EntityUtils.toString(response.getEntity());
-}
-```
-
-La même adresse IP dédiée est appliquée à tous les programmes d’un client dans son organisation Adobe ainsi qu’à tous les environnements de chacun de ses programmes. Elle s’applique aux services de création et de publication.
-
-Seuls les ports HTTP et HTTPS sont pris en charge. Cela inclut HTTP/1.1, ainsi que HTTP/2 lorsqu’il est chiffré.
-
-### Considérations relatives au débogage {#debugging-considerations}
-
-Afin de vérifier que le trafic est effectivement sortant sur l’adresse IP dédiée attendue, vérifiez les journaux dans le service de destination, si disponible. Dans le cas contraire, il peut s’avérer utile d’appeler un service de débogage tel que [https://ifconfig.me/ip](https://ifconfig.me/ip), qui renverra l’adresse IP d’appel.
-
 ## Envoi d’un email {#sending-email}
 
 AEM as a Cloud Service exige que le courrier sortant soit chiffré. Les sections ci-dessous décrivent comment demander, configurer et envoyer des emails.
@@ -239,20 +177,19 @@ AEM as a Cloud Service exige que le courrier sortant soit chiffré. Les sections
 >
 >Le service de messagerie peut être configuré avec la prise en charge d’OAuth2. Pour plus d’informations, voir [Prise en charge OAuth2 pour le service de messagerie](/help/security/oauth2-support-for-mail-service.md).
 
-### Demande d’accès {#requesting-access}
+### Activation de l’e-mail sortant {#enabling-outbound-email}
 
-Par défaut, les emails sortants sont désactivés. Pour les activer, soumettez un ticket d’assistance contenant :
+Par défaut, les ports utilisés pour l’envoi sont désactivés. Pour l’activer, configurez la [mise en réseau avancée](/help/security/configuring-advanced-networking.md), en veillant à définir pour chaque environnement nécessaire les règles de transfert de port du point d’entrée `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` afin que le trafic puisse passer par le port 465 (s’il est pris en charge par le serveur de messagerie) ou le port 587 (si le serveur de messagerie en a besoin et applique également TLS sur ce port).
 
-1. Le nom de domaine complet du serveur de messagerie (par exemple, `smtp.sendgrid.net`).
-1. Le port à utiliser. Il doit s’agir du port 465 s’il est pris en charge par le serveur de messagerie, sinon le port 587. Notez que le port 587 ne peut être utilisé que si le serveur de messagerie nécessite et applique le protocole TLS sur ce port.
-1. L’identifiant de programme et l’identifiant d’environnement pour les environnements à partir desquels l’envoi d’emails est souhaité.
-1. Une indication précisant si l’accès SMTP est nécessaire pour l’auteur, la publication ou les deux.
+Il est recommandé de configurer la mise en réseau avancée avec un paramètre `kind` défini sur `flexiblePortEgress`, car l’Adobe peut optimiser les performances du trafic de sortie de port flexible. Si une adresse IP sortante unique est nécessaire, choisissez un paramètre `kind` de `dedicatedEgressIp`. Si vous avez déjà configuré VPN pour d’autres raisons, vous pouvez également utiliser l’adresse IP unique fournie par cette variante de mise en réseau avancée.
+
+Vous devez envoyer des emails par l’intermédiaire d’un serveur de messagerie plutôt que directement aux clients de messagerie. Sinon, les emails peuvent être bloqués.
 
 ### Envoi d’emails {#sending-emails}
 
 Le [service de messagerie Day CQ OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) doit être utilisé et les emails doivent être envoyés au serveur de messagerie indiqué dans la demande d’assistance, et non directement aux destinataires.
 
-AEM CS exige que le courrier soit envoyé par le biais du port 465. Si un serveur de messagerie ne prend pas en charge le port 465, il est possible d’utiliser le port 587 tant que l’option TLS est activée.
+AEM as a Cloud Service nécessite que le courrier soit envoyé via le port 465. Si un serveur de messagerie ne prend pas en charge le port 465, il est possible d’utiliser le port 587 tant que l’option TLS est activée.
 
 >[!NOTE]
 >
@@ -275,6 +212,8 @@ Si le port 587 a été demandé (autorisé seulement si le serveur de messageri
 * Définissez `smtp.ssl` sur `false`.
 
 La propriété `smtp.starttls` sera automatiquement définie par AEM as a Cloud Service au moment de son exécution sur une valeur appropriée. Par conséquent, si `smtp.tls` est défini sur true, `smtp.startls` est ignoré. Si `smtp.ssl` est défini sur false, `smtp.starttls` est défini sur true. Cette règle s’applique indépendamment des valeurs de `smtp.starttls` définies dans votre configuration OSGI.
+
+Le service de messagerie peut éventuellement être configuré avec la prise en charge d’OAuth2. Pour plus d’informations, voir [Prise en charge OAuth2 pour le service de messagerie](/help/security/oauth2-support-for-mail-service.md).
 
 ## [!DNL Assets] directives de développement et cas pratiques {#use-cases-assets}
 

@@ -2,9 +2,9 @@
 title: Vérification du statut de l’enregistrement DNS
 description: Vérification du statut de l’enregistrement DNS
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '228'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ Cloud Manager effectue une recherche DNS pour votre nom de domaine et affiche l�
 Le statut du DNS n’est pas détecté tant que votre nom de domaine personnalisé n’a pas été vérifié et déployé avec succès. Ce statut est également observé lorsque votre nom de domaine personnalisé est en cours de suppression.
 
 * **Résolution DNS incorrecte**
-Cela indique que la configuration des enregistrements DNS n’a pas encore été résolue/pointée ou est erronée. Un représentant d’Adobe sera automatiquement averti.
+Cela indique que la configuration des enregistrements DNS n’a pas encore été résolue/pointée ou est erronée.
 
    >[!NOTE]
    >Vous devez configurer un `CNAME` ou un `A-record` en suivant les instructions correspondantes. Voir Configuration des paramètres DNS pour en savoir plus. Une fois prêt, vous devez sélectionner l’icône **Résoudre à nouveau** en regard du statut.

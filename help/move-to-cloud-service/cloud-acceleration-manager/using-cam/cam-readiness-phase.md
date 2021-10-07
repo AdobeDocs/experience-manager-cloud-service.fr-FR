@@ -2,10 +2,10 @@
 title: Phase de préparation dans Cloud Accelerated Manager
 description: Cette page présente un aperçu de la phase de préparation de Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 12%
+source-wordcount: '748'
+ht-degree: 11%
 
 ---
 
@@ -66,6 +66,19 @@ Suivez les étapes ci-dessous pour utiliser la carte Analyse des bonnes pratique
 
    >[!NOTE]
    >Le téléchargement d’un nouveau rapport réinitialise toutes les évaluations.
+
+1. Cliquez sur l’icône **Aperçu de l’impression**, comme illustré ci-dessous.
+
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
+
+1. Cliquez sur **Aperçu de l’impression** pour ouvrir un nouvel onglet avec le rapport affiché dans un aperçu imprimable. Cliquez sur **Imprimer** pour imprimer le rapport dans un format PDF afin d’en faciliter la partage.
+
+   >[!IMPORTANT]
+   >* L’option **Enregistrer en tant que PDF** est recommandée et prise en charge pour les fonctionnalités ci-dessus.
+   >* Si le bouton d’impression du navigateur est utilisé, il n’imprime qu’une seule page.
+
+
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 ### Rapport Analyse des bonnes pratiques {#analysis-report}
 

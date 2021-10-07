@@ -4,10 +4,10 @@ description: Découvrez comment l’imagerie dynamique avec Adobe Sensei AI appl
 feature: Asset Management,Renditions
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '2624'
-ht-degree: 63%
+ht-degree: 61%
 
 ---
 
@@ -213,10 +213,10 @@ Par défaut, l’imagerie dynamique RGPD et l’optimisation du réseau sont dé
       Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié]**. Si vous utilisez actuellement un domaine Dynamic Media Classic générique, vous pouvez demander une migration vers votre domaine personnalisé dans le cadre de cette transition.
    1. Indiquez si vous souhaitez qu’il fonctionne en HTTP/2.
 
-1. L’Assistance clientèle Adobe vous inscrira sur la liste d’attente des clients pour l’imagerie dynamique en se basant sur l’ordre dans lequel les demandes ont été envoyées.
-1. Dès qu’Adobe est prêt à traiter votre demande, vous serez contacté par l’Assistance clientèle afin de programmer une date cible.
+1. Le service clientèle Adobe vous ajoute à la liste d’attente des clients de l’imagerie dynamique en fonction de l’ordre dans lequel les demandes sont envoyées.
+1. Lorsque Adobe est prêt à traiter votre demande, le service clientèle vous contacte pour coordonner et définir une date cible.
 1. **Facultatif** : Vous pouvez éventuellement tester l’imagerie dynamique dans l’évaluation avant qu’Adobe ne mette la nouvelle fonctionnalité en production.
-1. Une fois la procédure achevée, vous en serez informé par l’équipe d’Assistance clientèle.
+1. Une fois l’opération terminée, vous en êtes informé par le service clientèle.
 1. Pour tirer pleinement parti des améliorations de performances de l’imagerie dynamique, Adobe recommande de définir le délai d’expiration (TTL) sur 24 heures ou plus. Ce paramètre définit la période pendant laquelle les ressources sont mises en cache par le réseau de diffusion de contenu. Pour modifier ce paramètre :
 
    1. Si vous utilisez Dynamic Media Classic, accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Configuration de la publication]** > **[!UICONTROL Image Server]**. Définissez la valeur **[!UICONTROL Délai d’expiration par défaut du cache de client]** sur 24 ou plus.
@@ -224,7 +224,7 @@ Par défaut, l’imagerie dynamique RGPD et l’optimisation du réseau sont dé
 
 ## Dans quel délai puis-je m’attendre à ce que l’imagerie dynamique soit activée pour mon compte ?  {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
-Les demandes sont traitées dans l’ordre de réception par l’équipe d’Assistance clientèle, suivant la liste d’attente.
+Les demandes sont traitées dans l’ordre dans lequel elles sont reçues par le service clientèle, selon la liste d’attente.
 
 >[!NOTE]
 >
