@@ -2,10 +2,10 @@
 title: Référence des prédicats de Query Builder
 description: Référence des prédicats pour l’API Query Builder.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
-source-wordcount: '2218'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -201,7 +201,7 @@ Il prend en charge l’extraction des facettes et fournit deux intervalles pour 
 
 ### memberOf {#memberof}
 
-Ce prédicat recherche les éléments membres d’une [collection de ressources Sling](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/resource/collection/ResourceCollection.html) spécifique.
+Ce prédicat recherche les éléments membres d’une [collection de ressources Sling](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) spécifique.
 
 Il s’agit d’un prédicat de type filtrage seul qui ne peut pas exploiter d’index de recherche.
 

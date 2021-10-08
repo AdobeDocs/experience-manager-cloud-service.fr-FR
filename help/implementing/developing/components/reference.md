@@ -2,10 +2,10 @@
 title: Guide de référence des composants
 description: Guide de référence du développeur sur les détails des composants et de leur structure
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
-source-wordcount: '3659'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -450,7 +450,7 @@ Ce événement est déclenché chaque fois que la boîte de dialogue se charge (
 
 ## Comportement de la prévisualisation {#preview-behavior}
 
-Le cookie [WCM Mode ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html)est défini lors du passage en mode Aperçu même lorsque la page n’est pas rafraîchie.
+Le cookie [WCM Mode ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/WCMMode.html)est défini lors du passage en mode Aperçu même lorsque la page n’est pas rafraîchie.
 
 Pour les composants dont le rendu est sensible au mode WCM, ils doivent être définis de manière à s’actualiser eux-mêmes, puis s’appuyer sur la valeur du cookie.
 
