@@ -2,9 +2,9 @@
 title: Conseils de développement pour AEM as a Cloud Service
 description: Conseils de développement pour AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: c9ebeefa2a8707cbbf43df15cf90c10aadbba45f
 workflow-type: tm+mt
-source-wordcount: '2073'
+source-wordcount: '2059'
 ht-degree: 87%
 
 ---
@@ -190,10 +190,6 @@ Vous devez envoyer des emails par l’intermédiaire d’un serveur de messageri
 Le [service de messagerie Day CQ OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) doit être utilisé et les emails doivent être envoyés au serveur de messagerie indiqué dans la demande d’assistance, et non directement aux destinataires.
 
 AEM as a Cloud Service nécessite que le courrier soit envoyé via le port 465. Si un serveur de messagerie ne prend pas en charge le port 465, il est possible d’utiliser le port 587 tant que l’option TLS est activée.
-
->[!NOTE]
->
->Notez qu’Adobe ne prend pas en charge le traitement du protocole SMTP en sortie sur une adresse IP dédiée unique.
 
 ### Configuration {#email-configuration}
 
