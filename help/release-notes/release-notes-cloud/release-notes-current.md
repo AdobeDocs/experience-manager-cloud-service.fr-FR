@@ -3,7 +3,7 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 9eeb47dbca36f1b9f23e3ac4e0bee6594ffb7fda
+source-git-commit: 1be37bf1b6cb248bcc7d12f0d4039cfa12c90f7d
 workflow-type: tm+mt
 source-wordcount: '1488'
 ht-degree: 40%
@@ -210,14 +210,13 @@ La date de publication de l’outil de transfert de contenu v1.6.0 est le 4 octo
 
 ### Date de publication {#release-date-bpa-latest}
 
-La date de publication de la version 2.1.18 de l’analyseur des bonnes pratiques est le 2 septembre 2021.
+La date de publication de la version 2.1.20 de l’analyseur des bonnes pratiques est le 5 octobre 2021.
 
 ### Nouveautés {#what-is-new}
 
-* Possibilité de détecter et de générer des rapports sur le nombre total de noeuds.
+* Possibilité de détecter et de générer des rapports sur la longueur du nom de noeud.
 
-* Possibilité de détecter et de générer des rapports sur le type et la taille du magasin de noeuds.
+* Capacité à détecter et à générer des rapports sur la taille totale de l’index.
 
-### Correctifs {#bug-fixes-bpa}
+* Possibilité de détecter et de générer des rapports sur les ressources dont le rendu d’origine manque.
 
-* BPA détectait faussement la présence de Commerce Integration Framework.
