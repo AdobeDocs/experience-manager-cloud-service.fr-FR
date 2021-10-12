@@ -1,10 +1,10 @@
 ---
 title: Utilisation de l’outil de mappage des utilisateurs
 description: Utilisation de l’outil de mappage des utilisateurs
-source-git-commit: 77c412c1050be8843e7185b0511a9d7af41669e3
+source-git-commit: 25b4bfb624866cb615fca32377e43c05a597cd67
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 55%
+source-wordcount: '727'
+ht-degree: 52%
 
 ---
 
@@ -71,6 +71,10 @@ L’outil de mappage des utilisateurs est intégré à l’outil de transfert de
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing4.png)
 
+1. Cliquez sur **Démarrer** dans la boîte de dialogue pour lancer le processus de mappage utilisateur.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
 1. Une fois le mappage utilisateur terminé, cliquez sur **Résultats** pour afficher le résumé.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
@@ -87,4 +91,22 @@ Si le processus de mappage des utilisateurs est arrêté pour l’une des raison
 * le jeton d&#39;accès expiré pendant le processus ou,
 * une autre raison
 
-La progression est enregistrée à partir de l’endroit où le processus s’est arrêté. Consultez le journal de mappage des utilisateurs pour vérifier la progression enregistrée. Cliquez à nouveau sur le bouton **Commencer le mappage de l’utilisateur** pour reprendre à l’endroit où il s’est arrêté. Assurez-vous, avant de redémarrer, que le jeton d’accès est toujours valide ou a été actualisé.
+   >[!NOTE]
+   >La progression est enregistrée à partir de l’endroit où le processus s’est arrêté.
+
+Suivez les étapes ci-dessous pour reprendre le processus de mappage des utilisateurs :
+
+1. Cliquez sur **Afficher le journal** pour consulter le journal de mappage des utilisateurs afin de vérifier la progression enregistrée.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping1.png)
+
+1. Cliquez à nouveau sur le bouton **Commencer le mappage de l’utilisateur** pour reprendre à l’endroit où il s’est arrêté.
+
+   >[!NOTE]
+   >Assurez-vous, avant de redémarrer, que le jeton d’accès est toujours valide ou a été actualisé.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping2.png)
+
+1. Cliquez sur **Démarrer** dans la boîte de dialogue pour reprendre le processus de mappage utilisateur.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
