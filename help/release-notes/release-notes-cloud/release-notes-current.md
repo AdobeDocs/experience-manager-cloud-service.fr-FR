@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: b71c624e3662129a6a081d095975ee86b60578ac
+source-git-commit: 8382dc404ed8d5525e466de8ca79d1db70ce93f5
 workflow-type: tm+mt
-source-wordcount: '1486'
-ht-degree: 39%
+source-wordcount: '1508'
+ht-degree: 40%
 
 ---
 
@@ -197,12 +197,12 @@ La date de publication de l’outil de transfert de contenu v1.6.0 est le 4 octo
 
 ### Nouveautés {#what-is-new-ctt}
 
-* Amélioration du mappage des utilisateurs avec une expérience utilisateur simplifiée, y compris les fonctionnalités suivantes répertoriées ci-dessous. Pour plus d’informations, voir [Utilisation de l’outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
+* Amélioration de l’outil de mappage des utilisateurs avec une expérience utilisateur simplifiée, y compris les fonctionnalités suivantes répertoriées ci-dessous. Pour plus d’informations, voir [Utilisation de l’outil de mappage utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
    * Tester la connexion à l’API User Management avant d’exécuter le mappage utilisateur
    * Ignorer les erreurs et poursuivre avec élégance l’activité Mappage des utilisateurs
-   * Le mappage utilisateur n’échoue plus si le jeton d’accès expire (après 24 heures). Le mappage utilisateur peut être exécuté à nouveau à partir de l’endroit où il s’est arrêté pour la dernière fois.
+   * Le mappage utilisateur n’échoue plus si **Access Token** expire au bout de 24 heures. Le mappage utilisateur peut être exécuté à nouveau à partir de l’endroit où il s’est arrêté pour la dernière fois.
 
-* Pour accroître la robustesse du CTT, le contenu peut être ingéré simultanément sur l’instance d’auteur ou l’instance de publication.
+* Pour accroître la robustesse de l’outil de transfert de contenu, le contenu peut être ingéré simultanément sur l’instance d’auteur ou l’instance de publication. Voir [Utilisation de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=fr) pour plus d’informations.
 
 * Lorsque des versions sont incluses, le chemin `/var/audit` est automatiquement inclus pour migrer les événements de contrôle.
 
