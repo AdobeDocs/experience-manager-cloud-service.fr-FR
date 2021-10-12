@@ -1,10 +1,10 @@
 ---
 title: Utilisation de l’outil de mappage des utilisateurs
 description: Utilisation de l’outil de mappage des utilisateurs
-source-git-commit: 32220016fbe8c0ac0f906e62098398d4508af4cd
+source-git-commit: 09ab81364f0fd45ddedcd5f918e6ab5a4bdd1f0d
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 51%
+source-wordcount: '752'
+ht-degree: 50%
 
 ---
 
@@ -19,11 +19,11 @@ Suivez les étapes ci-dessous pour configurer ces éléments :
 
 1. Accédez à la [Adobe Developer Console](https://console.adobe.io) à l’aide de votre Adobe ID.
 1. Créez un projet ou ouvrez un formulaire existant.
-1. Add an API - Click **Add to Project** and select **API**
+1. Ajouter une API - Cliquez sur **Ajouter au projet** et sélectionnez **API**
 1. Sélectionnez l’API Gestion des utilisateurs.  Vous devrez peut-être obtenir des autorisations pour disposer de cette option.
 1. Créez des informations d’identification JWT.
 1. Générez une paire de clés ou chargez une clé publique (RSA ne convient pas).  Il existe un bouton, **Générer une paire de clés publique/privée**, qui vous permet de le faire.  Veillez à enregistrer les clés publique et privée.
-1. Navigate to the User Management API.
+1. Accédez à l’API User Management.
 1. Générez un jeton d’accès (ou jeton porteur) en collant votre contenu de clé privée dans la zone de texte et en cliquant sur **Générer un jeton**.
 1. Enregistrez en lieu sûr ces informations, notamment l’**ID client**, le **secret client**, l’**ID de compte technique**, l’**adresse électronique du compte technique**, l’**ID d’organisation** et le **jeton d’accès**.
 
@@ -46,7 +46,7 @@ L’outil de mappage des utilisateurs est intégré à l’outil de transfert de
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access5.png)
 
-   Populate the fields in **User Management API Configuration**, as described below.
+   Renseignez les champs de **Configuration de l’API User Management**, comme décrit ci-dessous.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access3.png)
 
@@ -63,7 +63,7 @@ L’outil de mappage des utilisateurs est intégré à l’outil de transfert de
       >[!NOTE]
       >Le jeton d’accès arrive à expiration toutes les 24 heures et il faut en créer un nouveau. Pour créer un jeton, revenez dans [Adobe Developer Console](https://console.adobe.io), choisissez votre projet, cliquez sur **User Management API** (API Gestion des utilisateurs) et collez la même clé privée dans la zone.
 
-1. After populating the fields, click on **Test Configuration** to test the connection to the User Management API service. Si la connexion est établie, vous pourrez cliquer sur **Enregistrer** pour enregistrer la configuration.
+1. Après avoir renseigné les champs, cliquez sur **Tester la configuration** pour tester la connexion au service d’API User Management. Si la connexion est établie, vous pourrez cliquer sur **Enregistrer** pour enregistrer la configuration.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access4.png)
 
@@ -75,31 +75,31 @@ L’outil de mappage des utilisateurs est intégré à l’outil de transfert de
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
 
-   It displays the **Status** as **RUNNING**.
+   Il affiche **Status** comme **RUNNING**.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-start1.png)
 
 
-1. Once User Mapping is complete, click on **Results** to view the summary.
+1. Une fois le mappage utilisateur terminé, cliquez sur **Résultats** pour afficher le résumé.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
 
    >[!IMPORTANT]
-   >* Une fois le mappage des utilisateurs terminé, vous pouvez revenir à la page Migration du contenu à l’aide du chemin de navigation. The User Mapping card displays the status and timestamp. Cliquez sur **Transfert de contenu** pour créer un jeu de migration pour exécuter l’extraction. Refer to [Running the Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) for more details.
+   >* Une fois le mappage des utilisateurs terminé, vous pouvez revenir à la page Migration du contenu à l’aide du chemin de navigation. La carte Mappage de l’utilisateur affiche l’état et l’horodatage. Cliquez sur **Transfert de contenu** pour créer un jeu de migration pour exécuter l’extraction. Pour plus d’informations, voir [Exécution de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) .
 
 
 ### Reprise du processus de mappage utilisateur {#resume-user-mapping-process}
 
-If the User Mapping process is stopped due to any of the following reasons:
+Si le processus de mappage des utilisateurs est arrêté pour l’une des raisons suivantes :
 
 * L’utilisateur a sélectionné **Arrêter le mappage des utilisateurs**
-* the access token expired during the process or,
+* le jeton d&#39;accès expiré pendant le processus ou,
 * une autre raison
 
    >[!NOTE]
-   >The progress is saved from where the process stopped.
+   >La progression est enregistrée à partir de l’endroit où le processus s’est arrêté.
 
-Follow the steps below to resume the User mapping process:
+Pour reprendre le processus de mappage des utilisateurs, procédez comme suit :
 
 1. Cliquez sur **Afficher le journal** pour consulter le journal de mappage des utilisateurs afin de vérifier la progression enregistrée.
 
@@ -108,10 +108,14 @@ Follow the steps below to resume the User mapping process:
 1. Cliquez à nouveau sur le bouton **Commencer le mappage de l’utilisateur** pour reprendre à l’endroit où il s’est arrêté.
 
    >[!NOTE]
-   >Ensure before restarting that the access token is still valid or has been refreshed.
+   >Assurez-vous, avant de redémarrer, que le jeton d’accès est toujours valide ou a été actualisé.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping2.png)
 
-1. Click on **Start** from the the dialog box to resume the User Mapping process.
+1. Cliquez sur **Démarrer** dans la boîte de dialogue pour reprendre le processus de mappage utilisateur.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
+   Une fois le processus de mappage des utilisateurs terminé, vous verrez l’**état** comme **FINISHED** pour cette configuration spécifique.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)
