@@ -1,21 +1,21 @@
 ---
-title: FAQ sur Screens as a Cloud Service
-description: Cette page décrit les questions fréquentes de Screens en tant que Cloud Service.
-source-git-commit: 7a26bb50a8b95a2358912249e21daeb9c5e9c1a3
+title: Questions fréquentes as a Cloud Service sur Screens
+description: Cette page décrit les questions fréquentes as a Cloud Service à Screens.
+exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
+source-git-commit: cf091056bdb96917a6d22bf1197d9b34ebbf9610
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
 
+# Questions fréquentes as a Cloud Service sur Screens {#screens-cloud-faqs}
 
-# FAQ sur Screens as a Cloud Service {#screens-cloud-faqs}
+La section suivante fournit des réponses aux questions fréquentes relatives au projet Screens as a Cloud Service.
 
-La section suivante fournit des réponses aux questions fréquentes relatives à Screens en tant que projet de Cloud Service.
+## Que dois-je faire si le lecteur AEM Screens pointant vers Screens as a Cloud Service ne sélectionne pas les clientlibs personnalisées au format /etc.clientlibs/xxx/clientlibs/clientlib-site.lc-813643788974b0f89d686d9591526d63-lc.min.css ?
 
-## Que dois-je faire si le lecteur AEM Screens pointant vers Screens en tant que Cloud Service ne sélectionne pas les clientlibs personnalisées au format /etc.clientlibs/xxx/clientlibs/clientlib-site.lc-813643788974b0f89d686d9591526d63-lc.min.css ?
-
-AEM en tant que Cloud Service modifie les longues clés de cache avec chaque déploiement. AEM Screens génère les caches hors ligne lorsque le contenu est modifié, plutôt que lorsque Cloud Manager exécute le déploiement. Ces longues clés de cache dans les manifestes ne sont pas valides. Par conséquent, le lecteur ne parvient pas à télécharger ces *clientlibs*.
+AEM as a Cloud Service modifie les longues clés de cache avec chaque déploiement. AEM Screens génère les caches hors ligne lorsque le contenu est modifié, plutôt que lorsque Cloud Manager exécute le déploiement. Ces longues clés de cache dans les manifestes ne sont pas valides. Par conséquent, le lecteur ne parvient pas à télécharger ces *clientlibs*.
 
 L’utilisation de `longCacheKey="none"` dans votre dossier `clientlib` supprime complètement les clés de cache longues pour ces *clientlibs*.
 
@@ -35,3 +35,8 @@ scripts=[
         end
         "] 
 ```
+
+## Quels formats d’image sont recommandés pour un rendu transparent des images dans un canal as a Cloud Service AEM Screens ?{#screens-cloud-image-format}
+
+Il est recommandé d’utiliser des images au format `.png` et `.jpeg` dans un canal as a Cloud Service AEM Screens, pour une expérience de signalétique digitale optimale.
+Les images au format `*.tif` (format de fichier image de balise) ne sont pas prises en charge dans AEM Screens as a Cloud Service. Si un canal présente ce format d’image, l’image ne sera pas rendue du côté du lecteur.
