@@ -1,15 +1,15 @@
 ---
-title: Directives et bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu
-description: Directives et bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu
-source-git-commit: bdcc5cfc229fd5b1fd1f70e37c7231ed3f727e72
+title: Conseils et bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu
+description: Conseils et bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu
+source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1503'
+ht-degree: 83%
 
 ---
 
 
-# Directives et bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu {#guidelines}
+# Conseils et bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu {#guidelines}
 
 ## Conseils et bonnes pratiques {#best-practices}
 
@@ -81,3 +81,7 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 * Si vous avez l’intention d’effectuer des ajouts, il est essentiel que la structure de contenu du contenu existant ne soit pas modifiée du moment où l’extraction initiale est prise au moment de l’exécution de l’extraction de complément. Les cumuls ne peuvent pas être exécutés sur du contenu dont la structure a été modifiée depuis l’extraction initiale. Veillez à limiter cette opération pendant le processus de migration.
 
 * Si vous envisagez d’inclure des versions dans un jeu de migration et que vous effectuez des compléments avec `wipe=false`, vous devez désactiver la purge de version en raison d’une limitation actuelle de l’outil de transfert de contenu. Si vous préférez conserver la purge de version activée et effectuer des compléments dans un jeu de migration, vous devez effectuer l’ingestion sous la forme `wipe=true`.
+
+## Et après ? {#whats-next}
+
+Une fois que vous avez appris les instructions, les bonnes pratiques et les points importants à prendre en compte pour l’utilisation de l’outil de transfert de contenu, vous êtes prêt à installer et à utiliser l’outil, en commençant par la création d’un jeu de migration. Voir [Prise en main du transfert de contenu vers](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) pour en savoir plus.

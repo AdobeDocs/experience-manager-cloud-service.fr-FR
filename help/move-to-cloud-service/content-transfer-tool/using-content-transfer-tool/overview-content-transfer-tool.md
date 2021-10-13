@@ -2,10 +2,10 @@
 title: Présentation de l’outil de transfert de contenu
 description: Présentation de l’outil de transfert de contenu
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
-source-git-commit: bdcc5cfc229fd5b1fd1f70e37c7231ed3f727e72
+source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '496'
+ht-degree: 88%
 
 ---
 
@@ -54,4 +54,7 @@ Au cours de la phase d’extraction, pour ***compléter*** un jeu de migration e
 
 Lors de la phase d’ingestion, pour appliquer le contenu différentiel en plus du contenu actuel, l’option *Effacer* doit être désactivée. Pour en savoir plus, voir [Ingestion de complément](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#top-up-ingestion-process).
 
+## Et après ? {#whats-next}
+
+Une fois que vous avez pris connaissance de l’outil de transfert de contenu et de sa présentation qui décrit cet outil, vous pouvez utiliser le contenu existant pour déplacer du contenu existant d’une instance d’AEM source (on-premise ou AMS) vers l’instance AEM Cloud Service cible, vous devez passer en revue les [Conditions préalables requises pour l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en).
 
