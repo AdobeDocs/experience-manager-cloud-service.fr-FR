@@ -1,10 +1,10 @@
 ---
 title: Extraction de contenu de la source dans l’outil de transfert de contenu
 description: Extraction de contenu de la source dans l’outil de transfert de contenu
-source-git-commit: 5b569ab1b1cca7e5ec46b872f8726fddfc8b8d14
+source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '526'
+ht-degree: 63%
 
 ---
 
@@ -60,3 +60,7 @@ Une fois le processus d’extraction terminé, vous pouvez transférer le conten
    >Il est préférable de désactiver l’option **Overwrite staging container during extraction** (Remplacer le conteneur d’évaluation pendant l’extraction).
    >
    >![image](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
+
+## Et après ? {#whats-next}
+
+Une fois que vous avez appris à extraire du contenu de la source dans l’outil de transfert de contenu, vous êtes prêt à apprendre le processus d’ingestion dans l’outil de transfert de contenu. Voir [Ingestion de contenu dans Target dans l’outil de transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) pour savoir comment ingérer votre jeu de migration à partir de l’outil de transfert de contenu.

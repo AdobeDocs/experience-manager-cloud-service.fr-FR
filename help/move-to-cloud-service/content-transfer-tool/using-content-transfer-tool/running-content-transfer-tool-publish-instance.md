@@ -1,10 +1,10 @@
 ---
 title: Exécution de l’outil de transfert de contenu sur une instance de publication
 description: Exécution de l’outil de transfert de contenu sur une instance de publication
-source-git-commit: 27e68cd282414da4cc23c3ba276b0fb3c330d49c
+source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 42%
+source-wordcount: '264'
+ht-degree: 29%
 
 ---
 
@@ -13,10 +13,10 @@ ht-degree: 42%
 
 ## Présentation {#introduction}
 
-L’outil de transfert de contenu (CTT) n’effectue aucune analyse avant de transférer le contenu de l’instance source vers l’instance cible. Par exemple, le CTT ne fait pas de distinction entre le contenu publié et le contenu non publié lors de l’ingestion de contenu dans un environnement de publication. Quel que soit le contenu spécifié dans le jeu de migration, il sera ingéré dans l’instance cible choisie. L’utilisateur peut ingérer un jeu de migration dans une instance d’auteur ou de publication, ou les deux. Il est recommandé, tout en déplaçant le contenu vers une instance de production, d’installer le CTT sur l’instance d’auteur source afin de déplacer le contenu vers l’instance d’auteur cible. De même, il est recommandé d’installer le CTT dans l’instance de publication source pour déplacer le contenu vers l’instance de publication cible.
+L’outil de transfert de contenu (CTT) n’effectue aucune analyse avant de transférer le contenu de l’instance source vers l’instance cible. Par exemple, le CTT ne fait pas de distinction entre le contenu publié et le contenu non publié lors de l’ingestion de contenu dans un environnement de publication. Quel que soit le contenu spécifié dans le jeu de migration, il sera ingéré dans l’instance cible choisie. L’utilisateur peut ingérer un jeu de migration dans une instance d’auteur ou de publication, ou les deux.
 
 >[!NOTE]
->Il est recommandé que lors du déplacement du contenu vers une instance de publication, l’outil de transfert de contenu soit installé sur l’instance de publication source pour déplacer le contenu vers l’instance de publication cible. Pour plus d’informations, voir la section [Approche recommandée](#recommended-approach) ci-dessous.
+>Il est recommandé que lors du déplacement du contenu vers une instance de production, l’outil de transfert de contenu soit installé sur l’instance d’auteur source pour déplacer le contenu vers l’instance d’auteur cible. De même, installez l’outil de transfert de contenu sur l’instance de publication source pour déplacer le contenu vers l’instance de publication cible. Pour plus d’informations, voir la section [Approche recommandée](#recommended-approach) ci-dessous.
 
 ## Approche recommandée {#recommended-approach}
 
