@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 8382dc404ed8d5525e466de8ca79d1db70ce93f5
+source-git-commit: f104f67af759e76c51d9cc125be5046aa8e62711
 workflow-type: tm+mt
-source-wordcount: '1508'
-ht-degree: 40%
+source-wordcount: '1603'
+ht-degree: 37%
 
 ---
 
@@ -42,10 +42,16 @@ Regardez la vidéo [Présentation de la version de septembre 2021](https://video
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
+* L’annotation des fichiers de PDF est désormais prise en charge à l’aide des outils de commentaires et d’annotation natifs de Adobe Document Cloud. Annotez le contenu du PDF en ajoutant du texte, des surbrillances, des post-it et des dessins directement dans la fenêtre d’aperçu du document. Les utilisateurs peuvent également accéder aux pages du PDF qui les intéressent en cliquant sur des commentaires spécifiques.
+
 * Les utilisateurs peuvent désormais trier les ressources affichées dans les résultats de recherche en mode Colonnes et Carte. Le tri fonctionne sur les colonnes Nom, Créé, Modifié ou Aucun.
 
    ![Trier les résultats de la recherche  [!DNL Assets] en mode Colonnes et Carte](/help/assets/assets/sort-searched-assets.png)
    *Figure : Triez les résultats de la recherche  [!DNL Assets] en mode Colonnes et Carte.*
+
+### Nouvelle fonctionnalité du canal de version préliminaire [!DNL Assets] {#assets-prerelease-features}
+
+* [!DNL Assets] comprend désormais un connecteur intégré  [!DNL Azure Media Services] pour la transcription audio et vidéo. Une fois configurés, les fichiers pris en charge sont automatiquement transcrits et générés les fichiers WebVTT. Les sous-titres WebVTT sont utilisés pour une recherche, un sous-titrage ou une traduction plus efficaces à utiliser comme sous-titres.
 
 <!-- TBD: 'Unpublishing' this feature as suggested by engineering.
 
@@ -56,8 +62,8 @@ Regardez la vidéo [Présentation de la version de septembre 2021](https://video
 
 ### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
-Apparently, no new Assets features in Sep beta channel.
-A/V transcription feature via CQ-4303854 has moved to Oct beta now.
+Apparently, no new Assets features in Sep prerelease channel.
+A/V transcription feature via CQ-4303854 has moved to Oct prerelease now.
 
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
 
