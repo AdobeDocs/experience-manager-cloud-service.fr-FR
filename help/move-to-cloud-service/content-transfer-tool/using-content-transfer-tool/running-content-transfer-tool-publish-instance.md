@@ -1,9 +1,9 @@
 ---
 title: Exécution de l’outil de transfert de contenu sur une instance de publication
 description: Exécution de l’outil de transfert de contenu sur une instance de publication
-source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
+source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '270'
 ht-degree: 29%
 
 ---
@@ -22,11 +22,11 @@ L’outil de transfert de contenu (CTT) n’effectue aucune analyse avant de tra
 
 Suivez l’approche recommandée, comme décrit ci-dessous :
 
-* Utilisez la même version du CTT que celle utilisée sur l’instance d’auteur.
+* Utilisez la même version de l’outil de transfert de contenu qui a été utilisée sur l’instance d’auteur.
 
 * Un seul noeud de publication doit être migré. Il doit être supprimé de l’équilibreur de charge avant de commencer l’extraction.
 
-* Lors de la création du jeu de migration, utilisez l’URL de l’environnement AEMaaCS de création.
+* Lors de la création du jeu de migration, utilisez l’URL de l’environnement de création AEM as a Cloud Service.
 
 * Lors de l’ingestion pour la publication, le niveau de publication ne sera PAS réduit (contrairement à l’auteur). Par mesure de précaution, évitez les opérations d’écriture initiées par l’utilisateur, telles que :
 

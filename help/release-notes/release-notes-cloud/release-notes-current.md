@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f104f67af759e76c51d9cc125be5046aa8e62711
+source-git-commit: 8814627c3144d657b564fee839ace8e4bdcf6f78
 workflow-type: tm+mt
-source-wordcount: '1603'
-ht-degree: 37%
+source-wordcount: '1605'
+ht-degree: 36%
 
 ---
 
@@ -208,7 +208,7 @@ La date de publication de l’outil de transfert de contenu v1.6.0 est le 4 octo
    * Ignorer les erreurs et poursuivre avec élégance l’activité Mappage des utilisateurs
    * Le mappage utilisateur n’échoue plus si **Access Token** expire au bout de 24 heures. Le mappage utilisateur peut être exécuté à nouveau à partir de l’endroit où il s’est arrêté pour la dernière fois.
 
-* Pour accroître la robustesse de l’outil de transfert de contenu, le contenu peut être ingéré simultanément sur l’instance d’auteur ou l’instance de publication. Voir [Utilisation de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=fr) pour plus d’informations.
+* Pour accroître la robustesse de l’outil de transfert de contenu, le contenu peut être ingéré simultanément sur l’instance d’auteur ou l’instance de publication. Voir [Prise en main de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) pour plus d’informations.
 
 * Lorsque des versions sont incluses, le chemin `/var/audit` est automatiquement inclus pour migrer les événements de contrôle.
 

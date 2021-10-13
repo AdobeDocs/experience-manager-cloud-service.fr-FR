@@ -2,9 +2,9 @@
 title: Gestion des référentiels de contenu volumineux
 description: Cette section décrit la gestion des référentiels de contenu volumineux
 exl-id: 2eca7fa6-fb34-4b08-b3ec-4e9211e94275
-source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
+source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1282'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ La prise en charge d’AzCopy est incluse dans la version 1.5.4 de CTT. Vous pou
 
 ### 3. Configuration d’un fichier azcopy.config {#configure-azcopy-config-file}
 
-Sur l’instance d’AEM source, dans crx-quickstart/cloud-migration , créez un nouveau fichier appelé azcopy.config .
+Sur l’instance d’AEM source, dans `crx-quickstart/cloud-migration`, créez un fichier appelé azcopy.config .
 
 Le contenu de ce fichier de configuration sera différent selon que votre instance d’AEM source utilise un entrepôt de données Azure ou Amazon S3.
 
@@ -106,7 +106,8 @@ s3SecretKey=--REDACTED--
 
 Une fois le fichier de configuration ci-dessus en place, la phase de précopie AzCopy s’exécute dans le cadre de chaque extraction ultérieure. Pour l’empêcher d’exécuter, vous pouvez renommer ce fichier ou le supprimer.
 
-1. Commencez une extraction à partir de l’interface utilisateur de CTT. Pour plus d’informations, voir [Exécution de l’outil de transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool) et [Processus d’extraction](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#extraction-process).
+1. Commencez une extraction à partir de l’interface utilisateur de CTT. Pour plus d’informations, voir [Prise en main de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) et [Processus d’extraction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html?lang=en) .
+
 1. Vérifiez que la ligne suivante est imprimée dans le journal d&#39;extraction :
 
 ```
@@ -143,7 +144,7 @@ Avec la version 1.5.4 de l’outil de transfert de contenu, nous avons ajouté l
 
 Pour tirer parti d’AzCopy lors de l’ingestion, nous vous demandons d’utiliser une version as a Cloud Service AEM qui est au moins la version 2021.6.5561.
 
-Commencez l’ingestion de l’auteur à partir de l’interface utilisateur de CTT. Pour plus d’informations, voir [Processus d’ingestion](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#ingestion-process) .
+Commencez l’ingestion de l’auteur à partir de l’interface utilisateur de CTT. Pour plus d’informations, voir [Processus d’ingestion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en) .
 Les entrées de journal d’AzCopy apparaissent dans le journal d’ingestion. Ils ressembleront à ceci :
 
 ```
