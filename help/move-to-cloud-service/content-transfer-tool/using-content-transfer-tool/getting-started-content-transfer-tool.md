@@ -2,10 +2,10 @@
 title: Prise en main de l’outil de transfert de contenu
 description: Prise en main de l’outil de transfert de contenu
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 19c84c9acaf8202dcb96ff25b4d674555ebc2d92
+source-git-commit: eae5b6a8903f68d4736e44db9a9e598716a15b75
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '776'
+ht-degree: 70%
 
 ---
 
@@ -103,7 +103,7 @@ Pour plus d’informations, consultez [Outil de mappage des utilisateurs](https:
 
 1. Vous verrez votre jeu de migration dans l’assistant de **transfert de contenu**, comme illustré dans la figure ci-dessous.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt07.png)
 
    Tous les jeux de migration existants s’affichent dans l’assistant **Transfert de contenu** avec leur état actuel et leurs informations d’état. Certaines des icônes décrites ci-dessous peuvent apparaître.
 

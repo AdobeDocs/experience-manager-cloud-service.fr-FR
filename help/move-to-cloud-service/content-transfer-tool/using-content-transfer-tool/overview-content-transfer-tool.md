@@ -2,10 +2,10 @@
 title: Présentation de l’outil de transfert de contenu
 description: Présentation de l’outil de transfert de contenu
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
-source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
+source-git-commit: 001c0003a19153edeb238938a8eae330396e67c5
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 88%
+source-wordcount: '532'
+ht-degree: 80%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 88%
 >id="aemcloud_ctt_overview"
 >title="Présentation"
 >abstract="Développé par Adobe, l’outil de transfert de contenu est utilisé pour déplacer du contenu existant entre une instance AEM source (on-premise ou AMS) et une instance AEM Cloud Service cible. Cet outil transfère également automatiquement les entités principales (utilisateurs ou groupes)."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=fr#extraction-process" text="Processus d’extraction"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=fr#ingestion-process" text="Processus d’ingestion"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="Processus d’extraction"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="Processus d’ingestion"
 
 Développé par Adobe, l’outil de transfert de contenu est utilisé pour déplacer du contenu existant entre une instance AEM source (on-premise ou AMS) et une instance AEM Cloud Service cible.
 
@@ -26,15 +26,15 @@ Le transfert de contenu comporte deux phases :
 
 1. **Extraction** : l’extraction fait référence à l’extraction de contenu de l’instance AEM source dans une zone temporaire appelée *jeu de migration*. Un *jeu de migration* est un espace de stockage cloud fourni par Adobe pour stocker temporairement le contenu transféré entre l’instance AEM source et l’instance AEM Cloud Service.
 
-   Pour plus d’informations, voir [Processus d’extraction au cours du transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#extraction-process).
+   Pour plus d’informations, voir [Processus d’extraction au cours du transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html).
 
 >[!NOTE]
 >
-> Il est recommandé d’exécuter l’outil de mappage des utilisateurs au cours de la phase d’extraction. Pour plus d’informations, consultez [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr#cloud-migration).
+> Il est recommandé d’exécuter l’outil de mappage des utilisateurs au cours de la phase d’extraction. Pour plus d’informations, consultez [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
 
 1. **Ingestion** : l’ingestion désigne l’ingestion de contenu à partir du *jeu de migration* dans l’instance Cloud Service cible.
 
-   Pour plus d’informations, voir [Processus d’ingestion au cours du transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#ingestion-process).
+   Pour plus d’informations, voir [Processus d’ingestion au cours du transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html).
 
 Un *jeu de migration* possède les attributs suivants :
 
@@ -50,9 +50,9 @@ L’outil de transfert de contenu comporte une fonctionnalité pour traiter un c
 >
 >Suite au transfert initial d’un contenu, il est recommandé d’effectuer fréquemment des compléments différentiels pour réduire la période de gel du transfert final de contenu différentiel avant de passer en ligne sur Cloud Service.
 
-Au cours de la phase d’extraction, pour ***compléter*** un jeu de migration existant, l’option de *remplacement* doit être désactivée. Pour en savoir plus, voir [Extraction de complément](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#top-up-extraction-process).
+Au cours de la phase d’extraction, pour ***compléter*** un jeu de migration existant, l’option de *remplacement* doit être désactivée. Pour en savoir plus, voir [Extraction de complément](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html?lang=en#top-up-extraction-process).
 
-Lors de la phase d’ingestion, pour appliquer le contenu différentiel en plus du contenu actuel, l’option *Effacer* doit être désactivée. Pour en savoir plus, voir [Ingestion de complément](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#top-up-ingestion-process).
+Lors de la phase d’ingestion, pour appliquer le contenu différentiel en plus du contenu actuel, l’option *Effacer* doit être désactivée. Pour en savoir plus, voir [Ingestion de complément](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en#top-up-ingestion-process).
 
 ## Et après ? {#whats-next}
 
