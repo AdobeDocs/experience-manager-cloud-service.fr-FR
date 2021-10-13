@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de transfert de contenu
 description: Utilisation de l’outil de transfert de contenu
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: dbca0404c310bc0fa9372347bb7b37649adf8b94
+source-git-commit: 5243efa12fdca7e2e2d6ab23b38e8d09c6ea4945
 workflow-type: tm+mt
-source-wordcount: '3193'
-ht-degree: 81%
+source-wordcount: '3199'
+ht-degree: 78%
 
 ---
 
@@ -141,19 +141,21 @@ Pour plus d’informations, consultez [Outil de mappage des utilisateurs](https:
 
 
 
-1. Cliquez sur **Enregistrer** après avoir rempli tous les champs de l’écran **Créer un jeu de migration**.
+1. Cliquez sur **Enregistrer** après avoir renseigné tous les champs de l’écran de détails **Créer un jeu de migration** .
 
-1. Vous voyez alors le jeu de migration défini dans la page *Overview* (Aperçu).
+1. Vous verrez votre jeu de migration dans l’assistant de **transfert de contenu**, comme illustré dans la figure ci-dessous.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
-   Tous les jeux de migration existants de cet écran s’affichent sur la page *Aperçu* avec leur état actuel et les informations correspondantes. Certaines des icônes décrites ci-dessous peuvent apparaître.
+   Tous les jeux de migration existants s’affichent dans l’assistant **Transfert de contenu** avec leur état actuel et leurs informations d’état. Certaines des icônes décrites ci-dessous peuvent apparaître.
 
    * Un *nuage de couleur rouge* indique que vous ne pouvez pas terminer le processus d’extraction.
    * Un *nuage de couleur verte* indique que vous pouvez terminer le processus d’extraction.
    * Une *icône de couleur jaune* indique que vous n’avez pas créé le jeu de migration existant et que celui ainsi indiqué a été créé par un autre utilisateur de la même instance.
 
-1. Sélectionnez un jeu de migration dans la page d’aperçu, puis cliquez sur **Properties** pour voir ou modifier les propriétés du jeu de migration. Lors de la modification des propriétés, il n’est pas possible de changer le nom du conteneur ou l’URL du service.
+1. Sélectionnez un jeu de migration et cliquez sur **Propriétés** pour afficher ou modifier les propriétés du jeu de migration. Lors de la modification des propriétés, il n’est pas possible de modifier le **nom du jeu de migration** ou l’**URL du service**.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt06.png)
 
 
 ### Processus d’extraction au cours du transfert de contenu {#extraction-process}
