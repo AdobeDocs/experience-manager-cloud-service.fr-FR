@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: ddea30a50c0c6146b0ac5b44c609d4a6f78f1fcc
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '700'
 ht-degree: 16%
 
 ---
@@ -100,6 +100,10 @@ Les modèles de fragment de contenu doivent être publiés avant ou pendant la p
 >[!NOTE]
 >
 >Si un auteur tente de publier un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection l’indique et le modèle est publié avec le fragment.
+
+>[!NOTE]
+>
+>La fonction Modèles de fragment de contenu verrouillés (publiés) est en version bêta.
 
 Dès qu’un modèle est publié, il est *verrouillé* en mode LECTURE SEULE sur l’auteur. Cela a pour but d’empêcher les modifications qui provoqueraient des erreurs dans les schémas et requêtes GraphQL existants, en particulier dans l’environnement de publication. Il est indiqué dans la console par **Verrouillé**.
 
