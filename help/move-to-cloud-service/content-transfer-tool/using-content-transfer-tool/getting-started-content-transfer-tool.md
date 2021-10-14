@@ -2,10 +2,10 @@
 title: Prise en main de l’outil de transfert de contenu
 description: Prise en main de l’outil de transfert de contenu
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: eae5b6a8903f68d4736e44db9a9e598716a15b75
+source-git-commit: 1083f3913bdf0ff64f50f6e731e4fc2804a3036e
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 70%
+source-wordcount: '742'
+ht-degree: 68%
 
 ---
 
@@ -79,13 +79,11 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
 
       1. **Include version** : sélectionnez les options requises. Lorsque des versions sont incluses, le chemin `/var/audit` est automatiquement inclus pour migrer les événements de contrôle.
 
-      ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
+         ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
 
-      >[!NOTE]
-      >Si vous envisagez d’inclure des versions dans un jeu de migration et que vous effectuez des compléments avec `wipe=false`, vous devez désactiver la purge de version en raison d’une limitation actuelle de l’outil de transfert de contenu. Si vous préférez conserver la purge de version activée et effectuer des compléments dans un jeu de migration, vous devez effectuer l’ingestion sous la forme `wipe=true`.
+         >[!NOTE]
+         >Si vous envisagez d’inclure des versions dans un jeu de migration et que vous effectuez des compléments avec `wipe=false`, vous devez désactiver la purge de version en raison d’une limitation actuelle de l’outil de transfert de contenu. Si vous préférez conserver la purge de version activée et effectuer des compléments dans un jeu de migration, vous devez effectuer l’ingestion sous la forme `wipe=true`.
 
-      1. **Inclure le mappage des utilisateurs à partir des utilisateurs et groupes IMS** : sélectionnez l’option permettant d’inclure le mappage à partir des utilisateurs et groupes IMS.
-Pour plus d’informations, consultez [Outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr).
 
       1. **Paths to be included** : utilisez le navigateur de chemins pour sélectionner les chemins objets de la migration. Le sélecteur de chemin accepte les entrées effectuées par saisie ou par sélection.
 
@@ -95,8 +93,6 @@ Pour plus d’informations, consultez [Outil de mappage des utilisateurs](https:
          >* `/libs`
          >* `/home`
          >* `/etc` (il est possible de sélectionner certains chemins `/etc` dans le CTT)
-
-
 
 
 1. Cliquez sur **Enregistrer** après avoir renseigné tous les champs de l’écran de détails **Créer un jeu de migration** .
