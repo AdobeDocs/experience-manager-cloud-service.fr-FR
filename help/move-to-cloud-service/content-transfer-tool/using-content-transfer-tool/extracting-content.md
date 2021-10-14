@@ -1,15 +1,15 @@
 ---
-title: Extraction de contenu de la source dans l’outil de transfert de contenu
-description: Extraction de contenu de la source dans l’outil de transfert de contenu
-source-git-commit: 0316ba8ee66695836a676ab764ce1f0cb415f95d
+title: Extraction de contenu de la source
+description: Extraction de contenu de la source
+source-git-commit: 6a6fa69d2eb79e41c79a0916bfd6e34ecf490d34
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 50%
+source-wordcount: '522'
+ht-degree: 51%
 
 ---
 
 
-# Extraction de contenu de la source dans l’outil de transfert de contenu {#extracting-content}
+# Extraction de contenu de la source {#extracting-content}
 
 ## Processus d’extraction dans l’outil de transfert de contenu {#extraction-process}
 

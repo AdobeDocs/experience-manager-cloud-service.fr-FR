@@ -1,15 +1,15 @@
 ---
-title: Ingestion de contenu dans Target dans l’outil de transfert de contenu
-description: Ingestion de contenu dans Target dans l’outil de transfert de contenu
-source-git-commit: 253ec197947cfa3aa3f1e4f84be1226981a90fe0
+title: Ingestion de contenu dans Target
+description: Ingestion de contenu dans Target
+source-git-commit: 6a6fa69d2eb79e41c79a0916bfd6e34ecf490d34
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 54%
+source-wordcount: '542'
+ht-degree: 55%
 
 ---
 
 
-# Ingestion de contenu dans Target dans l’outil de transfert de contenu {#ingesting-content}
+# Ingestion de contenu dans Target {#ingesting-content}
 
 ## Processus d’ingestion dans l’outil de transfert de contenu {#ingestion-process}
 
@@ -21,7 +21,7 @@ ht-degree: 54%
 
 Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert de contenu, procédez comme suit :
 >[!NOTE]
->Si Amazon S3 ou Azure Data Store est utilisé comme type d’entrepôt de données, vous pouvez exécuter l’étape facultative de précopie afin d’accélérer considérablement la phase d’ingestion. Pour plus d’informations, voir [Ingestion avec AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) .
+>If Amazon S3 or Azure Data Store is used as the type of data store, you can run the optional pre-copy step to significantly speed up the ingestion phase. Pour plus d’informations, voir [Ingestion avec AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) .
 
 1. Sélectionnez un jeu de migration à partir de la page **Content Transfer** et cliquez sur **Ingest** pour commencer l’ingestion.
 
@@ -32,7 +32,7 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ingestion-02.png)
 
    >[!IMPORTANT]
-   >Si l’ingestion avec une précopie est utilisée (pour S3 ou Azure Data Store), il est recommandé d’exécuter l’ingestion par l’auteur en premier seul. Cela permettra d’accélérer l’ingestion de publication lorsqu’elle est exécutée ultérieurement.
+   >If ingesting with pre-copy is used (for S3 or Azure Data Store), it is recommended to run Author ingestion first alone. This will speed up the Publish ingestion when it is run later.
 
    >[!IMPORTANT]
    >Lorsque l’option **Effacer le contenu existant sur l’instance cloud avant l’ingestion** est activée, elle supprime l’intégralité du référentiel existant et crée un référentiel dans lequel intégrer du contenu. Cela signifie que tous les paramètres sont réinitialisés, y compris les autorisations relatives à l’instance Cloud Service cible. C’est également vrai pour un utilisateur administrateur ajouté au groupe **administrateurs**.
@@ -72,4 +72,4 @@ Une fois le processus d’ingestion terminé, vous pouvez utiliser le contenu di
 
 ## Et après ? {#whats-next}
 
-Une fois que vous avez appris à ingérer du contenu dans Target dans l’outil de transfert de contenu, vous pouvez afficher les journaux à la fin de chaque étape (extraction et ingestion) et rechercher les erreurs. Voir [Affichage des journaux d’un jeu de migration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) pour en savoir plus.
+Once you have learned Ingesting Content into Target in Content Transfer Tool, you can view logs upon completion of each step (extraction and ingestion) and look for errors. Voir [Affichage des journaux d’un jeu de migration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) pour en savoir plus.
