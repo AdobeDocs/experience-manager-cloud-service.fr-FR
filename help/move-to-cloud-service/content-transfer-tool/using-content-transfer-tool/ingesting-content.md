@@ -1,10 +1,10 @@
 ---
 title: Ingestion de contenu dans Target dans l’outil de transfert de contenu
 description: Ingestion de contenu dans Target dans l’outil de transfert de contenu
-source-git-commit: d638fe0f4711bd152bd9c4be99a68662f12072e6
+source-git-commit: 253ec197947cfa3aa3f1e4f84be1226981a90fe0
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 63%
+source-wordcount: '554'
+ht-degree: 54%
 
 ---
 
@@ -47,7 +47,7 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
 
 1. Une fois l’ingestion terminée, l’état sous **Ingestion de l’auteur** est mis à jour vers **FINISHED**.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ingestion-05.png)
 
 ## Ingestion de complément {#top-up-ingestion-process}
 
@@ -58,9 +58,18 @@ L’outil de transfert de contenu comporte une fonctionnalité pour traiter un *
 
 Une fois le processus d’ingestion terminé, vous pouvez utiliser le contenu différentiel à l’aide de la méthode d’ingestion de complément. Suivez les étapes ci-dessous :
 
-1. Accédez à la page *Overview* et sélectionnez le jeu de migration pour lequel vous souhaitez effectuer l’ingestion de complément. Cliquez sur **Ingest** pour démarrer l’extraction de complément. La boîte de dialogue **Migration Set ingestion** (Ingestion du jeu de migration) s’affiche.
+1. Accédez à l’assistant **Transfert de contenu** et sélectionnez le jeu de migration pour lequel vous souhaitez effectuer l’ingestion de complément. Cliquez sur **Ingérer** pour démarrer l’extraction de complément.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-02.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/topup-ingest1.png)
+
+
+1. La boîte de dialogue **Ingestion du jeu de migration** s’affiche.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/topup-ingest2.png)
 
    >[!IMPORTANT]
    >Vous devez désactiver l’option **Effacer le contenu existant sur l’instance cloud avant l’ingestion** pour empêcher la suppression du contenu existant de l’activité d’ingestion précédente. De plus, cliquez sur **Assistance clientèle** pour enregistrer un ticket, comme le montre la figure précédente.
+
+## Et après ? {#whats-next}
+
+Une fois que vous avez appris à ingérer du contenu dans Target dans l’outil de transfert de contenu, vous pouvez afficher les journaux à la fin de chaque étape (extraction et ingestion) et rechercher les erreurs. Voir [Affichage des journaux d’un jeu de migration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) pour en savoir plus.
