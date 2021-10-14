@@ -2,10 +2,10 @@
 title: Configuration du pipeline CI/CD – Cloud Services
 description: Configuration du pipeline CI/CD – Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: c206bc241bccf6f8a5bfb4946d6231f53438861a
+source-git-commit: 0161c1f5a2dac98316abcf28aef70cb23f9a1147
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 78%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,11 +25,11 @@ Dans Cloud Manager, il existe deux types de pipeline :
 
    Pour plus d’informations, consultez [Pipelines hors production et dédiés à la qualité du code](configure-pipeline.md#non-production-pipelines).
 
->[!NOTE]
->Pour configurer votre pipeline, vous devez :
-> * définir le déclencheur qui le démarrera ;
-> * définir les paramètres qui contrôlent le déploiement en production ;
-> * configurer les paramètres de test de performance.
+   >[!NOTE]
+   >Pour configurer votre pipeline, vous devez :
+   > * définir le déclencheur qui le démarrera ;
+   > * définir les paramètres qui contrôlent le déploiement en production ;
+   > * configurer les paramètres de test de performance.
 
 
 ## Configuration d’un pipeline de production {#setting-up-production-pipeline}
@@ -115,31 +115,33 @@ Pour modifier le pipeline configuré, procédez comme suit :
 
 1. Accédez à la carte **Pipelines** à partir de la page **Aperçu du programme**.
 
-1. Cliquez sur **Modifier** dans la carte **Pipelines** .
+1. Cliquez sur **...** à partir de la carte **Pipelines** et cliquez sur **Modifier**, comme illustré dans la figure ci-dessous.
 
-   ![](assets/configure-pipeline/edit-pipeline-1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit1.png)
 
-1. L’onglet **Code source** vous permet de mettre à jour le référentiel. Cliquez sur **Accéder à Repo Info** pour mettre à jour le référentiel.
+1. La boîte de dialogue **Modifier le pipeline de production** s’affiche.
 
-   >[!NOTE]
-   >Voir [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
+   1. L’onglet **Configuration** vous permet de mettre à jour le **Nom du pipeline**, **Déclencheur de déploiement** et **Comportement d’échec des mesures importantes**.
 
-   ![](assets/configure-pipeline/edit-pipeline-2.png)
+      >[!NOTE]
+      >Voir [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-1. L’onglet **Environnements** vous permet de mettre à jour les options d’évaluation et de production.
+   1. L’onglet **Source** permet d’ignorer les configurations de niveau web et de mettre à jour à partir des **options de déploiement en production**.
 
-   ![](assets/configure-pipeline/edit-pipeline-3.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
 
-1. L’option **Audit de l’expérience** vous permet de mettre à jour ou d’ajouter de nouvelles pages.
+   1. L’option **Audit de l’expérience** vous permet de mettre à jour ou d’ajouter de nouvelles pages.
 
-   ![](assets/configure-pipeline/edit-pipeline-4.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit4.png)
 
-1. Cliquez sur **Enregistrer** une fois la modification du pipeline terminée.
+1. Cliquez sur **Mettre à jour** une fois la modification du pipeline terminée.
 
 ## Pipelines de qualité de code et hors production uniquement {#non-production-pipelines}
 
-En plus du pipeline principal qui se déploie vers les environnements intermédiaire et de production, les clients peuvent configurer des pipelines supplémentaires, appelés **Pipelines hors production**. Ces pipelines exécutent toujours les étapes de génération et de qualité de code. Il peut également être déployé dans AEM en tant qu’environnement de Cloud Service.
+En plus du pipeline principal qui se déploie vers les environnements intermédiaire et de production, les clients peuvent configurer des pipelines supplémentaires, appelés **Pipelines hors production**. Ces pipelines exécutent toujours les étapes de génération et de qualité de code. Il peut également être déployé dans AEM environnement as a Cloud Service.
 
 Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle carte :
 
