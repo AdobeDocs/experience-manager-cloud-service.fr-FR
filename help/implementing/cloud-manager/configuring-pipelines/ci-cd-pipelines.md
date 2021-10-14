@@ -2,15 +2,25 @@
 title: Pipelines CI-CD
 description: Pipelines CI-CD
 index: false
-source-git-commit: b8b4d0b9e7e1dfc6809d2e193a2c2fd2438ecdb6
+source-git-commit: 16e3280d7eaf53d8f944a60ec93b21c6676f0133
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 16%
+source-wordcount: '180'
+ht-degree: 19%
 
 ---
 
 
 # Pipelines CI-CD de Cloud Manager {#intro-cicd}
+
+## Présentation {#introduction}
+
+>[!NOTE]
+>Un pipeline CI/CD dans Cloud Manager est déclenché par un événement, tel qu’une demande d’extraction provenant d’un référentiel de code source, c’est-à-dire un changement de code ou une planification régulière pour correspondre à une cadence de publication.
+
+Pour configurer votre pipeline, vous devez :
+* définir le déclencheur qui démarrera le pipeline ;
+* définir les paramètres contrôlant le déploiement en production ;
+* configurer les paramètres de test de performance
 
 Dans Cloud Manager, il existe deux types de pipeline :
 
@@ -31,19 +41,3 @@ Un pipeline hors production vise à exécuter des analyses de qualité du code o
 
 >[!NOTE]
 >Pour plus d’informations, consultez Pipelines hors production et dédiés à la qualité du code.
-
-Le déploiement et la qualité du code pris en charge dans les pipelines de production et hors production de Cloud Manager sont classés en deux types différents :
-
-* Front end
-* Pile complète
-
-Le tableau suivant résume les pipelines :
-
-
->[!NOTE]
->Un pipeline CI/CD dans Cloud Manager est déclenché par un événement, tel qu’une demande d’extraction provenant d’un référentiel de code source, c’est-à-dire un changement de code ou une planification régulière pour correspondre à une cadence de publication.
->
->Pour configurer votre pipeline, vous devez :
->* définir le déclencheur qui démarrera le pipeline ;
->* définir les paramètres contrôlant le déploiement en production ;
->* configurer les paramètres de test de performance

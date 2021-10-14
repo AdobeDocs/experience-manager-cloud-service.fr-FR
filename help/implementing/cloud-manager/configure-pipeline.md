@@ -2,10 +2,10 @@
 title: Configuration du pipeline CI/CD – Cloud Services
 description: Configuration du pipeline CI/CD – Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 03f9a566d56acee12e5c1855df063e5db2bc59c1
+source-git-commit: 16e3280d7eaf53d8f944a60ec93b21c6676f0133
 workflow-type: tm+mt
-source-wordcount: '1008'
-ht-degree: 74%
+source-wordcount: '1063'
+ht-degree: 63%
 
 ---
 
@@ -129,12 +129,9 @@ Pour modifier le pipeline configuré, procédez comme suit :
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-   1. L’onglet **Source** vous offre la possibilité d’ignorer la configuration de niveau web pour votre pipeline et de vérifier ou décocher **Mettre en pause avant de procéder au déploiement vers les options Production** et **Planifié** à partir des **Options de déploiement de production**.
+   1. L’onglet **Source** vous permet de cocher ou de décocher les options **Mettre en pause avant le déploiement en production** et **Planifié** à partir des **Options de déploiement en production**.
 
-      >[!NOTE]
-      >Si la case **Ignorer la configuration de niveau Web** n’est pas cochée, le pipeline déploie également la configuration de niveau Web.
-
-      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-editnotier.png)
 
    1. L’option **Audit de l’expérience** vous permet de mettre à jour ou d’ajouter de nouvelles pages.
 
@@ -148,41 +145,59 @@ En plus du pipeline principal qui se déploie vers les environnements intermédi
 
 Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle carte :
 
-1. Accédez à la vignette **Pipelines hors production** depuis l’écran d’accueil de Cloud Manager.
+1. Accédez à la carte **Pipelines** à partir de l’écran d’accueil de Cloud Manager. Cliquez sur **+Ajouter** et sélectionnez **Ajouter un pipeline hors production**.
 
-   ![](/help/implementing/cloud-manager/assets/non-prod-add.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
-1. Cliquez sur le bouton **Ajouter** pour spécifier le nom du pipeline, le type de pipeline et la branche Git.
+1. **La boîte de dialogue Ajouter un**  pipeline hors production s’affiche. Sélectionnez le type de pipeline que vous souhaitez créer, **Pipeline de qualité du code** ou **Pipeline de déploiement**.
 
-   Vous pouvez également configurer le déclencheur de déploiement et le comportement en cas d’échec important dans les options du pipeline.
+   De plus, vous pouvez également configurer **Déclencheur de déploiement** et **Comportement d’échec important** à partir des **Options de déploiement**. Cliquez sur **Continuer**.
 
-   ![](assets/non-prod-pipe1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add2.png)
 
-1. Cliquez sur **Enregistrer** et le pipeline s’affiche sur la carte de l’écran d’accueil avec cinq actions, comme illustré ci-dessous :
+1. **Codage de pile complet** sélectionné. Vous pouvez choisir le **référentiel** et la **branche Git**. Cliquez sur **Enregistrer**.
 
-   ![](/help/implementing/cloud-manager/assets/prod-one.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
 
-   * **Modifier** : permet de modifier les paramètres du pipeline.
-   * **Détails**  : fournit des détails sur l’exécution du pipeline.
-   * **Build** : permet d’accéder à la page d’exécution, à partir de laquelle le pipeline peut être exécuté.
-   * **Accéder aux informations sur le référentiel** : permet à l’utilisateur d’obtenir les informations nécessaires pour accéder au référentiel Git de Cloud Manager.
+1. Le nouveau pipeline hors production s’affiche désormais dans la carte **Pipelines** .
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add4.png)
+
+
+   Le pipeline s’affiche sur la carte de l’écran d’accueil avec trois actions, comme illustré ci-dessous :
+
+   * **Ajouter**  : permet d’ajouter un nouveau pipeline.
+   * **Accéder aux informations sur le référentiel**  : permet à l’utilisateur d’obtenir les informations nécessaires pour accéder au référentiel Git de Cloud Manager.
    * **En savoir plus** : suivez ce lient pour en savoir plus sur les ressources de documentation du pipeline CI/CD.
 
 ### Modification d’un pipeline hors production {#editing-nonprod-pipeline}
 
-Vous pouvez modifier les configurations de pipeline à partir de la page **Aperçu du programme**.
+Vous pouvez modifier les configurations de pipeline à partir de la carte **Pipelines** de la page **Aperçu du programme**.
 
 Suivez les étapes ci-dessous pour modifier le pipeline hors production configuré :
 
 1. Accédez à la carte **Pipelines** à partir de la page **Aperçu du programme**.
 
-1. Sélectionnez l’onglet **Non-production** et cliquez sur **Modifier** après avoir sélectionné les pipelines de votre choix.
+1. Sélectionnez le pipeline hors production et cliquez sur **...**. Cliquez sur **Modifier**, comme illustré dans la figure ci-dessous.
 
-   ![](assets/configure-pipeline/non-prod-edit-1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit1.png)
 
-1. Sélectionnez le référentiel souhaité et d’autres mises à jour requises, puis cliquez sur **Enregistrer**.
+1. La boîte de dialogue **Modifier le pipeline de production** s’affiche.
 
-   ![](assets/configure-pipeline/edit-nonprodenv.png)
+   1. L’onglet **Configuration** vous permet de mettre à jour le **Nom du pipeline**, **Déclencheur de déploiement** et **Comportement d’échec des mesures importantes**.
+
+      >[!NOTE]
+      >Voir [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit2.png)
+
+
+   1. L’onglet **Code source** vous permet de mettre à jour le **Référentiel** et la **Branche Git**.
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit3.png)
+
+1. Cliquez sur **Mettre à jour** une fois la modification du pipeline hors production terminée.
+
 
 ## Étapes suivantes {#the-next-steps}
 
