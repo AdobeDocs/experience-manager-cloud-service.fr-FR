@@ -2,10 +2,10 @@
 title: Configuration du pipeline CI/CD – Cloud Services
 description: Configuration du pipeline CI/CD – Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: cbc5d8c2c4c1901556d5eaa336c61b68500ed8b8
+source-git-commit: 76ddf823ea7726a686e339265e33977f9a89609c
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 49%
+source-wordcount: '1177'
+ht-degree: 46%
 
 ---
 
@@ -63,7 +63,7 @@ Cliquez sur **+Ajouter** et sélectionnez **Ajouter un pipeline de production**.
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
 
 
-   Vous pouvez définir le déclencheur pour démarrer le pipeline :
+   Vous pouvez définir les déclencheurs de déploiement pour démarrer le pipeline.
 
    * **Manuel** : l’utilisation de l’interface lance le pipeline manuellement.
    * **Lors des modifications Git** : démarre le pipeline CI/CD chaque fois que des validations sont ajoutées à la branche git configurée. Même si vous sélectionnez cette option, vous pouvez toujours démarrer le pipeline manuellement.
@@ -71,14 +71,16 @@ Cliquez sur **+Ajouter** et sélectionnez **Ajouter un pipeline de production**.
       Lors de la configuration ou de la modification du pipeline, le responsable de déploiement peut définir le comportement du pipeline en cas d’échec important à l’un des points de contrôle qualité.
 
       Cela s’avère utile pour les clients qui souhaitent davantage de processus automatisés. Les options disponibles sont les suivantes :
+   Vous pouvez définir le comportement important des mesures d’échec pour démarrer le pipeline.
 
-      * **Demander à chaque fois** : il s’agit du paramètre par défaut, qui nécessite une intervention manuelle lors de n’importe quel échec important.
-      * **Annuler immédiatement** : si cette option est sélectionnée, le pipeline sera annulé chaque fois qu’un échec important se produira. Cette option émule essentiellement un utilisateur rejetant manuellement chaque échec.
-      * **Approuver immédiatement** : si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Cette option émule essentiellement la validation manuelle de l’utilisateur à chaque échec.
+   * **Demander à chaque fois** : il s’agit du paramètre par défaut, qui nécessite une intervention manuelle lors de n’importe quel échec important.
+   * **Échec immédiatement**  : si cette option est sélectionnée, le pipeline est annulé chaque fois qu’un échec important se produit. Cette option émule essentiellement un utilisateur rejetant manuellement chaque échec.
+   * **Continuer immédiatement** : si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Cette option émule essentiellement la validation manuelle de l’utilisateur à chaque échec.
 
-1. **Codage de pile complet** sélectionné. Vous pouvez choisir le **référentiel** et la **branche Git**. Cliquez sur **Enregistrer**.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add3.png)
+1. La boîte de dialogue **Ajouter un pipeline de production** comprend un second onglet intitulé **Code source**. **Codage de pile complet** sélectionné. Vous pouvez choisir le **référentiel** et la **branche Git**. Cliquez sur **Enregistrer**.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
 
 1. La boîte de dialogue **Ajouter un pipeline de production** comprend un troisième onglet intitulé **Audit de l’expérience**. Cette option fournit un tableau pour les chemins d’URL qui doivent toujours être inclus dans le contrôle de l’expérience.
 
@@ -150,6 +152,8 @@ Pour modifier le pipeline configuré, procédez comme suit :
 
 En plus du pipeline principal qui se déploie vers les environnements intermédiaire et de production, les clients peuvent configurer des pipelines supplémentaires, appelés **Pipelines hors production**. Ces pipelines exécutent toujours les étapes de génération et de qualité de code. Il peut également être déployé dans AEM environnement as a Cloud Service.
 
+### Ajout d’un nouveau pipeline hors production {#adding-non-production-pipeline}
+
 Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle carte :
 
 1. Accédez à la carte **Pipelines** à partir de l’écran d’accueil de Cloud Manager. Cliquez sur **+Ajouter** et sélectionnez **Ajouter un pipeline hors production**.
@@ -158,7 +162,7 @@ Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle c
 
 1. **La boîte de dialogue Ajouter un**  pipeline hors production s’affiche. Sélectionnez le type de pipeline que vous souhaitez créer, **Pipeline de qualité du code** ou **Pipeline de déploiement**.
 
-   De plus, vous pouvez également configurer **Déclencheur de déploiement** et **Comportement d’échec important** à partir des **Options de déploiement**. Cliquez sur **Continuer**.
+   De plus, vous pouvez également configurer **Déclencheur de déploiement** et **Comportement d’échec des mesures importantes** à partir des **Options de déploiement**. Cliquez sur **Continuer**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add2.png)
 
@@ -191,7 +195,7 @@ Suivez les étapes ci-dessous pour modifier le pipeline hors production configur
 
 1. La boîte de dialogue **Modifier le pipeline de production** s’affiche.
 
-   1. L’onglet **Configuration** vous permet de mettre à jour le **Nom du pipeline**, **Déclencheur de déploiement** et **Comportement d’échec des mesures importantes**.
+   1. L’onglet **Configuration** vous permet de mettre à jour le **Nom du pipeline**, **Déclencheur de déploiement** et **Comportement des échecs de mesure importants**.
 
       >[!NOTE]
       >Voir [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
