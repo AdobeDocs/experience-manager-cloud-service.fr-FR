@@ -2,10 +2,10 @@
 title: Configuration du pipeline CI/CD – Cloud Services
 description: Configuration du pipeline CI/CD – Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 76ddf823ea7726a686e339265e33977f9a89609c
+source-git-commit: feafcc0c3c8e32e86824efb293a1a0141a318280
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 46%
+source-wordcount: '1282'
+ht-degree: 42%
 
 ---
 
@@ -147,6 +147,32 @@ Pour modifier le pipeline configuré, procédez comme suit :
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit4.png)
 
 1. Cliquez sur **Mettre à jour** une fois la modification du pipeline terminée.
+
+### Autres actions de pipeline de production {#additional-prod-actions}
+
+#### Exécution d’un pipeline de production {#run-prod}
+
+Vous pouvez exécuter le pipeline de production à partir de la carte Pipelines :
+
+1. Accédez à la carte **Pipelines** à partir de la page **Aperçu du programme**.
+
+1. Cliquez sur **...** à partir de la carte **Pipelines** et cliquez sur **Exécuter**, comme illustré dans la figure ci-dessous.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-run.png)
+
+#### Suppression d’un pipeline de production {#delete-prod}
+
+Vous pouvez supprimer le pipeline de production de la carte Pipelines :
+
+1. Accédez à la carte **Pipelines** à partir de la page **Aperçu du programme**.
+
+1. Cliquez sur **...** dans la carte **Pipelines** et cliquez sur **Supprimer**, comme illustré dans la figure ci-dessous.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-delete.png)
+
+   >[!NOTE]
+   >Un utilisateur disposant du rôle Gestionnaire de déploiement peut désormais supprimer le pipeline de production en libre-service via l’option **Supprimer** de la carte Pipeline.
+
 
 ## Pipelines de qualité de code et hors production uniquement {#non-production-pipelines}
 
