@@ -2,9 +2,9 @@
 title: Configuration du pipeline CI/CD – Cloud Services
 description: Configuration du pipeline CI/CD – Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 03c058c17e8a9ff5a0be9203a65207bb367a02a6
+source-git-commit: eb8fb1f4134ceb9117773d01f4d97c68bd8c41a2
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1407'
 ht-degree: 37%
 
 ---
@@ -89,22 +89,24 @@ Cliquez sur **+Ajouter** et sélectionnez **Ajouter un pipeline de production**.
 
 1. La boîte de dialogue **Ajouter un pipeline de production** comprend un troisième onglet intitulé **Audit de l’expérience**. Cette option fournit un tableau pour les chemins d’URL qui doivent toujours être inclus dans le contrôle de l’expérience.
 
-   >[!NOTE]
-   >Vous devez cliquer sur **Ajouter une page** pour définir votre propre lien personnalisé.
-
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
+
+   >[!IMPORTANT]
+   >Vous devez cliquer sur **Ajouter une page** pour définir votre propre lien personnalisé. Le chemin de la page doit commencer par `/`.
+   >![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit2.png)
+
 
    Cliquez sur **Ajouter une nouvelle page** pour fournir un chemin d’URL à inclure dans le contrôle de l’expérience.
 
-   Par exemple, si vous souhaitez inclure `https://wknd.site/us/en/about-us.html` dans le contrôle de l’expérience, entrez le chemin `us/en/about-us.html` dans ce champ et cliquez sur **Sauvegarder**.
+   Par exemple, si vous souhaitez inclure `https://wknd.site/us/en/about-us.html` dans le contrôle de l’expérience, entrez le chemin `/us/en/about-us.html` dans ce champ et cliquez sur **Sauvegarder**.
 
-   ![](assets/exp-audit4.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
    L’URL qui apparaît dans le tableau présente les caractéristiques suivantes :
 
    `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`
 
-   ![](assets/exp-audit5.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
    25 lignes au maximum peuvent être incluses. Si aucune page n’est envoyée par l’utilisateur dans cette section, la page d’accueil du site est incluse par défaut dans le contrôle de l’expérience.
 
