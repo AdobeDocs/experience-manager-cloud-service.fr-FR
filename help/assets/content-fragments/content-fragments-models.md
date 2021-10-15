@@ -4,10 +4,10 @@ description: Découvrez comment les modèles de fragment de contenu constituent 
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: e099272245054bdff0bbeaa1fd9b01e564198dee
 workflow-type: tm+mt
-source-wordcount: '2772'
-ht-degree: 81%
+source-wordcount: '2850'
+ht-degree: 79%
 
 ---
 
@@ -77,6 +77,9 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
       * De nombreuses propriétés s’expliquent d’elles-mêmes. Pour plus d’informations, voir [Propriétés](#properties).
       * Si vous entrez un **libellé de champ**, le **nom de propriété** est automatiquement renseigné. S’il est vide, il peut être mis à jour manuellement par la suite.
 
+         >[!CAUTION]
+         Lors de la mise à jour manuelle d’un type de données **Nom de propriété**, notez que les noms ne doivent contenir que des caractères latins, des chiffres et un trait de soulignement &quot;_&quot; comme caractère spécial.
+         Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou mettez à jour ces caractères.
       Par exemple :
 
       ![propriétés de champ](assets/cfm-models-05.png)
@@ -136,6 +139,10 @@ Dans l’éditeur de fragments, chaque instance s’affiche sous la forme d’un
 ## Propriétés {#properties}
 
 De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propriétés, les détails supplémentaires sont les suivants :
+
+>[!CAUTION]
+Lors de la mise à jour manuelle du **nom de la propriété**, notez que les noms ne doivent contenir que des caractères latins, des chiffres et un trait de soulignement &quot;_&quot; comme caractère spécial.
+Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou mettez à jour ces caractères.
 
 * **Rendu comme**
 Les différentes options permettant de réaliser/rendre le champ dans un fragment. Il est ainsi souvent possible de définir si l’auteur verra une seule instance du champ ou s’il sera autorisé à créer plusieurs instances.
