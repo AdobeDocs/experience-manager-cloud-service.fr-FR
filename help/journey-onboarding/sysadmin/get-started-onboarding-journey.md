@@ -3,16 +3,17 @@ title: Prise en main du processus d’intégration
 description: Consultez cette page pour découvrir comment commencer à utiliser le parcours d’intégration
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+exl-id: a02ff46f-1319-4c0c-8ecc-d8d2d4276229
+source-git-commit: aeee4c4865e2ba7a8c9c7ffb392a08c45dffb20a
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 1%
+source-wordcount: '549'
+ht-degree: 2%
 
 ---
 
 # Prise en main du processus d’intégration {#getting-started}
 
-L’intégration est le processus au cours duquel un [administrateur système](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) désigné configure AEM en tant que Cloud Service pour votre organisation. Cela inclut l’approvisionnement initial des ressources cloud et l’affectation des utilisateurs à des rôles en fonction de leurs responsabilités professionnelles. Par conséquent, chaque membre peut se connecter et accéder à son AEM en tant que ressources de Cloud Service.
+L’intégration est le processus au cours duquel un [administrateur système](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) désigné configure AEM as a Cloud Service pour votre organisation. Cela inclut l’approvisionnement initial des ressources cloud et l’affectation des utilisateurs à des rôles en fonction de leurs responsabilités professionnelles. Par conséquent, chaque membre peut se connecter et accéder à ses ressources as a Cloud Service AEM.
 
 ## Objectif {#objective}
 
@@ -26,6 +27,11 @@ Après avoir lu cette section, vous devriez être en mesure de :
 >[!NOTE]
 >Avant de commencer le processus d’intégration, veillez à en savoir plus sur Adobe Admin Console. Adobe Admin Console est un emplacement central où administrer et gérer vos licences de produit et utilisateurs Adobes. Votre administrateur système se connectera à la console d’administration Adobe pour ajouter ou supprimer des utilisateurs, etc. Voir [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en) pour en savoir plus.
 
+## Intégration à AEM as a Cloud Service {#onboarding-process}
+
+Découvrez comment vous intégrer à AEM as a Cloud Service à partir de la phase de contrat jusqu’à la configuration des environnements à l’aide de Cloud Manager.
+
+>[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
 
 ## Connexion à Admin Console {#steps-admin-console}
 
@@ -67,4 +73,3 @@ Pour accéder à Admin Console et passer en revue votre rôle d’administrateur
 ## Et après ? {#whats-next}
 
 Maintenant que vous êtes connecté à Admin Console et que vous avez vérifié votre profil en tant qu’administrateur système, vous devez poursuivre votre parcours d’intégration en consultant le document [Affecter des membres de l’équipe aux profils de produit Cloud Manager](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md).
-
