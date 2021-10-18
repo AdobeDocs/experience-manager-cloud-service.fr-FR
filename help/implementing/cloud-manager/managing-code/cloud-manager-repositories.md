@@ -1,10 +1,10 @@
 ---
 title: Référentiels Cloud Manager
 description: Référentiels Cloud Manager
-source-git-commit: 66cc18f0449668f62c416482e27a72ea1baec0a1
+source-git-commit: e5d52c92c9162a58cc1a8e4f5d1169d59ee13119
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 68%
+source-wordcount: '613'
+ht-degree: 66%
 
 ---
 
@@ -118,4 +118,5 @@ Lors de l’utilisation de sous-modules Git, prenez en compte les points suivant
 * L’URL Git doit se trouver exactement dans la syntaxe décrite ci-dessus. Pour des raisons de sécurité, n’incorporez pas les informations d’identification dans ces URL.
 * Seuls les sous-modules situés à la racine de la branche sont pris en charge.
 * Les références des sous-modules Git sont stockées vers des validations git spécifiques. Par conséquent, lorsque des modifications sont apportées au référentiel de sous-module, la validation référencée doit être mise à jour, par exemple à l’aide de `git submodule update --remote`.
+* Sauf si nécessaire, il est vivement recommandé d’utiliser des sous-modules &quot;superficiels&quot;. Pour ce faire, exécutez `git config -f .gitmodules submodule.<submodule path>.shallow true` pour chaque sous-module.
 
