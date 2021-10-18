@@ -1,24 +1,24 @@
 ---
 title: Connexion à AEM as a Cloud Service
-description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou apprenez à demander la journalisation des données dans AEM as a Cloud Service.
+description: Découvrez comment utiliser la journalisation pour AEM as a Cloud Service afin de configurer des paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 0c2a6753ab6c7fdf8cd8235b9071b21dcfff1e74
+source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
 workflow-type: tm+mt
-source-wordcount: '2305'
-ht-degree: 96%
+source-wordcount: '2314'
+ht-degree: 94%
 
 ---
 
 # Connexion à AEM as a Cloud Service {#logging-for-aem-as-a-cloud-service}
 
-La plate-forme AEM as a Cloud Service permet aux clients d’inclure du code personnalisé destiné à créer des expériences incomparables pour leurs propres bases de clients. Dans cette optique, le service de journalisation est une fonction essentielle pour déboguer et comprendre l’exécution du code sur le développement local, ainsi que les environnements cloud, en particulier l’AEM en tant qu’environnements de développement de Cloud Service.
+La plate-forme AEM as a Cloud Service permet aux clients d’inclure du code personnalisé destiné à créer des expériences incomparables pour leurs propres bases de clients. Dans cette optique, le service de journalisation est une fonction essentielle pour déboguer et comprendre l’exécution du code sur le développement local, ainsi que les environnements cloud, en particulier les environnements de développement de l’AEM as a Cloud Service.
 
-Les paramètres AEM journalisation et les niveaux de journal sont gérés dans des fichiers de configuration stockés dans le cadre du projet AEM dans Git et déployés dans le cadre du projet AEM via Cloud Manager. La journalisation dans AEM as a Cloud Service peut être divisée en deux ensembles logiques :
+AEM paramètres de journalisation et les niveaux de journal as a Cloud Service sont gérés dans des fichiers de configuration stockés dans le cadre du projet AEM dans Git et déployés dans le cadre du projet AEM via Cloud Manager. La journalisation dans AEM as a Cloud Service peut être divisée en deux ensembles logiques :
 
 * La journalisation au niveau de l’application AEM.
 * La journalisation de serveur web Apache HTTPD/Dispatcher au niveau Publication.
 
-## Journalisation AEM {#aem-loggin}
+## Journalisation AEM {#aem-logging}
 
 La journalisation au niveau de l’application AEM est gérée par trois journaux :
 
@@ -253,7 +253,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
 
-| AEM en tant qu’ID de noeud de Cloud Service | cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 |
+| AEM ID de noeud as a Cloud Service | cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 |
 |---|---|
 | Adresse IP du client | - |
 | User | myuser@adobe.com |
