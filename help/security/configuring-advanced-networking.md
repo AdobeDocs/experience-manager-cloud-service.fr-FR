@@ -1,9 +1,9 @@
 ---
 title: Configuration de la mise en réseau avancée pour AEM as a Cloud Service
 description: Découvrez comment configurer des fonctionnalités de réseau avancé telles que VPN ou une adresse IP de sortie dédiée pour AEM as a Cloud Service
-source-git-commit: 1c9e83a0351d51d96998f7126f0ab76db56144ce
+source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
 workflow-type: tm+mt
-source-wordcount: '2797'
+source-wordcount: '2798'
 ht-degree: 7%
 
 ---
@@ -19,7 +19,7 @@ AEM as a Cloud Service propose plusieurs types de fonctionnalités de mise en r�
 
 * [Sortie de port flexible](#flexible-port-egress)  : configurez AEM as a Cloud Service pour autoriser le trafic sortant des ports non standard.
 * [Adresse IP sortante dédiée](#dedicated-egress-IP-address)  : configurez le trafic en dehors de AEM as a Cloud Service pour qu’il provient d’une adresse IP unique.
-* [Réseau privé virtuel](#vpn)  : trafic sécurisé entre l’infrastructure d’un client et AEM as a Cloud Service, pour les clients qui disposent d’une technologie VPN.
+* [Réseau privé virtuel (VPN)](#vpn)  : trafic sécurisé entre l’infrastructure d’un client et AEM as a Cloud Service, pour les clients qui disposent d’une technologie VPN.
 
 Cet article décrit en détail chacune de ces options, y compris leur configuration. Pour une stratégie de configuration générale, le point d’entrée de l’API `/networkInfrastructures` est appelé au niveau du programme pour déclarer le type souhaité de mise en réseau avancée, suivi d’un appel au point d’entrée `/advancedNetworking` pour chaque environnement afin d’activer l’infrastructure et de configurer des paramètres spécifiques à l’environnement. Pour chaque syntaxe formelle, ainsi que les exemples de requêtes et de réponses, reportez-vous aux points de terminaison appropriés dans la documentation de l’API Cloud Manager .
 
