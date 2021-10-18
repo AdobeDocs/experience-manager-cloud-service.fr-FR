@@ -1,7 +1,7 @@
 ---
 title: Conseils et bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu
 description: Conseils et bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu
-source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
+source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
 workflow-type: tm+mt
 source-wordcount: '1503'
 ht-degree: 83%
@@ -84,4 +84,4 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 ## Et après ? {#whats-next}
 
-Une fois que vous avez appris les instructions, les bonnes pratiques et les points importants à prendre en compte pour l’utilisation de l’outil de transfert de contenu, vous êtes prêt à installer et à utiliser l’outil, en commençant par la création d’un jeu de migration. Voir [Prise en main du transfert de contenu vers](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) pour en savoir plus.
+Une fois que vous avez appris les instructions, les bonnes pratiques et les points importants à prendre en compte pour l’utilisation de l’outil de transfert de contenu, vous êtes prêt à installer et à utiliser l’outil, en commençant par la création d’un jeu de migration. Voir [Prise en main de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) pour en savoir plus.
