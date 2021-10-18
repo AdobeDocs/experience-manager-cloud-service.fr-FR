@@ -1,10 +1,10 @@
 ---
 title: Extraction de contenu de la source
 description: Extraction de contenu de la source
-source-git-commit: 86df5e29567d9da8bc56c1c62b11ab1444586415
+source-git-commit: 6f53a4379826d7c91b977722ab2ed14d3a960d22
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 49%
+source-wordcount: '596'
+ht-degree: 45%
 
 ---
 
@@ -36,6 +36,10 @@ Pour extraire votre jeu de migration à partir de l’outil de transfert de cont
 
    >[!NOTE]
    >Vous avez la possibilité de remplacer le conteneur d’évaluation pendant la phase d’extraction.
+
+   >[!IMPORTANT]
+   >Si le mappage utilisateur n’a pas été exécuté sur ce jeu de migration avant d’extraire le contenu de la source, un avertissement s’affiche indiquant que l’étape de mappage utilisateur est en attente, comme illustré dans la figure ci-dessous. Cliquez sur **Mappage des utilisateurs** pour exécuter l’outil de mappage des utilisateurs.
+   >![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/user-mapping-extract.png)
 
 1. Le **Extraction** affiche maintenant le champ **EN COURS** état pour indiquer que l&#39;extraction est en cours.
 
