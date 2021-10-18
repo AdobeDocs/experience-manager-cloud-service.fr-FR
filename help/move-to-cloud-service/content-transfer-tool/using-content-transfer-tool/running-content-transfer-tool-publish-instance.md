@@ -1,7 +1,7 @@
 ---
 title: Exécution de l’outil de transfert de contenu sur une instance de publication
 description: Exécution de l’outil de transfert de contenu sur une instance de publication
-source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
+source-git-commit: 86b118e05b1e6947610c6032ed973394ba4b68e5
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 29%
@@ -28,7 +28,10 @@ Suivez l’approche recommandée, comme décrit ci-dessous :
 
 * Lors de la création du jeu de migration, utilisez l’URL de l’environnement de création AEM as a Cloud Service.
 
-* Lors de l’ingestion pour la publication, le niveau de publication ne sera PAS réduit (contrairement à l’auteur). Par mesure de précaution, évitez les opérations d’écriture initiées par l’utilisateur, telles que :
+* Lors de l’ingestion pour la publication, le niveau de publication ne sera pas réduit (contrairement à l’auteur).
 
-   * Distribution de contenu de AEM’auteur as a Cloud Service à la publication dans cet environnement
-   * Synchronisation des utilisateurs entre les instances de publication
+   >[!IMPORTANT]
+   >Par mesure de précaution, évitez les opérations d’écriture initiées par l’utilisateur, telles que :
+   > * Distribution de contenu de AEM’auteur as a Cloud Service à la publication dans cet environnement
+   > * Synchronisation des utilisateurs entre les instances de publication
+
