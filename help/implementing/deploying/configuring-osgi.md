@@ -1,11 +1,11 @@
 ---
 title: Configuration d’OSGi pour Adobe Experience Manager as a Cloud Service
 description: 'Configuration d’OSGi à l’aide de valeurs secrètes et spécifiques aux environnements '
-feature: Déploiement
+feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 2555e5e1545f198a235d44f8cb07e25d7490d1d5
+source-git-commit: 9f1183430255bd4f026eedff5c9e8f76ce68b76f
 workflow-type: tm+mt
-source-wordcount: '2934'
+source-wordcount: '2936'
 ht-degree: 94%
 
 ---
@@ -120,7 +120,7 @@ Lorsque vous définissez une valeur de configuration OSGi, commencez avec des va
 
 ### Cas d’utilisation de valeurs de configuration non secrètes spécifiques à un environnement {#when-to-use-non-secret-environment-specific-configuration-values}
 
-N’utilisez des configurations spécifiques à un environnement (`$[env:ENV_VAR_NAME]`) que pour les valeurs de configuration non secrètes lorsque les valeurs varient pour le niveau d’aperçu ou varient selon les environnements de développement. Cela inclut les instances de développement en local et les environnements de développement Adobe Experience Manager as a Cloud Service. Outre la définition de valeurs uniques pour le niveau d’aperçu, évitez d’utiliser des configurations non secrètes spécifiques à un environnement pour Adobe Experience Manager en tant qu’environnements intermédiaires ou de production de Cloud Service.
+N’utilisez des configurations spécifiques à un environnement (`$[env:ENV_VAR_NAME]`) que pour les valeurs de configuration non secrètes lorsque les valeurs varient pour le niveau d’aperçu ou varient selon les environnements de développement. Cela inclut les instances de développement en local et les environnements de développement Adobe Experience Manager as a Cloud Service. Outre la définition de valeurs uniques pour le niveau d’aperçu, évitez d’utiliser des configurations non secrètes spécifiques à un environnement pour les environnements d’évaluation ou de production Adobe Experience Manager as a Cloud Service.
 
 * N’utilisez des configurations non secrètes spécifiques à un environnement que pour les valeurs de configuration qui diffèrent entre le niveau de publication et de prévisualisation, ou pour les valeurs qui diffèrent entre les environnements de développement, y compris les instances de développement locales.
 * Outre le scénario où le niveau d’aperçu doit varier du niveau de publication, utilisez les valeurs intégrées standard dans les configurations OSGi pour les valeurs non secrètes de test et de production. À cet égard, il n’est pas recommandé d’utiliser des configurations spécifiques à un environnement pour faciliter les modifications de configuration au moment de l’exécution dans les environnements d’évaluation et de production ; ces modifications doivent être introduites par le biais du processus de gestion du code source.
@@ -140,9 +140,9 @@ Deux méthodes sont possibles pour créer des configurations OSGi, comme décrit
 Les fichiers de configuration OSGi au format JSON peuvent être écrits manuellement directement dans le projet AEM. C’est souvent la méthode la plus rapide pour créer des configurations OSGi relatives à des composants OSGi bien connus, et en particulier pour les composants OSGi personnalisés, conçus et mis au point par le développeur qui définit également les configurations. Cette approche peut également être utilisée pour copier/coller et mettre à jour des configurations pour un même composant OSGi sur différents dossiers de mode d’exécution.
 
 1. Dans votre IDE, ouvrez le projet `ui.apps`, recherchez ou créez le dossier de configuration (`/apps/.../config.<runmode>`) qui cible les modes d’exécution auxquels la nouvelle configuration OSGi doit s’appliquer
-1. Dans ce dossier de configuration, créez un fichier `<PID>.cfg.json`. Le PID est l’identifiant persistant du composant OSGi. Il correspond généralement au nom de classe complet de l’implémentation du composant OSGi. Par exemple :
+1. Dans ce dossier de configuration, créez un fichier `<PID>.cfg.json`. Le PID est l’identité persistante du composant OSGi. Il s’agit généralement du nom de classe complet de l’implémentation du composant OSGi. Par exemple :
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-Notez que les noms des fichiers de configuration OSGi d’usine appliquent la convention de dénomination `<PID>-<factory-name>.cfg.json`.
+Notez que les noms des fichiers de configuration OSGi d’usine appliquent la convention de dénomination `<factoryPID>-<name>.cfg.json`.
 1. Ouvrez le nouveau fichier `.cfg.json` et définissez les combinaisons clé/valeur pour les paires propriété et valeur OSGi, en appliquant le [format de configuration OSGi JSON](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 1. Enregistrez les modifications dans le nouveau fichier `.cfg.json`.
 1. Ajoutez et validez votre nouveau fichier de configuration OSGi sur Git.
