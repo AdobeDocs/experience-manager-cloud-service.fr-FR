@@ -1,10 +1,10 @@
 ---
 title: Extraction de contenu de la source
 description: Extraction de contenu de la source
-source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
+source-git-commit: 86df5e29567d9da8bc56c1c62b11ab1444586415
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 52%
+source-wordcount: '549'
+ht-degree: 49%
 
 ---
 
@@ -19,11 +19,14 @@ ht-degree: 52%
 >abstract="L’extraction fait référence à l’extraction de contenu de l’instance AEM source dans une zone temporaire appelée jeu de migration. Un jeu de migration est un espace de stockage cloud fourni par Adobe pour stocker temporairement le contenu transféré entre l’instance AEM source et l’instance AEM Cloud Service."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=fr#top-up-extraction-process" text="Extraction de complément"
 
+>[!IMPORTANT]
+>Vous devez exécuter l’outil de mappage des utilisateurs avant d’extraire du contenu de la source. Voir [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) pour plus d’informations.
+
 Pour extraire votre jeu de migration à partir de l’outil de transfert de contenu, procédez comme suit :
 >[!NOTE]
->Si Amazon S3 ou Azure Data Store est utilisé comme type d’entrepôt de données, vous pouvez exécuter l’étape facultative de précopie afin d’accélérer considérablement la phase d’extraction. Pour ce faire, vous devez configurer un fichier `azcopy.config` avant d’exécuter l’extraction. Pour plus d’informations, voir [Gestion des référentiels de contenu volumineux](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) .
+>Si Amazon S3 ou Azure Data Store est utilisé comme type d’entrepôt de données, vous pouvez exécuter l’étape facultative de précopie afin d’accélérer considérablement la phase d’extraction. Pour ce faire, vous devez configurer une `azcopy.config` avant d’exécuter l’extraction. Voir [Gestion des référentiels de contenu volumineux](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) pour plus d’informations.
 
-1. Sélectionnez un jeu de migration à partir de l’assistant **Content Transfer** et cliquez sur **Extract** pour démarrer l’extraction.
+1. Sélectionner un jeu de migration à partir de **Transfert de contenu** assistant et cliquez sur **Extract** pour démarrer l’extraction.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-01.png)
 
@@ -34,7 +37,7 @@ Pour extraire votre jeu de migration à partir de l’outil de transfert de cont
    >[!NOTE]
    >Vous avez la possibilité de remplacer le conteneur d’évaluation pendant la phase d’extraction.
 
-1. Le champ **Extraction** affiche désormais l’état **EN COURS** pour indiquer que l’extraction est en cours.
+1. Le **Extraction** affiche maintenant le champ **EN COURS** état pour indiquer que l&#39;extraction est en cours.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-03.png)
 
@@ -43,7 +46,7 @@ Pour extraire votre jeu de migration à partir de l’outil de transfert de cont
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-04.png)
 
    >[!IMPORTANT]
-   >L’interface utilisateur dispose d’une fonction de rechargement automatique qui recharge l’assistant de **transfert de contenu** toutes les 30 secondes.
+   >L’interface utilisateur dispose d’une fonction de rechargement automatique qui recharge la fonction **Transfert de contenu** toutes les 30 secondes.
    >Lorsque la phase d’extraction est lancée, un verrou d’écriture est créé et libéré au-delà de *60 secondes*. Si une extraction est arrêtée, vous devez donc attendre une minute pour que le verrou soit libéré avant de recommencer.
 
 ## Extraction de complément {#top-up-extraction-process}
@@ -58,11 +61,11 @@ Une fois le processus d’extraction terminé, vous pouvez transférer le conten
 
 Suivez les étapes ci-dessous :
 
-1. Accédez à l’assistant **Transfert de contenu** et sélectionnez le jeu de migration pour lequel vous souhaitez effectuer l’extraction de complément. Cliquez sur **Extraire** pour démarrer l’extraction de complément.
+1. Accédez au **Transfert de contenu** et sélectionnez le jeu de migration pour lequel vous souhaitez effectuer l&#39;extraction de complément. Cliquez sur **Extraire** pour démarrer l’extraction de complément.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-05.png)
 
-1. La boîte de dialogue **Migration Set extraction** s’affiche. Cliquez sur **Extract**.
+1. Le **Extraction du jeu de migration** s’affiche. Cliquez sur **Extract**.
 
    >[!IMPORTANT]
    >Il est préférable de désactiver l’option **Overwrite staging container during extraction** (Remplacer le conteneur d’évaluation pendant l’extraction).
