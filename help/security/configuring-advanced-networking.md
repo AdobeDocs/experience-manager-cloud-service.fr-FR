@@ -1,15 +1,19 @@
 ---
 title: Configuration de la mise en réseau avancée pour AEM as a Cloud Service
-description: Découvrez comment configurer des fonctionnalités de réseau avancé telles que VPN ou une adresse IP de sortie dédiée pour AEM as a Cloud Service
-source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
+description: Découvrez comment configurer des fonctionnalités de mise en réseau avancées telles que VPN ou une adresse IP de sortie flexible ou dédiée pour AEM as a Cloud Service
+source-git-commit: 47803e6af4ae3c95600c75be58c907da82112e1b
 workflow-type: tm+mt
-source-wordcount: '2798'
+source-wordcount: '2837'
 ht-degree: 7%
 
 ---
 
 
 # Configuration de la mise en réseau avancée pour AEM as a Cloud Service {#configuring-advanced-networking}
+
+Cet article vise à vous présenter les différentes fonctionnalités de mise en réseau avancées d’AEM as a Cloud Service, y compris les adresses IP de sortie et VPN qui peuvent être dédiées ou attribuées de manière flexible.
+
+## Présentation {#overview}
 
 >[!INFO]
 >
