@@ -1,9 +1,9 @@
 ---
 title: Extraction de contenu de la source
 description: Extraction de contenu de la source
-source-git-commit: 6f53a4379826d7c91b977722ab2ed14d3a960d22
+source-git-commit: 5cdfa5a84e74563245d95661dc6875e16982d941
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '601'
 ht-degree: 45%
 
 ---
@@ -19,12 +19,13 @@ ht-degree: 45%
 >abstract="L’extraction fait référence à l’extraction de contenu de l’instance AEM source dans une zone temporaire appelée jeu de migration. Un jeu de migration est un espace de stockage cloud fourni par Adobe pour stocker temporairement le contenu transféré entre l’instance AEM source et l’instance AEM Cloud Service."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=fr#top-up-extraction-process" text="Extraction de complément"
 
->[!IMPORTANT]
->Vous devez exécuter l’outil de mappage des utilisateurs avant d’extraire du contenu de la source. Voir [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) pour plus d’informations.
 
 Pour extraire votre jeu de migration à partir de l’outil de transfert de contenu, procédez comme suit :
 >[!NOTE]
 >Si Amazon S3 ou Azure Data Store est utilisé comme type d’entrepôt de données, vous pouvez exécuter l’étape facultative de précopie afin d’accélérer considérablement la phase d’extraction. Pour ce faire, vous devez configurer une `azcopy.config` avant d’exécuter l’extraction. Voir [Gestion des référentiels de contenu volumineux](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) pour plus d’informations.
+
+**Avant d’extraire du contenu de la source**
+Vous devez exécuter l’outil de mappage des utilisateurs avant d’extraire du contenu de la source. Voir [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) pour plus d’informations.
 
 1. Sélectionner un jeu de migration à partir de **Transfert de contenu** assistant et cliquez sur **Extract** pour démarrer l’extraction.
 
