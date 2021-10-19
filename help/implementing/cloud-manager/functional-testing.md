@@ -2,10 +2,10 @@
 title: Tests fonctionnels – Cloud Services
 description: Tests fonctionnels – Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: cf2e206b0ad186e0f4caa4a2ec9c34faf2078b76
+source-git-commit: 058fa606bbc667a36b78d5271947e2741f36240f
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 96%
+source-wordcount: '898'
+ht-degree: 93%
 
 ---
 
@@ -45,7 +45,7 @@ Cependant, si aucun fichier JAR de test n’est généré par la compilation, le
 
 AEM fournit à ses clients une suite intégrée de murs qualité Cloud Manager qui leur permettent d’assurer la mise à jour régulière de leurs applications. Les passerelles de test informatique permettent en particulier déjà aux clients de créer et d’automatiser leurs propres tests qui utilisent des API AEM.
 
-La fonction de test de l’interface utilisateur personnalisée est une fonction facultative [Souscription client](#customer-opt-in) qui permet à nos clients de créer et d’exécuter automatiquement des tests d’interface utilisateur pour leurs applications. Les tests de l’interface utilisateur sont des tests basés sur Selenium placés dans une image Docker afin de permettre un large choix de langues et de cadres (tels que Java et Maven, Node et WebDriver.io, ou tout autre cadre et technologie basé sur Selenium). Cette section vous permet d’en savoir plus sur la création de l’interface utilisateur et la création de tests d’interface utilisateur. En outre, un projet de tests d’interface utilisateur peut être facilement généré à l’aide de l’archétype de projet AEM.
+La fonction de test de l’interface utilisateur personnalisée est une [fonctionnalité facultative](#customer-opt-in) qui permet à nos clients de créer et d’exécuter automatiquement des tests d’interface utilisateur pour leurs applications. Les tests de l’interface utilisateur sont des tests basés sur Selenium placés dans une image Docker afin de permettre un large choix de langues et de cadres (tels que Java et Maven, Node et WebDriver.io, ou tout autre cadre et technologie basé sur Selenium). Cette section vous permet d’en savoir plus sur la création de l’interface utilisateur et la création de tests d’interface utilisateur. En outre, un projet de tests d’interface utilisateur peut être facilement généré à l’aide de l’archétype de projet AEM.
 
 Les clients peuvent créer (via GIT) des tests personnalisés et des suites de tests pour l’interface utilisateur. Le test de l’interface utilisateur sera exécuté dans le cadre d’un mur qualité spécifique à chaque pipeline Cloud Manager, doté d’étapes et d’informations de feedback spécifiques. Les tests d’interface utilisateur, y compris les tests de régression et de nouvelles fonctionnalités, permettront de détecter les erreurs et de les signaler dans le contexte du client.
 
@@ -66,15 +66,15 @@ Pour que leurs tests d’interface utilisateur soient créés et exécutés, les
 
 S’il ne se trouve pas dans le fichier `tar.gz` créé, les tests de l’interface utilisateur vont s’accumuler et leur exécution va être ignorée.
 
-Pour ajouter un fichier `testing.properties` dans l’artefact créé, ajoutez une instruction `include` dans le fichier `assembly-ui-test-docker-context.xml` (dans le sous-module de tests de l’interface utilisateur) :
+Pour ajouter `testing.properties` dans l’artefact créé, ajoutez une `include` instruction dans `assembly-ui-test-docker-context.xml` (dans le sous-module Tests de l’interface utilisateur) :
 
     &quot;
     [...]
     &lt;includes>
-    &lt;include>&lt;/include>
-    &lt;include>Dockerfilewait-for-grid.&lt;/include>
-    &lt;include>shtesting.properties&lt;/include> &lt;!- module de test d’opt-in dans Cloud Manager —>
-    &lt;/include>
+    &lt;include>Dockerfile&lt;/include>
+    &lt;include>wait-for-grid.sh&lt;/include>
+    &lt;include>testing.properties&lt;/include> &lt;!>- module de test d’opt-in dans Cloud Manager —>
+    &lt;/includes>
     [...]
     &quot;
 
