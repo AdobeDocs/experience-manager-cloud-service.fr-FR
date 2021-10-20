@@ -2,7 +2,7 @@
 title: Recherche et indexation de contenu
 description: Recherche et indexation de contenu
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 2b5186f887121568b167e2389168bdd419206b7c
+source-git-commit: 8eafe30b69014f5affad6da7e80f8f9a1c42eb38
 workflow-type: tm+mt
 source-wordcount: '2164'
 ht-degree: 81%
@@ -213,7 +213,7 @@ S’il n’est plus nécessaire de personnaliser un index prêt à l’emploi, v
 
 ## Optimisations des index {#index-optimizations}
 
-Apache Jackrabbit Oak permet des configurations d’index flexibles pour gérer efficacement les requêtes de recherche. Les index sont particulièrement importants pour les référentiels plus volumineux. Assurez-vous que toutes les requêtes sont soutenues par un index approprié. Les requêtes sans index approprié peuvent lire des milliers de noeuds, qui sont ensuite consignés comme avertissement. Ces requêtes doivent être identifiées en analysant les fichiers journaux, afin d&#39;optimiser les définitions d&#39;index. Veuillez consulter [cette page](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes) pour plus d’informations.
+Apache Jackrabbit Oak permet des configurations d’index flexibles pour gérer efficacement les requêtes de recherche. Les index sont particulièrement importants pour les référentiels plus volumineux. Assurez-vous que toutes les requêtes sont soutenues par un index approprié. Les requêtes sans index approprié peuvent lire des milliers de noeuds, qui sont ensuite consignés comme avertissement. De telles requêtes doivent être identifiées en analysant les fichiers journaux, de sorte que les définitions d’index puissent être optimisées. Veuillez consulter [cette page](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes) pour plus d’informations.
 
 ### Index de texte intégral Lucene sur AEM as a Cloud Service {#index-lucene}
 
