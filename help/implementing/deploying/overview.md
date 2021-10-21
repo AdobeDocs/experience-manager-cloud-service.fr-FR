@@ -1,12 +1,12 @@
 ---
 title: Déploiement sur AEM as a Cloud Service
 description: 'Déploiement sur AEM as a Cloud Service '
-feature: Déploiement
+feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
+source-git-commit: f85a4dd109459e216d23a9da67f67d4ad7aa8709
 workflow-type: tm+mt
-source-wordcount: '3290'
-ht-degree: 99%
+source-wordcount: '3334'
+ht-degree: 97%
 
 ---
 
@@ -104,7 +104,7 @@ Après le basculement vers la nouvelle version de l’application :
    * Dossiers (ajout, modification, suppression)
    * Modèles modifiables (ajout, modification, suppression)
    * Configuration tenant compte du contexte (tout sous `/conf`) (ajout, modification, suppression)
-   * Scripts (les modules peuvent déclencher des hooks d’installation à diverses étapes du processus d’installation de module : Voir la [documentation Jackrabbit filevault](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) sur les hooks d’installation. Notez qu’AEM CS utilise actuellement la version 3.4.0 de Filevault, qui limite l’installation des hooks aux administrateurs, aux utilisateurs système et aux membres du groupe administrateurs).
+   * Scripts (les modules peuvent déclencher des hooks d’installation à diverses étapes du processus d’installation de module : Voir [Documentation Jackrabbit filevault](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) à propos des hooks d’installation. Notez qu’AEM CS utilise actuellement la version 3.4.0 de Filevault, qui limite l’installation des hooks aux administrateurs, aux utilisateurs système et aux membres du groupe administrateurs).
 
 Il est possible de limiter l’installation de contenu modifiable à la création ou à la publication en incorporant des modules dans un dossier install.author ou install.publish sous `/apps`. Une restructuration pour refléter cette séparation a été réalisée dans AEM 6.5 et les détails relatifs à la restructuration de projet recommandée sont disponibles dans la [documentation d’AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr).
 
@@ -176,6 +176,10 @@ above appears to be internal, to confirm with Brian -->
 Il existe des cas d’utilisation où un module de contenu doit être installé de façon ponctuelle. Par exemple, pour déboguer un problème de production, vous devez importer du contenu spécifique de la production vers l’évaluation. Pour ces scénarios, le gestionnaire de modules peut être utilisé dans les environnements AEM as a Cloud Service.
 
 Le gestionnaire de modules étant un concept d’exécution, il n’est pas possible d’installer du contenu ni du code dans le référentiel non modifiable. Par conséquent, ces modules doivent être constitués uniquement de contenu modifiable (principalement `/content` ou `/conf`). Si le module comprend du contenu mixte (modifiable et non modifiable), seul le contenu modifiable sera installé.
+
+>[!IMPORTANT]
+>
+>L’interface utilisateur du gestionnaire de modules peut renvoyer une **undefined** message d’erreur si l’installation d’un package dure plus de 10 minutes. Ne tentez pas de relancer l&#39;installation si cela se produit, car elle se déroule correctement en arrière-plan et certains conflits peuvent être introduits par plusieurs processus d&#39;import simultanés.
 
 Les modules de contenu (modifiable ou non) installés via Cloud Manager s’affichent dans un statut figé au sein de l’interface utilisateur du gestionnaire de modules AEM. Ces modules ne peuvent pas être réinstallés, recréés, ni même téléchargés. Ils sont répertoriés avec le suffixe **« cp2fm »**, indiquant que leur installation a été gérée par Cloud Manager.
 
