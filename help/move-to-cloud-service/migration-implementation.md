@@ -2,7 +2,7 @@
 title: Phase de mise en oeuvre
 description: Phase de mise en oeuvre
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: 82e22f0a0684491b5071fa232a0f90fb87da6992
+source-git-commit: 3b0b1a192e25958b3b049893f5b7e1001e071f69
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 94%
@@ -41,7 +41,7 @@ Il permet de spécifier le sous-ensemble de contenu que vous souhaitez transfér
 >[!NOTE]
 >Il est recommandé d’effectuer fréquemment des compléments différentiels pour réduire la période de gel du transfert final de contenu différentiel avant de passer en ligne sur Cloud Service.
 
-Pour plus d’informations, voir [Outil de transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md).
+Pour plus d’informations, voir [Outil de transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
 
 >[!IMPORTANT]
 >La configuration minimale requise pour l’outil de transfert de contenu est AEM 6.3+ et JAVA 8. Si vous utilisez une version antérieure d’AEM, vous devrez mettre à niveau votre référentiel de contenu à la version AEM 6.5 pour utiliser l’outil de transfert de contenu.
