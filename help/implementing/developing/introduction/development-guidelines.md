@@ -2,10 +2,10 @@
 title: Conseils de développement pour AEM as a Cloud Service
 description: Conseils de développement pour AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: c9ebeefa2a8707cbbf43df15cf90c10aadbba45f
+source-git-commit: 333ebbed52577a82eb9b65b20a173e4e65e09537
 workflow-type: tm+mt
-source-wordcount: '2059'
-ht-degree: 87%
+source-wordcount: '2177'
+ht-degree: 83%
 
 ---
 
@@ -171,17 +171,17 @@ Adobe surveille les performances de l’application et prend des mesures pour re
 
 ## Envoi d’un email {#sending-email}
 
-AEM as a Cloud Service exige que le courrier sortant soit chiffré. Les sections ci-dessous décrivent comment demander, configurer et envoyer des emails.
+Les sections ci-dessous décrivent comment demander, configurer et envoyer des emails.
 
 >[!NOTE]
 >
->Le service de messagerie peut être configuré avec la prise en charge d’OAuth2. Pour plus d’informations, voir [Prise en charge OAuth2 pour le service de messagerie](/help/security/oauth2-support-for-mail-service.md).
+>Le service de messagerie peut être configuré avec la prise en charge d’OAuth2. Pour plus d’informations, voir [Prise en charge d’OAuth2 pour le service de messagerie](/help/security/oauth2-support-for-mail-service.md).
 
 ### Activation de l’e-mail sortant {#enabling-outbound-email}
 
-Par défaut, les ports utilisés pour l’envoi sont désactivés. Pour l’activer, configurez la [mise en réseau avancée](/help/security/configuring-advanced-networking.md), en veillant à définir pour chaque environnement nécessaire les règles de transfert de port du point d’entrée `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` afin que le trafic puisse passer par le port 465 (s’il est pris en charge par le serveur de messagerie) ou le port 587 (si le serveur de messagerie en a besoin et applique également TLS sur ce port).
+Par défaut, les ports utilisés pour envoyer des emails sont désactivés. Pour activer un port, configurez les [réseau avancé](/help/security/configuring-advanced-networking.md), en veillant à définir pour chaque environnement nécessaire la variable `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` les règles de transfert de port de endpoint, qui mappe le port prévu (par exemple, 465 ou 587) à un port proxy.
 
-Il est recommandé de configurer la mise en réseau avancée avec un paramètre `kind` défini sur `flexiblePortEgress`, car l’Adobe peut optimiser les performances du trafic de sortie de port flexible. Si une adresse IP sortante unique est nécessaire, choisissez un paramètre `kind` de `dedicatedEgressIp`. Si vous avez déjà configuré VPN pour d’autres raisons, vous pouvez également utiliser l’adresse IP unique fournie par cette variante de mise en réseau avancée.
+Il est recommandé de configurer une mise en réseau avancée avec une `kind` paramètre défini sur `flexiblePortEgress` car Adobe peut optimiser les performances du trafic de sortie de port flexible. Si une adresse IP sortante unique est nécessaire, choisissez une `kind` du paramètre `dedicatedEgressIp`. Si vous avez déjà configuré VPN pour d’autres raisons, vous pouvez également utiliser l’adresse IP unique fournie par cette variante de mise en réseau avancée.
 
 Vous devez envoyer des emails par l’intermédiaire d’un serveur de messagerie plutôt que directement aux clients de messagerie. Sinon, les emails peuvent être bloqués.
 
@@ -189,27 +189,50 @@ Vous devez envoyer des emails par l’intermédiaire d’un serveur de messageri
 
 Le [service de messagerie Day CQ OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) doit être utilisé et les emails doivent être envoyés au serveur de messagerie indiqué dans la demande d’assistance, et non directement aux destinataires.
 
-AEM as a Cloud Service nécessite que le courrier soit envoyé via le port 465. Si un serveur de messagerie ne prend pas en charge le port 465, il est possible d’utiliser le port 587 tant que l’option TLS est activée.
-
 ### Configuration {#email-configuration}
 
 Dans AEM, les emails doivent être envoyés à l’aide du [service de messagerie Day CQ OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
-Pour plus d’informations sur la configuration des paramètres des emails, voir la [documentation AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) . Pour AEM as a Cloud Service, les ajustements suivants doivent être apportés au service `com.day.cq.mailer.DefaultMailService OSGI` :
+Voir [Documentation d’AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) pour plus d’informations sur la configuration des paramètres de courrier électronique. Pour les AEM as a Cloud Service, notez les modifications nécessaires suivantes au `com.day.cq.mailer.DefaultMailService OSGI` service :
+
+* Le nom d’hôte du serveur SMTP doit être défini sur $[env:AEM_PROXY_HOST]
+* Le port du serveur SMTP doit être défini sur la valeur du port proxy d’origine défini dans le paramètre portForwards utilisé dans l’appel API lors de la configuration de la mise en réseau avancée. Par exemple, 30465 (plutôt que 465)
+
+Il est également recommandé que si le port 465 a été demandé :
+
+* Définissez `smtp.port` sur `465`.
+* Définissez `smtp.ssl` sur `true`.
+
+et si le port 587 a été demandé :
+
+* Définissez `smtp.port` sur `587`.
+* Définissez `smtp.ssl` sur `false`.
+
+La propriété `smtp.starttls` sera automatiquement définie par AEM as a Cloud Service au moment de son exécution sur une valeur appropriée. Par conséquent, si `smtp.ssl` est défini sur true, `smtp.startls` est ignoré. Si `smtp.ssl` est défini sur false, `smtp.starttls` est défini sur true. Cette règle s’applique indépendamment des valeurs de `smtp.starttls` définies dans votre configuration OSGI.
+
+
+Le service de messagerie peut éventuellement être configuré avec la prise en charge d’OAuth2. Pour plus d’informations, voir [Prise en charge d’OAuth2 pour le service de messagerie](/help/security/oauth2-support-for-mail-service.md).
+
+### Configuration d’email héritée {#legacy-email-configuration}
+
+Avant la version 2021.9.0, le courrier électronique était configuré par le biais d’une demande d’assistance clientèle. Notez les réglages nécessaires suivants au niveau du `com.day.cq.mailer.DefaultMailService OSGI` service :
+
+AEM as a Cloud Service nécessite que le courrier soit envoyé via le port 465. Si un serveur de messagerie ne prend pas en charge le port 465, il est possible d’utiliser le port 587 tant que l’option TLS est activée.
 
 Si le port 465 a été demandé :
 
 * Définissez `smtp.port` sur `465`.
 * Définissez `smtp.ssl` sur `true`.
 
-Si le port 587 a été demandé (autorisé seulement si le serveur de messagerie ne prend pas en charge le port 465) :
+et si le port 587 a été demandé :
 
 * Définissez `smtp.port` sur `587`.
 * Définissez `smtp.ssl` sur `false`.
 
-La propriété `smtp.starttls` sera automatiquement définie par AEM as a Cloud Service au moment de son exécution sur une valeur appropriée. Par conséquent, si `smtp.tls` est défini sur true, `smtp.startls` est ignoré. Si `smtp.ssl` est défini sur false, `smtp.starttls` est défini sur true. Cette règle s’applique indépendamment des valeurs de `smtp.starttls` définies dans votre configuration OSGI.
+La propriété `smtp.starttls` sera automatiquement définie par AEM as a Cloud Service au moment de son exécution sur une valeur appropriée. Par conséquent, si `smtp.ssl` est défini sur true, `smtp.startls` est ignoré. Si `smtp.ssl` est défini sur false, `smtp.starttls` est défini sur true. Cette règle s’applique indépendamment des valeurs de `smtp.starttls` définies dans votre configuration OSGI.
 
-Le service de messagerie peut éventuellement être configuré avec la prise en charge d’OAuth2. Pour plus d’informations, voir [Prise en charge OAuth2 pour le service de messagerie](/help/security/oauth2-support-for-mail-service.md).
+L’hôte du serveur SMTP doit être défini sur celui de votre serveur de messagerie.
+
 
 ## [!DNL Assets] directives de développement et cas pratiques {#use-cases-assets}
 
