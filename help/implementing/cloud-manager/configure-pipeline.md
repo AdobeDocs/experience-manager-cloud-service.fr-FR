@@ -2,10 +2,10 @@
 title: Configuration du pipeline CI/CD – Cloud Services
 description: Configuration du pipeline CI/CD – Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 01cd4efc920515996c928a8cb455bb44d4f722f2
+source-git-commit: f3743451f7aeadae26e8a6814cfbed9667c4a242
 workflow-type: tm+mt
-source-wordcount: '1407'
-ht-degree: 37%
+source-wordcount: '1451'
+ht-degree: 36%
 
 ---
 
@@ -47,18 +47,18 @@ Avant de commencer le déploiement du code, vous devez configurer les paramètre
 
 ### Ajout d’un nouveau pipeline de production {#adding-production-pipeline}
 
-Une fois que vous avez configuré votre programme et que vous disposez au moins d’un environnement à l’aide de l’interface utilisateur [!UICONTROL Cloud Manager], vous êtes prêt à ajouter un pipeline de production.
+Une fois que vous avez configuré votre programme et que vous disposez au moins d’un environnement utilisant [!UICONTROL Cloud Manager] Dans l’interface utilisateur, vous êtes prêt à ajouter un pipeline de production.
 
 Pour configurer le comportement et les préférences de votre pipeline de production, procédez comme suit :
 
-1. Accédez à la carte **Pipelines** à partir de la page **Aperçu du programme**.
-Cliquez sur **+Ajouter** et sélectionnez **Ajouter un pipeline de production**.
+1. Accédez au **Pipelines** de la carte **Aperçu du programme** page.
+Cliquez sur **+Ajouter** et sélectionnez **Ajout d’un pipeline de production**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
-1. **La boîte de dialogue Ajouter un** pipeline de production s’affiche. Saisissez le nom du pipeline.
+1. **Ajout d’un pipeline de production** s’affiche. Saisissez le nom du pipeline.
 
-   De plus, vous pouvez également configurer **Déclencheur de déploiement** et **Comportement d’échec des mesures importantes** à partir des **Options de déploiement**. Cliquez sur **Continuer**.
+   En outre, vous pouvez également configurer **Déclencheur de déploiement** et **Comportement des échecs de mesure importants** de **Options de déploiement**. Cliquez sur **Continuer**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
 
@@ -74,25 +74,25 @@ Cliquez sur **+Ajouter** et sélectionnez **Ajouter un pipeline de production**.
    Vous pouvez définir le comportement important des mesures d’échec pour démarrer le pipeline.
 
    * **Demander à chaque fois** : il s’agit du paramètre par défaut, qui nécessite une intervention manuelle lors de n’importe quel échec important.
-   * **Échec immédiatement**  : si cette option est sélectionnée, le pipeline est annulé chaque fois qu’un échec important se produit. Cette option émule essentiellement un utilisateur rejetant manuellement chaque échec.
-   * **Continuer immédiatement**  : si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Cette option émule essentiellement la validation manuelle de l’utilisateur à chaque échec.
+   * **Échec immédiat** - Si cette option est sélectionnée, le pipeline sera annulé chaque fois qu’un échec important se produit. Cette option émule essentiellement un utilisateur rejetant manuellement chaque échec.
+   * **Continuer immédiatement** - Si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Cette option émule essentiellement la validation manuelle de l’utilisateur à chaque échec.
 
 
-1. La boîte de dialogue **Ajouter un pipeline de production** comprend un second onglet intitulé **Code source**. **Codage de pile complet** sélectionné. Vous pouvez choisir le **référentiel** et la **branche Git**. Sélectionnez les options de déploiement en production, comme expliqué ci-dessous. Cliquez sur **Continuer**.
+1. Le **Ajout d’un pipeline de production** La boîte de dialogue comprend un second onglet intitulé **Code source**. **Code de pile complet** est sélectionnée. Vous pouvez choisir le **Référentiel** et le **Branche Git**. Sélectionnez les options de déploiement en production, comme expliqué ci-dessous. Cliquez sur **Continuer**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
 
-   Options de déploiement en production :
+   Options de déploiement en production:
 
-   * **Mettre en pause avant le déploiement en production** : Cette option permet de suspendre l’étape de déploiement avant la production.
-   * **Planifié** : Cette option permet à l’utilisateur d’activer le déploiement en production planifié.
+   * **Mettre en pause avant le déploiement en production**: Cette option permet de suspendre l’étape de déploiement avant la production.
+   * **Planifié**: Cette option permet à l’utilisateur d’activer le déploiement en production planifié.
 
-1. La boîte de dialogue **Ajouter un pipeline de production** comprend un troisième onglet intitulé **Audit de l’expérience**. Cette option fournit un tableau pour les chemins d’URL qui doivent toujours être inclus dans le contrôle de l’expérience.
+1. Le **Ajout d’un pipeline de production** La boîte de dialogue comprend un troisième onglet intitulé **Audit de l’expérience**. Cette option fournit un tableau pour les chemins d’URL qui doivent toujours être inclus dans le contrôle de l’expérience.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
    >[!IMPORTANT]
-   >Vous devez cliquer sur **Ajouter une page** pour définir votre propre lien personnalisé. Le chemin de la page doit commencer par `/`.
+   >Vous devez cliquer sur **Ajouter une page** pour définir votre propre lien personnalisé. Le chemin de page doit commencer par `/`.
    >![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit2.png)
 
 
@@ -115,29 +115,29 @@ Cliquez sur **+Ajouter** et sélectionnez **Ajouter un pipeline de production**.
    >[!NOTE]
    > Les pages configurées sont envoyées au service et évaluées en fonction des tests de performances, d’accessibilité, d’optimisation du moteur de recherche (SEO), de bonnes pratiques et d’application web progressive (PWA).
 
-1. Cliquez sur **Enregistrer**. Le nouveau pipeline de production s’affiche désormais dans la carte **Pipelines** .
+1. Cliquez sur **Enregistrer**. Le nouveau pipeline de production s’affiche désormais dans la variable **Pipelines** carte.
 
    Le pipeline s’affiche sur la carte de l’écran d’accueil avec trois actions, comme illustré ci-dessous :
 
-   * **Ajouter**  : permet d’ajouter un nouveau pipeline.
-   * **Accéder aux informations sur le référentiel**  : permet à l’utilisateur d’obtenir les informations nécessaires pour accéder au référentiel Git de Cloud Manager.
+   * **Ajouter** - permet d’ajouter un nouveau pipeline.
+   * **Accès aux informations sur le référentiel** - permet à l’utilisateur d’obtenir les informations nécessaires pour accéder au référentiel Git de Cloud Manager.
    * **En savoir plus** : suivez ce lient pour en savoir plus sur les ressources de documentation du pipeline CI/CD.
 
 ### Modification d’un pipeline de production {#editing-prod-pipeline}
 
-Vous pouvez modifier les configurations de pipeline à partir de la page **Aperçu du programme**.
+Vous pouvez modifier les configurations de pipeline à partir du **Aperçu du programme** page.
 
 Pour modifier le pipeline configuré, procédez comme suit :
 
-1. Accédez à la carte **Pipelines** à partir de la page **Aperçu du programme**.
+1. Accédez à **Pipelines** de la carte **Aperçu du programme** page.
 
-1. Cliquez sur **...** à partir de la carte **Pipelines** et cliquez sur **Modifier**, comme illustré dans la figure ci-dessous.
+1. Cliquez sur **...** de la **Pipelines** et cliquez sur **Modifier**, comme illustré dans la figure ci-dessous.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit1.png)
 
-1. La boîte de dialogue **Modifier le pipeline de production** s’affiche.
+1. Le **Modifier le pipeline de production** s’affiche.
 
-   1. L’onglet **Configuration** vous permet de mettre à jour le **Nom du pipeline**, **Déclencheur de déploiement** et **Comportement d’échec des mesures importantes**.
+   1. Le **Configuration** vous permet de mettre à jour la variable **Nom du pipeline**, **Déclencheur de déploiement**, et **Comportement d’échec des mesures importantes**.
 
       >[!NOTE]
       >Voir [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
@@ -145,15 +145,15 @@ Pour modifier le pipeline configuré, procédez comme suit :
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-   1. L’onglet **Source** vous permet de cocher ou de décocher les options **Mettre en pause avant le déploiement en production** et **Planifié** à partir des **Options de déploiement en production**.
+   1. Le **Source** vous offre la possibilité de vérifier ou de décocher des **Mettre en pause avant le déploiement en production** et **Planifié** options de **Options de déploiement en production**.
 
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-editnotier.png)
 
-   1. L’option **Audit de l’expérience** vous permet de mettre à jour ou d’ajouter de nouvelles pages.
+   1. Le **Audit de l’expérience** vous permet de mettre à jour ou d’ajouter de nouvelles pages.
 
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit4.png)
 
-1. Cliquez sur **Mettre à jour** une fois la modification du pipeline terminée.
+1. Cliquez sur **Mettre à jour** une fois que vous avez terminé de modifier le pipeline.
 
 ### Autres actions de pipeline de production {#additional-prod-actions}
 
@@ -161,9 +161,9 @@ Pour modifier le pipeline configuré, procédez comme suit :
 
 Vous pouvez exécuter le pipeline de production à partir de la carte Pipelines :
 
-1. Accédez à la carte **Pipelines** à partir de la page **Aperçu du programme**.
+1. Accédez à **Pipelines** de la carte **Aperçu du programme** page.
 
-1. Cliquez sur **...** à partir de la carte **Pipelines** et cliquez sur **Exécuter**, comme illustré dans la figure ci-dessous.
+1. Cliquez sur **...** de la **Pipelines** et cliquez sur **Exécuter**, comme illustré dans la figure ci-dessous.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-run.png)
 
@@ -171,64 +171,71 @@ Vous pouvez exécuter le pipeline de production à partir de la carte Pipelines 
 
 Vous pouvez supprimer le pipeline de production de la carte Pipelines :
 
-1. Accédez à la carte **Pipelines** à partir de la page **Aperçu du programme**.
+1. Accédez à **Pipelines** de la carte **Aperçu du programme** page.
 
-1. Cliquez sur **...** dans la carte **Pipelines** et cliquez sur **Supprimer**, comme illustré dans la figure ci-dessous.
+1. Cliquez sur **...** de la **Pipelines** et cliquez sur **Supprimer**, comme illustré dans la figure ci-dessous.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-delete.png)
 
    >[!NOTE]
-   >Un utilisateur disposant du rôle Gestionnaire de déploiement peut désormais supprimer le pipeline de production en libre-service via l’option **Supprimer** de la carte Pipeline.
+   >Un utilisateur disposant du rôle Gestionnaire de déploiement peut désormais supprimer le pipeline de production en libre-service via le **Supprimer** de la carte Pipeline.
 
 
 ## Pipelines de qualité de code et hors production uniquement {#non-production-pipelines}
 
-En plus du pipeline principal qui se déploie vers les environnements intermédiaire et de production, les clients peuvent configurer des pipelines supplémentaires, appelés **Pipelines hors production**. Ces pipelines exécutent toujours les étapes de génération et de qualité de code. Il peut également être déployé dans AEM environnement as a Cloud Service.
+En plus du pipeline principal qui se déploie vers les environnements intermédiaire et de production, les clients peuvent configurer des pipelines supplémentaires, appelés Pipelines hors production.
+Il existe deux types de pipelines hors production :
+
+1. Qualité du code : Exécute des analyses de qualité du code sur le code d’une branche Git. Ce pipeline exécute les étapes de génération et de qualité de code.
+1. Déploiement : Outre l’exécution des étapes de création et de qualité de code, ce pipeline déploie le code vers la non-production sélectionnée dans AEM environnement as a Cloud Service.
 
 ### Ajout d’un nouveau pipeline hors production {#adding-non-production-pipeline}
 
 Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle carte :
 
-1. Accédez à la carte **Pipelines** à partir de l’écran d’accueil de Cloud Manager. Cliquez sur **+Ajouter** et sélectionnez **Ajouter un pipeline hors production**.
+1. Accédez au **Pipelines** à partir de l’écran d’accueil de Cloud Manager. Cliquez sur **+Ajouter** et sélectionnez **Ajout d’un pipeline hors production**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
-1. **La boîte de dialogue Ajouter un**  pipeline hors production s’affiche. Sélectionnez le type de pipeline que vous souhaitez créer, **Pipeline de qualité du code** ou **Pipeline de déploiement**.
+1. **Ajout d’un pipeline hors production**  s’affiche. Sélectionnez le type de pipeline que vous souhaitez créer, au choix : **Pipeline de qualité du code** ou **Pipeline de déploiement**.
 
-   De plus, vous pouvez également configurer **Déclencheur de déploiement** et **Comportement d’échec des mesures importantes** à partir des **Options de déploiement**. Cliquez sur **Continuer**.
+   >[!NOTE]
+   >Pour les pipelines de déploiement, vous devez sélectionner l’environnement de déploiement.
+
+   En outre, vous pouvez également configurer **Déclencheur de déploiement** et **Comportement des échecs de mesure importants** de **Options de déploiement**. Cliquez sur **Continuer**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add2.png)
 
-1. **Codage de pile complet** sélectionné. Vous pouvez choisir le **référentiel** et la **branche Git**. Cliquez sur **Enregistrer**.
+1. **Code de pile complet** est sélectionnée. Vous pouvez choisir le **Référentiel** et le **Branche Git**. Cliquez sur **Enregistrer**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
 
-1. Le nouveau pipeline hors production s’affiche désormais dans la carte **Pipelines** .
+1. Le nouveau pipeline hors production s’affiche désormais dans la variable **Pipelines** carte.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add4.png)
 
 
    Le pipeline s’affiche sur la carte de l’écran d’accueil avec trois actions, comme illustré ci-dessous :
 
-   * **Ajouter**  : permet d’ajouter un nouveau pipeline.
-   * **Accéder aux informations sur le référentiel**  : permet à l’utilisateur d’obtenir les informations nécessaires pour accéder au référentiel Git de Cloud Manager.
+   * **Ajouter** - permet d’ajouter un nouveau pipeline.
+   * **Accès aux informations sur le référentiel** - permet à l’utilisateur d’obtenir les informations nécessaires pour accéder au référentiel Git de Cloud Manager.
    * **En savoir plus** : suivez ce lient pour en savoir plus sur les ressources de documentation du pipeline CI/CD.
 
 ### Modification d’un pipeline hors production {#editing-nonprod-pipeline}
 
-Vous pouvez modifier les configurations de pipeline à partir de la carte **Pipelines** de la page **Aperçu du programme**.
+Vous pouvez modifier les configurations de pipeline à partir du **Carte Pipelines** de **Aperçu du programme** page.
 
 Suivez les étapes ci-dessous pour modifier le pipeline hors production configuré :
 
-1. Accédez à la carte **Pipelines** à partir de la page **Aperçu du programme**.
+1. Accédez à **Pipelines** de la carte **Aperçu du programme** page.
 
 1. Sélectionnez le pipeline hors production et cliquez sur **...**. Cliquez sur **Modifier**, comme illustré dans la figure ci-dessous.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit1.png)
 
-1. La boîte de dialogue **Modifier le pipeline de production** s’affiche.
+1. Le **Modifier le pipeline de production** s’affiche.
 
-   1. L’onglet **Configuration** vous permet de mettre à jour le **Nom du pipeline**, **Déclencheur de déploiement** et **Comportement des échecs de mesure importants**.
+   1. Le **Configuration** vous permet de mettre à jour la variable **Nom du pipeline**, **Déclencheur de déploiement**, et **Comportement des échecs de mesure importants**.
 
       >[!NOTE]
       >Voir [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
@@ -236,7 +243,7 @@ Suivez les étapes ci-dessous pour modifier le pipeline hors production configur
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit2.png)
 
 
-   1. L’onglet **Code source** vous permet de mettre à jour le **Référentiel** et la **Branche Git**.
+   1. Le **Code source** vous permet de mettre à jour la variable **Référentiel** et le **Branche Git**.
 
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit3.png)
 
@@ -248,9 +255,9 @@ Suivez les étapes ci-dessous pour modifier le pipeline hors production configur
 
 Vous pouvez exécuter le pipeline de production à partir de la carte Pipelines :
 
-1. Accédez à la carte **Pipelines** à partir de la page **Aperçu du programme**.
+1. Accédez à **Pipelines** de la carte **Aperçu du programme** page.
 
-1. Cliquez sur **...** à partir de la carte **Pipelines** et cliquez sur **Exécuter**, comme illustré dans la figure ci-dessous.
+1. Cliquez sur **...** de la **Pipelines** et cliquez sur **Exécuter**, comme illustré dans la figure ci-dessous.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-run1.png)
 
@@ -258,9 +265,9 @@ Vous pouvez exécuter le pipeline de production à partir de la carte Pipelines 
 
 Vous pouvez supprimer le pipeline de production de la carte Pipelines :
 
-1. Accédez à la carte **Pipelines** à partir de la page **Aperçu du programme**.
+1. Accédez à **Pipelines** de la carte **Aperçu du programme** page.
 
-1. Cliquez sur **...** dans la carte **Pipelines** et cliquez sur **Supprimer**, comme illustré dans la figure ci-dessous.
+1. Cliquez sur **...** de la **Pipelines** et cliquez sur **Supprimer**, comme illustré dans la figure ci-dessous.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-delete.png)
 
