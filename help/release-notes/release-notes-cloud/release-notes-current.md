@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 540e380b01629cb17aae9b993e871e3496a2e86b
+source-git-commit: adb0aa2812871f6efedd1fb88663170127dc59d4
 workflow-type: tm+mt
 source-wordcount: '1928'
-ht-degree: 30%
+ht-degree: 32%
 
 ---
 
@@ -26,7 +26,7 @@ La section suivante concerne les notes de mise à jour générales de la version
 ## Date de publication {#release-date}
 
 La date de publication de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la version actuelle (2021.9.0) est le 6 octobre 2021.
-La version suivante (2021.10.0) date du 27 octobre 2021.
+La version suivante (2021.10.0) date du 4 novembre 2021.
 
 ## Vidéo de publication {#release-video}
 
@@ -81,7 +81,7 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * **Connectez facilement AEM Forms à Microsoft Dynamics et à Salesforce** : le service fournit des modèles de données et de configuration de source de données prêts à l’emploi pour Microsoft Dynamics et Salesforce, ce qui permet aux développeurs de configurer [plus rapidement et plus facilement Microsoft Dynamics et Salesforce en tant que sources de données pour un formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=en).
 
-* **Signer électroniquement un formulaire adaptatif à l’aide de DocuSign :** [Vous pouvez utiliser DocuSign pour e-signer un formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/integrate-docusign-adaptive-forms.html). Le service fournit une action d’envoi personnalisée pour utiliser DocuSign avec un formulaire adaptatif.
+* **Signature électronique d’un formulaire adaptatif à l’aide de DocuSign :**[ vous pouvez utiliser DocuSign pour signer électroniquement un formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/integrate-docusign-adaptive-forms.html). Le service fournit une action d’envoi personnalisée pour utiliser DocuSign avec un formulaire adaptatif.
 
 ### Fonctionnalités bêta de [!DNL Forms] {#sep-what-is-new-forms-prerelease}
 
