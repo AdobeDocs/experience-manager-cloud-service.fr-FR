@@ -2,7 +2,7 @@
 title: Prise en main de l’outil de transfert de contenu
 description: Prise en main de l’outil de transfert de contenu
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: fc0628c2bfd345a7846d3d4fbd0fe11a459b10a1
+source-git-commit: 6ee0cdc1a2c75bdf91354285c0e21ca618ceeb46
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 59%
@@ -11,7 +11,7 @@ ht-degree: 59%
 
 # Prise en main de l’outil de transfert de contenu {#getting-started-content-transfer-tool}
 
-## Connectivité de l’environnement source
+## Connectivité de l’environnement source {#source-environment-connectivity}
 
 L’instance d’AEM source peut se trouver derrière un pare-feu où elle ne peut atteindre que certains hôtes qui ont été ajoutés à une Liste autorisée. Pour réussir l’exécution d’une extraction, les points de terminaison suivants doivent être accessibles à partir de l’instance AEM en cours d’exécution :
 
@@ -30,6 +30,7 @@ Pour tester la connectivité à l’environnement as a Cloud Service AEM cible, 
 
 >[!NOTE]
 >Si `HTTP/2 200` est reçu, une connexion à AEM as a Cloud Service a réussi.
+
 
 ## Disponibilité {#availability}
 
