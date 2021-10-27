@@ -3,7 +3,7 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: adb0aa2812871f6efedd1fb88663170127dc59d4
+source-git-commit: f89fbf4e693fb1b17e8923dfcc6c9b4de92b536d
 workflow-type: tm+mt
 source-wordcount: '1928'
 ht-degree: 32%
@@ -123,10 +123,10 @@ Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au progra
 ### Nouveautés {#what-is-new-screens}
 
 * Screens as a Cloud Service prend désormais en charge la surveillance de lecture de base. Le lecteur signale désormais diverses mesures de lecture pour chaque ping (30 secondes par défaut). Les mesures permettent de détecter différents cas de figure (lecture bloquée, écran vide, problème de time-code, etc.). Cette fonctionnalité permet à l’équipe concernée de surveiller à distance si un lecteur lit correctement du contenu, d’améliorer sa réactivité en cas d’écran vide ou d’interruption d’expérience et de réduire les risques d’offrir une expérience bancale à l’utilisateur final.
-Voir [Surveillance de lecture de base](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) pour plus d’informations.
+Pour plus d’informations, voir [Suivi de base de la lecture](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring).
 
 * Prise en charge des miniatures pour les vidéos dans désormais pris en charge dans Screens as a Cloud Service. Un auteur de contenu peut définir une miniature de vidéos afin de pouvoir utiliser l’image en tant qu’espace réservé et de pouvoir tester correctement la lecture et le ciblage du contenu, alors que l’équipe concernée peut s’occuper de la finalisation de la vidéo elle-même. L’image peut également être utilisée au cas où la lecture de la vidéo échouerait.
-Voir [Prise en charge des miniatures pour les vidéos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html) pour plus d’informations.
+Pour plus d’informations, voir [Prise en charge des miniatures de vidéos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html).
 
 ### Correctifs {#bug-fixes-screens}
 
@@ -156,7 +156,7 @@ Lisez le [documentation](/help/security/configuring-advanced-networking.md) pour
 
 **Optimisations des index**
 
-Pour améliorer les performances des requêtes de recherche et de l’indexation, l’index de texte intégral lucene-2 n’est plus inclus clé en main dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] de cette version. Afin de supprimer cet index de texte intégral sur les environnements AEM conformément aux clients AEM, Adobe Engineering travaille individuellement et de manière proactive avec les clients pour une suppression douce et durable de l’index de texte intégral Lucene. Veuillez consulter le [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [documentation](/help/operations/indexing.md#index-optimizations) pour plus d&#39;informations, contactez directement notre service clientèle si vous avez des questions.
+Pour améliorer les performances des requêtes de recherche et de l’indexation, l’index de texte intégral lucene-2 n’est plus utilisé clé en main dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] de cette version. Afin de supprimer cet index de texte intégral sur les environnements AEM conformément aux clients AEM, Adobe Engineering travaille individuellement et de manière proactive avec les clients pour une suppression douce et durable de l’index de texte intégral Lucene. Veuillez consulter le [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [documentation](/help/operations/indexing.md#index-optimizations) pour plus d&#39;informations, contactez directement notre service clientèle si vous avez des questions.
 
 ## Cloud Manager  {#cloud-manager}
 
