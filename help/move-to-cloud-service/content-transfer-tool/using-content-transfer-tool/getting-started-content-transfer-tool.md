@@ -2,7 +2,7 @@
 title: Prise en main de l’outil de transfert de contenu
 description: Prise en main de l’outil de transfert de contenu
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 6ee0cdc1a2c75bdf91354285c0e21ca618ceeb46
+source-git-commit: 95f65b9be7d8921bfc12980116c00aba21586f41
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 59%
@@ -15,12 +15,9 @@ ht-degree: 59%
 
 L’instance d’AEM source peut se trouver derrière un pare-feu où elle ne peut atteindre que certains hôtes qui ont été ajoutés à une Liste autorisée. Pour réussir l’exécution d’une extraction, les points de terminaison suivants doivent être accessibles à partir de l’instance AEM en cours d’exécution :
 
-* L&#39;environnement as a Cloud Service AEM cible :
-   `author-p<program_id>-e<env_id>.adobeaemcloud.com`
-* Le service de stockage blob Azure :
-   `*.blob.core.windows.net`
-* Point d’entrée User Mapping IO :
-   `usermanagement.adobe.io`
+* L&#39;environnement as a Cloud Service AEM cible : `author-p<program_id>-e<env_id>.adobeaemcloud.com`
+* Le service de stockage blob Azure : `*.blob.core.windows.net`
+* Point d’entrée User Mapping IO : `usermanagement.adobe.io`
 
 Pour tester la connectivité à l’environnement as a Cloud Service AEM cible, lancez la commande cURL suivante à partir du shell de l’instance source (remplacez `program_id`, `environment_id`, et `migration_token`) :
 
