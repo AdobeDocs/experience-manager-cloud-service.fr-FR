@@ -2,10 +2,10 @@
 title: Prise en main de l’outil de transfert de contenu
 description: Prise en main de l’outil de transfert de contenu
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 54ecb65e78b25aed694f00eed99015ef0226f862
+source-git-commit: 4d71cd5f2376d7cf5ea201410890259ae19f2846
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 59%
+source-wordcount: '801'
+ht-degree: 56%
 
 ---
 
@@ -27,13 +27,6 @@ Pour tester la connectivité à l’environnement as a Cloud Service AEM cible, 
 >Si `HTTP/2 200` est reçu, une connexion à AEM as a Cloud Service a réussi.
 
 ## Disponibilité {#availability}
-
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_download"
->title="Télécharger"
->abstract="Il est possible de télécharger l’outil de transfert de contenu dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le module par le biais du gestionnaire de modules sur votre instance source Adobe Experience Manager (AEM). Veillez à télécharger la dernière version."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="Notes de mise à jour"
->additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Portail de distribution de logiciels"
 
 Il est possible de télécharger l’outil de transfert de contenu dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le module par le biais du gestionnaire de modules sur votre instance source Adobe Experience Manager (AEM). Veillez à télécharger la dernière version. Pour plus d’informations sur la dernière version, consultez les [Notes de mise à jour](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=fr).
 
