@@ -2,7 +2,7 @@
 title: Prise en main de l’outil de transfert de contenu
 description: Prise en main de l’outil de transfert de contenu
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 95f65b9be7d8921bfc12980116c00aba21586f41
+source-git-commit: ef699487b40c6f1479e00de99956295b5978e632
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 59%
@@ -22,12 +22,11 @@ L’instance d’AEM source peut se trouver derrière un pare-feu où elle ne pe
 Pour tester la connectivité à l’environnement as a Cloud Service AEM cible, lancez la commande cURL suivante à partir du shell de l’instance source (remplacez `program_id`, `environment_id`, et `migration_token`) :
 
 ```
- curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
+curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
 ```
 
 >[!NOTE]
 >Si `HTTP/2 200` est reçu, une connexion à AEM as a Cloud Service a réussi.
-
 
 ## Disponibilité {#availability}
 
