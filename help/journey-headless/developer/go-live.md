@@ -1,23 +1,23 @@
 ---
 title: Comment mettre en ligne votre application découplée
-description: Dans cette section du Parcours de développement découplé AEM, apprenez à déployer une application découplée en direct en prenant votre code local dans Git et en le déplaçant vers Cloud Manager Git pour le pipeline CI/CD.
-source-git-commit: 8e96827f9353d6ffdf1e01645f2bc8bdaac2610f
+description: Dans cette partie du Parcours de développement découplé AEM, apprenez à déployer une application découplée en direct en prenant votre code local dans Git et en le déplaçant vers le Git Cloud Manager pour le pipeline CI/CD.
+exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
+source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
 workflow-type: ht
 source-wordcount: '1907'
 ht-degree: 100%
 
 ---
 
-
 # Comment mettre en ligne votre application découplée {#go-live}
 
 Dans cette partie du [Parcours de développement découplé AEM](overview.md), apprenez à déployer une application découplée en direct en prenant votre code local dans Git et en le déplaçant vers le Git Cloud Manager pour le pipeline CI/CD.
 
-## Un peu d’histoire... {#story-so-far}
+## Un peu d’histoire...  {#story-so-far}
 
-Dans le document précédent du parcours découplé AEM, [Comment mettre à jour votre contenu grâce aux API de ressources AEM](update-your-content.md) vous avez appris à mettre à jour votre contenu découplé dans AEM à l’aide de l’API et vous devriez maintenant :
+Dans le document précédent du parcours découplé AEM, [Comment mettre à jour votre contenu grâce aux API d’AEM Assets](update-your-content.md) vous avez appris à mettre à jour votre contenu découplé dans AEM à l’aide de l’API et vous devriez maintenant :
 
-* comprendre comment fonctionne l’API HTTP de ressources AEM.
+* comprendre comment fonctionne l’API HTTP d’AEM Assets.
 
 Cet article s’appuie sur ces principes de base pour que vous compreniez comment préparer votre propre projet AEM découplé à être mis en ligne.
 
@@ -62,7 +62,7 @@ Node.js est un environnement d’exécution JavaScript utilisé pour fonctionner
 
 Regardons ensuite les éléments qui constituent un environnement AEM.
 
-Un environnement d’AEM complet est constitué d’un auteur, d’une publication et d’un dispatcher. Ces mêmes composants seront disponibles dans l’exécution de développement local afin de vous permettre de prévisualiser plus facilement votre code et votre contenu avant la mise en ligne.
+Un environnement d’AEM complet est constitué d’un auteur, d’une publication et d’un Dispatcher. Ces mêmes composants seront disponibles dans l’exécution de développement local afin de vous permettre de prévisualiser plus facilement votre code et votre contenu avant la mise en ligne.
 
 * **Le service Auteur** permet aux utilisateurs internes de créer, gérer et prévisualiser du contenu.
 
@@ -175,9 +175,9 @@ Pour consigner efficacement un bogue avec l’assistance si vous avez besoin d�
 * Documentez le contenu à l’origine du problème.
 * Consignez un problème à l’aide du portail d’assistance AEM avec la priorité appropriée.
 
-## Serait-ce la fin de notre voyage ? {#journey-ends}
+## Serait-ce la fin de notre voyage ?  {#journey-ends}
 
-Félicitations ! Vous avez terminé le Parcours de développement découplé AEM. Vous devriez maintenant comprendre les éléments suivants :
+Félicitations ! Vous avez terminé le parcours de développement découplé AEM. Vous devriez maintenant comprendre les éléments suivants :
 
 * La différence entre la diffusion de contenu couplé et découplé
 * Les fonctionnalités découplées AEM
