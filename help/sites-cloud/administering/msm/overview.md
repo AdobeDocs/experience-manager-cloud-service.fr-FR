@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2685'
 ht-degree: 100%
 
@@ -199,7 +199,7 @@ Dans l’exemple précédent, `/content/wknd/language-masters/en` est le site ga
 
 Lorsque vous créez initialement une Live Copy, les pages sources sélectionnées sont reflétées sur une base 1:1 dans la Live Copy. Par la suite, de nouvelles ressources (pages et/ou paragraphes) peuvent également être créées directement dans la Live Copy. Il est donc utile d’être conscient de ces variations et de savoir comment elles affectent la synchronisation. Les compositions possibles sont les suivantes :
 
-* [Live Copy avec des pages non-Live Copy](#live-copy-with-non-live-copy-pages)
+* [Live Copy avec des pages autres que Live Copy](#live-copy-with-non-live-copy-pages)
 * [Live Copies imbriquées](#nested-live-copies)
 
 La forme de base de la Live Copy comprend les éléments suivants :
@@ -276,7 +276,7 @@ Le déploiement est l’action MSM centrale qui synchronise les Live Copies ave
 
 Une configuration de déploiement définit quand et comment une Live Copy est synchronisée avec le contenu source. Une configuration de déploiement consiste en un déclencheur et d’une ou plusieurs actions de synchronisation :
 
-* **Déclencheur** – Un déclencheur est un événement qui provoque la synchronisation d’une action en direct, comme l’activation d’une page source. MSM définit les déclencheurs que vous pouvez utiliser.
+* **Déclencheur**  – Un déclencheur est un événement qui provoque la synchronisation d’une action en direct, comme l’activation d’une page source. MSM définit les déclencheurs que vous pouvez utiliser.
 * **Actions de synchronisation** : les actions de synchronisation sont exécutées sur Live Copy pour la synchroniser avec la source. Par exemple, la copie de contenu, l’organisation de nœuds enfants et l’activation de la page Live Copy sont des actions de synchronisation. MSM propose un certain nombre d’actions de synchronisation.
 
 >[!NOTE]
