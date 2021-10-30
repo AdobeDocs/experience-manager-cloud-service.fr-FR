@@ -5,9 +5,9 @@ feature: Images panoramiques
 role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
 source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '149'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 71%
 
 Cette section décrit comment utiliser la visionneuse d’images panoramiques pour le rendu d’images panoramiques sphériques afin de profiter d’une expérience de visionnage immersive à 360° d’une pièce, d’une propriété, d’un lieu ou d’un paysage.
 
-Voir aussi [Gestion des paramètres prédéfinis de visionneuse](/help/assets/dynamic-media/managing-viewer-presets.md).
+Voir également [Gestion des paramètres prédéfinis de visionneuse](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 ![panoramic-image2](assets/panoramic-image2.png)
 
-## Chargement de ressources à utiliser avec la visionneuse d’images panoramiques {#uploading-assets-for-use-with-the-panoramic-image-viewer}
+## Téléchargement de ressources pour une utilisation avec la visionneuse d’images panoramiques {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
 Pour qu’une ressource téléchargée soit une image panoramique sphérique utilisable avec la visionneuse d’images panoramiques, la ressource doit présenter l’une ou l’autre des caractéristiques suivantes, ou les deux :
 
@@ -31,7 +31,7 @@ Pour qu’une ressource téléchargée soit une image panoramique sphérique uti
 
 Les critères de format et de mots-clés s’appliquent tous deux aux ressources panoramiques pour la page des détails des ressources et le composant WCM `Panoramic Media`.
 
-Pour charger des ressources à utiliser avec la visionneuse d’images panoramiques, voir [Chargement de ressources](/help/assets/manage-digital-assets.md#uploading-assets).
+Pour télécharger des ressources à utiliser avec la visionneuse d’images panoramiques, consultez [Téléchargement de ressources](/help/assets/manage-digital-assets.md#uploading-assets).
 
 <!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 
@@ -76,10 +76,10 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 -->
 
-## Aperçu des images panoramiques {#previewing-panoramic-images}
+## Prévisualisation des images panoramiques {#previewing-panoramic-images}
 
 Voir [Aperçu des ressources](/help/assets/dynamic-media/previewing-assets.md).
 
-## Publication d’images panoramiques {#publishing-panoramic-images}
+## Publication des images panoramiques {#publishing-panoramic-images}
 
 Voir [Publication de ressources](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
