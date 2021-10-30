@@ -3,7 +3,7 @@ title: Composants
 description: Les composants sont le bloc de création fondamental des pages de contenu dans AEM
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '306'
 ht-degree: 100%
 
