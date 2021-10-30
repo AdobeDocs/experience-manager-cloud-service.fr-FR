@@ -1,39 +1,39 @@
 ---
-title: Création et gestion des canaux dans Screens en tant que Cloud Service
-description: Cette page décrit comment créer et gérer des canaux dans Screens en tant que Cloud Service.
+title: Création et gestion des canaux dans Screens as a Cloud Service
+description: Cette page décrit comment créer et gérer des canaux dans Screens as a Cloud Service.
 source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '550'
-ht-degree: 16%
+ht-degree: 100%
 
 ---
 
 
-# Création et gestion d’un canal dans Screens en tant que Cloud Service {#creating-channels-screens-cloud}
+# Création et gestion d’un canal dans Screens as a Cloud Service {#creating-channels-screens-cloud}
 
 Une fois que vous avez créé un projet AEM Screens, vous devez créer des canaux.
-***Canaux*** : affichez une séquence de contenu (images et vidéos), un site web ou une application d’une seule page.
+Les ***canaux*** affichent une séquence de contenu (images et vidéos), un site web ou une application d’une seule page.
 
 ## Objectif {#objective}
 
-Ce document vous aide à comprendre la création et la gestion de canaux pour votre projet AEM Screens dans le fournisseur de contenu Screens. Après lecture, vous devez être :
+Ce document vous aide à comprendre la création et la gestion de canaux pour votre projet AEM Screens dans le fournisseur de contenu Screens. Après lecture, vous devriez être en mesure de :
 
-* Découvrez comment créer des canaux pour le fournisseur de contenu Screens
-* gestion et modification du contenu de vos canaux
+* comprendre comment créer des canaux pour le fournisseur de contenu Screens ;
+* gérer et modifier du contenu dans vos canaux.
 
-## Procédure de création d’un canal de séquence dans Screens en tant que Cloud Service {#create-new-channel}
+## Procédure de création d’un canal de séquence dans Screens as a Cloud Service {#create-new-channel}
 
 >[!NOTE]
 >**Prérequis**
->Avant de commencer cette section du guide, consultez la section [Création et gestion de projets dans Screens en tant que Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
+>Avant de commencer cette section du guide, consultez la section [Création et gestion de projets dans Screens as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
 
-Pour créer un canal de séquence dans Screens en tant que Cloud Service, procédez comme suit :
+Pour créer un canal de séquence dans Screens as a Cloud Service, procédez comme suit :
 
-1. Accédez à Fournisseur de contenu Screens.
+1. Accédez au fournisseur de contenu Screens.
 
 1. Accédez à votre projet AEM Screens, par exemple *FirstDigitalExperience*.
 
-1. Sélectionnez le dossier **Canaux** de votre projet, par exemple **FirstDigitalExperience** —> **Canaux** et cliquez sur **Créer** dans la barre d’actions.
+1. Sélectionnez le dossier **Canaux** de votre projet, par exemple **FirstDigitalExperience** --> **Canaux** et cliquez sur **Créer** dans la barre d’actions.
 
    ![](/help/screens-cloud/assets/create-content/channel-create1.png)
 
@@ -49,13 +49,13 @@ Pour créer un canal de séquence dans Screens en tant que Cloud Service, procé
 
    Un **LoopingChannelOne** apparaît désormais dans le dossier Canaux de votre projet AEM Screens.
 
-   Une fois que vous avez créé le canal, vous pouvez maintenant ajouter du contenu à votre canal. Reportez-vous à la section [Ajout de contenu à un canal](#add-content) pour savoir comment ajouter des ressources (images/vidéos) à votre canal.
+   Une fois que vous avez créé le canal, vous pouvez ajouter du contenu à votre canal. Reportez-vous à la section [Ajout de contenu à un canal](#add-content) pour savoir comment ajouter des ressources (images/vidéos) à votre canal.
 
 ## Gestion d’un canal {#managing-channels}
 
 Vous pouvez modifier, copier, prévisualiser, supprimer un canal, et afficher ses propriétés et son tableau de bord.
 
-Accédez au canal à partir de votre projet et sélectionnez-le, comme illustré dans la figure ci-dessous. Vous pouvez désormais sélectionner les options telles que la modification du canal, l’affichage des propriétés, la prévisualisation du contenu, la gestion de la publication ou la suppression du canal dans la barre d’actions.
+Accédez au canal à partir de votre projet et sélectionnez-le, comme illustré ci-dessous. Dans la barre d’action, vous pouvez désormais sélectionner les options telles que la modification du canal, l’affichage des propriétés, la prévisualisation du contenu, la gestion de la publication ou la suppression du canal.
 
 ![](/help/screens-cloud/assets/create-content/channelprop1.png)
 
@@ -63,11 +63,11 @@ Accédez au canal à partir de votre projet et sélectionnez-le, comme illustré
 
 Pour ajouter du contenu à un canal ou modifier son contenu, suivez les étapes ci-dessous :
 
-1. Sélectionnez le canal à modifier, comme illustré dans la figure ci-dessous. Cliquez sur **Modifier** dans le coin supérieur gauche de la barre d’actions pour ouvrir l’éditeur.
+1. Sélectionnez le canal que vous souhaitez modifier, tel qu’illustré ci-dessous. Cliquez sur **Modifier** dans l’angle supérieur gauche de la barre d’actions pour ouvrir l’éditeur.
 
    ![](/help/screens-cloud/assets/create-content/edit-channel1.png)
 
-1. L’éditeur vous permet d’ajouter à votre canal des ressources/composants que vous souhaitez publier.
+1. L’éditeur vous permet d’ajouter au canal des ressources/composants que vous souhaitez publier.
 
 1. Faites glisser et déposez les ressources à partir du volet de gauche et ajoutez-les à l’éditeur.
 
@@ -79,7 +79,7 @@ Pour ajouter du contenu à un canal ou modifier son contenu, suivez les étapes 
 
 ## Modèles disponibles dans l’assistant de création {#available-templates}
 
-Les modèles suivants sont disponibles lors de l’utilisation de l’assistant de canal **Créer** :
+Les modèles suivants sont disponibles lors de l’utilisation de l’assistant de canal **Créer** :
 
 | Modèles disponibles | Description |
 |--- |--- |
@@ -90,4 +90,4 @@ Les modèles suivants sont disponibles lors de l’utilisation de l’assistant 
 
 ## Et après ? {#whats-next}
 
-Maintenant que vous avez configuré un canal AEM Screens dans votre projet, vous devez publier votre canal. Reportez-vous à [Publication de canaux dans Screens en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/manage-publish.html?lang=en) avant de gérer vos lecteurs à partir du fournisseur de services Screens.
+Maintenant que vous avez configuré un canal AEM Screens dans votre projet, vous devez publier votre canal. Reportez-vous à [Publication de canaux dans Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/manage-publish.html?lang=fr) avant de gérer vos lecteurs à partir du fournisseur de services Screens.
