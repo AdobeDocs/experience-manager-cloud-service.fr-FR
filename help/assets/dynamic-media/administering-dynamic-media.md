@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 role: Admin,User
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '177'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
@@ -27,9 +27,9 @@ ht-degree: 57%
 
 Si vous administrez Dynamic Media, les rubriques suivantes peuvent vous intéresser :
 
-* [Configuration de Dynamic Media](config-dm.md)
+* [Configurez Dynamic Media](config-dm.md)
 * [Gestion des paramètres d’image prédéfinis](managing-image-presets.md)
-* [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md)
+* [Gestion des paramètres de visionneuse prédéfinis](managing-viewer-presets.md)
 * [Résolution des problèmes liés à Dynamic Media](troubleshoot-dm.md)
 
 Voir aussi les rubriques suivantes :
@@ -41,5 +41,5 @@ Voir aussi les rubriques suivantes :
 >
 >**Si vous effectuez une mise à niveau :**
 >
->* Une fois l’Adobe [!DNL Experience Manager] en cours d’exécution, toute ressource que vous chargez est automatiquement activée par Dynamic Media (sauf si l’administrateur système l’a explicitement désactivée). Si vous utilisez une instance mise à niveau de [!DNL Experience Manager] et que vous découvrez Dynamic Media, vous devez probablement retraiter vos ressources pour les rendre compatibles avec Dynamic Media. Voir [Retraiter les ressources dans un dossier](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>* Après la mise en service d’Adobe [!DNL Experience Manager], toutes les ressources que vous chargez sont automatiquement activées pour Dynamic Media (à moins que cela n’ait été explicitement désactivé par votre administrateur système). Si vous utilisez une instance de [!DNL Experience Manager] mise à niveau et que Dynamic Media est nouveau pour vous, vous devrez peut-être retraiter vos ressources pour les rendre compatibles avec Dynamic Media. Voir [Retraitement des ressources dans un dossier](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
