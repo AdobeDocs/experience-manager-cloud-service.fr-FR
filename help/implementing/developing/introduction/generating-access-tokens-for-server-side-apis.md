@@ -3,9 +3,9 @@ title: Génération de jetons d’accès pour les API côté serveur
 description: Découvrez comment faciliter la communication entre un serveur tiers et AEM as a Cloud Service en générant un jeton JWT sécurisé
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 source-git-commit: 89b43e14f35e18393ffab538483121c10f6b5a01
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1250'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Le flux de serveur à serveur est décrit ci-dessous, ainsi qu’un flux simplif
 
 ## Flux de serveur à serveur {#the-server-to-server-flow}
 
-Un utilisateur disposant d’un rôle d’administrateur d’organisation IMS et qui est également membre du profil produit Utilisateurs AEM ou Administrateurs AEM sur l’auteur AEM, peut générer une  en tant qu’informations d’identification de Cloud Service. Ces informations d’identification peuvent ensuite être récupérées par un utilisateur disposant de l’AEM en tant qu’administrateur d’environnement de Cloud Service. Elles doivent être installées sur le serveur et doivent être traitées avec précaution comme une clé secrète. Ce fichier de format JSON contient toutes les données requises pour l’intégration avec une API AEM as a Cloud Service. Les données sont utilisées pour créer un jeton JWT signé, qui est échangé auprès d’IMS contre un jeton d’accès IMS. Ce jeton d’accès peut ensuite être utilisé comme jeton d’authentification du porteur pour adresser des requêtes à AEM as a Cloud Service.
+Un utilisateur disposant d’un rôle d’administrateur d’organisation IMS et qui est également membre du profil produit Utilisateurs AEM ou Administrateurs AEM sur le service de création AEM, peut générer des informations d’identification d’AEM as a Cloud Service. Ces informations d’identification peuvent ensuite être récupérées par un utilisateur disposant du rôle administrateur AEM as a Cloud Service. Elles doivent être installées sur le serveur et doivent être traitées avec précaution comme une clé secrète. Ce fichier de format JSON contient toutes les données requises pour l’intégration avec une API AEM as a Cloud Service. Les données sont utilisées pour créer un jeton JWT signé, qui est échangé auprès d’IMS contre un jeton d’accès IMS. Ce jeton d’accès peut ensuite être utilisé comme jeton d’authentification du porteur pour adresser des requêtes à AEM as a Cloud Service.
 
 Le flux de serveur à serveur comprend les étapes suivantes :
 
@@ -61,7 +61,7 @@ Le résultat ressemble à ce qui suit :
 
 >[!IMPORTANT]
 >
->Un administrateur de l’organisation IMS (généralement le même utilisateur qui a configuré l’environnement via Cloud Manager), qui doit également être membre du profil produit Utilisateurs AEM ou Administrateurs sur l’auteur AEM, doit d’abord accéder à Developer Console et cliquer sur le bouton **Obtenir les informations d’identification du service** afin que les informations d’identification soient générées et récupérées ultérieurement par un utilisateur disposant des autorisations d’administrateur pour l’accès à l’environnement de l’Adobe Experience Platform. Si l’administrateur de l’organisation IMS ne l’a pas fait, un message l’informera que le rôle d’administrateur de l’organisation IMS doit lui être attribué.
+>Un administrateur d’organisation IMS (généralement le même utilisateur ayant configuré l’environnement via Cloud Manager), qui doit également être membre des profils de produit Utilisateurs AEM ou Administrateurs AEM sur l’instance de création AEM, doit d’abord accéder à Developer Console et cliquer sur le bouton **Get Service Credentials** (Obtenir les informations d’identification du service) pour que les informations d’identification soient générées et récupérées ultérieurement par un utilisateur disposant des autorisations d’administrateur de l’environnement AEM as a Cloud Service. Si l’administrateur de l’organisation IMS ne l’a pas fait, un message l’informera que le rôle d’administrateur de l’organisation IMS doit lui être attribué.
 
 ### Installation des informations d’identification de service AEM sur un serveur non AEM {#install-the-aem-service-credentials-on-a-non-aem-server}
 
