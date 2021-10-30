@@ -1,15 +1,15 @@
 ---
-title: Diffusion de ressources Dynamic Media
+title: Diffusion de ressources Dynamic Media
 description: Avec Dynamic Media, vous disposez de plusieurs options pour diffuser vos ressources Dynamic Media (vidéo et images) sur votre site web.
 source-git-commit: 6933f053e11320d8201922723879983084c52209
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '108'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
-# Diffusion de ressources Dynamic Media{#delivering-dynamic-media-assets}
+# Diffusion de ressources Dynamic Media {#delivering-dynamic-media-assets}
 
 La diffusion des ressources Dynamic Media (vidéos et images) dépend de la mise en œuvre de votre site web.
 
@@ -20,5 +20,5 @@ Avec Dynamic Media, vous disposez de plusieurs options :
 
 Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
-* [Ajout de ressources Dynamic Media aux pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+* [Ajout de ressources Dynamic Media aux pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
