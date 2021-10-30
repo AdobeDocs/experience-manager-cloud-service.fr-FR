@@ -2,9 +2,9 @@
 title: En-têtes HTTP personnalisés
 description: Configuration d’en-têtes HTTP personnalisés
 source-git-commit: 81d6c50635813fa106f58b61c5e88560422adc65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '269'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 ## Présentation {#overview}
 
-Pour mieux contrôler leur serveur principal, les auteurs peuvent configurer des en-têtes HTTP personnalisés qui seraient envoyés au moteur de commerce, ainsi que ceux déjà envoyés par CIF. Les cas d’utilisation courants incluent des configurations multi-magasin dans lesquelles vous pouvez utiliser des en-têtes HTTP pour contrôler la réponse du serveur principal Commerce.
+Pour mieux contrôler leur serveur principal, les auteurs peuvent configurer des en-têtes HTTP personnalisés qui seraient envoyés au moteur de commerce, ainsi que ceux déjà envoyés par CIF. Les cas d’utilisation courants incluent des configurations multi-magasin dans lesquelles vous pouvez utiliser des en-têtes HTTP pour contrôler la réponse du serveur principal de commerce.
 
 >[!NOTE]
 >
@@ -22,19 +22,19 @@ Pour mieux contrôler leur serveur principal, les auteurs peuvent configurer des
 
 ## Configuration {#configuration}
 
-Pour configurer les en-têtes HTTP personnalisés, vous devez d’abord les définir. Les en-têtes HTTP personnalisés doivent d’abord être définis en les ajoutant à la configuration de service `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` à l’aide d’une configuration OSGi.
+Pour configurer les en-têtes HTTP personnalisés, vous devez d’abord les définir. Les en-têtes HTTP personnalisés doivent d’abord être définis par le biais de leur ajout à la configuration de service `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` à l’aide d’une configuration OSGi.
 
-Vous pouvez configurer les valeurs des en-têtes HTTP dans la page Configuration du Cloud Service pour votre projet :
+Vous pouvez configurer les valeurs des en-têtes HTTP dans la page Configuration du service cloud pour votre projet :
 
-1. Accédez à la page de configuration du Cloud Service dans Outils -> Cloud Services -> Configuration CIF.
-1. Ouvrir une configuration existante ou en créer une nouvelle
-1. Accédez à l’onglet &quot;Avancé&quot; et recherchez le champ multiple &quot;En-têtes HTTP personnalisés&quot;. Vous pouvez sélectionner les en-têtes que vous avez définis précédemment et leur attribuer des valeurs.
+1. Accédez à la page de configuration du service cloud dans Outils -> Cloud Services -> Configuration CIF.
+1. Ouverture d’une configuration existante ou création d’une nouvelle
+1. Accédez à l’onglet « Avancé » et recherchez le champ multiple « En-têtes HTTP personnalisés ». Vous pouvez sélectionner les en-têtes que vous avez définis précédemment et leur attribuer des valeurs.
 
 Les composants qui utilisent la configuration de service cloud ci-dessus enverront ces en-têtes HTTP avec chaque requête GraphQL.
 
 ## Restrictions {#restrictions}
 
-Bien que le service permette de définir des noms d’en-tête, y compris les noms standard, ils ne sont pas disponibles pour la configuration. En d’autres termes, vous ne pouvez pas remplacer les en-têtes HTTP standard à l’aide de cette fonctionnalité. Vous trouverez une liste de noms d’en-tête restreints [ici](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). En outre, deux en-têtes supplémentaires ne peuvent pas être utilisés :
+Bien que le service permette de définir des noms d’en-tête, y compris les noms standard, ils ne sont pas disponibles pour configuration. En d’autres termes, vous ne pouvez pas remplacer les en-têtes HTTP standard à l’aide de cette fonctionnalité. Vous trouverez une liste de noms d’en-tête restreints [ici](https://developer.mozilla.org/fr-FR/docs/Web/HTTP/Headers). En outre, deux en-têtes supplémentaires ne peuvent pas être utilisés :
 
-* &quot;Magasin&quot; : utilisé par CIF pour identifier le magasin du Magento.
-* &quot;Preview-Version&quot; : utilisé par CIF pour récupérer les produits intermédiaires.
+* « Store » : utilisé par CIF pour identifier la boutique Magento.
+* « Preview-Version » : utilisé par CIF pour récupérer les produits intermédiaires.
