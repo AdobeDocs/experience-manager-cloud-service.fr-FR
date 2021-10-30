@@ -3,7 +3,7 @@ title: Développement de SPA pour AEM
 description: Cet article présente des questions importantes à prendre en compte lorsqu’un développeur front-end doit développer une SPA pour AEM. Il propose un aperçu de l’architecture d’AEM par rapport aux SPA à garder à l’esprit lors du déploiement d’une SPA développée sur AEM.
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2076'
 ht-degree: 100%
 
@@ -54,7 +54,7 @@ Tout routage statique va à l’encontre du [principe de portabilité](#portabil
 
 ## Archétype de projet AEM {#aem-project-archetype}
 
-Un projet AEM doit tirer parti de l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets SPA à l’aide de React ou d’Angular et tire parti du SDK SPA.
+Tout projet AEM doit exploiter l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets SPA à l’aide de React ou d’Angular et utilise le SDK SPA.
 
 ## Modèles de conception de SPA {#spa-design-models}
 
@@ -206,8 +206,8 @@ L’architecture générale d’AEM, y compris les environnements de développem
 ## Étapes suivantes {#next-steps}
 
 * [Prise en main des SPA dans AEM avec React](getting-started-react.md) présente comment créer une SPA de base pour fonctionner avec l’éditeur de SPA dans AEM avec React.
-* [Prise en main des SPA dans AEM avec Angular](getting-started-angular.md) présente comment créer une SPA de base pour fonctionner avec l’éditeur de SPA dans AEM avec Angular.
-* La section [Aperçu de l’éditeur de SPA](editor-overview.md) aborde plus en détail le modèle de communication entre AEM et la SPA.
+* La section [Prise en main des SPA dans AEM avec Angular](getting-started-angular.md) montre comment une SPA de base est créée pour fonctionner avec l’éditeur de SPA dans AEM avec Angular.
+* La section [Présentation de l’éditeur de SPA](editor-overview.md) examine de plus près le modèle de communication entre AEM et la SPA.
 * Le tutoriel [Projet SPA WKND](wknd-tutorial.md) est un tutoriel détaillé qui met en œuvre un projet SPA simple dans AEM.
 * La section [Mappage d’un modèle dynamique sur un composant pour les SPA](model-to-component-mapping.md) explique le mappage d’un modèle dynamique sur un composant et présente son fonctionnement au sein des SPA dans AEM.
 * La section [Plan directeur d’applications sur une seule page (SPA)](blueprint.md) aborde en détail le fonctionnement du SDK SPA pour AEM si vous souhaitez mettre en œuvre des SPA dans AEM pour un framework autre que React ou Angular ou recherchez simplement une compréhension plus approfondie.
