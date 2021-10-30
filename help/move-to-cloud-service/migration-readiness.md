@@ -3,9 +3,9 @@ title: Phase de préparation
 description: Phase de préparation
 exl-id: 987cb929-7871-4fec-8ef5-4d2f5f2f2186
 source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '470'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Pour comprendre ces différences importantes, voir [Modifications notables d’A
 
 Adobe étudie constamment les fonctionnalités du produit de façon à les réinventer au fil du temps ou à remplacer les fonctions plus anciennes par des variantes plus modernes, pour améliorer la valeur client globale, le tout en faisant toujours attention à la compatibilité ascendante.
 
-Pour en savoir plus sur les caractéristiques et les fonctionnalités signalées comme étant obsolètes dans Experience Manager as a Cloud Service, voir [Fonctionnalités obsolètes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features).
+Pour en savoir plus sur les caractéristiques et les fonctionnalités signalées comme étant obsolètes dans Experience Manager as a Cloud Service, voir [Fonctionnalités obsolètes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html?lang=fr#deprecated-features).
 
 ## Présentation de la phase de planification {#introduction}
 
