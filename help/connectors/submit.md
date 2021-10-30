@@ -3,9 +3,9 @@ title: Envoi d’un connecteur AEM
 description: Envoi d’un connecteur AEM
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
 source-git-commit: 4b6d02bc93a904c8ca666d027923fa5df88d1934
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '297'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Dans les solutions AEM précédentes, Package Manager était utilisé pour insta
 Il existe différentes options pour inclure les packages dans un projet :
 
 1. Référentiel public du partenaire : un partenaire héberge le package de contenu dans un référentiel expert accessible au public.
-1. Référentiel protégé par mot de passe du partenaire : un partenaire héberge le package de contenu dans un référentiel Maven protégé par mot de passe. Voir [Référentiels Maven protégés par mot de passe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=en#password-protected-maven-repositories) pour obtenir des instructions.
+1. Référentiel protégé par mot de passe du partenaire : un partenaire héberge le package de contenu dans un référentiel Maven protégé par mot de passe. Pour obtenir des instructions, consultez [Référentiels Maven protégés par mot de passe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=fr#password-protected-maven-repositories).
 1. Artefact assemblé : dans ce cas, le package de connecteur est inclus localement dans le projet expert du client.
 
 Où qu’ils soient hébergés, les packages doivent être référencés en tant que dépendances dans le fichier pom.xml, comme indiqué par le fournisseur.
