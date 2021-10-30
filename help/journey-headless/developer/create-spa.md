@@ -1,19 +1,19 @@
 ---
 title: Facultatif – Comment créer des applications sur une seule page (SPA) avec AEM
 description: Dans cette suite facultative du parcours de développement découplé AEM, vous découvrirez comment AEM peut combiner une diffusion découplée avec des fonctionnalités CMS full stack traditionnelles et comment créer des SPA modifiables à l’aide du cadre de l’éditeur de SPA d’AEM.
-source-git-commit: ddd320ae703225584d4a2055d0f882d238d60987
+exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
+source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
 workflow-type: ht
 source-wordcount: '1273'
 ht-degree: 100%
 
 ---
 
-
 # Comment créer des applications sur une seule page (SPA) avec AEM {#create-spa}
 
 Dans cette suite facultative du [Parcours de développement découplé AEM](overview.md), vous découvrirez comment AEM peut combiner une diffusion découplée avec des fonctionnalités CMS full stack traditionnelles et comment créer des SPA modifiables à l’aide du cadre de l’éditeur de SPA d’AEM et intégrer des SPA externes pour utiliser les fonctionnalités d’édition nécessaires.
 
-## Un peu d’histoire... {#story-so-far}
+## Un peu d’histoire...  {#story-so-far}
 
 À ce stade, vous devriez avoir terminé l’ensemble du [Parcours de développement découplé AEM](overview.md) et comprendre les principes de base de la diffusion découplée dans AEM, ainsi que les éléments suivants :
 
@@ -26,20 +26,20 @@ Dans cette suite facultative du [Parcours de développement découplé AEM](over
 
 Vous avez donc soit mis en ligne avec votre premier projet découplé AEM, soit vous disposez de toutes les connaissances nécessaires pour le faire. Félicitations !
 
-Alors pourquoi lire cette section supplémentaire et facultative du parcours ? Vous vous souvenez sans doute que dans la section [Prise en main](getting-started.md#integration-levels), nous avons brièvement expliqué comment AEM prend non seulement en charge la diffusion découplée et les modèles de pile complète traditionnels mais peut également prendre en charge des modèles hybrides qui combinent les avantages des deux. Bien qu’il ne s’agisse pas de modèles découplés classiques, de tels modèles hybrides peuvent offrir une flexibilité sans précédent à certains projets.
+Alors pourquoi lire cette section supplémentaire et facultative du parcours ? Vous vous souvenez sans doute que dans la section [Prise en main](getting-started.md#integration-levels), nous avons brièvement expliqué comment AEM prend non seulement en charge la diffusion découplée et les modèles de pile complète traditionnels, mais peut également prendre en charge des modèles hybrides qui combinent les avantages des deux. Bien qu’il ne s’agisse pas de modèles découplés classiques, de tels modèles hybrides peuvent offrir une flexibilité sans précédent à certains projets.
 
-Cet article s’appuie sur vos connaissances d’AEM découplé en explorant en profondeur la manière dont vous pouvez créer vos propres applications sur une seule page (SPA) qui sont en fait modifiables dans Adobe. Vous pouvez ainsi créer du contenu et le diffuser intégralement vers une SPA, mais cette SPA reste modifiable dans AEM.
+Cet article s’appuie sur vos connaissances du découplage AEM en explorant en profondeur la manière dont vous pouvez créer vos propres applications d’une seule page (SPA) qui sont en fait modifiables dans Adobe. Vous pouvez ainsi créer du contenu et le diffuser intégralement vers une SPA, mais cette SPA reste modifiable dans AEM.
 
 ## Objectif {#objective}
 
-Ce document vous aide à comprendre comment les applications sur une seule page sont développées à l’aide du cadre de l’éditeur de SPA AEM. Après avoir lu ce document, vous devriez :
+Ce document vous aide à comprendre comment les applications d’une seule page sont développées à l’aide du cadre de l’éditeur de SPA AEM. Après avoir lu ce document, vous devriez :
 
 * comprendre la fonction de base de l’éditeur de SPA ;
 * connaître les exigences relatives à la création d’une SPA entièrement modifiable pour AEM ;
 * comprendre comment les SPA externes peuvent être intégrées à AEM ;
 * comprendre comment le rendu côté serveur doit ou ne doit pas être implémenté.
 
-## Configuration requise et conditions préalables {#requirements-prerequisites}
+## Exigences et conditions préalables {#requirements-prerequisites}
 
 Avant de commencer à travailler avec des SPA dans AEM, plusieurs conditions sont requises.
 
@@ -56,7 +56,7 @@ Avant de commencer à travailler avec des SPA dans AEM, plusieurs conditions son
 * SPA externe existante (facultatif, selon le modèle d’intégration choisi)
 * Archétype de projet AEM
 
-## Qu’est-ce qu’une SPA ? {#what-is-a-spa}
+## Qu’est-ce qu’une SPA ?  {#what-is-a-spa}
 
 Une application sur une seule page (SPA) diffère d’une page conventionnelle en cela qu’elle est rendue côté client et qu’elle est principalement pilotée par JavaScript, en utilisant les appels Ajax pour charger les données et mettre la page à jour dynamiquement. La plupart ou la totalité du contenu est récupérée une fois au chargement d’une seule page avec des ressources supplémentaires chargées de manière asynchrone, selon les besoins, en fonction de l’interaction de l’utilisateur avec la page.
 
@@ -64,7 +64,7 @@ Cela limite la nécessité d’actualiser la page et offre à l’utilisateur un
 
 L’éditeur de SPA AEM permet aux développeurs front-end de créer des SPA qui peuvent être intégrées à un site AEM, ce qui permet aux créateurs de contenu de modifier le contenu SPA aussi facilement qu’un autre contenu AEM.
 
-## Pourquoi une SPA ? {#why-spa}
+## Pourquoi une SPA ?  {#why-spa}
 
 Plus rapide, fluide et ressemblant davantage à une application native, une SPA, de par son fonctionnement, offre une expérience très attrayante, non seulement pour le visiteur de la page web, mais aussi pour les spécialistes du marketing et les développeurs.
 
@@ -101,7 +101,7 @@ Le composant RemotePage permet le rendu d’une SPA externe dans AEM.
 
 Pour une description complète de la manière de rendre les SPA externes modifiables dans AEM, consultez la section [Ressources supplémentaires](#additional-resources) pour obtenir des liens vers une documentation plus détaillée.
 
-## Prochaines étapes {#what-is-next}
+## Et après ? {#what-is-next}
 
 Pour commencer à développer votre propre SPA pour AEM, consultez les documents suivants :
 
