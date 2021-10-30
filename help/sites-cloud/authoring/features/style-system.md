@@ -3,9 +3,9 @@ title: Système de style
 description: Le système de style permet à un auteur de modèles de définir des classes de style dans la stratégie de contenu d’un composant, de façon à pouvoir sélectionner ces classes lors de la modification du composant sur une page. Ces styles peuvent être des variantes visuelles d’un composant, le rendant ainsi plus flexible.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1327'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Le diagramme suivant illustre l’architecture du système de style.
 
 ## Utilisez {#use}
 
-Pour démontrer la fonctionnalité, nous utiliserons comme exemple l’implémentation de [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), [composant de titre](https://www.adobe.com/go/aem_cmp_title_v2_fr) des composants principaux.
+Pour démontrer la fonctionnalité, nous utiliserons comme exemple l’implémentation de [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr), [composant de titre](https://www.adobe.com/go/aem_cmp_title_v2_fr) des composants principaux.
 
 Les sections suivantes, [En tant qu’auteur de contenu](#as-a-content-author) et [En tant qu’auteur de modèles](#as-a-template-author), décrivent comment tester les fonctionnalités du système de style à l’aide du système de style de WKND.
 
