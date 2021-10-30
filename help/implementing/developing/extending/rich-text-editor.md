@@ -4,9 +4,9 @@ description: Configurez l’éditeur de texte enrichi pour créer du contenu dan
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1964'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -99,16 +99,16 @@ Le tableau ci-dessous répertorie les modules externes actuels et indique les in
 | [format](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | `bold`, `italic`, `underline` | [Mise en forme textuelle de base](configure-rich-text-editor-plug-ins.md#textstyles). |
 | [image](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | `image` | Prise en charge de base des images (faire glisser à partir du contenu ou de l’outil de recherche de contenu). Selon le navigateur, la prise en charge présente différents comportements pour les auteurs |
 | [keys](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) | - | Pour définir cette valeur, voir [taille de tabulation](configure-rich-text-editor-plug-ins.md#tabsize). |
-| [justify](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | `justifyleft`,  `justifycenter`,  `justifyright` | Alignement de paragraphe. |
-| [links](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | `modifylink`,  `unlink`,  `anchor` | [Liens hypertextes et ancres](configure-rich-text-editor-plug-ins.md#linkstyles). |
+| [justify](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | `justifyleft`, `justifycenter`, `justifyright` | Alignement de paragraphe. |
+| [links](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | `modifylink`, `unlink`, `anchor` | [Liens hypertextes et ancres](configure-rich-text-editor-plug-ins.md#linkstyles). |
 | [lists](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | `ordered`, `unordered`, `indent`, `outdent` | Ce module externe contrôle à la fois la [mise en retrait et les listes](configure-rich-text-editor-plug-ins.md#indentmargin), y compris les listes imbriquées. |
-| [misctools](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | `specialchars`,  `sourceedit` | Divers outils permettent aux auteurs de saisir des [caractères spéciaux](configure-rich-text-editor-plug-ins.md#spchar) ou de modifier la source HTML. En outre, vous pouvez ajouter une [gamme de caractères spéciaux](configure-rich-text-editor-plug-ins.md#definerangechar) si vous voulez définir votre propre liste. |
+| [misctools](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | `specialchars`, `sourceedit` | Divers outils permettent aux auteurs de saisir des [caractères spéciaux](configure-rich-text-editor-plug-ins.md#spchar) ou de modifier la source HTML. En outre, vous pouvez ajouter une [gamme de caractères spéciaux](configure-rich-text-editor-plug-ins.md#definerangechar) si vous voulez définir votre propre liste. |
 | Paraformat | `paraformat` | Les formats de paragraphe par défaut sont : Paragraphe, En-tête 1, En-tête 2 et En-tête 3 (`<p>`, `<h1>`, `<h2>` et `<h3>`). Vous pouvez [ajouter davantage de formats de paragraphe](configure-rich-text-editor-plug-ins.md#paraformats) ou prolonger la liste. |
 | spellcheck | `checktext` | [Vérificateur orthographique sensible à la langue](configure-rich-text-editor-plug-ins.md#adddict). |
 | styles | `styles` | Prise en charge de l’application d’un style en utilisant une classe CSS. [Ajoutez de nouveaux styles de texte](configure-rich-text-editor-plug-ins.md#textstyles) si vous voulez ajouter (ou étendre) votre propre gamme de styles utilisables avec du texte. |
-| subsuperscript | `subscript`,  `superscript` | Extensions des formats de base, en ajoutant l’indice et l’exposant. |
+| subsuperscript | `subscript`, `superscript` | Extensions des formats de base, en ajoutant l’indice et l’exposant. |
 | table | `table`, `removetable`, `insertrow`, `removerow`, `insertcolumn`, `removecolumn`, `cellprops`, `mergecells`, `splitcell`, `selectrow`, `selectcolumns` | Voir [Configuration des styles de tableau](configure-rich-text-editor-plug-ins.md#tablestyles) afin d’ajouter vos propres styles pour des tableaux entiers ou des cellules individuelles. |
-| undo | `undo`,  `redo` | Taille de l’historique des opérations [d’annulation et de rétablissement](configure-rich-text-editor-plug-ins.md#undohistory). |
+| undo | `undo`, `redo` | Taille de l’historique des opérations [d’annulation et de rétablissement](configure-rich-text-editor-plug-ins.md#undohistory). |
 
 >[!NOTE]
 >
@@ -154,7 +154,7 @@ Pour consulter des configurations détaillées des modules externes de l’édit
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-Le [composant textuel Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) permet aux éditeurs de modèle de configurer de nombreux modules externes de l’éditeur de texte enrichi en tant que stratégies de contenu dans l’interface utilisateur, rendant ainsi inutile toute configuration technique. Les stratégies de contenu peuvent fonctionner avec les configurations d’interface utilisateur de l’éditeur de texte enrichi décrites dans ce document. Pour plus d’informations, voir [Création de modèles de page](/help/sites-cloud/authoring/features/templates.md) ainsi que la [Documentation destinée aux développeurs relatifs aux composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
+Le [composant textuel Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=fr#the-text-component-and-the-rich-text-editor) permet aux éditeurs de modèle de configurer de nombreux modules externes de l’éditeur de texte enrichi en tant que stratégies de contenu dans l’interface utilisateur, rendant ainsi inutile toute configuration technique. Les stratégies de contenu peuvent fonctionner avec les configurations d’interface utilisateur de l’éditeur de texte enrichi décrites dans ce document. Pour plus d’informations, voir [Création de modèles de page](/help/sites-cloud/authoring/features/templates.md) ainsi que la [Documentation destinée aux développeurs relatifs aux composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=fr).
 
 >À titre de référence, les composants Texte par défaut (fournis dans le cadre d’une installation standard) se trouvent sous :
 >
@@ -230,7 +230,7 @@ Les options disponibles dans l’éditeur de texte enrichi sont transmises depui
 * Si un élément a été supprimé ou n’est pas activé par la configuration d’interface utilisateur de l’éditeur de texte enrichi, la stratégie de contenu ne peut pas le configurer.
 * Un auteur n’a accès à une fonctionnalité de ce type que si elle est mise à sa disposition par les configurations de l’interface utilisateur et les stratégies de contenu.
 
-Pour consulter un exemple, reportez-vous à la [documentation du composant principal Texte](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
+Pour consulter un exemple, reportez-vous à la [documentation du composant principal Texte](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=fr#the-text-component-and-the-rich-text-editor).
 
 ## Personnalisation de l’association entre les commandes et les icônes de la barre d’outils {#iconstoolbar}
 
@@ -265,7 +265,7 @@ Vous trouverez, ci-dessous, un exemple de fragment de code pour associer la comm
 
 ## Limitations connues {#known-limitations}
 
-[!DNL Experience Manager]Les fonctionnalités de l’éditeur de texte enrichi présentent les limites suivantes :
+Les fonctionnalités de l’éditeur de texte enrichi de [!DNL Experience Manager] présentent les limites suivantes :
 
 * Les fonctionnalités de l’éditeur de texte enrichi sont prises en charge uniquement dans les boîtes de dialogue des composants [!DNL Experience Manager]. L’éditeur de texte enrichi n’est pas pris en charge dans les assistants ni les formulaires Foundation.
 
@@ -284,6 +284,6 @@ Vous trouverez, ci-dessous, un exemple de fragment de code pour associer la comm
 >[!MORELIKETHIS]
 >
 >* [Configuration des modules externes d’éditeur de texte enrichi](configure-rich-text-editor-plug-ins.md)
-* [Utilisation de l’éditeur de texte enrichi pour la création](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
-* [Configuration de l’éditeur de texte enrichi pour les sites accessibles](rte-accessible-content.md)
+>* [Utilisation de l’éditeur de texte enrichi pour la création](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
+>* [Configuration de l’éditeur de texte enrichi pour les sites accessibles](rte-accessible-content.md)
 
