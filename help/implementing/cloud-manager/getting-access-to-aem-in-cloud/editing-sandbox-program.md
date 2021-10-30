@@ -3,9 +3,9 @@ title: 'Modification d’un programme Sandbox '
 description: Modification d’un programme Sandbox
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '257'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Pour modifier un programme Sandbox, procédez comme suit :
    >[!NOTE]
    >Au moins une solution doit être sélectionnée pour un programme, ce qui signifie que l’utilisateur ne sera pas autorisé à désélectionner toutes les solutions pendant le processus de modification du programme.
 
-1. Cliquez sur **Mettre à jour** pour terminer le processus de modification du programme.
+1. Cliquez sur **Mettre à jour** pour terminer le workflow de modification du programme.
 
 
 ## Considérations relatives à la modification d’un programme {#considerations-editing}
