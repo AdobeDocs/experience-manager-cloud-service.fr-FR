@@ -4,7 +4,7 @@ description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service 
 feature: Informations sur la version
 exl-id: 8ae3cf2f-1865-427a-b612-bdf56e2f0304
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '379'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ Cette page présente les notes de mise à jour de Cloud Manager dans AEM as a Cl
 
 ## Date de publication {#release-date}
 
-La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.5.0 est le 6 mai 2021.
+La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.5.0 est le 6 mai 2021.
 
 ### Nouveautés {#what-is-new}
 
@@ -47,10 +47,10 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.5.0 est
 
 * Au lieu de supprimer des variables marquées comme « deleted », l’API des variables de pipelines se contentait de les marquer avec le statut **DELETED**.
 
-* Certains problèmes de qualité de type Smell de code affectaient de façon incorrecte la note de fiabilité.
+* Certains problèmes de qualité de type Code Smell (conception inappropriée du logiciel) affectaient incorrectement l’évaluation de fiabilité.
 
 * Comme les domaines génériques ne sont pas pris en charge, l’interface utilisateur ne permet pas à l’utilisateur d’envoyer un domaine de caractères génériques.
 
-* Lorsqu’une exécution de pipeline était lancée entre minuit et 1h du matin (UTC), il n’était pas garanti que la version d’artefact générée par Cloud Manager était supérieure à une version créée le jour précédent.
+* Lorsqu’une exécution de pipeline était lancée entre minuit et 1 h du matin (UTC), il n’était pas garanti que la version d’artefact générée par Cloud Manager était supérieure à une version créée le jour précédent.
 
 * Lors de la configuration du programme Sandbox, une fois que le projet doté d’un exemple de code a été créé, Gérer Git s’affiche sous la forme d’un lien à partir de la carte principale de la page Aperçu.
