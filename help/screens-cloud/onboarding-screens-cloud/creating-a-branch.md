@@ -1,10 +1,10 @@
 ---
-title: Création d'une branche
-description: Cette page décrit la création d’une branche dans Cloud Manager pour Screens en tant que Cloud Service.
+title: Création d’une branche
+description: Cette page décrit la création d’une branche dans Cloud Manager pour Screens as a Cloud Service.
 source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '226'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 3%
 Cette section décrit comment créer une branche pour votre programme dans Cloud Manager.
 
 >[!NOTE]
->Reportez-vous à [Utilisation de l’assistant dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/using-the-wizard.html?lang=en) pour savoir comment créer un projet d’application AEM dans Cloud Manager à l’aide de l’assistant.
+>Reportez-vous à [Utilisation de l’assistant dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/using-the-wizard.html?lang=fr) pour savoir comment créer un projet d’application AEM dans Cloud Manager à l’aide de l’assistant.
 
 ## Objectif {#objective}
 
@@ -22,7 +22,7 @@ La section suivante décrit comment créer une branche pour votre programme dans
 
 ## Procédure de création d’une branche pour votre projet Screens dans Cloud Manager {#steps-branch-creation}
 
-1. Accédez à Cloud Manager et sélectionnez l’icône pour accéder à la page Aperçu de Cloud Manager .
+1. Accédez à Cloud Manager et sélectionnez l’icône pour accéder à la page Aperçu de Cloud Manager.
 
 1. Cliquez sur **Créer** pour créer votre branche et votre projet.
 
@@ -32,7 +32,7 @@ La section suivante décrit comment créer une branche pour votre programme dans
 
    ![image](/help/screens-cloud/assets/onboarding/create-branch2.png)
 
-1. La carte d’appel à l’action s’affiche sur la page **Aperçu** de Cloud Manager ; elle met à jour l’état en tant que création de projet en cours.
+1. La carte d’appel à l’action s’affiche sur la page **Aperçu** de Cloud Manager ; elle met à jour l’état en tant que création de projet en cours.
 
    ![image](/help/screens-cloud/assets/onboarding/create-branch3.png)
 
@@ -42,4 +42,4 @@ La section suivante décrit comment créer une branche pour votre programme dans
 
 ## Et après ? {#whats-next}
 
-Une fois que vous avez appris à créer une branche pour votre projet dans Cloud Manager, vous êtes prêt à passer à l’étape suivante du processus d’intégration : [Création et configuration de l’environnement](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md).
+Une fois que vous avez appris à créer une branche pour votre projet dans Cloud Manager, vous êtes prêt à passer à l’étape suivante du processus d’intégration : [Création et configuration de l’environnement](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md).
