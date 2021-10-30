@@ -3,9 +3,9 @@ title: Notes de mise à jour de la version 2020.7.0 d’ [!DNL Adobe Experience
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.7.0.
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
 source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1038'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Les connecteurs [!DNL Experience Manager] as a Cloud Service pour [!DNL Adobe Ta
 
 * Une nouvelle implémentation de l’interface utilisateur remplace l’implémentation basée sur l’interface utilisateur classique.
 
-* Simplification des boîtes de dialogue de l’interface utilisateur, attribuant la création de framework pour le mappage des variables et d’autres configurations à [!DNL Adobe Launch]. Voir [Intégration d’Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) et [Intégration d’Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html).
+* Simplification des boîtes de dialogue de l’interface utilisateur, attribuant la création de framework pour le mappage des variables et d’autres configurations à [!DNL Adobe Launch]. Voir [Intégration d’Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html?lang=fr) et [Intégration d’Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html?lang=fr).
 
 * Les configurations sont désormais stockées dans `/conf` plutôt que `/etc/cloudsettings` dans le référentiel Experience Manager.
 
@@ -55,7 +55,7 @@ Les connecteurs [!DNL Experience Manager] as a Cloud Service pour [!DNL Adobe Ta
 
 AEM Commerce est désormais disponible dans Cloud Service.
 
-Pour plus d’informations, reportez-vous à [Prise en main d’AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html).
+Pour plus d’informations, reportez-vous à [Prise en main d’AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=fr).
 
 ## Composants principaux {#core-components}
 
@@ -137,7 +137,7 @@ Suivez cette section pour en savoir plus sur les nouveautés et les mises à jou
 
 * La version antérieure de CRA ne pouvait pas s’exécuter sur Adobe Experience Manager (AEM) 6.1. Nous avons ajouté la prise en charge explicite de l’autorisation des utilisateurs dans le groupe d’administrateurs.
 
-   Voir [Installation de CRA sur AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) pour plus d’informations.
+   Voir [Installation de CRA sur AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=fr#installing-on-aem61) pour plus d’informations.
 
 * L’horodatage d’expiration affiché sur le rapport résumé était incorrect.
 
