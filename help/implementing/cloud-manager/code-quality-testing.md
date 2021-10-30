@@ -3,7 +3,7 @@ title: Test de qualité du code – Cloud Services
 description: Test de qualité du code – Cloud Services
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 source-git-commit: 64023bbdccd8d173b15e3984d0af5bb59a2c1447
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '869'
 ht-degree: 100%
 
