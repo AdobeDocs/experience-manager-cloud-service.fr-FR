@@ -3,9 +3,9 @@ title: Notes de mise à jour de la version 2020.9.0 d’ [!DNL Adobe Experience
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service pour la version 2020.9.0.
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '724'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ La section suivante présente les notes de mise à jour générales d’[!DNL Ex
 
 ## Date de publication {#release-date}
 
-La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.9.0 est le jeudi 24 septembre 2020.
+La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.9.0 est le 24 septembre 2020.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
@@ -23,7 +23,7 @@ La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service ve
 
 * Le SDK JavaScript de l’éditeur d’application sur une seule page (SPA) [est désormais en source libre.](/help/implementing/developing/hybrid/reference-materials.md)
 
-## [!DNL Adobe Experience Manager Assets] en tant que Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### Nouveautés d’[!DNL Assets]  {#what-is-new-assets}
 
@@ -34,7 +34,7 @@ La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service ve
    * Publication sélective : il est désormais possible pour une équipe marketing d’accéder à des images de recadrage intelligent [!DNL Dynamic Media] et à des rendus dynamiques synchronisés avec [!DNL Dynamic Media] afin de pouvoir créer des supports promotionnels, le tout sans avoir à publier ces ressources sur [!DNL Dynamic Media] pour une diffusion globale. La publication [!DNL Experience Manager] et [!DNL Dynamic Media] est découplée et peut se produire séparément à cette fin. Voir [Publication sélective](/help/assets/dynamic-media/selective-publishing.md).
    * Les administrateurs peuvent désormais réinitialiser le mot de passe de [!DNL Dynamic Media] Cloud Service reçu lors de l’approvisionnement. La réinitialisation peut être effectuée dans l’interface utilisateur de [!DNL Experience Manager], sans qu’il soit nécessaire d’utiliser l’application de bureau [!DNL Dynamic Media Classic].
 
-* Pour en savoir plus sur les améliorations suivantes, voir [Nouveautés de Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
+* Pour en savoir plus sur les améliorations suivantes, voir [Nouveautés de Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=fr).
 
    * Aperçu PDF amélioré avec l’intégration du SDK Adobe Document Cloud View.
    * Fonction de téléchargement en un clic.
