@@ -3,9 +3,9 @@ title: 'Mise en veille et réactivation d’environnements Sandbox '
 description: Mise en veille et réactivation d’environnements Sandbox
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '859'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ La mise en veille peut se produire automatiquement ou manuellement. Les environn
 
 La veille est classée comme suit :
 
-* ****  Les environnements de programme d’environnement de test automatique sont automatiquement mis en veille après huit heures d’inactivité, ce qui signifie que ni les services de création, ni de prévisualisation ni de publication ne reçoivent de requêtes.
+* **Automatique** : les environnements de programme Sandbox sont automatiquement mis en veille après huit heures d’inactivité, ce qui signifie que ni les services de création ni les services d’aperçu et de publication ne reçoivent de requêtes.
 
 * **Manuelle** : en tant qu’utilisateur, vous pouvez manuellement mettre en veille un environnement de programme Sandbox, bien qu’il n’y ait aucune obligation de le faire, car le passage en veille se produit automatiquement après une certaine période (huit heures) d’inactivité.
 
@@ -74,7 +74,7 @@ Consultez [Accès à Developer Console](/help/implementing/cloud-manager/manage-
    >L’établissement d’un lien vers **Developer Console** directement à partir de Cloud Manager ne vous permet pas de réactiver un environnement de programme Sandbox. Pour contourner ce problème, dans Developer Console, ajoutez le motif suivant à la fin de l’URL : `#release-cm-p1234-e5678 where 1234` 1234 correspond à votre *ID de programme* et 5678 à votre *ID d’environnement*.
 
    >[!NOTE]
-   >Vous pouvez également accéder à **Developer Console** pour réactiver en essayant d’accéder au service de création, de prévisualisation ou de publication d’un environnement déjà mis en veille. dans ce cas, une page d’entrée s’affiche avec un lien vers Developer Console. Reportez-vous à la section Accès à un environnement mis en veille ci-dessous.
+   >Vous pouvez également accéder à **Developer Console** pour réactiver en essayant d’accéder au service de création, d’aperçu ou de publication d’un environnement déjà mis en veille ; dans ce cas, une page d’entrée s’affiche avec un lien vers Developer Console. Reportez-vous à la section Accès à un environnement mis en veille ci-dessous.
 
    >[!IMPORTANT]
    >L’accès à Developer Console est défini par le **rôle Cloud Manager – Développeur** dans **Admin Console**. Un utilisateur disposant d’une autorisation de rôle de développeur peut réactiver un environnement de programme Sandbox.
@@ -108,7 +108,7 @@ Tout utilisateur disposant d’un profil de produit qui lui donne accès à AEM 
 
 ## Accès à un environnement mis en veille {#accessing-hibernated-environment}
 
-Lors d’une requête de navigateur au niveau de création, de prévisualisation ou de publication d’un environnement en veille, l’utilisateur rencontre une page d’entrée décrivant l’état de mise en veille de l’environnement, comme illustré dans la figure ci-dessous :
+Dans le cadre d’une requête de navigateur par rapport au niveau de création, d’aperçu ou de publication d’un environnement mis en veille, l’utilisateur rencontre une page d’entrée décrivant le statut de mise en veille de l’environnement, comme indiqué dans la figure ci-dessous :
 
 ![](assets/de-hibernation-img5.png)
 
