@@ -2,9 +2,9 @@
 title: Conversion d’une configuration AMS en configuration de Dispatcher Adobe Experience Manager as a Cloud Service
 description: Conversion d’une configuration AMS en configuration de Dispatcher Adobe Experience Manager as a Cloud Service
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1340'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 Cette section contient des instructions étape par étape pour convertir une configuration AMS.
 
 >[!NOTE]
->Elle suppose que vous disposiez d’une archive possédant une structure similaire à celle décrite dans [Gestion des configurations du Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html).
+>Elle suppose que vous disposiez d’une archive possédant une structure similaire à celle décrite dans [Gestion des configurations du Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html?lang=fr).
 
 ## Étapes de conversion d’une configuration AMS en configuration de Dispatcher Adobe Experience Manager (AEM) as a Cloud Service
 
