@@ -3,7 +3,7 @@ title: Plan directeur d’applications sur une seule page (SPA)
 description: Ce document décrit le contrat général et indépendant du framework que tout framework de SPA devrait respecter afin de mettre en œuvre des composants de SPA modifiables dans AEM.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2056'
 ht-degree: 100%
 
@@ -173,6 +173,7 @@ Par exemple :
 >
 >* `"new section"` : indique que l’élément en cours est l’espace réservé du conteneur.
 >* `"aem-Grid-newComponent"` : normalise le composant pour la création de dispositions.
+
 >
 
 
