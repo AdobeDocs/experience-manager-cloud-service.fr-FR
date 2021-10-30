@@ -1,10 +1,10 @@
 ---
-title: Création d'une branche
-description: Cette page décrit la création d’une branche dans Cloud Manager pour Screens en tant que Cloud Service.
+title: Création d’une branche
+description: Cette page décrit la création d’une branche dans Cloud Manager pour Screens as a Cloud Service.
 source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '206'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 2%
 Cette section décrit comment créer un environnement pour votre programme dans Cloud Manager.
 
 >[!NOTE]
->Reportez-vous à [Gestion des environnements dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en) pour savoir comment l’utilisateur peut créer un environnement.
+>Reportez-vous à [Gestion des environnements dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=fr) pour savoir comment l’utilisateur peut créer un environnement.
 
 ## Objectif {#objective}
 
@@ -26,7 +26,7 @@ Une fois la création du projet terminée, la mise à jour de la carte d’appel
 
 1. Accédez à Cloud Manager et sélectionnez l’icône pour accéder à la page **Aperçu** de Cloud Manager.
 
-1. Cliquez sur **Ajouter un environnement** sur la page **Aperçu** de Cloud Manager.
+1. Cliquez sur **Ajouter un environnement** à partir de la page **Aperçu** de Cloud Manager.
 
    ![image](/help/screens-cloud/assets/onboarding/add-environ1.png)
 
@@ -34,11 +34,11 @@ Une fois la création du projet terminée, la mise à jour de la carte d’appel
 
    ![image](/help/screens-cloud/assets/onboarding/add-environ2.png)
 
-1. Une fois l’ajout d’une étape d’environnement terminé, la carte d’appel à l’action est mise à jour, comme illustré dans la figure ci-dessous.
+1. Une fois l’ajout d’une étape d’environnement terminé, la carte d’appel à l’action est mise à jour, comme illustré dans l’image ci-dessous.
 
    ![image](/help/screens-cloud/assets/onboarding/add-environ3a.png)
 
 ## Et après ? {#whats-next}
 
-Une fois que vous avez appris à configurer un environnement pour votre programme dans Cloud Manager, vous êtes prêt à passer à l’étape suivante du processus d’intégration : [Exécution du pipeline](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).
+Une fois que vous avez appris à configurer un environnement pour votre programme dans Cloud Manager, vous êtes prêt à passer à l’étape suivante du processus d’intégration : [Exécution du pipeline](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).
 
