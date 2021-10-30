@@ -6,9 +6,9 @@ feature: Métadonnées
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
 source-git-commit: 7ea0e6c2d277199fc5216aab70e587bd23ac6baa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1061'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -107,7 +107,7 @@ Pour modifier les propriétés d’éléments de formulaire, appuyez/cliquez sur
 
 **[!UICONTROL Associer à la propriété]** : cette propriété spécifie le chemin d’accès relatif au nœud de dossier dans le référentiel CRX où il est enregistré. Elle commence par « **./** », ce qui indique que le chemin est situé sous le nœud du dossier.
 
-Voici des exemples de valeurs valides pour une propriété :
+Voici des exemples de valeurs valides pour une propriété :
 
 * `./jcr:content/metadata/dc:title` : stocke la valeur dans le nœud de métadonnées du dossier en tant que propriété `dc:title`.
 
