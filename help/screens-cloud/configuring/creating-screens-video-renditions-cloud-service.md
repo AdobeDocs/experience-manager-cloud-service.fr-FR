@@ -1,33 +1,33 @@
 ---
-title: Création de rendus vidéo dans Screens en tant que Cloud Service
-description: Cette page décrit comment créer des rendus vidéo dans Screens en tant que Cloud Service.
+title: Création de rendus vidéo dans Screens as a Cloud Service
+description: Cette page décrit comment créer des rendus vidéo dans Screens as a Cloud Service.
 source-git-commit: e24c368811f0c3e61dc0a48c32ef7368f5fc00f5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '346'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Création de rendus vidéo dans Screens en tant que Cloud Service {#creating-screens-video-renditions}
+# Création de rendus vidéo dans Screens as a Cloud Service {#creating-screens-video-renditions}
 
 ## Présentation {#introduction}
 
 Cette section décrit comment créer des rendus vidéo utilisés dans les lecteurs Screens.
 
 >[!IMPORTANT]
->Les étapes mises en évidence dans cette section doivent être configurées si vous envisagez d’utiliser des vidéos dans les canaux Screens.
+>Si vous envisagez d’utiliser des vidéos dans les canaux Screen, les étapes mises en évidence dans cette section doivent être configurées.
 
-## Procédure de création de rendus vidéo dans Screens en tant que Cloud Service {#steps-creating-screens-video-renditions}
+## Procédure de création de rendus vidéo dans Screens as a Cloud Service {#steps-creating-screens-video-renditions}
 
-Pour créer des rendus vidéo dans Screens en tant que Cloud Service à partir du fournisseur de contenu Screens, procédez comme suit :
+Pour créer des rendus vidéo dans Screens as a Cloud Service à partir du fournisseur de contenu Screens, procédez comme suit :
 
 1. Accédez à votre canal dans le fournisseur de contenu Screens.
 
    >[!NOTE]
-   >Pour plus d’informations, voir [Utilisation du fournisseur de contenu Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) .
+   >Pour plus d’informations, voir [Utilisation du fournisseur de contenu Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=fr#screens-content-provider).
 
-1. Cliquez sur la section Outils de la barre de navigation de gauche, puis sur **Ressources** et cliquez sur **Profils de traitement**.
+1. Cliquez sur la section Outils de la barre de navigation de gauche, puis sur **Ressources** et sur **Profils de traitement**.
 
    ![](/help/screens-cloud/assets/configure/screens-cp-3.png)
 
@@ -43,15 +43,15 @@ Pour créer des rendus vidéo dans Screens en tant que Cloud Service à partir d
 
    ![](/help/screens-cloud/assets/configure/screens-video-4a.png)
 
-1. Saisissez le **Nom de codage** tel que , **screens-fullhd** et le **Débit** **2500**.
+1. Saisissez le **Nom de codage** tel que, **screens-fullhd** et le **Débit** **2500**.
 
    ![](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
-   >Veillez à utiliser le nom du codage commençant par &quot;screens-&quot;. Seuls ces rendus vidéo seront considérés comme pouvant lire l’expérience vidéo dans Screens en tant que Cloud Service. Saisissez le débit qui fonctionne avec vos vidéos (2 500 Kbit/s pour une vidéo de 720 px et 5 000 Kbit/s pour une vidéo de 1 080 px).
+   >Veillez à utiliser le nom du codage commençant par « screens- ». Seuls ces rendus vidéo seront considérés comme pouvant lire l’expérience vidéo dans Screens as a Cloud Service. Saisissez le débit qui fonctionne avec vos vidéos (2 500 Kbit/s pour une vidéo de 720 px et 5 000 Kbit/s pour une vidéo de 1 080 px).
 
    >[!NOTE]
-   >Vous pouvez ajouter plusieurs rendus vidéo avec des valeurs de largeur/hauteur/débit/débit variables pour utiliser vos vidéos. N’oubliez pas que tous les rendus Screens seront téléchargés par les appareils Screens, même si l’appareil ne lit que le rendu vidéo.
+   >Vous pouvez ajouter plusieurs rendus vidéo avec des valeurs de largeur/hauteur/débit variables pour utiliser vos vidéos. N’oubliez pas que tous les rendus Screens seront téléchargés par les appareils Screens, même si l’appareil ne lit que le rendu vidéo.
 
 1. Cliquez sur **Enregistrer**.
 
