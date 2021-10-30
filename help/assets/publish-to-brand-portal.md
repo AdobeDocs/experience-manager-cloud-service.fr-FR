@@ -6,9 +6,9 @@ feature: Brand Portal,Distribution de ressources,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
 source-git-commit: 13ea0161771776f23d3789adfb8487df06a7e4b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1158'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -184,7 +184,7 @@ Vous pouvez publier des collections ou en annuler la publication à partir de vo
 
 >[!NOTE]
 >
->Les fragments de contenu ne peuvent pas être publiés sur Brand Portal. Par conséquent, si vous sélectionnez un ou plusieurs fragments de contenu dans Assets AEM, l’action **[!UICONTROL Publier sur Brand Portal]** n’est pas disponible.
+>Les fragments de contenu ne peuvent pas être publiés sur Brand Portal. Par conséquent, si vous sélectionnez un ou plusieurs fragments de contenu dans AEM Assets, l’action **[!UICONTROL Publier sur Brand Portal]** n’est pas disponible.
 >
 >Si des collections contenant des fragments de contenu sont publiées sur Brand Portal à partir d’AEM Assets, alors tout le contenu du dossier, à l’exception des fragments de contenu, est répliqué sur l’interface Brand Portal.
 
@@ -226,11 +226,11 @@ Vous trouverez ci-dessous les étapes d’annulation de la publication d’une c
 
 Outre ce qui précède, vous pouvez également publier des schémas de métadonnées, des paramètres d’image prédéfinis, des facettes de recherche et des balises d’AEM Assets sur Brand Portal.
 
-* [Publication de paramètres prédéfinis, de schémas et de facettes sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
-* [Publication de balises sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+* [Publication de paramètres prédéfinis, de schémas et de facettes sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html?lang=fr)
+* [Publication de balises sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html?lang=fr)
 
 
-Pour plus d’informations, voir [Publication de balises sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html).
+Pour plus d’informations, voir [Publication de balises sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=fr).
 
 
 <!--
