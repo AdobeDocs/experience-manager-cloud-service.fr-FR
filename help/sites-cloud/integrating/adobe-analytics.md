@@ -2,9 +2,9 @@
 title: 'Intégration à Adobe Analytics '
 description: 'Intégration à Adobe Analytics '
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '545'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -25,14 +25,14 @@ Les données incluent les données sur les pages et sur l’utilisateur, par exe
 
 Les pages répertoriées ci-dessous peuvent vous aider à configurer l’intégration. Il est à noter qu’Experience Platform Launch constitue de facto l’outil par défaut pour instrumenter un site AEM avec des fonctionnalités Analytics (bibliothèques JS). Par conséquent, l’intégration d’AEM as a Cloud Service avec Launch et Adobe Analytics se fait de pair.
 
-* [Connexion à Adobe Analytics et création de frameworks](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-connect.html) : notez que les « frameworks Analytics » sont hérités d’AEM et que leur création ne fonctionne pas dans AEM as a Cloud Service, car elle requiert l’interface utilisateur classique. L’utilisation d’Experience Platform Launch doit être privilégiée, à la fois pour le mappage des variables et pour le déploiement des bibliothèques JS sur les pages.
-* [Intégrer Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
+* [Connexion à Adobe Analytics et création de frameworks](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-connect.html?lang=fr) : notez que les « frameworks Analytics » sont hérités d’AEM et que leur création ne fonctionne pas dans AEM as a Cloud Service, car elle requiert l’interface utilisateur classique. L’utilisation d’Experience Platform Launch doit être privilégiée, à la fois pour le mappage des variables et pour le déploiement des bibliothèques JS sur les pages.
+* [Intégrer Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html?lang=fr)
 * [Intégration d’AEM à Adobe Launch par le biais d’Adobe I/O](https://helpx.adobe.com/fr/experience-manager/using/aem_launch_adobeio_integration.html)
 * [Présentation de l’intégration d’AEM à Experience Platform Launch, Analytics et Target](https://helpx.adobe.com/fr/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
-* [Configuration du suivi des liens pour Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-link.html)
-* [Mise en correspondance des données de composant avec les propriétés Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-mapping.html)
-* [Configuration du suivi vidéo pour Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-video.html)
-* [Classifications Adobe](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-classifications.html)
+* [Configuration du suivi des liens pour Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-link.html?lang=fr)
+* [Mise en correspondance des données de composant avec les propriétés Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-mapping.html?lang=fr)
+* [Configuration du suivi vidéo pour Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-video.html?lang=fr)
+* [Classifications Adobe](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-classifications.html?lang=fr)
 
 >[!CAUTION]
 >
@@ -46,12 +46,12 @@ Les pages répertoriées ci-dessous peuvent vous aider à configurer l’intégr
 
 Voir :
 
-* [Extension de l’intégration à Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-analytics/extending-analytics.html) pour plus d’informations sur le développement de composants qui collectent des données utilisateur et la personnalisation de la structure d’Adobe Analytics. Notez que les « frameworks Analytics » sont hérités d’AEM et que leur création ne fonctionne pas dans AEM as a Cloud Service, car ils requièrent l’interface utilisateur Classic. L’utilisation d’Experience Platform Launch doit être privilégiée, à la fois pour le mappage des variables et pour le déploiement des bibliothèques JS sur les pages.
-* L’article de la base de connaissances, [Intégration Adobe Analytics : résolution des incidents ](https://helpx.adobe.com/fr/experience-manager/kb/sitecatalystintegrationtroubleshooting.html) pour plus d’informations concernant le dépannage de votre intégration Adobe Analytics.
+* [Extension de l’intégration à Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-analytics/extending-analytics.html?lang=fr) pour plus d’informations sur le développement de composants qui collectent des données utilisateur et la personnalisation de la structure d’Adobe Analytics. Notez que les « frameworks Analytics » sont hérités d’AEM et que leur création ne fonctionne pas dans AEM as a Cloud Service, car ils requièrent l’interface utilisateur Classic. L’utilisation d’Experience Platform Launch doit être privilégiée, à la fois pour le mappage des variables et pour le déploiement des bibliothèques JS sur les pages.
+* L’article de la base de connaissances, [Intégration Adobe Analytics : résolution des incidents](https://helpx.adobe.com/fr/experience-manager/kb/sitecatalystintegrationtroubleshooting.html) pour plus d’informations concernant le dépannage de votre intégration Adobe Analytics.
 
 >[!NOTE]
 >
->Si vous utilisez Adobe Analytics avec une configuration de proxy personnalisée, vous devez [configurer deux lots OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html) (par exemple, avec la console web) requis pour les configurations de proxy **Apache HTTP Client**. Les deux lots sont requis, car certaines fonctionnalités d’AEM utilisent les API 3.x, tandis que d’autres utilisent les API 4.x. Configurer :
+>Si vous utilisez Adobe Analytics avec une configuration de proxy personnalisée, vous devez [configurer deux lots OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html?lang=fr) (par exemple, avec la console web) requis pour les configurations de proxy **Apache HTTP Client**. Les deux lots sont requis, car certaines fonctionnalités d’AEM utilisent les API 3.x, tandis que d’autres utilisent les API 4.x. Configurer :
 >
 >* **Day Commons HTTP Client 3.1** pour configurer l’API 3.x ;
    >  par exemple, [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
