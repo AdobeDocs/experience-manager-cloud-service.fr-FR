@@ -2,9 +2,9 @@
 title: Accès au fournisseur de services Screens
 description: Cette page décrit comment accéder au fournisseur de services Screens.
 source-git-commit: e856724c678195d632461c9dc99dcf1bfd1c79a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '220'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
@@ -13,25 +13,25 @@ ht-degree: 2%
 
 ## Présentation {#introduction}
 
-**Le fournisseur de services Screens** permet à l’auteur, aux développeurs et aux administrateurs de contenu de gérer les affichages et les lecteurs pour la lecture du contenu une fois le contenu ajouté aux canaux. Une fois que les utilisateurs ont accès à AEM Cloud Service, ils doivent pouvoir se connecter au fournisseur de services Screens.
+**Le fournisseur de services Screens** permet à l’auteur, aux développeurs et aux administrateurs de contenu de gérer les affichages et les lecteurs pour la lecture de contenu une fois le contenu ajouté aux canaux. Une fois que les utilisateurs ont accès à AEM Cloud Service, ils doivent pouvoir se connecter au fournisseur de services Screens.
 
 Cette section décrit comment configurer le fournisseur de services Screens.
 
 
 ## Objectif {#objective}
 
-La section suivante explique comment configurer et configurer le fournisseur de services Screens.
+La section suivante explique comment configurer le fournisseur de services Screens.
 
 ## Procédure de configuration du fournisseur de services Screens {#screens-services-provider}
 
-Suivez les étapes ci-dessous pour configurer le fournisseur de services Screens :
+Suivez les étapes ci-dessous pour configurer le fournisseur de services Screens :
 
-1. Accédez à Fournisseur de services Screens à partir de [ici](https://experience.adobe.com/screens).
+1. Accédez au fournisseur de services Screens [ici](https://experience.adobe.com/screens).
 
    >[!CAUTION]
    >Si vous avez accès à plusieurs organisations, veillez à vous être connecté à la bonne organisation. Pour modifier votre organisation, cliquez sur le nom de l’organisation dans le coin supérieur droit de l’écran et sélectionnez l’organisation à laquelle vous avez besoin d’accéder.
 
-1. Sélectionnez **Canaux** dans la barre de navigation de gauche et cliquez sur **ouvrir dans le fournisseur de contenu**.
+1. Sélectionnez **Canaux** dans la barre de navigation de gauche et cliquez sur **Ouvrir dans le fournisseur de contenu**.
 
    ![image](/help/screens-cloud/assets/configure/configure-screens1.png)
 
@@ -41,5 +41,5 @@ Suivez les étapes ci-dessous pour configurer le fournisseur de services Screens
 
 ## Et après ? {#whats-next}
 
-Une fois que vous avez appris à configurer le fournisseur de services Screens, accédez à [Utilisation du fournisseur de contenu Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end) pour plus d’informations.
+Une fois que vous avez appris à configurer le fournisseur de services Screens, accédez à [Utilisation du fournisseur de contenu Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=fr) pour plus d’informations.
 
