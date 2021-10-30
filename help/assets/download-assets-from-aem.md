@@ -6,9 +6,9 @@ feature: Gestion des ressources
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 source-git-commit: 1d7148e71e5a145a8dc62782e5f4dfb65e2a816b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1025'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -70,11 +70,11 @@ Pour télécharger des ressources, procédez comme suit :
 
 >[!NOTE]
 >
->Cette fonctionnalité est disponible dans le canal de version préliminaire du Experience Manager.
+>Cette fonctionnalité est disponible dans le canal de version préliminaire d’Experience Manager.
 
-Le partage de ressources à l’aide d’un lien est un moyen pratique de le mettre à la disposition des personnes intéressées sans avoir à se connecter au préalable à [!DNL Assets]. Pour générer une URL permettant de partager des ressources, utilisez la fonction [Partage de liens](/help/assets/share-assets.md#sharelink).
+Le partage de ressources au moyen d’un lien est très pratique pour le mettre à disposition des personnes intéressées sans avoir besoin de se connecter au préalable à [!DNL Assets]. Pour générer une URL permettant de partager des ressources, utilisez la fonction [Partage de liens](/help/assets/share-assets.md#sharelink).
 
-Lorsque les utilisateurs téléchargent des ressources à partir de liens partagés, [!DNL Assets] utilise un service asynchrone qui offre des téléchargements plus rapides et ininterrompus. Les ressources à télécharger sont placées en file d’attente en arrière-plan dans une boîte de réception dans les archives ZIP de taille de fichier gérable. Pour les téléchargements très volumineux, le téléchargement est divisé en fichiers de 100 Go.
+Lorsque les utilisateurs téléchargent des ressources à partir de liens partagés, [!DNL Assets] utilise un service asynchrone qui offre des téléchargements plus rapides et ininterrompus. Les ressources à télécharger sont placées en file d’attente en arrière-plan dans une boîte de réception dans les archives ZIP de taille de fichier gérable. Pour les téléchargements très volumineux, le téléchargement est divisé en fichiers de 100 Go.
 
 La boîte de réception affiche l’état du traitement de chaque archive. Une fois le traitement terminé, vous pouvez télécharger les archives à partir de la boîte de réception.
 
@@ -109,6 +109,6 @@ Si vous n’avez pas besoin de la fonctionnalité de téléchargement, désactiv
 >[!MORELIKETHIS]
 >
 >* [Téléchargement de ressources protégées par DRM](drm.md)
-* [Téléchargement de ressources à l’aide de l’appli de bureau Experience Manager sur un poste de travail Windows ou Mac](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr)
-* [Téléchargement de ressources à l’aide d’Adobe Assets Link depuis les applications Adobe Creative Cloud prises en charge](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [Téléchargement de ressources à l’aide de l’appli de bureau Experience Manager sur un poste de travail Windows ou Mac](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr)
+>* [Téléchargement de ressources à l’aide d’Adobe Assets Link depuis les applications Adobe Creative Cloud prises en charge](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
