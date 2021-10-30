@@ -3,7 +3,7 @@ title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service versio
 description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.2.0
 exl-id: 281f9523-dec2-44f1-9459-5a45d48489d9
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '388'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.2.0 est
 
 ### Nouveautés {#what-is-new}
 
-* Les clients Assets peuvent désormais choisir quand et où déployer leur instance de Brand Portal en libre-service via l’interface utilisateur de Cloud Manager. Pour un programme standard (autre que l’environnement de test - Sandbox) avec la solution Assets, Brand Portal peut désormais être mis en service sur l’environnement de production. L’approvisionnement ne peut être effectué qu’une seule fois sur l’environnement de production.
+* Les clients Assets peuvent désormais choisir quand et où déployer leur instance de Brand Portal en libre-service via l’interface utilisateur de Cloud Manager. Pour un programme standard (autre que l’environnement de test – Sandbox) avec la solution Assets, Brand Portal peut désormais être mis en service sur l’environnement de production. L’approvisionnement ne peut être effectué qu’une seule fois sur l’environnement de production.
 
 * L’archétype de projet AEM utilisé dans la création de projet et de sandbox a été mis à jour à la version 25.
 
