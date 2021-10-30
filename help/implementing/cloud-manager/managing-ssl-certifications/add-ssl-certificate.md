@@ -3,9 +3,9 @@ title: Ajout d’un certificat SSL – Gestion des certificats SSL
 description: Ajout d’un certificat SSL – Gestion des certificats SSL
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 source-git-commit: 3b4a9d7c04a5f4feecad0f34c27a894c187152e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Procédez comme suit pour convertir le format de vos fichiers SSL au format PEM�
 
 * Un utilisateur doit avoir le rôle Propriétaire de l’entreprise ou Responsable du déploiement pour pouvoir installer un certificat SSL dans Cloud Manager.
 
-* À tout moment, Cloud Manager autorise un maximum de 10 certificats SSL qui peuvent être associés à un ou plusieurs environnements sur l’ensemble de votre programme, même si un certificat a expiré. L’interface utilisateur de Cloud Manager permet toutefois d’installer jusqu’à 50 certificats SSL dans le programme avec cette contrainte. En règle générale, un certificat peut couvrir plusieurs domaines (jusqu’à 100 SAN). Par conséquent, envisagez de regrouper plusieurs domaines dans le même certificat afin de respecter cette limite.
+* À tout moment, Cloud Manager autorise un maximum de 10 certificats SSL qui peuvent être associés à un ou plusieurs environnements sur l’ensemble de votre programme, même si un certificat a expiré. L’interface utilisateur de Cloud Manager permet toutefois d’installer jusqu’à 50 certificats SSL dans le programme avec cette contrainte. En règle générale, un certificat peut couvrir plusieurs domaines (jusqu’à 100 SAN). Par conséquent, envisagez de regrouper plusieurs domaines dans le même certificat afin de respecter cette limite.
 
 
 ## Ajout d’un certificat {#adding-a-cert}
@@ -88,4 +88,4 @@ Vous pouvez vérifier que la clé privée et le certificat `main/server` corresp
 
 ### Dates de validité du certificat {#certificate-validity-dates}
 
-Cloud Manager s’attend à ce que le certificat SSL soit valide pendant au moins 90 jours à l’avenir. Vérifiez la validité de la chaîne de certificats.
+Cloud Manager s’attend à ce que le certificat SSL soit valide pendant au moins 90 jours à l’avenir. Vérifiez la validité de la chaîne de certificats.
