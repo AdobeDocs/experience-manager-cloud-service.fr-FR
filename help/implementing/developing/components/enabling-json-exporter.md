@@ -3,9 +3,9 @@ title: Activation de l’exportateur JSON pour un composant
 description: Les composants peuvent être adaptés pour générer l’exportation JSON de leur contenu en fonction d’un framework de modeleur.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
 source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '478'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Il faut d’abord définir un modèle Sling pour le composant.
 
 >[!NOTE]
 >
->Pour obtenir un exemple d’utilisation des modèles Sling, consultez l’article sur le [développement d’exportateurs de modèles Sling dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
+>Pour obtenir un exemple d’utilisation des modèles Sling, consultez l’article sur le [développement d’exportateurs de modèles Sling dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=fr).
 
 La classe de mise en œuvre des modèles Sling doit être annotée comme suit :
 
@@ -81,4 +81,4 @@ Pour plus d’informations, voir :
 * [Fragments de contenu dans le guide de l’utilisateur d’Assets](/help/assets/content-fragments/content-fragments.md)
 * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
 * [Création à l’aide de fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) et [composant Fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+* [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et [composant Fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr)
