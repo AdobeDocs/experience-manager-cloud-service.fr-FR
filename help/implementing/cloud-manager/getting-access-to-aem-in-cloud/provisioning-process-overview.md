@@ -2,7 +2,7 @@
 title: Processus de configuration - Présentation
 description: Processus de configuration - Présentation
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '340'
 ht-degree: 100%
 
