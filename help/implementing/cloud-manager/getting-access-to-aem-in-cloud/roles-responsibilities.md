@@ -2,7 +2,7 @@
 title: Rôles et responsabilités
 description: Rôles et responsabilités
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '500'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Adobe fournit un ensemble de services concernant la configuration, le développe
 | Configuration | Configuration du réseau | Contributeur | Propriétaire | Conseiller | Oui |
 | Configuration | Configuration de la sécurité de l’environnement et des réseaux | Contributeur | Propriétaire | Conseiller | Oui |
 | Développement et assurance qualité | Configuration et personnalisation de l’application | Contributeur | Propriétaire |  |  |
-| Développement et assurance qualité | Configuration et personnalisation - réglage spécifique | Contributeur | Propriétaire |  |  |
+| Développement et assurance qualité | Configuration et personnalisation – réglage spécifique | Contributeur | Propriétaire |  |  |
 | Développement et assurance qualité | Test des cas d’utilisation de la configuration et de la personnalisation | Contributeur | Propriétaire |  |  |
 | Développement et assurance qualité | Test de bout en bout de la configuration et de la personnalisation | Contributeur | Propriétaire |  |  |
 | Développement et assurance qualité | Analyse et test de qualité du code | Contributeur | Propriétaire | Conseiller | Oui |
