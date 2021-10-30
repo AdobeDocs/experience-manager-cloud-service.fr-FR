@@ -3,13 +3,13 @@ title: Notes de mise à jour de la version 2021.3.0 d’ [!DNL Adobe Experience
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2021.3.0.
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
 source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1318'
 ht-degree: 100%
 
 ---
 
-# Notes de mise à jour actuelles pour[!DNL Adobe Experience Manager]as a Cloud Service {#release-notes}
+# Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La section suivante concerne les notes de mise à jour générales de la version actuelle (la plus récente) d’[!DNL Experience Manager] as a Cloud Service.
 
@@ -58,7 +58,7 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 * Les propriétés des métadonnées de dossier peuvent être définies et enregistrées à partir du menu contextuel dans la page Propriétés d’un dossier. Bien que la sélection soit enregistrée dans le référentiel, elle ne s’affiche pas lorsque les propriétés des métadonnées de dossier sont à nouveau ouvertes. (CQ-4314429)
 * Les ressources dont le nom de fichier contient des espaces ou des caractères spéciaux sont chargées à l’aide du navigateur. (CQ-4318381)
 
-## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
+## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 AEM Forms a aidé de nombreuses entreprises à produire de superbes expériences d’intégration et d’inscription au cours des années. Ces expériences ont permis à ces entreprises de convertir des prospects en ventes, de traiter des données client capturées, de fournir des expériences réactives en fonction du profil d’audience, etc. Désormais, AEM Forms est disponible en tant que service cloud.
 
