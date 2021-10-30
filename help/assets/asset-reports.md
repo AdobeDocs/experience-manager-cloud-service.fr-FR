@@ -6,7 +6,7 @@ feature: Rapports de ressources, Gestion des ressources
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '872'
 ht-degree: 100%
 
@@ -105,7 +105,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
    Cliquez sur **[!UICONTROL Télécharger]** dans la barre d’outils pour télécharger le rapport au format CSV.
 
-## Ajout de colonnes personnalisées aux rapports {#add-custom-columns}
+## Ajout de colonnes personnalisées  aux rapports {#add-custom-columns}
 
 Vous pouvez ajouter des colonnes personnalisées aux rapports suivants pour afficher davantage de données en fonction de vos besoins :
 
