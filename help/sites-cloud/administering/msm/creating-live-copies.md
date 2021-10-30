@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4277'
 ht-degree: 100%
 
@@ -68,7 +68,7 @@ Pour créer une configuration de plan directeur :
 
 1. L’option **Créer** crée la configuration de plan directeur selon votre spécification.
 
-### Modification ou suppression d’une configuration de plan directeur Localement{#editing-or-deleting-a-blueprint-configuration}
+### Modification ou suppression d’une configuration de plan directeur  Localement{#editing-or-deleting-a-blueprint-configuration}
 
 Vous pouvez modifier ou supprimer une configuration de plan directeur existante :
 
