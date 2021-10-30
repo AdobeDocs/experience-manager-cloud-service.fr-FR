@@ -3,9 +3,9 @@ title: Modifications notables apportées au module complémentaire CIF (Commerce
 description: Modifications notables de Commerce Integration Framework (CIF) par rapport aux anciennes versions de CIF.
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32,c136763f-56aa-450e-8796-bc84bf6c205d
 source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '447'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Le point d’entrée est configuré et mis à jour via l’interface utilisateur
 
 ## Déploiement du projet CIF Venia
 
-Projet disponible dans le [référentiel Git de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) et déploiement effectué via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr)
+Projet disponible dans le [référentiel Git de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html?lang=fr) et déploiement effectué via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr)
 
 **Versions CIF précédentes**
 
