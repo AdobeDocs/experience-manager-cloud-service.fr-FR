@@ -3,7 +3,7 @@ title: Utilisation de l’assistant
 description: Utilisation de l’assistant – Cloud Services
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '146'
 ht-degree: 100%
 
