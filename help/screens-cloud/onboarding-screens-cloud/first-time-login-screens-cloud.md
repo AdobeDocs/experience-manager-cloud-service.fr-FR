@@ -1,15 +1,15 @@
 ---
-title: Première connexion à Screens en tant que Cloud Service
-description: Cette page décrit les premières étapes de la prise en main de Screens en tant que Cloud Service.
+title: Première connexion à Screens as a Cloud Service
+description: Cette page décrit les premières étapes de la prise en main de Screens as a Cloud Service.
 source-git-commit: 70730784bf58c57f51d7e9a6e17788861a95d726
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '204'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
-# Première connexion à Screens en tant que Cloud Service {#first-time-login-screens-cloud}
+# Première connexion à Screens as a Cloud Service {#first-time-login-screens-cloud}
 
 
 ## Processus d’intégration {#onboarding-process}
@@ -18,11 +18,11 @@ Après avoir signé le contrat, Adobe Managed Services (AMS) lance l’intégrat
 
 ## Ajout d’utilisateurs à Adobe Admin Console {#admin-console}
 
-Une fois que vous avez reçu l’identifiant d’organisation Adobe Identity Management System (IMS), vous pouvez accéder à [Adobe Admin Console](https://adminconsole.adobe.com/). Pour en savoir plus sur l’ajout d’utilisateurs au Admin Console, voir [Utilisateurs Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html) .
+Une fois que vous avez reçu l’identifiant d’organisation Adobe Identity Management System (IMS), vous pouvez accéder à [Adobe Admin Console](https://adminconsole.adobe.com/). Pour en savoir plus sur l’ajout d’utilisateurs à Admin Console, voir [Utilisateurs Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/users.ug.html).
 
 >[!NOTE]
->Les utilisateurs ont accès au profil de produit Cloud Service AEM afin de pouvoir se connecter à AEM à l’aide d’Adobe ID ou de Federated ID.
+>Les utilisateurs ont accès au profil de produit AEM Cloud Service afin de pouvoir se connecter à AEM à l’aide d’Adobe ID ou de Federated ID.
 
 ## Et après ? {#whats-next}
 
-Maintenant que vous disposez d’un identifiant d’organisation IMS et que vous avez ajouté en tant qu’utilisateur à Adobe Admin Console, vous pouvez ajouter Screens en tant que [module complémentaire à un nouveau programme](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) ou à [un programme existant](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md) dans Cloud Manager.
+Maintenant que vous disposez d’un identifiant d’organisation IMS et que vous l’avez ajouté en tant qu’utilisateur à Adobe Admin Console, vous pouvez ajouter Screens en tant que [module complémentaire à un nouveau programme](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) ou à [un programme existant](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md) dans Cloud Manager.
