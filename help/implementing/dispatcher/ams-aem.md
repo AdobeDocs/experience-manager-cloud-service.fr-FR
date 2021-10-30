@@ -1,15 +1,15 @@
 ---
-title: Migration de la configuration de Dispatcher d’AMS vers AEM en tant que Cloud Service
-description: 'Migration de la configuration de Dispatcher d’AMS vers AEM en tant que Cloud Service '
+title: Migration de la configuration Dispatcher d’AMS vers AEM as a Cloud Service
+description: 'Migration de la configuration Dispatcher d’AMS vers AEM as a Cloud Service '
 feature: Dispatcher
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1447'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Migration de la configuration de Dispatcher d’AMS vers AEM en tant que Cloud Service {#Dispatcher-in-the-cloud}
+# Migration de la configuration Dispatcher d’AMS vers AEM as a Cloud Service {#Dispatcher-in-the-cloud}
 
 ## Principales différences entre AMS Dispatcher et AEM as a Cloud Service {#main-differences-between-ams-dispatcher-configuration-and-aem-as-a-cloud-service}
 
@@ -26,7 +26,7 @@ La structure de configuration Dispatcher présente des différences entre Manage
 ## Comment convertir une configuration Dispatcher AMS en configuration AEM as a Cloud Service
 
 La section suivante fournit des instructions étape par étape pour convertir une configuration AMS. Elle suppose
-que vous disposez d’une archive avec une structure similaire à celle décrite dans la [configuration Dispatcher Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html).
+que vous disposez d’une archive avec une structure similaire à celle décrite dans la [configuration Dispatcher Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html?lang=fr).
 
 ### Extraire l’archive et supprimer tout préfixe
 
