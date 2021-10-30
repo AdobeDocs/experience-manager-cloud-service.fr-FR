@@ -3,9 +3,9 @@ title: Documents de référence SPA
 description: Aperçu des références d’API d’application sur une seule page et des référentiels de code source
 exl-id: c1cc2bd8-8ff1-406c-a0ce-0af001d66b53
 source-git-commit: cde8552925a6b0ceb2c30694f127233b05dcc73c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '138'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
