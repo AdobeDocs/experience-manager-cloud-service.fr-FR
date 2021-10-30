@@ -3,7 +3,7 @@ title: Plug-in Maven Content Package d’Adobe
 description: Utilisation du plug-in Maven Content Package pour déployer des applications AEM
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1847'
 ht-degree: 100%
 
@@ -121,7 +121,7 @@ En plus des paramètres suivants, consultez les descriptions de la section [Para
 | `artifact` | `String` | Non | Valeur de la propriété `artifactId` du projet Maven | Chaîne au format `groupId:artifactId:version[:packaging]` |
 | `artifactId` | `String` | Non | Aucune | ID de l’artefact à installer. |
 | `groupId` | `String` | Non | Aucune | `groupId` de l’artefact à installer |
-| `install` | `boolean` | Non | `true` | Détermine si le module doit être décompressé automatiquement lorsqu’il est téléchargé |
+| `install` | `boolean` | Non | `true` | Détermine si le module doit être décompressé automatiquement lorsqu’il est chargé |
 | `localRepository` | `org.apache.maven.artifact.repository.ArtifactRepository` | Non | Valeur de la variable système `localRepository` | Référentiel Maven local qui ne peut pas appliquer la configuration du plug-in car la propriété système est toujours utilisée |
 | `packageFile` | `java.io.File` | Non | artefact principal défini pour le projet Maven | Nom du fichier de module à installer |
 | `packaging` | `String` | Non | `zip` | Type de groupement de l’artefact à installer. |
@@ -265,4 +265,4 @@ Le dernier archétype de projet AEM met en œuvre la structure d’ensemble des 
 
 >[!TIP]
 >
->Pour plus d’informations, consultez l’article [Structure de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) dans les documentations AEM as a Cloud Service et [Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html). Les deux implémentations sont entièrement prises en charge pour AEM 6.5.
+>Pour plus d’informations, consultez l’article [Structure de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr) dans les documentations AEM as a Cloud Service et [Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr). Les deux implémentations sont entièrement prises en charge pour AEM 6.5.
