@@ -4,9 +4,9 @@ description: Validation et débogage à l’aide des outils Dispatcher (hérité
 feature: Dispatcher
 hidefromtoc: true
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2305'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -15,22 +15,22 @@ ht-degree: 74%
 ## Présentation {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->Pour plus d’informations sur Dispatcher en mode cloud et sur le téléchargement des outils Dispatcher, voir la page [Dispatcher dans la page Cloud](/help/implementing/dispatcher/disp-overview.md) .
+>Pour plus d’informations sur Dispatcher en mode cloud et sur le téléchargement des outils Dispatcher, consulter la page [Dispatcher en mode cloud](/help/implementing/dispatcher/disp-overview.md).
 
 Les sections suivantes décrivent la structure de fichiers du mode hérité, la validation locale, le débogage et la migration du mode hérité vers le [mode flexible](/help/implementing/dispatcher/validation-debug.md).
 
-Cet article suppose que la configuration du Dispatcher de votre projet n’inclut pas le fichier opt-in/USE_SOURCES_DIRECTLY. Par conséquent, il présente des limitations quant au nombre et à la taille des fichiers, telles que :
+Cet article suppose que la configuration du Dispatcher de votre projet n’inclut pas le fichier opt-in/USE_SOURCES_DIRECTLY. Par conséquent, il présente des limitations quant au nombre et à la taille des fichiers, tel que :
 
-* un seul fichier de réécriture qui doit être utilisé plutôt que des fichiers spécifiques au site.
-* la somme du contenu des fichiers personnalisables doit être inférieure à 1 Mo.
+* l’utilisation d’un fichier unique de réécriture plutôt que des fichiers spécifiques aux sites est nécessaire.
+* le total du contenu des fichiers personnalisables doit être inférieur à 1 Mo.
 
 À compter de la version 2021.7.0 de Cloud Manager, les nouveaux programmes de Cloud Manager génèrent des structures de projet Maven avec AEM archétype 28 et versions ultérieures, qui inclut le fichier ci-dessus.
 
-Il est **vivement recommandé** de migrer du mode hérité vers le mode flexible, comme indiqué dans la section de migration [Migration du mode hérité vers le mode flexible](#migrating-flexible). L’utilisation du mode flexible entraîne également le SDK et le runtime à valider et déployer la configuration de manière améliorée.
+Il est **vivement recommandé** de migrer du mode hérité vers le mode flexible, comme indiqué dans la section de migration [Migration du mode hérité vers le mode flexible](#migrating-flexible). L’utilisation du mode flexible entraîne également le SDK et Runtime à valider et déployer la configuration de manière améliorée.
 
-## Structure d&#39;un fichier {#legacy-mode-file-structure}
+## Structure de fichier {#legacy-mode-file-structure}
 
-La structure du sous-dossier Dispatcher du projet (en mode hérité) est la suivante :
+La structure du sous-dossier Dispatcher du projet (en mode hérité) est la suivante :
 
 ```bash
 ./
@@ -91,7 +91,7 @@ Ce fichier est inclus dans vos fichiers `.vhost`. Il contient un ensemble de rè
 
 * `conf.d/variables/custom.vars`
 
-Ce fichier est inclus dans vos fichiers `.vhost`. Vous pouvez ajouter des définitions pour les variables Apache à cet emplacement.
+Ce fichier est inclus dans vos fichiers `.vhost`. Vous pouvez y ajouter des définitions pour les variables Apache.
 
 * `conf.d/variables/global.vars`
 
@@ -176,7 +176,7 @@ Voir [Modules Apache pris en charge](/help/implementing/dispatcher/disp-overview
 ## Validation locale {#local-validation-legacy-mode}
 
 >[!NOTE]
->Les sections ci-dessous incluent des commandes utilisant les versions Mac ou Linux du SDK, mais le SDK Windows peut également être utilisé de la même manière.
+>Les sections ci-dessous incluent des commandes utilisant les versions Mac ou Linux du SDK, mais le SDK Windows peut être utilisé de la même manière.
 
 Utilisez le script `validate.sh` comme indiqué ci-dessous :
 
@@ -216,12 +216,12 @@ Phase 3 finished
 Le script effectue les opérations suivantes :
 
 1. Il exécute le programme de validation. Si la configuration n’est pas valide, le script échoue.
-2. Il exécute la commande `httpd -t` afin de tester si la syntaxe est correcte, de sorte qu’apache httpd puisse démarrer. En cas de réussite, la configuration doit être prête pour le déploiement.
+2. Il exécute la commande `httpd -t` pour tester si la syntaxe est correcte de sorte qu’Apache httpd puisse démarrer. En cas de réussite, la configuration doit être prête pour le déploiement.
 3. Vérifie que le sous-ensemble des fichiers de configuration du SDK du Dispatcher, qui sont censés être immuables (comme décrit dans la [section Structure de fichiers](##legacy-mode-file-structure)) n’a pas été modifié. Cette nouvelle vérification a été introduite avec le SDK AEM version v2021.1.4738 qui inclut également Dispatcher Tools version 2.0.36. Avant cette mise à jour, les clients auraient pu supposer à tort que toute modification locale du SDK de ces fichiers immuables est également appliquée à l’environnement cloud.
 
-Lors d’un déploiement de Cloud Manager, la vérification de syntaxe `httpd -t` est également exécutée et les erreurs éventuelles sont incluses dans le journal `Build Images step failure` de Cloud Manager.
+Lors d’un déploiement de Cloud Manager, la vérification de la syntaxe `httpd -t` est également exécutée et toute erreur est incluse dans le journal `Build Images step failure` de Cloud Manager.
 
-### Phase 1 {#first-phase}
+### Phase 1 {#first-phase}
 
 Si une directive n’est pas placée sur la liste autorisée, l’outil consigne une erreur et renvoie un code de sortie non nul. Il analyse également tous les fichiers présentant le motif `conf.dispatcher.d/enabled_farms/*.farm` et vérifie les éléments suivants :
 
@@ -317,10 +317,10 @@ Notez qu’il n’existe pas de version par défaut des fichiers de variables.
 **Deprecated configuration layout detected, enabling compatibility mode**
 
 Ce message indique que votre configuration présente la disposition version 1 obsolète, contenant une
-configuration Apache complète et des fichiers avec des préfixes `ams_`. Bien que ceci soit toujours pris en charge pour l’envers
-, vous devez passer à la nouvelle mise en page.
+configuration Apache complète et des fichiers avec des préfixes `ams_`. Bien que cette fonctionnalité soit toujours prise en charge
+en rétrocompatibilité, vous devriez passer à la nouvelle mise en page.
 
-Notez que la première phase peut également être **exécutée séparément**, plutôt que du script `validate.sh` wrapper.
+Notez que la première phase peut également être **exécutée séparément**, plutôt qu’à partir du script `validate.sh` wrapper.
 
 Lorsqu’il est exécuté sur votre artefact maven ou votre sous-répertoire `dispatcher/src`, il signale les échecs de validation :
 
@@ -345,20 +345,20 @@ Cloud manager validator 2.0.xx
 
 Évitez cette erreur en copiant le chemin à partir de l’Explorateur Windows, puis en le collant dans l’invite de commande, en utilisant une commande `cd` dans ce chemin.
 
-### Phase 2 {#second-phase}
+### Phase 2 {#second-phase}
 
-Cette phase vérifie la syntaxe apache en démarrant Docker dans une image. Docker doit être installé localement, mais il n’est pas nécessaire que AEM soit en cours d’exécution.
+Cette phase vérifie la syntaxe Apache en démarrant Docker dans une image. Docker doit être installé localement, mais notez qu’il n’est pas nécessaire qu’AEM soit en cours d’exécution.
 
 >[!NOTE]
 >Les utilisateurs de Windows doivent utiliser Windows 10 Professionnel ou d’autres distributions prenant en charge Docker. Il s’agit d’un prérequis pour l’exécution et le débogage de Dispatcher sur un ordinateur local.
 
-Cette phase peut également être exécutée indépendamment via `validator full -d out src/dispatcher`, qui génère un répertoire out, nécessaire par la commande suivante `bin/docker_run.sh out host.internal.docker:4503 8080`.
+Cette phase peut également être exécutée indépendamment via `validator full -d out src/dispatcher`, qui génère un répertoire de sortie, dont a besoin la commande suivante `bin/docker_run.sh out host.internal.docker:4503 8080`.
 
-Lors d’un déploiement de Cloud Manager, la vérification de syntaxe `httpd -t` est également exécutée et toutes les erreurs sont incluses dans le journal des échecs de l’étape de création d’images de Cloud Manager.
+Lors d’un déploiement de Cloud Manager, la vérification de la syntaxe `httpd -t` est également exécutée et toutes les erreurs sont incluses dans le journal des échecs de l’étape de création d’images de Cloud Manager.
 
-### Phase 3 {#third-phase}
+### Phase 3 {#third-phase}
 
-En cas d’échec au cours de cette phase, cela signifie que l’Adobe a modifié un ou plusieurs fichiers non modifiables et que vous devez remplacer les fichiers non modifiables correspondants par la nouvelle version fournie dans le répertoire `src` du SDK. L’exemple de journal ci-dessous illustre ce problème :
+En cas d’échec au cours de cette phase, cela signifie qu’Adobe a modifié un ou plusieurs fichiers non modifiables et que vous devez remplacer les fichiers non modifiables correspondants par la nouvelle version fournie dans le répertoire `src` du SDK. L’exemple de journal ci-dessous illustre ce problème :
 
 ```
 Phase 3: Immutability check
@@ -377,13 +377,13 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
   
 ```
 
-Cette phase peut également être exécutée indépendamment via `validator full -d out src/dispatcher`, qui génère un répertoire out, nécessaire par la commande suivante `bin/docker_immutability_check.sh out`.
+Cette phase peut également être exécutée indépendamment via `validator full -d out src/dispatcher`, qui génère un répertoire de sortie, dont a besoin la commande suivante `bin/docker_immutability_check.sh out`.
 
 ## Débogage de la configuration Apache et Dispatcher {#debugging-apache-and-dispatcher-configuration}
 
 Notez que vous pouvez exécuter le dispatcher Apache localement à l’aide de `./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
 
-Comme indiqué précédemment, Docker doit être installé localement et il n’est pas nécessaire que AEM soit en cours d’exécution. Les utilisateurs de Windows doivent utiliser Windows 10 Professionnel ou d’autres distributions prenant en charge Docker. Il s’agit d’un prérequis pour l’exécution et le débogage de Dispatcher sur un ordinateur local.
+Comme indiqué précédemment, Docker doit être installé localement et il n’est pas nécessaire qu’AEM soit en cours d’exécution. Les utilisateurs de Windows doivent utiliser Windows 10 Professionnel ou d’autres distributions prenant en charge Docker. Il s’agit d’un prérequis pour l’exécution et le débogage de Dispatcher sur un ordinateur local.
 
 La stratégie suivante peut être utilisée afin d’augmenter la sortie du journal pour le module Dispatcher et de voir les résultats de l’évaluation `RewriteRule` dans les environnements locaux et cloud.
 
@@ -476,4 +476,4 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## Migration du mode hérité vers le mode flexible {#migrating-flexible}
 
-Avec la version 2021.7.0 de Cloud Manager, les nouveaux programmes génèrent des structures de projet Maven avec AEM archétype 28 ou version ultérieure, qui inclut le fichier **opt-in/USE_SOURCES_DIRECTLY**. Cela supprime les limites précédentes du mode hérité concernant le nombre et la taille des fichiers, ce qui entraîne également la validation et le déploiement du SDK et du runtime de la configuration d’une manière améliorée. Si votre configuration de Dispatcher ne comporte pas ce fichier, il est vivement recommandé de migrer. Utilisez les méthodes décrites dans la page [mode flexible](/help/implementing/dispatcher/validation-debug.md#migrating) .
+Avec la version 2021.7.0 de Cloud Manager, les nouveaux programmes génèrent des structures de projet Maven avec AEM archétype 28 ou version ultérieure, qui inclut le fichier **opt-in/USE_SOURCES_DIRECTLY**. Cela supprime les limites précédentes du mode hérité concernant le nombre et la taille des fichiers, ce qui entraîne également la validation et le déploiement par le SDK et Runtime de la configuration d’une manière améliorée. Si votre configuration Dispatcher ne comporte pas ce fichier, il est vivement recommandé de migrer. Utilisez les méthodes décrites dans la page [mode flexible](/help/implementing/dispatcher/validation-debug.md#migrating).
