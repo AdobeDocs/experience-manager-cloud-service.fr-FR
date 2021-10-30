@@ -4,13 +4,13 @@ description: Découvrez les méthodes que vous pouvez utiliser pour sélectionne
 role: User
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
 source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '728'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
-# Utilisation de sélecteurs dans Dynamic Media {#working-with-selectors}
+# Utilisation de sélecteurs dans Dynamic Media {#working-with-selectors}
 
 Lorsque vous utilisez une image interactive, une vidéo interactive ou une bannière de carrousel, vous sélectionnez des ressources, ainsi que des sites et des produits auxquels relier les zones réactives et les zones cliquables. Lorsque vous travaillez avec des visionneuses d’images, des visionneuses à 360° et de contenu multimédia, vous devez également sélectionner les ressources à l’aide du sélecteur de ressources.
 
@@ -22,19 +22,19 @@ Par exemple, dans cette bannière de carrousel, vous utilisez le sélecteur de p
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-Lorsque vous sélectionnez (au lieu de saisir manuellement) l’emplacement des zones réactives ou des zones cliquables, vous utilisez le sélecteur. Le sélecteur de sites ne fonctionne que si vous êtes un client [!DNL Adobe Experience Manager Sites]. Le sélecteur de produits nécessite également [!DNL Experience Manager Commerce].
+Lorsque vous sélectionnez (au lieu de saisir manuellement) l’emplacement des zones réactives ou des zones cliquables, vous utilisez le sélecteur. Le sélecteur de sites ne fonctionne que si vous êtes client [!DNL Adobe Experience Manager Sites]. Le sélecteur de produits nécessite également [!DNL Experience Manager Commerce].
 
-## Sélection de produits dans Dynamic Media {#selecting-products}
+## Sélection de produits dans Dynamic Media {#selecting-products}
 
 Utilisez le sélecteur de produits pour choisir un produit lorsque vous souhaitez une zone réactive ou une zone cliquable pour proposer l’aperçu rapide d’un produit de votre catalogue de produits.
 
-1. Accédez à l’ensemble de carrousel, à l’image interactive ou à la vidéo interactive, puis sélectionnez l’onglet **[!UICONTROL Actions]** (disponible uniquement si vous avez défini une zone réactive ou une zone cliquable).
+1. Accédez à l’ensemble de carrousels, à l’image interactive ou à la vidéo interactive, puis sélectionnez l’onglet **[!UICONTROL Actions]** (disponible uniquement si vous avez défini une zone réactive ou une zone cliquable).
 
    Le sélecteur de produits se trouve dans la zone **[!UICONTROL Type d’action]**.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
-1. Sélectionnez l’icône **[!UICONTROL Sélecteur de produits]** (loupe) et accédez à un produit du catalogue.
+1. Sélectionnez l’icône du **[!UICONTROL sélecteur de produits]** (loupe) et accédez à un produit dans le catalogue.
 
    ![chlimage_1-522](assets/chlimage_1-522.png)
 
@@ -42,15 +42,15 @@ Utilisez le sélecteur de produits pour choisir un produit lorsque vous souhaite
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   Vous pouvez modifier l’emplacement où [!DNL Experience Manager] recherche les données de produit en appuyant sur **[!UICONTROL Parcourir]** et en accédant à un autre dossier.
+   Vous pouvez modifier l’emplacement dans lequel [!DNL Experience Manager] recherche les données de produit en appuyant sur **[!UICONTROL Parcourir]** et en accédant à un autre dossier.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Sélectionnez **[!UICONTROL Trier par]** pour indiquer si [!DNL Experience Manager] trie du plus récent au plus ancien ou du plus ancien au plus récent.
+   Sélectionnez **[!UICONTROL Trier par]** pour indiquer si trie du plus récent au plus ancien ou du plus ancien au plus récent.[!DNL Experience Manager]
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
-   Sélectionnez **[!UICONTROL Afficher sous]** pour modifier l’affichage des produits : **[!UICONTROL Mode Liste]** ou **[!UICONTROL Mode Carte]**.
+   Sélectionnez **[!UICONTROL Afficher sous]** pour changer l’affichage des produits (mode **[!UICONTROL Liste]** ou mode **[!UICONTROL Carte]**).
 
    ![chlimage_1-526](assets/chlimage_1-526.png)
 
@@ -58,21 +58,21 @@ Utilisez le sélecteur de produits pour choisir un produit lorsque vous souhaite
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. En mode **[!UICONTROL Aperçu]**, vous pouvez sélectionner la zone réactive ou la zone cliquable et afficher l’aperçu rapide.
+1. En mode **[!UICONTROL Aperçu]**, vous pouvez sélectionner la zone réactive ou la zone cliquable et voir l’aspect de l’aperçu rapide.
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## Sélection de sites dans Dynamic Media {#selecting-sites}
+## Sélection de sites dans Dynamic Media {#selecting-sites}
 
-Utilisez le sélecteur de site pour choisir une page web lorsque vous souhaitez qu’une zone réactive ou une zone cliquable pointe vers une page web gérée sur [!DNL Experience Manager] sites.
+Utilisez le sélecteur de sites pour choisir une page web lorsque vous souhaitez qu’une zone réactive ou une zone cliquable pointe vers une page web gérée dans les sites [!DNL Experience Manager].
 
-1. Accédez à l’ensemble de carrousel, à l’image interactive ou à la vidéo interactive, puis sélectionnez l’onglet **[!UICONTROL Actions]** (disponible uniquement si vous avez défini une zone réactive ou une zone cliquable).
+1. Accédez à l’ensemble de carrousels, à l’image interactive ou à la vidéo interactive, puis sélectionnez l’onglet **[!UICONTROL Actions]** (disponible uniquement si vous avez défini une zone réactive ou une zone cliquable).
 
    Le sélecteur de sites se trouve dans la zone **[!UICONTROL Type d’action]**.
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Sélectionnez l’icône **[!UICONTROL Sélecteur de site]** (dossier avec loupe) et accédez à une page de vos [!DNL Experience Manager] sites auxquels vous souhaitez lier la zone réactive ou la zone cliquable.
+1. Sélectionnez l’icône **[!UICONTROL Sélecteur de sites]** (dossier avec loupe) et accédez à une page de vos sites à laquelle vous voulez relier la zone réactive ou la zone cliquable.[!DNL Experience Manager]
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -80,11 +80,11 @@ Utilisez le sélecteur de site pour choisir une page web lorsque vous souhaitez 
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. En mode **[!UICONTROL Aperçu]** si vous sélectionnez la zone réactive ou la zone cliquable, vous accédez à la page [!DNL Experience Manager] du site que vous avez spécifiée.
+1. En mode **[!UICONTROL Aperçu]**, si vous sélectionnez la zone réactive ou la zone cliquable, vous accédez à la page de site que vous avez spécifiée.[!DNL Experience Manager]
 
-## Sélection de ressources dans Dynamic Media {#selecting-assets}
+## Sélection de ressources dans Dynamic Media {#selecting-assets}
 
-Utilisez ce sélecteur pour sélectionner les images à utiliser dans une bannière de carrousel, une vidéo interactive, des visionneuses d’images, de contenus multimédia variés et à 360°. Dans la vidéo interactive, le sélecteur de ressources est disponible lorsque vous sélectionnez **[!UICONTROL Sélectionner les ressources]** dans l’onglet **[!UICONTROL Contenu]**. Dans les ensembles de carrousels, le sélecteur de ressources est disponible lorsque vous créez une diapositive. Dans les visionneuses d’images, de contenus multimédia variés et à 360°, le sélecteur de ressources est disponible lorsque vous créez respectivement une visionneuse d’images, de contenus multimédia variés ou à 360°.
+Utilisez ce sélecteur pour sélectionner les images à utiliser dans une bannière de carrousel, une vidéo interactive, des visionneuses d’images, de contenus multimédia variés et à 360°. Dans la vidéo interactive, le sélecteur de ressources est disponible lorsque vous sélectionnez **[!UICONTROL Sélectionner des ressources]** dans l’onglet **[!UICONTROL Contenu]**. Dans les ensembles de carrousels, le sélecteur de ressources est disponible lorsque vous créez une diapositive. Dans les visionneuses d’images, de contenus multimédia variés et à 360°, le sélecteur de ressources est disponible lorsque vous créez respectivement une visionneuse d’images, de contenus multimédia variés ou à 360°.
 
 Reportez-vous également à la section [Sélecteur de ressources](/help/assets/search-assets.md#asset-selector) pour plus d’informations.
 
@@ -103,11 +103,11 @@ Reportez-vous également à la section [Sélecteur de ressources](/help/assets/s
 
    ![chlimage_1-534](assets/chlimage_1-534.png)
 
-   Sélectionnez **[!UICONTROL Afficher sous]** pour modifier l’affichage des produits : **[!UICONTROL Mode Liste]**, **[!UICONTROL Mode Colonnes]** ou **[!UICONTROL Mode Carte]**.
+   Sélectionnez **[!UICONTROL Afficher sous]** pour changer l’affichage des produits (en mode **[!UICONTROL Liste]**, en mode **[!UICONTROL Colonne]** ou en mode **[!UICONTROL Carte]**).
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 
-1. Pour sélectionner la ressource, cochez la case. La ressource s’affiche.
+1. Pour sélectionner la ressource, sélectionnez la coche. La ressource s’affiche.
 
    ![chlimage_1-536](assets/chlimage_1-536.png)
 -->
