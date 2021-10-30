@@ -3,9 +3,9 @@ title: Déploiement de votre code – Cloud Services
 description: Déploiement de votre code – Cloud Services
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '616'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Pour plus d’informations, voir [Compréhension des résultats du contrôle de 
 
 ## Processus de déploiement {#deployment-process}
 
-Tous les déploiements de Cloud Service suivent un processus continu pour garantir un temps d’arrêt nul. Pour en savoir plus, voir [Fonctionnement des déploiements en continu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#how-rolling-deployments-work) .
+Tous les déploiements de Cloud Service suivent un processus continu pour garantir un temps d’arrêt nul. Pour en savoir plus, voir [Fonctionnement des déploiements en continu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#how-rolling-deployments-work).
 
 ### Phase de déploiement en production {#deployment-production-phase}
 
