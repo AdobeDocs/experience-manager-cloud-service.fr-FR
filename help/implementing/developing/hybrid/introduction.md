@@ -3,7 +3,7 @@ title: Introduction et présentation des applications sur une seule page (SPA)
 description: Cet article présente les concepts d’une SPA et décrit l’utilisation d’une SPA élémentaire à des fins de création, indiquant comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1984'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ La présentation repose sur les fonctionnalités AEM standard et l’exemple d�
 
 >[!TIP]
 >
->Tout projet AEM doit exploiter l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets SPA à l’aide de React ou d’Angular et exploite le SDK SPA.
+>Tout projet AEM doit exploiter l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets SPA à l’aide de React ou d’Angular et utilise le SDK SPA.
 
 ### Qu’est-ce qu’une SPA ?  {#what-is-a-spa}
 
@@ -80,8 +80,10 @@ Parce que le rendu est effectué côté client, les éléments de la page réagi
 >* [Prise en main des SPA dans AEM avec React](getting-started-react.md)
 >* [Prise en main des SPA dans AEM avec Angular](getting-started-angular.md)
 
+>
+>
 Pour observer de plus près la conception, l’architecture et le workflow technique de l’éditeur de SPA, consultez l’article :
-* [Présentation de l’éditeur de SPA](editor-overview.md).
+>* [Présentation de l’éditeur de SPA](editor-overview.md).
 
 
 ## Modification de contenu avec une SPA {#content-editing-experience-with-spa}
@@ -115,6 +117,7 @@ D’autres outils de création, tels que le glisser-déposer de composants suppl
 >[!NOTE]
 >
 >L’éditeur de SPA ne modifie pas le modèle objet de document (DOM) de l’application. La SPA elle-même est responsable du DOM.
+>
 >Pour découvrir le fonctionnement de cet aspect, passez à la section suivante de cet article, [Applications SPA et éditeur de SPA AEM](#spa-apps-and-the-aem-spa-editor).
 
 ## Applications SPA et éditeur de SPA AEM {#spa-apps-and-the-aem-spa-editor}
@@ -225,6 +228,7 @@ Dans la section suivante, nous allons examiner le contrat qui permet à l’édi
    >[!NOTE]
    >
    >Ce comportement diffère des pages générées côté serveur dans AEM, où un élément `cq` est inséré pour chaque composant modifiable.
+   >
    >Cette approche dans l’éditeur de SPA élimine la nécessité d’injecter des éléments personnalisés, en n’utilisant qu’un attribut de données supplémentaire, ce qui rend le balisage plus simple pour le développeur frontal.
 
 ## Couplage et découplage dans AEM {#headful-headless}
@@ -233,7 +237,7 @@ Les SPA peuvent être activés avec différents niveaux d’intégration au sein
 
 >[!TIP]
 >
->Consultez le document [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) pour plus d’informations.
+>Voir le document [Couplage et découplage dans AEM](/help/implementing/developing/headful-headless.md) pour plus d’informations.
 
 ## Étapes suivantes {#next-steps}
 
