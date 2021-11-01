@@ -5,7 +5,7 @@ exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '1347'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Experience Manager as a Cloud Service utilise la fonctionnalité de [distr
 
 ### Publication/annulation de publication rapide – Publication/annulation de publication planifiée {#publish-unpublish}
 
-Cela vous permet de publier immédiatement la ou les pages sélectionnées, sans les options supplémentaires possibles grâce à l’approche Gérer la publication .
+Vous pouvez ainsi publier immédiatement la ou les pages sélectionnées, sans les options supplémentaires possibles grâce à l’approche Gérer la publication.
 
 Pour plus d’informations, voir [Gestion de la publication](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
@@ -37,7 +37,7 @@ Pour réaliser la réplication automatique dans ce cas, vous devez activer **Aut
 
 La méthode Gérer la publication propose plus d’options que Publication rapide, dont la possibilité d’inclure des pages enfants, de personnaliser les références ou encore de lancer n’importe quel workflow applicable. Elle offre également la possibilité de publier la page à une date ultérieure.
 
-L’inclusion des enfants d’un dossier pour l’option &quot;Publier plus tard&quot; appelle le workflow Publier l’arborescence de contenu, décrit dans cet article.
+L’inclusion des enfants d’un dossier pour l’option « Publier ultérieurement » appelle le workflow Publier l’arborescence de contenu, décrit dans cet article.
 
 Vous trouverez des informations plus détaillées sur la gestion de la publication dans la [documentation sur les principes de publication](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
@@ -45,20 +45,20 @@ Vous trouverez des informations plus détaillées sur la gestion de la publicati
 
 >[!NOTE]
 >
->Cette approche doit être considérée comme obsolète et sera supprimée le ou après le 30 septembre 2021, car elle ne conserve pas les états et est moins évolutive que les autres approches. Il est recommandé à l’Adobe d’utiliser plutôt des méthodes de gestion de publication ou de workflow.
+>Cette approche doit être considérée comme obsolète et sera supprimée le 30 septembre 2021, ou après, car elle ne conserve pas les états et est moins évolutive que les autres approches. Adobe recommande d’utiliser plutôt des méthodes de gestion de publication ou de workflows.
 
 Pour exécuter une activation d’arborescence :
 
 1. Dans le menu Accueil AEM, accédez à **Outils > Déploiement > Distribution**.
-2. Sélectionnez la carte **publish**
-3. Une fois dans l’interface utilisateur de la console Web de publication, **sélectionnez Distribute**
+2. Sélectionnez la carte **Publication**.
+3. Une fois dans l’interface utilisateur de la console web Publication, sélectionnez **Distribuer**.
 
    ![Distribuer](assets/publish-distribute.png "Distribuer")
 4. Sélectionnez le chemin dans l’explorateur de chemins d’accès, choisissez d’ajouter un nœud, une arborescence ou supprimez-les, si nécessaire, puis sélectionnez **Submit** (Envoyer).
 
-Pour de meilleures performances, suivez les instructions suivantes lorsque vous utilisez cette fonctionnalité :
-* Il est recommandé de répliquer moins de 100 chemins à la fois, avec une limite de 500 chemins d’accès stricte.
-* La taille totale du contenu répliqué doit être inférieure à 5 Mo. Cela inclut uniquement les noeuds et les propriétés, mais pas les fichiers binaires, qui incluent des modules de workflow et des modules de contenu.
+Pour de meilleures performances, suivez les instructions suivantes lorsque vous utilisez cette fonctionnalité :
+* Il est recommandé de répliquer moins de 100 chemins à la fois, avec une limite stricte de 500 chemins d’accès.
+* La taille totale du contenu répliqué doit être inférieure à 5 Mo. Il s’agit uniquement des nœuds et des propriétés, mais pas des fichiers binaires, qui incluent des modules de workflow et des modules de contenu.
 
 ### Workflow de publication de l’arborescence de contenu {#publish-content-tree-workflow}
 
@@ -100,7 +100,7 @@ Vous pouvez également y parvenir en créant un modèle de workflow qui utilise 
 
 * `replicateAsParticipant` (valeur booléenne, valeur par défaut : `false`). S’il est configuré comme `true`, la réplication utilise la balise `userid` de l’entité qui a exécuté l’étape de participant.
 * `enableVersion` (valeur booléenne, valeur par défaut : `true`). Ce paramètre détermine si une nouvelle version est créée lors de la réplication.
-* `agentId` (valeur string, la valeur par défaut signifie que seuls les agents pour la publication sont utilisés). Il est recommandé d’être explicite sur l’agentId ; par exemple, définissez la valeur : publier. La définition de l’agent sur `preview` entraîne la publication sur le service d’aperçu.
+* `agentId` (valeur de chaîne, la valeur par défaut signifie que seuls les agents pour la publication sont utilisés). Il est recommandé d’être explicite concernant agentId ; par exemple, attribuez-lui la valeur : publier. L’application à l’agent de la valeur `preview` entraîne la publication sur le service d’aperçu.
 * `filters` (valeur de chaîne, valeur par défaut, tous les chemins sont activés). Les valeurs disponibles sont les suivantes :
    * `onlyActivated` : seuls les chemins qui ne sont pas marqués comme activés seront activés.
    * `onlyModified` : activez uniquement les chemins déjà activés et dont la date de modification est postérieure à la date d’activation.
@@ -132,9 +132,9 @@ Le workflow traite le contenu par blocs, chacun représentant un sous-ensemble d
 
 ### API de réplication {#replication-api}
 
-Vous pouvez publier du contenu à l’aide de l’API de réplication présentée dans AEM en tant que Cloud Service.
+Vous pouvez publier du contenu à l’aide de l’API de réplication présentée dans AEM as a Cloud Service.
 
-Pour plus d’informations, voir la [documentation de l’API](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html).
+Pour plus d’informations, voir [Documentation de l’API](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html).
 
 **Utilisation de base de l’API**
 
@@ -159,13 +159,13 @@ ReplicationStatus enStatus = enResource.adaptTo(ReplicationStatus.class);
 Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchReplicationStatus(enResource,deResource);
 ```
 
-**Réplication avec des agents spécifiques**
+**Réplication à l’aide d’agents spécifiques**
 
-Lors de la réplication des ressources comme dans l’exemple ci-dessus, seuls les agents principaux par défaut seront utilisés. Dans AEM en tant que Cloud Service, il s’agit uniquement de l’agent nommé &quot;publish&quot;, qui connecte l’auteur au niveau de publication.
+Lors de la réplication des ressources comme dans l’exemple ci-dessus, seuls les agents principaux par défaut seront utilisés. Dans AEM as a Cloud Service, il s’agit uniquement de l’agent nommé « publish », qui connecte l’auteur au niveau de publication.
 
-Pour prendre en charge la fonctionnalité d’aperçu, un nouvel agent appelé &quot;aperçu&quot; a été ajouté, qui n’est pas principal par défaut. Cet agent est utilisé pour connecter l’auteur au niveau d’aperçu. Si vous souhaitez répliquer uniquement par le biais de l’agent de prévisualisation, vous devez sélectionner explicitement cet agent de prévisualisation via un `AgentFilter`.
+Pour prendre en charge la fonctionnalité d’aperçu, un nouvel agent appelé « preview » a été ajouté, qui n’est pas principal par défaut. Cet agent est utilisé pour connecter l’auteur au niveau aperçu. Si vous souhaitez répliquer uniquement par le biais de l’agent d’aperçu, vous devez sélectionner explicitement cet agent via un `AgentFilter`.
 
-Voir l’exemple ci-dessous pour savoir comment procéder :
+Voir l’exemple ci-dessous pour savoir comment procéder :
 
 ```
 private static final String PREVIEW_AGENT = "preview";
@@ -186,21 +186,21 @@ ReplicationStatus afterStatus = enResource.adaptTo(ReplicationStatus.class); // 
 ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); // previewStatus.isActivated == true
 ```
 
-Si vous ne fournissez pas un tel filtre et n’utilisez que l’agent &quot;publish&quot;, l’agent &quot;preview&quot; n’est pas utilisé et l’action de réplication n’affecte pas le niveau de prévisualisation.
+Si vous ne fournissez pas un tel filtre et n’utilisez que l’agent « publish », l’agent « preview » n’est pas appliqué et l’action de réplication n’affecte pas le niveau d’aperçu.
 
-L’ensemble `ReplicationStatus` d’une ressource n’est modifié que si l’action de réplication comprend au moins un agent principal par défaut. Dans l’exemple ci-dessus, ce n’est pas le cas, car la réplication utilise uniquement l’agent &quot;aperçu&quot;. Par conséquent, vous devez utiliser la nouvelle méthode `getStatusForAgent()`, qui permet d’interroger le statut d’un agent spécifique. Cette méthode fonctionne également pour l’agent &quot;publish&quot;. Elle renvoie une valeur non nulle si une action de réplication a été effectuée à l’aide de l’agent fourni.
+L’ensemble `ReplicationStatus` d’une ressource n’est modifié que si l’action de réplication comprend au moins un agent principal par défaut. Dans l’exemple ci-dessus, ce n’est pas le cas, car la réplication utilise uniquement l’agent « preview ». Vous devez donc utiliser la nouvelle méthode `getStatusForAgent()`, qui permet d’interroger le statut d’un agent spécifique. Cette méthode fonctionne également pour l’agent « publish ». Elle renvoie une valeur non nulle si une action de réplication a été effectuée à l’aide de l’agent fourni.
 
 
 **Chemin d’accès et limites de taille de l’API de réplication**
 
-Il est recommandé de répliquer moins de 100 chemins, 500 étant la limite stricte. Au-delà de la limite stricte, une exception ReplicationException est générée. Si la logique de votre application ne nécessite pas de réplication atomique, cette limite peut être dépassée en définissant ReplicationOptions.setUseAtomicCalls sur false, qui acceptera un nombre quelconque de chemins d’accès, mais créera en interne des compartiments pour rester en dessous de cette limite. La quantité de contenu transmise par appel de réplication ne doit pas dépasser 5 Mo, ce qui inclut les noeuds et les propriétés, mais pas les binaires (les packages de workflow et les packages de contenu sont considérés comme des binaires).
+Il est recommandé de répliquer moins de 100 chemins, 500 étant la limite stricte. Au-delà de cette limite stricte, une exception ReplicationException est générée. Si la logique de votre application ne nécessite pas de réplication atomique, cette limite peut être dépassée en définissant ReplicationOptions.setUseAtomicCalls à la valeur false. Ainsi, un nombre quelconque de chemins d’accès sera accepté, mais des compartiments seront créés en interne pour rester au-dessous de cette limite. Le volume de contenu transmis par appel de réplication ne doit pas dépasser 5 Mo, ce qui inclut les nœuds et les propriétés, mais pas les binaires (les packages de workflow et les packages de contenu sont considérés comme des binaires).
 
 ## Résolution des problèmes {#troubleshooting}
 
 Pour résoudre les problèmes de réplication, accédez aux files d’attente de réplication dans l’interface utilisateur web du service d’auteur AEM :
 
 1. Dans le menu Accueil AEM, accédez à **Outils > Déploiement > Distribution**.
-2. Sélectionnez la carte **publish**
+2. Sélectionnez la carte **Publication**.
    ![État](assets/publish-status.png "État")
 3. Vérifiez l’état de la file d’attente qui doit être de couleur verte.
 4. Vous pouvez tester la connexion au service de réplication.
@@ -209,4 +209,4 @@ Pour résoudre les problèmes de réplication, accédez aux files d’attente de
 ![Journaux](assets/publish-logs.png "Journaux")
 
 S’il n’a pas été possible de publier le contenu, l’intégralité de la publication est restaurée à partir du service de publication AEM.
-Dans ce cas, la file d’attente principale modifiable affichera un état rouge et doit être examinée afin d’identifier le ou les éléments qui ont provoqué l’annulation de la publication. En cliquant sur cette file d’attente, les éléments en attente s’affichent, à partir desquels un seul élément ou tous les éléments peuvent être effacés si nécessaire.
+Dans ce cas, la file d’attente principale modifiable affichera un état rouge. Elle doit être examinée afin d’identifier le ou les éléments qui ont provoqué l’annulation de la publication. En cliquant sur cette file d’attente, les éléments en attente s’affichent, parmi lesquels il est possible d’effacer, si nécessaire, tous les éléments ou un seul.

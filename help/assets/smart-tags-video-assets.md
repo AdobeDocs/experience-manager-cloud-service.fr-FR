@@ -1,12 +1,12 @@
 ---
 title: Balisage intelligent de vos ressources vidéo
 description: Experience Manager ajoute automatiquement des balises intelligentes contextuelles et descriptives aux vidéos en utilisant [!DNL Adobe Sensei].
-feature: Balises intelligentes, Balisage
+feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '1186'
+source-wordcount: '1183'
 ht-degree: 100%
 
 ---
@@ -137,5 +137,5 @@ Pour ajouter la configuration OSGI du score de confiance au projet déployé dan
 >[!MORELIKETHIS]
 >
 >* [Gestion des balises intelligentes et des recherches de ressources](smart-tags.md#manage-smart-tags-and-searches)
-* [Entraîner le service de balises intelligentes et baliser vos images](smart-tags.md)
+>* [Entraîner le service de balises intelligentes et baliser vos images](smart-tags.md)
 

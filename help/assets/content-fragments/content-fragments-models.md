@@ -15,7 +15,7 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->La fonction [Modèles de fragment de contenu verrouillés (publiés)](#locked-published-content-fragment-models) est en version bêta.
+>Le [Modèles de fragment de contenu verrouillés (publiés)](#locked-published-content-fragment-models) est en version bêta.
 
 Les modèles de fragment de contenu d’AEM définissent la structure du contenu de vos [fragments de contenu](/help/assets/content-fragments/content-fragments.md) et servent de base à votre contenu découplé.
 
@@ -142,7 +142,7 @@ De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propr
 
 * **Nom de la propriété**
 
-   Lors de la mise à jour manuelle de cette propriété pour un type de données, notez que les noms **must** contiennent *uniquement* des caractères latins, des chiffres et un trait de soulignement &quot;_&quot; comme caractère spécial.
+   Lors de la mise à jour manuelle de cette propriété pour un type de données, notez que les noms **must** contain *only* Caractères latins, chiffres et trait de soulignement &quot;_&quot; comme caractère spécial.
 
    >[!CAUTION]
    Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou mettez à jour ces caractères.
@@ -429,7 +429,7 @@ Si vous essayez d’annuler la publication d’un modèle actuellement utilisé 
 
 ![Message d’erreur de modèle de fragment de contenu lors de l’annulation de la publication d’un modèle en cours d’utilisation](assets/cfm-model-unpublish-error.png)
 
-Le message vous invite à vérifier le panneau [Références](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) pour approfondir l’analyse :
+Le message vous invite à vérifier la variable [Références](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) pour en savoir plus :
 
 ![Modèle de fragment de contenu dans les références](assets/cfm-model-references.png)
 
@@ -462,45 +462,45 @@ L’un ou l’autre de ces modèles peut interrompre les requêtes si les modèl
 
 ### La solution {#the-solution}
 
-Pour résoudre ces problèmes, les modèles de fragment de contenu sont *verrouillés* en mode LECTURE SEULE sur l’auteur - dès qu’ils ont été publiés. Ceci est indiqué par **Verrouillé** :
+Pour résoudre ces problèmes, les modèles de fragment de contenu sont les suivants : *verrouillé* en mode LECTURE SEULE sur l’auteur - dès qu’ils ont été publiés. Ceci est indiqué par **Verrouillé**:
 
 ![Carte du modèle de fragment de contenu verrouillé](assets/cfm-model-locked.png)
 
-Lorsque le modèle est **verrouillé** (en mode LECTURE SEULE), vous pouvez voir le contenu et la structure des modèles, mais vous ne pouvez pas les modifier.
+Lorsque le modèle est **Verrouillé** (en mode LECTURE SEULE ), vous pouvez voir le contenu et la structure des modèles, mais vous ne pouvez pas les modifier.
 
-Vous pouvez gérer les modèles **verrouillés** à partir de la console ou de l’éditeur de modèles :
+Vous pouvez gérer **Verrouillé** modèles de la console ou de l’éditeur de modèles :
 
 * Console
 
-   Dans la console, vous pouvez gérer le mode LECTURE SEULE avec les actions **Déverrouiller** et **Verrouiller** dans la barre d’outils :
+   Dans la console, vous pouvez gérer le mode LECTURE SEULE avec le **Déverrouiller** et **Verrouiller** actions dans la barre d’outils :
 
    ![Barre d’outils du modèle de fragment de contenu verrouillé](assets/cfm-model-locked.png)
 
    * Vous pouvez **Déverrouiller** un modèle pour activer les modifications.
 
-      Si vous sélectionnez **Déverrouiller**, un avertissement s’affiche et vous devez confirmer l’action **Déverrouiller** :
+      Si vous sélectionnez **Déverrouiller** un avertissement s’affiche et vous devez confirmer que la variable **Déverrouiller** action :
       ![Message lors du déverrouillage du modèle de fragment de contenu](assets/cfm-model-unlock-message.png)
 
       Vous pouvez ensuite ouvrir le modèle pour le modifier.
 
    * Vous pouvez également **Verrouiller** le modèle par la suite.
-   * La republication du modèle le remet immédiatement en mode **Verrouillé** (LECTURE SEULE).
+   * La republication du modèle le réinitialise immédiatement. **Verrouillé** Mode (LECTURE SEULE).
 
 * Éditeur de modèles
 
-   * Lorsque vous ouvrez un modèle verrouillé, trois actions s’affichent : **Annuler**, **Afficher uniquement la lecture**, **Modifier** :
+   * Lorsque vous ouvrez un modèle verrouillé, trois actions s’affichent : **Annuler**, **Afficher en lecture seule**, **Modifier**:
 
       ![Message lors de l’affichage d’un modèle de fragment de contenu verrouillé](assets/cfm-model-editor-lock-message.png)
 
-   * Si vous sélectionnez **Afficher uniquement la lecture**, vous pouvez voir le contenu et la structure du modèle :
+   * Si vous sélectionnez **Afficher en lecture seule** vous pouvez voir le contenu et la structure du modèle :
 
       ![Affichage en lecture seule - modèle de fragment de contenu verrouillé](assets/cfm-model-editor-locked-view-only.png)
 
-   * Si vous sélectionnez **Modifier**, vous pouvez modifier et enregistrer vos mises à jour :
+   * Si vous sélectionnez **Modifier** vous pouvez modifier et enregistrer vos mises à jour :
 
       ![Modifier : modèle de fragment de contenu verrouillé](assets/cfm-model-editor-locked-edit.png)
 
       >[!NOTE]
       Un avertissement peut toujours s’afficher en haut de l’écran, mais c’est le cas lorsque le modèle est déjà utilisé par les fragments de contenu existants.
 
-   * **** L’annulation vous ramène à la console.
+   * **Annuler** vous renvoie à la console.

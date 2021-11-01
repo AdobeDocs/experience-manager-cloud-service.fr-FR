@@ -5,7 +5,7 @@ exl-id: 3e4445b7-6215-4126-aefa-bdba1ee1398d
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '147'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Découvrez le développement d’applications sur une seule page (SPA) grâce à
 
 Tout comme celui relatif à WKND pour AEM, ce tutoriel consacré aux SPA offre un exemple de bout en bout de la création de vos propres applications sur une seule page, modifiables à l’aide d’AEM, depuis la configuration du projet jusqu’au routage de l’application.
 
-* [Créer votre première SPA Angular dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
-* [Créer votre première SPA React dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
+* [Créer votre première SPA Angular dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html?lang=fr)
+* [Créer votre première SPA React dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html?lang=fr)
 
 Toutefois, avant de vous engager dans votre propre projet SPA pour AEM, vous pouvez également consulter le document [Développement de SPA pour AEM](developing.md).

@@ -226,7 +226,7 @@ Dans la mesure où il est référencé lors du rendu d’une page, le modèle (t
 1. Sélectionnez les **Politiques de contenu** à publier en tandem.
 1. Sélectionnez **Publier** dans la barre d’outils pour terminer l’action.
 
-## Modification des modèles – Créateurs de modèles {#editing-templates-template-authors}
+## Modification des modèles  – Créateurs de modèles {#editing-templates-template-authors}
 
 Lors de la création ou de la modification d’un modèle, vous pouvez définir différents aspects. La modification de modèles est similaire à la création de pages.
 

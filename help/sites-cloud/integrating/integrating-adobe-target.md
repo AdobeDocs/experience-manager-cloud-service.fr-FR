@@ -7,7 +7,7 @@ exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '1035'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -36,7 +36,7 @@ Adobe Launch est nécessaire afin de gérer les propriétés côté client pour 
 
 ### Configuration IMS {#ims-configuration}
 
-Une configuration IMS pour Launch et Target est nécessaire pour intégrer correctement Target à AEM et Launch. Bien que la configuration IMS de Launch est préconfigurée dans AEM as a Cloud Service, celle de Target doit être créée (une fois Target approvisionné). Reportez-vous à [cette vidéo](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) et à [cette page](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html) pour savoir comment créer la configuration IMS de Target.
+Une configuration IMS pour Launch et Target est nécessaire pour intégrer correctement Target à AEM et Launch. Bien que la configuration IMS de Launch est préconfigurée dans AEM as a Cloud Service, celle de Target doit être créée (une fois Target approvisionné). Reportez-vous à [cette vidéo](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) et à [cette page](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html?lang=fr) pour savoir comment créer la configuration IMS de Target.
 
 ### ID de client Adobe Target et code client Adobe Target {#tenant-client}
 
@@ -134,7 +134,7 @@ Dans **Règle**, définissez et ordonnez une séquence d’actions qui sera exé
 
 ### Concevoir et publier {#build-publish}
 
-Pour savoir comment concevoir et publier, reportez-vous à cette [page](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html).
+Pour savoir comment concevoir et publier, reportez-vous à cette [page](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html?lang=fr).
 
 ## Modifications de la structure de contenu entre les configurations de l’interface utilisateur classique et tactile {#changes-content-structure}
 

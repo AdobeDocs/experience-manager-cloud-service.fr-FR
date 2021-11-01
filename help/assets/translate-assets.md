@@ -2,23 +2,23 @@
 title: Création et gestion des ressources numériques en plusieurs langues
 description: Découvrez comment automatiser les workflows de traduction des ressources, y compris les fichiers binaires, les métadonnées et les balises, dans plusieurs langues.
 contentOwner: AG
-feature: Gestion des ressources, Traduction
+feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '2587'
-ht-degree: 94%
+source-wordcount: '2584'
+ht-degree: 100%
 
 ---
 
 # Ressources multilingues {#multilingual-assets}
 
-Les ressources multilingues sont des ressources comportant des fichiers binaires, des métadonnées et des balises dans plusieurs langues. En règle générale, les fichiers binaires, les métadonnées et les balises d’une ressource existent dans une langue, et sont ensuite traduits dans d’autres langues pour être utilisés dans des projets multilingues. Adobe Experience Manager Assets vous permet d’automatiser les processus de traduction des ressources (y compris les fichiers binaires, les métadonnées et les balises) afin de générer des ressources dans d’autres langues à utiliser dans des projets multilingues.
+Les ressources multilingues sont des ressources comportant des fichiers binaires, des métadonnées et des balises dans plusieurs langues. En règle générale, les fichiers binaires, les métadonnées et les balises d’une ressource existent dans une langue, et sont ensuite traduits dans d’autres langues pour être utilisés dans des projets multilingues. Adobe Experience Manager Assets vous permet d’automatiser les workflows de traduction des ressources (y compris les fichiers binaires, les métadonnées et les balises) pour générer des ressources dans d’autres langues à utiliser dans des projets multilingues.
 
-Pour automatiser les processus de traduction, vous intégrez des fournisseurs de services de traduction à Experience Manager et créez des projets pour traduire des ressources dans plusieurs langues. Experience Manager prend en charge les workflows de traduction humaine et automatique.
+Pour automatiser les workflows de traduction, vous intégrez des fournisseurs de services de traduction à Experience Manager et créez des projets pour traduire les ressources dans plusieurs langues. Experience Manager prend en charge les workflows de traduction humaine et automatique.
 
-Traduction humaine : Les ressources traduites sont renvoyées et importées dans Experience Manager. Lorsque votre fournisseur de traduction est intégré à Experience Manager, les ressources sont automatiquement envoyées entre Experience Manager et le fournisseur de traduction.
+Traduction humaine : les ressources traduites sont renvoyées et importées dans Experience Manager. Lorsque votre fournisseur de traduction est intégré à Experience Manager, les ressources sont envoyées automatiquement entre Experience Manager et le fournisseur de traduction.
 
 Traduction automatique : le service de traduction automatique traduit instantanément les métadonnées et les balises des ressources.
 
@@ -52,7 +52,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 Les ressources multilingues sont des ressources comportant des fichiers binaires, des métadonnées et des balises dans plusieurs langues. En règle générale, les fichiers binaires, les métadonnées et les balises d’une ressource existent dans une langue, et sont ensuite traduits dans d’autres langues pour être utilisés dans des projets multilingues.
 
-Dans Adobe Experience Manager Assets, les ressources multilingues sont incluses dans des dossiers, où chaque dossier contient les ressources dans une langue différente.
+Dans Adobe Experience Manager Assets, les ressources multilingues se trouvent dans des dossiers, chaque dossier contenant les ressources dans une langue différente.
 
 Chaque dossier de langue est appelé une copie de langue. Le dossier racine d’une copie de langue, nommé racine de langue, identifie la langue du contenu de la copie de langue. Par exemple, `/content/dam/it` est la racine de langue italienne de la copie en italien. Les copies de langue doivent utiliser une [racine de langue correctement configurée](#create-a-language-root) pour que la langue correcte soit ciblée lors de la traduction des ressources source.
 
@@ -234,7 +234,7 @@ Utilisez l’option **Créer uniquement la structure** pour créer une hiérarch
 
 ## Application de services cloud de traduction à des dossiers {#applying-translation-cloud-services-to-folders}
 
-Adobe Experience Manager vous permet de bénéficier des services de traduction cloud du fournisseur de traduction de votre choix pour vous assurer que vos ressources sont traduites en fonction de vos besoins.
+Adobe Experience Manager vous offre des services de traduction basés sur le cloud du fournisseur de traduction de votre choix afin de vous assurer que vos ressources sont traduites en fonction de vos besoins.
 
 Vous pouvez appliquer le service cloud de traduction directement à votre dossier de ressources afin qu’elles puissent être utilisées au cours des workflows de traduction.
 
@@ -263,7 +263,7 @@ L’application de services cloud directement à votre dossier de ressources él
 Si vous souhaitez appliquer un connecteur personnalisé pour les services de traduction que vous souhaitez utiliser dans les workflows. Pour appliquer un connecteur personnalisé, installez d’abord le connecteur à partir de Package Manager. Configurez ensuite le connecteur depuis la console Cloud Services. Une fois le connecteur configuré, il est disponible dans la liste des connecteurs de l’onglet Cloud Services décrits dans la section [Application des services de traduction](#applying-the-translation-services). Une fois que vous avez appliqué le connecteur personnalisé et exécuté des workflows de traduction, la mosaïque **[!UICONTROL Résumé de traduction]** du projet de traduction affiche les détails du connecteur dans les sections **[!UICONTROL Fournisseur]** et **[!UICONTROL Méthode]**.
 
 1. Installez le connecteur depuis le gestionnaire de modules.
-1. Cliquez/appuyez sur le logo du Experience Manager, puis accédez à **[!UICONTROL Outils > Déploiement > Cloud Services]**.
+1. Cliquez/appuyez sur le logo Experience Manager et accédez à **[!UICONTROL Outils > Déploiement > Services Cloud]**.
 1. Localisez le connecteur que vous avez installé sous **[!UICONTROL Services tiers]** sur la page **[!UICONTROL Services Cloud]**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)

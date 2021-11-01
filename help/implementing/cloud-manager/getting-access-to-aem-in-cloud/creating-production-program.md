@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: 0d3a4b296440becab8ef372a1061f1981cb05897
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 77%
+ht-degree: 92%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 77%
 
 Un programme de *production* est destiné à un utilisateur qui connaît AEM et Cloud Manager et qui est prêt à se lancer dans l’écriture, la compilation et le test de code puis à le déployer en production.
 
-Regardez les tutoriels vidéo en deux parties pour savoir comment créer un programme dans Cloud Manager :
+Regardez les tutoriels vidéo en deux parties pour savoir comment créer un programme dans Cloud Manager :
 
 >[!VIDEO](https://video.tv.adobe.com/v/334953)
 
@@ -41,7 +41,7 @@ Pour créer un programme de production, procédez comme suit :
 
    ![](assets/setup-prod-commerce.png)
 
-1. Une fois que la carte du programme s’affiche sur la landing page, sélectionnez la balise **...** pour afficher les options de menu disponibles. Sélectionnez **Cloud Manager**, comme illustré dans la figure ci-dessous, pour accéder à la page **Aperçu** de Cloud Manager.
+1. Une fois que la carte du programme s’affiche sur la landing page, sélectionnez **...** pour afficher les options de menu disponibles. Sélectionner **Cloud Manager**, comme illustré dans la figure ci-dessous, pour accéder au **Présentation** page.
 
    ![](assets/navigate-cm.png)
 

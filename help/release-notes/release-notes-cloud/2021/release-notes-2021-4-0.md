@@ -4,12 +4,12 @@ description: Notes de mise à jour de la version 2021.4.0 d’ [!DNL Adobe Expe
 source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '1535'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 
-# Notes de mise à jour actuelles pour[!DNL Adobe Experience Manager]as a Cloud Service {#release-notes}
+# Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La section suivante concerne les notes de mise à jour générales de la version actuelle (la plus récente) d’[!DNL Experience Manager] as a Cloud Service.
 
@@ -33,7 +33,7 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Nouveautés de [!DNL Sites] {#what-is-new-sites}
+### Nouveautés d’[!DNL Sites]  {#what-is-new-sites}
 
 * Points d’entrée GraphQL – Il est désormais possible d’activer l’API AEM GraphQL pour les configurations d’AEM Sites individuelles et de créer des points d’entrée GraphQL personnalisés pour ces configurations à l’aide d’une nouvelle interface utilisateur de la console GraphQL. L’interface utilisateur permet également de gérer les points d’entrée GraphQL.
 
@@ -43,19 +43,19 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 * Modèles de contenu, nouveau type de données Espace réservé d’onglet – Le nouveau type de données Espace réservé d’onglet permet de regrouper les types de données dans des sections qui seront rendues sous les onglets de l’éditeur de fragment de contenu.
 
-### Correctifs dans [!DNL Sites] {#bug-fixes-sites}
+### Bogues corrigés dans [!DNL Sites] {#bug-fixes-sites}
 
 * Fragments de contenu – Le déplacement de fragments de contenu ou de dossiers met désormais à jour les références imbriquées dans le fragment (CQ-4320815).
 
 * GraphQL – Les requêtes persistantes prennent désormais en charge les points d’entrée définis par l’utilisateur et spécifiques aux configurations AEM Sites (CQ-4315928).
 
-## [!DNL Adobe Experience Manager Assets] as a  [!DNL Cloud Service] {#assets}
+## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nouveautés de [!DNL Assets] {#what-is-new-assets}
+### Nouveautés d’[!DNL Assets]  {#what-is-new-assets}
 
 * [!DNL Experience Manager] n’archive pas les téléchargements de ressources uniques où le fichier d’origine est téléchargé. Cette amélioration permet des téléchargements plus rapides.
 
-* Lorsqu’une ressource est téléchargée via l’option linkshare, vous pouvez désormais choisir de télécharger ou non les rendus. Auparavant, tous les rendus de ressources étaient téléchargés.
+* Lorsque vous téléchargez une ressource à l’aide d’un lien, vous pouvez désormais choisir de télécharger ou non les rendus. Auparavant, tous les rendus de ressources étaient téléchargés.
 
 * Les administrateurs peuvent configurer [!DNL Experience Manager] pour supprimer la source des ressources après une ingestion de ressources en masse. Voir la section [Ingestion de ressources en bloc](/help/assets/add-assets.md#asset-bulk-ingestor).
 
@@ -63,7 +63,7 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 * Lors de l’importation de ressources à l’aide de l’outil d’importation en bloc, les administrateurs ont désormais la possibilité de supprimer les fichiers source une fois l’importation réussie. Voir la section [Ingestion de ressources en bloc](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* Lors de la modification d’un schéma de métadonnées, un nouveau champ de sélecteur de chemin racine permet aux administrateurs d’effectuer rapidement et facilement la sélection, réduisant ainsi le temps de configuration.
+* Lors de la modification d’un schéma de métadonnées, un nouveau champ de sélecteur de chemin racine permet aux administrateurs d’effectuer rapidement et facilement la sélection, et donc de réduire le temps de configuration.
 
 * Lors de la modification d’un schéma de métadonnées, un type de données est ajouté, qui fournit une zone de texte de forme libre dans l’éditeur de métadonnées. Les utilisateurs peuvent utiliser cette zone de texte pour saisir du texte de forme libre en tant que métadonnées d’une ressource. Voir [Éditeur de schéma de métadonnées](/help/assets/metadata-schemas.md).
 
@@ -73,7 +73,7 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 * Lorsque vous parcourez des ressources en mode Colonne, un indicateur visuel s’affiche pour les ressources expirées.
 
-### Correctifs dans [!DNL Assets] {#bug-fixes-assets}
+### Bogues corrigés dans [!DNL Assets] {#bug-fixes-assets}
 
 * Lorsque vous tentez de déplacer plusieurs ressources ou dossiers, une erreur est consignée dans la console et l’opération de déplacement n’est pas effectuée. L’opération de déplacement échoue si le titre ne peut pas être mis à jour. (CQ-4322080)
 
@@ -87,11 +87,11 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 * Vous pouvez utiliser des points de suspension comme annotation pour passer en revue les ressources. Lorsqu’une petite ellipse est utilisée, elle chevauche le numéro de l’annotation dans la version imprimée. (CQ-4316792)
 
-* L’option de publication rapide ne s’affiche pas lorsqu’une ressource est sélectionnée dans les résultats de recherche après l’avoir recherchée. (CQ-4317748)
+* L’option de publication rapide ne s’affiche pas lorsqu’une ressource est sélectionnée dans les résultats de recherche après avoir été recherchée. (CQ-4317748)
 
-## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
+## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Nouveautés de [!DNL Forms] {#what-is-new-forms}
+### Nouveautés d’[!DNL Forms]  {#what-is-new-forms}
 
 * **Utilisation de la méthode d’authentification d’identité ID gouvernement dans les formulaires adaptatifs prenant en charge Adobe Sign**
 
@@ -115,7 +115,7 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
    Vous pouvez utiliser un fichier XDP comme modèle de document d’enregistrement sur les instances de Cloud Service et dans le SDK AEM Forms as a Cloud Service (environnement de développement local). Auparavant, la prise en charge était limitée uniquement aux instances de Cloud Service.
 
-### Correctifs dans [!DNL Forms] {#bug-fixes-forms}
+### Bogues corrigés dans [!DNL Forms] {#bug-fixes-forms}
 
 * Lorsqu’un formulaire adaptatif configuré pour ne pas générer de document d’enregistrement est envoyé à un workflow AEM configuré pour générer un document d’enregistrement, aucun message d’erreur ne s’affiche et la tâche ne parvient pas à effectuer l’envoi.
 
@@ -142,7 +142,7 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 * Le champ de catégorie racine n’était pas affiché sous l’onglet Commerce dans les propriétés de page des pages de catégorie.
 
-## Cloud Manager  {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 Cette section présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.4.0.
 

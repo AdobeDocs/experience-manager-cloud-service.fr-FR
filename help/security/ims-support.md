@@ -5,7 +5,7 @@ exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: 5fa6809a9b4cdfa230ea3ebb3b0c9964807e0230
 workflow-type: tm+mt
 source-wordcount: '2022'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -167,7 +167,7 @@ Pour les autres utilisateurs, la connexion via IMS peut être utilisée une fois
 
 >[!NOTE]
 >
->Tout utilisateur peut être créé dans IMS à l’aide d’un Adobe ID ou d’un Federated ID. Si un utilisateur est configuré à l’aide de Federated ID, il est authentifié à l’aide du fournisseur d’identité de sa société pour se connecter.
+>Tout utilisateur peut être créé dans IMS à l’aide d’un Adobe ID ou d’un Federated ID. Si un utilisateur est configuré à l’aide d’un Federated ID, il est authentifié lors de la connexion à l’aide du fournisseur d’identité de son entreprise.
 
 Il est alors redirigé vers l’écran de connexion IMS et il doit saisir ses informations d’identification :
 
@@ -213,7 +213,7 @@ Pour pouvoir accéder à Cloud Manager ou à AEM as a Cloud Service, vous devez 
 Reportez-vous à Définitions de rôle pour en savoir plus sur les rôles des utilisateurs qui régissent la disponibilité de fonctionnalités spécifiques dans Cloud Manager.
 
 >[!NOTE]
->Cloud Manager dispose de rôles préconfigurés avec les autorisations appropriées. Pour en savoir plus sur les rôles dotés d’autorisations spécifiques, de tâches préconfigurées ou d’autorisations associées à chaque rôle, consultez [Autorisations basées sur les rôles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html).
+>Cloud Manager dispose de rôles préconfigurés avec les autorisations appropriées. Pour en savoir plus sur les rôles dotés d’autorisations spécifiques, de tâches préconfigurées ou d’autorisations associées à chaque rôle, consultez [Autorisations basées sur les rôles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=fr).
 
 **Procédure d’ajout d’un utilisateur**
 

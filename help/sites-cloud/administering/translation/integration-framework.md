@@ -23,7 +23,7 @@ Pour une présentation des fonctions de traduction de contenu d’AEM, voir [Tra
 
 >[!TIP]
 >
->Si vous commencez à traduire du contenu, reportez-vous à notre [Parcours de traduction Sites,](/help/journey-sites/translation/overview.md) , qui est un chemin guidé vers la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
+>Si vous êtes un débutant dans la traduction de contenu, veuillez vous référer à notre [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui est un chemin guidé à travers la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
 
 ## Connexion à un fournisseur de services de traduction {#connecting-to-a-translation-service-provider}
 

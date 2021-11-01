@@ -5,7 +5,7 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 source-git-commit: 4533cbc689d69cbe126791b4426123f890754507
 workflow-type: tm+mt
 source-wordcount: '341'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -41,7 +41,7 @@ La suppression du nom de domaine personnalisé est en cours.
 La suppression du nom de domaine personnalisé a échoué. Vous devez réessayer. Consultez [Suppression d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) pour en savoir plus.
 
 
-## Configurations préexistantes du réseau de diffusion de contenu pour les noms de domaine personnalisés {#pre-existing-cdn}
+## Configurations CDN pré-existantes pour les noms de domaine personnalisés {#pre-existing-cdn}
 
 Les clients disposant d’environnements qui incluent des configurations CDN préexistantes pour les listes autorisées d’adresses IP, des certificats SSL ou des noms de domaines personnalisés voient le message suivant dans les pages de détails **Liste autorisée d’adresses IP** et **Environnement**. Le message affiché dans l’interface utilisateur disparaît une fois que le client a effectué la migration complète de toutes les configurations d’environnement préexistantes via l’interface utilisateur et il peut s’écouler entre 1 et 2 jours ouvrés avant que le message ne disparaisse.
 

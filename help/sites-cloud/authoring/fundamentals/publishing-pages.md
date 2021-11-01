@@ -5,7 +5,7 @@ exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
 workflow-type: tm+mt
 source-wordcount: '1769'
-ht-degree: 86%
+ht-degree: 97%
 
 ---
 
@@ -82,7 +82,7 @@ Si vous modifiez une page, vous pouvez la publier directement à partir de l’�
 
 >[!NOTE]
 >
->Les pages accessibles par [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) dans l’éditeur ne peuvent pas être publiées. Les options de publication de l’éditeur ne sont disponibles que pour les pages accessibles à partir de leur chemin d’accès réel.
+>Pages accessed by [aliases](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) in the editor can not be published. Publish options in the editor are only available for pages accessed via their actual paths.
 
 ### Publication à partir de la console {#publishing-from-the-console}
 
@@ -113,7 +113,7 @@ Pour publier une page avec l’option Publication rapide :
 
 #### Gérer la publication {#manage-publication}
 
-**Gérer la** publication offre plus d’options que Publier  **rapidement**, ce qui permet d’inclure des pages enfants, de personnaliser les références et de démarrer les workflows applicables. Il offre également la possibilité de publier à une date ultérieure.
+La méthode **Gérer la publication** propose plus d’options que **Publication rapide**, dont la possibilité d’inclure des pages enfants, de personnaliser les références ou encore de lancer n’importe quel workflow applicable. Elle offre également la possibilité de publier la page à une date ultérieure.
 
 Pour modifier ou annuler la publication d’une page à l’aide de l’option Gérer la publication :
 
@@ -148,7 +148,7 @@ Pour modifier ou annuler la publication d’une page à l’aide de l’option G
 
    Vous pouvez sélectionner le bouton **Ajouter du contenu** pour ajouter des pages à la liste des pages à publier, au cas où vous auriez omis d’en sélectionner une avant de lancer l’assistant Gérer la publication.
 
-   Si vous sélectionnez le bouton **Ajouter du contenu** , le [navigateur de chemins](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) démarre pour permettre la sélection de contenu.
+   Le fait de sélectionner le bouton **Ajouter du contenu** lance l’[explorateur de chemins d’accès](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser), qui permet de sélectionner du contenu.
 
    Sélectionnez les pages souhaitées, puis cliquez sur **Sélectionner** pour ajouter le contenu à l’assistant ou sur **Annuler** pour annuler la sélection et revenir à l’assistant.
 
@@ -178,7 +178,7 @@ Pour modifier ou annuler la publication d’une page à l’aide de l’option G
    >
    >Voir [Publication et annulation de la publication d’une arborescence](#publishing-and-unpublishing-a-tree)
 
-   Cliquez sur **Inclure les enfants** pour ouvrir une boîte de dialogue vous permettant d’effectuer les opérations suivantes :
+   Le fait de cliquer sur **Inclure les enfants** ouvre une boîte de dialogue qui permet d’effectuer les opérations suivantes :
 
    * **Inclure les enfants**
    * **Inclure seulement les enfants immédiats**
@@ -224,7 +224,7 @@ Lors de la modification d’une page, si vous souhaitez annuler sa publication, 
 
 >[!NOTE]
 >
->Les pages accessibles par [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) dans l’éditeur ne peuvent pas être dépubliées. Les options de publication de l’éditeur ne sont disponibles que pour les pages accessibles à partir de leur chemin d’accès réel.
+>Pages accessibles par [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) dans l’éditeur ne peut pas être dépublié. Les options de publication de l’éditeur ne sont disponibles que pour les pages accessibles à partir de leur chemin d’accès réel.
 
 ### Annulation de la publication à partir de la console {#unpublishing-from-the-console}
 
@@ -257,18 +257,18 @@ Pour ce faire, vous pouvez utiliser l’option [Gérer la publication](#manage-p
 
    ![Sélection de pages dans la boîte de dialogue Gérer la publication](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-1. Dans la boîte de dialogue **Inclure les enfants** :
+1. Dans la boîte de dialogue **Inclure les enfants** :
 
    * sélectionnez **Inclure les enfants**
-   * désélectionnez **Inclure uniquement les enfants immédiats**
-   * désélectionnez **Inclure uniquement les pages déjà publiées**
-   * configurer **Inclure uniquement les pages modifiées** selon les besoins
+   * désélectionnez **Inclure seulement les enfants immédiats**
+   * désélectionnez **Inclure seulement les pages déjà publiées**
+   * configurez **Inclure uniquement les pages modifiées** selon les besoins
 
-   Ces options sont sélectionnées par défaut. N’oubliez pas de les configurer. Confirmez la sélection avec **OK** pour ajouter le contenu à la publication/annulation de la publication.
+   Ces options sont sélectionnées par défaut. Vous devez donc penser à les configurer. Confirmez la sélection avec **OK** pour ajouter le contenu à la publication/annulation de la publication.
 
    ![Inclusion d’enfants pour la publication d’arborescence](/help/sites-cloud/authoring/assets/publishing-include-children-tree.png)
 
-1. Dans l’assistant **Gérer la publication** , vous pouvez personnaliser davantage la sélection en ajoutant des pages supplémentaires ou en supprimant celles sélectionnées.
+1. Dans l’assistant **Gérer la publication**, vous pouvez personnaliser davantage la sélection en ajoutant des pages supplémentaires ou en supprimant celles sélectionnées.
 
    N’oubliez pas que vous pouvez également passer en revue les références à publier au moyen de l’option **Références publiées**.
 

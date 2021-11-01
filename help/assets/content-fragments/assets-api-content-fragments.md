@@ -30,7 +30,7 @@ L’[API REST Assets](/help/assets/mac-api-assets.md) permet aux développeurs 
 
 L’API permet d’utiliser Adobe Experience Manager as a Cloud Service en tant que système de gestion de contenu (CMS) sans interface utilisateur en fournissant des services de contenu à une application frontale JavaScript. Ou toute autre application pouvant exécuter des requêtes HTTP et gérer les réponses JSON.
 
-Par exemple, les [applications d’une seule page (SPA)](/help/implementing/developing/hybrid/introduction.md), basées sur une structure ou personnalisées, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
+Par exemple : [Applications d’une seule page (SPA)](/help/implementing/developing/hybrid/introduction.md), basés sur une structure ou personnalisés, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
 
 Bien que les [composants de base AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) fournissent une API très complète, flexible et personnalisable pouvant traiter les opérations de lecture requises à cette fin, et dont la sortie JSON peut être personnalisée, ils ne nécessitent pas de connaissances sur AEM WCM (Web Content Management) pour la mise en œuvre, car ils doivent être hébergés sur des pages reposant sur des modèles AEM dédiés. Les entreprises de développement d’applications sur une seule page n’ont pas toutes accès à ces connaissances.
 
@@ -323,6 +323,7 @@ Retourné lorsque :
    * création réussie d’un fragment de contenu via `POST`
 
 * **404** (Introuvable)
+
 Affiché dans le scénario suivant :
 
    * le fragment de contenu demandé n’existe pas

@@ -16,7 +16,7 @@ ht-degree: 96%
 
 # Sites {#sites}
 
-+ [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
++ [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
 + [Modifications notables apportées à AEM Sites dans AEM Cloud Service](sites-cloud-changes.md)
 + Création {#authoring}
    + Prise en main {#getting-started}
@@ -34,7 +34,7 @@ ht-degree: 96%
       + [Modification du contenu de la page](authoring/fundamentals/editing-content.md)
       + [Éditeur de texte enrichi](authoring/fundamentals/rich-text-editor.md)
       + [Propriétés de page](authoring/fundamentals/page-properties.md)
-      + [Aperçu du contenu](authoring/fundamentals/previewing-content.md)
+      + [Prévisualisation du contenu](authoring/fundamentals/previewing-content.md)
       + [Publication de pages](authoring/fundamentals/publishing-pages.md)
       + [Fragments de contenu](authoring/fundamentals/content-fragments.md)
       + [Fragments d’expérience](authoring/fundamentals/experience-fragments.md)
@@ -69,7 +69,7 @@ ht-degree: 96%
       + [Utilisation des workflows](authoring/workflows/overview.md)
       + [Application de workflows aux pages](authoring/workflows/applying.md)
       + [Participation aux workflows](authoring/workflows/participating.md)
-   + Personnalisation {#personalization}
+   + Personnalisation  {#personalization}
       + [Présentation de la personnalisation](authoring/personalization/overview.md)
       + [Aperçu des pages à l’aide des données ContextHub](authoring/personalization/contexthub.md)
       + [Création de contenu ciblé en mode Ciblage](authoring/personalization/targeted-content.md)

@@ -5,7 +5,7 @@ exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
 source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '2522'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 98%
 >id="aemcloud_bpa_using"
 >title="Utilisation de l’analyseur des bonnes pratiques"
 >abstract="Consultez la documentation relative à l’utilisation de l’analyseur des bonnes pratiques (anciennement Cloud Readiness Analyzer) et du rapport généré. Le rapport de l’analyseur des bonnes pratiques permet de mieux comprendre le degré de préparation général à la mise à niveau."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Considérations importantes concernant l’utilisation de l’analyseur des bonnes pratiques {#imp-considerations}
 
 Consultez la section ci-dessous afin de comprendre les points importants à prendre en compte pour utiliser l’analyseur des bonnes pratiques (BPA, Best Practices Analyzer) :
 
-* Les rapports BPA sont générés à l’aide des résultats obtenus par le [détecteur de motifs](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html) d’Adobe Experience Manager (AEM). La version du détecteur de motifs utilisée par BPA se trouve dans le module d’installation BPA.
+* Les rapports BPA sont générés à l’aide des résultats obtenus par le [détecteur de motifs](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=fr) d’Adobe Experience Manager (AEM). La version du détecteur de motifs utilisée par BPA se trouve dans le module d’installation BPA.
 
 * L’outil BPA ne peut être exécuté que par un utilisateur **admin** ou un utilisateur figurant dans le groupe **administrateurs**.
 
@@ -128,7 +128,7 @@ Dans toutes les versions, le détecteur de motifs inclus peut s’exécuter de m
 id="aemcloud_bpa_interpreting"
 title="Interprétation du rapport de l’analyseur des bonnes pratiques"
 abstract="Il existe deux options pour afficher les sorties de rapport de l’analyseur des bonnes pratiques : IU et CSV. Lorsque l’analyseur des bonnes pratiques est exécuté dans l’instance AEM, le rapport de l’IU s’affiche sous la forme de résultats dans la fenêtre des outils. Le format CSV du rapport contient des informations générées à partir de la sortie du détecteur de motifs, triées et organisées par types de catégories, sous-types et niveaux d’importance."
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="Rapport Analyse des bonnes pratiques"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=fr#analysis-report" text="Rapport d’analyse des bonnes pratiques"
 additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=fr" text="Présentation des catégories de rapports de l’analyseur des bonnes pratiques"
 
 Lorsque l’analyseur des bonnes pratiques est exécuté dans l’instance AEM, le rapport s’affiche sous la forme de résultats dans la fenêtre des outils.
@@ -249,8 +249,8 @@ La valeur de cette propriété est la durée de vie du cache en secondes. Un adm
 
 BPA utilise un compte d’utilisateur de service système nommé `repository-reader-service` pour exécuter le détecteur de motifs. Ce compte est disponible dans AEM 6.2 et versions ultérieures. Dans AEM 6.1, ce compte doit être créé *avant* l’installation de BPA en procédant comme suit :
 
-1. Suivez les instructions de la section [Création d’un utilisateur de service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) pour créer un utilisateur. Définissez l’ID utilisateur sur `repository-reader-service` et laissez le champ Chemin intermédiaire vide, puis cliquez sur la coche verte.
+1. Suivez les instructions de la section [Création d’un utilisateur de service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html?lang=fr#creating-a-new-service-user) pour créer un utilisateur. Définissez l’ID utilisateur sur `repository-reader-service` et laissez le champ Chemin intermédiaire vide, puis cliquez sur la coche verte.
 
-2. Suivez les instructions de la section [Gestion des utilisateurs et des groupes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#managing-users-and-groups), en particulier les instructions d’ajout d’utilisateurs à un groupe afin d’ajouter l’utilisateur `repository-reader-service` au groupe `administrators`.
+2. Suivez les instructions de la section [Gestion des utilisateurs et des groupes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=fr#managing-users-and-groups), en particulier les instructions d’ajout d’utilisateurs à un groupe afin d’ajouter l’utilisateur `repository-reader-service` au groupe `administrators`.
 
 3. Installez le package BPA via le gestionnaire de modules sur votre instance AEM source. (Cela a pour effet d’ajouter la modification de configuration nécessaire à la configuration ServiceUserMapper pour l’utilisateur du service système `repository-reader-service`.)

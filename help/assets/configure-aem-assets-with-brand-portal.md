@@ -8,7 +8,7 @@ exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '2402'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ La configuration d’Adobe Experience Manager Assets Brand Portal permet de publ
 
 L’utilisateur de Cloud Manager active Brand Portal pour une instance AEM Assets as a [!DNL Cloud Service]. Le processus d’activation crée les configurations requises (jeton d’autorisation, configuration IMS et service cloud de Brand Portal) à l’arrière-plan et reflète le statut du client Brand Portal dans Cloud Manager. L’activation de Brand Portal permet aux utilisateurs d’AEM Assets de publier des ressources sur Brand Portal et de les distribuer aux utilisateurs de Brand Portal.
 
-**Conditions préalables**
+**Prérequis**
 
 Vous avez besoin des éléments suivants pour activer Brand Portal sur votre instance AEM Assets as a [!DNL Cloud Service] :
 
@@ -63,7 +63,7 @@ Vous pouvez activer Brand Portal au moment de la création des environnements p
 >Ne modifiez aucun paramètre généré automatiquement.
 
 **Voir également** :
-* [Ajouter des utilisateurs et des rôles dans AEM Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
+* [Ajouter des utilisateurs et des rôles dans AEM Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=fr)
 
 * [Gestion des environnements dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments)
 
@@ -135,8 +135,8 @@ Vous pouvez maintenant effectuer les tâches suivantes :
 * [Publication de dossiers à partir d’AEM Assets sur Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Publication de collections à partir d’AEM Assets sur Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
 * [Publication de ressources de Brand Portal vers AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=fr) – Découverte de ressources dans Brand Portal
-* [Publication de paramètres prédéfinis, de schémas et de facettes sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
-* [Publication de balises sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+* [Publication de paramètres prédéfinis, de schémas et de facettes sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html?lang=fr)
+* [Publication de balises sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html?lang=fr)
 
 Pour plus d’informations, voir [Publication de balises sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=fr).
 
@@ -198,7 +198,7 @@ Auparavant, AEM Assets as a [!DNL Cloud Service] était configuré manuellement
 >
 >Une instance AEM Assets as a [!DNL Cloud Service] ne doit être configurée qu’avec un seul client Brand Portal.
 
-**Conditions préalables**
+**Prérequis**
 
 Pour configurer AEM Assets avec Brand Portal, vous devez disposer des éléments suivants :
 
@@ -255,7 +255,7 @@ Dans Adobe Developer Console, les projets et les API sont configurés au niveau 
 
 Procédez comme suit pour générer les informations d’identification du compte de service et la charge utile JWT :
 
-1. Connectez-vous à Adobe Developer Console avec les privilèges d’administrateur système sur l’organisation IMS (client Brand Portal). L’URL par défaut est [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. Connectez-vous à Adobe Developer Console avec les privilèges d’administrateur système sur l’organisation IMS (client Brand Portal). L’URL par défaut est  [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    >[!NOTE]

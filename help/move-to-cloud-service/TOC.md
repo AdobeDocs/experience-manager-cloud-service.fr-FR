@@ -8,7 +8,7 @@ role: Architect, Developer
 source-git-commit: f40a2f2fc885b2f81982ff8cd6883186d505d7f9
 workflow-type: tm+mt
 source-wordcount: '178'
-ht-degree: 52%
+ht-degree: 73%
 
 ---
 
@@ -17,21 +17,21 @@ ht-degree: 52%
 
 + [Transition vers AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
 + Phases du parcours de transition {#phases}
-   + [Préparation](/help/move-to-cloud-service/migration-readiness.md)
+   + [Préparation du](/help/move-to-cloud-service/migration-readiness.md)
    + [Mise en œuvre](/help/move-to-cloud-service/migration-implementation.md)
    + [Activation](/help/move-to-cloud-service/migration-go-live.md)
-   + [Publication activée](/help/move-to-cloud-service/migration-post-go-live.md)
-+ Cloud Accelerated Manager {#cloud-acceleration-manager}
-   + Présentation de Cloud Accelerated Manager {#introduction-cam}
+   + [Post-activation](/help/move-to-cloud-service/migration-post-go-live.md)
++ Cloud Acceleration Manager {#cloud-acceleration-manager}
+   + Présentation de Cloud Acceleration Manager {#introduction-cam}
       + [Présentation](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/overview-cam.md)
       + [Avantages](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/benefits-cam.md)
-   + Utilisation de Cloud Accelerated Manager {#using-cam}
+   + Utilisation de Cloud Acceleration Manager {#using-cam}
       + [Prise en main de Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)
       + [Phase de préparation](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-readiness-phase.md)
-      + [Phase de mise en oeuvre](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
+      + [Phase de mise en œuvre](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
       + [Phase de mise en ligne](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
 + Outils de transition vers le cloud {#cloud-migration}
-   + Analyseur de bonnes pratiques {#best-practices-analyzer}
+   + Analyseur des bonnes pratiques {#best-practices-analyzer}
       + [Présentation](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
       + [Utilisation de l’analyseur des bonnes pratiques](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + Outil de transfert de contenu {#content-transfer-tool}

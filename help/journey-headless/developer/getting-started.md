@@ -58,7 +58,7 @@ La réplication consiste à transférer le contenu entre l’instance de créati
 1. Lorsque ce contenu est prêt, il est répliqué sur l’instance de publication.
 1. Il est ensuite possible d’appeler les API pour récupérer ce contenu.
 
-AEM Headless tire parti de cette base technique en offrant des outils puissants pour gérer le contenu sans tête, qui est [décrit dans la section suivante.](#aem-headless-basics)
+AEM Headless tire parti de cette base technique en offrant des outils puissants pour gérer le contenu headless : [décrits dans la section suivante.](#aem-headless-basics)
 
 ## Concepts de base d’AEM découplé {#aem-headless-basics}
 
@@ -177,15 +177,15 @@ Créez un plan sur la traduction de contenu dont vous avez besoin.
 
 Soyez clair au sujet de votre workflow de mise à jour du contenu. Quel est le processus d’approbation que le système doit prendre en charge ? Est-il possible d’utiliser des workflows AEM pour automatiser ce processus ?
 
-Notez que votre [hiérarchie de contenu](#content-hierarchy) peut être utilisée pour faciliter la traduction.
+Notez que votre [hiérarchie du contenu](#content-hierarchy) peut être utilisé pour faciliter la traduction.
 
-Consultez la section [ressources supplémentaires](#additional-resources) pour obtenir de la documentation supplémentaire sur les processus AEM et les outils de traduction, y compris des liens vers le Parcours de traduction AEM sans affichage.
+Voir [ressources supplémentaires](#additional-resources) pour obtenir de la documentation supplémentaire sur les processus AEM et les outils de traduction, y compris des liens vers le Parcours de traduction AEM sans affichage.
 
 ##### Tirer parti de la hiérarchie du contenu {#content-hierarchy}
 
 La hiérarchie des dossiers peut répondre à deux préoccupations majeures concernant la gestion des contenus :
 
-* [Traduction](#translation)  : AEM gère la traduction du contenu en conservant des copies du contenu dans des dossiers spécifiques aux paramètres régionaux.
+* [Traduction](#translation) : AEM gère la traduction du contenu en conservant des copies du contenu dans des dossiers spécifiques aux paramètres régionaux.
 * Organisation : les dossiers servent à définir une hiérarchie de contenu nécessaire à la prise en charge des besoins de traduction et à gérer logiquement les fragments de contenu.
 
 AEM permet une structure de contenu flexible et une hiérarchie peut être arbitrairement volumineuse. Toutefois, il est important de comprendre que toute modification de la structure des dossiers peut avoir des conséquences inattendues sur les requêtes existantes qui [dépendent du chemin d’accès au contenu.](#developer) Par conséquent, une hiérarchie bien définie, clairement définie à l’avance, peut s’avérer utile aux auteurs de contenu.
@@ -255,7 +255,7 @@ Pour comprendre le trafic et les schémas de trafic, commencez par recueillir de
 
 #### Fréquence de mise à jour {#update-frequency}
 
-Souvent, différentes sections d’expériences ont différentes fréquences de mises à jour de contenu. Il est important de comprendre cela pour pouvoir affiner les configurations du réseau de diffusion de contenu (CDN) et du cache. Il s’agit également d’une entrée importante pour les [architectes du contenu](#content-architects), car ils conçoivent des modèles pour représenter votre contenu. Prenez en compte les éléments suivants :
+Souvent, différentes sections d’expériences ont différentes fréquences de mises à jour de contenu. Il est important de comprendre cela pour pouvoir affiner les configurations du réseau de diffusion de contenu (CDN) et du cache. Il s’agit également d’une contribution importante pour la variable [Architectes de contenu](#content-architects) pendant qu’ils conçoivent des modèles pour représenter votre contenu. Prenez en compte les éléments suivants :
 
 * Certains types de contenu doivent-ils expirer au-delà d’une certaine période ?
 * Certains éléments sont-ils spécifiques à l’utilisateur, donc sans pouvoir être mis en cache ?
@@ -275,7 +275,7 @@ Vous devriez poursuivre votre parcours avec AEM découplé en consultant le docu
 
 Bien qu’il soit recommandé de passer à la partie suivante du parcours de développement en mode découplé en examinant le document [Accès à votre première expérience à l’aide d’AEM découplé](path-to-first-experience.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre le parcours en mode découplé.
 
-* [AEM Parcours](/help/journey-headless/translation/overview.md)  de traduction sans interface - Ce parcours de documentation vous donne une large compréhension de la technologie sans interface, de la manière dont AEM diffuse du contenu sans interface et de la manière dont vous pouvez le traduire.
+* [AEM Parcours de traduction sans affichage](/help/journey-headless/translation/overview.md) - Ce parcours de documentation vous donne une large compréhension de la technologie sans interface, de la manière dont AEM diffuse du contenu sans interface et de la manière dont vous pouvez le traduire.
 * [Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) – Comprendre la structure d’AEM as a Cloud Service
 * [Tutoriels sur AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) – Ces tutoriels pratiques vous permettront de découvrir comment utiliser, avec AEM, les différentes options de diffusion de contenu vers des points de terminaison en mode découplé et choisir ce qui vous convient.
 * [Gestion de contenu en mode découplé à l’aide des API GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) – Suivez ce cours pour bénéficier d’une présentation de l’API GraphQL implémentée dans AEM. L’authentification à l’aide de l’Adobe ID est requise.

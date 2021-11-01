@@ -4,7 +4,7 @@ description: Dynamic Media fournit des ressources visuelles de marchandisage et
 source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
 source-wordcount: '169'
-ht-degree: 67%
+ht-degree: 78%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 67%
 
 Dynamic Media offre des expériences d’affichage interactif, notamment le zoom, la rotation 360° et la vidéo. Dynamic Media intègre de manière unique les workflows de la solution Adobe Experience Manager Digital Asset Management (Assets) afin de simplifier et rationaliser le processus de gestion des campagnes numériques.
 
-L’utilisation de Dynamic Media n’est pas disponible dans l’interface utilisateur classique. Voir [Utilisation de Dynamic Media,](/help/assets/dynamic-media/dynamic-media.md) qui couvre l’interface utilisateur tactile.
+L’utilisation de Dynamic Media n’est pas disponible dans l’interface utilisateur classique. Consultez la section [Utilisation de Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) qui traite de l’interface utilisateur tactile.
 
 <!-- 
 

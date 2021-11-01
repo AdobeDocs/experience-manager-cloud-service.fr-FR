@@ -2,12 +2,12 @@
 title: Mise en filigrane des ressources
 description: Ajout d’un filigrane à vos ressources numériques.
 contentOwner: AG
-feature: Gestion des ressources,Publication
+feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '194'
 ht-degree: 100%
 
 ---

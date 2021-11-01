@@ -9,7 +9,7 @@ exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
 source-wordcount: '4543'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -415,7 +415,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 1. Appuyez/cliquez sur l’icône **[!UICONTROL Annoter]** à partir de l’une des options suivantes :
 
    * [Actions rapides](#quick-actions)
-   * Dans la barre d’outils, après avoir sélectionné la ressource ou avoir accédé à la page de la ressource
+   * Dans la barre d’outils, après avoir sélectionné la ressource  ou avoir accédé à la page de la ressource
 
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
@@ -462,7 +462,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
 ### Affichage des annotations enregistrées {#viewing-saved-annotations}
 
-Vous ne pouvez afficher qu’une seule annotation à la fois.
+Vous ne pouvez afficher qu’une annotation à la fois.
 
 >[!NOTE]
 >

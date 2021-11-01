@@ -98,7 +98,7 @@ La structure de déploiement d’application recommandée est la suivante :
    + Configurations basées sur le contexte
       + `/conf`
    + Structures de contenu requises et complexes (c.-à-d., déploiement de contenu basé sur et étendant les structures de contenu de base passées définies dans Repo Init)
-      + `/content`,  `/content/dam`, etc.
+      + `/content`, `/content/dam`, etc.
    + Taxonomies du balisage régies
       + `/content/cq:tags`
    + Nœuds etc. hérités (l’idéal est de les migrer vers des emplacements autres que /etc)

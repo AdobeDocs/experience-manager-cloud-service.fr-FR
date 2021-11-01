@@ -5,7 +5,7 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 source-git-commit: c25756f16f5e86958c1cc9224e51d07c4d864da4
 workflow-type: tm+mt
 source-wordcount: '1608'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -80,33 +80,33 @@ La carte **Environnements** de la page Aperçu répertorie jusqu’à trois envi
 
 ### Accès au service de prévisualisation {#access-preview-service}
 
-La fonctionnalité Service d’aperçu fournit un service d’aperçu (publication) supplémentaire à chaque AEM en tant qu’environnement de Cloud Service via Cloud Manager.
+La service de prévisualisation fournit un service d’aperçu (publication) supplémentaire à chaque environnement AEM as a Cloud Service via Cloud Manager.
 
-Prévisualisez l’expérience finale d’un site web avant qu’il n’atteigne l’environnement de publication et soit disponible publiquement. Quelques pointeurs avant de pouvoir afficher et utiliser le service d’aperçu :
+Prévisualisez l’expérience finale d’un site web avant qu’il n’atteigne l’environnement de publication et soit disponible publiquement. Quelques conseils avant de pouvoir afficher et utiliser le service de prévisualisation :
 
-1. **AEM version** : Votre environnement doit être AEM version  `2021.05.5368.20210529T101701Z` ou supérieure. Pour ce faire, vérifiez qu’un pipeline de mise à jour a bien été exécuté sur votre environnement.
+1. **Version AEM** : votre environnement doit être à la version AEM `2021.05.5368.20210529T101701Z` ou supérieure. Pour ce faire, vérifiez qu’un pipeline de mise à jour a bien été exécuté sur votre environnement.
 
-1. **Verrouillage de Liste autorisée IP par défaut** : Une fois le service de prévisualisation créé, une Liste autorisée IP par défaut lui est appliquée, intitulée  `Preview Default [Env ID]`.
+1. **Verrouillage de la listes d’adresses IP autorisées par défaut** : une fois le service de prévisualisation créé, une listes d’adresses IP autorisées par défaut lui est appliquée, intitulée `Preview Default [Env ID]`.
 
    >[!NOTE]
-   >Lors de la première création, vous devez désappliquer activement la Liste autorisée IP par défaut du service de prévisualisation de votre environnement afin d’activer l’accès.
+   >Lors de la première création, vous devez annuler activement l’application de la Liste d’adresses IP autorisées par défaut du Service de prévisualisation de votre environnement afin d’activer l’accès.
 
-   Un utilisateur disposant des autorisations requises doit effectuer l’une des opérations suivantes pour *déverrouiller* l’accès au service d’aperçu et fournir l’accès souhaité :
+   Un utilisateur disposant des autorisations requises doit effectuer l’une des opérations suivantes pour *déverrouiller* l’accès au Service de prévisualisation et fournir l’accès souhaité :
 
-   * Créez une Liste autorisée IP appropriée et appliquez-la au service de prévisualisation. Suivez cette procédure immédiatement en annulant l’application de `Preview Default [Env ID] IP Allow List` à partir du service d’aperçu. Pour plus d’informations, voir [Défaut d’application d’une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md) .
+   * Créer une liste d’adresses IP autorisées appropriée et l’appliquer au service de prévisualisation. Suivre cette procédure immédiatement en annulant l’application de `Preview Default [Env ID] IP Allow List` à partir du service de prévisualisation. Pour plus d’informations, voir [Annulation de l’application d’une liste d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md).
 
       *OU*,
 
-   * Utilisez le workflow Mettre à jour la Liste autorisée IP pour supprimer l’adresse IP par défaut et ajouter les adresses IP, le cas échéant. Pour en savoir plus, voir [Affichage et mise à jour d’une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md) .
+   * Utiliser le workflow de mise à jour de la liste d’adresses IP autorisées pour supprimer l’adresse IP par défaut et ajouter la ou les adresses IP, le cas échéant. Pour en savoir plus, voir [Affichage et mise à jour d’une liste d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md).
 
       >[!NOTE]
       >Les étapes ci-dessus doivent être effectuées avant de partager l’URL du service de prévisualisation avec l’une de vos équipes afin de vous assurer que les membres appropriés de votre équipe peuvent accéder à l’URL de prévisualisation.
 
-      Une fois l’accès au service de prévisualisation déverrouillé, l’icône de verrouillage (comme illustré dans la figure ci-dessous) ne s’affiche plus.
+      Une fois l’accès au service de prévisualisation déverrouillé, l’icône de verrouillage (comme illustré dans l’image ci-dessous) ne s’affiche plus.
 
       ![](/help/implementing/cloud-manager/assets/preview-service1.png)
 
-1. **Publier le contenu à prévisualiser** : Vous pouvez publier du contenu dans le service d’aperçu à l’aide de l’interface utilisateur de gestion de publication d’AEM. Pour plus d’informations, voir [Aperçu du contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) .
+1. **Publier le contenu à prévisualiser** : vous pouvez publier du contenu dans le service de prévisualisation à l’aide de l’interface utilisateur de gestion de publication d’AEM. Pour plus d’informations, voir [Prévisualisation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=fr).
 
 ## Mise à jour de l’environnement {#updating-dev-environment}
 
@@ -155,7 +155,7 @@ Sélectionnez **Console Développeur** dans le menu déroulant de la carte **Env
 
 Seul un utilisateur possédant le rôle de développeur aura accès à **Developer Console**. L’exception concerne les programmes Sandbox, où tout utilisateur ayant accès au programme Cloud Manager Sandbox aura accès à **Developer Console**.
 
-Pour plus d’informations, voir [Mise en veille et réactivation d’environnements Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction).
+Pour plus d’informations, voir [Mise en veille et réactivation d’environnements Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html?lang=fr#hibernating-introduction).
 
 
 ![](assets/environ-devconsole.png)
@@ -178,7 +178,7 @@ De plus, vous pouvez vous connecter localement à partir de la page de résumé 
 Accédez à la page de détails **Environnements** à partir de la page de Résumé des environnements.
 
 >[!NOTE]
->Les noms de domaine personnalisés sont désormais pris en charge dans Cloud Manager pour les programmes Sites pour les services de publication et d’aperçu. Chaque environnement Cloud Manager peut héberger jusqu’à 250 domaines personnalisés.
+>Les noms de domaine personnalisés sont désormais pris en charge dans Cloud Manager pour les programmes Sites pour les services de publication et de prévisualisation. Chaque environnement Cloud Manager peut héberger jusqu’à 250 domaines personnalisés.
 
 Vous pouvez exécuter les actions suivantes sur le service de publication pour votre environnement, comme décrit ci-dessous :
 
@@ -198,7 +198,7 @@ Vous pouvez exécuter les actions suivantes sur le service de publication pour v
 Accédez à la page de détails de l’environnement à partir de la page Résumé des environnements. Vous pouvez exécuter ici les actions suivantes sur le ou les services de publication et/ou de création pour votre environnement.
 
 >[!NOTE]
->La fonctionnalité de Liste autorisée IP est désormais prise en charge dans Cloud Manager pour les services d’auteur, de publication et d’aperçu (disponibles dans les programmes Sites).
+>La fonctionnalité de Liste d’adresses IP autorisées est désormais prise en charge dans Cloud Manager pour les services d’auteur, de publication et de prévisualisation (disponibles dans les programmes Sites).
 
 ### Application d’une liste d’adresses IP autorisées {#apply-ip-allow-list}
 

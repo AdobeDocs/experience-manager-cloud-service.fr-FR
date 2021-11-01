@@ -45,7 +45,7 @@ Si vous souhaitez empêcher l’utilisation involontaire des fonctionnalités [!
 
 Media Library couvre globalement les cas d’utilisation suivants :
 
-* Fournissez des fonctions de gestion des actifs numériques de base pour les pages web créées à l’aide de [!DNL Adobe Experience Manager Sites].
+* Fournir des fonctionnalités de gestion des ressources numériques de base pour les pages web créées à l’aide de [!DNL Adobe Experience Manager Sites].
 * Formulaires adaptatifs et communications créés à l’aide d’[!DNL Adobe Experience Manager Forms].
 * Expériences d’écran numérique créées à l’aide d’[!DNL Adobe Experience Manager Screens].
 * API HTTP REST [!DNL Assets] pour les opérations en mode découplé.
@@ -71,7 +71,7 @@ Pour utiliser la fonctionnalité Media Library, vous pouvez utiliser l’interfa
 * Appliquer des annotations à des ressources.
 * Ajouter des ressources aux pages [!DNL Sites] via l’outil de recherche de contenu.
 * Utilisation [!DNL Content Fragments].
-* Utilisez les API HTTP REST et GraphQL pour [!DNL Content Fragments] et les ressources multimédias référencées, sous licence Sites.
+* Utilisation des API HTTP REST et GraphQL pour [!DNL Content Fragments] et ressources multimédias référencées, sous licence Sites.
 * Intégration de Marketing Cloud.
 * Personnalisez et étendez l’interface utilisateur de gestion des ressources.
 * Accédez à Query Builder (API) pour étendre la fonctionnalité de recherche.
@@ -89,7 +89,7 @@ As per PM, we must avoid stating such a list, as we don't have a list that makes
 >
 >De nombreux cas d’utilisation avancés de la gestion des actifs numériques sont remplis par [!DNL Experience Manager Assets]. La licence Media Library vous permet de ne répondre qu’aux cas d’utilisation répertoriés à l’aide de Media Library. Si un cas pratique n’est pas répertorié, ne l’utilisez pas avec la licence Media Library. Si vous avez des questions, contactez le service clientèle.
 
-Notez que vous ne pouvez pas utiliser les balises intelligentes, le lien [!DNL Asset], le sélecteur [!DNL Asset], le balisage en masse, la modification des workflows de ressources ou l’interface utilisateur [!DNL Adobe Experience Manager] standard pour accéder à Media Library sans licence [!DNL Assets].
+Notez que vous ne pouvez pas utiliser de balises intelligentes, [!DNL Asset] lien, [!DNL Asset] sélecteur, balisage en masse, modification des workflows de ressources ou standard [!DNL Adobe Experience Manager] interface utilisateur pour accéder à Media Library sans [!DNL Assets] licence.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 

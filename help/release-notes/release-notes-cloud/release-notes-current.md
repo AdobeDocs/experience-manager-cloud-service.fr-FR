@@ -6,18 +6,18 @@ mini-toc-levels: 1
 source-git-commit: f89fbf4e693fb1b17e8923dfcc6c9b4de92b536d
 workflow-type: tm+mt
 source-wordcount: '1928'
-ht-degree: 32%
+ht-degree: 34%
 
 ---
 
 
-# Notes de mise à jour actuelles pour[!DNL Adobe Experience Manager]as a Cloud Service {#release-notes}
+# Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La section suivante concerne les notes de mise à jour générales de la version actuelle (la plus récente) d’[!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
->À partir de là, vous pouvez accéder aux notes de mise à jour des versions précédentes. par exemple, pour ceux de 2020, 2021, etc.
+>À partir de là, vous pouvez accéder aux notes de mise à jour des versions précédentes ; par exemple, celles de 2020, 2021 et ainsi de suite.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Consultez la section [Présentation de la version de septembre 2021](https://vid
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nouvelles fonctionnalités d’ [!DNL Assets] {#assets-features}
+### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
 * L’annotation des fichiers de PDF est désormais prise en charge à l’aide des outils de commentaires et d’annotation natifs de Adobe Document Cloud. Annotez le contenu du PDF en ajoutant du texte, des surbrillances, des post-it et des dessins directement dans la fenêtre d’aperçu du document. Les utilisateurs peuvent également accéder aux pages du PDF qui les intéressent en cliquant sur des commentaires spécifiques.
 
@@ -73,7 +73,7 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Nouveautés de [!DNL Forms] {#what-is-new-forms-sep-2021}
+### Nouveautés d’[!DNL Forms]  {#what-is-new-forms-sep-2021}
 
 * **Utilisation des rôles Adobe Sign dans un formulaire adaptatif** : les niveaux de service professionnel et entreprise d’Adobe Sign offrent la possibilité d’étendre les rôles des destinataires du contrat au-delà du simple signataire, afin de mieux répondre aux exigences de leur workflow. Vous pouvez désormais [permettre à chaque destinataire de contrat de configurer son rôle dans un formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform), avec le rôle Signer par défaut.
 
@@ -89,10 +89,10 @@ CQ-4328183 was not reported on CS so not documented here.
 
    <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API Communications](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=en) vous permet de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode synchrone. Les API permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
-   * Générer des documents en complétant des fichiers de modèle avec des données XML.
-   * Générer des formulaires dans divers formats, y compris les flux d’impression PDF non interactifs.
-   * Générer des fichiers PDF d’impression à partir d’un formulaire XFA au format PDF et d’un formulaire Adobe Acrobat.
+* **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API de communication](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=en) vous permettent de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode synchrone. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
+   * Générer des documents en complétant des fichiers de modèle avec des données XML
+   * Générer des formulaires de sortie dans divers formats, y compris les flux d’impression PDF non interactifs
+   * Générer des fichiers PDF d’impression à partir d’un formulaire XFA au format PDF et d’un formulaire Adobe Acrobat
 
 Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au programme bêta.
 
@@ -138,7 +138,7 @@ Pour plus d’informations, voir [Prise en charge des miniatures de vidéos](htt
 
 ## [!DNL Experience Manager as a Cloud Service] Foundation {#foundation}
 
-### Nouvelles fonctionnalités d’ [!DNL Experience Manager as a Cloud Service] {#foundation-features}
+### Nouvelles fonctionnalités de [!DNL Experience Manager as a Cloud Service] {#foundation-features}
 
 **Mise en réseau avancée**
 
@@ -158,7 +158,7 @@ Lisez le [documentation](/help/security/configuring-advanced-networking.md) pour
 
 Pour améliorer les performances des requêtes de recherche et de l’indexation, l’index de texte intégral lucene-2 n’est plus utilisé clé en main dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] de cette version. Afin de supprimer cet index de texte intégral sur les environnements AEM conformément aux clients AEM, Adobe Engineering travaille individuellement et de manière proactive avec les clients pour une suppression douce et durable de l’index de texte intégral Lucene. Veuillez consulter le [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [documentation](/help/operations/indexing.md#index-optimizations) pour plus d&#39;informations, contactez directement notre service clientèle si vous avez des questions.
 
-## Cloud Manager  {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 Cette section présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.10.0 et 2021.9.0.
 
@@ -220,7 +220,7 @@ La date de publication de Cloud Manager dans AEM version as a Cloud Service 2021
 
 * Une URL erronée a été copiée lors de la sélection de l’option de menu Copier l’URL dans l’écran Référentiels.
 
-## Cloud Accelerated Manager {#cam}
+## Cloud Acceleration Manager {#cam}
 
 ### Date de publication {#release-date-october-cam}
 

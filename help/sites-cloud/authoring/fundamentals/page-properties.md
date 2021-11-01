@@ -5,7 +5,7 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
 workflow-type: tm+mt
 source-wordcount: '1966'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -60,7 +60,7 @@ Les propriétés sont réparties sur plusieurs onglets.
    > Voir [Heures d’activation et de désactivation – Configuration du déclenchement](/help/operations/replication.md#on-and-off-times-trigger-configuration) pour en savoir plus sur la configuration de la réplication automatique associée.
 
    >[!NOTE]
-   >Si **Heure d’activation** ou **Heure de désactivation** se trouve dans le passé et que la réplication automatique est configurée, l’action appropriée est déclenchée immédiatement.
+   >Si la variable **Heure d’activation** ou **Heure de désactivation** est dans le passé et que la réplication automatique est configurée, l’action appropriée est déclenchée immédiatement.
 
    * **Heure d’activation** – Date et heure auxquelles la page publiée sera rendue visible (rendue) dans l’environnement de publication. La page doit être publiée, soit manuellement, soit par réplication automatique préconfigurée.
 
@@ -101,9 +101,9 @@ Les propriétés sont réparties sur plusieurs onglets.
    * **Rediriger** – Indique la page vers laquelle cette page doit être automatiquement redirigée.
    * **Conception** – Indique si la page doit être affichée ou masquée dans la navigation entre les pages du site qui en résulte.
    * **Alias** – Indique un alias à utiliser avec cette page.
-      * Par exemple, si vous définissez un alias `private` pour la page `/content/wknd/us/en/magazine/members-only`, cette page est également accessible via `/content/wknd/us/en/magazine/private`
-      * La création d’un alias définit la propriété `sling:alias` sur le noeud de page, ce qui affecte uniquement la ressource, et non le chemin du référentiel.
-      * Les pages accessibles par alias dans l&#39;éditeur ne peuvent pas être publiées. [Les ](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) options de publication dans l’éditeur ne sont disponibles que pour les pages accessibles à partir de leur chemin d’accès réel.
+      * Par exemple, si vous définissez un alias de `private` pour la page `/content/wknd/us/en/magazine/members-only`, cette page est également accessible via `/content/wknd/us/en/magazine/private`
+      * La création d&#39;un alias permet de définir la variable `sling:alias` sur le noeud de page, ce qui affecte uniquement la ressource, et non le chemin d’accès au référentiel.
+      * Les pages accessibles par alias dans l&#39;éditeur ne peuvent pas être publiées. [Options de publication](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) dans l’éditeur ne sont disponibles que pour les pages auxquelles l’accès se fait à partir de leur chemin d’accès réel.
 
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
@@ -144,7 +144,7 @@ Configuration de la miniature de la page
 
 * **Partage sur les réseaux sociaux**
 
-   Définit les options de partage disponibles sur la page. Affiche les options disponibles pour le [composant principal de partage](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html).
+   Définit les options de partage disponibles sur la page. Affiche les options disponibles pour le [composant principal de partage](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html?lang=fr).
 
    * **Activer le partage utilisateur pour Facebook**
    * **Activer le partage utilisateur pour Pinterest**
@@ -153,7 +153,7 @@ Configuration de la miniature de la page
 
 ### Cloud Services {#cloud-services}
 
-* **Configurations de Cloud Service**  - Définition des propriétés des services cloud
+* **Configurations du service cloud** – Définition des propriétés des services cloud
 
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
@@ -216,9 +216,9 @@ Cet onglet n’est visible que pour les pages qui servent de plan directeur. Les
 
 ### Aperçu {#preview}
 
-Lorsqu’un environnement de prévisualisation est activé, les éléments suivants s’affichent :
+Lorsqu’un environnement de prévisualisation est activé, les éléments suivants s’affichent :
 
-* URL de prévisualisation : URL utilisée pour accéder au contenu dans l’environnement de prévisualisation.
+* URL de prévisualisation : URL utilisée pour accéder au contenu dans l’environnement de prévisualisation.
 
 ## Modification des propriétés de page {#editing-page-properties-1}
 

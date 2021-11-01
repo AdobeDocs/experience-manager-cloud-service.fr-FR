@@ -5,7 +5,7 @@ exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '819'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -15,9 +15,9 @@ AEM Cloud Service offre une foule de nouvelles fonctionnalités et possibilités
 
 >[!CONTEXTUALHELP]
 >id="aem_cloud_notable_changes"
->title="Modifications notables apportées à AEM en tant que Cloud Service"
->abstract="Dans cet onglet, vous pouvez afficher le contenu qui vous aidera à comprendre les différences entre AEM on premise ou dans Adobe Managed Services, par rapport à AEM en tant que Cloud Service."
->additional-url="https://video.tv.adobe.com/v/330543" text="Evolution de l&#39;AEM en tant que Cloud Service"
+>title="Changements notables dans AEM as a Cloud Service"
+>abstract="Dans cet onglet, vous pouvez afficher le contenu qui vous aidera à comprendre les différences entre AEM on-premise ou dans Adobe Managed Services, par rapport à AEM as a Cloud Service."
+>additional-url="https://video.tv.adobe.com/v/330543" text="Architecture d’AEM as a Cloud Service"
 
 
 >[!NOTE]
@@ -114,4 +114,4 @@ Pour la transition d’un projet à partir d’AMS ou d’une installation sur s
 
 ## Gestion et diffusion des ressources {#asset-handling}
 
-Le chargement, le traitement et le téléchargement des ressources sont optimisés dans [!DNL Experience Manager Assets] sous la forme [!DNL Cloud Service]. [!DNL Assets] est désormais plus efficace, permet une mise à l’échelle plus importante et vous permet de télécharger et de télécharger beaucoup plus rapidement. Cela a également un impact sur le code personnalisé existant et sur certaines opérations. Pour obtenir la liste des modifications et la parité avec les fonctionnalités [!DNL Experience Manager] 6.5, voir les [modifications apportées à [!DNL Assets]](/help/assets/assets-cloud-changes.md).
+Le chargement, le traitement et le téléchargement des ressources sont optimisés dans [!DNL Experience Manager Assets] en tant que [!DNL Cloud Service]. [!DNL Assets] est désormais plus efficace, permet une mise à l’échelle plus importante et vous permet de télécharger et de télécharger beaucoup plus rapidement. Cela a également un impact sur le code personnalisé existant et sur certaines opérations. Pour obtenir la liste des modifications et la parité avec les fonctionnalités [!DNL Experience Manager] 6.5, voir les [modifications apportées à [!DNL Assets]](/help/assets/assets-cloud-changes.md).

@@ -5,7 +5,7 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 source-git-commit: 1875920ae5180074dcad98fb5c10242b6baa76c7
 workflow-type: tm+mt
 source-wordcount: '314'
-ht-degree: 86%
+ht-degree: 91%
 
 ---
 
@@ -13,10 +13,10 @@ ht-degree: 86%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_ipallowlist"
->title="Gestion des Listes autorisées IP"
+>title="Gestion des listes autorisées d’adresses IP"
 >abstract="AEM as a Cloud Service a accès à Internet, et la sécurité est gérée par l’authentification et l’autorisation des utilisateurs. La liste des adresses IP autorisées est une fonctionnalité de Cloud Manager permettant de contrôler l’accès et de le limiter aux utilisateurs de confiance uniquement. Cette fonctionnalité permet aux utilisateurs autorisés de créer des listes autorisées d’adresses IP de confiance à partir desquelles les utilisateurs de leurs sites peuvent accéder à leurs domaines AEM."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html?lang=fr" text="Ajout d’une Liste autorisée IP"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/view-update-ip-allow-list.html?lang=fr" text="Affichage et mise à jour d’une Liste autorisée IP"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html?lang=fr" text="Ajout d’une liste d’adresses IP autorisées"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/view-update-ip-allow-list.html?lang=fr" text="Affichage et mise à jour de la liste des adresses IP autorisées"
 
 AEM as a Cloud Service a accès à Internet, et la sécurité est gérée par l’authentification et l’autorisation des utilisateurs. La liste des adresses IP autorisées est une fonctionnalité de Cloud Manager permettant de contrôler l’accès et de le limiter aux utilisateurs de confiance uniquement. Cette fonctionnalité permet aux utilisateurs autorisés de créer des listes autorisées d’adresses IP de confiance à partir desquelles les utilisateurs de leurs sites peuvent accéder à leurs domaines AEM.
 

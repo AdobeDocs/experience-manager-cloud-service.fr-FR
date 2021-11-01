@@ -6,7 +6,7 @@ exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
 source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '766'
-ht-degree: 75%
+ht-degree: 98%
 
 ---
 
@@ -36,16 +36,16 @@ Dans le cadre de Dynamic Media, les sites web qui utilisent un système XML pou
 >
 >Utilisez les ensembles de règles avec prudence ; ceux-ci peuvent empêcher l’affichage du contenu Dynamic Media sur votre site.
 
-Il existe des exemples de jeux de règles disponibles qui peuvent vous aider à créer votre propre jeu de règles.
+Il existe des exemples d’ensembles de règles disponibles pour vous aider à créer votre propre ensemble de règles.
 Voir la section [Référence d’ensemble de règles](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html?lang=fr).
 
 À l’instar de la création de tous les ensembles de règles, assurez-vous que votre fichier XML est valide avant de le charger à l’aide d’un programme de validation XML tel que xmlvalid.
-Voir aussi [Dépannage des jeux de règles](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html).
+Voir également [Résolution des problèmes liés aux ensembles de règles](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html).
 
 En outre, assurez-vous d’abord de tester votre ensemble de règles dans un environnement intermédiaire qui n’affecte pas votre environnement de production.
 Les environnements de production et les environnements intermédiaires nécessitent en général des identifiants différents.
 
-Voir [Application de bureau Adobe Dynamic Media Classic pour obtenir des informations de connexion](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#sign-in-dmc-app).
+Consultez l’[application de bureau Adobe Dynamic Media Classic pour obtenir des informations de connexion](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#sign-in-dmc-app).
 
 <!-- OBSOLETE CONTENT * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
@@ -61,19 +61,19 @@ Consultez également la section [Utilisation de « ressource » au lieu d’un
 
 1. Téléchargez votre fichier d’ensemble de règles en procédant comme suit :
 
-   * Dans la barre de navigation globale, sélectionnez **[!UICONTROL Télécharger]**.
-   * Sur la page **[!UICONTROL Télécharger]**, près du coin supérieur gauche, sélectionnez **[!UICONTROL Parcourir]**.
+   * Sur la barre de Navigation générale, cliquez sur **[!UICONTROL Charger]**.
+   * Sur la page **[!UICONTROL Charger]**, près de l’angle supérieur gauche, sélectionnez **[!UICONTROL Parcourir]**.
    * Dans la boîte de dialogue **[!UICONTROL Ouvrir]**, naviguez jusqu’à votre fichier d’ensemble de règles (XML).
    * Sélectionnez le fichier, puis sélectionnez **[!UICONTROL Ouvrir]**.
    * Sur le côté droit de la page **[!UICONTROL Charger]**, sélectionnez un dossier de destination pour le fichier d’ensemble de règles.
    * Près du bas de la page, assurez-vous que l’option Publier après le chargement est cochée.
-   * Dans le coin inférieur droit de la page, sélectionnez **[!UICONTROL Submit Upload]**.
-   * Dans la barre de navigation globale, sélectionnez **[!UICONTROL Tâches]** pour vérifier l’état de la tâche de téléchargement. Lorsque la colonne **[!UICONTROL État]** sur la page de la **[!UICONTROL Tâche]** indique Chargement terminé, passez aux étapes suivantes.
+   * Dans l’angle inférieur droit de la page, cliquez sur **[!UICONTROL Lancer le téléchargement]**.
+   * Sur la barre de navigation générale, sélectionnez **[!UICONTROL Tâches]** afin de vérifier le statut de la tâche de chargement. Lorsque la colonne **[!UICONTROL État]** sur la page de la **[!UICONTROL Tâche]** indique Chargement terminé, passez aux étapes suivantes.
 
-1. Dans la barre de navigation située en haut de la page, accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Configuration de la publication]** > **[!UICONTROL Serveur d’images]**.
-1. Sur la page **[!UICONTROL Publication de serveur d’images]**, sous le groupe **[!UICONTROL Gestion de catalogue]**, recherchez **[!UICONTROL Chemin d’accès au fichier de définition de jeu de règles]**, puis sélectionnez **[!UICONTROL Sélectionner]**.
-1. Sur la page **[!UICONTROL Sélectionner le fichier de définition de l’ensemble de règles (XML)]** , accédez à votre fichier d’ensemble de règles, puis, dans le coin inférieur droit de la page, sélectionnez **[!UICONTROL Sélectionner]**.
-1. Dans le coin inférieur droit de la page Configuration, sélectionnez **[!UICONTROL Fermer]**.
+1. Sur la barre de navigation située en haut de la page, sélectionnez **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Configuration de la publication]** > **[!UICONTROL Serveur d’images]**.
+1. Sur la page du **[!UICONTROL Publication du serveur d’images]**, sous le groupe **[!UICONTROL Gestion de catalogue]**, localisez le **[!UICONTROL Chemin de fichier de définitions de règles]**, puis sélectionnez **[!UICONTROL Sélectionner]**.
+1. Sur la page **[!UICONTROL Sélectionner le fichier de définitions de règles (XML)]**, accédez à votre fichier d’ensemble de règles, puis dans le coin inférieur droit de la page, sélectionnez **[!UICONTROL Sélectionner]**.
+1. Dans l’angle inférieur droit de la page Configuration, sélectionnez **[!UICONTROL Fermer]**.
 1. Exécutez une tâche de Publication de serveur d’images.
 
    Les conditions d’ensemble de règles sont appliquées aux demandes aux serveurs d’images Dynamic Media en ligne.

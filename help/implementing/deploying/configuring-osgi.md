@@ -6,7 +6,7 @@ exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 source-git-commit: 9f1183430255bd4f026eedff5c9e8f76ce68b76f
 workflow-type: tm+mt
 source-wordcount: '2936'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -56,7 +56,7 @@ La granularité de cette règle se trouve au niveau du PID. Vous ne pouvez pas d
 
 >[!NOTE]
 >
->Un `config.preview` dossier de configuration OSGI **ne peut pas** être déclaré de la même manière qu’un dossier `config.publish` peut être déclaré. Au lieu de cela, le niveau d’aperçu hérite de sa configuration OSGI des valeurs du niveau de publication.
+>Un dossier de configuration OSGI `config.preview` **ne peut pas** être déclaré de la même manière qu’un dossier `config.publish` peut être déclaré. Au lieu de cela, le niveau d’aperçu hérite de sa configuration OSGI des valeurs du niveau de publication.
 
 Pour le développement local, un paramètre de démarrage en mode d’exécution peut être transmis de façon à indiquer la configuration OSGI de mode d’exécution à utiliser.
 
@@ -120,10 +120,10 @@ Lorsque vous définissez une valeur de configuration OSGi, commencez avec des va
 
 ### Cas d’utilisation de valeurs de configuration non secrètes spécifiques à un environnement {#when-to-use-non-secret-environment-specific-configuration-values}
 
-N’utilisez des configurations spécifiques à un environnement (`$[env:ENV_VAR_NAME]`) que pour les valeurs de configuration non secrètes lorsque les valeurs varient pour le niveau d’aperçu ou varient selon les environnements de développement. Cela inclut les instances de développement en local et les environnements de développement Adobe Experience Manager as a Cloud Service. Outre la définition de valeurs uniques pour le niveau d’aperçu, évitez d’utiliser des configurations non secrètes spécifiques à un environnement pour les environnements d’évaluation ou de production Adobe Experience Manager as a Cloud Service.
+N’utilisez des configurations spécifiques à un environnement (`$[env:ENV_VAR_NAME]`) que pour les valeurs de configuration non secrètes lorsque les valeurs varient pour le niveau d’aperçu ou varient selon les environnements de développement. Cela inclut les instances de développement en local et les environnements de développement Adobe Experience Manager as a Cloud Service. Outre la définition de valeurs uniques pour le niveau d’aperçu, évitez d’utiliser des configurations non secrètes spécifiques à des environnements d’évaluation ou de production d’Adobe Experience Manager as a Cloud Service.
 
 * N’utilisez des configurations non secrètes spécifiques à un environnement que pour les valeurs de configuration qui diffèrent entre le niveau de publication et de prévisualisation, ou pour les valeurs qui diffèrent entre les environnements de développement, y compris les instances de développement locales.
-* Outre le scénario où le niveau d’aperçu doit varier du niveau de publication, utilisez les valeurs intégrées standard dans les configurations OSGi pour les valeurs non secrètes de test et de production. À cet égard, il n’est pas recommandé d’utiliser des configurations spécifiques à un environnement pour faciliter les modifications de configuration au moment de l’exécution dans les environnements d’évaluation et de production ; ces modifications doivent être introduites par le biais du processus de gestion du code source.
+* Outre le scénario où le niveau d’aperçu doit varier du niveau de publication, utilisez les valeurs intégrées standard dans les configurations OSGi pour les valeurs non secrètes d’évaluation et de production. À cet égard, il n’est pas recommandé d’utiliser des configurations spécifiques à un environnement pour faciliter les modifications de configuration au moment de l’exécution dans les environnements d’évaluation et de production ; ces modifications doivent être introduites par le biais du processus de gestion du code source.
 
 ### Cas d’utilisation de valeurs secrètes de configuration spécifiques à un environnement {#when-to-use-secret-environment-specific-configuration-values}
 
@@ -261,7 +261,7 @@ Si une propriété OSGI nécessite des valeurs différentes pour la création et
 * Des dossiers OSGi `config.author` et `config.publish` distincts sont nécessaires, comme décrit dans la section [Résolution du mode d’exécution](#runmode-resolution).
 * Deux options permettent de créer des noms de variable indépendants :
    * la première option, recommandée : dans tous les dossiers OSGI (comme `config.author` et `config.publish`) déclarés pour définir des valeurs différentes, utilisez le même nom de variable. Par exemple :
-      `$[env:ENV_VAR_NAME;default=<value>]`, où la valeur par défaut correspond à la valeur par défaut de ce niveau (auteur ou publication). Lors de la définition de la variable d’environnement par le biais de [l’API Cloud Manager](#cloud-manager-api-format-for-setting-properties) ou d’un client, différenciez les niveaux à l’aide du paramètre « service », comme décrit dans cette [documentation de référence de l’API](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables). Le paramètre « service » lie la valeur de la variable au niveau OSGI approprié. Il peut s’agir de &quot;création&quot;, &quot;publication&quot; ou &quot;aperçu&quot;.
+      `$[env:ENV_VAR_NAME;default=<value>]`, où la valeur par défaut correspond à la valeur par défaut de ce niveau (auteur ou publication). Lors de la définition de la variable d’environnement par le biais de [l’API Cloud Manager](#cloud-manager-api-format-for-setting-properties) ou d’un client, différenciez les niveaux à l’aide du paramètre « service », comme décrit dans cette [documentation de référence de l’API](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables). Le paramètre « service » lie la valeur de la variable au niveau OSGI approprié. Il peut s’agir de « création », « publication » ou « aperçu ».
    * la deuxième option, qui consiste à déclarer des variables distinctes à l’aide d’un préfixe tel que `author_<samevariablename>` et `publish_<samevariablename>` ;
 
 ### Exemples de configurations {#configuration-examples}
@@ -358,11 +358,7 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
- "my_var1" : "$[env:my_var1]"
- "my_var2" : "abc",
- "my_var3" : 500
-}
+{ "my_var1" : "$[env:my_var1]" "my_var2" : "abc", "my_var3" : 500 }
 </pre>
 </td>
 </tr>
@@ -387,11 +383,7 @@ config
 </td>
 <td>
 <pre>
-{ 
- "my_var1" : "val1",
- "my_var2" : "abc",
- "my_var3" : 500
-}
+{ "my_var1": "val1", "my_var2" : "abc", "my_var3" : 500 }
 </pre>
 </td>
 </tr>
@@ -401,11 +393,7 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
- "my_var1" : "$[env:my_var1]"
- "my_var2" : "abc",
- "my_var3" : 500
-}
+{ "my_var1" : "$[env:my_var1]" "my_var2" : "abc", "my_var3" : 500 }
 </pre>
 </td>
 </tr>
@@ -428,11 +416,7 @@ config
 </td>
 <td>
 <pre>
-{ 
- "my_var1" : "val1",
- "my_var2" : "abc",
- "my_var3" : 500
-}
+{ "my_var1": "val1", "my_var2" : "abc", "my_var3" : 500 }
 </pre>
 </td>
 </tr>

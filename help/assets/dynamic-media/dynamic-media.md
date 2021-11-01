@@ -6,11 +6,11 @@ exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
 source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
 source-wordcount: '398'
-ht-degree: 88%
+ht-degree: 90%
 
 ---
 
-# Utilisation de Dynamic Media {#working-with-dynamic-media}
+# Utilisation de Dynamic Media  {#working-with-dynamic-media}
 
 [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) fournit des ressources visuelles de marchandisage et de marketing à la demande, automatiquement dimensionnées pour une utilisation sur le web, les appareils mobiles et les réseaux sociaux. À partir d’un ensemble de ressources de sources originales, Dynamic Media génère et diffuse en temps réel plusieurs variantes d’un même contenu enrichi par le biais de son réseau mondial et évolutif, aux performances optimisées.
 

@@ -1,26 +1,26 @@
 ---
-title: Générer pour placement uniquement les rendus pour Adobe InDesign
-description: Générez des rendus FPO de nouvelles ressources et de ressources existantes à l’aide du workflow Ressources du Experience Manager et d’ImageMagick.
+title: Génération de rendus pour placement uniquement pour Adobe InDesign
+description: Générez des rendus FPO de nouvelles ressources et de ressources existantes à l’aide du workflow Experience Manager Assets et d’ImageMagick.
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
-source-git-commit: 7e82c3c5490c2f6d43167e6784cdbbb60f811a6f
+exl-id: 869c1c34-6287-4d62-bb7a-aa4df580ac0e
+source-git-commit: 7cc0bd5bbd51edb6f3bc2cfcccfa0a35a0d7a790
 workflow-type: tm+mt
 source-wordcount: '455'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
+# Génération de rendus pour placement uniquement pour Adobe InDesign {#fpo-renditions}
 
-# Générer pour placement uniquement les rendus pour Adobe InDesign {#fpo-renditions}
-
-Lors du placement de ressources de grande taille d’un Experience Manager dans des documents Adobe InDesign, un professionnel de la création doit attendre un certain temps après avoir [placé une ressource](https://helpx.adobe.com/fr/indesign/using/placing-graphics.html). Pendant ce temps, l’utilisateur ne peut pas utiliser InDesign. Cela interrompt le flux créatif et a un impact négatif sur l’expérience utilisateur. Adobe permet de placer temporairement dans des documents InDesign des rendus de petite taille. Lorsque la sortie finale est requise, par exemple pour les workflows d’impression et de publication, les ressources d’origine en pleine résolution remplacent le rendu temporaire en arrière-plan. Cette mise à jour asynchrone en arrière-plan accélère le processus de conception pour améliorer la productivité et n’entrave pas le processus créatif.
+Lorsque vous transférez des ressources volumineuses d’Experience Manager vers des documents Adobe InDesign, un professionnel de la création doit attendre un temps conséquent avant de [placer une ressource](https://helpx.adobe.com/fr/indesign/using/placing-graphics.html). Pendant ce temps, l’utilisateur ne peut pas utiliser InDesign. Cela interrompt le flux créatif et a un impact négatif sur l’expérience utilisateur. Adobe permet de placer temporairement dans des documents InDesign des rendus de petite taille pour commencer. Lorsque la sortie finale est requise, par exemple pour les workflows d’impression et de publication, les ressources d’origine en pleine résolution remplacent le rendu temporaire en arrière-plan. Cette mise à jour asynchrone en arrière-plan accélère le processus de conception pour améliorer la productivité et n’entrave pas le processus créatif.
 
 Assets fournit des rendus utilisés uniquement pour placement (FPO). Ces rendus FPO ont une taille de fichier réduite, mais présentent les mêmes proportions. Si un rendu FPO n’est pas disponible pour une ressource, Adobe InDesign utilise la ressource d’origine à la place. Ce mécanisme de secours garantit que le workflow créatif se poursuit sans interruption.
 
 Experience Manager as a Cloud Service offre des fonctionnalités de traitement des ressources natives dans le cloud pour générer les rendus FPO. Utilisez les microservices de ressources pour la génération de rendu. Vous pouvez configurer la génération de rendu des ressources nouvellement chargées et des ressources qui existent dans Experience Manager.
 
-Vous trouverez ci-dessous les étapes de génération des rendus FPO :
+Vous trouverez ci-dessous les étapes de génération des rendus FPO :
 
 1. [Création d’un profil de traitement](#create-processing-profile).
 
@@ -51,7 +51,7 @@ Pour générer des rendus, sélectionnez les ressources et procédez comme suit.
 
 ## Affichage des rendus FPO {#view-fpo-renditions}
 
-Vous pouvez vérifier les rendus FPO générés une fois le workflow terminé. Dans l’interface utilisateur Assets Experience Manager, cliquez sur la ressource pour ouvrir un aperçu volumineux. Ouvrez le rail de gauche et sélectionnez **[!UICONTROL Rendus]**. Vous pouvez également utiliser le raccourci clavier `Alt + 3` lorsque l’aperçu est ouvert.
+Vous pouvez vérifier les rendus FPO générés une fois le workflow terminé. Dans l’interface utilisateur Experience Manager Assets, cliquez sur la ressource pour ouvrir un aperçu volumineux. Ouvrez le rail de gauche et sélectionnez **[!UICONTROL Rendus]**. Vous pouvez également utiliser le raccourci clavier `Alt + 3` lorsque l’aperçu est ouvert.
 
 Cliquez sur **[!UICONTROL Rendu FPO]** pour charger son aperçu. Vous pouvez éventuellement cliquer avec le bouton droit sur le rendu et l’enregistrer dans votre système de fichiers. Recherchez les rendus disponibles dans le rail de gauche.
 

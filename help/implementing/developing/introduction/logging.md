@@ -5,13 +5,13 @@ exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
 workflow-type: tm+mt
 source-wordcount: '2314'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
 # Connexion à AEM as a Cloud Service {#logging-for-aem-as-a-cloud-service}
 
-La plate-forme AEM as a Cloud Service permet aux clients d’inclure du code personnalisé destiné à créer des expériences incomparables pour leurs propres bases de clients. Dans cette optique, le service de journalisation est une fonction essentielle pour déboguer et comprendre l’exécution du code sur le développement local, ainsi que les environnements cloud, en particulier les environnements de développement de l’AEM as a Cloud Service.
+La plate-forme AEM as a Cloud Service permet aux clients d’inclure du code personnalisé destiné à créer des expériences incomparables pour leurs propres bases de clients. Dans cette optique, le service de journalisation est une fonction essentielle pour déboguer et comprendre l’exécution du code sur le développement local, ainsi que les environnements cloud, en particulier les environnements de développement AEM as a Cloud Service.
 
 AEM paramètres de journalisation et les niveaux de journal as a Cloud Service sont gérés dans des fichiers de configuration stockés dans le cadre du projet AEM dans Git et déployés dans le cadre du projet AEM via Cloud Manager. La journalisation dans AEM as a Cloud Service peut être divisée en deux ensembles logiques :
 
@@ -209,7 +209,7 @@ La clé pour comprendre ce journal est de mapper les paires de requête HTTP et 
 <tbody>
 <tr>
 <td>Date et heure</td>
-<td>29/Apr/2020:19:14:21 +000</td>
+<td>29/Apr/2020:19:14:21 +0000</td>
 </tr>
 <tr>
 <td>ID de paire de requête/réponse</td>
@@ -253,11 +253,11 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
 
-| AEM ID de noeud as a Cloud Service | cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 |
+| ID du nœud AEM as a Cloud Service | cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 |
 |---|---|
 | Adresse IP du client | - |
 | User | myuser@adobe.com |
-| Date et heure | 30/Apr/2020:17:37:14 +000 |
+| Date et heure | 30/Apr/2020:17:37:14 +0000 |
 | Méthode HTTP | GET |
 | URL | `/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css` |
 | Protocole | HTTP/1.1 |
@@ -314,7 +314,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tr>
 <tr>
 <td>Date et heure</td>
-<td>01/May/2020:00:09:46 +000</td>
+<td>01/May/2020:00:09:46 +0000</td>
 </tr>
 <tr>
 <td>Méthode HTTP</td>
@@ -433,7 +433,7 @@ Define REWRITE_LOG_LEVEL Debug
 <tbody>
 <tr>
 <td>Date et heure</td>
-<td>[17/Jul/2020:23:48:16 +000]</td>
+<td>[17/Jul/2020:23:48:16 +0000]</td>
 </tr>
 <tr>
 <td>Nom du pod</td>
@@ -511,7 +511,7 @@ Les journaux AEM se trouvent dans le dossier `crx-quickstart/logs`, où vous pou
 * Journal des requêtes HTTP AEM : `request.log`
 * Journal des accès HTTP AEM : `access.log`
 
-Les journaux de couche Apache, y compris de Dispatcher, se trouvent dans le conteneur Docker qui contient Dispatcher. Consultez la [documentation de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) pour savoir comment le démarrer.
+Les journaux de couche Apache, y compris de Dispatcher, se trouvent dans le conteneur Docker qui contient Dispatcher. Consultez la [documentation de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html?lang=fr) pour savoir comment le démarrer.
 
 Pour récupérer les journaux :
 

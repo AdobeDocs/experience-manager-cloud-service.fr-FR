@@ -18,7 +18,7 @@ Grâce à Adobe Experience Manager Content and Commerce, les marques peuvent év
 
 Avec les attentes de plus en plus élevées des clients concernant les expériences commerciales en ligne, les marques subissent de fortes pressions pour offrir des expériences différenciées et plus de contenu plus rapidement. Cependant, la mise en œuvre d’une plateforme de gestion de contenu nécessite souvent des investissements importants en temps et en budget pour développer des éléments fondamentaux, tels que les composants personnalisés et les outils de création, et entraîne des coûts importants de maintenance et de mise à niveau. Experience Manager Sites propose Content and Commerce sous la forme d’un module complémentaire pour Experience Manager as a Cloud Service qui fournit des composants de base commerciaux prêts à l’emploi, des outils de création et un storefront de référence pour accélérer la mise en service, permettre une collaboration transparente entre les équipes et stimuler le taux de conversion.
 
-Les marques peuvent intégrer Experience Manager à Adobe Commerce, un composant de Adobe Experience Cloud, ainsi qu’à tout moteur de commerce de votre choix. Grâce à Experience Manager Content and Commerce, les marques peuvent :
+Les marques peuvent intégrer Experience Manager à Adobe Commerce, un composant d’Adobe Experience Cloud, ainsi qu’à tout moteur de commerce de votre choix. Grâce à Experience Manager Content and Commerce, les marques peuvent :
 
 * évoluer et innover plus rapidement ;
 * personnaliser leurs expériences pour générer des conversions ;
@@ -54,7 +54,7 @@ Le module complémentaire CIF apporte du contexte de produit à Experience Manag
 
 Grâce aux puissants outils de CIF d’AEM, les créateurs de contenu peuvent rapidement créer des expériences commerciales riches et personnalisées, de manière évolutive et indépendamment de la diffusion, afin de tirer parti de toutes les opportunités commerciales.
 
-![Éléments de CIF](./assets/CIF/CIF_Product_Experience_Management.png)
+![Éléments du module CIF](./assets/CIF/CIF_Product_Experience_Management.png)
 
 ### Délai de rentabilité (Time-To-Value)
 

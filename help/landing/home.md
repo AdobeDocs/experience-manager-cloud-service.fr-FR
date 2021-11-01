@@ -4,16 +4,16 @@ description: Ressources d’aide autonome et liens vers la documentation d’Ado
 exl-id: 1dbeb42c-3c84-407a-bc7b-d9f0403ee73a
 source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '406'
+ht-degree: 92%
 
 ---
 
-# Guides de l’utilisateur de Experience Manager as a Cloud Service {#aem-user-guide}
+# Guides de l’utilisateur d’Experience Manager as a Cloud Service {#aem-user-guide}
 
 Cette page répertorie les guides de l’utilisateur autonomes pour Experience Manager as a Cloud Service.
 
-## Guides de Experience Manager en tant que Cloud Service {#aem-guides}
+## Guides d’Experience Manager as a Cloud Service {#aem-guides}
 
 | Guide de l’utilisateur | Description |
 |---|---|
@@ -23,7 +23,7 @@ Cette page répertorie les guides de l’utilisateur autonomes pour Experience 
 | [Intégration](/help/onboarding/home.md) | Ce guide résume la procédure à suivre pour commencer à utiliser Experience Manager as a Cloud Service, avec les informations d’accès et des informations importantes sur la protection des données. |
 | [Guide de l’utilisateur de Sites](/help/sites-cloud/home.md) | Découvrez comment créer avec Experience Manager Sites as a Cloud Service et l’administrer. |
 | [Guide de l’utilisateur d’Assets](/help/assets/home.md) | Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service. |
-| [Guide de l’utilisateur de Screens](/help/screens-cloud/home.md) | Découvrez comment utiliser et administrer des Experience Manager Screens en tant que Cloud Service. |
+| [Guide de l’utilisateur de Screens](/help/screens-cloud/home.md) | Découvrez comment utiliser et administrer Experience Manager Screens as a Cloud Service. |
 | [Guide de l’utilisateur de Commerce](/help/commerce-cloud/home.md) | Apprenez comment utiliser et administrer Experience Manager Commerce as a Cloud Service. |
 | [Transition vers AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Découvrez le parcours de transition vers Cloud Service. |
 | [Guide de l’utilisateur relatif à l’implémentation](/help/implementing/home.md) | Découvrez comment créer et personnaliser des expériences à l’aide des puissantes fonctionnalités d’AEM en explorant ces rubriques de développement et de déploiement. |
@@ -39,7 +39,7 @@ Cette page répertorie les guides de l’utilisateur autonomes pour Experience 
 * [Documentation Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentation HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr)
 * [Documentation sur les composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
-* [Documentation Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html)
+* [Documentation Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=fr)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriels sur Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=fr)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)

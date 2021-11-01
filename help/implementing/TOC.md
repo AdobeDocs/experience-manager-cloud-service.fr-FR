@@ -7,8 +7,8 @@ feature: Developer Tools
 role: Developer, Architect
 source-git-commit: 51e36bc72c74026e54f36ee41848f4f15e644d32
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 92%
+source-wordcount: '1050'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 92%
 + [Implémentation d’applications pour AEM as a Cloud Service](/help/implementing/home.md)
 + Utilisation de Cloud Manager {#using-cloud-manager}
    + Notes de mise à jour de Cloud Manager {#release-notes-cloud-manager}
-      + [Notes de mise à jour de la version actuelle (2021.10.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Notes de mise à jour de la version actuelle  (2021.10.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2021 {#2021}
          + [Notes de mise à jour de la version 2021.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
          + [Notes de mise à jour de la version 2021.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
@@ -199,7 +199,7 @@ ht-degree: 92%
    + [Outil AEM Repo](/help/implementing/developing/tools/repo-tool.md)
    + [Utilisation de CRXDE Lite](/help/implementing/developing/tools/crxde.md)
    + [L’externaliseur de liens](/help/implementing/developing/tools/externalizer.md)
-+ Personnalisation {#personalization}
++ Personnalisation  {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [Configuration de ContextHub](developing/personalization/configuring-contexthub.md)
    + [Ajout de ContextHub aux pages](developing/personalization/adding-contexthub.md)
@@ -215,9 +215,9 @@ ht-degree: 92%
    + [Extension des fragments d’expérience](developing/extending/experience-fragments.md)
    + [Personnalisation et extensions de fragments de contenu](developing/extending/content-fragments-customizing.md)
    + [Fragments de contenu – Configuration des composants pour le rendu](developing/extending/content-fragments-configuring-components-rendering.md)
-   + Gérer le Forms de recherche {#manage-search-forms}
+   + Gestion des formulaires de recherche {#manage-search-forms}
       + [Configuration des formulaires de recherche](developing/extending/search-forms.md)
-      + [Configuration des filtres de recherche pour la boîte de réception](developing/extending/configure-inbox-search-rail.md)
+      + [Configuration des filtres de recherche pour boîte de réception](developing/extending/configure-inbox-search-rail.md)
    + [Configuration de l’éditeur de texte enrichi](/help/implementing/developing/extending/rich-text-editor.md)
    + [Configuration des modules externes d’éditeur de texte enrichi](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
    + [Configuration de l’éditeur de texte enrichi pour créer des sites accessibles](/help/implementing/developing/extending/rte-accessible-content.md)
@@ -232,8 +232,8 @@ ht-degree: 92%
 + Présentation de la diffusion de contenu {#content-delivery}
    + [Flux de diffusion de contenu](dispatcher/overview.md)
    + [Dispatcher en mode cloud](dispatcher/disp-overview.md)
-   + [Validation et débogage à l’aide des outils de Dispatcher](dispatcher/validation-debug.md)
-   + [Migration de la configuration du Dispatcher d’AMS vers AEM as a Cloud Service](dispatcher/ams-aem.md)
+   + [Validation et débogage à l’aide des outils Dispatcher](dispatcher/validation-debug.md)
+   + [Migration de la configuration Dispatcher d’AMS vers AEM as a Cloud Service](dispatcher/ams-aem.md)
    + [Validation et débogage à l’aide de l’héritage des outils Dispatcher](dispatcher/validation-debug-legacy.md)
    + [Réseau de diffusion de contenu dans AEM as a Cloud Service](dispatcher/cdn.md)
    + [Mise en cache dans AEM as a Cloud Service](dispatcher/caching.md)

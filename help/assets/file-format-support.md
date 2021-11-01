@@ -217,7 +217,7 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 
 ## Formats audio {#audio-formats}
 
-[!DNL Assets] as a offre une prise en charge de l’extraction de métadonnées XMP pour les formats audio AIF, ASF, M4A, MP3, WAV et WMA.[!DNL Cloud Service]
+[!DNL Assets] as a [!DNL Cloud Service] offre une prise en charge de l’extraction de métadonnées XMP pour les formats audio AIF, ASF, M4A, MP3, WAV et WMA.
 
 ## Conseils et restrictions {#limitations-and-tips}
 

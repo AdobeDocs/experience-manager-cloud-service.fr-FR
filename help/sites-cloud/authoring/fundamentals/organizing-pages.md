@@ -5,7 +5,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 source-git-commit: 93e0eac6e329c7a0c54cf592b097014d39a8eb17
 workflow-type: tm+mt
 source-wordcount: '2560'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Vous pouvez également vous aider de [dossiers](#creating-a-new-folder) pour org
 
 La structure d’un site web est construite comme une arborescence qui contient vos pages de contenu. Les noms de ces pages de contenu sont utilisés pour former les URL, tandis que les titres sont affichés lorsque le contenu de la page est affiché.
 
-Voici un exemple tiré du site [Tutoriel WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), sur lequel on consulte un article concernant les skateparks (`la-skateparks`) :
+Voici un exemple tiré du site [Tutoriel WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr), sur lequel on consulte un article concernant les skateparks (`la-skateparks`) :
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -269,13 +269,13 @@ Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplace
 
    ![Coller](/help/sites-cloud/authoring/assets/paste.png)
 
-1. La boîte de dialogue Coller présente un résumé de la transaction de collage et permet d’effectuer les opérations suivantes :
-   * **Nouveau nom du site :** modifiez le nom de la page collée.
-   * **Coller sans enfants :** Omettez les pages enfants de la page sélectionnée lors du collage (les pages enfants par défaut sont collées).
+1. La boîte de dialogue de collage présente un résumé de la transaction de collage et permet d’effectuer les opérations suivantes :
+   * **Nouveau nom du site :** modifiez le nom de la page collée.
+   * **Coller sans enfants :** omettez les pages enfants de la page sélectionnée lors du collage (par défaut, les pages enfants sont collées).
 
-   ![Boîte de dialogue Coller](/help/sites-cloud/authoring/assets/paste-dialog.png)
+   ![Boîte de dialogue de collage](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-1. Appuyez ou cliquez sur le bouton **Coller** pour confirmer la transaction de collage et créer la ou les nouvelles pages.
+1. Appuyez ou cliquez sur le bouton **Coller** pour confirmer la transaction de collage et créer la ou les nouvelle(s) page(s).
 
 >[!NOTE]
 >
@@ -283,11 +283,11 @@ Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplace
 
 >[!NOTE]
 >
->Si vous démarrez l’action de collage en mode de sélection, celle-ci se ferme automatiquement dès que la page est copiée.
+>Si vous débutez l’action de collage en mode de sélection, cette page est fermée dès qu’elle est copiée.
 
 ### Déplacement ou changement de nom d’une page {#moving-or-renaming-a-page}
 
-La procédure de déplacement ou de changement de nom d’une page est pratiquement la même et les deux actions sont gérées par l’assistant Déplacer la page . Cet assistant permet d’effectuer les opérations suivantes :
+La procédure pour déplacer ou renommer une page est plus ou moins la même et les deux actions sont gérées par le même assistant de déplacement des pages. Cet assistant permet d’effectuer les opérations suivantes :
 
 * Renommer une page sans la déplacer
 * Déplacer la page sans la renommer

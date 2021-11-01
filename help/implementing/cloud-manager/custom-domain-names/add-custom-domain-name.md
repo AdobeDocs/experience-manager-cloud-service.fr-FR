@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 source-git-commit: 98c137645351c86da8680a31b4929c588863a981
 workflow-type: tm+mt
 source-wordcount: '785'
-ht-degree: 77%
+ht-degree: 81%
 
 ---
 
@@ -63,10 +63,10 @@ Suivez les étapes ci-dessous pour ajouter un nom de domaine personnalisé à pa
 
 1. Sélectionnez l’**environnement** dont le service de publication sera associé au nom de domaine.
 
-1. Sélectionnez le service comme **Publier** ou **Aperçu**.
+1. Sélectionnez le service **Publier** ou **Aperçu**.
 
    >[!NOTE]
-   >Les noms de domaine personnalisés sont désormais pris en charge dans Cloud Manager pour les programmes Sites pour les services de publication et d’aperçu. Chaque environnement Cloud Manager peut héberger jusqu’à 500 domaines personnalisés. Pour en savoir plus sur le service d’aperçu, reportez-vous à la section [Service de prévisualisation](/help/implementing/cloud-manager/manage-environments.md#preview-service).
+   >Les noms de domaine personnalisés sont désormais pris en charge dans Cloud Manager pour les programmes Sites, pour les services de publication et d’aperçu. Chaque environnement Cloud Manager peut héberger jusqu’à 500 domaines personnalisés. Pour en savoir plus sur le service d’aperçu, voir [Service Aperçu](/help/implementing/cloud-manager/manage-environments.md#preview-service).
 
 1. Sélectionnez le **certificat SSL du domaine** dans la liste déroulante et sélectionnez **Continuer**.
 

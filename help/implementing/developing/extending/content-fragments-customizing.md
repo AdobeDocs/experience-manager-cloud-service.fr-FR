@@ -5,7 +5,7 @@ exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
 workflow-type: tm+mt
 source-wordcount: '1808'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -96,7 +96,7 @@ Pour une intégration au composant de base Assets :
 
 >[!CAUTION]
 >
->Le [composant Fragment de contenu fait partie des composants de base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html). Voir [Développement de composants de base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html) pour plus d’informations.
+>Le [composant Fragment de contenu fait partie des composants de base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr). Voir [Développement de composants de base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=fr) pour plus d’informations.
 
 Les fragments de contenu peuvent être référencés dans les pages AEM, exactement comme n’importe quel autre type de ressource. AEM fournit le composant de base de **[fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)** [qui permet d’inclure des fragments de contenu sur vos pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). Vous pouvez également étendre ce composant de base de **[fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)**.
 
@@ -130,7 +130,7 @@ Les fragments de contenu peuvent être intégrés à :
 
 * **Des traductions**
 
-   Les fragments de contenu sont entièrement intégrés au [processus AEM de traduction](/help/sites-cloud/administering/translation/overview.md). Au niveau architectural, cela présente les implications suivantes :
+   Les fragments de contenu sont entièrement intégrés au [Processus de traduction AEM](/help/sites-cloud/administering/translation/overview.md). Au niveau architectural, cela présente les implications suivantes :
 
    * Les traductions d’un fragment de contenu sont en fait des fragments distincts, par exemple :
 

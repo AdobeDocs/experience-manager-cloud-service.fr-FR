@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: f85a4dd109459e216d23a9da67f67d4ad7aa8709
 workflow-type: tm+mt
 source-wordcount: '3334'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -104,7 +104,7 @@ Après le basculement vers la nouvelle version de l’application :
    * Dossiers (ajout, modification, suppression)
    * Modèles modifiables (ajout, modification, suppression)
    * Configuration tenant compte du contexte (tout sous `/conf`) (ajout, modification, suppression)
-   * Scripts (les modules peuvent déclencher des hooks d’installation à diverses étapes du processus d’installation de module : Voir [Documentation Jackrabbit filevault](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) à propos des hooks d’installation. Notez qu’AEM CS utilise actuellement la version 3.4.0 de Filevault, qui limite l’installation des hooks aux administrateurs, aux utilisateurs système et aux membres du groupe administrateurs).
+   * Scripts (les modules peuvent déclencher des hooks d’installation à diverses étapes du processus d’installation de module : Voir la [documentation Jackrabbit filevault](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) sur les hooks d’installation. Notez qu’AEM CS utilise actuellement la version 3.4.0 de Filevault, qui limite les hooks d’installation aux administrateurs, aux utilisateurs système et aux membres du groupe administrateurs).
 
 Il est possible de limiter l’installation de contenu modifiable à la création ou à la publication en incorporant des modules dans un dossier install.author ou install.publish sous `/apps`. Une restructuration pour refléter cette séparation a été réalisée dans AEM 6.5 et les détails relatifs à la restructuration de projet recommandée sont disponibles dans la [documentation d’AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr).
 

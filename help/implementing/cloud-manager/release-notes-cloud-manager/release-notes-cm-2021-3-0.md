@@ -17,7 +17,7 @@ Cette page présente les notes de mise à jour de Cloud Manager dans AEM as a Cl
 
 La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.3.0 est le 11 mars 2021.
 
-## Cloud Manager  {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 ### Nouveautés {#what-is-new}
 

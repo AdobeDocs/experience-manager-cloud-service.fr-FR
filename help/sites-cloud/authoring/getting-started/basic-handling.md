@@ -5,7 +5,7 @@ exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
 workflow-type: tm+mt
 source-wordcount: '2881'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Vous pouvez fermer le panneau de navigation globale en cliquant ou en appuyant s
 
 La navigation globale se compose de deux panneaux, représentés par des icônes dans la marge gauche de l’écran :
 
-* **[Navigation](#navigation-panel)** : représenté par une boussole et le panneau par défaut lorsque vous vous connectez à AEM
+* **[Navigation](#navigation-panel)** : représenté par une boussole  et le panneau par défaut lorsque vous vous connectez à AEM
 * **[Outils](#tools-panel)** : représenté par un marteau
 
 Les options disponibles dans ces panneaux sont décrites ci-dessous.
@@ -202,7 +202,7 @@ Plusieurs ressources d’aide sont disponibles :
    >Pour une présentation de tous les raccourcis clavier, reportez-vous à la documentation suivante :
    >
    >* [Raccourcis clavier lors de la modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-   * [Raccourcis clavier pour les consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+   >* [Raccourcis clavier pour les consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
 ## Barre d’outils d’actions {#actions-toolbar}
@@ -222,7 +222,8 @@ En raison des restrictions d’espace dans certaines fenêtres, la barre d’out
 ![Options supplémentaires](/help/sites-cloud/authoring/assets/additional-options.png)
 
 >[!NOTE]
-Les icônes individuelles disponibles sont documentées par rapport à la console, à la fonction ou au scénario approprié.
+>
+>Les icônes individuelles disponibles sont documentées par rapport à la console, à la fonction ou au scénario approprié.
 
 ## Actions rapides {#quick-actions}
 
@@ -243,7 +244,8 @@ Vous pouvez afficher, parcourir et sélectionner (pour effectuer d’autres opé
 * [Mode Liste](#list-view)
 
 >[!NOTE]
-Par défaut, AEM Assets n’affiche pas les rendus d’origine des ressources dans l’interface utilisateur sous la forme de miniatures, et ce, quel que soit le mode. Si vous êtes administrateur, vous pouvez utiliser des incrustations pour configurer AEM Assets afin d’afficher les rendus d’origine sous la forme de miniatures.
+>
+>Par défaut, AEM Assets n’affiche pas les rendus d’origine des ressources dans l’interface utilisateur sous la forme de miniatures, et ce, quel que soit le mode. Si vous êtes administrateur, vous pouvez utiliser des incrustations pour configurer AEM Assets afin d’afficher les rendus d’origine sous la forme de miniatures.
 
 ### Sélection de ressources {#selecting-resources}
 
@@ -315,7 +317,7 @@ La sélection d’une ressource dans la colonne de gauche affiche les ressources
    * Modèle sur lequel la page est basée
    * Modification des détails
    * Langue de la page
-   * Publication et aperçu des détails
+   * Publication et prévisualisation des détails
 
 
 ### Mode Carte {#card-view}
@@ -361,7 +363,7 @@ La sélection d’une ressource dans la colonne de gauche affiche les ressources
    * **Nom** : nom de la page ; cela peut s’avérer utile dans un environnement de création multilingue, dans la mesure où il fait partie de l’URL de la page et où il ne change pas, quelle que soit la langue.
    * **Modifié** : date de la dernière modification et nom de l’utilisateur responsable de la modification.
    * **Publié** : état de la publication.
-   * **Aperçu**  - Aperçu de l’état
+   * **Prévisualisation** : prévisualisation de l’état
    * **Modèle** : modèle sur lequel la page est basée.
    * **Workflow** : workflow actuellement appliqué à la page. D’autres informations sont disponibles lorsque vous déplacez la souris ou lorsque vous ouvrez la chronologie.
    * **Analyse de la page**
@@ -374,7 +376,8 @@ La sélection d’une ressource dans la colonne de gauche affiche les ressources
 * Modifiez l’ordre des éléments à l’aide de la barre verticale en pointillés tout à droite de chaque élément de la liste.
 
    >[!NOTE]
-   La modification de l’ordre fonctionne uniquement dans un dossier ordonné dont la valeur `jcr:primaryType` est `sling:OrderedFolder`.
+   >
+   >La modification de l’ordre fonctionne uniquement dans un dossier ordonné dont la valeur `jcr:primaryType` est `sling:OrderedFolder`.
 
    ![Ordre des colonnes](/help/sites-cloud/authoring/assets/column-order.png)
 
@@ -393,7 +396,8 @@ Par exemple, dans la console **Sites**, vous pouvez sélectionner le contenu uni
 Si Contenu uniquement est sélectionné, alors seule l’icône de rail s’affiche. Si n’importe quelle autre option est sélectionnée, le nom des options apparaît en regard de l’icône de rail.
 
 >[!NOTE]
-Des [raccourcis clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) sont disponibles pour basculer rapidement entre les options d’affichage du rail.
+>
+>Des [raccourcis clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) sont disponibles pour basculer rapidement entre les options d’affichage du rail.
 
 ### Arborescence de contenu {#content-tree}
 
@@ -404,8 +408,10 @@ En utilisant le panneau latéral d’arborescence de contenu en même temps qu�
 ![Arborescence de contenu](/help/sites-cloud/authoring/assets/content-tree.png)
 
 >[!NOTE]
-Une fois qu’une entrée est sélectionnée dans la vue hiérarchique, les touches fléchées peuvent être utilisées pour naviguer rapidement au sein de la hiérarchie.
-Voir les [raccourcis clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) pour plus d’informations.
+>
+>Une fois qu’une entrée est sélectionnée dans la vue hiérarchique, les touches fléchées peuvent être utilisées pour naviguer rapidement au sein de la hiérarchie.
+>
+>Voir les [raccourcis clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) pour plus d’informations.
 
 ### Chronologie {#timeline}
 
@@ -444,7 +450,7 @@ Ces fonctionnalités sont accessibles par le biais du chevron en regard du champ
 Les **références** affichent toutes les connexions avec la ressource sélectionnée. Dans la console **Sites**, par exemple, les [références](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) des pages affichent les informations suivantes :
 
 * [Lancements](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
-* [Live copies](/help/sites-cloud/administering/msm/overview.md#openingthelivecopyoverviewfromreferences)
+* [Live Copies](/help/sites-cloud/administering/msm/overview.md#openingthelivecopyoverviewfromreferences)
 * [Copies de langue](/help/sites-cloud/administering/translation/preparation.md#seeing-the-status-of-language-roots)
 * Références du contenu :
 

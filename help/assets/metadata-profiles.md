@@ -8,7 +8,7 @@ exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
 source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
 source-wordcount: '1356'
-ht-degree: 91%
+ht-degree: 93%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 91%
 
 Un profil de métadonnées vous permet d’appliquer des métadonnées par défaut aux ressources d’un dossier. Créez un profil de métadonnées et appliquez-le à un dossier. Toute ressource chargée par la suite dans le dossier héritera des métadonnées par défaut que vous avez configurées dans le profil de métadonnées.
 
-Un concept important concernant l’utilisation des profils dans les ressources Experience Manager est qu’ils sont affectés à des dossiers. Un profil contient des paramètres sous la forme de profils de métadonnées, avec des profils vidéo ou des profils d’image. Ces paramètres traitent le contenu d’un dossier et de tous ses sous-dossiers. Par conséquent, la manière dont vous nommez les fichiers et les dossiers, organisez les sous-dossiers et gérez les fichiers dans ces dossiers a un impact significatif sur la manière dont ces ressources sont traitées par un profil.
+Un concept important concernant l’utilisation des profils dans Experience Manager Assets est qu’ils sont affectés à des dossiers. Un profil contient des paramètres sous la forme de profils de métadonnées, avec des profils vidéo ou des profils d’image. Ces paramètres traitent le contenu d’un dossier et de tous ses sous-dossiers. Par conséquent, la manière dont vous nommez les fichiers et les dossiers, organisez les sous-dossiers et gérez les fichiers dans ces dossiers a un impact significatif sur la manière dont ces ressources sont traitées par un profil.
 En appliquant des stratégies d’attribution de noms de fichiers et de dossiers cohérentes et appropriées, ainsi que de bonnes pratiques de métadonnées, vous tirez pleinement parti de votre collecte de ressources numériques et assurez-vous que les fichiers appropriés sont traités par le profil approprié.
 
 ## Ajout d’un profil de métadonnées {#adding-a-metadata-profile}
@@ -113,7 +113,7 @@ Vous pouvez supprimer un profil de métadonnées d’un dossier à partir du men
 
 ### Suppression de profils de métadonnées d’un dossier via l’interface utilisateur des profils {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Cliquez sur le logo du Experience Manager et accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**.
+1. Cliquez sur le logo Experience Manager et accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**.
 1. Sélectionnez le profil de métadonnées à supprimer d’un ou de plusieurs dossiers.
 1. Cliquez sur **[!UICONTROL Supprimer le profil de métadonnées du ou des dossiers]**, puis sélectionnez le ou les dossiers desquels vous souhaitez supprimer le profil. Ensuite, cliquez sur **[!UICONTROL Terminé]**.
 
@@ -121,6 +121,6 @@ Vous pouvez supprimer un profil de métadonnées d’un dossier à partir du men
 
 ### Suppression des profils de métadonnées des dossiers via Propriétés {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Cliquez sur le logo du Experience Manager et accédez à **[!UICONTROL Ressources]** , puis au dossier duquel vous souhaitez supprimer un profil de métadonnées.
+1. Cliquez sur le logo Experience Manager et accédez à **[!UICONTROL Ressources]**, puis au dossier duquel vous souhaitez supprimer un profil de métadonnées.
 1. Dans le dossier, cliquez sur la coche pour la sélectionner, puis sur **[!UICONTROL Propriétés]**.
 1. Sélectionnez l’onglet **[!UICONTROL Profils de métadonnées]**, puis **[!UICONTROL Aucun]** dans le menu déroulant, et cliquez sur **[!UICONTROL Enregistrer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.

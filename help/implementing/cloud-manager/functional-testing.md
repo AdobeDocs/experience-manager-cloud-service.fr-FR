@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: 058fa606bbc667a36b78d5271947e2741f36240f
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -66,17 +66,17 @@ Pour que leurs tests d’interface utilisateur soient créés et exécutés, les
 
 S’il ne se trouve pas dans le fichier `tar.gz` créé, les tests de l’interface utilisateur vont s’accumuler et leur exécution va être ignorée.
 
-Pour ajouter `testing.properties` dans l’artefact créé, ajoutez une `include` instruction dans `assembly-ui-test-docker-context.xml` (dans le sous-module Tests de l’interface utilisateur) :
+Pour ajouter un fichier `testing.properties` dans l’artefact créé, ajoutez une instruction `include` dans le fichier `assembly-ui-test-docker-context.xml` (dans le sous-module de tests de l’interface utilisateur) :
 
-    &quot;
+    ```
     [...]
     &lt;includes>
     &lt;include>Dockerfile&lt;/include>
     &lt;include>wait-for-grid.sh&lt;/include>
-    &lt;include>testing.properties&lt;/include> &lt;!>- module de test d’opt-in dans Cloud Manager —>
+    &lt;include>testing.properties&lt;/include> &lt;!- module de test d’opt-in dans Cloud Manager -->
     &lt;/includes>
     [...]
-    &quot;
+    ```
 
 >[!NOTE]
 >Les pipelines de production créés avant le 10 février 2021 devront être mis à jour afin d’utiliser les tests d’interface utilisateur décrits dans cette section. Cela signifie essentiellement que l’utilisateur doit modifier le pipeline de production et cliquer sur **Enregistrer** dans l’interface utilisateur, et ce, même si aucune modification n’a été apportée.

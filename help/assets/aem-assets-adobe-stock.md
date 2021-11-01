@@ -20,7 +20,7 @@ Le service [!DNL Adobe Stock] permet aux créateurs et aux entreprises d’accé
 
 ## Intégration d’[!DNL Experience Manager] et [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
-Pour établir la communication entre [!DNL Experience Manager] et [!DNL Adobe Stock], créez une configuration IMS et une configuration [!DNL Adobe Stock] dans [!DNL Experience Manager].
+Pour établir une communication entre les [!DNL Experience Manager] et [!DNL Adobe Stock], créez une configuration IMS et une [!DNL Adobe Stock] configuration dans [!DNL Experience Manager].
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ Pour établir la communication entre [!DNL Experience Manager] et [!DNL Adobe St
 
 ## Utilisation et gestion de ressources [!DNL Adobe Stock] dans [!DNL Experience Manager] {#usemanage}
 
-Grâce à cette fonctionnalité, les utilisateurs de l’entreprise peuvent utiliser des ressources [!DNL Adobe Stock] dans [!DNL Experience Manager Assets]. Dans l’interface utilisateur [!DNL Experience Manager], les utilisateurs peuvent rechercher des ressources [!DNL Adobe Stock] et obtenir des licences pour les ressources requises.
+Grâce à cette fonctionnalité, les utilisateurs d’organisations peuvent utiliser [!DNL Adobe Stock] ressources dans [!DNL Experience Manager Assets]. Dans l’interface utilisateur [!DNL Experience Manager], les utilisateurs peuvent rechercher des ressources [!DNL Adobe Stock] et obtenir des licences pour les ressources requises.
 
 Une fois qu’une ressource [!DNL Adobe Stock] est sous licence dans [!DNL Experience Manager], elle peut être utilisée et gérée comme une ressource standard. Dans [!DNL Experience Manager], les utilisateurs peuvent rechercher des ressources, les prévisualiser, les copier, les publier, les partager sur [!DNL Brand Portal] et les utiliser via l’application de bureau [!DNL Experience Manager], etc.
 

@@ -5,7 +5,7 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 333ebbed52577a82eb9b65b20a173e4e65e09537
 workflow-type: tm+mt
 source-wordcount: '2177'
-ht-degree: 83%
+ht-degree: 87%
 
 ---
 
@@ -159,7 +159,7 @@ Comme illustré ci-dessous, les développeurs peuvent résoudre les dépendances
 
 ![Console de développement 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Pour les programmes de Production, l’accès à Developer Console est défini par la mention « Cloud Manager – Rôle de développeur » dans l’Admin Console. Pour les programmes Sandbox, Developer Console est disponible pour tout utilisateur disposant d’un profil de produit lui permettant d’accéder à AEM as a Cloud Service. Pour tous les programmes, « Cloud Manager – Rôle de développeur » est nécessaire pour les vidages de statut. Les utilisateurs doivent également être définis dans le profil de produit Utilisateurs d’AEM ou Administrateurs d’AEM sur les services de création et de publication afin d’afficher les données de vidage d’état des deux services. Pour plus d’informations sur la configuration des autorisations des utilisateurs, voir [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+Pour les programmes de Production, l’accès à Developer Console est défini par la mention « Cloud Manager – Rôle de développeur » dans l’Admin Console. Pour les programmes Sandbox, Developer Console est disponible pour tout utilisateur disposant d’un profil de produit lui permettant d’accéder à AEM as a Cloud Service. Pour tous les programmes, « Cloud Manager – Rôle de développeur » est nécessaire pour les vidages de statut. Les utilisateurs doivent également être définis dans le profil de produit Utilisateurs d’AEM ou Administrateurs d’AEM sur les services de création et de publication afin d’afficher les données de vidage d’état des deux services. Pour plus d’informations sur la configuration des autorisations des utilisateurs, voir [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=fr).
 
 ### Service de test et de production AEM {#aem-staging-and-production-service}
 
@@ -187,13 +187,13 @@ Vous devez envoyer des emails par l’intermédiaire d’un serveur de messageri
 
 ### Envoi d’emails {#sending-emails}
 
-Le [service de messagerie Day CQ OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) doit être utilisé et les emails doivent être envoyés au serveur de messagerie indiqué dans la demande d’assistance, et non directement aux destinataires.
+Le [service de messagerie Day CQ OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=fr#configuring-the-mail-service) doit être utilisé et les emails doivent être envoyés au serveur de messagerie indiqué dans la demande d’assistance, et non directement aux destinataires.
 
 ### Configuration {#email-configuration}
 
 Dans AEM, les emails doivent être envoyés à l’aide du [service de messagerie Day CQ OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
-Voir [Documentation d’AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) pour plus d’informations sur la configuration des paramètres de courrier électronique. Pour les AEM as a Cloud Service, notez les modifications nécessaires suivantes au `com.day.cq.mailer.DefaultMailService OSGI` service :
+Voir la [documentation d’AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=fr) pour plus d’informations sur la configuration des paramètres des e-mails. Pour les AEM as a Cloud Service, notez les modifications nécessaires suivantes au `com.day.cq.mailer.DefaultMailService OSGI` service :
 
 * Le nom d’hôte du serveur SMTP doit être défini sur $[env:AEM_PROXY_HOST]
 * Le port du serveur SMTP doit être défini sur la valeur du port proxy d’origine défini dans le paramètre portForwards utilisé dans l’appel API lors de la configuration de la mise en réseau avancée. Par exemple, 30465 (plutôt que 465)
@@ -234,6 +234,6 @@ La propriété `smtp.starttls` sera automatiquement définie par AEM as a Cloud�
 L’hôte du serveur SMTP doit être défini sur celui de votre serveur de messagerie.
 
 
-## [!DNL Assets] directives de développement et cas pratiques {#use-cases-assets}
+## Directives de développement [!DNL Assets] et cas pratiques {#use-cases-assets}
 
 Pour en savoir plus sur les cas d’utilisation de développement, les recommandations et les documents de référence pour Assets as a Cloud Service, voir [Références pour les développeurs pour Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).

@@ -4,8 +4,8 @@ description: Ressources d’aide autonome et liens vers la documentation sur les
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
 source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '385'
+ht-degree: 95%
 
 ---
 
@@ -19,7 +19,7 @@ Cette page répertorie les ressources d’aide autonome sur les connecteurs Expe
 * [Envoi des connecteurs](submit.md)
 * [Maintenance des connecteurs](maintain.md)
 
-## Guides de Experience Manager en tant que Cloud Service {#aem-guides}
+## Guides d’Experience Manager as a Cloud Service {#aem-guides}
 
 | Guide de l’utilisateur | Description |
 |---|---|

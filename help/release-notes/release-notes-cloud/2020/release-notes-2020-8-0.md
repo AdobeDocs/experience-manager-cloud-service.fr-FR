@@ -5,7 +5,7 @@ exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '1046'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ La section suivante décrit les notes de mise à jour générales d’Experience
 * Possibilité de [créer des lancements](/help/sites-cloud/authoring/launches/overview.md) dans l’[éditeur de SPA](/help/implementing/developing/hybrid/introduction.md) d’AEM.
 
 
-## [!DNL Adobe Experience Manager Assets] en tant que Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### Nouveautés d’[!DNL Assets]  {#what-is-new-assets}
 
@@ -40,9 +40,9 @@ La section suivante décrit les notes de mise à jour générales d’Experience
 
 * Utilisez un profil de traitement pour générer des métadonnées personnalisées à l’aide de Compute Service. Voir [Métadonnées personnalisées à l’aide de profils de traitement](/help/assets/manage-metadata.md#metadata-compute-service).
 
-* Une expérience de téléchargement plus simple pour les utilisateurs de Brand Portal, configurable par les administrateurs. Voir [Présentation de l’expérience de téléchargement](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
+* Une expérience de téléchargement plus simple pour les utilisateurs de Brand Portal, configurable par les administrateurs. Voir [Présentation de l’expérience de téléchargement](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=fr#download-configurations).
 
-* Les aperçus de documents PDF natifs et haute fidélité sont désormais disponibles dans Brand Portal. Voir [Présentation du logiciel de visualisation de documents](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
+* Les aperçus de documents PDF natifs et haute fidélité sont désormais disponibles dans Brand Portal. Voir [Présentation du logiciel de visualisation de documents](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=fr#doc-viewer).
 
 * Vous pouvez désormais invalider le cache CDN (réseau de diffusion de contenu) directement depuis [!DNL Dynamic Media]AEM as a Cloud Service (plutôt qu’avec [!DNL Dynamic Media Classic]). Cette opération garantit que les dernières ressources sont diffusées en quelques minutes au lieu de quelques heures auparavant. Voir [Invalidation du cache CDN à l’aide de Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 

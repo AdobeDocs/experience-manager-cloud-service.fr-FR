@@ -11,7 +11,7 @@ ht-degree: 75%
 
 # Guide de prise en main du mode découplé {#introduction}
 
-Les Guides de prise en main sans tête présentent un chemin simple pour créer, gérer et diffuser des expériences à l’aide d’AEM en tant que Cloud Service en cinq étapes pour les utilisateurs déjà familiarisés avec AEM et la technologie sans tête. Chaque guide s’appuie sur le précédent ; il est donc recommandé de les étudier en détail et dans l’ordre.
+Les Guides de prise en main sans tête présentent un chemin simple pour créer, gérer et diffuser des expériences à l’aide d’AEM as a Cloud Service en cinq étapes pour les utilisateurs qui connaissent déjà AEM et la technologie sans tête. Chaque guide s’appuie sur le précédent ; il est donc recommandé de les étudier en détail et dans l’ordre.
 
 1. [Création d’une configuration](create-configuration.md)
 1. [Création d’un modèle de fragment de contenu](create-content-model.md)
@@ -23,7 +23,7 @@ Les Guides de prise en main sans tête présentent un chemin simple pour créer,
 >
 >Ce guide de prise en main suppose des connaissances en AEM et en technologies sans tête.
 >
->Si vous découvrez AEM ou sans interface, reportez-vous à nos [Parcours de documentation sans interface](/help/journey-headless/home.md) pour une introduction de bout en bout à la fois sans interface et comment AEM le prend en charge.
+>Si vous découvrez AEM ou que vous n’avez pas de tête, reportez-vous à la section [Parcours de documentation sans affichage](/help/journey-headless/home.md) pour une introduction de bout en bout sur les headless et la façon dont AEM les prend en charge.
 
 ## Public {#audience}
 

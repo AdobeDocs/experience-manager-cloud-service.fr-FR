@@ -1,13 +1,13 @@
 ---
 title: Texte (Markdown)
 description: Découvrez comment l’éditeur de fragment de contenu utilise la syntaxe Markdown pour vous permettre de créer facilement du contenu découplé.
-feature: Fragments de contenu
+feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 97%
+source-wordcount: '522'
+ht-degree: 100%
 
 ---
 
@@ -165,7 +165,7 @@ Vous pouvez mettre du texte en gras comme suit :
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Pour indiquer une plage de code, entourez-la de guillemets antiretour (&amp;grave;). Contrairement à un bloc de code préformaté, une plage de code indique du code dans un paragraphe normal.
+Pour désigner une plage de code, entourez-la de guillemets obliques (&amp;grave;). Contrairement à un bloc de code préformaté, une plage de code indique du code dans un paragraphe normal.
 
 Par exemple :
 

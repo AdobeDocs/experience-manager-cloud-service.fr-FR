@@ -17,7 +17,7 @@ Dans cette partie du [Parcours de développement découplé AEM,](overview.md) v
 
 Dans le document précédent traitant du parcours AEM découplé, intitulé [Prise en main d’AEM as a Cloud Service découplé](getting-started.md), vous avez appris la théorie sur ce qu’est un CMS découplé, et vous devriez maintenant :
 
-* comprendre les principes de base des fonctionnalités AEM découplées ;
+* comprendre les principes de base des fonctionnalités d’AEM découplé ;
 * connaître les conditions préalables requises pour utiliser les fonctionnalités AEM découplées ;
 * avoir conscience des niveaux d’intégration AEM découplé ;
 * être en mesure de définir votre projet et sa portée.
@@ -105,7 +105,7 @@ Un projet découplé doit son succès non seulement à la technologie mise en œ
 * Votre hiérarchie de contenu doit se calquer sur ces exigences d’accès. Regroupez les contenus édités par le même groupe de personnes.
 * Regroupez les contenus similaires dans un dossier.
    * Un auteur de contenu utilisera probablement un contenu existant pour le copier et le coller et créer du contenu. C’est pourquoi il sera plus efficace de le faire dans le même dossier.
-   * AEM permet de définir les modèles autorisés par dossier. Le bouton **Créer** n’affiche donc que les modèles pris en charge à cet emplacement.
+   * AEM autorise la définition de modèles autorisés par dossier, de sorte que la variable **Créer** affiche uniquement les modèles pris en charge à cet emplacement.
 * La création de fragments de contenu en ligne par l’éditeur de fragments de contenu peut être simplifiée si le dossier racine est défini dans le modèle. Le praticien n’a alors pas à choisir un emplacement, mais doit simplement fournir un nom et peut commencer à modifier la nouvelle référence.
 
 ### Création de contenu {#authoring}
@@ -122,7 +122,7 @@ Un projet découplé doit son succès non seulement à la technologie mise en œ
 
 ## Et après ? {#what-is-next}
 
-Maintenant que vous avez terminé cette partie du Parcours de développement découplé AEM, vous devez :
+Maintenant que vous avez terminé cette partie du parcours de développement découplé AEM, vous devriez pouvoir :
 
 * comprendre les points importants de sa planification pour concevoir votre contenu ;
 * découvrir les étapes à suivre pour implémenter du contenu découplé dans AEM ;
@@ -142,7 +142,7 @@ Quel que soit votre style d’apprentissage, Adobe veut que vous réussissiez da
 
 Bien qu’il soit recommandé de passer à la partie suivante du parcours de développement découplé en consultant le document [Comment modéliser votre contenu en tant que modèles de contenu AEM,](model-your-content.md) les documents facultatifs suivants approfondissent certains concepts mentionnés dans ce document mais ils ne concernent pas forcément le parcours découplé.
 
-* [AEM Parcours](/help/journey-headless/translation/overview.md)  de traduction sans interface - Ce parcours de documentation vous donne une large compréhension de la technologie sans interface, de la manière dont AEM diffuse du contenu sans interface et de la manière dont vous pouvez le traduire.
+* [AEM Parcours de traduction sans affichage](/help/journey-headless/translation/overview.md) - Ce parcours de documentation vous donne une large compréhension de la technologie sans interface, de la manière dont AEM diffuse du contenu sans interface et de la manière dont vous pouvez le traduire.
 * [Développement découplé pour AEM Sites as a Cloud Service](/help/implementing/developing/headless/introduction.md) : une présentation rapide pour orienter le développeur AEM découplé vers les fonctionnalités qui lui seront utiles.
 * [Tutoriels AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) : utilisez ces tutoriels pratiques découvrir comment utiliser les différentes options de diffusion de contenu vers des points d’entrée découplés avec AEM et choisissez ce qui vous convient.
 * [Gestion de contenu en mode découplé à l’aide des API GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) – Suivez ce cours pour bénéficier d’une présentation de l’API GraphQL implémentée dans AEM. L’authentification à l’aide de l’Adobe ID est requise.

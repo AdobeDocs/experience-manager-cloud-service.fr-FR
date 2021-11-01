@@ -85,7 +85,7 @@ Dans certaines mosaïques, vous pouvez ajouter plusieurs éléments. Par exemple
 
 Pour ajouter des éléments à une mosaïque :
 
-1. Dans **Projets**, accédez au projet et appuyez ou cliquez sur le chevron vers le bas de la mosaïque à laquelle vous souhaitez ajouter un élément.
+1. Dans **Projets**, accédez au projet et appuyez ou cliquez sur le chevron inférieur de la mosaïque à laquelle vous souhaitez ajouter un élément.
 
    ![Ajout d’un élément à une mosaïque](/help/sites-cloud/authoring/assets/project-workflows.png)
 
@@ -107,7 +107,7 @@ Pour ouvrir une mosaïque afin d’afficher ou de modifier des éléments :
 
 ## Affichage des statistiques d’un projet {#viewing-project-statistics}
 
-Vous pouvez afficher les statistiques du projet dans la console **Projets**.
+Vous pouvez afficher les statistiques d’un projet dans le **Projets** console.
 
 ### Affichage d’une chronologie de projet {#viewing-a-project-timeline}
 

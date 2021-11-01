@@ -1,31 +1,31 @@
 ---
-title: AEM Screens en tant que Cloud Service
-description: Ressources d’aide autonome et liens vers la documentation d’Adobe Experience Manager Screens as a Cloud Service
+title: AEM Screens as a Cloud Service
+description: Ressources d’aide autonome et liens vers la documentation d’Adobe Experience Manager Screens as a Cloud Service
 exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
 source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '428'
+ht-degree: 95%
 
 ---
 
-# AEM Screens en tant que Cloud Service {#aem-screens-as-a-cloud-service-guide}
+# AEM Screens as a Cloud Service {#aem-screens-as-a-cloud-service-guide}
 
-Cette page répertorie les ressources d’aide autonome concernant AEM Screens en tant que Cloud Service.
+Cette page répertorie les ressources d’aide autonome relatives à AEM Screens as a Cloud Service.
 
 >[!NOTE]
->Pour AEM Screens avec AEM 6.5, consultez le [Guide de l’utilisateur d’AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=en).
+>Pour AEM Screens avec AEM 6.5, consultez le [Guide de l’utilisateur d’AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=fr).
 
 
 ## Principaux articles relatifs au contenu et à AEM Screens as a Cloud Service {#key-articles}
 
-* [Présentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/overview/introduction.html?lang=en)
-* [Intégration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en)
-* [Configuration des services Screens et du fournisseur de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)
-* [Création d’un projet dans Screens en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en)
-* [Installation du lecteur Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en)
+* [Présentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/overview/introduction.html?lang=fr)
+* [Intégration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=fr)
+* [Configuration des services Screens et du fournisseur de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=fr)
+* [Création d’un projet dans Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=fr)
+* [Installation du lecteur Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=fr)
 
-## Guides de Experience Manager en tant que Cloud Service {#aem-guides}
+## Guides d’Experience Manager as a Cloud Service {#aem-guides}
 
 | Guide de l’utilisateur | Description |
 |---|---|
@@ -46,7 +46,7 @@ Cette page répertorie les ressources d’aide autonome concernant AEM Screens e
 * [Documentation Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentation HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr)
 * [Documentation sur les composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
-* [Documentation Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Documentation Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html?lang=fr)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriels sur Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=fr)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)

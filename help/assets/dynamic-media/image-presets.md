@@ -1,17 +1,17 @@
 ---
-title: Application de paramètres d’image prédéfinis Dynamic Media
+title: Application de paramètres d’image prédéfinis Dynamic Media
 description: Découvrez comment appliquer des paramètres d’image prédéfinis Dynamic Media.
-feature: Paramètres d’image prédéfinis,Visionneuses,Rendus
+feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
 source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 88%
+source-wordcount: '302'
+ht-degree: 100%
 
 ---
 
-# Application de paramètres d’image prédéfinis Dynamic Media {#applying-image-presets}
+# Application de paramètres d’image prédéfinis Dynamic Media {#applying-image-presets}
 
 Les préréglages d’image permettent aux ressources de fournir dynamiquement des images de différentes tailles, dans différents formats ou avec d’autres propriétés d’image qui sont générées dynamiquement. Vous pouvez choisir un paramètre prédéfini lors de l’exportation afin de reformater les images selon les spécifications définies par votre administrateur.
 
@@ -27,14 +27,13 @@ Vous pouvez appliquer un paramètre d’image prédéfini à une image lorsque v
 
 **Pour appliquer les paramètres d’image prédéfinis Dynamic Media :**
 
-1. Ouvrez la ressource et, dans le rail de gauche, sélectionnez la liste déroulante, puis **[!UICONTROL Rendus]**.
+1. Ouvrez la ressource et, dans le rail de gauche, sélectionnez dans la liste déroulante, puis l’option **[!UICONTROL Rendus]**.
 
    >[!NOTE]
    >
    >* Les rendus statiques apparaissent dans la moitié supérieure du volet. Les rendus dynamiques apparaissent dans la moitié inférieure. Avec des rendus dynamiques uniquement, vous pouvez utiliser l’URL pour afficher l’image. Le bouton **[!UICONTROL URL]** apparaît uniquement lorsque vous sélectionnez un rendu dynamique. Le bouton **[!UICONTROL RESS]** ne s’affiche que lorsque vous sélectionnez un paramètre d’image prédéfini réactif.
-      >
-      >
-   * Le système affiche plusieurs rendus lorsque vous sélectionnez **[!UICONTROL Rendus]** dans l’affichage des détails d’une ressource. Vous pouvez augmenter le nombre de paramètres prédéfinis visibles. Voir [Augmentation du nombre de paramètres d’image prédéfinis affichés](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
+   >
+   >* Le système affiche plusieurs rendus lorsque vous sélectionnez **[!UICONTROL Rendus]** dans l’affichage des détails d’une ressource. Vous pouvez augmenter le nombre de paramètres prédéfinis visibles. Voir [Augmentation du nombre de paramètres d’image prédéfinis affichés](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
 
    ![chlimage_1-208](assets/chlimage_1-208.png)

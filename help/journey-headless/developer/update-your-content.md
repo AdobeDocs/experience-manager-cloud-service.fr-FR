@@ -27,7 +27,7 @@ Cet article s’appuie sur ces principes de base afin que vous compreniez commen
 
 * **Audience** : Niveau avancé
 * **Objectif** : Découvrir comment utiliser l’API REST pour accéder au contenu de vos fragments de contenu et le mettre à jour :
-   * Présentation de l’API HTTP Assets d’AEM.
+   * Présentation de l’API HTTP d’AEM Assets.
    * Présentation et description de la prise en charge des fragments de contenu dans l’API.
    * Illustration de détails de l’API.
 
@@ -298,7 +298,7 @@ Mode d’utilisation :
 
 `DELETE /{cfParentPath}/{cfName}`
 
-Pour plus d’informations sur l’utilisation de l’API REST Assets d’AEM, vous pouvez accéder aux éléments suivants :
+Pour plus d’informations sur l’utilisation de l’API REST d’AEM Assets, vous pouvez accéder aux éléments suivants :
 
 * API HTTP Assets d’Adobe Experience Manager (ressources supplémentaires)
 * Prise en charge des fragments de contenu dans l’API HTTP AEM Assets (ressources supplémentaires)
@@ -307,7 +307,7 @@ Pour plus d’informations sur l’utilisation de l’API REST Assets d’AEM, v
 
 Maintenant que vous avez terminé cette partie du parcours de développement découplé AEM, vous devriez pouvoir :
 
-* Comprendre les principes de base de l’API HTTP Assets d’AEM.
+* Comprendre les principes de base de l’API HTTP d’AEM Assets.
 * Comprendre comment les fragments de contenu sont pris en charge dans cette API.
 
 <!--

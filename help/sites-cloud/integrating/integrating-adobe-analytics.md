@@ -7,7 +7,7 @@ exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
 source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '530'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -44,7 +44,7 @@ Les champs de configuration présents dans la fenêtre Configuration d’Adobe A
 | Nom d’utilisateur | Utilisateur de l’API Adobe Analytics |
 | Mot de passe | Mot de passe Adobe Analytics utilisé pour l’authentification |
 | Centre de données | Centre de données Adobe Analytics auquel votre compte est associé (serveur, par exemple San Jose ou Londres) |
-| Segment | Option permettant d’utiliser un segment Analytics défini dans la suite de rapports actuelle. Les rapports Analytics seront filtrés en fonction du segment. Consultez [cette page](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html) pour plus de détails. |
+| Segment | Option permettant d’utiliser un segment Analytics défini dans la suite de rapports actuelle. Les rapports Analytics seront filtrés en fonction du segment. Consultez [cette page](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=fr) pour plus de détails. |
 | Suites de rapports | Référentiel dans lequel vous envoyez des données et extrayez des rapports. Une suite de rapports définit le reporting complet et indépendant sur un site web choisi, un ensemble de sites web ou un sous-ensemble de pages web. Vous pouvez afficher les rapports récupérés à partir d’une seule suite de rapports et modifier ce champ dans une configuration à tout moment, en fonction de vos besoins. |
 
 ### Ajout d’une configuration à un site {#add-configuration}
@@ -55,9 +55,9 @@ Pour appliquer une configuration d’interface utilisateur tactile à un site, a
 
 Adobe Analytics peut être ajouté en tant qu’extension dans la propriété Launch. Des règles peuvent être définies pour procéder au mappage et effectuer un appel POST auprès d’Adobe Analytics :
 
-* Regardez [cette vidéo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html) afin de savoir comment configurer l’extension Analytics dans Launch pour un site de base.
+* Regardez [cette vidéo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html?lang=fr) afin de savoir comment configurer l’extension Analytics dans Launch pour un site de base.
 
-* Consultez [cette page](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html) pour en savoir plus sur la création de règles et l’envoi de données à Adobe Analytics.
+* Consultez [cette page](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=fr) pour en savoir plus sur la création de règles et l’envoi de données à Adobe Analytics.
 
 >[!NOTE]
 >

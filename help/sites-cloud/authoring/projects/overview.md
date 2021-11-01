@@ -5,7 +5,7 @@ exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
 source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
 workflow-type: tm+mt
 source-wordcount: '1259'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -83,7 +83,7 @@ La mosaïque **Expériences** permet d’ajouter au projet une application mobil
 
 ![Expériences](/help/sites-cloud/authoring/assets/project-experiences.png)
 
-Les icônes indiquent le type d’expérience représenté : site web, application mobile ou publication. Ajoutez des expériences en appuyant ou en cliquant sur le chevron bas, puis en appuyant sur **Ajouter une expérience** et en sélectionnant le type d’expérience.
+Les icônes indiquent le type d’expérience représenté : site web, application mobile ou publication. Ajoutez des expériences en appuyant ou en cliquant sur le chevron inférieur et en appuyant sur **Ajout d’une expérience** et en sélectionnant le type d’expérience.
 
 ![Ajout d’une expérience](/help/sites-cloud/authoring/assets/projects-add-experience.png)
 
@@ -156,7 +156,7 @@ Les tâches vous permettent de surveiller le statut de toutes les activités ass
 AEM est fourni avec trois modèles prêts à l’emploi :
 
 * Un projet simple : un modèle de référence pour tous les projets auxquels les autres catégories ne sont pas adaptées. Il comprend trois rôles de base (propriétaires, éditeurs et observateurs) et quatre workflows (Approbation de projet, Demander un lancement, Demander la page d’entrée et Demander un courrier électronique).
-* Un projet de média : un modèle de référence pour des activités multimédias. Il comprend plusieurs rôles de projet relatifs aux médias (photographes, éditeurs, rédacteurs, concepteurs, propriétaires et observateurs). Il demande également la copie pour demander et réviser du texte.
+* Un projet de média : un modèle de référence pour des activités multimédias. Il comprend plusieurs rôles de projet relatifs aux médias (photographes, éditeurs, rédacteurs, concepteurs, propriétaires et observateurs). Il dispose également du workflow de demande de copie pour demander et réviser du texte.
 * Un [projet de traduction](/help/sites-cloud/administering/translation/overview.md) : modèle de référence pour gérer des activités liées à la traduction. Il prévoit trois rôles de base (propriétaires, éditeurs et observateurs). Il comprend deux workflows accessibles dans l’interface utilisateur Workflows.
 
 En fonction du modèle sélectionné, plusieurs options s’offrent à vous, notamment en termes de rôles utilisateur et de workflows.
@@ -173,7 +173,7 @@ Pour vous permettre de gérer les autorisations de sécurité et de contrôle, t
 | Rôle | Description | Autorisations | Appartenance à un groupe |
 |---|---|---|---|
 | Observateur | Un utilisateur disposant de ce rôle peut afficher les détails du projet, y compris son statut. | Droits en lecture seule sur un projet | Groupe `workflow-users` |
-| Éditeur | Un utilisateur disposant de ce rôle peut charger et modifier le contenu d’un projet. | Accès en lecture et en écriture sur un projet, les métadonnées associées et les ressources associées ; des privilèges permettant de charger une liste de plans, de réviser et d’approuver des ressources ; autorisation d’écriture sur /etc/commerce ; modification de l’autorisation sur un projet spécifique | Groupe workflow-users |
+| Éditeur | Un utilisateur disposant de ce rôle peut charger et modifier le contenu d’un projet. | Accès en lecture et en écriture à un projet, aux métadonnées associées et aux ressources connexes ; droits permettant à l’utilisateur de charger une liste de plans et passer en revue et approuver des ressources ; droits en écriture sur /etc/commerce ; droits de modification sur un projet spécifique | Groupe workflow-users |
 | Propriétaire | Un utilisateur disposant de ce rôle peut lancer un projet. Le propriétaire peut créer un projet, lancer une tâche pour un projet et déplacer les ressources approuvées vers le dossier Production. Toutes les autres tâches de projet peuvent également être visualisées et implémentées par le propriétaire. | Droits en écriture sur `/etc/commerce` | Groupe `dam-users` (pour pouvoir créer un projet), groupe administrateurs-projet (pour pouvoir déplacer des ressources) |
 
 >[!NOTE]
