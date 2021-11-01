@@ -2,10 +2,10 @@
 title: Phase de préparation dans Cloud Accelerated Manager
 description: Cette page présente un aperçu de la phase de préparation dans Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: a6d0ab0245ed33fcffe1c4811674435e6f97abf8
+source-git-commit: 5f65d9045e30e9192b7e4833d4667ab5be588e92
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 66%
+source-wordcount: '1042'
+ht-degree: 65%
 
 ---
 
@@ -90,7 +90,7 @@ Suivez les étapes ci-dessous :
 
 Lorsque vous transférez plusieurs rapports Analyseur des bonnes pratiques (BPA) dans un projet, vous pouvez sélectionner la variable **Afficher la tendance** pour afficher et comparer les résultats des anciens rapports BPA.
 
-Pour afficher la courbe de tendance, procédez comme suit :
+Pour afficher les rapports à partir de l’option de tendance, procédez comme suit :
 
 >[!NOTE]
 >Lorsque vous téléchargez plusieurs rapports d’application d’une seule page dans un projet, l’icône s’affiche. **...**.
@@ -104,7 +104,7 @@ Pour afficher la courbe de tendance, procédez comme suit :
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
-   >Le rapport affiché est toujours celui qui possède la dernière date de rapport.
+   >Le rapport affiché dans la **Écran Rapport de tendance** est toujours celle avec la date du rapport récent.
 
 1. Cliquez sur **Afficher la tendance**, comme illustré dans la figure ci-dessous.
 
@@ -116,12 +116,14 @@ Pour afficher la courbe de tendance, procédez comme suit :
 
    >[!NOTE]
    >Le rapport de tendance affiche sous forme graphique les résultats des rapports BPA historiques.
+   >
    >Deux graphiques affichent la tendance de :
-   >1. Tendance des résultats du rapport
-   >1. Tendance des composants et modèles personnalisés
-      >Vous pouvez ajouter ou modifier la vue graphique à partir de la liste déroulante comme illustré ci-dessous.
-      >![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
+   >1. **Tendance des résultats du rapport**
+   >1. **Composants personnalisés et tendance de modèle**
 
+   >
+   >Vous pouvez ajouter ou modifier la vue graphique à partir de la liste déroulante, comme illustré dans la figure ci-dessous :
+   >![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
 
 #### Suppression du rapport de tendance {#delete-trendline}
 
