@@ -274,5 +274,5 @@ Supprime une ressource (arborescence) pour le chemin indiqué.
 
 >[!MORELIKETHIS]
 >
->* Documentation de référence du développeur pour [!DNL Assets] [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
+>* [Documentation de référence du développeur pour [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
 
