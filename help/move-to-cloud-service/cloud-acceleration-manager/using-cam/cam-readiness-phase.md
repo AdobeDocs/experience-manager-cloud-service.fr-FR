@@ -2,9 +2,9 @@
 title: Phase de préparation dans Cloud Accelerated Manager
 description: Cette page présente un aperçu de la phase de préparation dans Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: c10d04d6d423529549a760945f72fc3c64ed72ed
+source-git-commit: d706f8229cbca27ece5faedbecc4d02f58d40fb2
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1057'
 ht-degree: 64%
 
 ---
@@ -104,7 +104,7 @@ Pour afficher les rapports à partir de l’option de tendance, procédez comme 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
-   >Le rapport affiché dans la **Écran Rapport de tendance** est toujours celle avec la date du rapport récent.
+   >Le rapport affiché est toujours celui dont la date de rapport est la plus récente.
 
 1. Cliquez sur **Afficher la tendance**, comme illustré dans la figure ci-dessous.
 
@@ -124,33 +124,6 @@ Pour afficher les rapports à partir de l’option de tendance, procédez comme 
    >
    >Vous pouvez ajouter ou modifier la vue graphique à partir de la liste déroulante, comme illustré dans la figure ci-dessous :
    >![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
-
-#### Suppression du rapport {#delete-trendline}
-
-Pour supprimer un rapport de la vue Trendline, procédez comme suit :
-
->[!IMPORTANT]
->Un rapport ne peut être supprimé que lorsque plusieurs rapports ont été chargés dans un projet.
-
-1. Accédez à votre projet et cliquez sur **Réviser** de la **Analyse des bonnes pratiques** dans la **Préparation** phase.
-
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
-
-1. Cliquez sur le bouton **...** pour afficher la liste déroulante.
-
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
-
-1. Cliquez sur **Afficher la tendance**, comme illustré dans la figure ci-dessous.
-
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
-
-1. Cliquez sur l’icône de suppression dans la **Rapport de tendance** écran.
-
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
-
-1. Cliquez sur **Supprimer** pour confirmer la suppression.
-
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
 
 
 ### Consultation du rapport d’analyse des bonnes pratiques {#analysis-report}
@@ -222,6 +195,33 @@ Consultez cette section pour découvrir la carte de l’activité Planification 
 1. Un carrousel de contenu affiche toutes les informations pertinentes pour cette phase du parcours de migration.
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
+
+### Suppression d’un rapport d’analyse des bonnes pratiques {#delete-trendline}
+
+Pour supprimer un rapport de la vue Trendline, procédez comme suit :
+
+>[!IMPORTANT]
+>Un rapport ne peut être supprimé que lorsque plusieurs rapports ont été chargés dans un projet.
+
+1. Accédez à votre projet et cliquez sur **Réviser** de la **Analyse des bonnes pratiques** dans la **Préparation** phase.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+
+1. Cliquez sur le bouton **...** pour afficher la liste déroulante.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+
+1. Cliquez sur **Afficher la tendance**, comme illustré dans la figure ci-dessous.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+
+1. Cliquez sur l’icône de suppression dans la **Rapport de tendance** écran.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
+
+1. Cliquez sur **Supprimer** pour confirmer la suppression.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
 
 ## Et après ? {#whats-next}
 
