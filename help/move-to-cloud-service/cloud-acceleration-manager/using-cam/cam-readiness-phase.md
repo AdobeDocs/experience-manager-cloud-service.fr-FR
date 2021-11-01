@@ -2,10 +2,10 @@
 title: Phase de préparation dans Cloud Accelerated Manager
 description: Cette page présente un aperçu de la phase de préparation dans Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 970c8131e73f0d5d0a3c623d621d599aba65cfbc
+source-git-commit: a6d0ab0245ed33fcffe1c4811674435e6f97abf8
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 86%
+source-wordcount: '1032'
+ht-degree: 66%
 
 ---
 
@@ -85,6 +85,68 @@ Suivez les étapes ci-dessous :
 
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
+
+### Utilisation de l’option Afficher la courbe de tendance {#trendline-view-cam}
+
+Lorsque vous transférez plusieurs rapports Analyseur des bonnes pratiques (BPA) dans un projet, vous pouvez sélectionner la variable **Afficher la tendance** pour afficher et comparer les résultats des anciens rapports BPA.
+
+Pour afficher la courbe de tendance, procédez comme suit :
+
+>[!NOTE]
+>Lorsque vous téléchargez plusieurs rapports d’application d’une seule page dans un projet, l’icône s’affiche. **...**.
+
+1. Accédez à votre projet et cliquez sur **Réviser** de la **Analyse des bonnes pratiques** dans la **Préparation** phase.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+
+1. Cliquez sur le bouton **...** pour afficher la liste déroulante.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+
+   >[!IMPORTANT]
+   >Le rapport affiché est toujours celui qui possède la dernière date de rapport.
+
+1. Cliquez sur **Afficher la tendance**, comme illustré dans la figure ci-dessous.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+
+1. Cliquez sur **Afficher la tendance** ouvre la vue de tendance du rapport, comme illustré dans la figure ci-dessous.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view3.png)
+
+   >[!NOTE]
+   >Le rapport de tendance affiche sous forme graphique les résultats des rapports BPA historiques.
+   >Deux graphiques affichent la tendance de :
+   >1. Tendance des résultats du rapport
+   >1. Tendance des composants et modèles personnalisés
+      >Vous pouvez ajouter ou modifier la vue graphique à partir de la liste déroulante comme illustré ci-dessous.
+      >![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
+
+
+#### Suppression du rapport de tendance {#delete-trendline}
+
+Pour supprimer un rapport de la vue Trendline, procédez comme suit :
+
+1. Accédez à votre projet et cliquez sur **Réviser** de la **Analyse des bonnes pratiques** dans la **Préparation** phase.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+
+1. Cliquez sur le bouton **...** pour afficher la liste déroulante.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+
+1. Cliquez sur **Afficher la tendance**, comme illustré dans la figure ci-dessous.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+
+1. Cliquez sur l’icône de suppression dans la **Rapport de tendance** écran.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
+
+1. Cliquez sur **Supprimer** pour confirmer la suppression.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
+
 
 ### Consultation du rapport d’analyse des bonnes pratiques {#analysis-report}
 
