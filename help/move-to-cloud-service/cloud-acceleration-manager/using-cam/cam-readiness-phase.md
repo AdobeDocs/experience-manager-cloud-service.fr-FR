@@ -2,10 +2,10 @@
 title: Phase de préparation dans Cloud Accelerated Manager
 description: Cette page présente un aperçu de la phase de préparation dans Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 399698d512252b0a683f83a06ffbc71cd606ed72
+source-git-commit: c10d04d6d423529549a760945f72fc3c64ed72ed
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 65%
+source-wordcount: '1058'
+ht-degree: 64%
 
 ---
 
@@ -125,9 +125,12 @@ Pour afficher les rapports à partir de l’option de tendance, procédez comme 
    >Vous pouvez ajouter ou modifier la vue graphique à partir de la liste déroulante, comme illustré dans la figure ci-dessous :
    >![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
 
-#### Suppression du rapport de tendance {#delete-trendline}
+#### Suppression du rapport {#delete-trendline}
 
 Pour supprimer un rapport de la vue Trendline, procédez comme suit :
+
+>[!IMPORTANT]
+>Un rapport ne peut être supprimé que lorsque plusieurs rapports ont été chargés dans un projet.
 
 1. Accédez à votre projet et cliquez sur **Réviser** de la **Analyse des bonnes pratiques** dans la **Préparation** phase.
 
