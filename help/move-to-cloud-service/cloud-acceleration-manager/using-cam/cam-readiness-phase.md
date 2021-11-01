@@ -2,7 +2,7 @@
 title: Phase de préparation dans Cloud Accelerated Manager
 description: Cette page présente un aperçu de la phase de préparation dans Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 5f65d9045e30e9192b7e4833d4667ab5be588e92
+source-git-commit: 399698d512252b0a683f83a06ffbc71cd606ed72
 workflow-type: tm+mt
 source-wordcount: '1042'
 ht-degree: 65%
@@ -93,7 +93,7 @@ Lorsque vous transférez plusieurs rapports Analyseur des bonnes pratiques (BPA)
 Pour afficher les rapports à partir de l’option de tendance, procédez comme suit :
 
 >[!NOTE]
->Lorsque vous téléchargez plusieurs rapports d’application d’une seule page dans un projet, l’icône s’affiche. **...**.
+>Lorsque vous transférez plusieurs rapports d’application d’une seule page dans un projet, la variable **...** icône .
 
 1. Accédez à votre projet et cliquez sur **Réviser** de la **Analyse des bonnes pratiques** dans la **Préparation** phase.
 
