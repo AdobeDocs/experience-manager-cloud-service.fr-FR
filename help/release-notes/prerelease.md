@@ -112,6 +112,7 @@ Pour créer un build à partir du SDK de version préliminaire :
 1. Si vous êtes satisfait de son fonctionnement local, validez le code d’une branche de développement et utilisez un pipeline hors production Cloud Manager pour le déploiement dans un environnement abonné au canal de version préliminaire.
 
 >[!CAUTION]
+>
 > 
 > L’artifactId `aem-prerelease-sdk-api` ne doit jamais être utilisé lors d’un déploiement dans l’environnement intermédiaire ou de production. Utilisez toujours aem-sdk-api lors d’un déploiement via le pipeline de production. De même, les API de version préliminaire de référencement de code ne doivent pas être déployées via le pipeline de production.
 

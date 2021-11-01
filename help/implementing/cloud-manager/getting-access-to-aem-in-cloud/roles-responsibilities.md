@@ -12,6 +12,7 @@ ht-degree: 100%
 # Adobe Experience Manager as a Cloud Service : rôles et responsabilités {#roles-responsibilities}
 
 >[!CONTEXTUALHELP]
+>
 >id="aemcloud_raci"
 >title="Rôles et responsabilités"
 >abstract="Adobe fournit un ensemble de services concernant la configuration, le développement, l’évaluation et la production d’Experience Manager as a Cloud Service. Pour que le développement et le déploiement de la solution se déroulent de la manière la plus efficace possible, il est important que le client et le personnalisateur comprennent et remplissent leurs rôles, comme décrit ici."
