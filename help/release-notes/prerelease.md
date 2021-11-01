@@ -18,7 +18,7 @@ ht-degree: 100%
 
 La liste des fonctionnalités de version préliminaire pour un mois donné est publiée dans les [notes de mise à jour mensuelles](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
->[!VIDEO](/help/release-notes/assets/prerelease-overview.mp4)!VIDEO
+>[!VIDEO](/help/release-notes/assets/prerelease-overview.mp4)
 
 ## Activation de la version préliminaire {#enable-prerelease}
 
