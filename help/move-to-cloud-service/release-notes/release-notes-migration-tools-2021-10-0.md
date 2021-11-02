@@ -1,12 +1,12 @@
 ---
 title: Notes de mise à jour des outils de migration dans AEM version 2021.10.0 as a Cloud Service
-description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.10.0
+description: Notes de mise à jour des outils de migration dans AEM version 2021.11.0 as a Cloud Service
 feature: Release Information
 exl-id: null
-source-git-commit: 0058cfda65ec8f59dbe3ea1bbcc43c08c5e5fe3e
+source-git-commit: 43b56f074c0e09074c6745c2384e9bfd6b2eebb2
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 15%
+ht-degree: 12%
 
 ---
 
