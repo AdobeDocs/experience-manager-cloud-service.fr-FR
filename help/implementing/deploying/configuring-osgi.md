@@ -3,10 +3,10 @@ title: Configuration d’OSGi pour Adobe Experience Manager as a Cloud Service
 description: 'Configuration d’OSGi à l’aide de valeurs secrètes et spécifiques aux environnements '
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 9f1183430255bd4f026eedff5c9e8f76ce68b76f
+source-git-commit: f1ad12d308319ecfff6c0138ca77862976594e42
 workflow-type: tm+mt
-source-wordcount: '2936'
-ht-degree: 99%
+source-wordcount: '2938'
+ht-degree: 98%
 
 ---
 
@@ -140,7 +140,7 @@ Deux méthodes sont possibles pour créer des configurations OSGi, comme décrit
 Les fichiers de configuration OSGi au format JSON peuvent être écrits manuellement directement dans le projet AEM. C’est souvent la méthode la plus rapide pour créer des configurations OSGi relatives à des composants OSGi bien connus, et en particulier pour les composants OSGi personnalisés, conçus et mis au point par le développeur qui définit également les configurations. Cette approche peut également être utilisée pour copier/coller et mettre à jour des configurations pour un même composant OSGi sur différents dossiers de mode d’exécution.
 
 1. Dans votre IDE, ouvrez le projet `ui.apps`, recherchez ou créez le dossier de configuration (`/apps/.../config.<runmode>`) qui cible les modes d’exécution auxquels la nouvelle configuration OSGi doit s’appliquer
-1. Dans ce dossier de configuration, créez un fichier `<PID>.cfg.json`. Le PID est l’identité persistante du composant OSGi. Il s’agit généralement du nom de classe complet de l’implémentation du composant OSGi. Par exemple :
+1. Dans ce dossier de configuration, créez un fichier `<PID>.cfg.json`. Le PID est l’identité persistante du composant OSGi. It is usually the full class name of the OSGi component implementation. Par exemple :
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 Notez que les noms des fichiers de configuration OSGi d’usine appliquent la convention de dénomination `<factoryPID>-<name>.cfg.json`.
 1. Ouvrez le nouveau fichier `.cfg.json` et définissez les combinaisons clé/valeur pour les paires propriété et valeur OSGi, en appliquant le [format de configuration OSGi JSON](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
@@ -222,9 +222,11 @@ Les noms des variables doivent respecter les règles suivantes :
 
 Les valeurs des variables ne doivent pas dépasser 2 048 caractères.
 
->[!NOTE]
+>[!CAUTION]
 >
->Les noms de variables précédés de la mention `INTERNAL_` sont réservés par Adobe. Toutes les variables définies par le client commençant par ce préfixe seront ignorées. Les clients ne doivent pas non plus faire référence à ces variables.
+>Variable names prefixed with `INTERNAL_`, `ADOBE_`, or `CONST_` are reserved by Adobe. Any customer-set variables that start with these prefixes will be ignored.
+>
+>Les clients ne doivent pas référencer de variables dotées du préfixe `INTERNAL_` ou `ADOBE_` ou .
 
 ### Valeurs par défaut {#default-values}
 
@@ -416,7 +418,11 @@ config
 </td>
 <td>
 <pre>
-{ "my_var1": "val1", "my_var2" : "abc", "my_var3" : 500 }
+{ 
+ "my_var1": "val1",
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
