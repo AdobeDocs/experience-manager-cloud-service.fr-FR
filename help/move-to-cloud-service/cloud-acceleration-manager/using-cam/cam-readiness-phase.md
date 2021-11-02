@@ -2,7 +2,7 @@
 title: Phase de préparation dans Cloud Accelerated Manager
 description: Cette page présente un aperçu de la phase de préparation dans Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: d706f8229cbca27ece5faedbecc4d02f58d40fb2
+source-git-commit: ba405db754fd6335c76180c7520ab9c08e259f6e
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 64%
@@ -88,7 +88,7 @@ Suivez les étapes ci-dessous :
 
 ### Utilisation de l’option Afficher la courbe de tendance {#trendline-view-cam}
 
-Lorsque vous transférez plusieurs rapports Analyseur des bonnes pratiques (BPA) dans un projet, vous pouvez sélectionner la variable **Afficher la tendance** pour afficher et comparer les résultats des anciens rapports BPA.
+Lorsque vous transférez plusieurs rapports Analyseur des bonnes pratiques (BPA) dans un projet, vous pouvez sélectionner la variable **Afficher la tendance** pour afficher et comparer les résultats des rapports BPA historiques.
 
 Pour afficher les rapports à partir de l’option de tendance, procédez comme suit :
 
