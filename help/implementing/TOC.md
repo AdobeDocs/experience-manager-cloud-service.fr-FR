@@ -5,9 +5,9 @@ breadcrumb-title: Guide d’implémentation
 user-guide-description: Découvrez comment personnaliser votre déploiement d’Experience Manager as a Cloud Service, y compris des rubriques sur le déploiement et le développement.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 51e36bc72c74026e54f36ee41848f4f15e644d32
+source-git-commit: f9d224c1f06b424717942a8a285dd42ce746ede9
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '1052'
 ht-degree: 97%
 
 ---
@@ -198,6 +198,7 @@ ht-degree: 97%
    + [Module externe Content Package Maven](/help/implementing/developing/tools/maven-plugin.md)
    + [Outil AEM Repo](/help/implementing/developing/tools/repo-tool.md)
    + [Utilisation de CRXDE Lite](/help/implementing/developing/tools/crxde.md)
+   + [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md)
    + [L’externaliseur de liens](/help/implementing/developing/tools/externalizer.md)
 + Personnalisation  {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)

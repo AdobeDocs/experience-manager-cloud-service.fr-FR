@@ -2,10 +2,10 @@
 title: Structure de projet AEM
 description: Découvrez comment définir des structures de package en vue d’un déploiement sur Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
 workflow-type: tm+mt
 source-wordcount: '2878'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -290,7 +290,7 @@ Pour assurer l’installation correcte des modules, il est recommandé d’étab
 
 La règle est que les modules contenant du contenu modifiable (`ui.content`) doivent dépendre du code non modifiable (`ui.apps`) qui prend en charge le rendu et l’utilisation du contenu modifiable.
 
-Une exception notable à cette règle générale est que le module de code non modifiable (`ui.apps` ou autre) contient __uniquement__ des bundles OSGi. Si tel est le cas, aucun module AEM ne doit déclarer une dépendance à son égard. En effet, les modules de code non modifiables contenant __uniquement__ des bundles OSGi ne sont pas enregistrés auprès du gestionnaire de modules AEM. Dans ce cas, un module AEM dépendant de celui-ci aura une dépendance insatisfaite et ne pourra pas être installé.
+Une exception notable à cette règle générale est que le module de code non modifiable (`ui.apps` ou autre) contient __uniquement__ des bundles OSGi. Si tel est le cas, aucun module AEM ne doit déclarer une dépendance à son égard. En effet, les modules de code non modifiables __only__ Les lots OSGi contenant ne sont pas enregistrés avec AEM [gestionnaire de modules,](/help/implementing/developing/tools/package-manager.md) par conséquent, tout package AEM en fonction de sa dépendance sera insatisfait et ne pourra pas être installé.
 
 >[!TIP]
 >

@@ -2,10 +2,10 @@
 title: Utilisation de CRXDE Lite
 description: CRXDE Lite fait partie du démarrage rapide d’AEM et vous permet d’accéder au référentiel et de le modifier dans vos environnements de développement locaux depuis le navigateur.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '1705'
-ht-degree: 100%
+source-git-commit: ae79dbf490c5e8b819c287b3013bbd93cdb6a59f
+workflow-type: tm+mt
+source-wordcount: '1693'
+ht-degree: 98%
 
 ---
 
@@ -26,11 +26,9 @@ Pour commencer avec CRXDE Lite :
 1. Entrez votre **nom d’utilisateur** et votre **mot de passe**.
 1. Cliquez sur **OK**.
 
-L’interface utilisateur de CRXDE Lite est la suivante dans votre navigateur :
+L’interface utilisateur du CRXDE Lite s’affiche comme suit dans votre navigateur :
 
 ![L’interface CRXDE Lite](assets/crxde-lite.png)
-
-Vous pouvez désormais utiliser CRXDE Lite pour développer votre application.
 
 >[!TIP]
 >
@@ -42,7 +40,7 @@ L’interface utilisateur CRXDE Lite comporte de nombreuses parties et de nombre
 
 ### Barre de commutation supérieure {#top-switcher-bar}
 
-La barre de commutation supérieure permet de basculer rapidement entre CRXDE Lite, le gestionnaire de modules et le partage de modules.
+La barre de sélecteur supérieure vous permet de basculer rapidement entre CRXDE Lite et [Gestionnaire de modules.](package-manager.md)
 
 ### Widget de chemin de nœud {#node-path-widget}
 
@@ -90,14 +88,13 @@ Les autorisations sont ventilées dans les catégories suivantes.
 * **Stratégies de contrôle d’accès en vigueur** – les stratégies actuelles appliquées à la sélection en cours, qui peuvent être définies localement ou héritées des nœuds parents
 
 >[!NOTE]
->
->Pour pouvoir voir les informations de contrôle d’accès, l’utilisateur connecté à CRXDE Lite doit avoir le droit de lire les entrées ACL.
+Pour pouvoir voir les informations de contrôle d’accès, l’utilisateur connecté à CRXDE Lite doit avoir le droit de lire les entrées ACL.
 
 ### Onglet Réplication {#replication-tab}
 
 L’onglet **Réplication** affiche l’état de réplication du nœud actuel. Vous pouvez répliquer et supprimer la réplication du nœud actif.
 
-### Onglet Console {#console-tab}
+### Onglet Console  {#console-tab}
 
 L’onglet **Console** affiche les messages des journaux. Vous pouvez configurer le niveau de journalisation, effacer la console, épingler à la position de défilement sélectionnée et activer/désactiver l’affichage des messages.
 
@@ -191,9 +188,8 @@ Pour créer un nœud avec CRXDE Lite :
 Vous pouvez désormais adapter le nœud à vos besoins en modifiant les propriétés ou en ajoutant de nouveaux nœuds.
 
 >[!NOTE]
->
->La plupart des opérations de modification, y compris **Créer un nœud**, conserve toutes les modifications en mémoire et les stocke dans le référentiel lors de l’enregistrement uniquement (avec le bouton [**Enregistrer tout**](#save-all-button)). Cependant, certaines opérations telles que le déplacement sont automatiquement conservées.
->La validation du nœud nouvellement créé qui est ou non autorisé par le type de nœud du nœud parent est également effectuée par le référentiel lors de l’enregistrement des modifications. Si vous recevez un message d’erreur lors de l’enregistrement d’un nœud, vérifiez si la structure du contenu est valide (par exemple, vous ne pouvez pas créer un nœud `nt:unstructured` en tant qu’enfant du nœud `nt:folder`).
+La plupart des opérations de modification, y compris **Créer un nœud**, conserve toutes les modifications en mémoire et les stocke dans le référentiel lors de l’enregistrement uniquement (avec le bouton [**Enregistrer tout**](#save-all-button)). Cependant, certaines opérations telles que le déplacement sont automatiquement conservées.
+La validation du nœud nouvellement créé qui est ou non autorisé par le type de nœud du nœud parent est également effectuée par le référentiel lors de l’enregistrement des modifications. Si vous recevez un message d’erreur lors de l’enregistrement d’un nœud, vérifiez si la structure du contenu est valide (par exemple, vous ne pouvez pas créer un nœud `nt:unstructured` en tant qu’enfant du nœud `nt:folder`).
 
 ## Création d’une propriété {#creating-a-property}
 

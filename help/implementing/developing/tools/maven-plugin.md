@@ -2,10 +2,10 @@
 title: Plug-in Maven Content Package d’Adobe
 description: Utilisation du plug-in Maven Content Package pour déployer des applications AEM
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
-workflow-type: ht
-source-wordcount: '1847'
-ht-degree: 100%
+source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+workflow-type: tm+mt
+source-wordcount: '1844'
+ht-degree: 96%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 Le plug-in Maven Content Package d’Adobe permet d’intégrer les tâches de déploiement et de gestion de modules dans vos projets Maven.
 
-Le déploiement des modules construits sur AEM est effectué par le plug-in Maven Content Package d’Adobe et permet l’automatisation des tâches normalement exécutées à l’aide d’AEM Package Manager :
+Le déploiement des packages construits sur AEM est effectué par le module externe Maven Adobe Content Package et permet l’automatisation des tâches normalement effectuées à l’aide d’AEM [Gestionnaire de modules :](/help/implementing/developing/tools/package-manager.md)
 
 * Création de modules à partir des fichiers du système de fichiers.
 * Installation et désinstallation de modules sur AEM.
@@ -133,7 +133,7 @@ En plus des paramètres suivants, consultez les descriptions de la section [Para
 
 ### ls {#ls}
 
-Répertorie les modules déployés dans le gestionnaire de modules.
+Répertorie les modules déployés sur [Gestionnaire de modules.](/help/implementing/developing/tools/package-manager.md)
 
 #### Paramètres {#parameters-2}
 
@@ -141,7 +141,7 @@ Tous les paramètres de l’objectif sont décrits dans la section [Paramètres 
 
 ### rm {#rm}
 
-Supprime un module du gestionnaire de modules.
+Supprime un module de [Gestionnaire de modules.](/help/implementing/developing/tools/package-manager.md)
 
 #### Paramètres {#parameters-3}
 
@@ -227,7 +227,7 @@ Lorsque le filtre ne contient pas d’élément `mode`, la valeur `replace` par 
 
 ## Inclusion d’une image de miniature ou d’un fichier de propriétés dans le module {#including-a-thumbnail-image-or-properties-file-in-the-package}
 
-Remplacez les fichiers de configuration du module par défaut afin de personnaliser les propriétés du module. Incluez, par exemple, une image miniature pour différencier le module dans Package Manager et Package Share.
+Remplacez les fichiers de configuration du module par défaut afin de personnaliser les propriétés du module. Par exemple, incluez une image miniature pour faire la distinction entre le module dans [Gestionnaire de modules.](/help/implementing/developing/tools/package-manager.md)
 
 Les fichiers sources peuvent se trouver n’importe où dans le système de fichiers. Dans le fichier POM, définissez les ressources de création pour copier les fichiers sources dans `target/vault-work/META-INF` à des fins d’inclusion dans le module.
 
@@ -265,4 +265,4 @@ Le dernier archétype de projet AEM met en œuvre la structure d’ensemble des 
 
 >[!TIP]
 >
->Pour plus d’informations, consultez l’article [Structure de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr) dans les documentations AEM as a Cloud Service et [Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr). Les deux implémentations sont entièrement prises en charge pour AEM 6.5.
+>Pour plus d’informations, consultez l’article [Structure de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) dans les documentations AEM as a Cloud Service et [Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html). Les deux implémentations sont entièrement prises en charge pour AEM 6.5.
