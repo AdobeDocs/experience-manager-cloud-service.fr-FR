@@ -3,7 +3,7 @@ title: Réseau de diffusion de contenu dans AEM as a Cloud Service
 description: Réseau de diffusion de contenu dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 997caea86978a2306a5081ef26270dfd451ab8a4
+source-git-commit: e5455985df0dad352fa158c7fb0df7d6c6a8dee0
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 96%
@@ -57,7 +57,7 @@ Si un client doit utiliser son réseau de diffusion de contenu existant, il peut
 Instructions de configuration :
 
 1. Pointez votre réseau CDN sur l’entrée du réseau CDN Adobe en tant que domaine d’origine. Par exemple, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
-1. Le SNI doit également être défini sur l’entrée du réseau CDN Adobe.
+1. Le SNI doit également être défini sur l’entrée du réseau CDN Adobe..
 1. Définissez l’en-tête hôte sur le domaine d’origine. Par exemple : `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Définissez l’en-tête `X-Forwarded-Host` avec le nom de domaine afin qu’AEM puisse déterminer l’en-tête hôte. Par exemple : `X-Forwarded-Host:example.com`.
 1. Définir `X-AEM-Edge-Key`. La valeur doit provenir d’Adobe.
