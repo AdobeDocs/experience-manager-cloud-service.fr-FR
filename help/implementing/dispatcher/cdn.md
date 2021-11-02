@@ -3,10 +3,10 @@ title: Réseau de diffusion de contenu dans AEM as a Cloud Service
 description: Réseau de diffusion de contenu dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: b71299a08c6dec8e88c4259b3d03481b20b310cb
+source-git-commit: 92b8a54f585e25db807914601ea5b3c07da681fc
 workflow-type: tm+mt
 source-wordcount: '926'
-ht-degree: 86%
+ht-degree: 98%
 
 ---
 
@@ -44,7 +44,7 @@ Consultez [Gestion des listes autorisées d’adresses IP](/help/implementing/cl
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
 >title="Le réseau de diffusion de contenu du client pointe vers le réseau de diffusion de contenu géré par AEM"
->abstract="AEM as Cloud Service offre aux clients une option pour utiliser son réseau de diffusion de contenu existant. Pour le niveau de publication, les clients peuvent éventuellement privilégier leur propre réseau de diffusion de contenu, mais il leur appartiendra de le gérer. Ce choix sera possible au cas par cas, en fonction de certaines conditions préalables, y compris, mais sans s’y limiter, le fait que le client possède une ancienne intégration avec son fournisseur de réseau de diffusion de contenu, et qu’il soit difficile de l’abandonner."
+>abstract="AEM as a Cloud Service offre aux clients une option pour utiliser son réseau CDN. Pour le niveau de publication, les clients peuvent éventuellement privilégier leur propre réseau de diffusion de contenu, mais il leur appartiendra de le gérer. Ce choix sera possible au cas par cas, en fonction de certaines conditions préalables, y compris, mais sans s’y limiter, le fait que le client possède une ancienne intégration avec son fournisseur de réseau de diffusion de contenu, et qu’il soit difficile de l’abandonner."
 
 Si un client doit utiliser son réseau de diffusion de contenu existant, il peut le gérer et le diriger vers le réseau de diffusion de contenu géré AEM, à condition que les conditions suivantes soient satisfaites :
 
@@ -56,12 +56,12 @@ Si un client doit utiliser son réseau de diffusion de contenu existant, il peut
 
 Instructions de configuration :
 
-1. Pointez votre réseau de diffusion de contenu sur l’entrée du réseau de diffusion de contenu Adobe en tant que domaine d’origine. Par exemple, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
-1. Le SNI doit également être défini sur l’entrée du CDN Adobe.
-1. Définissez l’en-tête Host sur le domaine d’origine. Par exemple : `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
-1. Définissez la variable `X-Forwarded-Host` en-tête avec le nom de domaine afin que AEM puisse déterminer l’en-tête hôte. Par exemple : `X-Forwarded-Host:example.com`.
+1. Pointez votre réseau CDN sur l’entrée du réseau CDN Adobe en tant que domaine d’origine. Par exemple, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. Le SNI doit également être défini sur l’entrée du réseau CDN Adobe.
+1. Définissez l’en-tête hôte sur le domaine d’origine. Par exemple : `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. Définissez l’en-tête `X-Forwarded-Host` avec le nom de domaine afin qu’AEM puisse déterminer l’en-tête hôte. Par exemple : `X-Forwarded-Host:example.com`.
 1. Définir `X-AEM-Edge-Key`. La valeur doit provenir d’Adobe.
-   * Ce paramétrage est nécessaire afin que le réseau de diffusion de contenu d’Adobe puisse valider la source des requêtes et transmettre les en-têtes `X-Forwarded-*` à l’application AEM. Par exemple :`X-Forwarded-For` est utilisé pour déterminer l’adresse IP du client. Il incombe donc à l’appelant approuvé (c’est-à-dire au réseau de diffusion de contenu géré par le client) de s’assurer que les en-têtes `X-Forwarded-*` sont corrects (voir la note ci-dessous).
+   * Ce paramétrage est nécessaire afin que le réseau de diffusion de contenu d’Adobe puisse valider la source des requêtes et transmettre les en-têtes `X-Forwarded-*` à l’application AEM. Par exemple, `X-Forwarded-For` est utilisé pour déterminer l’adresse IP du client. Il incombe donc à l’appelant approuvé (c’est-à-dire au réseau de diffusion de contenu géré par le client) de s’assurer que les en-têtes `X-Forwarded-*` sont corrects (voir la note ci-dessous).
    * L’accès à l’entrée du réseau de diffusion de contenu d’Adobe peut être aussi bloqué lorsqu’une balise `X-AEM-Edge-Key` n’est pas présente. Informez Adobe si vous avez besoin d’un accès direct à l’entrée du CDN d’Adobe (à bloquer).
 
 Avant d’accepter le trafic en direct, vous devez vérifier auprès du service clientèle d’Adobe que le trafic de bout en bout fonctionne correctement.
@@ -69,10 +69,10 @@ Avant d’accepter le trafic en direct, vous devez vérifier auprès du service 
 Après avoir obtenu la variable `X-AEM-Edge-Key`, vous pouvez tester que la requête est correctement acheminée comme suit :
 
 ```
-curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
+https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
 ```
 
-Veuillez noter que lorsque vous utilisez votre propre réseau de diffusion de contenu, il n’est pas nécessaire d’installer les domaines et les certificats dans Cloud Manager. Le routage dans le réseau de diffusion de contenu Adobe est effectué à l’aide du domaine par défaut. `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+Veuillez noter que lorsque vous utilisez votre propre réseau CDN, il n’est pas nécessaire d’installer les domaines et les certificats dans Cloud Manager. Le routage dans le réseau CDN Adobe sera effectué à l’aide du domaine par défaut `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 
 >[!NOTE]
 >
@@ -80,7 +80,7 @@ Veuillez noter que lorsque vous utilisez votre propre réseau de diffusion de co
 
 >[!NOTE]
 >
->Les environnements de programme Sandbox ne prennent pas en charge un réseau de diffusion de contenu fourni par le client.
+>Les environnements de programme Sandbox ne prennent pas en charge un réseau CDN fourni par le client.
 
 Les performances peuvent diminuer en raison du saut supplémentaire, bien que les sauts entre le réseau de diffusion du client et celui géré par AEM puissent être efficaces.
 
