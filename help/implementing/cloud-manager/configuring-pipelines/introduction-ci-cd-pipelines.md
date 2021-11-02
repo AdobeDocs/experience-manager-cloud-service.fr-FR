@@ -2,10 +2,10 @@
 title: Pipelines CI-CD
 description: Pipelines CI-CD
 index: false
-source-git-commit: 1887cc7374ece840b2dcca4482924b14c4793567
+source-git-commit: 76cff84003576cf23eb1d23674ce6eaf082bbbb1
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 18%
+source-wordcount: '700'
+ht-degree: 5%
 
 ---
 
@@ -23,7 +23,7 @@ Un pipeline CI/CD dans Cloud Manager peut être déclenché par un type d’év�
 >* configurer les paramètres de test de performance
 
 
-Dans Cloud Manager, il existe deux types de pipeline :
+Dans Cloud Manager, il existe deux types de pipelines :
 
 * [Pipeline de production](#prod-pipeline)
 * [Pipeline hors production](#non-prod-pipeline)
@@ -40,3 +40,48 @@ Pour plus d’informations, voir Configuration du pipeline de production .
 Un pipeline hors production vise à exécuter des analyses de qualité du code ou à déployer le code source dans un environnement de développement.
 
 Pour plus d’informations, consultez Pipelines hors production et dédiés à la qualité du code.
+
+## Présentation des pipelines CI-CD dans Cloud Manager {#understand-pipelines}
+
+Le tableau suivant classe les pipelines dans Cloud Manager avec leur utilisation.
+
+| Type de pipeline | Déploiement ou qualité du code | Code source | Quand utiliser | Quand ou pourquoi dois-je utiliser ? |
+|--- |--- |--- |---|---|---|
+| Production ou hors production | Déploiement | Front end | Pour déployer le code frontal. Le code frontal est tout code qui est servi en tant que fichier statique. Il est distinct du code de l’interface utilisateur fourni par AEM. Il comprend les thèmes Sites, SPA définis par le client, Firefly SPA et toute autre solution. Doit se trouver sur AEM version. | Temps de déploiement rapides.<br> Plusieurs pipelines front-end peuvent être configurés et exécutés simultanément par environnement. |
+|  | Déploiement | Pile complète | Pour déployer la configuration du serveur principal, front-end et HTTPD/dispatcher en même temps. Remarque : Certaines restrictions s’appliquent. | Lorsque les pipelines front-end ou de configuration de niveau web n’ont pas encore été adoptés. |
+|  | Déploiement | Configuration de la couche web | Pour déployer exclusivement la configuration HTTPD/dispatcher en quelques minutes.  Ce pipeline rationalisé fournit aux utilisateurs qui souhaitent déployer uniquement les modifications de configuration du Dispatcher, un moyen accéléré de le faire. Remarque : Doit être sur AEM version [version] | Temps de déploiement rapides. |
+
+
+
+## Pipelines front-end de Cloud Manager {#front-end}
+
+Les pipelines front-end aident vos équipes à rationaliser votre processus de conception et de développement, en activant des pipelines front-end accélérés pour déployer le code front-end. Ce pipeline différencié déploie JavaScript et CSS sur la couche de distribution AEM en tant que thème, ce qui entraîne une nouvelle version de thème qui peut être référencée à partir des pages diffusées à partir du runtime AEM. Le code frontal est tout code qui est servi en tant que fichier statique. Il est distinct du code de l’interface utilisateur fourni par AEM. Il comprend les thèmes Sites, SPA définis par le client, Firefly SPA et toute autre solution.
+
+>[!NOTE]
+>Un utilisateur connecté en tant que rôle Deployment Manager peut créer et exécuter plusieurs pipelines front-end simultanément. Cependant, il existe une limite maximale de 300 pipelines par programme (pour tous les types de pipelines).
+
+Il existe deux types de pipelines front-end :
+
+* Qualité du code frontal
+* Déploiement front-end
+
+## Pipelines complets empilés {#full-stack-pipeline}
+
+Le pipeline de pile complète permet à l’utilisateur de déployer simultanément la configuration back-end, front-end et HTTPD/dispatcher.  Il déploie le code et le contenu sur le runtime AEM, y compris le code frontal (JavaScript/CSS) conditionné en tant que bibliothèques clientes AEM. Il peut déployer la configuration de niveau web si un pipeline de niveau web n’est pas configuré. Il s’agit du pipeline &quot;uber&quot;, tout en permettant aux utilisateurs de déployer exclusivement leur code frontal ou leur configuration de dispatcher via le pipeline front-end et le pipeline de configuration de niveau web, respectivement.
+
+
+Les restrictions suivantes s’appliquent :
+
+1. Un utilisateur doit être connecté en tant que Deployment Manager pour configurer ou exécuter des pipelines.
+
+1. À tout moment, il ne peut y avoir qu’un seul pipeline de pile complète par environnement.
+
+1. L’utilisateur peut configurer le pipeline de pile complète pour qu’un environnement ignore ou ne pas ignorer la configuration du Dispatcher. Si le pipeline de configuration de niveau Web correspondant à l’environnement n’existe pas.
+
+1. Le pipeline de pile complète pour un environnement ignore la configuration du Dispatcher si le pipeline de configuration de niveau web correspondant à l’environnement existe.
+
+Il existe deux types de pipelines complets :
+
+* Pipeline de qualité du code de pile complet
+* Pipeline de déploiement en pile complète
+
