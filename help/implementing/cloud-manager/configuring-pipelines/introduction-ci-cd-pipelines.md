@@ -2,7 +2,7 @@
 title: Pipelines CI-CD
 description: Consultez cette page pour en savoir plus sur les pipelines CI-CD de Cloud Manager
 index: false
-source-git-commit: b6749b149e2166a6f2881817368e418d8b2adb00
+source-git-commit: 65898bd90e057cf5d646c5183ba6d2c8bdcac06e
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 3%
@@ -27,6 +27,8 @@ Dans Cloud Manager, il existe deux types de pipelines :
 
 * [Pipeline de production](#prod-pipeline)
 * [Pipeline hors production](#non-prod-pipeline)
+
+![](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cdpipeline-overview.png)
 
 ## Pipeline de production {#prod-pipeline}
 
