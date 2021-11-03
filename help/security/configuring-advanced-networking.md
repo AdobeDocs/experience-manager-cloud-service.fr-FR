@@ -1,9 +1,9 @@
 ---
 title: Configuration de la mise en réseau avancée pour AEM as a Cloud Service
 description: Découvrez comment configurer des fonctionnalités de mise en réseau avancées telles que VPN ou une adresse IP de sortie flexible ou dédiée pour AEM as a Cloud Service
-source-git-commit: 8990113529fb892f58b9171ebc2b04736bf45003
+source-git-commit: 2f9ba938d31c289201785de24aca2d617ab9dfca
 workflow-type: tm+mt
-source-wordcount: '2832'
+source-wordcount: '2836'
 ht-degree: 7%
 
 ---
@@ -15,10 +15,6 @@ Cet article vise à vous présenter les différentes fonctionnalités de mise en
 
 ## Présentation {#overview}
 
->[!INFO]
->
->La fonctionnalité de mise en réseau avancée fait partie de la version 2021.9.0 et sera activée pour les clients à la mi-octobre.
-
 AEM as a Cloud Service propose plusieurs types de fonctionnalités de mise en réseau avancées, qui peuvent être configurées par les clients à l’aide des API de Cloud Manager. Celles-ci comprennent :
 
 * [Sortie de port flexible](#flexible-port-egress) - configurer les AEM as a Cloud Service pour autoriser le trafic sortant des ports non standard
@@ -27,11 +23,12 @@ AEM as a Cloud Service propose plusieurs types de fonctionnalités de mise en r�
 
 Cet article décrit en détail chacune de ces options, y compris leur configuration. En tant que stratégie de configuration générale, la variable `/networkInfrastructures` Le point de terminaison de l’API est appelé au niveau du programme pour déclarer le type souhaité de mise en réseau avancée, suivi d’un appel au `/advancedNetworking` point d’entrée pour chaque environnement afin d’activer l’infrastructure et de configurer des paramètres spécifiques à l’environnement. Pour chaque syntaxe formelle, ainsi que les exemples de requêtes et de réponses, reportez-vous aux points de terminaison appropriés dans la documentation de l’API Cloud Manager .
 
-Lorsque vous décidez entre une sortie de port flexible et une adresse IP de sortie dédiée, il est recommandé de choisir une sortie de port flexible si aucune adresse IP spécifique n’est requise, car Adobe peut optimiser les performances du trafic de sortie de port flexible.
+Un programme peut fournir une variation réseau avancée unique. Lorsque vous décidez entre une sortie de port flexible et une adresse IP de sortie dédiée, il est recommandé de choisir une sortie de port flexible si aucune adresse IP spécifique n’est requise, car Adobe peut optimiser les performances du trafic de sortie de port flexible.
 
 >[!INFO]
 >
 >La mise en réseau avancée n’est pas disponible pour le programme Sandbox.
+>En outre, les environnements doivent être mis à niveau vers AEM version 5958 ou supérieure.
 
 >[!NOTE]
 >
@@ -49,9 +46,9 @@ Une sortie de port flexible est recommandée si vous n’avez pas besoin de VPN 
 
 Une fois par programme, le POST `/program/<programId>/networkInfrastructures` Le point de terminaison est appelé, simplement en transmettant la valeur de `flexiblePortEgress` pour le `kind` et région. Le point de terminaison répond avec la variable `network_id`, ainsi que d’autres informations, y compris l’état. L’ensemble complet des paramètres et la syntaxe exacte doivent être référencés dans la documentation API.
 
-Une fois appelée, l’approvisionnement de l’infrastructure réseau prend généralement environ 15 minutes. Un appel au [point d’entrée d’environnement](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getEnvironment) affiche l’état &quot;ready&quot;.
+Une fois appelée, l’approvisionnement de l’infrastructure réseau prend généralement environ 15 minutes. Un appel au [point d’entrée des infrastructures réseau](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) affiche l’état &quot;ready&quot;.
 
-Si la configuration de sortie de port flexible à l’échelle du programme est prête, la variable `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` Le point de terminaison doit être appelé par environnement pour activer la mise en réseau au niveau de l’environnement et pour déclarer toute règle de transfert de port. Les paramètres sont configurables par environnement afin d’offrir une certaine flexibilité.
+Si la configuration de sortie de port flexible à l’échelle du programme est prête, la variable `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` Le point de terminaison doit être appelé par environnement pour activer la mise en réseau au niveau de l’environnement et pour déclarer éventuellement toute règle de transfert de port. Les paramètres sont configurables par environnement afin d’offrir une certaine flexibilité.
 
 Les règles de transfert de port doivent être déclarées pour tout port autre que le port 80/443 en spécifiant l’ensemble des hôtes de destination (noms ou adresses IP, et avec les ports). Pour chaque hôte de destination, les clients doivent mapper le port de destination prévu à un port entre 30 000 et 30 999.
 
