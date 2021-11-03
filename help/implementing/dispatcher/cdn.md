@@ -3,15 +3,14 @@ title: Réseau de diffusion de contenu dans AEM as a Cloud Service
 description: Réseau de diffusion de contenu dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: e5455985df0dad352fa158c7fb0df7d6c6a8dee0
+source-git-commit: e5522483a15b6253e0b149200bd41d27246d2be1
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Réseau de diffusion de contenu dans AEM as a Cloud Service {#cdn}
-
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_cdn"
@@ -61,6 +60,7 @@ Instructions de configuration :
 1. Définissez l’en-tête hôte sur le domaine d’origine. Par exemple : `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Définissez l’en-tête `X-Forwarded-Host` avec le nom de domaine afin qu’AEM puisse déterminer l’en-tête hôte. Par exemple : `X-Forwarded-Host:example.com`.
 1. Définir `X-AEM-Edge-Key`. La valeur doit provenir d’Adobe.
+
    * Ce paramétrage est nécessaire afin que le réseau de diffusion de contenu d’Adobe puisse valider la source des requêtes et transmettre les en-têtes `X-Forwarded-*` à l’application AEM. Par exemple, `X-Forwarded-For` est utilisé pour déterminer l’adresse IP du client. Il incombe donc à l’appelant approuvé (c’est-à-dire au réseau de diffusion de contenu géré par le client) de s’assurer que les en-têtes `X-Forwarded-*` sont corrects (voir la note ci-dessous).
    * L’accès à l’entrée du réseau de diffusion de contenu d’Adobe peut être aussi bloqué lorsqu’une balise `X-AEM-Edge-Key` n’est pas présente. Informez Adobe si vous avez besoin d’un accès direct à l’entrée du CDN d’Adobe (à bloquer).
 
