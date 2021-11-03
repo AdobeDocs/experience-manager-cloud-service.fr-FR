@@ -2,7 +2,7 @@
 title: Phase de préparation dans Cloud Accelerated Manager
 description: Cette page présente un aperçu de la phase de préparation dans Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 3063a9d3a28e974300afa1b91c2b6a344b3361b8
+source-git-commit: 7737a9e6a0182fc98bf39da97c52f120139a2cc4
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 64%
@@ -124,7 +124,7 @@ Pour afficher les rapports à partir de l’option de tendance, procédez comme 
 
    >
    >Vous pouvez ajouter ou modifier la vue graphique à partir de la liste déroulante, comme illustré dans la figure ci-dessous :
-   >![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
+   >![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/reports-bpa1.png)
 
 
 ### Consultation du rapport d’analyse des bonnes pratiques {#analysis-report}

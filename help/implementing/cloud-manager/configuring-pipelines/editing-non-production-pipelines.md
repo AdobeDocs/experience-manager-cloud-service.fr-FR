@@ -2,12 +2,60 @@
 title: Modification d’un pipeline hors production
 description: Modification d’un pipeline hors production
 index: false
-source-git-commit: e0c21561a9a6e2940768ecb86da9b4d16e2fbfa8
+source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
 workflow-type: tm+mt
-source-wordcount: '12'
+source-wordcount: '207'
 ht-degree: 0%
 
 ---
 
 
 # Modification d’un pipeline hors production {#edit-non-prod-pipeline}
+
+Vous pouvez modifier les configurations de pipeline à partir du **Carte Pipelines** de **Aperçu du programme** page.
+
+Suivez les étapes ci-dessous pour modifier le pipeline hors production configuré :
+
+1. Accédez à **Pipelines** de la carte **Aperçu du programme** page.
+
+1. Sélectionnez le pipeline hors production et cliquez sur **...**. Cliquez sur **Modifier**, comme illustré dans la figure ci-dessous.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit1.png)
+
+1. Le **Modifier le pipeline de production** s’affiche.
+
+   1. Le **Configuration** vous permet de mettre à jour la variable **Nom du pipeline**, **Déclencheur de déploiement**, et **Comportement des échecs de mesure importants**.
+
+      >[!NOTE]
+      >Voir [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit2.png)
+
+
+   1. Le **Code source** vous permet de mettre à jour la variable **Référentiel** et le **Branche Git**.
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit3.png)
+
+1. Cliquez sur **Mettre à jour** une fois la modification du pipeline hors production terminée.
+
+## Autres actions de pipeline hors production {#additional-nonprod-actions}
+
+### Exécution d’un pipeline hors production {#run-nonprod}
+
+Vous pouvez exécuter le pipeline de production à partir de la carte Pipelines :
+
+1. Accédez à **Pipelines** de la carte **Aperçu du programme** page.
+
+1. Cliquez sur **...** de la **Pipelines** et cliquez sur **Exécuter**, comme illustré dans la figure ci-dessous.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-run1.png)
+
+#### Suppression d’un pipeline hors production {#delete-nonprod}
+
+Vous pouvez supprimer le pipeline de production de la carte Pipelines :
+
+1. Accédez à **Pipelines** de la carte **Aperçu du programme** page.
+
+1. Cliquez sur **...** de la **Pipelines** et cliquez sur **Supprimer**, comme illustré dans la figure ci-dessous.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-delete.png)
